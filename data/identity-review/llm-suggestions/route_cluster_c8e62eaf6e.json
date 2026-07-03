@@ -1,0 +1,58 @@
+{
+  "review_run_id": "2026-06-23T14-38-47-609Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:39:16.686Z",
+  "packet_path": "data/identity-review/packets/route_cluster_c8e62eaf6e.md",
+  "cluster_id": "route_cluster_c8e62eaf6e",
+  "kind": "route",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "route_cluster_c8e62eaf6e",
+    "kind": "route",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "route_bx40-bx42-tremont-cb5-2024",
+          "route_bx42-tremont-cab1"
+        ],
+        "reason": "Contradiction in strong identity fields: Record 1 bundles Bx40 and Bx42 as 'Bx40/42' with variant 'local', while Record 2 is specifically 'Bx42' with no variant. Base route id differs (bundle vs single) and variant mismatch (known vs unknown). Per Decision Test 1 (contradiction), these are distinct records."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "route_bx40-bx42-tremont-cb5-2024",
+        "aliases": [
+          "Bx40/42",
+          "Bx40",
+          "Bx42"
+        ],
+        "reason": "The record includes 'Bx42' as an alias/identity key, but the payload identity fields show a distinct bundled route. This alias is useful for search but does not indicate a merge."
+      },
+      {
+        "record_id": "route_bx42-tremont-cab1",
+        "aliases": [
+          "Bx42"
+        ],
+        "reason": "Primary identifier; no additional aliases beyond the route number."
+      }
+    ],
+    "missing_fields": [
+      {
+        "record_id": "route_bx42-tremont-cab1",
+        "fields": [
+          "service_variant"
+        ]
+      }
+    ],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "medium",
+    "rationale": "The two records have different base route identities: one bundles Bx40 and Bx42 as a single record with variant 'local', the other is specifically Bx42 with no variant. The Merge Canon for routes requires matching base route id and variant; a bundle does not equal a single route, and a known variant cannot merge with an unknown one. The relation_context already marks them as related_route, not the same object. Missing variant on the Bx42 record further confirms distinctness."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-38-56-294Z_1287237-3f9baaa3_identity-review-run_route-cluster-c8e62eaf6e",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-38-56-294Z_2026-06-23T14-38-56-294Z_1287237-3f9baaa3_identity-review-run_route-cluster-c8e62eaf6e.jsonl"
+}

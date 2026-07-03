@@ -1,0 +1,688 @@
+{
+  "run_id": "2026-06-10T17-48-04-757Z_1496766-0334aa12_ingest_2010-05-11-brt-nostrand-cb3",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-10T19:43:04.128Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "rel-metric-b44-weekday-riders-44000",
+        "local_observation_id": "metric_b44_weekday_riders_44000",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_b44-limited",
+            "object_id": "metric_b44-weekday-riders-44000",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p011_c0004",
+                "source_quote": "44,000 weekday riders – 5 th busiest bus route in city"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0004 bullet explicitly describes the B44 bus route, which is B44 Limited in this presentation context.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_11_brt_nostrand_cb3",
+            "block_id": "p011_c0004",
+            "source_quote": "44,000 weekday riders – 5 th busiest bus route in city"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-b44-riders-cb3-11000",
+        "local_observation_id": "metric_b44_riders_cb3_11000",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_b44-limited",
+            "object_id": "metric_b44-riders-cb3-11000",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p011_c0004",
+                "source_quote": "11,000 people get on in CB3"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0004 bullet describes boardings on the B44 bus route in CB3.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_11_brt_nostrand_cb3",
+            "block_id": "p011_c0004",
+            "source_quote": "11,000 people get on in CB3"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-b44-avg-speed-7-8-mph",
+        "local_observation_id": "metric_b44_avg_speed_7_8_mph",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_b44-limited",
+            "object_id": "metric_b44-avg-speed-7-8-mph",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p011_c0004",
+                "source_quote": "Buses travel at an average speed of 7-8 mph"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0004 bullet states average speed for B44 buses.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_11_brt_nostrand_cb3",
+            "block_id": "p011_c0004",
+            "source_quote": "Buses travel at an average speed of 7-8 mph"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-residents-quarter-mile-300000",
+        "local_observation_id": "metric_residents_within_quarter_mile_300000",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "metric_residents-within-quarter-mile-300000",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p011_c0001",
+                "source_quote": "Corridor Description"
+              },
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p011_c0006",
+                "source_quote": "300,000 residents"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0006 appears under 'Corridor Description' heading and 'Within a ¼ mile' subheading, describing demographics of the Nostrand Avenue corridor area.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_11_brt_nostrand_cb3",
+            "block_id": "p011_c0006",
+            "source_quote": "300,000 residents"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-households-no-car-62pct",
+        "local_observation_id": "metric_households_no_car_62pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "metric_households-no-car-62pct",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p011_c0001",
+                "source_quote": "Corridor Description"
+              },
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p011_c0006",
+                "source_quote": "62% of households do not own a car (71% in CB3)"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0006 appears under 'Corridor Description' heading for the Nostrand Avenue corridor, describing car ownership in the corridor area.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_11_brt_nostrand_cb3",
+            "block_id": "p011_c0006",
+            "source_quote": "62% of households do not own a car (71% in CB3)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-households-no-car-cb3-71pct",
+        "local_observation_id": "metric_households_no_car_cb3_71pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "metric_households-no-car-cb3-71pct",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p011_c0001",
+                "source_quote": "Corridor Description"
+              },
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p011_c0006",
+                "source_quote": "71% in CB3"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0006 gives the CB3-specific car-free household percentage as part of corridor demographics.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_11_brt_nostrand_cb3",
+            "block_id": "p011_c0006",
+            "source_quote": "71% in CB3"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-commute-by-transit-60pct",
+        "local_observation_id": "metric_commute_by_transit_60pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "metric_commute-by-transit-60pct",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p011_c0001",
+                "source_quote": "Corridor Description"
+              },
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p011_c0006",
+                "source_quote": "60% of residents commute by transit (66% in CB3)"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0006 states transit commute share for the corridor area under 'Corridor Description'.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_11_brt_nostrand_cb3",
+            "block_id": "p011_c0006",
+            "source_quote": "60% of residents commute by transit (66% in CB3)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-commute-by-transit-cb3-66pct",
+        "local_observation_id": "metric_commute_by_transit_cb3_66pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "metric_commute-by-transit-cb3-66pct",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p011_c0001",
+                "source_quote": "Corridor Description"
+              },
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p011_c0006",
+                "source_quote": "66% in CB3"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0006 gives CB3-specific transit commute percentage as part of corridor demographics.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_11_brt_nostrand_cb3",
+            "block_id": "p011_c0006",
+            "source_quote": "66% in CB3"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-b44-5th-busiest-route",
+        "local_observation_id": "metric_b44_5th_busiest_route",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_b44-limited",
+            "object_id": "metric_b44-5th-busiest-route",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p011_c0004",
+                "source_quote": "5 th busiest bus route in city"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0004 states B44 is the 5th busiest bus route in NYC.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_11_brt_nostrand_cb3",
+            "block_id": "p011_c0004",
+            "source_quote": "5 th busiest bus route in city"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-fordham-travel-time-reduction-20pct",
+        "local_observation_id": "metric_fordham_travel_time_reduction_20pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_fordham-pelham-pkwy-sbs",
+            "object_id": "metric_fordham-travel-time-reduction-20pct",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p010_c0001",
+                "source_quote": "Fordham Road SBS: Results"
+              },
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p010_c0002",
+                "source_quote": "Travel Time: 20% reduction in running time"
+              }
+            ]
+          }
+        ],
+        "rationale": "p010_c0001 heading names 'Fordham Road SBS'. p010_c0002 states travel time reduction.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_11_brt_nostrand_cb3",
+            "block_id": "p010_c0002",
+            "source_quote": "Travel Time: 20% reduction in running time"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-fordham-ridership-increase-7pct",
+        "local_observation_id": "metric_fordham_ridership_increase_7pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_fordham-pelham-pkwy-sbs",
+            "object_id": "metric_fordham-ridership-increase-7pct",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p010_c0001",
+                "source_quote": "Fordham Road SBS: Results"
+              },
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p010_c0003",
+                "source_quote": "Ridership: 7% increase from May 2008 to May 2009"
+              }
+            ]
+          }
+        ],
+        "rationale": "p010_c0001 names Fordham Road SBS; p010_c0003 states ridership increase.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_11_brt_nostrand_cb3",
+            "block_id": "p010_c0003",
+            "source_quote": "Ridership: 7% increase from May 2008 to May 2009"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-fordham-customer-satisfaction-98pct",
+        "local_observation_id": "metric_fordham_customer_satisfaction_98pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_fordham-pelham-pkwy-sbs",
+            "object_id": "metric_fordham-customer-satisfaction-98pct",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p010_c0001",
+                "source_quote": "Fordham Road SBS: Results"
+              },
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p010_c0004",
+                "source_quote": "Customer Satisfaction: 98% satisfied or very satisfied"
+              }
+            ]
+          }
+        ],
+        "rationale": "p010_c0001 names Fordham Road SBS; p010_c0004 states customer satisfaction.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_11_brt_nostrand_cb3",
+            "block_id": "p010_c0004",
+            "source_quote": "Customer Satisfaction: 98% satisfied or very satisfied"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-b44-delay-bus-in-motion-45pct",
+        "local_observation_id": "metric_b44_delay_bus_in_motion_45pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_b44-limited",
+            "object_id": "metric_b44-delay-bus-in-motion-45pct",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p008_c0001",
+                "source_quote": "Sources of Bus Delay – B44 Limited"
+              },
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p008_c0002",
+                "source_quote": "Bus in Motion 45%"
+              }
+            ]
+          }
+        ],
+        "rationale": "p008_c0001 heading explicitly names B44 Limited; p008_c0002 pie chart shows 'Bus in Motion 45%'.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_11_brt_nostrand_cb3",
+            "block_id": "p008_c0002",
+            "source_quote": "Bus in Motion 45%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-b44-delay-red-lights-26pct",
+        "local_observation_id": "metric_b44_delay_red_lights_26pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_b44-limited",
+            "object_id": "metric_b44-delay-red-lights-26pct",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p008_c0001",
+                "source_quote": "Sources of Bus Delay – B44 Limited"
+              },
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p008_c0002",
+                "source_quote": "At Red Lights 26%"
+              }
+            ]
+          }
+        ],
+        "rationale": "p008_c0001 names B44 Limited; p008_c0002 shows 'At Red Lights 26%'.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_11_brt_nostrand_cb3",
+            "block_id": "p008_c0002",
+            "source_quote": "At Red Lights 26%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-b44-delay-bus-stops-24pct",
+        "local_observation_id": "metric_b44_delay_bus_stops_24pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_b44-limited",
+            "object_id": "metric_b44-delay-bus-stops-24pct",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p008_c0001",
+                "source_quote": "Sources of Bus Delay – B44 Limited"
+              },
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p008_c0002",
+                "source_quote": "At Bus Stops 24%"
+              }
+            ]
+          }
+        ],
+        "rationale": "p008_c0001 names B44 Limited; p008_c0002 shows 'At Bus Stops 24%'.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_11_brt_nostrand_cb3",
+            "block_id": "p008_c0002",
+            "source_quote": "At Bus Stops 24%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-b44-delay-other-5pct",
+        "local_observation_id": "metric_b44_delay_other_5pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_b44-limited",
+            "object_id": "metric_b44-delay-other-5pct",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p008_c0001",
+                "source_quote": "Sources of Bus Delay – B44 Limited"
+              },
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p008_c0002",
+                "source_quote": "Other Delays 5%"
+              }
+            ]
+          }
+        ],
+        "rationale": "p008_c0001 names B44 Limited; p008_c0002 shows 'Other Delays 5%'.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_11_brt_nostrand_cb3",
+            "block_id": "p008_c0002",
+            "source_quote": "Other Delays 5%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-community-planning-18-meetings",
+        "local_observation_id": "claim_community_planning_18_meetings",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_nostrand-rogers-sbs-cb3",
+            "object_id": "claim_community-planning-18-meetings",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p003_c0002",
+                "source_quote": "18 meetings to date with elected officials, Community Boards, and the public about Nostrand/Rogers BRT"
+              }
+            ]
+          }
+        ],
+        "rationale": "p003_c0002 explicitly names Nostrand/Rogers BRT as the subject of community planning meetings.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_11_brt_nostrand_cb3",
+            "block_id": "p003_c0002",
+            "source_quote": "18 meetings to date with elected officials, Community Boards, and the public about Nostrand/Rogers BRT"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-cac-meets-every-3-4-months",
+        "local_observation_id": "claim_cac_meets_every_3_4_months",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_nostrand-rogers-sbs-cb3",
+            "object_id": "claim_cac-meets-every-3-4-months",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p003_c0001",
+                "source_quote": "Community Planning Process"
+              },
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p003_c0003",
+                "source_quote": "Community Advisory Committee will meet every 3-4 months over the next two years"
+              }
+            ]
+          }
+        ],
+        "rationale": "p003_c0003 describes the CAC meeting cadence under the Community Planning Process heading for the Nostrand/Rogers project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_11_brt_nostrand_cb3",
+            "block_id": "p003_c0003",
+            "source_quote": "Community Advisory Committee will meet every 3-4 months over the next two years"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-public-open-houses-every-9-months",
+        "local_observation_id": "claim_public_open_houses_every_9_months",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_nostrand-rogers-sbs-cb3",
+            "object_id": "claim_public-open-houses-every-9-months",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p003_c0001",
+                "source_quote": "Community Planning Process"
+              },
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p003_c0004",
+                "source_quote": "Public Open Houses will take place approximately every 9 months"
+              }
+            ]
+          }
+        ],
+        "rationale": "p003_c0004 states public open house frequency under the Community Planning Process for the Nostrand/Rogers project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_11_brt_nostrand_cb3",
+            "block_id": "p003_c0004",
+            "source_quote": "Public Open Houses will take place approximately every 9 months"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-coordination-ddc-nostrand-recon",
+        "local_observation_id": "claim_coordination_ddc_nostrand_reconstruction",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_nostrand-rogers-sbs-cb3",
+            "object_id": "claim_coordination-ddc-nostrand-reconstruction",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p023_c0001",
+                "source_quote": "Coordination with DDC Nostrand Reconstruction"
+              }
+            ]
+          }
+        ],
+        "rationale": "p023_c0001 heading 'Coordination with DDC Nostrand Reconstruction' explicitly names the Nostrand reconstruction coordination for the SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_11_brt_nostrand_cb3",
+            "block_id": "p023_c0001",
+            "source_quote": "Coordination with DDC Nostrand Reconstruction"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-event-cac-meetings-2010",
+        "local_observation_id": "event_cac_meetings_2010",
+        "decision": "skip",
+        "rationale": "Already linked: existing relation has_timeline_event project_nostrand-rogers-sbs-cb3 -> event_cac-meetings-2010.",
+        "evidence_refs": []
+      },
+      {
+        "decision_id": "skip-event-cac-tour-fordham-spring-2010",
+        "local_observation_id": "event_cac_tour_fordham_spring_2010",
+        "decision": "skip",
+        "rationale": "Already linked: existing relation has_timeline_event project_nostrand-rogers-sbs-cb3 -> event_cac-tour-fordham-spring-2010_2.",
+        "evidence_refs": []
+      },
+      {
+        "decision_id": "skip-event-public-open-house-tbd",
+        "local_observation_id": "event_public_open_house_tbd",
+        "decision": "skip",
+        "rationale": "Already linked: existing relation has_timeline_event project_nostrand-rogers-sbs-cb3 -> event_public-open-house-tbd.",
+        "evidence_refs": []
+      },
+      {
+        "decision_id": "skip-event-additional-cac-open-houses-2011",
+        "local_observation_id": "event_additional_cac_open_houses_2011",
+        "decision": "skip",
+        "rationale": "Already linked: existing relation has_timeline_event project_nostrand-rogers-sbs-cb3 -> event_additional-cac-open-houses-2011_2.",
+        "evidence_refs": []
+      },
+      {
+        "decision_id": "skip-event-sbs-implementation-2012",
+        "local_observation_id": "event_sbs_implementation_2012",
+        "decision": "skip",
+        "rationale": "Already linked: existing relation has_timeline_event project_nostrand-rogers-sbs-cb3 -> event_sbs-implementation-2012.",
+        "evidence_refs": []
+      },
+      {
+        "decision_id": "skip-event-first-cac-meeting",
+        "local_observation_id": "event_first_cac_meeting",
+        "decision": "skip",
+        "rationale": "Already linked: existing relation has_timeline_event project_nostrand-rogers-sbs-cb3 -> event_first-cac-meeting.",
+        "evidence_refs": []
+      },
+      {
+        "decision_id": "skip-event-nyct-dot-initiate-brt-study-2004",
+        "local_observation_id": "event_nyct_dot_initiate_brt_study_2004",
+        "decision": "skip",
+        "rationale": "Already linked: existing relation has_timeline_event project_nostrand-rogers-sbs-cb3 -> event_nyct-dot-initiate-brt-study-2004.",
+        "evidence_refs": []
+      },
+      {
+        "decision_id": "skip-event-brt-study-selects-nostrand-2006",
+        "local_observation_id": "event_brt_study_selects_nostrand_2006",
+        "decision": "skip",
+        "rationale": "Already linked: existing relation has_timeline_event project_nostrand-rogers-sbs-cb3 -> event_brt-study-selects-nostrand-2006.",
+        "evidence_refs": []
+      },
+      {
+        "decision_id": "skip-event-nostrand-sbs-identified-2008",
+        "local_observation_id": "event_nostrand_sbs_identified_2008",
+        "decision": "skip",
+        "rationale": "Already linked: existing relation has_timeline_event project_nostrand-rogers-sbs-cb3 -> event_nostrand-sbs-identified-2008.",
+        "evidence_refs": []
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-39-30-161Z_1649437-2fa3121e_canonicalize_2026-06-10t17-48-04-757z-1496766-0334aa12-ingest-2010-05-11-brt-nostrand-cb3-relation-linker"
+}

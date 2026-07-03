@@ -1,0 +1,229 @@
+{
+  "run_id": "2026-06-10T17-48-04-591Z_1496766-bb550d62_ingest_14th-street-truck-transit-priority-trifold-r1-p2",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-10T19:26:35.743Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision": "relate",
+        "decision_id": "rel-01-buses-thru-trucks",
+        "evidence_refs": [
+          {
+            "block_id": "p001_c0006",
+            "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+            "source_quote": "A box labeled 'Buses & Thru Trucks Only' is located between 4th Ave and 5th Ave."
+          },
+          {
+            "block_id": "p001_c0001",
+            "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+            "source_quote": "14th Street Transit & Truck Priority"
+          }
+        ],
+        "local_observation_id": "treatment_buses_thru_trucks_only_14th_st",
+        "proposed_relations": [
+          {
+            "description": "Buses & Thru Trucks Only lane on 14th Street between 4th Ave and 5th Ave",
+            "evidence_refs": [
+              {
+                "block_id": "p001_c0006",
+                "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+                "source_quote": "The map shows Eastbound 14th Street with permitted (green) and required (blue) access to the south curb. Permitted access is shown as green arrows pointing south. Required access is shown as blue arrows pointing south. The map includes street names: 9th Ave, 8th Ave, 7th Ave, 6th Ave, 5th Ave, Union Sq W, Union Sq E, University Pl, Broadway, 4th Ave, Irving Pl, and 3rd Ave. Hudson St is also shown. A box labeled 'Buses & Thru Trucks Only' is located between 4th Ave and 5th Ave."
+              }
+            ],
+            "object_id": "treatment_buses-thru-trucks-only-14th-st",
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_14th-street-ttp"
+          },
+          {
+            "description": "Buses & Thru Trucks Only lane as part of the 14th Street Transit & Truck Priority Pilot",
+            "evidence_refs": [
+              {
+                "block_id": "p001_c0001",
+                "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+                "source_quote": "14th Street Transit & Truck Priority"
+              },
+              {
+                "block_id": "p001_c0006",
+                "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+                "source_quote": "A box labeled 'Buses & Thru Trucks Only' is located between 4th Ave and 5th Ave."
+              }
+            ],
+            "object_id": "treatment_buses-thru-trucks-only-14th-st",
+            "relation_kind": "has_treatment",
+            "subject_id": "project_14th-street-transit-truck-priority-pilot"
+          }
+        ],
+        "rationale": "Block p001_c0006 explicitly places the 'Buses & Thru Trucks Only' box on Eastbound 14th Street within the 14th Street Transit & Truck Priority map, directly linking this treatment to both the corridor and project."
+      },
+      {
+        "decision": "relate",
+        "decision_id": "rel-02-university-place-shared",
+        "evidence_refs": [
+          {
+            "block_id": "p001_c0007",
+            "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+            "source_quote": "University Place is a Shared Street. Advisory Speed Limit: 5mph. Must turn right again at 13th Street"
+          },
+          {
+            "block_id": "p001_c0001",
+            "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+            "source_quote": "14th Street Transit & Truck Priority"
+          }
+        ],
+        "local_observation_id": "treatment_university_place_shared_street",
+        "proposed_relations": [
+          {
+            "description": "University Place Shared Street at the intersection with the 14th Street TTP corridor",
+            "evidence_refs": [
+              {
+                "block_id": "p001_c0007",
+                "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+                "source_quote": "University Place is a Shared Street. Advisory Speed Limit: 5mph. Must turn right again at 13th Street"
+              }
+            ],
+            "object_id": "treatment_university-place-shared-street",
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_14th-street-ttp"
+          },
+          {
+            "description": "University Place Shared Street depicted on the 14th Street Transit & Truck Priority Pilot map",
+            "evidence_refs": [
+              {
+                "block_id": "p001_c0001",
+                "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+                "source_quote": "14th Street Transit & Truck Priority"
+              },
+              {
+                "block_id": "p001_c0007",
+                "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+                "source_quote": "University Place is a Shared Street. Advisory Speed Limit: 5mph. Must turn right again at 13th Street"
+              }
+            ],
+            "object_id": "treatment_university-place-shared-street",
+            "relation_kind": "has_treatment",
+            "subject_id": "project_14th-street-transit-truck-priority-pilot"
+          }
+        ],
+        "rationale": "University Place Shared Street is depicted on the 14th Street Transit & Truck Priority trifold map. Block p001_c0007 explicitly describes it as a Shared Street within this TTP document context, connecting it to the corridor and pilot project."
+      },
+      {
+        "decision": "relate",
+        "decision_id": "rel-03-curb-access-eastbound",
+        "evidence_refs": [
+          {
+            "block_id": "p001_c0004",
+            "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+            "source_quote": "EASTBOUND 14TH STREET Access to the South Curb"
+          },
+          {
+            "block_id": "p001_c0006",
+            "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+            "source_quote": "The map shows Eastbound 14th Street with permitted (green) and required (blue) access to the south curb."
+          }
+        ],
+        "local_observation_id": "treatment_curb_access_rules_eastbound",
+        "proposed_relations": [
+          {
+            "description": "Eastbound 14th Street curb access rules for the TTP corridor",
+            "evidence_refs": [
+              {
+                "block_id": "p001_c0004",
+                "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+                "source_quote": "EASTBOUND 14TH STREET Access to the South Curb"
+              },
+              {
+                "block_id": "p001_c0005",
+                "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+                "source_quote": "6 am – 10 pm"
+              }
+            ],
+            "object_id": "treatment_curb-access-rules-eastbound",
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_14th-street-ttp"
+          },
+          {
+            "description": "Eastbound 14th Street curb access rules as part of the 14th Street Transit & Truck Priority Pilot",
+            "evidence_refs": [
+              {
+                "block_id": "p001_c0001",
+                "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+                "source_quote": "14th Street Transit & Truck Priority"
+              },
+              {
+                "block_id": "p001_c0006",
+                "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+                "source_quote": "The map shows Eastbound 14th Street with permitted (green) and required (blue) access to the south curb."
+              }
+            ],
+            "object_id": "treatment_curb-access-rules-eastbound",
+            "relation_kind": "has_treatment",
+            "subject_id": "project_14th-street-transit-truck-priority-pilot"
+          }
+        ],
+        "rationale": "Blocks p001_c0004 and p001_c0005 explicitly label the eastbound curb access rules section with 'EASTBOUND 14TH STREET Access to the South Curb' and '6 am – 10 pm', and p001_c0006 describes the permitted/required access rules, all within the 14th Street TTP document."
+      },
+      {
+        "decision": "relate",
+        "decision_id": "rel-04-curb-access-westbound",
+        "evidence_refs": [
+          {
+            "block_id": "p001_c0009",
+            "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+            "source_quote": "WESTBOUND 14TH STREET Access to the North Curb"
+          },
+          {
+            "block_id": "p001_c0011",
+            "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+            "source_quote": "The map shows Westbound 14th Street with permitted (green) and required (blue) access to the north curb."
+          }
+        ],
+        "local_observation_id": "treatment_curb_access_rules_westbound",
+        "proposed_relations": [
+          {
+            "description": "Westbound 14th Street curb access rules for the TTP corridor",
+            "evidence_refs": [
+              {
+                "block_id": "p001_c0009",
+                "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+                "source_quote": "WESTBOUND 14TH STREET Access to the North Curb"
+              },
+              {
+                "block_id": "p001_c0010",
+                "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+                "source_quote": "6 am – 10 pm"
+              }
+            ],
+            "object_id": "treatment_curb-access-rules-westbound",
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_14th-street-ttp"
+          },
+          {
+            "description": "Westbound 14th Street curb access rules as part of the 14th Street Transit & Truck Priority Pilot",
+            "evidence_refs": [
+              {
+                "block_id": "p001_c0001",
+                "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+                "source_quote": "14th Street Transit & Truck Priority"
+              },
+              {
+                "block_id": "p001_c0011",
+                "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+                "source_quote": "The map shows Westbound 14th Street with permitted (green) and required (blue) access to the north curb."
+              }
+            ],
+            "object_id": "treatment_curb-access-rules-westbound",
+            "relation_kind": "has_treatment",
+            "subject_id": "project_14th-street-transit-truck-priority-pilot"
+          }
+        ],
+        "rationale": "Blocks p001_c0009 and p001_c0010 explicitly label the westbound curb access rules section with 'WESTBOUND 14TH STREET Access to the North Curb' and '6 am – 10 pm', and p001_c0011 describes the permitted/required access rules, all within the 14th Street TTP document."
+      }
+    ],
+    "packet_id": "treatment-relations"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-20-34-670Z_1617604-656e225c_canonicalize_2026-06-10t17-48-04-591z-1496766-bb550d62-ingest-14th-street-truck-transit-priority-trifold-r1-p2-treatment-relations"
+}

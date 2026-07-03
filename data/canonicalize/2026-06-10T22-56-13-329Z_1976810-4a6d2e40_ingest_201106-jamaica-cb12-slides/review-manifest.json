@@ -1,0 +1,16 @@
+{
+  "run_id": "2026-06-10T22-56-13-329Z_1976810-4a6d2e40_ingest_201106-jamaica-cb12-slides",
+  "generated_at": "2026-06-11T01:44:43.285Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "reviewed_decision_count": 29,
+  "pass_count": 15,
+  "fail_count": 14,
+  "unsure_count": 0,
+  "paths": {
+    "verdicts_jsonl": "data/canonicalize/2026-06-10T22-56-13-329Z_1976810-4a6d2e40_ingest_201106-jamaica-cb12-slides/verdicts.jsonl",
+    "manifest": "data/canonicalize/2026-06-10T22-56-13-329Z_1976810-4a6d2e40_ingest_201106-jamaica-cb12-slides/review-manifest.json"
+  }
+}

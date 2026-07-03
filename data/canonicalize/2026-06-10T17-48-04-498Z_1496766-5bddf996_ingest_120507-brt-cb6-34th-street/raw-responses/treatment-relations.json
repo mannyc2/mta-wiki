@@ -1,0 +1,165 @@
+{
+  "run_id": "2026-06-10T17-48-04-498Z_1496766-5bddf996_ingest_120507-brt-cb6-34th-street",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-10T19:18:03.138Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-off-board-fare-34th-to-sbs2012",
+        "local_observation_id": "treatment_off_board_fare_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_off-board-fare-34th-st",
+            "description": "Off-board fare collection implemented on 34th Street as part of the SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "120507_brt_cb6_34th_street",
+                "block_id": "p003_c0002",
+                "source_quote": "Since last fall, DOT & NYCT have ... – Implemented off-board fare collection – Completed environmental review – Released the Project Analysis Report – Initiated design work of the project"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p003_c0002 is in the 'Project Update' section of the 34th Street SBS presentation and explicitly states off-board fare collection was implemented as part of the project. The project_34th-st-sbs-2012 record lists this source and describes the project as including off-board fare collection.",
+        "evidence_refs": [
+          {
+            "source_id": "120507_brt_cb6_34th_street",
+            "block_id": "p003_c0002",
+            "source_quote": "Since last fall, DOT & NYCT have ... – Implemented off-board fare collection – Completed environmental review – Released the Project Analysis Report – Initiated design work of the project"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-lanes-60ft-to-sbs2012",
+        "local_observation_id": "treatment_bus_lanes_60ft_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_bus-lanes-60ft-34th-st",
+            "description": "60 ft wide bus lane section on 34th Street as part of SBS design",
+            "evidence_refs": [
+              {
+                "source_id": "120507_brt_cb6_34th_street",
+                "block_id": "p007_c0002",
+                "source_quote": "60 ft wide section: East of Third Ave West of Ninth Ave"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p007_c0002 appears under the '34th St SBS Design: Overview' heading, explicitly framing the 60 ft bus lane section as part of the 34th Street SBS project design. The project_34th-st-sbs-2012 record includes this source and describes the project as including bus lanes.",
+        "evidence_refs": [
+          {
+            "source_id": "120507_brt_cb6_34th_street",
+            "block_id": "p007_c0002",
+            "source_quote": "60 ft wide section: East of Third Ave West of Ninth Ave"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-lanes-52ft-to-sbs2012",
+        "local_observation_id": "treatment_bus_lanes_52ft_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_bus-lanes-52ft-34th-st",
+            "description": "52 ft wide bus lane section on 34th Street as part of SBS design",
+            "evidence_refs": [
+              {
+                "source_id": "120507_brt_cb6_34th_street",
+                "block_id": "p008_c0002",
+                "source_quote": "52 ft wide section: Third Ave to Ninth Ave"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p008_c0002 appears under the '34th St SBS Design: Overview' heading, explicitly framing the 52 ft bus lane section as part of the 34th Street SBS project design. The project_34th-st-sbs-2012 record includes this source and describes the project as including bus lanes.",
+        "evidence_refs": [
+          {
+            "source_id": "120507_brt_cb6_34th_street",
+            "block_id": "p008_c0002",
+            "source_quote": "52 ft wide section: Third Ave to Ninth Ave"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-bulbs-loading-to-sbs2012",
+        "local_observation_id": "treatment_bus_bulbs_loading_zones",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_bus-bulbs-loading-zones",
+            "description": "Bus bulbs and loading zones as part of 34th Street SBS design",
+            "evidence_refs": [
+              {
+                "source_id": "120507_brt_cb6_34th_street",
+                "block_id": "p009_c0001",
+                "source_quote": "Bus Bulb"
+              },
+              {
+                "source_id": "120507_brt_cb6_34th_street",
+                "block_id": "p009_c0005",
+                "source_quote": "Loading Zone"
+              }
+            ]
+          }
+        ],
+        "rationale": "Blocks p009_c0001 ('Bus Bulb') and p009_c0005 ('Loading Zone') appear on page 9 within the 34th Street SBS design pages of the presentation, alongside offset bus lane labels. The project_34th-st-sbs-2012 record lists this source and describes the project as including bus bulbs and loading zones.",
+        "evidence_refs": [
+          {
+            "source_id": "120507_brt_cb6_34th_street",
+            "block_id": "p009_c0001",
+            "source_quote": "Bus Bulb"
+          },
+          {
+            "source_id": "120507_brt_cb6_34th_street",
+            "block_id": "p009_c0005",
+            "source_quote": "Loading Zone"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-mta-bus-time-to-sbs2012",
+        "local_observation_id": "treatment_mta_bus_time_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_mta-bus-time-34th-st_2",
+            "description": "MTA Bus Time real-time bus location system implemented on M34 as part of the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "120507_brt_cb6_34th_street",
+                "block_id": "p005_c0002",
+                "source_quote": "Real time bus location information system • Implemented on M34, with expansion citywide"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p005_c0002 appears under the 'MTA Bus Time' heading within the 34th Street SBS presentation, explicitly stating the system was 'Implemented on M34'. The M34 is the 34th Street bus route which the SBS project serves. The project_34th-st-sbs-2012 record includes this source.",
+        "evidence_refs": [
+          {
+            "source_id": "120507_brt_cb6_34th_street",
+            "block_id": "p005_c0002",
+            "source_quote": "Real time bus location information system • Implemented on M34, with expansion citywide"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-470Z_1609876-70b6ee47_canonicalize_2026-06-10t17-48-04-498z-1496766-5bddf996-ingest-120507-brt-cb6-34th-street-treatment-relations"
+}

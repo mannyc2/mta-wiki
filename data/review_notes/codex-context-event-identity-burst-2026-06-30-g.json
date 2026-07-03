@@ -1,0 +1,131 @@
+{
+  "note_id": "codex-context-event-identity-burst-2026-06-30-g",
+  "date": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "prohibited_commands_used": false,
+  "subagent_lanes": [
+    {
+      "lane": "materializer_context_code_path",
+      "agent_id": "019f1821-13f4-74e1-949e-3713d847a11d",
+      "result": "Recommended optional read-only normalization context from top-level raw_text and evidence source_quote, passed only during materialization replay/merge and not into submission journals or identity assignment."
+    },
+    {
+      "lane": "event_family_other_residuals",
+      "agent_id": "019f1822-e221-7d20-8d33-0be3c533b954",
+      "result": "Found exact literal-gated event-family cleanup candidates from event_family other = 203."
+    },
+    {
+      "lane": "project_status_and_family_residuals",
+      "agent_id": "019f1822-f1bf-76e0-ba8b-7af1eed4ebeb",
+      "result": "Confirmed source-context project status candidates and remaining project-family residuals."
+    },
+    {
+      "lane": "identity_duplicate_backlog",
+      "agent_id": "019f1822-f617-7080-8461-a7c24bb9b2c3",
+      "result": "Identified reviewed broad Frank Farrell entity key prune as a small deterministic duplicate-key reduction."
+    }
+  ],
+  "baseline": {
+    "validation_issues": 0,
+    "event_family_other": 203,
+    "project_document_time_status_missing": 62,
+    "project_family_unresolved": 11,
+    "entity_duplicate_identity_key_groups": 5,
+    "entity_duplicate_identity_key_memberships": 11,
+    "entity_duplicate_identity_key_pairs": 7,
+    "project_duplicate_identity_key_groups": 0,
+    "route_duplicate_identity_key_groups": 0
+  },
+  "after": {
+    "validation_issues": 0,
+    "event_family_other": 169,
+    "project_document_time_status_missing": 59,
+    "project_family_unresolved": 11,
+    "entity_duplicate_identity_key_groups": 4,
+    "entity_duplicate_identity_key_memberships": 9,
+    "entity_duplicate_identity_key_pairs": 6,
+    "project_duplicate_identity_key_groups": 0,
+    "route_duplicate_identity_key_groups": 0
+  },
+  "implemented_changes": [
+    {
+      "change": "Added optional NormalizationContext to normalizeObservationPayload and materialization replay/merge, sourced only from submitted top-level raw_text and evidence_refs.source_quote.",
+      "files": [
+        "packages/pipeline/src/ontology/normalizers.ts",
+        "packages/pipeline/src/materialize/materialize.ts"
+      ]
+    },
+    {
+      "change": "Added exact context-backed project status gates for Fulton CBTC/Liberty Line, LIRR Sandy Restoration Phase 3B, and Webster Avenue Low-Income Housing Development.",
+      "count_delta": {
+        "project_document_time_status_missing": -3
+      }
+    },
+    {
+      "change": "Added exact event-family gates for extra-service event operations, board/procurement approvals, planning targets, delivery/prototype/accomplishment milestones, finance/valuation milestones, public engagement tours/challenges, planning reviews, committee cancellation, triathlon closure pause, procurement withdrawal/non-responsibility, and publications.",
+      "count_delta": {
+        "event_family_other": -34
+      }
+    },
+    {
+      "change": "Added reviewed broad entity key prune for entity_mta-nyct-evp-frank-farrell -> entity_frank-farrell.",
+      "count_delta": {
+        "entity_duplicate_identity_key_groups": -1,
+        "entity_duplicate_identity_key_memberships": -2,
+        "entity_duplicate_identity_key_pairs": -1
+      }
+    }
+  ],
+  "verification": {
+    "ontology_normalizers_test": {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "passed": true,
+      "tests": 258,
+      "expectations": 3903
+    },
+    "materialize_test": {
+      "command": "bun test packages/pipeline/test/materialize/materialize.test.ts",
+      "passed": true,
+      "tests": 52,
+      "expectations": 836
+    },
+    "identity_test": {
+      "command": "bun test packages/db/test/identity.test.ts",
+      "passed": true,
+      "tests": 25,
+      "expectations": 109
+    },
+    "typecheck": {
+      "command": "bun run typecheck",
+      "passed": true
+    },
+    "materialize": {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "passed": true,
+      "summary": "Materialized 93092/98102 submissions; retired submissions skipped 243; pages 7342; SQLite FTS quick_check ok."
+    },
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "passed": true,
+      "issues": 0,
+      "submissions": 98102,
+      "canonical_records": 84042,
+      "wiki_pages": 7338
+    }
+  },
+  "operational_notes": [
+    "The filesystem reached 100% usage during this burst. Only stale .git/objects/pack/tmp_pack_* scratch files and generated data/canonical.db were removed; data/canonical.db was then rebuilt deterministically by materialize.",
+    "The normalizers test file had been partially truncated when the filesystem was full; it was repaired and the focused ontology suite now passes."
+  ],
+  "remaining_backlog": {
+    "event_family_other": 169,
+    "project_document_time_status_missing": 59,
+    "project_family_unresolved": 11,
+    "entity_duplicate_identity_key_groups": 4,
+    "notes": [
+      "Continue the same loop: choose one measured bucket, exact-count it, implement one literal-gated deterministic rule or prune, materialize if generated outputs change, validate, and recount.",
+      "Avoid the route_m101 split reduction without owner policy confirmation; the scout noted it was previously intentionally retained as split because of route-specific SBS proposal evidence."
+    ]
+  }
+}

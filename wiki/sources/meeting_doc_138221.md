@@ -1,0 +1,237 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-138221"
+record_kind: "source"
+display_name: "Long Island Rail Road Financial and Ridership Reports – March 2024"
+source_id: "meeting_doc_138221"
+source_ids:
+  - "meeting_doc_138221"
+local_observation_id: "source_meeting_doc_138221"
+local_observation_ids:
+  - "source_meeting_doc_138221"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T16:12:19.101Z"
+raw_text: "Long Island Rail Road Financial and Ridership Reports – March 2024"
+submission_ids:
+  - "sub_d2cafdc53e12a395"
+payload:
+  authority_tier: "plan_document"
+  content_type: "financial report"
+  date: "2024-03"
+  date_normalized:
+    confidence: "submitted_iso"
+    normalized_date: "2024-03"
+    precision: "month"
+    raw_text: "2024-03"
+  date_text: "March 2024"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2024-03"
+    precision: "month"
+    raw_text: "March 2024"
+  published_date_normalized: "2024-03"
+  published_date_precision: "month"
+  publisher: "MTA Long Island Rail Road"
+  title: "Long Island Rail Road Financial and Ridership Reports – March 2024"
+evidence_refs:
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_138221#p001_c0002"
+    page_number: 1
+    role: "title"
+    source_id: "meeting_doc_138221"
+    source_path: "raw/sources/meeting_doc_138221/blocks.jsonl"
+    text_sha256: "sha256:b8ae0da2bc74d75523eb0f5a5502253b0183373a0cc3b70d7891a451a10ddee3"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_138221#p001_c0003"
+    page_number: 1
+    role: "title"
+    source_id: "meeting_doc_138221"
+    source_path: "raw/sources/meeting_doc_138221/blocks.jsonl"
+    text_sha256: "sha256:9c8d9e58db35466d3353bbf1f0ded5db342f865bc6b69c738205fd6cac1b4ce0"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_138221#p001_c0004"
+    page_number: 1
+    role: "author"
+    source_id: "meeting_doc_138221"
+    source_path: "raw/sources/meeting_doc_138221/blocks.jsonl"
+    text_sha256: "sha256:ba884242a38f56a027cabc36be3ea65053a65c16052152d95b7d78804f73b93a"
+    text_source: "raw_text"
+---
+
+# Finance report
+
+source_id: meeting_doc_138221
+citation: cite block ids exactly as shown in square brackets
+document: 80 block(s)
+
+## Page 1
+
+> [p001_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a blue circle.
+### [p001_c0002] Long Island Rail Road
+### [p001_c0003] Financial and Ridership Reports – March 2024
+[p001_c0004] Michael Reilly, Financial Liaison
+
+## Page 2
+
+### [p002_c0001] Financial Report Highlights
+### [p002_c0002] March Budget Performance Summary
+- [p002_c0003] • Total revenue of $242.9 million was $(7.2) million unfavorable to the budget. This was primarily due to the timing of reimbursement for capital activity and lower farebox revenue, partially offset by the timing of other operating revenue. • Through March 2024, ridership was 16.8 million, 18.5% above 2023 and (21.5) % below 2019 pre-COVID levels (adjusted for the same number of workdays), and 2.8% above the budget. Commutation ridership of 6.8 million was 7.4% above 2023 and 12.3% above the budget. Non-Commutation ridership of 10.0 million was 27.6% above 2023 and (2.9) % below the budget. Consequently, the farebox revenue of $143.9 million was $(2.2) million lower than the budget. • Total expenses before non-cash liability adjustments of $560.0 million were $22.9 million or 3.9% favorable to the budget. The primary drivers of this favorable variance are vacant positions, associated fringe costs, OPEB Current, electric power, fuel, the timing of material usage, professional services contracts, maintenance, other operating contracts, partially offset by higher overtime, FELA, and other business expenses. • March end-of-month total headcount was 7,875 which was 197 positions lower than the budget. Non-reimbursable was 38 positions higher than the budget and reimbursable was 234 positions lower than the budget. • March YTD non-reimbursable operating results were favorable to the budget by $0.1 million. Non-reimbursable revenues were $0.9 million favorable to the budget due to other operating revenue, partially offset by lower farebox revenue. Total non-reimbursable expenses were $(0.8) million unfavorable. Non-cash liabilities were $(15.6) million unfavorable, partially offset by expenses before non-cash liabilities which were $14.8 million favorable. This favorable variance is driven by vacant positions and associated fringe costs, OPEB Current, electric power, fuel, timing of material usage, professional services contracts, maintenance and other operating contracts, partially offset by overtime, FELA, and other business expenses.
+[p002_c0004] _2024 Operating Revenue & Expenses, March Year-to-Date_
+[p002_c0005]
+
+```text
+In $ Millions Long Island Rail Road Budget Actual Variance Total Revenues $153.4 $154.2 $0.9 Farebox Revenue $146.0 $143.9 $(2.2) Other Revenue $7.3 $10.4 $3.0 Total Expenses $486.1 $471.3 $14.8 Labor Expenses $364.7 $363.1 $1.6 Non Labor Expenses $121.4 $108.2 $13.2 Non Cash Liabilities $124.3 $139.9 $(15.6) Net Surplus/(Deficit) - Accrued ($457.1) ($457.0) $0.1
+```
+[p002_c0006] _Staffing Levels_
+[p002_c0007]
+
+```text
+In Full-Time Equivalents Long Island Rail Road Budget Actual Variance Non-Reimbursable 6,945 6,983 (38) Reimbursable 1,126 892 234 Total Positions 8,072 7,875 197
+```
+
+## Page 3
+
+### [p003_c0001] Revenues
+- [p003_c0002] • Farebox Revenues were $(2.2) million unfavorable to the budget due to lower yield per passenger, partially offset by higher ridership. Ridership through March was 16.8 million, 18.5% higher than in 2023 (adjusted for the same number of calendar workdays) and 2.8% higher than the budget. • Other Operating Revenues were $3.0 million favorable to the budget primarily due to the timing of rental and miscellaneous revenue, partially offset by the timing of advertising revenue.
+### [p003_c0003] Expenses
+[p003_c0004] Labor Expenses: $1.6 million favorable.
+- [p003_c0005] • Payroll expenses were $8.1 million favorable (favorable average pay rates reflecting new hires). • Overtime expenses were $(5.2) million unfavorable due to higher weather-related overtime, scheduled/unscheduled service, vacancy/absentee coverage, and programmatic/routine maintenance. • Health & Welfare expenses were $2.0 million favorable (vacant positions). • OPEB Current Payments were $5.2 million favorable (fewer retirees/beneficiaries than projected). • Pensions expenses were $(2.4) million unfavorable due to the estimated percentage of pension allocated to reimbursable was under-estimated and the timing of pension payments. • Other Fringe Benefits expenses were $(6.6) million unfavorable primarily due to the timing of FELA indemnity reserves, partially offset by lower Railroad Retirement Taxes (RRT) due to vacant positions. • Reimbursable Overhead expenses were $0.5 million favorable (primarily the timing of capital project activity).
+[p003_c0006] Non-Labor Expenses: $13.2 million favorable.
+- [p003_c0007] • Electric Power expenses were $2.5 million favorable primarily due to lower consumption, partially offset by higher rates. • Fuel expenses were $0.7 million favorable primarily due to lower rates and consumption. • Insurance expenses were $0.2 million favorable due to lower property insurance, partially offset by higher liability Insurance. • Claims expenses were $0.3 million favorable (timing of claims) • Maintenance and Other Operating Contracts were $1.2 million favorable primarily due to the timing of maintenance and repairs contracts, weed control & clearing, and bussing, partially offset by the timing of real estate rentals, equipment/ vehicles rental, water, and snow removal expenses.
+
+## Page 4
+
+- [p004_c0001] • Professional Service Contracts were $0.5 million favorable primarily due to the timing of MTA chargebacks and Sperry Rail testing, partially offset by the timing of medical services. • Materials and Supplies were $10.4 million favorable primarily due to the timing of modifications and RCM activity for revenue fleet, partially offset by miscellaneous inventory reserve adjustment and the timing of right of way material. • Other Business Expenses were $(2.5) million unfavorable primarily due to increase in bad debt reserves and higher credit card processing fees, partially offset by lower payroll mobility tax payments, office supplies, and travel meetings & convention.
+[p004_c0002] Depreciation and Other were $15.6 million favorable (primarily depreciation and GASB 87).
+### [p004_c0003] Overtime
+- [p004_c0004] • Total overtime was $(4.3) million unfavorable. Non-reimbursable was $(5.2) million unfavorable and reimbursable was $0.9 million favorable. • Unfavorable non-reimbursable overtime was primarily driven by higher weather-related overtime, scheduled and unscheduled service, vacancy/absentee coverage, and programmatic/routine maintenance.
+### [p004_c0005] Staffing Levels
+- [p004_c0006] • Total headcount at the end of March was 7,875, 197 positions lower than the budget. • The vacancies were primarily in Maintenance of Equipment and various administrative departments.
+### [p004_c0007] Financial Metrics
+- [p004_c0008] • The year-to-date March Adjusted Farebox Operating Ratio was 34.7%, which is above the budget due to lower expenses, partially offset by lower farebox revenue. • The year-to-date March Adjusted Cost per Passenger was $27.49, which is lower than the budget due to higher ridership and lower expenses. • The year-to-date March Revenue per Passenger was $8.57, which was below the budget due to a lower yield per passenger.
+
+## Page 5
+
+[p005_c0001] _TABLE 1_
+### [p005_c0002] MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2024 ADOPTED BUDGET ACCRUAL STATEMENT OF OPERATIONS BY CATEGORY MARCH 2024 ($ in millions)
+[p005_c0003]
+
+```text
+Revenue Nonreimbursable Reimbursable Total Favorable Favorable Favorable Favorable Favorable Favorable Budget Actual Variance Percent Budget Actual Variance Percent Budget Actual Variance Percent Farebox Revenue $51,090 $50,728 ($0.362) (0.7) $0.000 $0.000 $0.000 - $51,090 $50,728 ($0.362) (0.7) Vehicle Toll Revenue 0.000 0.000 0.000 - 0.000 0.000 0.000 - 0.000 0.000 0.000 - Other Operating Revenue 2,797 3,980 0.783 28.0 0.000 0.000 0.000 - 2,797 3,980 0.783 28.0 Capital & Other Reimbursements 0.000 0.000 0.000 - 33,827 31,061 (2,766) (8.2) 33,827 31,061 (2,766) (8.2) Total Revenue $53,897 $54,308 $0.421 0.8 $33,827 $31,061 ($2,766) (8.2) $87,713 $85,369 ($2,344) (2.7) Expenses Labor: Payroll $56,347 $52,571 $3,776 6.7 $11,025 $10,634 $0.391 3.5 $67,372 $63,205 $4,167 6.2 Overtime 11,254 11,254 0.000 0.0 4,362 3,268 1,093 25.1 15,616 14,522 1,094 7.0 Health and Welfare 14,940 14,307 0.633 4.2 2,831 2,634 0.197 6.9 17,771 16,941 0.830 4.7 OPEB Current Payment 8,254 6,499 1.755 21.3 0.000 0.000 0.000 - 8,254 6,499 1.755 21.3 Other Fringe Benefits 15,045 20,514 (5,469) (36.4) 2,895 2,734 0.161 5.6 17,940 23,248 (5,308) (28.6) Reimbursable Overhead (3,058) (3,755) 0.707 23.1 3,058 3,755 (0.707) (23.1) 0.000 0.000 0.000 0.0 Total Labor Expenses $117,344 $116,641 $0.703 0.6 $28,771 $26,867 $1,905 6.6 $146,115 $143,508 $2,607 1.8 Non-Labor: Electric Power $9,389 $8,157 $1,232 13.1 $0.030 $0.035 ($0.025) (94.4) $9,419 $8,213 $1,207 12.8 Fuel 2,345 2,158 0.487 18.4 0.000 0.000 0.000 - 2,345 2,158 0.487 18.4 Insurance 1,021 0.682 0.259 80.7 0.000 0.000 0.000 12.2 1,021 0.682 0.259 80.7 Paratransit Service Contracts 0.000 0.000 0.000 - 0.000 0.000 0.000 - 0.000 0.000 0.000 - Maintenance and Other Operating Contracts 10,416 4,313 6,103 56.6 1,249 1,884 (0.635) (50.9) 11,665 6,197 5,467 46.9 Professional Service Contracts 4,083 (0.606) 4,489 - 0.066 0.066 0.000 0.0 4,149 1,251 2,898 226.4 Materials & Supplies 11,181 9,054 2,764 23.4 3,068 2,337 0.731 23.8 14,888 11,391 3,495 23.5 Other Business Expenses 2,087 4,835 (2,748) - 0.039 0.034 0.005 13.7 2,126 4,869 (2,743) - Total Non-Labor Expenses $43,200 $30,332 $12,868 29.8 $3,055 $4,194 ($1,139) 17.0 $46,255 $34,526 $11,729 26.5 Other Expense Adjustments: Other $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - Total Other Expense Adjustments $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - Total Expenses before Depreciation & Other Post Employment Benefits $160,544 $146,972 $13,571 8.5 $33,827 $31,061 $2,766 8.2 $194,370 $178,033 $16,337 8.4 Depreciation GASB 75 OPEB Expense Adjustment $41,320 $43,945 ($2,625) (6.4) $0.000 $0.000 $0.000 - $41,320 $43,945 ($2,625) (6.4) GASB 88 Pension Expense Adjustment 0.000 0.000 0.000 - 0.000 0.000 0.000 - 0.000 0.000 0.000 - GASB 87 Lease Compliance 0.000 0.010 (0.010) - 0.000 0.000 0.000 - 0.000 0.010 (0.010) - GASB 96 - SBITA Asset Subscriptions (0.052) 5,828 (5,880) - 0.000 0.000 0.000 - (0.052) 5,828 (5,880) - Environmental Remediation 0.000 0.654 (0.654) - 0.000 0.000 0.000 - 0.000 0.654 (0.654) - Total Expenses $20,1979 $198,419 ($2,220) 1.8 $33,827 $31,061 $2,766 8.2 $235,905 $229,460 $6,445 2.7 Net Surplus/(Deficit) ($148,092) ($144,111) $3,981 2.7 ($0.000) $0.000 $0.000 - ($148,092) ($144,111) $3,981 2.7 Cash Conversion Adjustments Depreciation $41,320 $43,945 $2,625 6.4 $0.000 $0.000 $0.000 - 41,320 43,945 $2,625 6.4 Operating/Capital (0.971) (1,510) (0.539) (55.5) 0.000 0.000 0.000 - (0.971) (1,510) (0.539) (55.5) Other Cash Adjustments (20,982) (25,455) (4,473) (21.5) 0.000 0.000 0.000 - (20,982) (25,455) (4,473) (21.5) Total Cash Conversion Adjustments $19,367 $16,540 ($2,827) (12.5) 0.000 $0.000 $0.000 - $19,367 $16,540 ($2,827) (12.5) Net Cash Surplus/(Deficit) ($128,725) ($127,171) $1,554 1.2 ($0.000) $0.000 $0.000 0.0 ($128,725) ($127,171) $1,554 1.2
+```
+[p005_c0004] _Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current month's actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results._
+
+## Page 6
+
+[p006_c0001] _TABLE 2_
+### [p006_c0002] MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2024 ADOPTED BUDGET ACCURUAL STATEMENT OF OPERATIONS BY CATEGORY MARCH Year-To-Date ($ in millions)
+[p006_c0003]
+
+```text
+Nonreimbursable Reimbursable Total Budget Actual Variance Favorable (Unfavorable) Budget Actual Variance Favorable (Unfavorable) Budget Actual Variance Percent Revenue Farebox Revenue $146,038 $143,879 ($2,157) (1.5) $0,000 $0,000 $0,000 - $146,038 $143,879 ($2,157) (1.5) Vehicle Toll Revenue 0,000 0,000 0,000 - 0,000 0,000 0,000 - 0,000 0,000 0,000 - Other Operating Revenue 7,324 10,365 3,041 41.5 0,000 0,000 0,000 0,000 7,324 10,365 3,041 41.5 Capital & Other Reimbursements 0,000 0,000 0,000 - $6,756 88,657 (8,100) (8.4) 96,756 88,657 (8,100) (8.4) Total Revenue $153,359 $154,244 $0,884 0.6 $68,756 $88,657 ($8,100) (8.4) $250,116 $242,900 ($7,216) (2.9) Expenses Labor: Payroll $177,880 $169,786 $8,094 4.6 $32,864 $28,672 $4,192 12.8 $210,744 $198,458 $12,286 5.8 Overtime 35,458 40,633 (5,175) (14.6) 11,995 11,103 0,892 7.4 47,453 51,736 (4,283) (9.0) Health and Welfare 44,724 42,782 1,942 4.4 8,284 7,984 0,720 8.7 53,018 50,346 2,672 5.0 OPEB Current Payment 24,763 19,375 5,388 21.0 0,000 0,000 0,000 - 24,763 19,375 5,388 21.0 Other Fringe Benefits 47,150 53,223 (6,073) (13.9) 7,708 7,708 0,000 0.0 54,858 61,429 (6,571) (11.9) Reimbursable Overhead (9,304) (9,304) 0,000 0.0 9,471 9,471 0,000 0.0 0,000 0,000 0,000 0.0 Total Labor Expenses $284,706 $283,106 $1,600 0.4 $84,379 $75,707 $8,672 10.3 $449,085 $438,813 $10,272 2.3 Non-Labor: Electric Power $26,647 $24,188 $2,459 9.2 $0,090 $0,049 $0,041 45.9 $26,737 $24,237 $2,500 9.3 Fuel 7,858 6,911 0,747 9.8 0,000 0,000 0,000 14.7 7,858 6,911 0,747 9.8 Insurance 0,000 0,000 0,000 0.0 0,000 0,000 0,000 0.0 0,000 0,000 0,000 0.0 Claims 0,953 0,697 0,256 27.9 0,000 0,000 0,000 - 0,953 0,697 0,256 27.9 Paratransit Service Contracts 0,000 0,000 0,000 0.0 0,000 0,000 0,000 - 0,000 0,000 0,000 0.0 Maintenance and Other Operating Contracts 26,957 25,748 1,208 4.5 3,597 4,394 (0,797) (21.9) 30,553 30,132 421 1.4 Professional Service Contracts 11,886 11,148 0,468 3.9 0,162 0,162 0,000 0.0 12,055 11,580 475 3.9 Materials & Supplies 34,637 24,193 10,444 30.2 6,701 6,807 (0,106) (1.6) 41,338 31,000 10,338 25.0 Other Business Expenses 5,373 7,905 (2,532) (47.1) 0,115 0,094 0,021 18.4 5,488 7,998 (2,511) (45.8) Total Non-Labor Expenses $121,442 $108,213 $13,229 10.9 $12,377 $12,990 ($6,613) (4.9) $133,820 $121,163 $12,657 9.5 Other Expense Adjustments Other $0,000 $0,000 $0,000 - $0,000 $0,000 $0,000 - 0,000 0,000 0,000 - Total Other Expense Adjustments $0,000 $0,000 $0,000 - $0,000 $0,000 $0,000 - $0,000 $0,000 $0,000 - Total Expenses before Depreciation & Other Post Employment Benefits $486,148 $471,319 $14,830 3.1 $96,756 $88,657 $8,100 8.4 $582,905 $559,975 $22,930 3.9 Employment Benefits Depreciation $123,960 $131,834 ($7,874) (6.4) $0,000 $0,000 $0,000 - $123,960 $131,834 ($7,874) (6.4) GASB 75 OPEB Expense Adjustment 0,000 0,000 0,000 - 0,000 0,000 0,000 - 0,000 0,000 0,000 - GASB 68 Pension Expense Adjustment 0,000 0,010 (0,010) - 0,000 0,000 0,000 - 0,000 0,010 (0,010) - GASB 87 Lease Compliance (0,155) 5,998 (6,153) - 0,000 0,000 0,000 - (0,155) 5,998 (6,153) - GASB 96 - SBIT Asset Subscriptions 0,000 0,163 (0,163) - 0,000 0,000 0,000 - 0,000 0,163 (0,163) - Environmental Remediation 0,000 0,000 0,000 - 0,000 0,000 0,000 - 0,000 0,000 0,000 - Total Expenses $51,043 $61,126 ($10,083) (1.1) $6,756 $8,657 ($8,100) (8.4) $70,799 $69,923 $7,876 1.1 Net Surplus/(Deficit) ($457,094) ($457,023) $0,071 0.0 $0,000 $0,000 $0,000 - ($457,094) ($457,023) $0,071 0.0 Cash Conversion Adjustments Depreciation $123,960 $131,834 $7,874 6.4 $0,000 $0,000 $0,000 - $123,960 $131,834 $7,874 6.4 Operating/Capital (1,379) (2,072) (0,093) (4.7) 0,000 0,000 0,000 - (1,379) (2,072) (0,093) (4.7) Other Cash Adjustments (40,307) (11,262) 29,045 72.1 0,000 0,000 0,000 - (40,307) (11,262) 29,045 72.1 Total Cash Conversion Adjustments $81,674 $118,499 ($36,825) (45.1) $0,000 $0,000 $0,000 - $81,674 $118,499 ($36,825) (45.1) Net Cash Surplus/(Deficit) ($375,420) ($338,523) $36,897 9.8 $0,000 $0,000 $0,000 0.0 ($375,420) ($338,523) $36,897 9.8
+```
+[p006_c0004] Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current month's actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results.
+
+## Page 7
+
+[p007_c0001] _Table 4_
+[p007_c0002]
+
+```text
+MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2024 ADOPTED BUDGET CASH RECEIPTS and EXPENDITURES March 2024 ($ in millions) Month Year-to-Date Favorable (Unfavorable) Favorable (Unfavorable) Budget Actual Variance Percent Budget Actual Variance Percent Receipts Farebox Revenue $52,021 $48,395 ($3,626) (7.0) $148,699 $145,612 ($3,087) (2.1) Vehicle Toll Revenue 0.000 0.000 0.000 - 0.000 0.000 0.000 - Other Operating Revenue 2,128 9,837 7,709 * 6,028 60,832 54,804 * Capital & Other Reimbursements 32,814 30,641 (2,174) (6.6) 94,653 81,980 (12,673) (13.4) Total Receipts $86,964 $88,873 $1,909 2.2 $249,379 $288,423 $39,044 15.7 Expenditures Labor: Payroll $68,514 $66,372 $2,142 3.1 $209,497 $198,076 $11,421 5.5 Overtime 16,768 14,369 2,399 14.3 50,227 46,952 3,275 6.5 Health and Welfare 17,771 16,571 1,200 6.8 53,018 49,215 3,803 7.2 OPEB Current Payment 8,254 6,307 1,948 23.6 24,763 18,941 5,822 23.5 Pensions 33,924 32,281 1,643 4.8 101,773 96,292 5,481 5.4 Other Fringe Benefits 21,588 23,176 (1,587) (7.4) 57,305 59,675 (2,370) (4.1) Contribution to GASB Fund 0.000 0.000 0.000 - 0.000 0.000 0.000 - Reimursable Overhead 0.000 0.000 0.000 - 0.000 0.000 0.000 - Total Labor Expenditures $166,820 $159,075 $7,745 4.6 $496,583 $469,151 $27,432 5.5 Non-Labor: Electric Power $9,419 $9,753 ($0,334) (3.5) $26,737 $33,766 ($7,029) (26.3) Fuel 2,645 2,529 0.117 4.4 7,658 7,253 0.405 5.3 Insurance 3,094 (0.675) 3.769 * 7,097 (3,790) 10.887 * Claims 0.157 0.103 0.055 34.8 0.472 0.395 0.077 16.3 Paratransit Service Contracts 0.000 0.000 0.000 - 0.000 0.000 0.000 - Maintenance and Other Operating Contracts 11,665 16,157 (4,493) (38.5) 30,553 36,568 (6,014) (19.7) Professional Service Contracts 4,937 3,098 1,838 37.2 8,805 10,932 (2,126) (24.1) Materials & Supplies 13,797 23,965 (10,168) (73.7) 38,070 65,271 (27,201) (71.4) Other Business Expenses 2,223 1,842 0.381 17.1 6,160 5,736 0.424 6.9 Total Non-Labor Expenditures $47,937 $56,772 ($8,835) (18.4) $125,554 $156,130 ($30,576) (24.4) Other Expenditure Adjustments: Other $0.932 $0.196 $0.735 78.9 $2,663 $1,666 $0.997 37.4 Total Other Expenditure Adjustments $0.932 $0.196 $0.735 78.9 $2,663 $1,666 $0.997 37.4 Total Expenditures $215,689 $216,044 ($0,355) (0.2) $624,799 $626,947 ($2,148) (0.3) Net Cash Surplus/(Deficit) ($128,725) ($127,171) $1,554 1.2 ($375,420) ($338,523) $36,897 9.8 MTA Subsidy 128,725 129,112 0.387 0.3 375,420 339,120 (36,300) (9.7) Cash Timing and Availability Adjustment 0.000 (0.056) (0.056) - 0.000 (0.686) (0.686) -
+```
+
+## Page 8
+
+[p008_c0001] _Table 6_
+[p008_c0002]
+
+```text
+MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2024 ADOPTED BUDGET CASH CONVERSION (CASH FLOW ADJUSTMENTS) March 2024 ($ in millions) Month Year-to-Date Budget Actual Variance Favorable (Unfavorable) Budget Actual Variance Favorable (Unfavorable) Percent Receipts Farebox Revenue $0.932 ($2.332) ($3.264) * $2.663 $1.733 ($0.931) (34.9) Vehicle Toll Revenue 0.000 0.000 0.000 - 0.000 0.000 0.000 - Other Operating Revenue (0.669) 6.257 6.925 * (1.296) 50.467 51.764 * Capital & Other Reimbursements (1.012) (0.420) 0.592 58.5 (2.103) (6.677) (4.573) * Total Receipts ($0.750) $3.504 $4.253 * ($0.736) $45.523 $46.260 * Expenditures Labor: Payroll ($1.142) ($3.167) ($2.025) * $1.247 $0.382 ($0.865) (69.3) Overtime (1.151) 0.153 1.305 * (2.774) 4.785 7.559 * Health and Welfare 0.000 0.370 0.370 * 0.000 1.131 1.131 * OPEB Current Payment 0.000 0.193 0.193 * 0.000 0.634 0.634 * Pensions (14.762) (13.189) 1.573 10.7 (44.287) (39.024) 5.264 11.9 Other Fringe Benefits (3.649) 0.072 3.721 * (1.683) 1.754 3.437 * Contribution to GASB Fund 0.000 0.000 0.000 - 0.000 0.000 0.000 - Reimbursable Overhead 0.000 0.000 0.000 - 0.000 0.000 0.000 - Total Labor Expenditures ($20.705) ($15.568) $5.137 24.8 ($47.988) ($30.338) $17.159 36.1 Non-Labor: Electric Power 0.000 ($1.541) ($1.541) * 0.000 ($9.529) ($9.529) * Fuel 0.000 (0.371) (0.371) * 0.000 (0.341) (0.341) * Insurance (0.050) 3.562 3.613 * 1.930 12.396 10.466 * Claims 0.164 (0.041) (0.204) * 0.000 0.302 (0.189) (38.5) Paratransit Service Contracts 0.000 0.000 0.000 - 0.000 0.000 0.000 - Maintenance and Other Operating Contracts 0.000 (9.960) (9.960) * 0.000 (6.435) (6.435) * Professional Service Contracts (0.788) (4.350) (3.562) * 3.250 0.649 (2.601) (80.0) Materials & Supplies 1.089 (12.573) (13.663) * 3.268 (34.271) (37.539) * Other Business Expenses (0.097) 3.027 3.124 * (0.672) 2.262 2.934 * Total Non-Labor Expenditures $0.318 ($22.246) ($22.564) * $8.266 ($34.967) ($43.233) * Other Expenditure Adjustments: Other ($0.932) ($0.196) $0.735 78.9 ($2.663) ($1.666) $0.997 37.4 Total Other Expenditure Adjustments ($0.932) ($0.196) $0.735 78.9 ($2.663) ($1.666) $0.997 37.4 Total Expenditures ($21.318) ($38.010) ($16.692) (78.3) ($41.895) ($66.972) ($25.077) (59.9) Depreciation Adjustment $41.320 $43.945 $2.625 6.4 $123.960 $131.834 $7.874 6.4 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 - 0.000 0.000 0.000 - GASB 68 Pension Expense Adjustment 0.000 0.010 0.010 * 0.000 0.010 0.010 * GASB 87 Lease Compliance (0.052) 5.828 5.880 * (0.155) 5.998 6.153 * GASB 96 0.000 0.054 0.054 * 0.000 0.163 0.163 * Environmental Remediation 0.167 1.610 1.443 * 0.500 1.943 1.443 * Total Expenditures After Non-Cash Liabilities $20.117 $13.436 ($6.681) (33.2) $82.410 $72.976 ($9.434) (11.4) Total Cash Conversion Adjustments $19.367 $16.840 ($2.427) (12.5) $81.674 $118.499 $36.825 45.1 Cash Timing and Availability Adjustment 0.000 (0.0558) (0.056) - 0.000 (0.686) (0.686) - Total Cash Conversion Adjustments with Cash Timing $19.367 $16.884 ($2.483) (12.8) $81.674 $117.813 $36.139 44.2
+```
+
+## Page 9
+
+### [p009_c0001] LONG ISLAND RAIL ROAD
+### [p009_c0002] THE BIG PICTURE
+- [p009_c0003] • Overspend of $5.2M vs Adopted Budget due to unfavorable Weather-Related Overtime, Programmatic/Routine Maintenance, Vacancy/Absentee Coverage and Scheduled Service.
+### [p009_c0004] NON-REIMBURSABLE OVERTIME
+### [p009_c0005] • AGENCY DETAIL
+### [p009_c0006] Maintenance of Equipment (MOE):
+- [p009_c0007] • Maintenance of Equipment Overtime of $15.9M is 39% of 2024 YTD Actuals. • $4.8M unfavorable vs 2024 Adopted Budget driven by Programmatic/Routine Maintenance and Vacancy/Absentee coverage.
+### [p009_c0008] Maintenance of Way (MOW):
+- [p009_c0009] • MOW of $9.5M is 23% of 2024 YTD Actuals. • $1.2M unfavorable vs 2024 Adopted Budget driven Weather-Related Overtime, partially offset Programmatic/Routine Maintenance.
+### [p009_c0010] Transportation:
+- [p009_c0011] • Transportation Overtime of $13.7M is 33% of 2024 YTD Actuals. • $0.2M unfavorable vs 2024 Adopted Budget mainly driven by Scheduled Service, partially offset Vacancy/Absentee coverage.
+### [p009_c0012] Stations:
+- [p009_c0013] • Stations Overtime of $1.0M is 2% of 2024 YTD Actuals. • $0.9M favorable vs 2024 Adopted Budget driven by Vacancy/Absentee coverage.
+> [p009_c0014] Budget Performance Non-Reimbursable Overtime - YTD March (all dollars in millions) Period Adopted Budget Actual YTD 2019 $36.6 $36.1 YTD 2023 $36.7 $39.1 YTD 2024 $35.5 $40.6 Legend: ■ Adopted Budget, ■ Actual
+
+## Page 10
+
+### [p010_c0001] LONG ISLAND RAIL ROAD
+### [p010_c0002] REIMBURSABLE OVERTIME
+### [p010_c0003] THE BIG PICTURE
+- [p010_c0004] • Underspend of $0.9M vs Adopted Budget driven by Out-front Media Digital work being done on straight time versus overtime, partially offset by various capital projects and Transportation flagging needs.
+> [p010_c0005] The chart displays budget performance for non-reimursable overtime from YTD 2019 to YTD 2024. It compares the Adopted Budget (blue bars) with Actual spending (orange bars). The YTD 2019 Adopted Budget was $36.6M, while Actual was $36.1M. The YTD 2023 Adopted Budget was $36.7M, while Actual was $39.1M. The YTD 2024 Adopted Budget is $35.5M, while Actual is $40.6M. Period Adopted Budget Actual YTD 2019 $36.6 $36.1 YTD 2023 $36.7 $39.1 YTD 2024 $35.5 $40.6
+### [p010_c0006] Agency Detail
+- [p010_c0007] • Maintenance of Way (MOW): • MOW Overtime of $8.3M is 74% of 2024 YTD Actuals. • $1.4M unfavorable vs 2024 Adopted Budget driven by various capital projects. • Transportation: • Transportation Overtime of $2.2M is 20% of 2024 YTD Actuals. • $0.8M unfavorable vs 2024 Adopted Budget driven by various capital projects and flagging needs. • Maintenance of Equipment (MOE) • MOE Overtime of $0.6M is 1% of 2024 YTD Actuals. • $3.1M favorable vs 2024 Adopted Budget due to majority of Out-front Media Digital work being done on straight time versus overtime. • Stations • Station Overtime of $18K is less than 1% of 2024 YTD Actuals. • No variance vs Adopted Budget
+
+## Page 11
+
+### [p011_c0001] MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2024 ADOPTED BUDGET TOTAL POSITIONS BY FUNCTION AND DEPARTMENT NON-REIMBURSABLE/REIMBURSABLE AND FULL-TIME/FULL-TIME EQUIVALENTS END-OF-MONTH MARCH 2024
+[p011_c0002] Favorable/ (Unfavorable)
+[p011_c0003]
+
+```text
+Budget Actual Variance Administration Enterprise Asset Management 9 9 0 Labor Relations 15 12 3 Procurement & Logistics (excl. Stores) 43 41 2 Human Resources 37 28 9 Sr VP Administration 2 2 0 Strategic Investments 25 15 10 President 10 5 5 VP & CFO 1 - 1 Controller 44 45 (1) Management & Budget 13 12 1 BPM, Controls & Compliance 4 3 1 Market Dev. & Public Affairs 71 69 2 Gen. Counsel & Secretary 28 22 6 Diversity Management 3 1 2 Security 17 14 3 System Safety 52 46 6 Training 77 69 8 Service Planning 28 29 (1) Rolling Stock Programs 17 10 7 Sr Vice President - Operations 5 3 2 Total Administration 501 435 66 Operations Transportation Services - Train Operations 2,276 2,310 (34) Customer Services 547 552 (5) Total Operations 2,823 2,862 (39) Maintenance Engineering 2,169 2,170 (1) Equipment 2,266 2,159 107 Procurement (Stores) 105 101 4 Total Maintenance 4,540 4,430 110 Engineering/Capital Department of Program Management 110 72 38 Special Projects 47 35 12 Operational Support Group 51 41 10 Total Engineering/Capital 208 148 60 Baseline Total Positions 8,072 7,875 197 Non-Reimbursable 6,945 6,983 (38) Reimbursable 1,126 892 234 Total Full-Time 8,072 7,875 197 Total Full-Time-Equivalents
+```
+[p011_c0004] Note: Totals may not add due to rounding
+
+## Page 12
+
+### [p012_c0001] MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2024 ADOPTED BUDGET TOTAL FULL-TIME POSITIONS and FULL-TIME EQUIVALENTS by FUNCTION and OCCUPATION END-of-MONTH MARCH 2024
+[p012_c0002]
+
+```text
+Budget Actual Favorable/ (Unfavorable) Variance Administration Managers/Supervisors 277 253 24 Professional, Technical, Clerical 202 159 43 Operational Hourlies 22 23 (1) Total Administration 501 435 66 Operations Managers/Supervisors 369 346 23 Professional, Technical, Clerical 132 135 (3) Operational Hourlies 2,322 2,381 (59) Total Operations 2,823 2,862 (39) Maintenance Managers/Supervisors 1,014 894 120 Professional, Technical, Clerical 259 253 6 Operational Hourlies 3,267 3,283 (16) Total Maintenance 4,540 4,430 110 Engineering/Capital Managers/Supervisors 145 127 18 Professional, Technical, Clerical 63 21 42 Operational Hourlies 0 0 0 Total Engineering/Capital 208 148 60 Total Positions Managers/Supervisors 1,805 1,620 185 Professional, Technical, Clerical 656 568 88 Operational Hourlies 5,611 5,687 (76) Total Positions 8,072 7,875 197
+```
+[p012_c0003] Note: Totals may not add due to rounding
+
+## Page 13
+
+### [p013_c0001] MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2024 ADOPTED BUDGET MONTHLY PERFORMANCE INDICATORS MARCH 2024
+[p013_c0002]
+
+```text
+MONTH VARIANCE Actual 2024 Budget 2024 Actual 2023 vs. Budget vs. 2023 Farebox Operating Ratio Standard (1) 32.6% 30.1% 27.2% 2.5% 5.4% Adjusted (2) 41.7% 34.3% 25.8% 7.4% 15.9% Cost Per Passenger Standard (1) $26.04 $29.57 $30.61 $3.53 $4.57 Adjusted (2) $24.10 $27.29 $28.49 $3.19 $4.39 Passenger Revenue/Passenger (3) $8.50 $8.89 $8.31 ($0.39) $0.19 YEAR-TO-DATE VARIANCE Actual 2024 Budget 2024 Actual 2023 vs. Budget vs. 2023 Farebox Operating Ratio Standard (1) 29.0% 28.4% 25.6% 0.6% 3.4% Adjusted (2) 34.7% 32.3% 27.7% 2.4% 7.0% Cost Per Passenger Standard (1) $29.58 $31.42 $33.56 $1.84 $3.98 Adjusted (2) $27.49 $29.01 $31.17 $1.52 $3.68 Passenger Revenue/Passenger (3) $8.57 $8.94 $8.59 ($0.37) ($0.02)
+```
+[p013_c0003] (1) The Standard Farebox Operating Ratio and Cost Per Passenger indicators reflect MTA-wide adopted calculations that exclude non-cash liability adjustments: Depreciation, Other Post Employment Benefits and Environmental Remediation (GASB-49).
+[p013_c0004] (2) Adjusted Fare Box Operating Ratio and Cost Per Passenger indicators have been adjusted for comparability between the Long Island Rail Road and Metro-North Railroad and are being presented only at the railroad operating committees. These adjustments are not being used MTA-wide. Adjustments have been made to reflect all operating revenue and significant financial impacts that are outside management's control. These adjustments include: Inclusion of Other Operating Revenue, Removal of OPEB Current Payment expenses for retirees, and Removal of the UAAL associated with the LIRR's closed pension plan.
+[p013_c0005] Note: Expenses for Grand Central Madison Concourse Operating Company (GCMCOC) are included in LIRR performance indicator calculations.
+
+## Page 14
+
+### [p014_c0001] Farebox Revenue Report Highlights
+### [p014_c0002] Month of March
+[p014_c0003] LIRR revenue totaled $50.7 million in March 2024, $(0.4) million or (0.7) % lower than the budget.
+- [p014_c0004] • Commutation revenue of $16.8 million was $2.4 million or 16.8% higher than the budget. • Non-commutation revenue of $33.9 million was $(2.8) million or (7.6) % lower than the budget.
+### [p014_c0005] Year-to-Date
+[p014_c0006] LIRR revenue totaled $143.9 million through March 2024, $(2.2) million or (1.5) % lower than the budget.
+- [p014_c0007] • Commutation revenue of $49.2 million was $7.5 million or 18.0% higher than the budget. • Non-commutation revenue of $94.6 million was $(9.7) million or (9.3) % lower than the budget.
+[p014_c0008]
+
+```text
+March 2024 Ridership vs. Budget - (In Millions) March March Year-to-Date Budget Actual Variance Percent Budget Actual Variance Percent Commutation 2.132 2.362 0.230 10.8% 6.068 6.813 0.745 12.3% Non-Commutation 3.616 3.604 (0.011) -0.3% 10.269 9.975 (0.294) -2.9% Total 5.747 5.966 0.219 3.8% 16.337 16.788 0.451 2.8%
+```
+[p014_c0009]
+
+```text
+March 2024 Farebox Revenue vs. Budget - (In $ Millions) March March Year-to-Date Budget Actual Variance Percent Budget Actual Variance Percent Commutation $14.4 $16.8 $2.4 16.8% $41.7 $49.2 $7.5 18.0% Non-Commutation $36.7 $33.9 $(2.8) -7.6% $104.3 $94.6 $(9.7) -9.3% Total $51.1 $50.7 $(0.4) -0.7% $146.0 $143.9 $(2.2) -1.5%
+```

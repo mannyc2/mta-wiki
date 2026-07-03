@@ -1,0 +1,36 @@
+{"decision_id":"rel-design-a-to-cac3","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p035_c0003"]}
+{"decision_id":"rel-design-b-to-cac3","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p035_c0003"]}
+{"decision_id":"rel-design-c-to-cac3","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p035_c0003"]}
+{"decision_id":"rel-34th-curbside-bus-lane-to-ebp","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p015_c0004"]}
+{"decision_id":"rel-34th-real-time-info-to-ebp","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p015_c0004"]}
+{"decision_id":"rel-34th-left-turn-signal-to-ebp","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p015_c0004"]}
+{"decision_id":"rel-34th-taxi-video-to-ebp","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p015_c0004"]}
+{"decision_id":"rel-fordham-curbside-bus-lane-to-sbs","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p016_c0004"]}
+{"decision_id":"rel-fordham-off-board-fare-to-sbs","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p016_c0005"]}
+{"decision_id":"rel-fordham-tsp-to-sbs","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p016_c0006"]}
+{"decision_id":"rel-34th-st-travel-time-17pct","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p015_c0006"]}
+{"decision_id":"rel-34th-st-red-lights-29pct","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p015_c0006"]}
+{"decision_id":"rel-fordham-travel-time-20pct","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p016_c0008"]}
+{"decision_id":"rel-fordham-ridership-10pct","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p016_c0009"]}
+{"decision_id":"rel-fordham-satisfaction-98pct","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p016_c0010"]}
+{"decision_id":"rel-first-ave-ped-fatalities-7","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p017_c0006"]}
+{"decision_id":"rel-second-ave-ped-fatalities-4","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p017_c0006"]}
+{"decision_id":"rel-first-ave-ped-crashes-538","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p017_c0006"]}
+{"decision_id":"rel-second-ave-ped-crashes-597","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p017_c0006"]}
+{"decision_id":"rel-claim-improve-bus-service","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p014_c0003"]}
+{"decision_id":"rel-claim-improve-ped-safety","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p017_c0004"]}
+{"decision_id":"rel-claim-improve-bicycle-access","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p019_c0005"]}
+{"decision_id":"rel-claim-maintain-traffic-flow","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p021_c0006"]}
+{"decision_id":"rel-claim-curb-access-deliveries","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p021_c0007"]}
+{"decision_id":"rel-claim-metered-parking","verdict":"fail","failure_reason":"Cited block p021_c0008 raw_text is only 'Provide metered parking'. It does not state any connection to the First Avenue/Second Avenue SBS project. The page heading ('First Avenue/Second Avenue SBS') and subheading ('Design Goals') are in separate, uncited blocks (p021_c0001, p021_c0002). Co-occurrence on the same page is not a relation; the cited block text must itself state the connection between the two records.","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p021_c0008","2010_01_14_brt_1st2nd_cac3#p021_c0001","2010_01_14_brt_1st2nd_cac3#p021_c0002"]}
+{"decision_id":"rel-claim-corridor-treatment-variation","verdict":"fail","failure_reason":"Cited blocks p023_c0003-6 contain 'Range of treatments throughout the corridor due to: Traffic levels / Changes in street width / Curbside access needs'. None of these blocks name the First Avenue/Second Avenue SBS project or the corridor. The project name appears only in the separate, uncited page heading block (p023_c0001: 'First Avenue/Second Avenue SBS'). Co-occurrence on the same page does not establish the relation; the cited block text must state the connection.","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p023_c0003","2010_01_14_brt_1st2nd_cac3#p023_c0004","2010_01_14_brt_1st2nd_cac3#p023_c0005","2010_01_14_brt_1st2nd_cac3#p023_c0006","2010_01_14_brt_1st2nd_cac3#p023_c0001"]}
+{"decision_id":"rel-event-cac-meeting-3","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p004_c0003","2010_01_14_brt_1st2nd_cac3#p004_c0001"]}
+{"decision_id":"rel-event-cb-meetings-first-open-house","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p004_c0003"]}
+{"decision_id":"rel-event-cac-meeting-4","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p004_c0003"]}
+{"decision_id":"rel-event-cac-meeting-5","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p004_c0003"]}
+{"decision_id":"rel-event-finalize-station-locations","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p004_c0003"]}
+{"decision_id":"rel-event-finalize-phase1-design","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p004_c0003"]}
+{"decision_id":"rel-event-ceqr-seqr-approval","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p004_c0003"]}
+{"decision_id":"rel-event-complete-installation","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p004_c0003"]}
+{"decision_id":"rel-event-second-open-house","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p004_c0003"]}
+{"decision_id":"rel-event-phase1-sbs-implementation","verdict":"pass","evidence_checked":["2010_01_14_brt_1st2nd_cac3#p004_c0003"]}

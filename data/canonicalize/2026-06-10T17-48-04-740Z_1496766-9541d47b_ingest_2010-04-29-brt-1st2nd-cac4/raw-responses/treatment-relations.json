@@ -1,0 +1,261 @@
+{
+  "run_id": "2026-06-10T17-48-04-740Z_1496766-9541d47b_ingest_2010-04-29-brt-1st2nd-cac4",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-10T19:39:47.917Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "relate-off-board-fare",
+        "local_observation_id": "treatment_off_board_fare_collection",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "treatment_off-board-fare-collection",
+            "description": "Off-Board Fare Collection is a feature of First Avenue/Second Avenue SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p018_c0007",
+                "source_quote": "Off-Board Fare Collection"
+              },
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p005_c0010",
+                "source_quote": "Off-Board Fare Collection"
+              }
+            ]
+          }
+        ],
+        "rationale": "Both evidence blocks explicitly list Off-Board Fare Collection as a feature of the First Avenue/Second Avenue SBS project. p018_c0007 appears under Implementation Timeframe > Features; p005_c0010 appears in the SBS newsletter under FEATURES.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p018_c0007",
+            "source_quote": "Off-Board Fare Collection"
+          },
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p005_c0010",
+            "source_quote": "Off-Board Fare Collection"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-low-floor-buses",
+        "local_observation_id": "treatment_low_floor_three_door_buses",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "treatment_low-floor-three-door-buses",
+            "description": "Low-floor three-door buses are a feature of First Avenue/Second Avenue SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p018_c0008",
+                "source_quote": "New low-floor, three-door buses"
+              },
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p005_c0010",
+                "source_quote": "Low-Floor, Three-Door Buses"
+              }
+            ]
+          }
+        ],
+        "rationale": "Both evidence blocks explicitly list low-floor three-door buses as a feature of the First Avenue/Second Avenue SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p018_c0008",
+            "source_quote": "New low-floor, three-door buses"
+          },
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p005_c0010",
+            "source_quote": "Low-Floor, Three-Door Buses"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-dedicated-bus-lanes",
+        "local_observation_id": "treatment_dedicated_bus_lanes",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "treatment_dedicated-bus-lanes",
+            "description": "Dedicated bus lanes are a feature of First Avenue/Second Avenue SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p018_c0009",
+                "source_quote": "Improved bus lanes"
+              },
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p005_c0010",
+                "source_quote": "Dedicated Bus Lanes"
+              }
+            ]
+          }
+        ],
+        "rationale": "Both evidence blocks explicitly list dedicated/improved bus lanes as a feature of the First Avenue/Second Avenue SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p018_c0009",
+            "source_quote": "Improved bus lanes"
+          },
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p005_c0010",
+            "source_quote": "Dedicated Bus Lanes"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-tsp",
+        "local_observation_id": "treatment_transit_signal_priority",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "treatment_transit-signal-priority_2",
+            "description": "Transit Signal Priority is a feature of First Avenue/Second Avenue SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p005_c0010",
+                "source_quote": "Transit Signal Priority"
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0010 (the SBS newsletter) explicitly lists Transit Signal Priority under FEATURES of the First Avenue/Second Avenue SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p005_c0010",
+            "source_quote": "Transit Signal Priority"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-bike-ped",
+        "local_observation_id": "treatment_bicycle_facilities_pedestrian_improvements",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "treatment_bicycle-facilities-pedestrian-improvements",
+            "description": "Bicycle facilities and pedestrian improvements are a feature of First Avenue/Second Avenue SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p005_c0010",
+                "source_quote": "Bicycle Facilities and Pedestrian Improvements"
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0010 (the SBS newsletter) explicitly lists Bicycle Facilities and Pedestrian Improvements under FEATURES of the First Avenue/Second Avenue SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p005_c0010",
+            "source_quote": "Bicycle Facilities and Pedestrian Improvements"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-offset-bus-lane",
+        "local_observation_id": "treatment_offset_bus_lane_second_ave",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "treatment_offset-bus-lane-second-ave",
+            "description": "Offset bus lane on Second Avenue is part of First Avenue/Second Avenue SBS design changes",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p017_c0007",
+                "source_quote": "Added offset bus lane on Second Avenue in two sections:"
+              },
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p017_c0008",
+                "source_quote": "115 th to 113 th Streets"
+              },
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p017_c0009",
+                "source_quote": "108 th to 106 th Streets"
+              }
+            ]
+          }
+        ],
+        "rationale": "p017 is the Summary of Changes slide for the First Avenue/Second Avenue SBS project. Blocks p017_c0007 through p017_c0009 explicitly state the addition of an offset bus lane on Second Avenue in two sections as a design change for the SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p017_c0007",
+            "source_quote": "Added offset bus lane on Second Avenue in two sections:"
+          },
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p017_c0008",
+            "source_quote": "115 th to 113 th Streets"
+          },
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p017_c0009",
+            "source_quote": "108 th to 106 th Streets"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-curb-bike-lane",
+        "local_observation_id": "treatment_first_ave_curb_bike_lane_49_57",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "treatment_first-ave-curb-bike-lane-49-57",
+            "description": "First Ave curb bike lane 49th-57th is part of First Avenue/Second Avenue SBS design changes",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p017_c0006",
+                "source_quote": "Proposed First Ave curb bike lane from 49 th to 57 th Streets"
+              }
+            ]
+          }
+        ],
+        "rationale": "p017 is the Summary of Changes slide for the First Avenue/Second Avenue SBS project. Block p017_c0006 explicitly proposes a First Ave curb bike lane from 49th to 57th Streets as a design change within the SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p017_c0006",
+            "source_quote": "Proposed First Ave curb bike lane from 49 th to 57 th Streets"
+          }
+        ]
+      }
+    ],
+    "packet_id": "treatment-relations"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-38-29-012Z_1647891-565d970e_canonicalize_2026-06-10t17-48-04-740z-1496766-9541d47b-ingest-2010-04-29-brt-1st2nd-cac4-treatment-relations"
+}

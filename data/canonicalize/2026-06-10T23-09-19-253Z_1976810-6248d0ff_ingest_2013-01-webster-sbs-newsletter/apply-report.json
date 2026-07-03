@@ -1,0 +1,21 @@
+{
+  "run_id": "2026-06-10T23-09-19-253Z_1976810-6248d0ff_ingest_2013-01-webster-sbs-newsletter",
+  "generated_at": "2026-06-11T05:13:13.105Z",
+  "dry_run": false,
+  "wrote": true,
+  "decision_count": 18,
+  "reviewed_count": 9,
+  "alias_additions": [],
+  "aliases_already_present": [],
+  "do_not_merge_additions": [],
+  "relation_submissions": 4,
+  "quarantined": 5,
+  "conflicts": [],
+  "paths": {
+    "merges": "data/identity-overrides/merges.json",
+    "do_not_merge": "data/identity-overrides/do-not-merge.json",
+    "relation_submissions_jsonl": "data/submissions/2026-06-10T23-09-19-253Z_1976810-6248d0ff_ingest_2013-01-webster-sbs-newsletter_canonicalize.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-09-19-253Z_1976810-6248d0ff_ingest_2013-01-webster-sbs-newsletter/apply-quarantine.jsonl",
+    "apply_report": "data/canonicalize/2026-06-10T23-09-19-253Z_1976810-6248d0ff_ingest_2013-01-webster-sbs-newsletter/apply-report.json"
+  }
+}

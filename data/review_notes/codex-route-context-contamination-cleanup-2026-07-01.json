@@ -1,0 +1,220 @@
+{
+  "id": "route-context-contamination-cleanup",
+  "created_at": "2026-07-01T00:00:00Z",
+  "agent": "Codex",
+  "external_provider_llms_used": false,
+  "forbidden_commands_used": false,
+  "bucket": "route high-denorm context contamination",
+  "summary": "Retired six context-only route observations and retargeted two Webster Avenue SBS planning observations from M60/125th-LaGuardia to the existing proposed SBS to LaGuardia Airport route record.",
+  "subagent_inputs": [
+    {
+      "session_id": "019f1ff9-d2f7-7091-8ca9-c4fe3ad8f072",
+      "lane": "identity-review sparse SBS audit"
+    },
+    {
+      "session_id": "019f1ff9-9b90-7c03-b704-0aeb50f2655b",
+      "lane": "Q52/Q53/Utica/Webster high-denorm route audit"
+    },
+    {
+      "session_id": "019f1ff9-b8de-7a82-98c5-8ce35fa38db2",
+      "lane": "Bx12/B44/125th-LaGuardia/M34 high-denorm route audit"
+    }
+  ],
+  "retired_submissions": [
+    {
+      "submission_id": "sub_0e6db777ac9da362",
+      "affected_record": "route_b44-sbs",
+      "reason": "86th Street presentation figure-caption/context row incorrectly added Bronx geography to B44 SBS."
+    },
+    {
+      "submission_id": "sub_0ee29daf6c3b4a32",
+      "affected_record": "route_utica-ave-sbs",
+      "reason": "B82 South Brooklyn connection-list mention was incorrectly materialized as B46 Utica SBS route evidence."
+    },
+    {
+      "submission_id": "sub_1da20083cb946f2f",
+      "affected_record": "route_m34-sbs",
+      "reason": "86th Street presentation figure-caption/context row incorrectly added Bronx/Brooklyn geography to M34/M34A SBS."
+    },
+    {
+      "submission_id": "sub_6aea115924eba8b4",
+      "affected_record": "route_bx12-plus",
+      "reason": "86th Street presentation figure-caption/context row incorrectly added Westchester County geography to Bx12 SBS."
+    },
+    {
+      "submission_id": "sub_98afac6b362465d8",
+      "affected_record": "route_125th-laguardia-sbs",
+      "replacement_submission_id": "sub_3702d99b407cf405",
+      "replacement_record": "route_sbs-to-laguardia-2012",
+      "reason": "Webster Avenue evidence names the proposed SBS to LaGuardia Airport service, not the M60/125th-LaGuardia route."
+    },
+    {
+      "submission_id": "sub_bce1ef1b1f9722a2",
+      "affected_record": "route_utica-ave-sbs",
+      "reason": "B82 South Brooklyn connection-list mention was incorrectly materialized as B46 Utica SBS route evidence."
+    },
+    {
+      "submission_id": "sub_be87e29a320b5c89",
+      "affected_record": "route_125th-laguardia-sbs",
+      "replacement_submission_id": "sub_800cf2b0e6e9d2aa",
+      "replacement_record": "route_sbs-to-laguardia-2012",
+      "reason": "Webster Avenue evidence names the proposed SBS to LaGuardia Airport service, not the M60/125th-LaGuardia route."
+    },
+    {
+      "submission_id": "sub_f26152aeb9e3363c",
+      "affected_record": "route_125th-laguardia-sbs",
+      "reason": "86th Street presentation figure-caption/context row incorrectly added Bronx geography to M60/125th-LaGuardia SBS."
+    }
+  ],
+  "replacement_submissions_file": "data/submissions/2026-07-01_codex_route_context_contamination_retarget.jsonl",
+  "override_file": "data/submission-overrides/retired.json",
+  "before_after": [
+    {
+      "record_id": "route_125th-laguardia-sbs",
+      "before": {
+        "source_count": 30,
+        "local_observation_count": 30,
+        "submission_count": 30,
+        "contaminant_sources": [
+          "2013_02_sbs_webster_bx_cb3",
+          "2013_02_sbs_webster_bx_cb4",
+          "2014_10_01_brt_86thstreet_cb8_presentation"
+        ],
+        "boroughs": [
+          "Manhattan",
+          "Queens",
+          "Bronx"
+        ]
+      },
+      "after": {
+        "source_count": 27,
+        "local_observation_count": 27,
+        "submission_count": 27,
+        "contaminants_remaining": 0,
+        "boroughs": [
+          "Manhattan",
+          "Queens"
+        ]
+      }
+    },
+    {
+      "record_id": "route_sbs-to-laguardia-2012",
+      "before": {
+        "source_count": 5,
+        "local_observation_count": 5,
+        "submission_count": 5
+      },
+      "after": {
+        "source_count": 7,
+        "local_observation_count": 7,
+        "submission_count": 7,
+        "new_sources": [
+          "2013_02_sbs_webster_bx_cb3",
+          "2013_02_sbs_webster_bx_cb4"
+        ],
+        "new_submissions": [
+          "sub_3702d99b407cf405",
+          "sub_800cf2b0e6e9d2aa"
+        ]
+      }
+    },
+    {
+      "record_id": "route_utica-ave-sbs",
+      "before": {
+        "source_count": 35,
+        "local_observation_count": 49,
+        "submission_count": 50,
+        "contaminant_sources": [
+          "brt_south_brooklyn_b82_cb14_may2017",
+          "brt_south_brooklyn_b82_jan2018"
+        ]
+      },
+      "after": {
+        "source_count": 33,
+        "local_observation_count": 47,
+        "submission_count": 48,
+        "contaminants_remaining": 0
+      }
+    },
+    {
+      "record_id": "route_bx12-plus",
+      "before": {
+        "source_count": 39,
+        "local_observation_count": 38,
+        "submission_count": 39
+      },
+      "after": {
+        "source_count": 38,
+        "local_observation_count": 37,
+        "submission_count": 38,
+        "contaminants_remaining": 0
+      }
+    },
+    {
+      "record_id": "route_b44-sbs",
+      "before": {
+        "source_count": 36,
+        "local_observation_count": 34,
+        "submission_count": 36
+      },
+      "after": {
+        "source_count": 35,
+        "local_observation_count": 33,
+        "submission_count": 35,
+        "contaminants_remaining": 0
+      }
+    },
+    {
+      "record_id": "route_m34-sbs",
+      "before": {
+        "source_count": 25,
+        "local_observation_count": 25,
+        "submission_count": 25
+      },
+      "after": {
+        "source_count": 24,
+        "local_observation_count": 24,
+        "submission_count": 24,
+        "contaminants_remaining": 0
+      }
+    }
+  ],
+  "commands": [
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "stage": "baseline",
+      "result": "Issues: 0; submissions 98109; canonical records 84028; wiki pages 7333"
+    },
+    {
+      "command": "bun test packages/pipeline/test/materialize/materialize.test.ts",
+      "result": "57 pass; 0 fail; 867 expect calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    {
+      "command": "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+      "result": "Materialized 93075/98111 submissions; retired submissions skipped 254; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "stage": "after",
+      "result": "Issues: 0; submissions 98111; canonical records 84028; wiki pages 7333"
+    },
+    {
+      "command": "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+      "result": "ok"
+    }
+  ],
+  "remaining_intentionally_unresolved": [
+    "route_webster-ave-sbs still has additional context-map contamination candidates that need a separate bounded retirement/replacement pass.",
+    "route_q52-sbs-queens and route_m34-sbs remain classified split candidates where aggregate/split policy should stay explicit rather than blindly merging.",
+    "B44 SBS still carries non-Brooklyn borough evidence from other sources; this pass only removed the audited 86th Street caption contamination."
+  ],
+  "next_lanes": [
+    "Continue Webster Avenue route context contamination cleanup.",
+    "Rebaseline entity duplicate identity-key buckets with exact counts.",
+    "Pick one remaining high-count non-other normalization bucket and repeat the before/fix/materialize/validate loop."
+  ]
+}

@@ -1,0 +1,551 @@
+{
+  "run_id": "2026-06-10T17-48-04-882Z_1496766-a0fb5204_ingest_20100607-1st2nd-cb6-slides",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-10T19:33:49.323Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "rel-001-riders-54k",
+        "local_observation_id": "metric_riders_54000_weekday",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-sbs",
+            "object_id": "metric_riders-54000-weekday",
+            "description": "M15 route weekday ridership metric",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p003_c0008",
+                "source_quote": "Over 54,000 weekday riders"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p003_c0007",
+                "source_quote": "Currently served by M15 bus route"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric states over 54,000 weekday riders on the M15 route; adjacent block p003_c0007 explicitly names the M15 bus route as the subject.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p003_c0008",
+            "source_quote": "Over 54,000 weekday riders"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-002-corridor-length",
+        "local_observation_id": "metric_corridor_length_8_5_miles",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_corridor-length-8-5-miles",
+            "description": "Corridor length of First Avenue/Second Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p003_c0006",
+                "source_quote": "Service begins October 2010 8.5 miles from South Ferry to 125 th Street"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p003_c0005",
+                "source_quote": "The map illustrates the First Avenue/Second Avenue bus route in Manhattan. The route is marked with a thick black line and white dots representing stops."
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric describes the corridor length from South Ferry to 125th Street on the First Avenue/Second Avenue corridor overview slide.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p003_c0006",
+            "source_quote": "Service begins October 2010 8.5 miles from South Ferry to 125 th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-003-residents",
+        "local_observation_id": "metric_residents_537000_within_quarter_mile",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_residents-537000-within-quarter-mile",
+            "description": "Population within 1/4 mile of First Avenue/Second Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p003_c0012",
+                "source_quote": "537,000 residents"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p003_c0011",
+                "source_quote": "Within a ¼ mile:"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric on the corridor overview slide reports population within a quarter mile of the First Avenue/Second Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p003_c0012",
+            "source_quote": "537,000 residents"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-004-car-free",
+        "local_observation_id": "metric_households_no_car_78_percent",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_households-no-car-78-percent",
+            "description": "Car-free households within 1/4 mile of First Avenue/Second Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p003_c0013",
+                "source_quote": "78% of households do not own a car"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p003_c0011",
+                "source_quote": "Within a ¼ mile:"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric on the corridor overview slide reports car-free household share within a quarter mile of the corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p003_c0013",
+            "source_quote": "78% of households do not own a car"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-005-transit-commute",
+        "local_observation_id": "metric_commute_by_transit_57_percent",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_commute-by-transit-57-percent",
+            "description": "Transit commute share within 1/4 mile of First Avenue/Second Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p003_c0014",
+                "source_quote": "57% of residents commute by transit"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p003_c0011",
+                "source_quote": "Within a ¼ mile:"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric on the corridor overview slide reports transit commute share within a quarter mile of the corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p003_c0014",
+            "source_quote": "57% of residents commute by transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-006-bus-lanes",
+        "local_observation_id": "metric_over_10_miles_bus_lanes",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "metric_over-10-miles-bus-lanes",
+            "description": "Over 10 miles of new or improved bus lanes delivered by the First Avenue/Second Avenue SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p020_c0006",
+                "source_quote": "Over 10 miles of new or improved bus lanes"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p020_c0005",
+                "source_quote": "M15 Select Bus Service"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric on the project summary slide (page 20) reports bus lane miles delivered by the M15 Select Bus Service project.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p020_c0006",
+            "source_quote": "Over 10 miles of new or improved bus lanes"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-007-bike-lanes",
+        "local_observation_id": "metric_over_6_miles_bike_lanes",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "metric_over-6-miles-bike-lanes",
+            "description": "Over six miles of new or improved bike lanes delivered by the First Avenue/Second Avenue SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p020_c0009",
+                "source_quote": "Over six miles of new or improved bike lanes"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p020_c0005",
+                "source_quote": "M15 Select Bus Service"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric on the project summary slide reports bike lane miles delivered by the M15 Select Bus Service project.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p020_c0009",
+            "source_quote": "Over six miles of new or improved bike lanes"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-008-ped-islands",
+        "local_observation_id": "metric_over_50_pedestrian_islands",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "metric_over-50-pedestrian-islands",
+            "description": "Over 50 new pedestrian safety islands delivered by the First Avenue/Second Avenue SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p020_c0010",
+                "source_quote": "Over 50 new pedestrian safety islands"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p020_c0005",
+                "source_quote": "M15 Select Bus Service"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric on the project summary slide reports pedestrian safety islands delivered by the M15 Select Bus Service project.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p020_c0010",
+            "source_quote": "Over 50 new pedestrian safety islands"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-009-bus-speeds",
+        "local_observation_id": "claim_bus_speeds_declining",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_m15-sbs",
+            "object_id": "claim_bus-speeds-declining",
+            "description": "Claim that bus speeds have been declining on the M15 route",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p003_c0009",
+                "source_quote": "Bus speeds have been declining"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p003_c0007",
+                "source_quote": "Currently served by M15 bus route"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim about declining bus speeds appears on the M15 route overview slide; adjacent block p003_c0007 names the M15 bus route.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p003_c0009",
+            "source_quote": "Bus speeds have been declining"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-010-ridership",
+        "local_observation_id": "claim_ridership_decreasing",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_m15-sbs",
+            "object_id": "claim_ridership-decreasing",
+            "description": "Claim that ridership has been decreasing on the M15 route",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p003_c0010",
+                "source_quote": "Ridership has been decreasing"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p003_c0007",
+                "source_quote": "Currently served by M15 bus route"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim about decreasing ridership appears on the M15 route overview slide; adjacent block p003_c0007 names the M15 bus route.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p003_c0010",
+            "source_quote": "Ridership has been decreasing"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-011-parking-1st",
+        "local_observation_id": "claim_first_ave_parking_regulations_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "claim_first-ave-parking-regulations-2010",
+            "description": "First Avenue 2010 parking regulation plan as part of First Avenue/Second Avenue SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p016_c0008",
+                "source_quote": "The diagram shows the 2010 plan for First Avenue parking regulations between 57 St and 14 St. The street is divided into several zones: Bus Lane: 57 St to 50 St. Includes Commercial Loading (7am-4pm) and Bus Lane (4pm-7pm). Comm. Loading: 50 St to 42 St. Restricted: No Stopping or No Standing: 42 St to 23 St. Authorized Parking: 23 St to 28 St. Restricted: No Stopping or No Standing: 28 St to 14 St."
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim describes the First Avenue 2010 parking plan which is a design element of the First Avenue/Second Avenue SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p016_c0008",
+            "source_quote": "The diagram shows the 2010 plan for First Avenue parking regulations between 57 St and 14 St."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-012-parking-2nd",
+        "local_observation_id": "claim_second_ave_parking_regulations_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "claim_second-ave-parking-regulations-2010",
+            "description": "Second Avenue 2010 parking regulation plan as part of First Avenue/Second Avenue SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p017_c0008",
+                "source_quote": "Diagram illustrating the 2010 plan for parking regulations on Second Avenue, showing the street layout from 14 St to 57 St. The street is divided into several zones: Construction Zone: 57 St to 50 St (orange). Peak Period Parking Restrictions with Midday Commercial Loading: 50 St to 42 St (orange). Bus Lane: 42 St to 28 St (red). Metered Parking, Daytime: 28 St to 23 St (purple). No Stopping Anytime: 23 St to 14 St (teal)."
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim describes the Second Avenue 2010 parking plan which is a design element of the First Avenue/Second Avenue SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p017_c0008",
+            "source_quote": "Diagram illustrating the 2010 plan for parking regulations on Second Avenue, showing the street layout from 14 St to 57 St."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-013-launch",
+        "local_observation_id": "event_service_launch_october_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "event_service-launch-october-2010",
+            "description": "M15 Select Bus Service launch in October 2010",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p003_c0006",
+                "source_quote": "Service begins October 2010 8.5 miles from South Ferry to 125 th Street"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p020_c0004",
+                "source_quote": "October 2010"
+              }
+            ]
+          }
+        ],
+        "rationale": "Both the overview slide and the project summary slide specify October 2010 as the service launch date for the M15 Select Bus Service.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p003_c0006",
+            "source_quote": "Service begins October 2010 8.5 miles from South Ferry to 125 th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-014-cac5",
+        "local_observation_id": "event_cac_5_mid_summer_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "event_cac-5-mid-summer-2010",
+            "description": "CAC #5 community advisory committee meeting mid-summer 2010 for First Avenue/Second Avenue SBS",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p019_c0007",
+                "source_quote": "CAC #5 - Mid-summer 2010"
+              }
+            ]
+          }
+        ],
+        "rationale": "CAC #5 is a community advisory committee meeting for the First Avenue/Second Avenue SBS project, listed on the project timeline slide.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p019_c0007",
+            "source_quote": "CAC #5 - Mid-summer 2010"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-015-open-house",
+        "local_observation_id": "event_open_house_2_september_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "event_open-house-2-september-2010",
+            "description": "Open House #2 in September 2010 for First Avenue/Second Avenue SBS",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p019_c0008",
+                "source_quote": "Open House #2 - September 2010"
+              }
+            ]
+          }
+        ],
+        "rationale": "Open House #2 is a public engagement event for the First Avenue/Second Avenue SBS project, listed on the project timeline slide.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p019_c0008",
+            "source_quote": "Open House #2 - September 2010"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-016-resurfacing",
+        "local_observation_id": "event_street_resurfacing_begins_june_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "event_street-resurfacing-begins-june-2010",
+            "description": "Street resurfacing begins June 2010 on First Avenue as part of SBS construction",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p019_c0005",
+                "source_quote": "Street resurfacing begins this month on First Avenue"
+              }
+            ]
+          }
+        ],
+        "rationale": "Street resurfacing is a construction milestone for the First Avenue/Second Avenue SBS project, listed on the project timeline slide.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p019_c0005",
+            "source_quote": "Street resurfacing begins this month on First Avenue"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-017-construction",
+        "local_observation_id": "event_construction_sequencing_june_september_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "event_construction-sequencing-june-september-2010",
+            "description": "Construction sequencing June-September 2010 for First Avenue/Second Avenue SBS",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p018_c0006",
+                "source_quote": "June - September"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p018_c0007",
+                "source_quote": "Milling"
+              }
+            ]
+          }
+        ],
+        "rationale": "Construction sequencing timeline is part of the First Avenue/Second Avenue SBS project implementation, detailed on the construction slide (page 18).",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p018_c0006",
+            "source_quote": "June - September"
+          }
+        ]
+      }
+    ],
+    "packet_id": "relation-linker"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-30-01-425Z_1632245-0d33c40e_canonicalize_2026-06-10t17-48-04-882z-1496766-a0fb5204-ingest-20100607-1st2nd-cb6-slides-relation-linker"
+}

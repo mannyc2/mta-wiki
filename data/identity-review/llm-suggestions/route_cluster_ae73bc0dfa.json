@@ -1,0 +1,34 @@
+{
+  "review_run_id": "2026-06-23T14-38-47-609Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:38:55.367Z",
+  "packet_path": "data/identity-review/packets/route_cluster_ae73bc0dfa.md",
+  "cluster_id": "route_cluster_ae73bc0dfa",
+  "kind": "route",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "route_cluster_ae73bc0dfa",
+    "kind": "route",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "route_23rd-st-sbs",
+          "route_m23-local-cb4-apr2016"
+        ],
+        "reason": "Contradiction test: service_variant differs (sbs vs local). Per-kind route rule: identity = base route id + service variant; different variants never merge (explicit rule). Even though both share base M23, the variant mismatch makes them distinct routes."
+      }
+    ],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "The two records have the same base route M23 but explicit service_variants 'sbs' and 'local'. Under the Identity Merge Canon's per-kind route rules, different variants never merge. The contradiction test (strong identity field variant) forces do_not_merge. No ambiguity."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-38-47-612Z_1287237-ffb44503_identity-review-run_route-cluster-ae73bc0dfa",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-38-47-612Z_2026-06-23T14-38-47-612Z_1287237-ffb44503_identity-review-run_route-cluster-ae73bc0dfa.jsonl"
+}

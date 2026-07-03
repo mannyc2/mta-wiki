@@ -1,0 +1,43 @@
+{
+  "run_id": "2026-06-10T23-00-12-469Z_1976810-c1d669fe_ingest_201110-qbb-summary-recommendations",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T02:04:51.200Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "qbb-obs-001",
+        "local_observation_id": "corridor_queensboro_bridge_qbb",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id corridor_queensboro-bridge-qbb which already exists in the registry, confirming same source (201110_qbb_summary_recommendations), same corridor name (Queensboro Bridge), same boroughs (Manhattan, Queens), and same description (major bus corridor with 16,000 daily trips). Decision is new per canonicalization rules: the closest registry match is the observation's own base_record_id, so new is the correct decision.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p003_c0003",
+            "source_quote": "The QBB is a major bus corridor – 16,000 bus trips a day – 110 buses during PM rush hour – Local service between Manhattan and Queens"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "corridor_queensboro-bridge-qbb",
+            "object_id": "corridor_queensboro-bridge-201110",
+            "description": "Both records refer to the same real-world Queensboro Bridge bus corridor connecting Manhattan and Queens, carrying ~16,000 bus trips daily",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_summary_recommendations",
+                "block_id": "p003_c0003",
+                "source_quote": "The QBB is a major bus corridor – 16,000 bus trips a day – 110 buses during PM rush hour – Local service between Manhattan and Queens"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-02-57-627Z_2111393-39b244ca_canonicalize_2026-06-10t23-00-12-469z-1976810-c1d669fe-ingest-201110-qbb-summary-recommendations-corridor-identity"
+}

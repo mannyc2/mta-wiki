@@ -1,0 +1,235 @@
+{
+  "note_id": "codex-metric-scale-asset-tail-2026-06-30-ad",
+  "created_at": "2026-06-30T19:55:00.000Z",
+  "author": "codex",
+  "kind": "deterministic_post_ingest_cleanup_checkpoint",
+  "status": "validated_clean",
+  "bucket": "metric_claims.unit_normalized.unit_family",
+  "constraints": {
+    "external_provider_llms_used": false,
+    "forbidden_repo_agent_commands_used": false,
+    "canonical_jsonl_hand_edited": false,
+    "subagents": [
+      {
+        "agent_id": "019f19ec-f2aa-7bf2-b9e3-4e728d9599c0",
+        "lane": "metric_other_exact_asset_count_tail",
+        "result": "Recommended 23 exact infrastructure/asset count literals, excluding broad scale-only literals and ambiguous rates.",
+        "closed_after_use": true
+      },
+      {
+        "agent_id": "019f19ec-f7a0-7c92-9f8c-11f770a52e71",
+        "lane": "metric_scale_only_context_tail",
+        "result": "Recommended 87 high-confidence bare millions/thousands records using bounded finance, Bridges-and-Tunnels traffic, NOVI/warning, and customers_gated context; employment/job rows held.",
+        "closed_after_use": true
+      }
+    ]
+  },
+  "before": {
+    "metric_total": 36534,
+    "metric_families": {
+      "money": 11790,
+      "percentage": 8279,
+      "count": 2837,
+      "missing": 2500,
+      "ridership": 2414,
+      "workforce": 2213,
+      "duration": 1012,
+      "money_rate": 771,
+      "scale": 665,
+      "distance": 616,
+      "speed": 577,
+      "safety": 382,
+      "volume": 378,
+      "population": 366,
+      "safety_rate": 292,
+      "rate": 245,
+      "enforcement": 222,
+      "other": 208,
+      "ratio": 196,
+      "count_rate": 186,
+      "area": 131,
+      "engagement": 90
+    },
+    "top_other_units": [
+      ["millions", 73],
+      ["thousands", 37],
+      ["year", 4],
+      ["rate", 3],
+      ["trains per day", 2],
+      ["seats per car", 2],
+      ["summons per quarter", 2],
+      ["seats", 1],
+      ["per 1,000 residents", 1],
+      ["recommendations", 1],
+      ["ridership", 1],
+      ["transfers per day", 1],
+      ["scenarios", 1],
+      ["time periods", 1],
+      ["zones", 1],
+      ["tree pits", 1],
+      ["requests per month", 1],
+      ["registrants", 1],
+      ["stations per month", 1],
+      ["proposers", 1]
+    ]
+  },
+  "implemented_slices": [
+    {
+      "name": "exact_infrastructure_asset_counts",
+      "records_moved": 23,
+      "mapping": {
+        "unit_family": "count",
+        "scale": null,
+        "literals": [
+          "plazas",
+          "pump rooms",
+          "railroad equipment platforms",
+          "railroad substations",
+          "railroad ties",
+          "shoes",
+          "signal relays",
+          "signals",
+          "siphons",
+          "station entrances",
+          "subway fan plants",
+          "subway hatches",
+          "subway manholes",
+          "subway stairways",
+          "subway yards",
+          "terminals",
+          "track panels",
+          "transformers",
+          "transponders",
+          "tree pits",
+          "tree_pits",
+          "tubes",
+          "vehicular tunnel flood doors"
+        ]
+      }
+    },
+    {
+      "name": "scale_only_bounded_context",
+      "records_moved": 87,
+      "mapping": [
+        {
+          "bucket": "finance_metric_names",
+          "records_moved": 65,
+          "unit_family": "money",
+          "normalized_unit": "dollars",
+          "scale": "millions -> 1000000; thousands -> 1000",
+          "guards": "Metric-name finance stems only, plus variance with finance context; bare budget_total remains unresolved."
+        },
+        {
+          "bucket": "bridges_and_tunnels_traffic",
+          "records_moved": 11,
+          "unit_family": "count",
+          "normalized_unit": "vehicle_crossings",
+          "scale": 1000000,
+          "guards": "Requires both traffic metric and MTA Bridges and Tunnels / Bridges and Tunnels context."
+        },
+        {
+          "bucket": "novi_warning_counts",
+          "records_moved": 9,
+          "unit_family": "count",
+          "normalized_unit": "notices_of_violation or warnings",
+          "scale": 1000,
+          "guards": "Requires NOVI/notice-of-violation or warning context; fare_evasion_novis maps to count, not money."
+        },
+        {
+          "bucket": "customers_gated",
+          "records_moved": 2,
+          "unit_family": "count",
+          "normalized_unit": "customers",
+          "scale": 1000,
+          "guards": "Requires metric_name exactly customers_gated."
+        }
+      ]
+    }
+  ],
+  "changes": [
+    {
+      "file": "packages/pipeline/src/ontology/normalizers.ts",
+      "summary": "Added exact infrastructure/asset count aliases and a scaleOnlyContextUnitFromPayload helper for bounded finance, B&T traffic, NOVI/warning, and customers_gated scale-only units."
+    },
+    {
+      "file": "packages/pipeline/test/ontology/normalizers.test.ts",
+      "summary": "Added tests for the exact asset count aliases, scale-only context rules, and guards for unresolved scale/rate/OCR/employment literals."
+    }
+  ],
+  "after": {
+    "metric_total": 36534,
+    "metric_families": {
+      "money": 11855,
+      "percentage": 8279,
+      "count": 2882,
+      "missing": 2500,
+      "ridership": 2414,
+      "workforce": 2213,
+      "duration": 1012,
+      "money_rate": 771,
+      "scale": 665,
+      "distance": 616,
+      "speed": 577,
+      "safety": 382,
+      "volume": 378,
+      "population": 366,
+      "safety_rate": 292,
+      "rate": 245,
+      "enforcement": 222,
+      "ratio": 196,
+      "count_rate": 186,
+      "area": 131,
+      "other": 98,
+      "engagement": 90
+    },
+    "metric_other_delta": -110,
+    "metric_money_delta": 65,
+    "metric_count_delta": 45,
+    "top_other_units": [
+      ["thousands", 23],
+      ["year", 4],
+      ["rate", 3],
+      ["trains per day", 2],
+      ["seats per car", 2],
+      ["summons per quarter", 2],
+      ["seats", 1],
+      ["per 1,000 residents", 1],
+      ["recommendations", 1],
+      ["ridership", 1],
+      ["transfers per day", 1],
+      ["scenarios", 1],
+      ["time periods", 1],
+      ["zones", 1],
+      ["requests per month", 1],
+      ["registrants", 1],
+      ["stations per month", 1],
+      ["proposers", 1],
+      ["daily crossings", 1],
+      ["index points", 1]
+    ]
+  },
+  "verification": {
+    "normalizers_test": "bun test packages/pipeline/test/ontology/normalizers.test.ts: 275 pass, 0 fail, 4506 expect() calls",
+    "submissions_test": "bun test packages/pipeline/test/records/submissions.test.ts: 29 pass, 0 fail, 176 expect() calls",
+    "typecheck": "bun run typecheck passed",
+    "materialize": "bun packages/cli/src/cli.ts materialize completed; Materialized 93092/98102 submissions; SQLite FTS quick_check ok",
+    "sqlite_quick_check": "sqlite3 data/canonical.db 'PRAGMA quick_check;' => ok",
+    "validate": "bun packages/cli/src/cli.ts validate: Issues 0; submissions 98102; canonical records 84040; wiki pages 7334"
+  },
+  "remaining": [
+    "Metric other residual is now 98. The largest remaining bucket is 23 employment/job records with raw unit thousands; these were intentionally held because the unit-family semantics need a policy decision.",
+    "Other residuals are mostly low-count rate, duration, OCR/money, and singleton count-like literals such as year, rate, trains per day, seats per car, summons per quarter, and several one-offs.",
+    "/mnt/models remains tight at roughly 519 MB free after the rebuild; future materialization may need the same temporary DB move."
+  ],
+  "commands_not_run": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed commands",
+    "external/provider LLM calls",
+    "canonical JSONL hand edits"
+  ]
+}

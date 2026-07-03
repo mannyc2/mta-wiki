@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T22-56-13-237Z_1976810-594d84d9_ingest_2011-brt-34th-cb6-slides",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T01:20:40.310Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "corridor_34th_st_manhattan_2011_cb6",
+        "decision": "new",
+        "rationale": "The observation already resolves to its base_record_id corridor_34th-st-busway. The source 2011_brt_34th_cb6_slides is registered to that record, and the observation's own record_id matches the base. Per rule: best match is own base_record_id, so decision is new. The observation's broader limits (Twelfth Avenue to First Avenue vs. Ninth to Third) reflect the study's scope at CB6 presentation stage preceding final design, not a different corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p006_c0002",
+            "source_quote": "34th Street from Twelfth Avenue to First Avenue"
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-20-15-545Z_2111393-da85bcdd_canonicalize_2026-06-10t22-56-13-237z-1976810-594d84d9-ingest-2011-brt-34th-cb6-slides-corridor-identity"
+}

@@ -1,0 +1,197 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch055",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "batch_id": "relation055",
+  "scope": "Codex-only deterministic relation cleanup prep; no provider-backed commands, canonicalize/campaign/identity/write/ask/schema/ontology-normalize commands, full materialize/export/validate, durable retirement edits, submission appends, generated-output edits, LOG edits, manifest edits, canonical edits, or wiki edits applied.",
+  "durable_mechanism_prepared_not_applied": {
+    "retire_originals_via": "data/submission-overrides/retired.json",
+    "replacement_journal_if_needed": "data/submissions/2026-06-23_codex_relation_cleanup_batch055.jsonl",
+    "replacement_append_needed_for_this_batch": false,
+    "mutation_status": "not_applied_by_this_prep",
+    "only_file_written_by_this_task": "data/review_notes/codex-relation-cleanup-batch055-prep.json"
+  },
+  "summary_counts": {
+    "current_unexpected_relation_endpoint_shape_count_from_local_canonical_probe": 11,
+    "prepared_malformed_submission_count": 1,
+    "retire_only_count": 1,
+    "retire_replace_count": 0,
+    "accepted_replacement_count": 0,
+    "expected_endpoint_shape_delta": -1,
+    "expected_remaining_unexpected_relation_endpoint_shape_after_apply": 10
+  },
+  "bucket": {
+    "name": "deferred RPA report published_by claim-to-entity row with wrong claim endpoint",
+    "original_relation_kind": "published_by",
+    "original_endpoint_shape": "claim -> entity",
+    "cleanup_direction": "retire only",
+    "why_coherent": "The selected malformed row is the remaining current published_by claim -> entity relation. Prior batch027 explicitly deferred it because the RPA report evidence does not point to the NYT findings claim endpoint. Current canonical data already has a validator-compatible NYT entity -> NYT findings claim relation, and the RPA report page has separate traffic-delay metric claims, so retiring the bad cross-wired relation is safer than fabricating a new aggregate RPA claim relation."
+  },
+  "guard_checks": {
+    "all_pass": true,
+    "commands_used": [
+      "rg/jq/node local inspection only",
+      "local endpoint-shape probe over data/canonical/*.jsonl and packages/pipeline/src/records/relations.ts semantics",
+      "source block inspection in raw/sources/meeting_doc_177271/blocks.jsonl",
+      "submission and retired override grep/jq probes"
+    ],
+    "forbidden_commands_avoided": {
+      "status": "pass",
+      "avoided": [
+        "external/provider LLM commands",
+        "canonicalize*",
+        "campaign dedup",
+        "identity-review",
+        "write",
+        "ask",
+        "schema",
+        "ontology-normalize",
+        "--profile/provider commands",
+        "full materialize/export/validate"
+      ]
+    },
+    "original_accepted_not_retired": {
+      "status": "pass",
+      "selected_original_submission_id": "sub_687fd4513ffda23a",
+      "selected_original_record_id": "relation_meeting-doc-177271-rpa-published-findings",
+      "selected_original_journal": "data/submissions/2026-06-21T18-03-03-749Z_2907661-f2797e29_ingest_meeting-doc-177271.jsonl:38",
+      "current_validation_state": "accepted",
+      "retired_hits": []
+    },
+    "current_canonical_endpoint_shape_invalid": {
+      "status": "pass",
+      "file": "packages/pipeline/src/records/relations.ts",
+      "relation_kind": "published_by",
+      "valid_subject_kinds": [
+        "source",
+        "project",
+        "entity"
+      ],
+      "valid_object_kinds": [
+        "entity"
+      ],
+      "original_subject_kind": "claim",
+      "original_object_kind": "entity",
+      "validator_evidence": "Relation kind published_by expects source|project|entity -> entity, got claim -> entity."
+    },
+    "evidence_checked": {
+      "status": "pass",
+      "source_id": "meeting_doc_177271",
+      "evidence_refs": [
+        "meeting_doc_177271#p013_c0002",
+        "meeting_doc_177271#p013_c0009"
+      ],
+      "evidence_summary": "The cited blocks identify 'Key Findings from RPA Report on Congestion Pricing' and 'Regional Plan Association'. They support RPA/report context, but not the submitted subject endpoint, which is the separate NYT findings claim from page 12."
+    },
+    "replacement_not_prepared": {
+      "status": "pass",
+      "reason": "A high-confidence replacement is not available without changing the claim endpoint. The submitted subject claim is claim_meeting_doc_177271_nytimes_findings, which is already covered by current canonical relation relation_batch027-nytimes-has-claim-congestion-pricing-findings as has_claim entity -> claim. The RPA page has separate metric claims for Manhattan, regions outside Manhattan, Bronx, and Bergen County traffic-delay reductions, but no distinct aggregate RPA findings claim endpoint exists in current canonical data.",
+      "existing_valid_coverage": [
+        {
+          "record_id": "relation_batch027-nytimes-has-claim-congestion-pricing-findings",
+          "relation_kind": "has_claim",
+          "endpoint_shape": "entity -> claim",
+          "subject_local_observation_id": "entity_meeting_doc_177271_nytimes",
+          "object_local_observation_id": "claim_meeting_doc_177271_nytimes_findings"
+        },
+        {
+          "record_id": "metric_meeting-doc-177271-traffic-delays-manhattan-25",
+          "evidence_id": "meeting_doc_177271#p013_c0003"
+        },
+        {
+          "record_id": "metric_meeting-doc-177271-traffic-delays-outside-manhattan-9",
+          "evidence_id": "meeting_doc_177271#p013_c0004"
+        },
+        {
+          "record_id": "metric_meeting-doc-177271-traffic-delays-bronx-10",
+          "evidence_id": "meeting_doc_177271#p013_c0005"
+        },
+        {
+          "record_id": "metric_meeting-doc-177271-traffic-delays-bergen-14",
+          "evidence_id": "meeting_doc_177271#p013_c0006"
+        }
+      ]
+    },
+    "prior_defer_context_checked": {
+      "status": "pass",
+      "artifact": "data/review_notes/codex-relation-cleanup-batch027-prep.json",
+      "summary": "Batch027 deferred sub_687fd4513ffda23a because the relation points RPA to the NYT findings claim and no distinct same-source RPA findings claim endpoint was prepared."
+    },
+    "no_generated_files_edited": {
+      "status": "pass_for_this_task",
+      "note": "The shared worktree already contains unrelated dirty generated and durable files. This task wrote only the prep artifact and did not edit retired.json, submissions, canonical JSONL, materialized data, wiki output, LOG, manifest, or code."
+    }
+  },
+  "prepared_changes": [
+    {
+      "change_type": "retire_only",
+      "confidence": "high",
+      "original": {
+        "submission_id": "sub_687fd4513ffda23a",
+        "run_id": "2026-06-21T18-03-03-749Z_2907661-f2797e29_ingest_meeting-doc-177271",
+        "submitted_at": "2026-06-21T18:23:07.329Z",
+        "tool_args_sha256": "sha256:687fd4513ffda23a453f17e6718d3bc7b5ea6c7069d533d3294dad82c7c9ecd8",
+        "journal": "data/submissions/2026-06-21T18-03-03-749Z_2907661-f2797e29_ingest_meeting-doc-177271.jsonl:38",
+        "record_id": "relation_meeting-doc-177271-rpa-published-findings",
+        "source_id": "meeting_doc_177271",
+        "local_observation_id": "relation_meeting_doc_177271_rpa_published_findings",
+        "label": "RPA published congestion pricing findings",
+        "malformed_shape": "published_by claim -> entity",
+        "tool_args": {
+          "source_id": "meeting_doc_177271",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_meeting_doc_177271_rpa_published_findings",
+          "label": "RPA published congestion pricing findings",
+          "payload": {
+            "relation_kind": "published_by",
+            "subject_local_observation_id": "claim_meeting_doc_177271_nytimes_findings",
+            "object_local_observation_id": "entity_meeting_doc_177271_rpa",
+            "relation_family": "publication_role"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_177271",
+              "evidence_id": "meeting_doc_177271#p013_c0002",
+              "source_path": "raw/sources/meeting_doc_177271/blocks.jsonl",
+              "page_number": 13,
+              "block_id": "p013_c0002",
+              "text_sha256": "sha256:207c804bd7e0934b2f1e4266aa5e86c851e3e8b30da0f97fd5ddc80873b77cd5",
+              "text_source": "raw_text",
+              "source_quote": "Key Findings from RPA Report on Congestion Pricing"
+            },
+            {
+              "source_id": "meeting_doc_177271",
+              "evidence_id": "meeting_doc_177271#p013_c0009",
+              "source_path": "raw/sources/meeting_doc_177271/blocks.jsonl",
+              "page_number": 13,
+              "block_id": "p013_c0009",
+              "text_sha256": "sha256:dde209faaa35ec66e1e9e02be201bbc348a9dc228d501fb8c4d01810bd0625b6",
+              "text_source": "raw_text",
+              "source_quote": "Regional Plan Association"
+            }
+          ]
+        }
+      },
+      "proposed_retired_json_entry": {
+        "submission_id": "sub_687fd4513ffda23a",
+        "reason": "Codex relation cleanup batch055 retires malformed published_by claim -> entity relation relation_meeting-doc-177271-rpa-published-findings. The evidence supports RPA report context on page 13, but the submitted subject endpoint is the separate NYT findings claim; current canonical data already preserves the NYT claim via a valid has_claim entity -> claim relation and preserves the RPA page facts as separate metric claims.",
+        "source_decision": "data/review_notes/codex-relation-cleanup-batch055-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch055",
+        "reviewed_at": "2026-06-23T00:00:00Z"
+      },
+      "proposed_replacement_submission_json": null,
+      "replacement_decision": {
+        "status": "not_prepared",
+        "reason": "Retire-only is preferred because the original evidence is underpowered for the submitted claim endpoint, and a valid same-source NYT has_claim relation plus RPA metric claims already cover the recoverable facts without creating a speculative aggregate RPA claim."
+      },
+      "expected_endpoint_shape_delta": -1
+    }
+  ],
+  "expected_delta": {
+    "retired_json_additions": 1,
+    "submission_jsonl_additions": 0,
+    "canonical_relation_rows_removed_after_materialize": 1,
+    "canonical_relation_rows_added_after_materialize": 0,
+    "unexpected_relation_endpoint_shape_delta": -1,
+    "expected_remaining_unexpected_relation_endpoint_shape_after_apply": 10
+  }
+}

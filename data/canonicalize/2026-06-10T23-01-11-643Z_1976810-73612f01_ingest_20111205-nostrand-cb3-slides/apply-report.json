@@ -1,0 +1,21 @@
+{
+  "run_id": "2026-06-10T23-01-11-643Z_1976810-73612f01_ingest_20111205-nostrand-cb3-slides",
+  "generated_at": "2026-06-11T04:44:24.029Z",
+  "dry_run": false,
+  "wrote": true,
+  "decision_count": 15,
+  "reviewed_count": 11,
+  "alias_additions": [],
+  "aliases_already_present": [],
+  "do_not_merge_additions": [],
+  "relation_submissions": 0,
+  "quarantined": 2,
+  "conflicts": [],
+  "paths": {
+    "merges": "data/identity-overrides/merges.json",
+    "do_not_merge": "data/identity-overrides/do-not-merge.json",
+    "relation_submissions_jsonl": "data/submissions/2026-06-10T23-01-11-643Z_1976810-73612f01_ingest_20111205-nostrand-cb3-slides_canonicalize.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-01-11-643Z_1976810-73612f01_ingest_20111205-nostrand-cb3-slides/apply-quarantine.jsonl",
+    "apply_report": "data/canonicalize/2026-06-10T23-01-11-643Z_1976810-73612f01_ingest_20111205-nostrand-cb3-slides/apply-report.json"
+  }
+}

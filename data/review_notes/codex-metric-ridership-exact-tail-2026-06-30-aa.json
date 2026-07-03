@@ -1,0 +1,193 @@
+{
+  "note_id": "codex-metric-ridership-exact-tail-2026-06-30-aa",
+  "mode": "codex_only_deterministic",
+  "external_provider_llms_used": false,
+  "forbidden_commands_used": [],
+  "bucket": "metric_claims.unit_normalized.unit_family",
+  "before": {
+    "metric_total": 36534,
+    "metric_families": {
+      "money": 11788,
+      "percentage": 8272,
+      "count": 2715,
+      "missing": 2500,
+      "workforce": 2201,
+      "ridership": 2100,
+      "duration": 1004,
+      "other": 830,
+      "money_rate": 730,
+      "scale": 653,
+      "distance": 616,
+      "speed": 577,
+      "volume": 375,
+      "safety": 371,
+      "population": 364,
+      "safety_rate": 278,
+      "rate": 227,
+      "enforcement": 217,
+      "ratio": 191,
+      "count_rate": 167,
+      "area": 129,
+      "engagement": 87,
+      "access": 26,
+      "participation": 25,
+      "frequency": 23,
+      "rating": 17,
+      "duration_rate": 16,
+      "mass": 14,
+      "service": 14,
+      "data": 6,
+      "visitor_count": 1
+    },
+    "top_other_units": [
+      ["millions", 213],
+      ["customers", 146],
+      ["thousands", 44],
+      ["units", 19],
+      ["riders per car", 9],
+      ["% of Jan 2017 baseline", 7],
+      ["passengers per car", 5],
+      ["per annum", 5],
+      ["per square foot", 5],
+      ["normalized index", 4]
+    ]
+  },
+  "subagents": [
+    {
+      "agent_id": "019f19c4-c1c9-7932-900c-17a1911a6b9d",
+      "nickname": "Ramanujan the 3rd",
+      "role": "read_only_scout",
+      "result": "Identified 14 subway loading metrics with units riders per car/passengers per car as a safe ridership alias slice; explicitly rejected seats per car, USD per day per car, broad per-car rules, and plain customers."
+    }
+  ],
+  "implemented_changes": [
+    {
+      "kind": "exact_unit_aliases",
+      "files": [
+        "packages/pipeline/src/ontology/normalizers.ts",
+        "packages/pipeline/test/ontology/normalizers.test.ts"
+      ],
+      "summary": "Added exact residual aliases for subway loading, money-rate USD forms, CPI/index scales, percentage baseline units, selected count/workforce/enforcement/safety/ridership/rate/area/volume literals, and guarded low-count physical units."
+    },
+    {
+      "kind": "context_gated_money_rate",
+      "summary": "Generic units per annum, per month, and per square foot now normalize to money_rate only when payload evidence contains currency/USD/dollar markers."
+    },
+    {
+      "kind": "context_gated_ridership",
+      "summary": "Scale-only millions/thousands and plain customers now normalize to ridership only when metric payload fields prove ridership, passenger, trip, boarding, alighting, paid-customer, or revenue-passenger context."
+    },
+    {
+      "kind": "guardrails",
+      "summary": "Broad customers/millions/thousands, generic units/year/rate, seats per car, daily crossings, crossings per hour, and non-ridership customer counts remain unresolved."
+    }
+  ],
+  "after": {
+    "metric_total": 36534,
+    "metric_families": {
+      "money": 11790,
+      "percentage": 8279,
+      "count": 2758,
+      "missing": 2500,
+      "ridership": 2404,
+      "workforce": 2210,
+      "duration": 1004,
+      "money_rate": 767,
+      "scale": 665,
+      "distance": 616,
+      "speed": 577,
+      "volume": 377,
+      "safety": 375,
+      "other": 368,
+      "population": 366,
+      "safety_rate": 285,
+      "rate": 237,
+      "enforcement": 220,
+      "ratio": 191,
+      "count_rate": 175,
+      "area": 131,
+      "engagement": 87,
+      "access": 26,
+      "rating": 26,
+      "participation": 25,
+      "frequency": 23,
+      "duration_rate": 16,
+      "mass": 14,
+      "service": 14,
+      "data": 6,
+      "mass_rate": 1,
+      "visitor_count": 1
+    },
+    "top_other_units": [
+      ["millions", 75],
+      ["thousands", 37],
+      ["customers", 21],
+      ["units", 19],
+      ["year", 4],
+      ["rate", 3],
+      ["workdays", 3],
+      ["degrees Fahrenheit", 2],
+      ["incident rate", 2],
+      ["kWh/bulb", 2]
+    ]
+  },
+  "movement": {
+    "unit_family_other": {
+      "before": 830,
+      "after": 368,
+      "delta": -462
+    },
+    "notable_increases": {
+      "ridership": 304,
+      "count": 43,
+      "money_rate": 37,
+      "scale": 12,
+      "rate": 10,
+      "rating": 9,
+      "workforce": 9,
+      "count_rate": 8,
+      "percentage": 7,
+      "safety_rate": 7
+    }
+  },
+  "environment_notes": [
+    "First materialize attempt failed with database or disk is full because /mnt/models was 100% full.",
+    "Removed failed generated data/canonical.db.building artifacts and moved generated data/canonical.db to /tmp as a rollback backup before retrying.",
+    "Retry materialized successfully; the temporary /tmp backup was removed after clean validation."
+  ],
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "result": "pass: 274 tests, 4397 expects"
+    },
+    {
+      "command": "bun test packages/pipeline/test/records/submissions.test.ts",
+      "result": "pass: 29 tests, 176 expects"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "pass: Materialized 93092/98102 submissions; retired skipped 243; Pages 7338; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+      "result": "ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "Issues: 0; submissions 98102; canonical records 84040; wiki pages 7334"
+    }
+  ],
+  "remaining_backlog": {
+    "metric_other": 368,
+    "relation_unknown": 9569,
+    "project_family_other": 8,
+    "project_family_missing": 2,
+    "project_document_time_status_missing": 18
+  },
+  "validation_clean": true,
+  "goal_status": "active"
+}

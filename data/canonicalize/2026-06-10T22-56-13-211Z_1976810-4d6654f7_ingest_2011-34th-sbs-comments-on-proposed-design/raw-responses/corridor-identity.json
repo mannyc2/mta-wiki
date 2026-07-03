@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T22-56-13-211Z_1976810-4d6654f7_ingest_2011-34th-sbs-comments-on-proposed-design",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T01:18:17.852Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d_34th_st_manhattan_2011",
+        "local_observation_id": "corridor_34th_st_manhattan_2011",
+        "decision": "new",
+        "rationale": "Observation already resolves to corridor_34th-st-busway (base_record_id matches). The source '2011_34th_sbs_comments_on_proposed_design' is already associated with this record. The broader limits 'FDR Drive to Twelfth Avenue' from block p002_c0011 describe the flier distribution outreach area for the SBS public meetings, not the busway corridor limits — the document is explicitly about the 34th Street SBS project. No other registry record matches this corridor, and the observation is correctly placed at its base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p002_c0011",
+            "source_quote": "In addition, DOT distributed fliers door-to-door to every storefront business and accessible building along 34 th Street between the FDR Drive and Twelfth Avenue."
+          },
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p001_c0005",
+            "source_quote": "Summary of Public Comments on the Proposed Design for 34 th Street Select Bus Service (SBS)"
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-17-12-651Z_2111393-1bfb5256_canonicalize_2026-06-10t22-56-13-211z-1976810-4d6654f7-ingest-2011-34th-sbs-comments-on-proposed-design-corridor-identity"
+}

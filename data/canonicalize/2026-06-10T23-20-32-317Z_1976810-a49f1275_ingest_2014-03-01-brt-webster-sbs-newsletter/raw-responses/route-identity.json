@@ -1,0 +1,12 @@
+{
+  "run_id": "2026-06-10T23-20-32-317Z_1976810-a49f1275_ingest_2014-03-01-brt-webster-sbs-newsletter",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T04:04:43.975Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "assistant_text",
+  "parse_error": "JSON Parse error: Unexpected EOF",
+  "raw_response": "",
+  "transcript_dir": "data/transcripts/runs/2026-06-11T04-04-42-418Z_2111393-dfeb1c7e_canonicalize_2026-06-10t23-20-32-317z-1976810-a49f1275-ingest-2014-03-01-brt-webster-sbs-newsletter-route-identity"
+}

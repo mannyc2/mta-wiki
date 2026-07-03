@@ -1,0 +1,34 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:38:10.882Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_70609b70c4.md",
+  "cluster_id": "entity_cluster_70609b70c4",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_70609b70c4",
+    "kind": "entity",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "entity_meeting-doc-140491-mercer",
+          "entity_mercer-health-benefits"
+        ],
+        "reason": "Contradiction test (test 1): strong identity field entity_type differs (organization vs vendor). The records denote distinct real-world entities despite sharing the base name 'Mercer'."
+      }
+    ],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "entity_type is a strong identity field. The first record's payload_identity_fields has entity_type 'organization', the second has 'vendor'. Per Identity Merge Canon test 1, this contradiction forces do_not_merge regardless of name similarity or shared relation context."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-38-06-096Z_1282984-dc993def_identity-review-run_entity-cluster-70609b70c4",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-38-06-097Z_2026-06-23T14-38-06-096Z_1282984-dc993def_identity-review-run_entity-cluster-70609b70c4.jsonl"
+}

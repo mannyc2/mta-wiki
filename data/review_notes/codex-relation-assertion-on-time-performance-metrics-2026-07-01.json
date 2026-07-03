@@ -1,0 +1,93 @@
+{
+  "id": "codex-relation-assertion-on-time-performance-metrics-2026-07-01",
+  "date": "2026-07-01",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider profiles"
+  ],
+  "bucket": "relation_assertion_status_unknown",
+  "slice": "observed_on_time_performance_has_metric_relations",
+  "baseline": {
+    "validate_issues": 0,
+    "relation_assertion_unknown_total": 5474,
+    "metric_context_unknown": 2777,
+    "metric_context_has_metric_unknown": 2763,
+    "safe_candidate_count": 173
+  },
+  "implemented": [
+    {
+      "area": "assertion qualifier",
+      "files": [
+        "packages/pipeline/src/records/assertion-qualifiers.ts",
+        "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+      ],
+      "summary": "Added a deterministic delivered-status rule for observed on-time performance has_metric relations. The rule is scoped to entity/route/corridor subjects already allowed by the parent metric relation path, metric_claim objects, same-source evidence, concrete numeric values, observed period anchors, exact OTP metric-name allowlist, percentage/percent units, and future/proposed/forecast/estimate rejection guards while allowing observed above-goal text."
+    }
+  ],
+  "after": {
+    "relation_assertion_unknown_total": 5301,
+    "metric_context_unknown": 2604,
+    "metric_context_has_metric_unknown": 2590,
+    "metric_context_has_metric_delivered": 2503,
+    "validate_issues": 0,
+    "canonical_records": 84040,
+    "wiki_pages": 7334
+  },
+  "delta": {
+    "relation_assertion_unknown_total": -173,
+    "metric_context_unknown": -173,
+    "metric_context_has_metric_unknown": -173
+  },
+  "subagent_inputs": [
+    {
+      "agent_id": "019f1b61-94fb-7a91-8ab2-2cceb42f1de8",
+      "lane": "timeline_context.has_timeline_event held public-engagement meetings",
+      "used": false,
+      "follow_up_candidate_count": 11
+    }
+  ],
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+      "result": "pass",
+      "details": "71 pass, 0 fail, 391 expect() calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    {
+      "command": "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+      "result": "pass",
+      "details": "Materialized 93092/98102 submissions; SQLite FTS quick_check: ok"
+    },
+    {
+      "command": "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+      "result": "pass",
+      "details": "ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass",
+      "details": "Submissions 98102; canonical records 84040; wiki pages 7334; Issues 0"
+    }
+  ],
+  "intentionally_unresolved": [
+    "OTP-shaped rows without observed period anchors remain unknown.",
+    "Project on-time-performance, on-time-performance change, wrong-unit rows, missing-evidence rows, and future/proposed/forecast/estimate rows remain unknown.",
+    "The rule intentionally does not generalize to all performance percentages, customer satisfaction, ridership recovery, service delivered, or travel-time metrics.",
+    "No canonical JSONL was hand-edited; canonical relations and SQLite were refreshed by deterministic materialization."
+  ],
+  "next_lanes": [
+    "Implement or further review the 11-row held public-engagement meeting timeline candidate from the timeline scout.",
+    "Continue metric_context.has_metric residual cleanup with equally narrow exact-name/unit/period guards.",
+    "Consume the metric and agency/funding scouts before the next checkpoint."
+  ]
+}

@@ -1,0 +1,467 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_2013-02-sbs-webster-bx-cb3"
+record_kind: "source"
+display_name: "Webster Avenue Select Bus Service - Presentation to Community Board 3"
+source_id: "2013_02_sbs_webster_bx_cb3"
+source_ids:
+  - "2013_02_sbs_webster_bx_cb3"
+local_observation_id: "source_2013_02_sbs_webster_bx_cb3"
+local_observation_ids:
+  - "source_2013_02_sbs_webster_bx_cb3"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-10T23:10:36.300Z"
+submission_ids:
+  - "sub_06c4d32677fa54c9"
+payload:
+  authority_tier: "plan_document"
+  content_type: "presentation"
+  date_text: "February 12, 2013"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2013-02-12"
+    precision: "day"
+    raw_text: "February 12, 2013"
+  published_date_normalized: "2013-02-12"
+  published_date_precision: "day"
+  publisher: "New York City Transit"
+  title: "Webster Avenue Select Bus Service"
+evidence_refs:
+  -
+    block_id: "p001_c0004"
+    evidence_id: "2013_02_sbs_webster_bx_cb3#p001_c0004"
+    page_number: 1
+    source_id: "2013_02_sbs_webster_bx_cb3"
+    source_path: "raw/sources/2013_02_sbs_webster_bx_cb3/blocks.jsonl"
+    source_quote: "Webster Avenue Select Bus Service"
+    text_sha256: "sha256:8d9466973702b783d8fcfc63214251dabbd093d21760cc773e984ed4cde4711d"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0005"
+    evidence_id: "2013_02_sbs_webster_bx_cb3#p001_c0005"
+    page_number: 1
+    source_id: "2013_02_sbs_webster_bx_cb3"
+    source_path: "raw/sources/2013_02_sbs_webster_bx_cb3/blocks.jsonl"
+    source_quote: "Presentation to Community Board 3 | February 12, 2013"
+    text_sha256: "sha256:1f45b6194a1e14c04815c2bed9f58d6dcb6b1f7d04931a14f5f6dbd59ecc08e5"
+    text_source: "raw_text"
+---
+
+# Download the presentation (pdf)
+
+source_id: 2013_02_sbs_webster_bx_cb3
+citation: cite block ids exactly as shown in square brackets
+document: 283 block(s)
+
+## Page 1
+
+[p001_c0001] DUNKIN' DONUTS
+[p001_c0002] G Washington Bridge Mott Haven Mott Haven Webster Av & E 167 St Bx35 Bx41 Bx41E
+[p001_c0003] New York City Transit
+### [p001_c0004] Webster Avenue Select Bus Service
+[p001_c0005] Presentation to Community Board 3 | February 12, 2013
+
+## Page 2
+
+### [p002_c0001] Agenda
+- [p002_c0002] ▪ Project background ▪ Corridor design ▪ Traffic analysis ▪ CB 3 design details ▪ Bus service planning ▪ Project timeline / Next steps
+[p002_c0003] _New York City Transit_
+
+## Page 3
+
+### [p003_c0001] Project background
+> [p003_c0002] The MTA logo, which is a white circle with the letters "MTA" in blue.
+[p003_c0003] _New York City Transit_
+[p003_c0004] _The New York City Department of Transportation logo, which is a small square containing a stylized globe and the text "NEW YORK CITY" above it._
+
+## Page 4
+
+### [p004_c0001] SBS Corridors
+[p004_c0002] June 2008 Fordham Rd (Bx12)
+[p004_c0003] Oct 2010 1 st /2 nd Ave (M15)
+[p004_c0004] Nov 2011 34th St (M34/34A)
+[p004_c0005] Sept 2012 Hylan Blvd (S79)
+[p004_c0006] 2013 Webster Ave (Bx41)
+[p004_c0007] 2013 Nostrand Ave (B44)
+[p004_c0008] 2013/14 LaGuardia Airport (M60)
+> [p004_c0009] Map of New York City showing SBS Corridors. The map highlights various routes across the city, including Westchester County, The Bronx, Queens, Brooklyn, and Staten Island. Routes are color-coded: blue for Implemented SBS Projects and red for Planned SBS Projects. Key locations labeled include Inwood, Williamsbridge, Co-Op City, Fordham Rd. / Pelham Pkwy., Webster Ave., The Bronx, The Hub, 34 St., LaGuardia BRT, First Ave. / Second Ave., Williamsburg, Queens, Brooklyn, Bay Ridge, Nostrand Ave. / Rogers Ave., Sheephead Bay, Staten Island Mall, and Hylan Blvd. A legend at the bottom right identifies the colors: blue for Implemented SBS Projects and red for Planned SBS Projects. A north arrow is also present.
+[p004_c0010] _MTA New York City Transit_
+[p004_c0011] _NEW YORK CITY_
+
+## Page 5
+
+### [p005_c0001] Features of Select Bus Service (SBS)
+[p005_c0002] Bus lanes
+> [p005_c0003] A photograph of a city street corner. The pavement is painted with white text that reads 'ONLY BUS' in large, bold letters. A bus is visible in the distance, and there are buildings and trees in the background.
+[p005_c0004] Branding
+> [p005_c0005] A photograph of a blue and white bus. The destination sign on the front of the bus displays 'BX12' in orange letters. The bus has a modern design with large windows and a clean, branded appearance.
+[p005_c0006] Passenger info
+> [p005_c0007] A map of a city area showing various bus routes. The map includes labels for 'Downtown Brooklyn', 'Myrtle Ave', 'Red Hook', and 'Red Hook Recreational Area'. It features icons of buses and bus stops. The 'MTA Bus Time' logo is visible in the bottom left corner.
+[p005_c0008] Stations
+> [p005_c0009] A photograph of a bus stop shelter. Above the shelter, there is a blue sign that reads 'BUSES ONLY' with a downward-pointing arrow. People are waiting inside the shelter, and a bus is visible in the background.
+[p005_c0010] Faster fare collection
+> [p005_c0011] A photograph of a bus fare collector machine. The machine is blue and white, with a sign that reads 'One Fare Collector'. A person is seen interacting with the machine, and a bus is visible in the background.
+[p005_c0012] Bus signal priority
+> [p005_c0013] A 3D illustration of a bus approaching a traffic light. The bus is blue and white, and the traffic light is yellow. A yellow arrow points from the bus towards the traffic light, indicating priority. The background is a simple grey and white.
+[p005_c0014] _New York City Transit_
+[p005_c0015] _NEW YORK CITY_
+
+## Page 6
+
+### [p006_c0001] SBS Results
+[p006_c0002] Speed: 15- 20% faster
+[p006_c0003] Ridership: 5-10% increase in first year
+[p006_c0004] Customer Satisfaction: over 95% satisfied or very satisfied
+[p006_c0005] Safety: 1 st and 2 nd Avenues saw a 21% reduction in traffic injuries in sections with full design treatments
+> [p006_c0006] A photograph of a city street featuring a dedicated bus lane. The lane is painted red and has the words 'BUS ONLY' written in large, white, capital letters on the pavement. A white and blue bus is driving in the lane. To the right of the bus lane, there is a sidewalk with a tree and a yellow bollard. The street is lined with green trees and a fence.
+[p006_c0007] _Bx12_
+> [p006_c0008] A photograph of a multi-lane city street. In the foreground, there is a white SUV. Further back, there are several cars and a white bus. The street is lined with buildings, including a prominent brick building. There are traffic lights and street signs. The sky is clear and blue.
+[p006_c0009] _M15_
+> [p006_c0010] A photograph of a white and blue MTA bus stopped at a bus stop. The bus has the number '3801' and the route 'M34' displayed on its front. The bus is parked next to a sidewalk where several people are waiting. There is a small orange traffic cone on the sidewalk. The bus has 'MTA' and 'selectbuservice' logos on its side.
+[p006_c0011] _M34/34A_
+[p006_c0012] _New York City Transit_
+[p006_c0013] _NEW YORK CITY_
+
+## Page 7
+
+### [p007_c0001] The Webster Avenue corridor
+- [p007_c0002] ■ Based on the existing Bx41 route that carries over 20,000 daily riders ■ 5.3 miles from The Hub to Williamsbridge ■ Within a 10-minute walk of the corridor: – 200,000 residents – 71% of households do not own a car – 61% of residents commute by transit
+> [p007_c0003] The map illustrates the proposed Webster Avenue SBS Corridor (Bx 41 route) in New York City. The corridor is highlighted with a thick blue dashed line, running from The Hub in Manhattan to the Gun Hill Rd Intermodal Terminal in the Bronx. Key features include: Major activity nodes: The Hub (in Manhattan) and Fordham Plaza (in the Bronx) are marked with black circles. Transit lines: The map shows the Bx12 SBS Corridor (blue line), NYCT Bus route (orange line), and Metro-North Railroad (MNR) (grey line). Streets: Webster Ave is the primary corridor, with 149 St and 148 St shown nearby. Legend: Proposed Webster Ave SBS Corridor (Bx 41 route) Major activity node Subway line Bx12 SBS Corridor NYCT Bus route Metro-North Railroad (MNR) MNR Station Scale: 0 to 1 mile scale bar. Orientation: North arrow pointing up.
+[p007_c0004] _MTA New York City Transit_
+[p007_c0005] _NEW YORK CITY_
+
+## Page 8
+
+### [p008_c0001] Community outreach process
+- [p008_c0002] ▪ Community Advisory Committee (CAC) meetings: 1. February 6, 2012 2. May 2, 2012 3. September 27, 2012 4. November 29, 2012 ▪ Public open houses 1. May 16, 2012 2. January 8, 2013 ▪ Door-to-door surveys of local businesses and institutions ▪ Stakeholder meetings and presentations
+> [p008_c0003] A photograph showing two people, a woman in a light purple shirt and a man in a dark jacket, looking at a large poster or map on a blue wall. The poster appears to be a transit map or a project diagram.
+> [p008_c0004] A photograph of a large group of people in a room, likely a public open house. They are standing and talking, and some are looking at posters on the wall. The room has fluorescent lighting and a drop ceiling.
+[p008_c0005] _Public Open House #2_
+> [p008_c0006] A photograph of a presentation to a group of people in a room. A woman in a white shirt is standing and speaking to a group of people seated around a table. A large screen in the background shows a transit map or project diagram.
+[p008_c0007] _Presentation to NYCT Senior Citizen's Committee_
+[p008_c0008] _New York City Transit_
+[p008_c0009] _NEW YORK CITY_
+
+## Page 9
+
+### [p009_c0001] Community Input
+### [p009_c0002] Top priorities:
+- [p009_c0003] 1. Bx41 bus service 2. Pedestrian safety 3. Curb access and parking 4. Accommodating future development
+> [p009_c0004] A photograph showing a group of approximately 15-20 people of diverse backgrounds gathered around a table. They are looking at several informational posters or displays on the wall behind them. The setting appears to be a community center or a public meeting room.
+[p009_c0005] _Public Open House #1_
+> [p009_c0006] A photograph of a group of people, including several men and women, sitting around a large table. They are looking at and discussing several large maps or diagrams spread out on the table. The room has a professional, meeting atmosphere.
+> [p009_c0007] A photograph of a poster titled "DESIGN DISCUSSION" with two columns: "Advantages" and "Disadvantages". The poster is covered with numerous yellow sticky notes containing handwritten text. The notes are organized into three rows labeled "Option 1 - Curb cut", "Option 2 - Offset", and "Option 3 - Median".
+[p009_c0008] _Community Advisory Committee Meeting #2_
+[p009_c0009] _New York City Transit_
+[p009_c0010] _NEW YORK CITY_
+
+## Page 10
+
+### [p010_c0001] Project goals
+> [p010_c0002] A white New York City bus with a blue and yellow stripe is stopped at a bus stop. A yellow sticker with the word 'SLEEPY!' is on the front. The bus has '649' and '10:45' on its destination sign. In the background, there's a brick building and a 'DENTAL & ME' sign.
+[p010_c0003] 1. Speed buses and improve reliability
+> [p010_c0004] A busy street scene with a black car in the foreground. Pedestrians are crossing the street. A food cart with a blue and yellow umbrella is on the right. In the background, there are more cars and buildings.
+[p010_c0005] 2. Improve safety for all corridor users
+> [p010_c0006] A street scene with a row of shops. The first shop is 'DELI GROCERY' and the second is '2000 FARMER'S GROCERY'. There are several cars parked along the curb in front of the shops.
+[p010_c0007] 3. Support community needs
+[p010_c0008] _New York City Transit_
+[p010_c0009] _NEW YORK CITY_
+
+## Page 11
+
+### [p011_c0001] SBS Overview
+- [p011_c0002] ■ Bx41 LTD → Bx41 SBS ■ 4 miles of offset bus lanes with bus bulb stations ■ For the entire route: – Off-board fare collection – Low-floor buses – Station and bus branding – Transit signal priority – Pedestrian safety improvements
+> [p011_c0003] The map illustrates the proposed Bus Stop Station (SBS) route for the Bx41 bus line in the Bronx. The route is marked with a red dashed line, indicating SBS in a bus lane. Blue squares represent proposed SBS stations. The route starts at 'The Hub - E 149 St / 3 Av' in the south, travels north along Webster Avenue, and ends at 'White Plains Rd / E Gun Hill Rd' in the north. Key landmarks and locations shown include the Harlem River, Manhattan, Bedford Park Blvd - Botanical Garden, Fordham University, Fordham MNR Station, St. Barnabas Hospital, New York Botanical Garden, Bronx Zoo, and Crotona Park. A blue arrow points from the text 'The Bronx' to the route. A legend in the bottom right corner defines the symbols: a blue square for 'Proposed SBS Station', a red dashed line for 'SBS in Bus Lane', a red solid line for 'SBS in Mixed Traffic', a red circle with a '2' for 'Subway Connection', and a black circle with a 'M' for 'Metro-North Railroad Connection'. A scale bar shows distances of 0, 0.5, and 1 mile, and a north arrow is also present. The map is credited to 'Fall 2012'.
+[p011_c0004] _MTA New York City Transit_
+[p011_c0005] _NEW YORK CITY_
+
+## Page 12
+
+### [p012_c0001] SBS Pre-Payment (like the Bx12)
+### [p012_c0002] How do you pay?
+- [p012_c0003] 1. Before you board, dip your MetroCard at the MetroCard machine or insert coins into the coin machine located on the sidewalk 2. Take your proof of payment receipt 3. Enter through the front or rear door of bus - no need to show the receipt to the driver
+> [p012_c0004] A man in a black jacket is using a blue coin machine labeled 'Coat b' to pay for a bus ride. A woman in a red jacket and a child in a pink outfit are standing nearby. A blue bus is visible in the background.
+> [p012_c0005] Two NYCT inspectors in dark uniforms with 'NYCT' on their backs are standing next to a blue and white bus. The bus has '+selectbusservice' written on its side.
+### [p012_c0006] How is it enforced?
+- [p012_c0007] ▪ NYCT inspector teams conduct random checks of buses ▪ $100 fine for not having a receipt ▪ Fare evasion declined on the Bx12 and M15 after pre-payment was introduced
+[p012_c0008] _New York City Transit_
+[p012_c0009] _NEW YORK CITY_
+
+## Page 13
+
+### [p013_c0001] Corridor Design
+> [p013_c0002] The MTA logo, consisting of the letters 'MTA' in a stylized font inside a circle.
+[p013_c0003] _New York City Transit_
+[p013_c0004] _A small logo for the New York City Transit Authority, featuring a stylized train and the text 'NEW YORK CITY'._
+
+## Page 14
+
+### [p014_c0001] Existing conditions
+> [p014_c0002] A wide-angle photograph of a city street intersection, likely in New York City. The street is lined with various shops and businesses, including 'VETERAN AUTO PARTS', 'DONUTS', and 'PEPSI'. Tall apartment buildings are visible in the background. The sky is clear and blue.
+[p014_c0003] _Webster Avenue / E 167th Street_
+[p014_c0004] _New York City Transit_
+[p014_c0005] _NEW YORK CITY_
+
+## Page 15
+
+### [p015_c0001] Proposed design
+> [p015_c0002] A photograph of a city street intersection, likely in New York City, showing a proposed bus lane design. The street is multi-lane, with a dedicated bus lane on the left side, marked with a brown surface and "ONLY BUS" painted on the pavement. The intersection is at E 167th Street, with street signs visible. The street is lined with various shops and businesses, including "VETERAN AUTO PARTS", "DONUTS", and "RESTAURANT". Tall apartment buildings are visible in the background. The sky is clear and blue. The image is taken from an elevated perspective, looking down the street towards the intersection.
+[p015_c0003] _Webster Avenue / E 167th Street_
+[p015_c0004] _New York City Transit_
+[p015_c0005] _NEW YORK CITY_
+
+## Page 16
+
+### [p016_c0001] Proposed design
+> [p016_c0002] The image shows a wide-angle view of a city street intersection, likely in New York City, with several callout boxes pointing to proposed design features. The callout boxes are: Pedestrian neckdowns : Points to a narrow pedestrian crossing area on the left side of the street. SBS Station / Bus Bulb : Points to a bus stop area with a shelter and a bus. Pedestrian refuge islands and greening : Points to a small green island with a tree in the middle of the intersection. Transit Signal Priority : Points to a traffic signal pole on the right side of the street. Left-turn Bay : Points to a designated area for left-turning vehicles on the right side of the street. Offset bus lanes : Points to a bus lane on the left side of the street, marked with "ONLY BUS" and "BUS ONLY" on the pavement. The street is labeled "Webster Avenue / E 167th Street" in the bottom right corner.
+[p016_c0003] _New York City Transit_
+[p016_c0004] _NEW YORK CITY_
+
+## Page 17
+
+### [p017_c0001] Benefits of proposed design
+> [p017_c0002] The image shows a street scene with a proposed bus lane design. The street has multiple lanes, including a dedicated bus lane on the left side. A bus is visible in the bus lane. The intersection is marked with a 'BUS ONLY' sign. Three blue circles with white numbers 1, 2, and 3 are overlaid on the image, pointing to different features of the proposed design: 1 points to the bus lane, 2 points to a bus stop, and 3 points to a parking area.
+- [p017_c0003] 1. Offset bus lanes improve bus speed 2. Bus bulbs allow for high-quality SBS stations 3. Maintains curbside access and parking
+[p017_c0004] _New York City Transit_
+[p017_c0005] _NEW YORK CITY_
+
+## Page 18
+
+### [p018_c0001] Benefits of proposed design
+> [p018_c0002] A photograph of a city street intersection, likely in New York City, showing a proposed design. The street is wide with multiple lanes. A bus is visible in the distance. Several cars are parked or moving. The street is lined with buildings and shops. Four blue circles with white numbers are overlaid on the image: '4' is on the left sidewalk, '5' is on the left curb extension, '6' is on the right curb extension, and another '4' is on the right sidewalk. The street has a red-painted bus lane on the left.
+- [p018_c0003] 4. Curb extensions and medians improve pedestrian safety 5. Addresses speeding and vehicle safety issues 6. Maintains appropriate traffic flows and circulation
+[p018_c0004] _New York City Transit_
+[p018_c0005] _NEW YORK CITY_
+
+## Page 19
+
+### [p019_c0001] SBS Bus Stations - Bus Bulbs
+> [p019_c0002] A photograph of an MTA bus at a bus stop on 1st Avenue in New York City. The bus is white and blue, with 'M15' and '1237' displayed on its rear. A group of people is waiting on the sidewalk. A blue sign above the bus reads 'BUS LANE BUSES ONLY'. The street has 'ONLY' painted on it. Buildings and trees are visible in the background.
+[p019_c0003] _Example: M15 SBS, 1 st Ave/1 st St Station_
+[p019_c0004] _New York City Transit_
+[p019_c0005] _NEW YORK CITY_
+
+## Page 20
+
+### [p020_c0001] SBS Bus Stations - Curbside
+> [p020_c0002] A photograph of a New York City MTA bus at a curbside SBS station. The bus is blue and white, with 'Bx12' and '+SELECT BUS SERVICE+' displayed on its destination sign. The bus number '1200' is visible on the side. A bus stop shelter with a 'CULTURE IS GREAT' sign is nearby. Pedestrians are walking on the sidewalk. A tall building is in the background.
+[p020_c0003] _Example: Bx12 SBS, Fordham Rd / Webster Av Station_
+[p020_c0004] _New York City Transit_
+[p020_c0005] _NEW YORK CITY_
+
+## Page 21
+
+### [p021_c0001] Pedestrian safety elements
+> [p021_c0002] A street corner showing a pedestrian crossing a crosswalk. A curb extension (neckdown) is visible on the sidewalk, narrowing the distance between the sidewalk and the street. A fire hydrant and a bollard are also visible on the sidewalk.
+[p021_c0003] _Neckdown / curb extension_
+> [p021_c0004] A street view showing a pedestrian refuge (median) in the middle of a crosswalk. A small tree and a yellow and black striped bollard are planted in the refuge. A car is stopped at the crosswalk, and pedestrians are crossing.
+[p021_c0005] _Pedestrian refuge / Median_
+[p021_c0006] _New York City Transit_
+[p021_c0007] _NEW YORK CITY_
+
+## Page 22
+
+### [p022_c0001] Traffic Analysis
+> [p022_c0002] The MTA logo, which consists of the letters "MTA" in a stylized font inside a white circle.
+[p022_c0003] _New York City Transit_
+[p022_c0004] _The New York City Department of Transportation (NYC DOT) logo, featuring a stylized globe and the text "NEW YORK CITY" and "DOT"._
+
+## Page 23
+
+### [p023_c0001] Existing Traffic Conditions
+- [p023_c0002] Overall, corridor moves very well Congestion at selected intersections E Fordham Rd E Gun Hill Rd Cross Bronx Expressway
+> [p023_c0003] AM PEAK Existing LEGEND Level of service - Webster Avenue ● A-B: less than 20s delay ● C-D: 20-44s delay ● D-E: 45-79s delay ● F: 80s or more delay ○ Improvement: 10s+ delay decrease ○ Decline: 10s+ delay increase Project design — SBS in Bus Lane - - - SBS in Mixed Traffic 0 0.5 1 Miles NEW YORK CITY
+[p023_c0004] _MTA New York City Transit_
+[p023_c0005] _NEW YORK CITY_
+
+## Page 24
+
+### [p024_c0001] Webster Ave SBS traffic changes
+### [p024_c0002] Capacity reductions
+- [p024_c0003] ▪ Replace one general travel lane with a bus lane in each direction
+### [p024_c0004] Capacity improvements
+- [p024_c0005] ▪ Right-turn bays reduce blockages at busy intersections ▪ Lengthening left-turn bays creates more storage space ▪ Banning left-turns at key intersections reduces conflicts and opens up additional signal time for other congested movements ▪ More signal time for key thru or left-turning movements ▪ Updated curb regulations and offset bus lanes reduce double parking
+[p024_c0006] _New York City Transit_
+
+## Page 25
+
+### [p025_c0001] Projected Traffic Conditions
+- [p025_c0002] ■ Small changes along the majority of the corridor ■ Overall traffic levels are still very good ■ Improvements at major intersections – E Fordham Rd – Cross Bronx Expressway
+> [p025_c0003] AM PEAK Proposed The map displays the proposed AM Peak traffic conditions for Webster Avenue. The corridor is shown as a solid black line for SBS in Bus Lane and a dashed black line for SBS in Mixed Traffic. The map includes a legend for Level of service - Webster Avenue, Project design, and a scale bar. LEGEND Level of service - Webster Avenue ● A-B: less than 20s delay ● C-D: 20-44s delay ● D-E: 45-79s delay ● F: 80s or more delay ○ Improvement: 10s+ delay decrease ⊖ Decline: 10s+ delay increase Project design — SBS in Bus Lane - - - SBS in Mixed Traffic 0 0.5 1 Miles AM PEAK Proposed SOUTHBOUND WEBSTER AV TRAFFIC NORTHBOUND WEBSTER AV TRAFFIC Webster Av E Gun Hill Rd E 204 St E Fordham Rd E 189 St E 180 St E Tremont Av CBE On-Ramp CBE Off-Ramp Claremont Pkwy E 167 St CB3 MELROSE AV
+[p025_c0004] _MTA New York City Transit_
+[p025_c0005] _NEW YORK CITY_
+
+## Page 26
+
+### [p026_c0001] CB3 Design Details
+> [p026_c0002] The MTA logo, consisting of the letters 'MTA' in a stylized font inside a circle.
+[p026_c0003] _New York City Transit_
+[p026_c0004] _A small logo for the New York City Transit Authority, featuring a stylized train and the text 'NEW YORK CITY'._
+
+## Page 27
+
+### [p027_c0001] SBS in CB3
+- [p027_c0002] ▪ 4 station pairs ▪ 2013 Implementation – Offset bus lanes – Off-board fare collection – Traffic operational improvements – Selected pedestrian islands / medians ▪ 2014-2015 – Bus bulbs – Additional capital construction items
+> [p027_c0003] A map of the Bronx, New York City, highlighting the SBS (Superblock System) route in the CB3 (Central Business 3) area. The map shows a red and white dashed line representing the SBS route, which runs along Webster Avenue. The route is marked with blue squares at the following stations: E 180 St, E Tremont Av, E 170 St, E 167 St, and E 161 St. The area is bounded by the Cross Bronx Expressway to the north and Melrose Avenue to the south. The map also shows the locations of Claremont Park and Crotona Park. The text 'The Bronx' is written in a stylized font at the top left. The area is labeled 'CB3' in large green letters. The map also shows the street grid and other landmarks.
+[p027_c0004] _New York City Transit_
+[p027_c0005] _NEW YORK CITY_
+
+## Page 28
+
+### [p028_c0001] E 161 St Stations
+> [p028_c0002] An aerial photograph of a city intersection. The intersection is formed by Melrose Av running north-south and E 161 St running east-west. Two blue rectangular labels are placed on the map: one on the northbound lane of Melrose Av and one on the southbound lane of E 161 St, both reading 'Bx41 LOCAL Bx41 SBS'. A yellow label 'Melrose Av' is placed along the northbound lane of Melrose Av, and a yellow label 'E 161 St' is placed along the eastbound lane of E 161 St. An orange circle with a white 'T' is located at the northeast corner of the intersection. The year '2013' is written in yellow in the top left corner of the image.
+### [p028_c0003] 2013
+- [p028_c0004] ▪ SBS stations at existing LTD stop locations ▪ New traffic signal on Melrose at E162nd St
+### [p028_c0005] 2014-2015
+- [p028_c0006] ▪ No planned capital work
+[p028_c0007] _New York City Transit_
+[p028_c0008] _NEW YORK CITY_
+
+## Page 29
+
+### [p029_c0001] E 167 St Stations
+### [p029_c0002] 2013
+- [p029_c0003] ▪ SBS stations at existing LTD stop locations ▪ Relocate WB Bx35 stop to E 167 St ▪ Remove Bx41 Local stop at E168 St - relocate the EB Bx35 to E 168 St at Park Av
+### [p029_c0004] 2014-2015
+- [p029_c0005] ▪ Bus bulbs at SBS bus stops ▪ Pedestrian neckdowns ▪ Median between E167 St and E168 St
+[p029_c0006] _New York City Transit_
+[p029_c0007] _NEW YORK CITY_
+
+## Page 30
+
+### [p030_c0001] E 170 St Stations
+> [p030_c0002] An aerial photograph of the intersection of E 170 St and Webster Ave. The map is annotated with bus stop locations. A yellow label '2013' is in the top left corner. A red line runs along the center of E 170 St. Blue labels 'Bx41 LOCAL' are placed on the left side of the red line. Teal labels 'Bx41 SBS BUS LANE' are placed on the right side of the red line. Yellow labels 'Webster Ave' are placed along the right side of the intersection. The surrounding area includes buildings, parking lots, and trees.
+### [p030_c0003] 2013
+- [p030_c0004] ▪ SBS stations at existing LTD stop locations
+### [p030_c0005] 2014-2015
+- [p030_c0006] ▪ Bus bulbs / SBS stations at mid-block crosswalk between E169 and E170 ▪ Local stops stay in current locations ▪ Median between E169 St and E 170 St
+[p030_c0007] _New York City Transit_
+[p030_c0008] _NEW YORK CITY_
+
+## Page 31
+
+### [p031_c0001] Claremont Pkwy Stations
+> [p031_c0002] An aerial photograph of the intersection of Claremont Pkwy and Webster Av. The map is annotated with various labels and colored overlays. In the top left corner, the year '2013' is written in yellow. The intersection is marked with several bus stop locations: 'Bx41 SBS Bx41 LOCAL BUS LANE' is labeled in blue on the southwest corner; 'Bx41 LOCAL Bx41 SBS' is labeled in blue on the northeast corner; 'BUS LANE' is labeled in white on the northbound and southbound lanes of Claremont Pkwy; 'Webster Av BUS LANE' is labeled in white on the eastbound and westbound lanes of Webster Av; and 'Claremont Pkwy' is labeled in yellow along the road. Green rectangular areas are overlaid on the map, indicating pedestrian refuge zones at the corners of the intersection. The surrounding area includes parking lots, buildings, and trees.
+### [p031_c0003] 2013
+- [p031_c0004] ▪ SBS stations at existing LTD stop locations ▪ Pedestrian refuge, extended medians, and traffic operational improvements on Claremont Pkwy
+### [p031_c0005] 2014-2015
+- [p031_c0006] ▪ SB bus bulb for both SBS and Local bus constructed north of intersection ▪ NB bus bulb at SBS Stop
+[p031_c0007] _New York City Transit_
+[p031_c0008] _NEW YORK CITY_
+
+## Page 32
+
+### [p032_c0001] Claremont Pkwy / Clay Av
+> [p032_c0002] An aerial photograph of the intersection of Claremont Pkwy and Clay Av. The image is annotated with yellow text: '2013' in the top left corner, 'Clay Av' along the road, and 'Webster Av' along the road. Red diagonal stripes are placed along the bus lanes, and green diagonal stripes are placed in the pedestrian areas. The bus lanes are labeled 'BUS LANE' in white text. The image shows a parking lot, trees, and buildings.
+### [p032_c0003] 2013
+- [p032_c0004] ▪ Create pedestrian area with temporary paint treatment in slip lane; add adjacent parking ▪ Pedestrian refuges / medians near school crossings
+### [p032_c0005] 2014-2015
+- [p032_c0006] ▪ Replace temporary paint treatment with concrete
+[p032_c0007] _New York City Transit_
+[p032_c0008] _NEW YORK CITY_
+
+## Page 33
+
+### [p033_c0001] Cross Bronx Expy - 2013
+> [p033_c0002] The image is an aerial photograph of the Cross Bronx Expressway intersection with Webster Av. The map is annotated with various colored callouts and symbols to indicate proposed transit improvements. The Cross Bronx Expressway runs vertically on the left side of the image, with labels 'BUS LANE' and 'BUS LANE' indicating its lanes. Webster Av runs horizontally across the middle. A cyan callout box states: 'Dual right-turning lanes better accommodate the high vehicle volumes accessing the CBE'. A green callout box states: 'SB Bus-Only Queue Jump allows buses to get ahead of traffic where there is no bus lane'. A blue callout box states: 'Eliminate local bus stops under the CBE'. A yellow callout box states: 'Convert Ittner Place to one-way to improve access onto the CBE'. A cyan bar labeled 'DUAL RIGHT TURN LANES' is positioned on Webster Av. A red circle with a diagonal slash and a bus icon indicates a 'No Bus' zone. A green dashed arrow points to the right on Webster Av. A yellow dashed arrow points up from the bottom towards the intersection. A black arrow with a white 'Z' points to the right at the bottom right corner.
+[p033_c0003] _New York City Transit_
+[p033_c0004] _NEW YORK CITY_
+
+## Page 34
+
+### [p034_c0001] Cross Bronx Expy - 2014/15
+> [p034_c0002] The image is an aerial photograph of the Cross Bronx Expressway intersection with Webster Av. The map is annotated with several colored callout boxes and symbols to illustrate proposed traffic flow changes. A red box on the left explains the ban on left-turns at the CBE on-ramp. A cyan box in the center describes the addition of dual right-turning lanes. A green box on the right mentions the SB Bus-Only Queue Jump. A yellow box at the bottom explains the conversion of Ittner Place to a one-way street. Red and blue arrows indicate the rerouting of NB vehicles and the flow of traffic through the new lanes. A dashed green arrow points to the bus lane on Webster Av. A north arrow is located in the bottom right corner. Banning left-turns at the CBE on-ramp simplifies operations at this very congested intersection. NB vehicles are rerouted to Ittner Pl. Dual right-turning lanes better accommodate the high vehicle volumes accessing the CBE SB Bus-Only Queue Jump allows buses to get ahead of traffic where there is no bus lane Convert Ittner Place to one-way to improve access onto the CBE BUS LANE BUS LANE DUAL RIGHT TURN LANES BUS LANE Webster Av Cross Bronx Expressway
+[p034_c0003] _New York City Transit_
+[p034_c0004] _NEW YORK CITY_
+
+## Page 35
+
+### [p035_c0001] Bus Service Changes
+> [p035_c0002] The MTA logo, consisting of the letters 'MTA' in a stylized font inside a white circle.
+[p035_c0003] _New York City Transit_
+> [p035_c0004] A small logo for the New York City Transit Authority, featuring a stylized train and the text 'NEW YORK CITY' above it.
+
+## Page 36
+
+### [p036_c0001] Existing bus services
+### [p036_c0002] ■ Webster Avenue
+- [p036_c0003] 1. Bx41 LTD 2. Bx41 Local 3. Bx55 (Limited) north of Fordham Plaza
+### [p036_c0004] ■ Third Avenue
+- [p036_c0005] 1. Bx15 (Local) 2. Bx55 (Limited)
+> [p036_c0006] A map of the Bronx, New York City, showing bus routes. The map includes a legend in the bottom right corner. The legend is titled 'LEGEND' and is divided into three sections: 'Webster Av Routes', 'Third Av Routes', and 'Other'. Under 'Webster Av Routes', there are two entries: 'Bx41 Local' represented by a blue line and 'Bx41 LTD part-time' represented by a dark blue line. Under 'Third Av Routes', there are three entries: 'Bx55 LTD' represented by a pink line, 'Bx55 LTD part-time' represented by a light pink line, and 'Bx15 Local' represented by an orange line. Under 'Other', there is one entry: 'LTD Bus Stop' represented by a grey circle with a dot. The map shows the following routes: Bx41 Local (blue line) and Bx41 LTD part-time (dark blue line) running along Webster Avenue from E 149 St / 3 Av to E Gun Hill Rd. Bx55 LTD (pink line) and Bx55 LTD part-time (light pink line) run along Third Avenue from E 149 St / 3 Av to E 204 St. Bx15 Local (orange line) runs along Third Avenue from E 149 St / 3 Av to E 125th St. The map also shows various bus stops marked with grey circles with dots. Other landmarks and streets shown include Bedford Park Blvd - Botanical Garden, E Fordham Rd, E 180 St, E Tremont Av, Claremont Pkwy, E 170 St, E 167 St, E 161 St, The Hub - E 149 St / 3 Av, and White Plains Rd / E Gun Hill Rd. The map also shows the location of the JFK Bridge and the location of E 125th St.
+[p036_c0007] _New York City Transit_
+[p036_c0008] _NEW YORK CITY_
+
+## Page 37
+
+### [p037_c0001] Proposed bus services
+### [p037_c0002] ■ Webster Avenue
+- [p037_c0003] 1. Bx41 SBS 2. Bx41 Local 3. SBS to LaGuardia Airport
+### [p037_c0004] ■ Third Avenue
+- [p037_c0005] 1. Bx15 Local 2. Bx15 LTD
+> [p037_c0006] A map of the Queens area in New York City, specifically the region around the Long Island Expressway (LIE) and the East River. The map displays proposed bus service routes. The Webster Avenue routes are shown in blue and purple, running north-south along the LIE. The Third Avenue routes are shown in red and orange, running east-west along the LIE. A legend in the bottom right corner identifies the routes and symbols. The map includes labels for various streets, parks, and landmarks, as well as bus stop and SBS station icons. LEGEND Webster Av Routes Bx41 Local (Blue line) Bx41 SBS (Purple line) SBS to LGA (Light blue line) Third Av Routes Bx15 LTD (Red line) Bx15 Local (Orange line) Other SBS Station (Blue circle with a dot) LTD Bus Stop (Grey circle with a dot) Map labels include: E Gun Hill Rd, White Plains Rd / E Gun Hill Rd, E 204 St, Bedford Park Blvd - Botanical Garden, E Fordham Rd, E 180 St, E Tremont Av, Claremont Pkwy, E 170 St, E 167 St, E 161 St, The Hub - E 149 St / 3 Av, E 138th St, To 125th St, RPR BRIDGE, LGA 983, WEBSTER AV, THRONY, and LGA 985.
+[p037_c0007] _New York City Transit_
+[p037_c0008] _NEW YORK CITY_
+
+## Page 38
+
+### [p038_c0001] Webster Avenue
+- [p038_c0002] ■ Bx41 LTD → Bx41 SBS – \frac{1}{2} mile stop spacing – Service will run frequently all day ■ Bx41 Local – No change to stop spacing – Service every ~10 minutes ■ Off board fare collection (like the Bx12 SBS on Fordham Road)
+> [p038_c0003] A map of the Webster Avenue bus route in New York City. The map shows the route from E 125th St to E Gun Hill Rd. The Bx41 Local route is shown in blue, and the Bx41 SBS route is shown in purple. The map also shows other routes, including the Bx15 LTD and Bx15 Local routes, and various bus stops and SBS stations. The legend indicates the following: Webster Av Routes Bx41 Local (Blue line) Bx41 SBS (Purple line) SBS to LGA (Grey line) Third Av Routes Bx15 LTD (Dark grey line) Bx15 Local (Light grey line) Other SBS Station (Blue circle with a dot) LTD Bus Stop (Grey circle with a dot) The map also shows the following streets and landmarks: E 125th St E 138th St The Hub - E 149 St / 3 Av E 161 St E 167 St E 170 St Claremont Pkwy E Tremont Av E 180 St E Fordham Rd E 204 St Bedford Park Blvd - Botanical Garden E Gun Hill Rd White Plains Rd / E Gun Hill Rd Webster Av Throgon 15th Ave 16th Ave 18th Ave 19th Ave 20th Ave 21st Ave 22nd Ave 23rd Ave 24th Ave 25th Ave 26th Ave 27th Ave 28th Ave 29th Ave 30th Ave 31st Ave 32nd Ave 33rd Ave 34th Ave 35th Ave 36th Ave 37th Ave 38th Ave 39th Ave 40th Ave 41st Ave 42nd Ave 43rd Ave 44th Ave 45th Ave 46th Ave 47th Ave 48th Ave 49th Ave 50th Ave 51st Ave 52nd Ave 53rd Ave 54th Ave 55th Ave 56th Ave 57th Ave 58th Ave 59th Ave 60th Ave 61st Ave 62nd Ave 63rd Ave 64th Ave 65th Ave 66th Ave 67th Ave 68th Ave 69th Ave 70th Ave 71st Ave 72nd Ave 73rd Ave 74th Ave 75th Ave 76th Ave 77th Ave 78th Ave 79th Ave 80th Ave 81st Ave 82nd Ave 83rd Ave 84th Ave 85th Ave 86th Ave 87th Ave 88th Ave 89th Ave 90th Ave 91st Ave 92nd Ave 93rd Ave 94th Ave 95th Ave 96th Ave 97th Ave 98th Ave 99th Ave 100th Ave 101st Ave 102nd Ave 103rd Ave 104th Ave 105th Ave 106th Ave 107th Ave 108th Ave 109th Ave 110th Ave 111th Ave 112th Ave 113th Ave 114th Ave 115th Ave 116th Ave 117th Ave 118th Ave 119th Ave 120th Ave 121st Ave 122nd Ave 123rd Ave 124th Ave 125th Ave 126th Ave 127th Ave 128th Ave 129th Ave 130th Ave 131st Ave 132nd Ave 133rd Ave 134th Ave 135th Ave 136th Ave 137th Ave 138th Ave 139th Ave 140th Ave 141st Ave 142nd Ave 143rd Ave 144th Ave 145th Ave 146th Ave 147th Ave 148th Ave 149th Ave 150th Ave 151st Ave 152nd Ave 153rd Ave 154th Ave 155th Ave 156th Ave 157th Ave 158th Ave 159th Ave 160th Ave 161st Ave 162nd Ave 163rd Ave 164th Ave 165th Ave 166th Ave 167th Ave 168th Ave 169th Ave 170th Ave 171st Ave 172nd Ave 173rd Ave 174th Ave 175th Ave 176th Ave 177th Ave 178th Ave 179th Ave 180th Ave 181st Ave 182nd Ave 183rd Ave 184th Ave 185th Ave 186th Ave 187th Ave 188th Ave 189th Ave 190th Ave 191st Ave 192nd Ave 193rd Ave 194th Ave 195th Ave 196th Ave 197th Ave 198th Ave 199th Ave 200th Ave 201st Ave 202nd Ave 203rd Ave 204th Ave 205th Ave 206th Ave 207th Ave 208th Ave 209th Ave 210th Ave 211st Ave 212nd Ave 213rd Ave 214th Ave 215th Ave 216th Ave 217th Ave 218th Ave 219th Ave 220th Ave 221st Ave 222nd Ave 223rd Ave 224th Ave 225th Ave 226th Ave 227th Ave 228th Ave 229th Ave 230th Ave 231st Ave 232nd Ave 233rd Ave 234th Ave 235th Ave 236th Ave 237th Ave 238th Ave 239th Ave 240th Ave 241st Ave 242nd Ave 243rd Ave 244th Ave 245th Ave 246th Ave 247th Ave 248th Ave 249th Ave 250th Ave 251st Ave 252nd Ave 253rd Ave 254th Ave 255th Ave 256th Ave 257th Ave 258th Ave 259th Ave 260th Ave 261st Ave 262nd Ave 263rd Ave 264th Ave 265th Ave 266th Ave 267th Ave 268th Ave 269th Ave 270th Ave 271st Ave 272nd Ave 273rd Ave 274th Ave 275th Ave 276th Ave 277th Ave 278th Ave 279th Ave 280th Ave 281st Ave 282nd Ave 283rd Ave 284th Ave 285th Ave 286th Ave 287th Ave 288th Ave 289th Ave 290th Ave 291st Ave 292nd Ave 293rd Ave 294th Ave 295th Ave 296th Ave 297th Ave 298th Ave 299th Ave 300th Ave 301st Ave 302nd Ave 303rd Ave 304th Ave 305th Ave 306th Ave 307th Ave 308th Ave 309th Ave 310th Ave 311st Ave 312nd Ave 313rd Ave 314th Ave 315th Ave 316th Ave 317th Ave 318th Ave 319th Ave 320th Ave 321st Ave 322nd Ave 323rd Ave 324th Ave 325th Ave 326th Ave 327th Ave 328th Ave 329th Ave 330th Ave 331st Ave 332nd Ave 333rd Ave 334th Ave 335th Ave 336th Ave 337th Ave 338th Ave 339th Ave 340th Ave 341st Ave 342nd Ave 343rd Ave 344th Ave 345th Ave 346th Ave 347th Ave 348th Ave 349th Ave 350th Ave 351st Ave 352nd Ave 353rd Ave 354th Ave 355th Ave 356th Ave 357th Ave 358th Ave 359th Ave 360th Ave 361st Ave 362nd Ave 363rd Ave 364th Ave 365th Ave 366th Ave 367th Ave 368th Ave 369th Ave 370th Ave 371st Ave 372nd Ave 373rd Ave 374th Ave 375th Ave 376th Ave 377th Ave 378th Ave 379th Ave 380th Ave 381st Ave 382nd Ave 383rd Ave 384th Ave 385th Ave 386th Ave 387th Ave 388th Ave 389th Ave 390th Ave 391st Ave 392nd Ave 393rd Ave 394th Ave 395th Ave 396th Ave 397th Ave 398th Ave 399th Ave 400th Ave 401st Ave 402nd Ave 403rd Ave 404th Ave 405th Ave 406th Ave 407th Ave 408th Ave 409th Ave 410th Ave 411st Ave 412nd Ave 413rd Ave 414th Ave 415th Ave 416th Ave 417th Ave 418th Ave 419th Ave 420th Ave 421st Ave 422nd Ave 423rd Ave 424th Ave 425th Ave 426th Ave 427th Ave 428th Ave 429th Ave 430th Ave 431st Ave 432nd Ave 433rd Ave 434th Ave 435th Ave 436th Ave 437th Ave 438th Ave 439th Ave 440th Ave 441st Ave 442nd Ave 443rd Ave 444th Ave 445th Ave 446th Ave 447th Ave 448th Ave 449th Ave 450th Ave 451st Ave 452nd Ave 453rd Ave 454th Ave 455th Ave 456th Ave 457th Ave 458th Ave 459th Ave 460th Ave 461st Ave 462nd Ave 463rd Ave 464th Ave 465th Ave 466th Ave 467th Ave 468th Ave 469th Ave 470th Ave 471st Ave 472nd Ave 473rd Ave 474th Ave 475th Ave 476th Ave 477th Ave 478th Ave 479th Ave 480th Ave 481st Ave 482nd Ave 483rd Ave 484th Ave 485th Ave 486th Ave 487th Ave 488th Ave 489th Ave 490th Ave 491st Ave 492nd Ave 493rd Ave 494th Ave 495th Ave 496th Ave 497th Ave 498th Ave 499th Ave 500th Ave 501st Ave 502nd Ave 503rd Ave 504th Ave 505th Ave 506th Ave 507th Ave 508th Ave 509th Ave 510th Ave 511st Ave 512nd Ave 513rd Ave 514th Ave 515th Ave 516th Ave 517th Ave 518th Ave 519th Ave 520th Ave 521st Ave 522nd Ave 523rd Ave 524th Ave 525th Ave 526th Ave 527th Ave 528th Ave 529th Ave 530th Ave 531st Ave 532nd Ave 533rd Ave 534th Ave 535th Ave 536th Ave 537th Ave 538th Ave 539th Ave 540th Ave 541st Ave 542nd Ave 543rd Ave 544th Ave 545th Ave 546th Ave 547th Ave 548th Ave 549th Ave 550th Ave 551st Ave 552nd Ave 553rd Ave 554th Ave 555th Ave 556th Ave 557th Ave 558th Ave 559th Ave 560th Ave 561st Ave 562nd Ave 563rd Ave 564th Ave 565th Ave 566th Ave 567th Ave 568th Ave 569th Ave 570th Ave 571st Ave 572nd Ave 573rd Ave 574th Ave 575th Ave 576th Ave 577th Ave 578th Ave 579th Ave 580th Ave 581st Ave 582nd Ave 583rd Ave 584th Ave 585th Ave 586th Ave 587th Ave 588th Ave 589th Ave 590th Ave 591st Ave 592nd Ave 593rd Ave 594th Ave 595th Ave 596th Ave 597th Ave 598th Ave 599th Ave 600th Ave 601st Ave 602nd Ave 603rd Ave 604th Ave 605th Ave 606th Ave 607th Ave 608th Ave 609th Ave 610th Ave 611st Ave 612nd Ave 613rd Ave 614th Ave 615th Ave 616th Ave 617th Ave 618th Ave 619th Ave 620th Ave 621st Ave 622nd Ave 623rd Ave 624th Ave 625th Ave 626th Ave 627th Ave 628th Ave 629th Ave 630th Ave 631st Ave 632nd Ave 633rd Ave 634th Ave 635th Ave 636th Ave 637th Ave 638th Ave 639th Ave 640th Ave 641st Ave 642nd Ave 643rd Ave 644th Ave 645th Ave 646th Ave 647th Ave 648th Ave 649th Ave 650th Ave 651st Ave 652nd Ave 653rd Ave 654th Ave 655th Ave 656th Ave 657th Ave 658th Ave 659th Ave 660th Ave 661st Ave 662nd Ave 663rd Ave 664th Ave 665th Ave 666th Ave 667th Ave 668th Ave 669th Ave 670th Ave 671st Ave 672nd Ave 673rd Ave 674th Ave 675th Ave 676th Ave 677th Ave 678th Ave 679th Ave 680th Ave 681st Ave 682nd Ave 683rd Ave 684th Ave 685th Ave 686th Ave 687th Ave 688th Ave 689th Ave 690th Ave 691st Ave 692nd Ave 693rd Ave 694th Ave 695th Ave 696th Ave 697th Ave 698th Ave 699th Ave 700th Ave 701st Ave 702nd Ave 703rd Ave 704th Ave 705th Ave 706th Ave 707th Ave 708th Ave 709th Ave 710th Ave 711st Ave 712nd Ave 713rd Ave 714th Ave 715th Ave 716th Ave 717th Ave 718th Ave 719th Ave 720th Ave 721st Ave 722nd Ave 723rd Ave 724th Ave 725th Ave 726th Ave 727th Ave 728th Ave 729th Ave 730th Ave 731st Ave 732nd Ave 733rd Ave 734th Ave 735th Ave 736th Ave 737th Ave 738th Ave 739th Ave 740th Ave 741st Ave 742nd Ave 743rd Ave 744th Ave 745th Ave 746th Ave 747th Ave 748th Ave 749th Ave 750th Ave 751st Ave 752nd Ave 753rd Ave 754th Ave 755th Ave 756th Ave 757th Ave 758th Ave 759th Ave 760th Ave 761st Ave 762nd Ave 763rd Ave 764th Ave 765th Ave 766th Ave 767th Ave 768th Ave 769th Ave 770th Ave 771st Ave 772nd Ave 773rd Ave 774th Ave 775th Ave 776th Ave 777th Ave 778th Ave 779th Ave 780th Ave 781st Ave 782nd Ave 783rd Ave 784th Ave 785th Ave 786th Ave 787th Ave 788th Ave 789th Ave 790th Ave 791st Ave 792nd Ave 793rd Ave 794th Ave 795th Ave 796th Ave 797th Ave 798th Ave 799th Ave 800th Ave 801st Ave 802nd Ave 803rd Ave 804th Ave 805th Ave 806th Ave 807th Ave 808th Ave 809th Ave 810th Ave 811st Ave 812nd Ave 813rd Ave 814th Ave 815th Ave 816th Ave 817th Ave 818th Ave 819th Ave 820th Ave 821st Ave 822nd Ave 823rd Ave 824th Ave 825th Ave 826th Ave 827th Ave 828th Ave 829th Ave 830th Ave 831st Ave 832nd Ave 833rd Ave 834th Ave 835th Ave 836th Ave 837th Ave 838th Ave 839th Ave 840th Ave 841st Ave 842nd Ave 843rd Ave 844th Ave 845th Ave 846th Ave 847th Ave 848th Ave 849th Ave 850th Ave 851st Ave 852nd Ave 853rd Ave 854th Ave 855th Ave 856th Ave 857th Ave 858th Ave 859th Ave 860th Ave 861st Ave 862nd Ave 863rd Ave 864th Ave 865th Ave 866th Ave 867th Ave 868th Ave 869th Ave 870th Ave 871st Ave 872nd Ave 873rd Ave 874th Ave 875th Ave 876th Ave 877th Ave 878th Ave 879th Ave 880th Ave 881st Ave 882nd Ave 883rd Ave 884th Ave 885th Ave 886th Ave 887th Ave 888th Ave 889th Ave 890th Ave 891st Ave 892nd Ave 893rd Ave 894th Ave 895th Ave 896th Ave 897th Ave 898th Ave 899th Ave 900th Ave 901st Ave 902nd Ave 903rd Ave 904th Ave 905th Ave 906th Ave 907th Ave 908th Ave 909th Ave 910th Ave 911st Ave 912nd Ave 913rd Ave 914th Ave 915th Ave 916th Ave 917th Ave 918th Ave 919th Ave 920th Ave 921st Ave 922nd Ave 923rd Ave 924th Ave 925th Ave 926th Ave 927th Ave 928th Ave 929th Ave 930th Ave 931st Ave 932nd Ave 933rd Ave 934th Ave 935th Ave 936th Ave 937th Ave 938th Ave 939th Ave 940th Ave 941st Ave 942nd Ave 943rd Ave 944th Ave 945th Ave 946th Ave 947th Ave 948th Ave 949th Ave 950th Ave 951st Ave 952nd Ave 953rd Ave 954th Ave 955th Ave 956th Ave 957th Ave 958th Ave 959th Ave 960th Ave 961st Ave 962nd Ave 963rd Ave 964th Ave 965th Ave 966th Ave 967th Ave 968th Ave 969th Ave 970th Ave 971st Ave 972nd Ave 973rd Ave 974th Ave 975th Ave 976th Ave 977th Ave 978th Ave 979th Ave 980th Ave 981st Ave 982nd Ave 983rd Ave 984th Ave 985th Ave 986th Ave 987th Ave 988th Ave 989th Ave 990th Ave 991st Ave 992nd Ave 993rd Ave 994th Ave 995th Ave 996th Ave 997th Ave 998th Ave 999th Ave 1000th Ave
+[p038_c0004] _MTA New York City Transit_
+[p038_c0005] _NEW YORK CITY_
+
+## Page 39
+
+### [p039_c0001] Third Avenue
+- [p039_c0002] ■ Bx15 Local – Local stops: The Hub ↔ Fordham Plaza ■ Bx15 LTD – Local stops: Harlem 125 th St ↔ The Hub – Limited stops: The Hub ↔ Fordham Plaza ■ All Third Avenue bus service ends at Fordham Plaza
+> [p039_c0003] The map illustrates the Third Avenue bus service in New York City, specifically focusing on the Bx41 and Bx15 routes. The map shows the route from the Bronx to Manhattan, passing through the Queensboro Bridge. Key stops and landmarks include E Gun Hill Rd, White Plains Rd / E Gun Hill Rd, Bedford Park Blvd - Botanical Garden, E 204 St, E Fordham Rd, E 180 St, E Tremont Av, Claremont Pkwy, E 170 St, E 167 St, E 161 St, The Hub - E 149 St / 3 Av, and E 138th St. The map also shows the RIVER BRIDGE and the LGA (Laguardia) station. The legend identifies the following routes and stops: Webster Av Routes Bx41 Local (thick black line) Bx41 SBS (thin black line) SBS to LGA (thin grey line) Third Av Routes Bx15 LTD (red line) Bx15 Local (yellow line) Other SBS Station (circle with a dot) LTD Bus Stop (circle with a cross)
+[p039_c0004] _MTA New York City Transit_
+[p039_c0005] _NEW YORK CITY_
+
+## Page 40
+
+### [p040_c0001] Project Timeline / Next Steps
+> [p040_c0002] The MTA logo, consisting of the letters 'MTA' in a stylized font inside a blue circle.
+[p040_c0003] _New York City Transit_
+[p040_c0004] _The New York City Transit Authority logo, featuring a stylized train and the text 'NEW YORK CITY' above it._
+
+## Page 41
+
+### [p041_c0001] Project timeline
+[p041_c0002] Winter 2013
+[p041_c0003] Spring 2013
+[p041_c0004] Summer 2013
+[p041_c0005] Fall 2013
+[p041_c0006] Winter 2013
+[p041_c0007] 2014-2015
+### [p041_c0008] 2013: Roadway markings and transit service
+[p041_c0009] Finalize street geometry
+[p041_c0010] Install bus lanes and priority treatments
+> [p041_c0011] Start of Service
+### [p041_c0012] 2014-2015: Bus bulbs and other capital construction
+[p041_c0013] Engineering Design for bus bulbs and other capital elements
+[p041_c0014] Construction
+### [p041_c0015] Ongoing: Community outreach
+[p041_c0016] Meetings with Community Boards and CAC to discuss 2013 Implementation Plan
+[p041_c0017] Public Open House to present 2013 Implementation Plan before start of service
+[p041_c0018] Community meetings to discuss capital work and construction schedules
+[p041_c0019] _New York City Transit_
+
+## Page 42
+
+### [p042_c0001] 2013 Implementation
+### [p042_c0002] Late March – May
+- [p042_c0003] ▪ Milling & Paving ▪ Lane markings ▪ Red bus lane paint ▪ Selected pedestrian islands / medians
+> [p042_c0004] A photograph showing two workers in high-visibility safety vests and hard hats painting a red bus lane on a city street. One worker is using a spray nozzle to apply the paint, while the other is holding a tool. In the background, there are parked cars, a building with a 'T&R BLOCK' sign, and a 'TATTOO' shop. Orange traffic barrels are placed on the street to mark the work area.
+### [p042_c0005] June
+- [p042_c0006] ▪ Install fare machines ▪ Bus stop changes ▪ Selected curb regulation changes ▪ Start of Service at the end of the month
+> [p042_c0007] A photograph showing two workers in high-visibility safety vests working on a bus stop area. They are positioned around wooden frames that appear to be for installing fare machines. The area is marked with white lines on the pavement. In the background, there are parked vehicles, including a bus and a van, and a building with a 'PARK' sign. Orange traffic barrels and yellow caution tape are also visible.
+[p042_c0008] _New York City Transit_
+[p042_c0009] _NEW YORK CITY_
+
+## Page 43
+
+[p043_c0001] Thank You!
+> [p043_c0002] A photograph of a bus stop in an urban environment. A white bus with a blue stripe and the number 5497 is stopped at the curb. The bus's destination sign displays "Bx 41 WILLIAMSBURG" and "SUNRISE". A group of approximately 15 people, including men and women of various ages and ethnicities, are waiting for the bus. Some are standing, while others are leaning against the bus. A blue bus stop sign is visible, featuring a wheelchair accessibility symbol and the word "WAITING". Below the sign, a blue street sign indicates "Fordham Plaza" and "Wakefield", with "Bx15" and "Bx41" listed. The background shows city buildings, including one with a large glass facade and a "FOR LEASE" sign. The scene is set on a sunny day with clear blue skies.

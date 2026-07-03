@@ -1,0 +1,358 @@
+{
+  "note_id": "codex-canonical-cleanup-2026-06-22-identity-alias-batch-055-prep",
+  "created_at": "2026-06-22T21:18:00Z",
+  "author": "codex",
+  "status": "ready_for_conductor_apply",
+  "lane": "identity_prep_only",
+  "batch": "identity-batch055",
+  "scope": "Codex-only identity alias preparation after identity054; no generated output, validation CLI, materialization, export, DB repair, publish, or provider-backed commands run",
+  "context": {
+    "starting_point": "unresolved duplicate_global_identity backlog after current identity overrides, including identity054 aliases present in data/identity-overrides/merges.json",
+    "candidate_mining_summary": {
+      "current_entity_records_scanned": 2594,
+      "current_alias_overrides_considered": 309,
+      "entity_duplicate_groups_after_alias_and_do_not_merge_filters": 250,
+      "selected_high_confidence_candidates": 10,
+      "selection_policy": "Exact entity names for people, legal entities, vendors, contractors, or joint ventures only; broad agencies, programs, committees, initials-only pairs, target-churn chains, already-mapped aliases, and do-not-merge pairs were excluded."
+    },
+    "write_scope_used_for_this_task": [
+      "data/review_notes/codex-identity-batch055-prep.json"
+    ],
+    "paths_intentionally_not_edited": [
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json",
+      "data/submission-overrides/retired.json",
+      "data/canonical/",
+      "data/canonical.db",
+      "data/materialized/",
+      "data/submissions/",
+      "wiki/",
+      "LOG.md"
+    ]
+  },
+  "intended_mutation": {
+    "path": "data/identity-overrides/merges.json",
+    "operation": "add_aliases",
+    "aliases": {
+      "entity": {
+        "entity_meeting-doc-113966-catherine-sheridan": "entity_meeting-doc-111711-catherine-sheridan",
+        "entity_meeting-doc-128981-catherine-sheridan": "entity_meeting-doc-111711-catherine-sheridan",
+        "entity_meeting-doc-114016-cubic-transportation": "entity_cubic-transportation-systems",
+        "entity_meeting-doc-68196-daniel-decrescenzo": "entity_daniel-decrescenzo",
+        "entity_meeting-doc-72536-daniel-decrescenzo": "entity_daniel-decrescenzo",
+        "entity_meeting-doc-196846-donald-look": "entity_donald-look-115226",
+        "entity_meeting-doc-171381-ey": "entity_meeting-doc-171006-ernst-young",
+        "entity_meeting-doc-129081-gail-lloyd-enterprises": "entity_meeting-doc-129051-gail-lloyd",
+        "entity_meeting-doc-157771-hawkins-ave-dev": "entity_hawkins-ave-development-rhp2",
+        "entity_meeting186856-jacobs-hdr-jv": "entity_jacobs-hdr-jv"
+      }
+    }
+  },
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "all_pass": true,
+    "canonical_records_present": true,
+    "target_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "targets_not_aliases_in_merges_json": true,
+    "targets_not_aliases_in_identity_aliases_table": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 20,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 20,
+    "source_page_blocks_missing": [],
+    "confidence": "high"
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-113966-catherine-sheridan",
+      "target": "entity_meeting-doc-111711-catherine-sheridan",
+      "validator_duplicate_key": "entity_catherine-t-sheridan",
+      "reason": "Exact person identity for Catherine T. Sheridan. The alias names Catherine T. Sheridan, P.E. as Interim President, and the target carries the same Catherine T. Sheridan/TBTA president identity across multiple official meeting documents.",
+      "evidence_refs": [
+        "meeting_doc_113966#p004_c0007",
+        "meeting_doc_111711#p004_c0008"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_catherine-t-sheridan"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-128981-catherine-sheridan",
+      "target": "entity_meeting-doc-111711-catherine-sheridan",
+      "validator_duplicate_key": "entity_catherine-t-sheridan",
+      "reason": "Exact person identity for Catherine T. Sheridan. The alias and target both identify Catherine T. Sheridan, P.E. in the TBTA/MTA Bridges and Tunnels president role family; title wording is role chronology, not a separate identity.",
+      "evidence_refs": [
+        "meeting_doc_128981#p004_c0007",
+        "meeting_doc_111711#p004_c0008"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_catherine-t-sheridan"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-114016-cubic-transportation",
+      "target": "entity_cubic-transportation-systems",
+      "validator_duplicate_key": "entity_cubic-transportation-systems-inc",
+      "reason": "Exact vendor/company identity for Cubic Transportation Systems, Inc. The alias names Cubic Transportation Systems, Inc., and the target is the existing multi-source Cubic Transportation Systems Inc. OMNY/new fare payment vendor record.",
+      "evidence_refs": [
+        "meeting_doc_114016#p025_c0006",
+        "meeting_doc_102806#p005_c0005"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_cubic-transportation-systems-inc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-68196-daniel-decrescenzo",
+      "target": "entity_daniel-decrescenzo",
+      "validator_duplicate_key": "entity_daniel-f-decrescenzo-jr",
+      "reason": "Exact person identity for Daniel F. DeCrescenzo, Jr. The alias names him as President at TBTA, and the target is the richer Daniel F. DeCrescenzo, Jr. president record.",
+      "evidence_refs": [
+        "meeting_doc_68196#p006_c0008",
+        "meeting_doc_104711#p004_c0007"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_daniel-f-decrescenzo-jr"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-72536-daniel-decrescenzo",
+      "target": "entity_daniel-decrescenzo",
+      "validator_duplicate_key": "entity_daniel-f-decrescenzo-jr",
+      "reason": "Exact person identity for Daniel F. DeCrescenzo, Jr. Both records use the same full name and president title; the target carries the broader merged TBTA president evidence.",
+      "evidence_refs": [
+        "meeting_doc_72536#p006_c0008",
+        "meeting_doc_104711#p004_c0007"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_daniel-f-decrescenzo-jr"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-196846-donald-look",
+      "target": "entity_donald-look-115226",
+      "validator_duplicate_key": "entity_donald-e-look",
+      "reason": "Exact person identity for Donald E. Look. The alias and target both identify Donald Look/Donald E. Look in TBTA internal affairs and security leadership roles.",
+      "evidence_refs": [
+        "meeting_doc_196846#p002_c0008",
+        "meeting_doc_151591#p004_c0008"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_donald-e-look"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-171381-ey",
+      "target": "entity_meeting-doc-171006-ernst-young",
+      "validator_duplicate_key": "entity_ernst-and-young-llc",
+      "reason": "Exact vendor/company identity for Ernst & Young, LLC. The alias and target use the same legal name, with the target already carrying the EY short-name/vendor context.",
+      "evidence_refs": [
+        "meeting_doc_171381#p038_c0004",
+        "meeting_doc_171006#p005_c0004"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_ernst-and-young-llc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-129081-gail-lloyd-enterprises",
+      "target": "entity_meeting-doc-129051-gail-lloyd",
+      "validator_duplicate_key": "entity_gail-lloyd-enterprises",
+      "reason": "Exact vendor/company identity for Gail Lloyd Enterprises. Both records identify Gail Lloyd Enterprises as the entity name, differing only in source occurrence and entity_type wording.",
+      "evidence_refs": [
+        "meeting_doc_129081#p044_c0008",
+        "meeting_doc_129051#p001_c0003"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_gail-lloyd-enterprises"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-157771-hawkins-ave-dev",
+      "target": "entity_hawkins-ave-development-rhp2",
+      "validator_duplicate_key": "entity_hawkins-ave-development-rhp2-llc",
+      "reason": "Exact legal/company identity for Hawkins Ave Development RHP2, LLC. The alias cites the same licensee name as the target's existing Hawkins Ave Development RHP2 record.",
+      "evidence_refs": [
+        "meeting_doc_157771#p039_c0007",
+        "meeting_doc_157721#p001_c0003"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_hawkins-ave-development-rhp2-llc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting186856-jacobs-hdr-jv",
+      "target": "entity_jacobs-hdr-jv",
+      "validator_duplicate_key": "entity_jacobs-hdr-jv",
+      "reason": "Exact joint-venture identity for Jacobs/HDR JV. The alias and target both identify Jacobs/HDR JV as the Interborough Express design-services joint venture.",
+      "evidence_refs": [
+        "meeting_doc_186856#p013_c0010",
+        "meeting_doc_179916#p003_c0005"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_jacobs-hdr-jv"
+        ]
+      },
+      "confidence": "high"
+    }
+  ],
+  "deferred_low_confidence_or_scope_review": [
+    "Skipped broad agency, program, committee, board, community-board, and parent/subsidiary surfaces even when they shared duplicate keys.",
+    "Skipped initials-only or abbreviated person pairs such as A. Albert, D. Mack, J. Lieber, and N. Zuckerman where exact personal identity was not source-obvious from the duplicate key alone.",
+    "Skipped contaminated person clusters with mixed payloads or target churn, including Catherine Rinaldi/Richard Davey surfaces.",
+    "Skipped candidates where either endpoint was already an alias in data/identity-overrides/merges.json or canonical identity_aliases."
+  ],
+  "commands_run_for_this_prep": [
+    "git status --short",
+    "sed inspection of data/review_notes/codex-identity-batch054-prep.json and neighboring prep artifacts",
+    "rg confirmation that identity054 aliases are already present in data/identity-overrides/merges.json",
+    "sqlite3 data/canonical.db read-only schema/count inspection for records, record_aliases, identity_aliases, do_not_merge, and duplicate_relations",
+    "sed inspection of packages/db/src/identity.ts to mirror current entity identity-key generation",
+    "bun - <<'EOF' <read-only duplicate candidate miner over data/canonical/entities.jsonl, current merges.json, do-not-merge.json, identity_aliases, and do_not_merge> EOF",
+    "bun - <<'EOF' <read-only selected candidate payload/evidence inspection> EOF",
+    "bun - <<'EOF' <deterministic final guard script for all intended batch055 aliases, including raw/sources blocks and wiki/sources block checks> EOF"
+  ],
+  "commands_not_run": [
+    "materialize",
+    "validate CLI",
+    "export-jsonl",
+    "DB repair",
+    "publish",
+    "provider-backed post-ingest commands",
+    "canonicalize",
+    "identity-review-run",
+    "campaign dedup"
+  ],
+  "conductor_apply_note": "This prep artifact intentionally does not edit data/identity-overrides/merges.json or generated outputs. Re-run the deterministic guards immediately before conductor application because the worktree is active and canonical generated outputs are changing in other lanes."
+}

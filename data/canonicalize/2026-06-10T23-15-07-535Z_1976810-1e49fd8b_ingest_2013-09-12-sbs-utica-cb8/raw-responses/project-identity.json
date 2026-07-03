@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T23-15-07-535Z_1976810-1e49fd8b_ingest_2013-09-12-sbs-utica-cb8",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T03:58:03.780Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d001",
+        "local_observation_id": "project_utica_ave_bus_priority_safety_study_2013_09",
+        "decision": "new",
+        "rationale": "The observation already resolves to the same base_record_id 'project_utica-ave-bus-priority-safety-study'. The observation label 'Utica Avenue Bus Priority and Safety Study' matches the registry card display_name. The source 2013_09_12_sbs_utica_cb8 is listed as a source_id in the registry card. The payload details (Brooklyn borough, Utica Avenue corridor study) match the existing record. No linking to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_12_sbs_utica_cb8",
+            "block_id": "p001_c0002",
+            "source_quote": "Utica Avenue Bus Priority and Safety Study"
+          },
+          {
+            "source_id": "2013_09_12_sbs_utica_cb8",
+            "block_id": "p002_c0004",
+            "source_quote": "• Focus on Utica Avenue from St. Johns Place to Church Avenue • Key intersections at Eastern Parkway, Empire/Lefferts, Church Avenue • Study goals – Improve pedestrian and driver safety – Improve bus travel times – Maintain parking and curb access"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-57-19-166Z_2111393-9abd7dd0_canonicalize_2026-06-10t23-15-07-535z-1976810-1e49fd8b-ingest-2013-09-12-sbs-utica-cb8-project-identity"
+}

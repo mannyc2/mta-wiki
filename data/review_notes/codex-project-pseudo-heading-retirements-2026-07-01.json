@@ -1,0 +1,84 @@
+{
+  "id": "project-pseudo-heading-retirements",
+  "date": "2026-07-01",
+  "external_provider_llms_used": false,
+  "forbidden_commands_used": false,
+  "bucket": "projects.project_family missing / pseudo-heading project records",
+  "baseline": {
+    "project_records": 1861,
+    "normalized_project_backlog_union": 28,
+    "project_family_other": 8,
+    "project_family_missing": 2,
+    "document_time_status_missing": 18,
+    "validate": {
+      "submissions": 98115,
+      "canonical_records": 84030,
+      "wiki_pages": 7333,
+      "issues": 0
+    }
+  },
+  "implemented": [
+    {
+      "kind": "submission_retirement",
+      "submission_id": "sub_177d00b4035ba1b9",
+      "canonical_record_id_before": "project_meeting-doc-129366-increase-ridership",
+      "evidence_id": "meeting_doc_129366#p004_c0004",
+      "evidence_text": "Increase Ridership \u2713",
+      "reason": "The accepted submission turned a slide/accomplishment heading into a singleton project record with no project type or source-scoped project status."
+    },
+    {
+      "kind": "submission_retirement",
+      "submission_id": "sub_2decaa7513a169a6",
+      "canonical_record_id_before": "project_meeting-doc-129366-incredible-advocates",
+      "evidence_id": "meeting_doc_129366#p018_c0001",
+      "evidence_text": "Incredible Advocates \u2713",
+      "reason": "The accepted submission turned a recognition/slide heading into a singleton project record with no project type or source-scoped project status."
+    }
+  ],
+  "verification": {
+    "json_parse": "passed",
+    "retired_submission_count_after": 265,
+    "retired_ids_present": {
+      "sub_177d00b4035ba1b9": true,
+      "sub_2decaa7513a169a6": true
+    },
+    "duplicate_retired_submission_ids": 0,
+    "materialize": {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "materialized_submissions": 93067,
+      "total_submissions": 98115,
+      "retired_submissions_skipped": 265,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "after_counts": {
+      "project_records": 1859,
+      "removed_record_ids_absent": [
+        "project_meeting-doc-129366-increase-ridership",
+        "project_meeting-doc-129366-incredible-advocates"
+      ],
+      "project_family_other": 8,
+      "project_family_missing": 0,
+      "document_time_status_missing": 18,
+      "normalized_project_backlog_union": 26
+    },
+    "validate": {
+      "submissions": 98115,
+      "canonical_records": 84027,
+      "wiki_pages": 7331,
+      "issues": 0
+    }
+  },
+  "expected_effect": {
+    "project_family_missing": "2 -> 0",
+    "normalized_project_backlog_union": "28 -> 26",
+    "project_records": "1861 -> 1859"
+  },
+  "intentionally_unresolved": [
+    "The remaining project_family other tail is intentionally not broad-mapped; existing normalizer tests and review notes keep heritage locomotive wrap/restoration, sustainability, mixed procurement packages, sparse train-project labels, and broad programs guarded unless bounded payload proof exists."
+  ],
+  "files_changed": [
+    "data/submission-overrides/retired.json",
+    "data/review_notes/codex-project-pseudo-heading-retirements-2026-07-01.json",
+    "LOG.md"
+  ]
+}

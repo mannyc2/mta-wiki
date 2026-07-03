@@ -1,0 +1,369 @@
+{
+  "note_id": "codex-canonical-cleanup-2026-06-22-identity-alias-batch-050-prep",
+  "created_at": "2026-06-22T21:55:00Z",
+  "status": "ready_for_conductor_apply",
+  "lane": "identity_cleanup",
+  "batch": "identity-batch050",
+  "context": {
+    "current_checkpoint_from_conductor": {
+      "validation_issues": 1672,
+      "unexpected_relation_endpoint_shape": 77,
+      "duplicate_global_identity": 1595,
+      "identity_batch048": "applied_durably_by_conductor_but_pending_generated-output_checkpoint_behind_wave24",
+      "identity_batch049": "applied_durably_by_conductor_but_pending_generated-output_checkpoint_behind_wave24"
+    },
+    "write_scope_used_for_this_task": [
+      "data/review_notes/codex-identity-batch050-prep.json"
+    ],
+    "paths_intentionally_not_edited": [
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json",
+      "data/canonical/",
+      "data/materialized/",
+      "wiki/"
+    ]
+  },
+  "intended_mutation": {
+    "path": "data/identity-overrides/merges.json",
+    "operation": "add_aliases",
+    "aliases": {
+      "entity": {
+        "entity_meeting-doc-206081-beer-table": "entity_beer-table-llc-meeting-doc-205671",
+        "entity_meeting-doc-133366-birrialandia-corp": "entity_birrialandia-corp-meeting-doc-133406",
+        "entity_meeting-doc-206081-dover-greens": "entity_dover-greens-meeting-doc-205671",
+        "entity_meeting-doc-206081-east-harlem-collaborators": "entity_east-harlem-community-collaborators-jv-206071",
+        "entity_meeting157646-ge-grid-solutions": "entity_ge-grid-solutions-157686",
+        "entity_meeting-doc-155486-ge-grid": "entity_ge-grid-solutions-157686",
+        "entity_meeting-doc-104796-gjdc": "entity_greater-jamaica-dev-corp",
+        "entity_meeting-doc-129081-greater-jamaica-dev": "entity_greater-jamaica-dev-corp",
+        "entity_scheidt-bachmann-usa": "entity_meeting-doc-129051-scheidt-bachman",
+        "entity_meeting-doc-129051-terwilliger-bartone": "entity_meeting-doc-129081-terwilliger-bartone"
+      }
+    }
+  },
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "all_pass": true,
+    "canonical_records_present": true,
+    "target_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "targets_not_aliases_in_merges_json": true,
+    "targets_not_aliases_in_identity_aliases_table": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 20,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 20,
+    "source_page_blocks_missing": [],
+    "confidence": "high"
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-206081-beer-table",
+      "target": "entity_beer-table-llc-meeting-doc-205671",
+      "validator_duplicate_key": "entity_btct4-llc-d-b-a-beer-table",
+      "reason": "Exact lessee/company identity for BTCT4 LLC d/b/a Beer Table. Both records cite the same Grand Central Madison retail lease identity; the target is the richer vendor record.",
+      "evidence_refs": [
+        "meeting_doc_206081#p053_c0007",
+        "meeting_doc_205671#p011_c0007"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_btct4-llc-d-b-a-beer-table"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-133366-birrialandia-corp",
+      "target": "entity_birrialandia-corp-meeting-doc-133406",
+      "validator_duplicate_key": "entity_birrialandia-corp",
+      "reason": "Exact company identity for Birrialandia Corp. Both records name the same lessee/company for the Coney Island-Stillwell Avenue station restaurant lease.",
+      "evidence_refs": [
+        "meeting_doc_133366#p001_c0003",
+        "meeting_doc_133406#p008_c0008"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_birrialandia-corp"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-206081-dover-greens",
+      "target": "entity_dover-greens-meeting-doc-205671",
+      "validator_duplicate_key": "entity_dover-greens-llc",
+      "reason": "Exact LLC identity for Dover Greens, LLC. Both records identify the same Metro-North licensor for the Wingdale parking parcel.",
+      "evidence_refs": [
+        "meeting_doc_206081#p050_c0008",
+        "meeting_doc_205671#p008_c0008"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_dover-greens-llc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-206081-east-harlem-collaborators",
+      "target": "entity_east-harlem-community-collaborators-jv-206071",
+      "validator_duplicate_key": "entity_east-harlem-community-collaborators-jv",
+      "reason": "Exact joint-venture identity for East Harlem Community Collaborators JV. Both records cite the same Second Avenue Subway Phase 2 community outreach services provider.",
+      "evidence_refs": [
+        "meeting_doc_206081#p041_c0004",
+        "meeting_doc_206071#p054_c0007"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_east-harlem-community-collaborators-jv"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting157646-ge-grid-solutions",
+      "target": "entity_ge-grid-solutions-157686",
+      "validator_duplicate_key": "entity_ge-grid-solutions-llc",
+      "reason": "Exact company/vendor identity for GE Grid Solutions LLC. Both records identify the same supplier for PTC data radios.",
+      "evidence_refs": [
+        "meeting_doc_157646#p011_c0013",
+        "meeting_doc_157686#p004_c0003"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_ge-grid-solutions-llc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-155486-ge-grid",
+      "target": "entity_ge-grid-solutions-157686",
+      "validator_duplicate_key": "entity_ge-grid-solutions-llc",
+      "reason": "Exact contractor/company identity for GE Grid Solutions LLC. The alias and target identify the same PTC data radio supplier, with the target carrying the fuller merged vendor payload.",
+      "evidence_refs": [
+        "meeting_doc_155486#p036_c0005",
+        "meeting_doc_157686#p004_c0003"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_ge-grid-solutions-llc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-104796-gjdc",
+      "target": "entity_greater-jamaica-dev-corp",
+      "validator_duplicate_key": "entity_greater-jamaica-development-corporation",
+      "reason": "Exact development-corporation identity for Greater Jamaica Development Corporation/GJDC. Both records identify the lessor for relocated Jamaica Bus Terminal lease context; the target is the richer active GJDC record.",
+      "evidence_refs": [
+        "meeting_doc_104796#p004_c0003",
+        "meeting_doc_124346#p093_c0008"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_greater-jamaica-development-corporation"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-129081-greater-jamaica-dev",
+      "target": "entity_greater-jamaica-dev-corp",
+      "validator_duplicate_key": "entity_greater-jamaica-development-corporation",
+      "reason": "Exact organization identity for Greater Jamaica Development Corporation. The alias and target both identify the GJDC/Jamaica Bus Terminal lessor context.",
+      "evidence_refs": [
+        "meeting_doc_129081#p044_c0010",
+        "meeting_doc_124346#p093_c0008"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_greater-jamaica-development-corporation"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_scheidt-bachmann-usa",
+      "target": "entity_meeting-doc-129051-scheidt-bachman",
+      "validator_duplicate_key": "entity_scheidt-and-bachmann-usa",
+      "reason": "Exact fare-collection vendor identity for Scheidt & Bachmann USA. The spelling variation is covered by the shared identity key, and both records refer to the LIRR/MNR fare collection solution vendor.",
+      "evidence_refs": [
+        "meeting_doc_140481#p005_c0007",
+        "meeting_doc_129051#p001_c0003"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_scheidt-and-bachmann-usa"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-129051-terwilliger-bartone",
+      "target": "entity_meeting-doc-129081-terwilliger-bartone",
+      "validator_duplicate_key": "entity_terwilliger-bartone-properties-llc",
+      "reason": "Exact LLC identity for Terwilliger Bartone Properties, LLC. Both records identify the same LIRR Westbury Station walkway licensee.",
+      "evidence_refs": [
+        "meeting_doc_129051#p001_c0003",
+        "meeting_doc_129081#p055_c0008"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_terwilliger-bartone-properties-llc"
+        ]
+      },
+      "confidence": "high"
+    }
+  ],
+  "deferred_low_confidence_or_scope_review": [
+    "Skipped broad MTA/NYCT/agency/committee/program/team/office labels and government-body clusters.",
+    "Skipped Cubic/Cubic Transportation hierarchy-style candidates because corporate parent/subsidiary identity needs separate owner judgment.",
+    "Skipped prior-batch target churn candidates such as Donna Mason and Donald Look, even where exact person evidence exists, to keep batch050 cleanly independent of pending generated-output checkpoint effects.",
+    "Skipped exact-looking candidates whose cited blocks did not provide enough value-bearing support after raw block inspection."
+  ],
+  "commands_run_for_this_prep": [
+    "git status --short -- data/identity-overrides/merges.json data/identity-overrides/do-not-merge.json data/review_notes/codex-identity-batch048-prep.json data/review_notes/codex-identity-batch049-prep.json data/review_notes/codex-identity-batch050-prep.json",
+    "jq '{entity_alias_count:(.aliases.entity|length), batch049_aliases:{\"entity_masabi-may2024\":.aliases.entity[\"entity_masabi-may2024\"],\"entity_44471-mckinsey\":.aliases.entity[\"entity_44471-mckinsey\"],\"entity_mckissack-wsp-jv-meeting-doc-160241\":.aliases.entity[\"entity_mckissack-wsp-jv-meeting-doc-160241\"],\"entity_c2k-partners-jan2026\":.aliases.entity[\"entity_c2k-partners-jan2026\"],\"entity_meeting-doc-100351-kawasaki-rail-car\":.aliases.entity[\"entity_meeting-doc-100351-kawasaki-rail-car\"],\"entity_meeting-doc-143166-e-hartsdale-food-mart\":.aliases.entity[\"entity_meeting-doc-143166-e-hartsdale-food-mart\"],\"entity_hudson-harbor-station-llc-meeting-doc-151756\":.aliases.entity[\"entity_hudson-harbor-station-llc-meeting-doc-151756\"],\"entity_conduent-state-local-meeting-doc-42686\":.aliases.entity[\"entity_conduent-state-local-meeting-doc-42686\"],\"entity_ernst-young-174036\":.aliases.entity[\"entity_ernst-young-174036\"],\"entity_meeting-doc-171021-laz-parking\":.aliases.entity[\"entity_meeting-doc-171021-laz-parking\"]}}' data/identity-overrides/merges.json",
+    "jq '{entity_do_not_merge_count:(.pairs.entity|length), last_entity_pairs:.pairs.entity[-12:]}' data/identity-overrides/do-not-merge.json",
+    "sqlite3 data/canonical.db \"select count(*) as identity_aliases from identity_aliases; select count(*) as do_not_merge from do_not_merge; pragma quick_check;\"",
+    "rg --files | rg '(^|/)identity.*\\\\.ts$|(^|/)materialize.*\\\\.ts$|(^|/)validate.*\\\\.ts$|(^|/)canonical.*\\\\.ts$|AGENTS.md|package.json|tsconfig'",
+    "ls",
+    "find . -maxdepth 4 -type d -name harness -o -name src | head -60",
+    "rg \"identityKeysForRecord|readCanonicalRecords|identityDoNotMergeOverrideIssueSuppressed|duplicate_global_identity\" packages -n",
+    "sed -n '1,260p' packages/db/src/identity.ts",
+    "sed -n '1,220p' packages/pipeline/src/validate.ts",
+    "sed -n '390,560p' packages/db/src/identity.ts && sed -n '960,990p' packages/pipeline/src/identity/identity-review-apply.ts",
+    "cat package.json",
+    "cat packages/pipeline/package.json",
+    "rg '\"@mta-wiki/pipeline' -n tsconfig.base.json package.json packages/*/package.json",
+    "ls -l node_modules/@mta-wiki || true",
+    "sqlite3 data/canonical.db \".schema records\" && sqlite3 data/canonical.db \".schema evidence_refs\" && sqlite3 data/canonical.db \".schema record_aliases\"",
+    "sqlite3 data/canonical.db \"select record_kind, count(*) from records group by record_kind order by record_kind;\"",
+    "sqlite3 -json data/canonical.db \"with active_records as (select r.* from records r left join identity_aliases ia on ia.kind=r.record_kind and ia.alias=r.record_id where r.record_kind='entity' and ia.alias is null), alias_groups as (select ra.alias as identity_key, count(distinct ra.record_id) as n from record_aliases ra join active_records r on r.record_id=ra.record_id where length(ra.alias)>3 group by ra.alias having n>1) select ag.identity_key, ag.n, json_group_array(json_object('record_id',r.record_id,'display_name',r.display_name,'payload',json(r.payload),'evidence',(select json_group_array(source_id||'#'||block_id) from evidence_refs er where er.record_id=r.record_id))) as records from alias_groups ag join record_aliases ra on ra.alias=ag.identity_key join active_records r on r.record_id=ra.record_id group by ag.identity_key order by ag.n desc, ag.identity_key limit 120;\"",
+    "sqlite3 data/canonical.db \".schema do_not_merge\"",
+    "sqlite3 -json data/canonical.db \"select kind, alias, target from identity_aliases where kind='entity' order by alias limit 5; select kind, left_record_id, right_record_id from do_not_merge where kind='entity' limit 5;\"",
+    "bun - <<'EOF' <deterministic DB-backed compact duplicate candidate miner over records, record_aliases, identity_aliases, do_not_merge, and merges.json> EOF",
+    "sqlite3 -json data/canonical.db \"with selected(id) as (values ('entity_meeting-doc-206081-beer-table'),('entity_beer-table-llc-meeting-doc-205671'),('entity_meeting-doc-133366-birrialandia-corp'),('entity_birrialandia-corp-meeting-doc-133406'),('entity_meeting-doc-206081-dover-greens'),('entity_dover-greens-meeting-doc-205671'),('entity_meeting-doc-206081-east-harlem-collaborators'),('entity_east-harlem-community-collaborators-jv-206071'),('entity_meeting157646-ge-grid-solutions'),('entity_meeting-doc-155486-ge-grid'),('entity_ge-grid-solutions-157686'),('entity_meeting-doc-104796-gjdc'),('entity_meeting-doc-129081-greater-jamaica-dev'),('entity_greater-jamaica-dev-corp'),('entity_scheidt-bachmann-usa'),('entity_meeting-doc-129051-scheidt-bachman'),('entity_meeting-doc-129051-terwilliger-bartone'),('entity_meeting-doc-129081-terwilliger-bartone')) select r.record_id,r.display_name,json(r.payload) as payload,(select json_group_array(source_id||'#'||block_id) from evidence_refs er where er.record_id=r.record_id) as refs,(select json_group_array(alias) from record_aliases ra where ra.record_id=r.record_id) as identity_keys from records r join selected s on s.id=r.record_id order by r.record_id;\"",
+    "for ref in meeting_doc_206081#p053_c0007 meeting_doc_205671#p011_c0007 meeting_doc_133366#p001_c0003 meeting_doc_133406#p008_c0008 meeting_doc_206081#p050_c0008 meeting_doc_205671#p008_c0008 meeting_doc_206081#p041_c0004 meeting_doc_206071#p054_c0007 meeting_doc_157646#p011_c0013 meeting_doc_157686#p004_c0003 meeting_doc_155486#p036_c0005 meeting_doc_157686#p004_c0003 meeting_doc_104796#p004_c0003 meeting_doc_124346#p093_c0008 meeting_doc_129081#p044_c0010 meeting_doc_124346#p093_c0008 meeting_doc_140481#p005_c0007 meeting_doc_129051#p001_c0003 meeting_doc_129051#p001_c0003 meeting_doc_129081#p055_c0008; do src=${ref%%#*}; block=${ref#*#}; printf '%s\\\\t' \"$ref\"; jq -r --arg block \"$block\" 'select(.block_id==$block) | ((.text // .content // .raw_text // \"\") | gsub(\"[\\\\r\\\\n]+\"; \" \") | .[0:220])' \"raw/sources/$src/blocks.jsonl\"; done",
+    "jq -r 'select(.block_id==\"p001_c0003\") | .text' raw/sources/meeting_doc_133366/blocks.jsonl | rg -i 'Birrialandia|LESSEE|vendor|corp'",
+    "jq -r 'select(.block_id==\"p004_c0003\") | .text' raw/sources/meeting_doc_104796/blocks.jsonl | rg -i 'Greater Jamaica|GJDC|Development'",
+    "jq -r 'select(.block_id==\"p011_c0013\") | .text' raw/sources/meeting_doc_157646/blocks.jsonl | rg -i 'GE Grid|Grid Solutions|GE'",
+    "for block in p005_c0007 p008_c0003 p008_c0006; do printf '%s\\\\t' \"$block\"; jq -r --arg block \"$block\" 'select(.block_id==$block) | .text' raw/sources/meeting_doc_140481/blocks.jsonl | rg -i 'Scheidt|Bachm|USA|fare collection' || true; done",
+    "jq -r 'select(.block_id==\"p001_c0003\") | .text' raw/sources/meeting_doc_129051/blocks.jsonl | rg -i 'Terwilliger|Bartone|Properties'",
+    "for src in meeting_doc_133366 meeting_doc_104796 meeting_doc_157646 meeting_doc_140481 meeting_doc_129051; do echo \"$src\"; rg -n -i 'Birrialandia|Greater Jamaica|GJDC|GE Grid|Grid Solutions|Scheidt|Bachm|Terwilliger|Bartone' raw/sources/$src/blocks.jsonl | head -20; done",
+    "bun - <<'EOF' <deterministic final exact guard script for all intended batch050 aliases: canonical record presence, aliases not already in merges or identity_aliases, targets not aliases, do-not-merge hits, shared identity keys, raw blocks, and source-page blocks> EOF"
+  ],
+  "commands_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts export-jsonl --verify",
+    "bun packages/cli/src/cli.ts validate",
+    "canonicalize/dedup/identity-review/write/ask/schema/ontology-normalize provider-backed or post-ingest commands",
+    "full materialize/export/full validate"
+  ],
+  "conductor_apply_note": "This prep artifact intentionally does not edit data/identity-overrides/merges.json or generated outputs. Re-run the deterministic guards immediately before conductor application because batches048-049 are applied durably but still pending generated-output checkpoint behind wave24."
+}

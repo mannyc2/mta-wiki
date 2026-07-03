@@ -1,0 +1,54 @@
+{
+  "run_id": "2026-06-10T22-56-13-288Z_1976810-67a230b7_ingest_201104-jamaica-cac2-slides",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T01:29:56.248Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "d001",
+        "local_observation_id": "route_q20a_q20b_jamaica_cac2",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id route_q20a-q20b-jamaica-cac2 which exists in the registry with matching aliases, label Q20A/Q20B, borough Queens, and source 201104_jamaica_cac2_slides. No different existing record claims the same unique route identity.",
+        "evidence_refs": [
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p028_c0006",
+            "source_quote": "Q20A/Q20B/Q44"
+          }
+        ]
+      },
+      {
+        "decision_id": "d002",
+        "local_observation_id": "route_q44_jamaica_cac2",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id route_q44-jamaica-cac2 which exists in the registry with matching alias route_q44, label Q44, borough Queens, and matching source 201104_jamaica_cac2_slides. No different existing record claims the same unique route identity.",
+        "evidence_refs": [
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p028_c0006",
+            "source_quote": "Q20A/Q20B/Q44"
+          }
+        ]
+      },
+      {
+        "decision_id": "d003",
+        "local_observation_id": "route_q43_jamaica_cac2",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id route_q43-jamaica-cac2 which exists in the registry with matching alias route_q43, label Q43, borough Queens, and matching source 201104_jamaica_cac2_slides. The record route_q43 (separate record_id) also represents Q43 but this observation's base_record_id already correctly maps to its own record; no link to a different record is warranted.",
+        "evidence_refs": [
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p028_c0006",
+            "source_quote": "Q43"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-29-26-653Z_2111393-8f11d1fe_canonicalize_2026-06-10t22-56-13-288z-1976810-67a230b7-ingest-201104-jamaica-cac2-slides-route-identity"
+}

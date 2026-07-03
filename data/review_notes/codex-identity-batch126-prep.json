@@ -1,0 +1,350 @@
+{
+  "note_id": "codex-identity-batch126-prep",
+  "batch_id": "identity126",
+  "created_at": "2026-06-23T05:44:54Z",
+  "author": "Codex subagent",
+  "scope": {
+    "batch": "identity126",
+    "mode": "Codex-only deterministic prep",
+    "global_kinds": [
+      "corridor",
+      "route"
+    ],
+    "record_kinds": [
+      "corridor",
+      "route"
+    ]
+  },
+  "prepared_count": 6,
+  "proposed_aliases": [
+    {
+      "kind": "route",
+      "global_kind": "route",
+      "canonical_id": "route_bx55-2012",
+      "target_id": "route_bx55-2012",
+      "alias_id": "route_bx55-2012-09-webster",
+      "canonical_name": "Bx55 (Limited)",
+      "alias_name": "Bx55",
+      "reason": "Same Bronx Bx55 bus route in the Webster Avenue/Bx41 SBS planning context. Both records use route_id Bx55, both are normalized as local service in the Bronx, and the alias is a one-source September 2012 Webster stop-location mention that fits the target's broader Bx55/Webster evidence cluster.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "route_bx55-2012",
+          "record_kind": "route",
+          "route_id": "Bx55",
+          "route_label": "Bx55 Limited",
+          "route_type_normalized": "local",
+          "service_variant": "local",
+          "borough_normalized": "bronx",
+          "source_ids": [
+            "2012_10_brt_webster_cac3_meeting_summary",
+            "2013_01_webster_sbs_newsletter",
+            "2013_02_sbs_webster_bx_cb1",
+            "2013_02_sbs_webster_bx_cb3",
+            "2013_03_sbs_webster_bx_cb6",
+            "2014_08_25_brt_websteravenue_progressreport"
+          ],
+          "evidence_refs": [
+            "2012_10_brt_webster_cac3_meeting_summary#p002_c0012",
+            "2013_02_sbs_webster_bx_cb3#p036_c0003"
+          ],
+          "source_quote": "Where will the Bx55 stop be located?"
+        },
+        "alias": {
+          "record_id": "route_bx55-2012-09-webster",
+          "record_kind": "route",
+          "route_id": "Bx55",
+          "route_label": "Bx55",
+          "route_type_normalized": "local",
+          "service_variant": "local",
+          "borough_normalized": "bronx",
+          "source_ids": [
+            "2012_09_webster_sbs_cac3_workshop"
+          ],
+          "evidence_refs": [
+            "2012_09_webster_sbs_cac3_workshop#p002_c0004"
+          ],
+          "source_quote": "Existing SB Bx 41 and Bx 55 Bus Stop"
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact route_id match, same borough, compatible normalized route/service variant, and no SBS/local/limited/express/subway cross-variant conflict for this pair. Alias was absent from data/identity-overrides/merges.json route aliases and visible identity prep artifacts through identity123; no visible identity124/identity125 prep artifact was found. Pair was absent from route do-not-merge."
+    },
+    {
+      "kind": "route",
+      "global_kind": "route",
+      "canonical_id": "route_5-subway-flatbush",
+      "target_id": "route_5-subway-flatbush",
+      "alias_id": "route_meeting-doc-196866-5-line",
+      "canonical_name": "5 Subway",
+      "alias_name": "5 line",
+      "reason": "Same NYCT subway route identity. Both records use route_id 5 and route_type_normalized subway; the alias is a meeting-document 5 line mention with no conflicting bus or service variant.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "route_5-subway-flatbush",
+          "record_kind": "route",
+          "route_id": "5",
+          "route_type_normalized": "subway",
+          "boroughs_normalized": [
+            "brooklyn",
+            "manhattan",
+            "bronx"
+          ],
+          "source_ids": [
+            "meeting_doc_40161"
+          ],
+          "evidence_refs": [
+            "meeting_doc_40161#p004_c0001"
+          ],
+          "source_quote": "numbers '2' and '5' in red and green circles"
+        },
+        "alias": {
+          "record_id": "route_meeting-doc-196866-5-line",
+          "record_kind": "route",
+          "route_id": "5",
+          "route_name": "5 line",
+          "route_type_normalized": "subway",
+          "mode": "subway",
+          "operator": "NYCT",
+          "source_ids": [
+            "meeting_doc_196866"
+          ],
+          "evidence_refs": [
+            "meeting_doc_196866#p001_c0005",
+            "meeting_doc_196866#p007_c0003"
+          ]
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact route_id match and same subway route type; this does not merge bus local/SBS/LTD/express/subway variants across modes. Alias was absent from data/identity-overrides/merges.json route aliases and visible identity prep artifacts through identity123; no visible identity124/identity125 prep artifact was found. Pair was absent from route do-not-merge."
+    },
+    {
+      "kind": "route",
+      "global_kind": "route",
+      "canonical_id": "route_meeting-doc-152171-l-subway",
+      "target_id": "route_meeting-doc-152171-l-subway",
+      "alias_id": "route_meeting-doc-176411-l-line",
+      "canonical_name": "L Subway Line",
+      "alias_name": "L subway line",
+      "reason": "Same NYCT subway route identity. Both records identify the L route/line and the alias payload states subway mode along 14th Street; the target has the explicit route_type_normalized subway classification.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "route_meeting-doc-152171-l-subway",
+          "record_kind": "route",
+          "route_id": "L",
+          "route_name": "L Subway Line",
+          "route_type_normalized": "subway",
+          "source_ids": [
+            "meeting_doc_152171"
+          ],
+          "evidence_refs": [
+            "meeting_doc_152171#p005_c0006"
+          ],
+          "source_quote": "14 St F/M/L Upgrades"
+        },
+        "alias": {
+          "record_id": "route_meeting-doc-176411-l-line",
+          "record_kind": "route",
+          "route_id": "L",
+          "route": "L",
+          "mode": "subway",
+          "description": "L subway line along 14th Street in Manhattan and through Brooklyn",
+          "source_ids": [
+            "meeting_doc_176411"
+          ],
+          "evidence_refs": [
+            "meeting_doc_176411#p001_c0005",
+            "meeting_doc_176411#p004_c0003"
+          ]
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact route_id match and compatible subway mode/type; no bus variant is being collapsed into subway or vice versa. Alias was absent from data/identity-overrides/merges.json route aliases and visible identity prep artifacts through identity123; no visible identity124/identity125 prep artifact was found. Pair was absent from route do-not-merge."
+    },
+    {
+      "kind": "route",
+      "global_kind": "route",
+      "canonical_id": "route_q35-flatbush-cab1",
+      "target_id": "route_q35-flatbush-cab1",
+      "alias_id": "route_q35-flatbush",
+      "canonical_name": "Q35",
+      "alias_name": "Q35 (MTA Bus)",
+      "reason": "Same Q35 route on Flatbush Avenue connecting Brooklyn/Queens and the Rockaways. Both records use route_id Q35 and matching Brooklyn/Queens borough context; the alias's local/MTA Bus typing is compatible with the target's otherwise untyped route record. The target is kept because existing route override entries already point a Q35 kickoff alias at this Flatbush/CAB1 cluster.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "route_q35-flatbush-cab1",
+          "record_kind": "route",
+          "route_id": "Q35",
+          "boroughs_normalized": [
+            "brooklyn",
+            "queens"
+          ],
+          "description": "Secondary route that operates on Flatbush Ave, providing connections to the Rockaways.",
+          "source_ids": [
+            "flatbush_ave_brooklyn_bus_priority_kick_off_june2022",
+            "flatbush_ave_cab1_nov2022"
+          ],
+          "evidence_refs": [
+            "flatbush_ave_brooklyn_bus_priority_kick_off_june2022#p011_c0002",
+            "flatbush_ave_cab1_nov2022#p016_c0002"
+          ]
+        },
+        "alias": {
+          "record_id": "route_q35-flatbush",
+          "record_kind": "route",
+          "route_id": "Q35",
+          "route_label": "Q35",
+          "route_type_normalized": "local",
+          "service_variant": "local",
+          "operator": "MTA Bus Company",
+          "boroughs_normalized": [
+            "brooklyn",
+            "queens"
+          ],
+          "source_ids": [
+            "flatbush_ave_cb14_jan2023",
+            "flatbush_ave_cb9_sept2022",
+            "meeting_doc_160441"
+          ],
+          "evidence_refs": [
+            "flatbush_ave_cb9_sept2022#p011_c0002",
+            "flatbush_ave_cb14_jan2023#p011_c0002",
+            "meeting_doc_160441#p004_c0004"
+          ],
+          "source_quote": "Secondary routes include B9, B67, B103, Q35, and BM2"
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact route_id match, same Brooklyn/Queens route context, and blank target variant is compatible with alias local typing. No SBS/LTD/express/subway service is being merged. Alias was absent from data/identity-overrides/merges.json route aliases and visible identity prep artifacts through identity123; no visible identity124/identity125 prep artifact was found. Pair was absent from route do-not-merge."
+    },
+    {
+      "kind": "corridor",
+      "global_kind": "corridor",
+      "canonical_id": "corridor_flatlands-ave-brooklyn-b82",
+      "target_id": "corridor_flatlands-ave-brooklyn-b82",
+      "alias_id": "corridor_b82-flatlands-ave-brt-2017",
+      "canonical_name": "Flatlands Avenue (Brooklyn B82)",
+      "alias_name": "Flatlands Avenue",
+      "reason": "Same Brooklyn B82 Flatlands Avenue corridor. Both records have street/corridor_name Flatlands Avenue/Flatlands Ave, Brooklyn borough context, and B82 corridor descriptions; the alias is a one-source December 2017 B82 BRT mention that matches the target's February 2018 B82 Flatlands Avenue corridor record.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "corridor_flatlands-ave-brooklyn-b82",
+          "record_kind": "corridor",
+          "corridor_name": "Flatlands Avenue",
+          "street": "Flatlands Avenue",
+          "borough_normalized": "brooklyn",
+          "description": "B82 corridor along Flatlands Avenue",
+          "source_ids": [
+            "brt_south_brooklyn_b82_feb2018"
+          ],
+          "evidence_refs": [
+            "brt_south_brooklyn_b82_feb2018#p011_c0002"
+          ]
+        },
+        "alias": {
+          "record_id": "corridor_b82-flatlands-ave-brt-2017",
+          "record_kind": "corridor",
+          "corridor_name": "Flatlands Ave",
+          "street": "Flatlands Avenue",
+          "borough_normalized": "brooklyn",
+          "description": "Key corridor segment from E 103 St to Pennsylvania Ave for B82 SBS treatments",
+          "source_ids": [
+            "brt_south_brooklyn_b82_dec2017"
+          ],
+          "evidence_refs": [
+            "brt_south_brooklyn_b82_dec2017#p022_c0006"
+          ]
+        }
+      },
+      "guard_notes": "Corridor merge guard satisfied: same street, same borough, same B82 Flatlands Avenue corridor context, and no conflicting limits. Alias was absent from data/identity-overrides/merges.json corridor aliases and visible identity prep artifacts through identity123; no visible identity124/identity125 prep artifact was found. Pair was absent from corridor do-not-merge."
+    },
+    {
+      "kind": "corridor",
+      "global_kind": "corridor",
+      "canonical_id": "corridor_sutphin-boulevard-2015",
+      "target_id": "corridor_sutphin-boulevard-2015",
+      "alias_id": "corridor_sutphin-blvd-2015",
+      "canonical_name": "Sutphin Boulevard",
+      "alias_name": "Sutphin Blvd corridor",
+      "reason": "Same Queens Sutphin Boulevard corridor in the 2015 Flushing-Jamaica/Q44 planning context. The only naming difference is Boulevard versus Blvd abbreviation; both records are Queens corridor records from adjacent 2015 Flushing-Jamaica sources with no conflicting limits.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "corridor_sutphin-boulevard-2015",
+          "record_kind": "corridor",
+          "corridor_name": "Sutphin Boulevard",
+          "borough_normalized": "queens",
+          "description": "Corridor in Jamaica, Queens where Q44 bus speeds are slow during both morning and evening commute times",
+          "source_ids": [
+            "2015_05_brt_flushing_jamaica_presentation_openhouse"
+          ],
+          "evidence_refs": [
+            "2015_05_brt_flushing_jamaica_presentation_openhouse#p008_c0006"
+          ]
+        },
+        "alias": {
+          "record_id": "corridor_sutphin-blvd-2015",
+          "record_kind": "corridor",
+          "corridor_name": "Sutphin Blvd",
+          "borough_normalized": "queens",
+          "description": "Existing curb regulations survey location near Jamaica - bus stops occupy nearly half of curb space",
+          "source_ids": [
+            "2015_06_09_brt_flushing_jamaica_cb12"
+          ],
+          "evidence_refs": [
+            "2015_06_09_brt_flushing_jamaica_cb12#p015_c0001"
+          ]
+        }
+      },
+      "guard_notes": "Corridor merge guard satisfied: exact same street after Blvd/Boulevard expansion, same Queens/Jamaica context, and no conflicting geography or limits. Alias was absent from data/identity-overrides/merges.json corridor aliases and visible identity prep artifacts through identity123; no visible identity124/identity125 prep artifact was found. Pair was absent from corridor do-not-merge."
+    }
+  ],
+  "guard_summary": {
+    "excluded_existing_overrides": "Inspected data/identity-overrides/merges.json in its durable alias_id -> target_id shape under .aliases.<kind>; route and corridor aliases already present there were excluded.",
+    "excluded_prior_batches": "Inspected visible data/review_notes/codex-identity-batch*-prep.json artifacts. Visible prep files currently run through identity123; rg found no visible identity124 or identity125 prep artifact by filename/content search. All proposed alias ids were checked absent from visible prior prep aliases/proposed_aliases.",
+    "do_not_merge": "Checked data/identity-overrides/do-not-merge.json for proposed route/corridor pairs. The tempting M15 Limited pair route_m15-limited-2010-06-09 -> route_m15-local-limited was omitted because do-not-merge explicitly says route_m15-local-limited is a bundled/compound M15 local/limited reference and must not fold into a single variant.",
+    "route_guard": "Kept only exact route_id matches with compatible service variant/type. Did not merge local/SBS/LTD/express/subway variants across conflicting service identities.",
+    "corridor_guard": "Kept only same-street/same-borough corridor records with no conflicting limits, boroughs, phase-specific identity, or geography."
+  },
+  "command_evidence": [
+    {
+      "command": "rg --files data/identity-overrides data/review_notes data/canonical wiki 2>/dev/null | sed -n '1,240p'",
+      "purpose": "Located override artifacts, visible identity prep notes, and route/corridor canonical JSONL files."
+    },
+    {
+      "command": "rg -n 'identity-batch12[4-5]|batch124|batch125|identity124|identity125' data/review_notes LOG.md data/identity-overrides 2>/dev/null",
+      "purpose": "Confirmed no visible identity124/identity125 prep artifact or reference in the inspected paths."
+    },
+    {
+      "command": "jq '{version, alias_count:(.aliases|keys|length), sample:(.aliases|to_entries[0:12])}' data/identity-overrides/merges.json",
+      "purpose": "Confirmed merges.json uses per-kind alias_id -> target_id maps under .aliases."
+    },
+    {
+      "command": "node read-only grouping over data/canonical/routes.jsonl and data/canonical/corridors.jsonl with exclusions from merges.json and codex-identity-batch*-prep.json",
+      "purpose": "Found remaining route/corridor same-identity candidates after excluding already applied/prepared aliases."
+    },
+    {
+      "command": "jq '.pairs.corridor, .pairs.route' data/identity-overrides/do-not-merge.json | rg -n 'flatlands|sutphin|bx55|m15|5-line|5-subway|196866|route_m15-local-limited|route_m15-limited-2010-06-09|corridor_b82-flatlands|corridor_flatlands|corridor_sutphin'",
+      "purpose": "Checked proposed pairs and nearby candidates against explicit do-not-merge guards; M15 was excluded."
+    },
+    {
+      "command": "jq record extraction for selected route/corridor ids from data/canonical/routes.jsonl and data/canonical/corridors.jsonl",
+      "purpose": "Captured route_id, service variant/type, borough/geography, source_ids, and evidence_refs used in each proposal."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema-propose",
+    "ontology-normalize-run",
+    "ingest/write with --profile/provider",
+    "materialize",
+    "validate",
+    "export-jsonl",
+    "DB publish/repair",
+    "provider-backed or external LLM commands"
+  ]
+}

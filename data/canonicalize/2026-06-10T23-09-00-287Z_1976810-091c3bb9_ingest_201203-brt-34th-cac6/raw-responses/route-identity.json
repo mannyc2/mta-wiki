@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T23-09-00-287Z_1976810-091c3bb9_ingest_201203-brt-34th-cac6",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T03:13:30.129Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "m34-sbs-already-canonical",
+        "local_observation_id": "route_201203_brt_34th_cac6_m34",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id route_m34-sbs, the canonical registry record for M34 Select Bus Service on 34th Street, Manhattan. Payload fields (route_id=M34, route_type=Select Bus Service, borough=Manhattan, service_variant=sbs) match exactly. The nearest other M34 records (route_m34-local-*) are local variants, not SBS, so no link to a different record is warranted. Per policy, when the best match is the observation's own base_record_id the decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "201203_brt_34th_cac6",
+            "block_id": "p005_c0002",
+            "source_quote": "Will be implemented on M34, with expansion citywide"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-11-34-022Z_2111393-792b8497_canonicalize_2026-06-10t23-09-00-287z-1976810-091c3bb9-ingest-201203-brt-34th-cac6-route-identity"
+}

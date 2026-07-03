@@ -1,0 +1,36 @@
+{"decision_id":"relate-offset-bus-lanes-webster","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p018_c0002"]}
+{"decision_id":"relate-tsp-webster","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p018_c0002"]}
+{"decision_id":"relate-bus-bulbs-webster","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p015_c0002","2012_09_webster_sbs_cac3#p016_c0003"]}
+{"decision_id":"relate-ped-safety-webster","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p015_c0002","2012_09_webster_sbs_cac3#p016_c0003","2012_09_webster_sbs_cac3#p018_c0002"]}
+{"decision_id":"relate-low-floor-webster","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p018_c0002"]}
+{"decision_id":"relate-branding-webster","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p018_c0002"]}
+{"decision_id":"rel-01-metric-bx41-daily-ridership","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p007_c0002"]}
+{"decision_id":"rel-02-metric-corridor-length","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p007_c0002"]}
+{"decision_id":"rel-03-metric-deliveries-major-concern","verdict":"fail","failure_reason":"Cited block p022_c0003 raw text ('Concern Level Percentage A major concern 52% A concern 23% Not a concern 23%') does not mention 'deliveries', 'Webster Avenue', 'Bx41', or 'SBS'. The category 'Deliveries' is in a separate block (p022_c0002, section-header) not cited as evidence. The connection to the Webster Avenue SBS project relies entirely on co-occurrence in the source document, which is not a relation per review rules.","evidence_checked":["2012_09_webster_sbs_cac3#p022_c0003"]}
+{"decision_id":"rel-04-metric-deliveries-concern","verdict":"fail","failure_reason":"Same block p022_c0003 as rel-03. The raw text does not mention 'deliveries', 'Webster Avenue', 'Bx41', or 'SBS'. The category label is in a separate uncited block. Connection to the project relies on document co-occurrence only.","evidence_checked":["2012_09_webster_sbs_cac3#p022_c0003"]}
+{"decision_id":"rel-05-metric-deliveries-not-concern","verdict":"fail","failure_reason":"Same block p022_c0003 as rel-03/rel-04. The raw text does not mention 'deliveries', 'Webster Avenue', 'Bx41', or 'SBS'. The category label is in a separate uncited block. Connection to the project relies on document co-occurrence only.","evidence_checked":["2012_09_webster_sbs_cac3#p022_c0003"]}
+{"decision_id":"rel-06-metric-employee-parking-major-concern","verdict":"fail","failure_reason":"Cited block p022_c0005 raw text ('Concern Level Percentage A major concern 11% A concern 20% Not a concern 68%') does not mention 'employee parking', 'Webster Avenue', 'Bx41', or 'SBS'. The category 'Employee parking' is in a separate block (p022_c0004, section-header) not cited as evidence. Connection to the Webster Avenue SBS project relies entirely on document co-occurrence.","evidence_checked":["2012_09_webster_sbs_cac3#p022_c0005"]}
+{"decision_id":"rel-07-metric-employee-parking-concern","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p022_c0005"]}
+{"decision_id":"rel-08-metric-employee-parking-not-concern","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p022_c0005"]}
+{"decision_id":"rel-09-metric-customer-parking-major-concern","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p022_c0007"]}
+{"decision_id":"rel-10-metric-customer-parking-concern","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p022_c0007"]}
+{"decision_id":"rel-11-metric-customer-parking-not-concern","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p022_c0007"]}
+{"decision_id":"rel-12-metric-deliveries-less-than-1","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p023_c0004"]}
+{"decision_id":"rel-13-metric-deliveries-1-to-2","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p023_c0004"]}
+{"decision_id":"rel-14-metric-deliveries-3-or-more","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p023_c0004"]}
+{"decision_id":"rel-15-metric-delivery-duration-under-5min","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p024_c0004"]}
+{"decision_id":"rel-16-metric-delivery-duration-5-15min","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p024_c0004"]}
+{"decision_id":"rel-17-metric-delivery-duration-15-30min","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p024_c0004"]}
+{"decision_id":"rel-18-metric-delivery-duration-30-60min","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p024_c0004"]}
+{"decision_id":"rel-19-claim-corridor-demographics","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p007_c0002"]}
+{"decision_id":"rel-20-claim-community-priorities","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p011_c0005"]}
+{"decision_id":"rel-21-claim-business-outreach","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p021_c0002"]}
+{"decision_id":"rel-22-claim-business-curb-access","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p022_c0008"]}
+{"decision_id":"rel-23-claim-delivery-frequency","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p023_c0002"]}
+{"decision_id":"rel-24-claim-delivery-parking-duration","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p024_c0002"]}
+{"decision_id":"rel-25-event-cac-meeting-3","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p001_c0003"]}
+{"decision_id":"rel-26-event-cac-meeting-1","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p003_c0007"]}
+{"decision_id":"rel-27-event-cac-meeting-2","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p003_c0009"]}
+{"decision_id":"rel-28-event-public-open-house-1","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p011_c0002"]}
+{"decision_id":"rel-29-event-cac-meeting-4","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p025_c0005"]}
+{"decision_id":"rel-30-event-public-open-house-2","verdict":"pass","evidence_checked":["2012_09_webster_sbs_cac3#p025_c0005"]}

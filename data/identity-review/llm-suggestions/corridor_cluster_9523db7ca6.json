@@ -1,0 +1,41 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:38:07.381Z",
+  "packet_path": "data/identity-review/packets/corridor_cluster_9523db7ca6.md",
+  "cluster_id": "corridor_cluster_9523db7ca6",
+  "kind": "corridor",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "corridor_cluster_9523db7ca6",
+    "kind": "corridor",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "corridor_hylan-boulevard-brt",
+          "corridor_stationary-staten-island"
+        ],
+        "reason": "Strong identity fields differ: corridor_hylan-boulevard-brt has specific limits (Lincoln Avenue to Steuben Street) and is a single BRT corridor; corridor_stationary-staten-island has no limits and represents a set of stationary camera corridors in Staten Island. Per per-kind rules for corridors, identity = street(s) + borough + limits. The second record lacks limits and its name and description indicate a grouping, not a single scoped corridor, so test 1 (contradiction) applies."
+      }
+    ],
+    "weak_aliases": [],
+    "missing_fields": [
+      {
+        "record_id": "corridor_stationary-staten-island",
+        "fields": [
+          "limits"
+        ]
+      }
+    ],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "The two records share a street (Hylan Boulevard) and borough (Staten Island), but the first is a precisely bounded BRT corridor (Lincoln Ave to Steuben St) while the second is an aggregate of multiple corridors with no limits. Per the identity merge canon, a corridor's identity hinges on street+borough+limits; the second record lacks limits and its name ('Staten Island stationary camera corridors') indicates it is not a single scoped corridor. Hence test 1 forces do_not_merge."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-37-54-141Z_1282984-92695512_identity-review-run_corridor-cluster-9523db7ca6",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-37-54-141Z_2026-06-23T14-37-54-141Z_1282984-92695512_identity-review-run_corridor-cluster-9523db7ca6.jsonl"
+}

@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-06-10T17-48-04-702Z_1496766-6882ad6d_ingest_2010-03-10-brt-1st2nd-cb3",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-10T19:38:49.377Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "first-second-ave-sbs-new",
+        "local_observation_id": "project_first_second_ave_sbs",
+        "decision": "new",
+        "rationale": "The observation's base_record_id (project_first-second-ave-sbs) already exists in the registry and already includes source 2010_03_10_brt_1st2nd_cb3 among its source_ids. The observation maps to the same real-world project: First Avenue/Second Avenue SBS, 8.5 miles from South Ferry to 125th Street, served by M15. Per rules, when the closest match IS the observation's own base_record_id, the decision is 'new' — the observation already resolves to that id and no link to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_03_10_brt_1st2nd_cb3",
+            "block_id": "p001_c0001",
+            "source_quote": "First Avenue/Second Avenue Select Bus Service"
+          },
+          {
+            "source_id": "2010_03_10_brt_1st2nd_cb3",
+            "block_id": "p003_c0004",
+            "source_quote": "8.5 miles from South Ferry to 125 th Street"
+          },
+          {
+            "source_id": "2010_03_10_brt_1st2nd_cb3",
+            "block_id": "p003_c0005",
+            "source_quote": "Currently served by M15 bus route"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-35-35-833Z_1641434-62d20920_canonicalize_2026-06-10t17-48-04-702z-1496766-6882ad6d-ingest-2010-03-10-brt-1st2nd-cb3-project-identity"
+}

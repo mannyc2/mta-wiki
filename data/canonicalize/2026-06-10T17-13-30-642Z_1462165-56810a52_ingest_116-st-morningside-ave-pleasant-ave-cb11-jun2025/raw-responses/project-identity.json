@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T17-13-30-642Z_1462165-56810a52_ingest_116-st-morningside-ave-pleasant-ave-cb11-jun2025",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-21T15:04:39.282Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d116th-bus-ped-priority-confirmed",
+        "local_observation_id": "project_116th_st_bus_pedestrian_priority_cb11_jun2025",
+        "decision": "new",
+        "rationale": "Observation already correctly resolves to base_record_id 'project_116th-st-bus-pedestrian-priority'. The registry card has identical project name, matching source_id (116_st_morningside_ave_pleasant_ave_cb11_jun2025), consistent Manhattan borough, and the observation's record_id appears as an alias. Closest match IS own base_record_id — per rules, decision is 'new' (already resolved). Other 116th-Street records (study, review) are distinct phases, not this active bus/pedestrian priority project.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p001_c0001",
+            "source_quote": "116 th Street Bus and Pedestrian Priority Project – Updated Proposal"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-21T15-03-56-518Z_2836603-c4d712e2_canonicalize_2026-06-10t17-13-30-642z-1462165-56810a52-ingest-116-st-morningside-ave-pleasant-ave-cb11-jun2025-project-identity"
+}

@@ -1,0 +1,16 @@
+{
+  "run_id": "2026-06-10T17-13-30-775Z_1462165-0122f26b_ingest_116-st-morningside-ave-pleasant-ave-cb11-mar2025",
+  "generated_at": "2026-06-10T17:41:41.776Z",
+  "dry_run": false,
+  "profile_name": "deepseek-pro",
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "reviewed_decision_count": 0,
+  "pass_count": 0,
+  "fail_count": 0,
+  "unsure_count": 0,
+  "paths": {
+    "verdicts_jsonl": "data/canonicalize/2026-06-10T17-13-30-775Z_1462165-0122f26b_ingest_116-st-morningside-ave-pleasant-ave-cb11-mar2025/verdicts.jsonl",
+    "manifest": "data/canonicalize/2026-06-10T17-13-30-775Z_1462165-0122f26b_ingest_116-st-morningside-ave-pleasant-ave-cb11-mar2025/review-manifest.json"
+  }
+}

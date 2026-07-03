@@ -1,0 +1,491 @@
+{
+  "batch_id": "codex-identity-batch088",
+  "prepared_count": 10,
+  "all_pass": true,
+  "proposed_aliases": [
+    {
+      "kind": "entity",
+      "alias_id": "entity_34th-st-cac-20100921",
+      "target_id": "entity_community-advisory-committee-34th-transitway",
+      "reason": "duplicate_global_identity: both records describe the same 34th Street Transitway Community Advisory Committee / CAC. The alias record is Meeting #2 for the 34th Street Transitway CAC, while the target is Meeting #1 for the same committee and project.",
+      "evidence": [
+        {
+          "record_id": "entity_34th-st-cac-20100921",
+          "display_name": "34th Street Transitway Community Advisory Committee (CAC)",
+          "entity_name": "34th Street Transitway Community Advisory Committee",
+          "entity_type": "advisory committee",
+          "source_ids": [
+            "20100921_34th_cac_minutes"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "20100921_34th_cac_minutes",
+              "block_id": "p001_c0001",
+              "evidence_id": "20100921_34th_cac_minutes#p001_c0001",
+              "source_quote": "34th Street Transitway"
+            },
+            {
+              "source_id": "20100921_34th_cac_minutes",
+              "block_id": "p001_c0002",
+              "evidence_id": "20100921_34th_cac_minutes#p001_c0002",
+              "source_quote": "Community Advisory Committee Meeting #2 Summary"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_community-advisory-committee-34th-transitway",
+          "display_name": "34th Street Transitway Community Advisory Committee",
+          "entity_name": "34th Street Transitway Community Advisory Committee",
+          "entity_type": "committee",
+          "source_ids": [
+            "20100615_34th_transitway_cac_mtg_summary"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "20100615_34th_transitway_cac_mtg_summary",
+              "block_id": "p001_c0001",
+              "evidence_id": "20100615_34th_transitway_cac_mtg_summary#p001_c0001",
+              "source_quote": "34 th Street Transitway"
+            },
+            {
+              "source_id": "20100615_34th_transitway_cac_mtg_summary",
+              "block_id": "p001_c0002",
+              "evidence_id": "20100615_34th_transitway_cac_mtg_summary#p001_c0002",
+              "source_quote": "Community Advisory Committee Meeting #1 Summary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_apta-meeting-jun2023",
+      "target_id": "entity_meeting-doc-113886-apta",
+      "reason": "duplicate_global_identity: both records identify the American Public Transportation Association with acronym APTA. The sources use the expanded name and acronym for the same transit industry association.",
+      "evidence": [
+        {
+          "record_id": "entity_apta-meeting-jun2023",
+          "display_name": "American Public Transportation Association (APTA)",
+          "entity_name": "American Public Transportation Association",
+          "entity_type": "association",
+          "source_ids": [
+            "meeting_doc_115141"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_115141",
+              "block_id": "p005_c0004",
+              "evidence_id": "meeting_doc_115141#p005_c0004",
+              "source_quote": "the American Public Transportation Association (\"APTA\") Rail Conference in Pittsburgh"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_meeting-doc-113886-apta",
+          "display_name": "American Public Transportation Association",
+          "entity_name": "American Public Transportation Association",
+          "entity_type": "association",
+          "source_ids": [
+            "meeting_doc_113886"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_113886",
+              "block_id": "p008_c0006",
+              "evidence_id": "meeting_doc_113886#p008_c0006",
+              "source_quote": "American Public Transportation Association (APTA) Rail Conference in Pittsburgh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-98256-amtrak",
+      "target_id": "entity_amtrak",
+      "reason": "duplicate_global_identity: the alias record names Amtrak as a railroad interoperability partner, and the target record is the canonical Amtrak / National Railroad Passenger Corporation entity. The target evidence explicitly equates National Railroad Passenger Corporation with Amtrak.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-98256-amtrak",
+          "display_name": "Amtrak",
+          "entity_name": "Amtrak",
+          "entity_type": "railroad",
+          "source_ids": [
+            "meeting_doc_98256"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_98256",
+              "block_id": "p002_c0006",
+              "evidence_id": "meeting_doc_98256#p002_c0006",
+              "source_quote": "Continue Interoperability with Amtrak from Harold Interlocking through Penn Station."
+            }
+          ]
+        },
+        {
+          "record_id": "entity_amtrak",
+          "display_name": "National Railroad Passenger Corporation (Amtrak)",
+          "entity_name": "Amtrak",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_115181"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_115181",
+              "block_id": "p001_c0008",
+              "evidence_id": "meeting_doc_115181#p001_c0008",
+              "source_quote": "GRANTOR: National Railroad Passenger Corporation (\"Amtrak\")"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-79496-cbre",
+      "target_id": "entity_cbre",
+      "reason": "duplicate_global_identity: both records identify CBRE as the MTA real estate/leasing broker or agent. The differing descriptions are roles in separate real-estate contexts, not separate entities.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-79496-cbre",
+          "display_name": "CBRE",
+          "entity_name": "CBRE",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_79496"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_79496",
+              "block_id": "p066_c0009",
+              "evidence_id": "meeting_doc_79496#p066_c0009",
+              "source_quote": "MTA's Leasing Agent ( currently CBRE )"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_cbre",
+          "display_name": "CBRE",
+          "entity_name": "CBRE",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_133406"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_133406",
+              "block_id": "p004_c0011",
+              "evidence_id": "meeting_doc_133406#p004_c0011",
+              "source_quote": "CBRE, the MTA's real estate broker"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-201636-cbd-tolling",
+      "target_id": "entity_cbdtp-192541",
+      "reason": "duplicate_global_identity: both records name the Central Business District Tolling Program. The target includes the CBDTP acronym; the alias is a later financial-plan statement for the same program.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-201636-cbd-tolling",
+          "display_name": "Central Business District Tolling Program",
+          "entity_name": "Central Business District Tolling Program",
+          "entity_type": "program",
+          "source_ids": [
+            "meeting_doc_201636"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_201636",
+              "block_id": "p011_c0001",
+              "evidence_id": "meeting_doc_201636#p011_c0001",
+              "source_quote": "CENTRAL BUSINESS DISTRICT TOLLING PROGRAM FEBRUARY FINANCIAL PLAN - 2025 ADOPTED BUDGET"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_cbdtp-192541",
+          "display_name": "Central Business District Tolling Program",
+          "entity_name": "Central Business District Tolling Program",
+          "entity_type": "program",
+          "source_ids": [
+            "meeting_doc_192541"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_192541",
+              "block_id": "p004_c0002",
+              "evidence_id": "meeting_doc_192541#p004_c0002",
+              "source_quote": "Central Business District Tolling Program (CBDTP)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting33241-el-sol-jv",
+      "target_id": "entity_el-sol-contracting",
+      "reason": "duplicate_global_identity: both records use the exact contractor legal/JV name El Sol Contracting/ES II Enterprises JV. The source contexts are contract references for the same named contractor.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting33241-el-sol-jv",
+          "display_name": "El Sol Contracting/ES II Enterprises JV",
+          "entity_name": "El Sol Contracting/ES II Enterprises JV",
+          "entity_type": "contractor",
+          "source_ids": [
+            "meeting_doc_33241"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_33241",
+              "block_id": "p055_c0005",
+              "evidence_id": "meeting_doc_33241#p055_c0005",
+              "source_quote": "El Sol Contracting/ES II Enterprises JV Contract No. VN-X4"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_el-sol-contracting",
+          "display_name": "El Sol Contracting/ES II Enterprises JV",
+          "entity_name": "El Sol Contracting/ES II Enterprises JV",
+          "entity_type": "contractor",
+          "source_ids": [
+            "meeting_doc_98326"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_98326",
+              "block_id": "p068_c0010",
+              "evidence_id": "meeting_doc_98326#p068_c0010",
+              "source_quote": "Vendor Name El Sol Contracting/ES II Enterprises JV"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_ellen-kirwin-meeting-doc-157721",
+      "target_id": "entity_ellen-kirwin-matthew-kirwin",
+      "reason": "duplicate_global_identity: both records identify the same licensee pair, Ellen Kirwin and Matthew Kirwin, in the same Southampton former-station license context. The alias and target differ only by source document.",
+      "evidence": [
+        {
+          "record_id": "entity_ellen-kirwin-meeting-doc-157721",
+          "display_name": "Ellen Kirwin and Matthew Kirwin",
+          "entity_name": "Ellen Kirwin and Matthew Kirwin",
+          "entity_type": "person",
+          "source_ids": [
+            "meeting_doc_157721"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_157721",
+              "block_id": "p001_c0003",
+              "evidence_id": "meeting_doc_157721#p001_c0003",
+              "source_quote": "License of land with Ellen Kirwin and Matt Kirwin for a residential use in Southampton, NY Ellen Kirwin and Matthew Kirwin"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_ellen-kirwin-matthew-kirwin",
+          "display_name": "Ellen Kirwin and Matthew Kirwin",
+          "entity_name": "Ellen Kirwin and Matthew Kirwin",
+          "entity_type": "person",
+          "source_ids": [
+            "meeting_doc_157711"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_157711",
+              "block_id": "p006_c0007",
+              "evidence_id": "meeting_doc_157711#p006_c0007",
+              "source_quote": "LICENSEE: Ellen Kirwin and Matthew Kirwin LOCATION: Former Shinnecock Hills Station, 100 Hills Station Rd, Southampton"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-171021-gotham-property-acquisition",
+      "target_id": "entity_meeting-doc-170991-gotham-property",
+      "reason": "duplicate_global_identity: both records identify Gotham Property Acquisition LLC as the same named entity tied to the Westbury Station transit-oriented development designation. Entity type wording differs only as corporation vs organization.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-171021-gotham-property-acquisition",
+          "display_name": "Gotham Property Acquisition LLC",
+          "entity_name": "Gotham Property Acquisition LLC",
+          "entity_type": "organization",
+          "source_ids": [
+            "meeting_doc_171021"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_171021",
+              "block_id": "p001_c0003",
+              "evidence_id": "meeting_doc_171021#p001_c0003",
+              "source_quote": "Gotham Property Acquisition LLC, a Delaware limited liability company, or another to be formed affiliate of Gotham Organization, Inc."
+            }
+          ]
+        },
+        {
+          "record_id": "entity_meeting-doc-170991-gotham-property",
+          "display_name": "Gotham Property Acquisition LLC",
+          "entity_name": "Gotham Property Acquisition LLC",
+          "entity_type": "corporation",
+          "source_ids": [
+            "meeting_doc_170991"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_170991",
+              "block_id": "p009_c0008",
+              "evidence_id": "meeting_doc_170991#p009_c0008",
+              "source_quote": "Gotham Property Acquisition LLC, a Delaware limited liability company, or another to be formed affiliate of Gotham Organization, Inc. (\"Gotham\")"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-100361-hctf",
+      "target_id": "entity_hate-crime-task-force-transit-bureau",
+      "reason": "duplicate_global_identity: both records identify the Hate Crime Task Force Transit Bureau / HCTF statistical summary entity. The target expands the same name; the alias includes the HCTF acronym.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-100361-hctf",
+          "display_name": "Hate Crime Task Force Transit Bureau HCTF",
+          "entity_name": "Hate Crime Task Force Transit Bureau",
+          "entity_type": "task force",
+          "source_ids": [
+            "meeting_doc_100361"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_100361",
+              "block_id": "p005_c0001",
+              "evidence_id": "meeting_doc_100361#p005_c0001",
+              "source_quote": "Hate Crime Task Force Transit Bureau HCTF Statistical Data (As of 10/30/2022)"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_hate-crime-task-force-transit-bureau",
+          "display_name": "Hate Crime Task Force Transit Bureau",
+          "entity_name": "Hate Crime Task Force Transit Bureau",
+          "entity_type": "task force",
+          "source_ids": [
+            "meeting_doc_105916"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_105916",
+              "block_id": "p004_c0001",
+              "evidence_id": "meeting_doc_105916#p004_c0001",
+              "source_quote": "Hate Crime Task Force Transit Bureau Statistical Summary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_ibtta-oct2025",
+      "target_id": "entity_bt-kpi-oct2025-ibtta",
+      "reason": "duplicate_global_identity: both records identify the International Bridge, Tunnel and Turnpike Association with acronym IBTTA. The sources refer to the same award-granting organization.",
+      "evidence": [
+        {
+          "record_id": "entity_ibtta-oct2025",
+          "display_name": "International Bridge, Tunnel and Turnpike Association",
+          "entity_name": "International Bridge, Tunnel and Turnpike Association",
+          "entity_type": "organization",
+          "source_ids": [
+            "meeting_doc_192201"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_192201",
+              "block_id": "p003_c0014",
+              "evidence_id": "meeting_doc_192201#p003_c0014",
+              "source_quote": "International Bridge, Tunnel and Turnpike Association (\"IBTTA\")"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_bt-kpi-oct2025-ibtta",
+          "display_name": "International Bridge, Tunnel and Turnpike Association (IBTTA)",
+          "entity_name": "International Bridge, Tunnel and Turnpike Association",
+          "entity_type": "organization",
+          "source_ids": [
+            "meeting_doc_189786"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_189786",
+              "block_id": "p005_c0001",
+              "evidence_id": "meeting_doc_189786#p005_c0001",
+              "source_quote": "International Bridge, Tunnel and Turnpike Association (IBTTA)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guard_checks": {
+    "mutation_scope": "prep artifact only; no canonical JSONL, canonical.db, identity-overrides, LOG.md, manifest, wiki, materialized, generated-output, submission, or source files intentionally changed",
+    "candidate_limit": {
+      "max_allowed": 10,
+      "proposed_count": 10,
+      "pass": true
+    },
+    "entity_only_scope": {
+      "allowed_kinds": [
+        "entity"
+      ],
+      "proposed_kinds": [
+        "entity"
+      ],
+      "non_entity_records_included": false,
+      "pass": true
+    },
+    "override_shape": {
+      "intended_apply_path": "data/identity-overrides/merges.json aliases.entity",
+      "flat_aliases": false,
+      "pass": true
+    },
+    "existing_alias_conflicts": {
+      "checked_with": "sqlite3 data/canonical.db identity_aliases plus jq data/identity-overrides/merges.json aliases.entity for proposed alias ids",
+      "conflicts": [],
+      "pass": true
+    },
+    "do_not_merge_conflicts": {
+      "checked_with": "sqlite3 data/canonical.db do_not_merge for exact pairs plus jq data/identity-overrides/do-not-merge.json pairs.entity for proposed alias ids",
+      "conflicts": [],
+      "pass": true
+    },
+    "prior_prep_conflicts": {
+      "checked_with": "jq over data/review_notes/codex-identity-batch0*-prep.json proposed_aliases through identity087",
+      "conflicts": [],
+      "pass": true
+    },
+    "record_existence": {
+      "checked_with": "sqlite3 data/canonical.db records for all alias_id and target_id values; all are record_kind entity",
+      "missing_record_ids": [],
+      "wrong_kind_record_ids": [],
+      "pass": true
+    },
+    "candidate_basis": {
+      "method": "deterministic local inspection of canonical.db records, entities, evidence_refs, identity_aliases, do_not_merge, identity-overrides JSON, prior prep artifacts, and raw source evidence blocks",
+      "external_or_provider_llm_used": false,
+      "canonicalize_dedup_identity_review_write_ask_schema_ontology_commands_run": false,
+      "materialize_export_jsonl_validate_run": false,
+      "profile_or_provider_commands_run": false,
+      "pass": true
+    }
+  }
+}

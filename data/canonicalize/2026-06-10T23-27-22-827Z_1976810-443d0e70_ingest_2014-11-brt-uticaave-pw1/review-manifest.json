@@ -1,0 +1,16 @@
+{
+  "run_id": "2026-06-10T23-27-22-827Z_1976810-443d0e70_ingest_2014-11-brt-uticaave-pw1",
+  "generated_at": "2026-06-11T04:05:18.886Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "reviewed_decision_count": 0,
+  "pass_count": 0,
+  "fail_count": 0,
+  "unsure_count": 0,
+  "paths": {
+    "verdicts_jsonl": "data/canonicalize/2026-06-10T23-27-22-827Z_1976810-443d0e70_ingest_2014-11-brt-uticaave-pw1/verdicts.jsonl",
+    "manifest": "data/canonicalize/2026-06-10T23-27-22-827Z_1976810-443d0e70_ingest_2014-11-brt-uticaave-pw1/review-manifest.json"
+  }
+}

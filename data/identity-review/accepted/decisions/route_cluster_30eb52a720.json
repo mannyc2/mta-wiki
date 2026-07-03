@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "route_cluster_30eb52a720",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_30eb52a720.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_30eb52a720.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "route_bx6-local",
+        "route_bx6-sbs"
+      ],
+      "reason": "Contradiction test: strong identity field 'service_variant' differs (local vs sbs). Per route rule, different service variants never merge."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "The two records share base route BX6 but have explicit service_variant values 'local' and 'sbs', which are distinct. Per the Identity Merge Canon, different service variants never merge. The relation_context shows a 'connects_to' relation between them, confirming they are related but distinct objects. All internal aliases within each record are lifecycle/source variants and belong to their respective canonical records. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

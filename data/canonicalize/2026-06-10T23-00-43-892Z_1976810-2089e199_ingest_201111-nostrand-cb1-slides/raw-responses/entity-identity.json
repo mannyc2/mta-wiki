@@ -1,0 +1,59 @@
+{
+  "run_id": "2026-06-10T23-00-43-892Z_1976810-2089e199_ingest_201111-nostrand-cb1-slides",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:12:37.224Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "d001-mta-nyct-match",
+        "local_observation_id": "entity_nyct_201111_nostrand_cb1",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-nyct matches existing registry record entity_mta-nyct (entity_name: 'MTA New York City Transit', entity_type: 'agency'). The observation's own base_record_id is the closest match, so this is new — never link to your own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p001_c0001",
+            "source_quote": "New York City Transit"
+          },
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p008_c0004",
+            "source_quote": "MTA New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "d002-nyc-dot-match",
+        "local_observation_id": "entity_nyc_dot_201111_nostrand_cb1",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot matches existing registry record entity_nyc-dot (entity_name: 'New York City Department of Transportation', entity_type: 'agency'). The observation's own base_record_id is the closest match, so this is new — never link to your own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p008_c0005",
+            "source_quote": "NEW YORK CITY DOT"
+          }
+        ]
+      },
+      {
+        "decision_id": "d003-cb1-brooklyn-match",
+        "local_observation_id": "entity_community_board_1_brooklyn_201111",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_brooklyn-community-board-1 matches existing registry record entity_brooklyn-community-board-1 (entity_name: 'Brooklyn Community Board 1', entity_type: 'community_board'). The observation's own base_record_id is the closest match, so this is new — never link to your own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p001_c0002",
+            "source_quote": "Community Board 1"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-11-52-714Z_2111393-63ad2d0b_canonicalize_2026-06-10t23-00-43-892z-1976810-2089e199-ingest-201111-nostrand-cb1-slides-entity-identity"
+}

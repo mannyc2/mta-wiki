@@ -1,0 +1,46 @@
+{
+  "run_id": "2026-06-10T22-56-13-349Z_1976810-7111a634_ingest_201109-brt-hylan-proposed",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T01:40:52.871Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "hylan-blvd-2011-new",
+        "local_observation_id": "corridor_hylan_blvd_hylan_2011",
+        "decision": "new",
+        "rationale": "Observation base_record_id corridor_hylan-boulevard-brt already exists in the registry with the same source_id (201109_brt_hylan_proposed), matching corridor name Hylan Boulevard, Staten Island borough, and covering Hylan Boulevard BRT study. The observation resolves to its own existing registry record.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_proposed",
+            "block_id": "p001_c0001",
+            "source_quote": "Proposed Improvements from Steuben Street to Midland Avenue"
+          },
+          {
+            "source_id": "201109_brt_hylan_proposed",
+            "block_id": "p001_c0012",
+            "source_quote": "Hylan Boulevard Transportation Improvement Study"
+          }
+        ]
+      },
+      {
+        "decision_id": "richmond-ave-2011-new",
+        "local_observation_id": "corridor_richmond_ave_hylan_2011",
+        "decision": "new",
+        "rationale": "Observation base_record_id corridor_richmond-ave-hylan-2011 already exists in the registry with the same source_id (201109_brt_hylan_proposed), matching corridor name Richmond Avenue, Staten Island borough, and description 'Richmond Avenue corridor from Hylan Boulevard to SI Mall'. The observation resolves to its own existing registry record.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_proposed",
+            "block_id": "p007_c0001",
+            "source_quote": "Proposed Improvements on Richmond Avenue"
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-40-08-697Z_2111393-d8e82b0c_canonicalize_2026-06-10t22-56-13-349z-1976810-7111a634-ingest-201109-brt-hylan-proposed-corridor-identity"
+}

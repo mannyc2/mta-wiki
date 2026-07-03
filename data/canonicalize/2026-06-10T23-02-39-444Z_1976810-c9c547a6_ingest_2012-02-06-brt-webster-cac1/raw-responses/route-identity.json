@@ -1,0 +1,51 @@
+{
+  "run_id": "2026-06-10T23-02-39-444Z_1976810-c9c547a6_ingest_2012-02-06-brt-webster-cac1",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T02:23:51.136Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "route-bx41-webster-cac1-new",
+        "local_observation_id": "route_bx41_webster_cac1",
+        "decision": "new",
+        "rationale": "Observation already resolves to route_webster-ave-sbs (Bx41 SBS). Registry card already includes source 2012_02_06_brt_webster_cac1 and alias route_bx41-webster-cac1. The mention of the existing Bx41 route is contextual for the SBS presentation — no different service variant record should be linked.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p013_c0002",
+            "source_quote": "proposed Webster Avenue SBS Corridor (Bx 41 route)"
+          },
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p013_c0003",
+            "source_quote": "■ Based on the existing Bx41 route"
+          }
+        ]
+      },
+      {
+        "decision_id": "route-bx12-sbs-webster-cac1-new",
+        "local_observation_id": "route_bx12_sbs_webster_cac1",
+        "decision": "new",
+        "rationale": "Observation already resolves to route_bx12-plus (Bx12 SBS). Registry card already includes source 2012_02_06_brt_webster_cac1 and alias route_bx12-sbs-webster-cac1. The observation describes Bx12 Select Bus Service on Fordham Road-Pelham Parkway — correctly assigned.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p006_c0004",
+            "source_quote": "Select Bus Service (SBS) - New York City's version of BRT, first used on the Fordham Road-Pelham Parkway Bx12 SBS route"
+          },
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p009_c0001",
+            "source_quote": "Bx12 SBS | Fordham Rd/Pelham Pkwy"
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-21-29-151Z_2111393-f77de9a8_canonicalize_2026-06-10t23-02-39-444z-1976810-c9c547a6-ingest-2012-02-06-brt-webster-cac1-route-identity"
+}

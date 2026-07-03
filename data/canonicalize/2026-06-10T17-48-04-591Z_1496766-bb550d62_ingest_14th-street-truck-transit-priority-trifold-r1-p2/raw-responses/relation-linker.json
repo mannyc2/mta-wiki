@@ -1,0 +1,12 @@
+{
+  "run_id": "2026-06-10T17-48-04-591Z_1496766-bb550d62_ingest_14th-street-truck-transit-priority-trifold-r1-p2",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-10T19:25:06.898Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "assistant_text",
+  "parse_error": "JSON Parse error: Unexpected identifier \"Now\"",
+  "raw_response": "Now I have the source content. Let me analyze each observation against the registry cards.\n\nAll 7 observations come from the 14th Street Transit & Truck Priority trifold (source `14th_street_truck_transit_priority_trifold_r1_p2`). The relevant registry subjects are:\n\n- `corridor_14th-street-ttp` — \"14th Street TTP Corridor\", with source_ids including this trifold\n- `project_14th-street-transit-truck-priority-pilot` — \"14th Street Transit & Truck Priority Pilot Project\", with source_ids including this trifold\n\nLet me verify the source is listed for these:\n\nFor `corridor_14th-street-ttp`: source_ids include `14th_street_truck_transit_priority_trifold_r1_p2` ✓\nFor `project_14th-street-transit-truck-priority-pilot`: source_ids include `14th_street_truck_transit_priority_trifold_r1_p2` ✓\n\nNow let me submit the decisions. Each claim is about rules/restrictions described in the 14th Street TTP trifold, naming 14th Street and related roads. I'll propose `has_claim` edges from both the project and the corridor to each claim.\n\n",
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-20-34-670Z_1617604-a208c583_canonicalize_2026-06-10t17-48-04-591z-1496766-bb550d62-ingest-14th-street-truck-transit-priority-trifold-r1-p2-relation-linker"
+}

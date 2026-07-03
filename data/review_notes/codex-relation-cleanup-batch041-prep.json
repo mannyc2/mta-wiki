@@ -1,0 +1,300 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-22-endpoint-shape-batch041-prep",
+  "created_at": "2026-06-22T00:10:00Z",
+  "author": "codex",
+  "batch_id": "relation041",
+  "batch": "batch041",
+  "scope": "Codex-only relation endpoint-shape cleanup prep; no durable retirements or replacement submissions applied",
+  "bucket": {
+    "name": "published_by event->entity document publisher row",
+    "original_relation_kind": "published_by",
+    "original_endpoint_shape": "event -> entity",
+    "replacement_relation_kind": "published_by",
+    "replacement_endpoint_shape": "source -> entity",
+    "prepared_original_count": 1,
+    "cleanup_direction": "data cleanup only; do not widen published_by beyond source|project|entity -> entity",
+    "rationale": "The accepted original args and source evidence describe the Safety Committee Meeting document as published by MTA, but the relation subject was the meeting event. The same source already has an accepted source record and MTA entity local id, so a source -> entity published_by replacement preserves the fact without inventing schema, ontology, or target records."
+  },
+  "checkpoint_context": {
+    "reported_checkpoint": {
+      "duplicate_global_identity": 1523,
+      "unexpected_relation_endpoint_shape": 31
+    },
+    "read_only_probe_count": 31,
+    "selected_bucket_count": 1,
+    "expected_endpoint_shape_issue_delta": -1,
+    "endpoint_shape_issue_count_after_replacement_estimate": 30,
+    "endpoint_shape_probe": {
+      "published_by event->entity": "Relation kind published_by expects source|project|entity -> entity, got event -> entity.",
+      "published_by source->entity": "accepted by current endpoint-shape rules"
+    }
+  },
+  "durable_mechanism_prepared_not_applied": {
+    "retire_originals_via": "data/submission-overrides/retired.json",
+    "replacement_journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch041.jsonl",
+    "mutation_status": "not_applied_by_this_prep",
+    "only_file_written_by_this_task": "data/review_notes/codex-relation-cleanup-batch041-prep.json"
+  },
+  "exclusions_and_guards": {
+    "excluded_prior_relation_batches": [
+      "batch037",
+      "batch038",
+      "batch039",
+      "batch040"
+    ],
+    "missing_evidence_or_schema_invention_candidates_excluded": true,
+    "guarded_files_not_edited": [
+      "data/submission-overrides/retired.json",
+      "data/submissions/*.jsonl",
+      "data/canonical/*.jsonl",
+      "data/canonical.db",
+      "wiki/*",
+      "LOG.md",
+      "manifest files",
+      "identity overrides",
+      "code"
+    ],
+    "original_submission_guard": {
+      "selected_original_submission_id": "sub_c2aa9765e250e252",
+      "selected_original_record_id": "relation_safety-committee-published-by-mta",
+      "retired_hits_for_selected_originals": [],
+      "prior_relation_batches_037_040_hits_for_selected_originals": [],
+      "prior_context_mentions": [
+        {
+          "file": "data/review_notes/codex-relation-cleanup-batch034-prep.json",
+          "note": "Mentions event_safety_committee_meeting_july2022 as another relation endpoint context only; not this selected original submission or record."
+        }
+      ]
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": [],
+      "canonical_record_collision_hits_for_new_batch041_locals": []
+    },
+    "known_endpoint_local_ids_confirmed": [
+      "source_meeting_doc_91576",
+      "entity_meeting_doc_91576_mta"
+    ]
+  },
+  "local_validation": {
+    "clean": true,
+    "tooling": "createSubmissionEntry dry-run for one corrected published_by source->entity replacement, relationEndpointIssues against accepted same-source local ids, and relationEndpointShapeIssue probe for original and replacement shapes.",
+    "summary": {
+      "prepared_count": 1,
+      "retire_replace_count": 1,
+      "retire_only_count": 0,
+      "replacement_submission_count": 1,
+      "accepted_replacement_count": 1,
+      "issue_count": 0,
+      "warning_count": 0,
+      "relation_endpoint_issue_count": 0,
+      "endpoint_shape_issue_count_after_replacement": 0,
+      "endpoint_shape_issue_count_after_replacement_estimate": 30
+    }
+  },
+  "prepared_count": 1,
+  "retire_replace_count": 1,
+  "accepted_replacement_count": 1,
+  "issue_count": 0,
+  "endpoint_shape_issue_count_after_replacement_estimate": 30,
+  "all_pass": true,
+  "decisions": [
+    {
+      "action": "retire_and_replace",
+      "retire": {
+        "submission_id": "sub_c2aa9765e250e252",
+        "run_id": "2026-06-22T21-31-24-385Z_382829-62bd0d44_ingest_meeting-doc-91576",
+        "original_record_id": "relation_safety-committee-published-by-mta",
+        "original_local_observation_id": "relation_safety_committee_published_by_mta",
+        "malformed_shape": "published_by event -> entity",
+        "original_relation_kind": "published_by",
+        "original_subject_id": "event_safety-committee-meeting-july2022",
+        "original_subject_kind": "event",
+        "original_subject_local_observation_id": "event_safety_committee_meeting_july2022",
+        "original_subject_name": "Safety Committee Meeting July 2022",
+        "original_object_id": "entity_meeting-doc-64066-mta",
+        "original_object_kind": "entity",
+        "original_object_local_observation_id": "entity_meeting_doc_91576_mta",
+        "original_object_name": "Metropolitan Transportation Authority",
+        "current_args": {
+          "source_id": "meeting_doc_91576",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_safety_committee_published_by_mta",
+          "label": "Safety Committee Meeting published by Metropolitan Transportation Authority",
+          "raw_text": "Metropolitan Transportation Authority",
+          "payload": {
+            "relation_kind": "published_by",
+            "subject_local_observation_id": "event_safety_committee_meeting_july2022",
+            "object_local_observation_id": "entity_meeting_doc_91576_mta",
+            "description": "Safety Committee Meeting document published by MTA",
+            "relation_family": "publication_role"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_91576",
+              "evidence_id": "meeting_doc_91576#p001_c0002",
+              "source_path": "raw/sources/meeting_doc_91576/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0002",
+              "text_sha256": "sha256:ec4da331c09e2061578a1964b23a90bdb7edf5115e31a65c01ad04c21487f1e4",
+              "text_source": "raw_text",
+              "role": "publisher"
+            },
+            {
+              "source_id": "meeting_doc_91576",
+              "evidence_id": "meeting_doc_91576#p003_c0001",
+              "source_path": "raw/sources/meeting_doc_91576/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0001",
+              "text_sha256": "sha256:cc0a25bc899b737dfa744d413a4e60abd37c697af2c5317c2fd2c5be41bed9f2",
+              "text_source": "raw_text",
+              "role": "header"
+            }
+          ]
+        },
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_c2aa9765e250e252",
+          "reason": "Codex relation cleanup batch041 replaces malformed published_by event -> entity relation relation_safety-committee-published-by-mta with validator-compatible source -> entity published_by relation preserving the Safety Committee Meeting July 2022 document publisher context.",
+          "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch041",
+          "reviewed_at": "2026-06-22T00:10:00Z"
+        },
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_91576",
+            "evidence_id": "meeting_doc_91576#p001_c0002",
+            "source_path": "raw/sources/meeting_doc_91576/blocks.jsonl",
+            "page_number": 1,
+            "block_id": "p001_c0002",
+            "text_sha256": "sha256:ec4da331c09e2061578a1964b23a90bdb7edf5115e31a65c01ad04c21487f1e4",
+            "text_source": "raw_text",
+            "source_quote": "Metropolitan Transportation Authority"
+          },
+          {
+            "source_id": "meeting_doc_91576",
+            "evidence_id": "meeting_doc_91576#p001_c0003",
+            "source_path": "raw/sources/meeting_doc_91576/blocks.jsonl",
+            "page_number": 1,
+            "block_id": "p001_c0003",
+            "text_sha256": "sha256:060416ad1f63cfc5c0d4f62554470a7847a81ed063b00d62f821d92c363137e2",
+            "text_source": "raw_text",
+            "source_quote": "Safety Committee Meeting July 2022"
+          }
+        ],
+        "reason": "published_by already expresses document-to-publisher context. The original label and description say the Safety Committee Meeting document was published by MTA, but the row used the meeting event as the subject. Replacing the subject with the accepted source local id keeps the same document publisher fact and matches current endpoint rules.",
+        "expected_endpoint_shape_delta": -1,
+        "confidence": "high"
+      },
+      "replacement": {
+        "run_id": "2026-06-23_codex_relation_cleanup_batch041",
+        "journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch041.jsonl",
+        "replacement_entries": [
+          {
+            "role": "corrected relation replacement",
+            "deterministic_submission_id": "sub_4b573e2f6818e834",
+            "tool_args_sha256": "sha256:4b573e2f6818e834a9e40868989b62a8f3adf7b31d23bd3f037022c030600147",
+            "proposed_relation_kind": "published_by",
+            "proposed_endpoint_shape": "source -> entity",
+            "tool_args": {
+              "source_id": "meeting_doc_91576",
+              "observation_kind": "relation",
+              "local_observation_id": "relation_batch041_safety_committee_book_published_by_mta",
+              "label": "Safety Committee meeting book published by MTA",
+              "raw_text": "Safety Committee Meeting July 2022 - Metropolitan Transportation Authority",
+              "payload": {
+                "relation_kind": "published_by",
+                "subject_local_observation_id": "source_meeting_doc_91576",
+                "object_local_observation_id": "entity_meeting_doc_91576_mta",
+                "description": "Replacement for malformed published_by event -> entity relation; the source document is Safety Committee Meeting July 2022 and Metropolitan Transportation Authority is named as publisher on the cover.",
+                "relation_family": "publication_role"
+              },
+              "evidence_refs": [
+                {
+                  "source_id": "meeting_doc_91576",
+                  "evidence_id": "meeting_doc_91576#p001_c0002",
+                  "source_path": "raw/sources/meeting_doc_91576/blocks.jsonl",
+                  "page_number": 1,
+                  "block_id": "p001_c0002",
+                  "text_sha256": "sha256:ec4da331c09e2061578a1964b23a90bdb7edf5115e31a65c01ad04c21487f1e4",
+                  "text_source": "raw_text",
+                  "role": "publisher",
+                  "source_quote": "Metropolitan Transportation Authority"
+                },
+                {
+                  "source_id": "meeting_doc_91576",
+                  "evidence_id": "meeting_doc_91576#p001_c0003",
+                  "source_path": "raw/sources/meeting_doc_91576/blocks.jsonl",
+                  "page_number": 1,
+                  "block_id": "p001_c0003",
+                  "text_sha256": "sha256:060416ad1f63cfc5c0d4f62554470a7847a81ed063b00d62f821d92c363137e2",
+                  "text_source": "raw_text",
+                  "role": "source_title",
+                  "source_quote": "Safety Committee Meeting July 2022"
+                }
+              ]
+            },
+            "local_validation": {
+              "state": "accepted",
+              "issues": [],
+              "warnings": [],
+              "relationEndpointIssues": [],
+              "endpoint_shape_issue_after_replacement": null,
+              "known_local_observation_ids_confirmed": [
+                "source_meeting_doc_91576",
+                "entity_meeting_doc_91576_mta"
+              ]
+            }
+          }
+        ],
+        "confidence": "high"
+      }
+    }
+  ],
+  "replacements": [
+    {
+      "submission_id": "sub_4b573e2f6818e834",
+      "local_observation_id": "relation_batch041_safety_committee_book_published_by_mta",
+      "relation_kind": "published_by",
+      "subject_local_observation_id": "source_meeting_doc_91576",
+      "object_local_observation_id": "entity_meeting_doc_91576_mta",
+      "source_id": "meeting_doc_91576",
+      "validation_state": "accepted"
+    }
+  ],
+  "command_evidence": [
+    {
+      "command": "bun --eval '<readCanonicalRecords plus relationEndpointShapeIssue inventory>'",
+      "output_excerpt": "Current unexpected_relation_endpoint_shape count is 31; all exact buckets are singletons including selected published_by event->entity."
+    },
+    {
+      "command": "rg -n 'sub_c2aa9765e250e252|relation_safety-committee-published-by-mta' data/submissions data/canonical/relations.jsonl",
+      "output_excerpt": "Confirmed original accepted submission sub_c2aa9765e250e252 and canonical malformed relation relation_safety-committee-published-by-mta."
+    },
+    {
+      "command": "rg -n 'source_meeting_doc_91576|entity_meeting_doc_91576_mta|event_safety_committee_meeting_july2022|relation_safety_committee_published_by_mta' data/canonical/*.jsonl data/submissions data/review_notes data/submission-overrides/retired.json -S",
+      "output_excerpt": "Confirmed accepted same-source source and MTA entity local ids; selected original is not retired and has no prior batch037-040 prepared/applied hit."
+    },
+    {
+      "command": "bun --eval '<createSubmissionEntry dry-run for published_by source->entity replacement>'",
+      "output_excerpt": "Generated deterministic submission sub_4b573e2f6818e834 with sha256:4b573e2f6818e834a9e40868989b62a8f3adf7b31d23bd3f037022c030600147; validation accepted with issues=[], warnings=[], relationEndpointIssues=[]; replacement shape probe returned null."
+    },
+    {
+      "command": "rg -n 'sub_4b573e2f6818e834|relation_batch041_safety_committee_book_published_by_mta|sub_c2aa9765e250e252|relation_safety-committee-published-by-mta' data/submissions data/review_notes data/submission-overrides/retired.json data/canonical/relations.jsonl -S",
+      "output_excerpt": "Only existing hits were the original submission/canonical relation; no existing hits for replacement submission id or replacement local observation id."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider/external-LLM commands",
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "commands with --profile or provider",
+    "materialize",
+    "export-jsonl",
+    "full validate",
+    "DB publish"
+  ]
+}

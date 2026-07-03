@@ -1,0 +1,21 @@
+{
+  "run_id": "2026-06-10T23-26-53-165Z_1976810-1e664e40_ingest_2014-11-brt-utica-workshopsummary",
+  "generated_at": "2026-06-11T05:57:26.028Z",
+  "dry_run": false,
+  "wrote": true,
+  "decision_count": 0,
+  "reviewed_count": 0,
+  "alias_additions": [],
+  "aliases_already_present": [],
+  "do_not_merge_additions": [],
+  "relation_submissions": 0,
+  "quarantined": 0,
+  "conflicts": [],
+  "paths": {
+    "merges": "data/identity-overrides/merges.json",
+    "do_not_merge": "data/identity-overrides/do-not-merge.json",
+    "relation_submissions_jsonl": "data/submissions/2026-06-10T23-26-53-165Z_1976810-1e664e40_ingest_2014-11-brt-utica-workshopsummary_canonicalize.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-26-53-165Z_1976810-1e664e40_ingest_2014-11-brt-utica-workshopsummary/apply-quarantine.jsonl",
+    "apply_report": "data/canonicalize/2026-06-10T23-26-53-165Z_1976810-1e664e40_ingest_2014-11-brt-utica-workshopsummary/apply-report.json"
+  }
+}

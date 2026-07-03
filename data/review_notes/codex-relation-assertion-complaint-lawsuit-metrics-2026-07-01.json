@@ -1,0 +1,84 @@
+{
+  "id": "codex-relation-assertion-complaint-lawsuit-metrics-2026-07-01",
+  "date": "2026-07-01",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider profiles"
+  ],
+  "bucket": "relation_assertion_status_unknown",
+  "slice": "observed_complaint_and_lawsuit_has_metric_relations",
+  "baseline": {
+    "validate_issues": 0,
+    "relation_assertion_unknown_total": 5593,
+    "metric_context_unknown": 2896,
+    "metric_context_has_metric_unknown": 2882,
+    "safe_candidate_count": 119
+  },
+  "implemented": [
+    {
+      "area": "assertion qualifier",
+      "files": [
+        "packages/pipeline/src/records/assertion-qualifiers.ts",
+        "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+      ],
+      "summary": "Added a deterministic delivered-status rule for observed complaint and lawsuit has_metric relations. The rule is scoped to entity subjects, metric_claim objects, same-source evidence, concrete numeric values, observed period anchors, complaint/lawsuit metric-name signals, count/complaints/lawsuits unit evidence or explicit missing-unit complaint/lawsuit names, and existing future/proposed/estimate rejection guards."
+    }
+  ],
+  "after": {
+    "relation_assertion_unknown_total": 5474,
+    "metric_context_unknown": 2777,
+    "metric_context_has_metric_unknown": 2763,
+    "metric_context_has_metric_delivered": 2330,
+    "validate_issues": 0,
+    "canonical_records": 84040,
+    "wiki_pages": 7334
+  },
+  "delta": {
+    "relation_assertion_unknown_total": -119,
+    "metric_context_unknown": -119,
+    "metric_context_has_metric_unknown": -119
+  },
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+      "result": "pass",
+      "details": "69 pass, 0 fail, 383 expect() calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    {
+      "command": "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+      "result": "pass",
+      "details": "Materialized 93092/98102 submissions; SQLite FTS quick_check: ok"
+    },
+    {
+      "command": "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+      "result": "pass",
+      "details": "ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass",
+      "details": "Submissions 98102; canonical records 84040; wiki pages 7334; Issues 0"
+    }
+  ],
+  "intentionally_unresolved": [
+    "Thirteen complaint/lawsuit-shaped has_metric rows remain unknown because they lack an observed period anchor in metric payload/display fields.",
+    "The rule does not classify route or corridor complaint metrics, percentage/rate complaint metrics, missing-evidence rows, proposal/plan/estimate rows, or broad count metrics without complaint/lawsuit name evidence.",
+    "No canonical JSONL was hand-edited; canonical relations and SQLite were refreshed by deterministic materialization."
+  ],
+  "next_lanes": [
+    "Continue relation assertion-status cleanup on metric_context.has_metric residuals with similarly narrow endpoint/unit/period guards.",
+    "Scout timeline_context.has_timeline_event and agency_role residuals for the next measurable deterministic rule.",
+    "Keep route/project duplicate identity checks periodic, but current high-confidence duplicate pressure is drained."
+  ]
+}

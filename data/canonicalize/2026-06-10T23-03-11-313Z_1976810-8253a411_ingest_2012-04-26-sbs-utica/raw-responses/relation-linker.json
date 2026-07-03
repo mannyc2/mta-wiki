@@ -1,0 +1,1005 @@
+{
+  "run_id": "2026-06-10T23-03-11-313Z_1976810-8253a411_ingest_2012-04-26-sbs-utica",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T02:45:24.026Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "rel-b46-weekday-ridership",
+        "local_observation_id": "metric_b46_weekday_ridership",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_b46-local-limited-20110915",
+            "object_id": "metric_b46-weekday-ridership_2",
+            "description": "B46 weekday ridership",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p003_c0002",
+                "source_quote": "Over 49,000 bus passengers per weekday"
+              }
+            ]
+          }
+        ],
+        "rationale": "This metric claims over 49,000 weekday bus passengers on the B46 route, which is directly stated on p003_c0002.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p003_c0002",
+            "source_quote": "Over 49,000 bus passengers per weekday"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-b46-average-speed",
+        "local_observation_id": "metric_b46_average_speed",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_b46-local-limited-20110915",
+            "object_id": "metric_b46-average-speed",
+            "description": "B46 Average Speed",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p003_c0002",
+                "source_quote": "Average speed of 6.8 mph, below Bklyn avg."
+              }
+            ]
+          }
+        ],
+        "rationale": "This metric states the average speed of the B46 bus at 6.8 mph, as sourced from p003_c0002.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p003_c0002",
+            "source_quote": "Average speed of 6.8 mph, below Bklyn avg."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-speeding-63-percent",
+        "local_observation_id": "metric_speeding_63_percent",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_utica-av",
+            "object_id": "metric_speeding-63-percent_2",
+            "description": "Speeding rate on Utica Ave",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p004_c0002",
+                "source_quote": "Speeding: 63% of vehicles exceed speed limit (30 mph)"
+              }
+            ]
+          }
+        ],
+        "rationale": "The speeding metric about vehicles on Utica Ave Carroll St. to Church Ave. relates to the Utica Ave corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p004_c0002",
+            "source_quote": "Speeding: 63% of vehicles exceed speed limit (30 mph)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-crashes-2006-2010",
+        "local_observation_id": "metric_crashes_2006_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_utica-av",
+            "object_id": "metric_crashes-2006-2010",
+            "description": "Total crashes 2006-2010 on Utica Ave",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p004_c0002",
+                "source_quote": "766 total crashes"
+              }
+            ]
+          }
+        ],
+        "rationale": "This metric counts 766 crashes on Utica Ave 2006-2010 at Carroll St. to Church Ave.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p004_c0002",
+            "source_quote": "766 total crashes"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-severe-injuries-2006-2010",
+        "local_observation_id": "metric_severe_injuries_2006_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_utica-av",
+            "object_id": "metric_severe-injuries-2006-2010",
+            "description": "41 severe injuries 2006-2010 on Utica Ave",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p004_c0002",
+                "source_quote": "41 severe injuries"
+              }
+            ]
+          }
+        ],
+        "rationale": "This metric counts 41 severe injuries on Utica Ave 2006-2010 from p004_c0002.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p004_c0002",
+            "source_quote": "41 severe injuries"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-fatalities-2006-2010",
+        "local_observation_id": "metric_fatalities_2006_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_utica-av",
+            "object_id": "metric_fatalities-2006-2010",
+            "description": "2 fatalities 2006-2010 on Utica Ave",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p004_c0002",
+                "source_quote": "2 fatalities"
+              }
+            ]
+          }
+        ],
+        "rationale": "This metric cites 2 fatalities on Utica Ave 2006-2010 from p004_c0002.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p004_c0002",
+            "source_quote": "2 fatalities"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-net-gain-parking",
+        "local_observation_id": "metric_net_gain_parking_spaces",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "metric_net-gain-parking-spaces",
+            "description": "Net gain 19 parking spaces from the proposed plan",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p010_c0007",
+                "source_quote": "Net gain: 19 peak period parking spaces"
+              }
+            ]
+          }
+        ],
+        "rationale": "Net gain of 19 peak period parking spaces is a claimed outcome of the proposed plan in the Utica Ave study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p010_c0007",
+            "source_quote": "Net gain: 19 peak period parking spaces"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-empire-ped-injuries",
+        "local_observation_id": "metric_empire_blvd_pedestrian_injuries",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_empire-blvd-utica-ave-east-ny-ave",
+            "object_id": "metric_empire-blvd-pedestrian-injuries",
+            "description": "28 pedestrian injuries 2006-2010 at Empire Blvd intersection",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p023_c0003",
+                "source_quote": "Pedestrian 28"
+              }
+            ]
+          }
+        ],
+        "rationale": "The pedestrian injury count at Empire Blvd intersection is part of the Empire Blvd project study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p023_c0003",
+            "source_quote": "Pedestrian 28"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-empire-bike-injuries",
+        "local_observation_id": "metric_empire_blvd_bicyclist_injuries",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_empire-blvd-utica-ave-east-ny-ave",
+            "object_id": "metric_empire-blvd-bicyclist-injuries",
+            "description": "11 bicyclist injuries 2006-2010 at Empire Blvd intersection",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p023_c0003",
+                "source_quote": "Bicyclist 11"
+              }
+            ]
+          }
+        ],
+        "rationale": "The bicyclist injury count at Empire Blvd intersection is part of the Empire Blvd project study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p023_c0003",
+            "source_quote": "Bicyclist 11"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-empire-mv-occupant",
+        "local_observation_id": "metric_empire_blvd_mv_occupant_injuries",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_empire-blvd-utica-ave-east-ny-ave",
+            "object_id": "metric_empire-blvd-mv-occupant-injuries",
+            "description": "167 motor vehicle occupant injuries 2006-2010 at Empire Blvd intersection",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p023_c0003",
+                "source_quote": "Motor Vehicle Occupant 167"
+              }
+            ]
+          }
+        ],
+        "rationale": "The MV occupant injury count at Empire Blvd intersection is part of the Empire Blvd project study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p023_c0003",
+            "source_quote": "Motor Vehicle Occupant 167"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-empire-delay-reduction",
+        "local_observation_id": "metric_empire_blvd_delay_reduction",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_empire-blvd-utica-ave-east-ny-ave",
+            "object_id": "metric_empire-blvd-delay-reduction",
+            "description": "~50% less delays for autos and buses after Remsen Ave approach removal",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p025_c0006",
+                "source_quote": "Removal of Remsen Ave approach = ~50% less delays for autos and buses"
+              }
+            ]
+          }
+        ],
+        "rationale": "Delay reduction claim is from the Empire Blvd project benefits section.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p025_c0006",
+            "source_quote": "Removal of Remsen Ave approach = ~50% less delays for autos and buses"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-empire-new-parking",
+        "local_observation_id": "metric_empire_blvd_new_parking_spaces",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_empire-blvd-utica-ave-east-ny-ave",
+            "object_id": "metric_empire-blvd-new-parking-spaces",
+            "description": "About 25 new parking spaces from Empire Blvd project",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p025_c0012",
+                "source_quote": "About 25 new parking spaces"
+              }
+            ]
+          }
+        ],
+        "rationale": "New parking spaces claim is from the Empire Blvd project benefits section.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p025_c0012",
+            "source_quote": "About 25 new parking spaces"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-empire-earmark-amount",
+        "local_observation_id": "metric_empire_blvd_earmark_amount",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_empire-blvd-utica-ave-east-ny-ave",
+            "object_id": "metric_empire-blvd-earmark-amount",
+            "description": "$5.1 million earmark for Empire Blvd reconstruction",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p022_c0003",
+                "source_quote": "2006 – Major Owens allocates $5 .1 million earmark for \"Reconstruction of Empire Boulevard\""
+              }
+            ]
+          }
+        ],
+        "rationale": "The $5.1 million earmark is a key project metric for the Empire Blvd project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p022_c0003",
+            "source_quote": "2006 – Major Owens allocates $5 .1 million earmark for \"Reconstruction of Empire Boulevard\""
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-empire-total-injuries",
+        "local_observation_id": "metric_empire_blvd_injuries_2006_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_empire-blvd-utica-ave-east-ny-ave",
+            "object_id": "metric_empire-blvd-injuries-2006-2010",
+            "description": "Total 206 injuries 2006-2010 at Empire Blvd intersection",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p023_c0003",
+                "source_quote": "Total 206 41.2 81.2 92%"
+              }
+            ]
+          }
+        ],
+        "rationale": "The total 206 injuries metric from the Empire Blvd injury summary table.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p023_c0003",
+            "source_quote": "Total 206 41.2 81.2 92%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-empire-avg-injuries",
+        "local_observation_id": "metric_empire_blvd_avg_injuries_per_year",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_empire-blvd-utica-ave-east-ny-ave",
+            "object_id": "metric_empire-blvd-avg-injuries-per-year",
+            "description": "Avg 41.2 injuries per year 2006-2010 at Empire Blvd intersection",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p023_c0003",
+                "source_quote": "Total 206 41.2 81.2 92%"
+              }
+            ]
+          }
+        ],
+        "rationale": "The average injuries per year (41.2) metric from the Empire Blvd injury summary table.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p023_c0003",
+            "source_quote": "Total 206 41.2 81.2 92%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-empire-severity",
+        "local_observation_id": "metric_empire_blvd_severity_percentile",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_empire-blvd-utica-ave-east-ny-ave",
+            "object_id": "metric_empire-blvd-severity-percentile",
+            "description": "Severity percentile of 92% for Empire Blvd corridor injuries",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p023_c0003",
+                "source_quote": "Total 206 41.2 81.2 92%"
+              }
+            ]
+          }
+        ],
+        "rationale": "The 92% severity percentile metric from the Empire Blvd injury summary table.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p023_c0003",
+            "source_quote": "Total 206 41.2 81.2 92%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-ltd-subway",
+        "local_observation_id": "claim_b46_limited_subway_access",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_b46-local-limited-20110915",
+            "object_id": "claim_b46-limited-subway-access",
+            "description": "Limited subway access along B46 corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p003_c0002",
+                "source_quote": "Limited subway access"
+              }
+            ]
+          }
+        ],
+        "rationale": "The claim about limited subway access is stated as a transit need for the B46 bus service.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p003_c0002",
+            "source_quote": "Limited subway access"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-b46-congestion",
+        "local_observation_id": "claim_b46_congestion_bunching",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_b46-local-limited-20110915",
+            "object_id": "claim_b46-congestion-bunching",
+            "description": "Congestion causing slower buses and bus bunching on B46",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p003_c0002",
+                "source_quote": "Congestion: slower buses and bus bunching"
+              }
+            ]
+          }
+        ],
+        "rationale": "This claim about congestion and bus bunching is stated as affecting the B46 bus service.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p003_c0002",
+            "source_quote": "Congestion: slower buses and bus bunching"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-b46-important",
+        "local_observation_id": "claim_b46_important_local_service",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_b46-local-limited-20110915",
+            "object_id": "claim_b46-important-local-service",
+            "description": "B46 provides an important service for the local community",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p006_c0003",
+                "source_quote": "B46 provides an important service for the local community"
+              }
+            ]
+          }
+        ],
+        "rationale": "This claim that B46 provides an important service was key community feedback from the study meetings.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p006_c0003",
+            "source_quote": "B46 provides an important service for the local community"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-ped-safety",
+        "local_observation_id": "claim_pedestrian_safety_concerns",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "claim_pedestrian-safety-concerns",
+            "description": "Pedestrian safety concerns at Eastern Pkwy, East New York Ave, and Church Ave",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p006_c0003",
+                "source_quote": "Pedestrian safety concerns, esp. at Eastern Pkwy., East New York Ave., and Church Ave."
+              }
+            ]
+          }
+        ],
+        "rationale": "This claim is community feedback collected during the project study on Utica Ave.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p006_c0003",
+            "source_quote": "Pedestrian safety concerns, esp. at Eastern Pkwy., East New York Ave., and Church Ave."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-risky-driving",
+        "local_observation_id": "claim_risky_driving_concerns",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "claim_risky-driving-concerns",
+            "description": "Risky driving concerns on Utica Ave, especially dollar vans",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p006_c0003",
+                "source_quote": "Risky driving concerns, inc. speeding, illegal U-turns and lefts, esp. by dollar van drivers"
+              }
+            ]
+          }
+        ],
+        "rationale": "This claim is community feedback elicited during the project study process.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p006_c0003",
+            "source_quote": "Risky driving concerns, inc. speeding, illegal U-turns and lefts, esp. by dollar van drivers"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-more-enforcement",
+        "local_observation_id": "claim_more_enforcement_needed",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "claim_more-enforcement-needed",
+            "description": "More enforcement needed for traffic violations on Utica Ave",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p006_c0003",
+                "source_quote": "More enforcement needed"
+              }
+            ]
+          }
+        ],
+        "rationale": "This call for more enforcement was key community feedback collected in the study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p006_c0003",
+            "source_quote": "More enforcement needed"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-empire-high-crash",
+        "local_observation_id": "claim_empire_blvd_high_crash_location",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_empire-blvd-utica-ave-east-ny-ave",
+            "object_id": "claim_empire-blvd-high-crash-location",
+            "description": "High crash location at Empire Blvd complex intersection",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p023_c0006",
+                "source_quote": "High crash location • Complex and confusing set of intersections, difficult to navigate for pedestrians and drivers"
+              }
+            ]
+          }
+        ],
+        "rationale": "This claim about the high crash location is stated in the existing conditions for the Empire Blvd project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p023_c0006",
+            "source_quote": "High crash location • Complex and confusing set of intersections, difficult to navigate for pedestrians and drivers"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-empire-underutilized",
+        "local_observation_id": "claim_empire_blvd_underutilized_space",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_empire-blvd-utica-ave-east-ny-ave",
+            "object_id": "claim_empire-blvd-underutilized-space",
+            "description": "Underutilized road space at Empire Blvd intersection",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p023_c0006",
+                "source_quote": "Underutilized road space"
+              }
+            ]
+          }
+        ],
+        "rationale": "This claim about underutilized road space is stated in the existing conditions for the Empire Blvd project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p023_c0006",
+            "source_quote": "Underutilized road space"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-empire-heavy-congestion",
+        "local_observation_id": "claim_empire_blvd_heavy_congestion",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_empire-blvd-utica-ave-east-ny-ave",
+            "object_id": "claim_empire-blvd-heavy-congestion",
+            "description": "Heavy congestion on Utica Ave at Empire Blvd intersection",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p023_c0006",
+                "source_quote": "Heavy congestion on Utica Ave"
+              }
+            ]
+          }
+        ],
+        "rationale": "This claim about heavy congestion is stated in the existing conditions for the Empire Blvd project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p023_c0006",
+            "source_quote": "Heavy congestion on Utica Ave"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-utica-high-injury",
+        "local_observation_id": "claim_utica_high_injury_rate_brooklyn",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "claim_utica-high-injury-rate-brooklyn",
+            "description": "Utica has among the highest rate of injury from motor vehicle crashes in Brooklyn",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p004_c0002",
+                "source_quote": "Utica has among the highest rate of injury from motor vehicle crashes in Brooklyn"
+              }
+            ]
+          }
+        ],
+        "rationale": "This claim about Utica Ave's high injury rate is stated in the safety needs section of the study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p004_c0002",
+            "source_quote": "Utica has among the highest rate of injury from motor vehicle crashes in Brooklyn"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-stakeholder-group",
+        "local_observation_id": "event_stakeholder_group_meeting_2011_09_15",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "event_stakeholder-group-meeting-2011-09-15",
+            "description": "Stakeholder Group meeting, Sept. 15, 2011",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p006_c0003",
+                "source_quote": "Stakeholder Group: Sept. 15., 2011"
+              }
+            ]
+          }
+        ],
+        "rationale": "This stakeholder meeting is listed as an engagement event for the Utica Ave study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p006_c0003",
+            "source_quote": "Stakeholder Group: Sept. 15., 2011"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-merchants-meeting",
+        "local_observation_id": "event_merchants_cm_mealy_meeting_2012_01_24",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "event_merchants-cm-mealy-meeting-2012-01-24",
+            "description": "Merchants and CM Mealy staff meeting, Jan. 24, 2012",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p006_c0003",
+                "source_quote": "Merchants and CM Mealy staff: Jan. 24, 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "This merchants meeting is listed as an engagement event for the Utica Ave study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p006_c0003",
+            "source_quote": "Merchants and CM Mealy staff: Jan. 24, 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-cm-mealy-advisory",
+        "local_observation_id": "event_cm_mealy_advisory_committee_2012_02_04",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "event_cm-mealy-advisory-committee-2012-02-04",
+            "description": "CM Mealy Community Advisory Committee meeting, Feb. 4, 2012",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p006_c0003",
+                "source_quote": "CM Mealy Community Advisory Committee: Feb. 4, 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "This advisory committee meeting is listed as an engagement event for the Utica Ave study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p006_c0003",
+            "source_quote": "CM Mealy Community Advisory Committee: Feb. 4, 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-presentation-stakeholders",
+        "local_observation_id": "event_presentation_community_stakeholders_2012_04_26",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "event_presentation-community-stakeholders-2012-04-26",
+            "description": "Presentation to Community Stakeholders, April 26, 2012",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p001_c0003",
+                "source_quote": "Presentation to Community Stakeholders"
+              },
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p001_c0004",
+                "source_quote": "April 26, 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "The slide deck itself is a 'Presentation to Community Stakeholders' on April 26, 2012, announcing the study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p001_c0003",
+            "source_quote": "Presentation to Community Stakeholders"
+          },
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p001_c0004",
+            "source_quote": "April 26, 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-empire-earmark-2006",
+        "local_observation_id": "event_empire_blvd_earmark_2006",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_empire-blvd-utica-ave-east-ny-ave",
+            "object_id": "event_empire-blvd-earmark-2006",
+            "description": "Major Owens allocates $5.1 million earmark for Empire Blvd reconstruction in 2006",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p022_c0003",
+                "source_quote": "2006 – Major Owens allocates $5 .1 million earmark for \"Reconstruction of Empire Boulevard\""
+              }
+            ]
+          }
+        ],
+        "rationale": "The earmark allocation in 2006 is a timeline event for the Empire Blvd project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p022_c0003",
+            "source_quote": "2006 – Major Owens allocates $5 .1 million earmark for \"Reconstruction of Empire Boulevard\""
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-empire-study-start",
+        "local_observation_id": "event_empire_blvd_study_start_2009",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_empire-blvd-utica-ave-east-ny-ave",
+            "object_id": "event_empire-blvd-study-start-2009",
+            "description": "Empire Blvd study begins 2009 as dangerous location identified by DOT",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p022_c0003",
+                "source_quote": "2009 – As part of Safe Streets for Seniors program, location identified by DOT as a dangerous location, study begins"
+              }
+            ]
+          }
+        ],
+        "rationale": "The study start in 2009 is a timeline event for the Empire Blvd project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p022_c0003",
+            "source_quote": "2009 – As part of Safe Streets for Seniors program, location identified by DOT as a dangerous location, study begins"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-empire-concept",
+        "local_observation_id": "event_empire_blvd_concept_presented_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_empire-blvd-utica-ave-east-ny-ave",
+            "object_id": "event_empire-blvd-concept-presented-2011",
+            "description": "Empire Blvd concept presented to CB9, CB17, Congresswoman Clarke, USDOT, NYSDOT in 2011",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p022_c0003",
+                "source_quote": "2011 – Presented concept to Community Board 9, 17 & Congresswoman Yvette Clarke – Presented to USDOT and NYSDOT – Project transmitted to DDC for design and construction"
+              }
+            ]
+          }
+        ],
+        "rationale": "The concept presentation in 2011 is a timeline event for the Empire Blvd project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p022_c0003",
+            "source_quote": "2011 – Presented concept to Community Board 9, 17 & Congresswoman Yvette Clarke – Presented to USDOT and NYSDOT – Project transmitted to DDC for design and construction"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-construction-start-2014",
+        "local_observation_id": "event_construction_start_2014",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_empire-blvd-utica-ave-east-ny-ave",
+            "object_id": "event_construction-start-2014",
+            "description": "Empire Blvd construction slated to start in 2014",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p026_c0006",
+                "source_quote": "Construction slated to start in 2014"
+              }
+            ]
+          }
+        ],
+        "rationale": "The construction start in 2014 is a timeline event for the Empire Blvd project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p026_c0006",
+            "source_quote": "Construction slated to start in 2014"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-target-implementation",
+        "local_observation_id": "event_target_implementation_late_summer_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "event_target-implementation-late-summer-2012",
+            "description": "Target for implementation of Utica Ave proposed plan: late summer 2012",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p026_c0004",
+                "source_quote": "Target for implementation: late summer 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "The target implementation date is a milestone for the Utica Ave study project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p026_c0004",
+            "source_quote": "Target for implementation: late summer 2012"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-36-18-326Z_2111393-560e99c0_canonicalize_2026-06-10t23-03-11-313z-1976810-8253a411-ingest-2012-04-26-sbs-utica-relation-linker"
+}

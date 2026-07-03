@@ -1,0 +1,251 @@
+{
+  "run_id": "2026-06-10T17-48-04-801Z_1496766-2e381e4b_ingest_2010-06-09-brt-1st2nd-cb11",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-10T19:47:00.338Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "relate-offboard-fare-corridor",
+        "local_observation_id": "treatment_off_board_fare_collection_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "treatment_off-board-fare-collection-2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_09_brt_1st2nd_cb11",
+                "block_id": "p026_c0007",
+                "source_quote": "Off-Board Fare Collection"
+              },
+              {
+                "source_id": "2010_06_09_brt_1st2nd_cb11",
+                "block_id": "p029_c0007",
+                "source_quote": "Off-board fare payment at all stations"
+              }
+            ]
+          }
+        ],
+        "rationale": "Off-board fare collection explicitly listed as M15 SBS feature for October 2010 on First/Second Avenue corridor in CB11 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_09_brt_1st2nd_cb11",
+            "block_id": "p026_c0007",
+            "source_quote": "Off-Board Fare Collection"
+          },
+          {
+            "source_id": "2010_06_09_brt_1st2nd_cb11",
+            "block_id": "p029_c0007",
+            "source_quote": "Off-board fare payment at all stations"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-bus-lanes-corridor",
+        "local_observation_id": "treatment_bus_lanes_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "treatment_bus-lanes-2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_09_brt_1st2nd_cb11",
+                "block_id": "p020_c0005",
+                "source_quote": "Offset or curbside bus lanes from Houston St to 125 St on both Avenues"
+              },
+              {
+                "source_id": "2010_06_09_brt_1st2nd_cb11",
+                "block_id": "p029_c0006",
+                "source_quote": "Over 10 miles of new or improved bus lanes"
+              }
+            ]
+          }
+        ],
+        "rationale": "2010 Implementation Plan describes offset/curbside bus lanes from Houston St to 125th St on both Avenues for M15 SBS.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_09_brt_1st2nd_cb11",
+            "block_id": "p020_c0005",
+            "source_quote": "Offset or curbside bus lanes from Houston St to 125 St on both Avenues"
+          },
+          {
+            "source_id": "2010_06_09_brt_1st2nd_cb11",
+            "block_id": "p029_c0006",
+            "source_quote": "Over 10 miles of new or improved bus lanes"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-low-floor-buses-corridor",
+        "local_observation_id": "treatment_low_floor_buses_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "treatment_low-floor-buses-2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_09_brt_1st2nd_cb11",
+                "block_id": "p026_c0008",
+                "source_quote": "New low-floor, three-door buses"
+              },
+              {
+                "source_id": "2010_06_09_brt_1st2nd_cb11",
+                "block_id": "p029_c0008",
+                "source_quote": "New low-floor, three-door buses"
+              }
+            ]
+          }
+        ],
+        "rationale": "New low-floor three-door buses listed as M15 SBS feature beginning October 2010 on First/Second Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_09_brt_1st2nd_cb11",
+            "block_id": "p026_c0008",
+            "source_quote": "New low-floor, three-door buses"
+          },
+          {
+            "source_id": "2010_06_09_brt_1st2nd_cb11",
+            "block_id": "p029_c0008",
+            "source_quote": "New low-floor, three-door buses"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-bus-bulbs-both",
+        "local_observation_id": "treatment_bus_bulbs_2011_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "treatment_bus-bulbs-2011-2012",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_09_brt_1st2nd_cb11",
+                "block_id": "p008_c0005",
+                "source_quote": "Bus bulbs No No Yes"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "treatment_bus-bulbs-2011-2012",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_09_brt_1st2nd_cb11",
+                "block_id": "p008_c0005",
+                "source_quote": "Bus bulbs No No Yes"
+              }
+            ]
+          }
+        ],
+        "rationale": "Feature table shows Bus bulbs as Yes under M15 SBS (2011-2012), a planned treatment for First/Second Avenue SBS project and corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_09_brt_1st2nd_cb11",
+            "block_id": "p008_c0005",
+            "source_quote": "Bus bulbs No No Yes"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-tsp-both",
+        "local_observation_id": "treatment_transit_signal_priority_2011_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "treatment_transit-signal-priority-2011-2012",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_09_brt_1st2nd_cb11",
+                "block_id": "p008_c0005",
+                "source_quote": "Transit Signal Priority No No Yes (below Houston St)"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "treatment_transit-signal-priority-2011-2012",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_09_brt_1st2nd_cb11",
+                "block_id": "p008_c0005",
+                "source_quote": "Transit Signal Priority No No Yes (below Houston St)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Feature table shows Transit Signal Priority as Yes (below Houston St) under M15 SBS (2011-2012), a planned treatment for First/Second Avenue SBS.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_09_brt_1st2nd_cb11",
+            "block_id": "p008_c0005",
+            "source_quote": "Transit Signal Priority No No Yes (below Houston St)"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-bike-lanes-corridor",
+        "local_observation_id": "treatment_bike_lanes_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "treatment_bike-lanes-2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_09_brt_1st2nd_cb11",
+                "block_id": "p020_c0006",
+                "source_quote": "2010 bike lanes"
+              },
+              {
+                "source_id": "2010_06_09_brt_1st2nd_cb11",
+                "block_id": "p020_c0007",
+                "source_quote": "Houston St to 34 th St on both Avenues"
+              },
+              {
+                "source_id": "2010_06_09_brt_1st2nd_cb11",
+                "block_id": "p020_c0008",
+                "source_quote": "72 nd St to 125 th St on First Avenue"
+              }
+            ]
+          }
+        ],
+        "rationale": "2010 bike lanes explicitly listed in Implementation Plan for First/Second Avenues with specific segments described.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_09_brt_1st2nd_cb11",
+            "block_id": "p020_c0006",
+            "source_quote": "2010 bike lanes"
+          },
+          {
+            "source_id": "2010_06_09_brt_1st2nd_cb11",
+            "block_id": "p020_c0007",
+            "source_quote": "Houston St to 34 th St on both Avenues"
+          },
+          {
+            "source_id": "2010_06_09_brt_1st2nd_cb11",
+            "block_id": "p020_c0008",
+            "source_quote": "72 nd St to 125 th St on First Avenue"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-43-55-650Z_1657335-29aa7664_canonicalize_2026-06-10t17-48-04-801z-1496766-2e381e4b-ingest-2010-06-09-brt-1st2nd-cb11-treatment-relations"
+}

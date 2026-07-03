@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "entity_cluster_696351ea7c",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_696351ea7c.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_696351ea7c.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "quarantined",
+  "quarantine": {
+    "blocker": "suggestion marks ambiguous: entity_167646-mta-real-estate, entity_frank-farrell-mta-acting-evp-buses, entity_meeting-doc-135596-mta-corporate-compliance, entity_mta-corporate-compliance-125256, entity_mta-nyct-evp-frank-farrell, entity_mta-real-estate, entity_mta-real-estate-department | merge entity_167646-triborough-bridge-tunnel + entity_mta-bridges-and-tunnels: record entity_167646-triborough-bridge-tunnel is not in the current canonical corpus | merge entity_167646-grand-central-madison + entity_meeting-doc-121001-gcmoc + entity_meeting-doc-gcmcoc: record entity_167646-grand-central-madison is not in the current canonical corpus | merge entity_167646-sirtoa + entity_meeting-doc-100241-staten-island-railway: record entity_167646-sirtoa is not in the current canonical corpus | merge entity_nyct-committee-2023 + entity_meeting-doc-140466-nyct-committee-members + entity_nyct-transit-committee-members: entity_nyct-committee-2023 and entity_nyct-transit-committee-members share no strong identity key (canon test 2 shape not met) | do_not_merge entity_mabstoa <> entity_mta-bus-company: reason does not cite a strong identity field | do_not_merge entity_meeting-doc-140466-nyct-committee-members <> entity_nyct-mta-bus-committee-charter: reason does not cite a strong identity field",
+    "note": "Partial: structurally clean actions were auto-accepted in the decisions file with the same cluster_id."
+  },
+  "original_merge_groups": [
+    [
+      "entity_167646-triborough-bridge-tunnel",
+      "entity_mta-bridges-and-tunnels"
+    ],
+    [
+      "entity_167646-grand-central-madison",
+      "entity_meeting-doc-121001-gcmoc",
+      "entity_meeting-doc-gcmcoc"
+    ],
+    [
+      "entity_167646-sirtoa",
+      "entity_meeting-doc-100241-staten-island-railway"
+    ],
+    [
+      "entity_nyct-committee-2023",
+      "entity_meeting-doc-140466-nyct-committee-members",
+      "entity_nyct-transit-committee-members"
+    ]
+  ],
+  "original_do_not_merge": [
+    {
+      "record_ids": [
+        "entity_mabstoa",
+        "entity_mta-bus-company"
+      ],
+      "reason": "Different legal entities: MaBSTOA and MTA Bus Company are separate operating authorities. The shared identity key is a collision, not a merge."
+    },
+    {
+      "record_ids": [
+        "entity_meeting-doc-140466-nyct-committee-members",
+        "entity_nyct-mta-bus-committee-charter"
+      ],
+      "reason": "Both are committees, but entity_nyct-mta-bus-committee-charter is the Committee on Operations of NYCT/etc., which is a different committee from the NYC Transit Committee."
+    }
+  ]
+}

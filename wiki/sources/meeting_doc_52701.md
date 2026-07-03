@@ -1,0 +1,1310 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-52701"
+record_kind: "source"
+display_name: "Capital Program Oversight Committee Meeting - September 2021"
+source_id: "meeting_doc_52701"
+source_ids:
+  - "meeting_doc_52701"
+local_observation_id: "source_meeting_doc_52701"
+local_observation_ids:
+  - "source_meeting_doc_52701"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T23:36:05.960Z"
+raw_text: "Capital Program Oversight Committee Meeting Book, September 2021, 2 Broadway, 20th Floor Board Room, New York, NY 10004, Monday, 9/13/2021, 2:00 - 3:00 PM ET"
+submission_ids:
+  - "sub_4a0f68b4799a8f2e"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting_book"
+  date: "2021-09-13"
+  date_normalized:
+    confidence: "submitted_iso"
+    normalized_date: "2021-09-13"
+    precision: "day"
+    raw_text: "2021-09-13"
+  date_text: "September 2021"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2021-09"
+    precision: "month"
+    raw_text: "September 2021"
+  description: "Capital Program Oversight Committee Meeting Book for September 13, 2021 meeting covering LIRR, MNR, and MTA capital program updates, IEC project reviews, commitments and completions, and Q2 2021 Traffic Light Reports"
+  document_date: "September 2021"
+  document_date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2021-09"
+    precision: "month"
+    raw_text: "September 2021"
+  published_date_normalized: "2021-09-13"
+  published_date_precision: "day"
+  publisher: "Metropolitan Transportation Authority"
+  title: "Capital Program Oversight Committee Meeting"
+evidence_refs:
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_52701#p001_c0003"
+    page_number: 1
+    role: "title"
+    source_id: "meeting_doc_52701"
+    source_path: "raw/sources/meeting_doc_52701/blocks.jsonl"
+    text_sha256: "sha256:1f86d2de6ad7ef2a50166f0b94157e2c9eff802b2c73dad841e40dbe1d2fafa0"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0002"
+    evidence_id: "meeting_doc_52701#p002_c0002"
+    page_number: 2
+    role: "location"
+    source_id: "meeting_doc_52701"
+    source_path: "raw/sources/meeting_doc_52701/blocks.jsonl"
+    text_sha256: "sha256:d707fdf3181d906f5a65a0c77c25bad6c7fd47202aed0dc2858ab8301d58b9e5"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0004"
+    evidence_id: "meeting_doc_52701#p002_c0004"
+    page_number: 2
+    role: "date"
+    source_id: "meeting_doc_52701"
+    source_path: "raw/sources/meeting_doc_52701/blocks.jsonl"
+    text_sha256: "sha256:b068a1e58b0ee4a8c48f861e5e269fb1146e72fdf5b72fcd6d40bf08399939e2"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_52701#p001_c0002"
+    page_number: 1
+    role: "publisher"
+    source_id: "meeting_doc_52701"
+    source_path: "raw/sources/meeting_doc_52701/blocks.jsonl"
+    text_sha256: "sha256:ec4da331c09e2061578a1964b23a90bdb7edf5115e31a65c01ad04c21487f1e4"
+    text_source: "raw_text"
+---
+
+# Capital Program Oversight Committee Meeting Book
+
+source_id: meeting_doc_52701
+citation: cite block ids exactly as shown in square brackets
+document: 785 block(s)
+
+## Page 1
+
+> [p001_c0001] The logo for the Metropolitan Transportation Authority (MTA) is a black circle containing the white letters "MTA" in a bold, sans-serif font.
+[p001_c0002] Metropolitan Transportation Authority
+### [p001_c0003] Capital Program Oversight Committee Meeting
+[p001_c0004] September 2021
+### [p001_c0005] Committee Members
+[p001_c0006] J. Lieber, Acting Chair & CEO
+[p001_c0007] N. Zuckerman, Vice Chair
+[p001_c0008] A. Albert
+[p001_c0009] J. Barbas
+[p001_c0010] N. Brown
+[p001_c0011] M. Fleischer
+[p001_c0012] R. Glucksman
+[p001_c0013] R. Herman
+[p001_c0014] D. Jones
+[p001_c0015] K. Law
+[p001_c0016] R. Linn
+[p001_c0017] D. Mack
+[p001_c0018] J. Samuelsen
+[p001_c0019] V. Tessitore
+
+## Page 2
+
+### [p002_c0001] Capital Program Oversight Committee Meeting
+[p002_c0002] 2 Broadway, 20th Floor Board Room
+[p002_c0003] New York, NY 10004
+[p002_c0004] Monday, 9/13/2021
+[p002_c0005] 2:00 - 3:00 PM ET
+### [p002_c0006] 1. PUBLIC COMMENTS PERIOD
+### [p002_c0007] 2. APPROVAL OF MINUTES JULY 19, 2021
+[p002_c0008] CPOC Committee Minutes - Page 3
+### [p002_c0009] 3. COMMITTEE WORK PLAN
+[p002_c0010] 2021 - 2022 CPOC Committee Work Plan - Page 5
+### [p002_c0011] 4. C&D LIRR / MNR CAPITAL PROGRAM UPDATE
+[p002_c0012] C&D LIRR Capital Program Committee Update - Page 7
+[p002_c0013] IEC Project Review on Morris Park Locomotive Shop - Page 10
+[p002_c0014] IEC Project Review on Jamaica Capacity Improvement-Phase 1 - Page 14
+[p002_c0015] C&D MNR Capital Program Committee Update - Page 18
+[p002_c0016] IEC Project Review on Harmon Shop Replacement Phase V Stage 2 - Page 23
+[p002_c0017] IEC Project Review on Customer Service Initiative (CSI) Program - Page 28
+### [p002_c0018] 5. CAPITAL PROGRAM STATUS
+[p002_c0019] Commitments, Completions, and Funding Report - Page 32
+### [p002_c0020] 6. QUARTERLY TRAFFIC LIGHT REPORTS
+[p002_c0021] Second Quarter 2021 Core & Sandy Traffic Light Reports - Page 50
+
+## Page 3
+
+### [p003_c0001] MINUTES OF MEETING MTA CAPITAL PROGRAM OVERSIGHT COMMITTEE July 19, 2021 New York, New York 8:30 A.M.
+### [p003_c0002] CPOC members present in person:
+[p003_c0003] Hon. Patrick Foye Hon. Andrew Albert Hon. Randolph Glucksman Hon. Rhonda Herman Hon. Robert Linn Hon. Vincent Tessitore, Jr.
+### [p003_c0004] CPOC members present via video conference:
+[p003_c0005] Hon. Norman Brown Hon. David Mack
+### [p003_c0006] CPOC members not present:
+[p003_c0007] Hon. Jamey Barbas Hon. Michael Fleischer Hon. David Jones Hon. Kevin Law Hon. John Samuelsen Hon. Neal Zuckerman
+### [p003_c0008] MTA staff present:
+[p003_c0009] Janno Lieber Evan Eisland Barney Gray Tim Mulligan Mark Roche Tom Savio
+### [p003_c0010] Independent Engineering Consultant staff present via video conference:
+[p003_c0011] Joe Devito Kent Haggas Mark Sielucka
+[p003_c0012] * * *
+[p003_c0013] Chairman Foye called the July 19, 2021 meeting of the Capital Program Oversight Committee to order at 8:30 A.M.
+### [p003_c0014] Public Comments Period
+[p003_c0015] There were two public speakers in the public comments portion of the meeting: Jason Anthony; Murray Boden.
+### [p003_c0016] Meeting Minutes
+[p003_c0017] The minutes to the meeting held on June 23, 2021 were approved.
+### [p003_c0018] Committee Work Plan
+[p003_c0019] There were no changes to the CPOC Work Plan.
+[p003_c0020] _Master Page # 3 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 4
+
+### [p004_c0001] C&D Capital Program Update
+[p004_c0002] Mr. Lieber provided a brief introduction to the stations-related work under C&D, citing this as an area that has been prioritized during the COVID period. Mr. Gray then gave an overview of the Stations Business Unit, including details on the following projects Accessibility Upgrade at Eight Stations ($340M budget; substantial completion scheduled for July 2023; currently 15% complete), and ADA upgrade to 149th Street & Tremont Avenue in the Bronx ($170M budget; substantial completion scheduled for July 2023; currently 11% complete). In its Project Review of the Accessibility Upgrade at Eight Stations, the IEC noted that the Estimate at Completion is within budget, but initial construction activities have slipped their preliminary schedule by three months -- primarily due to the time required to develop commercial agreements with utility companies. The IEC then offered the following observations: 1) While the IEC believes the project's mitigation strategies will avoid any delay to the completion date caused by utility issues (given that there are fully two years to go in the contract), the IEC suggests that C&D explore business process improvements with the regional utility companies to reduce the risk of delay to future design-build projects; and 2) The Program Management Consultant has been proactive in managing risks and establishing processes to maintain timely review of the Design-Builder's product. In its Project Review of the ADA upgrade to 149th Street & Tremont Avenue, the IEC noted that while the project is on budget and on schedule, recovery efforts allowing the project to remain on schedule have been accomplished through both the resequencing of activities and reducing the durations of remaining work, which may limit the options available to mitigate any future delays. The IEC then commented that project risks have been well managed to date, and that potential design and early construction risks have not materialized. However, because the original risk assessment focused only on 149 th Street and did not include Tremont Avenue, the IEC suggests that a risk review update be undertaken to revisit existing concerns and incorporate the Tremont Avenue portion of the work. Further details of the presentations, and Committee Members' comments and questions with respect thereto, are included in the video recording of the meeting maintained in MTA's records.
+### [p004_c0003] MTA Capital Program Commitments & Completions and Funding
+[p004_c0004] Mr. Mulligan reported that through June, agencies have achieved commitments of $1.54B out of a $2.12B target, but that most of those commitments that were not achieved in the 2 nd quarter will be accomplished in the 3 rd quarter. Further, he stated that the Capital Plan pause of last year is not causing a retreat in this year's goal and ambition of $6.2B of commitments. With respect to completions, Mr. Mulligan reported that the agencies have completed just over $2B out of a $3.25B goal, and that 97% of the historic $7.2B commitment goal is anticipated to be met by year's end. Further details of the presentation, and Committee Members' comments and questions with respect thereto, are included in the video recording of the meeting maintained in MTA's records.
+### [p004_c0005] Adjournment
+[p004_c0006] Upon motion duly made and seconded, Chairman Foye adjourned the July 19, 2021 meeting of the MTA Capital Program Oversight Committee at 9:07 AM.
+[p004_c0007] Respectfully submitted, Michael Jew-Geralds Office of Construction Oversight
+[p004_c0008] _Master Page # 4 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 5
+
+### [p005_c0001] Metropolitan Transportation Authority
+### [p005_c0002] 2021- 2022 CPOC Committee Work Plan
+### [p005_c0003] I. Recurring Agenda Items
+[p005_c0004] Approval of the Minutes Committee Work Plan Commitments/Completions and Funding Report
+### [p005_c0005] II. Specific Agenda Items
+### [p005_c0006] October
+[p005_c0007] Overall Capital Program
+- [p005_c0008] • Infrastructure
+### [p005_c0009] November
+[p005_c0010] Overall Capital Program
+- [p005_c0011] • Signals and Train Control
+[p005_c0012] Minority, Women and Disadvantaged Business Participation
+[p005_c0013] Small Business Development Program
+### [p005_c0014] December
+[p005_c0015] Overall Capital Program
+- [p005_c0016] • Integrated Megaprojects
+[p005_c0017] OMNY
+[p005_c0018] Quarterly Traffic Light Report
+### [p005_c0019] January
+[p005_c0020] Overall Capital Program
+- [p005_c0021] • Stations
+### [p005_c0022] February
+[p005_c0023] Overall Capital Program
+- [p005_c0024] • B&T • Railroads
+[p005_c0025] _Master Page # 5 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 6
+
+### [p006_c0001] March
+[p006_c0002] Overall Capital Program
+- [p006_c0003] • Infrastructure
+[p006_c0004] Quarterly Traffic Light Report
+### [p006_c0005] April
+[p006_c0006] Overall Capital Program
+- [p006_c0007] • Signals and Train Control
+[p006_c0008] Minority, Women and Disadvantaged Business Participation
+[p006_c0009] Security Projects
+### [p006_c0010] May
+[p006_c0011] Overall Capital Program
+- [p006_c0012] • Integrated Megaprojects
+### [p006_c0013] June
+[p006_c0014] Overall Capital Program
+[p006_c0015] Rolling Stock
+[p006_c0016] OMNY
+[p006_c0017] Quarterly Traffic Light Report
+### [p006_c0018] July
+[p006_c0019] Overall Capital Program
+- [p006_c0020] • Stations
+### [p006_c0021] September
+[p006_c0022] Overall Capital Program
+- [p006_c0023] • Railroads
+[p006_c0024] Quarterly Traffic Light Report
+[p006_c0025] _Master Page # 6 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 7
+
+### [p007_c0001] MTA Board & Capital Program Committee Update: LIRR Business Unit Projects
+[p007_c0002] September 2021
+[p007_c0003] MTA Construction & Development's last report to the Capital Program Oversight Committee on Long Island Rail Road Business Unit Projects was in October 2019. Despite severe constraints on MTA finances and challenges presented by COVID-19, C&D's LIRR Business Unit successfully awarded ten contracts from October 2019 to August 2021. In the final third of this year the plan is to commit another 11 contracts (of which five are part of the Small Business Development Program), bringing the total commitment value for third-party projects in 2021 to $91.5M.
+[p007_c0004] C&D's LIRR Business Unit has also been able to complete 12 projects since the October 2019 presentation with a value of $ $466.2M. These included high profile projects like the Station Initiative Phase 1, Jamaica Platform F, elevators at Nostrand Avenue and Murray Hill, new Mid-Suffolk Yard, and the Diesel Locomotive shop at Morris Park.
+[p007_c0005] This document summarizes the progress of three major projects: Mid-Suffolk Yard, Morris Park Locomotive Shop and Jamaica Capacity Improvements Phase I.
+### [p007_c0006] New Mid Suffolk Yard
+[p007_c0007] Contract 6259
+[p007_c0008] This Design-Build project is to build a new yard facility, with 11 new tracks, needed to support East Side Access service. The project is in closeout phase.
+[p007_c0009]
+
+```text
+PROJECT STATUS Original Actual Substantial Completion March 2020 Oct. 2020 Budget $136.0 M $134.5 M
+```
+[p007_c0010] The project is approximately 99% complete.
+[p007_c0011] The project included the construction of 11 new storage tracks each capable of holding a 12-car train sets, a material-storage building, AC & DC substations, secure laydown areas, and a two-story employee facility. The project also includes furnishing and delivering new train-control signal infrastructure and special trackwork that will allow for universal access to the yards.
+- [p007_c0012] ➤ The new yard was placed in service in March 2021. ➤ The delivery of new main line switches is ongoing, due to be completed by October 2021. ➤ The new Signal System was delivered in June. It will be installed by LIRR internal forces along with the special trackwork in a second phase of the project.
+[p007_c0013] _Page 1 of 3_
+[p007_c0014] _Master Page # 7 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 8
+
+### [p008_c0001] Morris Park Locomotive Shop
+[p008_c0002] Contract 6241
+[p008_c0003] C&D-LIRR is building a new Locomotive Shop at Morris Park to replace a 131-year-old facility. The new shop will shorten repair turn-around times, support overhaul and heavy maintenance efforts, which will increase the reliability of LIRR’s diesel fleet.
+[p008_c0004]
+
+```text
+PROJECT STATUS Original Actual Substantial Completion March 2020 July 2021 Budget $102.3 M $106.0 M
+```
+[p008_c0005] The project is approximately 99% complete.
+[p008_c0006] As part of this project, C&D-LIRR built new shop tracks and a new lead track into the yard (the “Motor Lead”), the section of the Yard where out-of-service equipment is stored, and a brand-new locomotive maintenance facility to support the railroad’s fleet of DE 24 and DM 21 diesel and dual-mode diesel-electric locomotives and work train diesel locomotives. With these improvements, the new facility is expected to increase productivity by providing a more efficient shop environment. The existing Sheridan and Roundhouse shops lack adequate space, shop equipment, and at times require locomotive transfer between facilities depending on the required work.
+[p008_c0007] Two main issues have delayed the project. First, the original shop equipment manufacturer went out of business in early 2019; the Design-Builder working with C&D-LIRR had to find a new manufacturer. Second, the original plans called for Con Edison to install a fifth feeder to the existing Morris Park Electrical Service Building. Ultimately Con Edison required C&D-LIRR to utilize the existing four feeders, requiring the Design-Builder and C&D-LIRR to redesign the distribution system accordingly.
+[p008_c0008] Construction on the building, shop and office space was completed in October 2020, and the project reached substantial completion in July 2021.
+### [p008_c0009] Jamaica Capacity Improvements Phase I
+[p008_c0010] Platform F Contract 6185A
+[p008_c0011] Beaver Interlocking Structural Platforms (SBMP) Contract 6392
+[p008_c0012] The Jamaica Capacity Improvement project is a multi-decade initiative to dramatically increase through-put at Jamaica, the busiest node in the LIRR network. The first phase of the project (Phase 1), which is underway now, includes multiple contracts, as well as in-house work, managed as one integrated project. The work includes a new Platform F to accommodate Brooklyn-to-Jamaica service, a requirement for the East Side Access project. It also includes new universal interlockings to support operational flexibility and prepare for the next phase of the greater project, the reconfiguration of all tracks around Jamaica.
+[p008_c0013]
+
+```text
+PROJECT STATUS Original Forecast Substantial Completion* Oct. 2021 June 2022 Budget $301.6 M $301.6 M
+```
+[p008_c0014] The project is approximately 84% complete.
+[p008_c0015] * Project Level Substantial Completion
+[p008_c0016] _Page 2 of 3_
+[p008_c0017] _Master Page # 8 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 9
+
+### [p009_c0001] Construction & Development
+[p009_c0002] The portion of the project that is required to provide East Side Access service – including the reconfiguration of Johnson Avenue Train Yard, the construction of freight bypass track [south bypass], the new Platform, and the associated infrastructure work including the installation of switches, realignment of track in Jay/Hall/Dunton Interlockings, and modifications to existing signal system – is nearly complete. The work on Platform F, which completed in February 2020, is also ready for ESA opening-day service.
+[p009_c0003] Work on the additional project scope – including the installation of a new universal interlocking (Beaver) and new cross-overs in Metropolitan Interlocking and Union – is progressing. A Small Business Mentor contract to provide structural platforms for the new signal system at Beaver Interlocking was awarded March 2021.
+[p009_c0004] The project has been delayed because LIRR in-house forces have been diverted to other priority projects, including Double Track, Third Track, East Side Access and PTC during the course of the project. C&D-LIRR is mitigating these delays by resequencing work where possible, coordinating track outages and supporting resource planning efforts.
+### [p009_c0005] Factors affecting the delivery of C&D LIRR Business Unit projects
+[p009_c0006] The LIRR Business Unit is facing several challenges related to the delivery of its Capital Program.
+- [p009_c0007] • Staffing: Development and opportunities for existing and new staff. • Training: Expansion of Design-Build; New consolidated C&D Processes and Procedures are in development. • Resources: Significant work in 2021 and 2022 requiring Force Account and Track Outages are in development.
+[p009_c0008] _Page 3 of 3_
+[p009_c0009] _Master Page # 9 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 10
+
+### [p010_c0001] September 2021 CPOC Independent Engineering Consultant Project Review
+### [p010_c0002] Morris Park Locomotive Shop
+> [p010_c0003] The logo for McKiback, featuring a red square with a white star in the upper right corner and a large white letter 'M' in the center.
+[p010_c0004] McKIBACK MTA Independent Engineering Consultant
+[p010_c0005] _Master Page # 10 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 11
+
+### [p011_c0001] Morris Park Locomotive Shop
+### [p011_c0002] Scope
+[p011_c0003] Morris Park Locomotive Shop project constructs a modern locomotive maintenance facility for the railroad's fleet of diesel and dual-mode diesel-electric locomotives, as well as work train diesel locomotives. The new building, which includes storage and employee facilities, will improve yard functionality and increase worker productivity through efficiencies.
+[p011_c0004] Railroad Construction Company, in association with AMCC Corp., were selected as Design Builder and given NTP December 2017.
+> [p011_c0005] The logo for McKissack, featuring a red square with a white star and the letter M.
+[p011_c0006] MTA Independent Engineering Consultant
+[p011_c0007] _2_
+[p011_c0008] _Master Page # 11 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 12
+
+### [p012_c0001] Morris Park Locomotive Shop
+### [p012_c0002] Schedule Review
+[p012_c0003] The design-build contract was declared Substantially Complete in July 2021, a delay of 8 months since the last CPOC report in October 2020 due to:
+- [p012_c0004] ■ A delay to delivery and installation of permanent power required for acceptance and commissioning of the building systems which is needed to obtain the temporary Certificate of Occupancy.
+### [p012_c0005] Budget Review
+[p012_c0006] The project budget is $102.2M and the current reported project EAC is $106.M. IEC believes while the project's EAC is in line with the remaining work, the negotiation of an outstanding claim adds cost risk.
+### [p012_c0007] Risks
+[p012_c0008] The completion of final testing and commissioning of all the locomotive drop tables is expected in September 2021.
+- [p012_c0009] ■ A newly designed thrust bearing is being retested and will be replaced on all drop tables (at the expense of the contractor).
+[p012_c0010] The timely completion of the remaining punch list items and obtaining a permanent Certificate of Occupancy.
+- [p012_c0011] ■ MTA C&D is asking the contractor to increase their manpower level during this phase to ensure best possible Final Completion date.
+> [p012_c0012] The logo for McKiback, featuring a stylized red 'M' with a white star in the upper right corner.
+[p012_c0013] McKIBACK MTA Independent Engineering Consultant
+[p012_c0014] _3_
+[p012_c0015] _Master Page # 12 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 13
+
+### [p013_c0001] Morris Park Locomotive Shop
+### [p013_c0002] Observations
+- [p013_c0003] ❑ The timely occupancy and beneficial use of this facility was adversely affected by the previously stated design delays and Con Edison connectivity issues. ❑ The move in date is now planned for September 2021. ❑ The level of effort to required to secure the permanent power, install and commission the fire suppressant system, and quality issues with drop table components was not anticipated. ❑ The PMT made every effort to pretest systems with temporary power in order to minimize schedule impact.
+### [p013_c0004] Recommendation
+- [p013_c0005] ❑ Incorporate Lessons Learned from the challenges experienced on this project with electric utility connectivity and implementation as a tool for risk recognition and development of mitigations on future shops and yards projects.
+> [p013_c0006] The logo for McKissack, featuring a stylized red 'M' with a white star in the upper right corner.
+[p013_c0007] McKISSACK MTA Independent Engineering Consultant
+[p013_c0008] _4_
+[p013_c0009] _Master Page # 13 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 14
+
+### [p014_c0001] September 2021 CPOC Independent Engineering Consultant Project Review
+### [p014_c0002] Jamaica Capacity Improvement-Phase 1
+> [p014_c0003] The logo for McKissack, featuring a red square with a white star in the upper right corner and a large white letter 'M' in the center.
+[p014_c0004] McKISSACK MTA Independent Engineering Consultant
+[p014_c0005] _Master Page # 14 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 15
+
+### [p015_c0001] Jamaica Capacity Improvement Phase 1
+### [p015_c0002] Scope
+[p015_c0003] The scope of work for the Jamaica Capacity Improvement Phase 1 project is comprised of 3 third-party contracts along with significant force account work. Major work elements include the following:
+- [p015_c0004] ❑ Construction of a new Jamaica Platform (Platform F) for Brooklyn-to-Jamaica Service, the removal / installation of switches and realignment of track. ❑ Demolition and installation of third rail infrastructure, reconfiguration of Johnson Avenue Train Yard, construction of freight bypass track [south bypass] and modifications to the existing signal system.
+> [p015_c0005] The logo for McKiback, featuring a red square with a white star in the upper right corner and a large white letter 'M' below it.
+[p015_c0006] MTA Independent Engineering Consultant
+[p015_c0007] _2_
+[p015_c0008] _Master Page # 15 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 16
+
+### [p016_c0001] Jamaica Capacity Improvement Phase 1
+### [p016_c0002] Schedule Review
+- [p016_c0003] □ Johnson Yard reconfiguration construction was completed and placed in-service May 31, 2016. □ Platform F was completed and placed in-service March 13, 2020. □ Substantial completion (SC) of Phase 1 which includes the remaining track, switch and signal work, is scheduled for completion in June 2022. The 8-month slip from the original schedule date of October 2021 is primarily due to force account needs on competing priority projects(PTC and LIRR Expansion). □ Based on review of the remaining work, the Independent Engineering Consultant (IEC) finds the forecast June 2022 SC is achievable.
+### [p016_c0004] Budget Review
+- [p016_c0005] □ The original project budget and EAC of $301.6M have not changed. □ IEC's cost review indicates the current budget of $301.6M remains adequate to complete Phase 1.
+> [p016_c0006] The logo for McKiback, featuring a stylized red 'M' with a white star in the upper right corner.
+[p016_c0007] MTA Independent Engineering Consultant
+[p016_c0008] _3_
+[p016_c0009] _Master Page # 16 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 17
+
+### [p017_c0001] Jamaica Capacity Improvement Phase 1
+### [p017_c0002] Risks
+[p017_c0003] The project top schedule and cost risks and corresponding mitigations include the following:
+- [p017_c0004] ❑ Force account availability ❑ The Project Management Team (PMT) has obtained operations approval to complete switch work during the end-of-year LIRR moratorium which will reduce this schedule risk. ❑ Claims ❑ A claim has been submitted by the Platform F contractor and the PMT has performed a detailed review with supporting documentation in response.
+### [p017_c0005] Observations
+- [p017_c0006] ❑ The project was challenged with the neighboring NYS DOT Van Wyck Expwy Widening project being within the boundaries of work for this project. Close coordination between MTA C&D/LIRR and NYS DOT was required in order to minimize schedule impacts. ❑ The PMT continues to be flexible when planning for opportunities associated with force account availability.
+> [p017_c0007] The logo for McKiback, featuring a stylized red 'M' with a white star in the upper right corner.
+[p017_c0008] MTA Independent Engineering Consultant
+[p017_c0009] _4_
+[p017_c0010] _Master Page # 17 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 18
+
+### [p018_c0001] MTA Board & Capital Program Committee Update: C&D MNR
+[p018_c0002] September 2021
+[p018_c0003] MTA Construction & Development's last report to the Capital Program Oversight Committee on Metro-North Railroad (MNR) projects was submitted in October 2019. Since then, C&D's MNR Business Unit has successfully awarded 25 contracts, despite severe constraints and uncertainty on MTA finances. Now that the MTA's financial outlook is more certain, C&D-MNR is planning to award another 19 contracts by December 2021 worth $945 M, bringing the total financial commitment for 2021 to $2.4 B.
+[p018_c0004] Since October 2019, the Metro-North Railroad Business Unit reached substantial completion on 19 contracts and made significant progress on dozens more projects. Through C&D's Acceleration Program, the MNR Business Unit was able to take advantage of reduced train schedules to perform more work on tracks and in stations.
+[p018_c0005] This document summarizes the progress on four of the Business Unit's most significant initiatives: Harmon Shop Replacement, Customer Service Initiatives, Communication and Signals improvements (Harlem Wayside Communication and Signal Improvements, Harmon to Poughkeepsie Signal Phase 1 and Sandy Communication and Signals Infrastructure Restoration) and the Park Ave Viaduct Priority Repairs and Replacement.
+### [p018_c0006] Harmon Shop Phase 5 Stage 2
+[p018_c0007] This Design-Build project will replace MNR's 100+ year old maintenance facility in Croton-on-Hudson. The Harmon shop, along with its supporting facilities, are the largest electric car maintenance facility for MNR rolling stock.
+[p018_c0008] Main Shop (Building 6)
+[p018_c0009] Building 5 Storeroom
+[p018_c0010]
+
+```text
+PROJECT STATUS Original Forecast Substantial Completion October 2022 April 2023 Budget $439.6 M $439.6 M The project is approximately 41% complete.
+```
+[p018_c0011] The Phase 5, Stage 2, portion of this project scope is to demolish and reconstruct the 250,000 sq ft Main Shop and its storeroom, as well as replacing the facility's heavy equipment including truck hoists, railcar hoists, overhead cranes and lifts, etc.
+[p018_c0012] C&D is repositioning several buildings/structures within the facility to streamline workflow efficiency by allowing materials to be prepped, assembled into components, installed onto the cars, and finally inspected and tested more easily. This includes the construction of a new overpass to connect the Main Shop with the Wheel Shop for more efficient transportation of parts and components.
+[p018_c0013] The project also entails replacing shop equipment with newer and more efficient technology, allowing MNR in-house forces to perform a larger percentage of component overhauls and saving on the premium cost of shipping the components
+[p018_c0014] _Page 1 of 5_
+[p018_c0015] _Master Page # 18 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 19
+
+[p019_c0001] out to a third-party vendor for repair and maintenance. Factory acceptance testing of the new equipment is on-going.
+[p019_c0002] This project is expected to stay on budget. Substantial completion is delayed six months because a delay in the close-out of Phase 5 Stage 1.
+### [p019_c0003] Customer Service Visual and Audio Improvements at 20+ Stations
+[p019_c0004] This project is to improve visual and audio customer service information at Grand Central Terminal and 20 outlying stations on the Harlem, Hudson, New Haven and Port Jervis Lines. The project includes multiple contracts, administered together by one project manager and system integrator for project efficiencies.
+[p019_c0005]
+
+```text
+PROJECT STATUS Original Forecast Substantial Completion April 2021* Dec 2021* Budget $220 M $216 M The project is approximately 99% complete.
+```
+[p019_c0006] (*) Six of the contracts have achieved substantial completion. The seventh contract slipped nine months for software testing.
+- [p019_c0007] Grand Central Terminal Harlem-125 th St. Melrose Wakefield Riverdale Tremont Ossining Morris Heights Spuyten Duyvil Tarrytown Poughkeepsie Pelham Mt Vernon East Larchmont Harrison Rye New Rochelle Mamaroneck Port Chester Harriman Nanuet
+[p019_c0008] C&D is nearing completion on this multi-year initiative to dramatically modernize both the backend and frontend technology used to deploy information to our customers. The screens installed throughout the project locations not only improve the customer experience, but also generate revenue for the MTA.
+[p019_c0009] At Grand Central Terminal, C&D-MNR constructed new audio and visual public address system, electronic big boards and gate boards to provide riders with up-to-date train schedules and information, and electronic displays for advertisements.
+[p019_c0010] At 20 outlying stations, C&D-MNR installed new audio and visual public address systems, electronic information displays to provide riders with up-to-date train schedules and information, electronic displays for advertisements, security cameras, and elevator monitoring upgrades. A new server room was constructed to allow for a centralized, digital library of security footage.
+[p019_c0011] Managing multiple contracts as one project has generated cost and schedule savings. Completed designs and detail drawings were replicated across stations, and less coordination and contractor procurement time were required. With a more substantial materials procurement, the Contractor was also able to obtain better pricing and negotiation leverage from fabricators.
+[p019_c0012] _Page 2 of 5_
+[p019_c0013] _Master Page # 19 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 20
+
+### [p020_c0001] Communication & Signal Infrastructure Improvements and Restoration
+[p020_c0002] C&D-MNR is overseeing two different projects to replace outdated Communication & Signal equipment across the Metro-North network, with far more powerful and resilient equipment. The two projects are the Harlem Wayside Communication and Signal Improvements and the Harmon to Poughkeepsie Signal Phase 1.
+### [p020_c0003] Harlem Wayside Communication & Signal Improvements
+### [p020_c0004] Harlem Line:
+[p020_c0005] Woodlawn to Southeast Stations
+[p020_c0006]
+
+```text
+PROJECT STATUS Original Forecast Substantial Completion March 2020 March 2022 Budget $61.3 M $130.2 M The project is approximately 75% complete.
+```
+### [p020_c0007] Harmon to Poughkeepsie Signal Phase 1
+### [p020_c0008] Hudson Line:
+[p020_c0009] Croton-Harmon to Poughkeepsie
+[p020_c0010]
+
+```text
+PROJECT STATUS Original Forecast Substantial Completion February 2020 March 2023 Budget $69.8 M $122.7 M The project is approximately 57% complete.
+```
+[p020_c0011] Both projects will replace and modernize the existing communication cables to serve the PTC system, communications and signal systems, security system, customer service public address and ticket vending machines. The Hudson Express Cable project will also replace the signal power cable.
+[p020_c0012] In Mid-2021 both projects were transferred to C&D to fully manage from MNR C&S. Both projects have extensive schedule and cost variances as a result of changes in (1) available support resources from flagging and power; (2) available time to access track; and (3) minimum pre-Contract site investigation.
+[p020_c0013] Both projects are being closely managed with extensive coordination of all support, management, and contractor teams to coordinate project completion.
+[p020_c0014] _Page 3 of 5_
+[p020_c0015] _Master Page # 20 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 21
+
+### [p021_c0001] Construction & Development
+### [p021_c0002] Sandy Restoration Phase 2
+[p021_c0003] Greystone to Bronx
+### [p021_c0004] Sandy Restoration Phase 1 & 2
+[p021_c0005]
+
+```text
+PROJECT STATUS Original Forecast Substantial Completion July 2019 June 2022 Budget $303 M $369 M The project is approximately 93% complete (Infrastructure only, cutover and commissioning will follow).
+```
+[p021_c0006] The Sandy Restoration Phase 2 project replaced critical signal power and communication infrastructure from Greystone to the Bronx that was damaged during Hurricane Sandy. The new infrastructure is not only up to modern standards, but also more resilient to environmental hazards.
+[p021_c0007] C&D-MNR is constructing new conduits and signal power above and below ground, positive/negative feeders, track assets, as well as elevated infrastructure such as substations, snow melters, RTU houses, electrical meter boxes, electrical equipment, etc. on platforms.
+[p021_c0008] One of the main challenges on these projects was obtaining track outages needed to perform the work. As the project progressed, C&D improved the efficiency of these outages by both sharing the track outages with on-going maintenance projects, and concurrently performing work in multiple locations during both nights and weekends. The project also capitalized on the reduced revenue train schedule during the pandemic. Additionally, MNR BU dedicated a seasoned engineer to coordinate on a daily basis the necessary internal support in order to ascertain that each outage is used productively.
+[p021_c0009] Advancing the work at the interlocking was done during the reduced service stemming from the Pandemic.
+[p021_c0010] Lack of initial site investigation during preliminary design resulted in unforeseen site conditions during the construction. The project also experienced insufficient flagging, power and C&S support due to PTC high priority. Additionally, the contractors lack of productivity contributed to the delays.
+[p021_c0011] _Page 4 of 5_
+[p021_c0012] _Master Page # 21 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 22
+
+### [p022_c0001] Construction & Development
+### [p022_c0002] Park Avenue Viaduct Priority Repairs
+[p022_c0003] The Park Avenue Viaduct Priority Repairs project will retrofit parts of the 128-year-old Park Avenue Viaduct, which carries 98% of all MNR trains – all trains arriving and departing from the Grand Central Terminal.
+[p022_c0004]
+
+```text
+PROJECT STATUS Original Forecast Substantial Completion May 2022 May 2022 Budget $10.3 M $10.3 M The project is approximately 25% complete.
+```
+[p022_c0005] The Park Avenue Viaduct Priority Repairs project is performing immediate retrofit to the viaduct structure, including the installation of retrofit brackets on the fascia columns along the Park Avenue Viaduct between E 115 St and E 123 St, and between E 128 St and E 132 St.
+[p022_c0006] C&D-MNR BU is also planning to replace a portion of the viaduct between E 115 St and E 132 St, starting in late 2022, under a separate, follow-up contract. That work will consist of replacing the foundation, removing the existing bridge structure, and replacing it with a new bridge. Work will be challenging as the Viaduct stretches through many communities in upper Manhattan, and train service will need to remain in operation.
+### [p022_c0007] Factors affecting the delivery of C&D-MNR projects
+[p022_c0008] The C&D-MNR Business Unit is facing several challenges related to the delivery of its Capital Program.
+- [p022_c0009] • Staff attrition continues to be an MTA-wide issue affecting the C&D-MNR Business Unit, especially as the volume of work increases post-COVID. C&D Human Resources has obtained permission to hire new team members as well as process employee movement. • In the upcoming year, many MNR projects will be Design-Build. MNR BU has taken the initiative to take full advantage of that delivery method. The C&D Delivery Department is running workshops and providing a range of other learning opportunities on that topic. • Oversubscription of projects compared to available outages; need to prioritize capital projects over maintenance projects where there can be delayed with no impact. • Shortage of Power, C&S and Flagging support staff due to attrition and past hiring freeze contributed to the delays.
+[p022_c0010] _Page 5 of 5_
+[p022_c0011] _Master Page # 22 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 23
+
+### [p023_c0001] September 2021 CPOC Independent Engineering Consultant Project Review
+### [p023_c0002] Harmon Shop Replacement Phase V Stage 2
+### [p023_c0003] Metro North Railroad
+[p023_c0004] McKIBACK MTA Independent Engineering Consultant
+[p023_c0005] _Master Page # 23 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 24
+
+### [p024_c0001] MNR Harmon Shop Replacement Phase V Stage 2
+[p024_c0002] The Harmon Shop Replacement follows a long-term master plan to upgrade and modernize the entire shop and yard complex over two decades, funded by successive capital programs. Phase V Stage 2 is the final stage of the program.
+> [p024_c0003] Note: DB signifies Design-Build Projects
+### [p024_c0004] Previous phases (2001 – 2013):
+[p024_c0005] Phase I (completed) : Yard Infrastructure
+[p024_c0006] Phase II (completed) : MoW Bldg, Communication Building, Material Distribution Center
+[p024_c0007] Phase III (completed) : Wheel True Facility, Coach and Locomotive Shops
+[p024_c0008] Phase IV (completed) : Priority roof repairs to Building #6
+### [p024_c0009] Current Phase (2014 – present):
+[p024_c0010] The current and final “Phase V” replaces the old equipment maintenance facility (“Building 6”) with new state-of-the-art Electric Car and Support Shop facilities.
+[p024_c0011] The work of Phase V is being completed in two separate contracts. Both contracts were awarded to the design-build team Skanska-ECCO III (“SE3”).
+[p024_c0012] Phase V - Stage 1 (completed) : Stage 1 completed the design and construction of the new Consist Shop and EMU Annex Buildings. This phase also completed the required preliminary engineering design work for both the Stage 1 and Stage 2 contracts.
+[p024_c0013] Phase V - Stage 2 (current work, 41% complete) : The scope of work includes the demolition of the remainder of Building 6 as well as the associated Building 5 storeroom and the construction of the balance of the Phase V Electric Car Shop and Support Shop facilities. The Stage 2 EMU Running Repair and Support Shop Facility will be constructed directly adjacent and functionally connected to the Consist Shop and will be connected to the EMU Annex Building via a new second-floor bridge overpass.
+[p024_c0014] McKIBACK MTA Independent Engineering Consultant
+[p024_c0015] _2_
+[p024_c0016] _Master Page # 24 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 25
+
+### [p025_c0001] MNR Harmon Shop Replacement Phase V Stage 2
+### [p025_c0002] Budget Review
+### [p025_c0003] Stage 2 remains within budget.
+[p025_c0004] The project budget and the Estimate at Completion (EAC) of $439.6 M have not changed since award.
+[p025_c0005] IEC analysis of project expenditures to date, contingency draw down, projected expenditures and remaining risks indicate the project will remain within budget.
+> [p025_c0006] Phase V Stage 2 Running Repair and Support Shop July 2021
+[p025_c0007] MTA Independent Engineering Consultant
+[p025_c0008] _3_
+[p025_c0009] _Master Page # 25 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 26
+
+### [p026_c0001] MNR Harmon Shop Replacement Phase V Stage 2
+### [p026_c0002] Schedule Review
+[p026_c0003] Stage 2 progress is being impacted by MNR operations, COVID and worksite access restrictions caused by delays to the previous stage.
+[p026_c0004] NTP was awarded to the design-build team Skanska-ECCO III (SE3) in October 2018 with a contract duration of 48 months.
+- [p026_c0005] ❑ A six-month time extension to April 30, 2023, was granted for delays associated with completing Stage 1. ❑ The latest schedule submitted by the design-build team indicates substantial completion on May 19, 2023. ❑ Reduced MNR service during the pandemic created an operational need for additional train storage space at Harmon Yards. Because of this, the South Yard has not been turned over to the design-builder as planned. ❑ In order to mitigate this construction impact and delay, track work has been re-sequenced between the north and south yards.
+[p026_c0006] McKISSACK MTA Independent Engineering Consultant
+[p026_c0007] _4_
+[p026_c0008] _Master Page # 26 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 27
+
+### [p027_c0001] MNR Harmon Shop Replacement Phase V Stage 2
+### [p027_c0002] IEC Observations
+[p027_c0003] The IEC notes that current completion forecasts require the following:
+- [p027_c0004] ❑ Finalization of required 4 months of continuous track outage planned in the north yard starting in December 2021. ❑ Critical work activities in the yards are constrained by a contractual black-out period from April to December. North yard track work must be completed prior to April 2022. MNR is coordinating with the design-build team and MNR Operations to re-sequence the affected work and complete before the start of the blackout period.
+### [p027_c0005] Risk Review
+- [p027_c0006] ❑ The top schedule risk is MNR Operations approval of contractor access to yard as detailed earlier in this report. ❑ Mitigation: Track work is being re-sequenced to accommodate MNR Operations and the location of laydown and staging areas were moved. ❑ Contractor productivity to complete required track work during the 4-month outage. ❑ Mitigation: The project team should confirm if contractor and force account resources allocated are sufficient to complete the work within the prescribed window. ❑ The top cost risk is unforeseen site conditions. ❑ Mitigation: Budgeted allowances were included in the contract for unforeseen utility work and underground conditions.
+[p027_c0007] McKIBACK MTA Independent Engineering Consultant
+[p027_c0008] _5_
+[p027_c0009] _Master Page # 27 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 28
+
+### [p028_c0001] September 2021 CPOC Independent Engineering Consultant Project Review
+### [p028_c0002] Metro North Railway Customer Service Initiative (CSI) Program
+> [p028_c0003] The logo for McKiback, featuring a red square with a white star in the upper right corner and a large white letter 'M' in the center.
+[p028_c0004] McKIBACK MTA Independent Engineering Consultant
+[p028_c0005] _Master Page # 28 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 29
+
+### [p029_c0001] CSI Program
+### [p029_c0002] Project Scope
+- [p029_c0003] ■ The CSI program provides real time customer information at Grand Central Terminal (GCT), as well as twenty Outlying Stations while upgrading all associated security and communication equipment. ■ In December 2017, MNR awarded 7 individual contracts, to perform the civil work, supply hardware and head-end equipment, software and database. An 8 th contract for the Consultant Construction Manager (CCM) services was awarded to WSP who performed the system integration activities.
+> [p029_c0004] The logo for McKiback, featuring a red square with a white star in the upper right corner and a large white letter 'M' below it.
+[p029_c0005] MTA Independent Engineering Consultant
+[p029_c0006] _2_
+[p029_c0007] _Master Page # 29 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 30
+
+### [p030_c0001] CSI Program
+### [p030_c0002] Budget Review
+- [p030_c0003] ❑ The current project Budget and Estimate at Completion of $220M and $216M, respectively, have remained the same since last reported at CPOC in October 2019. ❑ The IEC concurs with the project costs based on our review of expenditures to date of third party, force account, soft costs and forecast for remaining work.
+### [p030_c0004] Schedule Review
+- [p030_c0005] ❑ As of September 2021, 6 packages related to civil work, hardware development, equipment supply, and installation have met Substantial Completion (SC). ❑ Package 7 (Video surveillance) has slipped by 9 months to December 2021, due software testing issues. ❑ The IEC concurs with C&D assessment of the schedule.
+> [p030_c0006] The logo for McKiback, featuring a red square with a white star in the upper right corner and a large white letter 'M' below it.
+[p030_c0007] McKIBACK MTA Independent Engineering Consultant
+[p030_c0008] _3_
+[p030_c0009] _Master Page # 30 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 31
+
+### [p031_c0001] CSI Program
+### [p031_c0002] Observation
+- [p031_c0003] □ The project contracted with a third party CCM (WSP), to integrate the work performed by the individual contractors. This project structure helped minimize the interface and coordination issues between the various contractors. □ The Project Team identified a single resource to manage the access to GCT to overcome initial delays experienced by the Contractors.
+> [p031_c0004] The logo for McKiback, featuring a red square with a white star in the upper right corner and a large white letter 'M' below it.
+[p031_c0005] MTA Independent Engineering Consultant
+[p031_c0006] _4_
+[p031_c0007] _Master Page # 31 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 32
+
+### [p032_c0001] Master Page # 32 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+### [p032_c0002] MTA Capital Program Commitments & Completions
+[p032_c0003] through August 31, 2021
+[p032_c0004] _Metropolitan Transportation Authority_
+
+## Page 33
+
+### [p033_c0001] MTA Metropolitan Transportation Authority
+### [p033_c0002] Master Page # 33 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+### [p033_c0003] Capital Projects – Commitments – August 2021
+### [p033_c0004] MTA-wide 2021 Commitments
+> [p033_c0005] Period 2021 Annual Goal ($ in Millions) Budgeted Value ($ in Millions) Actual / Forecast ($ in Millions) 1Q $876 $661 $1,000 2Q $1,357 $590 $582 3Q $1,631 $909 $979 4Q $2,383 $3,448 $3,623 YTD $3,611 $1,816 $2,216
+[p033_c0006] Annual Goals: Dollar and time-based programmatic milestones for the commitment of contracts established at the start of each year and which are achievable during the year.
+[p033_c0007] Actuals: The value of the goals and any additional unplanned commitments as they are achieved during the year.
+[p033_c0008] Forecasts: The updated estimates by quarter for remaining goals as well as any unplanned commitments that might occur during the year.
+[p033_c0009] Budget: The budgeted value assumed in the capital program for the Actual and Forecasted commitments being tracked during the year.
+### [p033_c0010] Commitments Summary
+[p033_c0011] In 2021, agencies have a goal of $6.2 billion in overall commitments, including $3,839 million for NYCT, $485 million for LIRR, $777 million for MNR, $57 million for MTA Bus, $40 million for MTA Interagency, $867 million for MTA Network Expansion, and $173 million for B&T.
+[p033_c0012] Through August, agencies have committed $2.2 billion versus a $3.6 billion goal including a total of ~$0.5 billion of unplanned commitments that partially offset slippages of ~$1.9 billion. Currently, the MTA forecasts achieving $6.2 billion during the year primarily due to the impact of unplanned commitments. At the end of each quarter in 2021, schedule variances are explained on the following pages with current explanations covering the first half of 2021.
+
+## Page 34
+
+### [p034_c0001] MTA Metropolitan Transportation Authority
+### [p034_c0002] Master Page # 34 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+### [p034_c0003] NYCT/MTA Bus Capital Projects – Commitments – August 2021 – Budget Analysis and Schedule Variances
+### [p034_c0004] NYCT and MTA Bus Budget Analysis
+> [p034_c0005] Summary Chart Data 1Q 2Q 3Q 4Q YTD 2021 Annual Goal $342 $665 $991 $1,898 $1,881 Actual / Forecast $441 $293 $520 $2,619 $1,022 Budgeted Value $177 $290 $449 $2,332 $685 Bar Chart Data ($ in millions) Period 2021 Annual Goal Budgeted Value Actual / Forecast 1Q $342 $177 $441 2Q $665 $290 $293 3Q $991 $449 $520 4Q $1,898 $2,332 $2,619 YTD $1,881 $685 $1,022
+### [p034_c0006] Q1 and Q2 Schedule Variances
+[p034_c0007]
+
+```text
+Project Commitment Goal Forecast 2 NYCT/MTA Bus Amber Commitments NYCT Passenger Stations Replace 8 Traction Elevators / Various Construction Award Q1 $66.0 Q2(A) $50.0 Award was delayed due to multiple bid opening postponements. Bids received in March. Project cost decreased reflecting favorable bids received. Superstorm Sandy Repairs Rockaway Line Wrap-Up Construction Award Q2 $56.4 Q3(A) $40.2 Project award was delayed pending resolution of procurement and award issues. Lower actual project cost reflects favorable bids received.
+```
+[p034_c0008]
+
+```text
+Project Commitment Goal Forecast 4 NYCT/MTA Bus Red Commitments NYCT Stations Connection-Oriented Ethernet (COE) at 265 Stations, Ph 3B-2 Construction Award Q2 $43.5 Q4 $26.4 Project award rescheduled to reflect expected FTA funding availability. Project cost reflects latest estimate. Replace 12 Escalators Construction Award Q2 $120.5 Q3 $111.1 Bid Opening Date postponed to address suspension of Executive Order 202. Contract documents revised to add a schedule value to each station where an escalator is being replaced. Project cost reflects latest estimate.
+```
+[p034_c0009] NOTE: schedule variances continue onto next page.
+
+## Page 35
+
+### [p035_c0001] Master Page # 35 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+### [p035_c0002] NYCT/MTA Bus Capital Projects – Commitments – August 2021 – Schedule Variances
+[p035_c0003]
+
+```text
+Project Commitment Goal Forecast 4 NYCT/MTA Bus Red Commitments (continued) NYCT Misc./Emergency Livingston Plz Elec and Mech Construction Award Q2 Q4 Sys Improvements, Ph B $53.6 $53.4 Award re-scheduled to accommodate contract advertisement and procurement. A recent additional award delay is due to extended time to finalize request for information (RFI) responses and process addenda. Track 8th Ave ROW (Misc. ) Bundle Construction Award Q2 2022 $83.2 $133.7 Project award rescheduled to accommodate for contract advertisement and procurement. Project cost reflects latest estimates for construction and support.
+```
+
+## Page 36
+
+### [p036_c0001] MTA Metropolitan Transportation Authority
+### [p036_c0002] Master Page # 36 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+### [p036_c0003] LIRR Capital Projects – Commitments – August 2021 – Budget Analysis and Schedule Variances
+### [p036_c0004] LIRR Budget Analysis
+> [p036_c0005] Summary Chart Data 1Q 2Q 3Q 4Q YTD 2021 Annual Goal $69 $168 $129 $118 $316 Actual / Forecast $40 $96 $80 $289 $185 Budgeted Value $40 $96 $80 $289 $185 LIRR Budget Analysis Data Period 2021 Annual Goal ($M) Budgeted Value ($M) Actual / Forecast ($M) 1Q 69 40 40 2Q 168 96 96 3Q 129 80 80 4Q 118 289 289 YTD 316 185 185
+### [p036_c0006] Q1 and Q2 Schedule Variances
+[p036_c0007]
+
+```text
+Project Commitment Goal Forecast 2 LIRR Red Commitments LIRR Superstorm Sandy Long Island City Yard Restoration and Resiliency Construction Award Q2 $13.4 Q4 $13.4 Project award delayed due to additional bidder questions impacting bid opening schedule. Rolling Stock Work Locomotives Purchase Q2 $35.7 Q4 $45.7 Project award delayed to allow more time to negotiate with vendor.
+```
+
+## Page 37
+
+### [p037_c0001] MTA Metropolitan Transportation Authority
+### [p037_c0002] Master Page # 37 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+### [p037_c0003] MNR Capital Projects – Commitments – August 2021 – Budget Analysis and Schedule Variances
+### [p037_c0004] MNR Budget Analysis
+> [p037_c0005] Summary Chart Data 1Q 2Q 3Q 4Q YTD 2021 Annual Goal $295 $223 $157 $103 $617 Actual / Forecast $357 $57 $45 $298 $435 Budgeted Value $276 $57 $46 $411 $355 ($ in millions) Legend: ■ 2021 Annual Goal ■ Budgeted Value ■ Actual / Forecast
+### [p037_c0006] Q1 and Q2 Schedule Variances
+[p037_c0007]
+
+```text
+Project Commitment Goal Forecast 1 MNR Amber Commitment MNR Stations GCT Trainshed Construction Award Q2 Q4 $183.3 $183.3 JP Morgan Chase has again shifted the award date in order to respond to requests for information (RFIs) from proposers.
+```
+
+## Page 38
+
+### [p038_c0001] MTA Metropolitan Transportation Authority
+### [p038_c0002] Master Page # 38 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+### [p038_c0003] MTA Expansion Capital Projects – Commitments – August 2021 – Budget Analysis and Schedule Variances
+### [p038_c0004] MTA Expansion Budget Analysis
+[p038_c0005]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2021 Annual Goal $143 $187 $329 $209 $636 Actual / Forecast $95 $81 $314 $366 $438 Budgeted Value $95 $81 $314 $366 $438
+```
+> [p038_c0006] MTA Expansion Budget Analysis Data Category 1Q 2Q 3Q 4Q YTD 2021 Annual Goal $143 $187 $329 $209 $636 Budgeted Value $95 $81 $314 $366 $438 Actual / Forecast $95 $81 $314 $366 $438
+### [p038_c0007] Q1 and Q2 Schedule Variances
+[p038_c0008]
+
+```text
+Project Commitment Goal Forecast
+```
+### [p038_c0009] 1 MTA Expansion Amber Commitments
+### [p038_c0010] MTA Expansion
+### [p038_c0011] East Side Access
+[p038_c0012]
+
+```text
+Rail Replacement Construction Award Q1 Q2(A) $20.0 $3.0
+```
+[p038_c0013] Project award was delayed to provide bidders additional time to submit bids. Award value reflects reduced material quantities.
+
+## Page 39
+
+### [p039_c0001] MTA Metropolitan Transportation Authority
+### [p039_c0002] Master Page # 39 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+### [p039_c0003] B&T Capital Projects – Commitments – August 2021 – Budget Analysis and Schedule Variances
+### [p039_c0004] B&T Budget Analysis
+> [p039_c0005] Summary Chart Data 1Q 2Q 3Q 4Q YTD 2021 Annual Goal $10 $97 $16 $50 $119 Actual / Forecast $52 $43 $18 $50 $106 Budgeted Value $58 $54 $18 $50 $124 The bar chart displays the budget analysis for B&T Capital Projects. The y-axis represents the amount in millions of dollars, ranging from $0 to $200. The x-axis shows the time periods: 1Q, 2Q, 3Q, 4Q, and YTD. For each period, three bars are shown: 2021 Annual Goal (blue), Budgeted Value (green), and Actual / Forecast (red). The values for each bar are labeled on top. The legend at the bottom identifies the colors: blue for 2021 Annual Goal, green for Budgeted Value, and red for Actual / Forecast.
+### [p039_c0006] Q1 and Q2 Schedule Variances
+[p039_c0007] The Q1 schedule variance reflects the early award of the installation of protective fencing at the Verrazzano-Narrows Bridge. There are no Q2 schedule slippages to report. Q3 schedule variances will be reported in October 2021.
+
+## Page 40
+
+### [p040_c0001] MTA Metropolitan Transportation Authority
+### [p040_c0002] Master Page # 40 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+### [p040_c0003] Capital Projects – Completions – August 2021
+[p040_c0004]
+
+```text
+Actual MTA-wide 2021 Major Completions Post 2021 Goal Jan-21 Feb-21 Mar-21 Apr-21 May-21 Jun-21 Jul-21 Aug-21 Sep-21 Oct-21 Nov-21 Dec-21 Total 51 1 1 1 5 3 1 3 0 7 8 2 15 4 Jan-21 1 1 Feb-21 2 1 1 Mar-21 1 1 Apr-21 3 2 1 May-21 7 1 1 2 1 Jun-21 7 2 2 1 2 1 1 Jul-21 3 1 1 1 1 Aug-21 5 1 1 3 Sep-21 2 1 1 Oct-21 7 1 5 1 Nov-21 2 2 Dec-21 11 8 3
+```
+[p040_c0005] BLUE = Forecast/Actual earlier than Goal GREEN = Forecast/actual matches Goal AMBER = Forecast/actual within 2 months of Goal RED = Forecast/actual beyond 2 months of Goal
+### [p040_c0006] Completions Summary
+[p040_c0007] In 2021, agencies have a goal of completing $7.2 billion in work including 51 major completions. Major completions are generally those that have significant dollar value or have high visibility. In 2021, major completions total 72% of the annual goal. Major completions for 2021 by agency include 26 for NYCT, 7 for LIRR, 7 for MNR, 2 for MTA Bus, 5 for MTA Expansion, and 4 for B&T.
+[p040_c0008] Through August, agencies have completed $2.4 billion versus a $4.5 billion goal. The shortfall is mainly due to slips of 15 major completions. Schedule slips are explained on the following pages. The MTA currently anticipates achieving 97% of its overall 2021 annual completion goal.
+### [p040_c0009] Budget Analysis
+[p040_c0010]
+
+```text
+($m) 2021 Annual Goal $7,183 2021 Forecast $6,933 97% of Annual Goal Forecast left to Complete $4,508
+```
+> [p040_c0011] Horizontal bar chart comparing YTD Goal and YTD Actual in millions. The YTD Goal bar is blue and reaches $4,530. The YTD Actual bar is red and reaches $2,425. The x-axis ranges from $0 to $6,000 in increments of $1,000. Category Value ($m) YTD Goal $4,530 YTD Actual $2,425
+
+## Page 41
+
+### [p041_c0001] MTA Metropolitan Transportation Authority
+### [p041_c0002] Master Page # 41 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+### [p041_c0003] NYCT/MTA Bus Capital Projects – Completions – August 2021 – Budget Analysis and Schedule Variances
+### [p041_c0004] NYCT and MTA Bus Budget Analysis
+> [p041_c0005] Summary Chart Data 1Q 2Q 3Q 4Q YTD 2021 Goal $168 $938 $1,009 $1,525 $1,781 Actual / Forecast $125 $705 $556 $1,924 $976 2021 Goal (Rolling Stock) 1Q 2Q 3Q 4Q YTD Actual / Forecast (Rolling Stock) $0 $0 $0 $245 $0 Legend: ■ 2021 Goal ■ Actual / Forecast ■ 2021 Goal (Rolling Stock) ■ Actual / Forecast (Rolling Stock)
+### [p041_c0006] Schedule Variances
+[p041_c0007]
+
+```text
+Project Completion Goal Forecast Project Completion Goal Forecast 2 NYCT/MTA Bus Amber Completions (1 New This Month) 12 NYCT/MTA Bus Red Completions (4 New This Month) NYCT NYCT Passenger Stations Signals & Communications ADA: Gun Hill Rd / Dyre Construction Feb-21 Apr-21(A) CBTC Queens Blvd West - 50 St to Union Tpke: Ph 1 Construction Aug-21 Dec-21 $55.1 $59.5 $235.8 $254.8 Project completion was delayed due to an additional work order for the redesign of the fire sprinkler and fire alarm system as a result of changes to standards identified during pre-final inspection. Cost increase reflects additional project support costs. Project completion delayed due to software reliability issues as well as additional time needed to monitor each section of the line's performance prior to entering beneficial use. Project cost increase in part due to additional TA support services, additional work orders, as well as additional administrative services. Miscellaneous/Emergency Staten Island Railway Overcoating: Below Track-Level, 48th St to 72nd St/FLS (New Item) Construction Aug-21 Oct-21 SIR: New Power Station: Clifton & New Dorp Construction Jun-21 Sep-21 $56.1 $56.1 $49.8 $50.4 Delay due to the addition of new scope to the contract for the demolition of a signal room at 114th Street. (currently under review by C&D Contracts). Project completion rescheduled due to fire alarm final acceptance testing and Con Ed delay in providing low tension and High Tension service. Project cost increase due to additional support services needed as a result of extended project duration.
+```
+[p041_c0008] NOTE: schedule variances continue onto next page.
+
+## Page 42
+
+### [p042_c0001] Master Page # 42 - Capital Program Oversight Committee Meeting 9/13/2021
+### [p042_c0002] NYCT/MTA Bus Capital Projects – Completions – August 2021 – Schedule Variances
+[p042_c0003]
+
+```text
+Project Completion Goal Forecast 12 NYCT/MTA Bus Red Completions (continued) NYCT Bus Purchases Purchase 165 Hybrid-Electric Standard Buses (New Item) Bus Procurement Sep-21 $150.7 Dec-21 $145.9 Project completion schedule extended to account for COVID-19 impact on delivery schedule. Purchase 126 Hybrid-Electric Standard Buses (New Item) Bus Procurement Oct-21 $107.9 Feb-22 $107.9 Recent, additional delay until February 2022 is attributable to resources and parts shortages. Miscellaneous/Emergency Livingston Plaza: Facade & Perimeter Hardening (New Item) Construction Aug-21 $33.5 Dec-21 $33.5 Project completion delayed due to issues preventing the contractor from removing the scaffolding. Superstorm Sandy Repairs Sandy: Rutgers Tube (New Item) Construction Aug-21 $159.2 Dec-21 $168.7 The completion delay is due to time needed to complete additional work orders (AWOs). The project's cost increase is primarily driven by the estimated cost for
+```
+[p042_c0004]
+
+```text
+Project Completion Goal Forecast NYCT Traction Power New Substation & CBHs: Maspeth Av-Humboldt St / Canarsie Construction May-21 $59.2 Sep-21 $59.2 Project completion delayed due to pending Con Ed energization of High Tension (HT) feeder. Con Edison cannot commit to a date for energization of the 2nd HT Feeder due to emergency feeder outages caused by the ongoing Summer heat events. New Substation: Harrison Pt / Canarsie Construction May-21 $51.3 Sep-21 $51.3 Project completion delayed due to pending Con Ed energization of the substation of the 2nd feeder. See above for Con Ed energization issues. Signals & Communication Upgrade SONET Rings A,C Construction Jun-21 $29.4 Dec-21 $29.6 Project completion delayed due to limited in-house resources to support the migration work. Depots Bus Radio System - NYCT Construction Dec-21 $195.4 Jun-23 $219.5 Project completion delayed due to utility issues, poor contractor performance, conformed design issues, and delays related to the COVID-19 pandemic. Delays are being analyzed by MTA Legal and MTA C&D Program Controls. Ongoing project cost increases reflect latest, revised cost estimates to complete the project. Bus Company Projects Bus Radio System Construction Dec-21 $27.8 Jun-23 $27.8 See Bus Radio System - NYCT explanation above. Bus Radio System, Pt II Construction Dec-21 $37.4 Jun-23 $37.4 See Bus Radio System - NYCT explanation above.
+```
+
+## Page 43
+
+### [p043_c0001] MTA Metropolitan Transportation Authority
+### [p043_c0002] Master Page # 43 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+### [p043_c0003] LIRR Capital Projects – Completions – August 2021 – Budget Analysis and Schedule Variances
+### [p043_c0004] LIRR Budget Analysis
+> [p043_c0005] Summary Chart Data 1Q 2Q 3Q 4Q YTD 2021 Goal $126 $101 $14 $124 $175 Actual / Forecast $31 $79 $168 $161 $206 2021 Goal (Rolling Stock) 1Q 2Q 3Q 4Q YTD Actual / Forecast (Rolling Stock) $0 $0 $0 $65 $0 Legend: ■ 2021 Goal ■ Actual / Forecast ■ 2021 Goal (Rolling Stock) ■ Actual / Forecast (Rolling Stock)
+### [p043_c0006] Schedule Variances
+### [p043_c0007] 2 LIRR Red Completions
+### [p043_c0008] LIRR
+### [p043_c0009] Shops and Yards
+[p043_c0010]
+
+```text
+Diesel Locomotive Shop Improvements Construction Feb-21 Jul-21 (A) Project completion was delayed due to and extended process of acceptance of the Fire Alarm System. $94.4 $95.6
+```
+### [p043_c0011] Rolling Stock
+[p043_c0012]
+
+```text
+Rolling Stock: M-9 Procurement Fleet Procurement May-21 Dec-21 Project delayed due to workmanship issues and impacts related to the COVID-19 pandemic. $64.8 $64.8
+```
+
+## Page 44
+
+### [p044_c0001] MTA Metropolitan Transportation Authority
+### [p044_c0002] Master Page # 44 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+### [p044_c0003] MNR Capital Projects – Completions – August 2021 – Budget Analysis and Schedule Variances
+### [p044_c0004] MNR Budget Analysis
+> [p044_c0005] Summary Chart Data 1Q 2Q 3Q 4Q YTD 2021 Goal $213 $297 $67 $387 $577 Actual / Forecast $180 $107 $197 $479 $393
+### [p044_c0006] Schedule Variances
+[p044_c0007]
+
+```text
+Project Completion Goal Forecast 1 MNR Red Completion MNR Track & Structures 3rd Ave Bridge Replacement Construction Jun-21 Sep-21 $14.4 $14.4 There is a no cost time extension being processed due to COVID-related delays in material and equipment.
+```
+
+## Page 45
+
+### [p045_c0001] MTA Metropolitan Transportation Authority
+### [p045_c0002] Master Page # 45 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+### [p045_c0003] MTA Expansion Capital Projects – Completions – August 2021 – Budget Analysis and Schedule Variances
+### [p045_c0004] MTA Expansion Budget Analysis
+> [p045_c0005] Summary Chart Data 1Q 2Q 3Q 4Q YTD 2021 Goal $0 $1,375 $421 $0 $1,796 Actual / Forecast $0 $712 $93 $995 $711 ($ in millions) Legend: 2021 Goal (Blue), Actual / Forecast (Red)
+### [p045_c0006] Schedule Variances
+[p045_c0007]
+
+```text
+Project Completion Goal Forecast Project Completion Goal Forecast 4 MTA Expansion Red Completions MTA Expansion MTA Expansion East Side Access East Side Access East Side Access B/C Approach Construction Apr-21 Sep-21 Systems Package 2 - Tunnel Construction Jul-21 Oct-21 $92.9 $92.9 Systems $72.0 $72.0 Project substantial completion was extended to include Loop 1A trench excavation and catenary work. An additional, recent delay was due to receipt of Amtrak final acceptance. Delays are due to permanent power delivery scheduling. GCT Concourse & Facilities Construction Jun-21 Oct-21 $574.5 $574.5 Scheduled completion impacted by local systems testing (HVAC, fire protection) delays. Mid-Day Storage Yard Construction Jul-21 Dec-21 $348.6 $348.6 Scheduled completion impacted by Signals/Systems integration testing delays.
+```
+
+## Page 46
+
+### [p046_c0001] MTA Metropolitan Transportation Authority
+### [p046_c0002] Master Page # 46 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+### [p046_c0003] B&T Capital Projects – Completions – August 2021 – Budget Analysis and Schedule Variances
+### [p046_c0004] B&T Budget Analysis
+> [p046_c0005] Summary Chart Data 1Q 2Q 3Q 4Q YTD 2021 Goal $3 $83 $90 $208 $172 Actual / Forecast $14 $97 $71 $203 $111 ($ in millions) Legend: 2021 Goal (Blue), Actual / Forecast (Red)
+### [p046_c0006] Schedule Variances
+[p046_c0007]
+
+```text
+Project Completion Goal Forecast
+```
+### [p046_c0008] 1 B&T Red Completion
+### [p046_c0009] Structures
+[p046_c0010]
+
+```text
+CB Scour Protect/Repair/Replace Construction Jul-21 Sep-21 CB/MP Pier Fender $65.9 $65.9
+```
+[p046_c0011] Project completion schedule was delayed due to weather-related impacts.
+
+## Page 47
+
+### [p047_c0001] Master Page # 47 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+### [p047_c0002] Status of MTA Capital Program Funding
+[p047_c0003] _Metropolitan Transportation Authority_
+
+## Page 48
+
+### [p048_c0001] Master Page # 48 - Capital Program Oversight Committee Meeting 9/13/2021
+### [p048_c0002] Capital Funding (August 2021)
+[p048_c0003] $ in millions
+> [p048_c0004] Capital Program Received ($ in millions) Remainder ($ in millions) 2020-2024 3,598 96,402 2015-2019 24,144 75,856 2010-2014 29,775 70,225 1982-2009 79,085 20,915
+
+## Page 49
+
+### [p049_c0001] Master Page # 49 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+### [p049_c0002] Capital Funding Detail (August 2021)
+[p049_c0003] $ in millions
+### [p049_c0004] 2010-2014 Program
+[p049_c0005]
+
+```text
+Funding Plan Receipts Current Thru June This month Received to date Federal Formula, Flexible, Misc $5,862 $5,843 $15 $5,857 Federal High Speed Rail 173 173 - 173 Federal New Start 1,271 1,257 - 1,257 Federal Security 89 89 - 89 Federal RRIF Loan - - - - City Capital Funds 719 608 - 608 State Assistance 770 770 - 770 MTA Bus Federal and City Match 132 112 2 113 MTA Bonds (Payroll Mobility Tax) 11,625 10,647 - 10,647 Other (Including Operating to Capital)** 1,277 1,277 - 1,277 B&T Bonds 2,175 2,019 - 2,019 Hurricane Sandy Recovery Insurance Proceeds/Federal Reimbursement 6,697 6,697 - 6,697 PAYGO 18 18 - 18 Sandy Recovery MTA Bonds 659 225 - 225 Sandy Recovery B&T Bonds 230 23 - 23 Total 31,696 29,759 16 29,775
+```
+### [p049_c0006] 2015-2019 Program
+[p049_c0007]
+
+```text
+Funding Plan Receipts Current Thru June This month Received to date Federal Formula, Flexible, Misc $6,681 $5,118 $468 $5,586 Federal High Speed Rail $122 $122 - $122 Federal Core Capacity 100 - - - Federal New Start 500 - - - Federal Security 18 15 (0) 15 State Assistance 9,091 4,598 - 4,598 City Capital Funds 2,667 1,473 577 2,050 MTA Bonds 8,474 8,175 - 8,175 Asset Sales/Leases 943 315 - 315 Pay-as-you-go (PAYGO)** 2,156 1,572 - 1,572 Other 273 60 8 67 B&T Bonds & PAYGO/Asset Sale 2,942 1,644 - 1,644 Total 33,969 23,091 1,053 24,144
+```
+### [p049_c0008] 2020-2024 Program
+[p049_c0009]
+
+```text
+Funding Plan Receipts Current Thru June This month Received to date Capital from Central Business District Tolling $15,000 $ - $ - $ - Capital from New Revenue Sources 10,000 - 461 461 MTA Bonds and PAYGO 9,792 202 - 202 Federal RIFF Loan 3 - - - Federal Formula 7,435 1,717 751 2,468 State of New York 3,000 - - - City of New York 3,000 80 40 120 Federal New Start (SAS Ph2) 2,905 - - - Federal Flexible 275 - 51 51 Federal Other 73 0 56 56 Federal Security 10 10 - 10 B&T Bonds 3,327 1 230 231 Total 54,819 2,009 1,589 3,598
+```
+
+## Page 50
+
+### [p050_c0001] Metropolitan Transportation Authority
+### [p050_c0002] 2 nd Quarter 2021 Traffic Light Report on the MTA Capital Program
+[p050_c0003] A total of 328 Projects were Reviewed for the 2 nd Quarter 2021
+[p050_c0004] The 328 active projects include 32 projects in Design, 9 in Post-Design to Construction Award, 287 in Construction
+### [p050_c0005] 32 of 328 Projects in Design
+> [p050_c0006] Category Count Green Projects 21 Red Projects 4 Previously Red Projects* 7
+[p050_c0007] * see Terms and Definitions page
+[p050_c0008] Second Quarter: 32 projects were reviewed in this phase with 21 designated green, 7 as previously red and 4 red. The 4 projects were red in part to a design change, coordination with stakeholders, and added scope.
+[p050_c0009] Covid Impacts: No projects in design were impacted by Covid-19 this quarter.
+[p050_c0010] First Quarter 2021: 39 projects were reviewed in this phase with 22 designated green, 14 as previously red and 3 red.
+### [p050_c0011] 9 of 328 Projects in Post-Design to Construction Award
+> [p050_c0012] Category Count Green Projects 3 Previously Red Projects* 6
+[p050_c0013] * see Terms and Definitions page
+[p050_c0014] Second Quarter: 9 projects were reviewed in this phase with 6 designated as previously red and 3 green.
+[p050_c0015] Covid Impacts: No projects in Post-Design to Construction Award were impacted by Covid-19 this quarter.
+[p050_c0016] First Quarter 2021: 11 projects were reviewed in this phase with 9 designated as previously red, 1 green, and 1 red.
+### [p050_c0017] 287 of 328 Projects in Construction
+> [p050_c0018] Category Count Green Projects 221 Red Projects 24 Previously Red Projects* 42
+[p050_c0019] * see Terms and Definitions page
+[p050_c0020] Second Quarter: 287 projects were reviewed in this phase with 221 designated green, 42 previously red, and 24 red. The 24 projects were red due in part to scope changes, contractor performance, unforeseen site conditions, and coordination with other agencies.
+[p050_c0021] Covid Impacts: No projects in Construction were impacted by Covid-19 this quarter.
+[p050_c0022] First Quarter 2021: 277 projects were reviewed in this phase with 201 designated green, 42 previously red, and 30 red.
+### [p050_c0023] 32 Projects in Design
+> [p050_c0024] Category Covid Red Red Hatched Green Rolling Stock 1 1 0 0 OMNY 0 0 0 0 MTA Bus 0 0 0 0 B & T 0 0 0 9 MNR 0 0 0 3 LIRR 0 1 2 2 NYCT 0 0 0 1 Signals 0 0 0 3 Infrastructure 0 1 4 2 Stations 0 1 1 1
+### [p050_c0025] 9 Projects in Post-Design to Construction Award
+> [p050_c0026] Category Covid Red Red Hatched Green Rolling Stock 0 0 0 0 OMNY 0 0 0 0 MTA Bus 0 0 0 0 B & T 0 0 0 0 MNR 0 0 0 0 LIRR 0 0 1 0 NYCT 0 0 2 0 Signals 0 0 0 1 Infrastructure 0 0 3 2 Stations 0 0 0 0
+### [p050_c0027] 287 Projects in Construction
+> [p050_c0028] Category Covid Red Red Hatched Green Rolling Stock 0 0 0 21 OMNY 0 0 0 2 MTA Bus 0 0 0 2 B & T 0 0 0 22 MNR 0 1 2 26 LIRR 0 1 38 40 NYCT 0 0 11 38 Signals 0 0 0 30 Infrastructure 0 11 11 56 Stations 0 0 5 47
+[p050_c0029] _Master Page # 50 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 51
+
+### [p051_c0001] Metropolitan Transportation Authority
+### [p051_c0002] Project Terms and Definitions 2 nd Quarter 2021 Traffic Light Report
+[p051_c0003] The following Terms and Definitions are used to identify a project's Traffic Light color designation using variances from quarter to quarter and are based on two performance indicators: cost and schedule. A project is designated a " green light project " when no performance indicator has exceeded the Traffic Light Report thresholds. A project is designated a " red light project " when one or more of the two indicators exceed a specified threshold. Variance reports are required for all qualified red light projects. Included in these reports are one-page project summaries (on pink paper stock) of issues associated with each project showing a red indicator and how the issues are being resolved. * A project is designated a " previous red project " after one or more performance indicators had triggered a red in a previous quarter(s). A " previous red project " may revert back to green after two consecutive quarters if the performance indicator(s) have not worsened.
+### [p051_c0004] Project Terms and Definitions
+### [p051_c0005] Projects in Design: 32
+- [p051_c0006] Green: Indices less than 110% and index movement of less than 10%. Red: Cost Index - An EAC increase of 10% (or index movement of 10% or more since the last Traffic Light Report). Red: Schedule Variance - An increase of 3 months or more to substantial completion since the last Traffic Light Report. Previous Red: Previously indicated as red with no new substantial change since last Traffic Light Report / A project in design that has been designated as Previous Red may be returned to Green when it has been in compliance with the two performance indicators for two consecutive quarters.
+### [p051_c0007] Projects in Post Design to Construction Award Phase: 9
+- [p051_c0008] Green: Phase Duration less than either the default of 128 calendar days for all agencies or the agency entered duration. Red: Phase Duration is greater than either the default 128 calendar days or the agency entered duration. Previous Red: Previously indicated as red with no new substantial change since the last Traffic Light Report. Project may be returned to Green when it has been in compliance with two performance indicators for two consecutive quarters.
+### [p051_c0009] Projects in Construction: 287
+- [p051_c0010] Green: Indices less than 110% and index movement of less than 10%. Other indices not exceeding those criteria specified in index formulas and criteria. Red: Cost Index - An increase of 10% (or index movement of 10% or more since the last Traffic Light Report). Red: Schedule Variance - An increase of 3 months or more to substantial completion since the last Traffic Light Report. Previous Red: Previously indicated as red with no new substantial change since the last Traffic Light Report / A project in construction that has been designated as Previous Red may be returned to Green when it has been in compliance with the two performance indicators for two consecutive quarters.
+[p051_c0011] _Master Page # 51 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 52
+
+### [p052_c0001] Metropolitan Transportation Authority
+### [p052_c0002] Projects impacted by Covid-19 (Temporary TLR Criteria): 0
+[p052_c0003] Projects in this category have triggered one or more reporting variances that are impacted by the Covid-19 pandemic. The Key Performance Indicators have exceeded one or more of the Traffic Light reporting thresholds this quarter, however, a project issue has been directly attributed to Covid-19. The issues may include; the implementation of safety protocols, new work rules and occupancy restrictions, travel limitations, reduced personnel availability, funding delays, etc. Covid-19 is a temporary imposition on the MTA's Capital Program and therefore a temporary TLR has been developed for these projects.
+[p052_c0004] Red Lined: Cost Index - An increase of 1p0% (or index movement of 10% or more since the last Traffic Light Report).
+[p052_c0005] Red Lined: Schedule Variance - An increase of 3 months or more to substantial completion since the last Traffic Light Report.
+[p052_c0006] Previous Red: Previously indicated as Red Lined with no new substantial change since the last Traffic Light Report / A project in design, procurement or construction that has been designated Previous Red may be returned to Green when it has been in compliance with the two performance indicators for two consecutive quarters.
+### [p052_c0007] Projects in Planning:
+[p052_c0008] ➤ Projects in Planning are reviewed but not displayed in the TLR until the project reaches the design phase.
+### [p052_c0009] Completed Projects:
+[p052_c0010] ➤ Projects that were completed in previous quarters are not displayed in the current quarter's report but, continue to be maintained in the TLR database for historical reporting purposes.
+### [p052_c0011] Report Index Formulas and Criteria:
+[p052_c0012] ➤ Cost Index = Total Project FAC / Current Approved Budget.
+[p052_c0013] (Note: Current Budget is not Budget at Award)
+[p052_c0014] ➤ Cumulative Cost Variance = 3 consecutive quarters with a total cost index increase that cumulatively exceeds the TLR threshold of 10% over 3 quarters.
+[p052_c0015] ➤ Schedule Variance = Number of months of change in schedule since the last Traffic Light Report.
+[p052_c0016] ➤ Cumulative Schedule Variance = 3 consecutive quarters with a total change in schedule that cumulatively exceeds the TLR threshold of 3 months or more.
+[p052_c0017] ➤ The TLR includes projects in CPOC's Risk-Based Monitoring Program which are listed at the end of the report.
+[p052_c0018] ➤ Only projects with budgets of $7M or greater are included in the current quarter's Traffic Light Report. Projects with budgets below $7M are not displayed in the current report but will be maintained in the TLR database. If the current budget increases above the $7M minimum threshold, the projects will return to an active status.
+[p052_c0019] _Master Page # 52 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 53
+
+### [p053_c0001] Metropolitan Transportation Authority
+### [p053_c0002] 2nd Quarter 2021 Traffic Light Report Projects in Design and Construction
+[p053_c0003] ▲ = Index increase: Trending indicates condition worsening since last quarterly report ▼ = Index decrease: Trending indicates condition improving since last quarterly report ■ = No Change since last quarterly report
+### [p053_c0004] Master Page # 53 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+[p053_c0005]
+
+```text
+ACEP Description Phase Total Project EAC % Phase Complete Cost Index Cost Trend Schedule Variance (Months) Schedule Trend Traffic Light Construction & Development Stations Stations - ADA Accessibility Program - Projects in Construction T6041311 ADA Phase 2 at 57 St Station-Broadway Line Construction $35,857,557 1 1.00 ■ -1 ▼ T7041305 ADA: Gun Hill Road DYR Construction $61,547,272 97 .99 ■ 0 ■ T7041307 ADA: Times Square Complex, Ph 3 - Shuttle Construction $217,860,912 73 1.00 ■ 0 ■ T7041310 ADA: 59 St 4AV Construction $58,733,105 1 1.00 ■ 0 ■ T7041315 ADA: 149 Street-Grand Concourse Complex Construction $114,670,181 11 .98 ■ 0 ■ T7041323 ADA: 57 Street BWY Additional Support Costs Construction $52,038,195 1 1.00 ■ -1 ▼ T7041331 ADA: Livonia Ave CNR Construction $87,290,193 33 1.00 ■ 0 ■ T7041332 ADA: 170 Street JER Construction $62,244,252 60 1.00 ■ 0 ■ T7041338 ADA: Tremont Ave BXC Construction $54,345,378 11 .99 ■ 0 ■ T7041350 Additional elevator 34 St BW7 PSNY-33rd Construction $16,541,862 15 1.00 ■ 0 ■ T8041303 ADA: Dyckman St (NB) BW7 Construction $21,579,539 15 1.00 ■ 0 ■ T8041313 ADA: Avenue H (NB) BRT Construction $10,962,281 85 .43 ■ 0 ■ T8041317 ADA: Grand St CNR Construction $28,958,238 15 1.00 ■ 0 ■ T8041319 ADA: 7th Ave CUL Construction $40,867,099 15 1.00 ■ 0 ■ T8041327 ADA: Lorimer St CNR Construction $64,967,338 15 1.00 ■ -1 ▼ T8041328 ADA: Metropolitan Ave XTN Construction $50,179,438 15 1.00 ■ -1 ▼ T8041332 ADA: East 149th St PEL Construction $42,162,238 15 .97 ■ 0 ■ T8041337 ADA: Beach 67th St FAR Construction $45,334,386 15 .99 ■ 0 ■ S8070108 ADA: New Dorp SIR Construction $36,957,704 15 .97 ■ 0 ■ Stations Non ADA Stations Projects T6040706 Replace 2 Hydraulic Elevators at GCT LEX Construction $18,686,359 1 .82 ▼ 0 ■ T7040701 Replace 11 Hydraulic Elevators / Various Construction $73,783,585 14 1.00 ■ 0 ■
+```
+
+## Page 54
+
+### [p054_c0001] Metropolitan Transportation Authority
+### [p054_c0002] 2nd Quarter 2021 Traffic Light Report Projects in Design and Construction
+[p054_c0003] ▲ = Index increase: Trending indicates condition worsening since last quarterly report ▼ = Index decrease: Trending indicates condition improving since last quarterly report ▬ = No Change since last quarterly report
+### [p054_c0004] Master Page # 54 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+[p054_c0005]
+
+```text
+ACEP Description Phase Total Project EAC % Phase Complete Cost Index Cost Trend Schedule Variance (Months) Schedule Trend Traffic Light Construction & Development Stations Non ADA Stations Projects T7040702 Replace 12 Traction Elevators BW7 Construction $109,833,900 78 1.00 ▬ 0 ▬ R T7040703 Replace 8 Traction Elevators / Various Construction $55,965,335 2 .90 ▲ 0 ▬ G T7040704 Replace 6 Traction Elevators 8AV Construction $47,237,083 80 1.00 ▬ 0 ▬ G T7040705 Replace 2 Hydraulic Elevators: Borough Hall CLK Construction $14,082,111 100 1.00 ▬ 0 ▬ G T7040708 Replace 2 Escalators: Pelham Pkwy WPR Construction $15,816,293 5 1.00 ▬ 0 ▬ G T7040709 Replace 6 Escalators / Various Construction $46,783,039 5 1.00 ▲ 0 ▬ G T7040711 Replace 2 Hydraulic Elevators: Franklin Av FRK Construction $13,537,851 95 1.00 ▬ 0 ▬ G T7040712 Replace 3 Escalators: Main St FLS Construction $27,294,471 80 .99 ▬ -1 ▼ G T7040714 Replace 1 Hydraulic Elevator: Grand Central FLS Construction $7,904,814 1 .57 ▼ 0 ▬ G T7041401 Station Signage Improvements Construction $10,225,624 75 .94 ▬ 0 ▬ G T7041404 Reconstruction: Times Sq Complex, Ph3 - Shuttle Construction $29,816,315 73 1.00 ▬ 0 ▬ G T7070308 Rehab Emergency Exits (3rd Party) - Var Locs Construction $21,036,295 46 1.04 ▬ 0 ▬ G T7160729 RTO Facility Repair: 3 Avenue-138 Street PEL Construction $15,540,733 80 1.02 ▬ 0 ▬ R T8040707 Replace 3 Hydraulic Elevators: 34th BW7 PSNY-33rd Construction $21,586,064 10 .99 ▬ 0 ▬ G T8041215 Design: Station Components DES Construction $14,696,945 67 1.00 ▼ 0 ▬ G T8041216 Platform Components: E Broadway 6AV Construction $14,837,508 78 1.00 ▬ 0 ▬ G T8050204 2020 Mainline Track Repl: Rutgers Construction $18,600,588 78 1.00 ▬ 0 ▬ G S8070101 Station Components: Various Locations Construction $35,893,705 76 .90 ▬ 12 ▲ G T7041201 Water Remediation - Renewal: Borough Hall LEX Design $5,537,976 60 .22 ▬ 2 ▲ R T7041322 ADA: 95 St 4AV Design $50,019,153 25 1.42 ▬ 9 ▲ R T8041210 Water Condition Remedy: Various Locations Design $28,574,225 0 1.00 ▬ 0 ▬ G Infrastructure T6100454 207th St. OH Shop: Boiler Upgrades & Site Remed Construction $11,423,059 83 1.00 ▬ 0 ▬ R
+```
+
+## Page 55
+
+### [p055_c0001] Metropolitan Transportation Authority
+### [p055_c0002] 2nd Quarter 2021 Traffic Light Report Projects in Design and Construction
+[p055_c0003] ▲ = Index increase: Trending indicates condition worsening since last quarterly report ▼ = Index decrease: Trending indicates condition improving since last quarterly report ▬ = No Change since last quarterly report
+### [p055_c0004] Master Page # 55 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+[p055_c0005]
+
+```text
+ACEP Description Phase Total Project EAC % Phase Complete Cost Index Cost Trend Schedule Variance (Months) Schedule Trend Traffic Light Construction & Development Infrastructure T6120403 Replace Bus Radio System Construction $213,846,959 73 1.02 ▲ 18 ▲ R T6160611 Replace Fire Alarm Systems at 13 Locations Construction $27,545,620 57 1.00 ▬ 0 ▬ G T6160717 Livingston Plaza Repairs Construction $26,420,913 63 .51 ▬ 2 ▲ R T7060503 Replace Supervisory Vent Controls - Var Locs Construction $30,122,072 46 1.00 ▬ 0 ▬ R T7060506 Rehab Forsyth St Vent Plant Construction $90,374,945 26 .99 ▬ 0 ▬ R T7070303 Struct Rehab: Livonia Yard Overpass & Retain Wall Construction $27,083,332 48 1.00 ▬ 0 ▬ R T7070316 Overcoat: Broadway - End of Line MYR Construction $58,258,534 43 .99 ▬ 0 ▬ G T7070317 Overcoat: 48 St - 72 St FLS Construction $57,133,383 88 1.00 ▬ 0 ▬ G T7070323 LSCRP: Brooklyn (EPK) Construction $82,731,099 27 .99 ▬ 0 ▬ G T7070344 Repairing 'A' and 'B' Column Base Conditions WPR Construction $17,000,070 82 .97 ▬ 2 ▲ R T7080602 Upgrade Async Network to SONET, Rings A and C Construction $30,961,649 76 1.00 ▬ 6 ▲ R T7080651 Help Point: Upgrades and CAI Removals Construction $21,776,194 65 1.07 ▲ 6 ▲ R T7090201 Substation Renewal: Burnside Av BXC Construction $22,857,912 10 1.00 ▬ 2 ▲ R T7090202 Substation Renewal: Av Z CUL Construction $32,172,288 85 .99 ▬ 0 ▬ G T7090203 Substation Rnwl & New Rectifier: Centr SS 6AV Construction $43,504,282 64 1.00 ▬ 0 ▬ G T7090205 Replace 25Hz Freq Converters - Various Locs Construction $19,857,653 100 1.03 ▬ 0 ▬ R T7090206 Replace HT Switchgear - Various Locs Construction $30,430,773 75 1.00 ▬ 0 ▬ G T7090215 Supplemental Negative Cables QBL Construction $53,023,972 45 1.00 ▬ 0 ▬ G T7090218 Install Low-Resistance Contact Rail QBL Construction $47,828,349 99 1.00 ▬ 0 ▬ G T7090222 New Substation: Maspeth Av-Humboldt St CNR Construction $46,240,962 99 .89 ▬ 4 ▲ R T7090223 New Substation: Harrison Pl CNR Construction $52,773,517 99 .89 ▬ 4 ▲ R T7090406 Rehab CBH # 85 & New Ducts: Bedfrd-N 6 St SS CNR Construction $13,361,050 80 .99 ▬ 4 ▲ R T7090414 Repl Control & Bat Cables: Substation CZs Construction $28,783,652 60 1.00 ▬ 0 ▬ G T7100401 DCE Shop Components Ph 1: 180 St, Cl, PEL Construction $34,194,855 94 1.01 ▬ 0 ▬ G
+```
+
+## Page 56
+
+### [p056_c0001] Metropolitan Transportation Authority
+### [p056_c0002] 2nd Quarter 2021 Traffic Light Report Projects in Design and Construction
+[p056_c0003] ▲ = Index increase: Trending indicates condition worsening since last quarterly report ▼ = Index decrease: Trending indicates condition improving since last quarterly report ▬ = No Change since last quarterly report
+### [p056_c0004] Master Page # 56 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+[p056_c0005]
+
+```text
+ACEP Description Phase Total Project EAC % Phase Complete Cost Index Cost Trend Schedule Variance (Months) Schedule Trend Traffic Light Construction & Development Infrastructure T7100402 207th St Maint & OH Shop Roof & Component Repl Construction $59,951,102 51 1.00 ▬ 0 ▬ G T7100403 DCE Shop Components Ph 2: 239 St, Concourse, ENY Construction $45,862,515 83 .99 ▬ 0 ▬ R T7100405 DCE Shop Components Ph 4: 207 St Admin Construction $25,883,431 98 1.05 ▬ 0 ▬ G T8040404 Wide Turnstiles: Procurement/Installation Construction $25,018,512 0 1.00 ▬ 0 ▬ G T8060505 Rehab Deep Wells & Control Upgrade Nostrand Line Construction $22,995,247 0 1.03 ▲ 0 ▬ G T8060506 Rehab Fan Plant Damper Systems - 7 Locations Construction $33,771,531 0 1.00 ▲ 0 ▬ G T8160706 EMD Facility: Hoyt-Schermerhorn FUL Construction $14,001,893 18 1.00 ▬ 0 ▬ G S7070102 SIR Station Component Program Construction $18,917,569 87 .99 ▬ 0 ▬ G S7070106 New Power Substation: New Dorp Construction $25,476,307 95 1.04 ▬ 3 ▲ R S7070107 New Power Substation: Clifton Construction $30,646,073 95 1.00 ▬ 3 ▲ R S7070111 Relocate HQ to Clifton Shop Construction $9,127,751 91 .99 ▬ 0 ▬ G S7070113 SIR Clifton Yard Track and Switch Replacement Construction $17,070,406 74 .98 ▬ 0 ▬ G S8070109 Track and Switch Rehab: SIR Mainline (Addtnl Work) Construction $15,096,650 75 .97 ▬ 0 ▬ G U6030226 Bus Radio System Construction $30,027,894 80 1.07 ▬ 18 ▲ R U7030211 Bus Radio System - MTA Bus Share Construction $39,516,593 73 1.05 ▲ 18 ▲ R T8120303 Jamaica Depot Reconstruction Design $375,541,493 80 .98 ▬ 0 ▬ G S8070102 Track and Switch Replacement Design $74,800,000 80 .61 ▬ 4 ▲ R S8070103 Bridge Structures: Various Locations Design $54,447,052 0 1.01 ▬ 1 ▲ R Signals / Train Controls T50803QB CBTC QBL Phase 1 Construction $80,085,069 92 1.37 ▬ 0 ▬ R T6080319 CBTC Queens Blvd Ln West Ph 1 Construction $115,225,996 95 .97 ▬ 7 ▲ R T6080661 ISIM-B Module 3A RCC Build Out Construction $25,425,919 62 1.00 ▬ 3 ▲ R T7080301 CBTC: QBL West Ph2 (50 St - Union Tpke) Construction $471,317,306 80 1.11 ▬ 0 ▬ G T7080304 CBTC: 8AV (59 St - High St) Construction $220,201,814 23 1.00 ▬ 0 ▬ G
+```
+
+## Page 57
+
+### [p057_c0001] Metropolitan Transportation Authority
+### [p057_c0002] 2nd Quarter 2021 Traffic Light Report Projects in Design and Construction
+[p057_c0003] ▲ = Index increase: Trending indicates condition worsening since last quarterly report ▼ = Index decrease: Trending indicates condition improving since last quarterly report ■ = No Change since last quarterly report
+### [p057_c0004] Master Page # 57 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+[p057_c0005]
+
+```text
+ACEP Description Phase Total Project EAC % Phase Complete Cost Index Cost Trend Schedule Variance (Months) Schedule Trend Traffic Light Construction & Development Signals / Train Controls T7080307 Interlocking Modernization: Ditmas CUL Construction $133,574,754 63 1.00 ■ 0 ■ G T7080308 Interlocking Modernization: Kings Highway CUL Construction $179,435,283 95 1.00 ■ 0 ■ G T7080322 AC to DC Line Relay Upgrade BCT Construction $25,168,851 46 1.00 ■ 0 ■ G T7080323 Signal Key-By Modifications, Ph4 Construction $18,429,499 88 1.00 ■ 0 ■ G T7080324 Code Cable Replacement BW7 Construction $41,314,985 19 1.00 ■ 0 ■ G T7080325 Signal Room Fire Suppression, Phase 2 Construction $25,609,793 20 1.00 ■ 0 ■ G T7080326 Life Cycle Replacement of Code Systems Construction $51,725,537 14 1.00 ■ 0 ■ G T7080327 Life Cycle Mod - Speed Enforcement Systems Construction $65,429,183 11 1.00 ■ 0 ■ G T7080332 CBTC: CUL (Church Av to W8 St) Construction $116,051,095 63 .99 ■ 0 ■ G T7080333 Interlocking Modernization: Ave X CUL Construction $200,040,640 63 1.00 ■ 0 ■ G T7080335 Interlocking Modernization: 30 St & 42nd St / 8AV Construction $258,971,200 34 1.00 ■ 0 ■ G T7080342 CBTC: Carborne Equipment Purchase Construction $84,663,722 8 1.00 ■ 0 ■ G T7080343 2018 M/L Switch Repl: 7 Switches CBTC CUL Construction $32,479,364 63 1.00 ■ 0 ■ G T7080344 2019 M/L Switch Repl: 10 Switches CBTC 8AV Construction $27,563,382 34 1.00 ■ 0 ■ G T7080345 2019 M/L Switch Repl: 12 Switches Kings Hwy CUL Construction $26,368,385 0 1.00 ■ 0 ■ G T7080349 Signal Quality Enhancements (SAP) Construction $18,195,000 39 1.00 ■ 0 ■ G T7080603 PBX Upgrade Construction $48,564,396 91 1.17 ■ 0 ■ R T7080604 Fiber Optic Cable Replacement Ph2 Construction $22,656,053 70 .78 ▼ 0 ■ G T7080614 ISIM-B Module 3: Rail Traffic Systems Construction $91,696,705 49 1.00 ■ 0 ■ G T7080617 LiftNet Transition to Ethernet Construction $15,792,305 92 .99 ■ 0 ■ G T7080649 COE at 88 Stations, Phase 3B-1 [SBDP] Construction $7,067,767 50 1.00 ■ 0 ■ G T7160716 RCC and PCC Power Upgrade Construction $63,370,962 97 1.00 ■ 0 ■ G T8080313 CBTC: Flushing Line Equipment Removals Construction $19,273,595 40 1.00 ■ 0 ■ G T8080601 Comm Network Upgrades: Various Locations Design $185,044,145 70 .85 ■ -1 ▼ G
+```
+
+## Page 58
+
+### [p058_c0001] Metropolitan Transportation Authority
+### [p058_c0002] 2nd Quarter 2021 Traffic Light Report Projects in Design and Construction
+[p058_c0003] ▲ = Index increase: Trending indicates condition worsening since last quarterly report ▼ = Index decrease: Trending indicates condition improving since last quarterly report ▬ = No Change since last quarterly report
+### [p058_c0004] Master Page # 58 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+[p058_c0005]
+
+```text
+ACEP Description Phase Total Project EAC % Phase Complete Cost Index Cost Trend Schedule Variance (Months) Schedule Trend Traffic Light Construction & Development Signals / Train Controls T8080603 Fiber Optic Cable Replacement: Various Locations Design $47,194,595 36 1.00 ▬ 0 ▬ G T8160601 Fire Alarms and Sprinklers: Various Locations Design $105,942,301 60 1.01 ▬ 1 ▲ G New York City Transit T6040401 MetroCard-Electronic Components Replacement Construction $16,340,035 89 1.00 ▬ 3 ▲ R T6160402 NYCT-Wide Storage Area Network/Disaster Recovery Construction $22,484,619 85 1.00 ▬ 0 ▬ R T7041274 Station Lighting: 7 Locs / Various Construction $7,686,619 42 1.00 ▬ 0 ▬ G T7041275 Station Ventilators: 2 Locs (2019) Construction $5,571,319 76 .67 ▬ 0 ▬ G T7100409 Heavy Shop Equipment Construction $14,729,150 47 1.00 ▬ 0 ▬ R T7120301 Artic Modification: ENY Depot Construction $17,997,111 100 1.00 ▬ 0 ▬ G T7120306 Generator: Yukon Depot Construction $11,011,373 14 .93 ▬ 0 ▬ G T7120307 Roof, Office, HVAC: Fresh Pond Depot Construction $15,240,139 5 1.00 ▬ 0 ▬ G T7120321 Artic Modification Windows/Façade: ENY Depot Construction $18,061,652 31 1.00 ▼ 0 ▬ G T7160704 Emp Fac Component Repairs: 7 Locs / Manhattan Construction $9,739,980 100 1.00 ▼ 0 ▬ R T8050205 Mainline Track Replacement 2020 / Queens Construction $7,700,196 36 1.00 ▬ 0 ▬ R T8050206 Mainline Track Replacement 2020 / 8th Avenue Construction $20,726,225 53 1.00 ▬ 0 ▬ R T8050207 Mainline Track Replacement 2020 / Broadway-7th Ave Construction $35,259,977 86 1.00 ▬ 0 ▬ G T8050208 Mainline Track Replacement 2020 / Flushing Construction $59,886,344 65 1.00 ▬ 0 ▬ G T8050209 Mainline Track Replacement 2020 / Lexington Construction $27,318,000 78 1.24 ▲ 2 ▲ R T8050210 Mainline Track Replacement 2020 / Brighton Construction $15,212,679 13 1.00 ▬ 0 ▬ R T8050211 Mainline Track Replacement 2020 / Jamaica Construction $28,061,426 26 1.00 ▬ 0 ▬ G T8050212 Mainline Track Replacement 2020/ Lenox-White Plain Construction $16,778,667 86 1.27 ▬ 0 ▬ R T8050213 Mainline Track Replacement 2020 / 6th Avenue Construction $21,672,764 50 1.08 ▬ 0 ▬ G T8050214 Mainline Track Replacement 2020 / Astoria Construction $21,026,790 29 1.00 ▬ 0 ▬ G T8050215 Mainline Track Replacement 2020 / Dyre Construction $7,765,213 10 1.00 ▬ 0 ▬ G
+```
+
+## Page 59
+
+### [p059_c0001] Metropolitan Transportation Authority
+### [p059_c0002] 2nd Quarter 2021 Traffic Light Report Projects in Design and Construction
+[p059_c0003] ▲ = Index increase: Trending indicates condition worsening since last quarterly report ▼ = Index decrease: Trending indicates condition improving since last quarterly report ▬ = No Change since last quarterly report
+### [p059_c0004] Master Page # 59 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+[p059_c0005]
+
+```text
+ACEP Description Phase Total Project EAC % Phase Complete Cost Index Cost Trend Schedule Variance (Months) Schedule Trend Traffic Light Construction & Development New York City Transit T8050223 Continuous Welded Rail 2020 Construction $35,009,063 49 1.00 ▬ 2 ▲ G T8050224 2020 Track Force Account Construction $35,000,000 75 1.00 ▬ 0 ▬ G T8050227 Mainline Track Replacement 2021 / 11th st Cut Construction $19,926,544 40 1.00 ▬ 0 ▬ G T8050230 Mainline Track Replacement 2021 / Concourse Construction $15,611,732 3 1.00 ▬ 0 ▬ G T8050231 Mainline Track Replacement 2021 / Bway-7th Construction $27,246,472 84 1.00 ▼ 0 ▬ R T8050232 Mainline Track Replacement 2021 / Jamaica Construction $27,039,948 27 1.00 ▬ 0 ▬ G T8050234 Mainline Track Replacement 2021 / Jerome Construction $8,621,107 16 1.00 ▬ 0 ▬ G T8050236 Mainline Track Replacement 2021 / Pelham Construction $8,225,700 36 1.00 ▬ 0 ▬ G T8050240 Mainline Track - 2021 Support Costs Construction $15,628,292 2 1.00 ▬ 0 ▬ G T8050243 Mainline Track Replacement 2021 / Lexington Construction $19,122,747 49 1.00 ▲ 0 ▬ G T8050302 Switch Replacement: Various Locations Construction $462,203,500 0 1.00 ▬ 0 ▬ G T8050306 Mainline Track Switches 2020 / Queens Construction $7,531,710 5 1.00 ▬ 0 ▬ G T8050310 Mainline Track Switches 2020 / White Plains Rd Construction $21,100,168 86 1.00 ▬ 0 ▬ R T8050311 Mainline Track Switches 2020 / Broadway Construction $12,433,728 84 1.00 ▬ 0 ▬ G T8050317 Mainline Track Switches 2021 / Pelham Construction $11,511,600 3 1.00 ▼ 0 ▬ G T8050320 Mainline Track Switches- 2021 Support Costs Construction $12,179,185 2 1.00 ▬ 0 ▬ G T8130204 Purchase 27 Flat Cars Construction $21,772,241 45 1.00 ▬ -24 ▼ G T8120402 Miscellaneous Depot Investments Design $23,153,452 0 1.18 ▲ 0 ▬ G Long Island Rail Road L50304TQ MLC-Hicksville North Siding Construction $43,714,446 88 .99 ▬ 0 ▬ G L60304TU Jamaica Capacity Improvements - Phase One Construction $301,653,240 84 1.00 ▬ 8 ▲ R L60701AR Replacement of Richmond Hill Substation Construction $17,033,549 75 1.02 ▬ 3 ▲ R L70204U9 Jamaica Station - Planning & Engineering Construction $10,000,000 85 1.00 ▬ -1 ▼ G L70204VZ Elmont Station Construction $106,050,000 50 1.00 ▬ 0 ▬ G
+```
+
+## Page 60
+
+### [p060_c0001] Metropolitan Transportation Authority
+### [p060_c0002] 2nd Quarter 2021 Traffic Light Report Projects in Design and Construction
+[p060_c0003] ▲ = Index increase: Trending indicates condition worsening since last quarterly report ▼ = Index decrease: Trending indicates condition improving since last quarterly report ▬ = No Change since last quarterly report
+### [p060_c0004] Master Page # 60 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+[p060_c0005]
+
+```text
+ACEP Description Phase Total Project EAC % Phase Complete Cost Index Cost Trend Schedule Variance (Months) Schedule Trend Traffic Light Construction & Development Long Island Rail Road L70206EG PSNY-33rd Corridor (Phase 2 Construction) Construction $435,414,160 23 1.00 ▬ 0 ▬ G L70206VP Penn Sta Elevator/Escalator Renewal Construction $11,446,500 95 1.00 ▬ 0 ▬ R L70401BS Bridge Waterproofing Construction $8,048,756 34 1.00 ▬ -12 ▼ G L70401BU MENTOR ALLOWANCE - LINE STRUCTURES Construction $14,780,320 88 1.00 ▲ -1 ▼ G L70401D4 Lynbrook & Rockville Centre Renewals [SBDP] Construction $8,686,291 95 1.00 ▬ -1 ▼ G L70501SD Fiber Optic Network Construction $34,460,000 98 1.00 ▬ 0 ▬ G L70502LN Babylon to Patchogue Construction $45,639,479 16 .99 ▬ 0 ▬ G L70601YG DIESEL LOCOMOTIVE SHOP IMPROVEMENTS Construction $101,965,000 98 .99 ▬ 3 ▲ R L70701XB Substation Components Construction $24,306,295 40 .66 ▬ 6 ▲ R L70701XF 3rd Rail -Composite Rail Construction $11,600,000 89 1.00 ▬ 0 ▬ G L70701XU Substation Repl Pkg 2: Construction Construction $24,235,477 10 1.00 ▬ 0 ▬ G L8020418 Mets-Willets EIC Relocation Construction $208,700,000 1 7.27 ▬ -3 ▼ G L8020604 PSNY-33rd Phase 2 LI RR 20-24 Plan Contribution Construction $18,806,909 20 1.00 ▬ 0 ▬ G L8020701 GCT Facility Needs Construction $30,481,224 1 1.01 ▬ 0 ▬ G L8030101 Construction Equipment & Geometry Cars Construction $59,996,450 0 1.09 ▲ 0 ▬ G L8030102 Various Right of Way Projects Construction $10,000,000 11 1.00 ▬ -3 ▼ G L8030105 2020 - Annual Track Program Construction $148,445,459 3 .98 ▲ 0 ▬ G L8030106 2021 - Annual Track Program Construction $95,000,000 0 1.87 ▲ 0 ▬ G L8030110 Concrete Tie Program Construction $55,153,995 93 1.00 ▬ 0 ▬ G L8030401 Amtrak Territory Investments Construction $100,000,000 100 1.00 ▬ 0 ▬ G L8050101 Comm. Pole Line Construction $14,933,555 23 1.86 ▬ 0 ▬ G L8050102 Comm Component Replacement Construction $15,066,667 2 1.88 ▬ 0 ▬ G L8050205 Signal Replacement and Interlocking Improvements Construction $30,400,000 22 .50 ▲ 0 ▬ G L8070102 Lighting Improvements Construction $18,000,000 0 1.00 ▼ 0 ▬ G
+```
+
+## Page 61
+
+### [p061_c0001] Metropolitan Transportation Authority
+### [p061_c0002] 2nd Quarter 2021 Traffic Light Report Projects in Design and Construction
+[p061_c0003] ▲ = Index increase: Trending indicates condition worsening since last quarterly report ▼ = Index decrease: Trending indicates condition improving since last quarterly report ─ = No Change since last quarterly report
+### [p061_c0004] Master Page # 61 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+[p061_c0005]
+
+```text
+ACEP Description Phase Total Project EAC % Phase Complete Cost Index Cost Trend Schedule Variance (Months) Schedule Trend Traffic Light Construction & Development Long Island Rail Road L8070103 Power Component Repairs and Replacements Construction $35,000,000 0 .69 ▲ 0 ─ G L8070104 3rd Rail Upgrades Construction $43,000,000 0 1.00 ─ 0 ─ G L70204UO East Yaphank Station Design $20,000,000 26 1.00 ─ 4 ▲ R L70304WU Jamaica Capacity Improvements Ph 2 DES Design $42,490,000 68 1.00 ─ 0 ─ R L70502LH Babylon Interlocking Renewal Design $32,640,000 8 1.00 ─ 0 ─ R L80204DD ADA Accessibility and Components 24 Stations DES Design $10,000,000 12 1.00 ▼ 0 ─ G Metro-North Railroad M6020208 Customer Communication / Connectivity Improvements Construction $16,520,172 92 .98 ─ 0 ─ R M6040102 West of Hudson Signal Improvements Construction $63,461,327 95 .93 ─ 0 ─ G M6050101 Substation Bridge 23 - Construction Construction $41,452,052 98 .99 ─ 4 ▲ R M6050103 Harlem & Hudson Lines Power Improvements Construction $44,867,282 94 1.05 ─ 6 ▲ R M7020207 Customer Communication-Stations Construction $73,117,951 100 .90 ─ 0 ─ G M7020211 Customer Communication-Systems Construction $12,702,514 74 .95 ─ 0 ─ R M7030109 Purchase MoW Equipment Construction $19,796,793 66 1.03 ─ 0 ─ R M7030201 Overhead Bridge Program - E of H Construction $69,801,798 96 1.05 ─ 0 ─ G M7030203 Undergrade Bridge Rehabilitation Construction $78,585,693 60 .95 ─ 0 ─ G M7030209 Harlem River Lift Bridge Construction $9,785,122 40 .94 ─ 0 ─ G M7030303 Undergrade Bridge Rehabilitation Construction $11,092,972 90 .92 ─ 0 ─ G M7040102 Harmon to Poughkeepsie SignalSystem Construction $155,896,024 52 1.54 ─ 0 ─ R M7040111 West of Hudson Signal Improvements Construction $21,079,000 95 1.00 ─ 0 ─ G M7040112 Harlem Wayside Comm & Signal Improvements Construction $81,548,080 80 1.56 ─ 0 ─ R M7050101 Replace MA's in Signal Substations Construction $22,668,445 48 .93 ─ 0 ─ G M7050104 Harlem & Hudson Power Rehabilitation Construction $13,286,001 60 .88 ─ 0 ─ G M7050105 Harlem and Hudson Power Improvements Construction $22,985,848 75 .92 ─ 4 ▲ R
+```
+
+## Page 62
+
+### [p062_c0001] 2nd Quarter 2021 Traffic Light Report Projects in Design and Construction
+[p062_c0002] ▲ = Index increase: Trending indicates condition worsening since last quarterly report
+[p062_c0003] ▼ = Index decrease: Trending indicates condition improving since last quarterly report
+[p062_c0004] — = No Change since last quarterly report
+[p062_c0005]
+
+```text
+ACEP Description Phase Total Project EAC % Phase Complete Cost Index Cost Trend Schedule Variance (Months) Schedule Trend Traffic Light Construction & Development Metro-North Railroad M7050113 H&H Power (86th St / 110th St) Construction $12,203,556 94 1.07 — 6 ▲ R M7060101 Harmon Shop Replacement - Phase V Construction $431,817,796 40 1.00 — 0 — G M7080113 Customer Communication-CM Construction $15,185,854 95 .95 — 0 — G M8030103 Turnouts - Mainline, GCT, & Yards Construction $88,653,494 0 1.02 — 0 — G M8030108 2020 Cyclical Track Program Construction $19,653,484 9 1.02 — 0 — G M7030301 Rock Slope Remediation Design $9,814,119 85 .76 — 0 — G M7060103 Brewster YD Improvements - Design Design $7,176,021 55 .95 — 1 ▲ G M7060104 West of Hudson Capacity Improvements Design $23,923,618 26 .98 — 0 — G Bridges & Tunnels D701BW07 Fender Protection around Tower Piers (Const) Construction $18,194,169 56 .86 ▼ 0 — G D701CB18 CB Scour Protect/Repair/Replace CB/MP Pier Fender Construction $57,608,371 51 .87 ▼ 2 ▲ G D701HH07 Structural Rehabilitation Construction $38,223,974 59 .92 — 0 — G D701RK19 Seismic/Wind Retrofit & Structural Rehab Ph1 Construction $47,414,841 58 .83 ▼ 0 — G D701RK70 Miscellaneous Structural Rehabilitation Construction $28,537,255 58 .81 ▼ 0 — G D701TN53 Approach Viaduct Seismic Retrofit/Structural Rehab Construction $190,787,353 24 .85 ▼ 0 — G D701VN10 Anchorage & Piers Rehabilitation and Sealing Construction $44,841,046 94 .92 — -1 ▼ G D701VN32 Steel Repair & Concrete Rehabilitation Construction $28,305,892 48 .82 ▼ 0 — R D702TN49 Replacement of Grid Decks on Suspended Span Construction $285,533,443 54 .90 ▼ 0 — G D702VN11 Brooklyn Approach Reconstruction Construction $25,115,843 87 .86 ▼ 0 — G D702VN84 Reconstruction of VN Approach Ramps - Phase1 Construction $189,680,145 53 .85 ▼ 0 — G D704HC07 Rehabilitation of HCT Ventilation Systems Construction $76,578,503 86 .87 — 0 — G D707HH30 Replacement of HHB Overcoat System Construction $16,469,531 59 .83 — 0 — G D707TN49 Painting of Suspended Span Construction $17,644,527 54 .82 ▼ 0 — G D707VN49 Paint Suspended Span Upper & Lower Level Steel Construction $72,751,527 51 .98 — 0 — G
+```
+[p062_c0006] _Master Page # 62 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 63
+
+### [p063_c0001] Metropolitan Transportation Authority
+### [p063_c0002] 2nd Quarter 2021 Traffic Light Report Projects in Design and Construction
+[p063_c0003] ▲ = Index increase: Trending indicates condition worsening since last quarterly report ▼ = Index decrease: Trending indicates condition improving since last quarterly report ─ = No Change since last quarterly report
+### [p063_c0004] Master Page # 63 of 82 - Capital Program Oversight Committee Meeting 9/13/2021
+[p063_c0005]
+
+```text
+ACEP Description Phase Total Project EAC % Phase Complete Cost Index Cost Trend Schedule Variance (Months) Schedule Trend Traffic Light Construction & Development Bridges & Tunnels D801RK70 Structural Repairs/Flag Repairs Construction $56,698,020 9 .91 ▼ 0 ─ G D801RK81 Facility Interoperability Improvements Construction $4,986,252 89 .56 ▼ 0 ─ G D806MPX1 Operational Improvement Construction $9,440,661 0 .83 ▼ 0 ─ G D806VNX1 Install Safety Fencing on Both Levels of the VNB Construction $42,853,603 0 .98 ─ 0 ─ G D807MPPT MP Facility-Wide Painting Program Construction $17,469,166 5 .84 ▼ 0 ─ G D807RKPT RK Facility-Wide Painting Program Construction $75,240,143 1 .95 ▲ 0 ─ G D801BW14 Miscellaneous Structural Rehabilitation Design $18,662,443 85 .84 ▼ 0 ─ G D801CB30 Structural Rehabilitation of CBB Design $30,201,080 4 .75 ▲ -60 ▼ G D801HH36 Dyckman St. Abutment Repl. & Substation Upgra Design $71,821,439 40 .59 ─ 0 ─ G D801RK04 Ward's Island/Queens Anchorage Rehabilitation Design $172,462,248 5 1.00 ─ 0 ─ G D801RK19 Suspended Span Retrofit Design $133,095,810 5 .97 ─ 0 ─ G D801RK83 Lift Span Fender Upgrades Design $34,043,699 9 .76 ─ 0 ─ G D801TN52 Miscellaneous Structural Rehabilitation Design $24,400,000 9 .89 ▼ 0 ─ G D804BW96 Lighting, Power Redundancy & Resiliency Imprv Design $38,223,845 25 .69 ▼ 0 ─ G D804VN12 Misc. Bridge Lighting & Electrical Improvemen Design $23,402,937 15 .89 ▼ 0 ─ G MTA Bus U6030232 HVAC Upgrade at College Point Bus Depot Construction $9,521,950 32 1.00 ─ 1 ▲ G U7030207 Storerooms and Depot Reconfiguration: LaGuardia Construction $7,418,500 3 1.00 ─ 0 ─ G U7030209 Rehab and Facility Upgrade: College Point Construction $9,364,126 20 1.00 ─ 0 ─ G One Metro New York Program M8020206 New Fare Payment Equipment Construction $19,084,820 0 .76 ▼ 0 ─ G Construction & Development Rolling Stock T7030224 AEB Charging Infrastructure - Support of 5 Depots Construction $49,798,004 0 1.00 ─ 0 ─ G
+```
+
+## Page 64
+
+### [p064_c0001] Metropolitan Transportation Authority
+### [p064_c0002] 2nd Quarter 2021 Traffic Light Report Projects in Design and Construction
+[p064_c0003] ▲ = Index increase: Trending indicates condition worsening since last quarterly report ▼ = Index decrease: Trending indicates condition improving since last quarterly report ─ = No Change since last quarterly report
+[p064_c0004]
+
+```text
+ACEP Description Phase Total Project EAC % Phase Complete Cost Index Cost Trend Schedule Variance (Months) Schedule Trend Traffic Light Cross Agency One Metro New York Program T7040401 New Fare Payment System, Phase 2 Construction $463,323,580 42 1.00 ─ 0 ─ G L70204UV NEW FARE PAYMENT SYSTEM Construction $8,920,000 0 1.00 ─ 0 ─ G Rolling Stock T7010101 Purchase 440 B-Division Cars Construction $1,402,231,935 10 1.00 ─ 0 ─ G T7010102 Purchase 20 Open Gangway Prototype Cars Construction $79,905,106 8 1.00 ─ 0 ─ G T7030203 Purchase 165 Standard Hybrid Buses (Nova) Construction $146,226,253 28 .96 ─ 2 ▲ R T7030206 Purchase 50 Express Buses Construction $34,002,485 42 1.00 ─ 0 ─ G T7030215 AVLM for Paratransit Vehicles Construction $26,828,317 46 1.00 ─ 0 ─ R T7030223 Purchase 110 Standard Hybrid Buses (New Flyer) Construction $99,287,668 5 1.00 ─ 0 ─ G T7130208 Purchase 12 3-Ton Crane Cars Construction $32,211,961 20 1.00 ─ 0 ─ G T7130211 Purchase Locomotives Construction $256,092,473 14 1.00 ─ 0 ─ G T7130213 Purchase Various Non-Revenue Vehicles Construction $15,966,218 34 1.39 ─ 2 ▲ G T7130215 Conversion of 10 R77E Locomotives Construction $34,272,847 18 1.00 ─ 0 ─ G T8030208 Purchase 126 Hybrid (Nova) Construction $107,949,896 1 1.00 ─ 1 ▲ G T8030209 Purchase 209 Standard Diesel (Nova) Construction $141,211,796 1 1.00 ─ 2 ▲ G T8030210 Purchase 84 Hybrid-Electric (New Flyer) Construction $71,210,653 0 1.00 ─ 1 ▲ G T8030211 Purchase 139 Standard Diesel (New Flyer) Construction $98,808,397 0 1.00 ─ 0 ─ G U7030202 Purchase 257 Express Buses Construction $166,665,518 14 1.00 ─ 0 ─ G L60101MA M-9 Rolling Stock Procurement - 92 cars Construction $364,836,340 41 1.00 ─ 7 ▲ R L70101ME M-9 PROCUREMENT Construction $611,800,000 37 1.00 ─ 0 ─ G M7010101 Locomotive Purchase Construction $259,842,062 3 1.01 ─ 0 ─ G M7010102 M-8 Fleet Purchase Construction $113,867,497 80 .97 ─ 0 ─ G M8010102 Locomotive Replacement Construction $381,715,210 3 1.03 ─ 0 ─ G
+```
+[p064_c0005] _Master Page # 64 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 65
+
+### [p065_c0001] Metropolitan Transportation Authority
+### [p065_c0002] 2nd Quarter 2021 Traffic Light Report Projects in Design and Construction
+[p065_c0003] ▲ = Index increase: Trending indicates condition worsening since last quarterly report ▼ = Index decrease: Trending indicates condition improving since last quarterly report ─ = No Change since last quarterly report
+[p065_c0004]
+
+```text
+ACEP Description Phase Total Project EAC % Phase Complete Cost Index Cost Trend Schedule Variance (Months) Schedule Trend Traffic Light Construction & Development Stations ET040339 Sandy Mitigation: 138 St / JER Construction $8,288,679 8 1.02 ─ -6 ▼ G Infrastructure ET100211 Power Cable/Comm. Equip. Repl- Coney Island Yard Construction $164,562,094 59 .99 ─ 0 ─ G ET100307 Coney Island Yd: Long Term Perimeter Protection Construction $339,437,463 59 .97 ─ 0 ─ G ET100209 Power Cable Replacement- 148th Street Yard Construction $14,570,909 95 1.00 ─ 0 ─ G ET100309 Long Term Perimeter Protection: 148th St Yard Construction $74,272,313 96 .96 ─ 0 ─ G ET050210 Track: Rutgers Tube Construction $10,763,493 78 1.00 ─ 0 ─ G ET060214 Tunnel Lighting: Rutgers Tube Construction $7,984,298 78 1.00 ─ 0 ─ G ET060232 2 Pump Rooms: Rutgers Tube Construction $20,955,350 78 1.00 ─ 0 ─ G ET060233 1 Fan Plant (#6375): Rutgers Tube Construction $10,438,868 78 1.00 ─ 0 ─ G ET080213 Signals: Rutgers Tube Construction $14,068,069 78 1.00 ─ 0 ─ G ET090219 Comm/Power Cable Repl: Rutgers Tube Construction $48,919,147 78 1.02 ─ 0 ─ G ET100210 Power Cable Replacement- 207th Street Yard Construction $37,979,241 48 .98 ─ 0 ─ G ET100219 Sandy Repairs: 207 St Yard Track Construction $62,722,733 77 1.03 ─ 0 ─ G ET100220 Sandy Repairs: 207 St Yard Switches Construction $30,984,884 50 .62 ─ 0 ─ G ET100310 Long Term Perimeter Protection: 207th St Yard Construction $168,596,432 55 .99 ─ 0 ─ G ET100312 Sandy Mitigation: 207th Street Yard Portal Construction $54,881,539 63 2.02 ─ 0 ─ G ET100314 Sandy Mitigation: 207th Street Sewers Construction $169,415,749 19 1.19 ▲ 0 ─ R ET040327 Sandy Mitigation: 7 Stations (M/Q/Bx) Construction $52,609,057 84 1.00 ─ 0 ─ G ET060332 Sandy Resiliency: 3 Pump Rooms (53rd St Tube) Construction $16,031,141 78 .98 ─ 0 ─ G ET090304 Mitigation: Montague Substations - Various Locs Construction $8,954,494 16 .87 ─ 0 ─ G ET120307 Flood Mitigation at 4 NYCT Depots Construction $26,104,888 86 .99 ─ 0 ─ R ES070211 Flood Repairs- Clifton Shop (Long-Term) Construction $34,657,710 91 .99 ─ 0 ─ G
+```
+[p065_c0005] _Master Page # 65 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 66
+
+### [p066_c0001] Metropolitan Transportation Authority
+### [p066_c0002] 2nd Quarter 2021 Traffic Light Report Projects in Design and Construction
+[p066_c0003] ▲ = Index increase: Trending indicates condition worsening since last quarterly report
+[p066_c0004] ▼ = Index decrease: Trending indicates condition improving since last quarterly report
+[p066_c0005] ▬ = No Change since last quarterly report
+[p066_c0006]
+
+```text
+ACEP Description Phase Total Project EAC % Phase Complete Cost Index Cost Trend Schedule Variance (Months) Schedule Trend Traffic Light Construction & Development Infrastructure ES070302 SIR Mitigation: Clifton Shop / Yard Construction $160,856,190 91 .98 ▬ 0 ▬ G ES070303 SIR Mitigation: St. George Construction $55,677,938 90 1.03 ▬ 0 ▬ R ET060336 Sandy Resiliency: 4 Pump rooms(Jerome/Pelham Tube) Design $2,866,204 5 .24 ▬ 0 ▬ G ET070310 Rockaway ROW Debris Shielding Design $40,396,722 20 1.68 ▬ 1 ▲ R ET070311 Sandy Mit: New Crossover at Beach 105th St. / RKY Design $61,182,136 20 1.03 ▬ 1 ▲ R ET070313 Rockaway Park Yard Compressor Room (ROW) Design $7,726,207 20 1.00 ▬ 1 ▲ R ET070209 Sandy Repairs: Rockaway Line Wrap Up Post Des to Const Awd $50,513,970 100 1.07 ▼ 1 ▲ R ET070308 Sandy Mitigation: Steinway Portal Post Des to Const Awd $15,259,992 100 .76 ▬ 0 ▬ G ET090307 Hardening of Substations at 24 Locations Post Des to Const Awd $98,217,710 30 1.00 ▼ 1 ▲ R ET090308 Sandy Mitigation: Deployable Substations Post Des to Const Awd $50,230,069 100 1.06 ▬ 0 ▬ R ET090310 Sandy Mitigation: Back-up Power Control Center Post Des to Const Awd $16,003,985 5 .94 ▬ 0 ▬ G ET100218 Sandy Repairs: 207th St Yard Signals Construction $298,018,140 52 .99 ▬ 0 ▬ G Signals / Train Controls ET040317 Upgrade Emergency Booth Comm System (EBCS) Construction $78,316,385 69 1.00 ▬ 0 ▬ G ET050217 Sandy Repairs: ML Track 200-207 St/8AVE Post Des to Const Awd $73,905,394 0 .92 ▲ 0 ▬ G New York City Transit ET160310 Sandy Mitigation: Consolidated Revenue Facility Post Des to Const Awd $3,654,754 100 .24 ▼ 2 ▲ R
+```
+[p066_c0007] _Master Page # 66 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 67
+
+### [p067_c0001] 2nd Quarter 2021 Traffic Light Report Projects in Design and Construction
+[p067_c0002] ▲ = Index increase: Trending indicates condition worsening since last quarterly report ▼ = Index decrease: Trending indicates condition improving since last quarterly report ▬ = No Change since last quarterly report
+[p067_c0003]
+
+```text
+ACEP Description Phase Total Project EAC % Phase Complete Cost Index Cost Trend Schedule Variance (Months) Schedule Trend Traffic Light Construction & Development New York City Transit ET160312 Sandy Mitigation: Tiffany Central Warehouse Post Des to Const Awd $26,225,217 100 1.04 ▬ 2 ▲ R Long Island Rail Road EL0303ZH Emergency Management Equipment Mitigation Construction $24,892,132 63 .82 ▬ 0 ▬ R EL0502ZC Long Beach Branch - Systems Restoration Construction $68,666,958 90 .96 ▬ -5 ▼ G EL0602ZD West Side Storage Yard Restoration Construction $43,512,962 53 .99 ▬ 0 ▬ G EL0402ZA East River Tunnel Signal Sys & Infra Restoration Design $179,566,202 30 1.00 ▲ 0 ▬ G EL0603ZS Long Island City Yard Resiliency - CR Post Des to Const Awd $37,581,253 1 1.42 ▬ 2 ▲ R Metro-North Railroad EM040205 Comm & Signal Infrastructure Restoration-Ph. 1 & 2 Construction $104,918,378 75 1.07 ▲ 0 ▬ R EM040301 Power and Signals Mitigation Phase 1 Construction $53,348,130 75 1.62 ▲ 0 ▬ R EM040302 Hudson Line Power and Signal Resiliency Construction $38,373,937 75 1.09 ▲ 0 ▬ R EM050206 Power Infrastructure Restoration-Ph. 1 & 2 Construction $177,423,469 75 1.00 ▬ 0 ▬ R EM050208 Power Infrastructure Restoration-Substations Construction $47,568,232 91 1.04 ▲ 4 ▲ R EM050209 Power Infrastructure Restoration-HRLB Construction $7,823,165 93 .93 ▬ 3 ▲ R Bridges & Tunnels ED040308 Power Resiliency at RFK Bridge: Substation Upgrade Construction $33,165,923 53 .89 ▼ -2 ▼ G Cross Agency Rolling Stock ET060317 Sandy Resiliency: Conversion of 2 Pump Trains Design $19,119,839 98 .71 ▬ 3 ▲ R
+```
+[p067_c0004] _Master Page # 67 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 68
+
+### [p068_c0001] Construction & Development
+### [p068_c0002] C&D Variance Report on IEC Traffic Light Report: Q2 2021 (June 2021)
+### [p068_c0003] Infrastructure
+[p068_c0004] The C&D Infrastructure Business Unit currently oversees 560 active projects with a budget of $15.4B, including 106 projects in construction with a budget of $3.7B.
+[p068_c0005] Notable projects under construction include upgrading MTA's bus radio system, flood mitigation at the 207 Street Yard and the Coney Island Yard, rehabilitating the Forsyth Street Fan Plant, upgrading the Power Control Center & Rail Control Center, and rehabilitating HVAC systems at College Point.
+[p068_c0006] The IEC's Traffic Light Report currently tracks 70 tasks (ACEPs) in the C&D Infrastructure program. Of those, 12 tasks were flagged red, representing 7 projects. The items below describes why these project tasks (ACEPs) were flagged, and what C&D is doing to remediate.
+[p068_c0007] C&D Infrastructure is also seeking to identify and remediate issues at the program level. Many projects, for instance, have been flagged red because of persistent delays and other complications with Con Edison. To mitigate, the acting Business Unit Lead coordinates with Con Edison issues across numerous projects.
+### [p068_c0008] ET100314: Sandy Mitigation: Sewer 207 th Street (construction phase)
+[p068_c0009] This project will provide flood mitigation by relocating Department of Environmental Protection (DEP) owned sewers from 207 Street Yard.
+[p068_c0010] Utility companies' ability to schedule MTA work is often challenging due to unavailability of skilled crews/labor. Here, the project is incurring potential substantial schedule delays due to Verizon/ECS – Empire City Subway, Spectrum and Con Edison, resulting in an impact on the schedule of up-to-310 days delay as of 8/31/21.
+[p068_c0011] An additional complication is the project's limited access to 215 th Street. The street is designated for snow removal staging and no street work can be performed from 10/1/21 thru 4/1/22. The New York City Department of Sanitation has also undertaken a large demolition of the furnace stacks on 215 th Street (to be completed first quarter 2022). Along 10 th Avenue, procuring copper cables has been heavily delayed by ECS/Verizon. The Contractor is unable to continue support of excavation work. In addition, Con Edison has added gas regulator work, which was not part of the original design, further limits access to the street.
+[p068_c0012] To mitigate this, MTA is working with the utilities to expedite the approval and work on 10 th Avenue and 215 th Street. MTA and the contractor are working jointly on developing a schedule mitigation plan. There are on-going coordination meetings with the various stakeholders to schedule work - DEP and The City of New York Department of Sanitation (DSNY).
+[p068_c0013] _Master Page # 68 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 69
+
+### [p069_c0001] Construction & Development
+### [p069_c0002] C&D Variance Report on IEC Traffic Light Report: Q2 2021 (June 2021)
+### [p069_c0003] S70701/06: New Power Substation: New Dorp (construction phase) S70701/07: New Power Substation: Clifton (construction phase)
+[p069_c0004] These projects will construct new power substations on Staten Island, in the vicinity of the New Dorp and Clifton Stations, to augment the electrical power requirements in these areas, thus improving the reliability of train service.
+[p069_c0005] MTA completed both new facilities in August 2021; the only remaining item to Substantial Completion is Con Ed to finalize tie-in and to provide high-tension service to the new facility. The forecast substantial completion of June 2021 has been extended to September 2021, but could slip again. Con Ed has not provided date prior to 9/30/21 due to on-going summer heat conditions. The acting Business Unit Lead is in regular contact with Con Edison to prioritize this work.
+### [p069_c0006] S8070102: Staten Island Railroad - Track and Switch Replacement (design phase)
+[p069_c0007] A 2015 survey identified approximately 21 miles of the Staten Island Railway's mainline track as being in "Condition 4" – in deteriorating condition and needing to be replaced. Phase 1 of the SIR Mainline Track replacement work, addressing approximately 4 miles of the Condition 4 stretch, is under construction. This project is to design Phase 2 of the work to address approximately 9 miles of the remaining Condition 4 track, as well as 132 mainline track switches.
+[p069_c0008] Phase 1 of the SIR Mainline Track replacement work (Contract T-80280) is currently in construction, and is addressing approximately 4 miles 20% of the "Condition 4" stretch, is under construction areas (4.26 miles). This project is to design Phase 2 of the SIR Mainline Track replacement work and to address approximately 9 miles 40% of the remaining "Condition 4 track" areas (9.13 miles), as well as 13 mainline track switches. In an effort to achieve economies of scale, the Infrastructure Business Unit is seeking to add this work onto the Phase 1 contract.
+[p069_c0009] The schedule delay is primarily due to platform clearance issues and request to reduce the project budget of $121M by 40% budget to approximately $76M. Rubbing boards are needed to be installed in station areas to meet the ADA-American with Disabilities act. There was a concern in installing these boards as it could be encroached (or hit) by the SIR diesel locomotives when it passed the stations. A dynamic envelope analysis was conducted, and it was confirmed that installing the rubbing board will not be encroached and can be installed to meet the ADA requirements.
+[p069_c0010] In addition, a potential issue with Transit labor availability in Staten Island to support General Orders and work trains is being investigated.
+[p069_c0011] Mitigation efforts include the following: 1. The Design Management Office initiated a reduction in the scope of work to meet the budget. 2. 16,000' of track are being transferred to Phase 1 as a Change Order resulting in a cost saving of approximately $9M. 3. This project's Statement of Work currently reduced to the 13 switches and approximately 4,500' of associated track. This Contract is build-to-budget and the mileage had to be successively reduced with each budget cut. Approx. 23,000' of
+[p069_c0012] _Master Page # 69 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 70
+
+### [p070_c0001] Construction & Development
+### [p070_c0002] C&D Variance Report on IEC Traffic Light Report: Q2 2021 (June 2021)
+[p070_c0003] trackwork was transferred to Phase 1 (T-80280) in two stages as a cost-savings measure. Subsequent to the reporting period, design completion slipped further to January 2022.
+### [p070_c0004] T6120403 Replace Bus Radio System (construction phase)
+### [p070_c0005] U6030226 Bus Radio System (construction phase)
+### [p070_c0006] U7030211 Bus Radio System - MTA Bus Share (construction phase)
+[p070_c0007] The project is to implement a new digital bus radio system for NYCT and MTA Bus. The project includes: 1) Constructing 35 new radio base station sites throughout the region on properties owned or leased by the MTA; 2) Retrofitting the entire fleet of buses (approximately 6,000) and non-revenue vehicles with new radio equipment; and 3) Furnishing a new radio control and dispatch system in the new Bus Command Center.
+[p070_c0008] The project has experienced delays due to Third-Party Agreements and site access, poor quality / productivity related to the installation of the new radio system into the 6000+ buses, delays in utility service and impacts from COVID-19 resulting in a slippage of substantial completion to June 2023 depending on the success of the new quality control measures and personnel recently implemented by the contractor and C&D. Further projections of the substantial completion date will be forthcoming as the impact of recent changes are quantified.
+[p070_c0009] The contractor has submitted several claims requesting Extensions of Time, dating back to 2019, that are under review by MTA Legal and MTA Program Controls. The revised contractor schedule reflects these claims. The 30 months delay reflected in the schedule is a combination of 3 rd Party delays, Concurrent delays, Force Majeure delays and potentially a combination of MTA and Contractor delays. The fact is that the contractor has submitted a schedule indicating a 30-month delay to substantial completion (June 2023) that is currently under review by the MTA.
+[p070_c0010] Mitigation includes the following: Utility issues have been escalated and utility connections are now progressing well. Contractor quality issues have resulted in a quality plan that has been agreed upon by all stakeholders and includes contractor repairs and rework. The quality plan is currently being implemented and ramped-up. Design issues continue to be corrected and tracked daily. Problematic Third-Party sites have been escalated to MTA Real Estate, MTA Government Affairs, MTA Legal and LIRR Executives. C&D Infrastructure has requested management changes to the contractor project management team and is working on a permanent solution for the Todt Hill tower. Management changes with Parsons have been implemented.
+[p070_c0011] _Master Page # 70 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 71
+
+### [p071_c0001] Construction & Development
+### [p071_c0002] C&D Variance Report on IEC Traffic Light Report: Q2 2021 (June 2021)
+### [p071_c0003] T7090222: New Substation Maspeth Ave. - Humboldt St. Canarsie (construction phase)
+### [p071_c0004] T7090223: New Substation Harrison Place (construction phase)
+### [p071_c0005] T7090406: Rehab CBH # 85 & New Ducts: Bedford-N 6 St Substation Canarsie construction phase)
+[p071_c0006] This project involves the construction of a new underground substation at the above locations to augment power capacity to appropriately support an increase in train services on the Canarsie Line.
+[p071_c0007] The on-site construction is completed. However, the schedule has been revised for substantial completion and closeout, due to the inability to obtain Con Ed energization of the substation (second feeder). C&D is working with Con Ed continuously to schedule the second feeder energization.
+### [p071_c0008] T7080651 Help Point Wrap-Up and Customer Assisted Intercom Removals (construction phase)
+[p071_c0009] This project will provide upgrade to the Help Point system and decommission Customer Assistance Intercom at 472 stations.
+[p071_c0010] The schedule has been revised due to limited availability of EMD- Electronic Maintenance Division. C&D is reviewing mitigation options.
+### [p071_c0011] T7080602 Upgrade of Asynchronous Fiber Optic Rings A & C (construction phase)
+[p071_c0012] This project will upgrade the existing Fiber Optic Network equipment to a SONET technology on the A and C rings at 23 sites. This work is to migrate existing live circuits from obsolete equipment to new installed equipment.
+[p071_c0013] The schedule has been revised due to lack of in-house subject matter experts from EMD- Electronic Maintenance Division. C&D and Contractor are working closely with EMD on alternate solutions.
+[p071_c0014] _Master Page # 71 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 72
+
+### [p072_c0001] Construction & Development
+### [p072_c0002] C&D Variance Report on IEC Traffic Light Report: Q2 2021 (June 2021)
+### [p072_c0003] Long Island Rail Road
+[p072_c0004] The LIRR Business Unit currently oversees 115 active projects, including 44 projects in construction, with a budget of $2.5B. Notable projects under construction include Jamaica Capacity Improvements, Ocean Avenue Substation, Queens Interlocking, and the Annual Track Program. The LIRR Business Unit also tracks and supports the management of capital work undertaken by LIRR in-house forces: an additional 38 active projects (7 in construction) with a budget of $1.4B.
+[p072_c0005] The IEC's Traffic Light Report currently tracks 45 tasks (ACEPs) in the LIRR program (third-party and in-house). Of those, 4 tasks were flagged red, representing 4 projects. Below describes why these project tasks (ACEPs) were flagged, and what C&D is doing to remediate.
+### [p072_c0006] L60304TU: Jamaica Capacity Improvements – Phase I (construction phase)
+[p072_c0007] This project is the first phase of a multi-decade initiative to dramatically improve track configuration at Jamaica, where 10 of LIRR's 11 lines converge. Two factors have delayed the project by eight months. First, the completion of Track 12/A6 was initially deferred to allow for the NYSDOT to install a new bridge, for track A6, across the Van Wyck Expressway (VWE) as part of their VWE Widening Project. Subsequently, delay to completion of the previously deferred trackwork has been attributed to the lack of sufficient force account manpower supporting the track installation due to higher priority projects (Elmont, Mainline Expansion, ESA, NYSDOT Van Wyck Widening). Installation is currently in process and will be completed prior to the planned service date later this fall. The Project Management Team continues to monitor, update, and manage project risks including other major projects like Queens/Elmont, Main Line Third Track, ESA, and others relative to manpower needs vs. available LIRR resources.
+[p072_c0008] Second, the installation of the universal interlockings have been delayed to second quarter of 2022 because of two factors – delays in advertisement/award for the Beaver Interlocking Signal Platform (awarded to a SBMP), and again, force account resource availability. PM staff are monitoring the progress of the SBM contractor to avoid or mitigate any further schedule delays related to the platform construction. PM staff are also closely monitoring progress of force account activities.
+### [p072_c0009] L70204UO: East Yaphank Station (design phase)
+[p072_c0010] The proposed project is to relocate the East Yaphank Station on the Main Line Line to a new location closer to Brookhaven National Laboratory and the William Floyd corridor. Design completion is on hold until a preferred location is agreed upon by local stakeholders.
+[p072_c0011] _Master Page # 72 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 73
+
+### [p073_c0001] Construction & Development
+### [p073_c0002] C&D Variance Report on IEC Traffic Light Report: Q2 2021 (June 2021)
+### [p073_c0003] L70601YG: Morris Park Diesel Locomotive Shop Improvements (construction phase)
+[p073_c0004] C&D-LIRR is building a new Locomotive Shop at Morris Park to replace a 131-year-old facility. The new shop will shorten repair turn-around times, support overhaul and heavy maintenance efforts, which will increase the reliability of LIRR's diesel fleet. The additional three-month project delay is attributed to two concurrent issues. First the equipment issue related to the closure of the original drop table manufacturer. A new vendor was contracted to create a new design based on the former vendor's equipment. The project achieved Substantial Completion in July 2021.
+### [p073_c0005] L70701XB: Substation Components (construction phase)
+[p073_c0006] This is an on-going project to keep substations in a state of good repair. The six-month project delay is attributed to the delays in procurement of a Substation & Transformer Painting Contract and C&D resource constraints. The Substantial Completion of this project was revised from February 2022 to August 2022 to reflect the current forecasted award of the Substation & Transformer Painting Contract. C&D and the contractor are working to reduce the impacts of the delays.
+[p073_c0007] _Master Page # 73 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 74
+
+### [p074_c0001] Construction & Development
+### [p074_c0002] C&D Variance Report on IEC Traffic Light Report: Q2 2021 (June 2021)
+### [p074_c0003] Metro-North
+[p074_c0004] The MNR Business Unit currently oversees 64 active projects, including 24 projects in construction, with a budget of $2.4B. Notable projects under construction include the Superstorm Sandy Power and C&S Restoration project, Harmon Shop Improvements, and the Grand Central Trainshed project.
+[p074_c0005] The IEC's Traffic Light Report currently tracks 31 ACEPs in the C&D Metro-North program. Seven of those 31 ACEPs were flagged red, representing four projects. The description below describes why these project tasks (ACEPs) were flagged, and what C&D is doing to remediate.
+### [p074_c0006] EM040301: Power and Signals Mitigation (construction phase)
+### [p074_c0007] EM050208: Power Infrastructure Restoration Substations (construction phase)
+### [p074_c0008] EM050209: Power Infrastructure Restoration HRLB (construction phase)
+[p074_c0009] These three ACEPs are part of the same project to restore power and signal infrastructure to the Hudson Line damaged during the Super Storm Sandy. This project requires extensive Force Account Support from the Track, Power, Communication & Signal Departments, many of which are experiencing staff shortages leading to the schedule slip/cost increase. C&D is mitigating this situation by meeting biweekly with the Power Dept. user group to prioritize this work among other MNR projects. Additionally, MNR BU has designated a dedicated construction manager who coordinates daily all FA resources needed to proceed with the work, and provide an alternative work plan, if needed.
+[p074_c0010] A separate issue on this project was with the commissioning of the Harlem River Lift Bridge. The commissioning is on hold due to user group request for additional scope, which is currently under discussion among the user group, PCEO and Engineer of Record for the system and design. To mitigate the delay, the project team is working with the designer expediting the design completion and providing it to the contractor by September 2021. The Harlem River Lift Bridge project (EM050209), Substantial Completion is now expected in June 2022.
+### [p074_c0011] M6050101: Bridge 23 (construction phase)
+[p074_c0012] The project is to replace a power supply substation in Mount Vernon. Although C&D-MNR is overseeing the project, work is actually performed by the New York Power Authority (NYPA).
+[p074_c0013] Project is in the final phase of construction. Defective relays were found during Signal Substation testing. The contractor performed various tests to find the root cause and the solution found was to install either differential relays which had 20 weeks of lead time or time delay relays which had a shorter lead time. To mitigate the delay, the contractor & MNR have agreed to install time delay relays in lieu of differential relays. Substantial Completion is now expected by December 2021.
+[p074_c0014] _Master Page # 74 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 75
+
+### [p075_c0001] Construction & Development
+### [p075_c0002] C&D Variance Report on IEC Traffic Light Report: Q2 2021 (June 2021)
+### [p075_c0003] M6050103: Harlem & Hudson Lines Power Improvements (construction phase)
+### [p075_c0004] M7050113: Harlem & Hudson Lines Power Improvements (construction phase)
+[p075_c0005] These two projects will replace two existing substations
+[p075_c0006] Project has been delayed due to lengthy review of the Short Circuit/Relay Coordination Study by Con Ed. When Con Ed completes their review testing shall begin. MNR and the contractor have reached out to Con Ed to expedite their review and approval of the study. The Equipment test procedure has been submitted and is currently under review by MNR's Power Department. Energization of the 86 th St. Substation is expected to commence by the end of August 21. Substantial Completion is now expected in December 2021.
+### [p075_c0007] M7050105: Harlem & Hudson Power Improvement – City Water (construction phase)
+[p075_c0008] The project is to build a new power substation near Mount Kisco to mitigate existing undervoltage on a section of the Harlem Line.
+[p075_c0009] Testing and commissioning has been delayed by Con Ed not approving all technical and testing documentation on the agreed-upon schedule. The project team is working and coordinating with the contractor and Con Ed to resolve and mitigate technical issues and expedite the approvals as soon as possible.
+[p075_c0010] _Master Page # 75 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 76
+
+### [p076_c0001] Construction & Development
+### [p076_c0002] C&D Variance Report on IEC Traffic Light Report: Q2 2021 (June 2021)
+### [p076_c0003] Signals and Train Control
+[p076_c0004] The Signals & Train Control Business Unit currently oversees 36 active projects, including 16 projects in construction, with a budget of $2.6B. Notable projects under construction include three major CBTC projects (QBL West, Culver and Eighth Ave), as well as a number of other important signaling projects. The unit's 2021 Commitments includes QBL East, which will be procured as a Design Bid Build based on existing documents, and other smaller projects. C&D is planning to solicit the help of a General Engineering Consultant (GEC) to identify strategies to improve how MTA contracts and executes CBTC/UWB projects moving forward.
+[p076_c0005] The IEC's Traffic Light Report currently tracks 33 tasks (ACEPs) in the Signals & Train Control Business Unit. Of those, 1 task was flagged red. Below describes why these project tasks (ACEPs) were flagged, and what C&D is doing to remediate.
+### [p076_c0006] T6080661: ISIM-B Module 3A Rail Control Center (RCC) Build Out (construction phase)
+[p076_c0007] This project will renovate the south side of the operation theater. Renovation work includes architectural, structural, mechanical, electrical, and communication work to prepare for installation of a large-scale display under ISIM-B Module 3.
+[p076_c0008] The substantial completion was moved from June 2021 to November 2021 due to issues concerning the operation of the existing HVAC system at the RCC. The completion of module 3a requires the contractor to tie-in to the existing HVAC system. The existing HVAC chiller is currently operating at a lower capacity. Building maintenance will allow the contractor to tie in after temporary units are installed by others (November 2021). Premature tie into the existing chiller would create operational impacts to the RCC.
+[p076_c0009] _Master Page # 76 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 77
+
+### [p077_c0001] Construction & Development
+### [p077_c0002] C&D Variance Report on IEC Traffic Light Report: Q2 2021 (June 2021)
+### [p077_c0003] Stations
+[p077_c0004] The Stations Business Unit currently oversees 282 active projects, including 43 projects in construction, with a budget of $10.3B. Notable projects under construction include ADA: 8 Stations on SIR, A, F, G, L, 1, and 6 lines, ADA and Reconstruction of Times Sq Shuttle, and Replacement of 12 Traction Elevator at 191 St, 181 St, and 168 St Stations on the 1 Line.
+[p077_c0005] The IEC's Traffic Light Report currently tracks 49 tasks (ACEPs) in Stations Business Unite, one task was flagged red. Below describes why this project task (ACEP) was flagged, and what C&D is doing to remediate.
+### [p077_c0006] T7041322: ADA: 95 St and 4 Ave (design phase)
+[p077_c0007] The project will provide two ADA compliant elevators (1 from the street to mezzanine and 1 from the mezzanine to platform level) and reconfigure existing mezzanine and station facilities as required. Initially a stand-alone project, this is now part of the multi-station, ADA Package 4 Bundle. The design documents are being bundled to streamline design, contracting and construction; allowing MTA C&D to capitalize on the economies of scale to increase efficiency. Due to this, the design completion date was pushed out to March 2022.
+[p077_c0008] _Master Page # 77 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 78
+
+### [p078_c0001] Metropolitan Transportation Authority
+### [p078_c0002] Variance Report on IEC Traffic Light Report: Q2 2021 (June 2021)
+### [p078_c0003] NYCT Department of Subways
+[p078_c0004] NYCT Department of Subways (NYCT DOS) conducts a range of in-house capital work, including tracks and switches, as well as employee facilities. The IEC's Traffic Light Report flagged one Track project task (ACEP) in the NYCT DOS program.
+[p078_c0005] NYCT schedules track work to take advantage of General Orders already obtained for other projects, a practice known as piggy-backing. This saves resources for the agency and reduces service disruptions for our customers. Unfortunately, this dependence on other projects' schedules makes the track program more vulnerable to schedule changes. The description below describes why this track project was flagged, and what NYCT is doing to remediate.
+### [p078_c0006] T8050209: 2020 Mainline Track Replacement - Lexington Line (construction phase)
+[p078_c0007] This project consists of four jobs at two locations, South of Canal Street on tracks MM-1, MM-2 & MM-3 and North of Borough Hall on track M-2. Initially, the three jobs at Canal street required 300 track-feet of Type II-IIIM and 600 track-feet of Ekki-Hilti work. The initial scope of work was based on the 2018 Condition Survey. However, an inspection was performed by the division of Track in the calendar year 2020 and it was discovered that this area had extensive water damage causing broken and missing concrete. Therefore, the scope of work was changed by Track to Type II-IIIM work to address the damaged concrete.
+[p078_c0008] In addition, the North of Borough Hall location required additional General Orders (GOs) due to limited track access to the tube area. The tube area is a high traffic location and therefore track access is not easily granted. The timeframe of each GO only allows Track Construction to complete up to 300 track-feet of work.
+[p078_c0009] As a result, Track has submitted their request for an additional $5M to offset the overruns due to the scope changes and the additional GOs required for the completion of this contract.
+[p078_c0010] _Master Page # 78 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 79
+
+### [p079_c0001] Metropolitan Transportation Authority
+### [p079_c0002] Variance Report on IEC Traffic Light Report: Q2 2021 (June 2021)
+### [p079_c0003] Rolling Stock
+[p079_c0004] The Subways Rolling Stock Business Unit currently oversees with a budget of over $5B. Notable projects include the Procurement of the R179 and R211 Car Classes.
+[p079_c0005] The IEC's Traffic Light Report currently tracks 2 tasks (ACEPs) in the Subways Rolling Stock program. Of those, 1 task was flagged red, representing 1 project. The description below describes why these project tasks (ACEPs) were flagged, and what C&D is doing to remediate.
+### [p079_c0006] ET060317: Sandy Resiliency: Conversion of 2 Pump Trains (design phase)
+[p079_c0007] This project is to procure pump trains utilized throughout the system to remove standing water from tracks to rapidly restore subway services and protect transit infrastructure.
+[p079_c0008] The schedule slippage is due to lengthy negotiations with the prospective contractor regarding technical and commercial terms; additional negotiations regarding added cybersecurity requirements and changing the pickup and delivery location from a NYCT location to Port Authority of NY & NJ-South Brooklyn Marine Terminal (PANYNJ-SBMT) (negotiations are ongoing); and time needed for procurement to obtain FTA's authorization for advance payment (still awaiting FTA's response).
+[p079_c0009] _Master Page # 79 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 80
+
+### [p080_c0001] Metropolitan Transportation Authority
+### [p080_c0002] Variance Report on IEC Traffic Light Report: Q2 2021 (June 2021)
+### [p080_c0003] Others
+### [p080_c0004] L60101MA: M-9 Rolling Stock Procurement - 92 cars (production phase)
+[p080_c0005] M-3 cars are experiencing performance challenges and technological obsolescence. This project will begin replacing the worst-performing units with new M-9 cars, completing the fleet replacement in the next Capital Program. The 92 Base Order of M-9 cars have all been Conditionally Accepted as of June 9, 2021. The seven-month schedule slippage to December 2021, is primarily attributed to contractor's workmanship issues which has required several areas/systems of the car to be inspected and repaired as required by LIRR.
+[p080_c0006] _Master Page # 80 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 81
+
+### [p081_c0001] Metropolitan Transportation Authority
+### [p081_c0002] Projects in CPOC’s Risk-Based Monitoring Program (2 nd Quarter 2021 Traffic Light Report – Period Ending June 30, 2021)
+[p081_c0003] The following projects in CPOC’s Risk-based Monitoring Program are currently reported on by the responsible MTA Business Unit in accordance with the CPOC Work Plan schedule and are continually monitored by the Independent Engineering Consultant. Monitored projects from multiple Capital Programs are included in the Quarterly Traffic Light Report. The list is subject to periodic review and adjustment by the MTA.
+[p081_c0004]
+
+```text
+Projects in CPOC's Risk-Based Monitoring Program Capital Program Project 2010-14 2015-19 Integrated Capital Projects X Second Avenue Subway - Phase 2 X X East Side Access & Regional Investments X Penn Station Access X LIRR Expansion Project – Mainline Third Track - Floral Park to Hicksville Signals and Communications X Communications Based Train Control – 8 th Ave Line X Communications Based Train Control - Queens Blvd. West- Phase 1 X Communications Based Train Control - Queens Blvd. West- Phase 2 X Communications Based Train Control – Culver Line X X Integrated Service Information and Management B Division X X Replace Bus Radio System Subway Car, Bus and Rolling Stock Procurement X X New Subway Car Procurement X X New Bus Procurement X X Commuter Rail Road Rolling Stock Procurement Passenger Stations Program X ADA Reconstruction Times Square Station – 42 Connection Project X New Fare Payment System – Phase 2 X ADA 149 th St/Tremont Ave Stations X ADA Accessibility Package A
+```
+[p081_c0005] _Master Page # 81 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_
+
+## Page 82
+
+### [p082_c0001] Metropolitan Transportation Authority
+### [p082_c0002] Projects in CPOC’s Risk-Based Monitoring Program (2 nd Quarter 2021 Traffic Light Report – Period Ending June 30, 2021)
+[p082_c0003]
+
+```text
+Capital Program Project 2010-14 2015-19 Shops and Yards X Harmon Shop Replacement Phase V, Stage 2 X New Mid Suffolk Electric Yard X Morris Park Diesel Locomotive Shop Line Structures and Track X Jamaica Capacity Improvements Phase 1 Bridges and Tunnels X Throgs Neck Bridge Replace Suspended Span Deck Sandy Program Sandy Program Rutgers Tube Rehabilitation Sandy Program Reconstruct Clifton Repair Shop Sandy Program Coney Island Yard Long Term Perimeter Protection Sandy Program 207 th Street Yard Long Term Perimeter Protection
+```
+[p082_c0004] _Master Page # 82 of 82 - Capital Program Oversight Committee Meeting 9/13/2021_

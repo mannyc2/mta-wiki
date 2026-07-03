@@ -1,0 +1,102 @@
+{
+  "run_id": "2026-06-10T17-13-30-775Z_1462165-0122f26b_ingest_116-st-morningside-ave-pleasant-ave-cb11-mar2025",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-10T17:36:20.577Z",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "relate_tsp_116th_st_cb11_mar2025",
+        "local_observation_id": "treatment_tsp_116th_st_cb11_mar2025",
+        "decision": "relate",
+        "target_record_id": "project_116th-st-bus-priority-review-mar2025",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_116th-st-bus-priority-review-mar2025",
+            "object_id": "treatment_tsp-116th-st-cb11-mar2025",
+            "description": "Transit Signal Priority considered as a tool for the 116th Street Bus Priority Review corridor",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p023_c0002",
+                "source_quote": "• Traffic signal timing • Transit Signal Priority (TSP) • Bus lane camera enforcement – DOT stationary cameras – MTA on-bus cameras (ACE) • Tree pits & streetscape improvements • Automated Pedestrian Signals (APS) • DOT Art"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source page 23 'Other Tools' lists Transit Signal Priority as a tool in the toolkit being presented for the 116th Street corridor Bus Priority Review project. The source directly supports this treatment being considered as part of the corridor study.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p023_c0002",
+            "source_quote": "• Traffic signal timing • Transit Signal Priority (TSP) • Bus lane camera enforcement – DOT stationary cameras – MTA on-bus cameras (ACE) • Tree pits & streetscape improvements • Automated Pedestrian Signals (APS) • DOT Art"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate_bus_lane_camera_116th_st",
+        "local_observation_id": "treatment_bus_lane_camera_enforcement_116th_st",
+        "decision": "relate",
+        "target_record_id": "project_116th-st-bus-priority-review-mar2025",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_116th-st-bus-priority-review-mar2025",
+            "object_id": "treatment_bus-lane-camera-enforcement-116th-st",
+            "description": "Bus lane camera enforcement (DOT stationary cameras and MTA on-bus ACE cameras) considered for the 116th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p023_c0002",
+                "source_quote": "• Bus lane camera enforcement – DOT stationary cameras – MTA on-bus cameras (ACE)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source page 23 'Other Tools' lists 'Bus lane camera enforcement – DOT stationary cameras – MTA on-bus cameras (ACE)' as a tool under consideration for the 116th Street corridor study.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p023_c0002",
+            "source_quote": "• Bus lane camera enforcement – DOT stationary cameras – MTA on-bus cameras (ACE)"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate_tree_pits_116th_st",
+        "local_observation_id": "treatment_tree_pits_streetscape_116th_st",
+        "decision": "relate",
+        "target_record_id": "project_116th-st-bus-priority-review-mar2025",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_116th-st-bus-priority-review-mar2025",
+            "object_id": "treatment_tree-pits-streetscape-116th-st",
+            "description": "Tree pits and streetscape improvements considered for the 116th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p023_c0002",
+                "source_quote": "• Tree pits & streetscape improvements"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source page 23 'Other Tools' lists 'Tree pits & streetscape improvements' as a tool being presented for the 116th Street corridor Bus Priority Review.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p023_c0002",
+            "source_quote": "• Tree pits & streetscape improvements"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T17-35-16-141Z_1481967-ecad1963_canonicalize_2026-06-10t17-13-30-775z-1462165-0122f26b-ingest-116-st-morningside-ave-pleasant-ave-cb11-mar2025-treatment-relations"
+}

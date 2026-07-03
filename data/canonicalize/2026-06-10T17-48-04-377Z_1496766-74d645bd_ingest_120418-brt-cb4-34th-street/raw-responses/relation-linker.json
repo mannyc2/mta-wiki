@@ -1,0 +1,435 @@
+{
+  "run_id": "2026-06-10T17-48-04-377Z_1496766-74d645bd_ingest_120418-brt-cb4-34th-street",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-10T19:19:01.430Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "rel-001-metric-travel-time-10pct",
+        "local_observation_id": "metric_travel_time_reduction_10pct_34th_sbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_travel-time-reduction-10pct-34th-sbs",
+            "description": "Travel time reduction metric for 34th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "120418_brt_cb4_34th_street",
+                "block_id": "p004_c0002",
+                "source_quote": "Travel times reduced by 10%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric describing travel time reduction on 34th Street SBS, sourced from a presentation to CB4 about the 34th Street Select Bus Service project.",
+        "evidence_refs": [
+          {
+            "source_id": "120418_brt_cb4_34th_street",
+            "block_id": "p004_c0002",
+            "source_quote": "Travel times reduced by 10%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-002-metric-ridership-20200",
+        "local_observation_id": "metric_ridership_20200_34th_sbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_ridership-20200-34th-sbs",
+            "description": "Ridership metric for 34th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "120418_brt_cb4_34th_street",
+                "block_id": "p004_c0002",
+                "source_quote": "Ridership of 20,200 recorded on 3/15"
+              }
+            ]
+          }
+        ],
+        "rationale": "Ridership figure reported for 34th Street SBS, sourced from the 34th Street SBS project presentation to CB4.",
+        "evidence_refs": [
+          {
+            "source_id": "120418_brt_cb4_34th_street",
+            "block_id": "p004_c0002",
+            "source_quote": "Ridership of 20,200 recorded on 3/15"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-003-metric-weekday-trips",
+        "local_observation_id": "metric_weekday_trip_increase_24_34th_sbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_weekday-trip-increase-24-34th-sbs",
+            "description": "Weekday service increase metric for 34th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "120418_brt_cb4_34th_street",
+                "block_id": "p004_c0002",
+                "source_quote": "24 more weekday trips"
+              }
+            ]
+          }
+        ],
+        "rationale": "Service increase metric for 34th Street SBS, sourced from the project presentation to CB4.",
+        "evidence_refs": [
+          {
+            "source_id": "120418_brt_cb4_34th_street",
+            "block_id": "p004_c0002",
+            "source_quote": "24 more weekday trips"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-004-metric-saturday-trips",
+        "local_observation_id": "metric_saturday_trip_increase_24_34th_sbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_saturday-trip-increase-24-34th-sbs",
+            "description": "Saturday service increase metric for 34th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "120418_brt_cb4_34th_street",
+                "block_id": "p004_c0002",
+                "source_quote": "24 more Saturday trips"
+              }
+            ]
+          }
+        ],
+        "rationale": "Saturday service increase metric for 34th Street SBS, sourced from the project presentation to CB4.",
+        "evidence_refs": [
+          {
+            "source_id": "120418_brt_cb4_34th_street",
+            "block_id": "p004_c0002",
+            "source_quote": "24 more Saturday trips"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-005-metric-sunday-trips",
+        "local_observation_id": "metric_sunday_trip_increase_12_34th_sbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_sunday-trip-increase-12-34th-sbs",
+            "description": "Sunday service increase metric for 34th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "120418_brt_cb4_34th_street",
+                "block_id": "p004_c0002",
+                "source_quote": "12 more Sundays trips"
+              }
+            ]
+          }
+        ],
+        "rationale": "Sunday service increase metric for 34th Street SBS, sourced from the project presentation to CB4.",
+        "evidence_refs": [
+          {
+            "source_id": "120418_brt_cb4_34th_street",
+            "block_id": "p004_c0002",
+            "source_quote": "12 more Sundays trips"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-006-claim-no-additional-cost",
+        "local_observation_id": "claim_no_additional_cost_mta",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_no-additional-cost-mta",
+            "description": "Claim that increased frequency came at no additional cost to MTA",
+            "evidence_refs": [
+              {
+                "source_id": "120418_brt_cb4_34th_street",
+                "block_id": "p004_c0002",
+                "source_quote": "No additional cost to the MTA"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim about no additional cost for increased frequency on 34th Street SBS, sourced from the project presentation to CB4.",
+        "evidence_refs": [
+          {
+            "source_id": "120418_brt_cb4_34th_street",
+            "block_id": "p004_c0002",
+            "source_quote": "No additional cost to the MTA"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-007-claim-project-update",
+        "local_observation_id": "claim_project_update_status_apr2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_project-update-status-apr2012",
+            "description": "Project status update for 34th Street SBS as of April 2012",
+            "evidence_refs": [
+              {
+                "source_id": "120418_brt_cb4_34th_street",
+                "block_id": "p003_c0002",
+                "source_quote": "Since last fall, DOT & NYCT have ... – Implemented off-board fare collection – Completed environmental review – Released the Project Analysis Report – Initiated design work of the project"
+              }
+            ]
+          }
+        ],
+        "rationale": "Project status update explicitly referencing 'the project' (34th Street SBS), sourced from the presentation to CB4.",
+        "evidence_refs": [
+          {
+            "source_id": "120418_brt_cb4_34th_street",
+            "block_id": "p003_c0002",
+            "source_quote": "Since last fall, DOT & NYCT have ... – Implemented off-board fare collection – Completed environmental review – Released the Project Analysis Report – Initiated design work of the project"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-008-claim-upcoming-work",
+        "local_observation_id": "claim_upcoming_work_apr2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_upcoming-work-apr2012",
+            "description": "Upcoming milestones for 34th Street SBS as of April 2012",
+            "evidence_refs": [
+              {
+                "source_id": "120418_brt_cb4_34th_street",
+                "block_id": "p003_c0002",
+                "source_quote": "In the coming months, DOT & NYCT will ... – Finalize the implementation schedule – Complete design of the project – Begin construction"
+              }
+            ]
+          }
+        ],
+        "rationale": "Upcoming work claim explicitly referencing 'the project' (34th Street SBS), sourced from the presentation to CB4.",
+        "evidence_refs": [
+          {
+            "source_id": "120418_brt_cb4_34th_street",
+            "block_id": "p003_c0002",
+            "source_quote": "In the coming months, DOT & NYCT will ... – Finalize the implementation schedule – Complete design of the project – Begin construction"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-009-claim-loading-zone-goals",
+        "local_observation_id": "claim_loading_zone_goals",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_loading-zone-goals",
+            "description": "Community input on loading zone goals for 34th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "120418_brt_cb4_34th_street",
+                "block_id": "p010_c0002",
+                "source_quote": "Provide loading access to residential buildings, including day times – Provide loading access to stores and commercial spaces, including day times – Accommodate needs of special institutions, i.e. medical facilities – Parking is a low priority"
+              }
+            ]
+          }
+        ],
+        "rationale": "Loading zone goals presented as part of the 34th Street SBS project to CB4 Transportation Committee.",
+        "evidence_refs": [
+          {
+            "source_id": "120418_brt_cb4_34th_street",
+            "block_id": "p010_c0002",
+            "source_quote": "Provide loading access to residential buildings, including day times – Provide loading access to stores and commercial spaces, including day times – Accommodate needs of special institutions, i.e. medical facilities – Parking is a low priority"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-010-event-west-start",
+        "local_observation_id": "event_west_section_construction_start_jun2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_west-section-construction-start-jun2012",
+            "description": "Construction start for West Section of 34th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "120418_brt_cb4_34th_street",
+                "block_id": "p023_c0002",
+                "source_quote": "Construction start: June 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "Construction timeline event for the 34th Street SBS project's West Section, sourced from the project presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "120418_brt_cb4_34th_street",
+            "block_id": "p023_c0002",
+            "source_quote": "Construction start: June 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-011-event-west-completion",
+        "local_observation_id": "event_west_section_construction_completion_jul2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_west-section-construction-completion-jul2013",
+            "description": "Construction completion for West Section of 34th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "120418_brt_cb4_34th_street",
+                "block_id": "p023_c0002",
+                "source_quote": "Construction completion: July 2013"
+              }
+            ]
+          }
+        ],
+        "rationale": "Construction timeline event for the 34th Street SBS project's West Section, sourced from the project presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "120418_brt_cb4_34th_street",
+            "block_id": "p023_c0002",
+            "source_quote": "Construction completion: July 2013"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-012-event-middle-start",
+        "local_observation_id": "event_middle_section_construction_start_aug2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_middle-section-construction-start-aug2012",
+            "description": "Construction start for Middle Section of 34th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "120418_brt_cb4_34th_street",
+                "block_id": "p024_c0002",
+                "source_quote": "Construction start: August 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "Construction timeline event for the 34th Street SBS project's Middle Section, sourced from the project presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "120418_brt_cb4_34th_street",
+            "block_id": "p024_c0002",
+            "source_quote": "Construction start: August 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-013-event-middle-completion",
+        "local_observation_id": "event_middle_section_construction_completion_apr2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_middle-section-construction-completion-apr2013",
+            "description": "Construction completion for Middle Section of 34th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "120418_brt_cb4_34th_street",
+                "block_id": "p024_c0002",
+                "source_quote": "Construction completion: April 2013"
+              }
+            ]
+          }
+        ],
+        "rationale": "Construction timeline event for the 34th Street SBS project's Middle Section, sourced from the project presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "120418_brt_cb4_34th_street",
+            "block_id": "p024_c0002",
+            "source_quote": "Construction completion: April 2013"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-014-event-east-start",
+        "local_observation_id": "event_east_section_construction_start_summer2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_east-section-construction-start-summer2013",
+            "description": "Construction start for East Section of 34th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "120418_brt_cb4_34th_street",
+                "block_id": "p025_c0002",
+                "source_quote": "Construction start: summer 2013"
+              }
+            ]
+          }
+        ],
+        "rationale": "Construction timeline event for the 34th Street SBS project's East Section, sourced from the project presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "120418_brt_cb4_34th_street",
+            "block_id": "p025_c0002",
+            "source_quote": "Construction start: summer 2013"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-015-event-east-completion",
+        "local_observation_id": "event_east_section_construction_completion_fall2014",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_east-section-construction-completion-fall2014",
+            "description": "Construction completion for East Section of 34th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "120418_brt_cb4_34th_street",
+                "block_id": "p025_c0002",
+                "source_quote": "Construction completion: fall 2014"
+              }
+            ]
+          }
+        ],
+        "rationale": "Construction timeline event for the 34th Street SBS project's East Section, sourced from the project presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "120418_brt_cb4_34th_street",
+            "block_id": "p025_c0002",
+            "source_quote": "Construction completion: fall 2014"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-544Z_1609875-e2e635bc_canonicalize_2026-06-10t17-48-04-377z-1496766-74d645bd-ingest-120418-brt-cb4-34th-street-relation-linker"
+}

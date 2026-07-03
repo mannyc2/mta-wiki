@@ -1,0 +1,345 @@
+{
+  "run_id": "2026-06-10T23-03-12-876Z_1976810-853fca30_ingest_2012-05-webster-cac2-summary",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:42:15.756Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d01",
+        "local_observation_id": "entity_nycdot_2012_05_webster_cac2",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot matches existing registry record entity_nyc-dot (New York City Department of Transportation, agency). The observation already resolves to the correct canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p001_c0006",
+            "source_quote": "On Wednesday, May 2, 2012, The New York City Department of Transportation (NYCDOT) and MTA New York City Transit (NYCT), held the second Community Advisory Committee (CAC) meeting for the Webster Avenue Select Bus Service (SBS) project at the Icahn Charter Middle School in the Bronx."
+          }
+        ]
+      },
+      {
+        "decision_id": "d02",
+        "local_observation_id": "entity_mta_nyct_2012_05_webster_cac2",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-nyct matches existing registry record entity_mta-nyct (MTA New York City Transit, agency). The observation already resolves to the correct canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p001_c0006",
+            "source_quote": "On Wednesday, May 2, 2012, The New York City Department of Transportation (NYCDOT) and MTA New York City Transit (NYCT), held the second Community Advisory Committee (CAC) meeting for the Webster Avenue Select Bus Service (SBS) project at the Icahn Charter Middle School in the Bronx."
+          }
+        ]
+      },
+      {
+        "decision_id": "d03",
+        "local_observation_id": "entity_bronx_borough_presidents_office_2012",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_bronx-borough-presidents-office-2012 matches existing registry record (Bronx Borough President's Office, government office). Already resolves correctly. Proposing same_as with entity_bronx-borough-presidents-office-2012-02 which shares identical entity_name and entity_type from the same Webster Avenue project context.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p005_c0015",
+            "source_quote": "• Bronx Borough President's Office • Community Board 3 • Community Board 5 • Community Board 6 (2 participants) • Community Board 7 (2 participants) • Fordham Road BID • Pratt Center, Community Division • Councilmember Oliver Koppell's Office • Senator Gustavo Rivera's Office"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_bronx-borough-presidents-office-2012",
+            "object_id": "entity_bronx-borough-presidents-office-2012-02",
+            "description": "Both records represent the Bronx Borough President's Office with identical entity_name and entity_type, appearing in adjacent Webster Avenue SBS CAC meetings (CAC2 May 2012 and CAC1 Feb 2012).",
+            "evidence_refs": [
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p005_c0015",
+                "source_quote": "• Bronx Borough President's Office"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "d04",
+        "local_observation_id": "entity_fordham_road_bid_2012",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_fordham-road-bid-2012 matches existing registry record (Fordham Road BID, business improvement district). Already resolves correctly. Proposing same_as with entity_fordham-road-bid-2012-02 and entity_fordham-road-bid-2012-11-webster which represent the same BID.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p005_c0015",
+            "source_quote": "• Fordham Road BID"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_fordham-road-bid-2012",
+            "object_id": "entity_fordham-road-bid-2012-02",
+            "description": "Same Fordham Road BID appearing in Webster Avenue SBS CAC2 (May 2012) and CAC1 (Feb 2012). Identical entity_name and entity_type.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p005_c0015",
+                "source_quote": "• Fordham Road BID"
+              }
+            ]
+          },
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_fordham-road-bid-2012",
+            "object_id": "entity_fordham-road-bid-2012-11-webster",
+            "description": "Same Fordham Road BID appearing in Webster Avenue SBS CAC2 (May 2012) and CAC4 (Nov 2012). Identical entity_name and entity_type.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p005_c0015",
+                "source_quote": "• Fordham Road BID"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "d05",
+        "local_observation_id": "entity_pratt_center_community_division_2012",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_pratt-center-community-division-2012 matches existing registry record (Pratt Center, Community Division, organization). Already resolves correctly. Proposing same_as with entity_pratt-center-community-division-2012-02 which shares identical entity_name and entity_type.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p005_c0015",
+            "source_quote": "• Pratt Center, Community Division"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_pratt-center-community-division-2012",
+            "object_id": "entity_pratt-center-community-division-2012-02",
+            "description": "Same Pratt Center Community Division appearing in Webster Avenue SBS CAC2 (May 2012) and CAC1 (Feb 2012). Identical entity_name and entity_type.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p005_c0015",
+                "source_quote": "• Pratt Center, Community Division"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "d06",
+        "local_observation_id": "entity_councilmember_oliver_koppell_office_2012",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_councilmember-oliver-koppell-office-2012 matches existing registry record (Councilmember Oliver Koppell's Office, government office). Already resolves correctly. Proposing same_as with entity_oliver-koppell-office-2012-11-webster.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p005_c0015",
+            "source_quote": "• Councilmember Oliver Koppell's Office"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_councilmember-oliver-koppell-office-2012",
+            "object_id": "entity_oliver-koppell-office-2012-11-webster",
+            "description": "Same Councilmember Oliver Koppell's Office appearing in Webster Avenue SBS CAC2 (May 2012) and CAC4 (Nov 2012). Identical entity_name and entity_type.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p005_c0015",
+                "source_quote": "• Councilmember Oliver Koppell's Office"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "d07",
+        "local_observation_id": "entity_senator_gustavo_rivera_office_2012",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_senator-gustavo-rivera-office-2012 matches existing registry record (Senator Gustavo Rivera's Office, government office). Already resolves correctly. Proposing same_as with entity_gustavo-rivera-office-2012-11-webster.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p005_c0015",
+            "source_quote": "• Senator Gustavo Rivera's Office"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_senator-gustavo-rivera-office-2012",
+            "object_id": "entity_gustavo-rivera-office-2012-11-webster",
+            "description": "Same Senator Gustavo Rivera's Office appearing in Webster Avenue SBS CAC2 (May 2012) and CAC4 (Nov 2012). Identical entity_name and entity_type.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p005_c0015",
+                "source_quote": "• Senator Gustavo Rivera's Office"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "d08",
+        "local_observation_id": "entity_community_board_3_bronx_2012",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_community-board-3-bronx-2012 matches existing registry record (Community Board 3 Bronx, community board). Already resolves correctly. Proposing same_as with entity_bronx-cb3-2012-11-webster.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p005_c0015",
+            "source_quote": "• Community Board 3"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_community-board-3-bronx-2012",
+            "object_id": "entity_bronx-cb3-2012-11-webster",
+            "description": "Same Bronx Community Board 3 appearing in Webster Avenue SBS CAC2 (May 2012) and CAC4 (Nov 2012). Identical entity_name (Community Board 3) and entity_type.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p005_c0015",
+                "source_quote": "• Community Board 3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "d09",
+        "local_observation_id": "entity_community_board_5_bronx_2012",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_community-board-5-bronx-2012 matches existing registry record (Community Board 5 Bronx, community board). Already resolves correctly. Proposing same_as with entity_community-board-5-bronx-2012-02 and entity_bronx-cb5-2012-11-webster.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p005_c0015",
+            "source_quote": "• Community Board 5"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_community-board-5-bronx-2012",
+            "object_id": "entity_community-board-5-bronx-2012-02",
+            "description": "Same Bronx Community Board 5 appearing in Webster Avenue SBS CAC2 (May 2012) and CAC1 (Feb 2012). Identical entity_name (Community Board 5) and entity_type.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p005_c0015",
+                "source_quote": "• Community Board 5"
+              }
+            ]
+          },
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_community-board-5-bronx-2012",
+            "object_id": "entity_bronx-cb5-2012-11-webster",
+            "description": "Same Bronx Community Board 5 appearing in Webster Avenue SBS CAC2 (May 2012) and CAC4 (Nov 2012). Identical entity_name (Community Board 5) and entity_type.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p005_c0015",
+                "source_quote": "• Community Board 5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "d10",
+        "local_observation_id": "entity_community_board_6_bronx_2012",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_community-board-6-bronx-2012 matches existing registry record (Community Board 6 Bronx, community board). Already resolves correctly. Proposing same_as with entity_community-board-6-bronx-2012-02 and entity_bronx-cb6-2012-11-webster.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p005_c0015",
+            "source_quote": "• Community Board 6 (2 participants)"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_community-board-6-bronx-2012",
+            "object_id": "entity_community-board-6-bronx-2012-02",
+            "description": "Same Bronx Community Board 6 appearing in Webster Avenue SBS CAC2 (May 2012) and CAC1 (Feb 2012). Identical entity_name (Community Board 6) and entity_type.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p005_c0015",
+                "source_quote": "• Community Board 6 (2 participants)"
+              }
+            ]
+          },
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_community-board-6-bronx-2012",
+            "object_id": "entity_bronx-cb6-2012-11-webster",
+            "description": "Same Bronx Community Board 6 appearing in Webster Avenue SBS CAC2 (May 2012) and CAC4 (Nov 2012). Identical entity_name (Community Board 6) and entity_type.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p005_c0015",
+                "source_quote": "• Community Board 6 (2 participants)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "d11",
+        "local_observation_id": "entity_community_board_7_bronx_2012",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_community-board-7-bronx-2012 matches existing registry record (Community Board 7 Bronx, community board). Already resolves correctly. Proposing same_as with entity_community-board-7-bronx-2012-02 and entity_bronx-cb7-2012-11-webster.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p005_c0015",
+            "source_quote": "• Community Board 7 (2 participants)"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_community-board-7-bronx-2012",
+            "object_id": "entity_community-board-7-bronx-2012-02",
+            "description": "Same Bronx Community Board 7 appearing in Webster Avenue SBS CAC2 (May 2012) and CAC1 (Feb 2012). Identical entity_name (Community Board 7) and entity_type.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p005_c0015",
+                "source_quote": "• Community Board 7 (2 participants)"
+              }
+            ]
+          },
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_community-board-7-bronx-2012",
+            "object_id": "entity_bronx-cb7-2012-11-webster",
+            "description": "Same Bronx Community Board 7 appearing in Webster Avenue SBS CAC2 (May 2012) and CAC4 (Nov 2012). Identical entity_name (Community Board 7) and entity_type.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p005_c0015",
+                "source_quote": "• Community Board 7 (2 participants)"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-39-44-937Z_2111393-96f79f75_canonicalize_2026-06-10t23-03-12-876z-1976810-853fca30-ingest-2012-05-webster-cac2-summary-entity-identity"
+}

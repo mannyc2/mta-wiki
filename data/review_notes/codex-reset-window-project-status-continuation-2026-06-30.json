@@ -1,0 +1,157 @@
+{
+  "run_id": "codex-reset-window-project-status-continuation-2026-06-30",
+  "date": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "provider_backed_llm_commands_used": false,
+  "forbidden_commands_used": [],
+  "baseline": {
+    "validation_issues": 0,
+    "canonical_records": 84043,
+    "wiki_pages": 7339,
+    "events_event_family_other": 362,
+    "projects_project_family_missing": 6,
+    "projects_project_family_other": 13,
+    "projects_document_time_status_missing": 103,
+    "projects_document_time_status_other": 4,
+    "source_gaps_gap_kind_normalized_other": 16,
+    "source_gaps_risk_or_contingency": 16,
+    "relation_family_other": 0,
+    "treatment_family_other": 0,
+    "routes_route_type_normalized_missing": 1
+  },
+  "after": {
+    "validation_issues": 0,
+    "canonical_records": 84043,
+    "wiki_pages": 7339,
+    "events_event_family_other": 362,
+    "projects_project_family_missing": 6,
+    "projects_project_family_other": 13,
+    "projects_document_time_status_missing": 91,
+    "projects_document_time_status_other": 4,
+    "source_gaps_gap_kind_normalized_other": 16,
+    "source_gaps_risk_or_contingency": 16,
+    "relation_family_other": 0,
+    "treatment_family_other": 0,
+    "routes_route_type_normalized_missing": 1
+  },
+  "implemented_slices": [
+    {
+      "bucket": "projects.document_time_status",
+      "change": "Added exact-name planned status rules for scheduled LIRR track, bridge, ADA station, and signal capital work records.",
+      "record_ids": [
+        "project_meeting-doc-115156-concrete-tie-installation-main-line",
+        "project_meeting-doc-115156-switch-installation-floral-park",
+        "project_meeting-doc-115156-van-wyck-bridge-waterproofing",
+        "project_meeting-doc-138226-ada-forest-hills",
+        "project_meeting-doc-138226-ada-hollis",
+        "project_meeting-doc-138226-ada-montauk",
+        "project_meeting-doc-138226-signal-jamaica-qv",
+        "project_meeting-doc-138226-valley-stream"
+      ],
+      "count_delta": {
+        "missing": -8,
+        "other": 0
+      }
+    },
+    {
+      "bucket": "projects.document_time_status",
+      "change": "Added exact-name active status rules for Metro-North capital-program records whose payload states lower-than-expected project activity.",
+      "record_ids": [
+        "project_mnrr-ct-track-program",
+        "project_mnrr-harmon-poughkeepsie-signal"
+      ],
+      "count_delta": {
+        "missing": -2,
+        "other": 0
+      }
+    },
+    {
+      "bucket": "projects.document_time_status",
+      "change": "Added payload-proven implemented status rule for engineering-control roadway safety projects that achieved quantified reductions in vehicular collisions.",
+      "record_ids": [
+        "project_bx-whitestone-bridge-approach-improvement",
+        "project_vzb-belt-parkway-widening"
+      ],
+      "count_delta": {
+        "missing": -2,
+        "other": 0
+      }
+    }
+  ],
+  "subagents": [
+    {
+      "agent_id": "019f175a-4403-7d32-a0db-308b6522ee40",
+      "lane": "events.event_family residual scout",
+      "status": "completed_closed",
+      "result": "Recommended a 20-record legal/transaction milestone slice; deferred as the next event-family implementation lane."
+    },
+    {
+      "agent_id": "019f175a-47ec-71a1-9a89-09647987d07f",
+      "lane": "project status/family residual scout",
+      "status": "completed_closed",
+      "result": "Recommended the 2-record engineering-control status slice; implemented."
+    }
+  ],
+  "verification": {
+    "focused_ontology_tests": {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "tests_passed": 256,
+      "expects": 3641
+    },
+    "typecheck": {
+      "command": "bun run typecheck",
+      "passed": true
+    },
+    "materialize": {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "completed": true,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "issues": 0
+    },
+    "diff_check": {
+      "command": "git diff --check -- LOG.md data/review_notes/codex-reset-window-continuation-2026-06-30.json packages/pipeline/src/ontology/normalizers.ts packages/pipeline/test/ontology/normalizers.test.ts",
+      "passed": true
+    }
+  },
+  "remaining_lanes": [
+    {
+      "bucket": "events.event_family",
+      "remaining_other": 362,
+      "next_action": "Implement the 20-record legal/transaction milestone slice identified by Plato the 2nd."
+    },
+    {
+      "bucket": "projects.document_time_status",
+      "remaining_missing": 91,
+      "remaining_other": 4,
+      "next_action": "Continue exact-name or payload-proof lifecycle-status slices; avoid broad defaults over generic capital, status, or engineering language."
+    },
+    {
+      "bucket": "source_gaps.gap_kind_normalized",
+      "remaining_other": 16,
+      "next_action": "Treat as policy floor unless a new extraction-limit or implementation-caveat taxonomy value is approved."
+    },
+    {
+      "bucket": "relations and treatments",
+      "relation_family_other": 0,
+      "treatment_family_other": 0,
+      "next_action": "No backlog reducer needed; optional raw-kind/semantic refinements only."
+    }
+  ],
+  "files_changed_by_this_slice": [
+    "packages/pipeline/src/ontology/normalizers.ts",
+    "packages/pipeline/test/ontology/normalizers.test.ts",
+    "data/canonical/projects.jsonl",
+    "data/canonical.db",
+    "wiki/",
+    "LOG.md",
+    "data/review_notes/codex-reset-window-project-status-continuation-2026-06-30.json"
+  ],
+  "notes": [
+    "The worktree was already very dirty from the broader campaign; unrelated dirty files were not reverted.",
+    "Canonical JSONL was updated through deterministic materialization, not hand-edited.",
+    "All subagents were read-only scouts and were closed after completion."
+  ]
+}

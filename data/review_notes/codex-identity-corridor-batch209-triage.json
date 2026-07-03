@@ -1,0 +1,229 @@
+{
+  "note_id": "codex-identity-corridor-batch209-triage",
+  "created_at": "2026-06-23T11:57:39Z",
+  "scope": {
+    "operation": "triage_remaining_corridor_duplicate_identity_backlog",
+    "after_checkpoint": "identity205-corridor206",
+    "global_kind": "corridor",
+    "issue_type": "duplicate_global_identity",
+    "current_remaining_corridor_duplicate_issue_count": 8,
+    "clusters_reviewed": [
+      "125th Street Manhattan / 125th Street Crosstown Phase II",
+      "Church Avenue SBS-candidate / Church Avenue Flatbush-Ocean Parkway",
+      "Utica Avenue Phase II / B46 / St. Johns-Carroll / St. Johns-Church"
+    ],
+    "inspection_note": "Deterministic local read-only inspection only. Used current canonical JSONL, current identity override files, prior corridor prep notes, and source blocks; did not run materialize or validate CLI.",
+    "write_limit": "Exactly one artifact was written: data/review_notes/codex-identity-corridor-batch209-triage.json.",
+    "write_exclusions_observed": [
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json",
+      "data/canonical/*.jsonl",
+      "data/canonical.db",
+      "LOG.md",
+      "manifest files",
+      "wiki pages",
+      "submissions",
+      "retired overrides"
+    ],
+    "commands_not_run": [
+      "provider-backed commands",
+      "materialize",
+      "validate CLI",
+      "write",
+      "ask",
+      "canonicalize",
+      "identity-review",
+      "schema",
+      "ontology"
+    ]
+  },
+  "prepared_count": 4,
+  "proposed_aliases": [
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_125th-st-crosstown-brt-phase2",
+        "corridor_125th-st-manhattan"
+      ],
+      "alias_record_id": "corridor_125th-st-crosstown-brt-phase2",
+      "target_record_id": "corridor_125th-st-manhattan",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_125th-st-crosstown-brt-phase2 and corridor_125th-st-manhattan share identity key corridor_125th-st-crosstown-corridor."
+      ],
+      "source_canonical_evidence": [
+        "corridor_125th-st-crosstown-brt-phase2 is a sparse planning shell: Manhattan; display_name/corridor_name '125th Street Crosstown Corridor'; payload description 'BRT Phase II candidate corridor'; no explicit limits in canonical payload; source brt_phase2_future_corridors_rpt#p004_c0002 lists '9 125th Street Crosstown Corridor' under BRT Phase II Candidates.",
+        "corridor_125th-st-manhattan is the richer Manhattan 125th Street corridor record: street '125th Street'; payload limits 'Morningside Avenue to Second Avenue'; merged limits also include 'Lenox Avenue to Second Avenue' and 'from river to river'; record_aliases include 'corridor_125th-st-crosstown-corridor' and 'corridor_125th-st-brt-phase2'.",
+        "Target lifecycle evidence already spans planning and implementation: brt_phase2_outreach_rpt#p020_c0011 names '125th Street Crosstown Corridor'; brt_phase2_outreach_rpt#p040_c0004 ranks '125th Street Crosstown Corridor: difficult trip'; 2013_03_07_sbs_125th_cb9#p015_c0004 states all intersections from Morningside Avenue to Second Avenue were analyzed; m60_sbs_125th_street#p009_c0003 states 125th Street from river to river was identified as a Priority Corridor.",
+        "The current do-not-merge guard between corridor_125th-st-manhattan and corridor_125th-street-manhattan remains a separate limits guard; this alias targets the richer record that already carries the crosstown/Phase II surface, not the Amsterdam-to-Second variant."
+      ],
+      "reason": "The Phase II record is only a sparse planning-era alias surface for the same Manhattan 125th Street crosstown corridor already represented by corridor_125th-st-manhattan. It has no conflicting street, borough, route, or limits evidence; the target already carries Phase II/crosstown evidence plus later concrete 125th/M60 corridor lifecycle evidence.",
+      "expected_duplicate_suppressions": [
+        "corridor_125th-st-crosstown-brt-phase2 <> corridor_125th-st-manhattan on corridor_125th-st-crosstown-corridor"
+      ],
+      "guard_checks": {
+        "both_present_in_current_canonical_jsonl": true,
+        "same_global_kind": true,
+        "same_borough": true,
+        "same_street_or_named_corridor": true,
+        "alias_is_sparse_planning_shell": true,
+        "target_has_planning_and_later_lifecycle_evidence": true,
+        "no_conflicting_alias_limits_on_alias_record": true,
+        "not_already_do_not_merge_direct": true
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_utica-ave-brt-phase2",
+        "corridor_utica-ave-b46-2015-04-06"
+      ],
+      "alias_record_id": "corridor_utica-ave-brt-phase2",
+      "target_record_id": "corridor_utica-ave-b46-2015-04-06",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_utica-ave-b46-2015-04-06 and corridor_utica-ave-brt-phase2 share identity key corridor_utica-ave-corridor."
+      ],
+      "source_canonical_evidence": [
+        "corridor_utica-ave-brt-phase2 is a sparse planning shell: Brooklyn; display_name/corridor_name 'Utica Avenue Corridor'; payload description 'BRT Phase II candidate corridor'; no explicit limits in canonical payload; source brt_phase2_future_corridors_rpt#p004_c0002 lists '5 Utica Avenue Corridor' under BRT Phase II Candidates.",
+        "corridor_utica-ave-b46-2015-04-06 is the richer broad B46/Utica corridor record: Brooklyn; street 'Utica Avenue'; routes include B46; description says the Utica Avenue B46 corridor was identified as a potential SBS candidate in the 2009 BRT Phase II Study; merged limits include 'from Avenue U to DeKalb Avenue', 'Bergen St to Atlantic Ave', and 'Williamsburg Bridge Plaza to Kings Plaza'.",
+        "Broad-corridor lifecycle evidence aligns the two records: brt_phase2_outreach_rpt#p018_c0007 names 'Utica Avenue Corridor'; brt_phase2_outreach_rpt#p038_c0004 lists 'Utica Avenue Corridor/Eastern Brooklyn North-South Corridor: underserved area'; 2015_04_06_brt_uticaave_cb3_presentation#p003_c0002 states the Utica Avenue B46 corridor was identified as a potential SBS candidate in the 2009 BRT Phase II Study; brt_uticaave_cb9_transportation_committee_2016#p006_c0003 states B46 SBS would run between Avenue U/Kings Plaza and DeKalb Avenue."
+      ],
+      "reason": "The Phase II Utica shell should collapse into the broad B46/Utica corridor, not into either St. Johns-Carroll or St. Johns-Church segment. The alias record is an underspecified planning surface, while the target is the broad route/corridor lifecycle record that explicitly connects Utica Avenue, B46, Phase II, and later SBS planning.",
+      "expected_duplicate_suppressions": [
+        "corridor_utica-ave-b46-2015-04-06 <> corridor_utica-ave-brt-phase2 on corridor_utica-ave-corridor",
+        "corridor_utica-ave-brt-phase2 <> corridor_utica-ave-st-johns-pl-church-ave-2013 on corridor_utica-ave-brt-phase2, when combined with the proposed do-not-merge guard between corridor_utica-ave-b46-2015-04-06 and corridor_utica-ave-st-johns-pl-church-ave-2013"
+      ],
+      "guard_checks": {
+        "both_present_in_current_canonical_jsonl": true,
+        "same_global_kind": true,
+        "same_borough": true,
+        "same_street_or_named_corridor": true,
+        "alias_is_sparse_planning_shell": true,
+        "target_is_broad_b46_corridor_not_segment": true,
+        "no_conflicting_alias_limits_on_alias_record": true,
+        "not_already_do_not_merge_direct": true
+      }
+    }
+  ],
+  "proposed_do_not_merge_pairs": [
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_utica-ave-b46-2015-04-06",
+        "corridor_utica-ave-st-johns-carroll-2013"
+      ],
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_utica-ave-b46-2015-04-06 and corridor_utica-ave-st-johns-carroll-2013 share identity key corridor_utica-ave."
+      ],
+      "source_canonical_evidence": [
+        "corridor_utica-ave-b46-2015-04-06 is the broad Brooklyn B46/Utica Avenue corridor record, with B46 route scope and merged limits including Avenue U to DeKalb Avenue, Bergen St to Atlantic Ave, and Williamsburg Bridge Plaza to Kings Plaza; source 2015_04_06_brt_uticaave_cb3_presentation#p003_c0002 ties the broad Utica Avenue B46 corridor to the 2009 Phase II SBS candidate, and brt_uticaave_cb9_transportation_committee_2016#p006_c0003 gives B46 SBS Avenue U/Kings Plaza to DeKalb Avenue.",
+        "corridor_utica-ave-st-johns-carroll-2013 is a bounded Brooklyn segment/variant: street 'Utica Avenue'; limits 'St. Johns Pl. to Carroll St.'; from St. Johns Place to Carroll Street; source 2013_09_24_sbs_utica_cb9#p007_c0002 is headed 'Proposed Plan: St. Johns Pl. to Carroll St.'",
+        "Both records share borough and street, but one is the broad B46/SBS corridor lifecycle shell and the other is a local 2013 design segment. Shared street identity is insufficient under corridor identity policy."
+      ],
+      "reason": "Do not merge a whole B46/Utica corridor with a bounded St. Johns Place-to-Carroll Street segment. The latter is a segment/variant inside the Utica planning geography, not the same durable corridor identity.",
+      "expected_duplicate_suppressions": [
+        "corridor_utica-ave-b46-2015-04-06 <> corridor_utica-ave-st-johns-carroll-2013 on corridor_utica-ave"
+      ],
+      "guard_checks": {
+        "both_present_in_current_canonical_jsonl": true,
+        "same_global_kind": true,
+        "same_borough": true,
+        "same_street": true,
+        "whole_corridor_vs_segment": true,
+        "explicit_segment_limits": true,
+        "not_already_do_not_merge_direct": true
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_utica-ave-b46-2015-04-06",
+        "corridor_utica-ave-st-johns-pl-church-ave-2013"
+      ],
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_utica-ave-b46-2015-04-06 and corridor_utica-ave-st-johns-pl-church-ave-2013 share identity key corridor_utica-ave.",
+        "duplicate_global_identity: Global corridor records corridor_utica-ave-b46-2015-04-06 and corridor_utica-ave-st-johns-pl-church-ave-2013 share identity key corridor_utica-ave-b46-corridor.",
+        "duplicate_global_identity: Global corridor records corridor_utica-ave-b46-2015-04-06 and corridor_utica-ave-st-johns-pl-church-ave-2013 share identity key corridor_utica-ave-corridor."
+      ],
+      "source_canonical_evidence": [
+        "corridor_utica-ave-b46-2015-04-06 is the broad Brooklyn B46/Utica Avenue corridor record, with broad route/corridor lifecycle evidence from Phase II candidate through B46 SBS; 2015_04_06_brt_uticaave_cb3_presentation#p003_c0002 states the Utica Avenue B46 corridor was identified as a potential SBS candidate in the 2009 BRT Phase II Study, and brt_uticaave_cb9_transportation_committee_2016#p006_c0003 states B46 SBS would run between Avenue U/Kings Plaza and DeKalb Avenue.",
+        "corridor_utica-ave-st-johns-pl-church-ave-2013 is the bounded Brooklyn Utica Avenue bus-priority/safety segment: canonical payload has limits 'Carroll St. to Church Ave.' with merged limits including 'from St. Johns Place to Church Avenue'; 2013_09_12_sbs_utica_cb8#p002_c0004 and 2013_09_24_sbs_utica_cb9#p002_c0004 both state 'Focus on Utica Avenue from St. Johns Place to Church Avenue'; 2014_09_16_brt_uticaavenue_cac1_presentation#p012_c0003 describes bus lanes on 1.3 miles from St. John's Pl to Church Av.",
+        "The segment record also cites later broad B46/Phase II text, but its physical limits and segment-specific design evidence show it is a segment/implementation context rather than the same identity as the full B46/Utica corridor."
+      ],
+      "reason": "Do not merge the broad B46/Utica corridor with the St. Johns/Carroll-to-Church design segment. They share borough and street and are related in project lifecycle, but the canonical limits and source evidence separate whole-corridor identity from a bounded segment/variant.",
+      "expected_duplicate_suppressions": [
+        "corridor_utica-ave-b46-2015-04-06 <> corridor_utica-ave-st-johns-pl-church-ave-2013 on corridor_utica-ave",
+        "corridor_utica-ave-b46-2015-04-06 <> corridor_utica-ave-st-johns-pl-church-ave-2013 on corridor_utica-ave-b46-corridor",
+        "corridor_utica-ave-b46-2015-04-06 <> corridor_utica-ave-st-johns-pl-church-ave-2013 on corridor_utica-ave-corridor",
+        "corridor_utica-ave-brt-phase2 <> corridor_utica-ave-st-johns-pl-church-ave-2013 on corridor_utica-ave-brt-phase2, when combined with proposed alias corridor_utica-ave-brt-phase2 -> corridor_utica-ave-b46-2015-04-06"
+      ],
+      "guard_checks": {
+        "both_present_in_current_canonical_jsonl": true,
+        "same_global_kind": true,
+        "same_borough": true,
+        "same_street": true,
+        "related_lifecycle_not_same_identity": true,
+        "whole_corridor_vs_segment": true,
+        "explicit_segment_limits": true,
+        "not_already_do_not_merge_direct": true
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate",
+        "corridor_church-av"
+      ],
+      "confidence": "defer",
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate and corridor_church-av share identity key corridor_church-ave."
+      ],
+      "source_canonical_evidence": [
+        "corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate is a sparse planning shell: Brooklyn; corridor_name 'Church Avenue'; description 'SBS candidate corridor identified for next phase of SBS program'; no canonical limits; source bus_forward_2#p005_c0001 lists 'G Church Avenue' under Brooklyn SBS candidates.",
+        "corridor_church-av is a richer Brooklyn Church Avenue segment: street 'Church Avenue'; limits 'Flatbush Ave to Ocean Pkwy'; source church_ave_project_update_oct2019#p006_c0002 and church_ave_cb12_jun2019#p006_c0002 state 'Flatbush Ave to Ocean Pkwy (0.9 miles)' and split the corridor into Flatbush Ave to E 16 St and E 16 St to Ocean Pkwy.",
+        "The same Bus Forward 2 source separately lists a Church Avenue local bus-priority corridor from Coney Island Av to Flatbush Av at bus_forward_2#p011_c0002, and that adjacent local segment already has a do-not-merge guard against corridor_church-av after corridor206."
+      ],
+      "reason": "Deferred. The SBS-candidate shell has same borough and street but lacks limits, while the richer target is a later Flatbush-to-Ocean-Parkway segment and the same source separately names a different Church Avenue local segment from Coney Island to Flatbush. Missing evidence: an explicit source tying Bus Forward 2 candidate G to Flatbush Ave-to-Ocean Pkwy, or a corridor policy that unlabeled SBS-candidate shells should always collapse into the later top-ranked local bus-priority segment despite adjacent-segment evidence.",
+      "guard_checks": {
+        "same_global_kind": true,
+        "same_borough": true,
+        "same_street_or_named_corridor": true,
+        "alias_is_sparse_planning_shell": true,
+        "target_has_explicit_limits": true,
+        "same_source_contains_distinct_adjacent_church_segment": true,
+        "corridor_extent_match": "unknown",
+        "safe_to_alias": false,
+        "safe_to_do_not_merge": false
+      }
+    }
+  ],
+  "blockers": [
+    "Church Avenue SBS-candidate remains blocked on missing limit evidence or policy: Bus Forward 2 candidate G names only 'Church Avenue', while current canonical Church Avenue target is Flatbush Ave to Ocean Pkwy and the same source separately names Church Av from Coney Island Av to Flatbush Av as a different local corridor.",
+    "Utica Avenue segment records contain broad B46/Phase II aliases in canonical record_aliases, but source limits still support whole-corridor versus segment do-not-merge guards; applying the proposed alias plus DNM guards should be done carefully in one checkpoint so resolved do-not-merge suppression covers the Phase II shell against the St. Johns-Church segment."
+  ],
+  "cluster_summary": {
+    "125th_street": {
+      "remaining_validator_issues": 1,
+      "decision": "high_confidence_alias",
+      "proposed_action": "alias corridor_125th-st-crosstown-brt-phase2 to corridor_125th-st-manhattan",
+      "summary": "Sparse Phase II 125th Street Crosstown shell has no conflicting limits and points to the richer Manhattan 125th corridor that already carries crosstown/Phase II, M60, and later concrete 125th Street evidence. Existing 125th-street-manhattan do-not-merge limit guard is left untouched."
+    },
+    "church_avenue": {
+      "remaining_validator_issues": 1,
+      "decision": "defer",
+      "proposed_action": "none",
+      "summary": "SBS candidate G is only 'Church Avenue' with no limits. The richer Church Av record is Flatbush Ave to Ocean Pkwy, while the same Bus Forward 2 source separately lists Church Av from Coney Island Av to Flatbush Av as a local corridor, so neither alias nor do-not-merge is high-confidence."
+    },
+    "utica_avenue": {
+      "remaining_validator_issues": 6,
+      "decision": "mixed_high_confidence_alias_and_do_not_merge",
+      "proposed_action": "alias the sparse Phase II shell to the broad B46/Utica corridor, then guard the broad B46 corridor from the St. Johns-Carroll and St. Johns-Church segment records",
+      "summary": "The Phase II Utica shell belongs with the broad B46/Utica corridor lifecycle record. The St. Johns-Carroll and St. Johns/Carroll-to-Church records are bounded Brooklyn design segments inside that geography, so they should not merge with the broad B46/SBS corridor."
+    }
+  }
+}

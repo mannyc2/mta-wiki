@@ -1,0 +1,239 @@
+{
+  "note_id": "codex-canonical-cleanup-2026-06-22-identity-alias-batch-047-prep",
+  "created_at": "2026-06-22T19:35:00Z",
+  "author": "codex",
+  "scope": "Codex-only identity cleanup lane; next batch prep after durable identity batch046, pending generated checkpoint",
+  "kind": "identity_alias_batch_prep",
+  "status": "ready_for_conductor_apply",
+  "intended_mutation_path": "data/identity-overrides/merges.json",
+  "merge_patch": {
+    "aliases": {
+      "entity": {
+        "entity_christine-norman-166966": "entity_meeting-doc-121026-christine-norman",
+        "entity_eric-osnes-44201": "entity_eric-osnes",
+        "entity_evan-zucarelli-179571": "entity_meeting-doc-179541-evan-zucarelli",
+        "entity_evita-marrow-166966": "entity_evita-marrow-meeting-doc-160081",
+        "entity_garrett-burger-meeting-doc-151756": "entity_garrett-burger",
+        "entity_meeting-doc-133551-entech": "entity_entech-engineering-feb2024",
+        "entity_meeting-doc-138311-arturo-espinoza": "entity_arturo-espinoza-meeting-doc-133406",
+        "entity_meeting-doc-174096-global-java": "entity_global-java-iii-174081",
+        "entity_meeting-doc-196901-hatch-associates": "entity_hatch-associates-consultants"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-138311-arturo-espinoza",
+      "target": "entity_arturo-espinoza-meeting-doc-133406",
+      "validator_duplicate_key": "entity_arturo-espinoza",
+      "reason": "Same Arturo Espinoza person identity; both records identify him as MTA Real Estate / Project Manager.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_138311",
+          "block_id": "p002_c0004"
+        },
+        {
+          "source_id": "meeting_doc_133406",
+          "block_id": "p008_c0004"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_eric-osnes-44201",
+      "target": "entity_eric-osnes",
+      "validator_duplicate_key": "entity_eric-osnes",
+      "reason": "Same Eric Osnes person identity; both records name him in MTA Bridges and Tunnels/TBTA safety officer context.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_44201",
+          "block_id": "p026_c0005"
+        },
+        {
+          "source_id": "meeting_doc_102771",
+          "block_id": "p004_c0007"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_christine-norman-166966",
+      "target": "entity_meeting-doc-121026-christine-norman",
+      "validator_duplicate_key": "entity_christine-norman",
+      "reason": "Same Christine Norman person identity; both records identify her in MTA Diversity/Civil Rights deputy-chief diversity role context.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_166966",
+          "block_id": "p043_c0010"
+        },
+        {
+          "source_id": "meeting_doc_166966",
+          "block_id": "p043_c0011"
+        },
+        {
+          "source_id": "meeting_doc_121026",
+          "block_id": "p003_c0008"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_evita-marrow-166966",
+      "target": "entity_evita-marrow-meeting-doc-160081",
+      "validator_duplicate_key": "entity_evita-marrow",
+      "reason": "Same Evita Marrow person identity; both records identify her as deputy chief in Diversity/Civil Rights programming/operations context.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_166966",
+          "block_id": "p043_c0008"
+        },
+        {
+          "source_id": "meeting_doc_166966",
+          "block_id": "p043_c0009"
+        },
+        {
+          "source_id": "meeting_doc_160081",
+          "block_id": "p013_c0002"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_garrett-burger-meeting-doc-151756",
+      "target": "entity_garrett-burger",
+      "validator_duplicate_key": "entity_garrett-burger",
+      "reason": "Same Garrett Burger person identity; both records identify him as a project manager.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_151756",
+          "block_id": "p016_c0004"
+        },
+        {
+          "source_id": "meeting_doc_131536",
+          "block_id": "p001_c0003"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_evan-zucarelli-179571",
+      "target": "entity_meeting-doc-179541-evan-zucarelli",
+      "validator_duplicate_key": "entity_evan-zucarelli",
+      "reason": "Same Evan Zucarelli person identity; both records carry senior/operations title context.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_179571",
+          "block_id": "p001_c0004"
+        },
+        {
+          "source_id": "meeting_doc_179571",
+          "block_id": "p001_c0005"
+        },
+        {
+          "source_id": "meeting_doc_179541",
+          "block_id": "p001_c0008"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-196901-hatch-associates",
+      "target": "entity_hatch-associates-consultants",
+      "validator_duplicate_key": "entity_hatch-associates-consultants-inc",
+      "reason": "Same Hatch Associates Consultants Inc. vendor identity; exact legal/company name matches.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_196901",
+          "block_id": "p008_c0007"
+        },
+        {
+          "source_id": "meeting_doc_197031",
+          "block_id": "p008_c0007"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-133551-entech",
+      "target": "entity_entech-engineering-feb2024",
+      "validator_duplicate_key": "entity_entech-engineering-pc",
+      "reason": "Same EnTech Engineering, PC company identity; exact company name and engineering/WBE context match.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_133551",
+          "block_id": "p019_c0005"
+        },
+        {
+          "source_id": "meeting_doc_133356",
+          "block_id": "p022_c0007"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-174096-global-java",
+      "target": "entity_global-java-iii-174081",
+      "validator_duplicate_key": "entity_global-java-iii-inc",
+      "reason": "Same Global Java III Inc. company/vendor identity; source names and short-name context match.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_174096",
+          "block_id": "p001_c0003"
+        },
+        {
+          "source_id": "meeting_doc_173881",
+          "block_id": "p001_c0008"
+        },
+        {
+          "source_id": "meeting_doc_174081",
+          "block_id": "p014_c0008"
+        }
+      ],
+      "confidence": "high"
+    }
+  ],
+  "guard_results": {
+    "canonical_records_present": true,
+    "aliases_not_already_merged": true,
+    "targets_not_aliases_in_merges_json": true,
+    "do_not_merge_guard_hits": 0,
+    "raw_source_blocks_checked": 22,
+    "raw_source_blocks_missing": [],
+    "confidence": "high"
+  },
+  "deferred_low_confidence_or_scope_review": [
+    "Community Board, committee, broad agency, route-variant, and Better Buses/program label clusters were skipped.",
+    "Catherine Sheridan / Frank Annicaro mixed clusters were skipped here because prior batch046 prep noted possible agency or role contamination beyond exact person rows.",
+    "SIRTOA / Staten Island Railway legal-identity leftovers remain deferred after batch045."
+  ],
+  "commands_run_for_this_prep": [
+    "rg over review notes/post-ingest/identity overrides to confirm latest identity batch046",
+    "jq over data/identity-overrides/merges.json and data/identity-overrides/do-not-merge.json",
+    "sqlite3 data/canonical.db schema/table inspection only",
+    "bun --eval deterministic canonical entity duplicate mining and guard checks",
+    "raw/sources/<source_id>/blocks.jsonl existence checks for cited block ids"
+  ],
+  "commands_not_run": [
+    "materialize",
+    "export-jsonl --verify",
+    "validate",
+    "canonicalize",
+    "campaign dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "provider/profile post-ingest commands"
+  ],
+  "conductor_apply_note": "Apply only after conductor re-runs the same guards against the then-current merges/do-not-merge files. This prep intentionally does not edit generated canonical JSONL, DB, wiki pages, source pages, or LOG.md."
+}

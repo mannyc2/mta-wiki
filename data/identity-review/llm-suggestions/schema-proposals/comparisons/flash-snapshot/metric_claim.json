@@ -1,0 +1,2538 @@
+{
+  "schema_proposal_run_id": "2026-06-08T23-05-26-749Z_schema-proposal-run",
+  "proposed_at": "2026-06-08T23:07:40.389Z",
+  "observation_kind": "metric_claim",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "audit_packet": {
+    "observation_kind": "metric_claim",
+    "submission_count": 902,
+    "accepted_count": 869,
+    "rejected_count": 33,
+    "declared_anchor_fields": [
+      "metric_name",
+      "raw_value_text",
+      "value",
+      "value_max",
+      "value_min"
+    ],
+    "enum_candidates": [
+      {
+        "field": "direction",
+        "occurrences": 79,
+        "coverage": 0.09,
+        "distinct_values": 10,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "decline",
+          "decrease",
+          "eastbound",
+          "improvement",
+          "increase",
+          "northbound",
+          "southbound",
+          "unknown",
+          "westbound",
+          "westbound (greatest gains)"
+        ],
+        "value_counts": [
+          {
+            "value": "decrease",
+            "count": 20
+          },
+          {
+            "value": "northbound",
+            "count": 14
+          },
+          {
+            "value": "improvement",
+            "count": 12
+          },
+          {
+            "value": "increase",
+            "count": 10
+          },
+          {
+            "value": "westbound",
+            "count": 8
+          },
+          {
+            "value": "eastbound",
+            "count": 5
+          },
+          {
+            "value": "southbound",
+            "count": 4
+          },
+          {
+            "value": "decline",
+            "count": 3
+          },
+          {
+            "value": "unknown",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "value_max",
+        "occurrences": 66,
+        "coverage": 0.07,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "2026-05-11T00:00:00.000",
+          "S79+"
+        ],
+        "value_counts": [
+          {
+            "value": "2026-05-11T00:00:00.000",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "value_min",
+        "occurrences": 63,
+        "coverage": 0.07,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "2019-10-07T00:00:00.000",
+          "B11"
+        ],
+        "value_counts": [
+          {
+            "value": "2019-10-07T00:00:00.000",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "comparison",
+        "occurrences": 52,
+        "coverage": 0.06,
+        "distinct_values": 12,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "current_vs_pre_sbs",
+          "equivalent local routes",
+          "Fall_2012_to_Fall_2015",
+          "last_4_years",
+          "local buses",
+          "May 2019 vs May 2022",
+          "May_2014_to_May_2015",
+          "post_sbs",
+          "post_vs_pre_sbs",
+          "pre_sbs",
+          "subway riders 3.6%",
+          "year_over_year"
+        ],
+        "value_counts": [
+          {
+            "value": "May 2019 vs May 2022",
+            "count": 13
+          },
+          {
+            "value": "post_vs_pre_sbs",
+            "count": 13
+          },
+          {
+            "value": "pre_sbs",
+            "count": 8
+          },
+          {
+            "value": "post_sbs",
+            "count": 5
+          },
+          {
+            "value": "May_2014_to_May_2015",
+            "count": 3
+          },
+          {
+            "value": "Fall_2012_to_Fall_2015",
+            "count": 2
+          },
+          {
+            "value": "year_over_year",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "route_label",
+        "occurrences": 43,
+        "coverage": 0.05,
+        "distinct_values": 8,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "B60",
+          "Bx18A/B",
+          "Fare-Free Avg",
+          "M116",
+          "Q4",
+          "S46/S96",
+          "System",
+          "Systemwide"
+        ],
+        "value_counts": [
+          {
+            "value": "B60",
+            "count": 7
+          },
+          {
+            "value": "Bx18A/B",
+            "count": 7
+          },
+          {
+            "value": "M116",
+            "count": 7
+          },
+          {
+            "value": "Q4",
+            "count": 7
+          },
+          {
+            "value": "S46/S96",
+            "count": 7
+          },
+          {
+            "value": "System",
+            "count": 4
+          },
+          {
+            "value": "Fare-Free Avg",
+            "count": 2
+          },
+          {
+            "value": "Systemwide",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "time_period",
+        "occurrences": 31,
+        "coverage": 0.03,
+        "distinct_values": 9,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "AM Peak (6-10 AM)",
+          "Daily",
+          "Dec-July (2021-2022)",
+          "Dec-July average (2017-2018, 2018-2019, 2019-2020, 2020-2021)",
+          "Midday (10AM-3PM)",
+          "PM peak",
+          "PM Peak (3-7 PM)",
+          "Sep 2022 – May 2023",
+          "Sep 2023 – May 2024"
+        ],
+        "value_counts": [
+          {
+            "value": "Daily",
+            "count": 6
+          },
+          {
+            "value": "Dec-July (2021-2022)",
+            "count": 5
+          },
+          {
+            "value": "Dec-July average (2017-2018, 2018-2019, 2019-2020, 2020-2021)",
+            "count": 5
+          },
+          {
+            "value": "Sep 2022 – May 2023",
+            "count": 5
+          },
+          {
+            "value": "PM Peak (3-7 PM)",
+            "count": 3
+          },
+          {
+            "value": "AM Peak (6-10 AM)",
+            "count": 2
+          },
+          {
+            "value": "Midday (10AM-3PM)",
+            "count": 2
+          },
+          {
+            "value": "PM peak",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "column",
+        "occurrences": 26,
+        "coverage": 0.03,
+        "distinct_values": 10,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Boro",
+          "Days",
+          "Direction",
+          "Hours",
+          "Lane_Color",
+          "Lane_Type",
+          "Lane_Type1",
+          "Lane_width",
+          "SBS_Route1",
+          "TrafDir"
+        ],
+        "value_counts": [
+          {
+            "value": "Boro",
+            "count": 6
+          },
+          {
+            "value": "Direction",
+            "count": 4
+          },
+          {
+            "value": "SBS_Route1",
+            "count": 4
+          },
+          {
+            "value": "TrafDir",
+            "count": 3
+          },
+          {
+            "value": "Lane_Type",
+            "count": 2
+          },
+          {
+            "value": "Lane_Type1",
+            "count": 2
+          },
+          {
+            "value": "Lane_width",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "source_system",
+        "occurrences": 26,
+        "coverage": 0.03,
+        "distinct_values": 4,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Better Buses program",
+          "DOT stationary cameras",
+          "full bus lane automated enforcement program",
+          "MTA ABLE program"
+        ],
+        "value_counts": [
+          {
+            "value": "DOT stationary cameras",
+            "count": 12
+          },
+          {
+            "value": "MTA ABLE program",
+            "count": 12
+          }
+        ]
+      },
+      {
+        "field": "demographic_group",
+        "occurrences": 24,
+        "coverage": 0.03,
+        "distinct_values": 4,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Tier 1",
+          "Tier 2",
+          "Tier 3",
+          "Total"
+        ],
+        "value_counts": [
+          {
+            "value": "Tier 1",
+            "count": 6
+          },
+          {
+            "value": "Tier 2",
+            "count": 6
+          },
+          {
+            "value": "Tier 3",
+            "count": 6
+          },
+          {
+            "value": "Total",
+            "count": 6
+          }
+        ]
+      },
+      {
+        "field": "scenario",
+        "occurrences": 24,
+        "coverage": 0.03,
+        "distinct_values": 3,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "existing_network",
+          "increase",
+          "proposed_network"
+        ],
+        "value_counts": [
+          {
+            "value": "existing_network",
+            "count": 8
+          },
+          {
+            "value": "increase",
+            "count": 8
+          },
+          {
+            "value": "proposed_network",
+            "count": 8
+          }
+        ]
+      },
+      {
+        "field": "mode",
+        "occurrences": 20,
+        "coverage": 0.02,
+        "distinct_values": 3,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "bus",
+          "paratransit",
+          "subway"
+        ],
+        "value_counts": [
+          {
+            "value": "subway",
+            "count": 11
+          },
+          {
+            "value": "bus",
+            "count": 5
+          },
+          {
+            "value": "paratransit",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "field": "day_type",
+        "occurrences": 18,
+        "coverage": 0.02,
+        "distinct_values": 4,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "saturday",
+          "sunday",
+          "weekday",
+          "weekend"
+        ],
+        "value_counts": [
+          {
+            "value": "weekday",
+            "count": 9
+          },
+          {
+            "value": "saturday",
+            "count": 5
+          },
+          {
+            "value": "sunday",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "field": "borough",
+        "occurrences": 16,
+        "coverage": 0.02,
+        "distinct_values": 6,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Bronx",
+          "Bronx/Manhattan",
+          "Brooklyn",
+          "Manhattan",
+          "Queens",
+          "Staten Island"
+        ],
+        "value_counts": [
+          {
+            "value": "Bronx",
+            "count": 4
+          },
+          {
+            "value": "Manhattan",
+            "count": 3
+          },
+          {
+            "value": "Queens",
+            "count": 3
+          },
+          {
+            "value": "Staten Island",
+            "count": 3
+          },
+          {
+            "value": "Brooklyn",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "neighborhood",
+        "occurrences": 16,
+        "coverage": 0.02,
+        "distinct_values": 6,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Central Bronx",
+          "Co-op City",
+          "East Bronx",
+          "Harlem-125th",
+          "Highbridge",
+          "Soundview"
+        ],
+        "value_counts": [
+          {
+            "value": "Central Bronx",
+            "count": 4
+          },
+          {
+            "value": "Co-op City",
+            "count": 4
+          },
+          {
+            "value": "East Bronx",
+            "count": 2
+          },
+          {
+            "value": "Harlem-125th",
+            "count": 2
+          },
+          {
+            "value": "Highbridge",
+            "count": 2
+          },
+          {
+            "value": "Soundview",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "units",
+        "occurrences": 13,
+        "coverage": 0.01,
+        "distinct_values": 7,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "dollars",
+          "miles",
+          "percent",
+          "riders",
+          "riders per day",
+          "routes",
+          "USD"
+        ],
+        "value_counts": [
+          {
+            "value": "percent",
+            "count": 5
+          },
+          {
+            "value": "dollars",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "field": "label",
+        "occurrences": 12,
+        "coverage": 0.01,
+        "distinct_values": 3,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "post_busway",
+          "pre_busway",
+          "pre_busway_baseline"
+        ],
+        "value_counts": [
+          {
+            "value": "post_busway",
+            "count": 5
+          },
+          {
+            "value": "pre_busway_baseline",
+            "count": 5
+          },
+          {
+            "value": "pre_busway",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "service_type",
+        "occurrences": 9,
+        "coverage": 0.01,
+        "distinct_values": 4,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "express",
+          "express bus",
+          "local",
+          "Select Bus Service"
+        ],
+        "value_counts": [
+          {
+            "value": "express",
+            "count": 4
+          },
+          {
+            "value": "Select Bus Service",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "field": "value_unit",
+        "occurrences": 9,
+        "coverage": 0.01,
+        "distinct_values": 3,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "percent",
+          "riders per day",
+          "seconds"
+        ],
+        "value_counts": [
+          {
+            "value": "percent",
+            "count": 7
+          }
+        ]
+      },
+      {
+        "field": "comparison_period",
+        "occurrences": 6,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "November 2024",
+          "October 2025"
+        ],
+        "value_counts": [
+          {
+            "value": "November 2024",
+            "count": 3
+          },
+          {
+            "value": "October 2025",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "field": "existing_frequency_category",
+        "occurrences": 6,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "15-or-better",
+          "30-or-better"
+        ],
+        "value_counts": [
+          {
+            "value": "15-or-better",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "field": "perception",
+        "occurrences": 6,
+        "coverage": 0.01,
+        "distinct_values": 3,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "faster",
+          "more_frequent",
+          "much_safer"
+        ],
+        "value_counts": [
+          {
+            "value": "faster",
+            "count": 2
+          },
+          {
+            "value": "more_frequent",
+            "count": 2
+          },
+          {
+            "value": "much_safer",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "proposed_frequency_category",
+        "occurrences": 6,
+        "coverage": 0.01,
+        "distinct_values": 3,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "15-or-better",
+          "8-or-better",
+          "8-or-better (at Hunts Point only)"
+        ],
+        "value_counts": [
+          {
+            "value": "8-or-better",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "field": "frequency",
+        "occurrences": 5,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "daily",
+          "per_year"
+        ],
+        "value_counts": [
+          {
+            "value": "per_year",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "field": "location",
+        "occurrences": 5,
+        "coverage": 0.01,
+        "distinct_values": 3,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Bronx",
+          "New York City",
+          "Washington Heights and Inwood"
+        ],
+        "value_counts": [
+          {
+            "value": "Bronx",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "field": "subject",
+        "occurrences": 4,
+        "coverage": 0,
+        "distinct_values": 3,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Bx36 bus route",
+          "NYC busways generally",
+          "Tremont Avenue Busway"
+        ],
+        "value_counts": [
+          {
+            "value": "NYC busways generally",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "code",
+        "occurrences": 3,
+        "coverage": 0,
+        "distinct_values": 3,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "A",
+          "T",
+          "W"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "value_note",
+        "occurrences": 3,
+        "coverage": 0,
+        "distinct_values": 3,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "stated as 'more than 27,000'",
+          "stated as 'nearly 25,000'",
+          "stated as 'over 30,000'"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "date",
+        "occurrences": 2,
+        "coverage": 0,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "June 11, 2025",
+          "November 2019"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "days",
+        "occurrences": 2,
+        "coverage": 0,
+        "distinct_values": 1,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "all"
+        ],
+        "value_counts": [
+          {
+            "value": "all",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "demographic",
+        "occurrences": 2,
+        "coverage": 0,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "pedestrians",
+          "seniors (62+) and persons with disabilities"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "provider",
+        "occurrences": 2,
+        "coverage": 0,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "broker",
+          "primary_carrier"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "temporal_context",
+        "occurrences": 2,
+        "coverage": 0,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "post-Busway",
+          "pre-Busway"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "value_direction",
+        "occurrences": 2,
+        "coverage": 0,
+        "distinct_values": 1,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "increase"
+        ],
+        "value_counts": [
+          {
+            "value": "increase",
+            "count": 2
+          }
+        ]
+      }
+    ],
+    "additional_keys": [
+      {
+        "field": "baseline_year",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "category",
+        "occurrences": 19,
+        "coverage": 0.02,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "bus_frequency",
+          "bus_in_motion",
+          "bus_speed",
+          "stopped_at_bus_stops",
+          "very_satisfied",
+          "bus_main_transportation",
+          "car",
+          "concerned_about_customer_parking"
+        ]
+      },
+      {
+        "field": "change",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "change_mom_pct",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "change_unit",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "percentage_points"
+        ]
+      },
+      {
+        "field": "change_yoy_pct",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "context",
+        "occurrences": 71,
+        "coverage": 0.08,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Brooklyn",
+          "Brooklyn bus network",
+          "Brooklyn residents",
+          "February 2015, 6:00 am - 7:00 pm",
+          "February 2016, 6:00 am - 7:00 pm",
+          "Flatbush Avenue",
+          "Post-queue jump lane, pre-SBS July 2015",
+          "Pre-queue jump lane, Feb 2015"
+        ]
+      },
+      {
+        "field": "currency",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "USD"
+        ]
+      },
+      {
+        "field": "date_normalized",
+        "occurrences": 2,
+        "coverage": 0,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "denominator",
+        "occurrences": 2,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "description",
+        "occurrences": 248,
+        "coverage": 0.27,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Bus speed in slowest segments of 116th Street study area",
+          "Grade A threshold on 4.0 GPA scale",
+          "Over 160 open datasets and several supporting resources",
+          "Received over 100 submissions from students, researchers, policymakers, developers, and everyday customers",
+          "14th St between 7th Ave & 8th Ave eastbound, Saturday PM (8-9 PM) post-implementation volume",
+          "14th St between 7th Ave & 8th Ave eastbound, Saturday PM (8-9 PM) pre-implementation volume",
+          "14th St between 7th Ave & 8th Ave eastbound, weekday AM (8-9 AM) post-implementation volume",
+          "14th St between 7th Ave & 8th Ave eastbound, weekday AM (8-9 AM) pre-implementation volume"
+        ]
+      },
+      {
+        "field": "entity",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "New York City Transit"
+        ]
+      },
+      {
+        "field": "existing_stop_spacing_ft",
+        "occurrences": 10,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "fine_period_months",
+        "occurrences": 4,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "fine_tier",
+        "occurrences": 5,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "fifth and subsequent offenses",
+          "first offense",
+          "fourth offense",
+          "second offense",
+          "third offense"
+        ]
+      },
+      {
+        "field": "fiscal_year",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "FY2025"
+        ]
+      },
+      {
+        "field": "goal",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "95%"
+        ]
+      },
+      {
+        "field": "installed_since",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "location_normalized",
+        "occurrences": 5,
+        "coverage": 0.01,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "meaning",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Bus lane traffic direction code T"
+        ]
+      },
+      {
+        "field": "note",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Table 1 total differs slightly from text total of 500,882"
+        ]
+      },
+      {
+        "field": "numerator",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "period",
+        "occurrences": 196,
+        "coverage": 0.22,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "school_months",
+          "2022-2023",
+          "May 2025",
+          "summer_months",
+          "November 2025",
+          "AM_peak",
+          "PM_peak",
+          "pre-pandemic"
+        ]
+      },
+      {
+        "field": "pilot_value",
+        "occurrences": 6,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "pre_pilot_value",
+        "occurrences": 6,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "proposed_rush_routes",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "proposed_stop_spacing_ft",
+        "occurrences": 10,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "route",
+        "occurrences": 43,
+        "coverage": 0.05,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "B44 SBS",
+          "B44 Limited",
+          "B1",
+          "B44",
+          "B49",
+          "B44 Local",
+          "Bx4",
+          "B44 Total"
+        ]
+      },
+      {
+        "field": "routes",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "B44 SBS",
+          "M14 SBS"
+        ]
+      },
+      {
+        "field": "scope",
+        "occurrences": 114,
+        "coverage": 0.13,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "CBD Overall",
+          "entire_route",
+          "systemwide",
+          "CBD Express buses",
+          "CBD Local buses",
+          "Citywide",
+          "citywide",
+          "fare-free average"
+        ]
+      },
+      {
+        "field": "stops_removed",
+        "occurrences": 10,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "target",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "target_description",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "1% below our goal of 95%"
+        ]
+      },
+      {
+        "field": "total_stops",
+        "occurrences": 10,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "unit",
+        "occurrences": 728,
+        "coverage": 0.81,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "percent",
+          "minutes",
+          "mph",
+          "vehicles",
+          "routes",
+          "dollars",
+          "miles",
+          "riders"
+        ]
+      },
+      {
+        "field": "values",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "within_minutes",
+        "occurrences": 2,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "year",
+        "occurrences": 73,
+        "coverage": 0.08,
+        "value_kind": "mixed",
+        "classification": "numeric",
+        "sample_values": [
+          "2022"
+        ]
+      },
+      {
+        "field": "year_over_year_change",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "1.3% improvement"
+        ]
+      }
+    ]
+  },
+  "closure_policy": "deferred",
+  "closure_signals": [
+    {
+      "field": "direction",
+      "closure_readiness": "open",
+      "occurrences": 79,
+      "coverage": 0.09
+    },
+    {
+      "field": "value_max",
+      "closure_readiness": "open",
+      "occurrences": 66,
+      "coverage": 0.07
+    },
+    {
+      "field": "value_min",
+      "closure_readiness": "open",
+      "occurrences": 63,
+      "coverage": 0.07
+    },
+    {
+      "field": "comparison",
+      "closure_readiness": "open",
+      "occurrences": 52,
+      "coverage": 0.06
+    },
+    {
+      "field": "route_label",
+      "closure_readiness": "open",
+      "occurrences": 43,
+      "coverage": 0.05
+    },
+    {
+      "field": "time_period",
+      "closure_readiness": "open",
+      "occurrences": 31,
+      "coverage": 0.03
+    },
+    {
+      "field": "column",
+      "closure_readiness": "open",
+      "occurrences": 26,
+      "coverage": 0.03
+    },
+    {
+      "field": "source_system",
+      "closure_readiness": "open",
+      "occurrences": 26,
+      "coverage": 0.03
+    },
+    {
+      "field": "demographic_group",
+      "closure_readiness": "open",
+      "occurrences": 24,
+      "coverage": 0.03
+    },
+    {
+      "field": "scenario",
+      "closure_readiness": "open",
+      "occurrences": 24,
+      "coverage": 0.03
+    },
+    {
+      "field": "mode",
+      "closure_readiness": "open",
+      "occurrences": 20,
+      "coverage": 0.02
+    },
+    {
+      "field": "day_type",
+      "closure_readiness": "open",
+      "occurrences": 18,
+      "coverage": 0.02
+    },
+    {
+      "field": "borough",
+      "closure_readiness": "open",
+      "occurrences": 16,
+      "coverage": 0.02
+    },
+    {
+      "field": "neighborhood",
+      "closure_readiness": "open",
+      "occurrences": 16,
+      "coverage": 0.02
+    },
+    {
+      "field": "units",
+      "closure_readiness": "open",
+      "occurrences": 13,
+      "coverage": 0.01
+    },
+    {
+      "field": "label",
+      "closure_readiness": "open",
+      "occurrences": 12,
+      "coverage": 0.01
+    },
+    {
+      "field": "service_type",
+      "closure_readiness": "open",
+      "occurrences": 9,
+      "coverage": 0.01
+    },
+    {
+      "field": "value_unit",
+      "closure_readiness": "open",
+      "occurrences": 9,
+      "coverage": 0.01
+    },
+    {
+      "field": "comparison_period",
+      "closure_readiness": "open",
+      "occurrences": 6,
+      "coverage": 0.01
+    },
+    {
+      "field": "existing_frequency_category",
+      "closure_readiness": "open",
+      "occurrences": 6,
+      "coverage": 0.01
+    },
+    {
+      "field": "perception",
+      "closure_readiness": "open",
+      "occurrences": 6,
+      "coverage": 0.01
+    },
+    {
+      "field": "proposed_frequency_category",
+      "closure_readiness": "open",
+      "occurrences": 6,
+      "coverage": 0.01
+    },
+    {
+      "field": "frequency",
+      "closure_readiness": "open",
+      "occurrences": 5,
+      "coverage": 0.01
+    },
+    {
+      "field": "location",
+      "closure_readiness": "open",
+      "occurrences": 5,
+      "coverage": 0.01
+    },
+    {
+      "field": "subject",
+      "closure_readiness": "open",
+      "occurrences": 4,
+      "coverage": 0
+    },
+    {
+      "field": "code",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "coverage": 0
+    },
+    {
+      "field": "value_note",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "coverage": 0
+    },
+    {
+      "field": "date",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0
+    },
+    {
+      "field": "days",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0
+    },
+    {
+      "field": "demographic",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0
+    },
+    {
+      "field": "provider",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0
+    },
+    {
+      "field": "temporal_context",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0
+    },
+    {
+      "field": "value_direction",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0
+    }
+  ],
+  "valid": true,
+  "schema_issues": [],
+  "warnings": [],
+  "proposal": {
+    "observation_kind": "metric_claim",
+    "field_proposals": [
+      {
+        "field": "direction",
+        "decision": "enum",
+        "canonical_values": [
+          "decrease",
+          "improvement",
+          "increase",
+          "unknown",
+          "eastbound",
+          "northbound",
+          "southbound",
+          "westbound"
+        ],
+        "value_mapping": [
+          {
+            "from": "decline",
+            "to": "decrease"
+          },
+          {
+            "from": "decrease",
+            "to": "decrease"
+          },
+          {
+            "from": "eastbound",
+            "to": "eastbound"
+          },
+          {
+            "from": "improvement",
+            "to": "improvement"
+          },
+          {
+            "from": "increase",
+            "to": "increase"
+          },
+          {
+            "from": "northbound",
+            "to": "northbound"
+          },
+          {
+            "from": "southbound",
+            "to": "southbound"
+          },
+          {
+            "from": "unknown",
+            "to": "unknown"
+          },
+          {
+            "from": "westbound",
+            "to": "westbound"
+          },
+          {
+            "from": "westbound (greatest gains)",
+            "to": "westbound"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "direction_other"
+        },
+        "rationale": "Directional and change direction are common categorical attributes."
+      },
+      {
+        "field": "value_max",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "value_max_other"
+        },
+        "rationale": "Insufficient data to normalize; currently appears as free text."
+      },
+      {
+        "field": "value_min",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "value_min_other"
+        },
+        "rationale": "Insufficient data to normalize; currently appears as free text."
+      },
+      {
+        "field": "comparison",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "comparison_other"
+        },
+        "rationale": "Free text description of comparison context."
+      },
+      {
+        "field": "route_label",
+        "decision": "enum",
+        "canonical_values": [
+          "b60",
+          "bx18a_b",
+          "fare_free_average",
+          "m116",
+          "q4",
+          "s46_s96",
+          "system"
+        ],
+        "value_mapping": [
+          {
+            "from": "B60",
+            "to": "b60"
+          },
+          {
+            "from": "Bx18A/B",
+            "to": "bx18a_b"
+          },
+          {
+            "from": "Fare-Free Avg",
+            "to": "fare_free_average"
+          },
+          {
+            "from": "M116",
+            "to": "m116"
+          },
+          {
+            "from": "Q4",
+            "to": "q4"
+          },
+          {
+            "from": "S46/S96",
+            "to": "s46_s96"
+          },
+          {
+            "from": "System",
+            "to": "system"
+          },
+          {
+            "from": "Systemwide",
+            "to": "system"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "route_label_other"
+        },
+        "rationale": "Route labels are categorical."
+      },
+      {
+        "field": "time_period",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "time_period_other"
+        },
+        "rationale": "Variety of date ranges and times makes free text appropriate."
+      },
+      {
+        "field": "column",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "column_other"
+        },
+        "rationale": "Column names from datasets, best as free text."
+      },
+      {
+        "field": "source_system",
+        "decision": "enum",
+        "canonical_values": [
+          "better_buses_program",
+          "dot_stationary_cameras",
+          "full_bus_lane_automated_enforcement_program",
+          "mta_able_program"
+        ],
+        "value_mapping": [
+          {
+            "from": "Better Buses program",
+            "to": "better_buses_program"
+          },
+          {
+            "from": "DOT stationary cameras",
+            "to": "dot_stationary_cameras"
+          },
+          {
+            "from": "full bus lane automated enforcement program",
+            "to": "full_bus_lane_automated_enforcement_program"
+          },
+          {
+            "from": "MTA ABLE program",
+            "to": "mta_able_program"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "source_system_other"
+        },
+        "rationale": "Source system is a categorical attribute."
+      },
+      {
+        "field": "demographic_group",
+        "decision": "enum",
+        "canonical_values": [
+          "tier_1",
+          "tier_2",
+          "tier_3",
+          "total"
+        ],
+        "value_mapping": [
+          {
+            "from": "Tier 1",
+            "to": "tier_1"
+          },
+          {
+            "from": "Tier 2",
+            "to": "tier_2"
+          },
+          {
+            "from": "Tier 3",
+            "to": "tier_3"
+          },
+          {
+            "from": "Total",
+            "to": "total"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "demographic_group_other"
+        },
+        "rationale": "Clear categorical values."
+      },
+      {
+        "field": "scenario",
+        "decision": "enum",
+        "canonical_values": [
+          "existing_network",
+          "increase",
+          "proposed_network"
+        ],
+        "value_mapping": [
+          {
+            "from": "existing_network",
+            "to": "existing_network"
+          },
+          {
+            "from": "increase",
+            "to": "increase"
+          },
+          {
+            "from": "proposed_network",
+            "to": "proposed_network"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "scenario_other"
+        },
+        "rationale": "Categorical scenarios."
+      },
+      {
+        "field": "mode",
+        "decision": "enum",
+        "canonical_values": [
+          "bus",
+          "paratransit",
+          "subway"
+        ],
+        "value_mapping": [
+          {
+            "from": "bus",
+            "to": "bus"
+          },
+          {
+            "from": "paratransit",
+            "to": "paratransit"
+          },
+          {
+            "from": "subway",
+            "to": "subway"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "mode_other"
+        },
+        "rationale": "Transportation modes."
+      },
+      {
+        "field": "day_type",
+        "decision": "enum",
+        "canonical_values": [
+          "saturday",
+          "sunday",
+          "weekday",
+          "weekend"
+        ],
+        "value_mapping": [
+          {
+            "from": "saturday",
+            "to": "saturday"
+          },
+          {
+            "from": "sunday",
+            "to": "sunday"
+          },
+          {
+            "from": "weekday",
+            "to": "weekday"
+          },
+          {
+            "from": "weekend",
+            "to": "weekend"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "day_type_other"
+        },
+        "rationale": "Day type categories."
+      },
+      {
+        "field": "borough",
+        "decision": "enum",
+        "canonical_values": [
+          "bronx",
+          "bronx_manhattan",
+          "brooklyn",
+          "manhattan",
+          "queens",
+          "staten_island"
+        ],
+        "value_mapping": [
+          {
+            "from": "Bronx",
+            "to": "bronx"
+          },
+          {
+            "from": "Bronx/Manhattan",
+            "to": "bronx_manhattan"
+          },
+          {
+            "from": "Brooklyn",
+            "to": "brooklyn"
+          },
+          {
+            "from": "Manhattan",
+            "to": "manhattan"
+          },
+          {
+            "from": "Queens",
+            "to": "queens"
+          },
+          {
+            "from": "Staten Island",
+            "to": "staten_island"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "borough_other"
+        },
+        "rationale": "Borough names."
+      },
+      {
+        "field": "neighborhood",
+        "decision": "enum",
+        "canonical_values": [
+          "central_bronx",
+          "co_op_city",
+          "east_bronx",
+          "harlem_125th",
+          "highbridge",
+          "soundview"
+        ],
+        "value_mapping": [
+          {
+            "from": "Central Bronx",
+            "to": "central_bronx"
+          },
+          {
+            "from": "Co-op City",
+            "to": "co_op_city"
+          },
+          {
+            "from": "East Bronx",
+            "to": "east_bronx"
+          },
+          {
+            "from": "Harlem-125th",
+            "to": "harlem_125th"
+          },
+          {
+            "from": "Highbridge",
+            "to": "highbridge"
+          },
+          {
+            "from": "Soundview",
+            "to": "soundview"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "neighborhood_other"
+        },
+        "rationale": "Neighborhood names."
+      },
+      {
+        "field": "units",
+        "decision": "enum",
+        "canonical_values": [
+          "dollars",
+          "miles",
+          "percent",
+          "riders",
+          "riders_per_day",
+          "routes"
+        ],
+        "value_mapping": [
+          {
+            "from": "dollars",
+            "to": "dollars"
+          },
+          {
+            "from": "miles",
+            "to": "miles"
+          },
+          {
+            "from": "percent",
+            "to": "percent"
+          },
+          {
+            "from": "riders",
+            "to": "riders"
+          },
+          {
+            "from": "riders per day",
+            "to": "riders_per_day"
+          },
+          {
+            "from": "routes",
+            "to": "routes"
+          },
+          {
+            "from": "USD",
+            "to": "dollars"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "units_other"
+        },
+        "rationale": "Units of measurement."
+      },
+      {
+        "field": "label",
+        "decision": "enum",
+        "canonical_values": [
+          "post_busway",
+          "pre_busway",
+          "pre_busway_baseline"
+        ],
+        "value_mapping": [
+          {
+            "from": "post_busway",
+            "to": "post_busway"
+          },
+          {
+            "from": "pre_busway",
+            "to": "pre_busway"
+          },
+          {
+            "from": "pre_busway_baseline",
+            "to": "pre_busway_baseline"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "label_other"
+        },
+        "rationale": "Categorical labels for busway contexts."
+      },
+      {
+        "field": "service_type",
+        "decision": "enum",
+        "canonical_values": [
+          "express",
+          "local",
+          "select_bus_service"
+        ],
+        "value_mapping": [
+          {
+            "from": "express",
+            "to": "express"
+          },
+          {
+            "from": "express bus",
+            "to": "express"
+          },
+          {
+            "from": "local",
+            "to": "local"
+          },
+          {
+            "from": "Select Bus Service",
+            "to": "select_bus_service"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "service_type_other"
+        },
+        "rationale": "Service type categories."
+      },
+      {
+        "field": "value_unit",
+        "decision": "enum",
+        "canonical_values": [
+          "percent",
+          "riders_per_day",
+          "seconds"
+        ],
+        "value_mapping": [
+          {
+            "from": "percent",
+            "to": "percent"
+          },
+          {
+            "from": "riders per day",
+            "to": "riders_per_day"
+          },
+          {
+            "from": "seconds",
+            "to": "seconds"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "value_unit_other"
+        },
+        "rationale": "Units for value (may overlap with units)."
+      },
+      {
+        "field": "comparison_period",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "comparison_period_other"
+        },
+        "rationale": "Date periods best as free text."
+      },
+      {
+        "field": "existing_frequency_category",
+        "decision": "enum",
+        "canonical_values": [
+          "15_or_better",
+          "30_or_better"
+        ],
+        "value_mapping": [
+          {
+            "from": "15-or-better",
+            "to": "15_or_better"
+          },
+          {
+            "from": "30-or-better",
+            "to": "30_or_better"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "existing_frequency_category_other"
+        },
+        "rationale": "Categorical frequency thresholds."
+      },
+      {
+        "field": "perception",
+        "decision": "enum",
+        "canonical_values": [
+          "faster",
+          "more_frequent",
+          "much_safer"
+        ],
+        "value_mapping": [
+          {
+            "from": "faster",
+            "to": "faster"
+          },
+          {
+            "from": "more_frequent",
+            "to": "more_frequent"
+          },
+          {
+            "from": "much_safer",
+            "to": "much_safer"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "perception_other"
+        },
+        "rationale": "Perception adjectives."
+      },
+      {
+        "field": "proposed_frequency_category",
+        "decision": "enum",
+        "canonical_values": [
+          "15_or_better",
+          "8_or_better",
+          "8_or_better_hunts_point"
+        ],
+        "value_mapping": [
+          {
+            "from": "15-or-better",
+            "to": "15_or_better"
+          },
+          {
+            "from": "8-or-better",
+            "to": "8_or_better"
+          },
+          {
+            "from": "8-or-better (at Hunts Point only)",
+            "to": "8_or_better_hunts_point"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "proposed_frequency_category_other"
+        },
+        "rationale": "Proposed frequency categories with location variant."
+      },
+      {
+        "field": "frequency",
+        "decision": "enum",
+        "canonical_values": [
+          "daily",
+          "per_year"
+        ],
+        "value_mapping": [
+          {
+            "from": "daily",
+            "to": "daily"
+          },
+          {
+            "from": "per_year",
+            "to": "per_year"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "frequency_other"
+        },
+        "rationale": "Frequency types."
+      },
+      {
+        "field": "location",
+        "decision": "enum",
+        "canonical_values": [
+          "bronx",
+          "new_york_city",
+          "washington_heights_and_inwood"
+        ],
+        "value_mapping": [
+          {
+            "from": "Bronx",
+            "to": "bronx"
+          },
+          {
+            "from": "New York City",
+            "to": "new_york_city"
+          },
+          {
+            "from": "Washington Heights and Inwood",
+            "to": "washington_heights_and_inwood"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "location_other"
+        },
+        "rationale": "Location names."
+      },
+      {
+        "field": "subject",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "subject_other"
+        },
+        "rationale": "Free text subject description."
+      },
+      {
+        "field": "code",
+        "decision": "needs_more_data",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "code_other"
+        },
+        "rationale": "Only 3 occurrences with distinct values; insufficient to normalize."
+      },
+      {
+        "field": "value_note",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "value_note_other"
+        },
+        "rationale": "Free text note about value."
+      },
+      {
+        "field": "date",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "date_other"
+        },
+        "rationale": "Dates as strings; insufficient for structured parsing."
+      },
+      {
+        "field": "days",
+        "decision": "enum",
+        "canonical_values": [
+          "all"
+        ],
+        "value_mapping": [
+          {
+            "from": "all",
+            "to": "all"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "days_other"
+        },
+        "rationale": "Single observed categorical value."
+      },
+      {
+        "field": "demographic",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "demographic_other"
+        },
+        "rationale": "Descriptive demographic groups."
+      },
+      {
+        "field": "provider",
+        "decision": "enum",
+        "canonical_values": [
+          "broker",
+          "primary_carrier"
+        ],
+        "value_mapping": [
+          {
+            "from": "broker",
+            "to": "broker"
+          },
+          {
+            "from": "primary_carrier",
+            "to": "primary_carrier"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "provider_other"
+        },
+        "rationale": "Provider types."
+      },
+      {
+        "field": "temporal_context",
+        "decision": "enum",
+        "canonical_values": [
+          "post_busway",
+          "pre_busway"
+        ],
+        "value_mapping": [
+          {
+            "from": "post-Busway",
+            "to": "post_busway"
+          },
+          {
+            "from": "pre-Busway",
+            "to": "pre_busway"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "temporal_context_other"
+        },
+        "rationale": "Temporal contexts."
+      },
+      {
+        "field": "value_direction",
+        "decision": "enum",
+        "canonical_values": [
+          "increase"
+        ],
+        "value_mapping": [
+          {
+            "from": "increase",
+            "to": "increase"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "value_direction_other"
+        },
+        "rationale": "Single observed value direction."
+      }
+    ],
+    "key_dispositions": [
+      {
+        "key": "baseline_year",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Numeric baseline year."
+      },
+      {
+        "key": "category",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Free text category for metric."
+      },
+      {
+        "key": "change",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Numeric change value."
+      },
+      {
+        "key": "change_mom_pct",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Month-over-month percent change."
+      },
+      {
+        "key": "change_unit",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Sparse unit for change."
+      },
+      {
+        "key": "change_yoy_pct",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Year-over-year percent change."
+      },
+      {
+        "key": "context",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Free text context description."
+      },
+      {
+        "key": "currency",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Currency identifier."
+      },
+      {
+        "key": "date_normalized",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Normalized date structure."
+      },
+      {
+        "key": "denominator",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Numeric denominator for ratio."
+      },
+      {
+        "key": "description",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Free text description."
+      },
+      {
+        "key": "entity",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Entity name."
+      },
+      {
+        "key": "existing_stop_spacing_ft",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Existing stop spacing in feet."
+      },
+      {
+        "key": "fine_period_months",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Fine period in months."
+      },
+      {
+        "key": "fine_tier",
+        "disposition": "promote_enum",
+        "target": null,
+        "rationale": "Categorical fine tiers."
+      },
+      {
+        "key": "fiscal_year",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Fiscal year identifier."
+      },
+      {
+        "key": "goal",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Goal value."
+      },
+      {
+        "key": "installed_since",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Year installed."
+      },
+      {
+        "key": "location_normalized",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Structured location."
+      },
+      {
+        "key": "meaning",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Meaning description."
+      },
+      {
+        "key": "note",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Note text."
+      },
+      {
+        "key": "numerator",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Numeric numerator for ratio."
+      },
+      {
+        "key": "period",
+        "disposition": "alias",
+        "target": "time_period",
+        "rationale": "Similar to time_period field."
+      },
+      {
+        "key": "pilot_value",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Pilot value."
+      },
+      {
+        "key": "pre_pilot_value",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Pre-pilot value."
+      },
+      {
+        "key": "proposed_rush_routes",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Number of proposed rush routes."
+      },
+      {
+        "key": "proposed_stop_spacing_ft",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Proposed stop spacing in feet."
+      },
+      {
+        "key": "route",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Route label free text."
+      },
+      {
+        "key": "routes",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Array of routes (sparse)."
+      },
+      {
+        "key": "scope",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Scope description."
+      },
+      {
+        "key": "stops_removed",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Number of stops removed."
+      },
+      {
+        "key": "target",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Numeric target."
+      },
+      {
+        "key": "target_description",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Target description."
+      },
+      {
+        "key": "total_stops",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Total stops count."
+      },
+      {
+        "key": "unit",
+        "disposition": "alias",
+        "target": "units",
+        "rationale": "Duplicate of units field."
+      },
+      {
+        "key": "values",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Structured values."
+      },
+      {
+        "key": "within_minutes",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Within minutes value."
+      },
+      {
+        "key": "year",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Year numeric."
+      },
+      {
+        "key": "year_over_year_change",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "YoY change description."
+      }
+    ],
+    "notes": "Schema proposed based on 902 submissions. Enum fields treated as open with escape hatches; free text used for fields with diverse values. value_max and value_min require further review as observed values are not numeric. Some additional keys (period, unit) appear to be aliases for existing enum fields."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T23-05-26-750Z_3564593-b7a39624_schema-proposal-run_metric-claim",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-05-26-750Z_2026-06-08T23-05-26-750Z_3564593-b7a39624_schema-proposal-run_metric-claim.jsonl"
+}

@@ -1,0 +1,94 @@
+{
+  "run_id": "2026-06-10T23-14-25-320Z_1976810-10f0b3f3_ingest_2013-06-06-sbs-125th-cb1",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T03:55:41.060Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "proj-m60-sbs-2013-new",
+        "local_observation_id": "project_m60_select_bus_service_2013",
+        "decision": "new",
+        "rationale": "Observation base_record_id project_m60-select-bus-service-2013 matches the existing registry record with that exact ID (same source, same project_name 'M60 Select Bus Service', same project_type 'Select Bus Service', same boroughs Manhattan+Queens, same status 'proposed'). The observation already resolves to this canonical record; no linking action is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_06_sbs_125th_cb1",
+            "block_id": "p005_c0003",
+            "source_quote": "Select Bus Service on the M60"
+          },
+          {
+            "source_id": "2013_06_06_sbs_125th_cb1",
+            "block_id": "p005_c0004",
+            "source_quote": "Manhattan and Queens"
+          },
+          {
+            "source_id": "2013_06_06_sbs_125th_cb1",
+            "block_id": "p005_c0007",
+            "source_quote": "Off-board fare payment"
+          },
+          {
+            "source_id": "2013_06_06_sbs_125th_cb1",
+            "block_id": "p005_c0009",
+            "source_quote": "Offset lanes for buses and right turns"
+          },
+          {
+            "source_id": "2013_06_06_sbs_125th_cb1",
+            "block_id": "p008_c0005",
+            "source_quote": "Finalize Bus Stop Locations"
+          },
+          {
+            "source_id": "2013_06_06_sbs_125th_cb1",
+            "block_id": "p008_c0007",
+            "source_quote": "Move toward implementation"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same-as",
+            "subject_id": "project_m60-select-bus-service-2013",
+            "object_id": "project_m60-sbs-125th-street-2013",
+            "description": "Both records describe the identical M60 Select Bus Service project on 125th Street presented to different community boards in June 2013. The CB1 presentation (this observation, Jun 6) and the CB9/CB10/CB11 presentations (Mar-Jun 2013) share the same project scope: offset bus lanes, off-board fare collection, limited stops, and transit signal priority.",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_06_sbs_125th_cb1",
+                "block_id": "p005_c0003",
+                "source_quote": "Select Bus Service on the M60"
+              }
+            ]
+          },
+          {
+            "relation_kind": "same-as",
+            "subject_id": "project_m60-select-bus-service-2013",
+            "object_id": "project_125th-st-sbs-2013",
+            "description": "Both records describe the same 125th Street Select Bus Service proposal. The CB1 presentation (Jun 6, 2013) and the CB11 slides (Mar 2013) plus Workshop 3 (Apr 2013) materials all describe proposed SBS with offset bus lanes, updated curb regulations, and implementation on the M60 route along 125th Street.",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_06_sbs_125th_cb1",
+                "block_id": "p005_c0003",
+                "source_quote": "Select Bus Service on the M60"
+              }
+            ]
+          },
+          {
+            "relation_kind": "same-as",
+            "subject_id": "project_m60-select-bus-service-2013",
+            "object_id": "project_m60-sbs-125th-street",
+            "description": "Both records describe the identical M60 Select Bus Service on 125th Street project. The CB10 presentation (Mar 13, 2013) and this CB1 presentation (Jun 6, 2013) share the same project name, treatments (offset bus lanes, off-board fare collection, transit signal priority), and corridor.",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_06_sbs_125th_cb1",
+                "block_id": "p005_c0003",
+                "source_quote": "Select Bus Service on the M60"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-52-16-182Z_2111393-ea7ace73_canonicalize_2026-06-10t23-14-25-320z-1976810-10f0b3f3-ingest-2013-06-06-sbs-125th-cb1-project-identity"
+}

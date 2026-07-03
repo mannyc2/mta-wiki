@@ -1,0 +1,422 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "entity_meeting-doc-102806-quemuel-arroyo"
+record_aliases:
+  - "entity_meeting-doc-104781-quemuel-arroyo"
+  - "entity_meeting-doc-128921-quemuel-arroyo"
+  - "entity_meeting-doc-138396-quemuel-arroyo"
+  - "entity_meeting-doc-151646-quemuel-arroyo"
+  - "entity_meeting-doc-95161-quemuel-arroyo"
+  - "entity_meeting91596-quemuel-arroyo"
+  - "entity_quemuel-arroyo"
+  - "entity_quemuel-arroyo-chief-accessibility-officer-mta"
+  - "entity_quemuel-arroyo-mta-cao"
+  - "entity_quemuel-arroyo-mta-chief-accessibility-officer"
+record_kind: "entity"
+display_name: "Quemuel Arroyo, Chief Accessibility Officer, MTA"
+source_id: "meeting_doc_104781"
+source_ids:
+  - "meeting_doc_102806"
+  - "meeting_doc_104781"
+  - "meeting_doc_107531"
+  - "meeting_doc_109976"
+  - "meeting_doc_111971"
+  - "meeting_doc_113946"
+  - "meeting_doc_121016"
+  - "meeting_doc_124306"
+  - "meeting_doc_127476"
+  - "meeting_doc_128921"
+  - "meeting_doc_131546"
+  - "meeting_doc_133236"
+  - "meeting_doc_135341"
+  - "meeting_doc_138201"
+  - "meeting_doc_138396"
+  - "meeting_doc_140286"
+  - "meeting_doc_140461"
+  - "meeting_doc_143331"
+  - "meeting_doc_151641"
+  - "meeting_doc_151646"
+  - "meeting_doc_151651"
+  - "meeting_doc_151826"
+  - "meeting_doc_29941"
+  - "meeting_doc_65186"
+  - "meeting_doc_72576"
+  - "meeting_doc_79331"
+  - "meeting_doc_91596"
+  - "meeting_doc_95161"
+  - "meeting_doc_98296"
+local_observation_id: "entity_meeting_doc_104781_quemuel_arroyo"
+local_observation_ids:
+  - "entity_meeting151651_quemuel_arroyo"
+  - "entity_meeting91596_quemuel_arroyo"
+  - "entity_meeting_doc_102806_quemuel_arroyo"
+  - "entity_meeting_doc_104781_quemuel_arroyo"
+  - "entity_meeting_doc_107531_quemuel_arroyo"
+  - "entity_meeting_doc_113946_quemuel_arroyo"
+  - "entity_meeting_doc_124306_quemuel_arroyo"
+  - "entity_meeting_doc_127476_quemuel_arroyo"
+  - "entity_meeting_doc_128921_quemuel_arroyo"
+  - "entity_meeting_doc_131546_quemuel_arroyo"
+  - "entity_meeting_doc_133236_quemuel_arroyo"
+  - "entity_meeting_doc_138396_quemuel_arroyo"
+  - "entity_meeting_doc_140461_quemuel_arroyo"
+  - "entity_meeting_doc_143331_quemuel_arroyo"
+  - "entity_meeting_doc_151641_quemuel_arroyo"
+  - "entity_meeting_doc_151646_quemuel_arroyo"
+  - "entity_meeting_doc_29941_quemuel_arroyo"
+  - "entity_meeting_doc_65186_quemuel_arroyo"
+  - "entity_meeting_doc_79331_quemuel_arroyo"
+  - "entity_meeting_doc_95161_quemuel_arroyo"
+  - "entity_meeting_doc_98296_quemuel_arroyo"
+  - "entity_quemuel_arroyo_april_2023_board"
+  - "entity_quemuel_arroyo_chief_accessibility_officer"
+  - "entity_quemuel_arroyo_meeting_doc_135341"
+  - "entity_quemuel_arroyo_meeting_doc_138201"
+  - "entity_quemuel_arroyo_meeting_doc_140286"
+  - "entity_quemuel_arroyo_mnr_eeo"
+  - "entity_quemuel_arroyo_mta_cao"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-22T22:16:42.497Z"
+raw_text: "Quemuel Arroyo, Chief Accessibility Officer, MTA"
+submission_ids:
+  - "sub_04b7d06d925eb150"
+  - "sub_0cffeee15791b23c"
+  - "sub_17a0bb5a7bec914f"
+  - "sub_33606e192eac17c8"
+  - "sub_402314b4ac7fd8ad"
+  - "sub_4cda7cf8f53e75a9"
+  - "sub_530c88b743e04720"
+  - "sub_5b4100a064c345bc"
+  - "sub_619e59f78f8cd840"
+  - "sub_61e0d59b14396ac9"
+  - "sub_6a0d471d3dabc008"
+  - "sub_80693261c53016dd"
+  - "sub_88d8d5a5275f2ada"
+  - "sub_8f32f0b0f133db97"
+  - "sub_93cbfe191960026c"
+  - "sub_a1f2e0e60b9d7376"
+  - "sub_a227547cd370ed47"
+  - "sub_a608e57ab4d6fe56"
+  - "sub_b3999d4a037807f2"
+  - "sub_bbb1c043636b8fde"
+  - "sub_bbdcd5d1ba54ebfa"
+  - "sub_c4220f771eb7d847"
+  - "sub_ca2bbef9d9cf6dbf"
+  - "sub_d0371787fb386f8f"
+  - "sub_e3808866d881aeec"
+  - "sub_e8fbaaa3d27d0ed5"
+  - "sub_f6d032a9adfe5d4c"
+  - "sub_fb9e9b0fe4890032"
+  - "sub_fc04df7b1da59daa"
+payload:
+  _merged_field_values:
+    agency:
+      - "MTA"
+      - "MTA Accessibility"
+    description:
+      - "Man in a wheelchair, being honored by NYU"
+      - "MTA Chief Accessibility Officer interviewed by Multicultural ERG for Intersectionality Awareness Month"
+    organization:
+      - "Metropolitan Transportation Authority"
+      - "MTA"
+    title:
+      - "Chief Accessibility Officer"
+      - "Chief Accessibility Officer, MTA"
+      - "MTA Chief Accessibility Officer"
+  agency: "MTA"
+  description: "Man in a wheelchair, being honored by NYU"
+  entity_name: "Quemuel Arroyo"
+  entity_type: "person"
+  organization: "Metropolitan Transportation Authority"
+  title: "Chief Accessibility Officer"
+evidence_refs:
+  -
+    block_id: "p001_c0008"
+    evidence_id: "meeting_doc_104781#p001_c0008"
+    page_number: 1
+    source_id: "meeting_doc_104781"
+    source_path: "raw/sources/meeting_doc_104781/blocks.jsonl"
+    source_quote: "Quemuel Arroyo, Chief Accessibility Officer, MTA"
+    text_sha256: "sha256:08220602a243906274229958c62402efe57370571eb606ec0791b11b20204d77"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0006"
+    evidence_id: "meeting_doc_102806#p001_c0006"
+    page_number: 1
+    role: "staff_attendee"
+    source_id: "meeting_doc_102806"
+    source_path: "raw/sources/meeting_doc_102806/blocks.jsonl"
+    text_sha256: "sha256:ed14677b8aaeb13c61d5b94da892333b97a8ef88b2cebfa7d8959b10f8d3ae07"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0008"
+    evidence_id: "meeting_doc_107531#p001_c0008"
+    page_number: 1
+    role: "staff_attendance"
+    source_id: "meeting_doc_107531"
+    source_path: "raw/sources/meeting_doc_107531/blocks.jsonl"
+    text_sha256: "sha256:41c0c6a35489ebd253db2ddce2f0c8d7b6405e16f7ba311ef38246496160ec60"
+    text_source: "raw_text"
+  -
+    block_id: "p014_c0002"
+    evidence_id: "meeting_doc_109976#p014_c0002"
+    page_number: 14
+    source_id: "meeting_doc_109976"
+    source_path: "raw/sources/meeting_doc_109976/blocks.jsonl"
+    source_quote: "A photograph of a man in a wheelchair, Quemuel Arroyo, shaking hands with a standing man"
+    text_sha256: "sha256:7b8a42eec0036d57288a0470bd241e486baada7b3f869a3a6293ef3912b74b8b"
+    text_source: "raw_text"
+  -
+    block_id: "p014_c0001"
+    evidence_id: "meeting_doc_109976#p014_c0001"
+    page_number: 14
+    source_id: "meeting_doc_109976"
+    source_path: "raw/sources/meeting_doc_109976/blocks.jsonl"
+    source_quote: "NYU Honors Quemuel Arroyo"
+    text_sha256: "sha256:4eccb2282c4287d72874b221dd153724641cc1a26ad56424088939a9ea2a40d2"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0008"
+    evidence_id: "meeting_doc_111971#p001_c0008"
+    page_number: 1
+    role: "entity_name"
+    source_id: "meeting_doc_111971"
+    source_path: "raw/sources/meeting_doc_111971/blocks.jsonl"
+    text_sha256: "sha256:586a187129dbcea36587edaa9e7106210135221f62fa6860e4c16f6c0003a65f"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0014"
+    evidence_id: "meeting_doc_111971#p003_c0014"
+    page_number: 3
+    role: "role_description"
+    source_id: "meeting_doc_111971"
+    source_path: "raw/sources/meeting_doc_111971/blocks.jsonl"
+    text_sha256: "sha256:ffbcd3b6f4c37eb6b8dfaf852a3fb9e6b6ec1290a1c3daa128a210198918d862"
+    text_source: "raw_text"
+  -
+    block_id: "p004_c0007"
+    evidence_id: "meeting_doc_121016#p004_c0007"
+    page_number: 4
+    source_id: "meeting_doc_121016"
+    source_path: "raw/sources/meeting_doc_121016/blocks.jsonl"
+    source_quote: "Quemuel Arroyo, Chief Accessibility Officer – MTA"
+    text_sha256: "sha256:3ba1d82a610f13c0e8eaec07ef345c2c4b33f5841fb7bc3585991278e7bb4b7b"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0008"
+    evidence_id: "meeting_doc_113946#p001_c0008"
+    page_number: 1
+    source_id: "meeting_doc_113946"
+    source_path: "raw/sources/meeting_doc_113946/blocks.jsonl"
+    text_sha256: "sha256:418651de22cf682f32ff25cf1892b6d5021d981412c3d1962dc49d4c804ccc46"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0008"
+    evidence_id: "meeting_doc_124306#p001_c0008"
+    page_number: 1
+    source_id: "meeting_doc_124306"
+    source_path: "raw/sources/meeting_doc_124306/blocks.jsonl"
+    source_quote: "Quemuel Arroyo, Chief Accessibility Officer, MTA"
+    text_sha256: "sha256:78b8c27ca2f471aff27c6f8d7bf8f2d4f109572f1550a5b1aa20f68ec76de854"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0001"
+    evidence_id: "meeting_doc_128921#p002_c0001"
+    page_number: 2
+    role: "role"
+    source_id: "meeting_doc_128921"
+    source_path: "raw/sources/meeting_doc_128921/blocks.jsonl"
+    text_sha256: "sha256:ac9e4761de23b4e32e9271741029fbb764f2b62bb9d3bb5c23e6a3ba720b701f"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0006"
+    evidence_id: "meeting_doc_127476#p001_c0006"
+    page_number: 1
+    source_id: "meeting_doc_127476"
+    source_path: "raw/sources/meeting_doc_127476/blocks.jsonl"
+    text_sha256: "sha256:065c38c8d10e255712c229d7ffb85c3e11deee5b486dc8f82343f96ed026968d"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0007"
+    evidence_id: "meeting_doc_131546#p001_c0007"
+    page_number: 1
+    source_id: "meeting_doc_131546"
+    source_path: "raw/sources/meeting_doc_131546/blocks.jsonl"
+    text_sha256: "sha256:855a95b49a54f7435f49d25fe7927b2ee5e1fe1626b4a272dd5ccbb659d2dd2b"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0009"
+    evidence_id: "meeting_doc_131546#p003_c0009"
+    page_number: 3
+    source_id: "meeting_doc_131546"
+    source_path: "raw/sources/meeting_doc_131546/blocks.jsonl"
+    text_sha256: "sha256:494b4e363998d3b6eba2cae0baaeb7905e17dedd0226e573d54e0ed8ea3fc6fc"
+    text_source: "raw_text"
+  -
+    block_id: "p004_c0004"
+    evidence_id: "meeting_doc_133236#p004_c0004"
+    page_number: 4
+    source_id: "meeting_doc_133236"
+    source_path: "raw/sources/meeting_doc_133236/blocks.jsonl"
+    text_sha256: "sha256:494b4e363998d3b6eba2cae0baaeb7905e17dedd0226e573d54e0ed8ea3fc6fc"
+    text_source: "raw_text"
+  -
+    block_id: "p005_c0006"
+    evidence_id: "meeting_doc_135341#p005_c0006"
+    page_number: 5
+    source_id: "meeting_doc_135341"
+    source_path: "raw/sources/meeting_doc_135341/blocks.jsonl"
+    source_quote: "Chief Accessibility Officer, Quemuel Arroyo"
+    text_sha256: "sha256:443579929e1c8ecae2505db64eabfa8a43bbbe76fdd206fdbdcd0bf9a4baa0fc"
+    text_source: "raw_text"
+  -
+    block_id: "p004_c0007"
+    evidence_id: "meeting_doc_135341#p004_c0007"
+    page_number: 4
+    source_id: "meeting_doc_135341"
+    source_path: "raw/sources/meeting_doc_135341/blocks.jsonl"
+    source_quote: "Quemuel Arroyo"
+    text_sha256: "sha256:ae82e7a63db4b4b48601ac9bcca3ddbc0f2c8360f0f95f04cd139842478b9c56"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0005"
+    evidence_id: "meeting_doc_138201#p002_c0005"
+    page_number: 2
+    source_id: "meeting_doc_138201"
+    source_path: "raw/sources/meeting_doc_138201/blocks.jsonl"
+    text_sha256: "sha256:fde1f1bf29cf4bfd152251e658460f88d628150d5941cd57fb000a24b8b753fe"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0011"
+    evidence_id: "meeting_doc_138396#p001_c0011"
+    page_number: 1
+    role: "entity"
+    source_id: "meeting_doc_138396"
+    source_path: "raw/sources/meeting_doc_138396/blocks.jsonl"
+    text_sha256: "sha256:5bf5e1243b8f89a55165798d43698200b6d3f6b997179c8b8ebcaaa0e6001a36"
+    text_source: "raw_text"
+  -
+    block_id: "p007_c0008"
+    evidence_id: "meeting_doc_140286#p007_c0008"
+    page_number: 7
+    source_id: "meeting_doc_140286"
+    source_path: "raw/sources/meeting_doc_140286/blocks.jsonl"
+    text_sha256: "sha256:bdf2b74f5441d4d190322fd5ce8e848a2f50f7165bd409b81265734c4a22fbef"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0011"
+    evidence_id: "meeting_doc_140461#p001_c0011"
+    page_number: 1
+    source_id: "meeting_doc_140461"
+    source_path: "raw/sources/meeting_doc_140461/blocks.jsonl"
+    text_sha256: "sha256:d17df33a2b7afc1367890c4e8551d0ba7bd281c30ee4163ac39d874a94b22210"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0029"
+    evidence_id: "meeting_doc_143331#p001_c0029"
+    page_number: 1
+    source_id: "meeting_doc_143331"
+    source_path: "raw/sources/meeting_doc_143331/blocks.jsonl"
+    text_sha256: "sha256:3cd477c42211c0148cbf235f593dffdb243a4e08da1905d277f97b1984634eab"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0010"
+    evidence_id: "meeting_doc_151651#p001_c0010"
+    page_number: 1
+    role: "entity_attendance"
+    source_id: "meeting_doc_151651"
+    source_path: "raw/sources/meeting_doc_151651/blocks.jsonl"
+    text_sha256: "sha256:c88b212b3a292333b43016164d957e6748cd090e072af45a66184c82dbcc3954"
+    text_source: "raw_text"
+  -
+    block_id: "p005_c0006"
+    evidence_id: "meeting_doc_151641#p005_c0006"
+    page_number: 5
+    source_id: "meeting_doc_151641"
+    source_path: "raw/sources/meeting_doc_151641/blocks.jsonl"
+    source_quote: "interviewing MTA Chief Accessibility Officer, Quemuel Arroyo"
+    text_sha256: "sha256:9ef14e5efdea11da282c5960056aed5a25dd5305795ca9671b0828cbff51999c"
+    text_source: "raw_text"
+  -
+    block_id: "p005_c0006"
+    evidence_id: "meeting_doc_151646#p005_c0006"
+    page_number: 5
+    source_id: "meeting_doc_151646"
+    source_path: "raw/sources/meeting_doc_151646/blocks.jsonl"
+    text_sha256: "sha256:29d6fb1dd6c3c318e7344a6cce56161abac985b5bef9b67fd9e1e208c19a1e86"
+    text_source: "raw_text"
+  -
+    block_id: "p005_c0006"
+    evidence_id: "meeting_doc_151826#p005_c0006"
+    page_number: 5
+    source_id: "meeting_doc_151826"
+    source_path: "raw/sources/meeting_doc_151826/blocks.jsonl"
+    source_quote: "MTA Chief Accessibility Officer, Quemuel Arroyo"
+    text_sha256: "sha256:ffd8fe3953358199b594e3f3d07d7cbeb2c34078854e823fd00182b0eac68d88"
+    text_source: "raw_text"
+  -
+    block_id: "p078_c0002"
+    evidence_id: "meeting_doc_29941#p078_c0002"
+    page_number: 78
+    source_id: "meeting_doc_29941"
+    source_path: "raw/sources/meeting_doc_29941/blocks.jsonl"
+    text_sha256: "sha256:6d85cff44128744cdd942446cee547bab6e2f8bbc9c7c7b3d2c818a6c3ab5151"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_65186#p001_c0003"
+    page_number: 1
+    role: "presenter_and_title"
+    source_id: "meeting_doc_65186"
+    source_path: "raw/sources/meeting_doc_65186/blocks.jsonl"
+    text_sha256: "sha256:b8dfdaefdddabe8b45bec5998c631d8ce773e17a61684dad2d1eebb18b7ae054"
+    text_source: "raw_text"
+  -
+    block_id: "p006_c0009"
+    evidence_id: "meeting_doc_79331#p006_c0009"
+    page_number: 6
+    source_id: "meeting_doc_79331"
+    source_path: "raw/sources/meeting_doc_79331/blocks.jsonl"
+    source_quote: "Quemuel Arroyo, MTA Chief Accessibility Officer"
+    text_sha256: "sha256:37c7396ff55476f7eed1766676da6ac0537691b45eeb4474831228c0e56aca6f"
+    text_source: "raw_text"
+  -
+    block_id: "p010_c0006"
+    evidence_id: "meeting_doc_72576#p010_c0006"
+    page_number: 10
+    source_id: "meeting_doc_72576"
+    source_path: "raw/sources/meeting_doc_72576/blocks.jsonl"
+    source_quote: "Quemuel Arroyo, MTA Chief Accessibility Officer"
+    text_sha256: "sha256:6337c8710ab77cbebcb92ed6ed975f0e7ea2d1d893d6bbb3f07a2cb8178b08d2"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0006"
+    evidence_id: "meeting_doc_95161#p001_c0006"
+    page_number: 1
+    source_id: "meeting_doc_95161"
+    source_path: "raw/sources/meeting_doc_95161/blocks.jsonl"
+    text_sha256: "sha256:8a46789d022a337b2b5d9c4f13013ded856a64436c690749d3c589bddb049ab5"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0006"
+    evidence_id: "meeting_doc_91596#p001_c0006"
+    page_number: 1
+    source_id: "meeting_doc_91596"
+    source_path: "raw/sources/meeting_doc_91596/blocks.jsonl"
+    source_quote: "Quemuel Arroyo, Chief Accessibility Officer, MTA"
+    text_sha256: "sha256:9ee77bc2689afa0792851b85af87b351933ab2369665407dbf8a3a9c3771f5ca"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0006"
+    evidence_id: "meeting_doc_98296#p001_c0006"
+    page_number: 1
+    source_id: "meeting_doc_98296"
+    source_path: "raw/sources/meeting_doc_98296/blocks.jsonl"
+    text_sha256: "sha256:6296f6ab878ba2700a907c798fd89400fb9fe427fade33764157d0ac45d47bf4"
+    text_source: "raw_text"
+---
+
+<!-- mta-wiki:writer:start -->
+
+<!-- mta-wiki:writer:end -->

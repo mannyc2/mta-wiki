@@ -1,0 +1,146 @@
+{
+  "note_id": "codex-relation-assertion-static-role-authorship-2026-06-30-ag",
+  "created_at": "2026-06-30T00:00:00.000Z",
+  "author": "codex",
+  "kind": "deterministic_relation_assertion_status_checkpoint",
+  "status": "validated_clean",
+  "scope": "Reduced relation payload assertion_status=unknown by adding narrow deterministic delivered-status inference for static agency-role relations and source authorship publication-role relations.",
+  "constraints": {
+    "external_or_provider_llms_used": false,
+    "forbidden_commands_run": [],
+    "canonical_jsonl_hand_edited": false,
+    "mutation_path": "deterministic assertion qualifier/test changes plus bun packages/cli/src/cli.ts materialize"
+  },
+  "subagents": [
+    {
+      "agent_id": "019f1aa5-da91-7061-8c52-24a956575b82",
+      "nickname": "Franklin",
+      "role": "read-only relation assertion-status unknown scout",
+      "status": "closed",
+      "finding_summary": "Rebaselined 9569 unknown relation assertion statuses and recommended the publication_role prepared_by/authored_by source-to-entity slice as the safest next deterministic delivered-status rule. Also warned against broad planned/proposed/deferred/construction keyword rules."
+    }
+  ],
+  "before": {
+    "relation_total": 20650,
+    "assertion_status_counts": {
+      "cancelled": 2,
+      "deferred": 22,
+      "delivered": 3500,
+      "in_progress": 1600,
+      "planned": 2853,
+      "proposed": 3104,
+      "unknown": 9569
+    },
+    "unknown_by_relation_family": {
+      "metric_context": 5672,
+      "agency_role": 896,
+      "timeline_context": 603,
+      "claim_context": 509,
+      "partnership_engagement": 361,
+      "funding_award": 360,
+      "corridor_scope": 308,
+      "publication_role": 235,
+      "treatment_context": 119,
+      "route_scope": 113,
+      "governance_legal": 112,
+      "organization_hierarchy": 109,
+      "dependency_or_reference": 85,
+      "location_scope": 35,
+      "program_project_scope": 22,
+      "data_reporting": 16,
+      "ownership_role": 14
+    }
+  },
+  "implemented": {
+    "files": [
+      "packages/pipeline/src/records/assertion-qualifiers.ts",
+      "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+    ],
+    "rules": [
+      {
+        "name": "static_agency_role_relations",
+        "guard": "relation_family agency_role; relation_kind in employed_by, works_for, employee_of, works_at, president_of, is_president_of, general_counsel_of, department_head_of, has_officer, interim_president_of, or project_manager_of; subject and object are distinct entity records; description/display names have no future/proposed/former/uncertain tokens",
+        "normalization": "assertion_status delivered",
+        "rows_moved": 205,
+        "negative_guards": [
+          "non-entity endpoints",
+          "self-links",
+          "wrong relation family",
+          "unlisted agency-role kinds such as proposed_as",
+          "future/proposed/former/uncertain wording in relation description or endpoint display names"
+        ]
+      },
+      {
+        "name": "source_authorship_publication_relations",
+        "guard": "relation_family publication_role; relation_kind prepared_by or authored_by; subject is source; object is entity; description has no future/proposed/uncertain tokens",
+        "normalization": "assertion_status delivered",
+        "rows_moved": 36,
+        "negative_guards": [
+          "prepared_for",
+          "about/about_entity/covers/covers_entity",
+          "wrong endpoint kinds",
+          "wrong relation family",
+          "future/proposed/uncertain wording in relation description"
+        ]
+      }
+    ]
+  },
+  "after": {
+    "relation_total": 20650,
+    "assertion_status_counts": {
+      "cancelled": 2,
+      "deferred": 22,
+      "delivered": 3741,
+      "in_progress": 1600,
+      "planned": 2853,
+      "proposed": 3104,
+      "unknown": 9328
+    },
+    "unknown_by_relation_family": {
+      "metric_context": 5672,
+      "agency_role": 691,
+      "timeline_context": 603,
+      "claim_context": 509,
+      "partnership_engagement": 361,
+      "funding_award": 360,
+      "corridor_scope": 308,
+      "publication_role": 199,
+      "treatment_context": 119,
+      "route_scope": 113,
+      "governance_legal": 112,
+      "organization_hierarchy": 109,
+      "dependency_or_reference": 85,
+      "location_scope": 35,
+      "program_project_scope": 22,
+      "data_reporting": 16,
+      "ownership_role": 14
+    },
+    "delta": {
+      "unknown": -241,
+      "delivered": 241,
+      "agency_role_unknown": -205,
+      "publication_role_unknown": -36
+    }
+  },
+  "verification": {
+    "focused_tests": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts: 23 pass, 0 fail, 84 expect() calls",
+    "typecheck": "bun run typecheck passed",
+    "materialize": "bun packages/cli/src/cli.ts materialize completed; Materialized 93092/98102 submissions; retired skipped 243; SQLite FTS quick_check ok",
+    "sqlite_quick_check": "sqlite3 data/canonical.db 'PRAGMA quick_check;': ok",
+    "validate": "bun packages/cli/src/cli.ts validate: Issues 0; submissions 98102; canonical records 84040; wiki pages 7334"
+  },
+  "remaining_lanes": [
+    "Relation assertion_status unknown remains 9328, dominated by metric_context 5672. Avoid broad metric-context delivered inference until a clear policy says relation existence equals delivered assertion.",
+    "Franklin identified possible operates_on_corridor proposed-starting descriptions, but warned broad proposed keywords have false positives such as current routes with proposed terminal swaps.",
+    "Next high-payoff lane should sample exact relation kind and endpoint-shape clusters under metric_context, agency_role, timeline_context, claim_context, funding_award, or corridor_scope and implement only narrow deterministic rules with negative guards."
+  ],
+  "commands_not_run": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed commands"
+  ]
+}

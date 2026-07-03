@@ -1,0 +1,188 @@
+{
+  "run_id": "2026-06-10T23-10-25-438Z_1976810-853a327c_ingest_2013-03-sbs-125-st-cb11-slides",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T03:38:32.135Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "relate-offset-bus-lanes-to-125th-sbs",
+        "local_observation_id": "treatment_offset_bus_lanes_125th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_125th-st-sbs-2013",
+            "object_id": "treatment_offset-bus-lanes-125th-st_2",
+            "description": "Offset Bus Lanes proposed as part of 125th Street Select Bus Service project",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_sbs_125_st_cb11_slides",
+                "block_id": "p011_c0004",
+                "source_quote": "Offset Bus Lanes replace one general travel lane in each direction and maintain curb access"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p011_c0004 is on page 11 'Proposed Design - Typical' of the M60 SBS on 125th Street presentation, explicitly describing offset bus lanes as part of the proposed 125th Street SBS design.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_125_st_cb11_slides",
+            "block_id": "p011_c0004",
+            "source_quote": "Offset Bus Lanes replace one general travel lane in each direction and maintain curb access"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-off-board-fare-to-125th-sbs",
+        "local_observation_id": "treatment_off_board_fare_125th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_125th-st-sbs-2013",
+            "object_id": "treatment_off-board-fare-125th-st",
+            "description": "Off-Board Fare Collection proposed as part of 125th Street Select Bus Service project",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_sbs_125_st_cb11_slides",
+                "block_id": "p006_c0008",
+                "source_quote": "Off-Board Fare Collection"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p006_c0008 is on page 6 under 'Select Bus Service on the M60 — Potential Improvements', explicitly listing off-board fare collection as a proposed SBS treatment for the 125th Street project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_125_st_cb11_slides",
+            "block_id": "p006_c0008",
+            "source_quote": "Off-Board Fare Collection"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-tsp-to-125th-sbs",
+        "local_observation_id": "treatment_tsp_125th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_125th-st-sbs-2013",
+            "object_id": "treatment_tsp-125th-st",
+            "description": "Transit Signal Priority proposed as part of 125th Street Select Bus Service project",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_sbs_125_st_cb11_slides",
+                "block_id": "p006_c0011",
+                "source_quote": "Transit Signal Priority reduces time stopped at red lights"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p006_c0011 is on page 6 under 'Select Bus Service on the M60 — Potential Improvements', explicitly listing TSP as a proposed SBS treatment for the 125th Street project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_125_st_cb11_slides",
+            "block_id": "p006_c0011",
+            "source_quote": "Transit Signal Priority reduces time stopped at red lights"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-pedestrian-safety-to-125th-sbs",
+        "local_observation_id": "treatment_pedestrian_safety_125th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_125th-st-sbs-2013",
+            "object_id": "treatment_pedestrian-safety-125th-st",
+            "description": "Pedestrian Safety Improvements proposed as part of 125th Street Select Bus Service project",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_sbs_125_st_cb11_slides",
+                "block_id": "p006_c0012",
+                "source_quote": "Pedestrian Safety Improvements at key intersections"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p006_c0012 is on page 6 under 'Select Bus Service on the M60 — Potential Improvements', explicitly listing pedestrian safety improvements as a proposed SBS treatment for the 125th Street project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_125_st_cb11_slides",
+            "block_id": "p006_c0012",
+            "source_quote": "Pedestrian Safety Improvements at key intersections"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-bus-bulbs-lexington-to-125th-sbs",
+        "local_observation_id": "treatment_bus_bulbs_lexington_av",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_125th-st-sbs-2013",
+            "object_id": "treatment_bus-bulbs-lexington-av",
+            "description": "Bus bulbs at Lexington Avenue proposed as part of 125th Street Select Bus Service project",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_sbs_125_st_cb11_slides",
+                "block_id": "p025_c0006",
+                "source_quote": "Bus bulbs would reduce pedestrian congestion and crossing distances"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p025_c0006 is on page 25 'Proposed Bus Bulbs at Lexington Av' of the M60 SBS on 125th Street presentation, explicitly describing bus bulbs as a proposed treatment at Lexington Avenue and 125th Street for the SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_125_st_cb11_slides",
+            "block_id": "p025_c0005",
+            "source_quote": "The diagram illustrates the proposed bus bulb project at the intersection of Lexington Avenue and 125th Street."
+          },
+          {
+            "source_id": "2013_03_sbs_125_st_cb11_slides",
+            "block_id": "p025_c0006",
+            "source_quote": "Bus bulbs would reduce pedestrian congestion and crossing distances"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-curb-regulations-to-125th-sbs",
+        "local_observation_id": "treatment_curb_regulations_125th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_125th-st-sbs-2013",
+            "object_id": "treatment_curb-regulations-125th-st",
+            "description": "Updated curb regulations proposed as part of 125th Street Select Bus Service project",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_sbs_125_st_cb11_slides",
+                "block_id": "p006_c0010",
+                "source_quote": "Updated curb regulations reduce double parking, and make deliveries easier"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p006_c0010 is on page 6 under 'Select Bus Service on the M60 — Potential Improvements', explicitly listing updated curb regulations as a proposed SBS treatment for the 125th Street project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_125_st_cb11_slides",
+            "block_id": "p006_c0010",
+            "source_quote": "Updated curb regulations reduce double parking, and make deliveries easier"
+          }
+        ]
+      }
+    ],
+    "packet_id": "treatment-relations"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-32-40-288Z_2111393-dd5693bb_canonicalize_2026-06-10t23-10-25-438z-1976810-853a327c-ingest-2013-03-sbs-125-st-cb11-slides-treatment-relations"
+}

@@ -1,0 +1,297 @@
+{
+  "run_id": "2026-06-10T22-59-39-378Z_1976810-154a89ae_ingest_201110-nostrand-cb17-slides",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T02:05:15.940Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "d1-bus-lanes-nostrand-rogers",
+        "local_observation_id": "treatment_bus_lanes_nostrand_rogers_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_bus-lanes-nostrand-rogers-201110",
+            "description": "Dedicated Bus Lane & Right Turn Lane featured in Nostrand SBS Project, CB17 slides",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p007_c0001",
+                "source_quote": "Nostrand SBS Project Features"
+              },
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p007_c0003",
+                "source_quote": "Dedicated Bus Lane & Right Turn Lane: Offset bus lane allows buses to move quickly and preserves parking"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 7 heading explicitly identifies 'Nostrand SBS Project Features' and describes the dedicated bus lane design segment from Flushing Ave to Eastern Pkwy and Empire Blvd to Farragut Rd.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p007_c0001",
+            "source_quote": "Nostrand SBS Project Features"
+          },
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p007_c0003",
+            "source_quote": "Dedicated Bus Lane & Right Turn Lane: Offset bus lane allows buses to move quickly and preserves parking Parking along the curb except at bus stops"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2-offset-bus-lane-curb",
+        "local_observation_id": "treatment_offset_bus_lane_eastern_pkwy_empire_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_offset-bus-lane-eastern-pkwy-empire-201110",
+            "description": "Offset bus lane at right curb on Nostrand & Rogers between Eastern Pkwy & Empire Blvd",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p007_c0004",
+                "source_quote": "Note: Bus Lane is at right curb on Nostrand & Rogers between Eastern Pkwy & Empire Blvd, and on Bedford Ave between DeKalb & Flushing Aves"
+              }
+            ]
+          }
+        ],
+        "rationale": "The note on p007 specifies bus lane curb placement as a design feature of the Nostrand SBS Project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p007_c0004",
+            "source_quote": "Note: Bus Lane is at right curb on Nostrand & Rogers between Eastern Pkwy & Empire Blvd, and on Bedford Ave between DeKalb & Flushing Aves"
+          }
+        ]
+      },
+      {
+        "decision_id": "d3-bus-signal-priority",
+        "local_observation_id": "treatment_bus_signal_priority_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_bus-signal-priority-201110",
+            "description": "Bus Signal Priority SBS feature presented in CB17 slides",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p003_c0002",
+                "source_quote": ""
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 3 lists 'Bus Signal Priority' under the 'SBS Features' heading, identifying it as a treatment component of the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p003_c0002",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "d4-pre-payment",
+        "local_observation_id": "treatment_pre_payment_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_pre-payment-201110",
+            "description": "Pre-Payment off-board fare collection SBS feature presented in CB17 slides",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p004_c0002",
+                "source_quote": "Pay before you board by dipping MetroCard at sidewalk MetroCard machine or inserting coins at sidewalk coin machine"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 4 details 'How Pre-Payment Works' as part of the Nostrand SBS presentation to CB17.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p004_c0002",
+            "source_quote": "1. Pay before you board by dipping MetroCard at sidewalk MetroCard machine or inserting coins at sidewalk coin machine 2. Take your proof of payment receipt 3. Enter through front or rear door of bus – no need to show receipt to the driver"
+          }
+        ]
+      },
+      {
+        "decision_id": "d5-pre-payment-enforcement",
+        "local_observation_id": "treatment_pre_payment_enforcement_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_pre-payment-enforcement-201110",
+            "description": "Pre-payment enforcement by NYCT Eagle Team SBS feature in CB17 slides",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p005_c0002",
+                "source_quote": "Inspector teams conduct random checks of buses"
+              },
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p005_c0003",
+                "source_quote": "A photograph showing two NYCT Eagle Team officers"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 5 details 'How Pre-Payment Works: Enforcement' including Eagle Team inspections as an SBS feature of the Nostrand project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "Inspector teams conduct random checks of buses"
+          },
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p005_c0003",
+            "source_quote": "A photograph showing two NYCT Eagle Team officers in dark blue uniforms with 'NYCT' on the back, standing next to a white and blue bus."
+          }
+        ]
+      },
+      {
+        "decision_id": "d6-bus-bulb-sbs-station",
+        "local_observation_id": "treatment_bus_bulb_sbs_stations_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_bus-bulb-sbs-stations-201110",
+            "description": "Bus Bulb SBS Station at Empire Blvd featured in Nostrand SBS Project CB17 slides",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p008_c0002",
+                "source_quote": "Empire Blvd SBS Station"
+              },
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p008_c0003",
+                "source_quote": "Bus Bulb: Sidewalks at SBS stations will extend out to the bus lane."
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 8 is headed 'Nostrand SBS Project Features' and details the Empire Blvd SBS Station with bus bulb design.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p008_c0002",
+            "source_quote": "Empire Blvd SBS Station"
+          },
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p008_c0003",
+            "source_quote": "Local Bus Stop at curb New Shelter Fare Collection Machines Bus Bulb: Sidewalks at SBS stations will extend out to the bus lane. Buses will not need to pull in and out of traffic. Higher curbs on the SBS platform will allow for easier boarding."
+          }
+        ]
+      },
+      {
+        "decision_id": "d7-curbside-turn-lanes",
+        "local_observation_id": "treatment_curbside_bus_right_turn_lanes_flatbush_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_curbside-bus-right-turn-lanes-flatbush-201110",
+            "description": "Curbside bus/right turn lanes at Nostrand/Flatbush Junction, part of Nostrand SBS Project",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p012_c0002",
+                "source_quote": "Curbside bus/right turn lanes for peak periods provide extra capacity on approaches to Flatbush Ave between Avenue I and Farragut Rd"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 12 presents the 'Nostrand/Flatbush Junction Proposal' as part of the Nostrand SBS project, describing curbside bus/right turn lanes.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p012_c0002",
+            "source_quote": "Curbside bus/right turn lanes for peak periods provide extra capacity on approaches to Flatbush Ave between Avenue I and Farragut Rd"
+          }
+        ]
+      },
+      {
+        "decision_id": "d8-left-turn-bans",
+        "local_observation_id": "treatment_left_turn_bans_flatbush_nostrand_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_left-turn-bans-flatbush-nostrand-201110",
+            "description": "Left turn bans at Nostrand/Flatbush Junction, part of Nostrand SBS Project",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p012_c0003",
+                "source_quote": "Left turn bans reduce conflicts in the intersection."
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 12 'Nostrand/Flatbush Junction Proposal' explicitly describes left turn bans as part of the SBS junction improvements.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p012_c0003",
+            "source_quote": "Left turn bans reduce conflicts in the intersection."
+          }
+        ]
+      },
+      {
+        "decision_id": "d9-sbs-stations-cb17",
+        "local_observation_id": "treatment_sbs_stations_cb17_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_sbs-stations-cb17-201110",
+            "description": "SBS stations in CB17: Ave D/Newkirk Ave, Church Ave, Clarkson Ave",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p011_c0003",
+                "source_quote": "Stations at Ave D/Newkirk Ave, Church Ave, and Clarkson Ave"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 11 'SBS Plan in CB 17' lists the SBS stations as part of the Nostrand/Rogers SBS project plan presented to CB17.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p011_c0003",
+            "source_quote": "Southbound B44 SBS on Nostrand Ave • Northbound B44 SBS on Rogers Ave, B44 local remains on New York Ave • Stations at Ave D/Newkirk Ave, Church Ave, and Clarkson Ave (northbound at Clarkson in CB 9)"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-01-46-074Z_2111393-cdbae8a7_canonicalize_2026-06-10t22-59-39-378z-1976810-154a89ae-ingest-201110-nostrand-cb17-slides-treatment-relations"
+}

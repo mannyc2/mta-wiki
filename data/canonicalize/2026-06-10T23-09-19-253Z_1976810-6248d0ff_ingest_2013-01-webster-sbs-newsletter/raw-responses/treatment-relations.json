@@ -1,0 +1,277 @@
+{
+  "run_id": "2026-06-10T23-09-19-253Z_1976810-6248d0ff_ingest_2013-01-webster-sbs-newsletter",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T03:22:18.107Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-bus-bulbs-webster-2013",
+        "local_observation_id": "treatment_bus_bulbs_webster_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_bus-bulbs-webster-2013_2",
+            "description": "Bus bulbs on Webster Avenue are part of the Webster Avenue SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2013_01_webster_sbs_newsletter",
+                "block_id": "p001_c0008",
+                "source_quote": "Bus Bulbs extend the sidewalk out to the bus lane at SBS stations, creating additional space for bus riders and pedestrians"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p001_c0008 in the Webster Avenue SBS newsletter describes bus bulbs as part of the Webster Avenue Corridor Design section, explicitly linking them to the SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_01_webster_sbs_newsletter",
+            "block_id": "p001_c0008",
+            "source_quote": "Bus Bulbs extend the sidewalk out to the bus lane at SBS stations, creating additional space for bus riders and pedestrians"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-offset-bus-lanes-webster-2013",
+        "local_observation_id": "treatment_offset_bus_lanes_webster_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_offset-bus-lanes-webster-2013_2",
+            "description": "Offset bus lanes on Webster Avenue are part of the Webster Avenue SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2013_01_webster_sbs_newsletter",
+                "block_id": "p001_c0011",
+                "source_quote": "Dedicated Bus (& Right Turn) Lanes:"
+              },
+              {
+                "source_id": "2013_01_webster_sbs_newsletter",
+                "block_id": "p004_c0004",
+                "source_quote": "Offset bus lanes on Webster Avenue between E 165 Street and E Gun Hill Road"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p001_c0011 introduces dedicated bus lanes as part of the corridor design, and p004_c0004 maps offset bus lanes on Webster Avenue between E 165 Street and E Gun Hill Road as an SBS annotation.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_01_webster_sbs_newsletter",
+            "block_id": "p001_c0011",
+            "source_quote": "Dedicated Bus (& Right Turn) Lanes:"
+          },
+          {
+            "source_id": "2013_01_webster_sbs_newsletter",
+            "block_id": "p004_c0004",
+            "source_quote": "Offset bus lanes on Webster Avenue between E 165 Street and E Gun Hill Road"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-tsp-webster-2013",
+        "local_observation_id": "treatment_tsp_webster_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_tsp-webster-2013",
+            "description": "Transit Signal Priority on Webster Avenue is part of the Webster Avenue SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2013_01_webster_sbs_newsletter",
+                "block_id": "p001_c0015",
+                "source_quote": "Transit Signal Priority (Not Pictured): Buses will get an extended green light at certain intersections, reducing stop time at red lights"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p001_c0015 explicitly describes Transit Signal Priority as a feature of the Webster Avenue corridor design, part of the SBS project improvements.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_01_webster_sbs_newsletter",
+            "block_id": "p001_c0015",
+            "source_quote": "Transit Signal Priority (Not Pictured): Buses will get an extended green light at certain intersections, reducing stop time at red lights"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-ped-amenities-webster-2013",
+        "local_observation_id": "treatment_pedestrian_amenities_webster_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_pedestrian-amenities-webster-2013",
+            "description": "Pedestrian amenities on Webster Avenue are part of the Webster Avenue SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2013_01_webster_sbs_newsletter",
+                "block_id": "p001_c0009",
+                "source_quote": "Pedestrian Amenities:"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p001_c0009 is the heading for pedestrian amenities within the Webster Avenue Corridor Design section of the SBS newsletter, identifying curb extensions, safety islands, and medians as project elements.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_01_webster_sbs_newsletter",
+            "block_id": "p001_c0009",
+            "source_quote": "Pedestrian Amenities:"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-right-turn-bays-webster-2013",
+        "local_observation_id": "treatment_right_turn_bays_webster_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_right-turn-bays-webster-2013",
+            "description": "Right-turn bays on Webster Avenue are part of the Webster Avenue SBS project traffic operations improvements",
+            "evidence_refs": [
+              {
+                "source_id": "2013_01_webster_sbs_newsletter",
+                "block_id": "p002_c0008",
+                "source_quote": "Right-turn bays to reduce bus lane blockages at busy intersections"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p002_c0008 lists right-turn bays as one of the traffic flow improvements DOT will make as part of this SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_01_webster_sbs_newsletter",
+            "block_id": "p002_c0008",
+            "source_quote": "Right-turn bays to reduce bus lane blockages at busy intersections"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-left-turn-bays-webster-2013",
+        "local_observation_id": "treatment_left_turn_bays_webster_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_left-turn-bays-webster-2013",
+            "description": "Lengthening left-turn bays on Webster Avenue is part of the Webster Avenue SBS project traffic operations",
+            "evidence_refs": [
+              {
+                "source_id": "2013_01_webster_sbs_newsletter",
+                "block_id": "p002_c0009",
+                "source_quote": "Lengthening left-turn bays to create more space for vehicles to wait"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p002_c0009 lists lengthening left-turn bays as a traffic flow improvement DOT will make as part of this SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_01_webster_sbs_newsletter",
+            "block_id": "p002_c0009",
+            "source_quote": "Lengthening left-turn bays to create more space for vehicles to wait"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-left-turn-bans-webster-2013",
+        "local_observation_id": "treatment_left_turn_bans_webster_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_left-turn-bans-webster-2013",
+            "description": "Left-turn bans on Webster Avenue are part of the Webster Avenue SBS project traffic operations",
+            "evidence_refs": [
+              {
+                "source_id": "2013_01_webster_sbs_newsletter",
+                "block_id": "p002_c0010",
+                "source_quote": "Banning left turns at key intersections to reduce conflicts between vehicles and pedestrians and keep through traffic moving better."
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p002_c0010 lists banning left turns as a traffic flow improvement DOT will make as part of this SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_01_webster_sbs_newsletter",
+            "block_id": "p002_c0010",
+            "source_quote": "Banning left turns at key intersections to reduce conflicts between vehicles and pedestrians and keep through traffic moving better."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-delivery-windows-webster-2013",
+        "local_observation_id": "treatment_delivery_windows_webster_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_delivery-windows-webster-2013",
+            "description": "Delivery windows on Webster Avenue are part of the Webster Avenue SBS project curb regulations",
+            "evidence_refs": [
+              {
+                "source_id": "2013_01_webster_sbs_newsletter",
+                "block_id": "p002_c0018",
+                "source_quote": "Delivery Windows - Provide designated space for commercial vehicles during certain times of the day. These regulations keep the curb clear for store deliveries and help reduce double parking."
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p002_c0018 lists delivery windows as a possible curb regulation improvement DOT is working on as part of the SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_01_webster_sbs_newsletter",
+            "block_id": "p002_c0018",
+            "source_quote": "Delivery Windows - Provide designated space for commercial vehicles during certain times of the day. These regulations keep the curb clear for store deliveries and help reduce double parking."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metered-parking-webster-2013",
+        "local_observation_id": "treatment_metered_parking_webster_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_metered-parking-webster-2013",
+            "description": "Metered parking on Webster Avenue is part of the Webster Avenue SBS project curb regulations",
+            "evidence_refs": [
+              {
+                "source_id": "2013_01_webster_sbs_newsletter",
+                "block_id": "p002_c0019",
+                "source_quote": "Metered Parking - Adding or extending metered parking areas encourages more parking turnover in retail areas, which is good for businesses who rely on curb side access for their customers."
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p002_c0019 lists metered parking as a possible curb regulation improvement DOT is working on as part of the SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_01_webster_sbs_newsletter",
+            "block_id": "p002_c0019",
+            "source_quote": "Metered Parking - Adding or extending metered parking areas encourages more parking turnover in retail areas, which is good for businesses who rely on curb side access for their customers."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-19-12-525Z_2111393-2aeccfa2_canonicalize_2026-06-10t23-09-19-253z-1976810-6248d0ff-ingest-2013-01-webster-sbs-newsletter-treatment-relations"
+}

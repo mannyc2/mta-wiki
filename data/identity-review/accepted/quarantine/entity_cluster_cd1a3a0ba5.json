@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "entity_cluster_cd1a3a0ba5",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_cd1a3a0ba5.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_cd1a3a0ba5.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "quarantined",
+  "quarantine": {
+    "blocker": "do_not_merge entity_college-point-bus-depot <> entity_college-point-depot: record entity_college-point-bus-depot is not in the current canonical corpus"
+  },
+  "original_merge_groups": [],
+  "original_do_not_merge": [
+    {
+      "record_ids": [
+        "entity_college-point-bus-depot",
+        "entity_college-point-depot"
+      ],
+      "reason": "Contradiction test: entity_type differs (agency vs bus depot). These are distinct entity types per the identity merge canon; a physical depot is not an agency. Despite shared name and location, the strong identity field mismatch forces do_not_merge."
+    }
+  ]
+}

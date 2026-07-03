@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-06-10T22-56-13-303Z_1976810-9799dcb4_ingest_20110517-jamaica-open-house-posters",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T01:30:36.936Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "decision-jamaica-bus-improvement-study",
+        "local_observation_id": "project_jamaica_bus_improvement_study",
+        "decision": "new",
+        "rationale": "The observation's base_record_id (project_jamaica-bus-improvement-study) already matches the canonical record project_jamaica-bus-improvement-study. The observation comes from source 20110517_jamaica_open_house_posters which is listed in the registry record's source_ids. The label 'Jamaica Bus Improvement Study' matches the registry record's project_name exactly. The observation's payload (preliminary recommendations, Queens, bus circulation study) is consistent with the registry record. This observation already resolves to its base_record_id; no different canonical record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p001_c0005",
+            "source_quote": "▪ Improve bus travel within Jamaica ▪ Improve connections to subway and rail stations ▪ Balance bus travel with pedestrian and vehicle traffic"
+          },
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p001_c0007",
+            "source_quote": "✓ Data Collection & Bus Passenger Survey ✓ Initial Community Input ✓ Existing Conditions Evaluation ✓ Bus Use Forecasting and Issues ID ✓ Develop Preliminary Recommendations ✓ Evaluate Preliminary Recommendations ✓ Community Input and Review ✓ Implement Desired Recommendations"
+          },
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p001_c0003",
+            "source_quote": "▪ 47 NYCT, MTA Bus and LI Bus routes – hub for services throughout SE Queens ▪ Very high volume of bus to subway transfers ▪ E F J Z subway service"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-30-12-890Z_2111393-89fd5280_canonicalize_2026-06-10t22-56-13-303z-1976810-9799dcb4-ingest-20110517-jamaica-open-house-posters-project-identity"
+}

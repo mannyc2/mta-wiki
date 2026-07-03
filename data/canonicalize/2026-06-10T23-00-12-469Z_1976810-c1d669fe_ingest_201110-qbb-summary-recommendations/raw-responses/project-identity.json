@@ -1,0 +1,63 @@
+{
+  "run_id": "2026-06-10T23-00-12-469Z_1976810-c1d669fe_ingest_201110-qbb-summary-recommendations",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T02:08:01.230Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d_project_qbb_bus_priority_study",
+        "local_observation_id": "project_qbb_bus_priority_study",
+        "decision": "new",
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "project_qbb-bus-priority-study",
+            "object_id": "project_queensboro-bridge-bus-priority-study",
+            "description": "Both records refer to the identical Queensboro Bridge Bus Priority Study conducted by NYC DOT in 2010-2011. The approach_summary records the earlier 2010 community board presentation phase, while the summary_recommendations records the final October 2011 recommendations phase. Same study goal and project scope across both documents.",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_summary_recommendations",
+                "block_id": "p001_c0002",
+                "source_quote": "Queensboro Bridge Bus Priority Study: Summary of Recommendations"
+              },
+              {
+                "source_id": "201110_qbb_summary_recommendations",
+                "block_id": "p002_c0004",
+                "source_quote": "• Identify cost-effective ways to improve bus speed and reliability for local and express buses that use the QBB."
+              },
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p001_c0002",
+                "source_quote": "The Queensboro Bridge Bus Priority Study"
+              }
+            ]
+          }
+        ],
+        "rationale": "The observation resolves to its own base_record_id project_qbb-bus-priority-study which already exists in the registry with the same source document (201110_qbb_summary_recommendations). Its identity is confirmed as new (matching itself). No different registry record matches this observation; the other Queensboro Bridge study record (project_queensboro-bridge-bus-priority-study) is from a different source (approach_summary) and represents the same real-world study but is a different record, linked via a proposed same_as relation rather than identity merge.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p001_c0002",
+            "source_quote": "Queensboro Bridge Bus Priority Study: Summary of Recommendations"
+          },
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p002_c0004",
+            "source_quote": "• Identify cost-effective ways to improve bus speed and reliability for local and express buses that use the QBB."
+          },
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p004_c0003",
+            "source_quote": "Spring 2010"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-02-57-627Z_2111393-86364f49_canonicalize_2026-06-10t23-00-12-469z-1976810-c1d669fe-ingest-201110-qbb-summary-recommendations-project-identity"
+}

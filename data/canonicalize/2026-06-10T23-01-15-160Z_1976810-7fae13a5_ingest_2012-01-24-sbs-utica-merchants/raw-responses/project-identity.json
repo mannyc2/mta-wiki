@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T23-01-15-160Z_1976810-7fae13a5_ingest_2012-01-24-sbs-utica-merchants",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T02:20:20.354Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d001-utica-study",
+        "local_observation_id": "project_utica_ave_bus_priority_safety_study",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'project_utica-ave-bus-priority-safety-study' is the closest match and IS the observation's own base_record_id; the observation already resolves to that existing registry record. Decision is 'new' per rules since no different target_record_id is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p001_c0002",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p008_c0004",
+            "source_quote": ""
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-19-43-118Z_2111393-4c902a03_canonicalize_2026-06-10t23-01-15-160z-1976810-7fae13a5-ingest-2012-01-24-sbs-utica-merchants-project-identity"
+}

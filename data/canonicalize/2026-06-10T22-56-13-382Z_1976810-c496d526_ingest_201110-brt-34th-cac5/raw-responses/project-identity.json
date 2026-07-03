@@ -1,0 +1,12 @@
+{
+  "run_id": "2026-06-10T22-56-13-382Z_1976810-c496d526_ingest_201110-brt-34th-cac5",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T01:51:31.964Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "assistant_text",
+  "parse_error": "JSON Parse error: Unexpected identifier \"Let\"",
+  "raw_response": "Let me analyze the observation and its relationship to the existing",
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-46-45-519Z_2111393-b98a1578_canonicalize_2026-06-10t22-56-13-382z-1976810-c496d526-ingest-201110-brt-34th-cac5-project-identity"
+}

@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T23-03-20-805Z_1976810-5b1cc97e_ingest_2012-09-19-125th-st-sbs-public-workshop-summary",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T02:49:06.912Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "corridor_125th_st_manhattan_new",
+        "local_observation_id": "corridor_125th_st_manhattan",
+        "decision": "new",
+        "rationale": "The observation's base_record_id (corridor_125th-st-manhattan) already exists in the registry with the same source (2012_09_19_125th_st_sbs_public_workshop_summary), same corridor_name '125th Street', same borough 'Manhattan', and matching description referencing the September 2012 public workshop. The closest canonical match is the observation's own base_record_id, so per rules the decision is new — the observation already resolves to that id and no different target link is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_19_125th_st_sbs_public_workshop_summary",
+            "block_id": "p002_c0005",
+            "source_quote": "critical issues impacting bus movement on 125th Street"
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-48-16-633Z_2111393-6b4336aa_canonicalize_2026-06-10t23-03-20-805z-1976810-5b1cc97e-ingest-2012-09-19-125th-st-sbs-public-workshop-summary-corridor-identity"
+}

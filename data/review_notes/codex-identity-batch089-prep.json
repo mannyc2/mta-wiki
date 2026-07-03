@@ -1,0 +1,535 @@
+{
+  "batch_id": "identity089",
+  "prepared_count": 8,
+  "all_pass": true,
+  "proposed_aliases": [
+    {
+      "kind": "project",
+      "alias_id": "project_68651-181st-st-busway",
+      "target_id": "project_181st-street-busway",
+      "reason": "Both records identify the same 181st Street Busway. The alias is a later MTA board metric mention of the implemented busway, while the target is the source-backed busway project record with launch and permanence context; implemented vs pilot/permanent wording is document-time status, not a separate project identity.",
+      "evidence": [
+        {
+          "record_id": "project_68651-181st-st-busway",
+          "display_name": "181st St Busway",
+          "project_name": "181st St Busway",
+          "project_family": "busway",
+          "project_type": "busway",
+          "document_time_status": "implemented",
+          "status": "implemented",
+          "source_ids": [
+            "meeting_doc_68651"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_68651",
+              "block_id": "p008_c0006",
+              "evidence_id": "meeting_doc_68651#p008_c0006",
+              "source_quote": "181 st St Busway"
+            },
+            {
+              "source_id": "meeting_doc_68651",
+              "block_id": "p008_c0014",
+              "evidence_id": "meeting_doc_68651#p008_c0014",
+              "source_quote": "181 st St shows WB 2021 vs. 2019 annual average"
+            }
+          ]
+        },
+        {
+          "record_id": "project_181st-street-busway",
+          "display_name": "181st Street Busway",
+          "project_name": "181st Street Busway",
+          "project_family": "busway",
+          "project_type": "busway",
+          "document_time_status": "pilot",
+          "status": "pilot (proposed permanent)",
+          "source_ids": [
+            "181st_street_jun2022",
+            "meeting_doc_37081",
+            "meeting_doc_40141"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "181st_street_jun2022",
+              "block_id": "p005_c0002",
+              "evidence_id": "181st_street_jun2022#p005_c0002",
+              "source_quote": "Busway Launched April 26, 2021"
+            },
+            {
+              "source_id": "meeting_doc_37081",
+              "block_id": "p041_c0004",
+              "evidence_id": "meeting_doc_37081#p041_c0004",
+              "source_quote": "The 181 st Street Busway, which runs along five MTA bus routes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_79th-st-crosstown-sbs-capital-apr2025",
+      "target_id": "project_79th-st-crosstown-sbs-capital",
+      "reason": "Both records come from April 2025 community-board presentations for the same 79th Street Crosstown SBS capital project. They share the same project title and the same scope: maintaining bus lane alignment and hours, upgrading bus stops, bus pads and pedestrian refuges, and adding bus bulbs and sidewalk extensions. CB7 vs CB8 is document audience context.",
+      "evidence": [
+        {
+          "record_id": "project_79th-st-crosstown-sbs-capital-apr2025",
+          "display_name": "79th Street Crosstown SBS Capital Project",
+          "project_name": "79th Street Crosstown SBS, Capital Project",
+          "project_family": "capital_or_infrastructure",
+          "project_type": "capital project",
+          "document_time_status": "other",
+          "status": "design in progress",
+          "source_ids": [
+            "79_st_riverside_dr_fdr_dr_cb7_apr2025"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "79_st_riverside_dr_fdr_dr_cb7_apr2025",
+              "block_id": "p011_c0001",
+              "evidence_id": "79_st_riverside_dr_fdr_dr_cb7_apr2025#p011_c0001",
+              "source_quote": "79 th Street Crosstown SBS, Capital Project"
+            },
+            {
+              "source_id": "79_st_riverside_dr_fdr_dr_cb7_apr2025",
+              "block_id": "p011_c0003",
+              "evidence_id": "79_st_riverside_dr_fdr_dr_cb7_apr2025#p011_c0003",
+              "source_quote": "Upgrade: 15 Bus Stops, 14 Bus Pads, 9 Median Tips/Pedestrian Refuges"
+            }
+          ]
+        },
+        {
+          "record_id": "project_79th-st-crosstown-sbs-capital",
+          "display_name": "79th Street Crosstown SBS Capital Project",
+          "project_name": "79th Street Crosstown SBS Capital Project",
+          "project_family": "capital_or_infrastructure",
+          "project_type": "Capital Project",
+          "document_time_status": "other",
+          "status": "presented",
+          "source_ids": [
+            "79_st_riverside_dr_fdr_dr_cb8_apr2025"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "79_st_riverside_dr_fdr_dr_cb8_apr2025",
+              "block_id": "p011_c0001",
+              "evidence_id": "79_st_riverside_dr_fdr_dr_cb8_apr2025#p011_c0001",
+              "source_quote": "79 th Street Crosstown SBS, Capital Project"
+            },
+            {
+              "source_id": "79_st_riverside_dr_fdr_dr_cb8_apr2025",
+              "block_id": "p011_c0003",
+              "evidence_id": "79_st_riverside_dr_fdr_dr_cb8_apr2025#p011_c0003",
+              "source_quote": "Maintain: Alignment of bus lanes; Operational hours of bus lanes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_linden-blvd-traffic-safety-bus-priority-apr2026",
+      "target_id": "project_linden-blvd-traffic-safety-bus-priority-2025",
+      "reason": "Both records identify the Linden Blvd Traffic Safety and Bus Priority Improvements project for Brooklyn CB5. The titles match exactly, the source presentations use the same project frame, and the later April 2026 proposed-design status is a document-time update for the same project.",
+      "evidence": [
+        {
+          "record_id": "project_linden-blvd-traffic-safety-bus-priority-apr2026",
+          "display_name": "Linden Blvd Traffic Safety and Bus Priority Improvements",
+          "project_name": "Linden Blvd Traffic Safety and Bus Priority Improvements",
+          "project_family": "bus_priority",
+          "project_type": "bus priority",
+          "document_time_status": "planned",
+          "status": "proposed",
+          "source_ids": [
+            "linden_blvd_fountain_ave_conduit_ave_bkcb5_apr2026"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "linden_blvd_fountain_ave_conduit_ave_bkcb5_apr2026",
+              "block_id": "p001_c0001",
+              "evidence_id": "linden_blvd_fountain_ave_conduit_ave_bkcb5_apr2026#p001_c0001",
+              "source_quote": "Linden Blvd Traffic Safety and Bus Priority Improvements"
+            },
+            {
+              "source_id": "linden_blvd_fountain_ave_conduit_ave_bkcb5_apr2026",
+              "block_id": "p014_c0001",
+              "evidence_id": "linden_blvd_fountain_ave_conduit_ave_bkcb5_apr2026#p014_c0001",
+              "source_quote": "Proposed Design"
+            }
+          ]
+        },
+        {
+          "record_id": "project_linden-blvd-traffic-safety-bus-priority-2025",
+          "display_name": "Linden Blvd Traffic Safety and Bus Priority Improvements",
+          "project_name": "Linden Blvd Traffic Safety and Bus Priority Improvements",
+          "project_family": "bus_priority",
+          "project_type": "traffic safety and bus priority improvements",
+          "document_time_status": "planned",
+          "status": "proposed",
+          "source_ids": [
+            "linden_blvd_fountain_ave_conduit_ave_bkcb5_jan2025"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "linden_blvd_fountain_ave_conduit_ave_bkcb5_jan2025",
+              "block_id": "p001_c0001",
+              "evidence_id": "linden_blvd_fountain_ave_conduit_ave_bkcb5_jan2025#p001_c0001",
+              "source_quote": "Linden Blvd Traffic Safety and Bus Priority Improvements"
+            },
+            {
+              "source_id": "linden_blvd_fountain_ave_conduit_ave_bkcb5_jan2025",
+              "block_id": "p001_c0002",
+              "evidence_id": "linden_blvd_fountain_ave_conduit_ave_bkcb5_jan2025#p001_c0002",
+              "source_quote": "Community Board 5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_q44-sbs-upgrade-2015",
+      "target_id": "project_q44-sbs-upgrade",
+      "reason": "Both records identify the same planned Q44 SBS upgrade. The source evidence says Q44 LTD would be replaced by Q44 SBS and that SBS would follow the same route from Merrick Boulevard in Jamaica to the Bronx Zoo; the two source ids are different community-board presentations, not different route variants.",
+      "evidence": [
+        {
+          "record_id": "project_q44-sbs-upgrade-2015",
+          "display_name": "Q44 SBS Upgrade",
+          "project_name": "Q44 SBS Upgrade",
+          "project_family": "other",
+          "project_type": "SBS upgrade",
+          "document_time_status": "planned",
+          "status": "planned",
+          "source_ids": [
+            "2015_06_09_brt_flushing_jamaica_cb12"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "2015_06_09_brt_flushing_jamaica_cb12",
+              "block_id": "p009_c0001",
+              "evidence_id": "2015_06_09_brt_flushing_jamaica_cb12#p009_c0001",
+              "source_quote": "Q44 SBS Overview"
+            },
+            {
+              "source_id": "2015_06_09_brt_flushing_jamaica_cb12",
+              "block_id": "p009_c0002",
+              "evidence_id": "2015_06_09_brt_flushing_jamaica_cb12#p009_c0002",
+              "source_quote": "Q44 LTD will be replaced by Q44 SBS"
+            }
+          ]
+        },
+        {
+          "record_id": "project_q44-sbs-upgrade",
+          "display_name": "Q44 Select Bus Service",
+          "project_name": "Q44 Select Bus Service",
+          "project_family": "sbs_or_brt",
+          "project_type": "Select Bus Service upgrade",
+          "document_time_status": "planned",
+          "status": "planned",
+          "source_ids": [
+            "2015_06_15_brt_flushing_jamaica_cb8_presentation"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "2015_06_15_brt_flushing_jamaica_cb8_presentation",
+              "block_id": "p009_c0002",
+              "evidence_id": "2015_06_15_brt_flushing_jamaica_cb8_presentation#p009_c0002",
+              "source_quote": "Q44 LTD will be replaced by Q44 SBS"
+            },
+            {
+              "source_id": "2015_06_15_brt_flushing_jamaica_cb8_presentation",
+              "block_id": "p009_c0003",
+              "evidence_id": "2015_06_15_brt_flushing_jamaica_cb8_presentation#p009_c0003",
+              "source_quote": "SBS will follow same route as LTD from Merrick Blvd in Jamaica to the Bronx Zoo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_woodhaven-blvd-metropolitan-av-cb9-dec2024",
+      "target_id": "project_woodhaven-blvd-metropolitan-av",
+      "reason": "Both records identify the Woodhaven Blvd-Metropolitan Av capital project from the same Woodhaven capital-project presentation family. The evidence gives the same title, limits from Yellowstone Boulevard to 77 Avenue, status Scoping, and estimated 2028 construction; CB9 is document audience context.",
+      "evidence": [
+        {
+          "record_id": "project_woodhaven-blvd-metropolitan-av-cb9-dec2024",
+          "display_name": "Woodhaven Blvd - Metropolitan Av",
+          "project_name": "Woodhaven Blvd - Metropolitan Av",
+          "project_family": "capital_or_infrastructure",
+          "project_type": "Capital Project",
+          "document_time_status": "other",
+          "status": "Scoping",
+          "source_ids": [
+            "capital_woodhaven_blvd_capital_projects_cb9_dec2024"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "capital_woodhaven_blvd_capital_projects_cb9_dec2024",
+              "block_id": "p016_c0002",
+              "evidence_id": "capital_woodhaven_blvd_capital_projects_cb9_dec2024#p016_c0002",
+              "source_quote": "Woodhaven Blvd - Metropolitan Av; Woodhaven Blvd from Yellowstone Blvd to 77 Av; Status: Scoping"
+            }
+          ]
+        },
+        {
+          "record_id": "project_woodhaven-blvd-metropolitan-av",
+          "display_name": "Woodhaven Blvd - Metropolitan Av",
+          "project_name": "Woodhaven Blvd - Metropolitan Av",
+          "project_family": null,
+          "project_type": null,
+          "document_time_status": "other",
+          "status": "Scoping",
+          "source_ids": [
+            "capital_woodhaven_blvd_capital_projects_cb10_dec2024",
+            "capital_woodhaven_blvd_capital_projects_cb6_sept2024",
+            "capital_woodhaven_blvd_capital_projects_cb5_sept2024"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "capital_woodhaven_blvd_capital_projects_cb10_dec2024",
+              "block_id": "p016_c0002",
+              "evidence_id": "capital_woodhaven_blvd_capital_projects_cb10_dec2024#p016_c0002",
+              "source_quote": "Woodhaven Blvd - Metropolitan Av; Woodhaven Blvd from Yellowstone Blvd to 77 Av; Status: Scoping"
+            },
+            {
+              "source_id": "capital_woodhaven_blvd_capital_projects_cb10_dec2024",
+              "block_id": "p025_c0002",
+              "evidence_id": "capital_woodhaven_blvd_capital_projects_cb10_dec2024#p025_c0002",
+              "source_quote": "Woodhaven Blvd - Metropolitan Av; Design Start: early-2025"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_woodhaven-blvd-phase-b-cb9-dec2024",
+      "target_id": "project_woodhaven-blvd-phase-b",
+      "reason": "Both records identify Woodhaven Blvd Phase B, with the same Union Turnpike-to-107 Avenue segment, design status, community-board coverage, and 2026 estimated construction. The duplicate arises from the CB9 December 2024 audience-specific source for the same capital project.",
+      "evidence": [
+        {
+          "record_id": "project_woodhaven-blvd-phase-b-cb9-dec2024",
+          "display_name": "Woodhaven Blvd Phase B",
+          "project_name": "Woodhaven Blvd Phase B",
+          "project_family": "capital_or_infrastructure",
+          "project_type": "Capital Project",
+          "document_time_status": "other",
+          "status": "Design",
+          "source_ids": [
+            "capital_woodhaven_blvd_capital_projects_cb9_dec2024"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "capital_woodhaven_blvd_capital_projects_cb9_dec2024",
+              "block_id": "p016_c0002",
+              "evidence_id": "capital_woodhaven_blvd_capital_projects_cb9_dec2024#p016_c0002",
+              "source_quote": "Woodhaven Blvd Phase B; Union Turnpike to 107 Av; Status: Design"
+            },
+            {
+              "source_id": "capital_woodhaven_blvd_capital_projects_cb9_dec2024",
+              "block_id": "p021_c0003",
+              "evidence_id": "capital_woodhaven_blvd_capital_projects_cb9_dec2024#p021_c0003",
+              "source_quote": "Upgrade: 16 Bus Stops; 17 Sidewalk Extensions; 12 Shortened Crossings"
+            }
+          ]
+        },
+        {
+          "record_id": "project_woodhaven-blvd-phase-b",
+          "display_name": "Woodhaven Blvd Phase B",
+          "project_name": "Woodhaven Blvd Phase B",
+          "project_family": null,
+          "project_type": null,
+          "document_time_status": "other",
+          "status": "Design",
+          "source_ids": [
+            "capital_woodhaven_blvd_capital_projects_cb10_dec2024",
+            "capital_woodhaven_blvd_capital_projects_cb6_sept2024",
+            "capital_woodhaven_blvd_capital_projects_cb5_sept2024"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "capital_woodhaven_blvd_capital_projects_cb10_dec2024",
+              "block_id": "p016_c0002",
+              "evidence_id": "capital_woodhaven_blvd_capital_projects_cb10_dec2024#p016_c0002",
+              "source_quote": "Woodhaven Blvd Phase B; Union Turnpike to 107 Av; Status: Design"
+            },
+            {
+              "source_id": "capital_woodhaven_blvd_capital_projects_cb10_dec2024",
+              "block_id": "p025_c0002",
+              "evidence_id": "capital_woodhaven_blvd_capital_projects_cb10_dec2024#p025_c0002",
+              "source_quote": "Woodhaven Blvd Phase B; Design Completion: mid-2025; Construction Start: early-2026"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_woodhaven-blvd-phase-c-cb9-dec2024",
+      "target_id": "project_woodhaven-blvd-phase-c",
+      "reason": "Both records identify Woodhaven Blvd Phase C, with the same Queens Boulevard-to-66 Avenue segment and conceptual status in the same Woodhaven capital-project source family. CB9 vs CB10/CB5/CB6 reflects document audience, not a separate phase.",
+      "evidence": [
+        {
+          "record_id": "project_woodhaven-blvd-phase-c-cb9-dec2024",
+          "display_name": "Woodhaven Blvd Phase C",
+          "project_name": "Woodhaven Blvd Phase C",
+          "project_family": "capital_or_infrastructure",
+          "project_type": "Capital Project",
+          "document_time_status": "other",
+          "status": "Conceptual",
+          "source_ids": [
+            "capital_woodhaven_blvd_capital_projects_cb9_dec2024"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "capital_woodhaven_blvd_capital_projects_cb9_dec2024",
+              "block_id": "p016_c0002",
+              "evidence_id": "capital_woodhaven_blvd_capital_projects_cb9_dec2024#p016_c0002",
+              "source_quote": "Woodhaven Blvd Phase C; Queens Blvd to 66 Av; Status: Conceptual"
+            }
+          ]
+        },
+        {
+          "record_id": "project_woodhaven-blvd-phase-c",
+          "display_name": "Woodhaven Blvd Phase C",
+          "project_name": "Woodhaven Blvd Phase C",
+          "project_family": null,
+          "project_type": null,
+          "document_time_status": "other",
+          "status": "Conceptual",
+          "source_ids": [
+            "capital_woodhaven_blvd_capital_projects_cb10_dec2024",
+            "capital_woodhaven_blvd_capital_projects_cb6_sept2024",
+            "capital_woodhaven_blvd_capital_projects_cb5_sept2024"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "capital_woodhaven_blvd_capital_projects_cb10_dec2024",
+              "block_id": "p016_c0002",
+              "evidence_id": "capital_woodhaven_blvd_capital_projects_cb10_dec2024#p016_c0002",
+              "source_quote": "Woodhaven Blvd Phase C; Queens Blvd to 66 Av; Status: Conceptual"
+            },
+            {
+              "source_id": "capital_woodhaven_blvd_capital_projects_cb10_dec2024",
+              "block_id": "p025_c0002",
+              "evidence_id": "capital_woodhaven_blvd_capital_projects_cb10_dec2024#p025_c0002",
+              "source_quote": "Woodhaven Blvd Phase C; Scoping Start: early-2025; Design Start: TBD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_m79-sbs-capital",
+      "target_id": "project_79th-street-sbs-capital",
+      "reason": "Both records identify the same M79/79th Street SBS capital project. The source evidence describes the 79th Street SBS capital project building on the 2017 M79 SBS launch with bus bulbs, curb extensions, pedestrian islands, and bus pads, and both records carry planned capital-project status.",
+      "evidence": [
+        {
+          "record_id": "project_m79-sbs-capital",
+          "display_name": "M79 SBS Capital Project",
+          "project_name": "79th Street SBS Capital Project",
+          "project_family": "capital_or_infrastructure",
+          "project_type": "capital project",
+          "document_time_status": "planned",
+          "status": "planned",
+          "source_ids": [
+            "brt_m79_after_report_feb2020"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_m79_after_report_feb2020",
+              "block_id": "p025_c0002",
+              "evidence_id": "brt_m79_after_report_feb2020#p025_c0002",
+              "source_quote": "The 79 th Street SBS capital project will build upon the improvements made for the 2017 M79 SBS launch"
+            },
+            {
+              "source_id": "brt_m79_after_report_feb2020",
+              "block_id": "p025_c0003",
+              "evidence_id": "brt_m79_after_report_feb2020#p025_c0003",
+              "source_quote": "DDC to begin initial design; Preliminary design; Final design; Construction to begin"
+            }
+          ]
+        },
+        {
+          "record_id": "project_79th-street-sbs-capital",
+          "display_name": "79th Street SBS Capital Project, Manhattan",
+          "project_name": "79th Street SBS Capital Project",
+          "project_family": "capital_or_infrastructure",
+          "project_type": "capital project",
+          "document_time_status": "planned",
+          "status": "planned",
+          "source_ids": [
+            "better_buses",
+            "brt_m79_cb7_nov2018",
+            "brt_m79_cb8_nov2018"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_m79_cb7_nov2018",
+              "block_id": "p011_c0002",
+              "evidence_id": "brt_m79_cb7_nov2018#p011_c0002",
+              "source_quote": "The 79 th Street SBS capital project aims to improve bus speeds, reliability, and pedestrian safety"
+            },
+            {
+              "source_id": "brt_m79_cb8_nov2018",
+              "block_id": "p012_c0001",
+              "evidence_id": "brt_m79_cb8_nov2018#p012_c0001",
+              "source_quote": "M79 SBS Capital Project"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guard_checks": {
+    "scope": {
+      "only_project_records": true,
+      "prepared_alias_count_lte_8": true,
+      "external_or_provider_llm_used": false,
+      "canonicalize_dedup_identity_review_write_ask_schema_ontology_commands_run": false,
+      "materialize_export_jsonl_validate_run": false,
+      "profile_or_provider_commands_run": false,
+      "pass": true
+    },
+    "candidate_basis": {
+      "method": "deterministic local inspection of sqlite3 data/canonical.db records/projects/evidence_refs/blocks_fts plus jq/rg inspection of identity override JSON and prior prep artifacts",
+      "shared_identity_keys_found": [
+        "project_181st-st-busway",
+        "project_79th-st-crosstown-sbs-capital-project",
+        "project_linden-blvd-traffic-safety-and-bus-priority-improvements",
+        "project_q44-sbs-upgrade",
+        "project_woodhaven-blvd-metropolitan-av",
+        "project_woodhaven-blvd-phase-b",
+        "project_woodhaven-blvd-phase-c",
+        "project_m79-sbs-capital-project"
+      ],
+      "pass": true
+    },
+    "override_shape": {
+      "intended_apply_path": "data/identity-overrides/merges.json aliases.project",
+      "flat_aliases": false,
+      "pass": true
+    },
+    "record_existence": {
+      "checked_with": "sqlite3 data/canonical.db records",
+      "missing_record_ids": [],
+      "pass": true
+    },
+    "existing_alias_conflicts": {
+      "checked_with": "jq data/identity-overrides/merges.json aliases.project and sqlite3 data/canonical.db identity_aliases where kind='project'",
+      "conflicts": [],
+      "pass": true
+    },
+    "do_not_merge_conflicts": {
+      "checked_with": "sqlite3 data/canonical.db do_not_merge where kind='project' and jq data/identity-overrides/do-not-merge.json pairs.project",
+      "conflicts": [],
+      "pass": true
+    },
+    "prior_prep_conflicts": {
+      "checked_with": "rg/jq over data/review_notes/codex-identity-batch0*-prep.json proposed_aliases through identity087",
+      "conflicts": [],
+      "pass": true
+    }
+  }
+}

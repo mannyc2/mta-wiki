@@ -1,0 +1,226 @@
+{
+  "note_id": "codex-relation-rule-or-data-next18-prep",
+  "batch_id": "next18",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "scope": "Codex-only relation endpoint-shape rule-or-data triage; deterministic read-only inspection plus this single prep artifact; no provider-backed commands, generated-output commands, durable data edits, or code edits",
+  "current_checkpoint_context": {
+    "reported_unexpected_relation_endpoint_shape_count_after_next17": 29,
+    "observed_endpoint_shape_issue_count": 29,
+    "recent_work_not_repeated": [
+      "owned_by corridor->entity validator rule patch",
+      "operated_by corridor->entity validator rule patch",
+      "has_claim treatment_component->claim validator rule patch",
+      "relation cleanup batches037-041 for timeline, published_by, and implemented_by buckets"
+    ],
+    "inspection_method": "Read-only SQLite queries against data/canonical.db using the current RELATION_ENDPOINT_SHAPES table transcribed from packages/pipeline/src/records/relations.ts, plus source block inspection with jq."
+  },
+  "remaining_bucket_counts": {
+    "total": 29,
+    "buckets": [
+      { "bucket": "has_claim claim->claim", "count": 1 },
+      { "bucket": "has_timeline_event entity->metric_claim", "count": 1 },
+      { "bucket": "has_timeline_event event->entity", "count": 1 },
+      { "bucket": "has_timeline_event event->source", "count": 1 },
+      { "bucket": "has_timeline_event project->entity", "count": 1 },
+      { "bucket": "has_timeline_event source->entity", "count": 1 },
+      { "bucket": "has_treatment claim->treatment_component", "count": 1 },
+      { "bucket": "has_treatment entity->metric_claim", "count": 1 },
+      { "bucket": "has_treatment event->treatment_component", "count": 1 },
+      { "bucket": "has_treatment route->treatment_component", "count": 1 },
+      { "bucket": "implemented_by corridor->entity", "count": 1 },
+      { "bucket": "implemented_by entity->entity", "count": 1 },
+      { "bucket": "implemented_by event->entity", "count": 1 },
+      { "bucket": "implemented_by source->entity", "count": 1 },
+      { "bucket": "implemented_by treatment_component->entity", "count": 1 },
+      { "bucket": "operated_by entity->entity", "count": 1 },
+      { "bucket": "operated_by entity->event", "count": 1 },
+      { "bucket": "operated_by treatment_component->entity", "count": 1 },
+      { "bucket": "operates_on_corridor entity->corridor", "count": 1 },
+      { "bucket": "operates_on_corridor project->entity", "count": 1 },
+      { "bucket": "owned_by event->entity", "count": 1 },
+      { "bucket": "owned_by source->entity", "count": 1 },
+      { "bucket": "part_of_program project->claim", "count": 1 },
+      { "bucket": "published_by claim->entity", "count": 1 },
+      { "bucket": "published_by metric_claim->source", "count": 1 },
+      { "bucket": "related_route project->project", "count": 1 },
+      { "bucket": "related_route project->route", "count": 1 },
+      { "bucket": "serves_route project->entity", "count": 1 },
+      { "bucket": "serves_route project->project", "count": 1 }
+    ],
+    "triage_note": "All current exact endpoint-shape buckets are singletons. The selected bucket is the cleanest non-repeated validator gap because the source explicitly states activation of a treatment on a route, while adjacent malformed has_treatment rows are different endpoint mistakes."
+  },
+  "recommendation": "validator_rule_patch",
+  "recommended_bucket": "has_treatment route->treatment_component",
+  "expected_delta": {
+    "baseline_unexpected_relation_endpoint_shape": 29,
+    "selected_rows_cleared": 1,
+    "expected_remaining_after_patch": 28
+  },
+  "recommended_patch": {
+    "relation_kind": "has_treatment",
+    "endpoint_kind_combination": "route -> treatment_component",
+    "code_direction": "Add route to RELATION_ENDPOINT_SHAPES.has_treatment.subject and add a focused relationEndpointShapeIssue test that accepts has_treatment route->treatment_component while keeping claim, entity, event, source, metric_claim, and treatment_component subjects invalid.",
+    "why_semantically_valid": "A route can carry route-scoped bus-priority treatments such as ABLE or ACE enforcement, off-board fare collection, bus lanes, stop treatments, or other features that are deployed on or activated for that route. The selected source says ABLE camera enforcement was activated on the Bx36 route, and the object is a treatment_component for that same route-scoped enforcement.",
+    "why_not_data_cleanup": "The existing relation is already the most specific representation of the source statement: Bx36 route has the ABLE enforcement treatment. Retargeting to the broader ABLE/ACE program would lose the route-specific activation fact, and retire-only would discard a source-backed treatment association.",
+    "why_not_broader_rule_change": "This evidence supports only route subjects for has_treatment when the object is a treatment_component. It does not support allowing claims, events, entities, metric claims, sources, or treatment components as has_treatment subjects, nor does it support metric_claim objects."
+  },
+  "representative_records": [
+    {
+      "record_id": "relation_bx36-able-treatment",
+      "source_id": "meeting_doc_113986",
+      "submission_ids": [
+        "sub_021c889cc990cb4b"
+      ],
+      "malformed_shape": "has_treatment route->treatment_component",
+      "relation_kind": "has_treatment",
+      "subject": {
+        "record_id": "route_bx36",
+        "record_kind": "route",
+        "display_name": "BX36 - ABLE route",
+        "local_observation_id": "route_bx36",
+        "primary_source_id": "ace_routes_dataset_dictionary"
+      },
+      "object": {
+        "record_id": "treatment_meeting-doc-113986-able-bx36",
+        "record_kind": "treatment_component",
+        "display_name": "treatment_meeting_doc_113986_able_bx36",
+        "local_observation_id": "treatment_meeting_doc_113986_able_bx36",
+        "primary_source_id": "meeting_doc_113986"
+      },
+      "payload_summary": {
+        "relation_family": "treatment_context",
+        "as_of_date": "2023-06",
+        "treatment_kind": "automated bus lane enforcement",
+        "treatment_description": "ABLE camera enforcement activated on Bx36 route along Tremont Ave Corridor"
+      },
+      "evidence": [
+        {
+          "source_id": "meeting_doc_113986",
+          "evidence_id": "meeting_doc_113986#p014_c0011",
+          "source_path": "raw/sources/meeting_doc_113986/blocks.jsonl",
+          "page_number": 14,
+          "block_id": "p014_c0011",
+          "text_sha256": "sha256:3e69ff294a3e5d0dda705ae0abfde472507f53c714a7f622d4f5eba1c5b806a5",
+          "quote": "we activate enforcement on the Bx36 route"
+        }
+      ],
+      "triage_read": "Clean route-scoped treatment assertion. The route endpoint is not a proxy for a project or corridor; the cited sentence directly names enforcement activation on the Bx36 route."
+    },
+    {
+      "record_id": "relation_accessibility-has-treatment-elevator",
+      "source_id": "meeting_doc_109976",
+      "submission_ids": [
+        "sub_e9da8479c21e0686"
+      ],
+      "malformed_shape": "has_treatment claim->treatment_component",
+      "relation_kind": "has_treatment",
+      "evidence": [
+        {
+          "source_id": "meeting_doc_109976",
+          "evidence_id": "meeting_doc_109976#p013_c0001",
+          "page_number": 13,
+          "block_id": "p013_c0001",
+          "quote": "Welcome back to a new elevator!"
+        }
+      ],
+      "triage_read": "Counterexample for widening has_treatment beyond routes. A claim should not own a treatment component; this remains a data cleanup/modeling problem."
+    },
+    {
+      "record_id": "relation_gct-has-elevator-t7",
+      "source_id": "meeting_doc_135296",
+      "submission_ids": [
+        "sub_54844f41b339d69c"
+      ],
+      "malformed_shape": "has_treatment entity->metric_claim",
+      "relation_kind": "has_treatment",
+      "triage_read": "Counterexample for broadening has_treatment objects. The object is a metric claim, so this should stay invalid even if route subjects are admitted."
+    },
+    {
+      "record_id": "relation_meeting-doc-128866-winter-trackwork-2024-has-treatment-switch-installations",
+      "source_id": "meeting_doc_128866",
+      "submission_ids": [
+        "sub_41409bcac8bad651"
+      ],
+      "malformed_shape": "has_treatment event->treatment_component",
+      "relation_kind": "has_treatment",
+      "triage_read": "Counterexample for adding event subjects. This looks like program/update event context for a treatment component, not a durable route/project/corridor carrier."
+    }
+  ],
+  "evidence": {
+    "source_and_canonical_evidence_summary": [
+      "relation_bx36-able-treatment, route_bx36, and treatment_meeting-doc-113986-able-bx36 are canonical records with accepted submission evidence.",
+      "The relation and treatment component both cite meeting_doc_113986#p014_c0011, whose block says MTA activated ABLE enforcement on the Bx36 route.",
+      "The route_bx36 canonical record has same-source evidence from meeting_doc_113986 for the Bx36 route reference and multiple broader Bx36 route references from ACE/Tremont sources.",
+      "Current has_treatment inventory is dominated by already-valid project->treatment_component and corridor->treatment_component rows, with only four singleton invalid shapes. Of those, only route->treatment_component is a clean domain-valid ownership/context shape."
+    ],
+    "current_shape_inventory_for_selected_family": {
+      "has_treatment_present_counts": [
+        { "shape": "project->treatment_component", "count": 1489 },
+        { "shape": "corridor->treatment_component", "count": 160 },
+        { "shape": "claim->treatment_component", "count": 1 },
+        { "shape": "entity->metric_claim", "count": 1 },
+        { "shape": "event->treatment_component", "count": 1 },
+        { "shape": "route->treatment_component", "count": 1 }
+      ],
+      "interpretation": "The patch should admit only the route->treatment_component singleton. The other three invalid has_treatment rows remain invalid because their subject/object semantics differ from route-scoped treatment attachment."
+    },
+    "candidate_rule_test_assertions": [
+      "expect(relationEndpointShapeIssue(\"has_treatment\", \"route\", \"treatment_component\")).toBeUndefined();",
+      "expect(relationEndpointShapeIssue(\"has_treatment\", \"claim\", \"treatment_component\")?.message).toContain(\"expects project|corridor|route -> treatment_component\");",
+      "expect(relationEndpointShapeIssue(\"has_treatment\", \"event\", \"treatment_component\")?.message).toContain(\"expects project|corridor|route -> treatment_component\");",
+      "expect(relationEndpointShapeIssue(\"has_treatment\", \"entity\", \"metric_claim\")?.message).toContain(\"expects project|corridor|route -> treatment_component\");"
+    ]
+  },
+  "guards": {
+    "non_goals": [
+      "Do not retire, replace, or edit canonical data as part of this prep.",
+      "Do not apply the code patch in this artifact-only lane.",
+      "Do not rerun materialize, export-jsonl, full validate, DB publish, write, ask, schema, ontology-normalize, identity-review, canonicalize, campaign dedup, or any provider/profile-backed command.",
+      "Do not repeat already-handled owned_by corridor->entity, operated_by corridor->entity, or has_claim treatment_component->claim rule patches.",
+      "Do not fold this into the recent timeline/published_by/implemented_by cleanup lane.",
+      "Do not widen has_treatment to claim->treatment_component, event->treatment_component, entity->treatment_component, source->treatment_component, treatment_component->treatment_component, or any subject with metric_claim objects.",
+      "Do not reinterpret the Bx36 route-scoped ABLE enforcement as only a project/corridor relation merely to satisfy the older validator."
+    ],
+    "negative_endpoint_combos_that_must_remain_invalid": [
+      "has_treatment claim->treatment_component",
+      "has_treatment entity->metric_claim",
+      "has_treatment event->treatment_component",
+      "has_treatment source->treatment_component",
+      "has_treatment treatment_component->treatment_component",
+      "has_treatment route->metric_claim",
+      "has_claim claim->claim",
+      "implemented_by treatment_component->entity",
+      "operated_by treatment_component->entity",
+      "published_by metric_claim->source"
+    ]
+  },
+  "commands_run_read_only": [
+    "sed -n '206,276p' packages/pipeline/src/records/relations.ts",
+    "rg -n 'RELATION_ENDPOINT_SHAPES|relationEndpointShapeIssue|has_claim|has_treatment|part_of_program|serves_route|related_route|operates_on_corridor|implemented_by|operated_by|owned_by|published_by|has_timeline_event' packages/pipeline/src/records/relations.ts packages/pipeline/test/records/relations.test.ts",
+    "sqlite3 -readonly data/canonical.db '.schema relations' '.schema records' '.schema evidence_refs' '.schema record_submissions'",
+    "sqlite3 -readonly -json data/canonical.db '<current endpoint-shape inventory for known relation kinds using current rule table>'",
+    "sqlite3 -readonly -json data/canonical.db '<selected relation, endpoint, evidence, and submission context queries>'",
+    "jq -c 'select(.block_id==\"p014_c0011\")' raw/sources/meeting_doc_113986/blocks.jsonl",
+    "rg -n 'route->treatment|route -> treatment|has_treatment route|relation_bx36-able-treatment|Bx36' data/review_notes LOG.md data/submissions -S"
+  ],
+  "commands_intentionally_not_run": [
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "materialize",
+    "export-jsonl",
+    "full validate",
+    "DB publish/repair",
+    "any command with --profile or provider-backed execution"
+  ],
+  "files_written": [
+    "data/review_notes/codex-relation-rule-or-data-next18-prep.json"
+  ],
+  "blockers": [],
+  "all_pass": true
+}

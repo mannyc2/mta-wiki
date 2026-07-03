@@ -1,0 +1,1356 @@
+{
+  "schema_proposal_run_id": "2026-06-08T23-05-26-749Z_schema-proposal-run",
+  "proposed_at": "2026-06-08T23:06:24.335Z",
+  "observation_kind": "claim",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "audit_packet": {
+    "observation_kind": "claim",
+    "submission_count": 393,
+    "accepted_count": 375,
+    "rejected_count": 18,
+    "declared_anchor_fields": [
+      "claim_text",
+      "description",
+      "statement",
+      "text"
+    ],
+    "enum_candidates": [
+      {
+        "field": "data_type",
+        "occurrences": 32,
+        "coverage": 0.08,
+        "distinct_values": 3,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "multiline",
+          "number",
+          "text"
+        ],
+        "value_counts": [
+          {
+            "value": "text",
+            "count": 23
+          },
+          {
+            "value": "number",
+            "count": 6
+          },
+          {
+            "value": "multiline",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "field": "source",
+        "occurrences": 15,
+        "coverage": 0.04,
+        "distinct_values": 3,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "bus rider survey",
+          "business outreach",
+          "DOT Street Ambassadors door-to-door outreach"
+        ],
+        "value_counts": [
+          {
+            "value": "bus rider survey",
+            "count": 6
+          },
+          {
+            "value": "business outreach",
+            "count": 5
+          },
+          {
+            "value": "DOT Street Ambassadors door-to-door outreach",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "field": "change_type",
+        "occurrences": 12,
+        "coverage": 0.03,
+        "distinct_values": 5,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "maintain_existing",
+          "new_route",
+          "no_change",
+          "reroute",
+          "route_split"
+        ],
+        "value_counts": [
+          {
+            "value": "reroute",
+            "count": 5
+          },
+          {
+            "value": "maintain_existing",
+            "count": 3
+          },
+          {
+            "value": "new_route",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "existing",
+        "occurrences": 6,
+        "coverage": 0.02,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "15-or-better",
+          "30-or-better"
+        ],
+        "value_counts": [
+          {
+            "value": "15-or-better",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "field": "proposed",
+        "occurrences": 6,
+        "coverage": 0.02,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "15-or-better",
+          "8-or-better"
+        ],
+        "value_counts": [
+          {
+            "value": "8-or-better",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "field": "claim_type",
+        "occurrences": 4,
+        "coverage": 0.01,
+        "distinct_values": 3,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "deployment_note",
+          "effectiveness",
+          "violation_type"
+        ],
+        "value_counts": [
+          {
+            "value": "violation_type",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "capital_improvements",
+        "occurrences": 3,
+        "coverage": 0.01,
+        "distinct_values": 4,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "bus bulbs",
+          "landscaped medians",
+          "pedestrian improvements",
+          "pedestrian medians"
+        ],
+        "value_counts": [
+          {
+            "value": "bus bulbs",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "field": "rail_connections",
+        "occurrences": 3,
+        "coverage": 0.01,
+        "distinct_values": 3,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "LIRR",
+          "Metro-North",
+          "Metro-North Railroad"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "text",
+        "occurrences": 3,
+        "coverage": 0.01,
+        "distinct_values": 3,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Equity framework description",
+          "Equity Score Index methodology",
+          "Equity Tier 1/2/3 definitions"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "unit",
+        "occurrences": 3,
+        "coverage": 0.01,
+        "distinct_values": 1,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "feet"
+        ],
+        "value_counts": [
+          {
+            "value": "feet",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "field": "improvement_type",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "all_door_boarding",
+          "tap_and_go_payment"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "render_type",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 1,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "multiline"
+        ],
+        "value_counts": [
+          {
+            "value": "multiline",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "timeline",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "2018",
+          "late-2014/early-2015"
+        ],
+        "value_counts": []
+      }
+    ],
+    "additional_keys": [
+      {
+        "field": "am_peak_minutes",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "bus_routes_count",
+        "occurrences": 4,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "column_name",
+        "occurrences": 32,
+        "coverage": 0.08,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Direction",
+          "Mid_Block",
+          "the_geom",
+          "Boro",
+          "Chron_ID_1",
+          "Days",
+          "Days_Code",
+          "Facility"
+        ]
+      },
+      {
+        "field": "corridors_scored",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "date_text",
+        "occurrences": 4,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "March 21 & 25, 2022"
+        ]
+      },
+      {
+        "field": "date_text_normalized",
+        "occurrences": 4,
+        "coverage": 0.01,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "express_routes_modified",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "features",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "free_text",
+        "sample_values": [
+          "off-board fare payment",
+          "dedicated bus lanes",
+          "limited stops",
+          "low-floor three-door articulated buses",
+          "MTA Bus Time displays",
+          "neighborhood maps",
+          "transit signal priority"
+        ]
+      },
+      {
+        "field": "field_name",
+        "occurrences": 32,
+        "coverage": 0.08,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "direction",
+          "mid_block",
+          "the_geom",
+          "bltrafdir",
+          "boro",
+          "chron_id_1",
+          "days",
+          "days_code"
+        ]
+      },
+      {
+        "field": "largest_value",
+        "occurrences": 6,
+        "coverage": 0.02,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "location",
+        "occurrences": 6,
+        "coverage": 0.02,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Throgs Neck",
+          "Grand Concourse",
+          "Norwood",
+          "Story Avenue",
+          "Tremont Avenue / East 180 Street / Webster Avenue"
+        ]
+      },
+      {
+        "field": "location_normalized",
+        "occurrences": 6,
+        "coverage": 0.02,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "map_features",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "midday_minutes",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "new_express_routes_added",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "new_routes_added",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Bx25",
+          "M125"
+        ]
+      },
+      {
+        "field": "new_streets",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Bronx River Avenue",
+          "Bruckner Boulevard",
+          "Story Avenue"
+        ]
+      },
+      {
+        "field": "new_terminal",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Turnbull and Pugsley avenues"
+        ]
+      },
+      {
+        "field": "non_null_count",
+        "occurrences": 29,
+        "coverage": 0.07,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "null_count",
+        "occurrences": 29,
+        "coverage": 0.07,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "pm_peak_minutes",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "policy_type",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "fare_policy"
+        ]
+      },
+      {
+        "field": "position",
+        "occurrences": 32,
+        "coverage": 0.08,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "route",
+        "occurrences": 14,
+        "coverage": 0.04,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Bx6 SBS",
+          "Bx11",
+          "Bx13",
+          "Bx23",
+          "Bx25",
+          "Bx36",
+          "Bx38",
+          "Bx4"
+        ]
+      },
+      {
+        "field": "route_types",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "routes",
+        "occurrences": 8,
+        "coverage": 0.02,
+        "value_kind": "array_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Bx40",
+          "Bx42",
+          "Bx36",
+          "B44 SBS",
+          "Bx15",
+          "Bx28",
+          "Bx38",
+          "Bx5"
+        ]
+      },
+      {
+        "field": "routes_modified",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "sbs_connections",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "B44 Nostrand Ave SBS",
+          "B46 Utica Ave SBS"
+        ]
+      },
+      {
+        "field": "scope",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "at Hunts Point only"
+        ]
+      },
+      {
+        "field": "service_type",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "express_bus"
+        ]
+      },
+      {
+        "field": "service_window",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "7:00am to 9:00pm"
+        ]
+      },
+      {
+        "field": "strategies",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Balance Bus Stops",
+          "Enhance Connectivity",
+          "Expand Bus Priority with NYC DOT",
+          "Improve Accessibility",
+          "Improve Frequency",
+          "Improve Route Design",
+          "Improve Transit Equity"
+        ]
+      },
+      {
+        "field": "streets",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Bronx River Avenue",
+          "Bruckner Boulevard",
+          "Story Avenue"
+        ]
+      },
+      {
+        "field": "subject",
+        "occurrences": 17,
+        "coverage": 0.04,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "redesign_plan",
+          "ABLE mobile cameras",
+          "DOT stationary cameras",
+          "fare_policy",
+          "map_caption",
+          "MTA ABLE program",
+          "nycdot_bus_priority_analysis",
+          "redesign_strategy_connectivity"
+        ]
+      },
+      {
+        "field": "subway_lines",
+        "occurrences": 4,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "free_text",
+        "sample_values": [
+          "B",
+          "D",
+          "1",
+          "2",
+          "4",
+          "5",
+          "6",
+          "A"
+        ]
+      },
+      {
+        "field": "subway_lines_count",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "system",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "OMNY"
+        ]
+      },
+      {
+        "field": "tactics",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "balanced_stop_spacing",
+          "enhanced_connectivity",
+          "expanded_bus_priority",
+          "increased_frequency",
+          "more_direct_routings"
+        ]
+      },
+      {
+        "field": "target_date",
+        "occurrences": 3,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "numeric",
+        "sample_values": [
+          "2020",
+          "2021",
+          "November 2019"
+        ]
+      },
+      {
+        "field": "target_date_normalized",
+        "occurrences": 3,
+        "coverage": 0.01,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "top_corridors_count",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "topic",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "truck_definition"
+        ]
+      },
+      {
+        "field": "total_express_routes_evaluated",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "total_routes_evaluated",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "year",
+        "occurrences": 7,
+        "coverage": 0.02,
+        "value_kind": "mixed",
+        "classification": "numeric",
+        "sample_values": [
+          "2022"
+        ]
+      }
+    ]
+  },
+  "closure_policy": "deferred",
+  "closure_signals": [
+    {
+      "field": "data_type",
+      "closure_readiness": "open",
+      "occurrences": 32,
+      "coverage": 0.08
+    },
+    {
+      "field": "source",
+      "closure_readiness": "open",
+      "occurrences": 15,
+      "coverage": 0.04
+    },
+    {
+      "field": "change_type",
+      "closure_readiness": "open",
+      "occurrences": 12,
+      "coverage": 0.03
+    },
+    {
+      "field": "existing",
+      "closure_readiness": "open",
+      "occurrences": 6,
+      "coverage": 0.02
+    },
+    {
+      "field": "proposed",
+      "closure_readiness": "open",
+      "occurrences": 6,
+      "coverage": 0.02
+    },
+    {
+      "field": "claim_type",
+      "closure_readiness": "open",
+      "occurrences": 4,
+      "coverage": 0.01
+    },
+    {
+      "field": "capital_improvements",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "coverage": 0.01
+    },
+    {
+      "field": "rail_connections",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "coverage": 0.01
+    },
+    {
+      "field": "text",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "coverage": 0.01
+    },
+    {
+      "field": "unit",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "coverage": 0.01
+    },
+    {
+      "field": "improvement_type",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "render_type",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "timeline",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.01
+    }
+  ],
+  "valid": true,
+  "schema_issues": [],
+  "warnings": [],
+  "proposal": {
+    "observation_kind": "claim",
+    "field_proposals": [
+      {
+        "field": "data_type",
+        "decision": "enum",
+        "canonical_values": [
+          "multiline",
+          "number",
+          "text"
+        ],
+        "value_mapping": [
+          {
+            "from": "multiline",
+            "to": "multiline"
+          },
+          {
+            "from": "number",
+            "to": "number"
+          },
+          {
+            "from": "text",
+            "to": "text"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "data_type_other"
+        },
+        "rationale": "3 distinct low-cardinality values; clear enumeration."
+      },
+      {
+        "field": "source",
+        "decision": "enum",
+        "canonical_values": [
+          "bus_rider_survey",
+          "business_outreach",
+          "dot_street_ambassadors_door_to_door_outreach"
+        ],
+        "value_mapping": [
+          {
+            "from": "bus rider survey",
+            "to": "bus_rider_survey"
+          },
+          {
+            "from": "business outreach",
+            "to": "business_outreach"
+          },
+          {
+            "from": "DOT Street Ambassadors door-to-door outreach",
+            "to": "dot_street_ambassadors_door_to_door_outreach"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "source_other"
+        },
+        "rationale": "3 distinct values; normalization to snake_case."
+      },
+      {
+        "field": "change_type",
+        "decision": "enum",
+        "canonical_values": [
+          "maintain_existing",
+          "new_route",
+          "no_change",
+          "reroute",
+          "route_split"
+        ],
+        "value_mapping": [
+          {
+            "from": "maintain_existing",
+            "to": "maintain_existing"
+          },
+          {
+            "from": "new_route",
+            "to": "new_route"
+          },
+          {
+            "from": "no_change",
+            "to": "no_change"
+          },
+          {
+            "from": "reroute",
+            "to": "reroute"
+          },
+          {
+            "from": "route_split",
+            "to": "route_split"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "change_type_other"
+        },
+        "rationale": "5 distinct values from a controlled vocabulary."
+      },
+      {
+        "field": "existing",
+        "decision": "enum",
+        "canonical_values": [
+          "15_or_better",
+          "30_or_better"
+        ],
+        "value_mapping": [
+          {
+            "from": "15-or-better",
+            "to": "15_or_better"
+          },
+          {
+            "from": "30-or-better",
+            "to": "30_or_better"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "existing_other"
+        },
+        "rationale": "2 distinct service-frequency thresholds."
+      },
+      {
+        "field": "proposed",
+        "decision": "enum",
+        "canonical_values": [
+          "15_or_better",
+          "8_or_better"
+        ],
+        "value_mapping": [
+          {
+            "from": "15-or-better",
+            "to": "15_or_better"
+          },
+          {
+            "from": "8-or-better",
+            "to": "8_or_better"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "proposed_other"
+        },
+        "rationale": "2 distinct proposed service-frequency thresholds."
+      },
+      {
+        "field": "claim_type",
+        "decision": "enum",
+        "canonical_values": [
+          "deployment_note",
+          "effectiveness",
+          "violation_type"
+        ],
+        "value_mapping": [
+          {
+            "from": "deployment_note",
+            "to": "deployment_note"
+          },
+          {
+            "from": "effectiveness",
+            "to": "effectiveness"
+          },
+          {
+            "from": "violation_type",
+            "to": "violation_type"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "claim_type_other"
+        },
+        "rationale": "3 distinct claim sub-types."
+      },
+      {
+        "field": "capital_improvements",
+        "decision": "enum",
+        "canonical_values": [
+          "bus_bulbs",
+          "landscaped_medians",
+          "pedestrian_improvements",
+          "pedestrian_medians"
+        ],
+        "value_mapping": [
+          {
+            "from": "bus bulbs",
+            "to": "bus_bulbs"
+          },
+          {
+            "from": "landscaped medians",
+            "to": "landscaped_medians"
+          },
+          {
+            "from": "pedestrian improvements",
+            "to": "pedestrian_improvements"
+          },
+          {
+            "from": "pedestrian medians",
+            "to": "pedestrian_medians"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "capital_improvements_other"
+        },
+        "rationale": "4 distinct improvement types; normalization."
+      },
+      {
+        "field": "rail_connections",
+        "decision": "enum",
+        "canonical_values": [
+          "lirr",
+          "metro_north"
+        ],
+        "value_mapping": [
+          {
+            "from": "LIRR",
+            "to": "lirr"
+          },
+          {
+            "from": "Metro-North",
+            "to": "metro_north"
+          },
+          {
+            "from": "Metro-North Railroad",
+            "to": "metro_north"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "rail_connections_other"
+        },
+        "rationale": "2 canonical values after merging duplicate (Metro-North variants)."
+      },
+      {
+        "field": "text",
+        "decision": "free_text",
+        "rationale": "Values are descriptive titles; field likely holds arbitrary text despite being in enum_candidates."
+      },
+      {
+        "field": "unit",
+        "decision": "enum",
+        "canonical_values": [
+          "feet"
+        ],
+        "value_mapping": [
+          {
+            "from": "feet",
+            "to": "feet"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "unit_other"
+        },
+        "rationale": "Single observed unit; open to new units."
+      },
+      {
+        "field": "improvement_type",
+        "decision": "enum",
+        "canonical_values": [
+          "all_door_boarding",
+          "tap_and_go_payment"
+        ],
+        "value_mapping": [
+          {
+            "from": "all_door_boarding",
+            "to": "all_door_boarding"
+          },
+          {
+            "from": "tap_and_go_payment",
+            "to": "tap_and_go_payment"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "improvement_type_other"
+        },
+        "rationale": "2 specific improvement types."
+      },
+      {
+        "field": "render_type",
+        "decision": "enum",
+        "canonical_values": [
+          "multiline"
+        ],
+        "value_mapping": [
+          {
+            "from": "multiline",
+            "to": "multiline"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "render_type_other"
+        },
+        "rationale": "Single observed render type; likely part of a small set."
+      },
+      {
+        "field": "timeline",
+        "decision": "free_text",
+        "rationale": "Values are time period expressions (e.g., 'late-2014/early-2015'); not stable enumeration."
+      }
+    ],
+    "key_dispositions": [
+      {
+        "key": "am_peak_minutes",
+        "disposition": "promote_field",
+        "rationale": "Numeric value for AM peak duration."
+      },
+      {
+        "key": "bus_routes_count",
+        "disposition": "promote_field",
+        "rationale": "Count of bus routes."
+      },
+      {
+        "key": "column_name",
+        "disposition": "relation_context",
+        "target": "column_analysis",
+        "rationale": "Part of dataset column metadata, not a claim property."
+      },
+      {
+        "key": "corridors_scored",
+        "disposition": "promote_field",
+        "rationale": "Count of scored corridors."
+      },
+      {
+        "key": "date_text",
+        "disposition": "promote_field",
+        "rationale": "Raw date string."
+      },
+      {
+        "key": "date_text_normalized",
+        "disposition": "promote_field",
+        "rationale": "Normalized date object."
+      },
+      {
+        "key": "express_routes_modified",
+        "disposition": "promote_field",
+        "rationale": "Count of modified express routes."
+      },
+      {
+        "key": "features",
+        "disposition": "promote_field",
+        "rationale": "Array of features provided."
+      },
+      {
+        "key": "field_name",
+        "disposition": "relation_context",
+        "target": "column_analysis",
+        "rationale": "Part of dataset column metadata."
+      },
+      {
+        "key": "largest_value",
+        "disposition": "promote_field",
+        "rationale": "Largest numeric value in context."
+      },
+      {
+        "key": "location",
+        "disposition": "promote_field",
+        "rationale": "Location description."
+      },
+      {
+        "key": "location_normalized",
+        "disposition": "promote_field",
+        "rationale": "Normalized location object."
+      },
+      {
+        "key": "map_features",
+        "disposition": "promote_field",
+        "rationale": "Map features object."
+      },
+      {
+        "key": "midday_minutes",
+        "disposition": "promote_field",
+        "rationale": "Midday duration in minutes."
+      },
+      {
+        "key": "new_express_routes_added",
+        "disposition": "promote_field",
+        "rationale": "Count of new express routes."
+      },
+      {
+        "key": "new_routes_added",
+        "disposition": "promote_field",
+        "rationale": "Array of new routes."
+      },
+      {
+        "key": "new_streets",
+        "disposition": "promote_field",
+        "rationale": "Array of new streets."
+      },
+      {
+        "key": "new_terminal",
+        "disposition": "promote_field",
+        "rationale": "New terminal name."
+      },
+      {
+        "key": "non_null_count",
+        "disposition": "relation_context",
+        "target": "column_analysis",
+        "rationale": "Part of dataset column metadata."
+      },
+      {
+        "key": "null_count",
+        "disposition": "relation_context",
+        "target": "column_analysis",
+        "rationale": "Part of dataset column metadata."
+      },
+      {
+        "key": "pm_peak_minutes",
+        "disposition": "promote_field",
+        "rationale": "PM peak duration in minutes."
+      },
+      {
+        "key": "policy_type",
+        "disposition": "promote_field",
+        "rationale": "Policy type string."
+      },
+      {
+        "key": "position",
+        "disposition": "relation_context",
+        "target": "column_analysis",
+        "rationale": "Column order position in dataset."
+      },
+      {
+        "key": "route",
+        "disposition": "promote_field",
+        "rationale": "Single route identifier."
+      },
+      {
+        "key": "route_types",
+        "disposition": "promote_field",
+        "rationale": "Route types object."
+      },
+      {
+        "key": "routes",
+        "disposition": "promote_field",
+        "rationale": "Array of route identifiers."
+      },
+      {
+        "key": "routes_modified",
+        "disposition": "promote_field",
+        "rationale": "Count of modified routes."
+      },
+      {
+        "key": "sbs_connections",
+        "disposition": "promote_field",
+        "rationale": "Array of SBS connections."
+      },
+      {
+        "key": "scope",
+        "disposition": "promote_field",
+        "rationale": "Scope description."
+      },
+      {
+        "key": "service_type",
+        "disposition": "promote_field",
+        "rationale": "Service type identifier."
+      },
+      {
+        "key": "service_window",
+        "disposition": "promote_field",
+        "rationale": "Service window string."
+      },
+      {
+        "key": "strategies",
+        "disposition": "promote_field",
+        "rationale": "Array of strategy names."
+      },
+      {
+        "key": "streets",
+        "disposition": "promote_field",
+        "rationale": "Array of street names."
+      },
+      {
+        "key": "subject",
+        "disposition": "promote_field",
+        "rationale": "Subject or topic of claim."
+      },
+      {
+        "key": "subway_lines",
+        "disposition": "promote_field",
+        "rationale": "Array of subway line identifiers."
+      },
+      {
+        "key": "subway_lines_count",
+        "disposition": "promote_field",
+        "rationale": "Count of subway lines."
+      },
+      {
+        "key": "system",
+        "disposition": "promote_field",
+        "rationale": "System name."
+      },
+      {
+        "key": "tactics",
+        "disposition": "promote_field",
+        "rationale": "Array of tactic names."
+      },
+      {
+        "key": "target_date",
+        "disposition": "promote_field",
+        "rationale": "Target date string."
+      },
+      {
+        "key": "target_date_normalized",
+        "disposition": "promote_field",
+        "rationale": "Normalized target date object."
+      },
+      {
+        "key": "top_corridors_count",
+        "disposition": "promote_field",
+        "rationale": "Count of top corridors."
+      },
+      {
+        "key": "topic",
+        "disposition": "promote_field",
+        "rationale": "Topic string."
+      },
+      {
+        "key": "total_express_routes_evaluated",
+        "disposition": "promote_field",
+        "rationale": "Count of express routes evaluated."
+      },
+      {
+        "key": "total_routes_evaluated",
+        "disposition": "promote_field",
+        "rationale": "Count of total routes evaluated."
+      },
+      {
+        "key": "year",
+        "disposition": "promote_field",
+        "rationale": "Year value."
+      }
+    ],
+    "notes": "Keys under 'column_analysis' (column_name, field_name, non_null_count, null_count, position) are dataset metadata and should be modeled as a nested relation rather than top-level claim fields. All other additional keys are promoted as top-level fields pending further data."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T23-05-26-750Z_3564593-c48f9dc7_schema-proposal-run_claim",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-05-26-751Z_2026-06-08T23-05-26-750Z_3564593-c48f9dc7_schema-proposal-run_claim.jsonl"
+}

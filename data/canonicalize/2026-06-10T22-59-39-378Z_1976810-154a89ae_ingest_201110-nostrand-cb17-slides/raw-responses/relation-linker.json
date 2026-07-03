@@ -1,0 +1,784 @@
+{
+  "run_id": "2026-06-10T22-59-39-378Z_1976810-154a89ae_ingest_201110-nostrand-cb17-slides",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T02:05:55.278Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "rel-b44-weekday-ridership",
+        "local_observation_id": "metric_b44_weekday_ridership_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_b44-sbs",
+            "object_id": "metric_b44-weekday-ridership-201110",
+            "description": "B44 weekday ridership of 42,000 presented in Nostrand/Rogers SBS project slides",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p002_c0004",
+                "source_quote": "• 42,000 weekday riders – 7th busiest bus route in city • 9,500 people board in CB 17 • Buses travel at an average speed of 7-8 mph"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric describes the B44 bus route's weekday ridership, cited in the CB17 presentation about the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p002_c0004",
+            "source_quote": "• 42,000 weekday riders – 7th busiest bus route in city • 9,500 people board in CB 17 • Buses travel at an average speed of 7-8 mph"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-b44-average-speed",
+        "local_observation_id": "metric_b44_average_speed_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_b44-sbs",
+            "object_id": "metric_b44-average-speed-201110",
+            "description": "B44 buses travel at average speed of 7-8 mph",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p002_c0004",
+                "source_quote": "• 42,000 weekday riders – 7th busiest bus route in city • 9,500 people board in CB 17 • Buses travel at an average speed of 7-8 mph"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric describes the B44 bus route's average speed, cited in the CB17 presentation about the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p002_c0004",
+            "source_quote": "• 42,000 weekday riders – 7th busiest bus route in city • 9,500 people board in CB 17 • Buses travel at an average speed of 7-8 mph"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-cb17-boardings-b44",
+        "local_observation_id": "metric_cb17_boardings_b44_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_b44-sbs",
+            "object_id": "metric_cb17-boardings-b44-201110",
+            "description": "9,500 people board the B44 in CB 17",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p002_c0004",
+                "source_quote": "• 42,000 weekday riders – 7th busiest bus route in city • 9,500 people board in CB 17 • Buses travel at an average speed of 7-8 mph"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric describes B44 boardings in CB 17, cited in the CB17 presentation about the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p002_c0004",
+            "source_quote": "• 42,000 weekday riders – 7th busiest bus route in city • 9,500 people board in CB 17 • Buses travel at an average speed of 7-8 mph"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-residents-quarter-mile",
+        "local_observation_id": "metric_residents_within_quarter_mile_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "metric_residents-within-quarter-mile-201110",
+            "description": "300,000 residents within 1/4 mile of Nostrand/Rogers corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p002_c0006",
+                "source_quote": "• 300,000 residents • 62% of households do not own a car (56% in CB 17) • 60% of residents commute by transit (59% in CB 17, compared to 30% by car, truck, or van)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric describes corridor-level demographics for Nostrand Avenue, presented in the CB17 slides.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p002_c0006",
+            "source_quote": "• 300,000 residents • 62% of households do not own a car (56% in CB 17) • 60% of residents commute by transit (59% in CB 17, compared to 30% by car, truck, or van)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-households-no-car",
+        "local_observation_id": "metric_households_no_car_quarter_mile_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "metric_households-no-car-quarter-mile-201110",
+            "description": "62% of households within 1/4 mile of corridor do not own a car",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p002_c0006",
+                "source_quote": "• 300,000 residents • 62% of households do not own a car (56% in CB 17) • 60% of residents commute by transit (59% in CB 17, compared to 30% by car, truck, or van)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric describes corridor-level demographics for Nostrand Avenue, presented in the CB17 slides.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p002_c0006",
+            "source_quote": "• 300,000 residents • 62% of households do not own a car (56% in CB 17) • 60% of residents commute by transit (59% in CB 17, compared to 30% by car, truck, or van)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-transit-commute",
+        "local_observation_id": "metric_transit_commute_quarter_mile_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "metric_transit-commute-quarter-mile-201110",
+            "description": "60% of residents within 1/4 mile commute by transit",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p002_c0006",
+                "source_quote": "• 300,000 residents • 62% of households do not own a car (56% in CB 17) • 60% of residents commute by transit (59% in CB 17, compared to 30% by car, truck, or van)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric describes corridor-level demographics for Nostrand Avenue, presented in the CB17 slides.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p002_c0006",
+            "source_quote": "• 300,000 residents • 62% of households do not own a car (56% in CB 17) • 60% of residents commute by transit (59% in CB 17, compared to 30% by car, truck, or van)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-sbs-faster-trips",
+        "local_observation_id": "metric_sbs_faster_trips_15_20_pct_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "metric_sbs-faster-trips-15-20-pct-201110",
+            "description": "Existing SBS routes achieved 15-20% faster trips, presented as evidence in Nostrand/Rogers SBS slides",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p006_c0003",
+                "source_quote": "• 15% to 20% faster trips • Over 90% customer satisfaction • 10% ridership increase on the entire route, including SBS and local"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about existing SBS route benefits, presented as supporting evidence for the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p006_c0003",
+            "source_quote": "• 15% to 20% faster trips • Over 90% customer satisfaction • 10% ridership increase on the entire route, including SBS and local"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-sbs-customer-satisfaction",
+        "local_observation_id": "metric_sbs_customer_satisfaction_90_pct_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "metric_sbs-customer-satisfaction-90-pct-201110",
+            "description": "Existing SBS routes achieved over 90% customer satisfaction, presented as evidence in Nostrand/Rogers SBS slides",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p006_c0003",
+                "source_quote": "• 15% to 20% faster trips • Over 90% customer satisfaction • 10% ridership increase on the entire route, including SBS and local"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about existing SBS route benefits, presented as supporting evidence for the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p006_c0003",
+            "source_quote": "• 15% to 20% faster trips • Over 90% customer satisfaction • 10% ridership increase on the entire route, including SBS and local"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-sbs-ridership-increase",
+        "local_observation_id": "metric_sbs_ridership_increase_10_pct_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "metric_sbs-ridership-increase-10-pct-201110",
+            "description": "Existing SBS routes saw 10% ridership increase, presented as evidence in Nostrand/Rogers SBS slides",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p006_c0003",
+                "source_quote": "• 15% to 20% faster trips • Over 90% customer satisfaction • 10% ridership increase on the entire route, including SBS and local"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about existing SBS route benefits, presented as supporting evidence for the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p006_c0003",
+            "source_quote": "• 15% to 20% faster trips • Over 90% customer satisfaction • 10% ridership increase on the entire route, including SBS and local"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-merchant-existing-situation",
+        "local_observation_id": "metric_merchant_delivery_zone_existing_42pct_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "metric_merchant-delivery-zone-existing-42pct-201110",
+            "description": "42% of merchants prefer existing delivery situation, from mail-in survey presented in Nostrand/Rogers SBS slides",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p017_c0003",
+                "source_quote": "Delivery Zone Preference Percentage Prefer the existing situation 42% Delivery zone around the corner, all day 8% A delivery zone down the block or across the street, all day 11% Delivery zone in front of the store, 2 or 3 hours per day 39%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric from merchant survey about delivery zone preferences, presented as part of the Nostrand/Rogers SBS project outreach.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p017_c0003",
+            "source_quote": "Delivery Zone Preference Percentage Prefer the existing situation 42% Delivery zone around the corner, all day 8% A delivery zone down the block or across the street, all day 11% Delivery zone in front of the store, 2 or 3 hours per day 39%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-merchant-front-delivery",
+        "local_observation_id": "metric_merchant_delivery_zone_front_2_3hr_39pct_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "metric_merchant-delivery-zone-front-2-3hr-39pct-201110",
+            "description": "39% of merchants prefer delivery zone in front of store 2-3 hrs/day, from mail-in survey",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p017_c0003",
+                "source_quote": "Delivery Zone Preference Percentage Prefer the existing situation 42% Delivery zone around the corner, all day 8% A delivery zone down the block or across the street, all day 11% Delivery zone in front of the store, 2 or 3 hours per day 39%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric from merchant survey about delivery zone preferences, presented as part of the Nostrand/Rogers SBS project outreach.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p017_c0003",
+            "source_quote": "Delivery Zone Preference Percentage Prefer the existing situation 42% Delivery zone around the corner, all day 8% A delivery zone down the block or across the street, all day 11% Delivery zone in front of the store, 2 or 3 hours per day 39%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-deliveries-midday",
+        "local_observation_id": "metric_deliveries_midday_65pct_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "metric_deliveries-midday-65pct-201110",
+            "description": "65% of deliveries occur midday 10 AM to 4 PM, from mail-in merchant survey",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p016_c0002",
+                "source_quote": "65% of deliveries occur midday, 10 AM to 4 PM"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric from mail-in merchant survey about delivery timing, presented as part of the Nostrand/Rogers SBS project outreach.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p016_c0002",
+            "source_quote": "65% of deliveries occur midday, 10 AM to 4 PM"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-pedestrians-interviewed",
+        "local_observation_id": "metric_1186_pedestrians_interviewed_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "metric_1186-pedestrians-interviewed-201110",
+            "description": "1,186 pedestrians interviewed at 4 locations on Nostrand Ave for shopper survey",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p014_c0002",
+                "source_quote": "1,186 pedestrians interviewed at 4 locations on Nostrand Ave"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric from merchant and shopper surveys, presented as part of the Nostrand/Rogers SBS project outreach.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p014_c0002",
+            "source_quote": "1,186 pedestrians interviewed at 4 locations on Nostrand Ave"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-15-public-meetings",
+        "local_observation_id": "claim_15_public_meetings_3_years_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "claim_15-public-meetings-3-years-201110",
+            "description": "15 public meetings held in the last 3 years about Nostrand & Rogers SBS",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p009_c0002",
+                "source_quote": "15 Public Meetings in the last 3 years about Nostrand & Rogers SBS"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim about community planning process for the Nostrand/Rogers SBS project, explicitly naming the project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p009_c0002",
+            "source_quote": "15 Public Meetings in the last 3 years about Nostrand & Rogers SBS"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-4-cac-2-open-houses",
+        "local_observation_id": "claim_4_cac_meetings_2_open_houses_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "claim_4-cac-meetings-2-open-houses-201110",
+            "description": "4 CAC meetings and 2 Public Open Houses held for Nostrand/Rogers SBS to date",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p009_c0003",
+                "source_quote": "4 Community Advisory Committee meetings and 2 Public Open Houses to date"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim about community planning process for the Nostrand/Rogers SBS project, presented in the CB17 slides.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p009_c0003",
+            "source_quote": "4 Community Advisory Committee meetings and 2 Public Open Houses to date"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-fare-evasion-declined",
+        "local_observation_id": "claim_fare_evasion_declined_bx12_m15_sbs_201110",
+        "decision": "skip",
+        "rationale": "Claim explicitly names Bx12 SBS and M15 SBS routes, not the Nostrand/Rogers SBS project. Already has existing has_claim relations to route_bx12-plus and route_m15-sbs. No new relation to propose.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "• Inspector teams conduct random checks of buses • $100 fine for passengers without a receipt • Fare evasion on Bx12 SBS and M15 SBS declined after pre-payment introduced"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-traffic-flatbush-improves",
+        "local_observation_id": "claim_traffic_flatbush_improves_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "claim_traffic-flatbush-improves-201110",
+            "description": "Traffic analysis claim that Flatbush Ave traffic improves due to no left turns and new curb bus lane",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p013_c0004",
+                "source_quote": "Traffic at Flatbush Ave improves because no left turns and new curb bus lane"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim is a traffic analysis result for the Nostrand/Rogers SBS project, explicitly about the project's design.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p013_c0004",
+            "source_quote": "Traffic at Flatbush Ave improves because no left turns and new curb bus lane"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-traffic-unchanged",
+        "local_observation_id": "claim_traffic_general_unchanged_201110_v2",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "claim_traffic-general-unchanged-201110-v2",
+            "description": "Traffic analysis claim that peak direction traffic generally unchanged due to 2 general traffic lanes plus bus/right turn lane",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p013_c0002",
+                "source_quote": "Peak direction generally unchanged because 2 general traffic lanes maintained plus bus/right turn lane"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim is a traffic analysis result for the Nostrand/Rogers SBS corridor, part of the project's design assessment.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p013_c0002",
+            "source_quote": "Peak direction generally unchanged because 2 general traffic lanes maintained plus bus/right turn lane"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-off-peak-traffic",
+        "local_observation_id": "claim_off_peak_traffic_same_faster_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "claim_off-peak-traffic-same-faster-201110",
+            "description": "Traffic analysis claim that off-peak traffic is same or faster due to new left curb travel lane",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p013_c0003",
+                "source_quote": "Off-peak traffic is the same or faster because of new left curb travel lane"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim is a traffic analysis result for the Nostrand/Rogers SBS corridor, part of the project's design assessment.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p013_c0003",
+            "source_quote": "Off-peak traffic is the same or faster because of new left curb travel lane"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-midday-traffic-slower",
+        "local_observation_id": "claim_midday_traffic_slightly_slower_201110",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "claim_midday-traffic-slightly-slower-201110",
+            "description": "Traffic analysis claim that midday traffic would be slightly slower to preserve parking",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p013_c0005",
+                "source_quote": "Midday traffic would be slightly slower because through and left traffic uses one lane, so that parking is preserved"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim is a traffic analysis result for the Nostrand/Rogers SBS corridor, part of the project's design assessment.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p013_c0005",
+            "source_quote": "Midday traffic would be slightly slower because through and left traffic uses one lane, so that parking is preserved"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-start-of-service-late-2012",
+        "local_observation_id": "event_start_of_service_late_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_start-of-service-late-2012",
+            "description": "Start of SBS Service on Nostrand/Rogers corridor – Late 2012",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p019_c0002",
+                "source_quote": "• Community Board Meetings – Fall 2011 • Final Design Complete – December 2011 • Start of Construction – Mid 2012 • Start of Service – Late 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "Timeline event for the Nostrand/Rogers SBS project, listed in the Next Steps slide of the CB17 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p019_c0002",
+            "source_quote": "• Community Board Meetings – Fall 2011 • Final Design Complete – December 2011 • Start of Construction – Mid 2012 • Start of Service – Late 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-start-of-construction",
+        "local_observation_id": "event_start_of_construction_mid_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_start-of-construction-mid-2012",
+            "description": "Start of Construction for Nostrand/Rogers SBS – Mid 2012",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p019_c0002",
+                "source_quote": "• Community Board Meetings – Fall 2011 • Final Design Complete – December 2011 • Start of Construction – Mid 2012 • Start of Service – Late 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "Timeline event for the Nostrand/Rogers SBS project, listed in the Next Steps slide of the CB17 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p019_c0002",
+            "source_quote": "• Community Board Meetings – Fall 2011 • Final Design Complete – December 2011 • Start of Construction – Mid 2012 • Start of Service – Late 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-final-design-complete",
+        "local_observation_id": "event_final_design_complete_dec_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_final-design-complete-dec-2011_2",
+            "description": "Final Design Complete for Nostrand/Rogers SBS – December 2011",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p019_c0002",
+                "source_quote": "• Community Board Meetings – Fall 2011 • Final Design Complete – December 2011 • Start of Construction – Mid 2012 • Start of Service – Late 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "Timeline event for the Nostrand/Rogers SBS project, listed in the Next Steps slide of the CB17 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p019_c0002",
+            "source_quote": "• Community Board Meetings – Fall 2011 • Final Design Complete – December 2011 • Start of Construction – Mid 2012 • Start of Service – Late 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-cb-meetings-fall-2011",
+        "local_observation_id": "event_community_board_meetings_fall_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_community-board-meetings-fall-2011_3",
+            "description": "Community Board Meetings for Nostrand/Rogers SBS – Fall 2011",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p019_c0002",
+                "source_quote": "• Community Board Meetings – Fall 2011 • Final Design Complete – December 2011 • Start of Construction – Mid 2012 • Start of Service – Late 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "Timeline event for the Nostrand/Rogers SBS project, listed in the Next Steps slide of the CB17 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p019_c0002",
+            "source_quote": "• Community Board Meetings – Fall 2011 • Final Design Complete – December 2011 • Start of Construction – Mid 2012 • Start of Service – Late 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-cac-4-open-house-2",
+        "local_observation_id": "event_cac_meeting_4_open_house_2_winter_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_cac-meeting-4-open-house-2-winter-2011",
+            "description": "CAC #4 & Open House #2 – Winter 2011, from project timeline",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p010_c0002",
+                "source_quote": "2010 2011 2012 Winter | Spring | Summer | Fall Winter | Spring | Summer | Fall Winter | Spring | Summer | Fall CAC Meetings # 2 & 3 CAC # 4 & Open House # 2 Start of SBS Service Public Open House #1 Final Design Construction"
+              }
+            ]
+          }
+        ],
+        "rationale": "Timeline event shown in the Nostrand/Rogers SBS project timeline diagram on page 10 of the CB17 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p010_c0002",
+            "source_quote": "2010 2011 2012 Winter | Spring | Summer | Fall Winter | Spring | Summer | Fall Winter | Spring | Summer | Fall CAC Meetings # 2 & 3 CAC # 4 & Open House # 2 Start of SBS Service Public Open House #1 Final Design Construction"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-cac-2-3-winter-2010",
+        "local_observation_id": "event_cac_meeting_2_3_winter_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_cac-meeting-2-3-winter-2010",
+            "description": "CAC Meetings #2 & #3 – Winter 2010, from project timeline",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p010_c0002",
+                "source_quote": "2010 2011 2012 Winter | Spring | Summer | Fall Winter | Spring | Summer | Fall Winter | Spring | Summer | Fall CAC Meetings # 2 & 3 CAC # 4 & Open House # 2 Start of SBS Service Public Open House #1 Final Design Construction"
+              }
+            ]
+          }
+        ],
+        "rationale": "Timeline event shown in the Nostrand/Rogers SBS project timeline diagram on page 10 of the CB17 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p010_c0002",
+            "source_quote": "2010 2011 2012 Winter | Spring | Summer | Fall Winter | Spring | Summer | Fall Winter | Spring | Summer | Fall CAC Meetings # 2 & 3 CAC # 4 & Open House # 2 Start of SBS Service Public Open House #1 Final Design Construction"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-public-open-house-1",
+        "local_observation_id": "event_public_open_house_1_spring_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_public-open-house-1-spring-2010_2",
+            "description": "Public Open House #1 – Spring 2010, from project timeline",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p010_c0002",
+                "source_quote": "2010 2011 2012 Winter | Spring | Summer | Fall Winter | Spring | Summer | Fall Winter | Spring | Summer | Fall CAC Meetings # 2 & 3 CAC # 4 & Open House # 2 Start of SBS Service Public Open House #1 Final Design Construction"
+              }
+            ]
+          }
+        ],
+        "rationale": "Timeline event shown in the Nostrand/Rogers SBS project timeline diagram on page 10 of the CB17 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p010_c0002",
+            "source_quote": "2010 2011 2012 Winter | Spring | Summer | Fall Winter | Spring | Summer | Fall Winter | Spring | Summer | Fall CAC Meetings # 2 & 3 CAC # 4 & Open House # 2 Start of SBS Service Public Open House #1 Final Design Construction"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-final-design-spring-2011",
+        "local_observation_id": "event_final_design_spring_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_final-design-spring-2011_2",
+            "description": "Final Design phase – Spring 2011, from project timeline",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p010_c0002",
+                "source_quote": "2010 2011 2012 Winter | Spring | Summer | Fall Winter | Spring | Summer | Fall Winter | Spring | Summer | Fall CAC Meetings # 2 & 3 CAC # 4 & Open House # 2 Start of SBS Service Public Open House #1 Final Design Construction"
+              }
+            ]
+          }
+        ],
+        "rationale": "Timeline event shown in the Nostrand/Rogers SBS project timeline diagram on page 10 of the CB17 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p010_c0002",
+            "source_quote": "2010 2011 2012 Winter | Spring | Summer | Fall Winter | Spring | Summer | Fall Winter | Spring | Summer | Fall CAC Meetings # 2 & 3 CAC # 4 & Open House # 2 Start of SBS Service Public Open House #1 Final Design Construction"
+          }
+        ]
+      }
+    ],
+    "packet_id": "relation-linker"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-01-46-074Z_2111393-574607d8_canonicalize_2026-06-10t22-59-39-378z-1976810-154a89ae-ingest-201110-nostrand-cb17-slides-relation-linker"
+}

@@ -1,0 +1,216 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-146931"
+record_kind: "source"
+display_name: "source_meeting_doc_146931"
+source_id: "meeting_doc_146931"
+source_ids:
+  - "meeting_doc_146931"
+local_observation_id: "source_meeting_doc_146931"
+local_observation_ids:
+  - "source_meeting_doc_146931"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T18:16:31.437Z"
+submission_ids:
+  - "sub_790b6014090b518a"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting minutes"
+  date: "2024-06-24"
+  date_normalized:
+    confidence: "submitted_iso"
+    normalized_date: "2024-06-24"
+    precision: "day"
+    raw_text: "2024-06-24"
+  published_date_normalized: "2024-06-24"
+  published_date_precision: "day"
+  title: "Minutes of the Regular Meeting Joint Long Island Rail Road and Metro-North Railroad Committees Monday, June 24, 2024"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_146931#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "meeting_doc_146931"
+    source_path: "raw/sources/meeting_doc_146931/blocks.jsonl"
+    text_sha256: "sha256:19d5230f08d5b9086e84ddd18cec5e98763be04454f5fa95f808c470fb7a35a8"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_146931#p001_c0002"
+    page_number: 1
+    role: "location"
+    source_id: "meeting_doc_146931"
+    source_path: "raw/sources/meeting_doc_146931/blocks.jsonl"
+    text_sha256: "sha256:46620b851e01b018723702b510b8817bfc63846c75c5788f215654a7bcad6a3f"
+    text_source: "raw_text"
+---
+
+# Minutes
+
+source_id: meeting_doc_146931
+citation: cite block ids exactly as shown in square brackets
+document: 126 block(s)
+
+## Page 1
+
+### [p001_c0001] Minutes of the Regular Meeting Joint Long Island Rail Road and Metro-North Railroad Committees Monday, June 24, 2024
+[p001_c0002] Meeting held at 2 Broadway – 20 th Floor New York, New York 10004 9:30 a.m.
+[p001_c0003] The following Committee Members were present in person:
+[p001_c0004] Hon. Marc Herbst, Co-Chair Hon. Blanca López, Co-Chair Hon. Gerard Bringmann Hon. Norman Brown Hon. Samuel Chu Hon. Michael Fleischer Hon. Daniel Garodnick Hon. Randolph Glucksman Hon. David Mack Hon. Lisa Sorin Hon. Vincent Tessitore, Jr. Hon. Neal Zuckerman
+[p001_c0005] The following Committee Members were not present:
+[p001_c0006] Hon. Midori Valdivia
+### [p001_c0007] Representing Metro-North Railroad:
+[p001_c0008] Justin Vonashek – Executive Vice President & Chief Operating Officer Shelley Prettyman – Vice President, System Safety Nathan Gilbertson – Vice President, Operations Support & Organizational Resiliency & Chief Strategic Officer Yvonne Hill-Donald – Chief Administrative Officer Michael Metz – Chief Security Officer, Security
+### [p001_c0009] Representing Long Island Rail Road:
+[p001_c0010] Robert Free – President Thomas Kost – Senior Vice President, Operations Lori Ebbighausen – Vice President, Corporate Safety Paul Dietlin – Vice President, Maintenance of Way Haley Stein – Vice President, General Counsel & Secretary (also representing Metro-North) Theresa Dorsey – Chief Stations Officer
+### [p001_c0011] Representing MTA Police Department:
+[p001_c0012] John J. Mueller – Chief of Police
+
+## Page 2
+
+### [p002_c0001] 2 | Joint LIRR and Metro-North Committees Meeting Minutes June 24, 2024
+### [p002_c0002] Representing MTA Construction and Development:
+[p002_c0003] Jamie Torres-Springer – President
+[p002_c0004] Anthony Tufano – Senior Vice President, Railroads Business Unit
+### [p002_c0005] Representing MTA Safety and Security Department:
+[p002_c0006] Carl Hamann – Acting Chief Safety Officer
+[p002_c0007] The members of the Metro-North Railroad (“Metro-North”) Committee met jointly with the members of the Long Island Rail Road (“LIRR”) Committee.
+### [p002_c0008] 1. OPENING MEETING:
+[p002_c0009] Co-Chair Herbst called the joint meeting to order.
+### [p002_c0010] 2. PUBLIC COMMENTS:
+[p002_c0011] The following public speakers commented:
+[p002_c0012] Christopher D. Greif (in person) expressed disappointment in elected officials for not moving forward to obtain funding for seniors and people with disabilities.
+[p002_c0013] Jesse Figueroa (in person) stated disappointment in Governor Hochul’s decision to postpone congestion pricing.
+[p002_c0014] Andy Pollack, Passengers United (via video) stated that LIRR should obtain alternative funding to continue the projects at Hollis Station and Forest Hills Station.
+[p002_c0015] Aleta Dupree, Team Folds (via audio) expressed appreciation for the increased ridership in recent reports on both railroads, suggested buying electricity in bulk as huge consumers of electricity, and thanked the MTA for the diversity reports showing respect for diversity.
+[p002_c0016] Charlton D’Souza, Passengers United President (via video) complained of the stalling of the projects at Hollis Station and Forest Hills Station due to the financial mismanagement and debts of the MTA.
+[p002_c0017] Joseph Morales (in person) stated that he is pleased to see procurements for Metro-North and LIRR that invest in technology such as the Continuous Work Platform (CWP); requested additional negotiations be performed to ensure cybersecurity and try harder to locate additional bidders for these contracts; stated that the LIRR See It, Scan It, Say It program for station bathroom maintenance should be utilized throughout the MTA system.
+[p002_c0018] Murray Bodin, Concerned Grandparents (in person) stated that there needs to be “don’t block the box” safety markings at railroad grade crossings.
+[p002_c0019] Brian Fritsch, PCAC Associate Director (in person) spoke of the recent pause of Congestion Pricing causing serious impact to future Metro-North and LIRR capital plans and urged all MTA Board Members to speak up for commuter rail riders.
+[p002_c0020] Iris Kelley (in person) stated that while there have been some improvements, there is still work to be done to improve the transfers in Jamaica to and from Brooklyn.
+
+## Page 3
+
+### [p003_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 3 June 24, 2024
+[p003_c0002] Jason Anthony, LIRR ADA Task Force (in person) urged everyone to contact their elected officials regarding funding for accessibility on the railroads which would have come from Congestion Pricing.
+[p003_c0003] The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of the public comments.
+### [p003_c0004] 3. APPROVAL OF MINUTES:
+[p003_c0005] Upon motion duly made and seconded, the Committee approved the Railroads' portion of the minutes from the May 20, 2024 meeting of the Committee of the Whole, which was comprised of the New York City Transit Authority and MTA Bus Committee, the Joint Long Island Rail Road and Metro-North Railroad Committee and the Capital Program Committee. 1
+### [p003_c0006] 4. METRO-NORTH AND LIRR 2024 WORK PLANS:
+[p003_c0007] There were no changes to the LIRR or Metro-North Work Plans. The 2024 Metro-North and LIRR Work Plans are filed with the records of this meeting.
+### [p003_c0008] 5. METRO-NORTH OPERATING AND PRESIDENT'S REPORT:
+[p003_c0009] Metro-North Executive Vice President & Chief Operating Officer Justin Vonashek ("Executive Vice President Vonashek") presented the combined President's and Operating Reports in the absence of President Rinaldi.
+[p003_c0010] Executive Vice President Vonashek reported that Metro-North's service delivery rate remains at 99.9% in May. Systemwide on-time performance ("OTP") for May was 98.3%, which is above the goal of 94%. Year-to-date ("YTD") OTP was 98.6%.
+[p003_c0011] Executive Vice President Vonashek stated that service remains strong. Metro-North served 5.9 million customers in May, which is an increase of 5.9% from April and 10.1% from May 2023. Average weekday ridership rose 4.7% and average weekend ridership rose 5.4%. Metro-North attained a new ridership record last Tuesday with 242,116 customers. Tuesday-Thursday ridership also broke records with an average of 227,619 riders. Father's Day June 16 also marked the highest Sunday ridership with more than 109,000 riders.
+[p003_c0012] Executive Vice President Vonashek reported on the Park Avenue Viaduct project, which kicked into high gear on the weekend of June 8. MTA Construction & Development successfully replaced the first segment of the Park Avenue Viaduct, the 4-track elevated structure between the Harlem River and 97th Street. Executive Vice President Vonashek was pleased to see the project
+[p003_c0013] _1 The overall meeting minutes were approved by the Committee of the Whole._
+
+## Page 4
+
+### [p004_c0001] 4 | Joint LIRR and Metro-North Committees Meeting Minutes June 24, 2024
+[p004_c0002] moving forward without impact to customers. Another three spans were successfully replaced this weekend.
+[p004_c0003] Executive Vice President Vonashek expressed Metro-North's unwavering commitment to safety. Metro-North was awarded two Gold Awards from American Public Transportation Association (APTA) Rail, one for Rail Safety and one for Rail Emergency Management. Metro-North won the safety award due to its data optimization as part of the Confidential Close-Call Reporting System (C 3 RS). The emergency management safety award resulted from Metro-North's Emergency Management Task Force, an interdepartmental group which convenes during operational emergencies. A brief video was shown regarding the APTA awards.
+[p004_c0004] Executive Vice President Vonashek provided an update to the Ferry Pilot Program that has been running for the past several weekends operating a ferry service connecting Haverstraw and Rockland County with Ossining, Westchester County and Hudson Line trains. The service has been in operation for the last twenty years on weekdays and the new pilot program began this year to gauge the potential demand for weekend service. Ridership increased from 280 riders in the first weekend to about 800 riders.
+[p004_c0005] Executive Vice President Vonashek also advised that as announced by New Jersey Transit (NJT), an increase in NJT fares will be effective on July 1. Metro-North is working with NJT on the fare amounts for the Port Jervis and Pascack Valley Lines and more details will follow.
+[p004_c0006] Executive Vice President Vonashek announced that they will begin highlighting railroad "All-Stars" at Committee meetings to recognize employees going above and beyond to serve their customers. They will alternate between the railroads depending on which agency has the lead each month. This month, Metro-North is recognizing a group of employees from the Power Department, who worked above and beyond to ensure the continuation of service during three major power incidents. Executive Vice President Vonashek recognized Steve Walsh, Deputy Chief of Power Systems, William Lockery, Assistant Deputy Director, Fred Merkel, Assistant Director New Haven Catenary Department, Michael McConnell, Supervisor New Haven Catenary Department, and Carl Passaro, Foreman New Haven Catenary Department as "All Stars" and presented certificates to each of them.
+[p004_c0007] In response to a question from Board Member Brown regarding the arrests and crime statistics in the April and May report, Chief Mueller stated that due to increased enforcement of fare evasion, summonses and arrests have resulted. The officers have deployed new technology such as portable fingerprint scanners.
+[p004_c0008] The complete presentation and Operating Report are filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of Executive Vice President Vonashek's remarks.
+
+## Page 5
+
+### [p005_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 5 June 24, 2024
+### [p005_c0002] 6. LIRR PRESIDENT’S REPORT:
+[p005_c0003] LIRR President Rob Free (“President Free”) reported that May’s ridership is the highest since COVID. In May, there were over 6.5 million customers, an increase of 15.6% compared to May last year and YTD increased by 17.9% compared to last year. Monthly ticket purchases increased by 20.9% over May of last year. There is an increase of 7% ridership compared to last month, which is 400,000 customers in a single month. Non-commutation ridership is rising, 23.2% compared to May 2024, which marks nine months in a row that ridership surpassed 2019 non-commutation ridership. Reverse peak ridership increased 16% in the AM, and increased 25% in PM, an overall increase of 22% in peak ridership compared to January 2024. June 5 was the best post-COVID single-day ridership with 264,512 riders and nine of the ten highest post-COVID ridership days have all occurred between May 14 and June 20. The highest weekly ridership with over 1.53 million customers occurred the week of June 3.
+[p005_c0004] President Free stated that May’s on-time performance (“OTP”) was 95.8%, a month in which LIRR began its summer service and saw an increase in events requiring additional service, especially at Forest Hills Station.
+[p005_c0005] President Free reported that LIRR carried over 31,000 customers to the recent Men’s Cricket World Cup event safely and reliably. President Free thanked the operations team, including Superintendent East End Operations, Scott Petraglia, for their work. President Free emphasized that this service would not have been possible without Third Track and Grand Central Madison. President Free thanked Board Member Mack and NICE Bus President Jack Khzouz for their assistance, planning and teamwork.
+[p005_c0006] President Free stated that LIRR remains focused on “safety, reliability, and the customer experience.” As a result, LIRR has recently implemented a new way to get customer feedback on station bathrooms. Customers can now report problems in real time directly to LIRR station cleaning department for attention. Chief Stations Officer Theresa Dorsey will present an overview later this meeting.
+[p005_c0007] On June 10, LIRR debuted the new elevator and ADA related improvements at Amityville, the second of four LIRR stations that became accessible this year on the Babylon Branch. Lindenhurst and Massapequa Park are next. President Free thanked MTA Construction and Development and the ADA advocates who joined in the goal of making all 126 stations accessible and championing the cause of public transportation for all.
+[p005_c0008] On Friday, June 14, the LIRR delivered a decommissioned M3 rail car to the Nassau County Police Department to be utilized for training at their facility at the Nassau Community College campus. This rail car will be featured in Nassau County PD’s new mock village for real-world scenario drills. The village includes a train station that features the rail car, tracks and a platform where first responders and other law enforcement agencies can conduct joint exercises in
+
+## Page 6
+
+### [p006_c0001] 6 | Joint LIRR and Metro-North Committees Meeting Minutes June 24, 2024
+[p006_c0002] a variety of simulated scenarios. President Free stated that LIRR is always happy to assist our partners in law enforcement and hope the car serves the Nassau PD well.
+[p006_c0003] President Free proudly announced another LIRR employee being named by ABC7 as MTA Hero of the Week. On May 3rd, Grand Central Madison Ticket Clerk Nick Appel was down on the platforms when he happened upon a customer in distress, having just discovered that she had lost her engagement ring. Nick helped by searching the train she had just left but the ring was nowhere to be found. Given the value of the $17,000 ring, he took her to file a report with MTAPD. Along the way, it became clear that she had taken off her ring on her first train. At the precinct, Officer Nyndak and Sergeant Dove spoke with her and determined that her first train was in a yard in Brooklyn. They had officers dispatched to the yard and, thankfully, Officer Tongdon found the ring, which was returned to the customer. President Free congratulated Nick and his fellow heroes from the MTAPD for a job well done.
+[p006_c0004] President Free reported on the loss of former LIRR Executive Vice President Albert C. Consenza who sadly left us at the age of 80 but leaves behind a legacy of brilliant leadership. Remarkably, after wrapping up a 25-year tenure at NYC Transit in 1995 as Vice President and General Counsel, Al began a 20- year stint at the LIRR. They remember how much he was devoted to his work and to the riding public. How much he loved his wife Mary and his two children. His trademark office podium, and a good game of tennis. Al was a mentor and friend, and we owe him a huge debt of gratitude for guiding the railroad through many challenges and developing the next group of leaders, including President Free himself. A moment of silence was taken in Al's memory.
+[p006_c0005] Board Member Mack thanked the LIRR, Chief Mueller, and the MTAPD for their work during the Men's Cricket World Cup event, emphasizing the importance of law enforcement. Nassau County was named the safest county in the nation for the fourth year in a row.
+[p006_c0006] The complete presentation is filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of President Free's remarks.
+### [p006_c0007] 7. LIRR OPERATING REPORT:
+[p006_c0008] LIRR Senior Vice President of Operations Tom Kost ("Senior Vice President Kost") reported that LIRR's OTP for May was 95.8 %, above the goal of 94%. YTD OTP as of May is 96%, also above the goal of 94%. Ten out of twelve branches operated at or above goal. Year to date, ten branches operated at or above goal. There were eleven incidents which resulted in ten or more late trains in the month of May. The most significant event occurred on May 24, with a bridge strike at Forest Hills Station resulting in 28 delays, which reduced monthly OTP by 0.1 percent.
+[p006_c0009] Senior Vice President Kost reported that for fleet performance, the MDBF for the month of April was 195,656 miles, which is above the goal of 150,000 miles. YTD MDBF as of April is 161,222 miles, above the goal of 150,000 miles.
+
+## Page 7
+
+### [p007_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 7 June 24, 2024
+[p007_c0002] Senior Vice President Kost stated that for service delivery, LIRR completed 99.8% of its trips for the month of May and YTD was 99.6%. For upcoming work that will impact service, on the weekends of June 29-30, July 13-14, July 20-21, and July 27-28, ADA work will take place at Laurelton Station. Buses will replace trains at Locust Manor, Laurelton, and Rosedale for approximately 48 hours. On those same weekends, a series of switch installations will take place at various locations on the Port Jefferson Branch between Hicksville and Port Jefferson. Buses will replace trains between Hicksville and Port Jefferson for approximately 48 hours. Senior Vice President Kost reminded everyone to check the website and TrainTime app for updated schedules.
+[p007_c0003] In response to a question from Board Member Garodnick regarding the lower OTP of the Montauk Branch in the latest report, Senior Vice President Kost stated that the Montauk Branch performance is impacted by seasonal travel to the east, and that the branch becomes a single track east of Speonk, which can impact performance with any minor delays. In response to a further question from Board Member Garodnick whether this is a normal occurrence on the Montauk Branch based on historical data, Senior Vice President Kost stated during the winter months with less travel the OTP is higher, while the summer months, there are additional travelers with added service and longer cars, the trains having to make double stops on some four car platforms will impact OTP.
+[p007_c0004] The complete LIRR operating report is filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of the presentation.
+### [p007_c0005] 8. SAFETY REPORTS:
+[p007_c0006] Metro-North Vice President of System Safety Shelley Prettyman (“Vice President Prettyman”) stated that Metro-North’s safety report is found on page 16 of the Key Performance Metrics book. The customer employee injury rate for the 12-month reporting period ending April 2024, compared to the prior twelve months ending April 2023, decreased from 2.08 to 1.91 per one million customers. The reportable employee lost time injury rate decreased from 2.2 to 1.81 per 200,000 hours worked compared to the prior twelve months.
+[p007_c0007] Vice President Prettyman highlighted that Metro-North’s OSS Environmental Compliance team regularly conducts environmental field inspections and audits in support of Metro-North’s compliance programs and initiatives. The team has conducted 156 of these inspections and audits across the Metro-North territory for the year to date. Additionally, as part of the waste minimization program, Metro-North has recycled over 1,900 gallons of hazardous chemicals this year alone, preventing their disposal.
+[p007_c0008] LIRR Vice President of Corporate Safety Lori Ebbighausen (“Vice President Ebbighausen”) said that LIRR’s safety report begins on page 30 of the Key Performance Metrics book. The reportable customer injury rate increased to 2.29 per one million customers in the current 12-month reporting period ending in April 2024, compared to the prior 12 months. The reportable employee lost time injury rate is 4.31 per 200,000 working hours, compared to the prior 12 months.
+
+## Page 8
+
+### [p008_c0001] 8 | Joint LIRR and Metro-North Committees Meeting Minutes June 24, 2024
+[p008_c0002] Vice President Ebbighausen showcased a LIRR event that has been going on for thirty years. LIRR recently held its annual Safety Incentive Award Ceremony to recognize 30 employees nominated by their peers for performing an extraordinary act of safety in 2023. Management and labor leaders joined in the celebration of employees.
+[p008_c0003] The full LIRR and Metro-North safety reports are filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of the presentations.
+### [p008_c0004] 9. MTAPD REPORT:
+[p008_c0005] MTAPD Chief of Police John Mueller (“Chief Mueller”) reported that for the month of May, there were thirty-six part-one index crimes across both railroads. There were fourteen grand larcenies, which were all a result of unattended property. There were nine assaults, five against police officers and two against conductors. There were nine burglaries, three robberies, and one grand larceny auto. Chief Mueller stated that the police are continuing to increase enforcement of fare evasion.
+[p008_c0006] President Free thanked the Chief and the MTAPD for their continued work and the phenomenal response times and presence on the railroads. There were thirty-eight requests for assistance on Saturday and the MTAPD responded to each and every one of them. The customer service survey results from the last quarter provide proof that customers feel safe and are safe on the railroads due to the work of the MTAPD. Chief Mueller stated that the MTAPD are remarkable, with 235 arrests which is an increase of 123% compared to May 2024, and issued 1200 summonses.
+[p008_c0007] Co-Chair Herbst stated that he has noticed the efforts of the MTAPD while riding the trains and that those efforts are being realized. He urged the MTAPD to stay the course.
+[p008_c0008] Board Member Tessitore thanked the MTAPD and highlighted that the change in policy needs continued support and resources for it to work so that their frontline employees can remain safe.
+[p008_c0009] Board Member Chu stated that we do not operate in a vacuum. The policies implemented by the MTA to promote safety and combat fare evasion cannot be done by the MTA alone, as we still need support from the criminal justice system and the legislature.
+[p008_c0010] Board Member Zuckerman stated that the public needs to buy into the fact that the fare evasion problem is everyone’s problem.
+[p008_c0011] Board Member Bringmann thanked Chief Mueller for explaining that while it may appear from the number of reported crimes that the crime rate is up on the railroads, the increase in reported crimes is due to increased enforcement. Increased enforcement gives riders peace of mind that the riders are safe.
+
+## Page 9
+
+### [p009_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 9 June 24, 2024
+[p009_c0002] Board Member Mack emphasized the importance of having uniforms in the field and hiring more officers.
+[p009_c0003] In response to a question from Board Member Brown regarding whether the fingerprint scanners lead to an increase in “broken windows” cases, Chief Mueller stated that the fingerprint scanners are beneficial to everyone in order to quickly assess the fare dispute rider for potential warrants and it acts as a deterrent. Chief Mueller noted an increase in calls from conductors, especially LIRR conductors, showing a positive trend in trust between conductors and the MTAPD in dealing with fare disputes. In response to a further question from Board Member Brown regarding the effectiveness of the fingerprint reader, Chief Mueller stated that the new policy no longer allows riders to wait and see whether an officer will be called but rather the rider must exit the train and the MTAPD will resolve the fare dispute on the platform. Board Member Brown stated that he is proud of the coordination between the MTAPD and railroad employees.
+[p009_c0004] Board Member Glucksman thanked the MTAPD and stated that he noticed Metro-North riders being pleased with the police presence on the trains.
+[p009_c0005] The full MTAPD report is filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of Chief Mueller’s presentation.
+### [p009_c0006] 10. LIRR SPECIAL PRESENTATION ON STATION BATHROOM QR CODES:
+[p009_c0007] Chief Stations Officer Theresa Dorsey (“Chief Stations Officer Dorsey”) presented the new Station Bathroom QR Code program.
+[p009_c0008] Chief Stations Officer Dorsey stated that the MTA IT department has developed a new bathroom survey app to keep bathrooms looking as good as possible. The app is a quick and easy way for customers to communicate with the stations department regarding bathrooms in stations throughout the system in real time.
+[p009_c0009] The objective is to improve customer satisfaction regarding the condition of station bathrooms with a plan to respond as quickly as possible to remedy any issues. Posters are placed inside bathrooms with QR codes for scanning on mobile devices so that customers can relay issues to the station’s teams. The Station Team then responds to reported issues. This serves to improve operations through the collection and analysis of data from surveys to identify trends and adjust schedules and manpower needs. The QR codes will be placed in every station and are station specific. Customers can add comments or pictures to the survey. Chief Stations Officer Dorsey detailed the process for submitting the survey, along with each screen of the survey in the slide presentation.
+[p009_c0010] In response to a question from Co-chair López regarding whether the posters will be in multiple languages, Chief Stations Officer Dorsey stated that the survey will contain an option for a different language, but the posters will be in English only.
+
+## Page 10
+
+### [p010_c0001] 10 | Joint LIRR and Metro-North Committees Meeting Minutes June 24, 2024
+[p010_c0002] Board Member Bringmann stated that the operations team should consider this program for on-board train bathrooms. President Free stated that they are currently working on the train bathrooms and have employees submitting surveys, so this will be coming shortly.
+[p010_c0003] In response to a question from Board Member Tessitore regarding whether the program is entirely internal including the development of the app, Chief Stations Officer Dorsey stated in the affirmative.
+[p010_c0004] Board Member Glucksman stated that the initiative is great and that it should also be considered for Metro-North. Executive Vice President Vonashek stated that Metro-North will begin its pilot program in July and early August for both stations and on-board equipment.
+[p010_c0005] The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of Chief Stations Officer Dorsey's presentation.
+### [p010_c0006] 11. INFORMATION ITEMS:
+[p010_c0007] Executive Vice President Vonashek noted the following Metro-North information items: (i) Diversity/EO Report – 1st Quarter 2024; and (ii) Hartsdale Station Lease Agreement with Airport Mart, Inc.
+[p010_c0008] President Free noted the following LIRR information items: (i) Summer Trackwork Programs; and (ii) Diversity/EO Report – 1st Quarter 2024.
+[p010_c0009] The details of the information items are contained in reports filed with the records of this meeting.
+### [p010_c0010] 12. FINANCE:
+[p010_c0011] The finance reports for both railroads are contained in the meeting material.
+### [p010_c0012] 13. PROCUREMENTS:
+[p010_c0013] MNR Assistant Deputy Chief Procurement Officer Omar Messado reported on one Metro-North procurement item for an estimated expenditure of $8.5M. Metro-North seeks Board approval for the award of a three-year noncompetitive public works contract to Loram Maintenance of Way, Inc. for Continuous Work Platform (CWP) services. The base term is three years with two one-year options. Loram will provide a self-propelled mobile platform consisting of eight gondola cars capable of quickly and efficiently performing a variety of wayside track maintenance activities, including heavy digging, rail and tie pickup, tie distribution and the placement of riprap. It is also equipped with an on-board excavator and has a total storage capacity of 350 tons. Loram's CWP will be primarily used to perform work in MNR's operating territory in the State of Connecticut, while the Metro-North owned CWP will continue to be used to perform
+
+## Page 11
+
+### [p011_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 11 June 24, 2024
+[p011_c0002] work in New York. Loram was the sole bidder and took exception to several terms and conditions of the contract. Since Loram was the sole bidder and there were no other viable options, Metro-North entered into negotiations with Loram. Pricing for Year 1 was compared with the historical data and determined to be in line with the Consumer Price Index rate and deemed to be fair and reasonable. Subsequent years pricing will be adjusted according to the CPI as negotiated. The contract will mostly be funded by the Connecticut Department of Transportation.
+[p011_c0003] LIRR Acting Assistant Deputy Chief Procurement Officer Jacqueline Waddell reported on one procurement item for an estimated expenditure of $44.5 million. LIRR on behalf of itself and Metro-North seeks Board approval for a public works contract to Loram Maintenance of Way, Inc. for Rail Vacuum services. The contract has a term of 5 years with a three-year base and two one-year options. The work under the contract will provide the railroads with rail vacuum services using self-propelled specialty excavating and material handling equipment operated by Loram personnel to systematically remove a variety of materials from various locations in electrified territory along the railway without interference with electric operations. A single bid was submitted by Loram. Other vendors did not have the equipment that fits the requirements of the railroads. Loram took exception to several terms and conditions of the contract. With no other viable options, LIRR chose to negotiate with Loram for its services. The negotiated price is approximately $44.6M. Pricing for Year 1 was compared with the historical data and determined to be in line with the Consumer Price Index rate and deemed to be fair and reasonable. Subsequent year pricings will be adjusted according to the CPI as negotiated.
+[p011_c0004] In response to a question from Co-chair López regarding the timing of reimbursement from the State of Connecticut, Mr. Messado stated that we have an ongoing relationship with CDOT and there is a monthly billing cycle so this would be added to that billing cycle.
+[p011_c0005] Board Member Garodnick asked about the bidding process, the substantive exceptions and the amount of the bid versus the expected price. Mr. Messado responded that under normal circumstances in the bidding process, we will typically go with the lowest bid that meets the specifications. Loram took exception to some of the terms and conditions, such as limited liability, insurance, and the largest issue was the cybersecurity requirements. MTA General Counsel Paige Graves advised that the contracts have been reviewed and negotiated to protect the interests of the MTA and to get the best price, which was done for these contracts. In response to a further question from Board Member Garodnick regarding whether the exceptions were the same for both contracts, General Counsel Graves stated that the exceptions related to cybersecurity were the same for both contracts.
+[p011_c0006] In response to a question from Board Member Tessitore regarding whether we can do the work ourselves due to the size of the contract, Mr. Messado stated that while Metro-North has its own CWP for work performed in New York, it is not sufficient to cover the entire operating territory. The contracted-for CWP will be primarily for work in Connecticut and will be funded mostly by Connecticut. Board Member Tessitore stated that we need to find ways to do the work ourselves or buy or lease our own equipment because we know we will always need this, and it will never go away.
+
+## Page 12
+
+### [p012_c0001] 12 | Joint LIRR and Metro-North Committees Meeting Minutes June 24, 2024
+[p012_c0002] Upon motion duly made and seconded, the Committee recommended approval of the two procurement items.
+[p012_c0003] The details of this procurement items are contained in reports filed with the records of this meeting.
+### [p012_c0004] 14. ADJOURNMENT:
+[p012_c0005] Upon motion duly made and seconded, the Committee unanimously voted to adjourn the meeting.
+[p012_c0006] Respectfully submitted,
+[p012_c0007] _Susan Sarch Vice President, General Counsel & Secretary Metro-North Commuter Railroad Company_
+[p012_c0008] _Haley Stein Vice President, General Counsel & Secretary The Long Island Rail Road Company_

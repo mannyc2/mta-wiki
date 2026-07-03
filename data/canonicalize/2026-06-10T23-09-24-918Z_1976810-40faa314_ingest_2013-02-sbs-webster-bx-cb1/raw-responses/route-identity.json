@@ -1,0 +1,151 @@
+{
+  "run_id": "2026-06-10T23-09-24-918Z_1976810-40faa314_ingest_2013-02-sbs-webster-bx-cb1",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T03:21:36.935Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d_bx41_sbs_2013",
+        "local_observation_id": "route_bx41_sbs_2013_02_cb1",
+        "decision": "new",
+        "rationale": "Observation already resolves to its base_record_id route_webster-ave-sbs, which exists in the registry with matching identifiers (BX41+, SBS, Bronx). The source_id 2013_02_sbs_webster_bx_cb1 is in the registry record's source_ids and route_bx41-sbs-2013-02-cb1 is in its aliases.",
+        "proposed_relations": [
+          {
+            "relation_kind": "predecessor_of",
+            "subject_id": "route_bx41-limited-2012",
+            "object_id": "route_webster-ave-sbs",
+            "description": "Bx41 LTD was replaced by Bx41 SBS on Webster Avenue per the Feb 2013 CB1 presentation",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p011_c0002",
+                "source_quote": "Bx41 LTD → Bx41 SBS"
+              },
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p028_c0002",
+                "source_quote": "Bx41 LTD → Bx41 SBS"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p011_c0002",
+            "source_quote": "Bx41 LTD → Bx41 SBS"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p028_c0002",
+            "source_quote": "Bx41 LTD → Bx41 SBS"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_bx41_local_2013",
+        "local_observation_id": "route_bx41_local_2013_02_cb1",
+        "decision": "new",
+        "rationale": "Observation already resolves to its base_record_id route_bx41-local-2012-02-brt-webster-cac1, which exists in the registry with matching identifiers (Bx41 Local, local, Bronx). The source_id and alias route_bx41-local-2013-02-cb1 are in the registry record.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p026_c0003",
+            "source_quote": "Bx41 Local - No change to stop spacing - Service every ~10 minutes"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p028_c0002",
+            "source_quote": "Bx41 LTD → Bx41 SBS"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_bx41_ltd_2013",
+        "local_observation_id": "route_bx41_ltd_2013_02_cb1",
+        "decision": "new",
+        "rationale": "Observation already resolves to its base_record_id route_bx41-limited-2012, which exists in the registry with matching identifiers (Bx41 Limited, limited, Bronx). The source_id and alias route_bx41-ltd-2013-02-cb1 are in the registry record. The description confirms this is the predecessor to Bx41 SBS.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p026_c0003",
+            "source_quote": "Bx41 LTD"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p028_c0002",
+            "source_quote": "Bx41 LTD → Bx41 SBS"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_bx15_local_2013",
+        "local_observation_id": "route_bx15_local_2013_02_cb1",
+        "decision": "new",
+        "rationale": "Observation already resolves to its base_record_id route_bx15-ace, which exists in the registry with matching identifiers (Bx15 Local, local, Bronx/Manhattan). The source_id and alias route_bx15-local-2013-02-cb1 are in the registry record.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p026_c0005",
+            "source_quote": "Bx15 Local - Local stops: The Hub ↔ Fordham Plaza"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p029_c0002",
+            "source_quote": "Bx15 Local - Local stops: The Hub ↔ Fordham Plaza"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_bx15_ltd_2013",
+        "local_observation_id": "route_bx15_ltd_2013_02_cb1",
+        "decision": "new",
+        "rationale": "Observation already resolves to its base_record_id route_bx15-ltd-webster-2012, which exists in the registry with matching identifiers (Bx15 LTD, limited, Bronx/Manhattan). The source_id and alias route_bx15-ltd-2013-02-cb1 are in the registry record.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p027_c0005",
+            "source_quote": "Bx15 LTD - Local stops: Harlem 125th St ↔ The Hub - Limited stops: The Hub ↔ Fordham Plaza"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p029_c0002",
+            "source_quote": "Bx15 LTD - Local stops: Harlem 125th St ↔ The Hub - Limited stops: The Hub ↔ Fordham Plaza"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_bx55_limited_2013",
+        "local_observation_id": "route_bx55_limited_2013_02_cb1",
+        "decision": "new",
+        "rationale": "Observation already resolves to its base_record_id route_bx55-2012, which exists in the registry with matching identifiers (Bx55, Bronx). The source_id and alias route_bx55-limited-2013-02-cb1 are in the registry record. Note the registry payload has route_type 'local' while the observation says 'limited', but the canonical match is established by alias and source presence.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p026_c0003",
+            "source_quote": "Bx55 (Limited) north of Fordham Plaza"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_sbs_laguardia_2013",
+        "local_observation_id": "route_sbs_to_laguardia_2013_02_cb1",
+        "decision": "new",
+        "rationale": "Observation already resolves to its base_record_id route_sbs-to-laguardia-2012, which exists in the registry with matching identifiers (SBS to LaGuardia Airport, SBS, Bronx/Queens). The source_id and alias route_sbs-to-laguardia-2013-02-cb1 are in the registry record.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p027_c0003",
+            "source_quote": "SBS to LaGuardia Airport"
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-20-31-700Z_2111393-7aba45cb_canonicalize_2026-06-10t23-09-24-918z-1976810-40faa314-ingest-2013-02-sbs-webster-bx-cb1-route-identity"
+}

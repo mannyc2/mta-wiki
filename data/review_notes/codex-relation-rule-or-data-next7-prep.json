@@ -1,0 +1,281 @@
+{
+  "note_id": "codex-relation-rule-or-data-next7-prep",
+  "created_at": "2026-06-22T21:13:19Z",
+  "author": "codex",
+  "scope": "validator/rule-data triage only for next relation endpoint bucket after next6/relation025; artifact-only prep; no provider-backed post-ingest commands; no generated-output, override, journal, manifest, LOG, wiki, or code edits",
+  "kind": "relation_endpoint_rule_or_data_triage",
+  "recommendation": {
+    "type": "data_cleanup_bucket",
+    "summary": "Do not widen has_timeline_event to accept metric_claim subjects. After excluding the already-addressed next4 has_metric claim patch plus relation023, relation024, and relation025 cleanup originals, the next top endpoint-shape bucket is four has_timeline_event metric_claim -> event rows. The examples use metric claims as timeline carriers for delivery dates, a presentation date, or a board approval date. Metrics are not durable timeline owners; the evidence supports loose same-context associations or event/source-owned chronology, not metric-owned chronology.",
+    "recommended_action": "Prepare a narrow relation cleanup batch for the four malformed has_timeline_event metric_claim -> event relations. Retire the original submissions and replace row-by-row only where a source-backed non-timeline relation is useful. Prefer unshaped dependency/reference relations such as related_to or supports for weak contextual links; do not add metric_claim as an allowed has_timeline_event subject.",
+    "why_not_validator_patch": {
+      "proposed_patch_rejected": "Adding metric_claim to RELATION_ENDPOINT_SHAPES.has_timeline_event.subject",
+      "reason": "has_timeline_event is intended for project, route, corridor, entity, source, and event timeline carriers. The four inspected rows do not show metrics owning lifecycle events. Widening the validator would hide extraction/modeling errors and would be inconsistent with the next6 claim-owned timeline cleanup decision."
+    },
+    "confidence": "high"
+  },
+  "checkpoint_context": {
+    "excluded_prior_actions": [
+      "next4 has_metric claim -> metric_claim validator patch",
+      "relation023 has_timeline_event treatment_component -> event cleanup originals",
+      "relation024 implemented_by treatment_component -> entity cleanup originals",
+      "relation025 has_timeline_event claim -> event cleanup originals"
+    ],
+    "current_code_context": "packages/pipeline/src/records/relations.ts currently accepts has_metric claim -> metric_claim, has_metric event -> metric_claim, has_claim event -> claim, has_timeline_event source -> event, and has_timeline_event event -> event. It still rejects has_timeline_event metric_claim -> event.",
+    "method": "Read-only bun --eval over readCanonicalRecords() and relationEndpointShapeIssue(); excluded relation023, relation024, and relation025 original record ids from their prep artifacts; did not run CLI validate, materialize, export-jsonl, DB repair/publish, or provider-backed commands."
+  },
+  "targeted_inventory_after_exclusions": {
+    "unexpected_relation_endpoint_shape_total": 64,
+    "by_relation_kind": {
+      "part_of_program": 12,
+      "serves_route": 10,
+      "has_timeline_event": 9,
+      "implemented_by": 9,
+      "operated_by": 6,
+      "published_by": 5,
+      "has_treatment": 4,
+      "owned_by": 3,
+      "has_claim": 2,
+      "operates_on_corridor": 2,
+      "related_route": 2
+    },
+    "top_shape_buckets": [
+      {
+        "bucket": "has_timeline_event metric_claim->event",
+        "count": 4,
+        "classification": "data_cleanup_bucket_recommended_here"
+      },
+      {
+        "bucket": "implemented_by entity->entity",
+        "count": 4,
+        "classification": "defer; likely agency-role direction or relation-kind cleanup, not a validator widening"
+      },
+      {
+        "bucket": "operated_by entity->entity",
+        "count": 4,
+        "classification": "defer; likely agency-role direction or relation-kind cleanup, not a validator widening"
+      },
+      {
+        "bucket": "published_by claim->entity",
+        "count": 4,
+        "classification": "defer; publication role should attach source, project, or entity carriers, not claim subjects"
+      },
+      {
+        "bucket": "part_of_program project->source",
+        "count": 3,
+        "classification": "defer; source object suggests containment/reference cleanup"
+      },
+      {
+        "bucket": "serves_route project->project",
+        "count": 3,
+        "classification": "defer; likely endpoint identity or relation-kind cleanup"
+      }
+    ]
+  },
+  "simulated_impact": {
+    "baseline_after_exclusions": 64,
+    "resolved_by_retiring_or_replacing_this_bucket": 4,
+    "remaining_endpoint_shape_issues_after_bucket_cleanup": 60,
+    "assumption": "All four original malformed relations are retired and any replacements use validator-compatible or unshaped relation kinds. This artifact did not create replacement submissions, edit retired.json, edit submissions journals, or run createSubmissionEntry dry-runs.",
+    "why_cleanup_has_same_endpoint_count_impact_as_rule_patch": "A validator patch admitting has_timeline_event metric_claim -> event would also remove four endpoint-shape issues, but it would validate metric-owned chronology. Cleanup preserves the validator signal."
+  },
+  "exact_issue_examples": [
+    {
+      "record_id": "relation_meeting-doc-124311-contract-base-delivery-event",
+      "submission_id": "sub_8039b0ffae1727b9",
+      "source_id": "meeting_doc_124311",
+      "malformed_shape": "has_timeline_event metric_claim -> event",
+      "subject": {
+        "record_id": "metric_meeting-doc-124311-base-amount",
+        "kind": "metric_claim",
+        "local_observation_id": "metric_meeting_doc_124311_base_amount",
+        "display_name": "Base Award Amount - $214,187,493"
+      },
+      "object": {
+        "record_id": "event_meeting-doc-124311-delivery-start",
+        "kind": "event",
+        "local_observation_id": "event_meeting_doc_124311_delivery_start",
+        "display_name": "Delivery Start of Base Buses - April 2025"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_124311#p006_c0006",
+          "text": "NYC Transit requests that the Board waive formal competitive bidding and approve the purchase of 250 over-the-road express diesel buses ... in the total estimated amount of $325,795,912 ($214,187,493 for the base award and $111,608,420 for the options) on behalf of MTA Bus Company."
+        },
+        {
+          "ref": "meeting_doc_124311#p006_c0008",
+          "text": "Delivery of the base buses is anticipated to begin in April 2025 and be completed by August 2026."
+        }
+      ],
+      "triage": "The amount and delivery-start event are same-procurement context, but the amount is not a timeline carrier. If preserving the association is useful, use a loose related_to/supports replacement rather than has_timeline_event."
+    },
+    {
+      "record_id": "relation_meeting-doc-124311-contract-completion-event",
+      "submission_id": "sub_c7b955f9f3ea642b",
+      "source_id": "meeting_doc_124311",
+      "malformed_shape": "has_timeline_event metric_claim -> event",
+      "subject": {
+        "record_id": "metric_meeting-doc-124311-base-amount",
+        "kind": "metric_claim",
+        "local_observation_id": "metric_meeting_doc_124311_base_amount",
+        "display_name": "Base Award Amount - $214,187,493"
+      },
+      "object": {
+        "record_id": "event_meeting-doc-124311-delivery-complete",
+        "kind": "event",
+        "local_observation_id": "event_meeting_doc_124311_delivery_complete",
+        "display_name": "Delivery Completion of Base Buses - August 2026"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_124311#p006_c0006",
+          "text": "NYC Transit requests that the Board waive formal competitive bidding and approve the purchase of 250 over-the-road express diesel buses ... in the total estimated amount of $325,795,912 ($214,187,493 for the base award and $111,608,420 for the options) on behalf of MTA Bus Company."
+        },
+        {
+          "ref": "meeting_doc_124311#p006_c0008",
+          "text": "Delivery of the base buses is anticipated to begin in April 2025 and be completed by August 2026."
+        }
+      ],
+      "triage": "Same pattern as the delivery-start row: the evidence supports a procurement schedule, not metric-owned chronology."
+    },
+    {
+      "record_id": "relation_meeting-doc-144141-sas-phase2-deferral",
+      "submission_id": "sub_e5ae71879861651a",
+      "source_id": "meeting_doc_144141",
+      "malformed_shape": "has_timeline_event metric_claim -> event",
+      "subject": {
+        "record_id": "metric_meeting-doc-144141-sas-deferral-5b-impact",
+        "kind": "metric_claim",
+        "local_observation_id": "metric_meeting_doc_144141_sas_deferral_5b_impact",
+        "display_name": "Second Avenue Subway Phase 2 deferral impact $5B"
+      },
+      "object": {
+        "record_id": "event_meeting-doc-144141-presentation-date",
+        "kind": "event",
+        "local_observation_id": "event_meeting_doc_144141_presentation_date",
+        "display_name": "Presentation to MTA Board on June 26, 2024"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_144141#p021_c0003",
+          "text": "Future Second Avenue Subway Phase 2 contracts to be deferred or shifted to the 2025-2029 Capital Plan."
+        },
+        {
+          "ref": "meeting_doc_144141#p021_c0004",
+          "text": "Impact: $5 billion"
+        }
+      ],
+      "triage": "The metric belongs to the presentation/source context. The presentation date should not be modeled as a timeline event of the metric claim."
+    },
+    {
+      "record_id": "relation_tbta-surplus-board-approval-feb2024",
+      "submission_id": "sub_c1181b8442a10c0e",
+      "source_id": "meeting_doc_133166",
+      "malformed_shape": "has_timeline_event metric_claim -> event",
+      "subject": {
+        "record_id": "metric_bt-2023-operating-surplus",
+        "kind": "metric_claim",
+        "local_observation_id": "metric_bt_2023_operating_surplus",
+        "display_name": "2023 TBTA Operating Surplus"
+      },
+      "object": {
+        "record_id": "event_mta-board-feb2024",
+        "kind": "event",
+        "local_observation_id": "event_mta_board_feb2024",
+        "display_name": "MTA Board Meeting - February 28, 2024"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_133166#p053_c0004",
+          "text": "Board Action Order To Date Approval Info Other 1 MTA B&T Committee 02/26/24 X 2 MTA Finance Committee 02/26/24 X 3 MTA Board 02/28/24 X"
+        },
+        {
+          "ref": "meeting_doc_133166#p054_c0005",
+          "text": "Operating Revenue $2,456,906,110 ... Operating Surplus $ 1,289,101,743"
+        }
+      ],
+      "triage": "The board event is approval context for the surplus action. It may support or relate to the metric claim, but the operating surplus metric should not own the board-meeting timeline."
+    }
+  ],
+  "guards_for_followup_cleanup_prep": [
+    "Verify each original submission id is still present and not already retired before preparing a cleanup batch.",
+    "Check for existing same-source replacement relations to avoid duplicate related_to/supports rows.",
+    "Prefer dropping a relation over adding a weak replacement when the only support is co-occurrence in a table or agenda section.",
+    "If a stronger carrier exists in the same source, prefer event/source/project-owned chronology rather than metric_claim-owned chronology. Do not infer or create project records in this triage lane."
+  ],
+  "commands_run": [
+    {
+      "command": "pwd && rg --files data/review_notes | sort | tail -80",
+      "outcome": "Confirmed repo root and existing next/cleanup prep artifacts through next6 and relation025."
+    },
+    {
+      "command": "git status --short",
+      "outcome": "Observed a heavily dirty worktree from other lanes; no unrelated changes were reverted or overwritten."
+    },
+    {
+      "command": "sed -n '1,220p' LOG.md",
+      "outcome": "Skimmed current log context; confirmed next4, relation023, relation024, and relation025 status and the generated-output restrictions while wave25 remains live."
+    },
+    {
+      "command": "for f in data/review_notes/codex-relation-rule-or-data-next*-prep.json data/review_notes/codex-relation-cleanup-batch02*-prep.json; do ... jq ...; done",
+      "outcome": "Reviewed prior prep artifacts and their simulated endpoint-shape baselines."
+    },
+    {
+      "command": "jq '.targeted_inventory_after_exclusions' data/review_notes/codex-relation-rule-or-data-next6-prep.json",
+      "outcome": "Confirmed next6 projected 69 issues before relation025, with has_timeline_event metric_claim->event count 4 as the next deferred bucket."
+    },
+    {
+      "command": "sed -n '200,285p' packages/pipeline/src/records/relations.ts",
+      "outcome": "Read current endpoint-shape table; verified has_timeline_event allows project|route|corridor|entity|source|event -> event and does not allow metric_claim subjects."
+    },
+    {
+      "command": "bun --eval '<readCanonicalRecords plus relationEndpointShapeIssue inventory excluding relation023-025 original record ids>'",
+      "outcome": "Computed 64 simulated endpoint-shape issues after exclusions. Top bucket has_timeline_event metric_claim->event count 4, tied with implemented_by entity->entity, operated_by entity->entity, and published_by claim->entity."
+    },
+    {
+      "command": "rg selected evidence block ids in raw/sources/meeting_doc_124311/blocks.jsonl raw/sources/meeting_doc_144141/blocks.jsonl raw/sources/meeting_doc_133166/blocks.jsonl",
+      "outcome": "Verified source text for delivery dates, base award amount, SAS Phase 2 deferral impact, and TBTA operating-surplus board action."
+    },
+    {
+      "command": "bun --eval '<print targeted endpoint records and same-source project candidates>'",
+      "outcome": "Inspected metric/event endpoint records and confirmed no same-source project carrier exists for meeting_doc_124311 or meeting_doc_144141; meeting_doc_133166 has a TransCore project unrelated to the surplus metric."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "outcome": "Captured artifact timestamp 2026-06-22T21:13:19Z."
+    },
+    {
+      "command": "jq '.recommendation.type, .targeted_inventory_after_exclusions.top_shape_buckets[0], .simulated_impact' data/review_notes/codex-relation-rule-or-data-next7-prep.json",
+      "outcome": "Post-write parse succeeded and printed data_cleanup_bucket, the four-row has_timeline_event metric_claim->event bucket, and the 64-to-60 simulated impact."
+    },
+    {
+      "command": "git diff -- data/review_notes/codex-relation-rule-or-data-next7-prep.json",
+      "outcome": "No output because the prep artifact is a new untracked file."
+    },
+    {
+      "command": "git status --short -- data/review_notes/codex-relation-rule-or-data-next7-prep.json",
+      "outcome": "Confirmed the only path created for this task is untracked: data/review_notes/codex-relation-rule-or-data-next7-prep.json."
+    }
+  ],
+  "commands_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts export-jsonl --verify",
+    "DB repair or publish commands",
+    "provider-backed ingest/post-ingest commands",
+    "tests or typecheck, because this triage produced no code changes"
+  ],
+  "files_intentionally_not_edited": [
+    "packages/pipeline/src/records/relations.ts",
+    "packages/pipeline/test/records/relations.test.ts",
+    "data/canonical/relations.jsonl",
+    "data/canonical.db",
+    "data/materialized/",
+    "data/submission-overrides/retired.json",
+    "data/submissions/",
+    "data/identity-overrides/merges.json",
+    "data/submission-overrides/retired.json",
+    "LOG.md",
+    "wiki/sources/"
+  ]
+}

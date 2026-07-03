@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T23-14-25-320Z_1976810-10f0b3f3_ingest_2013-06-06-sbs-125th-cb1",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T03:52:47.679Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "m60-sbs-2013-cb1-self-resolve",
+        "local_observation_id": "route_m60_sbs_2013_06_cb1",
+        "decision": "new",
+        "rationale": "The observation's base_record_id is already route_125th-laguardia-sbs, which perfectly matches: same route_id (M60), same Select Bus Service variant, same boroughs (Manhattan, Queens), and the source 2013_06_06_sbs_125th_cb1 is already registered on that canonical record. The closest match is the observation's own base_record_id, so per rules this is 'new' — no link to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_06_sbs_125th_cb1",
+            "block_id": "p001_c0001",
+            "source_quote": "M60 Select Bus Service"
+          },
+          {
+            "source_id": "2013_06_06_sbs_125th_cb1",
+            "block_id": "p005_c0003",
+            "source_quote": "Select Bus Service on the M60"
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-52-16-181Z_2111393-cb99d7d9_canonicalize_2026-06-10t23-14-25-320z-1976810-10f0b3f3-ingest-2013-06-06-sbs-125th-cb1-route-identity"
+}

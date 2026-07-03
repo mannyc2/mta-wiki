@@ -1,0 +1,6 @@
+{"decision_id":"rel-offset-bus-lanes-125th-to-m60sbs-2013","verdict":"pass","failure_reason":"null","evidence_checked":["2013_03_07_sbs_125th_cb9#p006_c0009","2013_03_07_sbs_125th_cb9#p011_c0004"]}
+{"decision_id":"rel-off-board-fare-125th-to-m60sbs-2013","verdict":"pass","failure_reason":"null","evidence_checked":["2013_03_07_sbs_125th_cb9#p006_c0008","2013_03_07_sbs_125th_cb9#p007_c0007"]}
+{"decision_id":"rel-tsp-125th-to-m60sbs-2013","verdict":"pass","failure_reason":"null","evidence_checked":["2013_03_07_sbs_125th_cb9#p006_c0011"]}
+{"decision_id":"rel-limited-stops-125th-to-m60sbs-2013","verdict":"pass","failure_reason":"null","evidence_checked":["2013_03_07_sbs_125th_cb9#p006_c0007","2013_03_07_sbs_125th_cb9#p013_c0005"]}
+{"decision_id":"rel-curb-extensions-amsterdam-to-m60sbs-2013","verdict":"pass","failure_reason":"null","evidence_checked":["2013_03_07_sbs_125th_cb9#p023_c0005"]}
+{"decision_id":"rel-ped-safety-125th-to-m60sbs-2013","verdict":"pass","failure_reason":"null","evidence_checked":["2013_03_07_sbs_125th_cb9#p006_c0012"]}

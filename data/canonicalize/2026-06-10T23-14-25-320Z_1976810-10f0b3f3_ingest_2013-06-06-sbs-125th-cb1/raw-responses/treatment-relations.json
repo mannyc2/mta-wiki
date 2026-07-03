@@ -1,0 +1,90 @@
+{
+  "run_id": "2026-06-10T23-14-25-320Z_1976810-10f0b3f3_ingest_2013-06-06-sbs-125th-cb1",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T03:55:22.934Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "skip-offset-lanes-125th",
+        "local_observation_id": "treatment_offset_lanes_125th_st_2013",
+        "decision": "skip",
+        "rationale": "Cited block p005_c0009 reads only 'Offset lanes for buses and right turns' — a feature listing with no explicit statement attaching this treatment to a project or corridor. Already related to project_m60-select-bus-service-2013 via existing relations.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_06_sbs_125th_cb1",
+            "block_id": "p005_c0009",
+            "source_quote": "Offset lanes for buses and right turns"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-off-board-fare-125th",
+        "local_observation_id": "treatment_off_board_fare_125th_st_2013",
+        "decision": "skip",
+        "rationale": "Cited blocks p005_c0007 ('Off-board fare payment') and p005_c0008 ('Manhattan only') are a feature listing and subsection heading; neither explicitly states attachment to a project or corridor. Already related to project_m60-select-bus-service-2013.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_06_sbs_125th_cb1",
+            "block_id": "p005_c0007",
+            "source_quote": "Off-board fare payment"
+          },
+          {
+            "source_id": "2013_06_06_sbs_125th_cb1",
+            "block_id": "p005_c0008",
+            "source_quote": "Manhattan only"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-curb-extension-columbus",
+        "local_observation_id": "treatment_curb_extension_columbus_triangle_2013",
+        "decision": "skip",
+        "rationale": "Cited blocks p007_c0004 ('Proposed Extension of Columbus Triangle') and p007_c0005 ('Proposed curb extension provides additional passenger waiting space at a busy stop') describe a feature and its location but do not explicitly name a corridor or project. Already related to project_m60-select-bus-service-2013.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_06_sbs_125th_cb1",
+            "block_id": "p007_c0005",
+            "source_quote": "Proposed curb extension provides additional passenger waiting space at a busy stop"
+          },
+          {
+            "source_id": "2013_06_06_sbs_125th_cb1",
+            "block_id": "p007_c0004",
+            "source_quote": "Proposed Extension of Columbus Triangle"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-bus-stop-lengthening",
+        "local_observation_id": "treatment_bus_stop_lengthening_125th_st_2013",
+        "decision": "skip",
+        "rationale": "Cited block p006_c0007 reads 'Some bus stops will be lengthened to make it easier for buses to get to the curb' — a feature description with no explicit attachment to a project or corridor. Already related to project_m60-select-bus-service-2013.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_06_sbs_125th_cb1",
+            "block_id": "p006_c0007",
+            "source_quote": "Some bus stops will be lengthened to make it easier for buses to get to the curb"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-parking-regulations",
+        "local_observation_id": "treatment_updated_parking_regulations_125th_st_2013",
+        "decision": "skip",
+        "rationale": "Cited block p005_c0010 reads only 'Updated parking regulations' — a bare feature listing with no explicit statement attaching this treatment to a project or corridor. Already related to project_m60-select-bus-service-2013.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_06_sbs_125th_cb1",
+            "block_id": "p005_c0010",
+            "source_quote": "Updated parking regulations"
+          }
+        ]
+      }
+    ],
+    "packet_id": "treatment-relations"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-52-16-182Z_2111393-1b5af11c_canonicalize_2026-06-10t23-14-25-320z-1976810-10f0b3f3-ingest-2013-06-06-sbs-125th-cb1-treatment-relations"
+}

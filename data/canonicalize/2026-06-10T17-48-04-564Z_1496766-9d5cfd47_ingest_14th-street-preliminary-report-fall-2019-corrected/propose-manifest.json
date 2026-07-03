@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T17-48-04-564Z_1496766-9d5cfd47_ingest_14th-street-preliminary-report-fall-2019-corrected",
+  "generated_at": "2026-06-10T19:21:11.377Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 21,
+  "validated_decision_count": 15,
+  "quarantined_decision_count": 1,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T17-48-04-564Z_1496766-9d5cfd47_ingest_14th-street-preliminary-report-fall-2019-corrected",
+    "manifest": "data/canonicalize/2026-06-10T17-48-04-564Z_1496766-9d5cfd47_ingest_14th-street-preliminary-report-fall-2019-corrected/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T17-48-04-564Z_1496766-9d5cfd47_ingest_14th-street-preliminary-report-fall-2019-corrected/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T17-48-04-564Z_1496766-9d5cfd47_ingest_14th-street-preliminary-report-fall-2019-corrected/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T17-48-04-564Z_1496766-9d5cfd47_ingest_14th-street-preliminary-report-fall-2019-corrected/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-48-04-564Z_1496766-9d5cfd47_ingest_14th-street-preliminary-report-fall-2019-corrected/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-552Z_1609878-4bf291a1_canonicalize_2026-06-10t17-48-04-564z-1496766-9d5cfd47-ingest-14th-street-preliminary-report-fall-2019-corrected-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 7,
+      "validated_decision_count": 7,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-48-04-564Z_1496766-9d5cfd47_ingest_14th-street-preliminary-report-fall-2019-corrected/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-552Z_1609878-48d0e905_canonicalize_2026-06-10t17-48-04-564z-1496766-9d5cfd47-ingest-14th-street-preliminary-report-fall-2019-corrected-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-48-04-564Z_1496766-9d5cfd47_ingest_14th-street-preliminary-report-fall-2019-corrected/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-553Z_1609878-0ceb587a_canonicalize_2026-06-10t17-48-04-564z-1496766-9d5cfd47-ingest-14th-street-preliminary-report-fall-2019-corrected-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-48-04-564Z_1496766-9d5cfd47_ingest_14th-street-preliminary-report-fall-2019-corrected/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-553Z_1609878-d653d247_canonicalize_2026-06-10t17-48-04-564z-1496766-9d5cfd47-ingest-14th-street-preliminary-report-fall-2019-corrected-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-48-04-564Z_1496766-9d5cfd47_ingest_14th-street-preliminary-report-fall-2019-corrected/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-553Z_1609878-d2f47bd4_canonicalize_2026-06-10t17-48-04-564z-1496766-9d5cfd47-ingest-14th-street-preliminary-report-fall-2019-corrected-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 5,
+      "validated_decision_count": 5,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-48-04-564Z_1496766-9d5cfd47_ingest_14th-street-preliminary-report-fall-2019-corrected/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-553Z_1609878-b4600e20_canonicalize_2026-06-10t17-48-04-564z-1496766-9d5cfd47-ingest-14th-street-preliminary-report-fall-2019-corrected-relation-linker"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "run_id": "2026-06-10T17-48-04-719Z_1496766-14ac6020_ingest_2010-03-11-brt-1st2nd-cb8",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-10T19:37:10.847Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d_corridor_first_second_ave_sbs_2010",
+        "local_observation_id": "corridor_first_second_ave_sbs_2010",
+        "decision": "new",
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "corridor_first-second-ave-sbs",
+            "description": "Both records describe the identical First Avenue/Second Avenue SBS corridor from South Ferry to 125th Street in Manhattan. The only difference is the source document: corridor_first-second-avenues-brt aggregates multiple sources including 2010_03_11_brt_1st2nd_cb8, while corridor_first-second-ave-sbs derives from 2010_03_10_brt_1st2nd_cb3 — two presentations for the same SBS project given to different community boards on consecutive days.",
+            "evidence_refs": [
+              {
+                "source_id": "2010_03_11_brt_1st2nd_cb8",
+                "block_id": "p004_c0004",
+                "source_quote": "8.5 miles from South Ferry to 125 th Street"
+              },
+              {
+                "source_id": "2010_03_11_brt_1st2nd_cb8",
+                "block_id": "p004_c0002",
+                "source_quote": "First Avenue/Second Avenue SBS"
+              }
+            ]
+          }
+        ],
+        "rationale": "The observation's base_record_id (corridor_first-second-avenues-brt) already exists in the registry and already references the same source (2010_03_11_brt_1st2nd_cb8). The observation describes the identical corridor: First Avenue/Second Avenue from South Ferry to 125th Street in Manhattan, 8.5 miles served by M15 bus route. No different registry record is a closer match.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_03_11_brt_1st2nd_cb8",
+            "block_id": "p004_c0002",
+            "source_quote": "First Avenue/Second Avenue SBS"
+          },
+          {
+            "source_id": "2010_03_11_brt_1st2nd_cb8",
+            "block_id": "p004_c0004",
+            "source_quote": "8.5 miles from South Ferry to 125 th Street"
+          },
+          {
+            "source_id": "2010_03_11_brt_1st2nd_cb8",
+            "block_id": "p004_c0005",
+            "source_quote": "Currently served by M15 bus route"
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-35-58-157Z_1642176-b9c543a0_canonicalize_2026-06-10t17-48-04-719z-1496766-14ac6020-ingest-2010-03-11-brt-1st2nd-cb8-corridor-identity"
+}

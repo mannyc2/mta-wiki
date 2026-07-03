@@ -1,0 +1,77 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:36:46.916Z",
+  "packet_path": "data/identity-review/packets/corridor_cluster_563584ec3d.md",
+  "cluster_id": "corridor_cluster_563584ec3d",
+  "kind": "corridor",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "corridor_cluster_563584ec3d",
+    "kind": "corridor",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "corridor_lexington-ave-2015-01-06",
+          "corridor_lexington-ave-96th-to-60th"
+        ],
+        "reason": "Different limits: 'at 125th Street' vs '96th St to 60th St'. Per corridor merge canon, identity = street(s) + borough + limits; differing limits forces do_not_merge (Contradiction test, strong field: limits)."
+      },
+      {
+        "record_ids": [
+          "corridor_lexington-ave-2015-01-06",
+          "corridor_lexington-avenue"
+        ],
+        "reason": "Different limits: 'at 125th Street' vs '60th Street to 52nd Street'. Non-overlapping segments of same street in same borough do not merge. Contradiction test on limits."
+      },
+      {
+        "record_ids": [
+          "corridor_lexington-ave-96th-to-60th",
+          "corridor_lexington-avenue"
+        ],
+        "reason": "Different limits: '96th St to 60th St' vs '60th Street to 52nd Street'. Even though they share the 60th St boundary, they are distinct segments covering different ranges. Per canon, differing borough or limits never merge. Here both Manhattan but limits differ."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "corridor_lexington-ave-2015-01-06",
+        "aliases": [
+          "corridor_lexington-ave",
+          "corridor_lexington-ave-at-125th-st"
+        ],
+        "reason": "Useful for search, not merge authority. The base name 'Lexington Avenue' is shared but limits differ."
+      },
+      {
+        "record_id": "corridor_lexington-ave-96th-to-60th",
+        "aliases": [
+          "corridor_lexington-ave",
+          "corridor_lexington-ave-96th-st-to-60th-st",
+          "corridor_lexington-ave-96th-to-60th-manhattan"
+        ],
+        "reason": "Aliases include shared street key but limits differentiate."
+      },
+      {
+        "record_id": "corridor_lexington-avenue",
+        "aliases": [
+          "corridor_lexington-ave",
+          "corridor_lexington-ave-60th-st-to-52nd-st",
+          "corridor_lexington-ave-60th-52nd-manhattan"
+        ],
+        "reason": "Shared street alias; unique limits makes it distinct."
+      }
+    ],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [
+      "Ensure corridor identity always includes limits (and borough); shared street name alone should never trigger merge."
+    ],
+    "confidence": "high",
+    "rationale": "All three records are distinct corridors on Lexington Avenue in Manhattan, each with different, non-overlapping limits. Per the corridor identity rule (street + borough + limits), differing limits force do_not_merge. No lifecycle or merged-common-base scenario applies because each has its own clearly defined scope."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-36-35-611Z_1282984-9046872e_identity-review-run_corridor-cluster-563584ec3d",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-36-35-611Z_2026-06-23T14-36-35-611Z_1282984-9046872e_identity-review-run_corridor-cluster-563584ec3d.jsonl"
+}

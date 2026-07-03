@@ -1,0 +1,56 @@
+{
+  "run_id": "2026-06-10T22-56-13-303Z_1976810-9799dcb4_ingest_20110517-jamaica-open-house-posters",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T01:31:17.275Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1-nyc-dot-jamaica-open-house",
+        "local_observation_id": "entity_nyc_dot_jamaica_open_house",
+        "decision": "new",
+        "rationale": "Observation refers to New York City Department of Transportation (NYC DOT), matching existing registry record entity_nyc-dot (entity_name: 'New York City Department of Transportation', entity_type: 'agency'). The observation's base_record_id already resolves to entity_nyc-dot; no different target needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p005_c0010",
+            "source_quote": "NEW YORK CITY DOT"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2-jamaica-center-bid",
+        "local_observation_id": "entity_jamaica_center_bid",
+        "decision": "new",
+        "rationale": "Observation refers to Jamaica Center Business Improvement District, matching existing registry record entity_jamaica-center-bid (entity_name: 'Jamaica Center Business Improvement District', entity_type: 'organization'). The observation's base_record_id already resolves to entity_jamaica-center-bid; no different target needed.",
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_jamaica-center-bid",
+            "object_id": "entity_jamaica-center-bid-2011",
+            "description": "Both records represent the same Jamaica Center Business Improvement District. entity_jamaica-center-bid uses the full name; entity_jamaica-center-bid-2011 uses the shortened name 'Jamaica Center BID'. They share the same real-world identity.",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0015",
+                "source_quote": "Survey of Jamaica Avenue merchants (May 2011) in coordination with the Jamaica Center Business Improvement District"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0015",
+            "source_quote": "Survey of Jamaica Avenue merchants (May 2011) in coordination with the Jamaica Center Business Improvement District"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-30-12-890Z_2111393-099fee95_canonicalize_2026-06-10t22-56-13-303z-1976810-9799dcb4-ingest-20110517-jamaica-open-house-posters-entity-identity"
+}

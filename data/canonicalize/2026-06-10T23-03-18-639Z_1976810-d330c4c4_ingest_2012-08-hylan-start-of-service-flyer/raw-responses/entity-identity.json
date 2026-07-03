@@ -1,0 +1,46 @@
+{
+  "run_id": "2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:48:40.206Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "d1-nyct-hylan-flyer-new",
+        "local_observation_id": "entity_nyc_transit_2012_hylan_flyer",
+        "decision": "new",
+        "rationale": "Observation 'New York City Transit' (agency) resolves to base_record_id entity_mta-nyct. The registry card for entity_mta-nyct already lists source 2012_08_hylan_start_of_service_flyer and carries the alias entity_nyc-transit-2012-hylan-flyer. The observation confirms the existing record; no different or new canonical entity is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p001_c0009",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0025",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "d2-nycdot-hylan-flyer-new",
+        "local_observation_id": "entity_nyc_dot_2012_hylan_flyer",
+        "decision": "new",
+        "rationale": "Observation 'NYC DOT' (agency) resolves to base_record_id entity_nyc-dot. The registry card for entity_nyc-dot already lists source 2012_08_hylan_start_of_service_flyer and carries the alias entity_nyc-dot-2012-hylan-flyer. The observation confirms the existing record; no different or new canonical entity is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p001_c0001",
+            "source_quote": ""
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-47-35-386Z_2111393-0cdb7a1f_canonicalize_2026-06-10t23-03-18-639z-1976810-d330c4c4-ingest-2012-08-hylan-start-of-service-flyer-entity-identity"
+}

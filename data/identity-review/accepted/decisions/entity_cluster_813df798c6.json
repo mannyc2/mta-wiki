@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "entity_cluster_813df798c6",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_813df798c6.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_813df798c6.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 2,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "entity_mckissack-iec",
+        "entity_meeting-doc-164901-iec"
+      ],
+      "reason": "Different entity_type: consultant vs organization. Also entity_name differs (McKissack vs Independent Engineering Consultant). Contradiction test: entity_type differs (test 1)."
+    },
+    {
+      "record_ids": [
+        "entity_meeting-doc-111791-michael-baker",
+        "entity_meeting-doc-164901-iec"
+      ],
+      "reason": "Different entity_type: consultant vs organization. Also entity_name differs (Michael Baker International vs Independent Engineering Consultant). Despite shared identity key entity_independent-engineering-consultant, entity_type contradiction forces do_not_merge (test 1)."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [
+    "When a role acronym (e.g., 'IEC') is used by multiple distinct entities, it does not imply identity; entity_name and entity_type are decisive. The existing rule 'Acronym + expanded legal name of the same org DO merge' applies only when the legal name matches, not when the acronym is a shared role."
+  ],
+  "rationale": "All three records represent distinct entities: McKissack (MTA Independent Engineering Consultant), Michael Baker International (also IEC), and a generic 'Independent Engineering Consultant' record. Strong identity fields (entity_name, entity_type) differ between each pair, satisfying the contradiction test (test 1) and forcing do_not_merge. The shared acronym IEC is a role descriptor, not a unique identifier. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

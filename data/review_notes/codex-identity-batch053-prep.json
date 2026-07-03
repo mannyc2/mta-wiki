@@ -1,0 +1,365 @@
+{
+  "note_id": "codex-canonical-cleanup-2026-06-22-identity-alias-batch-053-prep",
+  "created_at": "2026-06-22T20:45:32Z",
+  "author": "codex",
+  "status": "ready_for_conductor_apply",
+  "lane": "identity_prep_only",
+  "batch": "identity-batch053",
+  "scope": "Codex-only identity alias preparation after identity052; no generated output or provider-backed commands run",
+  "context": {
+    "starting_point": "unresolved duplicate_global_identity backlog after current identity overrides, including identity052",
+    "candidate_mining_summary": {
+      "entity_duplicate_pairs_after_current_alias_and_do_not_merge_resolution": 1139,
+      "compact_entity_pairs_after_broad_key_filter": 977,
+      "selected_high_confidence_candidates": 10
+    },
+    "write_scope_used_for_this_task": [
+      "data/review_notes/codex-identity-batch053-prep.json"
+    ],
+    "paths_intentionally_not_edited": [
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json",
+      "data/submission-overrides/retired.json",
+      "data/canonical/",
+      "data/canonical.db",
+      "data/materialized/",
+      "data/submissions/",
+      "wiki/",
+      "LOG.md"
+    ]
+  },
+  "intended_mutation": {
+    "path": "data/identity-overrides/merges.json",
+    "operation": "add_aliases",
+    "aliases": {
+      "entity": {
+        "entity_brad-jenkins-maintenance-of-equipment": "entity_brad-jenkins-moe",
+        "entity_cipriano-nyct-president-jan2022": "entity_craig-cipriano-dec2021",
+        "entity_david-keller-dec2023": "entity_david-keller-meeting-doc-68311",
+        "entity_markys-s-central-park-llc-201531": "entity_markys-caviar-meeting-doc-201706",
+        "entity_meeting-doc-100331-kuvershen-ayer": "entity_kuvershen-ayer",
+        "entity_meeting-doc-100366-jaibala-patel": "entity_jaibala-patel-dcfo-mta",
+        "entity_meeting-doc-102806-louis-montanti": "entity_louis-montanti",
+        "entity_meeting-doc-104781-demetrius-crichlow": "entity_demetrius-crichlow",
+        "entity_consolidated-edison-jan2026": "entity_con-edison",
+        "entity_meeting-doc-105861-steven-weiss": "entity_meeting-doc-102706-steven-weiss"
+      }
+    }
+  },
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "all_pass": true,
+    "canonical_records_present": true,
+    "target_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "targets_not_aliases_in_merges_json": true,
+    "targets_not_aliases_in_identity_aliases_table": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 20,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 20,
+    "source_page_blocks_missing": [],
+    "confidence": "high"
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_brad-jenkins-maintenance-of-equipment",
+      "target": "entity_brad-jenkins-moe",
+      "validator_duplicate_key": "entity_brad-jenkins",
+      "reason": "Exact person identity for Brad Jenkins in Maintenance of Equipment procurement records. Both records identify Brad Jenkins as the requesting-department contact/representative for Maintenance of Equipment; the target has the cleaner MOE-focused payload.",
+      "evidence_refs": [
+        "meeting_doc_133351#p006_c0004",
+        "meeting_doc_128886#p001_c0004"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_brad-jenkins"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_cipriano-nyct-president-jan2022",
+      "target": "entity_craig-cipriano-dec2021",
+      "validator_duplicate_key": "entity_craig-cipriano",
+      "reason": "Exact person identity for Craig Cipriano. The alias names him as NYCT President and the target names him as NYCTA Interim President in adjacent official board contexts; the title difference is temporal role churn, not a distinct identity.",
+      "evidence_refs": [
+        "meeting_doc_72581#p003_c0006",
+        "meeting_doc_73021#p005_c0001"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_craig-cipriano"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_david-keller-dec2023",
+      "target": "entity_david-keller-meeting-doc-68311",
+      "validator_duplicate_key": "entity_david-e-keller",
+      "reason": "Exact person identity for David E. Keller. Both records use the full middle initial and identify him as an MTA project manager/division head in financial-plan materials.",
+      "evidence_refs": [
+        "meeting_doc_129201#p005_c0004",
+        "meeting_doc_68311#p005_c0003"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_david-e-keller"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_markys-s-central-park-llc-201531",
+      "target": "entity_markys-caviar-meeting-doc-201706",
+      "validator_duplicate_key": "entity_markys-s-central-park-llc",
+      "reason": "Exact legal/business identity for Markys S. Central Park, LLC dba Marky's Caviar. Both records identify the same GCT retail tenant/operator; the target carries the richer merged business payload.",
+      "evidence_refs": [
+        "meeting_doc_201531#p001_c0008",
+        "meeting_doc_201706#p019_c0008"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_markys-s-central-park-llc",
+          "entity_markys-s-central-park-llc-dba-marky-s-caviar"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-100331-kuvershen-ayer",
+      "target": "entity_kuvershen-ayer",
+      "validator_duplicate_key": "entity_kuvershen-ayer",
+      "reason": "Exact person identity for Kuvershen Ayer. The alias and target both identify Kuvershen Ayer as the MTA Procurement department head/CPO in procurement authorization materials; the target has broader merged evidence.",
+      "evidence_refs": [
+        "meeting_doc_100331#p002_c0001",
+        "meeting_doc_102756#p003_c0001"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_kuvershen-ayer"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-100366-jaibala-patel",
+      "target": "entity_jaibala-patel-dcfo-mta",
+      "validator_duplicate_key": "entity_jaibala-patel",
+      "reason": "Exact person identity for Jaibala Patel. Both records identify Jaibala Patel in the MTA finance/CFO role family; the target is the richer long-lived Jaibala Patel record with many equivalent title aliases.",
+      "evidence_refs": [
+        "meeting_doc_100366#p001_c0004",
+        "meeting_doc_102831#p001_c0004"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_jaibala-patel",
+          "entity_jaibala-patel-chief-financial-officer"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-102806-louis-montanti",
+      "target": "entity_louis-montanti",
+      "validator_duplicate_key": "entity_louis-montanti",
+      "reason": "Exact person identity for Louis Montanti. Both records identify Louis Montanti as MTA Deputy Chief Procurement Officer / procurement operations; the target already carries the richer merged procurement-official payload.",
+      "evidence_refs": [
+        "meeting_doc_102806#p001_c0006",
+        "meeting_doc_105946#p002_c0003"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_louis-montanti",
+          "entity_louis-montanti-deputy-chief-procurement-officer-operations-mta"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-104781-demetrius-crichlow",
+      "target": "entity_demetrius-crichlow",
+      "validator_duplicate_key": "entity_demetrius-crichlow",
+      "reason": "Exact person identity for Demetrius Crichlow. The alias identifies him as Senior Vice President, Subways, NYCT, and the target is the long-lived Demetrius Crichlow person record with matching prior NYCT subway leadership titles and later president titles.",
+      "evidence_refs": [
+        "meeting_doc_104781#p001_c0008",
+        "nyct_key_performance_metrics_doc194001#p004_c0003"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_demetrius-crichlow",
+          "entity_demetrius-crichlow-senior-vice-president-subways-nyct"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_consolidated-edison-jan2026",
+      "target": "entity_con-edison",
+      "validator_duplicate_key": "entity_consolidated-edison-company-of-new-york-inc",
+      "reason": "Exact utility-company identity for Consolidated Edison Company of New York, Inc. The alias uses the full legal name and the target is the established Con Edison record with that same legal-name alias and broader utility-company evidence.",
+      "evidence_refs": [
+        "meeting_doc_197456#p043_c0008",
+        "meeting_doc_146996#p021_c0008"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_consolidated-edison-company-of-new-york-inc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-105861-steven-weiss",
+      "target": "entity_meeting-doc-102706-steven-weiss",
+      "validator_duplicate_key": "entity_steven-weiss",
+      "reason": "Exact person identity for Steven Weiss. Both records identify Steven Weiss as a financial liaison; the target has the richer Metro-North financial liaison / management budget payload.",
+      "evidence_refs": [
+        "meeting_doc_105861#p001_c0004",
+        "meeting_doc_102706#p001_c0004"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_steven-weiss"
+        ]
+      },
+      "confidence": "high"
+    }
+  ],
+  "deferred_low_confidence_or_scope_review": [
+    "Skipped broad agency, bureau, task-force, program, committee, board, office, department, and team labels even when the identity key matched.",
+    "Skipped person-agency collisions where a shared organization/acronym key appears to be affiliation rather than identity.",
+    "Skipped clusters that looked like possible target churn or hierarchy questions rather than exact same-identity aliases.",
+    "Skipped route/corridor/project identity cleanup because this batch is scoped to high-confidence entity aliases only."
+  ],
+  "commands_run_for_this_prep": [
+    "git status --short",
+    "sed -n '1,260p' data/review_notes/codex-identity-batch052-prep.json",
+    "jq summaries over data/identity-overrides/merges.json and data/identity-overrides/do-not-merge.json",
+    "sqlite3 data/canonical.db schema/count/quick_check inspection only",
+    "bun - <<'EOF' <read-only duplicate_global_identity miner using readCanonicalRecordsFromDb, identityKeysForRecord, identity_aliases, do_not_merge, merges.json, and do-not-merge.json> EOF",
+    "bun - <<'EOF' <read-only selected candidate detail inspection for payloads, aliases, evidence_refs, and shared identity keys> EOF",
+    "bun - <<'EOF' <read-only final guard script for all batch053 aliases: canonical record presence, aliases not already in merges or identity_aliases, targets not aliases, do-not-merge hits, shared identity keys, raw blocks, and source-page blocks> EOF",
+    "date -u +%Y-%m-%dT%H:%M:%SZ",
+    "test ! -e data/review_notes/codex-identity-batch053-prep.json"
+  ],
+  "commands_not_run": [
+    "canonicalize",
+    "canonicalize-*",
+    "campaign dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "provider-backed commands or commands using --profile/provider",
+    "materialize",
+    "validate",
+    "export-jsonl",
+    "DB repair/publish"
+  ],
+  "conductor_apply_note": "This prep artifact intentionally does not edit data/identity-overrides/merges.json or generated outputs. Re-run deterministic guards immediately before conductor application because this repo has concurrent cleanup work and generated-output checkpoints may lag durable identity override edits."
+}

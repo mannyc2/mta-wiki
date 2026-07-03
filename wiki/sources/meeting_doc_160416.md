@@ -1,0 +1,139 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-160416"
+record_kind: "source"
+display_name: "MTA Bus Company Diversity and Equal Opportunity 3rd Quarter Progress Report"
+source_id: "meeting_doc_160416"
+source_ids:
+  - "meeting_doc_160416"
+local_observation_id: "source_meeting_doc_160416"
+local_observation_ids:
+  - "source_meeting_doc_160416"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T20:41:21.826Z"
+submission_ids:
+  - "sub_357f29f8329372ba"
+payload:
+  authority_tier: "plan_document"
+  content_type: "progress report"
+  date_text: "December 16, 2024"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2024-12-16"
+    precision: "day"
+    raw_text: "December 16, 2024"
+  published_date_normalized: "2024-12-16"
+  published_date_precision: "day"
+  title: "MTA Bus Company Diversity and Equal Opportunity 3rd Quarter Progress Report"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_160416#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_160416"
+    source_path: "raw/sources/meeting_doc_160416/blocks.jsonl"
+    text_sha256: "sha256:ac5d1655c1832ac3f512d84af361da3336786d7026039c293633865f9a6bda63"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_160416#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_160416"
+    source_path: "raw/sources/meeting_doc_160416/blocks.jsonl"
+    text_sha256: "sha256:96c7e5acbf101ff7c1eda09463bb5273033cb2a8551e2ec50e31e8990b8c390f"
+    text_source: "raw_text"
+---
+
+# MTA Bus Company diversity and equal opportunity report, Q3 2024
+
+source_id: meeting_doc_160416
+citation: cite block ids exactly as shown in square brackets
+document: 56 block(s)
+
+## Page 1
+
+### [p001_c0001] MTA Bus Company Diversity and Equal Opportunity 3 rd Quarter Progress Report
+[p001_c0002] December 16, 2024
+
+## Page 2
+
+### [p002_c0001] MTA Bus Workforce as of September 30, 2024
+[p002_c0002]
+
+```text
+JOB CATEGORY TOTAL Minorities WHITES BLACKS HISPANICS ASIANS AI/AN* NHOPi** 2+ RACES VETERANS PWD*** # % # % # % # % # % # % # % # % # % # % # % Officials & Administrators 183 133 73% 50 27% 52 28% 40 22% 23 13% 0 0% 0 0% 18 10% 12 7% 13 7% F 40 22% 34 19% 6 3% 22 12% 4 2% 3 2% 0 0% 0 0% 5 3% 0 0% 1 1% Professionals M 143 78% 99 54% 44 24% 30 16% 36 20% 20 11% 0 0% 0 0% 13 7% 12 7% 12 7% Technicians F 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% M 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% Protective Services F 5 20% 0 0% 1 20% 3 60% 1 20% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% M 1 20% 0 0% 1 20% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% Paraprofessionals F 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% M 4 80% 4 80% 0 0% 3 60% 1 20% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% Administrative Support F 16 75% 15 94% 1 6% 10 63% 1 6% 2 13% 0 0% 0 0% 2 13% 0 0% 2 13% M 12 25% 11 69% 1 6% 7 44% 1 6% 2 13% 0 0% 0 0% 1 6% 0 0% 2 13% Skilled Craft F 4 25% 4 25% 0 0% 3 19% 0 0% 0 0% 0 0% 0 0% 1 6% 0 0% 0 0% M 4 76% 493 76% 159 24% 227 35% 102 16% 87 13% 6 1% 6 1% 65 10% 17 3% 5 1% Service Maintenance F 652 0% 2 0% 0 0% 2 35% 0 0% 0 0% 0 0% 0 0% 0 0% 1 0% 0 0% M 2 100% 491 75% 159 24% 225 35% 102 16% 87 13% 6 1% 6 1% 65 10% 16 2% 5 1% Total F 3,001 14% 2,727 91% 274 9% 1,621 54% 725 24% 236 8% 14 0% 2 0% 129 4% 42 1% 11 0% M 414 86% 398 13% 16 1% 269 9% 107 4% 3 0% 2 0% 0 0% 17 1% 2 0% 0 0% 2,587 2,329 78% 258 9% 1,352 45% 618 21% 233 9% 12 0% 2 0% 112 4% 40 1% 11 0% 3,940 3,436 87% 504 13% 1,937 49% 882 22% 366 9% 20 1% 8 0% 223 6% 74 2% 33 1%
+```
+[p002_c0003] *American Indian/Alaskan Native
+[p002_c0004] **Native Hawaiian Other Pacific Islander
+[p002_c0005] ***Persons With Disabilities
+[p002_c0006] F represent employees who Self-Identified as Females
+[p002_c0007] M represent employees who Self-Identified as Males
+[p002_c0008] Note: All percentages have been rounded up to the nearest whole number.
+[p002_c0009] _2_
+
+## Page 3
+
+### [p003_c0001] MTA Bus Workforce – 3Q 3,940 strong as of September 30, 2024
+[p003_c0002] 13% (502) self-identified as females
+[p003_c0003] 86% (3,436) self-identified as minorities
+[p003_c0004] 2% (74) veterans
+[p003_c0005] 1% (33) self-identified as a persons with a disability.
+[p003_c0006] _Workforce by Sex and Ethnicity_
+> [p003_c0007] Ethnicity Male Female White 477 27 Black 1,623 314 Hispanic 762 12 Asian 354 27 2+ Race 196 0 NPHI 8 18 AI/AN 2 0
+[p003_c0008] _3_
+
+## Page 4
+
+### [p004_c0001] Hires and Separations
+[p004_c0002] January 1, 2024 – September 30, 2024
+> [p004_c0003] Race/Ethnicity Hires Separations White ~10 ~10 Black ~370 ~150 Hispanic ~110 ~60 Asian ~120 ~50 2+ Race ~180 ~70 NOPHI ~10 ~10 AI/AN ~10 ~10 Legend: — Hires — Separations
+[p004_c0004] Join the team that moves millions
+[p004_c0005] 608 new hires and 299 separations resulted in the following:
+[p004_c0006] A net increase of 34 self-identified female and 275 self-identified male employees.
+[p004_c0007] A net increase of 328 minorities
+[p004_c0008] A net increase of 4 self identified veteran, and
+[p004_c0009] The self identified individuals with a disability has decreased by 1 with 3 separations and 2 new hires.
+
+## Page 5
+
+### [p005_c0001] All Agency Employee Resource Groups Quarterly Highlights
+[p005_c0002] Advancing Black Excellence in the Workplace, October 2024 - B.E.G.I.N. held a panel discussion centered on Advancing Black Excellence in the Workplace Exploring Lessons Moving Forward. Several MTA executives from operations and headquarters took part in this critical dialogue, they shared lessons learned, tips, and helpful hints that shaped their trajectory of their careers.
+[p005_c0003] Making Strides Against Breast Cancer Walk, October 2024 - Empowering Women in Transportation (EWT) led the MTA's participation in the Making Strides for Breast Cancer Walk. This is the second year that EWT spearheaded this initiative. EWT expanded many this years walk to include two walk locations, MTA Breast Cancer Walk T-shirts, and partnerships with other departments. The goal was to raise $30,000 and we raised over $40,000.
+[p005_c0004] Winter Coat & Toy Drive, November 2024 – All Generational hosted their annual winter toy and coat drive to benefit The Henry Street Settlement. Collection boxes were available at all MTA Agencies for employees to drop off their donations
+[p005_c0005] _MTA Strategic Priority – Revive Talent and Culture_
+
+## Page 6
+
+### [p006_c0001] All Agency Employee Resource Groups (ERG) Quarterly Highlights
+[p006_c0002] Veterans ERG Veteran Day Ceremony and Parade, November 2024 - The Veteran ERG held their annual Veteran Day Ceremony to commemorate the service and sacrifice of our Armed Service Veterans. MTA Pipes and Drums, as well as The Color Guard, participated in the observance. Additionally, Veterans took part in the New York City Veterans Day Parade.
+[p006_c0003] Lunch & Learn, November 2024 – Pride Express hosted a lunch and learn detailing the timeline of historical events that shaped the LGBTQ+ rights in the workplace.
+[p006_c0004] Professional Speed Networking, November 2024 - Young Professional (YP) members had the opportunity to meet employees from different agencies and crafts; to introduce themselves describe their roles and responsibilities. The networking opportunity is one method that allows YP ERG to build community.
+[p006_c0005] _MTA Strategic Priority – Revive Talent and Culture_
+
+## Page 7
+
+### [p007_c0001] Complaints and Lawsuits
+[p007_c0002] January 1, 2024 – September 30, 2024
+
+## Page 8
+
+### [p008_c0001] Title VI and Related Discrimination Complaints
+[p008_c0002] 11 Title VI and Related** complaints were filed citing 12 separate bases
+[p008_c0003] The most frequently cited basis was Disability
+[p008_c0004] There were 0 Title VI complaints filed with external agencies and 0 Title VI Lawsuits filed
+[p008_c0005] _Title VI and Related Discrimination Complaints by Bases_
+> [p008_c0006] Basis Internal External Race 3 0 Color 1 0 National Origin 0 0 Sex 1 0 Religion 1 0 Disability 6 0 Age 0 0
+[p008_c0007] Note: *Formal complaints can be filed alleging multiple bases.
+[p008_c0008] Note: **Related Discrimination complaints are filed by customers based on age, disability, religion and sex.
+
+## Page 9
+
+### [p009_c0001] Employment Discrimination Complaints
+[p009_c0002] 4 complaints were filed citing 11 separate bases
+[p009_c0003] The most frequent singularly-cited basis was Disability
+[p009_c0004] There were 0 lawsuits filed
+[p009_c0005] _Internal and External Complaints by Bases_
+> [p009_c0006] Basis Internal External SEXUAL HARASSMENT 0 0 RACE / COLOR 1 1 AGE 1 0 GENDER 0 0 NATIONAL ORIGIN 0 0 DISABILITY 1 0 Retaliation 1 1 Other** 2 2
+[p009_c0007] Note: *Formal complaints and lawsuits can be filed alleging multiple bases.
+[p009_c0008] Note: **“Other” consists of any of the remaining 12 legally protected bases not individually shown. Additionally, numerous incoming matters were also handled during this time period.

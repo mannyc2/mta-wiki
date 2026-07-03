@@ -1,0 +1,62 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:36:53.228Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_16c8816338.md",
+  "cluster_id": "entity_cluster_16c8816338",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_16c8816338",
+    "kind": "entity",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "entity_bronx-cb6-2012-11-webster",
+          "entity_queens-community-board-6"
+        ],
+        "reason": "Contradiction test (test 1): borough differs (Bronx vs Queens). Community boards are specific to a borough; same number in different boroughs are distinct entities. The descriptions and evidence confirm different boroughs."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "entity_bronx-cb6-2012-11-webster",
+        "aliases": [
+          "Community Board 6"
+        ],
+        "reason": "The unqualified name 'Community Board 6' is shared with the Queens CB6 and may cause confusion; borough qualifier is needed for disambiguation."
+      },
+      {
+        "record_id": "entity_queens-community-board-6",
+        "aliases": [
+          "Community Board 6"
+        ],
+        "reason": "Same as above."
+      }
+    ],
+    "missing_fields": [
+      {
+        "record_id": "entity_bronx-cb6-2012-11-webster",
+        "fields": [
+          "borough"
+        ]
+      },
+      {
+        "record_id": "entity_queens-community-board-6",
+        "fields": [
+          "borough"
+        ]
+      }
+    ],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "Two Community Board 6 records from different boroughs (Bronx and Queens) are clearly distinct entities. The contradiction test (borough difference) forces do_not_merge. The unqualified name is a weak alias shared across both records."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-36-38-729Z_1282984-622d9516_identity-review-run_entity-cluster-16c8816338",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-36-38-729Z_2026-06-23T14-36-38-729Z_1282984-622d9516_identity-review-run_entity-cluster-16c8816338.jsonl"
+}

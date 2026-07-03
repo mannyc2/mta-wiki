@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T17-48-04-902Z_1496766-95afb994_ingest_20100921-34th-cac-minutes",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-10T19:30:23.987Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d_corridor_34th_st_20100921",
+        "local_observation_id": "corridor_34th_st_manhattan_20100921_cac",
+        "decision": "new",
+        "rationale": "The observation already resolves to its own base_record_id 'corridor_34th-st-busway'. The source '20100921_34th_cac_minutes' is already listed in that registry record's source_ids, and the alias 'corridor_34th-st-manhattan-20100921-cac' already appears in its record_aliases. The observation describes the same 34th Street corridor in Manhattan referenced as the '34th Street Transitway' — the same real-world entity as the 34th Street Busway. Per canonicalization rules, when the closest match is the observation's own base_record_id, the decision is 'new' (the observation already resolves to that id). No different target_record_id is appropriate.",
+        "evidence_refs": [
+          {
+            "source_id": "20100921_34th_cac_minutes",
+            "block_id": "p001_c0001",
+            "source_quote": "distribution of project materials to businesses and residents along the corridor"
+          },
+          {
+            "source_id": "20100921_34th_cac_minutes",
+            "block_id": "p001_c0009",
+            "source_quote": "distribution of project materials to businesses and residents along the corridor"
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-30-06-082Z_1632336-bb6abb75_canonicalize_2026-06-10t17-48-04-902z-1496766-95afb994-ingest-20100921-34th-cac-minutes-corridor-identity"
+}

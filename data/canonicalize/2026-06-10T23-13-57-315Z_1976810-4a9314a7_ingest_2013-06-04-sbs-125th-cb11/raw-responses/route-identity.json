@@ -1,0 +1,67 @@
+{
+  "run_id": "2026-06-10T23-13-57-315Z_1976810-4a9314a7_ingest_2013-06-04-sbs-125th-cb11",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T03:43:54.311Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "route_m60_sbs_2013_06_125th_cb11",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id route_125th-laguardia-sbs, which exists in registry with matching route M60 SBS. Own base_record_id is closest match.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_04_sbs_125th_cb11",
+            "block_id": "p001_c0001",
+            "source_quote": "M60 Select Bus Service on 125th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2",
+        "local_observation_id": "route_bx15_2013_06_125th_cb11",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id route_bx15-ace, which exists in registry as Bx15 Local. Own base_record_id is closest match.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_04_sbs_125th_cb11",
+            "block_id": "p007_c0006",
+            "source_quote": "Bx15"
+          }
+        ]
+      },
+      {
+        "decision_id": "d3",
+        "local_observation_id": "route_m100_2013_06_125th_cb11",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id route_m100-ace, which exists in registry as M100. Own base_record_id is closest match.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_04_sbs_125th_cb11",
+            "block_id": "p007_c0006",
+            "source_quote": "M100"
+          }
+        ]
+      },
+      {
+        "decision_id": "d4",
+        "local_observation_id": "route_m101_2013_06_125th_cb11",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id route_m101, which exists in registry as M101. Own base_record_id is closest match.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_04_sbs_125th_cb11",
+            "block_id": "p007_c0006",
+            "source_quote": "M101"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-43-05-309Z_2111393-307efcfb_canonicalize_2026-06-10t23-13-57-315z-1976810-4a9314a7-ingest-2013-06-04-sbs-125th-cb11-route-identity"
+}

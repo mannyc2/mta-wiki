@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "entity_cluster_04865957e4",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_04865957e4.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_04865957e4.json",
+  "source_review_run_id": "2026-06-23T14-38-47-609Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "quarantined",
+  "quarantine": {
+    "blocker": "do_not_merge entity_meeting-doc-111901-mta-treasury <> entity_meeting-doc-87841-mta-treasury: record entity_meeting-doc-87841-mta-treasury is not in the current canonical corpus"
+  },
+  "original_merge_groups": [],
+  "original_do_not_merge": [
+    {
+      "record_ids": [
+        "entity_meeting-doc-111901-mta-treasury",
+        "entity_meeting-doc-87841-mta-treasury"
+      ],
+      "reason": "Test 1 (contradiction test) applies: entity_type differs — \"department\" vs \"agency department\" — which is a strong identity field. Per Identity Merge Canon, if any strong identity field differs the records are distinct regardless of name similarity. The first record also has documented part_of_agency relations to MTA and multiple source supports, while the second is isolated; merging would corrupt the graph."
+    }
+  ]
+}

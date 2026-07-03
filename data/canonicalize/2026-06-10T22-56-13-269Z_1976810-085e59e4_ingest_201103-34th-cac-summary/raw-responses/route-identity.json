@@ -1,0 +1,46 @@
+{
+  "run_id": "2026-06-10T22-56-13-269Z_1976810-085e59e4_ingest_201103-34th-cac-summary",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T01:29:12.811Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "m16-new",
+        "local_observation_id": "route_m16_201103",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_m16-mentioned' already exists in the registry and is the closest match. The observation refers to the same M16 route on 34th Street with off-board fare collection mentioned in the source blocks (p001_c0006: 'introduction of off board fare collection on the M16 and M34 bus routes'; p002_c0005: 'Point out the location of the M16 bus stop'). Since the closest match IS the observation's own base_record_id, the decision is new — the observation already resolves to that record.",
+        "evidence_refs": [
+          {
+            "source_id": "201103_34th_cac_summary",
+            "block_id": "p001_c0006",
+            "source_quote": "Mr. Carry provided an overview of improvements to be made on 34 th Street in 2011, including the introduction of off board fare collection on the M16 and M34 bus routes and additional bus lane camera enforcement."
+          },
+          {
+            "source_id": "201103_34th_cac_summary",
+            "block_id": "p002_c0005",
+            "source_quote": "Point out the location of the M16 bus stop in this segment."
+          }
+        ]
+      },
+      {
+        "decision_id": "m34-new",
+        "local_observation_id": "route_m34_local_201103",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_m34-local-201103' already exists in the registry and is the closest match. The observation refers to the M34 local bus route on 34th Street, confirmed by source block p001_c0006: 'introduction of off board fare collection on the M16 and M34 bus routes'. Since the closest match IS the observation's own base_record_id, the decision is new — the observation already resolves to that record.",
+        "evidence_refs": [
+          {
+            "source_id": "201103_34th_cac_summary",
+            "block_id": "p001_c0006",
+            "source_quote": "Mr. Carry provided an overview of improvements to be made on 34 th Street in 2011, including the introduction of off board fare collection on the M16 and M34 bus routes and additional bus lane camera enforcement."
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-26-24-576Z_2111393-3ac2313d_canonicalize_2026-06-10t22-56-13-269z-1976810-085e59e4-ingest-201103-34th-cac-summary-route-identity"
+}

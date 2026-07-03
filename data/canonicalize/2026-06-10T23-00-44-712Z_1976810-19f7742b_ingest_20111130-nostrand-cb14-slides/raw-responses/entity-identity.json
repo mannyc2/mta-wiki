@@ -1,0 +1,67 @@
+{
+  "run_id": "2026-06-10T23-00-44-712Z_1976810-19f7742b_ingest_20111130-nostrand-cb14-slides",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:13:36.195Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "link-nyct-to-mta-nyct",
+        "local_observation_id": "entity_nyct_20111130_cb14",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_mta-nyct is the correct canonical registry record. The registry card already captures MTA New York City Transit (entity_name: 'MTA New York City Transit', entity_type: 'agency') and sources include 20111130_nostrand_cb14_slides. Observation already resolves to its own base — no different target to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "20111130_nostrand_cb14_slides",
+            "block_id": "p001_c0002",
+            "source_quote": "New York City Transit (MTA)"
+          }
+        ]
+      },
+      {
+        "decision_id": "link-nycdot-to-nyc-dot",
+        "local_observation_id": "entity_nycdot_20111130_cb14",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_nyc-dot is the correct canonical registry record. The registry card captures NYC DOT with entity_name 'New York City Department of Transportation', entity_type 'agency', and sources include 20111130_nostrand_cb14_slides. Observation already resolves to its own base.",
+        "evidence_refs": [
+          {
+            "source_id": "20111130_nostrand_cb14_slides",
+            "block_id": "p001_c0003",
+            "source_quote": "NEW YORK CITY DOT"
+          }
+        ]
+      },
+      {
+        "decision_id": "link-cb14-to-cb14-registry",
+        "local_observation_id": "entity_community_board_14_brooklyn_20111130",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_community-board-14-brooklyn-20111130 is identical to the canonical registry record. Same entity_name ('Community Board 14, Brooklyn'), entity_type ('community board'), and source (20111130_nostrand_cb14_slides). Observation already resolves to its own base.",
+        "evidence_refs": [
+          {
+            "source_id": "20111130_nostrand_cb14_slides",
+            "block_id": "p001_c0004",
+            "source_quote": "Presentation to Community Board 14"
+          }
+        ]
+      },
+      {
+        "decision_id": "link-eagle-team-to-eagle-team-2010",
+        "local_observation_id": "entity_eagle_team_20111130",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_eagle-team-2010 is the correct canonical registry record. The registry card has alias entity_eagle-team-20111130 and sources include 20111130_nostrand_cb14_slides. Eagle Team is the same enforcement team. Observation already resolves to its own base.",
+        "evidence_refs": [
+          {
+            "source_id": "20111130_nostrand_cb14_slides",
+            "block_id": "p005_c0003",
+            "source_quote": "NYCT Eagle Team officers in dark blue uniforms with 'NYCT' on the back"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-12-54-514Z_2111393-a284b196_canonicalize_2026-06-10t23-00-44-712z-1976810-19f7742b-ingest-20111130-nostrand-cb14-slides-entity-identity"
+}

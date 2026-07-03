@@ -1,0 +1,463 @@
+{
+  "batch_id": "codex-identity-batch095",
+  "prepared_count": 8,
+  "all_pass": true,
+  "proposed_aliases": [
+    {
+      "kind": "project",
+      "alias_id": "project_webster-avenue-bridge-replacement-dec2023",
+      "target_id": "project_webster-avenue-bridge-replacement",
+      "reason": "Both records identify the same Webster Avenue Bridge Replacement design-build contract. They share the exact project_name, project_type Design-Build, and source blocks with the same bridge location, LIRR Port Washington Branch context, deteriorated condition, and replacement/reconstruction scope. The approved-for-award versus awarded statuses are source-time status snapshots, not a scope conflict.",
+      "evidence": [
+        {
+          "record_id": "project_webster-avenue-bridge-replacement-dec2023",
+          "display_name": "project_webster_avenue_bridge_replacement_dec2023",
+          "project_name": "Webster Avenue Bridge Replacement",
+          "project_type": "Design-Build",
+          "document_time_status": "other",
+          "status": "approved for award",
+          "source_ids": [
+            "meeting_doc_129196"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_129196",
+              "block_id": "p021_c0009",
+              "page_number": 21,
+              "source_quote": "The Webster Avenue Bridge spans the Long Island Rail Road Port Washington Branch in Manhasset, NY."
+            }
+          ]
+        },
+        {
+          "record_id": "project_webster-avenue-bridge-replacement",
+          "display_name": "Webster Avenue Bridge Replacement",
+          "project_name": "Webster Avenue Bridge Replacement",
+          "project_type": "Design-Build",
+          "document_time_status": "other",
+          "status": "awarded",
+          "source_ids": [
+            "meeting_doc_129101"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_129101",
+              "block_id": "p091_c0009",
+              "page_number": 91,
+              "source_quote": "The Webster Avenue Bridge spans the Long Island Rail Road Port Washington Branch in Manhasset, NY."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_throgs-neck-bridge-tower-fender-painting-dec2023",
+      "target_id": "project_tnb-tower-fender-painting",
+      "reason": "Both records identify the same Throgs Neck Bridge tower fender protection and tower painting design-build contract. They share the exact project_name, Design-Build project_type, Trevcon award context, $153,875,200 design-build amount, and 1,189-day contract duration. The status difference is the board approval/award snapshot.",
+      "evidence": [
+        {
+          "record_id": "project_throgs-neck-bridge-tower-fender-painting-dec2023",
+          "display_name": "project_throgs_neck_bridge_tower_fender_painting_dec2023",
+          "project_name": "Tower Fender Protection and Tower Painting at the Throgs Neck Bridge",
+          "project_type": "Design-Build",
+          "document_time_status": "other",
+          "status": "approved for award",
+          "source_ids": [
+            "meeting_doc_129196"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_129196",
+              "block_id": "p038_c0008",
+              "page_number": 38,
+              "source_quote": "Design-Build services for Tower Fender Protection and Tower Painting at the Throgs Neck Bridge"
+            }
+          ]
+        },
+        {
+          "record_id": "project_tnb-tower-fender-painting",
+          "display_name": "Tower Fender Protection and Tower Painting at Throgs Neck Bridge",
+          "project_name": "Tower Fender Protection and Tower Painting at the Throgs Neck Bridge",
+          "project_type": "Design-Build",
+          "document_time_status": "other",
+          "status": "awarded",
+          "source_ids": [
+            "meeting_doc_129101"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_129101",
+              "block_id": "p108_c0005",
+              "page_number": 108,
+              "source_quote": "Description Design-Build Services for Tower Fender Protection and Tower Painting at the Throgs Neck Bridge"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_verrazzano-bridge-tower-painting-dec2023",
+      "target_id": "project_vnb-tower-painting-electrical",
+      "reason": "Both records identify the same Verrazzano-Narrows Bridge tower painting, lighting, and electrical upgrades design-build contract. They share the exact project_name, Design-Build project_type, Ahern contractor context, $128,525,518 design-build amount, and 30-month term. The approved-for-award versus awarded statuses are source-time status snapshots.",
+      "evidence": [
+        {
+          "record_id": "project_verrazzano-bridge-tower-painting-dec2023",
+          "display_name": "project_verrazzano_bridge_tower_painting_dec2023",
+          "project_name": "Tower Painting, Lighting and Electrical Upgrades at the Verrazzano-Narrows Bridge",
+          "project_type": "Design-Build",
+          "document_time_status": "other",
+          "status": "approved for award",
+          "source_ids": [
+            "meeting_doc_129196"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_129196",
+              "block_id": "p040_c0007",
+              "page_number": 40,
+              "source_quote": "Design-Build contract for tower painting, lighting, and electrical upgrades at the Verrazzano-Narrows Bridge"
+            }
+          ]
+        },
+        {
+          "record_id": "project_vnb-tower-painting-electrical",
+          "display_name": "Tower Painting, Lighting and Electrical Upgrades at VNB",
+          "project_name": "Tower Painting, Lighting and Electrical Upgrades at the Verrazzano-Narrows Bridge",
+          "project_type": "Design-Build",
+          "document_time_status": "other",
+          "status": "awarded",
+          "source_ids": [
+            "meeting_doc_129101",
+            "meeting_doc_160206"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_129101",
+              "block_id": "p110_c0005",
+              "page_number": 110,
+              "source_quote": "Description Design-Build Services for Tower Painting, Lighting and Electrical Upgrades at the Verrazzano-Narrows Bridge"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_wakefield-tod-bronx-160301",
+      "target_id": "project_wakefield-tod-development",
+      "reason": "Both records identify the same Wakefield Transit-Oriented Development Project in the Bronx. They share the exact project_name, borough, transit-oriented development project_type, planned document-time status, Webster Leasing participant context, and the same MTA/MNR property and Development Parcels around Bullard Avenue and East 241st Street.",
+      "evidence": [
+        {
+          "record_id": "project_wakefield-tod-bronx-160301",
+          "display_name": "Wakefield Transit-Oriented Development Project",
+          "project_name": "Wakefield Transit-Oriented Development Project",
+          "borough": "Bronx",
+          "project_type": "transit-oriented development",
+          "document_time_status": "planned",
+          "status": "proposed",
+          "source_ids": [
+            "meeting_doc_160301"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_160301",
+              "block_id": "p003_c0007",
+              "page_number": 3,
+              "source_quote": "MTA Transit Oriented Development (\"TOD\") and MNR engaged in extensive discussions with Webster Leasing regarding the Project"
+            }
+          ]
+        },
+        {
+          "record_id": "project_wakefield-tod-development",
+          "display_name": "Wakefield Transit-Oriented Development Project",
+          "project_name": "Wakefield Transit-Oriented Development Project",
+          "borough": "Bronx",
+          "project_type": "transit-oriented development",
+          "document_time_status": "planned",
+          "status": "proposed",
+          "source_ids": [
+            "meeting_doc_160181"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_160181",
+              "block_id": "p002_c0006",
+              "page_number": 2,
+              "source_quote": "The portions of the MTA Property identified as the Fee Parcels are sandwiched between two properties owned by Webster Leasing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_tremont-av-bus-priority-cab4",
+      "target_id": "project_tremont-av-bus-priority",
+      "reason": "Both records identify the same Tremont Av Bus Priority Project final-proposal scope in the Bronx. They share the exact project_name, borough, busway project_type, and matching evidence for the University Av to Bronx River Pkwy corridor context plus the same Third Av/Southern Blvd/Belmont Av busway and gateway-treatment scope.",
+      "evidence": [
+        {
+          "record_id": "project_tremont-av-bus-priority-cab4",
+          "display_name": "Tremont Av Bus Priority Project",
+          "project_name": "Tremont Av Bus Priority Project",
+          "borough": "Bronx",
+          "project_family": "busway",
+          "project_type": "busway",
+          "document_time_status": "other",
+          "status": "Final Proposal presented",
+          "source_ids": [
+            "tremont_ave_bus_priority_cab4_mar2025"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "tremont_ave_bus_priority_cab4_mar2025",
+              "block_id": "p008_c0002",
+              "page_number": 8,
+              "source_quote": "Eastbound busway from Third Av to Southern Blvd; Westbound busway from Southern Blvd to Belmont Av"
+            }
+          ]
+        },
+        {
+          "record_id": "project_tremont-av-bus-priority",
+          "display_name": "Tremont Av Bus Priority Project",
+          "project_name": "Tremont Av Bus Priority Project",
+          "borough": "Bronx",
+          "project_family": "busway",
+          "project_type": "busway",
+          "document_time_status": "other",
+          "status": "final proposal",
+          "source_ids": [
+            "tremont_ave_bus_priority_cb5_jun2024",
+            "tremont_ave_bus_priority_cb5_nov2024",
+            "tremont_ave_bus_priority_cb6_feb2025",
+            "tremont_ave_bus_priority_cb6_jun2024",
+            "tremont_ave_bus_priority_cb6_nov2024"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "tremont_ave_bus_priority_cb6_feb2025",
+              "block_id": "p008_c0002",
+              "page_number": 8,
+              "source_quote": "Eastbound busway from Third Av to Southern Blvd; Westbound busway from Southern Blvd to Belmont Av"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_meeting-doc-170846-ada-station-rehabilitation",
+      "target_id": "project_meeting-doc-189866-ada-station-rehab",
+      "reason": "Both records identify the same LIRR ADA Station Rehabilitation project at Babylon, Hollis, and Forest Hills Stations. They share the exact project_name, ADA station rehabilitation project_type, and source blocks listing the same station set as timetable-supported work. The status wording is source-time timetable support, not a distinct project phase.",
+      "evidence": [
+        {
+          "record_id": "project_meeting-doc-170846-ada-station-rehabilitation",
+          "display_name": "ADA Station Rehabilitation at Babylon, Hollis and Forest Hills Stations",
+          "project_name": "ADA Station Rehabilitation at Babylon, Hollis and Forest Hills Stations",
+          "project_type": "ADA station rehabilitation",
+          "document_time_status": "other",
+          "status": "supported during May 2025 timetable",
+          "source_ids": [
+            "meeting_doc_170846",
+            "meeting_doc_199066"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_170846",
+              "block_id": "p001_c0004",
+              "page_number": 1,
+              "source_quote": "ADA Station Rehabilitation at Babylon, Hollis and Forest Hills Stations"
+            }
+          ]
+        },
+        {
+          "record_id": "project_meeting-doc-189866-ada-station-rehab",
+          "display_name": "ADA Station Rehabilitation at Babylon, Hollis and Forest Hills Stations",
+          "project_name": "ADA Station Rehabilitation at Babylon, Hollis and Forest Hills Stations",
+          "project_type": "ADA station rehabilitation",
+          "document_time_status": "other",
+          "status": "supported during this timetable",
+          "source_ids": [
+            "meeting_doc_189866"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_189866",
+              "block_id": "p001_c0005",
+              "page_number": 1,
+              "source_quote": "ADA Station Rehabilitation at Babylon, Hollis and Forest Hills Stations"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_199066-atlantic-branch-tunnel-lighting",
+      "target_id": "project_meeting-doc-189866-atlantic-branch-tunnel-lighting",
+      "reason": "Both records identify the same Atlantic Branch Tunnel Lighting project. They share the exact project_name and source blocks listing Atlantic Branch Tunnel Lighting among LIRR state-of-good-repair timetable-supported projects. The longer alias-side status is a source-time description of why the timetable supported the same work.",
+      "evidence": [
+        {
+          "record_id": "project_199066-atlantic-branch-tunnel-lighting",
+          "display_name": "Atlantic Branch Tunnel Lighting",
+          "project_name": "Atlantic Branch Tunnel Lighting",
+          "document_time_status": "other",
+          "status": "supported during this timetable to improve state of good repair and reliability",
+          "source_ids": [
+            "meeting_doc_199066"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_199066",
+              "block_id": "p001_c0005",
+              "page_number": 1,
+              "source_quote": "Hall Interlocking Expansion, Atlantic Branch Tunnel Lighting, ADA Station Rehabilitation at Babylon, Hollis and Forest Hills Stations"
+            }
+          ]
+        },
+        {
+          "record_id": "project_meeting-doc-189866-atlantic-branch-tunnel-lighting",
+          "display_name": "Atlantic Branch Tunnel Lighting",
+          "project_name": "Atlantic Branch Tunnel Lighting",
+          "project_type": "tunnel lighting installation",
+          "document_time_status": "other",
+          "status": "supported during this timetable",
+          "source_ids": [
+            "meeting_doc_189866"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_189866",
+              "block_id": "p001_c0005",
+              "page_number": 1,
+              "source_quote": "Hall Interlocking Expansion, Atlantic Branch Tunnel Lighting, ADA Station Rehabilitation at Babylon, Hollis and Forest Hills Stations"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_broadway-junction-accessibility",
+      "target_id": "project_meeting-doc-129106-broadway-junction-accessibility",
+      "reason": "Both records identify the same Broadway Junction Station Accessibility Improvements project in Brooklyn. They share the same project_name, borough, and evidence for temporary/permanent easements from NYC Parks in support of NYCT Broadway Junction accessibility work. The target supplies the detailed capital-project scope with new elevators, ramps, and aerial bridges.",
+      "evidence": [
+        {
+          "record_id": "project_broadway-junction-accessibility",
+          "display_name": "Broadway Junction Station Accessibility Improvements",
+          "project_name": "Broadway Junction Station accessibility improvements",
+          "borough": "Brooklyn",
+          "document_time_status": "active",
+          "status": "ongoing",
+          "source_ids": [
+            "meeting_doc_164916"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_164916",
+              "block_id": "p004_c0010",
+              "page_number": 4,
+              "source_quote": "temporary and permanent easements from New York City Parks in support of accessibility improvements at the Broadway Junction Station"
+            }
+          ]
+        },
+        {
+          "record_id": "project_meeting-doc-129106-broadway-junction-accessibility",
+          "display_name": "Broadway Junction Station Accessibility Improvements",
+          "project_name": "Broadway Junction Station Accessibility Improvements",
+          "borough": "Brooklyn",
+          "project_family": "capital_or_infrastructure",
+          "project_type": "capital project",
+          "document_time_status": "other",
+          "status": "in progress",
+          "source_ids": [
+            "meeting_doc_129041",
+            "meeting_doc_129106",
+            "meeting_doc_160326"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_129106",
+              "block_id": "p096_c0010",
+              "page_number": 96,
+              "source_quote": "capital project to install accessibility improvements at the Broadway Junction subway station complex serving the A, C, J, Z, and L lines"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guard_checks": {
+    "scope": {
+      "allowed_kinds": [
+        "project"
+      ],
+      "proposed_kinds": [
+        "project"
+      ],
+      "project_records_only": true,
+      "prepared_alias_limit": "up to 8"
+    },
+    "checked_against": [
+      "data/identity-overrides/merges.json .aliases.project",
+      "data/canonical.db identity_aliases where kind = 'project'",
+      "data/canonical.db do_not_merge where kind = 'project'",
+      "data/review_notes/codex-identity-batch0*-prep.json through identity093"
+    ],
+    "alias_ids_checked": [
+      "project_webster-avenue-bridge-replacement-dec2023",
+      "project_throgs-neck-bridge-tower-fender-painting-dec2023",
+      "project_verrazzano-bridge-tower-painting-dec2023",
+      "project_wakefield-tod-bronx-160301",
+      "project_tremont-av-bus-priority-cab4",
+      "project_meeting-doc-170846-ada-station-rehabilitation",
+      "project_199066-atlantic-branch-tunnel-lighting",
+      "project_broadway-junction-accessibility"
+    ],
+    "target_ids_checked": [
+      "project_webster-avenue-bridge-replacement",
+      "project_tnb-tower-fender-painting",
+      "project_vnb-tower-painting-electrical",
+      "project_wakefield-tod-development",
+      "project_tremont-av-bus-priority",
+      "project_meeting-doc-189866-ada-station-rehab",
+      "project_meeting-doc-189866-atlantic-branch-tunnel-lighting",
+      "project_meeting-doc-129106-broadway-junction-accessibility"
+    ],
+    "existing_merge_hits": [],
+    "identity_alias_hits": [],
+    "do_not_merge_hits": [],
+    "prior_prep_hits_through_identity093": [],
+    "commands": [
+      {
+        "cmd": "sqlite3 data/canonical.db '.tables'",
+        "result": "Confirmed local DB tables include projects, records, identity_aliases, do_not_merge, evidence_refs, record_sources, and blocks_fts."
+      },
+      {
+        "cmd": "sqlite3 -header -column data/canonical.db \"select count(*) as project_count from projects; select count(*) as db_project_aliases from identity_aliases where kind='project'; select count(*) as db_project_do_not_merge from do_not_merge where kind='project';\"",
+        "result": "Found 2119 project records, 87 existing project aliases, and 1 project do-not-merge row."
+      },
+      {
+        "cmd": "rg -n \"project_(webster-avenue-bridge-replacement-dec2023|throgs-neck-bridge-tower-fender-painting-dec2023|verrazzano-bridge-tower-painting-dec2023|wakefield-tod-bronx-160301|tremont-av-bus-priority-cab4|meeting-doc-170846-ada-station-rehabilitation|199066-atlantic-branch-tunnel-lighting|broadway-junction-accessibility)\" data/review_notes/codex-identity-batch0*-prep.json data/identity-overrides/merges.json",
+        "result": "No selected alias_id appeared in prior Codex identity prep files through identity093 or in data/identity-overrides/merges.json."
+      },
+      {
+        "cmd": "sqlite3 -header -column data/canonical.db \"with pairs(kind,alias,target) as (...) select p.alias,p.target,ia.target as existing_alias_target,dn.reason as do_not_merge_reason,ra.record_kind alias_kind,rt.record_kind target_kind from pairs p left join identity_aliases ia on ia.kind=p.kind and ia.alias=p.alias left join do_not_merge dn on dn.kind=p.kind and ((dn.record_id_a=p.alias and dn.record_id_b=p.target) or (dn.record_id_a=p.target and dn.record_id_b=p.alias)) left join records ra on ra.record_id=p.alias left join records rt on rt.record_id=p.target;\"",
+        "result": "All 8 alias/target ids resolve to record_kind project; existing_alias_target and do_not_merge_reason were empty for all pairs."
+      },
+      {
+        "cmd": "jq -r '.aliases.project // {} | keys[]' data/identity-overrides/merges.json | rg '^(project_webster-avenue-bridge-replacement-dec2023|project_throgs-neck-bridge-tower-fender-painting-dec2023|project_verrazzano-bridge-tower-painting-dec2023|project_wakefield-tod-bronx-160301|project_tremont-av-bus-priority-cab4|project_meeting-doc-170846-ada-station-rehabilitation|project_199066-atlantic-branch-tunnel-lighting|project_broadway-junction-accessibility)$' || true",
+        "result": "No selected alias_id is already mapped as a project alias in data/identity-overrides/merges.json."
+      }
+    ],
+    "policy_checks": {
+      "no_external_provider_llm_calls": true,
+      "no_canonicalize_dedup_identity_review_write_ask_schema_ontology_commands": true,
+      "no_profile_or_provider_commands": true,
+      "no_materialize_export_jsonl_validate": true,
+      "no_log_manifest_merges_canonical_wiki_submissions_db_generated_output_edits": true,
+      "source_time_status_differences_treated_as_non_identity_conflicts_only_when_scope_matched": true,
+      "phase_scope_route_variant_document_audience_conflicts_skipped": true
+    }
+  }
+}

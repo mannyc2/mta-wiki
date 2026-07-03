@@ -1,0 +1,97 @@
+{
+  "note_id": "codex-relation-cleanup-next-prep-20260623",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "scope": "Relation cleanup prep artifact only. Deterministic/Codex-only inspection; no provider-backed commands, materialize, validate, export-jsonl, canonicalize, campaign dedup, identity-review-run, ontology-normalize-run, write, ask, schema, profile/provider commands, generated canonical JSONL/DB/wiki edits, submission journal edits, or retired override edits.",
+  "result": {
+    "status": "no_safe_candidates",
+    "reason": "Current relation endpoint-shape inventory is zero. There are no high-confidence unexpected endpoint-shape or inverse-direction/data-error retire+replacement candidates that are not already retired/replaced.",
+    "proposed_mutation_count": 0,
+    "candidate_count": 0
+  },
+  "current_evidence": {
+    "canonical_relation_inventory": {
+      "method": "Read current canonical JSONL record kinds and relation payload endpoints, then apply the current RELATION_ENDPOINT_SHAPES table from packages/pipeline/src/records/relations.ts. Fully retired submissions were also checked against data/submission-overrides/retired.json.",
+      "canonical_shape_issues_including_retired": 0,
+      "current_actionable_shape_issues_excluding_fully_retired": 0,
+      "actionable_issue_rows": []
+    },
+    "validation_evidence": {
+      "latest_cleanup_log": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl reports after identity batch115-117 orientation correction: validate reports duplicate_global_identity issues and no unexpected_relation_endpoint_shape issues.",
+      "validation_command_run_by_this_task": false
+    },
+    "retired_override_evidence": {
+      "retired_json_path": "data/submission-overrides/retired.json",
+      "retired_count_observed": 232,
+      "latest_endpoint_shape_retire_batch": {
+        "batch_id": "relation061",
+        "source_prep": "data/review_notes/codex-relation-cleanup-batch061-prep.json",
+        "cleanup_log_note": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch061",
+        "retired_submission_ids": [
+          "sub_724ffb54454bb964",
+          "sub_700e95b86f5f821d",
+          "sub_a0a60967ae6b4493"
+        ],
+        "expected_delta": {
+          "unexpected_relation_endpoint_shape": -3
+        },
+        "replacement_submission_ids": []
+      }
+    }
+  },
+  "candidates": [],
+  "proposed_mutations": {
+    "retired_json_additions": [],
+    "submission_jsonl_additions": [],
+    "durable_mutation_paths": [],
+    "expected_issue_delta": {
+      "unexpected_relation_endpoint_shape": 0
+    }
+  },
+  "guard_checks": {
+    "retired_json_not_edited": true,
+    "submission_journals_not_edited": true,
+    "canonical_jsonl_not_edited": true,
+    "canonical_db_not_edited": true,
+    "wiki_not_edited": true,
+    "log_not_edited": true,
+    "no_reproposal_of_already_retired_submissions": true,
+    "no_replacement_collision_checks_needed": true
+  },
+  "commands_run_read_only": [
+    "sed -n '1,220p' LOG.md",
+    "find data -maxdepth 3 for relation cleanup, canonical relation, and retired override files",
+    "rg over relation cleanup notes, rule-or-data notes, cleanup journal, retired overrides, submissions, and canonical relations",
+    "sed -n over packages/pipeline/src/records/relations.ts",
+    "jq structural reads of data/submission-overrides/retired.json",
+    "node deterministic endpoint-shape inventory over data/canonical/*.jsonl and data/submission-overrides/retired.json",
+    "git status --short scoped to review notes, submission overrides, submissions, canonical data, and relation validator file"
+  ],
+  "commands_not_run": [
+    "provider-backed commands",
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "write",
+    "ask",
+    "schema",
+    "profile/provider commands",
+    "materialize",
+    "validate",
+    "export-jsonl"
+  ],
+  "changed_files": [
+    "data/review_notes/codex-relation-cleanup-next-prep-20260623.json"
+  ],
+  "counts": {
+    "files_written": 1,
+    "candidate_count": 0,
+    "retire_only_count": 0,
+    "retire_replace_count": 0,
+    "replacement_submission_count": 0,
+    "retired_json_additions": 0,
+    "submission_jsonl_additions": 0,
+    "expected_unexpected_relation_endpoint_shape_delta": 0
+  }
+}

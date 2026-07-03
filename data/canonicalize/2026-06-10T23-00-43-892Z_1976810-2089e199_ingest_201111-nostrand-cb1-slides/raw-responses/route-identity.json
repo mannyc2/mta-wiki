@@ -1,0 +1,74 @@
+{
+  "run_id": "2026-06-10T23-00-43-892Z_1976810-2089e199_ingest_201111-nostrand-cb1-slides",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T02:12:32.596Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "b44-limited-201111-new",
+        "local_observation_id": "route_b44_limited_201111",
+        "decision": "new",
+        "rationale": "Observation already resolves to route_b44-limited via base_record_id. Source evidence from 201111_nostrand_cb1_slides matches the registry record which carries the same source_id and B44 Limited limited_stop variant. No different record ID to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p002_c0003",
+            "source_quote": "Currently served by B44 bus route"
+          },
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p008_c0003",
+            "source_quote": "B44 Limited will become SBS"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "predecessor_of",
+            "subject_id": "route_b44-limited",
+            "object_id": "route_b44-sbs",
+            "description": "B44 Limited is predecessor to B44 SBS; source says 'B44 Limited will become SBS'",
+            "evidence_refs": [
+              {
+                "source_id": "201111_nostrand_cb1_slides",
+                "block_id": "p008_c0003",
+                "source_quote": "B44 Limited will become SBS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "b44-local-201111-new",
+        "local_observation_id": "route_b44_local_201111",
+        "decision": "new",
+        "rationale": "Observation already resolves to route_b44-local via base_record_id. Source evidence describes B44 local buses turning around at Flushing Avenue, consistent with the registry record for B44 Local. No different record ID to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p009_c0002",
+            "source_quote": "B44 local buses will turn around at Flushing Avenue, as they do now"
+          }
+        ]
+      },
+      {
+        "decision_id": "b44-sbs-201111-new",
+        "local_observation_id": "route_b44_sbs_201111_proposed",
+        "decision": "new",
+        "rationale": "Observation already resolves to route_b44-sbs via base_record_id. Source evidence describes proposed B44 SBS on Nostrand Ave/Rogers Ave corridor, matching the registry record's B44 Select Bus Service. No different record ID to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p008_c0003",
+            "source_quote": "B44 Limited will become SBS"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-11-52-706Z_2111393-5c2d60c5_canonicalize_2026-06-10t23-00-43-892z-1976810-2089e199-ingest-201111-nostrand-cb1-slides-route-identity"
+}

@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "route_cluster_67da6e1a68",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_67da6e1a68.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_67da6e1a68.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "route_m86-local",
+        "route_m86-sbs"
+      ],
+      "reason": "Different service variants (local vs sbs). Per route identity rules, identity = base route id + service variant, and different variants never merge. This is a contradiction in a strong identity field (service_variant)."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "The two records share the base route M86 but have explicit service variants: one is 'local', the other is 'sbs'. The Identity Merge Canon for routes states that different variants never merge. The relation context further indicates the local service was replaced by SBS, confirming they are distinct objects. All lifecycle records within each record (date-suffixed aliases) correctly belong to their respective variant records. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

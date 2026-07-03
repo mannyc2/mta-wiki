@@ -1,0 +1,90 @@
+{
+  "note_id": "codex-relation-assertion-metric-status-2026-07-01",
+  "date": "2026-07-01",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "banned_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed model calls"
+  ],
+  "bucket": "metric_context.has_metric assertion_status unknown cleanup",
+  "source_subagent": "019f1b15-a693-7b10-8623-1c2a6e34bdba",
+  "baseline_after_prior_slices": {
+    "relation_assertion_unknown_total": 8468,
+    "metric_context_has_metric_unknown": 5647,
+    "validate_issues": 0
+  },
+  "implemented_rule": {
+    "name": "scoped same-source has_metric status inference",
+    "file": "packages/pipeline/src/records/assertion-qualifiers.ts",
+    "common_guards": [
+      "relation_family is metric_context",
+      "relation_kind is has_metric",
+      "object is metric_claim",
+      "subject is entity, route, or corridor",
+      "metric includes relation source_id",
+      "relation has evidence from record.source_id",
+      "metric has evidence from record.source_id",
+      "relation description text is not used for metric lifecycle classification"
+    ],
+    "status_precedence": [
+      "proposed",
+      "planned",
+      "delivered"
+    ],
+    "proposed_signals": [
+      "final_proposed_budget",
+      "as_proposed",
+      "exact proposed/draft/concept metric label tokens",
+      "proposal_amount, initial_proposal_amount, original_proposal_amount metric names"
+    ],
+    "planned_signals": [
+      "forecast/projected labels that are not actual-vs-forecast comparisons",
+      "adopted budget or exact budget labels that are not actual-vs-budget/budget-variance comparisons",
+      "commitment goals, diversity goals, savings targets, target returns, and exact goal/target metric names that are not actual goal comparisons"
+    ],
+    "delivered_signals": [
+      "actual/current/existing/observed/reported/completed/implemented/installed/opened/active/achieved/incurred/spent/favorable/unfavorable/ytd/as_of/year_to_date/through-month metric text",
+      "before/after/baseline/pre/post comparison observations paired with change words such as increased/decreased/reduced/improved/declined/faster/slower/saved/lost/above/below/exceeding"
+    ],
+    "explicit_holds": [
+      "comparison_period alone, including Adopted Budget, is ignored",
+      "goal comparison labels such as above_goal remain unknown",
+      "savings_from_initial_proposal and related proposal-savings labels do not become proposed",
+      "claim and event subjects remain held",
+      "missing same-source relation or metric evidence remains held",
+      "relation-description-only actual/planned/proposed signals remain held"
+    ]
+  },
+  "post_materialize": {
+    "relation_assertion_unknown_total": 6372,
+    "metric_context_has_metric_unknown": 3551,
+    "metric_context_unknown": 3565,
+    "metric_context_has_metric_delivered_total": 1542,
+    "metric_context_has_metric_planned_total": 626,
+    "metric_context_has_metric_proposed_total": 175,
+    "moved_from_unknown_total": 2096,
+    "validate_issues": 0
+  },
+  "verification": {
+    "focused_tests": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts passed: 55 tests, 293 expect calls",
+    "typecheck": "bun run typecheck passed",
+    "materialize": "bun packages/cli/src/cli.ts materialize completed cleanly; Materialized 93092/98102 submissions; retired submissions skipped: 243; SQLite FTS quick_check: ok",
+    "validate": "bun packages/cli/src/cli.ts validate reported Issues: 0"
+  },
+  "intentionally_unresolved": [
+    "3551 metric_context.has_metric rows remain unknown because they lack safe lifecycle labels/evidence or need additional domain-specific semantics",
+    "metric rows with claim/event subjects remain held",
+    "capital commitments, filed complaints, procurement estimates/options, and actual-looking ridership rows with weak text remain future scout lanes"
+  ],
+  "next_lanes": [
+    "audit remaining metric_context.has_metric unknowns for one more narrow delivered rule such as filed complaints or explicit actual ridership",
+    "audit agency_role and claim_context residuals after the metric reduction",
+    "continue validating after each deterministic materialization slice"
+  ]
+}

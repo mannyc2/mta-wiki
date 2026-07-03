@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "project_cluster_103b7e6ab5",
+  "kind": "project",
+  "packet_path": "data/identity-review/packets/project_cluster_103b7e6ab5.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/project_cluster_103b7e6ab5.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "medium"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "project_jamaica-capacity-improvement",
+        "project_jamaica-capacity-improvement-phase2"
+      ],
+      "reason": "Shared project_name 'Jamaica Capacity Improvement Project' is not sufficient; the second record explicitly designates Phase 2 in its display name, source labels, and evidence descriptions. Per the per-kind rule for projects, distinct phases count as one project unless sources treat a phase as its own named undertaking. Here, sources refer to 'Phase II project' and 'Phase 2 of the Jamaica Capacity Improvement Project' as a distinct undertaking with separate scope (property acquisition, capital project) and separate events, compared to the first record's scope (switch installations, temporary track work). Thus they are related but distinct project phases and should not be merged."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "Both records share the base project name 'Jamaica Capacity Improvement Project', meeting test 2 conditions for same object. However, the second record's evidence and source labels treat Phase 2 as a distinct named undertaking (e.g., 'JCI Phase II project') with its own scope and timeline. The per-kind rule for projects carves out an exception when sources treat a phase as its own undertaking. Because the evidence shows separate foci (first: switch installations near Jamaica; second: property acquisition for Phase 2) and separate sets of meetings, they cannot be merged into a single canonical record. Decision: do_not_merge. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

@@ -1,0 +1,358 @@
+{
+  "note_id": "codex-canonical-cleanup-2026-06-22-identity-alias-batch-061-prep",
+  "created_at": "2026-06-22T21:52:02Z",
+  "status": "ready_for_conductor_apply",
+  "lane": "identity_prep_only",
+  "batch": "identity-batch061",
+  "scope": {
+    "allowed_write": "data/review_notes/codex-identity-batch061-prep.json",
+    "durable_inputs_mutated": false,
+    "generated_outputs_mutated": false,
+    "provider_backed_commands_run": false,
+    "forbidden_commands_run": []
+  },
+  "context": {
+    "source_backlog": "unresolved duplicate_global_identity canonical backlog",
+    "candidate_mining_summary": {
+      "current_entity_records_scanned_from_jsonl": 2598,
+      "current_alias_overrides_considered": 369,
+      "db_identity_alias_rows_considered": 329,
+      "prior_prep_aliases_considered_through_batch060": 110,
+      "candidate_pairs_after_alias_and_do_not_merge_filters": 630,
+      "selected_high_confidence_candidates": 10
+    },
+    "selection_policy": [
+      "Prefer exact named-person aliases with shared deterministic identity keys and source evidence on both sides.",
+      "Exclude broad agencies, programs, committees, target-churn cases, aliases already mapped in merges.json/current identity_aliases/prior prep, and do-not-merge suppressed pairs.",
+      "Defer nickname-adjacent or field-contaminated cases unless source evidence makes identity unambiguous."
+    ]
+  },
+  "intended_mutation": {
+    "aliases": {
+      "entity": {
+        "entity_michael-reilly-lirr-finance": "entity_michael-reilly-financial-liaison",
+        "entity_meeting-doc-186686-michael-reilly": "entity_michael-reilly-financial-liaison",
+        "entity_michael-reilly-lirr-jun2025": "entity_michael-reilly-financial-liaison",
+        "entity_meeting-doc-107531-louis-montanti": "entity_louis-montanti",
+        "entity_meeting-doc-111826-louis-montanti": "entity_louis-montanti",
+        "entity_meeting-doc-131566-louis-montanti": "entity_louis-montanti",
+        "entity_meeting-doc-154986-louis-montanti": "entity_louis-montanti",
+        "entity_meeting-doc-193996-louis-montanti": "entity_louis-montanti",
+        "entity_meeting-doc-196901-louis-montanti": "entity_louis-montanti",
+        "entity_meeting-doc-160261-olga-chernat": "entity_meeting-doc-129041-olga-chernat"
+      }
+    }
+  },
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "canonical_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "aliases_not_in_prior_prep_artifacts": true,
+    "targets_not_aliases_in_merges_json": true,
+    "targets_not_aliases_in_identity_aliases_table": true,
+    "targets_not_aliases_in_prior_prep_artifacts": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 20,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 20,
+    "source_page_blocks_missing": [],
+    "all_pass": true
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_michael-reilly-lirr-finance",
+      "target": "entity_michael-reilly-financial-liaison",
+      "validator_duplicate_key": "entity_michael-reilly",
+      "reason": "Both records identify Michael Reilly in LIRR finance/financial liaison context; exact name key and role-specific key overlap make the alias high-confidence.",
+      "evidence_refs": [
+        "meeting_doc_102701#p001_c0004",
+        "meeting_doc_100296#p001_c0004"
+      ],
+      "shared_identity_keys": [
+        "entity_michael-reilly",
+        "entity_michael-reilly-financial-liaison"
+      ],
+      "guards": {
+        "alias_not_already_mapped": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_not_in_prior_prep_through_batch060": true,
+        "target_not_alias_mapped": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-186686-michael-reilly",
+      "target": "entity_michael-reilly-financial-liaison",
+      "validator_duplicate_key": "entity_michael-reilly",
+      "reason": "Meeting-doc scoped Michael Reilly record resolves to the same financial liaison identity by exact name and role-key overlap.",
+      "evidence_refs": [
+        "meeting_doc_186686#p001_c0004",
+        "meeting_doc_100296#p001_c0004"
+      ],
+      "shared_identity_keys": [
+        "entity_michael-reilly",
+        "entity_michael-reilly-financial-liaison"
+      ],
+      "guards": {
+        "alias_not_already_mapped": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_not_in_prior_prep_through_batch060": true,
+        "target_not_alias_mapped": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_michael-reilly-lirr-jun2025",
+      "target": "entity_michael-reilly-financial-liaison",
+      "validator_duplicate_key": "entity_michael-reilly",
+      "reason": "June 2025 LIRR-scoped Michael Reilly record shares the exact person identity key with the established financial liaison target.",
+      "evidence_refs": [
+        "meeting_doc_179516#p001_c0004",
+        "meeting_doc_100296#p001_c0004"
+      ],
+      "shared_identity_keys": [
+        "entity_michael-reilly"
+      ],
+      "guards": {
+        "alias_not_already_mapped": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_not_in_prior_prep_through_batch060": true,
+        "target_not_alias_mapped": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-107531-louis-montanti",
+      "target": "entity_louis-montanti",
+      "validator_duplicate_key": "entity_louis-montanti",
+      "reason": "Meeting-doc scoped Louis Montanti record and canonical Louis Montanti target share exact name and procurement-officer role identity keys.",
+      "evidence_refs": [
+        "meeting_doc_107531#p002_c0001",
+        "meeting_doc_102806#p001_c0006"
+      ],
+      "shared_identity_keys": [
+        "entity_louis-montanti",
+        "entity_louis-montanti-deputy-chief-procurement-officer-operations-mta"
+      ],
+      "guards": {
+        "alias_not_already_mapped": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_not_in_prior_prep_through_batch060": true,
+        "target_not_alias_mapped": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-111826-louis-montanti",
+      "target": "entity_louis-montanti",
+      "validator_duplicate_key": "entity_louis-montanti",
+      "reason": "Meeting-doc scoped Louis Montanti record shares the exact person identity key with the canonical Louis Montanti target.",
+      "evidence_refs": [
+        "meeting_doc_111826#p002_c0002",
+        "meeting_doc_102806#p001_c0006"
+      ],
+      "shared_identity_keys": [
+        "entity_louis-montanti"
+      ],
+      "guards": {
+        "alias_not_already_mapped": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_not_in_prior_prep_through_batch060": true,
+        "target_not_alias_mapped": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-131566-louis-montanti",
+      "target": "entity_louis-montanti",
+      "validator_duplicate_key": "entity_louis-montanti",
+      "reason": "Meeting-doc scoped Louis Montanti record shares the exact person identity key with the canonical Louis Montanti target.",
+      "evidence_refs": [
+        "meeting_doc_131566#p002_c0003",
+        "meeting_doc_102806#p001_c0006"
+      ],
+      "shared_identity_keys": [
+        "entity_louis-montanti"
+      ],
+      "guards": {
+        "alias_not_already_mapped": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_not_in_prior_prep_through_batch060": true,
+        "target_not_alias_mapped": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-154986-louis-montanti",
+      "target": "entity_louis-montanti",
+      "validator_duplicate_key": "entity_louis-montanti",
+      "reason": "Meeting-doc scoped Louis Montanti record shares the exact person identity key with the canonical Louis Montanti target.",
+      "evidence_refs": [
+        "meeting_doc_154986#p001_c0002",
+        "meeting_doc_102806#p001_c0006"
+      ],
+      "shared_identity_keys": [
+        "entity_louis-montanti"
+      ],
+      "guards": {
+        "alias_not_already_mapped": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_not_in_prior_prep_through_batch060": true,
+        "target_not_alias_mapped": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-193996-louis-montanti",
+      "target": "entity_louis-montanti",
+      "validator_duplicate_key": "entity_louis-montanti",
+      "reason": "Meeting-doc scoped Louis Montanti record shares the exact person identity key with the canonical Louis Montanti target.",
+      "evidence_refs": [
+        "meeting_doc_193996#p001_c0002",
+        "meeting_doc_102806#p001_c0006"
+      ],
+      "shared_identity_keys": [
+        "entity_louis-montanti"
+      ],
+      "guards": {
+        "alias_not_already_mapped": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_not_in_prior_prep_through_batch060": true,
+        "target_not_alias_mapped": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-196901-louis-montanti",
+      "target": "entity_louis-montanti",
+      "validator_duplicate_key": "entity_louis-montanti",
+      "reason": "Meeting-doc scoped Louis Montanti record shares the exact person identity key with the canonical Louis Montanti target.",
+      "evidence_refs": [
+        "meeting_doc_196901#p003_c0001",
+        "meeting_doc_102806#p001_c0006"
+      ],
+      "shared_identity_keys": [
+        "entity_louis-montanti"
+      ],
+      "guards": {
+        "alias_not_already_mapped": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_not_in_prior_prep_through_batch060": true,
+        "target_not_alias_mapped": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-160261-olga-chernat",
+      "target": "entity_meeting-doc-129041-olga-chernat",
+      "validator_duplicate_key": "entity_olga-chernat",
+      "reason": "Both meeting-doc scoped records identify Olga Chernat, including deputy chief financial services role identity overlap.",
+      "evidence_refs": [
+        "meeting_doc_160261#p001_c0002",
+        "meeting_doc_129041#p001_c0009"
+      ],
+      "shared_identity_keys": [
+        "entity_olga-chernat",
+        "entity_olga-chernat-deputy-chief-financial-services"
+      ],
+      "guards": {
+        "alias_not_already_mapped": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_not_in_prior_prep_through_batch060": true,
+        "target_not_alias_mapped": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      },
+      "confidence": "high"
+    }
+  ],
+  "deferred_low_confidence_examples": [
+    {
+      "candidate": "LIRR broad/subsidiary agency aliases",
+      "reason": "Broad agency/subsidiary identities are outside this high-confidence named-entity batch and risk collapsing agency context."
+    },
+    {
+      "candidate": "entity_meeting-doc-richard-davey -> entity_richard-davey-nyct-president",
+      "reason": "Deferred due unrelated merged-field contamination in candidate payload despite name overlap."
+    },
+    {
+      "candidate": "Robert/Rob Free variants",
+      "reason": "Deferred as nickname-adjacent cases to avoid target churn without stronger source-side identity confirmation."
+    }
+  ],
+  "commands_used_for_evidence": [
+    {
+      "command": "test ! -e data/review_notes/codex-identity-batch061-prep.json && echo missing || echo exists",
+      "purpose": "Confirmed the batch061 prep artifact did not already exist before writing.",
+      "result": "missing"
+    },
+    {
+      "command": "jq '.intended_mutation.aliases.entity, .aggregate_guard_results' data/review_notes/codex-identity-batch060-prep.json",
+      "purpose": "Excluded prior batch060 aliases and checked prior guard shape.",
+      "result": "batch060 contained 10 aliases with all aggregate guards passing."
+    },
+    {
+      "command": "bun --eval '<read-only duplicate_global_identity mining over readCanonicalRecordsFromJsonl(), identityKeysForRecord(), current merges.json, read-only identity_aliases, prior prep aliases through batch060, and do-not-merge guards>'",
+      "purpose": "Mined unresolved duplicate_global_identity candidates while excluding already mapped, current identity_aliases, prior prep, and do-not-merge pairs.",
+      "result": "2598 current entity records scanned; 630 candidate pairs after filters; 10 high-confidence candidates selected."
+    },
+    {
+      "command": "bun --eval '<read-only final guard script for canonical record presence, alias/target guard checks, prior prep exclusion, shared identity keys, raw source blocks, and source-page blocks>'",
+      "purpose": "Verified selected aliases and evidence before writing this prep artifact.",
+      "result": "all_pass true; 20 raw source blocks checked, 20 source-page blocks checked, no missing evidence blocks."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "purpose": "Stamped this prep artifact.",
+      "result": "2026-06-22T21:52:02Z"
+    }
+  ],
+  "commands_intentionally_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "export-jsonl",
+    "DB repair or publish commands",
+    "provider-backed post-ingest commands",
+    "identity-review-run or apply commands"
+  ]
+}

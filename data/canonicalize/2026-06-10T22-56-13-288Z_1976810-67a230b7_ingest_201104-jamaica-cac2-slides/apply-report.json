@@ -1,0 +1,21 @@
+{
+  "run_id": "2026-06-10T22-56-13-288Z_1976810-67a230b7_ingest_201104-jamaica-cac2-slides",
+  "generated_at": "2026-06-11T04:23:53.118Z",
+  "dry_run": false,
+  "wrote": true,
+  "decision_count": 16,
+  "reviewed_count": 9,
+  "alias_additions": [],
+  "aliases_already_present": [],
+  "do_not_merge_additions": [],
+  "relation_submissions": 9,
+  "quarantined": 0,
+  "conflicts": [],
+  "paths": {
+    "merges": "data/identity-overrides/merges.json",
+    "do_not_merge": "data/identity-overrides/do-not-merge.json",
+    "relation_submissions_jsonl": "data/submissions/2026-06-10T22-56-13-288Z_1976810-67a230b7_ingest_201104-jamaica-cac2-slides_canonicalize.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T22-56-13-288Z_1976810-67a230b7_ingest_201104-jamaica-cac2-slides/apply-quarantine.jsonl",
+    "apply_report": "data/canonicalize/2026-06-10T22-56-13-288Z_1976810-67a230b7_ingest_201104-jamaica-cac2-slides/apply-report.json"
+  }
+}

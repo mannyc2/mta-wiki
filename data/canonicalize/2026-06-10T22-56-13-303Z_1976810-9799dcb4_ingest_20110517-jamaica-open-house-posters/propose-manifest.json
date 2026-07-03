@@ -1,0 +1,70 @@
+{
+  "run_id": "2026-06-10T22-56-13-303Z_1976810-9799dcb4_ingest_20110517-jamaica-open-house-posters",
+  "generated_at": "2026-06-11T01:41:17.933Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 5,
+  "completed": 5,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 61,
+  "validated_decision_count": 60,
+  "quarantined_decision_count": 1,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T22-56-13-303Z_1976810-9799dcb4_ingest_20110517-jamaica-open-house-posters",
+    "manifest": "data/canonicalize/2026-06-10T22-56-13-303Z_1976810-9799dcb4_ingest_20110517-jamaica-open-house-posters/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T22-56-13-303Z_1976810-9799dcb4_ingest_20110517-jamaica-open-house-posters/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T22-56-13-303Z_1976810-9799dcb4_ingest_20110517-jamaica-open-house-posters/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T22-56-13-303Z_1976810-9799dcb4_ingest_20110517-jamaica-open-house-posters/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 2,
+      "validated_decision_count": 2,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-303Z_1976810-9799dcb4_ingest_20110517-jamaica-open-house-posters/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-30-12-890Z_2111393-099fee95_canonicalize_2026-06-10t22-56-13-303z-1976810-9799dcb4-ingest-20110517-jamaica-open-house-posters-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-303Z_1976810-9799dcb4_ingest_20110517-jamaica-open-house-posters/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-30-12-890Z_2111393-89fd5280_canonicalize_2026-06-10t22-56-13-303z-1976810-9799dcb4-ingest-20110517-jamaica-open-house-posters-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 4,
+      "validated_decision_count": 4,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-303Z_1976810-9799dcb4_ingest_20110517-jamaica-open-house-posters/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-30-12-890Z_2111393-968445fa_canonicalize_2026-06-10t22-56-13-303z-1976810-9799dcb4-ingest-20110517-jamaica-open-house-posters-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 23,
+      "validated_decision_count": 22,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-303Z_1976810-9799dcb4_ingest_20110517-jamaica-open-house-posters/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-30-12-890Z_2111393-6a7ad651_canonicalize_2026-06-10t22-56-13-303z-1976810-9799dcb4-ingest-20110517-jamaica-open-house-posters-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 31,
+      "validated_decision_count": 31,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-303Z_1976810-9799dcb4_ingest_20110517-jamaica-open-house-posters/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-30-12-890Z_2111393-650bbf24_canonicalize_2026-06-10t22-56-13-303z-1976810-9799dcb4-ingest-20110517-jamaica-open-house-posters-relation-linker"
+    }
+  ]
+}

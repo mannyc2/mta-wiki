@@ -1,0 +1,31 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:35:13.869Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_edccff6599.md",
+  "cluster_id": "entity_cluster_edccff6599",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_edccff6599",
+    "kind": "entity",
+    "merge_groups": [
+      [
+        "entity_s-chu-cgc-oct2025",
+        "entity_s-chu-committee-member"
+      ]
+    ],
+    "do_not_merge": [],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "Both records have identical strong identity fields (entity_name: 'S. Chu', entity_type: 'person') and share the identity key 'entity_s-chu'. The suffixes '-cgc-oct2025' and '-committee-member' are source-local observation id suffixes, not indicating distinct objects. Per same-object test (test 2), these are lifecycle records or different source references of the same person, so they merge."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-35-08-069Z_1282984-56a52a83_identity-review-run_entity-cluster-edccff6599",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-35-08-069Z_2026-06-23T14-35-08-069Z_1282984-56a52a83_identity-review-run_entity-cluster-edccff6599.jsonl"
+}

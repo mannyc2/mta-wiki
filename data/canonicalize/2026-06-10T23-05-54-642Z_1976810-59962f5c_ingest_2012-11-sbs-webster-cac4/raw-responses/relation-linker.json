@@ -1,0 +1,574 @@
+{
+  "run_id": "2026-06-10T23-05-54-642Z_1976810-59962f5c_ingest_2012-11-sbs-webster-cac4",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T03:08:32.493Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "rel-bx41-daily-ridership-to-route",
+        "local_observation_id": "metric_bx41_daily_ridership",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_bx41-ltd-webster-2012",
+            "object_id": "metric_bx41-daily-ridership",
+            "description": "Bx41 route carries over 22,000 daily riders",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p005_c0002",
+                "source_quote": "Based on the existing Bx41 route that carries over 22,000 daily riders"
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0002 explicitly names the existing Bx41 route and states over 22,000 daily riders. The route record route_bx41-ltd-webster-2012 covers the Bx41 Limited on Webster Avenue and includes this source.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p005_c0002",
+            "source_quote": "Based on the existing Bx41 route that carries over 22,000 daily riders"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-webster-population-to-corridor",
+        "local_observation_id": "metric_webster_corridor_population",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_webster-corridor-population",
+            "description": "200,000 residents within 10-minute walk of Webster Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p005_c0002",
+                "source_quote": "Within a 10-minute walk of the corridor: – 200,000 residents"
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0002 describes the Webster Avenue corridor and states 200,000 residents within a 10-minute walk. The corridor_webster-ave-bronx record covers this corridor and includes this source.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p005_c0002",
+            "source_quote": "Within a 10-minute walk of the corridor: – 200,000 residents"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-webster-length-to-corridor",
+        "local_observation_id": "metric_webster_corridor_length",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_webster-corridor-length",
+            "description": "Webster Avenue corridor is 5.3 miles from The Hub to Williamsbridge",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p005_c0002",
+                "source_quote": "5.3 miles from The Hub to Williamsbridge"
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0002 states the corridor length in the context of describing the Webster Avenue corridor. The corridor_webster-ave-bronx record covers this corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p005_c0002",
+            "source_quote": "5.3 miles from The Hub to Williamsbridge"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-webster-carfree-to-corridor",
+        "local_observation_id": "metric_webster_car_free_households",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_webster-car-free-households",
+            "description": "71% of households near Webster Avenue corridor do not own a car",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p005_c0002",
+                "source_quote": "71% of households do not own a car"
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0002 states this metric in the context of the Webster Avenue corridor. The corridor_webster-ave-bronx record covers this corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p005_c0002",
+            "source_quote": "71% of households do not own a car"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-webster-transit-commuters-to-corridor",
+        "local_observation_id": "metric_webster_transit_commuters",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_webster-transit-commuters",
+            "description": "61% of residents near Webster Avenue corridor commute by transit",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p005_c0002",
+                "source_quote": "61% of residents commute by transit"
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0002 states this metric in the context of the Webster Avenue corridor. The corridor_webster-ave-bronx record covers this corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p005_c0002",
+            "source_quote": "61% of residents commute by transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-sbs-speed-to-project",
+        "local_observation_id": "metric_sbs_speed_improvement_15_20",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "metric_sbs-speed-improvement-15-20",
+            "description": "SBS results show 15-20% speed improvement across corridors, cited in Webster SBS CAC presentation",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p004_c0002",
+                "source_quote": "Speed: 15- 20% faster"
+              }
+            ]
+          }
+        ],
+        "rationale": "p004_c0002 presents general SBS speed results in the Webster Avenue SBS CAC presentation to build support for the project. The project_12-webster-ave record includes this source.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p004_c0002",
+            "source_quote": "Speed: 15- 20% faster"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-sbs-ridership-to-project",
+        "local_observation_id": "metric_sbs_ridership_increase_5_10",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "metric_sbs-ridership-increase-5-10",
+            "description": "SBS results show 5-10% ridership increase in first year, cited in Webster SBS CAC presentation",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p004_c0003",
+                "source_quote": "Ridership: 5-10% increase in first year"
+              }
+            ]
+          }
+        ],
+        "rationale": "p004_c0003 presents general SBS ridership results in the Webster Avenue SBS CAC presentation. The project_12-webster-ave record includes this source.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p004_c0003",
+            "source_quote": "Ridership: 5-10% increase in first year"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-sbs-satisfaction-to-project",
+        "local_observation_id": "metric_sbs_customer_satisfaction_95",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "metric_sbs-customer-satisfaction-95",
+            "description": "SBS results show over 95% customer satisfaction, cited in Webster SBS CAC presentation",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p004_c0004",
+                "source_quote": "Customer Satisfaction: over 95% satisfied or very satisfied"
+              }
+            ]
+          }
+        ],
+        "rationale": "p004_c0004 presents general SBS customer satisfaction results in the Webster Avenue SBS CAC presentation. The project_12-webster-ave record includes this source.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p004_c0004",
+            "source_quote": "Customer Satisfaction: over 95% satisfied or very satisfied"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-sbs-safety-to-first-second-ave",
+        "local_observation_id": "metric_sbs_safety_injury_reduction_21",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "metric_sbs-safety-injury-reduction-21",
+            "description": "21% reduction in traffic injuries on 1st and 2nd Avenues with full SBS design treatments",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p004_c0005",
+                "source_quote": "Safety: 1 st and 2 nd Avenues saw a 21% reduction in traffic injuries in sections with full design treatments"
+              }
+            ]
+          }
+        ],
+        "rationale": "p004_c0005 explicitly names 1st and 2nd Avenues and reports a 21% reduction in traffic injuries from SBS treatments. The metric specifically describes results from the First/Second Avenue SBS project (project_first-second-ave-sbs).",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p004_c0005",
+            "source_quote": "Safety: 1 st and 2 nd Avenues saw a 21% reduction in traffic injuries in sections with full design treatments"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-offset-bus-lane-claim-to-project",
+        "local_observation_id": "claim_offset_bus_lanes_benefits",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "claim_offset-bus-lanes-benefits",
+            "description": "Offset bus lanes benefits for Webster Avenue SBS design",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p012_c0002",
+                "source_quote": "1. Offset bus lanes improve bus speed 2. Bus bulbs allow for high-quality SBS stations 3. Maintains curbside access and parking"
+              }
+            ]
+          }
+        ],
+        "rationale": "p012_c0002 lists benefits of the proposed design on the page titled 'Benefits of proposed design' in the Webster Avenue SBS CAC presentation. The subject of the claim is the Webster Avenue SBS design (project_12-webster-ave).",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p012_c0002",
+            "source_quote": "1. Offset bus lanes improve bus speed 2. Bus bulbs allow for high-quality SBS stations 3. Maintains curbside access and parking"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-ped-safety-claim-to-project",
+        "local_observation_id": "claim_pedestrian_safety_benefits",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "claim_pedestrian-safety-benefits",
+            "description": "Pedestrian safety and traffic flow benefits of Webster Avenue SBS design",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p013_c0002",
+                "source_quote": "4. Curb extensions and medians improve pedestrian safety 5. Addresses speeding and vehicle safety issues 6. Maintains appropriate traffic flows and circulation"
+              }
+            ]
+          }
+        ],
+        "rationale": "p013_c0002 continues listing benefits of the proposed design for Webster Avenue SBS. The subject is the Webster Avenue SBS design (project_12-webster-ave).",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p013_c0002",
+            "source_quote": "4. Curb extensions and medians improve pedestrian safety 5. Addresses speeding and vehicle safety issues 6. Maintains appropriate traffic flows and circulation"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-existing-traffic-to-corridor",
+        "local_observation_id": "claim_existing_traffic_conditions",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "claim_existing-traffic-conditions",
+            "description": "Existing traffic conditions on Webster Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p020_c0002",
+                "source_quote": "Overall, corridor moves very well ■ Congestion at selected intersections – E Fordham Rd – E Gun Hill Rd – Cross Bronx Expressway"
+              }
+            ]
+          }
+        ],
+        "rationale": "p020_c0002 describes existing traffic conditions on the Webster Avenue corridor under the heading 'Existing Traffic Conditions'. The subject is the Webster Avenue corridor (corridor_webster-ave-bronx).",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p020_c0002",
+            "source_quote": "Overall, corridor moves very well ■ Congestion at selected intersections – E Fordham Rd – E Gun Hill Rd – Cross Bronx Expressway"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-projected-traffic-to-project",
+        "local_observation_id": "claim_projected_traffic_conditions",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "claim_projected-traffic-conditions",
+            "description": "Projected traffic conditions after implementing Webster Avenue SBS design",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p022_c0002",
+                "source_quote": "Small changes along the majority of the corridor ■ Overall traffic levels are still very good ■ Improvements at major intersections – E Fordham Rd – Cross Bronx Expressway"
+              }
+            ]
+          }
+        ],
+        "rationale": "p022_c0002 and p023_c0002 describe projected traffic conditions under 'Projected Traffic Conditions' in the Webster Avenue SBS CAC presentation. The subject is the Webster Avenue SBS proposed design (project_12-webster-ave).",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p022_c0002",
+            "source_quote": "Small changes along the majority of the corridor ■ Overall traffic levels are still very good ■ Improvements at major intersections – E Fordham Rd – Cross Bronx Expressway"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-cac-mtg1-to-project",
+        "local_observation_id": "event_cac_mtg1_feb2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "event_cac-mtg1-feb2012",
+            "description": "CAC Meeting #1 for Webster Avenue SBS on February 6, 2012",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p007_c0005",
+                "source_quote": "Meeting #1"
+              },
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p007_c0006",
+                "source_quote": "February 6, 2012"
+              },
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p007_c0007",
+                "source_quote": "Project introduction ■ Identification of issues and opportunities along the corridor"
+              }
+            ]
+          }
+        ],
+        "rationale": "p007_c0005 through p007_c0007 document CAC Meeting #1 on Feb 6, 2012 with project introduction for the Webster Avenue SBS corridor. The project_12-webster-ave record already has this event linked and includes this source.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p007_c0005",
+            "source_quote": "Meeting #1"
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p007_c0006",
+            "source_quote": "February 6, 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-cac-mtg2-to-project",
+        "local_observation_id": "event_cac_mtg2_may2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "event_cac-mtg2-may2012",
+            "description": "CAC Meeting #2 for Webster Avenue SBS on May 2, 2012",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p007_c0008",
+                "source_quote": "Meeting #2"
+              },
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p007_c0009",
+                "source_quote": "May 2, 2012"
+              },
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p007_c0010",
+                "source_quote": "Corridor data analysis ■ Three corridor design ideas"
+              }
+            ]
+          }
+        ],
+        "rationale": "p007_c0008 through p007_c0010 document CAC Meeting #2 on May 2, 2012 with corridor data analysis for the Webster Avenue SBS project. The project_12-webster-ave record already has this event linked.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p007_c0008",
+            "source_quote": "Meeting #2"
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p007_c0009",
+            "source_quote": "May 2, 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-cac-mtg3-to-project",
+        "local_observation_id": "event_cac_mtg3_sep2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "event_cac-mtg3-sep2012",
+            "description": "CAC Meeting #3 for Webster Avenue SBS on September 27, 2012",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p007_c0011",
+                "source_quote": "Meeting #3"
+              },
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p007_c0012",
+                "source_quote": "September 27, 2012"
+              },
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p007_c0013",
+                "source_quote": "Introduction to corridor offset bus lane design ■ Design ideas for specific areas along the corridor"
+              }
+            ]
+          }
+        ],
+        "rationale": "p007_c0011 through p007_c0013 document CAC Meeting #3 on September 27, 2012 introducing offset bus lane design for Webster Avenue. The project_12-webster-ave record already has this event linked.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p007_c0011",
+            "source_quote": "Meeting #3"
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p007_c0012",
+            "source_quote": "September 27, 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-cac-mtg4-to-project",
+        "local_observation_id": "event_cac_mtg4_nov2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "event_cac-mtg4-nov2012",
+            "description": "CAC Meeting #4 for Webster Avenue SBS on November 29, 2012",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p001_c0003",
+                "source_quote": "Community Advisory Committee Meeting #4 | November 29, 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "p001_c0003 identifies this presentation as CAC Meeting #4 on November 29, 2012 for Webster Avenue SBS. The project_12-webster-ave record already has this event linked.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p001_c0003",
+            "source_quote": "Community Advisory Committee Meeting #4 | November 29, 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-open-house-2-to-project",
+        "local_observation_id": "event_public_open_house_2_jan2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "event_public-open-house-2-jan2013",
+            "description": "Public Open House #2 for Webster Avenue SBS in January 2013",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p037_c0002",
+                "source_quote": "Winter 2012/13"
+              },
+              {
+                "source_id": "2012_11_sbs_webster_cac4",
+                "block_id": "p037_c0003",
+                "source_quote": "Public Open House #2 – January 2013"
+              }
+            ]
+          }
+        ],
+        "rationale": "p037_c0002 and p037_c0003 list Public Open House #2 in January 2013 as a next step for the Webster Avenue SBS project. The project_12-webster-ave record already has this event linked.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p037_c0002",
+            "source_quote": "Winter 2012/13"
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p037_c0003",
+            "source_quote": "Public Open House #2 – January 2013"
+          }
+        ]
+      }
+    ],
+    "packet_id": "relation-linker"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-04-53-326Z_2111393-eac3311f_canonicalize_2026-06-10t23-05-54-642z-1976810-59962f5c-ingest-2012-11-sbs-webster-cac4-relation-linker"
+}

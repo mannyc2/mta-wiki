@@ -1,0 +1,2979 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-131481"
+record_kind: "source"
+display_name: "Audit Committee Book January 2024"
+source_id: "meeting_doc_131481"
+source_ids:
+  - "meeting_doc_131481"
+local_observation_id: "source_audit_committee_book_jan2024"
+local_observation_ids:
+  - "source_audit_committee_book_jan2024"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T15:01:55.077Z"
+submission_ids:
+  - "sub_a0d3ba28902fd567"
+payload:
+  authority_tier: "official_evaluation"
+  content_type: "committee meeting book"
+  date_text: "January 2024"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2024-01"
+    precision: "month"
+    raw_text: "January 2024"
+  published_date_normalized: "2024-01"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "Audit Committee Book"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_131481#p001_c0001"
+    page_number: 1
+    role: "document_header"
+    source_id: "meeting_doc_131481"
+    source_path: "raw/sources/meeting_doc_131481/blocks.jsonl"
+    text_sha256: "sha256:0af99026e4e14f75ada5f01646dc22e4860e197abced6064982d0d03bc2bce27"
+    text_source: "raw_text"
+---
+
+# Audit Committee Book
+
+source_id: meeting_doc_131481
+citation: cite block ids exactly as shown in square brackets
+document: 1856 block(s)
+
+## Page 1
+
+> [p001_c0001] The logo for the Metropolitan Transportation Authority (MTA) is located in the top left corner. It consists of a black circle with the letters "MTA" in white, bold, sans-serif font.
+[p001_c0002] Metropolitan Transportation Authority
+### [p001_c0003] Audit Committee Meeting
+[p001_c0004] January 2024
+### [p001_c0005] Committee Members
+[p001_c0006] J. Barbas, Chair D. Jones, Vice Chair M. Fleischer L. Sorin
+
+## Page 2
+
+### [p002_c0001] Audit Committee Meeting
+[p002_c0002] Monday, 1/29/2024
+[p002_c0003] 12:00 - 1:00 PM ET
+[p002_c0004] MTA Board Room - 20th Floor 2 Broadway
+### [p002_c0005] 1. PUBLIC COMMENTS
+### [p002_c0006] 2. APPROVAL OF MINUTES
+[p002_c0007] Minutes of October 23, 2023 Meeting - Page 3
+### [p002_c0008] 3. AUDIT COMMITTEE WORK PLAN
+[p002_c0009] 2024 WORKPLAN - Condensed - Page 8
+[p002_c0010] 2024 WORKPLAN - Detailed - Page 10
+### [p002_c0011] 4. QUARTERLY FINANCIAL STATEMENTS - 3RD QUARTER 2023
+[p002_c0012] Draft - MTA Consolidated Financial Statements - Q3 2023 - Page 15
+### [p002_c0013] 5. ENTERPRISE RISK MANAGEMENT AND INTERNAL CONTROL GUIDELINES
+[p002_c0014] Enterprise Risk Management Status Report - Page 149
+### [p002_c0015] 6. COMPLIANCE WITH THE INTERNAL CONTROL ACT
+### [p002_c0016] 7. 2023 AUDIT PLAN STATUS AND 2024 AUDIT PLAN
+[p002_c0017] 2023 Year-End and Proposed 2024 Audit Plan - Audit Committee Presentation - Page 156
+### [p002_c0018] 8. OPEN AUDIT RECOMMENDATIONS
+[p002_c0019] Remediation Plans Monitoring - Six Months Past Due Report - Page 172
+
+## Page 3
+
+### [p003_c0001] MINUTES OF MEETING AUDIT COMMITTEE OF THE BOARD MONDAY, OCTOBER 23, 2023 – 12:00 P.M. RONAN BOARD ROOM – 20 TH FLOOR 2 BROADWAY
+[p003_c0002] The following were present:
+### [p003_c0003] Honorable:
+[p003_c0004] Jamey Barbas
+[p003_c0005] Lisa Sorin
+[p003_c0006] David Jones
+[p003_c0007] M. Woods - MTA
+[p003_c0008] J. Patel - MTA
+[p003_c0009] J. Strohmeier - Deloitte
+[p003_c0010] L. Kearse - MTA
+[p003_c0011] J. McGovern - MTA
+[p003_c0012] K. Makrakis - Deloitte
+[p003_c0013] F. Portnoy - MTA
+[p003_c0014] M. Tartaglia - Deloitte
+### [p003_c0015] Also in attendance were:
+[p003_c0016] P. Graves - MTA
+[p003_c0017] L. Wiles - MTA
+### [p003_c0018] 1. PUBLIC COMMENTS PERIOD
+[p003_c0019] There was one speaker: Charlton D'souza, Passengers United. Refer to the video recording of the meeting produced by the MTA and maintained in MTA records for the content of his statements.
+[p003_c0020] https://new.mta.info/transparency/board-and-committee-meetings/october-2023 .
+### [p003_c0021] 2. APPROVAL OF MINUTES
+[p003_c0022] The minutes of the July 17 th Audit Committee meeting were approved.
+### [p003_c0023] 3. AUDIT COMMITTEE WORK PLAN
+[p003_c0024] The Auditor General (Michele Woods) noted that this is the fourth and final Audit Committee for 2023, and there were no changes to the Work Plan. The proposed 2024 Work Plan is included in the committee materials for information purposes and any proposed changes will be presented for approval at the January meeting.
+### [p003_c0025] 4. INDEPENDENT ACCOUNTANT'S REVIEW REPORT – 2 nd QUARTER 2023
+[p003_c0026] Jill Strohmeier (Deloitte) presented to the Committee the results of their review of the MTA's Consolidated Financial Statements for the second quarter of 2023. Jill stated that Deloitte is in the process of completing its quarterly review procedures of the MTA's consolidated interim financial statements for the six-month period ended June 30, 2023. A review consists primarily of inquiries of management and analytical procedures, so it is less in scope than an audit. Based on their review, they are not aware of any material modifications that need be made to the interim financial statements for them to be in accordance with Generally Accepted Accounting Principles (GAAP).
+[p003_c0027] Committee member David Jones inquired as to whether there is a management letter that comes with this quarterly review. In response, Jill stated that there was no formal management comment letter.
+[p003_c0028] _Master Page # 3 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 4
+
+[p004_c0001] However, any significant deficiency or material weakness identified during the quarterly work would be communicated to the Committee.
+[p004_c0002] A motion was made and seconded to accept the 2 nd Quarter 2023 MTA Consolidated Financial Statements. The 2 nd Quarter 2023 Financial Statements will be brought to the full Board for a vote with a recommendation to approve from the Audit Committee members.
+[p004_c0003] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records for the details.
+### [p004_c0004] 5. APPOINTMENT OF EXTERNAL AUDITORS
+[p004_c0005] In her opening remarks, the Audit Committee Chair (Jamey Barbas) stated that this is the second year of the External Audit Contract between the MTA and Deloitte that was awarded in October 2022. As part of the annual re-appointment process, the Committee requires the auditors to present to the Committee the results of the most recent inspection of the firm that was conducted by the PCAOB or the Public Company Accounting Oversight Board. Jamey noted that the Board has a copy of the 2021 report that was issued in September 2022.
+[p004_c0006] Jill Strohmyer (Deloitte) then briefed the Committee on the PCAOB comments. Jill started by referencing Deloitte's latest PCAOB report on page #148 of the Audit Book. Since Deloitte is registered with the PCAOB and performs audits of publicly traded companies each year, the PCAOB is required to inspect the audit working papers prepared by Deloitte for selected audits. The PCAOB reviews the work papers to determine whether Deloitte has followed the appropriate auditing standards, the PCAOB rules, as well as internal Deloitte policies and procedures. During the 2021 inspection cycle (the last cycle), 54 public issuers (audit clients of Deloitte) were reviewed by the PCAOB and seven of those audits were given comments. A total of 11 comments were received across those seven engagements. Out of the 11 comments, seven related to "Audit of Internal Control Over Financial Reporting that is Integrated with an Audit of Financial Statements." This is the case when an auditor is required to issue a report on internal controls. Jill noted, however, that the MTA is a private company audit, hence the MTA is not considered an integrated audit. Therefore, Deloitte does not issue a separate report on the MTA's internal controls (this is relevant to public company audit clients). The other four comments relate to matters such as: (i) audit evidence obtained, (ii) the auditor's response to risk assessment, (iii) going concern and (iv) overall evaluation of the audits. None of the seven audit engagements that received comments had incorrect audit opinions and the comments were really about the audit evidence obtained and documented in the audit file. Compared to last year, the overall comments between 2021 and 2020 were relatively consistent. This year there were 11 comments over seven audits and last year (the 2021 inspection results) there were 10 comments over two audits. Therefore, there was 11 comments in total versus 10 comments last year. As evidence of Deloitte's commitment to high quality audits, Jill noted several things that Deloitte is doing around transformation, fostering the development of its people, and training. Jill also noted that Deloitte goes through a peer review process every three years and that its peer reviewer is Grant Thornton. Grant Thornton reviews private company audits for Deloitte, but not publicly traded companies. The latest peer review report available for Deloitte is its 2020 report for which Grant Thornton gave Deloitte the highest possible rating of a "pass." Deloitte's 2023 peer review report should be available by the end of 2023. Jill noted to the Committee that one of her engagements, but not the MTA engagement, was selected by Grant Thornton for inspection and that it received a satisfactory result. Lastly, Jill noted that two members of her MTA engagement team (Kostas Makrakis and Mike Tartaglia) were also part of the PCAOB inspection this past cycle and that their particular engagements did not receive any comments.
+[p004_c0007] _Master Page # 4 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 5
+
+[p005_c0001] A motion was made and seconded to reappoint Deloitte as the MTA's external auditors for the audit of the 2023 financial statements.
+[p005_c0002] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records for the details.
+### [p005_c0003] 6. AUDIT APPROACH PLAN/COORDINATION WITH EXTERNAL AUDITOR
+[p005_c0004] In her opening remarks, the Audit Committee Chair (Jamey Barbas) stated that Jill Strohmeier (Deloitte) will tell the Committee about Deloitte's audit approach to the 2023 year-end audits of the MTA financial statements. Jill will also discuss any new or proposed changes in accounting principles, regulations or financial reporting practices and its impact to the financial statements.
+[p005_c0005] In presenting Deloitte's audit approach, Jill referred to the "Audit Plan" for the MTA's overall main financial statements that was previously distributed to the Committee and went through the presentation starting with Deloitte's leadership team. Jill noted that their leadership team serving the MTA looks similar to prior years and advised the Committee that this is her last year on the MTA engagement due to a New York State Public Authorities Law that requires rotation of the audit partner/managing director every five years. There is a transition plan in place and Kosta Makrakis (who has been on the engagement team the last two years) will take over at the conclusion of the 2023 audit. Regarding diversity, equity, and inclusion, Deloitte does utilize the services of four minority, women, and service-disabled veteran owned firms. These subcontractors will be used for 36% of its total contract with the MTA and will help Deloitte on all facets of the MTA audit (compliance, agreed upon procedures reviews and audit work). In regard to the financial statement audits, Jill reminded the Committee that the audits are performed in accordance with both AICPA and government auditing standards and that they follow OMB requirements as it relates to compliance audits and the federal single audit. The purpose of the audits is to obtain reasonable assurance about whether the MTA's financial statements are free from material misstatement whether caused by fraud or error. With respect to internal control, Deloitte does not plan to adopt a control-reliance strategy in the performance of its audits and Jill noted that this is referred to as an integrated audit. Deloitte does not perform an integrated audit, but they will examine the design and implementation of the MTA's internal controls. This helps them determine the level of substantive testing to be performed and the number of detailed transactions to be examined.
+[p005_c0006] In regard to Risk Assessment, Jill referenced a triangle or "Pyramid" in the Audit Plan that illustrated the varying levels of risk and where Deloitte will spend their time. Deloitte has identified management override of controls as the one significant risk area which is consistent with prior years. She noted that management override of controls is a significant risk for every audit client of Deloitte whether a public company or a private company, hence they perform direct procedures to address that risk. Moving down to the second layer of the pyramid, Deloitte will concentrate on pension and OPEB since those are very large liabilities recorded on the MTA's financial statements. This will include spending a good amount of time looking at the work of specialists. They will examine Construction Work in Progress (capital assets) and non-operating revenue (tax subsidies, other appropriations and grant money). One new area this year relates to the adoption of GASB accounting pronouncements 94 and 96. GASB 94 relates to Public-Public Partnerships, Public-Private Partnerships, as well as availability payment arrangements. A few weeks ago, Deloitte provided training to the MTA management team about this new standard and management is now assessing the impact, if any, on the MTA's financial statements. GASB 96 relates to subscription-based IT arrangements and is similar to the lease standard that was adopted last year. The 2023 financial statements will include new accounts related to this GASB as well as disclosures. The MTA will also have to go through another restatement (for comparative year financial statement purposes) as this accounting pronouncement is effective as of January 1, 2022. In regard to internal audits, they do not plan to rely on the work of Internal Audit, but they do work closely with the internal
+[p005_c0007] _Master Page # 5 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 6
+
+[p006_c0001] audit department and receive all of their reports. These internal audit reports assist Deloitte in assessing risk and identifying areas of focus. Deloitte will also use various specialists throughout the performance of its audits. This includes actuarial specialists for pensions, OPEB liabilities, large claims and judgments; IT specialists to help examine system controls and reports (and whether system generated reports can be relied upon); data analytic specialists to help examine journal entries and whether debit and credit entries make sense; and, valuation specialists to help test incremental borrowing rates related to both GASB 87 and 96. With respect to the audit timeline, it is similar with prior years and there are no changes. Jill then referenced the Audit Plan with respect to Deloitte's technology tools (and some of the benefits that come from using the tools) and the results of their last peer review. Lastly, Jill referenced page #18 of the Audit Plan (technical update) which listed new GASB pronouncements that will impact the MTA.
+[p006_c0002] Jill then briefed the Committee on the planned audits of the MTA's six employee benefit plans which includes the defined benefit contribution and OPEB plans. Similar to the main financial statement audits, the one significant risk identified for the benefit plans is the management override of controls. If anything identified throughout the course of the audit elevates to the level of a significant risk, that matter will be communicated to the Audit Committee. In regard to Internal Control, they do not plan to adopt a control-reliance strategy or to use the results of the internal audit function. Lastly, the timing of the benefit plan audits is consistent with prior years with planned issuance of the reports in July of 2024.
+[p006_c0003] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records for the details.
+### [p006_c0004] 7. AUDIT COMMITTEE CHARTER
+[p006_c0005] The Committee reviewed and assessed the Charter, and based on their review there were no proposed changes to the Charter.
+### [p006_c0006] 8. OPEN AUDIT RECOMMENDATIONS
+[p006_c0007] The Chief Compliance Officer (Lamond Kearse) briefed the Committee on the implementation status of prior audit recommendations. Kearse referenced the presentation in the Audit Committee Book and noted that MTA Corporate Compliance continues to monitor the implementation of remediation plans that are generated as a result of audits or internal control testing. As of today, there are 22 remediation plans that are deemed as significant, or high, that are pending closure. This means that particular departments have indicated that they have resolved the issue and the remediation plan is now going through an internal process by both MTA Audit Services and Corporate Compliance to verify that the remediation has, in fact, been implemented. There are an additional 19 that are still pending (past due) and they are working very closely with the departments to close. Lastly, Kearse noted that MTA IT has closed a significant number of remediation plans and that overall everyone is working very diligently and real progress has been made.
+[p006_c0008] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records for the details.
+### [p006_c0009] 9. ANNUAL AUDIT COMMITTEE ACTIVITY REPORT
+[p006_c0010] Audit Committee Chair Barbas noted the four-page report that covered the activities of the Audit Committee during the 12-month period ended July 31, 2023, and indicated that a draft had been previously circulated among the Committee members for review and comment.
+[p006_c0011] _Master Page # 6 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 7
+
+[p007_c0001] A motion was made and seconded to approve the year-end Activity Report for submission to the full Board.
+### [p007_c0002] 10. EXECUTIVE SESSION
+[p007_c0003] Pursuant to Section 105 (1) of the New York State Public Officers Law, upon motion duly made and seconded, the Committee voted to convene an executive session in order to receive a briefing from MTA IT on the Security of Sensitive Data.
+### [p007_c0004] 11. MOTION TO ADJOURN
+[p007_c0005] The Committee returned to regular session, at which time a motion was made and seconded to adjourn the meeting.
+[p007_c0006] Respectfully submitted,
+[p007_c0007] A handwritten signature in blue ink, appearing to read "Michele Woods".
+[p007_c0008] _Michele Woods Auditor General_
+[p007_c0009] _Master Page # 7 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 8
+
+### [p008_c0001] Metropolitan Transportation Authority
+### [p008_c0002] 2024 AUDIT COMMITTEE WORK PLAN
+### [p008_c0003] I. RECURRING AGENDA ITEMS
+### [p008_c0004] Responsibility
+### [p008_c0005] Each Meeting:
+[p008_c0006] Approval of Minutes Audit Work Plan
+[p008_c0007] Committee Chair & Members Committee Chair & Members
+### [p008_c0008] As Appropriate:
+[p008_c0009] Pre-Approval of Audit and Non-Auditing Services Follow-Up Items Status of Audit Activities
+[p008_c0010] Committee Chair & Members Auditor General Auditor General/MTA IG/ CCO/CFO/ Controllers/External Auditor/ Committee Chair & Members
+[p008_c0011] Executive Sessions
+### [p008_c0012] II. SPECIFIC AGENDA ITEMS
+### [p008_c0013] January 2024
+[p008_c0014] Quarterly Financial Statements – 3 rd Quarter 2023 Enterprise Risk Management Update and Internal Control Guidelines Compliance with the Internal Control Act 2023 Audit Plan Status Report 2024 Audit Plan Open Audit Recommendations
+[p008_c0015] External Auditor Chief Compliance Officer Chief Compliance Officer Auditor General Auditor General Chief Compliance Officer
+### [p008_c0016] May 2024
+[p008_c0017] 2023 Audited Financial Statements Management's Review of Consolidated Financial Statements Investment Compliance Report Open Audit Recommendations Information Technology Report Contingent Liabilities/Third Party Lawsuits (Executive Session)
+[p008_c0018] External Auditor/CFO Deputy Chief, Controller's Office External Auditor Chief Compliance Officer Chief Technology Officer General Counsels/External Auditor
+[p008_c0019] _Master Page # 8 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 9
+
+### [p009_c0001] July 2024
+[p009_c0002] Quarterly Financial Statements – 1 st Quarter 2024 Pension Audits (2023) Management's Review of Pension Audits Single Audit Report Management Letter Reports Review of MTA/IG's Office (FY 2023) Enterprise Risk Management Update Ethics and Compliance Program Financial Interest Reports MTAAS 2024 Audit Plan Status Report Open Audit Recommendations
+[p009_c0003] External Auditor External Auditor/Deputy Chief, Controller Deputy Chief, Controller's Office External Auditor/CFOs External Auditor/CFOs/Controllers External Auditor Chief Compliance Officer Chief Compliance Officer Chief Compliance Officer Auditor General Chief Compliance Officer
+### [p009_c0004] October 2024
+[p009_c0005] Quarterly Financial Statements – 2 nd Quarter 2024 Appointment of External Auditors Audit Approach Plans/Coordination Review of Audit Committee Charter Security of Sensitive Data & Systems (Executive Session) Open Audit Recommendations Annual Audit Committee Report
+[p009_c0006] External Auditor Committee Chair & Members External Auditor CCO and Committee Chair Chief Technology Officer Chief Compliance Officer Committee Chair
+[p009_c0007] _Master Page # 9 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 10
+
+### [p010_c0001] 2024 AUDIT COMMITTEE WORK PLAN
+### [p010_c0002] I. RECURRING AGENDA ITEMS
+### [p010_c0003] Each Meeting
+### [p010_c0004] Approval of Minutes
+[p010_c0005] Approval of the official proceedings of the previous month's Committee meeting.
+### [p010_c0006] Audit Work Plan
+[p010_c0007] A monthly update of any edits and/or changes in the work plan.
+### [p010_c0008] As Appropriate
+### [p010_c0009] Pre-Approval of Audit and Non-Auditing Services
+[p010_c0010] As appropriate, all auditing services and non-audit services to be performed by external auditors will be presented to and pre-approved by the Committee.
+### [p010_c0011] Follow-Up Items
+[p010_c0012] Communications to the Committee of the current status of selected open issues, concerns or matters previously brought to the Committee's attention or requested by the Committee.
+### [p010_c0013] Status of Audit Activities
+[p010_c0014] As appropriate, representatives of MTA's public accounting firm or agency management will discuss with the Committee significant audit findings/issues, the status of on-going audits, and the actions taken by agency management to implement audit recommendations.
+### [p010_c0015] Executive Sessions
+[p010_c0016] Executive Sessions will be scheduled to provide direct access to the Committee, as appropriate.
+### [p010_c0017] II. SPECIFIC AGENDA ITEMS
+### [p010_c0018] JANUARY 2024
+### [p010_c0019] Quarterly Financial Statements - 3 rd Quarter 2023
+[p010_c0020] Representatives of the MTA public accounting firm, in conjunction with appropriate agency management, will discuss the interim financial statement that was prepared for the third quarter of 2023.
+### [p010_c0021] Enterprise Risk Management Update and Internal Control Guidelines
+[p010_c0022] These MTA-wide guidelines, which were adopted by the Board in 2011 pursuant to Public Authority Law Section 2931, are required to be reviewed by the Committee annually. The MTA Chief Compliance Officer will brief the Committee on the agency compliance with these guidelines and answer any questions and offer additional comments, as appropriate. The MTA Chief Compliance Officer will also brief the Committee on the status of agency compliance with the ERM guidelines and any new or emerging risk.
+[p010_c0023] _Master Page # 10 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 11
+
+### [p011_c0001] Compliance with the Internal Control Act
+[p011_c0002] The Committee will be briefed by the MTA Chief Compliance Officer on the results of the All-Agency Internal Control Reports issued to the NYS Division of the Budget as required by the Government Accountability, Audit and Internal Control Act.
+### [p011_c0003] MTAAS 2023/2024 Audit Plans
+### [p011_c0004] i. 2023 Audit Plan Status
+[p011_c0005] A briefing by Audit Services that will include a status of the work completed, a summary of the more significant audit findings, and a discussion of the other major activities performed by the department in 2023.
+### [p011_c0006] ii 2024 Audit Plan
+[p011_c0007] A discussion by Audit Services of the areas scheduled to be reviewed in 2024 as well as the guidelines and policies that were used to assess audit risk and their application in the development of the audit work plan.
+### [p011_c0008] Open Audit Recommendations
+[p011_c0009] The MTA Chief Compliance Officer will report to the Committee on the status of audit recommendations previously accepted by their respective agency.
+### [p011_c0010] MAY 2024
+### [p011_c0011] 2023 Financial Statements
+[p011_c0012] The MTA public accounting firm will review the results and conclusions of their examination of the 2023 Financial Statements. The CFO/Deputy Chief, Controller's Office will be available to the Committee to answer any questions regarding the submission of their audit representation letters to the external audit firm.
+### [p011_c0013] Management's Review of MTA Consolidated Financial Statements
+[p011_c0014] The Deputy Chief, Controller's Office will present a management's review of the 2023 MTA consolidated financial statements, including changes in capital, net assets, other assets and operating revenues and expenses.
+### [p011_c0015] Investment Compliance Report
+[p011_c0016] Representatives of the MTA's public accounting firm will provide a review of MTA's compliance with the guidelines governing investment practices.
+### [p011_c0017] Open Audit Recommendations
+[p011_c0018] The MTA Chief Compliance Officer will report to the Committee on the status of audit recommendations previously accepted by their respective agency.
+### [p011_c0019] Information Technology Report
+[p011_c0020] The MTA Chief Technology Officer will brief the Committee on the activities of the MTA IT for the past year, including its accomplishments, strategies and plans for the current year.
+[p011_c0021] _Master Page # 11 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 12
+
+### [p012_c0001] Contingent Liabilities and Status of Third-Party Lawsuits
+[p012_c0002] The General Counsels from each agency, along with representatives from the independent accounting firm, will review in Executive Session the status of major litigation that may have a material effect on the financial position of their agency, or for which a contingency has been or will be established and/or disclosed in a footnote to the financial statements. In addition, the Committee will be briefed on the status of third-party lawsuits for which there has been minimal or sporadic case activity.
+### [p012_c0003] JULY 2024
+### [p012_c0004] Quarterly Financial Statements – 1 st Quarter 2024
+[p012_c0005] Representatives of MTA's public accounting firm, in conjunction with appropriate agency management, will discuss the interim financial statement that was prepared for the first quarter of 2024.
+### [p012_c0006] Pension Audits
+### [p012_c0007] i Management's Review of MTA-Managed/Controlled Pension Plan Financial Statements
+[p012_c0008] The Deputy Chief, Controller's Office will present a management's review of the 2023 MTA-managed and controlled Pension Plan financial statements, including changes in the plan's net position, the required supplementary information and any new GASB statements or statutory regulations affecting the financial statements.
+### [p012_c0009] ii Audit of the Pension Plans Financial Statements
+[p012_c0010] Representatives of the MTA public accounting firm will provide the results of their audits of the pension plans that are managed and controlled by MTA HQ, Long Island Rail Road, Metro-North and NYC Transit.
+### [p012_c0011] Single Audit Report
+[p012_c0012] Representatives of MTA's public accounting firm will provide the results of their Federal-and State-mandated single audits of MTA and NYC Transit.
+### [p012_c0013] Management Letter Reports
+[p012_c0014] Reports will be made by the MTA's public accounting firm on the recommendations made in the auditors' Management Letter for improving the accounting and internal control systems of the MTA and its agencies. The report will also include management's response to each Management Letter comment. The response will describe the plan of action and timeframe to address each comment. In addition, the report will contain a follow-up of prior years' open recommendations conducted by the MTA's public accounting firm.
+### [p012_c0015] Review of the MTA Inspector General's Office
+[p012_c0016] Representatives of MTA's public accounting firm will provide the results of their 2023 "agreed-upon" review procedures on the MTA/IG's operating expenses to ensure compliance with applicable policies and procedures.
+### [p012_c0017] Enterprise Risk Management Update
+[p012_c0018] These MTA-wide guidelines, which were adopted by the Board in 2011 pursuant to Public Authority Law Section 2931, are required to be reviewed by the Committee annually. The MTA Chief Compliance Officer will brief the Committee on the agency compliance with these guidelines and answer any questions and offer additional comments, as appropriate. The MTA Chief Compliance
+[p012_c0019] _Master Page # 12 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 13
+
+[p013_c0001] Officer will also brief the Committee on the status of agency compliance with the ERM guidelines and any new or emerging risk.
+### [p013_c0002] Ethics and Compliance Program
+[p013_c0003] The MTA Chief Compliance Officer will brief the Committee (i) on the status of agency compliance with the ERM guidelines and any new or emerging risk and (ii) selected aspects of the MTA Ethics and Compliance Program.
+### [p013_c0004] Financial Interest Reports
+[p013_c0005] The MTA Chief Compliance Officer will brief the Committee on the agencies' compliance with the State Law regarding the filing of Financial Interest Reports (FIRs), including any known conflicts of interest.
+### [p013_c0006] MTAAS 2024 Audit Plan Status Report
+[p013_c0007] A briefing by Audit Services that will include a status of the work completed as compared to the audits planned for the year, a summary of the more significant audit findings, results of audit follow-up, and a discussion of the other major activities performed by the department.
+### [p013_c0008] Open Audit Recommendations
+[p013_c0009] The MTA Chief Compliance Officer will report to the Committee on the status of audit recommendations previously accepted by their respective agency.
+### [p013_c0010] OCTOBER 2024
+### [p013_c0011] Quarterly Financial Statements – 2 nd Quarter 2024
+[p013_c0012] Representatives of MTA's public accounting firm, in conjunction with appropriate agency management, will discuss the interim financial statement that was prepared for the second quarter of 2024.
+### [p013_c0013] Appointment of External Auditors
+[p013_c0014] The Audit Committee will review the appointment of the independent auditor for MTA HQ and all the agencies. As part of this process, the Auditor General has reviewed and provided to the Committee, and will retain on file, the latest report of the firm's most recent internal quality control review.
+### [p013_c0015] Audit Approach Plans/Coordination
+[p013_c0016] Representatives of MTA's public accounting firm will review their audit approach for their 2023 engagement. This review will describe the process used to assess inherent and internal control risks, the extent of the auditor's coverage, the timing and nature of the procedures to be performed, and the types of statements to be issued. In addition, the impact of new or proposed changes in accounting principles, regulations, or financial reporting practices will be discussed.
+### [p013_c0017] Review of Audit Committee Charter
+[p013_c0018] The Committee Chair will report that the Committee has reviewed and assessed the adequacy of the Audit Committee Charter and, based on that review, will recommend any changes. The review will also show if the Committee's performance in 2024 adequately complied with the roles and responsibilities outlined in its Charter (i.e. monitoring and overseeing the conduct of MTA's financial reporting process; application of accounting principles; engagement of outside auditors; MTA's internal controls; and other matters relative to legal, regulatory and ethical compliance at the MTA).
+[p013_c0019] _Master Page # 13 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 14
+
+### [p014_c0001] Security of Sensitive Data & Systems
+[p014_c0002] The MTA Chief Technology Officer will make a presentation to the Committee on the security of sensitive data and systems at the MTA.
+### [p014_c0003] Open Audit Recommendations
+[p014_c0004] The MTA Chief Compliance Officer will report to the Committee on the status of audit recommendations previously accepted by their respective agency.
+### [p014_c0005] Annual Audit Committee Report
+[p014_c0006] As a non-agenda information item, the Audit Committee will be provided with a draft report which outlines the Audit Committee's activities for the 12 months ended July 2024. This report is prepared in compliance with the Audit Committee's Charter. After Committee review and approval, the Committee Chair will present the report to the full MTA Board.
+[p014_c0007] _Master Page # 14 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 15
+
+[p015_c0001] DRAFT
+### [p015_c0002] Metropolitan Transportation Authority
+[p015_c0003] (A Component Unit of the State of New York)
+[p015_c0004] Independent Auditor's Review Report
+[p015_c0005] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p015_c0006] _Master Page # 15 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 16
+
+### [p016_c0001] Metropolitan Transportation Authority
+### [p016_c0002] DRAFT
+### [p016_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p016_c0004] Table of Contents
+[p016_c0005] MANAGEMENT’S DISCUSSION AND ANALYSIS ..... 3 BUSINESS-TYPE ACTIVITIES CONSOLIDATED INTERIM FINANCIAL STATEMENTS AS OF SEPTEMBER 30, 2023 AND DECEMBER 31, 2022 AND FOR THE SIX-MONTH PERIODS ENDED SEPTEMBER 30, 2023 AND 2022 ..... 19 Consolidated Interim Statements of Net Position..... 19 Consolidated Interim Statements of Revenues, Expenses, and Changes in Net Position..... 21 Consolidated Interim Statements of Cash Flows..... 23 FIDUCIARY ACTIVITIES FINANCIAL STATEMENTS AS OF DECEMBER 31, 2022 AND 2021 ..... 25 Statements of Fiduciary Net Position ..... 25 Statements of Changes in Fiduciary Net Position..... 26 NOTES TO CONSOLIDATED INTERIM FINANCIAL STATEMENTS ..... 27 REQUIRED SUPPLEMENTARY INFORMATION ..... 104 Schedule of Changes in the MTA’s Net Pension Liability and Related Ratios for Single Employer Pension Plans..... 104 Schedule of the MTA’s Proportionate Share of the Net Pension Liabilities of Cost-Sharing Multiple-Employer Pension Plans ..... 108 Schedule of the MTA’s Contributions for All Pension Plans..... 109 Notes to Schedule of the MTA’s Contributions for All Pension Plans..... 111 Schedule of the MTA’s Contributions to the OPEB Plan..... 126 Notes to Schedule of the MTA’s Contributions to the OPEB Plan ..... 127 SUPPLEMENTARY INFORMATION: COMBINING FIDUCIARY FUNDS FINANCIAL STATEMENTS ..... 128 Pension and Other Employee Benefit Trust Funds - Combining Statement of Fiduciary Net Position for the Year-Ended December 31, 2022 ..... 128 Pension and Other Employee Benefit Trust Funds - Combining Statement of Fiduciary Net Position for the Year-Ended December 31, 2021 ..... 129 Pension and Other Employee Benefit Trust Funds - Combining Statement of Changes in Fiduciary Net Position for the Year-Ended December 31, 2022..... 130 Pension and Other Employee Benefit Trust Funds - Combining Statement of Changes in Fiduciary Net Position for the Year-Ended December 31, 2021 ..... 131 SUPPLEMENTARY INFORMATION: ..... 132 Schedule of Consolidated Reconciliation Between Financial Plan and Financial Statements for the Nine-Month Period Ended September 30, 2023 ..... 132 Schedule of Consolidated Subsidy Accrual Reconciliation Between Financial Plan and Financial Statements for the Nine-Month Period Ended September 30, 2023 ..... 133 Schedule of Financial Plan to Financial Statements Reconciliation for the Nine-Month Period Ended September 30, 2023 ..... 134
+[p016_c0006] _Master Page # 16 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 17
+
+### [p017_c0001] Metropolitan Transportation Authority
+### [p017_c0002] DRAFT
+### [p017_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p017_c0004] (A Component Unit of the State of New York)
+### [p017_c0005] MANAGEMENT'S DISCUSSION AND ANALYSIS
+### [p017_c0006] AS OF SEPTEMBER 30, 2023 AND DECEMBER 31, 2022 AND FOR THE NINE-MONTH PERIODS ENDED SEPTEMBER 30, 2023 AND 2022
+[p017_c0007] ($ In Millions, except as noted)
+### [p017_c0008] FINANCIAL REPORTING ENTITY
+[p017_c0009] The Metropolitan Transportation Authority ("MTA" or "MTA Group") was established under the New York Public Authorities Law and is a public benefit corporation and a component unit of the State of New York whose mission is to continue, develop, and improve public transportation and to develop and implement a unified public transportation policy in the New York metropolitan area. The financial reporting entity consists of subsidiaries and affiliates, considered component units of the MTA, because the Board of the MTA serves as the overall governing body of these related entities.
+[p017_c0010] The Reporting entity includes:
+### [p017_c0011] (1) the MTA is comprised of the following:
+- [p017_c0012] ● Metropolitan Transportation Authority Headquarters ("MTAHQ") provides support in budget, cash management, finance, legal, real estate, treasury, risk and insurance management, and other services to the related groups listed below. ● The Long Island Rail Road Company ("MTA Long Island Rail Road") provides passenger transportation between New York City ("NYC") and Long Island. ● Metro-North Commuter Railroad Company ("MTA Metro-North Railroad") provides passenger transportation between NYC and the suburban communities in Westchester, Dutchess, Putnam, Orange, and Rockland counties in New York State ("NYS") and New Haven and Fairfield counties in Connecticut. ● Staten Island Rapid Transit Operating Authority ("MTA Staten Island Railway") provides passenger transportation on Staten Island. ● First Mutual Transportation Assurance Company ("FMTAC") provides primary insurance coverage for certain losses, some of which are reinsured, and assumes reinsurance coverage for certain other losses. ● MTA Construction and Development Company ("MTA Construction and Development"), formerly called MTA Capital Construction Company, provides oversight for the planning, design and construction of current and future major MTA system-wide expansion projects. ● MTA Bus Company ("MTA Bus") operates certain bus routes in areas previously served by private bus operators pursuant to franchises granted by the City of New York. ● MTA Grand Central Madison Operating Company ("MTA GCMOC") operates and maintains the infrastructure and structures supporting Long Island Rail Road access into Grand Central Terminal. ● MTAHQ, MTA Long Island Rail Road, MTA Metro-North Railroad, MTA Staten Island Railway, FMTAC, MTA Capital Construction, and MTA Bus, and MTA GCMOC collectively are referred to herein as MTA. MTA Long Island Rail Road and MTA Metro-North Railroad are referred to collectively as the Commuter Railroads. ● New York City Transit Authority ("MTA New York City Transit") and its subsidiary, Manhattan and Bronx Surface Transit Operating Authority ("MaBSTOA"), provide subway and public bus service within the five boroughs of New York City. ● Triborough Bridge and Tunnel Authority ("MTA Bridges and Tunnels") operates seven toll bridges, two tunnels, and the Battery Parking Garage, all within the five boroughs of New York City.
+[p017_c0013] The MTA provides transportation services in the New York metropolitan area, operations of seven bridges and two tunnels within New York City and primary insurance coverage. The MTA engages in Business-Type Activities.
+### [p017_c0014] (2) Fiduciary Funds comprised of Pension and Other Employee Benefit Trust Funds:
+- [p017_c0015] ● Pension Trust Funds: - MTA Defined Benefit Pension Plan - The Long Island Railroad Company Plan for Additional Pensions ("Additional Plan") - Manhattan and Bronx Surface Transit Operating Authority ("MaBSTOA Plan")
+[p017_c0016] _Master Page # 17 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 18
+
+### [p018_c0001] Metropolitan Transportation Authority
+### [p018_c0002] DRAFT
+### [p018_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+- [p018_c0004] - Metro-North Commuter Railroad Cash Balance Plan (“MNR Cash Balance Plan”) ● Other Employee Benefit Trust Funds - MTA Other Postemployment Benefits Plan (“OPEB Plan”)
+[p018_c0005] The financial results of the MTA are reported as consolidated financial statements.
+### [p018_c0006] OVERVIEW OF THE CONSOLIDATED INTERIM FINANCIAL STATEMENTS
+### [p018_c0007] Introduction
+[p018_c0008] This report consists of: Management’s Discussion and Analysis (“MD&A”), Consolidated Interim Financial Statements, Fiduciary Funds Financial Statements, Notes to the Consolidated Interim Financial Statements, Required Supplementary Information, Supplementary Information - Combining Fiduciary Fund Financial Statements, and Supplementary Information.
+### [p018_c0009] Management’s Discussion and Analysis
+[p018_c0010] This MD&A provides a narrative overview and analysis of the financial activities of the Metropolitan Transportation Authority and its consolidated subsidiaries and affiliates (the “MTA” or “MTA Group”) as of September 30, 2023 and December 31, 2022 and for the nine-month periods ended September 30, 2023 and 2022. For financial reporting purposes, the subsidiaries and affiliates of the MTA are blended component units. This management discussion and analysis is intended to serve as an introduction to the MTA Group’s consolidated interim financial statements. It provides an assessment of how the MTA Group’s position has improved or deteriorated and identifies the factors that, in management’s view, significantly affected the MTA Group’s overall financial position. It may contain opinions, assumptions, or conclusions by the MTA Group’s management that must be read in conjunction with, and should not be considered a replacement for, the consolidated interim financial statements.
+### [p018_c0011] The Consolidated Interim Financial Statements
+[p018_c0012] The Consolidated Interim Statements of Net Position, which provide information about the nature and amounts of resources with present service capacity that the MTA Group presently controls (assets), consumption of net assets by the MTA Group that is applicable to a future reporting period (deferred outflow of resources), present obligations to sacrifice resources that the MTA Group has little or no discretion to avoid (liabilities), and acquisition of net assets by the MTA Group that is applicable to a future reporting period (deferred inflow of resources) with the difference between assets/deferred outflow of resources and liabilities/deferred inflow of resources being reported as net position.
+[p018_c0013] The Consolidated Interim Statements of Revenues, Expenses and Changes in Net Position, which provide information about the MTA’s changes in net position for the period then ended and accounts for all of the period’s revenues and expenses, measures the success of the MTA Group’s operations during the year and can be used to determine how the MTA has funded its costs.
+[p018_c0014] The Consolidated Interim Statements of Cash Flows, which provide information about the MTA Group’s cash receipts, cash payments and net changes in cash resulting from operations, noncapital financing, capital and related financing, and investing activities.
+### [p018_c0015] The Fiduciary Funds Financial Statements
+[p018_c0016] Fiduciary funds are used to account for resources held in a trustee capacity for the benefit of parties outside of a government entity. Fiduciary funds are not reported in the MTA’s consolidated financial statements because the resources of those funds are not available to support the MTA’s own programs. The MTA’s fiduciary funds are collectively reported as Pension and Other Employee Benefit Trust Funds.
+[p018_c0017] The Statements of Fiduciary Net Position presents financial information about the assets, liabilities, and the fiduciary net position held in trust of the fiduciary funds of the MTA.
+[p018_c0018] The Statements of Changes in Fiduciary Net Position presents fiduciary activities of the fiduciary funds as additions and deductions to the fiduciary net position.
+### [p018_c0019] Notes to the Consolidated Interim Financial Statements
+[p018_c0020] The notes provide information that is essential to understanding the consolidated interim financial statements, such as the MTA Group’s accounting methods and policies, details of cash and investments, employee benefits, long-term debt, lease transactions, future commitments and contingencies of the MTA Group, and information about other events or developing situations that could materially affect the MTA Group’s financial position.
+### [p018_c0021] Required Supplementary Information
+[p018_c0022] The required supplementary information provides information about the changes in the net pension liability and net other postemployment benefits (“OPEB”) liability, employer contributions for the OPEB and pension plans, actuarial assumptions used to calculate the net pension liability and net OPEB liability, historical trends, and other required supplementary information related to the MTA Group’s cost-sharing multiple-employer defined benefit pension plans.
+[p018_c0023] _Master Page # 18 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 19
+
+### [p019_c0001] MTA Metropolitan Transportation Authority
+### [p019_c0002] DRAFT
+### [p019_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p019_c0004] Supplementary Information - Combining Fiduciary Funds Financial Statements
+[p019_c0005] The supplementary information combining fiduciary funds financial statements includes the combining statements of fiduciary net position and the combining statements of changes in fiduciary net position which provides financial information on each fiduciary fund in which the MTA is functioning as a trustee for another party. The MTA's fiduciary funds are categorized as Pension and Other Employee Benefit Trust Funds.
+### [p019_c0006] Supplementary Information
+[p019_c0007] The supplementary information provides a series of reconciliations between the MTA Group's financial plan and the consolidated statements of revenues, expenses and changes in net position.
+### [p019_c0008] CONDENSED CONSOLIDATED INTERIM FINANCIAL INFORMATION AND CONDENSED CONSOLIDATED INTERIM FINANCIAL INFORMATION
+[p019_c0009] The following sections discuss the significant changes in the MTA Group's financial position as of September 30, 2023 and December 31, 2022 and for the nine-month periods ended September 30, 2023 and 2022. An analysis of major economic factors and industry trends that have contributed to these changes is provided. It should be noted that for purposes of the MD&A, the information contained within the summaries of the consolidated interim financial statements and the various exhibits presented were derived from the MTA Group's consolidated interim financial statements.
+### [p019_c0010] Total Assets and Deferred Outflows of Resources, Distinguishing Between Capital Assets, Other Assets and Deferred Outflows of Resources
+[p019_c0011] Capital assets include, but are not limited to: bridges, structures, tunnels, construction of buildings and the acquisition of buses, equipment, passenger cars, locomotives, and right-of-use assets for leases on building, office space, storage space, equipment and vehicles.
+[p019_c0012] Other assets include, but are not limited to: cash, restricted and unrestricted investments, State and regional mass transit taxes receivables, and receivables from New York State. This also includes the receivable from leases of MTA's land, building, station space, equipment, and right-of-way to third parties.
+[p019_c0013] Deferred outflows of resources reflect: changes in fair values of hedging derivative instruments that are determined to be effective, unamortized loss on debt refunding, deferred outflows from pension activities, and deferred outflows from OPEB activities.
+[p019_c0014]
+
+```text
+(In millions) September 30, 2023 December 31, 2022 Increase / (Decrease) Capital assets — net (see Note 6) $ 89,011 $ 87,506 $ 1,505 Other assets 19,148 21,138 (1,990) Total Assets 108,159 108,644 (485) Deferred outflows of resources 9,343 8,274 1,069 Total assets and deferred outflows of resources $ 117,502 $ 116,918 $ 584
+```
+[p019_c0015] _Capital Assets, Net - September 30, 2023_
+> [p019_c0016] Capital Assets, Net - September 30, 2023 Category Percentage Buildings and structures 26 % Construction work-in-progress 17 % Right of Use Assets 1 % Other 20 % Infrastructure 23 % Bridges and Tunnels 4 % Passenger cars and locomotives 7 %
+[p019_c0017] _Capital Assets, Net - December 31, 2022_
+> [p019_c0018] Capital Assets, Net - December 31, 2022 Category Percentage Buildings and structures 17 % Construction work-in-progress 26 % Right of Use Assets 1 % Other 21 % Infrastructure 22 % Bridges and Tunnels 4 % Passenger cars and locomotives 7 %
+[p019_c0019] _Master Page # 19 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 20
+
+### [p020_c0001] Metropolitan Transportation Authority
+### [p020_c0002] DRAFT
+### [p020_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p020_c0004] Significant Changes in Assets and Deferred Outflows of Resources Include:
+### [p020_c0005] September 30, 2023 versus December 31, 2022
+- [p020_c0006] ● Net capital assets increased by $1,505, or 1.7%. This change includes: - An increase in buildings and structures of $8,378. - An increase in infrastructure of $2,400. - An increase in other capital assets of $472. - An increase in passenger cars and locomotives of $186. - An increase in bridges and tunnels of $24.
+[p020_c0007] Offsetting these increases were:
+- [p020_c0008] - A decrease in construction in progress of $7,428. - A decrease in accumulated depreciation of $2,442. - A decrease in buses of $53.
+[p020_c0009] These changes were primarily due to capitalization and depreciation of Grand Central Madison terminal assets as revenue service began in January 2023. See Note 6 to the MTA's Consolidated Interim Financial Statements for further information. Some of the more significant projects contributing to the increase were:
+- [p020_c0010] - Continued progress on the Grand Central Madison terminal, Second Avenue Subway and the subway action plan. - Infrastructure work including: ○ Repairs and improvements of all MTA Bridge and Tunnels' facilities. ○ Construction of a third track between Floral Park and Hicksville by MTA Long Island Railroad. ○ Improvements to MTA Long Island Railroad's road-assets, replacement of signal power lines, various right-of-way enhancements and upgrades of radio communications. ○ Continued improvements to MTA Metro-North Railroad stations, tracks and structures, power rehabilitation of substations, and security. ○ Subway and bus real-time customer information and communications systems. ○ Continued structural rehabilitation and repairs of the ventilation system at various facilities. ○ Continued passenger station rehabilitation for Penn Station and Grand Central Madison terminal. ○ Ongoing work by MTA New York City Transit to make stations fully accessible and structurally reconfigured in accordance with the Americans with Disability Act ("ADA") standards. ● Other assets decreased by $1,990, or 9.4%. The major items contributing to this change include: - A decrease in investments of $3,386, primarily due to redemption of MTA Grant Anticipation Notes offsetting FTA grants received in 2022. Offsetting this decrease were: - An increase in cash of $660 from net cash flow activities, including timing of New York State's funding towards the MTA Capital Program and processing of capital payments. - A net increase in various other current and noncurrent assets of $598, primarily due to an increase in prepaid pension expense resulting from MTA's prepayment of the 2023 and 2024 projected Actuarially Determined Contributions for MTA-Sponsored Pension Plans in January 2023. - An increase of $138 in federal and state government receivables. ● Deferred outflows of resources increased by $1,069, or 12.9%, primarily attributed to an increase in deferred outflows related to pensions and other post-employment benefits of $1,305, offset by decreases in the amortization of loss on debt refunding of $179 and changes in the fair value of derivative instruments of $57.
+[p020_c0011] _Master Page # 20 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 21
+
+### [p021_c0001] Metropolitan Transportation Authority
+### [p021_c0002] DRAFT
+### [p021_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p021_c0004] Total Liabilities and Deferred Inflows of Resources, Distinguishing Between Current Liabilities, Non-Current Liabilities and Deferred Inflows of Resources
+[p021_c0005] Current liabilities include: accounts payable, accrued expenses, current portion of long-term debt, pollution remediation liabilities, unredeemed fares and tolls, and other current liabilities. This also includes the current portion of long-term lease liability.
+[p021_c0006] Non-current liabilities include: long-term debt, claims for injuries to persons, post-employment benefits and other non-current liabilities. This also includes the long-term lease liability.
+[p021_c0007] Deferred inflows of resources reflect unamortized gains on debt refunding, deferred inflows related to leases, pensions, and OPEB activities.
+[p021_c0008]
+
+```text
+(In millions) September 30, 2023 December 31, 2022 Increase / (Decrease) Current liabilities $ 10,698 $ 10,552 $ 146 Non-current liabilities 86,891 85,375 1,516 Total liabilities 97,589 95,927 1,662 Deferred inflows of resources 4,019 4,074 (55) Total liabilities and deferred inflows of resources $ 101,608 $ 100,001 $ 1,607
+```
+[p021_c0009] _Total Liabilities - September 30, 2023_
+> [p021_c0010] Total Liabilities - September 30, 2023 Category Percentage Long-term debt 53 % Other long-term liabilities 39 % Accounts payable/Accrued expenses 5 % Lease Payable 1 % Other current liabilities 2 %
+[p021_c0011] _Total Liabilities - December 31, 2022_
+> [p021_c0012] Total Liabilities - December 31, 2022 Category Percentage Long-term debt 47 % Other long-term liabilities 41 % Accounts payable/Accrued expenses 5 % Lease Payable 1 % Other current liabilities 6 %
+### [p021_c0013] Significant Changes in Liabilities and Deferred Inflows of Resources Include:
+### [p021_c0014] September 30, 2023 versus December 31, 2022
+- [p021_c0015] ● Current liabilities increased by $146 or 1.4%. The increases were primarily due to: - An increase in unearned revenue of $640 due to timing of New York State's funding towards the MTA Capital Program and processing of capital payments. - An increase in accrued interest of $495. - An increase in accounts payable due to vendors of $58. - A net increase in other current liabilities of $36.
+[p021_c0016] Offsetting decreases were as follows:
+- [p021_c0017] - A decrease in the current portion of long-term debt of $945, primarily from the redemption of MTA Grant Anticipation Notes and MTA Bond Anticipation Notes. - A decrease in capital accruals of $108. - A decrease in accrued expenses of $4. - A net decrease of $27 in employee related accruals.
+[p021_c0018] _Master Page # 21 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 22
+
+### [p022_c0001] Metropolitan Transportation Authority
+### [p022_c0002] DRAFT
+### [p022_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+- [p022_c0004] ● Non-current liabilities increased by $1,516 or 1.8%. This increase was mainly due to: - An increase in the non-current portion of long-term debt of $1,440, which includes $1,198 from the issuance of MTA Bridges and Tunnels General Revenue Bonds, $1,254 issuance of MTA Bridges and Tunnels Sales Tax Revenue Bonds and $1,365 from issuance of MTA Bridges and Tunnels Payroll Mobility Tax Senior Lien Refunding Green Bonds. These were offset by bond retirements of $2,377. - An increase of $147 in estimated liability arising from injuries to persons. Offsetting decreases were: - A decrease in lease payable of $16. - A decrease in derivative liabilities of $55 resulting mainly from changes in market valuation and a reduction in the notional amount of derivative contracts. ● Deferred inflows of resources decreased by $55 or 1.4%.
+### [p022_c0005] Total Net Position, Distinguishing Between Net Investment in Capital Assets, Restricted Amounts, and Unrestricted Amounts
+[p022_c0006]
+
+```text
+(In millions) September 30, 2023 December 31, 2022 Increase / (Decrease) Net investment in capital assets $ 39,186 $ 34,886 $ 4,300 Restricted for debt service 1,679 381 1,298 Restricted for claims 209 192 17 Restricted for other purposes 2,616 4,491 (1,875) Unrestricted (27,796) (23,033) (4,763) Total Net Position $ 15,894 $ 16,917 $ (1,023)
+```
+### [p022_c0007] Significant Changes in Net Position Include:
+### [p022_c0008] September 30, 2023 versus December 31, 2022
+[p022_c0009] At September 30, 2023, total net position decreased by $1,023 or 6.0%, when compared with December 31, 2022. This change is a result of net non-operating revenues of $4,992, appropriations, grants and other receipts externally restricted for capital projects of $2,271 and operating losses of $8,286.
+[p022_c0010] The net investment in capital assets increased by $4,300 or 12.3%. Funds restricted for debt service, claims and other purposes decreased by $560 or 11.1% in the aggregate, mainly due to scheduled debt service payments. Unrestricted net position decreased by $4,763 or 20.7%.
+[p022_c0011] _Master Page # 22 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 23
+
+### [p023_c0001] Metropolitan Transportation Authority
+### [p023_c0002] DRAFT
+### [p023_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p023_c0004] Condensed Consolidated Interim Statement of Revenues, Expenses and Changes in Net Position
+[p023_c0005]
+
+```text
+(In millions) Nine-Month Period Ended September 30, Increase / (Decrease) 2023 2022 Operating revenues Passenger and tolls $ 5,222 $ 4,674 $ 548 Other 557 461 96 Total operating revenues 5,779 5,135 644 Non-operating revenues Grants, appropriations and taxes 5,303 5,677 (374) Other 1,048 6,854 (5,806) Total non-operating revenues 6,351 12,531 (6,180) Total revenues 12,130 17,666 (5,536) Operating expenses Salaries and wages 5,257 4,834 423 Retirement and other employee benefits 2,629 2,544 85 Postemployment benefits other than pensions 609 564 45 Depreciation and amortization 2,649 2,405 244 Other expenses 2,921 2,652 269 Total operating expenses 14,065 12,999 1,066 Non-operating expenses Interest on long-term debt 1,355 1,601 (246) Other net non-operating expenses 4 4 - Total non-operating expenses 1,359 1,605 (246) Total expenses 15,424 14,604 820 (Loss) / Gain before appropriations, grants and other receipts externally restricted for capital projects (3,294) 3,062 (6,356) Appropriations, grants and other receipts externally restricted for capital projects 2,271 2,570 (299) Change in net position (1,023) 5,632 (6,655) Net position, beginning of period 16,917 9,143 7,774 Net position, end of period $ 15,894 $ 14,775 $ 1,119
+```
+### [p023_c0006] Revenues and Expenses, by Major Source:
+### [p023_c0007] Period ended September 30, 2023 versus 2022
+[p023_c0008] Total operating revenues increased by $644, or 12.5%. The increase was mainly due to increased ridership on trains and subways, as well as increased tolls from vehicle crossings. Fare and toll revenue had increases of $468 and $80, respectively. Other operating revenues increased by $96 when compared with the same period in 2022 due to higher advertising revenues and higher paratransit reimbursement subsidy.
+[p023_c0009] Total non-operating revenues decreased by $6,180, or 49.3%.
+- [p023_c0010] Other subsidies decreased by $5,806, primarily due to increase in funds in 2022 from the Federal government's American Rescue Plan Act ("ARPA") of $6,172 to support operations, offset by 2023 increases in other net non-operating expenses of $301, operating subsidies recoverable from NYC of $46, subsidies from the Connecticut Department of Transportation for the MTA Metro-North Railroad of $12, and station maintenance, operation and use assessments of $7. Grants, appropriations, and taxes decreased by $374 primarily due to decreases in Mortgage Recording Tax of $256, Urban tax subsidies of $236 and Mansion Tax of $161, primarily due to rising interest rates which impacted the real estate market. There were also decreases in Internet Sales Tax of $3, Operating Assistance - 18 B program of $3, and Build America Bond subsidy of $1. These decreases were offset by increases in Payroll Mobility tax subsidies of $131, Metropolitan Mass Transportation Operating Assistance of $110, Mass Transportation Trust Fund from New York State of $19, New York City Assistance Fund of $16, and MTA Aid Trust subsidies of $10.
+[p023_c0011] Labor costs increased by $553, or 7.7% due to a $423 increase in salaries and wages and a net increase of $130 in employee benefits, including post-retirement benefits.
+[p023_c0012] _Master Page # 23 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 24
+
+### [p024_c0001] Metropolitan Transportation Authority
+### [p024_c0002] DRAFT
+### [p024_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p024_c0004] Non-labor operating costs increased by $513, or 10.1%. The variance was primarily due to:
+- [p024_c0005] • An increase in depreciation and amortization of $244 primarily due to assets placed in service during 2023 and its related depreciation including $78 for Grand Central Madison terminal. • An increase in professional service contracts of $92. • An increase in paratransit service contracts of $88. • An increase in material and supplies of $84, mainly due to higher maintenance and repairs requirements. • A net increase in other non-labor expenses of $25. • An increase in insurance of $26. • An increase in maintenance and other operating contracts of $22. • An increase in pollution remediation projects of $13. • A decrease in fuel of $45 and electric power of $22. • A decrease in claims of $14.
+[p024_c0006] Total net non-operating expenses decreased by $246, or 15.3%, primarily due to an increase in interest on long-term debt.
+[p024_c0007] Appropriations, grants and other receipts externally restricted for capital projects decreased by $299, or 11.6% mainly due to timing of requisitioning for Federal and State grants.
+### [p024_c0008] OVERALL FINANCIAL POSITION AND RESULTS OF OPERATIONS AND IMPORTANT ECONOMIC CONDITIONS
+### [p024_c0009] Economic Conditions
+[p024_c0010] Metropolitan New York is the most transit-intensive region in the United States, and a financially sound and reliable transportation system is critical to the region's economic well-being. The MTA consists of urban subway and bus systems, suburban rail systems, and bridge and tunnel facilities, all of which are affected by a myriad of economic forces. To achieve maximum efficiency and success in its operations, the MTA must identify economic trends and continually implement strategies to adapt to changing economic conditions.
+[p024_c0011] Preliminary MTA system-wide ridership for third quarter 2023 remained below the pre-pandemic level, with ridership down 218 million trips (-52.1%) below 2019 third quarter ridership. Year-over-year improvements continued, with 2023 exceeding 2022 ridership levels by 27.2 million trips (7.0%) during the third quarter. For the third quarter compared with the third quarter of 2023, MTA New York City Transit subway ridership increased by 25.8 million trips (10.1%), MTA New York City Transit bus decreased by 3.6 million trips (-4.1%), MTA Long Island Rail Road ridership increased by 2.7 million trips (18.8%), MTA Metro-North Railroad increased by 2.0 million trips (14.9%), MTA Bus increased by 365 thousand trips (1.7%), and MTA Staten Island Railway increased by 43 thousand trips (9.1%). Vehicle traffic at MTA Bridges and Tunnels facilities for the third quarter of 2023 exceeded 2019 levels by 778 thousand crossings (0.9%), and B&T traffic in the third quarter, compared with the third quarter of 2022, was up 819 thousand crossings (1.0%).
+[p024_c0012] The Central Business District Tolling Program (CBDTP) was authorized by the MTA Reform and Traffic Mobility Act and enacted in April 2019. The CBDTP will impose a toll for vehicles entering or remaining in the Central Business District (CBD), which is defined as Manhattan south of and inclusive of 60th Street, not including the FDR Drive or the West Side Highway (which includes the Battery Park underpass and or any surface roadway portion of the Hugh L. Carey Tunnel that connects to West Street). On June 27, 2023, the Federal Highway Administration (FHWA) issued a Finding of No Significant Impact, confirming the conclusion of the Final Environmental Assessment, which includes mitigation measures to be undertaken by the program, that the program will have no significant environmental impacts. Contractors have up to 310 days from the federal approval to complete the design, development, testing, and installation of the tolling system and equipment, and the MTA Bridges and Tunnels Board must adopt a toll structure, before toll collection can begin. The Traffic Mobility Review Board (TMRB), the six-member panel that will issue a recommended tolling structure for the CBD Tolling Program, held its third meeting on October 2, 2023.
+[p024_c0013] Seasonally adjusted non-agricultural employment in New York City for the third quarter was higher in 2023 than in 2022 by 120.5 thousand jobs (2.6%). On a quarter-to-quarter basis, New York City employment gained 11.4 thousand jobs (0.2%), the thirteenth consecutive quarterly increase. These increases were preceded by the steep decline of 891.4 thousand jobs (19.0%) during the second quarter of 2020.
+[p024_c0014] National economic growth, as measured by Real Gross Domestic Product ("RGDP"), increased at an annualized rate of 4.9% in the third quarter of 2023, according to the most recent estimate released by the Bureau of Economic Analysis; in the second
+[p024_c0015] _Master Page # 24 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 25
+
+### [p025_c0001] Metropolitan Transportation Authority
+### [p025_c0002] DRAFT
+### [p025_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p025_c0004] quarter of 2023, the revised RGDP increased 2.1 percent. The increase in consumer spending reflected increases in both services and goods. Within services, the leading contributors were housing and utilities, health care, financial services and insurance, and food services and accommodations. Within goods, the leading contributors to the increase were other nondurable goods (led by prescription drugs) as well as recreational goods and vehicles. The increase in private inventory investment reflected increases in manufacturing and retail trade. Within nonresidential fixed investment, a decrease in equipment was partly offset by increases in intellectual property products and structures. Compared to the second quarter, the acceleration in real GDP in the third quarter reflected accelerations in consumer spending, private inventory investment, and federal government spending and upturns in exports and residential fixed investment. These movements were partly offset by a downturn in nonresidential fixed investment and a deceleration in state and local government spending. Imports rose during the Quarter.
+[p025_c0005] The New York City metropolitan area's price inflation rate, as measured by the Consumer Price Index for All Urban Consumers ("CPI-U"), was lower than the national average in the third quarter of 2023, with the metropolitan area index increasing 3.4% while the national index increased 3.5% when compared with the third quarter of 2023. Regional prices for energy products decreased 6.7%, and national prices of energy products fell 5.7%. In the metropolitan area, the CPI-U exclusive of energy products increased by 4.2%, while nationally, inflation exclusive of energy products increased 4.4%. The New York Harbor spot price for conventional gasoline decreased by 7.5% from an average price of $3.05 per gallon to an average price of $2.82 per gallon between the third quarters of 2022 and 2023.
+[p025_c0006] In its announcement on November 1, 2023, the Federal Open Market Committee ("FOMC") maintained its target for the Federal Funds rate at the 5.25% to 5.50% range. The Federal Funds rate target had been in the 0.00% to 0.25% range from March 15, 2020 through March 16, 2022, when the FOMC increased the target to the 0.25% to 0.50% range. The target was further increased to the 0.75% to 1.00% range on May 4, 2022, to the 1.50% to 1.75% range on June 15, 2022, to the 2.25% to 2.50% range on July 27, 2022, to the 3.00% to 3.25% range on September 21, 2022, to the 3.75% to 4.00% range on November 2, 2022, to the 4.25% to 4.50% range on December 14, 2022, to the 4.5% to 4.75% range on February 1, 2023, to the 5.00% to 5.25% range on May 3, 2023, to 5.25% to 5.50% range on July 26, 2023, and most recently maintained the range at 5.25% to 5.50% range on November 1, 2023. In support of its actions, FOMC noted the Committee will continue to assess additional information and its implications for monetary policy. In determining the extent of additional policy firming that may be appropriate to return inflation to 2 percent over time, the Committee will take into account the cumulative tightening of monetary policy, the lags with which monetary policy affects economic activity and inflation, and economic and financial developments. In addition, the Committee will continue reducing its holdings of Treasury securities and agency debt and agency mortgage-backed securities, as described in its previously announced plans. The Committee is strongly committed to returning inflation to its 2 percent objective.
+[p025_c0007] On March 27, 2020, the Coronavirus Aid, Relief, and Economic Security ("CARES") Act was signed into law and provided $4.0 billion in funding to the MTA. The Coronavirus Response and Relief Supplemental Appropriations Act of 2021 ("CRRSAA") became law on December 27, 2020 and provided the MTA with $4.1 billion in aid. On March 11, 2021, the American Rescue Plan Act of 2021 ("ARPA") was signed in law, with the MTA receiving $6.9 billion in aid from ARPA.
+[p025_c0008] The influence of the Federal Reserve's monetary policy on the mortgage market is a matter of interest to the MTA, since variability of mortgage rates can affect real estate transactions and thereby impact receipts from the Mortgage Recording Taxes ("MRT") and the Urban Taxes, two important sources of MTA revenue. While real estate transaction activity initially was severely impacted by social distancing and the economic disruption caused by the COVID-19 pandemic, demand for suburban residential real estate, along with mortgage rates that were historically low until recently, significantly strengthened mortgage activity and refinancing of existing mortgages. Mortgage Recording Tax collections in the third quarter of 2023 were lower than the third quarter of 2022 by $81.3 (-46.1%). Average monthly receipts in the third quarter of 2023 were $32.7 (-51.5%) lower than the monthly average for 2006, just prior to the steep decline in Mortgage Recording Tax revenues during the Great Recession. MTA's Urban Tax receipts during the third quarter of 2023, which are derived from commercial real estate transactions and mortgage recording activity within New York City and can vary significantly from quarter to quarter based on the timing of exceptionally high-priced transactions, were $107.7 (-38.2%) lower than receipts during the third quarter of 2022. Average monthly receipts in the third quarter of 2023 were $39.8 (-54.1%) lower than the monthly average for 2007, just prior to the steep decline in Urban Tax revenues during the Great Recession.
+### [p025_c0009] Results of Operations
+[p025_c0010] MTA Bridges and Tunnels - For the nine months ended September 30, 2023, operating revenue from tolls totaled $1,823, which was $80, or 4.5%, higher than the nine months of 2022. Paid traffic for the third quarter of 2023 totaled 86.9 million crossings, which was 0.8 million, or 1% above the third quarter of 2022. Traffic continued to recover from the impacts of the Covid-19 pandemic but is still below pre-pandemic levels. The continued increase in traffic volumes is due to the improvement in the regional economy and the rebound of traffic as COVID-19 pandemic impact eases.
+[p025_c0011] MTA New York City Transit - For the nine months ended September 30, 2023, revenue from fares was $2,445, an increase of $288, or 13.4%, compared to September 30, 2022. For the same comparative period, total operating expenses were higher by $476, or 5.7%, totaling $8,843 for the nine months ended September 30, 2023.
+[p025_c0012] _Master Page # 25 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 26
+
+### [p026_c0001] Metropolitan Transportation Authority
+### [p026_c0002] DRAFT
+### [p026_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p026_c0004] MTA Long Island Rail Road – Total operating revenue for the nine months ended September 30, 2023 was $439, which was higher by $82, or 23.0%, compared to nine months ended September 30, 2022. For the same comparative period, operating expenses were higher by $194, or 12.5%, totaling $1,749 for the nine months ended September 30, 2023.
+[p026_c0005] MTA Metro-North Railroad – For the nine months ended September 30, 2023, operating revenues totaled $435, an increase of $97, or 28.7%, compared to September 30, 2022. During the same period, operating expenses increased by $68, or 5.3%, to $1,357. For the nine months ended September 30, 2023, fare revenue increased by 27.1% to $403 compared to September 30, 2022. Passenger fares accounted for 92.64% and 93.78% of operating revenues in 2023 and 2022, respectively. The remaining revenue represents collection of rental income from stores in and around passenger stations and revenue generated from advertising.
+[p026_c0006] The MTA receives the equivalent of four quarters of Metropolitan Mass Transportation Operating Assistance (“MMTOA”) receipts each year, with the state advancing the first quarter of each succeeding calendar year’s receipts in the fourth quarter of the current year. This results in little or no Metropolitan Mass Transportation Operating Assistance receipts being received during the first quarter of each calendar year. The MTA has made other provisions to provide for cash liquidity during this period. During April 2023, the State appropriated $2.7 billion in MMTOA funds. There has been no change in the timing of the State’s payment of, or MTA’s receipt of, Dedicated Mass Transportation Trust Fund (“MTTF”) receipts, which MTA anticipates will be sufficient to make monthly principal and interest deposits into the Debt Service Fund for the Dedicated Tax Fund Bonds. The total MRT for the period ended September 30, 2023 was $269 compared to $525 at September 30, 2022.
+### [p026_c0007] Capital Programs
+[p026_c0008] At September 30, 2023, $20,241 had been committed and $6,571 had been expended for the 2020-2024 MTA Bridges and Tunnels Capital Program, $30,672 had been committed and $24,939 had been expended for the combined 2015-2019 MTA Capital Programs and the 2015-2019 MTA Bridges and Tunnels Capital Program, and $29,384 had been committed and $27,867 had been expended for the combined 2010- 2014 MTA Capital Programs and the 2010-2014 MTA Bridges and Tunnels Capital Program, and $24,113 had been committed and $23,988 had been expended for the combined 2005-2009 MTA Capital Programs and the 2005-2009 MTA Bridges and Tunnels Capital Program.
+[p026_c0009] The MTA Group has ongoing capital programs, which except for MTA Bridges and Tunnels are subject to the approval of the Metropolitan Transportation Authority Capital Program Review Board (“CPRB”), and are designed to improve public transportation in the New York Metropolitan area.
+[p026_c0010] 2020-2024 Capital Program – Capital programs totaling $54,799 covering the years 2020-2024 for: (1) the commuter railroad operations of the MTA conducted by MTA Long Island Rail Road and MTA Metro-North Railroad (the “2020–2024 Commuter Capital Program”), (2) the transit system operated by MTA New York City Transit and its subsidiary, MaBSTOA, the MTA Bus Company, and the rail system operated by MTA Staten Island Railway (the “2020–2024 Transit Capital Program”) were originally approved by the MTA Board on September 25, 2019. The capital programs were subsequently submitted to the Capital Program Review Board (“CPRB”) on October 1, 2019 and approved on January 1, 2020. The capital program for the toll bridges and tunnels operated by MTA Bridges and Tunnels (the “2020–2024 MTA Bridges and Tunnels Capital Program”) was approved by the MTA Board on September 25, 2019 and was not subject to CPRB approval. On December 15, 2021, the MTA Board approved an amendment to increase the 2020-2024 Capital Program by $535 to support the Penn Station Access project. On July 27, 2022 the MTA Board approved an amendment to increase the 2020-2024 Capital Program by $108 to reflect addition of new projects, additional support for existing projects and changes to existing project budgets. The capital programs were subsequently submitted to the CPRB on August 1, 2022 and approved on August 30, 2022. On June 27, 2023, the MTA Board approved an amendment primarily to reflect $678 in budget transfers from the core agencies to support Network Expansion’s Penn Station Access project. The amendment to the capital programs was subsequently submitted to the CPRB, and deemed approved on July 31, 2023. The revised 2020-2024 MTA Bridges and Tunnels Capital Program totaling $3,327 as last approved by the MTA Board on July 27, 2022, remains unchanged and is not subject to CPRB approval.
+[p026_c0011] The last CPRB approved 2020-2024 Capital Programs provided $55,442 in capital expenditures. The combined funding sources for the 2020–2024 MTA Capital Programs and the 2020-2024 MTA Bridges and Tunnels Capital Program, include $15,000 in Central Business District tolling sources, $10,000 in new revenue sources, $7,393 in MTA bonds and PAYGO, $3,327 in MTA Bridges and Tunnels bonds, $13,073 in Federal funds, $3,101 in State of New York funding, $3,007 in City of New York funding, and $542 in other contributions.
+[p026_c0012] 2015-2019 Capital Program — Capital programs covering the years 2015-2019 for: (1) the commuter railroad operations of the MTA conducted by MTA Long Island Rail Road and MTA Metro-North Railroad (the “2015–2019 Commuter Capital Program”), (2) the transit system operated by MTA New York City Transit and its subsidiary, MaBSTOA, the MTA Bus Company, and the rail system operated by MTA Staten Island Railway (the “2015–2019 Transit Capital Program”) were originally approved by the MTA Board in September 2014. The capital programs were subsequently submitted to the Capital Program Review Board (“CPRB”) in October 2014. This plan was disapproved by the CPRB, without prejudice, in October 2014. The capital program for the toll bridges and tunnels operated by MTA Bridges and Tunnels (the “2015–2019 MTA Bridges and Tunnels Capital Program”) was approved by the MTA Board in September 2014 and was not subject to CPRB approval.
+[p026_c0013] _Master Page # 26 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 27
+
+### [p027_c0001] Metropolitan Transportation Authority
+### [p027_c0002] DRAFT
+### [p027_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p027_c0004] On April 20, 2016, the MTA Board approved revised capital programs for the years covering 2015-2019. The revised capital programs provided for $29,456 in capital expenditures. On May 23, 2016, the CPRB approved the revised 2015-2019 Capital Programs for the Transit and Commuter systems as submitted. The revised 2015-2019 MTA Bridges and Tunnels Capital Program, was approved by the MTA Board on April 20, 2016. On February 23, 2017, the MTA Board approved a revision to the CPRB portion of the capital programs for the years covering 2015-2019, adding $119 transferred from prior capital programs to support additional investment projects. On March 30, 2017, the CPRB approved the revised 2015-2019 Capital Programs for the Transit and Commuter systems as submitted. On May 24, 2017, the MTA Board approved a full amendment to the 2015-2019 Capital Programs to reflect updated project estimates and rebalanced programs to address budgetary and funding needs of priority projects that include Second Avenue Subway Phase 2, MTA Long Island Rail Road regional mobility, station enhancement work, investments at Penn Station, and new Open Road Tolling at MTA Bridges and Tunnels. On July 31, 2017, the CPRB approved the revised 2015-2019 Capital Programs for the Transit and Commuter systems totaling $29,517, as submitted. The revised 2015-2019 MTA Bridges and Tunnels Capital Program totaling $2,940, as approved by the MTA Board in May 2017, was not subject to CPRB approval. On December 13, 2017, the MTA Board approved an amendment adding $349 to the 2015-2019 Capital Program for the Transit system in support of the NYC Subway Action Plan. On April 25, 2018, the MTA Board approved a full amendment to increase the 2015-2019 Capital Programs to $33,270 reflecting updated project cost estimates, emerging new needs across the agencies, and reallocation of funds within the East Side Access and Regional Investment programs, among others. On May 31, 2018, the CPRB approved the revised 2015-2019 Capital Programs for the Transit and Commuter systems totaling $30,334, as submitted. The revised 2015-2019 MTA Bridges and Tunnels Capital Program totaling $2,936, as approved by the MTA Board in April 2018, was not subject to CPRB approval. On September 25, 2019, the MTA Board approved a full amendment to increase the 2015-2019 Capital Program to $33,913 reflecting updated project timing and cost estimates, new needs, and changing priorities. On February 21, 2020, the CPRB approved the revised 2015-2019 Capital Program for the Transit and Commuter systems totaling $30,977, as submitted. The revised 2015-2019 MTA Bridges and Tunnels Capital Program totaling $2,936, as approved by the MTA Board in September 2019, was not subject to CPRB approval. On June 27, 2023, the MTA Board approved an amendment to change the Program's funding mix to allow the MTA to best meet the funding requirements of the Second Avenue Subway Phase 2 project. This amendment does not change the Program's budget at $33,913, as last approved.
+[p027_c0005] The last approved 2015-2019 Capital Programs provided $33,913 in capital expenditures, of which $16,742 relates to ongoing repairs of, and replacements to, the transit system operated by MTA New York City Transit and MaBSTOA and the rail system operated by MTA Staten Island Railway; $6,095 relates to ongoing repairs of, and replacements to, the commuter system operated by MTA Long Island Rail Road and MTA Metro-North Railroad; $7,520 relates to the expansion of existing rail networks for both the transit and commuter systems; $243 relates to Planning and Customer Service; $376 relates to MTA Bus Company initiatives; and $2,936 in capital expenditures for ongoing repairs of, and replacements to, MTA Bridges and Tunnels facilities.
+[p027_c0006] The combined funding sources for the approved 2015-2019 MTA Capital Programs and the 2015-2019 MTA Bridges and Tunnels Capital Program, include $9,118 in MTA bonds, $2,942 in MTA Bridges and Tunnels dedicated funds, $9,064 in State of New York funding, $6,801 in Federal funds, $2,667 in City of New York funding, $2,145 in pay-as-you-go ("PAYGO") capital, $958 from asset sale/leases, and $217 from other sources.
+[p027_c0007] 2010-2014 Capital Program — Capital programs covering the years 2010-2014 for: (1) the commuter railroad operations of the MTA conducted by MTA Long Island Rail Road and MTA Metro-North Railroad (the "2010-2014 Commuter Capital Program"), (2) the transit system operated by MTA New York City Transit and its subsidiary, MaBSTOA, the MTA Bus Company, and the rail system operated by MTA Staten Island Railway (the "2010-2014 Transit Capital Program") were originally approved by the MTA Board in September 2009. The capital programs were subsequently submitted to the CPRB in October 2009. This plan was disapproved by the CPRB, without prejudice, in December 2009 allowing the State Legislature to review funding issues in their 2010 session. The capital program for the toll bridges and tunnels operated by MTA Bridges and Tunnels (the "2010-2014 MTA Bridges and Tunnels Capital Program") was approved by the MTA Board in September 2009 and was not subject to CPRB approval. The MTA Board approved the revised plan for the Transit and Commuter systems on April 28, 2010 and CPRB approval of the five-year program of projects was obtained on June 1, 2010. The approved CPRB program fully funded only the first two years (2010 and 2011) of the plan, with a commitment to come back to CPRB with a funding proposal for the last three years for the Transit and Commuter Programs. On December 21, 2011, the MTA Board approved an amendment to the 2010-2014 Capital Program for the Transit, Commuter, and Bridges and Tunnels systems that fund the last three years of the program through a combination of self-help (efficiency improvements and real estate initiatives), participation by our funding partners, and innovative and pragmatic financing arrangements. On March 27, 2012, the CPRB approved the amended 2010-2014 Capital Programs for the Transit and Commuter systems as submitted.
+[p027_c0008] On December 19, 2012, the MTA Board approved an amendment to the 2010-2014 Capital Programs for the Transit, Commuter, and Bridges and Tunnels systems to add projects for the repair/restoration of MTA agency assets damaged as a result of Superstorm Sandy, which struck the region on October 29, 2012. On January 22, 2013, the CPRB deemed approved the amended 2010-2014 Capital Programs for the Transit and Commuter systems as submitted. On July 22, 2013, the MTA Board approved a further amendment to the 2010-2014 Capital Programs for the Transit, Commuter, and Bridges and Tunnels systems to include specific revisions to planned projects and to include new resilience/mitigation initiatives in response to Superstorm Sandy.
+[p027_c0009] _Master Page # 27 of 175 - Audit 3 Committee Meeting 1/29/2024_
+
+## Page 28
+
+### [p028_c0001] Metropolitan Transportation Authority
+### [p028_c0002] DRAFT
+### [p028_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p028_c0004] On August 27, 2013, the CPRB approved those amended 2010-2014 Capital Programs for the Transit and Commuter systems as submitted. On July 28, 2014, the MTA Board approved an amendment to select elements of the Disaster Recovery (Sandy) and MTA New York City Transit portions of the 2010- 2014 Capital Programs, and a change in the funding plan. On September 3, 2014, the CPRB approved the amended 2010-2014 Capital Programs for the Transit and Commuter systems as submitted.
+[p028_c0005] In May 2017, the MTA Board approved an amendment to the 2010-2014 Capital Programs to reflect scope transfers and consolidation between the approved capital programs, and to reflect reductions to the MTA Superstorm Sandy capital projects to match current funding assumptions. This amendment, which provided $29,237 in capital expenditures for the Transit and Commuter systems, was deemed approved by the CPRB as submitted on July 31, 2017. The amended 2010-2014 MTA Bridges and Tunnels Capital Program, which provided $2,784 in capital expenditures, was not subject to CPRB approval. On September 25, 2019, the MTA Board approved an amendment to decrease the 2010-2014 Capital Programs to $31,704 reflecting administrative budget adjustments and updated project cost and timing assumptions. On February 21, 2020, the CPRB approved the revised 2010-2014 Capital Programs for the Transit and Commuter systems totaling $28,917, as submitted. The revised 2010-2014 MTA Bridges and Tunnels Capital Program totaling $2,787, as approved by the MTA Board in September 2019, was not subject to CPRB approval.
+[p028_c0006] The last approved 2010-2014 MTA Capital provided $31,704k in capital expenditures, of which $11,365 relates to ongoing repairs of, and replacements to, the transit system operated by MTA New York City Transit and MaBSTOA and the rail system operated by MTA Staten Island Railway; $3,924 relates to ongoing repairs of, and replacements to, the commuter system operated by MTA Long Island Rail Road and MTA Metro-North Railroad; $5,861 relates to the expansion of existing rail networks for both the transit and commuter systems to be managed by MTA Capital Construction; $254 relates to a multi-faceted security program including MTA Police Department; $223 relates to MTA Interagency; $297 relates to MTA Bus Company initiatives; $2,022 relates to the ongoing repairs of, and replacements to, MTA Bridges and Tunnels facilities; and $7,757 relates to Superstorm Sandy recovery/mitigation capital expenditures.
+[p028_c0007] The combined funding sources for the CPRB-approved 2010–2014 MTA Capital Programs and 2010–2014 MTA Bridges and Tunnels Capital Program include $11,635 in MTA Bonds, $2,025 in MTA Bridges and Tunnels dedicated funds, $7,376 in Federal Funds, $132 in MTA Bus Federal and City Match, $719 from City Capital Funds, and $1,442 from other sources. Also included is $770 in State Assistance funds added to re-establish a traditional funding partnership. The funding strategy for Superstorm Sandy repair and restoration assumes the receipt of $6,698 in insurance and federal reimbursement proceeds (including interim borrowing by MTA to cover delays in the receipt of such proceeds), $18 in pay-as-you-go capital, supplemented, to the extent necessary, by external borrowing of up to $889 in additional MTA and MTA Bridges and Tunnels bonds.
+[p028_c0008] 2005-2009 Capital Program — Capital programs covering the years 2005-2009 for: (1) the commuter railroad operations of the MTA conducted by MTA Long Island Rail Road and MTA Metro-North Railroad (the “2005–2009 Commuter Capital Program”), (2) the transit system operated by MTA New York City Transit and its subsidiary, MaBSTOA, the MTA Bus Company, and the rail system operated by MTA Staten Island Railway (the “2005–2009 Transit Capital Program”) were originally approved by the MTA Board in April 2005 and subsequently by the CPRB in July 2005. The capital program for the toll bridges and tunnels operated by MTA Bridges and Tunnels (the “2005–2009 MTA Bridges and Tunnels Capital Program”) was approved by the MTA Board in April 2005 and was not subject to CPRB approval. The 2005–2009 amended Commuter Capital Program and the 2005–2009 Transit Capital program (collectively, the “2005–2009 MTA Capital Programs”) were last amended by the MTA Board in July 2008. This latest 2005-2009 MTA Capital Program amendment was resubmitted to the CPRB for approval in July 2008, and was approved in August 2009.
+[p028_c0009] As last amended by the MTA Board, the 2005–2009 MTA Capital Programs and the 2005–2009 MTA Bridges and Tunnels Capital Program, provided for $24,353 in capital expenditures. By June 30, 2023, the 2005-2009 MTA Capital Programs budget increased by $634 primarily due to the receipt of new American Recovery and Reinvestment Act (“ARRA”) funds and additional New York City Capital funds for MTA Capital Construction work still underway. Of the $24,353 provided in capital expenditures, $11,515 relates to ongoing repairs of, and replacements to the transit system operated by MTA New York City Transit and MaBSTOA and the rail system operated by MTA Staten Island Railway; $3,723 relates to ongoing repairs of, and replacements to, the commuter system operated by MTA Long Island Rail Road and MTA Metro-North Railroad; $166 relates to certain interagency projects; $7,671 relates generally to the expansion of existing rail networks for both the transit and commuter systems to be managed by the MTA Capital Construction Company (including the East Side Access, Second Avenue Subway and No.7 subway line) and a security program throughout MTA’s transit network; $1,127 relates to the ongoing repairs of, and replacements to, bridge and tunnel facilities operated by MTA Bridges and Tunnels; and $152 relates to capital projects for the MTA Bus.
+[p028_c0010] The combined funding sources for the MTA Board-approved 2005–2009 MTA Capital Programs and 2005– 2009 MTA Bridges and Tunnels Capital Program include $11,189 in MTA and MTA Bridges and Tunnels Bonds (including funds for LaGuardia Airport initiative), $1,450 in New York State general obligation bonds approved by the voters in the November 2005 election, $7,776 in Federal Funds, $2,823 in City Capital Funds, and $1,114 from other sources.
+[p028_c0011] _Master Page # 28 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 29
+
+### [p029_c0001] Metropolitan Transportation Authority
+### [p029_c0002] DRAFT
+### [p029_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p029_c0004] CURRENTLY KNOWN FACTS, DECISIONS, OR CONDITIONS
+### [p029_c0005] The 2023 MTA November Financial Plan
+[p029_c0006] The November Financial Plan (“the November Plan”) includes the 2023 November Forecast, the 2024 Final Proposed Budget and a Financial Plan for the years 2024 to 2027 and updates the 2023 July Financial Plan. This Plan reflects the ongoing financial and operational impacts stemming from the pandemic, and the recovery of the MTA Region.
+[p029_c0007] MTA Operating Efficiencies - During 2023, MTA operating agencies identified and have been implementing numerous operating efficiencies initiatives will result in $1.95 billion in savings over the Plan period, with $1.88 billion impacting MTA and an additional $71 million impacting the CDOT subsidy for Metro-North’s Connecticut service. This expands on the July Plan initiatives, which identified savings of $921 million to the MTA and also lowered the CDOT subsidy by $46 million. The November Plan recognizes an additional $958 million in savings over the Plan period, along with a further reduction in the CDOT subsidy by $25 million.
+[p029_c0008] New York City Transit (NYCT) is working toward improving employee availability across all divisions, with efforts targeting critical job titles in the Division of Subways and Division of Buses to reduce positions and overtime related to backfilling shifts ($341M). In addition, overtime assignments will be strategically managed, ensuring compliance with timekeeping rules and reducing overtime hours in targeted functions ($68M).
+[p029_c0009] The Division of Subways at NYCT , working with their Operations, Maintenance and Procurement stakeholders, is addressing critical station and infrastructure cleaning previously handled via more costly third-party contracts ($204M); has adjusted the car equipment maintenance approach ($203M); is obtaining efficiencies in rail material acquisition ($61M); is implementing energy efficient initiatives throughout stations, yards and on subway cars ($60M); is reorganizing terminal station car cleaning assignments ($25M); and is lengthening crew tours for more efficient train operations staffing ($8M).
+[p029_c0010] The Division of Buses at NYCT has identified changes to bus maintenance schedules utilizing predictive maintenance tools ($35M); and improved analysis of vehicle condition and performance to allow for better maintenance planning ($25M). Aligned with these operational efficiencies are the bus lane violation revenues and unscheduled bus operation overtime savings related to the Automated Bus Lane Enforcement (ABLE) measures through camera installation on additional buses and expanded enforcement, as permitted through the State 2023-24 Enacted Budget ($80M). Paratransit trip-booking improvements utilizing self-service functionality will create savings and provide a better Paratransit customer experience ($16M).
+[p029_c0011] Long Island Rail Road and Metro-North Railroad have been working together over the past year to identify and incorporate industry best practices in their equipment shops as well as scheduling work along the rail right-of-way. Shop-specific practices are being adjusted for more efficient workflow to reduce the impacts of unplanned events ($87M). Improved rail equipment scheduling for required maintenance and inspections along with ensuring proper staffing at shop locations will result in reductions to overtime ($77M). Equipment and crew are being more efficiently scheduled to match with demand ($50M). Both railroads are working to ensure appropriate inventory is available for required maintenance ($151M). Management oversight of operating contracts is better aligning third-party services at work locations along the right-of-way ($46M).
+[p029_c0012] Bridges and Tunnels reviewed its staffing requirements needed to oversee Open Road Tolling Operations and reduced positions supporting daily revenue enforcement functions ($103M).
+[p029_c0013] The November Plan includes several financial plan re-estimates since the July Plan:
+- [p029_c0014] • Include a $100 million Farebox Revenue Loss Provision in 2024 to account for short-term fare evasion impacts on farebox revenue. • Incorporates into Agency financial plans revised wage assumptions and safety and security initiatives that were included below-the-line in the July Plan. • One-time State aid of $300 million in 2023, included in the NYS 2023-24 Enacted Budget to address the extraordinary impact of the COVID pandemic on MTA operating revenues, will be made in two equal $150 million disbursements to MTA, at the end of 2023 and at the end of the first quarter of 2024. • Subsidies are lower by $138 million over the Plan period. The 2023 Payroll Mobility Tax forecast is reduced by $44 million to reflect year-to-date shortfalls in receipts. It is still too early to determine whether the lower PMT collections through November are timing related arising from the implementation of the new tax rates or are lower than budgeted due to underlying payroll levels. Receipts from the For-Hire Vehicle Surcharge have been reduced by $109 million over the Plan period, reflecting slower growth than had been previously projected. Collectively, receipts from the Mortgage Recording Tax, the Urban Taxes and MTA Aid are $15 million favorable in 2023, reflecting receipts through October. • Initial inclusion of operating revenue and expenses related to Metro-North’s Penn Station Access train service, which is scheduled to commence in 2027. • Reflects an accounting provision to increase the reserve for B&T uncollected toll revenue by $55 million. B&T continues to ramp up its toll collection efforts.
+[p029_c0015] _Master Page # 29 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 30
+
+### [p030_c0001] Metropolitan Transportation Authority
+### [p030_c0002] DRAFT
+### [p030_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+- [p030_c0004] ● Dramatic increases in interest rates have propelled MTA-wide investment income to be a substantial source of revenue to subsidize operations. Based on current investment returns, investment income increases have been conservatively forecast to exceed the July Plan forecast by $148 million over the Plan period. ● Adjustment to reflect the delayed receipt of COVID expense reimbursement from FEMA. ● Adjustments in the timing of Committed to Capital operating funds. ● Use of $17 million over the Plan period from the OPEB Trust. The July Plan anticipated use of $258 million over the Plan period. ● Reduce the 2024 projection of the Central Business District Tolling Program's net revenue from $600 million to $400 million, reflecting a more conservative first year estimate given timing risks.
+[p030_c0005] Other local subsidy resources which were freed up from the receipt of Federal reimbursement for COVID losses will be applied to close remaining annual deficits. The Plan assumes $1.37 billion of resources will be used to close the 2023 deficit and followed by $220 million in 2024; resources are not expected to be needed for 2025 and 2026, with the remaining $469 million used to balance 2027. The timing change is primarily due to the delay in the receipt of FEMA reimbursement of COVID-related expenses.
+[p030_c0006] More detailed information on the November Plan can be found in the MTA 2024 Final Proposed Budget – November Financial Plan 2024-2027 at www.MTA.info .
+### [p030_c0007] Impacts from Global Coronavirus Pandemic
+[p030_c0008] On March 12, 2020, the World Health Organization declared the current novel coronavirus (“COVID-19”) outbreak to be a pandemic in the face of the global spread of the virus. By order of Governor Cuomo (“New York State on PAUSE”), effective March 2020, all non-essential businesses Statewide were required to be closed, among other restrictive social distancing and related measures. The impact of social distancing and subsequent State governmental orders limiting non-essential activities caused by the COVID-19 pandemic resulted in a severe decline in the utilization of MTA services, dramatic declines in MTA public transportation system ridership and fare revenues, and MTA Bridge and Tunnel crossing traffic and toll revenues. Social distancing mandates were eased, and the region moved into a late-pandemic phase. A significant development was the impact of COVID-19 vaccinations on the MTA region. Capacity restrictions on restaurants, bars, event venues and businesses put in place due to COVID-19 were mostly removed on May 19, 2021, and all remaining restrictions were eliminated on June 15, 2021 after the State reached its goal of 70% of adults receiving at least a first dose of the vaccine. Ridership levels continue to show improvement, although ridership remains significantly below pre-pandemic levels. MTA New York City Subway resumed 24 hours a day service on May 17, 2021, after subway service was shut down overnight for over a year to allow for thorough disinfecting of the system and other enhancements. MTA Metro-North Railroad currently operates on an 93% pre-pandemic service level during the week and 100% on weekends relative to pre-pandemic levels MTA Long Island Rail Road operated on an 87% pre-pandemic service level through the end of 2022. In January of 2023, the Grand Central Madison terminal was opened for LIRR service. Service was initially run as a shuttle between Jamaica and Grand Central Madison terminals. Full LIRR service to Grand Central Madison began in February, resulting in a 41% increase in overall LIRR service.
+- [p030_c0009] ● Ridership and Traffic Update. Daily ridership on MTA facilities continues to be well-below 2019 levels. While ridership has been steadily increasing, ridership compared to the pre-pandemic equivalent day in 2019 is down 28 percent on the subways, 41 percent for bus (combined NYCT bus and MTA Bus Company), 28 percent on MTA Metro-North Railroad, and 30 percent on the MTA Long Island Rail Road. Traffic crossings at MTA Bridges and Tunnels facilities are closely resembling pre-pandemic levels.
+[p030_c0010] For additional information, refer to Note 15 to the MTA's Consolidated Interim Financial Statements for more information regarding the impact from the COVID-19 pandemic.
+### [p030_c0011] Tropical Storm Sandy Update
+[p030_c0012] The total allocation of emergency relief funding from the Federal Transit Administration (“FTA”) to MTA in connection with Superstorm Sandy to date is $5.83 billion, including $1.599 billion allocated on September 22, 2014, through a competitive resiliency program. A total of $5.81 billion in FTA Emergency Relief Funding has been executed: seven repair/local priority resiliency grants totaling $4.55 billion and seventeen competitive resiliency grants totaling $1.26 billion. As of September 30, 2023, MTA has drawn down a total of $4.22 billion in grant reimbursement for eligible operating and capital expenses. The balance of funds to be drawn down from all twenty-four grants is available to MTA for reimbursement of eligible expenses as requisitions are submitted by MTA and approved by FTA. Additional requisitions are in process. At MTA and Amtrak's request, in April 2018, FTA transferred $13.5 million of MTA's emergency relief allocation to the Federal Railroad Administration (“FRA”) to allow Amtrak to execute a portion of MTA Long Island Rail Road's Competitive Resilience scope.
+[p030_c0013] _Master Page # 30 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 31
+
+### [p031_c0001] Metropolitan Transportation Authority
+### [p031_c0002] DRAFT
+### [p031_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p031_c0004] Labor Update
+[p031_c0005] On May 15, 2023, the prevailing labor agreement between the New York City Transit Authority and the Transport Workers Union (“TWU Local 100”) expired, having run from May 16, 2019 to May 15, 2023. That agreement covered approximately 37,000 hourly operating employees of NYCT/MaBSTOA and the MTA Bus Company over its 48-month period. It also established the economic pattern for bargaining with most other unions at all MTA agencies, with its general wage increases and net cost as guiding parameters in labor negotiations. While, at the end of the third quarter, there remain a few typically pattern-following unions that have not yet reached settlements corresponding to the 2019-2023 agreement, more than 90% of the MTA’s represented population has, in fact entered, such understandings; and MTA Financial projections continue to incorporate the assumption that the unsettled unions will likewise come to similar terms. The MTA continues to pursue equitable and financially prudent agreements with unions that have not yet settled according to the 2019-2023 TWU pattern.
+[p031_c0006] In the third quarter, a successor to the 2019-2023 TWU agreement was ratified by the MTA Board. The net economic value, including general wage increases as well as the costs and savings associated with the other provisions of the agreement, are to be incorporated in the MTA’s financial projections, as it is expected that most of the MTA’s 66,000 represented employees will reach future settlements that align with the TWU pattern.
+[p031_c0007] The ensuing paragraphs describe in greater detail the overall status of collective bargaining at MTA agencies through September 30, 2023 and will highlight the terms of new labor agreements—significantly, the 2023-2026 TWU Local 100 agreement.
+[p031_c0008] MTA Long Island Rail Road – At the end of the third quarter of 2023, MTA Long Island Rail Road has approximately 7,438 employees. Approximately 6,684 of these employees are represented by 8 different unions in 19 bargaining units. Long Island Rail Road has settled agreements with nearly all of its bargaining groups along the lines of the 2019-2023 TWU agreement. On June 15, 2023, these agreements became amendable, and LIRR’s entire represented population is poised for negotiations towards new terms.
+[p031_c0009] MTA Metro-North Railroad – As of September 30, 2023, Metro-North Railroad employs approximately 6,210 people. Among these are approximately 5,320 employees represented by ten different unions.
+[p031_c0010] In the third quarter of 2023, the MTA Board approved a new labor agreement between Metro-North and approximately 28 members of the Association of Commuter Rail Employees, Division 37 (Power Directors). The agreement will span the 26-month period from June 2, 2021 through August 2, 2023 and includes wage increases of 2.5% and 2.75% for 2021 and 2022, respectively. Since the resumption of collective bargaining in early 2021, after the long pause imposed by COVID, all MNR’s labor agreements have conformed to this overall pattern and all have therefore been anticipated in the MTA Financial Plan; furthermore, it has been assumed that all unsettled unions at MNR will likewise follow the pattern.
+[p031_c0011] Among the groups, however, that have yet to settle a pattern agreement are two bargaining units of Metro-North’s Transport Workers Union—together, representing more than 1,000 Coach Cleaners, Carmen, Service Worker Attendants, and other titles. The parties are currently engaged in mediation according to the process established under the Railway Labor Act and to date, have engaged in three mediation sessions. Additional dates have been scheduled for January, February, and March of 2024. The railroad has also been engaged in mediation with approximately 820 members in three bargaining units of the International Brotherhood of Electrical Workers, representing Mechanics, Electricians and Communications Specialists, Supervisors and Foremen and other titles. The MTA remains committed to achieving a negotiated resolution of the disputes with these labor unions.
+[p031_c0012] In the third quarter, labor agreements with many of MNR’s largest unions—including the Transportation Communications Union, the International Association of Machinists, the International Brotherhood of Teamsters, the Sheet Metal Workers International Association, and the American Railway and Airway Supervisors Association in Maintenance of Equipment—became amendable; and, as several others will also become amendable in the final quarter of 2023 or the first quarter of 2024, almost all of the railroad’s represented employees will be looking forward to new agreement terms in the new year.
+[p031_c0013] MTA Headquarters – As of September 30, 2023, MTA Headquarters employs approximately 4,980 people, of whom 3,309 are union members[1]. There were no new agreements reached with labor unions at MTA Headquarters during the third quarter as nearly all represented members of the main bargaining units are already covered under effective agreements. One exception is a small group of approximately 26 members of the Commanding Officers Association at MTA Police Department whose previous agreement expired on October 15, 2018.
+[p031_c0014] MTA New York City Transit/Manhattan and Bronx Surface Transit Operating Authority – As of September 30, 2023, MTA New York City Transit and MaBSTOA currently employs approximately 47,102 people, 45,894 of whom are represented by 14 unions with 23 bargaining units. At the end of the third quarter, all NYCT/MaBSTOA unions that typically follow the TWU pattern have reached agreements in alignment with the 2019-2023 deal and are either under such effective agreements; or are looking for new terms for the ensuing period. For unions in the latter category, subsequent agreement terms will most likely align with the new TWU Local 100 agreement.
+[p031_c0015] _Master Page # 31 of 175 - Audit/Committee Meeting 1/29/2024_
+
+## Page 32
+
+### [p032_c0001] Metropolitan Transportation Authority
+### [p032_c0002] DRAFT
+### [p032_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p032_c0004] In July, two months after expiration of the 2019-2023 TWU agreement, the MTA Board ratified a successor memorandum of understanding that will cover approximately 37,000 hourly operating employees at NYCT, MaBSTOA and MTA Bus Company. Spanning the 36-month period, from May 16, 2023 through May 15, 2026, it will provide general wage increases of 3.0% for 2023, 3.0% for 2024, and 3.5% for 2025 (9.8%, in total). It also provides an Essential Worker cash bonus of $3,000 (whole dollars) in the first contract year and a supplemental Essential Worker cash bonus of $1,000 (whole dollars) in the second year, along with the enhancement of certain other employee benefits. Among important savings measures, the agreement institutes TWU Enhanced Retiree Benefits coverage (Medicare Advantage Plan), by which all post-65 Medicare eligible retirees and their eligible dependents will be placed into an alternative plan. Because the federal government reduces cost to participating employers, the transitioning of retirees to this plan will result in significant savings to the MTA. In addition, retired plan participants will experience enhancements without additional out-of-pocket expenses.
+[p032_c0005] The 2023-2026 TWU agreement will, like its predecessor, set a new bargaining pattern for most other labor unions across the MTA. While not all the provisions described above will be applicable to all other unions, future negotiations will be oriented towards the same general wage increases and will aim to match the agreement's net-costs.
+[p032_c0006] MTA Bus Company – As of September 30, 2022, MTA Bus Company has 3,753 employees, approximately 3,628 of whom are represented by three different unions (now including the United Transit Leadership Organization) and five bargaining units. The largest of these is TWU Local 100, whose more than 2,000 members were co-parties to the agreement approved by the MTA Board in July 2023 and whose current agreement will run through May 15, 2026. There were no other labor agreements reached during the third quarter of 2023 at MTA Bus Company. Agreements with more than 1,000 members of the two bargaining units of the Amalgamated Transit Union (ATU) at MTA Bus Company will expire in October 2023, and their membership will be looking towards new agreement terms for the subsequent period.
+[p032_c0007] MTA Bridges and Tunnels – As of September 30, 2023, MTA Bridges and Tunnels has 881 employees, approximately 672 of whom are represented by three different labor unions (four bargaining units). In the third quarter, two new labor agreements were approved by the MTA Board. First, the Triborough Bridge and Tunnel Authority reached agreement with approximately 281 members of the Bridge and Tunnel Officers Association ("BTOBA") for the period September 18, 2019 through November 17, 2023. Approved by the MTA Board in July, the deal provides the series of wage increases common to nearly every other pattern-following agreement: 2.0% for 2019, 2.25% for 2020, 2.5% for 2021 and 2.75% for 2022.
+[p032_c0008] The BTOBA agreement also provides that the Authority will increase its per capita contributions to the health trust by 25%, effective May 10, 2022. The trust, which provides certain basic medical benefits (most importantly, prescription drugs) has not seen an increase in employer contributions since 2011. One other important element of the agreement is that it resolves remaining issues from a 2019 impasse over the way the union would cover its share of the compensation increase stipulated in the 2012-2019 BTOBA labor agreement. BTOBA will do so, in part, through a reduction in overtime.
+[p032_c0009] The second agreement, approved by the Board in September, was with approximately 325 Maintainers and City Custodial Assistants represented by the American Federation of State, County and Municipal Employees, District Council 37, Local 1931. The agreement spans a 50-month period from July 15, 2020 through September 14, 2024 and provides wage increases of 2.0% for 2020; 2.25% for 2021; 2.5% for 2022; and 2.75% for 2023. Other benefits sought and achieved by the union's leadership will be fully funded by significant savings measures negotiated between the parties. Accordingly, the agreement conforms to the basic economic pattern of the 2019-2023 TWU Local 100 agreement, both in terms of general wage increases and recurrent net costs.
+[p032_c0010] MTA Staten Island Railway – As of September 30, 2023, MTA Staten Island Railway had 342 employees, approximately 328 of whom are represented by four different unions (five bargaining units). No new labor agreements were reached with these unions during the third quarter, and by the end of the period, all agreements (which covered the 2019-2023 period) have expired. Going forward, the unions will therefore be looking for new agreement terms.
+[p032_c0011] _[1] This number includes "matrixed" employees who work at MTA Headquarters but are on the payroll of another agency._
+[p032_c0012] _Master Page # 32 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 33
+
+### [p033_c0001] Metropolitan Transportation Authority
+### [p033_c0002] DRAFT
+### [p033_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p033_c0004] (A Component Unit of the State of New York)
+### [p033_c0005] CONSOLIDATED INTERIM STATEMENT OF NET POSITION AS OF SEPTEMBER 30, 2023 AND CONSOLIDATED STATEMENT OF NET POSITION AS OF DECEMBER 31, 2022 ($ In millions)
+[p033_c0006]
+
+```text
+Business-Type Activities September 30, 2023 December 31, 2022 ASSETS AND DEFERRED OUTFLOWS OF RESOURCES CURRENT ASSETS: Cash unrestricted (Note 3) $ 786 $ 403 Cash restricted (Note 3) 814 537 Unrestricted investments (Note 3) 5,040 9,559 Restricted investments (Note 3) 6,515 1,682 Restricted investments held under financed purchase obligations (Notes 3 and 9) 94 101 Receivables: Station maintenance, operation, and use assessments 62 113 State and regional mass transit taxes 285 158 Mortgage recording tax receivable 29 39 State and local operating assistance 40 10 Other receivable from New York City and New York State 173 180 Due from Build America Bonds 3 3 Capital project receivable from federal and state government 129 81 Other 918 904 Less allowance for doubtful accounts (448) (372) Total receivables — net 1,191 1,116 Materials and supplies 715 681 Prepaid expenses and other current assets (Note 2) 952 217 Total current assets 16,107 14,296 NON-CURRENT ASSETS: Capital assets (Note 6): Land and construction work-in-progress 15,500 22,928 Other capital assets (net of accumulated depreciation and amortization) 73,511 64,578 Unrestricted investments (Note 3) 1,046 2,496 Restricted investments (Note 3) 1,358 3,623 Restricted investments held under financed purchase obligations (Notes 3 and 9) 268 258 Other non-current receivables 317 384 Receivable from New York State 11 10 Other non-current assets 41 71 Total non-current assets 92,052 94,348 TOTAL ASSETS 108,159 108,644 DEFERRED OUTFLOWS OF RESOURCES: Accumulated decreases in fair value of derivative instruments (Note 7) 52 109 Loss on debt refunding (Note 7) 361 540 Deferred outflows related to pensions (Note 4) 3,167 3,181 Deferred outflows related to OPEB (Note 5) 5,763 4,444 TOTAL DEFERRED OUTFLOWS OF RESOURCES 9,343 8,274 TOTAL ASSETS AND DEFERRED OUTFLOWS OF RESOURCES $ 117,502 $ 116,918
+```
+[p033_c0007] See Independent Auditor's Review Report and notes to the consolidated interim financial statements.
+[p033_c0008] (Continued)
+[p033_c0009] _Master Page # 33 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 34
+
+### [p034_c0001] Metropolitan Transportation Authority
+### [p034_c0002] DRAFT
+### [p034_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p034_c0004] (A Component Unit of the State of New York)
+### [p034_c0005] CONSOLIDATED INTERIM STATEMENT OF NET POSITION AS OF SEPTEMBER 30, 2023 AND CONSOLIDATED STATEMENT OF NET POSITION AS OF DECEMBER 31, 2022
+[p034_c0006] ($ In millions)
+[p034_c0007]
+
+```text
+Business-Type Activities September 30, 2023 December 31, 2022 LIABILITIES, DEFERRED INFLOWS OF RESOURCES AND NET POSITION CURRENT LIABILITIES: Accounts payable $ 538 480 Accrued expenses: Interest 888 393 Salaries, wages and payroll taxes 474 525 Vacation and sick pay benefits 1,130 1,106 Current portion — retirement and death benefits 44 31 Current portion — estimated liability from injuries to persons (Note 11) 594 567 Capital accruals 446 554 Other accrued expenses 792 796 Total accrued expenses 4,368 3,972 Current portion — loan payable (Note 7) 9 12 Current portion — long-term debt (Note 7) 3,855 4,800 Current portion — pollution remediation projects (Note 13) 40 40 Unearned revenues 1,888 1,248 Total current liabilities 10,698 10,552 NON-CURRENT LIABILITIES: Net pension liability (Note 4) 6,923 6,923 Estimated liability arising from injuries to persons (Note 11) 5,015 4,868 Net OPEB liability (Note 5) 24,956 24,956 Loan payable (Note 7) 65 71 Long-term debt (Note 7) 47,933 46,493 Lease payable (Note 8) 817 833 Financed purchase (Note 9) 172 170 Pollution remediation projects (Note 13) 128 116 Contract retainage payable 415 435 Derivative liabilities (Note 7) 89 144 Other long-term liabilities 378 366 Total non-current liabilities 86,891 85,375 TOTAL LIABILITIES 97,589 95,927 DEFERRED INFLOWS OF RESOURCES: Gain on debt refunding 19 24 Deferred inflows related to leases (Note 8) 250 300 Deferred inflows related to pensions (Note 4) 1,055 1,055 Deferred inflows related to OPEB (Note 5) 2,695 2,695 TOTAL DEFERRED INFLOWS OF RESOURCES 4,019 4,074 NET POSITION: Net investment in capital assets 39,186 34,886 Restricted for debt service 1,679 381 Restricted for claims 209 192 Restricted for other purposes (Note 2) 2,616 4,491 Unrestricted (27,796) (23,033) TOTAL NET POSITION 15,894 16,917 TOTAL LIABILITIES, DEFERRED INFLOWS OF RESOURCES AND NET POSITION $ 117,502 $ 116,918 See Independent Auditor's Review Report and notes to the consolidated interim financial statements. (Concluded)
+```
+[p034_c0008] _Master Page # 34 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 35
+
+### [p035_c0001] Metropolitan Transportation Authority
+### [p035_c0002] DRAFT
+### [p035_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p035_c0004] (A Component Unit of the State of New York)
+### [p035_c0005] CONSOLIDATED INTERIM STATEMENTS OF REVENUES, EXPENSES AND CHANGES IN NET POSITION NINE-MONTH PERIODS ENDED SEPTEMBER 30, 2023 AND 2022
+[p035_c0006] ($ In millions)
+[p035_c0007]
+
+```text
+Business-Type Activities September 30, 2023 September 30, 2022 OPERATING REVENUES: Fare revenue $ 3,399 $ 2,931 Vehicle toll revenue 1,823 1,743 Rents, freight, and other revenue 557 461 Total operating revenues 5,779 5,135 OPERATING EXPENSES: Salaries and wages 5,257 4,834 Retirement and other employee benefits 2,629 2,544 Postemployment benefits other than pensions (Note 5) 609 564 Electric power 391 413 Fuel 167 212 Insurance 32 6 Claims 267 281 Paratransit service contracts 384 296 Maintenance and other operating contracts 542 520 Professional service contracts 434 342 Pollution remediation projects (Note 13) 14 1 Materials and supplies 490 406 Depreciation and amortization (Note 2) 2,649 2,405 Other 200 175 Total operating expenses 14,065 12,999 OPERATING LOSS (8,286) (7,864) NON-OPERATING REVENUES (EXPENSES): Grants, appropriations and taxes: Tax-supported subsidies — NYS: Mass Transportation Trust Fund subsidies 462 443 Metropolitan Mass Transportation Operating Assistance subsidies 1,317 1,207 Payroll Mobility Tax subsidies 1,661 1,530 MTA Aid Trust Account subsidies 200 190 Internet sales tax subsidies 246 249 Tax-supported subsidies — NYC and Local: Mortgage Recording Tax subsidies 269 525 Urban Tax subsidies 303 539 Mansion Tax 259 420 Other subsidies: Operating Assistance - 18-B program 275 278 Build America Bond subsidy 43 44 NYC Assistance Fund 268 252 Subtotal grants, appropriations and taxes $ 5,303 $ 5,677
+```
+[p035_c0008] See Independent Auditor's Review Report and notes to the consolidated interim financial statements.
+[p035_c0009] (Continued)
+[p035_c0010] _Master Page # 35 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 36
+
+### [p036_c0001] Metropolitan Transportation Authority
+### [p036_c0002] DRAFT
+### [p036_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p036_c0004] (A Component Unit of the State of New York)
+### [p036_c0005] CONSOLIDATED INTERIM STATEMENTS OF REVENUES, EXPENSES AND CHANGES IN NET POSITION NINE-MONTH PERIODS ENDED SEPTEMBER 30, 2023 AND 2022
+[p036_c0006] ($ In millions)
+[p036_c0007]
+
+```text
+Business-Type Activities September 30, 2023 September 30, 2022 NON-OPERATING REVENUES (EXPENSES): Connecticut Department of Transportation $ 194 $ 182 Subsidies paid to Dutchess, Orange, and Rockland Counties (4) (4) Interest on long-term debt (Note 2) (1,355) (1,601) Station maintenance, operation and use assessments 147 140 Operating subsidies recoverable from NYC 435 389 Federal Transit Administration reimbursement related ARPA 29 6,201 Other net non-operating expenses 243 (58) Net non-operating revenues 4,992 10,926 (LOSS) / GAIN BEFORE APPROPRIATIONS, GRANTS AND OTHER RECEIPTS EXTERNALLY RESTRICTED FOR CAPITAL PROJECTS (3,294) 3,062 APPROPRIATIONS, GRANTS AND OTHER RECEIPTS EXTERNALLY RESTRICTED FOR CAPITAL PROJECTS 2,271 2,570 CHANGE IN NET POSITION (1,023) 5,632 NET POSITION— Beginning of period 16,917 9,143 NET POSITION — End of period $ 15,894 $ 14,775
+```
+[p036_c0008] See Independent Auditor's Review Report and notes to the consolidated interim financial statements.
+[p036_c0009] (Concluded)
+[p036_c0010] _Master Page # 36 of 175 - Audit Committee Meeting 1/29/2024 22_
+
+## Page 37
+
+### [p037_c0001] Metropolitan Transportation Authority
+### [p037_c0002] DRAFT
+### [p037_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p037_c0004] (A Component Unit of the State of New York)
+### [p037_c0005] CONSOLIDATED INTERIM STATEMENTS OF CASH FLOWS NINE-MONTH PERIODS ENDED SEPTEMBER 30, 2023 AND 2022 ($ In millions)
+[p037_c0006]
+
+```text
+Business-Type Activities September 30, 2023 September 30, 2022 CASH FLOWS FROM OPERATING ACTIVITIES: Passenger receipts/tolls $ 5,224 $ 4,662 Rents and other receipts 770 659 Payroll and related fringe benefits (8,582) (7,890) Other operating expenses (4,566) (2,238) Net cash used by operating activities (7,154) (4,807) CASH FLOWS FROM NONCAPITAL FINANCING ACTIVITIES: Grants, appropriations, and taxes 5,217 5,102 Operating subsidies from CDOT 196 156 Subsidies paid to Dutchess, Orange, and Rockland Counties (17) (20) Federal Transit Administration reimbursement related to COVID-19 26 9,805 Net cash provided by noncapital financing activities 5,422 15,043 CASH FLOWS FROM CAPITAL AND RELATED FINANCING ACTIVITIES: MTA bond proceeds - 675 MTA Bridges and Tunnels bond proceeds 4,082 5,869 MTA bonds refunded/reissued (1,312) (1,750) MTA Bridges and Tunnels bonds refunded/reissued (1,023) (53) MTA anticipation notes redeemed (800) (7,139) MTA credit facility refunded - (1,196) Federal and local grants 1,781 1,146 Other capital financing activities 1,491 1,903 Payment for capital assets (4,363) (4,211) Debt service payments (1,034) (1,111) Internet and Mansion Tax 502 622 Receipts from leases 37 - Payments from leases (64) - Net cash used by capital and related financing activities (703) (5,245) CASH FLOWS FROM INVESTING ACTIVITIES: Purchase of long-term securities (7,149) (15,749) Sales or maturities of long-term securities 9,160 5,774 Net sales or maturities of short-term securities 746 5,451 Earnings on investments 338 53 Net cash provided by / (used by) investing activities 3,095 (4,471) NET INCREASE IN CASH 660 520 CASH — Beginning of period 940 782 CASH — End of period $ 1,600 $ 1,302
+```
+[p037_c0007] See Independent Auditor's Review Report and notes to the consolidated interim financial statements.
+[p037_c0008] (Continued)
+[p037_c0009] _Master Page # 37 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 38
+
+### [p038_c0001] Metropolitan Transportation Authority
+### [p038_c0002] DRAFT
+### [p038_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p038_c0004] (A Component Unit of the State of New York)
+### [p038_c0005] CONSOLIDATED INTERIM STATEMENTS OF CASH FLOWS NINE-MONTH PERIODS ENDED SEPTEMBER 30, 2023 AND 2022 ($ In millions)
+[p038_c0006]
+
+```text
+Business-Type Activities September 30, 2023 September 30, 2022 RECONCILIATION OF OPERATING LOSS TO NET CASH USED BY OPERATING ACTIVITIES: Operating loss (Note 2) $ (8,286) $ (7,864) Adjustments to reconcile to net cash used in operating activities: Depreciation and amortization 2,649 2,405 Net increase (decrease) in payables, accrued expenses, and other liabilities (69) 117 Net decrease in receivables (747) 487 Net decrease in materials and supplies and prepaid expenses (701) 48 NET CASH USED BY OPERATING ACTIVITIES $ (7,154) $ (4,807) NONCASH INVESTING, CAPITAL AND RELATED FINANCING ACTIVITIES: Noncash investing activities: Interest expense includes amortization of net (premium) / discount (Note 2) $ 130 $ 259 Total Noncash investing activities 130 259 Noncash capital and related financing activities: Capital assets related liabilities 446 233 Interest expense for leases 36 - Interest income from leases 6 - Total Noncash capital and related financing activities 487 233 TOTAL NONCASH INVESTING, CAPITAL AND RELATED FINANCING ACTIVITIES $ 617 $ 492
+```
+[p038_c0007] See Independent Auditor's Review Report and notes to the consolidated interim financial statements.
+[p038_c0008] (Concluded)
+[p038_c0009] _Master Page # 38 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 39
+
+### [p039_c0001] Metropolitan Transportation Authority
+### [p039_c0002] DRAFT
+### [p039_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p039_c0004] (A Component Unit of the State of New York)
+### [p039_c0005] STATEMENTS OF FIDUCIARY NET POSITION PENSION AND OTHER EMPLOYEE BENEFIT TRUST FUNDS AS OF DECEMBER 31, 2022 AND 2021
+[p039_c0006] ($ In thousands)
+[p039_c0007]
+
+```text
+Fiduciary Activities December 31, 2022 December 31, 2021 ASSETS: Cash $ 10,985 $ 39,379 Receivables: Employee loans 26,521 26,082 Participant and union contributions - (20) Investment securities sold 1,810 5,671 Accrued interest and dividends 6,011 4,882 Other receivables 2,680 3,770 Total receivables 37,022 40,385 Investments at fair value 9,319,985 10,144,509 Total assets $ 9,367,992 $ 10,224,273 LIABILITIES: Accounts payable and accrued liabilities $ 6,319 $ 8,315 Payable for investment securities purchased 9,992 14,759 Accrued benefits payable 76 74 Accrued postretirement death benefits (PRDB) payable 5,719 5,405 Accrued 55/25 Additional Members Contribution (AMC) payable 2,527 3,847 Other liabilities 1,082 2,987 Total liabilities 25,715 35,387 NET POSITION: Restricted for pensions 9,330,542 10,188,803 Restricted for postemployment benefits other than pensions 11,735 83 Total net position 9,342,277 10,188,886 Total liabilities and net position $ 9,367,992 $ 10,224,273
+```
+[p039_c0008] See Independent Auditor's Review Report and notes to the consolidated interim financial statements.
+[p039_c0009] _Master Page # 39 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 40
+
+### [p040_c0001] Metropolitan Transportation Authority
+### [p040_c0002] DRAFT
+### [p040_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p040_c0004] (A Component Unit of the State of New York)
+### [p040_c0005] STATEMENTS OF CHANGES IN FIDUCIARY NET POSITION PENSION AND OTHER EMPLOYEE BENEFIT TRUST FUNDS FOR THE YEARS ENDED DECEMBER 31, 2022 AND 2021
+[p040_c0006] ($ In thousands)
+[p040_c0007]
+
+```text
+Fiduciary Activities December 31, 2022 December 31, 2021 ADDITIONS: Contributions: Employer contributions $ 1,418,340 $ 1,362,952 Implicit rate subsidy contribution 57,989 52,933 Member contributions 60,069 58,840 Total contributions 1,536,398 1,474,725 Investment income: Net (depreciation) / appreciation in fair value of investments (872,844) 1,112,770 Dividend income 126,737 115,369 Interest income 29,151 20,453 Less: Investment expenses 60,081 85,192 Investment income, net (777,037) 1,163,400 Other additions: Total additions 759,361 2,638,125 DEDUCTIONS: Benefit payments and withdrawals 1,541,904 1,456,931 Implicit rate subsidy payments 57,989 52,933 Transfer to other plans - 474 Distribution to participants - 2,175 Administrative expenses 6,077 4,434 Total deductions 1,605,970 1,516,947 Net (decrease) / increase in fiduciary net position (846,609) 1,121,178 NET POSITION: Restricted for Benefits: Beginning of year 10,188,886 9,067,708 End of year $ 9,342,277 $ 10,188,886
+```
+[p040_c0008] See Independent Auditor's Review Report and notes to the consolidated interim financial statements.
+[p040_c0009] _Master Page # 40 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 41
+
+### [p041_c0001] Metropolitan Transportation Authority
+### [p041_c0002] DRAFT
+### [p041_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p041_c0004] (A Component Unit of the State of New York)
+### [p041_c0005] NOTES TO CONSOLIDATED INTERIM FINANCIAL STATEMENTS AS OF SEPTEMBER 30, 2023 AND DECEMBER 31, 2022 AND FOR THE NINE-MONTH PERIODS ENDED SEPTEMBER 30, 2023 AND 2022
+[p041_c0006] ($ In millions, except as noted)
+### [p041_c0007] 1. BASIS OF PRESENTATION
+[p041_c0008] Reporting Entity — The Metropolitan Transportation Authority (“MTA”) was established in 1965, under Section 1263 of the New York Public Authorities Law, and is a public benefit corporation and a component unit of the State of New York (“NYS”) whose mission is to continue, develop and improve public transportation and to develop and implement a unified public transportation policy in the New York metropolitan area.
+[p041_c0009] These consolidated interim financial statements are of the Metropolitan Transportation Authority (“MTA”), including its related groups (collectively, the “MTA Group”), which are listed below. The Business-Type activities in these consolidated financial statements purport the operations of the MTA Group.
+### [p041_c0010] Metropolitan Transportation Authority and Related Groups (Component Units)
+- [p041_c0011] ● Metropolitan Transportation Authority Headquarters (“MTAHQ”) provides support in budget, cash management, finance, legal, real estate, treasury, risk and insurance management, and other services to the related groups listed below. ● The Long Island Rail Road Company (“MTA Long Island Rail Road”) provides passenger transportation between New York City (“NYC”) and Long Island. ● Metro-North Commuter Railroad Company (“MTA Metro-North Railroad”) provides passenger transportation between NYC and the suburban communities in Westchester, Dutchess, Putnam, Orange, and Rockland counties in NYS and New Haven and Fairfield counties in Connecticut. ● Staten Island Rapid Transit Operating Authority (“MTA Staten Island Railway”) provides passenger transportation on Staten Island. ● First Mutual Transportation Assurance Company (“FMTAC”) provides primary insurance coverage for certain losses, some of which are reinsured, and assumes reinsurance coverage for certain other losses. ● MTA Construction and Development (“MTA Construction and Development”) provides oversight for the planning, design and construction of current and future major MTA system-wide expansion projects. ● MTA Bus Company (“MTA Bus”) operates certain bus routes in areas previously served by private bus operators pursuant to franchises granted by the City of New York. ● MTA Grand Central Madison Operating Company (“MTA GCMOC”) operates and maintains the infrastructure and structures supporting Long Island Rail Road access into Grand Central Terminal. ● MTAHQ, MTA Long Island Rail Road, MTA Metro-North Railroad, MTA Staten Island Railway, FMTAC, MTA Capital Construction, and MTA Bus, and MTA GCMOC collectively are referred to herein as MTA. MTA Long Island Rail Road and MTA Metro-North Railroad are referred to collectively as the Commuter Railroads. ● New York City Transit Authority (“MTA New York City Transit”) and its subsidiary, Manhattan and Bronx Surface Transit Operating Authority (“MaBSTOA”), provide subway and public bus service within the five boroughs of New York City. ● Triborough Bridge and Tunnel Authority (“MTA Bridges and Tunnels”) operates seven toll bridges, two tunnels, and the Battery Parking Garage, all within the five boroughs of New York City.
+[p041_c0012] The subsidiaries and affiliates, considered component units of the MTA, are operationally and legally independent of the MTA. These related groups enjoy certain rights typically associated with separate legal status including, in some cases, the ability to issue debt. However, they are included in the MTA’s consolidated financial statements as blended component units because of the MTA’s financial accountability for these entities and they are under the direction of the MTA Board (a reference to “MTA Board” means the board of MTAHQ and/or the boards of the other MTA Group entities that apply in the specific context, all of which are comprised of the same persons). Under accounting principles generally accepted in the United States of America (“GAAP”), the MTA is required to include these related groups in its financial statements. While certain units are separate legal entities, they do have legal capital requirements and the revenues of all of the related groups of the MTA are used to support the organizations as a whole. The components do not constitute a separate accounting entity (fund) since there is no legal requirement to account for the activities of the components as discrete accounting entities.
+[p041_c0013] _Master Page # 41 of 175 - Audit/Committee Meeting 1/29/2024_
+
+## Page 42
+
+### [p042_c0001] Metropolitan Transportation Authority
+### [p042_c0002] DRAFT
+### [p042_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p042_c0004] Therefore, the MTA financial statements are presented on a consolidated basis with segment disclosure for each distinct operating activity. All of the component units publish separate annual financial statements, which are available by writing to the Metropolitan Transportation Authority, Deputy Chief Controller’s Office, 2 Broadway, 15th Floor, New York, NY 10004.
+[p042_c0005] Although the MTA Group collects fares for the transit and commuter service, they provide and receive revenues from other sources, such as the leasing out of real property assets, and the licensing of advertising. Such revenues, including forecast-increased revenues from fare increases, are not sufficient to cover all operating expenses associated with such services. Therefore, to maintain a balanced budget, the members of the MTA Group providing transit and commuter service rely on operating surpluses transferred from MTA Bridges and Tunnels, operating subsidies provided by NYS and certain local governmental entities in the MTA commuter district, and service reimbursements from certain local governmental entities in the MTA commuter district and from the State of Connecticut. Non-operating subsidies to the MTA Group for transit and commuter service for the period ended September 30, 2023 and 2022 totaled $5.3 billion and $5.7 billion, respectively.
+[p042_c0006] Basis of Presentation - Fiduciary Funds – The fiduciary fund financial statements provide information about the funds that are used to report resources held in trust for retirees and beneficiaries covered by pension plans and other employee benefit trust funds of the MTA. Separate financial statements are presented for the fiduciary funds.
+[p042_c0007] The following MTA fiduciary component units comprise the fiduciary activities of the MTA and are categorized within Pension and Other Employee Benefit Trust Funds.
+- [p042_c0008] ● Pension Trust Funds - MTA Defined Benefit Plan - The Long Island Railroad Company Plan for Additional Pensions (“Additional Plan”) - Manhattan and Bronx Surface Transit Operating Authority (“MaBSTOA Plan”) - Metro-North Commuter Railroad Company Cash Balance Plan (“MNR Cash Balance Plan”) ● Other Employee Benefit Trust Funds - MTA Other Postemployment Benefits Plan (“OPEB” Plan)
+[p042_c0009] These fiduciary statements of the fiduciary funds are prepared using the accrual basis of accounting and a measurement focus on the periodic determination of additions, deductions, and net position restricted for benefits. For reporting purposes, the financial results of the MNR Cash Balance Plan are not material and therefore not included in the fiduciary statements.
+### [p042_c0010] 2. SIGNIFICANT ACCOUNTING POLICIES
+[p042_c0011] Basis of Accounting — The accompanying consolidated interim financial statements are prepared on the accrual basis of accounting in accordance with accounting principles generally accepted in the United States of America.
+[p042_c0012] The MTA applies Governmental Accounting Standards Board (“GASB”) Codification of Governmental Accounting and Financial Reporting Standards (“GASB Codification”) Section P80, Proprietary Accounting and Financial Reporting.
+### [p042_c0013] Accounting Standards Issued but Not Yet Adopted
+[p042_c0014] GASB has issued the following pronouncements that may affect the future financial position, results of operations, cash flows, or financial presentation of the MTA upon implementation. Management has not yet evaluated the effect of implementation of these standards.
+[p042_c0015]
+
+```text
+GASB Statement No. GASB Accounting Standard Required Year of Adoption 94 Public-Private and Public-Public Partnerships and Availability Payment Arrangements 2023 96 Subscription-based Information Technology Arrangements 2023 99 Omnibus 2022 2023 100 Accounting Changes and Error Corrections 2024 101 Compensated Absences 2024 102 Certain Risk Disclosures 2024
+```
+[p042_c0016] Use of Management Estimates — The preparation of the consolidated interim financial statements in conformity with accounting principles generally accepted in the United States of America requires management to make estimates and assumptions that affect the reported amounts of assets and liabilities, and disclosure of contingent assets and liabilities at the date of the consolidated interim financial statements, and the reported amounts of revenues and expenses during the reporting period. Significant estimates include the fair value of investments, allowances for doubtful accounts, valuation of
+[p042_c0017] _Master Page # 42 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 43
+
+### [p043_c0001] Metropolitan Transportation Authority
+### [p043_c0002] DRAFT
+### [p043_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p043_c0004] derivative instruments, arbitrage rebate liability, accrued expenses and other liabilities, depreciable lives of capital assets, estimated liability arising from injuries to persons, pension benefits and other postemployment benefits. Actual results could differ significantly from those estimates.
+[p043_c0005] Principles of Consolidation — The consolidated interim financial statements consist of MTAHQ, MTA Long Island Rail Road, MTA Metro-North Railroad, MTA Staten Island Railway, GCMOC, FMTAC, MTA Bus, MTA Construction and Development, MTA New York City Transit (including its subsidiary MaBSTOA), and MTA Bridges and Tunnels for years presented in the financial statements. All related group transactions have been eliminated for consolidation purposes.
+[p043_c0006] Net Position – Restricted for Other Purposes – This category is classified within net position and includes net investments restricted for financed purchases and MTA Bridges and Tunnels necessary reconstruction reserve.
+[p043_c0007] Investments — The MTA Group’s investment policies comply with the New York State Comptroller’s guidelines for such operating and capital policies. Those policies permit investments in, among others, obligations of the U.S. Treasury, its agencies and instrumentalities, and repurchase agreements secured by such obligations. FMTAC’s investment policies comply with New York State Comptroller guidelines and New York State Department of Insurance guidelines.
+[p043_c0008] Investments expected to be utilized within a year of September 30th have been classified as current assets in the consolidated interim financial statements.
+[p043_c0009] In accordance with the provisions of GASB Statement No. 72, Fair Value Measurement and Application , investments are recorded on the consolidated statement of net position at fair value, except for commercial paper, certificates of deposit, and repurchase agreements, which are recorded at amortized cost or contract value. All investment income, including changes in the fair value of investments, is reported as revenue on the consolidated statement of revenues, expenses and changes in net position. Fair values have been determined using quoted fair values on September 30, 2023 and December 31, 2022.
+[p043_c0010] Investment derivative contracts are reported at fair value using the income approach.
+[p043_c0011] Materials and Supplies — Materials and supplies are valued at average cost, net of obsolescence reserve at September 30, 2023 and December 31, 2022 of $239 and $231, respectively.
+[p043_c0012] Prepaid Expenses and Other Current Assets — Prepaid expenses and other current assets primarily reflect advance payment of insurance premiums as well as farecard media related to ticket machines, WebTickets and AirTrain tickets.
+[p043_c0013] Capital Assets — Properties and equipment are carried at cost and are depreciated on a straight-line basis over their estimated useful lives. Expenses for maintenance and repairs are charged to operations as incurred. Capital assets and improvements include all land, buildings, equipment, and infrastructure of the MTA having a minimum useful life of two years and having a cost of more than $25 thousand. Capital assets are stated at historical cost, or at estimated historical cost based on appraisals, or on other acceptable methods when historical cost is not available. Leases recorded under GASB Statement No. 87, Leases , are classified as right-of-use assets. Accumulated depreciation and amortization are reported as reductions of capital and right-of-use assets. Depreciation is computed using the straight-line method based upon estimated useful lives of 25 to 50 years for buildings, 2 to 40 years for equipment and 25 to 100 years for infrastructure. Right-of-use assets and leasehold improvements are amortized over the term of the lease or the life of the asset whichever is less.
+[p043_c0014] Leases – as a result of the adoption of GASB Statement No. 87, certain lease agreements are classified as financings of the right to use an underlying asset. Under this Statement, a lessee is required to recognize a lease liability and an intangible right-to-use lease asset, and a lessor is required to recognize a lease receivable and a deferred inflow of resources. Lease receivables and liabilities are measured at the present value of payments expected to be made during the lease term, using an applicable discount rate stated or implicit in the lease and if not available, using incremental borrowing rate at the time of valuation. Lease assets and deferred inflows are amortized on a straight-line basis over the term of the lease.
+[p043_c0015] Operating and Non-operating Expenses — Operating and non-operating expenses are recognized in the accounting period in which the liability is incurred. All expenses related to operating the MTA (e.g. salaries, insurance, depreciation, lease amortization, etc.) are reported as operating expenses. All other expenses (e.g. interest on long-term debt, interest on leases, subsidies paid to counties, etc.) are reported as non-operating expenses.
+[p043_c0016] Pollution remediation projects — Pollution remediation costs have been expensed in accordance with the provisions of GASB Statement No. 49, Accounting and Financial Reporting for Pollution Remediation Obligations (See Note 12). An operating expense provision and corresponding liability measured at current value using the expected cash flow method has been recognized for certain pollution remediation obligations, which previously may not have been required to be recognized, have been recognized earlier than in the past or are no longer able to be capitalized as a component of a capital project. Pollution remediation obligations occur when any one of the following obligating events takes place: the MTA is in violation of a pollution prevention-related permit or license; an imminent threat to public health due to pollution exists; the MTA is named by a regulator as a responsible or potentially responsible party to participate in remediation; the MTA voluntarily commences or legally obligates itself to commence remediation efforts; or the MTA is named or there is evidence
+[p043_c0017] _Master Page # 43 of 175 - Audit 79 Committee Meeting 1/29/2024_
+
+## Page 44
+
+### [p044_c0001] Metropolitan Transportation Authority
+### [p044_c0002] DRAFT
+### [p044_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p044_c0004] to indicate that it will be named in a lawsuit that compels participation in remediation activities.
+[p044_c0005] _Master Page # 44 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 45
+
+### [p045_c0001] Metropolitan Transportation Authority
+### [p045_c0002] DRAFT
+### [p045_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p045_c0004] Operating Revenues — Passenger Revenue and Tolls — Revenues from the sale of tickets, tokens, electronic toll collection system, and farecards are recognized as income when tickets or farecards are used. Tickets are assumed to be used in the month of purchase, with the exception of advance purchases of monthly and weekly tickets. When the farecards expire, revenue is recorded for the unused value of the farecards.
+[p045_c0005] MTA Bridges and Tunnel has two toll rebate programs at the Verrazano-Narrows Bridge: the Staten Island Resident (“SIR”) Rebate Program, available for residents of Staten Island participating in the SIR E-ZPass toll discount plan, and the Verrazano-Narrows Bridge Commercial Rebate Program (“VNB Commercial Rebate Program”), available for commercial vehicles making more than ten trips per month using the same New York Customer Service Center (“NYCSC”) E-ZPass account. The VNB Commercial Rebate Program and SIR Rebate Program are funded by the State and MTA.
+[p045_c0006] Capital Financing — The MTA has ongoing programs on behalf of its subsidiaries and affiliates, subject to approval by the New York State Metropolitan Transportation Authority Capital Program Review Board (the “State Review Board”), which are intended to improve public transportation in the New York Metropolitan area.
+[p045_c0007] The federal government has a contingent equity interest in assets acquired by the MTA with federal funds and upon disposal of such assets, the federal government may have a right to its share of the proceeds from the sale. This provision has not been a substantial impediment to the MTA’s operations.
+[p045_c0008] Federal Transit Administration CARES Act — On March 27, 2020, the Coronavirus Aid, Relief and Economic Security Act, also known as the CARES Act, was signed into law in response to the economic fallout of the COVID-19 pandemic. The CARES Act through the Federal Transit Administration’s (“FTA”) formula funding provisions provided the MTA with $4.010 billion of operating assistance. More detailed information about the CARES Act is presented in Note 15 to the consolidated interim financial statements.
+[p045_c0009] Coronavirus Response and Relief Supplemental Appropriations Act of 2021 — On December 27, 2020, the Coronavirus Response and Relief Supplemental Appropriations Act of 2021 (“CRRSAA”) was signed into law in response to the economic fallout of the COVID-19 pandemic. CRRSAA, through the FTA’s formula funding provision provided the MTA with $4.1 billion of operating assistance. Additional information about the CRRSAA is presented in Note 15 to the consolidated interim financial statements.
+[p045_c0010] American Rescue Plan Act (“ARPA”) - On March 11, 2021, President Biden signed into law the American Rescue Plan Act of 2021 (“ARPA”). The $1.9 trillion package is intended to combat the COVID-19 pandemic, including the public health and economic impacts. The MTA received $6.1 billion in aid from ARPA in 2022. In September of 2022, Additional Assistance Funding was made available to transit systems demonstrating additional pandemic associated needs. MTA received approximately $769 million in such additional aid.
+### [p045_c0011] Non-operating Revenues
+[p045_c0012] Operating Assistance — The MTA Group receives, subject to annual appropriation, New York State operating assistance funds that are recognized as revenue after the New York State budget is approved and adopted. Generally, funds received under the New York State operating assistance program are fully matched by contributions from New York City and the seven other counties within the MTA’s service area.
+[p045_c0013] Mortgage Recording Taxes (“MRT”) — Under New York State law, the MTA receives capital and operating assistance through a Mortgage Recording Tax (“MRT-1”). MRT-1 is collected by New York City and the seven other counties within the MTA’s service area, at the rate of 0.25% of the debt secured by certain real estate mortgages. Effective September 2005, the rate was increased from 25 cents per 100 dollars of recorded mortgage to 30 cents per 100 dollars of recorded mortgage. The MTA also receives an additional Mortgage Recording Tax (“MRT-2”) of 0.25% of certain mortgages secured by real estate improved or to be improved by structures containing one to nine dwelling units in the MTA’s service area. MRT-1 and MRT-2 taxes are recognized as revenue based upon reported amounts of taxes collected.
+- [p045_c0014] • MRT-1 proceeds are initially used to pay MTAHQ’s operating expenses. Remaining funds, if any, are allocated 55% to certain transit operations and 45% to the commuter railroads operations. The commuter railroad portion is first used to fund the New York State Suburban Highway Transportation Fund in an amount not to exceed $20 annually (subject to the monies being returned under the conditions set forth in the governing statute if the Commuter Railroads are operating at a deficit). • The first $5 of the MRT-2 proceeds is transferred to the MTA Dutchess, Orange, and Rockland (“DOR”) Fund ($1.5 each for Dutchess and Orange Counties and $2 for Rockland County). Additionally, the MTA must transfer to each County’s fund an amount equal to the product of (i) the percentage by which each respective County’s mortgage recording tax payments (both MRT-1 and MRT-2) to the MTA increased over such payments in 1989 and (ii) the base amount received by each county as described above. The counties do not receive any portion of the September 1, 2005 increase in MRT-1 from 25 cents per $100 of recorded mortgage to 30 cents. As of September 30, 2023, the MTA paid to Dutchess, Orange and Rockland Counties the 2021 excess amounts of MRT-1 and
+[p045_c0015] _Master Page # 45 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 46
+
+### [p046_c0001] Metropolitan Transportation Authority
+### [p046_c0002] DRAFT
+### [p046_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p046_c0004] MRT-2 totaling $12.9.
+- [p046_c0005] • In addition, MTA New York City Transit receives operating assistance directly from New York City through a mortgage recording tax at the rate of 0.625% of the debt secured by certain real estate mortgages and through a property transfer tax at the rate of one percent of the assessed value (collectively referred to as “Urban Tax Subsidies”) of certain properties.
+[p046_c0006] Mobility Tax — In June of 2009, Chapter 25 of the New York State Laws of 2009 added Article 23, which establishes the Metropolitan Commuter Transportation Mobility Tax (“MCTMT”). The proceeds of this tax, administered by the New York State Tax Department, are to be distributed to the Metropolitan Transportation Authority. This tax is imposed on certain employers and self-employed individuals engaging in business within the metropolitan commuter transportation district which includes New York City, and the counties of Rockland, Nassau, Suffolk, Orange, Putnam, Dutchess, and Westchester. This Tax is imposed on certain employers that have payroll expenses within the Metropolitan Commuter Transportation District, to pay at a rate of 0.34% of an employer’s payroll expenses for all covered employees for each calendar quarter. The employer is prohibited from deducting from wages or compensation of an employee any amount that represents all or any portion of the MCTMT. The effective date of this tax was March 1, 2009 for employers other than public school districts; September 1, 2009 for Public school districts and January 1, 2009 for individuals.
+[p046_c0007] Supplemental Aid — In 2009, several amendments to the existing tax law provided the MTA supplemental revenues to be deposited into the AID Trust Account of the Metropolitan Transportation Authority Financial Assistance Fund established pursuant to Section 92 of the State Finance law. These supplemental revenues relate to: 1) supplemental learner permit/ license fee in the Metropolitan Commuter Transportation District, 2) supplemental registration fee, 3) supplemental tax on every taxicab owner per taxicab ride on every ride that originated in New York City of New York and terminates anywhere within the territorial boundaries of the Metropolitan Commuter Transportation District, and 4) supplemental tax on passenger car rental. This Supplemental Aid Tax is provided to the MTA in conjunction with the Mobility Tax.
+[p046_c0008] Dedicated Taxes — Under New York State law, subject to annual appropriation, the MTA receives operating assistance through a portion of the Dedicated Mass Transportation Trust Fund (“MTTF”) and Metropolitan Mass Transportation Operating Assistance Fund (“MMTOA”). The MTTF receipts consist of a portion of the revenues derived from certain business privilege taxes imposed by the State on petroleum businesses, a portion of the motor fuel tax on gasoline and diesel fuel, and a portion of certain motor vehicle fees, including registration and non-registration fees. Effective October 1, 2005, the State increased the amount of motor vehicle fees deposited into the MTTF for the benefit of the MTA. MTTF receipts are applied first to meet certain debt service requirements or obligations and second to the Transit System (defined as MTA New York City Transit and MaBSTOA), MTA Staten Island Railway and the Commuter Railroads to pay operating and capital costs. The MMTOA receipts are comprised of 0.375% regional sales tax, regional franchise tax surcharge, a portion of taxes on certain transportation and transmission companies, and an additional portion of the business privilege tax imposed on petroleum businesses. MMTOA receipts, to the extent that MTTF receipts are not sufficient to meet debt service requirements, will also be applied to certain debt service obligations, and secondly to operating and capital costs of the Transit System, and the Commuter Railroads.
+[p046_c0009] The State Legislature enacts in an annual budget bill for each state fiscal year an appropriation to the MTA Dedicated Tax Fund for the then-current state fiscal year and an appropriation of the amounts projected by the Director of the Budget of the State to be deposited in the MTA Dedicated Tax Fund for the next succeeding state fiscal year. The assistance deposited into the MTTF is required by law to be allocated, after provision for debt service on Dedicated Tax Fund Bonds (See Note 7), 85% to certain transit operations (not including MTA Bus) and 15% to the commuter railroads operations. Revenues from this funding source are recognized based upon amounts of tax reported as collected by New York State, to the extent of the appropriation.
+[p046_c0010] Build America Bond Subsidy — The MTA is receiving cash subsidy payments from the United States Treasury equal to 35% of the interest payable on the Series of Bonds issued as “Build America Bonds” and authorized by the Recovery Act. The Internal Revenue Code of 1986 imposes requirements that MTA must meet and continue to meet after the issuance in order to receive the cash subsidy payments. The interest on these bonds is fully subject to Federal income taxation to the bondholder.
+[p046_c0011] Congestion Zone Surcharges – In April 2018, the approved 2018-2019 New York State Budget enacted legislation that provided additional sources of revenue, in the form of surcharges and fines, as defined by Article 29-C, Chapter 59 of the Tax Law, to address the financial needs of the MTA. Beginning on January 1, 2019, the legislation imposed the following:
+- [p046_c0012] • A surcharge of $2.75 on for-hire transportation trips provided by motor vehicles carrying passengers for hire (or $2.50 in the case of taxicabs that are subject to the $0.50 cents tax on hailed trips that are part of the MTA Aid Trust Account Receipts), other than pool vehicles, ambulance and buses, on each trip that (1) originates and terminates south of and excluding 96th Street in New York City of New York, in the Borough of Manhattan (the “Congestion Zone”), (2) originates anywhere in New York State and terminates within the Congestion Zone, (3) originates in the Congestion Zone and terminates anywhere in New York State, or (4) originates anywhere in New York State, enters into the Congestion Zone while in transit, and terminates anywhere in New York State.
+[p046_c0013] _Master Page # 46 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 47
+
+### [p047_c0001] Metropolitan Transportation Authority
+### [p047_c0002] DRAFT
+### [p047_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+- [p047_c0004] • A surcharge of $0.75 cents for each person who both enters and exits a pool vehicle in New York State and who is picked up in, dropped off in, or travels through the Congestion Zone.
+[p047_c0005] The Congestion Zone Surcharges do not apply to transportation services administered by or on behalf of MTA, including paratransit services.
+[p047_c0006] The April 2018 legislation also created the New York City Transportation Assistance Fund, held by MTA. The fund consists of the three sub-accounts, the Subway Action Plan Account, the Outer Borough Transportation Account and the General Transportation Account.
+- [p047_c0007] • Subway Action Plan Account – Funds in this account may be used exclusively for funding the operating and capital costs, and debt service associated with the Subway Action Plan. • Outer Borough Transportation Account - Funds in this account may be used exclusively for funding (1) the operating and capital costs of, and debt service associated with, the MTA facilities, equipment and services in the counties of Bronx, Kings, Queens and Richmond, and any projects improving transportation connections from such counties to Manhattan, or (2) a toll reduction program for any crossing under the jurisdiction of MTA or MTA Bridges and Tunnels. • General Transportation Account - Funds in this account may be used exclusively for funding the operating and capital costs of MTA. In each case, funds may be used for various operations and capital needs or for debt service and reserve requirements.
+[p047_c0008] Dedicated Revenues - In April 2019, the approved 2019-2020 New York State Budget enacted legislation that included new, dedicated revenue streams for the MTA. The additional sources of revenue include a Central Business District Tolling Program, which has an implementation date of December 31, 2020. The Central Business District Tolling Program will assess a toll for vehicles entering the Central Business District, defined as south of 60th Street in Manhattan, but will exclude vehicles traveling on the FDR Drive or the West Side Highway, which includes the Battery Park underpass and or any surface roadway portion of the Hugh L. Carey Tunnel that connects to West Street.
+[p047_c0009] The enacted State Budget also included provisions for a new Real Property Transfer Tax Surcharge (referred to as the “Mansion Tax”) on high-priced residential property sales in New York City and an Internet Marketplace Sales Tax. The Mansion Tax went into effect on July 1, 2019 and increases the transfer tax on a sliding scale by a quarter percent starting at $2, with a combined top rate of 4.15%, on the sale of New York City residential properties valued at $25 or above. The Internet Marketplace Sales Tax went into effect on June 1, 2019 and requires internet marketplace providers to collect and remit sales tax from out of state retailers on their sites that have gross receipts exceeding $500,000 (dollars) and delivering more than one hundred sales into New York State in the previous four quarters. The sales tax will be collected at the normal rate of 4% plus local sales tax.
+[p047_c0010] The proceeds from the Central Business District Tolling Program, the Internet Marketplace Sales Tax and the Real Property Transfer Tax Surcharge will be deposited into the MTA’s Central Business District Tolling Program capital lock box and may only be used to support financing of the 2020-2024 Capital Program.
+[p047_c0011] Operating Subsidies Recoverable from Connecticut Department of Transportation (“CDOT”) — A portion of the deficit from operations relating to MTA Metro-North Railroad’s New Haven line is recoverable from CDOT. Under the terms of a renewed Service Agreement, which began on January 1, 2015, and the 1998 resolution of an arbitration proceeding initiated by the State of Connecticut, CDOT pays 100.0% of the net operating deficit of MTA Metro-North Railroad’s branch lines in Connecticut (New Canaan, Danbury, and Waterbury), 65.0% of the New Haven mainline operating deficit, and 54.3% of the Grand Central Terminal (“GCT”) operating deficit. The New Haven line’s share of the net operating deficit for the use of GCT is comprised of a fixed fee, calculated using several years as a base, with annual increases for inflation, and the actual cost of operating GCT’s North End Access beginning in 1999. The Service Agreement also provides that CDOT pay 100% of the cost of non-movable capital assets located in Connecticut, 100% of movable capital assets to be used primarily on the branch lines and 65% of the cost of other movable capital assets allocated to the New Haven line. Remaining funding for New Haven line capital assets is provided by the MTA. The Service Agreement provides for automatic five-year renewals unless a notice of termination has been provided. The Service Agreement has been automatically extended for an additional five years beginning January 1, 2015 subject to the right of CDOT or MTA to terminate the agreement on eighteen month’s written notice. Capital assets completely funded by CDOT are not reflected in these financial statements, as ownership is retained by CDOT. The Service Agreement provides that final billings for each year be subject to audit by CDOT. The audits of 2020 and 2021 billings are still open.
+[p047_c0012] Reimbursement of Expenses — The cost of operating and maintaining the passenger stations of the Commuter Railroads in New York State is assessable by the MTA to New York City and the other counties in which such stations are located for each New York State fiscal year ending December 31, under provisions of the New York State Public Authorities Law. This funding is recognized as revenue based upon an amount, fixed by statute, for the costs to operate and maintain passenger
+[p047_c0013] _Master Page # 47 of 175 - Audit 33 Committee Meeting 1/29/2024_
+
+## Page 48
+
+### [p048_c0001] Metropolitan Transportation Authority
+### [p048_c0002] DRAFT
+### [p048_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p048_c0004] stations and is revised annually by the increase or decrease of the regional Consumer Price Index.
+[p048_c0005] In 1995, New York City ceased reimbursing the MTA for the full costs of the free/reduced fare program for students. Beginning in 1996, the State and New York City each began paying $45 million per annum to the MTA toward the cost of the program. In 2009, the State reduced their $45 million reimbursement to $6.3 million. Beginning in 2010, the State increased their annual commitment to $25.3 million while New York City's annual commitment remained at $45 million. These commitments have been met by both the State and New York City for both 2021 and 2022. For the year ended December 31, 2022, the MTA received $100.3 million from the State and New York City combined, which include $30.0 million prepayment for the year 2023 from New York City.
+[p048_c0006] Prior to April 1995, New York City was obligated to reimburse MTA New York City Transit for the transit police force. As a result of the April 1995 merger of the transit police force into the New York City Police Department, New York City no longer reimburses MTA New York City Transit for the costs of policing the Transit System on an ongoing basis since policing of the Transit System is being carried out by the New York City Police Department at New York City's expense. MTA New York City Transit continues to be responsible for certain capital costs and support services related to such police activities, a portion of which is reimbursed by New York City. MTA New York City Transit received approximately $2.1 in the nine months ended September 30, 2023 and $3.6 in the nine months ended September 30, 2022 from New York City for the reimbursement of transit police costs.
+[p048_c0007] MTAHQ bills MTA Metro-North Railroad through its consolidated services for MTA police costs in the New Haven line of which MTA Metro-North Railroad recovers approximately 65% from Connecticut Department of Transportation. The amounts billed for the periods ended September 30, 2023 and 2022 were $18.6 and $18.3, respectively. The amounts recovered for the periods ended September 30, 2023 and 2022 were approximately $12.1 and $11.9, respectively.
+[p048_c0008] Federal law and regulations require a paratransit system for passengers who are not able to ride the buses and trains because of their disabilities. Pursuant to an agreement between New York City and the MTA, MTA New York City Transit, effective July 1, 1993, assumed operating responsibility for all paratransit service required by the Americans with Disability Act of 1990. Services are provided by private vendors under contract with MTA New York City Transit. New York City reimburses MTA New York City Transit for the lesser of 33% of net paratransit operating expenses defined as labor, transportation, and administrative costs less fare revenues and 6% of gross urban tax proceeds as described above or, an amount that is 20% greater than the amount paid by New York City for the preceding calendar year. Fare revenues and New York City's reimbursement aggregated approximately $277.4 for the nine months ended September 30, 2023 and $194.8 for the nine months ended September 30, 2022.
+[p048_c0009] Grants and Appropriations — Grants and appropriations for capital projects are recorded when requests are submitted to the funding agencies for reimbursement of capital expenditures meeting eligibility requirements. These amounts are reported separately after Net Non-operating Revenues in the Statements of Revenues, Expenses, and Changes in Net Position.
+[p048_c0010] Liability Insurance — FMTAC, an insurance captive subsidiary of MTA, operates a liability insurance program ("ELF") that insures certain claims in excess of the self-insured retention limits of the agencies on both a retrospective (claims arising from incidents that occurred before October 31, 2003) and prospective (claims arising from incidents that occurred on or after October 31, 2003) basis. For claims arising from incidents that occurred on or after November 1, 2006, but before November 1, 2009, the self-insured retention limits are: $8 for MTA New York City Transit, MaBSTOA, MTA Bus, MTA Long Island Rail Road, and MTA Metro-North Railroad; $2.3 for MTA Long Island Bus and MTA Staten Island Railway; and $1.6 for MTAHQ and MTA Bridges and Tunnels. For claims arising from incidents that occurred on or after November 1, 2009, but before November 1, 2012, the self-insured retention limits are: $9 for MTA New York City Transit, MaBSTOA, MTA Bus, MTA Long Island Rail Road and MTA Metro-North Railroad; $2.6 for MTA Long Island Bus and MTA Staten Island Railway; and $1.9 for MTAHQ and MTA Bridges and Tunnels. Effective November 1, 2012, the self-insured retention limits for ELF were increased to the following amounts: $10 for MTA New York City Transit, MaBSTOA, MTA Bus, MTA Long Island Rail Road and MTA Metro-North Railroad; $3 for MTA Staten Island Railway; and $2.6 for MTAHQ and MTA Bridges and Tunnels. Effective October 31, 2015, the self-insured retention limits for ELF were increased to the following amounts: $11 for MTA New York City Transit, MaBSTOA, MTA Bus, MTA Long Island Rail Road and MTA Metro-North Railroad; $3.2 for MTA Staten Island Railway, MTAHQ and MTA Bridges and Tunnels. The maximum amount of claims arising out of any one occurrence is the total assets of the program available for claims, but in no event greater than $50. The retrospective portion contains the same insurance agreements, participant retentions, and limits as existed under the ELF program for occurrences happening on or before October 30, 2003. On a prospective basis, FMTAC issues insurance policies indemnifying the other MTA Group entities above their specifically assigned self-insured retention with a limit of $50 per occurrence with a $50 annual aggregate. FMTAC charges appropriate annual premiums based on loss experience and exposure analysis to maintain the fiscal viability of the program. On September 30, 2023, the balance of the assets in this program was $178.9.
+[p048_c0011] _Master Page # 48 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 49
+
+### [p049_c0001] Metropolitan Transportation Authority
+### [p049_c0002] DRAFT
+### [p049_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p049_c0004] MTA also maintains an All-Agency Excess Liability Insurance Policy that affords the MTA Group additional coverage limits of $357.5 for a total limit of $407.5 ($357.5 excess of $50). In certain circumstances, when the assets in the program described in the preceding paragraph are exhausted due to payment of claims, the All-Agency Excess Liability Insurance will assume the coverage position of $50.
+[p049_c0005] On March 1, 2023, the “nonrevenue fleet” automobile liability policy program was renewed. This program provides third-party auto liability insurance protection for MTA Long Island Rail Road, MTA Staten Island Railway, MTA Police, MTA Metro-North Railroad, MTA Inspector General, MTA Construction & Development Company and MTA Headquarters. The program limit is $11 per occurrence on a combined single limit with a $1 per occurrence deductible. Primary limits of $6 were procured through the commercial marketplace. Excess limits of $5 were procured through FMTAC. FMTAC renewed its deductible buy back policy, where it assumes the liability of the agencies for their deductible.
+[p049_c0006] On March 1, 2023, the “Access-A-Ride” automobile liability policy program was renewed. This program provides third-party auto liability insurance coverage to vendors under the Access-A-Ride contract, to perform services on behalf of MTA New York City Transit. This policy provides a $3 per occurrence to fund self-insured losses.
+[p049_c0007] On December 15, 2022, FMTAC renewed the primary coverage on the Station Liability and Force Account liability policies $11 per occurrence loss for MTA Metro-North Railroad and MTA Long Island Rail Road.
+[p049_c0008] Property Insurance — Effective May 1, 2023, FMTAC renewed the all-agency property insurance program. For the annual period commencing May 1, 2023, FMTAC directly insures property damage claims of the Related Entities in excess of a $25 per occurrence deductible, subject to an annual $75 aggregate deductible. The total All Risk program annual limit is $500 per occurrence and in the annual aggregate for Flood and Earthquake covering property of the Related Entities collectively. FMTAC is reinsured in the domestic, Asian, London, European and Bermuda reinsurance markets for this coverage.
+[p049_c0009] Losses occurring after exhaustion of the deductible aggregate are subject to a deductible of $7.5 per occurrence. In addition to the noted $25 per occurrence self-insured deductible, MTA self-insures above that deductible for $147.08 within the overall $500 per occurrence property program as follows: $20,277 (or 40.55%) of the primary $50 layer, plus $23,777 (or 47.55%) of the $50 excess $50 layer, plus $14,792 (or 29.58%) of the $50 excess $100 layer, plus $8,827 (or 17.65%) of the $50 excess $150 layer, plus $4,484 (or 8.96%) of the $50 excess $200 layer, plus $12,548 (or 25.09%) of the $50 excess $250 layer, plus $13,547 (or 27.09%) of the $50 excess $300 layer, plus $14,997 (or 29.99%) of the $50 excess $350 layer, plus $18,664 (or 37.32%) of the $50 excess $400 layer, and $15,164 (or 30.32%) of the $50 excess $450 layer.
+[p049_c0010] The property insurance policy provides replacement cost coverage for all risks (including Earthquake, Flood and Wind) of direct physical loss or damage to all real and personal property, with minor exceptions. The policy also provides extra expense and business interruption coverage.
+[p049_c0011] Supplementing the $500 per occurrence noted above, FMTAC’s property insurance program has been expanded to include a further layer of $100 of fully collateralized storm surge coverage for losses from storm surges that surpass specified trigger levels in the New York Harbor or Long Island Sound and are associated with named storms that occur at any point in the three year period from May 19, 2023 to April 30, 2026. The expanded protection is reinsured by MetroCat Re Ltd. 2023-1, a Bermuda special purpose insurer independent from the MTA and formed to provide FMTAC with capital markets based property reinsurance. The MetroCat Re Ltd. 2023-1 reinsurance policy is fully collateralized by a Regulation 114 trust invested in U.S. Treasury Money Market Funds. The additional coverage provided is parametric and available for storm surge losses resulting from a storm that causes water levels that reach the specified index values.
+[p049_c0012] With respect to acts of terrorism, FMTAC provides direct coverage that is reinsured by the United States Government for 80% of “certified” losses, as covered by the Terrorism Risk Insurance Program Reauthorization Act (“TRIPRA”) of 2019. The remaining 20% of the Related Entities’ losses arising from an act of terrorism would be covered under the additional terrorism policy described below. No federal compensation will be paid unless the aggregate industry insured losses exceed a trigger of $200. The United States government’s reinsurance is in place through December 31, 2027.
+[p049_c0013] To supplement the reinsurance to FMTAC through the TRIPRA, MTA obtained an additional commercial reinsurance policy with various reinsurance carriers in the domestic, London and European marketplaces. That policy provides coverage for (1) 20% of any “certified” act of terrorism up to a maximum recovery of $215 for any one occurrence and in the annual aggregate (2) the TRIPRA FMTAC captive deductible (per occurrence and on an aggregated basis) that applies when recovering under the “certified” acts of terrorism insurance or (3) 100% of any “certified” terrorism loss which exceeds $5 and less than the $200 TRIPRA trigger up to a maximum recovery of $200 for any occurrence and in the annual aggregate.
+[p049_c0014] Additionally, MTA purchases coverage for acts of terrorism which are not certified under TRIPRA to a maximum of $215. Recovery under the terrorism policy is subject to a deductible of $25 per occurrence and $75 in the annual aggregate in the event of multiple losses during the policy year. Should the Related Entities’ deductible in any one year exceed $75 future losses in that policy year are subject to a deductible of $7.5. The terrorism coverages expire at midnight on May 1, 2025.
+[p049_c0015] _Master Page # 49 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 50
+
+### [p050_c0001] Metropolitan Transportation Authority
+### [p050_c0002] DRAFT
+### [p050_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p050_c0004] Pension Plans — In accordance with the provisions of GASB Statement No. 68, Accounting and Financial Reporting for Pensions , the MTA recognizes a net pension liability for each qualified pension plan in which it participates, which represents the excess of the total pension liability over the fiduciary net position of the qualified pension plan, or the MTA's proportionate share thereof in the case of a cost-sharing multiple-employer plan, measured as of the measurement date of each of the qualified pension plans. Changes in the net pension liability during the year are recorded as pension expense, or as deferred inflows of resources or deferred outflows of resources depending on the nature of the change, in the year incurred. Those changes in net pension liability that are recorded as deferred inflows of resources or deferred outflows of resources that arise from changes in actuarial assumptions or other inputs and differences between expected or actual experience are amortized over the weighted average remaining service life of all participants in the respective qualified pension plan and recorded as a component of pension expense beginning with the year in which they are incurred. Projected earnings on qualified pension plan investments are recognized as a component of pension expense. Differences between projected and actual investment earnings are reported as deferred inflows of resources or deferred outflows of resources and amortized as a component of pension expense on a closed basis over a five-year period beginning with the year in which the difference occurred.
+[p050_c0005] Postemployment Benefits Other Than Pensions — In accordance with the provisions of GASB Statement No. 75, Accounting and Financial Reporting for Postemployment Benefits Other Than Pensions and GASB Statement No. 85, Omnibus for the OPEB Plan, the MTA recognizes a net OPEB liability, which represents the excess of the total OPEB liability over the fiduciary net position of the OPEB Plan, measured as of the measurement date of the plan.
+[p050_c0006] Changes in the net OPEB liability during the year are recorded as OPEB expense, or as deferred outflows of resources or deferred inflows of resources relating to OPEB depending on the nature of the change, in the year incurred. Changes in net OPEB liability that are recorded as deferred outflows of resources or deferred inflows of resources that arise from changes in actuarial assumptions and differences between expected or actual experience are amortized over the weighted average remaining service life of all participants in the OPEB plan and recorded as a component of OPEB expense beginning with the year in which they are incurred. Projected earnings on qualified OPEB plan investments are recognized as a component of OPEB expenses. Differences between projected and actual investment earnings are reported as deferred outflows of resources or deferred inflow of resources as a component of OPEB expense on a closed basis over a five-year period beginning with the year in which the difference occurred.
+### [p050_c0007] 3. CASH AND INVESTMENTS
+[p050_c0008] Cash - The Bank balances are insured up to $250 thousand in the aggregate by the Federal Deposit Insurance Corporation ("FDIC") for each bank in which funds are deposited. As of September 30, 2023, restricted cash, primarily for capital projects, totaled $814.
+[p050_c0009] Cash, including deposits in transit, consists of the following at September 30, 2023 and December 31, 2022 (in millions):
+[p050_c0010]
+
+```text
+September 30, 2023 December 31, 2022 Carrying Amount Bank Balance Carrying Amount Bank Balance FDIC insured or collateralized deposits $ 76 $ 73 $ 117 $ 116 Uninsured and not collateralized 1,524 1,499 823 801 Total Balance $ 1,600 $ 1,572 $ 940 $ 917
+```
+[p050_c0011] All collateralized deposits are held by the MTA or its agent in the MTA's name.
+[p050_c0012] The MTA, on behalf of itself, its affiliates and subsidiaries, invests funds which are not immediately required for the MTA's operations in securities permitted by the New York State Public Authorities Law, including repurchase agreements collateralized by U.S. Treasury securities, U.S. Treasury notes, and U.S. Treasury zero coupon bonds.
+[p050_c0013] Custodial credit risk for deposits is the risk that, in the event of the failure of a depository financial institution, the MTA will not be able to recover the value of its deposits. While the MTA does not have a formal deposit policy for custodial credit risk, New York State statutes govern the MTA's investment policies. The MTA's uninsured and uncollateralized deposits are primarily held by commercial banks in the metropolitan New York area and are subject to the credit risks of those institutions.
+[p050_c0014] Investments - MTA holds most of its investments at a custodian bank. The custodian must meet certain banking institution criteria enumerated in MTA's Investment Guidelines. The Investment Guidelines also require the Treasury Division to hold at least $100 of its portfolio with a separate emergency custodian bank. The purpose of this deposit is in the event that the MTA's main custodian cannot execute transactions due to an emergency outside of the custodian's control, the MTA has an immediate alternate source of liquidity.
+[p050_c0015] _Master Page # 50 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 51
+
+### [p051_c0001] Metropolitan Transportation Authority
+### [p051_c0002] DRAFT
+### [p051_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p051_c0004] The MTA categorizes its fair value measurements within the fair value hierarchy established by generally accepted accounting principles. The hierarchy is based on the valuation inputs used to measure the fair value of the asset. Level 1 inputs are quoted prices in active markets for identical assets; Level 2 inputs are significant other observable inputs; Level 3 inputs are significant unobservable inputs.
+[p051_c0005] The MTA had the following recurring fair value measurements as of September 30, 2023 and December 31, 2022 (in millions):
+[p051_c0006]
+
+```text
+Investments by fair value level September 30, 2023 Fair Value Measurements December 31, 2022 Fair Value Measurements Level 1 Level 2 Level 1 Level 2 Debt Securities: U.S. treasury securities $ 13,187 $ 8,789 $ 4,398 $ 16,093 $ 12,063 $ 4,030 U.S. government agency 326 - 326 367 - 367 Commercial paper - - - 300 - 300 Asset-backed securities 71 - 71 48 - 48 Commercial mortgage-backed securities 70 - 70 159 - 159 Foreign bonds 10 10 - 15 15 - Corporate bonds 119 119 - 124 124 - Tax Benefit Lease Investments: U.S. treasury securities 141 141 - 144 127 17 U.S. government agency 114 63 51 116 64 52 Repurchase agreements 175 175 - 249 217 32 Equity Securities - - - - - - Total investments by fair value level 14,213 $ 9,297 $ 4,916 17,615 $ 12,610 $ 5,005 Financed Purchases 108 104 Total Investments $ 14,321 $ 17,719
+```
+[p051_c0007] Investments classified as Level 1 of the fair value hierarchy, totaling $9,297 and $12,610 as of September 30, 2023 and December 31, 2022, respectively, are valued using quoted prices in active markets. Fair values include accrued interest to the extent that interest is included in the carrying amounts. Accrued interest on investments other than Treasury bills and coupons is included in other receivables on the statement of net position. The MTA's investment policy states that securities underlying repurchase agreements must have a fair value at least equal to the cost of the investment.
+[p051_c0008] U.S. Government agency securities totaling $377 and $419, U.S. treasury securities totaling $4,398 and $4,047, commercial paper totaling $0 and $300, asset-backed securities totaling $71 and $48, and commercial mortgage-backed securities totaling $70 and $159 as of September 30, 2023 and December 31, 2022, respectively, classified in Level 2 of the fair value hierarchy, are valued using matrix pricing techniques maintained by a third-party pricing service. Matrix pricing is used to value securities based on the securities' relationship to benchmark quoted prices and indices. Fair value is defined as the quoted fair value on the last trading day of the period. These prices are obtained from a third-party pricing service or our custodian bank.
+[p051_c0009] In connection with certain financed purchases transactions described in Note 9, the MTA has purchased securities or entered into payment undertaking, letter of credit, or similar type agreements or instruments (guaranteed investment contracts) with financial institutions, which generate sufficient proceeds to make basic rent and purchase option payments under the terms of the leases. If the obligors do not perform, the MTA may have an obligation to make the related rent payments.
+[p051_c0010] All investments, other than the investments restricted for financed purchase obligations, are either insured or registered and held by the MTA or its agent in the MTA's name. Investments restricted for financed purchases are either held by MTA or its agent in the MTA's name or held by a custodian as collateral for MTA's obligation to make rent payments under financed purchase obligations. Investments had weighted average yields of 4.92% and 2.78% for the nine months ended September 30, 2023 and year ended December 31, 2022, respectively.
+[p051_c0011] _Master Page # 51 of 175 - Audit/Committee Meeting 1/29/2024_
+
+## Page 52
+
+### [p052_c0001] Metropolitan Transportation Authority
+### [p052_c0002] DRAFT
+### [p052_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p052_c0004] Credit Risk — At September 30, 2023 and December 31, 2022, the following credit quality rating has been assigned to MTA investments by a nationally recognized rating organization (in millions):
+[p052_c0005]
+
+```text
+Quality Rating Standard & Poor's September 30, 2023 Percent of Portfolio December 31, 2022 Percent of Portfolio A-1+ $ - 0% $ 153 1% A-1 - 0% 300 2% AAA 293 2% 217 1% AA+ 51 0% 52 0% AA 13 0% 33 0% A 76 2% 69 1% A- 113 1% 122 1% BBB 42 0% 47 0% B - 0% - 0% Not Rated 205 1% 322 2% U.S. Government 13,420 94% 16,300 92% Total 14,213 100% 17,615 100% Equities and Financed Purchases 108 104 Total investment $ 14,321 $ 17,719
+```
+[p052_c0006] Interest Rate Risk — Interest rate risk is the risk that changes in interest rates will adversely affect the fair value of the investment. Duration is a measure of interest rate risk. The greater the duration of a bond or portfolio of bonds, the greater its price volatility will be in response to a change in interest rate risk and vice versa. Duration is an indicator of bond price's sensitivity to a 100 basis point change in interest rates.
+[p052_c0007]
+
+```text
+(In millions) September 30, 2023 December 31, 2022 Fair Value Duration (in years) Fair Value Duration (in years) U.S. Treasuries $ 13,187 6.76 $ 16,093 4.95 Federal Agencies 326 5.42 367 5.75 Tax benefits lease investments 254 5.48 259 5.89 Repurchase agreements 175 - 250 - Commercial paper - - 300 - Asset-backed securities (1) 71 3.02 48 3.59 Commercial mortgage-backed securities (1) 70 4.41 159 5.07 Foreign bonds (1) 10 7.14 15 5.77 Corporates (1) 120 6.92 124 5.81 Total fair value 14,213 17,615 Modified duration 6.59 4.83 Investments with no duration reported 108 104 Total investments $ 14,321 $ 17,719
+```
+[p052_c0008] (1) These securities are only included in the FMTAC portfolio.
+[p052_c0009] MTA is a public benefit corporation established under the New York Public Authorities Law. MTA's Treasury Division is responsible for the investment management of the funds of the component units. The investment activity covers all operating and capital funds, including bond proceeds, and the activity is governed by State statutes, bond resolutions and the Board-adopted investment guidelines (the "Investment Guidelines"). The MTA Act currently permits the Related Entities to invest in the following general types of obligations:
+- [p052_c0010] • obligations of the State or the United States Government; • obligations of which the principal and interest are guaranteed by the State or the United States government; • obligations issued or guaranteed by certain Federal agencies; • repurchase agreements fully collateralized by the obligations of the foregoing United States Government and Federal agencies; • certain certificates of deposit of banks or trust companies in the State;
+[p052_c0011] _Master Page # 52 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 53
+
+### [p053_c0001] Metropolitan Transportation Authority
+### [p053_c0002] DRAFT
+### [p053_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+- [p053_c0004] • certain banker's acceptances with a maturity of 90 days or less; • certain commercial paper; • certain municipal obligations; and • certain mutual funds up to $10 in the aggregate.
+[p053_c0005] MTA adopted NYS Statutory Requirements with respect to credit risk of its investments, which include, but are not limited to the following sections:
+- [p053_c0006] i. Public Authorities Law Sections 1265(4) (MTA), 1204(19) (MTA New York City Transit Authority) and 553(21) (MTA Bridges and Tunnels); ii. Public Authorities Law Section 2925 Investment of funds by public authorities and public benefit corporations; general provisions; and iii. State Finance Law Article 15 – EXCELSIOR LINKED DEPOSIT ACT.
+[p053_c0007] MTA Investment Guidelines limit the dollar amount invested in banker acceptances, commercial paper, and obligations issued or guaranteed by certain Federal agencies to $250 at cost. There are no dollar limits on the purchase of obligations of the United States government, the State or obligations the principal and interest of which are guaranteed by the State or the United States government. Investments in collateralized repurchase agreements are limited by dealer or bank's capital. MTA can invest no greater than $300 with a bank or dealer rated in Tier 1 (i.e. $1 billion or more of capital).
+[p053_c0008] FMTC is created as a MTA subsidiary and is licensed as a captive direct insurer and reinsurer by the New York State Department of Insurance. As such, FMTC is responsible for the investment management of its funds. The investment activity is governed by State statutes and the FMTC Board adopted investment guidelines. The minimum surplus to policyholders and reserve instruments are invested in the following investments:
+- [p053_c0009] • obligations of the United States or any agency thereof provided such agency obligations are guaranteed as to principal and interest by the United States; • direct obligations of the State or of any county, district or municipality thereof; • any state, territory, possession or any other governmental unit of the United States; • certain bonds of agencies or instrumentalities of any state, territory, possession or any other governmental unit of the United States; • the obligations of a solvent American institution which are rated investment grade or higher (or the equivalent thereto) by a securities rating agency; and • certain mortgage backed securities in amounts no greater than five percent of FMTC's admitted assets.
+[p053_c0010] FMTC may also invest non-reserve instruments in a broader range of investments including the following general types of obligations:
+- [p053_c0011] • certain equities; and • certain mutual funds.
+[p053_c0012] FMTC is prohibited from making the following investments:
+- [p053_c0013] • investment in an insolvent entity; • any investment as a general partner; and • any investment found to be against public policy.
+[p053_c0014] FMTC investment guidelines do include other investments, but FMTC has limited itself to the above permissible investments at this time.
+### [p053_c0015] 4. EMPLOYEE BENEFITS
+[p053_c0016] Pensions — The MTA Related Groups sponsor and participate in several defined benefit pension plans for their employees, the Long Island Railroad Company Plan for Additional Pensions (the "Additional Plan"), the Manhattan and Bronx Surface Transit Operating Authority Pension Plan (the "MaBSTOA Plan"), the Metro-North Commuter Railroad Company Cash Balance Plan (the "MNR Cash Balance Plan"), the Metropolitan Transportation Authority Defined Benefit Plan (the "MTA Defined Benefit Plan"), the New York City Employees' Retirement System ("NYCERS"), and the New York State and Local Employees' Retirement System ("NYSLERS"). A brief description of each of these pension plans follows:
+[p053_c0017] _Master Page # 53 of 175 - Audit 39 Committee Meeting 1/29/2024_
+
+## Page 54
+
+### [p054_c0001] Metropolitan Transportation Authority
+### [p054_c0002] DRAFT
+### [p054_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p054_c0004] Plan Descriptions
+### [p054_c0005] 1. Additional Plan —
+[p054_c0006] The Additional Plan is a single-employer defined benefit pension plan that provides retirement, disability and survivor benefits to members and beneficiaries. The Additional Plan covers MTA Long Island Rail Road employees hired effective July 1, 1971 and prior to January 1, 1988. The Additional Plan's activities, including establishing and amending contributions and benefits are administered by the Board of Managers of Pensions. The Additional Plan is a governmental plan and accordingly, is not subject to the funding and other requirements of the Employee Retirement Income Security Act of 1974 ("ERISA"). The Additional Plan is a closed plan.
+[p054_c0007] The Board of Managers of Pensions is comprised of the Chairman of the MTA, MTA Chief Financial Officer, MTA Director of Labor Relations and the agency head of each participating Employer or the designee of a member of the Board of Managers. The Additional Plan for Additional Pensions may be amended by action of the MTA Board. The Additional Plan is a fiduciary component unit of the MTA and is reflected in the Pension and Other Employee Benefit Trust Funds section of the MTA's basic financial statements.
+[p054_c0008] The pension plan has a separately issued financial statement that is publicly available and contains required descriptions and supplemental information regarding the employee benefit plan. The financial statements may be obtained at www.mta.info or by writing to, MTA Deputy Chief, Controller's Office, 2 Broadway, 15th Floor New York, NY 10004 or at www.mta.info .
+### [p054_c0009] 2. MaBSTOA Plan —
+[p054_c0010] The MaBSTOA Plan is a multi-employer cost-sharing defined benefit retirement plan administered by MTA New York City Transit covering employees of MaBSTOA and MTA Headquarters. Prior to January 1, 2020, this was a single employer defined benefit retirement plan covering only MaBSTOA employees. Employees of MaBSTOA and MTA Headquarters are specifically excluded from participating in the New York City Employees' Retirement System (NYCERS). The Plan provides retirement as well as death, accident and disability benefits. Effective January 1, 1999, in order to afford managerial and non-represented MaBSTOA employees the same pension rights as like title employees in the MTA New York City Transit Authority, membership in the MaBSTOA Plan is optional.
+[p054_c0011] The Board of Administration, established in 1963, determines the eligibility of employees and beneficiaries for retirement and death benefits. The MaBSTOA Plan assigns authority to the MaBSTOA Board to modify, amend or restrict the MaBSTOA Plan or to discontinue it altogether, subject, however, to the obligations under its collective bargaining agreements. The Board is composed of five members: two representatives from the Transport Workers Union, Local 100 ("TWU") and three employer representatives. The MaBSTOA Plan is a fiduciary component unit of the MTA and is reflected in the Pension and Other Employee Benefit Trust Funds section of the MTA's basic financial statements.
+[p054_c0012] The pension plan issues a publicly available financial report that includes financial statements and required supplementary information. This report may be obtained by writing to, MTA Deputy Chief, Controller's Office, 2 Broadway, 15th Floor New York, NY 10004 or at www.mta.info .
+### [p054_c0013] 3. MNR Cash Balance Plan —
+[p054_c0014] The MNR Cash Balance Plan is a single employer, defined benefit pension plan administered by MTA Metro-North Railroad. The MNR Cash Balance Plan covers non-collectively bargained employees, formerly employed by Conrail, who joined MTA Metro-North Railroad as management employees between January 1 and June 30, 1983, and were still employed as of December 31, 1988. Effective January 1, 1989, these management employees were covered under the Metro-North Commuter Railroad Defined Contribution Plan for Management Employees (the "Management Plan") and the MNR Cash Balance Plan was closed to new participants. The assets of the Management Plan were merged with the Metropolitan Transportation Authority Defined Benefit Plan for Non-Represented Employees (now titled as the Metropolitan Transportation Authority Defined Benefit Pension Plan) as of the asset transfer date of July 14, 1995. The MNR Cash Balance Plan is designed to satisfy the applicable requirements for governmental plans under Section 401(a) and 501(a) of the Internal Revenue Code. Accordingly, the MNR Cash Balance Plan is tax-exempt and is not subject to the provisions of ERISA.
+[p054_c0015] The MTA Board of Trustees appoints a Board of Managers of Pensions consisting of five individuals who may, but need not, be officers or employees of the company. The Board of Managers control and manage the operation and administration of the MNR Cash Balance Plan's activities, including establishing and amending contributions and benefits.
+[p054_c0016] Further information about the MNR Cash Balance Plan is more fully described in the separately issued financial statements that can be obtained by writing to, MTA Deputy Chief, Controller's Office, 2 Broadway, 15th Floor New York, NY 10004 or at www.mta.info .
+[p054_c0017] _Master Page # 54 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 55
+
+### [p055_c0001] Metropolitan Transportation Authority
+### [p055_c0002] DRAFT
+### [p055_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p055_c0004] 4. MTA Defined Benefit Plan —
+[p055_c0005] The MTA Defined Benefit Pension Plan (the “MTA Plan” or the “Plan”) is a cost sharing, multiple-employer defined benefit pension plan. The Plan covers certain MTA Long Island Railroad non-represented employees hired after January 1, 1988, MTA Metro-North Railroad non-represented employees, certain employees of the former MTA Long Island Bus hired prior to January 24, 1983, MTA Police, MTA Long Island Railroad represented employees hired after December 31, 1987, certain MTA Metro-North Railroad represented employees, MTA Staten Island Railway represented and non-represented employees and certain employees of the MTA Bus Company (“MTA Bus”). The MTA, MTA Long Island Railroad, MTA Metro-North Railroad, MTA Staten Island Railway and MTA Bus contribute to the MTA Plan, which offers distinct retirement, disability retirement, and death benefit programs for their covered employees and beneficiaries.
+[p055_c0006] The MTA Defined Benefit Plan is administered by the Board of Managers of Pensions. The MTA Plan, including benefits and contributions, may be amended by action of the MTA Board. The MTA Defined Benefit Plan is a fiduciary component unit of the MTA and is reflected in the Pension and Other Employee Benefit Trust Funds section of the MTA’s basic financial statements.
+[p055_c0007] The pension plan issues a publicly available financial report that includes financial statements and required supplementary information. This report may be obtained by writing to the MTA Deputy Chief, Controller’s Office, 2 Broadway, 15th Floor New York, NY 10004 or at www.mta.info .
+### [p055_c0008] 5. NYCERS —
+[p055_c0009] NYCERS is a cost-sharing, multiple-employer retirement system for employees of The City of New York (“The City”) and certain other governmental units whose employees are not otherwise members of The City’s four other pension systems. NYCERS administers the New York City Employees Retirement System qualified pension plan.
+[p055_c0010] NYCERS was established by an act of the Legislature of the State of New York under Chapter 427 of the Laws of 1920. NYCERS functions in accordance with the governing statutes contained in the New York State Retirement and Social Security Law (“RSSL”), and the Administrative Code of the City of New York (“ACNY”), which are the basis by which benefit terms and employer and member contribution requirements are established and amended. The head of the retirement system is the Board of Trustees. NYCERS is a fiduciary component unit of The City and is in the Pension and Other Employee Benefit Trust Funds section of The City’s Annual Comprehensive Financial Report (“ACFR”).
+[p055_c0011] NYCERS issues a publicly available comprehensive annual financial. This report may be obtained by writing to the New York City Employees’ Retirement System at 335 Adams Street, Suite 2300, Brooklyn, NY 11201-3724 or at www.mta.info .
+[p055_c0012] All employees of the Related Group holding permanent civil service positions in the competitive or labor class are required to become members of NYCERS six months after their date of appointment, but may voluntarily elect to join NYCERS prior to their mandated membership date. All other eligible employees have the option of joining NYCERS upon appointment or anytime thereafter. NYCERS members are assigned to a “tier” depending on the date of their membership.
+[p055_c0013]
+
+```text
+Tier 1 All members who joined prior to July 1, 1973. Tier 2 All members who joined on or after July 1, 1973 and before July 27, 1976. Tier 3 Only certain members who joined on or after July 27, 1976 and prior to April 1, 2012 Tier 4 All members (with certain member exceptions) who joined on or after July 27, 1976 but prior to April 1, 2012. Members who joined on or after July 27, 1976 but prior to September 1, 1983 retain all rights and benefits of Tier 3 membership. Tier 6 Members who joined on or after April 1, 2012.
+```
+### [p055_c0014] 6. NYSLERS —
+[p055_c0015] NYSLERS is a cost-sharing, multiple-employer defined benefit retirement system. The New York State Comptroller’s Office administers the NYSLERS’ plan. The net position of NYSLERS is held in the New York State Common Retirement Fund (the “Fund”), which was established to hold all assets and record changes in fiduciary net position allocated to the plan. The Comptroller of the State of New York serves as the trustee of the Fund and is the administrative head of NYSLERS. NYSLERS’ benefits are established under the provisions of the New York State RSSL. Once a public employer elects to participate in NYSLERS, the election is irrevocable. The New York State Constitution provides that pension membership is a contractual relationship and plan benefits cannot be diminished or impaired. Benefits can be changed for future members only by enactment of a State statute.
+[p055_c0016] _Master Page # 55 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 56
+
+### [p056_c0001] Metropolitan Transportation Authority
+### [p056_c0002] DRAFT
+### [p056_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p056_c0004] NYSLERS is included in New York State's financial report as a pension trust fund. The report can be accessed on the New York State Comptroller's website at: www.osc.state.ny.us/retire/about_us/financial_statements_index.php or obtained by writing to the New York State and Local Retirement System, 110 State Street, Albany, NY 12244-001.
+[p056_c0005] Pension legislation enacted in 1973, 1976, 1983, 2009 and 2012 established distinct classes of tier membership.
+[p056_c0006]
+
+```text
+Tier 1 All members who joined prior to July 1, 1973. Tier 2 All members who joined on or after July 1, 1973 and before July 27, 1976. Generally, certain members who joined on or after July 27, 1976 but before January 1, 2010 and all other members who joined on or after July 27, 1976, but before September 1, 1983. Tier 3 Generally, members (with certain member exceptions) who joined on or after September 1, 1983, but before January 1, 2010. Tier 4 Members who joined on or after January 1, 2010, but before April 1, 2012. Tier 5 Members who joined on or after April 1, 2012.
+```
+### [p056_c0007] Benefits Provided
+### [p056_c0008] 1. Additional Plan —
+[p056_c0009] Pension Benefits — An employee who retires under the Additional Plan, either: (a) after completing at least 20 years of credited service, or (b) after both attaining age 65 while in service and completing at least five years of credited service, or in the case of those who were active employees on January 1, 1988, after completing at least 10 years of credited service, is entitled to an annual retirement benefit, payable monthly for life. Payments commence to an employee referred to in: (a) only after attaining age 50, or (b) only after attaining age 65.
+[p056_c0010] Benefit and contribution provisions, which are based on the point in time at which participants last entered qualifying service and their length of credited service, are established by, and may only be amended by the MTA Long Island Rail Road, subject to the obligations of the MTA Long Island Rail Road under its collective bargaining agreements.
+[p056_c0011] The Additional Plan has both contributory and non-contributory requirements, with retirement ages varying from 50 to 65 depending upon a participant's length of credited service. Pension benefits payable to age 65, where eligible, are calculated as 2% of the employee's applicable final average earnings for each year of qualifying service up to 25 years plus 1.5% of applicable final average earnings for each year of qualifying service in excess of 25 years. For pension benefits payable at and after age 65, regardless of whether benefits commenced before or after the employee attained age 65, benefits are calculated in the same manner as pension benefits payable prior to age 65 except that the amount so determined is reduced by a percentage of the employee's annuity (not including any supplemental annuity) value at age 65 under the Federal Railroad Retirement Act.
+[p056_c0012] Participants who entered qualifying service before July 1, 1978 are not required to contribute. Participants who entered qualifying service on or after July 1, 1978, are required to contribute 3% of their wages. The MTA Long Island Railroad contributes additional amounts based on actuarially determined amounts that are designed to accumulate sufficient assets to pay benefits when due.
+[p056_c0013] Death and Disability Benefits — Participants who become disabled after accumulating 10 years of credited service and who meet the requirements as described in the Additional Plan receive a disability benefit. Disability pension benefits are calculated based on the participant's qualifying service and a percentage of final average compensation reduced by the full amount of benefit under the Federal Railroad Retirement Act. Survivorship benefits are paid to the participant's spouse when a survivorship option is elected or when an active participant has not divested his or her spouse of benefits. The survivorship benefit is payable at the time of death or when the vested participant would have attained an eligible age. The amount payable is in the form of an annuity. A lump sum death benefit no greater than five thousand dollars is payable upon death on behalf of a non-vested participant or vested participant whose pension rights were waived.
+[p056_c0014] Retirement benefits establishment and changes for representative employees are collectively bargained and must be ratified by the respective union and the MTA Board. For nonrepresented employees, amendments must be approved by the MTA Board.
+### [p056_c0015] 2. MaBSTOA Plan —
+[p056_c0016] The MaBSTOA Plan provides retirement as well as death, accident, and disability benefits. The benefits provided by the MaBSTOA Plan are generally similar to the benefits provided to MTA New York City Transit participants in NYCERS. Benefits vest after either 5, 10, or 20 years of credited service, depending on the date of membership.
+[p056_c0017] _Master Page # 56 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 57
+
+### [p057_c0001] Metropolitan Transportation Authority
+### [p057_c0002] DRAFT
+### [p057_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p057_c0004] In 2008, NYCERS had determined that Tier 4 employees are and have been eligible for a post retirement death benefit retroactive to 1986. In June 2012, the MTA Board approved an amendment to the MaBSTOA Plan to provide for incorporation of this benefit.
+### [p057_c0005] Tier 1 —
+[p057_c0006] Eligibility and Benefit Calculation: Tier 1 members must be at least age 50 with the completion of 20 years of service to be eligible to collect a service retirement benefit. Generally, the benefit is 1.50% for service before March 1, 1962, plus 2.0% for service from March 1, 1962 to June 30, 1970, plus 2.5% for service after June 30, 1970. The accumulated percentage, up to a maximum of 50%, is multiplied by the member's compensation, which is the greater of earned salary during the year prior to retirement. Once the accumulated reaches 50%, the percentage for each further year of service reverts back to 1.5%. The percentage in excess of 50% is multiplied by the final compensation, which is the highest average earnings over five consecutive years.
+[p057_c0007] Ordinary Disability Benefits — Generally, ordinary disability benefits, are provided to eligible Tier 1 members after ten years of service with the benefit equal to the greater of the service retirement percentages or 25% multiplied by final compensation.
+[p057_c0008] Accidental Disability Benefits — The accidental disability benefit to eligible Tier 1 members is equal to 75% of final compensation reduced by 100% of any worker's compensation payments.
+[p057_c0009] Ordinary Death Benefits — For Tier 1 members the amount of the death benefit is a lump sum equal to six months' pay for members with less than 10 years of service; a lump sum equal to a 12 months of pay for members with more than 10 but less than 20 years of service, and a lump sum equal to two times 12 months of pay for members with more than 20 years of service.
+### [p057_c0010] Tier 2 —
+[p057_c0011] Eligibility and Benefit Calculation: Tier 2 members must be at least age 55 with the completion of 25 years of service to be eligible to collect a service retirement benefit. Generally, the benefit equals 50% of final 3-year average compensation, defined as the highest average earnings over three consecutive years, plus 1% of final 5-year average compensation, defined as the highest average earnings over five consecutive years, per year of credited service in excess of 20 years. For early retirement, members must be at least age 50 with the completion of at least 20 years of service. The benefit is determined in the same manner as the service retirement but not greater than 2.0% of final 3-year average compensation per year of service.
+[p057_c0012] Ordinary Disability Benefits — Generally, ordinary disability benefits, are provided to eligible Tier 2 members after ten years of service with the benefit equal to the greater of the service retirement percentages or 25% multiplied by the final 5- year average compensation.
+[p057_c0013] Accidental Disability Benefits — The accidental disability benefit to eligible Tier 2 members is equal to 75% of the final 5-year average compensation reduced by any worker's compensation payments.
+[p057_c0014] Ordinary Death Benefits — Tier 2 members require the completion of 90 days of service to receive a lump sum equal to 3 times salary, raised to the next multiple of $1,000 dollars.
+### [p057_c0015] Tiers 3, 4—
+[p057_c0016] Eligibility and Benefit Calculation: Tier 3 and 4 members in the Regular 62 and 5 Plan must be at least age 62 with the completion of at least 5 years of service to be eligible to collect a service retirement benefit. Generally, the benefit for members with at least 20 years of service, is equal to 2.0% of Final Average Compensation ("FAC") for the first 30 years of service plus 1.5% of FAC for years of service in excess of 30. FAC is defined as the highest average earnings over three consecutive years, of which earnings in a year cannot exceed 110% of the average of the two preceding years. If the member completes less than 20 years of credited service, the benefit equals 1 - \frac{2}{3} of FAC multiplied by years of service. For early retirement, members must be at least age 55 with the completion of at least 5 years of service. The benefit equals the service retirement benefit reduced by 6% for each of the first two years prior to age 62, and by 3% for years prior to age 60.
+[p057_c0017] Tier 3 and 4 members in the basic 55/25Plan must be at least age 55 with the completion of at least 25 years of service, or be at least age 62 with the completion of at least 5 years of service, to be eligible to collect a service retirement benefit. Generally, the benefit for members with at least 25 years of service, is equal to 2.0% of FAC for the first 30 years of service plus 1.5% of FAC for years of service in excess of 30. If the member completes less than 25 years of credited service, the benefit equals 1 - \frac{2}{3} of FAC multiplied by years of service.
+[p057_c0018] _Master Page # 57 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 58
+
+### [p058_c0001] Metropolitan Transportation Authority
+### [p058_c0002] DRAFT
+### [p058_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p058_c0004] Tier 4 members in the 57/5 Plan must be at least age 57 with the completion of at least 5 years of service to be eligible to collect a service retirement benefit. Generally, the benefit for members with at least 20 years of service, is equal to 2.0% of FAC for the first 30 years of service plus 1.5% of FAC for years of service in excess of 30. If the member completes less than 20 years of credited service, the benefit equals 1 - \frac{2}{3} of FAC multiplied by years of service.
+[p058_c0005] Ordinary and Accidental Disability Benefits — For eligible members of the Regular 62/5 Plan, 57/25 Plan and 57/5 Plan, ordinary and accidental disability benefits, are provided after 10 years of service for ordinary and no service required for accidental disability benefit. The benefit equals the greater of 1 - \frac{2}{3} of FAC per year of service and \frac{1}{3} of FAC.
+[p058_c0006] Ordinary Death Benefits — For eligible members of the Regular 62/5 Plan, 55/25 Plan, 57/5 Plan, the pre-retirement ordinary death benefit is equal to a lump sum of annual salary times the lesser of completed years of service and 3. After age 60, the benefit is reduced 5% per year, to a maximum reduction of 50%. Accumulated regular member contributions with interest and one-half of accumulated additional member contributions with interest are also payable. Upon retirement, the post-retirement benefit is reduced by 50% and reduced an additional 25% after completion of one year of retirement. After completion of two years of retirement, the benefit equals 10% of the pre-retirement benefit in force at age 60.
+### [p058_c0007] Tier 6 —
+[p058_c0008] Eligibility and Benefit Calculation: Tier 6 members in the 55/25 Special Plan must be at least age 55 with the completion of at least 25 years, or at least age 63 with the completion of at least 5 years of service, to be eligible to collect a service retirement benefit. Generally, the benefit for members with at least 25 years of service, is equal to 2.0% of Final Average Salary (“FAS”) for the first 30 years of service plus 1.5% of FAS for years of service in excess of 30. If the member completes less than 20 years of credited service, the benefit equals 1 - \frac{2}{3} of FAS multiplied by years of service. FAS is defined as the highest average pensionable compensation over five consecutive years.
+[p058_c0009] Tier 6 members in the Basic 63/10 Plan must be at least age 63 with the completion of at least 5 years to be eligible to collect a service retirement benefit. Generally, the benefit for members with at least 20 years of service, is equal to 35% of FAS plus 2.0% of FAS for years of service in excess of 20. If the member completes less than 20 years of credited service, the benefit equals 1 - \frac{2}{3} of FAS multiplied by years of service. FAS is defined as the highest average pensionable earnings over five consecutive years. For early retirement, members must be at least age 55 with the completion of at least 5 years of service. The benefit equals the service retirement benefit reduced by 6.5% for each year early retirement precedes age 63.
+[p058_c0010] Ordinary and Accidental Disability Benefits — For eligible members of the 55/25 Special Plan and the Basic 63/10 Plan, ordinary and accidental disability benefits, are provided after 10 years of credited service for ordinary disability benefit. There is no service requirement for accidental disability benefit. The benefit equals the greater of 1 - \frac{2}{3} of FAS per year of service and \frac{1}{3} of FAS.
+[p058_c0011] Ordinary Death Benefits — For eligible members of the 55/25 Special Plan and the Basic 63/10 Plan, the pre-retirement ordinary death benefit is equal to a lump sum of annual salary times the lesser of completed years of service and 3. After age 60, the benefit is reduced 5% per year, to a maximum reduction of 50%. Accumulated regular member contributions with interest and one-half of accumulated additional member contributions with interest are also payable. Upon retirement, the post-retirement benefit is reduced by 50% and reduced an additional 25% after completion of one year of retirement. After completion of two years of retirement, the benefit equals 10% of the pre-retirement benefit in force at age 60.
+### [p058_c0012] 3. MNR Cash Balance Plan —
+[p058_c0013] Pension Benefits — Participants of the MNR Cash Balance Plan are vested in their benefit upon the earlier of (a) the completion of 5 years of service with MTA Metro-North Railroad or (b) the attainment of age 62. The accrued benefit is a participant's Initial Account Balance increased each month by the benefit escalator. The benefit escalator is defined as the Pension Benefit Guaranty Corporation (“PBGC”) immediate annuity rate in effect for December of the year preceding the year for which the determination is being made) divided by 180. The accrued benefit is paid as an escalating annuity. Vested participants are entitled to receive pension benefits commencing at age sixty-five. Participants may elect to receive the value of their accumulated plan benefits as a lump-sum distribution upon retirement or they may elect a monthly life annuity. Participants may elect to receive their pension in the form of a joint and survivor annuity.
+[p058_c0014] Participants of the MNR Cash Balance Plan are eligible for early retirement benefits upon termination of employment, the attainment of age 62, or age 60 and completion of 15 years of service, or age 55 and the completion of 30 years of service. The early retirement benefits paid is the normal retirement pension deferred to age 65 or an immediate pension equal to the life annuity actuarial equivalent of a participant's escalating annuity at normal retirement date indexed by the Initial Benefit Escalator from early retirement date to normal retirement date and reduced by \frac{5}{9} of 1% for each
+[p058_c0015] _Master Page # 58 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 59
+
+### [p059_c0001] Metropolitan Transportation Authority
+### [p059_c0002] DRAFT
+### [p059_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p059_c0004] month retirement precedes age 65 up to 60 months and 5/18 of 1% for each month after 60 months.
+[p059_c0005] For members with cash balances who are currently members of the Metropolitan Transportation Authority Defined Benefit Pension Plan, an additional benefit is provided equal to the amount needed to bring their total benefits (i.e., Railroad Retirement Tier I and II benefits, Conrail Plan benefits, Cash Balance Plan benefits, and MTA Defined Benefit Pension Plan benefits) up to a minimum of 65% of their 3-year final average pay under the MTA Defined Benefit Plan. In no event will the Additional Benefit exceed 2% of 3-year final average pay multiplied by the Conrail Management Service prior to July 1, 1983. This benefit is payable as a life annuity and is reduced for commencement prior to age 65 in the same manner as the regular cash balance benefit. This additional benefit is payable only in the form of a life annuity or 100% or 50% contingent annuity
+[p059_c0006] Death Benefits — Benefits are paid to vested participants' beneficiaries in the event of a participants' death. The amount of benefits payable is the participant's account balance at the date of his or her death. Pre-retirement death benefits paid for a participant's death after 55 is equal to the amount the spouse would have received had the participant elected retirement under the normal form of payment on the day preceding his death. Pre-retirement death benefits paid for a participant's death before 55 is equal to the amount the spouse would have received had the participant survived to age 55 and retired under the normal form of payment on that date. The benefit is based on service to the participant's date of death and is payable beginning on the date the participant would have attained age 55.
+[p059_c0007] In lieu of the above benefit, the surviving spouse can elect to receive the participant's account balance in a single lump sum payment immediately. If the participant was not married, the participant's beneficiary is entitled to receive the participant's Account Balance as of the participant's date of death in a single lump sum payment.
+### [p059_c0008] 4. MTA Defined Benefit Plan
+[p059_c0009] Pension Benefits — Retirement benefits are paid from the Plan to covered MTA Metro-North Railroad, MTA Staten Island Railway and post - 1987 MTA Long Island Rail Road employees as service retirement allowances or early retirement allowances. A participant is eligible for a service retirement allowance upon termination if the participant satisfied both age and service requirements. A participant is eligible for an early retirement allowance upon termination if the participant has attained age 55 and completed at least 10 years of credited service. Terminated participants with 5 or more years of credited service are eligible for a deferred vested benefit. Deferred vested benefits are payable on an unreduced basis on the first day of the month following the participant's 62nd birthday.
+[p059_c0010] Certain represented employees of the MTA Long Island Rail Road and the MTA Metro-North Railroad continue to make contributions to the Plan for 15 years. Certain represented employees of the MTA Long Island Rail Road and the MTA Metro-North Railroad are eligible for an early retirement allowance upon termination if the participant has attained age 60 and completed at least 5 years of credited service, or has attained age 55 and completed at least 30 years of credited service. The early retirement allowance is reduced one-quarter of 1% per month for each full month that retirement predates age 60 for certain represented employees of the MTA Long Island Rail Road and the MTA Metro-North Railroad.
+[p059_c0011] Effective in 2007, members and certain former members who become (or became) employed by another MTA agency which does not participate in the Plan continue to accrue service credit based on such other employment. Upon retirement, the member's vested retirement benefit from the Plan will be calculated on the final average salary of the subsequent MTA agency, if higher. Moreover, the Plan benefit will be reduced by the benefit, if any, payable by the other plan based on such MTA agency employment. Such member's disability and ordinary death benefit will be determined in the same way.
+[p059_c0012] Retirement benefits are paid from the Plan under the MTA 20-Year Police Retirement Program. A participant is eligible for service retirement at the earlier of completing twenty years of credited Police service or attainment of age 62. Terminated participants with five years of credited police service, who are not eligible for retirement, are eligible for a deferred benefit. Deferred vested benefits are payable on the first of the month following the participant's attainment of age 55.
+[p059_c0013] Retirement benefits paid from the Plan to covered represented MTA Bus employees include service retirement allowances or early retirement allowances. Under the programs covering all represented employees at Baisley Park, Eastchester, La Guardia, Spring Creek, and Yonkers Depots and the represented employees at College Point Depot, JFK, Far Rockaway a participant is eligible for a service retirement allowance upon termination if the participant has attained age sixty-five and completed at least five years of credited service or if the participant has attained age 57 and completed at least 20 years of credited service. A participant hired prior to June 2009 from Baisley Park, College Point, and La Guardia Depots is eligible for an early retirement allowance if the participant has attained age 55 and completed 20 years of credited service. Terminated participants with five or more years of credited service who are not eligible to receive a service retirement allowance or early retirement allowance are eligible for a deferred vested benefit. Deferred vested benefits are payable on an unreduced basis on or after the participant attains age 65.
+[p059_c0014] _Master Page # 59 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 60
+
+### [p060_c0001] Metropolitan Transportation Authority
+### [p060_c0002] DRAFT
+### [p060_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p060_c0004] At Baisley Park, Far Rockaway, JFK, La Guardia and Spring Creek Depots, a participant who is a non-represented employee is eligible for an early retirement allowance upon termination if the participant has attained age 55 and completed 15 years of service. Terminated participants with five or more years of credited service who are not eligible to receive a service retirement allowance or early retirement allowance are eligible for a deferred vested benefit. Deferred vested benefits are payable on an unreduced basis on or after the participant attains age 62.
+[p060_c0005] The MTA Bus retirement programs covering represented and non-represented employees at Eastchester and Yonkers and covering the represented employees at Baisley Park, College Point, Far Rockaway, JFK, La Guardia and Spring Creek are fixed dollar plans, i.e., the benefits are a product of credited service and a specific dollar amount.
+[p060_c0006] The retirement benefits for certain non-represented employees at Baisley Park, Far Rockaway, JFK, La Guardia and Spring Creek are based on final average salary. Certain participants may elect to receive the retirement benefit as a single life annuity or in the form of an unreduced 75% joint and survivor benefit.
+[p060_c0007] Pre-1988 MTA Long Island Rail Road participants are eligible for a service retirement allowance upon termination if the participants has either: (a) attained age sixty-five and completed at least five years of credited service, or if an employee on January 1, 1988 completed at least 10 years of credited service, or (b) attained age fifty and has completed at least 20 years of credited service. Terminated participants who were not employees on January 1, 1988 with five or more years of credited service are eligible for a deferred vested benefit. Pension benefits payable to age 65, where eligible, are calculated as 2% of the employee's applicable final average earnings for each year of qualifying service up to 25 years plus 1.5% of applicable final average earning of each year of qualifying service in excess of 25 years. For pension benefits payable at and after age 65 regardless of whether benefits commenced before or after the employee attained age 65, benefits are calculated in the same manner as pension benefits payable prior to age 65 except that the amount so determined is reduced by a percentage of the employee's annuity (not including supplemental annuity) value at age 65 under the Federal Railroad Retirement Act. The reduction of pension benefits for amounts payable under the Federal Railroad Retirement Act is 50%.
+[p060_c0008] Death and Disability Benefits — In addition to service retirement benefits, participants of the Plan are eligible to receive disability retirement allowances and death benefits. Participants who become disabled may be eligible to receive disability retirement allowances after 10 years of covered MTA Bus service; 10 years of credited service for covered MTA Metro-North Railroad and MTA Long Island Rail Road management and represented employees, covered MTA Staten Island Railway employees and covered MTA police participants.
+[p060_c0009] The disability retirement allowance for covered MTA Metro-North Railroad and MTA Long Island Rail Road management and represented covered MTA Staten Island Railway employees is calculated based on the participant's credited service and final average salary ("FAS") but not less than \frac{1}{2} of FAS. Under the MTA 20 Year Police Retirement Program, a disabled participant may be eligible for one of three forms of disability retirement: (a) ordinary disability which is payable if a participant has ten years of credited Police service and is calculated based on the participant's credited Police service and FAS but not less than \frac{1}{2} of FAS; (b) performance of duty, which is payable if a participant is disabled in the performance of duty and is \frac{1}{2} of FAS, and (c) accidental disability, which is payable if a participant is disabled as the result of an on-the-job accidental injury and is \frac{1}{3} of FAS subject to an offset of Workers' Compensation benefits. Pursuant to the MTA Bus programs, the disability benefit is the same as the service retirement benefit.
+[p060_c0010] Pre -1988 MTA Long Island Rail Road participants who become disabled after accumulating 10 years of credited service and who meet the requirements as described in the Plan may be eligible to receive a disability benefit. Disability pension benefits are based on the participant's qualified service and a percentage of final average compensation reduced by the full amount of the disability benefit under the Federal Railroad Retirement Act. Survivorship benefits for pre-1988 MTA Long Island Rail Road participants are paid to the spouse when a survivorship option is elected or when an active participant has not divested their spouse of benefits.
+[p060_c0011] The survivorship benefit is payable at the time of death or when the vested participant would have attained an eligible age. The amount payable is in the form of an annuity. A lump sum death benefit no greater than $5,000 (whole dollars) is payable upon death on behalf of a non-vested participant or vested participant whose pension rights were waived.
+[p060_c0012] Death benefits are paid to the participant's beneficiary in the event of the death of a covered MTA Metro-North Railroad, post-1987 MTA Long Island Rail Road or MTA Staten Island Railway employee after completion of one year of credited service. The death benefit payable is calculated based on a multiple of a participant's salary based on years of credited service up to three years and is reduced beginning at age 61. There is also a post-retirement death benefit which, in the 1st year of retirement, is equal to 50% of the pre-retirement death benefit amount, whichever is greater, 25% the 2nd year and 10% of the death benefit payable at age 60 for the 3rd and later years. For the Police 20 Year Retirement Program, the death benefit is payable after ninety days of credited MTA Police service, and is equal to three times their salary. For non-Police groups, this death benefit is payable in a lump sum distribution while for Police, the member or the beneficiary can elect to have it paid as an annuity. The MTA Police do not have a post retirement benefit.
+[p060_c0013] _Master Page # 60 of 175 - Audit 6 Committee Meeting 1/29/2024_
+
+## Page 61
+
+### [p061_c0001] Metropolitan Transportation Authority
+### [p061_c0002] DRAFT
+### [p061_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p061_c0004] In the Metropolitan Suburban Bus Authority (“MSBA”) Employees’ Pension Plan, there are special spousal benefits payable upon the death of a participant who is eligible for an early retirement benefit, or a normal service retirement benefit, or who is a vested participant or vested former participant. To be eligible, the spouse and participant must have been married at least one year at the time of death. Where the participant was eligible for an early service retirement benefit or was a vested participant or former participant, the benefit is a pension equal to 40% of the benefit payable to the participant as if the participant retired on the date of death. Where the participant was eligible for a normal service retirement benefit, the eligible spouse can elect either the benefit payable as a pension, as described in the prior sentence, or a lump sum payment based on an actuarially determined pension reserve. If there is no eligible spouse for this pension reserve benefit, a benefit is payable to the participant’s beneficiary or estate.
+[p061_c0005] Moreover, an accidental death benefit is payable for the death of a participant who is a covered MTA Metro-North Railroad or post-1987 MTA Long Island Rail Road employee, a covered MTA Staten Island Railway employee or a covered MTA Police member and dies as the result of an on-the-job accidental injury. This death benefit is paid as a pension equal to 50% of the participant’s salary and is payable to the spouse for life, or, if none, to children until age eighteen (or twenty-three, if a student), or if none, to a dependent parent.
+[p061_c0006] For MTA Bus employees, there is varied death benefit coverage under the Plan. For all represented and non-represented MTA Bus employees at Eastchester and Yonkers Depots and represented MTA Bus employees at Baisley Park, College Point, Far Rockaway, JFK, La Guardia and Spring Creek Depots, if a participant dies prior to being eligible for a retirement benefit, the participant’s beneficiary may elect to receive a refund of the participant’s contributions plus interest.
+[p061_c0007] Moreover, the spouses of the above employees who are vested are entitled to a presumed retirement survivor annuity which is based on a 50% Joint and Survivor annuity. The date as of which such annuity is determined and on which it commences varies among the different programs depending on whether the participants are eligible for retirement and for payment of retirement benefits.
+[p061_c0008] In addition, the spouse of a non-represented MTA Bus employee at Spring Creek, JFK, La Guardia, Baisley Park and Far Rockaway, if such employee is age 55 and has 15 years of service and is a terminated member with a vested benefit which is not yet payable, may elect the presumed retirement survivor annuity or 1/2 the participant’s accrued benefit paid monthly and terminating on the 60th payment or the spouse’s death. The spouse of a non-represented MTA Bus employee at Yonkers Depot may also receive a pre-retirement survivor annuity from the supplemental plan. If there is no such spouse, the actuarial equivalent of such annuity is payable.
+[p061_c0009] Dependent children of MTA Bus employees are also entitled to an annuity based on the spouse’s pre-retirement survivor annuity (1/2 of the spouse’s annuity is payable to each child, but no more than 100% of the spouse’s annuity is payable). In addition, the dependent children of retirees who were MTA Bus employees at these Depots are entitled to an annuity based on the presumed retirement survivor’s annuity (25% of the spouse’s annuity; but no more than 50% of the spouse’s annuity is payable).
+[p061_c0010] Retirement benefits establishment and changes for represented employees are collectively bargained and must be ratified by the respective union and the MTA Board. For nonrepresented employees, retirement benefits establishment and changes are presented to the MTA Board and must be accepted and approved by the MTA Board.
+### [p061_c0011] 5. NYCERS —
+[p061_c0012] NYCERS provides three main types of retirement benefits: Service Retirements, Ordinary Disability Retirements (non-job-related disabilities) and Accident Disability Retirements (job-related disabilities) to participants generally based on salary, length of service, and member Tiers.
+[p061_c0013] The Service Retirement benefits provided to Tier 1 participants fall into four categories according to the level of benefits provided and the years of service required. Three of the four categories provide annual benefits of 50% to 55% of final salary after 20 or 25 years of service, with additional benefits equal to a specified percentage per year of service (currently 1.2% to 1.7%) of final salary. The fourth category has no minimum service requirement and instead provides an annual benefit for each year of service equal to a specified percentage (currently 0.7% to 1.53%) of final salary.
+[p061_c0014] Tier 2 participants have provisions similar to Tier 1, except that the eligibility for retirement and the salary base for benefits are different and there is a limitation on the maximum benefit.
+[p061_c0015] Tier 3 participants were later mandated into Tier 4, but could retain their Tier 3 rights. The benefits for Tier 3 participants are reduced by one half of the primary Social Security benefit attributable to service, and provides for an automatic annual cost-of- living escalator in pension benefits of not more than 3.0%.
+[p061_c0016] Tier 4 participants upon satisfying applicable eligibility requirements may be mandated or elected, as applicable, into the Basic 62/5 Retirement Plan, the 57/5 Plan, the 55/25 Plan, the Transit 55/25 Plan, the MTA Triborough Bridge and
+[p061_c0017] _Master Page # 61 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 62
+
+### [p062_c0001] Metropolitan Transportation Authority
+### [p062_c0002] DRAFT
+### [p062_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p062_c0004] Tunnel Authority 50/20 Plan, and the Automotive Member 25/50 Plan. These plans provide annual benefits of 40% to 50% of final salary after 20 or 25 years of service, with additional benefits equal to a specified percentage per year of service (currently 1.5% to 2%) of final salary.
+[p062_c0005] Chapter 18 of the Laws of 2012 created Tier 6. These changes increase the retirement age to 63, require member contributions for all years of service, institute progressive member contributions, and lengthen the final average salary period from 3 to 5 years.
+[p062_c0006] NYCERS also provides automatic Cost-of-Living Adjustments (“COLA”) for certain retirees and beneficiaries, death benefits; and certain retirees also receive supplemental benefits. Subject to certain conditions, members generally become fully vested as to benefits upon the completion of 5 years of service.
+### [p062_c0007] 6. NYSLERS —
+[p062_c0008] NYSLERS provides retirement benefits as well as death and disability benefits. Members who joined prior to January 1, 2010 need 5 years of service to be fully vested. Members who joined on or after January 1, 2010 need 10 years of service to be fully vested. Subsequent to March 31, 2022, legislation was passed that reduced the number of years of service credit from ten years to five years. Therefore, all Members are vested when they reach five years of service credit.
+### [p062_c0009] Tiers 1 and 2 —
+[p062_c0010] Eligibility: Tier 1 members generally must be at least age 55 to be eligible for a retirement benefit. There is no minimum service requirement for Tier 1 members. Generally, Tier 2 members must have 5 years of service and be at least age 55 to be eligible for a retirement benefit. The age at which full benefits may be collected for Tier 1 is 55, and the full benefit age for Tier 2 is 62.
+[p062_c0011] Benefit Calculation: Generally, the benefit is 1.67% of final average salary for each year of service if the member retires with less than 20 years. If the member retires with 20 or more years of service, the benefit is 2 percent of final average salary for each year of service. Tier 2 members with five or more years of service can retire as early as age 55 with reduced benefits. Tier 2 members age 55 or older with 30 or more years of service can retire with no reduction in benefits. As a result of Article 19 of the RSSL, Tier 1 and Tier 2 members who worked continuously from April 1, 1999 through October 1, 2000 received an additional month of service credit for each year of credited service they have at retirement, up to a maximum of 24 additional months. Final average salary is the average of the wages earned in the three highest consecutive years of employment. For Tier 1 members who joined on or after June 17, 1971, each year’s compensation used in the final average salary calculation is limited to no more than 20 percent greater than the previous year. For Tier 2 members, each year of final average salary is limited to no more than 20 percent greater than the average of the previous two years.
+### [p062_c0012] Tiers 3, 4, and 5 —
+[p062_c0013] Eligibility: Most Tier 3 and 4 members must have 5 years of service and be at least age 55 to be eligible for a retirement benefit. Tier 5 members, must have 10 years of service and be at least age 55 to be eligible to collect a retirement benefit. The full benefit age for Tiers 3, 4 and 5 is 62.
+[p062_c0014] Benefit Calculation: Generally, the benefit is 1.67% of final average salary for each year of service if the member retires with less than 20 years. If a member retires with between 20 and 30 years of service, the benefit is 2 percent of final average salary for each year of service. If a member retires with more than 30 years of service, an additional benefit of 1.5% of final average salary is applied for each year of service over 30 years. Tier 3 and 4 members with five or more years of service and Tier 5 members with 10 or more years of service can retire as early as age 55 with reduced benefits. Tier 3 and 4 members age 55 or older with 30 or more years of service can retire with no reduction in benefits. Final average salary is the average of the wages earned in the three highest consecutive years of employment. For Tier 3, 4 and 5 members, each year’s compensation used in the final average salary calculation is limited to no more than 10% greater than the average of the previous two years.
+### [p062_c0015] Tier 6 —
+[p062_c0016] Eligibility: Generally, Tier 6 members must have 10 years of service and be at least age 55 to be eligible to collect a retirement benefit. The full benefit age for Tier 6 is 63.
+[p062_c0017] Benefit Calculation: Generally, the benefit is 1.67% of final average salary for each year of service if the member retires with less than 20 years. If a member retires with 20 years of service, the benefit is 1.75% of final average salary for each year of service. If a member retires with more than 20 years of service, an additional benefit of 2% of final average salary is applied for each year of service over 20 years. Tier 6 members with 10 or more years of service can retire as early as age 55 with reduced benefits. Final average salary is the average of the wages earned in the five highest consecutive years of employment. For Tier 6 members, each year’s compensation used in the final average salary calculation is limited to no more than 10% greater than the average of the previous four years.
+[p062_c0018] _Master Page # 62 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 63
+
+### [p063_c0001] Metropolitan Transportation Authority
+### [p063_c0002] DRAFT
+### [p063_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p063_c0004] Disability Benefits — Generally, disability retirement benefits are available to members unable to perform their job duties because of permanent physical or mental incapacity. There are three general types of disability benefits: ordinary, performance of duty, and accidental disability benefits. Eligibility, benefit amounts, and other rules such as any offsets of other benefits depend on a member's tier, years of service, and plan. Ordinary disability benefits, usually one-third of salary, are provided to eligible members after ten years of service; in some cases, they are provided after five years of service. For all eligible Tier 1 and Tier 2 members, the accidental disability benefit is a pension of 75 percent of final average salary, with an offset for any Workers' Compensation benefits received. The benefit for eligible Tier 3, 4, 5 and 6 members is the ordinary disability benefit with the years-of-service eligibility requirement dropped.
+[p063_c0005] Ordinary Death Benefits — Death benefits are payable upon the death, before retirement, of a member who meets eligibility requirements as set forth by law. The first $50,000 (whole dollars) of an ordinary death benefit is paid in the form of group term life insurance. The benefit is generally three times the member's annual salary. For most members, there is also a reduced post-retirement ordinary death benefit available.
+[p063_c0006] Post-Retirement Benefit Increases — A cost-of-living adjustment is provided annually to: (i) all retirees who have attained age 62 and have been retired for five years; (ii) all retirees who have attained age 55 and have been retired for ten years; (iii) all disability retirees, regardless of age, who have been retired for five years; (iv) recipients of an accidental death benefit, regardless of age, who have been receiving such benefit for five years and (v) the spouse of a deceased retiree receiving a lifetime benefit under an option elected by the retiree at retirement. An eligible spouse is entitled to one-half the cost-of-living adjustment amount that would have been paid to the retiree when the retiree would have met the eligibility criteria. This cost-of-living adjustment is a percentage of the annual retirement benefit of the eligible member as computed on a base benefit amount not to exceed $18,000 (whole dollars) of the annual retirement benefit. The cost-of-living percentage shall be 50 percent of the annual Consumer Price Index as published by the U.S. Bureau of Labor, but cannot be less than 1 percent or exceed 3 percent.
+### [p063_c0007] Membership
+[p063_c0008] As of January 1, 2021 and January 1, 2020, the dates of the most recent actuarial valuations, membership data for the following pension plans are as follows:
+### [p063_c0009] Membership at:
+[p063_c0010]
+
+```text
+January 1, 2021 MNR Cash Balance Plan Additional Plan MaBSTOA Plan MTA Defined Benefit Plan TOTAL Active Plan Members - 23 8,533 18,556 27,112 Retirees and beneficiaries receiving benefits 23 5,298 6,020 11,788 23,129 Vested formerly active members not yet receiving benefits 5 19 1,125 1,541 2,690 Total 28 5,340 15,678 31,885 52,931
+```
+### [p063_c0011] Membership at:
+[p063_c0012]
+
+```text
+January 1, 2020 MNR Cash Balance Plan Additional Plan MaBSTOA Plan MTA Defined Benefit Plan TOTAL Active Plan Members 2 34 8,795 18,960 27,791 Retirees and beneficiaries receiving benefits 24 5,483 5,944 11,468 22,919 Vested formerly active members not yet receiving benefits 15 19 1,040 1,519 2,593 Total 41 5,536 15,779 31,947 53,303
+```
+### [p063_c0013] Contributions and Funding Policy
+### [p063_c0014] 1. Additional Plan —
+[p063_c0015] Employer contributions are actuarially determined on an annual basis and are recognized when due. The Additional Plan is a defined benefit plan administered by the Board of Pension Managers and is a governmental plan and accordingly, is not subject to the funding and other requirements of ERISA.
+[p063_c0016] Upon termination of employment before retirement, vested participants who have been required to contribute must choose to: (1) receive a refund of their own contributions, including accumulated interest at rates established by the MTA Long Island Railroad's Board of Managers of Pensions (1.5% in 2021 and 2020), or (2) leave their contributions in the Additional Plan until they retire and become entitled to the pension benefits. Non-vested participants who have been required to contribute will receive a refund of their own contributions, including accumulated interest at rates established by the MTA Long Island Railroad's Board of Managers of Pensions (1.5% in 2021 and 2020).
+[p063_c0017] _49 Master Page # 63 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 64
+
+### [p064_c0001] Metropolitan Transportation Authority
+### [p064_c0002] DRAFT
+### [p064_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p064_c0004] Funding for the Additional Plan by the MTA Long Island Railroad is provided by MTA. Certain funding by MTA is made to the MTA Long Island Railroad on a discretionary basis. The continuance of the MTA Long Island Railroad's funding for the Additional Plan has been, and will continue to be, dependent upon the receipt of adequate funds.
+### [p064_c0005] 2. MaBSTOA Plan —
+[p064_c0006] The contribution requirements of MaBSTOA Plan members are established and may be amended only by the MaBSTOA Board in accordance with Article 10.01 of the MaBSTOA Plan. MaBSTOA's funding policy for periodic employer contributions is to provide for actuarially determined amounts that are designed to accumulate sufficient assets to pay benefits when due. It is MaBSTOA's policy to fund, at a minimum, the current year's normal pension cost plus amortization of the unfunded actuarial accrued liability.
+[p064_c0007] The MaBSTOA Pension Plan includes the following plans, including the 2000 amendments which are all under the same terms and conditions as NYCERS:
+- [p064_c0008] i. Tier 1 and 2 - Basic Plans; ii. Tier 3 and 4 - 55 and 25 Plan; iii. Tier 3 and 4 - Regular 62 and 5 Plan; iv. Tier 4 - 57 and 5 Plan v. Tier 6 - 55 and 25 Special Plan vi. Tier 6 - Basic 63 and 10 Plan
+[p064_c0009] For employees, the MaBSTOA Plan has both contributory and noncontributory requirements depending on the date of entry into service. Employees entering qualifying service on or before July 26, 1976, are non-contributing (Tiers 1 and 2). Certain employees entering qualifying service on or after July 27, 1976, are required to contribute 3% of their salary (Tiers 3 and 4).
+[p064_c0010] In March 2012, pursuant to Chapter 18 of the Laws of 2012, individuals joining NYCERS or the MaBSTOA Pension Plan on or after April 1, 2012 are subject to the provisions of Tier 6. The highlights of Tier 6 include:
+- [p064_c0011] ○ Increases in employee contribution rates. The rate varies depending on salary, ranging from 3% to 6% of gross wages. Contributions are made until retirement or separation from service. ○ The retirement age increases to 63 and includes early retirement penalties, which reduce pension allowances by 6.5 percent for each year of retirement prior to age 63. ○ Vesting after 10 years of credited service; increased from 5 years of credited service under Tier 3 and Tier 4. ○ Adjustments of the Pension Multiplier for calculating pension benefits (excluding Transit Operating Employees): the multiplier will be 1.75% for the first 20 years of service, and 2% starting in the 21st year; for an employee who works 30 years, their pension will be 55% of Final Average Salary under Tier 4, instead of 60% percent under Tier 4. ○ Adjustments to the Final Average Salary Calculation; the computation changed from an average of the final 3 years to an average of the final 5 years. Pensionable overtime will be capped at $15,000 dollars per year plus an inflation factor. ○ Pension buyback in Tier 6 will be at a rate of 6% of the wages earned during the period of buyback, plus 5% compounded annually from the date of service until date of payment.
+[p064_c0012] Pursuant to Section 7.03 of the MaBSTOA Plan, active plan members are permitted to borrow up to 75% of their contributions with interest. Their total contributions and interest remain intact and interest continues to accrue on the full balance. The participant's accumulated contribution account is used as collateral against the loan.
+### [p064_c0013] 3. MNR Cash Balance Plan —
+[p064_c0014] Funding for the MNR Cash Balance Plan is provided by MTA Metro-North Railroad, a public benefit corporation that receives funding for its operations and capital needs from the MTA and the Connecticut Department of Transportation ("CDOT"). Certain funding by MTA is made to the MTA Metro-North Railroad on a discretionary basis. The continuance of funding for the MNR Cash Balance Plan has been, and will continue to be, dependent upon the receipt of adequate funds.
+[p064_c0015] MTA Metro-North Railroad's funding policy with respect to the MNR Cash Balance Plan was to contribute the full
+[p064_c0016] _Master Page # 64 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 65
+
+### [p065_c0001] Metropolitan Transportation Authority
+### [p065_c0002] DRAFT
+### [p065_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p065_c0004] amount of the pension benefit obligation (“PBO”) of approximately $2.977 to the trust fund in 1989. As participants retire, the Trustee has made distributions from the MNR Cash Balance Plan. MTA Metro-North Railroad anticipated that no further contributions would be made to the MNR Cash Balance Plan. However, due to changes in actuarial assumptions and market performance, additional contributions were made to the MNR Cash Balance Plan in several subsequent years. Per the January 1, 2020 valuation, there is no unfunded accrued liability and the actuarially determined contribution is $0. Per the January 1, 2021 valuation, there is no unfunded accrued liability and the actuarially determined contribution is $0.
+### [p065_c0005] 4. MTA Defined Benefit Plan —
+[p065_c0006] Employer contributions are actuarially determined on an annual basis. Amounts recognized as receivables for contributions include only those due pursuant to legal requirements. Employee contributions to the MTA Defined Benefit Plan are recognized in the period in which the contributions are due. There are no contributions required under the Metropolitan Suburban Bus Authority Employee’s Pension Plan.
+[p065_c0007] The following summarizes the employee contributions made to the MTA Defined Benefit Plan:
+[p065_c0008] Effective January 1, 1994, covered MTA Metro-North Railroad and MTA Long Island Railroad non-represented employees are required to contribute to the MTA Plan to the extent that their Railroad Retirement Tier II employee contribution is less than the pre-tax cost of the 3% employee contributions. Effective October 1, 2000, employee contributions, if any, were eliminated after ten years of making contributions to the MTA Plan. MTA Metro-North Railroad employees may purchase prior service from January 1, 1983 through December 31, 1993 and MTA Long Island Railroad employees may purchase prior service from January 1, 1988 through December 31, 1993 by paying the contributions that would have been required of that employee for the years in question, calculated as described in the first sentence, had the MTA Plan been in effect for those years.
+[p065_c0009] Police Officers who become participants of the MTA Police Program prior to January 9, 2010 contribute to that program at various rates. Police Officers who become participants on or after January 9, 2010, but before April 1, 2012 contribute 3% up to the completion of 30 years of service, the maximum amount of service credit allowed. Police Officers who become participants on or after April 1, 2012 contribute 3%, with additional new rates starting April 2013, ranging from 3.5%, 4.5%, 5.75%, to 6%, depending on salary level, for their remaining years of service.
+[p065_c0010] Covered MTA Metro-North Railroad represented employees and MTA Long Island Railroad represented employees who first became eligible to be MTA Plan participants prior to January 30, 2008 contribute 3% of salary. MTA Staten Island Railway employees contribute 3% of salary except for represented employees hired on or after June 1, 2010 who contribute 4%. MTA Long Island Railroad represented employees who became participants after January 30, 2008 contribute 4% of salary. For the MTA Staten Island Railway employees, contributions are not required after the completion of ten years of credited service. MTA Long Island Railroad represented employees are required to make the employee contributions for ten years, or fifteen years if hired after certain dates in 2014 as per collective bargaining agreements. Certain Metro-North represented employees, depending on their collective bargaining agreements, are required to make the employee contributions until January 1, 2014, January 1, 2017, June 30, 2017, or the completion of required years of credited service as per the relevant collective bargaining agreements.
+[p065_c0011] Covered MTA Bus represented employees and certain non-represented employees are required to contribute a fixed dollar amount, which varies, by depot. Currently, non-represented employees at certain Depots, contribute $21.50 (whole dollars) per week. Non-represented employees at Eastchester hired prior to 2007 contribute $25 (whole dollars) per week. Represented employees at Baisley Park, College Point, Eastchester, Far Rockaway, JFK, LaGuardia and Yonkers Depots contribute $29.06 (whole dollars) per week; Spring Creek represented employees contribute $32.00 (whole dollars) per week. Certain limited number of represented employees promoted prior to the resolution of a bargaining impasse continue to participate in the MTA Defined Benefit Plan that was in effect before their promotion. Certain MTA Bus non-represented employees who are formerly employed by the private bus companies (Jamaica, Green, Triboro and Command) at Baisley Park, Far Rockaway, JFK, LaGuardia and Spring Creek Depots who are in the pension program covering only such employees make no contributions to the program. (Note: the dollar figures in this paragraph are in dollars, not in millions of dollars).
+### [p065_c0012] 5. NYCERS —
+[p065_c0013] NYCERS funding policy is to contribute statutorily-required contributions (“Statutory Contributions”), determined by the Chief Actuary for the New York City Retirement Systems, in accordance with State statutes and City laws, and are generally funded by employers within the appropriate Fiscal Year. The Statutory Contributions are determined under the One-Year Lag Methodology (“OYLM”). Under OYLM, the actuarial valuation date is used for calculating the Employer Contributions for the second following Fiscal Year. Statutory Contributions are determined annually to be an amount that, together with member contributions and investment income, provides for NYCERS’ assets to be sufficient to pay benefits when due.
+[p065_c0014] _Master Page # 65 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 66
+
+### [p066_c0001] Metropolitan Transportation Authority
+### [p066_c0002] DRAFT
+### [p066_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p066_c0004] Member contributions are established by law. NYCERS has both contributory and noncontributory requirements, with retirement age varying from 55 to 70 depending upon when an employee last entered qualifying service.
+[p066_c0005] In general, Tier 1 and Tier 2 member contribution rates are dependent upon the employee's age at membership and retirement plan election. In general, Tier 3 and Tier 4 members make basic contributions of 3.0% of salary, regardless of age at membership. Effective October 1, 2000, in accordance with Chapter 126 of the Laws of 2000, these members, except for certain MTA New York City Transit Authority employees enrolled in the Transit 20-Year Plan, are not required to make basic contributions after the 10th anniversary of their membership date or completion of ten years of credited service, whichever is earlier. In addition, members who meet certain eligibility requirements will receive one month's additional service credit for each completed year of service up to a maximum of two additional years of service credit. Effective December 2000, certain MTA New York City Transit Authority Tier 3 and Tier 4 members make basic member contributions of 2.0% of salary, in accordance with Chapter 10 of the Laws of 2000. Certain Tier 2, Tier 3 and Tier 4 members who are participants in special retirement plans are required to make additional member contributions of 1.85%, in addition to their base membership contribution. Tier 6 members are mandated to contribute between 3.0% and 6.0% of salary, depending on salary level, until they separate from City service or until they retire.
+[p066_c0006] NYCERS established a "special program" for employees hired on or after July 26, 1976. A plan for employees, who have worked 20 years, and reached age 50, is provided to Bridge and Tunnel Officers, Sergeants and Lieutenants and Maintainers. Also, an age 57 retirement plan is available for all other such MTA Bridges and Tunnels employees. Both these plans required increased employee contributions.
+[p066_c0007] Certain retirees also receive supplemental benefits from MTA Bridges and Tunnels. Certain participants are permitted to borrow up to 75% of their own contributions including accumulated interest. These loans are accounted for as reductions in such participants' contribution accounts. Upon termination of employment before retirement, certain members are entitled to refunds of their own contributions, including accumulated interest, less any outstanding loan balances.
+[p066_c0008] MTA New York City Transit and MTA Bridges and Tunnels are required to contribute at an actuarially determined rate. The contribution requirements of plans members, MTA New York City Transit and MTA Bridges and Tunnels are established and amended by law.
+### [p066_c0009] 6. NYSLERS —
+[p066_c0010] Employer Contributions - Under the authority of the RSSL, the Comptroller annually certifies the actuarially determined rates expressly used in computing the employers' contributions based on salaries paid during the NYSLERS fiscal year ending June 30.
+[p066_c0011] Member Contributions - NYSLERS is noncontributory except for employers who joined the plan after July 27, 1976. Generally, Tier 3, 4, and 5 members must contribute 3% of their salary to NYSLERS. As a result of Article 19 of the RSSL, eligible Tier 3 and 4 employees, with a membership date on or after July 27, 1976, who have ten or more years of membership or credited service with NYSLERS, are not required to contribute. Members cannot be required to begin making contributions or to make increased contributions beyond what was required when membership began. For Tier 6 members, the contribution rate varies from 3% to 6% depending on salary. Generally, Tier 5 and 6 members are required to contribute for all years of service.
+[p066_c0012] MTAHQ, MTA Construction and Development and MTA Long Island Bus are required to contribute at an actuarially determined rate.
+[p066_c0013] A summary of the aggregate actual contributions made to each pension plan for the years ended December 31, 2022 and 2021 are as follows:
+[p066_c0014]
+
+```text
+Year-ended December 31, 2022 2021 Actual Employer Contributions Actual Employer Contributions ($ in millions) Additional Plan $ 70.8 $ 70.6 MaBSTOA Plan 158.6 156.2 MNR Cash Balance Plan * * MTA Defined Benefit Plan 404.2 396.1 NYCERS 797.3 842.2 NYSLERS 11.2 16.3 Total $ 1,442.1 $ 1,481.4
+```
+[p066_c0015] _*MNR Cash Balance Plan's actual employer contribution for the years ended December 31, 2022 and 2021 was $0 and $0, respectively._
+[p066_c0016] _Master Page # 66 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 67
+
+### [p067_c0001] Metropolitan Transportation Authority
+### [p067_c0002] DRAFT
+### [p067_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p067_c0004] Net Pension Liability
+[p067_c0005] The MTA's net pension liabilities for each of the pension plans reported at December 31, 2022 and 2021 were measured as of the fiscal year-end dates for each respective pension plan. The total pension liabilities used to calculate those net pension liabilities were determined by actuarial valuations as of each pension plan's valuation date, and rolled forward to the respective year-ends for each pension plan. Information about the fiduciary net position of each qualified pension plan's fiduciary net position has been determined on the same basis as reported by each respective qualified pension plan. For this purpose, benefits and refunds are recognized when due and payable in accordance with the terms of the respective qualified pension plan, and investments are reported at fair value. The following table provides the measurement and valuation dates used by each pension plan to calculate the MTA's aggregate net pension liability.
+[p067_c0006]
+
+```text
+Year ended December 31, 2022 2021 Plan Measurement Date Plan Valuation Date Plan Measurement Date Plan Valuation Date Pension Plan Additional Plan December 31, 2021 January 1, 2021 December 31, 2020 January 1, 2020 MaBSTOA Plan December 31, 2021 January 1, 2021 December 31, 2020 January 1, 2020 MNR Cash Balance Plan December 31, 2021 January 1, 2021 December 31, 2020 January 1, 2020 MTA Defined Benefit Plan December 31, 2021 January 1, 2021 December 31, 2020 January 1, 2020 NYCERS June 30, 2022 June 30, 2021 June 30, 2021 June 30, 2020 NYSLERS March 31, 2022 April 1, 2021 March 31, 2021 April 1, 2020
+```
+### [p067_c0007] Pension Plan Fiduciary Net Position
+[p067_c0008] Detailed information about the fiduciary net position of the Additional Plan, MaBSTOA Plan, MNR Cash Balance Plan, MTA Defined Benefit Plan, NYCERS plan and the NYSLERS plan is available in the separately issued pension plan financial reports for each respective plan.
+[p067_c0009] _Master Page # 67 of 175 - Audit 53 Committee Meeting 1/29/2024_
+
+## Page 68
+
+### [p068_c0001] DRAFT
+### [p068_c0002] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p068_c0003] Actuarial Assumptions
+[p068_c0004] The total pension liabilities in each pension plan's actuarial valuation dates were determined using the following actuarial assumptions for each pension plan, applied to all periods included in the measurement date:
+[p068_c0005]
+
+```text
+Valuation Date: Additional Plan MaBSTOA Plan MNR Cash Balance Plan January 1, 2021 January 1, 2020 January 1, 2021 January 1, 2020 January 1, 2021 January 1, 2021 January 1, 2020 Investment Rate of Return 6.50%, net of investment expenses. 6.50% per annum, net of investment expenses. 6.50%, net of investment expenses. 6.50% per annum, net of investment expenses. 6.50% per annum, net of investment expenses. 3.00%, net of investment expenses. 3.00% per annum, net of investment expenses. Salary Increases 3.00% 3.00% Reflecting general wage, merit and promotion increases for operating and non-operating members. Varies by years of employment. Reflecting general wage, merit and promotion increases of 3.5% to 4.0% for operating and non-operating employees per year. Larger increases are assumed in the first 5 years of a member's career. Not applicable Not applicable Not applicable Inflation 2.25%; 3.25% for Railroad Retirement Wage Base. 2.25%; 3.25% for Railroad Retirement Wage Base. 2.25% 2.25% 2.25% 2.25% 2.25% Cost of Living Adjustments Not applicable Not applicable 60% of inflation assumption or 1.35%, if applicable. 1.35% per annum. Not applicable Not applicable Not applicable Valuation Date: MTA Defined Benefit Plan NYCERS NYSLERS January 1, 2021 January 1, 2020 June 30, 2021 June 30, 2020 April 1, 2021 April 1, 2020 Investment Rate of Return 6.50%, net of investment expenses 6.50% per annum, net of investment expenses. 7.0% per annum, net of Investment Expenses 7.00% per annum, net of expenses. 5.90% per annum, including inflation, net of investment expenses. 5.90% per annum, including inflation, net of investment expenses. Salary Increases Varies by years of employment, and employee group; 2.75% GWI increases for TWU Local 100 MTA Bus hourly Varies by years of employment, and employee group; 2.75% General Wage Increases for TWU Local 100 MTA Bus hourly employees. In general, Merit and Promotion Increases plus assumed General Wage Increase of 3.0% per year. In general, merit and promotion increases plus assumed General Wage increases of 3.0% per year. 4.4% in ERS, 6.2 % in PERS 4.4% in ERS, 6.2 % in PERS Inflation 2.25%; 3.25% for Railroad Retirement Wage Base. 2.25%; 3.25% for Railroad Retirement Wage Base. 2.50% 2.50% 2.70% 2.70% Cost of Living Adjustments 60% of inflation assumption or 1.35%, if applicable. 60% of inflation assumption or 1.35%, if applicable. AutoCOLA – 1.5% per year Escalation – 2.5% per year 1.5% per annum for Tiers 1, 2, 4 and certain Tier 3 and Tier 6 retirees. 2.5% per annum for certain Tier 3 and Tier 6 retirees. 1.40% per annum. 1.40% per annum.
+```
+[p068_c0006] _Master Page # 68 of 175 - Audit Committee Meeting 1/29/2024_
+[p068_c0007] _54_
+
+## Page 69
+
+### [p069_c0001] Metropolitan Transportation Authority
+### [p069_c0002] DRAFT
+### [p069_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p069_c0004] Mortality
+### [p069_c0005] Additional Plan / MaBSTOA Plan/ MNR Cash Balance Plan and MTA Defined Benefit Plan:
+[p069_c0006] The actuarial assumptions used in the January 1, 2021 and 2020 valuations for the MTA plans are based on an experience study covering the period from January 1, 2012 to December 31, 2017, with certain assumptions modified subsequently. The mortality assumption used in the January 1, 2021 and 2020 valuations are based on an experience study for all MTA plans covering the period from January 1, 2011 to December 31, 2015. The pre-retirement and post-retirement healthy annuitant rates are projected on a generational basis using Scale AA, as recommended by the Society of Actuaries Retirement Plans Experience Committee. As generational tables, they reflect mortality improvements both before and after the measurement date.
+[p069_c0007] Pre-retirement: The MTA plans utilized RP-2000 Employee Mortality Table for Males and Females with Blue collar adjustments.
+[p069_c0008] Post-retirement Healthy Lives: Assumption utilized 95% of RP-2000 Healthy Annuitant mortality table for males with Blue Collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females.
+[p069_c0009] Post-retirement Disabled Lives: Assumption utilized in the January 1, 2021 and 2020 valuation was the RP-2014 Disabled Annuitant mortality table for males and females. This assumption was not applicable for the Additional Plan and the MNR Cash Balance Plan.
+### [p069_c0010] NYCERS:
+[p069_c0011] Pursuant to Section 96 of the New York City Charter, an independent actuarial firm conducts studies of the actuarial assumptions used to value liabilities of the NYCERS pension plan every two years. In accordance, with the Administrative Code of the City of New York (“ACNY”), the Board of Trustees of NYCERS are to periodically review and adopt actuarial assumptions as proposed by the Actuary for use in the determination of Employer Contributions, which are also generally used to determine the total pension liability, as applicable.
+[p069_c0012] Mortality tables for service and disability pensioners were developed from experience studies of the NYCERS Plan. The mortality tables for beneficiaries were developed from an experience review.
+[p069_c0013] The actuarial assumptions used in the June 2020 valuation is based on the most recent actuarial experience study and recommendations prepared by Bolton, Inc. for the four-year and ten-year periods ended June 30, 2017. Based, in part, on this report issued in June 2019, the Actuary proposed and the Board of Trustees of NYCERS adopted changes in actuarial assumptions including a change to Mortality Improvement Scale MP-2018 beginning in Fiscal Year 2019. The actuarial assumptions used in the June 2018 valuation was based on the previous study by Gabriel, Roeder, Smith & Company (“GRS”) published in October 2015 for the four-year and ten-year periods ended June 30, 2013. Based, in part, on the GRS Report, the Actuary proposed, and the Boards of Trustees of the NYCERS adopted, new post-retirement mortality tables including the application of Mortality Improvement Scale MP-2015 for use in determining employer contributions beginning in Fiscal Year 2016. Scale MP-2015 replaced Mortality Improvement Scale AA.
+### [p069_c0014] NYSLERS:
+[p069_c0015] The actuarial assumptions used in the April 1, 2021 valuation are based on the results of an actuarial experience study for the period April 1, 2015 – March 31, 2020. Annuitant mortality rates are based on April 1, 2015 – March 31, 2020 System experience with adjustments for mortality improvements based on the Society of Actuaries’ Scale MP-2020. The previous actuarial valuation as of April 1, 2020 used the same assumptions for the measure of total pension liability.
+[p069_c0016] _Master Page # 69 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 70
+
+### [p070_c0001] Metropolitan Transportation Authority
+### [p070_c0002] DRAFT
+### [p070_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p070_c0004] Expected Rate of Return on Investments
+[p070_c0005] The long-term expected rate of return on pension plan investments for each pension plan is presented in the following table.
+[p070_c0006]
+
+```text
+Pension Plan Plan Measurement Date Rate Additional Plan December 31, 2021 6.50% MaBSTOA Plan December 31, 2021 6.50% MNR Cash Balance Plan December 31, 2021 3.00% MTA Defined Benefit Plan December 31, 2021 6.50% NYCERS June 30, 2022 7.00% NYSLERS March 31, 2022 5.90%
+```
+[p070_c0007] For the Additional Plan, MaBSTOA Plan, MNR Cash Balance Plan, MTA Defined Benefit Plan, NYCERS plan and NYSLERS plan, the long-term expected rate of return on investments was determined using a building-block method in which best-estimate ranges of expected future real rates of return (expected returns, net of plan investment expense and inflation) are developed for each major asset class. These ranges are combined to produce the long-term expected rate of return by weighting the expected future real rates of return by the target asset allocation percentage and by adding expected inflation.
+[p070_c0008] The target asset allocation of each of the funds and the expected real rate of returns (“RROR”) for each of the asset classes are summarized in the following tables for each of the pension plans:
+[p070_c0009]
+
+```text
+Asset Class Additional Plan MaBSTOA Plan Target Asset Allocation Long - Term Expected Real Rate of Return Target Asset Allocation Long - Term Expected Real Rate of Return US Core Fixed Income 10.50% 1.39% 10.50% 1.39% US Long Bonds 2.00% 1.16% 2.00% 1.16% US Bank / Leveraged Loans 1.50% 3.49% 1.50% 3.49% US Inflation-Indexed Bonds 2.00% 0.60% 2.00% 0.60% US High Yield Bonds 3.00% 3.92% 3.00% 3.92% Emerging Markets Bonds 2.00% 3.98% 2.00% 3.98% US Large Caps 18.00% 4.94% 18.00% 4.94% US Small Caps 7.00% 6.73% 7.00% 6.73% Foreign Developed Equity 12.00% 6.27% 12.00% 6.27% Emerging Markets Equity 4.50% 8.82% 4.50% 8.82% Emerging Markets Small Cap Equity 1.50% 8.89% 1.50% 8.89% Global REITs 1.00% 5.60% 1.00% 5.60% Private Real Estate Property 4.00% 4.61% 4.00% 4.61% Private Equity 7.00% 10.36% 7.00% 10.36% Private Credit 7.00% 6.93% 7.00% 6.93% Commodities 4.00% 1.99% 4.00% 1.99% Hedge Funds - MultiStrategy 13.00% 3.73% 13.00% 3.73% 100.00% 100.00% Assumed Inflation - Mean 2.30% 2.30% Assumed Inflation - Standard Deviation 1.23% 1.23% Portfolio Nominal Mean Return 7.39% 7.39% Portfolio Standard Deviation 12.15% 12.15% Long Term Expected Rate of Return selected by MTA 6.50% 6.50%
+```
+[p070_c0010] _Master Page # 70 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 71
+
+### [p071_c0001] Metropolitan Transportation Authority
+### [p071_c0002] DRAFT
+### [p071_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p071_c0004]
+
+```text
+Asset Class MTA Defined Benefit Plan MNR Cash Balance Plan Target Asset Allocation Long - Term Expected Real Rate of Return Target Asset Allocation Long - Term Expected Real Rate of Return US Core Fixed Income 10.50% 1.39% 100.00% 1.03% US Long Bonds 2.00% 1.16% - - US Bank / Leveraged Loans 1.50% 3.49% - - US Inflation-Indexed Bonds 2.00% 0.60% - - US High Yield Bonds 3.00% 3.92% - - Emerging Markets Bonds 2.00% 3.98% - - US Large Caps 18.00% 4.94% - - US Small Caps 7.00% 6.73% - - Foreign Developed Equity 12.00% 6.27% - - Emerging Markets Equity 4.50% 8.82% - - Emerging Markets Small Cap Equity 1.50% 8.89% - - Global REITs 1.00% 5.60% - - Private Real Estate Property 4.00% 4.61% - - Private Equity 7.00% 10.36% - - Private Credit 7.00% 6.93% - - Commodities 4.00% 1.99% - - Hedge Funds - MultiStrategy 13.00% 3.73% - - 100.00% 100.00% Assumed Inflation - Mean 2.30% 2.34% Assumed Inflation - Standard Deviation 1.23% 1.23% Portfolio Nominal Mean Return 7.39% 3.37% Portfolio Standard Deviation 12.15% 4.06% Long Term Expected Rate of Return selected by MTA 6.50% 3.00%
+```
+[p071_c0005]
+
+```text
+Asset Class NYCERS NYSLERS Target Asset Allocation Long - Term Expected Real Rate of Return Target Asset Allocation Long - Term Expected Real Rate of Return U.S. Public Market Equities 27.00% 7.00% 32.00% 3.30% International Public Market Equities 0.00% 0.00% 15.00% 5.85% Developed Public Market Equities 12.00% 7.20% 0.00% 0.00% Emerging Public Market Equities 5.00% 9.00% 0.00% 0.00% Fixed Income 30.50% 2.50% 23.00% 0.00% Private Equities 8.00% 11.30% 10.00% 6.50% Alternatives (Real Assets, Hedge Funds) 0.00% 0.00% 3.00% 5.58% Real Estate 7.50% 6.70% 9.00% 5.00% Infrastructure 4.00% 6.00% 0.00% 0.00% Absolute Return Strategies 0.00% 0.00% 0.00% 0.00% Opportunistic Portfolio 6.00% 7.40% 3.00% 4.10% Cash 0.00% 0.00% 1.00% -1.00% Credit 0.00% 0.00% 4.00% 3.78% 100.00% 100.00% Assumed Inflation - Mean 2.50% 2.50% Long Term Expected Rate of Return 7.00% 5.90%
+```
+[p071_c0006] _Master Page # 71 of 175 - Audit/Committee Meeting 1/29/2024_
+
+## Page 72
+
+### [p072_c0001] Metropolitan Transportation Authority
+### [p072_c0002] DRAFT
+### [p072_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p072_c0004] Discount rate
+[p072_c0005] The discount rate used to measure the total pension liability of each pension plan is presented in the following table:
+[p072_c0006]
+
+```text
+Year ended December 31, Pension Plan Discount Rate 2022 2021 Plan Measurement Date Rate Plan Measurement Date Rate Additional Plan December 31, 2021 6.50% December 31, 2020 6.50% MaBSTOA Plan December 31, 2021 6.50% December 31, 2020 6.50% MNR Cash Balance Plan December 31, 2021 3.00% December 31, 2020 3.00% MTA Defined Benefit Plan December 31, 2021 6.50% December 31, 2020 6.50% NYCERS June 30, 2022 7.00% June 30, 2021 7.00% NYSLERS March 31, 2022 5.90% March 31, 2021 5.90%
+```
+[p072_c0007] The projection of cash flows used to determine the discount rate assumed that employee contributions will be made at the rates applicable for each pension plan and that employer contributions will be made at the rates determined by each pension plan's actuary. Based on those assumptions, each pension plan's fiduciary net position was projected to be available to make all projected future benefit payments of current and inactive plan members. Therefore, the long-term expected rate of return on pension plan investments was applied to all periods of projected benefit payments to determine the total pension liability.
+### [p072_c0008] Changes in Net Pension Liability – Additional Plan, MaBSTOA Plan, MNR Cash Balance Plan and the MTA Defined Benefit Plan
+[p072_c0009] Changes in the MTA's net pension liability for the Additional Plan, MaBSTOA Plan, MNR Cash Balance Plan and the MTA Defined Benefit Plan for the year ended December 31, 2022, based on the December 31, 2021 measurement date, and for the year ended December 31, 2021, based on the December 31, 2020 measurement date, were as follows:
+[p072_c0010]
+
+```text
+Additional Plan MaBSTOA Plan Total Pension Liability Plan Fiduciary Net Position Net Pension Liability Total Pension Liability Plan Fiduciary Net Position Net Pension Liability (in thousands) Balance as of December 31, 2020 $ 1,357,323 $ 760,690 $ 596,633 $ 4,246,386 $ 3,306,616 $ 939,770 Changes for fiscal year 2021: Service Cost 260 - 260 93,934 - 93,934 Interest on total pension liability 83,489 - 83,489 274,270 - 274,270 Effect of economic /demographic (gains) or losses 3,729 - 3,729 (19,177) - (19,177) Effect of assumption changes or inputs 26,300 - 26,300 72,032 - 72,032 Benefit payments (148,630) (148,630) - (245,427) (245,427) - Administrative expense - (610) 610 - (264) 264 Member contributions - 73 (73) - 24,935 (24,935) Net investment income - 95,247 (95,247) - 416,287 (416,287) Employer contributions - 70,553 (70,553) - 156,204 (156,204) Balance as of December 31, 2021 $ 1,322,471 $ 777,323 $ 545,148 $ 4,422,018 $ 3,658,351 $ 763,667
+```
+[p072_c0011] _Master Page # 72 of 175 - Audit Committee Meeting 1/29/2024_
+[p072_c0012] _58_
+
+## Page 73
+
+### [p073_c0001] Metropolitan Transportation Authority
+### [p073_c0002] DRAFT
+### [p073_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p073_c0004]
+
+```text
+Additional Plan MaBSTOA Plan Total Pension Liability Plan Fiduciary Net Position Net Pension Liability Total Pension Liability Plan Fiduciary Net Position Net Pension Liability (in thousands) Balance as of December 31, 2019 $ 1,411,570 $ 840,460 $ 571,110 $ 4,122,934 $ 3,300,268 $ 822,666 Changes for fiscal year 2020: Service Cost 453 - 453 95,514 - 95,514 Interest on total pension liability 86,918 - 86,918 266,588 - 266,588 Effect of economic /demographic (gains) or losses 10,428 - 10,428 (720) - (720) Benefit payments (152,046) (152,046) - (237,930) (237,930) - Administrative expense - (612) 612 - (244) 244 Member contributions - 140 (140) - 24,709 (24,709) Net investment income - 4,024 (4,024) - 60,327 (60,327) Employer contributions - 68,724 (68,724) - 159,486 (159,486) Balance as of December 31, 2020 $ 1,357,323 $ 760,690 $ 596,633 $ 4,246,386 $ 3,306,616 $ 939,770
+```
+[p073_c0005]
+
+```text
+MNR Cash Balance Plan MTA Defined Benefit Plan Total Pension Liability Plan Fiduciary Net Position Net Pension Liability Total Pension Liability Plan Fiduciary Net Position Net Pension Liability (in thousands) Balance as of December 31, 2020 $ 378 $ 394 $ (16) $ 6,950,035 $ 5,012,765 $ 1,937,270 Changes for fiscal year 2021: Service Cost - - - 213,675 - 213,675 Interest on total pension liability 11 - 11 455,230 - 455,230 Effect of economic / demographic (gains) or losses (11) - (11) 20,656 - 20,656 Effect of assumption changes or inputs 15 - 15 113,662 - 113,662 Benefit payments (38) (38) - (325,473) (325,473) - Administrative expense - - - - (3,513) 3,513 Member contributions - - - - 33,832 (33,832) Net investment income - (5) 5 - 639,374 (639,374) Employer contributions - - - - 396,144 (396,144) Balance as of December 31, 2021 $ 355 $ 351 $ 4 $ 7,427,785 $ 5,753,129 $ 1,674,656
+```
+[p073_c0006] _Master Page # 73 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 74
+
+### [p074_c0001] Metropolitan Transportation Authority
+### [p074_c0002] DRAFT
+### [p074_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p074_c0004]
+
+```text
+MNR Cash Balance Plan MTA Defined Benefit Plan Total Pension Liability Plan Fiduciary Net Position Net Pension Liability Total Pension Liability Plan Fiduciary Net Position Net Pension Liability (in thousands) Balance as of December 31, 2019 $ 448 $ 455 $ (7) $ 6,510,686 $ 4,784,224 $ 1,726,462 Changes for fiscal year 2020: Service Cost - - - 213,494 - 213,494 Interest on total pension liability 14 - 14 427,672 - 427,672 Effect of economic / demographic (gains) or losses 10 - 10 92,019 - 92,019 Effect of assumption changes or inputs 11 - 11 - - - Benefit payments (105) (105) - (293,836) (293,836) - Administrative expense - 3 (3) - (3,660) 3,660 Member contributions - - - - 32,006 (32,006) Net investment income - 32 (32) - 99,045 (99,045) Employer contributions - 9 (9) - 394,986 (394,986) Balance as of December 31, 2020 $ 378 $ 394 $ (16) $ 6,950,035 $ 5,012,765 $ 1,937,270
+```
+### [p074_c0005] Sensitivity of the Net Pension Liability to Changes in the Discount Rate
+[p074_c0006] The following presents the MTA's net pension liability calculated for the Additional Plan, MaBSTOA Plan, MNR Cash Balance Plan and the MTA Defined Benefit Plan using the discount rate as of each measurement date, as well as what the net pension liability would be if it were calculated using a discount rate that is 1-percentage point lower or 1-percentage point higher than the actual discount rate used for each measurement date:
+[p074_c0007]
+
+```text
+Measurement Date: December 31, 2021 December 31, 2020 1% Decrease Discount Rate 1% Increase 1% Decrease Discount Rate 1% Increase (5.5%) (6.5%) (7.5%) (5.5%) (6.5%) (7.5%) (in thousands) Additional Plan $ 648,472 $ 545,148 $ 455,156 $ 702,167 $ 596,633 $ 504,666 MaBSTOA Plan 1,269,779 763,667 335,356 1,421,343 939,770 531,498 MTA Defined Benefit Plan 2,615,168 1,674,656 884,831 2,812,063 1,937,270 1,200,642 (in whole dollars) MNR Cash Balance Plan $ 26,611 $ 3,865 $ (16,181) $ 7,343 $ (15,852) $ (36,311)
+```
+[p074_c0008] _Master Page # 74 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 75
+
+### [p075_c0001] Metropolitan Transportation Authority
+### [p075_c0002] DRAFT
+### [p075_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p075_c0004] The MTA's Proportion of Net Pension Liability – NYCERS and NYSLERS
+[p075_c0005] The following table presents the MTA's proportionate share of the net pension liability of NYCERS based on the June 30, 2021 and June 30, 2022 actuarial valuations, rolled forward to June 30, 2022 and June 30, 2021, respectively, and the proportion percentage of the aggregate net pension liability allocated to the MTA:
+[p075_c0006]
+
+```text
+NYCERS June 30, 2022 June 30, 2021 ($ in thousands) MTA's proportion of the net pension liability 21.900% 22.218% MTA's proportionate share of the net pension liability $ 3,964,996 $ 1,424,952
+```
+[p075_c0007] The following table presents the MTA's proportionate share of the net pension liability of NYSLERS based on the April 1, 2021 and April 1, 2020 actuarial valuations, rolled forward to March 31, 2022 and March 31, 2021, respectively, and the proportion percentage of the aggregate net pension liability allocated to the MTA:
+[p075_c0008]
+
+```text
+NYSLERS March 31, 2022 March 31, 2021 ($ in thousands) MTA's proportion of the net pension liability 0.316% 0.314% MTA's proportionate share of the net pension liability $ (25,856) $ 313
+```
+[p075_c0009] The MTA's proportion of each respective Plan's net pension liability was based on the MTA's actual required contributions made to NYCERS for the plan's fiscal year-end June 30, 2022 and 2021 and to NYSLERS for the plan's fiscal year-end March 31, 2022 and 2021, relative to the contributions of all employers in each plan.
+### [p075_c0010] Sensitivity of the MTA's Proportionate Share of the Net Pension Liability to Changes in the Discount Rate
+[p075_c0011] The following presents the MTA's proportionate share of the net pension liability for NYCERS and NYSLERS calculated using the discount rate as of each measurement date, as well as what the proportionate share of the net pension liability would be if it were calculated using a discount rate that is 1-percentage point lower or 1-percentage point higher than the actual discount rate used as of each measurement date ($ in thousands):
+[p075_c0012]
+
+```text
+Measurement Date: June 30, 2022 June 30, 2021 1% Decrease Discount Rate 1% Increase 1% Decrease Discount Rate 1% Increase (6.0%) (7.0%) (8.0%) (6.0%) (7.0%) (8.0%) NYCERS $ 6,309,639 $ 3,964,996 $ 1,984,590 $ 3,738,910 $ 1,424,952 $ (538,293) Measurement Date: March 31, 2022 March 31, 2021 1% Decrease Discount Rate 1% Increase 1% Decrease Discount Rate 1% Increase (4.9%) (5.9%) (6.9%) (4.9%) (5.9%) (6.9%) NYSLERS $ 66,552 $ (25,856) $ (103,150) $ 86,873 $ 313 $ (79,515)
+```
+### [p075_c0013] Pension Expense, Deferred Outflows of Resources and Deferred Inflows of Resources Related to Pensions
+[p075_c0014] For the nine-month period ended September 30, 2023 and year ended December 31, 2022, the MTA recognized pension expense related to each pension plan as follows (in $ thousands):
+[p075_c0015]
+
+```text
+Pension Plan September 30, 2023 December 31, 2022 Additional Plan $ 53,805 $ 63,224 MaBSTOA Plan 120,099 132,278 MNR Cash Balance plan - 3 MTA Defined Benefit Plan 302,040 385,288 NYCERS 546,806 453,150 NYSLERS 12,212 2,312 Total $ 1,034,962 $ 1,036,255
+```
+[p075_c0016] _Master Page # 75 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 76
+
+### [p076_c0001] DRAFT
+### [p076_c0002] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p076_c0003] For the nine-month period ended September 30, 2023 and year ended December 31, 2022, the MTA reported deferred outflow of resources and deferred inflow of resources for each pension plan as follows (in $ thousands):
+[p076_c0004]
+
+```text
+For the Year Ended September 30, 2023 Additional Plan MaBSTOA Plan MNR Cash Balance Plan MTA Defined Benefit Plan Deferred Outflows of Resources Deferred Inflows of Resources Deferred Outflows of Resources Deferred Inflows of Resources Deferred Outflows of Resources Deferred Inflows of Resources Deferred Outflows of Resources Deferred Inflows of Resources Differences between expected and actual experience $ - $ - $ - $ 10,906 $ 16,683 $ - $ - $ - $ 185,955 $ 10,359 Changes in assumptions - - - 156,544 - - - - 554,001 7,813 Net difference between projected and actual earnings on pension plan investments - 16,341 - - 111,214 - - 3 - - 178,327 Changes in proportion and differences between contributions and proportionate share of contributions - - - - - - - - - 66,655 66,655 Employer contributions to the plan subsequent to the measurement of net pension liability - - - - - - - - - - - Total 70,764 16,341 - 158,618 326,068 127,897 4 4 3 391,041 1,197,652 263,154
+```
+[p076_c0005]
+
+```text
+For the Year Ended September 30, 2023 NYCERS NYSLERS Total Deferred Outflows of Resources Deferred Inflows of Resources Deferred Outflows of Resources Deferred Inflows of Resources Deferred Outflows of Resources Deferred Inflows of Resources Differences between expected and actual experience $ 343,902 $ 87,149 $ 1,958 $ 2,540 $ 542,721 $ 116,731 Changes in assumptions 653 126,839 43,150 728 754,348 135,380 Net difference between projected and actual earnings on pension plan investments 724,648 - - 84,666 724,648 390,551 Changes in proportion and differences between contributions and proportionate share of contributions 51,026 343,882 3,726 2,117 121,407 412,654 Employer contributions to the plan subsequent to the measurement of net pension liability 392,306 - 11,155 - 1,023,888 - Total $ 1,512,535 $ 557,870 - $ 59,989 $ 90,051 - $ 3,167,012 $ 1,055,316 -
+```
+[p076_c0006] _Master Page # 76 of 175 - Audit Committee Meeting 1/29/2024_
+[p076_c0007] _62_
+
+## Page 77
+
+### [p077_c0001] Metropolitan Transportation Authority
+### [p077_c0002] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p077_c0003] DRAFT
+### [p077_c0004] For the Year Ended December 31, 2022
+[p077_c0005]
+
+```text
+Additional Plan MaBSTOA Plan MNR Cash Balance Plan MTA Defined Benefit Plan Deferred Outflows of Resources Deferred Inflows of Resources Deferred Outflows of Resources Deferred Inflows of Resources Deferred Outflows of Resources Deferred Inflows of Resources Deferred Outflows of Resources Deferred Inflows of Resources Differences between expected and actual experience $ - $ - $ 17,004 $ 3,896 $ - $ - $ 218,415 $ 13,714 Changes in assumptions - - 121,560 - - - 535,702 17,580 Net difference between projected and actual earnings on pension plan investments 27,816 - 57,062 - - 19 72,382 - Changes in proportion and differences between contributions and proportionate share of contributions - - - - - - 78,760 78,760 Employer contributions to the plan subsequent to the measurement of net pension liability 70,553 - 156,204 - - - 396,144 - Total $ 98,369 $ - $ 351,830 $ 3,896 $ - $ 19 $ 1,301,403 $ 110,054
+```
+### [p077_c0006] For the Year Ended December 31, 2022
+[p077_c0007]
+
+```text
+NYCERS NYSLERS TOTAL Deferred Outflows of Resources Deferred Inflows of Resources Deferred Outflows of Resources Deferred Inflows of Resources Deferred Outflows of Resources Deferred Inflows of Resources Differences between expected and actual experience $ 365,770 $ 164,835 $ 3,822 $ - $ 605,011 $ 182,445 Changes in assumptions 1,318 176,775 57,548 1,085 716,128 195,440 Net difference between projected and actual earnings on pension plan investments - 2,091,098 - 89,908 157,260 2,181,025 Changes in proportion and proportionate share of contributions 55,095 353,104 3,424 2,823 137,279 434,687 Employer contributions to the plan subsequent to the measurement of net pension liability 451,816 - 16,284 - 1,091,001 - Total $ 873,999 $ 2,785,812 $ 81,078 $ 93,816 $ 2,706,679 $ 2,993,597
+```
+[p077_c0008] The annual differences between the projected and actual earnings on investments are amortized over a five-year closed period beginning the year in which the difference occurs.
+[p077_c0009] _Master Page # 77 of 175 - Audit Committee Meeting 1/29/2024_
+[p077_c0010] _63_
+
+## Page 78
+
+### [p078_c0001] Metropolitan Transportation Authority
+### [p078_c0002] DRAFT
+### [p078_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p078_c0004] The following table presents the recognition periods used by each pension plan to amortize the annual differences between expected and actual experience, changes in proportion and differences between employer contributions and proportionate share of contributions, and changes in actuarial assumptions, beginning the year in which the deferred amount occurs.
+[p078_c0005]
+
+```text
+Recognition Period (in years) Changes in proportion and differences between employer contributions and proportionate share of contributions Changes in actuarial assumptions Pension Plan Differences between expected and actual experience Additional Plan 1.00 N/A 1.00 MaBSTOA Plan 6.40 N/A 6.40 MNR Cash Balance Plan 1.00 N/A 1.00 MTA Defined Benefit Plan 8.30 8.30 8.30 NYCERS 5.79 5.79 5.79 NYSLERS 5.00 5.00 5.00
+```
+[p078_c0006] For the nine-month period ended September 30, 2023 and year ended December 31, 2022, $1,023.9 and $1,091.0 were reported as deferred outflows of resources related to pensions resulting from the MTA's contributions subsequent to the measurement date which will be recognized as a reduction of the net pension liability in the year ending December 31, 2021 and December 31, 2020, respectively. Other amounts reported as deferred outflows of resources and deferred inflows of resources related to pensions at December 31, 2022 will be recognized as pension expense as follows:
+[p078_c0007]
+
+```text
+Additional Plan MaBSTOA Plan MNR Cash Balance plan MTA Defined Benefit Plan NYCERS NYSLERS Total Year Ending December 31: (in thousands) 2023 $ 6,195 $ 37,990 $ (1) $ 129,154 $ 27,732 $ (5,818) $ 195,252 2024 (12,635) (23,044) (5) 36,940 99,838 (9,235) 91,859 2025 (188) 24,723 - 100,670 (58,363) (21,989) 44,853 2026 (9,713) (11,613) 3 58,386 489,105 (4,175) 521,993 2027 - 8,193 - 113,253 4,047 - 125,493 Thereafter - 3,304 - 105,054 - - 108,358 $ (16,341) $ 39,553 $ (3) $ 543,457 $ 562,359 $ (41,217) $ 1,087,808
+```
+### [p078_c0008] Deferred Compensation Program
+[p078_c0009] Description - The Deferred Compensation Program consists of two defined contribution plans that provide benefits based solely on the amount contributed to each participant's account(s), plus or minus any income, expenses and gains/losses. The Deferred Compensation Program is comprised of the Deferred Compensation Plan For Employees of the Metropolitan Transportation Authority ("MTA"), its Subsidiaries and Affiliates ("457 Plan") and the Thrift Plan For Employees of the Metropolitan Transportation Authority, its Subsidiaries and Affiliates ("401(k) Plan"). Certain MTA Related Groups employees are eligible to participate in both deferred compensation plans. Both Plans are designed to have participant charges, including investment and other fees, cover the costs of administering the Deferred Compensation Program.
+[p078_c0010] Participation in the 401(k) Plan is now available to non-represented employees and, after collective bargaining, most represented employees. All amounts of compensation deferred under the 401(k) Plan, and all income attributable to such compensation, less expenses and fees, are held in trust for the exclusive benefit of the participants and their beneficiaries. Accordingly, the 401(k) Plan is not reflected in the accompanying consolidated statements of net position.
+[p078_c0011] The Deferred Compensation Program is administered and may be amended by the Deferred Compensation Committee.
+[p078_c0012] As the Deferred Compensation Program's asset base and contribution flow increased, participants' investment options were expanded by the Deferred Compensation Committee with the advice of its Financial Advisor to provide greater diversification and flexibility. In 1988, after receiving an IRS determination letter for the 401(k) Plan, the MTA offered its managers the choice of either participating in the 457 Plan or the 401(k) Plan. By 1993, the MTA offered eight investment funds: a Guaranteed Interest Account Fund, a Money Market Fund, a Common Stock Fund, a Managed Fund, a Stock Index Fund, a Government Income Fund, an International Fund and a Growth Fund.
+[p078_c0013] _Master Page # 78 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 79
+
+### [p079_c0001] Metropolitan Transportation Authority
+### [p079_c0002] DRAFT
+### [p079_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p079_c0004] In 1998, the Deferred Compensation Committee approved the unbundling of the Plans. In 2008, the Plans' investment choices were restructured to set up a four-tier strategy:
+- [p079_c0005] ○ Tier 1 – The MTA Asset Allocation Programs offer two options for those participants who would like to make retirement investing easy – the MTA Target Year Funds and Goal maker. Investments will be automatically diversified among a range of investment options. ○ Tier 2 – The MTA Index Funds offer a tier of index funds, which invest in the securities of companies that are included in a selected index, such as the Standard & Poor's 500 (large cap) Index or Barclays Capital U.S. Aggregate (bond) index. The typical objective of an index fund is to achieve approximately the same return as that specific market index. Index funds provide investors with lower-cost investments because they are less expensive to administer than actively managed funds. ○ Tier 3 – The MTA Actively Managed Portfolios, which are comprised of actively managed portfolios that are directed by one or a team of professional managers who buy and sell a variety of holdings in an effort to outperform selected indices. The funds provide a diversified array of distinct asset classes, with a single option in each class. They combine the value and growth disciplines to create a "core" portfolio for the mid-cap and international categories. Tier 4 – The Self-Directed Mutual Fund Option is designed for the more experienced investors. The fund offers access to an expanded universe of mutual funds from hundreds of well-known mutual fund families. Participants may invest only a portion of their account balances in this Tier.
+[p079_c0006] In 2011, the Deferred Compensation Program began offering Roth contributions. Employees can elect after-tax Roth contributions and before-tax contributions in both the 401(k) Plan and the 457 Plan. The total combination of Roth after-tax contributions and regular before-tax contributions cannot exceed the IRS maximum of $20,500 dollars or $27,000 dollars for those over age 50 for the year ended December 31, 2021. The total combination of Roth after-tax contributions and regular before-tax contributions cannot exceed the IRS maximum of $22,500 dollars or $30,000 dollars for those over age 50 for the year ended December 31, 2022.
+[p079_c0007] The two Plans offer the same array of investment options to participants. Eligible participants in the Deferred Compensation Program include employees (and in the case of MTA Long Island Bus, former employees) of:
+- [p079_c0008] ○ MTA ○ MTA Long Island Rail Road ○ MTA Bridges and Tunnels ○ MTA Long Island Bus ○ MTA Metro-North Railroad ○ MTA New York City Transit ○ MTA Staten Island Rapid Transit ○ MTA Construction and Development ○ MTA Bus
+[p079_c0009] Employer Contributions - MTA Bus on behalf of certain MTA Bus employees, MTA Metro-North Railroad on behalf of certain MNR employees who opted-out of participation in the MTA Defined Benefit Pension Plan and MTA on behalf of certain represented MTA Business Service Center employees and on behalf of certain MTA Police Officers, make contributions to the 401(k) Plan. The rate for the employer contribution varies.
+[p079_c0010] MTA Bus – Effective in 2019, there are no employees receiving these employer contributions. Prior to 2019, certain members who were employed by Queens Surface Corporation on February 26, 2005, and who became employees of MTA Bus on February 27, 2005, receive a matching contribution equal to 50% of member's before-tax contributions provided that the maximum matching contribution shall not exceed 3% of the member's base pay. MTA Bus also makes a basic contribution equal to 2% of the member's compensation. These contributions vest as follows:
+[p079_c0011]
+
+```text
+Years of Service Vested Percentage Less than 2 0% 2 20% 3 40% 4 60% 5 80% 6 or more 100%
+```
+[p079_c0012] _Master Page # 79 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 80
+
+### [p080_c0001] Metropolitan Transportation Authority
+### [p080_c0002] DRAFT
+### [p080_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p080_c0004] MTA Metro-North Railroad – MNR employees represented by certain unions and who elected to opt-out of participation in the MTA Defined Benefit Pension Plan receive an annual employer contribution equal to 4% of the member’s compensation. Effective on the first full pay period following the nineteenth anniversary date of an eligible MNR member’s continuous employment, MTA Metro-North Railroad contributes an amount equal to 7% of the member’s compensation. Eligible MNR members vest in these employer contributions as set forth below:
+[p080_c0005]
+
+```text
+Years of Service Vested Percentage Less than 5 0% 5 or more 100%
+```
+[p080_c0006] MTA Headquarters - Police - For each plan year, the MTA shall make contributions to the account of each eligible MTA Police Benevolent Association member in the amounts required by the collective bargaining agreement (“CBA”) and subject to the contribution limits set forth in the CBA. These contributions shall be made monthly and shall be considered MTA Police contributions. Members are immediately 100% vested in these employer contributions.
+[p080_c0007] MTA Headquarters – Commanding Officers - In addition, for each plan year, the MTA shall make contributions to the account of each eligible MTA Police Department Commanding Officers Benevolent Association member in the amounts required by the CBA and subject to the contribution limits set forth in the CBA. These contributions shall be made monthly and shall be considered MTA Police contributions. These members are immediately 100% vested in these employer contributions.
+[p080_c0008] MTA Headquarters – Business Services - Effective January 1, 2011, all newly hired MTA Business Services Center employees represented by the Transportation Communications Union are eligible to receive a matching contribution up to a maximum of 3% of the participant’s compensation. A participant’s right to the balance in his or her matching contributions shall vest upon the first of the following to occur:
+- [p080_c0009] i. Completing 5 years of service, ii. Attaining the Normal Retirement Age of 62 while in continuous employment, or iii. Death while in continuous employment.
+[p080_c0010] Additional Deposits (Incoming Rollover or Transfers) - Participants in the Deferred Compensation Program are eligible to roll over both their before-tax and after-tax assets from other eligible retirement plans into the 401(k) and 457 Plans. Under certain conditions, both Plans accepts rollovers from all eligible retirement plans (as defined by the Code), including 401(a), 457, 401(k), 403(b), and rollover IRAs.
+[p080_c0011] Forfeitures – Non vested contributions are forfeited upon termination of employment. Such forfeitures are used to cover a portion of the pension plan’s administrative expenses.
+[p080_c0012]
+
+```text
+2022 2021 (In thousands) Employer 401K contributions $3,833 $3,939
+```
+### [p080_c0013] 5. OTHER POSTEMPLOYMENT BENEFITS
+[p080_c0014] The MTA participates in a defined benefit other postemployment benefits (“OPEB”) plan for its employees, the Metropolitan Transportation Authority Retiree Welfare Benefits Plan (“OPEB Plan”). A description of the Plan follows:
+### [p080_c0015] (1) Plan Description
+[p080_c0016] The MTA Retiree Welfare Benefits Plan (“OPEB Plan”) and the related Trust Fund (“Trust”) was established on January 1, 2009 for the exclusive benefit of MTA retired employees and their eligible spouses and dependents, to fund some of the OPEB provided in accordance with the MTA’s various collective bargaining agreements. Postemployment benefits are part of an exchange of salaries and benefits for employee services rendered. Amounts contributed to the OPEB Plan are held in an irrevocable trust and may not be used for any other purpose than to fund the costs of health and welfare benefits of its eligible participants.
+[p080_c0017] The OPEB Plan and the Trust are exempt from federal income taxation under Section 115(1) of the Internal Revenue Code. The OPEB Plan is classified as a single-employer plan.
+[p080_c0018] The OPEB Plan Board of Managers, comprised of the MTA Chairman, MTA Chief Financial Officer and MTA Director of Labor Relations, are the administrators of the OPEB Plan. The MTA Board has the right to amend, suspend or terminate the OPEB Plan. The OPEB Plan is a fiduciary component unit of the MTA and is in the Pension and Other Employee Benefit Trust Funds section of the MTA’s basic financial statements.
+[p080_c0019] _Master Page # 80 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 81
+
+### [p081_c0001] Metropolitan Transportation Authority
+### [p081_c0002] DRAFT
+### [p081_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p081_c0004] The separate annual financial statements of the OPEB Plan may be obtained by writing to MTA Deputy Chief, Controller's Office, 2 Broadway, 15th Floor New York, NY 10004 or at www.mta.info .
+[p081_c0005] Benefits Provided — The benefits provided by the OPEB Plan include medical, pharmacy, dental, vision, life insurance and a Medicare supplemental plan. The different types of benefits provided vary by agency, employee type (represented employees versus non-represented) and the relevant collective bargaining agreements. Certain benefits are provided upon retirement as defined in the applicable pension plan. Certain agencies provide benefits to certain former employees if separated from service within 5 years of attaining retirement eligibility. Employees of the MTA are members of the following pension plans: the MTA Defined Benefit Plan, the Additional Plan, the MNR Cash Balance Plan, the MaBSTOA Plan, NYCERS, and NYSLERS. Certain represented employees of MTA Metro-North Railroad participate in the 401(k) Plan. Eligible employees of the MTA may elect to join the New York State Voluntary Defined Contribution Plan ("VDC").
+[p081_c0006] The MTA participates in the New York State Health Insurance Program ("NYSHIP") and provides medical and prescription drug benefits, including Medicare Part B reimbursements, to many of its retirees. NYSHIP offers a Preferred Provider Organization ("PPO") plan and several Health Maintenance Organization ("HMO") plans. Represented MTA New York City Transit employees, other MTA New York City Transit former employees who retired prior to January 1, 1996 or January 1, 2001, MTA Staten Island Railway represented employees as of March 1, 2010, June 1, 2010 or January 1, 2013 depending on the union and MTA Bus retirees do not participate in NYSHIP. These benefits are provided either through a self-insured health plan, a fully insured health plan or an HMO.
+[p081_c0007] The MTA is a participating employer in NYSHIP. The NYSHIP financial report can be obtained by writing to NYS Department of Civil Service, Employee Benefits Division, Alfred E. Smith Office Building, 805 Swan Street, Albany, NY 12239.
+[p081_c0008] OPEB Plan Eligibility — To qualify for benefits under the OPEB Plan, a former employee of the MTA must:
+- [p081_c0009] i. have retired; ii. be receiving a pension (except in the case of the 401(k) Plan); iii. have at least 10 years of credited service as a member of NYCERS, NYSLERS, the MTA Defined Benefit Plan, the Additional Plan, the MaBSTOA Plan, the MNR Cash Balance Plan, the 401(k) Plan or the VDC; and iv. have attained the minimum age requirement (unless within 5 years of commencing retirement for certain members). A represented retired employee may be eligible only pursuant to the relevant collective bargaining agreement.
+[p081_c0010] Surviving Spouse and Other Dependents —
+- [p081_c0011] - Lifetime coverage is provided to the surviving spouse (not remarried) or domestic partner and surviving dependent children to age 26 of retired managers and certain non-represented retired employees. - Represented retired employees must follow the guidelines of their collective bargaining agreements regarding continued health coverage for a surviving spouse or domestic partner and surviving dependents. The surviving spouse coverage continues until spouse is eligible for Medicare for represented employees of MTA New York City Transit and MTA Staten Island Railway, retiring on or after: o May 21, 2014 for Transport Workers Union ("TWU") Local 100; o September 24, 2014 for Amalgamated Transit Union ("ATU") Local 726; o October 29, 2014 for ATU Local 1056; o March 25, 2015 for Transportation Communication Union ("TCU"); and o December 16, 2015 for United Transportation Union ("UTU") and American Train Dispatchers Association ("ATDA"). - Lifetime coverage is provided to the surviving spouse (not remarried) or domestic partner and surviving dependents of retired uniform members of the MTA Police Department. - Lifetime coverage is provided to the surviving spouse (not remarried) or domestic partner and surviving dependent children to age 26 of uniformed members of the MTA Police Department whose death was sustained while in performance of duty.
+[p081_c0012] The OPEB Plan Board of Managers has the authority to establish and amend the benefits that will be covered under the OPEB Plan, except to the extent that they have been established by collective bargaining agreement.
+[p081_c0013] _Master Page # 81 of 175 - Audit/Committee Meeting 1/29/2024_
+
+## Page 82
+
+### [p082_c0001] Metropolitan Transportation Authority
+### [p082_c0002] DRAFT
+### [p082_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p082_c0004] Employees Covered by Benefit Terms — As of July 1, 2021 and July 1, 2019, the date of the most recent actuarial valuation, the following classes of employees were covered by the benefit terms:
+[p082_c0005]
+
+```text
+Number of Participants July 1, 2021 July 1, 2019 Active plan members 68,672 73,588 Inactive plan members currently receiving benefit payments 48,888 46,994 Inactive plan members entitled to but not yet receiving benefit payments 131 186 Total 117,691 120,768
+```
+[p082_c0006] Contributions — The MTA is not required by law or contractual agreement to provide funding for the OPEB Plan, other than the “pay-as-you-go” (“PAYGO”) amounts. PAYGO is the cost of benefits necessary to provide the current benefits to retirees and eligible beneficiaries and dependents. Employees are not required to contribute to the OPEB Plan. The OPEB Plan Board has the authority for establishing and amending the funding policy. For the years ended December 31, 2022 and 2021, the MTA paid $846.3 and $813.2 of PAYGO to the OPEB Plan, respectively. The PAYGO amounts include an implicit rate subsidy adjustment of $58 and $53 for the years ended December 31, 2022 and 2021, respectively. For the 2021 plan year, the OPEB Plan paid $337.6 in OPEB benefits, reducing the employer contributions to $387.3.
+[p082_c0007] The discount rate estimates investment earnings for assets earmarked to cover retiree health benefits. Under GASB Statement No. 75, the discount rate depends on the nature of underlying assets for funded plans. Since the amount of benefits paid in 2020 exceeded the current fair value of the assets, a depletion date is assumed to occur immediately. Therefore, the discount rate is set equal to the municipal bond index. The MTA elected the Bond Buyer General Obligation 20-Bond Municipal Bond Index. As a result, the discount rates as of December 31, 2021 and December 31, 2020, the measurement dates, are 2.06% and 2.12%, respectively.
+[p082_c0008] Employer contributions include the implicit subsidy, or age-related subsidy inherent in the healthcare premiums structure. The implicit subsidy arises when an employer allows a retiree and their dependents to continue on the active plans and pay the active premiums. Retirees are not paying the true cost of their benefits because they have higher utilization rates than actives and therefore, are partially subsidized by the active employees. As shown in the following table, for the years ended December 31, 2021 and 2020, the employer made a cash payment for retiree healthcare of $52,933 and $69,472, respectively, as part of the employer’s payment for active-employee healthcare benefits. For purposes of GASB Statement No. 75, this payment made on behalf of the active employees should be reclassified as benefit payments for retiree health care to reflect the retirees’ underlying age-adjusted, retiree benefit costs.
+[p082_c0009]
+
+```text
+Blended and Age-adjusted Premium (in thousands) 2021 Retirees 2020 Retirees Total blended premiums $740,051 $655,269 Employment payment for retiree healthcare 52,933 69,472 Net Payments $792,984 $724,741
+```
+### [p082_c0010] (2) Actuarial Assumptions
+[p082_c0011] Actuarial valuation involve estimates of the value of reported amounts and assumptions about the probability of occurrence of events far into the future, such as future employment, mortality and health care cost trend. Actuarially determined amounts are subject to continual revision as actual results are compared with past expectations and new estimates are made about the future.
+[p082_c0012] Projections of benefits for financial reporting purposes are based on the substantive plan, which refers to the plan terms as understood by the employer and the plan members at the time of the valuation, including only changes to plan terms that have been made and communicated to employees. The projections include the types of benefits provided at the time of each valuation and the historical pattern of sharing benefit costs between the employer and plan members at that time. The MTA may not be obligated to provide the same types or levels of benefits to retirees in the future.
+[p082_c0013] _Master Page # 82 of 175 - Audit Committee Meeting 1/29/2024 68_
+
+## Page 83
+
+### [p083_c0001] Metropolitan Transportation Authority
+### [p083_c0002] DRAFT
+### [p083_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p083_c0004] The total OPEB liability was determined by an actuarial valuation performed on July 1, 2021 and July 1, 2019. Update procedures were used to roll forward the total OPEB liability to the measurement dates of December 31, 2021, and December 31, 2020, respectively. The actuarial valuations were performed using the following actuarial assumptions, applied to all periods included in the measurement, unless specified:
+[p083_c0005]
+
+```text
+Valuation date July 1, 2021 July 1, 2019 Measurement date December 31, 2021 December 31, 2020 Discount rate 2.06%, net of expenses 2.12%, net of expenses Inflation 2.30% 2.25% Actuarial cost method Entry Age Normal Entry Age Normal Amortization method Level percentage of payroll Level percentage of payroll Normal cost increase factor 4.25% 4.25% Salary increases Varies by years of service and differs for members of the various pension plans Varies by years of service and differs for members of the various pension plans Investment rate of return 2.06% 2.12%
+```
+[p083_c0006] Healthcare Cost Trend — The healthcare trend assumption is based on the Society of Actuaries-Getzen Model version 2021 utilizing the baseline assumptions included in the model, except inflation of 2.25% for medical and pharmacy benefits. Further adjustments apply based on percentage of costs associated with administrative expenses, inflation on administrative costs, and aging factors. For NYSHIP benefits, trends are multiplied by 90% to reflect that NYSHIP trends have been generally lower than trends projected by the Getzen model over the past 10 years. Separate long-term trends are used for Medicare Part B reimbursements and for dental and vision benefits (3.5% per year). The self-insured trend is applied directly for represented employees of NYC Transit, SIRTSA and MTA Bus Company. No self-insured post-65 trend is assumed during 2021 to reflect the approximately 90% reduction in the contracted Medicare Advantage plan premiums for 2022.
+[p083_c0007] Healthcare Cost Trend Rates — The following lists illustrative rates for the NYSHIP and self-insured trend assumptions (all amounts are in percentages).
+[p083_c0008]
+
+```text
+Fiscal Year NYSHIP TBTA Self-Insured Medicare Part B Trend < 65 > = 65 < 65 > = 65 < 65 > = 65 2021 5.30% 4.60% 5.20% 3.60% 5.90% 0.00% 14.50% 2022 5.10% 4.60% 5.00% 3.90% 5.60% 5.10% 5.40% 2023 4.80% 4.60% 4.80% 4.30% 5.40% 5.10% 5.40% 2024 4.60% 4.60% 4.60% 4.60% 5.10% 5.10% 5.40% 2025 4.50% 4.50% 4.50% 4.50% 5.00% 5.00% 5.40% 2026 4.40% 4.40% 4.40% 4.40% 4.90% 4.80% 5.40% 2027 4.30% 4.30% 4.30% 4.30% 4.70% 4.70% 5.40% 2028 4.20% 4.20% 4.20% 4.20% 4.60% 4.60% 5.40% 2029 4.00% 4.00% 4.00% 4.00% 4.50% 4.50% 5.40% 2039 3.90% 3.90% 3.90% 3.90% 4.40% 4.40% 5.40% 2049 3.90% 3.90% 3.90% 3.90% 4.30% 4.30% 4.00% 2059 3.80% 3.80% 3.80% 3.80% 4.20% 4.20% 3.80% 2069 3.80% 3.80% 3.80% 3.80% 4.20% 4.20% 3.70% 2079 3.50% 3.50% 3.50% 3.50% 3.90% 3.90% 3.70% 2089 3.30% 3.30% 3.30% 3.30% 3.70% 3.70% 3.70% 2099 3.30% 3.30% 3.30% 3.30% 3.70% 3.70% 3.60% 2100 3.30% 3.30% 3.30% 3.30% 3.70% 3.70% 3.60%
+```
+[p083_c0009] _Master Page # 83 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 84
+
+### [p084_c0001] Metropolitan Transportation Authority
+### [p084_c0002] DRAFT
+### [p084_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p084_c0004] For purposes of applying the Entry Age Normal cost method, the healthcare trend prior to the valuation date is based on the ultimate rates, which are 3.3% for NYSHIP costs, 3.7% for self-insured medical and pharmacy costs, and 3.6% for Medicare Part B costs.
+[p084_c0005] Mortality — All mortality rates (except accidental death for active police members) are projected on a generational basis using the Society of Actuaries Mortality Improvement Scale MP-2021. As generational tables, they reflect mortality improvement both before and after the measurement date. The post-retirement mortality assumption is based on an experience analysis covering the period from January 1, 2015 to December 31, 2020 for the MTA-sponsored pension plans. The mortality rates vary by employee type:
+- [p084_c0006] ○ Headquarters Non-Police Members: PubG.H-2010 Mortality Table, headcount weighted for general employees for males and females with separate rates for employees, healthy annuitants and disabled annuitants. ○ Headquarters Police Members: Rates from the June 30, 2019 (Lag) Actuarial Valuation for NYCERS dated December 29, 2021 as follows: Service Retirees for Housing Police and Transit Police (Table XII-5), Disabled Retirees for Housing Police and Transit Police (Table XII-6) and Active Members for Transit and TBTA Ordinary Death and Accidental Death (Table XII-4). No adjustments were made to convert from lives-weighted to amounts-weighted. Base year is 2012 for mortality improvement purposes. ○ Rail Members (LI Bus, LIRR, Metro-North, and SIRTOA): Pri.H-2012(BC) Mortality Table, headcount weighted with blue collar adjustments for males and females with separate rates for employees, healthy annuitants and disabled annuitants. Employee and healthy annuitant male rates are multiplied by 97%. ○ Transit Members (Bridges and Tunnels, MTA Bus, and Transit): Pri.H-2012(BC) Mortality Table, headcount weighted with blue collar adjustments for males and females with separate rates for employees, healthy annuitants and disabled annuitants. Employee and healthy annuitant male rates are multiplied by 92%.
+### [p084_c0007] (3) Net OPEB Liability
+[p084_c0008] At December 31, 2022 and 2021, the MTA reported a net OPEB liability of $24,956 and $24,409, respectively. The MTA's net OPEB liability was measured as of December 31, 2021 and December 31, 2020, respectively. The total OPEB liability used to calculate the net OPEB liability was determined by an actuarial valuation date of July 1, 2021 and July 1, 2019 and rolled forward to December 31, 2021 and December 31, 2020, respectively.
+[p084_c0009] OPEB Plan Fiduciary Net Position — The fiduciary net position has been determined on the same basis used by the OPEB plan. The OPEB plan uses the accrual basis of accounting under which contributions from the employer are recognized when paid. Benefits and refunds are recognized when due and payable in accordance with the terms of the Plan. Investments are reported at fair value based on quoted market prices or Net Asset Value. Detailed information about the OPEB plan's fiduciary net position is available in the separately issued financial report or at www.mta.info .
+[p084_c0010] Expected Rate of Return on Investments — The best-estimate range for the long-term expected rate of return was determined by adding expected inflation to expected long-term real returns and reflecting expected volatility and correlation. The capital market assumptions are as of December 31, 2021.
+[p084_c0011]
+
+```text
+Asset Class Index Target Allocation Long-Term Expected Arithmetic Real Rate of Return U.S. cash BAML 3-Month T-Bill 100.00% -0.26% Assumed Inflation - Mean 2.30% Assumed Inflation - Standard Deviation 1.23% Portfolio Nominal Mean return 2.03% Portfolio Standard Deviation 1.11% Long Term Expected Rate of Return selected by MTA 2.06%
+```
+[p084_c0012] _Master Page # 84 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 85
+
+### [p085_c0001] Metropolitan Transportation Authority
+### [p085_c0002] DRAFT
+### [p085_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p085_c0004] Discount Rate — The discount rate used in this valuation to measure the total OPEB liability was updated to incorporate GASB Statement No. 75 guidance.
+[p085_c0005] The plan's fiduciary net position was not projected to be available to make all projected future benefit payments of current active and inactive employees. Therefore, the discount rate for calculating the total OPEB liability is equal to the single equivalent rate that results in the same actuarial present value as the long-term expected rate of return applied to benefit payments, to the extent that the plan's fiduciary net position is projected to be sufficient to make projected benefit payments, and the municipal bond rate applied to benefit payments, to the extent that the plan's fiduciary net position is not projected to be sufficient. Therefore, the discount rate is set equal to the Bond Buyer General Obligation 20-Bond Municipal Bond Index as of December 31, 2021 of 2.06% and as of December 31, 2020 of 2.12%.
+[p085_c0006] Changes in Net OPEB Liability — Changes in the MTA's net OPEB liability for the year ended December 31, 2022 based on the December 31, 2021 measurement date, and for the year ended December 31, 2021, based on the December 31, 2020 measurement date, were as follows:
+[p085_c0007]
+
+```text
+Total OPEB Liability Plan Fiduciary Net Position (in thousands) Net OPEB Liability Balance as of December 31, 2020 $ 24,409,581 $ 130 $ 24,409,451 Changes for the year: Service Cost 1,250,950 - 1,250,950 Interest on total OPEB liability 535,642 - 535,642 Effect of plan changes - - - Effect of economic/demographic gains or losses 292,154 - 292,154 Effect of assumptions changes or inputs (738,829) - (738,829) Benefit payments (792,984) (792,984) - Employer contributions - 792,984 (792,984) Net investment income - 0 0 Administrative expenses - (46) 46 Net changes 546,933 (46) 546,979 Balance as of December 31, 2021 $ 24,956,514 $ 84 $ 24,956,430
+```
+[p085_c0008]
+
+```text
+Total OPEB Liability Plan Fiduciary Net Position (in thousands) Net OPEB Liability Balance as of December 31, 2019 $ 21,531,473 $ 414,827 $ 21,116,646 Changes for the year: Service Cost 1,097,051 - 1,097,051 Interest on total OPEB liability 610,160 - 610,160 Effect of plan changes - - - Effect of economic/demographic gains or losses (43,890) - (43,890) Effect of assumptions changes or inputs 1,939,528 - 1,939,528 Benefit payments (724,741) (724,741) - Employer contributions - 387,371 (387,371) Net investment income - (77,118) 77,118 Administrative expenses - (209) 209 Net changes 2,878,108 (414,697) 3,292,805 Balance as of December 31, 2020 $ 24,409,581 $ 130 $ 24,409,451
+```
+[p085_c0009] _Master Page # 85 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 86
+
+### [p086_c0001] Metropolitan Transportation Authority
+### [p086_c0002] DRAFT
+### [p086_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p086_c0004] Sensitivity of the Net OPEB Liability to Changes in the Discount Rate — The following presents the net OPEB liability of the MTA, calculated using the discount rate as of each measurement date, as well as what the MTA's net OPEB liability would be if it were calculated using a discount rate that is 1-percentage point lower or 1-percentage point higher than the actual discount rate used for the measurement date:
+[p086_c0005]
+
+```text
+Measurement Date: December 31, 2021 1% Decrease (1.06%) Discount Rate (2.06%) 1% Increase (3.06%) Net OPEB liability $28,857,427 $24,956,431 $21,790,175 Measurement Date: December 31, 2020 1% Decrease (1.12%) Discount Rate (2.12%) 1% Increase (3.12%) Net OPEB liability $28,098,117 $24,409,451 $21,392,425
+```
+[p086_c0006] Sensitivity of the Net OPEB Liability to Changes in the Healthcare Cost Trend Rates — The following presents the net OPEB liability of the MTA, calculated using the healthcare cost trend rates as of each measurement date, as well as what the MTA's net OPEB liability would be if it were calculated using trend rates that are 1-percentage point lower or 1-percentage point higher than the actual healthcare trend rate used for the measurement date:
+[p086_c0007]
+
+```text
+Measurement Date: December 31, 2021 1% Decrease Healthcare Cost Current Trend Rate* 1% Increase Net OPEB liability $21,198,435 $24,956,431 $29,769,162 Measurement Date: December 31, 2020 1% Decrease Healthcare Cost Current Trend Rate* 1% Increase Net OPEB liability $20,595,637 $24,409,451 $29,295,102
+```
+[p086_c0008] *For further details, refer to the Health Care Cost Trend Rates tables in the Actuarial Assumptions section of this Note Disclosure
+### [p086_c0009] (4) OPEB Expense and Deferred Outflows of Resources and Deferred Inflows of Resources Related to OPEB
+[p086_c0010] For the years ended December 31, 2022 and 2021, the MTA recognized OPEB expense of $1.89 billion and $1.87 billion, respectively.
+[p086_c0011] At December 31, 2022 and 2021, the MTA reported deferred outflows of resources and deferred inflows of resources related to OPEB as follows ($ in thousands) :
+[p086_c0012]
+
+```text
+September 30, 2023 December 31, 2022 Deferred Outflows of Resources Deferred Inflows of Resources Deferred Outflows of Resources Deferred Inflows of Resources Differences between expected and actual experience $ 414,192 $ 41,967 $ 414,192 $ 41,967 Changes of assumptions 1,952,237 1,468,704 1,952,237 1,468,704 Net difference between projected and actual earnings on OPEB plan investments 47,114 - 47,114 - Changes in proportion and differences between contributions and proportionate share of contributions 1,184,355 1,184,355 1,184,355 1,184,355 Employer contributions to the plan subsequent to the measurement of net OPEB liability 2,165,579 846,299 - Total $ 5,763,477 $ 2,695,026 $ 4,444,197 $ 2,695,026
+```
+[p086_c0013] _Master Page # 86 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 87
+
+### [p087_c0001] Metropolitan Transportation Authority
+### [p087_c0002] DRAFT
+### [p087_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p087_c0004] The annual differences between the projected and actual earnings on investments are amortized over a 5-year closed period beginning the year in which the difference occurs. The annual differences between expected and actual experience and changes in assumptions are amortized over a 7.6-year closed period, beginning the year in which the deferred amount occurs.
+[p087_c0005] For the years ended December 31, 2022 and 2021, $846.3 and $813.2 were reported as employer contributions subsequent to measurement date. This amount includes both MTA's contributions subsequent to the measurement date and an implicit rate subsidy adjustment that will be recognized as a reduction of the net OPEB liability in the year ending December 31, 2023 and December 31, 2022, respectively. Other amounts reported as deferred outflows of resources and deferred inflows of resources related to OPEB at December 31, 2022 will be recognized in OPEB expense as follows:
+[p087_c0006]
+
+```text
+2023 $ 142,130 2024 133,532 2025 66,689 2026 145,935 2027 244,288 Thereafter 170,298 $ 902,872
+```
+[p087_c0007] _Master Page # 87 of 175 - Audit 73 Committee Meeting 1/29/2024_
+
+## Page 88
+
+### [p088_c0001] Metropolitan Transportation Authority
+### [p088_c0002] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p088_c0003] DRAFT
+### [p088_c0004] 6. CAPITAL ASSETS
+[p088_c0005] Capital assets and improvements include all land, buildings, equipment, and infrastructure of the MTA having a minimum useful life of two years and having a cost of more than $25 thousand. Capital assets are stated at historical cost, or at estimated historical cost based on appraisals, or on other acceptable methods when historical cost is not available. GASB 87 leases are classified as right-of-use assets and measured at the present value of the initial measurement of the lease liability, plus any payments made to the lessor at or before the commencement of the lease term and certain direct costs. Accumulated depreciation and amortization are reported as reductions of fixed assets and right-of-use assets. Depreciation is computed using the straight-line method based upon estimated useful lives of 25 to 50 years for buildings, 2 to 40 years for equipment, and 25 to 100 years for infrastructure. Right-of-use assets and leasehold improvements are amortized over the term of the lease or the life of the asset whichever is less. Capital and right-of-use assets consist of the following at December 31, 2022 and September 30, 2023 (in millions):
+[p088_c0006]
+
+```text
+Balance December 31, 2021 (Restated)* Balance December 31, 2022 Balance December 31, 2023 2021 2022 2023 Reclassifications Reclassifications Reclassifications Additions / Deletions / Reclassifications Reclassifications Reclassifications Reclassifications Reclassifications Reclassifications Capital assets not being depreciated: Land $ 249 $ 82 $ - $ 331 $ - $ 331 Construction work-in-progress 23,377 6,415 7,195 22,597 11,644 15,169 Total capital assets not being depreciated 23,626 6,497 7,195 22,928 11,644 15,500 Capital assets being depreciated: Buildings and structures 22,485 2,794 5 25,274 8,378 33,652 Bridges and tunnels 4,168 253 - 4,421 24 4,445 Equipment: Passenger cars and locomotives 14,324 197 42 14,479 209 14,665 Buses 3,869 456 336 3,989 84 3,936 Infrastructure 30,520 2,134 14 32,640 2,400 35,040 Other 29,060 1,332 6 30,386 477 30,858 Total capital assets being depreciated 104,426 7,166 403 111,189 11,572 122,596 Less accumulated depreciation: Buildings and structures 9,259 632 2 9,889 548 10,437 Bridges and tunnels 740 43 - 783 34 817 Equipment: Passenger cars and locomotives 8,144 403 42 8,505 293 8,780 Buses 2,316 257 336 2,237 207 2,307 Infrastructure 12,598 981 12 13,567 750 14,317 Other 11,316 977 5 12,288 769 13,053 Total accumulated depreciation 44,373 3,293 397 47,269 2,601 49,711 Total capital assets being depreciated - net 60,053 3,873 6 63,920 8,971 72,885 Capital assets - net $ 83,679 $ 10,370 $ 7,201 $ 86,848 $ 13,187 $ 88,385
+```
+[p088_c0007] _Master Page # 88 of 175 - Audit Committee Meeting 1/29/2024_
+[p088_c0008] _74_
+
+## Page 89
+
+### [p089_c0001] DRAFT
+### [p089_c0002] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p089_c0003]
+
+```text
+Balance December 31, 2021 (Restated)* Additions / Reclassifications Deletions / Reclassifications Balance December 31, 2022 Additions / Reclassifications Deletions / Reclassifications Balance September 30, 2023 Right of Use Assets being amortized: Leased buildings and structures $ 745 $ - $ - $ 745 $ 11 $ - $ 756 Leased equipment and vehicles 36 5 - 41 - - 41 Leased other 4 - - 4 4 - 8 Total Right of Use Assets being amortized 785 5 - 790 15 - 805 Less accumulated amortization: Leased buildings and structures 52 53 - 105 38 - 143 Leased equipment and vehicles 12 14 - 26 8 - 34 Leased other - 1 - 1 1 - 2 Total accumulated amortization 64 68 - 132 47 - 179 Right of Use Assets being amortized – net 721 (63) - 658 (32) - 626 Total Capital Assets, including Right of Use Assets, net of depreciation and amortization $ 84,400 $ 10,307 $ 7,201 $ 87,506 $ 13,155 $ 11,650 $ 89,011
+```
+[p089_c0004] _*Restated due to the adoption of GASB 87, Leases. Refer to 2022 MTA Consolidated Financial Statements._
+[p089_c0005] _Master Page # 89 of 175 - Audit Committee Meeting 1/29/2024_
+[p089_c0006] _75_
+
+## Page 90
+
+### [p090_c0001] Metropolitan Transportation Authority
+### [p090_c0002] DRAFT
+### [p090_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p090_c0004] In 2021, MTA Long Island Rail Road obtained legal title to a newly constructed rail yard on its property in accordance to an agreement with the developer. The agreement provides for the developer to construct a rail yard for MTA Long Island Rail Road to store and service trains in a new location in exchange for development rights. A gain of $266.6 for the fair market value of the assets were recognized at the date of conveyance.
+[p090_c0005] In December 2021, MTA obtained legal title to the wireless telecommunications equipment installed on its property according to the network license agreement entered into with the licensee. The license agreement provides for the licensee to construct, operate, and maintain the wireless network. This asset was transferred by MTA to MTA Long Island Rail Road as a non-cash capital contribution recorded at $27.3 representing the fair market value at the date of conveyance. In addition, in December 2021, MTA obtained legal title to work in process wireless telecommunications equipment to be installed on its property according to the network license agreement entered into with the licensee. The work in process assets were transferred by MTA to MTA Long Island Rail Road as a non-cash capital contribution recorded at $33.2 representing the fair market value at the date of conveyance.
+[p090_c0006] In December 2021, MTA obtained legal title to the wireless telecommunications equipment installed on the MTA New York City Transit Authority's property according to the network license agreement that MTA entered into with the licensee. The license agreement provides for the licensee to construct, operate, and maintain the wireless network. This asset was transferred by MTA to the MTA New York City Transit Authority as a non-cash capital contribution recorded at $73.3 representing the fair market value at the date of conveyance.
+[p090_c0007] Capital assets acquired prior to April 1982 for MTA New York City Transit were funded primarily by New York City with capital grants made available to MTA New York City Transit. New York City has title to a substantial portion of such assets and, accordingly, these assets are not recorded on the books of the MTA. Subsequent acquisitions, which are part of the MTA Capital Program, are recorded at cost by MTA New York City Transit. In certain instances, title to MTA Bridges and Tunnels' real property may revert to New York City in the event the MTA determines such property is unnecessary for its corporate purpose. With respect to MTA Metro-North Rail Road, capital assets completely funded by CDOT are not reflected in MTA's financial statements, as ownership is retained by CDOT.
+[p090_c0008] For certain construction projects, the MTA holds in various trust accounts marketable securities and cash pledged by third-party contractors. At September 30, 2023 and December 31, 2022, these retainage accounts, which are not included in these financial statements, totaled $143.3 and $155.0, respectively, including securities with a fair value of $81.2 and $131.1, respectively.
+[p090_c0009] As of September 30, 2023, $61.8 billion is unexpended from the MTA's Capital Program (2005-2024) and $21 billion has been committed.
+[p090_c0010] As of December 31, 2022, $66.6 billion is unexpended from the MTA's Capital Program (2005-2024) and $22.9 billion has been committed.
+[p090_c0011] _Master Page # 90 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 91
+
+### [p091_c0001] Metropolitan Transportation Authority
+### [p091_c0002] DRAFT
+### [p091_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p091_c0004] 7. LONG-TERM DEBT
+[p091_c0005]
+
+```text
+(In millions) Original Issuance December 31, 2022 Issued Retired September 30, 2023 MTA: Transportation Revenue Bonds 1.43%–5.15% due through 2057 $ 44,080 $ 21,283 $ - $ 735 $ 20,548 Bond Anticipation Notes 1.33% due through 2023 23,635 3,707 - 800 2,907 Dedicated Tax Fund Bonds 1.86%–5.00% due through 2057 11,527 4,788 496 4,292 79,242 29,778 - 2,031 27,747 Net unamortized bond premium - 845 - 208 637 79,242 30,623 - 2,239 28,384 TBTA: General Revenue Bonds 1.00%–5.5% due through 2057 11,142 8,320 1,198 744 8,774 Payroll Mobility Tax Senior Lien Obligations 2%–5.5% due through 2057 3,229 8,159 1,366 32 9,493 Subordinate Revenue Bonds 1.00%–5.5% due through 2032 1,832 719 - 378 341 Sales Tax Revenue Bonds 3.73%–5.5% due through 2057 1,954 700 1,254 - 1,954 Bond Anticipation Notes 5.0% due through 2025 193 193 - - 193 18,350 18,091 3,818 1,154 20,755 Net unamortized bond premium - 1,689 282 203 1,768 18,350 19,780 4,100 1,357 22,523 MTA Hudson Rail Yards Trust: MTA Hudson Rail Yards Trust Obligations 1.88%–2.65% due through 2056 1,220 804 - 8 796 Net unamortized bond premium - 86 - 1 85 1,220 890 - 9 881 Total $ 98,812 $ 51,293 $ 4,100 $ 3,605 $ 51,788 Current portion $ 4,800 $ 3,855 Long-term portion $ 46,493 $ 47,933
+```
+[p091_c0006] _Master Page # 91 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 92
+
+### [p092_c0001] Metropolitan Transportation Authority
+### [p092_c0002] DRAFT
+### [p092_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p092_c0004]
+
+```text
+(In millions) Original Issuance December 31, 2021 Issued Retired December 31, 2022 MTA: Transportation Revenue Bonds 1.43%-5.15% due through 2057 $ 44,080 $ 23,950 $ 311 $ 2,978 $ 21,283 Bond Anticipation Notes 1.33% due through 2023 23,635 13,004 - 9,297 3,707 Dedicated Tax Fund Bonds 1.86%-5.00% due through 2057 11,527 4,681 436 329 4,788 79,242 41,635 747 12,604 29,778 Net unamortized bond premium - 1,158 74 387 845 79,242 42,793 821 12,991 30,623 TBTA: General Revenue Bonds 1%-5.5% due through 2057 10,314 8,165 400 245 8,320 Payroll Mobility Tax Senior Lien Obligations 2%-5.5% due through 2057 2,464 2,464 5,704 9 8,159 Subordinate Revenue Bonds 1%-5.5% due through 2032 1,832 795 - 76 719 Sales Tax Revenue Bonds 3.73%-5.5% due through 2057 700 - 700 - 700 Bond Anticipation Notes 5.0% due through 2025 193 193 - - 193 15,503 11,617 6,804 330 18,091 Net unamortized bond premium - 1,173 673 157 1,689 15,503 12,790 7,477 487 19,780 MTA Hudson Rail Yards Trust: MTA Hudson Rail Yards Trust Obligations 1.88%-2.65% due through 2056 1,220 830 - 26 804 Net unamortized bond premium - 87 - 1 86 1,220 917 - 27 890 Total $ 95,965 $ 56,500 $ 8,298 $ 13,505 $ 51,293 Current portion $ 8,069 $ 4,800 Long-term portion $ 48,431 $ 46,493
+```
+[p092_c0005] MTA Transportation Revenue Bonds — Prior to 2023, MTA issued sixty-nine Series of Transportation Revenue Bonds secured under its General Resolution Authorizing Transportation Revenue Obligations adopted on March 26, 2002 in the aggregate principal amount of $36,956. The Transportation Revenue Bonds are MTA's special obligations payable solely from transit and commuter systems revenues and certain state and local operating subsidies.
+[p092_c0006] On March 16, 2023, MTA purchased $1,032,146 for three portfolios of State and Local Governments Securities (SLGS) sufficient to pre-pay all or a portion of interest due on certain MTA Dedicated Tax Bond Funds, MTA Transportation Revenue Bonds, and TBTA Payroll Mobility Tax Senior Lien Bonds through November 15, 2026. The funds were deposited in three escrow accounts. The establishment of the Escrow Fund is not intended to constitute an economic or legal defeasance of the Bonds and the MTA and TBTA retains the ability, in its sole discretion, to withdraw in whole or in part the amounts deposited in the Escrow Fund at any time should such amounts be needed for any other authorized purpose.
+[p092_c0007] The breakdown of the portfolios were allocated as follows: Dedicated Tax Bond funds, Series 2010A-2, together with the Series 2009C Bonds, $181,749; MTA Transportation Revenue Bonds, Series 2020E Bonds, together with the Series 2006B, the Series 2010A, Series 2010B-1, Series 2010C-1, Series 2010E and the Series 2020D Bonds, $582,681; TBTA Payroll Mobility Tax Senior Lien Bonds Subseries 2022D-2 Bonds and, together with the Series 2022C and the Series 2022D-1a Bonds, $267,716.
+[p092_c0008] On July 19, 2023, MTA extended its irrevocable direct-pay LOC issued by Barclays Bank PLC that is associated with Transportation Revenue Variable Rate Refunding Bonds, Subseries 2012G-1 for three years to July 17, 2026.
+[p092_c0009] On September 19, 2023, Moody's improved the rating outlook on the Transportation Revenue Bonds from stable to positive and affirmed their rating of A3.
+[p092_c0010] _Master Page # 92 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 93
+
+### [p093_c0001] Metropolitan Transportation Authority
+### [p093_c0002] DRAFT
+### [p093_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p093_c0004] MTA Bond Anticipation Notes — From time to time, MTA issues Transportation Revenue Bond Anticipation Notes in accordance with the terms and provisions of the General Resolution described above in the form of commercial paper to fund its transit and commuter capital needs. The interest rate payable on the notes depends on the maturity and market conditions at the time of issuance. The MTA Act requires MTAHQ to periodically (at least each five years) refund its bond anticipation notes with bonds.
+[p093_c0005] MTA Revenue Anticipation Notes — From time to time, MTA issues Revenue Anticipation Notes under its Revolving Credit Agreements with JPMorgan Chase Bank National Association and Bank of America National Association.
+[p093_c0006] MTA State Service Contract Bonds — Prior to 2023, MTA issued two Series of State Service Contract Bonds secured under its State Service Contract Obligation Resolution adopted on March 26, 2002, in the aggregate principal amount of $2,395. Currently, there are no outstanding bonds. The State Service Contract Bonds are MTA's special obligations payable solely from certain payments from the State of New York under a service contract.
+[p093_c0007] MTA Dedicated Tax Fund Bonds — Prior to 2023, MTA issued twenty-three Series of Dedicated Tax Fund Bonds secured under its Dedicated Tax Fund Obligation Resolution adopted on March 26, 2002, in the aggregate principal amount of $10,147. The Dedicated Tax Fund Bonds are MTA's special obligations payable solely from monies held in the Pledged Amounts Account of the MTA Dedicated Tax Fund. State law requires that the MTTF revenues and MMTOA revenues (described above in Note 2 under "Nonoperating Revenues") be deposited, subject to appropriation by the State Legislature, into the MTA Dedicated Tax Fund.
+[p093_c0008] On March 16, 2023, MTA purchased $1,032,146 for three portfolios of State and Local Governments Securities (SLGS) sufficient to pre-pay all or a portion of interest due on certain MTA Dedicated Tax Bond Funds, MTA Transportation Revenue Bonds, and TBTA Payroll Mobility Tax Senior Lien Bonds through November 15, 2026. The funds were deposited in three escrow accounts. The establishment of the Escrow Fund is not intended to constitute an economic or legal defeasance of the Bonds and the MTA and TBTA retains the ability, in its sole discretion, to withdraw in whole or in part the amounts deposited in the Escrow Fund at any time should such amounts be needed for any other authorized purpose.
+[p093_c0009] The breakdown of the portfolios were allocated as follows: Dedicated Tax Bond funds, Series 2010A-2, together with the Series 2009C Bonds, $181,749; MTA Transportation Revenue Bonds, Series 2020E Bonds, together with the Series 2006B, the Series 2010A, Series 2010B-1, Series 2010C-1, Series 2010E and the Series 2020D Bonds, $582,681; TBTA Payroll Mobility Tax Senior Lien Bonds Subseries 2022D-2 Bonds and, together with the Series 2022C and the Series 2022D-1a Bonds, $267,716.
+[p093_c0010] MTA Certificates of Participation — Prior to 2023, MTA (solely on behalf of MTA Long Island Rail Road and MTA Metro-North Railroad), MTA New York City Transit and MTA Bridges and Tunnels executed and delivered three Series of Certificates of Participation in the aggregate principal amount of $807 to finance certain building and leasehold improvements to an office building at Two Broadway in Manhattan occupied principally by MTA New York City Transit, MTA Bridges and Tunnels, MTA Construction and Development, and MTAHQ. The Certificates of Participation represented proportionate interests in the principal and interest components of Base Rent paid severally, but not jointly, in their respective proportionate shares by MTA New York City Transit, MTA, and MTA Bridges and Tunnels, pursuant to a Leasehold Improvement Sublease Agreement.
+[p093_c0011] MTA Bridges and Tunnels General Revenue Bonds — Prior to 2023, MTA Bridges and Tunnels issued thirty-six Series of General Revenue Bonds, secured under its General Resolution Authorizing General Revenue Obligations adopted on March 26, 2002, in the aggregate principal amount of $14,574. The General Revenue Bonds are MTA Bridges and Tunnels' general obligations payable generally from the net revenues collected on the bridges and tunnels operated by MTA Bridges and Tunnels.
+[p093_c0012] On February 14, 2023, MTA issued $828,225 TBTA General Revenue Refunding Bonds, Series 2023A. Proceeds from the transaction were used to refund $930,530 of existing bonds as follows:
+- [p093_c0013] · $60,715 TBTA General Revenue Bonds, Subseries 2009A-1; · $270,025 TBTA General Revenue Refunding Bonds, Series 2012B; · $113,340 TBTA General Revenue Refunding Bonds, Series 2012A; · $118,035 TBTA General Revenue Bonds, Series 2013C; and · $368,415 TBTA Subordinate Revenue Refunding Bonds, Series 2013A.
+[p093_c0014] The refunding resulted in net present value savings of $104,994 or 11.28% of the par amount of the refunded bonds. The Series 2023A bonds were priced as fixed rate tax-exempt bonds with a final maturity of November 15, 2039.
+[p093_c0015] _Master Page # 93 of 175 - Audit 79 Committee Meeting 1/29/2024_
+
+## Page 94
+
+### [p094_c0001] Metropolitan Transportation Authority
+### [p094_c0002] DRAFT
+### [p094_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p094_c0004] On June 22, 2023, MTA effectuated a mandatory tender and remarketed $75.560 of Triborough Bridge and Tunnel Authority General Revenue Variable Rate Bonds, Series 2001C because the irrevocable direct-pay Letter of Credit (LOC) relating to the Series 2001C Bonds issued by State Street Bank and Trust Company, was expiring by its terms and was substituted with an irrevocable direct-pay LOC issued by Barclays Bank PLC. The LOC will expire on June 22, 2028.
+[p094_c0005] On June 22, 2023, MTA effectuated a mandatory tender and remarketed $185.000 of Triborough Bridge and Tunnel Authority General Revenue Variable Rate Refunding Bonds, Subseries 2005B-3 because the irrevocable direct-pay LOC relating to the Subseries 2005B-3 Bonds issued by State Street Bank and Trust Company was expiring by its terms and was substituted with an irrevocable direct-pay LOC issued by Bank of America, N.A. The LOC will expire on June 22, 2027.
+[p094_c0006] On July 19, 2023, MTA extended its irrevocable direct-pay LOC issued by Barclays Bank PLC that is associated with Triborough Bridge and Tunnel Authority General Revenue Variable Rate Bonds, Series 2005A for four years to July 19, 2028.
+[p094_c0007] On August 17, 2023, MTA issued $370.030 Triborough Bridge and Tunnel Authority General Revenue Bonds, Series 2023B. Proceeds from the transaction were used to finance existing approved bridge and tunnel capital projects and to refinance $74.605 Triborough Bridge and Tunnel Authority General Revenue Refunding Bonds, Series 2013B. The refunding resulted in net present value savings of $4.895 or 6.56% of the par amount of the refunded bonds. The Series 2023B bonds were priced as fixed rate tax-exempt bonds with a final maturity of November 15, 2053.
+[p094_c0008] MTA Bridges and Tunnels Subordinate Revenue Bonds — Prior to 2023, MTA Bridges and Tunnels issued twelve Series of Subordinate Revenue Bonds secured under its 2001 Subordinate Revenue Resolution Authorizing Subordinate Revenue Obligations adopted on March 26, 2002, in the aggregate principal amount of $4,066. The Subordinate Revenue Bonds are MTA Bridges and Tunnels' special obligations payable generally from the net revenues collected on the bridges and tunnels operated by MTA Bridges and Tunnels after the payment of debt service on the MTA Bridges and Tunnels General Revenue Bonds described in the preceding paragraph.
+[p094_c0009] MTA Bridges and Tunnels Second Subordinate Bond Anticipation Notes — On June 10, 2021, MTA issued $192.835 of Triborough Bridge and Tunnel Authority Second Subordinate Bond Anticipation Notes, Series 2021A. Proceeds from the transaction will be used to finance costs related to the design, build, and installation of infrastructure, tolling systems and allowable implementation expenses necessary for the operation of the Central Business District Tolling Program. The Series 2021A notes were issued as fixed rate tax-exempt notes with a final maturity of November 1, 2025.
+[p094_c0010] MTA Bridges and Tunnels Payroll Mobility Tax Senior Lien Bonds — Prior to 2023, MTA issued seven Series of Triborough Bridge and Tunnel Authority Payroll Mobility Tax Senior Lien Bonds secured under its 2021 TBTA PMT Resolution adopted on March 17, 2021 in the aggregate principal amount of $3,886. Each of the TBTA PMT Senior Lien Obligations and any MTA PMT Senior Lien Obligations issued pursuant to the MTA PMT Resolution, adopted by the Board on November 18, 2020, are secured by a first lien on, and parity pledge of, the PMT Receipts, consisting of two distinct revenue streams: Mobility Tax Receipts and MTA Aid Trust Account Receipts (also referred to as "ATA Receipts"). MTA and MTA Bridges and Tunnels have entered into the Financing Agreement, dated as of April 9, 2021, to provide the mechanism by which MTA and MTA Bridges and Tunnels share PMT Receipts on a parity basis (i) first with respect to the PMT Senior Lien and then (ii) with respect to PMT Second Lien. Under State law, the MTA PMT Senior Lien Indebtedness and the MTA Bridges and Tunnels PMT Senior Lien Indebtedness are special obligations of MTA and MTA Bridges and Tunnels, respectively, which means that they are payable solely from a gross lien on the money pledged for payment under the MTA Payroll Mobility Tax Obligation Resolution and the MTA Bridges and Tunnels Payroll Mobility Tax Obligation Resolution. Such bonds are not general obligations of MTA or MTA Bridges and Tunnels.
+[p094_c0011] On January 12, 2023, MTA issued $764.950 Triborough Bridge and Tunnel Authority Payroll Mobility Tax Senior Lien Refunding Green Bonds, Series 2023A. Proceeds from the transaction were used to refund the following:
+- [p094_c0012] - $33.710 MTA Transportation Revenue Variable Rate Refunding Bonds, Subseries 2002D-1 - $47.350 MTA Transportation Revenue Bonds, Series 2012B; - $18.415 MTA Transportation Revenue Bonds, Series 2012C; - $9.660 MTA Transportation Revenue Refunding Bonds, Series 2012D; - $74.010 MTA Transportation Revenue Bonds, Series 2012E; - $118.940 MTA Transportation Revenue Refunding Bonds, Series 2012F; - $9.920 MTA Transportation Revenue Bonds, Series 2012H; and - $452.945 Dedicated Tax Fund Refunding Bonds, Series 2012A.
+[p094_c0013] _Master Page # 94 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 95
+
+### [p095_c0001] Metropolitan Transportation Authority
+### [p095_c0002] DRAFT
+### [p095_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p095_c0004] The refunding resulted in net present value savings of $61.083 or 7.37% of the par amount of the refunded bonds. The Series 2023A bonds were priced as fixed rate tax-exempt bonds with a final maturity of November 15, 2037.
+[p095_c0005] On March 16, 2023, MTA purchased $1,032.146 for three portfolios of State and Local Governments Securities (SLGS) sufficient to pre-pay all or a portion of interest due on certain MTA Dedicated Tax Bond Funds, MTA Transportation Revenue Bonds, and TBTA Payroll Mobility Tax Senior Lien Bonds through November 15, 2026. The funds were deposited in three escrow accounts. The establishment of the Escrow Fund is not intended to constitute an economic or legal defeasance of the Bonds and the MTA and TBTA retains the ability, in its sole discretion, to withdraw in whole or in part the amounts deposited in the Escrow Fund at any time should such amounts be needed for any other authorized purpose.
+[p095_c0006] The breakdown of the portfolios were allocated as follows: Dedicated Tax Bond funds, Series 2010A-2, together with the Series 2009C Bonds, $181.749; MTA Transportation Revenue Bonds, Series 2020E Bonds, together with the Series 2006B, the Series 2010A, Series 2010B-1, Series 2010C-1, Series 2010E and the Series 2020D Bonds, $582.681; TBTA Payroll Mobility Tax Senior Lien Bonds Subseries 2022D-2 Bonds, together with the Series 2022C and the Series 2022D-1a Bonds, $267.716.
+[p095_c0007] On July 6, 2023, MTA issued $600 of Triborough Bridge and Tunnel Authority Payroll Mobility Tax Senior Lien Green Bonds, Series 2023B. Proceeds from the transaction were used to finance approved transit and commuter projects and to refinance $193.565 MTA Transportation Revenue Variable Rate Bonds, Subseries 2015E-2.
+[p095_c0008] MTA Bridges and Tunnels Sales Tax Revenue Bonds — Prior to 2023, MTA issued one Series of Triborough Bridge and Tunnel Authority Sales Tax Revenue Bonds (TBTA Capital Lockbox – City Sales Tax) secured under its 2021 TBTA Special Obligation Resolution Authorizing Sales Tax Revenue Obligation (“TBTA Capital Lockbox-City Sales Tax”) adopted on September 15, 2021 in the aggregate principal amount of $700. The Sales Tax Revenue Bonds are MTA Bridges and Tunnels’ special, not general, obligations, payable solely from monies in the Obligations Trust Estate pledged by the TBTA Sales Tax Resolution derived primarily from the Sales Tax Receipts paid from the Central Business District Tolling Capital Lockbox Fund and deposited into the Revenue Fund.
+[p095_c0009] On March 14, 2023, MTA issued $1,254 billion Triborough Bridge and Tunnel Authority Sales Tax Revenue Bonds, Series 2023A (“the Series 2023A Bonds”). Proceeds from the transaction were used (i) finance approved transit and commuter projects included in the 2020-2024 Capital Program, (ii) finance a portion of the capital costs of the Central Business District Tolling Program, and (iii) pay certain financing, legal and miscellaneous expenses.
+[p095_c0010] MTA Payroll Mobility Tax Bond Anticipation Notes - Prior to 2023, MTA issued three series of MTA Payroll Mobility Tax Bond Anticipation Notes aggregating $4,625.19 with various maturities through December 16, 2024. Proceeds from the transaction were used to finance COVID-19 Lost Revenues and Increased Costs and to refinance outstanding MTA Transportation Revenue Bond Anticipation Notes.
+[p095_c0011] MTA Hudson Rail Yards Trust Obligations — The MTA Hudson Rail Yards Trust Obligations, Series 2016A (“Series 2016A Obligations”) were executed and delivered on September 22, 2016 by Wells Fargo Bank National Association, as Trustee (“Trustee”), to (i) retire the outstanding Transportation Revenue Bond Anticipation Notes, Series 2016A of the MTA, which were issued to provide interim financing of approved capital program transit and commuter projects, (ii) finance approved capital program transit and commuter projects of the affiliates and subsidiaries of the MTA, (iii) fund an Interest Reserve Requirement in an amount equal to one-sixth (1/6) of the greatest amount of Interest Components (as hereinafter defined) in the current or any future year, (iv) fund a portion of the Capitalized Interest Fund requirement, and (v) finance certain costs of issuance.
+[p095_c0012] Pursuant to the Financing Agreement (as hereinafter defined), the MTA has agreed to pay to, or for the benefit of, the Trustee the “MTA Financing Agreement Amount,” consisting of principal and interest components. The Series 2016A Obligations evidence the interest of the Owners thereof in such MTA Financing Agreement Amount payable by the MTA pursuant to the Financing Agreement. The principal amount of the Series 2016A Obligations represent the principal components of the MTA Financing Agreement Amount (“Principal Components”) and the interest represent the interest components of the MTA Financing Agreement Amount (“Interest Components”). The Series 2016A Obligations (and the related Principal Components and Interest Components) are special limited obligations payable solely from the Trust Estate established under the MTA Hudson Rail Yards Trust Agreement, dated as of September 1, 2016 (“Trust Agreement”), by and between the MTA and the Trustee.
+[p095_c0013] The Trust Estate consists principally of the regularly scheduled rent, options to purchase the fee interest and other related payments to be paid by the tenants of certain parcels being developed on and above the Eastern Rail Yard and Western Rail Yard portions of the West Side Yards (“Hudson Rail Yards”) currently operated by The Long Island Rail Road Company (“LIRR”).
+[p095_c0014] Refer to Note 9 for further information on Financed Purchases.
+[p095_c0015] _Master Page # 95 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 96
+
+### [p096_c0001] Metropolitan Transportation Authority
+### [p096_c0002] DRAFT
+### [p096_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p096_c0004] MTA Grant Anticipation Notes - On December 9, 2021, MTA issued $4,000,000 of Grant Anticipation Notes, Series 2021A. Proceeds from the transaction were used to reimburse MTA for certain operating expenses and lost revenues since January 20, 2020, due to the COVID-19 public health emergency. The Series 2021A Notes were priced as fixed rate federally taxable notes with a final maturity of November 15, 2022.
+[p096_c0005] On February 10, 2022, the Grant Anticipation Notes, Series 2021A were called for redemption prior to maturity.
+[p096_c0006] Debt Limitation — The New York State Legislature has imposed limitations on the aggregate amount of debt that the MTA and MTA Bridges and Tunnels can issue to fund the approved transit and commuter capital programs. The current aggregate ceiling, subject to certain exclusions, is $90,100 compared with issuances totaling approximately $44,825. The MTA expects that the current statutory ceiling will allow it to fulfill the bonding requirements of the approved Capital Programs.
+[p096_c0007] Bond Refundings — From time to time, the MTA and MTA Bridges and Tunnels issue refunding bonds to achieve debt service savings or other benefits. The proceeds of refunding bonds are generally used to purchase U.S. Treasury obligations that are placed in irrevocable trusts. The principal and interest within the trusts will be used to repay the refunded debt. The trust account assets and the refunded debt are excluded from the consolidated statements of net position.
+[p096_c0008] At September 30, 2023 and December 31, 2022, the following amounts of MTA bonds, which have been refunded, remain valid debt instruments and are secured solely by and payable solely from their respective irrevocable trusts.
+[p096_c0009]
+
+```text
+(In millions) September 30, 2023 December 31, 2022 MTA Transit and Commuter Facilities: Transit Facilities Revenue Bonds $ 54 $ 79 Commuter Facilities Revenue Bonds 53 76 MTA Bridges and Tunnels: General Purpose Revenue Bonds 122 160 Special Obligation Subordinate Bonds 26 43 Total $ 255 $ 358
+```
+[p096_c0010] For the nine months ended September 30, 2023, MTA refunding transactions decreased aggregate debt service payments by $243 and provided an economic gain of $190. For the nine months ended September 30, 2022, MTA refunding transactions decreased aggregate debt service payments by $201 and provided an economic gain of $156. Details of bond refunding savings for the period ended September 30, 2023 and for the year ended December 31, 2022 are as follows (in millions):
+[p096_c0011]
+
+```text
+Refunding Bonds Issued in 2023 Series Date issued Par value Refunded Debt Service Savings (Increase) Net Present Value of Savings Triborough Bridge and Tunnel Authority Payroll Mobility Tax Senior Lien Refunding Green Bonds 2023A 1/12/2023 $ 1,029 $ 75 $ 61 Triborough Bridge and Tunnel Authority General Revenue Refunding Bonds 2023A 2/14/2023 924 126 105 Triborough Bridge and Tunnel Authority Payroll Mobility Tax Senior Lien Refunding Green Bonds 2023B 7/6/2023 175 36 19 Triborough Bridge and Tunnel Authority General Revenue Bonds 2023B-2 8/17/2023 70 6 5 Total Bond Refunding Savings $ 2,198 $ 243 $ 190
+```
+[p096_c0012] _Master Page # 96 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 97
+
+### [p097_c0001] Metropolitan Transportation Authority
+### [p097_c0002] DRAFT
+### [p097_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p097_c0004]
+
+```text
+Refunding Bonds Issued in 2022 Series Date issued Par value Refunded Debt Service Savings (Increase) Net Present Value of Savings Triborough Bridge and Tunnel Authority Payroll Mobility Tax Senior Lien Refunding Bonds 2022B 8/18/2022 $ 1,119 $ 174 $ 135 Triborough Bridge and Tunnel Authority Payroll Mobility Tax Senior Lien Green Bonds 2022D 9/15/2022 273 27 21 Triborough Bridge and Tunnel Authority Payroll Mobility Tax Senior Lien Green Bonds 2022E 11/1/2022 742 391 64 Total Bond Refunding Savings $ 2,134 $ 592 $ 220
+```
+[p097_c0005] Unamortized losses related to bond refundings were as follows:
+[p097_c0006]
+
+```text
+December 31, 2021 (Gain)/loss on refunding 2022 amortization December 31, 2022 (Gain)/loss on refunding Current year amortization September 30, 2023 MTA: Transportation Revenue Bonds $ 387 $ (109) $ (55) $ 223 $ (37) $ (19) $ 167 State Service Contract Bonds (12) - - (12) - - (12) Dedicated Tax Fund Bonds 189 (2) (16) 171 (35) (5) 131 564 (111) (71) 382 (72) (24) 286 TBTA: General Revenue Bonds 154 - (16) 138 (1) (58) 79 Subordinate Revenue Bonds 22 - (2) 20 - (24) (4) 176 - (18) 158 (1) (82) 75 Total $ 740 $ (111) $ (89) $ 540 $ (73) $ (106) $ 361
+```
+[p097_c0007] Debt Service Payments — Future principal and interest debt service payments at September 30, 2023 are as follows:
+[p097_c0008]
+
+```text
+MTA MTA BRIDGES AND TUNNELS Debt Service Principal Interest Principal Interest Principal Interest 2023 $ 3,620 $ 1,287 $ 235 $ 468 $ 3,855 $ 1,755 2024 $ 728 $ 1,077 $ 2,228 $ 924 2,956 2,001 2025 $ 675 $ 991 $ 618 $ 823 1,293 1,814 2026 $ 782 $ 935 $ 744 $ 786 1,526 1,721 2027 $ 773 $ 932 $ 946 $ 755 1,719 1,687 2028-2032 $ 5,173 $ 3,900 $ 4,245 $ 3,310 9,418 7,210 2033-2037 $ 4,807 $ 3,092 $ 2,090 $ 2,784 6,897 5,876 2038-2042 $ 4,435 $ 2,142 $ 2,126 $ 2,238 6,561 4,380 2043-2047 $ 3,558 $ 1,200 $ 2,706 $ 1,623 6,264 2,823 2048-2052 $ 2,930 $ 467 $ 3,013 $ 890 5,943 1,357 2053-2057 $ 1,062 $ 79 $ 1,287 $ 339 2,349 418 Thereafter - 517 71 517 71 Total $ 28,543 $ 16,102 $ 20,755 $ 15,011 $ 49,298 $ 31,113
+```
+[p097_c0009] The above interest amounts include both fixed-rate and variable-rate calculations. The interest rate assumptions for variable rate bonds are as follows:
+- [p097_c0010] • Transportation Revenue Refunding Bonds, Series 2002D — 4.45% per annum taking into account the interest rate swap plus the current fixed floating rate note spread. • Transportation Revenue Refunding Bonds, Series 2002G — 3.542% per annum taking into account the interest rate swap plus the current fixed floating rate note spread; and 4.00% per annum plus the current fixed floating rate note spread on the unhedged portion. • Transportation Revenue Bonds, Series 2005D — 3.561% per annum taking into account the interest rate swaps. • Transportation Revenue Bonds, Series 2005E — 3.561% per annum taking into account the interest rate swaps and 4.00% per annum on the unhedged portion. • Transportation Revenue Bonds, Series 2012A — 4.00% per annum plus the current fixed floating rate note spread.
+[p097_c0011] _Master Page # 97 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 98
+
+### [p098_c0001] Metropolitan Transportation Authority
+### [p098_c0002] DRAFT
+### [p098_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+- [p098_c0004] ● Transportation Revenue Bonds, Series 2012G — 3.563% per annum taking into account the interest rate swaps plus the current fixed floating rate note spread. ● Transportation Revenue Bonds, Series 2015E — 4.00% per annum. ● Dedicated Tax Fund Variable Rate Refunding Bonds, Series 2008A — 3.316% per annum taking into account the interest rate swaps plus the current fixed floating rate note spread; and 4.00% per annum plus the current fixed floating rate note spread on the unhedged portion. ● Dedicated Tax Fund Refunding Bonds, Subseries 2008B-3c — 4.00% per annum plus the current fixed floating rate note spread. ● MTA Bridges and Tunnels General Revenue Refunding Bonds, Series 2001C — 4.00% per annum. ● MTA Bridges and Tunnels General Revenue Bonds, Series 2003B — 4.00% per annum; and 4.00% per annum plus the current fixed floating rate note spread on Subseries 2003B-2. ● MTA Bridges and Tunnels General Revenue Bonds, Series 2005A — 4.00% per annum except from November 1, 2027 through November 1, 2030, 3.076% per annum taking into account the interest rate swap. ● MTA Bridges and Tunnels General Revenue Refunding Bonds, Series 2005B — 3.076% per annum based on the Initial Interest Rate Swaps plus the current fixed floating rate note spread. ● MTA Bridges and Tunnels General Revenue Bonds, Series 2018E — 4.00% per annum.
+[p098_c0005] Loans Payable – The MTA and the New York Power Authority (“NYP A”) entered into an updated Energy Services Program Agreement (“ESP Agreement”). The ESP Agreement authorized MTA affiliates and subsidiaries to enter into a Customer Installation Commitment (“CIC”) with NYP A for turn-key, energy efficiency projects, which would usually be long-term funded and constructed by NYP A. The repayment period for the NYP A loan can be up to 20 years, but can be repaid at any time without penalty.
+[p098_c0006] The Loans Payable debt service requirements at September 30, 2023 are as follows (in millions):
+[p098_c0007]
+
+```text
+Year Principal Interest Total 2023 $ 9 $ 2 $ 11 2024 8 2 10 2025 10 2 12 2026 8 2 10 2027 9 1 10 2028-2032 26 3 29 2033-2037 4 1 5 2038-2042 0 0 0 Total $ 74 $ 13 $ 87 Current portion $ 9 Long-term portion 65 Total NYP A Loans Payable $ 74
+```
+[p098_c0008] The above interest amounts include both fixed and variable rate calculations. Interest on the variable-rate loan is paid at the Securities Industry and Financial Markets Association Municipal Swap Index (“SIFMA”) rate and is reset annually.
+[p098_c0009] Tax Rebate Liability — Under the Internal Revenue Code of 1986, the MTA may accrue a liability for an amount of rebateable arbitrage resulting from investing low-yielding, tax-exempt bond proceeds in higher-yielding, taxable securities. The arbitrage liability is payable to the federal government every five years. No accruals or payments were made during the periods ended September 30, 2023 and December 31, 2022.
+[p098_c0010] _Master Page # 98 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 99
+
+### [p099_c0001] Metropolitan Transportation Authority
+### [p099_c0002] DRAFT
+### [p099_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p099_c0004] Liquidity Facility — MTA and MTA Bridges and Tunnels have entered into several Standby Bond Purchase Agreements (“SBPA”) and Letter of Credit Agreements (“LOC”) as listed on the table below.
+[p099_c0005]
+
+```text
+Resolution Series Swap Provider (Insurer) Type of Facility Exp. Date Transportation Revenue 2002G-1g Y TD Bank, N.A. Bank of Montreal, acting through its LOC 11/1/2024 Transportation Revenue 2005D-2 Y Chicago branch LOC 10/31/2025 Transportation Revenue 2005E-1 Y Barclays Bank LOC 8/18/2025 Transportation Revenue 2005E-2 Y Bank of America, N.A. Bank of Montreal, acting through its LOC 12/8/2023 Transportation Revenue 2012A-2 N Chicago branch LOC 6/2/2025 Transportation Revenue 2012G-1 Y Barclays Bank LOC 7/17/2026 Transportation Revenue 2012G-2 Y TD Bank, N.A. Bank of Montreal, acting through its LOC 11/1/2024 Transportation Revenue 2012G-4 Y Chicago branch LOC 10/31/2025 Transportation Revenue 2015E-1 N Barclays Bank LOC 8/18/2025 Transportation Revenue 2015E-3 N Bank of America, N.A. LOC 9/2/2025 Transportation Revenue 2020B-1 N PNC Bank LOC 3/22/2024 Transportation Revenue 2020B-2 N PNC Bank LOC 3/22/2024 Dedicated Tax Fund 2008A-1 Y TD Bank, N.A. LOC 6/13/2025 Dedicated Tax Fund 2008A-2a Y TD Bank, N.A. LOC 11/1/2026 Dedicated Tax Fund 2008A-2b Y PNC Bank LOC 10/24/2025 Dedicated Tax Fund 2008B-3c N PNC Bank LOC 10/24/2025 MTA Bridges and Tunnels General Revenue 2001C Y Barclays Bank LOC 6/22/2028 MTA Bridges and Tunnels General Revenue 2003B-1 N U.S. Bank National Association LOC 1/17/2025 MTA Bridges and Tunnels General Revenue 2005A Y Barclays Bank LOC 7/19/2028 MTA Bridges and Tunnels General Revenue 2005B-2a Y State Street LOC 1/21/2026 MTA Bridges and Tunnels General Revenue 2005B-2b Y State Street LOC 1/21/2026 MTA Bridges and Tunnels General Revenue 2005B-3 Y Bank of America, N.A. LOC 6/22/2027 MTA Bridges and Tunnels General Revenue 2005B-4c Y U.S. Bank National Association LOC 5/23/2025
+```
+[p099_c0006] _Master Page # 99 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 100
+
+### [p100_c0001] DRAFT
+### [p100_c0002] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p100_c0003] Derivative Instruments — Fair value for the swaps is calculated in accordance with GASB Statement No. 72, utilizing the income approach and Level 2 inputs. It incorporates the mid-market valuation, nonperformance risk of either MTA/ MTA Bridges and Tunnels or the counterparty, as well as bid/offer. The fair values were estimated using the zero-coupon method. This method calculates the future net settlement payments required by the swap, assuming that the current forward rates implied by the yield curve correctly anticipate future spot interest rates. These payments are then discounted using the spot rates implied by the current yield curve for hypothetical zero-coupon bonds due on the date of each future net settlement on the swap.
+[p100_c0004] The fair value balances and notional amounts of derivative instruments outstanding at September 30, 2023 and December 31, 2022, classified by type, and the changes in fair value of such derivative instruments from the year ended December 31, 2022 are as follows (in $ millions):
+### [p100_c0005] Derivative Instruments - Summary Information as of September 30, 2023
+[p100_c0006]
+
+```text
+Bond Resolution Credit Underlying Bond Series Type of Derivative Hedge Type Effective Methodology Trade/Hedge Association Date Notional Amount Fair Value MTA Bridges and Tunnels Senior Revenue Bonds 2018E & 2003B (Cit 2005B) SOFR Fixed Payer Cash Flow Synthetic Instrument / Dollar Offset 6/2/2005 $ 185,000 $ (1,560) MTA Bridges and Tunnels Senior Revenue Bonds 2003B-2,3,4 SOFR Fixed Payer Cash Flow Synthetic Instrument 6/2/2005 555,000 (4,681) MTA Bridges and Tunnels Senior Revenue Bonds 2005A (COPS 2004A) SOFR Fixed Payer Cash Flow Synthetic Instrument 4/1/2016 15,515 (0,164) MTA Bridges and Tunnels Senior Revenue Bonds 2001C (COPS 2004A) SOFR Fixed Payer Cash Flow Synthetic Instrument 12/5/2016 7,000 (0,085) MTA Dedicated Tax Fund Bonds 2008A SOFR Fixed Payer Cash Flow Synthetic Instrument 3/8/2005 257,495 (3,164) MTA Transportation Revenue Bonds 2002D-2 SOFR Fixed Payer Cash Flow Synthetic Instrument 7/11/2002 200,000 (19,664) MTA Transportation Revenue Bonds 2005D & 2005E SOFR Fixed Payer Cash Flow Synthetic Instrument 9/10/2004 300,300 (10,060) MTA Transportation Revenue Bonds 2012G SOFR Fixed Payer Cash Flow Synthetic Instrument 12/12/2007 355,075 (15,351) MTA Transportation Revenue Bonds 2003G-1 (COPS 2004A) SOFR Fixed Payer Cash Flow Synthetic Instrument 4/1/2016 46,805 0,003 MTA Bridges and Tunnels Payroll Mobility Tax Senior Lien Bonds 2022E SOFR Fixed Payer Cash Flow Regression 4/1/2016 88,330 (1,433) Total $ 2,010,520 $ (56,159)
+```
+### [p100_c0007] Derivative Instruments - Summary Information as of December 31, 2022
+[p100_c0008]
+
+```text
+Bond Resolution Credit Underlying Bond Series Type of Derivative Hedge Type Effective Methodology Trade/Hedge Association Date Notional Amount Fair Value MTA Bridges and Tunnels Senior Revenue Bonds 2018E & 2003B (Cit 2005B) Libor Fixed Payer Cash Flow Synthetic Instrument / Dollar Offset 6/2/2005 $ 186,100 $ (6,851) MTA Bridges and Tunnels Senior Revenue Bonds 2003B-2,3,4 Libor Fixed Payer Cash Flow Synthetic Instrument 6/2/2005 558,300 (20,553) MTA Bridges and Tunnels Senior Revenue Bonds 2005A (COPS 2004A) Libor Fixed Payer Cash Flow Synthetic Instrument 4/1/2016 17,690 (0,459) MTA Bridges and Tunnels Senior Revenue Bonds 2001C (COPS 2004A) Libor Fixed Payer Cash Flow Synthetic Instrument 12/5/2016 8,000 (0,226) MTA Dedicated Tax Fund Bonds 2008A Libor Fixed Payer Cash Flow Synthetic Instrument 3/8/2005 257,495 (8,948) MTA Transportation Revenue Bonds 2002D-2 Libor Fixed Payer Cash Flow Synthetic Instrument 7/11/2002 200,000 (26,627) MTA Transportation Revenue Bonds 2005D & 2005E Libor Fixed Payer Cash Flow Synthetic Instrument 9/10/2004 300,300 (18,473) MTA Transportation Revenue Bonds 2012G Libor Fixed Payer Cash Flow Synthetic Instrument 12/12/2007 355,075 (26,709) MTA Transportation Revenue Bonds 2003G-1 (COPS 2004A) Libor Fixed Payer Cash Flow Synthetic Instrument 4/1/2016 64,270 (0,448) MTA Bridges and Tunnels Payroll Mobility Tax Senior Lien Bonds 2022E Libor Fixed Payer Cash Flow Synthetic Instrument 4/1/2016 89,765 (3,551) Total $ 2,036,995 $ (112,845)
+```
+[p100_c0009] _86_
+[p100_c0010] _Master Page # 100 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 101
+
+### [p101_c0001] Metropolitan Transportation Authority
+### [p101_c0002] DRAFT
+### [p101_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p101_c0004]
+
+```text
+Changes In Fair Value Fair Value at September 30, 2023 Notional (in millions) Classification Amount (in millions) Classification Amount (in millions) Government activities Cash Flow hedges: Pay-fixed interest rate swaps Deferred outflow of resources $56.686 Debt $(56.159) $2,010.520
+```
+### [p101_c0005] Swap Agreements Relating to Synthetic Fixed Rate Debt
+[p101_c0006] Board-adopted Guidelines. The Related Entities adopted guidelines governing the use of swap contracts on March 26, 2002. The guidelines were amended and approved by the MTA Board on March 13, 2013. The guidelines establish limits on the amount of interest rate derivatives that may be outstanding and specific requirements that must be satisfied for a Related Entity to enter into a swap contract, such as suggested swap terms and objectives, retention of a swap advisor, credit ratings of the counterparties, collateralization requirements and reporting requirements.
+[p101_c0007] Objectives of synthetic fixed rate debt. To achieve cash flow savings through a synthetic fixed rate, MTA and MTA Bridges and Tunnels have entered into separate pay-fixed, receive-variable interest rate swaps at a cost anticipated to be less than what MTA and MTA Bridges and Tunnels would have paid to issue fixed-rate debt, and in some cases where Federal tax law prohibits an advance refunding to synthetically refund debt on a forward basis.
+[p101_c0008] Terms and Fair Values. The terms, fair values and counterparties of the outstanding swaps of MTA and MTA Bridges and Tunnels are reflected in the following tables (as of September 30, 2023).
+[p101_c0009]
+
+```text
+Metropolitan Transportation Authority Related Bonds Notional Amount as of 9/30/23 Effective Date Maturity Date Terms Counterparty and Ratings(S&P / Moody's / Fitch) Fair Value as of 9/30/23 TRB 2002D-2 $ 200.000 01/01/07 11/01/32 Pay 4.45%; receive 69% SOFR + 0.079% JPMorgan Chase Bank, NA (A+ / Aa2 / AA) $ (19.664) TRB 2005D & 2005E 225.225 11/02/05 11/01/35 Pay 3.561%; receive 67% SOFR + 0.0767% UBS AG (A+ / Aa3 / A+) (7.544) TRB 2005E 75.075 11/02/05 11/01/35 Pay 3.561%; receive 67% SOFR + 0.0767% AIG Financial Products (1) (BBB+ / Baa2 / BBB+) (2.514) TRB 2012G 355.075 11/15/12 11/01/32 Pay 3.563%; receive 67% SOFR + 0.0767% JPMorgan Chase Bank, NA (A+ / Aa2 / AA) (15.351) DTF 2008A 257.495 03/24/05 11/01/31 Pay 3.3156%; receive 67% SOFR + 0.0767% Bank of New York Mellon (AA- / Aa2 / AA) (3.163) Total $ 1,112.870 $ (48.236)
+```
+[p101_c0010] 1 Guarantor: American International Group, Inc., parent of AIG Financial Products.
+[p101_c0011] _Master Page # 101 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 102
+
+### [p102_c0001] Metropolitan Transportation Authority
+### [p102_c0002] DRAFT
+### [p102_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p102_c0004]
+
+```text
+MTA Bridges and Tunnels Related Bonds Notional Amount as of 9/30/23 Effective Date Maturity Date Terms Counterparty and Ratings (S&P / Moody's / Fitch) Fair Value as of 9/30/23 TBTA 2018E & 2003B 4 $ 185,000.000 07/07/05 01/01/32 Pay 3.076%; receive 67% SOFR + 0.0767% Citibank, N.A. (A+ / Aa3/ A+) $ (1,560) TBTA 2005B-2 185,000.000 07/07/05 01/01/32 Pay 3.076%; receive 67% SOFR + 0.0767% JPMorgan Chase Bank, NA (A+ / Aa2 / AA) (1,560) TBTA 2005B-3 185,000.000 07/07/05 01/01/32 Pay 3.076%; receive 67% SOFR + 0.0767% BNP Paribas North America (A+ / Aa3 / AA-) (1,560) TBTA 2005B-4 185,000.000 07/07/05 01/01/32 Pay 3.076%; receive 67% SOFR + 0.0767% UBS AG (A+ / Aa3 / A+) (1,560) TRB 2002G-1, TBTA 2022E, 2005A & 2001C 2,5 78,825.000 3 04/01/16 01/01/30 Pay 3.52%; receive 67% SOFR + 0.0767% U.S. Bank N.A. (A+ / A2/ A+) (0,839) 3 TRB 2002G-1, TBTA 2022E, 2005A & 2001C 2,5 78,825.000 3 04/01/16 01/01/30 Pay 3.52%; receive 67% SOFR + 0.0767% Wells Fargo Bank, N.A. (A+ / Aa2 / AA-) (0,839) 3 Total $ 897,650.000 $ (7,918)
+```
+[p102_c0005] 1 Guarantor: BNP Paribas.
+[p102_c0006] 2 Between November 22, 2016 and December 5, 2016, the Variable Rate Certificates of Participation, Series 2004A were redeemed. Corresponding notional amounts from the Series 2004A COPs were reassigned to MTA Bridges and Tunnels General Revenue Variable Rate Bonds, Series 2001C.
+[p102_c0007] 3 Pursuant to an Interagency Agreement (following novations from UBS in April 2016), MTA New York City Transit is responsible for 68.7%, MTA is responsible for 21.0%, and TBTA is responsible for 10.3% of the transaction.
+[p102_c0008] 4 On October 27, 2021 the 2002F bonds were changed to fixed-rate mode and a portion of the Citi swap was reassigned to the 2018E bonds.
+[p102_c0009] 5 On November 1, 2022 the TRB Series 2011B bonds were refunded with the PMT Series 2022E-2a bonds, and the portion of the U.S. Bank and Wells Fargo swaps associated with the 2011B bonds were allocated to the PMT 2022E bonds.
+[p102_c0010] SOFR: Secured Overnight Financing Rate
+[p102_c0011] TRB: Transportation Revenue Bonds
+[p102_c0012] DTF: Dedicated Tax Fund Bonds
+### [p102_c0013] Risks Associated with the Swap Agreements
+[p102_c0014] From MTA's and MTA Bridges and Tunnels' perspective, the following risks are generally associated with swap agreements:
+[p102_c0015] Credit Risk. The risk that a counterparty becomes insolvent or is otherwise not able to perform its financial obligations. To mitigate the exposure to credit risk, the swap agreements include collateral provisions in the event of downgrades to the swap counterparties' credit ratings. Generally, MTA and MTA Bridges and Tunnels' swap agreements contain netting provisions under which transactions executed with a single counterparty are netted to determine collateral amounts. Collateral may be posted with a third-party custodian in the form of cash, U.S. Treasury securities, or certain Federal agency securities. MTA and MTA Bridges and Tunnels require its counterparties to fully collateralize if ratings fall below certain levels (in general, at the Baa1/BBB+ or Baa2/BBB levels), with partial posting requirements at higher rating levels (details on collateral posting discussed further under "Collateralization/Contingencies"). As of September 30, 2023, all of the valuations were in liability positions to MTA and MTA Bridges and Tunnels; accordingly, no collateral was posted by any of the counterparties.
+[p102_c0016] The following table shows, as of September 30, 2023, the diversification, by percentage of notional amount, among the various counterparties that have entered into ISDA Master Agreements with MTA and/or MTA Bridges and Tunnels. The notional amount totals below include all swaps.
+[p102_c0017] _Master Page # 102 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 103
+
+### [p103_c0001] Metropolitan Transportation Authority
+### [p103_c0002] DRAFT
+### [p103_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p103_c0004]
+
+```text
+Counterparty S&P Moody's Fitch Notional Amount (in thousands) % of Total Notional Amount JPMorgan Chase Bank, NA A+ Aa2 AA $740,075 36.81% UBS AG A+ Aa3 A+ 410,225 20.40 The Bank of New York Mellon AA- Aa2 AA 257,495 12.81 Citibank, N.A. A+ Aa3 A+ 185,000 9.20 BNP Paribas US Wholesale Holdings, Corp. A+ Aa3 AA- 185,000 9.20 U.S. Bank National Association A+ A2 A+ 78,825 3.92 Wells Fargo Bank, N.A. A+ Aa2 AA- 78,825 3.92 AIG Financial Products Corp. BBB+ Baa2 BBB+ 75,075 3.74 Total $2,010,520 100.00%
+```
+[p103_c0005] Interest Rate Risk. MTA and MTA Bridges and Tunnels are exposed to interest rate risk on the interest rate swaps. On the pay-fixed, receive variable interest rate swaps, as LIBOR or SIFMA (as applicable) decreases, MTA and MTA Bridges and Tunnels' net payments on the swaps increase.
+[p103_c0006] Basis Risk. The risk that the variable rate of interest paid by the counterparty under the swap and the variable interest rate paid by MTA or MTA Bridges and Tunnels on the associated bonds may not be the same. If the counterparty's rate under the swap is lower than the bond interest rate, then the counterparty's payment under the swap agreement does not fully reimburse MTA or MTA Bridges and Tunnels for its interest payment on the associated bonds. Conversely, if the bond interest rate is lower than the counterparty's rate on the swap, there is a net benefit to MTA or MTA Bridges and Tunnels.
+[p103_c0007] Termination Risk. The risk that a swap agreement will be terminated and MTA or MTA Bridges and Tunnels will be required to make a swap termination payment to the counterparty and, in the case of a swap agreement which was entered into for the purpose of creating a synthetic fixed rate for an advance refunding transaction may also be required to take action to protect the tax-exempt status of the related refunding bonds.
+[p103_c0008] The ISDA Master Agreement sets forth certain termination events applicable to all swaps entered into by the parties to that ISDA Master Agreement. MTA and MTA Bridges and Tunnels have entered into separate ISDA Master Agreements with each counterparty that govern the terms of each swap with that counterparty, subject to individual terms negotiated in a confirmation. MTA and MTA Bridges and Tunnels are subject to termination risk if its credit ratings fall below certain specified thresholds or if MTA/MTA Bridges and Tunnels commits a specified event of default or other specified event of termination. If, at the time of termination, a swap were in a liability position to MTA or MTA Bridges and Tunnels, a termination payment would be owed by MTA or MTA Bridges and Tunnels to the counterparty, subject to applicable netting arrangements.
+[p103_c0009] The following tables set forth the Additional Termination Events for MTA/MTA Bridges and Tunnels and its counterparties.
+[p103_c0010]
+
+```text
+MTA Transportation Revenue Counterparty Name MTA Counterparty AIG Financial Products Corp.; JPMorgan Chase Bank, NA; UBS AG Below Baa3 (Moody's) or BBB- (S&P)* Below Baa3 (Moody's) or BBB- (S&P)*
+```
+[p103_c0011] *Note: Equivalent Fitch rating is replacement for Moody's or S&P.
+[p103_c0012]
+
+```text
+MTA Dedicated Tax Fund Counterparty Name MTA Counterparty Bank of New York Mellon Below BBB (S&P) or BBB (Fitch)* Below A3 (Moody's) or A- (S&P)**
+```
+[p103_c0013] *Note: Equivalent Moody's rating is replacement for S&P or Fitch.
+[p103_c0014] **Note: Equivalent Fitch rating is replacement for Moody's or S&P.
+[p103_c0015] _Master Page # 103 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 104
+
+### [p104_c0001] Metropolitan Transportation Authority
+### [p104_c0002] DRAFT
+### [p104_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p104_c0004]
+
+```text
+MTA Bridges and Tunnels Senior Lien Counterparty Name MTA Bridges and Tunnels Counterparty BNP Paribas US Wholesale Holdings, Corp.; Citibank, N.A.; JPMorgan Chase Bank, NA; UBS AG Below Baa2 (Moody's) or BBB (S&P)* Below Baa1 (Moody's) or BBB+ (S&P)*
+```
+[p104_c0005] *Note: Equivalent Fitch rating is replacement for Moody's or S&P.
+[p104_c0006]
+
+```text
+MTA Bridges and Tunnels Subordinate Lien Counterparty Name MTA Bridges and Tunnels Counterparty U.S. Bank National Association; Wells Fargo Bank, N.A. Below Baa2 (Moody's) or BBB (S&P)* Below Baa2 (Moody's) or BBB (S&P)**
+```
+[p104_c0007] *Note: Equivalent Fitch rating is replacement for Moody's or S&P. If not below Investment Grade, MTA Bridges and Tunnels may cure such Termination Event by posting collateral at a Zero threshold.
+[p104_c0008] **Note: Equivalent Fitch rating is replacement for Moody's or S&P.
+[p104_c0009] MTA and MTA Bridges and Tunnels' ISDA Master Agreements provide that the payments under one transaction will be netted against other transactions entered into under the same ISDA Master Agreement. Under the terms of these agreements, should one party become insolvent or otherwise default on its obligations, close-out netting provisions permit the non-defaulting party to accelerate and terminate all outstanding transactions and net the amounts so that a single sum will be owed by, or owed to, the non-defaulting party.
+[p104_c0010] Rollover Risk. The risk that the swap agreement matures or may be terminated prior to the final maturity of the associated bonds on a variable rate bond issuance, and MTA or MTA Bridges and Tunnels may be exposed to then market rates and cease to receive the benefit of the synthetic fixed rate for the duration of the bond issue. The following debt is exposed to rollover risk:
+[p104_c0011]
+
+```text
+Associated Bond Issue Bond Maturity Date Swap Termination Date MTA Bridges and Tunnels General Revenue Variable Rate Bonds, Series 2001C (swaps with U.S. Bank/Wells Fargo) January 1, 2032 January 1, 2030 MTA Bridges and Tunnels General Revenue Variable Rate Refunding Bonds, Series 2018E (swap with Citibank, N.A.) November 15, 2032 January 1, 2032 MTA Bridges and Tunnels General Revenue Variable Rate Bonds, Series 2003B (swap with Citibank, N.A.) January 1, 2033 January 1, 2032 MTA Bridges and Tunnels General Revenue Variable Rate Bonds, Series 2005A (swaps with U.S. Bank/Wells Fargo and Citibank, N.A.) November 1, 2041 January 1, 2030 (U.S. Bank/Wells Fargo) January 1, 2032 (Citibank) MTA Transportation Revenue Variable Rate Bonds, Series 2022E (swaps with U.S. Bank/Wells Fargo) November 1, 2032 January 1, 2030
+```
+[p104_c0012] Collateralization/Contingencies. Under the majority of the swap agreements, MTA and/or MTA Bridges and Tunnels is required to post collateral in the event its credit rating falls below certain specified levels. The collateral posted is to be in the form of cash, U.S. Treasury securities, or certain Federal agency securities, based on the valuations of the swap agreements in liability positions and net of the effect of applicable netting arrangements. If MTA and/or MTA Bridges and Tunnels do not post collateral, the swap(s) may be terminated by the counterparty(ies).
+[p104_c0013] As of September 30, 2023, the aggregate mid-market valuation of the MTA's swaps subject to collateral posting agreements was $47.06 million; as of this date, the MTA was not subject to collateral posting based on its credit ratings (see further details below).
+[p104_c0014] As of September 30, 2023, the aggregate mid-market valuation of MTA Bridges and Tunnels' swaps subject to collateral posting agreements was $7.80 million; as of this date, MTA Bridges and Tunnels was not subject to collateral posting based on its credit ratings (see further details below).
+[p104_c0015] _Master Page # 104 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 105
+
+### [p105_c0001] Metropolitan Transportation Authority
+### [p105_c0002] DRAFT
+### [p105_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p105_c0004] The following tables set forth the ratings criteria and threshold amounts applicable to MTA/MTA Bridges and Tunnels and its counterparties.
+[p105_c0005]
+
+```text
+MTA Transportation Revenue Counterparty MTA Collateral Thresholds (based on highest rating) Counterparty Collateral Thresholds (based on highest rating) AIG Financial Products Corp.; JPMorgan Chase Bank, NA; UBS AG Baa1/BBB+: $10 million Baa2/BBB & below: Zero Baa1/BBB+: $10 million Baa2/BBB & below: Zero
+```
+[p105_c0006] Note: Based on Moody's and S&P ratings. In all cases except JPMorgan counterparty thresholds, Fitch rating is replacement for either Moody's or S&P, at which point threshold is based on lowest rating.
+[p105_c0007]
+
+```text
+MTA Dedicated Tax Fund Counterparty MTA Collateral Thresholds Counterparty Collateral Thresholds (based on lowest rating) Bank of New York Mellon N/A—MTA does not post collateral Aa3/AA- & above: $10 million A1/A+: $5 million A2/A: $2 million A3/A-: $1 million Baa1/BBB+ & below: Zero
+```
+[p105_c0008] Note: Counterparty thresholds based on Moody's and S&P ratings. Fitch rating is replacement for either Moody's or S&P.
+[p105_c0009]
+
+```text
+MTA Bridges and Tunnels Senior Lien Counterparty MTA Bridges and Tunnels Collateral Thresholds (based on highest rating) Counterparty Collateral Thresholds (based on highest rating) BNP Paribas US Wholesale Holdings, Corp.; Citibank, N.A.; JPMorgan Chase Bank, NA; UBS AG Baa1/BBB+: $30 million Baa2/BBB: $15 million Baa3/BBB- & below: Zero A3/A-: $10 million Baa1/BBB+ & below: Zero
+```
+[p105_c0010] Note: MTA Bridges and Tunnels thresholds based on Moody's, S&P, and Fitch ratings. Counterparty thresholds based on Moody's and S&P ratings; Fitch rating is replacement for Moody's or S&P.
+[p105_c0011]
+
+```text
+MTA Bridges and Tunnels Subordinate Lien Counterparty MTA Bridges and Tunnels Collateral Thresholds (based on lowest rating) Counterparty Collateral Thresholds (based on lowest rating) U.S. Bank National Association; Wells Fargo Bank, N.A. Baa3/BBB- & below: Zero (note: only applicable as cure for Termination Event) Aa3/AA- & above: $15 million A1/A+ to A3/A-: $5 million Baa1/BBB+ & below: Zero
+```
+[p105_c0012] Note: Thresholds based on Moody's and S&P ratings. Fitch rating is replacement for Moody's or S&P.
+[p105_c0013] Swap Payments and Associated Debt. The following tables contain the aggregate amount of estimated variable-rate bond debt service and net swap payments during certain years that such swaps were entered into in order to: protect against the potential of rising interest rates; achieve a lower net cost of borrowing; reduce exposure to changing interest rates on a related bond issue; or, in some cases where Federal tax law prohibits an advance refunding, achieve debt service savings through a synthetic fixed rate. As rates vary, variable-rate bond interest payments and net swap payments will vary. Using the following assumptions, debt service requirements of MTA's and MTA Bridges and Tunnels' outstanding variable-rate debt and net swap payments are estimated to be as follows:
+- [p105_c0014] - It is assumed that the variable-rate bonds would bear interest at a rate of 4.0% per annum. - The net swap payments were calculated using the actual fixed interest rate on the swap agreements.
+[p105_c0015] _Master Page # 105 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 106
+
+### [p106_c0001] Metropolitan Transportation Authority
+### [p106_c0002] DRAFT
+### [p106_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p106_c0004]
+
+```text
+MTA (in millions) Period Ended September 30, 2023 Variable-Rate Bonds Net Swap Payments Total Principal Interest 2023 65.7 40.1 (4.1) 101.7 2024 68.2 37.5 (3.8) 101.9 2025 70.8 34.8 (3.4) 102.2 2026 63.6 32.0 (3.1) 92.5 2027 55.9 29.6 (2.8) 82.7 2028-2032 827.6 454.7 (8.3) 1,274.0 2033-2037 122.7 27.5 (1.6) 148.6 2038-2041 81.2 7.7 (0.1) 88.8
+```
+[p106_c0005]
+
+```text
+MTA Bridges and Tunnels (in millions) Period Ended September 30, 2023 Variable-Rate Bonds Net Swap Payments Total Principal Interest 2023 28.6 33.8 (6.8) 55.6 2024 57.2 31.5 (6.4) 82.3 2025 30.4 30.3 (6.4) 54.3 2026 31.5 29.1 (6.3) 54.3 2027 32.9 27.8 (6.5) 54.2 2028-2032 681.8 68.5 (16.5) 733.8 2033-2037 12.4 2.5 - 14.9 2038-2041 - 0.5 - 0.5
+```
+### [p106_c0006] 8. LEASE TRANSACTIONS
+[p106_c0007] MTA entered into various lease agreements that convey control of the right to use other entities' nonfinancial assets. Lease receivables and lease liabilities are measured at the present value of payments expected to be received during the lease term, using MTA's incremental borrowing rate at the time of valuation ranging from 0.72% to 5.64% if an applicable stated or implicit rate is not available.
+[p106_c0008] The initial measurement of MTA's leased asset and lease liability for those agreements was as of January 1, 2021. The lease liability was reduced as payments were made, and an outflow of resources for interest on the liability was recognized. The lease asset is amortized on a straight-line basis over the shorter of the lease term or the useful life of the underlying asset.
+[p106_c0009] For lessor leases, a lease receivable and deferred inflow of resources were measured as of January 1, 2021. Interest revenues are recognized on the lease receivable and an inflow of resources from the deferred inflow of resources are recognized on a straight-line basis over the term of the lease.
+### [p106_c0010] As Lessor
+[p106_c0011] MTA leases its land, buildings, station space, equipment, and right of way to other entities. These leases have terms between 1 year to 100 years, with payments required monthly, quarterly, semi-annually, or annually. In addition, MTA also receives payments for variable leases and operating expenses associated with spaces that are not included in the measurement of lease receivable.
+[p106_c0012] The total amount of inflows of resources recognized for the nine-month period ended September 30, 2023 and year ended December 31, 2022 is presented below (in thousands):
+[p106_c0013]
+
+```text
+September 30, 2023 December 31, 2022 Lease Revenue $28,742 $47,079 Interest Revenue $5,670 8,652 Other Variable Revenue $12,086 7,351
+```
+[p106_c0014] _Master Page # 106 of 175 - Audit Committee Meeting 1/29/2024_
+[p106_c0015] _92_
+
+## Page 107
+
+### [p107_c0001] Metropolitan Transportation Authority
+### [p107_c0002] DRAFT
+### [p107_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p107_c0004] The balance of lease receivable as of September 30, 2023 and December 31, 2022 are as follows (in thousands):
+[p107_c0005]
+
+```text
+September 30, 2023 December 31, 2022 Lease Receivable – current $34,867 $41,470 Lease Receivable – noncurrent 241,681 284,778 Total Lease Receivable $276,548 $326,248
+```
+[p107_c0006] MTA recognized $5,477 and $43 revenue associated with residual value of guarantees and termination penalties for the nine-month period ended September 30, 2023 and year ended December 31, 2022, respectively.
+[p107_c0007] The principal and interest requirements to maturity for the lease receivable subsequent to September 30, 2023, are as follows (in thousands):
+[p107_c0008]
+
+```text
+September 30, 2023 Principal Interest Total 2023 $6,118 $1,862 $7,980 2024 38,460 6,894 45,354 2025 36,540 6,039 42,579 2026 34,611 5,205 39,816 2027 31,171 4,418 35,589 2028-2032 59,850 15,220 75,070 2033-2037 9,189 12,019 21,208 2038-2042 2,736 11,137 13,873 Thereafter 57,873 64,957 122,830 Total $276,548 $127,751 $404,299
+```
+### [p107_c0009] As Lessee
+[p107_c0010] MTA leases buildings, office space, storage space, equipment, vehicles, and cell tower space from other entities. These leases have terms between 1 year to 67 years, with payments required monthly, quarterly, or annually.
+[p107_c0011] The amount of lease expense recognized for variable payments not included in the measurement of lease liability was $4,549 and $3,864 for the nine-month period ended September 30, 2023 and year ended December 31, 2022, respectively. MTA recognized $1,885 and $0 expense attributable to residual value guarantees and termination penalties for the nine-month period ended September 30, 2023 and year ended December 31, 2022, respectively.
+[p107_c0012] The balance of lease payable as of September 30, 2023 and December 31, 2022 are as follows (in thousands):
+[p107_c0013]
+
+```text
+September 30, 2023 December 31, 2022 Lease Payable – current $39,058 $44,607 Lease Payable– noncurrent 817,218 833,357 Total Lease Payable $856,276 $877,964
+```
+[p107_c0014] The principal and interest requirements to maturity for the lease liability subsequent to September 30, 2023 are as follows (in thousands):
+[p107_c0015]
+
+```text
+September 30, 2023 Principal Interest Total 2023 $9,114 $13,973 $23,087 2024 39,153 60,675 99,828 2025 35,761 61,118 96,879 2026 35,476 59,744 95,220 2027 29,412 59,365 88,777 2028-2032 160,863 290,882 451,745 2033-2037 140,235 216,761 356,996 2038-2042 117,691 148,518 266,209 Thereafter 288,571 151,391 439,962 Total $856,276 $1,062,427 $1,918,703
+```
+[p107_c0016] _Master Page # 107 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 108
+
+### [p108_c0001] Metropolitan Transportation Authority
+### [p108_c0002] DRAFT
+### [p108_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p108_c0004] Significant Lease Transactions - On July 29, 1998 the MTA, (solely on behalf of MTA Long Island Rail Road and MTA Metro-North Railroad, MTA New York City Transit, and MTA Bridges and Tunnels) entered into a lease and related agreements whereby each agency, as sublessee, will rent an office building at Two Broadway in lower Manhattan. The triple-net-lease has an initial stated term of approximately 50 years, with the right to extend the lease for two successive 15-year periods at a rental of at least 95% of fair market rent. Remaining payments under the lease approximate $996 million. Under the subleases, the lease is apportioned as follows: MTA New York City Transit, 68.7%, MTA, 21%; and MTA Bridges and Tunnels, 10.3%. However, the involved agencies have agreed to sub-sublease space from one another as necessary to satisfy actual occupancy needs. The agencies will be responsible for obligations under the lease based on such actual occupancy percentages. Actual occupancy percentages at December 31, 2022, for the MTA New York City Transit, MTA Bridges and Tunnels and MTA (including MTA Bus, MTA Construction and Development and MTA Business Service Center) were 48.7%, 7.4% and 43.9%, respectively. MTA's sublease is for a year-to-year term, automatically extended, except upon the giving of a non-extension notice by MTA. The total annual rental payments over the initial lease term are $1,602 with rent being abated from the commencement date through June 30, 1999. The office building at 2 Broadway, is principally occupied by MTA New York City Transit, MTA Bridges and Tunnels, MTA Construction and Development, MTAHQ and MTA Bus.
+[p108_c0005] MTA makes the lease payments on behalf of MTA New York City Transit and MTA Bridges and Tunnels and makes monthly rent chargebacks to the other MTA agencies treated as management fees.
+### [p108_c0006] 9. FINANCED PURCHASES
+[p108_c0007] MTA made an assessment of its existing sale/leaseback transactions and determined that these transactions are not eligible to be treated as leases but as financed purchases under GASB Statement No. 87, Leases . Accordingly, under GASB Statement No. 62, Codification of Accounting and Financial Reporting Guidance Contained in Pre-November 30, 1989 FASB and AICPA Pronouncements, a sale-leaseback is required to include a transaction that qualifies as a sale under the guidance for sales of real estate. The sales-of-real estate criteria include the provision that an option or requirement for a seller to repurchase the asset would preclude a sale treatment. Furthermore, a qualifying sale should occur for a transaction to be accounted for as a sale-leaseback and that the sales-of-real-estate criteria should be used to determine whether a sale has occurred, regardless of whether a leaseback is involved. The transaction should be accounted for as financing, leasing or profit-sharing arrangement rather than a sale when the seller has an obligation to repurchase the property, or the terms of the transaction allow the buyer to compel the seller or give an option to the seller to repurchase the property.
+[p108_c0008] Subway Cars — On September 3, 2003, the MTA entered into a sale/leaseback transaction whereby MTA New York City Transit transferred ownership of certain MTA New York City Transit subway cars to the MTA, the MTA sold those cars to a third party, and the MTA leased those cars back from such third party. The MTA subleased the cars to MTA New York City Transit. The lease expires in 2033. At the lease expiration, the MTA has the option of either exercising a fixed-price purchase option for the cars or returning the cars to the third-party owner.
+[p108_c0009] Under the terms of the sale/leaseback agreement, the MTA initially received $168.1, which was utilized as follows: The MTA paid $126.3 to an affiliate of one of the lenders to the third party, which affiliate has the obligation to pay to the MTA an amount equal to the rent obligations under the lease attributable to the debt service on such loan from such third party's lender. The obligations of the affiliate of the third party's lender are guaranteed by American International Group, Inc. The MTA also purchased the Federal National Mortgage Association ("FNMA") and U.S. Treasury securities in amounts and with maturities which are sufficient to make the lease rent payments equal to the debt service on the loans from the other lender to the third party and to pay the remainder of the regularly scheduled rent due under that lease and the purchase price due upon exercise by the MTA of the fixed price purchase option if exercised. The amount remaining after payment of transaction expenses, $7.4, was the MTA's benefit from the transaction.
+[p108_c0010] Subway Cars — On September 25, 2003 and September 29, 2003, the MTA entered into two sale/leaseback transactions whereby MTA New York City Transit transferred ownership of certain MTA New York City Transit subway cars to the MTA, the MTA sold those cars to third parties, and the MTA leased those cars back from such third parties. The MTA subleased the cars to MTA New York City Transit. Both leases expire in 2033. At the lease expiration, MTAHQ has the option of either exercising a fixed-price purchase option for the cars or returning the cars to the third-party owner.
+[p108_c0011] Under the terms of the sale/leaseback agreements, the MTA initially received $294, which was utilized as follows: In the case of one of the leases, the MTA paid $97 to an affiliate of one of the lenders to the third party, which affiliate has the obligation to pay to the MTA an amount equal to the rent obligations under the lease attributable to the debt service on the loan from such third party's lender. The obligations of the affiliate of such third party's lender are guaranteed by American International Group, Inc. In the case of the other lease, the MTA purchased US Treasury debt securities in amounts and with maturities, which are sufficient for the MTA to make the lease rent payments equal to the debt service on the loan from the lender to that third party. In the case of both of the leases, the MTA also purchased Resolution Funding Corporation ("REFCO") debt securities that mature in 2030. Under an agreement with AIG Matched Funding Corp (guaranteed by American International Group, Inc.), AIG Matched Funding Corp. receives the proceeds from the REFCO debt securities at maturity and is obligated to pay to the MTA amounts sufficient for the MTA to pay the remainder of the regularly scheduled lease
+[p108_c0012] _Master Page # 108 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 109
+
+### [p109_c0001] Metropolitan Transportation Authority
+### [p109_c0002] DRAFT
+### [p109_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p109_c0004] rent payments under those leases and the purchase price due upon exercise by the MTA of the purchase options if exercised. The amount remaining after payment of transaction expenses, $24, was the MTA's net benefit from these two transactions.
+[p109_c0005] On December 17, 2008, MTA terminated the Ambac Assurance Corp. surety bond for the lease transaction that closed on September 25, 2003 and since then MTA has provided short-term U.S. Treasury debt obligations as replacement collateral. As of September 30, 2023, the market value of total collateral funds was $38.5.
+[p109_c0006] On January 12, 2009, MTA provided a short-term U.S. Treasury debt obligation as additional collateral in addition to the Ambac Assurance Corp. surety bond for the lease transaction that closed on September 29, 2003. As of September 30, 2023, the market value of total collateral funds was $54.2.
+### [p109_c0007] Financed Purchases Schedule
+[p109_c0008]
+
+```text
+Description For the period ended September 30, 2023 December 31, 2022 Increase Decrease September 30, 2023 Met Life 7 - - 7 Met Life Equity 19 - - 19 Bank of New York 22 - - 22 Bank of America 38 2 - 40 Bank of America Equity 16 - - 16 Met Life Equity 68 - - 68 Total MTA Financed Purchase $ 170 $ 2 $ - $ 172 Current Portion Financed Purchase - - - - Long Term Portion Financed Purchase $ 170 - - $ 172
+```
+### [p109_c0009] Financed Purchases Schedule
+[p109_c0010]
+
+```text
+Description For the Year Ended December 31, 2022 December 31, 2021 Increase Decrease December 31, 2022 Sumitomo $ 15 $ - $ 15 $ - Met Life 7 - - 7 Met Life Equity 19 - - 19 Bank of New York 22 - - 22 Bank of America 35 3 - 38 Bank of America Equity 16 - - 16 Sumitomo 14 - 14 - Met Life Equity 64 4 - 68 Total MTA Financed Purchase $ 192 $ 7 $ 29 $ 170 Current Portion Financed Purchase 14 - - - Long Term Portion Financed Purchase $ 178 - - $ 170
+```
+[p109_c0011] MTA Hudson Rail Yards Air Rights Leases – MTA assessed the MTA Hudson Rail Yards Leases and associated air rights and determined that these are intangible assets and excluded as leases under GASB Statement No. 87, Leases .
+[p109_c0012] In the 1980's, the MTA developed a portion of the Hudson Rail Yards as a storage yard, car wash and repair facility for the Long Island Railroad Company ("LIRR") rail cars entering Manhattan. It was anticipated that, eventually, the air rights above the Hudson Rail Yards would be developed to meet the evolving needs for high-quality commercial, retail, residential and public space in Manhattan.
+[p109_c0013] To undertake the development of the Hudson Rail Yards, the MTA entered into two 99-year leases for the airspace within the boundary of the Hudson Rail Yards, one for the Eastern Rail Yards ("ERY") beginning December 3, 2012, and the other for the Western Rail Yards ("WRY") beginning December 3, 2013.
+[p109_c0014] As of April 10, 2013, the ERY Lease was terminated and substituted with separate Severed Parcel Leases. Several Tenants under the Severed Parcel Leases have exercised their options to purchase fee title, as well as numerous condominium owners in residential buildings. The WRY Lease is also expected to be severed into separate parcels as development progresses.
+[p109_c0015] The Severed Parcel Leases in the ERY, fee title for which has not been purchased, and the WRY Lease (until any severed parcel leases are purchased) are pledged as security for the Series 2016A Hudson Yards Trust Obligations.
+[p109_c0016] _Master Page # 109 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 110
+
+### [p110_c0001] Metropolitan Transportation Authority
+### [p110_c0002] DRAFT
+### [p110_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p110_c0004] Minimum rent receipts for ERY and WRY Ground Leases are as follows as of September 30, 2023:
+[p110_c0005]
+
+```text
+Year ERY WRY Total 2023 $ 8 $ 33 $ 41 2024 8 36 44 2025 8 36 44 2026 8 36 44 2027 8 36 44 Thereafter 3,145 14,207 17,352 Total $ 3,185 $ 14,384 $ 17,569
+```
+### [p110_c0006] 10. FUTURE OPTION
+[p110_c0007] In 2010, MTA and MTA Long Island Railroad entered into an Air Space Parcel Purchase and Sale Agreement (“Agreement”) with Atlantic Yards Development Company, LLC (“AADC”) pursuant to which AADC has obtained an exclusive right to purchase fee title to a parcel (subdivided into six sub-parcels) of air space above the MTA Long Island Railroad Vanderbilt Yard in Brooklyn, New York. Initial annual payments of $2 (covering all six sub-parcels) commenced on June 1, 2012 and were paid on the following three anniversaries of that date. Starting on June 1, 2016, and continuing on each anniversary thereof through and including June 1, 2031, an annual option payment in the amount of $11 is due. The Agreement provides that all such payments are (i) fully earned by MTA as of the date due in consideration of the continuing grant to AADC of the rights to purchase the air space sub-parcels, (ii) are non-refundable except under certain limited circumstances and (iii) shall be deemed to be payments on account of successive annual options granted to AADC.
+[p110_c0008] After AADC and its affiliates have completed the new yard and transit improvements to be constructed by them at and in the vicinity of the site, AADC has the right from time to time until June 1, 2031, to close on the purchase of any or all of the six air rights sub-parcels. The purchase price for the six sub-parcels is an amount, when discounted at 6.5% per annum from the date of each applicable payment that equals a present value of $80 as of January 1, 2010. The purchase price of any particular air space sub-parcel is equal to a net present value as of January 1, 2010 (calculated based on each applicable payment) of the product of that sub-parcel’s percentage of the total gross square footage of permissible development on all six air space sub-parcels multiplied by $80.
+### [p110_c0009] 11. ESTIMATED LIABILITY ARISING FROM INJURIES TO PERSONS
+[p110_c0010] A summary of activity in estimated liability as computed by actuaries arising from injuries to persons, including employees, and damage to third-party property for the period ended September 30, 2023 and year ended December 31, 2022 is presented below (in millions):
+[p110_c0011]
+
+```text
+September 30, 2023 December 31, 2022 Balance - beginning of year $ 5,435 $ 5,100 Activity during the year: Current year claims and changes in estimates 631 867 Claims paid (457) (532) Balance - end of year 5,609 5,435 Less current portion (594) (567) Long-term liability $ 5,015 $ 4,868
+```
+[p110_c0012] See Note 2 for additional information on MTA’s liability and property disclosures.
+### [p110_c0013] 12. COMMITMENTS AND CONTINGENCIES
+[p110_c0014] The MTA Group monitors its properties for the presence of pollutants and/or hazardous wastes and evaluates its exposure with respect to such matters. When the expense, if any, to clean up pollutants and/or hazardous wastes is estimable it is accrued by the MTA (see Note 13).
+[p110_c0015] Management has reviewed with counsel all actions and proceedings pending against or involving the MTA Group, including personal injury claims. Although the ultimate outcome of such actions and proceedings cannot be predicted with certainty at this time, management believes that losses, if any, in excess of amounts accrued resulting from those actions will not be material to the financial position, results of operations, or cash flows of the MTA.
+[p110_c0016] Under the terms of federal and state grants, periodic audits are required, and certain costs may be questioned as not being appropriate expenditures under the terms of the grants. Such audits could lead to reimbursements to the grantor agencies. While there have been some questioned costs in recent years, ultimate repayments required of the MTA have been infrequent.
+[p110_c0017] _Master Page # 110 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 111
+
+### [p111_c0001] Metropolitan Transportation Authority
+### [p111_c0002] DRAFT
+### [p111_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p111_c0004] Financial Guarantee — Moynihan Station Development Project - On May 22, 2017, the MTA Board approved entering into various agreements, including a Joint Services Agreement (“JSA”), necessary to effectuate Phase 2 of the Moynihan Station Development Project (the “Project”), which entailed the redevelopment of the James A. Farley Post Office Building to include a new world-class train hall to be shared by National Railroad Passenger Corporation (“Amtrak”), The Long Island Rail Road (“LIRR”) and Metro-North Commuter Railroad (the “Train Hall”), as well as retail and commercial space (the “Retail and Commercial Space”).
+[p111_c0005] On July 21, 2017, New York State Urban Development Corporation d/b/a Empire State Development (“ESD”) executed a TIFIA Loan Agreement with the United States Department of Transportation (the “TIFIA Lender”) in an amount of up to $526 (the “2017 TIFIA Loan”), to pay for costs of the construction of the Train Hall. The 2017 TIFIA Loan was amended and restated on November 18, 2021 in an amount up to $607 (the “2021 TIFIA Loan”), to lower the interest rate to 1.99% per annum and to provide additional capital financing for the Train Hall. The 2021 TIFIA Loan has a final maturity date of the earlier of (1) October 30, 2055 and (2) the last semi-annual payment date occurring no later than the date that is thirty-five (35) years following the date on which the Train Hall is substantially completed. The proceeds of the 2021 TIFIA Loan are being used to reimburse or pay for costs of the construction of the Train Hall. The 2021 TIFIA Loan is secured by mortgages on the Train Hall property. The principal and interest on the 2021 TIFIA Loan is payable from a pledged revenue stream that primarily consists of PILOT payments to be paid by certain tenants in the Retail and Commercial Space. The amount of the PILOT payments is fixed through June, 2030 and is thereafter calculated based upon the assessed value of the properties as determined by New York City. The 2021 TIFIA Loan is further supported by a debt service reserve account, which is funded in an amount equal to the sum of the highest aggregate TIFIA Loan debt service amounts that will become due and payable on any two consecutive semi-annual payment dates in a five-year prospective period (the “TIFIA Debt Service Reserve Account”).
+[p111_c0006] Simultaneously with the execution of the 2017 TIFIA Loan, the JSA was entered into by and among the MTA, the TIFIA Lender, ESD, and Manufacturers and Traders Trust Company (as PILOT trustee). MTA ratified and confirmed its obligations under the JSA in connection with the closing of 2021 TIFIA Loan.
+[p111_c0007] Under the JSA, MTA is obligated to satisfy semi-annual deficiencies in the TIFIA Debt Service Reserve Account. MTA’s obligations under the JSA are secured by the same monies available to MTA for the payment of the operating and maintenance expenses of the operating agencies.
+[p111_c0008] MTA’s obligation under the JSA remains in effect until the earliest to occur of (a) the MTA JSA Release Date (as defined in the JSA and generally summarized below), (b) the date on which the 2021 TIFIA Loan has been paid in full and (c) foreclosure by the TIFIA Lender under the Mortgage (as defined in the 2021 TIFIA Loan).
+[p111_c0009] The obligations of the MTA under the JSA will be terminated and released on the date (the “MTA JSA Release Date”) on which each of the following conditions have been satisfied: (a) substantial completion of (1) the Train Hall Project and initiation by LIRR and Amtrak of transportation operations therein, and (2) the Retail and Commercial Space; (b) all material construction claims have been discharged or settled; (c) the PILOT payments have been calculated based upon assessed value for at least three years (i.e., 2033); (d) certain designated defaults or events of default under the 2021 TIFIA Loan have not occurred and are continuing; and (e) either of the following release tests shall have been satisfied:
+- [p111_c0010] - Release Test A: (a) certain debt service coverage ratios have equaled or exceeded levels set forth in the JSA, taking into consideration assessment appeals; (b) occupancy levels have equaled or exceeded levels set forth in the JSA; and (c) the 2021 TIFIA Loan is rated no lower than “BBB-” or “Baa3” by one rating agency, all as more fully described in the JSA; or - Release Test B: the 2021 TIFIA Loan is rated no lower than “A-” or “A3” by two rating agencies, all as more fully described in the JSA.
+[p111_c0011] On the date the JSA was executed and delivered, MTA deposited $20 into an account, which MTA invests, to be used in accordance with the JSA to reimburse MTA in the event it is obligated under the JSA to make semi-annual deficiency payments to the TIFIA Debt Service Reserve Account.
+[p111_c0012] On June 12, 2017, the MTA entered into a Memorandum of Understanding with ESD and the New York State Division of the Budget (the “Division”). Under the Memorandum of Understanding, which was updated in November 2020 to reflect the 2021 TIFIA Loan, the Division agreed that in the event in any given year during the term of the JSA (i) the MTA is required to make a semi-annual deficiency payment to the TIFIA Debt Service Reserve Account, and (ii) the Division has determined that the MTA has incurred an expense that would otherwise have been incurred by the State of New York (the “State Expense”), the Division will consider entering into a cost recovery agreement with the MTA pursuant to subdivision 4 of Section 2975 of the Public Authorities Law (the “PAL”) for such year that will provide that in lieu of paying the full assessment pursuant to subdivisions 2 and 3 of Section 2975 of the PAL in any such year, any such assessment shall be reduced by the State Expense.
+[p111_c0013] _Master Page # 111 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 112
+
+### [p112_c0001] Metropolitan Transportation Authority
+### [p112_c0002] DRAFT
+### [p112_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p112_c0004] On December 28, 2022, MTA Construction and Development, on behalf of the MTA, entered into a Project Agreement with a Developer comprising the design, construction, financing and maintenance of station accessibility improvements for MTA New York City Transit that will satisfy the requirements of the Americans with Disabilities Act. The Project Agreement includes the design and construction period (which is anticipated to be approximately 41 months) as well as a fifteen (15) year maintenance period commencing upon substantial completion of the design and construction work, with two optional five (5) year extensions at the sole discretion of MTA Construction and Development. Total costs of the project are currently estimated to be approximately $752 million consisting of periodic progress payments, completion payments, and capital availability payments over 27 years. The first periodic progress payment is projected to be achieved in August 2024.
+### [p112_c0005] 13. POLLUTION REMEDIATION COST
+[p112_c0006] In accordance with GASB Statement No. 49, Accounting and Financial Reporting for Pollution Remediation Obligations , an operating expense provision and corresponding liability measured at its current value using the expected cash flow method is recognized when an obligatory event occurs. Pollution remediation obligations are estimates and subject to changes resulting from price increase or reductions, technology, or changes in applicable laws or regulations. The MTA does not expect any recoveries of cost that would have a material effect on the recorded obligations.
+[p112_c0007] The MTA recognized pollution remediation expenses of $14 and $1 for the periods ended September 30, 2023 and 2022, respectively. A summary of the activity in pollution remediation liability at September 30, 2023 and December 31, 2022 were as follows:
+[p112_c0008]
+
+```text
+September 30, 2023 December 31, 2022 Balance at beginning of year $ 156 $ 145 Current year expenses/changes in estimates 14 26 Current year payments (2) (15) Balance at end of year 168 156 Less current portion 40 40 Long-term liability 128 116
+```
+[p112_c0009] The MTA's pollution remediation liability primarily consists of future remediation activities associated with asbestos removal, lead abatement, ground water contamination, arsenic contamination and soil remediation.
+### [p112_c0010] 14. NON-CURRENT LIABILITIES
+[p112_c0011] Changes in the activity of non-current liabilities for the periods ended September 30, 2023 and December 31, 2022 are presented below:
+[p112_c0012]
+
+```text
+Balance December 31, 2021 Balance December 31, 2022 Balance September 30, 2023 (Restated) * Additions Reductions 2022 Additions Reductions 2023 Non-current liabilities: Contract retainage payable $ 416 $ 19 - 435 $ - $ (20) $ 415 Other long-term liabilities 414 - (48) 366 12 - 378 Total non-current liabilities $ 830 $ 19 $ (48) $ 801 $ 12 $ (20) $ 793
+```
+[p112_c0013] _* Restated due to the adoption of GASB 87, Leases. Refer to 2022 MTA Consolidated Financial Statements._
+### [p112_c0014] 15. NOVEL CORONAVIRUS (COVID-19)
+[p112_c0015] On March 12, 2020, the World Health Organization declared the COVID-19 outbreak to be a pandemic in the face of the global spread of the virus. The outbreak of COVID-19, a respiratory disease caused by a new strain of coronavirus, was first detected in China, and has since spread globally, including to the United States and to New York State. On March 7, 2020, Governor Cuomo declared a Disaster Emergency in the State of New York. On March 13, 2020, President Trump declared a national state of emergency as a result of the COVID-19 pandemic. By order of Governor Cuomo ("New York State on PAUSE"), effective March 22, 2020, all non-essential businesses Statewide were required to be closed, among other restrictive social distancing and related measures. The PAUSE order was lifted on May 15, 2020 for five New York regions that met the requirements to start opening. However, a new order was signed by Governor Cuomo on May 15, 2020 extending the PAUSE to June 13, 2020 for New York City, Long Island, and the Hudson Valley. The impact of social
+[p112_c0016] _Master Page # 112 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 113
+
+### [p113_c0001] Metropolitan Transportation Authority
+### [p113_c0002] DRAFT
+### [p113_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p113_c0004] distancing and subsequent State governmental orders limiting non-essential activities caused by the COVID-19 pandemic resulted in a sharp decline in the utilization of MTA services, dramatic declines in MTA public transportation system ridership and fare revenues, and MTA Bridge and Tunnel crossing traffic and toll revenues. A significant development was the impact of COVID-19 vaccinations on the MTA region. Capacity restrictions on restaurants, bars, event venues and businesses put in place due to COVID-19 were mostly removed on May 19, 2021, and all remaining restrictions were eliminated on June 15, 2021 after the State reached its goal of 70% of adults receiving at least a first dose of the vaccine. MTA has seen ridership steadily improve since the low point of ridership during the pandemic in 2020; but continues to be well-below 2019 levels.
+[p113_c0005] Coronavirus Aid, Relief and Economic Security Act (“CARES Act”). The CARES Act is a $2.2 trillion economic stimulus bill passed by Congress and signed into law by the President on March 27, 2020 in response to the economic fallout of the COVID-19 pandemic in the United States. The CARES Act through the Federal Transit Administration’s (“FTA”) formula funding provisions provided approximately $4 billion to MTA. Funding was provided at a 100 percent Federal share, with no local match required, and is available to support operating, and other expenses generally eligible under those programs and incurred beginning on January 20, 2020, to prevent, prepare for, and respond to the COVID-19 pandemic, including operating service for essential workers, such as medical personnel and first responders. On May 8, 2020, the FTA approved MTA’s initial grant application of $3.9 billion. On June 25, 2020, FTA approved an amendment to the initial CARES Act grant adding approximately $98 million in additional formula grant allocations to MTA for a CARES Act grant total of $4.0 billion. As of December 31, 2020, a total of $4.0 billion was released to MTA for operating assistance that occurred from January 20, 2020, through July 31, 2020. The MTA has received all CARES Act funding as provided in the first congressional relief package.
+[p113_c0006] Federal Reserve Bank of New York’s Municipal Liquidity Facility LLC (“MLF”). Due to the COVID-19 pandemic, the Federal Reserve established the MLF in April 2020 as a source of emergency financing by being available to purchase up to $500 billion of short-term notes from state and local governments and certain public entities to ensure they had access to credit during the COVID-19 pandemic. MTA was able to utilize the MLF twice before the MLF window closed at the end of December 2020. On August 26, 2020, MTA directly placed with the MLF $450.72 million Transportation Revenue BANs, Series 2020B, which were issued to retire existing Transportation Revenue BANs maturing on September 1, 2020. The MTA subsequently retired the MLF $450.72 million Transportation Revenue BANs, Series 2020B, with an issuance of Dedicated Tax Funds bonds on March 1, 2022. MTA issued into the MLF a second time by directly placing $2.907 billion Payroll Mobility Tax BANs issued for working capital on December 17, 2020. The $2.907 billion MLF loan matures in December, 2023. In December 2022, the MTA Board authorized the MTA to place MTA funds and unspent proceeds in an Interim Redemption Subaccount, for the purpose of redeeming the BANs at or before maturity. Subsequently, MTA transferred $2.907 billion into the Interim Redemption Subaccount pursuant to such Board approval and as of September 30, 2023, such funds remained on deposit in the Interim Redemption account.
+[p113_c0007] Coronavirus Response and Relief Supplemental Appropriation Act of 2021 (“CRRSAA”). On December 27, 2020, the President signed into law the Coronavirus Response and Relief Supplemental Appropriation Act of 2021 (“CRRSAA”) that includes $900 billion for various COVID-19 economic relief programs to address hardships caused by the coronavirus pandemic and a $1.4 trillion government funding package to fund the government through September 30, 2021. Included in the legislation’s $45 billion in financial assistance to the transportation industry, including $16 billion for another round of airline employee and contractor payroll support: $14 billion for transit; $10 billion for highways; $2 billion for intercity buses; $2 billion for airports; and $1 billion for Amtrak. The MTA received $4.1 billion in aid from the CRRSAA between December 2021 ($0.6 billion) and January 2022 ($3.5 billion).
+[p113_c0008] American Rescue Plan Act (“ARPA”). On March 11, 2021, President Biden signed into law the American Rescue Plan Act of 2021 (“ARPA”). The $1.9 trillion package is intended to combat the COVID-19 pandemic, including the public health and economic impacts. The package includes $30 billion of direct federal aid to transportation agencies. The MTA received $6.1 billion in aid from ARPA in 2022. In September of 2022, Additional Assistance Funding was made available to transit systems demonstrating additional pandemic associated needs. MTA received $769 million in additional aid in the fourth quarter of 2022.
+[p113_c0009] Federal Emergency Management Agency (“FEMA”) Reimbursement. The MTA is eligible for FEMA payments which are expected to cover expenses related to the COVID-19 pandemic, over and above normal emergency costs that are not covered by other federal funding. An estimated $893 million of direct COVID-19-related expenses incurred from the start of the pandemic through May 11, 2023 was submitted by MTA to the New York State Department of Budget (DOB), which is the agency managing COVID-19-related expense reimbursement from FEMA.
+[p113_c0010] _Master Page # 113 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 114
+
+### [p114_c0001] Metropolitan Transportation Authority
+### [p114_c0002] DRAFT
+### [p114_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p114_c0004] 16. FUEL HEDGE
+[p114_c0005] MTA partially hedges its fuel cost exposure using financial hedges. All MTA fuel hedges provide for up to 24 monthly settlements. The table below summarizes twenty-four (24) active ultra-low sulfur diesel (“ULSD”) hedges in whole dollars:
+[p114_c0006]
+
+```text
+Counterparty BOA_Merrill Cargill Goldman Sachs Goldman Sachs Cargill Cargill Cargill Goldman Sachs Trade Date 10/25/2021 11/30/2021 12/28/2021 1/25/2022 2/28/2022 3/31/2022 4/28/2022 5/31/2022 Effective Date 10/1/2022 11/1/2022 12/1/2022 1/1/2023 2/1/2023 3/1/2023 4/1/2023 5/1/2023 Termination Date 9/30/2023 10/31/2023 11/30/2023 12/31/2023 1/31/2024 2/29/2024 3/31/2024 4/30/2024 Price/Gal $2.2879 $2.0100 $2.2227 $2.3615 $2.5015 $2.7469 $2.8675 $2.9450 Original Notional Quantity 2,826,749 2,826,751 2,826,765 2,826,779 2,826,759 2,826,761 2,826,752 2,826,757
+```
+[p114_c0007]
+
+```text
+Counterparty Goldman Sachs BOA_Merrill BOA_Merrill Cargill BOA_Merrill BOA_Merrill Goldman Sachs Cargill Trade Date 6/27/2022 7/25/2022 8/29/2022 9/29/2022 10/25/2022 11/30/2022 12/28/2022 1/31/2023 Effective Date 6/1/2023 7/1/2023 8/1/2023 9/1/2023 10/1/2023 11/1/2023 12/1/2023 1/1/2024 Termination Date 5/31/2024 6/30/2024 7/31/2024 8/31/2024 9/30/2024 10/31/2024 11/1/2024 12/31/2024 Price/Gal $3.0195 $2.8739 $2.9620 $2.6846 $2.7422 $2.7624 $2.7030 $2.6867 Original Notional Quantity 2,826,738 2,826,751 2,826,725 2,826,740 2,826,749 2,826,751 2,826,765 2,826,779
+```
+[p114_c0008]
+
+```text
+Counterparty Cargill Cargill Goldman Sachs JPMorgan Goldman Sachs Cargill Goldman Sachs JPMorgan Trade Date 2/28/2023 3/29/2023 4/24/2023 5/30/2023 6/27/2023 7/28/2023 8/29/2023 9/26/2023 Effective Date 2/1/2024 3/1/2024 4/1/2024 5/1/2024 6/1/2024 7/1/2024 8/1/2024 9/1/2024 Termination Date 1/31/2025 2/28/2025 3/31/2025 4/30/2025 5/31/2025 6/30/2025 7/31/2025 8/31/2025 Price/Gal $2.5711 $2.4373 $2.4357 $2.2500 $2.2942 $2.5468 $2.5697 $2.6525 Original Notional Quantity 2,826,759 1,633,857 2,462,350 2,636,717 2,636,709 2,636,706 2,636,714 2,636,696
+```
+[p114_c0009] The monthly settlements are based on the daily prices of the respective commodities whereby MTA will either receive a payment, or make a payment to the various counterparties depending on the average monthly price of the commodities in relation to the contract prices. At a contract’s termination date, the MTA will take delivery of the fuel. As of September 30, 2023, the total outstanding notional value of the ULSD contracts was 49.4 million gallons with a negative fair value of $10.5. The valuation of each trade was based on discounting future net cash flows to a single current amount (the income approach) using observable commodity futures prices (Level 2 inputs).
+[p114_c0010] _Master Page # 114 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 115
+
+### [p115_c0001] Metropolitan Transportation Authority
+### [p115_c0002] DRAFT
+### [p115_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p115_c0004] 17. CONDENSED COMPONENT UNIT INFORMATION
+[p115_c0005] The following tables present condensed financial information for MTA's component units (in millions).
+[p115_c0006]
+
+```text
+Metro - North Long Island New York City Transit Triborough Bridge and Tunnel Eliminations Consolidated Total September 30, 2023 MTA Railroad Railroad Authority Authority Current assets $ 12,888 $ 414 $ 559 $ 806 $ 1,550 $ (110) $ 16,107 Capital assets 14,141 7,163 10,646 49,170 7,892 (1) 89,011 Other Assets 29,252 83 69 41 1,062 (27,466) 3,041 Intercompany receivables 350 542 709 4,518 10,990 (17,109) - Deferred outflows of resources 2,549 740 919 4,840 346 (51) 9,343 Total assets and deferred outflows of resources $ 59,180 $ 8,942 $ 12,902 $ 59,375 $ 21,840 $ (44,737) $ 117,502 Current liabilities $ 6,691 $ 406 $ 281 $ 2,492 $ 1,082 $ (254) $ 10,698 Non-current liabilities 30,254 2,702 3,993 26,433 23,519 (10) 86,891 Intercompany payables 15,595 147 21 729 536 (17,028) - Deferred inflows of resources 579 458 816 1,932 234 - 4,019 Total liabilities and deferred inflows of resources $ 53,119 $ 3,713 $ 5,111 $ 31,586 $ 25,371 $ (17,292) $ 101,608 Net investment in capital assets $ (18,756) $ 6,927 $ 10,594 $ 48,402 $ (7,540) $ (441) $ 39,186 Restricted 3,832 - - - 1,119 (447) 4,504 Unrestricted 20,985 (1,698) (2,803) (20,613) 2,890 (26,557) (27,796) Total net position $ 6,061 $ 5,229 $ 7,791 $ 27,789 $ (3,531) $ (27,445) $ 15,894 For the period ended September 30, 2023 Fare revenue $ 136 $ 403 $ 415 $ 2,445 $ - $ - $ 3,399 Vehicle toll revenue - - - - 1,823 - 1,823 Rents, freight and other revenue 41 32 25 469 18 (28) 557 Total operating revenue 177 435 440 2,914 1,841 (28) 5,779 Total labor expenses 956 794 1,005 5,569 171 - 8,495 Total non-labor expenses 495 321 328 1,635 181 (39) 2,921 Depreciation and amortization 188 242 416 1,639 163 1 2,649 Total operating expenses 1,639 1,357 1,749 8,843 515 (38) 14,065 Operating (deficit) surplus (1,462) (922) (1,309) (5,929) 1,326 10 (8,286) Subsidies and grants (469) - - 499 (6) 562 586 Tax revenue 4,358 - - 2,471 - (2,112) 4,717 Interagency subsidy 1,026 522 943 370 - (2,861) - Interest expense (929) (6) (1) (95) (313) (11) (1,355) Other 659 226 (1) 14 (982) 1,127 1,043 Total non-operating revenues (expenses) 4,645 742 941 3,259 (1,301) (3,295) 4,991 Gain (Loss) before appropriations 3,183 (180) (368) (2,670) 25 (3,285) (3,295) Appropriations, grants and other receipts externally restricted for capital projects (2,198) 447 592 1,344 (784) 2,870 2,271 Change in net position 985 267 224 (1,326) (759) (415) (1,024) Net position, beginning of period 5,076 4,962 7,567 29,115 (2,772) (27,031) 16,917 Net position, end of period $ 6,061 $ 5,229 $ 7,791 $ 27,789 $ (3,531) $ (27,446) $ 15,893 For the period ended September 30, 2023 Net cash (used by) / provided by operating activities $ (1,646) $ (765) $ (1,995) $ (4,234) $ 1,486 $ - $ (7,154) Net cash provided by / (used by) non-capital financing activities 5,228 749 1,974 3,739 (570) (5,698) 5,422 Net cash (used by) / provided by capital and related financing activities (4,839) 17 23 (800) 2,931 1,965 (703) Net cash provided by / (used by) investing activities 1,908 - - 1,299 (3,845) 3,733 3,095 Cash at beginning of period 882 19 5 25 9 - 940 Cash at end of period $ 1,533 $ 20 $ 7 $ 29 $ 11 $ - $ 1,600
+```
+[p115_c0007] _101 Master Page # 115 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 116
+
+### [p116_c0001] Metropolitan Transportation Authority
+### [p116_c0002] DRAFT
+### [p116_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p116_c0004]
+
+```text
+Metro- North Railroad Long Island Railroad New York City Transit Authority Triborough Bridge and Tunnel Authority Eliminations Consolidated Total December 31, 2022 MTA MTA MTA MTA MTA MTA MTA Current assets $ 12,148 $ 251 $ 281 $ 608 $ 2,446 $ (1,438) $ 14,296 Capital assets 14,014 6,915 10,557 48,226 7,794 - 87,506 Other Assets 32,131 111 76 49 16 (25,541) 6,842 Intercompany receivables 522 736 1,126 5,678 8,682 (16,744) - Deferred outflows of resources 1,382 740 919 4,840 464 (71) 8,274 Total assets and deferred outflows of resources $ 60,197 $ 8,753 $ 12,959 $ 59,401 $ 19,402 $ (43,794) $ 116,918 Current liabilities $ 6,843 $ 399 $ 331 $ 2,084 $ 1,023 $ (128) $ 10,552 Non-current liabilities 31,794 2,698 3,993 26,264 20,647 (21) 85,375 Intercompany payables 15,900 202 244 - 269 (16,615) - Deferred inflows of resources 584 492 824 1,939 235 - 4,074 Total liabilities and deferred inflows of resources $ 55,121 $ 3,791 $ 5,392 $ 30,287 $ 22,174 $ (16,764) $ 100,001 Net investment in capital assets $ (24,729) $ 6,678 $ 10,536 $ 47,783 $ 2,105 $ (7,487) $ 34,886 Restricted 4,788 - - - 2,410 (2,134) 5,064 Unrestricted 25,017 (1,716) (2,969) (18,669) (7,287) (17,409) (23,033) Total net position $ 5,076 $ 4,962 $ 7,567 $ 29,114 $ (2,772) $ (27,030) $ 16,917 For the period ended September 30, 2022 Fare revenue $ 125 $ 317 $ 332 $ 2,157 $ - $ - $ 2,931 Vehicle toll revenue - - - - 1,743 - 1,743 Rents, freight and other revenue 45 21 25 380 18 (28) 461 Total operating revenue 170 338 357 2,537 1,761 (28) 5,135 Total labor expenses 883 751 891 5,249 168 - 7,942 Total non-labor expenses 374 312 303 1,521 178 (36) 2,652 Depreciation and amortization 72 226 362 1,597 148 - 2,405 Total operating expenses 1,329 1,289 1,556 8,367 494 (36) 12,999 Operating (deficit) surplus (1,159) (951) (1,199) (5,830) 1,267 8 (7,864) Subsidies and grants 797 180 - 485 6 (327) 1,141 Tax revenue 4,456 - - 2,777 110 (2,240) 5,103 Interagency subsidy 926 243 229 340 - (1,738) - Interest expense (1,328) - - (9) (264) - (1,601) Other 4,384 - (2) 1 (183) 2,083 6,283 Total non-operating revenues (expenses) 9,235 423 227 3,594 (331) (2,222) 10,926 Gain (Loss) before appropriations 8,076 (528) (972) (2,236) 936 (2,214) 3,062 Appropriations, grants and other receipts externally restricted for capital projects (1,143) 582 832 968 (1,127) 2,458 2,570 Change in net position 6,933 54 (140) (1,268) (191) 244 5,632 Net position, beginning of the period (8,774) 4,102 6,440 24,650 (2,638) (14,637) 9,143 Net position, end of period $ (1,841) $ 4,156 $ 6,300 $ 23,382 $ (2,829) $ (14,393) $ 14,775 For the period ended September 30, 2022 Net cash (used in) / provided by operating activities $ (941) $ (672) $ (672) $ (4,015) $ 1,493 $ - $ (4,807) Net cash provided by / (used in) non-capital financing activities 16,481 460 426 4,237 (923) (5,638) 15,043 Net cash (used in) / provided by capital and related financing activities (10,368) (61) (36) (772) 5,894 98 (5,245) Net cash provided by / (used in) investing activities (4,528) 274 304 547 (6,608) 5,540 (4,471) Cash at beginning of period 515 17 5 28 217 - 782 Cash at end of period $ 1,159 $ 18 $ 27 $ 25 $ 73 $ - $ 1,302
+```
+[p116_c0005] _112_
+[p116_c0006] _Master Page # 116 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 117
+
+### [p117_c0001] Metropolitan Transportation Authority
+### [p117_c0002] DRAFT
+### [p117_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p117_c0004] 18. SUBSEQUENT EVENTS
+[p117_c0005] On October 3, 2023, S&P Global Ratings upgraded its ratings on the Transportation Revenue Bonds to A- from BBB+ and revised its outlook to positive. Based on the upgrade and the credit quality of the banks providing the letter of credit support, the long-term enhanced ratings on existing subseries of Transportation Revenue Variable Rate Bonds were also upgraded to AA and short-term ratings were affirmed.
+[p117_c0006] On October 19, 2023, MTA issued $1,130.20 Triborough Bridge and Tunnel Authority Payroll Mobility Tax Senior Lien Refunding Green Bonds, Series 2023C (“Series 2023C Bonds”). Proceeds from the transaction were used to refinance $1,142.00 MTA Transportation Revenue Bonds and $67.93 Dedicated Tax Fund Bonds. The refunding resulted in net present value savings of $69.12 or 5.713% of the par amount of the refunded bonds. In addition to the bonds defeased with Series 2023C Bonds, MTA deposited $271.620 provided by the State of New York from a portion of the proceeds of the State of New York General Obligation Bonds, Series 2023B Tax-Exempt Bonds and Series 2023D Taxable Bonds on October 11, 2023, in a separate escrow account sufficient to defease all or a portion of the following Transportation Revenue Bonds not defeased with proceeds of the Series 2023C Bonds: Series 2012C, 2012E, 2012H, 2013A, 2013B, 2013C, 2013E and 2014A-1.
+[p117_c0007] On October 30, 2023, MTA executed a 2,636,708 gallon ultra-low sulfur diesel fuel hedge at an all-in price of $2.5798 (whole dollars) per gallon. The hedge covers the period from October 2024 through September 2025.
+[p117_c0008] On November 27, 2023, MTA executed a 2,636,707 gallon ultra-low sulfur diesel fuel hedge at an all-in price of $2.4914 (whole dollars) per gallon. The hedge covers the period from November 2024 through October 2025.
+[p117_c0009] On December 13, 2023, MTA effectuated a mandatory tender and remarketed $102,500 of Triborough Bridge and Tunnel Authority General Revenue Variable Rate Refunding Bonds, Subseries 2005B-4a, converting the Subseries from the Term Rate Mode to the Daily Mode.
+[p117_c0010] On December 27, 2023, MTA executed a 2,636,716 gallon ultra-low sulfur diesel fuel hedge at an all-in price of $2.4289 (whole dollars) per gallon. The hedge covers the period from December 2024 through November 2025.
+[p117_c0011] *****
+[p117_c0012] _Master Page # 117 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 118
+
+### [p118_c0001] DRAFT
+### [p118_c0002] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p118_c0003] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p118_c0004] Schedule of Changes in the MTA's Net Pension Liability and Related Ratios for Single Employer Pension Plans
+[p118_c0005] ($ in thousands)
+[p118_c0006]
+
+```text
+Plan Measurement Date (December 31): Additional Plan 2021 2020 2019 2018 2017 2016 2015 2014 Total pension liability: Service cost $ 260 $ 453 $ 621 $ 1,057 $ 1,874 $ 2,752 $ 3,441 $ 3,813 Interest 83,489 86,918 93,413 97,611 101,477 104,093 106,987 110,036 Effect of economic / demographic (gains) or losses 3,729 10,428 13,455 213 1,890 15,801 6,735 - Effect of assumption changes or inputs 26,300 - 50,191 - - - - - Benefit payments and withdrawals (148,630) (152,046) (157,254) (159,565) (159,717) (158,593) (157,071) (156,974) Net change in total pension liability (34,852) (54,247) 426 (60,684) (54,476) (35,947) (39,908) (43,125) Total pension liability—beginning 1,357,323 1,411,570 1,411,144 1,471,828 1,526,304 1,562,251 1,602,159 1,645,284 Total pension liability—ending (a) 1,322,471 1,357,323 1,411,570 1,411,144 1,471,828 1,526,304 1,562,251 1,602,159 Plan fiduciary net position: Employer contributions 70,553 68,724 62,774 59,500 76,523 81,100 100,000 407,513 Nonemployer contributions - - - - 145,000 70,000 - - Member contributions 73 140 249 333 760 884 1,108 1,304 Net investment income 95,247 4,024 116,092 (31,098) 112,614 58,239 527 21,231 Benefit payments and withdrawals (148,630) (152,046) (157,254) (159,565) (159,717) (158,593) (157,071) (156,974) Administrative expenses (610) (612) (718) (1,180) (1,070) (611) (1,218) (975) Net change in plan fiduciary net position 16,633 (79,770) 21,143 (132,010) 174,110 51,019 (56,654) 272,099 Plan fiduciary net position—beginning 760,690 840,460 819,317 951,327 777,217 726,198 782,852 510,753 Plan fiduciary net position—ending (b) 777,323 760,690 840,460 819,317 951,327 777,217 726,198 782,852 Employer's net pension liability—ending (a)-(b) $ 545,148 $ 596,633 $ 571,110 $ 591,827 $ 520,501 $ 749,087 $ 836,053 $ 819,307 Plan fiduciary net position as a percentage of the total pension liability 58.78% 56.04% 59.54% 58.06% 64.64% 50.92% 46.48% 48.86% Covered payroll $ 3,230 $ 5,174 $ 7,236 $ 13,076 $ 20,500 $ 29,312 $ 39,697 $ 43,267 Employer's net pension liability as a percentage of covered payroll 168.7765% 115.3137% 78.9262% 45.2606% 25.3903% 25.5556% 21.0609% 18.9361%
+```
+[p118_c0007] Note: Information was not readily available for periods prior to 2014. This schedule is intended to show information for ten years. Additional years will be displayed as they become available.
+[p118_c0008] _104_
+[p118_c0009] _Master Page # 118 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 119
+
+### [p119_c0001] DRAFT
+### [p119_c0002] Metropolitan Transportation Authority
+### [p119_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p119_c0004] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED) Schedule of Changes in the MTA's Net Pension Liability and Related Ratios for Single Employer Pension Plans
+[p119_c0005] ($ in thousands)
+[p119_c0006]
+
+```text
+MaBSTOA Plan 2021 2020 2019 2018 2017 2016 Plan Measurement Date (December 31): Total pension liability: Service cost $ 93,934 $ 95,514 $ 89,814 $ 86,979 $ 84,394 $ 82,075 Interest 274,270 266,588 265,454 256,084 246,284 236,722 Effect of economic / demographic (gains) or losses (19,177) (720) 9,011 5,412 11,826 13,784 Effect of assumption changes or inputs 72,032 168,752 - 6,347 - Differences between expected and actual experience - - - - Benefit payments and withdrawals (245,427) (237,930) (221,221) (213,827) (209,122) (187,823) Net change in total pension liability 175,632 123,452 311,810 134,648 139,729 144,758 Total pension liability—beginning 4,246,386 4,122,934 3,811,124 3,676,476 3,536,747 3,391,989 Total pension liability—ending (a) 4,422,018 4,246,386 4,122,934 3,811,124 3,676,476 3,536,747 Plan fiduciary net position: Employer contributions 156,204 159,486 206,390 205,433 202,684 220,697 Member contributions 24,935 24,709 23,552 21,955 19,713 18,472 Net investment income 416,287 60,326 447,365 (87,952) 350,186 212,260 Benefit payments and withdrawals (245,427) (237,930) (221,221) (213,827) (209,122) (187,823) Administrative expenses (264) (244) (220) (196) (208) (186) Net change in plan fiduciary net position 351,735 6,347 455,866 (74,587) 363,253 263,420 Plan fiduciary net position—beginning 3,306,616 3,300,268 2,844,402 2,918,989 2,555,736 2,292,316 Plan fiduciary net position—ending (b) 3,658,351 3,306,616 3,300,268 2,844,402 2,918,989 2,555,736 Employer's net pension liability—ending (a)-(b) $ 763,667 $ 939,770 $ 822,666 $ 966,722 $ 757,487 $ 981,011 Plan fiduciary net position as a percentage of the total pension liability 82.73% 77.87% 80.05% 74.63% 79.40% 72.26% Covered payroll $768,868 $ 802,100 $ 786,600 $ 776,200 $ 749,666 $ 716,527 Employer's net pension liability as a percentage of covered payroll 99.32% 117.16% 104.59% 124.55% 101.04% 136.91%
+```
+[p119_c0007] Note: Information was not readily available for periods prior to 2014. This schedule is intended to show information for ten years. Additional years will be displayed as they become available.
+[p119_c0008] _105_
+[p119_c0009] _Master Page # 119 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 120
+
+### [p120_c0001] DRAFT
+### [p120_c0002] Metropolitan Transportation Authority
+### [p120_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p120_c0004] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p120_c0005] Schedule of Changes in the MTA's Net Pension Liability and Related Ratios for Single Employer Pension Plans
+[p120_c0006] (continued)
+[p120_c0007] ($ in thousands)
+[p120_c0008]
+
+```text
+MNR Cash Balance Plan 2021 2020 2019 2018 2017 2016 2015 2014 Plan Measurement Date (December 31): Total pension liability: Interest $ 11 $ 10 $ 18 $ 20 $ 21 $ 24 $ 29 $ 32 Effect of economic / demographic (gains) or losses (11) (11) 4 (11) 12 (15) (10) - Effect of assumption changes or inputs 15 11 - - - - 18 - Benefit payments and withdrawals (38) (105) (53) (58) (71) (77) (113) (88) Net change in total pension liability (23) (70) (31) (49) (38) (68) (76) (56) Total pension liability—beginning 378 448 479 528 566 634 710 766 Total pension liability—ending (a) 355 378 448 479 528 566 634 710 Plan fiduciary net position: Employer contributions 9 - 5 - 23 18 - Net investment income (5) 32 40 1 20 16 6 41 Benefit payments and withdrawals (38) (105) (53) (58) (71) (77) (113) (88) Administrative expenses 3 (3) - - - 3 (5) Net change in plan fiduciary net position (43) (61) (16) (52) (51) (38) (86) (50) Plan fiduciary net position—beginning 394 455 471 523 574 612 698 748 Plan fiduciary net position—ending (b) 351 394 455 471 523 574 612 698 Employer's net pension liability—ending (a)-(b) $ 4 $ (16) $ (7) $ 8 $ 5 $ (8) $ 22 $ 12 Plan fiduciary net position as a percentage of the total pension liability 98.87% 104.23% 101.45% 98.33% 99.05% 101.41% 96.53% 98.31% Covered payroll $ 0 $ 277 $ 278 $ 268 $ 471 $ 846 $ 1,474 $ 2,274 Employer's net pension liability as a percentage of covered payroll 0.00% -5.78% -2.52% 2.99% 1.06% -0.95% 1.49% 0.53%
+```
+[p120_c0009] Note: Information was not readily available for periods prior to 2014. This schedule is intended to show information for ten years. Additional years will be displayed as they become available.
+[p120_c0010] _Master Page # 120 of 175 - Audit Committee Meeting 1/29/2024_
+[p120_c0011] _106_
+
+## Page 121
+
+### [p121_c0001] Metropolitan Transportation Authority
+### [p121_c0002] as of and for the Nine-Month Period Ended September 30, 2023 Interim Financial Statements
+### [p121_c0003] DRAFT
+### [p121_c0004] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p121_c0005] Schedule of Changes in the MTA's Net Pension Liability and Related Ratios for Single Employer Pension Plans
+[p121_c0006] (continued)
+[p121_c0007]
+
+```text
+($ in thousands) MTA Defined Benefit Plan Plan Measurement Date (December 31): 2021 2020 2019 2018 2017 2016 2021 2020 2019 2018 2017 2016 2021 2020 2019 2018 2017 2016 2021 2020 2019 2018 2017 2016 2021 2020 2019 2018 2017 2016 Total pension liability: Service cost $ 213,675 $ 213,494 $ 173,095 $ 162,273 $ 148,051 $ 138,215 Interest 455,230 427,672 387,193 358,118 335,679 308,009 Effect of economic / demographic (gains) or losses 20,656 92,019 35,935 75,744 (27,059) 86,809 Effect of assumption changes or inputs 113,662 - 690,958 - 10,731 - Effect of plan changes 61,890 76,511 73,521 Benefit payments and withdrawals (325,473) (293,836) (264,985) (242,349) (230,976) (209,623) Net change in total pension liability 477,750 439,349 1,022,196 215,676 310,937 396,931 Total pension liability—beginning 6,950,035 6,510,686 5,488,490 5,072,814 4,761,877 4,364,946 Total pension liability—ending (a) 7,427,785 6,950,035 6,510,686 5,488,490 5,072,814 4,761,877 Plan fiduciary net position: Employer contributions 396,144 394,986 344,714 338,967 321,861 280,768 Member contributions 33,832 32,006 31,504 29,902 31,027 29,392 Net investment income 639,374 99,045 651,919 (150,422) 516,153 247,708 Benefit payments and withdrawals (325,473) (293,836) (264,985) (242,349) (232,976) (209,623) Administrative expenses (3,513) (3,660) (3,408) (3,152) (4,502) (3,051) Net change in plan fiduciary net position 740,364 228,541 759,744 (27,054) 631,563 345,194 Plan fiduciary net position—beginning 5,012,765 4,784,224 4,024,480 4,051,534 3,419,971 3,074,777 Plan fiduciary net position—ending (b) 5,753,129 5,012,765 4,784,224 4,024,480 4,051,534 3,419,971 Employer's net pension liability—ending (a)-(b) $ 1,674,656 $ 1,937,270 $ 1,726,462 $ 1,464,010 $ 1,021,280 $ 1,341,906 Plan fiduciary net position as a percentage of the total pension liability 77.45% 72.13% 73.48% 73.33% 79.87% 71.82% Covered payroll $ 2,028,938 $ 2,050,970 $ 2,052,657 $ 2,030,695 $ 1,857,026 $ 1,784,369 Employer's net pension liability as a percentage of covered payroll 82.54% 94.46% 84.11% 72.09% 55.00% 75.20% 72.76% 61.59%
+```
+[p121_c0008] Note: Information was not readily available for periods prior to 2014. This schedule is intended to show information for ten years. Additional years will be displayed as they become available.
+[p121_c0009] _107_
+[p121_c0010] _Master Page # 121 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 122
+
+### [p122_c0001] Metropolitan Transportation Authority
+### [p122_c0002] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p122_c0003] DRAFT
+### [p122_c0004] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p122_c0005] Schedule of the MTA's Proportionate Share of the Net Pension Liabilities of Cost-Sharing Multiple-Employer Pension Plans
+[p122_c0006] ($ in thousands)
+[p122_c0007]
+
+```text
+Plan Measurement Date: NYCERS Plan June 30, 2022 June 30, 2021 June 30, 2020 June 30, 2019 June 30, 2018 June 30, 2017 June 30, 2016 June 30, 2015 MTA's proportion of the net pension liability 21.900% 22.218% 24.420% 24.493% 23.682% 24.096% 23.493% 23.585% MTA's proportionate share of the net pension liability $ 3,964,996 $ 1,424,952 $ 5,147,445 $ 4,536,510 $ 4,176,941 $ 5,003,811 $ 5,708,052 $ 4,773,787 MTA's actual covered payroll $ 3,848,798 $ 3,618,339 $ 3,514,665 $ 3,385,743 $ 3,216,837 $ 3,154,673 $ 3,064,007 $ 2,989,480 MTA's proportionate share of the net pension liability as a percentage of the MTA's covered payroll 103.019% 39.000% 146.456% 113.989% 129.846% 158.616% 186.294% 159.686% Plan fiduciary net position as a percentage of the total pension liability 81.276% 77.000% 76.933% 78.836% 78.826% 74.805% 69.568% 73.125%
+```
+### [p122_c0008] NYSLEERS Plan
+[p122_c0009]
+
+```text
+Plan Measurement Date: NYSLEERS Plan March 31, 2022 March 31, 2021 March 31, 2020 March 31, 2019 March 31, 2018 March 31, 2017 March 31, 2016 March 31, 2015 MTA's proportion of the net pension liability 0.310% 0.314% 0.346% 0.345% 0.327% 0.311% 0.303% 0.289% MTA's proportionate share of the net pension liability $ (25,856) $ 313 $ 91,524 $ 24,472 $ 10,553 $ 29,239 $ 48,557 $ 9,768 MTA's actual covered payroll $ 110,702 $ 102,838 $ 105,457 $ 109,252 $ 105,269 $ 96,583 $ 87,670 $ 87,315 MTA's proportionate share of the net pension liability as a percentage of the MTA's covered payroll -23.360% 0.000% 86.788% 22.400% 10.025% 30.273% 55.386% 11.187% Plan fiduciary net position as a percentage of the total pension liability 103.650% 99.950% 86.392% 96.267% 98.240% 94.703% 90.685% 97.947%
+```
+[p122_c0010] Note: Information was not readily available for periods prior to 2015. This schedule is intended to show information for ten years. Additional years will be displayed as they become available. The data provided in this schedule is based on the measurement date used by NYCERS and NYSLEERS for the net pension liability.
+[p122_c0011] _Master Page # 122 of 175 - Audit Committee Meeting 1/29/2024_
+[p122_c0012] _108_
+
+## Page 123
+
+### [p123_c0001] MTA Metropolitan Transportation Authority
+### [p123_c0002] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p123_c0003] DRAFT
+### [p123_c0004] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p123_c0005] Schedule of the MTA's Contributions for All Pension Plans for the Year Ended December 31,
+[p123_c0006]
+
+```text
+($ in thousands) 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 Additional Plan* Actuarially Determined Contribution $ 70,764 $ 70,553 $ 68,723 $ 62,774 $ 59,196 $ 76,523 $ 83,183 $ 82,382 $ 112,513 $ - Actual Employer Contribution 70,764 70,553 68,724 62,774 59,500 221,523 151,100 100,000 407,513 - Contribution Deficiency (Excess) $ - $ - $ (1) $ - $ (304) $ (145,000) $ (67,917) $ (17,618) $ (295,000) $ - Covered Payroll $ 2,043 $ 3,230 $ 5,174 $ 7,236 $ 13,076 $ 20,500 $ 29,312 $ 39,697 $ 43,267 $ - Contributions as a % of Covered Payroll 3463.99% 2184.33% 1328.26% 867.54% 455.02% 1080.62% 515.49% 251.91% 941.87% N/A MaSTOA Plan Actuarially Determined Contribution $ 158,618 $ 156,204 $ 159,486 $ 209,314 $ 202,509 $ 202,924 $ 220,697 $ 214,881 $ 226,374 $ 234,474 Actual Employer Contribution 158,618 156,204 159,486 206,390 205,434 202,684 220,697 214,881 226,374 234,474 Contribution Deficiency (Excess) $ - $ - $ - $ 2,924 $ (2,925) $ 240 $ - $ - $ - $ - Covered Payroll $ 775,512 $ 768,868 $ 802,100 $ 786,600 $ 776,200 $ 749,666 $ 716,527 $ 686,674 $ 653,287 $ 582,081 Contributions as a % of Covered Payroll 20.45% 20.32% 19.88% 26.24% 26.47% 27.04% 30.80% 31.29% 34.65% 40.28% Metro-North Cash Balance Plan* Actuarially Determined Contribution $ 4 $ - $ - $ 8 $ 5 $ - $ 23 $ - $ 5 $ - Actual Employer Contribution 4 - - - 5 - 23 14 - - Contribution Deficiency (Excess) $ - $ - $ - $ - $ - $ - $ - $ (14) $ 5 $ - Covered Payroll $ - $ - $ 277 $ 278 $ 268 $ 471 $ 846 $ 1,474 $ 2,274 $ - Contributions as a % of Covered Payroll 0.00% 0.00% 0.00% 0.00% 1.87% 0.00% 2.68% 0.96% 0.00% N/A MTA Defined Benefit Plan* Actuarially Determined Contribution $ 404,245 $ 392,547 $ 392,921 $ 349,928 $ 331,566 $ 316,916 $ 290,415 $ 273,700 $ 271,523 $ - Actual Employer Contribution 404,245 396,144 393,961 343,862 339,800 321,861 280,767 221,694 331,259 - Contribution Deficiency (Excess) $ - $ (3,597) $ (1,040) $ 6,066 $ (8,234) $ (4,945) $ 9,648 $ 52,006 $ (59,736) $ - Covered Payroll $ 2,111,293 $ 2,028,938 $ 2,050,970 $ 2,052,657 $ 2,030,695 $ 1,857,026 $ 1,784,369 $ 1,773,274 $ 1,679,558 $ - Contributions as a % of Covered Payroll 19.15% 19.52% 19.21% 16.75% 16.73% 17.33% 15.73% 12.50% 19.72% N/A
+```
+[p123_c0007] _* For the MTA Defined Benefit Plan, Additional Plan and Metro-North Cash Balance Plan, information was not readily available for periods prior to 2014. This schedule is intended to show information for ten years. Additional years will be displayed as they become available._
+[p123_c0008] _Master Page # 123 of 175 - Audit Committee Meeting 1/29/2024_
+[p123_c0009] _109_
+
+## Page 124
+
+### [p124_c0001] DRAFT
+### [p124_c0002] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p124_c0003] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p124_c0004] Schedule of the MTA's Contributions for All Pension Plans for the Year Ended December 31,
+[p124_c0005] (continued)
+[p124_c0006]
+
+```text
+($ in thousands) 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 NYCERS Actuarially Determined Contribution $ 797,299 $ 842,269 $ 882,690 $ 952,616 $ 807,097 $ 800,863 $ 797,845 $ 736,212 $ 741,223 $ 736,361 Actual Employer Contribution 797,299 842,269 882,690 952,616 807,097 800,863 797,845 736,212 741,223 736,361 Contribution Deficiency (Excess) $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - Covered Payroll $ 3,848,798 $ 3,637,544 $ 3,771,595 $ 3,948,283 $ 3,974,494 $ 3,768,885 $ 3,523,993 $ 3,494,907 $ 3,617,087 $ 2,943,195 Contributions as a % of Covered Payroll 20.72% 23.15% 23.40% 24.13% 20.31% 21.25% 22.64% 21.07% 20.49% 25.02% NYSLERS ** Actuarially Determined Contribution $ 16,284 $ 16,284 $ 14,533 $ 14,851 $ 14,501 $ 13,969 $ 12,980 $ 15,792 $ 13,816 $ - Actual Employer Contribution 16,284 16,284 14,533 14,851 14,501 13,969 12,980 15,792 13,816 - Contribution Deficiency (Excess) $ - $ - $ - $ - $ - $ - $ - $ - $ - $ - Covered Payroll $ 110,702 $ 99,129 $ 102,838 $ 106,913 $ 109,210 $ 103,787 $ 94,801 $ 86,322 $ 84,041 $ - Contributions as a % of Covered Payroll 14.71% 16.43% 14.13% 13.89% 13.28% 13.46% 13.69% 18.29% 16.44% N/A
+```
+[p124_c0007] _** For the NYSLERS plan, information was not readily available for periods prior to 2014. This schedule is intended to show information for ten years. Additional years will be displayed as they become available._
+[p124_c0008] _Master Page # 124 of 175 - Audit Committee Meeting 1/29/2024_
+[p124_c0009] _110_
+
+## Page 125
+
+### [p125_c0001] Metropolitan Transportation Authority
+### [p125_c0002] DRAFT
+### [p125_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p125_c0004] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p125_c0005] Notes to Schedule of the MTA's Contributions for All Pension Plans
+[p125_c0006]
+
+```text
+Additional Plan Valuation Dates: January 1, 2021 January 1, 2020 January 1, 2019 January 1, 2018 Measurement Date: December 31, 2021 December 31, 2020 December 31, 2019 December 31, 2018 Actuarial cost method: Entry Age Normal Cost Entry Age Normal Cost Entry Age Normal Cost Entry Age Normal Cost Amortization method: Period specified in current valuation report (closed 12-year period from January 1, 2021) with level dollar payments. Period specified in current valuation report (closed 13 year period beginning January 1, 2020) with level dollar payments. Period specified in current valuation report (closed 14 year period beginning January 1, 2019) with level dollar payments. Period specified in current valuation report (closed 15 year period beginning January 1, 2018) with level dollar payments. Asset Valuation Method: Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/ losses are based on fair value of assets. Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/ losses are based on fair value of assets. Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/ losses are based on fair value of assets. Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/ losses are based on fair value of assets. Salary increases: 3.00% 3.00% 3.00% 3.00% Actuarial assumptions: Discount Rate: 6.50% 6.50% 6.50% 7.00% Investment rate of return : 6.50%, net of investment expenses 6.50%, net of investment expenses. 6.50%, net of investment expenses. 7.00%, net of investment expenses. Mortality: Based on experience of all MTA-sponsored pension plan members from January 1, 2015 - December 31, 2020 reflecting mortality improvement on a generational basis using Scale MP-2021 Based on experience of all MTA members reflecting mortality improvement on a generational basis using scale AA. Based on experience of all MTA members reflecting mortality improvement on a generational basis using scale AA. Based on experience of all MTA members reflecting mortality improvement on a generational basis using scale AA. Pre-retirement: RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. Post-retirement Healthy Lives: 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. Post-retirement Disabled Lives: N/A N/A N/A N/A Inflation/Railroad Retirement Wage Base: 2.25%; 3.25% 2.25%; 3.25% 2.25%; 3.25% 2.50%; 3.50% Cost-of-Living Adjustments: N/A N/A N/A N/A
+```
+[p125_c0007] _Master Page # 125 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 126
+
+### [p126_c0001] Metropolitan Transportation Authority
+### [p126_c0002] DRAFT
+### [p126_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p126_c0004] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p126_c0005] Notes to Schedule of the MTA's Contributions for All Pension Plans
+[p126_c0006]
+
+```text
+Additional Plan (continued) Valuation Dates: January 1, 2017 January 1, 2016 January 1, 2015 January 1, 2014 Measurement Date: December 31, 2017 December 31, 2016 December 31, 2015 December 31, 2014 Actuarial cost method: Entry Age Normal Cost Entry Age Normal Cost Entry Age Normal Cost Entry Age Normal Cost Amortization method: Period specified in current valuation report (closed 16 year period beginning January 1, 2017) with level dollar payments. Period specified in current valuation report (closed 17 year period beginning January 1, 2016) with level dollar payments. Period specified in current valuation report (closed 18 year period beginning January 1, 2015) with level dollar payments. Period specified in current valuation report (closed 19 year period beginning January 1, 2014) with level dollar payments. Asset Valuation Method: Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/losses are based on fair value of assets. Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/losses are based on fair value of assets. Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/losses are based on fair value of assets. Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/losses are based on fair value of assets. Salary increases: 3.00% 3.00% 3.00% 3.00% Actuarial assumptions: Discount Rate: 7.00% 7.00% 7.00% 7.00% Investment rate of return : 7.00%, net of investment expenses. 7.00%, net of investment expenses. 7.00%, net of investment expenses. 7.00%, net of investment expenses. Mortality: Based on experience of all MTA members reflecting mortality improvement on a generational basis using scale AA. Based on experience of all MTA members reflecting mortality improvement on a generational basis using scale AA. Based on experience of all MTA members reflecting mortality improvement on a generational basis using scale AA. Based on experience of all MTA members reflecting mortality improvement on a generational basis using scale AA. As generational tables, they reflect mortality improvements both before and after the measurement date. Mortality assumption is based on a 2012 experience study for all MTA plans. Pre-retirement: RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. Post-retirement Healthy Lives: 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. Post-retirement Disabled Lives: N/A N/A N/A N/A Inflation/Railroad Retirement Wage Base: 2.50%; 3.50% 2.50%; 3.50% 2.50%; 3.50% 2.50%; 3.50% Cost-of-Living Adjustments: N/A N/A N/A N/A
+```
+[p126_c0007] _Master Page # 126 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 127
+
+### [p127_c0001] Metropolitan Transportation Authority
+### [p127_c0002] DRAFT
+### [p127_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p127_c0004] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p127_c0005] Notes to Schedule of the MTA's Contributions for All Pension Plans
+[p127_c0006]
+
+```text
+MaBSTOA Plan Valuation Dates: January 1, 2021 January 1, 2020 January 1, 2019 Measurement Date: December 31, 2021 December 31, 2020 December 31, 2019 Actuarial cost method: Frozen Initial Liability cost method Frozen Initial Liability (FIL) Frozen Initial Liability (FIL) Amortization method: For FIL bases, 15 years for Fresh Start base as of January 1, 2020 and period specified in current valuation report for specific assumption changes. Future gains/losses are amortized through the calculation of the normal cost in accordance with the FIL cost method amortized based on expected working lifetime, weighted by salary, of the projected population. For FIL bases, period specified in current valuation 30-year level dollar. Future gains/losses are amortized through the calculation of the normal cost in accordance with the FIL cost method amortized based on expected working lifetime, weighted by salary, of the projected population. For FIL bases, period specified in current valuation 30-year level dollar. Future gains/losses are amortized through the calculation of the normal cost in accordance with the FIL cost method amortized based on expected working lifetime, weighted by salary, of the projected population. Asset Valuation Method: Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/losses are based on fair value of assets. Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/losses are based on fair value of assets. Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/losses are based on fair value of assets. Salary increases: Reflecting general wage, merit and promotion increases for operating and non-operating members. Varies by years of employment. Reflecting general wage, merit and promotion increases for operating employees and non-operating members. Varies by years of employment. Reflecting general wage, merit, and promotion increases of 3.5% for operating employees and 4.0% for non-operating employees per year. Large increases are assumed in the first 5 years of a member's career. Actuarial assumptions: Discount Rate: 6.50% 6.50% 6.50% Investment rate of return : 6.50%, net of investment expenses. 6.50%, net of investment expenses. 6.50%, net of investment expenses. Mortality: Based on experience of all MTA-sponsored pension plan members from January 1, 2015 - December 31, 2020 reflecting mortality improvement on a generational basis using Scale MP-2021 Based on experience of all MTA members reflecting mortality improvement on a generational basis using scale AA. Based on experience of all MTA members reflecting mortality improvement on a generational basis using scale AA. Pre-retirement: RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. Post-retirement Healthy Lives: 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. Post-retirement Disabled Lives: RP-2014 Disabled Annuitant mortality table for males and females. RP-2014 Disabled Annuitant mortality table for males and females. RP-2014 Disabled Annuitant mortality table for males and females. Inflation/Railroad Retirement Wage Base: 2.25% 2.25% 2.25% Cost-of-Living Adjustments: 60% of inflation assumption or 1.35% per annum, if applicable 1.35% per annum 1.35% per annum
+```
+[p127_c0007] _Master Page # 127 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 128
+
+### [p128_c0001] Metropolitan Transportation Authority
+### [p128_c0002] DRAFT
+### [p128_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p128_c0004] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p128_c0005] Notes to Schedule of the MTA's Contributions for All Pension Plans
+[p128_c0006]
+
+```text
+MaBSTOA Plan (continued) Valuation Dates: January 1, 2018 January 1, 2017 January 1, 2016 Measurement Date: December 31, 2018 December 31, 2017 December 31, 2016 Actuarial cost method: Frozen Initial Liability (FIL) Frozen Initial Liability (FIL) Frozen Initial Liability (FIL) Amortization method: For FIL bases, period specified in current valuation 30-year level dollar. Future gains/losses are amortized through the calculation of the normal cost in accordance with the FIL cost method amortized based on expected working lifetime, weighted by salary, of the projected population. For FIL bases, period specified in current valuation 30-year level dollar. Future gains/losses are amortized through the calculation of the normal cost in accordance with the FIL cost method amortized based on expected working lifetime, weighted by salary, of the projected population. For FIL bases, period specified in current valuation 30-year level dollar. Future gains/losses are amortized through the calculation of the normal cost in accordance with the FIL cost method amortized based on expected working lifetime, weighted by salary, of the projected population. Asset Valuation Method: Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/losses are based on fair value of assets. Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/losses are based on fair value of assets. Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/losses are based on fair value of assets. Salary increases: Varies by years of employment and employment type. Varies by years of employment and employment type. Varies by years of employment and employment type. Actuarial assumptions: Discount Rate: 7.00% 7.00% 7.00% Investment rate of return : 7.00%, net of investment expenses. 7.00%, net of investment expenses. 7.00%, net of investment expenses. Mortality: Based on experience of all MTA members reflecting mortality improvement on a generational basis using scale AA. Based on experience of all MTA members reflecting mortality improvement on a generational basis using scale AA. Based on experience of all MTA members reflecting mortality improvement on a generational basis using scale AA. Pre-retirement: RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. Post-retirement Healthy Lives: 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. Post-retirement Disabled Lives: RP-2014 Disabled Annuitant mortality table for males and females. RP-2014 Disabled Annuitant mortality table for males and females. 75% of the rates from the RP-2000 Healthy Annuitant mortality table for males and females. Inflation/Railroad Retirement Wage Base: 2.50% 2.50% 2.50% Cost-of-Living Adjustments: 1.375% per annum 1.375% per annum 1.375% per annum
+```
+[p128_c0007] _H4 Master Page # 128 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 129
+
+### [p129_c0001] DRAFT
+### [p129_c0002] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p129_c0003] Notes to Schedule of the MTA's Contributions for All Pension Plans
+[p129_c0004]
+
+```text
+MNR Cash Balance Plan Valuation Dates: January 1, 2021 January 1, 2020 January 1, 2019 January 1, 2019 Measurement Date: December 31, 2021 December 31, 2020 December 31, 2019 December 31, 2018 Actuarial cost method: Unit Credit Cost Unit Credit Cost Unit Credit Cost Unit Credit Cost Amortization method: One-year amortization of the unfunded liability, if any. One-year amortization of the unfunded liability, if any. One-year amortization of the unfunded liability, if any. One-year amortization of the unfunded liability, if any. Asset Valuation Method: Actuarial value equals fair value. Actuarial value equals fair value. Actuarial value equals fair value. Actuarial value equals fair value. Salary increases: N/A N/A N/A N/A Actuarial assumptions: Discount Rate: 3.00% 3.00% 3.50% 4.00% Investment rate of return : 3.00%, net of investment expenses. 3.00%, net of investment expenses. 3.50%, net of investment expenses. 4.00%, net of investment expenses. Mortality: Based on experience of all MTA-sponsored pension plan members from January 1, 2015 - December 31, 2020 reflecting mortality improvement on a generational basis using Scale MP-2021 Based on experience of all MTA members reflecting mortality improvement on a generational basis using scale AA. Mortality assumption is based on an experience study for all MTA plans. Based on experience of all MTA members reflecting mortality improvement on a generational basis using scale AA. Mortality assumption is based on an experience study for all MTA plans. Based on experience of all MTA members reflecting mortality improvement on a generational basis using scale AA. Mortality assumption is based on a 2017 experience study for all MTA plans. Pre-retirement: RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments, projected on a generational basis using Scale AA. RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. Post-retirement Healthy Lives: 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females, not projected on a generational basis using Scale AA. 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. Post-retirement Disabled Lives: N/A N/A N/A N/A Inflation/Railroad Retirement Wage Base: 2.25% 2.25% 2.25% 2.50% Cost-of-Living Adjustments: N/A N/A N/A N/A
+```
+[p129_c0005] _Master Page # 129 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 130
+
+### [p130_c0001] DRAFT
+### [p130_c0002] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p130_c0003] Notes to Schedule of the MTA's Contributions for All Pension Plans
+[p130_c0004]
+
+```text
+MNR Cash Balance Plan (continued) Valuation Dates: January 1, 2018 January 1, 2017 January 1, 2016 January 1, 2014 Measurement Date: December 31, 2017 December 31, 2016 December 31, 2015 December 31, 2014 Actuarial cost method: Unit Credit Cost Unit Credit Cost Unit Credit Cost Unit Credit Cost Amortization method: One-year amortization of the unfunded liability, if any. One-year amortization of the unfunded liability, if any. One-year amortization of the unfunded liability, if any. Period specified in current valuation report (closed 10 year period beginning January 1, 2008 - 4 year period for the January 1, 2014 valuation). Asset Valuation Method: Actuarial value equals fair value. Actuarial value equals fair value. Actuarial value equals fair value. Effective January 1, 2015, the Actuarially Determined Contribution (ADC) will reflect one-year amortization of the unfunded accrued liability in accordance with the funding policy adopted by the MTA. Salary increases: N/A N/A N/A There were no projected salary increase assumptions used in the January 1, 2014 valuation as the participants of the Plan were covered under the Management Plan effective January 1, 1989. For participants of the Plan eligible for additional benefits, these benefits were not valued as the potential liability is de minimus. Actuarial assumptions: Discount Rate: 4.00% 4.00% 4.00% 4.50% Investment rate of return : 4.00%, net of investment expenses. 4.00%, net of investment expenses. 4.00%, net of investment expenses. 4.50%, net of investment expenses. Mortality: Based on experience of all MTA members reflecting mortality improvement on a generational basis using scale AA. Mortality assumption is based on a 2017 experience study for all MTA plans. Based on experience of all MTA members reflecting mortality improvement on a generational basis using scale AA. Mortality assumption is based on a 2012 experience study for all MTA plans. Based on experience of all MTA members reflecting mortality improvement on a generational basis using scale AA. Mortality assumption is based on a 2012 experience study for all MTA plans. Based on experience of all MTA members reflecting mortality improvement on a generational basis using scale AA. As generational tables, they reflect mortality improvements both before and after the measurement date. Mortality assumption is based on a 2012 experience study for all MTA plans. Pre-retirement: RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. Post-retirement Healthy Lives: 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. Post-retirement Disabled Lives: N/A N/A N/A N/A Inflation/Railroad Retirement Wage Base: 2.50% 2.30% 2.30% 2.50% Cost-of-Living Adjustments: N/A N/A N/A N/A
+```
+[p130_c0005] _Master Page # 130 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 131
+
+### [p131_c0001] DRAFT
+### [p131_c0002] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p131_c0003] Notes to Schedule of the MTA's Contributions for All Pension Plans
+[p131_c0004]
+
+```text
+MTA Defined Benefit Plan Valuation Dates: January 1, 2021 January 1, 2020 January 1, 2019 Measurement Date: December 31, 2021 December 31, 2020 December 31, 2019 Actuarial cost method: Entry Age Normal Cost Entry Age Normal Cost Entry Age Normal Cost Amortization method: For FIL bases, 18 years for Fresh start base as of January 1, 2020 and period specified in current valuation report for specific assumption and plan change bases. Future gains/losses are amortized through the calculation of the normal cost in accordance with the FIL cost method amortized based on expected working lifetime, weighted by salary or service, of the projected population for each group and further weighted by total present value of benefits for each group. For Frozen Initial Liability ("FIL") bases, 18 years for Fresh start base as of Jan 1, 2020 and period specified in current valuation report for specific plan change bases. Future gains/losses are amortized through the calculation of the normal cost in accordance with the FIL cost method amortized based on expected working lifetime, weighted by salary or service, of the projected population for each group and further weighted by total present value of benefits for each group. For Frozen Initial Liability ("FIL") bases, period specified in current valuation report. Future gains/losses are amortized through the calculation of the normal cost in accordance with FIL cost method amortized based on expected working lifetime, weighted by salary, of the projected population for each group. Asset Valuation Method: Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/losses are based on fair value of assets. Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/losses are based on fair value of assets. Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/losses are based on fair value of assets. Salary increases: Varies by years of employment, and employee group; 2.75% general wage increases increases for TWU Local 100 MTA Bus hourly employees. Varies by years of employment, and employee group. 2.75% general wage increases for TWU Local 100 MTA Bus hourly employees. Varies by years of employment, and employee group. 2.75% general wage increases for TWU Local 100 MTA Bus hourly employees. Actuarial assumptions: Discount Rate: 6.50% 6.50% 6.50% Investment rate of return : 6.50% 6.50% 6.50% Mortality: Based on experience of all MTA sponsored pension plan members from January 1, 2015 - December 31, 2020 reflecting mortality improvement on a generational basis using Scale MP-2021 Pre-retirement and post-retirement healthy annuitant rates are projected on a generational basis using Scale AA. As a general table, it reflects mortality improvements both before and after the measurement date. Pre-retirement and post-retirement healthy annuitant rates are projected on a generational basis using Scale AA. As a general table, it reflects mortality improvements both before and after the measurement date. Pre-retirement: RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. Post-retirement Healthy Lives: 95% of the RP-2000 Healthy Annuitant mortality table for males with Blue Collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. Post-retirement Disabled Lives: RP-2014 Disabled Annuitant mortality table for males and females. RP-2014 Disabled Annuitant mortality table for males and females RP-2014 Disabled Annuitant mortality table for males and females Inflation/Railroad Retirement Wage Base: 2.25%; 3.25% 2.25%; 3.25% 2.25%; 3.25% Cost-of-Living Adjustments: 60% of inflation assumption or 1.35%, if applicable. 60% of inflation assumption or 1.35%, if applicable. 60% of inflation assumption or 1.35%, if applicable.
+```
+[p131_c0005] _Master Page # 131 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 132
+
+### [p132_c0001] DRAFT
+### [p132_c0002] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p132_c0003] Notes to Schedule of the MTA's Contributions for All Pension Plans
+[p132_c0004]
+
+```text
+MTA Defined Benefit Plan (continued) Valuation Dates: January 1, 2018 January 1, 2017 January 1, 2016 Measurement Date: December 31, 2018 December 31, 2017 December 31, 2016 Actuarial cost method: Entry Age Normal Cost Entry Age Normal Cost Entry Age Normal Cost Amortization method: For Frozen Initial Liability ("FIL") bases, period specified in current valuation report. Future gains/ losses are amortized through the calculation of the normal cost in accordance with FIL cost method amortized based on expected working lifetime, weighted by salary, of the projected population for each group. For Frozen Initial Liability ("FIL") bases, period specified in current valuation report. Future gains/ losses are amortized through the calculation of the normal cost in accordance with FIL cost method amortized based on expected working lifetime, weighted by salary, of the projected population for each group. For Frozen Initial Liability ("FIL") bases, period specified in current valuation report. Future gains/ losses are amortized through the calculation of the normal cost in accordance with FIL cost method amortized based on expected working lifetime, weighted by salary, of the projected population for each group. Asset Valuation Method: Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/losses are based on fair value of assets. Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/losses are based on fair value of assets. Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/losses are based on fair value of assets. Salary increases: Varies by years of employment, and employee group. 3.5% for MTA Bus hourly employees. Varies by years of employment, and employee group. 3.5% for MTA Bus hourly employees. Varies by years of employment, and employee group. 3.5% for MTA Bus hourly employees. Actuarial assumptions: Discount Rate: 7.00% 7.00% 7.00% Investment rate of return : 7.00% 7.00% 7.00% Mortality: Pre-retirement and post-retirement healthy annuitant rates are projected on a generational basis using Scale AA. As a general table, it reflects mortality improvements both before and after the measurement date. Pre-retirement and post-retirement healthy annuitant rates are projected on a generational basis using Scale AA. As a general table, it reflects mortality improvements both before and after the measurement date. Pre-retirement and post-retirement healthy annuitant rates are projected on a generational basis using Scale AA. As a general table, it reflects mortality improvements both before and after the measurement date. Pre-retirement: RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. Post-retirement Healthy Lives: 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. Post-retirement Disabled Lives: RP-2014 Disabled Annuitant mortality table for males and females RP-2014 Disabled Annuitant mortality table for males and females 75% of the rates from the RP-2000 Healthy Annuitant mortality table for males and females. At age 85 and later for males and age 77 and later for females, the disability rates are set to the male and females healthy rates, respectively. Inflation/Railroad Retirement Wage Base: 2.50%; 3.50% 2.50%; 3.50% 2.50%; 3.50% Cost-of-Living Adjustments: 55% of inflation assumption or 1.375%, if applicable. 55% of inflation assumption or 1.375%, if applicable. 55% of inflation assumption or 1.375%, if applicable.
+```
+[p132_c0005] _Master Page # 132 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 133
+
+### [p133_c0001] DRAFT
+### [p133_c0002] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p133_c0003] Notes to Schedule of the MTA's Contributions for All Pension Plans
+[p133_c0004]
+
+```text
+MTA Defined Benefit Plan (continued) Valuation Dates: January 1, 2015 January 1, 2014 Measurement Date: December 31, 2015 December 31, 2014 Actuarial cost method: Entry Age Normal Cost Entry Age Normal Cost Amortization method: For Frozen Initial Liability ("FIL") bases, period specified in current valuation report. Future gains/ losses are amortized through the calculation of the normal cost in accordance with FIL cost method amortized based on expected working lifetime, weighted by salary, of the projected population for each group. For Frozen Initial Liability ("FIL") bases, period specified in current valuation report. Future gains/ losses are amortized through the calculation of the normal cost in accordance with FIL cost method amortized based on expected working lifetime, weighted by salary, of the projected population for each group. Asset Valuation Method: Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/losses are based on fair value of assets. Actuarial value equals fair value less unrecognized gains/losses over a 5-year period. Gains/losses are based on fair value of assets. Salary increases: Varies by years of employment, and employee group. 3.5% for MTA Bus hourly employees. Varies by years of employment, and employee group. Actuarial assumptions: Discount Rate: 7.00% 7.00% Investment rate of return : 7.00% 7.00% Mortality: Pre-retirement and post-retirement healthy annuitant rates are projected on a generational basis using Scale AA. As a general table, it reflects mortality improvements both before and after the measurement date. Pre-retirement and post-retirement healthy annuitant rates are projected on a generational basis using Scale AA, as recommended by the Society of Actuaries Retirement Plans Experience Committee. Mortality assumption is based on a 2012 experience study for all MTA plans. Pre-retirement: RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. RP-2000 Employee Mortality Table for Males and Females with blue collar adjustments. Post-retirement Healthy Lives: 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. 95% of the rates from the RP-2000 Healthy Annuitant mortality table for males with blue collar adjustments and 116% of the rates from the RP-2000 Healthy Annuitant mortality table for females. Post-retirement Disabled Lives: 75% of the rates from the RP-2000 Healthy Annuitant mortality table for males and females. At age 85 and later for males and age 77 and later for females, the disability rates are set to the male and females healthy rates, respectively. 75% of the rates from the RP-2000 Healthy Annuitant mortality table for males and females. At age 85 and later for males and age 77 and later for females, the disability rates are set to the male and females healthy rates, respectively. Inflation/Railroad Retirement Wage Base: 2.50%; 3.50% 2.50%; 3.00% Cost-of-Living Adjustments: 55% of inflation assumption or 1.375%, if applicable. 55% of inflation assumption or 1.375%, if applicable.
+```
+[p133_c0005] _Master Page # 133 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 134
+
+### [p134_c0001] Metropolitan Transportation Authority
+### [p134_c0002] DRAFT
+### [p134_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p134_c0004] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p134_c0005] Notes to Schedule of the MTA's Contributions for All Pension Plans
+[p134_c0006]
+
+```text
+NYCERS Plan Valuation Dates: June 30, 2021 June 30, 2020 June 30, 2019 June 30, 2018 Measurement Date: June 30, 2022 June 30, 2021 June 30, 2020 June 30, 2019 Actuarial cost method: Entry Age Normal Cost Entry Age Normal Cost Entry Age Normal Cost Entry Age Normal Cost Amortization method: Increasing Dollar for Initial Unfunded; Level Dollar for Post 2010 Unfunded. Increasing Dollar for Initial Unfunded; Level Dollar for Post 2010 Unfunded. Increasing Dollar for Initial Unfunded; Level Dollar for Post 2010 Unfunded. Increasing Dollar for Initial Unfunded; Level Dollar for Post 2010 Unfunded. Asset Valuation Method: Modified six-year moving average of fair values with a Market Value Restart as of June 30, 2011. Modified six-year moving average of fair values with a Market Value Restart as of June 30, 2011. Modified six-year moving average of fair values with a Market Value Restart as of June 30, 2011. Modified six-year moving average of fair values with a Market Value Restart as of June 30, 2011. Salary increases: 3% per annum. 3% per annum. 3% per annum. 3% per annum. Actuarial assumptions: Discount Rate: 7.00% 7.00% 7.00% 7.00% Investment rate of return : 7.00%, net of investment expenses. 7.00%, net of investment expenses. 7.00%, net of investment expenses. 7.00%, net of investment expenses. Mortality: Tables adopted by the Boards of Trustees during Fiscal Year 2019. Applies mortality improvement scale MP-2020 published by the Society of Actuaries. Mortality tables for service and disability pensioners were developed from an experience study of NYCERS's pensioners. The mortality tables for beneficiaries were developed from an experience review of NYCERS' beneficiaries. The most recently completed study was prepared by Bolton, Inc. dated June 2019 analyzed the four-year and ten-year periods ended June 30, 2017. Mortality tables for service and disability pensioners were developed from an experience study of NYCERS's pensioners. The mortality tables for beneficiaries were developed from an experience review of NYCERS' beneficiaries. The most recently completed study was prepared by Bolton, Inc. dated June 2019 analyzed the four-year and ten-year periods ended June 30, 2017. Mortality tables for service and disability pensioners were developed from an experience study of NYCERS's pensioners. The mortality tables for beneficiaries were developed from an experience review of NYCERS' beneficiaries. The most recently completed study was published by Gabriel Roeder & Company ("GRS"), dated October 2015, and analyzed experience for Fiscal Years 2010 through 2013. Pre-retirement: N/A N/A N/A N/A Post-retirement Healthy Lives: N/A N/A N/A N/A Post-retirement Disabled Lives: N/A N/A N/A N/A Inflation/Railroad Retirement Wage Base: 2.50% 2.50% 2.50% 2.50% Cost-of-Living Adjustments: 1.5% per annum for Auto COLA and 2.5% per annum for Escalation. 1.5% per annum for Auto COLA and 2.5% per annum for Escalation. 1.5% per annum for Auto COLA and 2.5% per annum for Escalation. 1.5% per annum for Auto COLA and 2.5% per annum for Escalation.
+```
+[p134_c0007] _Master Page # 134 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 135
+
+### [p135_c0001] Metropolitan Transportation Authority
+### [p135_c0002] DRAFT
+### [p135_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p135_c0004] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p135_c0005] Notes to Schedule of the MTA's Contributions for All Pension Plans
+[p135_c0006]
+
+```text
+NYCERS Plan (continued) Valuation Dates: June 30, 2016 June 30, 2015 June 30, 2014 June 30, 2013 Measurement Date: June 30, 2018 June 30, 2017 June 30, 2016 June 30, 2015 Actuarial cost method: Entry Age Normal Cost Entry Age Normal Cost Entry Age Normal Cost Entry Age Normal Cost Amortization method: Increasing Dollar for Initial Unfunded; Level Dollar for Post 2010 Unfunded. Increasing Dollar for Initial Unfunded; Level Dollar for Post 2010 Unfunded. Increasing Dollar for Initial Unfunded; Level Dollar for Post 2010 Unfunded. Increasing Dollar for Initial Unfunded; Level Dollar for Post 2010 Unfunded. Asset Valuation Method: Modified six-year moving average of fair values with a Market Value Restart as of June 30, 2011. Modified six-year moving average of fair values with a Market Value Restart as of June 30, 2011. Modified six-year moving average of fair values with a Market Value Restart as of June 30, 2011. Modified six-year moving average of fair values with a Market Value Restart as of June 30, 2011. Salary increases: 3% per annum. 3% per annum. 3% per annum. 3% per annum. Actuarial assumptions: Discount Rate: 7.00% 7.00% 7.00% 7.00% Investment rate of return : 7.00%, net of investment expenses. 7.00%, net of investment expenses. 7.00%, net of investment expenses. 7.00%, net of investment expenses. Mortality: Mortality tables for service and disability pensioners were developed from an experience study of NYCERS's pensioners. The mortality tables for beneficiaries were developed from an experience review of NYCERS' beneficiaries. The most recently completed study was published by Gabriel Roeder & Company ("GRS"), dated October 2015, and analyzed experience for Fiscal Years 2010 through 2013. Mortality tables for service and disability pensioners were developed from an experience study of NYCERS's pensioners. The mortality tables for beneficiaries were developed from an experience review of NYCERS' beneficiaries. The most recently completed study was published by Gabriel Roeder & Company ("GRS"), dated October 2015, and analyzed experience for Fiscal Years 2010 through 2013. Mortality tables for service and disability pensioners were developed from an experience study of NYCERS's pensioners. The mortality tables for beneficiaries were developed from an experience review of NYCERS' beneficiaries. The most recently completed study was published by Gabriel Roeder & Company ("GRS"), dated October 2015, and analyzed experience for Fiscal Years 2010 through 2013. Mortality tables for service and disability pensioners were developed from an experience study of NYCERS's pensioners. The mortality tables for beneficiaries were developed from an experience review of NYCERS' beneficiaries. The most recently completed study was published by Gabriel Roeder & Company ("GRS"), dated October 2015, and analyzed experience for Fiscal Years 2010 through 2013. Pre-retirement: N/A N/A N/A N/A Post-retirement Healthy Lives: N/A N/A N/A N/A Post-retirement Disabled Lives: N/A N/A N/A N/A Inflation/Railroad Retirement Wage Base: 2.50% 2.50% 2.50% 2.50% Cost-of-Living Adjustments: 1.5% per annum for Auto COLA and 2.5% per annum for Escalation. 1.5% per annum for Auto COLA and 2.5% per annum for Escalation. 1.5% per annum for Auto COLA and 2.5% per annum for Escalation. 1.5% per annum for Auto COLA and 2.5% per annum for Escalation.
+```
+[p135_c0007] _Master Page # 135 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 136
+
+### [p136_c0001] Metropolitan Transportation Authority
+### [p136_c0002] DRAFT
+### [p136_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p136_c0004] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p136_c0005] Notes to Schedule of the MTA's Contributions for All Pension Plans
+[p136_c0006]
+
+```text
+NYSLERS Plan Valuation Dates: April 1, 2021 April 1, 2020 April 1, 2019 April 1, 2018 April 1, 2017 Measurement Date: March 31, 2022 March 31, 2021 March 31, 2020 March 31, 2019 March 31, 2018 Actuarial cost method: Aggregate Cost method Aggregate Cost method Aggregate Cost method Aggregate Cost method Aggregate Cost method Amortization method: Evenly over the remaining working lifetimes of the active membership. Evenly over the remaining working lifetimes of the active membership. Evenly over the remaining working lifetimes of the active membership. Evenly over the remaining working lifetimes of the active membership. Evenly over the remaining working lifetimes of the active membership. Asset Valuation Method: 5 year level smoothing of the difference between the actual gain and the expected gain using the assumed investment rate of return. 5 year level smoothing of the difference between the actual gain and the expected gain using the assumed investment rate of return. 5 year level smoothing of the difference between the actual gain and the expected gain using the assumed investment rate of return. 5 year level smoothing of the difference between the actual gain and the expected gain using the assumed investment rate of return. 5 year level smoothing of the difference between the actual gain and the expected gain using the assumed investment rate of return. Salary increases: 4.4% in ERS, 6.2% in PFRS 4.40% in ERS; 6.20% in PFRS 4.20% in ERS; 5.00% in PFRS 3.80% 3.80% Actuarial assumptions: Discount Rate: 5.90% 5.90% 6.80% 7.00% 7.00% Investment rate of return : 6.80%, net of investment expenses. 5.90%, net of investment expenses. 6.80%, net of investment expenses. 7.00%, net of investment expenses. 7.00%, net of investment expenses. Mortality: Annuitant mortality rates are based on April 1, 2015 – March 31, 2020 System experience with adjustments for mortality improvements based on the Society of Actuaries' Scale MP-2020. Annuitant mortality rates are based on NYSLERS's 2015 experience study of the period April 1, 2015 through March 31, 2020 with adjustments for mortality improvements based on the Society of Actuaries' Scale MP-2020. Annuitant mortality rates are based on NYSLERS's 2015 experience study of the period April 1, 2010 through March 31, 2015 with adjustments for mortality improvements based on the Society of Actuaries' Scale MP-2018. Annuitant mortality rates are based on NYSLERS's 2015 experience study of the period April 1, 2010 through March 31, 2015 with adjustments for mortality improvements based on the Society of Actuaries' Scale MP-2014. Annuitant mortality rates are based on NYSLERS's 2015 experience study of the period April 1, 2010 through March 31, 2015 with adjustments for mortality improvements based on the Society of Actuaries' Scale MP-2014. Pre-retirement: N/A N/A N/A N/A N/A Post-retirement Healthy Lives: N/A N/A N/A N/A N/A Post-retirement Disabled Lives: N/A N/A N/A N/A N/A Inflation/Railroad Retirement Wage Base: 2.70% 2.70% 2.50% 2.50% 2.50% Cost-of-Living Adjustments: 1.3% per annum. 1.4% per annum. 1.3% per annum. 1.3% per annum. 1.3% per annum.
+```
+[p136_c0007] _Master Page # 136 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 137
+
+### [p137_c0001] Metropolitan Transportation Authority
+### [p137_c0002] DRAFT
+### [p137_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p137_c0004] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p137_c0005] Notes to Schedule of the MTA's Contributions for All Pension Plans
+[p137_c0006]
+
+```text
+NYSLERS Plan (continued) Valuation Dates: April 1, 2016 April 1, 2016 April 1, 2015 April 1, 2014 Measurement Date: March 31, 2017 March 31, 2017 March 31, 2016 March 31, 2015 Actuarial cost method: Aggregate Cost method Aggregate Cost method Aggregate Cost method Aggregate Cost method Amortization method: Evenly over the remaining working lifetimes of the active membership. Evenly over the remaining working lifetimes of the active membership. Evenly over the remaining working lifetimes of the active membership. Evenly over the remaining working lifetimes of the active membership. Asset Valuation Method: 5 year level smoothing of the difference between the actual gain and the expected gain using the assumed investment rate of return. 5 year level smoothing of the difference between the actual gain and the expected gain using the assumed investment rate of return. 5 year level smoothing of the difference between the actual gain and the expected gain using the assumed investment rate of return. 5-year level smoothing of the difference between the actual gain and the expected gain using the assumed investment rate of return. Salary increases: 3.80% 3.80% 3.80% 4.90% Actuarial assumptions: Discount Rate: 7.00% 7.00% 7.00% 7.50% Investment rate of return : 7.00%, net of investment expenses. 7.00%, net of investment expenses. 7.00%, net of investment expenses. 7.5%, net of investment expenses. Mortality: Annuitant mortality rates are based on NYSLERS's 2010 experience study of the period April 1, 2005 through March 31, 2010 with adjustments for mortality improvements based on the Society of Actuaries' Scale MP-2014. Annuitant mortality rates are based on NYSLERS's 2010 experience study of the period April 1, 2005 through March 31, 2010 with adjustments for mortality improvements based on the Society of Actuaries' Scale MP-2014. Annuitant mortality rates are based on NYSLERS's 2010 experience study of the period April 1, 2005 through March 31, 2010 with adjustments for mortality improvements based on the Society of Actuaries' Scale MP-2014. Annuitant mortality rates are based on NYSLERS's 2010 experience study of the period April 1, 2005 through March 31, 2010 with adjustments for mortality improvements based on the Society of Actuaries' Scale MP-2014. Pre-retirement: N/A N/A N/A N/A Post-retirement Healthy Lives: N/A N/A N/A N/A Post-retirement Disabled Lives: N/A N/A N/A N/A Inflation/Railroad Retirement Wage Base: 2.50% 2.50% 2.50% 2.70% Cost-of-Living Adjustments: 1.3% per annum. 1.3% per annum. 1.3% per annum. 1.4% per annum.
+```
+[p137_c0007] _Master Page # 137 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 138
+
+### [p138_c0001] Metropolitan Transportation Authority
+### [p138_c0002] DRAFT
+### [p138_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p138_c0004] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p138_c0005] Notes to Schedule of MTA's Contributions for All Pension Plans
+[p138_c0006] (concluded)
+[p138_c0007] Significant methods and assumptions used in calculating the actuarially determined contributions of an employer's proportionate share in Cost Sharing, Multiple-Employer pension plans, the NYCERS plan and the NYSLERS plan, are presented as notes to the schedule.
+[p138_c0008] Factors that significantly affect trends in the amounts reported are changes of benefit terms, changes in the size or composition of the population covered by the benefit terms, or the use of different assumptions. Following is a summary of such factors:
+### [p138_c0009] Changes of Benefit Terms:
+[p138_c0010] There were no significant legislative changes in benefit for the June 30, 2021 valuation for the NYCERS plan.
+[p138_c0011] There were no significant legislative changes in benefit for the April 1, 2021 valuation for the NYSLERS plan.
+### [p138_c0012] Changes of Assumptions:
+[p138_c0013] There were no significant changes in the economic and demographic used in the June 30, 2021 valuation for the NYCERS plan.
+[p138_c0014] There were no significant changes in the economic and demographic assumptions used in the April 1, 2021 valuation for the NYSLERS plan.
+[p138_c0015] _Master Page # 138 of 175 - Audit Committee Meeting 1/29/2024 124_
+
+## Page 139
+
+### [p139_c0001] Metropolitan Transportation Authority
+### [p139_c0002] DRAFT
+### [p139_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p139_c0004] (A Component Unit of the State of New York)
+### [p139_c0005] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p139_c0006] Schedule of Changes in the MTA's Net OPEB Liability and Related Ratios and Notes to Schedule
+[p139_c0007] ($ in thousands)
+[p139_c0008]
+
+```text
+Plan Measurement Date (December 31): 2021 2020 2019 2018 2017 Total OPEB liability: Service cost $ 1,250,950 $ 1,097,051 $ 928,573 $ 1,002,930 $ 884,548 Interest on total OPEB liability 535,642 610,160 840,532 734,968 731,405 Effect of plan changes - - 1,580 27,785 Effect of economic/demographic (gains) or losses 292,154 (43,890) 247,871 (19,401) 13,605 Effect of assumption changes or inputs (738,829) 1,939,528 311,286 (1,800,135) 911,465 Benefit payments (792,984) (724,741) (730,677) (691,122) (650,994) Net change in total OPEB liability 546,933 2,878,108 1,597,585 (771,180) 1,917,814 Total OPEB liability—beginning 24,409,581 21,531,473 19,933,888 20,705,068 18,787,254 Total OPEB liability—ending (a) 24,956,514 24,409,581 21,531,473 19,933,888 20,705,068 Plan fiduciary net position: Employer contributions 792,984 387,371 730,677 691,122 650,994 Member contributions - - - - Net investment income - (77,118) 63,647 (18,916) 47,370 Benefit payments (792,984) (724,741) (730,677) (691,122) (650,994) Administrative expenses (46) (209) (200) (56) - Net change in plan fiduciary net position (46) (414,697) 63,447 (18,972) 47,370 Plan fiduciary net position—beginning 130 414,827 351,380 370,352 322,982 Plan fiduciary net position—ending (b) 84 130 414,827 351,380 370,352 Net OPEB liability—ending (a)-(b) $ 24,956,430 $ 24,409,451 $ 21,116,646 $ 19,582,508 $ 20,334,716 Plan fiduciary net position as a percentage of the total OPEB liability 0.00% 0.00% 1.93% 1.76% 1.79% Covered payroll $ 6,537,709 $ 6,716,423 $ 6,901,690 $ 6,903,700 $ 5,394,332 Net OPEB liability as a percentage of covered payroll 381.73% 363.43% 305.96% 283.65% 376.96%
+```
+### [p139_c0009] Notes to Schedule:
+[p139_c0010] Changes of benefit terms: In the July 1, 2021 actuarial valuation, there were no changes to the benefit terms.
+[p139_c0011] Changes of assumptions: In the July 1, 2021 actuarial valuation, there were updates to various healthcare assumptions including the per capita claim costs assumption and healthcare trend assumptions.
+[p139_c0012] Note: This schedule is intended to show information for ten years. However, until a full 10-year trend has been compiled, information is presented only for the years for which the required supplementary information is available.
+[p139_c0013] _b25 Master Page # 139 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 140
+
+### [p140_c0001] Metropolitan Transportation Authority
+### [p140_c0002] DRAFT
+### [p140_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p140_c0004] (A Component Unit of the State of New York)
+### [p140_c0005] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p140_c0006] Schedule of the MTA's Contributions to the OPEB Plan for the years ended December 31:
+[p140_c0007]
+
+```text
+($ in thousands) 2022 2021 2020 2019 2018 2017 Actuarially Determined Contribution N/A N/A N/A N/A N/A N/A Actual Employer Contribution (1) $ 846,299 $ 813,195 $ 391,529 $ 737,297 $ 691,122 $ 650,994 Contribution Deficiency (Excess) N/A N/A N/A N/A N/A N/A Covered Payroll $ 6,848,347 $ 6,537,709 $ 6,716,423 $ 6,901,690 $ 6,903,700 $ 5,394,200 Actual Contribution as a Percentage of Covered Payroll 12.36% 12.44% 5.83% 10.68% 10.01% 12.07%
+```
+[p140_c0008] (1) Actual employer contribution includes the implicit rate of subsidy adjustment of $52,933 and $62,852 for the years ended December 31, 2021 and 2020, respectively.
+[p140_c0009] Note: This schedule is intended to show information for ten years. However, until a full 10-year trend has been compiled, information is presented only for the years for which the required supplementary information is available.
+[p140_c0010] _Master Page # 140 of 175 - Audit Committee Meeting 1/29/2024 126_
+
+## Page 141
+
+### [p141_c0001] Metropolitan Transportation Authority
+### [p141_c0002] DRAFT
+### [p141_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p141_c0004] (A Component Unit of the State of New York)
+### [p141_c0005] REQUIRED SUPPLEMENTARY INFORMATION (UNAUDITED)
+### [p141_c0006] Notes to Schedule of the MTA's Contributions to the OPEB Plan:
+[p141_c0007]
+
+```text
+July 1, 2021 July 1, 2019 July 1, 2019 July 1, 2017 July 1, 2017 Valuation date December 31, 2021 December 31, 2020 December 31, 2019 December 31, 2018 December 31, 2017 Measurement date 2.06%, net of expenses 2.12%, net of expenses 2.74%, net of expenses 4.10%, net of expenses 3.44%, net of expenses Discount rate 2.30% 2.25% 2.25% 2.50% 2.50% Inflation Entry Age Normal Entry Age Normal Entry Age Normal Entry Age Normal Entry Age Normal Actuarial cost method Level percentage of payroll Level percentage of payroll Level percentage of payroll Level percentage of payroll Level percentage of payroll Amortization method 4.25% 4.25% 4.50% 4.50% 4.50% Normal cost increase factor 2.06% 2.12% 5.75% 6.50% 6.50% Investment rate of return 3%. Varies by years of service and differs for members of the various pension plans. 3%. Varies by years of service and differs for members of the various pension plans. 3%. Varies by years of service and differs for members of the various pension plans. 3%. Varies by years of service and differs for members of the various pension plans. 3%. Varies by years of service and differs for members of the various pension plans. Salary increases
+```
+[p141_c0008] Note: This schedule is intended to show information for ten years. However, until a full 10-year trend has been compiled, information is presented only for the years for which the required supplementary information is available.
+[p141_c0009] _Master Page # 141 of 175 - Audit Committee Meeting 1/29/2024_
+[p141_c0010] _127_
+
+## Page 142
+
+### [p142_c0001] DRAFT
+### [p142_c0002] Metropolitan Transportation Authority
+### [p142_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p142_c0004] (A Component Unit of the State of New York)
+### [p142_c0005] SUPPLEMENTARY INFORMATION
+### [p142_c0006] Pension And Other Employee Benefit Trust Funds
+### [p142_c0007] Combining Statement of Fiduciary Net Position as of December 31, 2022
+[p142_c0008]
+
+```text
+($ in thousands) Pension Funds Other Employee Benefit Trust Fund Defined Benefit Pension Plan LIRR Company Plan for Additional Pensions MaBSTOA Plan Other Post-employment Benefits Plan Total ASSETS: Cash $ 6,594 $ 696 $ 3,695 $ - $ 10,985 Receivables: Employee loans - - 26,521 - 26,521 Investment securities sold - 175 1,635 - 1,810 Accrued interest and dividends 3,786 400 1,787 38 6,011 Other receivables 2,657 23 - - 2,680 Total receivables 6,443 598 29,943 38 37,022 Investments at fair value 5,366,950 652,011 3,289,326 11,698 9,319,985 Total assets $ 5,379,987 $ 653,305 $ 3,322,964 $ 11,736 $ 9,367,992 LIABILITIES: Accounts payable and accrued liabilities $ 5,607 $ 238 $ 474 $ - $ 6,319 Payable for investment securities purchased 5,789 611 3,592 - 9,992 Accrued benefits payable - - 75 1 76 Accrued postretirement death benefits (PRDB) payable - - 5,719 - 5,719 Accrued 55/25 Additional Members Contribution (AMC) payable - - 2,527 - 2,527 Other liabilities 557 59 466 - 1,082 Total liabilities 11,953 908 12,853 1 25,715 NET POSITION: Restricted for pensions 5,368,034 652,397 3,310,111 - 9,330,542 Restricted for postemployment benefits other than pensions - - - 11,735 11,735 Total net position 5,368,034 652,397 3,310,111 11,735 9,342,277 Total liabilities and net position $ 5,379,987 $ 653,305 $ 3,322,964 $ 11,736 $ 9,367,992
+```
+[p142_c0009] See Independent Auditor's Report and notes to the consolidated financial statements.
+[p142_c0010] _Master Page # 142 of 175 - Audit Committee Meeting 1/29/2024_
+[p142_c0011] _128_
+
+## Page 143
+
+### [p143_c0001] MTA Metropolitan Transportation Authority
+### [p143_c0002] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p143_c0003] DRAFT
+### [p143_c0004] (A Component Unit of the State of New York)
+### [p143_c0005] SUPPLEMENTARY INFORMATION
+### [p143_c0006] Pension And Other Employee Benefit Trust Funds
+### [p143_c0007] Combining Statement of Fiduciary Net Position as of December 31, 2021
+[p143_c0008]
+
+```text
+($ in thousands) Pension Funds Other Employee Benefit Trust Fund Total Defined Benefit Pension Plan LIRR Company Plan for Additional Pensions MaBSTOA Plan Other Post-employment Benefits Plan ASSETS: Cash $ 24,495 $ 2,956 $ 11,821 $ 107 $ $ 39,379 Receivables: Employee loans - - 26,082 - - 26,082 Participant and union contributions - (20) - - - (20) Investment securities sold - 139 5,532 - - 5,671 Accrued interest and dividends 2,798 338 1,746 - - 4,882 Other receivables 2,412 1,358 - - - 3,770 Total receivables 5,210 1,815 33,360 - - 40,385 Investments at fair value 5,739,559 773,997 3,630,953 - - 10,144,509 Total assets $ 5,769,264 $ 778,768 $ 3,676,134 $ 107 $ $ 10,224,273 LIABILITIES: Accounts payable and accrued liabilities $ 6,471 $ 279 $ 1,565 $ - $ $ 8,315 Payable for investment securities purchased 8,155 984 5,620 - - 14,759 Accrued benefits payable - - 50 24 - 74 Accrued postretirement death benefits (PRDB) payable - - 5,405 - - 5,405 Accrued 55725 Additional Members Contribution (AMC) payable - - 3,847 - - 3,847 Other liabilities 1,509 182 1,296 - - 2,987 Total liabilities 16,135 1,445 17,783 24 - 35,387 NET POSITION: Restricted for pensions 5,753,129 777,323 3,658,351 - - 10,188,803 Restricted for postemployment benefits other than pensions - - - 83 - 83 Total net position 5,753,129 777,323 3,658,351 83 - 10,188,886 Total liabilities and net position $ 5,769,264 $ 778,768 $ 3,676,134 $ 107 $ $ 10,224,273
+```
+[p143_c0009] See Independent Auditor's Report and notes to the consolidated financial statements.
+[p143_c0010] _Master Page # 143 of 175 - Audit Committee Meeting 1/29/2024_
+[p143_c0011] _129_
+
+## Page 144
+
+### [p144_c0001] DRAFT
+### [p144_c0002] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+### [p144_c0003] (A Component Unit of the State of New York)
+### [p144_c0004] SUPPLEMENTARY INFORMATION
+### [p144_c0005] Pension And Other Employee Benefit Trust Funds
+### [p144_c0006] Combining Statement of Changes in Fiduciary Net Position for the year ended December 31, 2022
+[p144_c0007]
+
+```text
+($ in thousands) Pension Funds Other Employee Benefit Trust Fund Total Defined Benefit Pension Plan LIRR Additional Plan MaBSTOA Plan Other Post-employment Benefit Plan ADDITIONS: Contributions: Employer contributions $ 400,648 $ 70,764 $ 158,618 $ 788,310 $ 1,418,340 Implicit rate subsidy contribution - - - 57,989 57,989 Member contributions 34,471 50 25,548 - 60,069 Total contributions 435,119 70,814 184,166 846,299 1,536,398 Investment income: Net (depreciation) / appreciation in fair value of investments (520,371) (56,789) (307,355) 11,671 (872,844) Dividend income 72,743 8,067 45,924 3 126,737 Interest income 16,505 1,773 10,719 154 29,151 Less: Investment expenses 32,900 4,266 22,915 - 60,081 Investment income, net (464,023) (51,215) (273,627) 11,828 (777,037) Total additions (28,904) 19,599 (89,461) 858,127 759,361 DEDUCTIONS: Benefit payments and withdrawals 351,857 143,764 257,973 788,310 1,541,904 Implicit rate subsidy payments - - - 57,989 57,989 Administrative expenses 4,334 761 806 176 6,077 Total deductions 356,191 144,525 258,779 846,475 1,605,970 Net increase (decrease) in fiduciary net position (385,095) (124,926) (348,240) 11,652 (846,609) NET POSITION: Restricted for Benefits: Beginning of year 5,753,129 777,323 3,658,351 83 10,188,886 End of year 5,368,034 652,397 3,310,111 11,735 9,342,277
+```
+[p144_c0008] See Independent Auditor's Report and notes to the consolidated financial statements.
+[p144_c0009] _Master Page # 144 of 175 - Audit Committee Meeting 1/29/2024_
+[p144_c0010] _130_
+
+## Page 145
+
+### [p145_c0001] Metropolitan Transportation Authority
+### [p145_c0002] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p145_c0003] DRAFT
+### [p145_c0004] (A Component Unit of the State of New York)
+### [p145_c0005] SUPPLEMENTARY INFORMATION
+### [p145_c0006] Pension And Other Employee Benefit Trust Funds
+### [p145_c0007] Combining Statement of Changes in Fiduciary Net Position for the year ended December 31, 2021
+[p145_c0008]
+
+```text
+($ in thousands) Pension Funds Other Employee Benefit Trust Fund Total Defined Benefit Pension Plan LIRR Additional Plan MaBSTOA Plan Other Post-employment Benefits Plan ADDITIONS: Contributions: Employer contributions $ 396,144 $ 70,553 $ 156,204 $ 740,051 $ $ 1,362,952 Implicit rate subsidy contribution - - - 52,933 52,933 Member contributions 33,832 73 24,935 - 58,840 Total contributions 429,976 70,626 181,139 792,984 1,474,725 Investment income: Net appreciation in fair value of investments 618,496 93,218 401,056 - 1,112,770 Dividend income 64,476 8,131 42,762 - 115,369 Interest income 10,895 1,361 8,197 - 20,453 Less: Investment expenses 47,492 6,495 31,205 - 85,192 Investment income, net 646,375 96,215 420,810 - 1,163,400 Total additions 1,076,351 166,841 601,949 792,984 2,638,125 DEDUCTIONS: Benefit payments and withdrawals 324,999 148,630 243,251 740,051 1,456,931 Implicit rate subsidy payments - - - 52,933 52,933 Transfer to other plans 474 - - - 474 Distribution to participants - - 2,175 - 2,175 Administrative expenses 3,513 610 264 47 4,434 Total deductions 328,986 149,240 245,690 793,031 1,516,947 Net increase in fiduciary net position 747,365 17,601 356,259 (47) 1,121,178 NET POSITION: Restricted for Benefits: Beginning of year 5,005,764 759,722 3,302,092 130 9,067,708 End of year 5,753,129 777,323 3,658,351 83 10,188,886
+```
+[p145_c0009] See Independent Auditor's Report and notes to the consolidated financial statements.
+[p145_c0010] _Master Page # 145 of 175 - Audit Committee Meeting 1/29/2024_
+[p145_c0011] _131_
+
+## Page 146
+
+### [p146_c0001] Metropolitan Transportation Authority
+### [p146_c0002] DRAFT
+### [p146_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p146_c0004] (A Component Unit of the State of New York)
+### [p146_c0005] SUPPLEMENTARY INFORMATION
+### [p146_c0006] SCHEDULE OF CONSOLIDATED RECONCILIATION BETWEEN FINANCIAL PLAN AND FINANCIAL STATEMENTS FOR THE PERIOD ENDED SEPTEMBER 30, 2023 ($ in millions)
+[p146_c0007]
+
+```text
+Category Financial Plan Actual Statement GAAP Actual Variance REVENUE: Farebox revenue $ 3,367 $ 3,399 $ 32 Vehicle toll revenue 1,815 1,823 8 Other operating revenue 659 557 (102) Total revenue 5,841 5,779 (62) OPERATING EXPENSES: Labor: Payroll 4,924 4,404 (520) Overtime 852 853 1 Health and welfare 1,332 1,196 (136) Pensions 1,115 1,013 (102) Other fringe benefits 1,002 807 (195) Postemployment benefits 645 609 (36) Reimbursable overhead 1 (387) (388) Total labor expenses 9,871 8,495 (1,376) Non-labor: Electric power 420 391 (29) Fuel 167 167 - Insurance 29 32 3 Claims 287 267 (20) Paratransit service contracts 375 384 9 Maintenance and other operating contracts 728 542 (186) Professional service contract 643 434 (209) Pollution remediation project costs 6 14 8 Materials and supplies 599 490 (109) Other business expenses 200 200 - Total non-labor expenses 3,454 2,921 (533) Depreciation and amortization 2,585 2,649 64 Other Expenses Adjustment (4) - 4 Total operating expenses 15,906 14,065 (1,841) NET OPERATING LOSS $ (10,065) $ (8,286) $ 1,779
+```
+[p146_c0008] _132 Master Page # 146 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 147
+
+### [p147_c0001] Metropolitan Transportation Authority
+### [p147_c0002] DRAFT
+### [p147_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p147_c0004] (A Component Unit of the State of New York)
+### [p147_c0005] SUPPLEMENTARY INFORMATION
+### [p147_c0006] SCHEDULE OF CONSOLIDATED SUBSIDY ACCRUAL RECONCILIATION BETWEEN FINANCIAL PLAN AND FINANCIAL STATEMENTS FOR THE PERIOD ENDED SEPTEMBER 30, 2023 ($ in millions)
+[p147_c0007]
+
+```text
+Accrued Subsidies Financial Plan Actual Financial Statement GAAP Actual Variance Mass transportation operating assistance $ 1,317 $ 1,317 $ - {3} Mass transit trust fund subsidies $ 460 462 2 {1} Mortgage recording tax 1 and 2 $ 267 269 2 {1} MRT transfer - (4) (4) {1} Urban tax $ 268 303 35 {1} State and local operating assistance $ 241 275 34 {1} Station maintenance $ 149 147 (2) {1} Connecticut Department of Transportation (CDOT) $ 200 194 (6) {1} Subsidy from New York City for MTA Bus and SIRTOA $ 516 435 (81) {1} Build American Bonds Subsidy $ - 43 43 {1} Mobility tax $ 1,822 1,861 39 {1} Assistance Fund (For hire vehicle) $ 270 268 (2) {1} Real Property Transfer Tax Surcharge (Mansion Tax) $ 234 259 25 {1} Internet Marketplace Tax $ 247 246 (1) {1} Transfer to Central Business District Capital Lockbox $ (481) - 481 {1} Other non-operating income 5 272 267 {2} Total accrued subsidies 5,515 6,347 832 Net operating deficit before subsidies and debt service (10,065) (8,286) 1,779 Debt Service (2,086) (1,355) 731 Conversion to Cash basis: Depreciation 2,585 - (2,585) Conversion to Cash basis: GASB 68 pension adjustment 45 - (45) Conversion to Cash basis: Pollution & Remediation 1 - (1) Total net operating surplus/(deficit) before appropriations, grants and other receipts restricted for capital projects $ (4,006) $ (3,294) $ 712
+```
+[p147_c0008] {1} The Financial Plan records on a cash basis while the Financial Statement records on an accrual basis.
+[p147_c0009] {2} The Financial Plan records do not include other non-operating income or changes in fair value.
+[p147_c0010] {3} Timing of receipt in the Financial Plan.
+[p147_c0011] _133 Master Page # 147 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 148
+
+### [p148_c0001] Metropolitan Transportation Authority
+### [p148_c0002] DRAFT
+### [p148_c0003] Interim Financial Statements as of and for the Nine-Month Period Ended September 30, 2023
+[p148_c0004] (A Component Unit of the State of New York)
+### [p148_c0005] SUPPLEMENTARY INFORMATION
+### [p148_c0006] SCHEDULE OF FINANCIAL PLAN TO FINANCIAL STATEMENTS RECONCILIATION RECONCILING ITEMS FOR THE PERIOD ENDED SEPTEMBER 30, 2023 ($ in millions)
+[p148_c0007]
+
+```text
+Financial Plan Actual Operating Loss at September 30, 2023 $ (10,065) The Financial Plan Actual Includes: 1 Higher Other operating revenue (62) 2 Higher labor expense primarily from higher payroll expense projections 1,376 3 Higher non-labor expense primarily from higher professional service contract expense 533 4 Other expense adjustments (68) Total operating reconciling items 1,779 Financial Statements Operating Loss at September 30, 2023 (8,286) Financial Plan Deficit after Subsidies and Debt Service (4,006) The Audited Financial Statements Includes: 1 Debt service bond principal payments 731 2 Adjustments for non-cash liabilities: Depreciation (2,585) Unfunded GASB No. 68 pension adjustment (45) Other non-cash liability adjustment (1) (2,631) The Financial Statement includes: 3 Higher subsidies and other non-operating revenues and expenses 832 4 Total operating reconciling items (from above) 1,779 Financial Statement Loss Before Capital Appropriations $ (3,294)
+```
+[p148_c0008] _144_
+[p148_c0009] _Master Page # 148 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 149
+
+### [p149_c0001] MTA CORPORATE COMPLIANCE
+### [p149_c0002] Enterprise Risk Management Status Report
+[p149_c0003] Report to the Audit Committee January 2024
+[p149_c0004] _Master Page # 149 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 150
+
+### [p150_c0001] ERM: Business Processes by Type
+> [p150_c0002] A 3D pie chart illustrating the distribution of ERM Business Processes by Type. The chart is divided into four segments: 'Operating Process' (the largest, light gray), 'Management and Support Services' (medium blue), 'Finance' (dark blue), and 'No Selection' (small, dark blue). The segments are arranged in a circular pattern, with 'Operating Process' at the top, 'Management and Support Services' on the right, 'Finance' on the left, and 'No Selection' at the bottom. Business Process Type Relative Size (Estimated) Operating Process Large (approx. 60%) Management and Support Services Medium (approx. 25%) Finance Small (approx. 10%) No Selection Very Small (approx. 5%)
+[p150_c0003] _Master Page # 150 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 151
+
+### [p151_c0001] ERM: Risk Assessments
+[p151_c0002] In 2023 we conducted over 400 Risk Assessments
+> [p151_c0003] A bar chart titled 'ERM: Risk Assessments' showing the number of risk assessments conducted from 2020 to 2023. The y-axis represents the number of assessments, ranging from 0 to 1400 in increments of 200. The x-axis shows the years 2020, 2021, 2022, and 2023. For each year, there are two bars: a dark blue bar representing 'Complete-No Change' and a green bar representing 'Complete-Changes Identified'. The values for 'Complete-No Change' are 728 in 2020, 1,093 in 2021, 1,296 in 2022, and 1,361 in 2023. The values for 'Complete-Changes Identified' are 35 in 2020, 89 in 2021, 43 in 2022, and 82 in 2023. Year Complete-No Change Complete-Changes Identified 2020 728 35 2021 1,093 89 2022 1,296 43 2023 1,361 82
+[p151_c0004] _Master Page # 151 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 152
+
+### [p152_c0001] Control Self Assessments
+[p152_c0002] 2023, completed 1,365 Control Self Assessments.
+[p152_c0003] Results of this report 1,298 passed, 67 failed.
+> [p152_c0004] Year Pass Fail 2020 1,128 49 2021 1,249 71 2022 1,353 55 2023 1,298 67
+[p152_c0005] _Master Page # 152 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 153
+
+### [p153_c0001] Deficiencies by Significance
+[p153_c0002] As of this report 67 deficiencies by significance for 2023
+> [p153_c0003] Significance Level Percentage Material Deficiency 46% Deficiency 45% Documentation Only 7% Significant Deficiency 2%
+[p153_c0004] _Master Page # 153 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 154
+
+### [p154_c0001] Remediation Plans Creation Trending by Quarter
+> [p154_c0002] Quarter Series 1 Q1 - 2021 106 Q2 - 2021 45 Q3 - 2021 161 Q4 - 2021 64 Q1 - 2022 208 Q2 - 2022 31 Q3 - 2022 72 Q4 - 2022 71 Q1 - 2023 102 Q2 - 2023 87 Q3 - 2023 66 Q4 - 2023 97 Q1 - 2024 2
+[p154_c0003] _Master Page # 154 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 155
+
+### [p155_c0001] Remediation Plans Closure Trending by Quarter
+> [p155_c0002] A bar chart titled 'Remediation Plans Closure Trending by Quarter'. The vertical axis (Y-axis) represents the number of closures, ranging from 0 to 140 in increments of 20. The horizontal axis (X-axis) lists the quarters: Q1 - 2021, Q2 - 2021, Q3 - 2021, Q4 - 2021, Q1 - 2022, Q2 - 2022, Q3 - 2022, Q4 - 2022, Q1 - 2023, Q2 - 2023, Q3 - 2023, Q4 - 2023, and Q1 - 2024. Each quarter has a single dark blue bar representing the closure count. The values for each bar are labeled at the top: 87, 74, 62, 98, 125, 75, 57, 79, 111, 98, 64, 105, and 33 respectively. A legend on the right side of the chart identifies the data series as 'Column1'. Quarter Remediation Plans Closure Q1 - 2021 87 Q2 - 2021 74 Q3 - 2021 62 Q4 - 2021 98 Q1 - 2022 125 Q2 - 2022 75 Q3 - 2022 57 Q4 - 2022 79 Q1 - 2023 111 Q2 - 2023 98 Q3 - 2023 64 Q4 - 2023 105 Q1 - 2024 33
+[p155_c0003] _Master Page # 155 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 156
+
+### [p156_c0001] MTA AUDIT SERVICES
+[p156_c0002] 2023 Year End Status
+[p156_c0003] and
+[p156_c0004] 2024 Proposed Audit Plan
+[p156_c0005] January 29, 2024
+[p156_c0006] _Master Page # 156 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 157
+
+### [p157_c0001] 2023 Audit Plan Status
+### [p157_c0002] Financial/Operational/Technology
+[p157_c0003]
+
+```text
+Projects Completed 81 Findings with Recommendations 149 Savings/Cost Efficiencies $ 17.5 M
+```
+### [p157_c0004] Contracts
+[p157_c0005]
+
+```text
+Projects Completed 484 Pre-Award 7 Overhead Reviews 347 Contract Close-outs 112 Claims 7 $ Audited $ 620.4 M Questioned Costs $ 54.9 M
+```
+[p157_c0006] _Master Page # 157 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 158
+
+### [p158_c0001] 2023 – Significant Audits
+[p158_c0002] Cost Savings/ Avoidance
+### [p158_c0003] Financial/Operational/Technology
+- [p158_c0004] ❖ Professional Services Contract(s) ☐ IT Services ($2.4M) ☐ Construction Mentoring Services ($2.3M) ☐ Environmental Reviews ($1.4M) ❖ Personnel Actions ❖ Accounts Payable Duplicate Payments $ 6.1 M $ 1.4 M $ 851 K
+### [p158_c0005] Contracts (Capital)
+- [p158_c0006] ❖ Pre-award Overhead Reviews (A/E Consultants) ❖ Interim & Final Cost Audits ❖ Cost Proposals (RFP's & AWO's) ❖ Impact Cost Claim Reviews $ 6.6 M $ 4.7 M $ 37.6 M $ 6.0 M
+[p158_c0007] _Master Page # 158 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 159
+
+### [p159_c0001] 2023 – Sandy Audit Unit
+### [p159_c0002] Superstorm Sandy Audit Unit Recovery Oversight Audits (Since 2013)
+[p159_c0003]
+
+```text
+Total Grant Expenditures $4.28 Billion Costs Audited $545 Million Projects/Recommendations 154/404 Follow-up Audits Completed 13 Total Cost Adjustments $66.6 Million
+```
+[p159_c0004] _Master Page # 159 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 160
+
+### [p160_c0001] 2023 - Pension Support Program
+### [p160_c0002] Pension Quality Assurance Support Program:
+- [p160_c0003] • The Quality Assurance (QA) group continued to review calculations for new retirees, Retroactive Wage Adjustments (RWA) and other calculation adjustments. • Plans reviewed include the LIRR's Defined Benefit (DB) Open and Closed Pension Plan, MNR DB Pension Plan, MTA Police DB Pension Plan, and MTA Bus Plan. • The Pension QA Group reviewed 1,495 pension files from January 2023 through December 2023.
+### [p160_c0004] QA Results
+- [p160_c0005] ➤ Errors with No Financial Impact 130 ➤ Errors Identified with Financial Impact 75 ➤ Total cost impact over the expected life of retiree $3.93M
+[p160_c0006] _Master Page # 160 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 161
+
+### [p161_c0001] 2023 - On Board Program
+### [p161_c0002] Railroad Onboard Revenue Program:
+- [p161_c0003] • MTA Audit Services perform observations onboard the LIRR and MNR trains to ensure that conductors are collecting the correct fares, and they are in compliance with operating processes. • Monthly reporting is provided to both agencies for: 1) fare not collected, 2) incorrect fare collected, 3) conductor not seen and, 4) other special observation request results.
+### [p161_c0004] Revenue tests completed in 2023:
+[p161_c0005]
+
+```text
+▲ LIRR 3,323 ▲ MNR 3,115
+```
+[p161_c0006] _Master Page # 161 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 162
+
+### [p162_c0001] 2023 - Peer Review
+### [p162_c0002] ALGA Peer Review Results:
+[p162_c0003] Our internal quality control system were suitably designed and operating effectively, and there were additional areas the department excelled,
+- [p162_c0004] ➤ Audit coverage in “high risk” areas ➤ Well designed planning procedures ➤ Qualified staff, and ➤ Constructive and transparent audit results; and being collaborative with management.
+### [p162_c0005] Area of Improvement:
+[p162_c0006] They identified one area for suggested improvement related to documenting staff independence on each audit project ( Standard 1100 ).
+[p162_c0007] _Master Page # 162 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 163
+
+### [p163_c0001] MTA Audit Services
+### [p163_c0002] 2024 Audit Plan
+> [p163_c0003] A collage of various MTA transportation modes. In the foreground, a white and blue bus is on the left, and a yellow and white subway train is on the right. In the background, a blue and white commuter train is visible. The scene is set against a backdrop of the New York City skyline, including the Empire State Building, and the Brooklyn Bridge under a sunset sky. The MTA logo is prominently displayed in the center of the collage.
+[p163_c0004] _Master Page # 163 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 164
+
+### [p164_c0001] Audit Plan Formulation
+> [p164_c0002] The diagram illustrates the five steps of Audit Plan Formulation, arranged in a horizontal sequence from left to right, each represented by a colored arrow-shaped box. Below the boxes is a vertical timeline bar with colored segments corresponding to each month. # Month Step Description September Perform Company Analysis Analyze strategies, financial indicators, and operational controls to identify the audit universe. October Develop Value Driver Analysis Understand enterprise, business unit and functional strategies based on business risk factors and discussions with key management personnel. November Evaluate Enterprise Risk Evaluate the enterprise risk using five main key indicators. December Prioritize Audits Identify auditable activities / units, based on the results of the risk assessment. January Refine Audit Strategy Using the IIA's risk assessment methodology, formulate audit plan and obtain Audit Committee approval.
+[p164_c0003] _Master Page # 164 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 165
+
+### [p165_c0001] Factors Used For 2024 Audit Plan
+> [p165_c0002] The diagram consists of five vertical bars of different colors (red, green, blue, red, and olive green) arranged side-by-side, each containing a factor name in white, italicized text. These bars are positioned beneath a light blue triangular roof-like shape, suggesting a house structure. Financial Exposure Nature of Operations Control Activities Previous Audit Results Management Input
+> [p165_c0003] A photograph showing a group of five people in a modern office environment. They are seated around a table, engaged in a discussion. The group includes men and women of various ethnicities, dressed in business casual attire. Large windows are visible in the background.
+- [p165_c0004] • Conducted 82 Interviews • Received 156 Suggestions
+[p165_c0005] _Master Page # 165 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 166
+
+### [p166_c0001] 2024 Audit Areas
+[p166_c0002]
+
+```text
+Service Delivery Procurement Capital Program Station Signage/Cleaning Bus Depot Operations Shop Overhaul Program Car Maintenance [RCMP] Bridge & Tunnel Operations Facility Management Elevators & Escalators Subway Car Cleaning SIR Operations & Maintenance Central Road Service Signals Inspection & Maintenance Key Performance Indicators Personal Services Contract As Needed Contracts Homeless Contract Materials Contract P-Card Review Paratransit Contracts Superstorm Sandy Prevailing Wages Contract Management Additional Work Orders DBE Program Project Labor Agreement NYS Code Compliance Third Party Contracts Revenue Human Resources Safety Cost and Revenue Allocation Ticket Offices/Stations Ticket Vending Machine Maintenance Railroads On-Board Revenue Revenue & Subsidies Bus Revenue Processing Advertising Agreement TAB Summons Student Pass/Reduced Fare All-Agency Hiring Sick Leave/Employee Availability OHS Medical Reviews Health Benefits Salary Adjustments/Compensation FMLA Life Insurance Benefits EEO Complaints Accident/Incident Reporting Energy Management System Workplace Violence/Safety Training Gate Guard Program EEO Complaints Train Yard Security Fare Evasion [Eagle Team] Safety Practices Revenue Finance Technology Timekeeping/Overtime Accounts Payable Pensions Treasury/Investments Payroll Lien Payments Implementation of CBA Rules Special Acting Pay MTA Police – Comp Time Network Reviews Cyber Security Application Reviews Security over Sensitive and PII Data Disaster Recovery Data Retention
+```
+[p166_c0003] _Master Page # 166 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 167
+
+### [p167_c0001] 2024 Agency Assurance Audit Allocation
+[p167_c0002] 2024 Audit Plan 91 Audits
+> [p167_c0003] A pie chart illustrating the 2024 Agency Assurance Audit Allocation. The chart is divided into eight segments, each representing an agency and its percentage of the total 91 audits. The segments are: MTAHQ (30%, red), MTA C&D (12%, silver), B&T (8%, purple), MNR (12%, cyan), LIRR (11%, green), MTA Bus (12%, yellow), NYC Transit (15%, orange), and an unlabeled segment (1%, white). The total percentage sums to 100%. Agency Percentage MTAHQ 30% MTA C&D 12% B&T 8% MNR 12% LIRR 11% MTA Bus 12% NYC Transit 15% Other 1%
+[p167_c0004] _Master Page # 167 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 168
+
+### [p168_c0001] 2024 Audit Resource Allocation
+[p168_c0002] Budgeted Resources: 61
+> [p168_c0003] A 3D pie chart illustrating the 2024 Audit Resource Allocation. The total budgeted resources are 61. The chart is divided into five segments: Capital Program (35%), Assurance/Operational Audits (21.5%), Mgmt. & Admin (20%), Pension QA (5%), and On-Board Revenue (5%). Each segment is labeled with its category name, numerical value in parentheses, and percentage. Category Value Percentage Capital Program 21 35% Assurance/Operational Audits 21.5 35% Mgmt. & Admin 12 20% Pension QA 3.25 5% On-Board Revenue 3.25 5%
+[p168_c0004] _Master Page # 168 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 169
+
+### [p169_c0001] 2024 Audit Strategy
+- [p169_c0002] ❑ Support MTA's Strategic Initiatives ❑ Review Efficiency & Effectiveness of Operations ❑ Support Agency-wide Cost Saving Initiatives ❑ Evaluate Project Management Controls over Operating Contract and Capital Projects. ❑ Coordinate Audit Activities with Internal and External Parties
+[p169_c0003] _Master Page # 169 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 170
+
+### [p170_c0001] Looking Ahead
+- [p170_c0002] ❑ Continue to coordinate audit activities with: ▪ External Auditors ▪ City/State Controller's Office ▪ MTA Chief Compliance Office ▪ MTA Inspector General Office ❑ Coordinate with the Office of Construction Oversight ❑ Work with Internal Control Staff to validate the implementation of recommendations and reduce the backlog of past due recommendations.
+[p170_c0003] _Master Page # 170 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 171
+
+[p171_c0001] QUESTIONS?
+[p171_c0002] _Master Page # 171 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 172
+
+### [p172_c0001] MTA CORPORATE COMPLIANCE Remediation Plans Monitoring Six Months Past Due
+[p172_c0002] Report to the Audit Committee January 2024
+[p172_c0003] _Master Page # 172 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 173
+
+### [p173_c0001] Remediation Plans Implemented Awaiting Closure By Agency & Priority
+> [p173_c0002] Click to filter Agency High Medium Low Not Rated MTA Bus Company 2 1 0 1 (No Selection) 3 1 0 0 Long Island Rail Road 2 1 0 0 New York City Transit Authority 0 1 0 0 Construction & Development Company 1 8 6 0 Metro-North Railroad 0 7 3 0 Triborough Bridge and Tunnel Authority 0 12 0 0
+[p173_c0003] _Master Page # 173 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 174
+
+### [p174_c0001] Remediation Plans Six Months Past Due by Agency & Priority
+> [p174_c0002] Click to filter Priority Construction & Development Company MTA Headquarters Long Island Rail Road New York City Transit Authority Metro-North Railroad Triborough Bridge and Tunnel Authority High 2 12 1 1 Medium 6 31 1 2 8 3 Low 2 Legend: Construction & Development Company MTA Headquarters Long Island Rail Road New York City Transit Authority Metro-North Railroad Triborough Bridge and Tunnel Authority MTA Bus Company
+[p174_c0003] _Master Page # 174 of 175 - Audit Committee Meeting 1/29/2024_
+
+## Page 175
+
+### [p175_c0001] Remediation Plans Six Month Past Due which are High Priority By Business
+> [p175_c0002] Business Unit Count MTAHQ - Technology - Chief Technology Officer 6 MTAHQ - Chief Labor Relations 2 MTAHQ - Finance - Chief Financial Officer 2 NYCT - Department of Subways 1 LIIR - Corporate Safety 1 MTAHQ - Chief People Officer 1 MTAHQ - Chief Safety, Health & Environment Officer - Safety & Security 1 MTAC&D - Development 1 MTAC&D - Delivery 1
+[p175_c0003] _Master Page # 175 of 175 - Audit Committee Meeting 1/29/2024_

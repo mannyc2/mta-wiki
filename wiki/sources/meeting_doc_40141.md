@@ -1,0 +1,2941 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-40141"
+record_kind: "source"
+display_name: "Transit and Bus Committee Meeting May 2021"
+source_id: "meeting_doc_40141"
+source_ids:
+  - "meeting_doc_40141"
+local_observation_id: "source_meeting_doc_40141"
+local_observation_ids:
+  - "source_meeting_doc_40141"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-22T19:01:00.646Z"
+raw_text: "Transit and Bus Committee Meeting May 2021"
+submission_ids:
+  - "sub_9ba69e0c22e704da"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting book"
+  date_text: "May 2021"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2021-05"
+    precision: "month"
+    raw_text: "May 2021"
+  published_date_normalized: "2021-05"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "Transit and Bus Committee Meeting May 2021"
+evidence_refs:
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_40141#p001_c0002"
+    page_number: 1
+    role: "title"
+    source_id: "meeting_doc_40141"
+    source_path: "raw/sources/meeting_doc_40141/blocks.jsonl"
+    text_sha256: "sha256:53aa005be02ef0123eaa28ec9ef95daf27ba91a113bd95aa8cd02eb077951a48"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_40141#p001_c0004"
+    page_number: 1
+    role: "committee_members"
+    source_id: "meeting_doc_40141"
+    source_path: "raw/sources/meeting_doc_40141/blocks.jsonl"
+    text_sha256: "sha256:738178e211ee288b252234a7270854bf73e5c0066acdc6b82cb29ef0a63cdb1b"
+    text_source: "raw_text"
+---
+
+# NYCT and Buses Committee Meeting Book
+
+source_id: meeting_doc_40141
+citation: cite block ids exactly as shown in square brackets
+document: 1727 block(s)
+
+## Page 1
+
+> [p001_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p001_c0002] Transit and Bus Committee Meeting May 2021
+### [p001_c0003] Committee Members
+[p001_c0004] H. Mihaltses (Chair)
+[p001_c0005] V. Calise (Vice Chair)
+[p001_c0006] A. Albert
+[p001_c0007] J. Barbas
+[p001_c0008] N. Brown
+[p001_c0009] L. Cortès-Vázquez
+[p001_c0010] R. Glucksman
+[p001_c0011] D. Jones
+[p001_c0012] L. Lacewell
+[p001_c0013] R. Linn
+[p001_c0014] D. Mack
+[p001_c0015] R. Mujica
+[p001_c0016] J. Samuelsen
+[p001_c0017] L. Schwartz
+> [p001_c0018] A photograph of a New York City Subway train arriving at a station platform. The train is dark with a red "2" on its front, indicating the 2nd Avenue line. The platform is illuminated by yellow safety stripes and a person is standing on the right. The tunnel walls are lined with reflective tiles.
+[p001_c0019] The New York City Subway resumed 24 hour a day service on May 17. With ridership on the rise, the MTA will continue its unprecedented disinfection and cleaning efforts, reassuring customers that the best sanitization methods remain in place upon their return to the system. Earlier in the month, subway ridership reached a new pandemic record with 2,239,500 trips recorded in one day. Bus ridership also reached a new pandemic high this month with 1,245,629 trips in a single day.
+
+## Page 2
+
+### [p002_c0001] New York City Transit and Bus Committee Meeting
+[p002_c0002] 2 Broadway, 20th Floor Board Room New York, NY 10004
+[p002_c0003] Wednesday, 5/26/2021
+[p002_c0004] 10:00 AM - 5:00 PM ET
+### [p002_c0005] 1. PUBLIC COMMENT PERIOD
+### [p002_c0006] 2. SUMMARY OF ACTIONS
+[p002_c0007] Summary of Actions - Page 4
+### [p002_c0008] 3. APPROVAL OF MINUTES - APRIL 21, 2021
+[p002_c0009] Minutes - April 21, 2021 - Page 5
+### [p002_c0010] 4. COMMITTEE WORK PLAN
+[p002_c0011] May 2021 Work Plan - Page 6
+### [p002_c0012] 5. PRESIDENT'S REPORT
+### [p002_c0013] a. Customer Service Report
+### [p002_c0014] i. Subway Report
+[p002_c0015] Subway Report - Page 14
+### [p002_c0016] ii. NYCT, MTA Bus Report
+[p002_c0017] Bus Report - Page 41
+### [p002_c0018] iii. Paratransit Report
+[p002_c0019] Paratransit Report - Page 63
+### [p002_c0020] iv. Accessibility Update
+[p002_c0021] Accessibility Update - Page 75
+### [p002_c0022] v. Strategy and Customer Experience Report
+[p002_c0023] Strategy and Customer Experience Report - Page 77
+### [p002_c0024] b. Safety Report
+[p002_c0025] Safety Report - Page 83
+### [p002_c0026] c. Crime Report
+[p002_c0027] Crime Report - Page 88
+### [p002_c0028] d. NYCT, SIR, MTA Bus Financial and Ridership Reports
+[p002_c0029] NYCT, SIR and MTA Bus Financial and Ridership Report - Page 96
+### [p002_c0030] e. Capital Program Status Report
+[p002_c0031] Capital Program Status Report - Page 146
+### [p002_c0032] 6. PROCUREMENTS
+[p002_c0033] Procurement Cover, Staff Summary and Resolution - Page 152
+### [p002_c0034] a. Non-Competitive (none)
+
+## Page 3
+
+### [p003_c0001] b. Competitive
+[p003_c0002] Competitive - Page 157
+### [p003_c0003] c. Ratifications (none)
+### [p003_c0004] d. AAR Broker Procurement - Withdrawn
+### [p003_c0005] e. C&D Procurement
+[p003_c0006] C&D Procurement Package - Page 160
+### [p003_c0007] 7. STANDARD FOLLOW UP REPORTS
+### [p003_c0008] a. Transit Adjudication Bureau Report, 1st Qtr 2021
+[p003_c0009] Transit Adjudication Bureau Report, 1st Qtr 2021 - Page 167
+### [p003_c0010] b. Fare Evasion Report, 1st Qtr 2021
+[p003_c0011] Fare Evasion Report, 1st Qtr, 2021 - Page 170
+### [p003_c0012] c. NYCT & MTA Bus EEO & Diversity Reports, 1st Qtr 2021
+[p003_c0013] NYCT EEO and Diversity Report - Page 174
+[p003_c0014] MTA BUS EEO and Diversity Report - Page 190
+### [p003_c0015] 8. EXECUTIVE OFFICE CONTACT INFORMATION
+[p003_c0016] Contact Page - Page 206
+
+## Page 4
+
+### [p004_c0001] NYCT Committee ACTIONS and PRESENTATIONS SUMMARY for MAY 2021
+[p004_c0002]
+
+```text
+Responsible Department Vendor Name Total Amount Summary of action Procurement & Supply Chain TBD TBD Authorizing Resolution to conduct an RFP for the Design/Build of a CWR Feeder Deck for Linden Yard Welding Plant. Procurement & Supply Chain Arro, Inc. WITHDRAWN Broker Car Service for Paratransit (resolicitation) three-year base+ an option of up to two-years. Procurement & Supply Chain Corporate Transportation Group WITHDRAWN Broker Car Service for Paratransit (resolicitation) three-year base+ an option of up to two-years. Procurement & Supply Chain Fejost, LLC d/b/a Sentry Management Solutions WITHDRAWN Broker Car Service for Paratransit (resolicitation) three-year base+ an option of up to two-years. Procurement & Supply Chain Greenpoint Transit LLC Via Transportation, Inc. (parent company of Greenpoint) WITHDRAWN Broker Car Service for Paratransit (resolicitation) three-year base+ an option of up to two-years. C&D Contracts AECOM USA, Inc. Stantec Consulting Services, Inc. Henningson, Durham & Richardson Architecture and Engineering, P.C. HNTB New York Engineering and Architecture, P.C. Jacobs Civil Consultants, Inc. WSP USA, Inc. Parsons Transportation Group of New York, Inc. Urbahn Architects, PLLC $40,000,000 Aggregate Modification to the Indefinite Quantity Architectural/Engineering Design Services for Miscellaneous Construction Projects (Contracts CM-1544 to CM-1551) for a 7 Month Extension of Time .
+```
+[p004_c0003] _Master Page # 4 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 5
+
+### [p005_c0001] Minutes of Regular Meeting Committee on Operations of the MTA New York City Transit Authority, Manhattan and Bronx Surface Transit Operating Authority, Staten Island Rapid Transit Operating Authority, Construction and Development Company and Bus Company April 21, 2021
+[p005_c0002] Meeting Held At: Metropolitan Transportation Authority Two Broadway New York, New York 10004 10:00 AM
+[p005_c0003] Because of the ongoing COVID-19 public health crisis, the MTA Chairman convened a one-day, virtual Board and Committee meeting session on April 21, 2021, which included the following committees:
+- [p005_c0004] • Long Island Rail Road and Metro-North Railroad; • New York City Transit; • MTA Bridges and Tunnels; • Finance; • Capital Program Oversight, and; • Corporate Governance
+[p005_c0005] To see a summary of the meeting and the actions taken by New York City Transit and Bus Committee, please refer to the April 2021 Board minutes in the May 2021 Board Book available here on the Board materials website:
+[p005_c0006] -
+[p005_c0007] https://new.mta.info/transparency/board-and-committee-meetings/May-2021 .
+[p005_c0008] _Master Page # 5 of 208 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 6
+
+### [p006_c0001] Metropolitan Transportation Authority
+### [p006_c0002] 2021 Proposed Transit & Bus Committee Work Plan
+### [p006_c0003] I. RECURRING AGENDA ITEMS
+[p006_c0004]
+
+```text
+Responsibility Approval of Minutes Committee Chair & Members NYCT Committee Work Plan Committee Chair & Members Operations Performance Summary Presentation (including Financial/Ridership, Capital Program Status, Crime & Safety) NYCT President & MTA Bus Co. President Procurements Procurement & Supply Chain Service Changes (if any) Operations Planning Tariff Changes (if any) Management & Budget Capital Budget Modifications (if any) Capital Planning & Budget Action Items (if any) As Listed
+```
+### [p006_c0005] II. SPECIFIC AGENDA ITEMS
+### [p006_c0006] May 2021
+[p006_c0007]
+
+```text
+Transit Adjudication Bureau Report, 1st Qtr, 2021 Law Fare Evasion Report, 1st Qtr, 2021 Management & Budget NYCT & MTA Bus EEO & Diversity Report, 1st Qtr, 2021 EEO & Human Resources
+```
+### [p006_c0008] June 2021
+[p006_c0009] No Items
+### [p006_c0010] July 2021
+[p006_c0011]
+
+```text
+Quarterly Customer Satisfaction Report, 2nd Qtr, 2021 Strategy & Customer Experience
+```
+### [p006_c0012] August 2021
+[p006_c0013] No Meetings Held
+### [p006_c0014] September 2021
+[p006_c0015]
+
+```text
+Public comment/Committee Review of Budget 2021 NYCT Mid-Year Forecast Monthly Allocation Management & Budget 2021 SIR Mid-Year Forecast Monthly Allocation Management & Budget 2021 MTA Bus Mid-Year Forecast Monthly Allocation Management & Budget 2022 Preliminary NYCT Budget Management & Budget 2022 Preliminary SIR Budget Management & Budget 2022 Preliminary MTA Bus Budget Management & Budget Transit Adjudication Bureau Report, 2nd Qtr, 2021 Law NYCT & MTA Bus EEO & Diversity Report, 2nd Qtr, 2021 EEO & Human Resources Fare Evasion Report, 2nd Qtr, 2021 Management & Budget
+```
+### [p006_c0016] October 2021
+[p006_c0017]
+
+```text
+Public Comment/Committee Review of Budget Quarterly Customer Satisfaction Report, 3rd Qtr 2021 Strategy & Customer Experience 2022 Preliminary NYCT Budget Management & Budget 2022 Preliminary SIR Budget Management & Budget 2022 Preliminary MTA Bus Budget Management & Budget
+```
+[p006_c0018] _Master Page # 6 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 7
+
+### [p007_c0001] SPECIFIC AGENDA ITEMS (con't)
+### [p007_c0002] Responsibility
+### [p007_c0003] November 2021
+[p007_c0004] Transit Adjudication Bureau Report, 3rd Qtr, 2021 Charter for Transit Committee Fare Evasion Report, 3rd Qtr, 2021
+[p007_c0005] Law Corporate Compliance Management & Budget
+### [p007_c0006] December 2021
+[p007_c0007] NYCT 2022 Adopted Budget/Financial Plan 2022-2025 SIR 2022 Adopted Budget/Financial Plan 2022-2025 MTA Bus 2022 Adopted Budget/Financial Plan 2022-2025 NYCT & MTA Bus EEO & Diversity Report, 3rd Qtr, 2021
+[p007_c0008] Management & Budget Management & Budget Management & Budget EEO & Human Resources
+### [p007_c0009] January 2022
+[p007_c0010] Approval of 2022 NYCT Committee Work Plan Preliminary Review of NYCT 2021 Operating Results Preliminary Review of SIR 2021 Operating Results Preliminary Review of MTA Bus 2021 Operating Results
+[p007_c0011] Committee Chair & Members Management & Budget Management & Budget Management & Budget
+### [p007_c0012] February 2022
+[p007_c0013] NYCT Adopted Budget/Financial Plan 2022-2025 SIR Adopted Budget/Financial Plan 2022-2025 MTA Bus Adopted Budget/Financial Plan 2022-2025 ADA Compliance Report Transit Adjudication Bureau Report, 4th Qtr, 2021 NYCT & MTA Bus EEO & Diversity Report, 2021 Yr End Rpt Fare Evasion Report, 4th Qtr, 2021
+[p007_c0014] Management & Budget Management & Budget Management & Budget Capital Program Management Law EEO & Human Resources Management & Budget
+### [p007_c0015] March 2022
+[p007_c0016] No Items
+### [p007_c0017] April 2022
+[p007_c0018] Final Review of NYCT 2021 Operating Results Final Review of SIR 2021 Operating Results Final Review of MTA Bus 2021 Operating Results Quarterly Customer Satisfaction Report, 1st Qtr, 2021
+[p007_c0019] Management & Budget Management & Budget Management & Budget Strategy & Customer Experience
+> [p007_c0020] The logo for the Metropolitan Transportation Authority (MTA) is a black circle with the letters "MTA" in white, bold, sans-serif font.
+[p007_c0021] _Metropolitan Transportation Authority_
+[p007_c0022] _Master Page # 7 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 8
+
+### [p008_c0001] 2021 Transit & Bus Committee Work Plan
+### [p008_c0002] Detailed Summary
+### [p008_c0003] I. RECURRING
+### [p008_c0004] Approval of Minutes
+[p008_c0005] An official record of proceedings which occurred during the previous month's Committee meeting.
+### [p008_c0006] NYCT Work Plan
+[p008_c0007] A monthly update of any edits and/or changes in the work plan.
+### [p008_c0008] Operations Performance Summary
+[p008_c0009] Summary presentation on the performance of Subway Service, including a discussion on Safety, Finance and Ridership and Capital Program Plan achievements.
+[p008_c0010] Information includes discussion on key indicators such as Subway MDBF, On-Time Performance, Subway accident rates; and Capital Plan awards, design starts and completions.
+### [p008_c0011] Procurements
+[p008_c0012] List of procurement action items requiring Board approval and items for Committee and Board information. The Non-Competitive items will be first, followed by the Competitive items and then the Ratifications. The list will include items that need a 2/3 vote of the Board for approval.
+### [p008_c0013] Service Changes
+[p008_c0014] Service proposals presented for Committee information and for Board approval, when required. Proposals outline various subway service initiatives.
+### [p008_c0015] Tariff Changes
+[p008_c0016] Proposals presented to the Board for approval of changes affecting NYCT fare policy structure.
+### [p008_c0017] Capital Budget Modifications
+[p008_c0018] Proposals presented to the Board for approval of changes to NYCT's 5-Year Capital Program.
+### [p008_c0019] Action Items
+[p008_c0020] Staff summary documents presented to the Board for approval of items affecting business standards and practices.
+[p008_c0021] _Master Page # 8 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 9
+
+### [p009_c0001] II. SPECIFIC AGENDA ITEMS
+### [p009_c0002] MAY 2021
+### [p009_c0003] Transit Adjudication Bureau Report, 1 st Qtr, 2021
+[p009_c0004] Quarterly report to the Committee on Transit Adjudication Bureau financial and operating indicators including collection activities and data on revenue and expenses.
+### [p009_c0005] Fare Evasion report, 1 st Qtr, 2021
+[p009_c0006] Quarterly report to the Committee which provides estimated revenue lost to fare evasion on subways and buses based on staff surveys of stations and routes.
+### [p009_c0007] EEO & Diversity Report, 1 st Qtr, 2021
+[p009_c0008] Quarterly report to the Committee providing data on key EEO and Human Resources indicators relating to NYCT's and MTA Bus' Equal Employment Opportunity and Diversity efforts.
+### [p009_c0009] JUNE 2021
+### [p009_c0010] No Items
+### [p009_c0011] JULY 2021
+### [p009_c0012] Quarterly Customer Satisfaction Report, 2 nd Qtr 2021
+[p009_c0013] Quarterly presentation of customer satisfaction ratings about NYCT's bus, subway, and paratransit services. Report will identify trends from customer surveys results about key indicators and attributes that define the customer experience.
+### [p009_c0014] AUGUST 2021
+[p009_c0015] No Meetings Held
+### [p009_c0016] SEPTEMBER 2021
+### [p009_c0017] 2021 NYCT Mid-Year Forecast Monthly Allocation
+[p009_c0018] NYCT will present a monthly allocation of its 2021 Mid-Year Forecast including revenues/receipts, expenses/expenditures, ridership and positions to the Committee.
+### [p009_c0019] 2021 SIR Mid-Year Forecast Monthly Allocation
+[p009_c0020] NYCT will present a monthly allocation of SIR's 2021 Mid-Year Forecast including revenues/receipts, expenses/expenditures, ridership and positions to the Committee.
+### [p009_c0021] 2021 MTA Bus Mid-Year Forecast Monthly Allocation
+[p009_c0022] MTA Bus will present its monthly allocation of MTA Bus' 2021 Mid-Year Forecast including revenues/receipts, expenses/expenditures, ridership and positions to the Committee.
+[p009_c0023] _Master Page # 9 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 10
+
+### [p010_c0001] II. SPECIFIC AGENDA ITEMS
+### [p010_c0002] 2022 NYCT Preliminary Budget
+[p010_c0003] Public comments will be accepted on the 2022 Preliminary Budget.
+### [p010_c0004] 2022 SIR Preliminary Budget
+[p010_c0005] Public comments will be accepted on the 2022 Preliminary Budget.
+### [p010_c0006] 2022 MTA Bus Preliminary Budget
+[p010_c0007] Public comments will be accepted on the 2022 Preliminary Budget.
+### [p010_c0008] Transit Adjudication Bureau Report, 2 nd Qtr, 2021
+[p010_c0009] Quarterly report to the Committee on Transit Adjudication Bureau financial and operating indicators including collection activities and data on revenue and expenses.
+### [p010_c0010] Fare Evasion report, 2 nd Qtr, 2021
+[p010_c0011] Quarterly report to the Committee which provides estimated revenue lost to fare evasion on subways and buses based on staff surveys of stations and routes.
+### [p010_c0012] EEO & Diversity Report, 2 nd Qtr, 2021
+[p010_c0013] Quarterly report to the Committee providing data on key EEO and Human Resources indicators relating to NYCT's and MTA Bus' Equal Employment Opportunity and Diversity efforts.
+### [p010_c0014] OCTOBER 2021
+### [p010_c0015] 2022 NYCT Preliminary Budget
+[p010_c0016] Public comments will be accepted on the 2022 Preliminary Budget.
+### [p010_c0017] 2022 SIR Preliminary Budget
+[p010_c0018] Public comments will be accepted on the SIR 2022 Preliminary Budget.
+### [p010_c0019] 2022 MTA Bus Preliminary Budget
+[p010_c0020] Public comments will be accepted on the MTA Bus 2022 Preliminary Budget.
+### [p010_c0021] Customer Satisfaction Report, 3 rd Qtr, 2021
+[p010_c0022] Recurring presentation of customer satisfaction ratings about NYCT's bus, subway, and paratransit services. Report will identify trends from customer surveys results about key indicators and attributes that define the customer experience.
+### [p010_c0023] NOVEMBER 2021
+### [p010_c0024] Transit Adjudication Bureau Report, 3 rd Qtr, 2021
+[p010_c0025] Quarterly report to the Committee on Transit Adjudication Bureau financial and operating indicators including collection activities and data on revenue and expenses.
+### [p010_c0026] Fare Evasion Report, 3 rd Qtr, 2021
+[p010_c0027] Quarterly report to the Committee which provides estimated revenue lost to fare evasion on subways and buses based on staff surveys of stations and routes.
+### [p010_c0028] Charter for Transit Committee
+[p010_c0029] Once annually, the NYC Transit Committee will be presented with the Committee Charter and will be asked to formally adopt it for use.
+[p010_c0030] _Master Page # 10 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 11
+
+### [p011_c0001] II. SPECIFIC AGENDA ITEMS
+### [p011_c0002] DECEMBER 2021
+### [p011_c0003] NYCT 2022 Adopted Budget/Financial Plan 2022-2025
+[p011_c0004] NYCT will present its revised 2022-2025 Financial Plan. This plan will reflect the 2021 Adopted Budget and an updated Financial Plan for 2022-2025 reflecting the out-year impact of any changes incorporated into the 2021 Adopted Budget. The documents will also include a monthly allocation of planned expenditures for 2021 by category.
+### [p011_c0005] SIR 2022 Adopted Budget/Financial Plan 2022-2025
+[p011_c0006] SIR will present its revised 2022-2025 Financial Plan. This plan will reflect the 2021 Adopted Budget and an updated Financial Plan for 2021-2025 reflecting the out-year impact of any changes incorporated into the 2021 Adopted Budget. The documents will also include a monthly allocation of planned expenditures for 2021 by category.
+### [p011_c0007] MTA Bus 2021 Adopted Budget/Financial Plan 2022-2025
+[p011_c0008] MTA Bus will present its revised 2022-2025 Financial Plan. This plan will reflect the 2021 Adopted Budget and an updated Financial Plan for 2022-2025 reflecting the out-year impact of any changes incorporated into the 2022 Adopted Budget. The documents will also include a monthly allocation of planned expenditures for 2021 by category.
+### [p011_c0009] EEO & Diversity Report, 3 rd Qtr, 2021
+[p011_c0010] Quarterly report to the Committee providing data on key EEO and Human Resources indicators relating to NYCT's and MTA Bus' Equal Employment Opportunity and Diversity efforts.
+### [p011_c0011] JANUARY 2022
+### [p011_c0012] Approval of Committee Work Plan
+[p011_c0013] The Committee will be provided with the work plan for 2021 and will be asked to approve its use for the year.
+### [p011_c0014] Preliminary Review of NYCT's 2021 Operating Results
+[p011_c0015] NYCT will present a brief review of its 2021 Budget results.
+### [p011_c0016] Preliminary Review of SIR 2021 Operating Results
+[p011_c0017] SIR will present a brief review of SIR's 2021 Budget results.
+### [p011_c0018] Preliminary Review of MTA Bus 2021 Operating Results
+[p011_c0019] MTA Bus will present a brief review of its 2021 Budget results.
+### [p011_c0020] FEBRUARY 2022
+### [p011_c0021] Adopted Budget/Financial Plan 2022-2025
+[p011_c0022] NYCT will present its revised 2022-2025 Financial Plan. This plan will reflect the 2021 Adopted Budget and an updated Financial Plan for 2022-2025 reflecting the out-year impact of any changes incorporated into the 2021 Adopted Budget. The documents will also include a monthly allocation of planned expenditures for 2022 by category.
+### [p011_c0023] SIR Adopted Budget/Financial Plan 2022-2025
+[p011_c0024] _Master Page # 11 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 12
+
+### [p012_c0001] II. SPECIFIC AGENDA ITEMS
+[p012_c0002] NYCT will present SIR's revised 2022-2025 Financial Plan. This plan will reflect the 2021 Adopted Budget and an updated Financial Plan for 2022-2025 reflecting the out-year impact of any changes incorporated into the 2021 Adopted Budget. The documents will also include a monthly allocation of planned expenditures for 2022 by category.
+### [p012_c0003] MTA Bus Adopted Budget/Financial Plan 2022-2025
+[p012_c0004] MTA Bus will present its revised 2022-2025 Financial Plan. This plan will reflect the 2021 Adopted Budget and an updated Financial Plan for 2022-2025 reflecting the out-year impact of any changes incorporated into the 2021 Adopted Budget. The documents will also include a monthly allocation of planned expenditures for 2021 by category.
+### [p012_c0005] ADA Compliance Report
+[p012_c0006] The annual update to the NYCT Committee on the status of compliance with the Americans with Disabilities Act (ADA) at New York City Transit. The report summarizes activities for compliance including, rehabilitation of key stations and ADA requirements in bus and subway transportation.
+### [p012_c0007] Transit Adjudication Bureau Report, 4 th Qtr, 2021
+[p012_c0008] Quarterly report to the Committee on Transit Adjudication Bureau financial and operating indicators including collection activities and data on revenue and expenses.
+### [p012_c0009] EEO & Diversity Report- 2021 Year-End Report
+[p012_c0010] A detailed year-end 2021 report to the committee providing data on key EEO and Human Resources indicators relating to NYCT's and MTA Bus' Equal Employment Opportunity and Diversity efforts.
+### [p012_c0011] Fare Evasion Report, 4 th Qtr, 2021
+[p012_c0012] Quarterly report to the Committee which provides estimated revenue lost to fare evasion on subways and buses based on staff surveys of stations and routes.
+### [p012_c0013] MARCH 2022
+[p012_c0014] No Items
+### [p012_c0015] APRIL 2022
+### [p012_c0016] Final Review of NYCT 2021 Operating Results
+[p012_c0017] NYCT will review the prior year's budget results and their implications for current and future budget performance will be presented to the Committee.
+### [p012_c0018] Final Review of SIR 2021 Operating Results
+[p012_c0019] NYCT will review SIR's prior year's budget results and their implications for current and future budget performance will be presented to the Committee.
+### [p012_c0020] Final Review of MTA Bus 2021 Operating Results
+[p012_c0021] MTA Bus will review its prior year's budget results and their implications for current and future budget performance will be presented to the Committee.
+### [p012_c0022] Quarterly Customer Satisfaction Report, 1 st Qtr 2022
+[p012_c0023] Quarterly presentation of customer satisfaction ratings about NYCT's bus, subway,
+[p012_c0024] _Master Page # 12 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 13
+
+### [p013_c0001] II. SPECIFIC AGENDA ITEMS
+[p013_c0002] and paratransit services. Report will identify trends from customer surveys results about key indicators and attributes that define the customer experience.
+[p013_c0003] _Master Page # 13 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 14
+
+### [p014_c0001] Customer Service Report: Subways
+[p014_c0002] Demetrius Crichlow , Acting Executive Vice President & Chief Operating Officer David Santoro , Acting Executive Vice President, Strategy & Customer Environment
+> [p014_c0003] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+> [p014_c0004] A photograph showing a modern, accessible entrance to a subway station. The entrance is a glass-walled elevator or ramp system. Above the entrance, a digital display shows "Court Sq-23 St Sta" and icons for the E, G, M, and 7 trains. To the right, there is a set of stairs with a metal handrail. The walls are made of light-colored tiles, and the floor is a polished, light-colored material. A small sign on the wall to the left says "NO PLATEFORMA".
+[p014_c0005] A new accessible entrance to the Manhattan-bound E and M train platform of the Court Sq-23 St station opened this spring. This entrance was built by the developer of a residential skyscraper adjacent to the station, and is the next step in a phased approach bringing full accessibility to the entire Court Sq station complex serving the E, G, M, and 7 trains.
+[p014_c0006] _Master Page # 14 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 15
+
+### [p015_c0001] May 2021 Highlights: Subways
+[p015_c0002] While we are pleased to see steady improvements in COVID-19 statistics and timelines for reopening of more New York City industries, the Subways team isn't letting down our guard in the fight against the virus. Our commitment to safety and cleanliness includes daily sanitizing of subway and Staten Island Railway cars and twice-daily disinfecting of touchpoints at every subway and SIR station. Free disposable masks are available at all station booths, hand sanitizer dispensers are deployed in every station, and messaging reminds customers to wear masks properly whenever in the system and to maintain a social distance when possible. We're also continuing to encourage our employees to get vaccinated and providing appointments and walk-ins at MTA locations.
+[p015_c0003] April 2021 continued a pattern of strong operational performance on the subway. Year-over-year comparisons are not necessarily meaningful due to the significant disruptions in service and ridership due to the pandemic. April 2021 on-time performance was over 90%, Customer Journey Time Performance was over 86%, and there were only 26 weekday major incidents.
+[p015_c0004] On May 17 th , the subway returned to 24 hour, 7 day a week service for our customers, and we're excited to welcome back our late night riders. The overnight closure to customers was unprecedented and required extraordinary efforts by team members from throughout Subways and NYC Transit. We'd like to thank our Terminal Coordinators, Stations staff, Service Delivery personnel and countless others who facilitated an orderly closure of the system and then an on-time re-opening each morning. We would also like to thank our colleagues in Buses, who helped transport riders during the hours the subway was unavailable. Now that we're back 24/7, we look forward to customers returning the subway to get to and from the many destinations that are also re-opening overnight as COVID restrictions are lifted.
+[p015_c0005] We are also very pleased with the continuing trend of ridership increases. Average weekday ridership in April approached 2 million and reached a new pandemic-era record of 2.162 million on April 30 th . Weekend ridership was also strong in April, with the busiest Saturday exceeding 1.5 million riders and the busiest Sunday exceeding one million riders. Preliminary results for May indicate that month-over-month growth is continuing. We look forward to welcoming back even more customers to the subway as workers return to offices, more industries reopen, and tourism returns to the city.
+[p015_c0006] The Subways team has done a remarkable job throughout the pandemic, and we will never forget their incredible efforts. As the city begins to return to normal, we commit to continuing those efforts and delivering the best possible service to our customers.
+### [p015_c0007] Demetrius Crichlow
+[p015_c0008] Acting Executive Vice President and Chief Operating Officer
+### [p015_c0009] David Santoro
+[p015_c0010] Acting Executive Vice President, Strategy & Customer Environment
+[p015_c0011] _Master Page # 15 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 16
+
+### [p016_c0001] Subway Report (Weekday & Full Month)
+[p016_c0002]
+
+```text
+Subway Report Performance Indicators Performance Indicator April 2021 12-Month Average This Year Last Year Change This Year Last Year Change Weekday Customer-Focused Metrics Weekday Major Incidents (Chart 1) Unplanned incidents delaying 50+ trains 26 71 -63.4% 23.8 40.5 -41.2% Weekday Service Delivered (Chart 3) % of scheduled trains operated Weekday rush hours (7-10a and 4-7p) 96.1% 93.4% +2.7% 95.9% 96.5% -0.6% Additional Platform Time (h:mm:ss) (Chart 7) Average added time spent waiting for trains, compared with scheduled wait time 0:01:10 0:01:06 +0:00:04 0:01:11 0:01:11 0:00:00 Additional Train Time (h:mm:ss) (Chart 9) Average additional unanticipated time spent onboard train compared to scheduled travel time -0:00:01 -0:00:31 0:00:30 -0:00:00 0:00:40 -0:00:40 Customer Journey Time Performance (Chart 11) % of customers whose journeys are completed within five minutes of schedule. 86.3% 83.3% +3.0% 85.9% 84.9% +1.0% Inputs to Operations Mean Distance Between Failures (Chart 13) Revenue car miles divided by the number of incidents attributed to car-related causes 173,888 176,237 -1.3% 151,662 131,627 +15.2% Elevator Availability* (Chart 14) % of time elevators are operational systemwide 96.7% 98.9% -2.2% 96.7% 96.4% +0.3% Escalator Availability* (Chart 14) % of time escalators are operational systemwide 90.3% 94.7% -4.4% 91.9% 90.4% +1.5% Weekday Legacy Indicators Weekday Wait Assessment (Chart 15) 75.1% 72.8% +2.3% 75.0% 74.7% +0.3% Weekday Terminal On-Time Performance (Chart 17) 91.0% 87.5% +3.5% 89.8% 82.3% +7.5% Weekday Trains Delayed (Chart 19) 15,832 16,664 -5.0% 14,220 30,699 -53.7%
+```
+[p016_c0003] * Availability measures the percent of time that a unit is running and available for customer service. All service outages, regardless of cause, count as downtime in the availability calculation. (Note: Units out of service for capital rehabilitation are excluded from the calculations.)
+[p016_c0004] Metrics for the complete month of April 2020 could not be provided due to severe disruptions in subway ridership and service associated with the Covid-19 pandemic. April 2020 data is based on April 14-30 for most metrics. Please see the April 2020 Subway Report in the May 2020 Transit and Bus Committee meeting materials for more details.
+[p016_c0005] Change values for time- and percentage-based metrics are calculated as absolute values. All other change values are calculated as percentage changes.
+[p016_c0006] _Master Page # 16 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 17
+
+### [p017_c0001] Subway Report (Weekend)
+[p017_c0002]
+
+```text
+Subway Report Performance Indicators Performance Indicator April 2021 12-Month Average This Year Last Year Change This Year Last Year Change Weekend Customer-Focused Metrics Weekend Major Incidents (Chart 2) Unplanned incidents delaying 50+ trains 3 9 -66.7% 4.0 4.7 -14.9% Weekend Service Delivered (Chart 5) % of scheduled trains operated during Weekends (10a-6p) 95.8% 77.5% +18.3% 96.5% 97.6% -1.1% Weekend Legacy Indicators Weekend Wait Assessment (Chart 16) 76.0% 47.0% +29.0% 79.6% 81.1% -1.5% Weekend Terminal On-Time Performance (Chart 18) 88.4% 75.2% +13.2% 88.7% 83.7% +5.0% Weekend Trains Delayed (Chart 20) 5,059 7,453 -32.1% 5,207 8,531 -39.0%
+```
+[p017_c0003] 12-month averages include partial month averages for March and April 2020.
+### [p017_c0004] Subway Report (Staten Island Railway)
+[p017_c0005]
+
+```text
+Subway Report Performance Indicators Performance Indicator April 2021 12-Month Average This Year Last Year Change This Year Last Year Change On-Time Performance 24 Hour On-Time Performance % of scheduled trains arriving within six minutes of their scheduled arrival time during a 24-hour period 98.8% 96.5% +2.3% 97.2% 95.8% +1.4% AM Rush On-Time Performance % of scheduled trains arriving within six minutes of their scheduled arrival time 100.0% 100.0% 0.0% 97.8% 98.2% -0.4% PM Rush On-Time Performance % of scheduled trains arriving within six minutes of their scheduled arrival time 98.3% 100.0% -1.7% 96.7% 93.8% +2.9% Percentage of Completed Trips Percentage of Completed Trips 99.9% 99.9% 0.0% 99.7% 99.8% -0.1% Mean Distance Between Failures Mean Distance Between Failures Revenue car miles divided by the number of incidents attributed to car-related causes 37,284 82,162 -54.6% 40,036 61,201 -34.6%
+```
+[p017_c0006] Staten Island Railway On-Time Performance excludes delays from trains purposely held for connecting passengers from the Staten Island Ferry.
+[p017_c0007] _Master Page # 17 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 18
+
+### [p018_c0001] Section 1: Customer-Focused Metrics
+[p018_c0002] The metrics in this section measure subway performance as it affects our passengers. By focusing on how many disruptive incidents have occurred in the subway, how closely actual service matches schedules, and how much longer passengers must wait and ride compared to schedules, these measures collectively reflect the customer experience.
+### [p018_c0003] Performance Indicator Definitions
+### [p018_c0004] Major Incidents (Weekday and Weekend)
+[p018_c0005] An unplanned incident that delays 50 or more trains. Major incidents are separated into six categories: Track, Signals, Persons on Trackbed/Police/Medical, Stations & Structures, Subway Car and Other.
+### [p018_c0006] Service Delivered (Weekday and Weekend)
+[p018_c0007] Measures NYCT's ability to deliver the service that's scheduled. Service Delivered is measured along the busiest part of the line, which reflects service across the entire line, and is reported as the percentage of scheduled trains that are provided from 7 a.m. to 10 a.m. and 4 p.m. to 7 p.m. on weekdays and from 10 a.m. to 6 p.m. on weekends.
+### [p018_c0008] Additional Platform Time (APT)
+[p018_c0009] The estimated average extra time that customers spend waiting on the platform for a train, compared with their scheduled wait time. This estimate is for each individual train a customer uses in their journey (i.e., unlinked trip), not all trains in their journey combined.
+### [p018_c0010] Additional Train Time (ATT)
+[p018_c0011] The estimated average extra time that customers spend onboard a train, compared to the time they would have spent onboard a train if trains were running according to schedule. This estimate is for each individual train a customer uses in their journey (i.e., unlinked trip), not all trains in their journey combined.
+### [p018_c0012] Customer Journey Time Performance (CJTP)
+[p018_c0013] The percentage of customer trips with total travel times within 5 minutes of the scheduled time. It is equivalent to the percentage of customer trips with APT plus ATT of 5 minutes or less. Like APT and ATT, CJTP is estimated for each individual train a customer uses in their journey (i.e., unlinked trip), not all trains in their journey combined.
+[p018_c0014] APT, ATT, and CJTP are measured using MetroCard/OMNY entry data, subway schedules (including adjustments for planned work), and actual train arrival and departure times. These metrics are considered to be in beta and are expected to be refined as data sources and methodologies change, especially with the integration of new more precise train-tracking technologies and the re-calibration of existing data sources. They are reported for trips starting from 6 a.m. to 11 p.m. on weekdays. For more detail, see http://dashboard.mta.info/Help
+[p018_c0015] _Master Page # 18 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 19
+
+### [p019_c0001] Subway Weekday Major Incidents (24 hours)
+[p019_c0002] Desired trend
+> [p019_c0003] Subway Weekday Major Incidents Data Month Monthly Incidents 12-Month Average Apr-20 71 38.5 May-20 5 38.5 Jun-20 19 38.5 Jul-20 36 38.5 Aug-20 26 38.5 Sep-20 16 38.5 Oct-20 16 38.5 Nov-20 24 38.5 Dec-20 39 38.5 Jan-21 24 38.5 Feb-21 44 38.5 Mar-21 25 38.5 Apr-21 26 38.5
+[p019_c0004]
+
+```text
+Categories Monthly 12-Month Average Apr 21 Apr 20 % Change Apr 21 Apr 20 % Change Track 4 April 2020 Breakdown by Category is Not Available 2.4 6.0 -60.0% Signals 11 8.7 13.8 -37.0% Persons on Trackbed/Police/Medical 7 7.2 9.8 -26.5% Stations & Structures 1 1.0 1.4 -28.6% Subway Car 3 2.0 3.8 -47.4% Other 0 2.5 5.7 -56.1% Subdivision A 12 10.8 18.4 -41.3% Subdivision B 14 13.0 22.1 -41.2% Systemwide 26 71* -63.4% 23.8 40.5 -41.2% Avg Incident Duration (h:mm:ss) 0:25:12 0:23:42 +6.3% 0:24:30 0:23:29 +4.3% Avg Trains Delayed per Incident 85 118 -28.0% 113 110 +2.7%
+```
+### [p019_c0005] Major Incidents Discussion
+- [p019_c0006] • April 2020 total major incidents were projected based on April 14-30, and the breakdown by category is not available. • There were 26 weekday major incidents in April 2021, only slightly higher than the 12 month average of 23.8.
+[p019_c0007] Note: 12-month category averages do not include the months of March and April 2020.
+[p019_c0008] _Chart 1_
+[p019_c0009] _Master Page # 19 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 20
+
+### [p020_c0001] Subway Weekend Major Incidents (24 hours)
+[p020_c0002] Desired trend
+> [p020_c0003] Subway Weekend Major Incidents (24 hours) Data Month Monthly 12-Month Average Apr-20 60 11 May-20 2 11 Jun-20 0 11 Jul-20 6 8 Aug-20 3 12 Sep-20 6 11 Oct-20 3 11 Nov-20 3 11 Dec-20 6 11 Jan-21 8 11 Feb-21 7 11 Mar-21 2 5 Apr-21 3 4
+[p020_c0004]
+
+```text
+Categories Monthly 12-Month Average Apr 21 Apr 20 % Change Apr 21 Apr 20 % Change Track 1 0.3 0.4 -25.0% Signals 1 1.1 0.7 +57.1% Persons on Trackbed/Police/Medical 1 2.0 1.2 +66.7% Stations & Structure 0 0.1 0.1 0.0% Subway Car 0 0.2 0.2 0.0% Other 0 0.3 2.1 -85.7% Subdivision A 2 1.5 2.1 -28.6% Subdivision B 1 2.5 2.6 -3.8% Systemwide 3 60* -66.7% 4.0 4.7 -14.9% Avg Incident Duration (h:mm:ss) 0:19:18 0:16:12 +19.1% 0:23:48 0:24:48 -4.0% Avg Trains Delayed per Incident 99 103 -3.9% 100 108 -7.4%
+```
+### [p020_c0005] Major Incidents Discussion
+- [p020_c0006] April 2020 total major incidents were projected based on April 14-30, and the breakdown by category is not available. Most of these incidents were related to crew shortages due to the pandemic. There were only 3 weekend major incidents in April 2021.
+[p020_c0007] Note: 12-month category averages do not include the months of March and April 2020.
+[p020_c0008] _Chart 2_
+[p020_c0009] _Master Page # 20 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 21
+
+### [p021_c0001] Subway Weekday % Service Delivered (Peak Hours)
+[p021_c0002] Desired trend
+> [p021_c0003] Subway Weekday % Service Delivered (Peak Hours) Data Month Monthly (%) 12-Month Average (%) Apr-20 93.4% 96.5% May-20 99.4% 96.5% Jun-20 97.8% 96.5% Jul-20 96.5% 96.5% Aug-20 95.5% 96.5% Sep-20 96.8% 96.5% Oct-20 96.8% 96.5% Nov-20 96.0% 96.5% Dec-20 95.2% 96.5% Jan-21 96.8% 96.5% Feb-21 90.5% 96.5% Mar-21 95.0% 96.5% Apr-21 96.1% 96.5%
+[p021_c0004]
+
+```text
+Monthly 12-Month Average Apr 21 Apr 20 Change Apr 21 Apr 20 Change Subdivision A 95.6% 95.3% +0.3% 95.5% 96.5% -1.0% Subdivision B 96.5% 92.0% +4.5% 96.3% 96.5% -0.2% Systemwide 96.1% 93.4% +2.7% 95.9% 96.5% -0.6%
+```
+### [p021_c0005] Weekday Service Delivered Discussion
+- [p021_c0006] • Service Delivered in April 2021 improved by 2.7% compared to April 2020, mostly due to crew shortages in April 2020 related to the pandemic. • The 42 nd Street Shuttle and the B, C, and W lines did not operate in April 2020.
+[p021_c0007] _Chart 3_
+[p021_c0008] _Master Page # 21 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 22
+
+### [p022_c0001] Subway Weekday % Service Delivered
+[p022_c0002] Monthly (Peak Hours)
+[p022_c0003] Desired trend
+[p022_c0004]
+
+```text
+Line Apr 21 Apr 20 Change 1 94.8% 94.3% +0.5% 2 97.3% 93.0% +4.3% 3 96.1% 100.3% -4.2% 4 94.5% 97.9% -3.4% 5 94.5% 99.0% -4.5% 6 95.8% 100.9% -5.1% 7 93.7% 80.4% +13.3% S 42nd 99.3% N/A N/A Subdivision A 95.6% 95.3% +0.3% A 93.0% 97.6% -4.6% B 96.2% N/A N/A C 98.1% N/A N/A D 97.1% 97.6% -0.5% E 97.8% 96.2% +1.6% F 99.3% 98.6% +0.7% S Fkln 99.7% 99.8% -0.1% G 99.6% 79.6% +20.0% S Rock 101.1% 100.0% +1.1% JZ 98.8% 80.7% +18.1% L 97.9% 99.3% -1.4% M 95.4% 83.0% +12.4% N 96.1% 87.6% +8.5% Q 95.4% 93.8% +1.6% R 95.2% 87.1% +8.1% W 91.4% N/A N/A Subdivision B 96.5% 92.0% +4.5% Systemwide 96.1% 93.4% 2.7%
+```
+[p022_c0005] _Chart 4_
+[p022_c0006] _Master Page # 22 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 23
+
+### [p023_c0001] Subway Weekend % Service Delivered
+[p023_c0002] (10 a.m. to 6 p.m.)
+[p023_c0003] Desired trend
+> [p023_c0004] Subway Weekend % Service Delivered Data Month Monthly (%) 12-Month Average (%) Apr-20 77.5 97.5 May-20 97.5 97.5 Jun-20 97.8 97.5 Jul-20 97.5 97.5 Aug-20 97.5 97.5 Sep-20 95.5 97.5 Oct-20 97.2 97.5 Nov-20 95.2 97.5 Dec-20 95.0 97.5 Jan-21 95.5 97.5 Feb-21 94.8 97.5 Mar-21 96.8 97.5 Apr-21 95.8 97.5
+[p023_c0005]
+
+```text
+Monthly 12-Month Average Apr 21 Apr 20 % Change Apr 21 Apr 20 % Change Subdivision A 94.8% 78.1% +16.7% 95.3% 97.3% -2.0% Subdivision B 96.4% 77.1% +19.3% 97.3% 97.7% -0.4% Systemwide 95.8% 77.5% +18.3% 96.5% 97.6% -1.1%
+```
+### [p023_c0006] Weekend Service Delivered Discussion
+- [p023_c0007] • Service Delivered in April 2021 improved by 18.3% compared to April 2020, due to the severe disruptions caused by the pandemic in April 2020. • The 42 nd Street Shuttle and C line did not operate in April 2020.
+[p023_c0008] _Chart 5_
+[p023_c0009] _Master Page # 23 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 24
+
+### [p024_c0001] Subway Weekend % Service Delivered Monthly (10 a.m. to 6 p.m.)
+[p024_c0002] Desired trend
+[p024_c0003]
+
+```text
+Line Apr 21 Apr 20 % Change 1 94.1% 84.6% +9.5% 2 92.0% 74.1% +17.9% 3 92.8% 83.4% +9.4% 4 93.4% 84.6% +8.8% 5 98.6% 80.5% +18.1% 6 93.2% 76.4% +16.8% 7 98.0% 63.8% +34.2% S 42nd 97.4% N/A N/A Subdivision A 94.8% 78.1% +16.7% A 96.1% N/A N/A C 96.4% N/A N/A D 98.0% 73.8% +24.2% E 98.9% 40.0% +58.9% F 84.4% 80.2% +4.2% S Fkln 100.0% 100.0% +0.0% G 99.3% 85.8% +13.5% S Rock 99.1% 100.0% -0.9% J 98.0% 78.8% +19.2% L 97.8% 98.4% -0.6% M N/A 59.6% N/A N 97.7% 59.7% +38.0% Q 96.1% 83.0% +13.1% R 96.3% 82.2% +14.1% Subdivision B 96.4% 77.1% +19.3% Systemwide 95.8% 77.5% +18.3%
+```
+### [p024_c0004] Notes:
+[p024_c0005] B and W lines do not operate on weekends.
+[p024_c0006] The E, F and S Rock Shuttle were excluded from March 2021 due to planned service changes.
+[p024_c0007] _Chart 6_
+[p024_c0008] _Master Page # 24 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 25
+
+### [p025_c0001] Subway Weekday Average Additional Platform Time Monthly (Trips Starting 6 a.m. - 11 p.m.) (h:mm:ss)
+[p025_c0002] Desired trend
+> [p025_c0003] Subway Weekday Average Additional Platform Time Data Month Systemwide Subdivision A Subdivision B Apr-20 0:01:06 0:01:06 0:01:26 May-20 0:00:42 0:00:42 0:00:42 Jun-20 0:01:08 0:01:08 0:01:10 Jul-20 0:01:12 0:01:12 0:01:14 Aug-20 0:01:18 0:01:18 0:01:20 Sep-20 0:01:12 0:01:12 0:01:12 Oct-20 0:01:10 0:01:10 0:01:10 Nov-20 0:01:12 0:01:12 0:01:12 Dec-20 0:01:14 0:01:14 0:01:14 Jan-21 0:01:12 0:01:12 0:01:12 Feb-21 0:01:30 0:01:30 0:01:44 Mar-21 0:01:12 0:01:12 0:01:12 Apr-21 0:01:10 0:01:10 0:01:13
+[p025_c0004]
+
+```text
+Monthly 12-Month Average Apr 21 Apr 20 Change Apr 21 Apr 20 Change Subdivision A 0:01:05 0:00:46 +0:00:19 0:01:09 0:01:06 +0:00:03 Subdivision B 0:01:13 0:01:24 -0:00:11 0:01:13 0:01:15 -0:00:02 Systemwide 0:01:10 0:01:06 +0:00:04 0:01:11 0:01:11 +0:00:00
+```
+### [p025_c0005] Additional Platform Time Discussion
+- [p025_c0006] • April 2021 APT improved by 4 seconds compared to April 2020, and the 12 month average remained constant. • Reduced service schedules were operated on most lines in April 2020, affecting the year-over-year comparisons at the line level. • The 42 nd Street Shuttle and the B, C, and W lines did not operate in April 2020.
+[p025_c0007] Note: This metric uses electronic data made available systemwide by the MTA's investments in new train tracking technology and in more robust methods for determining how customers use the subway. It is likely that this measure will be refined and enhanced as the MTA gains experience integrating the latest technology and information.
+[p025_c0008] _Chart 7_
+[p025_c0009] _Master Page # 25 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 26
+
+### [p026_c0001] Subway Weekday Average Additional Platform Time Monthly (Trips Starting 6 a.m. - 11 p.m.) (h:mm:ss)
+[p026_c0002] Desired trend
+[p026_c0003]
+
+```text
+Line Apr 21 Apr 20 Change 1 0:01:01 0:00:31 +0:00:30 2 0:01:12 0:00:57 +0:00:15 3 0:01:04 0:00:28 +0:00:36 4 0:01:08 0:00:36 +0:00:32 5 0:01:13 0:00:29 +0:00:44 6 0:00:59 0:00:43 +0:00:16 7 0:01:03 0:01:24 -0:00:21 S 42nd 0:00:30 N/A N/A Subdivision A 0:01:05 0:00:46 +0:00:19 A 0:01:13 0:00:40 +0:00:33 B 0:01:32 N/A N/A C 0:01:33 N/A N/A D 0:01:28 0:01:21 +0:00:07 E 0:00:58 0:01:05 -0:00:07 F 0:01:03 0:00:52 +0:00:11 S Fkln 0:00:22 0:00:23 -0:00:01 G 0:00:57 0:01:50 -0:00:53 S Rock 0:00:25 0:00:21 +0:00:04 JZ 0:01:00 0:03:09 -0:02:09 L 0:00:41 0:00:38 +0:00:03 M 0:01:33 0:02:51 -0:01:18 N 0:01:18 0:01:38 -0:00:20 Q 0:01:15 0:01:00 +0:00:15 R 0:01:29 0:01:56 -0:00:27 W 0:00:59 N/A N/A Subdivision B 0:01:13 0:01:24 -0:00:11 Systemwide 0:01:10 0:01:06 +0:00:04
+```
+[p026_c0004] _Chart 8_
+[p026_c0005] _Master Page # 26 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 27
+
+### [p027_c0001] Subway Weekday Average Additional Train Time Monthly (Trips Starting 6 a.m. - 11 p.m.) (h:mm:ss)
+[p027_c0002] Desired trend
+> [p027_c0003] Subway Weekday Average Additional Train Time Data Month Systemwide Subdivision A Subdivision B Apr-20 -0:00:30 -0:00:35 -0:00:28 May-20 -0:00:28 -0:00:28 -0:00:28 Jun-20 -0:00:15 -0:00:10 -0:00:05 Jul-20 0:00:00 -0:00:05 0:00:05 Aug-20 0:00:02 -0:00:08 0:00:05 Sep-20 -0:00:08 -0:00:15 0:00:05 Oct-20 -0:00:08 -0:00:12 0:00:05 Nov-20 -0:00:08 -0:00:08 0:00:02 Dec-20 0:00:05 -0:00:05 0:00:05 Jan-21 0:00:05 -0:00:08 0:00:05 Feb-21 0:00:15 0:00:05 0:00:25 Mar-21 -0:00:08 -0:00:12 -0:00:05 Apr-21 -0:00:01 -0:00:08 -0:00:05
+[p027_c0004]
+
+```text
+Monthly 12-Month Average Apr 21 Apr 20 Change Apr 21 Apr 20 Change Subdivision A -0:00:06 -0:00:37 +0:00:31 -0:00:07 0:00:28 -0:00:35 Subdivision B 0:00:03 -0:00:26 +0:00:29 0:00:05 0:00:48 -0:00:44 Systemwide -0:00:01 -0:00:31 +0:00:30 -0:00:00 0:00:40 -0:00:40
+```
+### [p027_c0005] Additional Train Time Discussion
+- [p027_c0006] April 2021 ATT worsened by 30 seconds compared to April 2020, but remained 1 second faster than scheduled times. ATT comparisons are affected by the differences in both ridership and service levels caused by the pandemic. The 42 nd Street Shuttle and the B, C, and W lines did not operate in April 2020.
+[p027_c0007] Note: This metric uses electronic data made available systemwide by the MTA's investments in new train tracking technology and in more robust methods for determining how customers use the subway. It is likely that this measure will be refined and enhanced as the MTA gains experience integrating the latest technology and information.
+[p027_c0008] _Chart 9_
+[p027_c0009] _Master Page # 27 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 28
+
+### [p028_c0001] Subway Weekday Average Additional Train Time Monthly (Trips Starting 6 a.m. - 11 p.m.) (h:mm:ss)
+[p028_c0002] Desired trend
+[p028_c0003]
+
+```text
+Line Apr 21 Apr 20 Change 1 0:00:08 -0:00:04 +0:00:12 2 -0:00:36 -0:00:56 +0:00:20 3 -0:00:33 -0:00:54 +0:00:21 4 -0:00:18 -0:01:04 +0:00:46 5 -0:00:34 0:00:21 -0:00:55 6 0:00:11 -0:00:12 +0:00:23 7 0:00:22 -0:01:03 +0:01:25 S 42nd 0:00:06 N/A N/A Subdivision A -0:00:06 -0:00:37 +0:00:31 A 0:00:06 -0:00:00 +0:00:06 B 0:00:25 N/A N/A C 0:00:04 N/A N/A D 0:00:20 -0:00:47 +0:01:07 E -0:00:12 -0:01:34 +0:01:22 F -0:00:32 -0:00:47 +0:00:15 S Fkln 0:00:01 -0:00:04 +0:00:05 G 0:00:34 0:00:19 +0:00:15 S Rock -0:01:08 -0:01:03 -0:00:05 JZ 0:00:28 0:00:07 +0:00:21 L -0:00:03 -0:00:13 +0:00:10 M 0:00:00 -0:00:14 +0:00:14 N 0:00:22 0:00:05 +0:00:17 Q 0:00:10 -0:00:22 +0:00:32 R -0:00:17 -0:00:29 +0:00:12 W -0:00:09 N/A N/A Subdivision B 0:00:03 -0:00:26 +0:00:29 Systemwide -0:00:01 -0:00:31 +0:00:30
+```
+[p028_c0004] _Chart 10_
+[p028_c0005] _Master Page # 28 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 29
+
+### [p029_c0001] Subway Weekday Customer Journey Time Performance
+[p029_c0002] Monthly (Trips Starting 6 a.m. - 11 p.m.)
+[p029_c0003] Desired trend
+> [p029_c0004] Subway Weekday Customer Journey Time Performance Data Month Systemwide Subdivision A Subdivision B Apr-20 83.3% 86.2% 80.7% May-20 87.0% 88.7% 85.5% Jun-20 86.2% 88.7% 84.5% Jul-20 85.2% 88.3% 83.5% Aug-20 85.0% 87.2% 84.0% Sep-20 86.0% 88.8% 84.5% Oct-20 86.5% 89.2% 84.5% Nov-20 86.2% 88.8% 84.5% Dec-20 85.2% 87.8% 83.8% Jan-21 86.2% 88.3% 84.5% Feb-21 83.0% 85.2% 81.5% Mar-21 86.2% 88.5% 84.8% Apr-21 86.3% 88.7% 84.6%
+[p029_c0005]
+
+```text
+Monthly 12-Month Average Apr 21 Apr 20 Change Apr 21 Apr 20 Change Subdivision A 88.7% 86.2% +2.5% 88.4% 88.3% +0.1% Subdivision B 84.6% 80.7% +3.9% 84.2% 82.5% +1.7% Systemwide 86.3% 83.3% +3.0% 85.9% 84.9% +1.0%
+```
+### [p029_c0006] Weekday Customer Journey Time Performance Discussion
+- [p029_c0007] April 2021 CJTP improved by 3.0% compared to April 2020, and the 12-month average improved by 1.0%. The 42 nd Street Shuttle and the B, C, and W lines did not operate in April 2020.
+[p029_c0008] _Chart 11_
+[p029_c0009] _Master Page # 29 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 30
+
+### [p030_c0001] Subway Weekday Customer Journey Time Performance Monthly (Trips Starting 6 a.m. - 11 p.m.)
+[p030_c0002] Desired trend
+[p030_c0003]
+
+```text
+Line Apr 21 Apr 20 Change 1 89.6% 88.5% +1.1% 2 87.7% 85.3% +2.4% 3 90.2% 88.4% +1.8% 4 86.9% 87.2% -0.3% 5 87.7% 89.6% -1.9% 6 90.3% 83.5% +6.8% 7 87.9% 84.0% +3.9% S 42nd 96.9% N/A N/A Subdivision A 88.7% 86.2% +2.5% A 84.8% 84.3% +0.5% B 80.8% N/A N/A C 86.2% N/A N/A D 80.7% 80.5% +0.2% E 88.3% 84.1% +4.2% F 84.7% 84.8% -0.1% S Fkln 97.2% 97.3% -0.1% G 84.4% 75.7% +8.7% S Rock 94.9% 95.5% -0.6% JZ 84.4% 73.6% +10.8% L 94.8% 85.4% +9.4% M 81.2% 77.4% +3.8% N 82.0% 76.0% +6.0% Q 82.4% 81.6% +0.8% R 82.2% 76.1% +6.1% W 90.0% N/A N/A Subdivision B 84.6% 80.7% +3.9% Systemwide 86.3% 83.3% 3.0%
+```
+[p030_c0004] _Chart 12_
+[p030_c0005] _Master Page # 30 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 31
+
+### [p031_c0001] Section 2: Inputs to Operations
+[p031_c0002] The metrics in this section address how NYCT provides service to its customers, by measuring the reliability of key assets, reflecting the effectiveness of maintenance practices, as well as age and condition. Historically, the only such measures that NYCT has provided to the Transit Committee and to the public are car fleet and elevator and escalator measures, defined below. NYCT is examining additional such measures to bring forward in coming months.
+### [p031_c0003] Performance Indicator Definitions
+### [p031_c0004] Mean Distance Between Failures (MDBF)
+[p031_c0005] Subway MDBF is a measure of car fleet reliability. It is calculated as revenue car miles divided by the number of delay incidents attributed to car-related causes.
+### [p031_c0006] Elevator and Escalator Availability
+[p031_c0007] The percent of time that elevators or escalators are operational system wide. Most elevators and escalators in the subway are maintained by New York City Transit and are electronically monitored 24-hours a day. Some elevators and escalators in the subway are owned and maintained by outside parties; these are inspected by NYCT personnel multiple times daily.
+[p031_c0008] _Master Page # 31 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 32
+
+### [p032_c0001] Subway Mean Distance Between Failures
+[p032_c0002] Desired trend
+> [p032_c0003] Monthly Mean Distance Between Failures (MDBF) Data Month Monthly Average (Miles) Apr-20 176,237 May-20 150,000 Jun-20 150,000 Jul-20 134,313 Aug-20 145,000 Sep-20 160,000 Oct-20 140,000 Nov-20 150,000 Dec-20 155,000 Jan-21 150,000 Feb-21 145,000 Mar-21 160,000 Apr-21 173,888
+[p032_c0004]
+
+```text
+Monthly # of Cars Apr '21 Apr '20 % Change Subdivision A 2,890 240,728 290,796 -17.2% Subdivision B 3,565 144,313 137,005 +5.3% Systemwide 6,455 173,888 176,237 -1.3%
+```
+[p032_c0005]
+
+```text
+12-Month Average Car Class # of Cars Apr '21 Apr '20 % Change R32 0 28,701 N/A R42 0 N/A R46 748 60,731 59,141 +2.7% R62 315 219,590 225,018 -2.4% R62A 824 162,707 114,473 +42.1% R68 425 110,983 74,277 +49.4% R68A 200 63,722 87,354 -27.1% R142 1,025 270,994 237,375 +14.2% R142A 220 133,387 123,016 +8.4% R143 212 165,204 172,658 -4.3% R160 1,662 326,548 264,046 +23.7% R179 318 117,002 150,214 -22.1% R188 - New 126 326,665 370,648 -11.9% R188 - Conversion 380 289,801 260,292 +11.3% Subdivision A 2,890 210,673 173,338 +21.5% Subdivision B 3,565 125,948 112,156 +12.3% Systemwide 6,455 151,662 131,627 +15.2%
+```
+[p032_c0006] MDBF Discussion April 2021 MDBF was 173,888, a decrease of 1.3% from one year ago. 12-month average MDBF was 151,662 in April 2021, an increase of 15.2% from one year ago. The largest improvements in MDBF (12-month average) were on the R68 and R62A fleets.
+[p032_c0007] _Chart 13_
+[p032_c0008] _Master Page # 32 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 33
+
+### [p033_c0001] Elevator and Escalator Availability (24 Hours)
+[p033_c0002] Desired trend
+> [p033_c0003] Monthly Availability Data (Estimated from Chart) Month Monthly Elevator Availability 12-Month Average Elevator Availability Monthly Escalator Availability 12-Month Average Escalator Availability Apr-20 98.9% 96.7% 94.7% 90.3% May-20 97.5% 96.7% 93.2% 90.8% Jun-20 96.5% 96.7% 91.8% 91.2% Jul-20 96.0% 96.7% 91.2% 91.5% Aug-20 96.2% 96.7% 92.5% 92.0% Sep-20 96.5% 96.7% 92.0% 92.2% Oct-20 96.5% 96.7% 91.8% 92.2% Nov-20 97.0% 96.7% 93.5% 92.5% Dec-20 96.8% 96.7% 92.5% 92.5% Jan-21 97.2% 96.7% 92.2% 92.5% Feb-21 95.2% 96.7% 91.2% 92.5% Mar-21 96.5% 96.7% 90.2% 92.2% Apr-21 96.7% 96.7% 90.3% 91.9%
+[p033_c0004]
+
+```text
+Monthly 12-Month Average Apr 21 Apr 20 % Change Apr 21 Apr 20 % Change Elevator Availability 96.7% 98.9% -2.2% 96.7% 96.4% +0.3% Escalator Availability 90.3% 94.7% -4.4% 91.9% 90.4% +1.5%
+```
+### [p033_c0005] Elevator and Escalator Availability Discussion
+- [p033_c0006] • Elevator availability decreased by 2.2% in April 2021 compared to April 2020. • Escalator availability decreased by 4.4% in April 2021 compared to April 2020. • The decrease in Escalator availability was due in part to ongoing repair work as part of a safety campaign that began in early 2021.
+[p033_c0007] _Chart 14_
+[p033_c0008] _Master Page # 33 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 34
+
+### [p034_c0001] Section 3: Legacy Indicators
+[p034_c0002] The metrics in this section have been shared with the public for many years. While less reflective of the customer experience, they are included here for continuity purposes.
+### [p034_c0003] Performance Indicator Definitions
+### [p034_c0004] Wait Assessment (Weekday and Weekend)
+[p034_c0005] Wait Assessment (WA) measures how regularly the trains are spaced at selected timepoints on each line. To meet the standard, the headway (time between trains) can be no greater than 25% more than the scheduled headway. Minor gaps are more than 25% to 50% over the scheduled headway, medium gaps are more than 50% to 100% over the scheduled headway, and major gaps are more than 100% over the scheduled headway, or missed intervals. WA is reported from 6 a.m. to midnight.
+### [p034_c0006] Terminal On-Time Performance (Weekday and Weekend)
+[p034_c0007] Terminal On-Time Performance is the percentage of scheduled trains arriving at the terminal locations within five minutes of their scheduled arrival time during a 24-hour period. An on-time train is defined as a train arriving at its destination terminal on time, early, or no more than five minutes late, and that has not skipped any planned station stops.
+### [p034_c0008] Train Delays (Weekday and Weekend)
+[p034_c0009] Train delays are the number of trains that arrived at terminal locations more than five minutes late, or that have skipped any planned station stops during a 24-hour period.
+[p034_c0010] _Master Page # 34 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 35
+
+### [p035_c0001] Subway Weekday Wait Assessment (6 a.m. - midnight)
+[p035_c0002]
+
+```text
+Line Apr 21 Apr 20 Desired trend Monthly Monthly Gap 12 month Monthly Monthly Gap 12 month Monthly Meets Meets Meets Meets Standard Standard Minor Medium Major Standard Standard Minor Medium Major Standard Change 1 78.9% 8.2% 7.1% 5.9% 80.6% 86.8% 7.5% 4.1% 1.6% 79.6% -7.9% 2 69.1% 11.3% 10.3% 9.3% 67.9% 65.3% 12.0% 13.4% 9.3% 71.6% +3.8% 3 71.0% 12.1% 10.7% 6.3% 71.4% 82.7% 10.5% 4.9% 1.9% 76.2% -11.7% 4 68.9% 10.6% 9.9% 10.6% 69.6% 76.2% 11.0% 8.0% 4.7% 72.3% -7.3% 5 69.3% 9.9% 9.7% 11.1% 68.9% 86.4% 9.0% 3.5% 1.1% 70.6% -17.1% 6 76.8% 9.7% 7.5% 6.1% 76.8% 83.0% 9.6% 5.1% 2.3% 76.3% -6.2% 7 76.5% 10.7% 7.5% 5.3% 77.7% 56.5% 13.6% 18.8% 11.0% 77.6% +20.0% S 42nd 96.6% 2.1% 0.6% 0.8% 94.5% N/A Subdivision A 73.5% 10.1% 8.7% 7.7% 73.7% 73.5% 10.1% 8.7% 7.7% 74.7% +0.0% A 68.6% 11.8% 10.4% 9.2% 69.0% 76.0% 10.7% 6.1% 7.2% 69.6% -7.4% B 74.6% 12.4% 8.2% 4.8% 74.2% N/A C 81.2% 12.5% 4.5% 1.7% 80.0% N/A D 74.1% 12.5% 8.4% 5.1% 74.1% 74.2% 13.3% 9.0% 3.5% 73.8% -0.1% E 74.0% 11.5% 9.0% 5.6% 74.1% 80.1% 10.9% 6.4% 2.6% 72.7% -6.1% F 77.1% 11.1% 7.9% 3.9% 76.4% 79.0% 11.2% 7.2% 2.6% 71.7% -1.9% S Fkln 99.4% 0.3% 0.2% 0.2% 98.4% 98.2% 0.9% 0.1% 0.7% 98.2% +1.2% G 81.5% 11.7% 5.3% 1.4% 81.8% 50.7% 14.0% 17.7% 17.7% 78.5% +30.8% S Rock 95.4% 2.3% 1.4% 0.9% 95.2% 97.9% 1.1% 0.5% 0.5% 94.7% -2.5% JZ 84.5% 9.5% 4.3% 1.7% 83.5% 56.1% 9.1% 15.7% 19.1% 80.3% +28.4% L 78.9% 11.3% 6.8% 2.9% 78.7% 90.7% 6.6% 1.6% 1.1% 78.1% -11.8% M 76.7% 10.7% 7.4% 5.1% 78.1% 56.9% 12.3% 20.0% 10.8% 75.0% +19.8% N 74.3% 12.1% 8.1% 5.5% 73.1% 58.3% 15.4% 17.7% 8.6% 73.7% +16.0% Q 74.8% 11.3% 8.6% 5.2% 74.7% 74.8% 11.2% 9.3% 4.7% 75.7% +0.0% R 74.7% 11.8% 8.5% 5.0% 74.7% 63.3% 13.0% 15.0% 8.7% 74.0% +11.4% W 77.2% 11.0% 6.0% 5.8% 74.0% N/A Subdivision B 76.5% 11.3% 7.6% 4.6% 76.2% 69.4% 11.5% 11.5% 7.6% 74.7% +7.1% Systemwide 75.1% 10.7% 8.1% 6.0% 75.0% 72.8% 11.0% 10.0% 6.3% 74.7% +2.3%
+```
+### [p035_c0003] Weekday Wait Assessment Discussion
+- [p035_c0004] Wait Assessment for April 2021 increased by 2.3% compared to April 2020. The 42 St Shuttle, B, C, and W lines did not run in April 2020.
+[p035_c0005] _Chart 15_
+[p035_c0006] _Master Page # 35 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 36
+
+### [p036_c0001] Subway Weekend Wait Assessment (6 a.m. - midnight)
+[p036_c0002]
+
+```text
+Line Apr 21 Apr 20 Desired trend Monthly Monthly Gap 12 month Monthly Monthly Gap 12 month Monthly Meets Meets Meets Meets Standard Standard Minor Medium Major Standard Standard Minor Medium Major Standard Change 1 72.0% 12.3% 10.8% 4.9% 82.4% 54.6% 20.1% 16.8% 8.5% 88.4% +17.4% 2 66.2% 13.7% 13.4% 6.8% 72.2% 33.7% 14.3% 28.8% 23.2% 74.1% +32.5% 3 68.5% 12.2% 11.5% 7.7% 78.2% 52.2% 10.7% 16.2% 20.9% 84.1% +16.3% 4 68.3% 13.8% 10.6% 7.3% 72.7% 57.5% 13.5% 16.7% 12.3% 75.8% +10.8% 5 82.1% 9.8% 5.8% 2.3% 80.8% 54.2% 13.1% 14.7% 18.0% 82.7% +27.9% 6 71.4% 13.7% 10.2% 4.6% 77.2% 34.9% 25.2% 30.6% 9.3% 84.1% +36.5% 7 81.7% 10.9% 5.7% 1.8% 84.6% 34.5% 7.6% 12.6% 45.3% 83.6% +47.2% S 42nd 96.7% 1.7% 0.0% 1.6% 94.5% N/A Subdivision A 72.5% 12.3% 9.9% 5.4% 77.9% 45.6% 15.1% 20.3% 19.0% 80.9% +26.9% A 68.2% 12.6% 12.1% 7.1% 73.9% N/A C 69.7% 14.0% 12.0% 4.2% 77.2% N/A D 79.7% 9.8% 6.9% 3.6% 78.6% 46.7% 16.1% 22.5% 14.7% 79.4% +33.0% E 85.9% 9.7% 3.8% 0.6% 85.8% 47.5% 15.1% 28.0% 9.4% 84.8% +38.4% F 78.7% 12.1% 6.7% 2.5% 80.1% 49.1% 17.7% 22.0% 11.2% 79.1% +29.6% S Fkln 99.1% 0.7% 0.1% 0.1% 98.6% 99.3% 0.3% 0.2% 0.2% 98.0% -0.2% G 88.4% 8.5% 2.4% 0.6% 87.7% 61.3% 14.7% 14.8% 9.3% 83.6% +27.1% S Rock 93.9% 3.6% 2.0% 0.5% 96.4% 97.4% 1.5% 1.1% 0.0% 95.3% -3.5% J 83.1% 8.8% 5.8% 2.3% 85.1% 51.1% 16.1% 20.0% 12.7% 85.6% +32.0% L 81.8% 10.3% 5.3% 2.6% 81.6% 96.1% 2.8% 0.7% 0.5% 90.2% -14.3% M 93.9% 3.5% 1.4% 1.3% 93.1% 25.7% 9.2% 20.5% 44.6% 76.3% +68.2% N 73.0% 13.1% 9.6% 4.2% 77.3% 12.5% 18.0% 41.8% 27.7% 76.1% +60.5% Q 76.0% 12.8% 8.0% 3.2% 78.9% 53.0% 16.0% 20.6% 10.5% 79.6% +23.0% R 77.5% 12.5% 7.1% 3.0% 81.0% 54.3% 18.4% 19.1% 8.3% 79.9% +23.2% Subdivision B 78.8% 11.0% 7.1% 3.1% 80.9% 48.4% 14.9% 21.7% 15.1% 81.3% +30.4% Systemwide 76.0% 11.6% 8.3% 4.1% 79.6% 47.0% 15.0% 21.0% 17.0% 81.1% +29.0%
+```
+### [p036_c0003] Weekend Wait Assessment Discussion
+- [p036_c0004] Wait Assessment for April 2021 improved by 29% compared to April 2020 due to the severe disruptions caused by the pandemic in April 2020. The 42 St Shuttle and C lines did not run in April 2020.
+[p036_c0005] Note: B and W lines do not operate on weekends; S Rockaway Shuttle did not operate on weekends in March 2021 due to planned work.
+[p036_c0006] _Chart 16_
+[p036_c0007] _Master Page # 36 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 37
+
+### [p037_c0001] Subway Weekday Terminal On-Time Performance
+[p037_c0002] Monthly (24 hours)
+[p037_c0003] Desired trend
+[p037_c0004]
+
+```text
+Line Apr 21 Apr 20 Change 1 90.6% 95.6% -5.0% 2 87.5% 86.8% +0.7% 3 91.5% 91.9% -0.4% 4 87.1% 92.7% -5.6% 5 89.1% 90.5% -1.4% 6 89.9% 91.8% -1.9% 7 92.1% 83.1% +9.0% S 42nd 99.6% N/A N/A Subdivision A 91.3% 90.2% +1.1% A 83.2% 88.2% -5.0% B 86.6% N/A N/A C 91.0% N/A N/A D 86.3% 90.3% -4.0% E 90.6% 89.2% +1.4% F 89.1% 88.5% +0.6% S FkIn 99.9% 99.5% +0.4% G 91.9% 71.4% +20.5% S Rock 98.0% 98.9% -0.9% JZ 94.2% 77.4% +16.8% L 96.1% 96.0% +0.1% M 91.6% 80.9% +10.7% NW 88.0% 70.2% +17.8% Q 87.9% 86.5% +1.4% R 90.8% 84.5% +6.3% Subdivision B 90.8% 85.7% +5.1% Systemwide 91.0% 87.5% +3.5%
+```
+### [p037_c0005] Weekday Terminal On-Time Performance Discussion
+- [p037_c0006] • April weekday OTP improved by 3.5% compared to the prior year. • The 42 St Shuttle, B, C, and W lines did not run in April 2020.
+[p037_c0007] _Chart 17_
+[p037_c0008] _Master Page # 37 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 38
+
+### [p038_c0001] Subway Weekend Terminal On-Time Performance
+[p038_c0002] Monthly (24 hours)
+[p038_c0003] Desired trend
+[p038_c0004]
+
+```text
+Line Apr 21 Apr 20 Change 1 86.3% 87.7% -1.4% 2 54.8% 51.6% +3.2% 3 64.1% 69.3% -5.2% 4 84.3% 79.5% +4.8% 5 88.8% 83.7% +5.1% 6 85.9% 71.3% +14.6% 7 94.5% 64.5% +30.0% S 42nd 98.1% N/A N/A Subdivision A 84.1% 72.0% +12.1% A 80.8% N/A N/A C 81.5% N/A N/A D 93.6% 77.9% +15.7% E 93.5% 79.4% +14.1% F 89.5% 75.6% +13.9% S Fkln 99.6% 99.8% -0.2% G 91.5% 79.8% +11.7% S Rock 98.5% 99.5% -1.0% J 94.6% 75.1% +19.5% L 92.7% 98.8% -6.1% M 98.7% 57.7% +41.0% N 82.5% 51.5% +31.0% Q 88.4% 74.3% +14.1% R 91.4% 82.8% +8.6% Subdivision B 91.1% 77.5% +13.6% Systemwide 88.4% 75.2% +13.2%
+```
+### [p038_c0005] Weekend Terminal On-Time Performance Discussion
+- [p038_c0006] • April weekend OTP improved by 13.2% compared to the prior year. • The 42 St Shuttle and C lines did not run in April 2020.
+[p038_c0007] Note: B and W Lines do not operate on weekends.
+[p038_c0008] _Chart 18_
+[p038_c0009] _Master Page # 38 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 39
+
+### [p039_c0001] Subway Weekday Trains Delayed Monthly - April 2021 (24 hours)
+[p039_c0002]
+
+```text
+Delay Categories Trains Delayed Delayed Trains Per Day (22) % of Delayed Trains Track Failures and Emergency Remediation 960 44 6.1% Rail and Roadbed 760 35 4.9% Fire, Smoke, Debris 200 9 1.3% Signal Failures and Emergency Remediation 2,320 105 14.6% Subway Car 764 35 4.9% Door-Related 165 8 1.1% Propulsion 180 8 1.1% Braking 102 5 0.7% Other 317 14 1.9% Stations and Structure 253 12 1.7% Other Internal 3,822 174 24.2% Service Delivery (e.g. crew performance) 3,612 164 22.8% Train Brake Activation - cause unknown 128 6 0.8% Other Internal Disruptions (e.g. IT system failure) 82 4 0.6% External 3,454 157 21.8% Public Conduct, Crime, Police Response 1,662 76 10.6% Sick/Injured Customer 546 25 3.5% Persons on Roadbed (including persons struck by train) 793 36 5.0% External Debris on Roadbed (e.g., trees, shopping cart) 271 12 1.7% Inclement Weather 47 2 0.3% External Agency or Utility 135 6 0.8% Operating Environment 1,628 74 10.3% Planned Right-of-Way Work 2,631 120 16.7% Total Trains Delayed 15,832 720 100%
+```
+[p039_c0003] _Chart 19_
+[p039_c0004] _Master Page # 39 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 40
+
+### [p040_c0001] Subway Weekend Trains Delayed Monthly - April 2021 (24 hours)
+[p040_c0002]
+
+```text
+Delay Categories Trains Delayed Delayed Trains Per Day (8) % of Delayed Trains Track Failures and Emergency Remediation 202 25 4.0% Rail and Roadbed 128 16 2.5% Fire, Smoke, Debris 74 9 1.5% Signal Failures and Emergency Remediation 397 50 7.8% Subway Car 78 10 1.5% Door-Related 19 2 0.4% Propulsion 7 1 0.1% Braking 0 0 0.0% Other 52 7 1.0% Stations and Structure 20 3 0.4% Other Internal 1,489 186 29.4% Service Delivery (e.g. crew performance) 1,482 185 29.3% Train Brake Activation - cause unknown 5 1 0.1% Other Internal Disruptions (e.g. IT system failure) 2 0 0.0% External 764 96 15.1% Public Conduct, Crime, Police Response 344 43 6.8% Sick/Injured Customer 151 19 3.0% Persons on Roadbed (including persons struck by train) 154 19 3.0% External Debris on Roadbed (e.g., trees, shopping cart) 53 7 1.0% Inclement Weather 26 3 0.5% External Agency or Utility 36 5 0.7% Operating Environment 893 112 17.7% Planned Right-of-Way Work 1,216 152 24.0% Total Trains Delayed 5,059 632 100%
+```
+[p040_c0003] _Chart 20_
+[p040_c0004] _Master Page # 40 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 41
+
+### [p041_c0001] Customer Service Report: Buses
+[p041_c0002] Craig Cipriano , President, MTA Bus Company/ Senior Vice President, NYCT Department of Buses
+> [p041_c0003] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+> [p041_c0004] A photograph of a group of people standing outdoors in front of a white MTA bus. In the center, a man in a blue suit and glasses (Craig Cipriano) is speaking into a microphone. To his left is a woman in a black coat and face mask. To his right is a man in a grey suit and face mask, followed by a woman in a red jacket and face mask, a man in a grey sweatshirt and face mask, and a woman in a pink sweatshirt and face mask. The bus behind them has an American flag on its side. In the background, there are buildings, including one with a "FOR SALE" sign and another with "metro" and "AM" visible.
+[p041_c0005] MTA Bus President Craig Cipriano joined by Bronx Chamber of Commerce President Lisa Sorin and Executive Directors of the Westchester Square and Thropps Neck Business Improvement Districts, Yasmin Cruz and Bobby Jaena. The event, which took place on May 12th in Westchester Square in the Bronx, was to support local business and encourage New Yorkers to return to mass transit. Despite the challenges of the last 15 months, Bronxites' rates of bus ridership are among the highest anywhere in the City.
+[p041_c0006] _Master Page # 41 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 42
+
+### [p042_c0001] May 2021 Highlights: Buses
+[p042_c0002] Buses continue to see strong ridership. In fact, on May 6 th , we reached the highest single day ridership since front-door boarding resumed last summer, with approximately 1.26 million riders—over 53% of our pre-COVID ridership levels. As we are seeing more customers returning to our system, we are confident that buses will serve as a key catalyst to fuel the City's recovery from the challenges of the last 15 months.
+[p042_c0003] This month, I was excited to join Mayor de Blasio, Chairman Rodriguez and our partner at NYC DOT, Commissioner Gutman to celebrate the launch of the 181 st Street Busway, another great milestone for NYC bus customers as we strive to deliver faster and more efficient bus service. Just as the bus system has been a lifeline to essential workers and others throughout the pandemic, a high-performing bus system is one of the keys to New York's recovery. Busways have proven to be the ultimate way to speed up buses and reduce travel time, giving our customers the well-deserved priority they need. Since the launch of this busway we are already seeing preliminary speed increases of up to 34%.
+[p042_c0004] We are greatly encouraged by the City's deepening commitment to bus priority. On May 11 th , the City announced plans to nearly double last year's record bus project totals. The administration plans to install 28 miles of new and improved busways and bus lanes in 2021. These projects include completion of five busways, 11.5 miles of new bus lanes, 16.3 miles of improved lanes, as well as other bus priority enhancements such as new bus boarding islands, street redesign and transit signal priority. In fact, the Mayor's announcement more than doubles the number of busways, another great step forward for bus riders.
+[p042_c0005] Additionally, this month I was excited to partner with the New Bronx Chamber and the Westchester Square and Throgs Neck Business Improvement Districts in the Bronx to promote bus ridership in their neighborhoods. Many of our iconic local establishments are still reeling from the pandemic and now is the time to get New York moving again.
+[p042_c0006] While we are encouraged by increases in bus ridership, we are still far from pre-pandemic levels. Now is the time for customers to return to the system. Great things are happening at MTA Bus and we look forward to welcoming each one of you back. Take the bus!
+[p042_c0007] This month, we grieved the tragic passing of bus operator, Yvan Nelson, from LaGuardia Depot to COVID. We are deeply saddened at his loss and our thoughts are with his family during this difficult time. It is one more reminder to please stay vigilant and be safe!
+[p042_c0008] Craig Cipriano President, MTA Bus Company/ Senior Vice President, NYCT Department of Buses
+[p042_c0009] _Master Page # 42 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 43
+
+### [p043_c0001] Bus Report
+### [p043_c0002] Bus Report Performance Indicators
+[p043_c0003]
+
+```text
+Category Performance Indicator Current Month: April 2021 12-Month Average This Year Last Year Change This Year Last Year Change Customer Focused Metrics Service Delivered (Chart 1) 95.1% 90.7% +4.4% 95.2% 97.1% -1.9% Additional Bus Stop Time (h:mm:ss) (Chart 3)* 0:01:39 N/A N/A 0:01:40 N/A N/A Additional Travel Time (h:mm:ss) (Chart 5)* -0:00:26 N/A N/A -0:00:33 N/A N/A Customer Journey Time Performance (Chart 7)* 79.4% N/A N/A +79.8% N/A N/A Inputs To Operations Mean Distance Between Failures (Chart 9) 8,648 11,318 -23.6% 7,996 8,070 -0.9% Speed (MPH) (Chart 11) 8.2 9.2 -10.9% 8.4 8.0 +5.0% Legacy Indicators Wait Assessment (Chart 13) 79.3% 78.0% +1.3% 79.7% 78.0% +1.7% System MDBSI (Chart 16) 3,582 5,598 -36.0% 3,548 3,181 +11.5% NYCT Bus 3,583 5,363 -33.2% 3,420 3,023 +13.1% MTA Bus 3,579 6,430 -44.3% 4,014 3,815 +5.2% System Trips Completed (Chart 17)* 95.6% N/A N/A 97.1% 99.2% -2.1% NYCT Bus 95.5% N/A N/A 97.2% 99.3% -2.1% MTA Bus 95.8% N/A N/A 96.5% 99.1% -2.6% System AM Pull Out (Chart 18)* 95.9% N/A N/A 97.2% 99.7% -2.5% NYCT Bus 96.0% N/A N/A 97.4% 99.8% -2.4% MTA Bus 95.6% N/A N/A 96.6% 99.5% -2.9% System PM Pull Out (Chart 19)* 96.9% N/A N/A 97.9% 99.8% -1.9% NYCT Bus 97.0% N/A N/A 98.1% 99.9% -1.8% MTA Bus 96.4% N/A N/A 97.2% 99.6% -2.4% System Buses>=12 years 20.0% 18.8% NYCT Bus 9.0% 6.8% MTA Bus 59.0% 61.0% System Fleet Age 8.1 7.4 NYCT Bus 7.0 6.3 MTA Bus 11.6 11.2
+```
+[p043_c0004] System refers to the combined results of NYCT Bus and MTA Bus. Change values for time- and percentage-based metrics are calculated as absolute values. All other change values are calculated as percentage changes.
+[p043_c0005] *NOTE: Due to severe disruptions in bus ridership and service associated with the COVID-19 pandemic, this report includes the following adjustments: - 12-month averages for Trips Completed, AM Pull Out, and PM Pull Out metrics exclude April and May 2020 - April 2020 ABST, ATT, CJTP, Trips Completed, AM Pull Out, and PM Pull Out metrics are not available - April 2020 Service Delivered and Wait Assessment are based on April 13 - April 30 - April 2020 Service Delivered, Wait Assessment, and Speed does not include express bus
+[p043_c0006] Note: The metrics in this report are preliminary
+[p043_c0007] _Master Page # 43 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 44
+
+### [p044_c0001] Section 1: Customer Focused Metrics
+[p044_c0002] The metrics in this section measure bus performance as it affects our passengers. By focusing on how closely actual service matches schedules and how much longer passengers must wait and ride compared to schedules, these measures collectively reflect customer experience.
+### [p044_c0003] Performance Indicator Definitions
+### [p044_c0004] Service Delivered
+[p044_c0005] Service Delivered (sometimes referred to as throughput) measures our ability to deliver the scheduled service. It is calculated as the percentage of scheduled bus trips that are actually provided during peak hours (7-9am and 4-7pm on weekdays). Service Delivered is measured at the peak load point, which is the stop on the route where the bus is most crowded, using GPS tracking data from buses as well as bus depot operations records.
+### [p044_c0006] Additional Bus Stop Time (ABST)
+[p044_c0007] Additional Bus Stop Time (ABST) is the estimated average extra time that customers wait at a stop for a bus, compared with their scheduled wait time. The measure assumes customers arrive at the bus stop at a uniform rate, except for routes with longer headways, where customers arrive more closely aligned to the schedule. ABST (sometimes referred to as Excess Wait Time) is a new indicator for the MTA, and is considered an industry best practice worldwide. ABST is estimated using customers' MetroCard swipes and OMNY taps on buses combined with GPS tracking data from Bus Time. This indicator is likely to be refined and enhanced over time as the MTA gains experience integrating the latest technology. ABST is reported for trips starting between 4am to 11pm on weekdays.
+### [p044_c0008] Additional Travel Time (ATT)
+[p044_c0009] Additional Travel Time (ATT) is the estimated average extra time customers are onboard the bus compared to their scheduled onboard time. ATT (sometimes referred to as Excess In-Vehicle Travel Time) is a new indicator for the MTA, and is considered an industry best practice worldwide. ATT is estimated using customers' MetroCard swipes and OMNY taps on buses combined with GPS tracking data from Bus Time. This indicator is likely to be refined and enhanced over time as the MTA gains experience integrating the latest technology. ATT is reported for trips starting between 4am to 11pm on weekdays.
+### [p044_c0010] Customer Journey Time Performance (CJTP)
+[p044_c0011] Customer Journey Time Performance (CJTP) estimates the percentage of customers who complete their journey (ABST + ATT) within 5 minutes of the scheduled time. This is a new indicator for the MTA, but is used by other transit agencies to measure service. CJTP is measured using customers' MetroCard swipes and OMNY taps on buses combined with GPS tracking data from Bus Time. This indicator is likely to be refined and enhanced over time as the MTA gains experience integrating the latest technology. CJTP is reported for trips starting between 4am to 11pm on weekdays.
+[p044_c0012] _Note: The metrics in this report are preliminary_
+[p044_c0013] _Master Page # 44 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 45
+
+### [p045_c0001] Service Delivered (Peak Hours)
+[p045_c0002] Desired trend
+> [p045_c0003] Service Delivered (Peak Hours) Data Month Monthly (%) 12-Month Average (%) Apr-20 90.7% 96.8% May-20 96.8% 96.8% Jun-20 94.2% 96.8% Jul-20 96.8% 96.8% Aug-20 95.1% 96.8% Sep-20 96.8% 96.8% Oct-20 96.2% 96.8% Nov-20 96.2% 96.8% Dec-20 94.2% 96.8% Jan-21 96.8% 96.8% Feb-21 90.7% 96.2% Mar-21 95.1% 95.1% Apr-21 95.1% 95.1%
+[p045_c0004]
+
+```text
+Monthly 12-Month Average Apr 21 Apr 20 Change (Pts) Apr 21 Apr 20 Change (Pts) Bronx 96.8% 99.0% -2.2% 96.5% 97.4% -0.9% Brooklyn 95.1% 95.7% -0.6% 95.3% 97.6% -2.3% Manhattan 97.7% 97.4% +0.3% 96.8% 97.7% -0.9% Queens 94.2% 80.7% +13.5% 94.4% 96.4% -2.0% Staten Island 92.2% 94.2% -2.0% 93.6% 97.3% -3.7% Systemwide 95.1% 90.7% +4.4% 95.2% 97.1% -1.9%
+```
+### [p045_c0005] Service Delivered Discussion
+- [p045_c0006] • Service Delivered in April 2021 increased by 4.4 percentage points to 95.1 percent compared to April 2020, and decreased by 1.9 percentage points to 95.2 percent on a 12-month average basis. • Due to data processing issues related to the COVID-19 outbreak, April 2020 is based on data from April 13 through April 30, and excluding express buses.
+[p045_c0007] Note: The metrics in this report are preliminary
+[p045_c0008] _Master Page # 45 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 46
+
+### [p046_c0001] Service Delivered Monthly (Peak Hours)
+[p046_c0002] Desired trend
+[p046_c0003]
+
+```text
+Borough Apr 21 Apr 20 Change (Pts) Bronx 96.8% 99.0% -2.2% Local/Limited 96.5% 99.1% -2.6% Select Bus Service 96.9% 97.7% -0.8% Express 98.5% N/A N/A Brooklyn 95.1% 95.7% -0.6% Local/Limited 94.8% 95.5% -0.7% Select Bus Service 94.3% 99.2% -4.9% Express 98.2% N/A N/A Manhattan 97.7% 97.4% +0.3% Local/Limited 97.5% 95.8% +1.7% Select Bus Service 98.1% 101.1% -3.0% Express N/A N/A N/A Queens 94.2% 80.7% +13.5% Local/Limited 94.1% 80.4% +13.7% Select Bus Service 94.1% 85.8% +8.3% Express 95.2% N/A N/A Staten Island 92.2% 94.2% -2.0% Local/Limited 93.3% 93.7% -0.4% Select Bus Service 90.4% 97.1% -6.7% Express 91.2% N/A N/A Systemwide 95.1% 90.7% +4.4% Local/Limited 95.0% 90.0% +5.0% Select Bus Service 96.3% 96.7% -0.4% Express 94.6% N/A N/A
+```
+[p046_c0004] Note: The metrics in this report are preliminary
+[p046_c0005] _Master Page # 46 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 47
+
+### [p047_c0001] Additional Bus Stop Time
+[p047_c0002] (4 a.m. - 11 p.m.)
+[p047_c0003] (h:mm:ss)
+[p047_c0004] Desired trend
+> [p047_c0005] Additional Bus Stop Time Data (Estimated) Month Monthly (h:mm:ss) 12-Month Average (h:mm:ss) Sep-20 0:01:30 0:01:40 Oct-20 0:01:28 0:01:35 Nov-20 0:01:28 0:01:32 Dec-20 0:01:47 0:01:30 Jan-21 0:01:15 0:01:30 Feb-21 0:02:16 0:01:35 Mar-21 0:01:32 0:01:38 Apr-21 0:01:39 0:01:38
+[p047_c0006]
+
+```text
+Monthly 12-Month Average Apr 21 Apr 20 Change Apr 21 Apr 20 Change Bronx 0:01:38 N/A N/A 0:01:35 N/A N/A Brooklyn 0:01:53 N/A N/A 0:01:57 N/A N/A Manhattan 0:01:13 N/A N/A 0:01:13 N/A N/A Queens 0:01:34 N/A N/A 0:01:36 N/A N/A Staten Island 0:02:23 N/A N/A 0:02:16 N/A N/A Systemwide 0:01:39 N/A N/A 0:01:40 N/A N/A
+```
+### [p047_c0007] Additional Bus Stop Time Discussion
+- [p047_c0008] Note that due to severe disruptions in ridership due to the Covid-19 pandemic, ABST was not available from April - August 2020.
+[p047_c0009] Note: The metrics in this report are preliminary
+[p047_c0010] _Master Page # 47 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 48
+
+### [p048_c0001] Additional Bus Stop Time
+[p048_c0002] (4 a.m. - 11 p.m.)
+[p048_c0003] (h:mm:ss)
+[p048_c0004] Desired trend
+[p048_c0005]
+
+```text
+Borough Apr 21 Apr 20 Change Bronx 0:01:38 N/A N/A Local/Limited 0:01:38 N/A N/A Select Bus Service 0:01:23 N/A N/A Express 0:02:37 N/A N/A Brooklyn 0:01:53 N/A N/A Local/Limited 0:01:55 N/A N/A Select Bus Service 0:01:29 N/A N/A Express 0:02:55 N/A N/A Manhattan 0:01:13 N/A N/A Local/Limited 0:01:20 N/A N/A Select Bus Service 0:00:56 N/A N/A Express N/A N/A N/A Queens 0:01:34 N/A N/A Local/Limited 0:01:34 N/A N/A Select Bus Service 0:01:24 N/A N/A Express 0:02:34 N/A N/A Staten Island 0:02:23 N/A N/A Local/Limited 0:02:36 N/A N/A Select Bus Service 0:01:31 N/A N/A Express 0:01:53 N/A N/A Systemwide 0:01:39 N/A N/A Local/Limited 0:01:42 N/A N/A Select Bus Service 0:01:13 N/A N/A Express 0:02:20 N/A N/A
+```
+[p048_c0006] Note: The metrics in this report are preliminary
+[p048_c0007] _Master Page # 48 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 49
+
+### [p049_c0001] Additional Travel Time
+[p049_c0002] (4 a.m. - 11 p.m.)
+[p049_c0003] (h:mm:ss)
+[p049_c0004] Desired trend
+> [p049_c0005] Additional Travel Time Data (Estimated) Month Monthly (h:mm:ss) 12-Month Average (h:mm:ss) Sep-20 -0:00:26 0:00:35 Oct-20 -0:00:30 0:00:20 Nov-20 -0:00:35 0:00:05 Dec-20 -0:00:25 -0:00:10 Jan-21 -0:00:55 -0:00:20 Feb-21 -0:00:25 -0:00:30 Mar-21 -0:00:35 -0:00:35 Apr-21 -0:00:26 -0:00:33
+[p049_c0006]
+
+```text
+Monthly 12-Month Average Apr 21 Apr 20 Change Apr 21 Apr 20 Change Bronx 0:00:01 N/A N/A -0:00:11 N/A N/A Brooklyn -0:00:21 N/A N/A -0:00:26 N/A N/A Manhattan -0:00:42 N/A N/A -0:00:47 N/A N/A Queens -0:00:31 N/A N/A -0:00:37 N/A N/A Staten Island -0:01:55 N/A N/A -0:02:05 N/A N/A Systemwide -0:00:26 N/A N/A -0:00:33 N/A N/A
+```
+### [p049_c0007] Additional Travel Time Discussion
+- [p049_c0008] Note that due to severe disruptions in ridership due to the Covid-19 pandemic, ATT was not available from April - August 2020.
+[p049_c0009] Note: The metrics in this report are preliminary
+[p049_c0010] _Master Page # 49 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 50
+
+### [p050_c0001] Additional Travel Time Monthly (4 a.m. - 11 p.m.) (h:mm:ss)
+[p050_c0002] Desired trend
+[p050_c0003]
+
+```text
+Borough Apr 21 Apr 20 Change Bronx 0:00:01 N/A N/A Local/Limited -0:00:05 N/A N/A Select Bus Service 0:00:37 N/A N/A Express 0:01:59 N/A N/A Brooklyn -0:00:21 N/A N/A Local/Limited -0:00:21 N/A N/A Select Bus Service 0:00:03 N/A N/A Express -0:03:21 N/A N/A Manhattan -0:00:42 N/A N/A Local/Limited -0:00:40 N/A N/A Select Bus Service -0:00:46 N/A N/A Express N/A N/A N/A Queens -0:00:31 N/A N/A Local/Limited -0:00:31 N/A N/A Select Bus Service -0:00:21 N/A N/A Express -0:01:42 N/A N/A Staten Island -0:01:55 N/A N/A Local/Limited -0:01:02 N/A N/A Select Bus Service -0:01:11 N/A N/A Express -0:06:36 N/A N/A Systemwide -0:00:26 N/A N/A Local/Limited -0:00:24 N/A N/A Select Bus Service -0:00:18 N/A N/A Express -0:03:05 N/A N/A
+```
+[p050_c0004] Note: The metrics in this report are preliminary
+[p050_c0005] _Master Page # 50 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 51
+
+### [p051_c0001] Customer Journey Time Performance
+[p051_c0002] (4 a.m. - 11 p.m.)
+[p051_c0003] Desired trend
+> [p051_c0004] Customer Journey Time Performance Data Month Monthly (%) 12-Month Average (%) Sep-20 79.4 73.5 Oct-20 80.5 74.5 Nov-20 80.8 75.5 Dec-20 77.8 77.0 Jan-21 84.3 78.0 Feb-21 75.5 78.5 Mar-21 80.5 79.0 Apr-21 79.4 79.4
+[p051_c0005]
+
+```text
+Monthly 12-Month Average Apr 21 Apr 20 Change (Pts) Apr 21 Apr 20 Change (Pts) Bronx 77.3% N/A N/A 78.5% N/A N/A Brooklyn 76.6% N/A N/A 76.4% N/A N/A Manhattan 84.0% N/A N/A 84.3% N/A N/A Queens 81.2% N/A N/A 81.5% N/A N/A Staten Island 80.5% N/A N/A 81.6% N/A N/A Systemwide 79.4% N/A N/A 79.8% N/A N/A
+```
+### [p051_c0006] Customer Journey Time Performance Discussion
+- [p051_c0007] • Note that due to severe disruptions in ridership due to the Covid-19 pandemic, CJTP was not available from April - August 2020.
+[p051_c0008] Note: The metrics in this report are preliminary
+[p051_c0009] _Master Page # 51 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 52
+
+### [p052_c0001] Customer Journey Time Performance Monthly
+[p052_c0002] Desired trend
+[p052_c0003]
+
+```text
+Borough Apr 21 Apr 20 Change (Pts) Bronx 77.3% N/A N/A Local/Limited 77.9% N/A N/A Select Bus Service 73.8% N/A N/A Express 59.6% N/A N/A Brooklyn 76.6% N/A N/A Local/Limited 76.6% N/A N/A Select Bus Service 77.1% N/A N/A Express 75.9% N/A N/A Manhattan 84.0% N/A N/A Local/Limited 82.4% N/A N/A Select Bus Service 88.2% N/A N/A Express N/A N/A N/A Queens 81.2% N/A N/A Local/Limited 81.7% N/A N/A Select Bus Service 75.8% N/A N/A Express 70.9% N/A N/A Staten Island 80.5% N/A N/A Local/Limited 79.9% N/A N/A Select Bus Service 80.1% N/A N/A Express 83.8% N/A N/A Systemwide 79.4% N/A N/A Local/Limited 79.3% N/A N/A Select Bus Service 81.1% N/A N/A Express 74.2% N/A N/A
+```
+[p052_c0004] Note: The metrics in this report are preliminary
+[p052_c0005] _Master Page # 52 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 53
+
+### [p053_c0001] Section 2: Inputs to Operations
+[p053_c0002] The metrics in this section address how NYCT provides service to its customers by measuring the reliability of bus performance and the impact of bus speed on operations.
+### [p053_c0003] Performance Indicator Definitions
+### [p053_c0004] Mean Distance Between Failures (MDBF)
+[p053_c0005] Mean Distance Between Failures (MDBF) reports how frequently mechanical problems such as engine failures or electrical malfunctions cause delays. It is calculated by dividing the number of miles buses run in service by the number of incidents due to mechanical problems.
+[p053_c0006] MDBF numbers include weekdays and weekends. This borough and trip-type combinations (Chart 10) are reported as a 12-month average.
+### [p053_c0007] Bus Speeds
+[p053_c0008] Bus speeds measure how quickly buses travel along their routes. The average end-to-end speed is the total distance traveled along a route divided by the total time, using bus GPS data.
+[p053_c0009] _Note: The metrics in this report are preliminary_
+[p053_c0010] _Master Page # 53 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 54
+
+### [p054_c0001] Mean Distance Between Failures
+[p054_c0002] (24 Hours)
+[p054_c0003] Miles
+[p054_c0004] Desired trend
+> [p054_c0005] Mean Distance Between Failures Data Month Monthly (Miles) 12-Month Average (Miles) Apr-20 11,318 ~8,000 May-20 ~9,000 ~8,000 Jun-20 ~7,200 ~8,000 Jul-20 ~6,200 ~8,000 Aug-20 ~6,800 ~8,000 Sep-20 ~8,200 ~8,000 Oct-20 ~9,000 ~8,000 Nov-20 ~8,800 ~8,000 Dec-20 ~8,500 ~8,000 Jan-21 ~8,800 ~8,000 Feb-21 ~8,000 ~8,000 Mar-21 ~8,600 ~8,000 Apr-21 8,648 ~8,000
+[p054_c0006]
+
+```text
+Monthly 12-Month Average Apr 21 Apr 20 % Change Apr 21 Apr 20 % Change Bronx 6,448 10,089 -36.1% 5,763 6,295 -8.4% Brooklyn 9,702 11,695 -17.0% 8,629 8,873 -2.8% Manhattan 5,504 7,689 -28.4% 5,077 4,939 +2.8% Queens 8,059 10,435 -22.8% 7,922 7,619 +4.0% Staten Island 26,312 37,615 -30.0% 24,699 21,844 +13.1% Systemwide 8,648 11,318 -23.6% 7,996 8,070 -0.9%
+```
+### [p054_c0007] Mean Distance Between Failures Discussion
+- [p054_c0008] Mean Distance Between Failures in April 2021 decreased by 23.6 percent to 8,648 miles compared to April 2020, and decreased by 0.9 percent to 7,996 miles on a 12-month average basis.
+[p054_c0009] Note: The metrics in this report are preliminary
+[p054_c0010] _Master Page # 54 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 55
+
+### [p055_c0001] Mean Distance Between Failures 12 Month Rolling Average (24 Hours) Miles
+[p055_c0002] Desired trend
+[p055_c0003]
+
+```text
+Borough Apr 21 Apr 20 % Change Bronx 5,763 6,295 -8.4% Local/Limited 5,015 5,471 -8.3% Select Bus Service 7,534 11,057 -31.9% Express 10,089 10,052 +0.4% Brooklyn 8,629 8,873 -2.8% Local/Limited 8,411 8,728 -3.6% Select Bus Service 10,635 11,292 -5.8% Express 10,702 8,669 +23.4% Manhattan 5,077 4,939 +2.8% Local/Limited 4,523 4,232 +6.9% Select Bus Service 8,019 9,509 -15.7% Express N/A N/A N/A Queens 7,922 7,619 +4.0% Local/Limited 7,570 7,562 +0.1% Select Bus Service 7,940 7,803 +1.8% Express 10,059 7,808 +28.8% Staten Island 24,699 21,844 +13.1% Local/Limited 26,494 23,398 +13.2% Select Bus Service 14,352 26,483 -45.8% Express 25,036 20,481 +22.2% Systemwide 7,996 8,070 -0.9% Local/Limited 7,130 7,300 -2.3% Select Bus Service 8,696 9,823 -11.5% Express 13,979 11,899 +17.5%
+```
+[p055_c0004] Note: The metrics in this report are preliminary
+[p055_c0005] _Master Page # 55 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 56
+
+### [p056_c0001] Bus Speeds (24 Hours) (MPH)
+[p056_c0002] Desired trend
+> [p056_c0003] Bus Speed Data (MPH) Month Monthly Speed (MPH) 12-Month Average (MPH) Apr-20 9.2 8.0 May-20 9.2 8.1 Jun-20 8.6 8.2 Jul-20 8.3 8.2 Aug-20 8.3 8.2 Sep-20 8.3 8.2 Oct-20 8.3 8.2 Nov-20 8.3 8.2 Dec-20 8.3 8.2 Jan-21 8.4 8.3 Feb-21 8.3 8.3 Mar-21 8.3 8.3 Apr-21 8.2 8.4
+[p056_c0004]
+
+```text
+Monthly 12-Month Average Apr 21 Apr 20 % Change Apr 21 Apr 20 % Change Bronx 7.60 8.10 -6.2% 7.7 7.5 +2.7% Brooklyn 7.50 8.60 -12.8% 7.6 7.2 +5.6% Manhattan 6.30 7.70 -18.2% 6.5 6.0 +8.3% Queens 9.30 10.60 -12.3% 9.5 8.9 +6.7% Staten Island 14.40 14.20 +1.4% 14.3 13.7 +4.4% Systemwide 8.2 9.2 -10.9% 8.4 8.0 +5.0%
+```
+### [p056_c0005] Speed Discussion
+- [p056_c0006] Bus Speeds in April 2021 decreased by 10.9 percent to 8.2 mph compared to April 2020, and increased by 5.0 percent to 8.4 mph on a 12-month average basis.
+[p056_c0007] Note: The metrics in this report are preliminary
+[p056_c0008] _Master Page # 56 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 57
+
+### [p057_c0001] Bus Speeds Monthly (24 Hours) MPH
+[p057_c0002] Desired trend
+[p057_c0003]
+
+```text
+Borough Apr 21 Apr 20 % Change Bronx 7.6 8.1 -6.2% Local/Limited 7.0 7.9 -11.4% Select Bus Service 8.9 10.3 -13.6% Express 12.1 N/A N/A Brooklyn 7.5 8.6 -12.8% Local/Limited 7.2 8.6 -16.3% Select Bus Service 8.7 10.4 -16.3% Express 13.9 N/A N/A Manhattan 6.3 7.7 -18.2% Local/Limited 6.0 7.4 -18.9% Select Bus Service 7.4 8.7 -14.9% Express N/A N/A N/A Queens 9.3 10.6 -12.3% Local/Limited 9.1 10.4 -12.5% Select Bus Service 11.6 12.8 -9.4% Express 14.2 N/A N/A Staten Island 14.4 14.2 +1.4% Local/Limited 12.5 13.7 -8.8% Select Bus Service 15.2 16.9 -10.1% Express 18.4 N/A N/A Systemwide 8.2 9.2 -10.9% Local/Limited 7.8 9.0 -13.3% Select Bus Service 9.2 10.8 -14.8% Express 14.6 N/A N/A
+```
+[p057_c0004] Note: The metrics in this report are preliminary
+[p057_c0005] _Master Page # 57 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 58
+
+### [p058_c0001] Section 3: Legacy Indicators
+[p058_c0002] The metrics in this section have been shared with the public for many years. While less reflective of the customer experience, they are included here for continuity purposes.
+### [p058_c0003] Performance Indicator Definitions
+### [p058_c0004] Wait Assessment
+[p058_c0005] Wait Assessment (WA) measures how evenly buses are spaced at selected timepoints along each route. It is defined as the percentage of actual intervals between buses that are no more than three minutes over the scheduled interval for the morning (7-9am) and afternoon (4-7pm) peak periods and no more than five minutes over the scheduled interval for the rest of the day. This measure provides a percentage of buses passing the standard, but it does not account for extra service operated, it is not weighted to how many customers are waiting for buses at different stops, it does not distinguish between relatively minor gaps in service and major delays, and it is not a true measurement of time customers spend waiting at stops.
+### [p058_c0006] Bus Mean Distance Between Service Interruptions
+[p058_c0007] Bus Mean Distance Between Service Interruptions is the average distance traveled by a bus between all delays and/or inconveniences to customers within a 12-month period. All road calls caused by both mechanical and non-mechanical failures are included.
+### [p058_c0008] Bus Percentage of Completed Trips
+[p058_c0009] Bus Percentage of Completed Trips is the percent of trips completed system wide for the 12-month period. The systemwide metric is the combined results of NYCT Bus and MTA Bus.
+### [p058_c0010] Bus AM Weekday Pull Out Performance
+[p058_c0011] Bus AM Weekday Pull Out Performance is the percent of required buses and operators available in the AM peak period. The systemwide metric is the combined results of NYCT Bus and MTA Bus.
+### [p058_c0012] Bus PM Weekday Pull Out Performance
+[p058_c0013] Bus PM Weekday Pull Out Performance is the percent of required buses and operators available in the PM peak period. The systemwide metric is the combined results of NYCT Bus and MTA Bus.
+[p058_c0014] _Note: The metrics in this report are preliminary_
+[p058_c0015] _Master Page # 58 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 59
+
+### [p059_c0001] Wait Assessment
+[p059_c0002] Desired trend
+> [p059_c0003] Wait Assessment Data (Estimated from Chart) Month Monthly (%) 12-Month Average (%) Apr-20 78.0% 78.0% May-20 81.0% 78.0% Jun-20 78.0% 78.0% Jul-20 81.5% 78.0% Aug-20 79.0% 78.0% Sep-20 80.5% 78.0% Oct-20 80.5% 78.0% Nov-20 81.0% 78.0% Dec-20 77.0% 78.0% Jan-21 83.5% 78.0% Feb-21 73.0% 78.0% Mar-21 79.5% 78.0% Apr-21 79.3% 78.0%
+[p059_c0004]
+
+```text
+Monthly 12-Month Average Apr 21 Apr 20 Change (Pts) Apr 21 Apr 20 Change (Pts) Bronx 78.0% 84.1% -6.1% 79.6% 76.7% +2.9% Brooklyn 75.9% 77.1% -1.2% 75.8% 76.4% -0.6% Manhattan 83.0% 82.0% +1.0% 81.3% 78.2% +3.1% Queens 81.4% 72.2% +9.2% 81.8% 79.2% +2.6% Staten Island 78.8% 81.5% -2.7% 80.9% 81.2% -0.3% Systemwide 79.3% 78.0% +1.3% 79.7% 78.0% +1.7%
+```
+- [p059_c0005] Due to data processing issues related to the COVID-19 outbreak, April 2020 is based on data from April 13 through April 30, and excluding express buses.
+[p059_c0006] Note: The metrics in this report are preliminary
+[p059_c0007] _Master Page # 59 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 60
+
+### [p060_c0001] Wait Assessment Monthly
+[p060_c0002] Desired trend
+[p060_c0003]
+
+```text
+Borough Apr 21 Apr 20 Change (Pts) Bronx 78.0% 84.1% -6.1% Local/Limited 77.7% 84.1% -6.4% Select Bus Service 75.8% 86.3% -10.5% Express 85.5% N/A N/A Brooklyn 75.9% 77.1% -1.2% Local/Limited 75.7% 77.0% -1.3% Select Bus Service 78.4% 79.7% -1.3% Express 79.2% N/A N/A Manhattan 83.0% 82.0% +1.0% Local/Limited 82.6% 81.4% +1.2% Select Bus Service 86.0% 86.9% -0.9% Express N/A N/A N/A Queens 81.4% 72.2% +9.2% Local/Limited 81.4% 72.2% +9.2% Select Bus Service 79.2% 72.3% +6.9% Express 82.4% N/A N/A Staten Island 78.8% 81.5% -2.7% Local/Limited 78.6% 80.9% -2.3% Select Bus Service 78.1% 89.1% -11.0% Express 79.8% N/A N/A Systemwide 79.3% 78.0% +1.3% Local/Limited 79.1% 77.8% +1.3% Select Bus Service 81.8% 82.5% -0.7% Express 81.7% N/A N/A
+```
+[p060_c0004] Note: The metrics in this report are preliminary
+[p060_c0005] _Master Page # 60 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 61
+
+### [p061_c0001] Bus Mean Distance Between Service Interruptions
+[p061_c0002] Desired trend
+> [p061_c0003] Month Monthly (Miles) 12-Month Average (Miles) Apr-20 5,598 3,200 May-20 4,700 3,300 Jun-20 4,000 3,400 Jul-20 3,600 3,500 Aug-20 3,600 3,500 Sep-20 3,200 3,500 Oct-20 3,400 3,500 Nov-20 3,400 3,500 Dec-20 3,300 3,500 Jan-21 3,500 3,500 Feb-21 3,200 3,500 Mar-21 3,600 3,500 Apr-21 3,582 3,500
+[p061_c0004] _Chart 15_
+[p061_c0005]
+
+```text
+Systemwide Monthly 12-Month Average Apr 21 Apr 20 % Change Apr 21 Apr 20 % Change 3,582 5,598 -36.0% 3,548 3,181 +11.5%
+```
+### [p061_c0006] Bus Percentage of Completed Trips
+[p061_c0007] Desired trend
+> [p061_c0008] Month Monthly (%) 12-Month Average (%) Apr-20 99.2 98.5 May-20 98.2 98.5 Jun-20 97.8 98.5 Jul-20 97.0 98.5 Aug-20 97.0 98.5 Sep-20 97.0 98.5 Oct-20 97.0 98.5 Nov-20 97.0 98.5 Dec-20 96.8 98.5 Jan-21 98.0 98.5 Feb-21 95.8 98.5 Mar-21 96.2 98.5 Apr-21 95.6 98.5
+[p061_c0009] _Chart 16_
+[p061_c0010]
+
+```text
+Systemwide Monthly 12-Month Average Apr 21 Apr 20 Change (Pts) Apr 21 Apr 20 Change (Pts) 95.6% N/A N/A 97.1% 99.2% -2.1%
+```
+- [p061_c0011] • Due to data processing issues related to the COVID-19 outbreak, April and May 2020 Completed Trips are not available.
+[p061_c0012] Note: The metrics in this report are preliminary
+[p061_c0013] _Master Page # 61 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 62
+
+### [p062_c0001] Bus AM Weekday Pull Out Performance
+[p062_c0002] Desired trend
+> [p062_c0003] Bus AM Weekday Pull Out Performance Data Month Monthly (%) 12-Month Average (%) Apr-20 N/A N/A May-20 N/A N/A Jun-20 98.0 99.5 Jul-20 98.0 99.2 Aug-20 97.0 98.8 Sep-20 98.0 98.5 Oct-20 97.5 98.2 Nov-20 97.5 97.9 Dec-20 96.2 97.6 Jan-21 98.0 97.3 Feb-21 95.5 97.0 Mar-21 96.0 96.7 Apr-21 95.9 96.4
+[p062_c0004] _Chart 17_
+[p062_c0005]
+
+```text
+Systemwide Monthly 12-Month Average Apr 21 Apr 20 Change (Pts) Apr 21 Apr 20 Change (Pts) 95.9% N/A N/A 97.2% 99.7% -2.5%
+```
+### [p062_c0006] Bus PM Weekday Pull Out Performance
+[p062_c0007] Desired trend
+> [p062_c0008] Bus PM Weekday Pull Out Performance Data Month Monthly (%) 12-Month Average (%) Apr-20 N/A N/A May-20 N/A N/A Jun-20 98.7 99.7 Jul-20 98.2 99.4 Aug-20 97.4 99.1 Sep-20 98.2 98.8 Oct-20 98.3 98.5 Nov-20 98.3 98.2 Dec-20 97.2 97.9 Jan-21 98.5 97.6 Feb-21 97.1 97.3 Mar-21 97.2 97.0 Apr-21 96.9 96.7
+[p062_c0009] _Chart 18_
+[p062_c0010]
+
+```text
+Systemwide Monthly 12-Month Average Apr 21 Apr 20 Change (Pts) Apr 21 Apr 20 Change (Pts) 96.9% N/A N/A 97.9% 99.8% -1.9%
+```
+- [p062_c0011] • Due to data processing issues related to the COVID-19 outbreak, April and May 2020 AM and PM Pull Out Performance are not available.
+[p062_c0012] Note: The metrics in this report are preliminary
+[p062_c0013] _Master Page # 62 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 63
+
+### [p063_c0001] Customer Service Report: Paratransit
+[p063_c0002] Craig Cipriano , President, MTA Bus Company/ Senior Vice President, NYCT Department of Buses
+> [p063_c0003] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+> [p063_c0004] A collage of eight photographs arranged in a 2x4 grid. Each photo shows a different Paratransit Access-A-Ride (AAR) vendor employee flexing their bicep in front of a large poster. The posters feature the hashtag "#TEAMVACCINE" at the top and the phrase "I GOT THE SHOT" in the center, with a graphic of a flexed bicep. The employees are wearing face masks and some have bandages on their arms. From left to right, the employees are: Bouraima Savane, Kevin Marajh, Carlos Reyes, Kathleen Kendrick, Ray Mendoza, He Lee, Edward Valentino, and Eric Bonaventure.
+[p063_c0005] Hundreds of Paratransit Access-A-Ride (AAR) vendor employees, including AAR drivers and Call Center agents, have rolled up their sleeves and gotten vaccinated at the Jacob Javits Center as part of the MTA's ongoing effort to get as many workers vaccinated as possible. If we're going to get back to normal everyone needs to get their shots. Pictured from left to right are: Bouraima Savane, Kevin Marajh, Carlos Reyes, Kathleen Kendrick, Ray Mendoza, He Lee, Edward Valentino, Eric Bonaventure, and Robert Williams.
+[p063_c0006] _Master Page # 63 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 64
+
+### [p064_c0001] May 2021 Highlights: Paratransit
+[p064_c0002] Paratransit ridership continues to recover at a faster pace than all other MTA agencies with weekday ridership reaching a high of 80% of pre-pandemic levels. The 2021 Q1 customer travel survey indicated that drivers operating vehicles safely is the most important attribute for Paratransit customers and 83% of our customers are satisfied with our performance. Drivers wearing masks is also to customers and the attribute with the greatest satisfaction rate (90%). We are also happy to announce that Access-A-Ride's (AAR) On The Move newsletter for our customers (found at: https://new.mta.info/document/37161 ) has now moved from a bi-annual to a quarterly publication in response to a request from the community for more frequent communication during the pandemic.
+[p064_c0003] This month, NYCT is seeking Board approval to award four, 3-year estimated quantity service contracts for the provision of Broker Car Service for Paratransit customers. The contracts have an aggregate estimated amount of $655 million, and we are recommending approval for the following vendors: Arro, Corporate Transportation Group, Sentry, and Greenpoint Transit. Importantly, this procurement is a re-solicitation of four contracts awarded in October 2020, which were terminated in December 2020 to further support NYS efforts to maximize opportunities for MWBEs and SDVOBs. As a result of these new contracts, we are anticipating an award in the amount of $162.3 million to Sentry which will be the first prime contract for broker car service awarded to a NYS Certified MBE, and approximately $172 million for the first NYS Certified M/WBE Paratransit subcontractors during the base years of the contracts. Over the past 10 years, demand for Paratransit trips has significantly increased, from approximately 20,000 per day in 2008 to over 30,000 just prior to the pandemic. Innovative changes to Paratransit operations were needed to reduce program costs while improving customer experience. The use of non-dedicated service provides cost and operational benefits to NYC Transit. Our strategy involves shifting the bulk of trips from dedicated carriers to non-dedicated carriers (principally Broker Service). These new broker contracts enable Paratransit to gain capacity by expanding the pool of Broker providers, increasing the use of shared rides (incentivizing brokers to perform more than 25% of their daily trips as shared rides), and including power lift-equipped vehicles for oversized and motorized wheelchairs.
+[p064_c0004] This month we also completed the installation of customized permanent polycarbonate driver barriers on 1,300 Paratransit "Blue and White" vehicles. The new barriers are part of our commitment to continuously protect our operators and customers. We continue to operate under COVID-19 pandemic precautions with non-shared rides, daily disinfection of vehicles and mask requirements for all who travel.
+[p064_c0005] We continue to encourage all our workforce to get vaccinated, and we have extended our vaccination program to our vendor partner employees. Vaccination is the best way to protect ourselves and each other so that we can continue to lead New York's recovery. Every vaccination brings us one step closer to normalcy.
+[p064_c0006] Craig Cipriano President, MTA Bus Company/ Senior Vice President, NYCT Department of Buses
+[p064_c0007] _Master Page # 64 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 65
+
+### [p065_c0001] Paratransit Report
+[p065_c0002] Statistical results for the month of March 2021 are shown below.
+[p065_c0003]
+
+```text
+Paratransit Operations - Monthly Operations Report Service Indicators Category Performance Indicator Current Month: March 2021 12-Month Average This Year Last Year % Change This Year Last Year % Change Ridership Total Trips Completed* 501,713 478,946 +4.8% 398,193 666,346 -40.2% Total Ridership 676,594 649,703 +4.1% 529,837 900,352 -41.2% On-Time Performance Pick-up Primary 30 Minute 98.0% 98.0% 0.0% 97.8% 96.3% +1.5% Pick-up Primary 15 Minute 90.0% 91.0% -1.0% 90.3% 87.4% +2.8% Pick-up Broker 30 Minute 95.0% 98.0% -3.0% 97.3% 96.4% +0.9% Pick-up Broker 15 Minute 82.0% 91.0% -9.0% 89.6% 87.6% +2.0% Appointment OTP Trips Primary - 30 Min Early to <1 Late (On-Time)* n/a n/a n/a n/a 46.3% n/a Appointment OTP Trips Primary - Early* n/a n/a n/a n/a 45.6% n/a Appointment OTP Trips Broker - 30 Min Early to <1 Late (On-Time)* n/a n/a n/a n/a 33.0% n/a Appointment OTP Trips Broker - Early* n/a n/a n/a n/a 58.6% n/a Ride Time Ride Time Variance Performance: Actual Trip Duration vs. Planned Trip Duration - At or Better Than Plan 87.0% 82.0% +5.0% 87.3% 80.9% +6.3% Average Actual Trip Duration in Minutes 29 33 -12.1% 28 38 -25.1% Max Ride Time Performance Primary 99.0% 99.0% 0.0% 99.0% 98.0% +1.0% Max Ride Time Performance Broker 99.0% 99.0% 0.0% 99.0% 98.5% +0.5% Customer Experience Frequent Rider Experience Primary* n/a n/a n/a n/a 74.5% n/a Frequent Rider Experience Broker* n/a n/a n/a n/a 70.9% n/a Provider No-Shows Provider No-Shows per 1,000 Schedule Trips Primary 0.83 0.51 +62.8% 0.71 1.27 -43.9% Provider No-Shows per 1,000 Schedule Trips Broker 1.19 0.82 +45.1% 0.66 1.33 -50.3% Customer Complaints Passenger Complaints - Transportation Service Quality Per 1000 Completed Trips 1.7 2.0 -15.0% 1.6 2.9 -45.7% Passenger Complaints - Non-Transportation Service Quality Per 1000 Completed Trips 0.9 1.2 -25.0% 1.1 2.1 -48.0% Call Center Percent of Calls Answered 97.0% 98.0% -1.0% 96.8% 95.8% +1.1% Average Call Answer Speed in Seconds 29 29 0.0% 35 61 -43.0% Eligibility Total Registrants 161,366 162,973 -1.0% 161,678 159,872 +1.1%
+```
+[p065_c0004] *NOTE:
+[p065_c0005] The Drop-off On-Time Performance and Customer Experience metrics are not available to present monthly data comparison due to the temporary suspension of appointment time booking of trips associated with the COVID-19 pandemic which started in March 2020. Consequently, the current 12-Month Average rate for these two metrics cannot be calculated.
+[p065_c0006] Note: 1) The percentage comparisons are the percentage point change instead of the percentage change. 2) Trip data and resulting metrics are preliminary and subject to adjustments.
+[p065_c0007] _Master Page # 65 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 66
+
+### [p066_c0001] PARATRANSIT PERFORMANCE INDICATOR DEFINITIONS
+### [p066_c0002] Ridership by Provider Type
+[p066_c0003] Total Trips is the count of trips provided to registered Access-A-Ride clients in a given month. Total Ridership includes the count of personal care attendants (PCAs) and guests who join clients on the trips. Ridership is presented by the type of provider:
+- [p066_c0004] 1) Primary providers are the blue and white Access-A-Ride branded vehicles, operated by contractors. They provide service with lift and ramp-equipped vans. 2) Brokers provide for-hire vehicles (FHV), metered taxis, and some wheelchair accessible vehicles. 3) E-Hails provide web or app-based trip booking and furnish FHV and metered taxis, including wheelchair accessible vehicles (WAVs). 4) Street Hails are services provided by the traditional FHV, or yellow or green taxis for customers that Access-A-Ride authorized for customer reimbursement. 5) All Others are mostly services provided by local car services or livery providers in Staten Island, otherwise known as the Voucher Program. This service has been replaced by Enhanced Broker Service since November 2019.
+### [p066_c0005] On-Time Performance for Primary and Broker Providers
+[p066_c0006] Pick-up OTP compares actual to promised pick-up time. It is measured on both 15-minute and 30-minute windows. Access-A-Ride's goal is that no less than 94% of all trips arrive at the pick-up location no more than 30 minutes after the promised time, and that no less than 85% of all trips arrive at the pick-up location no more than 15 minutes after the promised time.
+[p066_c0007] Drop-off OTP compares actual to customer-requested drop-off time for trips scheduled with an appointment time. Such trips comprise about half of Access-A-Ride's service plan. An on-time trip is one that arrives at the drop-off location no more than 30 minutes early, and no later than the appointment time.
+### [p066_c0008] Provider No-Shows Per 1,000 Scheduled Trips for Primary and Broker Providers
+[p066_c0009] The Provider No-Show rate measures the frequency with which primary providers do not arrive at the pick-up location within 30 minutes of the promised time and the trip is not provided. For broker providers, customers can call for replacement service after 15 minutes.
+### [p066_c0010] Ride Time Performance for Primary and Broker Providers
+[p066_c0011] Ride Time measures customer trip duration in three different ways:
+[p066_c0012] Actual vs Scheduled presents travel time variance.
+[p066_c0013] Average Travel Time presents the average actual trip duration by trip distance category.
+[p066_c0014] Max Ride Time Performance presents the percentage of trips performed within Access-A-Ride's established max ride time standards.
+[p066_c0015]
+
+```text
+0 up to 3 miles: max ride time is 50 minutes >3 up to 6 miles: max ride time is 65 minutes >6 up to 9 miles: max ride time is 95 minutes >9 up to 12 miles: max ride time is 115 minutes >12 up to 14 miles: max ride time is 135 minutes >14 miles: max ride time is 155 minutes
+```
+[p066_c0016] _Master Page # 66 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 67
+
+### [p067_c0001] PARATRANSIT PERFORMANCE INDICATOR DEFINITIONS
+### [p067_c0002] Customer Experience
+[p067_c0003] Customer Experience measures trip results against multiple standards. Trip experience is counted as positive if all of the following standards are met:
+- [p067_c0004] • Pick-up OTP: actual pick-up time is 30 minutes or less past the promise time. • Drop-off OTP: for trips scheduled with a specific drop-off time, drop-off is no more than 30 minutes early and no later than the requested time. • Max Ride Time: actual trip duration is within max ride time standards established by Access-A-Ride. • Provider No-Show: trip does not result in a provider no-show.
+### [p067_c0005] Customer Complaints Per 1,000 Completed Trips
+[p067_c0006] Customers can comment on Access-A-Ride service quality by phone, writing, and website. The number of complaints is measured as a rate per 1,000 completed trips.
+[p067_c0007] Transportation Service Quality measures service delivery, which covers complaints about no-shows, lateness, long ride durations, drivers and vehicles. Access-A-Ride's goal is 3.0 or fewer Transportation Service Quality complaints per 1,000 trips.
+[p067_c0008] Non-Transportation Service Quality measures complaints about the reservation process, eligibility certification experience, customer service agent helpfulness and politeness, and all other complaints. Access-A-Ride's goal is 1.0 or fewer Non-Transportation Service Quality complaints per 1,000 trips.
+[p067_c0009] The phone number customers call to make complaints and other comments is the same familiar number they use for reservations. Access-A-Ride reviews all complaints received and works to resolve all specific customer concerns.
+### [p067_c0010] Call Center
+[p067_c0011] Access-A-Ride Call Center performance is measured as the percent of calls that are answered and the average speed with which those calls are answered. The call center handles reservation and day-of service status calls from customers.
+[p067_c0012] The goal for percent of calls answered is 95% and the goal for average answer speed is 60 seconds.
+[p067_c0013] _Master Page # 67 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 68
+
+### [p068_c0001] Total Trips
+> [p068_c0002] Month Primary Broker E-Hail Street Hail All Others Total Mar-20 157 276 27 0 0 479 Apr-20 87 49 12 0 0 170 May-20 120 67 17 0 0 222 Jun-20 138 142 21 0 0 317 Jul-20 145 198 23 0 0 376 Aug-20 130 270 26 0 0 433 Sep-20 134 287 29 0 0 460 Oct-20 144 335 30 0 0 523 Nov-20 136 301 29 0 0 477 Dec-20 137 299 30 0 0 473 Jan-21 129 281 27 0 0 447 Feb-21 110 238 22 0 0 380 Mar-21 143 320 27 0 0 502 Legend: Primary (Blue), Broker (Light Blue), E-Hail (Dark Blue), Street Hail (Grey), All Others (Light Grey) Chart 1
+### [p068_c0003] Total Ridership
+> [p068_c0004] Month Primary Broker E-Hail Street Hail All Others Total Mar-20 225 362 39 0 0 650 Apr-20 113 58 16 0 0 210 May-20 157 89 23 0 0 289 Jun-20 185 176 28 0 0 410 Jul-20 202 249 30 0 0 498 Aug-20 184 334 29 0 0 561 Sep-20 191 353 33 0 0 593 Oct-20 204 446 37 0 0 708 Nov-20 192 403 35 0 0 649 Dec-20 195 400 36 0 0 644 Jan-21 181 381 30 0 0 610 Feb-21 153 310 26 0 0 508 Mar-21 203 418 33 0 0 677 Legend: Primary (Blue), Broker (Light Blue), E-Hail (Dark Blue), Street Hail (Grey), All Others (Light Grey) Chart 2
+### [p068_c0005] Total Trips Discussion
+- [p068_c0006] Total Trips in March 2021 increased by 122K (or 32.1%) when compared to February 2021, and increased by 23K (or 4.8%) when compared to March 2020.
+### [p068_c0007] Total Ridership Discussion
+- [p068_c0008] Total Ridership in March 2021 increased by 169K (or 33.3%) when compared to February 2021, and increased by 27K (or 4.1%) when compared to March 2020.
+[p068_c0009] Note: Monthly totals may not be exact due to rounding.
+[p068_c0010] _Master Page # 68 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 69
+
+### [p069_c0001] OTP <= 30 Minutes Primary and Broker
+[p069_c0002] Desired trend
+> [p069_c0003] Month Primary <= 30 Mins Broker <= 30 Mins Goal Mar-20 98% 98% 94% Apr-20 98% 98% 94% May-20 97% 99% 94% Jun-20 96% 98% 94% Jul-20 98% 97% 94% Aug-20 98% 98% 94% Sep-20 98% 98% 94% Oct-20 98% 97% 94% Nov-20 98% 98% 94% Dec-20 98% 98% 94% Jan-21 99% 98% 94% Feb-21 97% 94% 94% Mar-21 98% 95% 94% Legend: Primary <= 30 Mins (blue line), Goal (dashed line), Broker <= 30 Mins (black line)
+[p069_c0004] _Chart 3_
+### [p069_c0005] OTP <= 15 Minutes Primary and Broker
+[p069_c0006] Desired trend
+> [p069_c0007] Month Primary <= 15 Mins Broker <= 15 Mins Goal Mar-20 91% 91% 85% Apr-20 90% 92% 85% May-20 86% 94% 85% Jun-20 84% 91% 85% Jul-20 92% 90% 85% Aug-20 92% 91% 85% Sep-20 91% 91% 85% Oct-20 91% 90% 85% Nov-20 92% 92% 85% Dec-20 91% 90% 85% Jan-21 94% 91% 85% Feb-21 90% 81% 85% Mar-21 90% 82% 85% Legend: Primary <= 15 Mins (blue line), Goal (dashed line), Broker <= 15 Mins (black line)
+[p069_c0008] _Chart 4_
+### [p069_c0009] <= 30 Minutes Pick Up On-Time Performance Discussion
+- [p069_c0010] • March 2021 Primary 30 minute P/U, OTP result of 98% improved by 1 percentage point when compared to February 2021, and remained flat when compared to March 2020. • March 2021 Broker 30 minute P/U, OTP result of 95% improved by 1 percentage point when compared to February 2021, and declined by 3 percentage points when compared to March 2020.
+### [p069_c0011] <= 15 Minutes Pick Up On-Time Performance Discussion
+- [p069_c0012] • March 2021 Primary 15 minute P/U, OTP result of 90% remained flat when compared to February 2021, and declined by 1 percentage point when compared to March 2020. • March 2021 Broker 15 minute P/U, OTP result of 82% improved by 1 percentage point when compared to February 2021, and declined by 9 percentage points when compared to March 2020.
+[p069_c0013] _Master Page # 69 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 70
+
+### [p070_c0001] Ride Time Variance Performance: Actual Trip Duration vs. Planned Trip Duration
+> [p070_c0002] Month At or better than plan 100 to 125% of plan 125 to 150 % of plan 150 to 200% of plan over 200 % of plan Mar-20 82% 9% 3% 2% 4% Apr-20 88% 6% 2% 2% 2% May-20 89% 6% 2% 2% 1% Jun-20 83% 8% 4% 3% 2% Jul-20 88% 6% 3% 1% 2% Aug-20 87% 5% 3% 3% 2% Sep-20 87% 5% 3% 3% 2% Oct-20 87% 5% 3% 3% 2% Nov-20 87% 5% 3% 3% 2% Dec-20 88% 5% 3% 3% 1% Jan-21 89% 5% 3% 2% 1% Feb-21 87% 6% 4% 2% 1% Mar-21 87% 5% 4% 3% 1% Legend: ■ At or better than plan ■ 100 to 125% of plan ■ 125 to 150 % of plan ■ 150 to 200% of plan ■ over 200 % of plan Chart 7
+### [p070_c0003] Average Actual Trip Duration in Minutes
+[p070_c0004] Desired trend
+> [p070_c0005] Month Average Actual Trip Duration (Minutes) Mar-20 33 Apr-20 24 May-20 25 Jun-20 34 Jul-20 28 Aug-20 29 Sep-20 29 Oct-20 29 Nov-20 28 Dec-20 28 Jan-21 26 Feb-21 28 Mar-21 29 Chart 8
+### [p070_c0006] Ride Time Variance Performance: Actual Trip Duration vs. Planned Trip Duration Discussion
+- [p070_c0007] • 87% of trips in March 2021 performed within the scheduled time or better which remained flat when compared to February 2021, and improved by 5 percentage points when compared to March 2020.
+### [p070_c0008] Average Actual Trip Duration in Minutes Discussion
+- [p070_c0009] • Actual Trip Duration in March 2021 increased by 1 minute (or 3.6%) when compared to February 2021, and improved by 4 minutes (or 12.1%) when compared to March 2020.
+[p070_c0010] Note: Percentages may not be exact due to rounding.
+[p070_c0011] _Master Page # 70 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 71
+
+### [p071_c0001] Max Ride Time Performance
+[p071_c0002] Desired trend
+> [p071_c0003] The chart displays the percentage of trips completed within the Max Ride Time parameters for two categories: Primary (blue line) and Broker (black line). The Y-axis represents the percentage, ranging from 88% to 100%. The X-axis shows the months from March 2020 to March 2021. The Primary performance is consistently at 99% from March 2020 to March 2021. The Broker performance starts at 99% in March 2020, peaks at 100% in April 2020, drops to 99% in May 2020, dips to 98% in June 2020, and then returns to 99% from July 2020 through March 2021. A callout box provides the maximum ride time limits for various distances. Month Primary (%) Broker (%) Mar-20 99% 99% Apr-20 99% 100% May-20 99% 99% Jun-20 99% 98% Jul-20 99% 99% Aug-20 99% 99% Sep-20 99% 99% Oct-20 99% 99% Nov-20 99% 99% Dec-20 99% 99% Jan-21 99% 99% Feb-21 99% 99% Mar-21 99% 99% 0 up to 3 miles: max ride time is 50 minutes >3 up to 6 miles: max ride time is 65 minutes >6 up to 9 miles: max ride time is 95 minutes >9 up to 12 miles: max ride time is 115 minutes >12 up to 14 miles: max ride time is 135 minutes >14 miles: max ride time is 155 minutes Legend: Primary (blue line), Broker (black line) Chart 9
+### [p071_c0004] Max Ride Time Performance Discussion
+- [p071_c0005] • In the month of March 2021, 99% of Primary trips were completed within the Max Ride Time parameters. Performance remained flat when compared to February 2021 and March 2020. • In the month of March 2021, 99% of Broker trips were completed within the Max Ride Time parameters. Performance remained flat when compared to February 2021 and March 2020.
+[p071_c0006] _Master Page # 71 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 72
+
+### [p072_c0001] Provider No Shows Per 1,000 Scheduled Trips
+[p072_c0002] Desired trend
+> [p072_c0003] Month Primary Broker Mar-20 0.51 0.82 Apr-20 0.43 1.38 May-20 0.61 0.76 Jun-20 0.50 1.07 Jul-20 0.43 0.67 Aug-20 0.45 0.59 Sep-20 0.46 0.47 Oct-20 0.48 0.81 Nov-20 0.45 0.76 Dec-20 0.41 1.30 Jan-21 0.36 0.42 Feb-21 0.75 0.92 Mar-21 0.83 1.19 Goal: 3.00 Chart 11
+### [p072_c0004] Provider No Shows Per 1000 Scheduled Trips Discussion
+- [p072_c0005] • Primary No-Shows increased by 0.08 per 1,000 trips (or 10.7%) in March 2021 when compared to February 2021, and increased by 0.32 per 1,000 trips (or 62.8%) when compared to the same month last year. • Broker No-Shows increased by 0.27 per 1,000 trips (or 29.3%) in March 2021 when compared to February 2021, and increased by 0.37 per 1,000 trips (or 45.1%) when compared to the same month last year.
+[p072_c0006] _Master Page # 72 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 73
+
+### [p073_c0001] Passenger Complaints Related to Transportation Service Quality Per 1,000 Completed Trips
+[p073_c0002] Desired trend
+> [p073_c0003] Month Service Delivery Vehicles Drivers Total Mar-20 1.2 0.0 0.7 2.0 Apr-20 0.5 0.0 0.7 1.2 May-20 0.7 0.0 0.5 1.2 Jun-20 0.9 0.0 0.6 1.6 Jul-20 1.0 0.0 0.7 1.8 Aug-20 0.7 0.0 0.7 1.5 Sep-20 1.0 0.0 0.7 1.7 Oct-20 0.8 0.0 0.6 1.5 Nov-20 0.8 0.0 0.6 1.4 Dec-20 0.8 0.0 0.6 1.5 Jan-21 0.7 0.0 0.6 1.3 Feb-21 1.5 0.0 0.6 2.2 Mar-21 1.3 0.0 0.4 1.7 Goal: 3.0 Legend: Service Delivery (Blue), Vehicles (Grey), Drivers (Black), Goal (Grey line) Chart 12
+### [p073_c0004] Passenger Complaints Related to Non-Transportation Service Quality Per 1,000 Completed Trips
+[p073_c0005] Desired trend
+> [p073_c0006] Month Complaints Mar-20 1.2 Apr-20 1.0 May-20 1.1 Jun-20 1.3 Jul-20 1.2 Aug-20 1.1 Sep-20 1.3 Oct-20 1.0 Nov-20 0.9 Dec-20 1.0 Jan-21 1.0 Feb-21 1.3 Mar-21 0.9 Goal: 1.0 Chart 13
+### [p073_c0007] Passenger Complaints Related to Transportation Service Quality Per 1,000 Completed Trips Discussion
+- [p073_c0008] The total Passenger Complaints related to Transportation Service in March 2021 improved by 0.5 per 1,000 trips (or 22.7%) when compared to February 2021, and improved by 0.3 per 1,000 trips (or 15%) when compared to March 2020.
+### [p073_c0009] Passenger Complaints Related to Non-Transportation Service Quality Per 1,000 Completed Trips Discussion:
+- [p073_c0010] Passenger Complaints related to Non-Transportation Service in March 2021 improved by 0.4 per 1,000 trips (or 30.8%) when compared to February 2021, and improved by 0.3 per 1,000 trips (or 25%) when compared to March 2020.
+[p073_c0011] Note: Monthly totals may not be exact due to rounding.
+[p073_c0012] _Master Page # 73 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 74
+
+### [p074_c0001] Percent of Calls Answered
+[p074_c0002] Desired trend
+> [p074_c0003] Month Percent of Calls Answered Mar-20 98% Apr-20 98% May-20 98% Jun-20 96% Jul-20 97% Aug-20 97% Sep-20 97% Oct-20 96% Nov-20 95% Dec-20 96% Jan-21 97% Feb-21 98% Mar-21 97% Chart 14
+### [p074_c0004] Average Call Answer Speed in Seconds
+[p074_c0005] Desired trend
+> [p074_c0006] Month Average Call Answer Speed (Seconds) Mar-20 29 Apr-20 10 May-20 20 Jun-20 45 Jul-20 41 Aug-20 38 Sep-20 33 Oct-20 45 Nov-20 58 Dec-20 48 Jan-21 25 Feb-21 24 Mar-21 29 Chart 15
+### [p074_c0007] Percent of Calls Answered Discussion
+- [p074_c0008] The Percent of Calls Answered in March 2021 declined by 1 percentage point when compared to February 2021 and March 2020.
+### [p074_c0009] Average Call Answer Speed in Seconds Discussion
+- [p074_c0010] The Average Call Answer Speed in March 2021 increased by 5 seconds (or 20.8%) when compared to February 2021, and remained flat when compared to March 2020.
+[p074_c0011] _Master Page # 74 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 75
+
+### [p075_c0001] Accessibility Update
+> [p075_c0002] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+> [p075_c0003] A group of eight people, including MTA officials and advocates, are posing for a photo in front of the Hoyt - Schermerhorn station entrance. Four individuals are seated in wheelchairs in the front row, and five others are standing behind them. They are all wearing face masks and winter clothing. The station entrance is visible in the background, with a sign that partially reads "Station" and "A C".
+[p075_c0004] Quemuel Arroyo, the MTA's Chief Accessibility Officer, is joined by Janno Lieber, MTA C&D, Victor Calise, MOPD & MTA Board member, NYC Department of City Planning (DCP) Commissioner Marisa Lago, and advocates at the Hoyt - Schermerhorn station on April 2, 2021. MTA, NYC DCP, & MOPD announced a new joint initiative called Zoning for Accessibility, a proposed change to the City's zoning resolution that would engage private developers in investing in subway accessibility improvements.
+[p075_c0005] _Master Page # 75 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 76
+
+### [p076_c0001] May 2021 Accessibility Update
+[p076_c0002] The Systemwide Accessibility team is excited about the return of 24-hour subway service, which resumed on Monday, May 17. We are proud that our fully accessible buses and Access-A-Ride paratransit service maintained 24-hour operations throughout the COVID-19 pandemic and look forward to welcoming more riders back to our system every day. We remind customers that masks are required for all riders over age two who are medically able to wear a mask, and that child-sized masks are available at the booth at all 472 subway stations and the St. George Staten Island Railway station.
+[p076_c0003] Last month, we installed a new tactile and Braille map of the 1 line at the 23 St station in Manhattan. Customers can find the 6-foot-long map along the wall at the north end of the northbound platform. The map was designed in partnership with Touch Graphics, a company that specializes in accessible signage, to align with the MTA's signage aesthetics while presenting as much detailed information as possible in a format accessible to all, including blind and low-vision subway riders. This builds on a similar map tested as part of the Accessible Station Lab at Jay St-MetroTech, which you can still see (and touch) on the R platform near the staircase up to the main mezzanine. The 1 line map features a horizontal design to facilitate more comfortable Braille reading. We are engaging the local community and welcome feedback on this map design.
+[p076_c0004] In addition to opening new ADA stations, we are constantly working to keep our existing fleet of several hundred subway elevators in a state of good repair, including replacing elevators after many years in service. While these replacement projects require taking an elevator out of service for several months, they are a necessary improvement that results in more modern machines that provide a smoother ride and more reliable service. We recently reopened the two elevators at the Franklin Avenue (C, S) station in Brooklyn after a full rehab, and rehab projects will begin at additional elevators at seven stations across Manhattan, Queens, and Brooklyn on staggered timelines throughout the rest of 2021 and into 2022. Customers can consult in-station signage and digital subway maps, check the Elevator & Escalator Status page, and look at our website and MYmta app maps for the latest on these outages, so you can plan your travels accordingly.
+[p076_c0005] Finally, we spent much of April briefing dozens of Community Boards and other groups across the city about Zoning for Accessibility, our proposed update to the city's zoning regulations to help achieve systemwide accessibility more quickly. We have received widespread support on the proposal and appreciate the engagement of the dozens of accessibility advocates who have attended meetings and provided feedback on the proposal. We look forward to presenting to the City Planning Commission in June, and the City Council later this year.
+[p076_c0006] Rachel Cohen
+[p076_c0007] Director, Systemwide Accessibility
+[p076_c0008] _Master Page # 76 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 77
+
+### [p077_c0001] Strategy and Customer Experience
+[p077_c0002] Sarah Meyer, Chief Customer Officer
+> [p077_c0003] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+> [p077_c0004] A group of people, including MTA staff and the New York Mets mascots, are distributing reusable face masks at a subway station. The group includes a woman in a yellow shirt and blue mask, a woman in a yellow safety vest and blue mask, a woman in a black coat and blue mask, two Mets mascots (Mr. and Mrs. Met) wearing blue masks, a woman in a yellow safety vest and white mask, and a man in a black shirt and blue mask. They are standing in front of a subway station entrance with signs for "Video surveillance camera may be in use in this area" and "LaGuardia Link 170".
+[p077_c0005] Our Mask Force , led by the Strategy and Customer Experience team, gave out reusable face masks to customers on April 22 to commemorate Earth Day. We welcomed two special guests, Mr. and Mrs. Met, who handed out masks at the 74 St-Roosevelt Av-Jackson Heights subway station. Riders were given over 1,000 limited edition "New York Tough" masks donated by the New York Mets. In total, more than 180 volunteers and staff handed out nearly 60,000 masks on Earth Day to customers across 10 counties in the MTA service area. The Mask Force will be back on May 27 .
+[p077_c0006] _Master Page # 77 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 78
+
+### [p078_c0001] May 2021 Highlights: Strategy and Customer Experience
+[p078_c0002] The challenges of adapting to serve our customers and the public as a whole over the past 14 months has also provided some of the most rewarding experiences for the Strategy and Customer Experience team. Our work with the City of New York to simplify travel to vaccination centers across the city falls into that category. In April we added wayfinding signage at the 81 St-Museum of Natural History Station to help direct riders to vaccination sites.
+[p078_c0003] This month we worked with colleagues across the agency and with New York State to plan, set up, and communicate the pop-up vaccination centers that launched on May 22. The walk-up centers, established in eight MTA stations – E 180 St, Jamaica-179 St, Coney Island-Stillwell Av, Broadway Junction, Penn Station (34 St Corridor), Grand Central Terminal (Vanderbilt Hall), Hempstead Terminal (LIRR), and Ossining Station (Metro-North) – vaccinated 1,112 people on its first day, approximately 10% of the city's first dose average in the days prior to our launch. We are committed to doing what we can to ensure a safe environment on our system and in the community around us.
+[p078_c0004] Internally, our contact centers continue to support the MTA's workforce vaccination effort. On April 21 we launched the MTA Vaccination Hotline within our call center team to reach out to employees who have not yet confirmed their vaccination status and plans. Contact center staff have spoken with over 5,000 NYCT employees, driving a substantial number to make a vaccination appointment and collecting valuable information about employee intentions for our Occupational Health colleagues. Directing contact center resources to this important effort, along with longer average call durations in recent months particularly for travel information inquiries, contributed to an increase in customer call wait time from 63 seconds in March to 125 seconds in April. We are implementing some adjustments to our call handling system to better optimize our contact center resources.
+[p078_c0005] Together with our Operations Planning team we have been working closely with NYC DOT to support the City's Open Streets program . Open Streets transforms city streets into public space that is very much needed during these times, allowing communities to embrace interacting safely outdoors and support small businesses. This has necessitated the rerouting of some of our bus routes, and we posted special signage at bus stops to both promote the program and redirect customers to other temporary stops for bus service.
+[p078_c0006] Our contact center soft launched customer service through iMessage in April — now NYC Transit customer service is available 24/7 on iOS devices (Metro-North will soon follow), and we have already received thousands of messages. Customer inquiries via iMessage , along with WhatsApp that we introduced in October and direct messages via Twitter and Facebook, are a growing segment of customer contacts. These are an effective and efficient way for us to provide the service our digitally-savvy customers expect.
+[p078_c0007] Also last month, our real-time service communications team began alerting customers when scheduled express bus trips are cancelled because of operator shortages. We are also working to better reflect this information in our data feeds and on MTA.info and the MYmta app.
+[p078_c0008] Sarah Meyer Chief Customer Officer
+[p078_c0009] _Master Page # 78 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 79
+
+### [p079_c0001] Customer engagement
+[p079_c0002] 2Q 2020 figures throughout this section reflect the very unusual travel patterns and customer service needs during those months, impacting year-on-year variances.
+### [p079_c0003] Telephone
+[p079_c0004]
+
+```text
+Apr 2021 Apr 2020 Variance Telephone calls 44,148 16,261 ▲171.5% Calls answered 86.1% 99.4% ▼13.4% Average time to answer 1 (seconds) 125 5 ▲2400%
+```
+- [p079_c0005] 1. Excludes automated self-service calls 2. Feedback is customers calling with comments or concerns
+> [p079_c0006] Telephone Call Distribution Category Percentage Travel Information ~45% MetroCard ~25% Feedback ~15% Lost & Found ~15%
+### [p079_c0007] Telephone: calls received and answered
+> [p079_c0008] Telephone Calls Received and Answered (April 2020 - April 2021) Date Calls Received (per day) Calls Answered (%) 4/20 ~500 87.2% 5/20 ~1700 ~90% 6/20 ~2300 ~88% 7/20 ~2500 ~89% 8/20 ~2300 ~89% 9/20 ~1900 ~90% 10/20 ~1600 ~88% 11/20 ~1400 ~90% 12/20 ~1400 ~91% 1/21 ~1300 ~91% 2/21 ~1600 ~90% 3/21 ~1700 ~90% 4/21 ~1500 90.5%
+### [p079_c0009] Telephone: average time to answer
+> [p079_c0010] Average Time to Answer Telephone Calls (April 2020 - April 2021) Date Average Time to Answer (sec) 4/20 196.7 5/20 ~55 6/20 ~160 7/20 ~160 8/20 ~125 9/20 ~150 10/20 ~140 11/20 ~100 12/20 ~65 1/21 ~60 2/21 ~65 3/21 ~65 4/21 110.7
+[p079_c0011] _Master Page # 79 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 80
+
+### [p080_c0001] Customer engagement
+### [p080_c0002] Help Point
+[p080_c0003]
+
+```text
+Apr 2021 Apr 2020 Variance Help Point activations 42,724 24,626 ▲ 73.5% Average time to answer (seconds) 12.3 12.7 ▼ 2.9%
+```
+> [p080_c0004] Help Point Activation Categories Category Percentage MetroCard ~65% Travel Information ~25% Emergency ~5% Other / Uncategorized ~5%
+### [p080_c0005] Help Point: activations and average time to answer
+> [p080_c0006] Help Point Data Summary Month Activations (per day) Avg. Time to Answer (sec.) 4/20 10.9 12.7 5/20 ~700 ~12.5 6/20 ~900 ~12.4 7/20 ~1100 ~12.3 8/20 ~1200 ~12.4 9/20 ~1300 ~12.5 10/20 ~1400 ~12.6 11/20 ~1300 ~12.4 12/20 ~1500 ~12.3 1/21 ~1300 ~12.4 2/21 ~1200 ~12.5 3/21 ~1200 ~12.6 4/21 ~1400 ~12.5
+### [p080_c0007] Social media
+[p080_c0008]
+
+```text
+Apr 2021 Apr 2020 Variance Social media mentions 1 23,073 26,728 ▼ 13.7% Responses sent 6,671 4,708 ▲ 41.7% Customer satisfaction score 2 3.60 3.95 ▼ 8.9%
+```
+- [p080_c0009] 1. Social media mentions include Tweets, Facebook posts, and comments 2. Customers were asked How would you rate your experience on Twitter with NYCT Subway? using a scale of 1 to 5
+> [p080_c0010] Social Media Response Categories Category Percentage Real-Time Service 60% Employee 6% Stations 6% MetroCard/AFC 5% Cleanliness 4% Crime 4% Planned Work 4% Homeless 4% Safety 4% Accessibility 3%
+> [p080_c0011] Social Media Data Summary Month Mentions (per day) Responses (per day) Customer Satisfaction Score 4/20 ~900 ~150 ~3.8 5/20 ~850 ~120 ~3.9 6/20 ~700 ~150 ~4.0 7/20 ~750 ~200 ~3.9 8/20 ~600 ~220 ~3.8 9/20 ~1000 ~250 ~3.9 10/20 ~750 ~250 ~3.7 11/20 ~800 ~280 ~3.8 12/20 ~850 ~280 ~3.9 1/21 ~700 ~220 ~4.0 2/21 ~1350 ~300 ~3.9 3/21 ~700 ~220 ~3.8 4/21 ~800 ~220 ~3.7
+[p080_c0012] _Master Page # 80 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 81
+
+### [p081_c0001] Customer engagement
+### [p081_c0002] Web, mobile app, and written feedback
+[p081_c0003]
+
+```text
+Apr 2021 Apr 2020 Variance Received 3,887 2,522 ▲ 54.1% Responses sent 1 5,820 4,605 ▲ 26.4%
+```
+[p081_c0004] 1. Includes automated and manual responses
+> [p081_c0005] A donut chart illustrating the distribution of customer engagement channels. The segments are labeled as follows: Travel information (green), Other (grey), MetroCard (yellow), COVID-19 (red), Employees (blue), Service (orange), and Facilities and Vehicles (pink). The segments are arranged clockwise starting from the top right.
+### [p081_c0006] Keeping customers informed
+### [p081_c0007] Alerts and service notices
+[p081_c0008]
+
+```text
+Apr 2021 Web 5,400 Twitter 3,844 Kiosks / Digital Displays 1 2,006 Email and text alerts • Service 3,388 • Elevator and escalator status 8,004 Service Notice posters developed 310
+```
+[p081_c0009] 1. Excludes countdown clocks
+### [p081_c0010] Social media followers
+[p081_c0011]
+
+```text
+Apr 2021 Apr 2020 Variance Twitter @NYCTSubway 1,003k 1,024k ▼ 2.1% @NYCTBus 31.1k 28.9k ▲ 7.6% @MTA 1,322.3k 1,334.0k ▼ 0.9% Facebook MTA 154.6k -- -- Instagram @mtanyctransit 41.3k 29.7k ▲ 39.1%
+```
+[p081_c0012] _Master Page # 81 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 82
+
+### [p082_c0001] Customer feedback
+[p082_c0002] These complaint metrics include COVID-19-related customer concerns and service reports in the context of substantially lower ridership.
+### [p082_c0003] Complaints per 100,000 journeys
+[p082_c0004]
+
+```text
+Apr 2021 Apr 2020 Variance Subway 3.69 15.39 ▼76.0% Bus 10.32 14.99 ▼31.2% MetroCard 0.26 0.28 ▼7.8% Access-A-Ride 380.1 207.8 ▲83.0% Non-service issues 1 0.180 0.403 ▼55.3%
+```
+[p082_c0005] 1. Includes customer experiences related to agency-wide information channels, property, policies, and other actionable, but non-subway or bus service related issues.
+### [p082_c0006] Commendations per 100,000 journeys
+[p082_c0007]
+
+```text
+Apr 2021 Apr 2020 Variance Subway 0.094 0.390 ▼75.9% Bus 0.44 0.49 ▼9.4% Access-A-Ride 82.5 48.8 ▲69.1% Non-service issues incl. MetroCard 0.031 0.016 ▲92.4%
+```
+### [p082_c0008] Complaints per 100,000 journeys: trends
+> [p082_c0009] The figure consists of five vertically stacked line charts, each representing a different service category. The y-axis for all charts is 'Complaints per 100,000 journeys'. The x-axis for all charts is time, from April 2020 to April 2021. A legend at the bottom right indicates that a dashed line represents the '12-month rolling average'. Subway: Actual complaints (solid blue line) start at 3.03 in April 2020 and trend downward to 4.75 in April 2021. The 12-month rolling average (dashed black line) remains relatively flat around 4. Bus: Actual complaints (solid green line) start at 8.88 in April 2020 and trend downward to 10.96 in April 2021. The 12-month rolling average (dashed black line) remains relatively flat around 10. MetroCard: Actual complaints (solid yellow line) start at 0.24 in April 2020, fluctuate, and end at 0.24 in April 2021. The 12-month rolling average (dashed black line) remains relatively flat around 0.2. Access-A-Ride: Actual complaints (solid purple line) start at 485.7 in April 2020 and trend upward to 289.8 in April 2021. The 12-month rolling average (dashed black line) remains relatively flat around 300. Non-service issues: Actual complaints (solid orange line) start at 0.124 in April 2020, fluctuate, and end at 0.268 in April 2021. The 12-month rolling average (dashed black line) remains relatively flat around 0.2.
+[p082_c0010] _Master Page # 82 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 83
+
+### [p083_c0001] Safety
+[p083_c0002] Robert Diehl
+[p083_c0003] Senior Vice President, Safety & Security
+> [p083_c0004] A photograph showing a man, identified as System Safety Specialist Ricky Huynh, inspecting a set of stairs. He is wearing a white hard hat, a black face mask, a black long-sleeved shirt, a high-visibility orange and yellow safety vest, and blue jeans. He is standing on a metal step of a staircase, holding a yellow measuring tape vertically against the side of the stairs. The stairs have a silver metal handrail. The ground in front of the stairs is paved with grey cobblestones. In the background, there is a glass wall and some structural elements of a building.
+[p083_c0005] _System Safety Specialist Ricky Huynh inspects the stairs at 34 St - Hudson Yards Station._
+[p083_c0006] _Master Page # 83 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 84
+
+### [p084_c0001] May 2021 Highlights: Safety
+[p084_c0002] Subway Customer Accident Rates increased by 105.2% when comparing the most recent 12-month period to the previous one. It is worth noting that, nominally, accidents are down 46.4%.
+[p084_c0003] Bus Collisions declined by 17.6% and Collision Injuries declined by 24.9% while Customer Accidents increased when comparing the most-recent 12-month period to the previous one.
+[p084_c0004] Employee Lost Time Accidents have shown a decrease when comparing the most recent 12-month period to the previous one due to the large number of March 2020 COVID-19 cases moving to the previous period from the most-recent one. This also affected other statistics in a similar fashion as well.
+[p084_c0005] Lastly, when comparing figures from the two most-recent 12-month periods, Subway Fires increased.
+### [p084_c0006] Robert Diehl
+[p084_c0007] Senior Vice President, Safety and Security
+[p084_c0008] *Except for Fires, all numbers reported refer to rates.
+[p084_c0009] _Master Page # 84 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 85
+
+### [p085_c0001] Monthly Operations Report
+[p085_c0002] Statistical results for the 12-Month period are shown below
+[p085_c0003]
+
+```text
+Safety Report Performance Indicators 12-Month Average May 18 - Apr 19 May 19 - Apr 20 May 20 - Apr 21 Subways Subway Customer Accidents per Million Customers 1 2.96 2.86 5.87 Subway Collisions 2 Total 1 2 2 Mainline 0 0 0 Yard 1 2 2 Subway Derailments 2 Total 3 8 10 Mainline 0 3 3 Yard 3 5 7 Subway Fires 2 769 757 960 Buses Bus Collisions Per Million Miles Regional 53.88 51.18 42.19 Bus Collision Injuries Per Million Miles Regional 5.94 6.18 4.64 Bus Customer Accidents Per Million Customers 1 Regional* 1.38 1.50 1.91 Total NYCT and MTA Bus Lost Time Accidents per 100 Employees 1 3.84 5.05 4.78
+```
+[p085_c0004] 1 12-month Average data from April through March.
+[p085_c0005] 2 12-month figures shown are totals rather than averages.
+[p085_c0006] * = Due to the implementation of rear door boarding and suspension of fare collection to protect frontline employees from the spread of COVID-19, AFC (MetroCard and OMNY) was not used from March 23, 2020, to August 30, 2020, to determine ridership. During this time, ridership was estimated using Automated Passenger Counter (APC) data.
+[p085_c0007]
+
+```text
+Leading Indicators Subways April YTD Goal YTD as % of Goal Roadway Worker Protection Joint Track Safety Audits -- Actual Count 34 125 340 36.8% Joint Track Safety Audits -- Compliance Rate 100.0% 99.7% 100.0% 99.7% Mainline Collision/Derailment Prevention Continuous Welded Rail Initiative (# of Track Feet) 6,822 7,800 9,999 78.0% Friction Pad Installation 3,109 8,252 22,000 37.5% Buses April YTD Goal YTD as % of Goal Collision Prevention Audible Pedestrian Turn Warning System 30 58 780 7.4% Vision Zero Employee Training 430 1,807 5,800 31.2%
+```
+[p085_c0008] _Master Page # 85 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 86
+
+### [p086_c0001] Monthly Operations Report
+### [p086_c0002] Safety Report Definitions:
+[p086_c0003] Joint Track Safety Audits are conducted by a joint team of personnel from the Office of System Safety, the Transport Workers Union, and the Subway Surface Supervisors Association (SSSA). The teams look at critical items for on-track safety such as flagging, third rail safety and lighting. These reviews are conducted at various Department of Subways, and MTA Construction & Development work sites along the right of way to assess compliance with the rules and procedures, identify deficiencies in training and equipment, and improve on-track safety.
+[p086_c0004] Continuous Welded Rail (CWR) significantly reduces the number of rail joints, which lessens the occurrence of broken rails while also providing a smoother ride. Track Engineering analyzed system-wide broken rail data and set forth a CWR installation plan to help reduce broken rails and improve track conditions. We anticipate expanded use of the Critter Rail Stringer and "E" Clip installer to help us achieve this goal.
+[p086_c0005] Friction Pad Installations will increase resiliency of the rail, resulting in reduced broken rail incidents and, overall, will reduce the potential for development of rail defects.
+[p086_c0006] Audible Pedestrian Warning System technology produces an audible voice alert to pedestrians when a bus is making a left- or a right-hand turn. The system turns on automatically without a bus operator's intervention and alerts pedestrians with a street- and curb-side speaker. Volume automatically adjusts based on outside ambient noise.
+[p086_c0007] Vision Zero Training provides focused Safety Awareness Training to all Bus Operators, which engages them on all aspects of Pedestrian Safety issues, emphasizing the current challenges of managing their buses in an environment with distracted pedestrians, motorists and cyclists. The program incorporates testimonial videos from "Families for Safer Streets" along with a series of videos of serious bus and pedestrian accidents secured from onboard bus cameras as well as external traffic and security cameras. The training, which will be delivered over two years, is in the midst of a new cycle that began in April 2019 and will run through March 2021.
+[p086_c0008] _Master Page # 86 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 87
+
+### [p087_c0001] Subway Fires
+[p087_c0002] April 2021
+[p087_c0003] Fire severity is classified as follows:
+[p087_c0004]
+
+```text
+Severity Criteria Low No disruption to service No damage to NYC Transit property No reported injuries No discharge/evacuation of passengers Fire self-extinguished or extinguished without Fire Department Average Delays to service 15 minutes or less Minor damage to NYC Transit property (no structural damage) No reported injuries/fatalities due to fire/smoke Discharge of passengers in station Minor residual smoke present (haze) Above Average Delays to service greater than 15 minutes Moderate to heavy damage to NYC Transit property Four or less injuries due to fire/smoke Discharge of train or transfer of passengers to another train (not in station) Station/platform/train filled with smoke High Major delays in service (over one hour) Major structural damage Five or more reported injuries or one or more fatalities Evacuation of passengers to benchwall or roadbed Mass evacuation of more than one train
+```
+[p087_c0005] Severity & Location of fires during the current month were as follows:
+[p087_c0006]
+
+```text
+Low: 90.9% Train: 11 Average: 9.1% Right-of-way: 47 Above Average: 0.0% Station: 30 High: 0.0% Other: 0 Total: 88
+```
+[p087_c0007] Top Items Burnt by Location during the current month were as follows:
+[p087_c0008]
+
+```text
+Train: Right-of-Way: Station: Brake Shoes: 2 Debris: 30 Debris: 25 Debris: 2 Tie: 11 Electrical: 5 Element: 2 Vegetation: 2 Cables, Power 3rd Trolley Lead: 2 Rail: 1 Compressor: 1 Undetermined: 1
+```
+[p087_c0009] _Master Page # 87 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 88
+
+> [p088_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p088_c0002] May 2021 Crime Report
+[p088_c0003] The purpose of this report is to provide Committee Members with statistical information regarding the number of major felonies including: homicide, robbery, assault, rape in addition to hate crime incidents occurring on the NYCT Subway and Staten Island Railway systems. The report is submitted by NYPD's Transit Bureau and the MTA Police Department on a monthly basis for the month ending prior to the reporting period. The report also includes statistics on employee assaults and harassment as well as vandalism, compiled by the NYCT Department of Safety and Security. This month's report also includes current hiring numbers at MTA PD.
+[p088_c0004] _Master Page # 88 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 89
+
+### [p089_c0001] MTA Police Hiring Data 2019-2021
+[p089_c0002] In 2019, the MTA Board directed the MTA to hire an additional 500 MTA police officers. Here is the status of those hires:
+[p089_c0003]
+
+```text
+Year Total Hires 2019 28 2020 138 2021 98*
+```
+[p089_c0004] *135 additional officers expected to be hired by the end of 2021
+[p089_c0005]
+
+```text
+Hire Date Number of Hires October 16, 2019 10 Officers November 20, 2019 18 Officers January 22, 2020 40 Officers January 29, 2020 38 Officers February 5, 2020 39 Officers February 12, 2020 21 Officers
+```
+[p089_c0006] For the remainder of 2020, MTA entered a hiring freeze which impacted MTA PD hiring along with all other departments.
+[p089_c0007] While the MTA remained in the hiring freeze until early Spring 2021, the MTA resumed hiring MTA police officers prior to that, starting in January 2021.
+[p089_c0008]
+
+```text
+Hire Date Number of Hires January 6 & 20, 2021 50 Officers April 21, 2021 48 Civilians* July - August, 2021 135 New Hires** Jan - Feb, 2022 200 New Hires** July 2022 90 New Hires**
+```
+[p089_c0009] * Civilian hires must attend the Police Academy
+[p089_c0010] ** Current hiring objectives for police recruitment
+[p089_c0011] _Master Page # 89 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 90
+
+### [p090_c0001] Weekly number of incidents of assault and harassment against transit workers
+[p090_c0002] Below are updated data and statistics on different aspects of our transit system. This page provides recent data on assaults and harassment against our employees.
+[p090_c0003] Updated May 12, 2021
+[p090_c0004] The safety of our workforce and our customers is our top priority and we are hopeful that increased transparency about the number of these incidents in our system will keep everyone safer and more vigilant.
+[p090_c0005] These figures are updated weekly with the prior week's figures. Each week's update is based on verified incidents as of the report date so data for prior weeks may change as additional incidents are verified.
+### [p090_c0006] # of incidents of assault & harassment against transit employees by week (Last 6 Months)
+[p090_c0007]
+
+```text
+Week beginning Assault: Subways Assault: Buses Harassment: Subways Harassment: Buses Total 5/3/2021 1 1 9 27 38 4/26/2021 0 0 6 40 46 4/19/2021 1 3 12 28 44 4/12/2021 0 1 13 23 37 4/5/2021 0 2 14 37 53 3/29/2021 0 0 9 27 36 3/22/2021 0 1 12 32 45 3/15/2021 1 0 12 36 49 3/8/2021 0 0 18 37 55 3/1/2021 0 0 10 32 42 2/22/2021 1 0 9 32 42 2/15/2021 1 1 10 24 36 2/8/2021 0 1 7 38 46 2/1/2021 1 1 6 22 30 1/25/2021 0 2 17 23 42 1/18/2021 0 2 18 30 50 1/11/2021 1 2 11 26 40 1/4/2021 1 1 9 28 39 12/28/2020 2 1 8 18 29 12/21/2020 1 0 6 19 26 12/14/2020 0 1 11 26 38 12/7/2020 0 1 9 35 45 11/30/2020 1 1 12 21 35 11/23/2020 0 0 12 29 41 11/16/2020 1 3 14 34 52 11/9/2020 3 0 18 37 58
+```
+[p090_c0008] Note: Harassment includes but is not limited to verbal threats, other threatening behavior, and spitting.
+[p090_c0009] Source (including earlier information): https://new.mta.info/safety-and-security/nyct-employee-assault-data
+[p090_c0010] _Master Page # 90 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 91
+
+### [p091_c0001] Weekly number of incidents of vandalism in the transit system
+[p091_c0002] Below are updated data and statistics on different aspects of our transit system. This page provides recent New York City Transit data on vandalism of select elements of the transit system.
+[p091_c0003] Updated May 12, 2021
+[p091_c0004] Vandalism is costly to the MTA and to taxpayers, and can in some cases also lead to a safety issue. We are hopeful that increased transparency about vandalism incidents in our system will keep everyone safer and more vigilant.
+[p091_c0005] These figures are updated weekly with the prior week's figures. Each week's update is based on verified incidents as of the report date so data for prior weeks may change as additional incidents are verified.
+### [p091_c0006] # of units vandalized by week and component (Last 6 Months)
+[p091_c0007]
+
+```text
+Week beginning Graffiti: Subways Graffiti: Buses Liquid Crystal Display (LCD) Screen MetroCard Vending Machine (MVM) OMNY Reader Train Glass Bus Glass Total 5/3/2021 18 0 4 0 1 6 3 32 4/26/2021 11 0 7 1 0 9 1 29 4/19/2021 6 0 8 1 0 5 0 20 4/12/2021 14 0 3 0 0 2 0 19 4/5/2021 18 0 7 0 1 5 3 34 3/29/2021 8 0 4 0 0 6 1 19 3/22/2021 15 0 1 0 0 5 6 27 3/15/2021 22 0 2 0 0 10 0 34 3/8/2021 14 0 3 6 0 8 1 32 3/1/2021 14 0 6 0 1 2 1 24 2/22/2021 23 0 4 0 0 5 2 34 2/15/2021 27 0 4 0 0 3 1 35 2/8/2021 7 0 3 3 0 3 4 20 2/1/2021 31 0 3 1 0 4 2 41 1/25/2021 33 0 0 0 1 3 0 37 1/18/2021 9 0 9 1 1 1 1 22 1/11/2021 26 0 14 4 1 2 0 47 1/4/2021 11 0 8 0 0 5 1 25 12/28/2020 14 0 5 3 0 15 2 39 12/21/2020 15 0 2 0 1 2 0 20 12/14/2020 33 0 13 3 1 4 2 56 12/7/2020 26 0 3 5 0 7 2 43 11/30/2020 29 0 3 2 1 11 2 48 11/23/2020 25 0 12 4 2 9 0 52 11/16/2020 25 0 10 4 0 5 2 46 11/9/2020 22 0 21 0 0 11 0 54
+```
+[p091_c0008] Source (including earlier information): https://new.mta.info/safety-and-security/nyct-vandalism-data
+[p091_c0009] _Master Page # 91 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 92
+
+[p092_c0001] Police Department City of New York
+### [p092_c0002] MTA Report
+### [p092_c0003] CRIME STATISTICS APRIL
+[p092_c0004]
+
+```text
+2021 2020 Diff % Change MURDER 1 1 0 0.0% RAPE 0 0 0 0.0% ROBBERY 26 44 -18 -40.9% GL 47 47 0 0.0% FELASSAULT 37 22 15 68.2% BURGLARY 0 10 -10 -100.0% TOTAL MAJOR FELONIES 111 124 -13 -10.5%
+```
+[p092_c0005] During April, the daily Robbery average decreased from 1.5 to 0.9
+[p092_c0006] During April, the daily Major Felony average decreased from 4.1 to 3.7
+### [p092_c0007] CRIME STATISTICS JANUARY THRU APRIL
+[p092_c0008]
+
+```text
+2021 2020 Diff % Change MURDER 4 3 1 33.3% RAPE 2 2 0 0.0% ROBBERY 116 248 -132 -53.2% GL 165 440 -275 -62.5% FELASSAULT 156 132 24 18.2% BURGLARY 3 13 -10 -76.9% TOTAL MAJOR FELONIES 446 838 -392 -46.8%
+```
+[p092_c0009] Year to date the daily Robbery average decreased from 2.1 to 1
+[p092_c0010] Year to date the daily Major Felony average decreased from 7 to 3.7
+[p092_c0011] FIGURES ARE PRELIMINARY AND SUBJECT TO FURTHER ANALYSIS AND REVISION
+[p092_c0012] _Master Page # 92 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+[p092_c0013] _Report 12/10/21_
+[p092_c0014] _Page 1 of 2_
+
+## Page 93
+
+[p093_c0001] Police Department City of New York
+### [p093_c0002] MTA Report
+### [p093_c0003] APRIL ACTIVITY
+[p093_c0004]
+
+```text
+2021 2020 Diff % Change Total Arrests 400 156 244 156.4% TOS Arrests 62 9 53 588.9% Total Summons 6618 301 6317 2098.7% TOS TABs 5331 117 5214 4456.4% TOS C-Summ 72 9 63 700.0%
+```
+### [p093_c0005] JANUARY THRU APRIL ACTIVITY
+[p093_c0006]
+
+```text
+2021 2020 Diff % Change Total Arrests 1667 2250 -583 -25.9% TOS Arrests 296 384 -88 -22.9% Total Summons 27955 25964 1991 7.7% TOS TABs 23353 16763 6590 39.3% TOS C-Summ 363 424 -61 -14.4%
+```
+[p093_c0007] FIGURES ARE PRELIMINARY AND SUBJECT TO FURTHER ANALYSIS AND REVISION
+[p093_c0008] _Master Page # 93 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+[p093_c0009] _Report: 12/10/21_
+[p093_c0010] _Page 2 of 2_
+
+## Page 94
+
+### [p094_c0001] Hate Crime Task Force Transit Bureau HCTF Statistical Data (As of 5/9/2021)
+### [p094_c0002] Motivation:
+[p094_c0003]
+
+```text
+Motivation 2021 2020 Diff % Change ASIAN 22 5 17 340% BLACK 5 1 4 400% ETHNIC 2 0 2 ***.* GENDER 2 5 -3 -60% SEMITIC 5 15 -10 -67% SEXUAL ORIENTATION 3 3 0 0% WHITE 0 1 -1 -100% Grand Total 39 30 9 30%
+```
+### [p094_c0004] Crime Name:
+[p094_c0005]
+
+```text
+Crime Name 2021 2020 Diff % Change Aggravated Harassment 1 4 14 -10 -71% Aggravated Harassment 2 9 4 5 125% Assault 2 1 1 0 0% Assault 3 12 8 4 50% Criminal Mischief 2 0 1 -1 -100% Criminal Mischief 3 3 0 3 ***.* Criminal Mischief 4 5 0 5 ***.* Forcible Touching 1 0 1 ***.* Grand Larceny 4 0 1 -1 -100% Menacing 2 2 0 2 ***.* Menacing 3 1 1 0 0% Reckless Endangerment 1 1 0 1 ***.* Grand Total 39 30 9 30%
+```
+[p094_c0006] _Master Page # 94 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 95
+
+[p095_c0001] Police Department City of New York
+### [p095_c0002] REPORT
+### [p095_c0003] JANUARY-APRIL
+[p095_c0004]
+
+```text
+1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 Murder 1 0 3 1 0 0 0 1 3 1 1 1 1 0 0 0 0 0 0 1 0 0 0 1 2 4 Rape 1 4 0 1 1 0 2 0 2 3 0 2 0 0 1 4 2 4 0 0 0 0 0 1 2 2 Robbery 709 666 547 437 431 419 365 359 404 314 239 248 229 242 231 300 205 156 136 163 128 151 151 247 116 Assault 155 166 136 127 95 98 87 88 93 59 65 59 57 69 71 59 63 62 78 95 114 106 122 129 156 Burglary 15 8 1 4 6 3 3 3 0 1 0 3 0 2 0 4 5 7 6 8 9 3 3 13 3 GL 1017 816 721 740 695 644 527 591 607 392 386 417 369 362 438 533 496 507 501 495 549 488 458 430 165 TOTAL MAJOR FELONIES 1898 1660 1408 1310 1228 1164 1004 1042 1109 770 691 730 656 675 741 900 771 736 721 762 800 748 736 823 446 Major Fel Per Day 15.02 13.83 11.73 10.92 10.23 9.70 8.37 8.68 9.24 6.42 5.76 6.03 5.47 5.63 6.18 7.44 6.43 6.13 6.01 6.30 6.67 6.23 6.13 6.80 4.96
+```
+[p095_c0005] _Master Page # 95 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 96
+
+### [p096_c0001] Financial and Ridership Reports
+[p096_c0002] Jaibala Patel , Chief Financial Officer
+[p096_c0003] Craig Cipriano , President, MTA Bus Company Senior Vice President, NYCT Department of Buses
+> [p096_c0004] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+> [p096_c0005] A photograph showing the interior of a subway car. Several passengers are seated on the blue seats, and one person is standing in the aisle. Most passengers are wearing face masks. The car is brightly lit with overhead lights, and there are posters on the walls.
+[p096_c0006] Ridership continued to grow steadily. In April, daily subway ridership topped two million for the first time since the beginning of COVID-19 pandemic, and was 3.5 times greater than last April when the ridership dipped to unprecedented levels.
+[p096_c0007] _Master Page # 96 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 97
+
+### [p097_c0001] Preliminary April 2021 Monthly Report: New York City Transit
+[p097_c0002] The purpose of this report is to provide the preliminary April 2021 financial results, on an accrual basis. The accrual basis is presented on a non-reimbursable and reimbursable account basis. These results reflect the new accelerated accounting close and are compared to the Adopted Budget (budget).
+### [p097_c0003] Summary of Preliminary Financial Results
+[p097_c0004] Preliminary ridership and accrual results, versus budget, are summarized as follows:
+- [p097_c0005] • April 2021 New York City Transit ridership of 78.9 million was 30.9 million (64.6 percent) above budget, of which subway ridership of 53.2 million was 17.5 million (49 percent) over budget, and bus ridership of 25.0 million was 13.6 million (118.9 percent) over budget. • Compared with April 2019 ridership of 193.2 million, New York City Transit ridership in April 2021 was lower by 114.3 million (59.2 percent), of which subway ridership was lower by 91.8 million (63.3 percent), down from 145.0 million, and bus ridership was lower by 22.2 million (47 percent), down from 47.2 million. • April 2021 New York City Transit Year-to-date (YTD) ridership of 276.4 million was 196.0 million (41.5 percent) below 2020 YTD ridership, of which subway ridership of 184.9 million was 169.9 million (47.9 percent) under 2020 YTD, and bus ridership of 89.0 million was 25.8 million (22.5 percent) under 2020 YTD. • Compared with April 2019 YTD ridership of 735.5 million, New York City Transit ridership in April 2021 was lower by 459.2 million (62.4 percent), of which subway ridership was lower by 364.8 million (66.4 percent), down from 549.7 million, and bus ridership was lower by 93.2 million (51.2 percent), down from 182.2 million. • April 2021 farebox revenue of $168.7 million was $69.8 million (70.5 percent) above budget. • Other revenue was slightly over budget in April by $0.2 million (0.5 percent), with an overrun in rental revenue and largely offsetting an underrun in Paratransit reimbursement and MetroCard surcharges.
+[p097_c0006] April 2021 operating expenses of $691.6 million were $13.5 million (1.9 percent), less than budget.
+- [p097_c0007] • Labor expenses were over budget by a net $6.1 million (1.1 percent), due largely to unfavorable reimbursable overhead credits of $7.8 million (23.7 percent). Overtime overruns of $6.8 million (18.4 percent) as well as minor overruns in other labor accounts were largely offset by a payroll underrun of $13.6 million (4.9 percent). • Non-labor expenses were under budget by a net $19.6 million (12.0 percent), due mostly to underruns in materials and supplies of $18.2 million (65.9 percent), paratransit service contracts of $5.6 million (16.4 percent), electric power of $4.4 million (18.0 percent), and fuel of $1.3 million (13.6 percent). Unfavorable maintenance and other operating contracts of $10.0 million (41.4 percent), and other business expenses $1.4 million (31.2 percent) provided partial offset to net favorability of non-labor expenses.
+[p097_c0008] _Master Page # 97 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 98
+
+[p098_c0001] Preliminary financial results for April 2021 are presented in the table below and compared to the budget.
+[p098_c0002]
+
+```text
+Preliminary Financial Results Compared to Budget Category ($ in millions) April Results April Year-to-Date Results Variance Fav(UnFav) Budget Prelim Actual Variance Fav(UnFav) $ % $ $ $ % Total Farebox Revenue 69.8 70.5 298.4 599.1 300.7 100.8 Nonreimb. Exp. before Dep./OPEB 13.5 1.9 (2,916.4) (2,795.4) 121.0 4.1 Net Cash Deficit* (21.7) (3.2) (2,463.4) (2,187.4) 276.0 11.2
+```
+[p098_c0003] *Excludes Subsidies and Debt Service
+[p098_c0004] April 2021 farebox revenue of $168.7 million was $69.8 million (70.5 percent) over budget. Subway revenue was $44.4 million (58.6 percent) higher than budget, bus revenue was $24.8 million (125.2 percent) over budget, and paratransit revenue was $0.58 million (71.8 percent) above budget. Accrued fare media liability was equal to budget. The April 2021 non-student average fare of $2.15 decreased 149.8¢ from April 2020; subway fare decreased 134.1¢; local bus fare decreased 170.6¢; express bus fare decreased 26.7¢.
+[p098_c0005] Total ridership in April 2021 of 78.9 million was 30.9 million (64.6 percent) over budget. Average weekday ridership in April 2021 was 2.9 million, which is 527 percent above April 2020, but still 60.3 percent below April 2019. Average weekday ridership for the twelve months ending April 2021 was 2.1 million, 67.6 percent lower than the twelve months ending April 2020 and 71.4 percent lower than the twelve months ending April 2019.
+[p098_c0006] Non-reimbursable expenses before depreciation, GASB 75 OPEB and GASB 68 pension Adjustment, of $691.6 million were $13.5 million (1.9 percent), less than budget.
+[p098_c0007] Labor expenses were over budget by a net $6.1 million (1.1 percent), due largely to unfavorable reimbursable overhead credits of $7.8 million (23.7 percent). Overtime overruns of $6.8 million (18.4 percent) as well as minor overruns in other labor accounts were largely offset by a payroll underrun of $13.6 million (4.9 percent).
+[p098_c0008] Non-labor expenses were under budget by a net $19.6 million (12.0 percent), due mostly to underruns in materials and supplies of $18.2 million (65.9 percent), paratransit service contracts of $5.6 million (16.4 percent), electric power of $4.4 million (18.0 percent), and fuel of $1.3 million (13.6 percent). Unfavorable maintenance and other operating contracts of $10.0 million (41.4 percent), and other business expenses over by $1.4 million (31.2 percent) provided partial offset to net favorability of non-labor expenses.
+[p098_c0009] Year-to-date , non-reimbursable expenses were lower than budget by a net $121.0 million (4.1 percent), of which labor expenses underran by a net $68.0 million (3.0 percent). Health and welfare/OPEB current expenses were favorable to the budget by $86.5 million (15.4 percent), and payroll underran by $39.4 million (3.5 percent). Overtime overruns of $23.9 million (13.6 percent), unfavorable reimbursable overhead credits of $21.5 million (22.7 percent), higher other fringe of benefits of $7.4 million (3.9 percent), and pension timing overruns of $5.2 million (1.7 percent), provided a partial offset. Non-labor expenses were favorable by a net $53.0 million (8.2 percent), including significant underruns in materials & supplies of $28.6 million (25.8 percent), paratransit service contract expenses lower by $23.8 million (18.1 percent), electric power under by $15.4 million (14.8 percent), and fuel lower by $3.6 million (10.2 percent). Overruns in maintenance and operating contracts of $23.1 million (24.4 percent), provided partial offset.
+[p098_c0010] _Master Page # 98 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 99
+
+### [p099_c0001] Financial Results
+### [p099_c0002] Farebox Revenue
+[p099_c0003]
+
+```text
+April 2021 Farebox Revenue - ($ in millions) April April Year-to-Date Budget Prelim Actual Favorable(Unfavorable) Budget Prelim Actual Favorable(Unfavorable) Amount Percent Amount Percent Subway 75.8 120.2 44.4 58.6% 228.5 422.3 193.8 84.8% NYCT Bus 19.8 44.6 24.8 125.2% 60.0 163.3 103.3 172.2% Paratransit 0.8 1.4 0.6 71.8% 0.8 4.4 3.6 439.1% Subtotal 96.4 166.2 69.8 72.4% 289.3 590.0 300.7 104.0% Fare Media Liability 2.5 2.5 0.0 0.0% 9.2 9.2 0.0 0.0% Total - NYCT 99.0 168.7 69.8 70.5% 298.4 599.1 300.7 100.8%
+```
+[p099_c0004] Note: Total may not add due to rounding
+### [p099_c0005] Average Fare
+[p099_c0006]
+
+```text
+April Non-Student Average Fare - (in $) NYC Transit 2020 Prelim 2021 Change Amount Percent Subway 3.640 2.299 (1.341) (36.8%) Local Bus 3.481 1.775 (1.706) (49.0%) Subway & Local Bus 3.636 2.134 (1.502) (41.3%) Express Bus 6.195 5.928 (0.267) (4.3%) Total 3.649 2.151 (1.498) (41.0%)
+```
+[p099_c0007] _Master Page # 99 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 100
+
+### [p100_c0001] Non-reimbursable Expenses
+[p100_c0002] Non-reimbursable expenses before depreciation, GASB 75 OPEB and GASB 68 pension Adjustment, of $691.6 million were $13.5 million (1.9 percent), less than budget.
+[p100_c0003] Labor expenses overran budget by a net $6.1 million (1.1 percent):
+- [p100_c0004] • Reimbursable overhead was unfavorable $7.8 million (23.7 percent), reflecting less than anticipated capital labor expense • Overtime expenses overran by $6.8 million (18.4 percent), primarily reflecting vacancy coverage, employee unavailability and savings not fully achieved • Health and welfare/OPEB current expenses together were unfavorable $2.1 million (1.5 percent), resulting from the unfavorable timing of expenses • Pension was over budget by $2.0 million (2.5 percent), mainly due to unfavorable timing of NYCERS pension charges • Other fringe benefits were unfavorable $1.1 million (2.5 percent), primarily due to unfavorable capital support credits • Payroll expenses were favorable by $13.6 million (4.9 percent), mainly due to vacancies
+[p100_c0005] Non-labor expenses were under budget by a net $19.6 million (12.0 percent):
+- [p100_c0006] • Materials and supplies were lower by $18.2 million (65.9 percent), reflecting retroactive adjustment of prior year expense to reimbursable, and favorable timing of expenses • Paratransit service contracts underran by of $5.6 million (16.4 percent), reflecting fewer trips and favorable timing of support costs • Electric Power was lower than budget by $4.4 million (18.0 percent), mainly due to lower consumption • Fuel expense was below budget by $1.3 million (13.6 percent), mainly due to lower consumption partly offset by higher prices • Maintenance and other operating contract expenses overran by $10.0 million (41.4 percent), largely due to unfavorable timing of expenses and higher COVID vendor costs • Other business expenses were over budget by $1.4 million (31.2 percent), mainly due to the unfavorable timing of expenses
+[p100_c0007] Depreciation expenses in April were higher than budget by $9.5 million (5.8 percent).
+[p100_c0008] There are no entries booked for GASB 68 Pension adjustment neither GASB 75 OPEB expense adjustment as of April reporting close.
+[p100_c0009] The operating cash deficit (excluding subsidies) for April of $703.0 million is $21.7 million (3.2 percent) favorable to budget.
+[p100_c0010] _Master Page # 100 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 101
+
+[p101_c0001] Year to date non-reimbursable expenses before depreciation, GASB 75 OPEB and GASB 68 Pension Adjustment were lower than budget by a net $111.8 million (3.1 percent).
+[p101_c0002] Labor expenses underran budget by a net $68.0 million (3.0 percent)
+- [p101_c0003] • Health and welfare/OPEB current expenses together were favorable $86.5 million (15.4 percent) resulting from favorable timing of rebates, vacancies, and lower rates • Payroll expenses were lower than budget by $39.4 million (3.5 percent), mainly due to vacancies • Overtime expenses overran by $23.9 million (13.6 percent), primarily due to vacancy coverage and adverse winter weather • Reimbursable overhead was unfavorable to the budget by $21.5 million (22.7 percent), mainly due to less than anticipated capital labor expense • Other fringe benefits were unfavorable by $7.4 million (3.9 percent), mainly due to unfavorable capital project support credits • Pension was unfavorable to budget by $5.2 million (1.7 percent), mainly due to unfavorable timing of NYCERS pension charges
+[p101_c0004] Non-labor expenses were net favorable to the budget by $53.0 million (8.2 percent):
+- [p101_c0005] • Materials and supplies underran by $28.6 million (25.8 percent), reflecting retroactive adjustment of prior year expense to reimbursable, and favorable timing of expenses • Paratransit service contracts were favorable to budget by $23.8 million (18.1 percent), reflecting fewer trips and favorable timing of support costs • Electric power was lower than budget by $15.4 million (14.8 percent) mainly due lower consumption and favorable rates • Fuel was lower than budget by $3.6 million (10.2 percent), mainly due to lower consumption partly offset by higher prices • Professional service contracts were favorable by $2.6 million (5.5 percent), mainly due to favorable timing of MTA bond service expense • Maintenance and other operating contract expenses overran by $23.1 million (24.4 percent) due largely to the unfavorable timing of expenses and higher COVID vendor costs
+[p101_c0006] Depreciation expenses exceeded budget by $38.5 million (5.8 percent).
+[p101_c0007] There are no entries booked for GASB 68 Pension adjustment neither GASB 75 OPEB expense adjustment as of April reporting close.
+[p101_c0008] The year-to-date operating cash deficit (excluding subsidies) of $2,187.4 million is $276.0 million (11.2 percent) favorable to budget.
+[p101_c0009] _Master Page # 101 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 102
+
+### [p102_c0001] Ridership Results
+[p102_c0002]
+
+```text
+April 2021 Ridership vs. Budget - (in millions) April April Year-to-Date Budget Prelim Actual More(Less) Budget Prelim Actual More(Less) Amount Percent Amount Percent Subway 35.7 53.2 17.5 49.0% 107.0 184.9 77.9 72.7% NYCT Bus 11.4 25.0 13.6 118.9% 34.5 89.1 54.5 158.0% Paratransit 0.8 0.7 (0.1) (16.7%) 3.1 2.5 (0.6) (20.1%) Total - NYCT 47.9 78.9 30.9 64.6% 144.6 276.4 131.8 91.1%
+```
+[p102_c0003] Note: Total may not add due to rounding
+[p102_c0004]
+
+```text
+April Average Weekday and Weekend Ridership vs. Prior Year Month Average Weekday - (thousands) Average Weekend - (thousands) 2020 Preliminary Change 2020 Preliminary Change 2021 Amount Percent 2021 Amount Percent Subway 447 1,984 1,537 +343.8% 492 2,392 1,900 +386.2% NYCT Local Bus 12 918 906 +7550.0% 13 1,090 1,077 +8284.6% NYCT Express Bus 2 14 12 +600.0% 1 7 6 +600.0% Paratransit 8 25 17 +212.9% 8 27 20 +244.8% TOTAL - NYCT 469 2,941 2,472 +527.0% 514 3,516 3,003 +584.2% 12-Month Rolling Average Subway 4,830 1,483 (3,347) -69.3% 4,891 1,695 (3,196) -65.3% NYCT Local Bus 1,511 563 (948) -62.7% 1,714 679 (1,035) -60.4% NYCT Express Bus 35 11 (24) -68.6% 13 5 (8) -61.5% Paratransit 31 22 (10) -30.4% 38 23 (15) -39.3% TOTAL - NYCT 6,407 2,079 (4,329) -67.6% 6,656 2,402 (4,254) -63.9%
+```
+[p102_c0005] Notes: Totals may not add due to rounding. Percentages are based on unrounded figures.
+- [p102_c0006] • April 2021 subway ridership was 49.0 percent favorable to budget and bus ridership was 118.9 percent favorable. Paratransit ridership was 16.7 percent unfavorable to budget. • Compared to the previous year, average weekday ridership made significant gains on all modes of transportation. This is due to COVID-19 travel restrictions and fare-free back-door boarding policy on local buses that were in effect last year, starting from late March 2020. • Rolling average weekday ridership for the twelve month period ending in April 2021, compared to twelve month period ending in April 2020, is down 69.3 percent on subway, 62.7 percent lower on local bus, 68.6 percent lower on express bus, and down 30.4 percent on paratransit.
+[p102_c0007] _Master Page # 102 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 103
+
+### [p103_c0001] Average Weekday and Weekend Ridership
+[p103_c0002] 12-Month Rolling Averages
+> [p103_c0003] Subway Millions The chart displays two data series: Weekday (solid blue line) and Weekend (dashed black line). Both series show a steady increase from April 2019 to February 2020, reaching approximately 5.5 million. Following this, both series show a sharp decline, with the Weekday series dropping to about 1.4 million by February 2021 and the Weekend series dropping to about 1.6 million. In early 2021, both series show a slight uptick, with the Weekday series rising to about 1.5 million and the Weekend series rising to about 1.7 million. Month Weekday (Millions) Weekend (Millions) Apr-19 5.5 5.5 Jun-19 5.5 5.5 Aug-19 5.5 5.5 Oct-19 5.5 5.5 Dec-19 5.5 5.5 Feb-20 5.5 5.5 Apr-20 4.5 4.5 Jun-20 3.8 3.8 Aug-20 3.2 3.2 Oct-20 2.5 2.5 Dec-20 1.8 1.8 Feb-21 1.4 1.6 Apr-21 1.5 1.7 Legend: — Weekday — — Weekend
+- [p103_c0004] • Average weekday and weekend ridership increased moderately in 2019, before drastic declines due to COVID-19 travel restrictions which began in March 2020. • In February 2021, the ridership decline slowed, and in March 2021, a new period of growth began.
+[p103_c0005] _Master Page # 103 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 104
+
+### [p104_c0001] 12-Month Rolling Averages
+> [p104_c0002] The chart displays the 12-month rolling average of NYCT Local Bus ridership in millions. The Y-axis ranges from 0.40 to 2.20. The X-axis shows time from April 2019 to April 2021. The Weekend ridership (dashed line) starts at approximately 1.95 million and declines to about 0.65 million by April 2021. The Weekday ridership (solid line) starts at approximately 1.75 million and declines to about 0.55 million by April 2021. Both series show a sharp decline starting in March 2020, reaching a low in early 2021, followed by a slight recovery in April 2021. Month Weekday (Millions) Weekend (Millions) Apr-19 1.75 1.95 Jun-19 1.74 1.95 Aug-19 1.74 1.95 Oct-19 1.74 1.95 Dec-19 1.73 1.95 Feb-20 1.74 1.95 Apr-20 1.50 1.75 Jun-20 1.20 1.40 Aug-20 0.95 1.05 Oct-20 0.80 0.90 Dec-20 0.65 0.75 Feb-21 0.50 0.60 Apr-21 0.55 0.65
+- [p104_c0003] • Local bus ridership decreased slightly in 2019 and early 2020 before declining drastically starting in March 2020 due to COVID-19 travel limitations. Fare-free back door boarding was also in effect from late March through end of August 2020. • In February 2021, the ridership decline slowed, and in March 2021, a new period of growth began.
+[p104_c0004] _Master Page # 104 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 105
+
+- [p105_c0001] • 12-Month Rolling Averages
+> [p105_c0002] NYCT Express Bus Thousands Month Weekday Ridership (Thousands) Apr-19 40 Jun-19 39.5 Aug-19 39.5 Oct-19 39.5 Dec-19 39.5 Feb-20 40 Apr-20 34 Jun-20 28 Aug-20 24 Oct-20 19 Dec-20 15 Feb-21 11 Apr-21 11.5 Note: Weekend express bus ridership not shown — Weekday
+- [p105_c0003] • Express bus ridership increased moderately during 2019 and early 2020 before declining drastically starting in March 2020 due to COVID-19 travel limitations. • In February 2021, the ridership decline slowed, and in March 2021, a new period of growth began.
+[p105_c0004] _Master Page # 105 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 106
+
+### [p106_c0001] 12-Month Rolling Averages
+> [p106_c0002] The chart, titled 'Paratransit', displays the 12-month rolling average of daily ridership in thousands. The y-axis is labeled 'Thousands' and ranges from 15.0 to 40.0 in increments of 5.0. The x-axis shows time from April 2019 to April 2021. A single blue line represents 'Weekday' ridership. The line starts at approximately 32.5 thousand in April 2019, rises to a peak of about 34.5 thousand in February 2020. It then declines sharply, reaching approximately 20.5 thousand by February 2021, where it remains flat for a short period before rising to about 22 thousand by April 2021. Month Ridership (Thousands) Apr-19 32.5 Jun-19 33.0 Aug-19 33.5 Oct-19 34.0 Dec-19 34.5 Feb-20 34.5 Apr-20 31.5 Jun-20 28.5 Aug-20 26.5 Oct-20 24.5 Dec-20 22.5 Feb-21 20.5 Apr-21 22.0
+- [p106_c0003] • Paratransit ridership increased rapidly in 2019 due to outsize growth in E-hail and Enhanced Broker service trips, before declining drastically starting in March 2020 due to COVID-19 travel limitations. • In February 2021, the ridership decline ceased, and in March 2021, a new period of growth began.
+[p106_c0004] _Master Page # 106 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 107
+
+### [p107_c0001] Ridership on New York Area Transit Services
+[p107_c0002] Due to COVID-19 travel limitations and a sizeable reduction in employment-based trips, all transit services in the New York area experienced steep ridership declines from late March 2020 through early 2021.
+[p107_c0003] In February - March 2021, the rate of decline started to slow down on subway, NYCT Bus and MTA Bus, and in March - April 2021 a new period of growth began. In comparison with April 2020, the ridership growth is very significant.
+[p107_c0004] The rolling average ridership is still low for the 12-month period ending in April 2021, compared to 12-month period ending in April 2020, both on weekdays and on weekends.
+[p107_c0005]
+
+```text
+Ridership on Transit Services in the New York Area (thousands) Transit Service Apr-20 Prelim Apr-21 Percent Change Rolling Avg Prior Year Rolling Avg Current Year 12-Month Rolling Average Percent Change Average Weekday Subway 447 1,984 +343.8% 4,830 1,483 -69.3% NYCT Local Bus 12 918 +7550.0% 1,511 563 -62.7% NYCT Express Bus 2 14 +600.0% 35 11 -68.6% Paratransit 8 25 +212.9% 31 22 -30.4% SIR 1 5 +517.5% 14 3 -77.1% MTA Local Bus 1 196 +15454.4% 315 119 -62.2% MTA Express Bus 3 10 +205.4% 25 10 -59.6% LIRR 10 81 +710.0% 275 66 -76.0% Metro-North 17 68 +300.0% 247 50 -79.8% PATH 15 70 +366.7% 251 54 -78.5% Average Weekend Subway 492 2,392 +386.2% 4,891 1,695 -65.3% NYCT Local Bus 13 1,090 +8284.6% 1,714 679 -60.4% NYCT Express Bus 1 7 +600.0% 13 5 -61.5% Paratransit 8 27 +244.8% 38 23 -39.3% SIR 1 1 +81.0% 3 1 -65.5% MTA Local Bus 1 223 +16243.0% 344 136 -60.3% MTA Express Bus 2 5 +190.9% 11 5 -51.5% LIRR 6 102 +1600.0% 186 68 -63.4% Metro-North 14 90 +542.9% 217 65 -70.0% PATH 14 89 +535.7% 163 63 -61.3%
+```
+[p107_c0006] Note: Percentages are based on unrounded data.
+[p107_c0007] _Master Page # 107 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 108
+
+### [p108_c0001] MTA NEW YORK CITY TRANSIT
+### [p108_c0002] Apr - 2021 Adopted Accrual Statement of Operations By Category
+[p108_c0003] Month - Apr 2021 ($ in Millions)
+[p108_c0004]
+
+```text
+Revenue Nonreimbursable Var Percent Reimbursable Total Adopted Actual Favorable (Unfavorable) Variance Percent Adopted Actual Favorable (Unfavorable) Variance Percent Adopted Actual Favorable (Unfavorable) Variance Percent Adopted Actual Adopted Actual Revenue Farebox Revenue: Subway $75,812 $120,215 $44,403 58.6 $0.000 $0.000 $0.000 - $75,812 $120,215 $44,403 58.6 Bus $18,733 $44,363 $24,789 123.2 $0.000 $0.000 $0.000 - $18,733 $44,363 $24,789 123.2 Paratransit $0.613 $1,357 $0.364 71.8 $0.000 $0.000 $0.000 - $0.613 $1,357 $0.364 71.8 Fare Liability $2,538 $2,538 $0.000 0.0 $0.000 $0.000 $0.000 - $2,538 $2,538 $0.000 0.0 Farebox Revenue $99,957 $168,733 $68,776 70.5 $0.000 $0.000 $0.000 - $99,957 $168,733 $68,776 70.5 Fare Reimbursement $5,171 $5,171 $0.000 0.0 $0.000 $0.000 $0.000 - $5,171 $5,171 $0.000 0.0 Paratransit Reimbursement $20,169 $10,004 ($10,125) (50.1) $0.000 $0.000 $0.000 - $20,169 $10,004 ($10,125) (50.1) Other Operating Revenue $14,006 $24,444 $10,358 73.5 $0.000 $0.000 $0.000 - $14,006 $24,444 $10,358 73.5 Other Revenue $42,447 $42,660 $0.233 0.5 $0.000 $0.000 $0.000 - $42,447 $42,660 $0.233 0.5 Capital and Other Reimbursements $0.000 $0.000 - - $0.000 $118,354 ($11,954) (9.2) $130,308 $118,354 ($11,954) (9.2) Total Revenue $141,403 $211,412 $70,009 49.5 $0.000 $118,354 (11,954) (9.2) $271,712 $329,766 $58,054 21.4 Expenses Labor: Paratransit $276,021 $262,435 $13,586 4.9 $41,137 $41,137 $5,926 13.6 $323,134 $303,623 $19,512 6.0 Overtime $58,860 $43,655 ($6,795) (18.4) $16,208 $11,870 $4,338 26.8 $53,068 $55,525 (2,457) (4.6) Total Salaries & Wages $317,881 $306,091 $6,791 2.2 $63,321 $53,057 $10,264 16.2 $376,202 $359,148 $17,054 4.5 Health and Welfare $90,649 $86,992 $3,657 4.0 $2,126 $1,683 $0.442 20.8 $92,775 $88,676 $4,099 4.4 OPEB Current Payment $49,734 $55,474 ($5,740) (11.5) $1,212 $0.944 $0.269 22.2 $50,947 $56,417 ($5,470) (10.7) Pensions $79,376 $79,328 (1,952) (2.5) $2,157 $2,164 (0.007) (0.3) $79,533 $81,492 ($1,959) (2.5) Other Fringe Benefits $44,203 $45,257 (1,093) (2.5) $20,111 $22,265 ($2,265) 11.3 $64,314 $63,142 $1,172 1.8 Total Fringe Benefits $261,981 $267,091 ($5,128) (2.0) $22,637 $22,637 $0.000 0.0 $287,569 $289,728 ($2,159) (0.8) Contribution to GASB Fund $0.000 $0.000 - - - - - - $0.000 $0.000 - - Reimbursable Overhead (32,901) (25,109) (7,792) (23.7) $32,901 $25,109 $7,792 23.7 $0.000 $0.000 $0.000 0.0 Labor $541,943 $448,073 $93,870 (1.1) $121,828 $100,803 $21,025 17.3 $663,771 $648,876 $14,895 2.2 Non-Labor: Electric Power $24,326 $19,938 $4,388 18.0 $0.021 $0.020 $0.002 7.2 $24,347 $19,958 $4,389 18.0 Fuel $9,215 $7,965 $1,250 13.6 $0.000 $0.000 $0.000 - $9,215 $7,965 $1,250 13.6 Insurance $6,682 $5,725 $0.957 14.3 $0.000 $0.000 $0.000 - $6,682 $5,725 $0.957 14.3 Claims $18,487 $18,487 $0.000 0.0 $0.000 $0.000 $0.000 - $18,487 $18,487 $0.000 0.0 Paratransit Service Contracts $34,313 $28,692 $5,621 16.4 $0.000 $0.000 $0.000 - $34,313 $28,692 $5,621 16.4 Maintenance and Other Operating Contracts $24,184 $34,202 ($10,018) (41.4) $3,165 $10,325 ($7,160) (226.3) $27,349 $44,527 ($17,178) (62.8) Professional Service Contracts $13,788 $13,143 $0.645 4.7 $1,509 $1,509 (0.780) (107.0) $14,517 $14,652 ($134) (0.9) Materials & Supplies $27,565 $9,386 $18,179 65.9 $4,410 $5,705 (1,295) (29.4) $31,975 $15,092 $16,883 52.8 Other Business Expenses $4,538 $5,956 (1,417) (31.2) $0.156 $0.156 $0.163 104.8 $4,694 $5,948 ($1,254) (26.7) Non-Labor $163,099 $143,494 $19,605 12.0 $8,480 $17,551 ($9,071) (107.0) $171,579 $161,045 $10,534 6.1 Other Expense Adjustments: Other $0.000 $0.000 - - $0.000 $0.000 - - $0.000 $0.000 - - Other Expense Adjustments $0.000 $0.000 - - $0.000 $0.000 - - $0.000 $0.000 - - Total Expenses before Depreciation and OPEB $705,041 $691,566 $13,475 1.9 $130,308 $118,354 $11,954 9.2 $835,350 $809,920 $25,429 3.0 Depreciation $164,839 $174,373 ($9,534) (5.8) $0.000 $0.000 - - $164,839 $174,373 ($9,534) (5.8) GASB 75 OPEB Expense Adjustment $0.000 $0.000 $0.000 - $0.000 $0.000 - - $0.000 $0.000 - - GASB 68 Pension Adjustment $0.000 $0.000 $0.000 - $0.000 $0.000 - - $0.000 $0.000 - - Environmental Remediation $0.000 $0.000 - - $0.000 $0.000 - - $0.000 $0.000 - - Total Expenses $869,880 $865,939 $3,941 0.5 $130,308 $118,354 $11,954 9.2 $1,000,188 $994,293 $15,895 1.6 OPERATING SURPLUS/DEFICIT (728,477) (654,527) $73,950 10.2 $0.000 $0.000 $0.000 200.0 (728,477) (654,527) $73,950 10.2
+```
+[p108_c0005] Note: Totals may not add due to rounding
+[p108_c0006] Note: Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results.
+[p108_c0007] _TRANSIT - EPTING Adopted, Final FY21_
+[p108_c0008] _Master Page # 108 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 109
+
+### [p109_c0001] MTA NEW YORK CITY TRANSIT
+[p109_c0002] Accrual Statement of Operations By Category
+[p109_c0003] Year-To-Date - Apr 2021
+[p109_c0004] ($ in Millions)
+[p109_c0005]
+
+```text
+Revenue Nonreimbursable Var Percent Reimbursable Total Adopted Actual Favorable (Unfavorable) Variance Percent Adopted Actual Favorable (Unfavorable) Variance Percent Adopted Actual Favorable (Unfavorable) Variance Percent Revenue Farebox Revenue: Subway $228,453 $422,285 $193,832 84.8 $0.000 $0.000 $0.000 - $228,453 $422,285 $193,832 84.8 Bus $59,992 $163,316 $103,324 172.2 $0.000 $0.000 $0.000 - $59,992 $163,316 $103,324 172.2 Paratransit $0.000 $4,362 $4,362 439.1 $0.000 $0.000 $0.000 - $0.000 $4,362 $4,362 439.1 Fare Liability $8,165 $8,165 $0.000 0.0 $0.000 $0.000 $0.000 - $8,165 $8,165 $0.000 0.0 Farebox Revenue $269,423 $599,148 $300,725 100.8 $0.000 $0.000 $0.000 - $269,423 $599,148 $300,725 100.8 Fare Reimbursement $31,455 $31,455 $0.000 0.0 $0.000 $0.000 $0.000 - $31,455 $31,455 $0.000 0.0 Paratransit Reimbursement $77,947 $58,622 $(19,325) (24.6) $0.000 $0.000 $0.000 - $77,947 $58,622 $(19,325) (24.6) Other Operating Revenue $58,622 $58,622 $0.000 0.0 $0.000 $0.000 $0.000 - $58,622 $58,622 $0.000 0.0 Other Revenue $165,224 $149,065 $(16,159) (9.8) $0.000 $0.000 $0.000 - $165,224 $149,065 $(16,159) (9.8) Capital and Other Reimbursements $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - Total Revenue $463,647 $748,213 $284,566 61.4 $420,651 $353,194 $(67,457) (16.0) $884,298 $1,101,407 $217,109 24.6 Expenses Labor: Salary: $1,129,430 $1,089,982 $(39,448) (3.6) $134,937 $134,937 $29,047 17.7 $1,263,414 $1,224,919 $(38,495) (3.1) Overtime $176,493 $199,411 $(23,918) (13.6) $43,442 $34,056 $(9,386) (21.6) $218,935 $233,468 $(14,533) (6.6) Total Salaries & Wages $1,305,923 $1,289,393 $15,530 1.2 $207,426 $168,993 $38,432 18.5 $1,512,349 $1,458,386 $53,962 3.6 Health and Welfare $362,577 $313,727 $(48,850) (13.5) $8,556 $7,046 $(1,511) (17.7) $371,133 $320,772 $(50,361) (13.6) OPEB Current Payment $198,937 $161,312 $(37,625) (18.9) $4,850 $3,891 $(959) (19.8) $203,787 $165,202 $(38,584) (18.9) Pensions $310,233 $315,438 $(5,205) (1.7) $8,627 $8,555 $(72) (0.8) $318,859 $323,992 $(5,133) (1.6) Other Fringe Benefits $198,956 $198,322 $(636) (0.3) $55,639 $55,640 $(1) (0.0) $256,595 $253,861 $(2,734) (1.1) Total Fringe Benefits $1,052,702 $988,798 $63,904 7.0 $87,672 $75,030 $12,642 14.4 $1,150,375 $1,063,828 $86,546 7.5 Contribution to GASB Fund $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - Reimbursable Overhead (94,486) (73,009) $(21,476) (22.7) $94,486 $73,009 $(21,476) (22.7) $0.000 $0.000 $0.000 - Labor $2,273,140 $2,205,192 $67,958 3.0 $389,583 $317,033 $72,551 18.6 $2,662,723 $2,522,215 $140,509 5.3 Non-Labor: Electric Power $104,257 $88,852 $(15,406) (14.8) $0.085 $0.161 $(0.076) (89.1) $104,343 $89,013 $(15,330) (14.7) Fuel $39,226 $31,628 $(7,598) (19.2) $0.000 $0.000 $0.000 - $35,226 $31,628 $(3,598) (10.2) Insurance $27,154 $24,386 $(2,768) (10.2) $0.000 $0.000 $0.000 - $27,154 $24,386 $(2,768) (10.2) Claims $73,950 $73,950 $0.000 0.0 $73,950 $73,950 $0.000 0.0 $73,950 $73,950 $0.000 0.0 Paratransit Service Contracts $131,225 $107,452 $(23,773) (18.1) $0.000 $0.000 $0.000 - $131,225 $107,452 $(23,773) (18.1) Maintenance and Other Operating Contracts $94,824 $117,957 $(23,134) (24.4) $12,617 $19,372 $(6,755) (35.5) $107,441 $137,329 $(29,889) (27.8) Professional Service Contracts $48,388 $45,759 $(2,639) (5.5) $3,121 $2,978 $(143) (4.6) $51,519 $48,737 $(2,782) (5.4) Materials & Supplies $110,794 $82,236 $(28,559) (25.8) $17,010 $13,592 $(3,419) (20.1) $127,805 $95,827 $(31,978) (25.0) Other Business Expenses $17,387 $17,965 $(578) (3.3) (1,767) $0.038 $(1,805) (103.3) $15,621 $15,621 $(2,402) (15.4) Non-Labor $643,215 $590,185 $53,030 8.2 $31,067 $36,161 $(5,094) (16.4) $674,382 $626,346 $47,937 7.1 Other Expense Adjustments: Other $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - Other Expense Adjustments $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - Total Expenses before Depreciation and OPEB $2,916,355 $2,795,367 $120,988 4.1 $420,651 $353,194 $67,457 16.0 $3,337,006 $3,148,560 $188,445 5.6 Depreciation $659,354 $697,854 $(38,500) (5.8) $0.000 $0.000 $0.000 - $659,354 $697,854 $(38,500) (5.8) GASB 75 OPEB Expense Adjustment $0.000 $10,000 $(10,000) (100.0) $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 (100.0) GASB 68 Pension Adjustment $19,288 $0.000 $(19,288) (100.0) $0.000 $0.000 $0.000 - $19,288 $0.000 $(19,288) (100.0) Environmental Remediation $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - Total Expenses $3,604,997 $3,493,220 $111,777 3.1 $420,651 $353,194 $67,457 16.0 $4,025,648 $3,846,414 $179,234 4.5 OPERATING SURPLUS/DEFICIT (3,141,350) (2,745,007) $396,343 12.6 $0.000 $0.000 $0.000 0.0 (3,141,350) (2,745,007) $396,343 12.6
+```
+[p109_c0006] Note: Totals may not add due to rounding
+[p109_c0007] Note: Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results.
+[p109_c0008] _TRANSIT - REPORT Adopted, Final FY21_
+[p109_c0009] _Master Page # 109 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 110
+
+[p110_c0001] _Table 3_
+### [p110_c0002] MTA NEW YORK CITY TRANSIT FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET EXPLANATION OF VARIANCES BETWEEN THE ADOPTED BUDGET AND ACTUAL ACCRUAL BASIS APRIL 2021 ($ in millions)
+[p110_c0003]
+
+```text
+Generic Revenue or Expense Category Nonreimb or Reimb MONTH YEAR TO DATE Favorable (Unfavorable) Variance Reason for Variance Favorable (Unfavorable) Variance Reason for Variance $ % $ % Farebox Revenue NR 69.8 70.5 Primarily due to higher ridership 300.7 100.8 Primarily due to higher ridership Other Operating Revenue NR 0.2 0.5 (16.2) (9.8) Primarily underruns in Paratransit reimbursement and MetroCard fees Payroll NR 13.6 4.9 Primarily due to vacancies 39.4 3.5 Primarily due to vacancies Overtime NR (6.8) (18.4) Primarily vacancy coverage, employee unavailability and savings not fully achieved (23.9) (13.6) Primarily vacancy coverage and adverse winter weather Health & Welfare (including OPEB current payment) NR (2.1) (1.5) Unfavorable timing of expenses 86.5 15.4 Favorable prescription drug rates, favorable Aetna rates, timing of rebates and vacancies Pension NR (2.0) (2.5) Mainly unfavorable timing of NYCERS pension charges (5.2) (1.7) Mainly unfavorable timing of NYCERS pension charges Other Fringe Benefits NR (1.1) (2.5) Mainly due to unfavorable capital project support credits (7.4) (3.9) Mainly due to unfavorable capital project support credits Reimbursable Overhead NR (7.8) (23.7) Mainly due to less than anticipated capital labor expense (21.5) (22.7) Mainly due to less than anticipated capital labor expense Electric Power NR 4.4 18.0 Mainly lower consumption 15.4 14.8 Lower consumption and favorable rates Fuel NR 1.3 13.6 Mainly lower consumption partly offset by higher prices 3.6 10.2 Mainly lower consumption partly offset by higher prices Claims NR 0.0 0.0 0.0 0.0 Paratransit Service Contracts NR 5.6 16.4 Reflecting fewer trips and favorable timing of support costs 23.8 18.1 Reflecting fewer trips and favorable timing of support costs Maintenance and Other Operating Contracts NR (10.0) (41.4) Largely unfavorable timing of expenses and higher COVID vendor costs (23.1) (24.4) Largely unfavorable timing of expenses and higher COVID vendor costs Professional Service Contracts NR 0.6 4.7 Mainly due to favorable timing of MTA bond service expense 2.6 5.5 Mainly due to favorable timing of MTA bond service expense Materials & Supplies NR 18.2 65.9 Reflects retroactive adjustment of prior year expense to reimbursable, and favorable timing of expenses 28.6 25.8 Reflects retroactive adjustment of prior year expense to reimbursable, and favorable timing of expenses Other Business NR (1.4) (31.2) Mainly unfavorable timing of expenses. (0.6) (3.3) Minor variance
+```
+[p110_c0004] _Master Page # 110 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 111
+
+### [p111_c0001] MTA NEW YORK CITY TRANSIT February Financial Plan - 2021 Adopted Cash Receipts and Expenditures Apr FY21 ($ in Millions)
+[p111_c0002] 5/12/2021 11:24 AM
+[p111_c0003]
+
+```text
+Month Year-To-Date Favorable (Unfavorable) Adopted Actual Variance Adopted Actual Variance Adopted Actual Variance Percent Receipts Farebox Revenue $98,957 $136,872 $37,915 $298,423 $522,033 $223,610 $298,423 $522,033 $223,610 74.9 Fare Reimbursement $0.000 $0.000 $0.000 $0.000 $19,264 $19,264 $0.000 $19,264 $19,264 - Paratransit Reimbursement $20,176 $17,883 (2,293) $77,896 $72,366 (5,530) $77,896 $72,366 (5,530) (7.1) Other Operating Revenue $3,561 $10,267 $6,706 $13,720 $14,706 $0,986 $13,720 $14,706 $0,986 7.2 Other Revenue $23,737 $28,150 $4,413 $91,616 $106,336 $14,720 $91,616 $106,336 $14,720 16.1 Capital and Other Reimbursements $130,308 $54,187 (76,121) $420,651 $279,069 (142,582) $420,651 $279,069 (142,582) (33.9) Total Revenue $233,002 $219,209 ($3,793) $810,689 $906,438 $95,749 $810,689 $906,438 $95,749 11.8 Expenditures Labor : Payroll $444,426 $429,682 $14,744 $1,342,749 $1,274,326 $68,423 $1,342,749 $1,274,326 $68,423 5.1 Overtime $53,068 $55,525 (2,457) $218,935 $233,468 (14,533) $218,935 $233,468 (14,533) (6.6) Total Salaries & Wages $497,493 $485,207 $12,286 $1,561,684 $1,507,794 $53,890 $1,561,684 $1,507,794 $53,890 3.5 Health and Welfare $92,775 $102,821 (10,045) $371,133 $366,722 $4,411 $371,133 $366,722 $4,411 1.2 OPEB Current Payment $50,947 $56,417 (5,471) $203,787 $165,203 $38,584 $203,787 $165,203 $38,584 18.9 Pensions $79,533 $83,012 (3,479) $318,859 $330,074 (11,215) $318,859 $330,074 (11,215) (3.5) Other Fringe Benefits $54,331 $52,633 $1,698 $177,774 $174,886 $2,888 $177,774 $174,886 $2,888 1.6 Total Fringe Benefits $277,586 $294,883 ($17,297) $1,071,554 $1,036,885 $34,669 $1,071,554 $1,036,885 $34,669 3.2 Contribution to GASB Fund $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 - Reimbursement Overhead $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 - Labor $775,080 $780,090 ($5,010) $2,633,238 $2,544,679 $88,559 $2,633,238 $2,544,679 $88,559 3.4 Non-Labor : Electric Power $24,347 $21,261 $3,086 $107,073 $89,593 $17,480 $107,073 $89,593 $17,480 16.3 Fuel $9,215 $8,221 $0,994 $35,226 $33,322 $1,904 $35,226 $33,322 $1,904 5.4 Insurance $0.000 $7,483 (7,483) $9,714 $10,832 (1,118) $9,714 $10,832 (1,118) (11.5) Claims $11,592 $4,846 $6,746 $46,370 $17,118 $29,252 $46,370 $17,118 $29,252 63.1 Paratransit Service Contracts $34,313 $23,931 $10,382 $130,725 $105,194 $25,531 $130,725 $105,194 $25,531 19.5 Maintenance and Other Operating Contracts $27,349 $32,971 (5,622) $107,441 $121,786 (14,345) $107,441 $121,786 (14,345) (13.4) Professional Service Contracts $12,267 $9,196 $3,071 $47,019 $45,517 $1,502 $47,019 $45,517 $1,502 3.2 Materials & Supplies $35,433 $28,304 $7,129 $141,638 $106,599 $35,039 $141,638 $106,599 $35,039 24.7 Other Business Expenses $4,694 $5,916 (1,222) $15,621 $19,173 (3,552) $15,621 $19,173 (3,552) (22.7) Non-Labor $159,210 $142,129 $17,081 $640,826 $549,134 $91,692 $640,826 $549,134 $91,692 14.3 Other Expense Adjustments: Other $0.000 $0.000 - $0.000 $0.000 - $0.000 $0.000 - - Other Expense Adjustments $0.000 $0.000 - $0.000 $0.000 - $0.000 $0.000 - - Total Expenditures before Depreciation and OPEB $934,290 $922,219 $12,071 $3,274,064 $3,093,813 $180,251 $3,274,064 $3,093,813 $180,251 5.5 Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 100.0 GASB 75 OPEB Expense Adjustment $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 - GASB 68 Pension Adjustment $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 - Environmental Remediation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 - Total Expenditures $934,290 $922,219 $12,071 $3,274,064 $3,093,813 $180,251 $3,274,064 $3,093,813 $180,251 5.5 Net Surplus/(Deficit) (681,287) (703,010) (21,723) (2,463,375) (2,187,375) $276,000 (2,463,375) (2,187,375) $276,000 11.2
+```
+[p111_c0004] Note: Totals may not add due to rounding
+[p111_c0005] _Adopted: Final FY21_
+[p111_c0006] _Master Page # 111 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 112
+
+[p112_c0001] _Table 5_
+### [p112_c0002] MTA NEW YORK CITY TRANSIT FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET EXPLANATION OF VARIANCES BETWEEN THE ADOPTED BUDGET AND ACTUAL CASH BASIS Apr FY21 ($ in millions)
+[p112_c0003]
+
+```text
+Operating Receipts or Disbursements MONTH YEAR TO DATE Favorable (Unfavorable) Variance Reason for Variance Favorable (Unfavorable) Variance Reason for Variance $ % $ % Farebox Receipts 37.9 38.3 Mainly due to higher ridership 223.6 74.9 Mainly due to higher ridership Other Operating Receipts 4.4 18.6 Largely favorable timing of school fare reimbursements 14.7 16.1 Largely favorable timing of school fare reimbursements Capital and Other Reimbursements (76.1) (58.4) Unfavorable timing of reimbursement receipts (142.6) (33.9) Unfavorable timing of reimbursement receipts Payroll 14.7 3.3 Primarily due to vacancies 68.4 5.1 Primarily due to vacancies Overtime (2.5) (4.6) Primarily vacancy coverage (14.5) (6.6) Primarily vacancy coverage and adverse winter weather results Health & Welfare/OPEB Current (15.5) (10.8) Unfavorable timing of payments 43.0 7.5 Favorable timing of rebates, vacancies, and lower rates Pension (3.5) (4.4) Unfavorable timing of expenses (11.2) (3.5) Unfavorable timing of expenses Other Fringe Benefits 1.7 3.1 Primarily vacancy savings partly offset by unfavorable capital project support credits 2.9 1.6 Primarily vacancy savings partly offset by unfavorable capital project support credits Electric Power 3.1 12.7 Mainly lower consumption 17.5 16.3 Lower consumption and favorable rates Fuel 1.0 10.8 Lower consumption partly offset by unfavorable pricing 1.9 5.4 Lower consumption partly offset by unfavorable pricing Claims 6.7 58.2 Fewer settlements and favorable timing of payments 29.3 63.1 Fewer settlements and favorable timing of payments Paratransit Service Contracts 10.4 30.3 Fewer trips and favorable expense timing 25.5 19.5 Fewer trips and favorable expense timing Maintenance and Other Operating Contracts (5.6) (20.6) Largely unfavorable timing of expenses and higher COVID vendor costs (14.3) (13.4) Largely unfavorable timing of expenses and higher COVID vendor costs Professional Service Contracts 3.1 25.0 Favorable timing of payments 1.5 3.2 Favorable timing of payments Materials & Supplies 7.1 20.1 Reflects retroactive adjustment of prior year expense to reimbursable, and favorable timing of expenses 35.0 24.7 Reflects retroactive adjustment of prior year expense to reimbursable, and favorable timing of expenses
+```
+[p112_c0004] _Master Page # 112 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 113
+
+### [p113_c0001] MTA NEW YORK CITY TRANSIT February Financial Plan - 2021 Adopted Cash Conversion (Cash Flow Adjustments) Apr FY21 ($ in Millions)
+[p113_c0002] 5/12/2021 11:37 AM
+[p113_c0003]
+
+```text
+Month Year-To-Date Adopted Actual Favorable (Unfavorable) Variance Adopted Actual Favorable (Unfavorable) Variance Percent Revenue Farebox Revenue $0.000 (31.861) (31.861) - (77.115) (77.115) - Fare Reimbursement (8.171) (8.171) $0.000 (31.455) (12.191) $19.264 61.2 Paratransit Reimbursement (0.013) $7.819 $7.832 (0.052) $13.744 $13.796 - Other Operating Revenue (10.525) (14.177) (3.652) (42.102) (44.282) (2.180) (5.2) Other Revenue (18.710) (14.530) $4.180 (73.609) (42.729) $30.880 42.0 Capital and Other Reimbursements $0.000 (64.167) (64.167) $0.000 (75.125) (75.125) - Total Revenue (18.710) (110.557) (91.848) (73.609) (194.869) (121.360) (164.9) Expenses Labor : Payroll (121.291) (126.059) (4.768) (49.336) (49.408) (0.072) (0.1) Overtime $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 - Total Salaries & Wages (121.291) (126.059) (4.768) (49.336) (49.408) (0.072) (0.1) Health and Welfare $0.000 (14.145) (14.145) $0.000 (45.950) (45.950) - OPEB Current Payment $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 - Pensions $0.000 (1.520) (1.520) $0.000 (6.082) (6.082) - Other Fringe Benefits $9.983 $10.509 $0.527 $78.821 $78.975 $0.154 0.2 Total Fringe Benefits $9.983 (5.155) (15.138) $78.821 $26.943 (51.878) (65.8) Contribution to GASB Fund $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 - Reimbursement Overhead $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 - Labor (111.308) (131.214) (19.906) $29.485 (22.464) (51.950) (176.2) Non-Labor : Electric Power $0.000 (1.303) (1.303) (2.731) (0.580) $2.151 78.8 Fuel $0.000 (0.256) (0.256) $0.000 (1.694) (1.694) - Insurance $6.682 (1.758) (8.440) $17.440 $13.554 (3.886) (22.3) Claims $6.895 $13.641 $6.746 $27.580 $56.832 $29.252 106.1 Paratransit Service Contracts $0.000 $4.761 $4.761 $0.500 $2.258 $1.758 351.6 Maintenance and Other Operating Contracts $0.000 $11.556 $11.556 $0.000 $15.543 $15.543 - Professional Service Contracts $2.250 $5.456 $3.206 $4.500 $3.220 (1.280) (28.5) Materials & Supplies (3.458) (13.212) (9.754) (13.833) (10.772) $3.062 22.1 Other Business Expenses $0.000 $0.032 $0.032 $0.000 (1.150) (1.150) - Non-Labor $12.369 $16.916 $6.547 $33.456 $77.212 $43.756 130.8 Other Expense Adjustments: Other $0.000 $0.000 - $0.000 $0.000 - - Other Expense Adjustments $0.000 $0.000 - $0.000 $0.000 - - Total Expenses before Depreciation and OPEB (98.940) (112.299) (13.359) $62.942 $54.747 (8.194) (13.0) Depreciation $164.839 $174.373 $9.534 $659.354 $697.854 $38.500 5.8 GASB 75 OPEB Expense Adjustment $0.000 $0.000 $0.000 $10.000 $0.000 (10.000) (100.0) GASB 68 Pension Adjustment $0.000 $0.000 $0.000 $19.288 $0.000 (19.288) (100.0) Environmental Remediation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 - Total Expenditures $65.889 $62.074 (3.825) $751.584 $752.601 $1.017 0.1 Total Cash Conversion Adjustments $47.189 (48.483) (95.672) $677.975 $557.632 (120.343) (17.8)
+```
+[p113_c0004] Note: Totals may not add due to rounding
+[p113_c0005] Note: Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current month's actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results.
+[p113_c0006] _Adopted, Final FY21_
+[p113_c0007] _Master Page # 113 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 114
+
+### [p114_c0001] NYCT – Non-Reimbursable Overtime Variance
+### [p114_c0002] April 2021 and YTD budget vs. variance
+[p114_c0003] $M
+> [p114_c0004] ■ Variance - Unfavorable ■ Variance - Favorable ■ Budget
+[p114_c0005] Annual Budget Adopted: $532M
+> [p114_c0006] Division Apr 20 Apr 21 YTD Apr 21 YTD Apr 20 YTD Apr 21 DOS - Stations $160 $172 $175 $199 DOS - Svc Delivery $34 $37 $44 $7 Buses - Mtoc/Other $10 $12 $17 $24 Buses - Operation $10 $12 $17 $24 DOS - MOW $10 $12 $17 $24 Annotations: +25% (total variance), +80% (total variance), -12% (total variance)
+### [p114_c0007] Overview
+- [p114_c0008] • Overall increase of $39.8M or 25% compared to April YTD 2020 • Overall decrease of -$11.5M or -5% compared to April YTD 2019 • $23.9M or 12% above 2021 YTD budget • Subways $10.0M overrun; $9.6M for snowstorm response; $9.3M for vacancy coverage; $6.7M overrun under review; $2.9M for additional operating requirements; remaining underruns of -$18.4M in SAP and Covid-19 • Buses $14.9M overrun; $14.7M for vacancy coverage; $2.3M under review; $2.0M weather overrun; -$1.5M for COVID-19 response; -$2.6M scheduled overtime underrun
+### [p114_c0009] YTD variance by division
+[p114_c0010] $M
+> [p114_c0011] Division Variance ($M) Callout DOS - Stations $23.9 $6.7M of overrun is under review; $3.2M due to snowstorm response offset by -$3.5M underrun in SAP and Covid-19 DOS - Svc Delivery $5.9 $9.3M overrun due to vacancy coverage offset by -$2.6M due to reduced SAP and Covid-19 expense Buses - Mtoc/Other $4.6 Overrun due to $2.1M in vacancy coverage for service supervision and $2.0M for severe snowstorm response; remaining $0.5M due to Covid-19 response Buses - Operation $10.3 Vacancy coverage accounts for $12.6M overrun; additional $2.3M under review; offset by underruns in Covid-19 and scheduled service DOS - MOW -$1.8 -$7.1M underrun in SAP expense; $5.4M overrun for severe weather response Other -$1.0 Total YTD Apr 21 $23.9
+[p114_c0012] Source: Adopted budget, GL actuals for actual overtime spending.
+[p114_c0013] _1_
+[p114_c0014] _Master Page # 114 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 115
+
+### [p115_c0001] NYCT – Reimbursable Overtime Variance
+### [p115_c0002] April 2021 and YTD budget vs. variance
+[p115_c0003] $M
+[p115_c0004] Variance - Unfavorable Variance - Favorable Budget
+[p115_c0005] Annual Budget Adopted: $125M
+### [p115_c0006] Overview
+- [p115_c0007] • Overall increase of $0.6M or 2% compared to April YTD 2020 • Overall decrease of -$40.4M or -54% compared to April YTD 2019 • -$9.4M or 28% below 2021 YTD budget • Subways -$4.1M underrun due to lower capital support requirements and severe weather project cancellations • Buses -$2.5M underrun due to lower capital support requirements
+### [p115_c0008] YTD variance by division
+[p115_c0009] $M
+> [p115_c0010] Division April 20 Apr 21 YTD Apr 20 YTD Apr 21 Buses - Mtce/Other $34 $46 $34 DOS - MOW $17 $43 -$3.0 DOS - Stations $12 $16 -$1.0 DOS - / Service Delivery -$8 -$13 -$0.3 Buses - Operation -$4 -$9 -$3.0 Other -$9 -$13 -$2.8 Total $9 $12 -$9.4 Annotations for April 2021 variance: Overrun due to increasing capital support requirements Underrun due to reduced capital work requirements Underrun due to reduced capital support requirements Underrun due to lower capital project support requirements Underrun due to timing of payroll deviations
+[p115_c0011] Source: Adopted budget, GL actuals for actual overtime spending.
+[p115_c0012] _2_
+[p115_c0013] _Master Page # 115 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 116
+
+### [p116_c0001] NYCT – Total Overtime Variance
+### [p116_c0002] April 2021 and YTD budget vs. variance
+[p116_c0003] $M
+[p116_c0004] ■ Variance - Unfavorable ■ Variance - Favorable ■ Budget
+[p116_c0005] Annual Budget Adopted: $657M
+> [p116_c0006] Period Budget Variance - Favorable Variance - Unfavorable Total Apr 20 $51 -$18 (-53%) $2 $33 Apr 21 $53 -$25 (-13%) $2 $56 YTD Apr 20 $218 -$25 (-13%) $0 $193 YTD Apr 21 $219 -$0 $15 (6%) $233
+[p116_c0007] Source: Adopted budget, GL actuals for actual overtime spending.
+### [p116_c0008] Overview
+- [p116_c0009] • Overall increase of $40.4M or 21% compared to April YTD 2020 • Overall decrease of -$51.9M or -18% compared to April YTD 2019 • $14.5M or 6% above 2021 YTD budget
+### [p116_c0010] YTD variance by division
+[p116_c0011] $M
+> [p116_c0012] Division Variance ($M) DOS - Stations $5.4 DOS - Service Delivery $5.6 Buses - Mtce/Other $5.1 Buses - Operation $7.3 DOS - MOW -$4.8 Other -$3.8 Total $14.5
+[p116_c0013] _3_
+[p116_c0014] _Master Page # 116 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 117
+
+### [p117_c0001] MTA NEW YORK CITY TRANSIT FEBRUARY FINANCIAL PLAN 2021 TOTAL POSITIONS BY FUNCTION AND DEPARTMENT NON-REIMBURSABLE AND FULL-TIME POSITIONS/FULL-TIME EQUIVALENTS April 2021
+[p117_c0002]
+
+```text
+Adopted Actual Variance Fav./(Unfav) Explanation Administration: Office of the President 25 21 4 Law 240 233 7 Office of the EVP 10 17 (7) Human Resources 196 184 12 Office of Management and Budget 30 26 4 Strategy & Customer Experience 180 172 8 Non-Departmental - 0 0 Labor Relations 78 73 5 Office of People & Business Transformation 14 11 3 Materiel 153 196 (43) Controller 102 101 1 Total Administration 1,028 1,034 (6) Operations: Subways Service Delivery 7,916 7,650 266 Vacancies mainly due to Train Operators and Conductors. Subways Operations Support/Admin 395 404 (9) Subways Stations 2,316 2,303 13 Subtotal Subways 10,627 10,357 270 Buses 10,782 10,502 280 Vacancies mainly due to Supt and Bus Operators. Paratransit 183 179 4 Operations Planning 364 313 51 Vacancies mainly due to Supt and hourlies. Revenue Control 560 548 12 Non-Departmental 173 - 173 Total Operations 22,689 21,899 790 Maintenance: Subways Operations Support/Admin 88 74 14 Subways Engineering 312 305 7 Subways Car Equipment 4,663 4,187 476 Vacancies mainly due to Cleaners. Subways Infrastructure 1,870 1,818 52 Vacancies mainly due to hourlies. Subways Elevators & Escalators 452 472 (20) Subways Stations 3,324 3,548 (224) Excesses mainly due to Cleaners. Subways Track 3,110 2,752 358 Vacancies mainly due to Supv and hourlies. Subways Power 648 621 27 Subways Signals 1,704 1,600 104 Vacancies mainly due to hourlies. Subways Electronic Maintenance 1,555 1,439 116 Vacancies mainly due to PTE and hourlies. Subtotal Subways 17,726 16,816 910 Buses 3,398 3,288 110 Vacancies mainly due to hourlies. Supply Logistics 523 514 9 System Safety 85 78 7 Non-Departmental (49) - (49) Total Maintenance 21,683 20,696 987 Engineering: Capital Program Management 1,302 1,121 181 Vacancies mainly due to Mgrs and PTEs Total Engineering/Capital 1,302 1,121 181 Public Safety: Security 633 580 53 Vacancies mainly due to Supv and hourlies. Total Public Safety 633 580 53 Total Positions 47,335 45,330 2,005 Non-Reimbursable 42,620 41,284 1,337 Reimbursable 4,715 4,046 669 Total Full-Time 47,178 45,222 1,956 Total Full-Time Equivalents 157 108 49
+```
+[p117_c0003] _J:\BUSINESS\2021Bud\Headcount Reporting 2021\2021-04\2021_April_Total Positions_MTA submission_form_051021_
+[p117_c0004] _Master Page # 117 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 118
+
+### [p118_c0001] MTA NEW YORK TRANSIT FEBRUARY FINANCIAL PLAN 2021 TOTAL POSITIONS by FUNCTION and OCCUPATION FULL-TIME POSITIONS and FULL-TIME EQUIVALENTS April 2021
+[p118_c0002]
+
+```text
+FUNCTION/OCCUPATION Adopted Actual Variance Fav./(Unfav) Explanation Administration: Managers/Supervisors 326 333 (7) Professional, Technical, Clerical 670 670 0 Operational Hourlies 32 31 1 Total Administration 1,028 1,034 (6) Operations: Managers/Supervisors 2,791 2,593 198 Professional, Technical, Clerical 491 480 11 Operational Hourlies 19,407 18,826 581 Total Operations 22,689 21,899 790 Maintenance: Managers/Supervisors 3,877 3,611 266 Professional, Technical, Clerical 882 809 73 Operational Hourlies 16,924 16,276 648 Total Maintenance 21,683 20,696 987 Engineering/Capital: Managers/Supervisors 353 280 73 Professional, Technical, Clerical 947 839 108 Operational Hourlies 2 2 0 Total Engineering/Capital 1,302 1,121 181 Public Safety: Managers/Supervisors 266 237 29 Professional, Technical, Clerical 32 32 0 Operational Hourlies 335 311 24 Total Public Safety 633 580 53 Total Positions: Managers/Supervisors 7,613 7,054 559 Professional, Technical, Clerical 3,022 2,830 192 Operational Hourlies 36,700 35,446 1,254 Total Positions 47,335 45,330 2,005
+```
+[p118_c0003] _J:\BUSINESS\2021Bud\Headcount Reporting 2021\2021-04\2021_April_Total Positions_MTA submission_form_051021_
+[p118_c0004] _Total Positions by OG_
+[p118_c0005] _Master Page # 118 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 119
+
+### [p119_c0001] Preliminary April 2021 Report: Staten Island Railway
+[p119_c0002] The purpose of this report is to provide the preliminary April 2021 financial results on an accrual basis. The accrual basis is presented on both a non-reimbursable and reimbursable account basis. These results are compared to the Adopted Budget (budget).
+### [p119_c0003] Summary of Preliminary Financial Results
+[p119_c0004] Preliminary ridership and accrual results, versus budget, are summarized as follows:
+- [p119_c0005] • April 2021 Staten Island Railway ridership of 108,990 was 20,112 rides (22.6 percent) above budget. • Compared with April 2019 ridership of 356,288, Staten Island Railway ridership in April 2021 was lower by 247,298 (69.4 percent). • April 2021 Staten Island Railway Year-to-date (YTD) ridership of 358,890 was 543,608 (60.2 percent) below 2020 YTD ridership. • Compared with April 2019 YTD ridership of 1,455,950, Staten Island Railway ridership in April 2021 was lower by 1,097,060 (75.4 percent). • Average weekday ridership of 4,718 was 3,954 rides (517.5 percent) higher than in April 2020. • April 2021 Farebox revenue of $0.156 million was $0.017 million (11.9 percent) above budget. The overrun was due to higher than expected ridership. ▪ Operating expenses were under budget by $0.422 million (7.8 percent). ○ Labor expenses were less than budget by $0.298 million (6.9 percent). ○ Non-labor expenses were also less than budget by $0.124 million (11.3 percent).
+[p119_c0006] _Master Page # 119 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 120
+
+### [p120_c0001] STATEN ISLAND RAILWAY FINANCIAL AND RIDERSHIP REPORT
+[p120_c0002] April 2021
+[p120_c0003] (All data are preliminary and subject to audit)
+### [p120_c0004] Preliminary Actual Results Compared to the Adopted Budget (budget)
+[p120_c0005] April 2021 Staten Island Railway ridership of 108,990 was 20,112 rides (22.6 percent) above budget. Average weekday ridership of 4,718 was 3,954 rides (517.5 percent) higher than April 2020 and 10,679 rides (69.4 percent) lower than in April 2019. Average weekday ridership for the twelve months ending April 2021 was 3,199, which is 10,781 rides (77.1 percent) lower than the twelve months ending April 2020 and 12,772 rides (80.0 percent) lower than in the twelve months ending April 2019.
+[p120_c0006] Operating revenue of $0.237 million was below budget by $0.110 million (31.7 percent).
+- [p120_c0007] • Farebox revenue of $0.156 million was $0.017 million (11.9 percent) above budget. The overrun was due to higher than expected ridership. • Other Revenue of $0.081 million was $0.126 million (61.0 percent) below budget due to lower school fare reimbursement and advertising revenue.
+[p120_c0008] Year-to-date operating revenue of $0.828 million was $0.432 million (34.3 percent) under budget, due to underruns in school fare reimbursement and advertising revenue, partly offset by favorable farebox revenue.
+[p120_c0009] Nonreimbursable expenses in April, before depreciation, GASB 75 OPEB Expense Adjustment and GASB 68 Pension Adjustment, were less than budget by $0.422 million (7.8 percent).
+- [p120_c0010] • Labor expenses underran budget by $0.298 million (6.9 percent), due primarily to Payroll expenses were below budget by $0.280 million (12.7 percent) attributable to vacancies. Health and Welfare including OPEB current payments of $0.107 million (12.3 percent) underran resulting from favorable prescription drug rates, favorable medical rates, vacancies and the favorable timing of expenses/credits. Pension underran budget by $0.077 million (10.7 percent). Overtime expenses overrun by $0.195 million (115.9 percent), attributable to vacancies providing general offset to payroll. • Non-labor expenses were also below budget by a net $0.124 million (11.3 percent), including an underrun in Electric Power of $0.86 million (26.4 percent) due to timing.
+[p120_c0011] Year-to-date , expenses were below budget by $1.015 million (4.6 percent), including underruns in labor expenses of $0.368 million (2.1 percent), which were driven mostly by an underrun in Health and Welfare expenses including OPEB current payments of $0.453 million (13.0 percent) resulting from favorable prescription drug rates, medical rates, and timing of expenses/credits. Payroll expenses were less by $0.356 million (4.0 percent), due mainly to vacancies. Non-labor expenses were less than budget by a net $0.646 million (14.7 percent), including an underrun in Professional Services contracts of $0.489 million (52.3 percent) due to timing.
+[p120_c0012] Depreciation expenses of $0.891 million were below forecast by $0.109 million (10.9 percent). There are no entries booked for GASB 68 Pension adjustment neither GASB 75 OPEB expense adjustment as of April reporting close.
+[p120_c0013] Operating cash deficit (excluding subsidies) reported in April of $5.855 million was $0.734 million (14.3 percent) favorable to budget. On a year-to-date basis, the operating cash deficit was $19.256 million, which was $0.944 million (4.7 percent) favorable to budget.
+[p120_c0014] _Master Page # 120 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 121
+
+### [p121_c0001] MTA STATEN ISLAND RAILWAY February Financial Plan - 2021 Adopted Ridership (Utilization) Actual to Budget Apr FY21 (# in Millions)
+[p121_c0002] 5/10/2021 12:16 PM
+[p121_c0003]
+
+```text
+Month Year-To-Date Adopted Actual Variance Favorable (Unfavorable) Adopted Actual Variance Favorable (Unfavorable) Percent Percent Ridership Ridership - Subway 0.089 0.109 0.020 22.6 0.281 0.354 0.073 25.8 Total Ridership 0.089 0.109 0.020 22.6 0.281 0.354 0.073 25.8 FareBox Revenue Farebox Revenue $0.139 $0.156 $0.017 11.9 $0.431 $0.546 $0.115 26.6 Total Farebox Revenue $0.139 $0.156 $0.017 11.9 $0.431 $0.546 $0.115 26.6
+```
+[p121_c0004] Note: Totals may not add due to rounding
+[p121_c0005] _Adopted.FinalFY21_
+[p121_c0006] _Master Page # 121 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 122
+
+### [p122_c0001] MTA STATEN ISLAND RAILWAY Apr - 2021 Adopted Accrual Statement of Operations By Category Month - Apr 2021 ($ in Millions)
+[p122_c0002]
+
+```text
+Nonreimbursable Var Percent Reimbursable Total Favorable Actual Favorable Actual Favorable Actual Favorable Actual Adopted (Unfavorable) Variance Percent Variance Percent Revenue Farebox Revenue: Farebox Revenue $0.139 $0.156 $0.156 $0.017 11.9 $0.000 $0.000 - - $0.139 $0.156 $0.017 Other Revenue $0.207 $0.081 $0.081 (0.126) (61.0) $0.000 $0.000 - - $0.207 $0.081 (0.126) Capital and Other Reimbursements $0.000 $0.000 $0.000 - - $0.000 $0.000 (0.549) (67.1) $0.000 $0.000 (0.549) Total Revenue $0.346 $0.237 $0.237 (0.110) (31.7) $0.630 $0.081 (0.549) (67.1) $0.976 $0.318 (0.659) Expenses Labor: Payroll $2.215 $1.935 $1.935 $0.280 12.7 $0.328 $0.018 $0.309 94.4 $2.543 $1.953 $0.590 Overtime $0.168 $0.363 $0.363 (0.195) (115.9) $0.092 $0.023 $0.068 74.6 $0.259 $0.386 (0.126) Total Salaries & Wages $2.383 $2.297 $2.297 $0.086 3.6 $0.419 $0.041 $0.378 90.1 $2.802 $2.339 $0.464 Health and Welfare $0.637 $0.461 $0.461 $0.177 27.7 $0.000 $0.000 - - $0.637 $0.461 $0.177 OPEB Current Payment $0.234 $0.303 $0.303 (0.070) (29.8) $0.000 $0.000 $0.000 - $0.234 $0.303 (0.070) Pension $0.724 $0.646 $0.646 $0.077 10.7 $0.000 $0.000 $0.000 - $0.724 $0.646 $0.077 Other Fringe Benefits $0.325 $0.298 $0.298 $0.027 8.2 $0.211 $0.032 $0.179 84.7 $0.536 $0.331 $0.205 Total Fringe Benefits $1.920 $1.708 $1.708 $0.211 11.0 $0.211 $0.032 $0.178 84.6 $2.130 $1.741 $0.390 Contribution to GASB Fund $0.000 $0.000 $0.000 - - $0.000 $0.000 - - $0.000 $0.000 - Reimbursable Overhead $0.000 (0.001) (0.001) $0.001 - $0.000 $0.001 (0.001) - $0.000 $0.000 - Labor $4.303 $4.005 $4.005 $0.298 6.9 $0.630 $0.075 $0.555 88.2 $4.933 $4.080 $0.853 Non-Labor: Electric Power $0.326 $0.240 $0.240 $0.086 26.4 $0.000 $0.000 - - $0.326 $0.240 $0.086 Fuel $0.022 $0.027 $0.027 (0.004) (19.9) $0.000 $0.000 - - $0.022 $0.027 (0.004) Insurance $0.113 $0.083 $0.083 $0.029 26.2 $0.000 $0.000 - - $0.113 $0.083 $0.029 Claims $0.083 $0.032 $0.032 $0.051 61.3 $0.000 $0.000 - - $0.083 $0.032 $0.051 Paratransit Service Contracts $0.000 $0.000 $0.000 - - $0.000 $0.000 - - $0.000 $0.000 - Maintenance and Other Operating Contracts $0.178 $0.203 $0.203 (0.024) (13.6) $0.000 $0.000 - - $0.178 $0.203 (0.024) Professional Service Contracts $0.234 $0.218 $0.218 $0.016 6.7 $0.000 $0.000 - - $0.234 $0.218 $0.016 Materials & Supplies $0.140 $0.126 $0.126 $0.014 9.9 $0.000 $0.000 (0.006) - $0.140 $0.133 $0.008 Other Business Expenses $0.002 $0.045 $0.045 (0.043) - $0.000 $0.000 - - $0.002 $0.045 (0.043) Non-Labor $1.098 $0.974 $0.974 $0.124 11.3 $0.000 $0.006 (0.006) - $1.098 $0.980 $0.118 Other Expense Adjustments: Other $0.000 $0.000 $0.000 - - $0.000 $0.000 - - $0.000 $0.000 - Other Expense Adjustments $0.000 $0.000 $0.000 - - $0.000 $0.000 - - $0.000 $0.000 - Total Expenses before Depreciation and OPEB $5.401 $4.979 $4.979 $0.422 7.8 $0.630 $0.081 $0.549 87.1 $6.031 $5.060 $0.971 Depreciation $1.000 $0.891 $0.891 $0.109 10.9 $0.000 $0.000 - - $1.000 $0.891 $0.109 GASB 75 OPEB Expense Adjustment $0.000 $0.000 $0.000 $0.000 - $0.000 $0.000 - - $0.000 $0.000 - GASB 68 Pension Adjustment $0.000 $0.000 $0.000 $0.000 - $0.000 $0.000 - - $0.000 $0.000 - Environmental Remediation $0.000 $0.000 $0.000 - - $0.000 $0.000 - - $0.000 $0.000 - Total Expenses $6.401 $5.870 $5.870 $0.531 8.3 $0.630 $0.081 $0.549 87.1 $7.031 $5.951 $1.080 OPERATING SURPLUS/DEFICIT (6.054) (5.633) (5.633) $0.421 7.0 $0.000 $0.000 $0.000 100.0 (6.054) (5.633) $0.421
+```
+[p122_c0003] Note: Totals may not add due to rounding
+[p122_c0004] Note: Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results.
+[p122_c0005] _TRANSIT - RPTNG Adopted, Final FY21_
+[p122_c0006] _Master Page # 122 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 123
+
+### [p123_c0001] MTA STATEN ISLAND RAILWAY Accrual Status - 2021 Adopted April - April of 2021 By Category Year-To-Date - Apr 2021 ($ in Millions)
+[p123_c0002]
+
+```text
+Nonreimbursable Var Percent Reimbursable Total Favorable Favorable Favorable Favorable Adopted Actual Variance Percent Adopted Actual Variance Percent Adopted Actual Variance Percent Revenue Farebox Revenue: Farebox Revenue $0.431 $0.546 $0.115 26.6 $0.000 $0.000 - - $0.431 $0.546 $0.115 26.6 Other Revenue $0.829 $0.282 (0.547) (66.0) $0.000 $0.000 - - $0.829 $0.282 (0.547) (66.0) Capital and Other Reimbursements $0.000 $0.000 - - $2,507 $0.706 (1,801) (71.8) $2,507 $0.706 (1,801) (71.8) Total Revenue $1,260 $0.828 (0.432) (34.3) $2,507 $0.706 (1,801) (71.8) $3,767 $1,534 (2,233) (59.3) Expenses Labor: Payroll $8,965 $8,609 $0.356 4.0 $1,303 $0.140 $1,163 89.2 $10,268 $8,749 $1,519 14.8 Overtime $0.984 $1,044 (0.060) (6.1) $0.366 $0.233 $0.133 36.3 $1,350 $1,278 $0.073 5.4 Total Salaries & Wages $9,949 $9,653 $0.296 3.0 $1,669 $0.374 $1,295 77.6 $11,618 $10,026 $1,592 13.7 Health and Welfare $2,550 $1,801 $0.749 29.4 $0.000 $0.000 - - $2,550 $1,801 $0.749 29.4 OPEB Current Payment $0.934 $1,230 (0.296) (11.7) $0.000 $0.001 (0.001) - $0.934 $1,230 (0.296) (11.7) Pension $2,894 $3,220 (0.326) (11.3) $0.000 $0.000 - - $2,894 $3,220 (0.326) (11.3) Other Fringe Benefits $1,357 $1,412 (0.055) (4.1) $0.838 $0.303 $0.535 63.8 $2,195 $1,715 $0.480 21.9 Total Fringe Benefits $7,735 $7,663 $0.072 0.9 $0.838 $0.304 $0.534 63.7 $8,573 $7,967 $0.607 7.1 Contribution to GASB Fund $0.000 $0.000 - - $0.000 $0.000 - - $0.000 $0.000 - - Reimbursable Overhead $0.000 $0.000 - - $0.000 $0.002 (0.002) - $0.000 $0.002 (0.002) - Labor $17,684 $17,316 $0.368 2.1 $2,507 $0.679 $1,828 72.9 $20,191 $17,995 $2,197 10.9 Non-Labor: Electric Power $1,302 $1,217 $0.085 6.5 $0.000 $0.000 - - $1,302 $1,217 $0.085 6.5 Fuel $0.090 $0.104 (0.014) (15.5) $0.000 $0.000 - - $0.090 $0.104 (0.014) (15.5) Insurance $0.450 $0.451 (0.001) (0.1) $0.000 $0.000 - - $0.450 $0.451 (0.001) (0.1) Claims $0.331 $0.128 $0.203 61.3 $0.000 $0.000 - - $0.331 $0.128 $0.203 61.3 Paratransit Service Contracts $0.000 $0.000 - - $0.000 $0.000 - - $0.000 $0.000 - - Maintenance and Other Operating Contracts $0.713 $0.473 $0.240 33.7 $0.000 $0.000 - - $0.713 $0.473 $0.240 33.7 Professional Service Contracts $0.936 $0.446 $0.489 52.3 $0.002 $0.002 (0.002) - $0.936 $0.448 $0.488 52.1 Materials & Supplies $0.561 $0.772 (0.211) (37.5) $0.000 $0.025 (0.025) - $0.561 $0.797 (0.236) (42.1) Other Business Expenses $0.010 $0.156 (0.146) - $0.000 $0.000 - - $0.010 $0.156 (0.146) - Non-Labor $4,393 $3,746 $0.646 14.7 $0.000 $0.027 (0.027) - $4,393 $3,773 $0.619 14.1 Other Expense Adjustments: Other $0.000 $0.000 - - $0.000 $0.000 - - $0.000 $0.000 - - Other Expense Adjustments $0.000 $0.000 - - $0.000 $0.000 - - $0.000 $0.000 - - Total Expenses before Depreciation and OPEB $22,077 $21,062 $1,015 4.6 $2,507 $0.706 $1,801 71.8 $24,584 $21,768 $2,816 11.5 Depreciation $4,000 $3,570 $0.430 10.8 $0.000 $0.000 - - $4,000 $3,570 $0.430 10.8 GASB 75 OPEB Expense Adjustment $0.275 $0.275 $0.000 100.0 $0.000 $0.000 - - $0.275 $0.275 $0.000 100.0 GASB 68 Pension Adjustment (0.275) (0.275) (0.000) (100.0) $0.000 $0.000 - - (0.275) (0.275) (0.000) (100.0) Environmental Remediation $0.000 $0.000 - - $0.000 $0.000 - - $0.000 $0.000 - - Total Expenses $26,077 $24,632 $1,445 5.5 $2,507 $0.706 $1,801 71.8 $28,584 $25,338 $3,246 11.4 OPERATING SURPLUS/DEFICIT (24,817) (23,804) $1,013 4.1 $0.000 $0.000 $0.000 916.0 (24,817) (23,804) $1,013 4.1
+```
+[p123_c0003] Note: Totals may not add due to rounding
+[p123_c0004] Note: Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results.
+[p123_c0005] _TRANSIT - RPTNG Adopted, Final FY21_
+[p123_c0006] _Master Page # 123 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 124
+
+[p124_c0001] _Table 3_
+### [p124_c0002] MTA STATEN ISLAND RAILWAY FEBRUARY FINANCIAL PLAN- 2021 ADOPTED BUDGET EXPLANATION OF VARIANCES BETWEEN FEBRUARY 2021 RESULTS AND THE FEBRUARY FINANCIAL PLAN APRIL 2021 ($ in millions)-Accrual Basis
+[p124_c0003]
+
+```text
+Generic Revenue or Expense Category Non Reimb. or Reimb. MONTH YEAR-TO-DATE Favorable/ (Unfavorable) Variance Reason for Variance Favorable/ (Unfavorable) Variance Reason for Variance $ % $ % Farebox Revenue Non Reimb. 0.017 11.9 Favorable due to higher than anticipated ridership 0.115 26.6 Favorable due to higher than anticipated ridership Other Revenue Non Reimb. (0.126) (61.0) Unfavorable due to minimal reimbursement for school fares (0.547) (66.0) Unfavorable due to minimal reimbursement for school fares Payroll Non Reimb. 0.280 12.7 Favorable due to vacancies 0.356 4.0 Favorable due to vacancies Overtime Non Reimb. (0.195) (115.9) Unfavorable primarily due to vacancies (0.060) (6.1) Unfavorable primarily due to timing of work assignment and weather Health and Welfare (including OPEB current payment) Non Reimb. 0.107 12.3 Favorable rates due to prescription drug contract rebates and vacancy savings 0.453 13.0 Favorable rates due to prescription drug contract rebates and vacancy savings Pension Non Reimb. 0.077 10.7 Favorable timing of expenses (0.326) (11.3) Unfavorable timing of expenses Other Fringe Benefits Non Reimb. 0.027 8.2 Favorable accrual for Workers Compensation (0.055) (4.1) Unfavorable accrual for Workers Compensation Reimbursable Overhead Non Reimb. 0.001 0.0 0.000 0.0 Electric Power Non Reimb. 0.086 26.4 Favorable primarily due to timing of bills 0.085 6.5 Favorable primarily due to timing of bills Maintenance & Other Operating Contracts Non Reimb. (0.024) (13.6) Unfavorable due to the timing of material requirements 0.240 33.7 Favorable due to timing of Covid-19 cleaning expenses Professional Service Contracts Non Reimb. 0.016 6.7 Favorable due to timing of Covid-19 cleaning expenses 0.489 52.3 Favorable due to timing of Covid-19 cleaning expenses Materials and Supplies Non Reimb. 0.014 9.9 Favorable due to the timing of material requirements (0.211) (37.5) Unfavorable due to the timing of material requirements Payroll Reimb. 0.309 94.4 Favorable due to constrained project work caused by COVID-19 1.163 89.2 Favorable due to constrained project work caused by COVID-19 Overtime Reimb. 0.068 74.6 Favorable due to backfill of vacancies 0.133 36.3 Favorable due to less backfill of vacancies since the pandemic began Materials and Supplies Reimb. (0.006) 0.0 Draw down of project materials (0.025) 0.0 Draw down of project materials
+```
+[p124_c0004] _Master Page # 124 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 125
+
+### [p125_c0001] MTA STATEN ISLAND RAILWAY February Financial Plan - 2021 Adopted Cash Receipts and Expenditures Apr FY21 ($ in Millions)
+[p125_c0002] 5/10/2021 11:56 AM
+[p125_c0003]
+
+```text
+Month Year-To-Date Adopted Actual Favorable (Unfavorable) Variance Adopted Actual Favorable (Unfavorable) Variance Percent Receipts Farebox Revenue $0.139 $0.136 (0.004) $0.431 $0.508 $0.077 17.9 Other Revenue $0.942 $0.017 (0.925) $1.157 $0.238 (0.920) (79.5) Capital and Other Reimbursements $0.630 $0.131 (0.500) $2.507 $1.378 (1.129) (45.0) Total Revenue $1.711 $0.283 (1.428) $4.095 $2.124 (1.972) (48.1) Expenditures Labor : Payroll $3.466 $3.298 $0.168 $10.711 $9.865 $0.847 7.9 Overtime $0.259 $0.000 $0.259 $1.350 $0.000 $1.350 100.0 Total Salaries & Wages $3.726 - $0.428 $12.062 - $2.197 18.2 Health and Welfare $0.637 $0.491 $0.147 $2.550 $2.577 (0.027) (1.1) OPEB Current Payment $0.234 $0.086 $0.148 $0.934 $0.458 $0.476 50.9 Pensions $0.724 $0.646 $0.077 $2.894 $3.220 (0.326) (11.3) Other Fringe Benefits $0.456 $0.285 $0.171 $1.629 $1.240 $0.389 23.9 Total Fringe Benefits $2.050 $1.508 $0.542 $8.007 $7.496 $0.511 6.4 Contribution to GASB Fund $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 - Reimbursable Overhead $0.000 $0.000 - $0.000 $0.000 - - Labor $5.776 $4.806 $0.970 $20.068 $17.360 $2.708 13.5 Non-Labor : Electric Power $0.326 $0.287 $0.038 $1.302 $1.275 $0.027 2.1 Fuel $0.023 $0.031 (0.008) $0.090 $0.148 (0.057) (63.6) Insurance $0.113 $0.020 $0.093 $0.450 $0.255 $0.195 43.4 Claims $0.041 $0.044 (0.002) $0.164 $0.087 $0.077 47.0 Paratransit Service Contracts $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 - Maintenance and Other Operating Contracts $0.178 $0.187 (0.009) $0.713 $0.439 $0.274 38.5 Professional Service Contracts $0.234 $0.160 $0.074 $0.493 $0.493 $0.000 0.0 Materials & Supplies $0.140 $0.565 (0.425) $0.561 $1.077 (0.516) (91.9) Other Business Expenses $0.002 $0.038 (0.036) $0.010 $0.245 (0.235) - Non-Labor $1.057 $1.332 (0.275) $4.227 $4.019 $0.208 4.9 Other Expense Adjustments: Other $0.000 $0.000 - $0.000 $0.000 - - Other Expense Adjustments $0.000 $0.000 - $0.000 $0.000 - - Total Expenditures before Depreciation and OPEB $6.833 $6.138 $0.695 $24.295 $21.379 $2.916 12.0 Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 100.0 GASB 75 OPEB Expense Adjustment $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 - GASB 68 Pension Adjustment $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 - Environmental Remediation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 - Total Expenditures $6.833 $6.138 $0.695 $24.295 $21.379 $2.916 12.0 Net Surplus/(Deficit) (5.122) (5.855) (0.734) (20.200) (19.256) $0.944 4.7
+```
+[p125_c0004] Note: Totals may not add due to rounding
+[p125_c0005] Adopted: Final FY21
+[p125_c0006] _Master Page # 125 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 126
+
+[p126_c0001] _Table 5_
+### [p126_c0002] MTA STATEN ISLAND RAILWAY FEBRUARY FINANCIAL PLAN- 2021 ADOPTED BUDGET EXPLANATION OF VARIANCES BETWEEN FEBRUARY 2021 RESULTS AND THE FEBRUARY FINANCIAL PLAN APRIL 2021 ($ in millions)
+[p126_c0003]
+
+```text
+Operating Receipts or Disbursements MONTH YEAR TO DATE Favorable/ (Unfavorable) Variance Favorable/ (Unfavorable) Variance $ % Reason for Variance $ % Reason for Variance Farebox Receipts (0.004) (2.6) Primarily due to timing 0.077 17.9 Primarily due to favorable ridership Other Revenue (0.925) (98.2) Primarily due to receipt timing lag of fare reimbursement (0.920) (79.5) Primarily due to receipt timing lag of fare reimbursement Capital and Other Reimbursements (0.500) (79.3) Timing of reimbursements (1.129) (45.0) Timing of reimbursements Payroll 0.168 4.9 Favorable due to vacancies 0.847 7.9 Favorable due to vacancies Overtime 0.259 100.0 Timing of payments 1.350 100.0 Timing of payments Health and Welfare (including OPEB current payment) 0.295 0.0 Timing of payments 0.449 0.0 Timing of payments Other Fringe Benefits 0.171 37.4 Deferral of payroll expenditure (FICA) under CARES Act as well as vacancies 0.389 23.9 Deferral of payroll expenditure (FICA) under CARES Act as well as vacancies Electric Power 0.038 11.8 Favorable mainly due to timing 0.027 2.1 Favorable mainly due to timing Maintenance Contracts (0.009) (5.1) Unfavorable timing of maintenance work postponed due to COVID-19 0.274 38.5 Favorable timing of maintenance work postponed due to COVID-19 Professional Services Contracts 0.074 31.7 Timing of contract payments 0.442 47.3 Timing of contract payments Materials & Supplies (0.425) (302.8) Timing of payments (0.516) (91.9) Timing of payments
+```
+[p126_c0004] _Master Page # 126 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 127
+
+### [p127_c0001] MTA STATEN ISLAND RAILWAY February Financial Plan - 2021 Adopted Cash Conversion (Cash Flow Adjustments) Apr FY21 ($ in Millions)
+[p127_c0002] 5/10/2021 11:54 AM
+[p127_c0003]
+
+```text
+Month Year-To-Date Adopted Actual Favorable (Unfavorable) Variance Adopted Actual Favorable (Unfavorable) Variance Percent Revenue Farebox Revenue $0.000 (0.020) (0.020) $0.000 (0.037) - Other Revenue $0.735 (0.004) (0.799) $0.328 (0.044) (113.5) Capital and Other Reimbursements $0.000 $0.049 $0.049 $0.000 $0.672 - Total Revenue $0.735 (0.035) (0.770) $0.328 $0.590 79.7 Expenses Labor: Payroll (0.924) (1.345) (0.422) (0.444) (1.116) (151.5) Overtime $0.000 $0.386 $0.386 $0.000 $1.278 - Total Salaries & Wages (0.924) (0.959) (0.036) - $0.162 136.4 Health and Welfare $0.000 (0.030) (0.030) $0.000 (0.777) - OPEB Current Payment $0.000 $0.218 $0.218 $0.000 $0.772 - Pensions $0.000 $0.000 $0.000 $0.000 $0.000 - Other Fringe Benefits $0.080 $0.046 (0.035) $0.587 $0.476 (16.1) Total Fringe Benefits $0.080 $0.233 $0.153 $0.587 $0.471 (16.9) Contribution to GASB Fund $0.000 $0.000 $0.000 $0.000 $0.000 - Reimbursable Overhead $0.000 $0.000 $0.000 $0.000 $0.002 - Labor (0.843) (0.726) $0.117 $0.123 $0.634 416.3 Non-Labor: Electric Power $0.000 (0.048) (0.048) $0.000 (0.058) - Fuel $0.000 (0.004) (0.004) $0.000 (0.044) - Insurance $0.000 $0.063 $0.063 $0.000 $0.196 - Claims $0.042 (0.012) (0.053) $0.167 $0.041 (75.4) Paratransit Service Contracts $0.000 $0.000 $0.000 $0.000 $0.000 - Maintenance and Other Operating Contracts $0.000 $0.015 $0.015 $0.000 $0.034 - Professional Service Contracts $0.000 $0.059 $0.059 $0.000 (0.045) - Materials & Supplies $0.000 (0.432) (0.432) $0.000 (0.280) - Other Business Expenses $0.000 $0.007 $0.007 $0.000 (0.089) - Non-Labor $0.042 (0.352) (0.393) $0.166 (0.246) (248.0) Other Expense Adjustments: Other $0.000 $0.000 - $0.000 $0.000 - Other Expense Adjustments $0.000 $0.000 - $0.000 $0.000 - Total Expenses before Depreciation and OPEB (0.802) (1.078) (0.276) $0.289 $0.389 34.6 Depreciation $1.000 $0.891 (0.109) $4.000 $3.570 (10.8) GASB 75 OPEB Expense Adjustment $0.000 $0.000 $0.000 $0.275 $0.000 (100.0) GASB 68 Pension Adjustment $0.000 $0.000 $0.000 (0.275) $0.000 100.0 Environmental Remediation $0.000 $0.000 $0.000 $0.000 $0.000 - Total Expenditures $0.198 (0.187) (0.385) $4.289 $3.958 (7.7) Total Cash Conversion Adjustments $0.933 (0.222) (1.155) $4.617 $4.548 (1.5)
+```
+[p127_c0004] Note: Totals may not add due to rounding
+[p127_c0005] Note: Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current month's actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results.
+[p127_c0006] _Adopted: Final FY21_
+[p127_c0007] _Master Page # 127 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 128
+
+### [p128_c0001] SIRTOA – Non-Reimbursable Overtime Variance
+### [p128_c0002] April 2021 and YTD adopted vs. variance
+[p128_c0003] $K
+[p128_c0004] ■ Variance - Unfavorable ■ Variance - Favorable ■ Budget
+[p128_c0005] Annual budget Adopted: $2,415
+> [p128_c0006] Category April '20 April '21 YTD YTD Apr '21 Budget $65 $167 $967 $502 Variance - Unfavorable $195 (54%) $168 $984 $60 (6%) Variance - Favorable $-102 (-157%) $-102 $-465 (-93%) $-102 Total $363 $335 $984 $1,044
+### [p128_c0007] Overview
+- [p128_c0008] • Overall increase of $543K or 108% compared to April YTD 2020 • $60K or 6% above 2021 YTD budget • Maintenance -$41K underrun; -$47K weather underrun offset by $75K overrun due to vacancy coverage; remaining -$69K underrun due to employee availability resulting from Covid-19 • Service $95K overrun; -$32K weather underrun offset by $126K overrun due to vacancies
+### [p128_c0009] YTD variance by division
+[p128_c0010] $K
+> [p128_c0011] Division Variance ($K) Notes Transportation $95 Vacancy coverage overrun of $126K offset by weather underrun of -$32K Mechanical $29 Primarily a result of vacancy coverage and additional maintenance requirements offset by weather underruns Electrical $27 Weather overrun of $16K; remaining $11K due to vacancies and other maintenance requirements Infrastructure $8 MOW -$108 Primarily driven by weather underrun of -$30K; additional underruns due to reduced maintenance resulting from Covid-19 lowered availability
+[p128_c0012] Source: Adopted budget. GL actuals for actual overtime spending.
+[p128_c0013] _1_
+[p128_c0014] _Master Page # 128 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 129
+
+### [p129_c0001] SIRTOA – Reimbursable Overtime Variance
+### [p129_c0002] April 2021 and YTD adopted vs. variance
+### [p129_c0003] Overview
+[p129_c0004] ■ Variance - Unfavorable ■ Variance - Favorable ■ Budget
+- [p129_c0005] • Overall decrease of -$349K or 60% compared to April YTD 2020 • -$133K or 57% below 2021 YTD budget • Maintenance -$61K underrun: due to reduced capital work resulting from inclement weather and Covid-19 response • Service -$79K underrun: due to reduced capital support resulting from inclement weather and Covid-19 response
+### [p129_c0006] YTD variance by division
+> [p129_c0007] Division Apr '20 Apr '21 YTD Apr '21 Unfavorable $117 (36%) $23 $133 Favorable $42 $68 (-294%) $18 Budget $74 $92 $133 Total $233 $23 $133 Annual budget Adopted: $1,110K Overall decrease: -60%
+> [p129_c0008] Division Variance Reason Mechanical $13 Overrun due to labor deviations from non-reimbursable Other $7 Transportation -$79 Underrun due to reduced capital support requirements resulting from Covid-19 and inclement winter weather throughout 1st quarter Electrical -$26 -$26K underrun due to reduced capital project work as a result of inclement weather and ongoing Covid-19 response Power/Signals -$26 Underruns due to reduced capital work resulting from inclement weather and ongoing Covid-19 response MOW -$4 Infrastructure -$18 Total -$133
+[p129_c0009] Source: Adopted budget, GL actuals for actual overtime spending.
+[p129_c0010] _2_
+[p129_c0011] _Master Page # 129 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 130
+
+### [p130_c0001] SIRTOA – Total Overtime Variance
+### [p130_c0002] April 2021 and YTD adopted vs. variance
+[p130_c0003] $K
+[p130_c0004] ■ Variance - Unfavorable ■ Variance - Favorable ■ Budget
+> [p130_c0005] Category April '20 YTD Apr '21 Budget $241 $1,350 Variance - Unfavorable $181 $126 (33%) Variance - Favorable -$60 (-33%) -$73 (-6%) Total $181 $1,278 Annual budget Adopted: $3,526K Change: +18% ($1,084K to $1,278K)
+[p130_c0006] Source: Adopted budget, GL actuals for actual overtime spending.
+### [p130_c0007] Overview
+- [p130_c0008] • Overall increase of $194K or 18% compared to April YTD 2020 • -$73K of 6% below 2020 YTD budget
+### [p130_c0009] YTD variance by division
+[p130_c0010] $K
+> [p130_c0011] Division Variance ($K) Transportation $15 Mechanical $42 Other $14 Power/Signals -$23 MOW -$112 Infrastructure -$10 Total YTD Apr '21 -$73
+[p130_c0012] _3_
+[p130_c0013] _Master Page # 130 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 131
+
+### [p131_c0001] MTA Staten Island Railway February Financial Plan Total Full-Time Positions and Full-Time Equivalents Apr 2021
+[p131_c0002]
+
+```text
+Adopted Actual Favorable/ (Unfavorable) Administration SIR Executive 6 5 1 SIR General Office 13 9 4 SIR Purchasing Stores 4 3 1 Total Administration 23 17 6 Operations SIR Transportation 152 136 16 Total Operations 152 136 16 Maintenance SIR Mechanical 53 53 0 SIR Electronics Electrical 18 18 0 SIR Power Signals 32 28 4 SIR Maintenance of Way 89 75 14 SIR Infrastructure 16 17 (1) Total Maintenance 208 191 17 Engineering/Capital SIR Reimbursable Program Support 6 2 4 Total Engineering/Capital 6 2 4 Total Positions 389 346 43 Non-Reimbursable 336 310 26 Reimbursable 53 36 17 Total Full-Time 389 346 43 Total Full-Time-Equivalents 0 0 0
+```
+[p131_c0003] _FinalFY21_
+[p131_c0004] _Master Page # 131 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 132
+
+### [p132_c0001] MTA STATEN ISLAND RAILWAY FEBRUARY FINANCIAL PLAN TOTAL POSITIONS by FUNCTION and OCCUPATION FULL-TIME POSITIONS and FULL-TIME EQUIVALENTS Apr 2021
+[p132_c0002]
+
+```text
+FUNCTION/OCCUPATION Adopted Actual Favorable/ (Unfavorable) Administration Managers/Supervisors 13 9 4 Professional/Technical/Clerical 6 6 0 Operational Hourlies 4 2 2 Total Administration 23 17 6 Operations Managers/Supervisors 26 23 3 Professional/Technical/Clerical 6 5 1 Operational Hourlies 120 108 12 Total Operations 152 136 16 Maintenance Managers/Supervisors 25 23 2 Professional/Technical/Clerical 6 7 (1) Operational Hourlies 177 161 16 Total Maintenance 208 191 17 Engineering/Capital Managers/Supervisors 4 2 2 Professional/Technical/Clerical 2 0 2 Operational Hourlies 0 0 - Total Engineering/Capital 6 2 4 Total Positions Managers/Supervisors 68 57 11 Professional/Technical/Clerical 20 18 2 Operational Hourlies 301 271 30 Total Positions 389 346 43
+```
+[p132_c0003] _FinalFY21 Master Page # 132 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 133
+
+### [p133_c0001] Preliminary April 2021 Report: Bus Company
+[p133_c0002] The purpose of this report is to provide the preliminary April 2021 financial results on an accrual basis. The accrual basis is presented on a non-reimbursable account basis. These results are compared to the Adopted Budget (budget).
+### [p133_c0003] Summary of Preliminary Financial Results
+[p133_c0004] Preliminary ridership and accrual results, versus budget, are summarized as follows:
+[p133_c0005] April 2021 Bus Company ridership of 5.5 million was 3.0 million (125.5 percent) above budget.
+- [p133_c0006] • Farebox revenue of $10.5 million was $6.0 million (132.0 percent) above budget. • Total expenses of $68.2 million were $21.8 million (24.2 percent) below budget. ○ Labor expenses were lower than budget by $1.6 million (3.0 percent). Payroll expenses were greater than budget by $1.0 million (4.1 percent). Overtime expenses were lower than budget by $1.0 million (11.8 percent). Health and Welfare (including OPEB) expenses were lower than budget by $0.7 million (6.6 percent). Pension expenses were lower by $0.4 million (6.5 percent). Other Fringe Benefits were lower than budget by $0.4 million (5.7 percent). ○ Non-labor expenses were favorable to budget by $10.3 million (47.5 percent). Fuel was lower than budget by $3.4 million (205.4 percent). Insurance was lower than budget by $0.2 million (27.0 percent). Claims expenses were favorable by $1.8 million (29.0 percent). Maintenance and Other Operating Contracts expenses were lower than budget by $2.1 million (51.1 percent). Professional Service Contracts were lower than budget by $1.2 million (33.4 percent). Materials and Supplies expenses were favorable by $1.5 million (29.4 percent). Other Business expenses were lower than budget by $0.2 million (44.7 percent).
+[p133_c0007] _Master Page # 133 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 134
+
+### [p134_c0001] MTA BUS FINANCIAL AND RIDERSHIP REPORT April 2021
+[p134_c0002] (All data are preliminary and subject to audit)
+### [p134_c0003] Preliminary Actual Results Compared to the Adopted Budget (budget).
+[p134_c0004] Total Revenue was $11.0 million in April, $4.7 million (75.0 percent) greater than budget, mainly due to higher Farebox Revenue. Farebox Revenue was favorable by $6.0 million (132.0 percent) due to higher ridership and higher average fare. Other Operating Revenue was unfavorable by $1.2 million (70.7 percent) due to lower Student fare reimbursement due to COVID-19, as well as, lower Advertising, recoveries from Other Insurance and Other Contract services.
+[p134_c0005] 2021 April YTD revenue of $37.3 million was $7.6 million (20.4 percent) below 2020 and $30.8 million (82.6 percent) below 2019.
+[p134_c0006] Total Ridership in April 2021 was 5.5 million, 125.5 percent (3 million riders) above budget. April 2021 average weekday ridership was 205,514, an increase of 4,592.1 percent (201,134 riders) from April 2020. Compared to April 2019, average weekday ridership decreased 47.4 percent (185,436 riders). Average weekday ridership for the twelve months ending April 2021 was 128,811, a decrease of 62.1 percent (210,703 riders) from the twelve months ending April 2020. This is also a decrease of 67 percent (261,783 riders) in comparison to the twelve months ending April 2019.
+[p134_c0007] 2021 April YTD actual ridership of 19.5 million was 5.5 million (28.2 percent) below 2020 and 19.8 million (101.5 percent) below 2019.
+[p134_c0008] Non-reimbursable expenses , before Depreciation, Other Post-Employment Benefits and GASB 68 Pension Adjustment, were $64.1 million in April, 11.9 million (15.7 percent) favorable to budget.
+- [p134_c0009] ○ Labor expenses were lower than budget by $1.6 million (3.0 percent). Payroll expenses overran by $1.0 million (4.1 percent), primarily due to higher vacation payments and lower attrition. Overtime expenses were lower than budget by $1.0 million (11.8 percent), primarily lower unscheduled overtime, COVID-related cleaning, and programmatic maintenance partially offset by the essential overnight service and lower availability. Health and Welfare (including OPEB) expenses were lower than budget by $0.7 million (6.6 percent), primarily due to lower medical & hospitalization and OPEB expenses, partially offset by higher prescription coverage expenses, life Insurance cost, and lower Health & Welfare Reimbursement. Pension is under by $0.4 million (6.5 percent) due to the timing of expenses. Other Fringe Benefits were lower than budget by $0.4 million (5.7 percent), due to lower worker's compensation. ○ Non-labor expenses were lower than budget by $10.3 million (47.5 percent). Fuel expenses were lower than budget by $3.4 million, primarily due to CNG retro billing adjustments going back to 2018, which are pending further review with Con Edison. Insurance expenses were lower than budget by $0.2 million (27.0 percent) due to the timing of expenses. Claims expenses were favorable by $1.8 million (29.0 percent) due to timing of expenses. Maintenance and Other Operating Contracts expenses were favorable to budget by $2.1 million (51.1 percent), mainly due to the timing of facility maintenance, Bus Technology, farebox maintenance, Shop Program, and COVID-19 expenses. Professional Service Contracts were lower than budget by $1.2 million (33.4 percent) due to the timing of interagency billing, Bus Technology, and service contracts. Materials and Supplies expenses were favorable by $1.5 million (29.4 percent), mainly due to lower usage of general maintenance material, the timing of radio equipment maintenance/repairs, and COVID-19 expenses. Other Business Expenses were less than budget by $0.2 million (44.7 percent) due to lower print and stationery supplies and the timing of Automatic Fare Collection (AFC) fees, Mobility tax, and other misc. expenses.
+[p134_c0010] _Master Page # 134 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 135
+
+[p135_c0001] Depreciation expenses of $4.1 million were 0.4 million (9.4 percent) below budget due to the timing of asset replacement. No expenses or credits were recorded in April regarding GASB 68 Pension Adjustment and GASB 75 OPEB Expense adjustment.
+[p135_c0002] Year-to-date , expenses were less than budget by a net $39.8 million (13.2 percent), including favorable non-labor expenses of $31.3 million (36.7 percent), as well as favorable labor expenses of $8.4 million (3.9 percent). The major causal factors driving these year-to-date results were consistent with the factors affecting the month results described above.
+[p135_c0003] Depreciation expenses year-to-date were $16.2 million, favorable to budget by $1.8 million (10.0 percent). No expenses or credits were recorded in Year-to-date regarding GASB 68 Pension Adjustment, and GASB 75 OPEB Expense adjustment.
+[p135_c0004] The operating cash deficit (excluding subsidies) for April was $53.1 million, $8.8 million (14.2 percent) favorable to the budget; the Year-to-date operating cash deficit is $200.4 million, $53.2 million (21.0 percent) favorable to budget.
+[p135_c0005] _Master Page # 135 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 136
+
+### [p136_c0001] TABLE 1
+### [p136_c0002] MTA BUS COMPANY February Financial Plan - 2021 Adopted Budget ACCRUAL STATEMENT OF OPERATIONS by CATEGORY April 2021 ($ in millions)
+[p136_c0003]
+
+```text
+Nonreimbursable Reimbursable Total Adopted Budget Favorable (Unfavorable) Adopted Budget Favorable (Unfavorable) Adopted Budget Favorable (Unfavorable) Actual Variance Percent Actual Variance Percent Actual Variance Percent Revenue Farebox Revenue 4,520 10,485 5,965 * $0.000 $0.000 - $4,520 $10,485 $5,965 Other Operating Income 1,766 0.517 (1,249) (70.7) - - - 1,766 0.517 (70.7) Capital and Other Reimbursements - - - - 0.470 0.328 69.7 0.470 0.798 69.7 Total Revenue $6,286 $11,002 $4,716 75.0 $0.470 $0.328 $6,756 $11,800 $5,044 Expenses Labor: Payroll $24,173 $25,152 ($0,979) (4.1) $0.186 $0.467 ($0,281) $24,358 $25,619 ($1,261) Overtime 8,172 $7,205 0.967 11.8 - $0.004 (0.004) 8,172 7,209 0.963 Health and Welfare 8,248 $7,791 0.457 5.5 0.115 - 100.0 8,362 7,791 0.571 OPEB Current Payment 2,146 $1,914 0.232 10.8 - - - 2,146 1,914 0.232 Pensions 5,411 $5,057 0.354 6.5 - - - 5,411 5,057 0.354 Other Fringe Benefits 6,291 $5,934 0.357 5.7 - 0.001 (0.001) 6,291 5,935 0.356 GASB Account - - - - - - - - - - Reimbursable Overhead (0,076) ($0,326) 0.250 * 0.076 $0.326 (0.250) 0,000 - - Total Labor Expenses $54,365 $52,727 $1,638 3.0 $0.376 $0.798 ($0,422) $54,741 $53,526 $1,216 Non-Labor: Electric Power $0,140 $0,147 ($0,007) (5.2) $0.000 $0.000 - $0,140 $0,147 ($0,007) Fuel 1,683 ($1,753) 3,416 * - - - 1,683 (1,753) 3,416 Insurance 0.986 $0,428 0.158 27.0 - - - 0.986 0.428 0.158 Claims 6,342 $4,500 1,842 29.0 - - - 6,342 4,500 1,842 Maintenance and Other Operating Contract 4,019 $1,965 2,054 51.1 0.020 - 100.0 4,039 1,965 2,074 Professional Service Contracts 3,447 $2,295 1,152 33.4 - - - 3,447 2,295 1,152 Materials & Supplies 5,007 $3,536 1,471 29.4 0.074 - 100.0 5,081 3,536 1,545 Other Business Expense 0.385 $0,213 0.172 44.7 - - - 0.385 0.213 0.172 Total Non-Labor Expenses $21,590 $11,331 $10,259 47.5 $0.095 $0.095 100.0 $21,694 $11,331 $10,363 Total Expenses before Non-Cash Liabil $75,955 $64,059 $11,896 15.7 $0.470 $0.798 ($0,328) $76,426 $64,857 $11,569 Depreciation $4,565 $4,134 $0,431 9.4 $0.000 $0.000 - $4,565 $4,134 $0,431 GASB 75 OPEB Expense Adjustment 5,825 - 5,825 100.0 - - - 5,825 - 5,825 GASB 68 Pension Adjustment 3,667 - 3,667 100.0 - - - 3,667 - 3,667 Environmental Remediation - - - - - - - - - - Total Expenses $90,011 $68,193 $21,818 24.2 $0.470 $0.798 ($0,328) $90,483 $68,991 $21,492 Net Surplus/(Deficit) ($83,726) ($57,190) $26,535 31.7 ($0.000) $0.000 100.0 ($83,726) ($57,191) $26,536
+```
+[p136_c0004] NOTE: Totals may not add due to rounding
+[p136_c0005] Note: Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current months' actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results
+[p136_c0006] _Master Page # 136 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 137
+
+### [p137_c0001] TABLE 2
+### [p137_c0002] MTA BUS COMPANY February Financial Plan - 2021 Adopted Budget ACCRUAL STATEMENT of OPERATIONS by CATEGORY April 2021 Year-To-Date ($ in millions)
+[p137_c0003]
+
+```text
+Nonreimbursable Reimbursable Total Adopted Budget Actual Variance Favorable (Unfavorable) Adopted Budget Actual Variance Adopted Budget Actual Variance Favorable (Unfavorable) Percent Revenue Firebox Revenue 14,357 $37,341 $22,984 * $0,000 $0,000 $0,000 $14,357 $37,341 $22,984 * Other Operating Income 6,976 1,862 (5,114) (73.3) - - - 6,976 1,862 (5,114) (73.3) Capital and Other Reimbur - - - - 1,858 1,920 0.062 1,858 1,920 0.062 3.3 Total Revenue $21,333 $39,203 $17,870 83.8 $1,858 $1,920 $0.062 $23,190 $41,123 $17,933 77.3 Expenses Labor Payroll $96,482 $101,152 (4,670) (4.8) $0,734 $1,107 ($0,373) (50.8) $97,216 $102,259 ($5,043) (5.2) Overtime 33,430 $27,815 5,615 16.8 - $0,011 (0.011) - 33,430 27,826 5,604 16.8 Health and Welfare 32,578 $30,677 1,901 5.8 0.452 - 0.452 100.0 33,031 30,677 2,354 7.1 OPEB Current Payment 8,476 $7,619 0.857 10.1 - - - - 8,476 7,619 0.857 10.1 Pensions 21,375 $19,643 1,732 8.1 - - - - 21,375 19,643 1,732 8.1 Other Fringe Benefits 24,850 $22,194 2,656 10.7 - $0,006 (0.006) - 24,850 22,200 2,650 10.7 GASB Account - - - - - - - - - - - - Reimbursable Overhead (0,298) ($0,627) 0.329 * 0,298 $0,796 (0,498) * (0,000) 0,169 (0,169) * Total Labor Expenses $216,892 $208,473 $8,419 3.9 $1,485 $1,920 ($0,435) (29.3) $218,377 $210,393 $7,984 3.7 Non-Labor Electric Power $0,552 $0,509 $0,043 7.8 $0,000 $0,000 $0,000 - $0,552 $0,509 $0,043 7.8 Fuel 6,570 $2,999 3,571 54.4 - - - - 6,570 2,999 3,571 54.4 Insurance 2,316 $1,710 0.606 26.2 - - - - 2,316 1,710 0.606 26.2 Claims 25,049 $18,000 7,049 28.1 - - - - 25,049 18,000 7,049 28.1 Maintenance and Other Op 15,875 $8,424 7,451 46.9 0,080 - 0.080 100.0 15,955 8,424 7,531 47.2 Professional Service Contr 13,617 $8,003 5,614 41.2 - - - - 13,617 8,003 5,614 41.2 Materials & Supplies 19,778 $13,462 6,316 31.9 0,293 - 0.293 100.0 20,071 13,462 6,609 32.9 Other Business Expense 1,523 $0,840 0.683 44.8 - - - - 1,523 0,840 0.683 44.8 Total Non-Labor Expense $85,280 $53,946 $31,333 36.7 $0,373 $0,000 $0,373 100.0 $85,654 $53,947 $31,707 37.0 Total Expenses before N $302,173 $262,419 $39,753 13.2 $1,859 $1,920 ($0,062) (3.3) $304,030 $264,340 $39,690 13.1 Depreciation $18,031 16,222 $1,809 10.0 - - - - $18,031 $16,222 $1,809 10.0 GASB 75 OPEB Expense 23,009 - 23,009 100.0 - - - - 23,009 - 23,009 100.0 GASB 68 Pension Adjustm 14,483 - 14,483 100.0 - - - - 14,483 - 14,483 100.0 Environmental Remediation - - - - - - - - - - - - Total Expenses $357,696 $278,642 $79,054 22.1 $1,859 $1,920 ($0,062) (3.3) $359,554 $280,562 $78,992 22.0 Net Surplus/(Deficit) ($336,363) ($239,438) $96,924 28.8 $0,000 $0,000 ($0,000) * ($338,362) ($239,439) $96,924 28.8
+```
+[p137_c0004] NOTE: Totals may not add due to rounding
+[p137_c0005] Note: Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current month's actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results
+[p137_c0006] _Master Page # 137 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 138
+
+### [p138_c0001] TABLE 3
+### [p138_c0002] MTA BUS COMPANY February Financial Plan - 2021 Adopted Budget EXPLANATION OF VARIANCES BETWEEN BUDGET AND ACTUAL ACCRUAL BASIS ($ in millions)
+[p138_c0003]
+
+```text
+Generic Revenue or Expense Category Nonreimb or Other April 2021 Year-To-Date Favorable (Unfavorable) Variance Reason for Variance Favorable (Unfavorable) Variance Reason for Variance $ % $ % Farebox Revenue NR $ 5,985 * Higher ridership and higher average fare $ 22,994 * Higher ridership and higher average fare Other Operating Revenue NR $ (1,249) Lower Student fare reimbursement due to COVID-19 as well as lower Advertising, recoveries from Other Insurance and Other Contract services $ (5,114) Lower Student fare reimbursement due to COVID-19 as well as lower Advertising, recoveries from Other Insurance and Other Contract services (73.3) Capital and Other Reimbursements R $ 0,328 * Timing of expenses $ 0,062 3.3 (a) Total Revenue Variance $ 5,044 74.7 $ 17,833 77.3 Payroll NR $ (0,979) (4.1) Primarily due to higher vacation payment and lower attrition $ (4,670) (4.8) Primarily due to higher vacation payment, higher cash out of sick and personal time, and lower attrition Overtime NR $ 0,987 11.8 Primarily lower unscheduled overtime, COVID-related cleaning, and programmatic maintenance partially offset by the essential overnight service and lower availability $ 5,615 16.8 Primarily lower unscheduled overtime, COVID-related cleaning, and programmatic maintenance partially offset by the essential overnight service and lower availability Health and Welfare (including OPEB) NR $ 0,689 6.6 Lower medical & hospitalization and OPEB expenses, partially offset by higher prescription coverage expenses, Life Insurance cost and lower Health & Welfare Reimbursement $ 2,759 6.7 Lower medical & hospitalization and OPEB expenses, partially offset by higher prescription coverage expenses, Life Insurance cost and lower Health & Welfare Reimbursement Pension NR $ 0,354 6.5 Timing of Expenses $ 1,732 8.1 Timing of expenses Other Fringe Benefits NR $ 0,357 5.7 Lower Worker's Compensation $ 2,656 10.7 Timing of interagency billing and lower Worker's Compensation expenses. Reimburseable Overhead NR $ 0,290 *(a) *(a) $ 0,329 *(a) *(a) Electric Power NR $ (0,007) (5.2) (a) $ 0,043 (5.2) (a) Fuel NR $ 3,416 * Primarily due to CNG retro billing adjustments going back to 2018 which are pending further review with Con Edison. $ 3,571 54.4 Primarily due to CNG retro billing adjustments going back to 2018 which are pending further review with Con Edison. Insurance NR $ 0,158 27.0 Timing of expenses $ 0,606 26.2 Timing of expenses Claims NR $ 1,942 29.0 Timing of expenses $ 7,049 28.1 Timing of expenses Maintenance and Other Operating Contracts NR $ 2,054 51.1 Mainly the timing of facility maintenance, Bus Technology, farebox maintenance, Shop Program and COVID-19 expenses $ 7,451 46.9 Mainly the timing of facility maintenance, Bus Technology, farebox maintenance, Shop Program and COVID-19 expenses Professional Service Contracts NR $ 1,152 32.4 Timing of interagency billing, Bus Technology, and service contracts $ 5,614 41.2 Timing of interagency billing, Bus Technology, and service contracts Materials & Supplies NR $ 1,471 29.4 Mainly due to lower usage of general maintenance material as well as timing of radio equipment maintenance/repairs and COVID-19 expenses $ 6,316 31.9 Mainly due to lower usage of general maintenance material as well as timing of radio equipment maintenance/repairs and COVID-19 expenses Other Business Expense NR $ 0,172 44.7 Lower print and stationery supplies, and the timing of Automatic Fare Collection (AFC) fees, Mobility tax, and other misc. expenses $ 0,683 44.8 Lower print and stationery supplies, and the timing of Automatic Fare Collection (AFC) fees, Mobility tax, and other misc. expenses Depreciation NR $ 0,431 9.4 Timing of asset replacement $ 1,809 10.0 Timing of asset replacement Other Post Employment Benefits NR $ 5,625 100.0 (a) $ 23,009 100.0 GASB 88 Pension Adjustment NR $ 3,667 100.0 (a) $ 14,483 100.0 Environmental Remediation NR $ - - - $ - - - Payroll R $ (0,261) *(a) *(a) $ (0,373) (60.8) Overtime R $ (0,004) *(a) *(a) $ (0,011) *(a) Health and Welfare R $ 0,115 100.0 Timing of charges $ 0,452 100.0 Pension R $ - - - $ - - - Reimburseable Benefits R $ (0,001) *(a) *(a) $ (0,009) *(a) Reimburseable Overhead R $ (0,259) *(a) *(a) $ (0,488) *(a) Professional Service Contracts R $ - - *(a) $ - - *(a) Maintenance and Other Operating R $ 0,020 *(a) *(a) $ 0,080 *(a) Materials & Supplies R $ 0,000 *(a) *(a) $ 0,000 *(a) Total Expense Variance $ 21,492 23.8 $ 78,892 22.0 Net Variance $ 26,556 31.7 $ 96,924 28.8
+```
+[p138_c0004] _(a) - Variance less than 5%_
+[p138_c0005] _Master Page # 138 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 139
+
+### [p139_c0001] TABLE 4
+### [p139_c0002] MTA BUS COMPANY February Financial Plan - 2021 Adopted Budget CASH RECEIPTS AND EXPENDITURES
+[p139_c0003] ($ in millions)
+[p139_c0004]
+
+```text
+April 2021 Year-To-Date Adopted Budget Actual Variance Favorable (Unfavorable) Adopted Budget Actual Favorable (Unfavorable) Receipts Farebox Revenue $4,520 $ 9,608 $5,088 * $14,357 $ 37,347 $22,990 Other Operating Revenue 1,766 0,375 (1,391) (78.7) 7,064 1,292 (5,772) Capital and Other Reimbur: 0,917 0,117 (0,800) (87.3) 3,669 1,782 (1,887) Total Receipts $7,203 $10,100 $2,897 40.2 $25,090 $40,421 $15,331 Expenditures Labor: Payroll $22,453 $27,465 ($5,012) (22.3) $92,064 $92,488 ($0,425) Overtime 7,677 7,209 0,468 6.1 30,707 27,827 2,880 Health and Welfare 8,362 2,454 5,908 70.7 33,449 28,259 5,190 OPEB Current Payment 2,146 1,914 0,232 10.8 8,584 7,619 0,964 Pensions 5,397 5,057 0,340 6.3 21,586 19,644 1,943 Other Fringe Benefits 4,640 8,619 (3,979) (85.8) 18,558 18,427 0,132 GASB Account - - - - - - - Reimursable Overhead - - - - - - - Total Labor Expenditures $50,674 $52,718 ($2,043) (4.0) $204,948 $194,263 $10,684 Non-Labor: Electric Power $0,140 $0,172 ($0,032) (23.2) $0,559 $0,679 ($0,120) Fuel 1,663 1,928 (0,265) (15.9) 6,654 7,300 (0,647) Insurance 0,586 0,000 0,586 100.0 2,345 - 2,345 Claims 3,083 0,827 2,256 73.2 12,332 4,025 8,306 Maintenance and Other Op 4,039 2,311 1,729 42.8 16,158 8,894 7,264 Professional Service Contr 3,447 1,732 1,716 49.8 13,789 12,902 887 Materials & Supplies 5,081 3,314 1,768 34.8 20,325 11,867 8,458 Other Business Expenses 0,385 0,230 0,155 40.3 1,542 0,882 0,660 Total Non-Labor Expendit $18,426 $10,514 $7,911 42.9 $73,704 $46,549 $27,155 Total Expenditures $69,100 $63,231 $5,869 8.5 $278,651 $240,812 $37,839 Operating Cash Surplus/ ($61,897) ($53,131) $8,766 14.2 ($253,562) ($200,392) $53,170
+```
+[p139_c0005] NOTE: Totals may not add due to rounding
+[p139_c0006] _Master Page # 139 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 140
+
+### [p140_c0001] TABLE 5
+### [p140_c0002] MTA BUS COMPANY February Financial Plan - 2021 Adopted Budget EXPLANATION OF VARIANCES BETWEEN ACTUAL CASH BASIS ($ in millions)
+[p140_c0003]
+
+```text
+Operating Receipts or Disbursements April 2021 Year-To-Date Favorable (Unfavorable) Variance Reason for Variance Favorable (Unfavorable) Variance Reason for Variance $ % $ % Farebox Revenue $ 5,088 * Higher ridership and higher average fare $ 22,990 * Higher ridership and higher average fare Other-Operating Revenue (1,391) (78.7) Lower Student fare reimbursement due to COVID-19 as well as lower Advertising, recoveries from Other Insurance and Other Contract services (5,772) (81.7) Lower Student fare reimbursement due to COVID-19 as well as lower Advertising, recoveries from Other Insurance and Other Contract services Capital and Other Reimbursements (0,800) (87.3) Timing of reimbursement receipts (1,887) (51.4) Timing of reimbursement receipts Total Receipts $ 2,897 40.2 $ 15,331 61.1 Payroll $ (5,012) (22.3) Prior period payments of interagency billing $ (0,425) (0.5) Prior period payments of interagency billing offset by timing of expenses Overtime 0.468 6.1 Primarily lower unscheduled overtime, COVID-related cleaning, and programmatic maintenance partially offset by the essential overnight service and lower availability 2.890 9.4 Primarily lower unscheduled overtime, COVID-related cleaning, and programmatic maintenance partially offset by the essential overnight service and lower availability Health and Welfare (including OPEB) 6,140 58.4 Lower medical & hospitalization and OPEB expenses, partially offset by higher prescription coverage expenses, Life Insurance cost and lower Health & Welfare Reimbursement offset by timing of expenses 6,155 14.6 Lower medical & hospitalization and OPEB expenses, partially offset by higher prescription coverage expenses, Life Insurance cost and lower Health & Welfare Reimbursement offset by timing of expenses Pension 0.340 6.3 Timing of payments 1.943 9.0 Timing of expenses Other Fringe Benefits (3,979) (85.8) Prior period payments of interagency billing 0.132 0.7 (a) GASB - (a) - - Electric Power (0,032) (23.2) (a) (0,120) (21.5) (a) Fuel (0,265) (15.9) Primarily due prior period payment and offset by a credit of CNG retro billing adjustment going back to 2018. (0,647) (9.7) Primarily due prior period payment and offset by a credit of CNG retro billing adjustment going back to 2018. Insurance 0.586 100.0 Timing of payments 2.345 100.0 Timing of payments Claims 2,256 73.2 Timing of payments 8,306 67.4 Timing of payments Maintenance and Other Operating Contracts 1,729 42.8 Mainly the timing of facility maintenance, Bus Technology, farebox maintenance, Shop Program and COVID-19 expenses 7,264 45.0 Mainly the timing of facility maintenance, Bus Technology, farebox maintenance, Shop Program and COVID-19 expenses Professional Service Contracts 1,716 49.8 Timing of interagency billing, Bus Technology, and service contracts 0.897 6.4 Timing of interagency billing, Bus Technology, and service contracts Materials & Supplies 1,768 34.8 Mainly due to lower usage of general maintenance material as well as timing of radio equipment maintenance/repairs and COVID-19 expenses 8,459 41.6 Mainly due to lower usage of general maintenance material as well as timing of radio equipment maintenance/repairs and COVID-19 expenses Other Business Expenditure 0.155 40.3 Lower print and stationery supplies, and the timing of Automatic Fare Collection (AFC) fees, Mobility tax, and other misc. expenses 0.660 42.8 Lower print and stationery supplies, and the timing of Automatic Fare Collection (AFC) fees, Mobility tax, and other misc. expenses Total Expenditures $ 5,868 8.5 $ 37,838 13.6 Net Cash Variance $ 8,766 14.2 $ 53,170 21.0
+```
+[p140_c0004] _(a) - Variance less than 5%_
+[p140_c0005] _Master Page # 140 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 141
+
+### [p141_c0001] TABLE 6
+### [p141_c0002] MTA BUS COMPANY February Financial Plan - 2021 Adopted Budget CASH CONVERSION (CASH FLOW ADJUSTMENTS) ($ in millions)
+[p141_c0003]
+
+```text
+April 2021 Year-To-Date Favorable (Unfavorable) Favorable (Unfavorable) Favorable (Unfavorable) Favorable (Unfavorable) Adopted Budget Actual Variance Percent Adopted Budget Actual Variance Percent Receipts Farebox Revenue $0.000 (0.877) ($0.877) - $0.000 $0.006 $0.006 - Other Operating Revenue - (0.142) (0.142) - 0.068 (0.570) (0.658) - Capital and Other Reimbursements 0.447 (0.681) (1.128) - 1.811 (1.138) (1.949) - Total Receipts $0.447 ($1.700) ($2.146) * $1.899 ($0.702) ($2.602) * Expenditures Labor: Payroll $1.906 ($1.846) ($3.752) * $5.152 $9.771 $4.619 89.7 Overtime 0.495 0.000 (0.495) (100.0) 2.723 (0.001) (2.724) * Health and Welfare (0.000) 5.337 5.337 * (0.418) 2.418 2.837 * OPEB Current Payment 0.000 0.000 (0.000) (3.0) (0.107) (0.000) 0.107 99.7 Pensions 0.014 0.000 (0.014) (99.8) (0.212) (0.001) 0.211 99.7 Other Fringe Benefits 1.652 (2.684) (4.335) * 6.292 3.773 (2.518) (40.0) GASB Account - - - - - - - - Reimbursable Overhead 0.000 - (0.000) (100.0) (0.000) 0.169 0.169 - Total Labor Expenditures $4.067 $0.807 ($3.259) (80.1) $13.429 $16.130 $2.701 20.1 Non-Labor: Electric Power $0.000 ($0.025) ($0.025) * ($0.007) ($0.170) ($0.163) * Fuel (0.000) (3.681) (3.681) * (0.083) (4.301) (4.216) * Insurance - 0.428 0.428 - (0.029) 1.710 1.739 * Claims 3.259 3.673 0.414 12.7 12.718 13.975 1.257 9.9 Maintenance and Other Operating Contracts (0.000) (0.346) (0.346) * (0.202) (0.470) (0.268) * Professional Service Contracts - 0.563 0.563 - (0.172) (4.899) (4.726) * Materials & Supplies - 0.222 0.222 - (0.254) 1.595 1.849 * Other Business Expenditures - (0.017) (0.017) - (0.019) (0.042) (0.022) * Total Non-Labor Expenditures $3.259 $0.817 ($2.441) (74.9) $11.950 $7.398 ($4.552) (38.1) Total Cash Conversion Adjustments before Non-Cash Liability Adjs. $7.772 ($0.075) ($7.847) * $27.278 $22.825 ($4.453) (16.3) Depreciation Adjustment GASB 75 OPEB Expense Adjustment 4.565 4.134 (0.431) (9.4) 18.031 16.222 (1.809) (10.0) GASB 68 Pension Adjustment 5.825 - (5.825) (100.0) 23.009 - (23.009) (100.0) Environmental Remediation 3.667 - (3.667) (100.0) 14.483 - (14.483) (100.0) Total Expenses/Expenditures $ 21.829 $ 4.059 ($17.770) (81.4) $ 82.801 $ 39.047 ($43.754) (52.8) Total Cash Conversion Adjustments $21.829 $4.059 ($17.770) (81.4) $82.801 $39.047 ($43.754) (52.8)
+```
+[p141_c0004] NOTE: Totals may not add due to rounding
+[p141_c0005] _Master Page # 141 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 142
+
+### [p142_c0001] MTA Bus – Non-Reimbursable Overtime Variance
+### [p142_c0002] Apr 2021 and YTD Adopted Budget vs. Variance
+[p142_c0003] $M
+[p142_c0004] ■ Favorable ■ Unfavorable ■ Budget
+[p142_c0005] Annual Budget Adopted: $99.8M
+> [p142_c0006] Category Apr '20 Apr '21 YTD '20 YTD '21 Favorable $4.5 $7.2 $22.7 $27.8 Unfavorable $5.3 $8.2 $33.4 $33.4 Budget -$0.8 (-15%) -$1.0 (-12%) $5.6 (-17%) $5.6 Total $9.0 $16.4 $61.7 $66.8
+### [p142_c0007] Overview
+- [p142_c0008] • April 2021 increased by $2.7M or 61% compared to April 2020 • Apr YTD 2021 is 17% under budget
+### [p142_c0009] YTD variance by division
+[p142_c0010] $M
+> [p142_c0011] Division YTD Apr '21 Transportation $0.87 Maintenance $4.73
+[p142_c0012] Primarily due to lower scheduled/unscheduled service ($3.8M) and favorable weather ($0.7M); partially offset by availability shortfall ($3.6M).
+[p142_c0013] Primarily favorable COVID cleaning/programmatic maintenance ($3.6M), availability ($1.4M), and unscheduled service ($0.5M); partially offset by unfavorable weather ($0.7M).
+[p142_c0014] _Source: Adopted - GL actual overtime spending. Note: MTABC does not have Reimbursable OT for 2020 and 2021._
+[p142_c0015] _Master Page # 142 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 143
+
+### [p143_c0001] MTA BUS COMPANY 2021 Adopted Budget vs Actual TOTAL POSITIONS BY FUNCTION AND DEPARTMENT NON-REIMBURSABLE / REIMBURSABLE AND FULL-TIME EQUIVALENTS APRIL 2021
+[p143_c0002]
+
+```text
+FUNCTION/DEPARTMENT Adopted Budget Actual Favorable (Unfavorable) Variance Explanation of Variances Administration Office of the EVP 3 2 1 Human Resources 16 14 2 Office of Management and Budget 14 12 2 Material 15 14 1 Controller 18 18 - Office of the President 4 5 (1) System Safety Administration - - - Law 20 17 3 Labor Relations - - - Strategic Office 19 14 5 Non-Departmental 2 - 2 Total Administration 111 96 15 Vacancies Operations Buses 2,298 2,294 5 Excess Bus Operators Office of the Executive VP 6 5 1 Safety & Training 68 39 29 Bus Operator training Road Operations 141 139 2 Transportation Support 25 21 4 Operations Planning 34 29 5 Revenue Control 6 6 - Total Operations 2,578 2,533 46 Maintenance Buses 723 718 5 Maintenance Support/CMF 210 202 8 Facilities 76 74 2 Supply Logistics 104 95 9 Total Maintenance 1,113 1,089 24 Vacancies Capital Program Management 35 23 12 Total Engineering/Capital 35 23 12 Vacancies mainly Managers Security 13 11 2 Total Public Safety 13 11 2 Vacancy Total Positions 3,850 3,752 99 Non-Reimbursable 3,812 3,718 95 Reimbursable 38 34 4 Total Full-Time 3,832 3,739 93 Total Full-Time Equivalents 18 13 6
+```
+[p143_c0003] _Master Page # 143 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 144
+
+### [p144_c0001] MTA BUS COMPANY 2021 Adopted Budget vs Actual TOTAL FULL - TIME AND FTE'S BY FUNCTION AND OCCUPATION APRIL 2021
+[p144_c0002]
+
+```text
+FUNCTION/OCCUPATIONAL GROUP Adopted Budget Actual Favorable (Unfavorable) Variance Explanation of Variances Administration Managers/Supervisors 45 37 8 Professional, Technical, Clerical 64 59 5 Operational Hours 2 - 2 Total Administration 111 96 15 Vacancies Operations Managers/Supervisors 319 320 (1) Professional, Technical, Clerical 45 44 1 Operational Hours 2,243 2,243 0 Total Operations 2,578 2,553 25 Bus Operator training Maintenance Managers/Supervisors 241 223 18 Professional, Technical, Clerical 35 34 1 Operational Hours 837 832 5 Total Maintenance 1,113 1,089 24 Engineering/Capital Managers/Supervisors 21 12 9 Professional, Technical, Clerical 14 11 3 Operational Hours - - - Total Engineering/Capital 35 23 12 Vacancies mainly Managers Public Safety Managers/Supervisors 8 5 3 Professional, Technical, Clerical 3 6 (1) Operational Hours - - - Total Public Safety 13 11 2 Vacancy Total Baseline Positions 634 597 37 Managers/Supervisors 163 154 9 Professional, Technical, Clerical 3,053 3,001 52 Operational Hours 3,650 3,752 -99
+```
+[p144_c0003] _Master Page # 144 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 145
+
+### [p145_c0001] MTA BUS COMPANY February Financial Plan - 2021 Adopted Budget Utilization (In millions)
+[p145_c0002]
+
+```text
+April 2021 Year-to-date as of April 2021 Adopted Favorable/ (Unfavorable) Variance Adopted Favorable/ (Unfavorable) Variance Budget Actual Budget Actual Farebox Revenue Fixed Route 4.520 10.485 $14.357 $37.341 Total Farebox Revenue $4.520 $10.485 $14.357 $37.341 $22.984 $22.984 867.9% Ridership Fixed Route 2.423 5.463 7.760 19.481 Total Ridership 2.423 5.463 7.760 19.481 11.721 11.721 151.0% 1.865 1.919 1.850 1.917 0.054 0.067
+```
+[p145_c0003] _Master Page # 145 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 146
+
+### [p146_c0001] May 2021 Highlights: Capital Program Status
+[p146_c0002] The Capital Program Status Report provides a monthly and year-to-date overview of the progress of the Transit supported Capital Program including a brief discussion of the reporting month's highlights. The report focuses primarily on providing a summary of achievements and year-to-date performance regarding project awards and project completions for the period ending one month prior to the presentation of the report.
+[p146_c0003] Transit's Capital Project Milestone performance through April 2021 is listed below:
+[p146_c0004] _2021 Capital Project Milestone Performance Year to Date ($M)_
+[p146_c0005]
+
+```text
+Planned Achieved % Construction Awards $403.4 $556.2 138 Substantial Completions $346.0 $273.0 79
+```
+[p146_c0006] In April 2021, $130.3 million in Transit projects were awarded, including replacement of eight traction elevators on various lines for $51.4 million, mainline track replacement on the Astoria and Lexington Lines for $40.1 million and rehabilitation of fan plant damper systems at seven locations for $33.8 million.
+[p146_c0007] Also in April 2021, $166.7 million in Transit projects were completed, including various flood resiliency projects system-wide for $54.7 million, an ADA accessibility project at Gun Hill Road station on the Dyre Line for $55.3 million, replacement of control and battery cables at four substation control zones for $27.4 million and phase 2 of a signal room fire suppression project for $23.4 million.
+[p146_c0008] _Master Page # 146 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 147
+
+### [p147_c0001] Capital Program Status May 2021
+[p147_c0002] In April 2021, $130.3 million in Transit projects were awarded, including replacement of eight traction elevators on various lines for $51.4 million. The project will replace existing elevator cars, components including operating and communication system and provide connection between status monitors and the Elevator & Escalator (E&E) Control Center. The elevators that will be addressed are at Court Street station on the Broadway Line (2 elevators), Clark Street on the Clark St. Line (3 elevators), Lexington Avenue-63 rd Street station on the 63 rd Street Line (1 northbound elevator) and Roosevelt Island station on the 63 rd Street Line (2 elevators).
+[p147_c0003] Furthermore, mainline track replacement on the Astoria and Lexington Lines was awarded for $40.1 million. Mainline track replacement includes replacing equipment and materials such as signals, contact rails and ballast.
+[p147_c0004] Lastly, rehabilitation of fan plant damper systems at seven locations was awarded for $33.8 million. The damper systems which will be installed at the following Fan Plants (FP): FP #5106 (Willoughby St North), FP #5107 (Willoughby St South), FP #5108 (Lafayette Ave North), FP #5109 (Lafayette Ave South), FP #6408 (15d- Northern Blvd / 36), FP #6411 (33d-76 Drive / 77 Av), and FP #6412 (34d-76 Drive / 77 Av).
+[p147_c0005] Also in April, $166.7 million in Transit projects were completed, including various flood resiliency system-wide projects for $54.7 million. Two projects addressed vulnerable street level openings such as sidewalk vent grates, stair and elevator openings, hatches and manholes at seven stations and one fan plant. Resiliency measures included inserting mechanical closure devices (MCDs), watertight manhole inserts, conduit sealing, and installation of watertight hatches, doors and deployable stop log barriers. The stations that received the flood resiliency measures were Houston Street on the 7 th Avenue Line, 103 rd and 110 th St stations on the Lexington Line, 155 th Street on the Concourse Line, 138 th Street-Grand Concourse on the Jerome Line and Roosevelt Island-21 st Street (including the 21 st Street Fan Plant) on the 63 rd Street Line. A third project provided flood resiliency at the Steinway Portal Signal Tower on the Flushing Line. Flood resiliency was achieved at the signal tower by installing watertight flood doors and walls, sealing conduit and duct penetrations, and procuring stop logs to be used as needed in a storm event.
+[p147_c0006] Additionally, an ADA accessibility project at Gun Hill Road station on the Dyre Line was completed for $55.3 million. This project provided full ADA accessibility at the station by installing two elevators and elevator machine rooms (EMRs), expanding the control area, modifying the columns/girders and providing ADA compliant platforms, fare arrays, agent booths and station rooms.
+[p147_c0007] Furthermore, replacement of control and battery cables at four substation control zones was completed for $27.4 million. The substation zones that received replacement cable are Zone 2 (Washington Heights Substation), Zone 3 (Harlem Substation), Zone 5 (Central Substation) and Zone 8 (Stanton Substation). Bringing the cables to a state good repair allows for optimal operation and control of traction power for the lines served by these substations.
+[p147_c0008] Lastly, phase 2 of a signal room fire suppression project was completed for $23.4 million. The project furnished and installed a complete fire detection, fire alarm and a clean agent fire suppression system in four signal rooms at Van Wyck Boulevard, Nostrand Avenue, Court
+[p147_c0009] _Master Page # 147 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 148
+
+[p148_c0001] Street Transit Museum (upgrade also included a signal tower) and the 239 th Street Yard facility. The completion of this project will protect critical signal equipment in the event of a fire.
+[p148_c0002] _Master Page # 148 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 149
+
+### [p149_c0001] CAPITAL PROJECT MILESTONE SUMMARY 2021
+[p149_c0002] (Through April 30, 2021)
+[p149_c0003]
+
+```text
+MILESTONES PLANNED MILESTONES ACCOMPLISHED PERCENT PERFORMANCE $M # $M # %($) %(#)
+```
+### [p149_c0004] April
+[p149_c0005]
+
+```text
+Construction Awards 61.5 8 130.3 5 211.8 62.5 Substantial Completions 178.3 14 166.7 10 93.5 71.4
+```
+### [p149_c0006] 2021 Year-To-Date
+[p149_c0007]
+
+```text
+Construction Awards 403.4 40 556.2 33 137.9 82.5 Substantial Completions 346.0 32 273.0 24 78.9 75.0
+```
+### [p149_c0008] 2021 Projected To-Year-End
+[p149_c0009]
+
+```text
+Initial Plan Current Forecast %($) %(#) Construction Awards 3,839.2 174 4,003.3 183 104.3 105.2 Substantial Completions 3,573.5 162 3,680.8 162 103.0 100.0
+```
+[p149_c0010] Totals do not include contingency, emergency funds and miscellaneous reserves; performance percentages include early accomplishments.
+[p149_c0011] _Master Page # 149 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 150
+
+### [p150_c0001] 2021 Awards Charts
+[p150_c0002] As of April 2021
+> [p150_c0003] Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Forecast 12 4 12 5 12 18 27 5 22 9 16 41 Actual 10 5 17 8 3 32 17 11 10 14 11 36 Plan 10 15 32 40 43 75 92 103 113 127 138 174
+[p150_c0004]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Forecast 12 4 12 5 12 18 27 5 22 9 16 41 Actual 10 5 17 8 3 32 17 11 10 14 11 36 Plan 10 15 32 40 43 75 92 103 113 127 138 174 Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Forecast 12 16 28 33 45 63 90 95 117 126 142 183 Actual 10 15 32 40 43 75 92 103 113 127 138 174 Plan 10 15 32 40 43 75 92 103 113 127 138 174
+```
+> [p150_c0005] Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Forecast 114.8 31.8 279.2 130.3 83.0 171.5 453.5 39.5 761.3 104.4 682.4 1,151.6 Actual 105.7 37.7 198.5 61.5 37.2 558.4 542.4 331.9 117.2 341.4 490.2 1,017.3 Plan 105.7 143.3 341.9 403.4 440.6 998.9 1,541.3 1,873.2 1,990.3 2,331.7 2,822.0 3,839.2
+[p150_c0006]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Forecast 114.8 31.8 279.2 130.3 83.0 171.5 453.5 39.5 761.3 104.4 682.4 1,151.6 Actual 105.7 37.7 198.5 61.5 37.2 558.4 542.4 331.9 117.2 341.4 490.2 1,017.3 Plan 105.7 143.3 341.9 403.4 440.6 998.9 1,541.3 1,873.2 1,990.3 2,331.7 2,822.0 3,839.2 Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Forecast 114.8 146.6 425.9 556.2 639.1 810.6 1,264.1 1,303.6 2,064.9 2,169.3 2,851.7 4,003.3 Actual 105.7 143.3 341.9 403.4 440.6 998.9 1,541.3 1,873.2 1,990.3 2,331.7 2,822.0 3,839.2 Plan 105.7 143.3 341.9 403.4 440.6 998.9 1,541.3 1,873.2 1,990.3 2,331.7 2,822.0 3,839.2
+```
+[p150_c0007] _Master Page # 150 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 151
+
+### [p151_c0001] 2021 Substantial Completions Charts
+[p151_c0002] As of April 2021
+> [p151_c0003] Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Forecast 5 4 5 10 13 24 8 20 20 17 8 28 Actual 3 4 11 14 12 24 7 21 11 23 11 21 Plan 3 7 18 32 44 68 75 96 107 130 141 162
+[p151_c0004]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Forecast 5 4 5 10 13 24 8 20 20 17 8 28 Actual 3 4 11 14 12 24 7 21 11 23 11 21 Plan 3 7 18 32 44 68 75 96 107 130 141 162 Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Forecast 5 9 14 24 37 61 69 89 109 126 134 162 Actual 3 7 18 32 44 68 75 96 107 130 141 162 Plan 3 7 18 32 44 68 75 96 107 130 141 162
+```
+> [p151_c0005] Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Forecast 10.9 44.7 50.6 166.7 369.0 409.3 73.9 389.3 403.0 507.9 199.9 1,055.5 Actual 4.3 72.8 90.6 178.3 331.0 429.0 65.9 607.8 334.0 555.7 206.9 697.2 Plan 4.3 77.1 167.7 346.0 677.0 1,105.9 1,171.8 1,779.6 2,113.6 2,669.3 2,876.2 3,573.5 Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Forecast 10.9 55.6 106.3 273.0 642.0 1,051.3 1,125.2 1,514.5 1,917.5 2,425.4 2,625.3 3,680.8 Actual 4.3 77.1 167.7 346.0 677.0 1,105.9 1,171.8 1,779.6 2,113.6 2,669.3 2,876.2 3,573.5 Plan 4.3 77.1 167.7 346.0 677.0 1,105.9 1,171.8 1,779.6 2,113.6 2,669.3 2,876.2 3,573.5
+[p151_c0006] _Master Page # 151 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 152
+
+> [p152_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p152_c0002] Procurement & Supply Chain
+[p152_c0003] Louis Montanti , MTA Deputy Chief Procurement - Operations
+[p152_c0004] _Master Page # 152 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 153
+
+### [p153_c0001] PROCUREMENTS
+[p153_c0002] The Procurement Agenda this month includes 1 action for a proposed expenditure amount of TBD.
+[p153_c0003] _Master Page # 153 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 154
+
+[p154_c0001]
+
+```text
+Subject Request for Authorization to Award Various Procurements Department Procurement & Supply Chain – NYCT Department Head Name Louis A. Montanti Department Head Signature Louis A. Montanti Project Manager Name Rose Davis Board Action Order To Date Approval Info Other 1 Committee 5/26/21 2 Board 5/26/21
+```
+[p154_c0002]
+
+```text
+May 18, 2021 Department Department Head Name Department Head Signature Internal Approvals Approval Approval DA President NYCT X Pres. MTA Bus/SVP DOB COO NYCT X Subways Capital Prog. Management X Diversity/Civil Rights X Law
+```
+### [p154_c0003] Internal Approvals (cont.)
+[p154_c0004]
+
+```text
+Order Approval Order Approval Order Approval Order Approval
+```
+### [p154_c0005] PURPOSE
+[p154_c0006] To obtain approval of the Board to award various contracts and purchase orders, and to inform the NYC Transit Committee of these procurement actions.
+### [p154_c0007] DISCUSSION
+[p154_c0008] NYC Transit proposes to award Noncompetitive procurements in the following categories: NONE
+[p154_c0009] MTA Bus Company proposes to award Noncompetitive procurements in the following categories: NONE
+[p154_c0010] _Master Page # 154 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 155
+
+[p155_c0001]
+
+```text
+NYC Transit proposes to award Competitive procurements in the following categories: Procurements Requiring Two-Thirds Vote: # of Actions $ Amount Schedule B: Competitive Requests for Proposals (Solicitation of Purchase and Public Work Contracts) 1 $ TBD M SUBTOTAL 1 $ TBD M MTA Bus Company proposes to award Competitive procurements in the following categories: NONE MTA Bus Company proposes to award Ratifications in the following categories: NONE NYC Transit proposes to award Ratifications in the following categories: NONE TOTAL 1 TBD M COMPETITIVE BIDDING REQUIREMENTS: The procurement actions in Schedules A, B, C, and D are subject to the competitive bidding requirements of PAL 1209 or 1265-a relating to contracts for the purchase of goods or public work. Procurement actions in the remaining Schedules are not subject to these requirements. BUDGET IMPACT: The purchases/contracts will result in obligating funds in the amounts listed. Funds are available in the current operating/capital budgets for this purpose. RECOMMENDATION: That the purchases/contracts be approved as proposed. (Items are included in the resolution of approval at the beginning of the Procurement Section.)
+```
+[p155_c0002] _Master Page # 155 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 156
+
+### [p156_c0001] BOARD RESOLUTION
+[p156_c0002] WHEREAS , in accordance with Sections 1265-a and 1209 of the Public Authorities Law and the All-Agency General Contract Procurement Guidelines, the Board authorizes the award of certain noncompetitive purchase and public work contracts, and the solicitation and award of requests for proposals in regard to purchase and public work contracts; and
+[p156_c0003] WHEREAS , in accordance with the All-Agency Service Contract Procurement Guidelines and General Contract Procurement Guidelines the Board authorizes the award of certain noncompetitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts, and
+[p156_c0004] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Service Contract Procurement Guidelines, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p156_c0005] NOW, the Board resolves as follows:
+[p156_c0006] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract.
+[p156_c0007] 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals, and authorizes the solicitation of such proposals.
+[p156_c0008] 3. As to each request for proposals (for purchase and public work contracts) set forth in Schedule C for which a recommendation is made to award the contract, the Board authorizes the execution of said contract.
+[p156_c0009] 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein, and ratifies each action for which ratification is requested.
+[p156_c0010] 5. The Board authorizes the execution of each of the following for which Board authorization is required: (i) the miscellaneous procurement contracts set forth in Schedule E; (ii) the personal service contracts set forth in Schedule F; (iii) the miscellaneous service contracts set forth in Schedule G; (iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; (v) the contract modifications to purchase and public work contracts set forth in Schedule I; and (vi) the modifications to miscellaneous procurement contracts set forth in Schedule J.
+[p156_c0011] 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p156_c0012] _Master Page # 156 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 157
+
+[p157_c0001] MAY 2021
+### [p157_c0002] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p157_c0003] Procurements Requiring Two-Thirds Vote:
+- [p157_c0004] B. Competitive Requests for Proposals (Solicitation of Purchase and Public Work Contracts) (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p157_c0005] 1. RFP Authorizing Resolution STBD Staff Summary Attached Contract# TBD Procurement of a continuous welded rail infeed deck at NYC Transit's Linden Yard Welding Plant.
+[p157_c0006] _Master Page # 157 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 158
+
+### [p158_c0001] Staff Summary
+### [p158_c0002] Page 1 of 2
+[p158_c0003]
+
+```text
+Item Number: 1 Department, Department Head Name MTA Headquarters Procurement, Kuvershen Ayer Internal Approvals Order Approval Order Approval 1 X Materiel 6 President, NYCT 2 X Law, NYCT 3 X CFO 4 X Subways 5 Acting COO, NYCT
+```
+[p158_c0004]
+
+```text
+SUMMARY INFORMATION Vendor Name RFP Authorizing Resolution Contract No. TBD Description Design and Install a Continuous Welded Rail Infeed Deck for Department of Subways Division of Track Total Amount TBD Contract Term (including Options, if any) TBD Option(s) included in Total Amount? Yes No Renewal? Yes No Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Funding Source Operating Capital Federal Other:
+```
+### [p158_c0005] Purpose
+[p158_c0006] To request that the Board declare competitive bidding impractical and inappropriate for the procurement of a continuous welded rail (“CWR”) infeed deck at NYC Transit’s Linden Yard Welding Plant and that it is in the public interest to issue a competitive Request for Proposal (“RFP”) pursuant to New York State Public Authorities Law, Section 1209, subdivision 9(g).
+### [p158_c0007] Discussion
+[p158_c0008] The Public Authorities Law, Section 1209, Subdivision 9(g) permits NYC Transit to use the competitive RFP process in lieu of competitive bidding to award contracts based on a formal evaluation of characteristics such as design approach, build quality, and cost against stated selection criteria. NYC Transit is desirous of utilizing such a procedure with respect to the procurement of a CWR infeed deck.
+[p158_c0009] NYC Transit’s Department of Subways, Division of Track performs in-house CWR fabrication at a welding plant in its Linden Yard facility. The infeed deck is specialized material-handling equipment within the plant that feeds rail strings into a welding head as they undergo the welding process of CWR fabrication. The infeed deck currently in place at Linden Yard is over 30 years old and has reached the end of its useful life. It was designed to carry loads and stage welds for 39-foot rails, but NYC Transit now uses 78-foot rails to fabricate CWR. It requires considerable maintenance and frequent repairs to operate. Prior initiatives to increase the rate of CWR fabrication exacerbated wear on the equipment, further necessitating its replacement.
+[p158_c0010] CWR eliminates the need for mechanically jointed rail, thereby reducing track defects and improving subway service reliability. Systemwide CWR installation remains a priority among NYC Transit’s service delivery objectives, with an additional 20 miles of mechanically jointed rail scheduled for replacement with CWR under the 2020–2024 Capital Plan. The infeed deck is an essential element for NYC Transit’s welding operations, ensuring that the agency can safely and adequately meet current and future CWR production targets in the most efficient and expeditious manner possible. Under this RFP, NYC Transit will request proposals to design and construct an infeed table designed to carry loads and stage welds for 78-foot rails.
+[p158_c0011] _Master Page # 158 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 159
+
+[p159_c0001] Utilizing the RFP process will allow NYC Transit to select the proposal that offers the best overall value through negotiations and evaluation based on criteria that reflect the critical needs of the Authority. By utilizing the RFP process, NYC Transit will be able to (1) weigh factors such as overall quality of design and product of the proposer, including fabrication and installation, past performance on similar projects, and overall project price; (2) negotiate specific contract terms such as warranty and payment; (3) negotiate technical matters as deemed appropriate; and (4) include any other factors that NYC Transit deems relevant to its operation in such a manner as deemed to be in the public interest provided that the terms and conditions offered by the proposers are commercially reasonable, and the proposers' Best and Final Offers ("BAFOs") are deemed to be within a reasonable competitive range.
+### [p159_c0002] Alternative
+[p159_c0003] Issue a competitive Invitation for Bid. Not recommended given the complexity of this requirement and the advantages offered by the RFP process.
+### [p159_c0004] Impact on Funding
+[p159_c0005] Funding has been identified and approved under the Department of Subways Operating Budget within the Division of Track.
+### [p159_c0006] Recommendation
+[p159_c0007] That the Board declare competitive bidding impractical and inappropriate for the procurement of a CWR infeed deck for use at NYC Transit's Linden Yard Welding Plant, and that it is in the public interest to issue a competitive RFP pursuant to New York State Public Authorities Law, Section 1209, subdivision 9(g) for NYC Transit.
+[p159_c0008] _Master Page # 159 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 160
+
+### [p160_c0001] Construction & Development
+### [p160_c0002] Contracts Department
+[p160_c0003] Stephen Plochochi , Senior Vice President
+[p160_c0004] _Master Page # 160 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 161
+
+### [p161_c0001] Construction & Development
+### [p161_c0002] PROCUREMENTS
+[p161_c0003] The Procurement Agenda this month includes eight procurement actions for a proposed expenditure of $40M.
+[p161_c0004] _Master Page # 161 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 162
+
+### [p162_c0001] Staff Summary
+[p162_c0002]
+
+```text
+Subject Request for Authorization to Award Procurement Actions Department Contracts Department Head Name & Title Steve Plochochi, Sr. Vice President Department Head Signature Board Action Order To Date Approval Info 1 NYCT & Bus Committee 5/26/21 X 2 Board 5/26/21 X
+```
+[p162_c0003]
+
+```text
+Date: May 17, 2021 Internal Approvals Approval Approval Deputy Chief Development Officer, Delivery Deputy Chief Development Officer, Development Executive Vice President & General Counsel
+```
+### [p162_c0004] PURPOSE
+[p162_c0005] To obtain the approval of the Board to award procurement actions and, to inform the New York City Transit Committee of these procurement actions.
+### [p162_c0006] DISCUSSION
+[p162_c0007] MTA Construction & Development proposes to award Competitive Procurements in the following category:
+### [p162_c0008] Schedules Requiring Majority Vote
+[p162_c0009]
+
+```text
+H. Modifications to Personal and Miscellaneous Service Contracts 8 $40,000,000 TOTAL 8 $40,000,000
+```
+### [p162_c0010] Budget Impact:
+[p162_c0011] The approval of these procurement actions will not obligate the capital funds listed at this time as a WAR certificate will be issued for each task order prior to award.
+### [p162_c0012] Recommendation:
+[p162_c0013] The procurement actions be approved as proposed. (The items are included in the resolution of approval at the beginning of the Procurement Section.)
+[p162_c0014] _Master Page # 162 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 163
+
+### [p163_c0001] MTA Construction & Development
+### [p163_c0002] MTA Construction & Development
+### [p163_c0003] BOARD RESOLUTION
+[p163_c0004] WHEREAS , in accordance with Sections 1265-a and 1209 of the Public Authorities Law and the All Agency Procurement Guidelines, the Board authorizes the award of certain non-competitive purchase and public works contracts, and the solicitation and award of request for proposals in regard to purchase and public work contracts; and
+[p163_c0005] WHEREAS , in accordance with the All Agency Procurement Guidelines, the Board authorizes the award of certain non-competitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts;
+[p163_c0006] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Guidelines for Procurement of Services, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p163_c0007] NOW, the Board resolves as follows:
+- [p163_c0008] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract. 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals and authorizes the solicitation of such proposals. 3. As to each request for proposals (for purchase and public work contracts set forth in Schedule C for which a recommendation is made to award the contract), the Board authorizes the execution of said contract. 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein, and ratifies each action for which ratification is requested. 5. The Board authorizes the execution of each of the following for which Board authorization is required: i) the miscellaneous procurement contracts set forth in Schedule E; ii) the personal service contracts set forth in Schedule F; iii) the miscellaneous service contracts set forth in Schedule G; iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; v) the contract modifications to purchase and public work contracts set forth in Schedule I; vi) the modifications to miscellaneous procurement contracts set forth in Schedule J. 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p163_c0009] _Master Page # 163 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 164
+
+[p164_c0001] May 2021
+### [p164_c0002] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p164_c0003] Procurements Requiring Majority Vote:
+### [p164_c0004] Schedule H. Modifications to Personal and Miscellaneous Service Contracts (Staff Summaries required for all items greater than $1M)
+[p164_c0005]
+
+```text
+$40,000,000 Aggregate Staff Summary Attached 1. AECOM USA, Inc. Contract No. CM – 1544.7 2. Stantec Consulting Services, Inc. Contract No. CM – 1545.6 ↓ ↓ 3. Henningson, Durham & Richardson Architecture and Engineering, P.C. Contract No. CM – 1546.8 ↓ ↓ 4. HNTB New York Engineering and Architecture, P.C. Contract No. CM – 1547.7 ↓ ↓ 5. Jacobs Civil Consultants, Inc. Contract No. CM – 1548.6 ↓ ↓ 6. Parsons Transportation Group of New York, Inc. Contract No. CM – 1549.7 ↓ ↓ 7. WSP USA, Inc Contract No. CM – 1550.6 ↓ ↓ 8. Urbahn Architects, PLLC Contract No. CM – 1551.10 ↓ ↓
+```
+[p164_c0006] MTA Construction and Development requests Board approval to modify eight state-funded Indefinite Quantity consultant contracts for Architectural/Engineering Design Services on miscellaneous MTA-funded projects to increase the total estimated aggregate value and to extend each contract by seven months.
+[p164_c0007] _Master Page # 164 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 165
+
+### [p165_c0001] Schedule H: Modifications to Personal and Miscellaneous Service Contracts
+[p165_c0002] Item Nos. 1 - 8
+[p165_c0003]
+
+```text
+Vendor Name (& Location) AECOM USA, Inc. (New York, NY) Stantec Consulting Services, Inc. (New York, NY) Henningson, Durham & Richardson Architecture and Engineering, P.C. (New York, NY) HNTB New York Engineering and Architecture, P.C. (New York, NY) Jacobs Civil Consultants, Inc. (New York, NY) WSP USA, Inc. (New York, NY) Parsons Transportation Group of New York, Inc. (New York, NY) Urbahn Architects, PLLC (New York, NY) Description IQ Architectural/Engineering Design for Miscellaneous Construction Projects Contract Term (including Options, if any) October 9, 2015 – June 2, 2021 Option(s) included in Total Amount? Yes No N/A Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Dept/Div & Dept/Div Head Name: Delivery, Mark Roche, Deputy Chief Development Officer
+```
+[p165_c0004]
+
+```text
+Contract Number AWO/Modification # CM-1544 Mod #7 CM-1545 Mod #6 CM-1546 Mod #8 CM-1547 Mod #7 CM-1548 Mod #6 CM-1549 Mod #7 CM-1550 Mod #6 CM-1551 Mod #10 Original Amount: $ 100,000,000 Prior Modifications: $ 0 Prior Budgetary Increases: $ 100,000,000 Current Amount: $ 200,000,000 This Request $ 40,000,000 % of This Request to Current Amount: 20% % of Modifications (including This Request) to Original Amount: 140%
+```
+### [p165_c0005] Discussion:
+[p165_c0006] This modification to eight state-funded Indefinite Quantity (IQ) consultant contracts for Architectural/Engineering (A/E) Design Services on miscellaneous MTA-funded projects is to increase the total estimated aggregate value by $40 million, creating a new total estimated aggregate value of $240 million. The contract term for all eight state-funded IQ consultant contracts is also being extended by an additional seven (7) months to January 2, 2022.
+[p165_c0007] On September 24, 2015, the Board approved the award of eight competitively negotiated IQ contracts to provide A/E design services for miscellaneous MTA-funded construction projects on an as-needed basis for a period of 60 months with a total estimated aggregate cost of $100 million. In June 2019, the Board approved Budget Adjustment No. 1 for the total aggregate amount of $100 million.
+[p165_c0008] These contracts form a pool of eight pre-qualified design teams through which task orders are competed to provide required architectural and engineering services. Such services include, among other things, design, engineering, specification and contract development, cost estimating, scheduling and support during construction and closeout services. To date, 161 task orders have been issued with a total expenditure in excess of $169 million. This pool concept allows for competitive awards to be made on an expedited basis. Funding authorization will be issued prior to the award for each task order.
+[p165_c0009] This budget adjustment will cover the additional capacity needed to address the significant demands for design services to support the MTA’s capital program. All work issued over the extension period shall be performed under the current competitively negotiated contract rates. The additional $40 million across the eight contracts and extension of time by an additional seven (7) months will provide the capacity necessary to permit the continued use of these contracts until the award of replacement contracts. The All-Agency solicitation for replacement contracts is currently underway and awards are anticipated to be in place in the fourth quarter 2021.
+[p165_c0010] In connection with previous contracts awarded to AECOM, AECOM was found to be responsible notwithstanding significant adverse information (“SAI”) pursuant to the All-Agency Responsibility Guidelines and such responsibility finding was approved by the MTA Managing Director in consultation with the MTA General Counsel in November 2017 and additional findings were approved by the MTA
+[p165_c0011] _Master Page # 165 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 166
+
+### [p166_c0001] Schedule H: Modifications to Personal and Miscellaneous Service Contracts
+[p166_c0002] Item Nos. 1 - 8
+> [p166_c0003] The logo for MTA Construction & Development, featuring the MTA logo (a circle with 'MTA' inside) followed by the text 'Construction & Development'.
+[p166_c0004] Chairman/CEO in consultation with the MTA General Counsel in February 2021. No new SAI has been found relating to AECOM and AECOM has been found to be responsible. A Contractor Compliance Program was put in place for AECOM in September 2018.
+[p166_c0005] In connection with a previous contract awarded to Jacobs, Jacobs was found to be responsible notwithstanding SAI pursuant to the All-Agency Responsibility Guidelines and such responsibility finding was approved by the MTA Managing Director in consultation with the MTA General Counsel in October 2018. No new SAI has been found relating to Jacobs and Jacobs has been found to be responsible 1 .
+[p166_c0006] In connection with a previous contract awarded to The Louis Berger Group, Inc. ("LBG"), LBG was found to be responsible notwithstanding SAI pursuant to the All-Agency Responsibility Guidelines and such responsibility finding was approved by the MTA Chairman and Chief Executive Officer in consultation with the MTA General Counsel in November 2015. No new SAI has been found relating to LBG or WSP USA, Inc. ("WSP"). WSP has no SAI except that stemming from its acquisition of LBG. WSP has been found to be responsible 2 .
+[p166_c0007] _1 While Jacobs has no direct SAI, its acquisition of CH2M Hill Companies Ltd. ("CH2M") in December 2017 mandates reporting of CH2M's SAI. CH2M, notwithstanding its SAI, was found responsible by the MTA Chairman in December 2013; this approval may be relied upon by Jacobs._
+[p166_c0008] _2 LBG was acquired by WSP in December 2018 and that acquisition carries with it LBG's SAI._
+[p166_c0009] _Master Page # 166 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 167
+
+> [p167_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p167_c0002] Standard Follow-Up Report: Transit Adjudication Bureau, 1 st Quarter 2021
+[p167_c0003] The purpose of this quarterly report is to update the Transit Committee on Transit Adjudication Bureau (TAB) activities and outcomes, as reflected by several Key Indicators.
+[p167_c0004] TAB is the statutory administrative tribunal that receives, processes, adjudicates and pursues collection of civil penalties arising from the tens of thousands of civil summonses that are issued each year for violations of the Transit Rules of Conduct.
+[p167_c0005] This quarterly reporting on TAB activities and outcomes commenced in 1992. The report provides the Committee with metrics, covering the most recently completed quarter, for the following Key Indicators:
+- [p167_c0006] • Number of TAB violations received by TAB • Number and dollar amount of payments TAB received • TAB revenues and expenses for the quarter • Number of cases adjudicated
+### [p167_c0007] David Farber
+[p167_c0008] Vice President and General Counsel, NYC Transit Law Department General Counsel, MTA Bus Company
+[p167_c0009] _Master Page # 167 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 168
+
+### [p168_c0001] Transit Adjudication Bureau, First Quarter 2021
+[p168_c0002] The following is a comparison of the key indicators for the first quarter of 2021 as compared to the same period in 2020.
+- [p168_c0003] • TAB violations issued in the first quarter of 2021 (Q1 2021) decreased by 30.5%, from 42,261 in 2020 to 29,390 in 2021. • TAB received 17,024 payments in Q1 2021, a 50.1% decrease from the 34,125 received in Q1 2020. Direct payments decreased by 29.3% (from 21,844 to 15,453) compared to the first quarter of 2020. The number of first quarter payments received from state tax refunds decreased from 12,281 in 2020 to 1,571 in 2021. • Total revenue for Q1 2021 was 59.3% lower than in 2020 ($1,708,933 versus $4,199,456). Receipts from direct payments in Q1 2021 decreased by 29.1% ($1,472,917 compared to $2,076,786 in 2020). Receipts from state tax refunds for Q1 2021 relating to outstanding judgments from prior years totaled $268,892, representing an 87.3% decrease from Q1 2020 state tax refund receipts of $2,121,966. • TAB revenue for Q1 2021 exceeded expenses by $647,721. This compared to a margin of $3,123,061 for Q1 2020. First quarter expenses decreased by 1.4% relative to 2020 ($1,061,212 compared to $1,076,395).
+[p168_c0004] For further information, see the Key Indicators Chart on the following page.
+[p168_c0005] http://www.mta.info/nyc/TransitAdjudicationBureau.html
+[p168_c0006] _Master Page # 168 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 169
+
+### [p169_c0001] MTA New York City Transit Transit Adjudication Bureau Key Indicators First Quarter 2021
+[p169_c0002]
+
+```text
+Indicator 1st Qtr 2021 1st Qtr 2020 Issuance Data Violations Issued* 29,390 42,261 Payment Data Number of Payments 17,024 34,125 Regular 15,453 21,844 State Tax Refund 1,571 12,281 Amount Paid $1,741,809 $4,198,753 Regular $1,472,917 $2,076,786 State Tax Refund $268,892 $2,121,966 Average Payment $102.31 $123.04 Yield per NOV $59.27 $99.35 Revenue/Expense Data Revenue $1,708,933 $4,199,456 Expenses* $1,061,212 $1,076,395 Adjudications Total Cases Adjudicated 2,690 4,122
+```
+[p169_c0003] *2020 Summonses count updated as of 05/06/2020 and a updated March expense not previously recorded on the Q1 2020 Board Report Note: Due to the COVID-19 pandemic, the Transit Adjudication Bureau office was closed to the public March 17, 2020 - July 31, 2020.
+[p169_c0004] _Master Page # 169 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 170
+
+### [p170_c0001] Standard Follow-up Report: Fare Evasion, 1st Quarter 2021
+[p170_c0002] This report provides fare evasion rates and estimated lost revenue on subways and buses. Note that bus fare evasion is based on data collected using Automatic Passenger Counters (APCs). APCs currently provide robust data for 84% of non-SBS local routes (SBS fare evasion estimates remain based on Eagle Team surveys). The APCs count total ridership which is compared with paid ridership counts to estimate the level of fare evasion.
+### [p170_c0003] Subway Fare Evasion Results
+[p170_c0004] Subway fare evasion in Q1 2021 was 11.3%, 0.4% lower than the 11.7% rate in the 4th quarter. The Q1 2021 revenue loss decreased by $6 million. NYPD enforcement actions increased significantly, up 79% compared with Q4 2020.
+### [p170_c0005] Subway Fare Evasion Survey Summary
+[p170_c0006]
+
+```text
+Jan-Mar 2021 (Q1 2021)* Oct-Dec 2020 (Q4 2020)* Change (Q1 2021 vs Q4 2020) Total Subway Fare Evasion 11.3% 11.7% -0.4% Estimated Fare Evasion Revenue Loss ($ Millions) $30 $36 -$6 Enforcement Actions TOS TABS Summonses 17,983 10,074 7,909 TOS C-Summonses 294 166 128 TOS Arrests 232 87 145 Total Enforcement Actions 18,509 10,327 8,182
+```
+[p170_c0007] *Jan-Mar 2021 (1Q21) Margin of error was +/-1.0% and Oct-Dec 2020 (4Q20) was +/-0.8%.
+[p170_c0008] _Master Page # 170 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 171
+
+> [p171_c0001] Quarterly Subway Fare Evasion Quarter Fare Evasion Rate 2Q17 1.2% 3Q17 2.4% 4Q17 3.5% 1Q18 2.8% 2Q18 2.9% 3Q18 3.8% 4Q18 3.4% 1Q19 3.9% 2Q19 3.9% 3Q19 5.7% 4Q19 4.8% 1Q20 6.2% 3Q20 13.6% 4Q20 11.7% 1Q21 11.3%
+[p171_c0002] _Master Page # 171 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 172
+
+### [p172_c0001] Bus Fare Evasion Results
+[p172_c0002] Bus fare evasion in Q1 2021 was 21.6%, 0.3 percentage points higher than Q4 2020. Bus fare evasion revenue loss in Q1 2021 was $29 million, $4 million less than Q4 2020.
+### [p172_c0003] Bus Fare Evasion Survey Summary
+[p172_c0004]
+
+```text
+Bus Fare Evasion Jan-Mar 2021 (1Q21)* Oct-Dec 2020 (4Q20)* Change (1Q21 vs 4Q20) Local Bus Evasion (Excl SBS) 23.6% 23.3% 0.3% Select Bus Service (SBS) Evasion 5.0% 5.8% -0.8% Total Local & SBS Bus Evasion 21.6% 21.3% 0.3% Estimated Fare Evasion Revenue Loss ($ Millions) $29 $33 -$4
+```
+[p172_c0005] * Fare evasion based on APC counts
+[p172_c0006] _Master Page # 172 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 173
+
+> [p173_c0001] Quarterly Local & SBS Bus Fare Evasion The chart displays the quarterly fare evasion rate for three categories: Local (solid blue line with circles), SBS (dotted line with squares), and Local & SBS (dashed line with triangles). The y-axis represents the fare evasion rate in percentage, ranging from 0% to 30%. The x-axis shows the quarters from 4Q16 to 1Q21. Data points are labeled with their respective percentages. Quarter Local (%) SBS (%) Local & SBS (%) 4Q16 13.7% 2.6% 12.6% 1Q17 13.7% 2.6% 12.6% 2Q17 13.9% 2.6% 12.6% 3Q17 13.9% 2.2% 12.6% 4Q17 17.7% 2.2% 13.9% 1Q18 18.3% 2.1% 16.7% 2Q18 20.4% 2.1% 16.7% 3Q18 18.3% 2.1% 16.5% 4Q18 24.2% 2.6% 21.3% 1Q19 25.0% 2.6% 22.6% 2Q19 27.9% 2.6% 25.3% 3Q19 21.1% 3.9% 18.3% 4Q19 21.1% 3.9% 18.3% 1Q20 21.1% 3.9% 18.8% 4Q20 23.3% 5.8% 21.3% 1Q21 23.6% 5.0% 21.5%
+[p173_c0002] _Master Page # 173 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 174
+
+### [p174_c0001] New York City Transit NYCT
+### [p174_c0002] EEO Report – 1st Quarter 2021
+[p174_c0003] May 26, 2021
+[p174_c0004] _Master Page # 174 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+[p174_c0005] _The MTA logo, featuring the letters 'MTA' in a stylized font inside a circular emblem._
+
+## Page 175
+
+### [p175_c0001] Executive Summary
+### [p175_c0002] □ EEO
+[p175_c0003] As of March 31, 2021 , there were 48,317 total employees in NYCT's workforce. This represents a 5% decrease from the first quarter 2020 (1Q20).
+- [p175_c0004] □ Females represented 19% (9,014) of our workforce and remained constant when compared to 1Q20 possibly due to hiring restrictions and attrition. □ Females were hired above their current representation possibly due to recruitment outreach efforts targeting females to fill vacancies in operating titles. □ Minorities represented 79% (38,386) of our workforce, and remained constant compared to 1Q20 possibly due to hiring restrictions and attrition. □ Minorities were hired above their current representation due to ongoing yet limited hiring in the critical operating vacancies that were filled.
+[p175_c0005] _Master Page # 175 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+[p175_c0006] _The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle._
+
+## Page 176
+
+### [p176_c0001] Executive Summary
+[p176_c0002] NYCT conducted a utilization analysis* of females and minorities in its workforce as of March 31, 2021. Based on the analysis, the underrepresentation for females and minorities occurred in the following EEO categories:
+### [p176_c0003] Females:
+- [p176_c0004] Officials and Administrators – Whites Professionals – Whites Technicians –Asians and Whites Protective Services – Asians and Whites Paraprofessionals – Whites Administrative Support – Hispanics, Asians and Whites Skilled Craft– Blacks, Hispanics, Asians and Whites Service Maintenance – Hispanic, Asians and Whites
+### [p176_c0005] Minorities:
+- [p176_c0006] Technicians –Asians Protective Services –Asians Administrative Support – Hispanics, Asians Skilled Craft– Blacks, Hispanics and Asians Service Maintenance – Hispanic, Asians
+[p176_c0007] _*The utilization analysis compares the percentages of females and minorities employed in each job group to 80 percent of the females and minorities available within the relevant labor market._
+[p176_c0008] _Master Page # 176 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 177
+
+### [p177_c0001] Executive Summary
+### [p177_c0002] □ Diversity Initiatives to increase representation
+- [p177_c0003] □ Initiatives taken to address underrepresented females and minorities □ Females – Disseminated Monthly Notices of Examination (NOE) and Job Vacancy Notices (JVN) to Empowering Women in Transit , a Transit Employee Group (TEG). NYCT developed digital ads that showcased female employees on the job, Women’s History Month celebrated women executives to encourage employees to prepare for and seek roles for greater representation. □ Minorities – Disseminated monthly NOEs to TEG officers, NYCT Mobile Vans, NYC Department of Education vocational high school work-based learning coordinators, NYS Department of Labor Chinese Chamber of Commerce and placed them on MTA TV screens at all MTA locations. As part of its public messaging campaign to combat Anti-Asian Hate, MTA Communications updated digital screens on buses and in subway stations with “Stop the Hate” messaging to show the MTA’s commitment to and support for the respect and dignity of all people. □ Initiatives to increase representation of veterans and persons with disabilities □ Veterans – All NYCT and MaBSTOA monthly examination schedules are disseminated by the MTA Director of Veterans Recruitment to job developers who work with veterans and to veterans and active military personnel who have expressed interest in employment at the MTA. Veterans TEG Board Member, Colonel (Ret.) Ricky Semple, was a guest speaker at the National Association of Black Military Women, Brooklyn Chapter, Black History Month celebration. □ Persons with Disabilities – MTA’s first All-Agency Chief Accessibility Officer, Quemuel Arroyo, has been appointed to provide a clear and dedicated focus on persons with disabilities, including applicants, employees and customers, and the MTA’s commitment to provide a transit system that meets the needs of all customers.
+[p177_c0004] _Master Page # 177 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+[p177_c0005] _The MTA logo, featuring the letters 'MTA' in a stylized font inside a circular emblem._
+
+## Page 178
+
+[p178_c0001] NYCT
+### [p178_c0002] Workforce as of March 31, 2020
+[p178_c0003] _Master Page # 178 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+> [p178_c0004] The MTA logo, consisting of the letters 'MTA' in a stylized font inside a circular emblem.
+
+## Page 179
+
+### [p179_c0001] Definitions of EEO Job Categories
+### [p179_c0002] Officials & Administrators
+[p179_c0003] Occupations in which employees set broad policies, exercise overall responsibility for execution of these policies, or direct individual departments or special phases of the agency's operations, or provide specialized consultation on a regional, district or area basis.
+### [p179_c0004] Professionals
+[p179_c0005] Occupations which require specialized and theoretical knowledge which is usually acquired through college training or through work experience and other training which provides comparable knowledge.
+### [p179_c0006] Technicians
+[p179_c0007] Occupations which require a combination of basic scientific or technical knowledge and manual skill which can be obtained through specialized post-secondary school education or through equivalent on-the-job training.
+### [p179_c0008] Protective Services
+[p179_c0009] Occupations in which workers are entrusted with public safety, security and protection from destructive forces.
+### [p179_c0010] Paraprofessionals
+[p179_c0011] Occupations in which workers perform some of the duties of a professional or technician in a supportive role, which usually require less formal training and/or experience normally required for professional or technical status.
+### [p179_c0012] Administrative Support
+[p179_c0013] Occupations in which workers are responsible for internal and external communication, recording and retrieval of data and/or information and other paperwork required in an office.
+### [p179_c0014] Skilled Craft
+[p179_c0015] Occupations in which workers perform jobs which require special manual skill and a thorough and comprehensive knowledge of the process involved in the work which is acquired through on-the-job training and experience or through apprenticeship or other formal training programs.
+### [p179_c0016] Service Maintenance
+[p179_c0017] Occupations in which workers perform duties which result in or contribute to the comfort, convenience, hygiene or safety of the general public or which contribute to the upkeep and care of buildings, facilities or grounds of public property.
+[p179_c0018] _Master Page # 179 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+[p179_c0019] _The MTA logo is a circular emblem with the letters "MTA" in a bold, sans-serif font. The letters are white and set against a dark, textured background that appears to be a stylized representation of a train or a tunnel._
+
+## Page 180
+
+### [p180_c0001] NYCT Workforce
+[p180_c0002]
+
+```text
+JOB CATEGORY TOTAL 1 Minorities # Whites # Blacks # Hispanics # Asians # AI/AN # NHOPi # 2+ RACES # Veterans # PWD # # % # % # % # % # % Officials & Administrators 1332 802 662 254 297 7 2 110 109 65 F 501 23% 383 118 250 52 57 0 0 24 5 21 M 1,633 77% 949 684 412 202 240 7 2 86 104 44 Professionals 1813 640 780 257 657 4 0 115 33 55 F 967 39% 786 181 425 129 182 2 0 48 8 27 M 1,486 61% 1027 459 355 128 475 2 0 67 25 28 Technicians 77 23 40 12 18 0 0 7 4 3 F 21 21% 19 2 14 2 2 0 0 1 0 0 M 79 79% 58 21 26 10 16 0 0 6 4 3 Protective Services 698 137 400 224 50 0 1 23 54 6 F 136 16% 126 10 94 25 1 0 0 6 7 0 M 699 84% 572 127 306 199 49 0 1 17 47 6 Paraprofessionals 45 5 27 11 4 0 0 3 0 0 F 31 62% 29 2 16 8 2 0 0 0 0 0 M 19 38% 16 3 11 3 2 0 0 3 0 0 Administrative Support 3582 387 2,163 522 765 9 3 120 38 22 F 1,899 48% 1796 103 1,363 248 117 5 2 61 15 10 M 2,070 52% 1786 284 800 274 648 4 1 59 23 12 Skilled Craft 12845 5,499 6,813 2,509 2,808 56 7 652 344 33 F 1,006 5% 945 61 737 142 30 3 1 32 11 2 M 17,338 95% 11900 5,438 6,076 2,367 2,778 53 6 620 333 31 Service Maintenance 17994 2,438 11,414 4,714 1,282 40 3 541 280 28 F 4,453 22% 4290 163 3,249 857 68 6 0 110 19 5 M 15,979 78% 13704 2,275 8,165 3,857 1,214 34 3 431 261 23 Total 48,317 38,386 9,931 22,299 8,503 5,881 116 16 1,571 862 212 79.45% 21% 46% 18% 12% 0% 0% 3% 1.78% 0.44%
+```
+[p180_c0003] * American Indian/Alaskan Native ** Native Hawaiian Other Pacific Islander *** Headcount indicates employees who self-identify as persons with disabilities
+[p180_c0004] Note: All percentages have been rounded to the nearest whole number;
+[p180_c0005] _Master Page # 180 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 181
+
+### [p181_c0001] NYCT Workforce
+[p181_c0002] _WORKFORCE BY GENDER_
+> [p181_c0003] Gender Percentage Males 81% Females 19%
+[p181_c0004] _WORKFORCE BY RACE/ETHNICITY_
+> [p181_c0005] Race/Ethnicity Percentage Blacks 46% Whites 21% Hispanics 18% Asians 12% 2+ Races 3% NHOPi 0% AI/AN 0%
+[p181_c0006] NYCT workforce consists of 48,317 employees
+- [p181_c0007] ❑ 18.66% females, 79.45% minorities, 1.78% veterans and 0.44% persons with disabilities ❑ The percentage of females remained constant when compared to 1Q20 ❑ The percentage of minorities remained constant as it relates to race and ethnicity when compared to 1Q20.
+[p181_c0008] _Master Page # 181 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 182
+
+### [p182_c0001] Underutilization Analysis Overview
+[p182_c0002] A utilization analysis was conducted to determine whether there is underutilization of females and minorities in NYCT's workforce. This analysis compared January 1, 2020 workforce percentages for females and minorities to 80 percent of the females and minorities available within the relevant labor market. Underutilization exists if the percentage of females or minorities in a job category is less than 80% of their expected estimated availability.
+[p182_c0003] The following chart provides: (1) the female and minority workforce percentages for this agency; (2) 80% of the females and minorities available for work based on the 2010 Census by job category; and (3) the bold/shaded areas indicate whether or not the estimated availability percentages were met for females and minorities within each of the job categories.
+[p182_c0004] _Master Page # 182 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+[p182_c0005] _The MTA logo, consisting of the letters 'MTA' in a stylized font inside a dark circle._
+
+## Page 183
+
+### [p183_c0001] NYCT Underutilization Analysis
+[p183_c0002]
+
+```text
+JOB CATEGORY Gender BLACKS HISPANIC ASIANS AI/AN NHOPi 2+ RACES WHITES Est Actual Est Actual Est Actual Est Actual Est Actual Est Actual Est Actual Avail % Avail % Avail % Avail % Avail % Avail % Avail % Officials & Administrators F 6% 12% 2% 2% 1% 3% 0% 0% 0% 0% 0% 1% 7% 6% M 18% 19% 9% 9% 8% 11% 0% 0% 0% 0% 2% 4% Professionals F 12% 17% 5% 5% 5% 7% 0% 0% 0% 0% 1% 2% 16% 7% M 8% 14% 4% 5% 8% 19% 0% 0% 0% 0% 1% 3% Technicians F 4% 14% 5% 2% 4% 2% 0% 0% 0% 0% 0% 1% 21% 2% M 6% 26% 5% 10% 5% 16% 0% 0% 0% 0% 0% 6% Protective Services F 8% 11% 3% 3% 1% 0% 0% 0% 0% 0% 0% 1% 3% 1% M 26% 37% 15% 24% 3% 6% 0% 0% 0% 0% 0% 2% Paraprofessionals F 5% 32% 5% 16% 2% 4% 0% 0% 0% 0% 0% 6% 16% 4% M 2% 22% 1% 6% 1% 4% 0% 0% 0% 0% 0% 0% Administrative Support F 15% 34% 16% 6% 7% 3% 0% 0% 0% 0% 0% 2% 16% 3% M 6% 20% 8% 7% 4% 16% 0% 0% 0% 0% 0% 1% Skilled Craft F 3% 4% 1% 1% 0% 0% 0% 0% 0% 0% 0% 0% 1% 0% M 23% 33% 19% 13% 8% 15% 0% 0% 0% 0% 1% 3% Service Maintenance F 7% 16% 7% 4% 1% 0% 0% 0% 0% 0% 0% 1% 3% 1% M 19% 40% 24% 19% 5% 6% 0% 0% 0% 0% 0% 2%
+```
+[p183_c0003] *American Indian/Alaskan Native
+[p183_c0004] **Native Hawaiian Other Pacific Islander
+[p183_c0005] Note: Pursuant to FTA Circular 4704.1A, EEO requirements and guideline, white males have been excluded from the underutilization analysis. The shaded areas represent underutilization.
+[p183_c0006] _Master Page # 183 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 184
+
+[p184_c0001] NYCT
+### [p184_c0002] New Hires and Veterans
+[p184_c0003] January 1, 2021 – March 31, 2021
+[p184_c0004] _Master Page # 184 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+[p184_c0005] _The MTA logo, featuring the letters 'MTA' in a stylized font inside a circular emblem._
+
+## Page 185
+
+### [p185_c0001] NYCT New Hires and Veterans
+[p185_c0002] _NEW HIRES BY GENDER_
+> [p185_c0003] Gender Percentage Males 80% Females 20%
+[p185_c0004] _NEW HIRES BY RACE/ETHNICITY_
+> [p185_c0005] Race/Ethnicity Percentage Blacks 41% Whites 12% Hispanics 25% Asians 16% 2+ Races 4% AI/AN 1% NHOPi 0%
+[p185_c0006] We hired 230 employees including 5 veterans and no persons with disabilities. ❑ 20.00% females of which 2.17% were female veterans and 0.00% were female persons with disabilities.
+[p185_c0007] ❑ Female hires were above their current representation in the workforce. ❑ 87.82% minorities of which 1.98% were minority veterans and 0.00% were minority persons with disabilities.
+[p185_c0008] ❑ The share of minority hires was greater than their current representation in the workforce.
+[p185_c0009] _Master Page # 185 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 186
+
+[p186_c0001] NYCT
+### [p186_c0002] Complaints and Lawsuits
+[p186_c0003] January 1, 2021 – March 31, 2021
+[p186_c0004] _Master Page # 186 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+> [p186_c0005] The MTA logo, featuring the letters 'MTA' in a stylized font inside a circular emblem.
+
+## Page 187
+
+### [p187_c0001] NYCT Internal/External EEO Complaints and Lawsuits
+### [p187_c0002] INTERNAL EEO COMPLAINTS
+> [p187_c0003] Category Percentage Race/Color 36% Sexual Harassment 14% Other 21% Gender 10% Age 2% Religion 7% National Origin 7% Disability 3%
+### [p187_c0004] EXTERNAL EEO COMPLAINTS
+> [p187_c0005] Category Percentage Other 28% Disability 20% Gender 13% National Origin 8% Religion 4% Age 8% Sexual Harassment 3% Race/Color 16%
+[p187_c0006] NYCT handled 190 EEO complaints, citing 406 separate allegations, and 71 lawsuits.
+[p187_c0007] ☐ 74 internal complaints
+[p187_c0008] ☐ 116 external complaints
+[p187_c0009] ☐ The most frequently cited basis internally was race/color and externally was disability.
+[p187_c0010] These charts include all pending matters as of the date of the report; including matters filed prior to the reporting period.
+[p187_c0011] "Other" contains all EEO categories not otherwise specifically mentioned on the chart (i.e. Retaliation, Sexual Orientation, Military status, or Marital Status etc.).
+[p187_c0012] _Master Page # 187 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 188
+
+### [p188_c0001] NYCT
+### [p188_c0002] EEO Complaints and Lawsuits Dispositions
+[p188_c0003] _OVERALL EEO COMPLAINTS AND LAWSUITS DISPOSITIONS_
+> [p188_c0004] Disposition Percentage DECIDED IN FAVOR OF AGENCY 90% RESOLVED / SETTLEMENT 3% WITHDRAWN 3% DISMISSED 0% DECIDED IN FAVOR OF COMPLAINANT 0% ADMINISTRATIVE 0%
+[p188_c0005] _EEO COMPLAINTS AND LAWSUITS DISPOSITIONS_
+> [p188_c0006] Disposition EEO Internal EEO External EEO Lawsuits DECIDED IN FAVOR OF AGENCY ~90% ~85% ~95% ADMINISTRATIVE CLOSURE ~5% ~10% ~5% WITHDRAWN ~3% ~10% ~5% DISMISSED ~0% ~0% ~0% RESOLVED / SETTLEMENT ~2% ~5% ~5%
+[p188_c0007] NYCT disposed of 26 EEO complaints and 4 EEO lawsuits.
+- [p188_c0008] ☐ 90% complaints decided in favor of the agency ☐ 0% complaints decided in favor of the complainant ☐ 3% complaints were administrative closures ☐ 3% complaints were resolved/settled ☐ 3% complaints were withdrawn
+[p188_c0009] _Master Page # 188 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 189
+
+### [p189_c0001] NYCT
+### [p189_c0002] Title VI Discrimination Complaints, Lawsuits and Dispositions
+> [p189_c0003] The figure consists of two pie charts. The left chart, titled 'TITLE VI DISCRIMINATION COMPLAINTS', shows the distribution of complaints by origin: Race (72%), National Origin (23%), and Color (5%). The right chart, titled 'TITLE VI DISPOSITIONS', shows the outcomes of these complaints: DECIDED IN FAVOR OF AGENCY (98%), DECIDED IN FAVOR OF COMPLAINANT (1%), DISMISSED (0%), ADMINISTRATIVE CLOSURE (0%), WITHDRAWN (0%), and RESOLVED/SETTLEMENT (0%). Category Percentage Race 72% National Origin 23% Color 5% Disposition Percentage DECIDED IN FAVOR OF AGENCY 98% DECIDED IN FAVOR OF COMPLAINANT 1% DISMISSED 0% ADMINISTRATIVE CLOSURE 0% WITHDRAWN 0% RESOLVED/SETTLEMENT 0%
+[p189_c0004] NYCT handled 35 Title VI complaints, citing 40 separate allegations and no Title VI lawsuits. The agency disposed of 17 complaints and no lawsuits.
+- [p189_c0005] ❑ 100% complaints/lawsuits decided in favor of the agency. ❑ 0% complaints/lawsuits decided in favor of the complainant. ❑ 0% complaints/lawsuits were administrative closures. ❑ 0% complaints/lawsuits were resolved/settled.
+[p189_c0006] _Master Page # 189 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 190
+
+### [p190_c0001] MTA Bus Company MTABC
+### [p190_c0002] EEO Report – 1st Quarter 2021
+[p190_c0003] March 31, 2021
+[p190_c0004] _Master Page # 190 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+[p190_c0005] _The MTA logo, featuring the letters 'MTA' in a stylized font inside a circular emblem._
+
+## Page 191
+
+### [p191_c0001] Executive Summary
+### [p191_c0002] ■ EEO
+[p191_c0003] As of March 31, 2020 , MTA Bus's workforce included 3,989 total employees. This represents a decrease of 160 employees from the first quarter 2020 (1Q20) workforce.
+- [p191_c0004] ■ Females representation of 13% (515) is unchanged when compared to 1Q20. ■ Females were hired above their current representation. ■ Minorities representation of 80% (3,243) increased 1% when compared to 1Q20. ■ Minorities were hired above their current representation.
+[p191_c0005] _Master Page # 191 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+[p191_c0006] _The MTA logo, featuring the letters 'MTA' in a stylized font inside a circular emblem._
+
+## Page 192
+
+### [p192_c0001] Executive Summary
+[p192_c0002] MTA Bus Company conducted a utilization analysis* of females and minorities in its workforce as of March 31, 2020. Based on the analysis, underrepresentation for females and minorities occurred in the following EEO categories:
+### [p192_c0003] Females:
+- [p192_c0004] Officials/Administrators – Asians and Whites Professionals – Whites Technicians – Asians Protective Services – Blacks and Asians Administrative Support – Whites Skilled Craft– Blacks and Hispanics Service Maintenance – Hispanics and Whites
+### [p192_c0005] Minorities:
+- [p192_c0006] Officials/Administrators – Asians Professionals – Hispanics Technicians – Blacks, Hispanic, and Asians Protective Services – Black, Asians, and Multiple Race Administrative Support – Blacks and Hispanics Skilled Craft– Blacks and Hispanics Service Maintenance – Hispanics
+[p192_c0007] _*The utilization analysis compares the percentages of females and minorities employed in each job group to 80 percent of the females and minorities available within the relevant labor market._
+[p192_c0008] _Master Page # 192 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 193
+
+### [p193_c0001] Executive Summary
+### [p193_c0002] ■ Diversity Initiatives to increasing representation
+[p193_c0003] MTA Bus diversify recruitment strategy showed its resilience in 2020 by leading and/or participating in out a sizable number of diversity recruiting programs that support our ability to attract, advance, and retrain minorities, females, veterans and persons with disabilities.
+[p193_c0004] In the first quarter, we focused on improving the representation of women and minorities in our managerial ranks by holding a Superintendent of Transportation panel discussion where potential job candidates could get a realistic preview of this first-level management job.
+[p193_c0005] MTA Bus also established partnerships with several new recruitment sources such as Catalyst, National & Disability Council, Jobs for Humanity, and Young Adult Institute (YAI).
+[p193_c0006] One of the new recruitment source, Jobs for Humanity, is a global organization that connects persons with disabilities and underrepresented communities to job opportunities. The organization offered MTA Bus the opportunity to post jobs on its website at no cost. Another recruitment source, YAI, offered MTA Bus the opportunity to attend free workshops online to learn more about people with disabilities. The organization also offered to provide sensitivity training.
+[p193_c0007] _Master Page # 193 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+[p193_c0008] _The MTA logo is a circular emblem with the letters 'MTA' in a bold, sans-serif font. The 'M' and 'T' are stacked vertically, and the 'A' is positioned to the right of the 'T'. The entire logo is set against a dark background._
+
+## Page 194
+
+[p194_c0001] MTABC
+### [p194_c0002] Workforce as of March 31, 2021
+[p194_c0003] _Master Page # 194 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+> [p194_c0004] The MTA logo, featuring the letters 'MTA' in a stylized font inside a circular emblem.
+
+## Page 195
+
+### [p195_c0001] Definitions of EEO Job Categories
+### [p195_c0002] Officials & Administrators
+[p195_c0003] Occupations in which employees set broad policies, exercise overall responsibility for execution of these policies, or direct individual departments or special phases of the agency's operations, or provide specialized consultation on a regional, district or area basis.
+### [p195_c0004] Professionals
+[p195_c0005] Occupations which require specialized and theoretical knowledge which is usually acquired through college training or through work experience and other training which provides comparable knowledge.
+### [p195_c0006] Technicians
+[p195_c0007] Occupations which require a combination of basic scientific or technical knowledge and manual skill which can be obtained through specialized post-secondary school education or through equivalent on-the-job training.
+### [p195_c0008] Protective Services
+[p195_c0009] Occupations in which workers are entrusted with public safety, security and protection from destructive forces.
+### [p195_c0010] Paraprofessionals
+[p195_c0011] Occupations in which workers perform some of the duties of a professional or technician in a supportive role, which usually require less formal training and/or experience normally required for professional or technical status.
+### [p195_c0012] Administrative Support
+[p195_c0013] Occupations in which workers are responsible for internal and external communication, recording and retrieval of data and/or information and other paperwork required in an office.
+### [p195_c0014] Skilled Craft
+[p195_c0015] Occupations in which workers perform jobs which require special manual skill and a thorough and comprehensive knowledge of the process involved in the work which is acquired through on-the-job training and experience or through apprenticeship or other formal training programs.
+### [p195_c0016] Service Maintenance
+[p195_c0017] Occupations in which workers perform duties which result in or contribute to the comfort, convenience, hygiene or safety of the general public or which contribute to the upkeep and care of buildings, facilities or grounds of public property.
+[p195_c0018] _Master Page # 195 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+> [p195_c0019] The logo for the Metropolitan Transportation Authority (MTA) is located in the bottom right corner. It consists of a dark grey circle with the letters 'MTA' in white, bold, sans-serif font.
+
+## Page 196
+
+### [p196_c0001] MTABC Workforce
+[p196_c0002] _MTA Bus Workforce as of March 31, 2021_
+[p196_c0003]
+
+```text
+Job Category TOTAL Minorities WHITES BLACKS HISPANICS ASIANS AI/AN* NHOP** 2+ RACES VETERANS† PWD*** # % # % # % # % # % # % # % # % # % # % # % Administrators & Administrators 229 137 60% 92 40% 59 26% 34 15% 29 13% 0% 0 0% 15 7% 16 7% 13 6% F 53 23% 42 18% 11 5% 23 10% 6 3% 8 3% 0% 0 0% 5 2% 0 0% 0 0% M 176 77% 95 41% 81 35% 36 16% 28 12% 21 9% 0% 0 0% 10 4% 0 0% 0 0% Professionals 120 92 77% 28 23% 37 31% 18 15% 29 24% 0% 0 0% 8 7% 4 3% 5 4% F 54 45% 0 0% 9 8% 21 18% 13 11% 8 7% 0% 0 0% 3 3% 0 0% 0 0% M 66 55% 0 0% 19 16% 16 13% 5 4% 21 18% 0% 0 0% 5 4% 0 0% 0 0% Technicians 9 4 44% 0 0% 1 11% 1 11% 1 11% 0% 0 0% 1 11% 0 0% 0 0% F 5 56% 2 22% 3 33% 4 4% 1 11% 3 3% 0% 0 0% 0 0% 0 0% 0 0% M 4 44% 2 22% 2 22% 9 9% 0 0% 1 11% 0% 0 0% 1 11% 0 0% 0 0% Protective Services 6 5 83% 1 17% 3 50% 2 33% 0 0% 0% 0 0% 0 0% 0 0% 0 0% F 2 33% 1 17% 1 17% 0 0% 1 17% 0 0% 0% 0 0% 0 0% 0 0% 0 0% M 4 67% 4 67% 0 0% 3 50% 1 17% 5 6% 0% 0 0% 0 0% 0 0% 0 0% Administrative Support 91 68 75% 23 25% 28 31% 12 13% 18 20% 0% 0 0% 10 11% 2 2% 3 3% F 29 32% 26 29% 3 3% 11 12% 8 9% 4 4% 0% 0 0% 3 3% 0 0% 0 0% M 62 68% 42 46% 20 22% 17 19% 4 4% 14 15% 0% 0 0% 7 8% 0 0% 0 0% Walked Craft 650 481 70% 209 30% 236 34% 103 15% 79 11% 2 0% 0% 55 8% 16 2% 7 1% F 3 0% 2 0% 1 0% 2 0% 1 0% 0 0% 0 0% 0% 0 0% 0 0% 0 0% M 687 100% 473 69% 208 30% 234 34% 103 15% 79 11% 2 0% 0% 55 8% 16 2% 7 1% Service Maintenance 2,844 2456 86% 388 14% 1,427 50% 708 25% 202 7% 8 0% 0% 109 4% 31 1% 1 0% F 369 13% 350 12% 19 1% 226 8% 7% 10% 4 0% 1 0% 0% 10 0% 0 0% 0 0% M 2,475 87% 2102 74% 369 13% 1,201 42% 597 21% 198 7% 7 0% 0% 99 3% 0 0% 0 0% Total 3,988 3,243 81% 741 19% 1,791 45% 876 22% 358 9% 10 0% 0% 198 5% 69 2% 29 1%
+```
+[p196_c0004] _† The current hiring benchmark for veterans is 5.6%_
+[p196_c0005] * American Indian/Alaskan Native      **Native Hawaiian Other Pacific Islander      *** Persons with Disabilities
+[p196_c0006] Note: All percentages have been rounded up to the nearest whole number.
+[p196_c0007] _Master Page # 196 of 206 New York City Transit and Bus Committee Meeting 9/26/2021_
+
+## Page 197
+
+### [p197_c0001] MTABC Workforce
+> [p197_c0002] A donut chart titled 'Workforce by Gender' showing the distribution of employees. The chart is split into two segments: a large orange segment for Males and a smaller blue segment for Females. Gender Percentage Males 87% Females 13%
+> [p197_c0003] A donut chart titled 'Workforce by Race/Ethnicity' showing the distribution of employees. The chart is divided into five segments: Blacks, Whites, Hispanics, 2+ Races, and Asians. Race/Ethnicity Percentage Blacks 45% Whites 20% Hispanics 21% 2+ Races 5% Asians 9%
+[p197_c0004] MTABC workforce consists of 3,989 employees
+- [p197_c0005] ❑ 13% females, 80% minorities, and 1% veterans. ❑ The percentage of females employed was unchanged when compared to 1Q20. ❑ The percentage of minorities was unchanged when compared to 1Q20.
+[p197_c0006] _Master Page # 197 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 198
+
+### [p198_c0001] Underutilization Analysis Overview
+[p198_c0002] A utilization analysis was conducted to determine whether there is underutilization of females and minorities in its workforce. This analysis consists of comparing March 31, 2021 workforce percentages for females and minorities to 80 percent of the females and minorities available within the relevant labor market. Underutilization exists if the percentage of females or minorities in a job category is less than 80 percent of their expected estimated availability.
+[p198_c0003] The following chart provide shaded/bolded areas that represent below 80 percent of the Census availability or underutilization: (1) the female and minority workforce percentages for this agency; (2) 80 percent of the females and minorities available for work based on the 2010 Census by job category; and (3) whether or not the estimated availability percentages were met for females and minorities within each of the job categories.
+[p198_c0004] _Master Page # 198 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+[p198_c0005] _The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle._
+
+## Page 199
+
+### [p199_c0001] MTABC Underutilization Analysis
+### [p199_c0002] WORKFORCE UTILIZATION ANALYSIS As of March 31, 2021
+[p199_c0003]
+
+```text
+JOB CATEGORY Gender BLACKS HISPANIC ASIANS AI/AN NHOPI 2+ RACES WHITES Est Actual % Est Actual % Est Actual % Est Actual % Est Actual % Est Actual % Est Actual % Officials & Administrators F 4% 10% 4% 3% 4% 3% 0% 0% 0% 0% 1% 2% 15% 5% M 8% 16% 8% 12% 7% 9% 0% 0% 0% 0% 1% 4% Professionals F 7% 18% 7% 11% 2% 7% 0% 0% 0% 0% 1% 3% M 8% 13% 6% 4% 12% 18% 0% 0% 0% 0% 1% 4% 11% 8% Technicians F 4% 11% 3% 11% 3% 0% 0% 0% 0% 0% 1% 0% 6% 33% M 9% 0% 11% 0% 18% 11% 0% 0% 0% 0% 2% 11% Protective Services F 10% 0% 4% 17% 1% 0% 0% 0% 0% 0% 0% 0% 2% 17% M 29% 50% 15% 17% 5% 0% 0% 0% 0% 0% 2% 0% Paraprofessionals F 0% 0% 0% 0% 0% 0% 0% 0% 0% 0% 0% 0% 0% 0% M 0% 0% 0% 0% 0% 0% 0% 0% 0% 0% 0% 0% Administrative Support F 7% 12% 7% 9% 2% 4% 0% 0% 0% 0% 1% 3% 7% 3% M 22% 19% 16% 4% 6% 15% 0% 0% 0% 0% 2% 8% Skilled Craft F 2% 0% 1% 0% 0% 0% 0% 0% 0% 0% 0% 0% 0% 0% M 22% 34% 22% 15% 8% 11% 0% 0% 0% 0% 4% 8% Service Maintenance F 8% 8% 7% 4% 1% 0% 0% 0% 0% 0% 0% 0% 3% 1% M 26% 42% 15% 21% 6% 7% 0% 0% 0% 0% 1% 3%
+```
+[p199_c0004] * American Indian/Alaskan Native
+[p199_c0005] ** Native Hawaiian Other Pacific Islander
+[p199_c0006] Note: Pursuant to FTA Circular 4704.1A, EEO requirements and guideline, white males have been excluded from the underutilization analysis. The shaded areas represent underutilization.
+[p199_c0007] _Master Page # 199 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 200
+
+[p200_c0001] MTABC
+### [p200_c0002] New Hires and Veterans
+[p200_c0003] January 1, 2021 – March 31, 2021
+[p200_c0004] _Master Page # 200 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+> [p200_c0005] The MTA logo, featuring the letters 'MTA' in a stylized font inside a circular emblem.
+
+## Page 201
+
+### [p201_c0001] MTABC New Hires and Veterans
+> [p201_c0002] NEW HIRE BY GENDER Gender Percentage Males 84% Females 16%
+> [p201_c0003] NEW HIRE BY RACE/ETHNICITY Race/Ethnicity Percentage Blacks 49% Hispanics 25% Whites 7% Asians 14% 2+ Races 5%
+[p201_c0004] We hired 45 employees including 0 veterans
+- [p201_c0005] ☐ 16% females of which 0% were female veterans. ☐ Female hires exceeded their current representation in the workforce. ☐ 93% minorities of which 1% were minority veterans. ☐ Minorities hires exceeded their current representation in the workforce.
+[p201_c0006] _Master Page # 201 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 202
+
+[p202_c0001] MTABC
+### [p202_c0002] Complaints and Lawsuits
+[p202_c0003] January 1, 2021 – March 31, 2021
+[p202_c0004] _Master Page # 202 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+> [p202_c0005] The MTA logo, featuring the letters 'MTA' in a stylized font inside a circular emblem.
+
+## Page 203
+
+### [p203_c0001] MTABC Internal/External EEO Complaints and Lawsuits
+### [p203_c0002] INTERNAL EEO COMPLAINTS
+> [p203_c0003] Category Percentage Other 27% Race/Color 25% Sexual Harassment 6% Gender 6% Religion 2% National Origin 2% Disability 12% Retaliation 20%
+### [p203_c0004] EXTERNAL EEO COMPLAINTS
+> [p203_c0005] Category Percentage Disability 57% Race/Color 29% Gender 14%
+[p203_c0006] MTABC handled 39 EEO complaints, citing 64 separate allegations, and including 3 lawsuits.
+- [p203_c0007] ❑ 32 handled internal complaints. ❑ 7 handled external complaints/lawsuits. ❑ The most frequently cited basis internally was race/color and externally was disability.
+[p203_c0008] These charts include all pending matters as of the date of the report, including matters filed prior to the reporting period.
+[p203_c0009] "Other" contains all EEO categories not otherwise specifically mentioned on the chart (i.e., Sexual Orientation, Military status, or Marital Status etc.).
+[p203_c0010] _Master Page # 203 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 204
+
+### [p204_c0001] MTABC EEO Complaints and Lawsuits Dispositions
+> [p204_c0002] OVERALL EEO COMPLAINTS AND LAWSUITS DISPOSITIONS Disposition Percentage Withdrawn 45% Decided in Favor of Agency 33% Resolved/Settlement 11% EEO COMPLAINTS AND LAWSUITS DISPOSITIONS Disposition EEO Internal EEO External EEO Lawsuits Decided in Favor of Agency 35% ~2% ~2% Decided in Favor of Complainant ~2% ~2% ~2% Administrative Closure ~12% ~2% ~2% Resolved/Settlement ~12% ~2% ~2%
+[p204_c0003] Through March 31, MTABC disposed 9 internal EEO complaints, no external EEO complaints, and no 0 lawsuits.
+- [p204_c0004] ❑ 44% complaints were withdrawn. ❑ 33% complaints decided in favor of the agency. ❑ 11% complaints were administratively closed. ❑ 11% resolved/settlement.
+[p204_c0005] _Master Page # 204 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 205
+
+### [p205_c0001] MTABC
+### [p205_c0002] Title VI Discrimination Complaints, Lawsuits and Dispositions
+[p205_c0003] _TITLE VI DISCRIMINATION COMPLAINTS_
+> [p205_c0004] Category Percentage RACE 55% NATIONAL ORIGIN 38% COLOR 7%
+[p205_c0005] _TITLE VI DISPOSITIONS_
+> [p205_c0006] Disposition Percentage DECIDED IN FAVOR OF AGENCY 100%
+[p205_c0007] MTABC handled 42 Title VI complaints, citing 45 separate allegations and no Title VI lawsuits. MTABC disposed 25 complaints.
+[p205_c0008] ☐ 100% complaints/lawsuits decided in favor of the agency.
+[p205_c0009] _Master Page # 205 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_
+
+## Page 206
+
+> [p206_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a blue circle.
+### [p206_c0002] New York City Transit
+[p206_c0003] Sarah Feinberg
+[p206_c0004] Interim President New York City Transit
+> [p206_c0005] The MTA logo, consisting of the letters 'MTA' in white inside a blue circle.
+### [p206_c0006] Bus Company
+[p206_c0007] Craig Cipriano
+[p206_c0008] President MTA Bus Company
+[p206_c0009] 2 Broadway New York, NY 10004-2207
+[p206_c0010] _Master Page # 206 of 206 - New York City Transit and Bus Committee Meeting 5/26/2021_

@@ -1,0 +1,68 @@
+{
+  "campaign_id": "validation-2026-06",
+  "wave": 32,
+  "generated_at": "2026-06-23T15:57:23.617Z",
+  "sources_selected": [
+    "meeting_doc_100251",
+    "meeting_doc_105826",
+    "meeting_doc_109241",
+    "meeting_doc_109251",
+    "meeting_doc_109271",
+    "meeting_doc_111661",
+    "meeting_doc_111666",
+    "meeting_doc_111681",
+    "meeting_doc_113511",
+    "meeting_doc_113516"
+  ],
+  "ingested": [
+    "meeting_doc_100251",
+    "meeting_doc_105826",
+    "meeting_doc_109241",
+    "meeting_doc_109251",
+    "meeting_doc_109271",
+    "meeting_doc_111661",
+    "meeting_doc_111666",
+    "meeting_doc_111681",
+    "meeting_doc_113511",
+    "meeting_doc_113516"
+  ],
+  "skipped_already_done": [],
+  "quarantined": [],
+  "run_ids": [
+    "/mnt/models/dev/mta-wiki/data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T15-46-58-758Z_2026-06-23T15-46-58-657Z_1359573-75b039ac_ingest_meeting-doc-100251.jsonl",
+    "/mnt/models/dev/mta-wiki/data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T15-46-58-768Z_2026-06-23T15-46-58-759Z_1359573-8086c2ab_ingest_meeting-doc-105826.jsonl",
+    "/mnt/models/dev/mta-wiki/data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T15-46-58-778Z_2026-06-23T15-46-58-769Z_1359573-3be53d52_ingest_meeting-doc-109241.jsonl",
+    "/mnt/models/dev/mta-wiki/data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T15-46-58-782Z_2026-06-23T15-46-58-778Z_1359573-b0313f7e_ingest_meeting-doc-109251.jsonl",
+    "/mnt/models/dev/mta-wiki/data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T15-46-58-786Z_2026-06-23T15-46-58-783Z_1359573-0d7bc366_ingest_meeting-doc-109271.jsonl",
+    "/mnt/models/dev/mta-wiki/data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T15-46-58-790Z_2026-06-23T15-46-58-787Z_1359573-62032c66_ingest_meeting-doc-111661.jsonl",
+    "/mnt/models/dev/mta-wiki/data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T15-46-58-794Z_2026-06-23T15-46-58-790Z_1359573-b4d96a81_ingest_meeting-doc-111666.jsonl",
+    "/mnt/models/dev/mta-wiki/data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T15-46-58-804Z_2026-06-23T15-46-58-795Z_1359573-3b420b83_ingest_meeting-doc-111681.jsonl",
+    "/mnt/models/dev/mta-wiki/data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T15-46-58-809Z_2026-06-23T15-46-58-805Z_1359573-ecf2547a_ingest_meeting-doc-113511.jsonl",
+    "/mnt/models/dev/mta-wiki/data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T15-46-58-813Z_2026-06-23T15-46-58-810Z_1359573-a235248e_ingest_meeting-doc-113516.jsonl"
+  ],
+  "telemetry": {
+    "concurrency": 10,
+    "timeout_min": 300,
+    "wall_clock_s": 630,
+    "rate_limit": [
+      {
+        "provider": "pioneer",
+        "rate_per_minute": 170,
+        "requests": 143,
+        "requests_per_minute_observed": 13.6,
+        "rate_limited_429": 0,
+        "circuit_breaker_trips": 0,
+        "wait_ms_p50": 0,
+        "wait_ms_p95": 0,
+        "wait_ms_max": 1,
+        "last_rate_limit_headers": {}
+      }
+    ],
+    "materialize": {
+      "completed_ingests": 10,
+      "runs": 1,
+      "total_seconds": 155,
+      "every_k": 100000
+    }
+  }
+}

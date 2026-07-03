@@ -1,0 +1,90 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-105836"
+record_kind: "source"
+display_name: "Long Island Rail Road 2022 Annual Operating Report"
+source_id: "meeting_doc_105836"
+source_ids:
+  - "meeting_doc_105836"
+local_observation_id: "source_lirr_2022_annual_report"
+local_observation_ids:
+  - "source_lirr_2022_annual_report"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T19:32:38.579Z"
+submission_ids:
+  - "sub_dea88d38a85412ce"
+payload:
+  authority_tier: "plan_document"
+  content_type: "annual operating report"
+  published_date_normalized: "2022"
+  published_date_precision: "year"
+  title: "Long Island Rail Road OPERATING REPORT 2022 ANNUAL REPORT"
+  year: 2022
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_105836#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_105836"
+    source_path: "raw/sources/meeting_doc_105836/blocks.jsonl"
+    source_quote: "Long Island Rail Road"
+    text_sha256: "sha256:b8ae0da2bc74d75523eb0f5a5502253b0183373a0cc3b70d7891a451a10ddee3"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_105836#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_105836"
+    source_path: "raw/sources/meeting_doc_105836/blocks.jsonl"
+    source_quote: "OPERATING REPORT 2022 ANNUAL REPORT"
+    text_sha256: "sha256:737fdc76a3c63ca68799876dd8a7a4e559b76a4c1f4de58ec445a9c7d7550c87"
+    text_source: "raw_text"
+---
+
+# LIRR 2022 Annual Operating Results
+
+source_id: meeting_doc_105836
+citation: cite block ids exactly as shown in square brackets
+document: 13 block(s)
+
+## Page 1
+
+### [p001_c0001] Long Island Rail Road
+### [p001_c0002] OPERATING REPORT 2022 ANNUAL REPORT
+### [p001_c0003] Performance Summary
+[p001_c0004]
+
+```text
+2022 Data 2021 Data Annual YTD thru YTD thru Goal December December On Time Performance (Trains that arrive at their final destination within 5 minutes 59 seconds of scheduled arrival time) System Overall 94.0% 95.8% 96.3% AM Peak 96.0% 96.4% PM Peak 95.7% 97.7% Total Peak 95.8% 97.0% Off Peak Weekday 95.7% 95.8% Weekend 96.0% 96.6% Babylon Branch Overall 93.9% 96.8% 97.0% AM Peak 96.3% 96.7% PM Peak 96.3% 98.6% Total Peak 96.3% 97.6% Off Peak Weekday 97.5% 97.2% Weekend 96.1% 96.1% Far Rockaway Branch Overall 96.6% 98.0% 98.3% AM Peak 96.7% 98.5% PM Peak 98.4% 99.5% Total Peak 97.4% 98.9% Off Peak Weekday 98.3% 97.8% Weekend 98.2% 98.9% Huntington Branch Overall 92.5% 93.5% 95.7% AM Peak 95.1% 95.6% PM Peak 93.1% 97.6% Total Peak 94.2% 96.6% Off Peak Weekday 92.8% 94.7% Weekend 94.5% 96.6% Hempstead Branch Overall 96.5% 96.3% 97.0% AM Peak 96.4% 97.8% PM Peak 94.5% 98.1% Total Peak 95.5% 97.9% Off Peak Weekday 96.1% 96.0% Weekend 96.9% 98.0% Long Beach Branch Overall 95.9% 97.0% 97.5% AM Peak 97.4% 98.1% PM Peak 97.3% 99.1% Total Peak 97.3% 98.5% Off Peak Weekday 96.4% 97.2% Weekend 97.9% 97.0% Montauk Branch Overall 90.8% 94.0% 93.1% AM Peak 93.1% 94.6% PM Peak 94.6% 95.9% Total Peak 93.8% 95.1% Off Peak Weekday 95.3% 93.4% Weekend 92.4% 91.6% Oyster Bay Branch Overall 94.1% 95.5% 95.4% AM Peak 96.9% 96.6% PM Peak 96.7% 97.8% Total Peak 96.8% 97.1% Off Peak Weekday 95.4% 94.2% Weekend 93.9% 96.3%
+```
+
+## Page 2
+
+[p002_c0001]
+
+```text
+Port Jefferson Branch Overall 90.9% 92.2% 93.8% AM Peak 93.1% 95.7% PM Peak 94.0% 95.5% Total Peak 93.5% 95.6% Off Peak Weekday 89.2% 91.4% Weekend 96.4% 96.6% Port Washington Branch Overall 95.3% 96.3% 96.1% AM Peak 98.3% 94.5% PM Peak 95.5% 95.9% Total Peak 96.7% 95.3% Off Peak Weekday 96.0% 95.6% Weekend 96.4% 97.9% Ronkonkoma Branch Overall 91.6% 94.5% 95.7% AM Peak 95.0% 95.0% PM Peak 95.4% 97.8% Total Peak 95.2% 96.3% Off Peak Weekday 93.6% 94.7% Weekend 95.9% 97.1% West Hempstead Branch Overall 95.8% 98.4% 98.7% AM Peak 97.5% 98.8% PM Peak 97.3% 98.5% Total Peak 97.4% 98.7% Off Peak Weekday 98.6% 98.7% Weekend 99.0% 98.8%
+```
+[p002_c0002]
+
+```text
+Operating Statistics Trains Scheduled 226,066 215,837 Avg. Delay per Late Train (min) excluding trains canceled or terminated -12.4 -12.9 Trains Over 15 min. Late excluding trains canceled or terminated 1,610 1,347 Trains Canceled 316 562 Trains Terminated 483 470 Percent of Scheduled Trips Completed 99.6% 99.5%
+```
+
+## Page 3
+
+### [p003_c0001] Long Island Rail Road
+### [p003_c0002] OPERATING REPORT 2022 ANNUAL REPORT
+[p003_c0003]
+
+```text
+System Categories Of Delay % Total 2022 Data 2021 Data Vs 2021 Infrastructure Maintenance 17.4% 1,656 1,389 267 Fleet 10.8% 1,025 841 184 Train Operations 22.7% 2,156 1,028 1,128 Capital Projects 8.2% 774 1,079 (305) External Factors 23.7% 2,247 2,344 (97) Customer Assistance 5.2% 496 298 198 Police 12.0% 1,136 1,049 87 Total: 100.0% 9,490 8,028 1,462
+```
+
+## Page 4
+
+### [p004_c0001] Long Island Rail Road
+### [p004_c0002] OPERATING REPORT 2022 ANNUAL REPORT
+> [p004_c0003] 2022 Major Events by Month This line chart displays the monthly on-time performance for the Long Island Rail Road in 2022. The y-axis represents 'On Time Performance' from 93.0% to 97.5% in 0.5% increments. The x-axis shows the months from January to December. The performance starts at approximately 95.2% in January, peaks at 97.1% in April, and then fluctuates, ending at 95.5% in December. Several major events are annotated with arrows pointing to specific data points: Trespasser Strike at Forest Hills (78 late trains): Points to the January data point. Winter Storm Kenan (261 late trains): Points to the February data point. Amtrak track condition in F Interlocking (60 late trains): Points to the July data point. Queens Interlocking Cutover Trackwork (91 late trains): Points to the October data point. 5 events due to Low Adhesion (66 late trains): Points to the November data point. Month On Time Performance (%) Jan 95.2 Feb 96.1 Mar 96.3 Apr 97.1 May 96.3 Jun 95.6 Jul 95.9 Aug 95.3 Sep 96.3 Oct 95.6 Nov 94.4 Dec 95.5
+> [p004_c0004] On Time Performance By Year 1992 Through 2022 This line chart shows the on-time performance of the Long Island Rail Road from 1992 to 2022. The y-axis represents 'On Time Performance' from 85.0% to 100.0% in 2.5% increments. The x-axis represents the 'Year'. The performance starts at approximately 93.5% in 1992, drops to a low of about 89.8% in 1994, and then generally trends upwards, reaching a peak of about 96.2% in 2021 before a slight dip to 95.8% in 2022. Year On Time Performance (%) 1992 93.5 1993 92.8 1994 89.8 1995 90.8 1996 90.0 1997 92.2 1998 90.5 1999 91.2 2000 92.8 2001 93.2 2002 93.8 2003 93.2 2004 92.8 2005 92.2 2006 93.2 2007 93.8 2008 95.2 2009 95.2 2010 92.8 2011 93.8 2012 94.2 2013 93.2 2014 92.2 2015 91.8 2016 92.8 2017 91.2 2018 90.5 2019 92.2 2020 96.2 2021 96.2 2022 95.8

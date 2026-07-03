@@ -1,0 +1,224 @@
+{
+  "run_id": "2026-06-10T17-48-04-564Z_1496766-9d5cfd47_ingest_14th-street-preliminary-report-fall-2019-corrected",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-10T19:18:05.871Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1-nycdot-fall2019",
+        "local_observation_id": "entity_nycdot_fall2019",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot matches registry record entity_nyc-dot (NYC DOT as Publisher). Registry already includes this source and alias entity_nycdot-fall2019. Same entity_name 'New York City Department of Transportation', same entity_type 'agency'. Observation already resolves to its own canonical record.",
+        "proposed_relations": [
+          {
+            "relation_kind": "provided_data_for",
+            "subject_id": "entity_nyc-dot",
+            "object_id": "entity_sam-schwartz",
+            "description": "NYCDOT provided data for the 14th Street TTP Pilot Project monitoring conducted by Sam Schwartz",
+            "evidence_refs": [
+              {
+                "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+                "block_id": "p003_c0005",
+                "source_quote": "Data was collected by the Sam Schwartz team and gathered from a variety of sources including MTA NYCT, INRIX, NYCDOT, and Citi Bike, among others."
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+            "block_id": "p002_c0006",
+            "source_quote": "The 14th Street Transit & Truck Priority (TTP) Pilot Project was implemented by the New York City Department of Transportation (NYCDOT) in October 2019"
+          },
+          {
+            "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+            "block_id": "p004_c0026",
+            "source_quote": "1. Data provided by MTA NYCT 2. Data provided by NYCDOT"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2-sam-schwartz-fall2019",
+        "local_observation_id": "entity_sam_schwartz_fall2019",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_sam-schwartz matches registry record entity_sam-schwartz (Sam Schwartz Engineering). Registry already includes this source and alias entity_sam-schwartz-fall2019. Monitoring consultant for the 14th Street TTP Pilot Project; same entity.",
+        "proposed_relations": [
+          {
+            "relation_kind": "partnered_with",
+            "subject_id": "entity_sam-schwartz",
+            "object_id": "entity_traffic-databank",
+            "description": "Sam Schwartz partnered with Traffic Databank for data collection for the 14th Street TTP Pilot Project monitoring",
+            "evidence_refs": [
+              {
+                "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+                "block_id": "p003_c0005",
+                "source_quote": "For this project, Sam Schwartz is partnering with Traffic Databank for data collection and Public Works Partners for public engagement."
+              }
+            ]
+          },
+          {
+            "relation_kind": "partnered_with",
+            "subject_id": "entity_sam-schwartz",
+            "object_id": "entity_public-works-partners",
+            "description": "Sam Schwartz partnered with Public Works Partners for public engagement for the 14th Street TTP Pilot Project monitoring",
+            "evidence_refs": [
+              {
+                "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+                "block_id": "p003_c0005",
+                "source_quote": "For this project, Sam Schwartz is partnering with Traffic Databank for data collection and Public Works Partners for public engagement."
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+            "block_id": "p001_c0004",
+            "source_quote": "Sam Schwartz"
+          },
+          {
+            "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+            "block_id": "p003_c0005",
+            "source_quote": "Sam Schwartz is monitoring the performance of the 14th Street TTP Pilot Project and its effects on adjacent roadways."
+          },
+          {
+            "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+            "block_id": "p003_c0007",
+            "source_quote": "Sam Schwartz will create and release periodic monitoring reports and the final Pilot Evaluation Report about the performance of the TTP Pilot Project."
+          }
+        ]
+      },
+      {
+        "decision_id": "d3-mta-nyct-fall2019",
+        "local_observation_id": "entity_mta_nyct_fall2019",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-nyct matches registry record entity_mta-nyct (MTA NYCT Reference). Registry already includes this source and alias entity_mta-nyct-fall2019. Same entity — MTA New York City Transit operating agency, M14A/D SBS operator.",
+        "proposed_relations": [
+          {
+            "relation_kind": "provided_data_for",
+            "subject_id": "entity_mta-nyct",
+            "object_id": "entity_sam-schwartz",
+            "description": "MTA NYCT provided bus performance data for the 14th Street TTP Pilot Project monitoring",
+            "evidence_refs": [
+              {
+                "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+                "block_id": "p003_c0005",
+                "source_quote": "Data was collected by the Sam Schwartz team and gathered from a variety of sources including MTA NYCT, INRIX, NYCDOT, and Citi Bike, among others."
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+            "block_id": "p003_c0005",
+            "source_quote": "The monitoring plan includes tracking and evaluation of Metropolitan Transportation Authority New York City Transit (MTA NYCT) bus performance"
+          },
+          {
+            "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+            "block_id": "p004_c0026",
+            "source_quote": "1. Data provided by MTA NYCT"
+          }
+        ]
+      },
+      {
+        "decision_id": "d4-traffic-databank-fall2019",
+        "local_observation_id": "entity_traffic_databank_fall2019",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_traffic-databank matches registry record entity_traffic-databank. Registry already includes this source and alias entity_traffic-databank-fall2019. Same entity — data collection partner for the 14th Street TTP Pilot Project.",
+        "evidence_refs": [
+          {
+            "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+            "block_id": "p003_c0005",
+            "source_quote": "For this project, Sam Schwartz is partnering with Traffic Databank for data collection and Public Works Partners for public engagement."
+          }
+        ]
+      },
+      {
+        "decision_id": "d5-public-works-partners-fall2019",
+        "local_observation_id": "entity_public_works_partners_fall2019",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_public-works-partners matches registry record entity_public-works-partners. Registry already includes this source and alias entity_public-works-partners-fall2019. Same entity — public engagement partner for the 14th Street TTP Pilot Project.",
+        "evidence_refs": [
+          {
+            "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+            "block_id": "p003_c0005",
+            "source_quote": "For this project, Sam Schwartz is partnering with Traffic Databank for data collection and Public Works Partners for public engagement."
+          }
+        ]
+      },
+      {
+        "decision_id": "d6-inrix-fall2019",
+        "local_observation_id": "entity_inrix_fall2019",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_inrix matches registry record entity_inrix. Registry already includes this source and alias entity_inrix-fall2019. Same entity — data provider for vehicle travel time and speed data.",
+        "proposed_relations": [
+          {
+            "relation_kind": "provided_data_for",
+            "subject_id": "entity_inrix",
+            "object_id": "entity_sam-schwartz",
+            "description": "INRIX provided vehicle travel time and speed data for the 14th Street TTP Pilot Project monitoring",
+            "evidence_refs": [
+              {
+                "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+                "block_id": "p003_c0005",
+                "source_quote": "Data was collected by the Sam Schwartz team and gathered from a variety of sources including MTA NYCT, INRIX, NYCDOT, and Citi Bike, among others."
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+            "block_id": "p004_c0027",
+            "source_quote": "3. Data provided by INRIX"
+          },
+          {
+            "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+            "block_id": "p007_c0013",
+            "source_quote": "October 16-18 & 23-25, 2018; October 15-17 & 22-24, 2019: Data retrieved from INRIX."
+          }
+        ]
+      },
+      {
+        "decision_id": "d7-citi-bike-fall2019",
+        "local_observation_id": "entity_citi_bike_fall2019",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_citi-bike matches registry record entity_citi-bike. Registry already includes this source and alias entity_citi-bike-fall2019. Same entity — bikeshare provider providing ridership data for the 14th Street study area.",
+        "proposed_relations": [
+          {
+            "relation_kind": "provided_data_for",
+            "subject_id": "entity_citi-bike",
+            "object_id": "entity_sam-schwartz",
+            "description": "Citi Bike provided ridership data for the 14th Street TTP Pilot Project monitoring study area",
+            "evidence_refs": [
+              {
+                "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+                "block_id": "p003_c0005",
+                "source_quote": "Data was collected by the Sam Schwartz team and gathered from a variety of sources including MTA NYCT, INRIX, NYCDOT, and Citi Bike, among others."
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+            "block_id": "p003_c0005",
+            "source_quote": "Data was collected by the Sam Schwartz team and gathered from a variety of sources including MTA NYCT, INRIX, NYCDOT, and Citi Bike, among others."
+          },
+          {
+            "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+            "block_id": "p019_c0024",
+            "source_quote": "October 2018, October 2019: Data retrieved from Citi Bike."
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-552Z_1609878-48d0e905_canonicalize_2026-06-10t17-48-04-564z-1496766-9d5cfd47-ingest-14th-street-preliminary-report-fall-2019-corrected-entity-identity"
+}

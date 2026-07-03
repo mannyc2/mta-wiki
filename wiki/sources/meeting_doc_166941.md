@@ -1,0 +1,198 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-166941"
+record_kind: "source"
+display_name: "Minutes of the Regular Meeting Joint LIRR and Metro-North Committees - February 24, 2025"
+source_id: "meeting_doc_166941"
+source_ids:
+  - "meeting_doc_166941"
+local_observation_id: "source_meeting_doc_166941"
+local_observation_ids:
+  - "source_meeting_doc_166941"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T16:57:27.170Z"
+raw_text: "Minutes of the Regular Meeting Joint Long Island Rail Road and Metro-North Railroad Committees Monday, February 24, 2025 9:30 a.m."
+submission_ids:
+  - "sub_819317510640a54d"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting minutes"
+  date: "2025-02-24"
+  date_normalized:
+    confidence: "submitted_iso"
+    normalized_date: "2025-02-24"
+    precision: "day"
+    raw_text: "2025-02-24"
+  date_text: "February 24, 2025"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2025-02-24"
+    precision: "day"
+    raw_text: "February 24, 2025"
+  published_date_normalized: "2025-02-24"
+  published_date_precision: "day"
+  publisher: "MTA"
+  title: "Minutes of the Regular Meeting Joint Long Island Rail Road and Metro-North Railroad Committees"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_166941#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_166941"
+    source_path: "raw/sources/meeting_doc_166941/blocks.jsonl"
+    source_quote: "Minutes of the Regular Meeting Joint Long Island Rail Road and Metro-North Railroad Committees Monday, February 24, 2025 9:30 a.m."
+    text_sha256: "sha256:a24d22a912b2f4cffeb92ac83405177075b669b92a9fb29df453152521f42c90"
+    text_source: "raw_text"
+---
+
+# Minutes
+
+source_id: meeting_doc_166941
+citation: cite block ids exactly as shown in square brackets
+document: 115 block(s)
+
+## Page 1
+
+### [p001_c0001] Minutes of the Regular Meeting Joint Long Island Rail Road and Metro-North Railroad Committees Monday, February 24, 2025 9:30 a.m.
+[p001_c0002] Meeting held at 2 Broadway – 20 th Floor New York, New York 10004
+[p001_c0003] The following Committee Members were present:
+[p001_c0004] Hon. Marc Herbst, Co-Chair Hon. Blanca López, Co-Chair Hon. Gerard Bringmann Hon. Norman Brown Hon. Daniel Garodnick Hon. Randolph Glucksman* Hon. Lisa Sorin Hon. Vincent Tessitore, Jr. Hon. Midori Valdivia Hon. Neal Zuckerman
+[p001_c0005] The following Committee Members were not present:
+[p001_c0006] Hon. Samuel Chu Hon. Michael Fleischer Hon. David Mack
+[p001_c0007] The following Board Members were also present: Andrew Albert
+### [p001_c0008] Representing Metro-North Railroad:
+[p001_c0009] Catherine Rinaldi – President Justin Vonashek – Executive Vice President & Chief Operating Officer Shelley Prettyman – Vice President, System Safety Michael Loney – Vice President, Maintenance of Way Haley Stein – Acting Vice President, General Counsel & Secretary
+### [p001_c0010] Representing Long Island Rail Road:
+[p001_c0011] Robert Free – President Thomas Kost – Senior Vice President, Operations Lori Ebbighausen – Vice President, Corporate Safety Paul Dietlin – Vice President, Maintenance of Way Haley Stein – Vice President, General Counsel & Secretary Hector Garcia – Chief of Staff
+[p001_c0012] _*appeared via video_
+
+## Page 2
+
+### [p002_c0001] 2 | Joint LIRR and Metro-North Committees Meeting Minutes February 24, 2025
+### [p002_c0002] Representing MTA Police Department:
+[p002_c0003] Thomas J. Taffe – Chief of Operations
+### [p002_c0004] Also present:
+[p002_c0005] John McCarthy – Chief of Policy and External Relations
+[p002_c0006] The members of the Metro-North Railroad (“Metro-North”) Committee met jointly with the members of the Long Island Rail Road (“LIRR”) Committee.
+### [p002_c0007] 1. OPENING MEETING:
+[p002_c0008] Co-Chair López called the joint meeting to order.
+### [p002_c0009] 2. PUBLIC COMMENTS:
+[p002_c0010] The following public speakers commented:
+[p002_c0011] Aleta Dupree, Team Folds (via video)
+[p002_c0012] Iris Kelley (in person)
+[p002_c0013] Murray Bodin, Concerned Grandparents (via video)
+[p002_c0014] Jason Anthony, LIRR ADA Task Force (in person)
+[p002_c0015] Christopher D. Greif (via video)
+[p002_c0016] Andy Pollack, Passengers United (via audio)
+[p002_c0017] Matthew Buchys-Hyland (via video)
+[p002_c0018] Jack Connors, PCAC Research and Communications Associate (in person)
+[p002_c0019] To hear the content of public comments, details of Committee presentations, and Committee Members’ comments and questions as well as any part of the Committee meeting, please refer to the video recording of the meeting produced by the MTA, available and maintained on the MTA website:
+[p002_c0020] https://www.mta.info/transparency/board-and-committee-meetings/february-2025
+### [p002_c0021] 3. APPROVAL OF MINUTES:
+[p002_c0022] Upon motion duly made and seconded, the Committee approved the minutes of the January 27, 2025 Joint LIRR/Metro-North Committee Meeting.
+### [p002_c0023] 4. METRO-NORTH AND LIRR 2025 WORK PLANS:
+[p002_c0024] There were no changes to the LIRR or Metro-North Work Plans. The 2025 Metro-North and LIRR Work Plans are filed with the records of this meeting.
+
+## Page 3
+
+### [p003_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 3 February 24, 2025
+### [p003_c0002] 5. METRO-NORTH PRESIDENT’S REPORT:
+[p003_c0003] Metro-North President Catherine Rinaldi (“President Rinaldi”) began with a moment of silence for MTAPD Detective Sergeant Frank Lore who unexpectedly passed away this weekend.
+[p003_c0004] President Rinaldi reported on ridership gains and stated that January ridership increased 7.2% compared to January 2024 and is 78.2% of January 2019 ridership.
+[p003_c0005] President Rinaldi outlined two major procurements for rolling stock that are necessary to support the Penn Station Access Project, including the first battery-electric locomotives from Siemens, and the RFP for new coach cars. President Rinaldi provided an update on the Siemens Charger dual mode locomotives 301 and 302 currently undergoing qualification testing at the Harmon Shop prior to their introduction into daily service.
+[p003_c0006] President Rinaldi discussed operating efficiencies that yielded $50 million in cost savings in 2024 and highlighted the maintenance of rolling stock through the Standard Work Pilot Program in 2024. The Standard Work program establishes consistent processes, time standards, and cost parameters for inspections, maintenance, and repairs. President Rinaldi highlighted various successes of the program in 2024, including streamlined inspections of M7 fleet and improved shop-floor communication through digital displays tracking dwell time and fleet performance. President Rinaldi provided plans for the continuation of the Standard Work program and full fleet inspection standardization by the end of 2025.
+[p003_c0007] President Rinaldi noted the importance of the Highbridge Yard Car Appearance Shop’s work to replace seat cushions in all diesel-hauled coaches to maintaining the quality and comfort of Metro-North’s rolling stock and expressed appreciation for the Maintenance of Equipment teams for their work.
+[p003_c0008] President Rinaldi reported on the celebration of Grand Central Terminal’s 112 th birthday this month and highlighted the resurgence of retail and dining with 14 new retailers in 2024 and 2 new dining establishments in 2025. President Rinaldi discussed the efforts of MTA Real Estate and Metro-North to attract and coordinate high-profile events in Vanderbilt Hall, the Biltmore Room, and the Graybar Passage, including Apple TV’s Severance pop-up experience on January 14-15 in Vanderbilt Hall.
+[p003_c0009] President Rinaldi discussed the celebration of the second anniversary of Grand Central Madison’s opening and highlighted the expansion of Metro-North’s Fire Brigade across the entire complex for both Grand Central Terminal and Grand Central Madison, which now includes additional fire-alarm monitoring and reporting for Grand Central Madison, including the Queens Tunnel and storage yard.
+[p003_c0010] President Rinaldi discussed last week’s celebration of Black History Month hosted by MTA’s Black Employees Group for Inclusion and Networking (B.E.G.I.N.), an Employee Resource Group for where she served as the executive co-sponsor along with MTA Chief
+
+## Page 4
+
+### [p004_c0001] 4 | Joint LIRR and Metro-North Committees Meeting Minutes February 24, 2025
+[p004_c0002] Customer Officer Shanifah Rieara. President Rinaldi mentioned that MTA Chief of Labor and Employee Relations Officer Anita Miller did a great job as the keynote speaker.
+[p004_c0003] President Rinaldi reported on the Capital Plan Open House at the White Plains Library that she attended on February 20 along with MTA C&D President Jamie Torres-Springer, Westchester County Executive Ken Jenkins, and Assembly Member MaryJane Shimsky. The conversation was moderated by Business Council of Westchester CEO John Ravitz. President Rinaldi noted that the main message from the event was that MTA and Metro-North are the economic engine that drives the Hudson Valley and contribute to the vitality of the entire region.
+[p004_c0004] President Rinaldi congratulated Chief Mechanical Officer Jeff Weston on his retirement after more than thirty years of dedicated service.
+[p004_c0005] President Rinaldi thanked the Committee for their support over the years as this will be her final meeting with her retirement at the end of the month. President Rinaldi acknowledged the public speakers, the team that supports the monthly board process, the IT and audio-visual support team at headquarters, LIRR President Free, LIRR Communication Liaison Pete Palamaro, and her team at Metro-North. President Rinaldi thanked the executive leadership team. President Rinaldi congratulated Executive Vice President Justin Vonashek who will be assuming the presidency of Metro-North on April 1. President Rinaldi returned the accolades that she has received back to the Metro-North workforce for their work every day to keep the railroad in service.
+[p004_c0006] Co-Chair Herbst expressed his appreciation for all the work that President Rinaldi has done throughout her career at the MTA spanning twenty-two years beginning in the legal department at the LIRR and ultimately running both railroads. Co-Chair Herbst stated that President Rinaldi deserves all the accolades and thanked her for her kindness and professionalism.
+[p004_c0007] Board Member Valdivia acknowledged President Rinaldi's leadership, particularly as a woman in transportation, with a strategic mind but also an openness about her family. Board Member Valdivia expressed admiration for the way President Rinaldi held multiple identities in her leadership and for bringing other emerging leaders to the table. Board Member Valdivia expressed gratitude for the honor of working with President Rinaldi and for her record as a role model for women in the industry.
+[p004_c0008] Board Member Brown relayed how even though Metro-North is one of the best performing railroads in the country, Metro-North continued to improve on the numbers during the seven years of President Rinaldi's leadership, especially on-time performance. Board Member Brown wished President Rinaldi a long and fruitful retirement.
+[p004_c0009] Board Member Glucksman thanked President Rinaldi for her outstanding work and for bringing Metro-North to such high levels and wished Jeff a happy and healthy retirement. Board Member Glucksman stated that Sue Metzger loved working with President Rinaldi.
+
+## Page 5
+
+### [p005_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 5 February 24, 2025
+[p005_c0002] Board Member Zuckerman expressed appreciation for the fact that President Rinaldi ignored the 80-20 rule as he is a representative of the smallest county of the system, because she has worked on the small things just as much as the big things. Board Member Zuckerman thanked President Rinaldi for her leadership.
+[p005_c0003] Board Member Tessitore highlighted President Rinaldi's statement about the workforce and expressed appreciation from the unions on both railroads.
+[p005_c0004] Board Member Bringmann highlighted the two years that President Rinaldi ran both railroads. Board Member Bringmann stated that while serving as the head of Metro-North which is the second largest railroad in North America, President Rinaldi was asked to run the largest commuter rail in North America. Board Member Bringmann stated that President Rinaldi did a phenomenal job and doesn't get enough credit for that work. Board Member Bringmann thanked President Rinaldi for her work on behalf of Long Island.
+[p005_c0005] The complete presentation is filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of President Rinaldi's remarks.
+### [p005_c0006] 6. LIRR PRESIDENT'S REPORT:
+[p005_c0007] LIRR President Rob Free ("President Free") provided January's ridership and performance update with an overall increase of 11.2% in ridership compared to January 2024. Monthly ticket ridership and non-commutation ridership both increased compared to January 2024. On-time performance was 97.01% for January, which is the third best January in recorded history.
+[p005_c0008] President Free discussed the second anniversary of the opening of Grand Central Madison. Grand Central Madison has been transformational, as it allowed for an increase service of 40% and reverse peak service of 56%, and it received a 95% customer satisfaction rating in the latest survey. The split between Penn Station and Grand Central Madison is 60/40 as originally projected. President Free highlighted that the average daily AM peak ridership growth is 85% at Grand Central Madison since opening.
+[p005_c0009] President Free announced that Grand Central Madison received one of fourteen "Honor Awards" for civil engineering achievement from the American Society of Civil Engineering (ASCE), with a celebration at an awards gala in October where Grand Central Madison will be in the running to win the OPAL award, ASCE's highest honor.
+[p005_c0010] President Free stated that he joined UBS Arena officials and New York Islanders legend Butch Goring on January 28 to celebrate the one-millionth customer to take the LIRR to a UBS Arena event. The one-millionth customer was father-son duo Steve and Michael Sosnick. President Free also noted that it's not just the fans but hockey teams are also taking LIRR to get to the games at UBS Arena. President Free thanked LIRR General Manager of Customer Experience Yannis
+
+## Page 6
+
+### [p006_c0001] 6 | Joint LIRR and Metro-North Committees Meeting Minutes February 24, 2025
+[p006_c0002] Takos and his Group Sales team for their work on making these and other special requests happen throughout the year.
+[p006_c0003] President Free shared an exciting new pilot program that uses an app to facilitate an on-demand remote video American Sign Language interpreting service called “Convo Access” which was part of the 2024 Transit Tech Lab Challenge. Convo Access allows customers to connect with a live interpreter and chat with an employee regarding LIRR service using a QR code. The Stations Department has equipped Customer Ambassadors with QR codes that hang from their necks, adding further convenience for customers to request assistance. Seven stations are participating in this pilot program. President Free thanked Accessibility and Stations Department for this cutting-edge pilot.
+[p006_c0004] President Free proudly announced that the March issue of Progressive Railroading magazine will feature LIRR Vice President of Corporate Safety, Lori Ebbighausen in their inaugural list of “50 Women of Influence in Rail”. Lori has skillfully led internal and external safety efforts for many years and the passion with which she does so is nothing short of inspiring. President Free congratulated Vice President Ebbighausen and all the nominees.
+[p006_c0005] President Free concluded his remarks by expressing his gratitude and appreciation for the friendship and the dedication to the MTA of President Rinaldi through her many roles of service at the MTA including at Metro-North and the LIRR.
+[p006_c0006] In response to a question from Board Member Garodnick regarding the 60/40 split, President Free stated that the 60/40 split refers to the division of Manhattan bound riders that traveling to Penn Station (60%) or Grand Central Madison (40%). This ridership split was the projected division although it took about a year to get there. In response to a question from Board Member Garodnick regarding whether there is any information as to where the riders go after arriving at Grand Central Madison (i.e. Subway, Metro-North, buses), President Free stated that beauty of Grand Central is the level of connectivity available at that location, but for actual numbers he will refer to NYCT President. President Free stated that he is aware that foot traffic from Long Island zip codes in the Grand Central area has doubled.
+[p006_c0007] Board Member Garodnick stated his appreciation and thanks to President Rinaldi during the short time that he has worked with her.
+[p006_c0008] The complete presentation is filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of President Free’s remarks.
+### [p006_c0009] 7. OPERATING REPORTS:
+[p006_c0010] Metro-North Executive Vice President & Chief Operating Officer Justin Vonashek (“Executive Vice President Vonashek”) expressed his gratitude and appreciation for President Rinaldi and Chief Mechanical Officer Jeff Weston and wished them both a happy retirement.
+
+## Page 7
+
+### [p007_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 7 February 24, 2025
+[p007_c0002] Executive Vice President Vonashek provided Metro-North's 2024 year-end review, noting the highest on-time performance in history of 98.34% while highlighting key changes that drove up mean distance between failures (MBDF) to the highest levels.
+[p007_c0003] Executive Vice President Vonashek congratulated Metro-North Senior Director- EAM Sapna Shah and Metro-North Assistant Director of Operations Maureen Taylor for being recognized as Women of Influence in Rail by Progressive Railroading magazine.
+[p007_c0004] In response to a question from Board Member Zuckerman regarding the super express train on the Hudson Line, Executive Vice President Vonashek stated that they currently have a super express train that runs on the New Haven Line, which makes three stops before arriving at Grand Central. Executive Vice President Vonashek stated that there is planned to be a similar express train on the Hudson Line later this year.
+[p007_c0005] LIRR Senior Vice President of Operations Tom Kost ("Senior Vice President Kost") presented the service and performance results for January 2025 and upcoming work that will impact service in March for LIRR.
+[p007_c0006] Senior Vice President Kost presented LIRR's 2024 year-end review, highlighting LIRR's on-time performance of 95.65%, overall ridership increase of 15.7% compared to 2023, LIRR provided service to 12% more area events than 2023, vehicle capacity adjustments to improve customer experience, and 21% increase in customers using the LIRR Cares program. Senior Vice President Kost also highlighted an increase in MU miles by more than 13 million miles in 2023 compared to 2022 and 2.8 million miles in 2024 over 2023, mean trips between failures of almost 600 trips, and annual mean distance between failures of 163,564 miles exceeded the goal of 150,000 miles.
+[p007_c0007] Vice President Maintenance of Way Paul Dietlin ("Vice President Dietlin") presented highlights of work performed by the maintenance of way team to infrastructure in 2024, including 106 special programs, a nine percent increase in track outages compared to 2023, state of good repair achievements, and focused improvements that reduced delays by 13% and 31% reduction in switch incidents.
+[p007_c0008] The complete LIRR and Metro-North operating reports are filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of the presentations.
+### [p007_c0009] 8. SAFETY REPORTS:
+[p007_c0010] Metro-North Vice President of System Safety Shelley Prettyman ("Vice President Prettyman") presented a high-level overview of the efforts of the Office of System Safety in partnership with the Operations team to drive down employee incidents and injury through 2024.
+
+## Page 8
+
+### [p008_c0001] 8 | Joint LIRR and Metro-North Committees Meeting Minutes February 24, 2025
+[p008_c0002] LIRR Vice President of Corporate Safety Lori Ebbighausen (“Vice President Ebbighausen”) congratulated the operations and maintenance of way team for the historic achievements in 2024 and highlighted a 30% reduction in the customer and employee injury rate in 2024 compared to 2023 and 8% reduction in employee lost time injury for LIRR.
+[p008_c0003] The full LIRR and Metro-North safety reports are filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of the presentations.
+### [p008_c0004] 9. MTAPD REPORT:
+[p008_c0005] MTAPD Chief of Operations Thomas J. Taffe (“Chief Taffe”) presented the crime and policing report for January 2025 for both railroads, which remains low with 23 reported incidents, which is a 30% decrease compared to the same period last year. Police have issued over 500 criminal summonses with over half related to fare evasion.
+[p008_c0006] The full MTAPD report is filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of Chief Taffe’s presentation.
+### [p008_c0007] 10. ACTION ITEM:
+[p008_c0008] President Rinaldi noted the following Metro-North action item: (i) County of Westchester Employer-Based Shuttle Agreement.
+[p008_c0009] Upon motion duly made and seconded, the Committee recommended approval of the action item.
+[p008_c0010] The details of the action items are contained in reports filed with the records of this meeting.
+### [p008_c0011] 11. INFORMATION ITEMS:
+[p008_c0012] President Rinaldi noted the following Metro-North information items: (i) 2024 Annual Operations Report; and (ii) Adopted Budget-Financial Plan 2025.
+[p008_c0013] President Free noted the following LIRR information items: (i) 2024 Annual Operations Report; (ii) Adopted Budget-Financial Plan 2025; and (iii) March Timetable Change & Winter Trackwork.
+[p008_c0014] The details of the information items are contained in reports filed with the records of this meeting.
+
+## Page 9
+
+### [p009_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 9 February 24, 2025
+### [p009_c0002] 12. FINANCE:
+[p009_c0003] The finance reports for both railroads are contained in the meeting material.
+### [p009_c0004] 13. PROCUREMENTS:
+[p009_c0005] MTA Assistant Deputy Chief Procurement Officer Omar Messado reported on two procurement items on behalf of Metro-North.
+- [p009_c0006] 1) Metro-North seeks Board approval to issue a competitive Request for Proposal to solicit and evaluate proposals from railcar manufactures for the procurement of coach cars for Penn Station Access. 2) Metro-North seeks Board approval to exercise an option under a contract with Siemens Mobility for the design, manufacture, test, and delivery of thirteen new dual-mode locomotives with an option to purchase two additional locomotives in the total amount of $304.9M.
+[p009_c0007] In response to a question from Board Member Valdivia regarding whether this is the final option that will be exercised, Messado stated that although this is the fourth option, this is only Metro-North's second option exercised so far and there are more options. Board member Valdivia further confirmed whether this is the best path forward considering delivery is necessary by 2029.
+[p009_c0008] In response to a further question from Board Member Valdivia regarding whether the source of funding will be coming from congestion pricing, President Rinaldi stated that this procurement is funded, not from congestion pricing.
+[p009_c0009] Upon motion duly made and seconded, the Committee recommended approval of the procurement items.
+[p009_c0010] The details of these procurement items are contained in reports filed with the records of this meeting.
+### [p009_c0011] 14. ADJOURNMENT:
+[p009_c0012] Upon motion duly made and seconded, the Committee unanimously voted to adjourn the meeting.
+
+## Page 10
+
+### [p010_c0001] 10 | Joint LIRR and Metro-North Committees Meeting Minutes February 24, 2025
+[p010_c0002] Respectfully submitted,
+[p010_c0003] A handwritten signature in blue ink, appearing to read "Haley Stein". The signature is stylized and cursive, with a prominent "H" and "S".
+[p010_c0004] _Haley Stein Vice President, General Counsel & Secretary The Long Island Rail Road Company Acting General Counsel & Secretary Metro-North Commuter Railroad Company_

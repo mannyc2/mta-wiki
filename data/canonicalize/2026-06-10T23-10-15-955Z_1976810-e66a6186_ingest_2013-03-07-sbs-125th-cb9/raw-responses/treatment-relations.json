@@ -1,0 +1,213 @@
+{
+  "run_id": "2026-06-10T23-10-15-955Z_1976810-e66a6186_ingest_2013-03-07-sbs-125th-cb9",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T03:28:52.682Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-offset-bus-lanes-125th-to-m60sbs-2013",
+        "local_observation_id": "treatment_offset_bus_lanes_125th_st_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_m60-sbs-125th-street-2013",
+            "object_id": "treatment_offset-bus-lanes-125th-st-2013",
+            "description": "Offset bus lanes are a proposed SBS treatment on 125th Street for the M60 SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_07_sbs_125th_cb9",
+                "block_id": "p006_c0009",
+                "source_quote": "Offset bus lanes benefit all buses on corridor, and maintain needed parking"
+              },
+              {
+                "source_id": "2013_03_07_sbs_125th_cb9",
+                "block_id": "p011_c0004",
+                "source_quote": "Offset Bus Lanes replace one general travel lane in each direction and maintain curb access"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source is M60 SBS presentation to CB9 (2013-03-07). Block p006_c0009 explicitly lists offset bus lanes as a potential improvement for the M60 SBS project, and p011_c0004 describes the proposed design.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p006_c0009",
+            "source_quote": "Offset bus lanes benefit all buses on corridor, and maintain needed parking"
+          },
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p011_c0004",
+            "source_quote": "Offset Bus Lanes replace one general travel lane in each direction and maintain curb access"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-off-board-fare-125th-to-m60sbs-2013",
+        "local_observation_id": "treatment_off_board_fare_125th_st_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_m60-sbs-125th-street-2013",
+            "object_id": "treatment_off-board-fare-125th-st-2013",
+            "description": "Off-board fare collection is a proposed SBS treatment for the M60 SBS on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_07_sbs_125th_cb9",
+                "block_id": "p006_c0008",
+                "source_quote": "Off-Board Fare Collection"
+              },
+              {
+                "source_id": "2013_03_07_sbs_125th_cb9",
+                "block_id": "p007_c0007",
+                "source_quote": "1. Pay at sidewalk Metrocard or coin machines before boarding the bus 2. Take your receipt 3. Board the bus through any of the three doors"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source is M60 SBS presentation. Block p006_c0008 lists off-board fare collection as a potential improvement. Block p007_c0007 explains how SBS fare payment works.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p006_c0008",
+            "source_quote": "Off-Board Fare Collection"
+          },
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p007_c0007",
+            "source_quote": "1. Pay at sidewalk Metrocard or coin machines before boarding the bus 2. Take your receipt 3. Board the bus through any of the three doors"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-tsp-125th-to-m60sbs-2013",
+        "local_observation_id": "treatment_tsp_125th_st_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_m60-sbs-125th-street-2013",
+            "object_id": "treatment_tsp-125th-st-2013",
+            "description": "Transit Signal Priority is a proposed SBS treatment for the M60 SBS project on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_07_sbs_125th_cb9",
+                "block_id": "p006_c0011",
+                "source_quote": "Transit Signal Priority reduces time stopped at red lights"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source is M60 SBS presentation. Block p006_c0011 explicitly lists transit signal priority as a potential improvement for the M60 SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p006_c0011",
+            "source_quote": "Transit Signal Priority reduces time stopped at red lights"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-limited-stops-125th-to-m60sbs-2013",
+        "local_observation_id": "treatment_limited_stops_125th_st_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_m60-sbs-125th-street-2013",
+            "object_id": "treatment_limited-stops-125th-st-2013",
+            "description": "Limited stops is a proposed SBS treatment for the M60 SBS project on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_07_sbs_125th_cb9",
+                "block_id": "p006_c0007",
+                "source_quote": "Limited Stops"
+              },
+              {
+                "source_id": "2013_03_07_sbs_125th_cb9",
+                "block_id": "p013_c0005",
+                "source_quote": "M60 SBS makes limited stops in Manhattan and Queens Bx15, M100 and M101 make local stops along 125 th Street"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source is M60 SBS presentation. Block p006_c0007 lists limited stops as a potential improvement. Block p013_c0005 explicitly ties limited stops to the M60 SBS service.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p006_c0007",
+            "source_quote": "Limited Stops"
+          },
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p013_c0005",
+            "source_quote": "M60 SBS makes limited stops in Manhattan and Queens Bx15, M100 and M101 make local stops along 125 th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-curb-extensions-amsterdam-to-m60sbs-2013",
+        "local_observation_id": "treatment_curb_extensions_amsterdam_av_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_m60-sbs-125th-street-2013",
+            "object_id": "treatment_curb-extensions-amsterdam-av-2013",
+            "description": "Curb extensions at Amsterdam Avenue are proposed as part of the M60 SBS project on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_07_sbs_125th_cb9",
+                "block_id": "p023_c0005",
+                "source_quote": "Curb extensions on SW and NE corners would reduce crossing distances"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source is M60 SBS presentation. Block p023_c0005 is in a section titled 'Proposed Curb Extensions at Amsterdam Av' and explicitly proposes curb extensions as part of the 125th Street SBS project design.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p023_c0005",
+            "source_quote": "Curb extensions on SW and NE corners would reduce crossing distances"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-ped-safety-125th-to-m60sbs-2013",
+        "local_observation_id": "treatment_pedestrian_safety_125th_st_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_m60-sbs-125th-street-2013",
+            "object_id": "treatment_pedestrian-safety-125th-st-2013",
+            "description": "Pedestrian safety improvements are a proposed SBS treatment for the M60 SBS project on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_07_sbs_125th_cb9",
+                "block_id": "p006_c0012",
+                "source_quote": "Pedestrian Safety Improvements at key intersections"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source is M60 SBS presentation. Block p006_c0012 explicitly lists pedestrian safety improvements as a potential improvement under 'Select Bus Service on the M60'.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p006_c0012",
+            "source_quote": "Pedestrian Safety Improvements at key intersections"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-25-04-900Z_2111393-e0e38478_canonicalize_2026-06-10t23-10-15-955z-1976810-e66a6186-ingest-2013-03-07-sbs-125th-cb9-treatment-relations"
+}

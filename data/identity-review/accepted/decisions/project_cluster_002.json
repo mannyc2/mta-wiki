@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "review_state": "accepted",
+  "accepted_at": "2026-06-08T21:21:36.731Z",
+  "reviewer": "codex-audit-2026-06-08",
+  "source": "audit_safe_to_promote",
+  "cluster_id": "project_cluster_002",
+  "kind": "project",
+  "packet_path": "data/identity-review/packets/project_cluster_002.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/project_cluster_002.json",
+  "source_review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Flash",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 1,
+    "missing_field_count": 2,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "project_better-buses-restart-2021",
+        "project_jamaica-busway"
+      ],
+      "reason": "The shared identity key 'project_better-buses-restart' is a broad program label, not an authoritative identity field. Better Buses Restart is a citywide 2021 NYC DOT initiative (project_type: 'bus improvement initiative', status: 'implemented') that launched multiple bus lanes and busways. Jamaica Busway is a specific busway project on Jamaica Avenue and Archer Avenue in Queens (project_type: 'busway', status: 'monitoring') that is explicitly described as 'part of the Better Buses Restart program' in its payload. The Jamaica Busway has its own distinct project_name ('Jamaica Busway'), distinct corridors, distinct launch_date_text ('October 24, 2021'), and distinct relation_context linking to specific corridor records. The colon-notation evidence 'Better Buses Restart: Jamaica Busway' reinforces a parent-program/child-project relationship, not identity equivalence."
+    }
+  ],
+  "weak_aliases": [
+    {
+      "record_id": "project_jamaica-busway",
+      "aliases": [
+        "Better Buses Restart",
+        "project_better-buses-restart"
+      ],
+      "reason": "The Jamaica Busway appears in source documents under the heading 'Better Buses Restart: Jamaica Busway', making 'Better Buses Restart' a useful program-level search label, but not an authority for merging the specific busway project with the overarching initiative."
+    }
+  ],
+  "missing_fields": [
+    {
+      "record_id": "project_better-buses-restart-2021",
+      "fields": [
+        "borough",
+        "corridors",
+        "program"
+      ]
+    },
+    {
+      "record_id": "project_jamaica-busway",
+      "fields": [
+        "borough"
+      ]
+    }
+  ],
+  "ambiguous": [],
+  "suggested_rules": [
+    "When two project records share a broad program name as an identity key but differ in project_name, project_type, status, and specific geographic scope, do not merge; treat the program name as a weak alias for the sub-project.",
+    "A colon-separated heading like 'Program: Specific Project' indicates a parent-child relationship, not equivalence."
+  ],
+  "rationale": "The evidence is decisive: the Better Buses Restart initiative is a citywide program record (project_type='bus improvement initiative', status='implemented', launched 2021 to install nine major bus lanes/busways citywide), while the Jamaica Busway is a specific busway project (project_name='Jamaica Busway', project_type='busway', status='monitoring', launched Oct 24, 2021 on Jamaica Avenue and Archer Avenue in Queens) that explicitly states it is 'part of the Better Buses Restart program'. Different project_name, project_type, status, geographic scope, and relation_context all confirm these are related but distinct entities."
+}

@@ -1,0 +1,263 @@
+{
+  "id": "codex-aggressive-metric-route-relation-batch-2026-06-30-t",
+  "date": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "provider-backed identity-review-run",
+    "provider-backed ontology-normalize-run",
+    "provider profiles"
+  ],
+  "subagents": {
+    "used": true,
+    "completed_read_only_scouts": [
+      {
+        "id": "019f18fa-d769-7bf2-86ff-6be99a00753e",
+        "lane": "metric money-rate residual scout"
+      },
+      {
+        "id": "019f18fa-de65-7941-ac16-0dc00b3c8f74",
+        "lane": "project document-time-status residual scout"
+      },
+      {
+        "id": "019f18fa-e2e3-7270-9e8e-38eb8d042556",
+        "lane": "relation assertion-status treatment-edge scout"
+      },
+      {
+        "id": "019f18fa-e64e-7f90-8115-364a47dae756",
+        "lane": "route/source-gap/project-family residual scout"
+      },
+      {
+        "id": "019f1905-b72b-79a0-8e50-7e62d3c80918",
+        "lane": "metric workforce-unit residual scout"
+      },
+      {
+        "id": "019f1905-bdc0-7d32-a6cb-85e450704493",
+        "lane": "project-family and source-gap tail scout"
+      },
+      {
+        "id": "019f1905-c1cd-7b82-b6d2-60de0d59c9ac",
+        "lane": "relation assertion-status route-corridor scout"
+      },
+      {
+        "id": "019f1905-c8cb-7b51-8ac2-c9c73fc480c1",
+        "lane": "identity duplicate route scout"
+      }
+    ]
+  },
+  "implemented": [
+    {
+      "slice": "metric_money_scale_and_money_rate_aliases",
+      "description": "Added exact currency scale and money-rate unit aliases without broad m/b/gallon/passenger aliases.",
+      "files": [
+        "packages/pipeline/src/ontology/normalizers.ts",
+        "packages/pipeline/test/records/submissions.test.ts"
+      ]
+    },
+    {
+      "slice": "metric_workforce_unit_aliases",
+      "description": "Added exact workforce unit aliases for employees, positions, FTE, and full-time-equivalent surfaces; guarded per-employee rates and employees-trained outcomes.",
+      "files": [
+        "packages/pipeline/src/ontology/normalizers.ts",
+        "packages/pipeline/test/records/submissions.test.ts",
+        "packages/pipeline/test/ontology/normalizers.test.ts"
+      ]
+    },
+    {
+      "slice": "data_only_route_derived_relation_guard",
+      "description": "Prevented data-only route-scope records from becoming derived route targets while preserving authored/source-backed relations.",
+      "files": [
+        "packages/pipeline/src/records/derived-relations.ts",
+        "packages/pipeline/test/materialize/materialize.test.ts"
+      ]
+    },
+    {
+      "slice": "project_status_exact_context_gates",
+      "description": "Added six exact source-context-backed project document-time-status gates for core infrastructure acceleration projects, RCE grant program, Model G Train Project, and 2022 Bus Strategy.",
+      "files": [
+        "packages/pipeline/src/ontology/normalizers.ts",
+        "packages/pipeline/test/ontology/normalizers.test.ts"
+      ]
+    },
+    {
+      "slice": "relation_assertion_status_treatment_and_route_corridor",
+      "description": "Added narrow description-backed assertion status rules for corridor treatment lifecycle wording and route-corridor present service phrases, including token-aware future guards for words like will so Williamsbridge is not misread as future tense.",
+      "files": [
+        "packages/pipeline/src/records/assertion-qualifiers.ts",
+        "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+      ]
+    },
+    {
+      "slice": "far_rockaway_branch_route_merge",
+      "description": "Added a durable route identity alias merging duplicate LIRR Far Rockaway Branch records.",
+      "files": [
+        "data/identity-overrides/merges.json",
+        "packages/db/test/identity.test.ts"
+      ]
+    }
+  ],
+  "counts": {
+    "metric_unit_family_other": {
+      "before": 14794,
+      "after": 6100
+    },
+    "metric_unit_family_workforce": {
+      "before": 0,
+      "after": 2182
+    },
+    "metric_unit_family_money_rate": {
+      "before": 3,
+      "after": 595
+    },
+    "project_document_time_status_missing": {
+      "before": 25,
+      "after": 19
+    },
+    "route_records": {
+      "before": 320,
+      "after": 319
+    },
+    "relation_assertion_status_unknown": {
+      "before": 11245,
+      "after": 11157
+    },
+    "relation_assertion_status_delivered": {
+      "before": 1928,
+      "after": 1971
+    },
+    "relation_assertion_status_planned": {
+      "before": 2786,
+      "after": 2794
+    },
+    "relation_assertion_status_proposed": {
+      "before": 3070,
+      "after": 3104
+    },
+    "canonical_records_validate_count": {
+      "before": 84045,
+      "after": 84041
+    },
+    "wiki_pages_validate_count": {
+      "before": 7336,
+      "after": 7335
+    }
+  },
+  "final_rebaseline": {
+    "routes": 319,
+    "metric_unit_families": {
+      "money": 11482,
+      "percentage": 8235,
+      "other": 6100,
+      "missing": 2500,
+      "workforce": 2182,
+      "ridership": 1302,
+      "duration": 879,
+      "count": 731,
+      "scale": 653,
+      "money_rate": 595,
+      "speed": 577,
+      "distance": 540,
+      "population": 320,
+      "safety": 232
+    },
+    "project_document_time_status_missing": 19,
+    "relation_assertion_status": {
+      "unknown": 11157,
+      "proposed": 3104,
+      "planned": 2794,
+      "delivered": 1971,
+      "in_progress": 1600,
+      "deferred": 22,
+      "cancelled": 2
+    },
+    "validate": {
+      "submissions": 98102,
+      "canonical_records": 84041,
+      "wiki_pages": 7335,
+      "issues": 0
+    }
+  },
+  "tests_and_validation": [
+    {
+      "command": "bun test packages/pipeline/test/records/submissions.test.ts",
+      "status": "pass",
+      "tests": 29,
+      "expects": 160
+    },
+    {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "status": "pass",
+      "tests": 268,
+      "expects": 4100
+    },
+    {
+      "command": "bun test packages/pipeline/test/materialize/materialize.test.ts",
+      "status": "pass",
+      "tests": 56,
+      "expects": 859
+    },
+    {
+      "command": "bun test packages/db/test/identity.test.ts",
+      "status": "pass",
+      "tests": 27,
+      "expects": 121
+    },
+    {
+      "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+      "status": "pass",
+      "tests": 11,
+      "expects": 30
+    },
+    {
+      "command": "bun run typecheck",
+      "status": "pass"
+    },
+    {
+      "command": "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+      "status": "pass",
+      "sqlite_fts_quick_check": "ok"
+    },
+    {
+      "command": "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+      "status": "pass",
+      "output": "ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "status": "pass",
+      "issues": 0
+    }
+  ],
+  "intentionally_unresolved": [
+    {
+      "bucket": "project_family_missing_or_other",
+      "count": 10,
+      "reason": "Read-only scout found remaining records are policy-guarded or weak/title-only; forcing them would reverse existing tests or representation policy."
+    },
+    {
+      "bucket": "source_gap_kind_other_or_missing",
+      "count": 4,
+      "reason": "Remaining source gaps are intentional process/read-scope or generic caveats, not high-confidence data caveats."
+    },
+    {
+      "bucket": "metric_unit_family_other",
+      "count": 6100,
+      "reason": "Next largest buckets include incidents, gallons, millions, passenger/rides/trips scales, complaints, and safety/enforcement forms; they need narrower slices to avoid mixing counts, rates, traffic, ridership, and enforcement semantics."
+    },
+    {
+      "bucket": "relation_assertion_status_unknown",
+      "count": 11157,
+      "reason": "Most remaining unknown relations are metric/publication/organization/timeline/claim context edges, not lifecycle assertions."
+    }
+  ],
+  "next_lanes": [
+    "Metric exact safety/enforcement/count aliases after separating counts from rates.",
+    "Metric scaled ridership/service aliases for exact million passengers/rides/trips surfaces while excluding million vehicles/crossings.",
+    "More exact identity merges from duplicate display-name/route-name scans.",
+    "Relation assertion-status only where endpoint shape and description provide lifecycle semantics; avoid broad publisher/org/timeline buckets."
+  ]
+}

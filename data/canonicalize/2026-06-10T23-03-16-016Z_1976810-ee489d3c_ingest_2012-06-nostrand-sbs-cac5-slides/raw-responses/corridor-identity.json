@@ -1,0 +1,127 @@
+{
+  "run_id": "2026-06-10T23-03-16-016Z_1976810-ee489d3c_ingest_2012-06-nostrand-sbs-cac5-slides",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T02:50:22.134Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "nostrand-ave-new",
+        "local_observation_id": "corridor_nostrand_ave_sbs_2012_06_cac5",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id corridor_nostrand-avenue, which already covers this corridor with the same source (2012_06_nostrand_sbs_cac5_slides) and alias (corridor_nostrand-ave-sbs-2012-06-cac5). The observation adds more specific limits (Flushing Ave to Eastern Pkwy, Empire Blvd to Farragut Rd) but represents the same real-world Nostrand Avenue corridor. Closest match IS its own base_record_id, so new.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p004_c0002",
+            "source_quote": "Design from Flushing Ave to Eastern Pkwy, and Empire Blvd to Farragut Rd"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p011_c0002",
+            "source_quote": "DDC Project HWK 1129 will fully reconstruct Nostrand Ave from Flushing to Atlantic. The entire street and sidewalks will be rebuilt."
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "part_of_same_sbs_project",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "corridor_rogers-avenue",
+            "description": "Nostrand Avenue (southbound) and Rogers Avenue (northbound) form the paired B44 SBS corridor, both discussed in the same CAC5 presentation as a single project.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p004_c0004",
+                "source_quote": "Note: Bus Lane is at right curb on Nostrand & Rogers between Eastern Pkwy & Empire Blvd, and on Bedford Ave between DeKalb & Flushing Aves"
+              },
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p012_c0002",
+                "source_quote": "DDC Project HWK 1130 will build SBS features on Rogers, Bedford, and Nostrand Aves south of Atlantic Ave"
+              }
+            ]
+          },
+          {
+            "relation_kind": "part_of_same_sbs_project",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "corridor_bedford-avenue-201011",
+            "description": "Bedford Avenue bus lane is part of the same Nostrand/Rogers SBS project; Bedford is explicitly listed alongside Nostrand and Rogers in the CAC5 design slides.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p004_c0004",
+                "source_quote": "Note: Bus Lane is at right curb on Nostrand & Rogers between Eastern Pkwy & Empire Blvd, and on Bedford Ave between DeKalb & Flushing Aves"
+              },
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p012_c0002",
+                "source_quote": "DDC Project HWK 1130 will build SBS features on Rogers, Bedford, and Nostrand Aves south of Atlantic Ave"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rogers-ave-new",
+        "local_observation_id": "corridor_rogers_ave_2012_06_cac5",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id corridor_rogers-avenue, which already covers Rogers Avenue as northbound SBS corridor with the same source (2012_06_nostrand_sbs_cac5_slides) and alias (corridor_rogers-ave-2012-06-cac5). Closest match IS its own base_record_id, so new.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p003_c0004",
+            "source_quote": "B44 SBS will operate northbound on Rogers Ave, B44 local remains on New York Ave"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p012_c0002",
+            "source_quote": "DDC Project HWK 1130 will build SBS features on Rogers, Bedford, and Nostrand Aves south of Atlantic Ave"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "part_of_same_sbs_project",
+            "subject_id": "corridor_rogers-avenue",
+            "object_id": "corridor_bedford-avenue-201011",
+            "description": "Rogers Avenue and Bedford Avenue are both part of the same Nostrand/Rogers SBS project; DDC Project HWK 1130 explicitly groups all three corridors together.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p012_c0002",
+                "source_quote": "DDC Project HWK 1130 will build SBS features on Rogers, Bedford, and Nostrand Aves south of Atlantic Ave"
+              },
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p004_c0004",
+                "source_quote": "Note: Bus Lane is at right curb on Nostrand & Rogers between Eastern Pkwy & Empire Blvd, and on Bedford Ave between DeKalb & Flushing Aves"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "bedford-ave-new",
+        "local_observation_id": "corridor_bedford_ave_2012_06_cac5",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id corridor_bedford-avenue-201011, which has identical limits (Between DeKalb Ave and Flushing Ave), the same source (2012_06_nostrand_sbs_cac5_slides), and alias (corridor_bedford-ave-2012-06-cac5). Closest match IS its own base_record_id, so new.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p004_c0004",
+            "source_quote": "Note: Bus Lane is at right curb on Nostrand & Rogers between Eastern Pkwy & Empire Blvd, and on Bedford Ave between DeKalb & Flushing Aves"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p012_c0002",
+            "source_quote": "DDC Project HWK 1130 will build SBS features on Rogers, Bedford, and Nostrand Aves south of Atlantic Ave"
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-46-00-323Z_2111393-c439f883_canonicalize_2026-06-10t23-03-16-016z-1976810-ee489d3c-ingest-2012-06-nostrand-sbs-cac5-slides-corridor-identity"
+}

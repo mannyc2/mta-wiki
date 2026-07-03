@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T22-56-13-398Z_1976810-3e780c0a_ingest_201110-brt-34th-open-house-slides",
+  "generated_at": "2026-06-11T02:00:06.538Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 43,
+  "validated_decision_count": 39,
+  "quarantined_decision_count": 4,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T22-56-13-398Z_1976810-3e780c0a_ingest_201110-brt-34th-open-house-slides",
+    "manifest": "data/canonicalize/2026-06-10T22-56-13-398Z_1976810-3e780c0a_ingest_201110-brt-34th-open-house-slides/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T22-56-13-398Z_1976810-3e780c0a_ingest_201110-brt-34th-open-house-slides/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T22-56-13-398Z_1976810-3e780c0a_ingest_201110-brt-34th-open-house-slides/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T22-56-13-398Z_1976810-3e780c0a_ingest_201110-brt-34th-open-house-slides/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 3,
+      "validated_decision_count": 3,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-398Z_1976810-3e780c0a_ingest_201110-brt-34th-open-house-slides/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-49-55-163Z_2111393-67665034_canonicalize_2026-06-10t22-56-13-398z-1976810-3e780c0a-ingest-201110-brt-34th-open-house-slides-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 2,
+      "validated_decision_count": 2,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-398Z_1976810-3e780c0a_ingest_201110-brt-34th-open-house-slides/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-49-55-163Z_2111393-b3cd6926_canonicalize_2026-06-10t22-56-13-398z-1976810-3e780c0a-ingest-201110-brt-34th-open-house-slides-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-398Z_1976810-3e780c0a_ingest_201110-brt-34th-open-house-slides/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-49-55-163Z_2111393-241c83b5_canonicalize_2026-06-10t22-56-13-398z-1976810-3e780c0a-ingest-201110-brt-34th-open-house-slides-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-398Z_1976810-3e780c0a_ingest_201110-brt-34th-open-house-slides/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-49-55-171Z_2111393-8e956736_canonicalize_2026-06-10t22-56-13-398z-1976810-3e780c0a-ingest-201110-brt-34th-open-house-slides-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 5,
+      "validated_decision_count": 5,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-398Z_1976810-3e780c0a_ingest_201110-brt-34th-open-house-slides/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-49-55-171Z_2111393-e38890dc_canonicalize_2026-06-10t22-56-13-398z-1976810-3e780c0a-ingest-201110-brt-34th-open-house-slides-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 31,
+      "validated_decision_count": 27,
+      "quarantined_decision_count": 4,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-398Z_1976810-3e780c0a_ingest_201110-brt-34th-open-house-slides/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-49-55-172Z_2111393-8949a95a_canonicalize_2026-06-10t22-56-13-398z-1976810-3e780c0a-ingest-201110-brt-34th-open-house-slides-relation-linker"
+    }
+  ]
+}

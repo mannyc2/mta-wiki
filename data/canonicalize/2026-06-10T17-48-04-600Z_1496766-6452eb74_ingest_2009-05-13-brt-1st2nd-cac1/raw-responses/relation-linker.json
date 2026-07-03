@@ -1,0 +1,691 @@
+{
+  "run_id": "2026-06-10T17-48-04-600Z_1496766-6452eb74_ingest_2009-05-13-brt-1st2nd-cac1",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-10T21:06:09.616Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "rel-nyc-avg-speed-skip",
+        "local_observation_id": "metric_nyc_avg_bus_speed_8_1",
+        "decision": "skip",
+        "rationale": "p013_c0003 is a city-level comparison chart 'Bus Speeds in NYC vs. Other Cities.' It names 'New York' as a city but does not name the First/Second Avenue SBS project or corridor. Cannot infer relationship from co-occurrence alone.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p013_c0003",
+            "source_quote": "A bar chart comparing the average bus speeds in five major US cities. The vertical axis is labeled 'Average Speed (MPH)' and ranges from 0 to 14 in increments of 2. The horizontal axis lists the cities: New York, Chicago, Boston, Washington, and Los Angeles. Each city has a corresponding bar. The New York bar is orange and has a value of 8.1."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-chicago-avg-speed-skip",
+        "local_observation_id": "metric_chicago_avg_bus_speed_9_7",
+        "decision": "skip",
+        "rationale": "p013_c0003 is a city-level comparison chart. It names 'Chicago' as a city but does not name the First/Second Avenue SBS project or corridor. Cannot infer relationship from co-occurrence alone.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p013_c0003",
+            "source_quote": "The Chicago bar is light blue and has a value of 9.7."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-boston-avg-speed-skip",
+        "local_observation_id": "metric_boston_avg_bus_speed_10_5",
+        "decision": "skip",
+        "rationale": "p013_c0003 is a city-level comparison chart. It names 'Boston' as a city but does not name the First/Second Avenue SBS project or corridor. Cannot infer relationship from co-occurrence alone.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p013_c0003",
+            "source_quote": "The Boston bar is medium blue and has a value of 10.5."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-washington-avg-speed-skip",
+        "local_observation_id": "metric_washington_avg_bus_speed_11_2",
+        "decision": "skip",
+        "rationale": "p013_c0003 is a city-level comparison chart. It names 'Washington' as a city but does not name the First/Second Avenue SBS project or corridor. Cannot infer relationship from co-occurrence alone.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p013_c0003",
+            "source_quote": "The Washington bar is dark blue and has a value of 11.2."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-la-avg-speed-skip",
+        "local_observation_id": "metric_la_avg_bus_speed_12_3",
+        "decision": "skip",
+        "rationale": "p013_c0003 is a city-level comparison chart. It names 'Los Angeles' as a city but does not name the First/Second Avenue SBS project or corridor. Cannot infer relationship from co-occurrence alone.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p013_c0003",
+            "source_quote": "The Los Angeles bar is the darkest blue and has a value of 12.3."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m15-speed-1996",
+        "local_observation_id": "metric_first_second_ave_speed_1996_9_1",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_first-second-ave-speed-1996-9-1",
+            "description": "M15 bus speed on First/Second Avenue corridor in 1996",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p014_c0003",
+                "source_quote": "A bar chart illustrating the trend of bus speeds on the First Avenue/Second Avenue SBS route. The vertical axis is labeled 'Average Speed (MPH)' and ranges from 5 to 10. The horizontal axis shows the years 1996, 2002, and 2006. Three blue bars represent the average speeds for each year: 9.1 MPH in 1996, 8.4 MPH in 2002, and 8.1 MPH in 2006."
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "metric_first-second-ave-speed-1996-9-1",
+            "description": "M15 bus speed trend shown in First/Second Ave SBS CAC presentation",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p014_c0003",
+                "source_quote": "A bar chart illustrating the trend of bus speeds on the First Avenue/Second Avenue SBS route."
+              }
+            ]
+          }
+        ],
+        "rationale": "p014_c0003 explicitly states the chart shows 'bus speeds on the First Avenue/Second Avenue SBS route' — naming the corridor and project. The 1996 value of 9.1 MPH is directly cited.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p014_c0003",
+            "source_quote": "9.1 MPH in 1996"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m15-speed-2002",
+        "local_observation_id": "metric_first_second_ave_speed_2002_8_4",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_first-second-ave-speed-2002-8-4",
+            "description": "M15 bus speed on First/Second Avenue corridor in 2002",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p014_c0003",
+                "source_quote": "A bar chart illustrating the trend of bus speeds on the First Avenue/Second Avenue SBS route. ... 8.4 MPH in 2002"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "metric_first-second-ave-speed-2002-8-4",
+            "description": "M15 bus speed trend shown in First/Second Ave SBS CAC presentation",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p014_c0003",
+                "source_quote": "A bar chart illustrating the trend of bus speeds on the First Avenue/Second Avenue SBS route."
+              }
+            ]
+          }
+        ],
+        "rationale": "p014_c0003 explicitly states the chart shows 'bus speeds on the First Avenue/Second Avenue SBS route.' The 2002 value of 8.4 MPH is directly cited.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p014_c0003",
+            "source_quote": "8.4 MPH in 2002"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m15-speed-2006",
+        "local_observation_id": "metric_first_second_ave_speed_2006_8_1",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_first-second-ave-speed-2006-8-1",
+            "description": "M15 bus speed on First/Second Avenue corridor in 2006",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p014_c0003",
+                "source_quote": "A bar chart illustrating the trend of bus speeds on the First Avenue/Second Avenue SBS route. ... 8.1 MPH in 2006"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "metric_first-second-ave-speed-2006-8-1",
+            "description": "M15 bus speed trend shown in First/Second Ave SBS CAC presentation",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p014_c0003",
+                "source_quote": "A bar chart illustrating the trend of bus speeds on the First Avenue/Second Avenue SBS route."
+              }
+            ]
+          }
+        ],
+        "rationale": "p014_c0003 explicitly states the chart shows 'bus speeds on the First Avenue/Second Avenue SBS route.' The 2006 value of 8.1 MPH is directly cited.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p014_c0003",
+            "source_quote": "8.1 MPH in 2006"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m15-bus-in-motion",
+        "local_observation_id": "metric_m15_limited_bus_in_motion_54pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-local-limited",
+            "object_id": "metric_m15-limited-bus-in-motion-54pct_2",
+            "description": "M15 Limited bus delay breakdown: Bus in Motion 54%",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p016_c0003",
+                "source_quote": "A pie chart illustrating the sources of bus delay for M15 Limited. ... Bus in Motion 54%"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_m15-limited-bus-in-motion-54pct_2",
+            "description": "M15 Limited delay source for First/Second Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p016_c0003",
+                "source_quote": "Sources of Bus Delay - M15 Limited"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "metric_m15-limited-bus-in-motion-54pct_2",
+            "description": "M15 Limited delay analysis presented at First/Second Ave SBS CAC",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p016_c0003",
+                "source_quote": "Sources of Bus Delay - M15 Limited"
+              }
+            ]
+          }
+        ],
+        "rationale": "p016_c0003 explicitly names 'M15 Limited' as the subject of the delay analysis. M15 is the route serving the First/Second Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p016_c0003",
+            "source_quote": "Bus in Motion 54%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m15-stopped-at-stops",
+        "local_observation_id": "metric_m15_limited_stopped_at_bus_stops_22pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-local-limited",
+            "object_id": "metric_m15-limited-stopped-at-bus-stops-22pct",
+            "description": "M15 Limited bus delay breakdown: Stopped at Bus Stops 22%",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p016_c0003",
+                "source_quote": "A pie chart illustrating the sources of bus delay for M15 Limited. ... Stopped at Bus Stops 22%"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_m15-limited-stopped-at-bus-stops-22pct",
+            "description": "M15 Limited delay source for First/Second Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p016_c0003",
+                "source_quote": "Sources of Bus Delay - M15 Limited"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "metric_m15-limited-stopped-at-bus-stops-22pct",
+            "description": "M15 Limited delay analysis presented at First/Second Ave SBS CAC",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p016_c0003",
+                "source_quote": "Sources of Bus Delay - M15 Limited"
+              }
+            ]
+          }
+        ],
+        "rationale": "p016_c0003 explicitly names 'M15 Limited.' The Stopped at Bus Stops value of 22% is cited.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p016_c0003",
+            "source_quote": "Stopped at Bus Stops 22%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m15-red-lights",
+        "local_observation_id": "metric_m15_limited_stopped_red_lights_21pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-local-limited",
+            "object_id": "metric_m15-limited-stopped-red-lights-21pct",
+            "description": "M15 Limited bus delay breakdown: Stopped During Red Lights 21%",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p016_c0003",
+                "source_quote": "A pie chart illustrating the sources of bus delay for M15 Limited. ... Stopped During Red Lights 21%"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_m15-limited-stopped-red-lights-21pct",
+            "description": "M15 Limited delay source for First/Second Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p016_c0003",
+                "source_quote": "Sources of Bus Delay - M15 Limited"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "metric_m15-limited-stopped-red-lights-21pct",
+            "description": "M15 Limited delay analysis presented at First/Second Ave SBS CAC",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p016_c0003",
+                "source_quote": "Sources of Bus Delay - M15 Limited"
+              }
+            ]
+          }
+        ],
+        "rationale": "p016_c0003 explicitly names 'M15 Limited.' The Stopped During Red Lights value of 21% is cited.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p016_c0003",
+            "source_quote": "Stopped During Red Lights 21%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m15-other-delays",
+        "local_observation_id": "metric_m15_limited_other_delays_4pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-local-limited",
+            "object_id": "metric_m15-limited-other-delays-4pct_2",
+            "description": "M15 Limited bus delay breakdown: Other Delays 4%",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p016_c0003",
+                "source_quote": "A pie chart illustrating the sources of bus delay for M15 Limited. ... Other Delays 4%"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_m15-limited-other-delays-4pct_2",
+            "description": "M15 Limited delay source for First/Second Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p016_c0003",
+                "source_quote": "Sources of Bus Delay - M15 Limited"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "metric_m15-limited-other-delays-4pct_2",
+            "description": "M15 Limited delay analysis presented at First/Second Ave SBS CAC",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p016_c0003",
+                "source_quote": "Sources of Bus Delay - M15 Limited"
+              }
+            ]
+          }
+        ],
+        "rationale": "p016_c0003 explicitly names 'M15 Limited.' The Other Delays value of 4% is cited.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p016_c0003",
+            "source_quote": "Other Delays 4%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-fordham-travel-time",
+        "local_observation_id": "metric_fordham_rd_sbs_travel_time_reduction_20pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_fordham-road-sbs-2010-01-14",
+            "object_id": "metric_fordham-rd-sbs-travel-time-reduction-20pct",
+            "description": "Fordham Road SBS travel time reduction of 20%",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p017_c0003",
+                "source_quote": "Travel Time: 20% reduction in running time"
+              }
+            ]
+          }
+        ],
+        "rationale": "p017_c0003 is under the 'Fordham Road SBS: Results' section and explicitly states the travel time reduction.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p017_c0003",
+            "source_quote": "Travel Time: 20% reduction in running time"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-fordham-ridership",
+        "local_observation_id": "metric_fordham_rd_sbs_ridership_increase_10pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_fordham-road-sbs-2010-01-14",
+            "object_id": "metric_fordham-rd-sbs-ridership-increase-10pct",
+            "description": "Fordham Road SBS ridership increase of 10% Oct 2007 to Oct 2008",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p017_c0004",
+                "source_quote": "Ridership: 10% increase from October 2007 to October 2008"
+              }
+            ]
+          }
+        ],
+        "rationale": "p017_c0004 is under the 'Fordham Road SBS: Results' section and explicitly states the ridership increase.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p017_c0004",
+            "source_quote": "Ridership: 10% increase from October 2007 to October 2008"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-fordham-satisfaction",
+        "local_observation_id": "metric_fordham_rd_sbs_customer_satisfaction_98pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_fordham-road-sbs-2010-01-14",
+            "object_id": "metric_fordham-rd-sbs-customer-satisfaction-98pct",
+            "description": "Fordham Road SBS customer satisfaction 98%",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p017_c0005",
+                "source_quote": "Customer Satisfaction: 98% satisfied or very satisfied"
+              }
+            ]
+          }
+        ],
+        "rationale": "p017_c0005 is under the 'Fordham Road SBS: Results' section and explicitly states the customer satisfaction rate.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p017_c0005",
+            "source_quote": "Customer Satisfaction: 98% satisfied or very satisfied"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-first-cac",
+        "local_observation_id": "event_first_cac_meeting_may2009",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "event_first-cac-meeting-may2009",
+            "description": "First 1st/2nd Ave CAC meeting in Spring 2009",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p005_c0003",
+                "source_quote": "First 1st/2nd Ave CAC meeting"
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0003 shows the project timeline with 'First 1st/2nd Ave CAC meeting' listed under the First/Second Ave SBS project timeline for Spring 2009.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p005_c0003",
+            "source_quote": "First 1st/2nd Ave CAC meeting"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-second-cac",
+        "local_observation_id": "event_second_cac_meeting_sep2009",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "event_second-cac-meeting-sep2009",
+            "description": "Second 1st/2nd Ave CAC meeting in September 2009",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p030_c0005",
+                "source_quote": "Second CAC meeting – September 2009"
+              }
+            ]
+          }
+        ],
+        "rationale": "p030_c0005 lists 'Second CAC meeting – September 2009' under Next Steps for the First/Second Ave SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p030_c0005",
+            "source_quote": "Second CAC meeting – September 2009"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-open-house",
+        "local_observation_id": "event_public_open_house_fall2009",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "event_public-open-house-fall2009",
+            "description": "Public Open House Fall 2009 for First/Second Ave SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p007_c0004",
+                "source_quote": "Public Open Houses will take place at key points, with first meeting tentatively scheduled for Fall 2009"
+              },
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p030_c0005",
+                "source_quote": "Open House – Fall 2009"
+              }
+            ]
+          }
+        ],
+        "rationale": "p007_c0004 and p030_c0005 both name the public Open House scheduled for Fall 2009 as part of the First/Second Ave SBS project's community engagement.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p007_c0004",
+            "source_quote": "Public Open Houses will take place at key points, with first meeting tentatively scheduled for Fall 2009"
+          },
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p030_c0005",
+            "source_quote": "Open House – Fall 2009"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-cac-tour",
+        "local_observation_id": "event_cac_tour_fordham_rd_sbs_summer2009",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "event_cac-tour-fordham-rd-sbs-summer2009",
+            "description": "CAC Tour of Fordham Road SBS in Summer 2009",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p005_c0003",
+                "source_quote": "CAC Tour of Fordham Rd SBS"
+              },
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p030_c0005",
+                "source_quote": "CAC Tour of Fordham Road SBS – Summer 2009"
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0003 and p030_c0005 both list the CAC Tour of Fordham Road SBS in Summer 2009 on the First/Second Ave SBS project timeline.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p005_c0003",
+            "source_quote": "CAC Tour of Fordham Rd SBS"
+          },
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p030_c0005",
+            "source_quote": "CAC Tour of Fordham Road SBS – Summer 2009"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-phase1",
+        "local_observation_id": "event_phase1_sbs_implementation_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "event_phase1-sbs-implementation-2010",
+            "description": "Phase I SBS Implementation in 2010",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p005_c0003",
+                "source_quote": "Phase I SBS Implementation"
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0003 shows 'Phase I SBS Implementation' on the First/Second Ave SBS project timeline under 2010.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p005_c0003",
+            "source_quote": "Phase I SBS Implementation"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-phase2",
+        "local_observation_id": "event_phase2_sbs_implementation_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "event_phase2-sbs-implementation-2011",
+            "description": "Phase II SBS Implementation (capital project) in 2011",
+            "evidence_refs": [
+              {
+                "source_id": "2009_05_13_brt_1st2nd_cac1",
+                "block_id": "p005_c0003",
+                "source_quote": "Phase II SBS Implementation (capital project)"
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0003 shows 'Phase II SBS Implementation (capital project)' on the First/Second Ave SBS project timeline under 2011.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p005_c0003",
+            "source_quote": "Phase II SBS Implementation (capital project)"
+          }
+        ]
+      }
+    ],
+    "packet_id": "relation-linker"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T21-03-44-591Z_1774507-b1a0fb07_canonicalize_2026-06-10t17-48-04-600z-1496766-6452eb74-ingest-2009-05-13-brt-1st2nd-cac1-relation-linker"
+}

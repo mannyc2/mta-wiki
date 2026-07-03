@@ -1,0 +1,261 @@
+{
+  "run_id": "2026-06-10T22-56-13-382Z_1976810-c496d526_ingest_201110-brt-34th-cac5",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T01:54:17.362Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-offboardfare-34th-sbs",
+        "local_observation_id": "treatment_off_board_fare_collection_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_off-board-fare-collection-34th-st_3",
+            "description": "Off-board fare collection on 34th Street as part of 2011 planned improvements for the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p005_c0002",
+                "source_quote": "Off-board fare collection"
+              },
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p030_c0002",
+                "source_quote": "Start date: Sunday November 13, 2011"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 5 explicitly lists off-board fare collection under '2011 planned improvements' of the 34th Street SBS design; page 30 confirms the November 13, 2011 start date and pre-payment at all M34/M34A stops.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p005_c0002",
+            "source_quote": "Off-board fare collection"
+          },
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p030_c0002",
+            "source_quote": "Start date: Sunday November 13, 2011"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-buslanecamera-34th-sbs",
+        "local_observation_id": "treatment_bus_lane_camera_enforcement",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_bus-lane-camera-enforcement",
+            "description": "Bus lane camera enforcement on 34th Street as part of 2011 planned improvements for the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p005_c0002",
+                "source_quote": "Bus lane camera enforcement"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 5 explicitly lists bus lane camera enforcement under '2011 planned improvements' of the 34th Street SBS design.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p005_c0002",
+            "source_quote": "Bus lane camera enforcement"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-offsetbuslanes-34th-sbs",
+        "local_observation_id": "treatment_offset_bus_lanes_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_offset-bus-lanes-34th-st",
+            "description": "Offset bus lanes on 34th Street as part of 2012 proposed design for the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p005_c0002",
+                "source_quote": "Offset bus lanes"
+              },
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p020_c0002",
+                "source_quote": "Offset bus lanes: blocked less often than curbside bus lanes, can carry more buses"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 5 lists offset bus lanes under '2012 proposed design' of the 34th Street SBS; page 20 elaborates on their benefits.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p005_c0002",
+            "source_quote": "Offset bus lanes"
+          },
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p020_c0002",
+            "source_quote": "Offset bus lanes: blocked less often than curbside bus lanes, can carry more buses"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-busbulbs-34th-sbs",
+        "local_observation_id": "treatment_bus_bulbs_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_bus-bulbs-34th-st_2",
+            "description": "Bus bulbs and sidewalk extensions on 34th Street as part of 2012 proposed design for the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p005_c0002",
+                "source_quote": "Bus bulbs and sidewalk extensions"
+              },
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p009_c0001",
+                "source_quote": "Bus Bulb"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 5 lists bus bulbs and sidewalk extensions under '2012 proposed design'; page 9 shows a labeled image depicting a bus bulb on 34th Street.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p005_c0002",
+            "source_quote": "Bus bulbs and sidewalk extensions"
+          },
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p009_c0001",
+            "source_quote": "Bus Bulb"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-loadingzones-34th-sbs",
+        "local_observation_id": "treatment_expanded_loading_zones_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_expanded-loading-zones-34th-st",
+            "description": "Expanded loading zones on 34th Street as part of 2012 proposed design for the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p005_c0002",
+                "source_quote": "Expanded loading zones"
+              },
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p010_c0002",
+                "source_quote": "increases daytime loading from 32 to 258 spaces with a loading zone on every block"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 5 lists expanded loading zones under '2012 proposed design'; page 10 specifies the loading increase from 32 to 258 spaces.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p005_c0002",
+            "source_quote": "Expanded loading zones"
+          },
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p010_c0002",
+            "source_quote": "increases daytime loading from 32 to 258 spaces with a loading zone on every block"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-rightturnbays-34th-sbs",
+        "local_observation_id": "treatment_right_turn_bays_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_right-turn-bays-34th-st",
+            "description": "Right-turn bays on 34th Street as part of capacity improvements for the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p020_c0002",
+                "source_quote": "Right-turn bays: reduces blockages at busy intersections"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 20 lists right-turn bays under 'Capacity improvements' of the 34th St SBS Traffic Changes.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p020_c0002",
+            "source_quote": "Right-turn bays: reduces blockages at busy intersections"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-sinaltiming-34th-sbs",
+        "local_observation_id": "treatment_signal_timing_improvements_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_signal-timing-improvements-34th-st",
+            "description": "Signal timing improvements on 34th Street as part of capacity improvements for the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p020_c0002",
+                "source_quote": "Signal timing improvements: more green time for 34 th Street"
+              },
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p026_c0002",
+                "source_quote": "Corridor wide: added green time to east-west traffic on 34 th Street"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 20 lists signal timing improvements under 'Capacity improvements'; page 26 confirms corridor-wide added green time for east-west traffic on 34th Street.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p020_c0002",
+            "source_quote": "Signal timing improvements: more green time for 34 th Street"
+          },
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p026_c0002",
+            "source_quote": "Corridor wide: added green time to east-west traffic on 34 th Street"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-46-45-519Z_2111393-266ed18c_canonicalize_2026-06-10t22-56-13-382z-1976810-c496d526-ingest-201110-brt-34th-cac5-treatment-relations"
+}

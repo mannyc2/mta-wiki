@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-06-10T23-06-42-606Z_1976810-0ee807d5_ingest_2012-11-sbs-webster-cac4-summary",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T03:06:37.131Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d_project_webster_12_cac4",
+        "local_observation_id": "project_webster_ave_sbs_2012_cac4",
+        "decision": "new",
+        "rationale": "The observation's base_record_id ('project_12-webster-ave') already matches the existing registry record for the same project. The registry record for project_12-webster-ave already encompasses this 2012 CAC4 observation through its aliases (including 'project_webster-ave-sbs-2012-cac4') and source_ids (including '2012_11_sbs_webster_cac4_summary'). The observation resolves to the same canonical identity — no link to a different record is warranted.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p001_c0003",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p001_c0006",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p001_c0007",
+            "source_quote": ""
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-05-57-225Z_2111393-109aca48_canonicalize_2026-06-10t23-06-42-606z-1976810-0ee807d5-ingest-2012-11-sbs-webster-cac4-summary-project-identity"
+}

@@ -1,0 +1,149 @@
+{
+  "run_id": "2026-06-10T23-03-20-805Z_1976810-5b1cc97e_ingest_2012-09-19-125th-st-sbs-public-workshop-summary",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:49:24.292Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d001-nyc-dot",
+        "local_observation_id": "entity_125th_st_nyc_dot",
+        "decision": "new",
+        "rationale": "Observation resolves to base_record_id entity_nyc-dot, which matches the existing registry record entity_nyc-dot (same entity_name 'New York City Department of Transportation', same entity_type 'agency'). No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_19_125th_st_sbs_public_workshop_summary",
+            "block_id": "p002_c0005",
+            "source_quote": "The New York City Department of Transportation (DOT) and MTA New York City Transit (NYCT) conducted a Public Workshop on September 19, 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "d002-mta-nyct",
+        "local_observation_id": "entity_125th_st_mta_nyct",
+        "decision": "new",
+        "rationale": "Observation resolves to base_record_id entity_mta-nyct, which matches the existing registry record entity_mta-nyct (same entity_name 'MTA New York City Transit', same entity_type 'agency'). No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_19_125th_st_sbs_public_workshop_summary",
+            "block_id": "p002_c0005",
+            "source_quote": "The New York City Department of Transportation (DOT) and MTA New York City Transit (NYCT) conducted a Public Workshop on September 19, 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "d003-hsh",
+        "local_observation_id": "entity_125th_st_hsh",
+        "decision": "new",
+        "rationale": "Observation resolves to base_record_id entity_hsh-20100921-cac, which matches the existing registry record (alias entity_125th-st-hsh, same entity_name 'Howard/Stein-Hudson Associates', same entity_type 'consulting firm'). No different record to link to.",
+        "proposed_relations": [
+          {
+            "relation_kind": "contracted_by",
+            "subject_id": "entity_hsh-20100921-cac",
+            "object_id": "entity_nyc-dot",
+            "description": "Howard/Stein-Hudson Associates prepared the workshop summary document for NYC DOT.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_09_19_125th_st_sbs_public_workshop_summary",
+                "block_id": "p001_c0007",
+                "source_quote": "Prepared by: Howard/Stein-Hudson Associates, Inc."
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_19_125th_st_sbs_public_workshop_summary",
+            "block_id": "p001_c0007",
+            "source_quote": "Howard/Stein-Hudson Associates, Inc."
+          }
+        ]
+      },
+      {
+        "decision_id": "d004-scott-stringer",
+        "local_observation_id": "entity_125th_st_manhattan_borough_president",
+        "decision": "new",
+        "rationale": "Observation resolves to base_record_id entity_scott-stringer-201111, which matches the existing registry record (alias entity_125th-st-manhattan-borough-president, same entity_name 'Scott Stringer', same entity_type 'person'). No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_19_125th_st_sbs_public_workshop_summary",
+            "block_id": "p002_c0009",
+            "source_quote": "Manhattan Borough President Scott Stringer"
+          }
+        ]
+      },
+      {
+        "decision_id": "d005-cb9",
+        "local_observation_id": "entity_125th_st_cb9_manhattan",
+        "decision": "new",
+        "rationale": "Observation resolves to base_record_id entity_community-board-9-manhattan, which matches the existing registry record (alias entity_125th-st-cb9-manhattan, same entity_name 'Community Board 9, Manhattan', same entity_type 'community board'). No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_19_125th_st_sbs_public_workshop_summary",
+            "block_id": "p002_c0009",
+            "source_quote": "Manhattan Community Board 9"
+          }
+        ]
+      },
+      {
+        "decision_id": "d006-cb10",
+        "local_observation_id": "entity_125th_st_cb10_manhattan",
+        "decision": "new",
+        "rationale": "Observation resolves to base_record_id entity_community-board-10-manhattan, which matches the existing registry record (alias entity_125th-st-cb10-manhattan, same entity_name 'Manhattan Community Board 10', same entity_type 'community_board'). No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_19_125th_st_sbs_public_workshop_summary",
+            "block_id": "p002_c0009",
+            "source_quote": "Manhattan Community Board 10"
+          }
+        ]
+      },
+      {
+        "decision_id": "d007-cb11",
+        "local_observation_id": "entity_125th_st_cb11_manhattan",
+        "decision": "new",
+        "rationale": "Observation resolves to base_record_id entity_community-board-11-manhattan, which matches the existing registry record (alias entity_125th-st-cb11-manhattan, same entity_name 'Community Board 11, Manhattan', same entity_type 'community board'). No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_19_125th_st_sbs_public_workshop_summary",
+            "block_id": "p002_c0009",
+            "source_quote": "Manhattan Community Board 11"
+          }
+        ]
+      },
+      {
+        "decision_id": "d008-janette-sadik-khan",
+        "local_observation_id": "entity_125th_st_janette_sadik_khan",
+        "decision": "new",
+        "rationale": "Observation resolves to base_record_id entity_janette-sadik-khan-2009, which matches the existing registry record (alias entity_125th-st-janette-sadik-khan, same entity_name 'Janette Sadik-Khan', same entity_type 'person'). No different record to link to.",
+        "proposed_relations": [
+          {
+            "relation_kind": "part_of",
+            "subject_id": "entity_janette-sadik-khan-2009",
+            "object_id": "entity_nyc-dot",
+            "description": "Janette Sadik-Khan is the Commissioner of NYC DOT.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_09_19_125th_st_sbs_public_workshop_summary",
+                "block_id": "p002_c0003",
+                "source_quote": "JANETTE SADIK-KHAN, Commissioner"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_19_125th_st_sbs_public_workshop_summary",
+            "block_id": "p002_c0003",
+            "source_quote": "JANETTE SADIK-KHAN, Commissioner"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-48-16-633Z_2111393-035244d4_canonicalize_2026-06-10t23-03-20-805z-1976810-5b1cc97e-ingest-2012-09-19-125th-st-sbs-public-workshop-summary-entity-identity"
+}

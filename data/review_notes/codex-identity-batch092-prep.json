@@ -1,0 +1,470 @@
+{
+  "batch_id": "identity092",
+  "prepared_count": 8,
+  "all_pass": true,
+  "proposed_aliases": [
+    {
+      "kind": "project",
+      "alias_id": "project_34th-st-transitway-phase1",
+      "target_id": "project_34th-st-transitway-phase1-2009",
+      "reason": "Both project records identify the same planned BRT Phase I 34th Street Transitway. They share the exact project name, planned document-time status, transitway project type, and matching table evidence listing 'C 34th Street Transitway - 2012 implementation' in the BRT Phase I Program.",
+      "evidence": [
+        {
+          "record_id": "project_34th-st-transitway-phase1",
+          "display_name": "34th Street Transitway",
+          "project_name": "34th Street Transitway",
+          "project_type": "transitway",
+          "document_time_status": "planned",
+          "status": "planned",
+          "source_ids": [
+            "brt_phase2_future_corridors_rpt"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_phase2_future_corridors_rpt",
+              "block_id": "p004_c0002",
+              "evidence_id": "brt_phase2_future_corridors_rpt#p004_c0002",
+              "page_number": 4,
+              "source_quote": "BRT Phase I Program ... C 34th Street Transitway - 2012 implementation"
+            }
+          ]
+        },
+        {
+          "record_id": "project_34th-st-transitway-phase1-2009",
+          "display_name": "34th Street Transitway",
+          "project_name": "34th Street Transitway",
+          "project_type": "Transitway",
+          "document_time_status": "planned",
+          "status": "planned",
+          "source_ids": [
+            "brt_future_corridors"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_future_corridors",
+              "block_id": "p004_c0002",
+              "evidence_id": "brt_future_corridors#p004_c0002",
+              "page_number": 4,
+              "source_quote": "BRT Phase I Program ... C 34th Street Transitway - 2012 implementation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_meeting-doc-104796-ada-p3",
+      "target_id": "project_ada-p3-accessibility",
+      "reason": "Both records identify the ADA P3 Accessibility Project. The alias-side board discussion explicitly describes the ADA P3 project for elevators at 13 stations, while the target-side record describes the same P3 accessibility upgrade project at thirteen stations using a capital/P3 funding structure.",
+      "evidence": [
+        {
+          "record_id": "project_meeting-doc-104796-ada-p3",
+          "display_name": "ADA P3 Accessibility Project",
+          "project_name": "ADA P3 Accessibility Project",
+          "project_type": "accessibility",
+          "source_ids": [
+            "meeting_doc_104796"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_104796",
+              "block_id": "p007_c0011",
+              "evidence_id": "meeting_doc_104796#p007_c0011",
+              "page_number": 7,
+              "source_quote": "Authorization for Subordinated Contract Obligation for the ADA P3 Project"
+            },
+            {
+              "source_id": "meeting_doc_104796",
+              "block_id": "p008_c0001",
+              "evidence_id": "meeting_doc_104796#p008_c0001",
+              "page_number": 8,
+              "source_quote": "ADA P3 Project for the 35 elevators at 13 stations"
+            }
+          ]
+        },
+        {
+          "record_id": "project_ada-p3-accessibility",
+          "display_name": "ADA P3 Accessibility Project",
+          "project_name": "ADA P3 Accessibility Project",
+          "project_type": "capital project",
+          "project_family": "capital_or_infrastructure",
+          "document_time_status": "other",
+          "status": "approved",
+          "source_ids": [
+            "meeting_doc_102786"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_102786",
+              "block_id": "p033_c0007",
+              "evidence_id": "meeting_doc_102786#p033_c0007",
+              "page_number": 33,
+              "source_quote": "design, construction, financing and maintenance of ADA accessibility upgrades at thirteen stations throughout New York City"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_149-st-grand-concourse-tremont-ada",
+      "target_id": "project_ada-149th-tremont",
+      "reason": "Both records describe the same Bronx ADA upgrades at the 149 St-Grand Concourse complex and Tremont Av. The target gives the under-construction design-build scope; the alias gives the same station set and later 85% complete status, which is a source-time status update rather than a different project.",
+      "evidence": [
+        {
+          "record_id": "project_149-st-grand-concourse-tremont-ada",
+          "display_name": "ADA Upgrades at 149 St-Grand Concourse and Tremont Av",
+          "project_name": "ADA Upgrades at 149 St-Grand Concourse and Tremont Av",
+          "borough": "Bronx",
+          "document_time_status": "other",
+          "status": "85% complete",
+          "source_ids": [
+            "meeting_doc_155071"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_155071",
+              "block_id": "p009_c0003",
+              "evidence_id": "meeting_doc_155071#p009_c0003",
+              "page_number": 9,
+              "source_quote": "ADA accessibility to three underground subway stations in the Bronx: the 149 St-Grand Concourse complex ... and Tremont Av"
+            },
+            {
+              "source_id": "meeting_doc_155071",
+              "block_id": "p009_c0005",
+              "evidence_id": "meeting_doc_155071#p009_c0005",
+              "page_number": 9,
+              "source_quote": "The project is approximately 85% complete."
+            }
+          ]
+        },
+        {
+          "record_id": "project_ada-149th-tremont",
+          "display_name": "ADA Upgrades at 149 St-Grand Concourse and Tremont Av",
+          "project_name": "ADA Upgrades at 149 St-Grand Concourse and Tremont Av",
+          "project_type": "design-build",
+          "document_time_status": "under_construction",
+          "status": "Under construction",
+          "source_ids": [
+            "meeting_doc_121021"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_121021",
+              "block_id": "p011_c0001",
+              "evidence_id": "meeting_doc_121021#p011_c0001",
+              "page_number": 11,
+              "source_quote": "ADA Upgrades at 149 St-Grand Concourse and Tremont Av"
+            },
+            {
+              "source_id": "meeting_doc_121021",
+              "block_id": "p011_c0005..p011_c0006",
+              "evidence_id": "meeting_doc_121021#p011_c0005..p011_c0006",
+              "page_number": 11,
+              "source_quote": "project_status_and_scope"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_anchorage-piers-rehab-vn",
+      "target_id": "project_vn10-anchorage-piers-rehab",
+      "reason": "Both records identify VN-10/D701VN10 Anchorage & Piers Rehabilitation and Sealing. The alias-side record is an 82% complete May 2021 snapshot; the target-side record is the completed April 2021/May 2021 project row, so the difference is source-time completion status only.",
+      "evidence": [
+        {
+          "record_id": "project_anchorage-piers-rehab-vn",
+          "display_name": "VN-10 Anchorage & Piers Rehabilitation and Sealing",
+          "project_name": "Anchorage & Piers Rehabilitation and Sealing",
+          "project_type": "Capital project completion",
+          "project_family": "capital_or_infrastructure",
+          "document_time_status": "other",
+          "status": "82% complete, completing May 2021",
+          "source_ids": [
+            "meeting_doc_33241"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_33241",
+              "block_id": "p051_c0003",
+              "evidence_id": "meeting_doc_33241#p051_c0003",
+              "page_number": 51,
+              "source_quote": "VN-10 D701VN10 Anchorage & Piers Rehabilitation and Sealing $49.0 $49.0 82"
+            }
+          ]
+        },
+        {
+          "record_id": "project_vn10-anchorage-piers-rehab",
+          "display_name": "VN-10 Anchorage & Piers Rehabilitation and Sealing",
+          "project_name": "Anchorage & Piers Rehabilitation and Sealing",
+          "project_type": "capital project",
+          "project_family": "capital_or_infrastructure",
+          "document_time_status": "implemented",
+          "status": "completed",
+          "source_ids": [
+            "meeting_doc_52711"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_52711",
+              "block_id": "p085_c0003",
+              "evidence_id": "meeting_doc_52711#p085_c0003",
+              "page_number": 85,
+              "source_quote": "VN-10 D701VN10 Anchorage & Piers Rehabilitation and Sealing $49.0 $49.0 99"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_queens-blvd-capital-nov2024",
+      "target_id": "project_queens-blvd-capital-2024",
+      "reason": "Both records identify the Queens Boulevard Capital Project in Queens with pedestrian, bike, and bus improvements starting construction in Fall 2026. The source blocks have the same text; the only distinction is the November 2024 source capture versus the CB5 December 2024 source capture.",
+      "evidence": [
+        {
+          "record_id": "project_queens-blvd-capital-nov2024",
+          "display_name": "Queens Boulevard Capital Project",
+          "project_name": "Queens Boulevard Capital Project",
+          "borough": "Queens",
+          "project_type": "capital project",
+          "project_family": "capital_or_infrastructure",
+          "document_time_status": "planned",
+          "status": "planned",
+          "source_ids": [
+            "grand_ave_metropolitan_ave_queens_blvd_nov2024"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "grand_ave_metropolitan_ave_queens_blvd_nov2024",
+              "block_id": "p013_c0002",
+              "evidence_id": "grand_ave_metropolitan_ave_queens_blvd_nov2024#p013_c0002",
+              "page_number": 13,
+              "source_quote": "Queens Boulevard Capital Project - Pedestrian, bike, and bus improvements - Starting construction in Fall 2026"
+            }
+          ]
+        },
+        {
+          "record_id": "project_queens-blvd-capital-2024",
+          "display_name": "Queens Boulevard Capital Project",
+          "project_name": "Queens Boulevard Capital Project",
+          "borough": "Queens",
+          "project_type": "capital project",
+          "project_family": "capital_or_infrastructure",
+          "document_time_status": "planned",
+          "status": "planned",
+          "source_ids": [
+            "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024",
+              "block_id": "p013_c0002",
+              "evidence_id": "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024#p013_c0002",
+              "page_number": 13,
+              "source_quote": "Queens Boulevard Capital Project - Pedestrian, bike, and bus improvements - Starting construction in Fall 2026"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_queens-blvd-capital-project-nov2024",
+      "target_id": "project_queens-blvd-capital-2024",
+      "reason": "Both records identify the same Queens Boulevard Capital Project in Queens. The alias-side CB4 November 2024 and target-side CB5 December 2024 records cite the same project-name and scope sentence: pedestrian, bike, and bus improvements starting construction in Fall 2026.",
+      "evidence": [
+        {
+          "record_id": "project_queens-blvd-capital-project-nov2024",
+          "display_name": "Queens Boulevard Capital Project",
+          "project_name": "Queens Boulevard Capital Project",
+          "borough": "Queens",
+          "project_type": "capital project",
+          "project_family": "capital_or_infrastructure",
+          "document_time_status": "planned",
+          "status": "planned",
+          "source_ids": [
+            "grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024",
+              "block_id": "p013_c0002",
+              "evidence_id": "grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024#p013_c0002",
+              "page_number": 13,
+              "source_quote": "Queens Boulevard Capital Project - Pedestrian, bike, and bus improvements - Starting construction in Fall 2026"
+            }
+          ]
+        },
+        {
+          "record_id": "project_queens-blvd-capital-2024",
+          "display_name": "Queens Boulevard Capital Project",
+          "project_name": "Queens Boulevard Capital Project",
+          "borough": "Queens",
+          "project_type": "capital project",
+          "project_family": "capital_or_infrastructure",
+          "document_time_status": "planned",
+          "status": "planned",
+          "source_ids": [
+            "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024",
+              "block_id": "p013_c0002",
+              "evidence_id": "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024#p013_c0002",
+              "page_number": 13,
+              "source_quote": "Queens Boulevard Capital Project - Pedestrian, bike, and bus improvements - Starting construction in Fall 2026"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_meeting-doc-199481-queens-interlocking",
+      "target_id": "project_cpc-queens-interlocking-202602",
+      "reason": "Both records identify the Queens Interlocking modernization project. They share the same active status and the same block text describing Queens Interlocking as a major junction operating 333 trains daily and joining the Hempstead Branch to the Main Line.",
+      "evidence": [
+        {
+          "record_id": "project_meeting-doc-199481-queens-interlocking",
+          "display_name": "Queens Interlocking Modernization",
+          "project_name": "Queens Interlocking Modernization",
+          "project_type": "infrastructure modernization",
+          "project_family": "capital_or_infrastructure",
+          "document_time_status": "active",
+          "status": "active",
+          "source_ids": [
+            "meeting_doc_199481"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_199481",
+              "block_id": "p008_c0004",
+              "evidence_id": "meeting_doc_199481#p008_c0004",
+              "page_number": 8,
+              "source_quote": "Queens Interlocking modernization project. Queens Interlocking is a major junction point that operates 333 trains daily"
+            }
+          ]
+        },
+        {
+          "record_id": "project_cpc-queens-interlocking-202602",
+          "display_name": "Queens Interlocking modernization",
+          "project_name": "Queens Interlocking modernization",
+          "project_type": "modernization",
+          "project_family": "other",
+          "document_time_status": "active",
+          "status": "active",
+          "source_ids": [
+            "meeting_doc_198991"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_198991",
+              "block_id": "p009_c0004",
+              "evidence_id": "meeting_doc_198991#p009_c0004",
+              "page_number": 9,
+              "source_quote": "Queens Interlocking modernization project. Queens Interlocking is a major junction point that operates 333 trains daily"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_bay-pkwy-cropsey-bus-priority-safety",
+      "target_id": "project_bay-parkway-cropsey-avenue-brooklyn",
+      "reason": "Both records identify the same Bay Parkway and Cropsey Avenue Bus Priority and Safety Improvements project in Brooklyn. The alias-side draft proposal title matches a target-side source title, and both records describe the same Bay Parkway and Cropsey Avenue limits; the draft/proposed status difference is source-time status.",
+      "evidence": [
+        {
+          "record_id": "project_bay-pkwy-cropsey-bus-priority-safety",
+          "display_name": "Bay Parkway and Cropsey Avenue Bus Priority and Safety Improvements",
+          "project_name": "Bay Parkway and Cropsey Avenue Bus Priority and Safety Improvements",
+          "borough": "Brooklyn",
+          "project_type": "Draft Proposal",
+          "document_time_status": "other",
+          "status": "Draft Proposal",
+          "source_ids": [
+            "bay_pkwy_cropsey_ave_cb11_jun2025"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "bay_pkwy_cropsey_ave_cb11_jun2025",
+              "block_id": "p001_c0001",
+              "evidence_id": "bay_pkwy_cropsey_ave_cb11_jun2025#p001_c0001",
+              "page_number": 1,
+              "source_quote": "Bay Parkway and Cropsey Avenue Bus Priority and Safety Improvements Draft Proposal"
+            }
+          ]
+        },
+        {
+          "record_id": "project_bay-parkway-cropsey-avenue-brooklyn",
+          "display_name": "Bay Parkway and Cropsey Avenue Bus Priority and Safety Improvements, Brooklyn",
+          "project_name": "Bay Parkway and Cropsey Avenue Bus Priority and Safety Improvements",
+          "borough": "Brooklyn",
+          "project_type": "bus priority and safety improvements",
+          "project_family": "bus_priority",
+          "document_time_status": "planned",
+          "status": "proposed",
+          "source_ids": [
+            "bay_pkwy_cropsey_ave_cb12_jun2025",
+            "bay_pkwy_cropsey_ave_jan2025",
+            "bay_pkwy_cropsey_ave_nov2024",
+            "better_buses"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "bay_pkwy_cropsey_ave_cb12_jun2025",
+              "block_id": "p001_c0001",
+              "evidence_id": "bay_pkwy_cropsey_ave_cb12_jun2025#p001_c0001",
+              "page_number": 1,
+              "source_quote": "Bay Parkway and Cropsey Avenue Bus Priority and Safety Improvements Draft Proposal"
+            },
+            {
+              "source_id": "bay_pkwy_cropsey_ave_jan2025",
+              "block_id": "p004_c0002",
+              "evidence_id": "bay_pkwy_cropsey_ave_jan2025#p004_c0002",
+              "page_number": 4,
+              "source_quote": "Bay Parkway from Avenue J to Shore Parkway ... Cropsey Avenue from Bay Parkway to 26th Avenue"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guard_checks": {
+    "scope": "project records only",
+    "local_only": true,
+    "checked_against": [
+      "data/identity-overrides/merges.json .aliases.project",
+      "data/canonical.db identity_aliases where kind = 'project'",
+      "data/canonical.db do_not_merge where kind = 'project'",
+      "data/review_notes/codex-identity-batch0*-prep.json with batch_id <= identity090"
+    ],
+    "alias_ids_checked": [
+      "project_34th-st-transitway-phase1",
+      "project_meeting-doc-104796-ada-p3",
+      "project_149-st-grand-concourse-tremont-ada",
+      "project_anchorage-piers-rehab-vn",
+      "project_queens-blvd-capital-nov2024",
+      "project_queens-blvd-capital-project-nov2024",
+      "project_meeting-doc-199481-queens-interlocking",
+      "project_bay-pkwy-cropsey-bus-priority-safety"
+    ],
+    "target_ids_checked": [
+      "project_34th-st-transitway-phase1-2009",
+      "project_ada-p3-accessibility",
+      "project_ada-149th-tremont",
+      "project_vn10-anchorage-piers-rehab",
+      "project_queens-blvd-capital-2024",
+      "project_cpc-queens-interlocking-202602",
+      "project_bay-parkway-cropsey-avenue-brooklyn"
+    ],
+    "existing_merge_hits": [],
+    "identity_alias_hits": [],
+    "do_not_merge_hits": [],
+    "prior_prep_hits_through_identity090": [],
+    "prohibited_commands_run": []
+  }
+}

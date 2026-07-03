@@ -1,0 +1,21 @@
+{
+  "run_id": "2026-06-10T23-26-35-030Z_1976810-390ad93f_ingest_2014-11-05-brt-woodhavenblvd-pw3-workshopsummary",
+  "generated_at": "2026-06-11T05:55:05.867Z",
+  "dry_run": false,
+  "wrote": true,
+  "decision_count": 0,
+  "reviewed_count": 0,
+  "alias_additions": [],
+  "aliases_already_present": [],
+  "do_not_merge_additions": [],
+  "relation_submissions": 0,
+  "quarantined": 0,
+  "conflicts": [],
+  "paths": {
+    "merges": "data/identity-overrides/merges.json",
+    "do_not_merge": "data/identity-overrides/do-not-merge.json",
+    "relation_submissions_jsonl": "data/submissions/2026-06-10T23-26-35-030Z_1976810-390ad93f_ingest_2014-11-05-brt-woodhavenblvd-pw3-workshopsummary_canonicalize.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-26-35-030Z_1976810-390ad93f_ingest_2014-11-05-brt-woodhavenblvd-pw3-workshopsummary/apply-quarantine.jsonl",
+    "apply_report": "data/canonicalize/2026-06-10T23-26-35-030Z_1976810-390ad93f_ingest_2014-11-05-brt-woodhavenblvd-pw3-workshopsummary/apply-report.json"
+  }
+}

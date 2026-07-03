@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "entity_cluster_6496a89f51",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_6496a89f51.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_6496a89f51.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "quarantined",
+  "quarantine": {
+    "blocker": "do_not_merge entity_meeting-doc-113891-pcac <> entity_permanent-citizens-advisory-committee-pcac: record entity_permanent-citizens-advisory-committee-pcac is not in the current canonical corpus"
+  },
+  "original_merge_groups": [],
+  "original_do_not_merge": [
+    {
+      "record_ids": [
+        "entity_meeting-doc-113891-pcac",
+        "entity_permanent-citizens-advisory-committee-pcac"
+      ],
+      "reason": "Contradicting strong identity field entity_type: first record is 'advisory committee', second is 'agency'. Per Identity Merge Canon Contradiction test, if any strong identity field differs (entity_type), the records are distinct regardless of name similarity."
+    }
+  ]
+}

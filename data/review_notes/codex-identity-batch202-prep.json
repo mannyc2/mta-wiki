@@ -1,0 +1,379 @@
+{
+  "note_id": "codex-identity-batch202-prep",
+  "created_at": "2026-06-23T11:31:22Z",
+  "scope": {
+    "global_kind": "entity",
+    "operation": "prepare_alias_cleanup_only",
+    "checkpoint": "after identity199-dnm200-201",
+    "selection_note": "Codex-only entity alias cleanup from the current 338 unsuppressed entity duplicate_global_identity rows reproduced with the deterministic identityKeysForRecord scan. No provider-backed commands, materialize, validate, write, ask, canonicalize, identity-review, schema, or ontology commands were run.",
+    "write_limit": "Exactly one artifact was written: data/review_notes/codex-identity-batch202-prep.json. No merges.json, do-not-merge.json, canonical JSONL, DB, LOG.md, manifest, wiki, submissions, or retired overrides were edited."
+  },
+  "prepared_count": 12,
+  "proposed_aliases": [
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_blanca-lopez-166966",
+      "target_id": "entity_board-member-blanca-lopez-20231218",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_blanca-lopez-166966 and entity_board-member-blanca-lopez-20231218 share identity key entity_blanca-lopez.",
+        "duplicate_global_identity equivalent: Global entity records entity_blanca-lopez-166966 and entity_board-member-blanca-lopez-20231218 share identity key entity_hon-blanca-lopez-diversity-committee-chair."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Blanca Lopez, Co-Chair, Joint LIRR & Metro-North Committee', entity_name 'Blanca Lopez', entity_type 'person', with evidence meeting_doc_166926#p034_c0006 naming Blanca Lopez as Co-Chair.",
+        "Target canonical record: display_name 'B. Lopez', merged entity_name values include 'Blanca Lopez' and 'Hon. Blanca Lopez', entity_type 'person', with evidence meeting_doc_131506#p001_c0003 and related board-member records."
+      ],
+      "reason": "Exact MTA board member/person identity; the alias and target both preserve Blanca Lopez/Hon. Blanca Lopez with matching board and committee-chair context.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Exact person name and role context; not a broad agency, committee, or community-board alias."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-143146-blanca-lopez",
+      "target_id": "entity_board-member-blanca-lopez-20231218",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-143146-blanca-lopez and entity_board-member-blanca-lopez-20231218 share identity key entity_hon-blanca-lopez."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'entity_meeting_doc_143146_blanca_lopez', entity_name 'Hon. Blanca Lopez', entity_type 'person', evidence meeting_doc_143146#p003_c0007 says Chair Blanca Lopez called the April 2024 Diversity Committee to order.",
+        "Target canonical record: display_name 'B. Lopez', merged entity_name values include 'Blanca Lopez' and 'Hon. Blanca Lopez', with role/title values for Diversity Committee Chair and LIRR/MNR committee co-chair."
+      ],
+      "reason": "Exact person identity; this single-source Hon. Blanca Lopez extraction belongs under the existing multi-source Blanca Lopez board-member root.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Exact person name and committee-chair context; not a broad agency or community-board alias."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_david-keller-meeting-doc-102711",
+      "target_id": "entity_david-keller-meeting-doc-68311",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_david-keller-meeting-doc-102711 and entity_david-keller-meeting-doc-68311 share identity key entity_david-e-keller."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'David Keller', merged entity_name values include 'David Keller' and 'David E. Keller', entity_type 'person', with budget/OMB project-manager evidence across multiple meeting documents.",
+        "Target canonical record: display_name 'David E. Keller, Project Manager', entity_name 'David E. Keller', entity_type 'person', evidence meeting_doc_68311#p005_c0003 names Project Manager/Division Head David E. Keller."
+      ],
+      "reason": "Exact person identity; the target carries the middle initial and project-manager surface, while the alias already shares the David E. Keller identity key.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Exact person name with middle-initial and finance/OMB project-manager context."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_jai-patel-201601",
+      "target_id": "entity_jai-patel-deputy-cfo-mta-138446",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_jai-patel-201601 and entity_jai-patel-deputy-cfo-mta-138446 share identity key entity_jai-patel."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Jai Patel, Chief Financial Officer MTA', entity_name 'Jai Patel', entity_type 'person', evidence meeting_doc_201601#p001_c0010 names Jai Patel, Chief Financial Officer.",
+        "Target canonical record: display_name 'Jai Patel, Deputy Chief Financial Officer', entity_name 'Jai Patel', entity_type 'person', with merged title values including Deputy Chief Financial Officer and Chief Financial Officer; evidence meeting_doc_146976#p002_c0006 names Deputy Chief Financial Officer Jai Patel."
+      ],
+      "reason": "Exact person identity for Jai Patel in MTA finance leadership; title differences are lifecycle/role changes, not separate people.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Exact person name with matching MTA finance context."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_170871-joyce-brown",
+      "target_id": "entity_joyce-brown-eeo-officer",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_170871-joyce-brown and entity_joyce-brown-eeo-officer share identity key entity_joyce-brown."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Joyce Brown', entity_name 'Joyce Brown', entity_type 'person', evidence meeting_doc_113966#p044_c0004 names Joyce Brown, Chief Equal Opportunity Officer, MTA Bridges and Tunnels.",
+        "Target canonical record: display_name 'Joyce Brown, Agency Chief Equal Opportunity Officer', entity_name 'Joyce Brown', entity_type 'person', evidence meeting_doc_128981#p004_c0007 names Joyce Brown, Agency Chief Equal Opportunity Officer."
+      ],
+      "reason": "Exact person identity with the same chief equal opportunity officer role and MTA Bridges and Tunnels context.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Exact person name and role; not an agency-name collision."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_craig-cipriano-dec2021",
+      "target_id": "entity_meeting-doc-105931-craig-cipriano",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_craig-cipriano-dec2021 and entity_meeting-doc-105931-craig-cipriano share identity key entity_craig-cipriano.",
+        "duplicate_global_identity equivalent: Global entity records entity_craig-cipriano-dec2021 and entity_meeting-doc-105931-craig-cipriano share identity key entity_craig-cipriano-interim-president-nyct."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Craig Cipriano', entity_name 'Craig Cipriano', entity_type 'person', with title values including President, MTA Bus Company / Senior Vice President, NYCT Department of Buses and Interim President, NYCT.",
+        "Target canonical record: display_name 'Craig Cipriano, Chief Operating Officer, NYCT', entity_name 'Craig Cipriano', entity_type 'person', evidence meeting_doc_105931#p001_c0010 names Craig Cipriano, Chief Operating Officer, NYCT, and merged values include Interim President, NYCT."
+      ],
+      "reason": "Exact person identity; both records refer to Craig Cipriano in NYCT/MTA Bus leadership roles across time.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Exact person name with matching NYCT/MTA Bus leadership context."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-113891-rob-free",
+      "target_id": "entity_meeting-doc-129041-robert-free",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-113891-rob-free and entity_meeting-doc-129041-robert-free share identity key entity_rob-free.",
+        "duplicate_global_identity equivalent: the same pair shares LIRR president identity keys including entity_rob-free-president-lirr and entity_robert-free-president-lirr."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Rob Free', entity_name 'Rob Free', entity_type 'person', evidence meeting_doc_113891#p001_c0010 names Rob Free as Senior Vice President, Operations.",
+        "Target canonical record: display_name 'Robert Free, President, Long Island Rail Road', merged entity_name values include 'Robert Free' and 'Rob Free', entity_type 'person', evidence meeting_doc_129041#p001_c0009 names Robert Free in LIRR president context."
+      ],
+      "reason": "Exact person identity; Rob Free and Robert Free are merged name variants for the same LIRR operations/president official.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Exact person name variant with matching LIRR leadership context."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_lamond-kearse-meeting-doc-173841",
+      "target_id": "entity_meeting-doc-190056-lamond-kearse",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_lamond-kearse-meeting-doc-173841 and entity_meeting-doc-190056-lamond-kearse share identity key entity_lamond-w-kearse."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Lamond W. Kearse', entity_name 'Lamond W. Kearse', entity_type 'person', evidence meeting_doc_135256#p004_c0013 names Lamond W. Kearse, MTA Chief Compliance Officer.",
+        "Target canonical record: display_name 'Lamond Kearse - MTA Chief Compliance Officer', merged entity_name values include 'Lamond Kearse' and 'Lamond W. Kearse', entity_type 'person', evidence meeting_doc_105876#p006_c0006 names the Chief Compliance Officer as Lamond Kearse."
+      ],
+      "reason": "Exact person identity; middle initial and title variants point to the same MTA Chief Compliance Officer.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Exact person name with matching chief compliance officer context."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-33876-patrick-mccoy",
+      "target_id": "entity_meeting-doc-37086-patrick-mccoy",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-33876-patrick-mccoy and entity_meeting-doc-37086-patrick-mccoy share identity key entity_patrick-j-mccoy."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Patrick J. McCoy', entity_name 'Patrick J. McCoy', entity_type 'person', evidence meeting_doc_98451#p155_c0003 names Patrick J. McCoy, Deputy Chief, Financial Services.",
+        "Target canonical record: display_name 'Patrick J. McCoy, Deputy Chief, Financial Services, MTA', entity_name 'Patrick J. McCoy', entity_type 'person', evidence meeting_doc_37086#p020_c0003 names Patrick J. McCoy, Deputy Chief, Financial Services."
+      ],
+      "reason": "Exact person identity with matching middle initial and MTA Finance Department title.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Exact person name and finance title context."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-190056-jim-mcgovern",
+      "target_id": "entity_meeting-doc-98211-jim-mcgovern",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-190056-jim-mcgovern and entity_meeting-doc-98211-jim-mcgovern share identity key entity_jim-mcgovern."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Jim McGovern, MTA Deputy Comptroller', entity_name 'Jim McGovern', entity_type 'person', evidence meeting_doc_190056#p005_c0003 names Jim McGovern as MTA Deputy Comptroller.",
+        "Target canonical record: display_name 'Jim McGovern', entity_name 'Jim McGovern', entity_type 'person', title 'Deputy Comptroller', evidence meeting_doc_98211#p003_c0020 names Jim McGovern (MTA Deputy Comptroller)."
+      ],
+      "reason": "Exact person identity; both records name Jim McGovern with the same MTA Deputy Comptroller role.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Exact person name and deputy comptroller context."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-121156-omar-messado",
+      "target_id": "entity_meeting155126-omar-messado",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-121156-omar-messado and entity_meeting155126-omar-messado share identity key entity_omar-messado."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Omar Messado', entity_name 'Omar Messado', entity_type 'person', evidence meeting_doc_121156#p001_c0003 names Omar Messado, Acting Assistant Deputy Chief Procurement Officer.",
+        "Target canonical record: display_name 'Omar Messado', entity_name 'Omar Messado', entity_type 'person', title 'Acting Assistant Deputy Chief Procurement Officer - MTA Office of the Chief Procurement Officer', evidence meeting_doc_111756#p001_c0003 names the same title and office."
+      ],
+      "reason": "Exact person identity with the same MTA Office of the Chief Procurement Officer role.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Exact person name and procurement officer context."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_richard-hildebrand-44201",
+      "target_id": "entity_richard-hildebrand",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_richard-hildebrand and entity_richard-hildebrand-44201 share identity key entity_richard-hildebrand."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Richard Hildebrand', entity_name 'Richard Hildebrand', entity_type 'person', evidence meeting_doc_102771#p004_c0007 names Richard Hildebrand, Vice President and Chief of Operations.",
+        "Target canonical record: display_name 'Richard Hildebrand, Vice President and Chief of Operations', entity_name 'Richard Hildebrand', entity_type 'person', with MTA Bridges and Tunnels/TBTA organization context and evidence meeting_doc_100256#p004_c0007 naming the same title."
+      ],
+      "reason": "Exact person identity with matching TBTA/MTA Bridges and Tunnels operations title.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Exact person name and operations title context."
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "global_kind": "entity",
+      "reason": "Deferred community-board and CB-number collisions, including cross-borough Community Board 1/4/5/6/7/8/9/10/11/12/14 rows. These require explicit borough and board scope review before aliasing.",
+      "confidence": "low"
+    },
+    {
+      "global_kind": "entity",
+      "reason": "Deferred broad Community Advisory Committee/CAC rows because the same generic committee label appears across different corridor and project contexts.",
+      "confidence": "low"
+    },
+    {
+      "global_kind": "entity",
+      "reason": "Deferred broad agency, authority, committee, department, and board collisions such as MTA, NYCT, LIRR, Metro-North, MTA Bridges and Tunnels, MTA Board, Finance Committee, and department-level rows. Several appear to mix parent agencies, committees, work plans, and person-role aliases.",
+      "confidence": "low"
+    },
+    {
+      "global_kind": "entity",
+      "reason": "Deferred initial-only or weak-name person rows such as P. Dietlin, H. Mihaltses, J. Lieber, M. Herbst, L. Lacewell, F. Borelli, and R. Free where initials alone are not sufficient for this high-confidence batch.",
+      "confidence": "low"
+    },
+    {
+      "global_kind": "entity",
+      "reason": "Deferred organization-name rows where the shared key may collapse distinct legal subsidiaries or branded families, such as Siemens/Siemens Mobility/Siemens Industry and similar vendor-family surfaces.",
+      "confidence": "low"
+    },
+    {
+      "global_kind": "entity",
+      "reason": "Deferred polluted or contradictory rows where the shared identity key appears attached to the wrong record, including person-to-agency collisions and records like Catherine Rinaldi versus Richard Davey or John Mueller keys on MTAPD records.",
+      "confidence": "low"
+    }
+  ],
+  "blockers": [],
+  "deterministic_inspection": {
+    "commands": [
+      "git status --short",
+      "jq inspection of data/review_notes/codex-identity-batch199-prep.json, data/review_notes/codex-identity-dnm-batch200-prep.json, and data/review_notes/codex-identity-dnm-batch201-prep.json",
+      "jq read-only inspection of data/identity-overrides/merges.json and data/identity-overrides/do-not-merge.json",
+      "bun -e read-only import of identityKeysForRecord and identityDoNotMergeSuppressed over data/canonical/entities.jsonl, without calling validateRepo",
+      "node read-only guard checks for selected pairs against current canonical entities, merge roots, and do-not-merge pairs",
+      "node read-only canonical record and raw source block evidence inspection"
+    ],
+    "scan_summary": {
+      "entity_records_scanned": 2003,
+      "raw_entity_duplicate_identity_rows": 341,
+      "unsuppressed_direct_entity_duplicate_identity_rows": 338,
+      "selected_alias_count": 12,
+      "provider_backed_commands_run": false,
+      "validate_or_materialize_run": false
+    },
+    "guard_summary": {
+      "all_global_kind_entity": true,
+      "all_aliases_present": true,
+      "all_targets_present": true,
+      "all_aliases_not_already_mapped": true,
+      "all_targets_not_aliases_or_non_roots": true,
+      "all_pairs_non_cyclic": true,
+      "all_pairs_absent_from_direct_do_not_merge": true,
+      "all_pairs_absent_from_resolved_do_not_merge": true,
+      "all_pairs_current_duplicate_global_identity_equivalent": true
+    }
+  }
+}

@@ -1,0 +1,216 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-167246"
+record_kind: "source"
+display_name: "Transit All-Stars, March 2025"
+source_id: "meeting_doc_167246"
+source_ids:
+  - "meeting_doc_167246"
+local_observation_id: "source_meeting_doc_167246"
+local_observation_ids:
+  - "source_meeting_doc_167246"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T17:07:54.410Z"
+raw_text: "TRANSIT ALL-STARS - Recognizing our Employees. March 2025 Honorees. Our teams across NYCT continue to do incredible things, collectively working towards improving service and security. Transit All-Stars is an employee recognition program that celebrates high performers who are also on-target to meet or exceed annual NYCT's service and safety goals."
+submission_ids:
+  - "sub_ad00af5f65019eae"
+payload:
+  content_type: "employee recognition publication"
+  date_text: "March 2025"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2025-03"
+    precision: "month"
+    raw_text: "March 2025"
+  description: "Quarterly employee recognition program showcasing NYCT employees for their contributions to service and safety."
+  published_date_normalized: "2025-03"
+  published_date_precision: "month"
+  publisher: "MTA"
+  title: "TRANSIT ALL-STARS"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_167246#p001_c0001"
+    page_number: 1
+    role: "title_block"
+    source_id: "meeting_doc_167246"
+    source_path: "raw/sources/meeting_doc_167246/blocks.jsonl"
+    text_sha256: "sha256:264fedc4bf83fd9ebf18713d7dd6d9dc4dfb45b375ba9d0ce80e8714830abda4"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_167246#p001_c0003"
+    page_number: 1
+    role: "description"
+    source_id: "meeting_doc_167246"
+    source_path: "raw/sources/meeting_doc_167246/blocks.jsonl"
+    text_sha256: "sha256:c8a28799aa4a871d358b7e4d8935f32f495fdd85fadf7dfcf24ec84f4d9de6f1"
+    text_source: "raw_text"
+---
+
+# Transit All-Stars, March 2025
+
+source_id: meeting_doc_167246
+citation: cite block ids exactly as shown in square brackets
+document: 130 block(s)
+
+## Page 1
+
+### [p001_c0001] TRANSIT ALL-STARS
+### [p001_c0002] Recognizing our Employees
+[p001_c0003] Our teams across NYCT continue to do incredible things, collectively working towards improving service and security. Transit All-Stars is an employee recognition program that celebrates high performers who are also on-target to meet or exceed annual NYCT's service and safety goals. This quarter we are showcasing some of our outstanding employees for their contributions.
+### [p001_c0004] March 2025 Honorees
+> [p001_c0005] A professional headshot of Hugo Navarro, a man with dark hair, wearing a dark suit, light blue shirt, and a patterned tie. He is smiling slightly and looking towards the camera. The background is a solid blue.
+### [p001_c0006] Hugo Navarro
+[p001_c0007] Superintendent Department of Subways
+[p001_c0008] Hugo played a pivotal role in establishing the MOW Situation Room at Livingston Plaza, which was specifically designed to manage major subway incidents and inclement weather events.
+[p001_c0009] His efforts were instrumental in setting up the space with essential technology and communication systems, including dedicated workstations and large displays for monitoring weather and news feeds. This comprehensive setup has become crucial for emergency management, enabling Senior Management to efficiently and effectively coordinate interdepartmentally during critical situations.
+[p001_c0010] Thanks to Hugo's meticulous planning and execution, the MOW Situation Room now serves as the central hub for managing emergencies. It facilitates rapid and well-coordinated responses, ensuring that timely actions are taken to safeguard the subway system and its passengers.
+[p001_c0011] His contributions have significantly enhanced the Authority's ability to handle emergencies with precision and agility, exemplifying outstanding dedication and foresight.
+[p001_c0012] _| 3 |_
+[p001_c0013] _The MTA logo, consisting of the letters 'MTA' in white inside a blue circle._
+
+## Page 2
+
+### [p002_c0001] TRANSIT ALL-STARS
+> [p002_c0002] A professional headshot of Michael Beard, a man with a beard and short dark hair, wearing a dark suit, white shirt, and a patterned tie. He is smiling and looking towards the camera against a solid blue background.
+### [p002_c0003] Michael Beard
+[p002_c0004] Superintendent Department of Subways
+[p002_c0005] Michael Beard has been instrumental in managing the complexities and challenges of workforce operations during emergency situations. He excels in the back-end execution and monitoring of protocols, strategies, and actions aimed at reducing on-site workforce redundancies and enhancing operational efficiency.
+[p002_c0006] During emergencies, his calm and steady presence is invaluable as he consistently rolls up his sleeves to support field operations and execute daily orders. Michael goes above and beyond by training employees and sharing his extensive knowledge in EAM Storm Ops and GIS mapping.
+[p002_c0007] From manning the Storm Desk to creating EAM Work Orders and valuable checklists, his contributions are critical during challenging times in a forward-thinking operation.
+[p002_c0008] Michael's dedication to duty and pragmatic approach to problem-solving unequivocally support the Authority's core values of cost and safety-consciousness, innovation, timeliness, and transparency.
+[p002_c0009] _The MTA logo, consisting of the letters 'MTA' in white inside a blue circle._
+[p002_c0010] _| 4 |_
+
+## Page 3
+
+### [p003_c0001] TRANSIT ALL-STARS
+> [p003_c0002] A portrait of Terrence Clarke, a man with short dark hair and a goatee, wearing a dark grey vest over a dark shirt. He is smiling slightly and wearing a white earbud in his right ear. The background is a solid blue.
+### [p003_c0003] Terrence Clarke
+[p003_c0004] Cleaner
+[p003_c0005] Department of Subways
+[p003_c0006] During inclement weather, Terrence took it upon himself to continuously salt and sand the perimeter of the Fulton Street Complex, ensuring safe access for employees and customers without being instructed by his supervisor.
+[p003_c0007] CTA Terrence Clarke demonstrated outstanding service during recent weather storms. Terrence has shown exceptional dedication and initiative, consistently going above and beyond his duties during both declared and undeclared snow events.
+[p003_c0008] In addition to his proactive measures, Terrence actively assisted his coworkers with snow removal efforts after completing his stations. He cleared walkways, entrances, and high-traffic areas
+[p003_c0009] to maintain safe passage and ensured that stairways, platforms, and exits remained free of ice and snow, reducing potential hazards.
+[p003_c0010] Terrence also went the extra mile by checking for icy patches in frequently used areas, spreading additional salt as needed, and helping to clear snow from facility equipment and emergency access points, truly exemplifying leadership.
+[p003_c0011] Beyond his physical efforts, Terrence played a crucial role in boosting team morale during these challenging weather conditions. His positive attitude, willingness to assist others, and encouraging words helped keep his coworkers motivated. Despite the harsh conditions, he maintained a strong team spirit, ensuring that everyone stayed focused and worked together efficiently.
+[p003_c0012] His leadership and camaraderie created an environment of teamwork and resilience, making a tough situation more manageable for all. Terrence's dedication, hard work, and uplifting attitude have significantly contributed to maintaining a safe and efficient work environment during inclement weather. His efforts deserve recognition for outstanding service.
+[p003_c0013] _| 5 |_
+[p003_c0014] _The MTA logo, consisting of the letters 'MTA' in white inside a blue circle._
+
+## Page 4
+
+### [p004_c0001] TRANSIT ALL-STARS
+[p004_c0002] _Paichen Cai_
+[p004_c0003] Senior Quality Control Specialist
+[p004_c0004] Department of Subways
+[p004_c0005] _Michael Catuogno_
+[p004_c0006] Transit Rail Technical Specialist
+[p004_c0007] Department of Subways
+[p004_c0008] Following each snow event in New York City, the substantial use of salt on the streets resulted in the interiors of subway cars becoming severely dirty and contaminated with stubborn snow melt residue.
+[p004_c0009] This issue was further compounded by the fact that standard cleaning products were ineffective, as reported by field managers. Although it was not part of their usual responsibilities, Paichen and Michael, took the initiative to address this urgent problem.
+[p004_c0010] They meticulously reviewed and ensured the approval of a new chemical cleaner specifically designed to safely and effectively remove the residue from our subway cars. Given the high priority of this task, they worked diligently and expeditiously to secure approval and distribute the product to our front-line cleaners for immediate use.
+[p004_c0011] Their efforts played a crucial role in quickly qualifying and approving the new cleaner, significantly improving the cleanliness of our subway cars. Sameh Eshak is a pillar of Queens South Road Operations — a true leader who ensures seamless execution of tasks. When it comes to road operations.
+[p004_c0012] _| 6 |_
+
+## Page 5
+
+### [p005_c0001] TRANSIT ALL-STARS
+> [p005_c0002] A professional headshot of Sameh Eshak, a man with a shaved head, smiling warmly. He is wearing a dark suit jacket over a light blue dress shirt and a blue and white patterned tie. The background is a solid, vibrant blue.
+[p005_c0003] _Sameh Eshak_
+[p005_c0004] Superintendent
+[p005_c0005] Department of Buses
+[p005_c0006] bus stop areas and helped shovel snow, ensuring passengers could wait comfortably for shuttle buses. His expertise, unwavering dedication, and leadership continue to leave a lasting, positive impact on both his team and the riders he serves.
+[p005_c0007] Sameh Eshak is a pillar of Queens South Road Operations—a true leader who ensures seamless execution of tasks. When it comes to road operations,
+[p005_c0008] Eshak is the go-to expert with answers always at hand. His well-deserved reputation as the “King of All Things Queens South” speaks volumes about his expertise and influence.
+[p005_c0009] Hailing from Egypt, Superintendent Eshak is the embodiment of hard work and determination. He began his journey with the MTA in 2013 as a bus operator and has steadily risen through the ranks, thanks to his dedication and skill.
+[p005_c0010] His contributions have been particularly invaluable in projects like the Queens Redesign Project. When the A Shuttle project launched, Eshak was the obvious choice to lead supervisors and ensure exceptional customer service.
+[p005_c0011] Eshak’s commitment goes far beyond expectations. For instance, during February’s snowstorms, he personally presalted
+[p005_c0012] _| 7 |_
+[p005_c0013] _The MTA logo, consisting of the letters 'MTA' in white inside a blue circle._
+
+## Page 6
+
+### [p006_c0001] TRANSIT ALL-STARS
+> [p006_c0002] A professional headshot of Joham Ernest, a Black man with short hair, wearing a dark blue suit jacket, a white shirt, and a blue patterned tie. He is smiling slightly and looking towards the camera. The background is a solid blue.
+### [p006_c0003] Joham Ernest
+[p006_c0004] General Superintendent
+[p006_c0005] Department of Buses
+[p006_c0006] General Superintendent of Transportation (GST) Joham Ernest is a crucial asset to the Bus Command Center team, excelling in his capacity as a senior manager in Incident and Service Management.
+[p006_c0007] Renowned for his ability to juggle multiple responsibilities effectively and achieve outstanding results, GST Ernest is a leader his team can rely on. His composure in high-pressure situations further underscores his dependability during emergencies. For example, during an unexpected and intense snowstorm that stranded buses across the boroughs with passengers aboard, he prioritized the safety of external customers, including individuals in wheelchairs, and promptly coordinated assistance for the remaining buses.
+[p006_c0008] He diligently maintains comprehensive records of out-of-service buses and addresses issues with efficiency. His dedication was evident when he volunteered to work on his Regular Day Off (RDO) during the storm to ensure coverage and support.
+[p006_c0009] GST Ernest's exceptional leadership has fostered seamless communication and collaboration within his team, ensuring tasks are consistently completed and updated on a daily basis. He maintains open lines of communication with his supervisors regarding Incident Management, BCC operations, union concerns, and both minor and significant daily events.
+[p006_c0010] His expertise, unwavering commitment, and strong leadership continue to have a profound impact on his team and the customers they serve.
+[p006_c0011] _The MTA logo, consisting of the letters 'MTA' in white inside a blue circle._
+[p006_c0012] _| 8 |_
+
+## Page 7
+
+### [p007_c0001] TRANSIT ALL-STARS
+> [p007_c0002] A professional headshot of Jerrell Malone, a Black man with short grey hair, wearing a dark grey suit jacket, a white shirt, and a blue and white patterned tie. He is looking slightly to the right of the camera with a gentle expression. The background is a solid blue.
+### [p007_c0003] Jerrell Malone
+[p007_c0004] Superintendent
+[p007_c0005] Department of Buses
+[p007_c0006] Jerrell Malone joined the Brooklyn Road Operations Team in January 2024 as a Superintendent, quickly establishing himself as an indispensable member of the team.
+[p007_c0007] In the months since, Jerrell has consistently showcased exceptional dedication, an outstanding work ethic, and an unwavering commitment to delivering top-tier service to our customers. His readiness to adapt to the needs of the department sets him apart as a dependable and selfless leader who is always willing to go the extra mile.
+[p007_c0008] Jerrell's reliability and flexibility are exemplified by his consistent willingness to adjust his Schedule, Tour, or Regular Day Off (RDO) whenever necessary. His response is unfailingly gracious and supportive: "No problem, whatever you need." This steadfast attitude has earned him the trust and respect of his colleagues and supervisors alike. During this season's challenging winter weather events, Jerrell's dedication shone even brighter.
+[p007_c0009] He repeatedly stepped forward without hesitation, altering his schedule or coming in on his RDO to address urgent needs. Whether it was ensuring that stranded buses in severe weather conditions were promptly freed or taking proactive measures to mitigate disruptions, Jerrell's efforts were instrumental in maintaining smooth operations.
+[p007_c0010] Jerrell's ability to combine flexibility, initiative, and a proactive approach underscores his immense value to the team. His actions exemplify the qualities of a true leader — one who prioritizes the needs of the team and the customers they serve.
+[p007_c0011] His ongoing contributions and unwavering commitment continue to solidify his position as an essential and highly respected asset to our team.
+[p007_c0012] _| 9 |_
+[p007_c0013] _The logo for the Metropolitan Transportation Authority (MTA), featuring the letters 'MTA' in white inside a blue circle._
+
+## Page 8
+
+### [p008_c0001] TRANSIT ALL-STARS
+> [p008_c0002] A portrait of Johnny Cuebas, a Bus Operator, smiling and wearing a dark vest over a light blue shirt. He is positioned against a solid blue background.
+### [p008_c0003] Johnny Cuebas
+[p008_c0004] Bus Operator
+[p008_c0005] Department of Buses
+[p008_c0006] Bus Operator (BO) Johnny Cuebas has been a vital member of the Queens Village team since joining NYCT in February 2001. Over the years, he has exemplified professionalism, maintaining an impeccable disciplinary and attendance record.
+[p008_c0007] Beyond his technical expertise, Johnny is celebrated as a dependable and enthusiastic team player, always willing to offer support whenever needed. He has earned a reputation as the go-to person for solutions, reflecting his reliability and commitment to the team.
+[p008_c0008] After becoming a qualified Snowfighter in early 2009, Johnny has played a pivotal role in snow operation efforts. His contributions extend beyond frontline work—he has taken on the responsibility of mentoring new Snowfighters, equipping them with invaluable real-world insights and sharing best practices for truck maintenance.
+[p008_c0009] Under his guidance, colleagues have learned to effectively handle critical tasks such as plowing, salting, and covering key areas,
+[p008_c0010] ensuring the depot's operations run seamlessly even under challenging conditions.
+[p008_c0011] Throughout his remarkable career, BO Cuebas has received multiple commendations that highlight his unwavering dedication, exceptional professionalism, and consistently high standards. His warm smile, positive attitude, and infectious sense of humor have made him a beloved figure among both colleagues and management.
+[p008_c0012] Affectionately nicknamed "Fish Sticks" at the depot, Johnny brings a unique personal touch to the workplace. Whether sharing stories about his passion for fishing or generously distributing his fresh catches, he fosters a sense of camaraderie and connection that enriches the team environment.
+[p008_c0013] _The MTA logo, consisting of the letters "MTA" in white inside a blue circle._
+[p008_c0014] _| 10 |_
+
+## Page 9
+
+### [p009_c0001] TRANSIT ALL-STARS
+> [p009_c0002] A professional headshot of Rosemarie Venero, a woman with long, dark, curly hair, wearing a grey and black patterned top. She is smiling slightly and looking towards the camera. The background is a solid blue.
+### [p009_c0003] Rosemarie Venero
+[p009_c0004] General Superintendent Paratransit
+[p009_c0005] General Superintendent Rosemarie Venero is an 18-year NYCT veteran, who is responsible for the day-to-day operations of the Paratransit Command Center.
+[p009_c0006] With oversight of more than 40,000 daily trips, Rosemarie ensures that Access-A-Ride customers receive a level of service that exceeds industry standards. Over the past 12 months, Paratransit has seen a continued growth in ridership, while continuing to improve in areas of service reliability, on-time-performance, provider no-shows and customer satisfaction.
+[p009_c0007] Rosemarie has played an integral role in paratransit's ability to continue to report service improvements, while seeing a record ridership growth of 25 percent over the last calendar year.
+[p009_c0008] Rosemarie takes initiative and has a hands-on approach to ensuring that same-day trip issues are addressed timely. Additionally, she is the paratransit liaison between MTA Headquarters Emergency Management (MTAHQ) and New York City Emergency Management (NYCEM), coordinating coastal
+[p009_c0009] storm and weather-related preparedness activities, emergency incident and disaster response procedures.
+[p009_c0010] Rosemarie works closely with the emergency management teams, going above and beyond her duties to ensure that the paratransit operation is prepared and ready for any challenge that may unexpectedly arise. From providing paratransit rescue assistance with homebound evacuations to managing the 24/7 incident command center during emergency or weather-related events, she provides leadership and extensive time to the operation.
+[p009_c0011] Rosemarie has an invaluable level of knowledge and understanding of paratransit operations and is well respected amongst her peers. Although very humble and passionate about her job, when asked how she has been able to do what she does, she often references one of her favorite slogans "Girl-Power".
+[p009_c0012] The paratransit team recognizes Rosemarie for her contributions and efforts in helping to maintain and improve performance metrics in On-Time Performance, Provider No-Shows and Customer Experience, while servicing a 25 percent growth in ridership over such a short period.
+[p009_c0013] _| 11 |_
+[p009_c0014] _The MTA logo, consisting of the letters "MTA" in white inside a blue circle._
+
+## Page 10
+
+### [p010_c0001] TRANSIT ALL-STARS
+> [p010_c0002] A professional headshot of Robert Thompson, a man with glasses and a receding hairline, wearing a dark suit, light blue shirt, and patterned tie. He is smiling slightly and looking towards the camera. The background is a solid blue.
+### [p010_c0003] Robert Thompson
+[p010_c0004] Manager, Bus Service Planning Operations Planning Department
+[p010_c0005] Faster moving buses is core for keeping New Yorkers moving and will become even more as the MTA has implemented congestion pricing on January 5 of this year.
+[p010_c0006] That is why we celebrate the hard work and commitment of Bus Service Planner Robert Thompson who successfully oversaw the recent implementation of the University Ave/EL Grant Dedicated Bus Lane project in the Bronx, as well as the 96th Street bus lane project in Manhattan.
+[p010_c0007] Working under the leadership of Robert Lai, Acting Deputy Chief Bus Service Planning and Bus Planning Director Buckley Yung, Robert worked closely with the NYC Department of Transportation as they advanced constructing dedicated bus lanes and bus boarding islands in the Bronx to improve the commutes for 34,000 daily bus customers.
+[p010_c0008] University Ave/EL Grant bus speeds have improved 3% to 15% depending on the time of day and direction, and early indications
+[p010_c0009] of the M96 bus lanes are also showing improved speeds.
+[p010_c0010] Rob's work also includes the Tremont Avenue Busway in the Bronx which is expected to be implemented later this year and we look forward to improved customer experiences here as well.
+[p010_c0011] Rob is also overseeing the 20 Select Bus Service routes. The SBS fare payment machines require ongoing repair and upkeep, as well as relocation for construction activity, and there are other issues unique to SBS, that Rob and Joe have so ably manage.
+[p010_c0012] With travel speed gains of up to 15-20%, the SBS program has been one of the agency's most successful efforts in bringing faster and more reliable service to our customers.
+[p010_c0013] Back in November 2001 at the Employee Recognition Ceremony, after the World Trade Center attack, Rob was honored for preparing long-term service plans in response to 9/11 related bus and subway disruptions.
+[p010_c0014] _The MTA logo, consisting of the letters 'MTA' in white inside a blue circle._
+[p010_c0015] _| 12 |_

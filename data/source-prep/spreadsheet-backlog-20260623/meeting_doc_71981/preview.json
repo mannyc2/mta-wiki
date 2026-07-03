@@ -1,0 +1,6819 @@
+{
+  "kind": "spreadsheet_preview",
+  "status": "ok",
+  "source_id": "meeting_doc_71981",
+  "run_id": "spreadsheet-backlog-20260623",
+  "generated_at": "2026-06-23T12:36:34.854Z",
+  "source_path": "raw/sources/meeting_doc_71981/source.xlsx",
+  "source_sha256": "sha256:ca5a16d7933590400484eaafefd034d2e4ebbf527f097dbdcf930a60801f5f5c",
+  "sheets": [
+    {
+      "name": "November21 Table",
+      "sheet_id": "1",
+      "path": "xl/worksheets/sheet1.xml",
+      "row_count": 37,
+      "cell_count": 258,
+      "rows": [
+        {
+          "row_number": 1,
+          "cells": [
+            {
+              "ref": "A1",
+              "column": "A",
+              "row": 1,
+              "type": "s",
+              "style": "43",
+              "raw_value": "12",
+              "text": "METROPOLITAN TRANSPORTATION AUTHORITY"
+            },
+            {
+              "ref": "B1",
+              "column": "B",
+              "row": 1,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "C1",
+              "column": "C",
+              "row": 1,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "D1",
+              "column": "D",
+              "row": 1,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "E1",
+              "column": "E",
+              "row": 1,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "F1",
+              "column": "F",
+              "row": 1,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "G1",
+              "column": "G",
+              "row": 1,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "H1",
+              "column": "H",
+              "row": 1,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "I1",
+              "column": "I",
+              "row": 1,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "J1",
+              "column": "J",
+              "row": 1,
+              "style": "43",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 2,
+          "cells": [
+            {
+              "ref": "A2",
+              "column": "A",
+              "row": 2,
+              "type": "s",
+              "style": "43",
+              "raw_value": "20",
+              "text": "MID-YEAR AND NOVEMBER FORECASTS vs. ACTUAL RESULTS (NON-REIMBURSABLE)"
+            },
+            {
+              "ref": "B2",
+              "column": "B",
+              "row": 2,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "C2",
+              "column": "C",
+              "row": 2,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "D2",
+              "column": "D",
+              "row": 2,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "E2",
+              "column": "E",
+              "row": 2,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "F2",
+              "column": "F",
+              "row": 2,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "G2",
+              "column": "G",
+              "row": 2,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "H2",
+              "column": "H",
+              "row": 2,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "I2",
+              "column": "I",
+              "row": 2,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "J2",
+              "column": "J",
+              "row": 2,
+              "style": "43",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 3,
+          "cells": [
+            {
+              "ref": "A3",
+              "column": "A",
+              "row": 3,
+              "type": "s",
+              "style": "43",
+              "raw_value": "27",
+              "text": "NOVEMBER 2021 YEAR-TO-DATE"
+            },
+            {
+              "ref": "B3",
+              "column": "B",
+              "row": 3,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "C3",
+              "column": "C",
+              "row": 3,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "D3",
+              "column": "D",
+              "row": 3,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "E3",
+              "column": "E",
+              "row": 3,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "F3",
+              "column": "F",
+              "row": 3,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "G3",
+              "column": "G",
+              "row": 3,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "H3",
+              "column": "H",
+              "row": 3,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "I3",
+              "column": "I",
+              "row": 3,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "J3",
+              "column": "J",
+              "row": 3,
+              "style": "43",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 4,
+          "cells": [
+            {
+              "ref": "A4",
+              "column": "A",
+              "row": 4,
+              "type": "s",
+              "style": "43",
+              "raw_value": "0",
+              "text": "($ in millions)"
+            },
+            {
+              "ref": "B4",
+              "column": "B",
+              "row": 4,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "C4",
+              "column": "C",
+              "row": 4,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "D4",
+              "column": "D",
+              "row": 4,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "E4",
+              "column": "E",
+              "row": 4,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "F4",
+              "column": "F",
+              "row": 4,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "G4",
+              "column": "G",
+              "row": 4,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "H4",
+              "column": "H",
+              "row": 4,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "I4",
+              "column": "I",
+              "row": 4,
+              "style": "43",
+              "text": ""
+            },
+            {
+              "ref": "J4",
+              "column": "J",
+              "row": 4,
+              "style": "43",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 7,
+          "cells": [
+            {
+              "ref": "F7",
+              "column": "F",
+              "row": 7,
+              "style": "18",
+              "text": ""
+            },
+            {
+              "ref": "G7",
+              "column": "G",
+              "row": 7,
+              "style": "44",
+              "text": ""
+            },
+            {
+              "ref": "H7",
+              "column": "H",
+              "row": 7,
+              "style": "44",
+              "text": ""
+            },
+            {
+              "ref": "I7",
+              "column": "I",
+              "row": 7,
+              "style": "44",
+              "text": ""
+            },
+            {
+              "ref": "J7",
+              "column": "J",
+              "row": 7,
+              "style": "1",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 8,
+          "cells": [
+            {
+              "ref": "A8",
+              "column": "A",
+              "row": 8,
+              "style": "19",
+              "raw_value": "26",
+              "text": "26"
+            },
+            {
+              "ref": "C8",
+              "column": "C",
+              "row": 8,
+              "style": "39",
+              "raw_value": "9",
+              "text": "9"
+            },
+            {
+              "ref": "G8",
+              "column": "G",
+              "row": 8,
+              "style": "41",
+              "text": ""
+            },
+            {
+              "ref": "H8",
+              "column": "H",
+              "row": 8,
+              "style": "41",
+              "text": ""
+            },
+            {
+              "ref": "I8",
+              "column": "I",
+              "row": 8,
+              "style": "41",
+              "text": ""
+            },
+            {
+              "ref": "J8",
+              "column": "J",
+              "row": 8,
+              "style": "41",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 9,
+          "cells": [
+            {
+              "ref": "A9",
+              "column": "A",
+              "row": 9,
+              "style": "34",
+              "raw_value": "13",
+              "text": "13"
+            },
+            {
+              "ref": "C9",
+              "column": "C",
+              "row": 9,
+              "type": "s",
+              "style": "35",
+              "raw_value": "21",
+              "text": "November Forecast "
+            },
+            {
+              "ref": "D9",
+              "column": "D",
+              "row": 9,
+              "type": "s",
+              "style": "37",
+              "raw_value": "2",
+              "text": "Actual"
+            },
+            {
+              "ref": "E9",
+              "column": "E",
+              "row": 9,
+              "style": "21",
+              "raw_value": "1",
+              "text": "1"
+            },
+            {
+              "ref": "G9",
+              "column": "G",
+              "row": 9,
+              "style": "42",
+              "raw_value": "8",
+              "text": "8"
+            },
+            {
+              "ref": "J9",
+              "column": "J",
+              "row": 9,
+              "style": "42",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 10,
+          "cells": [
+            {
+              "ref": "A10",
+              "column": "A",
+              "row": 10,
+              "style": "34",
+              "raw_value": "3",
+              "text": "3"
+            },
+            {
+              "ref": "I10",
+              "column": "I",
+              "row": 10,
+              "style": "21",
+              "raw_value": "3",
+              "text": "3"
+            }
+          ]
+        },
+        {
+          "row_number": 11,
+          "cells": [
+            {
+              "ref": "A11",
+              "column": "A",
+              "row": 11,
+              "style": "23",
+              "text": ""
+            },
+            {
+              "ref": "C11",
+              "column": "C",
+              "row": 11,
+              "style": "21",
+              "text": ""
+            },
+            {
+              "ref": "D11",
+              "column": "D",
+              "row": 11,
+              "style": "21",
+              "text": ""
+            },
+            {
+              "ref": "E11",
+              "column": "E",
+              "row": 11,
+              "style": "21",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 12,
+          "cells": [
+            {
+              "ref": "A12",
+              "column": "A",
+              "row": 12,
+              "type": "s",
+              "style": "3",
+              "raw_value": "4",
+              "text": "Total Revenue"
+            },
+            {
+              "ref": "B12",
+              "column": "B",
+              "row": 12,
+              "style": "16",
+              "raw_value": "5108.2481860570524",
+              "text": "5108.2481860570524"
+            },
+            {
+              "ref": "C12",
+              "column": "C",
+              "row": 12,
+              "style": "16",
+              "raw_value": "5238.0574788198855",
+              "text": "5238.0574788198855"
+            },
+            {
+              "ref": "D12",
+              "column": "D",
+              "row": 12,
+              "style": "16",
+              "raw_value": "5214.1938433699997",
+              "text": "5214.1938433699997"
+            },
+            {
+              "ref": "E12",
+              "column": "E",
+              "row": 12,
+              "style": "24",
+              "raw_value": "105.94565731294733",
+              "text": "105.94565731294733"
+            },
+            {
+              "ref": "G12",
+              "column": "G",
+              "row": 12,
+              "style": "25",
+              "raw_value": "2.0740115486582207",
+              "text": "2.0740115486582207"
+            },
+            {
+              "ref": "H12",
+              "column": "H",
+              "row": 12,
+              "style": "26",
+              "raw_value": "-23.863635449885805",
+              "text": "-23.863635449885805"
+            },
+            {
+              "ref": "J12",
+              "column": "J",
+              "row": 12,
+              "style": "25",
+              "raw_value": "-0.45558177905413505",
+              "text": "-0.45558177905413505"
+            }
+          ]
+        },
+        {
+          "row_number": 13,
+          "cells": [
+            {
+              "ref": "A13",
+              "column": "A",
+              "row": 13,
+              "style": "17",
+              "text": ""
+            },
+            {
+              "ref": "F13",
+              "column": "F",
+              "row": 13,
+              "style": "27",
+              "text": ""
+            },
+            {
+              "ref": "G13",
+              "column": "G",
+              "row": 13,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "H13",
+              "column": "H",
+              "row": 13,
+              "style": "4",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 14,
+          "cells": [
+            {
+              "ref": "A14",
+              "column": "A",
+              "row": 14,
+              "type": "s",
+              "style": "12",
+              "raw_value": "11",
+              "text": "Total Expenses before Non-Cash Liability Adjs"
+            },
+            {
+              "ref": "B14",
+              "column": "B",
+              "row": 14,
+              "style": "28",
+              "raw_value": "12882.499474420425",
+              "text": "12882.499474420425"
+            },
+            {
+              "ref": "C14",
+              "column": "C",
+              "row": 14,
+              "style": "28",
+              "raw_value": "12638.073310108888",
+              "text": "12638.073310108888"
+            },
+            {
+              "ref": "D14",
+              "column": "D",
+              "row": 14,
+              "style": "28",
+              "raw_value": "12192.508894334998",
+              "text": "12192.508894334998"
+            },
+            {
+              "ref": "E14",
+              "column": "E",
+              "row": 14,
+              "style": "29",
+              "raw_value": "689.9905800854267",
+              "text": "689.9905800854267"
+            },
+            {
+              "ref": "G14",
+              "column": "G",
+              "row": 14,
+              "style": "28",
+              "raw_value": "5.3560303375558167",
+              "text": "5.3560303375558167"
+            },
+            {
+              "ref": "H14",
+              "column": "H",
+              "row": 14,
+              "style": "28",
+              "raw_value": "445.56441577388978",
+              "text": "445.56441577388978"
+            },
+            {
+              "ref": "J14",
+              "column": "J",
+              "row": 14,
+              "style": "28",
+              "raw_value": "3.5255723308512037",
+              "text": "3.5255723308512037"
+            }
+          ]
+        },
+        {
+          "row_number": 15,
+          "cells": [
+            {
+              "ref": "A15",
+              "column": "A",
+              "row": 15,
+              "style": "17",
+              "text": ""
+            },
+            {
+              "ref": "B15",
+              "column": "B",
+              "row": 15,
+              "style": "30",
+              "text": ""
+            },
+            {
+              "ref": "C15",
+              "column": "C",
+              "row": 15,
+              "style": "30",
+              "text": ""
+            },
+            {
+              "ref": "D15",
+              "column": "D",
+              "row": 15,
+              "style": "30",
+              "text": ""
+            },
+            {
+              "ref": "F15",
+              "column": "F",
+              "row": 15,
+              "style": "29",
+              "text": ""
+            },
+            {
+              "ref": "G15",
+              "column": "G",
+              "row": 15,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "H15",
+              "column": "H",
+              "row": 15,
+              "style": "4",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 16,
+          "cells": [
+            {
+              "ref": "A16",
+              "column": "A",
+              "row": 16,
+              "type": "s",
+              "style": "17",
+              "raw_value": "5",
+              "text": "Depreciation "
+            },
+            {
+              "ref": "B16",
+              "column": "B",
+              "row": 16,
+              "style": "28",
+              "raw_value": "2864.6052209262502",
+              "text": "2864.6052209262502"
+            },
+            {
+              "ref": "C16",
+              "column": "C",
+              "row": 16,
+              "style": "28",
+              "raw_value": "2853.7143464178325",
+              "text": "2853.7143464178325"
+            },
+            {
+              "ref": "D16",
+              "column": "D",
+              "row": 16,
+              "style": "28",
+              "raw_value": "2848.1184436099998",
+              "text": "2848.1184436099998"
+            },
+            {
+              "ref": "E16",
+              "column": "E",
+              "row": 16,
+              "style": "29",
+              "raw_value": "16.486777316250482",
+              "text": "16.486777316250482"
+            },
+            {
+              "ref": "G16",
+              "column": "G",
+              "row": 16,
+              "style": "28",
+              "raw_value": "0.57553401061384635",
+              "text": "0.57553401061384635"
+            },
+            {
+              "ref": "H16",
+              "column": "H",
+              "row": 16,
+              "style": "28",
+              "raw_value": "5.5959028078327719",
+              "text": "5.5959028078327719"
+            },
+            {
+              "ref": "J16",
+              "column": "J",
+              "row": 16,
+              "style": "28",
+              "raw_value": "0.19609190439320293",
+              "text": "0.19609190439320293"
+            }
+          ]
+        },
+        {
+          "row_number": 17,
+          "cells": [
+            {
+              "ref": "A17",
+              "column": "A",
+              "row": 17,
+              "type": "s",
+              "style": "17",
+              "raw_value": "22",
+              "text": "GASB 68 Pension Expenses"
+            },
+            {
+              "ref": "B17",
+              "column": "B",
+              "row": 17,
+              "style": "28",
+              "raw_value": "62.263622727101037",
+              "text": "62.263622727101037"
+            },
+            {
+              "ref": "C17",
+              "column": "C",
+              "row": 17,
+              "style": "28",
+              "raw_value": "73.7529352687677",
+              "text": "73.7529352687677"
+            },
+            {
+              "ref": "D17",
+              "column": "D",
+              "row": 17,
+              "style": "28",
+              "raw_value": "14.278957750000002",
+              "text": "14.278957750000002"
+            },
+            {
+              "ref": "E17",
+              "column": "E",
+              "row": 17,
+              "style": "29",
+              "raw_value": "47.984664977101033",
+              "text": "47.984664977101033"
+            },
+            {
+              "ref": "G17",
+              "column": "G",
+              "row": 17,
+              "style": "28",
+              "raw_value": "77.066933910055141",
+              "text": "77.066933910055141"
+            },
+            {
+              "ref": "H17",
+              "column": "H",
+              "row": 17,
+              "style": "28",
+              "raw_value": "59.473977518767697",
+              "text": "59.473977518767697"
+            },
+            {
+              "ref": "J17",
+              "column": "J",
+              "row": 17,
+              "style": "28",
+              "raw_value": "80.639471909877003",
+              "text": "80.639471909877003"
+            }
+          ]
+        },
+        {
+          "row_number": 18,
+          "cells": [
+            {
+              "ref": "A18",
+              "column": "A",
+              "row": 18,
+              "type": "s",
+              "style": "17",
+              "raw_value": "25",
+              "text": "GASB 75 OPEB Expense Adj"
+            },
+            {
+              "ref": "B18",
+              "column": "B",
+              "row": 18,
+              "style": "28",
+              "raw_value": "80.572087147308778",
+              "text": "80.572087147308778"
+            },
+            {
+              "ref": "C18",
+              "column": "C",
+              "row": 18,
+              "style": "28",
+              "raw_value": "30.534315459308782",
+              "text": "30.534315459308782"
+            },
+            {
+              "ref": "D18",
+              "column": "D",
+              "row": 18,
+              "style": "28",
+              "raw_value": "-45.934402779999999",
+              "text": "-45.934402779999999"
+            },
+            {
+              "ref": "E18",
+              "column": "E",
+              "row": 18,
+              "style": "29",
+              "raw_value": "126.50648992730878",
+              "text": "126.50648992730878"
+            },
+            {
+              "ref": "G18",
+              "column": "G",
+              "row": 18,
+              "style": "28",
+              "raw_value": "157.01031760045981",
+              "text": "157.01031760045981"
+            },
+            {
+              "ref": "H18",
+              "column": "H",
+              "row": 18,
+              "style": "28",
+              "raw_value": "76.468718239308785",
+              "text": "76.468718239308785"
+            },
+            {
+              "ref": "J18",
+              "column": "J",
+              "row": 18,
+              "style": "28",
+              "raw_value": "250.43534491943655",
+              "text": "250.43534491943655"
+            }
+          ]
+        },
+        {
+          "row_number": 19,
+          "cells": [
+            {
+              "ref": "A19",
+              "column": "A",
+              "row": 19,
+              "type": "s",
+              "style": "17",
+              "raw_value": "10",
+              "text": "Environmental Remediation"
+            },
+            {
+              "ref": "B19",
+              "column": "B",
+              "row": 19,
+              "style": "28",
+              "raw_value": "5.4215282699999996",
+              "text": "5.4215282699999996"
+            },
+            {
+              "ref": "C19",
+              "column": "C",
+              "row": 19,
+              "style": "28",
+              "raw_value": "5.2073210619999992",
+              "text": "5.2073210619999992"
+            },
+            {
+              "ref": "D19",
+              "column": "D",
+              "row": 19,
+              "style": "28",
+              "raw_value": "2.6684234199999994",
+              "text": "2.6684234199999994"
+            },
+            {
+              "ref": "E19",
+              "column": "E",
+              "row": 19,
+              "style": "29",
+              "raw_value": "2.7531048500000002",
+              "text": "2.7531048500000002"
+            },
+            {
+              "ref": "G19",
+              "column": "G",
+              "row": 19,
+              "style": "28",
+              "raw_value": "50.780973793575747",
+              "text": "50.780973793575747"
+            },
+            {
+              "ref": "H19",
+              "column": "H",
+              "row": 19,
+              "style": "28",
+              "raw_value": "2.5388976419999998",
+              "text": "2.5388976419999998"
+            },
+            {
+              "ref": "J19",
+              "column": "J",
+              "row": 19,
+              "style": "28",
+              "raw_value": "48.756310812624911",
+              "text": "48.756310812624911"
+            }
+          ]
+        },
+        {
+          "row_number": 20,
+          "cells": [
+            {
+              "ref": "A20",
+              "column": "A",
+              "row": 20,
+              "style": "17",
+              "text": ""
+            },
+            {
+              "ref": "B20",
+              "column": "B",
+              "row": 20,
+              "style": "28",
+              "text": ""
+            },
+            {
+              "ref": "C20",
+              "column": "C",
+              "row": 20,
+              "style": "28",
+              "text": ""
+            },
+            {
+              "ref": "D20",
+              "column": "D",
+              "row": 20,
+              "style": "28",
+              "text": ""
+            },
+            {
+              "ref": "E20",
+              "column": "E",
+              "row": 20,
+              "style": "29",
+              "text": ""
+            },
+            {
+              "ref": "F20",
+              "column": "F",
+              "row": 20,
+              "style": "28",
+              "text": ""
+            },
+            {
+              "ref": "G20",
+              "column": "G",
+              "row": 20,
+              "style": "28",
+              "text": ""
+            },
+            {
+              "ref": "H20",
+              "column": "H",
+              "row": 20,
+              "style": "28",
+              "text": ""
+            },
+            {
+              "ref": "I20",
+              "column": "I",
+              "row": 20,
+              "style": "28",
+              "text": ""
+            },
+            {
+              "ref": "J20",
+              "column": "J",
+              "row": 20,
+              "style": "28",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 21,
+          "cells": [
+            {
+              "ref": "A21",
+              "column": "A",
+              "row": 21,
+              "type": "s",
+              "style": "3",
+              "raw_value": "6",
+              "text": "Total Expenses"
+            },
+            {
+              "ref": "B21",
+              "column": "B",
+              "row": 21,
+              "style": "16",
+              "raw_value": "15895.361933491085",
+              "text": "15895.361933491085"
+            },
+            {
+              "ref": "C21",
+              "column": "C",
+              "row": 21,
+              "style": "16",
+              "raw_value": "15601.282228316797",
+              "text": "15601.282228316797"
+            },
+            {
+              "ref": "D21",
+              "column": "D",
+              "row": 21,
+              "style": "16",
+              "raw_value": "15011.640316334999",
+              "text": "15011.640316334999"
+            },
+            {
+              "ref": "E21",
+              "column": "E",
+              "row": 21,
+              "style": "24",
+              "raw_value": "883.72161715608672",
+              "text": "883.72161715608672"
+            },
+            {
+              "ref": "G21",
+              "column": "G",
+              "row": 21,
+              "style": "25",
+              "raw_value": "5.5596193459056122",
+              "text": "5.5596193459056122"
+            },
+            {
+              "ref": "H21",
+              "column": "H",
+              "row": 21,
+              "style": "26",
+              "raw_value": "589.64191198179833",
+              "text": "589.64191198179833"
+            },
+            {
+              "ref": "J21",
+              "column": "J",
+              "row": 21,
+              "style": "25",
+              "raw_value": "3.7794451978541899",
+              "text": "3.7794451978541899"
+            }
+          ]
+        },
+        {
+          "row_number": 22,
+          "cells": [
+            {
+              "ref": "A22",
+              "column": "A",
+              "row": 22,
+              "style": "17",
+              "text": ""
+            },
+            {
+              "ref": "B22",
+              "column": "B",
+              "row": 22,
+              "style": "31",
+              "text": ""
+            },
+            {
+              "ref": "C22",
+              "column": "C",
+              "row": 22,
+              "style": "31",
+              "text": ""
+            },
+            {
+              "ref": "D22",
+              "column": "D",
+              "row": 22,
+              "style": "31",
+              "text": ""
+            },
+            {
+              "ref": "F22",
+              "column": "F",
+              "row": 22,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "G22",
+              "column": "G",
+              "row": 22,
+              "style": "25",
+              "text": ""
+            },
+            {
+              "ref": "H22",
+              "column": "H",
+              "row": 22,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "I22",
+              "column": "I",
+              "row": 22,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "J22",
+              "column": "J",
+              "row": 22,
+              "style": "25",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 23,
+          "cells": [
+            {
+              "ref": "A23",
+              "column": "A",
+              "row": 23,
+              "type": "s",
+              "style": "17",
+              "raw_value": "23",
+              "text": "Less: B&T Depreciation & GASB Adjustments"
+            },
+            {
+              "ref": "B23",
+              "column": "B",
+              "row": 23,
+              "style": "16",
+              "raw_value": "173.8766904675",
+              "text": "173.8766904675"
+            },
+            {
+              "ref": "C23",
+              "column": "C",
+              "row": 23,
+              "style": "16",
+              "raw_value": "174.69943188624657",
+              "text": "174.69943188624657"
+            },
+            {
+              "ref": "D23",
+              "column": "D",
+              "row": 23,
+              "style": "16",
+              "raw_value": "184.29876701000003",
+              "text": "184.29876701000003"
+            },
+            {
+              "ref": "F23",
+              "column": "F",
+              "row": 23,
+              "style": "16",
+              "raw_value": "-10.422076542500037",
+              "text": "-10.422076542500037"
+            },
+            {
+              "ref": "G23",
+              "column": "G",
+              "row": 23,
+              "style": "25",
+              "raw_value": "-5.9439469255357542",
+              "text": "-5.9439469255357542"
+            },
+            {
+              "ref": "H23",
+              "column": "H",
+              "row": 23,
+              "style": "4",
+              "raw_value": "-9.5993351237534625",
+              "text": "-9.5993351237534625"
+            },
+            {
+              "ref": "J23",
+              "column": "J",
+              "row": 23,
+              "style": "25",
+              "raw_value": "-5.4947718032671986",
+              "text": "-5.4947718032671986"
+            }
+          ]
+        },
+        {
+          "row_number": 24,
+          "cells": [
+            {
+              "ref": "A24",
+              "column": "A",
+              "row": 24,
+              "style": "17",
+              "text": ""
+            },
+            {
+              "ref": "B24",
+              "column": "B",
+              "row": 24,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "C24",
+              "column": "C",
+              "row": 24,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "D24",
+              "column": "D",
+              "row": 24,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "F24",
+              "column": "F",
+              "row": 24,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "G24",
+              "column": "G",
+              "row": 24,
+              "style": "25",
+              "text": ""
+            },
+            {
+              "ref": "H24",
+              "column": "H",
+              "row": 24,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "I24",
+              "column": "I",
+              "row": 24,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "J24",
+              "column": "J",
+              "row": 24,
+              "style": "25",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 25,
+          "cells": [
+            {
+              "ref": "A25",
+              "column": "A",
+              "row": 25,
+              "type": "s",
+              "style": "3",
+              "raw_value": "24",
+              "text": "Adjusted Total Expenses"
+            },
+            {
+              "ref": "B25",
+              "column": "B",
+              "row": 25,
+              "style": "16",
+              "raw_value": "15721.485243023586",
+              "text": "15721.485243023586"
+            },
+            {
+              "ref": "C25",
+              "column": "C",
+              "row": 25,
+              "style": "16",
+              "raw_value": "15426.58279643055",
+              "text": "15426.58279643055"
+            },
+            {
+              "ref": "D25",
+              "column": "D",
+              "row": 25,
+              "style": "16",
+              "raw_value": "14827.341549325",
+              "text": "14827.341549325"
+            },
+            {
+              "ref": "F25",
+              "column": "F",
+              "row": 25,
+              "style": "16",
+              "raw_value": "894.1436936985865",
+              "text": "894.1436936985865"
+            },
+            {
+              "ref": "G25",
+              "column": "G",
+              "row": 25,
+              "style": "25",
+              "raw_value": "5.6873996309945527",
+              "text": "5.6873996309945527"
+            },
+            {
+              "ref": "H25",
+              "column": "H",
+              "row": 25,
+              "style": "4",
+              "raw_value": "599.24124710555043",
+              "text": "599.24124710555043"
+            },
+            {
+              "ref": "J25",
+              "column": "J",
+              "row": 25,
+              "style": "25",
+              "raw_value": "3.8844717265848705",
+              "text": "3.8844717265848705"
+            }
+          ]
+        },
+        {
+          "row_number": 26,
+          "cells": [
+            {
+              "ref": "A26",
+              "column": "A",
+              "row": 26,
+              "style": "17",
+              "text": ""
+            },
+            {
+              "ref": "B26",
+              "column": "B",
+              "row": 26,
+              "style": "31",
+              "text": ""
+            },
+            {
+              "ref": "C26",
+              "column": "C",
+              "row": 26,
+              "style": "31",
+              "text": ""
+            },
+            {
+              "ref": "D26",
+              "column": "D",
+              "row": 26,
+              "style": "31",
+              "text": ""
+            },
+            {
+              "ref": "F26",
+              "column": "F",
+              "row": 26,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "G26",
+              "column": "G",
+              "row": 26,
+              "style": "25",
+              "text": ""
+            },
+            {
+              "ref": "H26",
+              "column": "H",
+              "row": 26,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "I26",
+              "column": "I",
+              "row": 26,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "J26",
+              "column": "J",
+              "row": 26,
+              "style": "25",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 27,
+          "cells": [
+            {
+              "ref": "A27",
+              "column": "A",
+              "row": 27,
+              "type": "s",
+              "style": "3",
+              "raw_value": "7",
+              "text": "Net Surplus/(Deficit)"
+            },
+            {
+              "ref": "B27",
+              "column": "B",
+              "row": 27,
+              "style": "16",
+              "raw_value": "-10613.237056966533",
+              "text": "-10613.237056966533"
+            },
+            {
+              "ref": "C27",
+              "column": "C",
+              "row": 27,
+              "style": "16",
+              "raw_value": "-10188.525317610663",
+              "text": "-10188.525317610663"
+            },
+            {
+              "ref": "D27",
+              "column": "D",
+              "row": 27,
+              "style": "16",
+              "raw_value": "-9613.1477059549998",
+              "text": "-9613.1477059549998"
+            },
+            {
+              "ref": "E27",
+              "column": "E",
+              "row": 27,
+              "style": "24",
+              "raw_value": "1000.0893510115329",
+              "text": "1000.0893510115329"
+            },
+            {
+              "ref": "G27",
+              "column": "G",
+              "row": 27,
+              "style": "25",
+              "raw_value": "9.4230379067531889",
+              "text": "9.4230379067531889"
+            },
+            {
+              "ref": "H27",
+              "column": "H",
+              "row": 27,
+              "style": "26",
+              "raw_value": "575.37761165566371",
+              "text": "575.37761165566371"
+            },
+            {
+              "ref": "J27",
+              "column": "J",
+              "row": 27,
+              "style": "25",
+              "raw_value": "5.6473100249467407",
+              "text": "5.6473100249467407"
+            }
+          ]
+        },
+        {
+          "row_number": 28,
+          "cells": [
+            {
+              "ref": "A28",
+              "column": "A",
+              "row": 28,
+              "style": "3",
+              "text": ""
+            },
+            {
+              "ref": "B28",
+              "column": "B",
+              "row": 28,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "C28",
+              "column": "C",
+              "row": 28,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "D28",
+              "column": "D",
+              "row": 28,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "F28",
+              "column": "F",
+              "row": 28,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "G28",
+              "column": "G",
+              "row": 28,
+              "style": "25",
+              "text": ""
+            },
+            {
+              "ref": "H28",
+              "column": "H",
+              "row": 28,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "I28",
+              "column": "I",
+              "row": 28,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "J28",
+              "column": "J",
+              "row": 28,
+              "style": "25",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 29,
+          "cells": [
+            {
+              "ref": "A29",
+              "column": "A",
+              "row": 29,
+              "type": "s",
+              "style": "3",
+              "raw_value": "18",
+              "text": "Subsidies"
+            },
+            {
+              "ref": "B29",
+              "column": "B",
+              "row": 29,
+              "style": "32",
+              "raw_value": "6643.7754122610431",
+              "text": "6643.7754122610431"
+            },
+            {
+              "ref": "C29",
+              "column": "C",
+              "row": 29,
+              "style": "16",
+              "raw_value": "6572.4006688468262",
+              "text": "6572.4006688468262"
+            },
+            {
+              "ref": "D29",
+              "column": "D",
+              "row": 29,
+              "style": "33",
+              "raw_value": "6676.9268952099992",
+              "text": "6676.9268952099992"
+            },
+            {
+              "ref": "F29",
+              "column": "F",
+              "row": 29,
+              "style": "16",
+              "raw_value": "33.151482948956073",
+              "text": "33.151482948956073"
+            },
+            {
+              "ref": "G29",
+              "column": "G",
+              "row": 29,
+              "style": "25",
+              "raw_value": "0.49898560519934548",
+              "text": "0.49898560519934548"
+            },
+            {
+              "ref": "H29",
+              "column": "H",
+              "row": 29,
+              "style": "26",
+              "raw_value": "104.52622636317301",
+              "text": "104.52622636317301"
+            },
+            {
+              "ref": "J29",
+              "column": "J",
+              "row": 29,
+              "style": "25",
+              "raw_value": "1.5903812264311157",
+              "text": "1.5903812264311157"
+            }
+          ]
+        },
+        {
+          "row_number": 30,
+          "cells": [
+            {
+              "ref": "A30",
+              "column": "A",
+              "row": 30,
+              "style": "3",
+              "text": ""
+            },
+            {
+              "ref": "B30",
+              "column": "B",
+              "row": 30,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "C30",
+              "column": "C",
+              "row": 30,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "D30",
+              "column": "D",
+              "row": 30,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "E30",
+              "column": "E",
+              "row": 30,
+              "style": "24",
+              "text": ""
+            },
+            {
+              "ref": "F30",
+              "column": "F",
+              "row": 30,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "G30",
+              "column": "G",
+              "row": 30,
+              "style": "25",
+              "text": ""
+            },
+            {
+              "ref": "H30",
+              "column": "H",
+              "row": 30,
+              "style": "26",
+              "text": ""
+            },
+            {
+              "ref": "I30",
+              "column": "I",
+              "row": 30,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "J30",
+              "column": "J",
+              "row": 30,
+              "style": "25",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 31,
+          "cells": [
+            {
+              "ref": "A31",
+              "column": "A",
+              "row": 31,
+              "type": "s",
+              "style": "3",
+              "raw_value": "19",
+              "text": "Debt Service"
+            },
+            {
+              "ref": "B31",
+              "column": "B",
+              "row": 31,
+              "style": "16",
+              "raw_value": "2586.4868607667818",
+              "text": "2586.4868607667818"
+            },
+            {
+              "ref": "C31",
+              "column": "C",
+              "row": 31,
+              "style": "16",
+              "raw_value": "2563.8823298089042",
+              "text": "2563.8823298089042"
+            },
+            {
+              "ref": "D31",
+              "column": "D",
+              "row": 31,
+              "style": "16",
+              "raw_value": "2535.9379436462264",
+              "text": "2535.9379436462264"
+            },
+            {
+              "ref": "F31",
+              "column": "F",
+              "row": 31,
+              "style": "16",
+              "raw_value": "50.548917120555416",
+              "text": "50.548917120555416"
+            },
+            {
+              "ref": "G31",
+              "column": "G",
+              "row": 31,
+              "style": "25",
+              "raw_value": "1.9543465651153489",
+              "text": "1.9543465651153489"
+            },
+            {
+              "ref": "H31",
+              "column": "H",
+              "row": 31,
+              "style": "26",
+              "raw_value": "27.944386162677802",
+              "text": "27.944386162677802"
+            },
+            {
+              "ref": "J31",
+              "column": "J",
+              "row": 31,
+              "style": "25",
+              "raw_value": "1.0899246754729419",
+              "text": "1.0899246754729419"
+            }
+          ]
+        },
+        {
+          "row_number": 32,
+          "cells": [
+            {
+              "ref": "A32",
+              "column": "A",
+              "row": 32,
+              "style": "3",
+              "text": ""
+            },
+            {
+              "ref": "C32",
+              "column": "C",
+              "row": 32,
+              "style": "14",
+              "text": ""
+            },
+            {
+              "ref": "G32",
+              "column": "G",
+              "row": 32,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "H32",
+              "column": "H",
+              "row": 32,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "J32",
+              "column": "J",
+              "row": 32,
+              "style": "5",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 33,
+          "cells": [
+            {
+              "ref": "A33",
+              "column": "A",
+              "row": 33,
+              "style": "3",
+              "text": ""
+            },
+            {
+              "ref": "B33",
+              "column": "B",
+              "row": 33,
+              "style": "6",
+              "text": ""
+            },
+            {
+              "ref": "C33",
+              "column": "C",
+              "row": 33,
+              "style": "6",
+              "text": ""
+            },
+            {
+              "ref": "D33",
+              "column": "D",
+              "row": 33,
+              "style": "6",
+              "text": ""
+            },
+            {
+              "ref": "G33",
+              "column": "G",
+              "row": 33,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "H33",
+              "column": "H",
+              "row": 33,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "J33",
+              "column": "J",
+              "row": 33,
+              "style": "5",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 34,
+          "cells": [
+            {
+              "ref": "A34",
+              "column": "A",
+              "row": 34,
+              "type": "s",
+              "style": "3",
+              "raw_value": "14",
+              "text": "NOTE:"
+            },
+            {
+              "ref": "B34",
+              "column": "B",
+              "row": 34,
+              "style": "7",
+              "text": ""
+            },
+            {
+              "ref": "D34",
+              "column": "D",
+              "row": 34,
+              "style": "7",
+              "text": ""
+            },
+            {
+              "ref": "G34",
+              "column": "G",
+              "row": 34,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "H34",
+              "column": "H",
+              "row": 34,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "J34",
+              "column": "J",
+              "row": 34,
+              "style": "5",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 35,
+          "cells": [
+            {
+              "ref": "A35",
+              "column": "A",
+              "row": 35,
+              "type": "s",
+              "style": "8",
+              "raw_value": "15",
+              "text": "- Results are preliminary and subject to audit review"
+            },
+            {
+              "ref": "B35",
+              "column": "B",
+              "row": 35,
+              "style": "9",
+              "text": ""
+            },
+            {
+              "ref": "C35",
+              "column": "C",
+              "row": 35,
+              "style": "9",
+              "text": ""
+            },
+            {
+              "ref": "D35",
+              "column": "D",
+              "row": 35,
+              "style": "9",
+              "text": ""
+            },
+            {
+              "ref": "E35",
+              "column": "E",
+              "row": 35,
+              "style": "9",
+              "text": ""
+            },
+            {
+              "ref": "F35",
+              "column": "F",
+              "row": 35,
+              "style": "9",
+              "text": ""
+            },
+            {
+              "ref": "G35",
+              "column": "G",
+              "row": 35,
+              "style": "13",
+              "text": ""
+            },
+            {
+              "ref": "H35",
+              "column": "H",
+              "row": 35,
+              "style": "10",
+              "text": ""
+            },
+            {
+              "ref": "I35",
+              "column": "I",
+              "row": 35,
+              "style": "9",
+              "text": ""
+            },
+            {
+              "ref": "J35",
+              "column": "J",
+              "row": 35,
+              "style": "5",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 36,
+          "cells": [
+            {
+              "ref": "A36",
+              "column": "A",
+              "row": 36,
+              "type": "s",
+              "style": "11",
+              "raw_value": "16",
+              "text": "- Totals may not add due to rounding"
+            }
+          ]
+        },
+        {
+          "row_number": 37,
+          "cells": [
+            {
+              "ref": "A37",
+              "column": "A",
+              "row": 37,
+              "type": "s",
+              "style": "12",
+              "raw_value": "17",
+              "text": "* Variance exceeds 100%"
+            }
+          ]
+        },
+        {
+          "row_number": 39,
+          "cells": [
+            {
+              "ref": "A39",
+              "column": "A",
+              "row": 39,
+              "style": "15",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 40,
+          "cells": [
+            {
+              "ref": "A40",
+              "column": "A",
+              "row": 40,
+              "style": "15",
+              "text": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "November 21 Explanations",
+      "sheet_id": "2",
+      "path": "xl/worksheets/sheet2.xml",
+      "row_count": 75,
+      "cell_count": 606,
+      "rows": [
+        {
+          "row_number": 1,
+          "cells": [
+            {
+              "ref": "A4",
+              "column": "A",
+              "row": 4,
+              "style": "46",
+              "raw_value": "28",
+              "text": "28"
+            },
+            {
+              "ref": "C4",
+              "column": "C",
+              "row": 4,
+              "style": "47",
+              "text": ""
+            },
+            {
+              "ref": "D4",
+              "column": "D",
+              "row": 4,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "E4",
+              "column": "E",
+              "row": 4,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "F4",
+              "column": "F",
+              "row": 4,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "G4",
+              "column": "G",
+              "row": 4,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "H4",
+              "column": "H",
+              "row": 4,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "I4",
+              "column": "I",
+              "row": 4,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "J4",
+              "column": "J",
+              "row": 4,
+              "style": "46",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 5,
+          "cells": [
+            {
+              "ref": "A5",
+              "column": "A",
+              "row": 5,
+              "style": "48",
+              "raw_value": "29",
+              "text": "29"
+            },
+            {
+              "ref": "C5",
+              "column": "C",
+              "row": 5,
+              "style": "49",
+              "raw_value": "30",
+              "text": "30"
+            },
+            {
+              "ref": "F5",
+              "column": "F",
+              "row": 5,
+              "style": "51",
+              "text": ""
+            },
+            {
+              "ref": "G5",
+              "column": "G",
+              "row": 5,
+              "style": "51",
+              "text": ""
+            },
+            {
+              "ref": "H5",
+              "column": "H",
+              "row": 5,
+              "style": "51",
+              "text": ""
+            },
+            {
+              "ref": "I5",
+              "column": "I",
+              "row": 5,
+              "style": "52",
+              "text": ""
+            },
+            {
+              "ref": "J5",
+              "column": "J",
+              "row": 5,
+              "style": "52",
+              "text": ""
+            },
+            {
+              "ref": "K5",
+              "column": "K",
+              "row": 5,
+              "style": "52",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 6,
+          "cells": [
+            {
+              "ref": "A6",
+              "column": "A",
+              "row": 6,
+              "style": "46",
+              "raw_value": "31",
+              "text": "31"
+            },
+            {
+              "ref": "C6",
+              "column": "C",
+              "row": 6,
+              "type": "s",
+              "style": "53",
+              "raw_value": "32",
+              "text": "Percent"
+            },
+            {
+              "ref": "D6",
+              "column": "D",
+              "row": 6,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "E6",
+              "column": "E",
+              "row": 6,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "F6",
+              "column": "F",
+              "row": 6,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "G6",
+              "column": "G",
+              "row": 6,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "H6",
+              "column": "H",
+              "row": 6,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "I6",
+              "column": "I",
+              "row": 6,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "J6",
+              "column": "J",
+              "row": 6,
+              "style": "46",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 7,
+          "cells": [
+            {
+              "ref": "A7",
+              "column": "A",
+              "row": 7,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "B7",
+              "column": "B",
+              "row": 7,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "C7",
+              "column": "C",
+              "row": 7,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "D7",
+              "column": "D",
+              "row": 7,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "E7",
+              "column": "E",
+              "row": 7,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "F7",
+              "column": "F",
+              "row": 7,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "G7",
+              "column": "G",
+              "row": 7,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "H7",
+              "column": "H",
+              "row": 7,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "I7",
+              "column": "I",
+              "row": 7,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "J7",
+              "column": "J",
+              "row": 7,
+              "style": "46",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 8,
+          "cells": [
+            {
+              "ref": "A8",
+              "column": "A",
+              "row": 8,
+              "type": "s",
+              "style": "54",
+              "raw_value": "4",
+              "text": "Total Revenue"
+            },
+            {
+              "ref": "B8",
+              "column": "B",
+              "row": 8,
+              "style": "55",
+              "raw_value": "-23.9",
+              "text": "-23.9"
+            },
+            {
+              "ref": "C8",
+              "column": "C",
+              "row": 8,
+              "style": "56",
+              "raw_value": "-5.0000000000000001E-3",
+              "text": "-5.0000000000000001E-3"
+            },
+            {
+              "ref": "D8",
+              "column": "D",
+              "row": 8,
+              "style": "46",
+              "raw_value": "33",
+              "text": "33"
+            },
+            {
+              "ref": "F8",
+              "column": "F",
+              "row": 8,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "G8",
+              "column": "G",
+              "row": 8,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "H8",
+              "column": "H",
+              "row": 8,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "I8",
+              "column": "I",
+              "row": 8,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "J8",
+              "column": "J",
+              "row": 8,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "K8",
+              "column": "K",
+              "row": 8,
+              "style": "58",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 9,
+          "cells": [
+            {
+              "ref": "A9",
+              "column": "A",
+              "row": 9,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "B9",
+              "column": "B",
+              "row": 9,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "C9",
+              "column": "C",
+              "row": 9,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "D9",
+              "column": "D",
+              "row": 9,
+              "style": "46",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 10,
+          "cells": [
+            {
+              "ref": "A10",
+              "column": "A",
+              "row": 10,
+              "style": "46",
+              "raw_value": "34",
+              "text": "34"
+            },
+            {
+              "ref": "F10",
+              "column": "F",
+              "row": 10,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "G10",
+              "column": "G",
+              "row": 10,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "H10",
+              "column": "H",
+              "row": 10,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "I10",
+              "column": "I",
+              "row": 10,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "J10",
+              "column": "J",
+              "row": 10,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "K10",
+              "column": "K",
+              "row": 10,
+              "style": "57",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 11,
+          "cells": [
+            {
+              "ref": "A11",
+              "column": "A",
+              "row": 11,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "B11",
+              "column": "B",
+              "row": 11,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "C11",
+              "column": "C",
+              "row": 11,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "D11",
+              "column": "D",
+              "row": 11,
+              "style": "46",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 12,
+          "cells": [
+            {
+              "ref": "A12",
+              "column": "A",
+              "row": 12,
+              "style": "46",
+              "raw_value": "35",
+              "text": "35"
+            },
+            {
+              "ref": "F12",
+              "column": "F",
+              "row": 12,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "G12",
+              "column": "G",
+              "row": 12,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "H12",
+              "column": "H",
+              "row": 12,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "I12",
+              "column": "I",
+              "row": 12,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "J12",
+              "column": "J",
+              "row": 12,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "K12",
+              "column": "K",
+              "row": 12,
+              "style": "58",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 13,
+          "cells": [
+            {
+              "ref": "A13",
+              "column": "A",
+              "row": 13,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "B13",
+              "column": "B",
+              "row": 13,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "C13",
+              "column": "C",
+              "row": 13,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "D13",
+              "column": "D",
+              "row": 13,
+              "style": "46",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 14,
+          "cells": [
+            {
+              "ref": "A14",
+              "column": "A",
+              "row": 14,
+              "style": "46",
+              "raw_value": "36",
+              "text": "36"
+            },
+            {
+              "ref": "F14",
+              "column": "F",
+              "row": 14,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "G14",
+              "column": "G",
+              "row": 14,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "H14",
+              "column": "H",
+              "row": 14,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "I14",
+              "column": "I",
+              "row": 14,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "J14",
+              "column": "J",
+              "row": 14,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "K14",
+              "column": "K",
+              "row": 14,
+              "style": "58",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 15,
+          "cells": [
+            {
+              "ref": "A15",
+              "column": "A",
+              "row": 15,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "B15",
+              "column": "B",
+              "row": 15,
+              "style": "59",
+              "text": ""
+            },
+            {
+              "ref": "C15",
+              "column": "C",
+              "row": 15,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "D15",
+              "column": "D",
+              "row": 15,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "E15",
+              "column": "E",
+              "row": 15,
+              "style": "54",
+              "text": ""
+            },
+            {
+              "ref": "F15",
+              "column": "F",
+              "row": 15,
+              "style": "60",
+              "text": ""
+            },
+            {
+              "ref": "G15",
+              "column": "G",
+              "row": 15,
+              "style": "60",
+              "text": ""
+            },
+            {
+              "ref": "H15",
+              "column": "H",
+              "row": 15,
+              "style": "60",
+              "text": ""
+            },
+            {
+              "ref": "I15",
+              "column": "I",
+              "row": 15,
+              "style": "60",
+              "text": ""
+            },
+            {
+              "ref": "J15",
+              "column": "J",
+              "row": 15,
+              "style": "60",
+              "text": ""
+            },
+            {
+              "ref": "K15",
+              "column": "K",
+              "row": 15,
+              "style": "60",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 16,
+          "cells": [
+            {
+              "ref": "A16",
+              "column": "A",
+              "row": 16,
+              "style": "46",
+              "raw_value": "37",
+              "text": "37"
+            },
+            {
+              "ref": "F16",
+              "column": "F",
+              "row": 16,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "G16",
+              "column": "G",
+              "row": 16,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "H16",
+              "column": "H",
+              "row": 16,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "I16",
+              "column": "I",
+              "row": 16,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "J16",
+              "column": "J",
+              "row": 16,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "K16",
+              "column": "K",
+              "row": 16,
+              "style": "57",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 17,
+          "cells": [
+            {
+              "ref": "A17",
+              "column": "A",
+              "row": 17,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "B17",
+              "column": "B",
+              "row": 17,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "C17",
+              "column": "C",
+              "row": 17,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "D17",
+              "column": "D",
+              "row": 17,
+              "style": "46",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 18,
+          "cells": [
+            {
+              "ref": "A18",
+              "column": "A",
+              "row": 18,
+              "style": "46",
+              "raw_value": "38",
+              "text": "38"
+            },
+            {
+              "ref": "F18",
+              "column": "F",
+              "row": 18,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "G18",
+              "column": "G",
+              "row": 18,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "H18",
+              "column": "H",
+              "row": 18,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "I18",
+              "column": "I",
+              "row": 18,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "J18",
+              "column": "J",
+              "row": 18,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "K18",
+              "column": "K",
+              "row": 18,
+              "style": "58",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 19,
+          "cells": [
+            {
+              "ref": "A19",
+              "column": "A",
+              "row": 19,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "B19",
+              "column": "B",
+              "row": 19,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "C19",
+              "column": "C",
+              "row": 19,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "D19",
+              "column": "D",
+              "row": 19,
+              "style": "46",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 20,
+          "cells": [
+            {
+              "ref": "A20",
+              "column": "A",
+              "row": 20,
+              "style": "46",
+              "raw_value": "39",
+              "text": "39"
+            },
+            {
+              "ref": "F20",
+              "column": "F",
+              "row": 20,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "G20",
+              "column": "G",
+              "row": 20,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "H20",
+              "column": "H",
+              "row": 20,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "I20",
+              "column": "I",
+              "row": 20,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "J20",
+              "column": "J",
+              "row": 20,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "K20",
+              "column": "K",
+              "row": 20,
+              "style": "58",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 21,
+          "cells": [
+            {
+              "ref": "A21",
+              "column": "A",
+              "row": 21,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "B21",
+              "column": "B",
+              "row": 21,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "C21",
+              "column": "C",
+              "row": 21,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "D21",
+              "column": "D",
+              "row": 21,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "E21",
+              "column": "E",
+              "row": 21,
+              "style": "54",
+              "text": ""
+            },
+            {
+              "ref": "F21",
+              "column": "F",
+              "row": 21,
+              "style": "54",
+              "text": ""
+            },
+            {
+              "ref": "G21",
+              "column": "G",
+              "row": 21,
+              "style": "54",
+              "text": ""
+            },
+            {
+              "ref": "H21",
+              "column": "H",
+              "row": 21,
+              "style": "54",
+              "text": ""
+            },
+            {
+              "ref": "I21",
+              "column": "I",
+              "row": 21,
+              "style": "54",
+              "text": ""
+            },
+            {
+              "ref": "J21",
+              "column": "J",
+              "row": 21,
+              "style": "54",
+              "text": ""
+            },
+            {
+              "ref": "K21",
+              "column": "K",
+              "row": 21,
+              "style": "54",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 22,
+          "cells": [
+            {
+              "ref": "A22",
+              "column": "A",
+              "row": 22,
+              "style": "46",
+              "raw_value": "40",
+              "text": "40"
+            },
+            {
+              "ref": "F22",
+              "column": "F",
+              "row": 22,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "G22",
+              "column": "G",
+              "row": 22,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "H22",
+              "column": "H",
+              "row": 22,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "I22",
+              "column": "I",
+              "row": 22,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "J22",
+              "column": "J",
+              "row": 22,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "K22",
+              "column": "K",
+              "row": 22,
+              "style": "58",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 23,
+          "cells": [
+            {
+              "ref": "A23",
+              "column": "A",
+              "row": 23,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "B23",
+              "column": "B",
+              "row": 23,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "C23",
+              "column": "C",
+              "row": 23,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "D23",
+              "column": "D",
+              "row": 23,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "E23",
+              "column": "E",
+              "row": 23,
+              "style": "54",
+              "text": ""
+            },
+            {
+              "ref": "F23",
+              "column": "F",
+              "row": 23,
+              "style": "54",
+              "text": ""
+            },
+            {
+              "ref": "G23",
+              "column": "G",
+              "row": 23,
+              "style": "54",
+              "text": ""
+            },
+            {
+              "ref": "H23",
+              "column": "H",
+              "row": 23,
+              "style": "54",
+              "text": ""
+            },
+            {
+              "ref": "I23",
+              "column": "I",
+              "row": 23,
+              "style": "54",
+              "text": ""
+            },
+            {
+              "ref": "J23",
+              "column": "J",
+              "row": 23,
+              "style": "54",
+              "text": ""
+            },
+            {
+              "ref": "K23",
+              "column": "K",
+              "row": 23,
+              "style": "54",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 24,
+          "cells": [
+            {
+              "ref": "A24",
+              "column": "A",
+              "row": 24,
+              "style": "46",
+              "raw_value": "41",
+              "text": "41"
+            },
+            {
+              "ref": "F24",
+              "column": "F",
+              "row": 24,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "G24",
+              "column": "G",
+              "row": 24,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "H24",
+              "column": "H",
+              "row": 24,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "I24",
+              "column": "I",
+              "row": 24,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "J24",
+              "column": "J",
+              "row": 24,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "K24",
+              "column": "K",
+              "row": 24,
+              "style": "58",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 25,
+          "cells": [
+            {
+              "ref": "A25",
+              "column": "A",
+              "row": 25,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "B25",
+              "column": "B",
+              "row": 25,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "C25",
+              "column": "C",
+              "row": 25,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "D25",
+              "column": "D",
+              "row": 25,
+              "style": "46",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 26,
+          "cells": [
+            {
+              "ref": "A26",
+              "column": "A",
+              "row": 26,
+              "style": "54",
+              "text": ""
+            },
+            {
+              "ref": "B26",
+              "column": "B",
+              "row": 26,
+              "style": "59",
+              "text": ""
+            },
+            {
+              "ref": "C26",
+              "column": "C",
+              "row": 26,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "D26",
+              "column": "D",
+              "row": 26,
+              "style": "46",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 27,
+          "cells": [
+            {
+              "ref": "A27",
+              "column": "A",
+              "row": 27,
+              "type": "s",
+              "style": "61",
+              "raw_value": "42",
+              "text": "Total  Expenses"
+            },
+            {
+              "ref": "B27",
+              "column": "B",
+              "row": 27,
+              "style": "62",
+              "raw_value": "589.6",
+              "text": "589.6"
+            },
+            {
+              "ref": "C27",
+              "column": "C",
+              "row": 27,
+              "style": "63",
+              "raw_value": "3.7999999999999999E-2",
+              "text": "3.7999999999999999E-2"
+            },
+            {
+              "ref": "D27",
+              "column": "D",
+              "row": 27,
+              "style": "46",
+              "raw_value": "43",
+              "text": "43"
+            },
+            {
+              "ref": "F27",
+              "column": "F",
+              "row": 27,
+              "style": "65",
+              "text": ""
+            },
+            {
+              "ref": "G27",
+              "column": "G",
+              "row": 27,
+              "style": "65",
+              "text": ""
+            },
+            {
+              "ref": "H27",
+              "column": "H",
+              "row": 27,
+              "style": "65",
+              "text": ""
+            },
+            {
+              "ref": "I27",
+              "column": "I",
+              "row": 27,
+              "style": "65",
+              "text": ""
+            },
+            {
+              "ref": "J27",
+              "column": "J",
+              "row": 27,
+              "style": "65",
+              "text": ""
+            },
+            {
+              "ref": "K27",
+              "column": "K",
+              "row": 27,
+              "style": "65",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 28,
+          "cells": [
+            {
+              "ref": "A28",
+              "column": "A",
+              "row": 28,
+              "style": "54",
+              "text": ""
+            },
+            {
+              "ref": "B28",
+              "column": "B",
+              "row": 28,
+              "style": "59",
+              "text": ""
+            },
+            {
+              "ref": "C28",
+              "column": "C",
+              "row": 28,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "D28",
+              "column": "D",
+              "row": 28,
+              "style": "46",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 29,
+          "cells": [
+            {
+              "ref": "D29",
+              "column": "D",
+              "row": 29,
+              "style": "46",
+              "raw_value": "44",
+              "text": "44"
+            },
+            {
+              "ref": "F29",
+              "column": "F",
+              "row": 29,
+              "style": "65",
+              "text": ""
+            },
+            {
+              "ref": "G29",
+              "column": "G",
+              "row": 29,
+              "style": "65",
+              "text": ""
+            },
+            {
+              "ref": "H29",
+              "column": "H",
+              "row": 29,
+              "style": "65",
+              "text": ""
+            },
+            {
+              "ref": "I29",
+              "column": "I",
+              "row": 29,
+              "style": "65",
+              "text": ""
+            },
+            {
+              "ref": "J29",
+              "column": "J",
+              "row": 29,
+              "style": "65",
+              "text": ""
+            },
+            {
+              "ref": "K29",
+              "column": "K",
+              "row": 29,
+              "style": "65",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 30,
+          "cells": [
+            {
+              "ref": "D30",
+              "column": "D",
+              "row": 30,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "E30",
+              "column": "E",
+              "row": 30,
+              "style": "61",
+              "text": ""
+            },
+            {
+              "ref": "F30",
+              "column": "F",
+              "row": 30,
+              "style": "66",
+              "text": ""
+            },
+            {
+              "ref": "G30",
+              "column": "G",
+              "row": 30,
+              "style": "66",
+              "text": ""
+            },
+            {
+              "ref": "H30",
+              "column": "H",
+              "row": 30,
+              "style": "66",
+              "text": ""
+            },
+            {
+              "ref": "I30",
+              "column": "I",
+              "row": 30,
+              "style": "66",
+              "text": ""
+            },
+            {
+              "ref": "J30",
+              "column": "J",
+              "row": 30,
+              "style": "66",
+              "text": ""
+            },
+            {
+              "ref": "K30",
+              "column": "K",
+              "row": 30,
+              "style": "66",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 31,
+          "cells": [
+            {
+              "ref": "A31",
+              "column": "A",
+              "row": 31,
+              "style": "46",
+              "raw_value": "28",
+              "text": "28"
+            },
+            {
+              "ref": "C31",
+              "column": "C",
+              "row": 31,
+              "style": "47",
+              "text": ""
+            },
+            {
+              "ref": "D31",
+              "column": "D",
+              "row": 31,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "E31",
+              "column": "E",
+              "row": 31,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "F31",
+              "column": "F",
+              "row": 31,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "G31",
+              "column": "G",
+              "row": 31,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "H31",
+              "column": "H",
+              "row": 31,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "I31",
+              "column": "I",
+              "row": 31,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "J31",
+              "column": "J",
+              "row": 31,
+              "style": "46",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 32,
+          "cells": [
+            {
+              "ref": "A32",
+              "column": "A",
+              "row": 32,
+              "style": "48",
+              "raw_value": "29",
+              "text": "29"
+            },
+            {
+              "ref": "C32",
+              "column": "C",
+              "row": 32,
+              "style": "49",
+              "raw_value": "30",
+              "text": "30"
+            },
+            {
+              "ref": "F32",
+              "column": "F",
+              "row": 32,
+              "style": "51",
+              "text": ""
+            },
+            {
+              "ref": "G32",
+              "column": "G",
+              "row": 32,
+              "style": "51",
+              "text": ""
+            },
+            {
+              "ref": "H32",
+              "column": "H",
+              "row": 32,
+              "style": "51",
+              "text": ""
+            },
+            {
+              "ref": "I32",
+              "column": "I",
+              "row": 32,
+              "style": "52",
+              "text": ""
+            },
+            {
+              "ref": "J32",
+              "column": "J",
+              "row": 32,
+              "style": "52",
+              "text": ""
+            },
+            {
+              "ref": "K32",
+              "column": "K",
+              "row": 32,
+              "style": "52",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 33,
+          "cells": [
+            {
+              "ref": "A33",
+              "column": "A",
+              "row": 33,
+              "style": "46",
+              "raw_value": "31",
+              "text": "31"
+            },
+            {
+              "ref": "C33",
+              "column": "C",
+              "row": 33,
+              "type": "s",
+              "style": "53",
+              "raw_value": "32",
+              "text": "Percent"
+            },
+            {
+              "ref": "D33",
+              "column": "D",
+              "row": 33,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "E33",
+              "column": "E",
+              "row": 33,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "F33",
+              "column": "F",
+              "row": 33,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "G33",
+              "column": "G",
+              "row": 33,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "H33",
+              "column": "H",
+              "row": 33,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "I33",
+              "column": "I",
+              "row": 33,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "J33",
+              "column": "J",
+              "row": 33,
+              "style": "46",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 34,
+          "cells": [
+            {
+              "ref": "A34",
+              "column": "A",
+              "row": 34,
+              "style": "54",
+              "text": ""
+            },
+            {
+              "ref": "B34",
+              "column": "B",
+              "row": 34,
+              "style": "59",
+              "text": ""
+            },
+            {
+              "ref": "C34",
+              "column": "C",
+              "row": 34,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "D34",
+              "column": "D",
+              "row": 34,
+              "style": "46",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 35,
+          "cells": [
+            {
+              "ref": "A35",
+              "column": "A",
+              "row": 35,
+              "style": "54",
+              "raw_value": "45",
+              "text": "45"
+            },
+            {
+              "ref": "F35",
+              "column": "F",
+              "row": 35,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "G35",
+              "column": "G",
+              "row": 35,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "H35",
+              "column": "H",
+              "row": 35,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "I35",
+              "column": "I",
+              "row": 35,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "J35",
+              "column": "J",
+              "row": 35,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "K35",
+              "column": "K",
+              "row": 35,
+              "style": "64",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 36,
+          "cells": [
+            {
+              "ref": "A36",
+              "column": "A",
+              "row": 36,
+              "style": "54",
+              "text": ""
+            },
+            {
+              "ref": "B36",
+              "column": "B",
+              "row": 36,
+              "style": "59",
+              "text": ""
+            },
+            {
+              "ref": "C36",
+              "column": "C",
+              "row": 36,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "D36",
+              "column": "D",
+              "row": 36,
+              "style": "46",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 37,
+          "cells": [
+            {
+              "ref": "A37",
+              "column": "A",
+              "row": 37,
+              "style": "54",
+              "raw_value": "46",
+              "text": "46"
+            },
+            {
+              "ref": "F37",
+              "column": "F",
+              "row": 37,
+              "style": "65",
+              "text": ""
+            },
+            {
+              "ref": "G37",
+              "column": "G",
+              "row": 37,
+              "style": "65",
+              "text": ""
+            },
+            {
+              "ref": "H37",
+              "column": "H",
+              "row": 37,
+              "style": "65",
+              "text": ""
+            },
+            {
+              "ref": "I37",
+              "column": "I",
+              "row": 37,
+              "style": "65",
+              "text": ""
+            },
+            {
+              "ref": "J37",
+              "column": "J",
+              "row": 37,
+              "style": "65",
+              "text": ""
+            },
+            {
+              "ref": "K37",
+              "column": "K",
+              "row": 37,
+              "style": "65",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 38,
+          "cells": [
+            {
+              "ref": "A38",
+              "column": "A",
+              "row": 38,
+              "style": "54",
+              "text": ""
+            },
+            {
+              "ref": "B38",
+              "column": "B",
+              "row": 38,
+              "style": "59",
+              "text": ""
+            },
+            {
+              "ref": "C38",
+              "column": "C",
+              "row": 38,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "D38",
+              "column": "D",
+              "row": 38,
+              "style": "46",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 39,
+          "cells": [
+            {
+              "ref": "A39",
+              "column": "A",
+              "row": 39,
+              "style": "54",
+              "raw_value": "47",
+              "text": "47"
+            },
+            {
+              "ref": "F39",
+              "column": "F",
+              "row": 39,
+              "style": "65",
+              "text": ""
+            },
+            {
+              "ref": "G39",
+              "column": "G",
+              "row": 39,
+              "style": "65",
+              "text": ""
+            },
+            {
+              "ref": "H39",
+              "column": "H",
+              "row": 39,
+              "style": "65",
+              "text": ""
+            },
+            {
+              "ref": "I39",
+              "column": "I",
+              "row": 39,
+              "style": "65",
+              "text": ""
+            },
+            {
+              "ref": "J39",
+              "column": "J",
+              "row": 39,
+              "style": "65",
+              "text": ""
+            },
+            {
+              "ref": "K39",
+              "column": "K",
+              "row": 39,
+              "style": "65",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 40,
+          "cells": [
+            {
+              "ref": "A40",
+              "column": "A",
+              "row": 40,
+              "style": "54",
+              "text": ""
+            },
+            {
+              "ref": "B40",
+              "column": "B",
+              "row": 40,
+              "style": "59",
+              "text": ""
+            },
+            {
+              "ref": "C40",
+              "column": "C",
+              "row": 40,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "D40",
+              "column": "D",
+              "row": 40,
+              "style": "46",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 41,
+          "cells": [
+            {
+              "ref": "A41",
+              "column": "A",
+              "row": 41,
+              "style": "54",
+              "raw_value": "48",
+              "text": "48"
+            },
+            {
+              "ref": "F41",
+              "column": "F",
+              "row": 41,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "G41",
+              "column": "G",
+              "row": 41,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "H41",
+              "column": "H",
+              "row": 41,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "I41",
+              "column": "I",
+              "row": 41,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "J41",
+              "column": "J",
+              "row": 41,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "K41",
+              "column": "K",
+              "row": 41,
+              "style": "57",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 42,
+          "cells": [
+            {
+              "ref": "A42",
+              "column": "A",
+              "row": 42,
+              "style": "54",
+              "text": ""
+            },
+            {
+              "ref": "B42",
+              "column": "B",
+              "row": 42,
+              "style": "59",
+              "text": ""
+            },
+            {
+              "ref": "C42",
+              "column": "C",
+              "row": 42,
+              "style": "46",
+              "text": ""
+            },
+            {
+              "ref": "D42",
+              "column": "D",
+              "row": 42,
+              "style": "46",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 43,
+          "cells": [
+            {
+              "ref": "A43",
+              "column": "A",
+              "row": 43,
+              "style": "61",
+              "raw_value": "49",
+              "text": "49"
+            },
+            {
+              "ref": "F43",
+              "column": "F",
+              "row": 43,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "G43",
+              "column": "G",
+              "row": 43,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "H43",
+              "column": "H",
+              "row": 43,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "I43",
+              "column": "I",
+              "row": 43,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "J43",
+              "column": "J",
+              "row": 43,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "K43",
+              "column": "K",
+              "row": 43,
+              "style": "57",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 44,
+          "cells": [
+            {
+              "ref": "A44",
+              "column": "A",
+              "row": 44,
+              "style": "61",
+              "text": ""
+            },
+            {
+              "ref": "B44",
+              "column": "B",
+              "row": 44,
+              "style": "62",
+              "text": ""
+            },
+            {
+              "ref": "C44",
+              "column": "C",
+              "row": 44,
+              "style": "63",
+              "text": ""
+            },
+            {
+              "ref": "D44",
+              "column": "D",
+              "row": 44,
+              "style": "54",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 45,
+          "cells": [
+            {
+              "ref": "A45",
+              "column": "A",
+              "row": 45,
+              "style": "61",
+              "raw_value": "50",
+              "text": "50"
+            },
+            {
+              "ref": "F45",
+              "column": "F",
+              "row": 45,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "G45",
+              "column": "G",
+              "row": 45,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "H45",
+              "column": "H",
+              "row": 45,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "I45",
+              "column": "I",
+              "row": 45,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "J45",
+              "column": "J",
+              "row": 45,
+              "style": "58",
+              "text": ""
+            },
+            {
+              "ref": "K45",
+              "column": "K",
+              "row": 45,
+              "style": "58",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 46,
+          "cells": [
+            {
+              "ref": "A46",
+              "column": "A",
+              "row": 46,
+              "style": "61",
+              "text": ""
+            },
+            {
+              "ref": "B46",
+              "column": "B",
+              "row": 46,
+              "style": "62",
+              "text": ""
+            },
+            {
+              "ref": "C46",
+              "column": "C",
+              "row": 46,
+              "style": "63",
+              "text": ""
+            },
+            {
+              "ref": "D46",
+              "column": "D",
+              "row": 46,
+              "style": "54",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 47,
+          "cells": [
+            {
+              "ref": "A47",
+              "column": "A",
+              "row": 47,
+              "style": "61",
+              "raw_value": "51",
+              "text": "51"
+            },
+            {
+              "ref": "F47",
+              "column": "F",
+              "row": 47,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "G47",
+              "column": "G",
+              "row": 47,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "H47",
+              "column": "H",
+              "row": 47,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "I47",
+              "column": "I",
+              "row": 47,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "J47",
+              "column": "J",
+              "row": 47,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "K47",
+              "column": "K",
+              "row": 47,
+              "style": "64",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 48,
+          "cells": [
+            {
+              "ref": "A48",
+              "column": "A",
+              "row": 48,
+              "style": "61",
+              "text": ""
+            },
+            {
+              "ref": "B48",
+              "column": "B",
+              "row": 48,
+              "style": "62",
+              "text": ""
+            },
+            {
+              "ref": "C48",
+              "column": "C",
+              "row": 48,
+              "style": "63",
+              "text": ""
+            },
+            {
+              "ref": "D48",
+              "column": "D",
+              "row": 48,
+              "style": "54",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 49,
+          "cells": [
+            {
+              "ref": "A49",
+              "column": "A",
+              "row": 49,
+              "style": "61",
+              "raw_value": "52",
+              "text": "52"
+            },
+            {
+              "ref": "F49",
+              "column": "F",
+              "row": 49,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "G49",
+              "column": "G",
+              "row": 49,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "H49",
+              "column": "H",
+              "row": 49,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "I49",
+              "column": "I",
+              "row": 49,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "J49",
+              "column": "J",
+              "row": 49,
+              "style": "57",
+              "text": ""
+            },
+            {
+              "ref": "K49",
+              "column": "K",
+              "row": 49,
+              "style": "57",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 50,
+          "cells": [
+            {
+              "ref": "B50",
+              "column": "B",
+              "row": 50,
+              "style": "68",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 51,
+          "cells": [
+            {
+              "ref": "A51",
+              "column": "A",
+              "row": 51,
+              "type": "s",
+              "style": "69",
+              "raw_value": "18",
+              "text": "Subsidies"
+            },
+            {
+              "ref": "B51",
+              "column": "B",
+              "row": 51,
+              "style": "62",
+              "raw_value": "104.5",
+              "text": "104.5"
+            },
+            {
+              "ref": "C51",
+              "column": "C",
+              "row": 51,
+              "style": "70",
+              "raw_value": "1.6E-2",
+              "text": "1.6E-2"
+            },
+            {
+              "ref": "D51",
+              "column": "D",
+              "row": 51,
+              "style": "70",
+              "raw_value": "53",
+              "text": "53"
+            },
+            {
+              "ref": "F51",
+              "column": "F",
+              "row": 51,
+              "style": "71",
+              "text": ""
+            },
+            {
+              "ref": "G51",
+              "column": "G",
+              "row": 51,
+              "style": "71",
+              "text": ""
+            },
+            {
+              "ref": "H51",
+              "column": "H",
+              "row": 51,
+              "style": "71",
+              "text": ""
+            },
+            {
+              "ref": "I51",
+              "column": "I",
+              "row": 51,
+              "style": "71",
+              "text": ""
+            },
+            {
+              "ref": "J51",
+              "column": "J",
+              "row": 51,
+              "style": "71",
+              "text": ""
+            },
+            {
+              "ref": "K51",
+              "column": "K",
+              "row": 51,
+              "style": "71",
+              "text": ""
+            },
+            {
+              "ref": "AH51",
+              "column": "AH",
+              "row": 51,
+              "style": "72",
+              "text": ""
+            },
+            {
+              "ref": "AI51",
+              "column": "AI",
+              "row": 51,
+              "style": "72",
+              "text": ""
+            },
+            {
+              "ref": "AJ51",
+              "column": "AJ",
+              "row": 51,
+              "style": "72",
+              "text": ""
+            },
+            {
+              "ref": "AK51",
+              "column": "AK",
+              "row": 51,
+              "style": "72",
+              "text": ""
+            },
+            {
+              "ref": "AL51",
+              "column": "AL",
+              "row": 51,
+              "style": "72",
+              "text": ""
+            },
+            {
+              "ref": "AM51",
+              "column": "AM",
+              "row": 51,
+              "style": "72",
+              "text": ""
+            },
+            {
+              "ref": "AN51",
+              "column": "AN",
+              "row": 51,
+              "style": "72",
+              "text": ""
+            },
+            {
+              "ref": "AO51",
+              "column": "AO",
+              "row": 51,
+              "style": "72",
+              "text": ""
+            },
+            {
+              "ref": "AP51",
+              "column": "AP",
+              "row": 51,
+              "style": "72",
+              "text": ""
+            },
+            {
+              "ref": "AQ51",
+              "column": "AQ",
+              "row": 51,
+              "style": "72",
+              "text": ""
+            },
+            {
+              "ref": "AR51",
+              "column": "AR",
+              "row": 51,
+              "style": "72",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 52,
+          "cells": [
+            {
+              "ref": "A52",
+              "column": "A",
+              "row": 52,
+              "style": "69",
+              "text": ""
+            },
+            {
+              "ref": "B52",
+              "column": "B",
+              "row": 52,
+              "style": "73",
+              "text": ""
+            },
+            {
+              "ref": "C52",
+              "column": "C",
+              "row": 52,
+              "style": "70",
+              "text": ""
+            },
+            {
+              "ref": "D52",
+              "column": "D",
+              "row": 52,
+              "style": "70",
+              "text": ""
+            },
+            {
+              "ref": "E52",
+              "column": "E",
+              "row": 52,
+              "style": "71",
+              "text": ""
+            },
+            {
+              "ref": "F52",
+              "column": "F",
+              "row": 52,
+              "style": "71",
+              "text": ""
+            },
+            {
+              "ref": "G52",
+              "column": "G",
+              "row": 52,
+              "style": "71",
+              "text": ""
+            },
+            {
+              "ref": "H52",
+              "column": "H",
+              "row": 52,
+              "style": "71",
+              "text": ""
+            },
+            {
+              "ref": "I52",
+              "column": "I",
+              "row": 52,
+              "style": "71",
+              "text": ""
+            },
+            {
+              "ref": "J52",
+              "column": "J",
+              "row": 52,
+              "style": "71",
+              "text": ""
+            },
+            {
+              "ref": "K52",
+              "column": "K",
+              "row": 52,
+              "style": "71",
+              "text": ""
+            },
+            {
+              "ref": "AH52",
+              "column": "AH",
+              "row": 52,
+              "style": "72",
+              "text": ""
+            },
+            {
+              "ref": "AI52",
+              "column": "AI",
+              "row": 52,
+              "style": "72",
+              "text": ""
+            },
+            {
+              "ref": "AJ52",
+              "column": "AJ",
+              "row": 52,
+              "style": "72",
+              "text": ""
+            },
+            {
+              "ref": "AK52",
+              "column": "AK",
+              "row": 52,
+              "style": "72",
+              "text": ""
+            },
+            {
+              "ref": "AL52",
+              "column": "AL",
+              "row": 52,
+              "style": "72",
+              "text": ""
+            },
+            {
+              "ref": "AM52",
+              "column": "AM",
+              "row": 52,
+              "style": "72",
+              "text": ""
+            },
+            {
+              "ref": "AN52",
+              "column": "AN",
+              "row": 52,
+              "style": "72",
+              "text": ""
+            },
+            {
+              "ref": "AO52",
+              "column": "AO",
+              "row": 52,
+              "style": "72",
+              "text": ""
+            },
+            {
+              "ref": "AP52",
+              "column": "AP",
+              "row": 52,
+              "style": "72",
+              "text": ""
+            },
+            {
+              "ref": "AQ52",
+              "column": "AQ",
+              "row": 52,
+              "style": "72",
+              "text": ""
+            },
+            {
+              "ref": "AR52",
+              "column": "AR",
+              "row": 52,
+              "style": "72",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 53,
+          "cells": [
+            {
+              "ref": "B53",
+              "column": "B",
+              "row": 53,
+              "style": "68",
+              "text": ""
+            },
+            {
+              "ref": "E53",
+              "column": "E",
+              "row": 53,
+              "style": "74",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 54,
+          "cells": [
+            {
+              "ref": "A54",
+              "column": "A",
+              "row": 54,
+              "type": "str",
+              "style": "69",
+              "raw_value": "Debt Service",
+              "formula": "[1]ConsVarExplan!A$51",
+              "text": "Debt Service"
+            },
+            {
+              "ref": "B54",
+              "column": "B",
+              "row": 54,
+              "style": "62",
+              "raw_value": "27.9",
+              "text": "27.9"
+            },
+            {
+              "ref": "C54",
+              "column": "C",
+              "row": 54,
+              "style": "75",
+              "raw_value": "1.0999999999999999E-2",
+              "text": "1.0999999999999999E-2"
+            },
+            {
+              "ref": "D54",
+              "column": "D",
+              "row": 54,
+              "style": "69",
+              "raw_value": "54",
+              "text": "54"
+            },
+            {
+              "ref": "F54",
+              "column": "F",
+              "row": 54,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "G54",
+              "column": "G",
+              "row": 54,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "H54",
+              "column": "H",
+              "row": 54,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "I54",
+              "column": "I",
+              "row": 54,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "J54",
+              "column": "J",
+              "row": 54,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "K54",
+              "column": "K",
+              "row": 54,
+              "style": "64",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 55,
+          "cells": [
+            {
+              "ref": "B55",
+              "column": "B",
+              "row": 55,
+              "style": "76",
+              "text": ""
+            },
+            {
+              "ref": "C55",
+              "column": "C",
+              "row": 55,
+              "style": "77",
+              "text": ""
+            },
+            {
+              "ref": "E55",
+              "column": "E",
+              "row": 55,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "F55",
+              "column": "F",
+              "row": 55,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "G55",
+              "column": "G",
+              "row": 55,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "H55",
+              "column": "H",
+              "row": 55,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "I55",
+              "column": "I",
+              "row": 55,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "J55",
+              "column": "J",
+              "row": 55,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "K55",
+              "column": "K",
+              "row": 55,
+              "style": "64",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 56,
+          "cells": [
+            {
+              "ref": "E56",
+              "column": "E",
+              "row": 56,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "F56",
+              "column": "F",
+              "row": 56,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "G56",
+              "column": "G",
+              "row": 56,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "H56",
+              "column": "H",
+              "row": 56,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "I56",
+              "column": "I",
+              "row": 56,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "J56",
+              "column": "J",
+              "row": 56,
+              "style": "64",
+              "text": ""
+            },
+            {
+              "ref": "K56",
+              "column": "K",
+              "row": 56,
+              "style": "64",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 57,
+          "cells": [
+            {
+              "ref": "E57",
+              "column": "E",
+              "row": 57,
+              "text": ""
+            },
+            {
+              "ref": "F57",
+              "column": "F",
+              "row": 57,
+              "text": ""
+            },
+            {
+              "ref": "G57",
+              "column": "G",
+              "row": 57,
+              "text": ""
+            },
+            {
+              "ref": "H57",
+              "column": "H",
+              "row": 57,
+              "text": ""
+            },
+            {
+              "ref": "I57",
+              "column": "I",
+              "row": 57,
+              "text": ""
+            },
+            {
+              "ref": "J57",
+              "column": "J",
+              "row": 57,
+              "text": ""
+            },
+            {
+              "ref": "K57",
+              "column": "K",
+              "row": 57,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 58,
+          "cells": [
+            {
+              "ref": "A58",
+              "column": "A",
+              "row": 58,
+              "style": "78",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 59,
+          "cells": [
+            {
+              "ref": "A59",
+              "column": "A",
+              "row": 59,
+              "type": "s",
+              "style": "79",
+              "raw_value": "55",
+              "text": "Notes: Totals may not add due to rounding"
+            },
+            {
+              "ref": "B59",
+              "column": "B",
+              "row": 59,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "C59",
+              "column": "C",
+              "row": 59,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "D59",
+              "column": "D",
+              "row": 59,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "E59",
+              "column": "E",
+              "row": 59,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "F59",
+              "column": "F",
+              "row": 59,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "G59",
+              "column": "G",
+              "row": 59,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "H59",
+              "column": "H",
+              "row": 59,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "I59",
+              "column": "I",
+              "row": 59,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "J59",
+              "column": "J",
+              "row": 59,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "K59",
+              "column": "K",
+              "row": 59,
+              "style": "45",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 60,
+          "cells": [
+            {
+              "ref": "A60",
+              "column": "A",
+              "row": 60,
+              "type": "s",
+              "style": "80",
+              "raw_value": "56",
+              "text": "           Results are preliminary and subject to audit review"
+            },
+            {
+              "ref": "B60",
+              "column": "B",
+              "row": 60,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "C60",
+              "column": "C",
+              "row": 60,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "D60",
+              "column": "D",
+              "row": 60,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "E60",
+              "column": "E",
+              "row": 60,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "F60",
+              "column": "F",
+              "row": 60,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "G60",
+              "column": "G",
+              "row": 60,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "H60",
+              "column": "H",
+              "row": 60,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "I60",
+              "column": "I",
+              "row": 60,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "J60",
+              "column": "J",
+              "row": 60,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "K60",
+              "column": "K",
+              "row": 60,
+              "style": "45",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 61,
+          "cells": [
+            {
+              "ref": "A61",
+              "column": "A",
+              "row": 61,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "B61",
+              "column": "B",
+              "row": 61,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "C61",
+              "column": "C",
+              "row": 61,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "D61",
+              "column": "D",
+              "row": 61,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "E61",
+              "column": "E",
+              "row": 61,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "F61",
+              "column": "F",
+              "row": 61,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "G61",
+              "column": "G",
+              "row": 61,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "H61",
+              "column": "H",
+              "row": 61,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "I61",
+              "column": "I",
+              "row": 61,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "J61",
+              "column": "J",
+              "row": 61,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "K61",
+              "column": "K",
+              "row": 61,
+              "style": "45",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 62,
+          "cells": [
+            {
+              "ref": "A62",
+              "column": "A",
+              "row": 62,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "B62",
+              "column": "B",
+              "row": 62,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "C62",
+              "column": "C",
+              "row": 62,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "D62",
+              "column": "D",
+              "row": 62,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "E62",
+              "column": "E",
+              "row": 62,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "F62",
+              "column": "F",
+              "row": 62,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "G62",
+              "column": "G",
+              "row": 62,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "H62",
+              "column": "H",
+              "row": 62,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "I62",
+              "column": "I",
+              "row": 62,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "J62",
+              "column": "J",
+              "row": 62,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "K62",
+              "column": "K",
+              "row": 62,
+              "style": "45",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 63,
+          "cells": [
+            {
+              "ref": "A63",
+              "column": "A",
+              "row": 63,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "B63",
+              "column": "B",
+              "row": 63,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "C63",
+              "column": "C",
+              "row": 63,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "D63",
+              "column": "D",
+              "row": 63,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "E63",
+              "column": "E",
+              "row": 63,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "F63",
+              "column": "F",
+              "row": 63,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "G63",
+              "column": "G",
+              "row": 63,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "H63",
+              "column": "H",
+              "row": 63,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "I63",
+              "column": "I",
+              "row": 63,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "J63",
+              "column": "J",
+              "row": 63,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "K63",
+              "column": "K",
+              "row": 63,
+              "style": "45",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 64,
+          "cells": [
+            {
+              "ref": "A64",
+              "column": "A",
+              "row": 64,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "B64",
+              "column": "B",
+              "row": 64,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "C64",
+              "column": "C",
+              "row": 64,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "D64",
+              "column": "D",
+              "row": 64,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "E64",
+              "column": "E",
+              "row": 64,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "F64",
+              "column": "F",
+              "row": 64,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "G64",
+              "column": "G",
+              "row": 64,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "H64",
+              "column": "H",
+              "row": 64,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "I64",
+              "column": "I",
+              "row": 64,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "J64",
+              "column": "J",
+              "row": 64,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "K64",
+              "column": "K",
+              "row": 64,
+              "style": "45",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 65,
+          "cells": [
+            {
+              "ref": "A65",
+              "column": "A",
+              "row": 65,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "B65",
+              "column": "B",
+              "row": 65,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "C65",
+              "column": "C",
+              "row": 65,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "D65",
+              "column": "D",
+              "row": 65,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "E65",
+              "column": "E",
+              "row": 65,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "F65",
+              "column": "F",
+              "row": 65,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "G65",
+              "column": "G",
+              "row": 65,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "H65",
+              "column": "H",
+              "row": 65,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "I65",
+              "column": "I",
+              "row": 65,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "J65",
+              "column": "J",
+              "row": 65,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "K65",
+              "column": "K",
+              "row": 65,
+              "style": "45",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 66,
+          "cells": [
+            {
+              "ref": "A66",
+              "column": "A",
+              "row": 66,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "B66",
+              "column": "B",
+              "row": 66,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "C66",
+              "column": "C",
+              "row": 66,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "D66",
+              "column": "D",
+              "row": 66,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "E66",
+              "column": "E",
+              "row": 66,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "F66",
+              "column": "F",
+              "row": 66,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "G66",
+              "column": "G",
+              "row": 66,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "H66",
+              "column": "H",
+              "row": 66,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "I66",
+              "column": "I",
+              "row": 66,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "J66",
+              "column": "J",
+              "row": 66,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "K66",
+              "column": "K",
+              "row": 66,
+              "style": "45",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 67,
+          "cells": [
+            {
+              "ref": "A67",
+              "column": "A",
+              "row": 67,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "B67",
+              "column": "B",
+              "row": 67,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "C67",
+              "column": "C",
+              "row": 67,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "D67",
+              "column": "D",
+              "row": 67,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "E67",
+              "column": "E",
+              "row": 67,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "F67",
+              "column": "F",
+              "row": 67,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "G67",
+              "column": "G",
+              "row": 67,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "H67",
+              "column": "H",
+              "row": 67,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "I67",
+              "column": "I",
+              "row": 67,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "J67",
+              "column": "J",
+              "row": 67,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "K67",
+              "column": "K",
+              "row": 67,
+              "style": "45",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 68,
+          "cells": [
+            {
+              "ref": "A68",
+              "column": "A",
+              "row": 68,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "B68",
+              "column": "B",
+              "row": 68,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "C68",
+              "column": "C",
+              "row": 68,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "D68",
+              "column": "D",
+              "row": 68,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "E68",
+              "column": "E",
+              "row": 68,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "F68",
+              "column": "F",
+              "row": 68,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "G68",
+              "column": "G",
+              "row": 68,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "H68",
+              "column": "H",
+              "row": 68,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "I68",
+              "column": "I",
+              "row": 68,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "J68",
+              "column": "J",
+              "row": 68,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "K68",
+              "column": "K",
+              "row": 68,
+              "style": "45",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 69,
+          "cells": [
+            {
+              "ref": "A69",
+              "column": "A",
+              "row": 69,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "B69",
+              "column": "B",
+              "row": 69,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "C69",
+              "column": "C",
+              "row": 69,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "D69",
+              "column": "D",
+              "row": 69,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "E69",
+              "column": "E",
+              "row": 69,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "F69",
+              "column": "F",
+              "row": 69,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "G69",
+              "column": "G",
+              "row": 69,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "H69",
+              "column": "H",
+              "row": 69,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "I69",
+              "column": "I",
+              "row": 69,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "J69",
+              "column": "J",
+              "row": 69,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "K69",
+              "column": "K",
+              "row": 69,
+              "style": "45",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 70,
+          "cells": [
+            {
+              "ref": "A70",
+              "column": "A",
+              "row": 70,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "B70",
+              "column": "B",
+              "row": 70,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "C70",
+              "column": "C",
+              "row": 70,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "D70",
+              "column": "D",
+              "row": 70,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "E70",
+              "column": "E",
+              "row": 70,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "F70",
+              "column": "F",
+              "row": 70,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "G70",
+              "column": "G",
+              "row": 70,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "H70",
+              "column": "H",
+              "row": 70,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "I70",
+              "column": "I",
+              "row": 70,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "J70",
+              "column": "J",
+              "row": 70,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "K70",
+              "column": "K",
+              "row": 70,
+              "style": "45",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 71,
+          "cells": [
+            {
+              "ref": "A71",
+              "column": "A",
+              "row": 71,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "B71",
+              "column": "B",
+              "row": 71,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "C71",
+              "column": "C",
+              "row": 71,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "D71",
+              "column": "D",
+              "row": 71,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "E71",
+              "column": "E",
+              "row": 71,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "F71",
+              "column": "F",
+              "row": 71,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "G71",
+              "column": "G",
+              "row": 71,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "H71",
+              "column": "H",
+              "row": 71,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "I71",
+              "column": "I",
+              "row": 71,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "J71",
+              "column": "J",
+              "row": 71,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "K71",
+              "column": "K",
+              "row": 71,
+              "style": "45",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 72,
+          "cells": [
+            {
+              "ref": "A72",
+              "column": "A",
+              "row": 72,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "B72",
+              "column": "B",
+              "row": 72,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "C72",
+              "column": "C",
+              "row": 72,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "D72",
+              "column": "D",
+              "row": 72,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "E72",
+              "column": "E",
+              "row": 72,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "F72",
+              "column": "F",
+              "row": 72,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "G72",
+              "column": "G",
+              "row": 72,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "H72",
+              "column": "H",
+              "row": 72,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "I72",
+              "column": "I",
+              "row": 72,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "J72",
+              "column": "J",
+              "row": 72,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "K72",
+              "column": "K",
+              "row": 72,
+              "style": "45",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 73,
+          "cells": [
+            {
+              "ref": "A73",
+              "column": "A",
+              "row": 73,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "B73",
+              "column": "B",
+              "row": 73,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "C73",
+              "column": "C",
+              "row": 73,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "D73",
+              "column": "D",
+              "row": 73,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "E73",
+              "column": "E",
+              "row": 73,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "F73",
+              "column": "F",
+              "row": 73,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "G73",
+              "column": "G",
+              "row": 73,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "H73",
+              "column": "H",
+              "row": 73,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "I73",
+              "column": "I",
+              "row": 73,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "J73",
+              "column": "J",
+              "row": 73,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "K73",
+              "column": "K",
+              "row": 73,
+              "style": "45",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 74,
+          "cells": [
+            {
+              "ref": "A74",
+              "column": "A",
+              "row": 74,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "B74",
+              "column": "B",
+              "row": 74,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "C74",
+              "column": "C",
+              "row": 74,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "D74",
+              "column": "D",
+              "row": 74,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "E74",
+              "column": "E",
+              "row": 74,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "F74",
+              "column": "F",
+              "row": 74,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "G74",
+              "column": "G",
+              "row": 74,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "H74",
+              "column": "H",
+              "row": 74,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "I74",
+              "column": "I",
+              "row": 74,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "J74",
+              "column": "J",
+              "row": 74,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "K74",
+              "column": "K",
+              "row": 74,
+              "style": "45",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 75,
+          "cells": [
+            {
+              "ref": "A75",
+              "column": "A",
+              "row": 75,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "B75",
+              "column": "B",
+              "row": 75,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "C75",
+              "column": "C",
+              "row": 75,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "D75",
+              "column": "D",
+              "row": 75,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "E75",
+              "column": "E",
+              "row": 75,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "F75",
+              "column": "F",
+              "row": 75,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "G75",
+              "column": "G",
+              "row": 75,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "H75",
+              "column": "H",
+              "row": 75,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "I75",
+              "column": "I",
+              "row": 75,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "J75",
+              "column": "J",
+              "row": 75,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "K75",
+              "column": "K",
+              "row": 75,
+              "style": "45",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 76,
+          "cells": [
+            {
+              "ref": "A76",
+              "column": "A",
+              "row": 76,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "B76",
+              "column": "B",
+              "row": 76,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "C76",
+              "column": "C",
+              "row": 76,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "D76",
+              "column": "D",
+              "row": 76,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "E76",
+              "column": "E",
+              "row": 76,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "F76",
+              "column": "F",
+              "row": 76,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "G76",
+              "column": "G",
+              "row": 76,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "H76",
+              "column": "H",
+              "row": 76,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "I76",
+              "column": "I",
+              "row": 76,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "J76",
+              "column": "J",
+              "row": 76,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "K76",
+              "column": "K",
+              "row": 76,
+              "style": "45",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 77,
+          "cells": [
+            {
+              "ref": "A77",
+              "column": "A",
+              "row": 77,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "B77",
+              "column": "B",
+              "row": 77,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "C77",
+              "column": "C",
+              "row": 77,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "D77",
+              "column": "D",
+              "row": 77,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "E77",
+              "column": "E",
+              "row": 77,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "F77",
+              "column": "F",
+              "row": 77,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "G77",
+              "column": "G",
+              "row": 77,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "H77",
+              "column": "H",
+              "row": 77,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "I77",
+              "column": "I",
+              "row": 77,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "J77",
+              "column": "J",
+              "row": 77,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "K77",
+              "column": "K",
+              "row": 77,
+              "style": "45",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 78,
+          "cells": [
+            {
+              "ref": "A78",
+              "column": "A",
+              "row": 78,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "B78",
+              "column": "B",
+              "row": 78,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "C78",
+              "column": "C",
+              "row": 78,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "D78",
+              "column": "D",
+              "row": 78,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "E78",
+              "column": "E",
+              "row": 78,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "F78",
+              "column": "F",
+              "row": 78,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "G78",
+              "column": "G",
+              "row": 78,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "H78",
+              "column": "H",
+              "row": 78,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "I78",
+              "column": "I",
+              "row": 78,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "J78",
+              "column": "J",
+              "row": 78,
+              "style": "45",
+              "text": ""
+            },
+            {
+              "ref": "K78",
+              "column": "K",
+              "row": 78,
+              "style": "45",
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

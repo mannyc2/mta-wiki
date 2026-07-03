@@ -1,0 +1,284 @@
+{
+  "run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "generated_at": "2026-06-08T21:05:06.612Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "concurrency": 4,
+  "packet_count": 33,
+  "completed": 32,
+  "skipped": 1,
+  "failed": 0,
+  "paths": {
+    "suggestions_dir": "data/identity-review/llm-suggestions",
+    "review_runs_dir": "data/identity-review/llm-suggestions/review-runs",
+    "manifest": "data/identity-review/llm-suggestions/review-runs/2026-06-08T21-05-06-612Z_identity-review-run.json",
+    "latest": "data/identity-review/llm-suggestions/review-runs/latest.json"
+  },
+  "results": [
+    {
+      "cluster_id": "entity_cluster_001",
+      "packet_path": "data/identity-review/packets/entity_cluster_001.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_001.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-05-06-613Z_3449211-3a5ff2c0_identity-review-run_entity-cluster-001",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-05-06-613Z_2026-06-08T21-05-06-613Z_3449211-3a5ff2c0_identity-review-run_entity-cluster-001.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "route_cluster_001",
+      "packet_path": "data/identity-review/packets/route_cluster_001.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_001.json",
+      "status": "skipped",
+      "error": "suggestion already exists; pass --force to replace it"
+    },
+    {
+      "cluster_id": "route_cluster_002",
+      "packet_path": "data/identity-review/packets/route_cluster_002.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_002.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-05-06-613Z_3449211-b4876cbf_identity-review-run_route-cluster-002",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-05-06-613Z_2026-06-08T21-05-06-613Z_3449211-b4876cbf_identity-review-run_route-cluster-002.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "route_cluster_003",
+      "packet_path": "data/identity-review/packets/route_cluster_003.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_003.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-05-06-613Z_3449211-02b9a3b7_identity-review-run_route-cluster-003",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-05-06-613Z_2026-06-08T21-05-06-613Z_3449211-02b9a3b7_identity-review-run_route-cluster-003.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "entity_cluster_002",
+      "packet_path": "data/identity-review/packets/entity_cluster_002.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_002.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-05-06-616Z_3449211-032ae8fd_identity-review-run_entity-cluster-002",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-05-06-616Z_2026-06-08T21-05-06-616Z_3449211-032ae8fd_identity-review-run_entity-cluster-002.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "route_cluster_004",
+      "packet_path": "data/identity-review/packets/route_cluster_004.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_004.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-05-50-431Z_3449211-40172be3_identity-review-run_route-cluster-004",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-05-50-432Z_2026-06-08T21-05-50-431Z_3449211-40172be3_identity-review-run_route-cluster-004.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "corridor_cluster_001",
+      "packet_path": "data/identity-review/packets/corridor_cluster_001.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_001.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-06-18-712Z_3449211-c3913214_identity-review-run_corridor-cluster-001",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-06-18-721Z_2026-06-08T21-06-18-712Z_3449211-c3913214_identity-review-run_corridor-cluster-001.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "entity_cluster_003",
+      "packet_path": "data/identity-review/packets/entity_cluster_003.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_003.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-06-25-833Z_3449211-5cfc7e89_identity-review-run_entity-cluster-003",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-06-25-833Z_2026-06-08T21-06-25-833Z_3449211-5cfc7e89_identity-review-run_entity-cluster-003.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "route_cluster_005",
+      "packet_path": "data/identity-review/packets/route_cluster_005.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_005.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-06-31-439Z_3449211-de095d02_identity-review-run_route-cluster-005",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-06-31-439Z_2026-06-08T21-06-31-439Z_3449211-de095d02_identity-review-run_route-cluster-005.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "route_cluster_006",
+      "packet_path": "data/identity-review/packets/route_cluster_006.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_006.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-06-45-644Z_3449211-927886ce_identity-review-run_route-cluster-006",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-06-45-644Z_2026-06-08T21-06-45-644Z_3449211-927886ce_identity-review-run_route-cluster-006.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "route_cluster_007",
+      "packet_path": "data/identity-review/packets/route_cluster_007.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_007.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-07-03-815Z_3449211-d14270ed_identity-review-run_route-cluster-007",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-07-03-815Z_2026-06-08T21-07-03-815Z_3449211-d14270ed_identity-review-run_route-cluster-007.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "route_cluster_008",
+      "packet_path": "data/identity-review/packets/route_cluster_008.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_008.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-07-09-663Z_3449211-0e91eb77_identity-review-run_route-cluster-008",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-07-09-663Z_2026-06-08T21-07-09-663Z_3449211-0e91eb77_identity-review-run_route-cluster-008.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "route_cluster_009",
+      "packet_path": "data/identity-review/packets/route_cluster_009.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_009.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-07-18-033Z_3449211-ac80ef8d_identity-review-run_route-cluster-009",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-07-18-033Z_2026-06-08T21-07-18-033Z_3449211-ac80ef8d_identity-review-run_route-cluster-009.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "route_cluster_010",
+      "packet_path": "data/identity-review/packets/route_cluster_010.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_010.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-07-28-353Z_3449211-62b7cdc5_identity-review-run_route-cluster-010",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-07-28-353Z_2026-06-08T21-07-28-353Z_3449211-62b7cdc5_identity-review-run_route-cluster-010.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "route_cluster_011",
+      "packet_path": "data/identity-review/packets/route_cluster_011.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_011.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-07-57-856Z_3449211-156b0970_identity-review-run_route-cluster-011",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-07-57-856Z_2026-06-08T21-07-57-856Z_3449211-156b0970_identity-review-run_route-cluster-011.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "corridor_cluster_002",
+      "packet_path": "data/identity-review/packets/corridor_cluster_002.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_002.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-08-00-432Z_3449211-3ccfec63_identity-review-run_corridor-cluster-002",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-08-00-432Z_2026-06-08T21-08-00-432Z_3449211-3ccfec63_identity-review-run_corridor-cluster-002.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "corridor_cluster_003",
+      "packet_path": "data/identity-review/packets/corridor_cluster_003.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_003.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-08-11-103Z_3449211-0cf29ad6_identity-review-run_corridor-cluster-003",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-08-11-104Z_2026-06-08T21-08-11-103Z_3449211-0cf29ad6_identity-review-run_corridor-cluster-003.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "corridor_cluster_004",
+      "packet_path": "data/identity-review/packets/corridor_cluster_004.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_004.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-08-37-841Z_3449211-3757b01b_identity-review-run_corridor-cluster-004",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-08-37-841Z_2026-06-08T21-08-37-841Z_3449211-3757b01b_identity-review-run_corridor-cluster-004.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "corridor_cluster_005",
+      "packet_path": "data/identity-review/packets/corridor_cluster_005.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_005.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-08-40-622Z_3449211-a78caa40_identity-review-run_corridor-cluster-005",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-08-40-622Z_2026-06-08T21-08-40-622Z_3449211-a78caa40_identity-review-run_corridor-cluster-005.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "corridor_cluster_006",
+      "packet_path": "data/identity-review/packets/corridor_cluster_006.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_006.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-09-07-371Z_3449211-53be2fae_identity-review-run_corridor-cluster-006",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-09-07-371Z_2026-06-08T21-09-07-371Z_3449211-53be2fae_identity-review-run_corridor-cluster-006.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "corridor_cluster_007",
+      "packet_path": "data/identity-review/packets/corridor_cluster_007.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_007.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-09-10-715Z_3449211-590fe35f_identity-review-run_corridor-cluster-007",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-09-10-715Z_2026-06-08T21-09-10-715Z_3449211-590fe35f_identity-review-run_corridor-cluster-007.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "corridor_cluster_008",
+      "packet_path": "data/identity-review/packets/corridor_cluster_008.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_008.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-09-11-230Z_3449211-5dc11fc6_identity-review-run_corridor-cluster-008",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-09-11-230Z_2026-06-08T21-09-11-230Z_3449211-5dc11fc6_identity-review-run_corridor-cluster-008.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "corridor_cluster_009",
+      "packet_path": "data/identity-review/packets/corridor_cluster_009.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_009.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-09-18-096Z_3449211-c6cde40b_identity-review-run_corridor-cluster-009",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-09-18-096Z_2026-06-08T21-09-18-096Z_3449211-c6cde40b_identity-review-run_corridor-cluster-009.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "entity_cluster_004",
+      "packet_path": "data/identity-review/packets/entity_cluster_004.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_004.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-09-21-272Z_3449211-651d0ebc_identity-review-run_entity-cluster-004",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-09-21-272Z_2026-06-08T21-09-21-272Z_3449211-651d0ebc_identity-review-run_entity-cluster-004.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "entity_cluster_005",
+      "packet_path": "data/identity-review/packets/entity_cluster_005.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_005.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-09-21-877Z_3449211-6965df13_identity-review-run_entity-cluster-005",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-09-21-877Z_2026-06-08T21-09-21-877Z_3449211-6965df13_identity-review-run_entity-cluster-005.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "project_cluster_001",
+      "packet_path": "data/identity-review/packets/project_cluster_001.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/project_cluster_001.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-09-25-061Z_3449211-ccb7e962_identity-review-run_project-cluster-001",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-09-25-061Z_2026-06-08T21-09-25-061Z_3449211-ccb7e962_identity-review-run_project-cluster-001.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "project_cluster_002",
+      "packet_path": "data/identity-review/packets/project_cluster_002.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/project_cluster_002.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-09-33-052Z_3449211-02d6f16e_identity-review-run_project-cluster-002",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-09-33-052Z_2026-06-08T21-09-33-052Z_3449211-02d6f16e_identity-review-run_project-cluster-002.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "route_cluster_012",
+      "packet_path": "data/identity-review/packets/route_cluster_012.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_012.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-09-51-911Z_3449211-edacc5fa_identity-review-run_route-cluster-012",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-09-51-911Z_2026-06-08T21-09-51-911Z_3449211-edacc5fa_identity-review-run_route-cluster-012.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "corridor_cluster_010",
+      "packet_path": "data/identity-review/packets/corridor_cluster_010.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_010.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-10-16-858Z_3449211-1ae59dab_identity-review-run_corridor-cluster-010",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-10-16-858Z_2026-06-08T21-10-16-858Z_3449211-1ae59dab_identity-review-run_corridor-cluster-010.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "route_cluster_013",
+      "packet_path": "data/identity-review/packets/route_cluster_013.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_013.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-10-22-570Z_3449211-dc2116ef_identity-review-run_route-cluster-013",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-10-22-570Z_2026-06-08T21-10-22-570Z_3449211-dc2116ef_identity-review-run_route-cluster-013.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "route_cluster_014",
+      "packet_path": "data/identity-review/packets/route_cluster_014.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_014.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-10-35-285Z_3449211-2a6d01f5_identity-review-run_route-cluster-014",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-10-35-285Z_2026-06-08T21-10-35-285Z_3449211-2a6d01f5_identity-review-run_route-cluster-014.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "route_cluster_015",
+      "packet_path": "data/identity-review/packets/route_cluster_015.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_015.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-10-37-020Z_3449211-58c8712a_identity-review-run_route-cluster-015",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-10-37-020Z_2026-06-08T21-10-37-020Z_3449211-58c8712a_identity-review-run_route-cluster-015.jsonl",
+      "status": "completed"
+    },
+    {
+      "cluster_id": "corridor_cluster_011",
+      "packet_path": "data/identity-review/packets/corridor_cluster_011.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_011.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-08T21-10-41-554Z_3449211-72e5ccec_identity-review-run_corridor-cluster-011",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-10-41-554Z_2026-06-08T21-10-41-554Z_3449211-72e5ccec_identity-review-run_corridor-cluster-011.jsonl",
+      "status": "completed"
+    }
+  ]
+}

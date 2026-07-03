@@ -1,0 +1,152 @@
+{
+  "batch_id": "identity133",
+  "global_kind": "entity",
+  "prepared_count": 11,
+  "proposed_aliases": [
+    {
+      "alias_id": "entity_meeting-doc-171381-restani-asw",
+      "target_id": "entity_restani-asw-jv-meeting-doc-170976",
+      "confidence": "high",
+      "reason": "Same Restani-ASW JV, LLC company/vendor identity. Both records use the exact legal name Restani-ASW JV, LLC; the target also carries project context for the Verrazzano-Narrows Bridge lower-level rehabilitation.",
+      "evidence_refs": [
+        "meeting_doc_171381#p023_c0005",
+        "meeting_doc_170976#p003_c0002"
+      ],
+      "guard_notes": "Entity guard satisfied: exact legal company name, compatible company/vendor entity types, and no person-agency or parent-subsidiary ambiguity. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    },
+    {
+      "alias_id": "entity_meeting-doc-174096-stillwell-transit",
+      "target_id": "entity_stillwell-transit-174081",
+      "confidence": "high",
+      "reason": "Same Stillwell Transit, Inc. corporation/vendor identity. Both records use the exact Stillwell Transit, Inc. name; the target has the fuller source context identifying it as a corporation wholly owned by Taiseer Masurkar.",
+      "evidence_refs": [
+        "meeting_doc_174096#p001_c0003",
+        "meeting_doc_174081#p008_c0012"
+      ],
+      "guard_notes": "Entity guard satisfied: exact incorporated company name and compatible corporation/vendor types. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    },
+    {
+      "alias_id": "entity_meeting-doc-176516-911memorial",
+      "target_id": "entity_meeting-doc-178486-911memorial",
+      "confidence": "high",
+      "reason": "Same National September 11 Memorial and Museum at the World Trade Center Foundation, Inc. organization identity. Both records use the same full legal foundation name; the target has licensee context for the Battery Parking Garage Tribute in Light use.",
+      "evidence_refs": [
+        "meeting_doc_176516#p001_c0003",
+        "meeting_doc_178486#p010_c0007"
+      ],
+      "guard_notes": "Entity guard satisfied: exact long-form organization name with no competing similarly named entity in the selected pair. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    },
+    {
+      "alias_id": "entity_meeting-doc-176516-phq-enterprises",
+      "target_id": "entity_meeting-doc-178486-phq",
+      "confidence": "high",
+      "reason": "Same PHQ Enterprises LLC company/vendor identity. Both records use the exact PHQ Enterprises LLC name; the target includes the LIRR licensee context for property near 5 Toilsome Lane in East Hampton.",
+      "evidence_refs": [
+        "meeting_doc_176516#p001_c0003",
+        "meeting_doc_178486#p008_c0008"
+      ],
+      "guard_notes": "Entity guard satisfied: exact LLC name and compatible company/vendor types. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    },
+    {
+      "alias_id": "entity_meeting-doc-179681-triumph-construction",
+      "target_id": "entity_meeting-doc-179646-triumph-construction",
+      "confidence": "high",
+      "reason": "Same Triumph Construction Corp contractor/vendor identity. Both records use Triumph Construction Corp; the target is the richer multi-source record with merged Triumph Construction Corp. naming and TBTA median barrier/HOV bus lane operations context.",
+      "evidence_refs": [
+        "meeting_doc_179681#p004_c0007",
+        "meeting_doc_179646#p002_c0002"
+      ],
+      "guard_notes": "Entity guard satisfied: exact durable contractor name, compatible contractor/vendor types, and no indication of separate Triumph entities in these records. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    },
+    {
+      "alias_id": "entity_meeting-doc-170981-trillium-cng",
+      "target_id": "entity_meeting-doc-167236-trillium-cng",
+      "confidence": "high",
+      "reason": "Same Trillium CNG vendor identity. Both records use the exact Trillium CNG name and describe the same CNG fueling facilities operations and maintenance context for NYC Transit/MTA Bus.",
+      "evidence_refs": [
+        "meeting_doc_170981#p004_c0009",
+        "meeting_doc_167236#p008_c0004"
+      ],
+      "guard_notes": "Entity guard satisfied: exact organization/vendor name and matching contract-service context. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    },
+    {
+      "alias_id": "entity_meeting-doc-174021-nepc",
+      "target_id": "entity_meeting-doc-140491-nepc",
+      "confidence": "high",
+      "reason": "Same NEPC, LLC financial consultant identity. Both records list NEPC, LLC in the same financial consultant role alongside Milliman, USA and JPMorgan Chase.",
+      "evidence_refs": [
+        "meeting_doc_174021#p009_c0004",
+        "meeting_doc_140491#p009_c0004"
+      ],
+      "guard_notes": "Entity guard satisfied: exact LLC name and compatible organization/financial-consultant types. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    },
+    {
+      "alias_id": "entity_meeting-doc-174021-milliman",
+      "target_id": "entity_meeting-doc-140491-milliman",
+      "confidence": "high",
+      "reason": "Same Milliman, USA actuary identity. Both records list Milliman, USA in the same actuary role in the investment/financial consultant context.",
+      "evidence_refs": [
+        "meeting_doc_174021#p009_c0004",
+        "meeting_doc_140491#p009_c0004"
+      ],
+      "guard_notes": "Entity guard satisfied: exact organization name and compatible organization/actuary types. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    },
+    {
+      "alias_id": "entity_meeting-doc-171021-gotham-organization",
+      "target_id": "entity_meeting-doc-170991-gotham-org",
+      "confidence": "high",
+      "reason": "Same Gotham Organization company identity. The alias gives Gotham Organization, while the target gives Gotham Organization, Inc. and includes the related affiliate/ground-lessee context.",
+      "evidence_refs": [
+        "meeting_doc_171021#p001_c0003",
+        "meeting_doc_170991#p009_c0008"
+      ],
+      "guard_notes": "Entity guard satisfied: incorporated suffix-only name difference, compatible organization/corporation types, and no evidence of separate Gotham entities in the selected records. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    },
+    {
+      "alias_id": "entity_meeting-doc-129051-pa-admin",
+      "target_id": "entity_pa-administrative-services",
+      "confidence": "high",
+      "reason": "Same P&A Administrative Services vendor identity. The alias uses P&A Administrative Services; the target uses P&A Administrative Services, Inc. and carries the FSA administrative and record-keeping contract context.",
+      "evidence_refs": [
+        "meeting_doc_129051#p001_c0003",
+        "meeting_doc_129066#p001_c0007"
+      ],
+      "guard_notes": "Entity guard satisfied: incorporated suffix-only name difference and same vendor identity. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    },
+    {
+      "alias_id": "entity_meeting-doc-135391-gail-lloyd-enterprises",
+      "target_id": "entity_meeting-doc-129051-gail-lloyd",
+      "confidence": "high",
+      "reason": "Same Gail Lloyd Enterprises vendor/company identity. Both records use the exact Gail Lloyd Enterprises name; the target is the richer existing vendor/company record with two source ids.",
+      "evidence_refs": [
+        "meeting_doc_135391#p002_c0010",
+        "meeting_doc_129051#p001_c0003"
+      ],
+      "guard_notes": "Entity guard satisfied: exact business name and compatible organization/vendor/company types. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    }
+  ],
+  "commands_run": [
+    "pwd && rg --files data | rg 'identity-overrides/merges\\\\.json|review_notes|canonical|do-not|do_not|identity'",
+    "rg --files wiki raw | head -200",
+    "git status --short",
+    "rg --files data/review_notes data/identity-overrides | sort",
+    "jq 'keys' data/identity-overrides/merges.json && jq 'keys' data/identity-overrides/do-not-merge.json",
+    "find data/review_notes -maxdepth 1 -type f -name '*identity*prep*.json' -print | sort | tail -20",
+    "jq '.' data/review_notes/codex-identity-batch132-prep.json",
+    "jq '.aliases' data/identity-overrides/merges.json",
+    "jq '.pairs' data/identity-overrides/do-not-merge.json",
+    "jq -r '.proposed_aliases[]? | select((.global_kind // \"\") == \"entity\") | [.alias_id,.target_id] | @tsv' data/review_notes/codex-identity-batch*-prep.json 2>/dev/null | sort -u | tail -100",
+    "wc -l data/canonical/entities.jsonl && jq -r '.display_name' data/canonical/entities.jsonl | sort | uniq -c | sort -nr | head -50",
+    "bun -e '<read-only normalized duplicate entity scan over canonical entities plus merges, do-not-merge, and prior prep guards>'",
+    "jq -r 'select(.record_id|IN(...selected entity ids...)) | {record_id, record_aliases, display_name, payload, source_ids, evidence_refs: [.evidence_refs[]?.evidence_id]}' data/canonical/entities.jsonl | jq '.'",
+    "bun -e '<read-only selected evidence block extraction from raw/sources/*/blocks.jsonl>'",
+    "rg -n 'Restani|Stillwell|PHQ Enterprises|National September 11|Triumph Construction|Trillium CNG|NEPC|Milliman|Gotham Organization|P&A Administrative|Gail Lloyd' raw/sources/meeting_doc_*/blocks.jsonl | head -120",
+    "bun -e '<read-only selected pair check against data/identity-overrides/merges.json and data/identity-overrides/do-not-merge.json>'"
+  ],
+  "commands_not_run": [
+    "No provider-backed commands or agent harness commands were run.",
+    "No canonicalize, campaign dedup, identity-review, write, ask, schema, ontology-normalize, or --profile/provider commands were run.",
+    "No materialize, export-jsonl, or full validate commands were run.",
+    "No edits were made to canonical JSONL, wiki pages, DB files, LOG.md, manifests, retired submissions, submissions, or merges.json."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "reviewed_at": "2026-06-08T21:09:18.096Z",
+  "packet_path": "data/identity-review/packets/corridor_cluster_005.md",
+  "cluster_id": "corridor_cluster_005",
+  "kind": "corridor",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "suggestion": {
+    "cluster_id": "corridor_cluster_005",
+    "kind": "corridor",
+    "merge_groups": [
+      [
+        "corridor_east-149-st",
+        "corridor_east-149-street"
+      ]
+    ],
+    "do_not_merge": [],
+    "weak_aliases": [
+      {
+        "record_id": "corridor_east-149-st",
+        "aliases": [
+          "corridor_east-149-st-corridor"
+        ],
+        "reason": "Useful for search, not merge authority."
+      },
+      {
+        "record_id": "corridor_east-149-street",
+        "aliases": [
+          "corridor_east-149-st"
+        ],
+        "reason": "Useful for search, not merge authority."
+      }
+    ],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [
+      "Corridor records with identical street name and identical limits (from/to) from related source documents (e.g., original plan and addendum) should be merged as the same canonical identity."
+    ],
+    "confidence": "high",
+    "rationale": "Both records describe East 149 Street from River Avenue to Southern Boulevard. Record corridor_east-149-st comes from the 2019 Bronx Bus Network Final Plan (routes: Bx19, Bx2, Bx4A, Bx17). Record corridor_east-149-street comes from the 2021 Addendum which updates the same corridor with status 'Completed 2020' and adds Bx4 to the routes list. The addendum table (p005_c0003) explicitly lists 'East 149 Street' with 'River Avenue' to 'Southern Boulevard' and routes Bx2, Bx4, Bx4A, Bx19, Bx17. The 2019 plan (p029_c0004) lists the same street and limits. The identity key 'corridor_east-149-st' is shared between both records. The negative signal about 'different or partially different limits' is incorrect — both have identical limits. The slight route difference (Bx4 added) reflects a natural update between the 2019 plan and the 2021 addendum, not a different corridor."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T21-08-40-622Z_3449211-a78caa40_identity-review-run_corridor-cluster-005",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-08-40-622Z_2026-06-08T21-08-40-622Z_3449211-a78caa40_identity-review-run_corridor-cluster-005.jsonl"
+}

@@ -1,0 +1,85 @@
+{
+  "run_id": "2026-06-10T23-07-32-203Z_1976810-d29b08e7_ingest_2012-12-03-sbs-125th-workshop-summary",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T03:08:31.164Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "canon_m60_sbs_125th",
+        "local_observation_id": "route_m60_sbs_125th_workshop",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_125th-laguardia-sbs' matches the existing registry record for M60 SBS. The registry record already lists source 2012_12_03_sbs_125th_workshop_summary in its source_ids and route_m60-sbs-125th-workshop in its aliases. Observation resolves to its own base_record_id — no different target needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_12_03_sbs_125th_workshop_summary",
+            "block_id": "p002_c0005",
+            "source_quote": "The New York City Department of Transportation (DOT) and MTA New York City Transit (NYCT) conducted a Public Workshop on December 3, 2012 to hear about the critical issues impacting bus movement on 125th Street and to introduce the proposed M60 Select Bus Service on 125th Street."
+          },
+          {
+            "source_id": "2012_12_03_sbs_125th_workshop_summary",
+            "block_id": "p003_c0006",
+            "source_quote": "The presentation reviewed data collected and analyzed, and the input received at the first Public Workshop that took place on September 19, 2012; introduced the selection of the M60 to upgrade to SBS Service with off-board fare collection, dedicated off-set bus lanes and other potential transportation improvements; and SBS amenities that could be implemented on 125th Street."
+          }
+        ]
+      },
+      {
+        "decision_id": "canon_m35_125th",
+        "local_observation_id": "route_m35_125th_workshop",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_125th-st-m35' matches the existing registry record for M35 (route_125th-st-m35), which lists source 2012_12_03_sbs_125th_workshop_summary in its source_ids and route_m35-125th-workshop in its aliases. Observation already resolves to its own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_12_03_sbs_125th_workshop_summary",
+            "block_id": "p004_c0004",
+            "source_quote": "• M35 should be eliminated and the M100 extended to Randall's Island. • M35 has a more detrimental impact on the intersection of Lexington Avenue and 125th Street than the other buses."
+          }
+        ]
+      },
+      {
+        "decision_id": "canon_m100_125th",
+        "local_observation_id": "route_m100_125th_workshop",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_m100-ace' matches the existing registry record for M100, which lists source 2012_12_03_sbs_125th_workshop_summary in its source_ids and route_m100-125th-workshop in its aliases. Observation already resolves to its own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_12_03_sbs_125th_workshop_summary",
+            "block_id": "p004_c0004",
+            "source_quote": "• M35 should be eliminated and the M100 extended to Randall's Island."
+          }
+        ]
+      },
+      {
+        "decision_id": "canon_m101_125th",
+        "local_observation_id": "route_m101_125th_workshop",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_m101' matches the existing registry record for M101, which lists source 2012_12_03_sbs_125th_workshop_summary in its source_ids and route_m101-125th-workshop in its aliases. Observation already resolves to its own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_12_03_sbs_125th_workshop_summary",
+            "block_id": "p004_c0004",
+            "source_quote": "• Make the M101 an SBS route and extend the M102 to City Hall."
+          }
+        ]
+      },
+      {
+        "decision_id": "canon_m102_125th",
+        "local_observation_id": "route_m102_125th_workshop",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_m102' matches the existing registry record for M102, which lists source 2012_12_03_sbs_125th_workshop_summary in its source_ids and route_m102-125th-workshop in its aliases. Observation already resolves to its own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_12_03_sbs_125th_workshop_summary",
+            "block_id": "p004_c0004",
+            "source_quote": "• Make the M101 an SBS route and extend the M102 to City Hall."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-06-18-221Z_2111393-57f7435f_canonicalize_2026-06-10t23-07-32-203z-1976810-d29b08e7-ingest-2012-12-03-sbs-125th-workshop-summary-route-identity"
+}

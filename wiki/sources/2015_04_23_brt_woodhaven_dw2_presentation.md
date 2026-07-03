@@ -1,0 +1,308 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_2015-04-23-brt-woodhaven-dw2-presentation"
+record_kind: "source"
+display_name: "Woodhaven / Cross Bay Boulevard (Q52/53) Public Design Workshop"
+source_id: "2015_04_23_brt_woodhaven_dw2_presentation"
+source_ids:
+  - "2015_04_23_brt_woodhaven_dw2_presentation"
+local_observation_id: "source_2015_04_23_brt_woodhaven_dw2"
+local_observation_ids:
+  - "source_2015_04_23_brt_woodhaven_dw2"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T17:55:37.114Z"
+submission_ids:
+  - "sub_82235c2afd8c6600"
+payload:
+  authority_tier: "plan_document"
+  content_type: "presentation"
+  date_text: "April 23, 2015"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2015-04-23"
+    precision: "day"
+    raw_text: "April 23, 2015"
+  description: "Public Design Workshop presentation for Woodhaven/Cross Bay Boulevards Select Bus Service project, covering proposed SBS route and stations, corridor design, and block-by-block street design review"
+  publication_date: "2015"
+  publication_date_normalized:
+    confidence: "submitted_iso"
+    normalized_date: "2015"
+    precision: "year"
+    raw_text: "2015"
+  published_date_normalized: "2015"
+  published_date_precision: "year"
+  publisher: "NYC DOT"
+  source_url: "https://www.nyc.gov/html/brt/downloads/pdf/2015-04-23-brt-woodhaven-dw2-presentation.pdf"
+  title: "Woodhaven / Cross Bay Boulevard (Q52/53) Public Design Workshop"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "2015_04_23_brt_woodhaven_dw2_presentation#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "2015_04_23_brt_woodhaven_dw2_presentation"
+    source_path: "raw/sources/2015_04_23_brt_woodhaven_dw2_presentation/blocks.jsonl"
+    text_sha256: "sha256:87ab2473394e35a57626f8175dc15db3fe12cfa965264480f0fcafaaf46d20ff"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "2015_04_23_brt_woodhaven_dw2_presentation#p001_c0002"
+    page_number: 1
+    role: "subtitle"
+    source_id: "2015_04_23_brt_woodhaven_dw2_presentation"
+    source_path: "raw/sources/2015_04_23_brt_woodhaven_dw2_presentation/blocks.jsonl"
+    text_sha256: "sha256:d3431ced6750eab53595b994ace48f71f123020fd34a0b0b55854bf5050f53cf"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0004"
+    evidence_id: "2015_04_23_brt_woodhaven_dw2_presentation#p002_c0004"
+    page_number: 2
+    role: "agenda"
+    source_id: "2015_04_23_brt_woodhaven_dw2_presentation"
+    source_path: "raw/sources/2015_04_23_brt_woodhaven_dw2_presentation/blocks.jsonl"
+    text_sha256: "sha256:0c5d394ab42c0dbc8d2d02e18ae18e0e53e95644d847a761b5dd3697a08dd3b1"
+    text_source: "raw_text"
+---
+
+# Download the presentation (pdf)
+
+source_id: 2015_04_23_brt_woodhaven_dw2_presentation
+citation: cite block ids exactly as shown in square brackets
+document: 176 block(s)
+
+## Page 1
+
+### [p001_c0001] Woodhaven / Cross Bay Boulevard (Q52/53)
+[p001_c0002] Public Design Workshop | Woodhaven Blvd from Queens Blvd to Union Tpke | April 23, 2015
+[p001_c0003] _+selectbusservice_
+
+## Page 2
+
+### [p002_c0001] Meeting agenda
+### [p002_c0002] Introductions
+### [p002_c0003] Table presentation
+- [p002_c0004] 1. Project background 2. Proposed SBS Route and Stations 3. Proposed Corridor Design 4. Focus Area Discussion
+### [p002_c0005] Block-by-block street design review
+[p002_c0006] _+selectbusservice_
+[p002_c0007] _2_
+
+## Page 3
+
+### [p003_c0001] Woodhaven / Cross Bay SBS corridor
+- [p003_c0002] • Based on the Q52/53 LTD bus route • 14 miles from Woodside to the Rockaways • 30,000+ daily bus riders • Within a 15-min walk of the corridor: – 400,000 residents – 43% of households do not own a car – 60% of residents commute by transit • Vision Zero Priority Corridor Since 2009 on Woodhaven & Cross Bay Blvds: – Over 3,000 people were injured in a collision – 22 fatalities (17 of which were pedestrians)
+> [p003_c0003] A map of the Woodhaven / Cross Bay SBS corridor in Queens, New York. The corridor is highlighted with a thick dark blue line, starting from Roosevelt Avenue in the north, following Woodhaven Boulevard, and then following Cross Bay Boulevard south to Rockaway Beach Boulevard. A dashed cyan line indicates the 'Focus Area for tonight's workshop', which is a loop around the intersection of Woodhaven Boulevard and Union Turnpike. The map also shows various bus routes (Q52/53, 7, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000. The map also shows major highways like the Long Island Expressway, Nassau Expressway, and Van Wyck Expressway, as well as parks like Forest Park and Spring Creek Park. The JFK Airport area is visible in the southeast corner.
+[p003_c0004] _+selectbusservice_
+[p003_c0005] _3_
+
+## Page 4
+
+### [p004_c0001] Community outreach process
+[p004_c0002] Community Advisory Committee (CAC)
+[p004_c0003] Public Open Houses and Workshops
+[p004_c0004] Community Board Meetings
+[p004_c0005] Stakeholder Meetings
+### [p004_c0006] 2014 Meetings
+- [p004_c0007] • CAC #1 – February 12 • Queens Metropolitan HS – March 11 • Public Workshop #1 – April 23 • CB10 Presentation – June 5 • Public Workshop #2 – June 25 • Rockaways Public Workshop – Sept. 18 • CAC #2 – October 22 • Public Workshop #3 – Nov 5
+### [p004_c0008] 2015 Meetings to date
+- [p004_c0009] • CAC #3 – March 26 • Public Design Workshops ➤ April 16 – Woodhaven Blvd (South) ➤ April 23 – Woodhaven Blvd (North) ➤ April 29 – Cross Bay Blvd ➤ April 30 – Broad Channel / Rockaways
+[p004_c0010] _+selectbusservice_
+[p004_c0011] _4_
+
+## Page 5
+
+### [p005_c0001] Community feedback
+- [p005_c0002] 1. Bus service is unreliable and slow during rush hour 2. Transit improvements are needed to better serve customers, especially in the Rockaways 3. Pedestrian crossings are long and dangerous 4. Congestion leads to long and difficult trips for buses and drivers 5. Changing road widths and configurations make the corridor difficult to navigate
+> [p005_c0003] A photograph showing a white New York City bus with "653 LIMITED" on its destination sign. The bus is on a multi-lane street with several cars in front of it. A pedestrian crossing is visible in the foreground, marked with white stripes and a small orange traffic cone. The street is lined with trees and buildings.
+> [p005_c0004] A photograph of a street corner. Two pedestrians are waiting at a crosswalk. A yellow traffic light is mounted on a pole. In the background, there are several two-story houses and a dark-colored car parked on the street.
+[p005_c0005] _+selectbusservice_
+[p005_c0006] _5_
+
+## Page 6
+
+### [p006_c0001] Project goal
+### [p006_c0002] Transform Woodhaven and Cross Bay Boulevards into a complete street where:
+- [p006_c0003] • Buses operate quickly and reliably • Bus customers safely and easily access bus stations • Pedestrians are comfortable walking on and crossing the street • Drivers get where they need to go at a reasonable and safe speed
+> [p006_c0004] A photograph of a white and blue bus at a bus stop. The bus has a digital display on top showing "053" and "WOODHAVEN & ST. ST. STATION". A blue signpost next to the bus lists bus numbers: 011, 021, 029, 052, 053, and 053.1. People are waiting near the bus.
+> [p006_c0005] A photograph of a street scene. In the foreground, there is a crosswalk with white stripes. A few pedestrians are walking on the sidewalk. Several cars are on the street, including a black car and a silver car. There are trees and buildings in the background.
+> [p006_c0006] A photograph of a busy street with many cars. The road is wide and has multiple lanes. There are trees and buildings on the sides of the street. The sky is clear and blue.
+[p006_c0007] _+selectbusservice_
+[p006_c0008] _6_
+
+## Page 7
+
+### [p007_c0001] Project timeline
+> [p007_c0002] The diagram illustrates the project timeline from 2014 to 2018, divided into three main categories: Planning / Design, Implementation / Construction, and Public outreach. Timeline: 2014, 2015, 2016, 2017-2018 Planning / Design Existing conditions & analysis (2014) 3 design concepts and screening (2014) Preliminary corridor design (2015) Final Design & Engineering (NYCDDC) (2015-2016) Implementation / Construction Bus & safety improvements based on DOT Congested Corridors Study (2015) Capital project construction (2017-2018) → SERVICE STARTS Public outreach CAC #1, public workshops, and stakeholder meetings to discuss issues and design ideas (2014) CAC #2 and public workshop to discuss 3 design concepts (2014) CAC #3 and Public Design Workshops to review proposed corridor designs and SBS bus stops (2015) CAC #4 and stakeholder meetings to discuss design details (2015) Continued outreach to discuss curb regulations, construction schedules, and other project details (2016-2018)
+[p007_c0003] _+selectbuservice_
+[p007_c0004] _7_
+
+## Page 8
+
+### [p008_c0001] Q52/Q53 SBS
+### [p008_c0002] Changes from Q52/Q53 LTD route:
+- [p008_c0003] • The SBS will use the viaduct over Atlantic Av (local bus will use service roads to access Atlantic Av) • Q52 extension is under consideration
+### [p008_c0004] Changes from Q52/Q53 LTD stops:
+- [p008_c0005] • SBS stops at 91 Av instead of Atlantic Av (local bus will still stop at Atlantic Av) • New stop at 101 Av • New stop at Pitkin Av • Broad Channel and Rockaway stops to be discussed at upcoming workshop
+> [p008_c0006] The map illustrates the proposed SBS service route in Queens, NY, following the Woodhaven Blvd corridor. It shows the following details: Proposed SBS Service: Proposed SBS Stop (Existing Q52/Q53): Indicated by a blue circle with a crosshair. Proposed SBS Stop (New): Indicated by a light blue circle with a crosshair. Stop to No Longer Be Served by Q52/Q53: Indicated by a purple circle with a crosshair. Existing Routes: Existing Q52 Route: Shown as a light blue line. Existing Q53 Route: Shown as a dark blue line. Stops and Intersections: The route passes through various intersections, including 75 St, 78 St / Baxter Av, 61st St, Whitney Av, Grand Av, Queens Blvd, Penelope Av, Metropolitan Av, Myrtle Av, Jamaica Av, 91 Av, 101 Av, Rockaway Blvd, Pitkin Av, 157 Av, and 163 Av. Other nearby streets like Roosevelt Av, Broadway, and Cross Bay Blvd are also shown. Legend: Proposed SBS Service Proposed SBS Stop (Existing Q52/Q53) Proposed SBS Stop (New) Stop to No Longer Be Served by Q52/Q53 Existing Q52 Route Existing Q53 Route Scale and Orientation: A scale bar indicates 0, 0.5, and 1 Miles. A north arrow is also present. Annotations: Broad Channel and Rockaway bus stops to be discussed in upcoming public design workshop Q52 extension under review
+[p008_c0007] _+selectbusservice_
+[p008_c0008] _8_
+
+## Page 9
+
+### [p009_c0001] Focus Area - Bus Stops
+### [p009_c0002] Legend
+- [p009_c0003] ⊕ Proposed SBS + Local Stop (Existing Q52/Q53) ⊕ Proposed SBS + Local Stop (New) ● Proposed Local Stop (Existing) ● Proposed Local Stop (new) ● Proposed Local Stop Discontinuation
+- [p009_c0004] Q52 Route Q53 Route Q21 Route Q11 Route
+[p009_c0005] _+selectbusservice_
+[p009_c0006] _9_
+
+## Page 10
+
+### [p010_c0001] Fare collection
+### [p010_c0002] Q52/53 SBS
+- [p010_c0003] • Off-board fare collection • Fare machines at every SBS stop • Pay with a Metrocard or with coins (just like any NYC bus) • Customers can board at any door
+> [p010_c0004] A close-up photograph of a person wearing a purple jacket and a blue beanie, interacting with a fare collection machine. The person is holding a yellow Metrocard and inserting it into a slot on the machine. The machine has a screen displaying "Please Hold Your Receipt and Change" and buttons for "RECEIPT", "PUSH TO START", and "METRO CARD".
+### [p010_c0005] Local / Express Buses
+- [p010_c0006] • Pay on the bus (same as today) • Will have separate bus stop poles from the Q52/53 SBS
+> [p010_c0007] A photograph of a bus stop on a sunny day. A white and blue bus is stopped at the curb. Several people are waiting on the sidewalk, including a woman with a green bag and a man with a backpack. In the background, there is a bus stop shelter and a street with trees and a clear blue sky.
+[p010_c0008] _+selectbusservice_
+[p010_c0009] _10_
+
+## Page 11
+
+### [p011_c0001] Design concept screening process
+### [p011_c0002] DEVELOP 3 DESIGN IDEAS
+> [p011_c0003] A 3D rendering of a street intersection showing a bus lane offset to the side of the main road. The bus lane is marked with a red surface and a white crosswalk. Several cars and a bus are visible on the street.
+[p011_c0004] _Concept 1: Offset Bus Lanes_
+> [p011_c0005] A 3D rendering of a street intersection showing a bus lane in the main road. The bus lane is marked with a red surface and a white crosswalk. Several cars and a bus are visible on the street.
+[p011_c0006] _Concept 2: Main Road Bus Lanes_
+> [p011_c0007] A 3D rendering of a street intersection showing a bus lane in a median. The bus lane is marked with a red surface and a white crosswalk. Several cars and a bus are visible on the street.
+[p011_c0008] _Concept 3: Median Bus Lanes_
+### [p011_c0009] COMMUNITY INPUT
+[p011_c0010] The concepts were presented at CAC Meeting #2 on October 22, 2014 and a Public Workshop on November 5, 2014
+### [p011_c0011] TECHNICAL ANALYSIS
+[p011_c0012] Transit Operations
+[p011_c0013] Safety & Pedestrian Amenities
+[p011_c0014] Traffic Mobility & Accessibility
+### [p011_c0015] CHOOSE A PREFERRED CORRIDOR DESIGN
+> [p011_c0016] A 3D rendering of a street intersection showing a bus lane in the main road. The bus lane is marked with a red surface and a white crosswalk. Several cars and a bus are visible on the street.
+[p011_c0017] _Concept 2 Main Road Bus Lanes_
+- [p011_c0018] • Substantial transit improvement • Most potential for pedestrian and safety improvements • Balances local vehicle access and thru vehicle traffic
+[p011_c0019] _+selectbusservice_
+[p011_c0020] _11_
+
+## Page 12
+
+### [p012_c0001] Summary of chosen concept
+- [p012_c0002] 1 Main road bus lanes improve bus speed and reliability; no conflicts with turning vehicles or parking 2 High-quality median bus stations for all buses (SBS, Local, and Express) 3 Medians shorten pedestrian crossing distances, provide refuges, and add greenery to the corridor 4 Calm service roads for parking, deliveries, and local access trips 5 Main roadway for thru vehicle trips 6 Consistent roadway design for the entire corridor improves navigability
+[p012_c0003] _+selectbusservice_
+[p012_c0004] _12_
+
+## Page 13
+
+### [p013_c0001] Corridor design summary
+> [p013_c0002] A map of the Queens Bus Service corridor design summary area. The map shows a route starting from Roosevelt Av / Broadway in the north, passing through Queens Blvd and Hoffman Dr, then Woodhaven Blvd, Cross Bay Blvd (north of 165 Av), and ending at Broad Channel / Rockaways. The map includes labels for Forest Park, Spring Creek Park, JFK Airport, and Rockaway Beach Blvd. A scale bar indicates 0, 0.5, and 1 mile, and a north arrow is present. Colored arrows point from the route segments to the corresponding design summary text on the right.
+### [p013_c0003] Roosevelt Av / Broadway Av
+- [p013_c0004] – No bus lanes – Improved curbside bus stops
+### [p013_c0005] Queens Blvd and Hoffman Dr
+- [p013_c0006] – Designated bus-only station areas – Improved bus stops / transfers
+### [p013_c0007] Woodhaven Blvd
+- [p013_c0008] – Main road bus lanes – All buses use median stations
+### [p013_c0009] Cross Bay Blvd (north of 165 Av)
+- [p013_c0010] – Offset bus lanes – SBS buses stop at bus bulbs – Local buses stop at the curb
+### [p013_c0011] Broad Channel / Rockaways
+- [p013_c0012] – No bus lanes / targeted transit priority treatments – Improved curbside bus stops
+[p013_c0013] _+selectbusservice_
+[p013_c0014] _13_
+
+## Page 14
+
+### [p014_c0001] Woodhaven Boulevard
+[p014_c0002] _Typical 120' right-of-way_
+> [p014_c0003] Existing East Sidewalk 20' Parking / Bus Stop / Travel Lane 11' Travel Lane 11' Travel Lane 11' Travel Lane 15' Median 11' Travel Lane 11' Travel Lane 11' Travel Lane 19' Parking / Bus Stop / Travel Lane West Sidewalk 120'-0"
+> [p014_c0004] Proposed East Sidewalk 9' Parking 11' Travel Lane 7' Median w/ Trees 12' Bus Lane 10' Travel Lane 11' Travel Lane 11' Travel Lane 10' Travel Lane 12' Bus Lane 6' Median w/ Trees 11' Travel Lane 9' Parking West Sidewalk
+[p014_c0005] _Example intersection: Woodhaven & 63 rd Rd_
+[p014_c0006] _Typical 120' right-of-way with station_
+> [p014_c0007] Existing East Sidewalk 9' Parking / Turn Lane 11' Travel Lane 11' Travel Lane 11' Travel Lane 11' Travel Lane 10' Turn Lane 4' Median 11' Travel Lane 11' Travel Lane 11' Travel Lane 11' Travel Lane 9' Parking / Bus Stop West Sidewalk 120'-0"
+> [p014_c0008] Proposed East Sidewalk 10' Parking / Turn Lane 10' Travel Lane 7' Median w/ Trees 12' Bus Lane 10' Travel Lane 11' Travel Lane 11' Travel Lane 10' Travel Lane 12' Bus Lane 11' Bus Stop 11' Travel Lane West Sidewalk
+[p014_c0009] _Example intersection: Woodhaven & Metropolitan Av_
+- [p014_c0010] • All buses use main road bus lanes and median stations • Left-turn bays at selected locations • Slip lanes at select locations allow vehicles to move between the service road and the main road
+[p014_c0011] _+selectbusservice_
+[p014_c0012] _14_
+
+## Page 15
+
+### [p015_c0001] Typical median station
+> [p015_c0002] The diagram illustrates a typical median station layout. It shows a cross-section of a street with a median. On the left side, there is a '2nd mid-block station access point (where feasible)' indicated by a blue callout box with an arrow pointing to a crosswalk. On the right side, there is a 'station access from intersection crosswalk' indicated by a blue callout box with an arrow pointing to another crosswalk. The median is divided into two main sections: a 'Local / Express' boarding area and an 'SBS' (Short Bus Service) boarding area. A 'fencing / screen' is shown as a yellow double-headed arrow spanning the width of the median. Below the median, the 'ONLY BUS' lane is indicated. The 'Local / Express' boarding area is marked with a blue box containing a left-pointing arrow and the text 'Local / Express'. The 'SBS' boarding area is marked with a blue box containing a left-pointing arrow and the text 'SBS'. A 'Maneuvering space' is indicated between the two boarding areas. The entire station area is bounded by a 'STOP' line on the street.
+> [p015_c0003] A photograph of a bus stop on Avinguda Diagonal in Barcelona, Spain. A red bus is stopped at the stop, which features a modern, low-profile shelter. The street is lined with historic buildings and palm trees.
+[p015_c0004] _Avinguda Diagonal, Barcelona, Spain_
+> [p015_c0005] A photograph of a bus stop on White Plains Road in the Bronx. A modern, glass-roofed shelter is visible, with several people waiting. The street is lined with commercial buildings, including a 'JAMAICAN MARKET CORP'.
+[p015_c0006] _White Plains Road, Bronx_
+> [p015_c0007] A photograph of a bus stop on Pelham Parkway in the Bronx. A white bus is stopped at the stop, which features a bench and a trash can. The street is lined with trees and a clear sky.
+[p015_c0008] _Pelham Parkway, Bronx_
+[p015_c0009] _+selectbusservice_
+[p015_c0010] _15_
+
+## Page 16
+
+### [p016_c0001] Cross Bay Boulevard
+### [p016_c0002] Option 1
+[p016_c0003] 2 travel lanes each direction / left-turn bays
+> [p016_c0004] Existing East Sidewalk 23' Parking / Bus Stop / Travel Lane 12' Travel Lane 12' Travel Lane 6' Median 10' Turn Lane 12' Travel Lane 12' Travel Lane 23' Parking / Bus Stop / Travel Lane West Sidewalk 110'-0" Proposed East Sidewalk 10' Bus Bulb / Parking 12' Bus Lane 11' Travel Lane 11' Travel Lane 12' Median w/ Trees 10' Turn Lane / Median 11' Travel Lane 11' Travel Lane 12' Bus Lane 10' Bus Bulb / Parking West Sidewalk
+### [p016_c0005] Option 2
+[p016_c0006] 3 travel lanes each direction / shared left-turn lanes
+> [p016_c0007] Existing East Sidewalk 23' Parking / Bus Stop / Travel Lane 12' Travel Lane 12' Travel Lane 6' Median 10' Turn Lane 12' Travel Lane 12' Travel Lane 23' Parking / Bus Stop / Travel Lane West Sidewalk 110'-0" Proposed East Sidewalk 9' Bus Bulb / Parking 11' Bus Lane 10' Travel Lane 10' Travel Lane 11' Travel Lane 8' Median w/ Trees 11' Travel Lane 10' Travel Lane 10' Travel Lane 11' Bus Lane 9' Bus Bulb / Parking West Sidewalk
+- [p016_c0008] • All buses use offset bus lanes • SBS buses stop at the bus bulbs; Local / express buses stop at the curb • Maintains parking / deliveries at the curb
+[p016_c0009] Based on feedback from the Community Advisory Committee, Option 2 is currently shown in the design plans; however, Option 1 will also be analyzed in terms of safety and traffic
+[p016_c0010] _+selectbusservice_
+[p016_c0011] _16_
+
+## Page 17
+
+### [p017_c0001] Typical bus bulb station
+[p017_c0002] The sidewalk is extended to meet the bus lane
+> [p017_c0003] The diagram illustrates a typical bus bulb station layout. It shows a cross-section of a street with a bus lane. The bus lane is marked with 'ONLY BUS' and contains a bus stop for SBS (Select Bus Service) and a bus stop for Local / Express buses. The SBS bus stop is located at the bus bulb, and the Local / Express bus stop is located at the curb. A maneuvering space is provided between the two stops. The sidewalk is extended to meet the bus lane, and a crosswalk is shown at the curb. The diagram also shows a building and a window above the bus lane. ONLY BUS SBS Local / Express SBS buses stop at the bus bulb Maneuvering space Local / Express buses stop at the curb
+[p017_c0004] SBS buses can pass Local and Express buses
+> [p017_c0005] A photograph of 34th Street in Manhattan, showing a bus stop and a bus lane. The bus lane is marked with 'ONLY BUS' and a red-painted area. A bus is stopped at the bus stop, and a car is driving in the lane. The sidewalk is extended to meet the bus lane.
+[p017_c0006] _34 th Street, Manhattan_
+> [p017_c0007] A photograph of Nostrand Avenue in Brooklyn, showing a bus stop and a bus lane. The bus lane is marked with 'ONLY BUS' and a red-painted area. A bus is stopped at the bus stop, and a car is driving in the lane. The sidewalk is extended to meet the bus lane.
+[p017_c0008] _Nostrand Avenue, Brooklyn_
+> [p017_c0009] A photograph of 1st Avenue in Manhattan, showing a bus stop and a bus lane. The bus lane is marked with 'ONLY BUS' and a red-painted area. A bus is stopped at the bus stop, and a car is driving in the lane. The sidewalk is extended to meet the bus lane.
+[p017_c0010] _1 st Avenue, Manhattan_
+[p017_c0011] _+selectbusservice_
+[p017_c0012] _17_
+
+## Page 18
+
+### [p018_c0001] Potential station amenities
+[p018_c0002] _trees and greening_
+[p018_c0003] _real-time information_
+[p018_c0004] _benches and seating_
+[p018_c0005] _public art_
+[p018_c0006] _San Bernardino , CA – Bus rapid transit station (source: Architectural Record)_
+[p018_c0007] _shelters / fencing / windscreens_
+[p018_c0008] _+selectbuservice_
+[p018_c0009] _18_
+
+## Page 19
+
+### [p019_c0001] Design details
+### [p019_c0002] Bus lanes
+- [p019_c0003] • Over 6 miles of bus lanes • Opportunity to explore unique treatments along Woodhaven Boulevard including: – Physical separation • Hard barriers • Soft barriers (e.g. rumble strips) – Bus lane materials
+[p019_c0004] _Brussels, Belgium (source: Flickr Greg Raisman)_
+[p019_c0005] _Eugene, Oregon (source: the Transport Politic)_
+### [p019_c0006] Traffic analysis
+[p019_c0007] Traffic analysis for the proposed design is underway; it will help inform:
+- [p019_c0008] • Transit operations • Signal timing – Longer pedestrian crossing times – More green time for Woodhaven / Cross Bay • Need for left / right turning bays
+[p019_c0009] _Screenshot of Woodhaven Blvd & Metropolitan Av_
+[p019_c0010] _+selectbusservice_
+[p019_c0011] _19_
+
+## Page 20
+
+### [p020_c0001] Focus Area – Discussion
+[p020_c0002] For discussion at table:
+- [p020_c0003] 1. Proposed bus stops 2. Proposed street direction changes near Metropolitan Av
+[p020_c0004] After discussing the locations above, the facilitator will guide you to the block-by-block street designs in the back of the room
+[p020_c0005] _+selectbusservice_
+[p020_c0006] _20_

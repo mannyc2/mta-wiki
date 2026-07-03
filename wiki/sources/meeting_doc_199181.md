@@ -1,0 +1,3730 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-199181"
+record_kind: "source"
+display_name: "NYCT 2025 DOS Agency Safety Plan"
+source_id: "meeting_doc_199181"
+source_ids:
+  - "meeting_doc_199181"
+local_observation_id: "source_nyct_2025_dos_asp"
+local_observation_ids:
+  - "source_nyct_2025_dos_asp"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-23T13:31:53.730Z"
+raw_text: "SUMMARY OF REVISIONS TO NYCT 2025 DOS AGENCY SAFETY PLAN"
+submission_ids:
+  - "sub_847767dccbc6abdb"
+payload:
+  authority_tier: "plan_document"
+  content_type: "agency safety plan"
+  date_text: "2025"
+  date_text_normalized:
+    confidence: "submitted_iso"
+    normalized_date: "2025"
+    precision: "year"
+    raw_text: "2025"
+  description: "2025 Agency Safety Plan (ASP) for New York City Transit Department of Subways, version 7, covering sections 1-9 as an annual update including safety performance targets, safety management policy, safety risk management, safety assurance, and safety promotion."
+  document_type: "Agency Safety Plan (ASP)"
+  published_date_normalized: "2025"
+  published_date_precision: "year"
+  publisher: "New York City Transit (NYCT) – Office of System Safety"
+  title: "NYCT 2025 DOS Agency Safety Plan"
+  year: 2025
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_199181#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_199181"
+    source_path: "raw/sources/meeting_doc_199181/blocks.jsonl"
+    source_quote: "SUMMARY OF REVISIONS TO NYCT 2025 DOS AGENCY SAFETY PLAN"
+    text_sha256: "sha256:8413f8db6efc6bbc656b1feba9040120de416280a7e819edcd917a965be839a7"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0003"
+    evidence_id: "meeting_doc_199181#p003_c0003"
+    page_number: 3
+    source_id: "meeting_doc_199181"
+    source_path: "raw/sources/meeting_doc_199181/blocks.jsonl"
+    source_quote: "DEPARTMENT OF SUBWAYS AGENCY SAFETY PLAN"
+    text_sha256: "sha256:d7048005a3a9d222a91f2c81ecf1d3a2177a128c039f2dcb326181ea90e6518c"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0004"
+    evidence_id: "meeting_doc_199181#p003_c0004"
+    page_number: 3
+    source_id: "meeting_doc_199181"
+    source_path: "raw/sources/meeting_doc_199181/blocks.jsonl"
+    source_quote: "2025"
+    text_sha256: "sha256:b2b2f104d32c638903e151a9b20d6e27b41d8c0c84cf8458738f83ca2f1dd744"
+    text_source: "raw_text"
+  -
+    block_id: "p004_c0001"
+    evidence_id: "meeting_doc_199181#p004_c0001"
+    page_number: 4
+    source_id: "meeting_doc_199181"
+    source_path: "raw/sources/meeting_doc_199181/blocks.jsonl"
+    source_quote: "2025 AGENCY SAFETY PLAN (ASP) FOR SUBWAYS - TABLE OF CONTENTS"
+    text_sha256: "sha256:32bf4af5f99456c79e2e1b27893bcf00f58d8c72fe6aad9cdf1c5a578048f018"
+    text_source: "raw_text"
+  -
+    block_id: "p008_c0003"
+    evidence_id: "meeting_doc_199181#p008_c0003"
+    page_number: 8
+    source_id: "meeting_doc_199181"
+    source_path: "raw/sources/meeting_doc_199181/blocks.jsonl"
+    source_quote: "Name of Entity That Drafted This Plan: New York City Transit (NYCT) – Office of System Safety"
+    text_sha256: "sha256:6b2016b2bb4ad1a8e3c43765bca8ea5f84ba89be35f613a8f6dd1efc8a21137c"
+    text_source: "raw_text"
+  -
+    block_id: "p015_c0002"
+    evidence_id: "meeting_doc_199181#p015_c0002"
+    page_number: 15
+    source_id: "meeting_doc_199181"
+    source_path: "raw/sources/meeting_doc_199181/blocks.jsonl"
+    source_quote: "7.0 Sections 1 – 9 Annual Update 2025"
+    text_sha256: "sha256:710b08dadfa8c9776a74338d2ef6e933a45cfd7b86ffc414ffdd5253547301ba"
+    text_source: "raw_text"
+---
+
+# Department of Subways agency safety plan revisions
+
+source_id: meeting_doc_199181
+citation: cite block ids exactly as shown in square brackets
+document: 2220 block(s)
+
+## Page 1
+
+### [p001_c0001] SUMMARY OF REVISIONS TO NYCT 2025 DOS AGENCY SAFETY PLAN
+[p001_c0002] Changes to typographical errors, formatting, and inspection intervals in Sections 1 thru 8
+[p001_c0003] Global Changes made: All Policy Instruction (P/I) numbers truncated, not including the version number, example (10.1.7, truncated to “most recent version of P/I 10.1) and “corrective actions” updated to “corrective actions or safety risk mitigations”.
+[p001_c0004] Some areas of Section 6 have been moved to better align them with departmental/organizational changes that have been made (ex. Power -Electrical & Third Rail).
+- [p001_c0005] • Pg 1-2: FTA Funding Types Updated • Pg 2-2: Updated signatures/approvals • Pg 2-3 thru 2-5: Updated approval documentation – To be added once ASP approved. • Pg 2-7: Updated Section 2.2.3 - Agency Safety Plan Control & Update to include more detail. • Pg 2-9: Updated Section 2.2.5 to include version update for 2025 (Version 7, Sections 1-9, Annual Update, 2025) • Pg 3-4: Section 3.4 - Safety and Risk Reduction Performance Measures & Targets Updated and includes New York City Transit 2025 safety and risk reduction performance measures and targets numbers in table format. • Pg 4-3: Updated NYCT Safety Policy NYCT P/I 10.1.9 (Issued 10/24) • Pg 4-14: Section 4.5 Authorities, Accountabilities, and Responsibilities – under Accountable Executive added “considering all other safety risk mitigations recommended by the Safety Committee, ensuring that any safety risk mitigations for the safety risk reduction program as outlined in the ASP are implemented and” • Pg 4-15: Updated MTA Appointment and Delegation of Authority • Pg 4-16: Updated Agency Leadership and Executive Management • Pg4-17: Updated Key Staff – Department of Subways • Pg 4-17 thru 4-18: Updated Organization Charts • Pg 4-19 Added Section 4.6.3 Get It Fixed Reporting Website – “An additional online reporting mechanism called “Get It Fixed” located at https://mta.info/getitfixed , has been established. Get It Fixed is an online reporting portal developed for use by NYCT employees to report non-emergency issues like customer behavior, equipment issues, climate/comfort, and cleanliness among other reportable topics.” (this made the old 4.6.3 Safety Dispute Resolution Form section and following sections move down a number (4.6.3 becomes 4.6.4)). • Pg 4-22: Section 4.7 Safety Committee – added “Joint Labor Management Safety Committee” • Pg 4-22 – 4-26: Section 4.7.1 title changed to “Purpose” and formatting changed creating sections 4.7.2 thru 4.7.8. • Pg 5-2: Section 5.1 Safety Hazard Identification added “with scheduled updates submitted to the PTSB” • Pg 5-3: Section 5.1.1 Hazard Identification added, “The DOS Safety, Safety Hazards and Risk Prevention program (SHARP) a proactive program using data from employee referrals, field observations, audits, and injury data to identify and address potential safety trends.” • Pg 5-6: Section 5.2.1 Hazard Classification – (Table 5-2) Probability Levels added “Qualitative Analysis” to Individual Item and Fleet/Inventory columns.
+
+## Page 2
+
+### [p002_c0001] SUMMARY OF REVISIONS TO NYCT 2025 DOS AGENCY SAFETY PLAN CONTINUED - PAGE 2
+- [p002_c0002] • Pg6-14: Section 6.1.B Service Delivery – added “Additionally, a systems operations telecommunication review is conducted, where the Planning & Control Superintendent reviews random calls recorded on the NICE Inform System on a weekly basis and records on the Telephone Audit database.” • Pg 6-19: Section 6.2.1C – changed to Power (Electrical & Third Rail Operations) • Pg 6-136: Section 6.3.2F Employee On the Job Injury Investigation updated to include – “Managers and supervisors must investigate employee injuries and enter the injury incident into the online portal, Smartly. The Smartly app is run by Sedgwick Claims Management Services, Inc, who NYCT has transitioned the administration of Workers’ Compensation claims to. A Sedgwick Claims Examiner will contact the injured employee and Manager to further discuss the incident. Supervision must identify root causes and ensure corrective actions or safety risk mitigations are implemented within 2 business days of an accident.” • Pg 6-140: Section 6.3.3A OSS Investigation of Near Miss Incidents, updated to include, “ Additionally, OSS has established near-miss committee to review and conduct quarterly trend analyses on both potential for employee contact (PEC) and non-PEC near-miss incidents. The committee consists of the Chief Officer of OSS - Operations, the Chief Officer of OSS - Hazard Assessment, the Manager of OSS - Rapid Transit Investigations, and the Manager of OSS - Hazard Analysis. All committee members review near-miss incident data to identify and encourage positive trends, develop corrective actions to combat negative trends, track all recommendations to completion, and ensure that implemented recommendations are periodically reviewed for effectiveness” • Pg 7-15: Section 7.1.4 De-Escalation and Workplace Violence Training Updated to include “A standalone de-escalation training has been established for Department of Subways employees. In the training techniques are provided enabling employees to recognize and identify situations which can potentially put themselves at risk as well as handling confrontational interactions. The training also instructs employees to retreat to a safe and secure place when encountering a potentially threatening situation with customers in their work environment. The training consists of lecture and provides a forum to practice learned techniques through hands on, scenario-based exercises to provide practice, receive instructor and peer feedback, and aid retention. Currently, de-Escalation training is offered for station agents, conductors, and station cleaner titled employees with plans for a further rollout of de-escalation training to all front-line and maintenance employees. In conjunction with the de-escalation training DOS has issued bulletins addressing de-escalation best practices to all station environment & operations employees and frontline” • Pg 7-17: Section 7.1.5 Contractor Safety updated to include “The Safety Manager shall maintain a list of all employees (including Subcontractors) who attended and completed NYCT’s Track Safety Seminar and submit the list to the Project CEO on a quarterly basis. The list shall contain all employees’ names, job function/classification, employer, date of attendance, and the date for renewal training.” • Pg 7-21 – pg 7-42: Section 7.3 Training Matrices added.
+
+## Page 3
+
+> [p003_c0001] The MTA logo, consisting of the letters 'MTA' in white, bold, sans-serif font, set against a black circular background.
+[p003_c0002] New York City Transit
+### [p003_c0003] DEPARTMENT OF SUBWAYS AGENCY SAFETY PLAN
+[p003_c0004] 2025
+
+## Page 4
+
+### [p004_c0001] 2025 AGENCY SAFETY PLAN (ASP) FOR SUBWAYS - TABLE OF CONTENTS
+[p004_c0002] SECTION: TITLE: PAGE: 1 Transit Agency Information 1-1 2 Plan Development, Approval, and Updates 2-1 3 Safety Performance Targets 3-1 4 Safety Management Policy 4-1 5 Safety Risk Management 5-1 6 Safety Assurance 6-1 7 Safety Promotion 7-1 8 New York Public Transportation Safety Board (PTSB) State Safety Oversight (SSO) Risk-Based Inspections (RBIs) 8-1 9 Additional Information 9-1
+
+## Page 5
+
+### [p005_c0001] Table of Contents
+[p005_c0002] 1    Transit Agency Information.....2
+[p005_c0003] _1-1_
+
+## Page 6
+
+### [p006_c0001] 1 Transit Agency Information
+[p006_c0002] Transit Agency Name: New York City Transit (NYCT)
+[p006_c0003] Transit Agency Address: 2 Broadway, New York, NY 10004
+[p006_c0004] Name and Title of Accountable Executive: Demetrius Crichlow, President
+[p006_c0005] Name of Chief Safety Officer or SMS Executive: Brian Lapp, Senior Vice President, Safety & Security
+[p006_c0006] Mode of Service Covered by This Plan: Subway Rapid Transit
+[p006_c0007] NYCT Agency serves a large urbanized area. – New York City
+[p006_c0008] FTA Funding Types:
+[p006_c0009]
+
+```text
+Grant Program Type Total Obligation Amount CIG 5309 4,599,638,564.00 ER (5324) 5,707,741,469.00 Flexible Funds 837,733,526.00 Formula (5307) 19,599,743,487.00 Formula (5337) 8,568,314,394.00 Formula (5339) 416,534,360.00 Discretionary 377,555,185.00 Grand Total 40,107,260,985.00
+```
+[p006_c0010] Mode of Service Provided by the Transit Agency: Subway & Bus
+[p006_c0011] _1-2_
+
+## Page 7
+
+### [p007_c0001] Table of Contents
+### [p007_c0002] 2 Plan Development, Approval, and Updates
+[p007_c0003] 2.1 Plan Development and Approval..... 2 2.2 Plan Updates..... 6 2.2.1 Annual Agency Safety Plan (ASP) Review..... 6 2.2.2 Annual Agency Safety Plan (ASP) Review Timeline..... 6 2.2.3 Agency Safety Plan Control and Update..... 7 2.2.4 Agency Safety Plan Review and Approval by the Oversight Agency... 8 2.2.5 Tracking Versions..... 9
+[p007_c0004] _2-1_
+
+## Page 8
+
+### [p008_c0001] 2 Plan Development, Approvals, and Updates
+### [p008_c0002] 2.1 Plan Development and Approvals
+[p008_c0003] Name of Entity That Drafted This Plan: New York City Transit (NYCT) – Office of System Safety
+[p008_c0004] Signature: Email: demetrius.crichlow@nyct.com
+[p008_c0005] Demetrius Crichlow, President, New York City Transit Accountable Executive
+[p008_c0006] Signature: Brian Lapp (Feb 4, 2026 16:37:58 EST) Email: brian.lapp@nyct.com
+[p008_c0007] Brian Lapp, Senior Vice President, Safety & Security, NYCT Chief Safety Officer
+[p008_c0008] Signature: Email: william.amarosa@nyct.com
+[p008_c0009] William Amarosa Jr., Executive Vice President, Department of Subways, NYCT Department Executive Vice President
+[p008_c0010] _2-2_
+
+## Page 9
+
+### [p009_c0001] NYCT ASP Safety Committee Approval:
+[p009_c0002] As designated in the Bipartisan Infrastructure Law (Infrastructure Investment and Jobs Act) the NYCT Agency Safety Plan has been approved by NYCT Safety Committee (Safety Committee) and is memorialized in the approved which can be found on page 2-4.
+[p009_c0003] Signature: Brian Lapp (Feb 4, 2026 16:37:58 EST)
+[p009_c0004] Email: brian.lapp@nyct.com
+[p009_c0005] Brian Lapp, Senior Vice President, Safety & Security, NYCT
+[p009_c0006] Signature: Frank Farrell (Feb 5, 2026 12:45:09 EST)
+[p009_c0007] Email: frank.farrell@nyct.com
+[p009_c0008] Frank Farrell, Executive Vice President, Department of Buses/MTA-Bus Company, NYCT
+[p009_c0009] Signature: Email: william.amarosa@nyct.com
+[p009_c0010] William Amarosa Jr., Executive Vice President, Department of Subways, NYCT
+[p009_c0011] Labor Organization Representing the Plurality of the Frontline Workforce Transport Workers Union Local 100 John Chiarello, President, TWU Local 100
+[p009_c0012] 1 Electronic Approval
+[p009_c0013] 1 Electronic approvals on file and page 2-4
+[p009_c0014] _2-3_
+
+## Page 10
+
+### [p010_c0001] NYCT ASP Electronic Approvals:
+[p010_c0002] From: John Chiarello < ichiarello@twulocal100.org > Sent: Monday, December 29, 2025 2:39 PM To: Doddo, Tim < Timothy.Doddo@nyct.com > Cc: Tony Utano < tutano@twulocal100.org >; Celeste Kirkland < ckirkland@twulocal100.org >; Eric Loegel < eloegel@twulocal100.org > Subject: Re: For Review/Approval
+[p010_c0003] Twu local 100 approves of finalized
+[p010_c0004] PTASB
+[p010_c0005] John V. Chiarello
+[p010_c0006] President | Transport Workers Union, Local 100
+[p010_c0007] 195 Montague Street, Brooklyn NY 11201
+[p010_c0008] Office: 212.873.6000 x2075 | Cell: 646.498.3738 | Fax: 646.998.7155
+[p010_c0009] Email: ichiarello@twulocal100.org | Web: www.twulocal100.org
+[p010_c0010] "TWU Local 100 - We Move New York"
+[p010_c0011] On Dec 29, 2025, at 2:33 PM, Doddo, Tim < Timothy.Doddo@nyct.com > wrote:
+[p010_c0012] John,
+[p010_c0013] Per our discussion today, this is to bring this to top of your inbox. If you could respond that you approve of finalizing the PTASP documents via reply to this that would be appreciated.
+[p010_c0014] I look forward to continuing our discussions as we work toward continuously improving our safety program and the PTASPs that document it.
+[p010_c0015] HAPPY NEW YEAR!
+[p010_c0016] Timothy J. Doddo, CSP, WSO-CSE, TSSP
+[p010_c0017] Vice President
+[p010_c0018] MTA New York City Transit Office of System Safety
+[p010_c0019] 2 Broadway (D28 E59) | New York, NY 10004
+[p010_c0020] Main: 646-252-5934
+[p010_c0021] Office: 646-252-5796 | Cell: 646-899-0525 | Fax: 646-252-5933
+[p010_c0022] timothy.doddo@nyct.com
+[p010_c0023] SAFE 247865
+> [p010_c0024] The image contains two logos. On the left is a circular logo with the letters 'CSP' inside. On the right is a logo with the text 'THINK SAFETY' above three stylized human figures.
+[p010_c0025] _2-4_
+
+## Page 11
+
+### [p011_c0001] MTA Board of Directors Approval:
+[p011_c0002] As required by 673.23(a)(1) the 2024 NYCT Agency Safety Plan has been approved by the MTA Board of Directors and is memorialized in the approved board meeting minutes which can be found below.
+[p011_c0003] TO BE ADDED
+[p011_c0004] _2-5_
+
+## Page 12
+
+### [p012_c0001] 2.2 Plan Updates
+### [p012_c0002] 2.2.1 Annual Agency Safety Plan (ASP) Review
+[p012_c0003] The ASP is reviewed annually to incorporate:
+- [p012_c0004] • changes required by the Safety Committee • modifications required by the Public Transportation Safety Board (PTSB) • changes in management • new equipment • new or modified systems and facilities • extended or modified operations • newly added safety related topics
+### [p012_c0005] 2.2.2 Agency Safety Plan Review Timeline
+- [p012_c0006] • January – Office Of System Safety (OSS) sends out a request to the Department of Subways (DOS) representatives for the annual ASP update. • February - Individual meetings are held with DOS representatives to update them on any changes to the ASP (format, content, requirements...etc), if necessary and request the department to update the applicable sections of the ASP. • April – OSS collects, reviews and combines all edits from departments into 1st draft update, 1st draft update is distributed to OSS divisions for review. • May – OSS edits/comments are incorporated into the ASP and they are redistributed back out to DOS for 2nd round review and comment. • June OSS integrates all 2nd round comments into 2nd round draft and resubmits to DOS departments for approval and/or to finalize any additional comments. • July – OSS 2nd draft update is distributed to OSS divisions for review and/or approval. Any outstanding comments/edits are addressed. • August - The ASP is routed to Public Transportation Safety Board (PTSB) for DRAFT review. Any PTSB submitted comments are reviewed by OSS and if necessary, reviewed by the department/division too which the comments are intended for and incorporated into the ASP. • September – ASP is routed to NYCT ASP Safety Committee and the PTSB (for DRAFT review only) review, comment and/or approval. Any NYCT ASP Safety Committee’s and PTSB submitted comments are reviewed by OSS and if necessary, reviewed by the department/division too which the comments are intended for and incorporated into the ASPs. • October - If necessary, an updated ASP with ASP Safety Council comments is resubmitted to the ASP Safety Council for approval. ASPs routed for signature/approval to head of OSS, DOS, DOB, C&D and president. Council for review and/or approval.
+[p012_c0007] _2-6_
+
+## Page 13
+
+- [p013_c0001] • November - Board Package submitted to MTA Safety, Chief Safety Officer for submittal to Chief Administrative Officer and Ass. Associate Council (General Councils Office). The board package submittals are for the MTA Safety Committee to review and approve during a meeting the precedes the MTA Board meeting. The MTA Safety committee recommends approval to the MTA Board during the separate standalone board meeting. Once board approval letter has been obtained by the board Secretary, it is inserted into the final submittal of the ASP for the PTSB, along with the OSS transmittal letter and sent via email to PTSB.
+### [p013_c0002] 2.2.3 Agency Safety Plan Control and Update
+[p013_c0003] The purpose of this plan is to provide a formalized action plan that addresses all applicable requirements and standards from the FTA's Public Transportation Safety Program and National Safety Plan and will ensure that safety and environmental compliance is integrated into all phases of the division/department including design, procurement, construction, modification/rehabilitation, operation, maintenance, and disposal. The Agency Safety Plan establishes a coordinated safety effort that is responsible to the needs of the operating and support departments such that all personnel are working toward the common goal of minimizing the occurrence of employee assaults, customer and employee accidents, and other safety concerns by providing safe revenue service to our customers and a safe work environment for our employees. The Agency Safety Plan fosters commitment and involvement by management and staff in safety and environmental activities.
+[p013_c0004] The Office of System Safety (OSS) is responsible for analysis, review, revision, and publication of the ASP. OSS sends out a written request to DOS for liaisons that will work with OSS to solicit and collect edits to and input from the various divisions within the Department of Subways (DOS) and the Safety Committee. Once the liaisons are identified, working drafts are distributed via email to the DOS liaisons who distribute to all DOS departments with a request to provide feedback on, update and edit the ASP. The updates, edits and feedback are combined in word tracked changes and sent to OSS for review. OSS reviews the updates, edits, and feedback and reaches out to DOS with any questions, clarifications, concerns or recommendations for discussion and feedback via email or voice. Once all the updates and edits have been discussed, finalized and clarified, the second round working draft is redistributed to DOS for another round of review and updates via email. Any noted edits or updates as a result of the second round review are incorporated into the working draft and a final review is completed by DOS. Once the final working draft is complete it is distributed via email to the Safety Committee for review and comments, comments or edits are discussed with the specific DOS department and OSS until finalized, when a final draft is issued to senior DOS and OSS management for review and approval and board review leading to ultimate final approval.
+[p013_c0005] Pursuant to the Bipartisan Infrastructure Law (49 U.S.C § 5329(d)) the Safety Committee is required to approve an agency's Agency Safety Plan (ASP) and any updates to the ASP. This approval must occur before the agency's board of directors approves the ASP or update. The Safety Committee is a collaborative labor-management committee that is focused on critical safety issues including needed mitigations for known safety hazards. The NYCT Safety Committee consists of Senior Vice President of Safety and Security, Executive Vice President of
+[p013_c0006] _2-7_
+
+## Page 14
+
+[p014_c0001] Subways, Executive Vice President of Buses, and Senior TWU 100 Representatives. The procedures, timelines, and programs detailed in this document (including those in referenced policy documents) have been reviewed and approved by all the members of the Safety Committee and amendments/modifications to any of these procedures, timelines, and programs will be reviewed and approved by the Safety Committee prior to submittal of the ASP. The Safety Committee has access to any available safety data upon request of the Safety Committee to facilitate this process.
+[p014_c0002] OSS submits the final ASP to the President of NYC Transit, the Executive Vice President of the Department of Subways, the Senior Vice President of the Safety and Security for review, approval, and to affix their signature to the plan. The final plan is posted on the NYCT intranet “MTA Today” electronically and departmental liaisons are alerted when an updated plan is posted.
+### [p014_c0003] 2.2.4 Agency Safety Plan Review and Approval by the Oversight Agency
+[p014_c0004] On July 19, 2018, FTA published the Public Transportation ASP (PTASP) Final Rule which requires operators of urban public transportation systems that receive federal funds to develop ASPs that include the processes and procedures to implement Safety Management Systems (SMS).
+[p014_c0005] New York City Transit conducts an annual revision of the ASP in accordance with 49 CFR Part 673. NYCT submits ASP modifications and any subsequent modified procedures to the New York State Public Transportation Safety Board (PTSB) for review and approval. Through the review of the ASP, NYCT will ensure that the SMS is appropriately scaled to the size, scope, and complexity of NYCT and includes Safety Management Policy, Safety Risk Management, Safety Assurance, and Safety Promotion.
+[p014_c0006] In accordance with PTSB guidelines, NYCT submits the ASP for review and approval for annual recertification or when changes in conditions require a modification of the plan. Once the ASP is finalized following the PTSB review process, the PTSB issues a formal letter of approval to New York City Transit.
+[p014_c0007] _2-8_
+
+## Page 15
+
+### [p015_c0001] 2.2.5 Tracking Versions
+[p015_c0002]
+
+```text
+Version Number and Updates Version Number Section/Pages Affected Reason for Change Date Issued 1.0 None Original 2019 2.0 None ASP with MTA Board Approval 2020 3.0 Sections 1 - 8 Annual Update 2021 4.0 Sections 1 - 8 Annual Update 2022 5.0 Sections 1 - 8 Annual Update 2023 6.0 Sections 1 - 9 Annual Update 2024 7.0 Sections 1 – 9 Annual Update 2025
+```
+[p015_c0003] _2-9_
+
+## Page 16
+
+### [p016_c0001] Table of Contents
+[p016_c0002] 3 Safety Performance Program (Measures & Targets) ..... 2 3.1 Risk Reduction Program Overview ..... 2 3.2 New York City Transit Safety and Risk Reduction Program Performance Measures & Targets..... 2 3.3 Safety Performance Target Coordination ..... 3 3.4 Safety and Risk Reduction Performance Measures & Targets ..... 4
+[p016_c0003] _3-1_
+
+## Page 17
+
+### [p017_c0001] 3 Safety Performance Program (Measures & Targets)
+### [p017_c0002] 3.1 Risk Reduction Program Overview
+[p017_c0003] The NYCT safety risk reduction program aims to improve the safety performance of transit operations by reducing the number and rates of accidents, injuries, and assaults on transit workers. This section outlines the required safety risk reduction program measures, sets targets for them, and initiatives for the risk reduction program.
+[p017_c0004] In addition, this section outlines the safety committees' roles and responsibilities within NYCT and the risk reduction program.
+### [p017_c0005] 3.2 New York City Transit Safety and Risk Reduction Program Performance Measures & Targets
+[p017_c0006] NYCT safety performance targets are set based off of data generated from a 3-year rolling average of National Transportation Database (NTD) data (2021-2023) and based on the safety performance measures in the National Public Transportation Safety Plan (NPTSP). These measures will be used to identify actions to take to improve safety outcomes. NYCT in conjunction with the Safety Committee selected performance targets that are appropriate to the operation and environment and in accordance with a specific, measurable, attainable, relevant, and time-bound (SMART) approach that are in compliance all applicable requirements and standards from the FTA's Public Transportation Safety Program and National Safety Plan. The measures will be regularly monitored to ensure they are being met and improving safety. The measures will also be reevaluated on an annual basis to refine the sub-measures developed and performance targets selected.
+[p017_c0007] NYCT Safety Risk Reduction Program (SRRP) Measures and their rates, include:
+- [p017_c0008] • Major Events • Collisions • Injuries • Assaults on Transit Workers
+[p017_c0009] NYCT additional Safety Performance Measures and their rates, include the above-mentioned as well as:
+- [p017_c0010] • Pedestrian Collisions • Vehicular Collision • Fatalities • System Reliability (mean distance between major mechanical failures by mode) • Transit Worker Fatality (rate only) • Transit Worker Injury (rate only) • System Reliability
+[p017_c0011] _3-2_
+
+## Page 18
+
+### [p018_c0001] 3.3 Safety Performance Target Coordination
+[p018_c0002] Based on analysis of historical and current leading and lagging indicators, NYCT and the Safety Committee set feasible performance goals to support data-based continuous safety and reliability improvements. These targets are intended to guide prioritizing resources and investments that support meeting performance targets.
+[p018_c0003] NYCT provides safety performance targets to the New York State Department of Transportation, Public Transportation Safety Board (NYSDOT/PTSB) via the PTASP review and approval process. NYCT incorporates PTSB comments into the PTASP through this collaborative review and comment process and may adjust performance targets as a result. This supports the PTSB in the federally required transportation planning process in compliance with the Statewide Transportation Improvement Program (STIP) and Transportation Improvement Program (TIP). MTA Capital Funding sends a copy of the approved ASP to the New York Metropolitan Transportation Council (NYMTC), the designated Metropolitan Planning Organization (MPO), as required in the STIP and TIP.
+[p018_c0004] NYCT will submit safety performance targets to the New York State Department of Transportation, Public Transportation Safety Board (NYSDOT/PTSB).
+[p018_c0005] Targets are transmitted to the state per Section 3 of the PTASP.
+[p018_c0006] State Entity Name: NYSDOT/PTSB
+[p018_c0007] Date Targets Transmitted: Submitted with ASP
+[p018_c0008] _3-3_
+
+## Page 19
+
+### [p019_c0001] 3.4 Safety and Risk Reduction Performance Measures & Targets
+### [p019_c0002] National Transit Database (NTD) 3-Year Data 2022-2024
+[p019_c0003]
+
+```text
+Safety Performance Measure Description NYCT Subways* Definitions** Nominal Goal (2%) Measure 1a—Major Events (SRRP) This includes all safety and security major events as defined by the NTD. 812.33 796.09 Events based on Safety, System Security, and Personal Security contains reportable thresholds that include, but not limited to: •Fatality (includes suicides) •One or more persons immediately transported for medical attention (injury – which includes attempted suicides) •Serious injury •Substantial damage (for NYCT and MTA Bus, any damaged Transit property that exceeds $25,000). •Evacuations of a transit facility or vehicle for life safety reasons or to the rail right-of-way •All mainline/yard derailments Measure 1b—Major Event Rate (SRRP) This includes all safety and security major events as defined by the NTD, divided by VRM. 2.36E-06 2.31E-06 •Rail transit vehicle collisions occurring at a grade crossing or intersection •Rail transit vehicle collisions with an individual (regardless of injury) •Rail transit vehicle collisions with another revenue or non-revenue rail transit vehicle *Including maintenance/hi-rail vehicles *Incidents involving a moving runaway train *Applies to revenue vehicles only Measure 1.0 - Collisions This includes all collisions reported to the NTD. 201.33 197.31 Consist of Revenue Vehicle (Bus or Train) making contact with a person, another Revenue Vehicle (this also applies to Maintenance Trains or Hi-Rails), and fixed objects. Measure 1.1—Collision Rate (SRRP) This includes all collisions reported to the NTD, divided by VRM. 5.85E-07 5.73E-07 Measure 1.1.1—Pedestrian Collision Rate This includes all collisions “with a person,” as defined by the NTD, divided by VRM. 5.75E-07 5.64E-07 Measure 1.1.2—Vehicular Collision Rate This includes all collisions “with a motor vehicle,” as defined by the NTD, divided by VRM. 5.81E-09 5.69E-09 Measure 2a—Fatalities This includes all fatalities as defined by the NTD. 110.00 107.80 Based on Major events to which needs to be confirmed within 30 days of incident. Measure 2b—Fatality Rate This includes all fatalities as defined by the NTD, divided by VRM. 3.19E-07 3.13E-07 Fatalities are based on major event categories that includes: Collisions (Person contact with a vehicle or vehicle makes contact to another vehicle), Derailements (Mainline or Yard), Fires , Acts of God , Suicides , Bombing , Hazardous Material Spill , Chemical/Biological/Radiological/Nuclear Release , Homicide , and Other Safety or Security Event (Slip,Trip,Fall ; Electrocution; Projectiles, other Miscellaneous occurrences) However, other fatalities that includes illness, drug overdoses, or other natural causes are not considered reportable. Measure 2.1—Transit Worker Fatality Rate This includes all transit worker fatalities as defined by the NTD, including the categories “Transit Employee/Contractor,” “Transit Vehicle Operator,” and “Other Transit Staff,” divided by VRM. 9.68E-10 9.49E-10 Measure 3a—Injuries (SRRP) This includes all injuries as defined by the NTD. 720.67 706.25 Based on Major events which requires immediate transport away for medical attention based one or more person. Measure 3b—Injury Rate (SRRP) This includes all injuries as defined by the NTD, divided by VRM. 2.09E-06 2.05E-06 Measure 3.1—Transit Worker Injury Rate This includes all transit worker injuries as defined by the NTD, including the categories “Transit Employee/Contractor,” “Transit Vehicle Operator,” and “Other Transit Staff,” divided by VRM. 5.71E-07 5.60E-07 Measure 4a—Assaults on Transit Worker (SRRP) This includes all assaults on transit workers as defined by the NTD. 185.33 181.63 Assault: An attack by one person on another without lawful authority or permission. • An assault on a transit worker is a circumstance in which an individual knowingly, without lawful authority or permission, and with intent to endanger the safety of any individual, or with a reckless disregard for the safety of human life, interferes with, disables, or incapacitates a transit worker while the transit worker is performing the duties of the transit worker. The “Worker Assault Detail Type” is collected for Assaults on Transit Operators or Other Transit Workers: Measure 4b—Rate of Assaults on Transit Workers (SRRP) This includes all assaults on transit workers as defined by the NTD, divided by VRM. 5.38E-07 5.28E-07 • Physical Assault on a Transit Worker: An assault in which the attack involves physical contact with the transit worker. This could include any physical contact with the victim from the attacker’s body, a weapon, a projectile, or other item (this would also be reported as a non-major event if no injury occurred). • Non-Physical Assault on a Transit Worker: An assault in which the attack involves no physical contact with the transit worker. This could include threats or intimidation, that do not result in any physical contact with the transit worker. This event would be reported as a Non-Major incident. Measure 5—System Reliability This includes Major Mechanical System failures as defined by the NTD. NA NA Mechanical System Failures based on breakdown on revenue vehicles (not reportable unless customer are at imminent danger and/or requires customer to evacuate on the right-of-way and not from train-to-train or station platform).
+```
+[p019_c0004] * NYCT Subways (HR) and NYCT Buses (Motorbus (MB), Commuter Bus (CB), Rapid Transit Bus (RB), Demand Response(DR)).
+[p019_c0005] ** Information provided from the National Transit Database - Safety & Security Policy Manual (January 2025 edition). SRRP – Safety Risk Reduction Program
+[p019_c0006] _3-4_
+
+## Page 20
+
+### [p020_c0001] Table of Contents
+[p020_c0002] 4 Safety Management Policy..... 2 4.1 Safety Management Policy Statement/Commitment to Safety ..... 2 4.2.1 Goals..... 10 4.2.2 Objectives ..... 10 4.3 Management Responsibilities for Safety..... 12 4.3.1 The Vice President, Office of System Safety..... 12 4.3.2 Department/Division Heads ..... 13 4.4 Safety Management Policy Communication..... 13 4.5 Authorities, Accountabilities, and Responsibilities..... 14 4.6 Employee Safety Reporting Program ..... 19 4.6.1 Departmental Safety Conditions/Incident Reporting..... 19 4.6.2 Employee Safety Call Center ..... 19 4.6.3 Get It Fixed Reporting Website..... 19 4.6.4 Safety Dispute Resolution Form..... 19 4.7 Safety Committee..... 22 4.7.1 PURPOSE..... 22 4.7.2 COMMITTEE MEETINGS ..... 23 4.7.3 KEY RESPONSIBILITIES ..... 23 4.7.4 PUBLIC TRANSPORTATION AGENCY SAFETY PLAN REVIEW AND APPROVAL ..... 24 4.7.5 SAFETY PERFORMANCE TARGETS ..... 24 4.7.6 SAFETY MANAGEMENT SYSTEM SUPPORT..... 25 4.7.7 TRAINING ..... 25
+[p020_c0003] _Page 4-1_
+
+## Page 21
+
+### [p021_c0001] 4 Safety Management Policy
+[p021_c0002] This section is the statement of the safety management policy incorporating safety objectives.
+### [p021_c0003] 4.1 Safety Management Policy Statement/Commitment to Safety
+[p021_c0004] In accordance with the most recent version of NYCT Policy Instruction (P/I) 10.1 “Safety Policy Instruction”, it is NYCT policy to provide a safe transportation system for our customers, safe working conditions for our employees, and adhere to responsible environmental management principles. Safety and environmental compliance are integrated elements of the NYCT operation, which is critical to providing orderly, crime-free, comfortable, convenient, and reliable transportation. The P/I provides for the establishment and implementation of NYCT’s Agency Safety Plan (ASP) as it applies to the Department of Subways. All managers, supervisors, and employees must ensure that safety and environmental protection are integrated into their operations and be held accountable for the assigned responsibilities. Additionally, all NYCT employees, are expected to refuse unsafe work and alert supervision per departmental procedures, and as applicable, per their collective bargaining agreement through the Safety Rule Dispute Resolution Form (found in section 4.6.4) if faced with unsafe situations which require further discussion.
+[p021_c0005] _Page 4-2_
+
+## Page 22
+
+### [p022_c0001] NEW YORK CITY TRANSIT POLICY/INSTRUCTION
+[p022_c0002]
+
+```text
+Subject: Classification: Issued: P/I Number NYCT SAFETY POLICY SAFETY October 2024 10.1.9
+```
+### [p022_c0003] 1.0 POLICY
+[p022_c0004] It is the policy of New York City Transit (NYCT) to provide a safe transportation system for our customers, a safe working environment for our employees, and to uphold sound environmental management principles. It is recognized that safety and environmental protection are critical elements of our operation and are essential to providing clean and reliable transportation. All employees at all levels of the organization must ensure that safety and environmental protection are integrated into their operations and be held accountable for their responsibilities.
+### [p022_c0005] 2.0 SCOPE
+[p022_c0006] This Policy/Instruction applies to NYCT, Manhattan and the Bronx Surface Transit Operating Authority, MTA Bus Company, and the Staten Island Railway to establish and implement NYCT's Public Transportation Agency Safety Plans (PTASP). The PTASP incorporates components and principles of Safety Management Systems (SMS), a top-down, organization-wide, data-driven approach to managing safety risk and assuring the effectiveness of safety mitigations.
+### [p022_c0007] 3.0 GOAL STATEMENT
+[p022_c0008] Minimize public, personnel, and New York City Transit property exposure to hazards and unsafe conditions by controlling high risk events and hazards through the implementation of key proactive and measurable safety initiatives, the enhancement of employee commitment to safety, fostering a safety culture where all employees embrace safety as a core value, and optimizing the safety of our customers and the general public.
+### [p022_c0009] 4.0 OBJECTIVES
+### [p022_c0010] 4.1 Accountability and Responsibility:
+- [p022_c0011] A. Establish and clearly define staff, management, and supervisory accountabilities and responsibilities for developing, implementing, and enforcing NYCT's PTASP and performing SMS components and principles.
+[p022_c0012]
+
+```text
+Issued By: Supersedes: Page: Demetrius Crichlow Interim President 10.1.8 1 of 7
+```
+[p022_c0013] Last Revised: October 2024
+[p022_c0014] HARD COPY IS UNCONTROLLED-ONLINE VERSION IS CURRENT
+[p022_c0015] Last Reviewed: October 2024
+[p022_c0016] _Page 4-3_
+
+## Page 23
+
+### [p023_c0001] NEW YORK CITY TRANSIT POLICY/INSTRUCTION
+[p023_c0002]
+
+```text
+Subject: Classification: Issued: P/I Number NYCT SAFETY POLICY SAFETY October 2024 10.1.9
+```
+- [p023_c0003] B. Develop methodologies for integrating SMS processes and activities that identify, assess, and resolve safety risks, safety deficiencies, and safety concerns.
+### [p023_c0004] 4.2 Agency Commitment to SMS:
+- [p023_c0005] A. Support safety management through allocating appropriate resources that will result in a culture that values and fosters safe work practices, mitigates risks of injuries to our employees and customers, and encourages effective employee safety reporting and communication.
+### [p023_c0006] 4.3 Employee Safety Reporting Program:
+- [p023_c0007] A. Establish hazard identification and analysis procedures including a safety reporting program that will ensure the early identification and resolution of safety and environmental hazards. B. Ensure that employees who disclose a safety concern through the safety reporting program and safety call center are not discriminated or retaliated against, and safety rule violations committed by employees are addressed.
+### [p023_c0008] 4.4 Safety Performance Targets:
+- [p023_c0009] A. Establish procedures that will ensure compliance with or that exceed all applicable federal, state, and local safety-related laws and regulations. B. Establish safety assurance activity procedures and ensure implementation to verify that safety control measures are appropriate and implemented. C. Continually improve upon safety performance through management processes that ensure both appropriate and effective safety management actions are taken. D. Establish and measure NYCT's safety performance against data-driven safety performance indicators and safety performance targets. E. Maintain a high level of ability to respond to emergency/disaster conditions.
+[p023_c0010]
+
+```text
+Issued By: Supersedes: Page: Demetrius Crichlow Interim President 10.1.8 2 of 7
+```
+[p023_c0011] Last Revised: October 2024
+[p023_c0012] HARD COPY IS UNCONTROLLED-ONLINE VERSION IS CURRENT
+[p023_c0013] Last Reviewed: October 2024
+[p023_c0014] _Page 4-4_
+
+## Page 24
+
+### [p024_c0001] NEW YORK CITY TRANSIT POLICY/INSTRUCTION
+[p024_c0002]
+
+```text
+Subject: Classification: Issued: P/I Number NYCT SAFETY POLICY SAFETY October 2024 10.1.9
+```
+### [p024_c0003] 4.5 Communication & Training:
+- [p024_c0004] A. Establish and implement safety communications to ensure that all employees are aware of the safety management policy and processes that are relevant to their responsibilities. B. Ensure that NYCT personnel are provided the appropriate and required safety training and are competent in safety management.
+### [p024_c0005] 5.0 RESPONSIBILITIES
+[p024_c0006] All employees at all levels of the organization are accountable for the delivery of the highest level of safety performance.
+- [p024_c0007] 5.1 It is the responsibility of the Agency President to foster a safety culture where all employees embrace safety as a core value and optimize employee and customer safety through: A. Ensuring that safety is a core business value. B. Ensuring that operational and maintenance activities and capital construction are supported by an appropriate allocation of resources. C. Enforcing that safety management is an explicit responsibility of all managers and employees. D. Ensuring the Safety Policy is appropriate and communicated throughout the agencies. E. Ensuring that action is taken to maintain safety performance at the established program standards. F. Assign voting delegates representing NYCT on the NYCT Transit Joint Labor-Management Safety Committee (Safety Committee). G. Implement the safety risk mitigations for the safety risk reduction program that are included in the Agency Safety Plan as well as consider all other
+[p024_c0008]
+
+```text
+Issued By: Supersedes: Page: Demetrius Crichlow Interim President 10.1.8 3 of 7
+```
+[p024_c0009] Last Revised: October 2024
+[p024_c0010] HARD COPY IS UNCONTROLLED-ONLINE VERSION IS CURRENT
+[p024_c0011] Last Reviewed: October 2024
+[p024_c0012] _Page 4-5_
+
+## Page 25
+
+### [p025_c0001] NEW YORK CITY TRANSIT POLICY/INSTRUCTION
+[p025_c0002]
+
+```text
+Subject: Classification: Issued: P/I Number NYCT SAFETY POLICY SAFETY October 2024 10.1.9
+```
+[p025_c0003] safety risk mitigations recommended by the Safety Committee per the respective charter and regulation.
+[p025_c0004] 5.2 The Office of System Safety is responsible for developing safety and environmental policies and programs, implementing the SMS component and principles, communicating safety information, analyzing data, and monitoring safety performance. Specifically:
+- [p025_c0005] A. Develop the overall required standards for a formalized PTASP. This plan focuses all personnel on a common goal of preventing customer and employee accidents and/or injuries by providing safe revenue service, a safe work environment, and protecting the environment. B. Manage the SMS implementation plan by ensuring the effective execution of all elements (Safety Management Policy, Safety Risk Management, Safety Assurance, and Safety Promotion). C. Coordinate the development of departmental Safety Goal Action Plans that outline the means by which they will implement the overall safety program set forth by the Office of System Safety (OSS). D. Develop safety policies and guidelines to ensure compliance with federal, state, and local laws and regulations including emergency response. E. Maintain safety documentation for required time periods. F. Direct and facilitate hazard identification, safety risk analysis and assessment, and the development and implementation of controls and corrective actions. G. Provide technical safety services in the areas of hazard analysis, asbestos and lead management, environmental management, industrial hygiene, fire safety, safety engineering, accident investigation, and near miss incident investigation. H. Develop an effective safety reporting program. I. Promote a positive safety culture.
+[p025_c0006]
+
+```text
+Issued By: Supersedes: Page: Demetrius Crichlow Interim President 10.1.8 4 of 7
+```
+[p025_c0007] Last Revised: October 2024
+[p025_c0008] HARD COPY IS UNCONTROLLED-ONLINE VERSION IS CURRENT
+[p025_c0009] Last Reviewed: October 2024
+[p025_c0010] _Page 4-6_
+
+## Page 26
+
+### [p026_c0001] NEW YORK CITY TRANSIT POLICY/INSTRUCTION
+[p026_c0002]
+
+```text
+Subject: Classification: Issued: P/I Number NYCT SAFETY POLICY SAFETY October 2024 10.1.9
+```
+- [p026_c0003] J. Monitor operating and support department implementation and enforcement of safety and environmental requirements. K. Review PTASP implementation. L. Report safety performance and any requirements for improvement to the executive level. 5.3 Department/Division heads are responsible for the implementation and enforcement of the PTASP and the SMS plan components as they are developed within their organizations. Specifically: A. Direct and facilitate high-risk hazard identification, the development and implementation of control measures to mitigate them and monitor the implementation and the effectiveness of control measures. B. Demonstrate that everyone must perform every task in the safest manner possible via their actions and during discussions with managers, supervisors, and employees. C. As part of the SMS plan, develop safety performance objectives (leading indicators) and safety performance targets to measure and continually improve safety performance. D. Audit the implementation of Departmental/Divisional inspection and maintenance programs. E. Establish and track the status of employee safety, customer safety, and environmental goals that focus on preventing accidents and protecting the environment in areas under their jurisdiction. F. Establish and maintain programs to achieve employee safety, customer safety, and environmental compliance goals. G. Report and thoroughly investigate all accidents and environmental incidents and develop corrective actions to prevent recurrence.
+[p026_c0004]
+
+```text
+Issued By: Supersedes: Page: Demetrius Crichlow Interim President 10.1.8 5 of 7
+```
+[p026_c0005] Last Revised: October 2024
+[p026_c0006] HARD COPY IS UNCONTROLLED-ONLINE VERSION IS CURRENT
+[p026_c0007] Last Reviewed: October 2024
+[p026_c0008] _Page 4-7_
+
+## Page 27
+
+### [p027_c0001] NEW YORK CITY TRANSIT POLICY/INSTRUCTION
+[p027_c0002]
+
+```text
+Subject: Classification: Issued: P/I Number NYCT SAFETY POLICY SAFETY October 2024 10.1.9
+```
+- [p027_c0003] H. Develop, implement, and document regularly scheduled inspections of customer and employee environments. I. Develop and implement a tracking system to record the implementation of all corrective actions necessary to remedy identified safety, occupational health, and environmental hazards. J. Train employees to ensure their safety and competency and to communicate safety information. K. Include OSS in the review and communication of all changes to minimum standards for safety.
+### [p027_c0004] 5.4 Management and supervision at all levels are responsible for:
+- [p027_c0005] A. Implementing and enforcing NYCT's PTASP and SMS components as they are developed. B. Enforcing safety policies, rules, and regulations. C. Ensuring hazard identification and control in the work environment and that the control measures are effective.
+### [p027_c0006] 5.5 Employees are responsible for:
+- [p027_c0007] A. Understanding and complying with all NYCT safety and occupational health rules and regulations. B. Reporting all unsafe acts, conditions, and environmental contaminations observed in the work environment to supervision per established protocols and rendering them safe until corrected if trained/qualified to do so. C. Acting in the best interest of the safety of fellow employees, customers, and the general public. D. Cooperating and communicating to enhance the safety of all employees, customers, and the general public.
+[p027_c0008]
+
+```text
+Issued By: Supersedes: Page: Demetrius Crichlow Interim President 10.1.8 6 of 7
+```
+[p027_c0009] Last Revised: October 2024
+[p027_c0010] HARD COPY IS UNCONTROLLED-ONLINE VERSION IS CURRENT
+[p027_c0011] Last Reviewed: October 2024
+[p027_c0012] _Page 4-8_
+
+## Page 28
+
+### [p028_c0001] NEW YORK CITY TRANSIT POLICY/INSTRUCTION
+[p028_c0002]
+
+```text
+Subject: Classification: Issued: P/I Number NYCT SAFETY POLICY SAFETY October 2024 10.1.9
+```
+[p028_c0003] Approved: Demetrius Crichlow Interim President
+[p028_c0004]
+
+```text
+Issued By: Supersedes: Page: Demetrius Crichlow Interim President 10.1.8 7 of 7
+```
+[p028_c0005] Last Revised: October 2024
+[p028_c0006] HARD COPY IS UNCONTROLLED-ONLINE VERSION IS CURRENT
+[p028_c0007] Last Reviewed: October 2024
+[p028_c0008] _Page 4-9_
+
+## Page 29
+
+### [p029_c0001] 4.2 Goals and Objectives
+[p029_c0002] This ASP outlines how NYCT ensures the safety of customers, employees, and the general public; and complies with the rules, regulations and program set forth and enforced by the Public Transportation Safety Board (PTSB). ASP goals are reviewed and updated annually. The objectives of the ASP are to define safety related activities, management controls and plans, and establish a process for monitoring and assuring safety in accordance with NYC Transit Policy. The purpose of these goals and objectives is to minimize the exposure of hazards and unsafe conditions to the public, personnel, and New York City Transit property.
+### [p029_c0003] 4.2.1 Goals
+[p029_c0004] The NYC Transit safety goals are the following:
+- [p029_c0005] • Provide a safe, reliable, and economical transportation system. • Reduce customer and employee accidents and injuries. • Identify, eliminate, minimize, and/or control safety hazards and risks. • Ensure compliance with safety, health and environmental laws, regulations, and codes. • Maintain a high level of ability to respond to emergency/disaster conditions. • Establish requirements, lines of authority, levels of responsibility and accountability for implementation of the Agency Safety Plan within the organization. • Ensure that the SMS is appropriately scaled to the size, scope, and complexity of NYCT and includes Safety Management Policy, Safety Risk Management, Safety Assurance, and Safety Promotion.
+### [p029_c0006] 4.2.2 Objectives
+[p029_c0007] The ASP goals are attained by achieving the following objectives:
+- [p029_c0008] • Implement and annually update the ASP. • Enforce existing NYC Transit Rules and Regulations. Develop and enforce departmental safety rules. Implement operational General Orders and Bulletins. • Develop and implement departmental Safety Goal Action Plans. • Establish, implement, and evaluate maintenance and inspection programs for all DOS departments and divisions.
+[p029_c0009] _Page 4-10_
+
+## Page 30
+
+- [p030_c0001] • Establish, implement, and evaluate a maintenance program and a pre-trip inspection program and procedures for the safe operation of revenue and non-revenue vehicles. • Establish, implement, and evaluate procedures for facility/structure maintenance and respond to divisional requests for repairs to structures and equipment to ensure customer and employee safety while on the system. • Develop, implement, and evaluate technical training (equipment/vehicle maintenance and operation) programs for employees, refresher courses for employees and ensure attendance of all appropriate personnel. • Establish, implement, and update technical training programs for new technology, equipment modifications and maintenance procedures. • Establish and implement an employee safety training program. • Establish and implement emergency response procedures for facilities, stations, depots, equipment failures in service, collisions, derailments, fires, inclement weather, and release of hazardous materials. • Review federal, state, and local safety and environmental regulations as well as NYC Transit operations to determine if safety Policy/Instructions should be developed. Develop and implement safety and environmental Policy/Instructions when necessary. • Review federal, state, and local safety regulations as well as NYC Transit operations to determine the necessity of safety training and develop or revise training as appropriate. • Investigate all fatal employee and selected customer fatality accidents, conduct Boards of Inquiry when required and develop corrective action plans or safety risk mitigations to prevent recurrence. • Investigate fire-related incidents, near miss incidents, structural/equipment failures, subway collision/ derailment incidents and investigate and classify subway side door drag incidents. Develop corrective action plans or safety risk mitigations to prevent recurrence. • Conduct Hazard Analyses on safety critical system/equipment and operating procedures/rule changes in accordance with established system safety principals outlined in Military Standard 882. • Conduct industrial hygiene investigations of work sites and customer areas and identify corrective measures or safety risk mitigations according to the safety order of precedence. • Conduct inspections of operating department work locations and the customer environment to identify hazards and resolutions.
+[p030_c0002] _Page 4-11_
+
+## Page 31
+
+- [p031_c0001] • Conduct internal safety audits of Department of Subways operating units to ensure compliance with the Safety Plan. • Evaluate the work and customer environment to ensure that all safety Policy/Instructions are being implemented. • Evaluate the long-term safety and environmental compliance related initiatives included in the capital program during the capital program development phase and make recommendations to assist in the prioritization process.
+### [p031_c0002] 4.3 Management Responsibilities for Safety
+[p031_c0003] Management and supervision at all levels are responsible for the implementation and enforcement of the New York City Transit Safety Plan which includes safety policies and rules and regulations to ensure a safe work environment for their employees, a safe system for customers, and environmental protection.
+[p031_c0004] To effectively implement the program, responsibilities are delegated as outlined below:
+### [p031_c0005] 4.3.1 The Vice President, Office of System Safety is responsible for the development of safety and environmental policies and programs, specifically:
+- [p031_c0006] • Develop the overall required standards for a formalized ASP. This plan focuses all personnel on a common goal of preventing customer and employee accidents by providing safe revenue service and a safe work environment, as well as protecting the environment. • Develop Safety Goal Action Plan outlines for use by each department. • Develop safety and environmental policies and guidelines required to ensure compliance with applicable federal, state, and local regulations. • Provide technical safety services in the areas of hazard analysis, asbestos/lead management, environmental management, industrial hygiene, fire safety, safety engineering, and accident investigation. • Monitor operating and support department implementation and enforcement of safety and environmental requirements.
+[p031_c0007] _Page 4-12_
+
+## Page 32
+
+### [p032_c0001] 4.3.2 Department/Division Heads are responsible for the implementation and enforcement of the safety plan within their organizations, specifically:
+- [p032_c0002] • Establish employee safety, customer safety, and environmental goals that focus on preventing accidents and protecting the environment in areas under their jurisdiction and track the status of the goals. • Establish and maintain safety programs to achieve employee safety goals, customer safety goals, and environmental protection. • Report and thoroughly investigate all accidents and environmental incidents and develop corrective actions or safety risk mitigations to prevent recurrence. • Develop, implement, and document regularly scheduled inspections of customer and employee environments. • Develop and implement a tracking system to record the implementation of all corrective actions necessary to remedy identified safety, occupational health, and environmental hazards. • Develop maintenance and inspection programs for rolling stock, physical plants, tracks, signals, power, communication systems, and infrastructure. • Ensure compliance with employee technical and safety training requirements.
+### [p032_c0003] 4.4 Safety Management Policy Communication
+[p032_c0004] This section describes how the safety management policy is communicated throughout the organization.
+[p032_c0005] The following are used to communicate the safety management policy:
+- [p032_c0006] • NYC Transit Safety Policy/Instructions are posted on the MTA Today intranet website that is available to employees. • The current Department of Subways Agency Safety Plan (DOS ASP) is posted on MTA Today. • Senior management meets with supervisors to communicate departmental safety goals. Supervisors meet with hourly employees to discuss these safety goals during toolbox talks and pre-job briefings.
+[p032_c0007] _Page 4-13_
+
+## Page 33
+
+- [p033_c0001] • Bulletins, Safety Times Newsletters, Safety Talk Posters, and Safety Advisories are distributed to employees to communicate safety values, address areas of concern, or other safety information.
+### [p033_c0002] 4.5 Authorities, Accountabilities, and Responsibilities
+[p033_c0003] This section describes the authorities, accountabilities, and responsibilities of the following individuals for the development and management of the NYCT Safety Management System (SMS).
+[p033_c0004] NYCT has determined that the Senior Vice President, Security and Safety, the Vice President, OSS and all unit heads reporting to the Vice President, OSS are SMS “designated personnel”. NYCT continues to assure the required Public Transportation Safety Certification Training Program (PTSCTP) requirements are met by required staff.
+### [p033_c0005] Accountable Executive
+[p033_c0006] Demetrius Crichlow, President, New York City Transit has been designated the accountable executive responsible for considering all other safety risk mitigations recommended by the Safety Committee, ensuring that any safety risk mitigations for the safety risk reduction program as outlined in the ASP are implemented and ensuring that the agency’s Safety Management System (SMS) is effectively implemented, maintained, and that action is taken to address substandard performance regarding the NYCT SMS, via the document below.
+[p033_c0007] _Page 4-14_
+
+## Page 34
+
+### [p034_c0001] METROPOLITAN TRANSPORTATION AUTHORITY APPOINTMENT AND DELEGATION OF AUTHORITY
+[p034_c0002] In accordance with 49 CFR § 673.23(d)(1) I, Janno Lieber, the duly appointed Chairman and Chief Executive Officer of the Metropolitan Transportation Authority (“MTA” or “Authority”), do hereby delegate to Demetrius Crichlow, the duly appointed President of New York City Transit Authority (“NYCT”) and MTA Bus Company, the responsibilities and all actions required of the Accountable Executive for the NYCT Public Transportation Agency Safety Plan (“PTASP”).
+[p034_c0003] The responsibilities are to ensure the agency’s PTASP and Safety Management System (“SMS”) are effectively implemented and maintained, and that action is taken, if needed, to address substandard performance of the NYCT SMS. The NYCT President also must maintain a direct line reporting relationship to key NYCT staff responsible for day-to-day operations and the safety management system.
+[p034_c0004] Pursuant to 49 CFR § 673.23(d)(1), I retain ultimate accountability for the transit agency’s safety performance and, under 49 CFR § 673.5, the MTA Transit Asset Management Plan.
+[p034_c0005] _____ Janno Lieber Chairman and Chief Executive Officer
+[p034_c0006] Dated: February 13, 2025
+[p034_c0007] _Page 4-15_
+
+## Page 35
+
+### [p035_c0001] Chief Safety Officer (SMS Executive)
+[p035_c0002] Brian Lapp, Senior Vice President, Safety & Security is the Chief Safety Officer designated by Accountable Executive, Demetrius Crichlow, President holds a direct line of reporting to the Accountable Executive, is adequately trained (Public Transportation Safety Certification Training Program), has the authority and responsibility for day-to-day operations and its safety management system, and does not serve in other operational or maintenance capacities.
+### [p035_c0003] Agency Leadership and Executive Management
+[p035_c0004] Bernard Jackson – Chief Operating Officer William Amarosa Jr.- Executive Vice President, Subways Frank Farrell – Acting Executive Vice President, NYCT Dept. of Buses/MTA Bus Co. Brian Lapp - Senior Vice President, Safety & Security Shanifah Rieara - Chief Customer Officer Aliaa Abdelrahman - Deputy Chief, Labor Relations Louis Montanti - Deputy Chief, Procurement Theresa Murphy – MTA Deputy General Counsel Franck Joseph - Chief of Staff Rachel Cohen - Vice President, Paratransit Quemuel Arroyo - Chief Accessibility Officer David Farber - General Counsel, NYCT & MTA Bus Lourdes Zapata – Chief Diversity and Inclusion Officer Monica Murray - Auditor General Timothy Doddo – Vice President, Office of System Safety Gaby Celiba – Vice President, Security Jamie Torres-Springer - President, MTA Construction & Development Sarah Wyss – Acting Chief Operations Planning Mark Roche - Deputy Chief Development Officer, MTA Construction & Development Ausberto Huertas Jr., Vice President, Safety, MTA Construction & Development
+[p035_c0005] _Page 4-16_
+
+## Page 36
+
+### [p036_c0001] Key Staff
+### [p036_c0002] Department of Subways
+[p036_c0003] Bhavesh Gandhi – Chief Safety Officer, Department of Subways Trelane Spencer – Senior Director, Senior Director, DOS Safety John Villanueva – Director, SPEED Unit Melissa O’Connell – Senior Director, DOS Safety Thomas Calandrella – Acting Vice President & Chief Officer, Service Delivery Dominick Gallo - Vice President & Chief Maintenance Officer, Maintenance of Way Sheila Hutson – Acting Senior Vice President, Customer Environment & Facilities David Soliman – Vice President, Facilities Siu Ko - Vice President & Chief Mechanical Officer, Division of Car Equipment Laura Wiles - Senior Vice President, Operations Support Bobby Lall – Acting Chief of Staff & Vice President, Organizational Strategy Lisa Schreibman – Vice President & Chief Officer, Staten Island Railway
+[p036_c0004] _Page 4-17_
+
+## Page 37
+
+### [p037_c0001] New York City Transit Department of Subways
+> [p037_c0002] Bill Amarosa Executive Vice President Deputy Dir., Dir. Mgmt & Admin Sup. OPERATIONAL STRATEGY Vicent Senior Vice President Harbert Lombard Sector Advisor Maintenance Of Way Vice President & CMO Joseph Rossetti Chief Officer, Track Armando Crespo Chief Officer, Infrastructure Silvano Ambrosino Chief Officer, Signal Anthony DiRuggiero Chief Officer, Engineering Carl Iacona Chief Officer, Power Derrick Vogelman Asst. Chief Officer, Maint. Planning Car Equipment Siv Ling Ko Vice President & CMO James Kelly III Assistant Chief, North Mica Shops Eugene Gabriell Assistant Chief, South Mica Shops Joseph Scaramallo Asst. Chief, Emergency Response James Vietzig Assistant Chief, CEE & TS Thomas Tamborino Deputy Chief, Operations Support Benson Wright Assistant Chief, QA & QC Robertson Duff Assistant Chief, Overhead Shops Service Delivery Thomas Cianbrovella Vice President & Chief Officer Jose LaSalle (Acting) Chief Officer, OCC Marc Clemente (Acting) Chief Officer, Field Operations Rossanne Cummings-Plazola Dep Chief Officer, Field Ops Sites State Island Railway Lisa Sebrekian (Acting) Vice President & Chief Officer Hebba Grant Assistant Chief, Operations Joseph Pope Asst. Chief, Maintenance Of Way Pamela Hatzeman Senior Director, Operations Support Kevin Coughlin Senior Director, Cap & Engineering OPERATIONS SUPPORT Laura Wilcox Vice President & Chief Officer Deborah Conradi Chief Officer, DOS Safety Nichole Brown Chief Officer, DOS EAM Monica DeCorte Chief Officer, Ops Training John Deane Chief Support Officer, Maintenance Charles Mathews Chief Budget Officer Brittany Montgomery Senior Advisor CAPITAL PROGRAMS Santiago Rodriguez (Acting) Vice President & Chief Officer Santiago Rodriguez ACQ, Integrated Proj/Prog Improv Gaidda Levitt ACQ, Signals, Power & Track Barney Faria ACQ, Security & Crime Joseph DiGiovanna ACQ, Prog. Mgmt./ACQ Mgmt Isabella DiVella Manager, Capital Program Support CUSTOMER ENVIRONMENT & FACILITIES Jim Congleton Senior Vice President Stations Environment Shella Hubon Vice President Nick Grasso DCSM, District 1 Shawn Grasso DCSM, District 2 Roberto Hernandez DCSM, District 3 Ernesto Gray DCSM, District 4 Dorothy Pizzo DCSM, Specialized Cleaning Estherine Jackson DCSM, Change Management Sam Wong (Acting) ACQ, QA & Operations Support Facilities David Solomon Vice President Louis Lefait ACQ, Station Maintenance Jessica Rivera ACQ, Facilities Management Markus Sperling ACQ, Facilities Proj. Mgmt. Benny Maria ACQ, Facility Operations Elevators & Escalators Stephen Carson Chief Officer Stephen Berrill Asst. Chief, Central Elec. Shop Waldemar Gero Senior Director, B&E Ops Support John Memberger Dep Chief, Telecomm Francisco Bartolotto Asst. Chief, Telecomm Anthony Tester Asst. Chief, Telecomm Electrical Maintenance Robert Moeller Chief Officer Thomas Kropp Asst. Chief, Central Elec. Shop Steve Berrill Asst. Chief, NYC & Bus Elec. Mkt. John Memberger Dep Chief, Telecomm OFFICE OF THE SVP Cassimiro Alvarez Chief of Staff & SVP Op. Strategy Samir Parashar Dep Chief, Ops Mkt & Prog Coord Eric Borkett Dep Chief, Ops Mkt & Prog Coord Erica Schaub Sr. Dir., Emergency Mgmt. & Prep Joanna Tacht-Perry Sr. Dir., Internal Controls & Audit Victor Sr. Dir., Subway Coord & Solutions Robert Lail Dep Chief, Mx. Teams Dev & Coord Hugo Sanchez (Acting) Dep Chief, Mx. Dev & Coord Tom Branch Sr. Dir., Subway Coord & Solutions Dana Burtch (Acting) Sr. Dir., Subway Coord & Solutions Victor Sr. Dir., Subway Coord & Solutions DOS Cabinet Members
+[p037_c0003] Updated Oct 1, 2025
+### [p037_c0004] Office of System Safety Org. Chart
+> [p037_c0005] Vice President, OSS Chief, Bus and Rail Field Operations Chief, Env. Protect. & Ind. Hygiene Chief, Hazard Assessment Chief, Investigations Chief, Operations Support Chief, Risk Ass., Fire Safety & New Tech
+[p037_c0006] _Page 4-18_
+
+## Page 38
+
+### [p038_c0001] 4.6 Employee Safety Reporting Program
+[p038_c0002] This section describes the process and protections for employees to report safety conditions to senior management.
+[p038_c0003] Employees are expected to correct all identified safety hazards, report them to supervision, and follow other departmental-specific rules and procedures for reporting and resolving them. At no time will an employee be required to conduct work that is unsafe.
+### [p038_c0004] 4.6.1 Departmental Safety Conditions/Incident Reporting
+[p038_c0005] The procedures for reporting safety incidents/conditions for NYCT employees follows a chain of command approach and reporting protocols can differ depending on departmental requirements. In general, employees are instructed to report any safety incidents/conditions to their immediate supervisors, employee in charge, and/or the appropriate command center. Additionally, for employees identified in the collective bargaining agreement this approach is outlined in the Safety Rule Dispute Resolution Form found in Section 4.6.4.
+### [p038_c0006] 4.6.2 Employee Safety Call Center
+[p038_c0007] NYCT has an Employee Safety Call Center (718-858-7272) for personnel to identify a non-emergency safety concern in the system. It does not replace departmental incident reporting protocols for unsafe conditions; but serves as a critical complement to existing procedures. The Employee Safety Call Center also provides employees with the option to anonymously report their safety concerns. Employees can also call back to the hotline to find out more information about their report with a reference number.
+### [p038_c0008] 4.6.3 Get It Fixed Reporting Website
+[p038_c0009] An additional online reporting mechanism called “Get It Fixed” located at https://mta.info/getitfixed , has been established. Get It Fixed is an online reporting portal developed for use by NYCT employees to report non-emergency issues like customer behavior, equipment issues, climate/comfort, and cleanliness among other reportable topics.
+### [p038_c0010] 4.6.4 Safety Dispute Resolution Form
+[p038_c0011] The Safety Dispute Resolution Form (SDRF) form is used by employees, as identified in the collective bargaining agreement, to formally challenge a departmental or applicable Authority wide safety rule or applicable law in effect at a job location that cannot be resolved between supervision and the employee. Additionally, all NYCT employees are expected to refuse unsafe work and alert supervision per departmental procedures, and as applicable, per their collective bargaining agreement through the Safety Rule Dispute Resolution Form (found below) if faced with unsafe situations which require further discussion.
+[p038_c0012] _Page 4-19_
+
+## Page 39
+
+### [p039_c0001] SAFETY RULE DISPUTE RESOLUTION FORM
+[p039_c0002] This section is for the employee who is alleging a violation of a departmental or applicable NYC Transit-wide safety rule or a section of an applicable law.
+[p039_c0003] An employee or group of employees directed by supervision to violate a departmental or applicable NYC Transit-wide safety rule or applicable law can utilize the following procedure in order to have the situation immediately reviewed by a supervisor and manager, if necessary.
+[p039_c0004] If a manager is present when the issue is raised, the alleged violation need only be reviewed by the manager.
+[p039_c0005] This procedure does not supersede or replace the provisions of the Collective Bargaining Agreement.
+[p039_c0006]
+
+```text
+Employee Name Title Pass # Dept/Division Supervisor Pass # Date Time Task Being Performed Location
+```
+[p039_c0007] 1. In this section the employee must specifically describe the alleged violation. Indicate or describe the rule or standard being violated.
+[p039_c0008] Time: ____ a.m. ____ p.m.                      Date ____/____/____
+[p039_c0009] Employee Signature (required)
+[p039_c0010] 2. In this section the supervisor at the location must indicate what actions he/she took regarding the concerns that the employee has indicated. If the employee does not agree with the explanation or action, indicate what the disagreement is and refer the matter to a manager who must notify his/her divisional Control Center and advise them to immediately notify the TWU of the issue (347-916-0579). If there is no divisional Control Center the manager must notify the TWU. The manager must immediately review the matter.
+[p039_c0011] _____ _____ _____ Employee Agree Disagree
+[p039_c0012] Employee Signature
+[p039_c0013] Time ____ a.m. ____ p.m.                      Date ____/____/____
+[p039_c0014] Supervisor Signature (required)
+[p039_c0015] 3. In this section a manager from the division must indicate what actions he/she took regarding the concerns that the employee indicated above. Upon explaining to the employees what changes will be made at the work site or that the challenge is not valid, the manager will direct the employee back to work. If the employee/gang refuses the manager's decision, appropriate action may be taken against the employee(s). If the supervisor/manager fails to correct a valid safety condition, appropriate action will be taken against the supervisor/manager.
+[p039_c0016] Time ____ a.m. ____ p.m.                      Date ____/____/____
+[p039_c0017] Manager Signature (required) Print Name/Pass Number
+[p039_c0018] Forward completed forms to the division head, Office of System Safety (SRDRForm.OSSMailbox@nycet.com), Department of Subways (UOSSafety@nycet.com) or Department of Buses (DOBBuses-Safety@nycet.com), and TWU Director of Safety and Health (Safety.Hotline@nvlocal100.org)
+[p039_c0019] _6/3/2024_
+[p039_c0020] _58-12-0075_
+[p039_c0021] _Page 4-20_
+
+## Page 40
+
+### [p040_c0001] POLICY AND PROCEDURE FOR RESOLVING A SAFETY RULE DISPUTE
+[p040_c0002] An employee or group of employees who allege that they have been directed by supervision to violate a departmental or applicable NYC Transit-wide safety rule or applicable law can utilize the following procedure in order to have the situation immediately reviewed by a supervisor and manager, if necessary. Supervisors and managers must have this form on site and make it available to any employee that wishes to initiate a review.
+[p040_c0003] If a manager is present when the issue is raised, the disputed issue need only be reviewed by the manager.
+[p040_c0004] This procedure does not supersede or replace the provisions of the Collective Bargaining Agreement.
+[p040_c0005] All employees must follow these policies and procedures when they allege a violation of a departmental or applicable NYC Transit-wide safety rule or applicable law in effect at a job location.
+[p040_c0006] The Safety Rule Dispute Resolution Form is provided on the reverse side to document the allegation. The form must be completed as follows:
+[p040_c0007] The employee alleging the violation must fill out the employee section of the form and give it to his/her immediate supervisor. The employee must be as specific as possible if supervision/management is to conduct an appropriate review and resolve the issue as expeditiously as possible.
+[p040_c0008] The immediate supervisor will discuss the specific concerns and explain the rule/law in effect at the work site. The immediate supervisor will fill out section 2 of the form and indicate whether the employee agrees with the explanation; if a change in on-site procedures is necessary, the change will be made. The employee signs that he/she agrees or disagrees with the supervisor's action in section 2 of the form. If a disagreement exists, the issue will be immediately referred to a manager for immediate resolution. The manager must notify his/her divisional Control center and advise them to immediately notify the TWU of the issue (347-916-0579).
+[p040_c0009] The manager must interview the employee and the immediate supervisor prior to rendering his/her decision. If the manager can resolve the issue over the phone based on the verbal description of the events the manager's decision can be communicated verbally to the supervisor, employee, and union representative, if one is present. By the end of the shift, the manager must complete his/her section on the form and indicate whether the employee is satisfied with the explanation, if a change in on-site procedures is necessary or if a disagreement still exists. If the manager is unable to resolve the issue based on the verbal description, the manager must report to the location of the incident before rendering a decision and the form must be completed immediately.
+[p040_c0010] When the manager renders the decision, he/she will direct the employee back to work. If the employee/gang refuses the manager's decision, appropriate action may be taken against the employees. If the supervisor/manager fails to correct a valid safety issue, appropriate action will be taken against the supervisor/manager.
+### [p040_c0011] SAFETY RULE DISPUTE DIVISIONAL REVIEW PANEL
+[p040_c0012] (This section applies to supervisors and managers only)
+[p040_c0013] To ensure consistent application of the safety rules or applicable law, a Divisional Review Panel will be established.
+[p040_c0014] The Division Head will chair this panel and it will include a representative of the Office of System Safety.
+[p040_c0015] The Panel will review all Safety Rule Dispute Resolution Forms quarterly. The Panel will also provide a written report of their meetings to the Departmental Senior Vice President and the Vice President of the Office of System Safety.
+[p040_c0016] Forward completed forms to the division head, Office of System Safety ( SRDRForm.OSSMailbox@nycet.com ), Department of Subways ( UOSSafety@nycet.com ) or Department of Buses ( DOBBuses-Safety@nycet.com ), and TWU Director of Safety and Health ( SafetyHotline@nyulocal100.org )
+[p040_c0017] _Page 4-21_
+
+## Page 41
+
+### [p041_c0001] 4.7 Safety Committee
+[p041_c0002] This section outlines the roles and responsibilities of the Joint Labor-Management New York City Transit Joint Labor Management Safety Committee (Safety Committee).
+[p041_c0003] Currently, the Safety Committee consists of three voting members from NYCT management appointed by: Demetrius Crichlow, President and three voting members from TWU Local 100 frontline transit worker representatives.
+[p041_c0004] The Safety Committee roles, responsibilities, and procedures are as follows:
+### [p041_c0005] 4.7.1 PURPOSE
+[p041_c0006] The New York City Transit Safety Committee (“Committee” or “Safety Committee”) shall fulfill its responsibilities under 49 U.S.C. § 5329(d) and 49 C.F.R. Part 673. The responsibilities outlined below fulfill the requirement under 49 C.F.R. § 673.19(c).
+### [p041_c0007] I. COMMITTEE MEMBERSHIP
+- [p041_c0008] a. The Safety Committee shall consist of at least three frontline transit worker representatives and at least three management representatives. b. The Safety Committee must at all times consist of an equal number of frontline transit worker representatives and management representatives. c. Management representatives shall be selected by the New York City Transit Authority (“NYCT”). d. Frontline transit worker representatives shall be selected by Transport Workers Union Local 100 (“TWU”), the labor organization representing the plurality of frontline NYCT workers. e. NYCT and TWU shall each select one of their representatives to serve as co-chairs of the Committee (each a “Co-Chair”). f. The Co-Chairs may mutually agree to add additional Committee members, as long as the Committee remains comprised of equal numbers of management and frontline worker representatives. g. NYCT and TWU may each replace their representatives at any time, with or without cause. h. No representative shall receive a salary or compensation for their service to the Committee. i. The Committee shall ensure that it documents with an accurate and up to date list of the names and contact information of all Committee representatives and related parties.
+[p041_c0009] _Page 4-22_
+
+## Page 42
+
+### [p042_c0001] 4.7.2 COMMITTEE MEETINGS
+- [p042_c0002] j. The Committee shall meet quarterly, and more frequently as circumstances dictate. k. No business shall be conducted nor any vote taken without a quorum present. A quorum shall be present when there is a majority of NYCT representatives present and a majority of TWU representatives present. l. A Co-Chair may call for an emergency meeting of the Committee. If a quorum is not present at the emergency meeting, it shall be rescheduled for the following business day. m. The Co-Chairs shall develop the agenda for a meeting and distribute it to at least one week prior to the scheduled date of a meeting or, in the event of an emergency meeting, as soon as practicable. n. The Committee shall cause adequate minutes to be kept of all its proceedings, which shall include records of any action taken and any dissent there on, and shall be kept for a period of at least seven years. o. The Committee may request that any person whose advice and counsel are sought attend any meeting of the Committee to provide such pertinent information as the Committee requests.
+### [p042_c0003] 4.7.3 KEY RESPONSIBILITIES
+[p042_c0004] To fulfill its purpose, the Committee shall:
+- [p042_c0005] p. Review and approve NYCT's Public Transportation Agency Safety Plan ("PTASP") at least annually as required by 49 C.F.R. § 673.11(a)(5), on a timeline that permits the MTA Board to review and approve the PTASP in a timely manner. q. Set annual safety performance targets for the safety risk reduction program as required by 49 C.F.R. § 673.11(a)(7)(iii). r. Support the operation of NYCT's Safety Management System ("SMS") by: i. Identifying and recommending safety risk mitigations necessary to reduce the likelihood and severity of potential consequences identified through NYCT's safety risk assessment, including safety risk mitigations associated with any instance where NYCT did not meet an annual safety performance target in the safety risk reduction program; ii. Identifying safety risk mitigations that may be ineffective, inappropriate, or were not implemented as intended, including safety risk mitigations associated with any instance where NYCT did not meet an annual safety performance target in the safety risk reduction program; and iii. Identifying safety deficiencies for purposes of continuous improvement as required at 49 C.F.R. § 673.27(d), including any instance where NYCT
+[p042_c0006] _Page 4-23_
+
+## Page 43
+
+[p043_c0001] did not meet an annual safety performance target in the risk reduction program.*
+- [p043_c0002] s. The responsibilities and role of the Safety Committee are not intended to diminish or otherwise alter the authority of the Accountable Executive in their role under 49 U.S.C. § 5329(d) and 49 C.F.R. Part 673.
+[p043_c0003] * When the Safety Committee recommends a safety risk mitigation unrelated to the safety risk reduction program, and the Accountable Executive decides not to implement the safety risk mitigation, the Accountable Executive must prepare a written statement explaining their decision. The Accountable Executive must submit and present this explanation to the transit agency's Safety Committee and Board of Directors.
+### [p043_c0004] 4.7.4 PUBLIC TRANSPORTATION AGENCY SAFETY PLAN REVIEW AND APPROVAL
+[p043_c0005] The Committee shall review, update, and approve NYCT's PTASP at least annually, ensuring its continued conformity with the requirements of federal law. Approval of the PTASP shall require a majority vote of the Committee representatives present. The annual update of the PTASP shall include, at a minimum:
+- [p043_c0006] t. The updated annual safety performance targets set by the Safety Committee for the safety risk reduction program pursuant to 49 C.F.R. § 673.19(d)(2). u. Any item required by changes regulation or law that have occurred since the last PTASP update. v. In the event of a missed safety performance target from the preceding year, safety risk mitigations that are reasonably likely to assist NYCT in meeting the safety performance target in the future.
+[p043_c0007] After the Committee has approved the PTASP, the Committee shall transmit the PTASP to the MTA Board for approval.
+### [p043_c0008] 4.7.5 SAFETY PERFORMANCE TARGETS
+[p043_c0009] The Safety Committee shall set annual safety performance targets for NYCT's safety risk reduction program. The Committee shall set these targets based on a three-year rolling average of the data submitted by NYCT to the National Transit Database ("NTD"), and on the level of detail NYCT is required to report to the NTD. The Committee shall agree on the annual safety performance targets by a majority vote.
+[p043_c0010] _Page 4-24_
+
+## Page 44
+
+### [p044_c0001] 4.7.6 SAFETY MANAGEMENT SYSTEM SUPPORT
+[p044_c0002] The Safety Committee shall support the operation of NYCT's Safety Management System ("SMS") by:
+- [p044_c0003] a. Identifying and recommending safety risk mitigations necessary to reduce the likelihood and severity of potential consequences identified through NYCT's safety risk assessment, including safety risk mitigations associated with any instance where NYCT did not meet an annual safety performance target in its safety risk reduction program. b. Identifying safety risk mitigations that may have been ineffective, inappropriate, or were not implemented as intended, including safety risk mitigations where NYCT did not meet an annual safety performance target in its safety risk reduction program. c. Identifying safety deficiencies for purposes of continuous improvement as required at 49 C.F.R. § 673.27(d), including any instance where NYCT did not meet an annual safety performance target in its safety risk reduction program.
+[p044_c0004] A safety risk mitigation shall be considered identified and recommended by the Safety Committee when a majority of the Committee votes in favor of the action.
+[p044_c0005] Where the Safety Committee identifies and recommends a safety risk mitigation related to NYCT's risk reduction program and based on a safety risk assessment, the safety risk mitigation must be included in NYCT's PTASP.
+### [p044_c0006] 4.7.7 TRAINING
+[p044_c0007] Within 90 days of appointment to the Committee, a representative must complete the following activities:
+- [p044_c0008] w. The SMS Awareness Course published by the Federal Transit Administration ("FTA"). x. Review the FTA's Public Transportation Agency Safety Plan ("PTASP") FAQ . y. Review NYCT's PTASP.
+[p044_c0009] By mutual consent, the Co-Chairs may revise the training activities required to be completed by new representatives or may impose additional required training on incumbent representation.
+[p044_c0010] _Page 4-25_
+
+## Page 45
+
+### [p045_c0001] Table of Contents
+[p045_c0002] 5 Safety Risk Management ..... 2 5.1 Safety Hazard Identification..... 2 5.1.1 Hazard Identification ..... 2 5.2 Safety Risk Assessment ..... 4 5.2.1 Hazard Classification ..... 4 5.3 Safety Risk Mitigation ..... 8 5.3.1 Hazard Resolution ..... 8 5.3.2 Coordinating with the State Oversight Agency ..... 9 5.4 Safety Certification ..... 9 5.5 Emergency Management Program ..... 11
+[p045_c0003] _Page 5-1_
+
+## Page 46
+
+### [p046_c0001] 5 Safety Risk Management
+### [p046_c0002] 5.1 Safety Hazard Identification
+[p046_c0003] The following describes the methods and processes used to identify hazards and determine the consequences of the associated hazards.
+[p046_c0004] NYCT uses the hazard management process as the primary tool to ensure the safety of the operation, passengers, employees, vehicles, and facilities. It is a process whereby hazards are identified, assessed for potential impacts, and resolved in a manner acceptable to management.
+[p046_c0005] Hazard identification is the initial step in the hazard management process. Within the Office of System Safety (OSS), hazard identification is achieved through conducting safety inspections, safety reviews, accident investigations, environmental compliance reviews, industrial hygiene and fire safety surveys, and at the request/recommendation of the Safety Committee. Trend analyses focus on employee and customer accidents, near miss incidents, fire incidents, and common deficiencies resulting from inspections, investigations, reviews, and surveys. Additionally, hazard assessments are conducted in accordance with Military Standard 882 and NYCT performs safety certification processes. Methods utilized in hazard identification are further discussed in the following section.
+[p046_c0006] OSS may request departments to develop a corrective action plan (CAP) to minimize, control, correct, or eliminate any risks and/or hazards identified from rules noncompliance, audit findings, safety event investigation, internal safety review, or insufficient safety risk mitigation, etc.
+[p046_c0007] The CAP developed will include a schedule, description of the actions that will be taken as well as those who will be responsible for the implementation. Once OSS reviews and approves the CAP, it will be sent to the PTSB for review and approval. Once approval by OSS and PTSB has been granted, all actions taken, documentation requirements, scheduled status updates etc. will be shared with the PTSB and monitored to completion by OSS. Once all the necessary outlined actions have been implemented the CAP can be closed. Once closed some CAPs may require monitoring thru a safety assurance/review process implemented by the responsible department and monitored/audited by OSS with scheduled updates submitted to the PTSB.
+### [p046_c0008] 5.1.1 Hazard Identification
+[p046_c0009] Reviews - New construction and design reviews are conducted to ensure standards and regulations are complied with. Inspections are conducted prior to beneficial use to identify and address all hazards.
+[p046_c0010] Comprehensive reviews of the implementation of the Safety Plan and Safety Goal Action Plan are performed to identify hazards and potential problem areas. Additionally, joint labor/management inspection teams conduct safety inspections on construction and maintenance projects along the right of way to identify deficiencies/hazards.
+[p046_c0011] _Page 5-2_
+
+## Page 47
+
+[p047_c0001] Accident Investigations – All employee and customer accidents are investigated by operating department supervision whereby the root cause of the accident is identified. More in depth investigations are conducted on serious employee accidents and customer related escalator accidents, all mainline and yard collisions/derailements, fatal employee accidents, and near miss incidents where employee contact with a train could have occurred. Other high visibility accidents and serious fires involving NYCT property are also investigated. Accident investigations are conducted in accordance with the most recent version of Policy Instruction 10.28 Accident Investigation which is discussed in more detail in Section 6.3 Investigations.
+[p047_c0002] Surveys – Environmental and industrial hygiene site surveys are performed at operating departmental work locations and in the customer environment to identify site specific hazards. Additionally, fire safety surveys are conducted on the right of way and in stations to identify fire related hazards.
+[p047_c0003] Hazard Analyses – Hazard analyses are performed in accordance with Military Standard 882 on significant operational changes, new or modified work practices/procedures, and selected maintenance equipment, when trends are identified through audits and observations, analysis of corrective actions, safety risk mitigations and statistics, and whenever deemed necessary by the operating departments. The analysis is conducted to identify the hazards, their severity and probability of occurrence, and identify safety risk mitigations to mitigate the hazard to an acceptable level.
+[p047_c0004] Trend Analyses – common types of hazards are identified through the performance of the following trend analyses:
+- [p047_c0005] • Accident trend analyses are conducted by division, employee title, accident type, accident location, and injury type. • Fire data trend analyses are conducted utilizing a Fire Incident Reporting System (FIRS) which enables a detailed analysis of the type of fire and location. • Near miss trend analyses are conducted to identify common events and potential problem areas. • Joint labor/management safety inspection trend analyses are conducted to identify common deficiencies.
+[p047_c0006] Alternative means of hazard identification:
+- [p047_c0007] • Reports/complaints/inquiries from customers regarding service, equipment, and facilities. • Reports/complaints/inquiries from employees regarding facilities, equipment, operating procedures, work locations etc. • Reports/complaints/inquiries/violations from Department of Labor (DOL), FTA, CDC, SSOA, City and State Department of Health, regarding service, equipment, facilities, operating procedures, work locations, etc. • Service Delivery's daily summary of significant events summarizes incidents that result in train delays. The daily summary is reviewed, and significant safety incidents are noted and provided to senior management on a daily basis.
+[p047_c0008] _Page 5-3_
+
+## Page 48
+
+- [p048_c0001] • The DOS Safety, Safety Hazards and Risk Prevention program (SHARP) a proactive program using data from employee referrals, field observations, audits, and injury data to identify and address potential safety trends. • Union inquiries regarding work practices, equipment, facilities, and environmental conditions. • Supervisors Daily Checklist that identifies right of way workplace and work practice deficiencies. • Maintenance of Way (MOW) blitz audits will occur each quarter with audit teams from various MOW sub-divisions. They will audit safety elements such as but not limited to flagging, lighting, housekeeping, job site hazards, PPE, and the review of supervision checklists. • Interagency Emergency Preparedness Exercises are conducted. These exercises simulate various types of emergencies that involve public transportation. Various NYC emergency response agencies participate in the exercises and each exercise is critiqued to identify areas where problems were not fully addressed and require additional focus during future exercises. • At the request/recommendation of the Safety Committee
+### [p048_c0002] 5.2 Safety Risk Assessment
+[p048_c0003] The following describes the methods or processes used to assess the safety risks associated with identified safety hazards.
+### [p048_c0004] 5.2.1 Hazard Classification
+[p048_c0005] The Office of System Safety (OSS) performs hazard analyses to identify hazards in accordance with the most recent version of Military Standard 882. This methodology determines hazard classification by assessing the severity (effects) of the hazard and the probability (likelihood) of hazard occurrence.
+[p048_c0006] _Page 5-4_
+
+## Page 49
+
+[p049_c0001] OSS identifies the potential effects of hazards to determine the appropriate severity category as defined in Table 5-1:
+[p049_c0002]
+
+```text
+SEVERITY CATEGORIES Description Severity Category Mishap Result Criteria Catastrophic 1 Could result in one or more of the following: death, permanent total disability, irreversible significant environmental impact, or monetary loss equal to or exceeding $10M. Critical 2 Could result in one or more of the following: permanent partial disability, injuries or occupational illness that may result in hospitalization of at least three personnel, reversible significant environmental impact, or monetary loss equal to or exceeding $1M but less than $10M. Marginal 3 Could result in one or more of the following: injury or occupational illness resulting in one or more lost workday(s), reversible moderate environmental impact, or monetary loss equal to or exceeding $100K but less than $1M. Negligible 4 Could result in one or more of the following: injury or occupational illness not resulting in a lost workday, minimal environmental impact, or monetary loss less than $100K.
+```
+[p049_c0003] _Table 5-1: Severity Categories_
+[p049_c0004] OSS assesses the likelihood of a mishap occurring to determine the appropriate probability level for a given hazard at a given point in time as defined in Table 5-2.
+[p049_c0005] _Page 5-5_
+
+## Page 50
+
+[p050_c0001]
+
+```text
+PROBABILITY LEVELS Description Level Individual Item (Qualitative Analysis) Fleet/Inventory* (Qualitative Analysis) Quantitative Analysis Frequent A Likely to occur often in the life of an item Continuously experienced. Probability of occurrence greater than or equal to 10^{-1} . Probable B Will occur several times in the life of an item Will occur frequently. Probability of occurrence less than 10^{-1} but greater than or equal to 10^{-2} . Occasional C Likely to occur sometime in the life of an item Will occur several times. Probability of occurrence less than 10^{-2} but greater than or equal to 10^{-3} . Remote D Unlikely, but possible to occur in the life of an item Unlikely but can reasonably be expected to occur. Probability of occurrence less than 10^{-3} but greater than or equal to 10^{-6} . Improbable E So unlikely, it can be assumed occurrence may not be experienced in the life of an item Unlikely to occur, but possible. Probability of occurrence less than 10^{-6} . Eliminated F Incapable of occurrence within the life of an item. This category is used when potential hazards are identified and later eliminated.
+```
+[p050_c0002] _Table 5-2_
+[p050_c0003] *The size of the fleet or inventory should be defined.
+[p050_c0004] _Page 5-6_
+
+## Page 51
+
+[p051_c0001] Assessed risks are expressed as a Risk Assessment Code (RAC) which is a combination of one severity category and one probability level such as 1A as the combination of a Catastrophic severity category and a Frequent probability level. Table 5-3 assigns a risk level of High, Serious, Medium, or Low for each RAC.
+[p051_c0002]
+
+```text
+RISK ASSESSMENT MATRIX PROBABILITY SEVERITY Catastrophic Critical Marginal Negligible (1) (2) (3) (4) Frequent (A) High High Serious Medium Probable (B) High High Serious Medium Occasional (C) High Serious Medium Low Remote (D) Serious Medium Medium Low Improbable (E) Medium Medium Medium Low Eliminated (F) Eliminated
+```
+[p051_c0003] _Table 5-3: Risk Assessment Matrix_
+[p051_c0004] Categorizing the hazards as depicted in the table allows for the hazards to be prioritized for safety risk mitigations. Categorization may be based on severity since not all hazards are of equal magnitude or criticality as the anticipated consequences of hazardous events may be minimal, while in others it could be catastrophic. Hazard categorization also involves the determination of the likelihood of a hazardous event occurring. The likelihood of occurrence can be assigned in non-numeric (qualitative) or numeric (quantitative) terms.
+[p051_c0005] _Page 5-7_
+
+## Page 52
+
+### [p052_c0001] 5.3 Safety Risk Mitigation
+[p052_c0002] The following describes the methods or processes used to identify mitigations or strategies necessary as a result of safety risk assessment.
+### [p052_c0003] 5.3.1 Hazard Resolution
+[p052_c0004] The hazard resolution for each risk level as determined in the Hazard Assessment Matrix is as follows: high hazards are unacceptable, serious hazards are undesirable and require a management decision to reduce/accept the hazard, medium hazards are acceptable with review by management, and low hazards are acceptable without review by management.
+[p052_c0005] Therefore, high hazards may require immediate safety risk mitigation, serious hazards would require a management decision, and medium hazards requiring management review would have a lower priority. When efforts to eliminate a hazard are not feasible, its resolution may be a result of mitigating the risk to an acceptable level.
+[p052_c0006] In addition to recommendations that result in conducting a hazard analysis, OSS makes recommendations to resolve or minimize the risk of hazards identified as a result of inspections, surveys, investigations, reviews, trend analysis etc. The recommendations are submitted to Department of Subways (DOS) for action. OSS maintains recommendation tracking databases whereby all recommendations are logged and tracked until safety risk mitigations are implemented and the hazard is resolved and tracked to closure.
+[p052_c0007] OSS may also request departments to develop a corrective action plan (CAP) to minimize, control, correct, or eliminate any risks and/or hazards identified from rules noncompliance, audit findings, safety event investigation, internal safety review, or insufficient safety risk mitigation, etc.
+[p052_c0008] The CAP developed will include a schedule, description of the actions that will be taken as well as those who will be responsible for the implementation. Once OSS reviews and approves the CAP, it will be sent to the PTSB for review and approval. Once approval by OSS and PTSB has been granted, all actions taken, and documentation requirements, etc. will be shared with the PTSB and monitored to completion by OSS. Once all the necessary outlined actions have been implemented the CAP can be closed. Once closed, some CAPs may require monitoring thru a safety assurance/review process implemented by the responsible department and monitored/audited by OSS.
+[p052_c0009] The Safety Risk Management process is also used when developing new projects and system modifications. First, hazards are identified and documented in Engineering Change Requests (ECRs) or other official correspondence. Second, the proposed modification and its associated risk assessment is performed by the system supplier, NYCT, and the NYCT-Independent Safety Assessor. Third, risk mitigation techniques such as new and additional training, and changes to maintenance operational practices are created to address any possible procedural impacts and safety hazards. Finally, the NYCT System Safety Certification Board (SSCB), comprising of senior NYCT representatives from various departments discuss, review, and oversee the entire process.
+[p052_c0010] _Page 5-8_
+
+## Page 53
+
+### [p053_c0001] 5.3.2 Coordinating with the State Oversight Agency
+[p053_c0002] When a hazard analysis is conducted for conditions or events, the results of the analysis are submitted to and reviewed by the Vice President of OSS. If the Vice President determines that the condition is an unacceptable hazard and catastrophic in nature, the hazard will be reported to the state oversight agency (PTSB).
+[p053_c0003] In addition to the hazard analyses, the recommendations that result and their status are provided to the PTSB for the following:
+- [p053_c0004] • Joint NYCT/TWU/SSSA Track Safety Task Force summary (Quarterly Submissions) • Collision, Derailment, and Employee Accident Board of Inquiry Investigations (Major Incident Investigation follow-up report submitted quarterly) • Safety Plan Reviews (submitted quarterly) • Near miss/close call recommendations (submitted quarterly)
+### [p053_c0005] 5.4 Safety Certification
+[p053_c0006] The purpose of safety certification at NYC Transit is to ensure that hazards and safety concerns are adequately addressed prior to the initiation of passenger operations for new starts, such as Communication Based Train Control (CBTC), new rail lines, extensions to existing rail lines, and new rail vehicles, excluding functionally similar replacements at NYC Transit. NYCT will solicit input from appropriate frontline worker representatives with jurisdiction over the respective areas of operation or maintenance to ensure safety issues are addressed in the safety certification process. Safety certification is the process whereby hazards are identified, assessed, prioritized, resolved, accepted, and tracked. This process supports the consideration of safety during all activities of the dynamic and evolving project.
+[p053_c0007] The contractor has fundamental responsibility for safety of the project and is required to have a safety assurance process that is directed to meeting the safety requirements defined in the contract for the project. That process, defined in the contractor's safety plan, involves activities directed to designing safety into the project/system and demonstrating safety via conducting hazard and safety analyses, inspections, testing and the performance of a quantitative risk assessment on the system. The contractor's safety assurance process forms an integral part of the safety certification program.
+[p053_c0008] CBTC safety certification process includes the following:
+- [p053_c0009] • Development, of a Certifiable Items List (CIL) that defines the items that require certification. These activities include the identification of Safety Certifiable Items (SCIs) that are primarily based on the hazards that have been identified and documented in the CBTC Hazard Log. • Documentation of the SCIs in the CIL which includes references to relevant safety requirements and identification of related safety evidence for each item such as results of safety hazard analyses, safety related verification, validation results such as analysis and test reports, requirement specifications, certification/safety reports, operating and maintenance procedures, and training.
+[p053_c0010] _Page 5-9_
+
+## Page 54
+
+- [p054_c0001] • Assessments of the aforementioned documented safety evidence of SCI's are conducted by NYCT participating representatives and third parties. These assessments include document reviews, verification of system design, operating and maintenance procedures, training, and other aspects. • Safety evidence produced from the safety certification process is submitted to the System Safety Certification Board for certification. When approved by the Board, the process is completed by the preparation of a Final Safety Certification Report by NYCT and the consultant to document final safety certification status.
+[p054_c0002] New rail vehicle safety certification process includes the following:
+### [p054_c0003] Design
+- [p054_c0004] • Contractor submits a System Safety Plan for the vehicles that complies with MIL-STD-882 NYCT with a specified safety analyses for approval. • Design details are sent to the NYS PTSB for their information and the Project Manager will address any comments from the NYS PTSB with the Contractor. • The Project Manager sends correspondence dealing with safety critical matters to OSS for review and comment and invites representatives from OSS to attend design reviews. • System Integration – Contractor is responsible to achieve system integration during the design, which includes operations, monitoring and diagnostics, safety, reliability, and electromagnetic compatibility.
+### [p054_c0005] Manufacturing
+- [p054_c0006] • Production Management – First Article Inspection (FAI), the first production piece is inspected to verify the design is compliant with specifications. When completed, the manufacturer is given release to produce components/system. • Quality Audits, to confirm that major components are manufactured within specifications and quality guidelines. • Inspections are performed to ensure sub-contractors are in compliance with specifications. Pre-shipment inspections, resident consultant inspections, and hold point inspections are performed to verify manufacturing process. • Conformance testing to verify the production process supplies a product that meets the contract specifications and performance requirements. • Safety – the contractor is required to submit a Safety Plan to NYCT for review and approval to meet requirements and guidelines of the Authority. • Change Order Control, the process outlined by NYCT to allow change orders during the manufacture process.
+[p054_c0007] _Page 5-10_
+
+## Page 55
+
+### [p055_c0001] Testing
+- [p055_c0002] • Acceptance Location – After delivery, the cars will be unpacked and transferred to the shop designated by DCE. At this location the Contractor will perform acceptance testing. • Inspection – new cars are inspected for shipping damage. • Car Acceptance – each car will be examined and analyzed in accordance with established New Car Procurement Quality Procedure to ensure safety and conformance to the technical specification. • Following acceptance testing, cars will be officially released to passenger service by the Assistant Chief Mechanical Officer, Car Equipment Engineering & Technical Support (ACMO, CEE & TS) and transferred to the maintenance shop.
+### [p055_c0003] Activation (Startup)
+- [p055_c0004] • The contractor will supply spare parts, special tools, and test equipment to facilitate maintenance and repair. • Training – Maintenance personnel, train operators, and conductors will be trained using training materials provided by the contractor in accordance with the specifications. • Manuals – to facilitate operations, maintenance and repair of the contract vehicles, the contractor will provide all of the necessary manuals. • Acceptance – When a new car has passed all required acceptance testing and inspections, the Project Manager signs a letter of acceptance, which includes any issues which remain open on the cars and states the contractor will close these open items. • Scheduled Maintenance Inspection - Upon completion of the acceptance testing, the car is transferred to the designated maintenance shop and released to that shop for pre-service inspection. Upon the completion of the inspection, the Project Manager is notified, and the car is entered into the NYCT maintenance tracking system. • Release – Upon completion of the Scheduled Maintenance Inspection and acceptance of the car by the Project Manager, the ACMO, CEE & TS releases the car for normal operations in passenger service.
+### [p055_c0005] 5.5 Emergency Management Program
+[p055_c0006] The identification of possible emergencies and the development of mitigation plans are critical to New York City Transit's (NYCT) mission for providing safe, reliable mass transportation for its customers. Through years of experience with incidents, drills, and by way of a cooperative effort with local agencies, NYCT has developed procedures for responding to and recovery from emergencies. The agency has taken an all-hazards approach to its planning in order to ensure preparedness for all potential/foreseeable incidents.
+[p055_c0007] NYCT service restoration will be coordinated by Department of Subways (DOS), Department of Buses (DOB), MTA Construction & Development (C&D) and other key agencies, State, and City stakeholders. NYCT's goal is to return to normal operating conditions at the earliest possible time upon confirmation of the safety of the infrastructure and equipment. NYCT's service restoration will
+[p055_c0008] _Page 5-11_
+
+## Page 56
+
+[p056_c0001] factor in the variable conditions of an event, including security sweeps/searches, safety checks, equipment testing and other necessary activities to ensure the safety of our system, staff, and Transit customers.
+[p056_c0002] While the wellbeing of customers and employees is the primary concern, continuity of operations remains a vital component of NYCT's overall emergency management program. Accordingly, emergency plans for events that have a potential for shutdown of service developed by the DOS shall include a section on restoration of subway and bus service following an event resulting in a full or significant loss of service.
+[p056_c0003] The Office of System Safety (OSS) is responsible for responding to emergencies involving subway collisions, derailments, subway/bus fires (which are deemed significant), releases of hazardous materials (depending on the substance and quantity), and employee fatalities. During and immediately following actual emergencies, OSS evaluates the effectiveness of existing emergency response procedures and considers changes or improvements. Collisions, derailments, employee fatalities, and incidents resulting in passenger injuries/fatalities are investigated by the New York State Public Transportation Safety Board (NYS PTSB) and the National Transportation Safety Board (NTSB) at their discretion. Investigation findings, including evaluations of emergency response efforts and subsequent recommendations are then forwarded to OSS. OSS then provides responses to PTSB and NTSB recommendations and implements corrective measures as required.
+### [p056_c0004] Coordinated Schedule
+[p056_c0005] Representatives from NYCT's OSS, Department of Subways (DOS), and Operations Planning meet with New York City's Office of Emergency Management (OEM), the New York City Fire Department (FDNY), and New York City Police Department (NYPD) to discuss emergency preparedness for the subway. These meetings are used to refine and further develop notification and communication procedures between agencies; both during and prior to incidents. These meetings are also used for planning of incidents affecting the City of New York that require the support of NYCT resources. NYCT is an active participant in the City's Hurricane and Coastal Evacuation plans.
+[p056_c0006] NYCT has liaisons for the FDNY and NYPD and participates in quarterly planning meetings coordinated by OEM. Meetings are also held between DOS, FDNY, NYPD & OEM to discuss response procedures during emergencies affecting the subway system. During these meetings, protocols are established for the notification of outside agencies and communication protocols during subway-related emergencies.
+[p056_c0007] Whenever NYCT's Emergency Response Plan (ERP) is revised, meetings are held to discuss proposed changes and revisions to existing protocols and procedures. Meetings are held following major incidents in order to discuss/evaluate agency responses and plan future 'Interagency Emergency Planning Exercises'. In addition, throughout the year NYCT and any of the outside agencies can request a meeting to discuss/clarify protocols which may lead to revisions to policies and procedures.
+[p056_c0008] _Page 5-12_
+
+## Page 57
+
+### [p057_c0001] Emergency Preparedness Exercises & Meetings with External Agencies
+[p057_c0002] NYCT conducts four ‘Interagency Emergency Preparedness Exercises’ annually. The exercises can include participation from the FDNY, NYPD, the NYC OEM, MTA Police, Red Cross, and other City, State and Federal Agencies that would typically take part in responding to an actual incident as time and resources allows for each agency. Following the ‘Interagency Emergency Preparedness Exercises’, critiques are held to discuss the response to, and actions taken during each exercise. After-Action Reports are prepared in order to detail the exercises and action items are then communicated to the appropriate department(s) and/or agencies so that they may be properly addressed. During the course of the year NYCT also participates in citywide drills coordinated by OEM.
+[p057_c0003] Following a major incident impacting NYCT’s subway system, any participating agency may request a critique to discuss the event. Following the conclusion of the critique(s), After-Action Reports are prepared to document actions taken during the event and to decide if revisions to response policies or protocols are necessary.
+[p057_c0004] _Page 5-13_
+
+## Page 58
+
+### [p058_c0001] Policy Instructions and Procedures
+[p058_c0002] NYCT procedures for responding to emergencies are outlined in various Policy Instructions (P/Is) maintained and distributed by OSS. Each P/I is specific to relevant emergency situations and explicitly outlines protocols to be followed. P/Is associated with emergency response include the most recent versions of: "Procedures for Response to NYCT Rapid Transit Emergencies" (P/I 10.32); "Building Evacuation Procedures" (P/I 10.3); Emergency Closure of Station Facilities (P/I 10.31); Infection Control Policy (P/I 10.15); and NYCT's Pandemic Plan (P/I 10.37). OSS also evaluates the implementation of the aforementioned P/Is. Additionally, DOS develops and maintains the following response plans: DOS Hurricane Master Plan, Hurricane Divisional Plan, SIR Hurricane Plan, Heat Emergency Plan and Winter Operations Master Plan.
+[p058_c0003] Contractors are responsible for developing Emergency Response/Contingency Plans for projects for which they have been awarded. In addition, through the capital plan, departmental projects and other safety initiatives, fire protection and life safety systems are installed in new and renovated facilities to minimize the effect of incidents. Materials used in both surface and subway vehicles are selected to minimize the spread of fire and smoke during emergencies and buses are equipped with onboard fire extinguishing systems to quickly extinguish engine compartment fires before they can endanger customers.
+[p058_c0004] OSS coordinates changes to emergency response policies and procedures. When changes to procedures are proposed, the appropriate in-house resources and the agencies affected will be convened to review the proposed change(s). A thorough review of the change and its impact on emergency response will be undertaken. After the review process is completed and a decision is made regarding any proposed changes, they will be formalized in writing and distributed to all of the appropriate departments and outside agencies. During the next review cycle of the ERP, all changes will be incorporated.
+[p058_c0005] All DOS divisions observe the most recent versions of the following emergency management policies:
+- [p058_c0006] • NYCT's Emergency Response Plan (ERP) for subway related incidents – P/I 10.32 • Building Evacuation – P/I 10.3 • Emergency Closure of Station Facilities – P/I 10.31 • Pandemic Plan – P/I 10.37 • Infection Control Policy - P/I 10.15
+### [p058_c0007] Employee Emergency Management Training
+[p058_c0008] NYCT has identified those employees who may be involved in emergency incidents and provided them with Fire and Passenger Evacuation Training (FPET). The training is given when the employee enters the appropriate title, and every three to six years (title dependent) thereafter. The FPET covers use of fire extinguishers and how to manage a train evacuation during an emergency. The training stresses the need to control customer panic, communicate with the OCC and when to make the decision to evacuate. Essentially all DOS employees who work in the field are required to attend this training.
+[p058_c0009] _Page 5-14_
+
+## Page 59
+
+[p059_c0001] All new NYCT employees attend an awareness class to familiarize them with identifying suspicious people, activities, and packages, with the need for the employees to serve as the eyes and ears of the agency. All NYCT Department of Subways employees with field responsibility are required to take some level of National Incident Management System (NIMS) training. New DOS employees attend NIMS awareness training understanding how NYCT fits into the incident management structure. As employees progress to managerial positions, they are required to take the following training:
+- [p059_c0002] • IS-700 – All levels of Management • ICS-100 – All levels of Management • ICS-200 – All levels of Management • ICS-300 – Middle and Senior Managers • IS-800 – Executive Level • ICS-400 – Senior Managers
+[p059_c0003] The classes cover an introduction to NIMS and the Incident Command System to the advanced Incident Command System activities. Additionally, NYCT in cooperation with the Transport Workers Union (TWU) Local 100, has developed training for employees in dealing with Weapons of Mass Destruction (WMD) type incidents. WMD training is limited to employees responsible to responding to incidents involving releases of hazardous materials.
+[p059_c0004] Members of NYCT’s volunteer Hazmat Team receive OSHA 40 Hour HAZWOPER 1 training upon induction and refresher training annually, at a minimum.
+### [p059_c0005] Familiarization Training/Interagency Drills
+[p059_c0006] NYCT conducts four interagency emergency preparedness exercises each year which provide an opportunity for local agencies, who have the time and resources, to familiarize themselves with NYCT facilities and equipment. The exercises also give external agency personnel the opportunity to become familiar with communication and power removal/restoration procedures. NYCT has assisted both the FDNY and NYPD in developing training centers for their respective agencies that they use to provide training to a wide range of personnel on both the subway and surface operations and environment. The FDNY has developed PowerPoint presentations that provide equipment familiarization for both bus and train cars and have constructed a train simulation tunnel for hands on subway training. The NYPD has train cars at their training center for hands on tactical training in extrication, hostage, as well as WMD incidents. OSS coordinates with both agencies to provide local familiarization of NYCT subway cars and buses as well as bus depot and train yard familiarization for the local companies. When new equipment (buses and/or train cars) are procured, NYCT reaches out to the FDNY and NYPD to provide information on the changes from existing equipment and things they need to be aware of. This is an ongoing effort that is coordinated by OSS and the responsible NYCT department.
+[p059_c0007] In addition, NYCT participates in familiarization drills when requested by the FDNY, NYPD and OEM.
+[p059_c0008] _1 Hazardous Waste Operations and Emergency Response_
+[p059_c0009] _Page 5-15_
+
+## Page 60
+
+### [p060_c0001] Table of Contents
+[p060_c0002] 6.0 Safety Assurance 4 6.1 Safety Performance Monitoring and Measurement 5 6.1.1 Process for Ensuring Rules Compliance..... 5 6.1.1A Division of Car Equipment (DCE) ..... 6 6.1.1B Service Delivery..... 7 6.1.1C Maintenance of Way (MOW) ..... 8 6.1.1D Customer Environment & Facilities ..... 8 6.1.1E Staten Island Railway (SIR)..... 9 6.1.1F Office of System Safety (OSS)..... 9 6.1.2 Documentation ..... 10 6.1.2A Division of Car Equipment (DCE) ..... 10 6.1.2B Service Delivery..... 10 6.1.2C Maintenance of Way (MOW) ..... 10 6.1.2D Customer Environment and Facilities ..... 10 6.1.2E Staten Island Rail (SIR)..... 11 6.1.2F Office of System Safety (OSS) ..... 11 6.2 Safety Risk Mitigation 11 6.2.1 Maintenance of Way (MOW) Maintenance Programs/Procedures ..... 11 6.2.1A Track Maintenance..... 11 6.2.1B Infrastructure Maintenance..... 13 6.2.1C Power (Electrical & Third Rail Operations) ..... 15 6.2.1D Division of Car Equipment (DCE) Maintenance Programs/Procedures ..... 18 6.2.1E Signals Programs/Procedures ..... 24 6.2.2 Customer Environment & Facilities - Maintenance Programs/Procedures. 27 6.2.2A Division of Facilities..... 27 6.2.2B Escalator and Elevator Division ..... 29 6.2.2C Electronics Maintenance Division ..... 30 6.2.3 Staten Island Railway (SIR) Maintenance Programs/Procedures ..... 33 6.2.4 Equipment Inspection and Testing Program ..... 37 6.2.4A Service Delivery – Field Operations..... 37 6.2.4B MOW Equipment Inspection and Testing Programs ..... 38 6.2.4C DCE Inspection and Testing Programs..... 46 6.2.4D Customer Environment and Facilities Inspection and Testing Programs..... 57
+[p060_c0003] _Page 6-1_
+
+## Page 61
+
+[p061_c0001] 6.2.4E SIR Equipment Inspection and Testing Programs ..... 58 6.2.4G DOS Supervisor Work Environment Inspection ..... 66 6.2.4H Resolution of Audit/Inspection Findings ..... 67 6.2.5 DOS Structural Inspections ..... 68 6.2.5A MOW Engineering..... 68 6.2.6 Construction & Development (C&D) Condition Assessment Inspection Program ..... 71 6.2.6A Station Condition Surveys..... 71 6.2.6B Construction & Development Hazard Management Process ..... 89 6.2.7 Facility Inspection..... 90 6.2.7A Department of Subways ..... 90 6.2.7B Service Delivery..... 93 6.2.7C Maintenance of Way..... 94 6.2.7D Division of Car Equipment (DCE) ..... 95 6.2.7E Customer Environment & Facilities ..... 96 The Glendale shop has moved to 33 Williams Place, Brooklyn..... 100 6.2.7F Staten Island Railway (SIR)..... 100 6.2.8 DOS Storm Surge Mitigation Equipment (SSME), Deployment, Maintenance and Spare Part Inventory Plan ..... 102 6.2.8A DOS SSME Deployment Plan ..... 102 6.2.8B DOS SSME Assets Requiring Inspection ..... 105 6.2.8C Maintenance Guidelines for SSME Assets..... 110 6.2.8D DOS SSME Asset Spare Part Inventory Process ..... 121 6.2.9 Hours of Service ..... 122 6.3 Investigations 122 6.3.1 Notifications..... 123 6.3.1A Department of Subways Notifications..... 123 6.3.1B Office of System Safety Notifications..... 124 6.3.2 Accident Investigation Procedures ..... 125 6.3.2A Office of System Safety Investigations ..... 125 6.3.2B OSS Investigation Procedures for Train Incidents Resulting in Serious Injury or Death to an Employee ..... 126 6.3.2C OSS Investigation Procedures for Derailments/Collisions ..... 127 6.3.2D OSS Investigation Procedures for Serious Industrial Accidents or Escalator Accidents..... 128 6.3.2E DOS Investigation of Industrial Accidents or Derailments/Collisions..... 130
+[p061_c0002] _Page 6-2_
+
+## Page 62
+
+[p062_c0001] 6.3.2F Employee On-the-Job Injury Investigation..... 132 6.3.2G Contractor Injury Investigation..... 133 6.3.2H Staten Island Railway Customer Investigation..... 133 6.3.2.I Station Environment and Operations Customer Investigation..... 134 6.3.2J NYS Public Transportation Safety Board Investigation of NYC Transit Accidents..... 134 6.3.3 Near Miss Investigations ..... 135 6.3.3A OSS Investigation of Near Miss Incidents ..... 135 6.3.3B DOS Investigation of Near Miss Incidents..... 136 6.4 Internal Safety Review 137 6.4.1 Scope of Activities ..... 137 6.4.2 Office of System Safety..... 137 6.4.3 Managing the Review Process..... 137 6.4.4 Safety Audits Conducted by MTA Audits..... 138 6.5 Management of Change 138 6.5.1 Division of Car Equipment – CCF/PICF..... 139 6.5.2 MOW Engineering..... 141 6.5.3 Staten Island Railway..... 143 6.5.4 MTA-Construction & Development..... 144 6.5.5 Procurement..... 146 6.6 Continuous Improvement 148 6.6.1 Safety Committee..... 148 6.6.1 Office of System Safety..... 148 6.6.2 Signals ..... 149 6.6.3 Elevators and Escalators ..... 149 6.6.4 Station Environment & Operations ..... 149 6.6.5 Track..... 149 6.6.6 Staten Island Railway..... 150 6.7 Drug & Alcohol Program 150 6.7.1 Overview..... 150 6.7.2 Drug and Alcohol Policy/Instructions..... 151 6.7.3 Post Accident/Incident Drug and Alcohol Testing Policy/Instructions..... 152 6.7.4 Fitness for Duty..... 152 6.7.5 Staten Island Rail Drug & Alcohol Policy and Fitness for Duty ..... 152 6.8 Workplace Violence Prevention Program - 153
+[p062_c0002] _Page 6-3_
+
+## Page 63
+
+[p063_c0001] (Transit Worker Assault Prevention and Response) 153 6.8.1 Overview..... 153 6.8.2 Transit Worker Assault Prevention (Workplace Violence Prevention) 154 6.8.3 Transit Worker Assault Response 155 6.8.4 Workplace Violence Prevention Program (P/I 1.20.0) ..... 156
+### [p063_c0002] 6.0 Safety Assurance
+[p063_c0003] _Page 6-4_
+
+## Page 64
+
+[p064_c0001] This section describes the following activities:
+- [p064_c0002] • Monitoring the system for compliance with procedures for operations and maintenance • Monitoring operations to identify any safety risk mitigations that may be ineffective, inappropriate, or were not implemented as intended • Conducting investigations of safety events to identify causal factors • Monitoring information reported through internal safety reporting programs
+### [p064_c0003] 6.1 Safety Performance Monitoring and Measurement
+[p064_c0004] This subsection describes activities to monitor the system for compliance with procedures for operations and maintenance.
+### [p064_c0005] 6.1.1 Process for Ensuring Rules Compliance
+[p064_c0006] Within DOS the operating divisions employ different strategies for ensuring compliance with the rules that govern all employees and their divisional rules and procedures. Operating supervisors are responsible for ensuring their employees are performing their duties in compliance with the Safety Policy/Instructions and other safety procedures. Checklists are used by various divisions to assist supervision. In addition, safety audits are performed by DOS safety units, DOS management, C&D Business Unit Safety, and the Office of System Safety to support compliance with safety programs.
+[p064_c0007] When Contractors are working on NYCT property the contract specifications stipulate that the Safety and Security of NYCT employees and all other persons shall be the responsibility and concern of the Contractor. The Contractor shall comply with all agency safety requirements and the applicable provisions of the New York State Uniform Fire Prevention and Building Code, Occupational Safety and Health Administration (OSHA) 29 CFR 1926 and any inferences to 29 CFR 1910, the Environmental Protection Agency (Federal), Department of Environmental Conservation (State), Department of Environmental Protection (City), the National Fire Protection Association (NFPA) including National Electrical Codes (NEC), the Building Code of the City of New York – Chapter 33 and Electrical Codes, NYC Noise Control Code and DEP construction noise monitoring and mitigation, the New York State Code Rule 753 also known as New York State Industrial Code 53, and all other applicable rules and regulations’ latest revision.
+[p064_c0008] All of the Safety Rules and Regulations cited in the contract specification, all other rules and/or regulations relating to safety, and any other provision dictated by safety considerations, shall be strictly enforced by the Project Chief Executive Officer (PCEO). The PCEO and the Project Management Team (PMT) are the first line of enforcement in forestalling all violations of any regulated safety considerations and verifying that the Contractor is maintaining a safe work site. Below are the processes for ensuring rules compliance.
+[p064_c0009] _Page 6-5_
+
+## Page 65
+
+### [p065_c0001] 6.1.1A Division of Car Equipment (DCE)
+[p065_c0002] As documented in the DCE Safety Goals Action Plan, ensuring adherence to safety rules is covered by a process that includes the following:
+- [p065_c0003] • Daily facility safety inspections conducted by supervisory employees • DCE Central Safety Committee and shop safety committee critique of safety rules and work procedures on a routine basis and in response to specific employee accidents and safety incidents • Quality Assurance audits are conducted semi-annually by the Quality Assurance subdivision to assess the implementation of operating and maintenance rules and procedures by employees are reported directly to the Chief Mechanical Officer. This includes site inspections conducted by managers, shop safety committee critique of supervisors' implementation of safety rules and work procedures on an ongoing basis and in response to specific employee accidents or safety incidents • Update of the Safety Rules and Regulations Booklet for DCE employees
+[p065_c0004] ---The space below intentionally left blank---
+[p065_c0005] _Page 6-6_
+
+## Page 66
+
+### [p066_c0001] 6.1.1B Service Delivery
+[p066_c0002] Train Service Supervisors (TSS) in Field Operations (FO) monitor the operations of Conductors, Train Operators and Tower Operators by conducting field inspections and visually monitoring employee performance. For Tower Operators, the Dispatchers also perform this function. Managers perform this function for all supervisory titles. Additionally, TSSs evaluate the performance of Train Operators and Conductors twice each pick (four times per year); Dispatchers evaluate the performance of Tower Operators twice each pick (four times per year).
+[p066_c0003] Department of Subways Safety (DOS Safety) conducts Efficiency Tests designed to ensure compliance with current safety rules. Efficiency Tests measure performance in specific areas. For Train Operators, tests include, but are not limited to compliance with signal rules and yard operations. For Conductors, tests include compliance with acknowledging proper train stops at the Conductors' Indication Board and platform observation. For all employees, tests include monitoring compliance with Personal Protective Equipment (PPE) rules.
+[p066_c0004] The following are the Efficiency Test Programs that DOS Safety and Service Delivery conduct for train service personnel:
+- [p066_c0005] • Door Operation/Platform Observation and Indication Board/Safety Glasses: Conductors will be tested for compliance with New York City Transit Rules 3.70(m), 9.01(c), 9.01(j) 9.01(l), 9.01(r); and all active FO Bulletins related to "Door Operations and Proper Platform Observations", "Acknowledging the Conductor's Indication Board" and "Personal Protective Equipment (PPE) – Safety Glasses." • Train Operations through a Work Area (Flagging): Train Operators will be tested for compliance with NYCT Rule 3.82 and current FO Bulletins regarding "Train Operation through Work Areas." • Train Operations in Yards: Train Operators will be tested for compliance with NYCT Rules 2.39(m), 2.39(n), 2.52(a), 2.52(g), 2.55(e), 9.02(b) and all FO Bulletins in effect pertaining to "Train Operation in Yards" and "Incomplete Moves (No Signal in Front of Switch)." • Red Automatic Signals: With cooperation from the Division of Electrical Systems (Signals), Train Operators will be tested for compliance with NYCT Rules 2.40(h), 2.40(m), 2.40(n) and all active FO Bulletins governing "When Encountering a Red Automatic Signal." • Distractions: All train service employees will be tested for compliance with NYCT Rules 11(e), 9.01(c), 9.02(b) and current FO Bulletins regarding "Distractions." Observations for compliance will be in effect at all times and will be part of the aforementioned test and recorded during all Efficiency testing. • Enroute, train crews are subject to unannounced and discrete observation by Train Service Supervisors, whose primary function is to ride trains frequently, observing the manner in which Train Operators and Conductors perform their duties, and to correct any improper
+[p066_c0006] _Page 6-7_
+
+## Page 67
+
+[p067_c0001] actions. At terminals between trips, train crews are also subject to observation by terminal supervision, Train Service Supervisors, or Operating Managers. Train Service Supervisors, Dispatchers, and Superintendents monitor the operations of Tower Operators by visually inspecting their performance if they share the facility with the Tower Operator. At remote locations, Managers and Supervisors shall conduct field inspections of Tower Operators' operations. In yards, Train Service Supervisors, Dispatchers, and Superintendents shall monitor the operations of Tower Operators by visually monitoring yard train movements for safe operations. Additionally, TSSs evaluate the performance of Train Operators and Conductors twice each pick (four times per year); this information is entered into the Handheld Employee Evaluation Program (HEEP). Dispatchers evaluate the performance of Tower Operators twice each pick (four times per year).
+- [p067_c0002] • In addition, field Train Service Supervisors will perform a minimum of 20 radar checks per line each month and will inspect each Train Operator's brake handle 3 times per year. • Managers regularly conduct random observations of supervisors at work. Formal evaluations of job performance are conducted by management at least once per pick.
+### [p067_c0003] 6.1.1C Maintenance of Way (MOW)
+[p067_c0004] Adherence is assured by daily supervisory oversight and safety audits performed by field supervisors. Supervisors conduct random audits to ensure compliance with safety rules, PPE, quality inspection of work activities and all safety and maintenance related issues. The findings are discussed and, if required, safety risk mitigations are initiated with the operating supervisor. These reports are distributed within the responsible division for further review. In addition, SMAT (Safety Management Audit Training) audits, and the Joint Safety Task Group submit their findings that are circulated throughout to the area of responsibility of the managers for review and discussion of safety risk mitigations or for additional updating to any policy if required.
+### [p067_c0005] 6.1.1D Customer Environment & Facilities
+[p067_c0006] The Division of Station Environment & Operations, Facilities, Elevator and Escalators, and Electronic Maintenance includes a wide range of job descriptions. Therefore, all employees are required to comply with any or all rules pertaining to their current job assignments.
+[p067_c0007] Supervisors informally inspect the personnel in their charge during the workday. The supervisor focuses on areas, such as the availability and usage of personal protective equipment, and work procedures of personnel at the work site. Field inspections and safety violations are documented with regard to improper/unsafe work practices. Follow-up inspections are performed to ensure that a safety risk mitigation has been taken. In the event that the safety risk mitigation has not been implemented immediately, the employee may be subject to re-instruction or formal disciplinary action.
+[p067_c0008] Managers regularly conduct random observations of supervisors at work.
+[p067_c0009] _Page 6-8_
+
+## Page 68
+
+[p068_c0001] Adherence is assured by daily supervisory oversight and safety audits performed by field supervisors. Supervisors conduct random audits to ensure compliance with safety rules, PPE, quality inspection of work activities and all safety and maintenance related issues. The findings are discussed and, if required, safety risk mitigations are initiated with the operating supervisor. These reports are distributed within the responsible division for further review. In addition, SMAT (Safety Management Audit Training) audits, and the Joint Safety Task Group submit their findings that are circulated throughout to the area of responsibility of the managers for review and discussion of safety risk mitigations or for additional updating to any policy if required.
+[p068_c0002] Department of Subways (DOS) Safety participates in the enforcement of NYCT safety rules through field inspections and documents safety violations with regard to improper and unsafe work practices. The desired results are to ensure employee compliance with New York City Transit policies and an overall accident rate reduction. The inspections concentrate on, but are not limited to, personnel wearing appropriate personal protective equipment and compliance with work procedures and New York City Transit policies. In addition, the following audits/inspections are performed: Manager Safety Audit, Quarterly Safety Stand down (Facilities), Quarterly Safety Briefings, Supervisory Daily Activity Log (HVAC), Internal audit of Preventive Maintenance including logbook audit by Elevator & Escalator (E&E), and Systems Operations Telecommunication Review (Planning & Control Superintendent reviews random calls recorded on the NICE Inform System on a weekly basis and records on the Telephone Audit database).
+### [p068_c0003] 6.1.1E Staten Island Railway (SIR)
+[p068_c0004] Random reviews of employees' performance are conducted monthly to ensure compliance with applicable departmental rules and procedures. Supervisors and managers observe employees performing selected tasks by performing fitness-for-duty checks, riding passenger trains, reviewing safety procedures, checking PPE, flagging arrangements, maintenance procedures and administrative functions. The SIR Safety Committee, consisting of departmental representatives from management and labor, conduct random inspections of various SIR facilities, stations, and work sites. Completed inspection reports are reviewed for trends and occurrences that require updates, revisions, or safety risk mitigations. Negative trends are mitigated by issuance of rule revisions. In addition, Safety Culture Observation Team (SCOT) audits and Joint Track Safety Audit (monthly) are performed. OSS and SIR Safety performs monthly roadway worker protection audits. The Roadway Worker Protection (RWP) Briefing Form is reviewed during the audit.
+### [p068_c0005] 6.1.1F Office of System Safety (OSS)
+[p068_c0006] Under direction of the Accountable Executive and the Chief Safety Officer and independently of DOS, OSS is responsible for periodic field safety inspections to monitor compliance with safety rules and Safety Policy/Instructions. Joint audits with OSS, Subways Surface Supervisors Association (SSSA), and Transport Workers Union (TWU) representatives are conducted on Subway construction and maintenance projects, including the top 25 stations, to identify deficiencies in flagging, training, and equipment. Bi-annual trend analysis of the data is performed. In addition, OSS conducts annual reviews of the DOS Safety Plan and Safety Goal Action Plan (SGAP). Written reports are sent to the operating department with recommendations and corrective action when required and OSS ensures that all identified deficiencies are addressed.
+[p068_c0007] _Page 6-9_
+
+## Page 69
+
+### [p069_c0001] 6.1.2 Documentation
+[p069_c0002] The divisional safety units and OSS provide documentation of audits, which includes findings and corrective actions to the management of the unit being audited. Local supervision uses various forms and checklists to document their daily auditing of work tasks, inspections of work locations and enforcing the use of personal protective equipment. The DOS Safety Goal Action Plans require managers and supervision to track the status of the implementation of recommendations.
+### [p069_c0003] 6.1.2A Division of Car Equipment (DCE)
+[p069_c0004] A Maintenance/Overhaul Shop Audit report is issued and all nonconformities are documented with a safety risk mitigation request. Safety critical findings must be corrected within 24-hours. Audit reports are closed upon verification of implementation of a safety risk mitigation plan.
+### [p069_c0005] 6.1.2B Service Delivery
+[p069_c0006] Efficiency Test results are transmitted to General Superintendents and Line Superintendents. Field supervisors and managers conduct STOP (Safety Training Observation Program) audits for Safety and SMAT (Safety Management Audit Training) audits, the results of those audits are transmitted to OSS and trend results are incorporated in the Safety Goal Action Plan.
+[p069_c0007] Additionally, a systems operations telecommunication review is conducted, where the Planning & Control Superintendent reviews random calls recorded on the NICE Inform System on a weekly basis and records on the Telephone Audit database.
+### [p069_c0008] 6.1.2C Maintenance of Way (MOW)
+[p069_c0009] Audits are distributed for review throughout the department and discussed by the managers. SMAT audits are conducted monthly and the documented findings and/or corrective actions and safety risk mitigations are also discussed. New rules and policies which are developed are distributed in bulletin form, which is required to be displayed in employee quarter facilities.
+[p069_c0010] Signals Asset Management Subdivision perform logbook audits to verify approved Signals database entries.
+### [p069_c0011] 6.1.2D Customer Environment and Facilities
+[p069_c0012] Supervision conducts STOP audits for Safety and Managers conduct SMAT Audits. The results of those audits are transmitted to OSS as required and trend results are incorporated in the Safety Goal Action Plan.
+[p069_c0013] Station Environment & Operations: Observations in the field are noted and transmitted to the Group Station Superintendent (GSS) and Group Station Manager (GSM) of the respective areas. Supervision conducts STOP audits for Safety and Managers conduct SMAT Audits. The results of those audits are transmitted to OSS as required and trend results are incorporated in the Safety Goal Action Plan.
+[p069_c0014] _Page 6-10_
+
+## Page 70
+
+### [p070_c0001] 6.1.2E Staten Island Rail (SIR)
+[p070_c0002] Managers and SIR Safety Committee members use SIR specific forms and checklists for conducting audits and evaluations. Completed forms, reports or inspection/checklists are reviewed and evaluated monthly during staff and safety meetings. The specific forms and checklists for conducting audits and evaluations are submitted to the department heads for review to ensure compliance with applicable rules and safety risk mitigations are administered if warranted.
+### [p070_c0003] 6.1.2F Office of System Safety (OSS)
+[p070_c0004] OSS prepares and distributes regular safety reports to upper level management in an effort to ensure that they are aware of safety performance. The regular reports include monthly Employee Lost Time Accident Rate reports, periodic safety performance of NYC Transit, and review/inspection reports.
+[p070_c0005] Safety Goal Action Plan (SGAP) program is used in NYCT as a means to help drive the Safety Management System (SMS) process and enhance customer and employee safety at NYCT. The SGAP program is monitored and audited by OSS. The SGAP program uses safety goals and action plans that are updated quarterly and developed by each department, with a statement of a target result and list of tasks to be achieved within a specific period of time that, when achieved, will have a positive, measurable effect on employee and/or customer safety. All SGAP quarterly updates and audit records are kept by OSS and submitted to the PTSB for review. A complete outline of the SGAP program can be found in the most recent version of P/I 10.18.
+### [p070_c0006] 6.2 Safety Risk Mitigation
+[p070_c0007] This subsection describes activities to monitor operations to identify any safety risk mitigations that may be ineffective, inappropriate, or were not implemented as intended. Systems operated by the Department of Subways (DOS) are subject to scheduled maintenance programs. The programs include established maintenance cycles, methods for tracking maintenance activities, and audits utilized to ensure the effectiveness of the maintenance performed.
+### [p070_c0008] 6.2.1 Maintenance of Way (MOW) Maintenance Programs/Procedures
+### [p070_c0009] 6.2.1A Track Maintenance
+[p070_c0010] Track replacement/repair activities take place subsequent to inspection findings. As part of the track inspection process, defective rails are clearly marked on each side of the rail web and base. Evaluation of track inspection/maintenance programs is continuous, and revisions to the maintenance schedule and/or equipment specifications are implemented by management as required.
+[p070_c0011] _Page 6-11_
+
+## Page 71
+
+[p071_c0001] The following is the frequency of track inspections:
+[p071_c0002]
+
+```text
+Track Inspection Frequency Mainline Track Yard Track Track Walker Two Times Weekly with Calendar Day Interval Monthly Supervisory Every 14-Days (Not less than 12 Days or more than 18 Days In Between Inspections) Quarterly
+```
+[p071_c0003] _Table 6-1: Track Section – Track Inspection_
+[p071_c0004] Quadrennial Track condition surveys are conducted by MOW Engineering’s Track Engineering section. Track rehabilitation projects are selected and prioritized according to the findings of the Quadrennial Condition Surveys of track and switches. The surveys are conducted every four years and are primarily designed to achieve the following:
+- [p071_c0005] • Maintain an inventory of all the mainline track components (including their location and condition) • Update existing ‘Track Information Planning System’ data • Update the ‘Track Device System’ with actual measured data pertaining to track devices (panels) • Categorize each track device/panel by its remaining useful life, thus providing the means of planning future track rehabilitation and maintenance.
+[p071_c0006] Each record within the ‘Condition Survey’ database contains the physical description and rating of each track component in the device. The basic types of devices are classified by their geometry, tangent (straight) or curved track; switches; etc. Each basic device can be further subdivided by its type of components, condition, environment, etc. A change in any of the basic track components, its geometry or condition will generate a new device or sub-device. Environmental conditions and the geometry of the device from collected Track Geometry Car (TGC) data are also inputted. In addition, each major track component in the device is categorized and rated according to its remaining useful life.
+[p071_c0007] The major track components such as ballast, crossties, tie plates and rails are rated according to its remaining useful life. Ten categories are used for rating the remaining useful life of ballast, crossties, and rails, ranging from 0 to 20+ years. Each value corresponds to the years of remaining useful life at the time of inspection. The condition of other components (such as tie plates and fasteners) is rated as ‘good,’ ‘fair’ or ‘poor’.
+[p071_c0008] Once the major track components have been rated, a total remaining useful life for the device can be estimated. The condition and remaining useful life of the basic track components such as crossties and ballast carry more weight in determining the overall remaining life of the device as a whole. Other components can be easily replaced or adjusted, but if the crossties and ballast have
+[p071_c0009] _Page 6-12_
+
+## Page 72
+
+[p072_c0001] failed then the track has little or no remaining useful life. For track reconstruction purposes, the average life of a segment of track is therefore derived by combining the remaining useful life of the ballast and crossties and the condition of the geometry and environment (dry, wet, or very wet) of the segment.
+[p072_c0002] The evaluation of a device's remaining useful life starts with the expected average useful life for the type of device being inspected. The number of years that the device has been in service is compared to this average to gauge how many years of expected life remain. Current conditions of component wear and train traffic are added to the evaluation. The estimate is further reduced by such factors as poor geometry and wet environment. The net result of this process is the estimated remaining useful life of a device.
+[p072_c0003] Teams of specially trained Track Engineering Supervisors perform survey studies to identify the condition of track components. Condition ratings and categorizations are "calibrated" so that all the team members and their supervision agree in the rating of the same components and track devices. The Quadrennial Condition Surveys are performed by three teams under Track Engineering's Quality Assurance & Condition Surveys group walking every foot of track along the NYCT system. Each team consists of one Track Supervisor and two track workers. The track workers assist the supervisor by flagging the trains and taking measurements while the Supervisor records all the data on a hand-held pen-based laptop computer.
+[p072_c0004] The collected data is used to distinguish the areas of track requiring reconstruction from those just needing maintenance. For example, if a segment of track has good ties and ballast but the plates and rails are worn, it could be scheduled for a rail and plate renewal only, instead of rebuilding the whole track. For those track areas in need of total reconstruction, the Condition Survey data is used to prioritize which of them needs to be scheduled first, based on their remaining years of useful life. Other uses of the Condition Survey data for long-term planning of track maintenance and reconstruction are budgeting for materials and manpower, building a degradation model with the observed degradation rates from previous Condition Surveys, and monitoring the state of good repair of the track and switch systems.
+### [p072_c0005] 6.2.1B Infrastructure Maintenance
+[p072_c0006] Managers evaluate the effectiveness of the infrastructure section's maintenance program by monitoring equipment breakdowns and performing visual inspections of buildings and equipment. In addition, managers review computer printouts monthly pertaining to outstanding/open jobs as well as those which have been completed.
+[p072_c0007] _Page 6-13_
+
+## Page 73
+
+[p073_c0001] Professional Engineers review infrastructure inspection reports and schedule repairs accordingly. Fan plants are maintained as part of the inspection process outlined in Table 6-2.
+[p073_c0002]
+
+```text
+INFRASTRUCTURE INSPECTION SCHEDULE DESCRIPTION FREQUENCY Tunnel Ventilation Fan Plants – Under River Tunnels Monthly/Quarterly/Semi-Annual/Annually Tunnel Ventilation Fan Plants - Land Tunnels Monthly/Quarterly/Semi-Annual/Annually Subway Emergency Exits Every 2 Months Vents outside stations Annual Standpipes* (Tunnels/Tubes) Monthly/Quarterly/Annual/5 Year Sprinklers (Escalators) Annual Tunnel Lighting 2 Years
+```
+[p073_c0003] _Table 6-2: Infrastructure Equipment Inspection Schedule_
+[p073_c0004] *Note: Standpipe inspections involve various systems
+[p073_c0005] Additionally, an audit is conducted annually by a consultant retained by the Metropolitan Transportation Authority (MTA) to evaluate the effectiveness of the inspection program. All comments by the consultant are forwarded to the Chief Infrastructure Officer.
+[p073_c0006] Infrastructure maintenance intervals are outlined below:
+[p073_c0007]
+
+```text
+INFRASTRUCTURE – MAINTENANCE INTERVALS Asset Maintenance Interval Title Maintaining Equipment Deep Well Pumps Monthly/ Quarterly/ Annual Structure Maintainer Tunnel Pumps Monthly / Quarterly/ Annual Structure Maintainer Under River Tunnel Pumps Monthly/ Quarterly/ Annual Structure Maintainer Sump Pumps Monthly /Quarterly / Annual Structure Maintainer Well Point Pumps Monthly/ Quarterly/ Annual Structure Maintainer Compressors Monthly Structure Maintainer Ejector Monthly Structure Maintainer
+```
+[p073_c0008] _Page 6-14_
+
+## Page 74
+
+[p074_c0001]
+
+```text
+INFRASTRUCTURE – MAINTENANCE INTERVALS Asset Maintenance Interval Title Maintaining Equipment Pump Train Monthly Structure Maintainer Fan Plants Monthly / Quarterly/ Annual Structure Maintainer Tunnel Lighting 2 Year Cycle Light Maintainer Vents (Cleaned & Tested) 12 Month Cycle Structure Maintainer
+```
+[p074_c0002] _Table 6-3: Infrastructure Section - Maintenance Intervals_
+[p074_c0003] Additional Infrastructure maintenance include:
+- [p074_c0004] • West 4th Nights Operation Tunnel lighting including blue light two-year system wide inspections and re-lamping • Maintenance inspections, repair and replace Fire Extinguishers system wide quarterly and annually • Grouting leaks system wide, annual goal of 5,000 leaks • Emergency Exit lighting as required • Tunnel lighting as required • Install or clean 24,000-feet of no clearance signs system wide once a year • Inspect and repair “A” defects system wide (Bench wall, sound & tap) also support Iron dept. by chipping for column and beam repairs • Inspect and repair “B” defects System wide (Emergency Exits) • 1 year replace or repair 15,000 feet of handrail • Drain cleaning using Vactron/Jetta trains and tow behind Jetta’s, yearly goal 50 miles (264,000 ft) per year • 14 tubes inspected monthly (Fire line, FX, Blue light) • Yearly Capital track program pouring concrete or Sika 15,000 feet a year
+[p074_c0005] Yards and Barns Subdivision
+- [p074_c0006] • Vents Inspections - 1-year cycle
+### [p074_c0007] 6.2.1C Power (Electrical & Third Rail Operations)
+[p074_c0008] The Subdivision of Power is responsible for inspecting and maintaining NYCT’s power and signal systems. The Signals section’s maintenance program is outlined in Table 6-6a. The Power section’s maintenance activities are outlined in Table 6-7.
+[p074_c0009] Power Operations perform a 6-month Field Maintenance #49 for every substation within the system. A monthly Fire Extinguisher Inspection is conducted at all occupied crew rooms and buildings. Power is responsible for recording on the Crew Quarter inspection form along with the tag of that fire extinguisher. A Monthly inspection of gantry Crane is performed with a daily inspection performed on the vehicle crane.
+[p074_c0010] _Page 6-15_
+
+## Page 75
+
+[p075_c0001]
+
+```text
+POWER – MAINTENANCE INTERVALS WITH GOVERNING PROCEDURES Asset Maintenance Interval Title(s) Maintaining Equipment Field Maintenance Instruction (FMI) Number NOTES Above Ground Substation Every 4 months Power Mtr. / Helper FMI - 2 Underground Substation Every 2 months Power Mtr. / Helper FMI - 2 D.C. Feeder Breakers Every 3 years Power Mtr. / Helper FMI – 5 or FM - 6 A substation will have either an FM5 (Panel brkr) or FM6 (Truck brkr), not both Rectifier Control Every 3 years Power Mtr. / Helper FMI - 4 High Tension Every 3 years Power Mtr. / Helper FMI - 7 / 7G & 44 Ground Protection Every 3 years Power Mtr. / Helper FMI - 67 D.C. Bus Annually Power Mtr. / Helper FMI - 28 Battery Maintenance Monthly Power Mtr. / Helper FMI - 47 Emergency Alarm (EA) Panels Semi-Annual Power Mtr. / Helper FMI - 9 Rectifier Cooling Annually Power Mtr. / Helper FMI - 42 Supervisory Control ROOM Monthly Power Mtr. / Helper FMI - 27 Added the word room to denote location Fire Extinguishers Bi-Annually Power Mtr. / Helper FMI - 49 First Aid Kit Annually Power Mtr. / Helper FMI - 20 Rubber Gloves Bi-Annually Power Mtr. / Helper FMI - 15
+```
+[p075_c0002] _Table 6-4a: Power Section - Maintenance Intervals_
+[p075_c0003] _Page 6-16_
+
+## Page 76
+
+[p076_c0001] NOTE: Some items listed in this Table contain “Maintenances” which play a part in some of the daily operations and functions.
+[p076_c0002]
+
+```text
+POWER – OPERATION INTERVALS WITH GOVERNING PROCEDURES Asset Operation Interval Title(s) Operating Equipment Field Operating Instruction (FOI) Number Operation Logs Daily “24/7, 365” Power Mtr. / Helper FOI-800 A.G. & U.G. Substation Insp. Every day Power Mtr. / Helper FOI-801 Hold-Off Record Keeping Daily “24/7, 365” Power Mtr. / Helper FOI-802 A.G. & U.G. Substation Record Keeping Daily “24/7, 365” Power Mtr. / Helper FOI-803 Supv. & Relay Battery Record Keeping Daily “24/7, 365” Power Mtr. / Helper FOI-804 SCADA Remote Rectifier Load Measuring Every hr. “off peak” / half hr. “on peak” Power Mtr. / Helper FOI-805 High Tension Fdr. Grounding As required Power Mtr. / Helper FOI-878 Battery Insp./Sched. Monthly Power Mtr. / Helper FMI-47 / FMI-48 Emergency Alarm (EA) Testing Monthly Power Mtr. / Helper FOI-818 / FOI-830 Daily Summary Daily “24/7, 365” Power Mtr. / Helper FMI-17
+```
+[p076_c0003] _Table 6-4b: Power Section - Operation Intervals_
+[p076_c0004] NOTE: Some items listed in this Table contain “Maintenances” which play a part in some of the daily operations and functions.
+[p076_c0005] _Page 6-17_
+
+## Page 77
+
+### [p077_c0001] 6.2.1D Division of Car Equipment (DCE) Maintenance Programs/Procedures
+[p077_c0002] Maintenance programs for NYCT's fleet of rail vehicles are covered in work manuals for specific car classes. Each work manual is a document developed according to an official NYCT specification that explains all required maintenance activities. DCE employees at the division's 13 maintenance shops are responsible for maintaining NYCT's existing fleet of rolling stock. Maintenance teams check and service/repair or replace components as necessary. Maintenance shop work falls into four major categories:
+### [p077_c0003] I. Scheduled Maintenance System Replacement Cycles
+- [p077_c0004] • Scheduled Maintenance System is a proactive maintenance program that is designed to replace components prior to their failure. • Scheduled Maintenance System follows a periodic component renewal/replacement schedule on 4, 5, 6 and 12-year cycles that restores aging major components before failure over the useful life of a revenue car. Cycles vary and are based primarily on the car systems.
+### [p077_c0005] II. Scheduled Maintenance Inspections (SMI)
+- [p077_c0006] • DCE is responsible for inspection programs (including pre-service inspection) for both revenue and non-revenue rail vehicles. Inspection programs for revenue vehicles are covered in work manuals for specific car classes (make and model) which have been developed according to official NYCT specifications. Each work manual explains all maintenance activities required during a car's scheduled maintenance inspection (SMI) cycle. The manuals include vehicle drawings, step-by-step maintenance instructions and troubleshooting guidelines. All work manuals follow identical NYCT inspection criteria and are formatted in a similar fashion to facilitate ease of use among users. • DCE performs scheduled maintenance inspections of non-revenue cars at the 207th Street and Coney Island Overhaul Shops and Pelham Diesel Shop (Westchester Locomotive Shop). • The division has also developed inspection programs for a variety of other equipment located in maintenance and overhaul shops (including such items as cranes, jacks, and forklifts). DCE equipment inspection programs are conducted in accordance with OSHA and ANSI standards, as well as manufacturer's specifications, and internal DCE procedures and checklists.
+### [p077_c0007] III. Unscheduled Maintenance
+- [p077_c0008] • Performed as required on cars that have defects that resulted in a train delay or 'Request for Assistance Report' (from Service Delivery).
+[p077_c0009] _Page 6-18_
+
+## Page 78
+
+### [p078_c0001] IV. Car Appearance/Car Washing
+- [p078_c0002] • Each of the maintenance shops supports an intensive Car Appearance Program ensuring that cars are equipped with correct signage, adequate lighting, and operative P/A systems. The program also includes checking the HVAC systems and doors before cars go into service. • DCE performs an average of 4,500 car washes each week at the division's eight car wash facilities. Fifty-four car cleaning facilities (located in stations and yards) help keep cars in service, clean, and graffiti-free.
+[p078_c0003] DCE overhaul shops remanufacture and repair railcar components and assemblies including electric motors, pneumatic equipment, wheels, axles, and trucks. The shops also carry out major car body repair and unscheduled large component change-outs, car painting, and special projects such as inspection and repair of historic railcars. The overhaul shops Scheduled Maintenance System work cycles include performing car body work (including new flooring, door hangers/tracks and threshold plates), battery reconditioning, and the following overhauls:
+- [p078_c0004] • Air brake system brake valve • Air compressor • Electric portion and gauging the mechanical coupler • Master controller • Converter • HVAC system • Truck frame • Propulsion system components • Air brake op unit valves • Emergency magnet valve • Load sensor valve • C-2-W relay valve (for car classes: R142, R142A, R143, R160 and R179) • Magnet valves (for car classes: R142, R142A, R143, R160 and R179)
+[p078_c0005] DCE utilizes quality assurance (QA) audits to ensure implementation of maintenance and inspection program standards. The audits are conducted by DCE's QA subdivision - reporting directly to the division head (Vice President and Chief Mechanical Officer). DCE audit services are as follows:
+### [p078_c0006] I. Maintenance/Overhaul Audit Services
+- [p078_c0007] • Audits Maintenance and Overhaul Shop operations to determine compliance with standard operating procedures. Audits include post-inspection audits of the maintenance and repair of subway cars, as well as Scheduled Maintenance Systems and overhaul process audits. Audits are performed on an as needed basis to address concerns or issues.
+### [p078_c0008] II. Shop Safety and Procedure Audit Services
+- [p078_c0009] • Maintenance and Overhaul Shop operations are audited on an annual basis.
+[p078_c0010] _Page 6-19_
+
+## Page 79
+
+### [p079_c0001] III. System Audit Services
+- [p079_c0002] • Provides Association of American Railroads (AAR) audit services for the Field Quality Assurance's Gage Maintenance unit, the Material Inspection unit, the Coney Island (C.I.) Wheel and Axle Shop, the C.I. Pneumatic Shop, and the C.I. Roller Bearing Shop. Audits are conducted annually.
+### [p079_c0003] IV. Facilities Maintenance Plan (FMP) Audits
+- [p079_c0004] • Maintenance Shop, Overhaul Shop, and Emergency Response facilities are audited on an annual basis.
+[p079_c0005] Scheduled maintenance of DCE shop equipment is often conducted in conjunction with inspection cycles. DCE's scheduled maintenance cycles for shop equipment are outlined in Table 6-5. Inspections are documented in the shop's Computerized Maintenance Management System (MP2). Refer to document MCD 12-01, revision A (Page 6-58).
+[p079_c0006] ---The space below is intentionally left blank---
+[p079_c0007] _Page 6-20_
+
+## Page 80
+
+[p080_c0001]
+
+```text
+ASSET RESPONSIBLE PARTY DAILY WEEKLY MONTHLY QUARTERLY SEMI-ANNUALLY ANNUALLY TITLE OF MAINTAINER COMMENTS DOCUMENTATION AERIAL WORK PLATFORMS, DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Performed In-House / or By Contractor System Work Order for FMP Facilities/ Contractor Service Invoice for Non-FMP AIR COMPRESSOR DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Performed In-House / or By Contractor System Work Order for FMP Facilities/ Contractor Service Invoice for Non-FMP BELT SANDING MACHINE & DUST COLLECTOR DCE ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities/ Manual Service Request for Non-FMP CLEANING MACHINE, STEAM DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities/ Manual Service Request for Non-FMP CAR WASH DCE ✓ ✓ ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities/ Manual Service Request for Non-FMP CRANE & HOIST DCE ✓ ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Performed In-House / or By Contractor System Work Order for FMP Facilities/ Contractor Service Invoice for Non-FMP DRILL PRESS DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities/ Manual Service Request for Non-FMP EYE WASH & EMERGENCY SHOWER DCE ✓ ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities/ Manual Service Request for Non-FMP FIRE EXTINGUISHER DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities/ Manual Service Request for Non-FMP FORKLIFT DCE ✓ HOURLY AND APPROVED BY SUPERVISOR Performed In-House / or By Contractor System Work Order for FMP Facilities/ Contractor Service Invoice for Non-FMP FUME EXTRACTOR DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities/ Manual Service Request for Non-FMP
+```
+[p080_c0002] _Table 6-5 DCE Maintenance Schedule for Shop Equipment_
+[p080_c0003] _Page 6-21_
+
+## Page 81
+
+[p081_c0001]
+
+```text
+ASSET RESPONSIBLE PARTY DAILY WEEKLY MONTHLY QUARTERLY SEMI-ANNUALLY ANNUALLY TITLE OF MAINTAINER COMMENTS DOCUMENTATION GRINDERS DCE ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities / Manual Service Request for Non-FMP HIGH PRESSURE WASHER DCE ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities / Manual Service Request for Non-FMP HORIZONTAL BAND SAW DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities / Manual Service Request for Non-FMP HYDRAULICS LIFTS, & JACKS DCE ✓ HOURLY AND APPROVED BY SUPERVISOR Performed In-House / or By Contractor System Work Order for FMP Facilities / Contractor Service Invoice for Non-FMP INDUSTRIAL VEHICLE DCE ✓ ✓ ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities / Manual Service Request for Non-FMP LATHE DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities / Manual Service Request for Non-FMP MULTI-PROCESSOR WELDER DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities / Manual Service Request for Non-FMP MULTI-PURPOSE SPREADER DCE ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities / Manual Service Request for Non-FMP MILLING MACHINE DCE ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities / Manual Service Request for Non-FMP SCRUBBER, FLOOR DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities / Manual Service Request for Non-FMP SCRUBBER, RIDE-ON DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities / Manual Service Request for Non-FMP
+```
+[p081_c0002] _Table 6-5 DCE Maintenance Schedule for Shop Equipment (Continued)_
+[p081_c0003] _Page 6-22_
+
+## Page 82
+
+[p082_c0001]
+
+```text
+ASSET RESPONSIBLE PARTY DAILY WEEKLY MONTHLY QUARTERLY SEMI-ANNUALLY ANNUALLY TITLE OF MAINTAINER COMMENTS DOCUMENTATION SCRUBBER, WALK-BEHIND DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities / Manual Service Request for Non-FMP SWEEPER, RIDE-ON FLOOR DCE ✓ ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities / Manual Service Request for Non-FMP SWEEPER, WALK-BEHIND FLOOR DCE ✓ ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities / Manual Service Request for Non-FMP TABLE SAW DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities / Manual Service Request for Non-FMP TANK (AST 385 GALLON WASTE OIL) DCE ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities / Manual Service Request for Non-FMP 3rd RAIL TROLLEY & AUX. BUGS CONTROLLER DCE ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities / Manual Service Request for Non-FMP VERTICAL BAND SAW DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR System Work Order for FMP Facilities / Manual Service Request for Non-FMP WHEEL TRUNG MACHINE DCE ✓ ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Performed In-House / or By Contractor System Work Order for FMP Facilities / Contractor Service Invoice for Non-FMP
+```
+[p082_c0002] _Table 6-5 DCE Maintenance Schedule for Shop Equipment (Continued)_
+[p082_c0003] _Page 6-23_
+
+## Page 83
+
+### [p083_c0001] 6.2.1E Signals Programs/Procedures
+[p083_c0002] The Subdivision of Signals is responsible for inspecting and maintaining NYCT’s signal systems. The Signals section’s maintenance program is outlined in Table 6-6a.
+[p083_c0003]
+
+```text
+SIGNALS - INSPECTION AND MAINTENANCE INTERVALS Asset Maintenance Interval (Frequency + Tolerance) Titles - Maintaining Equipment Unit Codes Mainline Track Yard Track Power Operated Switch Machines 30 + 5 Days 60 + 10 Days Signal Maintainer 0100 - 0199 Train Stops and train detection track circuits 180 + 15 Days 180 + 15 Days Signal Maintainer 0200 - 0285 Signal Enclosures (Relay Rooms, CIR, Compressor Rooms, SPR, etc.) 30 + 5 Days 90 + 15 Days Signal Maintainer 9900 - 9999 Relay Racks (older locations) 90 + 15 Days 90 + 15 Days Signal Maintainer 382 - 383 Relay Racks (newer locations) 180 + 15 Days 180 + 15 Days Signal Maintainer 382 - 383 Air Supply Compressor Plants 60 + 10 Days N/A Signal Maintainer 400 - 499 Air Supply Compressor Plant Heavy Maintenance (215th Street) 90 + 15 Days N/A Signal Maintainer 400 - 499 Contact Rail Indicators 180 + 15 Days 180 + 15 Days Signal Maintainer 700 - 799 Storage Battery Sets 30 + 15 Days N/A Signal Maintainer 1100 - 1199 Annunciator 365 + 30 Days N/A Signal Maintainer 1500 - 1599 Code Control Systems 180 + 20 Days N/A Signal Maintainer 1606 - 1610, 1615, 1626 Event Recorders 180 + 20 Days N/A Signal Maintainer 1618 - 1625 Wheel Detectors 180 + 20 Days N/A Signal Maintainer 1601 - 1605
+```
+[p083_c0004] _Table 6-6a: Signals Inspections and Maintenance Intervals_
+[p083_c0005] _Page 6-24_
+
+## Page 84
+
+[p084_c0001]
+
+```text
+SIGNALS EQUIPMENT TESTS TEST # EQUIPMENT TEST TITLE OF TESTER & FREQUENCY PROCEDURE NO. / CHECKLIST Maintainer Supervisor Manager Max. Time Allowed Between Test 1 SW. CC Inspection & Adjustment 60 Days NA NA 90 Days 7.14.033 2 CC Operated by SW. & Lock Movement 60 Days NA NA 90 Days 7.14.034 3 Shunt Fouling Test 90 Days 180 Days NA 90 Days 7.14.036 4 Vital Relay 180 Days NA NA 2 Years 7.14.037Mo037Mo 5 Ground Test 90 Days NA NA 90 Days 7.14.038 6 Time Release and Timing Relay Test 1 Year NA NA 1 Year 7.14.039 8 Track Circuit & Track Wire Integrity Test* 180 Days N/A N/A 180 Days 7.14.057 9 Mechanical Locking Test NA 2 Years NA 2 Years 7.14.041 10 Approach Locking Test NA 2 Years NA 2 Years 7.14.042 11 Time Locking Test NA 2 Years NA 2 Years 7.14.043 12 Route Locking Test NA 2 Years NA 2 Years 7.14.044 13 Indicating Locking Test NA 2 Years NA 2 Years 7.14.045 14 Traffic Locking Test NA 2 Years NA 2 Years 7.14.046 15 Internal switch circuit controller & adjustment Test (Point Detection) 60 Days NA NA 90 Days 7.14.047 16 Valve, Lock & Magnet Test 60 Days NA NA 90 Days 7.14.048 17 Cross Protection Test (polar relays) 60 Days NA NA 90 Days 7.14.049 18 Mainline Switch Locking & Adjustment Test 30 days NA NA 30 days 7.14.050 18 Yard Switch Locking & Adjustment Test 90 Days NA NA 90 days 7.14.050 19 Switch Restoring Feature Test (Electro Pneumatic Switches) 60 Days NA NA 90 Days 7.14.051 20 Movable Bridge Lock Test 30 days NA NA 1 Year 7.14.052 21 Roadway Element (Train Stop) Test 30 days NA NA 30 days 7.14.053 200 Inspect each device under their area of responsibility NA 1 Year NA 1 Year 7.14.056
+```
+[p084_c0002] *Note - Test #7 and #22 have been combined into test #8 and have been removed from the table.
+[p084_c0003] _Table 6-6b: Signals Equipment Tests_
+[p084_c0004] _Page 6-25_
+
+## Page 85
+
+[p085_c0001] Maintenance supervisors review reports from the Signals database related to inspection, maintenance and testing for upcoming and overdue Signal equipment. The Signals database generates the work orders. Supervisors prioritize the overdue work based on the criticality of work and overdue period along with accessibility of track. Test maximum time allowed is based on Federal Railroad Administration guidelines and best practices.
+[p085_c0002] Signal inspection, maintenance and testing reports are generated and reviewed by management. These reports along with recommended action are discussed in Signal Management bi-weekly meetings.
+[p085_c0003]
+
+```text
+SIGNALS – WORK ORDER PRIORITY LIST PRIORITY NO. PRIORITY DESCRIPTION REPAIR INTERVAL DAYS DUE 1 Potential false proceeds, emergencies, fires, floods, derailments, associated damages. Immediate 0 2 Temporary track wires. 1 month 30 3 Cables & wires (vital circuits); install ties, replace damaged cable supports, renew switch movements, frame/install switch ties, replace stop ties, broken or hanging messenger. 12 months 365 4 Cables & wires (non-vital circuits); cable jacket deterioration, switch cradles, hand throw switch lights, replace flashboards, smoke detectors, broken i cases, ladders, signal component relocations. 12 months 365 5 Signal upgrades; equipment case renewals, power cable replacement, snow melters, air line, joints, brackets, power supplies. 24 months 730 6 Signal structural; re-piping, cables without spare wires, blocks, brackets, shock mounting, hinges, door, install bells & horns, insulators, relocations, asbestos: remove/encapsulate. 24 months 730 7 Operational improvements; design changes, transportation requests, annunciators, signage, starting lights, system enhancements, etc. 24 months 730 8 Self-generated Immediate 0
+```
+[p085_c0004] _Table 6-6c: Signals Work Order Priority List_
+[p085_c0005] _Page 6-26_
+
+## Page 86
+
+### [p086_c0001] 6.2.2 Customer Environment & Facilities - Maintenance Programs/Procedures
+[p086_c0002] The Division of Customer Environment & Facilities is responsible for the Subway Stations/Facilities and is comprised of the following four Divisions Facilities, Electronic Maintenance, Stations Environment & Operations, Elevators & Escalators.
+### [p086_c0003] 6.2.2A Division of Facilities
+[p086_c0004] The Division of Facilities is responsible planning, maintenance, and improvements for all Department of Subways Facilities. The subdivision of Station Maintenance carries out non-capital improvements to subway stations in an effort to provide safe surroundings for both customers and employees alike. The subdivision of Facility Operations carries out non-capital improvements in non-station facilities, maintains fire suppression systems, HVAC systems, and preforms inspections on elevated station structures and open cut stations.
+[p086_c0005] ---The space below intentionally left blank---
+[p086_c0006] _Page 6-27_
+
+## Page 87
+
+### [p087_c0001] The Division of Facilities
+[p087_c0002] Table 6-7 below outlines the subdivision’s scheduled maintenance cycle for specific equipment:
+[p087_c0003]
+
+```text
+STATION MAINTENANCE – SCHEDULED MAINTENANCE ACTIVITIES DESCRIPTION FREQUENCY PERSONNEL ASSIGNED DOCUMENTATION Wash & Re-Lamp Station Lighting 2 Yr. Cycle Station Maintainer (Lighting) Recorded in EAM Vent Bay Inspection & Cleaning Annual Station Maintainer (Structures) Recorded in EAM Safety Painting (step risers and platform edge rubbing boards) Annual Station Maintainer (Structures) Recorded in EAM FDNY Standpipe Column Base Painting Annual Station Maintainer (Structures) Recorded in EAM Inspect Electrical Distribution & Panel Room (EDRs/EPRs) Quarterly Station Maintainer (Lighting) Recorded in EAM Overhead Inspections Bi-Annually Station Maintainer (Structures) Recorded in EAM Clean Stations Drains Annual Station Maintainer (Structures) Recorded in EAM Ejectors Every 4 Months Station Maintainer (Structures) Recorded in EAM ROW Inspections (Within Station Limits) Every 6 Months Station Maintainer (Structures) Not in EAM currently as a goal, however, will be entered in EAM as a work order until EAM Goal can be updated
+```
+[p087_c0004] _Table 6-7: Facility Operations Activities_
+[p087_c0005] _Page 6-28_
+
+## Page 88
+
+[p088_c0001]
+
+```text
+FACILITIES INSPECTION SCHEDULE DESCRIPTION FREQUENCY Open Cut Structures Inspection Annually Standpipes* (Stations/Yards) Monthly/Quarterly/Annual/5 Year Sprinklers (Escalators) Annual Sprinklers (Yards/Stations) Monthly/Quarterly/Annual/5 Year Yard Hydrants Annual Fire Pumps Weekly/Monthly/Semi-Annual/Annual Backflow Preventers Annual Domestic Pumps As needed Yard Lighting Annually Boiler Rooms Monthly Boilers Daily during heating season Vents Inspections Annual
+```
+[p088_c0002] _Table 6-8: Facilities Equipment Inspection Schedule_
+[p088_c0003] *Note: Standpipe inspections involve various systems Infrastructure maintenance intervals are outlined below:
+[p088_c0004]
+
+```text
+FACILITIES – MAINTENANCE INTERVALS Asset Maintenance Interval Title Maintaining Equipment Unit Heaters (Gas Fired Only) Annual Structure Maintainer Yard Lighting Annual Light Maintainer
+```
+[p088_c0005] _Table 6-9: Facilities Section - Maintenance Intervals_
+### [p088_c0006] 6.2.2B Escalator and Elevator Division
+[p088_c0007] Elevator maintenance for Revenue Elevators is performed on a monthly basis. Revenue Elevator maintenance activities follow a sequence which consist of Monthly, Bi- Monthly, and Quarterly. Whereas the order is Monthly, Bi-Monthly, and Quarterly, the sequence can start anywhere throughout the cycle. The cycle runs for three months and will repeat itself after the third scheduled maintenance is completed. Elevator maintenance for Non-Revenue Elevators is performed on a bi-monthly basis. Escalator maintenance activities follow a sequence which consists of Schedule A through Schedule F. Whereas the order is Schedule A through Schedule F, the sequence can start anywhere throughout the cycle. The cycle runs for six months and will repeat itself after the sixth schedule maintenance is completed. [ex: PM schedule “B” is the first maintenance scheduled, the scheduled maintenance will continue until Schedule “A” is completed.] Internal zone audits of Escalators and Elevators are conducted monthly.
+[p088_c0008] _Page 6-29_
+
+## Page 89
+
+[p089_c0001] The following are the Elevator & Escalator checklists for elevator and escalator maintenance:
+- [p089_c0002] • Escalator PM Schedule "A" Cleaning • Escalator PM Schedule "B" Controller • Escalator PM Schedule "C" Handrail Drive • Escalator PM Schedule "D" Safeties • Escalator PM Schedule "E" Lubrication/Grease/Clean • Escalator PM Schedule "F" Machinery • Revenue Hydraulic Elevator Monthly Maintenance • Revenue Hydraulic Elevator Quarterly Maintenance • Revenue Traction Elevator Monthly Maintenance • Revenue Traction Elevator Quarterly Maintenance • Non-Revenue Hydraulic Elevator Bi-Monthly Maintenance • Non-Revenue Traction Elevator Bi-Monthly Maintenance
+### [p089_c0003] 6.2.2C Electronics Maintenance Division
+[p089_c0004] The Electronics Maintenance subdivision is responsible for maintaining the DOS and DOB Telecommunications, Automated Fare Collection, Electronic, and Radio equipment system wide. Management and supervision systematically evaluate the frequency of inspections and preventive maintenance(e.g., cleaning) of equipment, and implements revisions to these schedules when necessary.
+[p089_c0005] Maintenance activities for Electronics Maintenance are performed in conjunction with scheduled inspections as outlined in Table 6-10, as well as from inspection findings, or from service requests (when failures occur). Defects that are found at the time of the inspection will generate a trouble ticket. Equipment repairs are prioritized based on the impact to safety and the operational impact on the transit system. Supervisors ensure that maintenance repairs are done in a timely fashion with the high priority equipment repairs being done first. Essential equipment that can't be repaired will be replaced so that service can continue with minimal disruptions in service.
+[p089_c0006]
+
+```text
+ELECTRONICS MAINTENANCE – EQUIPMENT INSPECTION INTERVALS Equipment Inspection Interval Title/Titles Inspecting Equipment Standard Operating Procedures Emergency Alarms Once Annually, 1st Routine Cycle (Jan-May) Telephone Maintainer SOP 8.1.1 Emergency Alarms (Under-River Tubes) Twice Annually, 1st & 3rd Cycle (Jan-May & Sept-Dec) Telephone Maintainer SOP 8.1.1 Emergency Telephones (along the Right-of-Way) Three Times Annually 1st, 2nd & 3rd Cycle (Jan-May, June-Aug & Sept-Dec) Telephone Maintainer SOP 8.1.3 Public Address (PA) Systems Twice Annually Telephone Maintainer SOP 5.1.1-5.1.6
+```
+[p089_c0007] _Page 6-30_
+
+## Page 90
+
+[p090_c0001]
+
+```text
+ELECTRONICS MAINTENANCE – EQUIPMENT INSPECTION INTERVALS Equipment Inspection Interval Title/Titles Inspecting Equipment Standard Operating Procedures PA/Customer Information Screen Systems (PA/CIS) Twice Annually Telephone Maintainer SOP 5.2 Emergency Booth Communication Systems (EBCS) Annually Telephone Maintainer SOP 6.1.1 -3.1 Customer Assistance Intercoms (CAI) Annually Telephone Maintainer SOP 6.1.1 -3.5 Change Booth Intercoms Annually Telephone Maintainer SOP 6.1.1 - 3.2 Booth Telephones Annually Telephone Maintainer SOP 6.1.1 - 3.4 HALON Systems (Total Flooding Extinguishing Systems) Twice Annually Telephone Maintainer SOP 6.1.1 - 3.3 Fire Alarm Systems Quarterly, Semi-Annually, and Annually Telephone Maintainer P/I 10.34 & TEM Manual, Section 3.1 Subway Radio Systems – Base Stations Alignments Bi-Annually Electronic Equipment Maintainer TEM Manual, Section 3.1 Subway Radio Systems – Tone Remote Control Console (TRCC) Bi-Annually Electronic Equipment Maintainer TEM Manual, Section 3.2 Subway Radio Systems – Communication Rooms Annually Electronic Equipment Maintainer SOP 2 Subway Radio Systems - ‘Synchronous Optical Networking’ (SONET) Communication Rooms Annually Electronic Equipment Maintainer SOP 2 CCTV – Subway Stations Monthly Electronic Equipment Maintainer Manual 4.1.1 CCTV – Crowd Control Monthly Electronic Equipment Maintainer Manual 4.1.1 CCTV – Station Platform Edges Monthly Electronic Equipment Maintainer Manual 4.1.1 Closed Circuit Television (CCTV) - One Person Train Operation (OPTO) Monthly Electronic Equipment Maintainer Manual 4.1.1 CCTV – Office Buildings and Facilities (Property Protection) Monthly Electronic Equipment Maintainer Manual 4.1.1 CCTV – Police Dept. (OMEGA and Security) Monthly Electronic Equipment Maintainer Manual 4.1.1 CCTV – Cameras in tubes and shafts Monthly Electronic Equipment Maintainer Manual 4.1.1 CCTV – Train Identification Monthly Electronic Equipment Maintainer Manual 4.1.1 IFU - Express Buses Every 60 Days Revenue Equipment Maintainer AFCBM-MI-02
+```
+[p090_c0002] _Page 6-31_
+
+## Page 91
+
+[p091_c0001]
+
+```text
+ELECTRONICS MAINTENANCE – EQUIPMENT INSPECTION INTERVALS Equipment Inspection Interval Title/Titles Inspecting Equipment Standard Operating Procedures IFU - Local Buses Every 60 Days Revenue Equipment Maintainer AFCBM-MI-02 IFU - SBS Buses Every 60 Days Revenue Equipment Maintainer AFCBM-MI-02
+```
+[p091_c0002]
+
+```text
+ELECTRONICS MAINTENANCE – EQUIPMENT INSPECTION INTERVALS Equipment Inspection Interval Title/Titles Inspecting Equipment Standard Operating Procedures Keene Machines Every 120 Days Coin Retriever Technician AFCBM-F-006 CCTV – Bus Depot Monthly Electronic Equipment Maintainer BEM F-05 PA – Bus Depot Monthly Electronic Equipment Maintainer BEM F-06 Bus Radio – Bus Depot Quarterly Electronic Equipment Maintainer BEM F-04 Bus Destination Signs Biennial Electronic Equipment Maintainer SOP 2.5.1 Autonomous Farecard Access System (AFAS) Every 120 Days Revenue Equipment Maintainer AFCSM-WI-026 Booth Terminal (BT) Every 60 Days (Reduced Fare Transaction booths only) Revenue Equipment Maintainer AFCSM-WI-017 High Entry/Exit Turnstile (HEET) Every 180 Days Revenue Equipment Maintainer AFCSM-WI-025 MetroCard Express Machine (MEM) Every 180 Days Revenue Equipment Maintainer AFCSM-WI-016 Turnstile Every 180 Days Revenue Equipment Maintainer AFCSM-WI-024
+```
+[p091_c0003] _Table 6-10: Electronics Maintenance – Equipment Inspections_
+[p091_c0004] _Page 6-32_
+
+## Page 92
+
+### [p092_c0001] Central Electronics Shop (CES) Test Equipment Inspections
+[p092_c0002] The CES Calibration Lab repairs and calibrates CES in-house test equipment as well as test equipment for other sub-divisions within EMD. All CES equipment used to process, repair, or adjust electronic train components are inspected on a scheduled basis by the Shop’s Calibration Lab. CES has established and produced various ‘Technical Maintenance Procedures’ for the repair and calibration of units, components and equipment. Management ensures that critical CES inspection and maintenance routines are done correctly and in accordance with prescribed procedures.
+### [p092_c0003] 6.2.3 Staten Island Railway (SIR) Maintenance Programs/Procedures
+[p092_c0004] Staten Island Railway’s equipment (including Fire Extinguisher and Cranes) are subject to regular safety-related inspections and testing in accordance with applicable laws/codes, and internal rules and procedures (MW-1 Standards). SIR’s equipment inspection (including Fire Extinguisher and Cranes) and testing activities are outlined in the tables below.
+[p092_c0005] Railcar maintenance work orders are generated in Rolling Stock Maintenance Information System (RSMIS) subsequent to inspections conducted via SIR’s Scheduled Maintenance Inspection (SMI) Program. Railcar ‘Inspection Repair Sheets’ identify defects and specify necessary maintenance. Work orders are also generated via defects identified in Train Dispatcher Reports.
+[p092_c0006] All SIR units are subject to a maintenance program that is specifically designed and established for each particular section. Supervisors conduct periodic maintenance audits to evaluate existing programs/procedures. Table 6-11 to Table 6-20 outlines SIR’s equipment maintenance program.
+[p092_c0007]
+
+```text
+SCHEDULE MAINTENANCE SYSTEM (SMS) – Mechanical Dept. (REVENUE TRAINS) Equipment Maintenance Frequency 1. Air Brake/Brake Valve SMS 4 Years 2. Master Controller SMS 6 Years 3. TBU Heads Replace SMS 6 Years 4. TBU Body Inspected SMS 6 Years 5. Truck SMS 6 Years 6. Battery SMS 6 Years 7. Coupler SMS 12 Years 8. Shoe Beam 6 Years 9. Trip Cock 6 Years
+```
+[p092_c0008] _Table 6-11: SIR Schedule Maintenance Systems (SMS) Mechanical Dept. (Revenue Trains)_
+[p092_c0009] _Page 6-33_
+
+## Page 93
+
+[p093_c0001]
+
+```text
+SCHEDULE MAINTENANCE SYSTEM (SMS) – Mechanical Dept. (NON-REVENUE TRAINS) Equipment Maintenance Frequency 1. Air Brake/Brake Valve SMS 4 Years 2. Master Controller SMS 12 Years 3. TBU Heads Replace SMS 12 Years 4. TBU Body inspected SMS 12 Years 5. Truck SMS 12 Years 6. Battery SMS 6 Years 7. Coupler SMS 12 Years 8. Shoe Beam 12 Years
+```
+[p093_c0002] _Table 6-12: SIR Schedule Maintenance Systems (SMS) Non-Revenue Trains_
+[p093_c0003]
+
+```text
+SCHEDULE MAINTENANCE SYSTEM (SMS) – Mechanical Dept. (SMI) Mechanical Division Forms Frequency Inspection Repair Sheet Generated from Schedule Maintenance (SMI) As Needed in Hexagon
+```
+[p093_c0004] _Table 6-13: SIR Schedule Maintenance Inspection (SMI) Mechanical Division_
+[p093_c0005] ---The space below intentionally left blank---
+[p093_c0006] _Page 6-34_
+
+## Page 94
+
+[p094_c0001]
+
+```text
+MOW – ELECTRICAL (POWER) SCHEDULED MAINTENANCE INSPECTION (SMI) Forms/Checklists Frequency 1. Transformer Maintenance Annually 2. DC Switchgear 6 months 3. High Tension Vault Annually 4. Ground Test Device Annually 5. SCADA/PLC Maintenance 6 months 6. ATS Switchgear 2 years 7. Rectifier Maintenance 6 months 8. AC and DC Distribution Panel 2 years 9. High Tension Breaker Maintenance Annually
+```
+[p094_c0002] _Table 6-14: SIR MOW Electrical (Power) Schedule Maintenance_
+[p094_c0003]
+
+```text
+SIGNALS MAINTENANCE Equipment Frequency Internal Switch Maintenance (Switch Machine) Quarterly CIL/ML Inspection Quarterly CIL/ML Maintenance Monthly Track Case Inspection Annual Switch Heater Inspection Seasonal 2X per year
+```
+[p094_c0004] _Table 6-15: SIR MOW Signals Schedule Maintenance_
+[p094_c0005]
+
+```text
+INFRASTRUCTURE MAINTENANCE Equipment Frequency 1. Fire Extinguisher (W96) Annually 2. Boiler Maintenance Seasonal 3. Backflow Preventer Annually 4. Reduce Pressure Zone (RPZ) Rebuilder 5 years 5. Station Inspection/Maintenance Monthly
+```
+[p094_c0006] _Table 6-16: SIR MOW Infrastructure Schedule Maintenance_
+[p094_c0007] _Page 6-35_
+
+## Page 95
+
+[p095_c0001]
+
+```text
+TRACK MAINTENANCE/MOW/SIR TRACK Forms Frequency 1. Condition Survey (Quadrennial Track Inspections) Every 4 years 2. Supervisors maintenance audits Periodic
+```
+[p095_c0002] _Table 6-17: SIR MOW Track Schedule Maintenance_
+[p095_c0003]
+
+```text
+EEMD ELECTRICAL Equipment Frequency 1. Air Conditioning Seasonally- Monthly 2. HVAC Seasonal 3. Station Lighting Maintenance Monthly 4. Joint CIL/ML Monthly 5. Emergency Electrical Generators (Terminal and Tower A) Monthly as Needed
+```
+[p095_c0004] _Table 6-18: SIR MOW EEMD Electrical Schedule Maintenance_
+[p095_c0005]
+
+```text
+EEMD Electronics Equipment Frequency 1. Automated Fare Control (AFC) Equipment (St. George Terminal/Tompkinsville) Monthly and Quarterly 2. Joint CIL/ML Monthly 3. CCTV Bi-monthly
+```
+[p095_c0006] _Table 6-19: SIR MOW EEMD Electronics Schedule Maintenance_
+[p095_c0007]
+
+```text
+Third Rail Operations Equipment Frequency 1. Negative Cable Annually 2. Third Rail Heaters Seasonal x 2
+```
+[p095_c0008] _Table 6-20: SIR MOW Third Rail Operations Schedule Maintenance_
+[p095_c0009] _Page 6-36_
+
+## Page 96
+
+### [p096_c0001] 6.2.4 Equipment Inspection and Testing Program
+[p096_c0002] DOS divisions have standardized inspection/testing programs which have been developed and implemented to help ensure safe work environments and preserve the integrity of the department's equipment.
+### [p096_c0003] 6.2.4A Service Delivery – Field Operations
+[p096_c0004] Train Operators are governed by School Car instructions or induction training procedures titled “ Preparing Trains for Service ” when preparing trains stored in yards and sidings for customer service. Train crews check trains for defects that could compromise customer and property safety. Train Operators perform visual checks at the terminals following NYC Transit Rules and Regulations rule 9.02(m) which states:
+[p096_c0005] They must see that on the front end of the train the safety chain is in position, the storm door is closed and locked and the proper end destination and route signs, marker and running lights are illuminated and displayed. They must also see that the proper side destination signs are illuminated.
+[p096_c0006] Service Delivery's Hazard Management Process is described below:
+[p096_c0007] Any defect found during a train inspection in the yard must immediately be reported to the Dispatcher who then informs DCE to have the condition rectified. The Dispatcher determines if the train will be put into service depending on the severity of the defect found and whether it can/should be corrected immediately.
+[p096_c0008] The Train Operator (T/O) and Conductor (C/R) may isolate a car (i.e., close it off from passenger access) with the authorization of the Operations Control Center (OCC). The conditions under which this may occur include but are not limited to:
+- [p096_c0009] • serious problem reported by customer(s) • unsanitary condition • broken/damaged glass • missing seat(s)
+[p096_c0010] The T/O or C/R may take the train out of passenger service with authorization from the OCC. The conditions under which this may occur include, but are not limited to:
+- [p096_c0011] • serious problem reported by customer(s) • missing window/door glass • unresolved door problem • poor braking train • flat wheel(s) • loss of indication • inoperable horn or headlight(s)
+[p096_c0012] _Page 6-37_
+
+## Page 97
+
+[p097_c0001] Train Service Supervisors (TSS) assigned to areas with Jumper Cables & Storage boxes will make periodic visual inspections of jumper cables (once every six months) and report their conditions to their General Superintendent’s Office. When examining Jumper Cables, TSSs will perform cursory inspection to see if cables exhibit any obvious defects such as knots, kinks, cracks, or bare spots in insulation, cracked or broken handles, damaged or loose metal tips, or damaged/defective retractable terminal insulated sleeves. All contact and jumper cables boxes are required to be in compliance with the DOS Operation Directive (Contact Rail Jumper Cables & Storage Boxes, Issued 08/02/12).
+### [p097_c0002] 6.2.4B MOW Equipment Inspection and Testing Programs
+### [p097_c0003] I. Crane
+[p097_c0004] The following is a summary of the MOW Crane Inspection Program:
+[p097_c0005]
+
+```text
+Equipment Type Daily Pre-Use Inspection Frequency of Periodic Inspection Inspection Title or Contractor Mobil Yes Monthly/Bi-annually TEM Overhead Crane - Track Yes Monthly/Bi-annually TEM Overhead Crane – Power Yes 3 Year Certified Individual Overhead Crane – Power (Pitkin, Atlantic & Jamaica Yard) Yes Monthly/Quarterly/Semi-Annual/Annual Certified Individual, Contractor* Pedestal Yes** 120-day Insp. Cycle*** TEM, CRNOP Rail Car Yes** 120-day Insp. Cycle*** TEM, CRNOP
+```
+[p097_c0006] _Table 6-21: Crane Inspections_
+[p097_c0007] *Moye Handling Systems performs quarterly, semi-annual, and annual OSHA inspections; MOW personnel perform daily inspections
+[p097_c0008] **Periodic inspections of the Rail Car & Pedestal cranes are performed by DCE maintainers and the daily pre-use inspection is performed by a Division of Track maintainer. NYCT personnel are trained to follow OSHA regulations for inspections.
+[p097_c0009] ***The 120-day inspection consists of car body component inspection such as wheels, axles, brakes, bearings, couplers, drawbars, suspension, floorboards, lighting and electrical as well as an overall visual inspection of the car. This inspection is performed by DCE Car Inspectors.
+[p097_c0010] In conjunction Track Equipment Maintainers perform the following inspection on a 120 day schedule. This consists of inspecting the Crane components such as but not limited to, the wire rope, hydraulic cylinders, boom sections, sheaves, bearings, wear pads, travel motors / gears and all safety systems, electrical and lighting, emergency backup systems, engine, belts / hoses and Crane functions. An overall service is done at this time also. It consists of oil and fluid changes, filter changes, greasing and any repairs that may need attention. This inspection and service is done by Track Equipment Maintainers who work out of Coney Island Overhaul shop and are part of Car Equipment. When inspection and servicing is complete a load test is done with a weight of 110% of the Cranes lifting capacity. MOW inspection is done by MOW personnel. It could be performed by Track Equipment Maintainers daily which we refer to as yard check or by the Crane Operator before operation as a pre-trip inspection. This inspection focuses mainly on
+[p097_c0011] _Page 6-38_
+
+## Page 98
+
+[p098_c0001] safety systems, functions and an overall visual inspection ensuring the crane is safe to operate. DCE inspections do not occur daily on every Crane.
+### [p098_c0002] II. Track
+[p098_c0003] Track inspections of trackways and associated equipment are conducted in accordance with MOW's current MW-1 'Track Standards Manual'. Track is currently utilizing the INFOR/EAM centralized database system to records all defects and repairs. Track and track-related equipment inspections are described in Table 6-22.
+[p098_c0004]
+
+```text
+TRACK INSPECTION SCHEDULE WITH GOVERNING PROCEDURES Description Track Inspector Supervisor Superintendent / Manager Other Procedure Mainline Tracks Twice Per Week Every 14 days Semi Annual N/A Section 102.2 of MW-1 Yard Tracks Monthly Quarterly Semi Annual N/A Section 102.2 of MW-1 Ultrasonic Rail Flaw Detection (Mainline Tracks) N/A N/A N/A At Least Three Times Per Year by a rail flaw detector car Section 102.3 of MW-1 Track Geometry N/A N/A N/A At Least Twice Per Year by Track Geometry Car Section 102.4 of MW-1 Mainline Third Rail Height, Gauge, & Clearance N/A N/A N/A Once Per Year by Track Geometry Car Section 102.4 of MW-1 Mainline Third Rail Equipment Inspections N/A Annually Random Audit Inspections Only if needed FMI # 1028 Yard Third Rail Equipment Inspections N/A Every two years N/A Only if needed FMI # 1027 Circuit Breakers (inspected by Power Dist. Maintainer) CBH Above Ground – 120 days N/A N/A N/A FMI #-1038 CBH Underground – 60 days Mainline Switches and Joints (in conjunction w/ Signals Section) N/A Monthly & Whenever Failures Occur Annually N/A Section 102.6 of MW-1
+```
+[p098_c0005] _Page 6-39_
+
+## Page 99
+
+[p099_c0001]
+
+```text
+TRACK INSPECTION SCHEDULE WITH GOVERNING PROCEDURES Description Track Inspector Supervisor Superintendent / Manager Other Procedure Yard Switches and Joints N/A Quarterly N/A N/A Section 102.6 of MW-1 Under River Tube Inspections (by Third Rail Ops) N/A N/A N/A Every Two Months FMI # 1029 Rail Lubricators N/A N/A N/A Twice a Year MW1
+```
+[p099_c0002] _Table 6-22: Track and Related-Equipment Inspections_
+### [p099_c0003] Emergency Inspections:
+[p099_c0004] In the event of fire, flood, severe storm, or other occurrence (which might have resulted in damaged track and/or structures) an emergency inspection of the affected track and/or structure(s) is made as soon as possible following the occurrence in accordance with Section 102.5 of MW-1 ‘Track Standards Manual’.
+### [p099_c0005] Track’s Hazard Management Process is described below:
+[p099_c0006] Track inspections must conform to MW-1 Track Standards, and all track defects are corrected in appropriate order; based on the severity (as defined by MW-1 Track Standards). All defective rails identified during ultrasonic testing are clearly marked on each side of the rail web and base. Inspection records (maintained for two years) indicate the nature of defects, action taken and location of the flaw. Serious defects found during third rail height and gauge inspections are referred to the Chief Officer of Power and the Assistant Chief Third Rail Officer, Third Rail Operations for immediate safety risk mitigation.
+### [p099_c0007] III. Infrastructure
+[p099_c0008] The Infrastructure section’s equipment inspections can be found in Table 6-23.
+### [p099_c0009] V. Power (Electrical & Third Rail )
+[p099_c0010] Equipment inspections within the Subdivision of Electrical are conducted by Power Maintainers, as well as Supervisors and Managers (Superintendents and General Superintendents). The inspection and subsequent repairs (when necessary) are conducted in accordance with the procedures and schedules outlined in Tables 6-23 through 6-24.
+[p099_c0011] Power section employees inspect and maintain DOS’s electrical infrastructure and power systems.
+- [p099_c0012] • All remote-controlled power equipment is operated through a Supervisory Control and Data Acquisition (SCADA) system. The SCADA system allows the operators to monitor the status of all power equipment.
+[p099_c0013] _Page 6-40_
+
+## Page 100
+
+- [p100_c0001] • Power District Operators in conjunction with the Power Control Center System Operator receive indication that third rails are alive or de-energized, as well as monitor substation traction and signal loads. SCADA is operationally checked on an hourly basis. • Remote SCADA unit inspections are performed on a semi-weekly basis, while remote SCADA operation testing is performed on a monthly basis.
+[p100_c0002]
+
+```text
+TRACK INSPECTION SCHEDULE WITH GOVERNING PROCEDURES Description Track Inspector Supervisor Superintendent / Manager Other Procedure Mainline Third Rail Height, Gauge, & Clearance N/A N/A N/A Once Per Year by Track Geometry Car Section 102.4 of MW-1 Mainline Third Rail Equipment Inspections N/A Annually Random Audit Inspections Only if needed FMI # 1028 Yard Third Rail Equipment Inspections N/A Every two years N/A Only if needed FMI # 1027 Circuit Breakers (inspected by Power Dist. Maintainer) CBH Above Ground – 120 days N/A N/A N/A FMI #-1038 CBH Underground – 60 days Under River Tube Inspections (by Third Rail Ops) N/A N/A N/A Every Two Months FMI # 1029
+```
+[p100_c0003] _Table 6-23_
+[p100_c0004]
+
+```text
+POWER SUBSTATION – INSPECTION INTERVALS EQUIPMENT Electrical Equipment Maintenance (NEC, 2002) NYCT Inspection Interval Switchgear Device (52) Oil 8.8.7 Weekly Dry 1 months ≥25 Years Weekly
+```
+[p100_c0005] _Page 6-41_
+
+## Page 101
+
+[p101_c0001]
+
+```text
+Rectifier <25 Years 12.4.1 1 month ≥25 Years weekly Transformer Oil Water cooled 9.2.4 Weekly Oil Air cooled Bi-weekly Dry 9.3.4 1 month ≥25 Years Weekly DC Line Up <25 Years 8.8.7 1 month ≥25 Years Weekly
+```
+[p101_c0002] _Table 6-24: Power Substation – Inspection Intervals Subdivision of Electricals' Hazard_
+[p101_c0003] _Page 6-42_
+
+## Page 102
+
+[p102_c0001]
+
+```text
+POWER SECTION INSPECTIONS TEST No: EQUIPMENT INSPECTION / TEST TITLE OF INSPECTOR & FREQUENCY PROCEDURE NO. / CHECKLIST Maintainer Unit Supervisor Manager Max. Time Allowed Between Inspections 2 Oil Filled Transformers (Substation) Weekly Substation Bi-monthly Annually 90 Days FO-801-T1 3 Dry Transformers (Substation) Monthly Substation Bi-monthly Annually 2 Years FO-801-T1 4 Diode Protection (Substation) Monthly Substation Bi-monthly Annually 90 Days FO-801-T1 5 Fire Extinguishers Bi-Annually Substation Bi-monthly Annually 2 Months FMI - 29 6 Rubber Gloves (Electrician's) Monthly Substation Bi-monthly Annually 2 Months FMI - 15 7 Battery Ground Readings Monthly Substation Bi-monthly Annually 2 Months Testing Schedule Report 8 First Aid Kits Monthly Substation Bi-monthly Annually 2 Months FMI - 20 9 Control Room Monthly Substation Bi-monthly Annually 2 Months FO-801-T1 11 DC Feeder Breaker Test Monthly Substation N/A N/A 2 Months Testing Schedule Report 12 Emergency Alarm (EA) Panel Test Monthly Substation N/A N/A 2 Months Testing Schedule Report 13 Tube Shell Test Monthly Substation N/A N/A 2 Months Testing Schedule Report 14 Local Emergency Control (LEC) Test Monthly Substation N/A N/A 2 Months Testing Schedule Report
+```
+[p102_c0002] _Table 6-25: Power Section Equipment Inspections_
+[p102_c0003] _Page 6-43_
+
+## Page 103
+
+### [p103_c0001] Power Hazard Management Process:
+[p103_c0002] Defects identified during equipment inspections/testing are prioritized in accordance with Table 6-26.
+[p103_c0003]
+
+```text
+POWER SECTION– WORK ORDER PRIORITY LIST PRIORITY NO. PRIORITY DESCRIPTION REPAIR INTERVAL DAYS DUE 1 Loss of Supervisory Control; Fiber network, blown fuses, defective Supervisory components Immediate 0 2 Emergency Alarms; Wiring, Communication Cables, Relays, Timer, Switches, Fuses, Resistors. Immediate 0 3 Emergencies (Fires, explosions, Floods) Immediate 0 4 Frequency Converters; Trouble Shooting, Inspection, Delta Modules, Power Supplies, Capacitors, Relays, Fans, Filters, and associated equipment. Immediate 0 5 DC Breaker; Change main contacts, Close Coil, Trip Coil, Arc Chutes, Relays, Switches, Resistors, Fuses, Meters. 1 Week 7 6 Maintenance; Critical, General, Routine, Inspections, Monthly Testing 1 Month 30 7 DC Equipment Failure (Rectifier, High Tension Breaker, Main Transformer), Ground Fault, Relays, Diodes, Diode Fuses, Diode Fail Indictors, Temperature Sensors, Contactors, Fans, AC & DC Bus, Circuit Breakers, Batteries. 6 Months 180 8 Control Cable Faults, Positive & Negative Cables, High Tension Cables; Isolating and replacing cable sections. 6 Months 180 9 Substation Structures; Roof, Pointing Brick, Doors, Vent Fans, Vents, Conduits, Plumbing, Lighting, Pumps 6 Months 180 10 Operational Improvements; Signage, Telephones, Design Changes, Mimic Graphics, PLC, Equipment Layout. 24 Months 730 11 SELF GENERATED Immediate 0
+```
+[p103_c0004] _Table 6-26: Power Section’s Hazard Management Process_
+[p103_c0005] _Page 6-44_
+
+## Page 104
+
+### [p104_c0001] VI. Signals
+[p104_c0002] Equipment inspections within the Subdivision of Signals are conducted by Signal Maintainers, as well as Supervisors and Managers (Superintendents and General Superintendents). The inspection and subsequent repairs (when necessary) are conducted in accordance with the procedures and schedules outlined in the table below.
+[p104_c0003] Equipment inspections conducted by the Signals section include visual inspections and tests of signals and switches. Switch inspections are also conducted jointly with the Track section in accordance with the schedule outlined in Table 6-27.
+### [p104_c0004] Signals Hazard Management Process:
+[p104_c0005] Defects identified during equipment inspections/testing are prioritized in accordance with Table 6-27.
+[p104_c0006]
+
+```text
+SIGNALS SECTION – WORK ORDER PRIORITY LIST PRIORITY No. PRIORITY DESCRIPTION REPAIR INTERVAL DAYS DUE 1 Potential false proceeds, emergencies, fires, floods, derailments, associated damages. Immediate 0 2 Temporary track wires. 1 month 30 3 Cables & wires (vital circuits); install ties, replace damaged cable supports, renew switch movements, frame/install switch ties, replace stop ties, broken or hanging messenger. 12 months 365 4 Cables & wires (non-vital circuits); cable jacket deterioration, switch cradles, hand throw switch lights, replace flashboards, smoke detectors, broken signal cases, ladders, signal component relocations. 12 months 365 5 Signal upgrades; equipment case renewals, power cable replacement, snow melters, airline, joints, brackets, power supplies. 24 months 730 6 Signal structural; re-piping, cables without spare wires, blocks, brackets, shock mounting, hinges, door, install bells & horns, insulators, relocations, asbestos: remove/encapsulate. 24 months 730 7 Operational improvements; design changes, transportation requests, annunciators, signage, starting lights, system enhancements, etc. 24 months 730 8 Self-generated Immediate 0
+```
+[p104_c0007] _Table 6-27: Signal Section’s Hazard Management Process_
+[p104_c0008] _Page 6-45_
+
+## Page 105
+
+### [p105_c0001] 6.2.4C DCE Inspection and Testing Programs
+[p105_c0002] The following is a summary of the DCE Crane Inspection Program. Monthly inspections are conducted by NYCT with certified personnel and yearly inspections are performed by a certified Crane Manufacturers Association of America (CMAA) contractor. All inspections are based on OSHA section 1910.179 and 1910.184. All NYCT inspections are performed by certified hourly personnel and approved by certified Supervisors (MS1). Yearly CMAA inspections are currently performed under contract by Sissco/Permadur Industries.
+[p105_c0003]
+
+```text
+Equipment Type Daily Pre-Use Inspection Frequency of Periodic Inspection* Inspection Title or Contractor** Crane, Jib Yes Monthly/Yearly (CMAA) MS1/Sissco Permadur Crane, Hoist Yes Monthly/Yearly (CMAA) MS1/Sissco Permadur Crane, Bridge Yes Monthly/Yearly (CMAA) MS1/Sissco Permadur Pedestal Yes* Monthly/Yearly Cycle TEM, CRNOP Rail Car Yes* Monthly/Yearly Cycle TEM, CRNOP
+```
+[p105_c0004] _Table 6-29: Crane Inspections_
+[p105_c0005] * Periodic inspections of the Rail Car & Pedestal cranes are performed by DCE maintainers and the daily pre-use inspection is performed by a Division of Track maintainer.
+[p105_c0006] Note: A 120-day inspection consists of car body component inspection such as wheels, axles, brakes, bearings, couplers, drawbars, suspension, floorboards, lighting and electrical as well as an overall visual inspection of the car. This inspection is performed by DCE Car Inspectors.
+[p105_c0007] In conjunction Track Equipment Maintainers perform the following inspection on a 120 day schedule. This consists of inspecting the Crane components such as but not limited to, the wire rope, hydraulic cylinders, boom sections, sheaves, bearings, wear pads, travel motors / gears and all safety systems, electrical and lighting, emergency backup systems, engine, belts / hoses and Crane functions. An overall service is done at this time also. It consists of oil and fluid changes, filter changes, greasing and any repairs that may need attention. This inspection and service is done by Track Equipment Maintainers who work out of Coney Island Overhaul shop and are part of Car Equipment. When inspection and servicing is complete a load test is done with a weight of 110% of the Cranes lifting capacity. MOW inspection is done by MOW personnel. It could be performed by Track Equipment Maintainers daily which we refer to as yard check or by the Crane Operator before operation as a pre-trip inspection. This inspection focuses mainly on safety systems, functions and an overall visual inspection ensuring the crane is safe to operate. DCE inspections do not occur daily on every Crane.
+[p105_c0008] _Page 6-46_
+
+## Page 106
+
+[p106_c0001]
+
+```text
+SPECIAL EQUIPMENT Pedestal Crane and Crane Car 120 days Daily/monthly/annual Signal Dolly 120days +/- 15 Tamper 120 days +/- 15 Ballast Regulator 120 days +/- 15 Jet Blower 120 days +/- 15 Snow Thrower 365 days +/- 30 Rail Grinder 365 days +/- 30
+```
+[p106_c0002] _Table 6-28: Crane & Equipment Inspections_
+[p106_c0003] DCE is responsible for inspection programs (including pre-service inspection) for both revenue and non-revenue rail vehicles. Inspection programs for revenue vehicles are covered in work manuals for specific car classes (make and model) which have been developed according to official NYCT specifications. Each work manual explains all maintenance activities required during a car's scheduled maintenance inspection (SMI) cycle. The manuals include vehicle drawings, step-by-step maintenance instructions and troubleshooting guidelines. All work manuals follow identical NYCT inspection criteria and are formatted in a similar fashion as to facilitate ease of use among users. Tables 6-29 thru 6-33 outline the items inspected as part of the SMI cycle for specific car classes. In addition, DCE performs scheduled maintenance inspections of non-revenue cars at the 207th Street, Corona and Pelham Diesel Shops as shown in Table 6-34.
+[p106_c0004] The division has also developed inspection programs for a variety of other equipment located in maintenance and overhaul shops (including such items as cranes, jacks, and forklifts). DCE equipment inspection programs are conducted in accordance with OSHA and ANSI standards, as well as internal DCE procedures and checklists. The following tables outlines DCE's equipment inspection activities and Location specific checklists. Some inspections at certain facilities are included in the divisions Facility Maintenance Program. Refer to document MCD 12-01, Revision A (Page 6-58).
+[p106_c0005] _Page 6-47_
+
+## Page 107
+
+### [p107_c0001] DIVISION OF CAR EQUIPMENT (DCE) – SCHEDULED MAINTENANCE INSPECTIONS CAR CLASSES R46 TO R68
+[p107_c0002]
+
+```text
+Equipment (Propulsion) Inspection Interval Title Inspecting Equipment Procedure Traction Motor 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Battery and Battery Box 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Control Group 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Converter 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Equipment (Under Car) Inspection Interval Title Inspecting Equipment Procedure Trip Cock 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Drain Cocks - Tanks and Reservoirs 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Cut-Out Cock, Hoses and Pipes 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Coupler Head, Electric Portion & Draw Bar Assembly 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Air Brake System 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Air Supply Unit 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Truck Brake Equipment 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Equipment (Car Body) Inspection Interval Title Inspecting Equipment Procedure HVAC System 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Door Control 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual
+```
+[p107_c0003] _Page 6-48_
+
+## Page 108
+
+[p108_c0001]
+
+```text
+DIVISION OF CAR EQUIPMENT (DCE) – SCHEDULED MAINTENANCE INSPECTIONS CAR CLASSES R46 TO R68 Car body 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Panels 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Lights and Lighting Inverter 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Communication System (PA) 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Undercar Cleaning 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual
+```
+[p108_c0002] _Table 6-29: DCE Scheduled Maintenance Inspections – R46 to R68_
+[p108_c0003]
+
+```text
+DIVISION OF CAR EQUIPMENT (DCE) – SCHEDULED MAINTENANCE INSPECTIONS - CAR CLASSES R142 TO R188 Equipment (Propulsion) Inspection Interval Title Inspecting Equipment Procedure Current Collectors 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Traction Motor 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Battery and Battery Box 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Control Group 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Traction Inverter (BTCP) 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Master Controller 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Trip Valves 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Drain Valves, Tanks and Reservoirs 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual
+```
+[p108_c0004] _Page 6-49_
+
+## Page 109
+
+[p109_c0001]
+
+```text
+DIVISION OF CAR EQUIPMENT (DCE) – SCHEDULED MAINTENANCE INSPECTIONS - CAR CLASSES R142 TO R188 Equipment (Propulsion) Inspection Interval Title Inspecting Equipment Procedure Cut-Out Valves, Hoses and Pipes 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Coupler System 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Air Brake System 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Air Supply Unit 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Truck Brake Equipment 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Truck and Wheels 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual
+```
+[p109_c0002] _Table 6-30: DCE Scheduled Maintenance Inspections – R142 to R188_
+[p109_c0003]
+
+```text
+DIVISION OF CAR EQUIPMENT (DCE) – SCHEDULED MAINTENANCE INSPECTIONS - CAR CLASSES R142 TO R188 Equipment (Car Body) Inspection Interval Title Inspecting Equipment Procedure HVAC System 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Door Control 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Car body 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Panels 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Lighting System 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Communication System 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Undercar Cleaning 68 to 78 days or 10,000 to 12,000 miles Car Maintainer Car Specific Work Manual Car Case History - RSMIS Report As Required Car Maintainer Car Specific Work Manual
+```
+[p109_c0004] _Table 6-31: DCE Scheduled Maintenance Inspections – R142 to R188_
+[p109_c0005] _Page 6-50_
+
+## Page 110
+
+[p110_c0001]
+
+```text
+Scheduled Maintenance Inspections (Non-Revenue Cars) 207 th Street MS, Corona and Pelham Diesel Shops Non-Revenue Cars Interval Title Inspecting Equipment Locomotive (Diesel & Electric) 92 days +/- 10 Car Maintainer Reach (R21), Weld (R56), Hopper (R80, 116), CWR Handlers (R17, 21, 22), Tank (R66), Pump (R65), Deicer (R17, 21, 22) 180 days +/- 20 Car Maintainer Flat Cars (R20, R48, R49, R51A/A, R58, R72, R101, R141) – Pelham Diesel 180 days +/- 20 Car Maintainer Flat Cars Refuse (R58) – Corona & 207 th St. MS 180 days +/- 20 Car Maintainer Signal Supply Car (R74) 60 days +/- 00 Car Maintainer Rider Car (R33m) – Pelham Diesel 180 days +/- 20 Car Maintainer Work Motor (R33s) – corona and 207 th St. MS 68-78 days Car Maintainer Refuse Collection (R134) 68-78 days Car Maintainer
+```
+[p110_c0002] _Table 6-32: DCE Scheduled Maintenance Inspections – Non-Revenue Cars_
+[p110_c0003] _Page 6-51_
+
+## Page 111
+
+[p111_c0001]
+
+```text
+ASSET RESPONSIBLE PARTY DAILY WEEKLY MONTHLY QUARTERLY SEMI-ANNUALLY ANNUALLY TITLE OF INSPECTOR COMMENTS DOCUMENTATION AERIAL WORK PLATFORMs, DCE ✓ HOURLY AND APPROVED BY SUPERVISOR Visual Check / System Work Order (W/O) for Facility Maintenance Program (FMP) AIR COMPRESSOR DCE ✓ ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Also Performed By Contractor System W/O for FMP / Contractor Invoice for Non-FMP BELT SANDING MACHINE & DUST COLLECTOR DCE ✓ HOURLY AND APPROVED BY SUPERVISOR Scheduled System W/O for FMP / Visual Check Before Use CLEANING MACHINE, STEAM DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Scheduled System W/O for FMP / Visual Check Before Use CAR WASH DCE ✓ ✓ ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR System W/O for FMP / Manual Check List for Non-FMP CRANE & HOIST DCE ✓ ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Also Performed By Contractor System W/O for FMP / Manual Check List & Contractor Invoice for Non-FMP DRILL PRESS DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Visual Check/ System W/O for FMP EYE WASH & EMERGENCY SHOWER DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR System W/O for FMP / Check List for Non-FMP FIRE EXTINGUISHER DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR System W/O for FMP/ Check List for Non-FMP FORKLIFT DCE ✓ HOURLY AND APPROVED BY SUPERVISOR Also Performed By Contractor System Work Order (W/O) for Facility Maintenance Program (FMP) / Contractor Invoice for Non-FMP FUME EXTRACTOR DCE ✓ ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Visual Check / System W/O for FMP
+```
+[p111_c0002] _Table 6-33 : DCE Equipment Inspections_
+
+## Page 112
+
+[p112_c0001]
+
+```text
+ASSET RESPONSIBLE PARTY DAILY WEEKLY MONTHLY QUARTERLY SEMI-ANNUALLY ANNUALLY TITLE OF INSPECTOR COMMENTS DOCUMENTATION GENERATORS DCE/MOW HOURLY AND APPROVED BY SUPERVISOR Maintained by Infrastructure Visual Check GRINDERS DCE ✓ HOURLY AND APPROVED BY SUPERVISOR Visual Check / System W/O for FMP HIGH PRESSURE WASHER DCE ✓ HOURLY AND APPROVED BY SUPERVISOR Visual Check / System W/O for FMP HORIZONTAL BANDSAW DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Visual Check / System W/O for FMP HYDRAULICS LIFTS, & JACKS DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Also Performed By Contractor System W/O for FMP / Manual Check List & Contractor Invoice for Non-FMP INDUSTRIAL VEHICLE DCE ✓ ✓ ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Visual Check / System W/O for FMP LATHE DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Visual Check / System W/O for FMP MULTI-PROCESSOR WELDER DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Visual Check / System W/O for FMP MULTIPURPOSE SPREADER DCE ✓ HOURLY AND APPROVED BY SUPERVISOR Also Performed By Contractor Visual Check / System Work Order (W/O) for Facility Maintenance Program (FMP) MILLING MACHINE DCE ✓ HOURLY AND APPROVED BY SUPERVISOR Visual Check / System W/O for FMP SCRUBBER, FLOOR DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Visual Check / System W/O for FMP
+```
+[p112_c0002] _Table 6-33 (Continued) : DCE Equipment Inspections_
+[p112_c0003] _Page 6-53_
+
+## Page 113
+
+[p113_c0001]
+
+```text
+ASSET RESPONSIBLE PARTY DAILY WEEKLY MONTHLY QUARTERLY SEMI-ANNUALLY ANNUALLY TITLE OF INSPECTOR COMMENTS DOCUMENTATION SCRUBBER, RIDE-ON DCE ✓ ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Visual Check / System W/O for FMP SCRUBBER, WALK-BEHIND DCE ✓ ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Visual Check / System W/O for FMP SWEEPER, RIDE-ON FLOOR DCE ✓ ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Visual Check / System W/O for FMP SWEEPER, WALK-BEHIND FLOOR DCE ✓ ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Visual Check / System W/O for FMP TABLE SAW DCE ✓ ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Visual Check / System W/O for FMP TANK (AST 385 GALLON WASTE OIL) DCE ✓ HOURLY AND APPROVED BY SUPERVISOR Visual Check / System W/O for FMP 3rd RAIL TROLLEY AND AUXILIARY BUGS CONTROLLER DCE ✓ HOURLY AND APPROVED BY SUPERVISOR System W/O for FMP / Manual Check List or Supervisor Log for Non-FMP VERTICAL BANDSAW DCE ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Visual Check WHEEL TRUING MACHINE DCE ✓ ✓ ✓ HOURLY AND APPROVED BY SUPERVISOR Also Performed By Contractor System W/O for FMP / Manual Check List & Contractor Invoice for Non-FMP
+```
+[p113_c0002] _Table 6-33 (Continued): DCE Equipment Inspections_
+[p113_c0003] _Page 6-54_
+
+## Page 114
+
+### [p114_c0001] Corona Maintenance Facility and Car Wash PM Frequency Table
+[p114_c0002]
+
+```text
+ASSET TYPE MANUFACTURER PRIORITY FREQUENCY COMMENTS DAILY WEEKLY MONTHLY QUARTERLY SEMI-ANNUALLY ANNUALLY OTHER DCE - SHOP EQUIPMENT AND ASSETS 1 AERIAL WORKPLATFORM LIFT (6)* GENIE INDUSTRIES 2 ✓ 2 BANDSAW(2) WILTON TOOL DIV 3 ✓ 3 BELT & DISK SANDER WILTON TOOL DIV 2 ✓ 4 CAR WASH 1 ✓ ✓ ✓ ✓ 5 CRANE & HOIST* 1 ✓ SS 6 CYLINDRICAL FLOOR SCRUBBER (2) NILFISK ADVANCE 2 ✓ 7 DRILL PRESS (5) WILTON TOOL DIV 3 ✓ 8 EMERGENCY LIGHTING & EXIT SIGNAGE INSPECTION 1 ✓ 9 EYE WASH AND EMERGENCY SHOWER 1 ✓ 10 FIRE EXTINGUISHER 1 ✓ 11 FLOOR SCRUBBER (5) NILFISK ADVANCE 2 ✓ ✓ 12 FLOOR SWEEPER (3) TERRA 2 ✓ ✓ ✓ 13 FORKLIFT (4)* TOYOTA 1 ✓ C 14 GENERATOR (3) BALDOR 3 ✓ ✓ 15 GRINDER (4) CINCINNATI 3 ✓ 16 HI-PRESSURE WASHERS GOODWAY 2 ✓ 17 HYDRAULIC LIFT JACKS (6)* SIMPLEX 1 ✓ SS 18 HYDRAULIC LIFT TABLE (14) PRESTO 1 ✓ ✓ 19 LATHE SOUTH BEND 2 ✓ ✓ 20 INDUSTRIAL VEHICLES (4) MALVESE NISSAN 2 ✓ ✓ ✓ 21 MILLING MACHINE JET 2 ✓ 22 MULTI-PURPOSE SPREADER TRYNEX INDUSTRIES 2 ✓ 23 PRESSURE CLEANER (3) KRANZLE 2 ✓ ✓ 24 ROLL UP DOOR (14) 1 ✓ 25 ROOF 1 ✓ 26 SKID STEER LOADER TRYNEX INDUSTRIES 2 ✓ ✓ 27 SNOW THROWER (2) TORO POWER-MAX 2 ✓ 28 THIRD RAIL TROLLEY AND AUXILIARY BUGS CONTROLLER 1 ✓ 29 TOOL GRINDER BALDOR 3 ✓ 30 TABLE SAW DELTA 3 ✓ ✓ 31 WELDER 2 ✓ ✓ 32 WHEEL TRUING MACHINE SIMMONS 1 ✓ S S ✓ Bi-Weekly 33 WINTER OPERATION ✓ Asset PM Frequency maybe subject to changes based on location usage and monitoring. * - In-house maintenance personnel perform inspections, in conjunction with service contractor performing all required maintenance and repair. C - Crown, SS - Sisco, S - Simmons (Service Contractor/Vendor performing all required maintenance and repair.) (j) - The number in between stands for the total number of equipment. Total 1 1 14 7 12 17 1 Revised as of August 2014
+```
+[p114_c0003] _Table 6-34: Example of Location Specific DCE Equipment Preventive Maintenance Frequency Table_
+[p114_c0004] _Page 6-55_
+
+## Page 115
+
+### [p115_c0001] DCE Facility Maintenance Plan Standard Operating Procedure
+### [p115_c0002] I PURPOSE
+- [p115_c0003] • To develop and implement Facilities Maintenance Plans to extend asset lifecycles and improve the safety of shop equipment located in the DCE Maintenance and Overhaul Shops. • To ensure that personnel responsible for performing the inspections, testing, repair and maintenance are properly trained. • To comply with OSHA, Federal, State and applicable regulatory requirements.
+### [p115_c0004] II DEFINITIONS
+- [p115_c0005] • Shop Equipment – cranes, hoists, industrial vehicles, car washer, et al. • Facility Maintenance Plan (FMP) - Equipment Inventory, Preventive Maintenance Procedures, Location Layouts and associated policies. • Emergency Response facilities and equipment. • CMMS - Computerized Maintenance Management System (MP2)
+### [p115_c0006] III RESPONSIBILITIES
+### [p115_c0007] Shop Management:
+- [p115_c0008] • Ensuring that all shop and facility equipment is inspected at required intervals. • Generating Scheduled & Unscheduled Maintenance Work Orders. • Documenting all facility and shop equipment inspections, maintenance activities and resources in the CMMS. • Assigning appropriate personnel to conduct the maintenance inspections. • Maintaining critical shop equipment operation and maintenance reference manuals. • Ensuring that Facility personnel receive copies of service invoices for contractor payment.
+### [p115_c0009] Facilities & Shop Equipment:
+- [p115_c0010] • Expediting critical shop equipment, Emergency Response and revenue and non-revenue facility issues. • Generating management reports including performance and cost data reports. • Ensuring Preventive Maintenance Plans are revised and updated as required. • Providing oversight and technical support to the shop management. • Supporting all facility and shop equipment related capital programs. • Preparing the work scopes and informal requisitions for facility and critical shop equipment purchases. • Ensuring proper utilization of CMMS for tracking work orders, labor, spare parts and maintenance history of equipment.
+### [p115_c0011] Quality Assurance & Warranty Control:
+- [p115_c0012] • Ensuring shop compliance with FMP by conducting internal shop audits.
+### [p115_c0013] Maintenance of Way (MOW) maintenance subdivisions:
+- [p115_c0014] • Preventative maintenance and service on all utilities and critical structural components for Car Maintenance, Car Cleaning, Car Washer and RCI and Emergency Response Facilities.
+### [p115_c0015] IV JOINT RESPONSIBILITIES
+- [p115_c0016] • Maintain critical equipment inventories for equipment valued at more than $5,000.00 and all safety critical equipment. • Coordinate maintenance activities with Maintenance of Way and/or external contractor/vendor. • Develop and implement preventative maintenance procedures.
+### [p115_c0017] V REFERENCES
+- [p115_c0018] • FMP Maintenance Plan. • Facilities and Shop Equipment Organization Chart (December 2011).
+[p115_c0019] MCD #12-01 Rev.A
+[p115_c0020] _Document MCD 12-01, Revision A_
+[p115_c0021] _Page 6-56_
+
+## Page 116
+
+### [p116_c0001] Division of Car Equipment Facilities & Shop Equipment
+> [p116_c0002] Emergency Response: RCI Locations System-wide. N = North S = South ER/WE = Emergency Response / Work Equipment CW = Car Wash WTM = Wheel Truing Machine December/2011
+[p116_c0003] Document No. MCD# 12-01
+### [p116_c0004] ment MCD 12-01, Revision A
+### [p116_c0005] 6.2.4D Customer Environment and Facilities Inspection and Testing Programs
+### [p116_c0006] I. Elevator & Escalator
+[p116_c0007] Elevators & Escalators' Hazard Management Process is described below:
+[p116_c0008] Qualified Maintainers and Inspectors conduct maintenance and inspection activities. Defects found during any activity are corrected in appropriate manner based on severity. Defects affecting public safety (Type "A" Work Order) is being corrected immediately or create an outage till it is corrected. Other defects (Type "B" Work Order) are to be corrected in 90 days or when parts are available, in case of old machines. The EAM system tracks the Work Orders and the repairs performed.
+[p116_c0009] The Elevator & Escalator equipment inspections are outlined in the table below:
+[p116_c0010] _Page 6-57_
+
+## Page 117
+
+[p117_c0001]
+
+```text
+ELEVATOR & ESCALATOR INSPECTION SCHEDULE WITH GOVERNING PROCEDURES DESCRIPTION FREQUENCY TITLE OF INSPECTOR PROCEDURE Elevators and Escalators - Cat I Inspection 6 Months Maintenance Supervisor Level I ASME Guidelines - A17.2 Elevators - Cat 5 Inspection 5 Years Maintenance Supervisor Level I ASME Guidelines - A17.2
+```
+[p117_c0002] _Table 6-35: Elevator & Escalator Equipment Inspection Schedule_
+### [p117_c0003] II. Electronics Maintenance Division
+[p117_c0004] Electronics Maintenance is responsible for maintaining the DOS and DOB Telecommunications, Automated Fare Control, Electronic and Radio equipment and to ensure the repair of sensitive electronic equipment throughout the system and within the agency's many facilities. The section is also responsible for repairing/refurbishing electronic components for railcars and buses; work which takes place at the Central Electronics Shop.
+[p117_c0005] Electronics Maintenance is accountable for conducting system-wide inspections of NYCT'S Telecommunications, Automated Fare Control, Electronic and Radio equipment as outlined in Table 6-10.
+### [p117_c0006] Central Electronics Shop (CES) Test Equipment Inspections:
+[p117_c0007] Calibration Lab repairs and calibrates CES in-house test equipment as well as test equipment for other sub-divisions within EMD. All CES equipment used to process, repair, or adjust electronic train components are inspected on a scheduled basis by the Shop's Calibration Lab. CES has established and produced various 'Technical Maintenance Procedures' for the repair of units, components and equipment. Management ensures that critical CES inspection and maintenance routines are done correctly and in accordance with prescribed procedures.
+### [p117_c0008] 6.2.4E SIR Equipment Inspection and Testing Programs
+[p117_c0009] Processes are in place for Staten Island Railway Operating Departments to identify hazards, defects and failures. When hazardous conditions are identified, SIR units address them immediately. If the condition cannot be resolved immediately, work order requests are submitted to the appropriate department to have the condition rectified or equipment repaired/replaced. Equipment deemed unsafe is removed from service, and any unsafe conditions are mitigated. Any resolved conditions and equipment repairs/replacements are documented in accordance with departmental/divisional procedures.
+[p117_c0010] Facility and work site inspections, along with internal control tests (of equipment) are conducted by all SIR units. Individual units are required to address any deficiencies immediately upon discovery. Where conditions cannot be resolved immediately, work order requests are submitted to the appropriate section to have the condition(s) rectified.
+[p117_c0011] _Page 6-58_
+
+## Page 118
+
+[p118_c0001] SIR's equipment is subject to regular safety-related inspections and testing in accordance with applicable laws/codes, and internal rules and procedures. SIR's equipment inspection and testing activities are outlined in tables 6-36 to 6-45.
+[p118_c0002] SIR work environments are regularly evaluated to identify and resolve hazards. Union-management safety committee meetings are held, and findings are documented. Hazards not corrected remain "open" (with a running day count) until resolved. Location management is responsible to resolve hazards at their work location or facility.
+[p118_c0003] ---The space below is intentionally left blank---
+[p118_c0004] _Page 6-59_
+
+## Page 119
+
+[p119_c0001]
+
+```text
+SIGNALS DIVISION Equipment Frequency 1. Test #2 - Relays, Electric Locks & Other Electro-Mechanical Devices 6 month/10 years 2. Test #3 - Resistance of Made Grounds 10 Years or whenever placed in service, modified, or disarranged. 3. Test #4 - Signal Indication Locking 2 Years or whenever placed in service, modified, or disarranged. 4. Test #5 - Approach Locking 2 Years or whenever placed in service, modified, or disarranged. 5. Test #6 - Time Locking 2 years or whenever placed in service, modified, or disarranged. 6. Test #7 - Timing Devices Annual or whenever placed in service, modified, or disarranged. 7. Test #8 - Switch Indication 2 Years or whenever placed in service, modified, or disarranged. 8. Test #9 - Switch Correspondence None required ; however, inspection must be performed whenever placed in service, modified, or disarranged. 9. Test #10 Hand Operated Switch Locking (Landing and Princess Bay) 2 years or whenever placed in service, modified, or disarranged. 10. Test #11A - Switch Circuit Controller Quarterly or whenever placed in service, modified, or disarranged. 11. Test #11B - Switch Obstruction Monthly or whenever placed in service, modified, or disarranged. 12. Test #12 - Route & Detector Locking 2 years or whenever placed in service, modified, or disarranged. 13. Test #13 - Traffic Locking 2 years or whenever placed in service, modified, or disarranged. 14. Test #14 - Ground Test Monthly or whenever placed in service, modified, or disarranged. 15. Test #15 - Fouling & Bonding Wire Inspection Monthly or whenever placed in service, modified, or disarranged. 16. Test #15A - Shunt Fouling Circuit Quarterly or whenever placed in service, modified, or disarranged. 17. Test #17 - Track Circuit Shunting Sensitivity Annually or whenever placed in service, modified, or disarranged. 18. Test #17A - Track Circuit Current Voltage & Polarity 2 Years or whenever placed in service, modified, or disarranged. 19. Test #17B - Track Circuit Broken Rail Protection None required; however, inspection must be performed whenever placed in service, modified, or disarranged. 20. Test #18 - Time Delayed Code Change 2 Years or whenever placed in service, modified, or disarranged. 21. Test #19 - Track & Switch Blocking 2 Years or whenever placed in service, modified, or disarranged. 22. Test #20 - Insulation Resistance 10 Years or whenever placed in service, modified, or disarranged. 23. Battery Inspection Test Quarterly 24. Ground Connection & Lightning, Ground Arresters Monthly
+```
+[p119_c0002] _Table 6-36: SIR Signals Division Equipment Inspections & Testing Programs_
+[p119_c0003] _Page 6-60_
+
+## Page 120
+
+[p120_c0001]
+
+```text
+POWER DIVISION Equipment Frequency 1. D.C. Switch Gear Maintenance and Testing Bi-annual 2. Load Measuring Relays Annually 3. Battery Chargers Every two years 4. Transformer Maintenance Annually 5. High Potential Testing Every three Years 6. AC protection devices Annually 7. Procedure for Performing a Dead Short Clearance As needed 8. Procedures for Restoring Power After a Dead Short Clearance As needed 9. Procedure for Manual Operation of Rectifier as Needed Equipment As needed 10. Procedure for Manual Operation of DC Feeder Breakers As needed 11. Procedures for Racking in PACS 52 Breaker As needed 12. Procedures for Racking out PACS 52 Breaker As needed 13. Transformer Oil Dielectric Test Every three years
+```
+[p120_c0002] _Table 6-37: SIR Power Division Inspection & Testing Program_
+[p120_c0003]
+
+```text
+MUE Mechanical (Revenue Vehicles) Equipment Frequency 1. Brake Shoe and Air Compressors Inspections and tests are conducted at a minimum of 66-day intervals plus or minus 5 days 2. Air valves and Tread Brake Heads Inspections and tests are conducted at a minimum of 66-day intervals plus or minus 5 days 3. Master Controller Inspections and tests are conducted at a minimum of 66-day intervals plus or minus 5 days 4. Air Compressor Inspections and tests are conducted at a minimum of 66-day intervals plus or minus 5 days * Oil and Filter Change (1-year intervals) 5. Door Systems Inspections and tests are conducted at a minimum of 66-day intervals plus or minus 5 days 6. Converter and Control Group Inspections and tests are conducted at a minimum of 66-day intervals plus or minus 5 days
+```
+[p120_c0004] _Page 6-61_
+
+## Page 121
+
+[p121_c0001]
+
+```text
+7. Batteries Inspections and tests are conducted at a minimum of 66-day intervals plus or minus 5 days 8. HVAC Systems Inspections and tests are conducted at a minimum of 66-day intervals plus or minus 5 days 9. Truck Systems Inspections and tests are conducted at a minimum of 66-day intervals plus or minus 5 days 10. Communication Equipment Inspections and tests are conducted at a minimum of 66-day intervals plus or minus 5 days 11. Car-Borne Signal Equipment Inspections and tests are conducted at a minimum of 66-day intervals plus or minus 5 days 12. Pre-Service Inspection Every 27 Hours
+```
+[p121_c0002] _Table 6-38: SIR Mechanical Division (Revenue Vehicles) Scheduled Maintenance Inspection (SMI)_
+[p121_c0003]
+
+```text
+MUE Mechanical (Non-Revenue Vehicles) Equipment Frequency 1. Brake Shoe and Air Compressors Inspections and tests are conducted every 90 days plus or minus 10 days 2. Air valves and Tread Brake Heads Inspections and tests are conducted every 90 days plus or minus 10 days 3. Master Controller Inspections and tests are conducted every 90 days plus or minus 10 days 4. Air Compressor Inspections and tests are conducted every 90 days plus or minus 5 days * Oil and Filter Change (1-year intervals) 5. Door Systems Inspections and tests are conducted every 90 days plus or minus 10 days 6. Converter and Control Group Inspections and tests are conducted every 90 days plus or minus 10 days 7. Batteries Inspections and tests are conducted every 90 days plus or minus 10 days 8. HVAC Systems Inspections and tests are conducted every 90 days plus or 10 days 9. Truck Systems Inspections and tests are conducted every 90 days plus or minus 10 days 10. Communication Equipment Inspections and tests are conducted every 90 days plus or minus 10 days 11. Car-Borne Signal Equipment Inspections and tests are conducted every 90 days plus or minus 10 days 12. Pre-Service Inspection Inspections and Tests are conducted as needed
+```
+[p121_c0004] _Table 6-39: SIR Mechanical Division (Non-Revenue Vehicles) Scheduled Maintenance Inspection (SMI)_
+[p121_c0005] _Page 6-62_
+
+## Page 122
+
+[p122_c0001]
+
+```text
+INFRASTRUCTURE Equipment Inspection Frequency 1. Sprinklers Systems at Clifton Mechanical Shop, NRS shop, 331 Bay St Monthly, Quarterly, & Annually 2. Fire Extinguishers (Division-Wide) • Monthly – Performed by the department responsible for the facility. Ex. Substation Facilities (Power Department), CIL Facilities (Signal Department), 331 Bay St, (Infrastructure Department). • Annual Inspection (W96) – Performed by the Infrastructure Department System-Wide. 3. Underground Storage Tanks at Maintenance Shops by Gen Mechanic or Foreman Monthly
+```
+[p122_c0002] _Table 6-40: SIR Non-Revenue Shop/331 Bay Street Inspection & Testing Program_
+[p122_c0003]
+
+```text
+NRS (Non-Revenue Service) Equipment Inspection Frequency 1. Non-Revenue Vehicle Fleet Inspection/Service Once/3 months 2. Heavy Equipment Inspection/Service (Ballast tampers, ballast regulators, front end loaders, rail bound and rough terrain cranes) Every 3 Months/As Needed 3. Small Equipment Inspection/Service (Forklifts, trailers, cherry pickers, pavement sweepers, skid steers) Every 3 Months/As Needed
+```
+[p122_c0004] _Table 6-41: SIR Non-Revenue Vehicle Shop Inspection & Testing Program_
+[p122_c0005] _Page 6-63_
+
+## Page 123
+
+[p123_c0001]
+
+```text
+ELECTRICAL Equipment Frequency 1. Station Lighting Monthly 2. Facility Lighting Monthly 3. Emergency Generators at St. George Terminal MUE to Tompkinsville Monthly
+```
+[p123_c0002] _Table 6-42: SIR Electrical Inspection & Testing Program_
+[p123_c0003] ---The space below intentionally left blank---
+[p123_c0004] _Page 6-64_
+
+## Page 124
+
+[p124_c0001]
+
+```text
+ELECTRONICS Equipment/Location Frequency 1. Fire Alarm System (St. George Terminal Crew Qtrs., RCC, maintenance Shop and Facility Office Monthly, Quarterly, Semi Annually and Annually 2. Fire Suppression Systems at the RCC Semi Annually 3. Security Alarms At Train Stations Monthly 4. AFC Maintenance – Emergency turnstile release at St. George and Tompkinsville Monthly
+```
+[p124_c0002] _Table 6-43: SIR Electronics Inspection & Testing Program_
+[p124_c0003]
+
+```text
+ENGINEERING Equipment/Location Frequency 1. Bridges – NYS DOT Inspection Annually
+```
+[p124_c0004] _Table 6-44: SIR Engineering Inspection & Testing Program_
+[p124_c0005]
+
+```text
+TRACK DIVISION Equipment/Location Frequency 1. Mainline Tracks by Track Inspector Twice during a 7-day period 2. General Inspection of Entire Zone Superintendent/Supervisor (including yard tracks) Quarterly 3. General Inspection of Subdivision by Track Superintendent/Manager Semi Annual 4. Inspection of Mainline Switches by Superintendent/Supervisor Annually 5. Yard Tracks by Track Inspector Monthly
+```
+[p124_c0006] _Page 6-65_
+
+## Page 125
+
+[p125_c0001]
+
+```text
+TRACK DIVISION Equipment/Location Frequency 6. Ultrasonic Rail Flaw Detection (Mainline Tracks) Annually 7. Track Geometry by TGC At least once Annually 8. Mainline Switches and Joints (in conjunction w/ SIR Signals Section) by Track Inspector Monthly & Whenever Failures Occur 9. Inspection after failure (in conjunction with SIR Signals Section) by Track Inspector As Needed 10. Non-electrified Hand Thrown Yard Switches by Track Inspector Quarterly
+```
+[p125_c0002] _Table 6-45: SIR Track Division Inspection & Testing Program_
+### [p125_c0003] 6.2.4G DOS Supervisor Work Environment Inspection
+### [p125_c0004] I. Right-of-Way Work Environment
+[p125_c0005] It is the responsibility of the MOW and Division of Facilities supervisors to establish a safe work environment when work is performed on the right-of-way as outlined in Subways Bulletin 2150 Establishing a Safe Right-of-Way Work Environment. Two checklists were developed to aid supervisors in this responsibility.
+[p125_c0006] At the jobsite, before starting work, the supervisor in charge of the job, if present, must instruct his/her employees where to clear for passing trains (preferably on the same side of the track), advise of the presence of unusual obstructions, openings, or other hazards. The supervisor must complete the Right-of-Way (Trackway) Worker Maintenance Supervisors Field Observation Checklist (DOS Bulletin 21-50).
+[p125_c0007] At the beginning of the tour the supervisor must conduct a job-specific Toolbox Safety Talk, discussing the requirements for establishing and maintaining a safe work environment as well as alerting personnel of the specific hazards associated with the task. The supervisor must complete the Right-of-Way (Trackway) Worker Toolbox Safety Talk Checklist (DOS Bulletin 21-50).
+### [p125_c0008] II. Off Track Environment
+[p125_c0009] It is the responsibility of the MOW and Division of Facilities supervisors to establish a safe work environment when work is performed off the right-of-way as outlined in Subways Bulletin 21-49
+[p125_c0010] _Page 6-66_
+
+## Page 126
+
+[p126_c0001] Establishing a Safe Work Environment, Off Track. A checklist was developed to aid supervisors where work is performed along the system but off the right-of way. This checklist does not apply to employees who work at the industrial facilities referenced in the Subway Bulletin 23-22.
+[p126_c0002] At the jobsite before starting work, the supervisor in charge of the job, if present, must inspect the area and advise employees of the presence of unusual obstructions, openings, or other hazards. The supervisor must complete the section entitled Non-Trackway Worker Maintenance Supervisors Field Observation Checklist (DOS Bulletin 21-49).
+[p126_c0003] At the beginning of the tour the supervisor must conduct a job-specific Toolbox Safety Talk prior to the beginning of the tour's assigned task, discussing the requirements for establishing and maintaining a safe work environment as well as alerting personnel of the specific hazards associated with the task. The supervisor must complete the section entitled Non-Trackway Worker Toolbox Safety Talk Checklist (DOS Bulletin 21-49).
+### [p126_c0004] 6.2.4H Resolution of Audit/Inspection Findings
+[p126_c0005] DOS makes every effort to resolve any problems identified during audits/inspections. Methods utilized by DOS divisions for evaluating the effectiveness of maintenance programs and resolving problems identified during audits/inspections include the following:
+- [p126_c0006] • Recommendations made by either internal or outside auditors regarding DOS structures or facilities are reviewed by management and adopted (if viable). Trends are analyzed by management, and unusual or unacceptable trends are investigated. • Evaluation of track maintenance programs is continuous, and revisions to maintenance schedules and/or equipment specifications are implemented by management as required. • Scheduled maintenance, tests, and inspections of Signals devices are documented in section logbooks and on the approved Signals database. Revisions to maintenance schedules and/or equipment specifications are implemented by management as required. • Any defects that cannot be corrected through replacement of parts, adjustments, or by assistance of other groups are reviewed by supervision - and work orders are submitted if needed for future action. • Scheduled maintenance inspections are documented in the Rolling Stock Maintenance Information System (RSMIS). Problems/repairs are tracked by work orders generated in RSMIS system and remain open until actions (repairs, etc.) are implemented. Tracking and resolving of inspection program anomalies is achieved through Quality Assurance (QA) audit reports. Adverse findings are documented and closed upon verification of action plan implementation.
+[p126_c0007] _Page 6-67_
+
+## Page 127
+
+### [p127_c0001] 6.2.5 DOS Structural Inspections
+### [p127_c0002] 6.2.5A MOW Engineering
+[p127_c0003] In accordance with the Structural Inspection Policy Instruction (April 9, 2018) MOW Engineering is responsible for periodic inspections that relate to the structural elements of NYCT’s rapid transit infrastructure including station structural elements. These annual visual inspections performed by MOW Engineering focus on the steel and concrete components. Table 6-46 (below) outlines the Division’s inspection schedule and the titles of the individuals carrying out structural inspections. Chapter 6 of the P/I lists the same inspection frequencies.
+[p127_c0004] The following is the minimum visual and special inspection frequency by structure type.
+[p127_c0005]
+
+```text
+Structure Type Frequency 9 A. Bridges, Overpasses & Elevated Structures a. Elevated Structure i) Tangent ..... ii) Curved Structure ..... b. Bridges and Overpasses ..... c. Viaduct..... d. Special Structure i) Truss Bridges 4 ..... ii) High Elevated Structures 4 ..... iii) Marine structures 5 ..... Once a year Twice a year Once a year Once a year Annual visual, supplemental every 5 years Annual visual, supplemental every 5 years Annual visual, supplemental every 5 years B. At Grade Structures a. Open Cut ..... b. Embankment (under track only)... Once a year Twice a week C. Subway a. Cut and cover..... b. Mined or bored tunnels..... c. Sidewalk Ventilators 1 i) Outside station limit..... d. Under river Tubes..... e. Special Structure High Brick & Masonry Arch 4 Non-Revenue Structure Once a year Once a year Once every 3 years Twice a year Annual visual, supplemental every 5 years Annual visual 8
+```
+[p127_c0006] _Page 6-68_
+
+## Page 128
+
+[p128_c0001]
+
+```text
+Structure Type Frequency 9 D. Stations a. Elevated..... b. At-grade..... c. Subway..... d. Special Structures i) Closed-up hangers 2 ..... ii) Suspended Ceilings 3 ..... iii) High Brick & Masonry Arch 4 . iv) Ventilators 1 ..... v) Non-Revenue Structure vi) Stations with Terra-Cotta Ceilings 10 Once a year Once a year Once a year Annual visual, supplemental every 10 years Annual visual, supplemental every 5 years Annual visual, supplemental every 5 years Once every 2 years Annual Visuals Twice a year visual, supplemental every 5 years E. Rooms and Enclosures a. Electrical Manholes on ROW 6 b. Emergency exits 7 c. Unclassified (other) 6 ..... Once / 3 years (starting 2014) Once / 2 Months Per User Group Access Cycle F. Boiler Rooms Once a year 11
+```
+[p128_c0002] _Table 6-46: MOW Engineering’s Structural Inspection_
+[p128_c0003] Notes: 1. Frequency is determined by the approved inspection cycle maintained by Div. of Stations and Div. of Infrastructure.
+[p128_c0004] 2. Closed-up hangers are inspected annually by examining the architectural finishes and ceiling and floor for visual signs of structural distress...
+[p128_c0005] 3. Suspended ceilings are inspected from track, mezzanine and platform level for visual signs of structural distress.
+[p128_c0006] 4. These structures are visually inspected annually from track, platform, and street level as appropriate.
+[p128_c0007] 5. These structures are visually inspected annually from track and water level using a boat,
+[p128_c0008] 6. Identification of structural conditions is performed by personnel assigned to maintain the equipment and facilities located inside the enclosure. DOS Engineering provides support on an on-call basis to determine criticality of reported conditions.
+[p128_c0009] 7. Inspection of Emergency Exits is performed by Division of Infrastructure Personnel under most recent version of P/I 10.29
+[p128_c0010] 8. The need for supplemental inspections shall be determined based on the results of the first round of inspections scheduled to be completed in 2013
+[p128_c0011] 9. All structures, including those with pending repair projects, weather capital or operating, shall continue to be inspected according to the assigned inspection frequency, or more often if warranted by conditions.
+[p128_c0012] 10. Terra-Cotta ceilings are inspected from track, mezzanine & platform levels for visual signs of structural distress.
+[p128_c0013] 11. Inspection of Boiler Rooms is jointly performed by Civil/Structural Engineering and Division of Infrastructure Personnel.
+[p128_c0014] MOW also responds to emergencies (in the event of falling concrete, etc.) or other special circumstances to provide unscheduled structural engineering evaluation services. Emergency inspections (in accordance with the MOU between MOW and Facilities of 2023).
+[p128_c0015] _Page 6-69_
+
+## Page 129
+
+### [p129_c0001] MOW Engineering’s Hazard Mitigation Process is described below:
+[p129_c0002] In accordance with MOW Engineering’s Structural Inspection P/I (4/9/2018) conditions identified during inspections are categorized according to severity depending on structure type as follows: Non-Structural Safety and Steel defects on the elevated structure: Severity 2 and Severity 4; Steel on all other Structures and Concrete on all structures Severity 1, Severity 2, Severity 3, Severity 4, Severity 5. Severity 2 conditions are the most severe and require attention such as repair or monitoring within short time periods. Severity 5 conditions are less severe than Severity 2 conditions and are tracked on subsequent inspections and repaired when feasible by in-house forces or packaged into the capital program as funding becomes available. Severity 5 conditions are considered minor. Severity 4 designation is a placeholder to identify to track conditions that have been temporarily addressed for periodic monitoring and inclusion in the capital program..
+- [p129_c0003] • Categorized Severity 2 condition inspection findings are reported periodically to MOW Infrastructure, Facilities or Other appropriate divisions for repair or correction. • Action & Follow-Up (in accordance with the Structural Inspection P/I chapter 7, 13, 16) • Deficiencies discovered are to be addressed and repaired in accordance with “Standard Details for Structural Repairs” on file with MOW Engineering. • When deficiencies are discovered and standard repairs are not applicable or sufficient, Engineers from Infrastructure Engineering will perform a field investigation and develop suitable repair details. • Database Reports of conditions found are provided to responsible parties when requested and on a periodic basis. Structural Inspections are performed to ensure the operation readiness of NYCT operations and may not be suitable for other purposes, therefore RAW data is not provided to third parties. Per current NYSDOT practice, an annual report of elevated and bridge inspections is prepared and put on file and a certification of compliance is sent to NYSDOT every April. • When an imminent danger to operations or safety is discovered by MOW Engineering staff, managers assigned to Infrastructure Engineering will notify Senior MOW and Stations officers and ensure that immediate action is taken to mitigate the condition. • Responsible parties are to contact the Assistant Chief Officer of Infrastructure Engineering when necessary to arrange technical support with addressing structural deficiencies and conditions.
+[p129_c0004] _Page 6-70_
+
+## Page 130
+
+### [p130_c0001] 6.2.6 Construction & Development (C&D) Condition Assessment Inspection Program
+[p130_c0002] MTA- Construction & Development (C&D) oversees the agency's Condition Assessment Inspection Program for the system's 493 stations. C&D utilizes consultant services to conduct system-wide condition inspection surveys; planned for every 5 years. The Condition Assessment Inspection Program is used to prioritize the Capital Construction Program for stations.
+### [p130_c0003] 6.2.6A Station Condition Surveys
+[p130_c0004] All station types are surveyed, including underground (subway), elevated, open cut, embankment, and viaduct construction. In order to plan, prioritize and effectively budget investment in the program, NYCT utilizes survey findings to assess station conditions and prioritize rehabilitation activities.
+[p130_c0005] The inspections/surveys include all areas of a station, including public areas, restricted areas, and track areas (as part of platform edge inspections). The inspections do not include manholes, vaults, or the underside of elevated stations. The program does, however, include the inspection of ventilators.
+[p130_c0006] The station inspections are visual and do not include material testing or detailed measurements of structural members. Binoculars are to be used to aid viewing of high areas as necessary.
+[p130_c0007] Station components/subcomponents by type of construction are outlined in the most current "Station Inspection Manual".
+[p130_c0008] ---The space below is intentionally left blank---
+[p130_c0009] _Page 6-71_
+
+## Page 131
+
+### [p131_c0001] Subcomponents
+### [p131_c0002] ❖ Street Stairs
+- [p131_c0003] • Primary structural elements (roof, ceiling, and sidewalls) • Guardrails and curbs • Handrails • Treads/risers and landings • Canopy (if present) • Water Leakage
+### [p131_c0004] ❖ Interior Stairs
+- [p131_c0005] • Guardrails, curbs, treads /risers, stringers, and landings • Handrails • Water Leakage
+### [p131_c0006] ❖ Mezzanines/Passageways
+- [p131_c0007] • Roof/ceiling structures and sidewalls • Floors [DS] • Columns • Water Leakage
+### [p131_c0008] ❖ Platforms
+- [p131_c0009] • Roof/ceiling structure [DS] • Sidewalls • Floors [DS] • Platform Edge 1 – side platform [DS] • Platform Edge 1 – island platform (description) [DS] • Platform Edge 2 – island platform (description) [DS] • Columns and column bases [DS] • Guardrails • Water Leakage
+### [p131_c0010] ❖ Ventilators
+- [p131_c0011] • Exterior elements (gratings, frames, and concrete) • Interior structure (concrete drip pans, walls, beams, and roof) • Water Leakage
+### [p131_c0012] ❖ Control Houses
+- [p131_c0013] • Roof, concrete, steel, and roofing • Structural walls and columns • Floors Structural and Topping • Water Leakage
+[p131_c0014] _Table 6-47: Inventory of Subcomponents_
+[p131_c0015] _Page 6-72_
+
+## Page 132
+
+### [p132_c0001] (Structural) - Subway Stations
+### [p132_c0002] ❖ Ramps
+- [p132_c0003] • Primary Structure Elements (beams, columns) • Floor • Walls/guardrails • Ceiling
+[p132_c0004] Table 6-47: Inventory of Subcomponents (continued)
+[p132_c0005] _Page 6-73_
+
+## Page 133
+
+### [p133_c0001] (Structural) - Elevated Stations
+### [p133_c0002] Elevated Stations
+### [p133_c0003] ❖ Street Stairs
+- [p133_c0004] • Primary structural elements (stringers, columns) • Treads, risers, landings, and guardrails • Handrails • Canopy/roof structure support • Water Leakage
+### [p133_c0005] ❖ Mezzanine/Platform Stairs
+- [p133_c0006] • Primary structural elements and stringers • Treads, risers, landings, and guardrails • Handrails • Sidewalls • Water Leakage
+### [p133_c0007] ❖ Mezzanines
+- [p133_c0008] • Primary structural elements (roofs, sidewalls) • Walls interior • Floor structure and slab • Mezzanine columns, main support beams • Mezzanine hangers • Through-track concrete • Water Leakage
+### [p133_c0009] ❖ Platforms
+- [p133_c0010] • Platform Edge 1 components – side platform [DS] • Platform Edge 1 components – island platform (description) [DS] • Platform Edge 2 components – island platform (description) [DS] • Floor [DS] • Floor Framing [DS] • Platform Girder Track side – side platform [DS] • Platform Girder Windscreen side – side platform [DS] • Platform Girder 1 Track side – island platform (description) [DS] • Platform Girder 2 Track side – island platform (description) [DS] • Floor jointing • Wall structure/windscreen [DS] • Guardrails • Columns Bases [DS] • Water Leakage
+### [p133_c0011] ❖ Platform Canopies (Metal)
+- [p133_c0012] • Structural Steel [DS] • Roofing/underlayment [DS] • Columns (except bases, which are rated as part of the Platform) [DS]
+[p133_c0013] _Table 6-47: Inventory of Subcomponents (continued)_
+[p133_c0014] _Page 6-74_
+
+## Page 134
+
+### [p134_c0001] (Structural) - Elevated Stations
+### [p134_c0002] ❖ Control Houses
+- [p134_c0003] • Roof, concrete, steel, and roofing • Structural walls and columns • Floors Structural and Topping • Water Leakage
+### [p134_c0004] ❖ Ramps
+- [p134_c0005] • Primary Structure Elements (beams, columns) • Floor • Walls/guardrails • Canopy
+[p134_c0006] _Table 6-47: Inventory of Subcomponents (continued)_
+[p134_c0007] _Page 6-75_
+
+## Page 135
+
+### [p135_c0001] (Structural) – Open Cut Stations
+### [p135_c0002] I Open Cut Stations
+### [p135_c0003] ❖ Street/Platform Stairs
+- [p135_c0004] • Primary structural elements (roof, ceiling & walls) • Guardrails, treads/risers, and landings • Handrails • Canopy (if present) • Water Leakage
+### [p135_c0005] ❖ Interior Stairs
+- [p135_c0006] • Guardrails, curbs, treads /risers, stringers, and landings • Handrails • Water Leakage
+### [p135_c0007] ❖ Mezzanines/Passageways
+- [p135_c0008] • Roof/ceiling structures and sidewalls • Floors [DS] • Columns • Water Leakage
+### [p135_c0009] ❖ Platforms
+- [p135_c0010] • Floor under canopy [DS] • Floor beyond canopy – north end • Floor beyond canopy – south end • Floor jointing • Sidewalls, retaining walls, or windscreens [DS] • Platform Edge 1 and support wall – side platform [DS] • Platform Edge 1 and support wall – island platform (description) [DS] • Platform Edge 2 and support wall – island platform (description) [DS] • Column bases (steel canopy) [DS] • Water Leakage
+### [p135_c0011] ❖ Lower Platforms
+- [p135_c0012] • Roof/ceiling structure [DS] • Floor under canopy [DS] • Floor beyond canopy – north end • Floor beyond canopy – south end • Floor jointing • Sidewalls, retaining walls [DS] • Platform Edge 1 and support wall – side platform [DS] • Platform Edge 1 and support wall – island platform (description) [DS] • Platform Edge 2 and support wall – island platform (description) [DS] • Columns and column bases [DS] • Water Leakage
+[p135_c0013] _Table 6-47: Inventory of Subcomponents (continued)_
+[p135_c0014] _Page 6-76_
+
+## Page 136
+
+### [p136_c0001] (Structural) – Open Cut Stations
+### [p136_c0002] ❖ Platform Canopies (Metal)
+- [p136_c0003] • Structural Steel [DS] • Roofing/underlayment [DS] • Columns (except bases, which are rated as part of the Platform) [DS] • Water Leakage
+### [p136_c0004] ❖ Platform Canopies (Concrete)
+- [p136_c0005] • Roofing/Underlayment [DS] • Structural Concrete [DS] • Columns [DS] • Water Leakage
+### [p136_c0006] ❖ Tunnel/Overpass Structure within station platform
+- [p136_c0007] • Primary structural elements (roof, ceiling, walls) • Water Leakage
+### [p136_c0008] ❖ Control Houses
+- [p136_c0009] • Roof, concrete, steel, and roofing • Structural walls and columns • Floors Structural and Topping • Water Leakage
+### [p136_c0010] ❖ Ramps
+- [p136_c0011] • Primary Structure Elements (beams, columns) • Floor • Walls/guardrails • Canopy
+[p136_c0012] _Table 6-47: Inventory of Subcomponents (continued)_
+[p136_c0013] _Page 6-77_
+
+## Page 137
+
+### [p137_c0001] Embankment Stations
+### [p137_c0002] ❖ Street/Platform Stairs
+- [p137_c0003] • Primary structural elements (roof, ceiling, walls) • Guardrails, treads/risers, and landings • Handrails • Canopy (if present) • Water Leakage
+### [p137_c0004] ❖ Mezzanines/Passageways
+- [p137_c0005] • Roof/ceiling structures and sidewalls • Floors [DS] • Columns • Water Leakage
+### [p137_c0006] ❖ Platforms
+- [p137_c0007] • Floor under canopy • Floor beyond canopy – north end • Floor beyond canopy – south end • Floor jointing • Sidewalls, retaining walls, parapet walls [DS] • Platform Edge 1 and support wall – side platform • Platform Edge 1 and support wall – island platform (description) • Platform Edge 2 and support wall – island platform (description) • Column bases (steel canopy) [DS] • Windscreens • Water Leakage
+### [p137_c0008] ❖ Platforms (SIR)
+- [p137_c0009] • Floors [DS] • Floor jointing • Sidewalls, retaining walls, parapet walls [DS] • Piers/Column Support to Platform [DS] • Platform Edge 1 and support wall – side platform • Platform Edge 1 and support wall – island platform (description) • Platform Edge 2 and support wall – island platform (description) • Column bases (steel canopy) [DS] • Windscreens • Water Leakage
+### [p137_c0010] ❖ Platform Canopies (Metal)
+- [p137_c0011] • Structural Steel [DS] • Roofing/underlayment [DS] • Columns (except bases, which are rated as part of the Platform) [DS] • Water Leakage
+[p137_c0012] _Table 6-47: Inventory of Subcomponents (continued)_
+[p137_c0013] _Page 6-78_
+
+## Page 138
+
+### [p138_c0001] (Structural) – Embankment Stations
+- [p138_c0002] ❖ Platform Canopies (Concrete) • Canopy roof and parapet walls • Canopy Columns • Water Leakage ❖ Embankment, Soil Erosion & Foundations • Embankment, soil erosion & foundations ❖ Overpass Structure System • Overpass structure system • Water Leakage ❖ Control Houses • Roof, concrete, steel, and roofing • Structural walls and columns • Floors Structural and Topping • Water Leakage ❖ Ramps • Primary Structure Elements (beams, columns) • Floor • Walls/guardrails • Canopy
+[p138_c0003] _Table 6-47: Inventory of Subcomponents (continued)_
+[p138_c0004] _Page 6-79_
+
+## Page 139
+
+### [p139_c0001] (Structural) - Viaduct Stations
+### [p139_c0002] Viaduct Stations
+### [p139_c0003] ❖ Street Stairs
+- [p139_c0004] • Primary structural elements (stringers, columns) • Treads, risers, landings, and guardrails • Handrail • Canopy/roof structure support • Water Leakage
+### [p139_c0005] ❖ Mezzanine/Platform Stairs
+- [p139_c0006] • Primary structural elements and stringers • Treads, risers, landings, and guardrails • Handrail • Sidewalls • Water Leakage
+### [p139_c0007] ❖ Mezzanines
+- [p139_c0008] • Primary structural elements (roofs, sidewalls) • Walls interior • Floor structures • Mezzanine columns, main support, hangers, and beams • Water Leakage
+### [p139_c0009] ❖ Platforms
+- [p139_c0010] • Platform Edge 1 components – side platform [DS] • Platform Edge 1 components – island platform (description) [DS] • Platform Edge 2 components – island platform (description) [DS] • Floor under canopy [DS] • Floor beyond canopy – north end • Floor beyond canopy – south end • Floor over mezzanine at through span • Floor jointing • Wall structure/windscreen and guardrail [DS] • Columns bases [DS] • Water Leakage
+### [p139_c0011] ❖ Platform Canopies (Metal)
+- [p139_c0012] • Structural Steel [DS] • Roofing/underlayment [DS] • Columns (except bases, which are rated as part of the Platform) [DS] • Water Leakage
+### [p139_c0013] ❖ Columns and Piers
+- [p139_c0014] • Columns and Piers
+[p139_c0015] _Table 6-47: Inventory of Subcomponents (continued)_
+[p139_c0016] _Page 6-80_
+
+## Page 140
+
+### [p140_c0001] (Structural) - Viaduct Stations
+### [p140_c0002] ❖ Veneer Finishes
+- [p140_c0003] • Veneer finishes
+### [p140_c0004] ❖ Control Houses
+- [p140_c0005] • Roof, concrete, steel, and roofing • Structural walls and columns • Floors Structural and Topping • Water Leakage
+### [p140_c0006] ❖ Ramps
+- [p140_c0007] • Primary Structure Elements (beams, columns) • Floor • Walls/guardrails • Canopy
+[p140_c0008] _Table 6-47: Inventory of Subcomponents (continued)_
+[p140_c0009] _Page 6-81_
+
+## Page 141
+
+### [p141_c0001] (Architectural / Painting / Lighting) - Subway Stations
+### [p141_c0002] Subway Stations
+### [p141_c0003] ❖ Street Stairs
+- [p141_c0004] ○ Walls (tiles only) ○ Painting ○ Lighting ○ Emergency Lighting
+### [p141_c0005] ❖ Interior Stairs
+- [p141_c0006] ○ Walls (tiles only) – Interior and Exterior (under stairs at platform) ○ Painting ○ Lighting ○ Emergency Lighting
+### [p141_c0007] ❖ Mezzanines/Passageways
+- [p141_c0008] ○ Walls (tiles only) [DA] ○ Suspended Ceilings [DA] ○ Floor Finish [DA] ○ Painting ○ Lighting [DA] ○ Emergency Lighting [DA]
+### [p141_c0009] ❖ Platforms
+- [p141_c0010] ○ Walls (tiles only) [DA] ○ Suspended Ceilings [DA] ○ Floor Finish [DA] ○ Platform edge detectable warning strip [DA] ○ Painting ○ Lighting ○ Emergency Lighting
+### [p141_c0011] ❖ Ventilators
+[p141_c0012] (Not applicable.)
+### [p141_c0013] ❖ Control Houses
+- [p141_c0014] ○ Walls – Interior and Exterior [DA] ○ Ceilings [DA] ○ Windows and Doors ○ Floor Finish [DA] ○ Painting ○ Lighting ○ Emergency Lighting
+### [p141_c0015] ❖ Ramps
+[p141_c0016] (Not applicable.)
+[p141_c0017] _Table 6-47: Inventory of Subcomponents (continued)_
+[p141_c0018] _Page 6-82_
+
+## Page 142
+
+### [p142_c0001] (Architectural / Painting / Lighting) - Elevated Stations
+### [p142_c0002] Elevated Stations
+- [p142_c0003] ❖ Street Stairs ○ Painting ○ Lighting ○ Emergency Lighting ❖ Mezzanine/Platform Stairs ○ Wall Finishes ○ Painting ○ Lighting ○ Emergency Lighting ❖ Mezzanines ○ Walls – Interior and Exterior [DA] ○ Ceiling [DA] ○ Windows and Doors ○ Floor Finish [DA] ○ Painting ○ Lighting ○ Emergency Lighting ❖ Platforms ○ Painting ○ Lighting [DA] ○ Emergency Lighting ○ Platform edge detectable warning strip [DA] ❖ Platform Canopies (Metal) ○ Painting ○ Lighting ○ Emergency Lighting ❖ Control Houses ○ Walls – Interior and Exterior [DA] ○ Ceiling [DA] ○ Windows and Doors ○ Floor Finish [DA] ❖ Control Houses (Cont'd) ○ Painting ○ Lighting ○ Emergency Lighting ❖ Ramps (Not applicable.)
+[p142_c0004] _Table 6-47: Inventory of Subcomponents (continued)_
+[p142_c0005] _Page 6-83_
+
+## Page 143
+
+### [p143_c0001] (Architectural / Painting / Lighting) - Open Cut Stations
+### [p143_c0002] Open Cut Stations
+- [p143_c0003] ❖ Street/Platform Stairs ○ Painting ○ Lighting ○ Emergency Lighting ❖ Interior Stairs ○ Walls (tiles only) – Interior and Exterior (under stairs at platform) ○ Painting ○ Lighting ○ Emergency Lighting ❖ Mezzanines/Passageways ○ Walls (tiles only) [DA] ○ Suspended Ceilings [DA] ○ Floor Finish [DA] ○ Painting ○ Lighting [DA] ○ Emergency Lighting [DA] ❖ Platforms ○ Painting ○ Lighting [DA] ○ Emergency Lighting ○ Platform edge detectable warning strip [DA] ❖ Lower Platforms ○ Painting ○ Lighting [DA] ○ Emergency Lighting ○ Walls (tiles only) [DA] ○ Platform edge detectable warning strip [DA] ❖ Platform Canopies (Metal) ○ Painting ○ Lighting ○ Emergency Lighting
+[p143_c0004] _Table 6-47: Inventory of Subcomponents (continued)_
+[p143_c0005] _Page 6-84_
+
+## Page 144
+
+[p144_c0001] (Architectural / Painting / Lighting) - Open Cut Stations
+### [p144_c0002] ❖ Platform Canopies (Concrete)
+- [p144_c0003] ○ Painting ○ Lighting ○ Emergency Lighting
+### [p144_c0004] ❖ Tunnel/Overpass Structure within station platform
+- [p144_c0005] ○ Painting ○ Lighting ○ Emergency Lighting
+### [p144_c0006] ❖ Control Houses
+- [p144_c0007] ○ Walls – Interior and Exterior [DA] ○ Ceiling [DA] ○ Windows and Doors ○ Floor Finish [DA] ○ Painting ○ Lighting ○ Emergency Lighting
+### [p144_c0008] ❖ Ramps
+[p144_c0009] (Not applicable.)
+[p144_c0010] _Table 6-47: Inventory of Subcomponents (continued)_
+[p144_c0011] _Page 6-85_
+
+## Page 145
+
+### [p145_c0001] (A1
+### [p145_c0002] ions
+### [p145_c0003] ■ Embankment Stations
+- [p145_c0004] ❖ Street/Platform Stairs ○ Painting ○ Lighting ○ Emergency Lighting ○ Walls (tiles only) ❖ Mezzanines/Passageways ○ Walls (tiles only) [DA] ○ Suspended Ceilings [DA] ○ Floor Finish [DA] ○ Painting ○ Lighting [DA] ○ Emergency Lighting [DA] ❖ Platforms ○ Painting ○ Lighting [DA] ○ Emergency Lighting ○ Platform edge detectable warning strip [DA] ❖ Platforms (SIR) ○ Painting ○ Lighting [DA] ○ Emergency Lighting ○ Platform edge detectable warning strip [DA] ❖ Platform Canopies (metal) ○ Painting ○ Lighting ○ Emergency Lighting ❖ Platform Canopies (concrete) ○ Painting ○ Lighting ○ Emergency Lighting ❖ Embankment, Soil Erosion & Foundations (Not applicable.)
+[p145_c0005] _Table 6-47: Inventory of Subcomponents (continued)_
+[p145_c0006] _Page 6-86_
+
+## Page 146
+
+[p146_c0001] (Architectural / Painting / Lighting) - Embankment Stations
+### [p146_c0002] ❖ Overpass structure system
+- [p146_c0003] ○ Painting ○ Lighting ○ Emergency Lighting
+### [p146_c0004] ❖ Control Houses
+- [p146_c0005] ○ Walls – Interior and Exterior [DA] ○ Ceiling [DA] ○ Windows and Doors ○ Floor Finish [DA] ○ Painting ○ Lighting ○ Emergency Lighting
+### [p146_c0006] ❖ Ramps
+[p146_c0007] (Not applicable.)
+[p146_c0008] _Table 6-47: Inventory of Subcomponents (continued)_
+[p146_c0009] _Page 6-87_
+
+## Page 147
+
+### [p147_c0001] (Architectural / Painting / Lighting) - ViaductStations
+### [p147_c0002] Viaduct Stations
+- [p147_c0003] ❖ Street Stairs ○ Wall Finishes – Interior ○ Painting ○ Lighting ○ Emergency Lighting ❖ Mezzanine/Platform Stairs ○ Wall Finishes – Interior ○ Painting ○ Lighting ○ Emergency Lighting ❖ Mezzanines ○ Walls – Interior and Exterior [DA] ○ Ceiling [DA] ○ Windows and Doors ○ Floor Finish [DA] ○ Painting ○ Lighting ○ Emergency Lighting ❖ Platforms ○ Wall Finishes – Interior and Exterior [DA] ○ Platform edge detectable warning strip [DA] ○ Windows ○ Painting ○ Lighting [DA] ○ Emergency Lighting ❖ Platform Canopies (Metal) ○ Painting ○ Lighting ○ Emergency Lighting ❖ Columns and Piers ○ Painting
+[p147_c0004] _Table 6-47: Inventory of Subcomponents (continued)_
+[p147_c0005] _Page 6-88_
+
+## Page 148
+
+### [p148_c0001] (Architectural / Painting / Lighting) - Viaduct Stations
+### [p148_c0002] ❖ Veneer Finishes
+[p148_c0003] (Not applicable.)
+### [p148_c0004] ❖ Control Houses
+- [p148_c0005] ○ Walls – Interior and Exterior [DA] ○ Ceiling [DA] ○ Windows and Doors ○ Floor Finish [DA] ○ Painting ○ Lighting ○ Emergency Lighting
+### [p148_c0006] ❖ Ramps
+[p148_c0007] (Not applicable.)
+### [p148_c0008] Table 6-47: Inventory of Subcomponents (continued)
+### [p148_c0009] 6.2.6B Construction & Development Hazard Management Process
+[p148_c0010] C&D uses rating systems to grade the condition of station structural elements (that require inspection), as well as the specific architectural components, painting, and lighting of each station. The two systems rate each component numerically from 1 to 5 as referenced in the “Station Inspection Manual”. A rating of ‘1’ would indicate that a station component, subcomponent or condition has no observable deficiencies; whereas a rating of ‘5’ would indicate structure does not function as designed and/or the level of deterioration is such that non-function may be imminent. The rating systems are as follows:
+### [p148_c0011] I. Structural Numerical Rating System
+[p148_c0012] Each station, depending on type (subway, elevated, etc.) has a defined list of primary components (street stairs, platforms, mezzanines, etc.). Each component is further broken down into subcomponents. Each subcomponent in a station is assigned a Structural Numerical Rating by the inspector in accordance with the guidelines provided in the “Station Inspection Manual”. No component or station ratings are calculated from the subcomponent ratings.
+### [p148_c0013] II. Architectural/Painting/Lighting Numerical Rating System
+[p148_c0014] A list of subcomponents is assigned a numerical rating by the inspector in accordance with the guidelines provided in the “Station Inspection Manual”. Similar to the Structural Numerical Rating System, no component or station ratings are calculated from the subcomponent ratings. Architectural/Painting/Lighting Subcomponent Ratings are stand-alone ratings and do not reflect the overall condition of the station.
+[p148_c0015] Upon completion of the Station Condition Surveys by the consultants (whereby ratings/prioritizations have been established), the surveys are uploaded to the DRAW program and submitted to the Division of Capital Planning & Budget (CPB). In accordance with the surveys, CPB analyzes the survey data
+[p148_c0016] _Page 6-89_
+
+## Page 149
+
+[p149_c0001] in conjunction with the Department of Subways. Rating thresholds are defined to determine which defects qualify to be included in capital projects (e.g. 5-year Capital Plan).
+### [p149_c0002] 6.2.7 Facility Inspection
+### [p149_c0003] 6.2.7A Department of Subways
+[p149_c0004] The Daily Department of Subways Facility Safety Checklist (in accordance with Subways Bulletin 23-22) is required to be completed in Subways industrial type facilities. The facilities that adopt this form no longer have to comply with Crew Quarters Inspection requirements and the Daily Maintenance Supervisor Safety Checklist requirements.
+[p149_c0005] _Page 6-90_
+
+## Page 150
+
+### [p150_c0001] POST ON ALL BULLETIN BOARDS
+### [p150_c0002] NEW YORK CITY TRANSIT DEPARTMENT OF SUBWAYS OFFICE OF THE SENIOR VICE PRESIDENT
+[p150_c0003] DATE: September 30, 2021
+[p150_c0004] TO: All Subways Superintendents and Supervisors
+[p150_c0005] FROM: Jacqueline Kuhls, Vice President & Chief Officer, Operations Support, Subways
+[p150_c0006] SUBJECT: SUBWAYS BULLETIN 21-48 FACILITY SAFETY CHECKLIST (Supersedes Subways Bulletin 17-16)
+[p150_c0007] This is to remind all Subways superintendents and supervisors that the Daily Department of Subways Facility Safety Checklist is required to be completed in Subways industrial type facilities, to comply with the NYCT Safety Goal Action Plan (SGAP) and System Safety Program Plan (SSPP) .
+### [p150_c0008] SGAP Action Element 2-2
+[p150_c0009] Supervisors must observe the work environment to identify and correct unsafe conditions. Engage employees in this process and ask for their input. Document the observations and implement employee suggestions if needed.
+### [p150_c0010] Agency Safety Plan, Section 6.2.7A
+[p150_c0011] The Daily Department of Subways Facility Safety Checklist is required to be completed in Subways industrial type facilities.
+[p150_c0012] The facilities listed in Attachment 1 require the completion of a facility checklist because they have one or more of the following characteristics:
+- [p150_c0013] • Shop/Machinery Activities • Hazardous Material Handling/Use • Powered Industrial Truck Use • Hazardous Material Storage
+[p150_c0014] The checklist (Attachment 2) may be modified to include unique facility/divisional safety issues not included here, with DOS Safety approval. Call (718) 694-1216.
+[p150_c0015] The checklist must be maintained for a period of two (2) years at the facility for review and inspection by management.
+[p150_c0016] These facilities are not required to comply with Crew Quarter Inspection requirements and the Daily Maintenance Supervisor Safety Checklist requirements.
+[p150_c0017] Ensure this bulletin is discussed by supervisors with all hourly employees during safety/toolbox talks.
+### [p150_c0018] Attachments
+[p150_c0019] cc: D. Crichlow T. Doddo M. Carrube (SSSA) M. Brown L. Montanti V. Modafferi (TSO) S. Carson C. Hamann M. Bucceri (UTLO) S. Ko T. Mulligan T. Wilson (SMART) B. Thomas P. Kohner V. Mandile (TCU) Office of the VP, SD G. Santana M. Cummings (ATDA) Office of the VP, MOW T. Utano (TWU)
+[p150_c0020] _Page 6-91_
+
+## Page 151
+
+[p151_c0001] All other Subways, non-office reporting locations are required to complete the weekly Crew Quarters Inspection Checklist. The facilities include but are not limited to those listed in the following table because they have one or more of the following characteristics:
+- [p151_c0002] I. Shop/Machinery Activities II. Powered Industrial Truck Use III. Hazardous Material Handling/Use IV. Hazardous Material Storage
+[p151_c0003]
+
+```text
+Subways Facility List Division Facility Names DCE All Maintenance Shops All Overhaul Shops Pelham Diesel Shop EMD Central Electronics Shop Glendale Shop (AFC) Infrastructure Cozine Shop (Iron) Tiffany Shop (Iron) Glendale Shop (ICC) 129 Jamaica Avenue (ICC) Bergen Shop, (Facilities) 148 TH Street Shop (HVAC) 38 th Street Shop (HVAC) Broadway-Lafayette (Hydraulics) Sands Street (Hydraulics) Track Small Tool Shop (1500 Linden Blvd.) Fabrication Shop (1500 Linden Blvd.) Fleet Operations (1500 Linden Blvd.) Production Equipment Shop (38 th Street Yard) Production Equipment Shop (Westchester Yard) Signals 215 th Street Shop Power 100 Locust Ave (Cable) 1114 Atlantic Avenue (Cable) Pitkin Yard (Test) Station Environment Station Maintenance Facilities: ◦ Conway Street ◦ 145 th St and St Nicholas Avenue ◦ Roosevelt Avenue ◦ 99 th Street Fire Extinguisher Shop ◦ Hoyt/Schermerhorn Shop ◦ Bedford Avenue ◦ 14th Street/6th Avenue ◦ Grand Central Station ◦ Stillwell Avenue ◦ 125th Street/St. Nicholas ◦ East 180th Street ◦ 168 th /St. Nicholas ◦ Myrtle/Wyckoff ◦ Queens Plaza ◦ 2nd Avenue Quay Street (Mobile Wash) Stillwell Avenue (Refuse Operations) Staten Island Railway 845 Bay Street (Clifton Shop) 331 Bay Street (MOW Shop) 291 Bay Street (Non-Revenue Shop)
+```
+[p151_c0004] _Table 6-48: Subways Facilities List_
+[p151_c0005] _Page 6-92_
+
+## Page 152
+
+[p152_c0001] The Daily Facility Safety Checklist lists safety issues that are commonly encountered in Subways shop facilities. It may be modified to include unique facility/divisional safety issues not included here. Modifications must have DOS Safety approval. The checklist must be maintained for a period of 90 days at the facility for review and inspection by management.
+### [p152_c0002] 6.2.7B Service Delivery
+[p152_c0003] I. The division is primarily accountable for the provision of customer service relating to train operations.
+[p152_c0004] II. Service Delivery facilities subject to inspection include the following, which are not included on Subways Facilities List:
+- [p152_c0005] • Signal Towers
+[p152_c0006] The Supervisor and Tower Operator assigned to the Signal Towers inspects the facility upon arrival on each tour. Results of the inspection are entered in the Daily Signal Tower Checklist (Bulletin No. 74-19).
+- [p152_c0007] • Subways Terminal Crew Quarters
+[p152_c0008] Subways Terminal Crew Quarters are inspected weekly and results are recorded on the Weekly Crew Quarters Inspection Form . The Weekly Crew Quarters Inspection Form includes fields that require that the individual conducting the inspection verify and record that important document (e.g., emergency evacuation plan) and signs (e.g. emergency exits) are posted. In addition, it requires that the individual verify and record that egresses are clear of debris, flammable/combustible materials are properly stored, and that employees are adhering to the principals of ‘good housekeeping’ (in efforts to prevent slips, trips, and falls).
+[p152_c0009] III. Local Safety Committee Meetings, inclusive of monthly labor/management, ‘Safety Committee’ facility walk-through inspections are conducted utilizing the Local Safety Committee checklist. All findings are documented and tracked utilizing the Safety Inspection Tracking form.
+[p152_c0010] IV. Periodic safety audits are also conducted by managers utilizing the SMAT Observation Form.
+[p152_c0011] V. When action is required, the supervisor/manager corrects the condition or contacts the appropriate section/division to have the condition (e.g., damaged flooring, stairs, or handrails) corrected/rectified.
+[p152_c0012] _Page 6-93_
+
+## Page 153
+
+### [p153_c0001] 6.2.7C Maintenance of Way
+### [p153_c0002] I. Work Site Inspections
+[p153_c0003] MOW Supervisors conduct daily safety inspections of work sites in accordance with the Daily Subways Maintenance Supervisor Checklist.
+### [p153_c0004] II. Division of Track and Division of Infrastructure
+[p153_c0005] Track and Infrastructure is responsible for maintaining NYCT's network of track and track-related infrastructure, as well as structural elements of DOS facilities. The subdivision's facilities are located throughout the system. For MOW facilities that are not included on Table 6-48 – Subways Facilities List, supervision shall use the following:
+- [p153_c0006] • Supervisors conduct weekly safety inspections of crew quarters in accordance with the Weekly Crew Quarters Inspection Form. • Requests for minor construction repairs for defects identified during facility inspections are assigned to the appropriately titled Structure Maintainers (e.g., Masons, Carpenters, etc.). • In addition, monthly labor/management 'Safety Committee' facility walk-through inspections are conducted utilizing the Local Safety Committee checklist. All findings are documented and tracked utilizing the Safety Inspection Tracking form.
+### [p153_c0007] III. Power (Electrical & Third Rail)
+[p153_c0008] The Subdivision of Electrical is responsible for inspecting and maintaining NYCT's power and signal systems. For Electrical facilities that are not included on Subways Facilities List, supervision shall use the following to ensure Safety Risk Mitigation:
+- [p153_c0009] • Supervisors conduct weekly safety inspections of crew quarters in accordance with the Weekly Enclosures Inspection Form. • Monthly safety committee meetings are held with the unions present • SMAT Audits are performed monthly by all Managers • Supervisors are responsible for Semi-Annual Employee Enclosure Condition Check Off List and Semi-Annual Enclosure Material List. • Power facilities subject to inspection include the many substations located throughout the system. It should be noted that these inspections for the most part, are conducted on equipment housed with the substations themselves. • Substations are inspected according to a specific schedule based upon the type of equipment housed within each structure.
+[p153_c0010] _Page 6-94_
+
+## Page 154
+
+- [p154_c0001] • Power supervisory inspections include Control Room Inspection and Cable Sheath Panel Test. Supervisory inspections are being done bi-monthly unless instructed otherwise in this document. • Power Supervisors conduct a job specific Toolbox Safety Talk discussing requirements for establishing and maintaining a safe work environment as well as alerting personnel of the hazards specific to their task. This is in accordance with the Subway Right of Way (Trackway) Worker Toolbox Safety Talk Checklist.
+### [p154_c0002] IV. Signals
+[p154_c0003] The Subdivision of Signals is responsible for inspecting and maintaining NYCT's signal systems. For facilities that are not included on Subways Facilities List, supervision shall use the following to ensure Safety Risk Mitigation:
+- [p154_c0004] • Supervisors conduct weekly safety inspections of crew quarters in accordance with the Weekly Enclosures Inspection Form. • Monthly safety committee meetings are held with the unions present • SMAT Audits are performed monthly by all Managers • Supervisors are responsible for Semi-Annual Employee Enclosure Condition Check Off List and Semi-Annual Enclosure Material List. • Signal Supervisors conduct a job specific Toolbox Safety Talk discussing requirements for establishing and maintaining a safe work environment as well as alerting personnel of the hazards specific to their task. This is in accordance with the Subway Right of Way (Trackway) Worker Toolbox Safety Talk Checklist.
+### [p154_c0005] 6.2.7D Division of Car Equipment (DCE)
+[p154_c0006] DCE is responsible for inspecting and maintaining both revenue and non-revenue railcar equipment. DCE hourly/supervisory employees conduct daily facility inspections using the Daily Department of Subways Facility Safety Checklist. In addition, monthly facility safety inspections are conducted as part of union-management safety committee meetings (in accordance with the most recent version of Policy Instruction 10.30, "Safety Committees" and utilizing the Local Safety Committee form and the Safety Inspection Tracking form. All findings are documented and remain "open" (with a running day count) until resolved.
+[p154_c0007] DCE facilities subject to inspection include the following:
+- [p154_c0008] • Railcar Maintenance Facilities (Revenue) • Railcar Overhaul Facilities (Revenue) and Associated Shops • Car Wash Facilities • Work Train and Equipment Maintenance Facility (Pelham Diesel Shop)
+[p154_c0009] _Page 6-95_
+
+## Page 155
+
+### [p155_c0001] 6.2.7E Customer Environment & Facilities
+[p155_c0002] Station Environment & Operations Station Supervisors conduct inspections of subway stations and crew quarters in accordance with the schedule outlined in Station Environment & Operations Facility Inspection Table, utilizing the Enterprise Asset Management system (EAM) which encompasses the Station Inspection Report, non-conformity notification and joint Slips Trips and Falls inspections. Maintenance Supervisors perform DOS Daily Facility Safety Inspection Checklists at the maintenance shops. Additionally, managers periodically conduct random safety audits at those locations. When action is required, the supervisor/manager either instructs employees to correct the condition (if it is housekeeping or hazardous related conditions) or notifies the appropriate section/division to have the condition corrected/rectified (if it is maintenance-related). Subsequent to any remedial action taking place (e.g., facility repairs), management/supervision conducts follow-up inspections to ensure that proper action has been completed. The EAM system tracks the completion of each repair and the progress toward meeting established repair goals that have been established.
+[p155_c0003] Station Maintenance Supervisors conduct daily safety inspections of work sites in accordance with the Daily Subways Maintenance Supervisor Checklist, Table 6-49.
+[p155_c0004] _Page 6-96_
+
+## Page 156
+
+[p156_c0001]
+
+```text
+STATION ENVIRONMENT & OPERATIONS FACILITY INSPECTIONS INSPECTION FREQUENCY PERSONNEL ASSIGNED DOCUMENTATION Top Twenty-Five ‘Slip, Trip & Fall’ Stations Daily Station Supervisor EAM System Top Twenty-Five “Slip, Trip & Fall” Stations Bi-Weekly (twice a month) Station Supervisor & Station Maintenance Supervisors EAM System All Stations (472 in total) Weekly Station Supervisor EAM System Monthly Fire Safety All Stations Inspection (472 in total) Monthly Station Supervisor EAM System Crew/Reporting Quarters Inspection Weekly Station Supervisors Crew Quarters Inspection Form Eyewash Unit Inspection Yearly Maintenance Supervisors EAM System Eyewash Unit Inspection Weekly Station Supervisor (at stations) and Maintenance Supervisor (at shops) EAM System Industrial Facility Inspection Daily Station Maintenance Supervisor DOS Daily Facility Safety Inspection Checklist
+```
+[p156_c0002] _Table 6-49: Station Environment & Operations Facility Inspections_
+[p156_c0003] _Page 6-97_
+
+## Page 157
+
+[p157_c0001] Supervisory inspections of subway stations are designed to ensure (at a minimum) the following:
+- [p157_c0002] • Restrooms (Public/Employee) are operating unobstructed and clear of debris • Egresses (including stairwells) are clear and unobstructed • Exit signs are posted • Escalators (if present) are operating, unobstructed and clear of debris • Elevators (if present) are operating, unobstructed and clear of debris • Turnstiles (traditional) and high entry/exit turnstiles (HEETs) are operating and unobstructed • Station lighting is adequate and emergency lighting is operational • Fire protection and alarm systems are in place • Mezzanines and platforms are clear of debris and other hazards • Garbage receptacles are emptied in a timely manner
+### [p157_c0003] Station Environment & Operations Hazard Management Process:
+[p157_c0004] Station Environment and Operations Hazard Management Process is outlined in Section 6.2.7e.
+[p157_c0005] Supervisory inspections of subway stations (and associated equipment) consist of identifying defects, observing cleanliness and reporting findings in order to ensure action is taken. Supervisors categorize each reported defect as follows:
+- [p157_c0006] • Severity 1 - Catastrophic Failure – Immediate response (i.e. 6-Wire notifications) • Severity 2 - Significant Failure - Condition made safe or completion of repair(s) within 24 hours. • Severity 3 - Partial Failure Requiring completion of repair(s) within 30 days. • Severity 4 - Reduced Performance Requiring completion of repair(s) within 60 days • Severity 5 - Superficial Projects
+[p157_c0007] Severity 1 or 2 conditions are generally safety-related, security-related, or revenue-related conditions requiring prompt attention. Severity 3 or 4 conditions are generally aesthetic in nature and are not considered to be emergencies.
+[p157_c0008] Severity 3 conditions are any Severity 1 or 2 conditions/defects made safe, whereby repairs have not yet been completed. Examples include all non-safety defects in public and employee restroom and all non-safety service booth defects. Follow-up inspections are conducted by supervision both throughout and subsequent to any station repair work to ensure that proper action has taken place.
+[p157_c0009] The Station Environment & Operations Hazard Management Process for “A” Defects/Severity 2 Table 6-50 and the Station Environment & Operations Hazard Management Process for “B” Defects/Severity 3 Table 6-50 outline the system utilized by Station Environment & Operations to prioritize defects identified during the inspection process.
+[p157_c0010] _Page 6-98_
+
+## Page 158
+
+### [p158_c0001] Severity “2” Nonconformities (Safety/Security/Revenue Issues)
+[p158_c0002] (Must be completed within 24 hours of reported date)
+[p158_c0003]
+
+```text
+SEVERITY “2” NONCONFORMITY DESCRIPTION RUBBING BOARD A rubbing board that is loose or missing. WATER CONDITION A water condition that is affecting passenger movement or AFC equipment. Any water observed at or above the station drain grating. OVERHEAD THREATS Loose overhead objects: signs, drip pans, light fixtures, or spalling concrete. TRIP HAZARDS A change in elevation or protruding item greater than ¼ inch or loose floor surface. STAIRWAY TREADS Any worn ( see sample attachment 7 ), loose or missing stairway tread. HANDRAIL Any unsafe handrails. UNSECURED OBJECTS Any object such as benches, trash receptacles, etc., that can be thrown on the tracks or obstruct the passengers right of way. AGENT BOOTH Defects that affect safety and security of the agent. LIGHTING A condition which can create an unsafe environment on a station ( 6 consecutive fixtures out ). VENT GRATINGS Missing or damaged gratings within the station confines. DOORS Any door accessible to the public that cannot be secured. TOILETS No operational commode, sink or unsecured bathroom. GRAFFITI Offensive graffiti on painted surfaces.
+```
+[p158_c0004] _Table 6-50: Station Environment & Operations Hazard Management Process for Severity 2 Nonconformities_
+### [p158_c0005] Severity “3” Nonconformities (Non-Safety/Non-Security/Non-Revenue Related Issues) (Must be completed within 30 days of reported date)
+[p158_c0006]
+
+```text
+SEVERITY “3” NONCONFORMITIES DESCRIPTION TURNED OVER SEVERITY “2” NONCONFORMITIES Severity “2” Nonconformities made safe. SERVICE BOOTH Any defect that does not constitute a Severity “2” Nonconformity TOILETS Any condition that is not a Severity “2” Nonconformity
+```
+[p158_c0007] _Table 6-51: Station Environment & Operations Hazard Management Process for Severity 3 Nonconformities_
+[p158_c0008] _Page 6-99_
+
+## Page 159
+
+### [p159_c0001] I. Electronics Maintenance
+[p159_c0002] The Electronics Maintenance subdivision is responsible for inspecting and maintaining NYCT's electronic equipment system wide. Electronics Maintenance supervisors conduct daily facility inspections at the Central Electronics Shop (CES), 2020 Broadway, (ENY) and the Glendale shop utilizing the Daily Department of Subways Facility Safety Checklist.
+[p159_c0003] The Glendale shop has moved to 33 Williams Place, Brooklyn.
+### [p159_c0004] 6.2.7F Staten Island Railway (SIR)
+[p159_c0005] SIR is run much like an individual railroad and shares similar inspection responsibilities with that of other DOS divisions (but on a much smaller scale). Management/supervision for Staten Island Railway's 15 major units are responsible for overseeing their individual facilities and related equipment. The 15 units are as follows:
+- [p159_c0006] • Transportation/Operations Control Center • Mechanical • Cleaning Services • Power • Signals • Infrastructure • Electrical/Electronic • Track • Third Rail • Non-Revenue Vehicles • Finance & Procurement • Operations Support • General Office • Capital & Engineering • Information Technology
+[p159_c0007] SIR facilities subject to inspection include the following:
+- [p159_c0008] • Clifton Yard – Mechanical Shop (Revenue) • Tompkinsville Yard Non-Revenue Shop • Train Stations (21 in total) • SIR Property located at the St. George Terminal (Staten Island Ferry) ◦ SIR's Rail Control Center or RCC ◦ St. George Terminal Crew Quarters • Substations and Breaker Houses • 331 Bay Street, SIR (MOW. Infrastructure, Signals/Power)
+[p159_c0009] _Page 6-100_
+
+## Page 160
+
+[p160_c0001]
+
+```text
+STATEN ISLAND RAILWAY (SIR) STATIONS INSPECTIONS EQUIPMENT / CONDITION INTERVAL TITLE OF INSPECTOR PROCEDURE Station cleanliness Daily Station cleaner Station cleaning report MONTHLY CLEANER FOREMAN SUPERVISORY STATION CLEANING REPORT Station lighting Monthly Electrical maintainer ... Station fire Monthly Electronics maintainer ...
+```
+[p160_c0002] _Table 6-52: SIR Stations Inspections_
+[p160_c0003]
+
+```text
+Equipment/Location Frequency • Station Cleanliness Daily (Station Cleaner) Monthly (Foreman) • Facility Safety Inspection Checklist (except Clifton Shop will be daily) Weekly • Crew Quarters Inspection Form Weekly • Staten Island Daily Foreman/supervisor Checklist Daily • Local Safety Committee Monthly Meeting Monthly
+```
+[p160_c0004] _Table 6-53: SIR Infrastructure Inspections_
+[p160_c0005] _Page 6-101_
+
+## Page 161
+
+### [p161_c0001] 6.2.8 DOS Storm Surge Mitigation Equipment (SSME), Deployment, Maintenance and Spare Part Inventory Plan
+### [p161_c0002] 6.2.8A DOS SSME Deployment Plan
+[p161_c0003] DOS SSME assets are required, when feasible, to be deployed on an annual basis, except when noted in existing procedural documents. The deployment can be during a DOS Coastal Storm Drill, a planned event, such as when a General Order (G.O.) or an Exclusive Track Occupancy (ETO) exists for that location, or during an inspection.
+[p161_c0004] In January, Work Orders are activated to capture the maintenance records for each asset. These work orders will also capture the date the asset was deployed, the length of time it took to deploy the asset, and the number of personnel required to deploy it.
+[p161_c0005] Table 6-54 identifies the assets whose deployment will result in a service interruption. The deployment of these assets requires a scheduled G.O./ETO. The assets requiring a G.O./ETO are also identified on the asset record in EAM. The table below will be reviewed and updated during the yearly update of the Annual Safety Plan.
+[p161_c0006] _Table 6-54 The SSME assets which require a G.O./ETO for deployment._
+[p161_c0007]
+
+```text
+System Description Class Responsible Division Borough In/Nearest Station 858309 FDP: 436 - Harlem-148th St - Signal Rm End Of Plat Internal Prot - 1 ST-FLDPN DOS-SEO-MNT MANHATTAN 436-HARLEM-148ST-LWP-3 858310 FDP: 436 - Harlem-148th St - Signal Rm End Of Plat Internal Prot - 2 ST-FLDPN DOS-SEO-MNT MANHATTAN 436-HARLEM-148ST-LWP-3 858311 FDP: 436 - Harlem-148th St - Signal Rm End Of Plat Internal Prot - 3 ST-FLDPN DOS-SEO-MNT MANHATTAN 436-HARLEM-148ST-LWP-3 859744 FLG: 436 - Harlem-148th St-Comm Rm Right Of Way Internal Prot - 1 IN-FLDLG DOS-MOW-INF-HYD MANHATTAN 436-HARLEM-148ST-LWP-3 859745 FDP: 436 - Harlem-148th St-Comm Rm Right Of Way Ac Box Panels Internal Prot - 1 IN-FLDPN DOS-MOW-INF-HYD MANHATTAN 436-HARLEM-148ST-LWP-3 859746 FDP: 436 - Harlem-148th St-Comm Rm Right Of Way Ac Box Panels Internal Prot - 2 IN-FLDPN DOS-MOW-INF-HYD MANHATTAN 436-HARLEM-148ST-LWP-3 858398 FLG: 058 - Coney Island-Stillwell Av - PV Inverter Rm Street Level Internal Prot ST-FLDLG DOS-SEO-MNT BROOKLYN 058-CONEYISLAND-STILLWELLAV-SEA-D/F/N/Q 858399 FLG: 058 - Coney Island-Stillwell Av - ST-FLDLG DOS-SEO-MNT BROOKLYN 058-CONEYISLAND-STILLWELLAV-SEA-D/F/N/Q
+```
+[p161_c0008] _Page 6-102_
+
+## Page 162
+
+[p162_c0001]
+
+```text
+System Description Class Responsible Division Borough In/Nearest Station Water Meter Rm Street Level Internal Prot 858400 FLG: 058 - Coney Island-Stillwell Av - Reserve EDR Street Level Internal Prot ST-FLDLG DOS-SEOMNT BROOKLYN 058-CONEYISLAND-STILLWELLAV-SEA-D/F/N/Q 858402 FLG: 058 - Coney Island-Stillwell Av - Normal EDR Street Level Internal Prot ST-FLDLG DOS-SEOMNT BROOKLYN 058-CONEYISLAND-STILLWELLAV-SEA-D/F/N/Q 858405 FLG: 058 - Coney Island-Stillwell Av - Comm Rm Street Level Internal Prot ST-FLDLG DOS-SEOMNT BROOKLYN 058-CONEYISLAND-STILLWELLAV-SEA-D/F/N/Q 859733 WPT: 2077 - Cranberry Tube - Weir Plate Track Level Internal Prot IN-WEIPL DOS-MOW-INF-HYD BROOKLYN 173-HIGHST-8AV-A/C 859734 WPT: 2080 - Cranberry Tube - Weir Plate Track Level Internal Prot IN-WEIPL DOS-MOW-INF-HYD BROOKLYN 173-HIGHST-8AV-A/C 859735 WPT: 2116 - Rutgers Tube - Weir Plate Track Level Internal Prot IN-WEIPL DOS-MOW-INF-HYD MANHATTAN 234-EASTBROADWAY-6AV-F 859736 WPT: 2119 - Rutgers Tube - Weir Plate Track Level Internal Prot IN-WEIPL DOS-MOW-INF-HYD MANHATTAN 234-EASTBROADWAY-6AV-F 859737 WPT: 2150 - 53 St Tube - Weir Plate Track Level Internal Prot IN-WEIPL DOS-MOW-INF-HYD QUEENS 274-COURTSQ-23ST-QBL-E/M 859738 WPT: 2152 - 53 St Tube - Weir Plate Track Level Internal Prot IN-WEIPL DOS-MOW-INF-HYD QUEENS 274-COURTSQ-23ST-QBL-E/M 859739 WPT: 3165 - Clark St Tube - Weir Plate Track Level Internal Prot IN-WEIPL DOS-MOW-INF-HYD BROOKLYN 334-CLARKST-CLK-2/3 859740 WPT: 3167 - Clark St Tube - Weir Plate Track Level Internal Prot IN-WEIPL DOS-MOW-INF-HYD BROOKLYN 334-CLARKST-CLK-2/3 859741 WPT: 3168 - Clark St Tube - Weir Plate Track Level Internal Prot IN-WEIPL DOS-MOW-INF-HYD BROOKLYN 334-CLARKST-CLK-2/3 859742 WPT: 3228 - Steinway Tube - Weir Plate Track Level Internal Prot IN-WEIPL DOS-MOW-INF-HYD QUEENS 464-VERNONBLVD-JACKSONAV-FLS-7 859743 WPT: 3229 - Steinway Tube - Weir Plate Track Level Internal Prot IN-WEIPL DOS-MOW-INF-HYD QUEENS 464-VERNONBLVD-JACKSONAV-FLS-7 859749 FLG: 168 - Spring St - Tunnel Sealing Track Level 95+00 Internal Prot IN-FLDLG DOS-MOW-INF-HYD MANHATTAN 168-SPRINGST-8AV-C/E 859747 FLG: 330 - South Ferry - Tunnel Sealing Track Level 204+55 Internal Prot IN-FLDLG DOS-MOW-INF-HYD MANHATTAN 330-SOUTHFERRY-7AV-1
+```
+[p162_c0002] _Page 6-103_
+
+## Page 163
+
+[p163_c0001]
+
+```text
+System Description Class Responsible Division Borough In/Nearest Station 859748 FLG: 330 - South Ferry - Tunnel Sealing Track Level 76+32 Internal Prot IN-FLDLG DOS-MOW-INF-HYD MANHATTAN 330-SOUTHFERRY-7AV-1 513089 FLG: 220 - 155 St Station (IND CON) - Stairway S1 ST-FLDLG DOS-SEO-MNT MANHATTAN IND-C-SUB-1332+01TO1667+51 513069 FLX: 287 - Flushing Av Station (IND XTN) - Stairway S1 ST-FLXGT DOS-SEO-MNT BROOKLYN 287-FLUSHINGAV-XTN-G 513059 FLX: 287 - Flushing Av Station (IND XTN) - Stairway S2 ST-FLXGT DOS-SEO-MNT BROOKLYN 287-FLUSHINGAV-XTN-G 944106 148 St Yard ST-FLDLG DOS-SEO-MNT MANHATTAN 436-HARLEM-148ST-LWP-3 944327 Coney Island Yard ST-FLDLG DOS-SEO-MNT BROOKLYN 070 - Bay 50 St – D 872727 FLG: St. George Terminal IN-FLDLG SI-MNT-INF STATEN ISLAND 501 – St. George
+```
+[p163_c0002] _Table 6-54_
+[p163_c0003] _Page 6-104_
+
+## Page 164
+
+### [p164_c0001] 6.2.8B DOS SSME Assets Requiring Inspection
+[p164_c0002] The following table describes the inspection/preventative maintenance schedule and responsible parties for the SSME Assets whose purchase price is greater than $5,000 and has a lifecycle of greater than a year.
+### [p164_c0003] Maintenance of Way Maintenance Schedule
+[p164_c0004]
+
+```text
+INSPECTION/PREVENTATIVE MAINTENANCE OF SSME ASSETS / EQUIPMENT Maintenance of Way (MOW) D. Gallo, A. Crespo EQUIP. TYPE Fixed or Deployable RESPONSIBLE SUB-DIVISION(s) Quantity FREQUENCY PROCEDURE RECORD-KEEPING Watertight Marine Doors (for Station Entrances) Fixed Mow Infrastructure (Iron) 6 Annual Inspection based on manufacturers guidelines. Routine maintenance done onsite, major repairs to be done on a as needed basis. Inspection findings are entered into the EAM Work Order Mow Infrastructure (Hydraulics) 69 Annual Inspection based on manufacturers guidelines. Routine maintenance done onsite, major repairs to be done on a as needed basis. Inspection findings are entered into the EAM Work Order Flood Panel Deployable (Stored On-Site) Mow Infrastructure (Hydraulics) 5 Annual Inspection based on manufacturers guidelines. Routine maintenance done onsite, major repairs to be done on a as needed basis. Inspection findings are entered into the EAM Work Order Flood Logs Deployable (Stored On-Site) Mow Infrastructure (Hydraulics) 18 Annual Inspection based on manufacturers guidelines. Routine maintenance done onsite, major repairs to be done on a as needed basis. Inspection findings are entered into the EAM Work Order Watertight Hatches Fixed Mow Infrastructure (Iron) 65 Annual Inspection based on manufacturers guidelines. Routine maintenance done onsite, major repairs to be done on a as needed basis. Inspection findings are entered into the EAM Work Order Mow Infrastructure (Hydraulics) 52 Annual Inspection based on manufacturers guidelines. Routine maintenance done onsite, major repairs to be done on a as needed basis. Inspection findings are entered into the EAM Work Order
+```
+[p164_c0005] _Page 6-105_
+
+## Page 165
+
+### [p165_c0001] INSPECTION/PREVENTATIVE MAINTENANCE OF SSME ASSETS / EQUIPMENT
+### [p165_c0002] Maintenance of Way (MOW)
+[p165_c0003] D. Gallo, A. Crespo
+[p165_c0004]
+
+```text
+Mechanical Closure Devices (MCDs) for Vents Fixed Mow Infrastructure (VOS) 1312 Annual Inspection based on manufacturers guidelines. Routine maintenance done onsite, major repairs to be done on a as needed basis. Inspection findings are entered into the EAM Work Order EQUIP. TYPE Fixed or Deployable RESPONSIBLE SUB-DIVISION(s) Quantity FREQUENCY PROCEDURE RECORD-KEEPING Deployable Vent Cover Crates Deployable (Stored Off-Site) Mow Infrastructure (CCS) • # of Crates: 47 • Total: 1794 Annual Inspection based on manufacturers guidelines. Routine maintenance done onsite, major repairs to be done on a as needed basis. Note: individual vent covers are not inspected because they have a value below $5K. Rather, we carry a surplus and replace defective covers as needed. In turn, inspections are of the crates of covers that are stored to ensure there's no visible damage to the stored crates. In addition, when performing a deployment, a visual inspection is conducted and no device with visual damage will be used during an event. Inspection findings are entered into the EAM Work Order Louver Panel Fixed Mow Infrastructure (Hydraulics) 1 Annual Inspection based on manufacturers guidelines. Routine maintenance done onsite, major repairs to be done on a as needed basis. Inspection findings are entered into the EAM Work Order
+```
+[p165_c0005] _Table 6-55_
+[p165_c0006] _Page 6-106_
+
+## Page 166
+
+### [p166_c0001] Staten Island Railway Maintenance Schedule
+[p166_c0002]
+
+```text
+INSPECTION/PREVENTATITVE MAINTENANCE OF SSME ASSETS / EQUIPMENT Staten Island Railway (SIRTOA) K. Coughlin, D. Zurita, L. Acosta EQUIP. TYPE Fixed or Deployable RESPONSIBLE SUB-DIVISION(s) Quantity FREQUENCY PROCEDURE RECORD-KEEPING Flood Gates/Logs (Clifton) Deployable (Stored on Site) Staten Island Railway – Maintenance 15 6-month rotational inspections within asset class Flood Gate/Log PM & Inspection Form Inspection findings are entered into the EAM Work Order Swing/Slide Gates (St George) Deployable ( Stored in Place) Staten Island Railway – Maintenance 4 6-month rotational inspections within asset class Flood Gate/Log PM & Inspection Form Inspection findings are entered into the EAM Work Order Flood Log Barriers Deployable ( Stored On Site) Staten Island Railway – Maintenance 3 6-month rotational inspections within asset class Flood Gate/Log PM & Inspection Form Inspection findings are entered into the EAM Work Order
+```
+[p166_c0003] _Table 6-56_
+[p166_c0004] _Page 6-107_
+
+## Page 167
+
+### [p167_c0001] Stations Maintenance Schedule
+[p167_c0002]
+
+```text
+INSPECTION/PREVENTATIVE MAINTENANCE OF SSME ASSETS / EQUIPMENT Facilities (Stations) D. Soliman, L. Lanfair, V. Bove EQUIP. TYPE Fixed or Deployable RESPONSIBLE SUB-DIVISION(s) Quantity FREQUENCY PROCEDURE RECORD-KEEPING Flex Gates (for Station Entrances) Fixed Facilities (Stations Maintenance) 72 Annual 3 rd Party Inspection based on manufacturers guidelines. Routine maintenance done onsite, major repairs to be done on a as needed basis. Inspection findings are entered into the EAM Work Order Flex Gates (for Yards) Fixed Facilities (Facility Operations) 3 Annual 3 rd Party Inspection based on manufacturers guidelines. Routine maintenance done onsite, major repairs to be done on a as needed basis. Inspection findings are entered into the EAM Work Order Watertight Marine Doors (for Station Entrances) Deployable (Stored On-Site) Facilities (Stations Maintenance) 41 Annual 3 rd Party Inspection based on manufacturers guidelines. Routine maintenance done onsite, major repairs to be done on a as needed basis. Inspection findings are entered into the EAM Work Order Facilities (Facility Operations) 1 Annual 3 rd Party Inspection based on manufacturers guidelines. Routine maintenance done onsite, major repairs to be done on a as needed basis. Inspection findings are entered into the EAM Work Order Watertight Marine Doors (For Yards) Fixed Facilities (Facility Operations) 5 Annual 3 rd Party Inspection based on manufacturers guidelines. Routine maintenance done onsite, major repairs to be done on a as needed basis. Inspection findings are entered into the EAM Work Order Flood Logs (Stop Logs) Deployable (Stored On-Site) Facilities (Stations Maintenance) 36 Annual 3 rd Party Inspection based on manufacturers guidelines. Routine maintenance done onsite, major repairs to be done on a as needed basis. Inspection findings are entered into the EAM Work Order Deployable (Stored On-Site) Facilities (Facility Operations) 1 Semi-Annual 3 rd Party Inspection based on manufacturers guidelines. Routine maintenance done onsite, major repairs to be done on a as needed basis. Inspection findings are entered into the EAM Work Order EQUIP. TYPE Fixed or Deployable RESPONSIBLE SUB-DIVISION(s) Quantity FREQUENCY PROCEDURE RECORD-KEEPING Inflatable Gasket Marine Door Fixed Facilities (Stations Maintenance) 4 Annual (in EAM included under Marine Door). 3 rd Party Inspection based on manufacturers guidelines. Routine maintenance done onsite, Inspection findings are entered into the
+```
+[p167_c0003] _Page 6-108_
+
+## Page 168
+
+### [p168_c0001] INSPECTION/PREVENTATITVE MAINTENANCE OF SSME ASSETS / EQUIPMENT
+### [p168_c0002] Facilities (Stations)
+[p168_c0003] D. Soliman, L. Lanfair, V. Bove
+[p168_c0004]
+
+```text
+(Stored In-Place ) major repairs to be done on a as needed basis. EAM Work Order Pedestrian Flood Door Fixed ( Stored In-Place ) Facilities (Stations Maintenance) 61 Annual 3 rd Party Inspection based on manufacturers guidelines. Routine maintenance done onsite, major repairs to be done on a as needed basis. Inspection findings are entered into the EAM Work Order Flood Panel Deployable ( Stored On-Site ) Facilities (Stations Maintenance) 26 Annual 3 rd Party Inspection based on manufacturers guidelines. Routine maintenance done onsite, major repairs to be done on a as needed basis. Inspection findings are entered into the EAM Work Order Watertight Hatches Fixed ( Stored In-Place ) Facilities (Stations Maintenance) 15 Annual 3 rd Party Inspection based on manufacturers guidelines. Routine maintenance done onsite, major repairs to be done on a as needed basis. Inspection findings are entered into the EAM Work Order Mechanical Closure Devices (MCDs) for Vents Fixed ( Stored In-Place ) Facilities (Stations Maintenance) 889 Listed under Facilities until Pick is completed. Devices will move to MOW. Inspection based on manufacturers guidelines. Routine maintenance done onsite, major repairs to be done on a as needed basis. Inspection findings are entered into the EAM Work Order
+```
+[p168_c0005] _Table 6-57_
+[p168_c0006] _Page 6-109_
+
+## Page 169
+
+### [p169_c0001] 6.2.8C Maintenance Guidelines for SSME Assets
+[p169_c0002] The information provided below describes the maintenance guidelines for the SSME Assets located in the manuals associated with each asset. This includes all assets with maintenance requirements, not just those identified in the schedule above. The full manuals can be found linked to the asset record in EAM.
+### [p169_c0003] Deployable Vent Covers
+[p169_c0004] Individual vent covers are not inspected because they have a value below $5K. Rather, we carry a surplus and replace defective covers as needed. In turn, inspections are of the crates of covers that are stored to ensure there's no visible damage to the stored crates.
+### [p169_c0005] Drain Plug - Walz & Krenzer, Inc. Removable Drain Plug
+- [p169_c0006] • General Maintenance ○ The removable floor drain plug requires very little maintenance. It is recommended that the drain plug logs be installed at least once a year to ensure that they are in the proper state of readiness. ○ The cover should be stored in a location that will prevent damage to it and its gasket. The life of the gasket will be greatly extended by keeping it out of direct sunlight, where possible. • Gasket and Sealing Surface of Frame ○ The gaskets should be checked every 6 months for cracking, tears or other damage. Small breaks may be fixed with cyanocrylate adhesive (super glue). More serious damage may require replacement of the gasket.
+### [p169_c0007] Flex-Gate - INPRO-71045 Stairwell Flex-Gate
+### [p169_c0008] Overview
+[p169_c0009] Maintenance on the Stairwell Flex-Gate™ system is minimal and straight forward. In the stowed configuration the fabric cover and all mechanical components are protected from the weather and tampering. If not deployed for a flood event, the recommendation is that once a year the system is exercised by performing a closing and opening cycle, and performing an inspection on critical areas. If the system was deployed and endured a flood event, an inspection and cycling of the closing and opening operations is required. If the desire is to open the transit system as quickly as possible, the inspection and cover drying steps can be postponed and performed at a later time.
+[p169_c0010] The following sections describe the maintenance for a nominal yearly check-out and for a post-flood check-out. Any standard components that could potentially need replacement can be found in the Appendix A parts List of the Operation Maintenance Manual . These items can be ordered by using the contact information at the end of this manual. If there is damage to parts of the Flex-Gate™ that are not in the Appendix A list, use the contact information to have the damage assessed by ILC Dover personnel.
+[p169_c0011] _Page 6-110_
+
+## Page 170
+
+### [p170_c0001] Periodic Maintenance
+[p170_c0002] The following instructions are for performing a ‘routine’ maintenance on the Stairwell Flex-Gate™. This maintenance should be performed at least once a year to ensure the Flex-Gate™ is ready for a quick and problem free closure in the event of a potential flood condition. The assumption is that the Flex-Gate™ is in the configuration described at the end of the opening instructions of section 4.2 in the Operation Maintenance Manual .
+- [p170_c0003] o Perform an inspection on the external surfaces of the Flex-Gate™ system. ▪ Significant dents or piercing of the storage box or gate guide covers should be evaluated to determine if repair is required. ▪ Check along the sealing interfaces between the storage hatch and the retraction hatch closures. These interfaces should not have gaps. The doors should not be loose. ▪ Check along the sealing interfaces between the frame and the gate guide covers. These interfaces should not have gaps. The covers should not be loose. ▪ Check any attachment interfaces on the storage box. The mating joints should not be loose or have gaps that would allow debris to get into the storage box. o Close the Flex-Gate™ cover following the instructions in section 4.1 in the Operation Maintenance Manual and perform the following inspections during and after the closure: ▪ The tools required and the stairwell closed sign should be stowed within the system and be in good condition. ▪ The gate guides should not have any debris in them, or exposed sharp edges and the protective covers should swing completely down (sides) and be able to lock open (deployment hatch at header). ▪ The fabric cover should have deployed without hanging up, or only minor jamming that was easily resolved by hand adjustment of the fabric cover as it was closing. ▪ The cover end bar should be seated under the clamp bar and the clamp bar hardware secured and tightened without cross-threading of the hardware. ▪ The edges of the cover should be completely inside the gate guide. ▪ The cover material should not have any holes or tears. ▪ Check the underside of the cover for damage. Inspect the waterproof cover material, webbings and frame-to cover interface. ▪ Verify that all screws and inserts are not cross-threaded and operate smoothly. If any screws do not insert smoothly, add more anti-seize to screws or use corresponding tap and re-tap holes. Replace any damaged stainless steel screws. o Open the Flex-Gate™ cover following the instructions in section 4.2 in the Operation Maintenance Manual and perform the following inspections during and/or after the opening: ▪ The cover should retract without binding, or only have minor jamming that was easily resolved by hand adjustment of the fabric cover as it was retracting. ▪ The cover end bar should be completely retracted inside the deployment hatch.
+[p170_c0004] _Page 6-111_
+
+## Page 171
+
+- [p171_c0001] ▪ The dam plungers should be inspected for degradation. The recommendation is to replace the plungers every 5 years or sooner if there are signs of damage or deteriorating material. ▪ Complete the opening instructions and leave the Flex-Gate™ in the nominal open configuration.
+[p171_c0002] Repeat the closing and opening as required to ensure proper operation or fully understand what is causing a problem. If a problem component is found, replace the field replaceable item using only the components and sources identified in the parts list in Appendix A in the Operation Maintenance Manual . If the system does not properly operate or a more extensive repair is required, use the contact information in section 7 of the Operation Maintenance Manual to have ILC Dover personnel repair the system using acceptable parts.
+[p171_c0003] The storage box should also be inspected for noticeable powder coating damage. If a repair is required, use the following procedure to touch up.
+- [p171_c0004] ○ Powder Coating Touch-Up Procedure ▪ Using a silicon sheet, cut to the size of the repair area. ▪ Apply Powdered PLASCOAT to area and press/smooth into scratch/gouge using silicon sheet. ▪ Heat area with heat gun to soften powder. ▪ Roll with LEISTER 28MM PTFE Pressure Roller # 106.976. ▪ Allow to cool completely.
+### [p171_c0005] Post Flood Maintenance
+[p171_c0006] The following instructions are for performing maintenance on the Stairwell Flex-Gate™ after it has been deployed and exposed to a flood event. This operation should be performed as soon as possible after a flood event. The assumption is that the Flex-Gate™ is in the configuration it is left in at the end of the closing instructions.
+- [p171_c0007] ○ Perform an inspection on the external surfaces of the Flex-Gate™ system. ▪ Significant dents or piercing of the storage box or gate guide covers should be evaluated for needed repair. ▪ Drain any water that is on the cover. Remove any debris or significant accumulations of dirt. ▪ Carefully check the interface between the cover and the frame gate guide and clear any small, trapped debris that may have become lodged in during the flooding. Debris in this area may jam the retraction operation and/or damage the cover. ▪ Check frame interface to grout and concrete for continuity. ▪ Check the underside of the cover for damage. Inspect the waterproof cover material, webbings and frame to cover interface.
+[p171_c0008] _Page 6-112_
+
+## Page 172
+
+- [p172_c0001] ▪ Check any attachment interfaces that are on the storage box. The mating joints should not be loose or have gaps that would allow debris to get into the storage box. ○ Open the Flex-Gate™ cover following the instructions in section 4.2 and perform the following inspections during and/or after the opening: ▪ The cover should have retracted without any hanging up, or only have minor jamming that was easily resolved by hand adjustment of the fabric cover as it was retracting. ▪ Check the outside surface of the cover. Ensure there are no rips, abraded areas or punctures. ▪ The cover end bar should be completely retracted inside the deployment hatch. ▪ Inspect the frame gate guide covers for damage. ▪ Complete the opening instructions and leave the Flex-Gate™ in the nominal open configuration. ▪ Check along the sealing interfaces between the storage hatch and retraction hatch. These interfaces should not have gaps. The doors should not be loose. ▪ Check along the sealing interfaces between the gate guide covers and the gate guides. These interfaces should not have significant gaps. ○ If a problem component is found, replace the field replaceable item using only the components and sources identified in the parts list in Appendix A. If a more extensive repair is required, use the contact information in section 7 of the Operation Maintenance Manual to have ILC Dover personnel repair the system using acceptable parts. ○ Further cycling of the cover may be desired to ensure proper operation. Additional closing and opening of the Flex-Gate™ can be performed use the steps in sections 4.1 and 4.2 of the Operation Maintenance Manual .
+### [p172_c0002] Flood Gate
+### [p172_c0003] Walz & Krenzer, Inc. Sliding Flood Gate
+[p172_c0004] The floodgate requires very little maintenance. The lip seal gasket should be checked every 6 months for cracking, tears or other damage. The corners in particular should be checked for separation. Small breaks may be fixed with cyanocrylate adhesive (super glue). More serious damage may require replacement of the gasket.
+[p172_c0005] The trolley rollers and ratchet jacks are mechanical items that should be checked to ensure smooth operation. If they are compromised by corrosion or other damage, they should be replaced.
+[p172_c0006] It is recommended that the flood gate be closed and hose tested at least once a year to ensure is in the proper state of readiness.
+### [p172_c0007] Walz & Krenzer, Inc. Hinged Flood Gate
+- [p172_c0008] • The gaskets should be inspected twice a year for wear and damage. • The following items should be checked and greased if needed:
+[p172_c0009] _Page 6-113_
+
+## Page 173
+
+- [p173_c0001] o The acme thread of the handwheel shaft should be coated with grease for easy operation. o The lipseal gasket corners can have their sealing edges coated with Vaseline or similar jelly prior to the door closing. This lubrication can help ensure that the gasket will seat properly with the frame corner. o Hinges should be greased via the grease fitting located on the hinge blade. General purpose grease is acceptable. • If the lipseal gasket needs to be replaced, the panel will need to be jacked up to gain access to the bottom gasket. The hinges are designed to allow several inches of movement. The panel will need to be swung open by 45 degrees or more to allow clearance at the upper rim when the panel is lifted. See sketch below for the location of the jack at the bottom hinge. • Lubricate hinge points periodically (at least once a month). • Gaskets and bearings are the parts most likely to wear over time and require replacement. • A hose test should be performed at least once a year to verify the gate's watertight integrity. This, along with the greasing, should be considered the preventative maintenance that should be recorded yearly in the front of this manual.
+### [p173_c0002] Flood Log
+### [p173_c0003] Presray Flood Barrier- Clifton Shop
+[p173_c0004] Periodically inspect the blood barrier assembly, particularly the gaskets, for signs of excessive wear or damage. The frame sill sealing area should be kept clean and smooth. Small scratches, nicks, and gouges should be ground or filed smooth. Always grind and file in the longitudinal direction. Grinding or filing across the lay of the gasket could create a leak path. If the damage is severe, fill such areas and then grind or file smooth to obtain the original surface profile.
+[p173_c0005] Note: Even slight damage to the gasket may hinder its ability to provide leak tight protection. Field repairs or patching are not recommended. Such repairs may not hold up during a high water condition. If there is any doubt as to the severity of damage to the gasket, contact Presray. P.O. Box 200, Wassaic, NY (845) 373-6700 Fax: (845) 855-8034 E-Mail: service@presray.com
+### [p173_c0006] Presray FL-HD Flood Barrier System- FASTLOG Aluminum Flood Logs
+[p173_c0007] Presray Corporation recommends that your flood barriers be operated every three (3) months and prior to an anticipated flood. This will allow time for any minor problems to be corrected and will ensure reliable flood protection. Contact Presray if you have any questions. Periodically inspect the flood barrier assembly and immediately prior to every deployment, particularly the gaskets, for signs of excessive wear or damage. The frame sill sealing area should be kept clean and smooth. Small scratches, nicks, and gouges should be ground or filed smooth. Always grind and file in the longitudinal direction. Grinding or filing across the lay of the gasket could create a leak path. If the damage is severe, fill such areas and then grind or file smooth to obtain the original surface profile.
+[p173_c0008] NOTE: Even slight damage to the gasket may hinder its ability to provide adequate leak protection. Field repairs or patching are not recommended. Such repairs may not hold up during a high water condition. If there is any doubt as to the severity of damage to the gasket, contact Presray.
+[p173_c0009] IMPORTANT-At each deployment/ installation apply EckR-Q corrosion protection coating or approved equivalent to all metallic hardware (per DWG note 11 or 12) per manufacturer's instructions. For direction on how to apply the coating please see "Eck® Corrosion Prevention Coating - Application Instructions."
+[p173_c0010] _Page 6-114_
+
+## Page 174
+
+### [p174_c0001] Walz & Krenzer, Inc. Stop Log Flood Barriers
+[p174_c0002] The logs should be stored in a dry cool place away from direct sunlight and weather. He shrouds will protect the gaskets at the frame.
+[p174_c0003] Each opening will have 1 bottom log assembly and a specific number of intermediate log assemblies.
+[p174_c0004] The system requires very little maintenance. The gaskets should be checked every 6 months for cracking, tears or other damage. Small breaks may be fixed with cyanocrylate adhesive (super glue). More serious damage may require replacement of the gasket. It is recommended that the logs be deployed at least once a year to ensure that they are in the proper state of readiness.
+### [p174_c0005] SAK Enterprises, Stackable Flood Barrier
+- [p174_c0006] • Periodically inspect the STE-100 system and all parts for signs of wear or abuse. • DO NOT coat the seals with any product such as a silicone spray or any solvents as damage will occur. • DO NOT paint the seals. • If seals are damaged, contact SAK Enterprises, Inc. customer service by phone, (941) 981-3669, or email info@sakenterprise.com for ordering replacement seals. • DO NOT store the STE-100 Stackable Extrusions in a matter that will compress or pinch the seals. They can be stored on the side or the bottom STE-100 Stackable Extrusion can be stored upside down and the remaining STE-100 Stackable Extrusions can be stored with the top seals up. • Storing the STE-100 Stackable Extrusions in direct sunlight will shorten the life of the seals. Storage in a building, closet or storage building is recommended. • Periodically inspect Jamb frames for damage. Damaged parts can be replaced by contacting SAK Enterprises, Inc. customer service, (941) 981-3669. • DO NOT use the STE-100 Stackable system for any other use than it was designed for.
+### [p174_c0007] Flood Panel
+### [p174_c0008] Walz & Frenzer, Inc. Removable Lip Seal Flood Barriers
+[p174_c0009] The floodgates require very little maintenance. The lip seal gaskets should be checked every 6 months for cracking, tears or other damage. The corners in particular should be checked for separation. Small breaks may be fixed with cyanocrylate adhesive (super glue). More serious damage may require replacement of the gasket. It is recommended that the panels be installed at least once a year to ensure that they are in the proper state of readiness
+### [p174_c0010] Flood Break Louvered Vent Panel
+### [p174_c0011] MAINTENANCE PROCEDURES:
+- [p174_c0012] • TO BE PERFORMED - Periodically
+[p174_c0013] IMPORTANT NOTICE: Please refer to MANUAL DEPLOYMENT OF THE FAN PLANT 5104 FLOODBREAK VSL SYSTEM before performing any maintenance tasks to ensure proper and safe operation.
+[p174_c0014] After an actual flood event perform these tasks to ensure proper seating of the gate panel in the assembly.
+[p174_c0015] _Page 6-115_
+
+## Page 175
+
+- [p175_c0001] • Check gate panel & shell for visible damage. • Check all gasket flange bolts for proper tightening. • Clean assembly of all debris and keep the area clean throughout the gate travel path. • If the panels are not returning the horizontal at rest position, it may be necessary to clean the pans from the wet side of the VSL unit. To do so, ○ Make certain that the louvers are secured and will not fall on the operator while cleaning. Making use of the locking pin on the manual deployment actuator is advised as well as additional prevention such as wooden blocks placed to prevent complete and sudden closure of the louver panels once freed. ○ Obtain access to the wet side of the VSL units. Outside of the building. ○ Remove the screws holding the screen mesh retaining bars in place around the affected compartment(s) ○ Place the screen(s), screws, and retaining bars out of the way for safe working space. ○ Clean out any collected debris from inside of each affected compartment and underside of louver panel(s). Ensure the area between the gasket edges and compartment walls are very clean. ○ Remove the locking pin(s) if installed as well as any additional items placed for temporary securing of the VSL louver(s) ○ Test the rotation of the VSL louver(s) assuring that each will return to a completely open or horizontal position allowing for maximum air flow and flood readiness. ○ Reinstall the screen(s), retaining bars and screws. Replace any damaged hardware. • Inspect hinges to ensure proper alignment & ensure they are butted securely to the hinge mounting angle. • Check flexibility and integrity of gasket. • Check VSL perimeter grouting and sealing on the wet side or outside of the building. Repair as needed. • Cleaning the unit of any remaining debris with a high-pressure hose or wet/dry vacuum is acceptable if the unit is accessible.
+[p175_c0002] Should the inspection result in findings of visible damage, problems in the full motion of the unit, or if replacement gaskets or parts are needed; parts and services are available from FloodBreak through your local representative or sending an email to info@floodbreak.com Locate the FloodBreak I.D. tag, which is attached to an interior wall of the VSL (typically the second compartment up from the bottom) and write down the serial number. This information is needed to determine the proper gasket dimensions for the unit.
+### [p175_c0003] Replacement:
+- [p175_c0004] • Panels, hinges & unit shell are designed for decades of service life • Gaskets (seals) are designed for a minimum ten-year service life. It is possible, however, for the seals to be damaged due to flooding events or misuse, therefore periodic inspection is recommended. The seals are designed for easy replacement in the case of damage. • Note: Contact FloodBreak for replacement gasket and replacement kit. • Call 713-980-6610 or email us at info@floodbreak.com . • Please reference the Serial ID # located on the affected VSL unit.
+### [p175_c0005] Manhole Insert - The Rainstopper
+[p175_c0006] Neoprene gaskets - The design life of our neoprene gasket is 50 years, but gaskets can be subject to damaged due to situations out of manufacturer's control. Upon notification of gasket damage, manufacturer will furnish replacement gasket material at no cost to the customer, regardless of cause of damage. Long term exposure to UV rays will deteriorate gasket, so care should be taken to protect units.
+[p175_c0007] _Page 6-116_
+
+## Page 176
+
+[p176_c0001] If, after installation, a substantial reduction in flow is not achieved, a severe problem with inflow (other than through the manhole lids) and infiltration can be assumed and should be addressed immediately.
+### [p176_c0002] Marine Door - Presray D3DQA Watertight Door
+### [p176_c0003] GENERAL MAINTENANCE
+[p176_c0004] It is recommended that an annual inspection be made of all parts. They should be visually checked for cracks or corrosion. Any cracks must be repaired and all corrosion should be removed and the affected area repainted. The combing edge should be kept clean and smooth. Small scratches, nicks and gouges should ground or filled smooth. Always grind or file in the longitudinal direction. Grinding or filling across the lay of the gasket could create a leak path. If damage is severe, fill such areas and then grind or file them smooth to obtain the original surface profile and finish of 63.
+### [p176_c0005] GASKET MAINTENANCE
+[p176_c0006] The gasket should be inspected for damage and other signs of wear or abuse. Damaged gaskets should be replaced. Note: Even slight damage to the gasket may void its ability to provide leak tight protection. If the user has any doubt as to the severity of the damage to the gasket, contact Presray.
+[p176_c0007] Regardless of the condition, at five-year (5) year intervals the gasket should be replaced along with the seal in the hand lever assembly. Contact Presray for replacement gaskets. To replace the gasket refer to the applicable Presray drawing (in manual O&M Quick Acting Marine Door.pdf ) and the following steps:
+- [p176_c0008] • Remove the old gasket by cutting into it and working a putty knife between the gasket base and the retainer. • Clean all traces of the gasket material and old adhesive from the retainer channel. • Use RTV silicone (Momentive Industries Series 108 or other equivalent). Apply adhesive to the base of the gasket and retainer channel per manufacturer's instructions. • Install the new gasket starting at the corners and working towards the centers of each side. Remove any excess adhesive and perform a thorough visual inspection.
+### [p176_c0009] "O" RING REPLACEMENT
+[p176_c0010] For replacement of the shaft "O" ring, refer to the applicable Presray drawing (in manual O&M Quick Acting Marine Door.pdf ) and the following sequence of diagrams:
+### [p176_c0011] Walz & Krenzer, Inc. Inflatable Gasket Watertight Door
+[p176_c0012] The floodgates require very little maintenance. It is recommended that the panels be installed at least every three months to check for damage.
+- [p176_c0013] • Gasket and Sealing Surface of Frame o Leave each gasket inflated for 30 minutes and check that air pressure does not drop over time.
+### [p176_c0014] PS Flood Barriers Pedestrian Flood Door
+[p176_c0015] Inspection and Maintenance (Minimum Annually)
+- [p176_c0016] • Panel, Frame, and Embedded items:
+[p176_c0017] _Page 6-117_
+
+## Page 177
+
+- [p177_c0001] ○ Inspect items for damage and misalignment. Adjust, repair, or replace as needed, to meet original design tolerances. ○ Check all connections, making sure they meet original design standards (refer to Approved for Construction Drawings and Anchor Specifications). ● Fasteners and mechanical connections: ○ All fasteners must be in place and adjusted to their original design standards. Replace any damaged components (refer to Approved for Construction Drawings and Anchor Specifications). ● Sealants and Waterstops: ○ Inspect all sealants used on frame and connections to insure their effectiveness. ○ Replace any cracked, loose, or otherwise non-performing sealants. ● Use only factory approved/supplied products. ○ Factory approved sealant/waterstops: Sika; Sikaflex-227, Quellpaste Typ E ● Gasketing: ○ Inspect all gaskets for damage, continuous adhesion to the attached surface, and proper positioning and compression. ○ Visually inspect all gaskets for proper positioning and compression. ○ Replace or repair if damage or deterioration to gaskets has occurred. ○ Use only factory approved materials (refer to Approved for Construction Drawings) ○ CRITICAL Gaskets are a critical component of the Flood Barrier protective performance and must meet minimum compression tolerances in the latched position. ● Latching: ○ Operate all latching hardware to ensure smooth, uninhibited movement of all mechanical components. ○ Place flood barrier and check latches for proper engagement. If gaskets are not properly positioned and properly compressed, unlatch barrier panel and adjust latching accordingly. ● Finishes: ○ Inspect and clean finishes annually. ○ Touch-up repair finishes, or refinish as necessary to protect the structural integrity of the Flood Barrier. ● Labels and Placards: ○ Inspect all labels and placards. ○ Replace any labels and placards which are unreadable/missing. ● Housekeeping: ○ Clean sill and jambs of any debris and keep the area clean throughout flood barrier opening. ○
+### [p177_c0002] Walz & Krenzer Sliding Flush Still Watertight Doors
+[p177_c0003] The watertight doors require very little maintenance. They should be visually inspected twice a year or as required to determine the condition of the gasket, contacting edge (knife edge) of the frame, and the operating mechanism (dogs).
+[p177_c0004] Gasket and Contacting Edge (Knife Edge) of Frame: The gasket should be clean and pliable. Check gasket for cracking and checking. Replace when required (see “Repair & Replacement” below). The contacting edge (knife edge) of the door frame should be
+[p177_c0005] _Page 6-118_
+
+## Page 178
+
+[p178_c0001] smooth and clean. Rough edges will cause wear of the gasket, and unevenness of the edge and deterioration of the gasket may affect the water tightness of the door.
+[p178_c0002] Operating Mechanism: Operate the door to check for smoothness of the dogging mechanisms and effective dogging action. Check the compression of the gasket by the standard chalk test described above.
+### [p178_c0003] Vent Shaft System
+### [p178_c0004] Flood Break Vent Shaft System
+[p178_c0005] Maintenance Procedures:
+[p178_c0006] TO BE PERFORMED PERIODICALLY (Annually at a minimum.)
+- [p178_c0007] • Secure area for inspection using established MTA safety procedures. ○ Inspect unit from street level to ensure no visible evidence of damage or tampering. ○ Remove grating from Maintenance unit (FB-VSC-M) following established MTA procedures. • Removal of Panel Assembly (Sequence shown in photos below) ○ This step requires two MTA operators. ○ Set up a maintenance stand in a safe level location close to vent bay. The lift stand should be level and secured from rolling. The stand is adjustable to accommodate any length MCD. ○ Rotate the two lifting handles located on top of the main support 90 degrees into an upright position. ○ Lift out of vent bay by using the handles or insert an approved MTA lifting bar through the upright lifting handles on the gate assembly. With an operator on each side, use the lifting bar to slide the assembly up and out of the vent bay. ○ When removed, place the assembly on the properly secured maintenance stand. ○ Secure the lift-assist arm by depressing it and sliding the lock into place. Panel assembly is now ready to be reinserted into MCD shell once maintenance work is completed. • Replacing panel assembly
+[p178_c0008] Note: Before replacing the panel assembly, be sure that the lift-assist arms are locked in the correct position. Depress the lift-assist arm and slide the lock into place. Panel assembly is now ready to be reinserted into MCD.
+- [p178_c0009] ○ This step requires two MTA operators. ○ Rotate the two lifting handles located on top of the main support 90 degrees into an upright position. ○ Lift MCD off the stand, by using the handles or inserting an approved MTA lifting bar through the upright lifting handles on the gate assembly. With an operator on each side, lift the assembly from the stand and carry to the vent bay. ○ Align notched end of the assembly with the corresponding guide on the MCD shell wall. The assembly can only go in one way. ○ Slide the assembly into place. It should slide freely and self-align. No locking is required. ○ Reach down and release the lift-assist arm lock. Repeat step on 2nd panel. Unit is ready for deployment. ○ Return lifting handles to the original rest position
+[p178_c0010] _Page 6-119_
+
+## Page 179
+
+- [p179_c0001] o Replace gratings per established MTA procedures.
+### [p179_c0002] Inspection of MCD Units
+### [p179_c0003] • Inspection in Vent Bay
+[p179_c0004] If inspecting the FloodBreak VSC-M units in a battery from below without removing all the operating units from the bays, then lower an MTA-approved ladder into an open bay per established MTA procedures and inspect device from below.
+- [p179_c0005] o Clean sill and jambs of all debris and keep the area clean throughout the gate travel path. o Inspect hinges to ensure proper alignment. o Check flexibility and integrity of gasket. o Check all gasket flange bolts for proper tightening. o Check drain & perimeter grouting. o Inspect and clean finishes periodically.
+### [p179_c0006] • Inspection of Assembly while in MCD Stand
+[p179_c0007] If inspecting the operating unit while on the maintenance stand, follow the above procedures except for the ladder step. Replace removed panel assembly to vent bay (See Replacing Panel Assembly).
+### [p179_c0008] Reporting Damage
+[p179_c0009] Should the inspection result in findings of visible damage, problems in the full motion of the unit, or if replacement gaskets or parts are needed; parts and services are available from FloodBreak through your local representative or sending an email to info@floodbreak.com .
+[p179_c0010] Locate the FloodBreak I.D. tag, which is found on the gate panel, and write down the serial number. This information is needed to determine the proper gasket dimensions for the unit.
+### [p179_c0011] Watertight Hatch
+### [p179_c0012] Bilco Doors
+### [p179_c0013] • Bilco Type FT-AL and FTD-AL Flood Tight Hatch
+[p179_c0014] This unit is supplied in mill finish aluminum. No finish painting is required. Clear any dirt and debris from the frame area which would prevent the door from seating on the frame when closed. The channel frame and flood tight gasket must be regularly cleaned and cleared of all dirt and debris. Occasional oiling of the hinges, lock and rear portion of lower tubular spring housings will assure smooth, trouble-free operation.
+### [p179_c0015] • Bilco Type J H20 (Stainless Steel-Type 316) Access Door with Cage
+[p179_c0016] The channel frame, drain coupling and drip channel must be kept clear of dirt and debris at all times to maintain proper water drainage. Occasional oiling of the hinges will assure smooth, trouble-free operation.
+### [p179_c0017] • Information for Handling Failed Components for all Bilco Products
+- [p179_c0018] o Identify the failed component o Call Bilco Replacement Parts Department and inform them of failed component. 203-934-6363
+[p179_c0019] _Page 6-120_
+
+## Page 180
+
+- [p180_c0001] o CAUTION: If any of the lifting mechanisms or hold open arms fail, please be careful of falling cover. Keep all hands and feet away from the edges of the opening.
+### [p180_c0002] Walz & Krenzer, Inc. Emergency Egress Hatches
+- [p180_c0003] • Maintenance of the Emergency Egress Hatches
+[p180_c0004] The watertight hatches require very little maintenance. They should be visually inspected once a year or as required to determine the condition of the gasket, the sealing surface of the frame and the operating mechanism.
+- [p180_c0005] • GASKET AND SEALING SURFACE OF FRAME
+[p180_c0006] The gasket should be clean and pliable. Check gasket for cracking and checking. Replace when required (see Section 6.0 below). The sealing surface of the hatch frame should be smooth and clean. Dirt and debris that may have fallen through the gap between panel and frame should be cleaned. A rough or dirty sealing surface will cause wear of the gasket and may affect the water tightness of the hatch.
+- [p180_c0007] • OPERATING MECHANISM
+[p180_c0008] Operate the hatch to check for smoothness of the panic bar and effective latching action. Check the compression of the gasket by the standard chalk test per Section 3.0 described above. If the panic bar or lock assembly does not operate freely, see Section 6.0 below.
+- [p180_c0009] • DRAINS
+[p180_c0010] Drain should be cleared on an as needed basis to prevent standing water from collecting in the frame trough. This is particularly important in the winter when ice formation can inhibit the operation of the hatch. It is recommended that ball valve drain be closed during hurricane season for watertightness and opened during winter for drainage.
+- [p180_c0011] • ICE
+[p180_c0012] If the drains are operational, there should not be significant water to form ice in the trough between the panel and frame. However, if ice is a problem, WK recommends that the frame sealing surface be wiped clean and coated with a light coating of 30 weight motor oil. This will disrupt ice adhesion to the sealing surface.
+### [p180_c0013] 6.2.8D DOS SSME Asset Spare Part Inventory Process
+[p180_c0014] A review of the Asset manuals identified spare parts for the following Storm Surge Mitigation Equipment. Below are those assets which have a spare part list:
+[p180_c0015]
+
+```text
+Asset Type Asset Name Flex-Gate INPRO-71045 Stairwell Flex-Gate FloodGate Walz & Krenzer, Inc. Sliding FloodGate FloodGate Walz & Krenzer, Inc. Hinged FloodGate Flood Log Presray Flood Barrier Flood Log SAK Flood Barrier Marine Door Walz & Krenzer Inflatable Gasket Marine Door Marine Door Walz & Krenzer Watertight Stairway Cap
+```
+[p180_c0016] _Page 6-121_
+
+## Page 181
+
+[p181_c0001]
+
+```text
+Marine Door Presray Watertight Door Manhole Insert Watertight Manhole Inserts Watertight Hatch Watertight Hatch Watertight Hatch Emergency Egress Hatch Louver Panel FloodBreak VSL Vent Bay-MCD FloodBreak MCD
+```
+[p181_c0002] An inventory of the required spare parts can be found on the MTA Emergency Management and Preparedness SharePoint page or attached to the Asset in the Documentation tab of the record in EAM. Purchased spare parts will be maintained by the Divisions. The number of each spare part and its location will be recorded in the SSME Spare Parts Inventory document .
+### [p181_c0003] 6.2.9 Hours of Service
+[p181_c0004] The NYCT works in conjunction with frontline workers to ensure all workers are rested and prepared to safely complete their duties. Currently, except in an emergency, no employee may work more than sixteen hours of work from the moment s/he begins work until the time s/he finishes.
+[p181_c0005] Before assigning an employee to any overtime work, local supervision must ensure that the employee will complete the work within the sixteen-hour limit. Local supervision is responsible for and must ensure that any employee working overtime will be relieved so that they have a minimum of eight hours between tours.
+[p181_c0006] Management must enforce the sixteen-hour limit and will be held responsible for any violations. Failure by the employee to notify Supervision will result in the employee being considered working without authorization after the sixteenth hour and may result in disciplinary action. In addition to the above, no employee may work more than thirteen (13) consecutive days.
+[p181_c0007] NYCT is exploring additional strategies to continue to improve its fatigue mitigation efforts.
+### [p181_c0008] 6.3 Investigations
+[p181_c0009] This subsection discusses the criteria associated with the identification of accidents and incidents that require an investigation, notification to external agencies and the generation of required accident/incident reports. Additionally, the section outlines the investigative processes associated with rail accidents, industrial accidents, employee fatalities and employee on the job injuries.
+[p181_c0010] The OSS Rail Field Safety Unit (RFSU) conducts investigations of escalator incidents resulting in customer injury requiring medical treatment, due to escalator defects. The OSS division of Fire Safety conducts investigations of fire incidents and incidents of falling debris/structural failures. The OSS division of Rapid Transit Investigations conducts investigations of rail incidents, accidents and near misses and of serious industrial incidents resulting in employee hospitalization or significant property loss and employee fatality incidents. After the completion of an investigation, a final report with recommendations to develop and implement corrective action plans (CAPs) is issued. Congruently, the final report is also sent to the PTSB; the PTSB responds
+[p181_c0011] _Page 6-122_
+
+## Page 182
+
+[p182_c0001] with a CAP approval letter. Within a two-month timeframe, the operating department/division develops and issues a CAP to OSS for review and approval to ensure that actions by the operating department/division will minimize, control, correct, or eliminate the risks and hazards identified by the CAP. The CAPs are entered into a database and tracked until closed. Once a CAP is closed by OSS, the CAP including all documentation that pertains to the closure of the CAP are sent to the PTSB for approval and acceptance via a CAP closeout letter. OSS submits quarterly or monthly progress reports to the PTSB. Emergency CAPs initiated by NYCT to ensure safety prior to review and approval by the PTSB are submitted to the PTSB for approval.
+[p182_c0002] If there is dispute regarding a CAP between the PTSB and NYCT, the PTSB program is the authority in this process; however, NYCT will explain their position to the PTSB. At the end of these discussions, the PTSB SSO program has the final approval and authority.
+### [p182_c0003] 6.3.1 Notifications
+### [p182_c0004] 6.3.1A Department of Subways Notifications
+[p182_c0005] The Operations Control Center (OCC) shall notify the Office of System Safety (OSS) of all incidents involving:
+- [p182_c0006] • A fatality at the scene: or where an individual is confirmed deceased within thirty (30) days of a rail transit-related incident. • Collision with an individual (i.e. any individual contacting a moving train). • Person riding on the outside of the train (e.g. surfer) ONLY when it results in an injury or fatality. • All serious injuries (Employee or Customer) - must meet the following criteria: ◦ Requires hospitalization for more than 48 hours, commencing within 7 days from the date of the injury. ◦ Results in a fracture of any bone, except simple fractures (i.e. fingers, toes, nose). ◦ Causes severe hemorrhages, nerve, muscle, or tendon damage. ◦ Involves any internal organ. ◦ Involves second or third-degree burns, or any burns affecting more than 5 percent of the body surface. • Two (2) or more persons transported for at least medical assessment, no obvious serious injury. • Derailment includes all rail equipment, on the mainline or in a yard. • Collisions involving a rail transit vehicle with another rail transit vehicle. Including Hard Adds. • Collision of a rail transit vehicle, with a motor vehicle, bumping block, and tie bumpers. • Evacuations of trains to the roadbed or catwalk, self-evacuations, or life safety reasons. • Evacuations of Station areas. • Runaway train. • Switch run through. • Side Door Drags. • False Clear Signal Aspects/Incorrectly Displayed Signal Aspects.
+[p182_c0007] _Page 6-123_
+
+## Page 183
+
+- [p183_c0001] • Doors open en route. • Doors Opened on Wrong Side Without an Accessible Platform. • Roadway Worker Protection Incidents: ◦ Third Rail Explosions involving Work Procedures. ◦ General Order Violations. ◦ Portable Trip Overruns. ◦ Improper Flagging. ◦ Train Operator fails to sound horn when passing through an established flagging area and/or Train passes work area at excessive speed. ◦ Power On in a Power Off Area ◦ Unauthorized Reverse or Wrong Rail Moves (Potential employee contact only). • Explosions on any Transit Property. • Escalator accidents. ONLY if the escalator is operating at time of incident, and medical is requested. • Damage to the Third Rail that disrupts service, including significant third rail damage. • Property damage of $25,000 or more to rail vehicles or rail-related infrastructure or facilities. • Asbestos emergencies. • Steam Pipe Explosions occurring in Manhattan south of 96th Street. • Passenger or community exposures to hazardous substances. • Spills of hazardous materials, regardless of quantity, that enter the ground or sewer. • Spills of hazardous materials of more than 5 gallons that do not enter the ground or sewer. • Fan plants removed from service. • Emergency alarm boxes removed from or taken out of service (via fax). • Fires: ◦ Any significant fire, resulting in extensive service delays, and/or cause a serious injury or a fatality. ◦ In any Transit facility (i.e. shop, barn, storeroom, station room, concession stands, trains, token booths). ◦ Fires resulting from the actions of an outside contractor working on Transit property. • Activation of a fire suppression system. • Any hazardous condition determined to be an Unacceptable Hazardous Condition.
+### [p183_c0002] 6.3.1B Office of System Safety Notifications
+### [p183_c0003] I. Public Transportation Safety Board (PTSB) Criteria Accidents
+[p183_c0004] OSS shall notify the PTSB (Phone number (800)866-9368 within ninety (90) minutes of all accidents for which the PTSB has primary responsibility in accordance with Title 49 CFR, Part 674.
+### [p183_c0005] II. Federal Transportation Administration (FTA) Criteria Accidents
+[p183_c0006] _Page 6-124_
+
+## Page 184
+
+[p184_c0001] OSS shall notify the FTA (Phone number (202)366-1863 within two (2) hours of all accidents for which the FTA has primary responsibility in accordance with Title 49 CFR, Part 674.
+### [p184_c0002] III. National Transportation Safety Board (NTSB) Criteria Accidents
+[p184_c0003] OSS shall notify the National Response Center (Phone number (800) 424-0201 within two (2) hours of all accidents that the NTSB may assume primary responsibility in accordance with Title 49 CFR, Part 840.3
+### [p184_c0004] IV. Department of Labor (DOL) notification:
+[p184_c0005] Notifying the Department of Labor (DOL) within 8 hours of any fatality or hospitalization of two (2) or more employees. Environmental Protection and Industrial Hygiene will liaison with the DOL.
+### [p184_c0006] V. Union notification:
+[p184_c0007] The Operations Control Center (OCC) shall notify the Safety Director or delegate according to the OCC notification matrix (attached) of the relevant union(s) of any accidents, fatalities, hospitalizations, or other events which must be reported to a government safety regulator or investigative agency.
+[p184_c0008] NOTE: OSS is the only authorized liaison between NYCT and outside regulatory/investigative agencies (NTSB/PTSB/FTA/DOL). All requests for information from these agencies will be forwarded and responded through OSS.
+[p184_c0009] NOTE: OSS and the Department of Subways (DOS) shall provide administrative and technical support to the NTSB, PTSB, FTA, and DOL during their investigations of criteria incidents.
+### [p184_c0010] 6.3.2 Accident Investigation Procedures
+### [p184_c0011] 6.3.2A Office of System Safety Investigations
+[p184_c0012] Investigations are conducted in accordance with the most recent version of Policy Instruction (P/I) 10.28 Accident Investigation Policy Program Manual. The P/I establishes comprehensive procedures to be implemented for Rapid Transit (Rail).
+[p184_c0013] Rapid Transit Investigations (RTI) investigates:
+- [p184_c0014] • All derailment and collision accidents involving NYCT and Staten Island Railway (SIR) passenger and work trains. • All NYCT/SIR rail accidents that meet the following criteria: ○ The RTI Unit shall respond to all employee fatalities, excluding fatalities that result from apparent natural causes and criminality.
+[p184_c0015] _Page 6-125_
+
+## Page 185
+
+- [p185_c0001] o All fatal accidents will be investigated by RTI to conclusion. After a preliminary investigation is conducted and an accident is determined to be an industrial accident, the Rail Field Operations (RFO) unit shall respond to and provide support for the RTI to assist in the investigation. o All serious employee injuries that occur on the active right-of-way involving a train. o All potential employee contact (PEC) near miss incidents that involve train and/or right-of-way operations, which did not involve personal injury or damage to equipment or property but could have resulted in death or serious injury. o Side door drags. o All High Visibility Accidents regardless of type and/or severity that result in significant media, political or regulatory interest regardless of forgoing criteria, or at the discretion of the Vice President of OSS. o Investigating serious industrial accidents (amputation, puncture, crushing, burn, chemical exposure, etc.) resulting in hospitalization or accidents resulting in significant property loss.
+### [p185_c0002] NOTES:
+- [p185_c0003] • The Chief Officer of Investigations and Compliance, Office of System Safety, or his representative, shall be the Investigator-in-Charge at the scene of rapid transit accidents and shall determine the classification of accidents. • Minor accidents (Hard Add) that result from shifting cars and making up trains in yards where negligible/no damage has occurred may be deemed as an unusual occurrence at the discretion of the Chief Officer of Investigations and Compliance.
+[p185_c0004] Rail Field Operations (RFO) responsibilities:
+- [p185_c0005] • Investigating escalator accidents involving in-service escalators where a person requires medical treatment away from the accident scene.
+### [p185_c0006] 6.3.2B OSS Investigation Procedures for Train Incidents Resulting in Serious Injury or Death to an Employee
+[p185_c0007] To establish a Board of Inquiry. Whenever an accident occurs that results in the death to an employee, a Board of Inquiry shall be convened by the President of New York City Transit (NYCT) to investigate the circumstances of the accident, make findings of fact, determine principal causation and responsibility, and develop recommendations for preventing similar occurrences. In addition, the President may convene the board at his/her discretion to investigate a serious employee injury.
+[p185_c0008] The Board of Inquiry shall:
+- [p185_c0009] • Question all witnesses. • Compile all documentary evidence. • Ascertain all applicable safety rules. • Upon completion of its investigation, prepare a written report, which shall:
+[p185_c0010] _Page 6-126_
+
+## Page 186
+
+- [p186_c0001] o Set forth the material facts leading to and causing the accident. o Determine principal and contributing causes of the accident. o Reach conclusions as to the persons, policies, procedures, practices, and divisions, as applicable, responsible for the accident. o As applicable, provide recommendations for changes in safety rules, work rules, or other policies, practices, and procedures of the Metropolitan Transportation Authority (MTA) NYCT to prevent the occurrence of similar accidents.
+### [p186_c0002] 6.3.2C OSS Investigation Procedures for Derailments/Collisions
+[p186_c0003] OSS investigators are authorized to do all things necessary for proper investigation, including examination or testing of any vehicle, rolling stock, track or any part or any such item when such examination or testing is determined to be required for purposes of such investigation.
+[p186_c0004] OSS examination or testing shall be conducted in such a manner so as not to interfere with or obstruct unnecessarily the transportation services provided by the DOS of such vehicle, rolling stock, or track and shall be conducted in such a manner so as to preserve, to the maximum extent feasible, any evidence relating to the rapid transit accident, consistent with the needs of the investigation and with the cooperation of the DOS.
+[p186_c0005] Investigators will perform the following tasks:
+- [p186_c0006] • Interview all employees and any witnesses to the accident. To prevent unnecessary delays in post incident testing, post-accident /incident interviews may be scheduled by the OSS after the testing has been completed. • Document the position(s) of the train(s) involved, skid marks, and the location(s) of any other equipment that may have been involved. • Inspect the tracks, switches, signals, and vehicles involved in the accident to determine their condition. • Inspect the immediate area to determine: o Damage to wayside equipment. o Damage to car equipment. o The location of other trains that may have been in the area at the time of the accident. o Damage to tools, equipment, facilities.
+[p186_c0007] DOS Divisions will upon request assign representatives to assist OSS personnel on an “as needed” basis to provide technical assistance in those areas where detailed knowledge or expertise is required.
+[p186_c0008] Witness Interviews/Statements: All employees involved in the occurrence of a collision or derailment shall:
+- [p186_c0009] • Be interviewed by OSS investigation personnel concerning their knowledge of the circumstances surrounding the accident. The interviews will be conducted as per the current union contractual agreements. • Submit written statements summarizing their account of the events leading up to and including the accident.
+[p186_c0010] _Page 6-127_
+
+## Page 187
+
+[p187_c0001] OSS: shall request that written statements are secured from all accident participants, other eyewitnesses and persons called to the scene, such as police, emergency, medical and operational personnel, who may have information pertinent to the inquiry.
+[p187_c0002] Accident Analysis: All DOS Divisions shall provide pertinent documentation concerning the accident to OSS within ten (10) business days of the occurrence to ensure that sufficient information is available to enable OSS investigators to complete their work. This documentation shall include, but not be limited to, the items listed in Section IV of this section of the policy instruction.
+### [p187_c0003] Rapid Transit Accident/Incident Reports:
+[p187_c0004] The accident/incidents reports (preliminary and final reports) developed by OSS are furnished to operating departments and the PTSB. In general, the reports contain; a synopsis, background, investigation elements (injuries, weather, damage costs, etc.), significant findings/analysis, conclusion, actions taken, and recommendation.
+- [p187_c0005] • Preliminary Report: A preliminary report of the accident/incident will be submitted to the Executive Vice President, Subways, within five (5) working days of the accident/incident. • Final Report: Upon completion of the overall investigation, OSS will prepare and submit a final report containing findings, conclusions, and recommendations concerning the accident/incident to the Executive Vice President, Subways, as soon as possible based on the receipt of relevant information/reports.
+[p187_c0006] NOTE: Reasonable efforts shall be made to protect from disclosure in a Draft or the Final Report specific medical information concerning individual employees.
+### [p187_c0007] 6.3.2D OSS Investigation Procedures for Escalator Accidents
+[p187_c0008] OSS Rail Field Operations is responsible for:
+- [p187_c0009] • Notifying Operating Department of intent to investigate any accident which meets OSS criteria. • Investigating escalator accidents involving in service escalators where a person requires medical treatment away from the accident scene.
+[p187_c0010] The following is a list of escalator incidents that the Rail Field Safety Unit normally responds to when medical assistance is requested/required by the customer:
+- [p187_c0011] • Incident involving a small child if the escalator is in service at the time of the incident. • Incidents involving reports of obvious escalator defects, i.e., broken/collapsed, or missing steps, broken/missing comb plate, broken handrail, dislodgement of side panel, etc. • Incidents involving reports of failure of equipment to operate properly, i.e., sudden stops or uneven speed, handrail malfunction, etc. • Multiple injuries, involving two or more people on the same escalator when no additional information concerning the escalator or inappropriate customer behavior is available. • Serious injuries, i.e., crushing, amputation, body part caught in the equipment.
+[p187_c0012] _Page 6-128_
+
+## Page 188
+
+- [p188_c0001] • Injuries that are caused by medical conditions or reported inappropriate customer behavior are not included in this category. Additionally, “Out of System” escalators maintained by a Private Developer are not included.
+[p188_c0002] The following are the actions taken by the Rail Field Safety Unit during an investigation:
+### [p188_c0003] Escalator Incident Investigation Protocol
+[p188_c0004] The following protocol will be followed in the event of an escalator incident, involving a passenger injury, within the New York City Transit System.
+- [p188_c0005] • Station Supervisory or Elevator and Escalator (E&E) personnel (whoever arrives first) will immediately shut off power to the escalator by pressing the emergency stop button, take the escalator out of service and secure the incident scene, i.e. take appropriate steps to preserve the integrity of the incident scene. • Station Supervisory personnel will immediately notify the Division of Stations Command Center (212) 712-4236, located at the Operations Control Center (OCC) 354 West 54 th Street. • Stations will, in turn notify both E&E Maintenance personnel and a representative from the OSS Rapid Transit Investigation (RTI) Section. (NOTE: Notification to the OSS-RTI Unit is only required when the escalator is in service at the time of the incident and the nature of the passenger injury requires medical attention. Otherwise, E&E should be notified that the incident is a non-OSS response incident.) • Stations should provide OSS the following information, if available: ○ Time of Escalator Incident Occurrence ○ Escalator # ○ Station Name & Train Line ○ Booth Number & Telephone Number ○ Description of the Customer (Male/Female, Child) ○ Description of the incident & injury ○ If EMS responded and the hospital the customer was transported to (if applicable) • A representative from the OSS Rapid Transit Investigation Section can be reached, at (646) 252-5949 from 2300 hours on Sunday through 2300 hours on Friday. For weekend notification beginning 2300 hours on Friday through 2300 hours on Sunday, see the Rapid Transit Investigation Section’s “Weekend Coverage” memorandum distributed by the Office of System Safety. • The RTI representative will notify the OSS Rail Field Safety Unit by positive communications and provide the following information if available: ○ Time of Escalator Incident Occurrence ○ Escalator # ○ Station Name & Train Line ○ Booth Number & Telephone Number ○ Description of the Customer (Male/Female, Child) ○ Description of the incident & injury ○ If EMS responded and the hospital the customer was transported to (if applicable)
+[p188_c0006] _Page 6-129_
+
+## Page 189
+
+- [p189_c0001] • A representative from the OSS Field Safety Unit, will notify E&E Control and Stations whether OSS will respond or not. If OSS response is indicated, there is a 2-hour response time after OSS intent of response is indicated. • The scene of the incident must not be altered in any way until an OSS Rail Field Safety Unit representative arrives and has completed his/her investigation or releases the equipment. (If it is necessary to alter the incident site, the scene should be documented through photos, sketches, etc., prior to altering the site.) • Upon arrival, the OSS Rail Field Safety representative will investigate the incident scene and obtain all possible pertinent information. ○ Photograph the accident scene. ○ Inspect the immediate area for property, bus, train, equipment, and tools and/or parts damage. ○ Document, measure and record the position of bus, train, equipment, tools and/or parts, injuries, and any other information that may be applicable. ○ Interview the employee(s) and any witnesses within 24 hours or as soon as possible unless the employee or witness is not available for medical reasons. ○ Secure all equipment that may require third party examination. ○ Review statements, drug/alcohol testing results, employee work history, employee training records, personal protective equipment usage (job task assessment form), inspection records, procedure/policy, and other supporting documents. ○ Request third party testing and/or examinations of bus, train, equipment, tools and/or parts, if necessary. ○ Provide a preliminary report within 5 working days. ○ Issue a final report to the Department Head.
+[p189_c0002] NOTE: Reasonable efforts shall be made to protect from disclosure in a draft or the final report specific medical information concerning individual employees.
+- [p189_c0003] • As a result of the investigation, a report is generated with recommendations and tracked to closure utilizing a tracking database. • Upon completion of his/her investigation, the OSS Rail Field Safety representative will turn the escalator over to E&E for thorough mechanical inspection and completion of any repairs that are necessary. (NOTE: OSS response and investigation of an escalator incident does not relieve the operating division of the responsibility to conduct an independent investigation and formalize the findings.) • E&E will determine when, and if, the escalator may be returned to service. • Upon determining that the escalator may be returned to service, E&E will be responsible for restoring power to the escalator and ensuring that it is in proper working order.
+### [p189_c0004] 6.3.2E DOS Investigation of Industrial Accidents or Derailments/Collisions
+[p189_c0005] For an industrial accident or derailment/collision of a passenger/work train on the mainline or in a yard the Department of Subways shall:
+- [p189_c0006] • Notify OSS immediately.
+[p189_c0007] _Page 6-130_
+
+## Page 190
+
+- [p190_c0001] • Notify emergency response agencies per most recent version of Policy Instruction, 10.32 Procedures for Response to Rapid Transit Emergencies . • Do not move, repair, service, clean, or release the train(s) into revenue service unless authorized to do so by OSS. • Secure the train(s) at a facility designated by OSS. • Do not disturb the accident site except where necessary to prevent injuries, loss of life, and/or to maintain the integrity of the system. • Document any significant changes that were made to the accident site. • Restore service only after consultation with the Vice President, System Safety or his/her designated representative. • DOS Divisions will, upon request, assign representatives to assist OSS personnel on an “as needed” basis to provide technical assistance in those areas where detailed knowledge or expertise is required. • DOS will generate a line management incident package/report for distribution.
+[p190_c0002] DOS Divisions will upon request assign representatives to assist OSS personnel on an “as needed” basis to provide technical assistance in those areas where detailed knowledge or expertise is required.
+[p190_c0003] Accident Analysis: All DOS Divisions shall provide pertinent documentation concerning the accident to OSS within ten (10) business days of the occurrence to ensure that sufficient information is available to enable OSS investigators to complete their work. This documentation shall include, but not be limited to, the items listed in Section IV of this section of the policy instruction.
+### [p190_c0004] DOS Responsibilities:
+### [p190_c0005] I. Supporting OSS Rapid Transit accident investigation activities by providing:
+- [p190_c0006] • Witness lists. • Pertinent drawings/diagrams of the accident site. • Photographs of the accident site. • Pertinent equipment test, maintenance, and inspection records. • All reports of any defects found as the result of post-accident inspections of vehicles, track/switches, and signals. • All reports of any defects found as the result of post-accident inspections of motorized (gas/electric/pneumatic/hydraulic) equipment used in track maintenance and construction activities. • All available video recordings that may have captured an incident. • Re-enactment support as required
+### [p190_c0007] II. Division Head/ Chief Transportation Officer & all DOS Divisions
+- [p190_c0008] • Responsible for ensuring that the support requirements described in this section are provided to OSS investigators within the time frames listed. • Provide a Managerial Investigation report within ten (10) business days of the incident. This report should include the following: o Synopsis overview of the incident
+[p190_c0009] _Page 6-131_
+
+## Page 191
+
+- [p191_c0001] o Findings o Hours of Service Analysis o Conclusions o Recommendations to prevent reoccurrence o Actions taken • Provide preliminary estimates of damage to facilities and equipment, within two (2) business days of the accident. • Provide copies of witness statements of all involved employees within two (2) business days of the accident. • Provide final reports of estimated damage and the costs associated with restoring service within ten (10) business days of the accident. • Provide the results of any post-accident operational tests or inspections within ten (10) business days of the accident. • Provide the results of drug and alcohol screening tests administered to any employee within ten (10) business days of the accident. • Provide all other requested information within ten (10) business days of the request. • Assign representatives to provide technical assistance to OSS, PTSB and/or NTSB investigators, as required, while investigating: o Fatal accidents. o Derailements/collisions. o Accidents which result in injuries to two or more crew members or passengers, and o Emergency evacuation of passengers. o All High Visibility Accidents regardless of type and/or severity that result in significant media, political or regulatory interest regardless of forgoing criteria, or at the discretion of the Vice President of OSS.
+[p191_c0002] Reasonable efforts shall be made to protect from disclosure in a draft or the final report specific medical information concerning individual employees.
+[p191_c0003] DOS is responsible for supporting OSS Rapid Transit & OSS Rail Field operations accident investigation activities by providing the necessary information as required by the most recent version of P/I 10.28 Accident Investigation Policy Program Manual.
+### [p191_c0004] 6.3.2F Employee On-the-Job Injury Investigation
+[p191_c0005] Managers and supervisors must investigate employee injuries and enter the injury incident into the online portal, Smartly. The Smartly app is run by Sedgwick Claims Management Services, Inc, who NYCT has transitioned the administration of Workers' Compensation claims to. A Sedgwick Claims Examiner will contact the injured employee and Manager to further discuss the incident. Supervision must identify root causes and ensure corrective actions or safety risk mitigations are implemented within 2 business days of an accident.
+[p191_c0006] Supervision and management must follow the Injury Response Guidelines to ensure proper accident reporting and investigation. Follow up with employees that are not able to return to work due to an on the job injury must also be conducted.
+[p191_c0007] _Page 6-132_
+
+## Page 192
+
+[p192_c0001] The Department of Subways, Rolling Stock and MOW issued Departmental Procedure 5.3 Accident Reporting to inform all Maintenance of Way employees how to respond to, investigate, and report on-the-job injuries, based on the latest Transit policies.
+### [p192_c0002] 6.3.2G Contractor Injury Investigation
+[p192_c0003] For all incidents involving Design Builder/Contractor or Subcontractor personnel, the public, and/or property damage, the PCEO/PMC or their designee shall ensure that the Design Builder/Contractor complies with the requirements of the contract by submitting an MTA C&D Construction Incident Reporting Form (CIR) properly completed by the Design Builder/Contractor Project Safety Representative (CSE/CSS/CSM/SM/SC). For incidents classified as OSHA recordable, the Design Builder/Contractor shall also provide a copy of the C-2F or the latest form. The PCEO/PMC shall retain the original report(s) in the contract file and forward a copy of the completed incident report(s) to each of the following within 24 hours of the accident:
+- [p192_c0004] - C&D, VP Safety Executive, 2 Broadway, 8th Floor - Office of System Safety, 2 Broadway, 28 th Floor, and - MTA Risk Management, 2 Broadway, 16 th Floor (when applicable)
+[p192_c0005] The PCEO/PMC shall also ensure that the Design Builder/Contractor provides a completed Construction Incident Reporting Form for any accident where no lost time is incurred or is not deemed OSHA Recordable to the C&D Safety Oversight.
+[p192_c0006] After any serious incident, the PCEO/PMC shall ensure that the Design Builder/Contractor convenes an investigative meeting within 24 hours for the purpose of determining the cause of the incident and actions to be taken by the Design Builder/Contractor to prevent a recurrence of the incident. The PCEO/PMC shall ensure the Design Builder/Contractor makes available all personnel involved in or witness to the incident at this investigative meeting for interviews. The PCEO/PMC or his representative and the Design Builder/Contractor Project Safety Representative are required to attend the investigative meeting. The PCEO/PMC will also notify C&D Business Unit Safety and C&D Safety Oversight at least 24 hours prior to the meeting, advising of the meeting time and location so that they may send a representative(s). The Design Builder/Contractor Project Safety Representative shall, if necessary, update the project Health and Safety Plan (HASP)/Accident Prevention Program/Hazard Communication program and Safe Work Plan (SWP) to include post-accident measures to prevent recurrence of the accident.
+### [p192_c0007] 6.3.2H Staten Island Railway Customer Investigation
+[p192_c0008] For accidents involving customers, the Staten Island Railway employees at the location of the accident notify their supervision, the OCC, and the accident information is documented. Management investigates the accident, has the employees at the accident location complete Form SR-2 Correspondence/Incident Detail Sheet and collects any other pertinent information available from the accident site. SIR management then writes a memorandum summarizing the accident and any action taken by SIR employees.
+[p192_c0009] _Page 6-133_
+
+## Page 193
+
+### [p193_c0001] 6.3.2.I Station Environment and Operations Customer Investigation
+[p193_c0002] For accidents involving customers in the stations, the employees at the location of the accident notify their supervision. Supervision investigates the accident and completes a Customer Unusual Occurrence Report (attached).
+### [p193_c0003] 6.3.2J NYS Public Transportation Safety Board Investigation of NYC Transit Accidents
+[p193_c0004] In the event of an incident involving a rail transit vehicle or taking place on rail transit-controlled property where one or more of the following occurs, the PTSB will submit a Request for Information to OSS:
+- [p193_c0005] (1) A fatality at the scene; or where an individual is confirmed dead within thirty (30) days of a rail transit-related incident (2) Injuries requiring immediate medical attention away from the scene for two or more individuals (3) Property damage to rail transit vehicles, non-rail transit vehicles, other rail transit property or facilities and non-transit property that equals or exceeds $25,000 (4) An evacuation due to life safety reasons (5) A collision at a grade crossing (6) A main-line or yard derailment (7) A collision with an individual on a rail right of way; or (8) A collision between a rail transit vehicle and a second rail transit vehicle, or a rail transit non-revenue vehicle
+[p193_c0006] OSS investigates and prepares a report to the Public Transportation Safety Board and provides requested information to the PTSB. The PTSB has the authority to conduct an on-site investigation with NYC Transit representation.
+[p193_c0007] ---The space below intentionally left blank---
+[p193_c0008] _Page 6-134_
+
+## Page 194
+
+### [p194_c0001] 6.3.2K DOS investigation of PTSB reportable accidents
+- [p194_c0002] • The DOS shall investigate PTSB reportable accidents regardless of whether or not they are investigated by the Rapid Transit Investigation unit; typical accidents that require investigation by DOS are listed below: A fatality at the scene: or where an individual is confirmed dead within thirty (30) days of a rail transit-related incident. All serious injuries (Employee or Customer) - must meet the following criteria: ○ Requires hospitalization for more than 48 hours, commencing within 7 days from the date of the injury. ○ Results in a fracture of any bone, except simple fractures (i.e. fingers, toes, nose). ○ Causes severe hemorrhages, nerve, muscle, or tendon damage. ○ Involves any internal organ. ○ Involves second or third-degree burns, or any burns affecting more than 5 percent of the body surface. ○ Injuries requiring medical attention away from the scene for two or more individuals. ○ An evacuation due to life safety reasons. ○ Collision with an individual on a rail right of way, i.e. train striking an employee or customer. This includes both fatal and non-fatal injuries. ○ Runaway trains
+[p194_c0003] NOTE: The DOS investigation must be documented in a final report that includes a description of investigation activities, identified causal and contributing factors, and a corrective action plan or safety risk mitigation (if applicable).
+### [p194_c0004] 6.3.3 Near Miss Investigations
+### [p194_c0005] 6.3.3A OSS Investigation of Near Miss Incidents
+[p194_c0006] OSS Rapid Transit Investigation shall investigate Potential Employee Contact (PEC) type near miss incidents to include but not limited to:
+- [p194_c0007] • General Order Violations. • Miscellaneous: Unusual incidents that could have resulted in death, serious injury or significant equipment/property damage. • Improper flagging. • 3 rd Rail explosions involving work procedures. • All incidents involving potential employee contact with trains while working on the roadbed. • Portable trip overruns. • Train Operator fails to sound horn when passing through an established flagging area. • Train passes work area at excessive speed.
+[p194_c0008] NOTE: OSS shall maintain a system for tracking all near miss PEC incident recommendations through closure.
+[p194_c0009] _Page 6-135_
+
+## Page 195
+
+[p195_c0001] Additionally, OSS has established near-miss committee to review and conduct quarterly trend analyses on both potential for employee contact (PEC) and non-PEC near-miss incidents. The committee consists of the Chief Officer of OSS - Operations, the Chief Officer of OSS - Hazard Assessment, the Manager of OSS - Rapid Transit Investigations, and the Manager of OSS - Hazard Analysis. All committee members review near-miss incident data to identify and encourage positive trends, develop corrective actions to combat negative trends, track all recommendations to completion, and ensure that implemented recommendations are periodically reviewed for effectiveness.
+### [p195_c0002] 6.3.3B DOS Investigation of Roadway Worker Protection Incidents
+[p195_c0003] All Roadway Worker Protection incidents involving train and/or right of way operations, which did not involve personal injury or damage to equipment/property, but could have resulted in death or serious injury, must be immediately reported to the supervisor of the employee(s) involved. Supervisory personnel or designee must handle the reporting of the incident as follows:
+- [p195_c0004] • Immediate notification to the OCC • Immediate notification to the Divisional Chief Officer. • Immediate notification to the OSS. • Initiate an immediate investigation of the incident in order to determine the causative factors involving the incident. • Issue an incident report within ten (10) business days of the incident to the Divisional Chief Officer of the employees involved and submit a copy for review to OSS. This report should include the following: ◦ Synopsis overview of the incident ◦ Findings ◦ Hours of Service Analysis ◦ Conclusions ◦ Recommendations to prevent re-occurrence ◦ Actions taken
+[p195_c0005] NOTE: Recommendations must be tracked to closure with monthly status reports submitted to OSS.
+[p195_c0006] The types of incidents that must be handled in this manner include the following:
+- [p195_c0007] • Switch run-throughs. • General Order Violations. • Miscellaneous Incidents: Unusual Incidents that could have resulted in death, serious injury or significant equipment/property damage. Incidents involving potential employee contact with trains while working on the roadbed. • Improper flagging. • 3 rd Rail explosions involving work procedures. • Portable Train Stop Overruns. • Train Operator fails to sound horn when passing through an established flagging area and/or Train passes work area at excessive speed. • Power On in a Power Off Area
+[p195_c0008] _Page 6-136_
+
+## Page 196
+
+### [p196_c0001] 6.3.4 Major Incident Follow-Up Report (MIFUR)
+[p196_c0002] OSS shall maintain a system to track departmental responses to all OSS recommendations (corrective action plans or safety risk mitigations) regarding major incidents (i.e. derailments, collisions, and employee fatalities) to closure.
+### [p196_c0003] 6.4 Internal Safety Review
+[p196_c0004] This subsection describes the process used by NYCT to ensure that planned and scheduled internal safety reviews are performed to evaluate compliance with the ASP. The internal safety review process will determine if all organizational elements, equipment, procedures, and functions are performing as intended from a safety perspective.
+### [p196_c0005] 6.4.1 Scope of Activities
+[p196_c0006] The objectives of the review process are to provide a mechanism for determining if the plan has been effectively implemented. The internal safety review objectives are as follows:
+- [p196_c0007] • Verify that safety programs have been developed/implemented in accordance with ASP • Assess the effectiveness of the safety programs • Identify program deficiencies • Verify that corrective actions are being developed, implemented, and tracked to closure • Recommend improvements to the ASP • Provide management with an assessment of the adequacy of the ASP • Assure continuing evaluation of the safety related programs
+### [p196_c0008] 6.4.2 Office of System Safety
+[p196_c0009] The Office of System Safety is responsible to plan, schedule and implement an internal safety review program in compliance with state and federal regulations. All of the divisions within the Department of Subways are responsible to provide support and assistance in the performance of safety reviews and to implement corrective actions as needed. Typical review activities include record reviews, physical inspection of stations, yards, shops, plant and equipment, interviews and observations of operations and other operational activities. While ongoing inspections may be conducted on an unannounced basis, the reviews will be performed on a coordinated basis with management support. Safety reviews focus on safety related NYC Transit activities identified within the ASP.
+### [p196_c0010] 6.4.3 Managing the Review Process
+[p196_c0011] Under the direction of the Accountable Executive and the Chief Safety Officer, the OSS is responsible for managing the review and ensuring the independent nature of the review process as
+[p196_c0012] _Page 6-137_
+
+## Page 197
+
+[p197_c0001] well as carry out a plan to address the identified safety deficiencies with consideration for Safety Committee input, data analysis, and other respective items. The Department of Subways shall support the review process by ensuring personnel are available that are needed to participate in the review, provide access to the locations being reviewed and provide required documentation. The following is the Office of System Safety internal Safety Plan review program:
+- [p197_c0002] • OSS conducts reviews of Department of Subways' operating Divisions ASP based on a three-year review cycle. • The sections of the ASP to be reviewed, each year, are selected on a rotating basis to complete the comprehensive review within the three-year cycle. • An Opening Conference is held between OSS and senior management to discuss the purpose and requirements of the reviewing process. • OSS develops a checklist to include all the elements of the ASP section to be reviewed. • OSS coordinates the ASP review process with the PTSB. The PTSB is invited to participate in the review process. • OSS conducts comprehensive ASP reviews through meetings with the identified responsible units, interviewing managers and supervisors, conducting site inspections, and collecting and reviewing supporting documents. • At the conclusion of the review process, a Closing Conference is held between OSS and senior management to discuss all the significant findings and recommendations. • A final report is issued detailing all review findings and recommendations for correcting deficiencies. The comprehensive checklist is also included. • The final reports are distributed to senior management and the PTSB. • Senior Management is required to provide OSS with a corrective action plan indicating action taken/to be taken; implementation schedule; and individual or Department responsible for the implementation. • OSS tracks the status of implementation of the corrective action plan to ensure that the recommendations are implemented and provides an annual report to the PTSB that summarizes the results of the reviews and the status of the corrective actions or recommendations. • OSS provides quarterly updates to the PTSB on the status of open recommendations.
+### [p197_c0003] 6.4.4 Safety Audits Conducted by MTA Audits
+[p197_c0004] In addition to the systematic ASP reviews that are conducted by OSS, MTA Audit conducts audits that focus on compliance with safety requirements annually.
+### [p197_c0005] 6.5 Management of Change
+[p197_c0006] This subsection describes the process for identifying and assessing changes that may introduce new hazards or impact safety performance. NYCT utilizes elements of a configuration management process to address system modifications where safety certification is necessary. Configuration management involves the monitoring of a system's/item's performance throughout its life cycle, while ensuring that all efforts are made to avoid introducing new hazards and thereby minimizing the potential for negative repercussions. When modifications to a system/item are
+[p197_c0007] _Page 6-138_
+
+## Page 198
+
+[p198_c0001] made, the subsequent need for new/additional training or changes to maintenance/operational practices is also taken into account in order to address any possible procedural impacts.
+### [p198_c0002] 6.5.1 Division of Car Equipment – CCF/PICF
+[p198_c0003] Division of Car Equipment (DCE) uses the Configuration Change Form/Part Identification Change Form (CCF/PICF) to initiate the review and approval process of a proposed change to an item of equipment used by NYCT. The issuance of an approved CCF/PICF initiates the implementation of the approved change.
+[p198_c0004] The CCF is used when a change has been made to the material, form, fit or function of a system, part or item of equipment used by DCE. The PICF is used when a part or item of equipment is unchanged, but the identifying part number or description needs to be corrected or changed.
+[p198_c0005] The following is the process for the configuration change:
+- [p198_c0006] • CCF/PCIF Initiation – The person or organization who desires to initiate a configuration change or a part identification change fills out the CCF/PICF and sends the completed to:
+[p198_c0007] New York City Transit, Division of Car Equipment Assistant Chief Mechanical Officer (ACMO) Car Equipment Engineering & Technical Support 130 Livingston Street Brooklyn, NY 11201-5190
+- [p198_c0008] • Log in Status – ACMO forwards the CCF/PICF to the Technical Services Unit where it is logged in, date stamped, reviewed for completeness, assigned a tracking number and a routing stamp. It is then forwarded to the Director of Engineering with a receipt acknowledgement sheet. The Director of Engineering completes the acknowledgement sheet by entering the review distribution list and an estimated review completion date, signs it and returns it to the Technical Services Unit, which logs the acknowledgement sheet data. • Engineering Review – The Director of Engineering forwards copies of the CCF/PICF package to the appropriate Engineering Manager for their review and comment. After the review the packages are returned with recommendations for either concurrence or rejection with their comments. The engineering managers also provide a list of all affected drawings and documents under engineering control with estimated dates for the completion of the required changes. If a new System Upgrade Bulletin or Engineering alert is required, the number is to be entered with the expected issuing date. The Director of Engineering reviews the recommendations and comments and incorporates them on the original CCF/PICF package, routes it to the Engineering Manager for their signature, lists the affected drawings and documents, and the estimated change completion date to the Technical Services Unit for logging and post-engineering review processing.
+[p198_c0009] _Page 6-139_
+
+## Page 199
+
+- [p199_c0001] • Rejected CCF/PICF – If the CCF/PICF has been rejected, the Director of Engineering, also includes a transmittal letter to the initiator from the Assistant Chief Mechanical Officer, Car Equipment Engineering & Technical Support (CEE&TS) stating the reason for the rejection. The technical Services unit forwards the rejection letter for the ACMO, Car Equipment Engineering & Technical Support’s signature. The signed cover letter is sent to the initiator of the CCF/PICF. • Post-Engineering Review Phase – The Technical Services Unit logs in the return of the original CCF/PICF package, reviews the affected drawing and document list, notes the proposed completion dates and forwards the original CCF/PICF package to the Material Standards & Evaluation Unit for their review and approval. The Director, Material Standards & Evaluation reviews and initials the CCF/PICF and returns it to the Technical Services Unit with a copy of the G-10/G-11 Form that is submitted to Materiel. Concurrently, copies of the CCF/PICF package stamped with the desired return date are sent to the appropriate (dependent on the car class affected) ACMO(s) (North Maintenance Shops, South Maintenance Shops and Overhaul Shops) for the review and comment. Additionally, if changes are required in documents not under engineering control, copies of the CCF/PICF package are sent to the appropriate managers for review and to provide estimated dates for when the changes will be completed. Each copy sent out for review is to be signed by the designated recipient and returned to the Technical Services Unit for logging in. If any of the comments returned require further engineering review, then a copy of those comments is forwarded to the Director of Engineering for review following the procedures outlined above for the engineering review. When the original CCF/PICF package, initialed by the Director, Material Standards & Evaluation, is returned to the Technical Services Unit from the Material Standards and Evaluation Unit it is logged in and forwarded to the ACMO, CEE&TS for approval and signature. • Final Approvals and Distribution – The original, signed CCF/PICF package is forwarded to Materiel for review and signature of the Assistant Chief Procurement Officer (for DCE). Materiel makes copies of the package and returns the original to the Technical Services Unit with an estimated date for when changes to the parts catalog will be completed. Concurrently, five copies of the original CCF/PICF package signed by the ACMO, CEE&TS is then hand carried to System Safety for review and comment. If no comments are received within one week, approval is to be assumed. After all approvals have been obtained, the Technical Services Unit prepares a DRN for the CCF/PICF and distributes copies according to the current distribution list. The Technical Services Unit also prepares and sends a letter from the ACMO, CEE&TS notifying the originator of the approved CCF/PICF. The original, signed CCF/PICF is then filed with the DRN and G-10/G-11 form attached.
+[p199_c0002] _Page 6-140_
+
+## Page 200
+
+### [p200_c0001] 6.5.2 MOW Engineering
+[p200_c0002] The policy for MOW Engineering is to replace, install or repair the defects “in kind” and as per approved design, recommended guidelines, or standard drawings.
+[p200_c0003] When a major modification is required that may be dictated by field conditions, field experiences or a new available technology and for the cases that the changes are of a nature not related to C&D projects or their designs, the configuration management for the project is practiced as follows:
+[p200_c0004] A request for proposed change is made.
+- [p200_c0005] • The proposed changes are evaluated by Engineering and may be circulated to user groups or pertinent departments for comments and approval. • Drawings, sketches, or scope of work may be prepared or revised using the related standards depending upon the complexity of the proposal. • When drawings are created for construction, title box is changed to indicate the revision and is forwarded for final engineering approval signature and installation. • During or after the performance of the work, new revised drawings and other documents are kept as new standard drawings for referencing and record keeping.
+[p200_c0006] When the changes are proposed and budgeted for the Capital Program, C&D provides designs and prepares revised documentation and construction drawings for installation. The revised as-built drawings prepared by C&D are forwarded to MOW Engineering where they replace the now obsolete record drawings and become the new record drawings for configuration management.
+[p200_c0007] MOW Engineering utilizes a Configuration Management process to control changes associated with Communication Based Train Control (CBTC) Territories and the signaling portion of Automatic Train Supervision - A Division (ATS-A). The process is based on the following:
+- [p200_c0008] • Electronics Industry Alliance (EIA) 649 National Consensus Standard for Configuration Management • United States of America, Department of Defense, Military Standard 973 – Configuration Management
+[p200_c0009] Each specific process (CBTC Territories, the signaling portion of ATS-A) has been agreed to and signed off by all parties that will participate in that process. When a change is proposed the Configuration Control Authority, a board consisting of all areas involved in the change, is convened. The charge to the board is:
+- [p200_c0010] • Determine whether the change will impact the configuration. • Agree that the proposed change is necessary. • Agree that the design, development and testing of the change should proceed. • When the change is complete, review the test results to certify that the tests are complete, accurate and acceptable. • Agree upon a rollout task plan/schedule including a back-out plan in the event of an unforeseen failure. • Advise that the configuration level should be revised in the Configuration Management System database.
+[p200_c0011] _Page 6-141_
+
+## Page 201
+
+[p201_c0001] Testing must include Regression Test Procedures that are designed to ensure that existing functionality is not impacted by the change. The Configuration Control Authority is charged to ensure that all changes that affect the configuration are properly coordinated, reviewed, approved, documented, tested, and then implemented.
+[p201_c0002] For changes that affect vital or safety-critical functions or non-functional requirements, there is added an extra dimension to change and configuration management: The NYCT System Safety Certification Board (SSCB), comprising senior NYCT representatives of Capital Program Management, the Office of System Safety, Maintenance of Way (Electrical), Maintenance of Way (Engineering), Technology Information Services, Car Equipment Engineering, Rapid Transit Operations and C&D Signal Engineering. The SSCB is managed by C&D's Vital Systems Integrity Group and chaired by the Signals and Train Control Program Executive.
+[p201_c0003] Proposed safety-related changes (for example, new versions of safety critical software) are first presented and documented in Engineering Change Requests (ECRs) or other official correspondence. Once cognizant personnel have approved the request, the proposed modification, and its associated safety analysis (performed by the system supplier, NYCT, and the NYCT-Independent Safety Assessor (ISA)) is presented to the SSCB. SSCB members from the aforementioned disciplines attend the meetings. Based on the adequacy of Safety Analysis presented, the SSCB approves such modifications.
+[p201_c0004] The following are documents that describe the existing Configuration Management procedures for recent projects:
+- [p201_c0005] • Configuration Management Procedure for Communication Based Train Control (CBTC), Revision 0, Dated 1/24/2007 • Configuration Management Procedure for Automatic Train Supervision - A Division (ATS-A) Signal Components, Revision 1, Dated 11/08/2007 • Operations Control Center (OCC) Change Management Procedure, Revision 2, Dated 9/17/2007
+[p201_c0006] During construction C&D has control of the project including submittals. However, if determined to be required during project design, Division 1 Section 01 33 00 Asset Management, of Signaling and Communication projects will contain specific Configuration Management requirements. MOW Engineering monitors the contractor's meeting of the requirements and the Configuration Management process during construction as well as reviewing and commenting on all deliverables.
+[p201_c0007] _Page 6-142_
+
+## Page 202
+
+### [p202_c0001] 6.5.3 Staten Island Railway
+[p202_c0002] As part of NYCT DOS, Staten Island Railway does not have separate Configuration Management (C/M) process in place. However, SIR Department of Capital & Special Projects in conjunction with divisional management ensures as much as possible, that the integrity of all NYC Transit/SIR properties, equipment, systems design elements, etc. are maintained throughout their lifecycles. Any changes to an individual sub-system, or fleet/inventory wide change is fully governed by C&D Capital Design, Rehabilitation and Construction process and established NYCT MOW Engineering and DCE Engineering and Stations C/M process. Any changes, modifications or replacements and additions are recorded on as-built drawings in a timely and effective manner. The responsible C&D and DOS departments are making changes utilizing C/M process; make configuration changes if necessary, incorporating these changes into all appropriate technical documentation, and ensuring that all necessary units (including OSS and SIR as the user) are made aware of such changes.
+[p202_c0003] _Page 6-143_
+
+## Page 203
+
+### [p203_c0001] 6.5.4 MTA-Construction & Development
+[p203_c0002] Change Management for Design Bid Build Projects Procedure (PRO 23-03) and Change Management for Design Build Contracts Procedure (PRO 24-03) have been prepared to provide guidance in obtaining approval for changes to the project scope of work, allocated design cost and/or schedule. The intent of these documents is to provide a documented approval process for changes to the project scope of work, the design cost and/or schedule during the design phase of a project.
+[p203_c0003] A Project Change Notice (PCN) Form is used for documenting the approval process.
+[p203_c0004] The following are the requirements for the Project Change Notice approval process:
+- [p203_c0005] • The Project Architect/Engineer/Design Consultant shall initiate the process by filling in the required sections of the form including the Design Change Description, Reason, and Design Impact sections. Other supporting documentation may be attached to the form. • The Project Architect/Engineer/Design Consultant shall obtain concurrence signatures from his/her Principal Architect/Engineer and PCEO or their designee. • The Project Architect /Engineer/Design Consultant shall then submit the form to the Design Manager for concurrence. • If in concurrence with the request, the Design Manager completes the remainder of the form including the Construction Impact and Budget Impact Summary sections and then signs the form and submits it to the PCEO. If the PCEO is not in agreement with the request, he/she shall meet with the appropriate discipline Principal Architect/Engineer/Design Consultant to resolve the matter. • The Design Manager submits the form to the PCEO for disposition. If the PCEO agrees with the requested change, the Business Unit Lead signs the form and arranges for implementation of the change(s). If the PCEO is not in agreement, the Business Unit Lead shall resolve the matter with the appropriate PCEO. The Principal Architect/Engineer shall arrange this meeting. • If the total value of the change (including design, construction and supporting costs) is less than $100,000, approval of the PCEO is required. • If the total value of the change is between $100,000 to $249,999, the PCEO shall obtain additional concurrence from the; Sponsor Department Project Lead, Deputy Vice President of Program Controls, Contracts Lead, Sponsor Department Capital Program Officer and the Chief Budget Officer. • If the total value of the change is $250,000 or more and for all retroactive change requests, the PCEO shall obtain additional concurrence from the Business Unit Change Committee
+[p203_c0006] _Page 6-144_
+
+## Page 204
+
+### [p204_c0001] Contractor's and Consultants Submission and Requests
+[p204_c0002] The Contractor is required by the contract to include all submittal and approval activities in the schedule. For design build contracts, procedures for handling submissions are described in those contracts.
+### [p204_c0003] Contractor's General Submissions
+[p204_c0004] Prior to or immediately after the award of contract, the PCEO will procure a design personnel list from the Design Manager (DM). The PCEO will also procure the Contractor's submittal list, progress schedule, and submittal plan. Design personnel will be informed of this submittal plan and required submittal schedule. The PCEO will coordinate the review among the various disciplines. The Contractor shall identify long delivery time items and submit those impacted drawings/submittals far enough in advance to maintain the overall schedule.
+[p204_c0005] The PCEO is responsible for the review of all submitted documents to verify that contract submittal requirements are met and that all differing field conditions are identified, as necessary. If necessary, the PCEO may arrange for special meetings between the design personnel and the Contractor's counterparts to coordinate submittal requirements of critical items or for special needs. The Contractor may be allowed to forward submittals to the responsible Design personnel with a copy of the transmittal letter to the PCEO. Comments or approval by the reviewer will be sent to the PCEO. The PCEO will review and forward the reviewers comments to the Contractor. Where the work of more than one trade is indicated on a shop drawing, the PCEO will coordinate with the required design groups for coordinated review. Document control (including logs) shall be maintained by all parties concerned to assure a timely and properly coordinated submittal review and approval process. Biweekly status reviews may be required.
+[p204_c0006] The PCEO will consider the need for meetings to discuss orientation or clarification between the Contractor or supplier. Some of the reasons for identifying a need for an orientation or clarification session are:
+- [p204_c0007] • Critical items that must be processed without delay. • To clarify requirements for unusual items, items that may not be industry standards or that are peculiar to NYCT. • Items that are known to have been problems on previous projects.
+### [p204_c0008] Record and As-Built Drawings
+[p204_c0009] The Contractor shall submit Record drawings to the PCEO in stages during construction (refer to contract specific requirements) and As-Built drawings after completion of the work. The Contractor shall also submit, for approval and in accordance with contract requirements, an updated Project Drawings List along with the updated drawings.
+[p204_c0010] _Page 6-145_
+
+## Page 205
+
+### [p205_c0001] General Construction Drawings
+[p205_c0002] The PCEO shall verify that all as-built drawings are properly made by the Contractor to meet the contract requirements. These drawings, if required, are to be reviewed by the User Departments. Existing as-built drawings for rehabilitation contracts or rehabilitation work may need to be revised by the Contractor. The existing drawings can be obtained from the User Departments.
+### [p205_c0003] Operations and Maintenance Manuals
+[p205_c0004] The Contractor shall deliver operations and maintenance manuals to the PCEO in accordance with contract requirements. After they are reviewed, these manuals are sent to the design personnel. After these are received with the review comments, the PCEO shall forward copies to the User Department for review (four weeks' time). The PCEO returns the manuals with any resultant comments to the Contractor. A "Comments Resolution Meeting" with the Contractor may be required to resolve user comments. Copies of approved manuals shall be on-site during performance tests and final inspections. The Contractor shall include the test performance data, if required, and resubmit the final manuals to the PCEO. The PCEO, upon their acceptance, shall submit final manuals to the appropriate User Departments no later than three weeks after the pre-final inspection.
+### [p205_c0005] Consultant Design Documents
+[p205_c0006] Based on project life cycle guidance, a comprehensive design compliance review will be conducted by in-house design personnel in sufficient depth to ensure that the level of quality of the work produced by the Consultants is adequate and consistent with work produced by the MTA-C&D. All findings of errors, inconsistencies, omissions, or conflicts found during the review shall be brought to the Consultant's attention promptly. No actual revisions or changes are to be made to the work done by the Consultant. Upon receipt of the design review comments from the design personnel, user department and other design team members, the DM will give the Consultant written notification indicating whether NYCT has accepted the design and will direct the Consultant with regard to disposition of exceptions, delivery of the documents for signature, instructions for their printing or other steps as may be appropriate.
+### [p205_c0007] 6.5.5 Procurement
+[p205_c0008] Sound procurement procedures afford New York City Transit (NYCT) the capability to maintain the integrity of its equipment and preserve the efficiency of its system; all while helping to ensure the safety of customers and employees. NYCT requires that any department/division wishing to procure materials, supplies or services execute formal purchase requisitions in accordance with Chapter II, Section C of the agency's Material Policy Instruction Manual (an addendum to P/I 4.2.3). All formal user purchase requisitions are submitted to the Division of Materiel (referred here-on-in as 'Materiel') and must contain information on the intended use of or necessity for the items/services being requisitioned. Detailed technical specifications must also accompany any formal purchase requisition, including a description of the minimum acceptable technical requirements for the material. Other supporting information must also be supplied, such as drawings, part numbers and any required inspections/maintenance.
+[p205_c0009] _Page 6-146_
+
+## Page 206
+
+[p206_c0001] When necessary (emergency use, items not available in storeroom, etc.) procurement cards can be used to purchase necessary items. Approval is required before purchases are made and submitted to Procurement.
+[p206_c0002] Each NYCT division has designated personnel authorized to approve requisitions for purchases. Purchase requisitions are kept on file with the Materiel and Technology Services unit which reviews all purchase requisitions for proper authorization before such requisitions can be processed.
+### [p206_c0003] Procuring Chemicals/Hazardous Materials
+[p206_c0004] The process for procuring new chemical commodities follows additional requirements (to those outlined above) and is designed to preclude the introduction of unauthorized hazardous materials and supplies. The process is detailed in Chapter II, Section H of NYCT's Material Policy Instruction Manual . The critical steps involved in the process are summarized as follows:
+- [p206_c0005] 1. New vendor product solicitations are referred to Materiel's Procurement subdivision (either operating or capital) who informs the vendor of NYCT's procedures and required forms, including the documents required in order to start the evaluation process for new chemical items. Once received, the documents are then forwarded to the user department/division for review and to determine whether or not the product complies with user specifications. 2. The user will submit vendor data, including results from any laboratory/field testing to the Office of System Safety (OSS) for 'Product Safety Review'. As discussed in Section 19, OSS is responsible for reviewing chemical commodities that are being considered for purchase by NYCT user departments/divisions. 3. OSS provides a written 'Product Safety Review' to the user indicating if there are any occupational hazards or safety measures required for the use, handling, storing and (eventual) disposal of the chemical product that is being considered. 4. The user then tests the product to evaluate performance and safety aspects. 5. If the product passes all testing and has been approved, it may be presented to the Qualified Product List (QPL) Advisory Committee for review if there are other potential NYCT users. If the product is not to be set up as a QPL listing, then it is set up as a procurable item in the stock catalog. 6. Materiel's Logistics subdivision ensures that departments do not purchase chemical commodities without obtaining authorizing signatures from the Department's Chemical Safety Representative and from NYCT's Office of System Safety.
+[p206_c0006] _Page 6-147_
+
+## Page 207
+
+### [p207_c0001] Quality Control and Assurance
+[p207_c0002] NYCT utilizes the material inspection process as a quality control measure to preclude the introduction of defective or deficient equipment into the system. Material inspection helps ensure that products provided by vendors conform to NYCT's technical specifications. Materiel's Vendor Relations unit manages the division's inspection program and reviews any requests to deviate from required inspections. NYCT's Stock Catalog indicates which commodities require inspection. Most material inspections are carried out by contractors at the factory and prior to shipment to NYCT.
+[p207_c0003] Quality assurance pertaining to railcar equipment is conducted by the Department of Subways' Division of Car Equipment (DCE). DCE's Quality Assurance (QA) & Warranty Control (WC) subdivision provides the following services relating to procurement activities:
+- [p207_c0004] • Material inspection services for incoming material to verify compliance with purchase order specifications, drawings, and other requirements. • Auditing of suppliers of major new or repaired/refurbished major train components to determine compliance with contractual quality assurance requirements. • Warranty administration services for new subway cars.
+### [p207_c0005] 6.6 Continuous Improvement
+[p207_c0006] This subsection describes the process for assessing safety performance and the process for developing and carrying out plans to address identified safety deficiencies.
+### [p207_c0007] 6.6.1 Safety Committee
+[p207_c0008] The Safety Committee identifies deficiencies in the transit agency's performance against annual safety performance targets and safety risk mitigations that may be ineffective, inappropriate, or were not implemented as intended.
+### [p207_c0009] 6.6.2 Office of System Safety
+[p207_c0010] The OSS developed a Safety Executive meeting, which is conducted to review safety key performance indicators as well as discuss any high priority safety related items. The meetings are co-chaired by the President and the Senior Vice President of Safety and occur once a month.
+[p207_c0011] For the meetings, OSS compiles data on the following: customer accidents; employee LTA; confirmed subway fires; mainline/yard collisions; mainline/yard derailments; and collisions with individuals. The data is provided to the senior staff in rolling annual, year over year, and month over month data format for the three previous years.
+[p207_c0012] _Page 6-148_
+
+## Page 208
+
+### [p208_c0001] 6.6.3 Signals
+[p208_c0002] Signal inspection, maintenance and testing reports are generated and reviewed by management every week. These reports along with recommended actions to address identified safety deficiencies are also being discussed in Signal Management bi-weekly meetings.
+### [p208_c0003] 6.6.4 Elevators and Escalators
+[p208_c0004] Elevator and Escalator Supervisors have a Daily Toolbox Talk, fill out the Supervisory Checklist, perform field visits and submit STOP Cards. Managers go out on Field Inspections and have Joint Management and Union Monthly Safety Meetings. Supervisors and Managers review Preventative Maintenance Checklist. Elevators and Escalators employees also perform ASME inspections on Elevators and Escalators.
+### [p208_c0005] 6.6.5 Station Environment & Operations
+[p208_c0006] In accordance with the most recent version of Policy Instruction 10.30, Division of Stations conducts monthly Safety Committee meetings. The committee meeting attendees consists of Station's Senior Staff, GSM's, Union Officials, and DOS Safety Unit.
+[p208_c0007] The following topics discussed/reviewed include:
+- [p208_c0008] • Injuries and Vehicle Accidents (details of the incident, root cause, corrective actions, safety risk mitigations, recommendations, and any associated positive/negative trends) • Operational Bulletins/Notices/Safety Advisories • STOP Cards (Safe Acts Observed/Actions to Re-enforce Safe Acts and Prevent Unsafe Occurrences) • Local Monthly Safety Walk Through
+[p208_c0009] GSM's supervisors review the EAM database related to non-conformities inputted on a daily basis. Maintenance Supervisors use the information collected to prioritize and schedule work based on the criticality as well as scheduled completion dates.
+### [p208_c0010] 6.6.6 Track
+[p208_c0011] Department of Track conducts scheduled Monthly Staff meetings. Department managers (all tours) and union representatives attend all staff meetings. The current "Safety Bulletins and Advisories" are read and a discussion of their topic is discussed. Input about job site safety and or facility safety concerns are encouraged. Safety issues brought forth are discussed and efforts for remediation are discussed and implemented as required. After the staff meeting a field visit to a safety concern site maybe be convened to review and survey a means of remediation of the condition or issue. Track department managers conduct field visits at working locations. On site safety, discussions between supervisors and maintainers are conducted regularly. Management reviews supervisor Field Reports. Management addresses any safety concern listed in a field report.
+[p208_c0012] _Page 6-149_
+
+## Page 209
+
+### [p209_c0001] 6.6.7 Staten Island Railway
+[p209_c0002] In accordance with the most recent version of Policy Instruction 10.30, Staten Island Railway conducts monthly Safety Committee meetings. The committee meeting attendees consists of SIR Officials (Vice President and Chief Officer, Senior Staff, and Departmental Managers/Supervisors), Union Officials, and the Office of System Safety (OSS). The following topics discussed/reviewed include:
+- [p209_c0003] • Current Injuries and Vehicle Accidents (details of the incident, root cause, corrective actions, safety risk mitigations, recommendations, and any associated positive/negative trends) • Operational Bulletins/General Notices/Safety Advisories • Safety Activity Cards (Safe Acts Observed/Actions to Re-Enforce Safe Acts and Prevent Unsafe Occurrences) • Safety Culture Observations Team (SCOT) Monthly Observations • Local Monthly Safety Walk Through • Joint OSS Track Safety Audits
+### [p209_c0004] 6.7 Drug & Alcohol Program
+### [p209_c0005] 6.7.1 Overview
+[p209_c0006] New York City Transit is committed to operating and maintaining an alcohol-free and drug-free workplace to provide a safe environment for its passengers and employees. NYC Transit policies, consistent with federal and state law, prohibit all employees from using, possessing or being under the influence of alcohol during an employee's tour of duty, while an employee is on NYC Transit's premises or otherwise engaged in NYC Transit business and/or when such use would make them unfit to report for duty or to be on duty. NYC Transit policy prohibits the unlawful manufacture, distribution, dispensation, possession or use of controlled substances at the workplace. In addition, the unlawful use of any drug or controlled substance at any time is also prohibited. NYC Transit requires all employees to abide by the terms of these policies as a condition of employment. Violation of the alcohol, drugs and controlled substance policies is considered to be a major offense. Employees who violate these policies will be disciplined, with punishment up to and including termination from employment. NYC Transit performs drug and alcohol tests of employees who perform safety-sensitive functions pursuant to Federal Transit Administration regulations. All NYC Transit employees are subject to drug and alcohol testing in additional circumstances pursuant to internal policy and/or collective bargaining agreements. In addition, it is the policy to provide eligible employees the opportunity to rehabilitate themselves by use of counseling services.
+[p209_c0007] _Page 6-150_
+
+## Page 210
+
+### [p210_c0001] 6.7.2 Drug and Alcohol Policy/Instructions
+[p210_c0002] The Department of the Executive Vice President issues the most recent versions of: P/I 4.24 Drugs and Controlled Substances and P/I 4.13 Alcohol . These Policy/Instructions are followed by the Department of Subways.
+[p210_c0003] To ensure employees receive knowledge of the aforementioned P/I's the hourly employees are provided with a 2-hour and supervisors are provided with a 4-hour substance abuse training course during induction training. In addition, this information is available on the NYCT intranet MTA Today and copies of the policies are available from management.
+[p210_c0004] The following is a summary of the most recent version of P/I 4.24 Drugs and Controlled Substances
+- [p210_c0005] • Defines policy to prohibit use of drugs or controlled substances including marijuana • States purpose of the P/I to set forth the policies and procedures for possession or use of drugs or controlled substances including marijuana • Defines the scope of the P/I, the employees, and the Authority • Defines controlled substances, drugs, marijuana, and medical authorizations • Outlines employee's responsibility to report use or possession of any controlled substance, drug or substance which may impair job performance and to provide medical evidence of authorization upon request • Outlines when testing for drugs and controlled substances shall be performed and consequences for refusing testing • Lists the consequences for testing positive for the use of drugs/controlled substances depending upon various circumstances • Describes the procedures for having re-testing of a positive finding by a second laboratory • Provides the parameters for participating in the Employee Assistance Program (EAP) • Defines the requirements for an employee to be restored to duty
+[p210_c0006] The following is a summary of the most recent version of P/I 4.13 Alcohol
+- [p210_c0007] • Defines policy to prohibit the possession and consumption of alcohol on Authority property • States purpose of the P/I to set forth the policies and procedures for the possession and consumption of alcohol • Defines the scope of the P/I, the employees, and the Authority • Defines the level of blood alcohol test (0.05 gm/dl or greater) or breath analysis test (0.02 gm/dl or greater) required to result in a positive finding and defines Authority property • Outlines when testing for alcohol shall be performed and consequences for refusing testing • Lists the consequences for testing positive for the alcohol consumption depending upon various circumstances. • Describes the procedures for having re-testing of a positive blood alcohol finding by a second laboratory • Provides the parameters for participating in the Employee Assistance Program (EAP) • Defines the requirements for an employee to be restored to duty
+[p210_c0008] _Page 6-151_
+
+## Page 211
+
+### [p211_c0001] 6.7.3 Post Accident/Incident Drug and Alcohol Testing Policy/Instructions
+[p211_c0002] The most recent version of Policy/Instruction 5.7 Post Accident/Incident Drug and Alcohol Testing was developed to assure appropriate post-accident/incident drug and alcohol testing for safety sensitive employees as required by the regulations of the Federal Transit Administration (FTA). In addition, the Policy/Instruction covers post incident testing for non-FTA covered employees. Employees of Contractors, who perform safety sensitive functions, as defined by federal regulations, are subject to those regulations, which govern post-accident drug and alcohol testing, and are also subject to Authority oversight for compliance with the federal regulations.
+[p211_c0003] The purpose of this P/I is to set forth the procedure to be used for the timely collection of specimens and/or administration of tests for drugs and alcohol as mandated by FTA regulations as provided in the most recent versions of P/I 4.24 Drugs and Controlled Substances and P/I 4.13 Alcohol .
+### [p211_c0004] 6.7.4 Fitness for Duty
+[p211_c0005] The NYC Transit Rules and Regulations prohibit employees from using or possessing alcoholic beverages during their tours of duty and from using such beverages off duty when such use would make them unfit to report for duty or to be on duty, Rule 11(a); and/or using or possessing controlled substances, Rule 11(b). DOS Supervisors must determine if the DOS employees that report to work under their supervision are fit for duty or exhibit conditions such as red/bloodshot, glassy eyes, blank stares, jerky movement or pinpointed or dilated pupils, has the odor of an alcoholic beverage; uses incoherent speech or is staggering or exhibits unusual behavior.
+[p211_c0006] In addition, an FO Manager from each Line will conduct a Fitness for Duty check once a month.
+[p211_c0007] Employees suspected of being unfit for duty shall be directed to submit to a breath alcohol test and/or blood-alcohol test if applicable. Employees failing to submit to such examination shall be subject to immediate suspension and disciplinary action in accordance with applicable labor agreements and/or policy instructions and/or statutes and/or governmental regulations.
+### [p211_c0008] 6.7.5 Staten Island Rail Drug & Alcohol Policy and Fitness for Duty
+[p211_c0009] Employees are prohibited from using or possessing alcoholic beverages during their tours of duty and from using such beverages off duty when such use would make them unfit to report for duty. An employee shall be presumed to be in an unfit condition if they exhibits alcoholic breath, incoherent speech, or staggering. Employees suspected of drinking alcoholic beverages before or during their tours of duty shall be directed to complete a blood-alcohol examination by SIRTOA Medical Division. Employees failing to comply with such examination shall be subject to immediate suspension and disciplinary action in accordance with applicable labor agreements and/or SIRTOA policy.
+[p211_c0010] Employees are prohibited from using or possessing controlled substances including, but not limited to, narcotics, tranquilizers, marijuana, drugs of the amphetamine group, barbiturate derivatives, or paraphernalia used to administer such controlled substances at any time, whether on or off SIRTOA property, except upon lawful medically provided prescription. All employees are
+[p211_c0011] _Page 6-152_
+
+## Page 212
+
+[p212_c0001] required to notify SIRTOA Medical Services Division of their prescribed drug use; in addition all employees must receive written consent of the Assistant Vice President of Medical Services, in accordance with applicable labor agreements and/or SIRTOA policy that such stated drug use is permissible on/off SIRTOA property. Employees are under an affirmative obligation to report to the SIRTOA Medical Services Division their use or possession of any Controlled Substances.
+[p212_c0002] Employees may be required to submit to breath and/or urinalysis testing for alcohol or drugs after certain accidents or incidents, or when required by FTA regulations or SIRTOA policy.
+[p212_c0003] Failure to report as directed for an alcohol and/or drug test, or a failure to complete alcohol and/or drug test, shall be considered as a “refusal” and the employee will be subject to immediate suspension and disciplinary action, in accordance with applicable labor agreements and/or SIRTOA policy.
+[p212_c0004] In accordance with SIR General Notice 06-21 (Duties and Responsibilities Regarding Fitness for Duty) Train Dispatchers, Supervisors and Managers must check all SIR employees for Fitness for Duty when SIR employees report for duty. In addition, Supervisors and Managers will frequently check employees during their tour, in regard to their “Fitness for Duty”. Supervisors and Managers must not permit employees to work if they are suspected of being unfit for duty. All employees who appear unfit for duty must be removed from service immediately and ordered to undergo a drug and alcohol test. If an employee is observed “unfit for duty” it must be immediately reported to the Operations Control Center dispatcher [Rule 3.7, Rule 3.9]. Employees failing to submit to such examination shall be subject to immediate suspension and disciplinary action in accordance with applicable labor agreements, policy instructions, statutes and/or governmental regulations.
+### [p212_c0005] 6.8 Workplace Violence Prevention Program - (Transit Worker Assault Prevention and Response)
+### [p212_c0006] 6.8.1 Overview
+[p212_c0007] In fulfillment of the Y2006 NYS Workplace Violence Prevention law, New York City Transit created a multi-faceted Workplace Violence Prevention Program (WVPP). By legal mandate, this program is comprised of a number of required documented elements in fulfillment of the NYS law. The NYCT WVPP is auditable by the NYS Department of Labor. As the centerpiece of this program, MTA/NYCT issued the most recent version of its official WVPP in Policy Instruction #1.20.0. While NYCT Security largely manages the program requirements through VP/SVP designated WVPP Departmental Liaisons, all NYCT departments are stakeholders in the program’s success -- in particular, NYCT Subways, Buses, Law, Office of System Safety, Central Labor Relations and Human Resources.
+[p212_c0008] The NYS Workplace Violence Prevention program begins with PREVENTION and carries through to workplace violence post-incident review and analysis. The overarching goals of the NYCT Workplace Violence Prevention Program are the:
+- [p212_c0009] • Identification of “risk factors” in the workplace that could engender workplace violence incidents
+[p212_c0010] _Page 6-153_
+
+## Page 213
+
+- [p213_c0001] • Proactive application of “reasonable” mitigations as countermeasures to identified risk • Sharing of pattern/trend information on consummated workplace violence incidents with NYCT employees, particularly those potentially impacted • Engagement of law enforcement officers to apprehend workplace perpetrators • Engagement of the MTA Law Department to liaise with NYC prosecutors in the successful conviction and incarceration of workplace violence offenders.
+[p213_c0002] NYCT maintains a zero-tolerance policy toward all forms of workplace violence and NYCT does not tolerate any act of violence in our system. Assaults on transit workers are crimes and immediately responded to by the appropriate internal and external departments following the guidelines outlined in the WVPP.
+[p213_c0003] The most recent version of the Workplace Violence Prevention PROGRAM Policy Instruction #1.20 is followed by the Department of Subways.
+### [p213_c0004] 6.8.2 Transit Worker Assault Prevention (Workplace Violence Prevention)
+[p213_c0005] NYCT is committed to providing a safe working environment for all employees, including access to secure spaces in our system, where feasible. NYCT continuously explores options to improve availability of such spaces such as access to areas located away from the public, locked and/or isolated operating cabs, and secure break rooms to improve the assault protection in existing equipment/infrastructure.
+[p213_c0006] NYCT provides all of its customer-facing employees with regular de-escalation training. This training is recurrent on a regular basis and provides workers the opportunity to practice de-escalation skills.
+[p213_c0007] Employee parking lots, station platforms, and other common areas transited by NYCT employees are constantly evaluated for security mitigations such as adequate lighting and security cameras where indicated by security surveys. As new facilities are constructed and come on-line, NYCT is committed to ensuring employee safety is a core tenet of the design and functionality of the facility.
+[p213_c0008] Operators and conductors who feel at risk of imminent assault are instructed to contact dispatch through a radio line to dispatch. Station agents, cleaners, track workers, and other workers in the subway system who do not have access to a radio to dispatch are instructed to contact their supervisor and/or respective command center through a dedicated phone line. Other forms of communication, such as the Emergency button on station platform Help Points are also available to employees. Dispatchers, phone operators, and other staff receiving these calls are trained to immediately address threats before returning to other work by directing law enforcement to the location and helping the threatened worker find a safe space.
+[p213_c0009] NYCT in conjunction with MTA Legal, is pursuing a policy of excluding violent individuals from the system, as well as those likely to assault workers based on past recidivist behavior.
+[p213_c0010] _Page 6-154_
+
+## Page 214
+
+### [p214_c0001] 6.8.3 Transit Worker Assault Response
+[p214_c0002] As dictated by the NYCT WVPP policy, following any act of workplace violence, including assault, law enforcement authorities are immediately notified. Employee victims of workplace violence are provided with the time necessary to work with law enforcement as well as to recover from the incident. NYCT Security will prepare and disseminate NYCT Security Alerts of individuals wanted for workplace violence in order to sensitize and galvanize all employees for general awareness and engagement. NYCT fully cooperates with all law enforcement actions to apprehend and prosecute perpetrators of workplace violence against transit workers. Such actions include directly liaising with the assigned police detective-investigators and the review of any associated CCTV video of alleged incidents to assist law enforcement and prosecutors in timely arrests and successful prosecutions.
+[p214_c0003] The NYCT department responsible for the worksite where an act of workplace violence occurs, including assault, assists the Department of Security in its evaluation of each incident to determine what countermeasures or mitigations may be beneficial to lower the risk of a reoccurrence.
+[p214_c0004] Notifications of workplace violence incidents are communicated in near-real-time through various NYCT Command Centers. These include email notifications to NYCT leadership and designated department-level WVPP Liaisons. Following an assault, union representatives provide counsel to employee-victims prior to any interview with Safety and Security or other management representatives. The Safety Committee is provided a regular summary report, at least quarterly, of all employee assaults in the system.
+[p214_c0005] _Page 6-155_
+
+## Page 215
+
+### [p215_c0001] 6.8.4 Workplace Violence Prevention Program (P/I 1.20.0)
+### [p215_c0002] MTA NEW YORK CITY TRANSIT POLICY/INSTRUCTION
+[p215_c0003]
+
+```text
+Workplace Violence Prevention Program Classification General 1/08/15 Number 1.20.0
+```
+### [p215_c0004] TABLE OF CONTENTS
+[p215_c0005] SECTION SUBJECT PAGE 1.0 POLICY 2 2.0 PROGRAM COMPLIANCE 2 3.0 PURPOSE 4 4.0 DEFINITIONS 5 5.0 RESPONSIBILITIES 7 6.0 ATTACHMENTS 13 7.0 REFERENCES 13
+### [p215_c0006] ATTACHMENTS
+[p215_c0007] Appendix A: Workplace Violence Prevention Policy Statement (posted where notices to employees are normally posted).
+[p215_c0008] Appendix B: Workplace Violence Prevention Policy/Program " Physical Site Survey and Best Practice/Policy Controls – Generic Checklist "
+[p215_c0009] _1 of 13_
+[p215_c0010] _Page 6-156_
+
+## Page 216
+
+### [p216_c0001] MTA NEW YORK CITY TRANSIT POLICY/INSTRUCTION
+[p216_c0002]
+
+```text
+Workplace Violence Prevention Program Classification General 1/08/15 Number 1.20.0
+```
+### [p216_c0003] 1.0 POLICY
+[p216_c0004] It is the policy of MTA New York City Transit, including the Manhattan and Bronx Surface Transit Operating Authority ("MaBSTOA") and Staten Island Rapid Transit Operating Authority ("SIRTOA"), hereinafter collectively referred to as "NYC Transit" or "NYCT," to evaluate its workplaces and determine risk factors for workplace violence and to develop procedures to reasonably prevent or minimize the potential for such violence, including, when necessary, working with law enforcement to effectively prosecute cases where NYC Transit employees are victims of workplace violence. Threats, threatening behavior, or acts of violence against employees or anyone on Authority property will be thoroughly investigated and appropriate action will be taken, including summoning the police, where warranted. All employees are responsible for immediately reporting instances of workplace violence to their immediate supervisor or manager. Threats, assaults, or acts of violence that require immediate attention must be reported to the police at 911.
+### [p216_c0005] 2.0 PROGRAM COMPLIANCE
+[p216_c0006] The New York State Department of Labor requires that a Workplace Violence Prevention Program include the following elements:
+- [p216_c0007] 1. A list of the risk factors identified in the workplace examination. a. Identified risk factors resulting from all physical site surveys (i.e., workplace evaluations) of NYCT workplaces will be entered into the Workplace Violence Database. This database will be the central repository for listing site-specific risk factors. 2. The methods the employer will use to prevent the incidence of workplace violence incidents. a. Methods to prevent or reduce incidents will vary, depending on the nature of the specific incident, but may involve personnel training, repair of infrastructure, installation of new or additional security technology/equipment, physical hardening/engineered modification of the worksite, or a combination of these measures. 3. A hierarchy of controls to which the program shall adhere as follows: engineering controls, work practice controls, and finally personal protective equipment. a. By application of the MTA and NYCT official security strategy of "Defense in Depth," a layered approach to reducing worksite risk
+[p216_c0008] _2 of 13_
+[p216_c0009] _Page 6-157_
+
+## Page 217
+
+### [p217_c0001] MTA NEW YORK CITY TRANSIT POLICY/INSTRUCTION
+[p217_c0002]
+
+```text
+Workplace Violence Prevention Program Classification General 1/08/15 Number 1.20.0
+```
+[p217_c0003] factors will be used. With layering, a combination of one or more synergized safeguards reinforces the other(s), as needed.
+- [p217_c0004] 4. The methods and means by which the employer shall address each specific hazard identified in the workplace evaluation. a. Each department head shall be responsible for ensuring physical site surveys are completed and timely and that reasonable corrective measures are applied to specifically identified risk factors. Authorized Employee Representatives ("AER"), defined in Section 4.4, will be invited to participate. An Executive Coordinating Committee will oversee program compliance. 5. A system designed and implemented by the employer to report any workplace incidents that occur in the workplace. The reports must be in writing and maintained for the annual program review. a. Workplace incidents as well as other security-related incidents are reported in the computerized Security Incident Tracking System ("SITS") database in accordance with NYCT Policy Instruction #1.14.0 of 02/16/10. This is a mandated reporting protocol. 6. A written outline or lesson plan for employee program training. a. This material will inform, educate and sensitize employees to bolster their knowledge and aid in the prevention of workplace violence, starting with the identification of some typical examples of workplace violence "risk factors," mitigation strategies, and measures for protection. 7. A plan for program review and update on at least an annual basis. Such review and update shall set forth any mitigating steps taken in response to any incident of workplace violence. a. An Executive Coordinating Workplace Violence Prevention Committee, comprised of the NYCT President's senior staff or their respective designees, will be responsible for the annual review and update of the program as well as the examination of any incident of workplace violence and ensuring mitigation steps in response. AERs will be invited to participate.
+[p217_c0005] _3 of 13_
+[p217_c0006] _Page 6-158_
+
+## Page 218
+
+### [p218_c0001] MTA NEW YORK CITY TRANSIT POLICY/INSTRUCTION
+[p218_c0002]
+
+```text
+Workplace Violence Prevention Program Classification General 1/08/15 Number 1.20.0
+```
+### [p218_c0003] 3.0 PURPOSE
+[p218_c0004] The purpose of this Policy Instruction is to:
+- [p218_c0005] 3.1 Establish and constitute the Workplace Violence Prevention Program for NYCT as required under the New York State Workplace Violence Prevention Act ("WVPA"), N.Y. Labor Law §27-b, and the implementing regulations of the New York State Department of Labor, 12 N.Y.C.R.R. 800.6. To this end, this Policy Instruction: 3.1.1 Establishes an Executive Coordinating Workplace Violence Prevention Committee to oversee and direct NYCT's workplace violence prevention efforts through effective and efficient use of NYCT resources. 3.1.2 Establishes procedures that will ensure compliance with the WVPA. 3.1.3 Establishes responsibilities for the development and enforcement of NYCT's Workplace Violence Prevention Policy. 3.1.4 Establishes procedures that will ensure the early identification and reasonable mitigation strategies for minimizing workplace violence.
+[p218_c0006] _4 of 13_
+[p218_c0007] _Page 6-159_
+
+## Page 219
+
+### [p219_c0001] MTA NEW YORK CITY TRANSIT POLICY/INSTRUCTION
+[p219_c0002]
+
+```text
+Workplace Violence Prevention Program Classification General 1/08/15 Number 1.20.0
+```
+### [p219_c0003] 4.0 DEFINITIONS
+- [p219_c0004] 4.1 Workplace Violence is defined by DOL as “any physical assault or acts of aggressive behavior occurring where a public employee performs any work-related duty in the course of his or her employment.” “Physical assault or acts of aggressive behavior,” in turn, is defined by the DOL to include, among other things, attempts of threatening behavior, whether physical or verbal, or intentional display of force, or non-consensual intentional or wrongful physical contact, or stalking with intent to cause fear of material harm to another in the workplace. 4.2 Workplace is defined by the DOL as “[a]ny location away from an employee’s domicile, permanent or temporary, where an employee performs any work-related duty in the course of his or her employment by an employer.” 4.3 Risk Factors are defined by the DOL as employment situations that may present higher risks of workplace violence, although workplace violence may occur in any workplace setting. 4.4 Authorized Employee Representative (“AER”) is defined by the DOL as “[a]n employee authorized by the employees or the designated representative of an employee organization recognized or certified to represent the employees pursuant to Article 14 of the Civil Service Law.” 4.5 Security Incident Tracking System (“SITS”) is a NYCT-wide, intranet based, database used for documenting and recording security incidents provided for in NYCT Policy Instruction # 1.14.0, dated 02/16/10. 4.6 Workplace Violence Prevention Program , pursuant to the DOL regulations, is “[a]n employer program designed to prevent, minimize and respond to any workplace violence, the development and implementation of which is required by Article 2, Section 27-b of the New York State Labor Law.” 4.7 Workplace Violence Prevention Departmental Liaison is a senior level manager designated by each Department Head to serve as the central point of contact for that specific department, to help ensure its compliance with all Workplace Violence Prevention policy/program requirements. This individual will maintain communication with the Department of Security
+[p219_c0005] _5 of 13_
+[p219_c0006] _Page 6-160_
+
+## Page 220
+
+### [p220_c0001] MTA NEW YORK CITY TRANSIT POLICY/INSTRUCTION
+[p220_c0002]
+
+```text
+Workplace Violence Prevention Program Classification General 1/08/15 Number 1.20.0
+```
+[p220_c0003] and the Executive Committee, as necessary, thereby facilitating resolution of issues.
+- [p220_c0004] 4.8 Workplace Violence Database is a NYCT-wide, intranet-based computer program utilized for documenting and recording applicable, site-specific risk factors. It features design elements for worksite customization to reflect the diverse work environment of NYCT locations. Tracking Reports will be generated from the Database to ensure compliance with the program and timely resolution of issues. 4.9 Executive Coordinating Workplace Violence Prevention Committee is the group responsible for the oversight of the Workplace Violence Prevention Program and shall be comprised of the President's Senior Staff or their respective designee(s). The Chair of the Executive Coordinating Committee shall be the Vice President, Department of Security. The Vice President, Department of Security, shall also serve as Technical Advisor to the committee.
+[p220_c0005] _6 of 13_
+[p220_c0006] _Page 6-161_
+
+## Page 221
+
+### [p221_c0001] MTA NEW YORK CITY TRANSIT POLICY/INSTRUCTION
+[p221_c0002]
+
+```text
+Workplace Violence Prevention Program Classification General 1/08/15 Number 1.20.0
+```
+### [p221_c0003] 5.0 RESPONSIBILITIES
+[p221_c0004] 5.1 The Executive Coordinating Workplace Violence Prevention Committee shall meet at the direction of the Chair of that committee, but not less than annually.
+[p221_c0005] A. The Executive Coordinating Workplace Violence Prevention Committee shall be responsible for the following:
+- [p221_c0006] 1. Defining NYCT's overall goals on Workplace Violence Prevention. 2. Monitoring compliance with the goals spelled out in this policy and ensuring that decisions made by this committee are implemented. 3. Resolving outstanding critical Workplace Violence Prevention issues forwarded by Departments. 4. Reviewing Human Resources Training lesson plans and curriculum. 5. Reviewing Workplace Violence Prevention statistics and possible patterns. 6. Instituting a plan for the review and update, if necessary, of the Workplace Violence Prevention Program and its seven (7) elements (see Section 2.0, Program Compliance), including Physical Site and Administrative Risk Factor reviews, on at least an annual basis. Such review and update shall set forth any mitigating steps taken in response to any incident of workplace violence.
+[p221_c0007] _7 of 13_
+[p221_c0008] _Page 6-162_
+
+## Page 222
+
+### [p222_c0001] MTA NEW YORK CITY TRANSIT POLICY/INSTRUCTION
+[p222_c0002]
+
+```text
+Workplace Violence Prevention Program Classification General 1/08/15 Number 1.20.0
+```
+[p222_c0003] B. The NYCT Departments listed below shall have the following responsibilities:
+[p222_c0004] 1. Department of Security shall, working in consultation with the Department of Law, the Office of System Safety, and the Office of Labor Relations, be responsible for annual review of NYCT's written Workplace Violence Prevention Program relating to risk factors. AERs will be invited to participate in this annual review process.
+[p222_c0005] a. The Department of Security shall also be responsible for providing subject matter expertise in the areas of threat, vulnerability and risk analysis, and vulnerability mitigation, as well as coordinating with MTA Information Technology (IT) on developing a database to track vulnerabilities/risk factors and the corresponding implemented mitigations as identified and reported by each department.
+[p222_c0006] b. The Department of Security will maintain dialogue and communication with each Department's Workplace Violence Prevention Liaison, as designated by the Department Head.
+[p222_c0007] c. The Department of Security will produce Workplace Violence Prevention Database Tracking Reports, tracking and identifying open items (vulnerabilities/risk factors) for action and resolution by the Executive Committee.
+[p222_c0008] i. Workplace Violence Prevention Database Tracking Reports will be forwarded from Security to the:
+- [p222_c0009] 1. Departmental Liaison; and 2. Executive Coordinating Workplace Violence Prevention Committee.
+[p222_c0010] d. The Department of Security will produce statistical reports of Workplace Violence incidents as reported by employees through the Security Incident Tracking System (SITS – NYCT Policy Instruction # 1.14.0, dated 02/16/10.).
+[p222_c0011] _8 of 13_
+[p222_c0012] _Page 6-163_
+
+## Page 223
+
+### [p223_c0001] MTA NEW YORK CITY TRANSIT POLICY/INSTRUCTION
+[p223_c0002]
+
+```text
+Workplace Violence Prevention Program Classification General 1/08/15 Number 1.20.0
+```
+- [p223_c0003] i. Such statistical reports will be forwarded from Security to the: 1. Departmental Liaison; and 2. Executive Coordinating Workplace Violence Prevention Committee. 2. Office of Labor Relations is responsible for the Workplace Violence Prevention Policy Statement and ensuring that the policy is posted where notices to employees are normally posted (Appendix A). 3. Department of Law shall provide legal counsel in the preparation of the Workplace Violence Prevention Program and, if necessary, the annual updating of same. 4. Division of Human Resources , upon completion of the Workplace Violence Prevention Program, shall be responsible for the following: a. Informing Employees: Providing and implementing a training program in compliance with DOL Regulations, including providing employees with information regarding the following: (1) NYCT's requirements under the WVPA; (2) typical risk factors identified in employees' workplaces and measures an employee can take to protect himself/herself; and updating lesson plans to incorporate information on new or unique risk factors as communicated by Department Heads; and (3) location and availability of NYCT's written Workplace Violence Prevention Program and Workplace Violence Prevention Policy Statement. b. Employee Training shall take place at the time of the employee's initial assignment and annually thereafter. Additionally, information shall be provided to affected employees whenever significant changes are made to NYCT's written Workplace Violence Prevention Program.
+[p223_c0004] _9 of 13_
+[p223_c0005] _Page 6-164_
+
+## Page 224
+
+### [p224_c0001] MTA NEW YORK CITY TRANSIT POLICY/INSTRUCTION
+[p224_c0002]
+
+```text
+Workplace Violence Prevention Program Classification General 1/08/15 Number 1.20.0
+```
+- [p224_c0003] 5. MTA Information Technology (IT) Department shall develop a web-based database featuring design elements for worksite customization, working with all Departments, to ensure data entry access rights as well as to provide technical support in resolving database issues. Working with the Department of Security and the Office of System Safety, create reports to satisfy all State reporting requirements. 6. Office of System Safety shall share, for comprehensiveness, security-related data it collects with the Department of Security.
+### [p224_c0004] 5.2 Each Department Head shall be responsible for the following:
+- [p224_c0005] 1. Ensuring that Local Staff (managers and supervisors) are immediately investigating and reporting on all incidents of workplace violence in their workplaces in accordance with Security Incident Tracking System Policy Instruction # 1.14.0. After taking initial steps to ascertain what occurred and identify potential witnesses, local management in consultation with Labor Relations, should determine whether the workplace violence incident is of such a nature that it should be referred to the Special Investigations & Review Division for investigation. Special Investigations & Review will retain final decision making authority as to whether it will investigate the referral. 2. Designating a Workplace Violence Prevention Departmental Liaison to serve as the overall Department's central point of contact to ensure compliance with all policy/program requirements. 3. Ensuring that physical site surveys are conducted and documented, per departmental procedure, including documented invitations for AER participation. Documented site evaluations are required at newly acquired, or newly constructed, facilities, stations, railcars and buses per departmental procedure. Site survey locations must be revisited if there is a significant change in workplace characteristics or if there is a significant increase in the frequency or occurrence of workplace violence at a particular site.
+[p224_c0006] Note: For NYCT administrative buildings containing multiple departments and units, which do not possess a single,
+[p224_c0007] _10 of 13_
+[p224_c0008] _Page 6-165_
+
+## Page 225
+
+### [p225_c0001] MTA NEW YORK CITY TRANSIT POLICY/INSTRUCTION
+[p225_c0002]
+
+```text
+Workplace Violence Prevention Program Classification General 1/08/15 Number 1.20.0
+```
+[p225_c0003] unified hierarchy for local and departmental committee chain of review (e.g., 2 Broadway and 130 Livingston Street), the Department of Security will assist the building management as it conducts the physical site, risk factor / vulnerability assessments. Space Management/Facilities is the NYCT point of contact for all leased property. Together with MTA Real-Estate, Space Management/Facilities will coordinate corrective risk factor mitigations / counter measures.
+- [p225_c0004] 4. Ensuring that all required information is entered into the Workplace Violence Prevention Database by the appropriate personnel. 5. Ensuring that reasonable, corrective measures for identified risk factors are implemented. The following are examples of controls that may be considered in prescribing corrective measures: employee training; engineering design modifications; equipment issuance, e.g. flashlights, etc. 6. Ensuring that Workplace Violence Prevention employee training takes place at the time of the employee's initial assignment and annually thereafter. 7. Ensuring that unique or unusual risk factors that have been identified are communicated to the Department of Security and the Division of Human Resources. 8. Meeting semi-annually with appropriate managers to review Workplace Violence Prevention reports, and outstanding issues that have yet to be addressed and closed in the system. 9. Meeting with the AER annually to review and discuss workplace violence incident statistics, trends and/or patterns (i.e., "annual records review") as reported through the Security Incident Tracking System. 10. Summarizing the discussions outlined above (items 6-7) for the Executive Coordinating Workplace Violence Prevention Committee on an annual basis.
+[p225_c0005] _11 of 13_
+[p225_c0006] _Page 6-166_
+
+## Page 226
+
+### [p226_c0001] MTA NEW YORK CITY TRANSIT POLICY/INSTRUCTION
+[p226_c0002]
+
+```text
+Workplace Violence Prevention Program Classification General 1/08/15 Number 1.20.0
+```
+[p226_c0003] 5.3 Managers and Supervisors shall, with respect to incidents involving workplace violence, be responsible for the following:
+- [p226_c0004] 1. Immediately commencing the appropriate steps to address all allegations of workplace violence; 2. Immediately notifying internal and external entities, through established procedural protocols, as appropriate, e.g. immediate chain of command supervisor/manager, law enforcement authorities, etc.; 3. Implementing stopgap measures to mitigate any immediate reoccurrence; 4. Preparing and forwarding appropriate documentation, e.g. SITS report; 5. Recommending to senior management through chain-of-command any actions to mitigate any future reoccurrence involving subject employee(s), e.g. counseling, training, disciplinary action, etc.
+[p226_c0005] 5.4 All Employees shall immediately report instances of workplace violence to their immediate supervisor or manager as well as follow any individual departmental notification procedures.
+[p226_c0006] Note: Many of the responsibilities outlined above include the gathering and transmittal of different kinds of information. Please note that, with respect to the disclosure of information, the NYS DOL Regulations regarding Workplace Violence Prevention Programs do not require employers to disclose in their Programs any information kept confidential for security reasons (e.g., non-routine investigative techniques, anti-terrorism measures, confidential sources, information that endangers the life or safety of any person) or privacy concerns (e.g., injury resulting from a sexual assault or from contaminated or potentially hazardous materials, mental illness, HIV infection).
+[p226_c0007] 5.5 No employee shall be discharged, suspended, demoted, penalized, or discriminated against or shall suffer from an adverse employment action in the terms and conditions of his/her employment because he/she has reported an incident or incidents of workplace violence.
+[p226_c0008] _12 of 13_
+[p226_c0009] _Page 6-167_
+
+## Page 227
+
+### [p227_c0001] MTA NEW YORK CITY TRANSIT POLICY/INSTRUCTION
+[p227_c0002]
+
+```text
+Workplace Violence Prevention Program Classification General 1/08/15 Number 1.20.0
+```
+### [p227_c0003] 6.0 ATTACHMENTS
+[p227_c0004] Appendix A: Workplace Violence Prevention Policy Statement (posted where notices to employees are normally posted)
+[p227_c0005] Appendix B: Workplace Violence Prevention Policy/Program " Physical Site Survey and Best Practice/Policy Controls – Generic Checklist "
+### [p227_c0006] 7.0 REFERENCES
+[p227_c0007] Security Incident Tracking System (SITS) NYCT Policy Instruction # 1.14.0, dated 02/16/10.
+[p227_c0008] _____ Carmen Bianco President
+[p227_c0009] Date: 1.8.15
+[p227_c0010] _13 of 13_
+[p227_c0011] _Page 6-168_
+
+## Page 228
+
+### [p228_c0001] New York City Transit
+### [p228_c0002] Appendix A
+### [p228_c0003] WORKPLACE VIOLENCE PREVENTION POLICY FOR THE NYC TRANSIT AUTHORITY, MANHATTAN AND BRONX SURFACE TRANSIT OPERATING AUTHORITY, AND STATEN ISLAND RAPID TRANSIT OPERATING AUTHORITY
+[p228_c0004] The New York City Transit Authority, Manhattan and Bronx Surface Transit Operating Authority, and Staten Island Rapid Transit Operating Authority (collectively, "the Authority") policy is to promote a safe environment for all employees. Workplace violence presents a serious occupational safety hazard to employees. Threats, threatening behavior, or acts of violence against employees or anyone on Authority property will be thoroughly investigated and appropriate action will be taken, including summoning the police, where warranted. All employees are responsible for helping to create an environment of mutual respect for each other, following all policies, procedures and program requirements, and for assisting in maintaining a safe and secure work environment.
+[p228_c0005] This policy is designed to meet the requirements of New York Labor Law, Section 27-b, which requires a public employer, such as the Authority, to evaluate its workplaces to determine the presence of risk factors that may result in workplace violence to its employees, develop and implement a written Workplace Violence Prevention Program, as well as provide employees with information and training on the risks of workplace violence in its workplaces. In going about this process, the Authority will establish a committee or task force made up of management and Authorized Employees Representatives (AERs), who will have an ongoing role of participation in the evaluation process, as well as recommend methods to reduce or eliminate the hazards identified during the process. AERs will also have an input in the written Workplace Violence Prevention Program, as well as participate in the annual program review, including a review of incident reports. Also, all employees will participate in the annual Workplace Violence Prevention Training Program that the Authority will provide.
+[p228_c0006] The Authority does not tolerate any act of violence and will continue to strictly enforce a "zero tolerance" policy on workplace violence. As has always been the case, any report of violence will be taken seriously and handled appropriately. Threats, assaults, or acts of violence that require immediate attention should be reported to the police at 911. Employees are to inform a supervisor or manager or the appropriate Command or Control Center (Bus Command Center [at 718-927-7777], Rail Control Center [at 212-712-4480], Security Command Center [at 718-694-4278], and SIRTOA Control Center [at 718-876-8302]) if they observe or experience violent, threatening, harassing, intimidating, or other disruptive behavior by anyone on Authority property that does not require immediate attention.
+[p228_c0007] The Authority's Department of Security maintains a record of all such incidents as part of the Authority's Security Incident Tracking System (SITS) program (Policy Instruction No. 1.14.0). A supervisor or manager who receives a report of workplace violence should interview the employee making the report, make required notifications, and prepare a Security Incident Reporting Worksheet ("Worksheet"). The current version of the Security Incident Reporting Worksheet, and instructions for preparation, are posted on the Authority's intranet on the Department of Security's webpage. The completed Worksheet should be forwarded to the appropriate department Command or Control Center for entry into the SITS database.
+[p228_c0008] The Authority will record privacy concern cases in accordance with the provisions set forth in the Department of Labor regulations 12 NYCRR Part 800.6. For cases involving privacy concerns (sexual assaults, HIV infections, etc.), the Authority will remove the name of the victim and will enter the designation "Privacy Concern Case," in place of the victim's name, before sharing such report with anyone other than the Commissioner of the Department of Labor.
+[p228_c0009] _Page 6-169_
+
+## Page 229
+
+[p229_c0001] Assessment Date: _____
+### [p229_c0002] Appendix B: Workplace Violence Prevention Policy/Program Physical Site Survey and Best Practice/Policy Controls -- Generic Checklist
+[p229_c0003] NYCT Dept./Div.: _____ Location: _____ NYCT Div. Liaison: _____
+[p229_c0004] Facility Type: (circle one) Yard, Depot, Shop, Subway Station, Office, Storeroom, Other (Specify) _____
+[p229_c0005] WVPP Team (List Name(s) & Dept./Div. and Name(s) of Authorized Employee Representative(s) in Attendance): _____
+### [p229_c0006] Instructions
+[p229_c0007] This Checklist attempts to comprehensively list ALL of the engineering security controls and security practices and policy in possible use today. Use this Generic Checklist to document the PRESENT CONDITIONS ONLY at NYCT worksites.
+### [p229_c0008] ALL SECTIONS:
+[p229_c0009] At any given NYCT worksite location, many of these items (in question format) may be "Not Applicable," requiring selection of "N/A" as a response. The Notes/Comments section may be filled out if "N/A" is marked for a given question, as deemed appropriate.
+[p229_c0010] If a response is marked "NO" in a "YES/NO" "Present" or "FUNCTIONING" question, the NOTES/COMMENTS section MUST be filled out in order for this checklist to be successfully submitted through the VANDAM database (be sure to include the exact location and detailed description).
+### [p229_c0011] ADDITIONAL INSTRUCTION FOR SECTION 1:
+[p229_c0012] A Note/Comment is also optional if the question is marked both "Y" for "Present" and "Y" in the "Functioning" column.
+[p229_c0013] _Revised: 12/2/2014_
+[p229_c0014] _Page 1 of 5_
+[p229_c0015] _NYCT PA No. ______
+[p229_c0016] _Page 6-170_
+
+## Page 230
+
+[p230_c0001] Complete this Checklist ONLY after fully reading Page 1 instructions. This generic Checklist is to document PRESENT CONDITIONS ONLY at NYCT worksites. Many items may be "Not Applicable" requiring selection of the "N/A" response.
+[p230_c0002]
+
+```text
+Worksite Physical Site Survey N/A Present Y/N Functioning Y/N Notes/Comments A. Engineering Controls 1. Barriers to Separate Customers from Work Area? 2. Bullet-Resistant Glass or Other Bullet-Resistant Barriers? 3. Closed Circuit Television (CCTV)? a. CCTV Video Monitor(s)? b. CCTV Video Recorder(s)? 4. Corner Mirrors for Blind Spot Reduction? 5. Door Controls (mechanical locks, remote buzzers, panic bars)? 6. Electronic Access Control (Card Readers, "Swipes" for Doors)? 7. Hand-held Video Camera? 8. Intrusion Detection System (pirate alarms for unauthorized entry)? 9. Landscaping for Unobstructed View? 10. Metal Detector? a. Handheld Metal Detector? b. Stationary Metal Detector? 11. Open-Door Detectors (audible alarms)? 12. Panic Button? 13. Parking Lot/Garage Lighting? 14. Perimeter Fencing (Specify in Notes: Chain Link, Expanded Metal/Mesh, etc.)? 15. Personnel Trails (confinement area between locked doors)? 16. Secondary Exits? 17. Traffic Arms? 18. Unobstructed Windows To Allow Views of Interior (Limited Posting of Signs)?
+```
+[p230_c0003] _Page 6-171_
+[p230_c0004] _Revised: 12/2/2014_
+[p230_c0005] _Page 2 of 5_
+[p230_c0006] _NYCT PM No. ______
+
+## Page 231
+
+[p231_c0001] Complete this Checklist ONLY after fully reading Page 1 instructions. This generic Checklist is to document PRESENT CONDITIONS ONLY at NYCCT workplaces. Many items may be "Not Applicable" requiring substitution of the "N/A" response.
+[p231_c0002]
+
+```text
+Section Item YES NO Notes/Comments 8. Security Officers and/or Law Enforcement Coverage? 1. If yes, is there an appropriate number to adequately cover this site? 2. Indicate if they are: a. Outsourced Contract Guards? b. External Police Agency? c. NYCT Transit Property Protection Agents? 3. Fixed Posts at all Entrances/Exits? 4. Officers are Radio-Equipped? 5. Rotating Patrols? 6. Security Force received training in WVP situations? 9. What Worksite Procedures are in place? 1. Access Control Alert Posting and Procedure? 2. Conveying of employee performed to ascertain their concerns? 3. Do Employees Feel Safe? 4. Work Areas Evaluated by Employer? (Specify Frequency in Notes) 5. Doles maintained in an orderly fashion? 6. Floor Plans Posted Showing Exits, Entrances, Location of Fire Extinguishers, AED devices, etc.? 7. Have employees been trained in an Emergency Action Plan, Evacuation Plan and/or a Disaster Contingency Plan? 8. Workplace Violence Prevention Policy Posted by Employer? 9. Emergency Numbers Posted by Phones? 10. Employee Dismissal Procedure (Property Retrieval & ID Access Removal)? 11. ID Badges Displayed (Employees & Visitors)? 12. Internal Procedures for Conflict Situation Resolution? 13. Key Control Procedures? 14. Limit Spouse & Family Visits to Designated Areas? 15. Visitor Access Control System? 16. Parking Control Procedure for Employees, Contractors & Visitors? 17. Rescue Area Available? 18. Telephone Systems with Active Voicemail? a. If yes, is there battery backup or alternate power failure phones?
+```
+[p231_c0003] _Revised: 12/4/2014_
+[p231_c0004] _Page 3 of 5_
+[p231_c0005] _NYCT PM No. ______
+
+## Page 232
+
+[p232_c0001] Complete the Checklist Only after fully reading Page 1 Instructions. This generic Checklist is to document PRESENT CONDITIONS ONLY at NYCT worksites. Many items may be "Not Applicable," requiring selection of the "NA" response. General Comments: <td
+
+## Page 233
+
+### [p233_c0001] Table of Contents
+[p233_c0002] 7 Safety Promotion ..... 2 7.1 Competency and Training..... 2 7.1.1 Overview..... 2 7.1.2 Employee Technical and Safety Training..... 3 7.1.2A Electronics Maintenance..... 3 7.1.2B Track..... 3 7.1.2C Infrastructure/Facilities ..... 4 7.1.2D Crane, Equipment, & Welding Training..... 4 7.1.2E Elevator and Escalator ..... 5 7.1.2F Power (Electrical & Third Rail Operations) ..... 6 7.1.2G Signals..... 6 7.1.2H Car Equipment ..... 7 7.1.2I Service Delivery RTO ..... 7 7.1.2J Station Environment & Operations..... 10 7.1.2K Staten Island Railway ..... 10 7.1.3 Employee Safety and Emergency Response Training ..... 12 7.1.4 De-Escalation and Workplace Violence Training..... 14 7.1.5 Contractor Safety..... 14 7.1.6 Recordkeeping..... 17 7.1.7 Compliance with Training Requirements ..... 18 7.2 Safety Communication ..... 19 7.3 Training Matrices ..... 20
+[p233_c0003] _Page 7-1_
+
+## Page 234
+
+### [p234_c0001] 7 Safety Promotion
+### [p234_c0002] 7.1 Competency and Training
+### [p234_c0003] 7.1.1 Overview
+[p234_c0004] Operations Training provides numerous training programs (approximately 350 individual courses) focusing on: occupational and environmental safety; emergency response; induction of new hires and promotions; legacy and millennial equipment; title-specific knowledge, and skill refreshers. Programs are developed in partnership with NYC Transit departmental management and where appropriate, other MTA agencies in response to mandates by Federal, State, and City entities.
+[p234_c0005] Operations Training is organized into the following five training units, each responsible for specific training programs:
+- [p234_c0006] • Safety and Emergency Response Training develops and delivers training programs in the areas of occupational and environmental safety, FDNY certificate of fitness, emergency response and employee preparedness. The area is responsible for assisting NYC Transit management meet its safety goals and the standards set by OSHA, DOL, FDNY, FTA and other regulatory agencies. • Electrical and Stations Training provides specialized theoretical and hands-on training to Signals, Power, Electronics, and Station Division personnel. Skills enhancement and refresher training are offered to improve personnel performance. • Track, Infrastructure, and Maintenance Support Training is primarily responsible for training operating personnel in Divisions of Track, Infrastructure, and Facilities. Maintenance Support training (i.e., welding, powered industrial trucks, and forklift operation) and the Track Safety course are administered by this training unit. • Car Equipment Training provides specialized theoretical and hands-on training to Car Equipment Division personnel. The unit provides required Car and Shop Safety training for employees of NYCT and external agencies including all contractor and consultant employees performing work in Overhaul and Maintenance Shops and associated support yards to these facilities. This unit also delivers the National Safety Council's Defensive Driving course for NYC Transit, as well as EPA Section 608 Refrigerant Handling Certification training and examination administration. • Service Delivery Operations Training is responsible for training Field Operations and Station Environment Division personnel and conducts Subways Flagging training.
+[p234_c0007] Track Safety training is required for employees of NYCT and any outside agency including all contractor and consultant employees performing work on or near NYCT tracks. Track Safety Refresher Training is required on a cycle set by the operating department, except for employees
+[p234_c0008] _Page 7-2_
+
+## Page 235
+
+[p235_c0001] that are required to attend the Track Flagging Refresher course. Individuals that successfully complete Track Safety training receive a qualification card with the expiration date.
+### [p235_c0002] Investigations
+[p235_c0003] All employees that are responsible for the management process of investigations on behalf of the PTSB must be trained or working under the direct supervision of an individual who is trained to perform their functions in accordance with the Public Transportation Safety Certification Training Program as outlined Part 672.
+### [p235_c0004] Flagging
+[p235_c0005] All employees who pick into a job title to perform flagging duties or are assigned to perform flagging duties must attend the flagging qualification training as outlined in the departmental Safety Training Matrix, Policy/Instructions, and/or other NYCT safety programs. Employees that successfully complete the flagging training are issued a qualification card that contains the expiration.
+[p235_c0006] Track Flagging Refresher re-qualifies employees in flagging and track safety and is given as outlined in the departmental Safety Training Matrix, Policy/Instructions, and/or other NYCT safety programs. Re-qualification cards with the expiration date are issued to each employee that successfully completes the refresher training.
+### [p235_c0007] 7.1.2 Employee Technical and Safety Training
+[p235_c0008] The following is a description of the technical training (technical training matrices are in development by each department/division) and certification programs for employees provided by Operations Training and departments/divisions.
+### [p235_c0009] 7.1.2A Electronics Maintenance
+[p235_c0010] Employees hired should have a basic understanding of the principles of equipment maintenance. Maintenance courses are developed internally to provide specialized theoretical and hands-on training to Maintainers and Maintenance Supervisors for induction and promotion of employees. Employees also receive in-house technical training/refresher classes for specific equipment/systems after implementation of job Maintenance picks. Contractor provided training is administered as required.
+[p235_c0011] The Electronic Maintenance Division ensures that employees receive the proper safety training in accordance with the Electronic Maintenance Safety Training Matrix.
+### [p235_c0012] 7.1.2B Track
+[p235_c0013] Track Induction Training includes three (3) titles in the Division of Track that receive induction training:
+[p235_c0014] _Page 7-3_
+
+## Page 236
+
+- [p236_c0001] • Trackworker • Track Equipment Maintainer • Track Inspector
+[p236_c0002] Promotion Training requires newly promoted Maintenance Supervisor Level I (MSI) employees to complete a course and practical training is administered as well.
+[p236_c0003] Track/Infrastructure/Maintenance Support Training ensures that employees being hired into these positions receive the proper training to perform their functions by providing them with their required induction training modules, including the required training modules indicated in the Maintenance of Way Safety Training matrix which is verified by the department training liaison.
+### [p236_c0004] 7.1.2C Infrastructure/Facilities
+[p236_c0005] Induction Training requires that all maintainer titles hired by Infrastructure and Facilities receive induction training including:
+- [p236_c0006] • Lighting Maintainer • Ventilation & Drainage Maintainer • Heating & Ventilation Maintainer • Transit Electrical Helper • Structure Maintainer (A, B, C, D, E, F, G)
+[p236_c0007] Promotion Training requires newly promoted MS1 Infrastructure/Facilities to complete a training course.
+[p236_c0008] Track/Infrastructure/Facilities Support Training ensures that employees being hired into these positions receive the proper training to perform their functions by providing them with their required induction training modules including the required training modules indicated in the Maintenance of Way and Facilities Safety Training matrix which is verified by the department training liaison.
+[p236_c0009] Track/Infrastructure/Facilities/ Support Training also provides a variety of ongoing courses for E&E, Hydraulics, HVAC and Lighting employees on the service and maintenance of associated electro-mechanical equipment.
+### [p236_c0010] 7.1.2D Crane, Equipment, & Welding Training
+[p236_c0011] Track/Infrastructure/Facilities/Maintenance Support Training provides training to qualify employees in all operating divisions that are required to perform a specific task that requires specialized training.
+- [p236_c0012] • Basic and Advanced Welding • Crane and Heavy Equipment (Mobile and Overhead cranes, Front end Loaders, Boom Trucks, etc.) • Miscellaneous Equipment (Powered Industrial Trucks, Personnel Lifts, etc.)
+[p236_c0013] _Page 7-4_
+
+## Page 237
+
+### [p237_c0001] 7.1.2E Elevator and Escalator
+[p237_c0002] Track/Infrastructure/Maintenance Support Training provides training to qualify employees in all operating divisions that are required to perform a specific task that requires specialized training.
+- [p237_c0003] • Escalator and Elevator Induction • Escalator Maintenance • Restarting Escalators • Principles of Troubleshooting
+[p237_c0004] Escalator and Elevator (E&E) Induction course is a robust program that introduces participants to elevator and escalator features, parts, schematics, diagrams, and maintainer and departmental responsibilities.
+[p237_c0005] This is a class that is designed for electro-mechanical maintainers and participants of the apprenticeship program.
+- [p237_c0006] • Restarting Escalators : The course is designed to introduce Station Agents, Division of Station Environment & Operating employees (Cleaners, Supervisors & Operations Managers) the concept of restarting escalators. At the end of the course participants will know the components of an escalator, the process for restarting an escalator and review the escalator incident investigation protocol.
+[p237_c0007] This is a class designed for Station Agents, Division of Station Environment and Operations Employees (Cleaners, Supervisors & Operations Managers)
+- [p237_c0008] • Escalator Maintenance : This is a course designed to focus on the escalator maintenance sheet and how maintenance should be performed. Upon completion of this course, the participants will be able to perform the required maintenance on various escalators in the NYC Transit system. The course covers the following topics: Introduction to the Escalator Maintenance Sheet, use of an Amp Probe and measuring tape and performing escalator maintenance.
+[p237_c0009] This is a course designed for Elevator & Escalator Division's Elevator and Escalator Maintainers, Transit Electrical Helpers and Transit Electrical Apprentices.
+- [p237_c0010] • Principles of Troubleshooting : This class is designed to provide an overview of the troubleshooting process along with related general strategies, tips, and pitfalls. The course reviews troubleshooting strategies given specific escalator and/or elevator problem.
+[p237_c0011] This is a course designed for Elevator & Escalator Division Maintainer employees as outlined in the divisional Safety Training Matrix.
+[p237_c0012] _Page 7-5_
+
+## Page 238
+
+### [p238_c0001] 7.1.2F Power (Electrical & Third Rail Operations)
+[p238_c0002] Power Cable Maintainer training is a course with hands-on exercises including safety, duties and responsibilities, cable vault, cable duct designs, cable print reading, setting up, pulling, and hanging cables, working with lead and non-lead terminators, and splicing various cables. Classroom training is split evenly with practical fieldwork exercises.
+[p238_c0003] Power Maintainer (Group B) Operations training has multiple classes on power substation equipment, high tension switching, rectifier start-up/shut-down and troubleshooting, generator movement and hook up, DC feeder breaker operation, print reading, meter applications, access & protection, local emergency control (LEC), substation inspections & maintenance and EA operations, in a classroom setting and hands-on out in the field, and System Operation Desk Operator training. If selected for System Operations, there is additional training on a divisional District Operator's position. In addition, Right-to-Know training is given as outlined in the departmental Safety Training Matrix, Policy/Instructions and/or other NYCT safety programs.
+[p238_c0004] There are various training courses offered at the Power Learning Centers that cover the aspects mentioned above as well as refresher courses for employees that may need reinstruction or for preparing for promotional exams to advance their careers.
+[p238_c0005] Promotion training requires newly promoted MSIs (Signals) to complete course.
+[p238_c0006] New employees that come into the division go through an orientation course familiarizing them with their section.
+[p238_c0007] Third Rail Operations (TRO) Induction training includes the Power Distribution Maintainer (PDM) and MS1 titles.
+[p238_c0008] Pick Assignment and Ongoing Training requires that employees in the job title of PDM who pick into or select the title of Circuit Breaker Maintainer to complete basic Circuit Breaker Maintainer Training and return for an additional Circuit Breaker Maintainer refresher training.
+[p238_c0009] Refresher Training for PDMs and MSIs ensure that employees are properly trained regarding new policies and/or procedures that have been put in place since their induction training.
+### [p238_c0010] 7.1.2G Signals
+[p238_c0011] Signal Maintainer Induction Training is designed to develop the knowledge and practical skills of the Signal Maintainer to accurately maintain and adjust signal equipment throughout NYC Transit. This lengthy course combines theory and practical instruction along with hands-on equipment training.
+[p238_c0012] There are various training courses offered at the Signals Learning Centers that cover the aspects mentioned above as well as refresher courses for employees that may need reinstruction or for preparing for promotional exams to advance their careers.
+[p238_c0013] _Page 7-6_
+
+## Page 239
+
+[p239_c0001] Promotion training requires newly promoted Signals MSIs to complete the course.
+[p239_c0002] New employees that come into the division go through an orientation course familiarizing them with their section.
+### [p239_c0003] 7.1.2H Car Equipment
+[p239_c0004] The Car Inspectors Induction Training instructs employees on how to perform the duties and assume the responsibilities of a Car Inspector. Employees learn the rules and regulations that govern the job and receive an overview of subway car sub-systems.
+[p239_c0005] The Road Car Inspector Training instructs employees on how to perform the duties and assume the responsibilities of a Road Car Inspector. Employees learn the rules and regulations that govern the job and are taught how to detect troubles on any part of a multiple-car unit in service on the road, in yards, and in terminals.
+[p239_c0006] The Car Equipment Cleaner program qualifies newly appointed employees to perform the duties and assume the responsibilities of a Car Equipment Cleaner. Employees learn the rules and regulations that govern the job and receive all required safety and security courses.
+[p239_c0007] The Maintenance Supervisor program instructs newly appointed Supervisors to perform the duties and assume the responsibilities of a Maintenance Supervisor. All new supervisors learn the rules and regulations that govern the job and receive the required safety and security courses. Maintenance Supervisor refresher is given as outlined in the departments Safety Training Matrix, Policy/Instructions and/or other NYCT safety programs.
+### [p239_c0008] 7.1.2I Service Delivery RTO
+[p239_c0009] Train Operator (T/O) Induction Training qualifies newly appointed Train Operators to perform the duties and assume the responsibilities of a Train Operator. Upon completion of this course participants will be able to:
+- [p239_c0010] • Demonstrate familiarity with the operating procedures for trains on the various lines within the NYC transit system • Demonstrate proper procedures for safely operating (various types of equipment/trains) in both yards and on mainline tracks • Correctly explain and demonstrate proper procedures for dealing with emergency situations
+[p239_c0011] Subdivision “A” and Subdivision “B” courses are given as outlined in the departments Safety Training Matrix, Policy/Instructions and/or other NYCT safety programs.
+[p239_c0012] T/O Refresher Training is designed to enhance the knowledge and improve the skills of FO Train Operators. Using non-revenue trains and simulators, the participants review train operation in revenue and non-revenue, road, yard, and terminal service. The course also reinstructs Train
+[p239_c0013] _Page 7-7_
+
+## Page 240
+
+[p240_c0001] Operators in day-to-day operations and emergency procedures. The course is given as outlined in the departments Safety Training Matrix, Policy/Instructions and/or other NYCT safety programs. The employee is scheduled within 90 days of the anniversary date of completing induction training or the last refresher training, whichever is most recent.
+[p240_c0002] Conductor Induction Training qualifies newly appointed Conductors to perform the duties and assume the responsibilities of a Conductor. Upon completion of this course participants will be able to:
+- [p240_c0003] • Demonstrate familiarity with the operating procedures for trains on the various lines within the NYC transit system • Demonstrate proper procedures for safely operating (side doors in revenue service) a train on mainline tracks • Correctly explain the importance of timely and accurate communication between train personnel, supervision, and customers.
+[p240_c0004] Subdivision “A” and Subdivision “B” courses are given as outlined in the departments Safety Training Matrix, Policy/Instructions and/or other NYCT safety programs.
+[p240_c0005] Conductor Refresher Training is designed to enhance the knowledge and improve the skills of the Conductor in proper door operation, customer communications, and Train Operator and Control Center interactions.
+[p240_c0006] The course is required and given as outlined in the departments Safety Training Matrix, Policy/Instructions and/or other NYCT safety programs
+[p240_c0007] The employee is scheduled within 90 days of the anniversary date of completing induction training or the last refresher training, whichever is most recent.
+[p240_c0008] Tower Operator Induction Training qualifies newly appointed Tower Operators to perform the duties and assume the responsibilities of a Tower Operator. Upon completion of this course participants will be able to:
+- [p240_c0009] • Operate Towers safely and confidently in yards and on mainline tracks • Identify Tower parts and their functions • Perform basic troubleshooting
+[p240_c0010] The course is given as outlined in the departments Safety Training Matrix, Policy/Instructions and/or other NYCT safety programs.
+[p240_c0011] Tower Operator Refresher Training is designed to enhance the knowledge and improve the skills of the Tower Operator to operate Towers safely and confidently in yards and mainline tracks, identify Tower parts and their functions and perform basic troubleshooting. The course is given as outlined in the departments Safety Training Matrix, Policy/Instructions and/or other NYCT safety programs.
+[p240_c0012] _Page 7-8_
+
+## Page 241
+
+[p241_c0001] Train Dispatcher (T/D) Induction Training qualifies newly appointed Dispatchers to perform the duties for the expeditious and correct dispatching, preparation, and safe movement of trains and to maintain accurate records.
+[p241_c0002] The course Subdivision “A” and Subdivision “B” courses are given as outlined in the departments Safety Training Matrix, Policy/Instructions and/or other NYCT safety programs.
+[p241_c0003] T/D Refresher Training is designed to enhance the knowledge and improve the skills of FO Dispatchers. The course allows participants to refresh their skills in troubleshooting techniques, and delay management techniques. The course is given as outlined in the departments Safety Training Matrix, Policy/Instructions and/or other NYCT safety programs.
+[p241_c0004] Assistant Train Dispatcher (ATD) Induction Training qualifies newly appointed Assistant Train Dispatchers to be able to regulate intervals of trains, as traffic requires. Assistant Train Dispatcher will be able to maintain Train Interval sheets and report and changes in intervals to the Operations Control Center.
+[p241_c0005] Subdivision “A” and Subdivision “B” courses are given as outlined in the departmental Safety Training Matrix, Policy/Instructions and/or other NYCT safety programs.
+[p241_c0006] ATD Refresher Training is designed to enhance the knowledge and improve the skills of Assistant Train Dispatchers. The course allows participants to refresh their skills in troubleshooting and delay management techniques. The course is given as outlined in the departmental Safety Training Matrix, Policy/Instructions and/or other NYCT safety programs.
+[p241_c0007] Train Service Supervisor (TSS) Induction Training qualifies newly appointed Train Service Supervisors to perform the duties and assume the responsibilities of a Train Service Supervisor. Upon completion of this course participants will be able to:
+- [p241_c0008] • Promptly investigate all complaints, accidents, or delays to service and render whatever assistance is possible • Assist train crews in the Safe movement of disabled trains.
+[p241_c0009] TSS Refresher Training is designed to enhance the knowledge and improve the skills of a Train Service Supervisor and to review the operation of all train equipment and emergency procedures. The course consists of one 2-hour module and is given as outlined in the departmental Safety Training Matrix, Policy/Instructions, and/or other NYCT safety programs.
+[p241_c0010] _Page 7-9_
+
+## Page 242
+
+### [p242_c0001] 7.1.2J Station Environment & Operations
+[p242_c0002] Station Agent Induction Training qualifies newly appointed Station Agents to perform the duties and assume the responsibilities of a Station Agent, and instructs them in the rules and regulations that govern the job. The program includes the Station Agent Induction Core Course and the required safety and security courses. Customer courtesy, OMNY Training and AFC clerical duties are also included in the program.
+[p242_c0003] Station Agent Refresher Training is designed to enhance the knowledge and improve the skills of the Station Agents in customer service, ADA and Operational Policies and Procedures.
+[p242_c0004] Station Cleaner Induction Training is designed to qualify newly appointed Cleaners to perform the duties and assume the responsibilities of a Cleaner, and instructs them in the rules and regulations that govern the job. The program includes the Cleaner Induction Core Course and the required safety and security courses.
+[p242_c0005] Stations Cleaner Refresher Training is designed to enhance the knowledge and improve the duties and responsibilities of a Cleaner.
+[p242_c0006] Station Supervisor Induction Training qualifies newly promoted Station Supervisor I to perform the duties and assume the responsibilities of a Station Supervisor I. The program includes the Station Supervisor I Induction Core Course and the required safety and security courses. Included are how to conduct a booth audit and proper station inspection.
+[p242_c0007] Station Supervisor Refresher Training is designed to enhance the knowledge and improve the operational and customer service skills of Station Supervisors.
+### [p242_c0008] 7.1.2K Staten Island Railway
+[p242_c0009] Staten Island Railway (SIR) employees are governed by the SIRTOA Book of Operating Rules, SIR Safety Rules, SIR Roadway Worker Protection Rules and Procedures, applicable NYCT Department of Subways Policies and Procedures, SIR specific Departmental Policies and Procedures, SIR Operational Bulletins and Executive Orders, and Transportation Timetable Special Instructions.
+[p242_c0010] The broad variety of rules, regulations, and operation and maintenance procedures govern employee safety and technical training and certification through all SIR Departments. Every SIR Department develops and updates their training & certification matrixes accordingly.
+[p242_c0011] Station Cleaner Refresher Training is designed to enhance the knowledge and improve the operational and technical skills of the Station Cleaner.
+[p242_c0012] The following are the key elements describing development, implementation, and evaluation of SIR safety and technical training program:
+- [p242_c0013] • Rail vehicle maintenance training and qualifications are in accordance with the departmental requirements and applicable Shop Craft Agreement Rules. • Methods of ensuring appropriate employee training include:
+[p242_c0014] _Page 7-10_
+
+## Page 243
+
+- [p243_c0001] o Minimum qualifications for hiring/promotions are four-year journeyman's experience (except Signal Helpers having a minimum of two and one-half years of Signal Training, successfully completing all required phases of training and having shown ability to perform such work will be given the opportunity to take examination for promotion to Maintainer). o Place new employees in department specific training program as appropriate to ensure that they have requisite skills to do daily work assignments safely and professionally in accordance with applicable policies and wage agreement rules. o Attendance Roster or records maintained for each training session. o Training and Certification records are maintained by operations training. Any In-house departmental training records performed by the individual department are filed in the respective Superintendent's office. The Non-Revenue Shop (NRS) maintains records of the training they provide.
+[p243_c0002] The SIR required Trainings and Certifications include:
+- [p243_c0003] • SIR Book of Operating Rules • SIR Roadway Worker Protection • Employee Right- To-Know modules (department specific) • Dispatcher Training Outline • Conductor Passenger Training Outline. • Engineer (R-44/R211/Diesel-Electric) Training Outline • Tower/Block/CIL Training Outline • All applicable NYCT safety training that is indicated in NYCT Policy Instructions such as: first aid/ CPR, confined space entry, respiratory protection, lead competent person, hazardous waste/ SARA title III, asbestos awareness and hearing conservation training and audiometric testing as well as other based on departmental specific tasks. • All applicable FDNY Certificate of Fitness training that is outlined in NYCT Policy Instructions such as Fire and Emergency Drill Conductor (W07), Operation and Maintenance of Air Compressors (A35), Torch Use of Flammable Gases for Hot Work OPS (G60), Fire Guard for Torch OPS and Construction Site (F60), Operating Ammo-Activated Tools (E21), Additionally Lockout/Tagout, Equipment Certification on Automobiles, Heavy/Light Equipment, High Rail Track Equipment and Machinery, Overhead Cranes, High-Low Man-lifts, Boom Trucks, Movable Platforms and Extendable Arm Bucket Trucks through internal or outside agencies/authorities, vendors/manufacturers, and/or training institutions. Applicable interdepartmental training and certifications on Operating & Maintenance procedures, written examinations on Signals & Power manuals, MW-1 Track Standards and Reference Manuals and Inspection Procedures.
+[p243_c0004] _Page 7-11_
+
+## Page 244
+
+[p244_c0001] The following are the categories of safety related work that requires training and certification:
+- [p244_c0002] • Train Service / Dispatching – Train Dispatchers • Work (Diesel) Train- Conductor, Locomotive Engineer • Flagger (RWP) - Conductor • Revenue Fleet Maintenance – Superintendent, Deputies, Supervisors, Maintainers (Electrical, Mechanical, Carman), RCI's. Car Cleaners. • Infrastructure Maintenance - Superintendents, Foremen's, General Mechanics.
+### [p244_c0003] 7.1.3 Employee Safety and Emergency Response Training
+[p244_c0004] Each department/division prepares a safety-training matrix that indicates the safety training classes that must be attended by employees in each job title. The following summarizes the significant courses within the matrix.
+[p244_c0005] Hazard Communication/Globally Harmonized System (GHS) – There are sixteen (16) self-paced computer-based training modules. Modules include chemical use and hazards, PPE, SDS, gases, flammable liquids, toxic particulates, etc. Employees complete selected modules based on their job title and assignments.
+[p244_c0006] Respiratory Protection - Selected employees receive training on proper care, cleaning, and respirator use, the hazards they are exposed to and are then fit tested to a proper type and sized respirator with a refresher training given as outlined in the departments Safety Training Matrix, Policy/Instructions, and/or other NYCT safety programs.
+[p244_c0007] Confined Space Entry - Selected employees receive training on the hazards of working in or near confined spaces. Employees participate in actual confined space entries and simulated rescues using SCBA equipment and other PPE with a refresher training given as outlined in the department's Safety Training Matrix, Policy/Instructions, and/or other NYCT safety programs.
+[p244_c0008] Fall Protection - Selected employees receive training on the hazards of working on elevated performs or open roof areas. Employees participate in hands-on fall protection exercises using actual fall protection equipment on a simulated track section.
+[p244_c0009] Safety Awareness/ Back Safety - This course is designed to teach employees effective approaches for improved safety awareness on the job, proper material handling, heightened awareness towards back injury prevention, and safe lifting techniques. The course provides an in-depth discussion on the causes of accidents and examines models of accident prevention.
+[p244_c0010] Lead Competent Person – Selected employees receive training on how to identify sources of lead in the NYC transit system, correctly identify and monitor potential sources of lead, protect against routes of exposure, minimize potential health effects, and review OSHA construction requirements. This course complies with all requirements under OSHA 29 CFR 1926.62.
+[p244_c0011] _Page 7-12_
+
+## Page 245
+
+[p245_c0001] PPE for Supervisors - Required training for Supervisors in the various uses and limitations of Personal Protective Equipment (PPE) and in the proper care, maintenance, useful life, and disposal of PPE. A review of the procedures necessary to conduct Hazard Assessments, Job Task Hazard Assessments, and training Certification of operating employees. The course complies with all requirements under OSHA 29 CFR 1910.132,133, 135, 136, and the most recent version of NYCT Policy Instruction10.21.
+[p245_c0002] Safety Management for front Line Supervisors Safety (Safety Management Techniques for Managers/Front Line Supervisors)- This course is designed to give newly inducted Supervisors/Managers an understanding of their roles in our current safety culture, techniques for reducing accidents and specific actions a Supervisor/Manager can take to make a positive impact on safety performance.
+[p245_c0003] Emergency Response Training - Required for selected managers, supervisors, and employees who are responsible for assisting customers in the event of an emergency. Training is available in the following disciplines:
+- [p245_c0004] • Standard First Aid and CPR/AED - Employees receive training on life saving techniques in emergency situations, how to call for help and how to care for a sick or unconscious person. (8-hour program/annual refresher) • National Incident Management System - Selected employees receive this training based on their job title and responsibilities. ICS 100/200 and IS 700/800 training is available online or in a classroom format. • Hazardous Waste Operations and Emergency Response -Employees receive training on responding to chemical emergencies and terrorist incidents with a refresher training given as outlined in the departmental Safety Training Matrix, Policy/Instructions, and/or other NYCT safety programs. • Fire Prevention and Passenger Evacuation Training - Designed to teach participants the rules and procedures utilized to control incipient stage fires that occur throughout the transit system. Participants are taught how to extinguish fires and safely evacuate passengers from a train.
+[p245_c0005] _Page 7-13_
+
+## Page 246
+
+### [p246_c0001] 7.1.4 De-Escalation and Workplace Violence Training
+[p246_c0002] A standalone de-escalation training has been established for Department of Subways employees. In the training, techniques are provided enabling employees to recognize and identify situations which can potentially put themselves at risk as well as handling confrontational interactions. The training also instructs employees to retreat to a safe and secure place when encountering a potentially threatening situation with customers in their work environment. The training consists of lecture and provides a forum to practice learned techniques through hands on, scenario-based exercises to provide practice, receive instructor and peer feedback, and aid retention. Currently, de-Escalation training is offered for station agents, conductors, and station cleaner titled employees with plans for a further rollout of de-escalation training to all front-line and maintenance employees.
+[p246_c0003] In conjunction with the de-escalation training DOS has issued bulletins addressing de-escalation best practices to all station environment & operations employees and frontline employees are trained in customer service and communications, as outlined by departmental training guidance and curricula. The training entails dealing with different types of customers (timid, overly friendly, culturally diverse, etc.), as well as with angry and emotional customers, and diffusing/de-escalation of angry passengers and situations.
+[p246_c0004] Additionally, New York City Transit is committed to maintaining a workplace free from violence, threats of violence, harassment, intimidation, and other forms of disruptive behavior. All NYCT employees are trained on and required to be familiar with the agency policy to promote a safe environment for all employees.
+### [p246_c0005] 7.1.5 Contractor Safety
+[p246_c0006] Safety training requirements for contractor employees are detailed in contract specifications. Current requirements for employees “engaged in physical work” include OSHA 30-hour Construction Safety and Health course as well as initial and refresher Track Safety Training for all employees working along or near the right of way. Additional safety training requirements for Contractor employees in safety related positions include 40-hour NYC DOB Site Safety Manager Course, and the 30-hour OSHA Construction Safety and Health course. Additional requirements for these employees under the new MTA C&D Division 1 specification includes requirement for receiving a minimum of six (6) hours of relevant safety training courses on a yearly basis for the duration of the Contract and all supervisory personnel shall complete an additional thirty-two (32) hours of training in accordance with the requirements of Local Law 196. Additional environmental training (lead, asbestos) may be required depending on contract requirements.
+[p246_c0007] The following are the Safety Training requirements for contractors working on NYCT property:
+- [p246_c0008] • All workers engaged in physical work activities, shall have in their possession at all times either of the following safety training certifications: ○ The 30-Hour OSHA Construction Safety & Health Course completion card issued by OSHA demonstrating completion of the required training.
+[p246_c0009] _Page 7-14_
+
+## Page 247
+
+- [p247_c0001] o Current Site Safety Training (SST) Card issued by an approved NYC Department of Buildings (DOB) course provider which demonstrates completion of the 30-Hour OSHA Construction Safety & Health Course. • An employee failing to attend Safety Orientation will not be permitted to perform any work which requires safety precautions as were discussed in the missed safety training until the employee has received the same instruction. • By the first day of work on site, employee orientation training shall be given to new employees. The Health and Safety Plan/Accident Prevention Program/Hazard Communication Program (HASP/APP/HCP) shall include a detailed plan for the safety orientation of new employees, including: o Description of project and location of first aid/medical facilities. o Review of APP/HASP, Hazard Communication Program, Alcohol, Drugs, and Tobacco Policy including pre-employment drug testing if applicable. o Distribution of project safety rules. o Emergency Preparedness and Response (EP & R) Drill. o Description of specific site hazards and safe working methods. o Review of the project APP, GHS (SDS). o Track Safety Training for work on or adjacent to tracks or energized contact rails, if applicable. o PPE and Safety Procedures. o Fire prevention/protection. • Safety Training/Toolbox meetings shall be held at the start of each workday by the Competent Persons to instruct all employees in safety precautions applicable to that day's work hazards. • If any employees are non-English speaking, an interpreter shall be provided to interpret the contents of each New Employee Safety Training sessions and Safety Briefings. An interpreter shall also translate all safety-related instructions on the job. • Additionally, a scaffold erector training course is required for personnel erecting and dismantling supported scaffolds and a scaffold user training course is required for all workers using a supported scaffold. • The Contractor's Project Manager and all safety management personnel shall attend C&D Contractor Safety Workshops and Safety Stand-down Training.
+[p247_c0002] The following is an overview of the safety training requirements for C&D projects, PMP 110 Safety:
+### [p247_c0003] Mandatory Safety Training
+[p247_c0004] Project Chief Executive Officers (PCEOs), Project Management Consultants (PMCs), Consultant Construction Managers (CCMs) Chief Discipline Engineers, Principal Engineers, Design
+[p247_c0005] _Page 7-15_
+
+## Page 248
+
+[p248_c0001] Managers, and other C&D management personnel are to ensure that C&D personnel, Consultants, and all Contractor and Subcontractor personnel who will perform work on or adjacent to operating tracks have attended the following safety training provided by the Operations Training or by C&D:
+[p248_c0002] Track Safety - Available for NYCT, Consultant, Contractor, and Subcontractor personnel. A one-day course (or follow the latest NYCT requirements) covering procedures and safe practices associated with operating trackways. It shall successfully completed by all personnel required to work on or adjacent to the track as outlined in the departmental Safety Training Matrix, Policy/Instructions, and/or other NYCT safety programs.
+[p248_c0003] The PCEO/PMC shall ensure that the Contractor or Consultant requires each employee who has completed track safety training to maintain proof of said training on their person at all times while working on the project.
+[p248_c0004] The Safety Manager shall maintain a list of all employees (including Subcontractors) who attended and completed NYCT's Track Safety Seminar and submit the list to the Project CEO on a quarterly basis. The list shall contain all employees' names, job function/classification, employer, date of attendance, and the date for renewal training.
+[p248_c0005] The PCEO/PMC shall ensure that the Contractor's Safety Representative takes appropriate measures to prevent Contractor and Subcontractor personnel who have not attended NYCT's mandated Track Safety course from working on or adjacent to operating trackway.
+[p248_c0006] In addition, the PCEO/PMC shall ensure, through the Resident Engineer and site inspectors armed with the list of track trained Contractor or Subcontractor personnel, that no one who does not appear on the list will be allowed to work on or adjacent to the trackway. To ensure that an absolutely accurate identification is made, the Resident Engineer and field engineers will compare the name on the list against the name on the photo ID that every Contractor employee is required to exhibit on their person at all times under the security mandates.
+[p248_c0007] Refresher Track Safety - Available for C&D personnel with documentation of having attended NYCT Track Safety within the last two (2) years (or follow the latest NYCT requirements). Classroom instruction training is to be taken as outlined in the departmental Safety Training Matrix, Policy/Instructions, and/or other NYCT safety programs after completion of the initial Track Safety training course.
+[p248_c0008] OSHA Course on Construction Safety - A 30-hour OSHA course on Construction Safety and Health based on 29CFR 1926. This course is required for all C&D and consultant field personnel. The course is also given to NYCT Operating and Non-Operating department personnel in order to enhance project safety and the protection of NYCT interests.
+[p248_c0009] Hazard Communication Standard (Globally Harmonized Systems (GHS)) - A self-paced class to ensure that all applicable Federal and State laws and regulations are covered for employees who may be exposed to chemicals. Employees learn the possible health risks and/or hazards associated with chemicals and how to use them safely.
+[p248_c0010] _Page 7-16_
+
+## Page 249
+
+### [p249_c0001] Construction and Safety Training as Needed
+[p249_c0002] In addition to the above mandated safety training, C&D provides or facilitates the following Safety Training:
+- [p249_c0003] • C&D/Contractor Safety Workshops/Stand down: Various topics relevant to safety on C&D projects. (as required) • PMG 123 “Implementation of General Orders” (required for C&D and CCM/PMC personnel serving as Employee In Charge on the Right of Way)
+### [p249_c0004] Additional Safety Training
+[p249_c0005] Operations Training also provides additional safety training as follows:
+- [p249_c0006] • Standard First Aid/CPR • Fire Prevention and Protection • Confined Space Entry Training • Hazardous Waste and SARA Title III • Hearing Conservation • Respirator Training Program • Shop and Yard Safety • Iron – Torch Operations (TOR120) – required for all Iron trades (every 6 years)
+### [p249_c0007] Contractor Provided Training
+[p249_c0008] The PCEO/PMC and CCM shall ensure that all necessary training is in compliance, as evidenced by the Contractor maintaining records for all training provided.
+### [p249_c0009] Procedure for Requesting Training
+[p249_c0010] The PCEO/PMC, CCM, DMs, Chief Discipline Engineers, Principal Engineers, and other management personnel shall determine which NYCT, PMC/CCM, Consultant, and Contractor employees are required to attend the mandatory one-day Track Safety and Track Safety refresher courses and any additionally required safety training for NYCT employees. All requests for C&D, Consultant, and Contractor or Subcontractor personnel to participate in training courses shall be made by the PCEO, PMC/CCM, and DM, Chief Discipline Engineer, Principal Engineer, or other management personnel by completing and submitting a course nomination sheet or via email.
+### [p249_c0011] 7.1.6 Recordkeeping
+[p249_c0012] New York City Transit (NYCT) is dedicated to delivering safe public transportation and committed to providing a safe environment for our customers, employees, contractors, and the public. As a result, NYCT has developed numerous safety and operational reference documents that will ensure that safety and environmental compliance is integrated into all phases of the division/department including design, procurement, construction, modification/rehabilitation, operation, maintenance, and disposal. These documents consist of policy/instructions,
+[p249_c0013] _Page 7-17_
+
+## Page 250
+
+[p250_c0001] memorandums, manuals, procedures, plans, training matrices, bulletins, advisories, rulebooks, and notices. They can be found in the Minimum Safety Standards database maintained by DOS Safety for at least three years.
+[p250_c0002] NYC Transit uses the Enterprise Learning Management System (ELM) to capture, store, and report employee training related data. Authorized personnel can access records and produce reports based on unique employee identification information. DOS is continually in the process of putting all relevant data into ELM. In addition, C&D Human Resources enters data into the database.
+[p250_c0003] Non-NYCT training requirements for contractor or employees are provided and maintained via each individual contractor. Compliance with these requirements is verified via the project safety assessments performed by the Business Unit Safety Teams and MTA C&D Safety Oversight.
+[p250_c0004] The Division of Operational Support, Training maintains a database with the names of Contractor and Consultant employees who have attended Track Safety and Track Safety Refresher Training, as well as ELM.
+### [p250_c0005] 7.1.7 Compliance with Training Requirements
+[p250_c0006] Training requirements are determined by NYCT rules and regulations, policy instructions, and federal and state regulations. Each operating department has developed a safety training matrix to ensure that requirements are met on the federal, state, and agency level. The Office of System Safety (OSS) validates the Operating Department matrix via annual reviews and updates that departments/divisions submit to Operations Support who coordinates the review/update process with OSS. The most recent training matrices can be found in section 7.3 below.
+[p250_c0007] Periodic audits of training data are compared with employee job assignments and/or training matrices to ensure regulatory and policy compliance. This is accomplished through a designated departmental training liaison that utilizes a tracking data-based system. Additionally, training liaisons are responsible for verifying and adjusting required safety and technical training on the departmental/divisional training matrix and are required to perform an annual audit and report findings to the Divisional Chief Officers and the Chief Officer, Operations Training.
+[p250_c0008] _Page 7-18_
+
+## Page 251
+
+### [p251_c0001] 7.2 Safety Communication
+[p251_c0002] The following are processes and activities that are used to communicate safety and safety performance information throughout the organization:
+- [p251_c0003] • Safety Times Newsletter . Each quarter the Department of Subways prepares and distributes a Safety Times Newsletter. The newsletters are used to communicate safety values, address areas of concern, or other safety information. • Safety Poster . Twice per year DOS develops and posts “Safety Talk” safety posters that are relevant to work tasks and environment, addresses safety concerns/trends, and reminds employees of safe behavior that will prevent accidents. • Departmental Bulletins . Bulletins issued to employees to inform them of specific safety risks and hazards for procedures and equipment. • Safety Toolbox Talks . On a daily basis line supervision has a safety toolbox talk at the start of the shift. The safety rule of the day, employees job task and any safety concerns are discussed. • Safety Meetings . There are safety meetings held at all levels of the organization to share and discuss safety information. • Safety Stand-Downs . Periodically DOS will initiate a safety stand down where employees are informed of new safety policies or safety initiatives. • Employee Safety Hotline . Employees who have reported an incident can call the hotline with a reference number to inquire about actions taken in response to their report. • Employee Survey – Safety Climate Barometer . Employees can anonymously provide feedback on workplace safety. Survey results are communicated to employees through memos from senior management. • Safety Spark Employee Safety Program - Employees can provide ideas, suggestions, recommendations on how to make the workplace/operation/work procedure safer, by email them to safetyspark@nyct.com .
+[p251_c0004] _Page 7-19_
+
+## Page 252
+
+### [p252_c0001] 7.3 Training Matrices
+[p252_c0002] This section contains the most recent training matrices for each department, the matrices are used as a guide to show all the required trainings for each employee title, the frequency and hours of each course. Each training matrix is reviewed and updated on an annual basis and submitted to OSS for review and approval.
+[p252_c0003] _Page 7-20_
+
+## Page 253
+
+### [p253_c0001] DIVISION OF CAR EQUIPMENT SAFETY TRAINING MATRIX 2025
+[p253_c0002]
+
+```text
+COURSE NAMES CODE COURSE # CTA RCI CIA CIB TEA SMC CMB CNC CM TRNE MHB TEM FEH MSI MSII DISUPT SUPT FREQUENCY HOURS Mod 1 Chemical Safety HZCMGHS1 X X X X X X X X X X X X X X X X X Once * Self paced Mod 2 Recognition HZCMGHS2 X X X X X X X X X X X X X X X X X Once * Self paced Mod 3 Control HZCMGHS3 X X X X X X X X X X X X X X X X X Once * Self paced Mod 4 Supv/ Overview MSDS & Labels HZCMGHS4 X X X X X X X X X X X X X X X X X Once * Self paced Mod 5 Supv/ Overview Hazards HZCMGHS5 X X X X X X X X X X X X X X X X X Once * Self paced Mod 6 Organic Solvents HZCMGHS6 X X X X X X X X X X X X X X X X X Cycle Annually Self paced Mod 7 Flammable Liquids HZCMGHS7 X X X X X X X X X X X X X X X X X Cycle Annually Self paced Mod 8 Corrosives, Adhesives & Sealants HZCMGHS8 X X X X X X X X X X X X X X X X X Cycle Annually Self paced Mod 9 Gases HZCMGHS9 X X X X X X X X X X X X X X X X X Cycle Annually Self paced Mod 10 Metals and Metal Salts HZCMGHS10 X X X X X X X X X X X X X X X X X Cycle Annually Self paced Mod 11 Corrosives HZCMGHS11 X X X X X X X X X X X X X X X X X Cycle Annually Self paced Mod 12 Ionizing Radiation HZCMGHS12 X X X X X X X X X X X X X X X X X Annually Self paced Mod 13 Pesticides/Preservatives HZCMGHS14 X X X X X X X X X X X X X X X X X Cycle Annually Self paced Mod 16 Cleaners HZCMGHS16 X X X X X X X X X X X X X X X X X Cycle Annually Self paced GENERAL SAFETY Healing Conservation A SS111 X X X X X X X X X X X X X X X X X Annual Self paced Abilities Awareness G STATT X X X X X X X X X X X X X X X X X Annual Self paced OSHA Lead Worker (Module D) B UDAT X X X X X X X X X X X X X X X X X Annual Self paced Lead Competent Supv/ Above Action Level B SS1TCP X X X X X X X X X X X X X X X X X Annual Self paced Safety Management DUPST X X X X X X X X X X X X X X X X X Annual Self paced Workplace Violence Prevention MHTTRH05 X X X X X X X X X X X X X X X X X Once 8 hours Actions Employees Can Take (Cupcaki) ECSTIA X X X X X X X X X X X X X X X X X Once 4 hours Responsible Protection (Above Action Level) SS6660 X X X X X X X X X X X X X X X X X Annual 6 hours BBE Awareness E (Vehicle Supv to Hwy) OSGPR X X X X X X X X X X X X X X X X X Once Self paced Heavy Weight/ATA (All) C SS6GSH X X X X X X X X X X X X X X X X X Annual 6 hours Hazard Waste Summary (back WRTK 12) Handout X X X X X X X X X X X X X X X X X Annual Handout Safety Awareness (back Safety 100D) SS6AN2 X X X X X X X X X X X X X X X X X Once 8 hours Committed Spouse/Relative D SSS1/SS52 X X X X X X X X X X X X X X X X Once 10 hours Fall Protection (falls/heights greater 4 ft) I.K STFLFP X X X X X X X X X X X X X X X X Once 8 hours Lock Out/Tag Out LOTO1 X X X X X X X X X X X X X X X X 3 years Self Paced Fire Prevention/Passenger Evacuation SSFT X X X X X X X X X X X X X X X X 6 years 8 hours NIMS/ICS 100/200/700 F ICSTN/200/700 X X X X X X X X X X X X X X X X Once Web based/Self paced Silica RCSSIC X X X X X X X X X X X X X X X X Annual View Video Stuck & Yard Safety CC04 X X X X X X X X X X X X X X X X Once * 6 hours Storm Water Awareness SSWTV X X X X X X X X X X X X X X X X Annual 1 hour Track Safety/Restarts H TSU1/SS608 X X X X X X X X X X X X X X X X X Once/2 years 6 hrs/6 hrs Track Equipment/Operator TR608 X X X X X X X X X X X X X X X X Annual 6 hours Overhead Crane Operator TC01 X X X X X X X X X X X X X X X X Once 40 hours Overhead Crane Operator Pendant TC02 X X X X X X X X X X X X X X X X Once 8 hours
+```
+[p253_c0003] _Page 7-21_
+
+## Page 254
+
+### [p254_c0001] DIVISION OF CAR EQUIPMENT SAFETY TRAINING MATRIX 2025
+[p254_c0002]
+
+```text
+COURSE NAMES CODE COURSE # TITLES FREQUENCY HOURS CTA RCI CIA CB TEA SMC CMB CMC CM TRNE IMHB TEM EEM MSIII MSIII DISUPT SUPT Crime Inspector Overhead/Module TCG7 TD TD TD TD TD TD 6 years 16 hours Crime Safety for Supervisors HS027 X X X TD TD Once 6 hours Crime Universal Hand Signals** X X Once 4 hours Basic Rigging J TD TD TD TD TD TD TD Once 6 hours Control Lift E.L. CSS TD TD TD TD TD TD TD Once 16 hours Personal Platform Lift E.K. TCP1 TD TD TD TD TD TD TD Once 16 hours Overhead/Modular Truck Evolution BE-109 TD TD TD TD TD TD TD 3 years 40 hours Overhead/Modular Truck Evolution E. P101/A TD TD TD TD TD TD TD 3 years 40 hours Welding - Basic MMW003 TD TD TD TD TD TD TD Once 40 hours Welding - Advanced MMW006 TD TD TD TD TD TD TD Once 40 hours Welding - Silver Brazing & Soldering MMW004 TD TD TD TD TD TD TD Once 24 hours Welding Safety for Supervisors IVSW032 6 hours Accident Investigation ASSAW Once* View Video NYS Abbotson Supervisor/Refresher ATC012 TD TD TD TD TD TD TD Once/Annual 32 hrs/6 hrs Trailering Car/Truck/Trailer MTD0004MTD001 TD TD TD TD TD TD TD TD TD Once/Annual 6 hours/4 hour Road Car Inspector Refresher CR2RF X 3 years 24 hours Maintenance Supervisor Refresher CCMS16F 3 years 24 hours SPCC/SPRT (at or until/once exceed 55 gal) X 2 years View Video C530 Supervisor Safety Training SGC30C TD TD TD TD TD TD 6 years 4 hours C532 Storable/Use of Flammable/Combustor Lq SGC32C TD TD TD TD TD TD 6 years 4 hours C539 Standpipe Sys. Yd Hydrants w/Clwy Maint SGF99C TD TD TD TD TD TD 6 years 4 hours F40 Fireguard for Truck Operations SGF60C X 6 years 4 hours E507 Fire and Emergency Drill Conducted SGF07C TD TD TD TD TD TD 3 years 4 hours C560 Film Gas Torch Use for Cut/Weld SG680C TD TD TD TD TD TD 6 years 4 hours C535 Operation of Air Compressors SGA35C TD TD TD TD TD TD 6 years 4 hours Basic Fire Extinguisher and Gas Cylinder SGC99C TD TD TD TD TD TD 6 years 4 hours C515 Discharge Motor Fuels SGP15C TD TD TD TD TD TD 6 years 4 hours YM36 Portable Extinguisher Inspection SGM96C TD TD TD TD TD TD 6 years 4 hours P15 Disperse Motor Fuels SGP15C TD TD TD TD TD TD 6 years 4 hours US EPA Refrigerant Handling CC2503 TD TD TD TD TD TD Once 24 hours
+```
+### [p254_c0003] Legend:
+- [p254_c0004] X -- All employees must attend this training TD -- Task Driven * Employees are given these modules/training during induction ** Provided in all Crane Classes Codes: A. Employees who are defined in the HCF P1) will attend this module and will attend an annual Automatic test B. Employees required to work Above Load Action Level defined by the P1) will attend these classes C. Given to Supervisory/Heavy employees which relate to hazardous waste management D. Required for employees performing lead disturbance activities that are large quantity generator (LOG) @ 207 St & Cl Overhaul shops E. Required for employees performing maintenance on Crane/Steel & Jarn/line car washers
+### [p254_c0005] Title Abbreviations:
+- [p254_c0006] CTA: Cleaner RCI: Road Car Inspector C1: Car Inspector CIA: Car Inspector A CIB: Car Inspector B TEA: Transit Electrical Apprentice SMC: Structure Maintainer C CMB: Car Maintainer B CNC: Car Maintainer C CME: Car Maintainer E CTRNE: Car Maintainer Trainee MHB: Maintainer Helper B TEM: Truck Equipment Maintainer EEM: Electronic Equipment Maintainer MS III: Maintenance Supervisor, Level III DEP/SUPT: Deputy Superintendent/Superintendent GEN SUPT: General Superintendent
+[p254_c0007] _Page 7-22_
+
+## Page 255
+
+### [p255_c0001] DIVISION OF CAR EQUIPMENT SAFETY TRAINING MATRIX 2025
+- [p255_c0002] E Forklift/Ho is the pre-requisite for Supervisors that will attend PT047 to conduct employee evaluations F Employees performing Emergency Response are required to complete these modules G Asbestos Awareness Training required for personnel performing maintenance or custodial activities in areas where asbestos containing materials are present. H C/AC/IB employees working at Pohiam Diesel Shop are required to take this training. If job duties of Overhaul Shop C/AC/IB titles requires the employee to work on/cross yard and/or mainline tracks. Supv must ensure employees attend Track Safety J Fall Protection is the pre-requisite for heavy trucks that operate at heights above 6 feet (ex. Platform Lift, Bucket Truck, Flatbed Lift Truck) J Rigging is required for employees that operate Cranes and/or material handling which involves rigging K RCi's that pick into Vacuum Train @ CI and Westchester yards may be required to perform heavy maintenance on equipment located on roofs of Vacuum Trains. L Task Driven for CTA's that move cleaning supplies and materials.
+[p255_c0003] Notes: Trainee, Helper and Apprenticeship titles should attend Right-to-Know and trade specific training. All non-crane operators who are responsible for rigging loads are required to take Basic Rigging Training Cycle Annually = cycling in progression no less than 1 module (6-10 annually).
+[p255_c0004] Revised: 11/22/24
+[p255_c0005] _Page 7-23_
+
+## Page 256
+
+### [p256_c0001] MAINTENANCE OF WAY, DIVISION OF ELECTRICAL SAFETY TRAINING MATRIX 2025
+[p256_c0002]
+
+```text
+COURSE NAMES CODE COURSE # TTLES G&P FREQUENCY HOURS SIM CUB TEMP(S) TEMP(E) EM BCN PMB PET PBM MS I MS II SURF Mod 1: Chemical Safety H2CMGHS15 X X X X X X X X X X X Once * Self Paced 8 hours Mod 2: Recognition H2CMGHS20 X X X X X X X X X X X Once * Self Paced 8 hours Mod 3: Control H2CMGHS24 X X X X X X X X X X X Once * Self Paced 8 hours Mod 4: Supp. Overview MSDS & Labels H2CMGHS34 X X X X X X X X X X X Once * Self Paced 8 hours Mod 5: Supp. Overview Hazards H2CMGHS35 X X X X X X X X X X X Once * Self Paced 8 hours Mod 6: Organic Solvents H2CMGHS36 X X X X X X X X X X X Cycle Annually Self Paced 8 hours Mod 7: Fuel/Lubricants H2CMGHS37 X X X X X X X X X X X Cycle Annually Self Paced 8 hours Mod 8: Coolants, Antiseives & Sealants H2CMGHS39 X X X X X X X X X X X Cycle Annually Self Paced 8 hours Mod 9: Gases H2CMGHS40 X X X X X X X X X X X Cycle Annually Self Paced 8 hours Mod 10: Metals and Metal Skills H2CMGHS41 X X X X X X X X X X X Cycle Annually Self Paced 8 hours Mod 11: Corrosives H2CMGHS42 X X X X X X X X X X X Cycle Annually Self Paced 8 hours Mod 12: Toxic Substances H2CMGHS43 X X X X X X X X X X X Cycle Annually Self Paced 8 hours Mod 13: Noise and Vibration H2CMGHS45 X X X X X X X X X Cycle Annually Self Paced 8 hours Mod 14: Ionizing Radiation H2CMGHS46 X X X X X X X X X Cycle Annually Self Paced 8 hours Mod 15: Reproductive Hazards H2CMGHS47 X X X X X X X X X Cycle Annually Self Paced 8 hours Mod 16: Cleaners H2CMGHS48 X X X X X X X X X Cycle Annually Self Paced 8 hours Heating Conservation A SS111 TD X X X X X X X X X X X Annual Self Paced 8 hours Biodefensive Waste SS121 X X X X X X X X X X X X X Annual Self Paced 8 hours Asbestos Awareness STATA1 X X X X X X X X X X X X X Annual Self Paced 8 hours OSHA Lead Worker (Module D) B LDAT1 X X TD Annual Self Paced 8 hours Lead Compendium Supp (Above Action Level) B SS1TCP TD Safety Management DUPST Once 16 hours Self Paced Workplace Violence Prevention MOTTR4025 X X X X X X X X X X X X Annual Self Paced 8 hours Actors Employees Can Take (Duncan) ECTST1A X X X X X X X X X X X X Once * 4 hours Self Paced Respiratory Protection (Above Action Level) B SS7 TD TD TD Once 4 hours Self Paced Personal Protective Equipment STYPEP X X X X X X X X X X X X Once 8 hours Self Paced Fire Apparency (Verbal by Supv (to HR)) OSPRE X X X X X X X X X X X X Annual Self Paced 8 hours Hand Tool Safety C SS100 TD TD TD Annual Self Paced 8 hours Hand Tool Safety SS100 TD TD TD Annual Self Paced 8 hours Comprehensive OSHA OSHAGC TD TD TD TD 15 Hours As Required Confined Space/Refresher SS1/SS62 TD TD TD Once/Annual 24 hrs/16 hrs Self Paced Fall Protection (Fall/Hang/pts greater 6 ft) STFLUP TD TD TD Once 8 hours Self Paced Lock Out/Tag Out LCOT01 X X X X X X X X X X X X 6 years 8 hours Self Paced Fire Prevention/Passenger Evac SSFT X X X X X X X X X X X X Once * 1 hour Self Paced National Incident Mgmt Safety Aware -NIMS SHINMA X X X X X X X X X X X X Once * 1 hour Self Paced NIMS ICS-100/200/700 ICST100/200/700 Once * 1 hour Self Paced Silica H RCSSTC TD TD TD TD TD TD TD TD TD TD TD TD Once * 8 hours Self Paced Safety Awareness/Sick, Safety (COI) SSSA02 TD TD TD TD TD TD TD TD TD TD TD TD Once * 8 hours Self Paced
+```
+[p256_c0003] _Page 7-24_
+[p256_c0004] _7_
+
+## Page 257
+
+### [p257_c0001] MAINTENANCE OF WAY, DIVISION OF ELECTRICAL SAFETY TRAINING MATRIX 2025
+[p257_c0002]
+
+```text
+COURSE NAMES CODE COURSE # PTS/LS GS SUPPT FREQUENCY HOURS SM CMB TEPHS I TEPHS II EBM PCM PMB PET PEM MS I MS II Track Flanging/Refresher G TF-R08 X TD X X X X X X X X X X Once/Annual 72 hrs/6 hrs 6 hours Track Safety/Refresher TS-R03 X Once/72 years 6 hours 6 hours Track Safety Inspections TSI09 TD TD TD TD TD TD TD TD TD TD TD TD Once 8 hours 8 hours Overhead Crane Operator Permit TOO2 TD TD TD TD TD TD TD TD TD TD TD TD Once 8 hours 8 hours Overhead Crane Operator Cito TOO1 TD TD TD TD TD TD TD TD TD TD TD TD Once 8 hours 8 hours Crane Safety for Supervisors TOSS1 TD TD TD TD TD TD TD TD TD TD TD TD Once 8 hours 8 hours Crane Training TOSS13 TD TD TD TD TD TD TD TD TD TD TD TD Once 16 hours 16 hours Power Industrial Truck Evaluation PI-TEVA TD TD TD TD TD TD TD TD TD TD TD TD 3 years 8 hrs/Found 8 hours Power Industrial Truck Supervisors E PI-TOF TD TD TD TD TD TD TD TD TD TD TD TD Once 32 hrs/6 hrs 32 hrs/6 hrs Accident Investigation ISSAW X View Video View Video NYS Asbestos Supervisor/Refresher ATCO12 Once/Annual 40 hrs/42 hrs 40 hrs/42 hrs SIFCO/SFR (oil or antifreeze exceed 55 gal) ATCO06 TD TD TD TD TD TD TD TD TD TD TD 2 years View Video View Video CERT OF FITNESS RS2: Standard Flamm-Comb Liquids SG92C TD TD TD 5 years 4 hours 4 hours RS2: Ammoniated Fuel SG92IC TD TD TD 5 years 4 hours 4 hours RS2: Fire & Emergency Unit Conductor D SG92IC TD TD TD 5 years 4 hours 4 hours RS2: Fire & Emergency Unit Conductor SG92IC TD TD TD 5 years 4 hours 4 hours RS2: Tank Gas, Tank Lick for CHM/WH SG92IC TD TD TD 5 years 4 hours 4 hours RS2: Storage Use of Flammable/Compressible Gas SG98C X X X 5 years 4 hours 4 hours RS2: Operation of Air Compressors SGA5C TD TD TD 5 years 4 hours 4 hours RS2: Portable Exhaust/Exter Inspection SGW9C TD TD TD 5 years 4 hours 4 hours NOTE: Employees who are required to attend Track Flanging/Qualification are time be a pre-requisite for the following modules during induction training. Code: A. Employees who are defined in the HCP PI will attend this module and will attend an annual Autometric test B. Employees required to work Above Lead Action Level defined by the PI will attend these classes C. Given to Supervisors who relate to hazardous waste management D. 21st St Signals Stop, PCC, and 126 W. 53rd St Location Managers or designated representatives must hold this certification E. Forklift/H-L is the pre-requisite for Supervisors that will attend PI/TOF to conduct employee evaluations F. Rigging is required for employees that operate Cranes and/or material handling which involves rigging G. Employees working in RCAs 297.2, 298.6-299.4 and 299.6 are required to complete "TD" for Track Flanging H. The line SM, TEPHS & MSB working in RCAs 293.4, 293.6 & 294.1 are required to complete Silica Training annually NOTE: Trainee, Helper and Apprenticeship titles should attend Right-to-Know and trade specific training All non-draw operators who are responsible for rigging loads are required to take Basic Rigging Training
+```
+- [p257_c0003] TD - Risk Driven AD - All employees must attend this training Code: A. Employees who are required to attend Track Flanging/Qualification are time be a pre-requisite for the following modules during induction training. B. Employees required to work Above Lead Action Level defined by the PI will attend these classes C. Given to Supervisors who relate to hazardous waste management D. 21st St Signals Stop, PCC, and 126 W. 53rd St Location Managers or designated representatives must hold this certification E. Forklift/H-L is the pre-requisite for Supervisors that will attend PI/TOF to conduct employee evaluations F. Rigging is required for employees that operate Cranes and/or material handling which involves rigging G. Employees working in RCAs 297.2, 298.6-299.4 and 299.6 are required to complete "TD" for Track Flanging H. The line SM, TEPHS & MSB working in RCAs 293.4, 293.6 & 294.1 are required to complete Silica Training annually NOTE: Trainee, Helper and Apprenticeship titles should attend Right-to-Know and trade specific training All non-draw operators who are responsible for rigging loads are required to take Basic Rigging Training
+- [p257_c0004] Title Abbreviations: CMB: Crane Maintainer (B) TEPHS I: Transit Electrical Helper (Signal) TOF TEPHS II: Transit Electrical Helper (Electrical) TOF EBM: Electronic Equipment Maintainer PCM: Power Cable Maintainer PMB: Power Maintainer Group B PET: Power Electronic Technician PEM: Power Electronic Maintainer MS I: Maintenance Supervisor Level I MS II: Maintenance Supervisor Level II GS/SUPT: General Superintendent/Superintendent Code Annually = cycling in progression no less than 1 module (6-19 annually)
+[p257_c0005] Revised: 11/22/24
+[p257_c0006] _Page 7-25_
+
+## Page 258
+
+### [p258_c0001] DIVISION OF ELECTRONICS MAINTENANCE SAFETY TRAINING MATRIX 2026
+[p258_c0002]
+
+```text
+COURSE NAMES CODE COURSE # CTA EEEM I EEEM II TM LM REM REM II CMB CRT SMC MSIII GSI SUPP PTE FREQUENCY HOURS Mod 1: Chemical Safety H2CMGHS1 X X X X X X X X X X X X X X X Once * Self paced Mod 2: Recognition H2CMGHS2 X X X X X X X X X X X X X X X Once * Self paced Mod 3: Control H2CMGHS3 X X X X X X X X X X X X X X X Once * Self paced Mod 4: Supp. Overview MSDS & Labels H2CMGHS4 X X X X X X X X X X X X X X X Once * Self paced Mod 5: Supp. Overview Hazards H2CMGHS5 X X X X X X X X X X X X X X X Once * Self paced Mod 6: Organic Solvents H2CMGHS6 X X X X X X X X X X X X X X X Once * Self paced Mod 7: Pesticides H2CMGHS7 X X X X X X X X X X X X X X X Once * Self paced Mod 8: Corrosive, Adhesives & Sealants H2CMGHS8 X X X X X X X X X X X X X X X Once * Self paced Mod 9: Gasoline H2CMGHS9 X X X X X X X X X X X X X X X Once * Self paced Mod 10: Metals and Metal Salts H2CMGHS10 X X X X X X X X X X X X X X X Once * Self paced Mod 11: Compressors H2CMGHS11 X X X X X X X X X X X X X X X Once * Self paced Mod 12: Toxic Particulates H2CMGHS12 X X X X X X X X X X X X X X X Once * Self paced Mod 13: Flammable Dusts H2CMGHS13 X X X X X X X X X X X X X X X Once * Self paced Mod 14: Corrodents & Additives H2CMGHS14 X X X X X X X X X X X X X X X Once * Self paced Mod 15: Pesticides/Perservatives H2CMGHS15 X X X X X X X X X X X X X X X Once * Self paced Mod 16: Cleaners H2CMGHS16 X X X X X X X X X X X X X X X Once * Self paced GENERAL SAFETY Heating Conservation A D SSI11 X X X X X X X X X X X X X X X Annual Self paced Bio-infectious Waste SST12 X X X X X X X X X X X X X X X Annual Self paced Asbestos Awareness D E STAA1 X TD TD TD TD TD TD TD TD TD TD TD TD TD TD Annual Self paced OSHA Lead Worker (Module D) B LDAT1 X X X X X X X X X X X X X X X Annual Self paced Lead Comp. Person (Above Action Level) B SSTLGP X X X X X X X X X X X X X X X Annual Self paced Workplace Violence Prevention NOTTRN025 X X X X X X X X X X X X X X X Annual Self paced Students Employers Can Take (Open) ELIS1A X X X X X X X X X X X X X X X Once 16 hours Safety Management SS7 X X X X X X X X X X X X X X X Once 8 hours General Ergonomic (Above Action Level) B SST X X X X X X X X X X X X X X X Once 4 hours General Ergonomic Equipment STPEO X X X X X X X X X X X X X X X Once 8 hours PPE Appendix E (Used by Supv. to HH) DOSPE X TD TD TD TD TD TD TD TD TD TD TD TD TD TD Once/Annual 8 hours/6 hours Hazard Waste SARA II/Refresher C SSSSSA1 X X X X X X X X X X X X X X X Annual Handout Hazard Waste Summary (Given w/RTK12) SSSS5D X X X X X X X X X X X X X X X Once 16 hours Comprehensive OSHA D OSHMAC X X X X X X X X X X X X X X X Once 24 hours/16 hrs Confined Space/Rescuer D SSS1/SS52 X X X X X X X X X X X X X X X Once 8 hours Fall Protection (Fall & Heights Greater than 6 ft.) STFLLP X X X X X X X X X X X X X X X Once 3 years Lockout/Tagout LOTOT1 X X X X X X X X X X X X X X X Once * 8 hours Safety Awareness/First Safety (OD) SSSA02 X TD TD TD TD TD TD TD TD TD TD TD TD TD TD Once * 8 hours Fire Prevention & Passenger Evacuation SSFT X X X X X X X X X X X X X X X Once * 6 hours National Incident Mgmt. Safety Aware - NMIS SNMIA X X X X X X X X X X X X X X X Once * 1 hour NMIS ICS-1002/2007/700 ICST0002/7 X X X X X X X X X X X X X X X Once * Self paced Substance Abuse Awareness SSASU X X X X X X X X X X X X X X X Once * 2 hours Incident Investigation Workshop SSAW X X X X X X X X X X X X X X X Once View Video
+```
+[p258_c0003] _Page 7-26_
+
+## Page 259
+
+### [p259_c0001] DIVISION OF ELECTRONICS MAINTENANCE SAFETY TRAINING MATRIX 2026
+[p259_c0002]
+
+```text
+COURSE NAMES CODE COURSE # TITLES GS/ PTE FREQUENCY HOURS CTA EEIN I EEIN II TM LM REM I REM II CMB CRT SMC MSM SUPT TECHNICAL Forklift H.L.O F C53 TD TD TD TD TD TD X TD Once 16 hours Truck Mounted Aerial Lift IBFT169 TD TD TD TD TD TD TD X TD Once 16 hours Powered Industrial Truck Evaluation PITEVA TD TD TD TD TD TD TD TD 3 years Self paced Power Industrial Truck Supervisors F PTT047 TD TD TD TD TD TD TD TD Once 8 hours Defensive Driving EMDT10006 TD TD TD TD TD TD TD TD 3 Years 6 hours Truck Safety Inspection TSIB09 TD Once 8 hours Truck Flagging/Refresher TSIB06 TD Once/Annual 12 hrs/6 mos Truck Safety/Refresher G TSIB008 X X X X TD TD TD Once 72 hours 4 hours CERTIFICATE OF FITNESS C52: Storage Equipment/Liquids SSC52C TD 5 years 4 hours C51: Ammonia/Liquid Top SSC51C 5 years 4 hours C50: Fire Drill/Conductor SSC50C 3 years 4 hours C59: Staircase/Elevator/Hydraulics SSC59C 6 years 4 hours C60: Fire Guard for Torch Operation SSC60C 6 years 4 hours C68: Flame Gas Torch Use for Cut/Weld SSC68C 6 years 4 hours C58: Storage/Use of Flammable/Combustible Gases SSC58C 6 years 4 hours A32: Operation of Air Compressors SA32C TD TD 6 years 4 hours F12: Dispensing Motor Fuels SF12C 6 years 4 hours MS6: Supv Low Fissl Oil Burner Operation SM56C 6 years 4 hours MS8: Portable Extinguisher Inspection SM58C TD X TD TD TD TD TD TD TD TD TD 6 years 4 hours
+```
+[p259_c0003] Legend: TD - Employees must attend this training. * - Employees are given these modules during induction. ** - Employees that are required to attend Track Safety Qualification one time as a pre-requisite.
+- [p259_c0004] Code: A. Employees who are defined in the HCP PI will attend this module and will attend an annual Audiometric test. B. Employees required to work Above Lact Action Level defined by the PI will attend these classes. C. Given to Supervisors which relate to hazardous waste management. D. Given to employees in the Station Rehabilitation and Conflict Compliance groups. E. Given to employees in the Telecommunications Maintenance. F. Forklift H.L.O is the pre-requisite for Supervisors that will attend PIT047 to conduct employee evaluations. G. N/A for Bureau employees.
+[p259_c0005] Note: Trainee, Helper and Apprenticeship roles should attend Right-to-Know and trade specific training. O - Occupational Cycling in Progress/seen no less than 1 module (e.g. 6) annually. CEE = Central Electronics Shop.
+[p259_c0006] Title Abbreviations: CTA: Chief Technician EEIN I: Electronic Equipment Maintainer/Helper EEIN II: Electronic Equipment Maintainer/Helper TM: Telephone Maintainer LM: Light Maintainer REM: Revenue Equipment Maintainer CMB: Car Maintainer B CRT: Cori Retrieval Technician SMC: Structure Maintainer C MS III: Maintenance Supervisor III SUPT: Superintendent GST: General Superintendent PTE: Professional S Technical Employees
+[p259_c0007] _Revised: 1/22/24_
+[p259_c0008] _Page 7-27_
+
+## Page 260
+
+### [p260_c0001] DIVISION OF ELEVATORS AND ESCALATORS SAFETY TRAINING MATRIX 2026
+[p260_c0002]
+
+```text
+COURSE NAMES CODE COURSE CODES TITLES FREQUENCY HOURS EREM EREM EREM EREM MS I MS II SUPT g/s g/s Mod 1. Chemical Safety H2CMGHS1 X X X X X X X X X Once * Self paced Mod 2. Recognition H2CMGHS2 X X X X X X X X X Once * Self paced Mod 3. Control H2CMGHS3 X X X X X X X X X Once * Self paced Mod 4. Safety Overview MSDS & Labels H2CMGHS4 X X X X X X X X X Once * Self paced Mod 5. Safety Overview Chemical Hazards H2CMGHS5 X X X X X X X X X Once * Self paced Mod 6. First Aiders H2CMGHS6 X X X X X X X X X Annually Self paced Mod 7. First Aiders H2CMGHS7 X X X X X X X X X Once Self paced Mod 8. Corrosives, Adhesives & Sealants H2CMGHS8 X X X X X X X X X Once Self paced Mod 9. Gases H2CMGHS9 X X X X X X X X X Once Self paced Mod 10. Metals and Metal Salts H2CMGHS10 X X X X X X X X X Once Self paced Mod 11. Corrosives H2CMGHS11 X X X X X X X X X Once Self paced Mod 12. Toxic Particulates H2CMGHS12 X X X X X X X X X Once Self paced Mod 13. Nitrosane Dusts H2CMGHS13 X X X X X X X X X Cycle Annually Self paced Mod 14. Corrodents & Additives H2CMGHS14 X X X X X X X X X Cycle Annually Self paced Mod 15. Pesticides/Preservatives H2CMGHS15 X X X X X X X X X Cycle Annually Self paced Mod 16. Cleaners H2CMGHS16 X X X X X X X X X Cycle Annually Self paced GENERAL SAFETY Hearing Conservation A SSST1 X X X X X X X X X Annual Self paced Bio-Infectious Waste A SSST1 X X X X X X X X X Annual Self paced Adhesives Awareness STATT X X X X X X X X X Annual Self paced Safety Management UOPS X X X X X X X X X Once Self paced Contaminant Management EC-ISA X X X X X X X X X Once Self paced Respiratory Protection (Respirator Action Level) B SSST X X X X X X X X X Annual Self paced Personal Protective Equipment STPEP X X X X X X X X X Once Self paced PPE Agencies & Vendors by State & HWY DOSSPE X X X X X X X X X Once Self paced Hazardous Waste - SARPA III C X X X X X X X X X Annual Self paced Comprehensive OSHA OSHAQG TD TD TD TD TD TD TD TD TD Annual Handout Confined Space/Refresher SSST/SS2 TD TD TD TD TD TD TD TD TD Once/Annual 16 hours Fall Protection (falls or heights greater 6 ft) STFLP TD TD TD TD TD TD TD TD TD Once 8 hours Lock Out/Tag Out LOTO/T X X X X X X X X X 3 years Self paced Fire Prevention & Passenger Evacuation SSST X X X X X X X X X 8 years 8 hours National Incident Mgmt Safety Aware - NIMS SNMAI X X X X X X X X X Once 1 hour ICST1007/007/00 ICST1007/007/00 X X X X X X X X X Once Web Based/Self Paced Accident Investigation Worksheet SSST X X X X X X X X X Once View Video Chemical Waste Pollution Rule SSST X X X X X X X X X Once 8 hours Safety Awareness/Basic Safety (OSD) SS6A02/ST/SSW X X X X X X X X X Once 8 hours
+```
+[p260_c0003] _Page 7-28_
+
+## Page 261
+
+### [p261_c0001] DIVISION OF ELEVATORS AND ESCALATORS SAFETY TRAINING MATRIX 2025
+[p261_c0002]
+
+```text
+COURSE NAMES COURSE CODES TITLES FREQUENCY HOURS ELEM I ELEM II ELEM III MS I MS II SOFT Other Basic Training VB8713 TD TD TD TD TD TD Once* 8 hours Rescue Platform Lift TCF1 TD TD TD TD TD TD Once 15 hours Truck Mounted Aerial Lift IBT169 TD TD TD TD TD TD Once 15 hours Fix-it-H-L GSS TD TD TD TD TD TD Once 15 hours Powered Industrial Truck Evaluation P1TEVA TD TD TD TD TD TD Once Self-paced Power Industrial Truck Supervisors P1T047 TD TD TD TD TD TD Once 8 hours Truck Safety Inspections D Once 8 hours Truck Safety/Refreshers** TS1909 Once**/2 years 8 hours Truck Safety/Refreshers** TS1808 X X X X X X 2 years View Video SPCC/SPR (oil or antifreeze exceed 55 gall) COF F07: Fire Drill Conductor SF07 TD TD TD 3 years 4 hours W96: Annual Portable Extinguisher Inspection SW96C X X X 5 years 4 hours
+```
+### [p261_c0003] Legend:
+- [p261_c0004] X-- Employee must attend this training TD Task Driven * Employees are given these modules/training during induction
+### [p261_c0005] Codes:
+- [p261_c0006] A Employees who are defined in the HCP P1 will attend this module and will attend an annual Audiences test. B Employees required to work Above Level Action Level defined by the P1 will attend these classes. C Given to Supervisors which related to hazardous waste management. D Fix-it-H-L is the prerequisite for Supervisors that will attend P1T047 to conduct employee evaluations.
+[p261_c0007] Notes: Trainee, Helper and Apprenticeship titles should attend Right-to-Know and trade specific training Cycle Annually = cycling in progression no less than 1 module (e-16) annually.
+[p261_c0008] Title Abbreviations: ELEM I: Elevator & Escalator Maintainer Apprentice ELEM II: Elevator & Escalator Maintainer ELEM III: Elevator & Escalator Maintainer Helper MS I: Maintenance Supervisor, Level I MS II: Maintenance Supervisor, Level II GSS/PT: General Sup/Supervisor/Instructor
+[p261_c0009] Revised: 11/22/24
+[p261_c0010] _Page 7-29_
+[p261_c0011] _1-1_
+
+## Page 262
+
+### [p262_c0001] MAINTENANCE OF WAY, MOW ENGINEERING SAFETY TRAINING MATRIX 2025
+[p262_c0002]
+
+```text
+COURSE NAMES CODE COURSE # TTLES MS I (MPH) MS II (MPH) MS I (TRK) MS II (TRK) FREQUENCY HOURS PTE MANAGER SMA SMS SMC SMD SME SMG ATD TRW 30 TEM Mod 1: Chemical Safety HZCMGHS1 X X X X X X X X X X X X X X X X Once * Self paced Mod 2: Radiation HZCMGHS2 X X X X X X X X X X X X X X X X Once * Self paced Mod 3: Control HZCMGHS3 X X X X X X X X X X X X X X X X Once * Self paced Mod 4: Sign, Overlay, MSDS & Labels HZCMGHS4 X X X X X X X X X X X X X X X X Once * Self paced Mod 5: Safety Overlay Hazard HZCMGHS5 X X X X X X X X X X X X X X X X Once * Self paced Mod 6: Organic Solvents HZCMGHS6 X X X X X X X X X X X X X X X Once * Self paced Mod 7: Fuel/Lubricants HZCMGHS7 X X X X X X X X X X X X X X X Once * Self paced Mod 8: Corrosive HZCMGHS8 X X X X X X X X X X X X X X X Once * Self paced Mod 9: Gases HZCMGHS9 X X X X X X X X X X X X X X X Once * Self paced Mod 10: Metals and Metal Salts HZCMGHS10 X X X X X X X X X X X X X X X Once * Self paced Mod 11: Toxic HZCMGHS11 X X X X X X X X X X X X X X X Once * Self paced Mod 12: Corrosives HZCMGHS12 X X X X X X X X X X X X X X X Once * Self paced Mod 13: Nuisance Dusts HZCMGHS13 X X X X X X X X X X X X X X X Once * Self paced Mod 14: Corrodents & Additives HZCMGHS14 X X X X X X X X X X X X X X X Once * Self paced Mod 15: Pesticides/Preservatives HZCMGHS15 X X Once Annually Self paced Mod 16: Cleaners HZCMGHS16 GENERAL SAFETY Hearing Conservation A SSI11 TD TD TD TD TD TD TD TD TD Annual Self paced Bio-Infectious Waste SSI21 X X X X X X X X X X X X X X X X X Annual Self paced Asbestos Awareness STATI1 X X X X X X X X X X X X X X X X X Annual Self paced OSHA Lead Worker (Module D) B LSAT1 TD TD TD TD TD TD TD TD Annual Self paced Lead Contm. Person Action Level B SS11GP Annual Self paced Workplace Violence Prevention M011RH025 Annual Self paced Violent Employees Can Take Charge EC01TA Once Self paced Safety Management ESS1ST Once Self paced Procedures Training (Action Action Lev) B SS1PRG TD TD TD TD TD TD TD TD Once Self paced Procedures Training (Action Action Lev) B SS1PRG TD TD TD TD TD TD TD TD Once Self paced OSHA 30 Hours C OGS030 X X X X X X X Once 40 hours OSHA 10 Hours C OGS050 X X X X X X X Once 8 hours Hazard Waste SARA (1990/91) C OSHAGC Annual Self paced Comprehensive OSHA SS54155542 As Required 16 hours Confined Space/Reacher SS54155542 Once/Annual 24 hours/16 hrs Fall Protection (falls or heights greater 6 ft) ST1L1P TD TD TD TD TD TD TD TD Once 8 hours Ladder/Fall Protection LOTOT1 X X X X X X X 3 years Self paced Safety Awareness/Basic Safety (10D) SS5A02 X X X X X X X 8 years Self paced Fire Prevention & Passenger Evaluation SSFI X X X X X X X Once 8 hours National Incident Mgmt Safety Aware -NIMS SSNMI Once Self paced NIMS ICS-100/200/700 ICS100/200/700 Once * Self paced Accident Investigation Workshop SSAWW X Once * View Video
+```
+[p262_c0003] _Page 7-30_
+
+## Page 263
+
+### [p263_c0001] MAINTENANCE OF WAY, MOW ENGINEERING SAFETY TRAINING MATRIX 2025
+[p263_c0002]
+
+```text
+COURSE NAMES CODE COURSE # PTE MANAGER TITLES FREQUENCY HOURS SMA SMB SMC SMD SME SMG ATD TRW SO TEM MS I (INFRI) MS II (INFRI) MS I (TRK) MS II (TRK) Forklifts-1.0 E CS3 TD TD TD TD TD TD TD TD TD TD TD Once 16 hours Overhead Crane Pendant Operator TC02 TD Once 8 hours Crane Safety for Supervisors TC57 TD Once 8 hours Industrial Lifting Operator IEC-189 TD Once 16 hours Commercial Driver License Once 40 hours Power Industrial Truck TC01 TD TD TD TD TD Once 16 hours Power Industrial Truck Evaluation PI/EVA 3 years Self guided Power Industrial Truck Supervisors E PI/TOY TD TD TD TD TD Once 40 hours Welding - Basic G MWV003 Once 40 hours Welding - Advanced G MWV005 Once 40 hours Welding Safety for Supervisors F IWS082 Once 8 hours Track Flagging/Refresher TRF05 X X X X X X X X X X X X Once/Annual 7 1/2 hrs/1/3 Track Safety/Refresher TSR068 X Once/Annual 40 hours NYIS Asbestos Supervisor/Refresher H ATC012 Once/Annual 40 hours/8 hours NYIS Asbestos Handler/Refresher H ATC006 Once/Annual 32 hours/8 hours SPCC/SPII (oil or antifreeze record 55 gal) 2 years View Video Track Supervisor/Sup. Refresher 3 years 16 hours Major Track Contaminant Inspections TL2 TD 24 hours Track Safety Inspections TS1809 Once 6 hours C92: Siloxane Film/Combi Liquids SGCX2 6 years 4 hours F07: Fire Drill Conductor D SF07C 6 years 4 hours F09: Standpipe/Sprinkler/Stand Hydrants D SF09C 6 years 4 hours F60: Fire Guard for Track Operation SGR0C 6 years 4 hours G60: Film Gas Torch Use for CU/Weld SGR0C 6 years 4 hours G93: Storage/Use of Flammable/Combustible Gases SGR8C 6 years 4 hours A33: Operation of Air Compressors GA33C 6 years 4 hours P15: Dispensing Major Fuels SF15C 6 years 4 hours 1095: Portable Extinguisher Inspection SW95C 6 years 4 hours
+```
+[p263_c0003] CERT OF FITNESS X- Employee must attend this training TD- Test Driven * Employees that are required to attend Track Flagging take Track Safety Qualification one time as a pre-requisite. ** Employees that are required to attend Track Flagging take Track Safety Qualification one time as a pre-requisite.
+- [p263_c0004] Guide: A. Employees who are defined in the HCP/FM will attend this module and will attend an annual Audiometric test. B. Employees required to work above load/Action level defined by the FM will attend these classes. C. Supervisors who perform Fire Supervision D. Given to employees who perform Fire Supervision E. Forklifts-1.0 is the pre-requisite for Supervisors that will attend PI/TOY to conduct employee evaluations F. Given to Supervisors who supervise welding operations G. Employees that are hired with Welding Licenses only require Track Use (TOY/120) which is provided at induction. H. NYIS Asbestos Handler/Supervisor classes are provided off property by a vendor- no ELM entry.
+[p263_c0005] Notes: Names, Major and Apprenticeship titles should attend high-to-low and trade specific training.
+[p263_c0006] Cycle Annually = cycling in progression no less than 1 module (6-18) annually.
+[p263_c0007] Revised: 1/1/2024
+[p263_c0008] _Page 7-31_
+
+## Page 264
+
+### [p264_c0001] DIVISION OF FACILITIES SAFETY TRAINING MATRIX 2025
+[p264_c0002]
+
+```text
+COURSE NAMES CODE COURSE # TITLES FREQUENCY HOURS HPPT SMA SMB SMC SMID SME SMF SMG SMH WAD MII LWH SSC SES MS I MS II GS/SUPP Mod 1 Chemical Safety H2CMCHS1 X X X X X X X X X X X X X X X X X Once * Self paced Mod 2 Radiation H2CMCHS2 X X X X X X X X X X X X X X X X X Once * Self paced Mod 3 Control H2CMCHS3 X X X X X X X X X X X X X X X X X Once * Self paced Mod 4 Supply Chain/Key Hazards H2CMCHS4 X X X X X X X X X X X X X X X X X Once * Self paced Mod 5 Supply Overview Hazards H2CMCHS5 X X X X X X X X X X X X X X X X X Once * Self paced Mod 6 Organic Solvents H2CMCHS6 X X X X X X X X X X X X X X X X X Once * Self paced Mod 7 Flammable Liquids H2CMCHS7 X X X X X X X X X X X X X X X X X Once * Self paced Mod 8 Cooling, Antifreezes & Sealants H2CMCHS8 X X X X X X X X X X X X X X X X X Once * Self paced Mod 9 Gases H2CMCHS9 X X X X X X X X X X X X X X X X X Once * Self paced Mod 10 Metals and Metal Salts H2CMCHS10 X X X X X X X X X X X X X X X X X Once * Self paced Mod 11 Corrosives H2CMCHS11 X X X X X X X X X X X X X X X X X Once * Self paced Mod 12 Toxic Particulates H2CMCHS12 X X X X X X X X X X X X X X X X X Once * Self paced Mod 13 Nitrous Oxide H2CMCHS13 X X X X X X X X X X X X X X X X X Once * Self paced Mod 14 Coolants & Additives H2CMCHS14 X X X X X X X X X X X X X X X X X Once * Self paced Mod 15 Preservatives H2CMCHS15 X X X X X X X X X X X X X X X X X Once * Self paced Mod 16 Cleaners H2CMCHS16 X X X X X X X X X X X X X X X X X Once * Self paced GENERAL SAFETY Hearing Conservation A SS11 X X X X X X X X X X X X X X X X X Annual Self paced Biological Waste B SS12 X X X X X X X X X X X X X X X X X Annual Self paced Residue Awareness B SS13 X X X X X X X X X X X X X X X X X Annual Self paced Confined Space (Module D) B SS14 TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD Annual Self paced Confined Space (Module A/B) B SS15 X X X X X X X X X X X X X X X X X Annual Self paced Workplace Violence Prevention B SS16 X X X X X X X X X X X X X X X X X Annual Self paced Asbestos Employees Can Take (Duke) EC-151A X X X X X X X X X X X X X X X X X Once * 14 hours Safety Management DU58T X X X X X X X X X X X X X X X X X Once * 16 hours Respiratory Protection (Above Action Level) B SS7 X X X X X X X X X X X X X X X X X Once 8 hours Personal Protective Equipment SS7PFC X X X X X X X X X X X X X X X X X Once Self paced PPE Appendix E (Verbal by Supply to HPH) DO5PFE X X X X X X X X X X X X X X X X X Once 6 hours/6 hours Hazard Waste Summary (given w/RTK 1/2) C SS8/SS9 X X X X X X X X X X X X X X X X X Annual Handout Confined Space Refresher SS8/SS9 X X X X X X X X X X X X X X X X X Once/Annual 24 hours/16 hrs Full Protection (Risk or Height greater 6 ft) SS8/SS9 X X X X X X X X X X X X X X X X X Once 8 hours Lecture/Topic SS8/SS9 X X X X X X X X X X X X X X X X X 3 years Self paced Safety Awareness/Safety (LOD) LO7OT X X X X X X X X X X X X X X X X X Once * 8 hours Fire Prevention & Emergency Evacuation SS8A02 TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD 6 years 6 hours Nuclear Incident Mgmt Safety Aware -HMIS SS8MI X X X X X X X X X X X X X X X X X Once 1 hour HMIS ICS-104/200/700 SS8MI X X X X X X X X X X X X X X X X X Once WAB Course/Self paced Stress SS8MI X X X X X X X X X X X X X X X X X Once Video Video Unusual Incident Investigation Workshop SS8MI TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD Annual Video Video Unusual Waste Awareness (Bill of Lading) SS8MI X X X X X X X X X X X X X X X X X Annual Handout Storm Water Awareness SS8MI X X X X X X X X X X X X X X X X X Annual Video Video Infrastructure Supervisor Refresher SS8MI X X X X X X X X X X X X X X X X X 3 years 16 hours
+```
+[p264_c0003] _Page 7-32_
+
+## Page 265
+
+### [p265_c0001] DIVISION OF FACILITIES SAFETY TRAINING MATRIX 2025
+[p265_c0002]
+
+```text
+COURSE NAMES COURSE # TITLES GS/ISS FREQUENCY HOURS HPPT SMA SMB SMC SMD SME SMF SMG SMH VAD Mit LWH SSE SE MS I MS II TECHNICAL Forklift-HL-0 E CSS Once 16 hours Personal Platform Lift TCPI TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD 3 years 16 hours Powered Industrial Truck Supervisors F PT1047 TD TD Once 8 hours Welding - Basic F MW003 TD TD Once 40 hours Welding - Advanced F MW004 TD Once 24 hours Welding - Silver Brazing & Soldering G IWS042 Once/Annual 72 hrs/4 hrs Track Flagging/Refresher TS008 Once/72 years 8 hours Track Safety/Refresher TS008 Once 16 hours EPA Certification Once 8 hours Track Safety Inspections TS009 6 years 8 hours CERTIFICATE OF FITNESS CS2: Sterilize Film/Cont. Liquids CS2GC TD TD 6 years 4 hours EC1: Ammo-Activated Tool SE21C 3 years 4 hours FD7: Fire & Emergency Drill Conductor SF70C 6 years 4 hours FR9: Standup/Sprinkler/Fire Hydrants D SF90C 6 years 4 hours FR0: Fire Guard for Torch Operation 6 years 4 hours GG0: Film, Gas Torch Use for Cyl/Weld SG00C 6 years 4 hours GG8: Storage/Use of Flammable/Compressor Gas SG80C 6 years 4 hours A35: Operation of Air Compressors H SA35C 6 years 4 hours PT16: Dispensing Motor Fuels SF16C 6 years 4 hours PT38: Supp Low Pts Oil Burner Operation SP38C 6 years 4 hours W95: Portable Engine/Generator Inspection SW95C 6 years 4 hours Legend * Employees must attend the training. ** Employees are given these modules during induction. *** Employees that are required to attend Track Safety Qualification are time as a pre-requisite. A. Employees who are defined in the HCF F/A will attend this module and will attend an annual Audit/ment test. B. Employees required to work Above Load Action Level defined by the PI will attend these classes. Load Module supersedes FTK 12. C. Given to Supervisors who perform Hazardous waste management. D. Given to employees who perform Fire Suppression. E. Forklift-HL-0 is the pre-requisite for Supervisors that will attend PT1047 to conduct employee evaluations. F. Employees that are hired with Welding Licenses only require Track Use TCR-120 which is provided at Induction. G. Given to Supervisors who supervise welding operations. H. ASB Certification is only used for non-portable 10 lb psi or greater indoor compressors.
+```
+[p265_c0003] Title: Trainee, Helper and Apprenticeship files should attend Right-of-Know and trade specific training.
+[p265_c0004] Cycle Annually = cycling in progression no less than 1 module (6-18) annually.
+[p265_c0005] Revised: 2/16/2025
+[p265_c0006] _Page 7-33_
+
+## Page 266
+
+### [p266_c0001] MAINTENANCE OF WAY, DIVISION OF INFRASTRUCTURE SAFETY TRAINING MATRIX 2025
+[p266_c0002]
+
+```text
+COURSE NAMES CODE COURSE # SMA SMIB SMC SMID SME SMG NIT (HYD) LM MIS I MIS II STPT GS/ FREQUENCY HOURS Mod 1. Chemical Safety H2CMCHST1 X X X X X X X X X X X X X Once * Self paced Mod 2. Recognition H2CMCHS2 X X X X X X X X X X X X X Once * Self paced Mod 3. Control H2CMCHS3 X X X X X X X X X X X X X Once * Self paced Mod 5. Safety Overview NIOSH 1 Leads H2CMCHS5 X X X X X X X X X X X X X Once * Self paced Mod 6. Oxygen Systems H2CMCHS6 X X X X X X X X X X X X X Once * Self paced Mod 7. Plugs/Adapters H2CMCHS7 X X X X X X X X X X X X X Once * Self paced Mod 8. Galvanic Anodes & Sealants H2CMCHS8 X X X X X X X X X X X X X Once * Self paced Mod 9. Cables H2CMCHS9 X X X X X X X X X X X X X Once * Self paced Mod 10. Metals and Metal Skills H2CMCHS10 X X X X X X X X X X X X X Once * Self paced Mod 11. Corrosives H2CMCHS11 X X X X X X X X X X X X X Once * Self paced Mod 12. Toxic Fungicides H2CMCHS12 X X X X X X X X X X X X X Once * Self paced Mod 13. Nuisance Dust H2CMCHS13 X X X X X X X X X X X X X Once * Self paced Mod 14. Cables & Adapters H2CMCHS14 X X X X X X X X X X X X X Once * Self paced Mod 15. Cables & Adapters H2CMCHS15 X X X X X X X X X X X X X Once * Self paced Mod 16. Cables H2CMCHS16 X X X X X X X X X X X X X Once * Self paced GENERAL SAFETY Healing Conservation SS111 X X X X X X X X X X X X X Annual Self paced Biological Waste SS121 X X X X X X X X X X X X X Annual Self paced Asbestos Awareness SS1A11 X X X X X X X X X X X X X Annual Self paced OSHA Lead Worker (Module D) B LDAT1 X X X X X X X X X X X X X Annual Self paced Lead Comp. Person (Above Action Level) B SST1CP X X X X X X X X X X X X X Annual Self paced Workplace Violence Prevention B MCTTRNG2 X X X X X X X X X X X X X Once * Self paced Actions Employees Can Take (Ducati) B CUSTIA X X X X X X X X X X X X X Once * 4 hours Safety Management B SS1ST X X X X X X X X X X X X X Once * 8 hours First Aid (Above Action Level) B SS1ST X X X X X X X X X X X X X Once * 4 hours Personal Protective Equipment SS1PPE X X X X X X X X X X X X X Once Self paced PPE Appendix E (Metal by Size to Hfy) SS1PPE X X X X X X X X X X X X X Once Self paced Hazard Waste SARA IIIRefresher C SS1SSST X X X X X X X X X X X X X Once/Annual 8 hours/6 hours Hazard Waste Summary (Open W/RT12) C SS1SSST X X X X X X X X X X X X X Once 8 hours Comprehensive OSHA OSHA1ACC TD TD TD TD TD TD TD TD TD TD TD TD As Requested 16 hours Certified Spacerefresher SS11/SS2 TD TD TD TD TD TD TD TD TD TD TD TD TD Once/Annual 24 hours/16 hrs Fall Protection (falls of heights greater 6 ft) SS1FLP TD TD TD TD TD TD TD TD TD TD TD TD TD Once 8 hours Lockout/Tagout SS1LOTO TD TD TD TD TD TD TD TD TD TD TD TD TD 3 years Self paced Early Awareness/Basic Safety (10D) SS1A12 TD TD TD TD TD TD TD TD TD TD TD TD TD Once 8 hours OSHA 10 SS1A10 TD TD TD TD TD TD TD TD TD TD TD TD TD Once 16 hours National Incident Mgmt Safety/Avare - NIMS SS1NIM X X X X X X X X X X X X X Once 1 hour NIOSH 100600/000 C SS1NOSH100600 X X X X X X X X X X X X X Once * Web based/Self paced Silica C SS1SILICA X X X X X X X X X X X X X Once * Web Video Accident Investigation Workshop RC3STC TD TD TD TD TD TD TD TD TD TD TD TD TD Once + View Video Storm Water Awareness SS1WY TD TD TD TD TD TD TD TD TD TD TD TD TD Once + View Video Infrastructure Supervised Refresher MS1R14 TD TD TD TD TD TD TD X TD TD TD TD TD 3 years* 16 hours
+```
+[p266_c0003] _Page 7-34_
+
+## Page 267
+
+### [p267_c0001] MAINTENANCE OF WAY, DIVISION OF INFRASTRUCTURE SAFETY TRAINING MATRIX 2025
+[p267_c0002]
+
+```text
+COURSE NAMES COURSE # SMA MIT LM MS I MS II SUPP FREQUENCY HOURS SMB SMC SMID SME SMG (HVD) LM MS I MS II SUPP Excavator C353 TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD Once 16 hours Personal Platform Lift ICP1 TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD Once 16 hours Boom Truck Operator IC4 TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD Once 24 hours Powered Industrial Truck Evaluation PI/TEVA TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD 3 years Self paced Power Industrial Truck Supervisors G PI/047 TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD Once 8 hours Welding - Basic H MMW003 TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD Once 40 hours Welding - Advanced H MMW006 TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD Once 40 hours Welding - Silver Brazing & Soldering I MMW024 TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD Once 24 hours Welding Safety for Supervisors I MMW082 X X X X X X X X X X X X X X X Once/Annual 6 hours Track Engineering/Inspector TSB086 Once/Annual 8-12 hrs EPA Certification Once 16 hours SECC/SEIR (of or antifreeze exceed 55 gal) 2 years View Video Track Safety Inspections TSB089 Once 8 hours CERTIFICATE OF FITNESS G82, Store/Use Film/Comb Liquids SC50CC TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD 6 years 4 hours E271 Ammonia-Activated Tank SE71TC TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD 6 years 4 hours E207 Fire & Emergency Drill Conducted E SE71DC 3 years 4 hours E500 Fire Extinguisher Training E SE800C 6 years 4 hours E500 Fire Extinguisher Training On-Site E SE800C 6 years 4 hours G80, Film Gas Tank Use for CUMMID SC50CC TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD 6 years 4 hours G89, Storage/Use of Flammable/Combustible SC50CC X X X X X X X X X X X X X X X 6 years 4 hours A55, Operation of Air Compressors J SA55CC TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD 6 years 4 hours PF15, Dispensing Motor Fuels F SPF15C 6 years 4 hours PF99, Slip/Low PSI Oil Burner Operation SP99CC TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD 6 years 4 hours W065, Portable Extinguisher Inspection SW065C TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD 6 years 4 hours
+```
+[p267_c0003] Legend:
+- [p267_c0004] * Employees who are required to attend Track Flagging take Track Safety Qualification one time as a pre-requisite. ** Employees are given these modules during induction. TD: Track Drills LM: Light Maintainer MS I: Maintenance Supervisor I/II MS II: Maintenance Supervisor III SUPP: Supplemental SMA: Structure Maintainer A SMB: Structure Maintainer B SMC: Structure Maintainer C SMID: Structure Maintainer D SME: Structure Maintainer E SMG: Structure Maintainer G VAD MIT: Ventilation and Drainage Maintainer (726) LM: Light Maintainer MS I/II: Maintenance Supervisor I/II
+[p267_c0005] Codes: A. Employees who are defined in the HCP PI will attend this module and will attend an annual Autonomic test. B. Employees required to work Above Lead Action Level defined by the PI will attend these classes. Lead Module supersede RTK 12. C. Given to Supervisors which relate to hazardous waste management D. Given to employees who perform Fire Suppression E. Bergen Shop, Filmyr Shop, Glendale Shop, and Coalee Shop Location Managers or designated representatives must hold this certification F. Filmyr Shop, Coalee Shop, and Bergen Shop employees who perform this function must hold this certification. G. Employees who are required to attend Track Flagging take Track Safety Qualification one time as a pre-requisite. H. Employees that are hired with Welding licenses only require Track Use (TOR-120) which is provided at induction I. Given to Supervisors who supervise welding operations J. A55 Certification is only used for non-portable 100 psi or greater indoor compressors
+[p267_c0006] Note: Trainee, Helper and Apprenticeship titles should attend Right-to-Know and trade specific training. Cycle Annually = cycling in progression no less than 1 module (6-16) a Revised 11/22/24
+[p267_c0007] _2_
+[p267_c0008] _Page 7-35_
+
+## Page 268
+
+### [p268_c0001] DIVISION OF SERVICE DELIVERY SAFETY TRAINING MATRIX 2025
+[p268_c0002]
+
+```text
+COURSE NAMES CODE COURSE # CR FLAGMT TO WT TW ATD TDVD CTD TSS SUPT G.SUPT FREQUENCY HOURS Mod. 1. Chemical Safety H2COMGHS1 X X X X X X X X X X X Once* Self paced Mod. 2. Recognition H2COMGHS2 X X X X X X X X X X X Once* Self paced Mod. 3. Control H2COMGHS3 X X X X X X X X X X X Once* Self paced Mod. 4. Supply, Overview MSDS & Labels H2COMGHS4 X X X X X X X X X X X Once* Self paced Mod. 5. Supply, Overview Hazards H2COMGHS5 X X X X X X X X X X X Once* Self paced Mod. 6. Organic Solvents H2COMGHS6 X X X X X X X X X X X Once* Self paced Mod. 7. Fuel/Lubricants H2COMGHS7 X X X X X X X X X X X Once* Self paced Mod. 8. Coolants, Adhesives & Sealants H2COMGHS8 X X X X X X X X X X X Once* Self paced Mod. 9. Gases H2COMGHS9 X X X X X X X X X X X Once* Self paced Mod. 10. Metals and Metal Salts H2COMGHS10 X X X X X X X X X X X Once* Self paced Mod. 11. Corrosives H2COMGHS11 X X X X X X X X X X X Once* Self paced Mod. 12. Toxic Pharmaceuticals H2COMGHS12 X X X X X X X X X X X Once* Self paced Mod. 13. Household Dusts H2COMGHS13 X X X X X X X X X X X Once* Self paced Mod. 14. Radiation and Air Pollutants H2COMGHS14 X X X X X X X X X X X Once* Self paced Mod. 15. Radiological Air Purification H2COMGHS15 X X X X X X X X X X X Once* Self paced Mod. 16. Cleaners H2COMGHS16 X X X X X X X X X X X Once* Self paced GENERAL SAFETY Hearing Conservation SS111 X X X X X X X X X X X Annual Self paced Biological Waste SS1121 X X X X X X X X X X X Annual Self paced Accident Investigation Workshop SSAW X X X X X X X X X X X Once* Video Safety Management DUPST X X X X X X X X X X X Once* 15 hours Workplace Violence Prevention MDTFR0025 X X X X X X X X X X X Once* Self paced Actions Employees Can Take (Quarnt) ECTSTA X X X X X X X X X X X Once* 4 hours Respiratory Protection (Above Action Level) SS7 X X X X X X X X X X X Annual 4 hours Personal Protective Equipment (PPE) STFPE X X X X X X X X X X X Once* Self paced PPE Appenrik E. Verbal By Slip to HW DOSPE X X X X X X X X X X X Once* 8 hours Fire Prevention & Passenger Evacuation SSFT X X X X X X X X X X X Annual 10 min video MSA Response Escape Respirator Hood ED051 X X X X X X X X X X X Annual Video Slips SCSSIC X ID X X X X X ID X X X Once Video Initial Incident Mgmt. Safety Aware - NIMS SSAW X X X X X X X X X X X Once Video NIMS ICS - 1002/2007/00 ICST002007/00 X X X X X X X X X X X Once Video
+```
+[p268_c0003] _Page 7-36_
+
+## Page 269
+
+### [p269_c0001] DIVISION OF SERVICE DELIVERY SAFETY TRAINING MATRIX 2025
+[p269_c0002]
+
+```text
+COURSE NAMES CODE COURSE # CR FLAGMT TO WT TW TITLES SUPRT G SUPRT FREQUENCY HOURS ATD TDVD CTD TSS TECHNICAL Track Flagging/Refresher 1XFR00 X X X X X X Conc/Annual 72 hrs/48 hrs Track Safety/Refresher 1TSR00 X X X X X X X X X X Conc/****/2 weeks 8 hours Supervisor Refresher 01TU0012 X X X 3 years 16 hours Train Operator Refresher 01T325 X 3 years 24 hours Conductor Refresher 0C32 3 years 32 hours Tower Operator Refresher 0T63 X X X 3 years 16 hours CERT OF FITNESS Q92: Store/Use Flammable Liquids SG92C 5 years 4 hours E21: Ammo-Advanced Tool SE21C 5 years 4 hours F07: Fire & Emergency Drill Conductor SE07C 3 years 4 hours F80: Fire Guard for Trench Operation SE80C 5 years 4 hours G80: Film, Gas Trench Use for Cut/Wald SG80C 5 years 4 hours G88: Storage/Use of Flammable/Combustible Gas SG88C 5 years 4 hours G89: Operation of Air Compressors SG89C 5 years 4 hours G93: Operation of Load Lifter SG93C 5 years 4 hours G95: Operation of Forklift SG95C 5 years 4 hours W95: Conductive Equipment Inspection SW95C 5 years 4 hours
+```
+### [p269_c0003] Legend:
+- [p269_c0004] X - All employees must attend this training TD - Task Driven ** Employees are given these modules during induction ** Train Service Supervisors that are assigned to Vacuum Train 2 or work in proximity to an RT56 locomotive are required to be Respirometer qualified (Pl Appendix A, Footnote 1-2) *** Employees that are required to attend Track Flagging take Track Safety Qualification one time as a pre-requisite
+### [p269_c0005] Codes:
+- [p269_c0006] A - Employees who are defined in the HCP P/I will attend this module and will attend an annual Audometric test. C - Cycle Annually - cycling in progression no less than 1 module annually
+- [p269_c0007] Title Abbreviations: CR Conductor CR FLAGMT Conductor Flagging/Work Trains TO Train Operator TW Tower Operator ATD Assistant Train Dispatcher TDVD Train Dispatcher/And Dispatcher CTD Conductor Dispatcher TSS Train Service Supervisor Supr. Superintendent G SUPRT General Superintendent
+[p269_c0008] Revised: 12/22/24
+[p269_c0009] _1-3_
+[p269_c0010] _Page 7-37_
+
+## Page 270
+
+### [p270_c0001] DIVISION OF STATION ENVIRONMENT OPERATIONS TRAINING MATRIX 2025
+[p270_c0002]
+
+```text
+COURSE NAMES CODE COURSE # TITLES MS self/semi basic DCSM FREQUENCY HOURS CTA ENV CTA TT CTA HITT SA ENV S/S ENV S/S TT HITT TT S/S HITT S/S SMD SMF III Mod. 1: Chemical Safety H2CMGHS1 X X X X X X X X X X X X X Once * Self paced Mod. 2: Recognition H2CMGHS2 X X X X X X X X X X X X X Once * Self paced Mod. 3: Control H2CMGHS3 X X X X X X X X X X X X X Once * Self paced Mod. 4: Safety Overview MSDS & Labels H2CMGHS4 X X X X X X X X X X X X X Once * Self paced Mod. 5: Safety Overview Hazards H2CMGHS5 X X X X X X X X X X X X X Once * Self paced Mod. 6: Organic Solvents D H2CMGHS6 X X X X X X X X X X X X X Cycle Annually Self paced Mod. 7: Corrosives H2CMGHS7 X X X X X X X X X X X X X Cycle Annually Self paced Mod. 8: Oxidizers H2CMGHS8 X X X X X X X X X X X X X Cycle Annually Self paced Mod. 9: Gases H2CMGHS9 X X X X X X X X X X X X X Cycle Annually Self paced Mod. 10: Metals and Metal Salts H2CMGHS10 X X X X X X X X X X X X X Cycle Annually Self paced Mod. 11: Corrosives H2CMGHS11 X X X X X X X X X X X X X Cycle Annually Self paced Mod. 12: Toxic Substances H2CMGHS12 X X X X X X X X X X X X X Once Self paced Mod. 13: Radioactive Substances H2CMGHS13 X X X X X X X X X X X X X Once Self paced Mod. 14: Cleaners H2CMGHS14 X X X X X X X X X X X X X Once Annually Self paced GENERAL SAFETY Hearing Conservation B SS1T1 X X X X X X X X X X X X X Annual Self paced Bio-infectious Waste A SS1T2 X X X X X X X X X X X X X Annual Self paced Asbestos Awareness C STATA X X X X X X X X X X X X X Annual Self paced OSHA Lead Worker (Module D) A LDAT X X X X X X X X X X X X X Annual Self paced Lead Comp. Person (Above Action Level) A SS1TCP X X X X X X X X X X X X X Annual Self paced Safety Management DOUP2 X X X X X X X X X X X X X Once 15 hours Workplace Violence Prevention MOTT TR0025 X X X X X X X X X X X X X Annual Self paced Firefighters Employees Can Take (Cupola) SS1T1A X X X X X X X X X X X X X Once 8 hours Residential Firefighting Equipment A SS1T2A X X X X X X X X X X X X X Annual 4 hours Residential Firefighting Equipment SS1T2B X X X X X X X X X X X X X Annual 4 hours PPE Agency & Vendor by Sign (to Hwy) DOUPPE X X X X X X X X X X X X X Once Self paced Hazard Waste SARA List/Refresher C SS5A/SS6A X X X X X X X X X X X X X Once/Annual Self paced HazWaste Summary (given w/FTK12) SS5A/SS5D X X X X X X X X X X X X X Annual Handout Confined Space/Refresher SS5T/SS5C X X X X X X X X X X X X X Once/Annual 24 hours/15 hrs Fall Protection (falls or heights greater 6 ft) STFLUP TD TD TD TD TD TD TD TD TD TD TD TD TD Once 8 hours Lockout/Tagout LOTO1T X X X X X X X X X X X X X 3 years Self paced Fire Prevention & Passenger Evaluation SS1T X X X X X X X X X X X X X 8 years 8 hours Accident Investigation Workshop SSAWW X X X X X X X X X X X X X Once * View Video Safety Awareness/Basic Safety (IOD) SSSA02 X X X X X X X X X X X X X Once 8 hours Door Operator Refresher Team OT140 TD TD TD TD TD TD TD TD TD TD TD TD TD Once 2 hours National Incident Mgmt. Safety Aware - JIMMS SS1MMA X X X X X X X X X X X X X Once 1 hour OSHA 10 (15300 & 15370) SS1001 X X X X X X X X X X X X X Once 40 hours/40 hrs OSHA 30 (19300 & 19370) SS3001 X X X X X X X X X X X X X Once 70 hours/70 hrs NFA Response & Action Refresher (Hod) EU00S1 X X X X X X X X X X X X X Annual 10 hours Restoring of Extinguishers IREM1 X X X X X X X X X X X X X 3 years 4 hours Cleaner Training Refresher EC15TA X X X X X X X X X X X X X 3 years 8 hours Cleaner-Scrubber Machine Refresher SCRBEE X X X X X X X X X X X X X 3 years 8 hours Supervisors Owing to Advancing Roles SOARS X X X X X X X X X X X X X Once * 18 hours
+```
+[p270_c0003] _Page 7-38_
+
+## Page 271
+
+### [p271_c0001] DIVISION OF STATION ENVIRONMENT OPERATIONS TRAINING MATRIX 2025
+[p271_c0002]
+
+```text
+COURSE NAMES COURSE # TITLES FREQUENCY HOURS CTA ENV TT HITT SA S/S ENV TT HITT S/S SMD SMF M/S CSM OCSM Track Flagging/Refresher G X X X X X X X X TD Once/Annual 72 hrs/2 yrs Track Safety/Refresher TS800 TD Once/1/2 years 8 hours Track Safety Inspections TS809 TD Once 8 hours Forklift I-Lo E TD Once 16 hours Forklift Stacker FS213 TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD Once 16 hours Personal Platform Lift TCPI TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD Once 16 hours Block Truck (Single) BT169 TD TD TD TD TD TD TD TD TD TD TD TD TD TD TD Once 24 hours Articulated Crane/Boom Truck PF246 TD Once 8 hours Crane Safety for Supervisors TS57 TD Once 8 hours Crane Universal Helm Signals HS507 TD Once 8 hours Boose Rigging WB713 TD Once 8 hours Welding H TD Once 48 hours Welding Approved WM006 TD Once 8 hours Welding Safety for Supervisors I IN580 TD Once 8 hours Powered Industrial Truck Evaluators PIUEVA TD Once Self paced Powered Industrial Truck Supervisors E PT047 TD TD TD TD TD TD TD TD TD TD TD TD TD TD Once 8 hours TECHNICAL 952 Steroids Flammable Liquids SS242 TD TD 4 hours 951 Ammonium Chloride SS21C TD TD 4 hours 950 Ethanol/Isopropanol SS29C TD TD 4 hours 950 Fire Guard for Tower Operation SS60C TD TD 4 hours 950 Film Case Tools Use for Cult/Weld SS65C TD TD 4 hours 958 Storage/Use of Flammable/Combust SS69C TD TD 4 hours A25 Operation of Air Compressors SA25C TD TD 4 hours P15 Discharging Motor Fuels SP15C TD TD 4 hours W56 Portable Extinguisher Inspection SW56C TD TD 4 hours LEGEND A. -- Employee must attend this training. B. -- Employees are given these modules during induction. C. -- Employees that are required to attend Track Flagging one time as a pre-requisite. D. -- Supervisors received module as an hourly employee. Code: A. Employees required to work Above 1 and Action 1 level defined by the PA will attend these classes. B. Employees who are defined in the HCP PA will attend this module and will attend an annual Audiometric test. C. Given to Supervisors which relate to hazardous waste management. D. Given to Station Agents Annually. E. Forklift/H-L is the pre-requisite for Supervisors that will attend PT047 to conduct employee evaluations. F. Only required for GSS/CSM in Track Title Operation. G. Employees that are hired with Welding Licenses only require Tower Use (TCPI20) which is provided at Induction. H. Name, Title, Hours and Apprenticeship hours should attend Right-to-Know and trade specific training. I. Cycle Annually -- cycling in progression no less than 1 module (E-I) annually.
+```
+[p271_c0003] Title Abbreviations: CTA: Cleaner Environmental (Module 8, Refresher) CTA TTT: Cleaner Track Title CTA WTT: Cleaner HITT Team District SA: Station Agent S/S ENV: Station Supervisor Environmental (Module 8, Refresher) S/S TR: Station Supervisor Track Title S/S TR: Station Supervisor HITT Team District S/S: Station Supervisor SMD: Structure Maintainer F SMF: Structure Maintainer D MSF II: Maintenance Supervisor II/ GSS/CSM/DCSM: Group Station Sup/Group Station Mgr/Group Group Station Mgr DCSM: District Customer Service Manager
+[p271_c0004] _Revised: 1/22/2024_
+[p271_c0005] _Page 7-39_
+
+## Page 272
+
+### [p272_c0001] MAINTENANCE OF WAY, DIVISION OF TRACK SAFETY TRAINING MATRIX 2025
+[p272_c0002]
+
+```text
+TITLES Trackworker Specialty Title COURSE NAMES CODE COURSE # TRW THINS W/B CH CLPR SO CO TEM TEMP(PL) POW MSI MSII MSI PD MSII PD GS/SUPT FREQUENCY HOURS Mod 1 Chemical Safety H2CMCHS1 X X X X X X X X X X X X X X X Once Self paced Mod 2 Recognition H2CMCHS2 X X X X X X X X X X X X X X X Once Self paced Mod 3 Survey Overview H2CMCHS3 X X X X X X X X X X X X X X X Once Self paced Mod 4 Survey Overview: MSTRS & Labels H2CMCHS4 X X X X X X X X X X X X X X X Once Self paced Mod 5 Survey Overview: Hazards H2CMCHS5 X X X X X X X X X X X X X X X Once Self paced Mod 6 Organic Solvents H2CMCHS6 X X X X X X X X X X X X X X X Once Self paced Mod 7 Fluid/Lubricants H2CMCHS7 X X X X X X X X X X X X X X X Once Self paced Mod 8 Corrosive Adhesives & Sealants H2CMCHS8 X X X X X X X X X X X X X X X Once Self paced Mod 9 Gases H2CMCHS9 X X X X X X X X X X X X X X X Once Self paced Mod 10 Metals and Metal Salts H2CMCHS10 X X X X X X X X X X X X X X X Cycle Annually Self paced Mod 11 Corrosives H2CMCHS11 X X X X X X X X X X X X X X X Cycle Annually Self paced Mod 12 Toxic Particulates H2CMCHS12 X X X X X X X X X X X X X X X Cycle Annually Self paced Mod 13 Noise/Impact H2CMCHS13 X X X X X X X X X X X X X X X Cycle Annually Self paced Mod 14 Coolants and Additives H2CMCHS14 X X X X X X X X X X X X X X X Cycle Annually Self paced Mod 15 Residues/Respectives H2CMCHS15 X X X X X X X X X X X X X X X Cycle Annually Self paced Mod 16 Cleaners H2CMCHS16 X X X X X X X X X X X X X X X Cycle Annually Self paced GENERAL SAFETY Personal Protective Equipment B SS7 X X X X X X X X X X X X X X X Annual Self paced Respiratory Protection B SS7 X X X X X X X X X X X X X X X Annual Self paced First Aid/First Aider (Module D) G SS7A1 X X X X X X X X X X X X X X X Annual Self paced Workplace Violence Prevention G SS7A1 X X X X X X X X X X X X X X X Annual Self paced Actors/Employee Can Take (Dipoli) SS7A1 X X X X X X X X X X X X X X X Annual Self paced Safety Management SS7A1 X X X X X X X X X X X X X X X Once Self paced Personal Protective Equipment B SS7 X X X X X X X X X X X X X X X Annual 16 hours PPE Appendix E (Vertical By Supv to Hly) SS7 X X X X X X X X X X X X X X X Once 4 hours Hazard Waste/SAR/All C SS8SS81 X X X X X X X X X X X X X X X Annual 8 hours Hazard Waste Summary (given w/TRK 12) SS8SS81 X X X X X X X X X X X X X X X Annual Handout Comprehensive OSHA OSHAAC As Requested 16 hours Full Protection Rack (Rack depths greater 6 ft) F ST1LTP X X X X X X X X X X X X X X X Once 8 hours Lock Out/Tag Out (Eliminated ELOTOY) LOTO1 X X X X X X X X X X X X X X X 3 years Self paced Risk Prevention & Passenger Evacuation SS7A1 X X X X X X X X X X X X X X X 6 years Self paced Accident Investigation SS7A1 X X X X X X X X X X X X X X X Once 1 new Video NIOSH SS7A1 X X X X X X X X X X X X X X X Once 1 new Video NIOSH TCS 109/200/700 SS7A1 X X X X X X X X X X X X X X X Once View Video Safety Awareness/Basic Safety (COD) J SS7A2 X X X X X X X X X X X X X X X Annual 6 hours Certified Speaker/Refresher SS7A2 X X X X X X X X X X X X X X X Once/Annual 24 hours/16 hours
+```
+[p272_c0003] _Page 7-40_
+
+## Page 273
+
+### [p273_c0001] MAINTENANCE OF WAY, DIVISION OF TRACK SAFETY TRAINING MATRIX 2025
+[p273_c0002]
+
+```text
+COURSES TITLES FREQUENCY HOURS KWV Trains WIB CH CLEAR CO CO TECH TRF/PD PM ASST ASST PD TOS/STP Track Flagging/Refresher X X X X X X X X X X X X Once/Annual 72 hours/6 hours Track Safety/Refresher TSR608 Once/2 years 8 hours Overland Crane Pendant Operator TC02 Once 8 hours Overland Crane Operator (Cabr) TC01 Once 40 hours Basic Rigging for Supervisors RB01 Once 8 hours Basic Rigging RB01/HS-L Once 16 hours Industrial/Making Operator IBC-168 Once 16 hours Working - Advanced MMW003 Once 16 hours Working - Advanced MMW008 Once 40 hours Track Safety Inspections YS1609 Once 8 hours Commercial Lift License (COL) Once 40 hours Personal Lift Platform ICPI Once 16 hours Powered Industrial Truck Evaluation PIE/VA Once 8 hours Powered Industrial Truck Supervisors AT1012 Once/Annual 24 hours Heavy Equipment Handling/Refresher AT1006 Once/Annual 24 hours/16 hours SPCC/SPIF (oil or antifreeze excess 55 gal) 2 years 24 hours/16 hours Track Inspector Qualification MT1/MAS 2 years 160 hours/16 hours Track Supervisor/Sup. Refresher LT2 3 years 16 hours Major Track Component Inspections IC1249 Once 24 hours TECHNICAL CS92 Storage/Use Flammable Liquids SG90C 6 years 4 hours 707 Fire & Emergency Drill Conductor SF91C 3 years 4 hours 760 Fire Guard for Torcon Operation SG91C 6 years 4 hours 650 Flam Gas Torch Use for CWMed SG90C 6 years 4 hours 1630 Standpipe/Sprinkler/Air Hydrants SP91C 6 years 4 hours Gas Storage/Use of Flammable/Combustible Gas SG90C 6 years 4 hours Gas Detection of Flammable Gases SG90C 6 years 4 hours Major Fuel Sources SP11C 6 years 4 hours W06 Portable Equipment Inspection SV86C 6 years 4 hours
+```
+- [p273_c0003] Legend: X - Employee must attend this training TD - Task Driven * - Employees are given these modules during induction o - Employees that are required to attend Track Flagging take Track Safety Qualification one time as a pre-requisite A - Employees who are defined in the HCP P1 will attend this module and will attend an annual Audometric test B - Employees required to work Above Load Action Level defined by the P1 will attend these classes C - Over to Supervisors which relate to hazardous waste management D - Linden Shop Location Manager or designated representative must hold this certification E - Foulphill is the pre requisite for Supervisors that will attend P1/T04 to conduct employee evaluations F - Third Hall Operations (MSIII) & PDM files perform pre-ride inspections and forward certification forms to DOG Safety G - Employees whose job requires them to work with hazardous materials H - Employees whose job requires them to work with electrical and electrical handbagging which involves rigging I - Specialist Chauffer will be required to attend this course J - Specialist Chauffer will be required to attend P15 certification MIG - Trains, Heiser and Apprenticeship files should attend Right-to-Know and trade specific training All non-crane operators who are responsible for rigging loads are required to take Basic Rigging Training
+- [p273_c0004] Line Abbreviations TRV - Trainworker THS - Track Inspector WIB - Welder/Butter CH - Chauffer CO - Crane Operator TEH - Track Equipment Maintainer TEHPD - Transit Electrical Heber (Power) PDM - Power Distribution Maintainer MS III - Maintenance Supervisor Level III MS II - Maintenance Supervisor Level II MS I - Maintenance Supervisor Level I PS - Power Distribution GSS/STP - General Superintendent/Supervisors Cycle Annually = cycling in progression no less than 1 module (6-16) annually.
+[p273_c0005] _Revised: 11/22/2024_
+[p273_c0006] _Page 7-41_
+
+## Page 274
+
+### [p274_c0001] Table of Contents
+[p274_c0002] 8 New York Public Transportation Safety Board (PTSB) State Safety Oversight (SSO) Risk-Based Inspections (RBIs)..... 2 8.1 Risk-Based Inspections..... 2 8.2 Inspections Access..... 2 8.3 Data Collection..... 2 8.4 Corrective Action Plans..... 3
+[p274_c0003] _Page 8-1_
+
+## Page 275
+
+### [p275_c0001] 8 New York Public Transportation Safety Board (PTSB) State Safety Oversight (SSO) Risk-Based Inspections (RBIs)
+[p275_c0002] Pursuant to the Infrastructure Investment and Jobs Act, also known as the Bipartisan Infrastructure Law (49 U.S.C. § 5329), NYCT has added the following to the Agency Safety Plan to facilitate and comply with Special Directive No. 22-39, Required Actions to Implement a Risk-Based Inspection Program at the New York Public Transportation Safety Board, the PTSB SSO Program Standard Section 1.8, and Reference Guide Section 5.6.
+### [p275_c0003] 8.1 Risk-Based Inspections
+[p275_c0004] A risk-based inspection program uses qualitative and quantitative data analysis to inform ongoing inspection activities. Risk-based inspection programs are designed to prioritize inspections to address safety concerns and hazards associated with the highest levels of safety risk.
+### [p275_c0005] 8.2 Inspections Access
+[p275_c0006] NYCT provides PTSB with the authority and capability to enter the rail facilities that PTSB oversees to inspect infrastructure, equipment, records, personnel, and data, including the data that NYCT collects when identifying and evaluating safety risks.
+[p275_c0007] Inspection Access Policies and Procedures – PTSB, in consultation with NYCT, has established policies and procedures regarding the access for PTSB to conduct inspections of NYCT, including access for inspections that occur without advance notice to NYCT.
+### [p275_c0008] 8.3 Data Collection
+[p275_c0009] NYCT provides PTSB with the data that NYCT collects when identifying and evaluating safety risks, such as:
+### [p275_c0010] Safety program data
+- [p275_c0011] • Records of safety events • Hazard records • Safety risk mitigation records • Corrective action plans • Records of near misses
+### [p275_c0012] Maintenance data
+- [p275_c0013] • Inspection and maintenance records and report forms
+[p275_c0014] _Page 8-2_
+
+## Page 276
+
+- [p276_c0001] • Work orders • Records of failures and defects • Records of revenue vehicles out of service, including causal information • Major maintenance activity schedule and progress • Adherence to maintenance schedules, including reports and documentation of deferred maintenance
+### [p276_c0002] Inspection data
+- [p276_c0003] • Inspection records and report forms • Records of failure and defects • Records of speed restrictions • Event and safety risk mitigation verification • Adherence to inspection schedules including reports and documentation of inspections not performed • Capital project schedules and progress
+### [p276_c0004] Data Collection Policies and Procedures
+[p276_c0005] PTSB, coordinating with NYCT, has established policies and procedures for collecting data described in the Data Collection requirements, including with respect to frequency of collection, that is commensurate with the size and complexity of NYCT, see the PTSB/NYCT Data Products List/Table.
+### [p276_c0006] Incorporation of Requirements
+[p276_c0007] Policies and procedures established by PTSB for Risk-Based inspections remain incorporated into the NYCT Agency Safety Plan.
+### [p276_c0008] 8.4 Corrective Action Plans
+[p276_c0009] When required, the PTSB or Federal Transportation Administration (FTA) may request NYCT to develop a corrective action plan (CAP). A CAP is defined as action that NYCT will take to minimize, control, correct, or eliminate risk and hazards and a schedule for taking those actions. The PTSB or FTA may issue a CAP in response to the following: Noncompliance with the ASP, SSOA triennial audit findings, safety event investigation, internal safety review, or insufficient safety risk mitigation.
+[p276_c0010] Any request for a CAP issued to NYCT will be handled by a team of appropriate departments with the goal of CAP development and approved by the deadline issued by the PTSB or FTA. Once approved, the PTSB/FTA will utilize/issue checklist for actions taken, timeline for completion and responsible parties, documentation requirements, etc, as well as a means for the PTSB/FTA to monitor the progress of the actions taken to implement the CAP. Once all the necessary outlined actions have been implemented by NYCT it can be requested that the CAP be closed. Once closed,
+[p276_c0011] _Page 8-3_
+
+## Page 277
+
+[p277_c0001] some CAPs may require monitoring thru a safety assurance/review process implemented by NYCT and monitored/audited by PTSB/FTA.
+[p277_c0002] _Page 8-4_
+
+## Page 278
+
+### [p278_c0001] 9 Additional Information – Definitions and Acronyms
+[p278_c0002] Presented below are definitions and acronyms used throughout this Agency Safety Plan.
+### [p278_c0003] List of Definitions per 49 C.F.R. 673.5 and 674.7:
+[p278_c0004] Accountable Executive means a single, identifiable individual who has ultimate responsibility for carrying out the Public Transportation Agency Safety Plan of a public transportation agency; responsibility for carrying out the agency's Transit Asset Management Plan; and control or direction over the human and capital resources needed to develop and maintain both the agency's Public Transportation Agency Safety Plan, in accordance with 49 U.S.C. 5329(d), and the agency's Transit Asset Management Plan in accordance with 49 U.S.C. 5326.
+[p278_c0005] Administrator means the Federal Transit Administrator or the Administrator's designee. Contractor means an entity that performs tasks on behalf of FTA, a State Safety Oversight Agency, or a Rail Transit Agency, through contract or other agreement.
+[p278_c0006] Chief Safety Officer (CSO) means an adequately trained individual who has responsibility for safety and reports directly to a transit agency's chief executive officer, general manager, president, or equivalent officer. A Chief Safety Officer may not serve in other operational or maintenance capacities, unless the Chief Safety Officer is employed by a transit agency that is a small public transportation provider as defined in this part, or a public transportation provider that does not operate a rail fixed guideway public transportation system.
+[p278_c0007] Corrective Action Plan (CAP) means a plan developed by a Rail Transit Agency that describes the actions the Rail Transit Agency will take to minimize, control, correct, or eliminate risks and hazards, and the schedule for taking those actions. Either a State Safety Oversight Agency or FTA may require a Rail Transit Agency to develop and carry out a corrective action plan.
+[p278_c0008] Equivalent Authority means an entity that carries out duties similar to that of a Board of Directors, for a recipient or subrecipient of FTA funds under 49 U.S.C. Chapter 53, including sufficient authority to review and approve a recipient or subrecipient's Public Transportation Agency Safety Plan.
+[p278_c0009] Event means an Accident, Incident or Occurrence.
+[p278_c0010] FRA means the Federal Railroad Administration, an agency within the United States Department of Transportation.
+[p278_c0011] FTA means the Federal Transit Administration, an agency within the United States Department of Transportation.
+[p278_c0012] Hazard means any real or potential condition that can cause injury, illness, or death; damage to or loss of the facilities, equipment, rolling stock, or infrastructure of a rail fixed guideway public transportation system; or damage to the environment.
+[p278_c0013] _Page 9-1_
+
+## Page 279
+
+[p279_c0001] Investigation means the process of determining the causal and contributing factors of an accident, incident, or hazard, for the purpose of preventing recurrence and mitigating risk.
+[p279_c0002] National Public Transportation Safety Plan means the plan to improve the safety of all public transportation systems that receive Federal financial assistance under 49 U.S.C. Chapter 53.
+[p279_c0003] NTSB means the National Transportation Safety Board, an independent Federal agency.
+[p279_c0004] Operator of a public transportation system means a provider of public transportation as defined under 49 U.S.C. 5302(14).
+[p279_c0005] Performance measure means an expression based on a quantifiable indicator of performance or condition that is used to establish targets and to assess progress toward meeting the established targets.
+[p279_c0006] Performance target means a quantifiable level of performance or condition, expressed as a value for the measure, to be achieved within a time period required by the Federal Transit Administration (FTA).
+[p279_c0007] Person means a passenger, employee, contractor, pedestrian, trespasser, or any individual on the property of a rail fixed guideway public transportation system.
+[p279_c0008] Public Transportation Agency Safety Plan (PTASP) means the comprehensive agency safety plan for a transit agency, including a Rail Transit Agency, that is required by 49 U.S.C. 5329(d) and based on a Safety Management System. Until one year after the effective date of FTA's PTASP final rule, a System Safety Program Plan (SSPP) developed pursuant to 49 CFR part 659 will serve as the rail transit agency's safety plan.
+[p279_c0009] Public Transportation Safety Certification Training Program means either the certification training program for Federal and State employees, or other designated personnel, who conduct safety audits and examinations of public transportation systems, and employees of public transportation agencies directly responsible for safety oversight, established through interim provisions in accordance with 49 U.S.C. 5329(c)(2), or the program authorized by 49 U.S.C. 5329(c)(1).
+[p279_c0010] Rail fixed guideway public transportation system means any fixed guideway system that uses rail, is operated for public transportation, is within the jurisdiction of a State, and is not subject to the jurisdiction of the Federal Railroad Administration, or any such system in engineering or construction. Rail fixed guideway public transportation systems include but are not limited to rapid rail, heavy rail, light rail, monorail, trolley, inclined plane, funicular, and automated guideway.
+[p279_c0011] Rail Transit Agency (RTA) means any entity that provides services on a rail fixed guideway public transportation system.
+[p279_c0012] Risk means the composite of predicted severity and likelihood of the potential effect of a hazard.
+[p279_c0013] Risk mitigation means a method or methods to eliminate or reduce the effects of hazards.
+[p279_c0014] _Page 9-2_
+
+## Page 280
+
+[p280_c0001] Safety Event means an unexpected outcome resulting in injury or death; damage to or loss of the facilities, equipment, rolling stock, or infrastructure of a public transportation system; or damage to the environment.
+[p280_c0002] Safety Assurance means processes within a transit agency's Safety Management System that functions to ensure the implementation and effectiveness of safety risk mitigation, and to ensure that the transit agency meets or exceeds its safety objectives through the collection, analysis, and assessment of information.
+[p280_c0003] Safety Management System (SMS) means the formal, top-down, organization-wide approach to managing safety risk and assuring the effectiveness of a transit agency's safety risk mitigation. SMS includes systematic procedures, practices, and policies for managing risks and hazards.
+[p280_c0004] Safety Management System (SMS) Executive means a Chief Safety Officer or an equivalent.
+[p280_c0005] Safety Promotion means a combination of training and communication of safety information to support SMS as applied to the transit agency's public transportation system.
+[p280_c0006] Safety Risk Assessment means the formal activity whereby a transit agency determines Safety Risk Management priorities by establishing the significance or value of its safety risks.
+[p280_c0007] Safety Risk Management means a process within a Rail Transit Agency's Safety Plan for identifying hazards and analyzing, assessing, and mitigating safety risk.
+[p280_c0008] Safety Risk Mitigation means something put in place to address a safety risk, with a goal to avoid or reduce the impact of the potential consequences of hazards in the safe delivery of transit operations.
+[p280_c0009] Serious injury means any injury which: (1) Requires hospitalization for more than 48 hours, commencing within 7 days from the date of the injury was received; (2) Results in a fracture of any bone (except simple fractures of fingers, toes, or nose); (3) Causes severe hemorrhages, nerve, muscle, or tendon damage; (4) Involves any internal organ; or (5) Involves second- or third-degree burns, or any burns affecting more than 5 percent of the body surface.
+[p280_c0010] State means a State of the United States, the District of Columbia, Puerto Rico, the Northern Mariana Islands, Guam, American Samoa, and the Virgin Islands.
+[p280_c0011] State Safety Oversight Agency (SSOA) means an agency established by a State that meets the requirements and performs the functions specified by 49 U.S.C. 5329(e) and the regulations set forth in this part.
+[p280_c0012] Vehicle means any rolling stock used on a rail fixed guideway public transportation system, including but not limited to passenger and maintenance vehicles.
+[p280_c0013] _Page 9-3_
+
+## Page 281
+
+### [p281_c0001] List of Acronyms:
+[p281_c0002]
+
+```text
+AAR Association of American Railroads ACMO Assistant Chief Mechanical Officer ANSI American National Standards Institute APP Accident Prevention Program APPGHS Accident Prevention Program Globally Harmonized System ASME American Society of Mechanical Engineers ASP Agency Safety Plan ATD Assistant Train Dispatcher ATS-A Automatic Train Supervision – A Division CAP Corrective Action Plan CBTC Communication Based Train Control CCF Configuration Change Form CCM Consultant Construction Manager CDC Centers for Disease Control and Prevention CEE&TS Car Equipment Engineering & Technical Support CES Central Electronics Shop CFR Code of Federal Regulations C.I. Coney Island CIG Capital Investment Grant C/M Configuration Management CMAA Crane Manufacturers Association of America CPB Division of Capital Planning & Budget C&D Construction & Development C/R Conductor CSE Contractor Safety Engineer CSS Contractor Safety Supervisor DCE Division of Car Equipment DCN Design Change Notice DCSM District Customer Service Manager DOB Department of Buses DOH Department of Health DOL Department of Labor DOS Department of Subways EA Emergency Alarm E&E Elevators & Escalators EAM Enterprise Asset Management EAP Employee Assistance Program ECR Engineering Change Requests EIA Electronics Industry Alliance ELM Enterprise Learning Management EMD Electronics Maintenance Division ENY East New York EPR Emergency Preparedness Response ER Emergency Relief ERP Emergency Response Plan
+```
+[p281_c0003] _Page 9-4_
+
+## Page 282
+
+[p282_c0001]
+
+```text
+EVP Executive Vice President FDNY New York City Fire Department FIRS Fire Incident Reporting System FO Field Operations FPET Fire and Passenger Evacuation Training FTA Federal Transit Administration GHS Globally Harmonized System GSM Group Station Manager GSS Group Station Superintendent HASP Health And Safety Plan HCP Hazard Communication Program HEEP Handheld Employee Evaluation Program HVAC Heating, Ventilation, and Air Conditioning ISA Independent Safety Assessor LEC Local Emergency Control MDBF Mean Distance Between Failure MIFUR Major Incident Follow Up Report MOW Maintenance of Way MS Maintenance Supervisor MTA Metropolitan Transportation Authority NIMS National Incident Management System NPTSP National Public Transportation Safety Plan NRS Non Revenue Shop NTSB National Transportation Safety Board NYC New York City NYCT New York City Transit NYPD New York Police Department NYSDOT New York State Department of Transportation OCC Operations Control Center OEM Office of Emergency Management OSHA Occupational Safety Health Administration OSS Office of System Safety PCEO Project Chief Executive Officer PDM Power Distribution Maintainer PEC Potential Employee Contact P/I Policy/Instruction PICF Part Identification Change Form PMC Project Management Consultant PMG Project Management Guideline PMP Project Management Procedures PPE Personal Protective Equipment PTASP Public Transportation Agency Safety Plan PTSB Public Transportation Safety Board QA Quality Assurance QPL Qualified Product List RAC Risk Assessment Code
+```
+[p282_c0002] _Page 9-5_
+
+## Page 283
+
+[p283_c0001]
+
+```text
+RFO Rail Field Operations ROW Right of Way RSMIS Rolling Stock Maintenance Information System RTI Rapid Transit Investigations RTK Right To Know RWP Roadway Worker Protection SAIR Supervisor's Accident Investigation Report SC Safety Coordinator SCADA Supervisory Control and Data Acquisition System SCOT Safety Culture Observation Team SDRF Safety Dispute Resolution Form SGAP Safety Goal Action Plan SIR Staten Island Railway SIRTOA Staten Island Rapid Transit Operating Authority SM Safety Manager SMART Specific, Measurable, Attainable, Relevant, Time-Bound SMAT Safety Management Audit Training SMI Scheduled Maintenance Inspections SMS Safety Management System SOP Standard Operating Procedure SSCB System Safety Certification Board SSOA State Safety Oversight Agency SSPP System Safety Program Plan SSSA Subways Surface Supervisors Association STOP Safety Training Observation Program SVP Senior Vice President TA Transit Agency T/D Train Dispatcher TEMM Transit Electromechanical Maintainers TENS Transit Employee News Service TGC Track Geometry Car T/O Train Operator TRO Third Rail Operations TSS Train Service Supervisors TWU Transport Workers Union VP Vice President WC Warranty Control WMD Weapons of Mass Destruction WVPP Workplace Violence Prevention Program
+```
+[p283_c0002] _Page 9-6_
+
+## Page 284
+
+### [p284_c0001] 2025 NYCT DOS ASP FINAL for Signatures
+[p284_c0002] Final Audit Report
+[p284_c0003] 2026-02-17
+[p284_c0004] Created: 2026-02-04 By: Bernard Jens (Bernard.Jens@nyct.com) Status: Signed Transaction ID: CBJCHBCAABAAcCE9GG3DSkHiTVUrEa_gUklGrWz5QgMC
+### [p284_c0005] "2025 NYCT DOS ASP FINAL for Signatures" History
+[p284_c0006] Document created by Bernard Jens (Bernard.Jens@nyct.com)
+[p284_c0007] 2026-02-04 - 6:53:20 PM GMT- IP address: 136.226.52.94
+[p284_c0008] Document emailed to brian.lapp@nyct.com for signature
+[p284_c0009] 2026-02-04 - 6:59:09 PM GMT
+[p284_c0010] Email viewed by brian.lapp@nyct.com
+[p284_c0011] 2026-02-04 - 9:36:54 PM GMT- IP address: 104.47.65.254
+[p284_c0012] Signer brian.lapp@nyct.com entered name at signing as Brian Lapp
+[p284_c0013] 2026-02-04 - 9:37:56 PM GMT- IP address: 136.226.80.82
+[p284_c0014] Document e-signed by Brian Lapp (brian.lapp@nyct.com)
+[p284_c0015] Signature Date: 2026-02-04 - 9:37:58 PM GMT - Time Source: server- IP address: 136.226.80.82- Signature captured from device with phone number XXXXXX6666
+[p284_c0016] Document emailed to frank.farrell@nyct.com for signature
+[p284_c0017] 2026-02-04 - 9:38:03 PM GMT
+[p284_c0018] Email viewed by frank.farrell@nyct.com
+[p284_c0019] 2026-02-04 - 9:59:39 PM GMT- IP address: 172.226.204.9
+[p284_c0020] Signer frank.farrell@nyct.com entered name at signing as Frank Farrell
+[p284_c0021] 2026-02-05 - 5:45:07 PM GMT- IP address: 136.226.48.108
+[p284_c0022] Document e-signed by Frank Farrell (frank.farrell@nyct.com)
+[p284_c0023] Signature Date: 2026-02-05 - 5:45:09 PM GMT - Time Source: server- IP address: 136.226.48.108
+[p284_c0024] Document emailed to William Amarosa (william.amarosa@nyct.com) for signature
+[p284_c0025] 2026-02-05 - 5:45:14 PM GMT
+[p284_c0026] Email viewed by William Amarosa (william.amarosa@nyct.com)
+[p284_c0027] 2026-02-09 - 5:52:21 PM GMT- IP address: 104.47.64.254
+[p284_c0028] Powered by Adobe Acrobat Sign
+
+## Page 285
+
+[p285_c0001] Document e-signed by William Amarosa (william.amarosa@nyct.com)
+[p285_c0002] Signature Date: 2026-02-09 - 6:37:46 PM GMT - Time Source: server- IP address: 136.226.52.82
+[p285_c0003] Document emailed to Demetrius Crichlow (demetrius.crichlow@nyct.com) for signature
+[p285_c0004] 2026-02-09 - 6:37:52 PM GMT
+[p285_c0005] Email viewed by Demetrius Crichlow (demetrius.crichlow@nyct.com)
+[p285_c0006] 2026-02-11 - 6:43:14 PM GMT- IP address: 62.10.205.21
+[p285_c0007] Email viewed by Demetrius Crichlow (demetrius.crichlow@nyct.com)
+[p285_c0008] 2026-02-14 - 8:05:40 PM GMT- IP address: 62.10.205.18
+[p285_c0009] Document e-signed by Demetrius Crichlow (demetrius.crichlow@nyct.com)
+[p285_c0010] Signature Date: 2026-02-17 - 8:55:21 PM GMT - Time Source: server- IP address: 136.226.48.101
+[p285_c0011] Agreement completed.
+[p285_c0012] 2026-02-17 - 8:55:21 PM GMT
+[p285_c0013] _Powered by Adobe Acrobat Sign_

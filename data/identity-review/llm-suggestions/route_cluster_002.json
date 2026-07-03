@@ -1,0 +1,66 @@
+{
+  "review_run_id": "2026-06-09T02-15-06-732Z_identity-review-run",
+  "reviewed_at": "2026-06-09T02:16:01.056Z",
+  "packet_path": "data/identity-review/packets/route_cluster_002.md",
+  "cluster_id": "route_cluster_002",
+  "kind": "route",
+  "profile_name": "deepseek-pro",
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "suggestion": {
+    "cluster_id": "route_cluster_002",
+    "kind": "route",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "route_b82-tsp-2017",
+          "route_southern-brooklyn-sbs"
+        ],
+        "reason": "Distinct service variants on the same B82 corridor: route_b82-tsp-2017 is the local B82 route (route_label 'B82', service_variant 'local', mentioned in TSP development context), while route_southern-brooklyn-sbs is the Select Bus Service overlay (route_label 'B82-SBS', launched October 2018). The canonical JSONL establishes precedent with B44 having separate records for local, limited, and SBS variants. The shared identity key 'route_b82' is a weak alias — both records reference the same base corridor but differ in route label, service variant, streets, and operational scope. The validator duplicate_identity edge at score 100 is incorrect because it treats the shared alias 'route_b82' as authoritative while ignoring the variant mismatch flagged by the 55-score edge."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "route_b82-tsp-2017",
+        "aliases": [
+          "route_b82"
+        ],
+        "reason": "route_b82 is a shared alias across both records; useful for search but does not confer merge authority across variants."
+      },
+      {
+        "record_id": "route_southern-brooklyn-sbs",
+        "aliases": [
+          "route_b82",
+          "route_b82-sbs",
+          "route_b82-sbs-ace"
+        ],
+        "reason": "These aliases capture source-level references (ACE dataset, BRT index) to the SBS variant; useful for lookup but not merge authority with the local variant."
+      }
+    ],
+    "missing_fields": [
+      {
+        "record_id": "route_b82-tsp-2017",
+        "fields": [
+          "streets",
+          "description"
+        ]
+      },
+      {
+        "record_id": "route_southern-brooklyn-sbs",
+        "fields": [
+          "service_variant",
+          "route_type"
+        ]
+      }
+    ],
+    "ambiguous": [],
+    "suggested_rules": [
+      "When two route records share a base route number (e.g., B82) but differ in service_variant (local vs sbs) with distinct route_labels (B82 vs B82-SBS), they should be treated as related-but-distinct corridor overlays, not the same canonical identity. The shared identity key on the base route alone is insufficient for merging. This mirrors the B44 local/limited/SBS pattern already present in the canonical dataset."
+    ],
+    "confidence": "high",
+    "rationale": "The two records represent the B82 local bus (mentioned in a 2017 TSP development report without SBS designation, route_label=B82, service_variant=local) and the B82-SBS Select Bus Service (launched October 2018, route_label=B82-SBS, described as 'SBS on B82 route in southern Brooklyn' with streets Bay Pkwy/Kings Hwy/Flatlands Av). The source evidence is unambiguous: the TSP report lists 'B82 in Southern Brooklyn' alongside other routes without SBS labels, while the BRT route index and ACE dataset explicitly label the SBS variant as B82-SBS. The validator duplicate_identity signal is a false positive driven solely by the shared alias 'route_b82', which both records carry. The shared_base_route edge at score 55 correctly identifies the negative signal: variant mismatch (local vs sbs)."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-09T02-15-06-740Z_3820299-299bcfcf_identity-review-run_route-cluster-002",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-09T02-15-06-741Z_2026-06-09T02-15-06-740Z_3820299-299bcfcf_identity-review-run_route-cluster-002.jsonl"
+}

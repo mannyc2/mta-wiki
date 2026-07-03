@@ -1,0 +1,222 @@
+{
+  "batch": "identity211",
+  "generated_at": "2026-06-23T12:14:24Z",
+  "candidates": [
+    {
+      "kind": "entity",
+      "keep": "entity_pat-warren-133161",
+      "alias": "entity_meeting-doc-133286-pat-warren",
+      "identity_key": "entity_pat-warren",
+      "evidence": [
+        "entity_pat-warren-133161: display_name 'Pat Warren, Department Safety Department Head'; payload entity_name 'Pat Warren', title 'Department Safety Department Head', organization 'NYCT'; evidence meeting_doc_133161#p001_c0002.",
+        "entity_meeting-doc-133286-pat-warren: display_name/entity_name 'Pat Warren'; payload title 'Department Safety Department Head'; evidence meeting_doc_133286#p001_c0002."
+      ],
+      "reason": "Exact person identity with the same uncommon name and same Department Safety Department Head role.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_sarah-meyer-open-data-plan",
+      "alias": "entity_sarah-meyer-cco-mta",
+      "identity_key": "entity_sarah-meyer",
+      "evidence": [
+        "entity_sarah-meyer-open-data-plan: display_name 'Sarah Meyer, MTA Chief Customer Officer'; payload entity_name 'Sarah Meyer', title 'Chief Customer Officer', organization 'Metropolitan Transportation Authority'; evidence open_data_plan_2022#p001_c0013 and open_data_plan_2022#p001_c0014.",
+        "entity_sarah-meyer-cco-mta: display_name 'Sarah Meyer, Chief Customer Officer, MTA'; payload entity_name 'Sarah Meyer', title 'Chief Customer Officer, MTA', organization 'Metropolitan Transportation Authority'; evidence meeting_doc_72576#p011_c0006 and meeting_doc_91596#p001_c0006."
+      ],
+      "reason": "Exact person identity; both records identify Sarah Meyer as MTA Chief Customer Officer.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_meeting-doc-102826-nyct-subway",
+      "alias": "entity_nyct-subway-system",
+      "identity_key": "entity_nyct-subway-system",
+      "evidence": [
+        "entity_meeting-doc-102826-nyct-subway: display_name 'NYCT Subway system'; payload entity_name 'NYCT Subway system', entity_type 'transit system'; evidence meeting_doc_104786#p001_c0003 and meeting_doc_102826#p001_c0003.",
+        "entity_nyct-subway-system: display_name 'NYCT Subway system'; payload entity_name 'NYCT Subway system', entity_type 'system'; evidence meeting_doc_113941#p001_c0003."
+      ],
+      "reason": "Exact system identity; both records describe the NYCT Subway system in the same crime-report context.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_pratt-center-community-development-2012",
+      "alias": "entity_pratt-center-flatbush-2025",
+      "identity_key": "entity_pratt-center",
+      "evidence": [
+        "entity_pratt-center-community-development-2012: display_name 'Pratt Center for Community Development'; merged entity_name includes 'Pratt Center'; evidence 2012_10_brt_webster_cac3_meeting_summary#p005_c0003 and flatbush_ave_cb6_jun2025#p015_c0003.",
+        "entity_pratt-center-flatbush-2025: display_name/entity_name 'Pratt Center'; description says 'Pratt Center for Community Development; conducted study on Flatbush Ave bus riders'; evidence flatbush_ave_cb8_jun2025#p004_c0002 and flatbush_ave_cb8_jun2025#p015_c0003."
+      ],
+      "reason": "Exact organization identity; the shorter Pratt Center record explicitly expands to Pratt Center for Community Development.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_meeting-doc-129116-nova-bus",
+      "alias": "entity_nova-bus-inc",
+      "identity_key": "entity_nova-bus",
+      "evidence": [
+        "entity_meeting-doc-129116-nova-bus: display_name 'Nova Bus US Inc.'; merged entity_name values include 'Nova Bus (US), Inc.', 'Nova Bus', and 'Nova Bus (US) Inc.'; evidence meeting_doc_129116#p001_c0010 and meeting_doc_193996#p005_c0007.",
+        "entity_nova-bus-inc: display_name 'Nova Bus, Inc.'; description 'Bus manufacturer for low-floor 40-foot diesel buses, Plattsburgh, New York'; evidence meeting_doc_102806#p005_c0003 and meeting_doc_100346#p012_c0003."
+      ],
+      "reason": "Same bus manufacturer identity; the names differ only by US/legal suffix variants and both appear as Nova Bus vendor/manufacturer records.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_cigna-health-life-insurance",
+      "alias": "entity_meeting151736-cigna",
+      "identity_key": "entity_cigna-health-and-life-insurance",
+      "evidence": [
+        "entity_cigna-health-life-insurance: display_name 'Cigna Health and Life Insurance Company'; alias includes entity_cigna-health-and-life-insurance-company; evidence meeting_doc_151721#p004_c0006 and meeting_doc_147016#p001_c0003.",
+        "entity_meeting151736-cigna: display_name 'Cigna Health and Life Insurance'; alias entity_cigna-health-and-life-insurance; evidence meeting_doc_151736#p005_c0005 and meeting_doc_151736#p005_c0007."
+      ],
+      "reason": "Exact company identity; one record omits the terminal 'Company' suffix but carries the same Cigna Health and Life Insurance name.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_automotive-rentals-inc-meeting-doc-192246",
+      "alias": "entity_meeting-doc-192221-automotive-rentals",
+      "identity_key": "entity_automotive-rentals",
+      "evidence": [
+        "entity_automotive-rentals-inc-meeting-doc-192246: display_name 'Automotive Rentals Inc. (ARI)'; payload organization 'Automotive Rentals Inc.'; aliases include entity_automotive-rentals-inc and entity_automotive-rentals-inc-ari; evidence meeting_doc_192246#p005_c0011 and meeting_doc_192246#p010_c0004.",
+        "entity_meeting-doc-192221-automotive-rentals: display_name/entity_name 'Automotive Rentals'; alias entity_automotive-rentals; evidence meeting_doc_192221#p001_c0003."
+      ],
+      "reason": "Same vendor identity; the alias record is the shortened form of Automotive Rentals Inc. / ARI.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_community-coach-inc",
+      "alias": "entity_community-coach-135311",
+      "identity_key": "entity_community-coach",
+      "evidence": [
+        "entity_community-coach-inc: display_name/entity_name 'Community Coach, Inc.'; entity_type 'bus company'; evidence meeting_doc_105966#p001_c0003 and meeting_doc_105966#p001_c0005.",
+        "entity_community-coach-135311: display_name/entity_name 'Community Coach'; entity_type 'bus company'; alias entity_community-coach; evidence meeting_doc_135311#p007_c0004 and meeting_doc_135311#p007_c0010."
+      ],
+      "reason": "Same bus company identity; the shorter record omits only the Inc. suffix.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_blackrock-meeting-doc-140506",
+      "alias": "entity_meeting-doc-39936-blackrock",
+      "identity_key": "entity_blackrock",
+      "evidence": [
+        "entity_blackrock-meeting-doc-140506: display_name/entity_name 'BlackRock'; entity_type 'investment management firm'; aliases include entity_blackrock; evidence meeting_doc_140506#p005_c0012 and meeting_doc_140506#p005_c0013.",
+        "entity_meeting-doc-39936-blackrock: display_name/entity_name 'BlackRock, Inc.'; alias entity_blackrock-inc; evidence meeting_doc_39936#p250_c0005."
+      ],
+      "reason": "Same investment firm identity; the second record is the incorporated legal-name form of BlackRock.",
+      "confidence": "high"
+    }
+  ],
+  "do_not_merge": [
+    {
+      "kind": "entity",
+      "records": [
+        "entity_mnr-chief-safety-officer-192151",
+        "entity_mta-chief-safety-officer-128901"
+      ],
+      "identity_key": "entity_chief-safety-officer",
+      "evidence": [
+        "entity_mnr-chief-safety-officer-192151: display_name 'Chief Safety Officer (Metro-North)'; aliases include entity_chief-safety-officer and entity_chief-safety-officer-metro-north; evidence meeting_doc_192151#p001_c0009.",
+        "entity_mta-chief-safety-officer-128901: display_name 'MTA Chief Safety Officer'; organization 'MTA'; aliases include entity_chief-safety-officer; evidence meeting_doc_128901#p001_c0006."
+      ],
+      "reason": "Generic role key collision. Metro-North Chief Safety Officer and MTA Chief Safety Officer are scope-specific offices/roles, not necessarily the same entity.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "records": [
+        "entity_meeting-doc-205631-president-bt-position",
+        "entity_mnr-president-192151"
+      ],
+      "identity_key": "entity_president",
+      "evidence": [
+        "entity_meeting-doc-205631-president-bt-position: display_name 'President (MTA Bridges and Tunnels)'; organization 'MTA Bridges and Tunnels'; aliases include entity_president and entity_president-mta-bridges-and-tunnels; evidence meeting_doc_205631#p002_c0006.",
+        "entity_mnr-president-192151: display_name 'President (Metro-North Railroad)'; aliases include entity_president and entity_president-metro-north-railroad; evidence meeting_doc_192151#p001_c0018 and meeting_doc_192151#p001_c0007."
+      ],
+      "reason": "Generic title key collision across different MTA agencies. These are separate agency leadership roles.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "records": [
+        "entity_nyct-dept-of-subways",
+        "entity_nyct-dos-dob-mtabc-201766"
+      ],
+      "identity_key": "entity_nyc-transit-department-of-subways",
+      "evidence": [
+        "entity_nyct-dept-of-subways: display_name 'NYC Transit Department of Subways'; entity_type 'department'; evidence meeting_doc_100346#p007_c0006 and meeting_doc_100346#p007_c0008.",
+        "entity_nyct-dos-dob-mtabc-201766: display_name 'NYC Transit Department of Subways, Department of Buses, and MTA Bus Company'; entity_type 'agency'; evidence meeting_doc_201766#p005_c0007."
+      ],
+      "reason": "Component versus aggregate distinction. The combined Department of Subways, Department of Buses, and MTA Bus Company record should not collapse into the Department of Subways alone.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "records": [
+        "entity_meeting-doc-143191-sofia-hubscher",
+        "entity_meeting-doc-199231-shanifah-riera-cso"
+      ],
+      "identity_key": "entity_shanifah-riera",
+      "evidence": [
+        "entity_meeting-doc-143191-sofia-hubscher: display_name/entity_name 'Sofia Hubscher' but merged field values include 'Shanifah Riera'; aliases include entity_shanifah-riera; evidence meeting_doc_143191#p003_c0002 and meeting_doc_199231#p006_c0002.",
+        "entity_meeting-doc-199231-shanifah-riera-cso: display_name 'Shanifah Riera, Chief Customer Officer NYCT'; payload entity_name 'Shanifah Riera'; evidence meeting_doc_199231#p006_c0002."
+      ],
+      "reason": "Clear contamination/false-positive key: one record is primarily Sofia Hubscher with a leaked Shanifah Riera alias, while the other is Shanifah Riera. Do not merge these person identities.",
+      "confidence": "high"
+    }
+  ],
+  "skipped": [
+    {
+      "records": [
+        "entity_lk-comstock-cpc-may2022",
+        "entity_meeting-doc-113971-lk-comstock"
+      ],
+      "identity_key": "entity_lk-comstock",
+      "reason": "Skipped despite similar names because one record says L.K. Comstock & Company LLC and the other says L.K. Comstock & Company, Inc.; this may be a legal-entity distinction and needs owner review before aliasing."
+    },
+    {
+      "records": [
+        "entity_brt-bx6-cb9-nyct-ops-planning",
+        "entity_nyct-operations-planning-brt-bx6-cb2",
+        "entity_nyct-operations-planning-brt-bx6-cb4",
+        "entity_nyct-ops-planning-brt-bx6-cb12-may2022"
+      ],
+      "identity_key": "entity_nyct-operations-planning",
+      "reason": "Skipped broad department bucket because the records are source-specific and include mixed entity_type values; likely mergeable, but not a high-confidence exact alias without a scoped department identity decision."
+    },
+    {
+      "records": [
+        "entity_h-mihaltses-cgc-oct2025",
+        "entity_h-mihaltses-committee-member"
+      ],
+      "identity_key": "entity_h-mihaltses",
+      "reason": "Skipped initial-only person duplicate. The shared initialed name and committee context are suggestive, but this batch prefers full-name or organization exact matches."
+    }
+  ],
+  "guard_summary": {
+    "source_of_truth_mutation": "none",
+    "artifact_only": "data/review_notes/codex-identity-batch211-prep.json",
+    "commands_avoided": [
+      "provider/external LLM commands",
+      "materialize",
+      "full validate",
+      "generated-output rewrite/export commands"
+    ],
+    "inputs_checked": [
+      "data/canonical/entities.jsonl",
+      "data/identity-review/validation_issues.jsonl",
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json",
+      "visible data/review_notes/codex-identity*batch*.json prep artifacts"
+    ],
+    "selection_notes": [
+      "No visible data/review_notes/codex-identity-batch210-prep.json was present in this checkout, so the guard used all visible prior identity batch prep artifacts plus current merge overrides.",
+      "Candidates avoid the obvious first validation samples and broad community-board/CAC/committee traps.",
+      "Candidates were selected from later validation issue samples or exact duplicate-like canonical entity groups, with emphasis on exact names, stable organization names, and matching roles."
+    ]
+  }
+}

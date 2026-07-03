@@ -1,0 +1,143 @@
+{
+  "run_id": "2026-06-10T23-10-10-943Z_1976810-5d9cb416_ingest_2013-02-sbs-webster-bx-cb4",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T03:25:34.191Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "bx41-sbs-webster-new",
+        "local_observation_id": "route_bx41_sbs_webster_2013_02",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_webster-ave-sbs' matches existing registry record. The observation already resolves to this canonical id; no different target record is indicated.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p011_c0002",
+            "source_quote": "Bx41 LTD → Bx41 SBS"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p035_c0003",
+            "source_quote": "Bx41 SBS"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p036_c0002",
+            "source_quote": "Bx41 SBS"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "replaced_by",
+            "subject_id": "route_bx41-ltd-webster-2012",
+            "object_id": "route_webster-ave-sbs",
+            "description": "Bx41 LTD converted to Bx41 SBS on Webster Avenue per the presentation",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb4",
+                "block_id": "p011_c0002",
+                "source_quote": "Bx41 LTD → Bx41 SBS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "bx41-local-webster-new",
+        "local_observation_id": "route_bx41_local_2013_02_webster",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_bx41-local-webster-2012' matches existing registry record. The observation already resolves to this canonical id.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p034_c0003",
+            "source_quote": "Bx41 Local"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p036_c0002",
+            "source_quote": "Bx41 SBS"
+          }
+        ]
+      },
+      {
+        "decision_id": "bx55-limited-webster-new",
+        "local_observation_id": "route_bx55_limited_webster_2013_02",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_bx55-limited-webster-2012' matches existing registry record. The observation already resolves to this canonical id.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p034_c0003",
+            "source_quote": "Bx55 (Limited) north of Fordham Plaza"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p034_c0005",
+            "source_quote": "Bx55 (Limited)"
+          }
+        ]
+      },
+      {
+        "decision_id": "bx15-local-webster-new",
+        "local_observation_id": "route_bx15_local_2013_02_webster",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_bx15-ace' matches existing registry record. The observation already resolves to this canonical id.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p034_c0005",
+            "source_quote": "Bx15 (Local)"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p035_c0005",
+            "source_quote": "Bx15 Local"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p037_c0002",
+            "source_quote": "Bx15 Local – Local stops: The Hub ↔ Fordham Plaza"
+          }
+        ]
+      },
+      {
+        "decision_id": "bx15-ltd-webster-new",
+        "local_observation_id": "route_bx15_ltd_2013_02_webster",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_bx15-ltd-webster-2012' matches existing registry record. The observation already resolves to this canonical id.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p035_c0005",
+            "source_quote": "Bx15 LTD"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p037_c0002",
+            "source_quote": "Bx15 Local – Local stops: Harlem 125th St ↔ The Hub – Limited stops: The Hub ↔ Fordham Plaza"
+          }
+        ]
+      },
+      {
+        "decision_id": "sbs-to-lga-new",
+        "local_observation_id": "route_sbs_to_lga_2013_02",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_125th-laguardia-sbs' matches existing registry record (M60 SBS – Manhattan to La Guardia Airport), which already includes this source and aliases covering this observation. The observation already resolves to this canonical id.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p035_c0003",
+            "source_quote": "SBS to LaGuardia Airport"
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-23-58-657Z_2111393-28036ef8_canonicalize_2026-06-10t23-10-10-943z-1976810-5d9cb416-ingest-2013-02-sbs-webster-bx-cb4-route-identity"
+}

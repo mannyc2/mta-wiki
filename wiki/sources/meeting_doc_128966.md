@@ -1,0 +1,238 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-128966"
+record_kind: "source"
+display_name: "EEO Report – 3rd Quarter 2023"
+source_id: "meeting_doc_128966"
+source_ids:
+  - "meeting_doc_128966"
+local_observation_id: "source_meeting_doc_128966"
+local_observation_ids:
+  - "source_meeting_doc_128966"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T13:40:25.860Z"
+submission_ids:
+  - "sub_168e5a912484c3df"
+payload:
+  authority_tier: "plan_document"
+  content_type: "report"
+  date_text: "December 18, 2023"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2023-12-18"
+    precision: "day"
+    raw_text: "December 18, 2023"
+  published_date_normalized: "2023-12-18"
+  published_date_precision: "day"
+  publisher: "MTA New York City Transit (NYCT)"
+  title: "EEO Report – 3rd Quarter 2023"
+evidence_refs:
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_128966#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_128966"
+    source_path: "raw/sources/meeting_doc_128966/blocks.jsonl"
+    source_quote: "EEO Report – 3rd Quarter 2023"
+    text_sha256: "sha256:57d5fd08c61f0441269c35cc91174b4c85b4791dd27d305d471341534d3e77bb"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_128966#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_128966"
+    source_path: "raw/sources/meeting_doc_128966/blocks.jsonl"
+    source_quote: "MTA New York City Transit (NYCT)"
+    text_sha256: "sha256:064d09be4253c78bc0cfbc5b87b151cba7abe49c2b02509fa87bb7ad78022c4e"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_128966#p001_c0003"
+    page_number: 1
+    source_id: "meeting_doc_128966"
+    source_path: "raw/sources/meeting_doc_128966/blocks.jsonl"
+    source_quote: "December 18, 2023"
+    text_sha256: "sha256:f7c70cd54d8ce2dd10c5b414944c6e6114b821ee44c4484c40941a9d8194ed87"
+    text_source: "raw_text"
+---
+
+# NYCT EEO report
+
+source_id: meeting_doc_128966
+citation: cite block ids exactly as shown in square brackets
+document: 104 block(s)
+
+## Page 1
+
+[p001_c0001] MTA New York City Transit (NYCT)
+### [p001_c0002] EEO Report – 3rd Quarter 2023
+[p001_c0003] December 18, 2023
+> [p001_c0004] The MTA logo, consisting of the letters "MTA" in white, bold, sans-serif font, is centered within a dark gray circle.
+
+## Page 2
+
+### [p002_c0001] EEO 3 rd Quarter Executive Summary
+### [p002_c0002] ■ EEO
+[p002_c0003] As of September 30, 2023 , NYCT's workforce consisted of 47,718 employees of which females represented 19% (9,228) , minorities represented 82% (39,352) , veterans represented 2% (1,005) and employees identifying as a person with a disability represented 1% (255) of the total workforce.
+[p002_c0004] In comparison with the 3 rd Quarter 2022 (3Q22):
+- [p002_c0005] ■ MTA NYCT 3 rd Quarter 2023 workforce increased by 988 employees. ■ Female representation increased by 1 percentage point with an increase of 625 employees. ■ Minority representation increased by 1 percentage point with an increase of 1,306 employees. ■ There were 37 employee hired who self-identified as a veteran and 67 employee separated that self-identified as a veteran . ■ MTA NYCT handled* a total of 291 EEO complaints; of which 82 were internal and 209 were external. During 2023, NYCT received a total of 95 EEO complaints; of which 51 were internal and 44 were external (including lawsuits). ■ MTA NYCT received four Title VI complaints and no lawsuits during this time period.
+[p002_c0006] * Complaints handled include incoming 2023 cases and cases that carried over from the prior years.
+> [p002_c0007] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark grey circle.
+
+## Page 3
+
+### [p003_c0001] EEO 3 rd Quarter Executive Summary Con't.
+- [p003_c0002] ■ MTA NYCT's action strategy to address areas of underutilization: □ Forecast Future Opportunities □ Identify specific job titles within underutilized EEO categories □ Meet with the People Department to gather historical data and determine windows of opportunities for future hiring □ Departmental Engagement □ Meet with Department Heads to discuss specific areas of underutilization □ Create customized strategies for job titles identified □ Focus on Underutilized Categories □ Predominate areas of underutilization for females is in the Protective Service and Service Maintenance categories. The Transit Property Protection Agent and Bus Operator job titles were identified as areas of greatest opportunities and strategies have been put in place to address utilization in these categories. □ Predominate areas of underutilization for minority males were in the Service Maintenance category. The Cleaner and Station Agent job titles were identified as areas of greatest opportunities. □ During the next 6 months, relevant stakeholders will meet to develop a plan specifically focused on the job titles within the underutilized categories.
+> [p003_c0003] The MTA logo, consisting of the letters "MTA" in a bold, sans-serif font, is centered within a dark grey circle.
+
+## Page 4
+
+### [p004_c0001] EEO 3 rd Quarter Executive Summary Con't.
+- [p004_c0002] ■ D&I in Motion – All Agency Employee Resource Groups Quarterly Highlights - Employee Resource Groups (ERGs) are important pillars of the MTA and contribute to a culture of inclusion and belonging while making a positive impact on the MTA. Ultimately all initiatives and programs should serve and champion members, maximize available resources, align with the MTA strategic priorities as well as the ERG goals and objectives. For the remainder of the year, we focused on the MTA Strategic Priority Revive Talent and Culture with an emphasis on belonging, health and well being. ■ All Generational – Generations in the Workforce – September 26, 2023 A conversation Across Generations – embracing generational perspectives at the MTA. The panel included members of all five generations and centered on the following conversations. What is meant by generational differences? What traits, beliefs, and life experiences shape each generation? How do world events impact generational perspectives? What challenges do generational differences present to those who manage and lead others? ■ Empowering Women in Transportation – Breast Cancer Awareness Walk - October 15, 2023 MTA employees united with the American Cancer Society for the Making Strides Against Breast Cancer Walk to raise funds and awareness, support survivors, thrivers, and caregivers and honor those we've lost. This year's walk was the 30 th anniversary and it took place in Central Park. ■ All Generational – Winter Toy and Coat Drive – November 1- December 8, 2023 A winter toy and coat drive to benefit The Henry Street Settlement and The Bronx Defenders. The Henry Street Settlement opens doors of opportunity for Lower East Side residents and other New Yorkers through social services, arts, and health care programs. The Bronx Defenders provides innovative, holistic, and client-centered criminal defense, family defense, civil legal services, social work support and advocacy to indigent people in the Bronx. ■ Veterans - Veterans Day Ceremony November 8, 2023 The Veterans ERG held a luncheon ceremony to commemorate Veterans Day. Veterans were joined by MTA Veterans, Chairman Janno Lieber, Executive Sponsors, and employees to pay tribute to members of the Armed Service who served their nation.
+> [p004_c0003] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark grey circle.
+[p004_c0004] _MTA Strategic Priority – Revive Talent and Culture_
+
+## Page 5
+
+### [p005_c0001] EEO 3 rd Quarter Executive Summary Con't.
+### [p005_c0002] ■ EEO
+[p005_c0003] MTA NYCT conducted a utilization analysis of females and minorities in its workforce. The utilization analysis consists of comparing MTA NYCT's September 30, 2023 , workforce percentages for females and minorities to the estimated availability of the females and minorities available within the relevant labor market.
+[p005_c0004] Based on the utilization analysis , MTA NYCT's 2023 workforce estimated availability targets are:
+[p005_c0005]
+
+```text
+EEO4 Category Minorities Females Black Hispanic Asian Am Ind/AL Nat NHOPI 2+Races Official & Administrators 61.4% 14.1% 34.2% 14.8% 9.3% 0.2% 0.0% 3.0% Professionals 49.8% 32.3% 20.4% 8.8% 16.7% 0.2% 0.0% 3.8% Technicians 54.3% 13.6% 20.8% 12.0% 18.7% 0.0% 0.0% 2.7% Protective Services 54.9% 25.9% 27.9% 21.1% 3.7% 0.0% 0.1% 2.2% Paraprofessionals 47.1% 43.2% 21.2% 10.9% 8.8% 4.8% 0.0% 1.2% Administrative Support 32.6% 19.7% 20.3% 4.7% 6.3% 0.0% 0.0% 1.4% Skilled Craft 24.2% 2.6% 12.7% 5.0% 5.1% 0.1% 0.0% 1.3% Service Maintenance 57.9% 18.7% 22.5% 27.5% 6.0% 0.2% 0.0% 1.8%
+```
+
+## Page 6
+
+### [p006_c0001] EEO 3 rd Quarter Executive Summary Con't.
+[p006_c0002] Based on the MTA NYCT's utilization analysis*, the underrepresentation for females and minorities occurred in the following EEO categories:
+### [p006_c0003] All Females:
+- [p006_c0004] Professions –Whites Technicians –Whites Protective Services – Hispanics, Asians, Whites Service Maintenance - Hispanics, Asians, Whites
+### [p006_c0005] Minority Males:
+- [p006_c0006] Officials and Administrators – Blacks Technicians – Hispanics Service Maintenance - Hispanics
+[p006_c0007] *The utilization analysis compares the percentages of females and minorities employed in each job group to 80 percent of the females and minorities available within the relevant labor market.
+> [p006_c0008] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is centered within a dark grey circle.
+
+## Page 7
+
+### [p007_c0001] MTA New York City Transit (NYCT)
+### [p007_c0002] Workforce as of September 30, 2023
+> [p007_c0003] The MTA logo, consisting of the letters "MTA" in white, bold, sans-serif font, is centered within a dark gray circle.
+
+## Page 8
+
+### [p008_c0001] Definitions of EEO Job Categories
+- [p008_c0002] ❑ Officials & Administrators - Occupations in which employees set broad policies, exercise overall responsibility for execution of these policies, or direct individual departments or special phases of the agency's operations, or provide specialized consultation on a regional, district or area basis. ❑ Professionals - Occupations which require specialized and theoretical knowledge which is usually acquired through college training or through work experience and other training which provides comparable knowledge. ❑ Technicians - Occupations which require a combination of basic scientific or technical knowledge and manual skill which can be obtained through specialized post-secondary school education or through equivalent on-the-job training. ❑ Protective Services - Occupations in which workers are entrusted with public safety, security and protection from destructive forces. ❑ Paraprofessionals - Occupations in which workers perform some of the duties of a professional or technician in a supportive role, which usually require less formal training and/or experience normally required for professional or technical status. ❑ Administrative Support - Occupations in which workers are responsible for internal and external communication, recording and retrieval of data and/or information and other paperwork required in an office. ❑ Skilled Craft - Occupations in which workers perform jobs which require special manual skill and a thorough and comprehensive knowledge of the process involved in the work which is acquired through on-the-job training and experience or through apprenticeship or other formal training programs. ❑ Service Maintenance - Occupations in which workers perform duties which result in or contribute to the comfort, convenience, hygiene or safety of the general public or which contribute to the upkeep and care of buildings, facilities or grounds of public property.
+[p008_c0003] _The logo for the Metropolitan Transportation Authority (MTA) is located in the bottom right corner. It consists of a dark grey circle with the letters 'MTA' in white, bold, sans-serif font._
+
+## Page 9
+
+### [p009_c0001] MTA NYCT Workforce
+[p009_c0002] The table below is a snapshot of MTA NYCT's workforce by race/ethnicity, gender and veterans as of September 30, 2023.
+[p009_c0003]
+
+```text
+JOB CATEGORY TOTAL Minorities WHITES BLACKS HISPANICS ASIANS AJ/AN* NHOPi** 2+ RACES VETERANS PWD*** # % # % # % # % # % # % # % # % # % # % # % Officials & Administrators 1,605 1116 489 549 262 191 4 2 108 101 46 F 373 23% 315 20% 58 4% 207 13% 56 3% 32 12% 0 0% 0 0% 20 1% 6 0% 15 1% M 1,232 77% 801 50% 431 27% 342 21% 206 13% 159 10% 4 0% 0 0% 88 5% 95 6% 31 2% Professionals 984 752 232 315 122 248 2 1 64 19 42 F 413 42% 359 36% 54 5% 186 19% 60 6% 83 8% 1 0% 1 0% 28 3% 3 0% 20 2% M 571 58% 393 40% 178 18% 129 13% 62 6% 165 17% 1 0% 0 0% 36 4% 16 2% 22 2% Technicians 149 116 33 51 17 44 0 0 4 2 3 F 25 17% 22 15% 3 2% 16 11% 4 2% 1 0% 0 0% 0 0% 0 0% 1 1% 0 0% M 124 83% 94 63% 30 20% 35 23% 13 9% 42 28% 0 0% 0 0% 4 3% 1 1% 3 2% Protective Services 883 754 129 426 239 55 0 2 32 60 6 F 151 17% 142 16% 9 1% 100 11% 31 4% 1 0% 0 0% 0 0% 10 1% 4 0% 1 0% M 732 83% 612 69% 120 14% 326 37% 208 24% 54 5% 0 0% 2 0% 22 2% 56 6% 5 1% Paraprofessionals 8 7 1 4 2 0 1 0 0 0 0 F 7 88% 6 75% 1 13% 3 38% 2 25% 0 0% 1 13% 0 0% 0 0% 0 0% 0 0% M 1 13% 1 13% 0 0% 1 13% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% Administrative Support 996 935 61 529 138 230 5 0 33 7 14 F 533 54% 510 51% 23 2% 350 35% 77 8% 63 6% 1 0% 0 0% 19 2% 4 0% 9 1% M 463 46% 425 43% 38 4% 179 18% 61 6% 167 17% 4 0% 0 0% 14 1% 3 0% 5 1% Skilled Craft 15,828 11196 4,632 5,394 2,156 2,851 72 7 716 336 45 F 508 3% 474 3% 34 0% 347 2% 69 0% 32 0% 0 0% 1 0% 25 0% 2 0% 5 0% M 15,320 97% 10722 68% 4,598 29% 5,047 32% 2,087 13% 2,819 18% 72 0% 6 0% 691 4% 334 2% 40 0% Service Maintenance 27,265 24476 2,789 15,469 6,092 1,994 62 4 855 480 99 F 7,218 26% 6953 26% 265 1% 5,211 19% 1,312 5% 187 1% 19 0% 2 0% 222 1% 58 0% 34 0% M 20,047 74% 17523 64% 2,524 9% 10,258 38% 4,780 18% 1,807 7% 43 0% 2 0% 633 2% 422 2% 65 0% Total 47,718 39,352 8,366 22,737 9,028 5,613 146 16 1,812 1,005 255
+```
+[p009_c0004] ***Person with Disability
+[p009_c0005] **Native Hawaiian Other Pacific Islander
+[p009_c0006] * American Indian/Alaskan Native
+[p009_c0007] Note: All percentages have been rounded up to the nearest whole number.
+
+## Page 10
+
+### [p010_c0001] MTA NYCT Workforce as of September 30, 2023
+[p010_c0002] _WORKFORCE BY SEX_
+> [p010_c0003] Sex Percentage Count Males 81% 38,490 Females 19% 9,228
+[p010_c0004] _WORKFORCE BY RACE/ETHNICITY_
+> [p010_c0005] Race/Ethnicity Percentage Count Blacks 48% 22,737 Whites 18% 8,366 Hispanics 19% 9,028 Asians 12% 5,613 2+ Races 4% 1,812
+[p010_c0006] MTA NYCT employed 47,718 employees: 19% (9,228) of the workforce were females , 82% (39,352) minorities, 2% (1,005) veterans and 1% (255) self identified as a person with a disability .
+- [p010_c0007] ❑ The percentage of females employed in the workforce increased with a net change of 625 employees when compared to 3 rd Quarter 2022. ❑ The percentage of minorities in the workforce has increased by one percentage point with a net change of 1,306 employees when compared to 3 rd Quarter 2022.
+
+## Page 11
+
+### [p011_c0001] MTA NYCT Underutilization Analysis
+[p011_c0002] MTA NYCT has conducted an availability analysis of females and minorities in its workforce. The availability analysis consists of comparing MTA NYCT's September 30, 2023, workforce percentages for females and minorities to 80 percent of the females and minorities available within the relevant labor market based on the U.S. Census.
+[p011_c0003] * The Whole-Person Rule was used to determine underutilization, where Actual % < Estimated Availability % by 1 whole person
+[p011_c0004]
+
+```text
+JOB CATEGORY Sex BLACKS HISPANIC ASIANS AI/AN** NHOP*** 2+ RACES WHITES Est Actual Est Actual Est Actual Est Actual Est Actual Est Actual Est Actual Avail % Avail % Avail % Avail % Avail % Avail % Avail % Officials & Administrators F 9% 13% 2% 3% 1% 2% 0% 0% 0% 0% 0% 1% 1% 4% M 25% 21% 12% 13% 9% 10% 0% 0% 0% 0% 2% 5% Professionals F 11% 19% 4% 6% 6% 8% 0% 0% 0% 0% 1% 3% 9% 5% M 9% 13% 5% 6% 11% 11% 0% 0% 0% 0% 1% 4% Technicians F 6% 11% 2% 3% 2% 1%* 0% 0% 0% 0% 0% 0% 3% 2% M 15% 23% 10% 9% 17% 28% 0% 0% 0% 0% 0% 3% Protective Services F 9% 11% 7% 4% 1% 0% 0% 0% 0% 0% 0% 1% 9% 1% M 19% 37% 14% 24% 3% 6% 0% 0% 0% 0% 0% 2%
+```
+[p011_c0005] **American Indian/Alaskan Native
+[p011_c0006] ***Native Hawaiian Other Pacific Islander
+[p011_c0007] Note: Pursuant to FTA Circular 4704.1A EEO Requirements and Guidelines, white males have been excluded from the availability analysis.
+[p011_c0008] Percentages highlighted in green indicate underutilization
+
+## Page 12
+
+### [p012_c0001] MTA NYCT Underutilization Analysis Con't
+[p012_c0002] * The Whole-Person Rule was used to determine underutilization, where Actual % < Estimated Availability % by 1 whole person
+[p012_c0003]
+
+```text
+JOB CATEGORY Sex BLACKS HISPANIC ASIANS AI/AN** NHOPl*** 2+ RACES WHITES Est Actual % Est Actual % Est Actual % Est Actual % Est Actual % Est Actual % Est Actual % Paraprofessionals F 13% 38% 8% 25% 2% 0%* 5% 13% 0% 0% 0% 0% 15% 13% M 8% 13% 3% 0% 7% 0%* 0% 0% 0% 0% 0% 0% Administrative Support F 14% 35% 3% 8% 1% 6% 0% 0% 0% 0% 0% 2% 1% 2% M 6% 18% 2% 6% 5% 17% 0% 0% 0% 0% 0% 1% Skilled Craft F 2% 2% 0% 0% 0% 0% 0% 0% 0% 0% 0% 0% 0% 0% M 11% 32% 5% 13% 5% 18% 0% 0% 0% 0% 1% 4% Service Maintenance F 6% 19% 7% 5% 1% 1% 0% 0% 0% 0% 0% 1% 4% 1% M 17% 38% 21% 18% 5% 7% 0% 0% 0% 0% 0% 2%
+```
+[p012_c0004] **American Indian/Alaskan Native
+[p012_c0005] ***Native Hawaiian Other Pacific Islander
+[p012_c0006] Note: Pursuant to FTA Circular 4704.1A EEO Requirements and Guidelines, white males have been excluded from the availability analysis.
+[p012_c0007] Percentages highlighted in green indicate underutilization
+
+## Page 13
+
+[p013_c0001] MTA New York City Transit (NYCT)
+### [p013_c0002] New Hires and Separation
+[p013_c0003] January 1, 2023 – September 30, 2023
+> [p013_c0004] The MTA logo, consisting of the letters "MTA" in white, bold, sans-serif font, is centered within a dark gray circle.
+
+## Page 14
+
+### [p014_c0001] MTA NYCT New Hires and Separations by Sex January 1, 2023 to September 30, 2023
+[p014_c0002] _NEW HIRES BY SEX (TOTAL = 3,053)_
+> [p014_c0003] Sex Percentage Count Males 70% 2,127 Females 30% 926
+[p014_c0004] _SEPARATION BY SEX (TOTAL = 2,195)_
+> [p014_c0005] Sex Percentage Count Males 78% 1,719 Females 22% 476
+[p014_c0006] As of the 3 rd Quarter 2023, MTA NYCT hired 3,053 employees, 926 females and 2,127 males. During this same time period, 2,195 employees separated from MTA NYCT, 476 females and 1,719 males.
+- [p014_c0007] ❑ The result was a net increase of 450 female and 408 male employees. ❑ The number of employees who self-identified as veterans decreased by 30 employees. There were 37 veterans hired and 67 veterans separated during 2023.
+
+## Page 15
+
+### [p015_c0001] MTA NYCT
+### [p015_c0002] New Hires and Separations by Race/Ethnicity
+[p015_c0003] _NEW HIRE BY RACE/ETHNICITY (TOTAL = 3,053)_
+> [p015_c0004] Race/Ethnicity Percentage Count Blacks 57% 1,745 Whites 8% 245 Hispanics 20% 608 Asians 10% 305 2+ Races 4% 134 Whites 8% 245
+[p015_c0005] _SEPARATION BY RACE/ETHNICITY (TOTAL = 2,195)_
+> [p015_c0006] Race/Ethnicity Percentage Count Blacks 50% 1,110 Whites 20% 428 Hispanics 18% 390 Asians 9% 203 2+ Races 3% 71 Whites 20% 428
+[p015_c0007] During the 3 rd Quarter 2023, MTA NYCT hired 3,053 employees, 2,809 minorities and 244 non- minorities. During this same time period 2,195 employees separated from MTA NYCT, 1,767 minorities and 428 non-minorities.
+- [p015_c0008] □ The result was a net increase of 1,042 minority employees. □ The number of employees that self identified as a person with a disability decreased by 5 employees. There were 12 persons with disabilities hired and 17 persons with disabilities separated during 2023.
+
+## Page 16
+
+[p016_c0001] MTA New York City Transit (NYCT)
+### [p016_c0002] Complaints and Lawsuits
+[p016_c0003] January 1, 2023 – September 30, 2023
+> [p016_c0004] The MTA logo, consisting of the letters "MTA" in white, bold, sans-serif font, is centered within a dark gray circle.
+
+## Page 17
+
+### [p017_c0001] MTA NYCT
+### [p017_c0002] EEO Internal and External Discrimination Complaints by Bases January 1, 2023 to September 30, 2023
+[p017_c0003] _INTERNAL EEO COMPLAINTS BY BASES_
+> [p017_c0004] Base Count Percentage Race/Color 21 20% Sexual Harassment 21 20% Age 8 8% Gender 9 8% Religion 3 3% National Origin 14 13% Disability 8 8% Retaliation 15 15% Other 5 5%
+[p017_c0005] _EXTERNAL EEO COMPLAINTS BY BASES_
+> [p017_c0006] Base Count Percentage Retaliation 13 28% Disability 19 19% National Origin 6 9% Religion 1 1% Gender 6 9% Age 7 10% Sexual Harassment 7 10% Race/Color 8 10% Other 12 12%
+[p017_c0007] 84 EEO complaints were filed* citing 173 separate bases, and 11 lawsuits were filed.
+- [p017_c0008] ☐ 51 filed internal complaints. ☐ 44 filed external complaints, including lawsuits. ☐ The most frequently cited basis internally was Sexual Harassment.
+[p017_c0009] Note: *Formal complaints can be filed alleging multiple bases. Additionally, numerous incoming matters were also handled during this time
+
+## Page 18
+
+### [p018_c0001] MTA NYCT Internal/External Title VI and Related Discrimination Complaints by Bases January 1, 2023 to September 30, 2023
+[p018_c0002] _TITLE VI AND RELATED DISCRIMINATION COMPLAINTS_
+> [p018_c0003] Basis Count Percentage Sex 1 25% Race 3 75%
+- [p018_c0004] 4 Title VI and related discrimination complaints were filed citing 4 separate bases. ❑ 3 Title VI complaints were filed. ❑ 1 related discrimination complaint** was filed. ❑ The most frequently cited basis was Race.
+[p018_c0005] Note: *Formal complaints can be filed alleging multiple bases.
+[p018_c0006] Note: **Related Discrimination complaints are filed by customers based on age, disability, religion and sex.

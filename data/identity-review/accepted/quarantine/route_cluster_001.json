@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "review_state": "quarantined",
+  "accepted_at": "2026-06-08T21:21:36.731Z",
+  "reviewer": "codex-audit-2026-06-08",
+  "source": "audit_needs_correction_before_promotion",
+  "cluster_id": "route_cluster_001",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_001.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_001.json",
+  "source_review_run_id": "2026-06-08T21-02-43-665Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Flash",
+  "quarantine": {
+    "blocker": "route_plus_policy_required",
+    "note": "Keep B44 local/limited/SBS distinctions, but revisit route_b44-plus because ACE/MTA plus route ids may be SBS-coded dataset route ids rather than distinct plus variants."
+  },
+  "original_action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 6,
+    "weak_alias_count": 2,
+    "missing_field_count": 2,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "original_merge_groups": [],
+  "original_do_not_merge": [
+    {
+      "record_ids": [
+        "route_b44-limited",
+        "route_b44-local"
+      ],
+      "reason": "route_b44-limited describes the historical B44 Limited limited-stop service that was replaced by B44 SBS in November 2013 (route_type: limited_stop_bus, description: 'Predecessor limited-stop service...replaced by B44 SBS'), while route_b44-local describes the current B44 Local bus service (route_type: local_bus, description: 'B44 local bus service'). These are distinct service variants on the same corridor. The limited record's inclusion of route_b44-local as an identity key is an error from the materializer merging the draft plan observation into the limited record."
+    },
+    {
+      "record_ids": [
+        "route_b44-limited",
+        "route_b44-plus"
+      ],
+      "reason": "route_b44-limited is the historical B44 Limited local-stop service (route_id: B44, route_type: limited_stop_bus), while route_b44-plus is the ACE dataset code 'B44+' (route_id: B44+, route_label: B44+) with no route_type or description. The plus-label variant is distinct from the limited-stop variant. Shared identity key 'route_b44' is a broad shared_base_route label insufficient to override variant mismatch."
+    },
+    {
+      "record_ids": [
+        "route_b44-limited",
+        "route_b44-sbs"
+      ],
+      "reason": "route_b44-limited is explicitly described as the 'Predecessor limited-stop service...replaced by B44 SBS in November 2013' — a predecessor relationship, not the same identity. route_b44-sbs is the current Select Bus Service (route_type: select_bus_service). They share base route B44 but are different service types, with one historical and one current."
+    },
+    {
+      "record_ids": [
+        "route_b44-local",
+        "route_b44-plus"
+      ],
+      "reason": "route_b44-local is the current B44 Local bus (route_id: B44, route_type: local_bus), while route_b44-plus is the ACE dataset code 'B44+' (route_id: B44+, route_label: B44+). Variant mismatch: local vs plus-label. No evidence links B44+ specifically to the local variant."
+    },
+    {
+      "record_ids": [
+        "route_b44-local",
+        "route_b44-sbs"
+      ],
+      "reason": "Different service types: B44 Local (route_type: local_bus) vs B44 Select Bus Service (route_type: select_bus_service). These are distinct variants operating on overlapping but not identical corridors (the SBS uses Rogers/Bedford Avenues northbound while the local uses Nostrand/New York Avenues). Shared base route B44 is insufficient."
+    },
+    {
+      "record_ids": [
+        "route_b44-plus",
+        "route_b44-sbs"
+      ],
+      "reason": "route_b44-plus is the ACE dataset code 'B44+' (route_id: B44+), while route_b44-sbs is the B44 Select Bus Service (route_id: B44 / B44-SBS, route_type: select_bus_service). Variant mismatch: plus-label vs ace-dataset/sbs. The ACE dataset code does not identify which specific variant it applies to."
+    }
+  ],
+  "original_rationale": "All four records share a base route number (B44) but represent distinct service variants: historical limited-stop (pre-SBS predecessor), current local, ACE dataset code (B44+), and current Select Bus Service. The record_aliases on route_b44-limited incorrectly claim route_b44-local as an alias due to materializer conflation of the draft plan observation; the actual payloads, route_types, and descriptions confirm they are different services. The packet's negative signals (variant mismatches) and review reasons correctly identify that these are distinct identities that should not be merged.",
+  "required_follow_up": [
+    "Resolve blocker before creating accepted merge/do-not-merge overrides.",
+    "Do not apply this packet directly to data/identity-overrides/merges.json."
+  ]
+}

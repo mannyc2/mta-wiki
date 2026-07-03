@@ -1,0 +1,621 @@
+{
+  "note_id": "codex-identity-batch154-prep",
+  "batch": "identity154",
+  "created_at": "2026-06-23T07:38:15Z",
+  "scope": {
+    "global_kind": "project",
+    "selection_note": "Codex-only deterministic prep from current data/canonical/projects.jsonl plus current identity merge and do-not-merge guards. Proposals are project-only, live in current canonical JSONL, not already project merge aliases, not target chains, and avoid broad program-vs-expansion, amendment-vs-program, and same-name different phase/stage traps."
+  },
+  "prepared_count": 11,
+  "proposed_aliases": [
+    {
+      "global_kind": "project",
+      "alias_id": "project_43-stations-sgr-phase1",
+      "target_id": "project_43-stations-sogr-design-build-oct2023",
+      "canonical_id": "project_43-stations-sogr-design-build-oct2023",
+      "confidence": "high",
+      "validator_duplicate_key": "project_progressive-design-build-services-for-state-of-good-repair-work-at-various-stations",
+      "reason": "Both current records describe the same progressive design-build state-of-good-repair project for structural repairs across 43 NYCT stations in Manhattan and Brooklyn. The shared project name is exact, and both payload descriptions identify the same Phase 1 design/design-build scope.",
+      "validator_evidence": {
+        "shared_identity_keys": [
+          "project_progressive-design-build-services-for-state-of-good-repair-work-at-various-stations"
+        ],
+        "duplicate_issue": "Global project records project_43-stations-sgr-phase1 and project_43-stations-sogr-design-build-oct2023 share identity key project_progressive-design-build-services-for-state-of-good-repair-work-at-various-stations.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "State of Good Repair Work at Various Stations",
+          "payload_fields": {
+            "project_name": "Progressive Design-Build Services for State of Good Repair Work at Various Stations",
+            "project_type": "design-build",
+            "status": "Phase 1 awarded"
+          },
+          "evidence_refs": [
+            "meeting_doc_124291#p038_c0009",
+            "meeting_doc_124291#p039_c0008"
+          ]
+        },
+        "target": {
+          "display_name": "43 NYCT Stations State of Good Repair - Design-Build",
+          "payload_fields": {
+            "project_name": "Progressive Design-Build Services for State of Good Repair Work at Various Stations",
+            "project_type": "state of good repair",
+            "status": "Phase 1 design approved"
+          },
+          "evidence_refs": [
+            "meeting_doc_124731#p024_c0007"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_grand-central-circulation-improvements",
+      "target_id": "project_grand-central-circulation-201601",
+      "canonical_id": "project_grand-central-circulation-201601",
+      "confidence": "high",
+      "validator_duplicate_key": "project_grand-central-circulation-improvements",
+      "reason": "Both records have the same project_name, completed status, and matching description of Grand Central circulation links among the 4/5/6, 7, Times Square Shuttle, One Vanderbilt transit hall, and Grand Central Madison.",
+      "validator_evidence": {
+        "shared_identity_keys": [
+          "project_grand-central-circulation-improvements"
+        ],
+        "duplicate_issue": "Global project records project_grand-central-circulation-improvements and project_grand-central-circulation-201601 share identity key project_grand-central-circulation-improvements.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "project_grand_central_circulation_improvements",
+          "payload_fields": {
+            "project_name": "Grand Central Circulation Improvements",
+            "status": "completed"
+          },
+          "evidence_refs": [
+            "meeting_doc_205556#p013_c0006"
+          ]
+        },
+        "target": {
+          "display_name": "Grand Central Circulation Improvements",
+          "payload_fields": {
+            "project_name": "Grand Central Circulation Improvements",
+            "project_type": "infrastructure_improvement",
+            "status": "completed"
+          },
+          "evidence_refs": [
+            "meeting_doc_201601#p013_c0006"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_hartsdale-station-ada-improvements",
+      "target_id": "project_hartsdale-station-improvements",
+      "canonical_id": "project_hartsdale-station-improvements",
+      "confidence": "high",
+      "validator_duplicate_key": "project_hartsdale-station-ada-improvements",
+      "reason": "Both records describe the same Hartsdale Station ADA/accessibility improvement project: two elevators, mechanical rooms, expanded sidewalks, and new curbing for the inbound and outbound station sides in Hartsdale/Town of Greenburgh.",
+      "validator_evidence": {
+        "shared_identity_keys": [
+          "project_hartsdale-station-ada-improvements"
+        ],
+        "duplicate_issue": "Global project records project_hartsdale-station-ada-improvements and project_hartsdale-station-improvements share identity key project_hartsdale-station-ada-improvements.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Metro-North is investing in infrastructure improvements at the Hartsdale Station to support ADA accessibility and enhance pedestrian flow. The Project includes 2 new elevators, mechanical rooms, expanded sidewalks and new curbing, for both the inbound and outbound sides of the station with connections to the existing pedestrian overpass.",
+          "payload_fields": {
+            "project_name": "Hartsdale Station ADA Improvements",
+            "location": "Hartsdale, Town of Greenburgh, New York"
+          },
+          "evidence_refs": [
+            "meeting_doc_30001#p127_c0008",
+            "meeting_doc_30001#p127_c0010"
+          ]
+        },
+        "target": {
+          "display_name": "Hartsdale Station ADA Improvements",
+          "payload_fields": {
+            "project_name": "Hartsdale Station Improvement Project",
+            "location": "Hartsdale, Town of Greenburgh, New York"
+          },
+          "evidence_refs": [
+            "meeting_doc_30006#p145_c0008"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-104781-faster-cleaner-safer",
+      "target_id": "project_faster-cleaner-safer-plan",
+      "canonical_id": "project_faster-cleaner-safer-plan",
+      "confidence": "high",
+      "validator_duplicate_key": "project_faster-cleaner-safer-plan",
+      "reason": "Both records identify NYC Transit's Faster, Cleaner, Safer strategic/action plan. The target has the compact stable id; the alias record names the same plan with the expanded 'and Safer Strategic Action Plan' title.",
+      "validator_evidence": {
+        "shared_identity_keys": [
+          "project_faster-cleaner-safer-plan"
+        ],
+        "duplicate_issue": "Global project records project_meeting-doc-104781-faster-cleaner-safer and project_faster-cleaner-safer-plan share identity key project_faster-cleaner-safer-plan.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Faster, Cleaner and Safer Strategic Action Plan",
+          "payload_fields": {
+            "project_name": "Faster, Cleaner and Safer Strategic Action Plan",
+            "project_type": "strategic plan",
+            "status": "active"
+          },
+          "evidence_refs": [
+            "meeting_doc_104781#p003_c0009",
+            "meeting_doc_108046#p001_c0001"
+          ]
+        },
+        "target": {
+          "display_name": "Faster, Cleaner, Safer Plan",
+          "payload_fields": {
+            "project_name": "Faster, Cleaner, Safer Plan",
+            "project_type": "efficiency plan",
+            "status": "active"
+          },
+          "evidence_refs": [
+            "meeting_doc_115371#p003_c0001",
+            "meeting_doc_115371#p003_c0002"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_dei-strategic-plan-meeting-doc-160081",
+      "target_id": "project_mta-five-year-dei-strategic-plan",
+      "canonical_id": "project_mta-five-year-dei-strategic-plan",
+      "confidence": "high",
+      "validator_duplicate_key": "project_mta-five-year-dei-strategic-plan",
+      "reason": "Both records identify MTA's first five-year Diversity, Equity, and Inclusion strategic plan covering 2023-2028 and developed under New York State Executive Order 187.",
+      "validator_evidence": {
+        "shared_identity_keys": [
+          "project_mta-five-year-dei-strategic-plan"
+        ],
+        "duplicate_issue": "Global project records project_dei-strategic-plan-meeting-doc-160081 and project_mta-five-year-dei-strategic-plan share identity key project_mta-five-year-dei-strategic-plan.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "MTA Five-Year DEI Strategic Plan",
+          "payload_fields": {
+            "project_name": "Five-Year DEI Strategic Plan",
+            "project_type": "strategic plan",
+            "status": "active"
+          },
+          "evidence_refs": [
+            "meeting_doc_160081#p004_c0006",
+            "meeting_doc_151596#p013_c0001"
+          ]
+        },
+        "target": {
+          "display_name": "MTA Five Year Diversity, Equity, and Inclusion Strategic Plan",
+          "payload_fields": {
+            "project_name": "MTA Five Year Diversity, Equity, and Inclusion Strategic Plan",
+            "project_type": "strategic plan",
+            "status": "active"
+          },
+          "evidence_refs": [
+            "meeting_doc_138186#p029_c0005",
+            "meeting_doc_138186#p031_c0003"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_mta-fuel-hedging-program",
+      "target_id": "project_fuel-hedge-program-2022",
+      "canonical_id": "project_fuel-hedge-program-2022",
+      "confidence": "high",
+      "validator_duplicate_key": "project_fuel-hedging-program",
+      "reason": "Both records identify the same MTA Fuel Hedging/Fuel Hedge Program for ULSD and compressed natural gas budget-risk mitigation. The target already aggregates multiple fuel hedge source records.",
+      "validator_evidence": {
+        "shared_identity_keys": [
+          "project_fuel-hedging-program"
+        ],
+        "duplicate_issue": "Global project records project_mta-fuel-hedging-program and project_fuel-hedge-program-2022 share identity key project_fuel-hedging-program.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Fuel Hedging Program",
+          "payload_fields": {
+            "project_name": "Fuel Hedging Program",
+            "project_type": "hedging program"
+          },
+          "evidence_refs": [
+            "meeting_doc_124151#p002_c0003",
+            "meeting_doc_135361#p002_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "Fuel Hedge Program",
+          "payload_fields": {
+            "project_name": "Fuel Hedge Program",
+            "project_type": "fuel hedging program",
+            "status": "active"
+          },
+          "evidence_refs": [
+            "meeting_doc_104726#p001_c0001",
+            "meeting_doc_121006#p001_c0001"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_qbl-west-cbtc-meeting-doc-135341",
+      "target_id": "project_qbl-west-cbtc",
+      "canonical_id": "project_qbl-west-cbtc",
+      "confidence": "high",
+      "validator_duplicate_key": "project_queens-blvd-line-west-cbtc-qbl-w",
+      "reason": "Both records identify Queens Boulevard Line West CBTC/QBL-W, with matching Union Turnpike-to-50 St/8 Av and 21 St/Queensbridge scope and 335 R-160 units.",
+      "validator_evidence": {
+        "shared_identity_keys": [
+          "project_queens-blvd-line-west-cbtc-qbl-w"
+        ],
+        "duplicate_issue": "Global project records project_qbl-west-cbtc-meeting-doc-135341 and project_qbl-west-cbtc share identity key project_queens-blvd-line-west-cbtc-qbl-w.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Queens Blvd Line West CBTC (QBL-W)",
+          "payload_fields": {
+            "project_name": "Queens Blvd Line West CBTC (QBL-W)",
+            "status": "in construction"
+          },
+          "evidence_refs": [
+            "meeting_doc_135341#p009_c0010",
+            "meeting_doc_135341#p009_c0012"
+          ]
+        },
+        "target": {
+          "display_name": "Queens Boulevard Line West CBTC",
+          "payload_fields": {
+            "project_name": "Queens Blvd Line West CBTC",
+            "project_type": "Communications Based Train Control"
+          },
+          "evidence_refs": [
+            "meeting_doc_100281#p012_c0011",
+            "meeting_doc_113971#p011_c0009"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_jci-phase-ii",
+      "target_id": "project_jamaica-capacity-improvement-phase2",
+      "canonical_id": "project_jamaica-capacity-improvement-phase2",
+      "confidence": "high",
+      "validator_duplicate_key": "project_jamaica-capacity-improvement-phase-ii",
+      "reason": "Both records identify Jamaica Capacity Improvement/JCI Phase II and describe the same LIRR project to increase train throughput, decrease Jamaica travel times, lengthen platforms, upgrade rail systems, and perform state-of-good-repair work.",
+      "validator_evidence": {
+        "shared_identity_keys": [
+          "project_jamaica-capacity-improvement-phase-ii"
+        ],
+        "duplicate_issue": "Global project records project_jci-phase-ii and project_jamaica-capacity-improvement-phase2 share identity key project_jamaica-capacity-improvement-phase-ii.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Jamaica Capacity Improvement Phase II",
+          "payload_fields": {
+            "project_name": "Jamaica Capacity Improvement (JCI) Phase II",
+            "status": "advancing"
+          },
+          "evidence_refs": [
+            "meeting_doc_100276#p113_c0010"
+          ]
+        },
+        "target": {
+          "display_name": "Jamaica Capacity Improvement Project Phase 2",
+          "payload_fields": {
+            "project_name": "Jamaica Capacity Improvement Project",
+            "project_type": "capital project",
+            "status": "proposed action"
+          },
+          "evidence_refs": [
+            "meeting_doc_102786#p012_c0005",
+            "meeting_doc_101026#p084_c0010"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_vn11-brooklyn-approach-vnb",
+      "target_id": "project_vnb-brooklyn-approach-reconstruction",
+      "canonical_id": "project_vnb-brooklyn-approach-reconstruction",
+      "confidence": "high",
+      "validator_duplicate_key": "project_vn-11-brooklyn-approach-reconstruction-at-verrazzano-narrows-bridge",
+      "reason": "Both records identify VN-11/Brooklyn Approach Reconstruction at the Verrazzano-Narrows Bridge under the Moving NY Forward context, including the Brooklyn approach/fourth-lane reconstruction scope.",
+      "validator_evidence": {
+        "shared_identity_keys": [
+          "project_vn-11-brooklyn-approach-reconstruction-at-verrazzano-narrows-bridge"
+        ],
+        "duplicate_issue": "Global project records project_vn11-brooklyn-approach-vnb and project_vnb-brooklyn-approach-reconstruction share identity key project_vn-11-brooklyn-approach-reconstruction-at-verrazzano-narrows-bridge.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "VN-11 Brooklyn Approach Reconstruction at Verrazzano-Narrows Bridge",
+          "payload_fields": {
+            "project_name": "VN-11: Brooklyn Approach Reconstruction at the Verrazzano-Narrows Bridge",
+            "status": "planned completion 2021"
+          },
+          "evidence_refs": [
+            "meeting_doc_29951#p066_c0013"
+          ]
+        },
+        "target": {
+          "display_name": "Brooklyn Approach Reconstruction (Verrazzano-Narrows Bridge)",
+          "payload_fields": {
+            "project_name": "Brooklyn Approach Reconstruction",
+            "status": "substantially complete"
+          },
+          "evidence_refs": [
+            "meeting_doc_29946#p013_c0015",
+            "meeting_doc_52711#p007_c0006"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_vnb-cable-dehum-176356",
+      "target_id": "project_verrazzano-cable-dehumid-meeting-doc-114211",
+      "canonical_id": "project_verrazzano-cable-dehumid-meeting-doc-114211",
+      "confidence": "high",
+      "validator_duplicate_key": "project_verrazzano-narrows-bridge-main-cable-dehumidification",
+      "reason": "Both records identify the Verrazzano-Narrows Bridge main cable dehumidification design-build project, including installation of cable dehumidification systems on the bridge's main cables.",
+      "validator_evidence": {
+        "shared_identity_keys": [
+          "project_verrazzano-narrows-bridge-main-cable-dehumidification"
+        ],
+        "duplicate_issue": "Global project records project_vnb-cable-dehum-176356 and project_verrazzano-cable-dehumid-meeting-doc-114211 share identity key project_verrazzano-narrows-bridge-main-cable-dehumidification.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Verrazzano-Narrows Bridge Main Cable Dehumidification",
+          "payload_fields": {
+            "project_name": "Verrazzano-Narrows Bridge Main Cable Dehumidification",
+            "project_type": "Design-Build",
+            "status": "award"
+          },
+          "evidence_refs": [
+            "meeting_doc_176356#p110_c0006",
+            "meeting_doc_176356#p111_c0005"
+          ]
+        },
+        "target": {
+          "display_name": "B&T Verrazzano Narrows Bridge Main Cable Dehumidification",
+          "payload_fields": {
+            "project_name": "B&T Verrazzano Narrows Bridge Main Cable Dehumidification",
+            "project_type": "core infrastructure",
+            "status": "awarded"
+          },
+          "evidence_refs": [
+            "meeting_doc_114211#p026_c0007",
+            "meeting_doc_177171#p019_c0007"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_verrazzano-bridge-rehab-meeting-doc-170976",
+      "target_id": "project_vnb-rehabilitation",
+      "canonical_id": "project_vnb-rehabilitation",
+      "confidence": "high",
+      "validator_duplicate_key": "project_rehabilitation-of-the-lower-level-suspended-span-of-the-verrazzano-narrows-bridge",
+      "reason": "Both records identify the same Verrazzano-Narrows Bridge lower-level suspended span rehabilitation project, including rehabilitation of the lower-level concrete deck and temporary shoring for the Belt Parkway ramp.",
+      "validator_evidence": {
+        "shared_identity_keys": [
+          "project_rehabilitation-of-the-lower-level-suspended-span-of-the-verrazzano-narrows-bridge"
+        ],
+        "duplicate_issue": "Global project records project_verrazzano-bridge-rehab-meeting-doc-170976 and project_vnb-rehabilitation share identity key project_rehabilitation-of-the-lower-level-suspended-span-of-the-verrazzano-narrows-bridge.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Rehabilitation of the Lower Level Suspended Span of the Verrazzano-Narrows Bridge",
+          "payload_fields": {
+            "project_name": "Rehabilitation of the Lower Level Suspended Span of the Verrazzano-Narrows Bridge",
+            "project_type": "infrastructure rehabilitation"
+          },
+          "evidence_refs": [
+            "meeting_doc_170976#p052_c0008"
+          ]
+        },
+        "target": {
+          "display_name": "Verrazzano-Narrows Bridge Lower Level Suspended Span Rehabilitation",
+          "payload_fields": {
+            "project_name": "Rehabilitation of the Lower Level Suspended Span of the Verrazzano-Narrows Bridge",
+            "status": "active"
+          },
+          "evidence_refs": [
+            "meeting_doc_171381#p023_c0005",
+            "meeting_doc_171381#p023_c0008"
+          ]
+        }
+      }
+    }
+  ],
+  "exclusions_and_guards": {
+    "applied_to_all_proposals": [
+      "global_kind is project only",
+      "alias_id and target_id are present in current data/canonical/projects.jsonl",
+      "alias_id is not already present as a project alias in current data/identity-overrides/merges.json",
+      "target_id is not a project alias in current data/identity-overrides/merges.json, preventing target chains",
+      "alias_id does not equal target_id",
+      "pair is not listed in current data/identity-overrides/do-not-merge.json project pairs",
+      "proposal has at least one shared validator identity key from identityKeysForRecord",
+      "selection avoids current stale aliases already removed by identity150/identity152 and avoids broad same-name-but-different-stage traps"
+    ],
+    "explicitly_skipped_examples": [
+      {
+        "record_ids": [
+          "project_better-buses-restart-2021",
+          "project_jamaica-busway"
+        ],
+        "reason": "Current project do-not-merge pair; parent program versus child busway project."
+      },
+      {
+        "record_ids": [
+          "project_able-expansion-2023",
+          "project_able-program"
+        ],
+        "reason": "Broad ABLE program versus expansion/lifecycle scope; not selected for this safe batch."
+      },
+      {
+        "record_ids": [
+          "project_2020-2024-capital-program-amendment2",
+          "project_2020-2024-capital-program-meeting-doc-152166"
+        ],
+        "reason": "Capital program amendment versus base capital program; phase/amendment trap."
+      },
+      {
+        "record_ids": [
+          "project_2017-sip-woodhaven-blvd-cb5-sept2024",
+          "project_2017-street-improvement-79th"
+        ],
+        "reason": "Shared generic '2017 Street Improvement Project' label but different street/location scopes."
+      }
+    ]
+  },
+  "command_evidence": [
+    {
+      "command": "bun -e 'import { validateRepo } from \"./packages/pipeline/src/validate.ts\"; const r=validateRepo(); const counts={}; for (const i of r.issues) counts[i.code]=(counts[i.code]||0)+1; console.log(JSON.stringify({duplicate_global_identity:counts.duplicate_global_identity||0, project_duplicate_global_identity:r.issues.filter(i=>i.code===\"duplicate_global_identity\" && i.message.includes(\"Global project records\")).length}, null, 2));'",
+      "output_summary": {
+        "duplicate_global_identity": 730,
+        "project_duplicate_global_identity": 112
+      }
+    },
+    {
+      "command": "bun -e deterministic duplicate scan over data/canonical/projects.jsonl using identityKeysForRecord plus current merges/do-not-merge guards",
+      "output_summary": {
+        "project_duplicate_issues_after_do_not_merge_suppression": 112,
+        "current_project_merge_aliases": 264,
+        "current_project_do_not_merge_pairs": 1
+      }
+    },
+    {
+      "command": "bun -e guard pass for the 11 proposed alias/target pairs",
+      "output_summary": {
+        "all_aliases_present": true,
+        "all_targets_present": true,
+        "all_aliases_not_already_merged": true,
+        "all_targets_not_merge_aliases": true,
+        "all_do_not_merge_hits": false,
+        "all_alias_equals_target": false,
+        "all_pairs_have_shared_identity_keys": true
+      }
+    },
+    {
+      "command": "bun -e selected-record source inspection from current data/canonical/projects.jsonl",
+      "output_summary": "Inspected display_name, record_aliases, source_ids, payload project_name/project_type/status/description/location, and leading evidence_refs for each selected alias and target."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed commands",
+    "materialize",
+    "export-jsonl",
+    "full CLI validate",
+    "write",
+    "ask",
+    "schema",
+    "ontology",
+    "identity-review",
+    "canonicalize",
+    "campaign dedup"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "run_id": "2026-06-10T17-48-04-702Z_1496766-6882ad6d_ingest_2010-03-10-brt-1st2nd-cb3",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-10T19:36:20.504Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "relate-claim-sbs-features-to-m15-sbs",
+        "local_observation_id": "claim_sbs_features_2010_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_m15-sbs",
+            "object_id": "claim_sbs-features-2010-2012",
+            "description": "M15 SBS features comparison (2010 vs 2012) from March 2010 CB3 presentation",
+            "evidence_refs": [
+              {
+                "source_id": "2010_03_10_brt_1st2nd_cb3",
+                "block_id": "p004_c0003",
+                "source_quote": "Features Current M15 M15 SBS (2010) M15 SBS (2012) Local service Yes Yes Yes Limited service Yes No No Simpler service pattern No Yes Off-board fare collection No Yes Regular bus fare Yes Yes Improved bus lanes No Yes Bus bulbs No No Yes Transit Signal Priority No No Yes (below Houston St)"
+              }
+            ]
+          }
+        ],
+        "rationale": "The claim text describes M15 SBS features for 2010 and 2012, and the evidence block p004_c0003 explicitly names 'M15 SBS' in its feature comparison table. The canonical route record 'route_m15-sbs' represents the M15 Select Bus Service route.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_03_10_brt_1st2nd_cb3",
+            "block_id": "p004_c0003",
+            "source_quote": "Features Current M15 M15 SBS (2010) M15 SBS (2012) Local service Yes Yes Yes Limited service Yes No No Simpler service pattern No Yes Off-board fare collection No Yes Regular bus fare Yes Yes Improved bus lanes No Yes Bus bulbs No No Yes Transit Signal Priority No No Yes (below Houston St)"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-35-35-833Z_1641434-04a39aab_canonicalize_2026-06-10t17-48-04-702z-1496766-6882ad6d-ingest-2010-03-10-brt-1st2nd-cb3-relation-linker"
+}

@@ -1,0 +1,265 @@
+{
+  "note_id": "codex-corridor-church-ave-duplicate-prep-20260623",
+  "created_at": "2026-06-23T13:08:15Z",
+  "author": "codex",
+  "scope": {
+    "task": "Prepare corridor-specific cleanup recommendation for the sole remaining Church Avenue corridor duplicate.",
+    "global_kind": "corridor",
+    "record_ids": [
+      "corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate",
+      "corridor_church-av"
+    ],
+    "shared_identity_key": "corridor_church-ave",
+    "inspection_mode": "deterministic_local_read_only_except_this_artifact",
+    "files_written": [
+      "data/review_notes/codex-corridor-church-ave-duplicate-prep-20260623.json"
+    ],
+    "commands_not_run": [
+      "provider-backed commands",
+      "canonicalize*",
+      "identity-review-run",
+      "ontology-normalize-run",
+      "materialize",
+      "validate",
+      "export-jsonl",
+      "write",
+      "ask",
+      "schema",
+      "profile/provider commands"
+    ]
+  },
+  "recommendation": {
+    "decision": "low_confidence_review_note",
+    "confidence": "low",
+    "proposed_durable_mutation": null,
+    "no_mutation_reason": "Do not add an alias or do-not-merge override yet. The Bus Forward 2 SBS candidate record names only 'Church Avenue' with no limits, while corridor_church-av is explicitly Flatbush Ave to Ocean Pkwy. That blocks a high-confidence merge alias. However, the SBS candidate also lacks a conflicting extent, so it does not support a high-confidence do-not-merge guard against the Flatbush-to-Ocean-Pkwy corridor. The same source separately lists a Church Av local corridor from Coney Island Av to Flatbush Av, and that adjacent segment already has a DNM guard against corridor_church-av, but that guard should not be inferred onto the unbounded SBS candidate without source-backed limits or a project policy.",
+    "needed_to_mutate_later": [
+      "Exact source evidence that Bus Forward 2 candidate G Church Avenue maps to Flatbush Ave to Ocean Pkwy, which would support aliasing the SBS candidate shell to corridor_church-av.",
+      "Exact source evidence that Bus Forward 2 candidate G Church Avenue maps to a different bounded segment, or a durable corridor identity policy that treats unbounded SBS candidate shells as separate from later bounded project corridors, which would support a do-not-merge guard."
+    ]
+  },
+  "validator_issue": {
+    "issue_code": "duplicate_global_identity",
+    "message": "Global corridor records corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate and corridor_church-av share identity key corridor_church-ave."
+  },
+  "records": [
+    {
+      "record_id": "corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate",
+      "display_name": "Church Avenue (SBS candidate G)",
+      "source_ids": [
+        "bus_forward_2"
+      ],
+      "record_aliases": [
+        "corridor_church-ave",
+        "corridor_church-ave-sbs-candidate-g"
+      ],
+      "payload_summary": {
+        "corridor_name": "Church Avenue",
+        "borough": "Brooklyn",
+        "description": "SBS candidate corridor identified for next phase of SBS program",
+        "limits": null,
+        "from": null,
+        "to": null
+      },
+      "evidence_refs": [
+        {
+          "source_id": "bus_forward_2",
+          "block_id": "p005_c0001",
+          "page_number": 5,
+          "quote": "Brooklyn G Church Avenue"
+        }
+      ]
+    },
+    {
+      "record_id": "corridor_church-av",
+      "display_name": "Church Av",
+      "source_ids": [
+        "brooklyn_bus_network_draft_plan_without_route_profiles",
+        "church_ave_cb12_jun2019",
+        "church_ave_cb14_tc_may2019",
+        "church_ave_project_update_oct2019",
+        "church_ave_public_forum_jul2019"
+      ],
+      "record_aliases": [
+        "corridor_church-ave",
+        "corridor_church-ave-flatbush-ave-to-ocean-pkwy",
+        "corridor_church-ave-flatbush-ocean-pkwy",
+        "corridor_church-ave-flatbush-ocean-pkwy-oct2019",
+        "corridor_church-ave-flatbush-to-ocean-pkwy"
+      ],
+      "payload_summary": {
+        "corridor_name": "Church Av",
+        "street": "Church Avenue",
+        "borough": "Brooklyn",
+        "limits": "Flatbush Ave to Ocean Pkwy",
+        "from": "Flatbush Ave",
+        "to": "Ocean Pkwy",
+        "corridor_length_mi": 0.9,
+        "description": "Top-ranked NYC DOT Brooklyn bus priority corridor identified for potential bus priority street treatments."
+      },
+      "evidence_refs": [
+        {
+          "source_id": "church_ave_project_update_oct2019",
+          "block_id": "p005_c0002",
+          "page_number": 5,
+          "quote": "Church Ave (Flatbush Ave to Ocean Pkwy) identified as 2019 priority project"
+        },
+        {
+          "source_id": "church_ave_project_update_oct2019",
+          "block_id": "p006_c0002",
+          "page_number": 6,
+          "quote": "Flatbush Ave to Ocean Pkwy (0.9 miles)"
+        },
+        {
+          "source_id": "church_ave_cb12_jun2019",
+          "block_id": "p006_c0002",
+          "page_number": 6,
+          "quote": "Flatbush Ave to Ocean Pkwy (0.9 miles)"
+        },
+        {
+          "source_id": "church_ave_cb14_tc_may2019",
+          "block_id": "p006_c0002",
+          "page_number": 6,
+          "quote": "Flatbush Ave to Ocean Pkwy (0.9 miles)"
+        },
+        {
+          "source_id": "church_ave_public_forum_jul2019",
+          "block_id": "p006_c0002",
+          "page_number": 6,
+          "quote": "Flatbush Ave to Ocean Pkwy (0.9 miles)"
+        }
+      ]
+    },
+    {
+      "record_id": "corridor_bus-fwd-2-church-av-brooklyn-local",
+      "display_name": "Church Av, Brooklyn (Coney Island Av to Flatbush Av)",
+      "included_as_context": true,
+      "source_ids": [
+        "bus_forward_2"
+      ],
+      "payload_summary": {
+        "corridor_name": "Church Av",
+        "borough": "Brooklyn",
+        "from": "Coney Island Av",
+        "to": "Flatbush Av",
+        "description": "Local bus priority corridor being examined for bus speed improvements"
+      },
+      "evidence_refs": [
+        {
+          "source_id": "bus_forward_2",
+          "block_id": "p011_c0002",
+          "page_number": 11,
+          "quote": "Church Av from Coney Island Av to Flatbush Av"
+        }
+      ]
+    }
+  ],
+  "source_evidence": [
+    {
+      "source_id": "bus_forward_2",
+      "title": "Download the 2017 Bus Forward Report (pdf)",
+      "publisher": "NYC DOT",
+      "document_date": "2017",
+      "block_id": "p005_c0001",
+      "page_number": 5,
+      "finding": "The SBS candidate table lists Brooklyn candidate G as Church Avenue, but does not provide limits.",
+      "quote": "Brooklyn G Church Avenue"
+    },
+    {
+      "source_id": "bus_forward_2",
+      "title": "Download the 2017 Bus Forward Report (pdf)",
+      "publisher": "NYC DOT",
+      "document_date": "2017",
+      "block_id": "p011_c0002",
+      "page_number": 11,
+      "finding": "The same report separately lists a bounded local bus-priority Church Av segment from Coney Island Av to Flatbush Av.",
+      "quote": "Church Av from Coney Island Av to Flatbush Av"
+    },
+    {
+      "source_id": "church_ave_project_update_oct2019",
+      "title": "Church Ave Transit Improvements - Project Update, October 2019 (pdf)",
+      "publisher": "NYC DOT",
+      "document_date": "2019-10",
+      "block_id": "p006_c0002",
+      "page_number": 6,
+      "finding": "The later Church Ave project update gives explicit Flatbush Ave to Ocean Pkwy limits.",
+      "quote": "Flatbush Ave to Ocean Pkwy (0.9 miles)"
+    },
+    {
+      "source_id": "church_ave_cb12_jun2019",
+      "title": "Church Ave Transit Improvements - presented to Brooklyn Community Board 12 in June 2019 (pdf)",
+      "publisher": "NYC DOT",
+      "document_date": "2019-06",
+      "block_id": "p006_c0002",
+      "page_number": 6,
+      "finding": "The June 2019 CB12 presentation repeats the explicit Flatbush Ave to Ocean Pkwy limits.",
+      "quote": "Flatbush Ave to Ocean Pkwy (0.9 miles)"
+    }
+  ],
+  "pattern_review": {
+    "merge_patterns_considered": [
+      {
+        "pattern": "Sparse Bus Forward 2 candidate shells can be merged when the target has matching geography or lifecycle evidence and no conflicting extent.",
+        "examples": [
+          "data/identity-overrides/merges.json maps corridor_bus-fwd-2-flatbush-av-sbs to corridor_flatbush-avenue",
+          "data/identity-overrides/merges.json maps corridor_bus-fwd-2-tremont-av-bronx-sbs to corridor_tremont-ave",
+          "data/identity-overrides/merges.json maps corridor_bus-fwd-2-university-av-bronx-sbs to corridor_university-ave"
+        ],
+        "fit_for_this_pair": "partial_only",
+        "why_not_enough": "The Church Avenue SBS candidate has no limits and the target is a specific 0.9-mile segment; the same source also has a separate adjacent Church Av local segment."
+      }
+    ],
+    "do_not_merge_patterns_considered": [
+      {
+        "pattern": "Shared street name is insufficient when source-backed boroughs or limits show distinct physical corridors.",
+        "examples": [
+          "data/identity-overrides/do-not-merge.json guards corridor_bus-fwd-2-church-av-brooklyn-local against corridor_church-av because Coney Island Av to Flatbush Av and Flatbush Ave to Ocean Pkwy are adjacent but distinct.",
+          "data/identity-overrides/do-not-merge.json guards Broadway records where boroughs and limits differ."
+        ],
+        "fit_for_this_pair": "partial_only",
+        "why_not_enough": "The adjacent local Church Av segment has explicit limits, but the SBS candidate has no explicit limits. There is not enough conflict evidence to make a durable DNM guard for the SBS candidate."
+      }
+    ],
+    "prior_review_notes_considered": [
+      {
+        "file": "data/review_notes/codex-identity-corridor-batch206-prep.json",
+        "finding": "Deferred this pair because the Bus Forward 2 SBS candidate is a sparse Church Avenue next-phase candidate without explicit limits, while corridor_church-av is the later Flatbush Avenue to Ocean Parkway priority corridor."
+      },
+      {
+        "file": "data/review_notes/codex-identity-corridor-batch209-triage.json",
+        "finding": "Deferred this pair again, noting that neither alias nor do-not-merge is high confidence without limit evidence or policy."
+      },
+      {
+        "file": "data/review_notes/codex-identity-batch192-prep.json",
+        "finding": "Marked the Church Avenue cluster low confidence because the unlabeled SBS candidate cannot be safely collapsed into the target without stronger extent evidence."
+      }
+    ]
+  },
+  "decision_analysis": {
+    "merge_alias_assessment": {
+      "recommended": false,
+      "reason": "A merge would treat the unbounded 2017 SBS candidate G as the same corridor as the 2019 Flatbush Ave to Ocean Pkwy project. Current source evidence does not explicitly connect candidate G to those limits, and the same Bus Forward 2 report separately identifies an adjacent Church Av local segment."
+    },
+    "do_not_merge_assessment": {
+      "recommended": false,
+      "reason": "A DNM guard would assert the SBS candidate is distinct from Flatbush Ave to Ocean Pkwy. Current source evidence does not provide conflicting limits for the SBS candidate, only missing limits."
+    },
+    "review_note_assessment": {
+      "recommended": true,
+      "reason": "The correct deterministic artifact is a low-confidence review note preserving the evidence and blocker until either source-backed limits or corridor-shell policy exists."
+    }
+  },
+  "guard_checks": {
+    "both_records_present_in_current_canonical_corridors_jsonl": true,
+    "same_global_kind": true,
+    "same_borough": true,
+    "same_street_or_named_corridor": true,
+    "candidate_has_explicit_limits": false,
+    "target_has_explicit_limits": true,
+    "same_source_contains_adjacent_church_local_segment": true,
+    "direct_dnm_already_exists_for_candidate_pair": false,
+    "direct_alias_already_exists_for_candidate_pair": false,
+    "safe_to_alias": false,
+    "safe_to_do_not_merge": false
+  }
+}

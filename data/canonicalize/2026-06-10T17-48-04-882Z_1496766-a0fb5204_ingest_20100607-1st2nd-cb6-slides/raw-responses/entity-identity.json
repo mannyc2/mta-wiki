@@ -1,0 +1,64 @@
+{
+  "run_id": "2026-06-10T17-48-04-882Z_1496766-a0fb5204_ingest_20100607-1st2nd-cb6-slides",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-10T19:30:41.199Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "d001-entity-mta-nyct-new",
+        "local_observation_id": "entity_mta_nyct_20100607",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'entity_mta-nyct' matches the existing canonical registry record 'entity_mta-nyct' (MTA NYCT Reference), which already lists this source (20100607_1st2nd_cb6_slides) and carries the alias 'entity_mta-nyct-20100607'. The observation resolves to its own base record; no different target exists.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p002_c0001",
+            "source_quote": ""
+          },
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p001_c0002",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "d002-entity-nyc-dot-new",
+        "local_observation_id": "entity_nyc_dot_20100607",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'entity_nyc-dot' matches the existing canonical registry record 'entity_nyc-dot' (NYC DOT as Publisher), which already lists this source (20100607_1st2nd_cb6_slides) and carries the alias 'entity_nyc-dot-20100607'. The observation resolves to its own base record.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p002_c0003",
+            "source_quote": ""
+          },
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p001_c0003",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "d003-entity-cb6-new",
+        "local_observation_id": "entity_community_board_6_manhattan",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'entity_manhattan-community-board-6' matches the existing canonical registry record 'entity_manhattan-community-board-6' (Manhattan Community Board 6), which already lists this source and carries the alias 'entity_community-board-6-manhattan'. The observation resolves to its own base record.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p001_c0005",
+            "source_quote": ""
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-30-01-425Z_1632245-ee934396_canonicalize_2026-06-10t17-48-04-882z-1496766-a0fb5204-ingest-20100607-1st2nd-cb6-slides-entity-identity"
+}

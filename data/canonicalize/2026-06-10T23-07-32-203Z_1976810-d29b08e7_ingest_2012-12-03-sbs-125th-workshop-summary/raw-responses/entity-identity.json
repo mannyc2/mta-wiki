@@ -1,0 +1,54 @@
+{
+  "run_id": "2026-06-10T23-07-32-203Z_1976810-d29b08e7_ingest_2012-12-03-sbs-125th-workshop-summary",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T03:07:06.935Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d001-nyc-dot-2012-workshop",
+        "local_observation_id": "entity_nyc_dot_2012_12_03_workshop",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot already matches the canonical registry record entity_nyc-dot (New York City Department of Transportation, agency). Per rule, when the closest match is the observation's own base_record_id, decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_12_03_sbs_125th_workshop_summary",
+            "block_id": "p002_c0005",
+            "source_quote": "The New York City Department of Transportation (DOT) and MTA New York City Transit (NYCT) conducted a Public Workshop on December 3, 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "d002-mta-nyct-2012-workshop",
+        "local_observation_id": "entity_mta_nyct_2012_12_03_workshop",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-nyct already matches the canonical registry record entity_mta-nyct (MTA New York City Transit, agency). Per rule, when the closest match is the observation's own base_record_id, decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_12_03_sbs_125th_workshop_summary",
+            "block_id": "p002_c0005",
+            "source_quote": "The New York City Department of Transportation (DOT) and MTA New York City Transit (NYCT) conducted a Public Workshop on December 3, 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "d003-zetlin-strategic-2012-workshop",
+        "local_observation_id": "entity_zetlin_strategic_communications",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_zetlin-strategic-communications already matches the canonical registry record entity_zetlin-strategic-communications (Zetlin Strategic Communications, Inc., consulting firm). Per rule, when the closest match is the observation's own base_record_id, decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_12_03_sbs_125th_workshop_summary",
+            "block_id": "p001_c0008",
+            "source_quote": "Prepared by: Zetlin Strategic Communications, Inc."
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-06-18-221Z_2111393-9efc028c_canonicalize_2026-06-10t23-07-32-203z-1976810-d29b08e7-ingest-2012-12-03-sbs-125th-workshop-summary-entity-identity"
+}

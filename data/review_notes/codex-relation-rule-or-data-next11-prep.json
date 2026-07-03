@@ -1,0 +1,216 @@
+{
+  "note_id": "codex-relation-rule-or-data-next11-prep",
+  "created_at_utc": "2026-06-22T22:29:01Z",
+  "lane": "validator/rule-data triage next11",
+  "constraints_observed": {
+    "wrote_exactly_one_artifact": "data/review_notes/codex-relation-rule-or-data-next11-prep.json",
+    "did_not_edit_code": true,
+    "did_not_edit_retired_json": true,
+    "did_not_edit_submissions": true,
+    "did_not_edit_log_manifest_generated_data_wiki_or_db": true,
+    "did_not_run_materialize_validate_export_or_provider_commands": true
+  },
+  "exclusion_method": {
+    "description": "Read canonical records and relationEndpointShapeIssue directly, then excluded relation records associated with applied relation cleanup batches017-033 and missing-target repairs without mutating canonical data.",
+    "retired_submission_filter": "retired.json entries whose reason/source_decision matched batch017 through batch033 or missing/target repair",
+    "retired_submission_count": 88,
+    "excluded_record_count": 84,
+    "batch033_context": {
+      "prep_artifact": "data/review_notes/codex-relation-cleanup-batch033-prep.json",
+      "journal": "data/submissions/2026-06-22_codex_relation_cleanup_batch033.jsonl",
+      "retired_rows": [
+        "relation_meeting-doc-111896-fuel-hedge-mta",
+        "relation_meeting91591-nova-department-of-buses-v2",
+        "relation_meeting91591-sprague-department-of-buses",
+        "relation_meeting91591-wsp-mta-procurement"
+      ]
+    }
+  },
+  "remaining_bucket_counts_after_exclusions": {
+    "unexpected_relation_endpoint_shape_total": 43,
+    "top_buckets": [
+      {
+        "bucket": "part_of_program project->event",
+        "count": 3
+      },
+      {
+        "bucket": "has_metric source->metric_claim",
+        "count": 2
+      },
+      {
+        "bucket": "has_timeline_event claim->event",
+        "count": 2
+      },
+      {
+        "bucket": "implemented_by route->entity",
+        "count": 2
+      },
+      {
+        "bucket": "part_of_program event->entity",
+        "count": 2
+      }
+    ]
+  },
+  "recommendation": {
+    "type": "data_cleanup_bucket",
+    "bucket": "part_of_program project->event",
+    "confidence": "high",
+    "summary": "Clean up three relations that use part_of_program with a project subject and an event object. The event targets are either accidental substitutes for real program/project records or meeting/work-plan context, not legal program containers.",
+    "why_not_validator_rule_change": "part_of_program currently expects project|route -> project|entity, which matches the ontology idea of membership in a program, parent project, or program-owning entity. Allowing event objects would make meetings, openings, and agenda dates behave like program containers. The three examples show target-selection errors: two cited blocks name a real parent project, and one cited block only schedules a project topic for a committee meeting.",
+    "proposed_mechanism": [
+      "Retire the three malformed part_of_program project->event rows.",
+      "For relation_gcm-east-side-access, replace with part_of_program project_grand-central-madison -> project_annual-2021-east-side-access if a cleanup pass accepts the existing East Side Access project target.",
+      "For relation_westbury-garage-main-line-expansion, replace with part_of_program project_lirr-westbury-parking-garage -> project_lirr-main-line-expansion-jan2023.",
+      "For relation_gcsip-part-of-grade-xing-improvement-program, replace with has_timeline_event project_meeting-doc-115236-grade-crossing-safety -> event_safety-committee-meeting-july2022, or related_to project->event if the cleanup pass wants a weaker meeting-agenda association. Include adjacent block meeting_doc_91576#p006_c0016 because the existing cited block only says July 2022."
+    ],
+    "simulated_impact": {
+      "baseline_remaining_endpoint_shape_issues": 43,
+      "bucket_count": 3,
+      "remaining_after_bucket_cleanup": 40,
+      "relative_reduction": "3 of 43 endpoint-shape issues, about 7.0%"
+    }
+  },
+  "representative_records": [
+    {
+      "record_id": "relation_gcm-east-side-access",
+      "submission_ids": [
+        "sub_de8832d429b2f79f"
+      ],
+      "source_id": "meeting_doc_101026",
+      "display_name": "Grand Central Madison - part of East Side Access",
+      "malformed_shape": "part_of_program project->event",
+      "subject": {
+        "record_id": "project_grand-central-madison",
+        "record_kind": "project",
+        "display_name": "Grand Central Madison"
+      },
+      "object": {
+        "record_id": "event_board-meeting-nov-2022",
+        "record_kind": "event",
+        "display_name": "MTA Board Meeting November 30, 2022"
+      },
+      "evidence_refs": [
+        "meeting_doc_101026#p045_c0006"
+      ],
+      "evidence_command_output": "raw_text: Contract VM014 provides engineering and fabrication for elevators and escalators for the East Side Access project; MTA C&D requests Board approval for maintenance at the new Grand Central Madison Terminal.",
+      "candidate_replacement": {
+        "action": "retire_and_replace",
+        "relation_kind": "part_of_program",
+        "subject_id": "project_grand-central-madison",
+        "object_id": "project_annual-2021-east-side-access",
+        "why": "The cited block names East Side Access as the parent project context; the current event object is only the board meeting source context."
+      }
+    },
+    {
+      "record_id": "relation_gcsip-part-of-grade-xing-improvement-program",
+      "submission_ids": [
+        "sub_9ca03c5fcc235759"
+      ],
+      "source_id": "meeting_doc_91576",
+      "display_name": "Grade Crossing Improvement Projects under Safety Committee Work Plan",
+      "malformed_shape": "part_of_program project->event",
+      "subject": {
+        "record_id": "project_meeting-doc-115236-grade-crossing-safety",
+        "record_kind": "project",
+        "display_name": "Grade Crossing Safety Improvement Program"
+      },
+      "object": {
+        "record_id": "event_safety-committee-meeting-july2022",
+        "record_kind": "event",
+        "display_name": "Safety Committee Meeting July 2022"
+      },
+      "evidence_refs": [
+        "meeting_doc_91576#p006_c0015"
+      ],
+      "evidence_command_output": "p006_c0015 raw_text: July 2022; adjacent p006_c0016 raw_text: - Homeless Outreach Program Update - Grade Crossing Enhancement Projects; p006_c0017 raw_text: MTA Chief Safety & Security MTA Office of Safety Management.",
+      "candidate_replacement": {
+        "action": "retire_and_replace",
+        "preferred_relation_kind": "has_timeline_event",
+        "fallback_relation_kind": "related_to",
+        "subject_id": "project_meeting-doc-115236-grade-crossing-safety",
+        "object_id": "event_safety-committee-meeting-july2022",
+        "why": "The evidence supports committee-agenda/timeline context, not program membership in a meeting event."
+      }
+    },
+    {
+      "record_id": "relation_westbury-garage-main-line-expansion",
+      "submission_ids": [
+        "sub_1f27f7e3f34b0d93"
+      ],
+      "source_id": "meeting_doc_26886",
+      "display_name": "Westbury Garage - Part of LIRR Main Line Expansion",
+      "malformed_shape": "part_of_program project->event",
+      "subject": {
+        "record_id": "project_lirr-westbury-parking-garage",
+        "record_kind": "project",
+        "display_name": "Westbury Parking Garage"
+      },
+      "object": {
+        "record_id": "event_westbury-garage-opening-march2021",
+        "record_kind": "event",
+        "display_name": "Westbury Parking Garage Expected Opening March 2021"
+      },
+      "evidence_refs": [
+        "meeting_doc_26886#p033_c0005",
+        "meeting_doc_26886#p033_c0007"
+      ],
+      "evidence_command_output": "p033_c0007 raw_text: As part of LIRR's Main Line Expansion project, a 667 space parking garage was constructed on the north side of the Westbury station.",
+      "candidate_replacement": {
+        "action": "retire_and_replace",
+        "relation_kind": "part_of_program",
+        "subject_id": "project_lirr-westbury-parking-garage",
+        "object_id": "project_lirr-main-line-expansion-jan2023",
+        "why": "The cited block explicitly names LIRR's Main Line Expansion project as the parent project; the current event object is the garage opening timing, not the program."
+      }
+    }
+  ],
+  "command_evidence": {
+    "bucket_inventory_output": {
+      "retiredSubmissionCount": 88,
+      "excludedRecordCount": 84,
+      "total": 43,
+      "topBuckets": [
+        "part_of_program project->event: 3",
+        "has_metric source->metric_claim: 2",
+        "has_timeline_event claim->event: 2",
+        "implemented_by route->entity: 2",
+        "part_of_program event->entity: 2"
+      ]
+    },
+    "relation_shape_probe": [
+      "related_to project->event: ok",
+      "related_to event->project: ok",
+      "part_of_program project->event: Relation kind part_of_program expects project|route -> project|entity, got project -> event.",
+      "has_timeline_event project->event: ok",
+      "supports project->event: ok",
+      "includes project->event: ok"
+    ],
+    "target_search_output": {
+      "east_side_access_project": "project_annual-2021-east-side-access",
+      "main_line_expansion_project": "project_lirr-main-line-expansion-jan2023",
+      "grade_crossing_project": "project_meeting-doc-115236-grade-crossing-safety"
+    }
+  },
+  "commands_run": [
+    "test ! -e data/review_notes/codex-relation-rule-or-data-next11-prep.json && echo ok || echo exists",
+    "rg --files data/review_notes data/submissions data/submission-overrides | sort | rg 'relation.*(033)|batch033|missing.*target|target_repair|repair'",
+    "rg -n \"batch033|relation033|missing[_ -]target|target_repair|repair00\" LOG.md data/review_notes data/submissions data/submission-overrides/retired.json -g '*.md' -g '*.json' -g '*.jsonl'",
+    "git status --short -- data/review_notes/codex-relation-rule-or-data-next11-prep.json data/review_notes data/submission-overrides/retired.json data/submissions packages/pipeline/src/records/relations.ts packages/pipeline/test/records/relations.test.ts",
+    "bun --eval '<readCanonicalRecords plus relationEndpointShapeIssue inventory excluding retired/prepared batches017-033 and missing-target repair ids>'",
+    "bun --eval '<relationEndpointShapeIssue probe for related_to/part_of_program/has_timeline_event/supports/includes project-event directions>'",
+    "bun --eval '<canonical record inspection for the three part_of_program project->event rows and endpoints>'",
+    "bun --eval '<canonical project search for East Side Access, Grand Central Madison, Main Line Expansion, Westbury, Grade Crossing, and Safety Committee Work Plan>'",
+    "rg -n '\"block_id\":\"p045_c0006\"' raw/sources/meeting_doc_101026/blocks.jsonl; rg -n '\"block_id\":\"p006_c0015\"' raw/sources/meeting_doc_91576/blocks.jsonl; rg -n '\"block_id\":\"p033_c0005\"|\"block_id\":\"p033_c0007\"' raw/sources/meeting_doc_26886/blocks.jsonl",
+    "rg -n 'p006_c00(10|11|12|13|14|15|16|17|18)|Grade Crossing|Work Plan|Safety Committee' raw/sources/meeting_doc_91576/blocks.jsonl | head -n 40",
+    "rg -n 'relation_gcm-east-side-access|relation_gcsip-part-of-grade-xing-improvement-program|relation_westbury-garage-main-line-expansion|sub_de8832d429b2f79f|sub_9ca03c5fcc235759|sub_1f27f7e3f34b0d93' data/submissions/*.jsonl data/submission-overrides/retired.json | head -n 80",
+    "date -u +%Y-%m-%dT%H:%M:%SZ",
+    "bun --eval '<canonical project-only search for east-side-access, esa, main-line-expansion, grade-crossing-safety>'"
+  ],
+  "forbidden_commands_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts export-jsonl",
+    "provider-backed ingest/write/ask commands",
+    "DB repair or publish commands"
+  ]
+}

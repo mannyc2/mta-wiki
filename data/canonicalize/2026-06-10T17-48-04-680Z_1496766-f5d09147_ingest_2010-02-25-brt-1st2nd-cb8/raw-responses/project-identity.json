@@ -1,0 +1,43 @@
+{
+  "run_id": "2026-06-10T17-48-04-680Z_1496766-f5d09147_ingest_2010-02-25-brt-1st2nd-cb8",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-10T19:33:11.028Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d_project_first_second_ave_sbs_cb8_2010_new",
+        "local_observation_id": "project_first_second_ave_sbs_cb8_2010",
+        "decision": "new",
+        "rationale": "The observation's base_record_id `project_first-second-ave-sbs-cb8-2010` already exists in the registry with the same source (`2010_02_25_brt_1st2nd_cb8`), matching project name 'First Avenue/Second Avenue Select Bus Service', identical project_type 'Select Bus Service', borough 'Manhattan', and description. The observation already resolves to this canonical record; no linking action is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p001_c0002",
+            "source_quote": "First Avenue/Second Avenue Select Bus Service"
+          },
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p005_c0003",
+            "source_quote": "NYC BRT Study identified First/Second Avenue M15 as a top Bus Rapid Transit corridor in 2006"
+          },
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p006_c0004",
+            "source_quote": "8.5 miles from South Ferry to 125 th Street"
+          },
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p007_c0001",
+            "source_quote": "First Avenue/Second Avenue SBS"
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-32-18-828Z_1637391-eeeba296_canonicalize_2026-06-10t17-48-04-680z-1496766-f5d09147-ingest-2010-02-25-brt-1st2nd-cb8-project-identity"
+}

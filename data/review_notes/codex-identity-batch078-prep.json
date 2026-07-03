@@ -1,0 +1,456 @@
+{
+  "note_id": "codex-identity-batch078-prep",
+  "batch_id": "identity078",
+  "batch": "identity-batch078",
+  "created_at": "2026-06-23T00:00:00Z",
+  "lane": "codex-only deterministic/manual identity cleanup",
+  "status": "prepared",
+  "prepared_count": 8,
+  "all_pass": true,
+  "baseline_context": {
+    "source": "user-supplied current checkpoint after relation046 and identity077, cross-checked by read-only deterministic identity-key scan over current data/canonical.db",
+    "total_validate_backlog": 1483,
+    "unexpected_relation_endpoint_shape": 20,
+    "duplicate_global_identity": 1463
+  },
+  "scope": {
+    "record_kind": "entity",
+    "decision_kind": "duplicate_global_identity",
+    "selection_rule": "High-confidence person entity duplicates with shared identity keys, matching person names, compatible title/organization/source context, current duplicate_global_identity rows, and no live override/do-not-merge conflicts. Ambiguous initials-only, role-transition, cross-agency, and contaminated candidates were excluded."
+  },
+  "intended_mutation_path": "aliases.entity",
+  "intended_mutation": {
+    "aliases": {
+      "entity": {
+        "entity_meeting-doc-79341-zuckerman": "entity_meeting-doc-131646-neal-zuckerman",
+        "entity_meeting-doc-128981-paul-friman": "entity_paul-friman",
+        "entity_meeting-doc-176436-william-amarosa": "entity_meeting-doc-170981-amarosa",
+        "entity_meeting-doc-193996-william-amarosa": "entity_meeting-doc-170981-amarosa",
+        "entity_william-amarosa-192241": "entity_meeting-doc-170981-amarosa",
+        "entity_raymond-smyth-174081": "entity_meeting-doc-129076-raymond-smyth",
+        "entity_raymond-smyth-meeting-doc-151756": "entity_meeting-doc-129076-raymond-smyth",
+        "entity_raymond-smyth": "entity_meeting-doc-129076-raymond-smyth"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "alias_id": "entity_meeting-doc-79341-zuckerman",
+      "target_id": "entity_meeting-doc-131646-neal-zuckerman",
+      "kind": "duplicate_global_identity",
+      "intended_mutation_path": "aliases.entity",
+      "reason": "Both records identify Neal Zuckerman as a chair. The alias is a one-source shard naming Neal Zuckerman, Chair; the target aggregates the same Neal Zuckerman chair identity across nine MTA meeting sources.",
+      "evidence": {
+        "shared_identity_keys": ["entity_neal-zuckerman"],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-79341-zuckerman",
+          "display_name": "Neal Zuckerman",
+          "entity_name": "Neal Zuckerman",
+          "entity_type": "person",
+          "title": "Chair",
+          "source_ids": ["meeting_doc_79341"],
+          "evidence_refs": ["meeting_doc_79341#p001_c0006", "meeting_doc_79341#p005_c0003"],
+          "source_paths": ["raw/sources/meeting_doc_79341/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-131646-neal-zuckerman",
+          "display_name": "Hon. Neal Zuckerman",
+          "entity_name": "Neal Zuckerman",
+          "entity_type": "person",
+          "title": "Chair",
+          "role": "Chair of Finance Committee",
+          "organization": "Metropolitan Transportation Authority",
+          "source_id_count": 9,
+          "source_ids_sample": ["meeting_doc_131646", "meeting_doc_146976", "meeting_doc_151596", "meeting_doc_155131"],
+          "evidence_refs_sample": ["meeting_doc_131646#p001_c0003", "meeting_doc_155131#p001_c0011"],
+          "source_paths_sample": ["raw/sources/meeting_doc_131646/blocks.jsonl", "raw/sources/meeting_doc_155131/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-131646-neal-zuckerman and entity_meeting-doc-79341-zuckerman share identity key entity_neal-zuckerman.",
+          "records: entity_meeting-doc-79341-zuckerman | entity | Neal Zuckerman | meeting_doc_79341 | source_stated | unreviewed",
+          "records: entity_meeting-doc-131646-neal-zuckerman | entity | Hon. Neal Zuckerman | meeting_doc_131646 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-128981-paul-friman",
+      "target_id": "entity_paul-friman",
+      "kind": "duplicate_global_identity",
+      "intended_mutation_path": "aliases.entity",
+      "reason": "Both records identify Paul L. Friman as TBTA general counsel/corporate secretary. The alias is a two-source shard; the target aggregates the same Paul L. Friman legal-department identity across eight sources.",
+      "evidence": {
+        "shared_identity_keys": ["entity_paul-l-friman", "entity_paul-l-friman-general-counsel-and-corporate-secretary"],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-128981-paul-friman",
+          "display_name": "Paul L. Friman, General Counsel and Corporate Secretary",
+          "entity_name": "Paul L. Friman",
+          "entity_type": "person",
+          "title": "General Counsel and Corporate Secretary",
+          "organization": "Triborough Bridge and Tunnel Authority",
+          "source_ids": ["meeting_doc_128981", "meeting_doc_140276"],
+          "evidence_refs": ["meeting_doc_128981#p004_c0007", "meeting_doc_140276#p004_c0008"],
+          "source_paths": ["raw/sources/meeting_doc_128981/blocks.jsonl", "raw/sources/meeting_doc_140276/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_paul-friman",
+          "display_name": "Paul L. Friman, Acting General Counsel and Corporate Secretary",
+          "entity_name": "Paul L. Friman",
+          "entity_type": "person",
+          "title": "Acting General Counsel and Corporate Secretary - TBTA, MTA",
+          "role": "Department Head, Law Department",
+          "organization": "Triborough Bridge and Tunnel Authority",
+          "source_id_count": 8,
+          "source_ids_sample": ["meeting_doc_100256", "meeting_doc_104711", "meeting_doc_107566", "meeting_doc_111711"],
+          "evidence_refs_sample": ["meeting_doc_104711#p004_c0007", "meeting_doc_100256#p004_c0007"],
+          "source_paths_sample": ["raw/sources/meeting_doc_104711/blocks.jsonl", "raw/sources/meeting_doc_100256/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-128981-paul-friman and entity_paul-friman share identity key entity_paul-l-friman.",
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-128981-paul-friman and entity_paul-friman share identity key entity_paul-l-friman-general-counsel-and-corporate-secretary.",
+          "records: entity_meeting-doc-128981-paul-friman | entity | Paul L. Friman, General Counsel and Corporate Secretary | meeting_doc_128981 | source_stated | unreviewed",
+          "records: entity_paul-friman | entity | Paul L. Friman, Acting General Counsel and Corporate Secretary | meeting_doc_104711 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-176436-william-amarosa",
+      "target_id": "entity_meeting-doc-170981-amarosa",
+      "kind": "duplicate_global_identity",
+      "intended_mutation_path": "aliases.entity",
+      "reason": "Both records identify William Amarosa. The alias is a one-source name-only shard; the target aggregates William Amarosa / Subways senior leadership evidence across five sources.",
+      "evidence": {
+        "shared_identity_keys": ["entity_william-amarosa"],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-176436-william-amarosa",
+          "display_name": "William Amarosa",
+          "entity_name": "William Amarosa",
+          "entity_type": "person",
+          "source_ids": ["meeting_doc_176436"],
+          "evidence_refs": ["meeting_doc_176436#p006_c0003"],
+          "source_paths": ["raw/sources/meeting_doc_176436/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-170981-amarosa",
+          "display_name": "William Amarosa, SVP Subways",
+          "entity_name": "William Amarosa",
+          "entity_type": "person",
+          "title": "Senior Vice President, Subways, NYCT Operations Support",
+          "organization": "Department of Subways",
+          "source_id_count": 5,
+          "source_ids_sample": ["meeting_doc_170981", "meeting_doc_190081", "meeting_doc_199486", "meeting_doc_205541"],
+          "evidence_refs_sample": ["meeting_doc_170981#p001_c0018", "meeting_doc_190081#p008_c0003"],
+          "source_paths_sample": ["raw/sources/meeting_doc_170981/blocks.jsonl", "raw/sources/meeting_doc_190081/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-170981-amarosa and entity_meeting-doc-176436-william-amarosa share identity key entity_william-amarosa.",
+          "records: entity_meeting-doc-176436-william-amarosa | entity | William Amarosa | meeting_doc_176436 | source_stated | unreviewed",
+          "records: entity_meeting-doc-170981-amarosa | entity | William Amarosa, SVP Subways | meeting_doc_170981 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-193996-william-amarosa",
+      "target_id": "entity_meeting-doc-170981-amarosa",
+      "kind": "duplicate_global_identity",
+      "intended_mutation_path": "aliases.entity",
+      "reason": "Both records identify William Amarosa in the Department of Subways context. The alias is a one-source department shard; the target aggregates the same William Amarosa / Subways senior leadership identity across five sources.",
+      "evidence": {
+        "shared_identity_keys": ["entity_william-amarosa"],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-193996-william-amarosa",
+          "display_name": "William Amarosa, Department of Subways",
+          "entity_name": "William Amarosa",
+          "entity_type": "person",
+          "organization": "Department of Subways",
+          "source_ids": ["meeting_doc_193996"],
+          "evidence_refs": ["meeting_doc_193996#p009_c0003"],
+          "source_paths": ["raw/sources/meeting_doc_193996/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-170981-amarosa",
+          "display_name": "William Amarosa, SVP Subways",
+          "entity_name": "William Amarosa",
+          "entity_type": "person",
+          "title": "Senior Vice President, Subways, NYCT Operations Support",
+          "organization": "Department of Subways",
+          "source_id_count": 5,
+          "source_ids_sample": ["meeting_doc_170981", "meeting_doc_190081", "meeting_doc_199486", "meeting_doc_205541"],
+          "evidence_refs_sample": ["meeting_doc_170981#p001_c0018", "meeting_doc_190081#p008_c0003"],
+          "source_paths_sample": ["raw/sources/meeting_doc_170981/blocks.jsonl", "raw/sources/meeting_doc_190081/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-170981-amarosa and entity_meeting-doc-193996-william-amarosa share identity key entity_william-amarosa.",
+          "records: entity_meeting-doc-193996-william-amarosa | entity | William Amarosa, Department of Subways | meeting_doc_193996 | source_stated | unreviewed",
+          "records: entity_meeting-doc-170981-amarosa | entity | William Amarosa, SVP Subways | meeting_doc_170981 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_william-amarosa-192241",
+      "target_id": "entity_meeting-doc-170981-amarosa",
+      "kind": "duplicate_global_identity",
+      "intended_mutation_path": "aliases.entity",
+      "reason": "Both records identify William Amarosa in NYC Transit / Department of Subways context. The alias is a one-source shard; the target is the richer five-source William Amarosa Subways leadership record.",
+      "evidence": {
+        "shared_identity_keys": ["entity_william-amarosa"],
+        "canonical_alias": {
+          "record_id": "entity_william-amarosa-192241",
+          "display_name": "William Amarosa",
+          "entity_name": "William Amarosa",
+          "entity_type": "person",
+          "organization": "Department of Subways, NYC Transit",
+          "source_ids": ["meeting_doc_192241"],
+          "evidence_refs": ["meeting_doc_192241#p012_c0003"],
+          "source_paths": ["raw/sources/meeting_doc_192241/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-170981-amarosa",
+          "display_name": "William Amarosa, SVP Subways",
+          "entity_name": "William Amarosa",
+          "entity_type": "person",
+          "title": "Senior Vice President, Subways, NYCT Operations Support",
+          "organization": "Department of Subways",
+          "source_id_count": 5,
+          "source_ids_sample": ["meeting_doc_170981", "meeting_doc_190081", "meeting_doc_199486", "meeting_doc_205541"],
+          "evidence_refs_sample": ["meeting_doc_170981#p001_c0018", "meeting_doc_190081#p008_c0003"],
+          "source_paths_sample": ["raw/sources/meeting_doc_170981/blocks.jsonl", "raw/sources/meeting_doc_190081/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-170981-amarosa and entity_william-amarosa-192241 share identity key entity_william-amarosa.",
+          "records: entity_william-amarosa-192241 | entity | William Amarosa | meeting_doc_192241 | source_stated | unreviewed",
+          "records: entity_meeting-doc-170981-amarosa | entity | William Amarosa, SVP Subways | meeting_doc_170981 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_raymond-smyth-174081",
+      "target_id": "entity_meeting-doc-129076-raymond-smyth",
+      "kind": "duplicate_global_identity",
+      "intended_mutation_path": "aliases.entity",
+      "reason": "Both records identify Raymond Smyth as a project manager. The alias is a one-source B&B Station Management lease shard; the target aggregates the same Raymond Smyth / MTA Real Estate project-manager identity across four sources.",
+      "evidence": {
+        "shared_identity_keys": ["entity_raymond-smyth"],
+        "canonical_alias": {
+          "record_id": "entity_raymond-smyth-174081",
+          "display_name": "Raymond Smyth",
+          "entity_name": "Raymond Smyth",
+          "entity_type": "person",
+          "role": "Project Manager for B&B Station Management lease",
+          "source_ids": ["meeting_doc_174081"],
+          "evidence_refs": ["meeting_doc_174081#p010_c0003"],
+          "source_paths": ["raw/sources/meeting_doc_174081/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-129076-raymond-smyth",
+          "display_name": "Raymond Smyth, Project Manager",
+          "entity_name": "Raymond Smyth",
+          "entity_type": "person",
+          "title": "Project Manager",
+          "role": "Project Manager",
+          "organization": "MTA Real Estate Department",
+          "source_id_count": 4,
+          "source_ids_sample": ["meeting_doc_129076", "meeting_doc_135391", "meeting_doc_147001", "meeting_doc_167271"],
+          "evidence_refs_sample": ["meeting_doc_129076#p002_c0004", "meeting_doc_135391#p001_c0003"],
+          "source_paths_sample": ["raw/sources/meeting_doc_129076/blocks.jsonl", "raw/sources/meeting_doc_135391/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-129076-raymond-smyth and entity_raymond-smyth-174081 share identity key entity_raymond-smyth.",
+          "records: entity_raymond-smyth-174081 | entity | Raymond Smyth | meeting_doc_174081 | source_stated | unreviewed",
+          "records: entity_meeting-doc-129076-raymond-smyth | entity | Raymond Smyth, Project Manager | meeting_doc_129076 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_raymond-smyth-meeting-doc-151756",
+      "target_id": "entity_meeting-doc-129076-raymond-smyth",
+      "kind": "duplicate_global_identity",
+      "intended_mutation_path": "aliases.entity",
+      "reason": "Both records identify Raymond Smyth as a project manager. The alias is a one-source shard; the target aggregates Raymond Smyth / MTA Real Estate project-manager evidence across four sources.",
+      "evidence": {
+        "shared_identity_keys": ["entity_raymond-smyth"],
+        "canonical_alias": {
+          "record_id": "entity_raymond-smyth-meeting-doc-151756",
+          "display_name": "entity_raymond_smyth_meeting_doc_151756",
+          "entity_name": "Raymond Smyth",
+          "entity_type": "person",
+          "title": "Project Manager",
+          "source_ids": ["meeting_doc_151756"],
+          "evidence_refs": ["meeting_doc_151756#p004_c0002"],
+          "source_paths": ["raw/sources/meeting_doc_151756/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-129076-raymond-smyth",
+          "display_name": "Raymond Smyth, Project Manager",
+          "entity_name": "Raymond Smyth",
+          "entity_type": "person",
+          "title": "Project Manager",
+          "role": "Project Manager",
+          "organization": "MTA Real Estate Department",
+          "source_id_count": 4,
+          "source_ids_sample": ["meeting_doc_129076", "meeting_doc_135391", "meeting_doc_147001", "meeting_doc_167271"],
+          "evidence_refs_sample": ["meeting_doc_129076#p002_c0004", "meeting_doc_135391#p001_c0003"],
+          "source_paths_sample": ["raw/sources/meeting_doc_129076/blocks.jsonl", "raw/sources/meeting_doc_135391/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-129076-raymond-smyth and entity_raymond-smyth-meeting-doc-151756 share identity key entity_raymond-smyth.",
+          "records: entity_raymond-smyth-meeting-doc-151756 | entity | entity_raymond_smyth_meeting_doc_151756 | meeting_doc_151756 | source_stated | unreviewed",
+          "records: entity_meeting-doc-129076-raymond-smyth | entity | Raymond Smyth, Project Manager | meeting_doc_129076 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_raymond-smyth",
+      "target_id": "entity_meeting-doc-129076-raymond-smyth",
+      "kind": "duplicate_global_identity",
+      "intended_mutation_path": "aliases.entity",
+      "reason": "Both records identify Raymond Smyth as an MTA Real Estate project manager. The alias is a three-source shard and the target is the richer four-source Raymond Smyth / MTA Real Estate Department project-manager record.",
+      "evidence": {
+        "shared_identity_keys": ["entity_raymond-smyth"],
+        "canonical_alias": {
+          "record_id": "entity_raymond-smyth",
+          "display_name": "Raymond Smyth",
+          "entity_name": "Raymond Smyth",
+          "entity_type": "person",
+          "title": "Project Manager",
+          "role": "Project Manager",
+          "organization": "MTA Real Estate",
+          "source_ids": ["meeting_doc_133386", "meeting_doc_143381", "meeting_doc_151751"],
+          "evidence_refs": ["meeting_doc_133386#p002_c0004", "meeting_doc_143381#p008_c0004", "meeting_doc_151751#p002_c0004"],
+          "source_paths": ["raw/sources/meeting_doc_133386/blocks.jsonl", "raw/sources/meeting_doc_143381/blocks.jsonl", "raw/sources/meeting_doc_151751/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-129076-raymond-smyth",
+          "display_name": "Raymond Smyth, Project Manager",
+          "entity_name": "Raymond Smyth",
+          "entity_type": "person",
+          "title": "Project Manager",
+          "role": "Project Manager",
+          "organization": "MTA Real Estate Department",
+          "source_id_count": 4,
+          "source_ids_sample": ["meeting_doc_129076", "meeting_doc_135391", "meeting_doc_147001", "meeting_doc_167271"],
+          "evidence_refs_sample": ["meeting_doc_129076#p002_c0004", "meeting_doc_135391#p001_c0003"],
+          "source_paths_sample": ["raw/sources/meeting_doc_129076/blocks.jsonl", "raw/sources/meeting_doc_135391/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-129076-raymond-smyth and entity_raymond-smyth share identity key entity_raymond-smyth.",
+          "records: entity_raymond-smyth | entity | Raymond Smyth | meeting_doc_133386 | source_stated | unreviewed",
+          "records: entity_meeting-doc-129076-raymond-smyth | entity | Raymond Smyth, Project Manager | meeting_doc_129076 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    }
+  ],
+  "blockers": [],
+  "verification": {
+    "commands_run": [
+      "read-only deterministic duplicate_global_identity scan over current data/canonical.db using identityKeysForRecord and identityDoNotMergeOverrideIssueSuppressed",
+      "read-only guard checks against data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, canonical.db identity_aliases, materialized records, and evidence source paths"
+    ],
+    "provider_backed_commands_run": false,
+    "generated_output_commands_run": false,
+    "validator_duplicate_rows_seen": 1463
+  }
+}

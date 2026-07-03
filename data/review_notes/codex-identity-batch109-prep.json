@@ -1,0 +1,334 @@
+{
+  "batch_id": "codex-identity-batch109",
+  "created_at": "2026-06-23T04:41:50Z",
+  "scope": {
+    "record_kind": "entity",
+    "mode": "codex-only durable identity override prep"
+  },
+  "prepared_count": 10,
+  "all_pass": true,
+  "expected_delta": {
+    "duplicate_global_identity": -10
+  },
+  "proposed_aliases": [
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-121176-gcmoc",
+      "target_id": "entity_meeting-doc-121001-gcmoc",
+      "reason": "Same global agency: both records have canonical entity_name Grand Central Madison Operating Company and agency entity_type; alias differs only by source-specific meeting document id and absent acronym.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "Grand Central Madison Operating Company",
+          "entity_name": "Grand Central Madison Operating Company",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_121176"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "Grand Central Madison Operating Company (GCMOC)",
+          "entity_name": "Grand Central Madison Operating Company",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_121001"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_121176#p001_c0007",
+        "meeting_doc_121001#p001_c0007"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-121181-gcm",
+      "target_id": "entity_meeting-doc-121001-gcmoc",
+      "reason": "Same global agency: both records have canonical entity_name Grand Central Madison Operating Company and agency entity_type; the alias is a one-source GCM variant.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "Grand Central Madison Operating Company",
+          "entity_name": "Grand Central Madison Operating Company",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_121181"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "Grand Central Madison Operating Company (GCMOC)",
+          "entity_name": "Grand Central Madison Operating Company",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_121001"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_121181#p001_c0002",
+        "meeting_doc_121001#p001_c0007"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-147256-gcmoc",
+      "target_id": "entity_meeting-doc-121001-gcmoc",
+      "reason": "Same global agency: the alias display_name adds MTA and GCMOC acronym, while the canonical entity_name matches Grand Central Madison Operating Company and entity_type is agency.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Grand Central Madison Operating Company (GCMOC)",
+          "entity_name": "Grand Central Madison Operating Company",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_147256"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "Grand Central Madison Operating Company (GCMOC)",
+          "entity_name": "Grand Central Madison Operating Company",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_121001"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_147256#p211_c0003",
+        "meeting_doc_121001#p001_c0007"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-192306-gcmoc",
+      "target_id": "entity_meeting-doc-121001-gcmoc",
+      "reason": "Same global agency: both records identify Grand Central Madison Operating Company with GCMOC acronym context and agency entity_type.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "Grand Central Madison Operating Company (GCMOC)",
+          "entity_name": "Grand Central Madison Operating Company",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_192306"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "Grand Central Madison Operating Company (GCMOC)",
+          "entity_name": "Grand Central Madison Operating Company",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_121001"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_192306#p011_c0003",
+        "meeting_doc_121001#p001_c0007"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-113971-michael-baker",
+      "target_id": "entity_meeting-doc-111791-michael-baker",
+      "reason": "Same global company: both records have canonical entity_name Michael Baker International; consultant is a role/type variant for the same named company.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "Michael Baker International",
+          "entity_name": "Michael Baker International",
+          "entity_type": "consultant",
+          "primary_source_id": "meeting_doc_113971"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "Michael Baker International",
+          "entity_name": "Michael Baker International",
+          "entity_type": "company",
+          "primary_source_id": "meeting_doc_111791"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_113971#p017_c0005",
+        "meeting_doc_111791#p014_c0003"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-121021-michael-baker",
+      "target_id": "entity_meeting-doc-111791-michael-baker",
+      "reason": "Same global company: both records use exact canonical entity_name Michael Baker International; consultant is a source role variant, not a distinct entity.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "Michael Baker International",
+          "entity_name": "Michael Baker International",
+          "entity_type": "consultant",
+          "primary_source_id": "meeting_doc_121021"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "Michael Baker International",
+          "entity_name": "Michael Baker International",
+          "entity_type": "company",
+          "primary_source_id": "meeting_doc_111791"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_121021#p017_c0003",
+        "meeting_doc_111791#p014_c0003"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-131491-iec-michael-baker",
+      "target_id": "entity_meeting-doc-111791-michael-baker",
+      "reason": "Same global company: alias display_name says Independent Engineering Consultant - Michael Baker International, while canonical entity_name is Michael Baker International; the IEC wording is a role descriptor.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "Independent Engineering Consultant (IEC) - Michael Baker International",
+          "entity_name": "Michael Baker International",
+          "entity_type": "consultant",
+          "primary_source_id": "meeting_doc_131491"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "Michael Baker International",
+          "entity_name": "Michael Baker International",
+          "entity_type": "company",
+          "primary_source_id": "meeting_doc_111791"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_131491#p018_c0004",
+        "meeting_doc_111791#p014_c0003"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_michael-baker-meeting-doc-115231",
+      "target_id": "entity_meeting-doc-111791-michael-baker",
+      "reason": "Same global company: both records use exact canonical entity_name Michael Baker International; alias entity_type agency appears to be a source classification variant.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "Michael Baker International",
+          "entity_name": "Michael Baker International",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_115231"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "Michael Baker International",
+          "entity_name": "Michael Baker International",
+          "entity_type": "company",
+          "primary_source_id": "meeting_doc_111791"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_115231#p015_c0004",
+        "meeting_doc_111791#p014_c0003"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_nypa-37081",
+      "target_id": "entity_meeting-doc-127476-ny-power-authority",
+      "reason": "Same global agency: both records have canonical entity_name New York Power Authority and agency entity_type; alias display_name only adds the NYPA acronym.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "New York Power Authority (NYPA)",
+          "entity_name": "New York Power Authority",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_37081"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "New York Power Authority",
+          "entity_name": "New York Power Authority",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_127476"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_37081#p147_c0003",
+        "meeting_doc_127476#p003_c0011"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_nypa-oct2023",
+      "target_id": "entity_meeting-doc-127476-ny-power-authority",
+      "reason": "Same global agency: alias display_name is NYPA (New York Power Authority), and both records have canonical entity_name New York Power Authority with agency entity_type.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "NYPA (New York Power Authority)",
+          "entity_name": "New York Power Authority",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_124296"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "New York Power Authority",
+          "entity_name": "New York Power Authority",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_127476"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_124296#p006_c0007",
+        "meeting_doc_127476#p003_c0011"
+      ]
+    }
+  ],
+  "guard_summary": {
+    "record_existence_and_kind": {
+      "status": "pass",
+      "command": "sqlite3 -json data/canonical.db \"SELECT r.record_id, r.record_kind, r.display_name, e.entity_name, e.entity_type, r.primary_source_id FROM records r JOIN entities e USING(record_id) WHERE r.record_id IN (...) ORDER BY r.record_id;\"",
+      "evidence": "Returned all 13 selected alias/target records; every row had record_kind entity."
+    },
+    "source_evidence_refs": {
+      "status": "pass",
+      "command": "sqlite3 -json data/canonical.db \"SELECT record_id, json_group_array(source_id || '#' || block_id) AS evidence_refs FROM evidence_refs WHERE record_id IN (...) GROUP BY record_id ORDER BY record_id;\"",
+      "evidence": "Returned source/block evidence refs for each selected alias and target."
+    },
+    "existing_alias_conflicts": {
+      "status": "pass",
+      "command": "For each proposed alias id: jq -er --arg id \"$id\" '.aliases.entity[$id] // empty' data/identity-overrides/merges.json; sqlite3 data/canonical.db \"select target from identity_aliases where kind='entity' and alias='$id';\"; jq -r --arg id \"$id\" 'select(type==\"object\") | (.proposed_aliases[]?.alias_id? // empty) | select(.==$id)' data/review_notes/codex-identity-batch0{47..99}-prep.json data/review_notes/codex-identity-batch1{00..08}-prep.json",
+      "evidence": "No output for all 10 proposed alias ids."
+    },
+    "do_not_merge_conflicts": {
+      "status": "pass",
+      "command": "jq -n --slurpfile prep data/review_notes/codex-identity-batch109-prep.json --slurpfile dnm data/identity-overrides/do-not-merge.json '[ $prep[0].proposed_aliases[] as $x | $dnm[0].pairs.entity[]? | select(((.record_ids[0] == $x.alias_id and .record_ids[1] == $x.target_id) or (.record_ids[0] == $x.target_id and .record_ids[1] == $x.alias_id))) ] | length'; exact-pair sqlite3 COUNT(*) against do_not_merge",
+      "evidence": "Both corrected do-not-merge checks returned 0."
+    },
+    "prior_prep_conflicts": {
+      "status": "pass",
+      "command": "comm -12 <(jq -r '.proposed_aliases[].alias_id' data/review_notes/codex-identity-batch109-prep.json | sort -u) <(jq -r '.. | objects | .alias_id? // empty' data/review_notes/codex-identity-batch0{47..99}-prep.json data/review_notes/codex-identity-batch1{00..08}-prep.json 2>/dev/null | sort -u) | wc -l",
+      "evidence": "Returned 0, so none of the 10 alias ids appears in prior identity prep artifacts through batch108."
+    },
+    "forbidden_command_compliance": {
+      "status": "pass",
+      "commands_used": [
+        "pwd",
+        "rg --files",
+        "head",
+        "jq",
+        "sqlite3 data/canonical.db",
+        "comm",
+        "sort",
+        "uniq",
+        "wc",
+        "date -u",
+        "git status --short",
+        "apply_patch"
+      ],
+      "forbidden_commands_not_run": [
+        "canonicalize",
+        "canonicalize-wave",
+        "canonicalize-review",
+        "campaign dedup",
+        "identity-review-run",
+        "write",
+        "ask",
+        "schema-propose",
+        "ontology-normalize-run",
+        "materialize",
+        "export-jsonl",
+        "validate",
+        "profiles/providers/provider-backed commands"
+      ]
+    }
+  }
+}

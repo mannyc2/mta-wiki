@@ -1,0 +1,641 @@
+{
+  "note_id": "codex-identity-batch224-mta-parent-prep",
+  "batch": "identity224",
+  "author": "codex",
+  "created_at": "2026-06-23T00:00:00Z",
+  "scope": {
+    "focus": "Remaining live MTA parent/agency contamination duplicate_global_identity issues after identity223-repair.",
+    "live_issue_source": "data/identity-review/validation_issues.jsonl",
+    "filtered_records_or_terms": [
+      "entity_meeting-doc-143306-mta-hq",
+      "entity_meeting-doc-154986-aar",
+      "entity_meeting-doc-64066-mta",
+      "entity_mta-metropolitan-transportation-authority",
+      "entity_mta-overall",
+      "entity_mta-real-estate",
+      "entity_mta-bridges-and-tunnels",
+      "entity_mta-bus-company",
+      "entity_mta-entity-update-2025",
+      "GCMOC",
+      "SIRTOA",
+      "LIRR",
+      "AAR",
+      "DDCR",
+      "parent MTA acronym collisions"
+    ],
+    "exclusions": [
+      "Pairs already present in current data/identity-overrides/merges.json or data/identity-overrides/do-not-merge.json were not re-proposed as durable decisions.",
+      "Broad parent-MTA-to-parent-MTA aliases were skipped when current clusters still carry service, officer, department, committee, or inconsistent entity_type contamination."
+    ]
+  },
+  "prepared_count": 15,
+  "decision_type_counts": {
+    "alias_merge": 0,
+    "do_not_merge": 15,
+    "skipped_review_only": 5
+  },
+  "proposed_durable_decisions": [
+    {
+      "decision_id": "identity224-mta-parent-001",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_annual-report-2021-lirr",
+        "entity_meeting-doc-143306-mta-hq"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_long-island-rail-rd"
+        ],
+        "messages": [
+          "Global entity records entity_annual-report-2021-lirr and entity_meeting-doc-143306-mta-hq share identity key entity_long-island-rail-rd."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_annual-report-2021-lirr",
+          "display_name": "MTA Long Island Rail Road",
+          "record_identity": "public benefit corporation subsidiary / railroad agency",
+          "evidence_ref": "annual_report_narrative_2021#p015_c0001",
+          "quote": "Long Island Rail Road--2021 Performance"
+        },
+        {
+          "record_id": "entity_meeting-doc-143306-mta-hq",
+          "display_name": "MTA HQ",
+          "record_identity": "headquarters / administrative agency unit",
+          "evidence_ref": "meeting_doc_100241#p004_c0006",
+          "quote": "MTA Headquarters"
+        }
+      ],
+      "reason": "LIRR is a railroad/operating subsidiary; MTA HQ is a headquarters administrative unit. A stray LIRR key on the HQ cluster is agency-list contamination, not identity.",
+      "guard_notes": "Keep railroad subsidiaries separate from HQ/administrative units. Use hierarchy or budget-table context rather than identity aliases."
+    },
+    {
+      "decision_id": "identity224-mta-parent-002",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_mabstoa",
+        "entity_mta-bus-company"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_manhattan-and-bronx-surface-transit-operating-authority"
+        ],
+        "messages": [
+          "Global entity records entity_mabstoa and entity_mta-bus-company share identity key entity_manhattan-and-bronx-surface-transit-operating-authority."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_mabstoa",
+          "display_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "record_identity": "agency",
+          "evidence_ref": "meeting_doc_115391#p004_c0004",
+          "quote": "Manhattan and Bronx Surface Transit Operating Authority"
+        },
+        {
+          "record_id": "entity_mta-bus-company",
+          "display_name": "MTA Bus Company",
+          "record_identity": "transit agency division / bus operating company",
+          "evidence_ref": "behind_schedule_2025#p010_c0003",
+          "quote": "MTA Bus Company"
+        }
+      ],
+      "reason": "MaBSTOA and MTA Bus Company are separately named bus-operating entities in MTA/NYCT contexts. Shared combined committee or operations text should not collapse them.",
+      "guard_notes": "Keep NYCT, MaBSTOA, SIRTOA, and MTA Bus Company as distinct related bus entities."
+    },
+    {
+      "decision_id": "identity224-mta-parent-003",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-100241-staten-island-railway",
+        "entity_mta-entity-update-2025"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_staten-island-railway"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-100241-staten-island-railway and entity_mta-entity-update-2025 share identity key entity_staten-island-railway."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-100241-staten-island-railway",
+          "display_name": "Staten Island Railway",
+          "record_identity": "agency / SIRTOA-SIR cluster",
+          "evidence_ref": "meeting_doc_100366#p016_c0001",
+          "quote": "STATEN ISLAND RAILWAY"
+        },
+        {
+          "record_id": "entity_mta-entity-update-2025",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "parent transit authority",
+          "evidence_ref": "better_buses_action_plan_2019#p002_c0004",
+          "quote": "Metropolitan Transportation Authority (MTA)"
+        }
+      ],
+      "reason": "Staten Island Railway/SIRTOA is an operating agency/service identity; parent MTA is the umbrella authority. They are related but not identical.",
+      "guard_notes": "Do not merge SIR/SIRTOA into parent MTA on broad MTA organizational listings."
+    },
+    {
+      "decision_id": "identity224-mta-parent-004",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-121001-gcmoc",
+        "entity_mta-entity-update-2025"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_grand-central-madison-operating-company",
+          "entity_grand-central-madison-operating-company-gcmoc"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-121001-gcmoc and entity_mta-entity-update-2025 share identity key entity_grand-central-madison-operating-company.",
+          "Global entity records entity_meeting-doc-121001-gcmoc and entity_mta-entity-update-2025 share identity key entity_grand-central-madison-operating-company-gcmoc."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-121001-gcmoc",
+          "display_name": "Grand Central Madison Concourse Operating Company",
+          "record_identity": "agency / operating company",
+          "evidence_ref": "meeting_doc_121001#p001_c0007",
+          "quote": "Grand Central Madison Operating Company (GCMOC)"
+        },
+        {
+          "record_id": "entity_mta-entity-update-2025",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "parent transit authority",
+          "evidence_ref": "better_buses_action_plan_2019#p002_c0004",
+          "quote": "Metropolitan Transportation Authority (MTA)"
+        }
+      ],
+      "reason": "GCMOC is a named operating company for Grand Central Madison context; it is not the parent Metropolitan Transportation Authority.",
+      "guard_notes": "Keep GCMOC aliases together, but separate operating-company identity from parent MTA."
+    },
+    {
+      "decision_id": "identity224-mta-parent-005",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-128981-nyct",
+        "entity_meeting-doc-64066-mta"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_mta"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-128981-nyct and entity_meeting-doc-64066-mta share identity key entity_mta."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-128981-nyct",
+          "display_name": "New York City Transit Authority (NYCT)",
+          "record_identity": "agency",
+          "evidence_ref": "meeting_doc_128981#p033_c0004",
+          "quote": "Due to New York City Transit Authority"
+        },
+        {
+          "record_id": "entity_meeting-doc-64066-mta",
+          "display_name": "Metropolitan Transportation Authority",
+          "record_identity": "parent agency",
+          "evidence_ref": "meeting_doc_64066#p001_c0002",
+          "quote": "Metropolitan Transportation Authority"
+        }
+      ],
+      "reason": "NYCT is an operating agency; the other record is the parent MTA. The bare MTA acronym is not sufficient identity evidence.",
+      "guard_notes": "Use parent/subsidiary relations for NYCT under MTA; do not alias NYCT to parent MTA."
+    },
+    {
+      "decision_id": "identity224-mta-parent-006",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-128981-nyct",
+        "entity_meeting-doc-ddcr"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_mta"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-128981-nyct and entity_meeting-doc-ddcr share identity key entity_mta."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-128981-nyct",
+          "display_name": "New York City Transit Authority (NYCT)",
+          "record_identity": "agency",
+          "evidence_ref": "meeting_doc_128981#p033_c0004",
+          "quote": "Due to New York City Transit Authority"
+        },
+        {
+          "record_id": "entity_meeting-doc-ddcr",
+          "display_name": "MTA Department of Diversity and Civil Rights",
+          "record_identity": "department",
+          "evidence_ref": "meeting_doc_102781#p003_c0015",
+          "quote": "MTA Department of Diversity and Civil Rights (\"DDCR\")"
+        }
+      ],
+      "reason": "NYCT is an operating agency; DDCR is an MTA department. They are distinct organizational units despite the broad MTA acronym.",
+      "guard_notes": "Keep MTA departments separate from operating agencies; represent agency/department relationships explicitly."
+    },
+    {
+      "decision_id": "identity224-mta-parent-007",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-128981-nyct",
+        "entity_mta-bridges-and-tunnels"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_mta"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-128981-nyct and entity_mta-bridges-and-tunnels share identity key entity_mta."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-128981-nyct",
+          "display_name": "New York City Transit Authority (NYCT)",
+          "record_identity": "agency",
+          "evidence_ref": "meeting_doc_128981#p033_c0004",
+          "quote": "Due to New York City Transit Authority"
+        },
+        {
+          "record_id": "entity_mta-bridges-and-tunnels",
+          "display_name": "MTA Bridges and Tunnels",
+          "record_identity": "agency / TBTA",
+          "evidence_ref": "annual_report_narrative_2021#p021_c0001",
+          "quote": "Bridges and Tunnels--2021 Performance"
+        }
+      ],
+      "reason": "NYCT and MTA Bridges and Tunnels/TBTA are sibling MTA agencies, not the same entity.",
+      "guard_notes": "Do not merge sibling MTA agencies on the bare MTA acronym."
+    },
+    {
+      "decision_id": "identity224-mta-parent-008",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-128981-nyct",
+        "entity_mta-metropolitan-transportation-authority"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_mta"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-128981-nyct and entity_mta-metropolitan-transportation-authority share identity key entity_mta."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-128981-nyct",
+          "display_name": "New York City Transit Authority (NYCT)",
+          "record_identity": "agency",
+          "evidence_ref": "meeting_doc_128981#p033_c0004",
+          "quote": "Due to New York City Transit Authority"
+        },
+        {
+          "record_id": "entity_mta-metropolitan-transportation-authority",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "parent agency / public benefit corporation",
+          "evidence_ref": "meeting_doc_201776#p351_c0001",
+          "quote": "METROPOLITAN TRANSPORTATION AUTHORITY"
+        }
+      ],
+      "reason": "NYCT is a component operating agency; Metropolitan Transportation Authority is the parent authority/corporation.",
+      "guard_notes": "Treat MTA branding in NYCT records as affiliation, not identity."
+    },
+    {
+      "decision_id": "identity224-mta-parent-009",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-128981-nyct",
+        "entity_mta-overall"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_mta"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-128981-nyct and entity_mta-overall share identity key entity_mta."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-128981-nyct",
+          "display_name": "New York City Transit Authority (NYCT)",
+          "record_identity": "agency",
+          "evidence_ref": "meeting_doc_128981#p033_c0004",
+          "quote": "Due to New York City Transit Authority"
+        },
+        {
+          "record_id": "entity_mta-overall",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "public benefit corporation",
+          "evidence_ref": "meeting_doc_179691#p003_c0009",
+          "quote": "The Metropolitan Transportation Authority (\"MTA\" or \"MTA Group\")"
+        }
+      ],
+      "reason": "NYCT is an operating agency; the MTA Overall record is the umbrella public benefit corporation.",
+      "guard_notes": "Keep umbrella corporate/authority records separate from component agencies."
+    },
+    {
+      "decision_id": "identity224-mta-parent-010",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-128981-nyct",
+        "entity_mta-real-estate"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_mta"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-128981-nyct and entity_mta-real-estate share identity key entity_mta."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-128981-nyct",
+          "display_name": "New York City Transit Authority (NYCT)",
+          "record_identity": "agency",
+          "evidence_ref": "meeting_doc_128981#p033_c0004",
+          "quote": "Due to New York City Transit Authority"
+        },
+        {
+          "record_id": "entity_mta-real-estate",
+          "display_name": "MTA Real Estate",
+          "record_identity": "agency department",
+          "evidence_ref": "meeting_doc_105786#p004_c0012",
+          "quote": "MTA Real Estate will provide an annual report"
+        }
+      ],
+      "reason": "NYCT and MTA Real Estate are different organizational units: an operating transit agency and a real-estate department/function.",
+      "guard_notes": "Do not merge operating agencies with MTA departments on generic MTA acronym keys."
+    },
+    {
+      "decision_id": "identity224-mta-parent-011",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-154986-aar",
+        "entity_meeting-doc-64066-mta"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_metropolitan-transportation-authority-mta"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-154986-aar and entity_meeting-doc-64066-mta share identity key entity_metropolitan-transportation-authority-mta."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-154986-aar",
+          "display_name": "MTA Access-a-Ride",
+          "record_identity": "paratransit service program",
+          "evidence_ref": "annual_report_narrative_2021#p028_c0002",
+          "quote": "Access-a-Ride (AAR)"
+        },
+        {
+          "record_id": "entity_meeting-doc-64066-mta",
+          "display_name": "Metropolitan Transportation Authority",
+          "record_identity": "parent agency",
+          "evidence_ref": "meeting_doc_64066#p001_c0002",
+          "quote": "Metropolitan Transportation Authority"
+        }
+      ],
+      "reason": "Access-a-Ride is a paratransit service/program; Metropolitan Transportation Authority is the parent agency.",
+      "guard_notes": "Keep AAR service-program aliases separate from parent MTA aliases."
+    },
+    {
+      "decision_id": "identity224-mta-parent-012",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-154986-aar",
+        "entity_mta-metropolitan-transportation-authority"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_metropolitan-transportation-authority-mta"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-154986-aar and entity_mta-metropolitan-transportation-authority share identity key entity_metropolitan-transportation-authority-mta."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-154986-aar",
+          "display_name": "MTA Access-a-Ride",
+          "record_identity": "paratransit service program",
+          "evidence_ref": "annual_report_narrative_2021#p028_c0002",
+          "quote": "Access-a-Ride (AAR)"
+        },
+        {
+          "record_id": "entity_mta-metropolitan-transportation-authority",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "parent agency / public benefit corporation",
+          "evidence_ref": "meeting_doc_201776#p351_c0001",
+          "quote": "METROPOLITAN TRANSPORTATION AUTHORITY"
+        }
+      ],
+      "reason": "AAR is a service program; this MTA record is the parent authority/corporation.",
+      "guard_notes": "Do not merge AAR with umbrella MTA records solely because AAR is branded as MTA Access-a-Ride."
+    },
+    {
+      "decision_id": "identity224-mta-parent-013",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-154986-aar",
+        "entity_mta-nyct"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_metropolitan-transportation-authority-mta"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-154986-aar and entity_mta-nyct share identity key entity_metropolitan-transportation-authority-mta."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-154986-aar",
+          "display_name": "MTA Access-a-Ride",
+          "record_identity": "paratransit service program",
+          "evidence_ref": "annual_report_narrative_2021#p028_c0002",
+          "quote": "Access-a-Ride (AAR)"
+        },
+        {
+          "record_id": "entity_mta-nyct",
+          "display_name": "MTA NYCT Reference",
+          "record_identity": "agency",
+          "evidence_ref": "m86_sbs_progress_report_2017#p003_c0003",
+          "quote": "MTA New York City Transit (NYCT)"
+        }
+      ],
+      "reason": "AAR is a paratransit service program managed in NYCT/Department of Buses context; NYCT is the operating agency, not the same identity.",
+      "guard_notes": "Represent AAR management/operation through relations rather than merging service program and agency."
+    },
+    {
+      "decision_id": "identity224-mta-parent-014",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-154986-aar",
+        "entity_mta-overall"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_metropolitan-transportation-authority-mta"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-154986-aar and entity_mta-overall share identity key entity_metropolitan-transportation-authority-mta."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-154986-aar",
+          "display_name": "MTA Access-a-Ride",
+          "record_identity": "paratransit service program",
+          "evidence_ref": "annual_report_narrative_2021#p028_c0002",
+          "quote": "Access-a-Ride (AAR)"
+        },
+        {
+          "record_id": "entity_mta-overall",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "public benefit corporation",
+          "evidence_ref": "meeting_doc_179691#p003_c0009",
+          "quote": "The Metropolitan Transportation Authority (\"MTA\" or \"MTA Group\")"
+        }
+      ],
+      "reason": "AAR is a service program; the MTA Overall record is the umbrella public benefit corporation.",
+      "guard_notes": "Do not merge branded service programs into umbrella MTA parent records."
+    },
+    {
+      "decision_id": "identity224-mta-parent-015",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_mta-bus-company",
+        "entity_mta-nyct"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_mta-bus-woodhaven-workshop2"
+        ],
+        "messages": [
+          "Global entity records entity_mta-bus-company and entity_mta-nyct share identity key entity_mta-bus-woodhaven-workshop2."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_mta-bus-company",
+          "display_name": "MTA Bus Company",
+          "record_identity": "transit agency division / bus operating company",
+          "evidence_ref": "behind_schedule_2025#p010_c0003",
+          "quote": "MTA Bus Company"
+        },
+        {
+          "record_id": "entity_mta-nyct",
+          "display_name": "MTA NYCT Reference",
+          "record_identity": "agency",
+          "evidence_ref": "m86_sbs_progress_report_2017#p003_c0003",
+          "quote": "MTA New York City Transit (NYCT)"
+        }
+      ],
+      "reason": "MTA Bus Company and NYCT are related bus-operating entities but not exact same identity.",
+      "guard_notes": "Do not collapse NYCT/New York City Bus and MTA Bus Company because of joint bus project or workshop labels."
+    }
+  ],
+  "skipped_review_only": [
+    {
+      "candidate": "entity_meeting-doc-64066-mta <> entity_mta-metropolitan-transportation-authority",
+      "confidence": "medium",
+      "live_validator_evidence": [
+        "Global entity records entity_meeting-doc-64066-mta and entity_mta-metropolitan-transportation-authority share identity key entity_mta-metropolitan-transportation-authority."
+      ],
+      "reason": "Likely broad parent-MTA alias in isolation, but current parent clusters still carry inconsistent entity_type signals and contamination from officer, fuel-hedge, real-estate, and committee contexts. Leave for a dedicated parent-MTA canonical-target pass."
+    },
+    {
+      "candidate": "entity_department-of-buses <> entity_mta-nyct-evp-frank-farrell",
+      "confidence": "high_but_out_of_scope",
+      "live_validator_evidence": [
+        "Global entity records entity_department-of-buses and entity_mta-nyct-evp-frank-farrell share identity key entity_mta-nyct."
+      ],
+      "reason": "This is a person-vs-department DNM candidate, but it is not one of the requested MTA parent/agency contamination records for identity224."
+    },
+    {
+      "candidate": "entity_meeting-doc-102746-committee <> entity_mta-metro-north-2015-webster-map",
+      "confidence": "medium",
+      "live_validator_evidence": [
+        "Global entity records entity_meeting-doc-102746-committee and entity_mta-metro-north-2015-webster-map share identity key entity_metro-north-commuter-railroad-company.",
+        "Global entity records entity_meeting-doc-102746-committee and entity_mta-metro-north-2015-webster-map share identity key entity_metro-north-commuter-railroad-company-metro-north."
+      ],
+      "reason": "Likely committee-vs-agency/reference DNM, but Metro-North was handled in identity223 and this batch is focused on the remaining MTA parent/agency contamination terms named in the prompt."
+    },
+    {
+      "candidate": "entity_meeting-doc-140466-nyct-committee-members <> entity_nyct-mta-bus-committee-charter",
+      "confidence": "medium",
+      "live_validator_evidence": [
+        "Global entity records entity_meeting-doc-140466-nyct-committee-members and entity_nyct-mta-bus-committee-charter share identity key entity_nyct-committee."
+      ],
+      "reason": "Committee-members vs committee-charter identity needs a committee-specific cleanup pass; not a parent-MTA or named agency record in this scope."
+    },
+    {
+      "candidate": "Pairs already covered by current overrides but still present in validation_issues.jsonl",
+      "confidence": "skipped_existing_override",
+      "reason": "Current validation_issues.jsonl appears not to reflect all applied identity223-repair overrides. Examples include GCMOC exact alias, SIRTOA/Staten Island Railway alias, TBTA/Bridges alias, MTA Real Estate aliases, and several parent-vs-department DNMs already present in data/identity-overrides/*.json. These were not duplicated in this artifact."
+    }
+  ],
+  "blockers": [
+    "No materialize/validate/export commands were run by request, so liveness was determined from the current validation_issues.jsonl and current identity override files rather than a freshly regenerated validation report.",
+    "Some live validation messages appear stale relative to current identity-overrides; the artifact avoids duplicating existing override decisions."
+  ],
+  "commands_not_run": [
+    "provider-backed commands",
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "export-jsonl or generated-output commands"
+  ],
+  "commands_run": [
+    "pwd && rg --files | rg '(^data/review_notes/|identity223|identity224|duplicate_global_identity|canonical|identity)'",
+    "git status --short",
+    "sed -n '1,220p' LOG.md",
+    "jq schema/count inspection for data/review_notes/codex-identity-batch222-mta-parent-prep.json and identity223 prep artifacts",
+    "jq filters over data/identity-review/validation_issues.jsonl for duplicate_global_identity scope",
+    "jq filters over data/identity-review/records.jsonl and data/canonical/entities.jsonl for scoped entity evidence",
+    "jq/node read-only comparison of scoped live duplicate pairs against data/identity-overrides/merges.json and data/identity-overrides/do-not-merge.json",
+    "test ! -e data/review_notes/codex-identity-batch224-mta-parent-prep.json"
+  ]
+}

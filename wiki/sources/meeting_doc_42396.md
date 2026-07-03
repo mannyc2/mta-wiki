@@ -1,0 +1,2063 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-42396"
+record_kind: "source"
+display_name: "Finance Committee Meeting Book June 2021"
+source_id: "meeting_doc_42396"
+source_ids:
+  - "meeting_doc_42396"
+local_observation_id: "source_meeting_doc_42396"
+local_observation_ids:
+  - "source_meeting_doc_42396"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T23:23:36.770Z"
+raw_text: "Finance Committee Meeting book for June 2021 covering MTA Board and Committee meetings, with agenda items including budgets, procurements, real estate actions, debt oversight, ridership data, and financial statements."
+submission_ids:
+  - "sub_58a2d01597508bf4"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting book"
+  date_text: "June 2021"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2021-06"
+    precision: "month"
+    raw_text: "June 2021"
+  document_date: "June 2021"
+  document_date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2021-06"
+    precision: "month"
+    raw_text: "June 2021"
+  published_date_normalized: "2021-06"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "Finance Committee Meeting"
+evidence_refs:
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_42396#p001_c0003"
+    page_number: 1
+    role: "document_title"
+    source_id: "meeting_doc_42396"
+    source_path: "raw/sources/meeting_doc_42396/blocks.jsonl"
+    text_sha256: "sha256:2108568bb506ebe8d03fc87bbd3965a05d53438bfcf3beb97f2413dfa75d1474"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_42396#p001_c0004"
+    page_number: 1
+    role: "document_date"
+    source_id: "meeting_doc_42396"
+    source_path: "raw/sources/meeting_doc_42396/blocks.jsonl"
+    text_sha256: "sha256:ba7637956fb2794f9a57449700c4c9fd7e2f995fa7d79713e705fa1bc40f0a33"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0004"
+    evidence_id: "meeting_doc_42396#p002_c0004"
+    page_number: 2
+    role: "meeting_date"
+    source_id: "meeting_doc_42396"
+    source_path: "raw/sources/meeting_doc_42396/blocks.jsonl"
+    text_sha256: "sha256:5dd86b7c0c007d55801e44e7caf6251fc9b8337ff764ca3a01dfea31204a192e"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0005"
+    evidence_id: "meeting_doc_42396#p002_c0005"
+    page_number: 2
+    role: "meeting_time"
+    source_id: "meeting_doc_42396"
+    source_path: "raw/sources/meeting_doc_42396/blocks.jsonl"
+    text_sha256: "sha256:fe4a130b927fbc543a4cbff377d9a449f1815289505e1466eee5c526a568b195"
+    text_source: "raw_text"
+---
+
+# Finance Committee Meeting Book
+
+source_id: meeting_doc_42396
+citation: cite block ids exactly as shown in square brackets
+document: 1057 block(s)
+
+## Page 1
+
+> [p001_c0001] The logo for the Metropolitan Transportation Authority (MTA) is a black circle with the letters "MTA" in white, bold, sans-serif font.
+[p001_c0002] Metropolitan Transportation Authority
+### [p001_c0003] Finance Committee Meeting
+[p001_c0004] June 2021
+### [p001_c0005] Committee Members
+[p001_c0006] L. Schwartz, Chair
+[p001_c0007] A. Albert
+[p001_c0008] J. Barbas
+[p001_c0009] N. Brown
+[p001_c0010] V. Calise
+[p001_c0011] R. Glucksman
+[p001_c0012] R. Herman
+[p001_c0013] D. Jones
+[p001_c0014] L. Lacewell
+[p001_c0015] K. Law
+[p001_c0016] R. Linn
+[p001_c0017] R. Mujica
+[p001_c0018] J. Samuelsen
+[p001_c0019] V. Tessitore
+[p001_c0020] N. Zuckerman
+
+## Page 2
+
+### [p002_c0001] Finance Committee Meeting
+[p002_c0002] 2 Broadway, 20th Floor Board Room
+[p002_c0003] New York, NY 10004
+[p002_c0004] Wednesday, 6/23/2021
+[p002_c0005] 10:00 AM - 5:00 PM ET
+### [p002_c0006] 1. SUMMARY OF ACTIONS
+[p002_c0007] Summary of Actions - Page 4
+### [p002_c0008] 2. PUBLIC COMMENTS PERIOD
+### [p002_c0009] 3. APPROVAL OF MINUTES – MAY 26, 2021
+[p002_c0010] Finance Committee Minutes - Page 5
+### [p002_c0011] 4. 2021 COMMITTEE WORK PLAN
+[p002_c0012] Work Plan - Page 6
+### [p002_c0013] 5. BUDGETS/CAPITAL CYCLE
+[p002_c0014] BudgetWatch (Handout available in the Exhibit Book and MTA.Info)
+[p002_c0015] Finance Watch
+[p002_c0016] Finance Watch - Page 14
+### [p002_c0017] 6. MTA HEADQUARTERS & ALL-AGENCY ITEMS
+### [p002_c0018] Action Items
+[p002_c0019] OCIP Program Covering 2020-2024 Capital Plan Awards Over the Next Year - Page 25
+[p002_c0020] 2021 State PWEF Assessment - Page 27
+### [p002_c0021] Procurements
+[p002_c0022] MTAHQ Procurement Report - Page 28
+[p002_c0023] MTAHQ Competitive Procurements - Page 31
+### [p002_c0024] 7. METRO-NORTH RAILROAD & LONG ISLAND RAIL ROAD
+[p002_c0025] LIRR Procurement - Page 36
+### [p002_c0026] 8. NEW YORK CITY TRANSIT, and MTA BUS OPERATIONS (No Items)
+### [p002_c0027] 9. BRIDGES AND TUNNELS (No Items)
+
+## Page 3
+
+### [p003_c0001] 10. FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY (No Items)
+### [p003_c0002] 11. MTA CONSOLIDATED REPORTS
+[p003_c0003] Statement of Operations - Page 38
+[p003_c0004] Overtime - Page 47
+[p003_c0005] Subsidy, Interagency Loan and Stabilization Fund Transactions - Page 50
+[p003_c0006] Debt Service - Page 61
+[p003_c0007] Positions - Page 63
+[p003_c0008] Farebox Ratios - Page 66
+[p003_c0009] Ridership - Page 67
+[p003_c0010] Fuel Hedge Program - Page 91
+### [p003_c0011] 12. REAL ESTATE AGENDA
+### [p003_c0012] Action Items
+[p003_c0013] Real Estate Action Items - Page 94
+### [p003_c0014] Report and Information Items
+[p003_c0015] Real Estate Info Items - Page 109
+
+## Page 4
+
+### [p004_c0001] FINANCE COMMITTEE JUNE 2021
+[p004_c0002]
+
+```text
+Action Amount Short Description OCIP Program Covering 2020-2024 Capital Plan Awards Over the Next Year To obtain Board approval to procure additional insurance coverage under the MTA's 2015-2019 Capital Plan Owner Controlled Insurance Program (OCIP) to include a portion of the 2020-2024 Capital Plan and extend the contract term by two years. PWEF Assessment The MTA Division of Management and Budget, assisted by MTA Capital Program Management, should prepare the usual annual staff summary authorizing the payment of this assessment to the State. The State levies an assessment of the value of construction-contract awards to cover its cost of enforcing prevailing-wage legislation. Agency Vendor Name Total Amount MTAHQ Trapeze Software Group $ 21,174,938.00 Crew Dispatching Management System MTAHQ Jennifer Temps $1,820,000 (aggregate) As-needed temporary medical staffing MTAHQ Medical Search International see above As-needed temporary medical staffing MTAHQ New Wave People, Inc. see above As-needed temporary medical staffing MTAHQ Penda Aiken, Inc. see above As-needed temporary medical staffing MTAHQ White Glove Placement see above As-needed temporary medical staffing MTAHQ Winston Support Services see above As-needed temporary medical staffing LIRR Knorr Brake Company $ 161,900,000.00 OEM Purchase Agreement for Spare Parts - LIRR, MNR and NYCT LIRR Merak see above OEM Purchase Agreement for Spare Parts - LIRR, MNR and NYCT LIRR New York Air Brake see above OEM Purchase Agreement for Spare Parts - LIRR, MNR and NYCT MTA Real Estate Vendor Name Amount Short Description License agreement at Riverhead Yard Twin Forks Chapter of the National Railway Historical Society M.R.R. Properties, Inc $1.00, payment waived Storage of 7 Rail Cars Determinations & Findings for critical real estate acquisitions for Second Avenue Subway Phase 2 *1801 Park Avenue Acquisitions LLC, c/o Durst Organization. *1815 Park Avenue Acquisitions LLC, c/o Durst Organization *160 East 125th Owner LLC, c/o Extell Development *F & D. 2327Ave LLC *Lucky Machine Wash Corp *II Macedonian Pentecostal Church *Pecora Group Development LLC N/A Approval of EDPL determination & findings License Agreement with Quality Automotive Services Inc. (Queens) Quality Automotive Services Inc. $12,000 annually Parking and storage of vehicles MTA Policy: Amendment to Policy #11 Various $10,000 monthly Policy# 11 allows MTARE to negotiate access rights and privileges required by MTA operating agencies for capital projects or maintenance or repairs of operating facilities. These access rights are typically for the duration of the project and subject to a monthly fee. Such permits or licenses are typically obtained from other public entities and private property owners. MTARE wants Board approval to raise the fee amount to $10,000.
+```
+[p004_c0003] _Master Page # 4 of 114 - Finance Committee Meeting 6/23/2021_
+[p004_c0004] _1 of 1_
+
+## Page 5
+
+### [p005_c0001] Minutes of the MTA Finance Committee Meeting May 2021 2 Broadway, 20th Floor Board Room New York, NY 10004
+[p005_c0002] Because of the ongoing COVID-19 public health crisis, the MTA Chairman convened a one-day, virtual Board and Committee meeting session on May 26, 2021, which included the following committees:
+- [p005_c0003] • Long Island Rail Road and Metro-North Railroad Committees • New York City Transit and MTA Bus Committee • Bridges and Tunnels Committee • Finance Committee • Capital Program Oversight Committee • Diversity Committee • Audit Committee
+[p005_c0004] To see a summary of the meeting and the actions taken by the Finance Committee, please refer to the May 26, 2021 Board meeting minutes published in the June Board Book available on the Board materials website:
+[p005_c0005] https://new.mta.info/transparency/board-and-committee-meetings/june-2021 .
+[p005_c0006] _Master Page # 5 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 6
+
+### [p006_c0001] 2021 Finance Committee Work Plan
+### [p006_c0002] I. RECURRING AGENDA ITEMS
+[p006_c0003]
+
+```text
+Responsibility BudgetWatch MTA Div. Mgmt/Budget FinanceWatch MTA Finance Approval of Minutes Board Secretary Procurements (if any) Procurement Action Items (if any) Agency MTA Consolidated Reports MTA Div. Mgmt/Budget
+```
+### [p006_c0004] II. SPECIFIC AGENDA ITEMS
+### [p006_c0005] July 2021
+[p006_c0006] 2022 Preliminary Budget/July Financial Plan 2022-2025 (Joint Session with MTA Board)
+[p006_c0007] MTA Div. Mgmt/Budget
+### [p006_c0008] Other:
+[p006_c0009] DRAFT MTA Financial Statements 1 st Quarter for the Three-Months Ended March 2021 Agency Reports on Fare Evasion
+[p006_c0010] MTA Comptroller Agency Representatives
+### [p006_c0011] September 2021
+[p006_c0012] 2022 Preliminary Budget/July Financial Plan 2022-2025 (materials previously distributed)
+[p006_c0013] MTA Div. Mgmt/Budget
+### [p006_c0014] Other:
+[p006_c0015] Agency Reports on Fare Evasion
+[p006_c0016] Agency Representatives
+### [p006_c0017] October 2021
+[p006_c0018] 2022 Preliminary Budget/July Financial Plan 2022-2025 (materials previously distributed)
+[p006_c0019] MTA Div. Mgmt/Budget
+### [p006_c0020] Other:
+[p006_c0021] DRAFT MTA Financial Statements 2 nd Quarter for the Six-Months Ended June 2021 Annual Review of MTA's Derivative Portfolio - Including Fuel Hedge MTA 2021 Semi-Annual Investment Report Agency Reports on Fare Evasion
+[p006_c0022] MTA Comptroller MTA Finance MTA Treasury Agency Representatives
+### [p006_c0023] November 2021
+[p006_c0024] 2022 Final Proposed Budget/November Financial Plan 2022-2025 (Joint Session with MTA Board)
+[p006_c0025] MTA Div. Mgmt/Budget
+### [p006_c0026] Other:
+[p006_c0027] Station Maintenance Billing Update Review and Assessment of the Finance Committee Charter Agency Reports on Fare Evasion
+[p006_c0028] MTA Comptroller MTA CFO Agency Representatives
+[p006_c0029] _Master Page # 6 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 7
+
+### [p007_c0001] December 2021
+[p007_c0002] Adoption of 2022 Budget and 2022-2025 Financial Plan MTA Div. Mgmt/Budget
+### [p007_c0003] Action Items:
+[p007_c0004] Authorization to issue New Money Bonds for Planned Active Credits for Capital Program Cashflow Needs in 2022 MTA Finance
+[p007_c0005] Approval of Supplemental Resolutions Authorizing Refunding Bonds MTA Finance
+[p007_c0006] MTA and TBTA Reimbursement Resolutions for Federal Tax Purposes MTA Treasury
+### [p007_c0007] Other:
+[p007_c0008] Draft 2022 Finance Committee Work Plan MTA Div. Mgmt/Budget
+[p007_c0009] Agency Reports on Fare Evasion Agency Representatives
+### [p007_c0010] January 2022
+### [p007_c0011] Other:
+[p007_c0012] Special Report: Finance Department 2021 Year-End Review MTA Finance
+[p007_c0013] DRAFT MTA Financial Statements 3 rd Quarter for the Nine-Months Ended September 2021
+[p007_c0014] MTA Comptroller
+[p007_c0015] Agency Reports on Fare Evasion
+[p007_c0016] Agency Representatives
+### [p007_c0017] February 2022
+### [p007_c0018] Action Items:
+[p007_c0019] 2021 TBTA Operating Surplus B&T/MTA
+[p007_c0020] Mortgage Recording Tax – Escalation Payments to Dutchess, Orange and Rockland Counties
+[p007_c0021] MTA Treasury
+### [p007_c0022] Other:
+[p007_c0023] February Financial Plan 2022-2025
+[p007_c0024] Agency Reports on Fare Evasion
+[p007_c0025] MTA Div. Mgmt/Budget Agency Representatives
+### [p007_c0026] March 2022
+### [p007_c0027] Action Items:
+[p007_c0028] Resolution to Authorize the Execution, Filing and Acceptance of Federal Funds
+[p007_c0029] MTA Grant Mgmt.
+[p007_c0030] All-Agency Real Property Disposition Guidelines and All-Agency Personal Property Disposition Guidelines
+[p007_c0031] MTA Real Estate/MTA Corporate Compliance MTA Proc., Agencies
+[p007_c0032] All-Agency Annual Procurement Report
+### [p007_c0033] Other:
+[p007_c0034] MTA Prompt Payment Annual Report 2021
+[p007_c0035] Agency Reports on Fare Evasion
+[p007_c0036] MTA BSC/MTA Finance Agency Representatives
+### [p007_c0037] April 2022
+### [p007_c0038] Other:
+[p007_c0039] Annual Report on Variable Rate Debt
+[p007_c0040] Agency Reports on Fare Evasion
+[p007_c0041] MTA Finance Agency Representatives
+### [p007_c0042] May 2022
+### [p007_c0043] Other:
+[p007_c0044] MTA Annual Investment Report
+[p007_c0045] MTA Treasury
+[p007_c0046] _Master Page # 7 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 8
+
+### [p008_c0001] DRAFT MTA Financial Statements Fiscal Year-End Twelve-Months
+[p008_c0002] Ended December 2021
+[p008_c0003] Station Maintenance Billings
+[p008_c0004] Annual Pension Fund Report (Audit Committee Members to be invited)
+[p008_c0005] Annual FMTAC Meeting
+[p008_c0006] Annual FMTAC Report
+[p008_c0007] Agency Reports on Fare Evasion
+[p008_c0008] MTA Comptroller
+[p008_c0009] MTA Comptroller
+[p008_c0010] MTA Labor
+[p008_c0011] MTA RIM
+[p008_c0012] MTA RIM
+[p008_c0013] Agency Representatives
+### [p008_c0014] June 2022
+### [p008_c0015] Action Item:
+[p008_c0016] PWEF Assessment
+[p008_c0017] MTA Capital Program Mgmt/
+[p008_c0018] MTA Div. Mgmt/Budget
+### [p008_c0019] Other:
+[p008_c0020] Agency Reports on Fare Evasion
+[p008_c0021] Agency Representatives
+### [p008_c0022] III. DETAILS
+### [p008_c0023] July 2021
+### [p008_c0024] 2022 Preliminary Budget/July Financial Plan 2022-2025 (JOINT Session with MTA Board)
+[p008_c0025] The Chief Financial Officer and MTA Budget Division will present an updated forecast for 2021, a Preliminary Budget for 2022, and a Financial Plan for 2022-2025.
+### [p008_c0026] Other:
+### [p008_c0027] DRAFT MTA Financial Statements for the Three-Months Ended, March 2021
+[p008_c0028] Included for information is a copy of the Independent Accountant's Review Report of MTA Financial Statements for the Three-Months ended, March 31, 2021.
+[p008_c0029] Agency Reports on Fare Evasion
+[p008_c0030] Fare Evasion statistics to be reported by Agency Representatives.
+### [p008_c0031] September 2021
+### [p008_c0032] 2022 Preliminary Budget/July Financial Plan 2022-2025
+[p008_c0033] Public comment will be accepted on the 2022 Preliminary Budget.
+### [p008_c0034] Other:
+### [p008_c0035] Agency Reports on Fare Evasion
+[p008_c0036] Fare Evasion statistics to be reported by Agency Representatives.
+### [p008_c0037] October 2021
+### [p008_c0038] 2022 Preliminary Budget/July Financial Plan 2022-2025
+[p008_c0039] (materials previously distributed)
+### [p008_c0040] Other:
+### [p008_c0041] DRAFT MTA Financial Statements for the Six-Months Ended, June 2021
+[p008_c0042] Included for information is a copy of the Independent Accountant's Review Report of MTA Financial Statements for the Six-Months ended, June 30, 2021.
+[p008_c0043] _Master Page # 8 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 9
+
+### [p009_c0001] Annual Review of MTA's Derivative Portfolio – Including Fuel Hedge
+[p009_c0002] The Finance Department will provide an update on MTA's portfolio of derivative contracts.
+### [p009_c0003] MTA 2021 Semi-Annual Investment Report
+[p009_c0004] The MTA Treasury Division should be prepared to answer questions on this report.
+### [p009_c0005] Agency Reports on Fare Evasion
+[p009_c0006] Fare Evasion statistics to be reported by Agency Representatives.
+### [p009_c0007] November 2021
+### [p009_c0008] 2022 Final Proposed Budget/November Financial Plan 2022-2025 (Joint Session with MTA Board)
+[p009_c0009] The Chief Financial Officer and MTA Budget Division will present an updated forecast for 2022, a Final Proposed Budget for 2021, and an updated Financial Plan for 2022-2025.
+### [p009_c0010] Other:
+### [p009_c0011] Station Maintenance Billing Update
+[p009_c0012] The MTA Comptroller Division will provide a report on the collection and audit status of station maintenance billings issued as of June 1, 2021.
+### [p009_c0013] Review and Assessment of the Finance Committee Charter
+[p009_c0014] MTA Chief Financial Officer will present the most updated Finance Committee Charter to the Finance Committee members for them to review and assess its adequacy. The annual assessment is required under the current Committee Charter.
+### [p009_c0015] Agency Reports on Fare Evasion
+[p009_c0016] Fare Evasion statistics to be reported by Agency Representatives.
+### [p009_c0017] December 2021
+### [p009_c0018] Adoption of 2022 Budget and 2022-2025 Financial Plan
+[p009_c0019] The Committee will recommend action to the Board on the Final Proposed Budget for 2022 and 2022-2025 Financial Plan.
+### [p009_c0020] Action Items:
+### [p009_c0021] Approval of Supplemental Resolutions Authorizing New Money Bonds.
+[p009_c0022] Board approval to allow for the issuance of new money bonds to fund existing approved bond financed capital projects under the Transportation Revenue Bond Obligation Resolution, the Dedicated Tax Fund Obligation Resolution, and in the case of Bridge & Tunnel Capital Projects, the Triborough Bridge and Tunnel Authority Senior and Subordinate Obligation Resolutions.
+### [p009_c0023] Approval of Supplemental Resolutions Authorizing Refunding Bonds
+[p009_c0024] Board action required to allow for the refunding to fixed-rate bonds from time to time provided that such refundings comply with the Board approved refunding policy.
+[p009_c0025] _Master Page # 9 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 10
+
+### [p010_c0001] Approval of MTA and TBTA Reimbursement Resolutions for Federal Tax Purposes.
+[p010_c0002] Board approval required to allow for the reimbursement of capital expenditures at a later date from the proceeds of tax-exempt bond sales.
+[p010_c0003] Other:
+### [p010_c0004] Draft 2022 Finance Committee Work Plan
+[p010_c0005] The MTA Chief Financial Officer will present a proposed 2022 Finance Committee Work Plan that will address major issues, SBP and budget process issues, and reports required by statute.
+### [p010_c0006] Agency Reports on Fare Evasion
+[p010_c0007] Fare Evasion statistics to be reported by Agency Representatives.
+### [p010_c0008] January 2022
+[p010_c0009] Other:
+### [p010_c0010] Special Report: Finance Department 2021 Year-End Review
+[p010_c0011] The MTA Finance Department will present a report that summarizes financing activities for 2020.
+### [p010_c0012] DRAFT MTA Financial Statements for the Nine-Months Ended, September 2021
+[p010_c0013] Included for information is a copy of the Independent Accountant's Review Report of MTA Financial Statements for the nine-months ended, September 30, 2021.
+### [p010_c0014] Agency Reports on Fare Evasion
+[p010_c0015] Fare Evasion statistics to be reported by Agency Representatives.
+### [p010_c0016] February 2022
+[p010_c0017] Action Items:
+### [p010_c0018] 2021 TBTA Operating Surplus
+[p010_c0019] MTA Bridges and Tunnels should be prepared to answer questions on a staff summary requesting (1) transfer of TBTA 2021 Operating Surplus and Investment Income, (2) advances of TBTA 2021 Operating Surplus, and (3) the deduction from 2021 TBTA Operating Revenue, funds which shall be paid into the Necessary Reconstruction Reserve.
+### [p010_c0020] Mortgage Recording Tax – Escalation Payments to Dutchess, Orange and Rockland Counties
+[p010_c0021] By State statute, Dutchess, Orange and Rockland Counties are entitled to a share of MTA's MRT-1 and MRT-2 tax receipts collected in these counties during the prior year. The amount may be no less than $1.5 million for Dutchess and Orange Counties, and no less than $2.0 million for Rockland County. If the annual amounts collected exceed 1989 collection levels (the statutorily determined base period), proportional upward "escalation" adjustments are mandated by statute. MTA Treasury and MTA Division of Management & Budget will be prepared to answer questions on the related Staff Summary authorizing the payments.
+[p010_c0022] _Master Page # 10 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 11
+
+[p011_c0001] Other:
+### [p011_c0002] February Financial Plan 2022-2025
+[p011_c0003] The MTA Division of Management and Budget will present for information purposes a revised 2022-2025 Financial Plan reflecting any technical adjustments from the Adopted Budget and the incorporation of certain “below-the-line” policy actions into the baseline.
+### [p011_c0004] Agency Reports on Fare Evasion
+[p011_c0005] Fare Evasion statistics to be reported by Agency Representatives.
+### [p011_c0006] March 2022
+[p011_c0007] Action Items:
+### [p011_c0008] Resolution to Authorize the Execution, Filing and Acceptance of Federal Funds
+[p011_c0009] The MTA Office of Grant Management will hold a public hearing in accordance with Federal law and then request the Board’s approval of a resolution that would authorize the Chairman or a designated officer to execute the applications and accept grants of financial assistance from the Federal government.
+### [p011_c0010] All-Agency Real Property Disposition Guidelines and All-Agency Personal Property Disposition Guidelines
+[p011_c0011] Board approval of above guidelines as required annually by Public Authorities Law Sections 2895-2897. MTA Real Estate and MTA Corporate Compliance should be prepared to answer questions regarding these guidelines.
+### [p011_c0012] All-Agency Annual Procurement Report
+[p011_c0013] The Agencies and the MTA Procurement Division should be prepared to answer questions on this voluminous State-required report.
+[p011_c0014] Other:
+### [p011_c0015] MTA Annual Prompt Payment Status Report
+[p011_c0016] The Senior Director of the MTA Business Service Center should be prepared to discuss a report, to be included in the Agenda materials, that reviews MTA-wide success in meeting mandated prompt-payment deadlines (including the interest penalties incurred as a result of late payment).
+### [p011_c0017] Agency Reports on Fare Evasion
+[p011_c0018] Fare Evasion statistics to be reported by Agency Representatives
+### [p011_c0019] April 2022
+[p011_c0020] Other:
+### [p011_c0021] Annual Report on Variable Rate Debt
+[p011_c0022] The MTA Finance Department will present a report that summarizes the performance of the MTA’s various variable-rate debt programs, including a discussion of the savings (compared to long-term rates) achieved through variable rate debt and a discussion on the current policy and limits on the use of variable rate debt.
+[p011_c0023] _Master Page # 11 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 12
+
+### [p012_c0001] Agency Reports on Fare Evasion
+[p012_c0002] Fare Evasion statistics to be reported by Agency Representatives.
+### [p012_c0003] May 2021
+[p012_c0004] Action Item:
+### [p012_c0005] MTA Annual Investment Report
+[p012_c0006] The MTA Treasury Division should be prepared to answer questions on this State-required report.
+[p012_c0007] Other:
+### [p012_c0008] DRAFT MTA Financial Statements for the Twelve-Months Ended, December 2020
+[p012_c0009] Included for information is a copy of the Independent Accountant's Audit Report of MTA Financial Statements for the Twelve-Months ended, December 31, 2020.
+### [p012_c0010] Station Maintenance Billings
+[p012_c0011] Under the Public Authorities Law, the Board is required to certify to the City and the counties in the Metropolitan Transportation District the total costs to MTA for operating and maintaining Commuter Railroad passenger stations. The City and county assessments are both now determined through a formula.
+### [p012_c0012] Annual Pension Fund Report
+[p012_c0013] The MTA Labor Division, representatives of the various pension fund boards, and their pension consultants should be prepared to answer questions on a report, to be included in the Agenda materials, that reviews the 2020 investment performance and other experience of the various MTA pension funds. Among other matters, this report should (i) make recommendations on appropriate investment-earnings assumptions in light of the experience of the past three years; (ii) discuss the implications for asset allocations in light of such recommendations; (iii) discuss the effect on (under) funding of the systems in light of such performance and recommendation; (iv) provide appropriate comparisons with other public pension systems; and (v) solicit the opinions of the Board Operating Committees on these recommendations in light of their effects on Agency budgets.
+### [p012_c0014] Annual Meeting of the First Mutual Transportation Assurance Company
+[p012_c0015] The MTA's Captive Insurance Company will hold its statutorily required annual meeting in which it will review the prior year's operations as well as submit its financial statements and actuarial report for final approval. The MTA Risk and Insurance Management Divisions, along with the FMTAC's outside investment managers, should be prepared to answer questions on reports.
+### [p012_c0016] Agency Reports on Fare Evasion
+[p012_c0017] Fare Evasion statistics to be reported by Agency Representatives.
+### [p012_c0018] June 2022
+[p012_c0019] Action Item:
+### [p012_c0020] PWEF Assessment
+[p012_c0021] The MTA Division of Management and Budget, assisted by MTA Capital Program Management, should prepare the usual annual staff summary authorizing the payment of this assessment to the
+[p012_c0022] _Master Page # 12 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 13
+
+[p013_c0001] State. The State levies an assessment of the value of construction-contract awards to cover its cost of enforcing prevailing-wage legislation.
+[p013_c0002] Other:
+[p013_c0003] Agency Reports on Fare Evasion
+[p013_c0004] Fare Evasion statistics to be reported by Agency Representatives.
+[p013_c0005] _Master Page # 13 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 14
+
+### [p014_c0001] FinanceWatch
+[p014_c0002] June 23, 2021
+### [p014_c0003] Financing Activity
+### [p014_c0004] $192,835,000 Triborough Bridge and Tunnel Authority
+### [p014_c0005] Second Subordinate Bond Anticipation Notes, Series 2021A
+[p014_c0006] On June 10, 2021, MTA issued $192.835 million of Triborough Bridge and Tunnel Authority Second Subordinate Bond Anticipation Notes, Series 2021A. Proceeds from the transaction will be used to finance costs related to the design, build, and installation of infrastructure, tolling systems and allowable implementation expenses necessary for the operation of the Central Business District Tolling Program. The Series 2021A notes were issued as fixed rate tax-exempt notes with a final maturity of November 1, 2025 and an all-in True Interest Cost of 0.694%. This transaction was led by book-running senior manager BofA Securities Inc. Nixon Peabody LLP and D. Seaton and Associates served as co-bond counsel. Public Resources Advisory Group and Rockfleet Financial Services, Inc. served as co-financial advisors.
+### [p014_c0007] Transaction Summary Statistics
+[p014_c0008]
+
+```text
+Series 2021A Par Amount: $192.835 million Premium: $37.553 million All-in TIC: 0.694% Average Coupon: 5.00% Average Life: 4.39 years Final Maturity: 11/1/2025 State Bond Issuance Fee: $0 (1) Underwriter's Discount: $2.84 ($547,076) Cost of Issuance: $5.98 ($1,154,000) Ratings (Moody's/Fitch): A1/A+
+```
+[p014_c0009] (1) MTA received a waiver from making this payment from the State Division of the Budget for this transaction.
+### [p014_c0010] Upcoming Transaction
+### [p014_c0011] $29,145,000 MTA Transportation Revenue Variable Rate Refunding Bonds, Subseries 2002G-1f
+### [p014_c0012] $125,350,000 MTA Transportation Revenue Variable Rate Refunding Bonds, Subseries 2005D-1
+[p014_c0013] On June 30, 2021, MTA will effectuate a mandatory tender and remarket $29.145 million of MTA Transportation Revenue Variable Rate Refunding Bonds, Series 2002G-1f and $125.350 million of MTA Transportation Revenue Variable Rate Refunding Bonds, Subseries 2005D-1 because their current interest rate periods are expiring by their terms. Both the Series 2002G-1f and 2005D-1 Bonds will be remarketed in Term Rate Mode as Secured Overnight Financing Rate Tender Notes.
+[p014_c0014] _Master Page # 14 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 15
+
+[p015_c0001] This transaction will be led by book-running senior manager Jefferies together with special co-senior managers: Loop Capital Markets(MBE); Mischler Financial Group(SDVOB); and Stern Brothers & Co.(WBE). Orrick, Herrington & Sutcliffe LLP and Bryant Rabbino LLP will serve as co-bond counsel. Public Resources Advisory Group and Backstrom McCarley Berry & CO., LLC will serve as co-financial advisors.
+### [p015_c0002] Fuel Hedging Program
+### [p015_c0003] $5,793,438 Diesel Fuel Hedge
+[p015_c0004] On June 2, 2021, MTA executed a 2,826,757 gallon ultra-low sulfur diesel fuel hedge with Merrill Lynch at an all-in price of $2.0495/gallon. Three of MTA's existing approved commodity counterparties participated in bidding on the transaction: Goldman, Sachs & Co./ J Aron; J.P. Morgan Ventures Energy Corporation; and Merrill Lynch. The hedge covers the period from May 2022 through April 2023.
+[p015_c0005] _Master Page # 15 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 16
+
+### [p016_c0001] METROPOLITAN TRANSPORTATION AUTHORITY FEBRUARY FINANCIAL PLAN - Adopted Budget
+### [p016_c0002] Debt Service
+[p016_c0003] May 2021
+[p016_c0004] ($ in millions)
+[p016_c0005]
+
+```text
+Adopted Budget Actual Variance % Var Explanation Dedicated Tax Fund: NYC Transit $14.9 $6.9 $8.0 Commuter Railroads 2.2 9.8 (7.6) Dedicated Tax Fund Subtotal $17.1 $16.7 $0.4 2.3% Lower than budgeted variable rate. MTA Transportation Revenue: NYC Transit $65.9 $48.6 $17.3 Commuter Railroads 58.9 35.0 24.0 MTA Bus 2.3 0.2 2.1 SIRTOA 0.9 0.0 0.8 MTA Transportation Revenue Subtotal $127.9 $83.7 $44.2 34.6% Reversal of prior period variance from prefunding May 15th interest; lower than budgeted debt service resulting from refunding RRIF loan; timing of debt service deposits; and lower than budgeted variable rates. PMT Bonds: NYC Transit $0.0 $1.2 ($1.2) Commuter Railroads 0.0 1.7 (1.7) MTA Bus Company 0.0 0.0 0.0 SIRTOA 0.0 0.0 0.0 PMT Bond Subtotal $0.0 $2.9 ($2.9) 0.0% Reallocation of budgeted debt service as PMT 2021A notes were issued in lieu of TRB bonds. 2 Broadway COPs: NYC Transit $0.4 $0.4 $0.0 Bridges & Tunnels 0.1 0.1 0.0 MTA HQ 0.0 0.0 0.0 Commuter Railroads 0.1 0.1 0.0 2 Broadway COPs Subtotal $0.6 $0.6 $0.0 2.3% TBTA General Resolution (2): NYC Transit $16.8 $11.3 $5.5 Commuter Railroads 7.5 5.0 2.5 Bridges & Tunnels 21.5 17.2 4.3 TBTA General Resolution Subtotal $45.8 $33.6 $12.2 26.7% Reversal of prior period variance from prefunding May 15th interest; and lower than budgeted variable rates. TBTA Subordinate (2): NYC Transit $4.7 $4.0 $0.7 Commuter Railroads 2.1 1.8 0.3 Bridges & Tunnels 1.7 1.4 0.3 TBTA Subordinate Subtotal $8.5 $7.2 $1.3 14.8% Reversal of prior period variance from prefunding May 15th interest. TBTA 2nd Subordinate Subtotal $0.0 $0.0 $0.0 0.0% Debt Service from Lockbox Revenues: NYC Transit $0.0 $0.0 $0.0 Commuter Railroads 0.0 0.0 0.0 MTA Bus 0.0 0.0 0.0 SIRTOA 0.0 0.0 0.0 Debt Service from Lockbox Subtotal $0.0 $0.0 $0.0 0.0% Total Debt Service $199.9 $144.8 $55.2 27.6% Debt Service by Agency: NYC Transit $102.6 $72.3 $30.3 Commuter Railroads 70.9 53.5 17.4 MTA Bus 2.3 0.2 2.0 SIRTOA 0.9 0.0 0.8 Bridges & Tunnels 23.3 18.8 4.6 MTAHQ 0.0 0.0 0.0 Total Debt Service $199.9 $144.8 $55.2 27.6%
+```
+### [p016_c0006] Notes:
+[p016_c0007] (1) Forecasted debt service is calculated based upon projected monthly deposits from available pledged revenues into debt service accounts. Actual payments to bondholders are made from the debt service accounts when due as required for each series of bonds and do not conform to this schedule.
+[p016_c0008] (2) Generally, the calendarization of monthly debt service deposits is calculated by dividing projected annual debt service by 12. Month to month variations ("timing differences") on the existing debt portfolio can occur based upon, among other things, (a) for all bonds, the date when income from the securities in which the debt service accounts are invested becomes available varies, (b) for variable rate financings, differences between (i) the budgeted interest rate and the actual interest rate, (ii) projected interest payment dates to bondholders and actual interest payment dates to bondholders, and (iii) projected monthly funding dates for accrued debt service and actual funding dates, (c) for transactions with swaps, the difference between when MTA/TBTA funds debt service and the receipt of the corresponding swap payment by the counterparty, and difference between rates received and rates paid and (d) for commercial paper, the interest payment date is the date of the maturity of the commercial paper and the dealers set the term of the commercial paper from 1 to 270 days, which is not foreseeable at the time the annual debt service budgets are prepared.
+[p016_c0009] (3) Debt service is allocated among Transit, Commuter, MTA Bus, and TBTA categories based on actual spending of bond proceeds for approved capital projects. Allocation of 2 Broadway COPs is based on occupancy.
+[p016_c0010] Totals may not add due to rounding.
+[p016_c0011] _Master Page # 16 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 17
+
+### [p017_c0001] METROPOLITAN TRANSPORTATION AUTHORITY FEBRUARY FINANCIAL PLAN - Adopted Budget
+[p017_c0002] Debt Service May 2021 Year-To-Date
+[p017_c0003] ($ in millions)
+[p017_c0004]
+
+```text
+Adopted Budget Actual Variance % Var Explanation Dedicated Tax Fund: NYC Transit $142.5 $133.3 $9.1 Commuter Railroads 29.4 36.0 (6.6) Dedicated Tax Fund Subtotal $171.8 $169.3 $2.5 1.5% Lower than budgeted variable rates. MTA Transportation Revenue: NYC Transit $400.0 $415.9 ($15.9) Commuter Railroads 318.2 289.4 28.9 MTA Bus 11.3 0.9 10.4 SIRTOA 4.2 0.1 4.1 MTA Transportation Revenue Subtotal $733.7 $706.2 $27.5 3.7% Lower than budgeted debt service resulting from refunding RRIF loan; timing of debt service deposits; and lower than budgeted variable rates. PMT Bonds: NYC Transit $0.0 $1.2 ($1.2) Commuter Railroads 0.0 1.7 (1.7) MTA Bus Company 0.0 0.0 0.0 SIRTOA 0.0 0.0 0.0 PMT Bond Subtotal $0.0 $2.9 ($2.9) 0.0% Reallocation of budgeted debt service as PMT 2021A notes were issued in lieu of TRB bonds. 2 Broadway COPs: NYC Transit $2.0 $2.0 $0.0 Bridges & Tunnels 0.3 0.3 0.0 MTA HQ 0.0 0.0 0.0 Commuter Railroads 0.6 0.6 0.0 2 Broadway COPs Subtotal $2.9 $2.9 $0.0 0.6% TBTA General Resolution (2): NYC Transit $84.0 $81.5 $2.5 Commuter Railroads 37.5 36.4 1.1 Bridges & Tunnels 124.8 124.4 0.4 TBTA General Resolution Subtotal $246.3 $242.3 $4.0 1.6% Lower than budgeted variable rates. TBTA Subordinate (2): NYC Transit $23.3 $23.3 $0.0 Commuter Railroads 10.7 10.7 0.0 Bridges & Tunnels 8.5 8.5 0.0 TBTA Subordinate Subtotal $42.5 $42.5 $0.0 0.0% TBTA 2nd Subordinate Subtotal $0.0 $0.0 $0.0 0.0% Debt Service from Lockbox Revenues: NYC Transit $0.0 $0.0 $0.0 Commuter Railroads 0.0 0.0 0.0 MTA Bus 0.0 0.0 0.0 SIRTOA 0.0 0.0 0.0 Debt Service from Lockbox Subtotal $0.0 $0.0 $0.0 0.0% Total Debt Service $1,197.2 $1,166.1 $31.0 2.6% Debt Service by Agency: NYC Transit $651.8 $657.2 ($5.4) Commuter Railroads 396.3 374.7 21.6 MTA Bus 11.3 0.9 10.4 SIRTOA 4.2 0.1 4.1 Bridges & Tunnels 133.6 133.2 0.4 MTAHQ 0.0 0.0 0.0 Total Debt Service $1,197.2 $1,166.1 $31.0 2.6%
+```
+### [p017_c0005] Notes:
+[p017_c0006] (1) Forecasted debt service is calculated based upon projected monthly deposits from available pledged revenues into debt service accounts. Actual payments to bondholders are made from the debt service accounts when due as required for each series of bonds and do not conform to this schedule.
+[p017_c0007] (2) Generally, the calendarization of monthly debt service deposits is calculated by dividing projected annual debt service by 12. Month to month variations ("timing differences") on the existing debt portfolio can occur based upon, among other things, (a) for all bonds, the date when income from the securities in which the debt service accounts are invested becomes available varies, (b) for variable rate financings, differences between (i) the budgeted interest rate and the actual interest rate, (ii) projected interest payment dates to bondholders and actual interest payment dates to bondholders, and (iii) projected monthly funding dates for accrued debt service and actual funding dates, (c) for transactions with swaps, the difference between when MTA/TBTA funds debt service and the receipt of the corresponding swap payment by the counterparty, and difference between rates received and rates paid and (d) for commercial paper, the interest payment date is the date of the maturity of the commercial paper and the dealers set the term of the commercial paper from 1 to 270 days, which is not foreseeable at the time the annual debt service budgets are prepared.
+[p017_c0008] (3) Debt service is allocated among Transit, Commuter, MTA Bus, and TBTA categories based on actual spending of bond proceeds for approved capital projects. Allocation of 2 Broadway COPs is based on occupancy.
+[p017_c0009] Totals may not add due to rounding.
+[p017_c0010] _Master Page # 17 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 18
+
+### [p018_c0001] METROPOLITAN TRANSPORTATION AUTHORITY VARIABLE RATE: WEEKLY MODE RATE RESETS REPORT (Trailing 6-Weeks)
+[p018_c0002]
+
+```text
+Issue TRB 2005E-1 TRB 2005E-2 TRB 2005E-3 TRB 2002G-1g TRB 2012A-2 Remarketing Agent PNC Capital BofA Merrill PNC Capital Goldman Clarity Liquidity Provider PNC BofA Merrill PNC TD Bank Bank of Montreal Liquidity/Insurer LoC LoC LoC LoC LoC Par Outstanding ($m) 87.62 65.72 65.72 33.78 50.00 Swap Notional ($m) 52.58 39.43 39.43 29.13 None Date SIFMA Spread to Spread to Spread to Spread to Spread to Rate SIFMA Rate SIFMA Rate SIFMA Rate SIFMA Rate SIFMA 4/29/2021 0.06% 0.07% 0.01% 0.07% 0.01% 0.07% 0.01% 0.06% 0.00% 0.07% 0.01% 5/6/2021 0.05% 0.06% 0.01% 0.06% 0.01% 0.06% 0.01% 0.05% 0.00% 0.09% 0.04% 5/13/2021 0.07% 0.08% 0.01% 0.08% 0.01% 0.08% 0.01% 0.08% 0.01% 0.09% 0.02% 5/20/2021 0.07% 0.09% 0.02% 0.07% 0.00% 0.09% 0.02% 0.07% 0.00% 0.11% 0.04% 5/27/2021 0.05% 0.07% 0.02% 0.05% 0.00% 0.07% 0.02% 0.05% 0.00% 0.11% 0.06% 6/3/2021 0.03% 0.04% 0.01% 0.05% 0.02% 0.04% 0.01% 0.03% 0.00% 0.07% 0.04%
+```
+### [p018_c0003] Transportation Revenue Bonds
+[p018_c0004]
+
+```text
+Issue TRB 2012G-2 TRB 2015E-4 TRB 2020B-1 DTF 2008A-2b DTF 2008B-3c Remarketing Agent TD Securities PNC Capital PNC Capital PNC Capital PNC Capital Liquidity Provider TD Bank PNC Bank PNC Bank PNC Bank PNC Bank Liquidity/Insurer LoC LoC LoC LoC LoC Par Outstanding ($m) 125.00 70.35 66.57 84.86 44.74 Swap Notional ($m) 125.00 None None 83.47 None Date SIFMA Spread to Spread to Spread to Spread to Spread to Rate SIFMA Rate SIFMA Rate SIFMA Rate SIFMA Rate SIFMA 4/29/2021 0.06% 0.06% 0.00% 0.07% 0.01% 0.07% 0.01% 0.07% 0.01% 0.07% 0.01% 5/6/2021 0.05% 0.05% 0.00% 0.06% 0.01% 0.06% 0.01% 0.06% 0.01% 0.06% 0.01% 5/13/2021 0.07% 0.07% 0.00% 0.08% 0.01% 0.08% 0.01% 0.08% 0.01% 0.08% 0.01% 5/20/2021 0.07% 0.07% 0.00% 0.09% 0.02% 0.09% 0.02% 0.09% 0.02% 0.09% 0.02% 5/27/2021 0.05% 0.05% 0.00% 0.07% 0.02% 0.07% 0.02% 0.07% 0.02% 0.07% 0.02% 6/3/2021 0.03% 0.03% 0.00% 0.04% 0.01% 0.04% 0.01% 0.04% 0.01% 0.40% 0.37%
+```
+### [p018_c0005] TBTA General Revenue Bonds
+[p018_c0006]
+
+```text
+Issue TBTA 2005B-2a Remarketing Agent Clarity Liquidity Provider State Street Liquidity/Insurer LoC Par Outstanding ($m) 93.60 Swap Notional ($m) None Date SIFMA Spread to Rate SIFMA 4/29/2021 0.06% 0.10% 0.04% 5/6/2021 0.05% 0.12% 0.07% 5/13/2021 0.07% 0.10% 0.03% 5/20/2021 0.07% 0.12% 0.05% 5/27/2021 0.05% 0.12% 0.07% 6/3/2021 0.03% 0.04% 0.01%
+```
+[p018_c0007]
+
+```text
+Issue TBTA 2005A TBTA 2018E TBTA 2005B-2b Remarketing Agent TD Securities BofA Merrill Clarity Liquidity Provider TD Bank BofA Merrill State Street Liquidity/Insurer LoC LoC (Taxable) LoC Par Outstanding ($m) 102.07 148.47 93.60 Swap Notional ($m) 21.78 None None Date SIFMA Spread to Spread to Rate SIFMA Rate SIFMA 4/28/2021 0.06% 0.06% 0.00% 0.10% 0.04% 5/5/2021 0.05% 0.05% 0.00% 0.10% 0.05% 5/12/2021 0.07% 0.06% -0.01% 0.11% 0.04% 5/19/2021 0.07% 0.06% -0.01% 0.11% 0.04% 5/26/2021 0.05% 0.04% -0.01% 0.10% 0.05% 6/2/2021 0.03% 0.03% 0.00% 0.09% 0.06%
+```
+[p018_c0008] Report Date 6/4/2021
+[p018_c0009] _Master Page # 18 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 19
+
+### [p019_c0001] METROPOLITAN TRANSPORTATION AUTHORITY VARIABLE RATE: FLOATING RATE NOTES (SIFMA) RATE RESETS REPORT (Trailing 6-Weeks)
+### [p019_c0002] Transportation Revenue Bonds
+[p019_c0003]
+
+```text
+Issue TRB 2012A-3 TRB 2012G-3 TRB 2014D-2 Remarketing Agent N/A N/A N/A Initial Purchase Date 03/01/22 2/1/2025 11/15/2022 Liquidity/Insurer None None None Par Outstanding ($m) 50.00 75.00 165.00 Swap Notional ($m) None 75.00 None Date SIFMA Rate Spread to SIFMA Rate Spread to SIFMA Rate Spread to SIFMA 4/29/2021 0.06% 0.56% 0.50% 0.49% 0.43% 0.51% 0.45% 5/6/2021 0.05% 0.55% 0.50% 0.48% 0.43% 0.50% 0.45% 5/13/2021 0.07% 0.57% 0.50% 0.50% 0.43% 0.52% 0.45% 5/20/2021 0.07% 0.57% 0.50% 0.50% 0.43% 0.52% 0.45% 5/27/2021 0.05% 0.55% 0.50% 0.48% 0.43% 0.50% 0.45% 6/3/2021 0.03% 0.53% 0.50% 0.46% 0.43% 0.48% 0.45%
+```
+### [p019_c0004] Dedicated Tax Fund Bonds
+### [p019_c0005] TBTA General Revenue Bonds
+[p019_c0006]
+
+```text
+Issue DTF 2008A-2a TBTA 2003B-2 Remarketing Agent N/A N/A Initial Purchase Date 06/01/22 11/15/24 Liquidity/Insurer None None Par Outstanding ($m) 69.63 36.23 Swap Notional ($m) 68.53 34.21 Date SIFMA Rate Spread to SIFMA Rate Spread to SIFMA 4/29/2021 0.06% 0.51% 0.45% 0.31% 0.25% 5/6/2021 0.05% 0.50% 0.45% 0.30% 0.25% 5/13/2021 0.07% 0.52% 0.45% 0.32% 0.25% 5/20/2021 0.07% 0.52% 0.45% 0.32% 0.25% 5/27/2021 0.05% 0.50% 0.45% 0.30% 0.25% 6/3/2021 0.03% 0.48% 0.45% 0.28% 0.25%
+```
+[p019_c0007] Report Date 6/4/2021
+[p019_c0008] _Master Page # 19 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 20
+
+### [p020_c0001] METROPOLITAN TRANSPORTATION AUTHORITY VARIABLE RATE: FLOATING RATE NOTES (LIBOR) RATE RESETS REPORT (Trailing 6-Weeks)
+### [p020_c0002] Transportation Revenue Bonds
+[p020_c0003]
+
+```text
+Issue TRB 2002G-1f TRB 2002G-1h TRB 2005D-1 TRB 2011B Remarketing Agent N/A N/A N/A N/A Initial Purchase Date 7/1/2021 2/1/2022 7/1/2021 11/1/2022 Liquidity/Insurer None None None None Par Outstanding ($m) 33.80 45.16 131.38 99.56 Swap Notional ($m) 29.14 38.94 131.38 92.46 Date 67% of 1M LIBOR Spread to 1M LIBOR Spread to 1M LIBOR Spread to 1M LIBOR Spread to 1M LIBOR Rate Rate Rate Rate Rate Rate Rate Rate 4/29/2021 0.08% 0.73% 0.65% 0.90% 0.82% 0.73% 0.65% 0.63% 0.55% 5/6/2021 0.07% 0.72% 0.65% 0.89% 0.82% 0.72% 0.65% 0.62% 0.55% 5/13/2021 0.07% 0.72% 0.65% 0.89% 0.82% 0.72% 0.65% 0.62% 0.55% 5/20/2021 0.07% 0.72% 0.65% 0.89% 0.82% 0.72% 0.65% 0.62% 0.55% 5/27/2021 0.07% 0.72% 0.65% 0.89% 0.82% 0.72% 0.65% 0.62% 0.55% 6/3/2021 0.06% 0.71% 0.65% 0.88% 0.82% 0.71% 0.65% 0.61% 0.55%
+```
+[p020_c0004]
+
+```text
+Issue TRB 2012G-4 Remarketing Agent N/A Initial Purchase Date 11/1/2022 Liquidity/Insurer None Par Outstanding ($m) 71.93 Swap Notional ($m) 71.93 Date 67% of 1M LIBOR Spread to 1M LIBOR Rate Rate 4/29/2021 0.08% 0.63% 0.55% 5/6/2021 0.07% 0.62% 0.55% 5/13/2021 0.07% 0.62% 0.55% 5/20/2021 0.07% 0.62% 0.55% 5/27/2021 0.07% 0.62% 0.55% 6/3/2021 0.06% 0.61% 0.55%
+```
+### [p020_c0005] TBTA General Revenue Bonds
+[p020_c0006]
+
+```text
+Issue TBTA 2008B-2 Remarketing Agent NA Initial Purchase Date 11/15/2021 Liquidity/Insurer None Par Outstanding ($m) 63.65 Swap Notional ($m) None Date 67% of 1M LIBOR Spread to 1M LIBOR Rate Rate 4/29/2021 0.08% 0.57% 0.50% 5/6/2021 0.07% 0.58% 0.50% 5/13/2021 0.07% 0.58% 0.50% 5/20/2021 0.07% 0.58% 0.50% 5/27/2021 0.07% 0.58% 0.50% 6/3/2021 0.06% 0.56% 0.50%
+```
+[p020_c0007] Report Date 6/4/2021
+[p020_c0008] _Master Page # 20 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 21
+
+### [p021_c0001] METROPOLITAN TRANSPORTATION AUTHORITY VARIABLE RATE: DAILY MODE RATE RESETS REPORT (Trailing 10 Days)
+### [p021_c0002] Transportation Revenue Bonds
+### [p021_c0003] TBTA General Revenue Bonds
+[p021_c0004]
+
+```text
+Issue TRB 2005D-2 TRB 2012G-1 TRB 2015E-1 TRB 2015E-3 TBTA 2001C TBTA 2002F Dealer Morgan Stanley Barclays Capital US Bancorp BofA Merrill Goldman Citigroup Liquidity Provider Helaba Barclays US Bank BofA Merrill State Street Citibank Type of Liquidity LoC LoC LoC LoC LoC LoC Par Outstanding ($m) 87.60 84.45 77.43 154.85 95.37 154.10 Swap Notional ($m) 87.60 84.45 77.43 None 10.00 154.10 Date SIFMA Rate Spread to SIFMA Rate Spread to SIFMA Rate Spread to SIFMA Rate Spread to SIFMA Rate Spread to SIFMA Rate Spread to SIFMA 5/26/2021 0.05% 0.03% -0.02% 0.02% -0.03% 0.02% -0.03% 0.03% -0.02% 0.01% -0.04% 0.01% -0.04% 5/27/2021 0.05% 0.02% -0.03% 0.02% -0.03% 0.02% -0.03% 0.02% -0.03% 0.01% -0.04% 0.02% -0.03% 5/28/2021 0.05% 0.02% -0.03% 0.02% -0.03% 0.02% -0.03% 0.02% -0.03% 0.01% -0.04% 0.01% -0.04% 5/29/2021 0.05% 0.02% -0.03% 0.02% -0.03% 0.02% -0.03% 0.02% -0.03% 0.01% -0.04% 0.01% -0.04% 5/30/2021 0.05% 0.02% -0.03% 0.02% -0.03% 0.02% -0.03% 0.02% -0.03% 0.01% -0.04% 0.01% -0.04% 5/31/2021 0.05% 0.02% -0.03% 0.02% -0.03% 0.02% -0.03% 0.02% -0.03% 0.01% -0.04% 0.01% -0.04% 6/1/2021 0.05% 0.01% -0.04% 0.01% -0.04% 0.01% -0.04% 0.01% -0.04% 0.01% -0.04% 0.01% -0.04% 6/2/2021 0.03% 0.01% -0.02% 0.01% -0.02% 0.01% -0.02% 0.01% -0.02% 0.01% -0.02% 0.01% -0.02% 6/3/2021 0.03% 0.01% -0.02% 0.01% -0.02% 0.01% -0.02% 0.01% -0.02% 0.01% -0.02% 0.01% -0.02% 6/4/2021 0.03% 0.01% -0.02% 0.01% -0.02% 0.01% -0.02% 0.01% -0.02% 0.01% -0.02% 0.01% -0.02%
+```
+### [p021_c0005] TBTA General Revenue Bonds
+### [p021_c0006] Dedicated Tax Fund Bonds
+[p021_c0007]
+
+```text
+Issue TBTA 2003B-1 TBTA 2005B-3 TBTA 2005B-4c DTF 2008A-1 Dealer BofA Merrill Jefferies US Bancorp TD Securities Liquidity Provider BofA Merrill State Street US Bank TD Bank Type of Liquidity LoC LoC LoC LoC Par Outstanding ($m) 110.00 188.30 82.50 154.49 Swap Notional ($m) 0.00 188.30 82.50 152.00 Date SIFMA Rate Spread to SIFMA Rate Spread to SIFMA Rate Spread to SIFMA Rate Spread to SIFMA 5/26/2021 0.05% 0.03% -0.02% 0.03% -0.02% 0.02% -0.03% 0.02% -0.03% 5/27/2021 0.05% 0.02% -0.03% 0.03% -0.02% 0.02% -0.03% 0.02% -0.03% 5/28/2021 0.05% 0.02% -0.03% 0.02% -0.03% 0.02% -0.03% 0.02% -0.03% 5/29/2021 0.05% 0.02% -0.03% 0.02% -0.03% 0.02% -0.03% 0.02% -0.03% 5/30/2021 0.05% 0.02% -0.03% 0.02% -0.03% 0.02% -0.03% 0.02% -0.03% 5/31/2021 0.05% 0.02% -0.03% 0.02% -0.03% 0.02% -0.03% 0.02% -0.03% 6/1/2021 0.05% 0.01% -0.04% 0.02% -0.03% 0.01% -0.04% 0.01% -0.04% 6/2/2021 0.03% 0.01% -0.02% 0.01% -0.02% 0.01% -0.02% 0.01% -0.02% 6/3/2021 0.03% 0.01% -0.02% 0.01% -0.02% 0.01% -0.02% 0.01% -0.02% 6/4/2021 0.03% 0.01% -0.02% 0.01% -0.02% 0.01% -0.02% 0.01% -0.02%
+```
+[p021_c0008] Report Date 6/4/2021
+[p021_c0009] _Master Page # 21 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 22
+
+### [p022_c0001] METROPOLITAN TRANSPORTATION AUTHORITY VARIABLE RATE: TERM RATE MODE (SOFR) RATE RESETS REPORT (Trailing 10 Days)
+### [p022_c0002] TBTA General Revenue Bonds
+### [p022_c0003] Transportation Revenue Bonds
+[p022_c0004]
+
+```text
+Issue TBTA 2005B-4a TRB 2002D-2a-1 TRB 2002D-2a-2 TRB 2002D-2b Dealer U.S. Bank BONY BONY BONY Liquidity Provider None None None None Type of Liquidity FRN FRN FRN FRN Par Outstanding ($m) 104.70 50.00 50.00 100.00 Swap Notional ($m) None None None None Date 67% of SOFR Spread to Spread to Spread to Spread to Rate SOFR Rate SOFR Rate SOFR Rate SOFR 5/26/2021 0.01% 0.39% 0.38% 0.56% 0.55% 0.81% 0.80% 0.56% 0.55% 5/27/2021 0.01% 0.39% 0.38% 0.56% 0.55% 0.81% 0.80% 0.56% 0.55% 5/28/2021 0.01% 0.39% 0.38% 0.56% 0.55% 0.81% 0.80% 0.56% 0.55% 5/29/2021 0.01% 0.39% 0.38% 0.56% 0.55% 0.81% 0.80% 0.56% 0.55% 5/30/2021 0.01% 0.39% 0.38% 0.56% 0.55% 0.81% 0.80% 0.56% 0.55% 5/31/2021 0.01% 0.39% 0.38% 0.56% 0.55% 0.81% 0.80% 0.56% 0.55% 6/1/2021 0.01% 0.39% 0.38% 0.56% 0.55% 0.81% 0.80% 0.56% 0.55% 6/2/2021 0.01% 0.39% 0.38% 0.56% 0.55% 0.81% 0.80% 0.56% 0.55% 6/3/2021 0.01% 0.39% 0.38% 0.56% 0.55% 0.81% 0.80% 0.56% 0.55% 6/4/2021 0.01% 0.39% 0.38% 0.56% 0.55% 0.81% 0.80% 0.56% 0.55%
+```
+[p022_c0005] Report Date 6/4/2021
+[p022_c0006] _Master Page # 22 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 23
+
+### [p023_c0001] MTA DEBT OUTSTANDING ($ in Millions)
+[p023_c0002] 6/11/2021
+[p023_c0003]
+
+```text
+Underlying Ratings (Moody's / S&P / Fitch/ Kroll) Series BPA Sale Date Series Original Final Maturity Principal Iss. Amount Outstanding Total Outstanding TIC 1 Notes Fixed Amount Variable Amount Synthetic Fixed Amount MTA Transportation Revenue Bonds (A3/BBB+/A-/AA) 2002D 5/30/02 11/1/2032 400.000 174.725 - 200.000 374.725 4.44 2002G 11/20/02 11/1/2026 400.000 - 16.150 81.065 97.215 3.86 2003A 5/14/03 11/15/2032 475.340 52.425 - - 52.425 4.49 2003B 8/13/03 11/15/2032 751.765 22.130 - - 22.130 5.10 2005B 7/1/05 11/15/2035 750.000 100.635 - - 100.635 4.80 2005D 11/2/05 11/1/2035 250.000 - - 208.950 208.950 4.47 2005E 11/2/05 11/1/2035 250.000 - 83.590 125.410 209.000 3.56 2006B 12/20/06 11/15/2036 717.730 72.645 - - 72.645 4.52 2008B 2/21/08 11/15/2030 487.530 70.365 - - 70.365 2.57 2009A 10/15/09 11/15/2039 502.320 359.420 - - 359.420 3.79 2010A 1/13/10 11/15/2039 363.945 363.945 - - 363.945 4.44 2010B 2/11/10 11/15/2039 656.975 573.945 - - 573.945 4.29 2010C 7/7/10 11/15/2040 510.485 409.705 - - 409.705 4.27 2010E 12/29/10 11/15/2040 750.000 582.350 - - 582.350 4.57 2011A 7/20/11 11/15/2046 400.440 8.635 - - 8.635 4.95 2011B 9/14/11 11/1/2041 99.560 - 8.425 91.135 99.560 3.74 2011C 11/10/11 11/15/2028 197.950 92.595 - - 92.595 3.99 2011D 12/7/11 11/15/2046 480.165 21.995 - - 21.995 4.57 2012A 3/15/12 11/15/2042 150.000 50.000 100.000 - 150.000 2.14 2012B 3/15/12 11/15/2039 250.000 184.120 - - 184.120 3.85 2012C 5/3/12 11/15/2047 727.430 382.530 - - 382.530 4.22 2012D 8/20/12 11/15/2032 1,263.365 582.535 - - 582.535 3.51 2012E 7/20/12 11/15/2042 650.000 280.385 - - 280.385 3.91 2012F 9/28/12 11/15/2030 1,268.445 857.490 - - 857.490 3.17 2012G 11/13/12 11/1/2032 359.450 - - 355.950 355.950 4.33 2012H 11/15/12 11/15/2042 350.000 202.205 - - 202.205 3.70 2013A 1/24/13 11/15/2043 500.000 262.310 - - 262.310 3.79 2013B 4/2/13 11/15/2043 500.000 287.340 - - 287.340 4.08 2013C 6/11/13 11/15/2043 500.000 295.975 - - 295.975 4.25 2013D 7/11/13 11/15/2043 333.790 183.150 - - 183.150 4.63 2013E 11/15/13 11/15/2043 500.000 315.585 - - 315.585 4.64 2014A 2/28/14 11/15/2044 400.000 198.905 - - 198.905 4.31 2014B 4/17/14 11/15/2044 500.000 379.175 - - 379.175 4.38 2014C 6/26/14 11/15/2036 500.000 261.470 - - 261.470 3.32 2014D 11/4/14 11/15/2044 500.000 295.455 165.000 - 460.455 3.14 2015A 1/22/15 11/15/2045 850.000 758.235 - - 758.235 4.12 2015B 3/19/15 11/15/2055 275.055 252.020 - - 252.020 4.29 2015C 8/18/2015 11/15/2035 550.000 477.110 - - 477.110 3.68 2015D 9/17/2015 11/15/2035 407.695 357.030 - - 357.030 3.67 2015E 9/10/2015 11/15/2050 650.000 - 496.190 - 496.190 1.79 2015F 12/17/2015 11/15/2036 330.430 287.180 - - 287.180 3.21 2016A 2/25/2016 11/15/2056 782.520 705.120 - - 705.120 3.54 2016B 6/30/2016 11/15/2037 673.990 614.000 - - 614.000 2.90 2016C 7/28/2016 11/15/2056 863.860 569.775 - - 569.775 3.52 2016D 10/26/2016 11/15/2035 645.655 506.975 - - 506.975 2.87 2017A 3/16/2017 11/15/2057 325.585 318.380 - - 318.380 3.77 2017B 9/28/2017 11/15/2028 662.025 662.025 - - 662.025 1.98 2017C 12/14/2017 11/15/2040 2,021.462 2,172.935 - - 2,172.935 3.12 2017D 12/21/2017 11/15/2047 643.095 643.095 - - 643.095 3.51 2018A 1/23/2018 11/15/2048 472.310 277.610 - - 277.610 1.91 2018B 8/23/2018 11/15/2028 207.220 185.015 - - 185.015 2.71 2018C BANS 10/10/2018 9/1/2021 900.000 450.000 - - 450.000 2.29 2019A 2/6/2019 11/15/2048 454.150 454.150 - - 454.150 4.16 2019B 5/14/2019 11/15/2052 177.185 177.185 - - 177.185 3.83 2019B BANS 5/22/2019 5/15/2022 1,200.000 1,000.000 - - 1,000.000 1.67 2019C 8/14/2019 11/15/2049 422.430 422.430 - - 422.430 3.39 2019D BANS 9/6/2019 9/1/2022 1,200.000 1,000.000 - - 1,000.000 1.33 2019D 11/7/2019 11/15/2048 241.745 241.745 - - 241.745 3.62 2019F BANS 12/10/2019 11/15/2022 200.000 200.000 - - 200.000 1.45 2020A BANS 1/8/2020 2/1/2023 1,500.000 1,500.000 - - 1,500.000 1.32 2020A 1/16/2020 11/15/2054 924.750 924.750 - - 924.750 3.46 2020B 3/27/2020 11/15/2046 162.660 87.660 66.570 - 154.230 4.02 2020C 5/14/2020 11/15/2055 1,725.000 1,725.000 - - 1,725.000 5.17 2020B BANS 8/26/2020 8/1/2023 450.720 450.720 - - 450.720 1.94 2020D 9/18/2020 11/15/2050 900.000 900.000 - - 900.000 4.49 2020E 11/13/2020 11/15/2045 419.915 419.915 - - 419.915 4.01 2021A 2/12/2021 11/15/2050 700.000 700.000 - - 700.000 3.05 39,636.142 27,364.205 935.925 1,062.510 29,362.640 3.38 WATIC
+```
+[p023_c0004] _Master Page # 23 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 24
+
+### [p024_c0001] MTA DEBT OUTSTANDING ($ in Millions)
+[p024_c0002] 6/11/2021
+[p024_c0003]
+
+```text
+Underlying Ratings (Moody's/S&P / Fitch/ Kroll) Series BPA Sale Date Series Original Final Maturity Principal Iss. Amount Outstanding Total Outstanding TIC 1 Notes Fixed Amount Variable Amount Synthetic Fixed Amount TBTA General Revenue Bonds (Aa3/AA-/AA-/AA) 2001C 12/19/01 1/1/2032 148.200 - 80.025 9.000 89.025 2.25 2002F 11/13/02 11/1/2032 246.480 - - 144.835 144.835 3.59 2003B 12/10/03 1/1/2033 250.000 - 94.955 42.365 137.320 2.27 2005A 5/11/05 11/1/2041 150.000 - 82.295 19.775 102.070 2.08 2005B 7/7/05 1/1/2032 800.000 - - 561.600 561.600 3.73 2008B 3/27/08 11/15/2038 252.230 103.120 63.650 - 166.770 3.24 2009A 2/18/09 11/15/2038 475.000 62.700 - - 62.700 3.25 2009B 9/17/09 11/15/2039 200.000 200.000 - - 200.000 3.63 2010A 10/28/10 11/15/2040 346.960 280.400 - - 280.400 3.45 2011A 10/13/11 1/1/2028 609.430 25.425 - - 25.425 3.59 2012A 6/6/12 11/15/2042 231.490 162.045 - - 162.045 3.69 2012B 8/23/12 11/15/2032 1,236.898 879.105 - - 879.105 2.66 2013B 1/29/13 11/15/2030 257.195 180.550 - - 180.550 2.25 2013C 4/18/13 11/15/2043 200.000 141.830 - - 141.830 3.71 2014A 2/6/14 11/15/2044 250.000 186.110 - - 186.110 4.28 2015A 5/15/15 11/15/2050 225.000 189.760 - - 189.760 4.18 2015B 11/16/15 11/15/2045 65.000 58.905 - - 58.905 3.88 2016A 1/28/16 11/15/2046 541.240 498.030 - - 498.030 3.24 2017A 1/19/17 11/15/2047 300.000 300.000 - - 300.000 3.71 2017B 1/19/2017 11/15/2038 902.975 902.975 - - 902.975 3.48 2017C 11/17/2017 11/15/2042 720.990 720.990 - - 720.990 2.81 2018A 2/1/2018 11/15/2048 351.930 351.930 - - 351.930 3.84 2018B 8/30/2018 11/15/2031 270.090 270.090 - - 270.090 2.75 2018C 8/30/2018 11/15/2038 159.280 159.280 - - 159.280 3.66 2018D 10/4/2018 11/15/2038 125.000 98.985 - - 98.985 2.58 2018E Taxable 12/12/2018 11/15/2032 148.470 - 148.470 - 148.470 1.73 2019A 5/23/2019 11/15/2049 150.000 150.000 - - 150.000 3.71 2019B Taxable 9/25/2019 11/15/2044 102.465 102.465 - - 102.465 3.49 2019C 12/3/2019 11/15/2048 200.000 200.000 - - 200.000 3.04 2020A 5/27/2020 11/15/2054 525.000 525.000 - - 525.000 3.64 2021A 3/31/2021 11/15/2056 400.000 400.000 - - 400.000 3.56 10,841.323 7,149.695 469.395 777.575 8,396.665 3.28 WATIC TBTA Subordinate Revenue Bonds (A1/A+/A+/AA-) 2002E 11/13/02 11/15/2032 756.095 36.080 - - 36.080 5.34 2013A 01/29/13 11/15/2032 653.965 720.645 - - 720.645 3.13 2013D Taxable 12/19/13 11/15/2032 313.975 110.645 - - 110.645 3.89 1,724.035 867.370 - - 867.370 3.32 WATIC TBTA 2nd Subordinate Revenue Bonds (A1/NAF/A+/NAF) 2021A BANS 06/10/21 11/1/2025 192.835 192.835 - - 192.835 0.69 192.835 192.835 - - 192.835 0.69 WATIC MTA Dedicated Tax Fund Bonds (NAF/AA/AA/NAF) 2002B 9/5/02 11/1/2022 440.000 110.325 - - 110.325 0.58 2004B 3/10/04 11/15/2033 500.000 17.120 - - 17.120 4.51 2008A 6/25/08 11/1/2031 352.915 - 4.635 301.970 306.605 4.07 2008B 8/7/08 11/1/2034 348.175 190.205 44.740 - 234.945 2.88 2009C 4/30/09 11/15/2039 750.000 750.000 - - 750.000 4.89 2010A 3/25/10 11/15/2040 502.990 411.885 - - 411.885 3.91 2011A 3/31/11 11/15/2021 127.450 2.575 - - 2.575 2.99 2012A 10/25/12 11/15/2032 959.466 910.100 - - 910.100 3.07 2016A 3/10/16 11/15/2036 579.955 558.175 - - 558.175 2.98 2016B 5/26/16 11/15/2056 588.305 570.475 - - 570.475 3.37 2017A 2/23/17 11/15/2047 312.825 303.535 - - 303.535 3.97 2017B 5/17/17 11/15/2057 680.265 678.720 - - 678.720 3.56 2019A BANS 3/19/19 3/1/2022 750.000 750.000 - - 750.000 1.86 6,892.346 5,253.115 49.375 301.970 5,604.460 3.34 WATIC Payroll Mobility Tax Obligations (NAF/AA+/AA+/AA+) 2020A BANS 12/17/20 12/15/2023 2,907.280 2,907.280 - - 2,907.280 1.36 2021A 5/5/21 5/15/2051 1,238.210 1,238.210 - - 1,238.210 2.02 4,145.490 4,145.490 - - 4,145.490 1.55 WATIC All MTA Total 63,432.170 44,972.710 1,454.695 2,142.055 48,569.460 3.19 MTA Hudson Rail Yards Trust Obligations 2 Revenue Bonds (A3/NAF/NAF/A-) 2016A 9/22/16 11/15/2056 1,057.430 682.430 - - 682.430 4.28 2020A 3/27/20 11/15/2046 162.660 154.230 - - 154.230 4.28 1,220.090 836.660 - - 836.660 4.28 Grand Total 64,652.260 45,809.370 1,454.695 2,142.055 49,406.120 3.21
+```
+### [p024_c0004] Notes
+[p024_c0005] (1) Fixed Rate TICs calculated as of issuance of Fixed Rate Bonds. Floating Rate TICs calculated from inception including fees.
+[p024_c0006] Any Unhedged Variable Rate Bonds that have been fixed to maturity are carried at the new Fixed Rate TIC. Synthetic Fixed Rate TICs include
+[p024_c0007] average swap rates plus current variable rate fees and estimated basis adjustments for life of swap. Synthetic Fixed Rate TICs do not include benefit of any upfront payments received by MTA. Variable Rate TICs include average remarketed plus current variable rate fees.
+[p024_c0008] (2) Assumes that no fee purchase options are exercised thru maturity. If all of the fee purchase options are exercised within 10 years, the All-in TIC would be 2.74%.
+[p024_c0009] _Master Page # 24 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 25
+
+### [p025_c0001] Staff Summary
+### [p025_c0002] Schedule H: Modifications to Personal Service & Miscellaneous Service Contracts
+[p025_c0003] Item Number:
+[p025_c0004] Page 1 of 2
+[p025_c0005]
+
+```text
+Vendor Name (& Location): Willis of New York Description: Owner Controlled Insurance: Additional Insurance Contract Term (including Options, if any): Eight Years Option(s) included in Total Amount? Yes No Procurement Type: Competitive Non-competitive Solicitation Type: RFP Bid Other: Funding Source: Operating Capital Federal Other: Requesting Dept/Div & Dept/Div Head Name: Risk and Insurance Management / Phyllis Rachmuth
+```
+[p025_c0006]
+
+```text
+Contract Number: RM019-0100 AWO/Modification # 2 Original Amount: $225,000,000 Prior Modifications: $ Prior Budgetary Increases: $84,500,000 Current Amount: $309,500,000 This Request: $102,000,000 % of This Request to Current Amount: 33% % of Modifications (including This Request) to Original Amount: 83%
+```
+### [p025_c0007] PURPOSE:
+[p025_c0008] To obtain Board approval to procure additional insurance coverage under the MTA's 2015-2019 Capital Plan Owner Controlled Insurance Program (OCIP) to include a portion of the 2020-2024 Capital Plan and extend the contract term by two years. Total amount of this request $102,000,000.00.
+### [p025_c0009] SUMMARY:
+[p025_c0010] An OCIP for the 2015-2019 Capital Plan was approved by the Board on March 22, 2017. Willis of NY, the OCIP broker, selected through a competitive RFP process, subsequently marketed and placed OCIP policies based upon a selection of Capital Program projects in the approved plan. The authorization to procure the insurance and establish a not to exceed budget of $225 million was approved by the Board on June 21, 2017. This budget contemplated coverage for a listing of over 300 NYCT, LIRR, MNR and SBMP projects expected to be awarded from July 1, 2017 to June 30, 2020 with construction values estimated at $3.7 billion. On January 24, 2018, the Board approved an increase of $84,500,000 to include the $1.46 billion LIRR Expansion Project for a total not to exceed budget of $309,500,000.00. This request for approval, seeks to extend the program to allow for the inclusion of projects related to the 2020-2024 Capital plan to be awarded from July 1, 2021 to June 31, 2022. A procurement action is currently being processed for the insurance broker services associated with this additional coverage.
+### [p025_c0011] DISCUSSION:
+[p025_c0012] The procurement of a new OCIP for the 2020-2024 Capital Program has been delayed by the COVID-19 pandemic and the associated MTA funding uncertainty. To bridge the gap between programs, MTA Risk and Insurance Management (RIM) asked Willis of NY to broker a two-year extension of the current OCIP policies. Based upon discussions with the incumbent insurance carriers, however, Willis advised that an extension would not be possible and that a new insurance program would be necessary.
+[p025_c0013] Willis sought proposals for a new policy with a 4-year term for $1.2 billion of 2020-2024 Capital Program and Sandy Related Projects expected to be awarded during the period of July 1, 2021 to June 31, 2022. Three quotations were received and based on a review of those quotations, Willis recommended, and MTA RIM agreed, that Liberty Mutual provided the best primary insurance program (Workers' Compensation and General Liability) and that a consortium of US, London and Bermuda based excess liability carriers including Markel, Axis, Navigators, Liberty, Berkshire, Swiss RE and Chubb provided the best excess insurance program.
+[p025_c0014] Coverage will be for the entire term of the Project, estimated to be four (4) years, and will be non-cancelable by the insurers except for non-payment of premium or non-compliance with serious safety recommendations. The primary coverage will provide annually reinstating, per project, limits of $3 million per occurrence and $6 million in the aggregate, subject to self-insured retentions of $750,000 for the Workers' Compensation policy and $1.5 million for the General Liability policy. The excess liability coverage is $300 million per occurrence and in the aggregate for all projects. MTA RIM expects the maximum aggregated premium, safety management and administrative cost to be approximately $102 million, or 8.5% of total contract cost for covered projects.
+[p025_c0015] _MTA Form R0058G - 3/07_
+[p025_c0016] _Master Page # 25 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 26
+
+### [p026_c0001] Staff Summary
+[p026_c0002] The Liberty Mutual quote of $78 million for primary insurance is based upon the assumptions of $204,000,000 in construction payroll. The final cost is subject to audited payroll accrued during the policy period. The quote included fixed premium of $18 million and self-insured loss costs capped at $60 million. MTA's Captive insurance company subsidiary, First Mutual Transportation Assurance Corporation (FTAC) will assume the self-insured portion and write a deductible reimbursement policy for $40 million. The total cost to the Capital Plan for primary insurance will be $58 million subject to audit.
+[p026_c0003] As part of the insurance proposal from Liberty, FTAC will enter into a cross collateral agreement with the insurance company whereby FTAC will hold collateral to secure Liberty Mutual against MTA's obligation to pay to the self-insured layer of Workers' Compensation/General Liability claims. The Liberty program will leverage existing collateral held in trust by FTAC on the 2005-2009 Capital Program OCIP and the East Side Access OCIP. FTAC will hold and invest the funds, with any interest earned being retained by FTAC. This transaction eliminates the need for additional collateral, a letter of credit or the posting of other security that would otherwise be required to place the policy. Safety services and administrative expenses will be funded by investment income on the funds held by the Captive over the life of the program. With a fair rate of return and minimal loss history, it is expected that FTAC can fully fund these expenses.
+[p026_c0004] Excess liability premium of just over $40 million was estimated based on $1.2 billion in construction value and is subject to audit based upon final construction costs. Additionally, the program includes Builder's Risk coverage to protect MTA's interests in the property being constructed and Railroad Protective Liability for LIRR and MNR projects to protect the assets and employees of the MTA railroads and to meet our obligations to protect the railroads that operate on the right of way. These policies were procured within the aggregate OCIP maximum budget and are anticipated to have a cost not to exceed $2.7 million.
+[p026_c0005] The carriers have all agreed to accept the addition of the Penn Station Access Project within the four-year program, if requested. The budget for OCIP insurance would need to increase at a rate of 8.5% of hard construction cost with any additional work orders including the award of this option. If work exceeds $2 billion the excess carriers have agreed to reduce their rates by up to 10%.
+### [p026_c0006] IMPACT ON FUNDING:
+[p026_c0007] The cost of OCIP as a percent of construction cost has been increasing over each Capital Plan. Since the 2000 – 2004 capital program, insurance has doubled as a percentage of hard costs from 4% up to 8.5%. As a result, MTA C&D has begun a procurement for a team of experts to study causal factors and potential strategies to mitigate this concerning trend.
+[p026_c0008] The work is funded under the 2020-2024 Capital Plan. Insurance funding is currently budgeted at $102 million.
+### [p026_c0009] ALTERNATIVES:
+[p026_c0010] The alternative would be to require Contractors and Design-Builders to carry their own Workers Compensation, General Liability, Excess Liability, and Railroad Protective Liability for their work. During the negotiation period with the Design-Builders, the option of Contractor provided insurance was explored. It was determined that the OCIP afforded greater protection to the MTA at a cost similar to if not less than Design-Builder provided coverage.
+[p026_c0011] _MTA Form R0058 - 8/97_
+[p026_c0012] _Master Page # 26 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 27
+
+### [p027_c0001] Staff Summary
+### [p027_c0002] MTA Metropolitan Transportation Authority
+### [p027_c0003] Page 1 of 1
+[p027_c0004]
+
+```text
+Subject 2021 State PWEF Assessment Department Chief Financial Officer Department Head Name Robert E. Foran Department Head Signature Project Manager Name David E. Keller
+```
+[p027_c0005]
+
+```text
+Date June 23, 2021 Vendor Name Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p027_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Comm. 6/23 X 2 Board 6/23 X
+```
+[p027_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 2 Legal 1 Chief Financial Officer
+```
+[p027_c0008] Purpose: To authorize actions relating to the payment of the State assessment on the MTA and its constituent agencies for the Public Work Enforcement Fund for calendar 2021.
+[p027_c0009] Discussion: Chapter 511 of the Laws of 1995, as amended, requires State agencies and authorities to pay to the State Comptroller an assessment based upon 1/10 of 1% of the value of public work (construction) contracts entered into (excluding rolling stock contracts). The assessments are deposited in the State Public Work Enforcement Fund to reimburse the State Department of Labor for its costs in enforcing the State's prevailing-wage law. The State and the MTA have entered into a simple annual estimate-and-settlement procedure agreement. Payments are made each year based upon the estimated amount of public works contracts and are adjusted to reflect the actual experience from the prior year. The 2021 payment, therefore, is based upon a 2021 estimate and an adjustment for 2020.
+[p027_c0010] Based on the actual average spending rates, it is assumed that in calendar year 2021, MTA's constituent agencies are projected to let $1,482 billion worth of construction and design-build contracts, which is a $186 million decrease in contract values from the actual 2020 level of $1,668 billion.
+[p027_c0011] In 2020, the estimated 2020 assessment of $1,706,141 was more than the actual assessment of $1,667,750 by $38,391. This overpayment, when deducted from the estimated 2021 assessment of $1,482,381 requires a total payment of $1,443,990.
+[p027_c0012] Financial Implications: The 2021 MTAHQ Budget contains sufficient funds for this payment.
+[p027_c0013] Recommendation: The Board should authorize staff to remit the 2021 assessment, including the adjustment for the 2020 overpayment, to the State Department of Labor.
+[p027_c0014] _Master Page # 27 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 28
+
+### [p028_c0001] Metropolitan Transportation Authority
+### [p028_c0002] PROCUREMENTS
+[p028_c0003] The Procurement Agenda this month includes 2 actions for a proposed expenditure of $ 23 M.
+[p028_c0004] _Master Page # 28 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 29
+
+### [p029_c0001] Staff Summary
+### [p029_c0002] Page 1 of 1
+[p029_c0003]
+
+```text
+Subject Request for Authorization to Award Various Procurements Department MTA Procurement Department Head Name Kuvershen Ayer Department Head Signature Division Head Name
+```
+[p029_c0004]
+
+```text
+Date June 15, 2021 Vendor Name Various Contract Number Various Contract Manager Name Various Table of Contents Ref #
+```
+[p029_c0005]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance 06/23/21 X 2 Board 06/23/21 X
+```
+[p029_c0006]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Procurement 3 CFO 2 Legal
+```
+### [p029_c0007] PURPOSE:
+[p029_c0008] To obtain approval of the Board to award various contracts/contract modifications and purchase orders, as reviewed by the MTA Finance Committee.
+### [p029_c0009] DISCUSSION:
+[p029_c0010] MTAHQ proposes to award Competitive procurements in the following categories:
+[p029_c0011] Schedules Requiring Majority Vote:
+[p029_c0012] Schedule G: Miscellaneous Services Contracts
+[p029_c0013] Schedule H: Modifications to Personal Services and Miscellaneous Services Contracts
+### [p029_c0014] SUBTOTAL
+[p029_c0015]
+
+```text
+# of $ Amount Actions 1 $ 21,174,938 1 $ 1,820,000 2 $ 22,994,938 TOTAL 2 $ 22,994,938
+```
+[p029_c0016] BUDGET IMPACT: The purchases/contracts will result in obligating MTAHQ operating and capital funds in the amount listed. Funds are available in the current MTAHQ operating/capital budgets for this purpose.
+[p029_c0017] RECOMMENDATION: That the purchases/contracts be approved as proposed. Items are included in the resolution of approval at the beginning of the Procurement Section.
+[p029_c0018] _MTA Form R0059 - 8/97_
+[p029_c0019] _Master Page # 29 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 30
+
+### [p030_c0001] BOARD RESOLUTION
+### [p030_c0002] METROPOLITAN TRANSPORTATION AUTHORITY
+[p030_c0003] WHEREAS, in accordance with Section 1265-a and Section 120 of the Public Authorities Law and the All Agency Procurement Guidelines, the Board authorizes the award of certain non-competitive purchase and public work contracts, and the solicitation and award of request for proposals in regard to purchase and public work contracts; and
+[p030_c0004] WHEREAS, in accordance with the All Agency Procurement Guidelines, the Board authorizes the award of certain non-competitive miscellaneous procurement contracts, and certain change orders to procurement, public work, and miscellaneous procurement contracts; and
+[p030_c0005] WHEREAS, in accordance with Section 2879 of the Public Authorities Law and the All Agency Guidelines for Procurement of Services, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p030_c0006] NOW, the Board resolves as follows:
+[p030_c0007] 1. As to each purchase and public work contract set forth in the annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract.
+[p030_c0008] 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals and authorizes the solicitation of such proposals.
+[p030_c0009] 3. As to each request for proposals (for purchase and public work contracts) set forth in Schedule C for which a recommendation is made to award the contract, the Board authorizes the execution of said contract.
+[p030_c0010] 4. The Board ratifies each action taken set forth in Schedule D for which ratification is requested.
+[p030_c0011] 5. The Board authorizes the execution of each of the following for which Board authorization is required: i) the miscellaneous procurement contracts set forth in Schedule E; ii) the personal service contracts set forth in Schedule F; iii) the miscellaneous service contracts set forth in Schedule G; iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; v) the contract modifications to purchase and public works contracts set forth in Schedule I; and vi) the modifications to miscellaneous procurement contracts set forth in Schedule J.
+[p030_c0012] 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p030_c0013] 7. The Board authorizes the budget adjustments to estimated quantity contracts set forth in Schedule L.
+[p030_c0014] _Master Page # 30 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 31
+
+### [p031_c0001] Metropolitan Transportation Authority
+[p031_c0002] JUNE 2021
+### [p031_c0003] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p031_c0004] Procurements Requiring Majority Vote:
+### [p031_c0005] G. Miscellaneous Service Contracts
+[p031_c0006] (Staff Summaries required for all items greater than $1M: Sole Source; Other Non-Competitive; RFP.)
+- [p031_c0007] 1. Trapeze Software Group Crew Dispatching Management System Contract No. 900000000003838 $21,174,938 (not-to-exceed) Staff Summary Attached
+[p031_c0008] Competitively negotiated – 7 proposals – 72 months plus 2 one-year options
+[p031_c0009] Board approval is sought to award a competitively negotiated miscellaneous services contract to Trapeze Software Group, Inc. to deliver and implement a new Crew Dispatching & Management System to support the picking, crew management/dispatching, and time reporting process for Metro-North Railroad (MNR) for $11,827,172, with an option to implement same for Long Island Rail Road (LIRR) for $9,347,766, for a total not-to-exceed amount of $21,174,938.
+### [p031_c0010] H. Modifications to Personal Service Contracts and Miscellaneous Service Contracts Awarded as Contracts for Services
+[p031_c0011] (Approvals/Staff Summaries required for substantial change orders and change orders that cause the original contract to equal or exceed the monetary or durational threshold required for Board approval.)
+- [p031_c0012] 2. Various As-Needed Temporary Medical Staffing Contract No. 15333, Modification No. 3 Base Amount = $4,755,285.79 Current Contract Value = $5,745,285 Proposed New Contract Value = $7,565,285 $1,820,000 (not-to-exceed) Staff Summary Attached
+- [p031_c0013] a. Jennifer Temps b. Medical Search International c. New Wave People, Inc. d. Penda Aiken, Inc. e. White Glove Placement f. Winston Support Services
+[p031_c0014] Board approval is sought to add additional funding of $1,820,000 to increase the contract value, from $5,745,285 to a not to exceed amount of $7,565,285, for competitively negotiated personal services contracts with the following six staffing agencies: Jennifer Temps, Medical Search International, New Wave People, Inc, Penda Aiken, Inc., White Glove Placement, and Winston Support Services. The additional funding will allow these firms to continue to provide temporary medical staffing for the MTA Office of Health Services for 11 months of the second one-year extension of the contract from July 8, 2021 through June 7, 2022.
+[p031_c0015] _Master Page # 31 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 32
+
+### [p032_c0001] Staff Summary
+### [p032_c0002] Metropolitan Transportation Authority
+### [p032_c0003] Schedule G: Miscellaneous Service Contracts
+### [p032_c0004] Page 1 of 2
+[p032_c0005] Item Number: 1
+[p032_c0006]
+
+```text
+Vendor Name (& Location): Trapeze Software Group, Inc. Description: Implementation of MTA Crew Dispatching & Management System Contract Term (including Options, if any): Six Year contract plus two one-year options to renew (8 years) Option(s) included in Total Amount? Yes No Procurement Type: Competitive Non-competitive Solicitation Type: RFP Bid Other:
+```
+[p032_c0007]
+
+```text
+Contract Number: 900000000000003838 Renewal? Yes No Total Amount: $21,174,938 MNR $11,827,172 / LIRR $9,347,766 Funding Source: Operating Capital Federal Other: Requesting Dept/Div & Dept/Div Head Name: MNR Transportation: John Longobardi LIRR Transportation Services: Beth Sullivan Contract Manager: Kevin Meaney, MTA Procurement
+```
+[p032_c0008] Board approval is sought to award a competitively negotiated miscellaneous services contract to Trapeze Software Group, Inc. to deliver and implement a new Crew Dispatching & Management System to support the picking, crew management/dispatching, and time reporting process for Metro-North Railroad (MNR) for $11,827,172, with an option to implement same for Long Island Rail Road (LIRR) for $9,347,766, for a total not-to-exceed amount of $21,174,938.
+[p032_c0009] This new system acquisition will replace the obsolete legacy systems that are currently in place. Each MTA agency currently utilizes different disparate systems and processes on a daily basis for crew dispatching and management, picking, and timekeeping operations. For example: MNR is currently using Crew Management System (CMS) that was first installed in 1998 which operates in a mainframe environment. LIRR currently uses a separate system called Transportation Employees Assignment and Management System (TEAMS) which was first installed in 2012 and requires major upgrades.
+[p032_c0010] The new software will enable crew dispatchers to perform their duties optimally and support different business processes and policies governing role assignments and pay for employees. This software also ensures that safety and compliance standards will be fully met in accordance with the Code of Federal Regulations (CFR) Title 49 (Transportation) that requires maximum work times for covered service, as well as using fatigue models to act upon certain jobs that affect circadian rhythm, among other things. The CFR outlines maximum working times and mandatory rest based upon the working times.
+[p032_c0011] A Request for Proposal (RFP) was released on January 28, 2020 and distributed to 42 vendors. Seven (7) proposals were received from Trapeze, Arcos, Cloud Moyo, Dassault, GIRO, PS Technology and SISCOG. A Selection Committee, comprised of representatives from MTAHQ, MNR and LIRR was convened to evaluate the proposals. The evaluation was based on a set of selection criteria set forth in the RFP that included factors such as concept and system design, experience on similar projects, project timeline, commitment of relevant resources and cost.
+[p032_c0012] Of the seven (7) proposals received, the Selection Committee deemed that the proposals from Trapeze, Dassault, GIRO, PS Technology and SISCOG were technically qualified with an implementation approach consistent with MTA's expectations. Oral interviews and system demonstrations were then held with these five shortlisted firms.
+[p032_c0013] Based on the vendors' proposals, their oral presentations, system demonstrations, and responses to technical questions, the Selection Committee determined that Trapeze was the most technically qualified vendor who received the highest overall rating in accordance with the selection criteria, affording the best value to the MTA. Trapeze's proposal is also scalable and will allow the MTA the ability to expand its implementation to NYCT and other agencies at the pre-established discount and rate schedules. Trapeze also has the ability to include interfaces to other MTA applications and legacy systems such as PeopleSoft and Kronos products if/when it becomes necessary. The other proposals received lower ratings for reasons such as: their respective systems focused more on bus operations vs. rail centric operations; their systems would require substantially more customizations that could jeopardize meeting the project schedule and
+[p032_c0014] _MTA Form R0058F - 3/07_
+[p032_c0015] _Master Page # 32 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 33
+
+### [p033_c0001] Staff Summary
+[p033_c0002] target deliveries of various project milestones; and their proposals did not successfully present other required functionalities, such as: work crew assignment bidding, picking, and some basic crew dispatching functional requirements.
+[p033_c0003] Negotiations yielded a 24% or $6,957,000 reduction from Trapeze's initial proposal of $28,131,938 to $21,174,938. Included in this reduction is Trapeze's provision of the core software at no cost to the MTA, valued at $4,382,083. Trapeze's negotiated cost is also within the proposed amounts submitted by the shortlisted vendors that were deemed technically qualified, which ranged from $18M to $36M. In addition, Trapeze's negotiated Best and Final Offer (BAFO) of $21,174,938 is $1.6M below MTA's in-house estimate. Trapeze further warranted that the best pricing discount has been provided to the MTA in comparison to their other government customers for similar implementations. Based on the foregoing, Trapeze's BAFO of $21,174,938 is deemed fair and reasonable.
+[p033_c0004] In the event that the Trapeze system is expanded to other agencies outside MNR and LIRR, the same negotiated unit prices shall apply. The new system far exceeds the functionality of the current existing systems. A few examples include the employee portal with self-service, enhanced claim support for employees and management, and enhanced reporting and dashboards capabilities.
+[p033_c0005] The contract resulting from this procurement has been evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state and local law and regulations. Any applicable cybersecurity requirements, to the extent required, have been included in the contract terms and conditions.
+[p033_c0006] The expected implementation timeline for MNR is 27 months and 21 months for LIRR from project kick-off date. The BAFO proposes a cost breakdown as follows: $8 million in the first two years for Software, interfacing, project management, system design and configuration, testing and implementation (plus maintenance on the one-year warranty), and an average annual expenditure of $600,000 for maintenance and support of the system for the remaining six years. If the option for LIRR is exercised, a concurrent cost breakdown is anticipated of $6 million in the first two years for development, testing and implementation (including maintenance on a one-year warranty) followed by an average expenditure of $500,000 annually for maintenance and support. While the Board is requested to approve the exercise of the option for LIRR at this time, determination to exercise the option is expected to be made by the end of 2022, subject to the approval by the LIRR's Chief Transportation Officer.
+[p033_c0007] The MTA Department of Diversity and Civil Rights (DDCR) has established 15% MBE, 15% WBE and 6% SDVOB goals for this contract. Trapeze Software Group submitted an MWBE/SDVOB utilization plan that exceeds MWBE/SDVOB goal requirement. Trapeze Software Group has not completed any contracts with MWDBE/SDVOB goals; therefore, no assessment of the firm's MWDBE/SDVOB performance is available at this time.
+[p033_c0008] _MTA Form R0058 - 8/97_
+[p033_c0009] _Master Page # 33 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 34
+
+### [p034_c0001] Staff Summary
+### [p034_c0002] Schedule H: Modifications to Personal Service & Miscellaneous Service Contracts
+[p034_c0003] Item Number: 2
+[p034_c0004] Page 1 of 1
+[p034_c0005]
+
+```text
+Vendor Name (& Location): Various Description: As Needed Temporary Medical Staffing Contract Term (including Options, if any): 2 Years with 2 (1-Yr.) June 8, 2018 through June 7, 2022 Option(s) included in Total Amount? Yes No Procurement Type: Competitive Non-competitive Solicitation Type: RFP Bid Other: OGS Funding Source: Operating Capital Federal Other: Requesting Dept/Div. & Dept/Div. Head Name: NYCTA HR and MTAHQ OHS
+```
+[p034_c0006]
+
+```text
+Contract Number: 15333 - 100a,200a,300a,400,500,600 AWO/Modification # 3 Original Amount: $4,755,285.79 Prior Modifications: $ 990,000.00 Prior Budgetary Increases: $ Current Amount: $5,745,285.00 This Request: $ 1,820,000.00 % of This Request to Current Amount: 24% % of Modifications (including This Request) to Original Amount: 59.1%
+```
+### [p034_c0007] PURPOSE:
+[p034_c0008] Board approval is sought to add additional funding of $1,820,000 to increase the contract value, from $5,745,285 to a not-to-exceed amount of $7,565,285, for competitively negotiated personal service contracts with the following six staffing agencies: Jennifer Temps, Medical Search International, New Wave People, Inc, Penda Aiken, Inc, White Glove Placement, and Winston Support Services. The additional funding will allow these firms to continue to provide temporary medical staffing for the MTA Office of Health Services (OHS) for 11 months of the second one-year extension of the contract from July 8, 2021 through June 7, 2022.
+### [p034_c0009] DISCUSSION:
+[p034_c0010] In June 2018, MTAHQ Procurement awarded a personal service contract ride of competitively solicited NYS OGS Contract No. 23057, Group No. 73003 ("OGS Contract") to six (6) medical staffing firms for a period of twenty-four (24) months with two (2) one (1) year options for a four-year total amount of $4,755,287 to provide temporary medical staffing to back fill staff absences, vacation, sick, personal time and vacancies of permanent full-time staff in NYC Transit's, LIRR and MNRR Medical Assessment Centers (MACs). Contract requirements were submitted with four-year funding estimates based on then-known requirements. The contracts were awarded through a competitive mini bid process conducted by MTAHQ procurement to the following firms:
+[p034_c0011]
+
+```text
+15333-0100A- Jennifer Temps 15333-0300A - New Wave People, Inc 15333-0500 - White Glove Placement 15333-0200A- Medical Search Int. 15333-0400 - Penda Aiken, Inc 15333-0600 - Winston Support Services
+```
+[p034_c0012] The contracts provide temporary medical staffing for titles such as physicians, nurses, lab technicians, physical therapists and computer operators to back fill staff absences, vacation, sick, personal time, and vacancies of permanent full-time staff in NYC Transit's, LIRR's and MNR's Medical Assessment Centers (MACs). Increased staffing was required during the term of the contract to support unanticipated medical program needs that have included adding an evening nurse for the Hearing Conservation Program; Off-Hour/Week-end Medication Nurses for new LIRR program; additional lab technicians to support a DOT regulation change that increased random drug testing by 50%; assigning physicians, nurses and lab technicians to NYCT's Subway Action Plan; adding physicians to backfill staff physicians who were re-directed to COVID-19 related functions; provide evening coverage for extensive increase in return-to-work exams; certify respiratory clearances for employees providing cleaning to the transit system from 1:00 am to 5:00 am, and, coverage for nurses on long-term FMLA absences. While the increase in staffing was within scope, a budget adjustment is now required to replenish funding to continue providing these services through June 2022.
+[p034_c0013] The rates for the original award were deemed fair and reasonable based on a comparison against the corresponding not-to-exceed rates under the OGS Contract and the competitive mini-bid process conducted by MTAHQ Procurement. To date, two modifications have been issued: Modification 1 in 2020 added $990,000 to cover some of the expended budget used for the agencies' additional staffing needs as cited above, increasing the value to $5,745,285, and Modification 2 to add one month from the second year option extension from June 8, 2021 to July 7, 2021 (no additional funding). Modification 3 is being requested to add $1,820,000 in additional funding for the 11-month period remaining in the second one-year contract extension option from July 8, 2021 to June 7, 2022. As explained above, the additional funding will support the agencies' increased temporary medical staffing needs until the contract expiration date of June 7, 2022. During this extension period, MTAHQ will work on a new contract solicitation for these services. This modification utilizes existing rates, terms and conditions that are deemed fair and reasonable. Based on the foregoing, this modification is considered fair and reasonable; performance by the vendors under this contract has been satisfactory.
+[p034_c0014] _MTA Form R0058G - 3/07_
+[p034_c0015] _Master Page # 34 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 35
+
+### [p035_c0001] Staff Summary
+### [p035_c0002] Metropolitan Transportation Authority
+[p035_c0003] The contract resulting from this procurement is being evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state and local law and regulations. The Authority is working with the vendor to include applicable cybersecurity requirements prior to issuance of the change order.
+[p035_c0004] _MTA Form R0058 - 8/97_
+[p035_c0005] _Master Page # 35 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 36
+
+### [p036_c0001] Schedule A: Non-Competitive Purchases and Public Works
+### [p036_c0002] Staff Summary
+### [p036_c0003] Long Island Rail Road
+### [p036_c0004] Page 1 of 2
+[p036_c0005] Item Number: 1
+[p036_c0006]
+
+```text
+Vendor Name (& Location) Knorr-Bremse (Knorr, Merak and NYAB OEMs) Description OEM Purchase Agreements for Repair Parts – LIRR, MNR & NYCT Contract Term (including Options, if any) 5 Years (July 1, 2021 – July 1, 2026) Option(s) included in Total Amount? Yes No Procurement Type Competitive Non-Competitive Solicitation Type RFP Bid Other: OEM Sole Source
+```
+[p036_c0007]
+
+```text
+Contact Number TBD Renewal? Yes No Total Amount: $161,900,000 Est. Funding Source Operating Capital Federal Other: Requesting Dept/Div & Dept/Div Head Name: Maintenance of Equipment – Craig Daly Contract Manager : James Lorig
+```
+### [p036_c0008] Discussion:
+[p036_c0009] As a result of a multi-agency Joint Procurement, LIRR, on behalf of itself, Metro-North Railroad (MNR) (the “Railroads”) and New York City Transit (NYCT) requests approval to award Original Equipment Manufacturers (OEMs) purchase agreements for a five year term for repair parts to the Knorr-Bremse family of companies in the estimated value of $161.9M, as follows: Knorr Brake Company, Merak and New York Air Brake (NYAB). Of the overall estimated value of $161.9M , $137.2M has firm fixed pricing. These agreements are for various OEM repair parts for LIRR’s M-3, C-3 and M-7 railcars and its DE/DM locomotive fleets and MNR’s M-3, Shoreliners, M-7 and M-8 railcars and diesel locomotive fleets, as well as NYCT’s R46, R62A, R68, R142 and R188 subway cars. These OEMs are the suppliers for various parts, components and assemblies for major railcar systems such as HVAC and air brakes.
+[p036_c0010] The OEMs (Knorr, Merak & NYAB) are the sole responsible sources for the components that will be provided under these purchase agreements. Other vendors do not have access to the proprietary designs, specifications and drawings for these systems or materials and therefore cannot readily provide these components. Under these purchase agreements, the OEMs will supply, on a forecasted basis, complete systems, parts and other equipment required to (i) support the Agencies’ in-house maintenance programs and (ii) support unscheduled maintenance and repairs by the Agencies on their fleet of locomotives, coaches and electric cars over a five year period. To maintain a high car reliability and improved customer service through on-time performance, the Agencies must implement their respective in-house maintenance programs, which require parts being replaced at prescribed intervals. Additionally, parts required to perform unscheduled maintenance and repairs on the cars are needed to insure safe, reliable and maintainable operation.
+[p036_c0011] This joint approach utilizes the combined buying power of the three MTA agencies to achieve most favorable uniform pricing and better supply chain management. Additional benefits are process efficiencies that reduce the number and frequency of small purchase activities. The five-year term also assures the Agencies that the OEMs will continue to maintain their tooling and manufacturing capabilities necessary to produce the parts, which are not available from any other sources. MTA performed a Cost Price Analysis on the 1,393 pre-priced items with comparative data from supporting documentation and historical data of previous purchases from Knorr, Merak and NYAB. For those items, whose estimated value is $137,216,044 and 85% of contract total,
+[p036_c0012] _Master Page # 36 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 37
+
+### [p037_c0001] Schedule A: Non-Competitive Purchases and Public Works
+### [p037_c0002] Staff Summary
+### [p037_c0003] Page 2 of 2
+[p037_c0004] prices will be held firm for the first 2 year period. PPI adjustments, on the 2 nd anniversary date of the contract, and on each consequent anniversary for each year of the contract thereafter.
+[p037_c0005] For the remaining items, pricing will be established on an as-required basis, and each item will be subject to a cost and/or price analysis as well as the most favored customer pricing clause. Where applicable, the suppliers will provide redacted invoices from other customers' purchases to support fair and reasonable pricing.
+[p037_c0006] For the fixed price items, the MTA Cost Price Analysis Unit has reviewed a compilation of different metrics and based on those metrics, determined the pricing to be fair and reasonable.
+[p037_c0007] In accordance with MTA All-Agency Procurement Guideline requirements, the Agencies advertised their intent to procure the items under these agreements on a sole source basis in the NYSCR, NY Post and internet. No other firms expressed any interest in participating in these procurements.
+[p037_c0008] The chart below provides the listing of each OEM and the estimated amount anticipated to be expended with each OEM by LIRR, MNR and NYCT over the five-year term of the purchase agreements.
+[p037_c0009]
+
+```text
+Supplier LIRR MNR NYCT MTA Totals Knorr Brake Co. $78.1 M $54.4 M $20 M $152.5 M Merak $4.6 M $0.4 M ----- $5.0 M New York Air Brake $4.3 M $0.1 M ----- $4.4 M Grand Total $87 M $ 54.9 M $20M $161.9 M
+```
+[p037_c0010] The total dollars outlined above are based upon historical data and projected/forecasted usage.
+[p037_c0011] The contract resulting from this procurement has been evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state and local law and regulations. Any applicable cybersecurity requirements, to the extent required, have been included in the contract terms and conditions.
+[p037_c0012] Upon approval by the MTA Board, the procurement documents will be presented to the NYS Office of the State Comptroller for approval.
+[p037_c0013] _Master Page # 37 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 38
+
+### [p038_c0001] Master Page # 38 of 114 - Finance Committee Meeting 6/23/2021
+### [p038_c0002] METROPOLITAN TRANSPORTATION AUTHORITY February Financial Plan - 2021 Adopted Budget Accrual Statement of Operations by Category May 2021 Monthly ($ in millions)
+[p038_c0003]
+
+```text
+Non-Reimbursable Reimbursable Total Adopted Budget Actual -Variance: Fav/(Unfav)- Dollars -Variance: Fav/(Unfav)- Percent Adopted Budget Actual -Variance: Fav/(Unfav)- Dollars -Variance: Fav/(Unfav)- Percent Adopted Budget Actual -Variance: Fav/(Unfav)- Dollars -Variance: Fav/(Unfav)- Percent Revenue Farebox Revenue $134.7 $233.0 $98.4 73.0 $0.0 $0.0 $0.0 N/A $134.7 $233.0 $98.4 73.0 Toll Revenue 109.4 186.8 77.4 70.8 0.0 0.0 0.0 N/A 109.4 186.8 77.4 70.8 Other Revenue 60.3 62.7 2.4 4.0 0.0 0.0 0.0 N/A 60.3 62.7 2.4 4.0 Capital and Other Reimbursements 0.0 0.0 0.0 N/A 170.7 152.5 (18.1) (10.6) 170.7 152.5 (18.1) (10.6) Total Revenues $304.4 $482.6 $178.2 58.5 $170.7 $152.5 ($18.1) (10.6) $475.0 $635.1 $160.1 33.7 Expenses Labor: Payroll $445.8 $437.9 $7.9 1.8 $58.4 $50.3 $8.1 13.8 $504.1 $488.1 $16.0 3.2 Overtime 73.2 72.5 0.6 0.9 17.5 15.1 2.4 13.5 90.6 87.6 3.0 3.3 Health and Welfare 127.5 112.8 14.7 11.5 7.3 6.7 0.6 8.0 134.8 119.5 15.3 11.3 OPEB Current Payments 64.1 36.3 27.8 43.4 1.2 1.0 0.2 16.4 65.3 37.3 28.0 42.9 Pension 113.9 114.0 (0.1) (0.1) 8.5 8.3 0.2 2.7 122.4 122.3 0.1 0.1 Other Fringe Benefits 83.8 53.6 30.2 36.0 19.8 17.0 2.7 13.7 103.5 70.6 32.9 31.8 Reimbursable Overhead (33.0) (29.7) (3.3) (10.1) 32.4 29.2 3.2 9.9 (0.6) (0.4) (0.1) (24.7) Total Labor Expenses $875.1 $797.3 $77.8 8.9 $145.1 $127.7 $17.3 12.0 $1,020.2 $925.1 $95.1 9.3 Non-Labor: Electric Power $35.1 $33.4 $1.7 4.7 $0.0 $0.2 ($0.1) <(100.0) $35.1 $33.6 $1.5 4.4 Fuel 12.5 13.1 (0.6) (4.6) 0.0 0.0 0.0 100.0 12.5 13.1 (0.6) (4.6) Insurance 2.6 1.3 1.2 47.4 0.7 0.7 0.0 (1.9) 3.2 2.0 1.2 37.0 Claims 35.1 30.9 4.2 11.9 0.0 0.0 0.0 N/A 35.1 30.9 4.2 11.9 Paratransit Service Contracts 36.4 29.7 6.7 18.5 0.0 0.0 0.0 N/A 36.4 29.7 6.7 18.5 Maintenance and Other Operating Contracts 61.3 59.3 1.9 3.2 5.2 8.1 (2.9) (55.5) 66.5 67.4 (1.0) (1.4) Professional Services Contracts 49.5 37.3 12.1 24.5 7.2 2.5 4.7 64.8 56.7 39.9 16.8 29.6 Materials and Supplies 54.6 34.3 20.2 37.1 12.1 13.4 (1.3) (10.5) 66.7 47.7 19.0 28.4 Other Business Expenses 12.9 22.6 (9.6) (74.6) 0.3 (0.1) 0.4 > 100.0 13.2 22.4 (9.2) (69.6) Total Non-Labor Expenses $299.9 $262.0 $37.9 12.6 $25.6 $24.8 $0.8 3.0 $325.5 $286.8 $38.7 11.9 Other Expense Adjustments Other $1.8 $1.2 $0.7 35.5 $0.0 $0.0 $0.0 N/A $1.8 $1.2 $0.7 35.5 General Reserve 0.0 0.0 0.0 N/A 0.0 0.0 0.0 N/A 0.0 0.0 0.0 N/A Total Other Expense Adjustments $1.8 $1.2 $0.7 35.5 $0.0 $0.0 $0.0 N/A $1.8 $1.2 $0.7 35.5 Total Expenses Before Non-Cash Liability Adjs. $1,176.8 $1,060.5 $116.3 9.9 $170.7 $152.5 $18.1 10.6 $1,347.5 $1,213.0 $134.5 10.0 Depreciation $243.8 $250.2 ($6.4) (2.6) $0.0 $0.0 $0.0 N/A $243.8 $250.2 ($6.4) (2.6) OPEB Liability Adjustment 0.0 0.0 0.0 100.0 0.0 0.0 0.0 N/A 0.0 0.0 0.0 100.0 GASB 75 OPEB Expense Adjustment 5.8 0.0 5.8 100.0 0.0 0.0 0.0 N/A 5.8 0.0 5.8 100.0 GASB 68 Pension Expense Adjustment 3.6 0.0 3.6 100.0 0.0 0.0 0.0 N/A 3.6 0.0 3.6 100.0 Environmental Remediation 0.5 0.2 0.3 66.7 0.0 0.0 0.0 N/A 0.5 0.2 0.3 66.7 Total Expenses After Non-Cash Liability Adjs. $1,430.6 $1,310.9 $119.7 8.4 $170.7 $152.5 $18.1 10.6 $1,601.2 $1,463.4 $137.8 8.6 Less: B&T Depreciation & GASB Adjustments $14.4 $15.9 ($1.5) (10.3) $0.0 $0.0 $0.0 0.0 $14.4 $15.9 ($1.5) (10.3) Adjusted Total Expenses $1,416.1 $1,295.0 $121.2 8.6 $170.7 $152.5 $18.1 10.6 $1,586.8 $1,447.5 $139.3 8.8 Net Surplus/(Deficit) ($1,111.8) ($812.4) $299.4 26.9 $0.0 $0.0 $0.0 N/A ($1,111.8) ($812.4) $299.4 26.9 Total Subsidies $529.1 $726.2 $197.1 37.2 $0.0 $0.0 $0.0 N/A $529.1 $726.2 $197.1 37.2 Debt Service 199.9 144.8 55.2 27.6 0.0 0.0 0.0 N/A 199.9 144.8 55.2 27.6
+```
+[p038_c0004] Notes: Totals may not add due to rounding
+[p038_c0005] Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current months' actuals do not include post-close adjustments, which will be captured in the YTD results.
+[p038_c0006] A toll increase was implemented on 4/11/2021 and is reflected in actual results. The budget is captured below the line in MTA Consolidated financial results and will be incorporated in the baseline in the July Financial Plan.
+
+## Page 39
+
+### [p039_c0001] Master Page # 39 of 114 - Finance Committee Meeting 6/23/2021
+### [p039_c0002] METROPOLITAN TRANSPORTATION AUTHORITY February Financial Plan - 2021 Adopted Budget Accrual Statement of Operations by Category May 2021 Year-to-Date ($ in millions)
+[p039_c0003]
+
+```text
+Non-Reimbursable Reimbursable Total Adopted Budget Actual -Variance: Fav/(Unfav)- Dollars -Variance: Fav/(Unfav)- Percent Adopted Budget Actual -Variance: Fav/(Unfav)- Dollars -Variance: Fav/(Unfav)- Percent Adopted Budget Actual -Variance: Fav/(Unfav)- Dollars -Variance: Fav/(Unfav)- Percent Revenue Farebox Revenue $540.5 $983.5 $443.0 82.0 $0.0 $0.0 $0.0 N/A $540.5 $983.5 $443.0 82.0 Toll Revenue 455.3 778.4 323.1 71.0 0.0 0.0 0.0 N/A 455.3 778.4 323.1 71.0 Other Revenue 291.7 231.1 (60.6) (20.8) 0.0 0.0 0.0 N/A 291.7 231.1 (60.6) (20.8) Capital and Other Reimbursements 0.0 0.0 0.0 N/A 902.6 736.8 (165.8) (18.4) 902.6 736.8 (165.8) (18.4) Total Revenues $1,287.4 $1,993.0 $705.5 54.8 $902.6 $736.8 ($165.8) (18.4) $2,190.0 $2,729.8 $539.7 24.6 Expenses Labor: Payroll $2,197.2 $2,119.9 $77.3 3.5 $298.8 $255.9 $42.9 14.4 $2,496.0 $2,375.8 $120.2 4.8 Overtime 369.0 378.0 (9.0) (2.4) 88.3 75.3 13.0 14.7 457.3 453.4 4.0 0.9 Health and Welfare 638.3 562.5 75.8 11.9 35.1 32.0 3.1 8.8 673.3 594.4 78.9 11.7 OPEB Current Payments 324.3 256.0 68.3 21.1 6.1 4.9 1.2 19.1 330.3 260.9 69.5 21.0 Pension 582.0 584.4 (2.4) (0.4) 40.8 36.4 4.3 10.6 622.7 620.8 1.9 0.3 Other Fringe Benefits 415.1 381.8 33.3 8.0 102.6 89.8 12.8 12.5 517.7 471.7 46.1 8.9 Reimbursable Overhead (174.9) (146.7) (28.1) (16.1) 172.2 145.5 26.7 15.5 (2.7) (1.2) (1.5) (54.9) Total Labor Expenses $4,350.9 $4,135.8 $215.1 4.9 $743.9 $639.9 $103.9 14.0 $5,094.8 $4,775.7 $319.1 6.3 Non-Labor: Electric Power $189.7 $165.5 $24.3 12.8 $0.2 $0.6 ($0.3) <(100.0) $189.9 $166.0 $23.9 12.6 Fuel 66.4 60.5 5.9 8.9 0.0 0.0 0.0 84.4 66.4 60.5 5.9 8.9 Insurance 11.9 13.6 (1.7) (14.2) 3.0 3.1 (0.1) (4.6) 14.8 16.7 (1.8) (12.3) Claims 176.3 155.1 21.2 12.0 0.0 0.0 0.0 N/A 176.3 155.1 21.2 12.0 Paratransit Service Contracts 167.7 137.1 30.5 18.2 0.0 0.0 0.0 N/A 167.7 137.1 30.5 18.2 Maintenance and Other Operating Contracts 310.2 298.0 12.2 3.9 32.7 35.7 (3.0) (9.2) 342.9 333.7 9.2 2.7 Professional Services Contracts 248.9 209.0 39.9 16.0 38.3 12.5 25.8 67.3 287.1 221.5 65.6 22.9 Materials and Supplies 267.4 201.0 66.4 24.8 85.5 44.7 40.8 47.7 352.9 245.7 107.2 30.4 Other Business Expenses 71.3 70.2 1.1 1.6 (1.0) 0.2 (1.2) <(100.0) 70.3 70.4 (0.1) (0.1) Total Non-Labor Expenses $1,509.8 $1,309.9 $199.9 13.2 $158.7 $96.9 $61.9 39.0 $1,668.5 $1,406.8 $261.8 15.7 Other Expense Adjustments Other $9.0 $7.9 $1.1 11.8 $0.0 $0.0 $0.0 N/A $9.0 $7.9 $1.1 11.8 General Reserve 0.0 0.0 0.0 N/A 0.0 0.0 0.0 N/A 0.0 0.0 0.0 N/A Total Other Expense Adjustments $9.0 $7.9 $1.1 11.8 $0.0 $0.0 $0.0 N/A $9.0 $7.9 $1.1 11.8 Total Expenses Before Non-Cash Liability Adjs. $5,869.7 $5,453.6 $416.1 7.1 $902.6 $736.8 $165.8 18.4 $6,772.3 $6,190.4 $581.9 8.6 Depreciation $1,224.7 $1,282.8 ($58.0) (4.7) $0.0 $0.0 $0.0 N/A $1,224.7 $1,282.8 ($58.0) (4.7) OPEB Liability Adjustment 0.0 0.0 0.0 100.0 0.0 0.0 0.0 N/A 0.0 0.0 0.0 100.0 GASB 75 OPEB Expense Adjustment 39.1 0.1 38.9 99.6 0.0 0.0 0.0 N/A 39.1 0.1 38.9 99.6 GASB 68 Pension Expense Adjustment 37.7 (3.8) 41.4 > 100.0 0.0 0.0 0.0 N/A 37.7 (3.8) 41.4 >100.0 Environmental Remediation 2.5 1.6 0.9 35.2 0.0 0.0 0.0 N/A 2.5 1.6 0.9 35.2 Total Expenses After Non-Cash Liability Adjs. $7,173.6 $6,734.4 $439.3 6.1 $902.6 $736.8 $165.8 18.4 $8,076.2 $7,471.2 $605.1 7.5 Less: B&T Depreciation & GASB Adjustments $70.3 $79.0 ($8.8) (12.5) $0.0 $0.0 $0.0 0.0 $70.3 $79.0 ($8.8) (12.5) Adjusted Total Expenses $7,103.4 $6,655.3 $448.0 6.3 $902.6 $736.8 $165.8 18.4 $8,006.0 $7,392.1 $613.8 7.7 Net Surplus/(Deficit) ($5,815.9) ($4,662.4) $1,153.6 19.8 $0.0 $0.0 $0.0 N/A ($5,815.9) ($4,662.4) $1,153.6 19.8 Total Subsidies $2,590.9 $2,561.6 ($29.2) (1.1) $0.0 $0.0 $0.0 N/A $2,590.9 $2,561.6 ($29.2) (1.1) Debt Service 1,197.2 1,166.1 31.0 2.6 0.0 0.0 0.0 N/A 1,197.2 1,166.1 31.0 2.6
+```
+[p039_c0004] Notes: Totals may not add due to rounding
+[p039_c0005] Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current months' actuals do not include post-close adjustments, which will be captured in the YTD results.
+[p039_c0006] A toll increase was implemented on 4/11/2021 and is reflected in actual results. The budget is captured below the line in MTA Consolidated financial results and will be incorporated in the baseline in the July Financial Plan.
+
+## Page 40
+
+### [p040_c0001] Master Page #40 of 114 - Finance Committee Meeting 6/23/2021
+### [p040_c0002] METROPOLITAN TRANSPORTATION AUTHORITY CONSOLIDATED ACCRUAL STATEMENT OF OPERATIONS BY CATEGORY EXPLANATION OF VARIANCES BETWEEN ADOPTED BUDGET AND ACTUAL - ACCRUAL BASIS
+[p040_c0003] MAY 2021 ($ in millions)
+[p040_c0004]
+
+```text
+Generic Revenue or Expense Category Nonreimb or Reimb MAY Reason for Variance MAY 2021 YEAR-TO-DATE Reason for Variance Favorable (Unfavorable) Favorable (Unfavorable) $ % $ % Farebox Revenue NR 98.4 73.0 Passenger revenue was higher at NYCT, MTA Bus, the LIRR, and MNR by $84.2M, $5.7M, $5.2M, and $3.3M, respectively, mainly due to higher ridership. 443.0 82.0 The factors highlighted for the month continue, but with favorable variances of $384.9M at NYCT, $30.3M at MTA Bus, $20.7M at the LIRR, and $6.9M at MNR. Vehicle Toll Revenue NR 77.4 70.8 Traffic volume exceeded projected levels, and also reflects additional revenues from the April 11th toll rate increase of six percent which is estimated to be $14.4M in May. 323.1 71.0 Traffic volume exceeded projected levels, and also reflects additional revenues from the April 11th toll rate increase of six percent, which is estimated to be $18.5M YTD. Other Operating Revenue NR 2.4 4.0 The favorable outcome primarily reflects the timing of Paratransit reimbursements and Transit Adjudication Bureau (TAB) revenues, $7.1M at NYCT, and the timing of income from E-ZPass administrative fees, $0.8M at B&T. Partially offsetting these results were unfavorable outcomes primarily reflecting lower GCT retail and advertising revenues ($1.4M) at MNR, a negative shift in the market value of the invested asset portfolio at FMTAC ($1.3M), lower student fare reimbursements, insurance recoveries, and other contract services ($1.2M) at MTA Bus, and the timing of other income and lower Transit Museum revenue at MTA HQ ($0.7M.) (60.6) (20.8) YTD underruns primarily reflect unfavorable variances of ($25.3M) at FMTAC with drivers continuing as noted for the month, ($15.2M) at MTA HQ reflects an accounting entry incorrectly booked to the agency in February that will be reversed later this year, ($9.1M) at NYCT due to underruns in Paratransit reimbursements and MetroCard surcharges, ($6.9M) at MNR mostly continues as reported for the month and also includes lower parking revenue, ($6.3M) at MTA Bus reflects the drivers for the month and includes lower advertising revenue, ($1.6M) at MTAC&D due to the timing of rental payments as well as tenant revenue losses stemming from the pandemic, and ($0.7M) at SIR due to underruns in student fare reimbursements. These unfavorable results were partly offset by a favorable outcome of $4.0M at B&T reflecting a continuation of the driver referenced for the month. Payroll NR 7.9 1.8 Vacancies contributed to the favorable outcomes of $4.7M at the LIRR, $2.4M at MTA HQ, and $0.8M at B&T. Other agency variances were minor. 77.3 3.5 The MTA-wide hiring freeze, while relaxed, continues to generate substantial vacancy savings at NYCT, the LIRR, MTA HQ, B&T, and MTAC&D—with variances of $39.1M, $22.0M, $17.2M, $3.6M, $0.8M and $0.5M, respectively. Partially offsetting these results were unfavorable outcomes of ($4.6M) at MTA Bus, reflecting the monthly drivers and higher vacation payments, cash payouts of sick and personal time, and lower attrition, and ($1.2M) at MNR reflecting the timing of retiree payouts. Overtime NR 0.6 0.9 The LIRR was $1.9M favorable due to lower programmatic/routine maintenance, vacancy/absentee coverage, and scheduled/unscheduled service. At MNR, the $1.1M favorable outcome was due to lower scheduled service in train & engine crew overtime resulting from continued use of reduced schedules as well as increased employee availability. MTA Bus was $1.0M favorable due to lower unscheduled service resulting from less traffic and service and lower COVID-related cleaning and programmatic maintenance. The underruns at B&T of $0.6M were primarily due to continued scheduling, deployment, and managerial efficiencies, as well as the deferral of non-critical maintenance work. Overruns partially offset favorable results of ($4.1M) at NYCT, resulting from higher supervisory overtime requirements and employee availability shortfalls, and overtime savings not fully achieved. (See overtime variance analysis charts for more details.) (9.0) (2.4) The unfavorable outcome of ($28.1M) at NYCT was primarily driven by higher vacancy coverage requirements and snowstorm response earlier in the year. However, this was partially offset by overall savings resulting from lower OT needs for programmatic/routine maintenance, revised scheduled service needs, and lower safety-related coverage. Costs at MTA Bus were lower by $6.6M due to the factors highlighted for the month, and expenses at the LIRR were favorable by $4.9M, due to lower programmatic/routine maintenance and scheduled/unscheduled service. Underruns at MNR of $3.9M reflected revised schedules, improved Transportation availability, and lower vacancy coverage in Maintenance of Equipment and Customer Service. At MTA HQ, lower expenses of $2.2M were due to reduced coverage needs by the MTAPD, and lower costs at B&T of $1.6M continue as noted for the month. (See overtime variance analysis charts for more detail.)
+```
+
+## Page 41
+
+### [p041_c0001] Master Page #41 of 114 - Finance Committee Meeting 6/23/2021
+### [p041_c0002] METROPOLITAN TRANSPORTATION AUTHORITY CONSOLIDATED ACCRUAL STATEMENT OF OPERATIONS BY CATEGORY EXPLANATION OF VARIANCES BETWEEN ADOPTED BUDGET AND ACTUAL - ACCRUAL BASIS
+[p041_c0003] MAY 2021 ($ in millions)
+[p041_c0004]
+
+```text
+Generic Revenue or Expense Category Nonreimb or Reimb MAY Reason for Variance MAY 2021 YEAR-TO-DATE Reason for Variance Favorable (Unfavorable) Favorable (Unfavorable) $ % $ % Health and Welfare NR 14.7 11.5 NYCT was favorable by $10.8M due to lower prescription drug and insurance carrier rates and timing. The LIRR, MTA HQ, and B&T were favorable by $1.5M, $1.2M, and $0.8M, respectively, due to vacancies. MTA Bus was favorable by $0.5M due to lower medical and hospitalization expenses. Partially offsetting these results was an unfavorable variance of ($0.6M) at MNR, mainly due to a year-to-date catch-up adjustment for higher than budgeted expenses. 75.8 11.9 Factors highlighted for the month continue at NYCT, the LIRR, MTA HQ, B&T, and MTA Bus with favorable results of $59.6M, $7.1M, $6.2M, $3.9M, and $0.5M, respectively. In addition, SIR was favorable by $1.2M due to prescription drug contract rebates and vacancies. Partially offsetting these results was an unfavorable variance of ($2.8M) at MNR due to higher rates. OPEB - Current Payment NR 27.8 43.4 NYCT was favorable by $26.1M due to lower prescription drug and insurance carrier rates and timing. In addition, the LIRR was favorable by $1.5M due to fewer retirees and lower rates. 68.3 21.1 Factors highlighted for the month continue at NYCT and the LIRR with favorable results of $63.8M and $6.9M, respectively. These results were partially offset by unfavorable variances of ($1.9M) at MNR due to a higher number of retirees and ($0.5M) at MTA Bus. Pensions NR (0.1) (0.1) The LIRR was ($1.0M) unfavorable due to an over-estimated allocation to the reimbursable budget. MNR was ($0.6M) unfavorable primarily due to a catch-up adjustment for higher-than-budgeted pension rates. Partially offsetting these results were favorable variances of $1.0M at MTA HQ due to the impact of hiring restrictions and timing, and $0.6M at B&T primarily due to lower than allocated capital reimbursement offsets. (2.4) (0.4) Timing was largely responsible for the unfavorable variance of ($5.3M) at NYCT. The LIRR was ($4.4M) unfavorable due to an over-estimated allocation to the reimbursable budget. MNR was ($3.7M) unfavorable primarily due to higher rates and an increase in the provision for COVID-19 death benefits. Partially offsetting these results were favorable variances of $6.1M at MTA HQ mainly due to the impact of hiring restrictions and timing, $3.5M at B&T primarily due to lower than allocated capital reimbursement offsets, and $1.5M at MTA Bus due to timing. Other Fringe Benefits NR 30.2 36.0 NYCT was favorable by $27.4M mainly due to revised accrual for Worker's Compensation reserve. MTA Bus was $1.0M favorable due to the timing of interagency billing, and lower Worker's Compensation and unemployment insurance. The LIRR was favorable by $0.8M due to lower Railroad Retirement Taxes. 33.3 8.0 Factors highlighted for the month continue at the NYCT, LIRR, and MTA Bus with favorable results of $20.0M, $5.7M, and $3.7M, respectively. In addition, MTA HQ and B&T were favorable by $2.8M and $1.1M, respectively, due to vacancies Reimbursable Overhead NR (3.3) (10.1) The unfavorable outcome primarily reflects lower project activity with variances of ($4.6M) at NYCT, ($1.9M) at MNR, and ($0.6M) at B&T for timing. However, a favorable timing variance of $2.3M at the LIRR and higher project activity of $1.3M at MTA HQ, partially offset these outcomes. (28.1) (16.1) Drivers of the YTD unfavorable outcomes continue as reported for the month, but with unfavorable variances of ($26.1) at NYCT, ($6.3M) at MNR, ($2.9M) at MTA HQ, ($2.6M) at B&T, and ($0.8M) at MTAC&D, partially offset by a favorable outcome of $10.1M at the LIRR and $0.5M at MTA Bus, both due to timing. Electric Power NR 1.7 4.7 Lower consumption and lower rates contributed to the favorable outcome of $1.9M at NYCT, partially offset by an unfavorable result of ($0.5M) at the LIRR, primarily due to the reversal of a prior period credit and higher rates. 24.3 12.8 The favorable outcome continues as noted for the month, but with a favorable variance of $20.0M at NYCT. Other favorable results included $3.5M at the LIRR due to lower usage, and $0.5M at MTA HQ, due to the timing of the MTA PD Metropolitan Regional Radio System project and BSC expenses. Other Agency variances were minor. Fuel NR (0.6) (4.6) Agency variances were minor. 5.9 8.9 NYCT was favorable by $3.8M mainly due to lower consumption partially offset by higher prices. MTA Bus was $3.2M favorable primarily due to CNG retroactive billing adjustments, partially offset by higher prices. Partially offsetting these results was an unfavorable variance of ($1.4M) at the LIRR primarily due to higher prices.
+```
+
+## Page 42
+
+### [p042_c0001] Master Page #42 of 114 - Finance Committee Meeting 6/23/2021
+### [p042_c0002] METROPOLITAN TRANSPORTATION AUTHORITY CONSOLIDATED ACCRUAL STATEMENT OF OPERATIONS BY CATEGORY EXPLANATION OF VARIANCES BETWEEN ADOPTED BUDGET AND ACTUAL - ACCRUAL BASIS
+[p042_c0003] MAY 2021 ($ in millions)
+[p042_c0004]
+
+```text
+Generic Revenue or Expense Category Nonreimb or Reimb MAY Reason for Variance MAY 2021 YEAR-TO-DATE Reason for Variance Favorable (Unfavorable) Favorable (Unfavorable) $ % $ % Insurance NR 1.2 47.4 NYCT was favorable by $1.0M due to timing, and the LIRR was $0.6M favorable due to lower liability insurance. Partially offsetting these results was an unfavorable variance of ($0.7M) at B&T, mostly due to timing. (1.7) (14.2) FTMAC was unfavorable by ($9.9M) due to timing. This result was partially offset by favorable variances of $3.7M and $0.8M at NYCT, and MTA Bus, respectively, due to timing, $2.3M at the LIRR due to lower liability insurance, and $1.3M at MNR due to lower premiums. Claims NR 4.2 11.9 Timing was largely responsible for the favorable variances of $2.0M at FMTAC and $1.8M at MTA Bus. Other Agency variances were minor. 21.2 12.0 The drivers of the YTD variances for FMTAC and MTA Bus are mainly the same as those noted for the month, however, YTD favorable variances are $10.2M and $8.8M, respectively. The LIRR was $1.0M favorable primarily due to a decrease in corporate reserves, and MTA HQ was $0.5M favorable due to a lower level of claims expense. Other Agency variances were minor. Paratransit Service Contracts NR 6.7 18.5 Lower expenses reflect fewer trips and the timing of support costs. 30.5 18.2 Lower expenses reflect fewer trips and the timing of support costs. Maintenance and Other Operating Contracts NR 1.9 3.2 The overall favorable outcome was mainly attributable to timing, resulting in lower costs of $1.8M at MTA Bus mainly due to facility maintenance, security, bus technology, farebox maintenance, Shop Program activities and COVID-related expenses; $1.5M at MTA HQ mainly due to the timing of maintenance and repairs (which includes Gowanus High Occupancy Vehicle (HOV)), real estate rentals, and janitorial services; $1.4M at the LIRR primarily due to the timing of elevator & escalator, facility maintenance & repair services, and lower real estate rental costs, $0.9M at MTAC&D due to the timing of facility service invoices (security, janitorial and maintenance and repairs) at 2 Broadway and other locations; and $0.5M at MNR primarily due to the timing of locomotive overhauls and infrastructure/miscellaneous maintenance. These results were partially offset by unfavorable variances of ($2.4M) at B&T primarily for major maintenance and painting and E-ZPass customer service center expenses; and ($1.9M) at NYCT largely due to timing and higher COVID vendor costs. 12.2 3.9 The drivers of the YTD variances for MTA Bus, the LIRR, MNR, MTA HQ and MTAC&D are mainly the same as those noted for the month, however, YTD favorable variances are $9.3M, $8.0M, $7.0M, $6.6M and $0.7M, respectively. B&T was $5.4M favorable mainly due to timing for E-ZPass customer service center costs, E-ZPass tags, real estate rental services, and security and surveillance. Partially offsetting these results was an unfavorable variance of ($25.0M) at NYCT largely due to the unfavorable timing of expenses and higher COVID vendor costs.
+```
+
+## Page 43
+
+### [p043_c0001] Master Page #43 of 114 - Finance Committee Meeting 6/23/2021
+### [p043_c0002] METROPOLITAN TRANSPORTATION AUTHORITY CONSOLIDATED ACCRUAL STATEMENT OF OPERATIONS BY CATEGORY EXPLANATION OF VARIANCES BETWEEN ADOPTED BUDGET AND ACTUAL - ACCRUAL BASIS
+[p043_c0003] MAY 2021 ($ in millions)
+[p043_c0004]
+
+```text
+Generic Revenue or Expense Category Nonreimb or Reimb MAY Reason for Variance MAY 2021 YEAR-TO-DATE Reason for Variance Favorable (Unfavorable) Favorable (Unfavorable) $ % $ % Professional Service Contracts NR 12.1 24.5 The overall favorable outcome was mainly attributable to timing, reflecting lower costs of $10.8M at MTA HQ mainly due to the timing of professional services related to consolidated EAM activities, cybersecurity, IT hardware, software, and maintenance, staffing of the COVID-19 hotline, data center expenses, and recoveries from Agencies; $1.6M at MTAC&D due to the timing of recoveries from Agencies; $1.3M at B&T for outside service, planning studies, advertising and marketing, and bond issuance costs; $1.2M at NYCT due to a real estate true-up adjustment; $1.0M at MTA Bus due to interagency charges, bus technology and service contracts; and $0.8M at MNR due to lower consulting and engineering services. These results were partially offset by an unfavorable variance of ($4.7M) at the LIRR primarily due to the timing of a multi-year fiber optic network contract renewal and prior-year MTA chargebacks. 39.9 16.0 The drivers of the YTD variances for MTA HQ, MTA Bus, MTAC&D, MNR and B&T are mainly the same as those noted for the month, however, YTD favorable variances are $17.0M, $6.6M, $4.8M, $4.5M, and $4.1M, respectively. In addition, NYCT was $3.8M favorable due to favorable timing of bond services expenses, and SIR was $0.6M favorable due to the timing of COVID cleaning expenses. These results were partially offset by an unfavorable variance of ($1.5M) at the LIRR primarily due to the same factors noted for the month as well as higher legal fees. Materials & Supplies NR 20.2 37.1 The favorable outcome of $9.3M at NYCT was mainly due to lower COVID-19 cleaning costs and the timing of expenses for non-vehicle materials. Favorable results at the LIRR of $6.8M were primarily due to the timing of fleet modifications and Reliability Centered Maintenance (RCM) activity, right-of-way material, and lower miscellaneous inventory adjustments and COVID-19 cleaning costs. The favorable timing of rolling stock maintenance events, rolling stock material usage, and infrastructure repairs were primarily responsible for the favorable outcome of $2.1M at MNR. At MTA Bus, the favorable $2.0M variance was due to lower general maintenance material requirements due to pandemic-related service reductions and the timing of radio equipment maintenance/repairs and COVID-19 cleaning expenses. 66.4 24.8 The favorable variance of $37.8M at NYCT reflects a retroactive adjustment of prior year expenses to the reimbursable (capital) budget, lower COVID cleaning costs, and the timing of expenses. Other favorable variances mostly continue as noted for the month, but with favorable outcomes of $21.5M at the LIRR (excluding the miscellaneous inventory adjustments), $8.4M at MTA Bus, and $1.6M at MNR (excluding infrastructure repairs.) Partially offsetting these favorable outcomes were higher expenses of ($1.7M) at MTAC&D for lighting and plumbing materials at 2 Broadway and ($0.8M) at B&T due to timing and the net impact of various inventory adjustments resulting from first quarter true-ups. Other Business Expenses NR (9.6) (74.6) MTA HQ was unfavorable by ($8.9M) mainly due to timing. Higher card fees were mainly responsible for the unfavorable variance of ($1.0M) at NYCT. In addition, FMTAC was unfavorable by ($0.5M) due to higher incurred general & administrative, commissions, and safety loss control expenses. Partially offsetting these results were favorable variances of $0.6M at B&T mainly due to timing, and $0.5M at the LIRR mostly due to lower credit/debit card fees, the timing of miscellaneous expenses, and lower travel expenses. 1.1 1.6 The LIRR was favorable by $4.3M mainly due to the reduction of bad debt, lower credit/debit card fees, the timing of miscellaneous expenses, and higher restitution of property damages. Timing was responsible for the favorable variance of $2.2M at B&T. MTA Bus was $0.9M favorable due to lower print and stationery supplies and the timing of Automatic Fare Collection (AFC) fees, Mobility taxes, and other miscellaneous expenses. Partially offsetting these results were unfavorable variances of ($3.0M) at MTAHQ, ($1.6M) at NYCT, and ($0.5M) at FMTAC due to factors highlighted for the month, and ($1.1M) at MNR mostly due to higher subsidy payments for West-of-Hudson service and lower Amtrak recoveries. Other Expense Adjustments NR 0.7 35.5 Variance due to timing differences in project completions. 1.1 11.8 Variance due to timing differences in project completions.
+```
+
+## Page 44
+
+### [p044_c0001] Master Page #44 of 114 - Finance Committee Meeting 6/23/2021
+### [p044_c0002] METROPOLITAN TRANSPORTATION AUTHORITY CONSOLIDATED ACCRUAL STATEMENT OF OPERATIONS BY CATEGORY EXPLANATION OF VARIANCES BETWEEN ADOPTED BUDGET AND ACTUAL - ACCRUAL BASIS MAY 2021 ($ in millions)
+[p044_c0003]
+
+```text
+Generic Revenue or Expense Category Nonreimb or Reimb Favorable (Unfavorable) Reason for Variance Favorable (Unfavorable) Reason for Variance $ % $ % Depreciation NR (6.4) (2.6) Timing differences in project completions and assets reaching beneficial use resulted in unfavorable variances of ($5.4M) at MNR, ($3.6M) at the LIRR and ($1.5M) at B&T, and favorable variances of $2.4M at MTA HQ, $1.5M at NYCT, and $0.5M at MTA Bus. (58.0) (4.7) Timing differences in project completions and assets reaching beneficial use resulted in unfavorable variances of ($37.2M) at NYCT, ($14.9M) at MNR, ($11.5M) at the LIRR and ($8.8M) at B&T, and favorable variances of $11.8M at MTA HQ, and $2.3M at MTA Bus. OPEB Liability Adjustment NR 0.0 * The GASB adjustment reflects the value associated with the unfunded accrued liability for post-employment health benefits. 0.0 * The GASB adjustment reflects the value associated with the unfunded accrued liability for post-employment health benefits. GASB 75 Pension Adjustment NR 5.8 * Reflects the impact of a Generally Accepted Accounting Principles (GAAP) change in OPEB liability (GASB 75). MTA Bus was favorable by $5.8M. 38.9 99.6 Reflects the impact of a Generally Accepted Accounting Principles (GAAP) change in OPEB liability (GASB 75). MTA Bus and NYCT were favorable by $28.8M and $10.0M, respectively. GASB 68 Pension Adjustment NR 3.6 * Reflects Agencies' adjustments to account for net pension liability. MTA Bus was favorable by $3.6M. 41.4 * Reflects Agencies' adjustments to account for net pension liability. NYCT, MTA Bus, and MNR were favorable by $19.3M, $18.1M, and $4.3M, respectively. Environmental Remediation NR 0.3 66.7 Agency variances were minor. 0.9 35.2 MNR had a favorable variance of $1.6M, partially offset by an unfavorable variance of ($0.7M) at the LIRR. Reimbursable revenue and expense activity are primarily influenced by the nature and timing of project activity. Accordingly, variances reflect the impact of the aforementioned influences as well as changes in reimbursement and vacancy assumptions, refinements to project scheduling, as well as project delays/accelerations. At MTAHQ, impacts reflect reimbursable directed patrol (police coverage) requirements. The following lists the major contributors of the variance by Agency. Capital & Other Reimbursements R (18.1) (10.6) Unfavorable variances: ($15.3M) at NYCT, ($5.4M) at MNR, ($5.3M) MTAC&D, and ($0.5M) at SIR. Favorable variances: $6.0M at the LIRR and $2.1M at MTA HQ. (165.8) (18.4) Unfavorable variances: ($82.7M) at NYCT, ($61.9M) at MNR, ($31.7M) at MTAC&D, ($2.6M) at MTA HQ, and ($2.3M) at SIR. Favorable variances: $14.3M at the LIRR and $0.9M at B&T. Payroll R 8.1 13.8 Favorable variances: $7.0M at NYCT, $0.9M at MNR, and $0.6M at MTAC&D. Unfavorable variance: ($0.9M) at the LIRR. Other Agency variances are minor. 42.9 14.4 Favorable variances: $36.0M at NYCT, $4.3M at MTAC&D, $3.6M at MNR, $1.4M at SIR, and $0.7M at MTA HQ. Unfavorable variances: ($2.9M) at the LIRR and ($0.6M) SIR. Overtime R 2.4 13.5 Favorable variances: $2.0M at NYCT and $0.9M at the LIRR. Unfavorable variance ($0.6M) at B&T. Other Agency variances are minor. (See overtime variance analysis charts for more detail) 13.0 14.7 Favorable variances: $11.4M at NYCT, $2.7M at the LIRR, and $1.2M at MNR. Unfavorable variances: ($1.9M) at MTA HQ and ($0.6M.) (See overtime variance analysis charts for more detail.) Health and Welfare R 0.6 8.0 Agency variances were minor. 3.1 8.8 Favorable variances: $1.6M at NYCT, $1.3M at MNR, $1.0M at MTA C&D and $0.6M at MTA Bus. Unfavorable variances: ($1.1M) at B&T and ($0.5M) at the LIRR. OPEB Current Payment R 0.2 16.4 Agency variances were minor. 1.2 19.1 Favorable variance: $1.2M at NYCT. Pensions R 0.2 2.7 Favorable variance: $1.0M at the LIRR. Unfavorable variance: ($1.2M) at NYCT. Other Agency variances were minor. 4.3 10.6 Favorable variances: $4.9M at the LIRR, $1.1M at MTAC&D, and $0.7M at MNR. Unfavorable variances: ($1.4M) at B&T and ($1.1M) at NYCT. Other Agency variances were minor.
+```
+
+## Page 45
+
+### [p045_c0001] Master Page #45 of 114 - Finance Committee Meeting 6/23/2021
+### [p045_c0002] METROPOLITAN TRANSPORTATION AUTHORITY CONSOLIDATED ACCRUAL STATEMENT OF OPERATIONS BY CATEGORY EXPLANATION OF VARIANCES BETWEEN ADOPTED BUDGET AND ACTUAL - ACCRUAL BASIS MAY 2021 ($ in millions)
+[p045_c0003]
+
+```text
+Generic Revenue or Expense Category Nonreimb or Reimb Favorable (Unfavorable) Reason for Variance Favorable (Unfavorable) Reason for Variance $ % $ % Other Fringe Benefits R 2.7 13.7 Favorable variance: $2.6M at NYCT. Other Agency variances were minor. 12.8 12.5 Favorable variances: $12.7M at NYCT, $0.7M at SIR, and $0.6M at both MNR and MTA C&D. Unfavorable variances: ($1.4M) at the LIRR and ($0.6M) at B&T. Reimbursable Overhead R 3.2 9.9 Favorable variances: $4.6M at NYCT, $1.8M at MNR, and $0.6M at B&T. Unfavorable variance: ($2.3M) at the LIRR and ($1.3M) at MTA HQ. 26.7 15.5 Favorable variances: $26.1M at NYCT, $5.8M at MNR, $2.9M at MTA HQ, and $2.6M at B&T. Unfavorable variances: ($10.1M) at the LIRR and ($0.7M) at MTA Bus. Electric Power R (0.1) * Agency variances were minor. (0.3) * Agency variances were minor. Fuel R 0.0 100.0 No variance. 0.0 84.4 No variance. Insurance R (0.0) (1.9) Agency variances were minor. (0.1) (4.6) Unfavorable variance: ($0.7M) at MNR. Favorable variance: $0.5M at the LIRR Claims R 0.0 0.0 No variance. 0.0 0.0 No variance. Paratransit Service Contracts R 0.0 - No variance. 0.0 - No variance. Maintenance and Other Operating Contracts R (2.9) (55.5) Unfavorable variances: ($1.7M) at MNR, ($0.9M) at NYCT, and ($0.7M) at the LIRR. Favorable variance: $0.5M at MTAC&D. (3.0) (9.2) Unfavorable variances: ($7.7M) at NYCT and ($1.1M) at the LIRR. Favorable variance: $5.3M at MTAC&D. Other Agency variances were minor. Professional Service Contracts R 4.7 64.8 Favorable variances: $3.6M at MTAC&D, $1.3M at MNR, and $0.7M at NYCT. Unfavorable variance: ($0.6M) at the MTA HQ. 25.8 67.3 Favorable variances: $19.2M at MTAC&D, $7.5M at MNR, and $0.8M at NYCT. Unfavorable variance: ($2.1M) at the LIRR. Other Agency variances were minor. Materials & Supplies R (1.3) (10.5) Unfavorable variance: ($3.3M) at the LIRR. Favorable variance: $2.3M at MNR. 40.8 47.7 Favorable variances: $41.6M at MNR and $3.1M at NYCT. Unfavorable variance: ($4.2M) at the LIRR. Other Business Expenses R 0.4 * Agency variances were minor. (1.2) * Unfavorable variance: ($1.4M) at NYCT. Other Agency variances were minor.
+```
+
+## Page 46
+
+### [p046_c0001] Master Page #46 of 114 - Finance Committee Meeting 6/23/2021
+### [p046_c0002] METROPOLITAN TRANSPORTATION AUTHORITY CONSOLIDATED ACCRUAL STATEMENT OF OPERATIONS BY CATEGORY EXPLANATION OF VARIANCES BETWEEN ADOPTED BUDGET AND ACTUAL - ACCRUAL BASIS
+[p046_c0003] MAY 2021 ($ in millions)
+[p046_c0004]
+
+```text
+Generic Revenue or Expense Category Nonreimb or Reimb MAY MAY 2021 YEAR-TO-DATE Favorable (Unfavorable) Reason for Variance Favorable (Unfavorable) Reason for Variance $ % $ % Subsidies NR 197.1 37.2 (29.2) (1.1) The variance mainly reflected favorable results for MMTOA of $77.7M due to an additional receipt in May from the NYS 2020-21 Enacted Budget, that the MTA had recognized as unrealized in 2020, and a higher MMTOA appropriation in the NYS 2021-22 Enacted Budget compared with the NYS Executive Budget. Also contributing to the favorable variance were PBT of $52.6M, due to timing of booking accruals by MTA Accounting, Payroll Mobility Tax of $44.6M due primarily to higher-than-anticipated taxable payroll levels, State Operating Assistance 18-b of $39.0M, due primarily to timing, and MRT receipts of $30.6M, due to higher-than-budgeted residential mortgage activity primarily in the suburban counties. This was partially offset by unfavorable Capital Lockbox receipts of $37.5M, which are budgeted to remain in the Operating Budget, but have instead been retained in the Lockbox for Capital purposes and unfavorable City Subsidy for MTA Bus of $15.1M. Debt Service NR 55.2 27.6 31.0 2.6 The unfavorable YTD variance mainly reflected unfavorable results for Capital Lockbox receipts of $243.5M, which are budgeted to remain in the Operating Budget but have instead been retained in the Lockbox for Capital purposes. Also contributing to the unfavorable variance were State Operating Assistance 18-b of $148.9M and City Subsidy for MTA Bus of $103.7M, both due to timing, lower-than-budgeted FHV of $39.6M, and PBT of $15.2M, due to timing of booking accruals by MTA Accounting. This was partially offset by favorable PMT of $262.5M, MRT receipts of $136.0M, due to strong residential mortgage activity in the suburban counties, MMTOA of $77.7 due to an additional payment from the State from its 2020-21 Budget, higher MMTOA appropriation than expected, and CDOT subsidy of $32.6M due primarily to timing. Year-to-Date Debt Service expenses were $1,166.10 million, which were $31.0 million or 2.6% favorable, due to lower than budgeted debt service (resulting from refunding an RRIF loan), variable rates, and the timing of debt service deposits.
+```
+
+## Page 47
+
+### [p047_c0001] Master Page #47 of 114 - Finance Committee Meeting 6/23/2021
+### [p047_c0002] All Agencies – Non-Reimbursable Overtime Variance
+### [p047_c0003] May 2021 and Adopted Budget vs. variance
+[p047_c0004] $M
+- [p047_c0005] ■ Favorable ■ Unfavorable ■ Adopted Budget
+[p047_c0006] 2021 Adopted Budget: $917M
+> [p047_c0007] Period Actual Variance Adopted Budget May '20 $70 -$19 (-27%) $70 May '21 $73 -$1 (-1%) $73 YTD May '20 $359 -$40 (-11%) $319 YTD May '21 $369 +$9 (2%) $319
+### [p047_c0008] Overview
+- [p047_c0009] May was favorable to Budget by $1M or 1%, largely due to lower maintenance requirements at the LIRR, reduced train & engine crew overtime at MNR, and reduced traffic congestion and lower maintenance requirements at MTA Bus, and partially offset by higher vacancy and absentee coverage at NYCT. May YTD was unfavorable by $9M or 2% and reflects Agency variances noted immediately below.
+### [p047_c0010] YTD variance by division
+[p047_c0011] $M
+> [p047_c0012] Division Variance ($M) Notes NYCT $28.1 NYCT: higher costs due to adverse weather-related events and higher vacancy/absentee coverage requirements. B&T -$1.6 B&T: lower costs reflect management efficiencies, improved scheduling and deployment practices, and rescheduled maintenance. MTA HQ -$2.2 MTA HQ: lower costs due to reduced coverage requirements for the MTAPD. MNR -$3.9 MNR: lower costs in Transportation due to operating on a reduced service schedule, and lower vacancy coverage requirements in Customer Service. LIRR -$4.9 LIRR: lower costs due to lower requirements for maintenance, and tightened management procedures, partially offset by vacancy/absentee coverage. MTA Bus -$6.6 MTA Bus: lower costs due to lower maintenance requirements, and reduced traffic congestion/lower unscheduled service. Total $9.0
+[p047_c0013] Source: Adopted Budget . GL actuals for actual overtime spending.
+[p047_c0014] _1_
+
+## Page 48
+
+### [p048_c0001] Master Page #48 of 114 - Finance Committee Meeting 6/23/2021
+### [p048_c0002] All Agencies – Reimbursable Overtime Variance
+### [p048_c0003] May 2021 and Adopted Budget vs. variance
+[p048_c0004] $M
+- [p048_c0005] ■ Favorable ■ Unfavorable ■ Adopted Budget
+[p048_c0006] 2021 Adopted Budget: $215M
+> [p048_c0007] Category May '20 May '21 YTD May '20 YTD May '21 Adopted Budget $17 $18 $88 $88 Actual May '21 $21 $15 $85 $75 Variance $3 (19%) -$2 (-14%) -$3 (-3%) -$13 (-15%)
+### [p048_c0008] Overview
+- [p048_c0009] May cost was $2M or 13% below Budget due to lower capital support requirements at NYCT, and lower capital project activity at the LIRR. YTD costs were $13M or 15%, below Budget, and reflect Agency variances noted immediately below.
+### [p048_c0010] YTD variance by division
+[p048_c0011] $M
+> [p048_c0012] Division Variance ($M) MTAHQ $1.9 MNR -$1.2 LIRR -$2.7 NYCT -$11.4 YTD May '21 -$10.6
+[p048_c0013] MTA HQ: higher mainly due to coverage requirements for the MTAPD, which is partially funded by the Transit Security Grant Program.
+[p048_c0014] MNR: less due to MTA and Connecticut capital project activity.
+[p048_c0015] LIRR: lower needs to cover annual track program, 3 rd Track Main Line, and Jamaica Capacity Improvements requirements.
+[p048_c0016] NYCT: mainly reflects lower capital support requirements.
+[p048_c0017] _Source: Adopted Budget GL actuals for actual overtime spending._
+[p048_c0018] _2_
+
+## Page 49
+
+### [p049_c0001] Master Page # 49 of 114 - Finance Committee Meeting 6/23/2021
+### [p049_c0002] All Agencies – Total Overtime Variance
+### [p049_c0003] Overview
+### [p049_c0004] May 2021 and Adopted Budget vs. variance $M
+- [p049_c0005] ■ Favorable ■ Unfavorable ■ Adopted Budget
+[p049_c0006] Adopted Budget: $1,132M
+> [p049_c0007] Category May '20 May '21 YTD May '20 YTD May '21 Adopted Budget $87 $91 $447 $457 Variance -$15 (-18%) -$3 (-3%) -$43 (-10%) -$4 (-1%) Total $72 $88 $404 $453
+- [p049_c0008] • YTD May costs were $4M below Budget. • Major drivers of the unfavorable non-reimbursable YTD variance include higher-than-expected weather-related events and higher vacancy/absentee coverage requirements at NYCT, partially offset by lower maintenance requirements, and reduced traffic congestion/lower unscheduled service at MTA Bus; lower requirements for maintenance, and tightened management procedures at the LIRR; revised T&E crew requirements at MNR; revised MTAPD deployment assumptions at MTA HQ; and managerial efficiencies and rescheduled maintenance at B&T. • The favorable reimbursable YTD variance results from lower capital support at NYCT; less capital project activity at the LIRR and MNR; partially offset by higher coverage requirements for MTAPD at MTA HQ.
+### [p049_c0009] YTD variance by Agency
+[p049_c0010] $M
+> [p049_c0011] Agency Variance ($M) NYCT $16.6 B&T -$1.0 MNR -$5.1 MTA Bus -$6.6 LIRR -$7.6 Total Favorable -$1.0
+[p049_c0012] Source: Adopted Budget GL actuals for actual overtime spending.
+[p049_c0013] _3_
+
+## Page 50
+
+### [p050_c0001] METROPOLITAN TRANSPORTATION AUTHORITY February Financial Plan - 2021 Adopted Budget Consolidated Subsidies - Accrual Basis May 2021 ($ in millions)
+[p050_c0002]
+
+```text
+Current Month Year-to-Date Adopted Budget Actual Variance Adopted Budget Actual Variance MMTOA, PBT, Real Estate Taxes and Other Metropolitan Mass Transportation Operating Assistance (MMTOA) 169.6 247.3 77.7 499.3 577.0 77.7 Petroleum Business Tax (PBT) (12.7) 39.9 52.6 182.4 167.2 (15.2) MRT(b)-1 (Gross) 16.8 34.6 17.8 84.1 158.7 74.6 MRT(b)-2 (Gross) 7.2 20.0 12.8 35.9 97.3 61.4 Other MRT(b) Adjustments - - - - - - Urban Tax 26.6 30.0 3.4 133.1 139.3 6.2 Investment Income - - - 0.3 - (0.3) $207.5 $371.8 $164.3 $935.1 $1,139.4 $204.3 PMT and MTA Aid Payroll Mobility Tax (PMT) 111.3 155.9 44.6 432.1 694.6 262.5 Payroll Mobility Tax Replacement Funds 46.3 56.5 10.1 87.6 97.7 10.1 MTA Aid - - - 31.3 32.4 1.2 $157.6 $212.3 $54.7 $550.9 $824.8 $273.8 New Funding Sources SAP Support and For-Hire Vehicle Surcharge: For-Hire Vehicle (FHV) Surcharge 22.4 17.8 (4.6) 113.3 73.7 (39.5) Subway Action Plan Account 22.4 17.8 (4.6) 112.6 73.0 (39.6) Outerborough Transportation Account - - - - - - Less: Assumed Capital or Member Project - - - - - - General Transportation Account - - - 0.6 0.7 0.1 Less: Transfer to Committed to Capital - - - - - - Capital Program Funding Sources: 43.7 - (43.7) 218.6 - (218.6) Central Business District Tolling Program (CBDTP) - - - - - - Real Property Transfer Tax Surcharge (Mansion) 15.5 20.2 4.7 77.4 101.5 24.1 Internet Marketplace Tax 28.2 17.3 (10.9) 141.2 142.1 0.9 Less: Transfer to CBDTP Capital Lockbox - (37.5) (37.5) - (243.5) (243.5) $66.1 $17.8 ($48.3) $331.8 $73.7 ($258.1) State and Local Subsidies State Operating Assistance - 39.0 39.0 187.9 39.0 (148.9) NYC and Local 18b: - - - - - - NYC 18b-TA (A/C 434001) - - - - - - NYC 18b-TA (A/C 434002) - - - - - - NYC 18b-TA (A/C 434003) - 0.7 0.7 1.9 0.7 (1.1) NYC 18b-SIR (A/C 434201) - - - - - - New York City - 0.7 0.7 1.9 0.7 (1.1) Nassau County - 4.6 4.6 11.6 4.6 (7.0) Suffolk County - 2.3 2.3 7.5 2.3 (5.3) Westchester County - - - 7.3 - (7.3) Putnam County - 0.2 0.2 0.4 0.2 (0.2) Dutchess County - 0.2 0.2 0.4 0.2 (0.2) Orange County - 0.1 0.1 0.1 0.1 (0.1) Rockland County - 0.0 0.0 0.0 0.0 (0.0) Station Maintenance 15.2 14.6 (0.7) 75.3 72.9 (2.4) $15.2 $61.7 $46.4 $292.5 $119.9 ($172.5) Subtotal: Taxes & State and Local Subsidies $446.5 $663.6 $217.1 $2,110.3 $2,157.9 $47.5 Other Funding Agreements City Subsidy for MTA Bus Company 50.5 35.5 (15.1) 327.5 223.7 (103.7) City Subsidy for Staten Island Railway 9.0 3.8 (5.2) 28.8 23.2 (5.7) CDOT Subsidy for Metro-North Railroad 23.1 23.3 0.2 124.2 156.9 32.6 $82.6 $62.6 ($20.0) $480.5 $403.8 ($76.8) Subtotal, including Other Funding Agreements $529.1 $726.2 $197.1 $2,590.9 $2,561.6 ($29.2) Inter-agency Subsidy Transactions B&T Operating Surplus Transfer 16.8 96.3 79.5 (26.8) 331.8 358.5 $16.8 $96.3 $79.5 ($26.8) $331.8 $358.5 GROSS SUBSIDIES $545.9 $822.4 $276.5 $2,564.1 $2,893.4 $329.3
+```
+[p050_c0003] _Master Page # 50 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 51
+
+### [p051_c0001] Master Page # 51 of 114 - Finance Committee Meeting 6/23/2021
+### [p051_c0002] METROPOLITAN TRANSPORTATION AUTHORITY February Financial Plan - 2021 Adopted Budget Consolidated Subsidies - Accrual Basis Variance Explanations
+[p051_c0003] ($ in millions)
+[p051_c0004] Month of May 2021
+[p051_c0005]
+
+```text
+Accrued Subsidies Variance $ Variance % Explanations Metropolitan Mass Transportation Operating Assistance (MMTOA) 77.7 45.8% The favorable variances for the month and YTD were primarily due to accruals for an additional receipt of $61.3M that the State approved in April and transferred to the MTA in May 2021 from its 2020-21 Enacted Budget. The MTA had recognized this as lost revenues in 2020. The remaining variance reflected a higher revised MMTOA appropriation in the NYS 2021-22 Enacted Budget (April 2021) over the estimate in its Exective Budget (January 2021). Petroleum Business Tax (PBT) 52.6 > (100%) The favorable accrual variance for the month was due primarily to timing of booking accruals by MTA Accounting. The year-to-date variance was unfavorable compared with the budget. MRT(b)-1 (Gross) 17.8 > 100% MRT-1 transactions were above budget for the month and year-to-date due to higher-than-budgeted MRT-1 activity. MRT(b)-2 (Gross) 12.8 > 100% MRT-2 transactions were above budget for the month and year-to-date due to favorable MRT-2 activity. Urban Tax 3.4 12.7% The favorable variances for the month and year-to-date were primarily due to higher-than-budgeted real estate transactions in New York City. Payroll Mobility Tax (PMT) 44.6 40.1% Payroll Mobility Tax transactions were higher than the budget for the month and year-to-date due partially to higher-than-budgeted activity and to timing of booking accruals by MTA Accounting. Payroll Mobility Tax Replacement Funds 10.1 21.8% Payroll Mobility Tax Replacement Funds were higher than the budget for the month and year-to-date, due primarily to a higher appropriation in the NYS 2021-22 Enacted Budget (April, 2021), over the amount in the State Executive Budget (January 2021) that was used in the MTA forecast. Also contributing to the favorable variance was an additional payment to the MTA by the State in May 2021 from its 2020-21 Enacted Budget, that the MTA had recognized as lost revenues in 2020. Subway Action Plan Account (4.6) -20.7% Subway Action Plan transactions for the month and year-to-date were lower-than-budgeted. Real Property Transfer Tax Surcharge (Mansion) 4.7 30.3% The month and YTD variances were favorable to the budget due to higher-than-budgeted transaction. Internet Marketplace Tax (10.9) -38.7% The unfavorable variances for the month was due to timing of booking accruals by MTA Accounting. The year-to-date variance was close to the budget. Less: Transfer to CBDTP Capital Lockbox (37.5) -100.0% Per NYS legislation, funds earmarked for the Capital Lockbox Account can be used by the MTA to offset decreases in revenue or increases in operating costs in 2020 and 2021 due to the emergency disaster caused by COVID-19. Currently, the funds in the lockbox account will remain in the account until MTA requires the funds. State Operating Assistance 39.0 100.0% Variance was due to timing of booking accruals by MTA Accounting. New York City 0.7 100.0% Variance was due to timing of booking accruals by MTA Accounting. Nassau County 4.6 100.0% Variance was due to timing of booking accruals by MTA Accounting. Suffolk County 2.3 100.0% Variance was due to timing of booking accruals by MTA Accounting. Putnam County 0.2 100.0% Variance was due to timing of booking accruals by MTA Accounting. Dutchess County 0.2 100.0% Variance was due to timing of booking accruals by MTA Accounting. Orange County 0.1 100.0% Variance was due to timing of booking accruals by MTA Accounting. Station Maintenance (0.7) -4.4% Variance was mostly timing related. City Subsidy for MTA Bus Company (15.1) -29.9% Variance was mostly due to higher revenues and lower expenses. City Subsidy for Staten Island Railway (5.2) -57.4% Variance was mostly timing related. Drawdowns are related to the timing of cash obligations for Staten Island Railway. CDOT Subsidy for Metro-North Railroad 0.2 0.9% The favorable variance was primarily due to timing. B&T Operating Surplus Transfer 79.5 > 100% The favorable variance was attributable to the timing of transfers.
+```
+
+## Page 52
+
+### [p052_c0001] Master Page # 52 of 114 - Finance Committee Meeting 6/23/2021
+### [p052_c0002] Year-to-Date May 2021
+[p052_c0003]
+
+```text
+Accrued Subsidies Variance $ Variance % Explanations Metropolitan Mass Transportation Operating Assistance (MMTOA) 77.7 15.6% See the explanation for the month. Petroleum Business Tax (PBT) (15.2) -8.3% See the explanation for the month. MRT(b)-1 (Gross) 74.6 88.8% See the explanation for the month. MRT(b)-2 (Gross) 61.4 > 100% See the explanation for the month. Urban Tax 6.2 4.6% See the explanation for the month. Payroll Mobility Tax (PMT) 262.5 60.8% See the explanation for the month. Payroll Mobility Tax Replacement Funds 10.1 11.5% See the explanation for the month. MTA Aid 1.2 3.7% The slightly favorable accrual variances for the month and year-to-date were due primarily to the timing. Subway Action Plan Account (39.6) -35.2% See the explanation for the month. Real Property Transfer Tax Surcharge (Mansion) 24.1 31.1% See the explanation for the month. Internet Marketplace Tax 0.9 0.6% See the explanation for the month. Less: Transfer to CBDTP Capital Lockbox (243.5) -100.0% See the explanation for the month. State Operating Assistance (148.9) -79.2% See the explanation for the month. New York City (1.1) -79.2% See the explanation for the month. Nassau County (7.0) -60.0% See the explanation for the month. Suffolk County (5.3) -70.0% See the explanation for the month. Westchester County (7.3) -100.0% Variance was due to timing of booking accruals by MTA Accounting. Putnam County (0.2) -55.0% See the explanation for the month. Dutchess County (0.2) -60.0% See the explanation for the month. Orange County (0.1) -50.2% See the explanation for the month. Station Maintenance (2.4) -3.2% See the explanation for the month. City Subsidy for MTA Bus Company (103.7) -31.7% See the explanation for the month. City Subsidy for Staten Island Railway (5.7) -19.7% See the explanation for the month. CDOT Subsidy for Metro-North Railroad 32.6 26.3% The favorable variance was primarily due to timing. B&T Operating Surplus Transfer 358.5 > (100%) See the explanation for the month.
+```
+
+## Page 53
+
+### [p053_c0001] Master Page # 53 of 114 - Finance Committee Meeting 6/23/2021
+### [p053_c0002] METROPOLITAN TRANSPORTATION AUTHORITY February Financial Plan - 2021 Adopted Budget Consolidated Subsidies - Cash Basis May 2021 Monthly ($ in millions)
+[p053_c0003]
+
+```text
+New York City Transit Commuter Railroads Staten Island Railway MTA Bus Company MTA Headquarters TOTAL Adopted Budget Actual Variance Adopted Budget Actual Variance Adopted Budget Actual Variance Adopted Budget Actual Variance Adopted Budget Actual Variance Adopted Budget Actual Variance MMTOA, PBT, Real Estate Taxes and Other Metropolitan Mass Transportation Operating Assistance (MMTOA) 115.1 168.0 52.0 54.1 78.6 24.6 0.4 0.6 0.2 - - - - - - 169.6 247.3 77.7 Petroleum Business Tax (PBT) 37.8 31.7 (6.2) 6.7 5.6 (1.1) - - - - - - - - - 44.5 37.2 (7.2) MRT(b)-1 (Gross) - - - - - - - - - - - - 16.8 30.6 13.8 16.8 30.6 13.8 MRT(b)-2 (Gross) - - - - - - - - - - - - 7.2 20.0 12.8 7.2 20.0 12.8 Other MRT(b) Adjustments - - - - - - - - - - - - - - - - - - Urban Tax 26.6 17.8 (8.8) - - - - - - - - - - - - 26.6 17.8 (8.8) Investment Income - - - - - - - - - - - - - - - - - - Subtotal: $179.5 $217.5 $38.0 $60.7 $84.2 $23.5 $0.4 $0.6 $0.2 - - - $24.0 $50.6 $26.6 $264.7 $352.9 $88.3 PMT and MTA Aid Payroll Mobility Tax (PMT) 87.8 80.3 (7.5) $ 58.476 68.0 9.5 - - - - - - - - - 146.3 148.3 2.0 Payroll Mobility Tax Replacement Uunds 38.2 39.5 1.3 $ 16.377 20.7 4.3 - - - - - - - - - 54.6 60.2 5.7 MTA Aid - - - $ - - - - - - - - - - - - - - - Subtotal: $126.0 $119.8 ($6.2) $74.9 $88.7 $13.8 - - - - - - - - - $200.9 $208.5 $7.6 New Funding Sources SAP Support and For-Hire Vehicle Surcharge: For-Hire Vehicle (FHV) Surcharge 22.4 14.9 (7.5) - - - - - - - - - - - - 22.4 14.9 (7.5) Subway Action Plan Account 22.4 14.9 (7.5) - - - - - - - - - - - - 22.4 14.9 (7.5) Outerborough Transportation Account - - - - - - - - - - - - - - - - - - Less: Assumed Capital or Member Project - - - - - - - - - - - - - - - - - - General Transportation Account - - - - - - - - - - - - - - - - - - Less: Transfer to Committed to Capital - - - - - - - - - - - - - - - - - - Capital Program Uunding Sources: 35.0 - (35.0) 8.7 - (8.7) - - - - - - - - - 43.7 - (43.7) Central Business District Tolling Program (CBDTP) - - - - - - - - - - - - - - - - - - Real Property Transfer Tax Surcharge (Mansion) 12.4 16.1 3.8 3.1 4.0 0.9 - - - - - - - - - 15.5 20.2 4.7 Internet Marketplace Tax 22.6 13.8 (8.8) 5.6 3.5 (2.2) - - - - - - - - - 28.2 17.3 (10.9) Less: Transfer to CBDTP Capital Lockbox (30.0) (30.0) (30.0) (7.5) (7.5) (7.5) - - - - - - - - - (37.5) (37.5) (37.5) Subtotal: $57.4 $14.9 ($42.5) $8.7 - ($8.7) - - - - - - - - - $66.1 $14.9 ($51.3) State and Local Subsidies State Operating Assistance 39.5 44.4 4.9 7.3 8.2 0.9 0.1 0.2 0.0 - - - - - - 47.0 52.8 5.9 NYC and Local 18b: NYC 18b-TA (A/C 434001) - - - - - - - - - - - - - - - - - - NYC 18b-TA (A/C 434002) - - - - 0.1 0.1 - - - - - - - - - - 0.1 0.1 NYC 18b-TA (A/C 434003) - - - - - - - - - - - - - - - - - - NYC 18b-SIR (A/C 434201) - - - - - - - - - - - - - - - - - - New York City - - - - 0.1 0.1 - - - - - - - - - - 0.1 0.1 Nassau County - - - - - - - - - - - - - - - - - - Suffolk County - - - - - - - - - - - - - - - - - - Westchester County - - - - - - - - - - - - - - - - - - Putnam County - - - - 0.1 0.1 - - - - - - - - - - 0.1 0.1 Dutchess County - - - - 0.0 0.0 - - - - - - - - - - 0.0 0.0 Orange County - - - - 0.1 0.1 - - - - - - - - - - 0.1 0.1 Rockland County - - - - 0.0 0.0 - - - - - - - - - - 0.0 0.0 Station Maintenance - - - - - - - - - - - - - - - - - - Subtotal: $39.5 $44.4 $4.9 $7.3 $8.5 $1.1 $0.1 $0.2 $0.0 - - - - - - $47.0 $53.1 $6.1 Subsidy Adjustments - - - - - - - - - - - - - - - - - - Subtotal: Taxes & State and Local Subsidies $402.5 $396.6 ($5.8) $151.6 $181.4 $29.7 $0.6 $0.8 $0.2 - - - $24.0 $50.6 $26.6 $578.7 $629.4 $50.7 Other Funding Agreements City Subsidy for MTA Bus Company - - - - - - - - - 43.0 43.0 - - - - 43.0 43.0 - City Subsidy for Staten Island Railway - - - - - - - - - - - - - - - - - - CDOT Subsidy for Metro-North Railroad - - - 23.1 - (23.1) - - - - - - - - - 23.1 - (23.1) - - - $23.1 - ($23.1) - - - $43.0 $43.0 - - - - $66.1 $43.0 ($23.1) Subtotal, including Other Funding Agreements $402.5 $396.6 ($5.8) $174.7 $181.4 $6.6 $0.6 $0.8 $0.2 $43.0 $43.0 - $24.0 $50.6 $26.6 $644.7 $672.4 $27.6 Inter-agency Subsidy Transactions B&T Operating Surplus TransUser (3.3) 33.3 36.6 5.5 41.7 36.1 - - - - - - - - - 2.2 74.9 72.8 ($3.3) $33.3 $36.6 $5.5 $41.7 $36.1 - - - - - - - - - $2.2 $74.9 $72.8 GROSS SUBSIDIES $399.1 $429.9 $30.8 $180.2 $223.0 $42.8 $0.6 $0.8 $0.2 $43.0 $43.0 - $24.0 $50.6 $26.6 $646.9 $747.3 $100.4
+```
+
+## Page 54
+
+### [p054_c0001] Master Page # 54 of 114 - Finance Committee Meeting 6/23/2021
+### [p054_c0002] METROPOLITAN TRANSPORTATION AUTHORITY February Financial Plan - 2021 Adopted Budget Consolidated Subsidies - Cash Basis May 2021 Year-to-Date ($ in millions)
+[p054_c0003]
+
+```text
+New York City Transit Commuter Railroads Staten Island Railway MTA Bus Company MTA Headquarters TOTAL Adopted Budget Actual Variance Adopted Budget Actual Variance Adopted Budget Actual Variance Adopted Budget Actual Variance Adopted Budget Actual Variance Adopted Budget Actual Variance MMTOA, PBT, Real Estate Taxes and Other Metropolitan Mass Transportation Operating Assistance (MMTOA) 339.2 392.2 53.0 158.8 183.4 24.6 1.2 1.4 0.2 - - - - - - 499.3 577.0 77.7 Petroleum Business Tax (PBT) 200.5 189.9 (10.7) 35.4 33.5 (1.9) - - - - - - - - - 235.9 223.4 (12.5) MRT(b)-1 (Gross) - - - - - - - - - - - - 84.1 156.3 72.2 84.1 156.3 72.2 MRT(b)-2 (Gross) - - - - - - - - - - - - 35.9 96.2 60.2 35.9 96.2 60.2 Other MRT(b) Adjustments - - - - - - - - - - - - - - - - - - Urban Tax 133.1 145.4 12.3 - - - - - - - - - - - - 133.1 145.4 12.3 Investment Income 0.2 - (0.2) 0.1 - (0.1) - - - - - - - - - 0.3 - (0.3) $673.1 $727.5 $54.4 $194.3 $216.9 $22.6 $1.2 $1.4 $0.2 - - - $120.0 $252.5 $132.5 $988.6 $1,198.3 $209.6 PMT and MTA Aid Payroll Mobility Tax (PMT) 351.1 393.5 42.4 233.8 332.9 99.1 - - - - - - - - - 584.9 726.5 141.5 Payroll Mobility Tax Replacement Uunds 38.2 68.4 30.2 16.4 33.1 16.7 - - - - - - - - - 54.6 101.5 46.9 MTA Aid 36.9 43.2 6.3 15.8 18.5 2.7 - - - - - - - - - 52.7 61.7 9.0 $426.2 $505.1 $78.9 $266.0 $384.6 $118.6 - - - - - - - - - $692.2 $889.7 $197.5 New Funding Sources SAP Support and For-Hire Vehicle Surcharge: For-Hire Vehicle (FHV) SFrcharge 288.1 55.9 (232.2) 43.7 - (43.7) - - - - - - - - - 113.3 55.9 (57.3) Subway Action Plan Account 112.6 55.3 (57.4) - - - - - - - - - - - - 112.6 55.3 (57.4) Outerborough Transportation Account - - - - - - - - - - - - - - - - - - Less: Assumed Capital or Member Project - - - - - - - - - - - - - - - - - - General Transportation Account 0.6 0.7 0.1 - - - - - - - - - - - - 0.6 0.7 0.1 Less: Transfer to Committed to Capital - - - - - - - - - - - - - - - - - - Capital Program Uunding Sources: 174.9 - (174.9) 43.7 - (43.7) - - - - - - - - - 218.6 - (218.6) Central Business District Tolling Program (CBDTP) - - - - - - - - - - - - - - - - - - Real Property Transfer Tax Surcharge (Mansion) 61.9 81.2 19.3 15.5 20.3 4.8 - - - - - - - - - 77.4 101.5 24.1 Internet Marketplace Tax 112.9 113.6 0.7 28.2 28.4 0.2 - - - - - - - - - 141.2 142.1 0.9 Less: Transfer to CBDTP Capital Lockbox - (194.8) (194.8) - (48.7) (48.7) - - - - - - - - - - (243.5) (243.5) $463.0 $55.9 ($407.0) $87.4 - ($87.4) - - - - - - - - - $331.8 $55.9 ($275.9) State and Local Subsidies State Operating Assistance 66.2 71.1 4.9 12.3 13.2 0.9 0.2 0.3 0.0 - - - - - - 78.7 84.6 5.9 NYC and Local 18b: NYC 18b-TA (A/C 434001) 26.7 - (26.7) - - - - - - - - - - - - 26.7 - (26.7) NYC 18b-TA (A/C 434002) - - - - - - - - - - - - - - - - - - NYC 18b-TA (A/C 434003) - - - 0.8 0.7 (0.0) 0.1 - (0.1) - - - - - - 0.8 0.7 (0.0) NYC 18b-SIR (A/C 434201) - - - - - - - - - - - - - - - 0.1 - (0.1) New York City 26.7 - (26.7) 0.8 0.7 (0.0) 0.1 - (0.1) - - - - - - 27.6 0.7 (26.8) Nassau County - - - 4.9 4.6 (0.2) - - - - - - - - - 4.9 4.6 (0.2) Suffolk County - - - 3.1 2.3 (0.9) - - - - - - - - - 3.1 2.3 (0.9) Westchester County - - - 3.1 - (3.1) - - - - - - - - - 3.1 - (3.1) Putnam County - - - 0.2 0.2 0.0 - - - - - - - - - 0.2 0.2 0.0 Dutchess County - - - 0.2 0.2 (0.0) - - - - - - - - - 0.2 0.2 (0.0) Orange County - - - 0.1 0.1 0.0 - - - - - - - - - 0.1 0.1 0.0 Rockland County - - - 0.0 0.0 0.0 - - - - - - - - - 0.0 0.0 0.0 Station Maintenance - - - 0.0 - (0.0) - - - - - - - - - 0.0 - (0.0) $92.9 $71.1 ($21.8) $24.5 $21.2 ($3.3) $0.3 $0.3 ($0.1) - - - - - - $117.8 $92.6 ($25.2) Subsidy Adjustments - - - - - - - - - - - - - - - - - - Subtotal: Taxes & State and Local Subsidies $1,655.2 $1,359.7 ($295.5) $572.3 $622.7 $50.4 $1.5 $1.7 $0.1 - - - $120.0 $252.5 $132.5 $2,130.5 $2,236.5 $106.1 Other Funding Agreements City Subsidy for MTA Bus Company - - - - - - - - - 251.5 172.0 (79.5) - - - 251.5 172.0 (79.5) City Subsidy for Staten Island Railway - - - - - - - - - - - - - - - - - - CDOT Subsidy for Metro-North Railroad - - - 124.2 139.1 14.9 - - - - - - - - - 124.2 139.1 14.9 - - - $124.2 $139.1 $14.9 - - - $251.5 $172.0 ($79.5) - - - $375.7 $311.1 ($64.6) Subtotal, including Other Funding Agreements $1,655.2 $1,359.7 ($295.5) $696.5 $761.8 $65.3 $1.5 $1.7 $0.1 $251.5 $172.0 ($79.5) $120.0 $252.5 $132.5 $2,506.2 $2,547.7 $41.5 Inter-agency Subsidy Transactions B&T Operating Surplus Transfer (34.2) 120.4 154.6 12.8 173.1 160.2 - - - - - - - - - (21.3) 293.5 314.9 ($34.2) $120.4 $154.6 $12.8 $173.1 $160.2 - - - - - - - - - ($21.3) $293.5 $314.9 GROSS SUBSIDIES $1,621.0 $1,480.1 ($140.9) $709.3 $934.9 $225.6 $1.5 $1.7 $0.1 $251.5 $172.0 ($79.5) $120.0 $252.5 $132.5 $2,484.9 $2,841.2 $356.3
+```
+
+## Page 55
+
+### [p055_c0001] Master Page # 55 of 114 - Finance Committee Meeting 6/23/2021
+### [p055_c0002] METROPOLITAN TRANSPORTATION AUTHORITY February Financial Plan - 2021 Adopted Budget Consolidated Subsidies - Cash Basis Variance Explanations
+[p055_c0003] ($ in millions)
+[p055_c0004] Month of May 2021
+[p055_c0005]
+
+```text
+Cash Subsidies Variance $ Variance % Explanations Metropolitan Mass Transportation Operating Assistance (MMTOA) 77.7 45.8% The favorable variances for the month and YTD were primarily due to an additional cash receipt of $61.3M that the State approved in April and transferred to the MTA in May 2021 from its 2020-21 Enacted Budget. The MTA had recognized this as lost revenues in 2020. The remaining variance reflected a higher revised MMTOA appropriation in the NYS 2021-22 Enacted Budget (April 2021) over the estimate in its Executive Budget (January 2021). Petroleum Business Tax (PBT) (7.2) -16.3% PBT cash receipts were unfavorable for the month and year-to-date. MRT(b)-1 (Gross) 13.8 82.1% The variances were above the budget for the month and YTD due to higher-than-expected MRT-1 cash receipts. MRT(b)-2 (Gross) 12.8 > 100% The variances were above the budget for the month and YTD due to higher-than-expected MRT-2 cash receipts. Urban Tax (8.8) -33.2% Urban Tax receipts were unfavorable for the month due to weaker-than-expected real estate activity in NYC. YTD receipts remains favorable. Payroll Mobility Tax (PMT) 2.0 1.4% Payroll Mobility Tax cash receipts were on target for the month and above budget YTD due primarily to higher-than-budgeted activity. Payroll Mobility Tax Replacement Uunds 5.7 10.4% Payroll Mobility Tax Replacement cash receipts for the month and YTD were favorable to the budget due primarily to a higher appropriation in the NYS 2021-22 Enacted Budget (April 2021), over the amount in the State Executive Budget (January 2021) used in the MTA forecast. Also contributing to the favorable variance was an additional payment to the MTA by the State in May 2021 from its 2020-21 Enacted Budget, that the MTA had previously recognized as lost revenues in 2020. Subway Action Plan Account (7.5) -33.6% The cash variances for the month and YTD were unfavorable to the budget due to lower-than-expected receipts. Real Property Transfer Tax Surcharge (Mansion) 4.7 30.3% The month and YTD cash variances were favorable to the budget due to higher-than-budgeted activity. Internet Marketplace Tax (10.9) -38.7% The unfavorable variance for the month was timing-related. The YTD variance was on target with the budget. Less: Transfer to CBDTP Capital Lockbox (37.5) -100.0% Per NYS legislation, funds earmarked for the Capital Lockbox Account can be used by the MTA to offset decreases in revenue or increases in operating costs in 2020 and 2021 due to the emergency disaster caused by COVID-19. Currently, the funds in the lockbox account will remain in the account until MTA requires the funds. State Operating Assistance 5.9 12.5% The favorable variances for the month and YTD were due to additional receipts from the State in May 2021 from its 2020-21 Enacted Budget, that the MTA had recognized as loss revenues in 2020. CDOT Subsidy for Metro-North Railroad (23.1) -100.0% The unfavorable variance for the month was primarily due to timing. The YTD variance was favorable, also due to timing. B&T Operating Surplus TransUer 72.8 > 100% The favorable variance was attributable to the timing of transfers.
+```
+
+## Page 56
+
+### [p056_c0001] Master Page # 56 of 114 - Finance Committee Meeting 6/23/2021
+### [p056_c0002] METROPOLITAN TRANSPORTATION AUTHORITY February Financial Plan - 2021 Adopted Budget Consolidated Subsidies - Cash Basis Variance Explanations
+[p056_c0003] ($ in millions)
+[p056_c0004] Year-to-Date May 2021
+[p056_c0005]
+
+```text
+Cash Subsidies Variance $ Variance % Explanations Metropolitan Mass Transportation Operating Assistance (MMTOA) 77.7 15.6% See the explanation for the month. Petroleum Business Tax (PBT) (12.5) -5.3% See the explanation for the month. MRT(b)-1 (Gross) 72.2 85.9% See the explanation for the month. MRT(b)-2 (Gross) 60.2 > 100% See the explanation for the month. Urban Tax 12.3 9.3% See the explanation for the month. Payroll Mobility Tax (PMT) 141.5 24.2% See the explanation for the month. Payroll Mobility Tax Replacement Uunds 46.9 85.9% See the explanation for the month. MTA Aid 9.0 17.1% MTA Aid YTD cash receipts, transferred on a quarterly basis, were favorable primarily due to timing. The next quarterly payment is expected in June, 2021. Subway Action Plan Account (57.4) -50.9% See the explanation for the month. Real Property Transfer Tax Surcharge (Mansion) 24.1 31.1% See the explanation for the month. Internet Marketplace Tax 0.9 0.6% See the explanation for the month. Less: Transfer to CBDTP Capital Lockbox (243.5) -100.0% See the explanation for the month. State Operating Assistance 5.9 7.4% See the explanation for the month. New York City (26.8) -97.3% The unfavorable YTD variance was due to the timing of receipt of payment. Nassau County (0.2) -4.5% The unfavorable YTD variance was due to the timing of receipt of payment. Suffolk County (0.9) -28.4% The unfavorable YTD variance was due to the timing of receipt of payment. Westchester County (3.1) -100.0% The unfavorable YTD variance was due to the timing of receipt of payment. City Subsidy for MTA Bus Company (79.5) -31.6% Variance was mostly timing-related. Drawdowns are related to the timing of cash obligations for MTA Bus. CDOT Subsidy for Metro-North Railroad 14.9 12.0% See the explanation for the month. B&T Operating Surplus TransUser 314.9 > (100%) See the explanation for the month.
+```
+
+## Page 57
+
+### [p057_c0001] 6/2/2021
+### [p057_c0002] MTA Subsidy, Interagency Loan and Stabilization Fund Transactions - Cash Basis (millions)
+### [p057_c0003] Page 1 of 4
+### [p057_c0004] Master Page # 57 of 114 - Finance Committee Meeting 6/23/2021
+[p057_c0005]
+
+```text
+Current Month Stabilization Fund Year to Date Stabilization Fund Commuter (General Fd) Transit (TA Stab) Total Commuter (General Fd) Transit (TA Stab) Total From Date: 05/01/21 05/01/21 05/01/21 01/01/21 01/01/21 01/01/21 To Date: 05/31/21 05/31/21 05/31/21 05/31/21 05/31/21 05/31/21 Opening Balance $261.797 $163.201 $424.998 -$171.586 $113.324 -$58.262 RECEIPTS Interest Earnings 0.010 0.007 0.017 0.008 0.062 0.070 General to Operating 0.000 0.000 0.000 0.000 0.000 0.000 MTA Internet Marketplace Tax 0.000 0.000 0.000 0.000 271.177 271.177 MTA Mansion Tax 0.000 0.000 0.000 0.000 128.773 128.773 Fuel Hedge Reserve 0.000 0.000 0.000 0.000 0.000 0.000 Real Estate Advertising Revenue 0.000 11.562 11.562 0.000 46.654 46.654 New York State State and regional mass transit taxes - MMTOA 78.637 168.641 247.278 183.397 393.575 576.972 MTTF New York State 5.586 31.656 37.242 33.504 189.856 223.361 Total Dedicated Taxes Received 84.223 200.296 284.519 216.901 583.432 800.333 Less DTF Debt Service 3.876 12.564 16.440 28.853 139.303 168.156 Net Dedicated Taxes for Operations 80.347 187.732 268.079 188.048 444.129 632.177 Payroll Mobility Tax 0.000 0.000 0.000 877.383 472.437 1,349.820 MTA Aid Trust Taxes 0.000 0.000 0.000 0.000 0.000 0.000 New York City Operating Assistance 0.000 0.000 0.000 0.000 0.000 0.000 Operating Assistance - 18b 8.224 44.609 52.833 13.163 71.402 84.566 NYC School Fares 0.000 0.000 0.000 0.000 0.000 0.000 NYC Subway Action Plan 0.000 0.000 0.000 0.000 0.000 0.000 NYS Subway Action Plan 0.000 14.864 14.864 0.000 55.253 55.253 NYS School Fares 0.000 7.099 7.099 0.000 11.363 11.363 Additional Mass Transp Operating Assistance 0.000 n/a 0.000 0.000 n/a 0.000 Total - New York State $88.571 $254.304 $342.874 $1,078.595 $1,054.585 $2,133.180 Local Dutchess County Operating Assistance - 18b $0.012 n/a $0.012 $0.152 n/a $0.152 Station Maintenance 0.000 n/a 0.000 0.000 n/a 0.000 Nassau County Operating Assistance - 18b 0.000 n/a 0.000 4.634 n/a 4.634 Station Maintenance 0.000 n/a 0.000 0.000 n/a 0.000 New York City Operating Assistance - 18b 0.058 0.000 0.058 0.749 0.000 0.749 Urban - Real Property & Mortgage Recording Tax n/a 17.788 17.788 n/a 145.443 145.443 Additional Assistance New York City n/a 0.000 0.000 n/a 0.000 0.000 Station Maintenance 0.000 n/a 0.000 0.000 n/a 0.000 Orange County Operating Assistance - 18b 0.073 n/a 0.073 0.073 n/a 0.073 Station Maintenance 0.000 n/a 0.000 0.000 n/a 0.000 Putnam County Operating Assistance - 18b 0.095 n/a 0.095 0.171 n/a 0.171 Station Maintenance 0.000 n/a 0.000 0.000 n/a 0.000 Rockland County Operating Assistance - 18b 0.001 n/a 0.001 0.018 n/a 0.018 Station Maintenance 0.000 n/a 0.000 0.000 n/a 0.000 Suffolk County Operating Assistance - 18b 0.000 n/a 0.000 2.255 n/a 2.255
+```
+
+## Page 58
+
+### [p058_c0001] 6/2/2021
+### [p058_c0002] MTA Subsidy, Interagency Loan and Stabilization Fund Transactions - Cash Basis (millions)
+### [p058_c0003] Page 2 of 4
+[p058_c0004]
+
+```text
+Current Month Stabilization Fund Year to Date Stabilization Fund Commuter (General Fd) Transit (TA Stab) Total Commuter (General Fd) Transit (TA Stab) Total From Date: 05/01/21 05/01/21 05/01/21 01/01/21 01/01/21 01/01/21 To Date: 05/31/21 05/31/21 05/31/21 05/31/21 05/31/21 05/31/21 Westchester County Station Maintenance 0.000 n/a 0.000 0.000 n/a 0.000 Operating Assistance - 18b 0.000 n/a 0.000 0.000 n/a 0.000 Station Maintenance 0.000 n/a 0.000 0.000 n/a 0.000 Total - Local $0.239 $17.788 $18.027 $8.052 $145.443 $153.495
+```
+[p058_c0005] _Master Page # 58 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 59
+
+### [p059_c0001] 6/2/2021
+### [p059_c0002] MTA Subsidy, Interagency Loan and Stabilization Fund Transactions - Cash Basis (millions)
+### [p059_c0003] Page 3 of 4
+[p059_c0004]
+
+```text
+Current Month Stabilization Fund Year to Date Stabilization Fund Commuter (General Fd) Transit (TA Stab) Total Commuter (General Fd) Transit (TA Stab) Total From Date: 05/01/21 05/01/21 05/01/21 01/01/21 01/01/21 01/01/21 To Date: 05/31/21 05/31/21 05/31/21 05/31/21 05/31/21 05/31/21 MTA Bridges and Tunnels- Surplus Transfers 41.653 33.278 74.931 173.084 120.434 293.517 Total Subsidy and Other Receipts $130.462 $305.370 $435.832 $1,259.730 $1,320.461 $2,580.191 MTA Sources for Interagency Loans Retro Payment Reserve - Fund#1302 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Inter Agency Loan 0.000 0.000 0.000 0.000 0.000 0.000 MTA Capital Program - Non-Resolution Funds 0.000 0.000 0.000 0.000 0.000 0.000 MRT-2 Corporate Account 0.000 0.000 0.000 0.000 0.000 0.000 Transfer from fund 1030 (NYCTA Op Fund) 0.000 0.000 0.000 0.000 0.000 0.000 Total Loans $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Receipts and Loans Received $130.473 $316.938 $447.411 $1,259.738 $1,767.126 $3,026.864
+```
+[p059_c0005] Continued on Next Page
+[p059_c0006] Continued on Next Page
+[p059_c0007] _Master Page # 59 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 60
+
+### [p060_c0001] 6/2/2021
+### [p060_c0002] MTA Subsidy, Interagency Loan and Stabilization Fund Transactions - Cash Basis (millions)
+### [p060_c0003] Page 4 of 4
+### [p060_c0004] Master Page # 60 of 114 - Finance Committee Meeting 6/23/2021
+[p060_c0005]
+
+```text
+Current Month Stabilization Fund Year to Date Stabilization Fund Commuter (General Fd) Transit (TA Stab) Total Commuter (General Fd) Transit (TA Stab) Total From Date: 05/01/21 05/01/21 05/01/21 01/01/21 01/01/21 01/01/21 To Date: 05/31/21 05/31/21 05/31/21 05/31/21 05/31/21 05/31/21 Brought forward from prior page Opening Balance $261.797 $163.201 $424.998 -$171.586 $113.324 -$58.262 Total Receipts and Loans Received 130.473 316.938 447.411 1,259.738 1,767.126 3,026.864 Total Cash and Receipts Available $392.270 $480.139 $872.410 $1,088.152 $1,880.450 $2,968.602 DISBURSEMENTS Revenue Supported Debt Service 33.530 46.777 80.306 284.717 410.361 695.078 Agency Operations MTA Long Island Railroad 0.000 0.000 0.000 262.353 0.000 262.353 MTA Metro-North Rail Road 0.000 0.000 0.000 181.412 0.000 181.412 MTA New York City Transit 0.000 11.562 11.562 0.000 646.654 646.654 MTA NYCT for SIRTOA 0.000 0.000 0.000 0.000 0.000 0.000 MTA Bond Admin Cost 0.000 0.000 0.000 0.930 1.685 2.615 MNR Repayment of 525 North Broadway loan 0.000 0.000 0.000 0.000 0.000 0.000 MTA NYS Subway Action Plan 0.000 0.000 0.000 0.000 0.000 0.000 Retro Payment Reserve - Fund#1300 0.000 0.000 0.000 0.000 0.000 0.000 Committed to Capital - PAYGO 0.000 0.000 0.000 0.000 0.000 0.000 Total Debt Service and Operations $33.530 $58.338 $91.868 $729.411 $1,058.700 $1,788.111 Repayment of Interagency Loans Payback - Trans Non-bond - Fd#1028 0.000 0.000 0.000 0.000 0.000 0.000 Transfer to NYCTA Operating 0.000 0.000 0.000 0.000 399.949 399.949 Transfer to Fund 1052 (MTA Bus Co Stab Fund) 0.000 0.000 0.000 0.000 0.000 0.000 NYCT Employee Health Contribution GASB Account - Fd 0.000 0.000 0.000 0.000 0.000 0.000 MTA BC GASB Employee Health Contribution Account - 1 0.000 0.000 0.000 0.000 0.000 0.000 MRT-2 Corporate Account 0.000 0.000 0.000 0.000 0.000 0.000 2012 OPEB Loan 0.000 0.000 0.000 0.000 0.000 0.000 Total Loans Payback $0.000 $0.000 $0.000 $0.000 $399.949 $399.949 Total Disbursements $33.530 $58.338 $91.868 $729.411 $1,458.649 $2,188.060 STABILIZATION FUND BALANCE $358.741 $421.801 $780.542 $358.741 $421.801 $780.542 Ending Loan Balances B&T Necessary Reconstruction Reserve 0.000 0.000 0.000 0.000 0.000 0.000 MTA Capital Program - Non-Resolution Funds 0.000 0.000 0.000 0.000 0.000 0.000 MRT-2 Corporate Account 0.000 0.000 0.000 0.000 0.000 0.000 2012 OPEB Loan 0.000 0.000 0.000 0.000 0.000 0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 End of Month NYCT Operating Fund borrowing from MTA Invest Pool not included in Ending Loan Balances above n/a $1,698.903 $1,698.903 n/a $1,698.903 $1,698.903 Total Loan Balances (including negative Operating and negative Stabilization Fund Balances) -$358.741 $1,277.102 $918.361
+```
+
+## Page 61
+
+### [p061_c0001] METROPOLITAN TRANSPORTATION AUTHORITY FEBRUARY FINANCIAL PLAN - Adopted Budget
+### [p061_c0002] Debt Service
+[p061_c0003] May 2021
+[p061_c0004] ($ in millions)
+[p061_c0005]
+
+```text
+Adopted Budget Actual Variance % Var Explanation Dedicated Tax Fund: NYC Transit $14.9 $6.9 $8.0 Commuter Railroads 2.2 9.8 (7.6) Dedicated Tax Fund Subtotal $17.1 $16.7 $0.4 2.3% Lower than budgeted variable rate. MTA Transportation Revenue: NYC Transit $65.9 $48.6 $17.3 Reversal of prior period variance from prefunding May 15th interest; lower than budgeted debt service resulting from refunding RRIF loan; timing of debt service deposits; and lower than budgeted variable rates. Commuter Railroads 58.9 35.0 24.0 MTA Bus 2.3 0.2 2.1 SIRTOA 0.9 0.0 0.8 MTA Transportation Revenue Subtotal $127.9 $83.7 $44.2 34.6% PMT Bonds: NYC Transit $0.0 $1.2 ($1.2) Commuter Railroads 0.0 1.7 (1.7) MTA Bus Company 0.0 0.0 0.0 Reallocation of budgeted debt service as PMT 2021A notes were issued in lieu of TRB bonds. SIRTOA 0.0 0.0 0.0 PMT Bond Subtotal $0.0 $2.9 ($2.9) 0.0% 2 Broadway COPs: NYC Transit $0.4 $0.4 $0.0 Bridges & Tunnels 0.1 0.1 0.0 MTA HQ 0.0 0.0 0.0 Commuter Railroads 0.1 0.1 0.0 2 Broadway COPs Subtotal $0.6 $0.6 $0.0 2.3% TBTA General Resolution (2): NYC Transit $16.8 $11.3 $5.5 Commuter Railroads 7.5 5.0 2.5 Reversal of prior period variance from prefunding May 15th interest; and lower than budgeted variable rates. Bridges & Tunnels 21.5 17.2 4.3 TBTA General Resolution Subtotal $45.8 $33.6 $12.2 26.7% TBTA Subordinate (2): NYC Transit $4.7 $4.0 $0.7 Commuter Railroads 2.1 1.8 0.3 Bridges & Tunnels 1.7 1.4 0.3 Reversal of prior period variance from prefunding May 15th interest. TBTA Subordinate Subtotal $8.5 $7.2 $1.3 14.8% TBTA 2nd Subordinate Subtotal $0.0 $0.0 $0.0 0.0% Debt Service from Lockbox Revenues: NYC Transit $0.0 $0.0 $0.0 Commuter Railroads 0.0 0.0 0.0 MTA Bus 0.0 0.0 0.0 SIRTOA 0.0 0.0 0.0 Debt Service from Lockbox Subtotal $0.0 $0.0 $0.0 0.0% Total Debt Service $199.9 $144.8 $55.2 27.6% Debt Service by Agency: NYC Transit $102.6 $72.3 $30.3 Commuter Railroads 70.9 53.5 17.4 MTA Bus 2.3 0.2 2.0 SIRTOA 0.9 0.0 0.8 Bridges & Tunnels 23.3 18.8 4.6 MTAHQ 0.0 0.0 0.0 Total Debt Service $199.9 $144.8 $55.2 27.6%
+```
+### [p061_c0006] Notes:
+[p061_c0007] (1) Forecasted debt service is calculated based upon projected monthly deposits from available pledged revenues into debt service accounts. Actual payments to bondholders are made from the debt service accounts when due as required for each series of bonds and do not conform to this schedule.
+[p061_c0008] (2) Generally, the calendarization of monthly debt service deposits is calculated by dividing projected annual debt service by 12. Month to month variations ("timing differences") on the existing debt portfolio can occur based upon, among other things, (a) for all bonds, the date when income from the securities in which the debt service accounts are invested becomes available varies, (b) for variable rate financings, differences between (i) the budgeted interest rate and the actual interest rate, (ii) projected interest payment dates to bondholders and actual interest payment dates to bondholders, and (iii) projected monthly funding dates for accrued debt service and actual funding dates, (c) for transactions with swaps, the difference between when MTA/TBTA funds debt service and the receipt of the corresponding swap payment by the counterparty, and difference between rates received and rates paid and (d) for commercial paper, the interest payment date is the date of the maturity of the commercial paper and the dealers set the term of the commercial paper from 1 to 270 days, which is not foreseeable at the time the annual debt service budgets are prepared.
+[p061_c0009] (3) Debt service is allocated among Transit, Commuter, MTA Bus, and TBTA categories based on actual spending of bond proceeds for approved capital projects. Allocation of 2 Broadway COPs is based on occupancy.
+[p061_c0010] Totals may not add due to rounding.
+[p061_c0011] _Master Page # 61 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 62
+
+### [p062_c0001] METROPOLITAN TRANSPORTATION AUTHORITY FEBRUARY FINANCIAL PLAN - Adopted Budget
+[p062_c0002] Debt Service May 2021 Year-To-Date
+[p062_c0003] ($ in millions)
+[p062_c0004]
+
+```text
+Adopted Budget Actual Variance % Var Explanation Dedicated Tax Fund: NYC Transit $142.5 $133.3 $9.1 Commuter Railroads 29.4 36.0 (6.6) Dedicated Tax Fund Subtotal $171.8 $169.3 $2.5 1.5% Lower than budgeted variable rates. MTA Transportation Revenue: NYC Transit $400.0 $415.9 ($15.9) Commuter Railroads 318.2 289.4 28.9 MTA Bus 11.3 0.9 10.4 Lower than budgeted debt service SIRTOA 4.2 0.1 4.1 resulting from refunding RRIF loan; timing of debt service deposits; and MTA Transportation Revenue Subtotal $733.7 $706.2 $27.5 3.7% lower than budgeted variable rates. PMT Bonds: NYC Transit $0.0 $1.2 ($1.2) Commuter Railroads 0.0 1.7 (1.7) MTA Bus Company 0.0 0.0 0.0 SIRTOA 0.0 0.0 0.0 Reallocation of budgeted debt service as PMT 2021A notes were issued in lieu of PMT Bond Subtotal $0.0 $2.9 ($2.9) 0.0% TRB bonds. 2 Broadway COPs: NYC Transit $2.0 $2.0 $0.0 Bridges & Tunnels 0.3 0.3 0.0 MTA HQ 0.0 0.0 0.0 Commuter Railroads 0.6 0.6 0.0 2 Broadway COPs Subtotal $2.9 $2.9 $0.0 0.6% TBTA General Resolution (2): NYC Transit $84.0 $81.5 $2.5 Commuter Railroads 37.5 36.4 1.1 Bridges & Tunnels 124.8 124.4 0.4 TBTA General Resolution Subtotal $246.3 $242.3 $4.0 1.6% Lower than budgeted variable rates. TBTA Subordinate (2): NYC Transit $23.3 $23.3 $0.0 Commuter Railroads 10.7 10.7 0.0 Bridges & Tunnels 8.5 8.5 0.0 TBTA Subordinate Subtotal $42.5 $42.5 $0.0 0.0% TBTA 2nd Subordinate Subtotal $0.0 $0.0 $0.0 0.0% Debt Service from Lockbox Revenues: NYC Transit $0.0 $0.0 $0.0 Commuter Railroads 0.0 0.0 0.0 MTA Bus 0.0 0.0 0.0 SIRTOA 0.0 0.0 0.0 Debt Service from Lockbox Subtotal $0.0 $0.0 $0.0 0.0% Total Debt Service $1,197.2 $1,166.1 $31.0 2.6% Debt Service by Agency: NYC Transit $651.8 $657.2 ($5.4) Commuter Railroads 396.3 374.7 21.6 MTA Bus 11.3 0.9 10.4 SIRTOA 4.2 0.1 4.1 Bridges & Tunnels 133.6 133.2 0.4 MTAHQ 0.0 0.0 0.0 Total Debt Service $1,197.2 $1,166.1 $31.0 2.6%
+```
+### [p062_c0005] Notes:
+[p062_c0006] (1) Forecasted debt service is calculated based upon projected monthly deposits from available pledged revenues into debt service accounts. Actual payments to bondholders are made from the debt service accounts when due as required for each series of bonds and do not conform to this schedule.
+[p062_c0007] (2) Generally, the calendarization of monthly debt service deposits is calculated by dividing projected annual debt service by 12. Month to month variations ("timing differences") on the existing debt portfolio can occur based upon, among other things, (a) for all bonds, the date when income from the securities in which the debt service accounts are invested becomes available varies, (b) for variable rate financings, differences between (i) the budgeted interest rate and the actual interest rate, (ii) projected interest payment dates to bondholders and actual interest payment dates to bondholders, and (iii) projected monthly funding dates for accrued debt service and actual funding dates, (c) for transactions with swaps, the difference between when MTA/TBTA funds debt service and the receipt of the corresponding swap payment by the counterparty, and difference between rates received and rates paid and (d) for commercial paper, the interest payment date is the date of the maturity of the commercial paper and the dealers set the term of the commercial paper from 1 to 270 days, which is not foreseeable at the time the annual debt service budgets are prepared.
+[p062_c0008] (3) Debt service is allocated among Transit, Commuter, MTA Bus, and TBTA categories based on actual spending of bond proceeds for approved capital projects. Allocation of 2 Broadway COPs is based on occupancy.
+[p062_c0009] Totals may not add due to rounding.
+[p062_c0010] _Master Page # 62 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 63
+
+### [p063_c0001] METROPOLITAN TRANSPORTATION AUTHORITY February Financial Plan - 2021 Adopted Budget Total Positions by Function and Agency May 2021
+[p063_c0002]
+
+```text
+Function/Agency Adopted Budget Actual Variance Favorable/ (Unfavorable) Administration 4,034 3,739 294 NYC Transit 1,028 1,018 10 Long Island Rail Road 478 422 56 Metro-North Railroad 425 374 51 Bridges & Tunnels 73 59 14 Headquarters 1,794 1,673 121 Staten Island Railway 23 17 6 Construction & Development 102 79 23 Bus Company 111 97 14 Operations 30,469 29,376 1,093 NYC Transit 22,782 22,008 774 Long Island Rail Road 2,720 2,567 153 Metro-North Railroad 2,110 2,025 85 Bridges & Tunnels 127 94 33 Headquarters - - - Staten Island Railway 152 138 14 Construction & Development - - - Bus Company 2,578 2,545 34 Maintenance 31,461 30,202 1,259 NYC Transit 21,684 20,864 820 Long Island Rail Road 4,259 4,057 202 Metro-North Railroad 3,824 3,649 175 Bridges & Tunnels 373 349 24 Headquarters - - - Staten Island Railway 208 190 18 Construction & Development - - - Bus Company 1,113 1,093 20 Engineering/Capital 1,934 1,636 298 NYC Transit 1,302 1,116 186 Long Island Rail Road 205 173 32 Metro-North Railroad 78 73 5 Bridges & Tunnels 158 155 3 Headquarters - - - Staten Island Railway 6 2 4 Construction & Development 150 94 56 Bus Company 35 23 12 Public Safety 2,688 2,108 580 NYC Transit 633 577 56 Long Island Rail Road - - - Metro-North Railroad - - - Bridges & Tunnels 600 513 87 Headquarters 1,442 1,007 435 Staten Island Railway - - - Construction & Development - - - Bus Company 13 11 2 Total Positions 70,585 67,062 3,524
+```
+[p063_c0003] Note: Totals may differ due to rounding
+[p063_c0004] _Master Page # 63 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 64
+
+### [p064_c0001] METROPOLITAN TRANSPORTATION AUTHORITY February Financial Plan - 2021 Adopted Budget Total Positions by Function and Agency May 2021
+[p064_c0002]
+
+```text
+Category Adopted Budget Actual Variance Favorable/ (Unfavorable) Total Positions 70,585 67,062 3,524 NYC Transit 47,429 45,583 1,846 Long Island Rail Road 7,662 7,219 443 Metro-North Railroad 6,437 6,121 316 Bridges & Tunnels 1,331 1,170 161 Headquarters 3,236 2,680 556 Staten Island Railway 389 347 42 Construction & Development 252 173 79 Bus Company 3,850 3,769 82 Non-reimbursable 63,344 60,891 2,453 NYC Transit 42,703 41,577 1,126 Long Island Rail Road 6,335 5,932 402 Metro-North Railroad 5,688 5,581 106 Bridges & Tunnels 1,244 1,083 161 Headquarters 3,143 2,595 548 Staten Island Railway 336 326 10 Construction & Development 84 64 20 Bus Company 3,812 3,733 80 Reimbursable 7,241 6,170 1,071 NYC Transit 4,726 4,006 720 Long Island Rail Road 1,327 1,287 40 Metro-North Railroad 749 540 210 Bridges & Tunnels 87 87 - Headquarters 93 85 8 Staten Island Railway 53 21 32 Construction & Development 168 109 59 Bus Company 38 36 2 Total Full Time 70,409 66,938 3,471 NYC Transit 47,272 45,473 1,799 Long Island Rail Road 7,662 7,219 443 Metro-North Railroad 6,436 6,120 316 Bridges & Tunnels 1,331 1,170 161 Headquarters 3,236 2,680 556 Staten Island Railway 389 347 42 Construction & Development 252 173 79 Bus Company 3,832 3,756 76 Total Full-Time Equivalents 176 124 53 NYC Transit 157 110 47 Long Island Rail Road - - - Metro-North Railroad 1 1 - Bridges & Tunnels - - - Headquarters - - - Staten Island Railway - - - Construction & Development - - - Bus Company 18 13 6
+```
+[p064_c0003] Note: Totals may differ due to rounding
+[p064_c0004] _Master Page # 64 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 65
+
+### [p065_c0001] METROPOLITAN TRANSPORTATION AUTHORITY February Financial Plan - 2021 Adopted Budget Total Positions by Function and Occupational Group May 2021
+[p065_c0002]
+
+```text
+FUNCTION/OCCUPATIONAL GROUP Adopted Budget Actual Variance Favorable/ (Unfavorable) Administration 4,034 3,739 294 Managers/Supervisors 1,367 1,246 121 Professional, Technical, Clerical 2,525 2,351 174 Operational Hourlies 142 142 - Operations 30,469 29,376 1,093 Managers/Supervisors 3,798 3,494 304 Professional, Technical, Clerical 969 911 58 Operational Hourlies 25,702 24,971 731 Maintenance 31,461 30,202 1,259 Managers/Supervisors 5,695 5,294 401 Professional, Technical, Clerical 1,698 1,535 163 Operational Hourlies 24,068 23,373 696 Engineering/Capital 1,934 1,636 298 Managers/Supervisors 587 484 103 Professional, Technical, Clerical 1,345 1,150 195 Operational Hourlies 2 2 - Public Safety 2,688 2,108 580 Managers/Supervisors 697 539 158 Professional, Technical, Clerical 133 116 17 Operational Hourlies 1,858 1,453 405 Total Positions 70,585 67,062 3,524 Managers/Supervisors 12,144 11,058 1,086 Professional, Technical, Clerical 6,669 6,063 606 Operational Hourlies 51,772 49,941 1,831
+```
+[p065_c0003] Note: Totals may differ due to rounding
+[p065_c0004] _Master Page # 65 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 66
+
+### [p066_c0001] METROPOLITAN TRANSPORTATION AUTHORITY Farebox Recovery and Operating Ratios 2021 Adopted Budget and Actuals
+### [p066_c0002] FAREBOX RECOVERY RATIOS
+[p066_c0003]
+
+```text
+2021 Adopted Budget Full Year 2021 Actual May YTD New York City Transit 10.0% 17.2% Staten Island Railway 3.1% 2.3% Long Island Rail Road 7.5% 8.2% Metro-North Railroad 11.3% 9.5% MTA Bus Company 6.6% 13.5% MTA Total Agency Average 9.5% 14.8%
+```
+### [p066_c0004] FAREBOX OPERATING RATIOS
+[p066_c0005]
+
+```text
+2021 Adopted Budget Full Year 2021 Actual May YTD New York City Transit 14.9% 23.7% Staten Island Railway 5.2% 3.4% Long Island Rail Road 11.8% 13.7% Metro-North Railroad 16.0% 13.1% MTA Bus Company 8.2% 15.1% MTA Total Agency Average 14.1% 20.6%
+```
+[p066_c0006] Farebox recovery ratio has a long-term focus. It includes costs that are not funded in the current year, except in an accounting-ledger sense, but are, in effect, passed on to future years. Those costs include depreciation and interest on long-term debt. Approximately 20% (and sometimes more) of MTA costs are not recovered in the current year from farebox revenues, other operating revenues or subsidies. That is why MTA operating statements generally show deficits. In addition, the recovery ratio allocates centralized MTA services to the Agencies, such as Security, the costs of the Inspector General, Civil Rights, Audit, Risk Management, Legal and Shared Services.
+[p066_c0007] Farebox operating ratio focuses on Agency operating financial performance. It reflects the way MTA meets its statutory and bond-covenant budget-balancing requirements, and it excludes certain costs that are not subject to Agency control, but are provided centrally by the MTA.
+[p066_c0008] In the agenda materials for the Meeting of the Metro-North and Long Island Committees, the calculations of the farebox operating and recovery ratios for the LIRR and MNR use a revised methodology to put the railroads on a more comparable basis. Those statistics, which are included in the respective financial and ridership reports of both Agencies, differ from the statistics presented in this table.
+[p066_c0009] _Master Page # 66 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 67
+
+> [p067_c0001] The logo for the Metropolitan Transportation Authority (MTA) is a blue circle with the white letters "MTA" inside.
+[p067_c0002] Metropolitan Transportation Authority
+[p067_c0003] State of New York
+[p067_c0004] New York City Transit Long Island Rail Road Metro-North Railroad Bridges and Tunnels Bus Company
+### [p067_c0005] Report on Revenue Passengers and Vehicles Ridership Data Through April, 2021
+[p067_c0006] NOTE: Ridership data are preliminary and subject to revision as well as adjustments warranted by annual audit review.
+[p067_c0007] Prepared by: MTA Division of Management & Budget
+[p067_c0008] Wednesday, June 2, 2021
+[p067_c0009] _Master Page # 67 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 68
+
+### [p068_c0001] Master Page # 68 of 114 - Finance Committee Meeting 6/23/2021
+### [p068_c0002] Revenue Passengers in April
+[p068_c0003]
+
+```text
+2019 2020 % Change 2021 % Change MTA New York City Transit 192,296,890 12,157,660 -93.68% 78,227,266 543.44% MTA New York City Subway 145,063,237 11,795,394 -91.87% 53,232,104 351.30% MTA New York City Bus 47,233,653 362,266 -99.23% 24,995,162 6799.67% MTA Staten Island Railway 377,719 19,677 -94.79% 108,916 453.52% MTA Long Island Rail Road 7,724,038 253,571 -96.72% 2,199,648 767.47% MTA Metro-North Railroad 7,461,935 450,910 -93.96% 1,887,715 318.65% East of Hudson 7,319,622 434,767 -94.06% 1,853,507 326.32% Harlem Line 2,377,648 162,080 -93.18% 604,696 273.08% Hudson Line 1,496,643 90,669 -93.94% 405,149 346.84% New Haven Line 3,445,331 182,018 -94.72% 843,662 363.50% West of Hudson 142,313 16,143 -88.66% 34,208 111.91% Port Jervis Line 83,305 9,689 -88.37% 20,955 116.28% Pascack Valley Line 59,008 6,454 -89.06% 13,253 105.35% MTA Bus Company 10,166,474 109,247 -98.93% 5,465,190 4902.61% MTA Bridges & Tunnels 27,419,476 9,730,391 -64.51% 24,896,428 155.86% Total All Agencies 218,027,056 12,991,065 -94.04% 87,888,735 576.53% (Excludes Bridges & Tunnels) Weekdays: 22 22 22 Holidays: 0 0 0 Weekend Days: 8 8 8 Days 30 30 30
+```
+[p068_c0004] _As of June 2, 2021_
+
+## Page 69
+
+### [p069_c0001] Master Page # 69 of 114 - Finance Committee Meeting 6/23/2021
+### [p069_c0002] Revenue Passengers Year-to-Date Through April
+[p069_c0003]
+
+```text
+2019 2020 % Change 2021 % Change MTA New York City Transit 731,932,618 469,572,637 -35.84% 274,041,682 -41.64% MTA New York City Subway 549,690,951 354,783,154 -35.46% 184,921,384 -47.88% MTA New York City Bus 182,241,667 114,789,483 -37.01% 89,120,298 -22.36% MTA Staten Island Railway 1,455,950 902,498 -38.01% 358,831 -60.24% MTA Long Island Rail Road 28,950,194 17,339,366 -40.11% 7,608,659 -56.12% MTA Metro-North Railroad 27,601,943 16,515,359 -40.17% 6,314,677 -61.76% East of Hudson 27,073,021 16,152,152 -40.34% 6,184,475 -61.71% Harlem Line 8,833,241 5,323,924 -39.73% 2,043,135 -61.62% Hudson Line 5,449,955 3,251,949 -40.33% 1,337,602 -58.87% New Haven Line 12,789,825 7,576,279 -40.76% 2,803,738 -62.99% West of Hudson 528,922 363,207 -31.33% 130,202 -64.15% Port Jervis Line 305,527 212,002 -30.61% 83,972 -60.39% Pascack Valley Line 223,395 151,205 -32.31% 46,230 -69.43% MTA Bus Company 39,276,765 24,933,961 -36.52% 19,487,163 -21.84% MTA Bridges & Tunnels 103,288,817 78,574,390 -23.93% 88,502,046 12.63% Total All Agencies 829,217,470 529,263,821 -36.17% 307,811,011 -41.84% (Excludes Bridges & Tunnels) Weekdays: 83 84 83 Holidays: 3 3 3 Weekend Days: 34 34 34 Days 120 121 120
+```
+[p069_c0004] _As of June 2, 2021_
+
+## Page 70
+
+### [p070_c0001] Master Page # 70 of 114 - Finance Committee Meeting 6/23/2021
+### [p070_c0002] 12 Month Average Revenue Passengers in April
+[p070_c0003]
+
+```text
+2019 2020 % Change 2021 % Change MTA New York City Transit 187,074,141 166,028,702 -11.25% 54,404,760 -67.23% MTA New York City Subway 140,141,816 125,234,961 -10.64% 39,139,938 -68.75% MTA New York City Bus 46,932,325 40,793,741 -13.08% 15,264,822 -62.58% MTA Staten Island Railway 373,403 312,253 -16.38% 73,497 -76.46% MTA Long Island Rail Road 7,557,028 6,624,526 -12.34% 1,713,051 -74.14% MTA Metro-North Railroad 7,241,544 6,294,482 -13.08% 1,415,074 -77.52% East of Hudson 7,104,065 6,171,626 -13.13% 1,384,072 -77.57% Harlem Line 2,289,074 1,988,145 -13.15% 460,931 -76.82% Hudson Line 1,442,684 1,265,067 -12.31% 305,331 -75.86% New Haven Line 3,372,308 2,918,414 -13.46% 617,810 -78.83% West of Hudson 137,479 122,857 -10.64% 31,002 -74.77% Port Jervis Line 80,078 72,693 -9.22% 20,257 -72.13% Pascack Valley Line 57,401 50,163 -12.61% 10,745 -78.58% MTA Bus Company 10,140,301 8,840,764 -12.82% 3,372,833 -61.85% MTA Bridges & Tunnels 27,242,657 25,390,092 -6.80% 21,925,976 -13.64% Total All Agencies 212,386,417 188,100,728 -11.43% 60,979,216 -67.58% (Excludes Bridges & Tunnels) Weekdays: 22 22 22 Holidays: 0 0 0 Weekend Days: 8 8 8 Days 30 30 30
+```
+[p070_c0004] _As of June 2, 2021_
+
+## Page 71
+
+### [p071_c0001] Master Page # 71 of 114 - Finance Committee Meeting 6/23/2021
+### [p071_c0002] Average Weekday Revenue Passengers in April
+[p071_c0003]
+
+```text
+2019 2020 % Change 2021 % Change MTA New York City Transit 7,371,887 460,639 -93.75% 2,921,173 534.16% MTA New York City Subway 5,576,744 446,725 -91.99% 1,984,663 344.27% MTA New York City Bus 1,795,143 13,914 -99.22% 936,510 6630.64% MTA Staten Island Railway 15,726 764 -95.14% 4,715 516.90% MTA Long Island Rail Road 310,439 10,320 -96.68% 80,959 684.49% MTA Metro-North Railroad 294,868 17,968 -93.91% 69,792 288.43% East of Hudson 288,396 17,234 -94.02% 67,931 294.18% Harlem Line 94,550 6,469 -93.16% 22,470 247.37% Hudson Line 58,707 3,578 -93.90% 14,759 312.46% New Haven Line 135,139 7,187 -94.68% 30,702 327.21% West of Hudson 6,472 734 -88.66% 1,861 153.53% Port Jervis Line 3,789 441 -88.37% 1,189 169.76% Pascack Valley Line 2,683 293 -89.07% 672 129.15% MTA Bus Company 390,950 4,380 -98.88% 206,973 4625.70% MTA Bridges & Tunnels 926,113 356,124 -61.55% 853,935 139.79% Total All Agencies 8,383,870 494,070 -94.11% 3,283,612 564.60% (Excludes Bridges & Tunnels) Weekdays: 22 22 22 Holidays: 0 0 0 Weekend Days: 8 8 8 Days 30 30 30
+```
+[p071_c0004] _As of June 2, 2021_
+
+## Page 72
+
+### [p072_c0001] Master Page # 72 of 114 - Finance Committee Meeting 6/23/2021
+### [p072_c0002] Metropolitan Transportation Authority Revenue Passengers
+> [p072_c0003] A bar chart titled 'Metropolitan Transportation Authority Revenue Passengers' comparing monthly revenue passengers for three fiscal years: 2018-2019 (green checkered bars), 2019-2020 (blue hatched bars), and 2020-2021 (red solid bars). The y-axis represents the number of passengers, ranging from 0 to 250,000,000 in increments of 50,000,000. The x-axis lists the months from May to April. The 2018-2019 and 2019-2020 years show high and relatively stable passenger volumes, peaking in October at approximately 235,000,000. The 2020-2021 year shows a significant decline in passenger volume starting in May, with a sharp drop in April, where the 2019-2020 bar is nearly zero and the 2020-2021 bar is around 15,000,000. Month 2018-2019 2019-2020 2020-2021 May 228,000,000 227,000,000 16,000,000 Jun 216,000,000 212,000,000 26,000,000 Jul 207,000,000 211,000,000 36,000,000 Aug 209,000,000 208,000,000 40,000,000 Sep 206,000,000 216,000,000 75,000,000 Oct 233,000,000 233,000,000 82,000,000 Nov 211,000,000 210,000,000 75,000,000 Dec 205,000,000 207,000,000 74,000,000 Jan 203,000,000 207,000,000 70,000,000 Feb 191,000,000 196,000,000 66,000,000 Mar 217,000,000 111,000,000 85,000,000 Apr 218,000,000 13,000,000 87,000,000
+[p072_c0004] _As of June 2, 2021_
+
+## Page 73
+
+### [p073_c0001] Master Page #73 of 114 - Finance Committee Meeting 6/23/2021
+### [p073_c0002] Metropolitan Transportation Authority Revenue Passengers - 12 Month Averages
+> [p073_c0003] Month 2018-2019 (Millions) 2019-2020 (Millions) 2020-2021 (Millions) May 215 212 170 Jun 215 212 155 Jul 215 212 140 Aug 215 212 125 Sep 213 213 113 Oct 213 213 102 Nov 213 213 90 Dec 213 213 78 Jan 212 213 68 Feb 212 213 57 Mar 212 205 55 Apr 212 188 60
+[p073_c0004] _As of June 2, 2021_
+
+## Page 74
+
+### [p074_c0001] Master Page # 74 of 114 - Finance Committee Meeting 6/23/2021
+### [p074_c0002] Metropolitan Transportation Authority Average Weekday Passengers
+> [p074_c0003] A bar chart titled 'Metropolitan Transportation Authority Average Weekday Passengers' showing monthly passenger data in millions for three fiscal years: 2018-2019 (green checkered bars), 2019-2020 (blue hatched bars), and 2020-2021 (red solid bars). The y-axis ranges from 0.0 to 10.0 million. The x-axis lists months from May to April. The 2018-2019 and 2019-2020 years show high, relatively stable passenger volumes, while the 2020-2021 year shows a significant decline in passenger volume starting in May and remaining low through April. Month 2018-2019 (Millions) 2019-2020 (Millions) 2020-2021 (Millions) May 8.7 8.6 0.6 Jun 8.4 8.4 1.0 Jul 7.9 8.0 1.3 Aug 7.7 7.7 1.5 Sep 8.4 8.7 2.8 Oct 8.7 8.6 3.0 Nov 8.4 8.5 2.9 Dec 8.0 8.0 2.7 Jan 7.8 8.0 2.7 Feb 8.2 8.2 2.6 Mar 8.4 4.3 3.0 Apr 8.4 0.5 3.3
+[p074_c0004] _As of June 2, 2021_
+
+## Page 75
+
+### [p075_c0001] Master Page # 75 of 114 - Finance Committee Meeting 6/23/2021
+### [p075_c0002] Metropolitan Transportation Authority
+[p075_c0003]
+
+```text
+Revenue Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 228,848,542 227,364,753 -0.65% 16,775,123 -92.62% June 216,408,417 212,300,561 -1.90% 26,571,727 -87.48% July 207,692,129 211,804,095 1.98% 36,325,814 -82.85% August 209,534,089 208,448,482 -0.52% 39,944,116 -80.84% September 206,414,792 216,825,176 5.04% 74,555,203 -65.62% October 233,935,642 233,100,272 -0.36% 82,209,881 -64.73% November 211,577,176 210,390,296 -0.56% 74,207,489 -64.73% December 205,008,747 207,711,277 1.32% 73,350,223 -64.69% January 203,198,087 207,806,255 2.27% 69,603,982 -66.51% February 190,604,530 196,597,761 3.14% 65,104,040 -66.88% March 217,387,798 111,868,739 -48.54% 85,214,253 -23.83% April 218,027,056 12,991,065 -94.04% 87,888,735 576.53% Year-to-Date 829,217,470 529,263,821 -36.17% 307,811,011 -41.84%
+```
+[p075_c0004]
+
+```text
+12 Month Averages 2018-2019 2019-2020 % Change 2020-2021 % Change May 216,439,943 212,262,768 -1.93% 170,551,592 -19.65% June 215,552,197 211,920,447 -1.68% 155,074,189 -26.82% July 215,348,170 212,263,110 -1.43% 140,450,999 -33.83% August 214,784,436 212,172,643 -1.22% 126,408,968 -40.42% September 213,768,207 213,040,175 -0.34% 114,553,137 -46.23% October 213,721,214 212,970,561 -0.35% 101,978,938 -52.12% November 213,062,029 212,871,654 -0.09% 90,630,371 -57.42% December 212,643,127 213,096,865 0.21% 79,433,616 -62.72% January 212,619,298 213,480,879 0.41% 67,916,760 -68.19% February 212,306,337 213,980,315 0.79% 56,958,950 -73.38% March 212,167,147 205,187,060 -3.29% 54,737,743 -73.32% April 212,386,417 188,100,728 -11.43% 60,979,216 -67.58%
+```
+[p075_c0005]
+
+```text
+Average Weekday Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 8,735,756 8,622,466 -1.30% 641,295 -92.56% June 8,432,101 8,412,193 -0.24% 1,005,715 -88.04% July 7,954,086 7,970,300 0.20% 1,344,345 -83.13% August 7,725,838 7,761,197 0.46% 1,511,885 -80.52% September 8,447,398 8,734,905 3.40% 2,831,789 -67.58% October 8,709,735 8,631,718 -0.90% 2,994,330 -65.31% November 8,372,431 8,464,327 1.10% 2,899,036 -65.75% December 7,989,712 7,955,513 -0.43% 2,717,961 -65.84% January 7,786,364 7,945,071 2.04% 2,697,273 -66.05% February 8,170,633 8,234,000 0.78% 2,652,934 -67.78% March 8,422,686 4,309,649 -48.83% 3,055,731 -29.10% April 8,383,870 494,070 -94.11% 3,283,612 564.60%
+```
+[p075_c0006] _As of June 2, 2021_
+
+## Page 76
+
+### [p076_c0001] Master Page # 76 of 114 - Finance Committee Meeting 6/23/2021
+### [p076_c0002] MTA New York City Transit
+[p076_c0003]
+
+```text
+Revenue Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 202,154,565 200,610,929 -0.76% 15,606,118 -92.22% June 190,346,850 187,197,319 -1.65% 24,368,767 -86.98% July 182,215,116 185,786,569 1.96% 33,040,655 -82.22% August 183,617,094 182,893,941 -0.39% 36,328,385 -80.14% September 181,832,606 191,382,235 5.25% 65,707,256 -65.67% October 206,105,827 205,768,638 -0.16% 72,674,353 -64.68% November 186,463,618 186,074,116 -0.21% 65,842,026 -64.62% December 180,221,398 183,058,046 1.57% 65,247,880 -64.36% January 179,078,762 183,591,692 2.52% 61,892,663 -66.29% February 168,500,761 174,031,352 3.28% 57,993,365 -66.68% March 192,056,205 99,791,932 -48.04% 75,928,387 -23.91% April 192,296,890 12,157,660 -93.68% 78,227,266 543.44% Year-to-Date 731,932,618 469,572,637 -35.84% 274,041,682 -41.64%
+```
+[p076_c0004]
+
+```text
+12 Month Averages 2018-2019 2019-2020 % Change 2020-2021 % Change May 191,305,144 186,945,505 -2.28% 150,611,635 -19.44% June 190,451,458 186,683,044 -1.98% 137,042,589 -26.59% July 190,196,773 186,980,665 -1.69% 124,313,763 -33.52% August 189,628,296 186,920,402 -1.43% 112,099,966 -40.03% September 188,662,785 187,716,204 -0.50% 101,627,052 -45.86% October 188,543,125 187,688,105 -0.45% 90,535,861 -51.76% November 187,898,984 187,655,647 -0.13% 80,516,520 -57.09% December 187,451,803 187,892,034 0.23% 70,699,006 -62.37% January 187,368,177 188,268,112 0.48% 60,557,421 -67.83% February 187,063,854 188,728,994 0.89% 50,887,588 -73.04% March 186,923,971 181,040,305 -3.15% 48,898,960 -72.99% April 187,074,141 166,028,702 -11.25% 54,404,760 -67.23%
+```
+[p076_c0005]
+
+```text
+Average Weekday Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 7,693,437 7,583,647 -1.43% 594,527 -92.16% June 7,387,753 7,385,681 -0.03% 923,380 -87.50% July 6,948,786 6,971,875 0.33% 1,222,307 -82.47% August 6,754,630 6,787,585 0.49% 1,373,409 -79.77% September 7,396,837 7,676,091 3.78% 2,493,661 -67.51% October 7,651,409 7,595,551 -0.73% 2,644,941 -65.18% November 7,333,470 7,431,166 1.33% 2,564,129 -65.49% December 6,980,243 6,977,537 -0.04% 2,416,159 -65.37% January 6,819,989 6,975,412 2.28% 2,390,997 -65.72% February 7,190,656 7,250,063 0.83% 2,358,321 -67.47% March 7,407,083 3,805,197 -48.63% 2,732,281 -28.20% April 7,371,887 460,639 -93.75% 2,921,173 534.16%
+```
+[p076_c0006] _As of June 2, 2021_
+
+## Page 77
+
+### [p077_c0001] Master Page # 77 of 114 - Finance Committee Meeting 6/23/2021
+### [p077_c0002] MTA New York City Subway
+[p077_c0003]
+
+```text
+Revenue Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 150,320,833 150,789,403 0.31% 15,316,407 -89.84% June 142,709,768 141,384,305 -0.93% 23,911,163 -83.09% July 136,167,499 139,505,934 2.45% 32,482,176 -76.72% August 136,806,572 137,210,300 0.30% 35,153,119 -74.38% September 134,989,959 143,268,789 6.13% 42,660,693 -70.22% October 154,116,408 155,315,738 0.78% 47,957,127 -69.12% November 140,711,661 140,724,722 0.01% 43,618,698 -69.00% December 136,188,140 139,837,187 2.68% 43,658,492 -68.78% January 134,544,724 138,446,295 2.90% 41,123,531 -70.30% February 126,359,734 130,902,123 3.59% 39,170,408 -70.08% March 143,723,256 73,639,342 -48.76% 51,395,341 -30.21% April 145,063,237 11,795,394 -91.87% 53,232,104 351.30% Year-to-Date 549,690,951 354,783,154 -35.46% 184,921,384 -47.88%
+```
+[p077_c0004]
+
+```text
+12 Month Averages 2018-2019 2019-2020 % Change 2020-2021 % Change May 142,236,985 140,180,863 -1.45% 113,945,545 -18.72% June 141,682,734 140,070,408 -1.14% 104,156,116 -25.64% July 141,576,054 140,348,611 -0.87% 95,237,470 -32.14% August 141,166,514 140,382,255 -0.56% 86,732,705 -38.22% September 140,497,954 141,072,158 0.41% 78,348,697 -44.46% October 140,559,479 141,172,102 0.44% 69,402,146 -50.84% November 140,251,732 141,173,190 0.66% 61,309,977 -56.57% December 140,005,034 141,477,277 1.05% 53,295,086 -62.33% January 139,993,474 141,802,408 1.29% 45,184,855 -68.14% February 139,904,049 142,180,941 1.63% 37,540,546 -73.60% March 139,882,410 136,340,615 -2.53% 35,686,879 -73.83% April 140,141,816 125,234,961 -10.64% 39,139,938 -68.75%
+```
+[p077_c0005]
+
+```text
+Average Weekday Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 5,743,481 5,717,721 -0.45% 583,124 -89.80% June 5,569,036 5,609,231 0.72% 905,259 -83.86% July 5,232,455 5,278,407 0.88% 1,200,426 -77.26% August 5,068,468 5,136,088 1.33% 1,321,811 -74.26% September 5,524,451 5,771,557 4.47% 1,627,244 -71.81% October 5,734,634 5,747,781 0.23% 1,752,938 -69.50% November 5,556,889 5,636,153 1.43% 1,706,826 -69.72% December 5,280,965 5,339,212 1.10% 1,623,017 -69.60% January 5,144,107 5,270,001 2.45% 1,595,200 -69.73% February 5,423,877 5,484,495 1.12% 1,598,244 -70.86% March 5,567,422 2,820,420 -49.34% 1,850,071 -34.40% April 5,576,744 446,725 -91.99% 1,984,663 344.27%
+```
+[p077_c0006] _As of June 2, 2021_
+
+## Page 78
+
+### [p078_c0001] Master Page # 78 of 114 - Finance Committee Meeting 6/23/2021
+### [p078_c0002] MTA New York City Bus
+[p078_c0003]
+
+```text
+Revenue Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 51,833,732 49,821,526 -3.88% 289,711 -99.42% June 47,637,082 45,813,014 -3.83% 457,604 -99.00% July 46,047,617 46,280,635 0.51% 558,479 -98.79% August 46,810,522 45,683,641 -2.41% 1,175,266 -97.43% September 46,842,647 48,113,446 2.71% 23,046,563 -52.10% October 51,989,419 50,452,900 -2.96% 24,717,226 -51.01% November 45,751,957 45,349,394 -0.88% 22,223,328 -51.00% December 44,033,258 43,220,859 -1.84% 21,589,388 -50.05% January 44,534,038 45,145,397 1.37% 20,769,132 -54.00% February 42,141,027 43,129,229 2.34% 18,822,957 -56.36% March 48,332,949 26,152,590 -45.89% 24,533,046 -6.19% April 47,233,653 362,266 -99.23% 24,995,162 6799.67% Year-to-Date 182,241,667 114,789,483 -37.01% 89,120,298 -22.36%
+```
+[p078_c0004]
+
+```text
+12 Month Averages 2018-2019 2019-2020 % Change 2020-2021 % Change May 49,068,160 46,764,641 -4.69% 36,666,090 -21.59% June 48,768,724 46,612,636 -4.42% 32,886,473 -29.45% July 48,620,720 46,632,054 -4.09% 29,076,293 -37.65% August 48,461,783 46,538,147 -3.97% 25,367,262 -45.49% September 48,164,830 46,644,047 -3.16% 23,278,355 -50.09% October 47,983,646 46,516,004 -3.06% 21,133,715 -54.57% November 47,647,252 46,482,457 -2.44% 19,206,543 -58.68% December 47,446,770 46,414,757 -2.18% 17,403,921 -62.50% January 47,374,703 46,465,703 -1.92% 15,372,565 -66.92% February 47,159,805 46,548,054 -1.30% 13,347,043 -71.33% March 47,041,561 44,699,690 -4.98% 13,212,081 -70.44% April 46,932,325 40,793,741 -13.08% 15,264,822 -62.58%
+```
+[p078_c0005]
+
+```text
+Average Weekday Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 1,949,956 1,865,926 -4.31% 11,403 -99.39% June 1,818,717 1,776,450 -2.32% 18,121 -98.98% July 1,716,331 1,693,468 -1.33% 21,881 -98.71% August 1,686,163 1,651,497 -2.06% 51,598 -96.88% September 1,872,386 1,904,534 1.72% 866,417 -54.51% October 1,916,775 1,847,770 -3.60% 892,003 -51.73% November 1,776,581 1,795,013 1.04% 857,303 -52.24% December 1,699,278 1,638,325 -3.59% 793,142 -51.59% January 1,675,882 1,705,411 1.76% 795,797 -53.34% February 1,766,779 1,765,568 -0.07% 760,077 -56.95% March 1,839,661 984,777 -46.47% 882,210 -10.42% April 1,795,143 13,914 -99.22% 936,510 6630.64%
+```
+[p078_c0006] _As of June 2, 2021_
+
+## Page 79
+
+### [p079_c0001] Master Page # 79 of 114 - Finance Committee Meeting 6/23/2021
+### [p079_c0002] MTA Bus
+[p079_c0003]
+
+```text
+Revenue Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 11,008,565 10,805,557 -1.84% 120,995 -98.88% June 10,147,168 9,625,988 -5.14% 200,771 -97.91% July 9,978,075 10,170,305 1.93% 269,628 -97.35% August 10,270,251 10,005,056 -2.58% 433,843 -95.66% September 10,049,613 10,394,220 3.43% 5,020,533 -51.70% October 11,325,167 10,952,595 -3.29% 5,397,034 -50.72% November 10,030,732 9,814,745 -2.15% 4,826,314 -50.83% December 9,597,279 9,386,745 -2.19% 4,717,722 -49.74% January 9,726,639 9,814,828 0.91% 4,513,258 -54.02% February 9,024,999 9,290,692 2.94% 4,144,587 -55.39% March 10,358,653 5,719,195 -44.79% 5,364,129 -6.21% April 10,166,474 109,247 -98.93% 5,465,190 4902.61% Year-to-Date 39,276,765 24,933,961 -36.52% 19,487,163 -21.84%
+```
+[p079_c0004]
+
+```text
+12 Month Averages 2018-2019 2019-2020 % Change 2020-2021 % Change May 10,128,584 10,123,384 -0.05% 7,950,384 -21.47% June 10,106,190 10,079,952 -0.26% 7,164,949 -28.92% July 10,118,086 10,095,971 -0.22% 6,339,893 -37.20% August 10,125,383 10,073,872 -0.51% 5,542,292 -44.98% September 10,105,093 10,102,589 -0.02% 5,094,485 -49.57% October 10,136,956 10,071,541 -0.65% 4,631,521 -54.01% November 10,120,293 10,053,542 -0.66% 4,215,819 -58.07% December 10,120,690 10,035,998 -0.84% 3,826,733 -61.87% January 10,151,275 10,043,347 -1.06% 3,384,936 -66.30% February 10,140,604 10,065,488 -0.74% 2,956,094 -70.63% March 10,138,569 9,678,867 -4.53% 2,926,505 -69.76% April 10,140,301 8,840,764 -12.82% 3,372,833 -61.85%
+```
+[p079_c0005]
+
+```text
+Average Weekday Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 419,462 408,562 -2.60% 5,023 -98.77% June 393,029 373,241 -5.03% 8,104 -97.83% July 377,060 376,848 -0.06% 10,762 -97.14% August 374,172 366,361 -2.09% 18,825 -94.86% September 409,993 417,340 1.79% 191,813 -54.04% October 422,384 405,778 -3.93% 197,739 -51.27% November 395,161 393,555 -0.41% 189,644 -51.81% December 376,372 360,593 -4.19% 176,015 -51.19% January 371,720 375,796 1.10% 176,149 -53.13% February 384,844 388,497 0.95% 170,318 -56.16% March 401,957 217,801 -45.81% 195,148 -10.40% April 390,950 4,380 -98.88% 206,973 4625.70%
+```
+[p079_c0006] _As of June 2, 2021_
+
+## Page 80
+
+### [p080_c0001] Master Page # 80 of 114 - Finance Committee Meeting 6/23/2021
+### [p080_c0002] MTA Staten Island Railway
+[p080_c0003]
+
+```text
+Revenue Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 420,153 408,805 -2.70% 23,457 -94.26% June 381,443 347,928 -8.79% 41,174 -88.17% July 331,968 332,218 0.08% 62,304 -81.25% August 340,994 312,876 -8.25% 64,780 -79.30% September 363,488 364,231 0.20% 77,710 -78.66% October 443,826 403,075 -9.18% 97,118 -75.91% November 386,701 339,080 -12.31% 77,847 -77.04% December 356,308 336,326 -5.61% 78,744 -76.59% January 381,600 360,943 -5.41% 81,492 -77.42% February 318,372 321,294 0.92% 77,293 -75.94% March 378,259 200,584 -46.97% 91,130 -54.57% April 377,719 19,677 -94.79% 108,916 453.52% Year-to-Date 1,455,950 902,498 -38.01% 358,831 -60.24%
+```
+[p080_c0004]
+
+```text
+12 Month Averages 2018-2019 2019-2020 % Change 2020-2021 % Change May 387,425 372,457 -3.86% 280,141 -24.79% June 385,625 369,664 -4.14% 254,578 -31.13% July 385,533 369,685 -4.11% 232,085 -37.22% August 384,481 367,342 -4.46% 211,410 -42.45% September 381,318 367,404 -3.65% 187,534 -48.96% October 380,885 364,008 -4.43% 162,037 -55.49% November 378,189 360,039 -4.80% 140,268 -61.04% December 376,867 358,374 -4.91% 118,803 -66.85% January 376,138 356,653 -5.18% 95,515 -73.22% February 374,292 356,896 -4.65% 75,182 -78.93% March 373,387 342,090 -8.38% 66,060 -80.69% April 373,403 312,253 -16.38% 73,497 -76.46%
+```
+[p080_c0005]
+
+```text
+Average Weekday Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 17,399 16,779 -3.56% 984 -94.14% June 16,213 15,914 -1.84% 1,807 -88.65% July 13,786 13,757 -0.21% 2,535 -81.57% August 13,382 13,226 -1.17% 2,739 -79.29% September 17,089 17,810 4.22% 3,542 -80.11% October 17,847 17,309 -3.01% 4,137 -76.10% November 17,020 16,582 -2.57% 3,661 -77.92% December 15,600 15,119 -3.08% 3,334 -77.95% January 16,270 16,201 -0.43% 3,590 -77.84% February 15,575 16,298 4.64% 3,450 -78.83% March 16,281 8,575 -47.33% 3,958 -53.84% April 15,726 764 -95.14% 4,715 516.90%
+```
+[p080_c0006] _As of June 2, 2021_
+
+## Page 81
+
+### [p081_c0001] Master Page # 81 of 114 - Finance Committee Meeting 6/23/2021
+### [p081_c0002] MTA Long Island Rail Road
+[p081_c0003]
+
+```text
+Revenue Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 7,716,073 7,974,945 3.35% 515,918 -93.53% June 7,940,642 7,736,345 -2.57% 1,113,087 -85.61% July 7,752,358 7,990,885 3.08% 1,621,375 -79.71% August 7,858,108 7,921,403 0.81% 1,747,284 -77.94% September 7,227,262 7,540,043 4.33% 2,041,823 -72.92% October 8,172,734 8,108,240 -0.79% 2,174,853 -73.18% November 7,477,649 7,215,882 -3.50% 1,896,355 -73.72% December 7,589,318 7,667,200 1.03% 1,837,257 -76.04% January 7,166,693 7,171,719 0.07% 1,730,014 -75.88% February 6,544,351 6,640,007 1.46% 1,586,865 -76.10% March 7,515,113 3,274,069 -56.43% 2,092,132 -36.10% April 7,724,038 253,571 -96.72% 2,199,648 767.47% Year-to-Date 28,950,194 17,339,366 -40.11% 7,608,659 -56.12%
+```
+[p081_c0004]
+
+```text
+12 Month Averages 2018-2019 2019-2020 % Change 2020-2021 % Change May 7,409,015 7,578,601 2.29% 6,002,940 -20.79% June 7,408,796 7,561,576 2.06% 5,451,002 -27.91% July 7,433,514 7,581,453 1.99% 4,920,209 -35.10% August 7,437,006 7,586,728 2.01% 4,405,699 -41.93% September 7,421,459 7,612,793 2.58% 3,947,514 -48.15% October 7,450,989 7,607,418 2.10% 3,453,066 -54.61% November 7,459,382 7,585,605 1.69% 3,009,772 -60.32% December 7,481,047 7,592,095 1.48% 2,523,943 -66.76% January 7,504,692 7,592,514 1.17% 2,070,468 -72.73% February 7,510,367 7,600,485 1.20% 1,649,373 -78.30% March 7,518,960 7,247,065 -3.62% 1,550,878 -78.60% April 7,557,028 6,624,526 -12.34% 1,713,051 -74.14%
+```
+[p081_c0005]
+
+```text
+Average Weekday Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 310,397 319,369 2.89% 21,012 -93.42% June 328,561 332,647 1.24% 41,528 -87.52% July 319,177 316,692 -0.78% 60,288 -80.96% August 301,170 312,767 3.85% 66,889 -78.61% September 327,002 327,418 0.13% 78,788 -75.94% October 316,919 314,314 -0.82% 80,530 -74.38% November 326,138 328,359 0.68% 80,008 -75.63% December 324,193 315,927 -2.55% 69,004 -78.16% January 302,167 302,533 0.12% 73,051 -75.85% February 302,804 305,557 0.91% 67,318 -77.97% March 313,393 131,992 -57.88% 74,271 -43.73% April 310,439 10,320 -96.68% 80,959 684.49%
+```
+[p081_c0006] _As of June 2, 2021_
+
+## Page 82
+
+### [p082_c0001] Master Page # 82 of 114 - Finance Committee Meeting 6/23/2021
+### [p082_c0002] MTA Metro-North Rail Road
+[p082_c0003]
+
+```text
+Revenue Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 7,549,186 7,564,517 0.20% 508,635 -93.28% June 7,592,314 7,392,981 -2.63% 847,928 -88.53% July 7,414,612 7,524,118 1.48% 1,331,852 -82.30% August 7,447,642 7,315,206 -1.78% 1,369,824 -81.27% September 6,941,823 7,144,447 2.92% 1,707,881 -76.09% October 7,888,088 7,867,724 -0.26% 1,866,523 -76.28% November 7,218,476 6,946,473 -3.77% 1,564,947 -77.47% December 7,244,445 7,262,961 0.26% 1,468,620 -79.78% January 6,844,393 6,867,074 0.33% 1,386,555 -79.81% February 6,216,047 6,314,416 1.58% 1,301,932 -79.38% March 7,079,568 2,882,959 -59.28% 1,738,475 -39.70% April 7,461,935 450,910 -93.96% 1,887,715 318.65% Year-to-Date 27,601,943 16,515,359 -40.17% 6,314,677 -61.76%
+```
+[p082_c0004]
+
+```text
+12 Month Averages 2018-2019 2019-2020 % Change 2020-2021 % Change May 7,209,775 7,242,822 0.46% 5,706,492 -21.21% June 7,200,128 7,226,211 0.36% 5,161,071 -28.58% July 7,214,264 7,235,336 0.29% 4,645,049 -35.80% August 7,209,270 7,224,300 0.21% 4,149,600 -42.56% September 7,197,552 7,241,185 0.61% 3,696,553 -48.95% October 7,209,259 7,239,488 0.42% 3,196,453 -55.85% November 7,205,181 7,216,821 0.16% 2,747,993 -61.92% December 7,212,720 7,218,364 0.08% 2,265,131 -68.62% January 7,219,016 7,220,254 0.02% 1,808,421 -74.95% February 7,217,221 7,228,452 0.16% 1,390,714 -80.76% March 7,212,261 6,878,734 -4.62% 1,295,340 -81.17% April 7,241,544 6,294,482 -13.08% 1,415,074 -77.52%
+```
+[p082_c0005]
+
+```text
+Average Weekday Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 295,061 294,109 -0.32% 19,749 -93.29% June 306,545 304,710 -0.60% 30,896 -89.86% July 295,276 291,128 -1.40% 48,453 -83.36% August 282,483 281,258 -0.43% 50,024 -82.21% September 296,476 296,246 -0.08% 63,985 -78.40% October 301,176 298,766 -0.80% 66,984 -77.58% November 300,641 294,665 -1.99% 61,595 -79.10% December 293,304 286,336 -2.38% 53,449 -81.33% January 276,218 275,130 -0.39% 53,485 -80.56% February 276,754 273,584 -1.15% 53,527 -80.43% March 283,972 146,084 -48.56% 50,073 -65.72% April 294,868 17,968 -93.91% 69,792 288.43%
+```
+[p082_c0006] _As of June 2, 2021_
+
+## Page 83
+
+### [p083_c0001] Master Page # 83 of 114 - Finance Committee Meeting 6/23/2021
+### [p083_c0002] MTA Metro-North East-of-Hudson
+[p083_c0003]
+
+```text
+Revenue Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 7,406,943 7,419,623 0.17% 497,247 -93.30% June 7,449,782 7,251,906 -2.66% 826,483 -88.60% July 7,271,157 7,378,992 1.48% 1,301,424 -82.36% August 7,298,723 7,177,390 -1.66% 1,336,837 -81.37% September 6,812,970 7,010,975 2.91% 1,670,821 -76.17% October 7,737,800 7,720,112 -0.23% 1,825,627 -76.35% November 7,083,292 6,817,377 -3.75% 1,531,148 -77.54% December 7,115,092 7,130,980 0.22% 1,434,801 -79.88% January 6,714,444 6,736,774 0.33% 1,354,158 -79.90% February 6,097,880 6,197,254 1.63% 1,271,204 -79.49% March 6,941,075 2,783,357 -59.90% 1,705,606 -38.72% April 7,319,622 434,767 -94.06% 1,853,507 326.32% Year-to-Date 27,073,021 16,152,152 -40.34% 6,184,475 -61.71%
+```
+[p083_c0004]
+
+```text
+12 Month Averages 2018-2019 2019-2020 % Change 2020-2021 % Change May 7,075,337 7,105,122 0.42% 5,594,761 -21.26% June 7,065,842 7,088,632 0.32% 5,059,309 -28.63% July 7,079,167 7,097,618 0.26% 4,552,845 -35.85% August 7,073,765 7,087,507 0.19% 4,066,132 -42.63% September 7,062,073 7,104,008 0.59% 3,621,119 -49.03% October 7,072,666 7,102,534 0.42% 3,129,912 -55.93% November 7,068,399 7,080,374 0.17% 2,689,393 -62.02% December 7,075,892 7,081,698 0.08% 2,214,712 -68.73% January 7,082,228 7,083,559 0.02% 1,766,160 -75.07% February 7,080,383 7,091,840 0.16% 1,355,656 -80.88% March 7,075,645 6,745,364 -4.67% 1,265,844 -81.23% April 7,104,065 6,171,626 -13.13% 1,384,072 -77.57%
+```
+[p083_c0005]
+
+```text
+Average Weekday Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 288,585 287,513 -0.37% 19,180 -93.33% June 299,766 297,676 -0.70% 29,921 -89.95% July 288,441 284,517 -1.36% 47,066 -83.46% August 275,994 274,990 -0.36% 48,455 -82.38% September 289,713 289,580 -0.05% 62,220 -78.51% October 294,628 292,337 -0.78% 65,124 -77.72% November 293,879 287,876 -2.04% 59,818 -79.22% December 286,846 280,048 -2.37% 52,049 -81.41% January 270,017 268,914 -0.41% 51,942 -80.68% February 270,550 267,433 -1.15% 52,115 -80.51% March 277,384 141,556 -48.97% 48,369 -65.83% April 288,396 17,234 -94.02% 67,931 294.18%
+```
+[p083_c0006] _As of June 2, 2021_
+
+## Page 84
+
+### [p084_c0001] Master Page # 84 of 114 - Finance Committee Meeting 6/23/2021
+### [p084_c0002] MTA Metro-North Harlem Line
+[p084_c0003]
+
+```text
+Revenue Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 2,385,749 2,384,975 -0.03% 173,611 -92.72% June 2,389,946 2,306,822 -3.48% 273,887 -88.13% July 2,304,551 2,341,310 1.60% 430,221 -81.62% August 2,313,467 2,259,549 -2.33% 426,425 -81.13% September 2,178,843 2,251,014 3.31% 559,731 -75.13% October 2,499,505 2,497,758 -0.07% 600,349 -75.96% November 2,283,471 2,201,824 -3.58% 530,307 -75.92% December 2,280,113 2,290,563 0.46% 493,511 -78.45% January 2,193,301 2,209,020 0.72% 447,475 -79.74% February 1,993,046 2,031,200 1.91% 425,370 -79.06% March 2,269,246 921,624 -59.39% 565,594 -38.63% April 2,377,648 162,080 -93.18% 604,696 273.08% Year-to-Date 8,833,241 5,323,924 -39.73% 2,043,135 -61.62%
+```
+[p084_c0004]
+
+```text
+12 Month Averages 2018-2019 2019-2020 % Change 2020-2021 % Change May 2,310,769 2,289,009 -0.94% 1,803,865 -21.19% June 2,304,058 2,282,082 -0.95% 1,634,453 -28.38% July 2,305,420 2,285,146 -0.88% 1,475,196 -35.44% August 2,300,452 2,280,652 -0.86% 1,322,436 -42.02% September 2,292,215 2,286,667 -0.24% 1,181,495 -48.33% October 2,292,693 2,286,521 -0.27% 1,023,378 -55.24% November 2,288,863 2,279,717 -0.40% 884,085 -61.22% December 2,287,582 2,280,588 -0.31% 734,331 -67.80% January 2,286,465 2,281,898 -0.20% 587,535 -74.25% February 2,283,380 2,285,077 0.07% 453,716 -80.14% March 2,280,290 2,172,776 -4.71% 424,047 -80.48% April 2,289,074 1,988,145 -13.15% 460,931 -76.82%
+```
+[p084_c0005]
+
+```text
+Average Weekday Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 93,972 93,426 -0.58% 6,829 -92.69% June 97,358 96,166 -1.22% 10,065 -89.53% July 92,748 91,477 -1.37% 15,804 -82.72% August 88,413 87,791 -0.70% 15,702 -82.11% September 94,010 94,214 0.22% 21,195 -77.50% October 96,017 95,502 -0.54% 21,722 -77.25% November 95,921 94,355 -1.63% 21,248 -77.48% December 93,368 91,213 -2.31% 18,162 -80.09% January 89,065 89,107 0.05% 17,502 -80.36% February 89,304 88,741 -0.63% 17,683 -80.07% March 91,674 46,417 -49.37% 15,617 -66.36% April 94,550 6,469 -93.16% 22,470 247.37%
+```
+[p084_c0006] _As of June 2, 2021_
+
+## Page 85
+
+### [p085_c0001] Master Page # 85 of 114 - Finance Committee Meeting 6/23/2021
+### [p085_c0002] MTA Metro-North Hudson Line
+[p085_c0003]
+
+```text
+Revenue Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 1,505,105 1,520,684 1.04% 108,831 -92.84% June 1,502,130 1,477,997 -1.61% 189,227 -87.20% July 1,488,856 1,532,186 2.91% 292,573 -80.90% August 1,497,490 1,503,699 0.41% 314,183 -79.11% September 1,406,474 1,459,394 3.76% 373,730 -74.39% October 1,596,154 1,618,125 1.38% 421,834 -73.93% November 1,438,493 1,385,835 -3.66% 325,266 -76.53% December 1,427,547 1,430,933 0.24% 300,724 -78.98% January 1,333,515 1,346,677 0.99% 290,986 -78.39% February 1,223,780 1,250,484 2.18% 272,080 -78.24% March 1,396,017 564,119 -59.59% 369,388 -34.52% April 1,496,643 90,669 -93.94% 405,149 346.84% Year-to-Date 5,449,955 3,251,949 -40.33% 1,337,602 -58.87%
+```
+[p085_c0004]
+
+```text
+12 Month Averages 2018-2019 2019-2020 % Change 2020-2021 % Change May 1,414,981 1,443,982 2.05% 1,147,412 -20.54% June 1,415,149 1,441,971 1.90% 1,040,015 -27.88% July 1,419,057 1,445,582 1.87% 936,714 -35.20% August 1,419,557 1,446,099 1.87% 837,588 -42.08% September 1,419,632 1,450,509 2.17% 747,116 -48.49% October 1,423,279 1,452,340 2.04% 647,425 -55.42% November 1,425,978 1,447,952 1.54% 559,044 -61.39% December 1,430,086 1,448,234 1.27% 464,860 -67.90% January 1,433,121 1,449,331 1.13% 376,885 -74.00% February 1,434,989 1,451,556 1.15% 295,352 -79.65% March 1,435,670 1,382,231 -3.72% 279,124 -79.81% April 1,442,684 1,265,067 -12.31% 305,331 -75.86%
+```
+[p085_c0005]
+
+```text
+Average Weekday Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 58,284 58,598 0.54% 4,113 -92.98% June 60,030 60,208 0.30% 6,835 -88.65% July 58,534 58,597 0.11% 10,518 -82.05% August 56,351 57,157 1.43% 11,275 -80.27% September 59,169 59,743 0.97% 13,779 -76.94% October 60,349 60,759 0.68% 14,803 -75.64% November 59,367 58,187 -1.99% 12,327 -78.81% December 57,447 56,118 -2.31% 10,847 -80.67% January 53,603 53,669 0.12% 11,076 -79.36% February 54,239 53,841 -0.73% 11,104 -79.38% March 55,656 28,717 -48.40% 10,503 -63.43% April 58,707 3,578 -93.90% 14,759 312.46%
+```
+[p085_c0006] _As of June 2, 2021_
+
+## Page 86
+
+### [p086_c0001] Master Page # 86 of 114 - Finance Committee Meeting 6/23/2021
+### [p086_c0002] MTA Metro-North New Haven Line
+[p086_c0003]
+
+```text
+Revenue Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 3,516,089 3,513,964 -0.06% 214,805 -93.89% June 3,557,706 3,467,087 -2.55% 363,369 -89.52% July 3,477,750 3,505,496 0.80% 578,630 -83.49% August 3,487,766 3,414,142 -2.11% 596,229 -82.54% September 3,227,653 3,300,567 2.26% 737,360 -77.66% October 3,642,141 3,604,229 -1.04% 803,444 -77.71% November 3,361,328 3,229,718 -3.92% 675,575 -79.08% December 3,407,432 3,409,484 0.06% 640,566 -81.21% January 3,187,628 3,181,077 -0.21% 615,698 -80.64% February 2,881,054 2,915,570 1.20% 573,754 -80.32% March 3,275,812 1,297,614 -60.39% 770,624 -40.61% April 3,445,331 182,018 -94.72% 843,662 363.50% Year-to-Date 12,789,825 7,576,279 -40.76% 2,803,738 -62.99%
+```
+[p086_c0004]
+
+```text
+12 Month Averages 2018-2019 2019-2020 % Change 2020-2021 % Change May 3,349,587 3,372,130 0.67% 2,643,484 -21.61% June 3,346,635 3,364,579 0.54% 2,384,841 -29.12% July 3,354,690 3,366,891 0.36% 2,140,935 -36.41% August 3,353,756 3,360,756 0.21% 1,906,109 -43.28% September 3,350,226 3,366,832 0.50% 1,692,509 -49.73% October 3,356,694 3,363,673 0.21% 1,459,110 -56.62% November 3,353,558 3,352,705 -0.03% 1,246,265 -62.83% December 3,358,224 3,352,876 -0.16% 1,015,521 -69.71% January 3,362,642 3,352,330 -0.31% 801,740 -76.08% February 3,362,014 3,355,206 -0.20% 606,588 -81.92% March 3,359,686 3,190,357 -5.04% 562,673 -82.36% April 3,372,308 2,918,414 -13.46% 617,810 -78.83%
+```
+[p086_c0005]
+
+```text
+Average Weekday Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 136,329 135,489 -0.62% 8,239 -93.92% June 142,379 141,302 -0.76% 13,021 -90.79% July 137,159 134,443 -1.98% 20,745 -84.57% August 131,230 130,041 -0.91% 21,478 -83.48% September 136,534 135,623 -0.67% 27,246 -79.91% October 138,262 136,076 -1.58% 28,598 -78.98% November 138,592 135,334 -2.35% 26,243 -80.61% December 136,032 132,717 -2.44% 23,040 -82.64% January 127,349 126,138 -0.95% 23,364 -81.48% February 127,007 124,851 -1.70% 23,328 -81.32% March 130,054 66,422 -48.93% 22,249 -66.50% April 135,139 7,187 -94.68% 30,702 327.21%
+```
+[p086_c0006] _As of June 2, 2021_
+
+## Page 87
+
+### [p087_c0001] Master Page # 87 of 114 - Finance Committee Meeting 6/23/2021
+### [p087_c0002] MTA Metro-North West-of-Hudson
+[p087_c0003]
+
+```text
+Revenue Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 142,243 144,894 1.86% 11,388 -92.14% June 142,532 141,075 -1.02% 21,445 -84.80% July 143,455 145,126 1.16% 30,428 -79.03% August 148,919 137,816 -7.46% 32,987 -76.06% September 128,853 133,472 3.58% 37,060 -72.23% October 150,288 147,612 -1.78% 40,896 -72.29% November 135,184 129,096 -4.50% 33,799 -73.82% December 129,353 131,981 2.03% 33,819 -74.38% January 129,949 130,300 0.27% 32,397 -75.14% February 118,167 117,162 -0.85% 30,728 -73.77% March 138,493 99,602 -28.08% 32,869 -67.00% April 142,313 16,143 -88.66% 34,208 111.91% Year-to-Date 528,922 363,207 -31.33% 130,202 -64.15%
+```
+[p087_c0004]
+
+```text
+12 Month Averages 2018-2019 2019-2020 % Change 2020-2021 % Change May 134,438 137,700 2.43% 111,731 -18.86% June 134,286 137,579 2.45% 101,762 -26.03% July 135,097 137,718 1.94% 92,204 -33.05% August 135,505 136,793 0.95% 83,468 -38.98% September 135,479 137,178 1.25% 75,434 -45.01% October 136,593 136,955 0.26% 66,541 -51.41% November 136,782 136,447 -0.24% 58,599 -57.05% December 136,827 136,666 -0.12% 50,419 -63.11% January 136,788 136,695 -0.07% 42,261 -69.08% February 136,838 136,612 -0.17% 35,058 -74.34% March 136,616 133,371 -2.38% 29,497 -77.88% April 137,479 122,857 -10.64% 31,002 -74.77%
+```
+[p087_c0005]
+
+```text
+Average Weekday Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 6,476 6,596 1.85% 569 -91.38% June 6,779 7,034 3.76% 975 -86.13% July 6,835 6,611 -3.28% 1,387 -79.02% August 6,489 6,268 -3.41% 1,569 -74.97% September 6,763 6,666 -1.43% 1,766 -73.51% October 6,548 6,429 -1.82% 1,860 -71.07% November 6,762 6,789 0.40% 1,777 -73.83% December 6,458 6,288 -2.63% 1,400 -77.74% January 6,201 6,216 0.24% 1,543 -75.18% February 6,204 6,151 -0.85% 1,412 -77.04% March 6,588 4,529 -31.26% 1,704 -62.38% April 6,472 734 -88.66% 1,861 153.53%
+```
+[p087_c0006] _As of June 2, 2021_
+
+## Page 88
+
+### [p088_c0001] Master Page # 88 of 114 - Finance Committee Meeting 6/23/2021
+### [p088_c0002] MTA Metro-North Port Jervis Line
+[p088_c0003]
+
+```text
+Revenue Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 82,221 85,297 3.74% 7,326 -91.41% June 81,196 82,228 1.27% 14,076 -82.88% July 84,014 88,994 5.93% 20,169 -77.34% August 87,725 86,334 -1.59% 22,064 -74.44% September 75,815 79,121 4.36% 24,445 -69.10% October 88,977 86,807 -2.44% 26,753 -69.18% November 79,372 74,909 -5.62% 22,298 -70.23% December 76,092 76,628 0.70% 21,976 -71.32% January 75,588 75,406 -0.24% 21,415 -71.60% February 68,805 68,166 -0.93% 20,442 -70.01% March 77,829 58,741 -24.53% 21,160 -63.98% April 83,305 9,689 -88.37% 20,955 116.28% Year-to-Date 305,527 212,002 -30.61% 83,972 -60.39%
+```
+[p088_c0004]
+
+```text
+12 Month Averages 2018-2019 2019-2020 % Change 2020-2021 % Change May 79,258 80,335 1.36% 66,196 -17.60% June 78,907 80,421 1.92% 60,516 -24.75% July 79,195 80,836 2.07% 54,781 -32.23% August 79,321 80,720 1.76% 49,425 -38.77% September 79,082 80,995 2.42% 44,869 -44.60% October 79,365 80,814 1.83% 39,864 -50.67% November 79,471 80,442 1.22% 35,480 -55.89% December 79,503 80,487 1.24% 30,926 -61.58% January 79,494 80,472 1.23% 26,427 -67.16% February 79,551 80,419 1.09% 22,450 -72.08% March 79,439 78,828 -0.77% 19,318 -75.49% April 80,078 72,693 -9.22% 20,257 -72.13%
+```
+[p088_c0005]
+
+```text
+Average Weekday Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 3,744 3,884 3.74% 366 -90.58% June 3,861 4,098 6.14% 640 -84.37% July 4,003 4,055 1.30% 920 -77.32% August 3,824 3,927 2.69% 1,049 -73.29% September 3,977 3,951 -0.65% 1,165 -70.52% October 3,878 3,782 -2.48% 1,217 -67.83% November 3,971 3,939 -0.81% 1,172 -70.25% December 3,798 3,651 -3.87% 903 -75.26% January 3,608 3,598 -0.26% 994 -72.39% February 3,611 3,577 -0.94% 901 -74.81% March 3,701 2,671 -27.84% 1,089 -59.22% April 3,789 441 -88.37% 1,189 169.76%
+```
+[p088_c0006] _As of June 2, 2021_
+
+## Page 89
+
+### [p089_c0001] Master Page # 89 of 114 - Finance Committee Meeting 6/23/2021
+### [p089_c0002] MTA Metro-North Pascack Valley Line
+[p089_c0003]
+
+```text
+Revenue Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 60,022 59,597 -0.71% 4,062 -93.18% June 61,336 58,847 -4.06% 7,369 -87.48% July 59,441 56,132 -5.57% 10,259 -81.72% August 61,194 51,482 -15.87% 10,923 -78.78% September 53,038 54,351 2.48% 12,615 -76.79% October 61,311 60,805 -0.83% 14,143 -76.74% November 55,812 54,187 -2.91% 11,501 -78.78% December 53,261 55,353 3.93% 11,843 -78.60% January 54,361 54,894 0.98% 10,982 -79.99% February 49,362 48,996 -0.74% 10,286 -79.01% March 60,664 40,861 -32.64% 11,709 -71.34% April 59,008 6,454 -89.06% 13,253 105.35% Year-to-Date 223,395 151,205 -32.31% 46,230 -69.43%
+```
+[p089_c0004]
+
+```text
+12 Month Averages 2018-2019 2019-2020 % Change 2020-2021 % Change May 55,180 57,365 3.96% 45,535 -20.62% June 55,379 57,158 3.21% 41,246 -27.84% July 55,902 56,882 1.75% 37,423 -34.21% August 56,184 56,073 -0.20% 34,043 -39.29% September 56,398 56,182 -0.38% 30,565 -45.60% October 57,228 56,140 -1.90% 26,676 -52.48% November 57,311 56,005 -2.28% 23,119 -58.72% December 57,325 56,179 -2.00% 19,493 -65.30% January 57,294 56,224 -1.87% 15,834 -71.84% February 57,287 56,193 -1.91% 12,608 -77.56% March 57,177 54,543 -4.61% 10,179 -81.34% April 57,401 50,163 -12.61% 10,745 -78.58%
+```
+[p089_c0005]
+
+```text
+Average Weekday Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 2,732 2,712 -0.73% 203 -92.52% June 2,918 2,936 0.62% 335 -88.59% July 2,832 2,556 -9.75% 467 -81.72% August 2,665 2,341 -12.16% 520 -77.79% September 2,786 2,715 -2.55% 601 -77.87% October 2,670 2,647 -0.86% 643 -75.70% November 2,791 2,850 2.11% 605 -78.77% December 2,660 2,637 -0.86% 497 -81.17% January 2,593 2,617 0.93% 549 -79.02% February 2,593 2,574 -0.72% 511 -80.15% March 2,887 1,858 -35.65% 615 -66.92% April 2,683 293 -89.07% 672 129.15%
+```
+[p089_c0006] _As of June 2, 2021_
+
+## Page 90
+
+### [p090_c0001] Master Page # 90 of 114 - Finance Committee Meeting 6/23/2021
+### [p090_c0002] MTA Bridges & Tunnels
+[p090_c0003]
+
+```text
+Revenue Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 28,226,943 29,249,471 3.62% 14,953,991 -48.87% June 28,546,822 28,792,254 0.86% 20,001,850 -30.53% July 28,561,622 28,857,383 1.04% 23,322,086 -19.18% August 29,280,095 29,442,733 0.56% 24,423,978 -17.05% September 27,175,132 27,785,633 2.25% 24,002,331 -13.62% October 28,301,034 28,109,963 -0.68% 24,436,261 -13.07% November 26,584,637 26,913,543 1.24% 21,889,990 -18.67% December 26,946,779 26,955,736 0.03% 21,579,182 -19.95% January 25,004,686 25,368,494 1.45% 21,014,689 -17.16% February 23,532,562 24,540,667 4.28% 18,255,539 -25.61% March 27,332,093 18,934,838 -30.72% 24,335,390 28.52% April 27,419,476 9,730,391 -64.51% 24,896,428 155.86% Year-to-Date 103,288,817 78,574,390 -23.93% 88,502,046 12.63%
+```
+[p090_c0004]
+
+```text
+12 Month Averages 2018-2019 2019-2020 % Change 2020-2021 % Change May 26,262,402 27,327,867 4.06% 24,198,802 -11.45% June 26,380,199 27,348,320 3.67% 23,466,269 -14.19% July 26,466,116 27,372,967 3.43% 23,004,994 -15.96% August 26,550,166 27,386,520 3.15% 22,586,764 -17.53% September 26,601,499 27,437,395 3.14% 22,271,489 -18.83% October 26,704,230 27,421,473 2.69% 21,965,347 -19.90% November 26,756,627 27,448,881 2.59% 21,546,718 -21.50% December 26,857,438 27,449,628 2.20% 21,098,672 -23.14% January 26,963,508 27,479,945 1.92% 20,735,855 -24.54% February 27,029,330 27,563,954 1.98% 20,212,094 -26.67% March 27,167,622 26,864,183 -1.12% 20,662,140 -23.09% April 27,242,657 25,390,092 -6.80% 21,925,976 -13.64%
+```
+[p090_c0005]
+
+```text
+Average Weekday Passengers 2018-2019 2019-2020 % Change 2020-2021 % Change May 945,637 966,452 2.20% 514,300 -46.78% June 966,001 968,921 0.30% 691,531 -28.63% July 942,183 947,365 0.55% 782,983 -17.35% August 959,355 957,941 -0.15% 817,733 -14.64% September 926,287 943,165 1.82% 826,609 -12.36% October 930,095 923,527 -0.71% 809,244 -12.37% November 908,936 925,033 1.77% 770,755 -16.68% December 913,378 897,981 -1.69% 734,181 -18.24% January 855,261 862,855 0.89% 733,894 -14.95% February 870,031 879,793 1.12% 674,619 -23.32% March 907,709 652,651 -28.10% 806,149 23.52% April 926,113 356,124 -61.55% 853,935 139.79%
+```
+[p090_c0006] _As of June 2, 2021_
+
+## Page 91
+
+### [p091_c0001] Fuel Hedge Program
+[p091_c0002] _Master Page # 91 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 92
+
+### [p092_c0001] Current ULSD Hedges
+[p092_c0002]
+
+```text
+Date Gallons Hedged Percent of Expected Gallons Purchased Weighted 2020 Adopted Budget 2021 Adopted Budget Average Hedge Price for Each Month (February Plan) Forecasted Commodity Price (February Plan) Forecasted Commodity Price June-21 2,852,867 50 1.64 1.82 1.36 July-21 3,141,480 50 1.59 1.82 1.36 August-21 3,009,763 50 1.57 1.82 1.36 September-21 2,854,250 50 1.53 1.82 1.36 October-21 2,854,323 50 1.48 1.82 1.36 November-21 2,659,407 50 1.45 1.82 1.36 December-21 2,479,089 50 1.42 1.82 1.36 January-22 2,756,162 50 1.41 1.81 1.46 February-22 2,703,685 50 1.42 1.81 1.46 March-22 2,851,182 50 1.46 1.81 1.46 April-22 2,763,744 50 1.52 1.81 1.46 May-22 2,995,075 50 1.59 1.81 1.46 June-22 2,615,109 46 1.61 1.81 1.46 July-22 2,617,858 42 1.62 1.81 1.46 August-22 2,257,262 37 1.65 1.81 1.46 September-22 1,902,757 33 1.69 1.81 1.46 October-22 1,664,926 29 1.74 1.81 1.46 November-22 1,329,597 25 1.79 1.81 1.46 December-22 1,032,838 21 1.84 1.81 1.46 January-23 918,573 17 1.89 1.83 1.54 February-23 675,759 12 1.93 1.83 1.54 March-23 475,006 8 1.99 1.83 1.54 April-23 230,109 4 2.05 1.83 1.54
+```
+[p092_c0003] _Master Page # 92 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 93
+
+### [p093_c0001] Annual Impact as of June 3, 2021
+[p093_c0002]
+
+```text
+($ in millions) 2021 2022 2023 Ultra Low Sulfur Diesel Current Prices vs. 2021 Adopted Budget ($44.462) ($43.576) ($32.638) Impact of Hedge 10.098 12.010 0.122 Net Impact: Fav/(Unfav) ($34.364) ($31.566) ($32.516) Compressed Natural Gas Current Prices vs. 2021 Adopted Budget ($1.109) ($2.540) ($2.932) Impact of Hedge 0.000 0.000 0.000 Net Impact: Fav/(Unfav) ($1.109) ($2.540) ($2.932) Summary Current Prices vs. 2021 Adopted Budget ($45.571) ($46.117) ($35.570) Impact of Hedge 10.098 12.010 0.122 Net Impact: Fav/(Unfav) ($35.473) ($34.106) ($35.448)
+```
+[p093_c0003] _Master Page # 93 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 94
+
+### [p094_c0001] JUNE 2021 MTA REAL ESTATE FINANCE COMMITTEE AGENDA ITEMS
+### [p094_c0002] 1. ACTION ITEMS
+### [p094_c0003] MTA LONG ISLAND RAIL ROAD
+- [p094_c0004] a. License Agreement Twin Forks Chapter of the National Railway Historical Society for storage of rail cars, Riverhead, New York b. License Agreement with Quality Automotive Services Inc. for parking on LIRR property adjacent to 122-26 Farmers Blvd. in Springfield Gardens, Queens, NY
+### [p094_c0005] METROPOLITAN TRANSPORTATION AUTHORITY
+- [p094_c0006] c. Amendment to Real Estate Department Policy #11 to increase fees payable by MTA agencies for permits and licenses needed from adjacent property owners to facilitate construction projects d. Acquisition of fee interest and permanent and temporary easements for Contract 2 of Phase 2 of the Second Avenue Subway Project
+### [p094_c0007] 2. INFORMATION ITEMS
+- [p094_c0008] a. Status report on agreements entered into directly by the Real Estate Department b. Month to Month license agreement with Hudson Group for temporary retail kiosks in Penn Station, New York, New York c. Entry Permit with 214 E 35 LLC to facilitate work adjacent to the Queens Midtown Tunnel between East 34th and East 35th Street, New York, New York
+[p094_c0009] _Master Page # 94 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 95
+
+[p095_c0001]
+
+```text
+Legal Name Popular Name Abbreviation New York City Transit Authority MTA New York City Transit NYC Transit The Long Island Rail Road Company MTA Long Island Rail Road LIRR Metro-North Commuter Railroad Company MTA Metro-North Railroad MNR Triborough Bridge and Tunnel Authority MTA Bridges and Tunnels MTA B&T MTA Construction and Development Company MTA Construction and Development MTA C&D MTA Bus Company MTA Bus Company MTA Bus
+```
+[p095_c0002] Staten Island Rapid Transit Operating Authority is a subsidiary of the Metropolitan Transportation Authority. Its popular name is MTA Staten Island Railway (abbreviated as SIR).
+[p095_c0003] Manhattan and Bronx Surface Transit Operating Authority is a subsidiary of the New York City Transit Authority (abbreviated as MaBSTOA).
+[p095_c0004] _Master Page # 95 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 96
+
+### [p096_c0001] MTA LONG I SLAND RAI L ROAD
+[p096_c0002] _Master Page # 96 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 97
+
+### [p097_c0001] Staff Summary
+### [p097_c0002] Metropolitan Transportation Authority
+### [p097_c0003] Page 1 of 1
+[p097_c0004]
+
+```text
+Subject LICENSE AGREEMENT WITH TWIN FORKS CHAPTER OF THE NATIONAL RAILWAY HISTORICAL SOCIETY AT THE RIVERHEAD YARD Department REAL ESTATE Department Head Name JOHN N. LIEBER Department Head Signature Project Manager Name ROBERT GOLDBERG
+```
+[p097_c0005]
+
+```text
+Date JUNE 23, 2021 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p097_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 6/23/2021 X 2 Board 6/23/2021 X
+```
+[p097_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p097_c0008] AGENCY: MTA Long Island Rail Road ("LIRR") LICENSEE: Twin Forks Chapter of the National Railway Historical Society LOCATION: Riverhead Rail Yard, Riverhead, New York ACTIVITY: Storage of Rail Cars ACTION REQUESTED: Authorization to enter into a license agreement TERM: Month to Month SPACE: 7 Rail Cars COMPENSATION: $1.00, payment waived
+### [p097_c0009] COMMENTS:
+[p097_c0010] MTA Real Estate received a request to enter into a month-to-month agreement with the not-for-profit entity Twin Forks Chapter of the National Railway Historical Society (Twin Forks NRHS), for temporary storage of 7 rail cars in the LIRR's Riverhead Rail Yard. The Licensee is an organization dedicated to the preservation and education of railroading with an emphasis on Long Island's railroading history.
+[p097_c0011] This transaction is being entered into pursuant to MTA Real Estate Policies and Procedures which permits the licensing of space if there have been no inquiries in the preceding 12 months. There have not been any inquiries about the premises, and it is not currently being used.
+[p097_c0012] The grant of a license would enhance maintenance at the premises, as the Licensee will be responsible for the operation and maintenance of the premises, as well as providing liability insurance coverage, at their sole cost and expense.
+[p097_c0013] Based on the foregoing, MTA Real Estate requests authorization for the LIRR to enter into a license agreement with Twin Forks Chapter of the National Railway Historical Society on the above described terms and conditions.
+[p097_c0014] _Master Page # 97 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 98
+
+### [p098_c0001] Staff Summary
+### [p098_c0002] Metropolitan Transportation Authority
+### [p098_c0003] Page 1 of 1
+[p098_c0004]
+
+```text
+Subject LICENSE AGREEMENT WITH QUALITY AUTOMOTIVE SERVICES INC. IN SPRINGFIELD GARDENS, NY Department REAL ESTATE Department Head Name JOHN N. LIEBER Department Head Signature Project Manager Name ANDREA TEDESCHÉ-GOMEZ
+```
+[p098_c0005]
+
+```text
+Date JUNE 23, 2021 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p098_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 6/23/21 X 2 Board 6/23/21 X
+```
+[p098_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p098_c0008] AGENCY: MTA Long Island Rail Road (“LIRR”) LICENSEE: Quality Automotive Services Inc. LOCATION: 122-28 Farmers Boulevard, Springfield Gardens, New York ACTIVITY: Parking and vehicle storage ACTION REQUESTED: Authorization to enter into license agreement TERM: 5 years plus one (1), 5-year option period SPACE: 2,000 square feet COMPENSATION: $12,000 per year, with 3% escalations
+### [p098_c0009] COMMENTS:
+[p098_c0010] Quality Automotive Services Inc. has requested use of the above-mentioned site for parking and vehicle storage in conjunction with their adjacent autobody repair shop. LIRR has given its authorization for the proposed use of this site. This transaction will be executed pursuant to MTA Real Estate’s Policies and Procedures for the Licensing of Real Property. Compensation was determined by the MTA’s third-party consultant and deemed by MTA Real Estate to be fair and reasonable.
+[p098_c0011] Licensee will be responsible for operation and maintenance of the site, as well as providing liability insurance coverage at their sole cost and expense.
+[p098_c0012] Based on the foregoing, MTA Real Estate requests authorization for LIRR to enter into a license agreement with Quality Automotive Services Inc on the above described terms and conditions.
+[p098_c0013] _Master Page # 98 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 99
+
+### [p099_c0001] METROPOLITAN TRANSPORTATION AUTHORITY
+[p099_c0002] _Master Page # 99 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 100
+
+### [p100_c0001] Staff Summary
+### [p100_c0002] Metropolitan Transportation Authority
+### [p100_c0003] Page 1 of 1
+[p100_c0004]
+
+```text
+Subject AMENDMENT OF BOARD POLICY ON CONSTRUCTION ACCESS AGREEMENTS Department REAL ESTATE Department Head Name JOHN N. LIEBER Department Head Signature Project Manager Name MICHAEL DANIELS
+```
+[p100_c0005]
+
+```text
+Date June 23, 2021 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p100_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 6/23/21 X 2 Board 6/23/21 X
+```
+[p100_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p100_c0008] AGENCY: All agencies
+[p100_c0009] PURPOSE: Proposed Amendment to Policy on Construction Access Agreements as set forth in the resolution below
+### [p100_c0010] COMMENTS:
+[p100_c0011] Real Estate Licensing Policy # 11 originally adopted on November 15, 1999, allows MTA Real Estate to negotiate access rights and privileges required by MTA operating agencies for capital projects or maintenance or repairs of operating facilities. These access rights are typically for the duration of the project and subject to a permit or license fee limit of $2,000 per month. Such permits or licenses are typically obtained from other public entities and private property owners.
+[p100_c0012] Approximately ten years later, instances have started to arise where it has been difficult to keep the compensation within the $2,000.00 per month limit. MTA Real Estate therefore requests that the Board increase the limit to $10,000.00 per month.
+[p100_c0013] BE IT RESOLVED that the Board hereby authorizes the Director, Real Estate Transactions and Operations of the MTA to negotiate and enter into agreements on behalf of all MTA agencies for the purpose of securing certain access rights to real property for their contractors, employees and agents in connection with capital construction projects and maintenance and repairs related to MTA facilities.
+[p100_c0014] Each agreement shall:
+- [p100_c0015] 1) be in a form approved by the MTA Legal Department 2) provide for a permit/license fee or equivalent compensation not to exceed $10,000.00 per month and 3) provide for a term not to exceed the overall project duration.
+[p100_c0016] This resolution is applicable only to the acquisition of access rights that are (1) minor temporary uses of land having negligible or no permanent on the environment; or (2) are in connection with a project to be constructed upon real property therefore used for a transportation purpose or on an insubstantial to such property contiguous thereto and which will not change in a material respect the general character of such prior transportation use shall take effect immediately upon its adoption.
+[p100_c0017] _Master Page # 100 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 101
+
+### [p101_c0001] Staff Summary
+### [p101_c0002] Metropolitan Transportation Authority
+### [p101_c0003] Page 1 of 8
+[p101_c0004]
+
+```text
+Subject DETERMINATION AND FINDINGS Department REAL ESTATE Department Head Name JOHN N. LIEBER Department Head Signature Project Manager Name HELENE CINQUE/ ROBAIR REICHENSTEIN
+```
+[p101_c0005]
+
+```text
+Date JUNE 23, 2021 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p101_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 6/23/21 X 2 Board 6/23/21 X
+```
+[p101_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p101_c0008] AGENCY: Metropolitan Transportation Authority (“MTA”) PROJECT: Second Avenue Subway Project (the “Project”) ACTIVITY: Acquisition of Fee Interest and Permanent and Temporary Easements in Properties Listed on the Attached Determination and Findings for Contract 2 of Phase 2 of the Project ACTION REQUESTED: Approval of Determination and Findings Under the New York Eminent Domain Procedure Law with respect to the acquisition of property needed to facilitate the Project
+### [p101_c0009] COMMENTS:
+[p101_c0010] MTA requires various property interests in the east side of Manhattan, in order to complete the work in Contract 2 of Phase 2 of the Second Avenue Subway Project. Contract 2 work covers construction of the launch box for the Tunnel Boring Machine(s), bored tunnels north starting at 120th Street and Second Avenue and running to the end of the train storage tracks on 125th Street between Malcolm X Blvd. and Adam Clayton Powell Jr. Blvd. and the construction shafts used for the excavation of the mined 125th Street Station. These property interests are set forth in a chart on the attached Determination and Findings. Efforts will be made to acquire these property interests by negotiated agreements. In those instances where MTA cannot reach agreements with the affected property owners, legal proceedings must be commenced under Article 2 of the New York State Eminent Domain Procedure Law (“EDPL”).
+[p101_c0011] On March 30, 2021, MTA held an EDPL public hearing to describe the public uses, benefits, purposes and location of the work elements covered by Contract 2; the property interests to be acquired, and Contract 2’s general impact on the environment. Notices of this public hearing were published in newspapers, as required under the EDPL. Property owners affected tenants and other interested parties were also given advance notice of the hearing by certified mail. MTA Construction & Development (“MTA C&D”) personnel attended this virtual hearing.
+[p101_c0012] Following a presentation by MTA’s hearing officer, 3 speakers made statements about Contract 2, the Project and the proposed property acquisitions. In addition, written submissions with comments about Contract 2, the Project and the proposed property acquisitions were received by MTA prior to the end of the written submission period at the close of business on April 13, 2021 at 5:30 p.m. The following summarizes the comments received: (a) that the construction will cause an adverse impact on parking; (b) expressing concern as to the amount of just compensation that will be paid; (c) requesting that a certain development site not be taken by eminent domain;
+[p101_c0013] _Master Page # 101 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 102
+
+### [p102_c0001] Staff Summary
+### [p102_c0002] FINANCE COMMITTEE MEETING [DETERMINATION AND FINDINGS] (Cont'd.)
+> [p102_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle containing the white letters "MTA", followed by the text "Metropolitan Transportation Authority" in a black sans-serif font.
+[p102_c0004] Page 2 of 8
+[p102_c0005] (d) requesting that the Q line be extended; (e) expressing concern over the taking of a minority-owned commercial property; and (f) alleging issues with respect to the hearing notice. All comments have been given careful, extensive and due consideration by MTA. Moreover, MTA, MTA C&D and project staff will continue to work with property owners, tenants and other potentially affected parties as the Project moves forward in an effort to mitigate project-related impacts as much as possible.
+[p102_c0006] After due consideration of all statements made during the EDPL public hearing and comments period, MTA staff recommends Board approval of the attached Determination and Findings under the EDPL with respect to the acquisition, by eminent domain, if necessary, of the property interests described therein that are needed to facilitate the Project.
+[p102_c0007] A copy of the Determination and Findings under the EDPL is attached for the Board's consideration and approval.
+[p102_c0008] MTA staff hereby requests Board approval of the attached Determination and Findings. This action will authorize MTA staff and counsel to continue with the EDPL proceedings to acquire the required property interests described in the Determination and Findings by eminent domain, if necessary.
+[p102_c0009] _Master Page # 102 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 103
+
+### [p103_c0001] Staff Summary
+### [p103_c0002] FINANCE COMMITTEE MEETING [DETERMINATION AND FINDINGS] (Cont'd.)
+> [p103_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle containing the white letters "MTA", followed by the text "Metropolitan Transportation Authority" in a black sans-serif font.
+### [p103_c0004] Page 3 of 8
+### [p103_c0005] DETERMINATION AND FINDINGS PURSUANT TO ARTICLE 2 OF THE NEW YORK EMINENT DOMAIN PROCEDURE LAW
+### [p103_c0006] CONTRACT 2--PHASE 2 OF THE SECOND AVENUE SUBWAY PROJECT
+[p103_c0007] In accordance with Section 204 of the New York Eminent Domain Procedure Law ("EDPL"), the Board of the Metropolitan Transportation Authority ("MTA") hereby approves the acquisition of property interests described below by eminent domain, if necessary, and adopts the following statutory findings:
+[p103_c0008] 1. EDPL Public Hearing. On March 30, 2021, MTA held a virtual EDPL public hearing to inform the public and to receive the public's comments on proposed property acquisitions for Contract 2 of Phase 2 of the Second Avenue Subway Project (the "Project"). All oral comments received at the hearing and all written comments received by the end of the written submission period following the hearing have been reviewed, made part of the record, and given due consideration.
+[p103_c0009] 2. Location of Property Required for Contract 2. The location and nature of the property interests required for Contract 2, and hereby approved for acquisition, are as described on the chart below.
+[p103_c0010] At the March 30, 2021 public hearing and in letters and maps mailed to property owners and interested parties prior to the public hearing, MTA provided more detailed descriptions of the required property interests and estimated time frames when the property interests would be needed for Contract 2.
+[p103_c0011] MTA reserves the right to acquire a lesser interest in any of the properties described below, or to refrain from acquiring any of such property interests, as dictated by the needs of the Project.
+[p103_c0012] 3. Public Use, Purpose and Benefits. With respect to the Project in general, the Second Avenue Subway will be a new, two-track, approximately 8.5-mile rail line with 16 new stations extending the length of Manhattan's East Side corridor from a terminal station at 125 th Street and Lexington Avenue in Harlem to Hanover Square in Lower Manhattan. The new line will make the neighborhoods of the East Side more accessible not only to those who live there, but to visitors and workers traveling from other parts of New York City as well. Not only will the Second Avenue Subway serve existing neighborhoods on the densely developed East Side of Manhattan, it will also support emerging growth in several areas, including East Harlem, the Lower East Side and Chinatown.
+[p103_c0013] The Second Avenue Subway will provide for two subway services in the East Side corridor. The first will be a full-length Second Avenue route operating between 125 th Street and Hanover Square with 16 new stations serving this area. The second service will operate along Second Avenue from 125 th Street to 63 rd Street, where it will divert west along the existing 63 rd Street Line and terminate at the existing Lexington Avenue/63 rd Street Station; it will then join the existing Broadway Line via an existing tunnel connection and serve existing express stations along Seventh Avenue and Broadway before crossing the Manhattan Bridge to Brooklyn. Passengers traveling to Lower Manhattan on this route could transfer for local service to destinations south of Canal Street.
+[p103_c0014] As a result, passengers traveling between East Harlem and the Upper East Side will be able to reach both the eastern and western sides of Lower Manhattan. Passengers traveling to and from Brooklyn also will
+[p103_c0015] _Master Page # 103 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 104
+
+### [p104_c0001] Staff Summary
+### [p104_c0002] FINANCE COMMITTEE MEETING [DETERMINATION AND FINDINGS] (Cont'd.)
+> [p104_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle containing the white letters "MTA", followed by the text "Metropolitan Transportation Authority" in a black sans-serif font.
+[p104_c0004] Page 4 of 8
+[p104_c0005] be better served by the new service to the East Side provided both through the Broadway Line service and the anticipated free transfers to be provided at several stations, including the Grand Street B/D Line and the Second Avenue F line. Subway passengers from the Bronx will benefit from free transfers at the Lexington Avenue 4/5/6 125 th Street Station, among others.
+[p104_c0006] The Second Avenue Subway will provide more flexibility for passengers traveling along the eastern side of Manhattan, where subway service is currently limited to one line — the severely overcrowded Lexington Avenue Line — for much of the area. The new Second Avenue service thus will provide a needed alternative to the Lexington Avenue Line in the event of shutdowns to that service due to emergencies or breakdowns. Finally, with a new connection at 125 th Street, the Project will also improve regional access to the various East Side neighborhoods from the existing Metro-North Railroad.
+[p104_c0007] The Second Avenue Subway is already partially open. Currently, the northern terminal for the Q train is on Second Avenue and 96 th Street. The line runs south to 63 rd Street where it joins the existing Broadway Line. The instant project, which is the second phase of the Second Avenue Subway, will extend the Q service further north in Manhattan to 125 th Street and Lexington Avenue.
+[p104_c0008] Contract 2 is the second of four Contracts in Phase 2 of the Project. Phase 2 covers construction of the subway line from East 96 th Street, north along Second Avenue to East 125 th Street and Lexington Avenue, which will connect to the current northern terminal of the Project on Second Avenue and 96 th Street, which joins the Broadway subway line at East 63 rd Street. The work elements covered by Contract 2 are critical for the completion of the Second Avenue Subway as they consist of the construction of the launch box for the Tunnel Boring Machine(s); bored tunnels north starting at 120 th Street and Second Avenue and running to the end of the train storage tracks on 125 th Street between Malcolm X Blvd. and Adam Clayton Powell Jr. Blvd. together with construction shafts used for the excavation of the mined 125 th Street Station.
+[p104_c0009] 4. Reasons for Selecting the Location Covered by Contract 2: The property interests necessary to be acquired for Contract 2 are generally located on Second Avenue between East 119 th Street and East 120 th Street as well as along 125 th Street as the work covered by Contract 2 consists of the construction of the launch box for the Tunnel Boring Machine(s); bored tunnels north starting at 120 th Street and Second Avenue and running to the end of the train storage tracks on 125 th Street between Malcolm X Blvd. and Adam Clayton Powell Jr. Blvd. together with construction shafts used for the excavation of the mined 125 th Street Station. MTA will utilize properties to be acquired for this work as entrances and ancillary facilities that will be constructed in subsequent contracts. The Project's specific location and alignment within this area were determined after years of detailed planning, environmental review and public outreach. MTA and the Federal Transit Administration ("FTA") fully evaluated alternatives during that process, as set forth in detail in the Final Environmental Impact Statement for the Second Avenue Subway ("FEIS") issued in April 2004. In July 2004, FTA issued a Record of Decision for the Project, which signified that the project is eligible for continued federal funding and support. Additionally, MTA prepared a Supplemental Environmental Assessment ("SEA") for Phase 2 of the Project, for which FTA issued a Finding of No Significant Impact ("FONSI") in November 2018. Finally, FTA issued a Supplemental Environmental Assessment Re-Evaluation in August 2020. The FEIS, Record of Decision, SEA and Supplemental Environmental Assessment Re-Evaluation, and all evaluations and environmental findings presented in the FEIS, Record of Decision, SEA and Supplemental Environmental Assessment Re-Evaluation are hereby incorporated by reference.
+[p104_c0010] _Master Page # 104 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 105
+
+### [p105_c0001] Staff Summary
+### [p105_c0002] FINANCE COMMITTEE MEETING [DETERMINATION AND FINDINGS] (Cont'd.)
+> [p105_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle containing the white letters 'MTA', followed by the text 'Metropolitan Transportation Authority' in a black sans-serif font.
+### [p105_c0004] Page 5 of 8
+[p105_c0005] 5. General Effect of Contract 2 on the Environment and Residents of the Locality. The environmental impacts of the Project as a whole and for Phase 2 are thoroughly covered in the FEIS, the SEA and Supplemental Environmental Assessment Re-Evaluation. The general environmental impacts under Contract 2 are summarized as follows:
+[p105_c0006] Construction activities under Contract 2 will result in unavoidable increases in traffic, truck movements, dust, noise, and vibrations in the areas nearby. In the construction zone from 118 th Street to 121 st Street, approximately half of Second Avenue and some of the adjacent sidewalk will be closed at a time to facilitate construction. In the vicinity of the 125 th Street Station, there will be two staging areas for the mining and construction of the station cavern at the southeast corners of 125 th Street and Lexington Avenue, and 125 th Street and Park Avenue; each occupying the full length of the Avenue between 124 th and 125 th Streets. There will also be an extraction shaft and staging site on 125 th Street, approximately 300 feet west of Malcom X Blvd. In these areas, trucks will travel to and from the site making deliveries and removing earth and other materials. Certain construction activities could require restricting access to buildings for several hours. In most cases, safe access to buildings, including street-level businesses, will be maintained throughout the construction period, although pedestrian and vehicular access will be altered or restricted by the construction of sidewalk sheds and the removal of parking and travel lanes, and the visibility of some businesses will be reduced. To help minimize potential impacts, MTA will make every reasonable effort to maintain access; control dust, noise and vibration; screen construction activities; control rodents and pests; and minimize other disruptions, where practicable.
+[p105_c0007] Contract 2 will impact on transportation as it will require that up to half of the width of the Second Avenue roadway be closed at the construction work zone for the 120 th Street Tunnel Boring Machine Launch Box site. A minimum of four lanes will be maintained on Second Avenue for vehicular traffic adjacent to work zones by prohibiting curbside parking, pick-ups/drop-offs and deliveries, relocating bus stops and narrowing sidewalks to a minimum of 7 feet. Construction activity for Contract 2 will also increase traffic volumes on Streets and Avenues within the project area and will generate an increase in the volume of truck traffic through the project area for soil removal from and materials deliver to the construction sites.
+[p105_c0008] With respect to socio-economic impacts, businesses could be adversely affected by the disruptions associated with construction activities, such as reduced pedestrian and vehicular access, removal of parking, and reduction in the visibility of some businesses, particularly retail establishments with outdoor activities on the sidewalk, which may have to be removed when construction is occurring nearby. Though temporary, these disruptions could affect the businesses' revenue streams and could make the areas in the vicinity of construction activities less desirable locations while construction is underway. To help mitigate these impacts, MTA will promote high-quality design of sidewalk sheds, such as the addition of windows, better lighting, and good store signage around construction sites. MTA will coordinate with businesses in each phase to address access/delivery issues; and provide special loading and unloading areas on nearby side streets to locations where access will be curtailed in front of buildings during construction. In those designated side street areas, parking may be prohibited to allow more reliable deliveries and pick-ups.
+[p105_c0009] There are no open space impacts resulting from Contract 2.
+[p105_c0010] With respect to displacement and relocation, properties at 120 th Street and Second Avenue will be acquired for an ancillary facility for the 116 th Street Station, which will also be used to support the launch and operation of the tunnel boring machine(s). Another ancillary facility will be located on property at the
+[p105_c0011] _Master Page # 105 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 106
+
+### [p106_c0001] Staff Summary
+### [p106_c0002] FINANCE COMMITTEE MEETING [DETERMINATION AND FINDINGS] (Cont'd.)
+> [p106_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle containing the white letters "MTA", followed by the text "Metropolitan Transportation Authority" in a black sans-serif font.
+### [p106_c0004] Page 6 of 8
+[p106_c0005] southeast corner of Lexington Avenue and 125 th Street, which was recently demolished in preparation of a development site and is being coordinated with the MTA for the station entrance and ancillary building. The ancillary and entrance site at Park Avenue and 125 th Street is a vacant lot that will require no displacement. The displacement at the Ancillary A site on West 125 th Street consists of a single commercial retail store. This business may be eligible for relocation benefits and assistance under the Uniform Relocation Assistance and Real Property Acquisition Act ("URA"). Temporary construction easements also will be needed along portions of the tunnel route. These easements will be below ground and will not require any displacements.
+[p106_c0006] With respect to archeological resources, research that was done for the FEIS found that the area along Second Avenue and along 125 th Street was sensitive for Native American resources at a depth of up to 23 feet below the surface. MTA will perform additional work to determine whether any archaeological resources are actually present and whether those resources are significant and eligible for the State and National Register of Historic Places. Mitigation measures such as data recovery, public interpretation, or additional analysis and curation, will be developed and implemented where future work confirms the presence of significant archaeological resources (i.e., resources that are eligible for listing on the State and National Registers) that will be adversely affected by the Project.
+[p106_c0007] With respect to air quality, construction activities, including truck trips, congestion, and diversions to existing traffic, will not result in significant adverse impacts to air quality. To the maximum extent practicable, MTA's contractors will be required to follow measures to reduce construction-related impacts to air quality. These measures include dust covers for trucks, water spray misting of exposed soil areas, and using safe chemical dust suppressants to treat and control spoils at construction areas. In addition, a fence of an appropriate height will surround the construction sites to reduce wind-borne dust. To reduce emissions from construction equipment, diesel emission controls for non-road equipment will be required. These controls will require that all heavy equipment use ultra-low sulfur diesel fuel and diesel particulate filters, or other retrofit technology, in accordance with MTA policies. In addition, idling time for all diesel equipment will be limited to 3 consecutive minutes, except in certain limited circumstances.
+[p106_c0008] With respect to noise and vibration, construction activities will result in some increased noise and vibration impacts. These impacts were fully evaluated in the FEIS, and measures will be taken to mitigate the noise and vibration levels. Mining operations in rock will use drilling and controlled blasting, and except for some limited locations where vertical blasting may occur, most of the noise will be contained underground and is not expected to be discernible. Vertical blasting is blasting that must be performed to create vertical access or ventilation shafts to the street. At locations where vertical blasting will occur, noise from the blasting will be discernible to nearby residences and businesses for a very short period of time (that is, for the several-second duration of the blast) but will be limited to the hours of 7am to 10pm. In general, due to the short duration of these events, average hourly noise levels will not be significantly affected by the blasts. Noise will also be generated from ground improvement and trucking activities, slurry wall construction, spoils removal at stations and from the tunnels, and other activities. To reduce noise associated with such construction, performance standards will be established by MTA and included with contract documents that must be met by all contractors during construction.
+[p106_c0009] Prior to construction, ambient noise measurements will be taken at noise-sensitive locations. Once construction begins, monitoring stations will be established to provide MTA with the ability to monitor its contractors to ensure compliance with the performance standards. Contractors will also be required to develop noise monitoring and reporting protocols and to obtain certificates of equipment noise
+[p106_c0010] _Master Page # 106 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 107
+
+### [p107_c0001] Staff Summary
+### [p107_c0002] FINANCE COMMITTEE MEETING [DETERMINATION AND FINDINGS] (Cont'd.)
+> [p107_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle containing the white letters "MTA", followed by the text "Metropolitan Transportation Authority" in a black sans-serif font.
+[p107_c0004] Page 7 of 8
+[p107_c0005] compliance from MTA or its designee for all construction equipment employed throughout the project. Ultimately, at the time of construction, MTA's contractors will be able to select from a range of noise abatement measures to ensure that construction noise does not exceed the performance standards.
+[p107_c0006] With respect to ground borne noise and vibration, construction will result in varying degrees of ground vibration, depending on the stage of construction, the equipment and construction methods employed, and the distance from the construction to buildings and vibration-sensitive structures. Due to the close proximity of sensitive receptors, vibration levels during a large portion of the period of construction will be perceptible. MTA will implement a rigorous program of special measures to minimize potential impacts to uses (such as hospitals and other medical facilities) and structures (such as historic buildings) that are sensitive to vibration levels. Construction Protection Plans ("CPPs") will be developed for Phase 2 contracts that will include measures to protect Built and Archaeological properties prior to and during construction. The CPPs will outline the specific requirements for preconstruction surveys, vibration monitoring and thresholds, and crack and settlement monitoring to ensure that historic built properties are protected during construction.
+[p107_c0007] With respect to utility relocation impacts, utility services will be maintained throughout construction, except for planned temporary outages. Outages during the day will be limited to a few hours. If utility work requires the complete closure of the roadway and shutting off utility services for several hours, it will generally occur overnight. Residents and businesses will be notified in advance of these disruptions.
+[p107_c0008] With respect to contaminated materials impacts, there is a potential that during construction contaminated soil, soil gas, or groundwater could be uncovered, either in locations where research indicated a potential problem or in other unexpected locations. Preventive measures will be undertaken to protect the safety of the public, community residents, and construction workers, as well as transit workers and the larger environment where the preliminary investigation has indicated that construction has the potential to encounter contaminated materials.
+[p107_c0009] In sum, all practical means to avoid or minimize environmental harm from the work covered by Contract 2 will be adopted. MTA will incorporate into design, construction, and operation all mitigation measures identified in the FEIS, SEA and Supplemental Environmental Assessment Re-Evaluation, as well as any additional measures identified during final design. These measures constitute all practicable mitigation measures and will address Contact 2-related impacts to the fullest extent practicable.
+### [p107_c0010] COMMENTS
+[p107_c0011] At the public hearing, oral comments were received from the public, and it was stated that written comments would be accepted until the close of business on April 13, 2021.
+[p107_c0012] The following summarizes the comments received: (a) that the construction will cause an adverse impact on parking; (b) expressing concern as to the amount of just compensation that will be paid; (c) requesting that a certain development site not be taken by eminent domain; (d) requesting that the Q line be extended; (e) expressing concern over the taking of a minority-owned commercial property; and (f) alleging issues with respect to the hearing notice.
+[p107_c0013] All comments have been given careful, extensive and due consideration by MTA.
+[p107_c0014] _Master Page # 107 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 108
+
+### [p108_c0001] Staff Summary
+### [p108_c0002] FINANCE COMMITTEE MEETING [DETERMINATION AND FINDINGS] (Cont'd.)
+### [p108_c0003] Page 8 of 8
+### [p108_c0004] DETERMINATION
+[p108_c0005] Based on due consideration of the record and the foregoing findings, it is determined that the MTA should exercise its power of eminent domain to acquire the property interests set forth in the chart below in order to promote and permit the purposes of the Project to be achieved.
+[p108_c0006] Copies of this Determination and Findings are available and will be forwarded without cost and upon request, by writing to:
+[p108_c0007] Joseph O'Donnell, Director of Public Affairs MTA Construction & Development 2 Broadway, D8135, New York, N.Y.10004
+[p108_c0008] ANYONE SEEKING JUDICIAL REVIEW OF THE ABOVE DETERMINATION AND FINDINGS MUST COMMENCE A LEGAL PROCEEDING IN ACCORDANCE WITH EDPL § 207 NO LATER THAN 30 DAYS AFTER MTA COMPLETES ITS TWO-DAY PUBLICATION OF THIS DOCUMENT, OR A SYNOPSIS THEREOF. UNDER EDPL § 207 AND § 208, THE EXCLUSIVE VENUE FOR SUCH PROCEEDING IS THE APPELLATE DIVISION, FIRST JUDICIAL DEPARTMENT, 27 MADISON AVENUE, NEW YORK, NEW YORK 10010.
+[p108_c0009] Acquisition of fee interests and permanent and temporary easements for construction of the launch box for the Tunnel Boring Machine(s), bored tunnel, cavern mining and future station entrance and ancillary facilities.
+[p108_c0010]
+
+```text
+Block Lot(s) Type of Interest Property Address 1909 44 Permanent Full Taking 120 West 125th Street, NY, NY 1773 1 67 Permanent Full Taking 1801-1805 Park Avenue, NY, NY 100-110 East 125th Street, NY, NY/ 101-109 East 124th Street, NY, NY 1773 69 Permanent Full Taking 1815 Park Avenue, NY, NY 1773 Part of Lot 20 Permanent Full Taking Temporary Easement 142-168 East 125th St/ 2051-2061 Lexington Avenue, NY, NY 1773 Part of Lot 27 Permanent Full Taking Temporary Easement 149-167 East 124th Street, NY, NY 1773 Part of Lot 27 Permanent Partial Taking & Permanent Subsurface Easement 149-167 East 124th Street, NY, NY 1784 23 Permanent Full Taking 2327 Second Avenue, NY, NY 1784 122 Permanent Full Taking 2325 Second Avenue, NY, NY 1784 24 Permanent Full Taking 2329 Second Avenue, NY, NY 1784 25 Permanent Full Taking 2331 Second Avenue, NY, NY 1784 26 Permanent Full Taking 2333 Second Avenue, NY, NY 1784 27 Permanent Full Taking 2335 Second Avenue, NY, NY 1784 28 Permanent Full Taking 2337 Second Avenue, NY, NY 1784 120 Permanent Full Taking N/A East 119th Street, NY, NY 1784 128 Permanent Full Taking 246 East 120th Street, NY, NY
+```
+[p108_c0011] _Master Page # 108 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 109
+
+### [p109_c0001] INFORMATION ITEMS
+[p109_c0002] _Master Page # 109 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 110
+
+### [p110_c0001] Memorandum
+> [p110_c0002] The logo for the Metropolitan Transportation Authority (MTA) is a blue circle with the letters "MTA" in white.
+### [p110_c0003] Metropolitan Transportation Authority
+[p110_c0004] State of New York
+[p110_c0005] Date June 23, 2021 To Members of the Finance Committee From John N. Lieber, Chief Development Officer Re Report on Agreements Entered into Directly by the Real Estate Department via the RFP or negotiation process with tenants in good standing or through the RFP process when 3 or more proposals have been received from responsible proposers for a standard retail location
+[p110_c0006] Attached is a listing of agreements entered into directly by the Real Estate Department during preceding months, pursuant to the Board's resolutions dated November 13, 2013 (Real Estate Policy #33).
+[p110_c0007] For each such agreement entered into pursuant to Real Estate Policy #33, MTA Real Estate must have received at least three responsive bids from responsible proposers, and must have entered into agreement with the responsible proposer which offered the highest guaranteed rent, on a present value basis.
+[p110_c0008] _Master Page # 110 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 111
+
+### [p111_c0001] REPORT ON AGREEMENTS ENTERED INTO DIRECTLY BY THE REAL ESTATE DEPARTMENT PURSUANT TO BOARD POLICY
+[p111_c0002] June 8 th , 2021
+[p111_c0003]
+
+```text
+Agency/Project Manager Renewal/RFP Generated (Lessee or Licensee) Location/Use Term Rental Annual Increase Size/Weekday Ridership Price/SF MTA & MNR/ David Florio RFP Cipriani Steakhouse Grand Central Terminal/Restaurant 10 (Rent or Compensation) Year PSF 1 $850,500 -- 1 $98 2 $850,500 0% 2 $98 3 $867,510 2% 3 $100 4 $884,860 2% 4 $102 5 $902,557 2% 5 $104 6 $920,609 2% 6 $107 7 $939,021 2% 7 $109 8 $957,801 2% 8 $111 9 $976,957 2% 9 $113 10 $996,496 2% 10 $115 List of all proposals: Cipriani Steakhouse, Single Cut, In Good Hospitality (Parker Quinn) Proposer name: NPV @ 7% discount rate: Cipriani Steakhouse $6,358,064.99 Single Cut $6,228,781.24 In Good Hospitality $4,868,971.32
+```
+[p111_c0004] _Master Page # 111 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 112
+
+### [p112_c0001] Memorandum
+> [p112_c0002] The logo for the Metropolitan Transportation Authority (MTA) is a blue circle with the letters "MTA" in white.
+### [p112_c0003] Metropolitan Transportation Authority
+[p112_c0004] State of New York
+[p112_c0005] Date June 23, 2021 To Members of the Finance Committee From John N. Lieber, Chief Development Officer Re Status of Month-to-Month Licenses for Passenger Amenities
+[p112_c0006] In June 1988 and later modified November 12, 2013, the MTA Board adopted policy #9, which allows the Real Estate Department to enter into month-to-month agreements for "passenger service oriented concessions without individual Committee or Board approval". Attached is a status report of month-to-month agreements, which were executed pursuant to the policy.
+[p112_c0007] _Master Page # 112 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 113
+
+### [p113_c0001] Staff Summary
+### [p113_c0002] Metropolitan Transportation Authority
+### [p113_c0003] Page 1 of 1
+[p113_c0004]
+
+```text
+Subject MONTH TO MONTH LICENSE AGREEMENT Department REAL ESTATE Department Head Name JOHN N. LIEBER Department Head Signature Project Manager Name ANTHONY CAMPBELL/ROBERT GOLDBERG
+```
+[p113_c0005]
+
+```text
+Date JUNE 23, 2021 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p113_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 6/23/21 X
+```
+[p113_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p113_c0008] AGENCY: MTA Long Island Rail Road (“LIRR”) LICENSEE: Hudson Group (HG) Retail, LLC/DBA Hudson News (“Hudson”) LOCATION: Penn Station ACTIVITY: License Agreement TERM: Month to Month SPACE: Up to 4 kiosks approximately 150 s/f each. COMPENSATION: Ten percent (10%) of all Gross Sales at the Licensed Area for each month or partial month that the Agreement is in force and effect.
+### [p113_c0009] COMMENTS:
+[p113_c0010] LIRR’s Penn Station is undergoing major renovations. As part of the project, all retail in the main corridor was eliminated as of February 2021. To provide passenger amenities during construction, MTA/RE has partnered with Hudson to provide up to 4, temporary pop-up kiosks that will provide customers with retail products such as hot and cold beverages, including beer, wine and alcohol, pre-packaged foods, snacks, newspapers and other items typically sold at retail newsstand and coffee concessions throughout the transportation environment.
+[p113_c0011] This transaction has been entered into in accordance with the Policy on Month-to-Month License for Passenger Amenities, dated June 9, 1988 (Real Estate Department Policy #9).
+[p113_c0012] _Master Page # 113 of 114 - Finance Committee Meeting 6/23/2021_
+
+## Page 114
+
+### [p114_c0001] Staff Summary
+### [p114_c0002] Metropolitan Transportation Authority
+### [p114_c0003] Page 1 of 1
+[p114_c0004]
+
+```text
+Subject ENTRY PERMIT AT QUEENS MIDTOWN TUNNEL Department REAL ESTATE Department Head Name JOHN N. LIEBER Department Head Signature Project Manager Name SELINA M. STORZ
+```
+[p114_c0005]
+
+```text
+Date JUNE 23, 2021 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p114_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 6/23/21 X
+```
+[p114_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p114_c0008] PERMITTOR: MTA Bridges and Tunnels ("TBTA") PERMITTEE: 214 E 35 LLC LOCATION: Right lane on Tunnel Exit Street leading out of the Queens Midtown Tunnel, between East 34 th and East 35 th Streets, part of Manhattan Tax Block 915, Lot 9. ACTIVITY: Entry permit ("Permit") for the closure of the right lane of traffic and the installation, maintenance, and subsequent removal of a sidewalk/street shed. Including netting over the TBTA fence and sidewalk for pedestrian protection and associated Maintenance and Protection of Traffic equipment for the vertical and horizontal enlargement of an existing 4-story building on the corner of East 25 th Street and Tunnel Exit Street. TERM: 8 to 10 weeks. The Term of this Permit may be extended on a week-to-week basis, upon the written request by Permittee and approval by Permittor. CONSIDERATION: $10,000.00 for the initial 8-week term, and $2,500.00 per week for any additional approved time.
+### [p114_c0009] COMMENTS:
+[p114_c0010] Pursuant to the Board-approved Real Estate Department Policy permitting short-term access on TBTA property, an entry permit was granted to Permittee, for the above-described Activity. This Permit was granted subsequent to the review and approval of TBTA Engineering and Construction.
+[p114_c0011] MTA Legal approved the Permit as to form. Permittee provided appropriate insurance coverages and indemnifications as prescribed by MTA Risk Management.
+[p114_c0012] _Master Page # 114 of 114 - Finance Committee Meeting 6/23/2021_

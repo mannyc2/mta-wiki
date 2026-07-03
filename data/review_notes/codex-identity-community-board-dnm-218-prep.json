@@ -1,0 +1,457 @@
+{
+  "note_id": "codex-identity-community-board-dnm-218-prep",
+  "batch": "identity-community-board-dnm-218",
+  "created_at": "2026-06-23T13:20:30Z",
+  "author": "codex",
+  "scope": {
+    "operation": "prepare_do_not_merge_suppressions_only",
+    "allowed_global_kinds": [
+      "entity"
+    ],
+    "issue_type": "duplicate_global_identity",
+    "selection_note": "Focused community-board duplicate guard prep for generic numbered Community Board identity-key collisions where current canonical records show different borough-scoped community boards.",
+    "write_limit": "Exactly one artifact was written: data/review_notes/codex-identity-community-board-dnm-218-prep.json. No merges.json, do-not-merge.json, LOG.md, submissions, canonical JSONL, canonical.db, materialized outputs, export outputs, validate outputs, or wiki files were edited.",
+    "provider_backed_commands_run": false,
+    "generated_output_commands_run": false,
+    "excluded_if_already_direct_dnm": true,
+    "excluded_if_not_borough_scoped": true
+  },
+  "deterministic_inspection": [
+    {
+      "purpose": "Read current canonical community-board entity records and their evidence refs.",
+      "inputs": [
+        "data/canonical/entities.jsonl",
+        "raw/sources/*/metadata.json",
+        "raw/sources/*/blocks.jsonl"
+      ]
+    },
+    {
+      "purpose": "Read current do-not-merge overrides to avoid proposing duplicate direct rows.",
+      "inputs": [
+        "data/identity-overrides/do-not-merge.json"
+      ],
+      "result": "Existing related DNM rows already cover several narrow or non-Manhattan community-board collisions, including Bronx CB4/CB5 against older one-source Manhattan CB4/CB5 records; this artifact proposes only direct rows absent from current overrides."
+    },
+    {
+      "purpose": "Read prior community-board identity prep notes.",
+      "inputs": [
+        "data/review_notes/codex-identity-batch082-prep.json",
+        "data/review_notes/codex-identity-batch165-prep.json",
+        "data/review_notes/codex-identity-batch213-prep.json",
+        "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl"
+      ],
+      "result": "Prior notes support borough-scoped community-board handling: same-borough board records may merge when evidence aligns, while same-number boards across boroughs should receive DNM guards."
+    },
+    {
+      "purpose": "Read-only identity-key scan over current canonical entity JSONL using the deterministic identityKeysForRecord function, without invoking validate.",
+      "result": "Selected five direct pairs currently share generic Community Board keys and have no direct current DNM row."
+    }
+  ],
+  "prepared_count": 5,
+  "proposed_do_not_merge_pairs": [
+    {
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_community-board-4-bronx-2013",
+        "entity_manhattan-community-board-4"
+      ],
+      "identity_keys": [
+        "entity_community-board-4"
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_community-board-4-bronx-2013",
+          "canonical_summary": "display_name 'Community Board 4 (Bronx)'; payload description 'Community Board 4 in the Bronx'; aliases include entity_bronx-community-board-4 and entity_community-board-4.",
+          "evidence_refs": [
+            {
+              "evidence_id": "2013_02_sbs_webster_bx_cb4#p001_c0003",
+              "block_text": "Presentation to Community Board 4 | February 6, 2013"
+            },
+            {
+              "evidence_id": "2013_02_sbs_webster_bx_cb4#p002_c0002",
+              "block_text": "CB 4 design details"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_manhattan-community-board-4",
+          "canonical_summary": "display_name 'Manhattan Community Board 4'; payload entity_name 'Manhattan Community Board 4'; aliases include entity_community-board-4 and entity_community-board-4-manhattan.",
+          "evidence_refs": [
+            {
+              "evidence_id": "120418_brt_cb4_34th_street#p001_c0001",
+              "block_text": "34 th Street SBS Presentation to Manhattan CB 4 Transportation Committee"
+            },
+            {
+              "evidence_id": "100503_brt_cb5_34th_street_transitway#p003_c0002",
+              "block_text": "12/17/2009 Manhattan CB4 Transportation Committee"
+            }
+          ]
+        }
+      ],
+      "reason": "Shared generic Community Board 4 key but different borough-scoped boards: Bronx CB4 versus Manhattan CB4. These are distinct real-world community boards and should not merge.",
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_direct_do_not_merge_row_absent": true,
+        "shares_generic_numbered_community_board_key": true,
+        "borough_scopes_differ": [
+          "Bronx",
+          "Manhattan"
+        ],
+        "confidence": "high"
+      },
+      "proposed_durable_mutation_row": {
+        "record_ids": [
+          "entity_community-board-4-bronx-2013",
+          "entity_manhattan-community-board-4"
+        ],
+        "reason": "Shared generic Community Board 4 key but different borough/scope: Bronx versus Manhattan.",
+        "source_decision": "data/review_notes/codex-identity-community-board-dnm-218-prep.json#identity-community-board-dnm-218",
+        "reviewed_at": "2026-06-23T13:20:30Z"
+      }
+    },
+    {
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_bronx-cb5-2012-11-webster",
+        "entity_manhattan-community-board-5"
+      ],
+      "identity_keys": [
+        "entity_community-board-5"
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_bronx-cb5-2012-11-webster",
+          "canonical_summary": "display_name 'Community Board 5'; payload description 'Bronx community board'; payload extra_fields.borough 'Bronx'; aliases include entity_bronx-community-board-5 and entity_community-board-5.",
+          "evidence_refs": [
+            {
+              "evidence_id": "2013_03_sbs_webster_bx_cb5#p001_c0003",
+              "block_text": "Presentation to Community Board 5 | March 21, 2013"
+            },
+            {
+              "evidence_id": "webster_cross_bronx_cb5_may2019#p001_c0003",
+              "block_text": "Bronx Community Board 5 | May 22, 2019"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_manhattan-community-board-5",
+          "canonical_summary": "display_name 'Manhattan Community Board 5'; payload entity_name 'Manhattan Community Board 5'; payload extra_fields.borough 'Manhattan'; aliases include entity_community-board-5 and entity_community-board-5-manhattan.",
+          "evidence_refs": [
+            {
+              "evidence_id": "080421_brt_cb5_34th_street_fullboardpresentation#p001_c0001",
+              "block_text": "34 th Street Bus Priority Initiatives Manhattan Community Board 5 April 21, 2008"
+            },
+            {
+              "evidence_id": "100503_brt_cb5_34th_street_transitway#p003_c0002",
+              "block_text": "4/21/2008 Manhattan CB 5"
+            }
+          ]
+        }
+      ],
+      "reason": "Shared generic Community Board 5 key but different borough-scoped boards: Bronx CB5 versus Manhattan CB5. These are distinct real-world community boards and should not merge.",
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_direct_do_not_merge_row_absent": true,
+        "shares_generic_numbered_community_board_key": true,
+        "borough_scopes_differ": [
+          "Bronx",
+          "Manhattan"
+        ],
+        "confidence": "high"
+      },
+      "proposed_durable_mutation_row": {
+        "record_ids": [
+          "entity_bronx-cb5-2012-11-webster",
+          "entity_manhattan-community-board-5"
+        ],
+        "reason": "Shared generic Community Board 5 key but different borough/scope: Bronx versus Manhattan.",
+        "source_decision": "data/review_notes/codex-identity-community-board-dnm-218-prep.json#identity-community-board-dnm-218",
+        "reviewed_at": "2026-06-23T13:20:30Z"
+      }
+    },
+    {
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_bronx-cb6-2012-11-webster",
+        "entity_manhattan-community-board-6"
+      ],
+      "identity_keys": [
+        "entity_community-board-6",
+        "entity_community-board-6-transportation-committee"
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_bronx-cb6-2012-11-webster",
+          "canonical_summary": "display_name 'Community Board 6'; payload description 'Bronx community board'; payload organization 'Bronx Community Board 6'; aliases include entity_bronx-community-board-6 and entity_community-board-6.",
+          "evidence_refs": [
+            {
+              "evidence_id": "2013_03_sbs_webster_bx_cb6#p001_c0003",
+              "block_text": "Presentation to Community Board 6 | March 7, 2013"
+            },
+            {
+              "evidence_id": "tremont_ave_bus_priority_cb6_jun2024#p001_c0002",
+              "block_text": "Draft Proposal \u2013 Bronx Community Board 6"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_manhattan-community-board-6",
+          "canonical_summary": "display_name 'Manhattan Community Board 6'; payload entity_name 'Manhattan Community Board 6'; payload extra_fields.borough 'Manhattan'; aliases include entity_community-board-6 and entity_community-board-6-manhattan.",
+          "evidence_refs": [
+            {
+              "evidence_id": "120507_brt_cb6_34th_street#p001_c0001",
+              "block_text": "34 th Street SBS Presentation to Manhattan CB 6 Transportation Committee"
+            },
+            {
+              "evidence_id": "100503_brt_cb5_34th_street_transitway#p003_c0002",
+              "block_text": "3/3/2008 Manhattan CB 6"
+            }
+          ]
+        }
+      ],
+      "reason": "Shared generic Community Board 6 and Transportation Committee keys but different borough-scoped boards: Bronx CB6 versus Manhattan CB6. These are distinct real-world community boards and should not merge.",
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_direct_do_not_merge_row_absent": true,
+        "shares_generic_numbered_community_board_key": true,
+        "borough_scopes_differ": [
+          "Bronx",
+          "Manhattan"
+        ],
+        "confidence": "high"
+      },
+      "proposed_durable_mutation_row": {
+        "record_ids": [
+          "entity_bronx-cb6-2012-11-webster",
+          "entity_manhattan-community-board-6"
+        ],
+        "reason": "Shared generic Community Board 6 key but different borough/scope: Bronx versus Manhattan.",
+        "source_decision": "data/review_notes/codex-identity-community-board-dnm-218-prep.json#identity-community-board-dnm-218",
+        "reviewed_at": "2026-06-23T13:20:30Z"
+      }
+    },
+    {
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_bronx-cb7-2012-11-webster",
+        "entity_manhattan-community-board-7"
+      ],
+      "identity_keys": [
+        "entity_community-board-7"
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_bronx-cb7-2012-11-webster",
+          "canonical_summary": "display_name 'Community Board 7'; payload description 'Bronx community board'; payload extra_fields.borough 'Bronx'; aliases include entity_bronx-community-board-7 and entity_community-board-7.",
+          "evidence_refs": [
+            {
+              "evidence_id": "2013_03_sbs_webster_bx_cb7#p001_c0003",
+              "block_text": "Presentation to Community Board 7 | March 14, 2013"
+            },
+            {
+              "evidence_id": "2012_10_brt_webster_cac3_meeting_summary#p005_c0003",
+              "block_text": "Community Board 7 (2 participants)"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_manhattan-community-board-7",
+          "canonical_summary": "display_name 'Manhattan Community Board 7'; payload entity_name 'Manhattan Community Board 7'; description 'Transportation Committee of Manhattan Community Board 7'; aliases include entity_community-board-7 and entity_community-board-7-manhattan.",
+          "evidence_refs": [
+            {
+              "evidence_id": "m86_sbs_progress_report_2017#p003_c0013",
+              "block_text": "Transportation Committees of Manhattan Community Boards 7 and 8"
+            },
+            {
+              "evidence_id": "m86_sbs_progress_report_2017#p003_c0015",
+              "block_text": "Community Board 7 \u2013 October 14, 2014"
+            }
+          ]
+        }
+      ],
+      "reason": "Shared generic Community Board 7 key but different borough-scoped boards: Bronx CB7 versus Manhattan CB7. These are distinct real-world community boards and should not merge.",
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_direct_do_not_merge_row_absent": true,
+        "shares_generic_numbered_community_board_key": true,
+        "borough_scopes_differ": [
+          "Bronx",
+          "Manhattan"
+        ],
+        "confidence": "high"
+      },
+      "proposed_durable_mutation_row": {
+        "record_ids": [
+          "entity_bronx-cb7-2012-11-webster",
+          "entity_manhattan-community-board-7"
+        ],
+        "reason": "Shared generic Community Board 7 key but different borough/scope: Bronx versus Manhattan.",
+        "source_decision": "data/review_notes/codex-identity-community-board-dnm-218-prep.json#identity-community-board-dnm-218",
+        "reviewed_at": "2026-06-23T13:20:30Z"
+      }
+    },
+    {
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_community-board-8-brooklyn",
+        "entity_manhattan-community-board-8"
+      ],
+      "identity_keys": [
+        "entity_community-board-8",
+        "entity_community-board-8-transportation-committee"
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_community-board-8-brooklyn",
+          "canonical_summary": "display_name 'Community Board 8, Brooklyn'; payload description 'Brooklyn Community Board 8'; payload extra_fields.borough 'Brooklyn'; aliases include entity_brooklyn-community-board-8 and entity_community-board-8.",
+          "evidence_refs": [
+            {
+              "evidence_id": "2013_09_12_sbs_utica_cb8#p001_c0004",
+              "block_text": "Brooklyn CB 8, September 12, 2013"
+            },
+            {
+              "evidence_id": "flatbush_ave_cb8_jun2025#p001_c0002",
+              "block_text": "Presentation to Community Board 8 Environment, Sanitation and Transportation Committee"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_manhattan-community-board-8",
+          "canonical_summary": "display_name 'Manhattan Community Board 8'; payload entity_name 'Manhattan Community Board 8'; description 'Transportation Committee of Manhattan Community Board 8'; aliases include entity_community-board-8 and entity_community-board-8-manhattan.",
+          "evidence_refs": [
+            {
+              "evidence_id": "m86_sbs_progress_report_2017#p003_c0013",
+              "block_text": "Transportation Committees of Manhattan Community Boards 7 and 8"
+            },
+            {
+              "evidence_id": "brt_m79_cb8_mar2017#p001_c0002",
+              "block_text": "Manhattan Community Board 8 | March 1, 2017"
+            }
+          ]
+        }
+      ],
+      "reason": "Shared generic Community Board 8 and Transportation Committee keys but different borough-scoped boards: Brooklyn CB8 versus Manhattan CB8. These are distinct real-world community boards and should not merge.",
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_direct_do_not_merge_row_absent": true,
+        "shares_generic_numbered_community_board_key": true,
+        "borough_scopes_differ": [
+          "Brooklyn",
+          "Manhattan"
+        ],
+        "confidence": "high"
+      },
+      "proposed_durable_mutation_row": {
+        "record_ids": [
+          "entity_community-board-8-brooklyn",
+          "entity_manhattan-community-board-8"
+        ],
+        "reason": "Shared generic Community Board 8 key but different borough/scope: Brooklyn versus Manhattan.",
+        "source_decision": "data/review_notes/codex-identity-community-board-dnm-218-prep.json#identity-community-board-dnm-218",
+        "reviewed_at": "2026-06-23T13:20:30Z"
+      }
+    }
+  ],
+  "proposed_durable_mutation": {
+    "path": "data/identity-overrides/do-not-merge.json",
+    "operation": "append_to_pairs_entity",
+    "rows": [
+      {
+        "record_ids": [
+          "entity_community-board-4-bronx-2013",
+          "entity_manhattan-community-board-4"
+        ],
+        "reason": "Shared generic Community Board 4 key but different borough/scope: Bronx versus Manhattan.",
+        "source_decision": "data/review_notes/codex-identity-community-board-dnm-218-prep.json#identity-community-board-dnm-218",
+        "reviewed_at": "2026-06-23T13:20:30Z"
+      },
+      {
+        "record_ids": [
+          "entity_bronx-cb5-2012-11-webster",
+          "entity_manhattan-community-board-5"
+        ],
+        "reason": "Shared generic Community Board 5 key but different borough/scope: Bronx versus Manhattan.",
+        "source_decision": "data/review_notes/codex-identity-community-board-dnm-218-prep.json#identity-community-board-dnm-218",
+        "reviewed_at": "2026-06-23T13:20:30Z"
+      },
+      {
+        "record_ids": [
+          "entity_bronx-cb6-2012-11-webster",
+          "entity_manhattan-community-board-6"
+        ],
+        "reason": "Shared generic Community Board 6 key but different borough/scope: Bronx versus Manhattan.",
+        "source_decision": "data/review_notes/codex-identity-community-board-dnm-218-prep.json#identity-community-board-dnm-218",
+        "reviewed_at": "2026-06-23T13:20:30Z"
+      },
+      {
+        "record_ids": [
+          "entity_bronx-cb7-2012-11-webster",
+          "entity_manhattan-community-board-7"
+        ],
+        "reason": "Shared generic Community Board 7 key but different borough/scope: Bronx versus Manhattan.",
+        "source_decision": "data/review_notes/codex-identity-community-board-dnm-218-prep.json#identity-community-board-dnm-218",
+        "reviewed_at": "2026-06-23T13:20:30Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-board-8-brooklyn",
+          "entity_manhattan-community-board-8"
+        ],
+        "reason": "Shared generic Community Board 8 key but different borough/scope: Brooklyn versus Manhattan.",
+        "source_decision": "data/review_notes/codex-identity-community-board-dnm-218-prep.json#identity-community-board-dnm-218",
+        "reviewed_at": "2026-06-23T13:20:30Z"
+      }
+    ]
+  },
+  "already_guarded_related_pairs_not_reproposed": [
+    {
+      "record_ids": [
+        "entity_community-board-4-bronx-2013",
+        "entity_community-board-4-manhattan-20110118"
+      ],
+      "reason": "Direct DNM already present in current data/identity-overrides/do-not-merge.json."
+    },
+    {
+      "record_ids": [
+        "entity_bronx-cb5-2012-11-webster",
+        "entity_community-board-5-manhattan-20110118"
+      ],
+      "reason": "Direct DNM already present in current data/identity-overrides/do-not-merge.json."
+    },
+    {
+      "record_ids": [
+        "entity_bronx-cb6-2012-11-webster",
+        "entity_brooklyn-cb6-flatbush-ave-oct2025"
+      ],
+      "reason": "Direct DNM already present in current data/identity-overrides/do-not-merge.json."
+    },
+    {
+      "record_ids": [
+        "entity_bronx-cb7-2012-11-webster",
+        "entity_brt-flushing-main-st-aug2018-cb7-queens"
+      ],
+      "reason": "Direct DNM already present in current data/identity-overrides/do-not-merge.json."
+    }
+  ],
+  "counts": {
+    "prepared_do_not_merge_rows": 5,
+    "global_kind_counts": {
+      "entity": 5
+    },
+    "already_guarded_related_pairs_not_reproposed": 4,
+    "files_written": 1
+  },
+  "commands_avoided": [
+    "provider-backed commands",
+    "canonicalize*",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "write",
+    "ask",
+    "schema commands",
+    "profile/provider commands",
+    "materialize",
+    "validate",
+    "export-jsonl"
+  ]
+}

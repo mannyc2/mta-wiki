@@ -1,0 +1,143 @@
+{
+  "run_id": "2026-06-08T23-16-38-134Z_schema-proposal-run",
+  "generated_at": "2026-06-08T23:16:38.134Z",
+  "dry_run": false,
+  "profile_name": "deepseek-pro",
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "concurrency": 3,
+  "audit_manifest": "data/identity-review/schema-audit/latest.json",
+  "kind_count": 12,
+  "completed": 12,
+  "skipped": 0,
+  "failed": 0,
+  "invalid": 0,
+  "paths": {
+    "proposals_dir": "data/identity-review/llm-suggestions/schema-proposals",
+    "runs_dir": "data/identity-review/llm-suggestions/schema-proposals/runs",
+    "manifest": "data/identity-review/llm-suggestions/schema-proposals/runs/2026-06-08T23-16-38-134Z_schema-proposal-run.json",
+    "latest": "data/identity-review/llm-suggestions/schema-proposals/runs/latest.json"
+  },
+  "results": [
+    {
+      "observation_kind": "metric_claim",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/metric_claim.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-16-38-134Z_3574799-63798cdc_schema-proposal-run_metric-claim",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-16-38-135Z_2026-06-08T23-16-38-134Z_3574799-63798cdc_schema-proposal-run_metric-claim.jsonl"
+    },
+    {
+      "observation_kind": "claim",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/claim.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-16-38-135Z_3574799-8842975f_schema-proposal-run_claim",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-16-38-135Z_2026-06-08T23-16-38-135Z_3574799-8842975f_schema-proposal-run_claim.jsonl"
+    },
+    {
+      "observation_kind": "relation",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/relation.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-16-38-135Z_3574799-dd1c7591_schema-proposal-run_relation",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-16-38-135Z_2026-06-08T23-16-38-135Z_3574799-dd1c7591_schema-proposal-run_relation.jsonl"
+    },
+    {
+      "observation_kind": "route",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/route.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-17-09-429Z_3574799-a2b2a43b_schema-proposal-run_route",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-17-09-429Z_2026-06-08T23-17-09-429Z_3574799-a2b2a43b_schema-proposal-run_route.jsonl"
+    },
+    {
+      "observation_kind": "event",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/event.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-18-04-194Z_3574799-ead9543d_schema-proposal-run_event",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-18-04-194Z_2026-06-08T23-18-04-194Z_3574799-ead9543d_schema-proposal-run_event.jsonl"
+    },
+    {
+      "observation_kind": "entity",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/entity.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-18-07-523Z_3574799-d151e566_schema-proposal-run_entity",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-18-07-523Z_2026-06-08T23-18-07-523Z_3574799-d151e566_schema-proposal-run_entity.jsonl"
+    },
+    {
+      "observation_kind": "table",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/table.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-19-07-567Z_3574799-9415a035_schema-proposal-run_table",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-19-07-567Z_2026-06-08T23-19-07-567Z_3574799-9415a035_schema-proposal-run_table.jsonl"
+    },
+    {
+      "observation_kind": "treatment_component",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/treatment_component.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-19-09-449Z_3574799-18546016_schema-proposal-run_treatment-component",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-19-09-449Z_2026-06-08T23-19-09-449Z_3574799-18546016_schema-proposal-run_treatment-component.jsonl"
+    },
+    {
+      "observation_kind": "project",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/project.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-19-16-196Z_3574799-b6f0add7_schema-proposal-run_project",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-19-16-196Z_2026-06-08T23-19-16-196Z_3574799-b6f0add7_schema-proposal-run_project.jsonl"
+    },
+    {
+      "observation_kind": "corridor",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/corridor.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-20-28-229Z_3574799-1b5c7d2f_schema-proposal-run_corridor",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-20-28-230Z_2026-06-08T23-20-28-229Z_3574799-1b5c7d2f_schema-proposal-run_corridor.jsonl"
+    },
+    {
+      "observation_kind": "source",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/source.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-20-40-938Z_3574799-b6bda888_schema-proposal-run_source",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-20-40-938Z_2026-06-08T23-20-40-938Z_3574799-b6bda888_schema-proposal-run_source.jsonl"
+    },
+    {
+      "observation_kind": "source_gap",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/source_gap.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-20-52-710Z_3574799-46e66bfc_schema-proposal-run_source-gap",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-20-52-719Z_2026-06-08T23-20-52-710Z_3574799-46e66bfc_schema-proposal-run_source-gap.jsonl"
+    }
+  ]
+}

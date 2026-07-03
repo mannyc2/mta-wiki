@@ -1,0 +1,16 @@
+{
+  "run_id": "2026-06-10T22-56-13-345Z_1976810-5bb38f51_ingest_201109-brt-hylan-introductory-info",
+  "generated_at": "2026-06-11T01:43:19.323Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "reviewed_decision_count": 15,
+  "pass_count": 10,
+  "fail_count": 5,
+  "unsure_count": 0,
+  "paths": {
+    "verdicts_jsonl": "data/canonicalize/2026-06-10T22-56-13-345Z_1976810-5bb38f51_ingest_201109-brt-hylan-introductory-info/verdicts.jsonl",
+    "manifest": "data/canonicalize/2026-06-10T22-56-13-345Z_1976810-5bb38f51_ingest_201109-brt-hylan-introductory-info/review-manifest.json"
+  }
+}

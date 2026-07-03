@@ -1,0 +1,123 @@
+{
+  "run_id": "2026-06-10T23-00-19-532Z_1976810-da84df67_ingest_201111-1st2nd-progress-report",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:13:59.101Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "nyct-identity-201111",
+        "local_observation_id": "entity_nyct_201111_progress_report",
+        "decision": "new",
+        "proposed_relations": [
+          {
+            "relation_kind": "partnered_with",
+            "subject_id": "entity_mta-nyct",
+            "object_id": "entity_nyc-dot",
+            "description": "NYCT and NYCDOT partnered to implement M15 Select Bus Service",
+            "evidence_refs": [
+              {
+                "source_id": "201111_1st2nd_progress_report",
+                "block_id": "p003_c0003",
+                "source_quote": "MTA New York City Transit (NYCT) and New York City Department of Transportation (NYCDOT) implemented the M15 Select Bus Service (SBS) along this route."
+              }
+            ]
+          },
+          {
+            "relation_kind": "partnered_with",
+            "subject_id": "entity_mta-nyct",
+            "object_id": "entity_ny-sdod-lga-aa",
+            "description": "NYCT participated with NYSDOT in joint BRT study initiatives launched in 2004",
+            "evidence_refs": [
+              {
+                "source_id": "201111_1st2nd_progress_report",
+                "block_id": "p005_c0004",
+                "source_quote": "NYCDOT, NYCT, and the New York State Department of Transportation (NYSDOT) launched a series of initiatives to reverse the decline in bus speeds"
+              }
+            ]
+          }
+        ],
+        "rationale": "Observation label 'MTA New York City Transit (NYCT)' matches registry record entity_mta-nyct with same entity_name and entity_type 'agency'. Base record_id entity_mta-nyct is the correct canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_1st2nd_progress_report",
+            "block_id": "p003_c0003",
+            "source_quote": "MTA New York City Transit (NYCT) and New York City Department of Transportation (NYCDOT) implemented the M15 Select Bus Service (SBS) along this route."
+          }
+        ]
+      },
+      {
+        "decision_id": "nycdot-identity-201111",
+        "local_observation_id": "entity_nycdot_201111_progress_report",
+        "decision": "new",
+        "proposed_relations": [
+          {
+            "relation_kind": "partnered_with",
+            "subject_id": "entity_nyc-dot",
+            "object_id": "entity_mta-nyct",
+            "description": "NYCDOT partnered with NYCT to implement M15 Select Bus Service",
+            "evidence_refs": [
+              {
+                "source_id": "201111_1st2nd_progress_report",
+                "block_id": "p003_c0003",
+                "source_quote": "MTA New York City Transit (NYCT) and New York City Department of Transportation (NYCDOT) implemented the M15 Select Bus Service (SBS) along this route."
+              }
+            ]
+          }
+        ],
+        "rationale": "Observation label 'New York City Department of Transportation (NYCDOT)' matches registry record entity_nyc-dot with same entity_name and entity_type 'agency'. Base record_id entity_nyc-dot is the correct canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_1st2nd_progress_report",
+            "block_id": "p003_c0003",
+            "source_quote": "MTA New York City Transit (NYCT) and New York City Department of Transportation (NYCDOT) implemented the M15 Select Bus Service (SBS) along this route."
+          }
+        ]
+      },
+      {
+        "decision_id": "nysdot-identity-201111",
+        "local_observation_id": "entity_nysdot_201111_progress_report",
+        "decision": "new",
+        "rationale": "Observation label 'New York State Department of Transportation (NYSDOT)' matches registry record entity_ny-sdod-lga-aa with same entity_name 'New York State Department of Transportation' and entity_type 'government_agency'. Base record_id entity_ny-sdod-lga-aa is the correct canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_1st2nd_progress_report",
+            "block_id": "p005_c0004",
+            "source_quote": "NYCDOT, NYCT, and the New York State Department of Transportation (NYSDOT) launched a series of initiatives to reverse the decline in bus speeds"
+          }
+        ]
+      },
+      {
+        "decision_id": "bloomberg-identity-201111",
+        "local_observation_id": "entity_michael_bloomberg_201111",
+        "decision": "new",
+        "rationale": "Observation label 'Mayor Michael R. Bloomberg' matches registry record entity_michael-bloomberg-201111 with same entity_name 'Michael R. Bloomberg' and entity_type 'person'. Base record_id entity_michael-bloomberg-201111 is the correct canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_1st2nd_progress_report",
+            "block_id": "p005_c0005",
+            "source_quote": "New York City Mayor Michael R. Bloomberg released PlaNYC 2030, A Greener, Greater New York"
+          }
+        ]
+      },
+      {
+        "decision_id": "stringer-identity-201111",
+        "local_observation_id": "entity_scott_stringer_201111",
+        "decision": "new",
+        "rationale": "Observation label 'Manhattan Borough President Scott Stringer' matches registry record entity_scott-stringer-201111 with same entity_name 'Scott Stringer' and entity_type 'person'. Base record_id entity_scott-stringer-201111 is the correct canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_1st2nd_progress_report",
+            "block_id": "p006_c0008",
+            "source_quote": "NYCDOT and NYCT established a Community Advisory Committee (CAC) for the M15 SBS, co-sponsored by the Office of Manhattan Borough President Scott Stringer."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-10-08-733Z_2111393-6488716e_canonicalize_2026-06-10t23-00-19-532z-1976810-da84df67-ingest-201111-1st2nd-progress-report-entity-identity"
+}

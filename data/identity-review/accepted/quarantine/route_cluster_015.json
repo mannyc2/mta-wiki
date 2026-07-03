@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "review_state": "quarantined",
+  "accepted_at": "2026-06-08T21:21:36.731Z",
+  "reviewer": "codex-audit-2026-06-08",
+  "source": "audit_needs_correction_before_promotion",
+  "cluster_id": "route_cluster_015",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_015.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_015.json",
+  "source_review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Flash",
+  "quarantine": {
+    "blocker": "route_plus_policy_and_record_split_required",
+    "note": "route_m86 appears blended from ACE M86+ and generic/progress-report M86 content; may need split or corrected merge policy before acceptance."
+  },
+  "original_action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 2,
+    "missing_field_count": 2,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "original_merge_groups": [],
+  "original_do_not_merge": [
+    {
+      "record_ids": [
+        "route_m86",
+        "route_m86-sbs"
+      ],
+      "reason": "M86+ (limited-stop variant) and M86 SBS (Select Bus Service variant) are distinct service patterns on the same base M86 route. The '+' label indicates limited-stop service while 'SBS' indicates Select Bus Service with off-board fare payment, distinct branding, and a dedicated launch timeline event. The shared base route 'M86' is a broad corridor identifier, not a canonical identity field sufficient to merge distinct operational variants."
+    }
+  ],
+  "original_rationale": "Strong evidence from variant labels (M86+ vs M86 SBS), distinct display names, distinct identity keys, and the SBS record's dedicated timeline event clearly establish these as distinct route variants. The shared base route 'M86' and shared source references (progress report) reflect corridor overlap, not canonical identity. The negative signal explicitly flags the variant mismatch.",
+  "required_follow_up": [
+    "Resolve blocker before creating accepted merge/do-not-merge overrides.",
+    "Do not apply this packet directly to data/identity-overrides/merges.json."
+  ]
+}

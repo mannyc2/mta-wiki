@@ -1,0 +1,20 @@
+{
+  "name": "@mta-wiki/cli",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "bun src/cli.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "validate": "bun src/cli.ts validate"
+  },
+  "dependencies": {
+    "@mta-wiki/agents": "workspace:*",
+    "@mta-wiki/core": "workspace:*",
+    "@mta-wiki/db": "workspace:*",
+    "@mta-wiki/pipeline": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  }
+}

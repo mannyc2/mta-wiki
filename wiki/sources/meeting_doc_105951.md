@@ -1,0 +1,278 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-105951"
+record_kind: "source"
+display_name: "MTA Staten Island Railway February Financial Plan 2023-2026"
+source_id: "meeting_doc_105951"
+source_ids:
+  - "meeting_doc_105951"
+local_observation_id: "source_sir_2023_2026_financial_plan"
+local_observation_ids:
+  - "source_sir_2023_2026_financial_plan"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T19:31:55.999Z"
+submission_ids:
+  - "sub_c4696607de29f073"
+payload:
+  authority_tier: "plan_document"
+  content_type: "financial plan / budget"
+  description: "MTA Staten Island Railway's 2022 Final Estimate, 2023 Adopted Budget and Financial Plan for 2023-2026, including reconciliation to the November Plan, statement of operations, cash receipts and expenditures, ridership and revenue data, and position counts."
+  publisher: "MTA"
+  title: "MTA Staten Island Railway February Financial Plan 2023-2026 2022 Final Estimate and 2023 Adopted Budget"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_105951#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_105951"
+    source_path: "raw/sources/meeting_doc_105951/blocks.jsonl"
+    text_sha256: "sha256:7dc0910155725656aae6684057f45b9ae9be1f0959afdefb79759049417fbaab"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_105951#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_105951"
+    source_path: "raw/sources/meeting_doc_105951/blocks.jsonl"
+    text_sha256: "sha256:92ae97b61da70980d0178147a1b611759ce81051bfb03e0590439d4cf5fe0a07"
+    text_source: "raw_text"
+---
+
+# SIR 2023-2026 Adopted Budget & Financial Plan
+
+source_id: meeting_doc_105951
+citation: cite block ids exactly as shown in square brackets
+document: 68 block(s)
+
+## Page 1
+
+### [p001_c0001] MTA STATEN ISLAND RAILWAY FEBRUARY FINANCIAL PLAN 2023-2026 2022 FINAL ESTIMATE AND 2023 ADOPTED BUDGET
+[p001_c0002] In accordance with the MTA-approved budget procedures, the following information presents MTA Staten Island Railway's 2022 Final Estimate, 2023 Adopted Budget and the Financial Plan for 2023-2026. The Adopted Budget reflects the inclusion of MTA adjustments that were presented in the November Plan and adopted by the Board in December 2022, as well as other technical adjustments.
+[p001_c0003] Technical adjustments include:
+- [p001_c0004] • GASB 87 Lease Adjustment to conform with the new leasing accounting standard for public sector entities.
+[p001_c0005] MTA Plan adjustments include:
+- [p001_c0006] • Accrued receipt in 2022 of American Rescue Plan Act (ARPA) federal COVID aid.
+[p001_c0007] The attached also includes schedules detailing the monthly allocation of financials, including headcount and utilization data, based on the 2023 Adopted Budget for the purpose of reporting actual results on a monthly basis to the Board.
+
+## Page 2
+
+### [p002_c0001] MTA STATEN ISLAND RAILWAY
+[p002_c0002] February Financial Plan 2023-2026
+[p002_c0003] Reconciliation to the November Plan (Accrual) Non-Reimbursable ($ in millions)
+[p002_c0004]
+
+```text
+2022 2023 2024 2025 2026 Positions Dollars Positions Dollars Positions Dollars Positions Dollars Positions Dollars 2022 November Financial Plan: Net Surplus/(Deficit) 344 ($64,643) 355 ($73,997) 335 ($67,258) 335 ($89,638) 335 ($88,846) Technical Adjustments: GASB 87 Lease Adjustment ($,000) ($,000) ($,000) ($,000) ($,000) Sub-Total Technical Adjustments 0 $0,000 0 $0,000 0 $0,000 0 $0,000 0 $0,000 MTA Plan Adjustments: ARPA federal COVID aid $37,506 ($18,231) ($18,231) Sub-Total MTA Plan Adjustments 0 $37,506 0 ($18,231) 0 ($18,231) 0 $0,000 0 $0,000 2023 February Financial Plan: Net Surplus/(Deficit) 344 ($27,137) 355 ($92,228) 335 ($85,489) 335 ($89,638) 335 ($88,846)
+```
+
+## Page 3
+
+### [p003_c0001] MTA STATEN ISLAND RAILWAY
+[p003_c0002] February Financial Plan 2023-2026
+[p003_c0003] Reconciliation to the November Plan (Accrual) Reimbursable ($ in millions)
+[p003_c0004]
+
+```text
+Favorable/(Unfavorable) 2022 2023 2024 2025 2026 Positions Dollars Positions Dollars Positions Dollars Positions Dollars Positions Dollars
+```
+[p003_c0005]
+
+```text
+2022 November Financial Plan: Net Surplus/(Deficit) 53 $0.000 54 $0.000 42 $0.000 28 $0.000 28 $0.000
+```
+### [p003_c0006] Technical Adjustments:
+[p003_c0007]
+
+```text
+Sub-Total Technical Adjustments 0 $0.000 0 $0.000 0 $0.000 0 $0.000 0 $0.000
+```
+### [p003_c0008] MTA Plan Adjustments:
+[p003_c0009]
+
+```text
+Sub-Total MTA Plan Adjustments 0 $0.000 0 $0.000 0 $0.000 0 $0.000 0 $0.000
+```
+[p003_c0010]
+
+```text
+2023 February Financial Plan: Net Surplus/(Deficit) 53 $0.000 54 $0.000 42 $0.000 28 $0.000 28 $0.000
+```
+
+## Page 4
+
+### [p004_c0001] MTA STATEN ISLAND RAILWAY February Financial Plan 2023-2026 Reconciliation to the November Plan - (Cash) ($ in millions)
+[p004_c0002]
+
+```text
+2022 2023 2024 2025 2026 Positions Dollars Positions Dollars Positions Dollars Positions Dollars Positions Dollars 2022 November Financial Plan: Net Surplus/(Deficit) 397 ($52,834) 409 ($51,920) 377 ($46,398) 363 ($69,076) 363 ($67,630)
+```
+### [p004_c0003] Technical Adjustments:
+[p004_c0004]
+
+```text
+Sub-Total Technical Adjustments 0 $0.000 0 $0.000 0 $0.000 0 $0.000 0 $0.000
+```
+### [p004_c0005] MTA Plan Adjustments:
+[p004_c0006]
+
+```text
+Sub-Total MTA Plan Adjustments 0 $0.000 0 $0.000 0 $0.000 0 $0.000 0 $0.000
+```
+[p004_c0007]
+
+```text
+2023 February Financial Plan: Net Surplus/(Deficit) 397 ($52,834) 409 ($51,920) 377 ($46,398) 363 ($69,076) 363 ($67,630)
+```
+
+## Page 5
+
+### [p005_c0001] MTA STATEN ISLAND RAILWAY February Financial Plan 2023 - 2026 Accrual Statement of Operations By Category ($ in millions)
+[p005_c0002]
+
+```text
+Final Estimate 2022 Adopted Budget 2023 2024 2025 2026 Non-Reimbursable Operating Revenue Farebox Revenue $3.508 $4.510 $4.864 $5.011 $5.165 Other Operating Revenue 57.652 2.176 2.032 1.855 1.870 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 Total Revenues $61.159 $6.686 $6.896 $6.865 $7.035 Operating Expense Labor: Payroll $28.626 $30.139 $29.478 $30.489 $30.546 Overtime 3.226 3.096 3.035 3.200 3.208 Health and Welfare 8.269 8.886 8.808 9.046 9.037 OPEB Current Payments 2.949 3.094 3.245 3.282 3.300 Pension 8.000 8.450 8.360 8.440 8.400 Other Fringe Benefits 3.958 4.050 4.710 5.604 5.616 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $55.028 $57.714 $57.636 $60.061 $60.107 Non-Labor: Electric Power $5.473 $5.377 $4.841 $4.806 $4.875 Fuel 0.444 0.365 0.332 0.315 0.318 Insurance 1.537 1.887 2.270 2.865 3.315 Claims 0.882 0.873 0.885 0.887 0.887 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 4.411 2.809 3.295 3.228 2.703 Professional Services Contracts 2.931 7.822 2.862 2.894 2.899 Materials and Supplies 2.176 1.767 1.278 1.351 1.343 Other Business Expenses 1.115 0.150 0.144 0.135 0.131 Total Non-Labor Expenses $18.970 $21.050 $15.909 $16.483 $16.473 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $73.997 $78.764 $73.545 $76.544 $76.581 Depreciation $12.000 $17.500 $17.500 $17.500 $17.500 GASB 68 Pension Expense Adjustment 0.500 0.850 (0.560) 0.560 (0.300) GASB 75 OPEB Expense Adjustment 1.800 1.800 1.900 1.900 2.100 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 Total Expenses $88.297 $98.914 $92.385 $96.503 $95.880 Net Surplus/(Deficit) ($27.138) ($92.228) ($85.488) ($89.638) ($88.846)
+```
+
+## Page 6
+
+### [p006_c0001] MTA STATEN ISLAND RAILWAY February Financial Plan 2023 - 2026 Accrual Statement of Operations By Category ($ in millions)
+[p006_c0002]
+
+```text
+Final Estimate 2022 Adopted Budget 2023 2024 2025 2026 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 7.803 8.081 6.456 4.323 4.320 Total Revenues $7.803 $8.081 $6.456 $4.323 $4.320 Operating Expense Labor: Payroll $4.109 $4.297 $3.415 $2.362 $2.362 Overtime 1.127 1.132 1.136 0.908 0.909 Health and Welfare 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 2.568 2.652 1.905 1.053 1.049 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $7.803 $8.081 $6.456 $4.323 $4.320 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $7.803 $8.081 $6.456 $4.323 $4.320 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000
+```
+
+## Page 7
+
+### [p007_c0001] MTA STATEN ISLAND RAILWAY February Financial Plan 2023 - 2026 Accrual Statement of Operations By Category ($ in millions)
+[p007_c0002]
+
+```text
+Final Estimate 2022 Adopted Budget 2023 2024 2025 2026 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $3.508 $4.510 $4.864 $5.011 $5.165 Other Operating Revenue 57.652 2.176 2.032 1.855 1.870 Capital and Other Reimbursements 7.803 8.081 6.456 4.323 4.320 Total Revenues $68.963 $14.767 $13.352 $11.188 $11.355 Operating Expense Labor: Payroll $32.734 $34.436 $32.893 $32.850 $32.909 Overtime 4.352 4.228 4.171 4.108 4.117 Health and Welfare 8.269 8.886 8.808 9.046 9.037 OPEB Current Payments 2.949 3.094 3.245 3.282 3.300 Pension 8.000 8.450 8.360 8.440 8.400 Other Fringe Benefits 6.526 6.702 6.615 6.657 6.665 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $62.831 $65.796 $64.092 $64.384 $64.427 Non-Labor: Electric Power $5.473 $5.377 $4.841 $4.806 $4.875 Fuel 0.444 0.365 0.332 0.315 0.318 Insurance 1.537 1.887 2.270 2.865 3.315 Claims 0.882 0.873 0.885 0.887 0.887 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 4.411 2.809 3.295 3.228 2.703 Professional Services Contracts 2.931 7.822 2.862 2.894 2.899 Materials and Supplies 2.176 1.767 1.278 1.351 1.343 Other Business Expenses 1.115 0.150 0.144 0.135 0.131 Total Non-Labor Expenses $18.970 $21.050 $15.909 $16.483 $16.473 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $81.800 $86.846 $80.001 $80.867 $80.901 Depreciation $12.000 $17.500 $17.500 $17.500 $17.500 GASB 68 Pension Expense Adjustment 0.500 0.850 (0.560) 0.560 (0.300) GASB 75 OPEB Expense Adjustment 1.800 1.800 1.900 1.900 2.100 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 Total Expenses $96.100 $106.995 $98.841 $100.827 $100.200 Net Surplus/(Deficit) ($27.138) ($92.228) ($85.488) ($89.638) ($88.846)
+```
+
+## Page 8
+
+### [p008_c0001] MTA STATEN ISLAND RAILWAY February Financial Plan 2023 - 2026 Cash Receipts and Expenditures ($ in millions)
+[p008_c0002]
+
+```text
+Final Estimate 2022 Adopted Budget 2023 2024 2025 2026 Cash Receipts and Expenditures Receipts Farebox Revenue $3,508 $4,510 $4,864 $5,011 $5,165 Other Operating Revenue 24,896 20,407 20,263 1,855 1,870 Capital and Other Reimbursements 13,662 8,081 6,456 4,323 4,320 Total Receipts $42,066 $32,998 $31,583 $11,188 $11,355 Expenditures Labor: Payroll $43,268 $34,332 $32,704 $33,980 $32,817 Overtime 4,352 4,228 4,171 4,108 4,117 Health and Welfare 8,269 8,886 8,808 9,046 9,037 OPEB Current Payments 4,434 3,094 3,245 3,282 3,300 Pension 8,900 8,450 8,360 8,440 8,400 Other Fringe Benefits 6,453 5,265 5,171 5,312 5,228 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $75,677 $64,255 $62,460 $64,169 $62,899 Non-Labor: Electric Power $5,473 $5,377 $4,841 $4,806 $4,875 Fuel 0.443 0.365 0.332 0.315 0.318 Insurance 1.537 1.887 2.270 2.865 3.315 Claims 0.695 0.486 0.498 0.500 0.500 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 4.411 2.809 3.295 3.228 2.703 Professional Services Contracts 3.372 7.822 2.862 2.894 2.899 Materials and Supplies 2.176 1.768 1.278 1.351 1.343 Other Business Expenses 1.116 0.150 0.144 0.135 0.131 Total Non-Labor Expenditures $19,224 $20,664 $15,521 $16,096 $16,086 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $94,900 $84,918 $77,981 $80,264 $78,985 Net Cash Balance ($52,834) ($51,920) ($46,398) ($69,076) ($67,630)
+```
+
+## Page 9
+
+### [p009_c0001] MTA STATEN ISLAND RAILWAY February Financial Plan 2023 - 2026 Cash Conversion (Cash Flow Adjustments) Favorable/(Unfavorable) ($ in millions)
+[p009_c0002]
+
+```text
+Final Estimate 2022 Adopted Budget 2023 2024 2025 2026 Cash Flow Adjustments Receipts Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue (32.756) 18.231 18.231 0.000 0.000 Capital and Other Reimbursements 5.859 0.000 0.000 0.000 0.000 Total Receipts ($26.897) $18.231 $18.231 $0.000 $0.000 Expenditures Labor: Payroll ($10.534) $0.103 $0.189 ($1.129) $0.092 Overtime 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments (1.485) 0.000 0.000 0.000 0.000 Pension (0.900) 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.073 1.437 1.444 1.344 1.436 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures ($12.846) $1.541 $1.633 $0.215 $1.528 Non-Labor: Electric Power $0.000 0.000 $0.000 $0.000 $0.000 Fuel 0.001 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 Claims 0.187 0.387 0.387 0.387 0.387 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts (0.441) 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 (0.001) 0.000 0.000 0.000 Other Business Expenses (0.001) 0.000 0.000 0.000 0.000 Total Non-Labor Expenditures ($0.254) $0.386 $0.387 $0.387 $0.387 Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures ($13.100) $1.927 $2.020 $0.603 $1.915 Total Cash Conversion Adjustments before Depreciation ($39.997) $20.158 $20.251 $0.603 $1.915 Depreciation $12.000 $17.500 $17.500 $17.500 $17.500 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.500 0.850 (0.560) 0.560 (0.300) GASB 75 OPEB Expense Adjustment 1.800 1.800 1.900 1.900 2.100 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 Total Cash Conversion Adjustments ($25.697) $40.308 $39.091 $20.562 $21.215
+```
+
+## Page 10
+
+### [p010_c0001] MTA STATEN ISLAND RAILWAY February Financial Plan 2023 - 2026 Ridership (Utilization) and Revenue (in millions)
+[p010_c0002]
+
+```text
+Final Estimate 2022 Adopted Budget 2023 2024 2025 2026
+```
+### [p010_c0003] RIDERSHIP
+[p010_c0004] Fixed Route 2.194 2.667 3.103 3.212 3.311
+### [p010_c0005] FAREBOX REVENUE
+[p010_c0006] Fixed Route Farebox Revenue $3.508 $4.510 $4.864 $5.011 $5.165
+[p010_c0007] Farebox Revenue $3.508 $4.510 $4.864 $5.011 $5.165
+
+## Page 11
+
+### [p011_c0001] MTA STATEN ISLAND RAILWAY February Financial Plan 2023-2026 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full Time/Full Time Equivalents
+[p011_c0002]
+
+```text
+FUNCTION/DEPARTMENT Final Adopted Estimate 2022 Budget 2023 2024 2025 2026 Administration Executive 6 6 6 6 6 General Office 15 15 15 15 15 Purchasing/Stores 4 4 4 4 4 Total Administration 25 25 25 25 25 Operations Transportation 152 152 152 142 142 Maintenance Mechanical 54 55 55 54 54 Electronic/Electrical 21 25 25 25 25 Power/Signals 32 33 32 32 32 Maintenance of Way 89 89 58 57 57 Infrastructure 18 24 24 24 24 Total Maintenance 214 226 194 192 192 Engineering/Capital Capital Project Support 6 6 6 4 4 Public Safety - - - - - Police - - - - - Baseline Total Positions 397 409 377 363 363 Non-Reimbursable 344 355 335 335 335 Reimbursable 53 54 42 28 28 Total Full-Time 397 409 377 363 363 Total Full-Time Equivalents
+```
+
+## Page 12
+
+### [p012_c0001] MTA STATEN ISLAND RAILWAY February Financial Plan 2023 - 2026 Total Positions By Function and Occupational Group
+[p012_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Final Estimate 2022 Adopted Budget 2023 2024 2025 2026 Administration Managers/Supervisors 13 13 13 13 13 Professional/Technical/Clerical 8 8 8 8 8 Operational Hourlies 4 4 4 4 4 Total Administration Headcount 25 25 25 25 25 Operations Managers/Supervisors 26 26 26 26 26 Professional/Technical/Clerical 6 6 6 6 6 Operational Hourlies 120 120 120 110 110 Total Operations Headcount 152 152 152 142 142 Maintenance Managers/Supervisors 25 31 28 27 27 Professional/Technical/Clerical 7 8 8 8 8 Operational Hourlies 182 187 158 157 157 Total Maintenance Headcount 214 226 194 192 192 Engineering / Capital Managers/Supervisors 4 4 4 4 4 Professional/Technical/Clerical 2 2 2 0 0 Operational Hourlies 0 0 0 0 0 Total Engineering Headcount 6 6 6 4 4 Public Safety Managers/Supervisors 0 0 0 0 0 Professional, Technical, Clerical 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 Total Public Safety Headcount 0 0 0 0 0 Total Positions Managers/Supervisors 68 74 71 70 70 Professional, Technical, Clerical 23 24 24 22 22 Operational Hourlies 306 311 282 271 271 Total Positions 397 409 377 363 363
+```
+
+## Page 13
+
+### [p013_c0001] MTA STATEN ISLAND RAILWAY February Financial Plan - 2023 Adopted Budget Accrual Statement of Operations By Category
+[p013_c0002]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Total Non-Reimbursable Operating Revenue Farebox Revenue $0.361 $0.327 $0.384 $0.351 $0.377 $0.373 $0.384 $0.412 $0.382 $0.389 $0.383 $0.376 $4.510 Other Operating Revenue 0.218 0.218 0.218 0.218 0.218 0.191 0.079 0.073 0.218 0.218 0.218 0.088 2.176 Total Revenues $0.579 $0.545 $0.603 $0.569 $0.595 $0.564 $0.463 $0.485 $0.600 $0.518 $0.601 $0.464 $6.686 Operating Expenses Labor: Payroll $2.542 $2.281 $2.488 $2.329 $2.585 $2.613 $2.471 $2.503 $2.448 $2.481 $2.693 $2.703 $30.139 Overtime 0.370 0.321 0.315 0.225 0.225 0.225 0.235 0.240 0.243 0.243 0.228 0.228 3.096 Health and Welfare 0.740 0.740 0.740 0.740 0.740 0.740 0.740 0.740 0.740 0.740 0.740 0.744 8.886 OPEB Current Payments 0.258 0.258 0.258 0.258 0.258 0.258 0.258 0.258 0.258 0.258 0.258 0.258 3.094 Pension 0.704 0.704 0.704 0.704 0.704 0.704 0.704 0.704 0.704 0.704 0.704 0.704 8.450 Other Fringe Benefits 0.341 0.369 0.328 0.330 0.336 0.335 0.338 0.333 0.335 0.321 0.340 0.342 4.050 Reimbursement Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $4.955 $4.873 $4.834 $4.586 $4.848 $4.875 $4.746 $4.778 $4.728 $4.748 $4.964 $4.979 $57.714 Non-Labor: Electric Power $0.448 $0.448 $0.448 $0.448 $0.448 $0.448 $0.448 $0.448 $0.448 $0.448 $0.448 $0.448 $5.377 Fuel 0.036 0.036 0.036 0.036 0.036 0.028 0.024 0.024 0.024 0.024 0.028 0.034 0.365 Insurance 0.157 0.157 0.157 0.157 0.157 0.157 0.157 0.157 0.157 0.157 0.157 0.157 1.887 Claims 0.073 0.073 0.073 0.073 0.073 0.073 0.073 0.073 0.073 0.073 0.073 0.073 0.873 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.217 0.217 0.217 0.217 0.217 0.217 0.247 0.217 0.217 0.390 0.217 0.217 2.809 Professional Services Contracts 0.242 0.242 0.242 0.242 0.242 0.242 0.242 0.242 0.242 0.242 0.242 0.242 1.822 Materials and Supplies 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.782 Other Business Expenses 0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.150 Total Non-Labor Expenses $1.286 $1.286 $1.286 $1.286 $1.286 $1.286 $1.917 $1.887 $1.887 $2.060 $1.892 $1.897 $21.050 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses $6.241 $6.359 $6.370 $6.322 $6.584 $6.604 $6.664 $6.665 $6.615 $6.807 $6.856 $6.875 $78.764 Depreciation $1.458 $1.458 $1.458 $1.458 $1.458 $1.458 $1.458 $1.458 $1.458 $1.458 $1.458 $1.458 $17.500 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Expenses After Non-Cash Liability Adjs. $7.699 $7.418 $6.028 $7.781 $9.042 $8.063 $8.122 $8.124 $8.074 $8.286 $8.314 $10.884 $98.914 Total Surplus/(Deficit) ($7.120) ($6.872) ($7.426) ($7.211) ($7.447) ($7.499) ($7.659) ($7.639) ($7.474) ($7.648) ($7.713) ($10.520) ($92.228)
+```
+[p013_c0003] -- Differences are due to rounding
+
+## Page 14
+
+### [p014_c0001] MTA STATEN ISLAND RAILWAY February Financial Plan - 2023 Adopted Budget Accrual Statement of Operations By Category
+[p014_c0002]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Total Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 0.687 0.827 0.708 0.659 0.689 0.672 0.652 0.676 0.675 0.703 0.665 0.669 8.081 Total Revenues $0.687 $0.827 $0.708 $0.659 $0.689 $0.672 $0.652 $0.676 $0.675 $0.703 $0.665 $0.669 $8.081 Operating Expenses Labor: Payroll $0.367 $0.330 $0.361 $0.351 $0.369 $0.359 $0.343 $0.357 $0.361 $0.378 $0.348 $0.354 $4.297 Overtime 0.094 0.094 0.094 0.094 0.094 0.094 0.094 0.095 0.096 0.096 0.096 0.096 1.132 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.227 0.203 0.234 0.215 0.226 0.219 0.216 0.224 0.219 0.229 0.221 0.220 2.652 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $0.687 $0.827 $0.708 $0.659 $0.689 $0.672 $0.652 $0.676 $0.675 $0.703 $0.665 $0.669 $8.081 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses $0.687 $0.827 $0.708 $0.659 $0.689 $0.672 $0.652 $0.676 $0.675 $0.703 $0.665 $0.669 $8.081 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p014_c0003] -- Differences are due to rounding
+
+## Page 15
+
+### [p015_c0001] MTA STATEN ISLAND RAILWAY February Financial Plan - 2023 Adopted Budget Accrual Statement of Operations By Category
+[p015_c0002]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Total Non-Reimbursable / Reimbursable Operating Revenue Forebox Revenue $0.361 $0.327 $0.384 $0.351 $0.377 $0.373 $0.384 $0.412 $0.382 $0.389 $0.383 $0.378 $4.510 Other Operating Revenue 0.218 0.218 0.218 0.218 0.218 0.191 0.079 0.073 0.218 0.218 0.218 0.088 2.176 Capital and Other Reimbursements 0.687 0.527 0.708 0.659 0.689 0.672 0.652 0.576 0.675 0.703 0.665 0.669 8.081 Total Revenues $1.267 $1.173 $1.311 $1.229 $1.283 $1.235 $1.115 $1.161 $1.275 $1.320 $1.266 $1.133 $14,767 Operating Expenses Labor: Payroll $2,909 $2,911 $2,969 $2,680 $2,954 $2,973 $2,814 $2,860 $2,809 $2,859 $3,042 $3,056 $34,436 Overtime 0.463 0.414 0.408 0.318 0.318 0.318 0.328 0.335 0.338 0.338 0.324 0.324 4.228 Health and Welfare 0.740 0.740 0.740 0.740 0.740 0.740 0.740 0.740 0.740 0.740 0.740 0.744 8.886 OPEB Current Payments 0.258 0.258 0.258 0.258 0.258 0.258 0.258 0.258 0.258 0.258 0.258 0.258 3.094 Pension 0.704 0.704 0.704 0.704 0.704 0.704 0.704 0.704 0.704 0.704 0.704 0.704 8.450 Other Fringe Benefits 0.568 0.573 0.562 0.545 0.562 0.554 0.554 0.557 0.554 0.551 0.561 0.562 6.702 Reimbursement Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $5.642 $5.300 $5.641 $5.245 $5.536 $5.547 $5.398 $5.454 $5.403 $5.450 $5.629 $5.648 $68,796 Non-Labor: Electric Power $0.448 $0.448 $0.448 $0.448 $0.448 $0.448 $0.448 $0.448 $0.448 $0.448 $0.448 $0.448 $5.377 Fuel 0.036 0.036 0.036 0.036 0.036 0.028 0.024 0.024 0.024 0.024 0.028 0.034 0.365 Insurance 0.157 0.157 0.157 0.157 0.157 0.157 0.157 0.157 0.157 0.157 0.157 0.157 1.887 Claims 0.073 0.073 0.073 0.073 0.073 0.073 0.073 0.073 0.073 0.073 0.073 0.073 0.873 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.217 0.217 0.217 0.217 0.217 0.217 0.247 0.217 0.217 0.390 0.217 0.217 2.809 Professional Services Contracts 0.242 0.242 0.642 0.642 0.642 0.642 0.795 0.795 0.795 0.795 0.795 0.795 7.822 Materials and Supplies 0.100 0.100 0.150 0.150 0.150 0.150 0.161 0.161 0.161 0.161 0.161 0.161 1.767 Other Business Expenses 0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.150 Total Non-Labor Expenses $1.286 $1.286 $1.736 $1.736 $1.736 $1.729 $1.917 $1.887 $1.887 $2.060 $1.892 $1.897 $21,050 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses $6.928 $6.586 $7.278 $6.982 $7.273 $7.276 $7.315 $7.341 $7.291 $7.510 $7.521 $7.544 $86,846 Depreciation $1.458 $1.458 $1.458 $1.458 $1.458 $1.458 $1.458 $1.458 $1.458 $1.458 $1.458 $1.458 $17.500 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.800 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Expenses After Non-Cash Liability Adjs. $8.387 $8.045 $8.736 $8.440 $8.731 $8.734 $8.774 $8.800 $8.749 $8.968 $8.979 $11.853 $106.995 Net Surplus/(Deficit) ($7.120) ($6.872) ($7.426) ($7.211) ($7.447) ($7.499) ($7.659) ($7.639) ($7.474) ($7.648) ($7.713) ($10.520) ($92.228)
+```
+[p015_c0003] -- Differences are due to rounding
+
+## Page 16
+
+### [p016_c0001] MTA STATEN ISLAND RAILWAY February Financial Plan - 2023 Adopted Budget Cash Receipts and Expenditures ($ in millions)
+[p016_c0002]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Total Cash Receipts and Expenditures Receipts Farebox Revenue $0.361 $0.327 $0.384 $0.351 $0.377 $0.373 $0.384 $0.412 $0.382 $0.399 $0.383 $0.376 $4.510 Other Operating Revenue 0.095 0.095 0.095 0.095 0.095 0.068 0.529 18.181 0.095 0.125 0.095 (0.035) 20.407 Capital and Other Reimbursements 0.687 0.927 0.708 0.659 0.689 0.672 0.552 0.676 0.675 0.703 0.665 0.669 8.081 Total Receipts $1.144 $1.050 $1.188 $1.976 $1.161 $1.113 $1.565 $19,269 $1,162 $1,227 $1,143 $1,010 $32,998 Expenditures Labor: Payroll $2.630 $2.627 $3.822 $2.520 $1.521 $4.006 $2.501 $3.813 $2.649 $2.619 $2.882 $2.743 $34.332 Overtime 0.463 0.414 0.408 0.318 0.318 0.318 0.328 0.335 0.338 0.338 0.324 0.324 4.228 Health and Welfare 0.740 0.740 0.740 0.740 0.740 0.740 0.740 0.740 0.740 0.740 0.740 0.744 8.886 OPEB Current Payments 0.258 0.258 0.258 0.258 0.258 0.258 0.258 0.258 0.258 0.258 0.258 0.258 3.094 Pension 0.704 0.704 0.704 0.704 0.704 0.704 0.704 0.704 0.704 0.704 0.704 0.704 8.450 Other Fringe Benefits 0.449 0.453 0.443 0.426 0.442 0.435 0.435 0.436 0.435 0.431 0.442 0.436 5.265 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $5,244 $5,196 $6,376 $4,966 $3,984 $6,461 $4,966 $6,288 $5,724 $5,091 $5,350 $5,209 $64,255 Non-Labor: Electric Power $0.448 $0.448 $0.448 $0.448 $0.448 $0.448 $0.448 $0.448 $0.448 $0.448 $0.448 $0.448 $5.377 Fuel 0.036 0.036 0.036 0.036 0.036 0.028 0.024 0.024 0.024 0.024 0.028 0.034 0.365 Insurance 0.157 0.157 0.157 0.157 0.157 0.157 0.157 0.157 0.157 0.157 0.157 0.157 1.887 Claims 0.040 0.040 0.040 0.040 0.040 0.040 0.040 0.040 0.040 0.040 0.040 0.040 0.486 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.217 0.217 0.217 0.217 0.217 0.217 0.247 0.217 0.217 0.390 0.217 0.217 2.809 Professional Services Contracts 0.242 0.242 0.242 0.242 0.242 0.242 0.242 0.242 0.242 0.242 0.242 0.242 2.809 Materials and Supplies 0.101 0.101 0.101 0.101 0.101 0.101 0.101 0.101 0.101 0.101 0.101 0.101 1.161 Other Business Expenses 0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.150 Total Non-Labor Expenditures $1,254 $1,254 $1,704 $1,704 $1,704 $1,697 $1,885 $1,855 $1,855 $2,028 $1,859 $1,864 $20,664 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $6,498 $6,451 $8,080 $6,670 $5,688 $8,158 $6,851 $8,143 $6,579 $7,119 $7,209 $7,073 $84,918 Net Cash Balance ($5,354) ($5,401) ($6,892) ($4,694) ($4,527) ($7,045) ($5,286) $11,126 ($5,627) ($5,891) ($6,066) ($6,063) ($51,920)
+```
+
+## Page 17
+
+### [p017_c0001] MTA STATEN ISLAND RAILWAY February Financial Plan - 2023 Adopted Budget Cash Conversion (Cash Flow Adjustments) Favorable/(Unfavorable) ($ in millions)
+[p017_c0002]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Total Cash Flow Adjustments Receipts Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue (0.123) (0.123) (0.123) 0.747 (0.123) (0.123) 0.450 18.108 (0.123) (0.093) (0.123) (0.123) 18.231 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Receipts ($0.123) ($0.123) ($0.123) $0.747 ($0.123) ($0.123) $0.450 $18.108 ($0.123) ($0.093) ($0.123) ($0.123) $18.231 Expenditures Labor: Payroll $0.279 ($0.016) ($0.953) $0.160 $1.434 ($1.033) $0.313 ($0.953) $0.160 $0.240 $0.160 $0.313 $0.103 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.119 0.119 0.119 0.119 0.119 0.119 0.119 0.119 0.119 0.119 0.119 0.126 1.437 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $0.398 $0.104 ($0.834) $0.279 $1.553 ($0.914) $0.432 ($0.834) $0.279 $0.359 $0.279 $0.439 $1.547 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.032 0.032 0.032 0.032 0.032 0.032 0.032 0.032 0.032 0.032 0.032 0.032 0.387 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 (0.001) Total Non-Labor Expenditures $0.032 $0.032 $0.032 $0.032 $0.032 $0.032 $0.032 $0.032 $0.032 $0.032 $0.032 $0.032 $0.386 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $0.431 $0.136 ($0.802) $0.312 $1.585 ($0.882) $0.464 ($0.802) $0.312 $0.392 $0.312 $0.471 $1.927 Total Cash Conversion before Non-Cash Liability Adjs. $0.308 $0.013 ($0.925) $1.059 $1.462 ($1.005) $0.914 $17.306 $0.189 $0.299 $0.189 $0.348 $20.158 Depreciation $1.458 $1.458 $1.458 $1.458 $1.458 $1.458 $1.458 $1.458 $1.458 $1.458 $1.458 $1.458 $17.500 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.850 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 1.800 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Cash Conversion Adjustments $1.766 $1.471 $0.534 $2.517 $2.921 $0.484 $2.372 $18.765 $1.647 $1.767 $1.647 $4.457 $40.308
+```
+
+## Page 18
+
+### [p018_c0001] MTA STATEN ISLAND RAILWAY February Financial Plan - 2023 Adopted Budget Ridership and Traffic Volume (Utilization) (in millions)
+[p018_c0002]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Total RIDERSHIP Fixed Route Ridership 0.218 0.198 0.233 0.211 0.227 0.225 0.207 0.224 0.228 0.240 0.230 0.225 2.667 Total Ridership 0.218 0.198 0.233 0.211 0.227 0.225 0.207 0.224 0.228 0.240 0.230 0.225 2.667 FAREBOX REVENUE Fixed Route Farebox Revenue $0.361 $0.327 $0.384 $0.351 $0.377 $0.373 $0.384 $0.412 $0.382 $0.399 $0.383 $0.376 $4.510 Total Farebox Revenue $0.361 $0.327 $0.384 $0.351 $0.377 $0.373 $0.384 $0.412 $0.382 $0.399 $0.383 $0.376 $4.510
+```
+
+## Page 19
+
+### [p019_c0001] MTA STATEN ISLAND RAILWAY February Financial Plan - 2023 Adopted Budget Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time/Full-Time Equivalents
+[p019_c0002]
+
+```text
+FUNCTION/DEPARTMENT Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Administration SIR Executive 6 6 6 6 6 6 6 6 6 6 6 6 SIR General Office 15 15 15 15 15 15 15 15 15 15 15 15 SIR Purchasing Stores 4 4 4 4 4 4 4 4 4 4 4 4 Total Administration 25 25 25 25 25 25 25 25 25 25 25 25 Operations SIR Transportation 152 152 152 152 152 152 152 152 152 152 152 152 Total Operations 152 152 152 152 152 152 152 152 152 152 152 152 Maintenance SIR Mechanical 55 55 55 55 55 55 55 55 55 55 55 55 SIR Electronics Electrical 25 25 25 25 25 25 25 25 25 25 25 25 SIR Power Signals 33 33 33 33 33 33 33 33 33 33 33 33 SIR Maintenance of Way 89 89 89 89 89 89 89 89 89 89 89 89 SIR Infrastructure 24 24 24 24 24 24 24 24 24 24 24 24 Total Maintenance 226 226 226 226 226 226 226 226 226 226 226 226 Engineering/Capital SIR Reimbursable Program Support 6 6 6 6 6 6 6 6 6 6 6 6 Total Engineering/Capital 6 6 6 6 6 6 6 6 6 6 6 6 Public Safety Total Public Safety 0 0 0 0 0 0 0 0 0 0 0 0 Total Baseline Positions 409 409 409 409 409 409 409 409 409 409 409 409 Non-Reimbursable 355 355 355 355 355 355 355 355 355 355 355 355 Reimbursable 54 54 54 54 54 54 54 54 54 54 54 54 Total Full-Time 409 409 409 409 409 409 409 409 409 409 409 409 Total Full-Time-Equivalents
+```
+
+## Page 20
+
+### [p020_c0001] MTA STATEN ISLAND RAILWAY February Financial Plan - 2023 Adopted Budget Total Positions by Function and Occupation
+[p020_c0002]
+
+```text
+FUNCTION / OCCUPATION Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Administration Managers/Supervisors 13 13 13 13 13 13 13 13 13 13 13 13 Professional/Technical/Clerical 8 8 8 8 8 8 8 8 8 8 8 8 Operational Hours 4 4 4 4 4 4 4 4 4 4 4 4 Total Administration Headcount 25 25 25 25 25 25 25 25 25 25 25 25 Operations Managers/Supervisors 26 26 26 26 26 26 26 26 26 26 26 26 Professional/Technical/Clerical 6 6 6 6 6 6 6 6 6 6 6 6 Operational Hours 120 120 120 120 120 120 120 120 120 120 120 120 Total Operations Headcount 152 152 152 152 152 152 152 152 152 152 152 152 Maintenance Managers/Supervisors 31 31 31 31 31 31 31 31 31 31 31 31 Professional/Technical/Clerical 8 8 8 8 8 8 8 8 8 8 8 8 Operational Hours 187 187 187 187 187 187 187 187 187 187 187 187 Total Maintenance Headcount 226 226 226 226 226 226 226 226 226 226 226 226 Engineering / Capital Managers/Supervisors 4 4 4 4 4 4 4 4 4 4 4 4 Professional/Technical/Clerical 2 2 2 2 2 2 2 2 2 2 2 2 Operational Hours 0 0 0 0 0 0 0 0 0 0 0 0 Total Engineering Headcount 6 6 6 6 6 6 6 6 6 6 6 6 Public Safety Managers/Supervisors 0 0 0 0 0 0 0 0 0 0 0 0 Professional, Technical, Clerical 0 0 0 0 0 0 0 0 0 0 0 0 Operational Hours 0 0 0 0 0 0 0 0 0 0 0 0 Total Public Safety Headcount 0 0 0 0 0 0 0 0 0 0 0 0 Total Positions Managers/Supervisors 74 74 74 74 74 74 74 74 74 74 74 74 Professional, Technical, Clerical 24 24 24 24 24 24 24 24 24 24 24 24 Operational Hours 311 311 311 311 311 311 311 311 311 311 311 311 Total Positions 409 409 409 409 409 409 409 409 409 409 409 409
+```

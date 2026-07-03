@@ -1,0 +1,468 @@
+{
+  "batch_id": "codex-identity-batch101",
+  "created_at": "2026-06-23T04:10:19Z",
+  "prepared_count": 8,
+  "all_pass": true,
+  "scope": {
+    "allowed_kinds": [
+      "project"
+    ],
+    "prepared_kinds": [
+      "project"
+    ],
+    "project_only": true,
+    "excluded_non_project_kinds": true
+  },
+  "expected_delta": {
+    "duplicate_global_identity": -8
+  },
+  "proposed_aliases": [
+    {
+      "kind": "project",
+      "alias_id": "project_fordham-rd-bus-priority-cb7-jun2023",
+      "target_id": "project_fordham-rd-bus-priority",
+      "reason": "Both records are the same Fordham Road / Inwood bus-priority project. They share the exact project name, Bronx bus_priority classification, proposed/planned document-time status, and June 2023 project update evidence; the alias is the CB7-facing instance and the target is the CB11-facing instance of the same project identity.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "display_name": "Fordham Road \u2013 Inwood Bus Priority",
+          "project_name": "Fordham Road \u2013 Inwood Bus Priority",
+          "project_family": "bus_priority",
+          "borough": "Bronx",
+          "status": "proposed",
+          "document_time_status": "planned",
+          "primary_source_id": "fordham_rd_inwood_cb7_jun2023"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "Fordham Road \u2013 Inwood Bus Priority",
+          "project_name": "Fordham Road \u2013 Inwood Bus Priority",
+          "project_family": "bus_priority",
+          "borough": "Bronx",
+          "status": "proposed",
+          "document_time_status": "planned",
+          "primary_source_id": "fordham_rd_inwood_cb11_jun2023"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "project_fordham-rd-bus-priority-cb7-jun2023",
+          "source_id": "fordham_rd_inwood_cb7_jun2023",
+          "block_id": "p001_c0001",
+          "page_number": 1,
+          "quote": "Fordham Road - Inwood Bus Priority"
+        },
+        {
+          "record_id": "project_fordham-rd-bus-priority",
+          "source_id": "fordham_rd_inwood_cb11_jun2023",
+          "block_id": "p001_c0001",
+          "page_number": 1,
+          "quote": "Fordham Road - Inwood Bus Priority"
+        },
+        {
+          "record_id": "project_fordham-rd-bus-priority-cb7-jun2023",
+          "source_id": "fordham_rd_inwood_cb7_jun2023",
+          "block_id": "p010_c0002",
+          "page_number": 10,
+          "quote": "Three alternatives, initially proposed at CAB #3 in March 2022 have been under discussion/study"
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_fordham-rd-inwood-bus-priority",
+      "target_id": "project_fordham-rd-bus-priority",
+      "reason": "Both records identify the same Fordham Road / Inwood bus-priority project. The March 2022 CAB source records the alternatives under study; the June 2023 target source explicitly says those same three alternatives from CAB #3 remained under discussion. The status difference is source-time progress, not a separate project scope.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "display_name": "Fordham Road \u2013 Inwood Bus Priority",
+          "project_name": "Fordham Road \u2013 Inwood Bus Priority",
+          "project_type": "bus priority study",
+          "project_family": "bus_priority",
+          "borough": "Bronx",
+          "status": "design alternatives being studied",
+          "document_time_status": "other",
+          "primary_source_id": "fordham_rd_inwood_cab_mar2022"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "Fordham Road \u2013 Inwood Bus Priority",
+          "project_name": "Fordham Road \u2013 Inwood Bus Priority",
+          "project_type": "bus priority",
+          "project_family": "bus_priority",
+          "borough": "Bronx",
+          "status": "proposed",
+          "document_time_status": "planned",
+          "primary_source_id": "fordham_rd_inwood_cb11_jun2023"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "project_fordham-rd-inwood-bus-priority",
+          "source_id": "fordham_rd_inwood_cab_mar2022",
+          "block_id": "p001_c0001",
+          "page_number": 1,
+          "quote": "Fordham Road - Inwood Bus Priority"
+        },
+        {
+          "record_id": "project_fordham-rd-inwood-bus-priority",
+          "source_id": "fordham_rd_inwood_cab_mar2022",
+          "block_id": "p024_c0003",
+          "page_number": 24,
+          "quote": "traffic analysis that includes 3 distinct design alternatives"
+        },
+        {
+          "record_id": "project_fordham-rd-bus-priority",
+          "source_id": "fordham_rd_inwood_cb11_jun2023",
+          "block_id": "p010_c0002",
+          "page_number": 10,
+          "quote": "Three alternatives, initially proposed at CAB #3 in March 2022"
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_eastern-pkwy-transit-priority-b14-cb8-mar2025",
+      "target_id": "project_eastern-pkwy-transit-priority-b14-apr2025",
+      "reason": "Both records represent the same Eastern Parkway B14 transit-priority proposal from Schenectady Avenue to Ralph Avenue. The alias and target share project name, Brooklyn geography, transit-priority type, and draft-proposal status; the month/source distinction is a document-audience timing difference.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "display_name": "Eastern Parkway Transit Priority Proposal B14",
+          "project_name": "Eastern Parkway - Transit Priority Proposal B14 from Schenectady Avenue to Ralph Avenue",
+          "project_type": "transit priority",
+          "borough": "Brooklyn",
+          "status": "draft proposal",
+          "document_time_status": "other",
+          "primary_source_id": "eastern_pkwy_schenectady_ave_ralph_ave_cb8_mar2025"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "Eastern Parkway Transit Priority Proposal B14 from Schenectady Avenue to Ralph Avenue",
+          "project_name": "Eastern Parkway - Transit Priority Proposal B14 from Schenectady Avenue to Ralph Avenue",
+          "project_type": "transit priority",
+          "borough": "Brooklyn",
+          "status": "draft proposal",
+          "document_time_status": "other",
+          "primary_source_id": "eastern_pkwy_schenectady_ave_ralph_ave_cb8_apr2025"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "project_eastern-pkwy-transit-priority-b14-cb8-mar2025",
+          "source_id": "eastern_pkwy_schenectady_ave_ralph_ave_cb8_mar2025",
+          "block_id": "p001_c0001",
+          "page_number": 1,
+          "quote": "Eastern Parkway - Transit Priority Proposal B14 from Schenectady Avenue to Ralph Avenue"
+        },
+        {
+          "record_id": "project_eastern-pkwy-transit-priority-b14-apr2025",
+          "source_id": "eastern_pkwy_schenectady_ave_ralph_ave_cb8_apr2025",
+          "block_id": "p001_c0001",
+          "page_number": 1,
+          "quote": "Eastern Parkway - Transit Priority Proposal B14 from Schenectady Avenue to Ralph Avenue"
+        },
+        {
+          "record_id": "project_eastern-pkwy-transit-priority-b14-cb8-mar2025",
+          "source_id": "eastern_pkwy_schenectady_ave_ralph_ave_cb8_mar2025",
+          "block_id": "p001_c0002",
+          "page_number": 1,
+          "quote": "Draft Proposal - Brooklyn Community Board 8"
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_b46-sbs-utica-ave-2015",
+      "target_id": "project_b46-sbs-utica-ave-2015-09-10",
+      "reason": "Both records are the same Utica Avenue / B46 Select Bus Service project. They share Brooklyn SBS classification and proposed/planned status, and both sources cite the Utica Avenue B46 corridor as the SBS candidate. The target is already the durable merge center for other B46 SBS 2015 aliases.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "display_name": "B46 Select Bus Service",
+          "project_name": "Utica Avenue B46 Select Bus Service",
+          "project_type": "Select Bus Service",
+          "project_family": "sbs_or_brt",
+          "borough": "Brooklyn",
+          "status": "proposed",
+          "document_time_status": "planned",
+          "primary_source_id": "2015_04_06_brt_uticaave_cb3_presentation"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "B46 Select Bus Service",
+          "project_name": "B46 Select Bus Service",
+          "project_type": "Select Bus Service",
+          "project_family": "sbs_or_brt",
+          "borough": "Brooklyn",
+          "status": "proposed",
+          "document_time_status": "planned",
+          "primary_source_id": "2015_04_15_brt_uticaave_cb17_presentation"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "project_b46-sbs-utica-ave-2015",
+          "source_id": "2015_04_06_brt_uticaave_cb3_presentation",
+          "block_id": "p008_c0001",
+          "page_number": 8,
+          "quote": "Utica Avenue Select Bus Service"
+        },
+        {
+          "record_id": "project_b46-sbs-utica-ave-2015",
+          "source_id": "2015_04_06_brt_uticaave_cb3_presentation",
+          "block_id": "p003_c0002",
+          "page_number": 3,
+          "quote": "Utica Avenue B46 corridor was identified as a potential candidate"
+        },
+        {
+          "record_id": "project_b46-sbs-utica-ave-2015-09-10",
+          "source_id": "2015_04_15_brt_uticaave_cb17_presentation",
+          "block_id": "p003_c0002",
+          "page_number": 3,
+          "quote": "Utica Avenue B46 corridor was identified as a potential candidate"
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_utica-ave-b46-sbs-2015-cac2",
+      "target_id": "project_b46-sbs-utica-ave-2015-09-10",
+      "reason": "Both records are the same Utica Avenue / B46 SBS upgrade project. The alias source presents the draft service plan for B46 SBS and the B46 local on the Utica Avenue corridor; the target carries the same B46 Select Bus Service identity and already anchors related 2015 B46 SBS aliases.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "display_name": "Utica Avenue Select Bus Service",
+          "project_name": "Utica Avenue Select Bus Service",
+          "project_type": "SBS upgrade",
+          "borough": "Brooklyn",
+          "status": "proposed",
+          "document_time_status": "planned",
+          "primary_source_id": "2015_02_04_brt_utica_cac2_presentation"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "B46 Select Bus Service",
+          "project_name": "B46 Select Bus Service",
+          "project_type": "Select Bus Service",
+          "project_family": "sbs_or_brt",
+          "borough": "Brooklyn",
+          "status": "proposed",
+          "document_time_status": "planned",
+          "primary_source_id": "2015_04_15_brt_uticaave_cb17_presentation"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "project_utica-ave-b46-sbs-2015-cac2",
+          "source_id": "2015_02_04_brt_utica_cac2_presentation",
+          "block_id": "p002_c0002",
+          "page_number": 2,
+          "quote": "Present draft service plan for B46 SBS and B46 local"
+        },
+        {
+          "record_id": "project_utica-ave-b46-sbs-2015-cac2",
+          "source_id": "2015_02_04_brt_utica_cac2_presentation",
+          "block_id": "p010_c0002",
+          "page_number": 10,
+          "quote": "B46 Limited to be upgraded to B46 SBS"
+        },
+        {
+          "record_id": "project_b46-sbs-utica-ave-2015-09-10",
+          "source_id": "2015_04_15_brt_uticaave_cb17_presentation",
+          "block_id": "p002_c0002",
+          "page_number": 2,
+          "quote": "Present draft service plan for B46 SBS and B46 local"
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_b44-sbs-nostrand-rogers-ave-phase1",
+      "target_id": "project_nostrand-rogers-ave-b44-sbs-phase1",
+      "reason": "Both records are the same Nostrand Avenue / Rogers Avenue B44 SBS project from the BRT Phase I list. They share the exact project name, SBS/BRT family, planned status, and parallel future-corridors source evidence that names the project as the 2012 BRT Phase I implementation.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "display_name": "Nostrand Avenue/Rogers Avenue B44 SBS",
+          "project_name": "Nostrand Avenue/Rogers Avenue B44 SBS",
+          "project_type": "SBS",
+          "project_family": "sbs_or_brt",
+          "status": "planned",
+          "document_time_status": "planned",
+          "primary_source_id": "brt_phase2_future_corridors_rpt"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "Nostrand Avenue/Rogers Avenue B44 SBS",
+          "project_name": "Nostrand Avenue/Rogers Avenue B44 SBS",
+          "project_type": "Select Bus Service",
+          "project_family": "sbs_or_brt",
+          "status": "planned",
+          "document_time_status": "planned",
+          "primary_source_id": "brt_future_corridors"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "project_b44-sbs-nostrand-rogers-ave-phase1",
+          "source_id": "brt_phase2_future_corridors_rpt",
+          "block_id": "p004_c0002",
+          "page_number": 4,
+          "quote": "Nostrand Avenue/Rogers Avenue B44 SBS - 2012 implementation"
+        },
+        {
+          "record_id": "project_nostrand-rogers-ave-b44-sbs-phase1",
+          "source_id": "brt_future_corridors",
+          "block_id": "p004_c0002",
+          "page_number": 4,
+          "quote": "Nostrand Avenue/Rogers Avenue B44 SBS - 2012 implementation"
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_first-second-ave-m15-sbs-phase1",
+      "target_id": "project_m15-sbs-first-second-ave-phase1",
+      "reason": "Both records are the same First Avenue / Second Avenue M15 SBS project from the BRT Phase I list. They share the exact project name, SBS/BRT family, planned status, and matching source block text naming the October 2010 implementation.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "display_name": "First Avenue/Second Avenue M15 SBS",
+          "project_name": "First Avenue/Second Avenue M15 SBS",
+          "project_type": "Select Bus Service",
+          "project_family": "sbs_or_brt",
+          "status": "planned",
+          "document_time_status": "planned",
+          "primary_source_id": "brt_future_corridors"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "First Avenue/Second Avenue M15 SBS",
+          "project_name": "First Avenue/Second Avenue M15 SBS",
+          "project_type": "SBS",
+          "project_family": "sbs_or_brt",
+          "status": "planned",
+          "document_time_status": "planned",
+          "primary_source_id": "brt_phase2_future_corridors_rpt"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "project_first-second-ave-m15-sbs-phase1",
+          "source_id": "brt_future_corridors",
+          "block_id": "p004_c0002",
+          "page_number": 4,
+          "quote": "First Avenue/Second Avenue M15 SBS - October 2010 implementation"
+        },
+        {
+          "record_id": "project_m15-sbs-first-second-ave-phase1",
+          "source_id": "brt_phase2_future_corridors_rpt",
+          "block_id": "p004_c0002",
+          "page_number": 4,
+          "quote": "First Avenue/Second Avenue M15 SBS - October 2010 implementation"
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_fordham-road-bx12-sbs-phase1",
+      "target_id": "project_bx12-sbs-fordham-rd-phase1",
+      "reason": "Both records are the same Fordham Road Bx12 SBS project from the BRT Phase I list. They share the exact project name, SBS/BRT family, in-service document context, and matching future-corridors source block text; the naming difference is word order only.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "display_name": "Fordham Road Bx12 SBS",
+          "project_name": "Fordham Road Bx12 SBS",
+          "project_type": "Select Bus Service",
+          "project_family": "sbs_or_brt",
+          "status": "in service",
+          "document_time_status": "other",
+          "primary_source_id": "brt_future_corridors"
+        },
+        "target": {
+          "record_kind": "project",
+          "display_name": "Fordham Road Bx12 SBS",
+          "project_name": "Fordham Road Bx12 SBS",
+          "project_type": "SBS",
+          "project_family": "sbs_or_brt",
+          "status": "in service",
+          "document_time_status": "other",
+          "primary_source_id": "brt_phase2_future_corridors_rpt"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "project_fordham-road-bx12-sbs-phase1",
+          "source_id": "brt_future_corridors",
+          "block_id": "p004_c0002",
+          "page_number": 4,
+          "quote": "Fordham Road Bx12 SBS - in service"
+        },
+        {
+          "record_id": "project_bx12-sbs-fordham-rd-phase1",
+          "source_id": "brt_phase2_future_corridors_rpt",
+          "block_id": "p004_c0002",
+          "page_number": 4,
+          "quote": "Fordham Road Bx12 SBS - in service"
+        }
+      ]
+    }
+  ],
+  "guard_summary": {
+    "record_existence_and_kind": {
+      "command": "sqlite3 -header -csv data/canonical.db \"SELECT r.record_id,r.record_kind,r.display_name,p.project_name,p.project_type,p.project_family,p.borough,p.status,p.document_time_status,r.primary_source_id FROM records r JOIN projects p USING(record_id) WHERE r.record_id IN (<selected aliases and targets>) ORDER BY r.record_id;\"",
+      "result": "Returned all 14 selected alias/target records as record_kind=project. Selected clusters share project-level names and compatible project_type/project_family/status fields: Fordham Road-Inwood bus_priority, Eastern Parkway B14 transit priority, Utica/B46 SBS, Nostrand/Rogers B44 SBS, First/Second M15 SBS, and Fordham Road Bx12 SBS."
+    },
+    "existing_alias_conflicts": {
+      "merges_json_command": "jq -r --argjson aliases '[<selected aliases>]' '.aliases.project | to_entries[] | .key as $k | select($aliases | index($k)) | [.key,.value] | @tsv' data/identity-overrides/merges.json",
+      "merges_json_result": "Returned no rows.",
+      "identity_aliases_command": "sqlite3 -header -csv data/canonical.db \"SELECT kind,alias,target FROM identity_aliases WHERE kind='project' AND alias IN (<selected aliases>);\"",
+      "identity_aliases_result": "Returned no rows."
+    },
+    "do_not_merge_conflicts": {
+      "db_command": "sqlite3 -header -csv data/canonical.db \"SELECT kind,record_id_a,record_id_b,reason FROM do_not_merge WHERE kind='project' AND (record_id_a IN (<selected aliases and targets>) OR record_id_b IN (<selected aliases and targets>));\"",
+      "db_result": "Returned no rows.",
+      "json_command": "jq -r --argjson ids '[<selected aliases and targets>]' '.pairs.project[]? | select(any(.record_ids[]; . as $rid | ($ids | index($rid)))) | [.record_ids[0],.record_ids[1],.reason] | @tsv' data/identity-overrides/do-not-merge.json",
+      "json_result": "Returned no rows."
+    },
+    "prior_prep_conflicts": {
+      "command": "jq -r --argjson aliases '[<selected aliases>]' '.proposed_aliases[]? | select(.kind==\"project\") | select(.alias_id as $a | ($aliases | index($a))) | [.kind,.alias_id,.target_id] | @tsv' data/review_notes/codex-identity-batch0{47..99}-prep.json 2>/dev/null | sort -u",
+      "result": "Returned no rows; none of the selected project alias_ids appeared in prior Codex identity prep artifacts through identity099."
+    },
+    "source_evidence_commands": [
+      {
+        "command": "sqlite3 -header -csv data/canonical.db \"SELECT record_id,source_id,block_id,page_number,json_extract(ref_json,'$.source_quote') AS source_quote FROM evidence_refs WHERE record_id IN (<selected aliases and targets>) ORDER BY record_id, ordinal LIMIT 120;\"",
+        "result": "Confirmed citeable evidence refs exist for each selected alias and target record."
+      },
+      {
+        "command": "sqlite3 -header -csv data/canonical.db \"SELECT source_id,block_id,substr(replace(replace(raw_text,char(10),' '),char(13),' '),1,320) AS quote FROM blocks_fts WHERE (<selected evidence refs>) ORDER BY source_id,block_id;\"",
+        "result": "Confirmed compact source blocks name the same project scopes: Fordham Road-Inwood, Eastern Parkway B14 from Schenectady to Ralph, Utica/B46 SBS, and the BRT Phase I SBS entries for B44, M15, and Bx12."
+      }
+    ],
+    "scope_and_status_checks": {
+      "command": "sqlite3 -header -csv data/canonical.db \"WITH p AS (SELECT r.record_id,r.display_name,r.primary_source_id,COALESCE(NULLIF(p.project_name,''),NULLIF(p.name,''),r.display_name) AS key,p.project_name,p.name,p.project_type,p.project_family,p.borough,p.status,p.document_time_status FROM records r JOIN projects p USING(record_id) WHERE r.record_kind='project'), g AS (SELECT lower(key) k, COUNT(*) n FROM p GROUP BY lower(key) HAVING n>1) SELECT g.n,p.record_id,p.display_name,p.primary_source_id,p.project_name,p.name,p.project_type,p.project_family,p.borough,p.status,p.document_time_status FROM p JOIN g ON lower(p.key)=g.k ORDER BY g.n DESC, g.k, p.record_id LIMIT 200;\"",
+      "result": "Candidate search was limited to global project rows. Proposed aliases were selected only where document audience, source-time status, route naming, and corridor scope were compatible; broad programs, capital-plan rollups, unrelated same-name street-improvement rows, and ambiguous phase/corridor variants were left out."
+    },
+    "forbidden_command_compliance": {
+      "no_external_or_provider_backed_commands": true,
+      "no_profiles_or_providers": true,
+      "no_canonicalize_or_canonicalize_wave_or_canonicalize_review": true,
+      "no_campaign_dedup_or_identity_review_run": true,
+      "no_write_ask_schema_propose_or_ontology_normalize_run": true,
+      "no_materialize_export_jsonl_or_validate": true,
+      "inspection_commands_used": [
+        "pwd",
+        "git status --short",
+        "rg",
+        "jq",
+        "sqlite3 data/canonical.db",
+        "date -u"
+      ],
+      "files_written": [
+        "data/review_notes/codex-identity-batch101-prep.json"
+      ]
+    }
+  }
+}

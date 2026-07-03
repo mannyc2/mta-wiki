@@ -1,0 +1,80 @@
+{
+  "id": "route-identity-review-sparse-sbs-regression",
+  "date": "2026-07-01",
+  "mode": "codex_deterministic_post_ingest_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "pioneer",
+    "openai",
+    "deepseek",
+    "vllm",
+    "chandra"
+  ],
+  "bucket": {
+    "name": "route_identity_review_guardrail",
+    "candidate": "Sparse SBS route-index records without atomic route_id",
+    "records": [
+      "route_34th-st-sbs",
+      "route_fordham-pelham-pkwy-sbs",
+      "route_hylan-blvd-sbs",
+      "route_woodhaven-crossbay-sbs"
+    ]
+  },
+  "baseline": {
+    "validation": {
+      "submissions": 98109,
+      "canonical_records": 84028,
+      "wiki_pages": 7333,
+      "issues": 0
+    },
+    "existing_code_behavior": "candidateEdges already requires a non-empty matching route base before adding route candidate edges, and routeInfo returns no base route for route names without atomic route ids such as 34th Street Select Bus Service, Fordham Road-Pelham Parkway Select Bus Service, Hylan Boulevard Select Bus Service, and Woodhaven/Cross Bay Boulevard Select Bus Service."
+  },
+  "changes": {
+    "test_helper": {
+      "file": "packages/agents/src/identity-review.ts",
+      "summary": "identityReviewCandidateEdgesForTest now accepts optional source_labels and defaults them to an empty array, matching real identity-review records enough to test sparse route-name-only cases."
+    },
+    "regression_test": {
+      "file": "packages/agents/test/identity-review.test.ts",
+      "test": "does not create variant-only duplicate pressure for sparse named SBS routes",
+      "assertions": [
+        "each sparse SBS record has baseRoute undefined",
+        "each sparse SBS record still carries the sbs variant",
+        "candidate edge generation returns no route edges solely because the records share service_variant sbs"
+      ],
+      "fixture_shape": "Fixtures include realistic brt_route_index source labels and route_type_normalized select_bus_service values, while still omitting atomic route_id fields."
+    }
+  },
+  "verification": {
+    "commands": [
+      "bun test packages/agents/test/identity-review.test.ts",
+      "bun run typecheck",
+      "bun packages/cli/src/cli.ts validate"
+    ],
+    "identity_review_test": {
+      "tests_passed": 21,
+      "expect_calls": 41
+    },
+    "typecheck": "passed",
+    "validation": {
+      "submissions": 98109,
+      "canonical_records": 84028,
+      "wiki_pages": 7333,
+      "issues": 0
+    }
+  },
+  "unresolved": [
+    "No provider-backed identity-review run was executed; this is a deterministic local regression around candidate generation behavior.",
+    "High-denorm route hotspot audit results are pending from Codex subagents."
+  ],
+  "next_lanes": [
+    "Integrate high-denorm route hotspot subagent findings.",
+    "Pick the next high-confidence route split/aggregate/override fix with a measurable before/after count."
+  ]
+}

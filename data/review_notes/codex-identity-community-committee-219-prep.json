@@ -1,0 +1,402 @@
+{
+  "note_id": "codex-identity-community-committee-219-prep",
+  "batch": "identity-community-committee-219",
+  "created_at": "2026-06-23T13:55:00Z",
+  "author": "codex",
+  "scope": {
+    "operation": "prepare_durable_identity_cleanup_decisions_only",
+    "allowed_global_kinds": ["entity"],
+    "issue_type": "duplicate_global_identity",
+    "selection_note": "Focused current post-identity218 backlog pass for community-board generic-number collisions and committee/agency false positives.",
+    "write_limit": "Exactly one artifact was written: data/review_notes/codex-identity-community-committee-219-prep.json. No override files, LOG.md, submissions, generated canonical JSONL, canonical.db, materialized outputs, export outputs, validation output files, or wiki files were edited.",
+    "provider_backed_commands_run": false,
+    "forbidden_generated_output_commands_run": false
+  },
+  "current_duplicate_snapshot": {
+    "method": "Read-only local library call to validateRepo from packages/pipeline/src/validate.ts, plus read-only inspection of canonical entity JSONL and raw source blocks.",
+    "issue_counts": {
+      "all_validation_issues": 144,
+      "duplicate_global_identity": 144
+    },
+    "targeted_inputs": [
+      "data/canonical/entities.jsonl",
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json",
+      "raw/sources/*/blocks.jsonl",
+      "data/review_notes/codex-identity-community-board-dnm-218-prep.json",
+      "data/review_notes/codex-identity-batch216-prep.json",
+      "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl"
+    ]
+  },
+  "prepared_count": 6,
+  "proposed_durable_decisions": [
+    {
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_community-board-9-brooklyn-brt-nostrand",
+        "entity_queens-cb9-2015-01-brt-woodhaven"
+      ],
+      "identity_keys": ["entity_community-board-9"],
+      "reason": "Shared generic Community Board 9 key but different borough-scoped boards: Brooklyn CB9 versus Queens CB9.",
+      "evidence": [
+        {
+          "record_id": "entity_community-board-9-brooklyn-brt-nostrand",
+          "display_name": "Community Board 9, Brooklyn",
+          "payload_summary": "entity_type community board; extra_fields.borough Brooklyn",
+          "refs": [
+            {
+              "evidence_id": "201109_nostrand_cb9_slides#p001_c0004",
+              "quote": "Nostrand Avenue / Rogers Avenue Select Bus Service Presentation to Community Board 9"
+            },
+            {
+              "evidence_id": "2013_09_24_sbs_utica_cb9#p001_c0004",
+              "quote": "Brooklyn CB 9 September 24, 2013"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_queens-cb9-2015-01-brt-woodhaven",
+          "display_name": "Queens Community Board 9",
+          "payload_summary": "entity_name Queens Community Board 9; organization Queens Community Board 9",
+          "refs": [
+            {
+              "evidence_id": "2015_01_brt_woodhaven_cb9#p001_c0002",
+              "quote": "Queens CB 9 | January 13, 2015"
+            }
+          ]
+        }
+      ],
+      "guard_checks": {
+        "current_duplicate_issue_present": true,
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "direct_do_not_merge_pair_absent_from_current_overrides": true,
+        "direct_alias_absent_from_current_merges_json": true,
+        "same_borough_merge": false,
+        "different_borough_guard": true,
+        "confidence": "high"
+      },
+      "proposed_durable_mutation_row": {
+        "record_ids": [
+          "entity_community-board-9-brooklyn-brt-nostrand",
+          "entity_queens-cb9-2015-01-brt-woodhaven"
+        ],
+        "reason": "Shared generic Community Board 9 key but different borough/scope: Brooklyn versus Queens.",
+        "source_decision": "data/review_notes/codex-identity-community-committee-219-prep.json#identity-community-committee-219",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      }
+    },
+    {
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_bronx-cb6-2012-11-webster",
+        "entity_queens-community-board-6"
+      ],
+      "identity_keys": ["entity_community-board-6"],
+      "reason": "Shared generic Community Board 6 key but different borough-scoped boards: Bronx CB6 versus Queens CB6.",
+      "evidence": [
+        {
+          "record_id": "entity_bronx-cb6-2012-11-webster",
+          "display_name": "Community Board 6",
+          "payload_summary": "description Bronx community board; organization Bronx Community Board 6",
+          "refs": [
+            {
+              "evidence_id": "2013_03_sbs_webster_bx_cb6#p001_c0003",
+              "quote": "Presentation to Community Board 6 | March 7, 2013"
+            },
+            {
+              "evidence_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026#p001_c0003",
+              "quote": "CB 6 Transportation Committee"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_queens-community-board-6",
+          "display_name": "Community Board 6 (Queens)",
+          "payload_summary": "description Queens Community Board 6; organization Queens Community Board 6",
+          "refs": [
+            {
+              "evidence_id": "2015_05_13_brt_woodhaven_cb6_presentation#p001_c0002",
+              "quote": "Presentation to Community Board 6 | May 13, 2015"
+            }
+          ]
+        }
+      ],
+      "guard_checks": {
+        "current_duplicate_issue_present": true,
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "direct_do_not_merge_pair_absent_from_current_overrides": true,
+        "direct_alias_absent_from_current_merges_json": true,
+        "same_borough_merge": false,
+        "different_borough_guard": true,
+        "confidence": "high"
+      },
+      "proposed_durable_mutation_row": {
+        "record_ids": [
+          "entity_bronx-cb6-2012-11-webster",
+          "entity_queens-community-board-6"
+        ],
+        "reason": "Shared generic Community Board 6 key but different borough/scope: Bronx versus Queens.",
+        "source_decision": "data/review_notes/codex-identity-community-committee-219-prep.json#identity-community-committee-219",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      }
+    },
+    {
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_brooklyn-cb3-2011",
+        "entity_staten-island-community-board-3"
+      ],
+      "identity_keys": ["entity_community-board-3"],
+      "reason": "Shared generic Community Board 3 key but different borough-scoped boards: Brooklyn CB3 versus Staten Island CB3.",
+      "evidence": [
+        {
+          "record_id": "entity_brooklyn-cb3-2011",
+          "display_name": "Community Board 3, Brooklyn",
+          "payload_summary": "description Brooklyn Community Board 3; extra_fields.borough Brooklyn",
+          "refs": [
+            {
+              "evidence_id": "2011_03_07_brt_nostrand_cb3#p001_c0004",
+              "quote": "Nostrand Ave/Rogers Ave Select Bus Service Community Board 3"
+            },
+            {
+              "evidence_id": "2015_04_06_brt_uticaave_cb3_presentation#p011_c0002",
+              "quote": "Brooklyn Community Board 3"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_staten-island-community-board-3",
+          "display_name": "Community Board 3, Staten Island",
+          "payload_summary": "description Staten Island Community Board 3; parent_entity Staten Island",
+          "refs": [
+            {
+              "evidence_id": "201109_brt_hylan_introductory_info#p005_c0002",
+              "quote": "Meeting with Community Boards 1, 2 & 3, and Staten Island Elected Officials"
+            }
+          ]
+        }
+      ],
+      "guard_checks": {
+        "current_duplicate_issue_present": true,
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "direct_do_not_merge_pair_absent_from_current_overrides": true,
+        "direct_alias_absent_from_current_merges_json": true,
+        "same_borough_merge": false,
+        "different_borough_guard": true,
+        "confidence": "high"
+      },
+      "proposed_durable_mutation_row": {
+        "record_ids": [
+          "entity_brooklyn-cb3-2011",
+          "entity_staten-island-community-board-3"
+        ],
+        "reason": "Shared generic Community Board 3 key but different borough/scope: Brooklyn versus Staten Island.",
+        "source_decision": "data/review_notes/codex-identity-community-committee-219-prep.json#identity-community-committee-219",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      }
+    },
+    {
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_community-board-5-queens-2015",
+        "entity_queens-cb5-fresh-pond-rd"
+      ],
+      "identity_keys": ["entity_queens-community-board-5-transportation-and-public-transit-committee"],
+      "reason": "Parent community board versus its Transportation/Public Transit Committee. These are related Queens CB5 bodies, but the committee should not be collapsed into the parent board as the same canonical identity.",
+      "evidence": [
+        {
+          "record_id": "entity_community-board-5-queens-2015",
+          "display_name": "Community Board 5 (Queens)",
+          "payload_summary": "entity_type community board; organization Queens Community Board 5",
+          "refs": [
+            {
+              "evidence_id": "fresh_pond_rd_jun2019#p001_c0002",
+              "quote": "Community Board 5 | June 12, 2019"
+            },
+            {
+              "evidence_id": "2015_12_01_brt_woodhaven_cb5#p002_c0009",
+              "quote": "CB5 Transportation Services Committee & Public Transit Services Committee Meeting"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_queens-cb5-fresh-pond-rd",
+          "display_name": "Queens Community Board 5 Transportation Committee",
+          "payload_summary": "entity_type community board committee; entity_name Queens Community Board 5 Transportation and Public Transit Committee",
+          "refs": [
+            {
+              "evidence_id": "fresh_pond_rd_tc_jun2019#p001_c0002",
+              "quote": "Community Board 5 Transportation Committee | June 18, 2019"
+            }
+          ]
+        }
+      ],
+      "guard_checks": {
+        "current_duplicate_issue_present": true,
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "direct_do_not_merge_pair_absent_from_current_overrides": true,
+        "direct_alias_absent_from_current_merges_json": true,
+        "same_borough_merge": false,
+        "committee_parent_false_positive": true,
+        "confidence": "high"
+      },
+      "proposed_durable_mutation_row": {
+        "record_ids": [
+          "entity_community-board-5-queens-2015",
+          "entity_queens-cb5-fresh-pond-rd"
+        ],
+        "reason": "Queens Community Board 5 and its Transportation/Public Transit Committee are related parent/committee entities, not the same identity.",
+        "source_decision": "data/review_notes/codex-identity-community-committee-219-prep.json#identity-community-committee-219",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      }
+    },
+    {
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_finance-committee-mta",
+        "entity_meeting-doc-111901-mta-finance"
+      ],
+      "identity_keys": ["entity_mta-finance", "entity_mta-finance-workplan-2025"],
+      "reason": "MTA Finance Committee is a board committee; MTA Finance Department Office of Financial Services is a department. The shared finance/workplan keys are functional context, not same-identity evidence.",
+      "evidence": [
+        {
+          "record_id": "entity_finance-committee-mta",
+          "display_name": "MTA Finance Committee",
+          "payload_summary": "entity_type committee; parent_entity Metropolitan Transportation Authority",
+          "refs": [
+            {
+              "evidence_id": "meeting_doc_102786#p005_c0001",
+              "quote": "Minutes of the Metropolitan Transportation Authority Finance Committee Meeting"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_meeting-doc-111901-mta-finance",
+          "display_name": "MTA Finance Department Office of Financial Services",
+          "payload_summary": "entity_type department; organization Metropolitan Transportation Authority",
+          "refs": [
+            {
+              "evidence_id": "meeting_doc_111901#p026_c0003",
+              "quote": "MTA Finance Department Office of Financial Services May 22, 2023"
+            },
+            {
+              "evidence_id": "meeting_doc_124351#p157_c0003",
+              "quote": "MTA Finance Department"
+            }
+          ]
+        }
+      ],
+      "guard_checks": {
+        "current_duplicate_issue_present": true,
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "direct_do_not_merge_pair_absent_from_current_overrides": true,
+        "direct_alias_absent_from_current_merges_json": true,
+        "committee_agency_or_department_false_positive": true,
+        "confidence": "high"
+      },
+      "proposed_durable_mutation_row": {
+        "record_ids": [
+          "entity_finance-committee-mta",
+          "entity_meeting-doc-111901-mta-finance"
+        ],
+        "reason": "MTA Finance Committee is a board committee; MTA Finance Department Office of Financial Services is a department.",
+        "source_decision": "data/review_notes/codex-identity-community-committee-219-prep.json#identity-community-committee-219",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      }
+    },
+    {
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_bt-committee-members-sep2024",
+        "entity_mta-bridges-and-tunnels"
+      ],
+      "identity_keys": [
+        "entity_bridges-and-tunnels-committee",
+        "entity_bt-committee-workplan-2025",
+        "entity_bt-committee-workplan-2026"
+      ],
+      "reason": "Bridges and Tunnels Committee/Members is an MTA board committee context; MTA Bridges and Tunnels is the operating agency / TBTA. The committee oversees agency topics but is not the agency itself.",
+      "evidence": [
+        {
+          "record_id": "entity_bt-committee-members-sep2024",
+          "display_name": "Bridges and Tunnels Committee Members",
+          "payload_summary": "entity_type committee; entity_name Bridges and Tunnels Committee; organization MTA Bridges and Tunnels",
+          "refs": [
+            {
+              "evidence_id": "meeting_doc_151591#p001_c0005",
+              "quote": "Committee Members"
+            },
+            {
+              "evidence_id": "meeting_doc_151591#p001_c0006",
+              "quote": "D. Mack, Chair"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_mta-bridges-and-tunnels",
+          "display_name": "MTA Bridges and Tunnels",
+          "payload_summary": "entity_type agency; agency_name Triborough Bridge and Tunnel Authority; acronym TBTA",
+          "refs": [
+            {
+              "evidence_id": "meeting_doc_102771#p049_c0012",
+              "quote": "The legal name of MTA Bridges and Tunnels is Triborough Bridge and Tunnel Authority."
+            },
+            {
+              "evidence_id": "meeting_doc_102771#p003_c0002",
+              "quote": "Bridges and Tunnels"
+            }
+          ]
+        }
+      ],
+      "guard_checks": {
+        "current_duplicate_issue_present": true,
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "direct_do_not_merge_pair_absent_from_current_overrides": true,
+        "direct_alias_absent_from_current_merges_json": true,
+        "committee_agency_or_department_false_positive": true,
+        "confidence": "high"
+      },
+      "proposed_durable_mutation_row": {
+        "record_ids": [
+          "entity_bt-committee-members-sep2024",
+          "entity_mta-bridges-and-tunnels"
+        ],
+        "reason": "Bridges and Tunnels Committee/Members is a board committee context; MTA Bridges and Tunnels / TBTA is the operating agency.",
+        "source_decision": "data/review_notes/codex-identity-community-committee-219-prep.json#identity-community-committee-219",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      }
+    }
+  ],
+  "skipped_review_only": [
+    {
+      "candidate": "entity_queens-cb5-grand-ave-2024 -> entity_community-board-5-queens-2015",
+      "reason": "Same-borough Queens CB5 shape, but the source block for the alias says Queens Community Board 5 Transportation Committee, so this should be reviewed with the board-versus-committee modeling issue before aliasing.",
+      "confidence": "medium"
+    },
+    {
+      "candidate": "entity_brooklyn-cb11-bay-pkwy-cropsey-jun2025 -> entity_community-board-11-brooklyn",
+      "reason": "Plausible same-borough Brooklyn CB11 merge, but prior review notes already call out this exact alias candidate and the current evidence is a combined CBs 11 & 12 outreach reference.",
+      "confidence": "medium"
+    },
+    {
+      "candidate": "entity_community-board-12-brooklyn -> entity_brooklyn-community-board-12",
+      "reason": "Plausible same-borough Brooklyn CB12 merge, but the candidate id is already present in the richer record's generated aliases, so it was not repeated as a fresh direct alias proposal here.",
+      "confidence": "medium"
+    },
+    {
+      "candidate": "entity_community-advisory-committee-2015 <> entity_community-advisory-committee-webster",
+      "reason": "Likely different project-scoped Community Advisory Committees, but the generic CAC labels need source-specific project confirmation before a durable DNM row.",
+      "confidence": "low"
+    }
+  ],
+  "blockers": [
+    "Several same-borough community-board candidates are entangled with Transportation Committee records already folded into broader board records; those need a board-versus-committee modeling pass before safe merge proposals.",
+    "No override, materialize, validate CLI, export, DB, wiki, or LOG mutation was performed by this prep pass."
+  ]
+}

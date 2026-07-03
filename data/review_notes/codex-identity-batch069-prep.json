@@ -1,0 +1,397 @@
+{
+  "note_id": "codex-identity-batch069-prep",
+  "batch": "identity-batch069",
+  "lane": "IDENTITY PREP ONLY",
+  "checkpoint": "post-wave28",
+  "status": "prepared",
+  "created_at": "2026-06-22T23:03:49Z",
+  "scope": {
+    "write_scope": [
+      "data/review_notes/codex-identity-batch069-prep.json"
+    ],
+    "excluded_outputs": [
+      "data/identity-overrides/merges.json",
+      "data/submission-overrides/retired.json",
+      "LOG.md",
+      "manifest",
+      "data/canonical",
+      "data/materialized",
+      "wiki",
+      "data/canonical.db"
+    ],
+    "prior_prep_disjoint_through_batch": "identity-batch068"
+  },
+  "context": {
+    "source_issue": "unresolved duplicate_global_identity backlog",
+    "selection_policy": "high-confidence person entity aliases with exact shared normalized person identity key, canonical source evidence on both records, and no current/prior alias/do-not-merge guard hit; broad agencies/programs/committees, initials-only pairs, and generated-name pairs deferred.",
+    "canonical_entity_records_scanned": 2561,
+    "prior_prep_files_considered_through_batch068": 22,
+    "prior_prep_alias_entries_considered_through_batch068": 208,
+    "prior_prep_target_entries_considered_through_batch068": 151,
+    "prior_prep_unique_records_excluded_through_batch068": 357,
+    "current_merges_entity_alias_count": 447,
+    "current_identity_aliases_entity_count": 447,
+    "current_do_not_merge_entity_pair_count": 20,
+    "candidate_pairs_after_alias_do_not_merge_and_prior_prep_filters": 191
+  },
+  "intended_mutation": {
+    "aliases": {
+      "entity": {
+        "entity_meeting-doc-59166-david-cannon": "entity_meeting-doc-68196-david-cannon",
+        "entity_hugo-zamora-project-lead": "entity_meeting-doc-143306-hugo-zamora",
+        "entity_jessica-lazarus-dep-chief-commercial-ventures": "entity_meeting-doc-124306-jessica-lazarus-sr-dir",
+        "entity_jill-strohmeier-deloitte": "entity_meeting-doc-124286-jill-strohmeier",
+        "entity_joanne-feld-deputy-director-finance": "entity_meeting-doc-129041-joanne-feld",
+        "entity_joe-keane-44201": "entity_meeting-doc-131491-joe-keane",
+        "entity_kostas-makrakis-deloitte": "entity_meeting-doc-190056-kostas-makrakis",
+        "entity_meeting151651-lisa-schreibman": "entity_meeting154966-lisa-schreibman",
+        "entity_meeting-doc-151641-jose-la-salle": "entity_meeting-doc-151646-jose-la-salle",
+        "entity_lamond-kearse-cco": "entity_meeting-doc-190056-lamond-kearse"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-59166-david-cannon",
+      "target": "entity_meeting-doc-68196-david-cannon",
+      "validator_duplicate_key": "entity_david-k-cannon",
+      "reason": "Both canonical records identify the same person, David K. Cannon, with entity_type person and source-backed meeting or staff context.",
+      "evidence_refs": [
+        "meeting_doc_59166#p003_c0002",
+        "meeting_doc_68196#p049_c0002"
+      ],
+      "shared_identity_keys": [
+        "entity_david-k-cannon"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch068": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_hugo-zamora-project-lead",
+      "target": "entity_meeting-doc-143306-hugo-zamora",
+      "validator_duplicate_key": "entity_hugo-zamora",
+      "reason": "Both canonical records identify the same person, Hugo Zamora, with entity_type person and source-backed meeting or staff context. Context: Managed the G Line summer shutdown, will manage the Rockaway Line reconstruction project beginning January / Appointed as G-Train Czar for the duration of the G line signal modernization project. A three-decade transit veteran.",
+      "evidence_refs": [
+        "meeting_doc_160446#p005_c0003",
+        "meeting_doc_143306#p007_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_hugo-zamora"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch068": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_jessica-lazarus-dep-chief-commercial-ventures",
+      "target": "entity_meeting-doc-124306-jessica-lazarus-sr-dir",
+      "validator_duplicate_key": "entity_jessica-lazarus",
+      "reason": "Both canonical records identify the same person, Jessica Lazarus, with entity_type person and source-backed meeting or staff context.",
+      "evidence_refs": [
+        "meeting_doc_202096#p015_c0005",
+        "meeting_doc_124306#p004_c0004"
+      ],
+      "shared_identity_keys": [
+        "entity_jessica-lazarus"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch068": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_jill-strohmeier-deloitte",
+      "target": "entity_meeting-doc-124286-jill-strohmeier",
+      "validator_duplicate_key": "entity_jill-strohmeier",
+      "reason": "Both canonical records identify the same person, Jill Strohmeier, with entity_type person and source-backed meeting or staff context.",
+      "evidence_refs": [
+        "meeting_doc_91561#p004_c0004",
+        "meeting_doc_124286#p003_c0019"
+      ],
+      "shared_identity_keys": [
+        "entity_jill-strohmeier"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch068": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_joanne-feld-deputy-director-finance",
+      "target": "entity_meeting-doc-129041-joanne-feld",
+      "validator_duplicate_key": "entity_joanne-s-feld",
+      "reason": "Both canonical records identify the same person, Joanne S. Feld, with entity_type person and source-backed meeting or staff context.",
+      "evidence_refs": [
+        "meeting_doc_146976#p005_c0005",
+        "meeting_doc_129041#p004_c0026"
+      ],
+      "shared_identity_keys": [
+        "entity_joanne-s-feld"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch068": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_joe-keane-44201",
+      "target": "entity_meeting-doc-131491-joe-keane",
+      "validator_duplicate_key": "entity_joe-keane",
+      "reason": "Both canonical records identify the same person, Joe Keane, with entity_type person and source-backed meeting or staff context.",
+      "evidence_refs": [
+        "meeting_doc_44201#p046_c0004",
+        "meeting_doc_131491#p006_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_joe-keane"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch068": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_kostas-makrakis-deloitte",
+      "target": "entity_meeting-doc-190056-kostas-makrakis",
+      "validator_duplicate_key": "entity_kostas-makrakis",
+      "reason": "Both canonical records identify the same person, Kostas Makrakis, with entity_type person and source-backed meeting or staff context.",
+      "evidence_refs": [
+        "meeting_doc_163066#p003_c0019",
+        "meeting_doc_190056#p003_c0027"
+      ],
+      "shared_identity_keys": [
+        "entity_kostas-makrakis"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch068": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting151651-lisa-schreibman",
+      "target": "entity_meeting154966-lisa-schreibman",
+      "validator_duplicate_key": "entity_lisa-schreibman",
+      "reason": "Both canonical records identify the same person, Lisa Schreibman, with entity_type person and source-backed meeting or staff context.",
+      "evidence_refs": [
+        "meeting_doc_151651#p001_c0010",
+        "meeting_doc_154966#p001_c0018"
+      ],
+      "shared_identity_keys": [
+        "entity_lisa-schreibman"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch068": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-151641-jose-la-salle",
+      "target": "entity_meeting-doc-151646-jose-la-salle",
+      "validator_duplicate_key": "entity_jose-la-salle",
+      "reason": "Both canonical records identify the same person, Jose La Salle, with entity_type person and source-backed meeting or staff context. Context: Subway's Weekend Czar featured in Cafecito Chat for Hispanic Heritage Month.",
+      "evidence_refs": [
+        "meeting_doc_151641#p006_c0006",
+        "meeting_doc_151646#p006_c0006"
+      ],
+      "shared_identity_keys": [
+        "entity_jose-la-salle"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch068": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_lamond-kearse-cco",
+      "target": "entity_meeting-doc-190056-lamond-kearse",
+      "validator_duplicate_key": "entity_lamond-kearse",
+      "reason": "Both canonical records identify the same person, Lamond Kearse, with entity_type person and source-backed meeting or staff context.",
+      "evidence_refs": [
+        "meeting_doc_163066#p008_c0004",
+        "meeting_doc_190056#p007_c0004"
+      ],
+      "shared_identity_keys": [
+        "entity_lamond-kearse"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch068": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    }
+  ],
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "canonical_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "targets_not_alias_mapped_in_merges_json": true,
+    "targets_not_alias_mapped_in_identity_aliases_table": true,
+    "no_overlap_with_prior_prep_through_batch068": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 20,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 20,
+    "source_page_blocks_missing": [],
+    "all_pass": true
+  },
+  "deferred_low_confidence_examples": [
+    {
+      "alias": "entity_b-lopez-cgc-oct2025",
+      "target": "entity_b-lopez-committee-member",
+      "reason": "Initial-only committee-member pair; not enough full-name evidence for this high-confidence batch."
+    },
+    {
+      "alias": "entity_ellen-kirwin-matthew-kirwin",
+      "target": "entity_ellen-kirwin-meeting-doc-157721",
+      "reason": "Combined two-person entity, so aliasing would risk collapsing distinct identities."
+    },
+    {
+      "alias": "entity_nyct_mta_procurement_department",
+      "target": "entity_procurement_department",
+      "reason": "Broad department/agency-style entity; outside this named-person safe batch."
+    }
+  ],
+  "commands_used_for_evidence": [
+    {
+      "command": "test ! -e data/review_notes/codex-identity-batch069-prep.json && echo artifact_missing || echo artifact_exists",
+      "purpose": "Confirmed the batch069 prep artifact did not already exist before writing.",
+      "result": "artifact_missing"
+    },
+    {
+      "command": "jq '.aggregate_guard_results, .intended_mutation.aliases.entity' data/review_notes/codex-identity-batch068-prep.json",
+      "purpose": "Read prior batch068 aliases and guard result to preserve disjointness after the immediately preceding batch.",
+      "result": "batch068 contained 8 aliases with all aggregate guards passing."
+    },
+    {
+      "command": "node <<'NODE' <read-only duplicate_global_identity mining over data/canonical/entities.jsonl, current merges.json, read-only identity_aliases, prior prep aliases and targets through batch068, and do-not-merge guards> NODE",
+      "purpose": "Mined unresolved duplicate_global_identity candidates while excluding already mapped aliases, alias-mapped targets, current identity_aliases, prior prep records, and do-not-merge pairs.",
+      "result": "2561 current entity records scanned; 447 current entity aliases in merges.json; 447 current entity aliases in identity_aliases; 191 candidate pairs after alias/do-not-merge/prior-prep filters; 10 high-confidence candidates selected."
+    },
+    {
+      "command": "jq -r 'select(.record_id==...) | [.record_id,.display_name,.payload.entity_name,.payload.entity_type,.payload.description,([.evidence_refs[].evidence_id]|join(\",\"))] | @tsv' data/canonical/entities.jsonl",
+      "purpose": "Inspected selected canonical entity names, types, descriptions, and evidence refs before finalizing the decision set.",
+      "result": "All selected aliases and targets are canonical entity records with entity_type person and source-backed evidence refs."
+    },
+    {
+      "command": "node <<'NODE' <read-only final guard script for canonical record presence, alias/target guard checks, prior prep disjointness through batch068, shared identity keys, raw source blocks, and source-page blocks> NODE",
+      "purpose": "Verified selected aliases and evidence before writing this prep artifact.",
+      "result": "all_pass true; 20 raw source blocks checked, 20 source-page blocks checked, no missing evidence blocks."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "purpose": "Stamped this prep artifact.",
+      "result": "2026-06-22T23:03:49Z"
+    }
+  ],
+  "commands_intentionally_not_run": [
+    "materialize",
+    "validate",
+    "export-jsonl",
+    "provider-backed commands",
+    "DB repair/publish"
+  ]
+}

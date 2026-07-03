@@ -1,0 +1,145 @@
+{
+  "note_id": "codex-ingest-provider-wave30-31-reconcile-20260623",
+  "created_at": "2026-06-23T15:42:04Z",
+  "author": "codex",
+  "kind": "ingest_provider_state_reconciliation",
+  "status": "completed_read_only_except_this_note",
+  "scope": "Reconcile wave30 and wave31 ingest-provider outcomes and current retry posture without editing LOG.md or data/post-ingest/codex-orchestration-2026-06-21.json.",
+  "commands_run": [
+    "read-only inspection of wave30/wave31 reports and detached logs",
+    "read-only inspection of campaign readiness summary and readiness rows",
+    "read-only process sweep with ps"
+  ],
+  "commands_not_run": [
+    "provider-backed ingest commands",
+    "materialize",
+    "validate",
+    "write",
+    "ask",
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review-run",
+    "ontology-normalize-run"
+  ],
+  "files_intentionally_not_edited": [
+    "LOG.md",
+    "data/post-ingest/codex-orchestration-2026-06-21.json"
+  ],
+  "wave30": {
+    "report": "data/campaigns/validation-2026-06/wave-30/report.json",
+    "log": "data/campaigns/validation-2026-06/wave-30/ingest-detached-20260623T153247Z.log",
+    "pid_file": "data/campaigns/validation-2026-06/wave-30/ingest-detached.pid",
+    "pid_recorded": 1345246,
+    "process_currently_running": false,
+    "profile": "pioneer-deepseek-flash",
+    "sources_selected": 10,
+    "ingested": 0,
+    "skipped_already_done": 0,
+    "quarantined": 10,
+    "quarantine_reason_counts": {
+      "401 status code (no body)": 10
+    },
+    "telemetry": {
+      "provider": "pioneer",
+      "requests": 0,
+      "rate_limited_429": 0,
+      "circuit_breaker_trips": 0,
+      "wall_clock_s": 148,
+      "materialize_runs": 1,
+      "materialize_seconds": 142
+    },
+    "outcome": "Completed with 0 ingests and 10 quarantines. This is best interpreted as Pioneer authentication/key failure, not source-prep failure, because all selected sources had blocks and every quarantine reason was 401."
+  },
+  "wave31": {
+    "report": "data/campaigns/validation-2026-06/wave-31/report.json",
+    "log": "data/campaigns/validation-2026-06/wave-31/ingest-detached-20260623T153652Z.log",
+    "pid_file": "data/campaigns/validation-2026-06/wave-31/ingest-detached.pid",
+    "pid_recorded": 1349385,
+    "process_currently_running": false,
+    "profile": "deepseek-flash",
+    "sources_selected": 10,
+    "ingested": 0,
+    "skipped_already_done": 0,
+    "quarantined": 10,
+    "quarantine_reason_counts": {
+      "402 Insufficient Balance": 10
+    },
+    "telemetry": {
+      "provider": "deepseek",
+      "requests": 0,
+      "rate_limited_429": 0,
+      "circuit_breaker_trips": 0,
+      "wall_clock_s": 146,
+      "materialize_runs": 1,
+      "materialize_seconds": 140
+    },
+    "outcome": "Completed with 0 ingests and 10 quarantines. This confirms the direct DeepSeek retry path is blocked by account balance, while the same 10-source pool remains ready and not ingested."
+  },
+  "refreshed_pioneer_key_for_wave32": {
+    "should_use_pasted_refreshed_key": true,
+    "reason": "Wave30 failed on Pioneer with 10x 401 and wave31 failed on direct DeepSeek with 10x 402 Insufficient Balance. If the pasted refreshed Pioneer key is current and funded, it is the appropriate next retry credential for wave32.",
+    "secret_handling": "Do not record the key in files, shell history, logs, or review notes. Pass it only as an ephemeral environment value at command launch.",
+    "do_not_include_secret_key_in_command_record": true
+  },
+  "wave32_command_template_non_secret": "PIONEER_API_KEY=<PIONEER_API_KEY> MTA_MATERIALIZE_EVERY=100000 bun packages/cli/src/cli.ts campaign ingest --wave 32 --id validation-2026-06 --size 10 --concurrency 10 --timeout-min 300 --profile pioneer-deepseek-flash",
+  "current_ready_pool": {
+    "readiness_summary": "data/campaigns/validation-2026-06/readiness-summary.json",
+    "readiness_rows": "data/campaigns/validation-2026-06/readiness.jsonl",
+    "total": 2566,
+    "ready": 2302,
+    "not_ready": 264,
+    "ingested": 2300,
+    "ready_never_ingested_count": 10,
+    "quarantined": 264,
+    "ready_never_ingested_sources": [
+      "meeting_doc_100251",
+      "meeting_doc_105826",
+      "meeting_doc_109241",
+      "meeting_doc_109251",
+      "meeting_doc_109271",
+      "meeting_doc_111661",
+      "meeting_doc_111666",
+      "meeting_doc_111681",
+      "meeting_doc_113511",
+      "meeting_doc_113516"
+    ]
+  },
+  "current_process_state": {
+    "provider_ingest_processes_running": false,
+    "wave30_pid_1345246_running": false,
+    "wave31_pid_1349385_running": false,
+    "leave_alone_processes": [
+      {
+        "pid": 1117971,
+        "role": "vllm serve chandra-ocr-2",
+        "status": "running",
+        "leave_alone": true
+      },
+      {
+        "pid": 1118735,
+        "role": "VLLM::EngineCore child of vLLM",
+        "status": "running",
+        "leave_alone": true
+      },
+      {
+        "pid": 1317357,
+        "role": "bun packages/cli/src/cli.ts chandra-run for PDF23 OCR completion",
+        "status": "running",
+        "leave_alone": true
+      },
+      {
+        "pid": 1317413,
+        "role": "scripts/chandra/ocr_worker.py worker for chandra-run",
+        "status": "running",
+        "leave_alone": true
+      }
+    ]
+  },
+  "risks_and_guards": [
+    "Wave-end materialize ran even with zero ingests in both waves; keep MTA_MATERIALIZE_EVERY=100000 on wave32 to avoid generated-output churn during the retry.",
+    "Do not run direct deepseek-flash again until the 402 Insufficient Balance condition is resolved.",
+    "Do not treat the 10-source pool as source-prep-blocked; the rows are ready with blocks and failed only at provider/account level.",
+    "Do not stop or restart Chandra/vLLM OCR processes; they are the active source-prep lane and unrelated to provider ingest retry.",
+    "After any successful wave32 ingest, serialize generated-output follow-up and verify materialize/export/validate rather than running provider-backed post-ingest commands."
+  ]
+}

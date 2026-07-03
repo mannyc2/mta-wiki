@@ -1,0 +1,146 @@
+[
+  {
+    "agent_id": "route-service-identity",
+    "name": "Route & Service Identity Agent",
+    "purpose": "Normalize route identity, service variants, plus/SBS/local policy, route-id authority, and route merge/split decisions.",
+    "owns": [
+      "route identity",
+      "route_type/service_variant",
+      "MTA plus route surfaces",
+      "route merge/split and do-not-merge decisions"
+    ],
+    "decision_contract": [
+      "merge",
+      "do_not_merge",
+      "split_record",
+      "alias",
+      "canonical_value",
+      "needs_more_data",
+      "no_change"
+    ]
+  },
+  {
+    "agent_id": "project-corridor-spatial",
+    "name": "Project/Corridor Spatial Identity Agent",
+    "purpose": "Normalize project and corridor identity, corridor limits, street/borough scope, and route-list context on spatial records.",
+    "owns": [
+      "project identity",
+      "corridor identity",
+      "street/limits/borough scope",
+      "project/corridor route-list context"
+    ],
+    "decision_contract": [
+      "merge",
+      "do_not_merge",
+      "weak_alias",
+      "missing_identity_field",
+      "relation_candidate",
+      "needs_more_data",
+      "no_change"
+    ]
+  },
+  {
+    "agent_id": "entity-source-role",
+    "name": "Entity & Source-Role Agent",
+    "purpose": "Normalize agencies, publishers, operators, people-vs-agency distinctions, source roles, and parent/owner organization context.",
+    "owns": [
+      "entity identity",
+      "entity_type",
+      "publisher/operator/agency source roles",
+      "parent organization context"
+    ],
+    "decision_contract": [
+      "merge",
+      "do_not_merge",
+      "canonical_value",
+      "relation_candidate",
+      "entity_type_mapping",
+      "needs_more_data",
+      "no_change"
+    ]
+  },
+  {
+    "agent_id": "metric-claim-ontology",
+    "name": "Metric & Claim Ontology Agent",
+    "purpose": "Normalize metric units, metric dimensions, claim data/change types, and metric/claim relation-context fields.",
+    "owns": [
+      "metric_claim.unit",
+      "unit_normalized other bucket",
+      "metric dimensions",
+      "claim data_type/change_type",
+      "metric route/source context"
+    ],
+    "decision_contract": [
+      "canonical_value",
+      "alias_field",
+      "relation_candidate",
+      "open_normalizer",
+      "reject_mapping",
+      "needs_more_data",
+      "no_change"
+    ]
+  },
+  {
+    "agent_id": "relation-ontology",
+    "name": "Relation Ontology Agent",
+    "purpose": "Normalize relation families, exact relation-kind aliases, endpoint shape, and relation-context fields that should become explicit relations.",
+    "owns": [
+      "relation_family",
+      "relation_kind",
+      "raw_relation_kind aliases",
+      "endpoint shape",
+      "relation payload route/context fields"
+    ],
+    "decision_contract": [
+      "relation_family_mapping",
+      "canonical_relation_kind",
+      "relation_alias",
+      "endpoint_fix",
+      "relation_candidate",
+      "keep_relation_kind_passthrough",
+      "reject_mapping",
+      "needs_more_data",
+      "no_change"
+    ]
+  },
+  {
+    "agent_id": "lifecycle-intervention-taxonomy",
+    "name": "Lifecycle & Intervention Taxonomy Agent",
+    "purpose": "Normalize event, treatment, project-family, status, and document-time lifecycle taxonomy while preserving source literals.",
+    "owns": [
+      "event_family",
+      "treatment_family",
+      "project_family",
+      "document_time_status",
+      "date/status semantics"
+    ],
+    "decision_contract": [
+      "canonical_value",
+      "family_alias",
+      "bounded_normalizer",
+      "keep_other_passthrough",
+      "reject_mapping",
+      "needs_more_data",
+      "no_change"
+    ]
+  },
+  {
+    "agent_id": "source-gap-resolution",
+    "name": "Source Gap & Caveat Resolution Agent",
+    "purpose": "Review source gaps as document-scoped caveats, corpus-resolvable gaps, or extraction issues, using wiki/sources search hints before treating something as missing.",
+    "owns": [
+      "source_gap.gap_kind",
+      "source_gap.missing_information",
+      "source-scoped caveats",
+      "cross-source resolution candidates"
+    ],
+    "decision_contract": [
+      "resolved_by_source",
+      "remains_source_scoped_caveat",
+      "convert_to_claim_caveat",
+      "canonical_value",
+      "needs_more_data",
+      "no_change"
+    ]
+  }
+]

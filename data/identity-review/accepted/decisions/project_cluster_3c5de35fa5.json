@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "project_cluster_3c5de35fa5",
+  "kind": "project",
+  "packet_path": "data/identity-review/packets/project_cluster_3c5de35fa5.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/project_cluster_3c5de35fa5.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 6,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "project_bb28w-hct-standpipe",
+        "project_rk21ph2-rfk-standpipe"
+      ],
+      "reason": "Distinct projects: different project names ('BB-28W: Hugh L. Carey Tunnel Brooklyn Plaza Standpipe Replacement' vs 'RK-21Ph2: Fire Standpipe Acceleration Ph.2 at the Robert F. Kennedy Bridge'), different locations (Hugh L. Carey Tunnel vs Robert F. Kennedy Bridge), and different budgets ($3M vs $4.9M). The only shared attribute is program 'Moving NY Forward', which is relation context, not merge authority (per review reason and Test 1 of the merge canon: program membership is relation/payload, not identity)."
+    },
+    {
+      "record_ids": [
+        "project_bb28w-hct-standpipe",
+        "project_rk81-rfk-interoperability"
+      ],
+      "reason": "Distinct projects: different project names ('BB-28W: Hugh L. Carey Tunnel Brooklyn Plaza Standpipe Replacement' vs 'RK-81: Facility Interoperability Improvements (Demo of Old Structure) at the Robert F. Kennedy Bridge'), different locations (Hugh L. Carey Tunnel vs Robert F. Kennedy Bridge), and different budgets ($3M vs $8.8M). Shared program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_bb28w-hct-standpipe",
+        "project_vnb-brooklyn-approach-reconstruction"
+      ],
+      "reason": "Distinct projects: different project names ('BB-28W: Hugh L. Carey Tunnel Brooklyn Plaza Standpipe Replacement' vs 'Brooklyn Approach Reconstruction' at Verrazzano-Narrows Bridge), different locations (Hugh L. Carey Tunnel vs Verrazzano-Narrows Bridge), different scopes and budgets ($3M vs $26.1M, standpipe vs approach reconstruction). Shared program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_rk21ph2-rfk-standpipe",
+        "project_rk81-rfk-interoperability"
+      ],
+      "reason": "Distinct projects even though both are at Robert F. Kennedy Bridge: different project names ('RK-21Ph2: Fire Standpipe Acceleration Ph.2' vs 'RK-81: Facility Interoperability Improvements (Demo of Old Structure)'), different project numbers (RK-21Ph2 vs RK-81), and different budgets ($4.9M vs $8.8M). They are separate capital acceleration initiatives. Shared program and bridge location do not make them the same project (Test 1: different project scope/name is a strong identity difference)."
+    },
+    {
+      "record_ids": [
+        "project_rk21ph2-rfk-standpipe",
+        "project_vnb-brooklyn-approach-reconstruction"
+      ],
+      "reason": "Distinct projects: different project names and locations (Robert F. Kennedy Bridge vs Verrazzano-Narrows Bridge), different scopes (fire standpipe vs approach reconstruction), different budgets ($4.9M vs $26.1M). Shared program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_rk81-rfk-interoperability",
+        "project_vnb-brooklyn-approach-reconstruction"
+      ],
+      "reason": "Distinct projects: different project names and locations (Robert F. Kennedy Bridge vs Verrazzano-Narrows Bridge), different scopes (facility interoperability improvements vs approach reconstruction), different budgets ($8.8M vs $26.1M). Shared program is not merge authority."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "All four records are distinct projects with unique project names, locations, budgets, and scopes. The only common factor is the program 'Moving NY Forward', which the review reason and merge canon treat as relation context, not merge authority. Therefore, no record pair should be merged. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

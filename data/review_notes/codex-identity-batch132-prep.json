@@ -1,0 +1,150 @@
+{
+  "batch_id": "identity132",
+  "prepared_count": 9,
+  "proposed_aliases": [
+    {
+      "global_kind": "route",
+      "alias_id": "route_bx41-sbs-may2016",
+      "target_id": "route_webster-ave-sbs",
+      "confidence": "high",
+      "reason": "Same Bronx Bx41 Select Bus Service route identity. The alias is Bx41 SBS on Webster Avenue, and the target is the larger Webster Avenue/BX41+ SBS cluster whose merged field values include Bx41, Bx41 SBS, Bx41 Select Bus Service, and Webster Avenue Select Bus Service.",
+      "evidence_refs": [
+        "brt_bx6_south_bronx_may2016#p003_c0006",
+        "brt_bx6_south_bronx_may2016#p007_c0003",
+        "brt_route_index#p001_b0001",
+        "ace_routes_dataset_dictionary#p001_b0093"
+      ],
+      "guard_notes": "Route guard satisfied: same Bx41/BX41+ durable SBS identity, Bronx/Webster Avenue context, and no local/LTD/subway/rail variant conflict. Alias is absent from merges, absent from route do-not-merge pairs with the target, and absent from visible prior identity prep artifacts."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_bus-fwd-2-gun-hill-road-bronx-sbs",
+      "target_id": "corridor_gun-hill-road-2023",
+      "confidence": "high",
+      "reason": "Same Gun Hill Road corridor in the Bronx. The alias is the Bus Forward 2 Bronx SBS candidate entry for Gun Hill Road, and the target is the broader Gun Hill Road corridor record with completed bus lane/project evidence.",
+      "evidence_refs": [
+        "bus_forward_2#p005_c0001",
+        "meeting_doc_128931#p003_c0011",
+        "meeting_doc_127471#p005_c0007"
+      ],
+      "guard_notes": "Corridor guard satisfied: exact corridor name and Bronx borough are compatible; candidate/completed status is project-time context, not a different durable corridor identity. Alias is absent from merges, absent from corridor do-not-merge pairs with the target, and absent from visible prior identity prep artifacts."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_dekalb-av-brooklyn",
+      "target_id": "corridor_dekalb-av",
+      "confidence": "high",
+      "reason": "Same Dekalb Avenue corridor in Brooklyn. Both records describe Dekalb/Dekalb Av bus and safety improvement corridor context tied to the B38/Dekalb-Lafayette project materials.",
+      "evidence_refs": [
+        "dekalb_lafayette_cb2_dec2024#p004_c0002",
+        "dekalb_lafayette_cb2_dec2024#p010_c0002",
+        "dekalb_lafayette_cb3_dec2024#p013_c0001",
+        "dekalb_lafayette_cb3_dec2024#p014_c0001"
+      ],
+      "guard_notes": "Corridor guard satisfied: abbreviation-only name difference, same Brooklyn borough, and compatible Dekalb Avenue improvement scope. Alias is absent from merges, absent from corridor do-not-merge pairs with the target, and absent from visible prior identity prep artifacts."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_flushing-jamaica-brt-phase2",
+      "target_id": "corridor_flushing-jamaica",
+      "confidence": "high",
+      "reason": "Same Flushing-Jamaica Corridor identity in Queens. The alias is the BRT Phase II candidate corridor, and the target is the larger Flushing-Jamaica corridor cluster with Queens route/corridor details.",
+      "evidence_refs": [
+        "brt_phase2_future_corridors_rpt#p004_c0002",
+        "brt_future_corridors#p004_c0002",
+        "2014_06_11_brt_flushingjamaica_cac1_presentation#p016_c0003",
+        "2014_06_11_brt_flushingjamaica_cac1_presentation#p017_c0004"
+      ],
+      "guard_notes": "Corridor guard satisfied: exact corridor name and Queens borough context are compatible. This does not merge route records or the broader Bronx-Flushing-Jamaica SBS branding beyond the corridor duplicate already clustered in the target. Alias is absent from merges, absent from corridor do-not-merge pairs with the target, and absent from visible prior identity prep artifacts."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_grand-st-grand-av-metropolitan-to-queens-blvd",
+      "target_id": "corridor_grand-street-grand-avenue",
+      "confidence": "high",
+      "reason": "Same Grand Street/Grand Avenue corridor segment. Both records give the corridor as Grand St/Grand Av or Grand Street/Grand Avenue and the limits as Metropolitan Avenue/Av to Queens Boulevard/Blvd.",
+      "evidence_refs": [
+        "grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024#p004_c0002",
+        "better_buses#p001_b0001",
+        "grand_ave_metropolitan_ave_queens_blvd_nov2024#p004_c0002"
+      ],
+      "guard_notes": "Corridor guard satisfied: abbreviation-only name/limit differences, same Queens context, and exact compatible limits. Alias is absent from merges, absent from corridor do-not-merge pairs with the target, and absent from visible prior identity prep artifacts."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_lafayette-av-brooklyn",
+      "target_id": "corridor_lafayette-av",
+      "confidence": "high",
+      "reason": "Same Lafayette Avenue corridor in Brooklyn. Both records describe Lafayette/Lafayette Av as part of the Dekalb-Lafayette bus and safety improvement corridor, including Vision Zero priority corridor context.",
+      "evidence_refs": [
+        "dekalb_lafayette_cb2_dec2024#p010_c0002",
+        "dekalb_lafayette_cb3_dec2024#p010_c0002",
+        "dekalb_lafayette_cb3_dec2024#p015_c0001",
+        "dekalb_lafayette_cb3_dec2024#p016_c0001"
+      ],
+      "guard_notes": "Corridor guard satisfied: abbreviation-only name difference, same Brooklyn borough, and compatible Lafayette Avenue improvement scope. Alias is absent from merges, absent from corridor do-not-merge pairs with the target, and absent from visible prior identity prep artifacts."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_laguardia-east-elmhurst-brt-phase2",
+      "target_id": "corridor_laguardia-east-elmhurst",
+      "confidence": "high",
+      "reason": "Same LaGuardia/East Elmhurst corridor identity in Queens. The alias is the BRT Phase II version, while the target is the larger LaGuardia Airport/East Elmhurst corridor cluster with matching short-list and outreach evidence.",
+      "evidence_refs": [
+        "brt_phase2_future_corridors_rpt#p003_c0005",
+        "brt_phase2_future_corridors_rpt#p004_c0002",
+        "110622_lga_aa_slides#p003_c0008",
+        "brt_phase2_outreach_rpt#p022_c0009"
+      ],
+      "guard_notes": "Corridor guard satisfied: exact/slightly expanded corridor name, same Queens borough, and no incompatible limits. Alias is absent from merges, absent from corridor do-not-merge pairs with the target, and absent from visible prior identity prep artifacts."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_parsons-kissena-boulevard",
+      "target_id": "corridor_parsons-kissena-2015",
+      "confidence": "high",
+      "reason": "Same Parsons Boulevard/Kissena Boulevard corridor in Queens. Both records use Parsons Blvd/Kissena Blvd naming and describe the Q25/Q34 future SBS/improvement corridor context.",
+      "evidence_refs": [
+        "2015_06_09_brt_flushing_jamaica_cb12#p006_c0007",
+        "2015_06_09_brt_flushing_jamaica_cb12#p006_c0008",
+        "2015_06_15_brt_flushing_jamaica_cb8_presentation#p006_c0007",
+        "2015_06_15_brt_flushing_jamaica_cb8_presentation#p006_c0008"
+      ],
+      "guard_notes": "Corridor guard satisfied: slash/spacing-only name differences, same Queens borough, and compatible Q25/Q34 corridor context. Alias is absent from merges, absent from corridor do-not-merge pairs with the target, and absent from visible prior identity prep artifacts."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_utica-ave-carroll-church-2013",
+      "target_id": "corridor_utica-ave-st-johns-pl-church-ave-2013",
+      "confidence": "high",
+      "reason": "Same Utica Avenue Brooklyn corridor segment as already represented in the target's merged field values. The alias gives Utica Avenue from Carroll St. to Church Ave.; the target carries the same Carroll-to-Church limits alongside the broader Utica Avenue/St. Johns-to-Church naming cluster.",
+      "evidence_refs": [
+        "2012_01_24_sbs_utica_merchants#p008_c0003",
+        "2013_09_24_sbs_utica_cb9#p010_c0002",
+        "2011_09_15_sbs_utica_cb8_9_17#p008_c0003",
+        "2011_09_15_sbs_utica_cb8_9_17#p008_c0002"
+      ],
+      "guard_notes": "Corridor guard satisfied: exact street, same Brooklyn borough, and the target already includes Carroll St. to Church Ave. as canonical limits/merged values. Alias is absent from merges, absent from corridor do-not-merge pairs with the target, and absent from visible prior identity prep artifacts."
+    }
+  ],
+  "commands_run": [
+    "pwd && rg --files | rg '(^data/|^wiki/|^raw/|merges\\\\.json$|do-not|identity|canonical|review_notes)'",
+    "git status --short",
+    "ls data data/review_notes data/canonical 2>/dev/null",
+    "jq 'keys' data/identity-overrides/merges.json | head -80",
+    "jq 'keys' data/identity-overrides/do-not-merge.json | head -80",
+    "head -5 data/canonical/routes.jsonl && head -5 data/canonical/corridors.jsonl",
+    "jq '.' data/review_notes/codex-identity-batch129-prep.json | head -200",
+    "jq -r '.proposed_aliases[]? | [.global_kind,.alias_id,.target_id] | @tsv' data/review_notes/codex-identity-batch*-prep.json 2>/dev/null | sort -u",
+    "bun -e '<read-only route/corridor grouping candidate scan over canonical JSONL plus merges/do-not-merge/prior prep guards>'",
+    "jq -r 'select(.record_id|IN(...selected route/corridor ids...)) | {record_id,display_name,payload,source_ids,evidence_refs}' data/canonical/routes.jsonl data/canonical/corridors.jsonl | jq '.'",
+    "bun -e '<read-only exact selected pair guard check against data/identity-overrides/merges.json and data/identity-overrides/do-not-merge.json>'",
+    "jq -c --arg id '<block_id>' 'select(.block_id==$id)' raw/sources/<source_id>/blocks.jsonl for selected source evidence blocks"
+  ],
+  "commands_not_run": [
+    "No provider-backed commands or agent harness commands were run.",
+    "No canonicalize, campaign dedup, identity-review, write, ask, schema, ontology-normalize, or --profile/provider commands were run.",
+    "No materialize, export-jsonl, or full validate commands were run.",
+    "No edits were made to canonical JSONL, wiki pages, DB files, LOG.md, manifests, retired submissions, submissions, or merges.json."
+  ]
+}

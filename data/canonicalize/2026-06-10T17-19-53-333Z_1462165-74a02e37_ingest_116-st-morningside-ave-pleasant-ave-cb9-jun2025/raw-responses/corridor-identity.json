@@ -1,0 +1,87 @@
+{
+  "run_id": "2026-06-10T17-19-53-333Z_1462165-74a02e37_ingest_116-st-morningside-ave-pleasant-ave-cb9-jun2025",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-21T15:10:33.792Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1-manhattan-av-110-116",
+        "local_observation_id": "corridor_manhattan_av_110th_116th_cb9_jun2025",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'corridor_manhattan-av-110th-116th-cb9-jun2025' matches an existing registry record exactly. The observation already resolves to that canonical id.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb9_jun2025",
+            "block_id": "p013_c0005",
+            "source_quote": "proposed curbside bus lane location on Manhattan Av. between 110th St and 116th St"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2-morningside-av-113-114",
+        "local_observation_id": "corridor_morningside_av_113th_114th_cb9_jun2025",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'corridor_morningside-av-113th-114th-cb9-jun2025' matches an existing registry record exactly. The observation already resolves to that canonical id.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb9_jun2025",
+            "block_id": "p017_c0002",
+            "source_quote": "Morningside Avenue between 113 th Street and 114 th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "d3-116th-st-study-area",
+        "local_observation_id": "corridor_116th_st_cb9_jun2025",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'corridor_116th-street' matches an existing registry record exactly. The observation already resolves to that canonical id. The registry record's source_ids already include '116_st_morningside_ave_pleasant_ave_cb9_jun2025'.",
+        "proposed_relations": [
+          {
+            "relation_kind": "study_area_includes",
+            "subject_id": "corridor_116th-street",
+            "object_id": "corridor_manhattan-av-110th-116th-cb9-jun2025",
+            "description": "The 116th Street study area includes Manhattan Avenue between 110th St and 116th St as a sub-corridor.",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb9_jun2025",
+                "block_id": "p005_c0002",
+                "source_quote": "Study area includes Manhattan Av. between 110th St and 116th St, and Morningside Av. between 113th St and 114th St."
+              }
+            ]
+          },
+          {
+            "relation_kind": "study_area_includes",
+            "subject_id": "corridor_116th-street",
+            "object_id": "corridor_morningside-av-113th-114th-cb9-jun2025",
+            "description": "The 116th Street study area includes Morningside Avenue between 113th St and 114th St as a sub-corridor.",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb9_jun2025",
+                "block_id": "p005_c0002",
+                "source_quote": "Study area includes Manhattan Av. between 110th St and 116th St, and Morningside Av. between 113th St and 114th St."
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb9_jun2025",
+            "block_id": "p001_c0001",
+            "source_quote": "116 th Street Bus and Pedestrian Priority Project"
+          },
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb9_jun2025",
+            "block_id": "p005_c0002",
+            "source_quote": "Study area includes Manhattan Av. between 110th St and 116th St, and Morningside Av. between 113th St and 114th St."
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-21T15-04-01-764Z_2836603-1c4499e4_canonicalize_2026-06-10t17-19-53-333z-1462165-74a02e37-ingest-116-st-morningside-ave-pleasant-ave-cb9-jun2025-corridor-identity"
+}

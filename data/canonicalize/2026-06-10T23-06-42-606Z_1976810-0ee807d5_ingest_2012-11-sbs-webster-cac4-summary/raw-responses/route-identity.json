@@ -1,0 +1,132 @@
+{
+  "run_id": "2026-06-10T23-06-42-606Z_1976810-0ee807d5_ingest_2012-11-sbs-webster-cac4-summary",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T03:11:19.224Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "bx41-sbs-new",
+        "local_observation_id": "route_bx41_sbs_2012_11_webster",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_webster-ave-sbs matches existing registry record for Bx41 SBS. Same route variant (SBS), same borough (Bronx), same corridor (Webster Avenue).",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p001_c0007",
+            "source_quote": "Mr. Orosz presented the conceptual design for the Bx41 SBS and a typical SBS station location featuring an offset bus lane, highlighting the benefits of the design and its amenities."
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p001_c0008",
+            "source_quote": "Mr. Orosz presented the proposed bus service plan for the Bx41 SBS and other routes in the area."
+          }
+        ]
+      },
+      {
+        "decision_id": "bx55-limited-new",
+        "local_observation_id": "route_bx55_limited_2012_11_webster",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_bx55-limited-2012-11-webster matches existing registry record. Same route (Bx55), same variant (limited), same borough (Bronx).",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p001_c0008",
+            "source_quote": "In addition to the introduction of SBS on the Bx41, the Bx55 Limited will be renamed the Bx15 Limited and provide limited-stop service between The Hub and Fordham Plaza along Third Avenue and local service between West Harlem and The Hub."
+          }
+        ]
+      },
+      {
+        "decision_id": "bx15-limited-link",
+        "local_observation_id": "route_bx15_limited_2012_11_webster",
+        "decision": "link",
+        "target_record_id": "route_bx15-ltd-webster-2012",
+        "rationale": "Observation describes Bx15 Limited (limited-stop variant) renamed from Bx55. Base record route_bx15-ace has route_type local — wrong variant. Registry route_bx15-ltd-webster-2012 matches: route_type limited, boroughs [Bronx, Manhattan], same source.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p001_c0008",
+            "source_quote": "In addition to the introduction of SBS on the Bx41, the Bx55 Limited will be renamed the Bx15 Limited and provide limited-stop service between The Hub and Fordham Plaza along Third Avenue and local service between West Harlem and The Hub."
+          }
+        ]
+      },
+      {
+        "decision_id": "bx15-local-new",
+        "local_observation_id": "route_bx15_local_2012_11_webster",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_bx15-ace matches existing registry record for Bx15 Local. Same route (Bx15), same variant (local), same boroughs (Bronx/Manhattan).",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p001_c0008",
+            "source_quote": "The Bx15 Local will provide all-stop service between The Hub and Fordham Plaza along Third Avenue."
+          }
+        ]
+      },
+      {
+        "decision_id": "bx34-new",
+        "local_observation_id": "route_bx34_2012_11_webster",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_bx34 matches existing registry record. Same route (Bx34), same variant (local), same borough (Bronx).",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p001_c0008",
+            "source_quote": "Mr. Orosz pointed out that improvements could be made to the routing of the Bx34 by allowing it to utilize the bus lanes on Webster Avenue instead of Bainbridge and Valentine Avenues, which are narrow streets."
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p003_c0011",
+            "source_quote": "The Bx34 serves a population with limited access to transit, please do not reroute it."
+          }
+        ]
+      },
+      {
+        "decision_id": "bx36-new",
+        "local_observation_id": "route_bx36_2012_11_webster",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_bx36 matches existing registry record. Same route (Bx36), same variant (local), same borough (Bronx). Mentioned as connection at East 180th Street.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p002_c0014",
+            "source_quote": "The main reason to keep the East 180 th Street stop would be for its connection to the Bx36, though there is also a connection at East Tremont Avenue."
+          }
+        ]
+      },
+      {
+        "decision_id": "bx41-local-new",
+        "local_observation_id": "route_bx41_local_2012_11_webster",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_bx41-local-2012-11-webster matches existing registry record. Same route (Bx41), same variant (local), same borough (Bronx).",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p003_c0007",
+            "source_quote": "Will there be articulated buses on the local Bx41 route?"
+          }
+        ]
+      }
+    ],
+    "proposed_relations": [
+      {
+        "relation_kind": "renamed_to",
+        "subject_id": "route_bx55-limited-2012-11-webster",
+        "object_id": "route_bx15-ltd-webster-2012",
+        "description": "Bx55 Limited renamed to Bx15 Limited per CAC Meeting #4 bus service plan.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p001_c0008",
+            "source_quote": "In addition to the introduction of SBS on the Bx41, the Bx55 Limited will be renamed the Bx15 Limited and provide limited-stop service between The Hub and Fordham Plaza along Third Avenue and local service between West Harlem and The Hub."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-05-57-216Z_2111393-5ec0d024_canonicalize_2026-06-10t23-06-42-606z-1976810-0ee807d5-ingest-2012-11-sbs-webster-cac4-summary-route-identity"
+}

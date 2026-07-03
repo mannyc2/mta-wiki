@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "project_cluster_b3667d8e97",
+  "kind": "project",
+  "packet_path": "data/identity-review/packets/project_cluster_b3667d8e97.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/project_cluster_b3667d8e97.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 2,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "project_34th-st-transitway-phase1-2009",
+        "project_bx12-sbs-fordham-rd-phase1"
+      ],
+      "reason": "Different project name (34th Street Transitway Concept vs Bx12 Select Bus Service) and geographic scope (34th Street, Manhattan vs Fordham Road, Bronx); program BRT Phase I is relation context, not merge authority (Contradiction test 1, project_name and location differ)."
+    },
+    {
+      "record_ids": [
+        "project_bx12-sbs-fordham-rd-phase1",
+        "project_hylan-blvd-sbs-phase1"
+      ],
+      "reason": "Different project name and location (Fordham Road, Bronx vs Hylan Boulevard, Staten Island); both SBS but distinct corridors; program BRT Phase I is relation context (Contradiction test 1, project_name and scope differ)."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "All six records represent distinct projects under the BRT Phase I Program. Their identity fields (project_name, project_type, and geographic scope) differ comprehensively, satisfying the contradiction test (test 1) of the Identity Merge Canon. Program membership is not a strong identity field per the canon and the review reasons provided. Therefore every pair in this cluster is a do_not_merge. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

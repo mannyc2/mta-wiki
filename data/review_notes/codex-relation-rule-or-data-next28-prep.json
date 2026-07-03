@@ -1,0 +1,238 @@
+{
+  "note_id": "codex-relation-rule-or-data-next28-prep",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "scope": "Codex-only validator/rule-or-data triage for the next current unexpected_relation_endpoint_shape bucket after relation058; deterministic inspection only; no provider-backed commands, generated-output commands, durable data edits, code edits, LOG edits, manifest edits, submissions edits, retired.json edits, canonical edits, or wiki edits",
+  "current_count_if_observed": {
+    "unexpected_relation_endpoint_shape": 7,
+    "baseline_source": "User-provided current baseline after relation058.",
+    "read_only_inventory_basis": "Read-only SQLite/JQ inspection of the seven visible relation records named by the user, joined to endpoint record kinds in data/canonical.db and data/canonical/relations.jsonl.",
+    "remaining_visible_records": [
+      "relation_a-rockaways-affects-a-s-lines",
+      "relation_app-update-owned-by-mta",
+      "relation_bt-committee-workplan-2026-owned-by",
+      "relation_meeting-doc-121091-psa-bronx-stations",
+      "relation_meeting-doc-133291-proposal-implemented-by-nyct-mtabus",
+      "relation_procurement-metronorth-circuit-breakers",
+      "relation_rel-ace-starts-at-manhattan-brooklyn"
+    ],
+    "observed_singleton_buckets": [
+      "implemented_by source->entity",
+      "operated_by treatment_component->entity",
+      "operates_on_corridor project->entity",
+      "owned_by event->entity",
+      "owned_by source->entity",
+      "serves_route project->entity",
+      "serves_route project->project"
+    ]
+  },
+  "bucket": {
+    "name": "serves_route project->project",
+    "count": 1,
+    "selected_record_id": "relation_a-rockaways-affects-a-s-lines",
+    "selected_submission_id": "sub_69102bf0c780f965",
+    "source_id": "meeting_doc_160446",
+    "current_relation_kind": "serves_route",
+    "current_endpoint_shape": {
+      "subject_kind": "project",
+      "subject_record_id": "project_a-train-rockaways-winter-2024",
+      "subject_local_observation_id": "project_a_train_rockaways_winter_2024",
+      "subject_display_name": "A Train Rockaways Winter Work",
+      "object_kind": "project",
+      "object_record_id": "project_a-train-rockaways-winter-2024",
+      "object_local_observation_id": "project_a_train_rockaways_winter_2024",
+      "object_display_name": "A Train Rockaways Winter Work"
+    },
+    "validator_expectation": "Current serves_route allows project|corridor -> route. It should not be widened to allow project -> project, especially not a project self-link."
+  },
+  "recommendation": {
+    "classification": "data_cleanup",
+    "recommended_action": "Retire the malformed self-linked serves_route submission and replace it with two valid serves_route project -> route relations if conductor wants to preserve the A/S route-scope fact.",
+    "why_data_cleanup": "The submitted object endpoint is the same project local observation as the subject, but the label/raw_text says the work affects the A and S lines. The source-backed fact is route scope, not project containment or a validator-permissible project self-edge.",
+    "why_not_validator_code_gap": "serves_route is intentionally constrained to route objects. Allowing project -> project would overlap with part_of_program or related-project semantics and would hide a clear endpoint selection error.",
+    "bad_submission_ids": [
+      {
+        "submission_id": "sub_69102bf0c780f965",
+        "run_id": "2026-06-20T20-37-10-257Z_1885472-cce4bb2f_ingest_meeting-doc-160446",
+        "submission_path": "data/submissions/2026-06-20T20-37-10-257Z_1885472-cce4bb2f_ingest_meeting-doc-160446.jsonl",
+        "submission_line": 69,
+        "record_id": "relation_a-rockaways-affects-a-s-lines",
+        "local_observation_id": "relation_a_rockaways_affects_a_s_lines",
+        "relation_kind": "serves_route",
+        "endpoint_kinds": "project -> project",
+        "retire_reason": "Malformed route-scope relation: subject and object both point to project_a_train_rockaways_winter_2024, while serves_route requires a route object and the cited source says the work improves service along the A and S lines."
+      }
+    ],
+    "proposed_replacements": [
+      {
+        "replacement_needed": true,
+        "relation_kind": "serves_route",
+        "endpoint_kinds": "project -> route",
+        "subject_local_observation_id": "project_a_train_rockaways_winter_2024",
+        "subject_record_id": "project_a-train-rockaways-winter-2024",
+        "object_record_id": "route_meeting-doc-135451-a-line",
+        "object_display_name": "A subway line",
+        "suggested_local_observation_id": "relation_a_rockaways_serves_a_line",
+        "suggested_label": "A Train Rockaways Winter Work serves A line",
+        "suggested_description": "The planned A Train Rockaways winter work is source-backed as improving service along the A line.",
+        "replacement_shape_valid_under_current_rules": true
+      },
+      {
+        "replacement_needed": true,
+        "relation_kind": "serves_route",
+        "endpoint_kinds": "project -> route",
+        "subject_local_observation_id": "project_a_train_rockaways_winter_2024",
+        "subject_record_id": "project_a-train-rockaways-winter-2024",
+        "object_record_id": "route_meeting-doc-160271-s-shuttle",
+        "object_display_name": "S Shuttle (Rockaway Park Shuttle)",
+        "suggested_local_observation_id": "relation_a_rockaways_serves_s_shuttle",
+        "suggested_label": "A Train Rockaways Winter Work serves S Shuttle",
+        "suggested_description": "The planned A Train Rockaways winter work is source-backed as improving service along the S line.",
+        "replacement_shape_valid_under_current_rules": true
+      }
+    ],
+    "replacement_note": "The original source does not have same-source A/S route local observations. The proposed replacements therefore use direct canonical object_id route endpoints that already exist. If conductor wants strictly same-source route local ids, retire-only is safe and would still clear this issue, with route reconstruction deferred."
+  },
+  "evidence": {
+    "selected_relation_submission": {
+      "submission_id": "sub_69102bf0c780f965",
+      "tool_args_sha256": "sha256:69102bf0c780f965af4f86c36203f38bb123b3511fbdd843e37965491def106a",
+      "label": "A Train Rockaways Work affects A and S lines",
+      "raw_text": "riders across Jamaica Bay will be able to enjoy improved service along the A and S lines.",
+      "payload_relation_kind": "serves_route",
+      "payload_subject_local_observation_id": "project_a_train_rockaways_winter_2024",
+      "payload_object_local_observation_id": "project_a_train_rockaways_winter_2024",
+      "evidence_refs": [
+        "meeting_doc_160446#p005_c0004"
+      ]
+    },
+    "source_block": {
+      "source_id": "meeting_doc_160446",
+      "source_path": "raw/sources/meeting_doc_160446/blocks.jsonl",
+      "page_number": 5,
+      "block_id": "p005_c0004",
+      "text_sha256": "sha256:8c06426c1a18dc96f21430273be8689a0b3e0a54b7df3bfcc63671d72d691746",
+      "summary": "The block describes planned A train work in the Rockaways, alternative service, LIRR discounts, dedicated shuttle service, and says completion will improve service along the A and S lines.",
+      "short_quote": "improved service along the A and S lines"
+    },
+    "endpoint_records_checked": [
+      {
+        "record_id": "project_a-train-rockaways-winter-2024",
+        "record_kind": "project",
+        "local_observation_id": "project_a_train_rockaways_winter_2024",
+        "display_name": "A Train Rockaways Winter Work",
+        "source_id": "meeting_doc_160446",
+        "submission_id": "sub_9013fe421c3a892f",
+        "evidence_ids": [
+          "meeting_doc_160446#p005_c0004"
+        ]
+      },
+      {
+        "record_id": "route_meeting-doc-135451-a-line",
+        "record_kind": "route",
+        "local_observation_id": "route_meeting_doc_135451_a_line",
+        "display_name": "A subway line",
+        "route_id": "A",
+        "source_ids_include": [
+          "meeting_doc_135451",
+          "meeting_doc_152171",
+          "meeting_doc_160096",
+          "meeting_doc_160241",
+          "meeting_doc_160271",
+          "meeting_doc_176411"
+        ]
+      },
+      {
+        "record_id": "route_meeting-doc-160271-s-shuttle",
+        "record_kind": "route",
+        "local_observation_id": "route_meeting_doc_160271_s_shuttle",
+        "display_name": "S Shuttle (Rockaway Park Shuttle)",
+        "route_id": "S",
+        "source_ids_include": [
+          "meeting_doc_160096",
+          "meeting_doc_160271"
+        ]
+      }
+    ],
+    "collision_and_prior_work_checks": {
+      "existing_relation_from_selected_project_to_a_or_s_route": 0,
+      "prior_retired_json_hits_for_bad_submission": 0,
+      "prior_notes": [
+        "data/review_notes/codex-relation-cleanup-batch030-prep.json deferred this row because it needed reviewed split-or-retire handling.",
+        "data/review_notes/codex-relation-rule-or-data-next19-prep.json noted this row as a future route endpoint reconstruction candidate."
+      ]
+    },
+    "current_validator_files_checked": [
+      {
+        "file": "packages/pipeline/src/records/relations.ts",
+        "relevant_rule": "RELATION_ENDPOINT_SHAPES.serves_route subject project|corridor, object route"
+      },
+      {
+        "file": "packages/pipeline/test/records/relations.test.ts",
+        "relevant_tests": "serves_route project->route and corridor->route accepted; route->project rejected; no project->project acceptance."
+      }
+    ]
+  },
+  "expected_delta": {
+    "baseline_unexpected_relation_endpoint_shape": 7,
+    "selected_rows_cleared": 1,
+    "replacement_rows_added": 2,
+    "replacement_rows_expected_to_be_endpoint_shape_valid": 2,
+    "unexpected_relation_endpoint_shape_delta": -1,
+    "expected_remaining_after_cleanup": 6,
+    "caveat": "Assumes no concurrent relation endpoint-shape work lands before conductor applies this cleanup. If conductor chooses retire-only instead of replacement, the endpoint-shape delta is still -1 but no route-scope rows are added."
+  },
+  "apply_or_patch_plan": {
+    "conductor_action": "apply_data_cleanup",
+    "data_cleanup_steps": [
+      "Retire submission sub_69102bf0c780f965 with a reason tying the malformed serves_route project -> project self-link to this prep artifact.",
+      "Preferred preservation path: append two accepted replacement relation submissions for meeting_doc_160446 with relation_kind serves_route, subject_local_observation_id project_a_train_rockaways_winter_2024, and object_id route_meeting-doc-135451-a-line / route_meeting-doc-160271-s-shuttle.",
+      "Use meeting_doc_160446#p005_c0004 as evidence for both replacement relations, with source_quote or raw_text centered on 'improved service along the A and S lines'.",
+      "Alternative conservative path: retire-only if conductor does not want direct canonical route object_id replacements from a source without same-source route local observations.",
+      "Run only the conductor-owned materialize/validate lane after applying, outside this bounded prep task."
+    ],
+    "code_patch_plan": {
+      "needed": false,
+      "files": [
+        "packages/pipeline/src/records/relations.ts",
+        "packages/pipeline/test/records/relations.test.ts"
+      ],
+      "reason": "No validator patch is recommended. Keep serves_route object endpoints constrained to route records; the current row is a data endpoint mistake."
+    }
+  },
+  "commands_run_read_only": [
+    "rg -n 'unexpected_relation_endpoint_shape|RELATION_ENDPOINT|endpoint shape|relationEndpoint|allowed.*endpoint|RelationKind' packages -g '*.ts'",
+    "sqlite3 data/canonical.db '.tables'",
+    "sed -n '1,260p' data/review_notes/codex-relation-rule-or-data-next27-prep.json",
+    "sqlite3 -header -column data/canonical.db 'pragma table_info(relations); pragma table_info(records); pragma table_info(record_submissions); pragma table_info(evidence_refs);'",
+    "sed -n '206,380p' packages/pipeline/src/records/relations.ts",
+    "sed -n '50,125p' packages/pipeline/test/records/relations.test.ts",
+    "jq targeted read of data/canonical/relations.jsonl for the seven remaining visible record ids",
+    "sqlite3 targeted join of the seven visible relation ids to endpoint record kinds and submission ids",
+    "sqlite3 singleton bucket grouping over the seven visible rows",
+    "rg targeted lookup of the seven selected submission ids in data/submissions",
+    "rg targeted lookup for sub_69102bf0c780f965 and relation_a-rockaways-affects-a-s-lines in review notes, retired.json, submissions, and canonical relations",
+    "sed targeted reads of prior notes mentioning relation_a-rockaways-affects-a-s-lines",
+    "sqlite3 same-source record inventory for meeting_doc_160446 Rockaway/A/S/route records",
+    "jq targeted read of raw/sources/meeting_doc_160446/blocks.jsonl for p005_c0003 and p005_c0004",
+    "sqlite3 relation inventory for project_a-train-rockaways-winter-2024",
+    "sqlite3 global route lookup for A and S route records",
+    "sqlite3 endpoint record and replacement collision checks for project_a-train-rockaways-winter-2024 to A/S routes",
+    "test ! -e data/review_notes/codex-relation-rule-or-data-next28-prep.json",
+    "git status --short -- data/review_notes/codex-relation-rule-or-data-next28-prep.json data/review_notes data/submission-overrides/retired.json data/submissions packages/pipeline/src/records/relations.ts packages/pipeline/test/records/relations.test.ts"
+  ],
+  "commands_not_run": [
+    "external/provider LLM commands",
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "--profile/provider commands",
+    "materialize",
+    "export",
+    "validate"
+  ]
+}

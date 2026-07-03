@@ -1,0 +1,359 @@
+{
+  "run_id": "2026-06-10T17-13-30-642Z_1462165-56810a52_ingest_116-st-morningside-ave-pleasant-ave-cb11-jun2025",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-21T15:06:47.954Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-001-offset-bus-lane",
+        "local_observation_id": "treatment_offset_bus_lane_116th_st_cb11_jun2025",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_116th-st-bus-pedestrian-priority",
+            "object_id": "treatment_offset-bus-lane-116th-st-cb11-jun2025",
+            "description": "Proposed offset bus lane on 116th Street from 5th Avenue to Pleasant Avenue, 7 blocks",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+                "block_id": "p019_c0001",
+                "source_quote": "Proposed Offset Bus Lane (7 Blocks)"
+              },
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+                "block_id": "p019_c0002",
+                "source_quote": "On 116 th St from 5 Av. to Pleasant Av., maintains parking throughout"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source explicitly describes this as a proposed offset bus lane on 116th Street, which is a component of the 116th Street Bus & Pedestrian Priority Project.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p019_c0001",
+            "source_quote": "Proposed Offset Bus Lane (7 Blocks)"
+          },
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p019_c0002",
+            "source_quote": "On 116 th St from 5 Av. to Pleasant Av., maintains parking throughout"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-002-curbside-bus-lane",
+        "local_observation_id": "treatment_curbside_bus_lane_116th_st_cb11_jun2025",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_116th-st-bus-pedestrian-priority",
+            "object_id": "treatment_curbside-bus-lane-116th-st-cb11-jun2025",
+            "description": "Daytime curbside bus lane on north side of 116th Street between 5th Avenue and Madison Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+                "block_id": "p020_c0001",
+                "source_quote": "Proposed Curbside Bus Lane (1 Block)"
+              },
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+                "block_id": "p020_c0002",
+                "source_quote": "In effect from 7a-7p, reverts to parking in the evenings"
+              },
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+                "block_id": "p016_c0002",
+                "source_quote": "Curbside Bus Lane (daytime only): – North side of 116 th Street between 5 th Av. & Madison Av."
+              }
+            ]
+          }
+        ],
+        "rationale": "Source describes a proposed curbside bus lane on 116th Street as part of the 116th Street bus priority project.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p020_c0001",
+            "source_quote": "Proposed Curbside Bus Lane (1 Block)"
+          },
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p020_c0002",
+            "source_quote": "In effect from 7a-7p, reverts to parking in the evenings"
+          },
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p016_c0002",
+            "source_quote": "Curbside Bus Lane (daytime only): – North side of 116 th Street between 5 th Av. & Madison Av."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-003-queue-jump-signals",
+        "local_observation_id": "treatment_queue_jump_signals_cb11_jun2025",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_116th-st-bus-pedestrian-priority",
+            "object_id": "treatment_queue-jump-signals-cb11-jun2025",
+            "description": "Two proposed bus queue jump signals at Madison Avenue and Lexington Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+                "block_id": "p021_c0001",
+                "source_quote": "Two (2) Proposed Bus Queue Jump Signals"
+              },
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+                "block_id": "p021_c0002",
+                "source_quote": "At Madison Avenue and Lexington Avenue"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source names two bus queue jump signals on the 116th Street corridor as part of the project.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p021_c0001",
+            "source_quote": "Two (2) Proposed Bus Queue Jump Signals"
+          },
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p021_c0002",
+            "source_quote": "At Madison Avenue and Lexington Avenue"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-004-protected-bike-lane",
+        "local_observation_id": "treatment_protected_bike_lane_pleasant_ave_cb11_jun2025",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_116th-st-bus-pedestrian-priority",
+            "object_id": "treatment_protected-bike-lane-pleasant-ave-cb11-jun2025",
+            "description": "Proposed parking-protected bike lane on Pleasant Avenue between 116th and 120th Streets",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+                "block_id": "p022_c0001",
+                "source_quote": "Proposed Parking-Protected Bike Lane (4 Blocks)"
+              },
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+                "block_id": "p022_c0002",
+                "source_quote": "Upgrades existing bike lane while maintaining parking throughout"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source identifies a parking-protected bike lane on Pleasant Avenue as part of the 116th Street corridor improvements.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p022_c0001",
+            "source_quote": "Proposed Parking-Protected Bike Lane (4 Blocks)"
+          },
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p022_c0002",
+            "source_quote": "Upgrades existing bike lane while maintaining parking throughout"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-005-concrete-ped-islands",
+        "local_observation_id": "treatment_concrete_pedestrian_islands_cb11_jun2025",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_116th-st-bus-pedestrian-priority",
+            "object_id": "treatment_concrete-pedestrian-islands-cb11-jun2025",
+            "description": "Four concrete pedestrian islands at 5th Ave/Madison, Madison/Park Ave, 3rd Ave/E 116 St, and 1st Ave/E 116 St",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+                "block_id": "p017_c0001",
+                "source_quote": "Four (4) Proposed Concrete Pedestrian Islands"
+              },
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+                "block_id": "p017_c0002",
+                "source_quote": "Protected by bollards, with potential trees"
+              },
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+                "block_id": "p017_c0005",
+                "source_quote": "four proposed concrete pedestrian islands with purple squares at the intersections of 5th Av. and Madison, Madison and Park Av., 3rd Av. and East 116 St, and 1st Av. and East 116 St"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source describes four proposed concrete pedestrian islands at specific 116th Street corridor intersections as project treatments.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p017_c0001",
+            "source_quote": "Four (4) Proposed Concrete Pedestrian Islands"
+          },
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p017_c0002",
+            "source_quote": "Protected by bollards, with potential trees"
+          },
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p017_c0005",
+            "source_quote": "four proposed concrete pedestrian islands with purple squares at the intersections of 5th Av. and Madison, Madison and Park Av., 3rd Av. and East 116 St, and 1st Av. and East 116 St"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-006-left-turn-lanes",
+        "local_observation_id": "treatment_left_turn_lanes_cb11_jun2025",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_116th-st-bus-pedestrian-priority",
+            "object_id": "treatment_left-turn-lanes-cb11-jun2025",
+            "description": "Seven proposed longer left turn lanes at 5th Av, Madison Av., Lexington Av., 3rd Av., 1st Av., and Pleasant Av./116th",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+                "block_id": "p018_c0001",
+                "source_quote": "Seven (7) Proposed Left Turn Lanes"
+              },
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+                "block_id": "p018_c0002",
+                "source_quote": "Maintains traffic flow and improves safety"
+              },
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+                "block_id": "p016_c0002",
+                "source_quote": "Longer left turn lanes to keep traffic moving at: – 5 th Av – Madison Av. – Lexington Av. – 3 rd Av. – 1 st Av. – Pleasant Av./116 th (southbound)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source lists seven left turn lanes at specific intersections along the 116th Street corridor as part of the project.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p018_c0001",
+            "source_quote": "Seven (7) Proposed Left Turn Lanes"
+          },
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p018_c0002",
+            "source_quote": "Maintains traffic flow and improves safety"
+          },
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p016_c0002",
+            "source_quote": "Longer left turn lanes to keep traffic moving at: – 5 th Av – Madison Av. – Lexington Av. – 3 rd Av. – 1 st Av. – Pleasant Av./116 th (southbound)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-007-painted-ped-spaces",
+        "local_observation_id": "treatment_painted_pedestrian_spaces_cb11_jun2025",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_116th-st-bus-pedestrian-priority",
+            "object_id": "treatment_painted-pedestrian-spaces-cb11-jun2025",
+            "description": "33 proposed painted pedestrian spaces: 9 islands and 24 curb extensions providing daylighting at 11 intersections on 116th Street",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+                "block_id": "p025_c0001",
+                "source_quote": "Proposed Painted Pedestrian Spaces (33)"
+              },
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+                "block_id": "p025_c0002",
+                "source_quote": "Nine (9) islands and 24 curb extensions provide hardened daylighting"
+              },
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+                "block_id": "p032_c0002",
+                "source_quote": "Daylighting at 11 intersections"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source describes 33 painted pedestrian spaces as part of the 116th Street bus and pedestrian priority project.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p025_c0001",
+            "source_quote": "Proposed Painted Pedestrian Spaces (33)"
+          },
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p025_c0002",
+            "source_quote": "Nine (9) islands and 24 curb extensions provide hardened daylighting"
+          },
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p032_c0002",
+            "source_quote": "Daylighting at 11 intersections"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-008-ped-120th-pleasant",
+        "local_observation_id": "treatment_pedestrian_improvements_120th_pleasant_cb11_jun2025",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_116th-st-bus-pedestrian-priority",
+            "object_id": "treatment_pedestrian-improvements-120th-pleasant-cb11-jun2025",
+            "description": "Three painted pedestrian curb extensions and two islands at E 120th St/Pleasant Ave intersection improvements",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+                "block_id": "p026_c0001",
+                "source_quote": "Details for East 120 th Street/Pleasant Avenue"
+              },
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+                "block_id": "p026_c0003",
+                "source_quote": "• Install three (3) painted pedestrian curb extensions and two (2) islands • Reduce pedestrian crossing distance by an average of 57% • Harden with granite blocks and, with maintenance partner, planters • Beautify improvements with asphalt art in partnership with NYC DOT Art"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source details pedestrian intersection improvements at E 120th St/Pleasant Ave as part of the 116th Street corridor project.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p026_c0001",
+            "source_quote": "Details for East 120 th Street/Pleasant Avenue"
+          },
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p026_c0003",
+            "source_quote": "• Install three (3) painted pedestrian curb extensions and two (2) islands • Reduce pedestrian crossing distance by an average of 57% • Harden with granite blocks and, with maintenance partner, planters • Beautify improvements with asphalt art in partnership with NYC DOT Art"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-21T15-03-56-518Z_2836603-c37cf672_canonicalize_2026-06-10t17-13-30-642z-1462165-56810a52-ingest-116-st-morningside-ave-pleasant-ave-cb11-jun2025-treatment-relations"
+}

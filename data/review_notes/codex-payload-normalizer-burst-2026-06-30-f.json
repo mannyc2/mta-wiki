@@ -1,0 +1,122 @@
+{
+  "note_type": "codex_payload_normalizer_burst_result",
+  "created_date": "2026-06-30",
+  "repository": "/mnt/models/dev/mta-wiki",
+  "provider_policy": {
+    "external_llm_commands_used": false,
+    "forbidden_commands_avoided": [
+      "ingest",
+      "write",
+      "ask",
+      "schema",
+      "identity-review-run",
+      "ontology-normalize-run",
+      "provider profiles"
+    ],
+    "canonical_jsonl_hand_edited": false,
+    "generated_outputs_rebuilt_by": "bun packages/cli/src/cli.ts materialize"
+  },
+  "baseline": {
+    "validate_issues": 0,
+    "event_family_other": 228,
+    "project_document_time_status_unresolved": 66,
+    "project_family_unresolved": 11,
+    "treatment_kind_missing": 0,
+    "relation_family_other": 0,
+    "identity_review_candidate_edges": 0
+  },
+  "after": {
+    "validate_issues": 0,
+    "event_family_other": 203,
+    "project_document_time_status_unresolved": 62,
+    "project_family_unresolved": 11,
+    "treatment_kind_missing": 0,
+    "relation_family_other": 0,
+    "identity_review_candidate_edges": 0,
+    "submissions": 98102,
+    "canonical_records": 84042,
+    "wiki_pages": 7338
+  },
+  "subagents": [
+    {
+      "thread_id": "019f1810-9195-7092-83bd-5130ce36c5b6",
+      "lane": "event_family residual exact-rule scout",
+      "observed_count": 228,
+      "used_candidates": [
+        "Annual Impact metadata snapshots",
+        "report card data collection metadata",
+        "34th Street environmental review target",
+        "tactile warning strip continuation",
+        "Hudson Line fiber migration",
+        "M8 OBC software deployment planning",
+        "Summer Saturdays pilot period",
+        "E-Hail Phase 3 enrollment start",
+        "ABLE-to-ACE rename milestone",
+        "sticker-tag migration",
+        "Penn Station Access delay and hiring start",
+        "86th Street real-time passenger information",
+        "planter delivery scheduling",
+        "ride-along, roundtable, and summit public-engagement events"
+      ]
+    },
+    {
+      "thread_id": "019f1810-6cfa-74d1-b618-6fe84a45f9d8",
+      "lane": "project document_time_status residual exact-rule scout",
+      "observed_count": 66,
+      "used_candidates": [
+        "Verrazzano-Narrows Bridge Approach Construction",
+        "Contact Center as a Service",
+        "Saturday Summer Savings",
+        "Fordham Plaza Redevelopment"
+      ],
+      "deferred_candidates_reason": "several scout candidates depended on source/evidence phrases or top-level canonical raw_text that normalizeProjectStatusFromPayload does not currently receive"
+    }
+  ],
+  "changes": [
+    {
+      "file": "packages/pipeline/src/ontology/normalizers.ts",
+      "summary": "added exact payload-gated event-family and project document-time-status rules; removed an overly inferential MNR capital-improvement status rule before materialization"
+    },
+    {
+      "file": "packages/pipeline/test/ontology/normalizers.test.ts",
+      "summary": "added focused positive and negative tests for the payload-proven event and project rules"
+    }
+  ],
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "result": "pass: 256 tests, 3965 expectations"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "pass: Materialized 93092/98102 submissions; retired submissions skipped 243; pages 7342; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass: Issues 0"
+    }
+  ],
+  "remaining": {
+    "event_family_other": {
+      "count": 203,
+      "assessment": "continue with exact payload-backed rules; avoid broad public/private/event/sports/weather/tour/workshop patterns"
+    },
+    "project_document_time_status_unresolved": {
+      "count": 62,
+      "assessment": "many remaining high-confidence statuses require source/evidence text not currently visible to the project payload normalizer"
+    },
+    "project_family_unresolved": {
+      "count": 11,
+      "assessment": "unchanged; prior scout recommended no broad rule"
+    }
+  },
+  "next_concrete_fanout": [
+    "audit whether materializer can safely pass canonical raw_text or evidence quote into deterministic normalizers without polluting payloads",
+    "event residual exact-rule scout on the next 80 payload-backed residuals",
+    "route split/aggregate residual guardrail scout if routes are selected as the next bucket"
+  ]
+}

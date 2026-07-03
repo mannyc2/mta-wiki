@@ -1,0 +1,487 @@
+{
+  "note_id": "codex-identity-batch128-prep",
+  "batch_id": "identity128",
+  "created_at": "2026-06-23T05:56:00Z",
+  "author": "Codex subagent",
+  "scope": {
+    "batch": "identity128",
+    "mode": "Codex-only deterministic prep",
+    "global_kinds": [
+      "project"
+    ],
+    "record_kinds": [
+      "project"
+    ],
+    "instruction": "PROJECT-ONLY identity cleanup prep; no provider-backed or external LLM commands."
+  },
+  "prepared_count": 8,
+  "guard_summary": {
+    "global_kind": "project",
+    "selection_policy": "Only high-confidence durable project identity matches were included. Candidate pairs were required to share the same durable project, compatible scope, compatible time/status as source-time variation, and no phase/option/award/contract/station/program false-friend conflict.",
+    "exclusions": [
+      "Aliases already present in data/identity-overrides/merges.json under .aliases.project were excluded.",
+      "Aliases already present in visible data/review_notes/codex-identity-batch*.json project proposals through visible identity126 were excluded; no identity127 artifact was visible.",
+      "Low-confidence program-vs-project, contract option, procurement subcomponent, and broader station-package candidates were not included."
+    ],
+    "merge_shape_reminder": "Durable merge overrides use alias_id -> target_id entries."
+  },
+  "command_evidence": [
+    {
+      "command": "rg --files data/review_notes data/identity-overrides",
+      "purpose": "Enumerated visible identity prep artifacts and override files."
+    },
+    {
+      "command": "jq -r '.aliases.project | keys[]?' data/identity-overrides/merges.json",
+      "purpose": "Built project alias exclusion set from existing durable overrides."
+    },
+    {
+      "command": "jq -r '.proposed_aliases[]? | select((.global_kind // .kind)==\"project\") | .alias_id' data/review_notes/codex-identity-batch*.json",
+      "purpose": "Built visible prior project alias exclusion set from prepared/applied Codex identity batches."
+    },
+    {
+      "command": "jq 'select(.record_id|test(\"project_(ada-149|ada-68|borough-hall-ada|broadway-junction|woodhaven-cross-bay)\"))' data/canonical/projects.jsonl",
+      "purpose": "Inspected candidate project records, payloads, source ids, and evidence refs."
+    },
+    {
+      "command": "jq --arg id \"$id\" -r '(.aliases.project // {}) | has($id)' data/identity-overrides/merges.json",
+      "purpose": "Confirmed selected aliases were absent from existing project merge overrides."
+    },
+    {
+      "command": "jq --arg id \"$id\" -r '[inputs.proposed_aliases[]? | select((.global_kind // .kind)==\"project\") | select(.alias_id==$id)] | length' data/review_notes/codex-identity-batch*.json",
+      "purpose": "Confirmed selected aliases were absent from visible prior project identity prep artifacts."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema-propose",
+    "ontology-normalize-run",
+    "ingest/write with --profile/provider",
+    "materialize",
+    "validate",
+    "export-jsonl",
+    "DB publish/repair"
+  ],
+  "proposed_aliases": [
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_ada-149st-grand-concourse-tremont",
+      "target_id": "project_ada-149st-grand-concourse-tremont",
+      "alias_id": "project_ada-149th-tremont",
+      "canonical_name": "ADA upgrade 149 St-Grand Concourse/Tremont Av",
+      "alias_name": "ADA Upgrades at 149 St-Grand Concourse and Tremont Av",
+      "reason": "Same Bronx ADA accessibility design-build project at the 149 St-Grand Concourse complex and Tremont Av stations. Both records describe six new elevators, stairs, elevator machine rooms, ADA boarding areas, and the same 2/4/5 and B/D station scope; differing completion percentages and under-construction wording are source-time status snapshots, not distinct projects.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_ada-149st-grand-concourse-tremont",
+          "record_kind": "project",
+          "project_name": "ADA upgrade 149 St-Grand Concourse and Tremont Av",
+          "project_type": "design-build",
+          "borough_normalized": "bronx",
+          "status": "59% complete, within budget",
+          "source_ids": [
+            "meeting_doc_105871",
+            "meeting_doc_44206",
+            "meeting_doc_72541",
+            "meeting_doc_91616"
+          ],
+          "evidence_refs": [
+            "meeting_doc_105871#p011_c0001",
+            "meeting_doc_105871#p011_c0004",
+            "meeting_doc_44206#p007_c0005"
+          ],
+          "description": "ADA accessibility to 149 St-Grand Concourse complex (2, 4, 5) and Tremont Av (B, D) stations in the Bronx."
+        },
+        "alias": {
+          "record_id": "project_ada-149th-tremont",
+          "record_kind": "project",
+          "project_name": "ADA Upgrades at 149 St-Grand Concourse and Tremont Av",
+          "project_type": "design-build",
+          "boroughs_normalized": [
+            "bronx"
+          ],
+          "status": "Under construction",
+          "source_ids": [
+            "meeting_doc_121021",
+            "meeting_doc_155071"
+          ],
+          "evidence_refs": [
+            "meeting_doc_121021#p011_c0001",
+            "meeting_doc_121021#p011_c0005..p011_c0006",
+            "meeting_doc_155071#p009_c0003"
+          ],
+          "description": "Provides ADA accessibility to three underground subway stations in the Bronx: the 149 St-Grand Concourse complex (2, 4, 5) and Tremont Av (B, D)."
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: same stations, borough, design-build accessibility scope, and feature list. Status differences are compatible source-time snapshots. Alias was absent from existing project merges and visible prior project prep artifacts."
+    },
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_ada-68th-hunter-college",
+      "target_id": "project_ada-68th-hunter-college",
+      "alias_id": "project_ada-68th-hunter",
+      "canonical_name": "ADA 68th Street/Hunter College",
+      "alias_name": "ADA Upgrades at 68 St/Hunter College",
+      "reason": "Same Manhattan ADA design-build project at 68 St/Hunter College on the Lexington Avenue Line 6 station. Both records describe three new elevators, two street-to-platform entrances, platform or edge reconstruction, utility/SoGR work, and a $177M design-build scope; differing completion/status wording is source-time variation.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_ada-68th-hunter-college",
+          "record_kind": "project",
+          "project_name": "ADA at 68th Street / Hunter College",
+          "project_type": "design-build",
+          "borough_normalized": "manhattan",
+          "status": "27% complete, within budget and schedule",
+          "source_ids": [
+            "meeting_doc_105871",
+            "meeting_doc_91616"
+          ],
+          "evidence_refs": [
+            "meeting_doc_105871#p016_c0002",
+            "meeting_doc_105871#p016_c0003",
+            "meeting_doc_91616#p017_c0005"
+          ],
+          "description": "Design-build contract to provide ADA accessibility at 68th Street/Hunter College Station on Lexington Avenue Line (6) in Manhattan."
+        },
+        "alias": {
+          "record_id": "project_ada-68th-hunter",
+          "record_kind": "project",
+          "project_name": "ADA Upgrades at 68 St/Hunter College",
+          "project_type": "design-build",
+          "boroughs_normalized": [
+            "manhattan"
+          ],
+          "status": "Under construction",
+          "source_ids": [
+            "meeting_doc_121021",
+            "meeting_doc_155071"
+          ],
+          "evidence_refs": [
+            "meeting_doc_121021#p015_c0003",
+            "meeting_doc_121021#p015_c0005",
+            "meeting_doc_155071#p014_c0003"
+          ],
+          "description": "Design-build contract to provide ADA accessibility at 68 St / Hunter College (6). Includes three new elevators, two new street to platform entrances, utility replacement, mezzanine expansion, track replacement work, and state of good repair work."
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: exact station identity, same Manhattan borough, same accessibility scope, and no package/station false friend. Alias was absent from existing project merges and visible prior project prep artifacts."
+    },
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_borough-hall-ada",
+      "target_id": "project_borough-hall-ada",
+      "alias_id": "project_borough-hall-ada-accessibility",
+      "canonical_name": "Borough Hall Station ADA Upgrades",
+      "alias_name": "Borough Hall Station ADA Accessibility Upgrades",
+      "reason": "Same Borough Hall Station ADA design-build project in Brooklyn. Both records describe accessibility upgrades for 4/5 service with three new elevators and platform edge reconstruction, and both are board-award source-time records.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_borough-hall-ada",
+          "record_kind": "project",
+          "project_name": "Borough Hall Station ADA Upgrades",
+          "project_type": "Design-Build",
+          "borough_normalized": "brooklyn",
+          "status": "Board approval sought for award November 2022",
+          "source_ids": [
+            "meeting_doc_100281"
+          ],
+          "evidence_refs": [
+            "meeting_doc_100281#p087_c0014",
+            "meeting_doc_100281#p087_c0012"
+          ],
+          "description": "Design and construction of accessibility upgrades at Borough Hall Station including three new elevators, ADA boarding areas, and platform edge reconstruction for 4 and 5 trains."
+        },
+        "alias": {
+          "record_id": "project_borough-hall-ada-accessibility",
+          "record_kind": "project",
+          "project_name": "Borough Hall Station Accessibility Upgrades",
+          "project_type": "design-build",
+          "borough_normalized": "brooklyn",
+          "status": "board approval to award",
+          "source_ids": [
+            "meeting_doc_101026"
+          ],
+          "evidence_refs": [
+            "meeting_doc_101026#p030_c0013",
+            "meeting_doc_101026#p030_c0015"
+          ],
+          "description": "ADA improvements at Borough Hall Station including three new elevators and platform edge reconstruction for 4 and 5 trains."
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: exact station, same borough, same design-build ADA scope, same 4/5 train platform-edge/elevator details. Alias was absent from existing project merges and visible prior project prep artifacts."
+    },
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_meeting-doc-129106-broadway-junction-accessibility",
+      "target_id": "project_meeting-doc-129106-broadway-junction-accessibility",
+      "alias_id": "project_broadway-junction-ada",
+      "canonical_name": "Broadway Junction Station Accessibility Improvements",
+      "alias_name": "Broadway Junction Station ADA Improvements",
+      "reason": "Same Broadway Junction station accessibility project in Brooklyn. The target is the existing durable Broadway Junction accessibility merge target; both records describe ADA/accessibility improvements at the Broadway Junction station complex, and the alias adds board-approved design-build award language without changing the durable project identity.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_meeting-doc-129106-broadway-junction-accessibility",
+          "record_kind": "project",
+          "project_name": "Broadway Junction Station Accessibility Improvements",
+          "project_type": "capital project",
+          "borough_normalized": "brooklyn",
+          "status": "in progress",
+          "source_ids": [
+            "meeting_doc_129041",
+            "meeting_doc_129106",
+            "meeting_doc_160326",
+            "meeting_doc_164916"
+          ],
+          "evidence_refs": [
+            "meeting_doc_129106#p096_c0004",
+            "meeting_doc_129106#p096_c0010",
+            "meeting_doc_129041#p004_c0013"
+          ],
+          "description": "Installation of accessibility improvements at the Broadway Junction subway station complex serving the A, C, J, Z, and L lines."
+        },
+        "alias": {
+          "record_id": "project_broadway-junction-ada",
+          "record_kind": "project",
+          "project_name": "Broadway Junction Station ADA Improvements",
+          "project_type": "Design-Build",
+          "borough_normalized": "brooklyn",
+          "status": "Board approved award",
+          "source_ids": [
+            "meeting_doc_131811",
+            "meeting_doc_199231"
+          ],
+          "evidence_refs": [
+            "meeting_doc_131811#p011_c0014",
+            "meeting_doc_199231#p025_c0003"
+          ],
+          "description": "ADA improvements at the Broadway Junction Station, Brooklyn."
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: same station complex and accessibility/ADA scope. Target choice follows the existing override island where project_broadway-junction-accessibility already points to project_meeting-doc-129106-broadway-junction-accessibility. Alias was absent from existing project merges and visible prior project prep artifacts."
+    },
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_meeting-doc-129106-broadway-junction-accessibility",
+      "target_id": "project_meeting-doc-129106-broadway-junction-accessibility",
+      "alias_id": "project_broadway-junction-ada-improvements-dec2023",
+      "canonical_name": "Broadway Junction Station Accessibility Improvements",
+      "alias_name": "ADA Upgrades and Circulation Improvements at Broadway Junction Complex",
+      "reason": "Same Broadway Junction station accessibility project in Brooklyn. The alias describes ADA-compliant elevators, escalator replacement, Callahan-Kelly Playground work, and parking lot improvements at the Broadway Junction Station complex, matching the target's accessibility improvements and easement context for that station complex.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_meeting-doc-129106-broadway-junction-accessibility",
+          "record_kind": "project",
+          "project_name": "Broadway Junction Station Accessibility Improvements",
+          "project_type": "capital project",
+          "borough_normalized": "brooklyn",
+          "status": "in progress",
+          "source_ids": [
+            "meeting_doc_129041",
+            "meeting_doc_129106",
+            "meeting_doc_160326",
+            "meeting_doc_164916"
+          ],
+          "evidence_refs": [
+            "meeting_doc_129106#p096_c0004",
+            "meeting_doc_129106#p096_c0010",
+            "meeting_doc_164916#p004_c0010"
+          ],
+          "description": "Installation of accessibility improvements at the Broadway Junction subway station complex serving the A, C, J, Z, and L lines, requiring temporary and permanent easements from NYC Parks."
+        },
+        "alias": {
+          "record_id": "project_broadway-junction-ada-improvements-dec2023",
+          "record_kind": "project",
+          "project_name": "ADA Upgrades and Circulation Improvements at Broadway Junction Complex",
+          "project_type": "Design-Build",
+          "boroughs_normalized": [
+            "brooklyn"
+          ],
+          "status": "approved for award",
+          "source_ids": [
+            "meeting_doc_129196"
+          ],
+          "evidence_refs": [
+            "meeting_doc_129196#p023_c0008",
+            "meeting_doc_129196#p023_c0010"
+          ],
+          "description": "ADA upgrades including installing new ADA-compliant elevators, replacing existing escalators, providing a new comfort station at Callahan-Kelly Playground, and parking lot improvements at the Broadway Junction Station complex in Brooklyn."
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: same Broadway Junction station complex, same Brooklyn location, same accessibility/elevator/circulation project scope, and Callahan-Kelly context aligns with the target. Alias was absent from existing project merges and visible prior project prep artifacts."
+    },
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_woodhaven-cross-bay-sbs",
+      "target_id": "project_woodhaven-cross-bay-sbs",
+      "alias_id": "project_woodhaven-cross-bay-q52-53-sbs",
+      "canonical_name": "Woodhaven / Cross Bay Boulevards Select Bus Service",
+      "alias_name": "Woodhaven / Cross Bay Boulevard (Q52/53) SBS",
+      "reason": "Same Woodhaven/Cross Bay Boulevards Q52/Q53 Select Bus Service project in Queens. The alias names the Q52/53 route basis and describes the same complete-street SBS scope with bus lanes, median stations, and pedestrian safety improvements already represented by the target.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_woodhaven-cross-bay-sbs",
+          "record_kind": "project",
+          "project_name": "Woodhaven / Cross Bay Boulevards Select Bus Service",
+          "project_type": "Select Bus Service",
+          "boroughs_normalized": [
+            "queens"
+          ],
+          "status": "proposed",
+          "source_ids": [
+            "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "2014_10_22_brt_woodhaven_cac2_presentation",
+            "2015_04_16_brt_woodhaven_dw1_presentation",
+            "brt_woodhaven_after_fall2018"
+          ],
+          "evidence_refs": [
+            "2012_06_25_brt_woodhaven_publicworkshop2_presentation#p001_c0001",
+            "2012_06_25_brt_woodhaven_publicworkshop2_presentation#p007_c0001",
+            "2014_06_25_brt_woodhaven_publicworkshop2_summary#p002_c0001"
+          ],
+          "description": "Long-term SBS project on Woodhaven and Cross Bay Boulevards addressing bus speed, pedestrian safety, and traffic flow."
+        },
+        "alias": {
+          "record_id": "project_woodhaven-cross-bay-q52-53-sbs",
+          "record_kind": "project",
+          "project_name": "Woodhaven / Cross Bay Boulevard Q52/53 Select Bus Service",
+          "project_type": "Select Bus Service",
+          "borough_normalized": "queens",
+          "status": "Planning / Design",
+          "source_ids": [
+            "2015_04_30_brt_woodhaven_dw4_presentation"
+          ],
+          "evidence_refs": [
+            "2015_04_30_brt_woodhaven_dw4_presentation#p001_c0001",
+            "2015_04_30_brt_woodhaven_dw4_presentation#p006_c0002"
+          ],
+          "description": "Transform Woodhaven and Cross Bay Boulevards into a complete street with Select Bus Service, bus lanes, median stations, and pedestrian safety improvements."
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: same corridor, routes Q52/Q53, borough, SBS type, and treatment scope. Planning/design status is compatible source-time wording. Alias was absent from existing project merges and visible prior project prep artifacts."
+    },
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_woodhaven-cross-bay-sbs",
+      "target_id": "project_woodhaven-cross-bay-sbs",
+      "alias_id": "project_woodhaven-cross-bay-q52-q53-sbs",
+      "canonical_name": "Woodhaven / Cross Bay Boulevards Select Bus Service",
+      "alias_name": "Woodhaven / Cross Bay Boulevards Q52/53 Select Bus Service",
+      "reason": "Same Woodhaven/Cross Bay Boulevards Q52/Q53 Select Bus Service project in Queens. The alias is a design-workshop record for the same SBS project on Woodhaven and Cross Bay Boulevards serving Q52 and Q53.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_woodhaven-cross-bay-sbs",
+          "record_kind": "project",
+          "project_name": "Woodhaven / Cross Bay Boulevards Select Bus Service",
+          "project_type": "Select Bus Service",
+          "boroughs_normalized": [
+            "queens"
+          ],
+          "status": "proposed",
+          "source_ids": [
+            "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "2015_03_woodhaven_sbs",
+            "2015_06_24_brt_woodhaven_cac4_presentation",
+            "brt_woodhaven_after_fall2018"
+          ],
+          "evidence_refs": [
+            "2012_06_25_brt_woodhaven_publicworkshop2_presentation#p001_c0001",
+            "2012_06_25_brt_woodhaven_publicworkshop2_presentation#p007_c0002",
+            "2014_06_25_brt_woodhaven_publicworkshop2_summary#p002_c0001"
+          ],
+          "routes_served": [
+            "Q52",
+            "Q53"
+          ]
+        },
+        "alias": {
+          "record_id": "project_woodhaven-cross-bay-q52-q53-sbs",
+          "record_kind": "project",
+          "project_name": "Woodhaven / Cross Bay Boulevards Q52/53 Select Bus Service",
+          "project_type": "Select Bus Service",
+          "boroughs_normalized": [
+            "queens"
+          ],
+          "status": "design workshops",
+          "source_ids": [
+            "brt_woodhaven_design_workshops"
+          ],
+          "evidence_refs": [
+            "brt_woodhaven_design_workshops#p001_c0001",
+            "brt_woodhaven_design_workshops#p002_c0002"
+          ],
+          "description": "Select Bus Service project on Woodhaven and Cross Bay Boulevards serving the Q52 and Q53 bus routes."
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: same Q52/Q53 SBS project, same Queens corridor, and compatible design-workshop source-time status. Alias was absent from existing project merges and visible prior project prep artifacts."
+    },
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_woodhaven-cross-bay-sbs",
+      "target_id": "project_woodhaven-cross-bay-sbs",
+      "alias_id": "project_woodhaven-cross-bay-sbs-cb14-2015",
+      "canonical_name": "Woodhaven / Cross Bay Boulevards Select Bus Service",
+      "alias_name": "Woodhaven / Cross Bay Boulevard SBS project",
+      "reason": "Same Woodhaven/Cross Bay Boulevard SBS project. The alias is a 2015 CB14 draft-design presentation for the same proposed SBS corridor based on Q52/53 LTD, with dedicated bus lanes, median stations, off-board fare collection, and transit signal priority.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_woodhaven-cross-bay-sbs",
+          "record_kind": "project",
+          "project_name": "Woodhaven / Cross Bay Boulevards Select Bus Service",
+          "project_type": "Select Bus Service",
+          "boroughs_normalized": [
+            "queens"
+          ],
+          "status": "proposed",
+          "source_ids": [
+            "2014_10_22_brt_woodhaven_cac2_presentation",
+            "2015_03_woodhaven_sbs",
+            "2015_06_09_brt_woodhaven_cb9",
+            "brt_woodhaven_after_fall2018"
+          ],
+          "evidence_refs": [
+            "2012_06_25_brt_woodhaven_publicworkshop2_presentation#p001_c0001",
+            "2012_06_25_brt_woodhaven_publicworkshop2_presentation#p007_c0001",
+            "2014_06_25_brt_woodhaven_publicworkshop2_summary#p002_c0001"
+          ],
+          "description": "Long-term SBS project on Woodhaven and Cross Bay Boulevards addressing bus speed, pedestrian safety, and traffic flow."
+        },
+        "alias": {
+          "record_id": "project_woodhaven-cross-bay-sbs-cb14-2015",
+          "record_kind": "project",
+          "project_name": "Woodhaven / Cross Bay Boulevard (Q52/53) Select Bus Service",
+          "project_type": "Select Bus Service (SBS)",
+          "borough_normalized": "queens",
+          "status": "Draft design",
+          "source_ids": [
+            "2015_06_01_brt_woodhaven_cb14_presentation"
+          ],
+          "evidence_refs": [
+            "2015_06_01_brt_woodhaven_cb14_presentation#p001_c0001",
+            "2015_06_01_brt_woodhaven_cb14_presentation#p002_c0001",
+            "2015_06_01_brt_woodhaven_cb14_presentation#p007_c0002"
+          ],
+          "description": "Proposed SBS corridor along Woodhaven and Cross Bay Boulevards based on existing Q52/53 LTD route, with dedicated bus lanes, median stations, off-board fare collection, and TSP."
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: same Woodhaven/Cross Bay SBS corridor, same Q52/53 basis, same Queens borough, and same SBS treatment bundle. Draft-design status is source-time context. Alias was absent from existing project merges and visible prior project prep artifacts."
+    }
+  ]
+}

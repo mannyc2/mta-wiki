@@ -1,0 +1,36 @@
+{
+  "run_id": "2026-06-10T22-56-13-413Z_1976810-e589ba1d_ingest_201110-nostrand-cb15-slides",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T01:59:39.163Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1-nostrand-rogers-sbs-201110-identity",
+        "local_observation_id": "project_nostrand_rogers_sbs_201110",
+        "decision": "new",
+        "rationale": "The observation already resolves to base_record_id project_nostrand-rogers-sbs-201110, which is an existing registry record with identical payload (same project_name 'Nostrand / Rogers SBS', same status 'proposed - final design in progress', same description, boroughs, and source 201110_nostrand_cb15_slides). The closest match IS the observation's own base_record_id, so per the decision rule this is 'new' — the observation already points to its correct identity. Meanwhile, registry record project_nostrand-rogers-sbs represents the same real-world B44/Nostrand-Rogers SBS project and already includes project_nostrand-rogers-sbs-201110 as an alias, confirming identity equivalence.",
+        "proposed_relations": [
+          {
+            "relation_kind": "same_project",
+            "subject_id": "project_nostrand-rogers-sbs-201110",
+            "object_id": "project_nostrand-rogers-sbs",
+            "description": "Same real-world Select Bus Service project: Nostrand/Rogers Avenues SBS from Williamsburg Bridge to Sheepshead Bay, replacing B44 Limited. project_nostrand-rogers-sbs aliases project_nostrand-rogers-sbs-201110 and both reference the same source (201110_nostrand_cb15_slides).",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb15_slides",
+                "block_id": "p013_c0001",
+                "source_quote": "Nostrand / Rogers SBS — Proposed Select Bus Service"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-56-30-274Z_2111393-c225214a_canonicalize_2026-06-10t22-56-13-413z-1976810-e589ba1d-ingest-201110-nostrand-cb15-slides-project-identity"
+}

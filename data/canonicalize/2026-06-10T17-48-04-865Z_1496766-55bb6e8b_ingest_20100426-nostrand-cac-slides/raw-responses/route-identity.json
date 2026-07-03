@@ -1,0 +1,84 @@
+{
+  "run_id": "2026-06-10T17-48-04-865Z_1496766-55bb6e8b_ingest_20100426-nostrand-cac-slides",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-10T19:29:10.347Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "b44-sbs-already-canonical",
+        "local_observation_id": "route_b44_sbs_2010_04_26",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_b44-sbs is already the correct canonical registry record. Registry record route_b44-sbs has alias route_b44-sbs-2010-04-26 and source 20100426_nostrand_cac_slides, confirming this observation already resolves to its own canonical id. No cross-link needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20100426_nostrand_cac_slides",
+            "block_id": "p009_c0002",
+            "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+          }
+        ]
+      },
+      {
+        "decision_id": "b44-local-already-canonical",
+        "local_observation_id": "route_b44_local_2010_04_26",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_b44-local is already the correct canonical registry record. Registry record route_b44-local has alias route_b44-local-2010-04-26 and source 20100426_nostrand_cac_slides, confirming this observation already resolves to its own canonical id. No cross-link needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20100426_nostrand_cac_slides",
+            "block_id": "p009_c0002",
+            "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "coexists_with",
+            "subject_id": "route_b44-local",
+            "object_id": "route_b44-sbs",
+            "description": "B44 Local continues alongside B44 SBS on the Nostrand/Rogers corridor; source states 'B44 Local will continue as before' alongside the SBS conversion.",
+            "evidence_refs": [
+              {
+                "source_id": "20100426_nostrand_cac_slides",
+                "block_id": "p009_c0002",
+                "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "b44-limited-already-canonical",
+        "local_observation_id": "route_b44_limited_2010_04_26",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_b44-limited is already the correct canonical registry record. Registry record route_b44-limited has alias route_b44-limited-2010-04-26 and source 20100426_nostrand_cac_slides, confirming this observation already resolves to its own canonical id. No cross-link needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20100426_nostrand_cac_slides",
+            "block_id": "p009_c0002",
+            "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "predecessor_of",
+            "subject_id": "route_b44-limited",
+            "object_id": "route_b44-sbs",
+            "description": "B44 Limited is the predecessor service that will be converted to B44 SBS; source states 'B44 Limited will become SBS'.",
+            "evidence_refs": [
+              {
+                "source_id": "20100426_nostrand_cac_slides",
+                "block_id": "p009_c0002",
+                "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-28-05-016Z_1629944-016df551_canonicalize_2026-06-10t17-48-04-865z-1496766-55bb6e8b-ingest-20100426-nostrand-cac-slides-route-identity"
+}

@@ -1,0 +1,132 @@
+{
+  "campaign_id": "codex-route-normalization-phase2-2026-06-24",
+  "parent_campaign": "data/review_notes/codex-route-normalization-campaign-2026-06-24.json",
+  "persistent_goal_status": "active",
+  "started_at": "2026-06-24T12:16:19Z",
+  "baseline": {
+    "validate_issues": 0,
+    "canonical_route_records": 321,
+    "canonical_records": 83963,
+    "wiki_pages": 7355
+  },
+  "subagent_lanes": [
+    {
+      "lane": "single_letter_and_numeric_subway_route_identity_keys",
+      "agent_id": "019ef98c-6b6d-77e2-a92c-2eb06b910193",
+      "nickname": "Plato",
+      "status": "completed_and_implemented",
+      "scope": "Audit A/C/E/F/G/J/L/N/Q/R/W/Z and numeric subway/subway-shuttle route keys, collisions, and mode-qualified key recommendations.",
+      "key_findings": [
+        "Bare subway letters and numeric subway routes lacked stable mode-qualified identity aliases.",
+        "No current exact bare-key collisions were found, but mode-qualified keys are safer and deterministic."
+      ]
+    },
+    {
+      "lane": "aggregate_bundled_route_materializer_policy",
+      "agent_id": "019ef98c-7001-7b93-bb8d-aec64f02eb72",
+      "nickname": "Aristotle",
+      "status": "completed_and_classifier_implemented",
+      "scope": "Audit Q52/Q53, X28/X38, SIM23/SIM24, Bx40/42, M34/M34A, Staten Island express bundles, 15 Express bus routes, and broad route-list records.",
+      "key_findings": [
+        "True route records should remain page-bearing route records.",
+        "Aggregate/list context and data-only scope records should likely stay canonical but not produce route pages.",
+        "Implemented the suggested pure aggregate route classifier with tests before any materializer page-policy wiring."
+      ]
+    },
+    {
+      "lane": "high_denorm_route_hotspots",
+      "status": "completed_local_guardrail_implemented",
+      "scope": "Audit Q52/Q53, Utica/B46, Webster/Bx41, Bx12, B44, M60, and M34/M34A high _merged_field_values records.",
+      "key_findings": [
+        "Q52/Q53 and Utica/B46 records show high-confidence service-variant contamination: top-level SBS identity with merged limited-stop/LTD values.",
+        "Some other hotspots, including B44 SBS, look like healthy evidence accumulation and should not be split solely because aliases or route_id variants accumulated.",
+        "A pure classifier guardrail is safer than removing aliases or rewiring page policy in this slice."
+      ]
+    },
+    {
+      "lane": "identity_review_advisory_parser_followup",
+      "status": "implemented_local_slice",
+      "scope": "Reduce noisy advisory route-base candidate edges by making the deterministic parser prefer exact scalar payload.route_id and decline slash-composite route ids."
+    },
+    {
+      "lane": "route_scope_page_policy",
+      "agent_id": "019ef99e-f563-72e3-adec-a6d0e970cb40",
+      "nickname": "Raman",
+      "status": "completed_and_data_only_scope_policy_implemented",
+      "scope": "Audit whether routeRecordScope should drive materializer page policy for aggregate_list_context, data_only_scope, and split_candidate route records.",
+      "key_findings": [
+        "Suppressing split_candidate route pages would delete useful SBS and route-hotspot pages and is not safe as a broad deletion policy.",
+        "Suppressing aggregate_list_context pages should wait for writer-content migration/churn review.",
+        "Suppressing only data_only_scope removes one count-shaped route page with no canonical route churn."
+      ]
+    }
+  ],
+  "implemented": [
+    {
+      "area": "identity-review advisory parser",
+      "files": [
+        "packages/agents/src/identity-review.ts",
+        "packages/agents/test/identity-review.test.ts"
+      ],
+      "summary": "Added exported pure parser test hook and changed route candidate base extraction to prefer exact atomic payload route_id. Composite slash route ids now return no advisory base route instead of collapsing to the first member. Tests cover B82E vs B82, S93 vs S53, and Q52/Q53 composite ids."
+    },
+    {
+      "area": "mode-qualified subway route identity aliases",
+      "files": [
+        "packages/db/src/identity.ts",
+        "packages/db/test/identity.test.ts",
+        "data/canonical/routes.jsonl",
+        "wiki/routes"
+      ],
+      "summary": "Added deterministic subway route alias generation for A/C/E/F/G/J/L/N/Q/R/W/Z and numeric 1-7 routes only when route context indicates subway/train mode. Rebuilt materialized aliases; examples include route_a-subway, route_q-subway, route_2-subway, and route_7-subway."
+    },
+    {
+      "area": "aggregate route scope classifier",
+      "files": [
+        "packages/pipeline/src/materialize/materialize.ts",
+        "packages/pipeline/test/materialize/materialize.test.ts"
+      ],
+      "summary": "Added pure routeRecordScope classifier for true_route, aggregate_list_context, data_only_scope, and split_candidate records. Tests cover X28/X38 aggregate vs true X28/X38 records, 15 Express bus count scope, M34/M34A split candidate, and the M14 A/D exception."
+    },
+    {
+      "area": "high-denorm route service-variant guardrail",
+      "files": [
+        "packages/pipeline/src/materialize/materialize.ts",
+        "packages/pipeline/test/materialize/materialize.test.ts"
+      ],
+      "summary": "Extended routeRecordScope to classify records as split_candidate when a single top-level service variant conflicts with merged service_variant, route_type_normalized, or route_type values. Tests cover Q52 SBS and Utica/B46 limited-stop contamination while preserving clean B44 SBS accumulation as true_route."
+    },
+    {
+      "area": "route scope page policy",
+      "files": [
+        "packages/pipeline/src/materialize/materialize.ts",
+        "packages/pipeline/test/materialize/materialize.test.ts",
+        "packages/agents/src/write.ts",
+        "packages/agents/src/tools/writer-tools.ts",
+        "packages/pipeline/src/campaign/post-ingest.ts",
+        "wiki/routes/route_15-express-bus-battery-pl.md"
+      ],
+      "summary": "Added record-aware page path policy and made only data_only_scope route records non-page-bearing. Deterministic materialization removed the count-only route_15-express-bus-battery-pl page while preserving all 321 canonical route records. Aggregate/list context and split-candidate route records remain page-bearing pending writer-content/churn review."
+    }
+  ],
+  "verification": {
+    "focused_tests": [
+      "bun test packages/agents/test/identity-review.test.ts",
+      "bun test packages/db/test/identity.test.ts",
+      "bun test packages/pipeline/test/materialize/materialize.test.ts"
+    ],
+    "full_gates": [
+      "bun run typecheck",
+      "bun packages/cli/src/cli.ts materialize",
+      "bun packages/cli/src/cli.ts validate"
+    ],
+    "final_validate_issues": 0,
+    "final_validate_wiki_pages": 7354,
+    "final_canonical_route_records": 321
+  },
+  "remaining_lanes": [
+    "Decide whether to wire aggregate route page suppression after a writer-content migration/churn review.",
+    "Decide whether to annotate or otherwise handle split-candidate route pages without deleting useful route pages.",
+    "Run validate after each further implementation slice and update this or a follow-on review note."
+  ]
+}

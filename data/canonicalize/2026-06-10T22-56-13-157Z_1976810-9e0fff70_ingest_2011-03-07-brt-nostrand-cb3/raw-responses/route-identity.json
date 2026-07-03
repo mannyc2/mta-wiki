@@ -1,0 +1,69 @@
+{
+  "run_id": "2026-06-10T22-56-13-157Z_1976810-9e0fff70_ingest_2011-03-07-brt-nostrand-cb3",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T01:04:28.640Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "b44-sbs-2011-cb3-new",
+        "local_observation_id": "route_b44_sbs_2011_cb3",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_b44-sbs matches existing registry record; same variant (SBS / select_bus_service), same corridor (Nostrand/Rogers, Brooklyn). The source 2011_03_07_brt_nostrand_cb3 is already in the registry card's source_ids. No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p006_c0002",
+            "source_quote": "B44 Limited will become SBS; B44 Local will continue as before. SBS buses will have the same fare as the locals."
+          }
+        ]
+      },
+      {
+        "decision_id": "b44-limited-2011-cb3-new",
+        "local_observation_id": "route_b44_limited_2011_cb3",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_b44-limited matches existing registry record; same variant (Limited / limited_stop_bus), same corridor (Nostrand/Rogers, Brooklyn). do_not_merge_pairs confirm distinctness from route_b44-sbs and route_b44-local. Already resolved correctly.",
+        "proposed_relations": [
+          {
+            "relation_kind": "predecessor",
+            "subject_id": "route_b44-limited",
+            "object_id": "route_b44-sbs",
+            "description": "B44 Limited service is the predecessor that was converted into B44 SBS on the Nostrand/Rogers corridor.",
+            "evidence_refs": [
+              {
+                "source_id": "2011_03_07_brt_nostrand_cb3",
+                "block_id": "p006_c0002",
+                "source_quote": "B44 Limited will become SBS; B44 Local will continue as before."
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p006_c0002",
+            "source_quote": "B44 Limited will become SBS; B44 Local will continue as before."
+          }
+        ]
+      },
+      {
+        "decision_id": "b44-local-2011-cb3-new",
+        "local_observation_id": "route_b44_local_2011_cb3",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_b44-local matches existing registry record; same variant (Local / local_bus), same corridor (Nostrand/Rogers, Brooklyn). do_not_merge_pairs confirm distinctness from route_b44-sbs and route_b44-limited. Already resolved correctly.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p006_c0002",
+            "source_quote": "B44 Local will continue as before."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-47-658Z_2111393-beacca73_canonicalize_2026-06-10t22-56-13-157z-1976810-9e0fff70-ingest-2011-03-07-brt-nostrand-cb3-route-identity"
+}

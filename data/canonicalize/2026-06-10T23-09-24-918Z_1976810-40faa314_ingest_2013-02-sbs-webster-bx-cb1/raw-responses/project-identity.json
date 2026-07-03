@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T23-09-24-918Z_1976810-40faa314_ingest_2013-02-sbs-webster-bx-cb1",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T03:21:35.665Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d01-webster-ave-sbs-2013-cb1-self",
+        "local_observation_id": "project_webster_ave_sbs_2013_02_cb1",
+        "decision": "new",
+        "rationale": "Observation base_record_id project_12-webster-ave already exists in the canonical registry with matching display_name (Webster Avenue Select Bus Service), matching source_id (2013_02_sbs_webster_bx_cb1), and matching alias (project_webster-ave-sbs-2013-02-cb1). The observation already resolves to its own base record; no different target record is a closer match.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p001_c0002",
+            "source_quote": "Webster Avenue Select Bus Service | Presentation to Community Board 1 | February 11, 2013"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p001_c0003",
+            "source_quote": "Webster Avenue Select Bus Service"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-20-31-701Z_2111393-89609cd2_canonicalize_2026-06-10t23-09-24-918z-1976810-40faa314-ingest-2013-02-sbs-webster-bx-cb1-project-identity"
+}

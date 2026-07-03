@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "route_cluster_afaf670d79",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_afaf670d79.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_afaf670d79.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 4,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "route_b82-limited-brt-south-brooklyn-2017",
+        "route_b82-local"
+      ],
+      "reason": "Different service variants (limited_stop vs local) on the same base route B82. Per per-kind route rule: different variants never merge."
+    },
+    {
+      "record_ids": [
+        "route_b82-limited-brt-south-brooklyn-2017",
+        "route_b82-sbs"
+      ],
+      "reason": "Different service variants (limited_stop vs sbs) on the same base route B82. Per per-kind route rule: different variants never merge."
+    },
+    {
+      "record_ids": [
+        "route_b82-local",
+        "route_b82-sbs"
+      ],
+      "reason": "Different service variants (local vs sbs) on the same base route B82. Per per-kind route rule: different variants never merge."
+    },
+    {
+      "record_ids": [
+        "route_b82-limited-brt-south-brooklyn-2017",
+        "route_b82e-express-cb18-jun2017"
+      ],
+      "reason": "Different base route IDs (B82 vs B82E). Per route identity rule, identity = base route id + service variant; different base route IDs denote distinct routes."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "All six records have distinct identity keys: the three B82 records differ in service variant (limited, local, sbs), and the remaining three records have different base route IDs (B82E, BM2, BM5). The per-kind route rule that different variants never merge, and that different base route IDs denote different routes, directly applies. No ambiguity exists because payload identity fields clearly specify route_id and service_variant for each record. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

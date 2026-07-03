@@ -1,0 +1,59 @@
+{
+  "run_id": "2026-06-10T22-59-39-378Z_1976810-154a89ae_ingest_201110-nostrand-cb17-slides",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:03:02.258Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "mta-nyct-cb17-new",
+        "local_observation_id": "entity_mta_nyct_201110_cb17",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-nyct already exists in the registry with matching entity_name 'MTA New York City Transit' and entity_type 'agency'. The observation resolves to its own base_record_id — no different target exists.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p001_c0003",
+            "source_quote": "New York City transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "nyc-dot-cb17-new",
+        "local_observation_id": "entity_nyc_dot_201110_cb17",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot already exists in the registry with matching entity_name 'New York City Department of Transportation' and entity_type 'agency'. The observation resolves to its own base_record_id — no different target exists.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p001_c0004",
+            "source_quote": "The New York City Department of Transportation (NYC DOT) logo, which consists of the words 'NEW YORK CITY' above a stylized 'DOT' with horizontal lines."
+          }
+        ]
+      },
+      {
+        "decision_id": "cb17-new",
+        "local_observation_id": "entity_community_board_17_201110",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_community-board-17-201110 already exists in the registry with matching entity_name 'Community Board 17', entity_type 'community board', sourced from the same 201110_nostrand_cb17_slides. The observation resolves to its own base_record_id — no different target exists.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p001_c0005",
+            "source_quote": "Nostrand Avenue / Rogers Avenue Select Bus Service Presentation to Community Board 17"
+          },
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p011_c0001",
+            "source_quote": "SBS Plan in CB 17"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-01-46-065Z_2111393-d3f7d473_canonicalize_2026-06-10t22-59-39-378z-1976810-154a89ae-ingest-201110-nostrand-cb17-slides-entity-identity"
+}

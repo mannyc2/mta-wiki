@@ -1,0 +1,327 @@
+{
+  "note_id": "codex-identity-dnm-batch198-prep",
+  "batch": "identity198-dnm",
+  "created_at": "2026-06-23T00:00:00Z",
+  "prepared_count": 8,
+  "scope": {
+    "operation": "prepare_do_not_merge_suppressions_only",
+    "allowed_global_kinds": [
+      "route",
+      "corridor"
+    ],
+    "selection_note": "Codex-only do-not-merge review artifact after identity193. Scope is current route/corridor duplicate_global_identity pairs only. No provider-backed commands were run. Inputs were inspected read-only: current validateRepo duplicate_global_identity output, data/canonical/routes.jsonl, data/canonical/corridors.jsonl, data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, and referenced raw source blocks.",
+    "write_limit": "Exactly one artifact was written: data/review_notes/codex-identity-dnm-batch198-prep.json. No merges.json, do-not-merge.json, LOG.md, manifest, submissions, canonical outputs, DB, materialized outputs, or wiki files were edited.",
+    "provider_backed_commands_run": false
+  },
+  "proposed_do_not_merge_pairs": [
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_b103-ltd-proposed-draft",
+        "route_b103e-express-cb18-jun2017"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global route records route_b103-ltd-proposed-draft and route_b103e-express-cb18-jun2017 share identity key route_b103."
+      ],
+      "source_canonical_evidence": [
+        "route_b103-ltd-proposed-draft: display_name 'Proposed B103 LTD', route_id 'B103 LTD', route_type_normalized 'limited_stop', service_variant 'limited_stop', borough 'Brooklyn'.",
+        "route_b103e-express-cb18-jun2017: display_name 'B103 Express', route_id 'B103E', route_label 'B103E', route_type_normalized 'express', service_variant 'express', borough 'Brooklyn'.",
+        "Source block brt_south_brooklyn_b82_cb18_jun2017#p037_c0004 lists separate stop sign labels including B82, B82E, B103E, BM2, and Flatlands Av & E 105 St."
+      ],
+      "reason": "Shared base label B103 is not enough to merge a proposed limited-stop B103 LTD route with a distinct B103E express route label and express service variant.",
+      "guard_checks": {
+        "both_present": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "current_validator_duplicate_global_identity": true
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "route_b103-ltd-proposed-draft <> route_b103e-express-cb18-jun2017 on route_b103"
+      ]
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_b82-limited-brt-south-brooklyn-2017",
+        "route_b82-local"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global route records route_b82-limited-brt-south-brooklyn-2017 and route_b82-local share identity key route_b82."
+      ],
+      "source_canonical_evidence": [
+        "route_b82-limited-brt-south-brooklyn-2017: display_name 'B82 Limited', route_type_normalized 'limited_stop', service_variant 'limited_stop', description says existing B82 Limited service would be converted to B82 SBS.",
+        "route_b82-local: display_name 'B82 in Southern Brooklyn', route_type_normalized 'local', service_variant 'local'.",
+        "Canonical merged field values on route_b82-local include 'All current stops will still be served by the B82 Local after SBS conversion'; route_b82-limited-brt-south-brooklyn-2017 evidence includes B82 Limited/SBS conversion context."
+      ],
+      "reason": "The pair represents different B82 service variants: existing limited-stop service versus local service. The source context explicitly preserves local stop coverage separately from limited/SBS conversion.",
+      "guard_checks": {
+        "both_present": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "current_validator_duplicate_global_identity": true
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "route_b82-limited-brt-south-brooklyn-2017 <> route_b82-local on route_b82"
+      ]
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_bx40-bx42-tremont-cb5-2024",
+        "route_bx42-tremont-cab1"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global route records route_bx40-bx42-tremont-cb5-2024 and route_bx42-tremont-cab1 share identity key route_bx42."
+      ],
+      "source_canonical_evidence": [
+        "route_bx40-bx42-tremont-cb5-2024: display_name 'Bx40/42', route_id 'Bx40/42', aliases include route_bx40 and route_bx42, and merged route_id values include Bx40, Bx42, and Bx40/Bx42.",
+        "route_bx42-tremont-cab1: display_name 'Bx42', route_id 'Bx42', source_id tremont_ave_bus_priority_cab1_dec2022.",
+        "Source block tremont_ave_bus_priority_cab1_dec2022#p007_c0002 says Bx40/Bx42 serves Tremont Av east of Rosedale Av."
+      ],
+      "reason": "A bundled Bx40/Bx42 corridor-service record should not be collapsed into the single-route Bx42 record just because the bundle contains Bx42.",
+      "guard_checks": {
+        "both_present": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "current_validator_duplicate_global_identity": true
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "route_bx40-bx42-tremont-cb5-2024 <> route_bx42-tremont-cab1 on route_bx42"
+      ]
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_m34-local-2011",
+        "route_m34-sbs"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global route records route_m34-local-2011 and route_m34-sbs share identity key route_m34."
+      ],
+      "source_canonical_evidence": [
+        "route_m34-local-2011: display_name 'M34 Bus Route (Local)', route_type_normalized 'local', service_variant 'local', description 'M34 local bus route operating on 34th Street'.",
+        "route_m34-sbs: display_name 'M34/M34A on 34th Street Busway', route_type_normalized 'select_bus_service', service_variant 'sbs', route_label 'M34 SBS'.",
+        "Source block 34th_st_busway#p002_c0005 references M34/M34A SBS; route_m34-local-2011 evidence and payload preserve pre/SBS local-bus context."
+      ],
+      "reason": "The records are different M34 service variants: local bus versus Select Bus Service. The shared base route key is lifecycle/corridor context, not durable same-route identity.",
+      "guard_checks": {
+        "both_present": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "current_validator_duplicate_global_identity": true
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "route_m34-local-2011 <> route_m34-sbs on route_m34"
+      ]
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_bronx-flushing-jamaica-sbs",
+        "route_q44-cb12-2011"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global route records route_bronx-flushing-jamaica-sbs and route_q44-cb12-2011 share identity key route_q44."
+      ],
+      "source_canonical_evidence": [
+        "route_bronx-flushing-jamaica-sbs: display_name 'Q44-SBS - ABLE route', route_id 'Q44+', route_type_normalized 'select_bus_service', service_variant 'sbs', description 'SBS on Q44 bus route connecting Bronx, Flushing, and Jamaica'.",
+        "route_q44-cb12-2011: display_name 'Q44 local bus route', route_id 'Q44', route_type_normalized 'local', service_variant 'local', with merged values also preserving Q44 Limited/Q44 LTD predecessor context.",
+        "Source block brt_route_index#p001_b0001 says the Bronx-Flushing-Jamaica Select Bus Service began service on November 29, 2015 on the Q44 route; source block 2014_10_07_brt_flushingjamaica_pw1_presentation#p014_c0003 separately lists Q44: Jamaica to Bronx Zoo."
+      ],
+      "reason": "The records distinguish Q44 SBS from the pre/SBS local-limited Q44 record. Replacement or upgrade context should remain a relation, not a route identity merge.",
+      "guard_checks": {
+        "both_present": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "current_validator_duplicate_global_identity": true
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "route_bronx-flushing-jamaica-sbs <> route_q44-cb12-2011 on route_q44"
+      ]
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_broadway-manhattan-upper",
+        "corridor_bus-fwd-2-broadway-bronx-local"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_broadway-manhattan-upper and corridor_bus-fwd-2-broadway-bronx-local share identity key corridor_broadway."
+      ],
+      "source_canonical_evidence": [
+        "corridor_broadway-manhattan-upper: display_name 'Broadway, 157th Street to 220th Street, Manhattan', borough_normalized 'manhattan', limits '157th Street to 220th Street'.",
+        "corridor_bus-fwd-2-broadway-bronx-local: display_name 'Broadway, Bronx (W 225th St to W 231st St)', borough_normalized 'bronx', from 'W 225th St', to 'W 231st St'.",
+        "Source block broadway_157_st_220_st_cb12_mar2025#p005_c0002 says Broadway from 157th St to 220th St; source block bus_forward_2#p011_c0002 lists the Bronx Broadway segment from W 225th St to W 231st St."
+      ],
+      "reason": "Shared street name Broadway is a weak key. The records are in different boroughs with different physical limits, so this should be a durable do-not-merge suppression.",
+      "guard_checks": {
+        "both_present": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "current_validator_duplicate_global_identity": true
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "corridor_broadway-manhattan-upper <> corridor_bus-fwd-2-broadway-bronx-local on corridor_broadway"
+      ]
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_meeting-doc-109341-montauk-branch-amityville-babylon",
+        "corridor_meeting-doc-109341-montauk-branch-babylon-sayville"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_meeting-doc-109341-montauk-branch-amityville-babylon and corridor_meeting-doc-109341-montauk-branch-babylon-sayville share identity key corridor_montauk-branch."
+      ],
+      "source_canonical_evidence": [
+        "corridor_meeting-doc-109341-montauk-branch-amityville-babylon: corridor_name 'Montauk Branch', limits 'between Amityville and Babylon', description says Third Rail State of Good Repair work.",
+        "corridor_meeting-doc-109341-montauk-branch-babylon-sayville: corridor_name 'Montauk Branch', limits 'between Babylon and Sayville', description says Signal Hut Installation work.",
+        "Source block meeting_doc_109341#p001_c0005 names both projects separately: Third Rail work between Amityville and Babylon, and Signal Hut Installation between Babylon and Sayville."
+      ],
+      "reason": "Both records are on the Montauk Branch, but they are separate bounded branch segments with different endpoints and work scopes.",
+      "guard_checks": {
+        "both_present": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "current_validator_duplicate_global_identity": true
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "corridor_meeting-doc-109341-montauk-branch-amityville-babylon <> corridor_meeting-doc-109341-montauk-branch-babylon-sayville on corridor_montauk-branch"
+      ]
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_third-ave-36th-to-55th",
+        "corridor_third-ave-55th-to-57th"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_third-ave-36th-to-55th and corridor_third-ave-55th-to-57th share identity key corridor_third-ave."
+      ],
+      "source_canonical_evidence": [
+        "corridor_third-ave-36th-to-55th: display_name 'Third Avenue: 36th Street to 55th Street', description 'Section 1 of Third Avenue Bus Lane Improvements project', limits '36th Street to 55th Street'.",
+        "corridor_third-ave-55th-to-57th: display_name 'Third Avenue: 55th Street to 57th Street', description 'Section 2 of Third Avenue Bus Lane Improvements project', limits '55th Street to 57th Street'.",
+        "Source blocks 2014_05_05_brt_thirdave_cb6_presentation#p004_c0001 and #p008_c0001 label these as Section 1 36th Street to 55th Street and Section 2 55th Street to 57th Street."
+      ],
+      "reason": "The records are adjacent but distinct Third Avenue sections. Shared street name should not collapse section-specific corridor records with different limits and section labels.",
+      "guard_checks": {
+        "both_present": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "current_validator_duplicate_global_identity": true
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "corridor_third-ave-36th-to-55th <> corridor_third-ave-55th-to-57th on corridor_third-ave"
+      ]
+    }
+  ],
+  "deferred": [
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_b44-brt-phase2",
+        "route_b44-sbs"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global route records route_b44-brt-phase2 and route_b44-sbs share identity key route_b44."
+      ],
+      "reason": "Deferred because route_b44-brt-phase2 -> route_b44-sbs was already prepared as an alias in identity182; adding a conflicting do-not-merge suggestion would be unsafe without a conductor decision.",
+      "confidence": "low"
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_m14-ad-sbs",
+        "route_m14-brt-phase2"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global route records route_m14-ad-sbs and route_m14-brt-phase2 share identity key route_m14."
+      ],
+      "reason": "Deferred because route_m14-brt-phase2 -> route_m14-ad-sbs was already prepared in identity179, so this needs prior-prep reconciliation rather than a new suppression proposal.",
+      "confidence": "low"
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_q53-lga-2012",
+        "route_q53-sbs-ace"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global route records route_q53-lga-2012 and route_q53-sbs-ace share identity key route_q53."
+      ],
+      "reason": "Likely participant-idea/context record versus Q53 SBS/ACE route, but deferred because a stronger source review is needed before making a durable suppression.",
+      "confidence": "medium"
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_14th-st-crosstown-brt-phase2",
+        "corridor_14th-street-ttp"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_14th-st-crosstown-brt-phase2 and corridor_14th-street-ttp share identity keys corridor_14th-st-crosstown-brt-phase2 and corridor_14th-st-crosstown-corridor."
+      ],
+      "reason": "Likely broad Phase II candidate versus specific Transit and Truck Priority operating corridor, but deferred because a project lifecycle review may decide whether these should be related by phase rather than suppressed.",
+      "confidence": "medium"
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_woodhaven-blvd-dry-harbor-to-metropolitan",
+        "corridor_woodhaven-boulevard"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_woodhaven-blvd-dry-harbor-to-metropolitan and corridor_woodhaven-boulevard share identity key corridor_woodhaven-blvd."
+      ],
+      "reason": "Likely subsegment versus broader Woodhaven Boulevard corridor, but deferred because the broader record may be intentionally page-bearing for the whole corridor and needs a full Woodhaven cluster policy.",
+      "confidence": "medium"
+    }
+  ],
+  "blockers": [],
+  "deterministic_inspection": {
+    "commands": [
+      "bun --eval import { validateRepo } from './packages/agents/src/index.ts'; report current duplicate_global_identity issues for routes/corridors",
+      "bun --eval read-only inspection of current route/corridor canonical JSONL records, merges.json, and do-not-merge.json",
+      "bun --eval exact guard check for current record presence, merge roots, existing direct/resolved do-not-merge pairs, and same-root merge collapse",
+      "rg/read-only inspection of referenced raw source blocks for decisive service variant, bundle, borough, branch-segment, and corridor-limit evidence"
+    ],
+    "current_validation_surface": {
+      "total_duplicate_global_identity_issues": 427,
+      "route_duplicate_global_identity_issues": 18,
+      "corridor_duplicate_global_identity_issues": 28
+    },
+    "guard_summary": {
+      "all_selected_records_present": true,
+      "all_selected_pairs_absent_from_direct_do_not_merge": true,
+      "all_selected_pairs_absent_from_resolved_do_not_merge": true,
+      "all_selected_pairs_have_distinct_merge_roots": true,
+      "all_selected_pairs_not_already_merged_resolved_same_target": true,
+      "provider_backed_commands_run": false
+    }
+  },
+  "conductor_apply_note": "This is a review artifact only. If accepted, add durable do-not-merge pairs rather than aliases for the eight proposed pairs."
+}

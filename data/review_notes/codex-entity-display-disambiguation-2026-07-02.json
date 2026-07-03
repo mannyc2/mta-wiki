@@ -1,0 +1,137 @@
+{
+  "note_id": "codex-entity-display-disambiguation-2026-07-02",
+  "created_at": "2026-07-02",
+  "mode": "codex_only_deterministic",
+  "external_provider_llms_used": false,
+  "forbidden_commands_used": [],
+  "bucket": "non-other exact-display entity duplicate keys",
+  "baseline": {
+    "route_exact_display_duplicate_keys": 0,
+    "project_exact_display_duplicate_keys": 0,
+    "entity_exact_display_duplicate_keys": 4,
+    "entity_exact_display_duplicate_records": 9,
+    "entity_groups": [
+      {
+        "display_key": "community board 1",
+        "records": [
+          "entity_brooklyn-community-board-1",
+          "entity_community-board-1-bronx-2012-02",
+          "entity_community-board-1-manhattan-2013-06"
+        ],
+        "decision": "Existing do-not-merge coverage proves these are distinct borough-scoped boards, so label disambiguation is safer than merging."
+      },
+      {
+        "display_key": "community advisory committee (cac)",
+        "records": [
+          "entity_community-advisory-committee-2015",
+          "entity_community-advisory-committee-webster"
+        ],
+        "decision": "Existing do-not-merge coverage proves these are distinct project-scoped CACs, so label disambiguation is safer than merging."
+      },
+      {
+        "display_key": "frank farrell",
+        "records": [
+          "entity_frank-farrell-mta-acting-evp-buses",
+          "entity_mta-nyct-evp-frank-farrell"
+        ],
+        "decision": "Deferred. Existing do-not-merge says strong entity_type fields differ even though both represent Frank Farrell; needs a narrow person/title display-policy pass."
+      },
+      {
+        "display_key": "metropolitan transportation authority (mta)",
+        "records": [
+          "entity_mta-entity-update-2025",
+          "entity_mta-metropolitan-transportation-authority"
+        ],
+        "decision": "Deferred. Existing do-not-merge treats these parent-MTA-shaped records as separate current canonical records because prior parent-MTA aliases caused cycles; needs source-review or representation policy before relabeling."
+      }
+    ]
+  },
+  "implemented_changes": [
+    {
+      "path": "packages/pipeline/src/materialize/materialize.ts",
+      "summary": "Added record-aware entity display-name disambiguation after canonical merge and before source-date backfill. It only rewrites generic Community Board N labels when borough context is deterministic, and generic Community Advisory Committee labels when a payload description states 'Community Advisory Committee for the ... project'."
+    },
+    {
+      "path": "packages/pipeline/test/materialize/materialize.test.ts",
+      "summary": "Added regression coverage for deterministic community-board and CAC display disambiguation."
+    }
+  ],
+  "after": {
+    "route_exact_display_duplicate_keys": 0,
+    "project_exact_display_duplicate_keys": 0,
+    "entity_exact_display_duplicate_keys": 2,
+    "entity_exact_display_duplicate_records": 4,
+    "changed_entity_labels": [
+      {
+        "record_id": "entity_brooklyn-community-board-1",
+        "display_name": "Brooklyn Community Board 1"
+      },
+      {
+        "record_id": "entity_community-board-1-bronx-2012-02",
+        "display_name": "Bronx Community Board 1"
+      },
+      {
+        "record_id": "entity_community-board-1-manhattan-2013-06",
+        "display_name": "Manhattan Community Board 1"
+      },
+      {
+        "record_id": "entity_community-advisory-committee-2015",
+        "display_name": "Woodhaven / Cross Bay SBS Community Advisory Committee (CAC)"
+      },
+      {
+        "record_id": "entity_community-advisory-committee-webster",
+        "display_name": "Webster Avenue SBS Community Advisory Committee (CAC)"
+      }
+    ],
+    "remaining_entity_exact_display_duplicate_groups": [
+      {
+        "display_key": "frank farrell",
+        "records": [
+          "entity_frank-farrell-mta-acting-evp-buses",
+          "entity_mta-nyct-evp-frank-farrell"
+        ]
+      },
+      {
+        "display_key": "metropolitan transportation authority (mta)",
+        "records": [
+          "entity_mta-entity-update-2025",
+          "entity_mta-metropolitan-transportation-authority"
+        ]
+      }
+    ]
+  },
+  "verification": {
+    "focused_tests": {
+      "command": "bun test packages/pipeline/test/materialize/materialize.test.ts",
+      "result": "pass",
+      "tests": 58,
+      "expects": 871
+    },
+    "typecheck": {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    "materialize": {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "pass",
+      "materialized_submissions": "93067/98115",
+      "retired_submissions_skipped": 265,
+      "pages": 7335,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass",
+      "issues": 0,
+      "submissions": 98115,
+      "canonical_records": 84027,
+      "wiki_pages": 7331
+    }
+  },
+  "next_lanes": [
+    "Review the Frank Farrell pair for a narrow title-based display disambiguation policy versus a broader person/entity-type canonicalization repair.",
+    "Review the parent-MTA pair as a representation-policy issue before changing labels or merge status.",
+    "Continue metric tail repair for date-shaped rows via event/date representation rather than unit coercion."
+  ],
+  "goal_status": "active"
+}

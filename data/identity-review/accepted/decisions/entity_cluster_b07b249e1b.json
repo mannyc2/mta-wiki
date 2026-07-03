@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "entity_cluster_b07b249e1b",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_b07b249e1b.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_b07b249e1b.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "entity_community-board-9-brooklyn-brt-nostrand",
+        "entity_community-board-9-queens-2015"
+      ],
+      "reason": "Contradiction test: borough differs. The first record is for Brooklyn Community Board 9; the second is for Queens Community Board 9. They are distinct real-world entities even though they share the same entity_name 'Community Board 9'. Source labels and descriptions consistently distinguish by borough."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "The two records represent different community boards in different boroughs (Brooklyn vs Queens). Per the Identity Merge Canon contradiction test, a differing borough is a strong identity field that forces do_not_merge. Despite the shared entity_name 'Community Board 9', the descriptions and source evidence clearly separate them. Each record already aggregates its own lifecycle observations correctly. No merge is possible. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

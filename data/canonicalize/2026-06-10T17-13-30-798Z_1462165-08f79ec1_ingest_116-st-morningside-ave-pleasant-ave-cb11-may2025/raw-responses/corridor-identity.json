@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T17-13-30-798Z_1462165-08f79ec1_ingest_116-st-morningside-ave-pleasant-ave-cb11-may2025",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-21T15:04:37.663Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "d116st-cb11-may2025",
+        "local_observation_id": "corridor_116th_st_5av_to_pleasant_av_cb11_may2025",
+        "decision": "new",
+        "rationale": "Observation's base_record_id is corridor_116th-street, which is already the correct registry record. The registry card for corridor_116th-street already includes the source 116_st_morningside_ave_pleasant_ave_cb11_may2025 in its source_ids, and the observation label '116th Street Corridor (5th Avenue to Pleasant Avenue)' refers to the same 116th Street study area corridor in Manhattan. Since the observation already resolves to its own base_record_id (the closest match), no link to a different record is needed. Decision is new per the 'own base_record_id' rule.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_may2025",
+            "block_id": "p005_c0002",
+            "source_quote": "CB11 Study area: 116 th St. & Pleasant Av. – Total: 1.1 miles"
+          },
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_may2025",
+            "block_id": "p017_c0002",
+            "source_quote": "On 116 th St from 5 Av. to Pleasant Avenue, maintains parking throughout"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-21T15-03-59-177Z_2836603-31819d79_canonicalize_2026-06-10t17-13-30-798z-1462165-08f79ec1-ingest-116-st-morningside-ave-pleasant-ave-cb11-may2025-corridor-identity"
+}

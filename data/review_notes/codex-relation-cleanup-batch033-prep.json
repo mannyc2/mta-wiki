@@ -1,0 +1,446 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch033-prep",
+  "created_at": "2026-06-23T02:05:00Z",
+  "author": "codex",
+  "scope": "relation endpoint-shape cleanup prep only; durable retire+replace mechanism planned but not applied",
+  "batch": "batch033",
+  "run_id_for_replacements": "2026-06-23_codex_relation_cleanup_batch033",
+  "submitted_at_for_dry_run": "2026-06-23T02:05:00Z",
+  "durable_mechanism_planned_not_applied": {
+    "retirements_target": "data/submission-overrides/retired.json",
+    "replacement_journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch033.jsonl",
+    "applied": false
+  },
+  "bucket": {
+    "name": "implemented_by metric-claim-to-entity agency and finance context rows",
+    "original_relation_kind": "implemented_by",
+    "original_endpoint_shape": "metric_claim -> entity",
+    "replacement_relation_kind": "related_to",
+    "replacement_endpoint_shape": "entity -> metric_claim",
+    "prepared_count": 4,
+    "why_coherent": "After excluding retired submissions, prior relation cleanup batches017-032, and missing-target repair work, the next exact high-confidence bucket has four implemented_by rows whose subjects are metric_claim records and whose objects are entities. Current endpoint-shape rules expect implemented_by to use a project subject and entity object. Three meeting_doc_91591 rows are procurement/requesting-department context for contract amount metric claims and can be replaced by related_to entity -> metric_claim rows. One meeting_doc_111896 row cites fuel hedge evidence while the subject is a farebox revenue metric, so it is prepared as retire-only."
+  },
+  "checkpoint_context": {
+    "method": "Read-only inventory over canonical JSONL and canonical.db with current endpoint-shape rules; excluded retired submissions, prior codex relation cleanup prep originals through batch032, and missing-target repair work. Did not run CLI validate, materialize, export-jsonl, DB repair/publish, or provider-backed commands.",
+    "remaining_endpoint_shape_inventory_after_exclusions": {
+      "total": 47,
+      "selected_bucket": "implemented_by metric_claim->entity",
+      "selected_bucket_count": 4,
+      "prepared_count": 4,
+      "other_top_buckets": [
+        {
+          "bucket": "part_of_program project->event",
+          "count": 3
+        },
+        {
+          "bucket": "has_metric source->metric_claim",
+          "count": 2
+        },
+        {
+          "bucket": "has_timeline_event claim->event",
+          "count": 2
+        },
+        {
+          "bucket": "implemented_by route->entity",
+          "count": 2
+        },
+        {
+          "bucket": "part_of_program event->entity",
+          "count": 2
+        }
+      ]
+    },
+    "canonical_db_read_check": {
+      "command": "sqlite3 data/canonical.db select record_id, relation_kind, subject_id, object_id for selected implemented_by metric_claim->entity candidates",
+      "result": "Confirmed all four candidate records are current canonical implemented_by rows with metric_claim subjects and entity objects."
+    }
+  },
+  "exclusions_and_guards": {
+    "excluded_batches": [
+      "batch017",
+      "batch019",
+      "batch020",
+      "batch021",
+      "batch022",
+      "batch023",
+      "batch024",
+      "batch025",
+      "batch026",
+      "batch027",
+      "batch028",
+      "batch029",
+      "batch030",
+      "batch031",
+      "batch032"
+    ],
+    "missing_target_repair_excluded": true,
+    "retired_json_not_edited": true,
+    "submission_journals_not_edited": true,
+    "generated_outputs_not_edited": true,
+    "db_not_edited": true,
+    "log_not_edited": true,
+    "manifest_merges_retired_not_edited": true,
+    "wiki_source_pages_not_edited": true,
+    "original_submission_guard": {
+      "retired_hits": [],
+      "prior_relation_batch_hits": []
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": [],
+      "prior_review_note_submission_id_hits": [],
+      "prior_review_note_local_observation_id_hits": []
+    }
+  },
+  "local_validation": {
+    "tooling": "createSubmissionEntry dry run for replacement tool_args plus relationEndpointIssues/endpoint-shape checks using accepted local observation ids by source; retire-only candidate checked by source evidence inspection and not submitted as replacement",
+    "summary": {
+      "prepared_count": 4,
+      "retire_replace_count": 3,
+      "retire_only_count": 1,
+      "accepted_replacement_count": 3,
+      "issue_count": 0,
+      "warning_count": 0,
+      "endpoint_shape_issue_count_after_replacement": 0
+    }
+  },
+  "command_evidence": [
+    {
+      "command": "test -f data/review_notes/codex-relation-cleanup-batch033-prep.json; echo $?",
+      "result": "1 before writing; artifact did not already exist."
+    },
+    {
+      "command": "endpoint-shape inventory script excluding retired submissions and cleanup batches017-032",
+      "result": "Remaining unexpected_relation_endpoint_shape total was 47; selected exact bucket implemented_by metric_claim->entity had count 4."
+    },
+    {
+      "command": "canonical JSONL inspection for four selected relation records plus endpoint record kinds/local ids",
+      "result": "Confirmed four current canonical implemented_by records, original submission ids, metric_claim subject records, entity object records, and source evidence refs."
+    },
+    {
+      "command": "source block inspection for meeting_doc_111896#p008_c0001 and meeting_doc_91591#p007_c0003/#p009_c0006/#p010_c0003/#p011_c0003",
+      "result": "Confirmed fuel hedge evidence does not support a farebox revenue replacement; confirmed three meeting_doc_91591 rows support entity-to-contract-amount related_to replacements."
+    },
+    {
+      "command": "createSubmissionEntry dry run for three related_to replacements",
+      "result": "All three replacement entries accepted with no issues, no warnings, and no endpoint-shape issue."
+    },
+    {
+      "command": "collision guard script over retired.json, data/submissions, and prior prep artifacts",
+      "result": "No original retired/prior hits and no replacement submission id or local observation id collisions."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts export-jsonl",
+    "provider-backed ingest/write/ask commands",
+    "database repair or publish commands"
+  ],
+  "prepared": [
+    {
+      "retire": {
+        "submission_id": "sub_8e454f6f34a6ec9a",
+        "original_record_id": "relation_meeting-doc-111896-fuel-hedge-mta",
+        "original_local_observation_id": "relation_meeting_doc_111896_fuel_hedge_mta",
+        "malformed_shape": "implemented_by metric_claim -> entity",
+        "original_relation_kind": "implemented_by",
+        "original_subject_id": "metric_meeting-doc-111896-farebox-rev-ytd-mar2023",
+        "original_subject_local_observation_id": "metric_meeting_doc_111896_farebox_rev_ytd_mar2023",
+        "original_subject_name": "Farebox Revenue YTD through March 2023",
+        "original_object_id": "entity_mta-entity-update-2025",
+        "original_object_local_observation_id": "entity_meeting_doc_111896_mta",
+        "original_object_name": "Metropolitan Transportation Authority (MTA)",
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_111896",
+            "evidence_id": "meeting_doc_111896#p008_c0001",
+            "source_path": "raw/sources/meeting_doc_111896/blocks.jsonl",
+            "page_number": 8,
+            "block_id": "p008_c0001",
+            "text_sha256": "sha256:aca8b67daf454f8e92bbb2d247ff859036dee0d7525cb8139a6e86f809e73c30",
+            "text_source": "raw_text",
+            "source_quote": "MTA executed a fuel hedge of ultra-low sulfur diesel fuel on approximately 1.6 million gallons"
+          }
+        ],
+        "reason": "Retire-only. The original endpoint shape is invalid for implemented_by, and the cited evidence is a fuel hedge program note rather than evidence about the Farebox Revenue YTD metric claim. No high-confidence source-backed replacement relation was prepared."
+      },
+      "replacement": null,
+      "local_validation": {
+        "state": "not_applicable_retire_only",
+        "issues": [],
+        "warnings": [],
+        "relationEndpointIssues": [],
+        "endpoint_shape_issue_after_replacement": null
+      },
+      "confidence": "high"
+    },
+    {
+      "retire": {
+        "submission_id": "sub_ea92e424842b3a19",
+        "original_record_id": "relation_meeting91591-nova-department-of-buses-v2",
+        "original_local_observation_id": "relation_meeting91591_nova_department_of_buses_v2",
+        "malformed_shape": "implemented_by metric_claim -> entity",
+        "original_relation_kind": "implemented_by",
+        "original_subject_id": "metric_meeting91591-nova-total-amount",
+        "original_subject_local_observation_id": "metric_claim_meeting91591_nova_total_amount",
+        "original_subject_name": "Nova Bus AEB Total Amount - $8,275,562",
+        "original_object_id": "entity_department-of-buses",
+        "original_object_local_observation_id": "entity_meeting91591_department_of_buses",
+        "original_object_name": "Department of Buses",
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_91591",
+            "evidence_id": "meeting_doc_91591#p007_c0003",
+            "source_path": "raw/sources/meeting_doc_91591/blocks.jsonl",
+            "page_number": 7,
+            "block_id": "p007_c0003",
+            "text_sha256": "sha256:119b1f1b34348e9ce53961584c7b8cfd8023cf51c37b8d89e530b192de68fdf6",
+            "text_source": "raw_text",
+            "source_quote": "Requesting Department: NYC Transit Department of Buses"
+          },
+          {
+            "source_id": "meeting_doc_91591",
+            "evidence_id": "meeting_doc_91591#p007_c0003",
+            "source_path": "raw/sources/meeting_doc_91591/blocks.jsonl",
+            "page_number": 7,
+            "block_id": "p007_c0003",
+            "text_sha256": "sha256:119b1f1b34348e9ce53961584c7b8cfd8023cf51c37b8d89e530b192de68fdf6",
+            "text_source": "raw_text",
+            "source_quote": "Total Amount: $8,275,562"
+          }
+        ],
+        "reason": "The original relation uses a metric_claim as an implemented_by subject. The source supports agency/requesting-department context for the Nova Bus AEB total amount metric, not implementation of a metric claim."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_7cc99672dab96b40",
+        "proposed_relation_kind": "related_to",
+        "proposed_endpoint_shape": "entity -> metric_claim",
+        "tool_args": {
+          "source_id": "meeting_doc_91591",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch033_department_of_buses_related_to_nova_total_amount",
+          "label": "Department of Buses related to Nova AEB total amount",
+          "raw_text": "Requesting Department: NYC Transit Department of Buses; Total Amount: $8,275,562.",
+          "payload": {
+            "relation_kind": "related_to",
+            "subject_id": "entity_department-of-buses",
+            "object_id": "metric_meeting91591-nova-total-amount",
+            "description": "Replacement for malformed implemented_by metric_claim -> entity relation; source lists NYC Transit Department of Buses as requesting department for the Nova Bus AEB procurement and states the total amount.",
+            "relation_family": "dependency_or_reference"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_91591",
+              "evidence_id": "meeting_doc_91591#p007_c0003",
+              "source_path": "raw/sources/meeting_doc_91591/blocks.jsonl",
+              "page_number": 7,
+              "block_id": "p007_c0003",
+              "text_sha256": "sha256:119b1f1b34348e9ce53961584c7b8cfd8023cf51c37b8d89e530b192de68fdf6",
+              "text_source": "raw_text",
+              "role": "agency_metric_context",
+              "source_quote": "Total Amount: $8,275,562"
+            },
+            {
+              "source_id": "meeting_doc_91591",
+              "evidence_id": "meeting_doc_91591#p007_c0003",
+              "source_path": "raw/sources/meeting_doc_91591/blocks.jsonl",
+              "page_number": 7,
+              "block_id": "p007_c0003",
+              "text_sha256": "sha256:119b1f1b34348e9ce53961584c7b8cfd8023cf51c37b8d89e530b192de68fdf6",
+              "text_source": "raw_text",
+              "role": "agency_metric_context",
+              "source_quote": "Requesting Department: NYC Transit Department of Buses"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue_after_replacement": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_cca1467ba3eeb22f",
+        "original_record_id": "relation_meeting91591-sprague-department-of-buses",
+        "original_local_observation_id": "relation_meeting91591_sprague_department_of_buses",
+        "malformed_shape": "implemented_by metric_claim -> entity",
+        "original_relation_kind": "implemented_by",
+        "original_subject_id": "metric_meeting91591-sprague-total-amount",
+        "original_subject_local_observation_id": "metric_claim_meeting91591_sprague_total_amount",
+        "original_subject_name": "Sprague Fuel Contract Extension - $209,923,366",
+        "original_object_id": "entity_department-of-buses",
+        "original_object_local_observation_id": "entity_meeting91591_department_of_buses",
+        "original_object_name": "Department of Buses",
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_91591",
+            "evidence_id": "meeting_doc_91591#p011_c0003",
+            "source_path": "raw/sources/meeting_doc_91591/blocks.jsonl",
+            "page_number": 11,
+            "block_id": "p011_c0003",
+            "text_sha256": "sha256:d3bede5ff02a46673b3e06487f5c02e0618bccf334f0a4f024816d2fb0c78013",
+            "text_source": "raw_text",
+            "source_quote": "Requesting Department: NYC Transit Department of Buses, MTA Bus Company"
+          },
+          {
+            "source_id": "meeting_doc_91591",
+            "evidence_id": "meeting_doc_91591#p011_c0003",
+            "source_path": "raw/sources/meeting_doc_91591/blocks.jsonl",
+            "page_number": 11,
+            "block_id": "p011_c0003",
+            "text_sha256": "sha256:d3bede5ff02a46673b3e06487f5c02e0618bccf334f0a4f024816d2fb0c78013",
+            "text_source": "raw_text",
+            "source_quote": "This Request: NYCT: $ 160,500,243 MTABC: $ 49,423,123"
+          }
+        ],
+        "reason": "The original relation uses a metric_claim as an implemented_by subject. The source supports agency/requesting-department context for the Sprague total amount metric, not implementation of a metric claim."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_1009a08f8779ca9e",
+        "proposed_relation_kind": "related_to",
+        "proposed_endpoint_shape": "entity -> metric_claim",
+        "tool_args": {
+          "source_id": "meeting_doc_91591",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch033_department_of_buses_related_to_sprague_total_amount",
+          "label": "Department of Buses related to Sprague total amount",
+          "raw_text": "Requesting Department: NYC Transit Department of Buses, MTA Bus Company; This Request: NYCT $160,500,243 and MTABC $49,423,123.",
+          "payload": {
+            "relation_kind": "related_to",
+            "subject_id": "entity_department-of-buses",
+            "object_id": "metric_meeting91591-sprague-total-amount",
+            "description": "Replacement for malformed implemented_by metric_claim -> entity relation; source lists NYC Transit Department of Buses and MTA Bus Company as requesting departments for the Sprague extension and states request amounts tied to the total metric claim.",
+            "relation_family": "dependency_or_reference"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_91591",
+              "evidence_id": "meeting_doc_91591#p011_c0003",
+              "source_path": "raw/sources/meeting_doc_91591/blocks.jsonl",
+              "page_number": 11,
+              "block_id": "p011_c0003",
+              "text_sha256": "sha256:d3bede5ff02a46673b3e06487f5c02e0618bccf334f0a4f024816d2fb0c78013",
+              "text_source": "raw_text",
+              "role": "agency_metric_context",
+              "source_quote": "This Request: NYCT: $ 160,500,243 MTABC: $ 49,423,123"
+            },
+            {
+              "source_id": "meeting_doc_91591",
+              "evidence_id": "meeting_doc_91591#p011_c0003",
+              "source_path": "raw/sources/meeting_doc_91591/blocks.jsonl",
+              "page_number": 11,
+              "block_id": "p011_c0003",
+              "text_sha256": "sha256:d3bede5ff02a46673b3e06487f5c02e0618bccf334f0a4f024816d2fb0c78013",
+              "text_source": "raw_text",
+              "role": "agency_metric_context",
+              "source_quote": "Requesting Department: NYC Transit Department of Buses, MTA Bus Company"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue_after_replacement": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_37237b7e593ddd20",
+        "original_record_id": "relation_meeting91591-wsp-mta-procurement",
+        "original_local_observation_id": "relation_meeting91591_wsp_mta_procurement",
+        "malformed_shape": "implemented_by metric_claim -> entity",
+        "original_relation_kind": "implemented_by",
+        "original_subject_id": "metric_meeting91591-wsp-total-amount",
+        "original_subject_local_observation_id": "metric_claim_meeting91591_wsp_total_amount",
+        "original_subject_name": "WSP Contract Extension - $20,000,000",
+        "original_object_id": "entity_mta-procurement",
+        "original_object_local_observation_id": "entity_meeting91591_mta_procurement",
+        "original_object_name": "MTA Procurement",
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_91591",
+            "evidence_id": "meeting_doc_91591#p010_c0003",
+            "source_path": "raw/sources/meeting_doc_91591/blocks.jsonl",
+            "page_number": 10,
+            "block_id": "p010_c0003",
+            "text_sha256": "sha256:14dcba7af838ea62bbd2f94a10a659a0c0f58b09659d4ff4dfca451a0cdc2950",
+            "text_source": "raw_text",
+            "source_quote": "Requesting Department: MTA Procurement"
+          },
+          {
+            "source_id": "meeting_doc_91591",
+            "evidence_id": "meeting_doc_91591#p009_c0006",
+            "source_path": "raw/sources/meeting_doc_91591/blocks.jsonl",
+            "page_number": 9,
+            "block_id": "p009_c0006",
+            "text_sha256": "sha256:5668f4619b7fe17b01a697bd5fccc3e3598eda4a28b231fce519c3f43497808f",
+            "text_source": "raw_text",
+            "source_quote": "WSP USA Incorporated $20,000,000"
+          }
+        ],
+        "reason": "The original relation uses a metric_claim as an implemented_by subject. The source supports procurement/requesting-department context for the WSP contract amount metric, not implementation of a metric claim."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_06447a4e430b0bfa",
+        "proposed_relation_kind": "related_to",
+        "proposed_endpoint_shape": "entity -> metric_claim",
+        "tool_args": {
+          "source_id": "meeting_doc_91591",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch033_mta_procurement_related_to_wsp_total_amount",
+          "label": "MTA Procurement related to WSP total amount",
+          "raw_text": "WSP USA Incorporated $20,000,000; Requesting Department: MTA Procurement.",
+          "payload": {
+            "relation_kind": "related_to",
+            "subject_id": "entity_mta-procurement",
+            "object_id": "metric_meeting91591-wsp-total-amount",
+            "description": "Replacement for malformed implemented_by metric_claim -> entity relation; source lists MTA Procurement as requesting department for the WSP inspection/testing contract and states the $20,000,000 amount.",
+            "relation_family": "dependency_or_reference"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_91591",
+              "evidence_id": "meeting_doc_91591#p009_c0006",
+              "source_path": "raw/sources/meeting_doc_91591/blocks.jsonl",
+              "page_number": 9,
+              "block_id": "p009_c0006",
+              "text_sha256": "sha256:5668f4619b7fe17b01a697bd5fccc3e3598eda4a28b231fce519c3f43497808f",
+              "text_source": "raw_text",
+              "role": "agency_metric_context",
+              "source_quote": "WSP USA Incorporated $20,000,000"
+            },
+            {
+              "source_id": "meeting_doc_91591",
+              "evidence_id": "meeting_doc_91591#p010_c0003",
+              "source_path": "raw/sources/meeting_doc_91591/blocks.jsonl",
+              "page_number": 10,
+              "block_id": "p010_c0003",
+              "text_sha256": "sha256:14dcba7af838ea62bbd2f94a10a659a0c0f58b09659d4ff4dfca451a0cdc2950",
+              "text_source": "raw_text",
+              "role": "agency_metric_context",
+              "source_quote": "Requesting Department: MTA Procurement"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue_after_replacement": null
+        },
+        "confidence": "high"
+      }
+    }
+  ]
+}

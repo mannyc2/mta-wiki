@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-06-10T23-04-42-552Z_1976810-b13e57f4_ingest_2012-10-brt-webster-cac3-meeting-summary",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T02:58:28.546Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "corridor_webster_ave_bronx",
+        "decision": "new",
+        "rationale": "The observation's own base_record_id, corridor_webster-ave-bronx, already represents the same physical corridor entity — Webster Avenue in the Bronx proposed for Select Bus Service with offset bus lanes. The existing registry record for corridor_webster-ave-bronx already includes the source 2012_10_brt_webster_cac3_meeting_summary in its source list, and its payload (corridor_name: 'Webster Avenue Corridor', borough: Bronx, description: 'Proposed SBS corridor in the Bronx based on the existing Bx41 route') describes the same real-world entity. Per decision rules, when the closest match is the observation's own base_record_id, the decision is 'new' — never 'link' to one's own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p001_c0003",
+            "source_quote": "Webster Avenue Select Bus Service Community Advisory Committee Meeting #3 Summary"
+          },
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p001_c0007",
+            "source_quote": "the proposed corridor design – offset bus lanes - was selected"
+          },
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p001_c0009",
+            "source_quote": "conceptual designs for offset bus lanes on Webster Avenue"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-55-43-158Z_2111393-298f137c_canonicalize_2026-06-10t23-04-42-552z-1976810-b13e57f4-ingest-2012-10-brt-webster-cac3-meeting-summary-corridor-identity"
+}

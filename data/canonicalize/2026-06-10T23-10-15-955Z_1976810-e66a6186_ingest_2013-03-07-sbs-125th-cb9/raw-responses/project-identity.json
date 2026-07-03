@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-06-10T23-10-15-955Z_1976810-e66a6186_ingest_2013-03-07-sbs-125th-cb9",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T03:26:01.707Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d_m60_sbs_125th_2013_self",
+        "local_observation_id": "project_m60_sbs_125th_street_2013",
+        "decision": "new",
+        "rationale": "Observation's base_record_id (project_m60-sbs-125th-street-2013) matches an existing registry record with identical project_name, project_type, status, borough, and description. The observation source (2013_03_07_sbs_125th_cb9) is already listed in that record's source_ids. Per rules, when the closest match is the observation's own base_record_id, decision is new — no different target to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p001_c0001",
+            "source_quote": "M60 Select Bus Service on 125 th Street"
+          },
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p006_c0005",
+            "source_quote": "Select Bus Service on the M60"
+          },
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p006_c0006",
+            "source_quote": "Potential Improvements:"
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-25-04-900Z_2111393-e60544c1_canonicalize_2026-06-10t23-10-15-955z-1976810-e66a6186-ingest-2013-03-07-sbs-125th-cb9-project-identity"
+}

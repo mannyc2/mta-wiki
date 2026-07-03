@@ -1,0 +1,95 @@
+{
+  "note_id": "codex-identity-batch227-wave34-prep",
+  "created_at": "2026-06-23T16:33:00Z",
+  "author": "codex",
+  "kind": "identity_cleanup_prep",
+  "status": "applied_pending_generated_checkpoint",
+  "scope": "Current validate duplicate_global_identity rows after wave34 checkpoint.",
+  "mutation_mechanism": "data/identity-overrides/merges.json aliases.entity and data/identity-overrides/do-not-merge.json pairs.entity; no generated canonical JSONL hand edits.",
+  "decisions": [
+    {
+      "decision_id": "identity227-wave34-001",
+      "action": "alias",
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-133181-gcmoc",
+      "target_id": "entity_meeting-doc-121001-gcmoc",
+      "confidence": "high",
+      "reason": "Both records identify Grand Central Madison Operating Company/GCMOC and describe it as responsible for the LIRR-operating portion of Grand Central Terminal. The target is the richer multi-source GCMOC/GCMCOC canonical record.",
+      "evidence": [
+        "data/canonical/entities.jsonl: entity_meeting-doc-121001-gcmoc evidence meeting_doc_121001#p001_c0007",
+        "data/canonical/entities.jsonl: entity_meeting-doc-133181-gcmoc evidence meeting_doc_133181#p001_b0034",
+        "validator duplicate_global_identity shared keys grand-central-madison-operating-company and grand-central-madison-operating-company-gcmoc"
+      ]
+    },
+    {
+      "decision_id": "identity227-wave34-002",
+      "action": "alias",
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-189806-gcmoc",
+      "target_id": "entity_meeting-doc-121001-gcmoc",
+      "confidence": "high",
+      "reason": "Both records identify Grand Central Madison Operating Company/GCMOC with matching operating-company role. The target is the richer multi-source GCMOC/GCMCOC canonical record.",
+      "evidence": [
+        "data/canonical/entities.jsonl: entity_meeting-doc-121001-gcmoc evidence meeting_doc_121001#p001_c0007",
+        "data/canonical/entities.jsonl: entity_meeting-doc-189806-gcmoc evidence meeting_doc_189806#p001_b0034",
+        "validator duplicate_global_identity shared key grand-central-madison-operating-company"
+      ]
+    },
+    {
+      "decision_id": "identity227-wave34-003",
+      "action": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-64066-mta",
+        "entity_meeting-doc-95001-mta-total"
+      ],
+      "confidence": "high",
+      "reason": "Metropolitan Transportation Authority is an agency/organization; MTA Total Agency Average is a farebox-ratio aggregate measure from a table and is not the same entity identity.",
+      "evidence": [
+        "data/canonical/entities.jsonl: entity_meeting-doc-64066-mta has entity_name Metropolitan Transportation Authority, acronym MTA, entity_type agency",
+        "data/canonical/entities.jsonl: entity_meeting-doc-95001-mta-total has entity_name MTA Total Agency Average, entity_type aggregate measure",
+        "meeting_doc_95001#p001_c0003 source table"
+      ]
+    },
+    {
+      "decision_id": "identity227-wave34-004",
+      "action": "review_only",
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate",
+        "corridor_church-av"
+      ],
+      "confidence": "medium",
+      "reason": "Reviewed previously and still not safely mutable: the Bus Forward SBS candidate says only Church Avenue without limits, while corridor_church-av is bounded Flatbush Ave to Ocean Pkwy. Evidence does not prove sameness or distinctness.",
+      "evidence": [
+        "data/review_notes/codex-corridor-church-ave-duplicate-prep-20260623.json",
+        "bus_forward_2#p005_c0001",
+        "church_ave_project_update_oct2019#p006_c0002"
+      ]
+    }
+  ],
+  "applied": {
+    "aliases_added": [
+      {
+        "alias_id": "entity_meeting-doc-133181-gcmoc",
+        "target_id": "entity_meeting-doc-121001-gcmoc"
+      },
+      {
+        "alias_id": "entity_meeting-doc-189806-gcmoc",
+        "target_id": "entity_meeting-doc-121001-gcmoc"
+      }
+    ],
+    "do_not_merge_added": [
+      {
+        "record_ids": [
+          "entity_meeting-doc-64066-mta",
+          "entity_meeting-doc-95001-mta-total"
+        ]
+      }
+    ]
+  },
+  "verification": {
+    "json_parse": "jq empty data/identity-overrides/merges.json && jq empty data/identity-overrides/do-not-merge.json",
+    "generated_checkpoint": "pending until wave36 generated-output lane is clear"
+  }
+}

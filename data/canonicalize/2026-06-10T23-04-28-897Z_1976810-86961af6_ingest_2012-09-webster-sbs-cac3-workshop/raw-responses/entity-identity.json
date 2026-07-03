@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:56:07.536Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "entity_mta_nyct_2012_09_webster_new",
+        "local_observation_id": "entity_mta_nyct_2012_09_webster",
+        "decision": "new",
+        "rationale": "The observation resolves to its own base_record_id entity_mta-nyct (MTA New York City Transit, agency). The registry card for entity_mta-nyct already lists this entity name, entity_type, and source. No different record represents the same real-world entity; the observation simply confirms existing identity.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_webster_sbs_cac3_workshop",
+            "block_id": "p001_c0001",
+            "source_quote": "MTA New York City Transit"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-55-36-126Z_2111393-3da05fba_canonicalize_2026-06-10t23-04-28-897z-1976810-86961af6-ingest-2012-09-webster-sbs-cac3-workshop-entity-identity"
+}

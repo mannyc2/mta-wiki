@@ -1,0 +1,54 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:37:38.526Z",
+  "packet_path": "data/identity-review/packets/route_cluster_30eb52a720.md",
+  "cluster_id": "route_cluster_30eb52a720",
+  "kind": "route",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "route_cluster_30eb52a720",
+    "kind": "route",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "route_bx6-local",
+          "route_bx6-sbs"
+        ],
+        "reason": "Contradiction test: strong identity field 'service_variant' differs (local vs sbs). Per route rule, different service variants never merge."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "route_bx6-local",
+        "aliases": [
+          "Bx6",
+          "Bx6 Lcl",
+          "route_bx6",
+          "route_bx6-mentioned"
+        ],
+        "reason": "Generic 'Bx6' or 'Bx6 Lcl' could refer to either variant; not definitive for local."
+      },
+      {
+        "record_id": "route_bx6-sbs",
+        "aliases": [
+          "Bx6",
+          "Bx6-SBS",
+          "route_bx6-sbs-ace"
+        ],
+        "reason": "Generic 'Bx6' or 'Bx6-SBS' may appear in sources; variant-ambiguous labels."
+      }
+    ],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "The two records share base route BX6 but have explicit service_variant values 'local' and 'sbs', which are distinct. Per the Identity Merge Canon, different service variants never merge. The relation_context shows a 'connects_to' relation between them, confirming they are related but distinct objects. All internal aliases within each record are lifecycle/source variants and belong to their respective canonical records."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-37-29-676Z_1282984-b0a9a42f_identity-review-run_route-cluster-30eb52a720",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-37-29-676Z_2026-06-23T14-37-29-676Z_1282984-b0a9a42f_identity-review-run_route-cluster-30eb52a720.jsonl"
+}

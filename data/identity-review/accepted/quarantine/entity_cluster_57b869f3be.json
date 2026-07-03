@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "entity_cluster_57b869f3be",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_57b869f3be.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_57b869f3be.json",
+  "source_review_run_id": "2026-06-23T14-38-47-609Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "quarantined",
+  "quarantine": {
+    "blocker": "merge entity_nys-office-mental-health + entity_scout-nys-omh: contradicting strong identity field between entity_nys-office-mental-health and entity_scout-nys-omh: entity_type agency vs government agency"
+  },
+  "original_merge_groups": [
+    [
+      "entity_nys-office-mental-health",
+      "entity_scout-nys-omh"
+    ]
+  ],
+  "original_do_not_merge": []
+}

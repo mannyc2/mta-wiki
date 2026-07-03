@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-06-10T22-59-39-378Z_1976810-154a89ae_ingest_201110-nostrand-cb17-slides",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T02:04:52.987Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "nostrand-rogers-sbs-201110-cb17-resolved",
+        "local_observation_id": "project_nostrand_rogers_sbs_201110_cb17",
+        "decision": "new",
+        "rationale": "Observation base_record_id project_nostrand-rogers-sbs already matches the closest existing registry record (same record_id, same project: Nostrand Ave / Rogers Ave Select Bus Service). The registry record already includes this source (201110_nostrand_cb17_slides) and this local_observation_id. Per rules, when the closest match IS the observation's own base_record_id, decision is 'new' — the observation already resolves to the correct canonical record and no linking action is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p001_c0005",
+            "source_quote": "Nostrand Avenue / Rogers Avenue Select Bus Service Presentation to Community Board 17"
+          },
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p007_c0001",
+            "source_quote": "Nostrand SBS Project Features"
+          },
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p003_c0001",
+            "source_quote": "SBS Features"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-01-46-074Z_2111393-122ad190_canonicalize_2026-06-10t22-59-39-378z-1976810-154a89ae-ingest-201110-nostrand-cb17-slides-project-identity"
+}

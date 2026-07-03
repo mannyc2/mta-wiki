@@ -1,0 +1,146 @@
+{
+  "run_id": "2026-06-08T22-39-41-210Z_schema-proposal-run",
+  "generated_at": "2026-06-08T22:39:41.210Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "concurrency": 3,
+  "audit_manifest": "data/identity-review/schema-audit/latest.json",
+  "kind_count": 12,
+  "completed": 12,
+  "skipped": 0,
+  "failed": 0,
+  "invalid": 1,
+  "paths": {
+    "proposals_dir": "data/identity-review/llm-suggestions/schema-proposals",
+    "runs_dir": "data/identity-review/llm-suggestions/schema-proposals/runs",
+    "manifest": "data/identity-review/llm-suggestions/schema-proposals/runs/2026-06-08T22-39-41-210Z_schema-proposal-run.json",
+    "latest": "data/identity-review/llm-suggestions/schema-proposals/runs/latest.json"
+  },
+  "results": [
+    {
+      "observation_kind": "metric_claim",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/metric_claim.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T22-39-41-210Z_3539440-d8a77dbb_schema-proposal-run_metric-claim",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T22-39-41-211Z_2026-06-08T22-39-41-210Z_3539440-d8a77dbb_schema-proposal-run_metric-claim.jsonl"
+    },
+    {
+      "observation_kind": "claim",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/claim.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T22-39-41-211Z_3539440-4e842e6c_schema-proposal-run_claim",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T22-39-41-211Z_2026-06-08T22-39-41-211Z_3539440-4e842e6c_schema-proposal-run_claim.jsonl"
+    },
+    {
+      "observation_kind": "relation",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/relation.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T22-39-41-211Z_3539440-d8703374_schema-proposal-run_relation",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T22-39-41-211Z_2026-06-08T22-39-41-211Z_3539440-d8703374_schema-proposal-run_relation.jsonl"
+    },
+    {
+      "observation_kind": "route",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/route.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T22-40-01-260Z_3539440-4152f0b1_schema-proposal-run_route",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T22-40-01-260Z_2026-06-08T22-40-01-260Z_3539440-4152f0b1_schema-proposal-run_route.jsonl"
+    },
+    {
+      "observation_kind": "event",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/event.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T22-40-55-692Z_3539440-a5da76f7_schema-proposal-run_event",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T22-40-55-700Z_2026-06-08T22-40-55-692Z_3539440-a5da76f7_schema-proposal-run_event.jsonl"
+    },
+    {
+      "observation_kind": "entity",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/entity.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T22-41-02-770Z_3539440-b54e7128_schema-proposal-run_entity",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T22-41-02-770Z_2026-06-08T22-41-02-770Z_3539440-b54e7128_schema-proposal-run_entity.jsonl"
+    },
+    {
+      "observation_kind": "table",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/table.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T22-41-19-335Z_3539440-f16c60a8_schema-proposal-run_table",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T22-41-19-335Z_2026-06-08T22-41-19-335Z_3539440-f16c60a8_schema-proposal-run_table.jsonl"
+    },
+    {
+      "observation_kind": "treatment_component",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/treatment_component.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T22-41-21-250Z_3539440-8acec3b3_schema-proposal-run_treatment-component",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T22-41-21-250Z_2026-06-08T22-41-21-250Z_3539440-8acec3b3_schema-proposal-run_treatment-component.jsonl"
+    },
+    {
+      "observation_kind": "project",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/project.json",
+      "status": "completed",
+      "valid": false,
+      "schema_issues": [
+        "key_dispositions[54].key \"start_date_text\" is not a presented additional key"
+      ],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T22-42-04-506Z_3539440-480192b3_schema-proposal-run_project",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T22-42-04-506Z_2026-06-08T22-42-04-506Z_3539440-480192b3_schema-proposal-run_project.jsonl",
+      "error": "proposal failed schema validation with 1 issue(s)"
+    },
+    {
+      "observation_kind": "corridor",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/corridor.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T22-42-12-620Z_3539440-d0a830f8_schema-proposal-run_corridor",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T22-42-12-620Z_2026-06-08T22-42-12-620Z_3539440-d0a830f8_schema-proposal-run_corridor.jsonl"
+    },
+    {
+      "observation_kind": "source",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/source.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T22-42-24-971Z_3539440-a01afa5b_schema-proposal-run_source",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T22-42-24-971Z_2026-06-08T22-42-24-971Z_3539440-a01afa5b_schema-proposal-run_source.jsonl"
+    },
+    {
+      "observation_kind": "source_gap",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/source_gap.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T22-43-20-259Z_3539440-c1034fd4_schema-proposal-run_source-gap",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T22-43-20-259Z_2026-06-08T22-43-20-259Z_3539440-c1034fd4_schema-proposal-run_source-gap.jsonl"
+    }
+  ]
+}

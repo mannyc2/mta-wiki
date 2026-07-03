@@ -1,0 +1,51 @@
+{
+  "run_id": "2026-06-10T23-04-27-481Z_1976810-2b41002c_ingest_2012-09-webster-sbs-cac3",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:53:42.587Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "entity-mta-nyct-2012-09-webster-new",
+        "local_observation_id": "entity_mta_nyct_2012_09_webster",
+        "decision": "new",
+        "rationale": "The observation's base_record_id (entity_mta-nyct) already resolves to the correct canonical record for MTA New York City Transit. The entity name, label, and source context (2012_09_webster_sbs_cac3) all match the existing entity_mta-nyct registry record. No different target is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_webster_sbs_cac3",
+            "block_id": "p001_c0001",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2012_09_webster_sbs_cac3",
+            "block_id": "p005_c0009",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-nyc-dot-2012-09-webster-new",
+        "local_observation_id": "entity_nyc_dot_2012_09_webster",
+        "decision": "new",
+        "rationale": "The observation's base_record_id (entity_nyc-dot) already resolves to the correct canonical record for New York City Department of Transportation. The entity name (\"New York City Department of Transportation\"), short_name (\"NYC DOT\"), and source context (2012_09_webster_sbs_cac3) all match the existing entity_nyc-dot registry record. No different target is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_webster_sbs_cac3",
+            "block_id": "p005_c0010",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2012_09_webster_sbs_cac3",
+            "block_id": "p019_c0004",
+            "source_quote": ""
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-52-59-132Z_2111393-69dd0657_canonicalize_2026-06-10t23-04-27-481z-1976810-2b41002c-ingest-2012-09-webster-sbs-cac3-entity-identity"
+}

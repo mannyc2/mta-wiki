@@ -1,0 +1,86 @@
+{
+  "id": "sourcegap-scope-gap-normalization",
+  "date": "2026-07-01",
+  "external_provider_llms_used": false,
+  "forbidden_commands_used": false,
+  "bucket": "source_gap.gap_kind_normalized other",
+  "baseline": {
+    "source_gap_total": 480,
+    "gap_kind_normalized_other": 4,
+    "gap_kind_normalized_data_unavailable": 101,
+    "validate": {
+      "submissions": 98115,
+      "canonical_records": 84030,
+      "wiki_pages": 7333,
+      "issues": 0
+    }
+  },
+  "implemented": [
+    {
+      "kind": "normalizer_rule",
+      "file": "packages/pipeline/src/ontology/normalizers.ts",
+      "rule": "Map payload-gated source_gap records with gap_kind scope_gap to data_unavailable only when the text explicitly says the source does not contain relevant transit/project/route/corridor facts.",
+      "reason": "The canonical record gap_meeting-doc-201721-no-transit-content was an explicit no-relevant-transit-data scope gap, not an unresolved generic caveat."
+    },
+    {
+      "kind": "test",
+      "file": "packages/pipeline/test/ontology/normalizers.test.ts",
+      "rule": "Covers the explicit all-agency procurement report scope_gap and preserves a generic scope_gap as other."
+    }
+  ],
+  "verification": {
+    "focused_tests": {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "tests": 276,
+      "expects": 4575,
+      "status": "passed"
+    },
+    "typecheck": {
+      "command": "bun run typecheck",
+      "status": "passed"
+    },
+    "materialize": {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "materialized_submissions": 93070,
+      "total_submissions": 98115,
+      "retired_submissions_skipped": 263,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "after": {
+      "source_gap_total": 480,
+      "gap_kind_normalized_other": 3,
+      "gap_kind_normalized_data_unavailable": 102,
+      "remaining_other_record_ids": [
+        "gap_covid-moratorium-impact",
+        "gap_meeting-doc-208001-large-document",
+        "gap_partial-read-large-document"
+      ]
+    },
+    "validate": {
+      "submissions": 98115,
+      "canonical_records": 84030,
+      "wiki_pages": 7333,
+      "issues": 0
+    }
+  },
+  "intentionally_unresolved": [
+    {
+      "record_ids": [
+        "gap_meeting-doc-208001-large-document",
+        "gap_partial-read-large-document"
+      ],
+      "reason": "partial_extraction records are runner/process caveats previously left as policy debt, not safely equivalent to a source-stated data-unavailable caveat."
+    },
+    {
+      "record_ids": [
+        "gap_covid-moratorium-impact"
+      ],
+      "reason": "The COVID capital-award moratorium caveat is a contextual disruption; existing tests intentionally leave generic caveat text in other unless payload proof maps it to a bounded data caveat family."
+    }
+  ],
+  "next_buckets": [
+    "project_family missing pseudo-heading retirements",
+    "event_family other public-event tail",
+    "treatment aggregate scope polish"
+  ]
+}

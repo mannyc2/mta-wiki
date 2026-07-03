@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-06-10T17-48-04-636Z_1496766-600e2326_ingest_20091208-nostrand-cac-slides",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-10T19:25:10.551Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "nostrand-rogers-sbs-self-match",
+        "local_observation_id": "project_nostrand_rogers_sbs",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'project_nostrand-rogers-sbs' already exists in the registry and is the correct canonical record for this project. The registry record includes this same source (20091208_nostrand_cac_slides) in its source_ids, and both the observation payload and registry record describe the same real-world project: proposed SBS on Nostrand Avenue (southbound) and Rogers Avenue (northbound), converting B44 Limited to SBS in Brooklyn. Per canonicalization rules, when the closest match is the observation's own base_record_id, the decision is 'new' — the observation already resolves to that id.",
+        "evidence_refs": [
+          {
+            "source_id": "20091208_nostrand_cac_slides",
+            "block_id": "p001_c0004",
+            "source_quote": ""
+          },
+          {
+            "source_id": "20091208_nostrand_cac_slides",
+            "block_id": "p006_c0002",
+            "source_quote": ""
+          },
+          {
+            "source_id": "20091208_nostrand_cac_slides",
+            "block_id": "p016_c0002",
+            "source_quote": ""
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-24-38-774Z_1624326-558eddaf_canonicalize_2026-06-10t17-48-04-636z-1496766-600e2326-ingest-20091208-nostrand-cac-slides-project-identity"
+}

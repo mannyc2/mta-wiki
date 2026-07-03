@@ -1,0 +1,163 @@
+{
+  "id": "codex-metric-rate-volume-scheduled-relations-2026-06-30-w",
+  "date": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "goal_status": "active",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "provider-backed identity-review-run",
+    "provider-backed ontology-normalize-run",
+    "provider profiles"
+  ],
+  "subagents": {
+    "used": true,
+    "completed_read_only_scouts": [
+      {
+        "id": "019f1937-71a1-7cb2-8c01-c1f7dbf3aaf4",
+        "lane": "non-metric relation/project/source-gap/identity residual scout"
+      }
+    ],
+    "closed": true
+  },
+  "baseline": {
+    "submissions": 98102,
+    "canonical_records": 84040,
+    "wiki_pages": 7334,
+    "metrics": {
+      "total": 36534,
+      "unit_family_other": 3546,
+      "unit_family_money": 11482,
+      "unit_family_percentage": 8235,
+      "unit_family_ridership": 2001,
+      "unit_family_duration": 879,
+      "unit_family_money_rate": 595,
+      "unit_family_distance": 540,
+      "unit_family_area": 91,
+      "unit_family_volume": 0,
+      "unit_family_safety_rate": 6,
+      "unit_family_ratio": 0,
+      "unit_family_rate": 5,
+      "unit_family_count_rate": 1
+    },
+    "relations": {
+      "total": 20650,
+      "assertion_status_unknown": 10388,
+      "assertion_status_planned": 2794
+    }
+  },
+  "final": {
+    "submissions": 98102,
+    "canonical_records": 84040,
+    "wiki_pages": 7334,
+    "metrics": {
+      "total": 36534,
+      "unit_family_other": 1978,
+      "unit_family_money": 11590,
+      "unit_family_percentage": 8270,
+      "unit_family_ridership": 2071,
+      "unit_family_duration": 1004,
+      "unit_family_money_rate": 695,
+      "unit_family_distance": 616,
+      "unit_family_area": 124,
+      "unit_family_volume": 375,
+      "unit_family_safety_rate": 213,
+      "unit_family_ratio": 189,
+      "unit_family_rate": 188,
+      "unit_family_count_rate": 68
+    },
+    "relations": {
+      "total": 20650,
+      "assertion_status_unknown": 10329,
+      "assertion_status_planned": 2853,
+      "assertion_status_proposed": 3104,
+      "assertion_status_delivered": 2740,
+      "assertion_status_in_progress": 1600,
+      "assertion_status_deferred": 22,
+      "assertion_status_cancelled": 2
+    }
+  },
+  "deltas": {
+    "metric_unit_family_other": -1568,
+    "metric_unit_family_money": 108,
+    "metric_unit_family_percentage": 35,
+    "metric_unit_family_ridership": 70,
+    "metric_unit_family_duration": 125,
+    "metric_unit_family_money_rate": 100,
+    "metric_unit_family_distance": 76,
+    "metric_unit_family_area": 33,
+    "metric_unit_family_volume": 375,
+    "metric_unit_family_safety_rate": 207,
+    "metric_unit_family_ratio": 189,
+    "metric_unit_family_rate": 183,
+    "metric_unit_family_count_rate": 67,
+    "relation_assertion_status_unknown": -59,
+    "relation_assertion_status_planned": 59
+  },
+  "implemented": [
+    {
+      "slice": "exact_metric_volume_rate_distance_money_ratio_ridership_aliases",
+      "description": "Added exact metric unit aliases for volume, explicit safety/count/rate denominators, duration/distance/area literals, currency-marked money/money-rate units, ratio/percentage, and scaled ridership forms.",
+      "files": [
+        "packages/pipeline/src/ontology/normalizers.ts",
+        "packages/pipeline/test/ontology/normalizers.test.ts"
+      ]
+    },
+    {
+      "slice": "scheduled_timeline_relation_assertion_status",
+      "description": "Marked scheduled timeline/agenda relations as planned when relation family/kind and description prove a scheduled meeting or agenda, while guarding no-item/no-meeting rows.",
+      "files": [
+        "packages/pipeline/src/records/assertion-qualifiers.ts",
+        "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+      ]
+    }
+  ],
+  "validation": {
+    "focused_tests": [
+      {
+        "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+        "result": "pass",
+        "tests": 274,
+        "expects": 4184
+      },
+      {
+        "command": "bun test packages/pipeline/test/records/submissions.test.ts",
+        "result": "pass",
+        "tests": 29,
+        "expects": 176
+      },
+      {
+        "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+        "result": "pass",
+        "tests": 17,
+        "expects": 48
+      }
+    ],
+    "typecheck": "pass",
+    "materialize": "pass",
+    "sqlite_fts_quick_check": "ok",
+    "sqlite_quick_check": "ok",
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "issues": 0,
+      "submissions": 98102,
+      "canonical_records": 84040,
+      "wiki_pages": 7334
+    }
+  },
+  "intentionally_unresolved": [
+    "Metric units millions, thousands, customers, bare M, bare B, singular year, generic units, generic vehicles_per_day, and generic trains_per_hour remain unresolved because they are mixed or context-dependent.",
+    "Remaining metric other top buckets include switches, inspections, members, cars, firms, contracts, vehicles per day, tests, audits, trains per hour, parking spaces, crimes, severe injuries, and fires; these need separate exact count/service/safety policy slices.",
+    "Scheduled timeline inference intentionally excludes No Items, No Meetings Held, and no meeting scheduled descriptions.",
+    "Source-gap other, project-family tails, identity duplicate pressure, and route aggregate/split policy were inspected by the scout and not patched in this slice because no safer broader non-metric cleanup was found."
+  ],
+  "next_lanes": [
+    "metric count-like residuals such as switches, inspections, members, cars, contracts, tests, audits, fires, installations, tickets, defects, cards, comments, machines, locomotives, derailments, joints, and cases with exact guard tests",
+    "metric service-rate residuals such as vehicles/day, buses per hour, pedestrians per hour, and trains per hour if a deterministic service/rate policy is accepted",
+    "project document_time_status missing tail of 18, with exact gates only",
+    "relation unknown residuals outside giant context edges, using source/object kind and literal status wording guards"
+  ]
+}

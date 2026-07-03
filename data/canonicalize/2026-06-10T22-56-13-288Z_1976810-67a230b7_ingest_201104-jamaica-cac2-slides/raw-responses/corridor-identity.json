@@ -1,0 +1,100 @@
+{
+  "run_id": "2026-06-10T22-56-13-288Z_1976810-67a230b7_ingest_201104-jamaica-cac2-slides",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T01:30:24.102Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d_archer_ave",
+        "local_observation_id": "corridor_archer_ave_jamaica",
+        "decision": "new",
+        "rationale": "Observation base_record_id corridor_archer-ave-busway already exists in registry with identical payload (Archer Avenue Busway, Queens, limits 153rd–160th St eastbound, same description). Source 201104_jamaica_cac2_slides is already in the registry card's source_ids. Observation already resolves to this canonical ID.",
+        "evidence_refs": [
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p016_c0003",
+            "source_quote": "Busiest local bus corridor in NYC (up to 180 buses/hr per direction)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_jamaica_ave",
+        "local_observation_id": "corridor_jamaica_ave_jamaica_cac2",
+        "decision": "new",
+        "rationale": "Observation base_record_id corridor_jamaica-ave-busway already exists in registry with identical payload (Jamaica Avenue Busway, Queens, limits Sutphin Blvd to 168th St, same description). Source 201104_jamaica_cac2_slides is already in the registry card's source_ids. Observation already resolves to this canonical ID.",
+        "evidence_refs": [
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p021_c0003",
+            "source_quote": "Up to 90 buses/hr per direction"
+          },
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p021_c0004",
+            "source_quote": "Congestion delays due to: pedestrians turning vehicles deliveries"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_merrick_blvd",
+        "local_observation_id": "corridor_merrick_blvd_jamaica",
+        "decision": "new",
+        "rationale": "Observation base_record_id corridor_merrick-blvd-jamaica already exists in registry with identical payload (Merrick Boulevard, Queens, limits Hillside Avenue to Archer Avenue, same description about 24-hour bus lane/165th St Bus Terminal). Source 201104_jamaica_cac2_slides is already in the registry card's source_ids. Observation already resolves to this canonical ID.",
+        "evidence_refs": [
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p026_c0003",
+            "source_quote": "Hillside Avenue to Archer Avenue"
+          },
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p026_c0005",
+            "source_quote": "High-visibility, 24-hour bus lane would improve access to the 165 th Street Bus Terminal"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_165th_st",
+        "local_observation_id": "corridor_165th_st_jamaica",
+        "decision": "new",
+        "rationale": "Observation base_record_id corridor_165th-st-jamaica already exists in registry with identical payload (165th Street, Queens, limits Hillside Avenue to 89th Avenue, same description about bus lane/165th St Bus Terminal). Source 201104_jamaica_cac2_slides is already in the registry card's source_ids. Observation already resolves to this canonical ID.",
+        "evidence_refs": [
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p027_c0003",
+            "source_quote": "Hillside Avenue to 89 th Avenue"
+          },
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p027_c0005",
+            "source_quote": "Prioritizes bus movements exiting from 165 th Street Bus Terminal"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_hillside_ave",
+        "local_observation_id": "corridor_hillside_ave_jamaica_cac2",
+        "decision": "new",
+        "rationale": "Observation base_record_id corridor_hillside-ave-queens already exists in registry with matching payload (Hillside Avenue Bus Lane Corridor, Queens, same description about bus lanes serving 215,000+ daily riders). Source 201104_jamaica_cac2_slides is already in the registry card's source_ids. Observation already resolves to this canonical ID.",
+        "evidence_refs": [
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p031_c0002",
+            "source_quote": "Hillside Ave & Home Lawn St/169th St intersection issues for bus movement"
+          },
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p032_c0004",
+            "source_quote": "Home Lawn St becomes primary north/south roadway"
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-29-26-662Z_2111393-ad2d6c0c_canonicalize_2026-06-10t22-56-13-288z-1976810-67a230b7-ingest-201104-jamaica-cac2-slides-corridor-identity"
+}

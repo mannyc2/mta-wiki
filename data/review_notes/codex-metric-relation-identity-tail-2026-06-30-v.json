@@ -1,0 +1,214 @@
+{
+  "id": "codex-metric-relation-identity-tail-2026-06-30-v",
+  "date": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "goal_status": "active",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "provider-backed identity-review-run",
+    "provider-backed ontology-normalize-run",
+    "provider profiles"
+  ],
+  "subagents": {
+    "used": true,
+    "completed_read_only_scouts": [
+      {
+        "id": "019f192c-9c0f-7253-944c-048d1528b100",
+        "lane": "metric unit_family other residual aliases"
+      },
+      {
+        "id": "019f192c-a057-7e51-afc8-3245f34c4c1a",
+        "lane": "relation assertion_status unknown publication edges"
+      },
+      {
+        "id": "019f192c-a6ce-7492-be13-a200e6886df8",
+        "lane": "entity duplicate display-name identity guards"
+      },
+      {
+        "id": "019f192c-ac58-7b60-b93e-547bed7c9057",
+        "lane": "project/treatment/source-gap residual tails"
+      }
+    ],
+    "closed": true
+  },
+  "baseline": {
+    "submissions": 98102,
+    "canonical_records": 84040,
+    "wiki_pages": 7334,
+    "metrics": {
+      "total": 36534,
+      "unit_family_other": 5019,
+      "unit_family_count": 898,
+      "unit_family_safety": 232,
+      "unit_family_engagement": 29,
+      "unit_family_participation": 2
+    },
+    "relations": {
+      "total": 20650,
+      "assertion_status_unknown": 11141,
+      "assertion_status_delivered": 1987
+    },
+    "projects": {
+      "total": 1862,
+      "document_time_status_missing": 19,
+      "document_time_status_program_context": 1
+    },
+    "identity_overrides": {
+      "entity_do_not_merge_pairs": 171,
+      "route_do_not_merge_pairs": 68
+    },
+    "entities": 1894,
+    "routes": 319
+  },
+  "final": {
+    "submissions": 98102,
+    "canonical_records": 84040,
+    "wiki_pages": 7334,
+    "metrics": {
+      "total": 36534,
+      "unit_family_other": 3546,
+      "unit_family_count": 2253,
+      "unit_family_safety": 294,
+      "unit_family_engagement": 62,
+      "unit_family_participation": 25
+    },
+    "relations": {
+      "total": 20650,
+      "assertion_status_unknown": 10388,
+      "assertion_status_delivered": 2740,
+      "assertion_status_proposed": 3104,
+      "assertion_status_planned": 2794,
+      "assertion_status_in_progress": 1600,
+      "assertion_status_deferred": 22,
+      "assertion_status_cancelled": 2
+    },
+    "projects": {
+      "total": 1862,
+      "document_time_status_missing": 18,
+      "document_time_status_program_context": 2
+    },
+    "identity_overrides": {
+      "entity_do_not_merge_pairs": 173,
+      "route_do_not_merge_pairs": 68
+    },
+    "entities": 1894,
+    "routes": 319
+  },
+  "deltas": {
+    "metric_unit_family_other": -1473,
+    "metric_unit_family_count": 1355,
+    "metric_unit_family_safety": 62,
+    "metric_unit_family_engagement": 33,
+    "metric_unit_family_participation": 23,
+    "relation_assertion_status_unknown": -753,
+    "relation_assertion_status_delivered": 753,
+    "project_document_time_status_missing": -1,
+    "project_document_time_status_program_context": 1,
+    "entity_do_not_merge_pairs": 2
+  },
+  "implemented": [
+    {
+      "slice": "exact_count_safety_engagement_participation_metric_aliases",
+      "description": "Added exact aliases for residual count-like units plus fatalities, votes, and participants while keeping rate-like variants unresolved.",
+      "files": [
+        "packages/pipeline/src/ontology/normalizers.ts",
+        "packages/pipeline/test/ontology/normalizers.test.ts"
+      ]
+    },
+    {
+      "slice": "source_published_by_relation_status",
+      "description": "Marked source-to-entity publication_role/published_by edges as delivered while guarding non-source malformed publication edges.",
+      "files": [
+        "packages/pipeline/src/records/assertion-qualifiers.ts",
+        "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+      ]
+    },
+    {
+      "slice": "brt_phase_i_corridors_program_context",
+      "description": "Normalized the exact mixed implemented/planned BRT Phase I Corridors bundle as program_context.",
+      "files": [
+        "packages/pipeline/src/ontology/normalizers.ts",
+        "packages/pipeline/test/ontology/normalizers.test.ts"
+      ]
+    },
+    {
+      "slice": "community_board_1_borough_do_not_merge_guards",
+      "description": "Added missing Bronx/Brooklyn and Bronx/Manhattan Community Board 1 do-not-merge guards.",
+      "files": [
+        "data/identity-overrides/do-not-merge.json",
+        "packages/pipeline/test/identity/identity-overrides-current.test.ts"
+      ]
+    }
+  ],
+  "validation": {
+    "focused_tests": [
+      {
+        "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+        "result": "pass",
+        "tests": 272,
+        "expects": 4137
+      },
+      {
+        "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+        "result": "pass",
+        "tests": 15,
+        "expects": 42
+      },
+      {
+        "command": "bun test packages/pipeline/test/identity/identity-overrides-current.test.ts packages/db/test/identity.test.ts",
+        "result": "pass",
+        "tests": 30,
+        "expects": 141
+      },
+      {
+        "command": "bun test packages/pipeline/test/records/submissions.test.ts",
+        "result": "pass",
+        "tests": 29,
+        "expects": 176
+      }
+    ],
+    "typecheck": "pass",
+    "materialize": "pass",
+    "sqlite_fts_quick_check": "ok",
+    "sqlite_quick_check": "ok",
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "issues": 0,
+      "submissions": 98102,
+      "canonical_records": 84040,
+      "wiki_pages": 7334
+    }
+  },
+  "intentionally_unresolved": [
+    "Metric units millions, thousands, customers, bare M, and bare B remain unresolved because scout sampling found mixed or context-dependent semantics.",
+    "Giant relation context buckets such as metric_context/has_metric, timeline_context/has_timeline_event, and claim_context/has_claim remain unknown by default because they are associations, not lifecycle assertions.",
+    "Project-family other, treatment-family other, and source-gap other tails were not broadened; the scout found no safe broad patch beyond the exact BRT Phase I program-context status gate.",
+    "Frank Farrell and MTA parent duplicate-name entity clusters remain do-not-merge guarded under current identity canon rather than forced merges."
+  ],
+  "next_patch_ready_lane": {
+    "metric_unit_aliases_projected_other_reduction": 1681,
+    "recommended_groups": [
+      "gallons and million_gallons volume aliases",
+      "exact safety/count rate aliases for per-million and per-200000-hours units",
+      "duration/distance/area aliases such as years, months, days, feet, track_miles, lane_miles, square_miles",
+      "explicit currency-marked money and money-rate aliases",
+      "ratio/percentage aliases",
+      "additional exact scaled ridership aliases"
+    ],
+    "must_still_reject": [
+      "millions",
+      "thousands",
+      "customers",
+      "bare M",
+      "bare B",
+      "singular year",
+      "generic units",
+      "generic vehicles_per_day",
+      "generic trains_per_hour"
+    ]
+  }
+}

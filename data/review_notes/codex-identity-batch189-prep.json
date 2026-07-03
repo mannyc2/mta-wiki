@@ -1,0 +1,161 @@
+{
+  "note_id": "codex-identity-batch189-prep",
+  "batch": "identity189",
+  "created_at": "2026-06-23T10:20:52Z",
+  "scope": {
+    "selection_note": "Codex-only identity cleanup prep after identity186. Restricted to route and corridor aliases. Candidates were selected from deterministic validateRepo duplicate_global_identity output plus direct canonical JSONL and current identity override inspection.",
+    "allowed_global_kinds": [
+      "route",
+      "corridor"
+    ],
+    "prepared_global_kinds": [
+      "corridor"
+    ],
+    "write_limit": "Only this review note was written. No merges.json, LOG.md, manifest, submissions, canonical JSONL, canonical DB, materialized outputs, wiki files, or provider-backed commands were intentionally used or edited.",
+    "candidate_limit": {
+      "requested": "up to 6 very high-confidence aliases if possible",
+      "prepared_count": 2,
+      "pass": true
+    }
+  },
+  "prepared_count": 2,
+  "proposed_aliases": [
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_flatlands-ave-e103-to-pa-ave",
+      "target_id": "corridor_flatlands-ave-brooklyn-b82",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global corridor records corridor_flatlands-ave-brooklyn-b82 and corridor_flatlands-ave-e103-to-pa-ave share identity key corridor_flatlands-ave."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "corridor_flatlands-ave-e103-to-pa-ave",
+          "evidence_id": "brt_south_brooklyn_b82#p018_c0001",
+          "quote": "Existing: Flatlands Ave (E 103 St to Pennsylvania Ave)"
+        },
+        {
+          "record_id": "corridor_flatlands-ave-brooklyn-b82",
+          "evidence_id": "brt_south_brooklyn_b82_dec2017#p022_c0006",
+          "role": "corridor_mention"
+        },
+        {
+          "record_id": "corridor_flatlands-ave-brooklyn-b82",
+          "evidence_id": "brt_south_brooklyn_b82_feb2018#p011_c0002"
+        }
+      ],
+      "reason": "Both records identify the Flatlands Avenue segment of the B82 Southern Brooklyn corridor. The alias has explicit limits from E 103 St to Pennsylvania Ave; the target payload describes the same key B82 Flatlands segment and already carries the source-local Flatlands BRT alias. No route-variant issue applies because this is a corridor record, and both records are Brooklyn Flatlands Avenue corridor records.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_equal_target": true,
+        "alias_not_merge_target_trap": false,
+        "merge_target_trap_review": "The alias is currently the target of corridor_flatlands-ave-e103-to-pennsylvania-jan2018. This is consciously safe because that existing alias is only a spelling/date variant of the same explicit E 103 St to Pennsylvania Ave Flatlands segment, so chaining would preserve the same scoped corridor identity.",
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "prior_prep_duplicate_found": false,
+        "scope_guard": "Same street, same borough, and matching Flatlands/B82 segment context; no known differing-borough or conflicting-limits guard."
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_webster-third-ave-brt-phase2",
+      "target_id": "corridor_webster-ave-bronx",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global corridor records corridor_webster-ave-bronx and corridor_webster-third-ave-brt-phase2 share identity key corridor_webster-ave-third-ave-corridor."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "corridor_webster-third-ave-brt-phase2",
+          "evidence_id": "brt_phase2_future_corridors_rpt#p004_c0002",
+          "role": "table_entry"
+        },
+        {
+          "record_id": "corridor_webster-third-ave-brt-phase2",
+          "evidence_id": "brt_phase2_future_corridors_rpt#p003_c0005",
+          "role": "short_list"
+        },
+        {
+          "record_id": "corridor_webster-ave-bronx",
+          "evidence_id": "2012_02_06_brt_webster_cac1#p013_c0002",
+          "quote": "The map illustrates the proposed Webster Avenue SBS Corridor (Bx 41 route) in New York City."
+        },
+        {
+          "record_id": "corridor_webster-ave-bronx",
+          "evidence_id": "2012_02_06_brt_webster_cac1#p013_c0003",
+          "quote": "Based on the existing Bx41 route"
+        }
+      ],
+      "reason": "The alias is the BRT Phase II short-list record for the Webster Avenue/Third Avenue Bronx corridor. The target is the richer Webster Avenue Bronx corridor and already carries Webster/Third Avenue merged names, BRT Phase II aliases, and Bx41 corridor evidence from The Hub to Williamsbridge. The alias has no conflicting borough or limit fields and matches the target's Bronx Webster/Third Avenue corridor identity.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_equal_target": true,
+        "alias_not_merge_target_trap": false,
+        "merge_target_trap_review": "The alias is currently the target of corridor_webster-third-ave-brx-phase2-candidate. This is consciously safe because that existing alias is only the abbreviated Phase II candidate id for the same Webster/Third Avenue BRT corridor.",
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "prior_prep_duplicate_found": false,
+        "scope_guard": "Same Bronx Webster/Third Avenue corridor; no contrary borough, cross-borough, or narrower-segment limit was found on the alias record."
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_14th-st-crosstown-brt-phase2",
+        "corridor_14th-street-ttp"
+      ],
+      "reason": "Deferred for corridor extent caution: the BRT Phase II crosstown candidate has broad 14th Street corridor framing while the TTP target has specific busway/TTP limits."
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_bus-fwd-2-church-av-brooklyn-local",
+        "corridor_church-av"
+      ],
+      "reason": "Deferred for limits mismatch: Coney Island Av to Flatbush Av vs Flatbush Ave to Ocean Pkwy."
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_lexington-ave-2015-01-06",
+        "corridor_lexington-ave-96th-to-60th",
+        "corridor_lexington-avenue"
+      ],
+      "reason": "Deferred because the shared Lexington Avenue label covers distinct segments or an intersection: at 125th Street, 96th to 60th, and 60th to 52nd."
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_bronx-flushing-jamaica-sbs",
+        "route_q44-cb12-2011"
+      ],
+      "reason": "Deferred for route variant caution: Q44 SBS/plus route vs pre-SBS local/limited Q44 record."
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_q52-q53-sbs-proposed-2015-05",
+        "route_q52-sbs-queens"
+      ],
+      "reason": "Deferred because Q52/Q53 bundled SBS proposal should not be folded into the single Q52 SBS route without a split or stronger variant-specific review."
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_utica-ave-b46-2015-04-06",
+        "corridor_utica-ave-st-johns-pl-church-ave-2013",
+        "corridor_utica-ave-brt-phase2"
+      ],
+      "reason": "Deferred for broad-corridor versus narrower Carroll/St. Johns-to-Church segment risk."
+    }
+  ],
+  "blockers": []
+}

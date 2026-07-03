@@ -1,0 +1,110 @@
+{
+  "id": "codex-metric-cost-per-rider-other3-2026-07-02",
+  "date": "2026-07-02",
+  "mode": "codex_only_deterministic_post_ingest_cleanup",
+  "prohibited_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed model calls",
+    "provider/profile-backed repo commands"
+  ],
+  "bucket": {
+    "name": "metric_unit_family_other_tail",
+    "before": {
+      "metric_claims_total": 36534,
+      "missing_unit_family": 7,
+      "finite_missing_unit_family": 6,
+      "distinct_missing_metric_names": 7,
+      "other_unit_family": 4
+    },
+    "after": {
+      "metric_claims_total": 36534,
+      "missing_unit_family": 7,
+      "finite_missing_unit_family": 6,
+      "distinct_missing_metric_names": 7,
+      "other_unit_family": 3
+    }
+  },
+  "implemented_changes": [
+    {
+      "kind": "metric_unit_normalization",
+      "record_id": "metric_meeting-doc-182066-sas2-cost-per-rider",
+      "metric_name": "cost_per_daily_rider",
+      "source_id": "meeting_doc_182066",
+      "rule": "Exact contextual `2027 $M` repair only for `cost_per_daily_rider` when payload has money evidence and Second Avenue Subway Phase 2 scope.",
+      "before": {
+        "normalized_unit": "2027_m",
+        "unit_family": "other"
+      },
+      "after": {
+        "normalized_unit": "dollars_per_average_daily_rider",
+        "unit_family": "money_rate"
+      },
+      "evidence": [
+        "wiki/sources/meeting_doc_182066.md page 4 labels the chart `Underground Rail Cost Per Average Daily Rider (2027 $M)`.",
+        "raw/sources/meeting_doc_182066/blocks.jsonl p004_c0004 lists `Second Avenue Subway Phase 2 $62,500` under the same cost-per-average-daily-rider chart.",
+        "data/canonical/metric_claims.jsonl record metric_meeting-doc-182066-sas2-cost-per-rider now carries `dollars_per_average_daily_rider` / `money_rate`."
+      ]
+    }
+  ],
+  "explicit_deferrals": [
+    {
+      "record_id": "metric_cd-workforce-development-2025",
+      "reason": "Read-only subagent audit found the source table is Bridges and Tunnels context while the current canonical payload is scoped to MTA Construction & Development. The tentative C&D participant rule was removed before final validation; this row needs source/payload repair before unit normalization."
+    },
+    {
+      "record_id": "metric_lirr-cares-program",
+      "reason": "Source evidence exposes only a dashboard tile label and value (`CARES Program`, `2043`) without semantics for people, cases, requests, applications, participants, or assets."
+    },
+    {
+      "records": [
+        "metric_omny-nyct-substantial-completion-dec2025",
+        "metric_omny-rr-substantial-completion-q2-2026",
+        "metric_sas-phase2-revenue-service-target",
+        "metric_sas2-revenue-service-date-2032-v3"
+      ],
+      "reason": "Temporal/date facts are not metric units. Singer recommended event/date representation repair rather than coercing `year` to a metric unit."
+    }
+  ],
+  "subagents": [
+    {
+      "id": "019f2117-689a-7e41-b153-574fe8c58c44",
+      "nickname": "Singer",
+      "role": "temporal/date metric audit",
+      "result": "Recommended not normalizing target-date rows as metric units; use event/date representation repair."
+    },
+    {
+      "id": "019f211a-d249-7811-9a8b-5d44ee0e4673",
+      "nickname": "Ptolemy",
+      "role": "ambiguous workforce/CARES count audit",
+      "result": "Recommended deferring both rows; caught the unsafe C&D scope mismatch before finalizing."
+    }
+  ],
+  "verification": {
+    "focused_tests": "bun test packages/pipeline/test/ontology/normalizers.test.ts passed: 278 tests, 5009 expect calls",
+    "typecheck": "bun run typecheck passed",
+    "materialize": "bun packages/cli/src/cli.ts materialize completed: Materialized 93067/98115 submissions; SQLite FTS quick_check: ok",
+    "validate": "bun packages/cli/src/cli.ts validate passed: Issues: 0; Submissions: 98115; Canonical records: 84027; Wiki pages: 7331"
+  },
+  "remaining_tail_after": [
+    "metric_cd-workforce-development-2025",
+    "metric_lirr-cares-program",
+    "metric_mckinsey-ridership-recovery-rates",
+    "metric_meeting-doc-133551-mta-kronos",
+    "metric_meeting-doc-157976-hudson-protection",
+    "metric_mta-bus-eeo-complaint-bases-internal-1q2023",
+    "metric_omny-nyct-substantial-completion-dec2025",
+    "metric_omny-rr-substantial-completion-q2-2026",
+    "metric_sas-phase2-revenue-service-target",
+    "metric_sas2-revenue-service-date-2032-v3"
+  ],
+  "next_recommended_lanes": [
+    "Repair or retire the mis-scoped `metric_cd-workforce-development-2025` payload before considering a Bridges-and-Tunnels participant rule.",
+    "Implement event/date representation repair for OMNY substantial-completion and SAS revenue-service target/forecast rows.",
+    "Inspect `procurement_amount`, `infrastructure_protection`, and conflicting EEO basis count rows for source/payload repair rather than broad unit inference."
+  ]
+}

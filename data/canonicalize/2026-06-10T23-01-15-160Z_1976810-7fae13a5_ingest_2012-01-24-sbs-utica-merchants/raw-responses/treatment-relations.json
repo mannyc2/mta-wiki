@@ -1,0 +1,109 @@
+{
+  "run_id": "2026-06-10T23-01-15-160Z_1976810-7fae13a5_ingest_2012-01-24-sbs-utica-merchants",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T02:22:45.476Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "relate-bus-lane-relocation-to-utica-study",
+        "local_observation_id": "treatment_proposed_bus_lane_relocation",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_proposed-bus-lane-relocation",
+            "description": "Proposed bus lane relocation to SB approach is a treatment within the Utica Avenue Bus Priority and Safety Study",
+            "evidence_refs": [
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p007_c0005",
+                "source_quote": "• Relocates bus lane to SB approach • Provides more loading bet Pres. and Carroll Sts • Reduces bus delays on SB approach to Eastern Pkwy. • Minimal impact on parking spaces"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p007_c0005 under 'Proposed Improvement' heading (p007_c0002) explicitly describes relocating the bus lane to the southbound approach on Utica Ave near Eastern Parkway as a proposed improvement within the Utica Avenue Bus Priority and Safety Study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p007_c0005",
+            "source_quote": "• Relocates bus lane to SB approach • Provides more loading bet Pres. and Carroll Sts • Reduces bus delays on SB approach to Eastern Pkwy. • Minimal impact on parking spaces"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-existing-conditions-to-utica-study",
+        "local_observation_id": "treatment_existing_bus_lane_conditions",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_existing-bus-lane-conditions",
+            "description": "Existing bus lane conditions on Utica Ave are documented in the Utica Avenue Bus Priority and Safety Study",
+            "evidence_refs": [
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p006_c0002",
+                "source_quote": "The diagram illustrates the existing conditions of Utica Ave and its surrounding streets. ... Two specific areas are highlighted ... '7 AM-7 PM Bus Lane' ... '7 AM-10 AM & 4 PM-7 PM Bus Lane'"
+              },
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p006_c0004",
+                "source_quote": "• Traffic congestion is worst on approaches to Eastern Parkway"
+              }
+            ]
+          }
+        ],
+        "rationale": "Blocks p006_c0002 and p006_c0004 under 'Existing Conditions' heading (p006_c0001) describe the existing bus lane conditions on Utica Ave — including bus lane hours at Union St and President St — as part of the study's baseline documentation.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p006_c0002",
+            "source_quote": "The diagram illustrates the existing conditions of Utica Ave and its surrounding streets. The map shows a grid of streets with Utica Ave running vertically in the center. To the left of Utica Ave are St Johns Pl, Lincoln Pl, Eastern Parkway, Union St, President St, and Carroll St."
+          },
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p006_c0004",
+            "source_quote": "• Traffic congestion is worst on approaches to Eastern Parkway"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-other-improvements-to-utica-study",
+        "local_observation_id": "treatment_other_improvements",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_other-improvements",
+            "description": "TSP, signal timing, left turn bays, and pedestrian safety improvements are treatments in the Utica Avenue Bus Priority and Safety Study",
+            "evidence_refs": [
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p010_c0004",
+                "source_quote": "• Signal timing improvements for all traffic • Transit Signal Priority (TSP) for buses • Left turn bays to reduce blockages by turning vehicles • Pedestrian safety improvements"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p010_c0004 under 'Other Improvements' heading (p010_c0002) explicitly lists signal timing improvements, TSP for buses, left turn bays, and pedestrian safety improvements as other improvements proposed within the Utica Avenue Bus Priority and Safety Study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p010_c0004",
+            "source_quote": "• Signal timing improvements for all traffic • Transit Signal Priority (TSP) for buses • Left turn bays to reduce blockages by turning vehicles • Pedestrian safety improvements"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-19-43-118Z_2111393-1315ade7_canonicalize_2026-06-10t23-01-15-160z-1976810-7fae13a5-ingest-2012-01-24-sbs-utica-merchants-treatment-relations"
+}

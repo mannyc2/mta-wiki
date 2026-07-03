@@ -1,0 +1,7467 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-135346"
+record_kind: "source"
+display_name: "Annual procurement report"
+source_id: "meeting_doc_135346"
+source_ids:
+  - "meeting_doc_135346"
+local_observation_id: "source_annual_procurement_report_135346"
+local_observation_ids:
+  - "source_annual_procurement_report_135346"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-23T13:37:00.392Z"
+raw_text: "Annual procurement report documenting procurement contracts across MTA agencies."
+submission_ids:
+  - "sub_4e0e2f8f5fab271f"
+payload:
+  authority_tier: "plan_document"
+  content_type: "procurement report"
+  document_type: "procurement report"
+  title: "Annual procurement report"
+evidence_refs:
+  -
+    block_id: "p001_p0001"
+    evidence_id: "meeting_doc_135346#p001_p0001"
+    page_number: 1
+    role: "table_header"
+    source_id: "meeting_doc_135346"
+    source_path: "raw/sources/meeting_doc_135346/blocks.jsonl"
+    source_quote: "Vendor Name"
+    text_sha256: "sha256:def48c793aaafff1cbed82f60ddd61ecb72f0cc3a94a86c6bcc8407b2f515e23"
+    text_source: "raw_text"
+---
+
+# Annual procurement report
+
+source_id: meeting_doc_135346
+citation: cite block ids exactly as shown in square brackets
+document: 1494 block(s)
+
+## Page 1
+
+[p001_c0001] <
+[p001_p0001]
+
+```text
+* Vendor Name                             Transaction Number          * Procurement Description                                                                                       * Status    * Type of Procurement                            * Award Process                            Award Date   Begin Date   Renewal Date   Does the contract have an end Date?   End Date     Amount         * Amount Expended For Fiscal Year   Amount Expended For Life To Date   Current or Outstanding Balance   Number of Bids or Proposals Received Prior to Award of Contract   Is the Vendor a NYS or Foreign Business Enterprise?   Is the Vendor a Minority or Woman-Owned Business Enterprise?   Were MWBE firms solicited as part of this procurement process?   Number of bids or proposals received from MWBE firms.   Exempt from the publication requirements of Article 4c of the economic development law?   If yes, basis for exemption   Fair Market Value   Explain why the fair market value is less than the contract amount   * Address Line 1                    Address Line 2               * City               State   * Postal Code   + Zip 4   Province/Region   * Country   Country Name if 'Other'
+```
+[p001_p0002]
+
+```text
+KAPSCH TRAFFICCOM USA INC                 00-TD-2571D                 ATM IDEAS                                                                                                       Completed   Technology - Software                            Authority Contract - Competitive Bid       10/31/2001   9/18/2014                   Y                                     1/31/2023    820293.82      198339.83                           819324.63                          969.19                                                                                             Foreign                                               N                                                              Y                                                                0                                                       N                                                                                                                                                                                                                2855 PREMIERE PARKWAY STE F                                      DULUTH               GA      30097                                       USA
+```
+[p001_p0003]
+
+```text
+KAPSCH TRAFFICCOM USA INC                 07-IAG-2782AB               RMs Contract Operating                                                                                          Open        Other                                            Authority Contract - Competitive Bid       2/14/2012    9/2/2020                    Y                                     2/29/2024    16475537.83    4273825.18                          16036121.36                        439416.47                        4                                                                 Foreign                                               N                                                              N                                                                0                                                       N                                                                                                                                                                                                                2855 PREMIERE PARKWAY STE F                                      DULUTH               GA      30097                                       USA
+```
+[p001_p0004]
+
+```text
+NYS INDUSTRIES FOR THE DISABLED INC       12-STS-2905                 Onsite Document Destruction                                                                                     Open        Design and Construction/Maintenance              Non Contract Procurement/Purchase Order                                                                                                               15456.00                                                                                                                                                                  NYS                                                   N                                                                                                                                                                                                                                                                                                                                                                                                        11 COLUMBIA CIRCLE DRIVE                                         ALBANY               NY      12203                                       USA
+```
+[p001_p0005]
+
+```text
+RICHMOND ELEVATOR CO. INC                 13-MNT-2913                 Elevator Maint AND Repair                                                                                       Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       9/19/2014    10/29/2014                  Y                                     9/30/2024    2052961.00     248098.94                           1786840.32                         266120.68                        2                                                                 NYS                                                   N                                                              Y                                                                0                                                       N                                                                                                                                                                                                                17 RECTOR ST                                                     STATEN ISLAND        NY      10310                                       USA
+```
+[p001_p0006]
+
+```text
+LANDTEK GROUP INC                         13-MNT-2914XA               Replace Gate Operator Amd 02                                                                                    Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       5/9/2019     5/9/2019                    N                                                  33123.61       0.00                                33074.41                           49.20                            4                                                                 NYS                                                   N                                                              N                                                                0                                                       N                                                                                                                                                                                                                235 COUNTY LINE RD                                               AMITYVILLE           NY      11701                                       USA
+```
+[p001_p0007]
+
+```text
+LONGO ELECTRICAL MECHANICAL, INC          14-MNT-2932                 Repairs of lift span - Operat                                                                                   Open        Other                                            Authority Contract - Competitive Bid       4/1/2016     3/25/2016                   Y                                     12/31/2023   376370.00      84777.05                            224976.13                          151393.87                        4                                                                 NYS                                                   N                                                              N                                                                0                                                       N                                                                                                                                                                                                                829 E 144TH ST                                                   BRONX                NY      10454                                       USA
+```
+[p001_p0008]
+
+```text
+NATIONWIDE AUTO PAINTING INC              14-MNT-2933                 Auto Body Repair                                                                                                Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       3/4/2015     3/4/2015                    Y                                     6/30/2019    1491544.00     124226.27                           1421384.17                         70159.83                         4                                                                 NYS                                                   N                                                              N                                                                0                                                       N                                                                                                                                                                                                                1850 ATLANTIC AVENUE                                             BROOKLYN             NY      11233                                       USA
+```
+[p001_p0009]
+
+```text
+SECURITAS ELECTRONIC SECURITY INC         15-ISD-2943A                Electronic Security System                                                                                      Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       4/19/2016    4/19/2016                   Y                                     5/23/2021    2223964.74     28451.25                            1678460.22                         545504.52                        2                                                                 Foreign                                               N                                                              Y                                                                0                                                       N                                                                                                                                                                                                                3800 TABS DR                                                     UNIONTOWN            OH      44685                                       USA
+```
+[p001_p0010]
+
+```text
+CONDUENT STATE AND LOCAL SOLUTIONS INC    15-RM-2949X - CBDTP         NYCSC System AND LPOIS CBDTP OP                                                                                 Open        Technology - Software                            Authority Contract - Competitive Bid       2/10/2022    2/10/2022                   Y                                     2/9/2030     115186043.00   0.00                                0.00                               115186043.00                     10                                                                NYS                                                   N                                                              Y                                                                0                                                       N                                                                                                                                                                                                                1150 SOUTH AVENUE                                                STATEN ISLAND        NY      10314                                       USA
+```
+[p001_p0011]
+
+```text
+CONDUENT STATE AND LOCAL SOLUTIONS INC    15-RM-2949X CBDTP CAP       NYCSC System CBDTP - CAPITAL                                                                                    Open        Technology - Software                            Authority Contract - Competitive Bid       2/10/2022    2/10/2022                   Y                                     2/9/2030     7413651.00     1137397.59                          1137397.59                         6276253.41                       10                                                                NYS                                                   N                                                              Y                                                                0                                                       N                                                                                                                                                                                                                1150 SOUTH AVENUE                                                STATEN ISLAND        NY      10314                                       USA
+```
+[p001_p0012]
+
+```text
+CONDUENT STATE AND LOCAL SOLUTIONS INC    15-RM-2949X- TOLLING OPS    NYCSC System AND LPOIS Toll OPS                                                                                 Open        Technology - Software                            Authority Contract - Competitive Bid       2/10/2022    2/10/2022                   Y                                     2/9/2030     123486541.00   1137397.59                          1137397.59                         122349143.41                     10                                                                NYS                                                   N                                                              Y                                                                0                                                       N                                                                                                                                                                                                                1150 SOUTH AVENUE                                                STATEN ISLAND        NY      10314                                       USA
+```
+[p001_p0013]
+
+```text
+UNLIMITED FIRE AND SECURITY LLC           16-MNT-2954X                Maintenance of Fire and Smoke Alarm Systems                                                                     Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       3/20/2018    3/20/2018                   Y                                     12/31/2023   575762.70      23793.05                            399698.55                          176064.15                        1                                                                 NYS                                                   N                                                              Y                                                                0                                                       N                                                                                                                                                                                                                500 EXECUTIVE BLVD                  STE 139                      ELMSFORD             NY      10523                                       USA
+```
+[p001_p0014]
+
+```text
+CASSONE LEASING, INC.                     16-MNT-2958                 Modular trailer for BW                                                                                          Open        Commodities/Supplies                             Authority Contract - Competitive Bid       11/18/2016   12/9/2016                   N                                                  249450.00      0.00                                234450.00                          15000.00                         2                                                                 NYS                                                   Y                                                              Y                                                                2                                                       Y                                                                                         Discretionary Procurement                                                                                              1900 LAKELAND AVE                                                RONKONKOMA           NY      11779                                       USA
+```
+[p001_p0015]
+
+```text
+CASSONE LEASING, INC.                     16-MNT-2959                 Modular Office Trailer HCT                                                                                      Open        Commodities/Supplies                             Authority Contract - Competitive Bid       11/18/2016   12/8/2016                   N                                                  249450.00      0.00                                234450.00                          15000.00                         2                                                                 NYS                                                   Y                                                              Y                                                                2                                                       Y                                                                                         Discretionary Procurement                                                                                              1900 LAKELAND AVE                                                RONKONKOMA           NY      11779                                       USA
+```
+[p001_p0016]
+
+```text
+CASSONE LEASING, INC.                     16-MNT-2960                 Modular Trailer MP                                                                                              Open        Commodities/Supplies                             Authority Contract - Competitive Bid       11/18/2016   12/7/2016                   N                                                  249450.00      0.00                                234450.00                          15000.00                         2                                                                 NYS                                                   Y                                                              Y                                                                2                                                       Y                                                                                         Discretionary Procurement                                                                                              1900 LAKELAND AVE                                                RONKONKOMA           NY      11779                                       USA
+```
+[p001_p0017]
+
+```text
+CASSONE LEASING, INC.                     16-MNT-2961                 Modular Trailer VN                                                                                              Open        Commodities/Supplies                             Authority Contract - Competitive Bid       11/18/2016   12/6/2016                   N                                                  252350.00      0.00                                237350.00                          15000.00                         2                                                                 NYS                                                   Y                                                              Y                                                                2                                                       Y                                                                                         Discretionary Procurement                                                                                              1900 LAKELAND AVE                                                RONKONKOMA           NY      11779                                       USA
+```
+[p001_p0018]
+
+```text
+RAPID TOLL SYSTEMS INC                    17-OPS-2965                 Data Logger - Agency Wide                                                                                       Open        Design and Construction/Maintenance              Authority Contract - Non-Competitive Bid   12/14/2017   12/14/2017                  Y                                     10/31/2024   548858.00      0.00                                534496.41                          14361.59                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Sole Source                   548858.00                                                                                1404 STONEVIEW COURT                                             PLANO                TX      75093                                       USA
+```
+[p001_p0019]
+
+```text
+RAPID TOLL SYSTEMS INC                    17-OPS-2965A                Operating- Data Logger                                                                                          Open        Other                                            Authority Contract - Non-Competitive Bid   7/13/2020    7/14/2020                   Y                                     10/31/2024   291126.03      50000.00                            264533.04                          26592.99                         0                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Sole Source                   291126.03                                                                                1404 STONEVIEW COURT                                             PLANO                TX      75093                                       USA
+```
+[p001_p0020]
+
+```text
+SANDY ALEXANDER INC                       18-FIN-2974                 Printing Services                                                                                               Open        Other                                            Authority Contract - Competitive Bid       12/19/2018   12/19/2018                  N                                                  971580.00      0.00                                0.00                               971580.00                        2                                                                 Foreign                                               N                                                              N                                                                0                                                       N                                                                                                                                                                                                                200 ENTIN RD                                                     CLIFTON              NJ      7014                                        USA
+```
+[p001_p0021]
+
+```text
+SISSCO / PERMADUR INDUSTRIES              18-MNT-2971                 Inspection Repair Maintenance of Vehicle lifts and Crane Equipments                                             Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       7/26/2018    7/31/2018                   Y                                     7/30/2024    278253.00      49490.75                            239543.01                          38709.99                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       N                                                                                                                                                                                                                190 ROUTE 206 SOUTH                                              HILLSBOROUGH         NJ      8844                                        USA
+```
+[p001_p0022]
+
+```text
+TRANSCORE                                 19-CBDT-2978                DBOM CBDT CAPITAL                                                                                               Open        Technology - Consulting/Development or Support   Authority Contract - Competitive Bid       10/31/2019   10/31/2019                  Y                                     12/31/2026   259703669.00   12091526.79                         127935951.55                       131767717.45                     3                                                                 Foreign                                               N                                                              Y                                                                0                                                       N                                                                                                                                                                                                                (F.K.A) SYNTONIC TECHNOLO           GY, INC                      CHICAGO              IL      60694           6100                        USA
+```
+[p001_p0023]
+
+```text
+ELECTRONIC TRANSACTION CONSULTANTS LLC    19-IAG-2975                 E-Z PASS INTEROPERABILITY HUB                                                                                   Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       4/14/2022    4/14/2022                   Y                                     4/13/2032    21543452.00    243024.00                           405040.00                          21138412.00                      10                                                                Foreign                                               N                                                              Y                                                                2                                                       N                                                                                                                                                                                                                1600 NORTH COLLINS, STE 4000                                     RICHARDSON           TX      75080                                       USA
+```
+[p001_p0024]
+
+```text
+METROEXPRESS SERVICES, INC.               19-MNT-2979                 Placement and removal of pavement markings Line Striping at various Authority facilities                        Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       12/23/2019   12/23/2019                  Y                                     2/25/2025    1339750.00     89501.05                            516577.61                          823172.39                        3                                                                 NYS                                                   N                                                              N                                                                0                                                       N                                                                                                                                                                                                                28 - 90 REVIEW AVE                                               LONG ISLAND CITY     NY      11101                                       USA
+```
+[p001_p0025]
+
+```text
+PBS ENGINEERING AND ASSOCIATES PC         21-ITS-2982                 Traffic Detection AND Queue Warn                                                                                Open        Telecommunication Equipment or Services          Authority Contract - Competitive Bid       9/21/2021    9/21/2021                   Y                                     9/21/2026    385404.86      47956.30                            322189.78                          63215.08                         1                                                                 Foreign                                               Y                                                              Y                                                                1                                                       N                                                                                                                                                                                                                13 RUTLEDGE COURT                                                PLAINSBORO           NJ      8536                                        USA
+```
+[p001_p0026]
+
+```text
+AURORA ELECTRIC, INC                      21-ITS-2983                 CCTV Equipment                                                                                                  Open        Other                                            Authority Contract - Competitive Bid       12/30/2021   2/2/2022                    Y                                     2/1/2027     1421000.00     156440.00                           861521.49                          559478.51                        2                                                                 NYS                                                   N                                                              Y                                                                1                                                       N                                                                                                                                                                                                                154-09 146TH AVENUE                 SUITE # 2                    JAMAICA              NY      11434                                       USA
+```
+[p001_p0027]
+
+```text
+11 ENVIROGROUP LLC                        21-MNT-2984                 Cleaning Sump Catch Bas HCTQMT                                                                                  Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       11/1/2021    12/3/2021                   Y                                     10/31/2024   1189080.00     226208.47                           442715.53                          746364.47                        3                                                                 NYS                                                   Y                                                              Y                                                                1                                                       N                                                                                                                                                                                                                246 FREEMAN ST                                                   BROOKLYN             NY      11220                                       USA
+```
+[p001_p0028]
+
+```text
+K AND G POWER SYSTEMS                     21-MNT-2985KGPOWER          Air Compressors Maintenance                                                                                     Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       5/1/2022     5/1/2022                    Y                                     4/30/2025    337200.00      35066.63                            78852.39                           258347.61                        3                                                                 NYS                                                   N                                                              N                                                                0                                                       N                                                                                                                                                                                                                150 LASER COURT                                                  HAUPPAUGE            NY      11788           3912                        USA
+```
+[p001_p0029]
+
+```text
+AARCO ENVIRONMENTAL SERVICES CORP.        300000000000278             Repair, replacement and testing of tank systems and associated piping                                           Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       2/1/2019     11/26/2019                  Y                                     1/23/2024    351125.00      0.00                                327012.76                          24112.24                         3                                                                 NYS                                                   N                                                              N                                                                0                                                       N                                                                                                                                                                                                                50 GEAR AVE                                                      LINDENHURST          NY      11757                                       USA
+```
+[p001_p0030]
+
+```text
+HOME DEPOT PRO                            300000000000317             Victory Electrostatic Sprayers and Accessories                                                                  Open        Commodities/Supplies                             Authority Contract - Competitive Bid       5/11/2020    5/11/2020                   N                                                  40229.10       0.00                                40229.10                           0.00                             1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Ride/Piggyback of MTA Ags                                                                                              PO BOX 2317                                                      JACKSONVILLE         FL      32203           2317                        USA
+```
+[p001_p0031]
+
+```text
+SECUREWATCH24 LLC                         300000000000359             VMS Equipment Purchase                                                                                          Open        Commodities/Supplies                             Purchased Under State Contract                                                                                                                        0.00                                                                                                                                                                      NYS                                                   N                                                                                                                                                                                                                                                                                                                                                                                                        ONE PENN PLAZA                      SUITE 4000                   NEW YORK             NY      10119                                       USA
+```
+[p001_p0032]
+
+```text
+SECUREWATCH24 LLC                         300000000000387             VMS HH, MP AND VN                                                                                               Open        Commodities/Supplies                             Purchased Under State Contract                                                                                                                        517866.00                                                                                                                                                                 NYS                                                   N                                                                                                                                                                                                                                                                                                                                                                                                        ONE PENN PLAZA                      SUITE 4000                   NEW YORK             NY      10119                                       USA
+```
+[p001_p0033]
+
+```text
+SECUREWATCH24 LLC                         300000000000397             TN VMS Equipment                                                                                                Open        Commodities/Supplies                             Purchased Under State Contract                                                                                                                        594055.00                                                                                                                                                                 NYS                                                   N                                                                                                                                                                                                                                                                                                                                                                                                        ONE PENN PLAZA                      SUITE 4000                   NEW YORK             NY      10119                                       USA
+```
+[p001_p0034]
+
+```text
+JOHNSON CONTROLS FIRE PROTECTION LP       300000000000403             Repair of Standpipes                                                                                            Open        Design and Construction/Maintenance              Purchased Under State Contract                                                                                                                        0.00                                                                                                                                                                      Foreign                                               N                                                                                                                                                                                                                                                                                                                                                                                                        50 TECHNOLOGY DR                                                 WESTMINSTER          MA      1441                                        USA
+```
+[p001_p0035]
+
+```text
+SECUREWATCH24 LLC                         300000000000408             VMS for RFK                                                                                                     Open        Technology - Hardware                            Purchased Under State Contract                                                                                                                        494990.00                                                                                                                                                                 NYS                                                   N                                                                                                                                                                                                                                                                                                                                                                                                        ONE PENN PLAZA                      SUITE 4000                   NEW YORK             NY      10119                                       USA
+```
+[p001_p0036]
+
+```text
+VICOM COMPUTER SERVICES INC               300000000000409             HCT and QMT Network Infrastructure Upgrade Cisco Ride NYCT Contract                                             Open        Telecommunication Equipment or Services          Authority Contract - Competitive Bid       11/9/2022    11/9/2022                   Y                                     11/21/2027   1314369.53     1314369.53                          1314369.53                         0.00                             1                                                                 NYS                                                   N                                                              N                                                                0                                                       Y                                                                                         Ride/Piggyback of MTA Ags                                                                                              400 BROAD HOLLOW RD                 STE 1                        FARMINGDALE          NY      11735                                       USA
+```
+[p001_p0037]
+
+```text
+CONVERGE TECHNOLOGY SOLUTIONS US LLC      300000000000442             HCT QMT Cisco Upgrade                                                                                           Open        Technology - Hardware                            Authority Contract - Competitive Bid       9/7/2023     9/7/2023                    Y                                     11/2/2025    250630.47      20849.04                            20849.04                           229781.43                        1                                                                 NYS                                                   N                                                              Y                                                                0                                                       Y                                                                                         Ride/Piggyback of MTA Ags                                                                                              PO BOX 23623                                                     NEW YORK             NY      10087           3623                        USA
+```
+[p001_p0038]
+
+```text
+CREATIVE VISUAL SYSTEMS                   300000000000447             Sign Shop Equipment                                                                                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/25/2023   10/25/2023                  Y                                     10/31/2025   49060.00       0.00                                0.00                               49060.00                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold                                                                                                 189 MEISTER AVENUE                                               BRANCHBURG           NJ      8876                                        USA
+```
+[p001_p0039]
+
+```text
+MITCHELL REPAIR INFORMATION               3000000790                  one year subscription renewal for Tractor trailer, Medium Truck repair data                                     Open        Technology - Software                            Authority Contract - Non-Competitive Bid   12/19/2011   12/21/2011                  Y                                     3/16/2023    39382.34       8820.00                             39082.34                           300.00                           1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Sole Source                   39382.34                                                                                 25029 NETWORK PLACE                                              CHICAGO              IL      60673           1250                        USA
+```
+[p001_p0040]
+
+```text
+THERMO EBERLINE, LLC.                     3000003227                  Thermo Fisher Scientific Radiation Detection System                                                             Open        Commodities/Supplies                             Purchased Under State Contract                                                                                                                        70196.74                                                                                                                                                                  Foreign                                               N                                                                                                                                                                                                                                                                                                                                                                                                        27 FORGE PARKWAY                                                 FRANKLIN             MA      2038                                        USA
+```
+[p001_p0041]
+
+```text
+INTER CITY TIRE AND AUTO CENTER, INC.     3000003417                  Tire Repairs, Mounting, Balancing and Emergency Road Service                                                    Open        Other                                            Authority Contract - Competitive Bid       3/27/2018    4/5/2018                    Y                                     4/5/2018     40495.75       6219.12                             32419.02                           8076.73                          1                                                                 NYS                                                   N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold                                                                                                 10509 MERRICK BLVD                                               JAMAICA              NY      11433                                       USA
+```
+[p001_p0042]
+
+```text
+LEXIS NEXIS RISK SOLUTIONS FL INC         3000004030                  LexisNexis Accurint                                                                                             Open        Other                                            Purchased Under State Contract                                                                                                                        1796.40                                                                                                                                                                   Foreign                                               N                                                                                                                                                                                                                                                                                                                                                                                                        BILLING ID 1757367                  28330 NETWORK PLACE          CHICAGO              IL      60673           1283                        USA
+```
+[p001_p0043]
+
+```text
+JOHNSON CONTROLS FIRE PROTECTION LP       3000004690                  Hydrostatic Testing AND Repair of Standpipes and Fire Sprinkler Systems in accordance with the attac            Open        Design and Construction/Maintenance              Purchased Under State Contract                                                                                                                        179003.09                                                                                                                                                                 Foreign                                               N                                                                                                                                                                                                                                                                                                                                                                                                        50 TECHNOLOGY DR                                                 WESTMINSTER          MA      1441                                        USA
+```
+[p001_p0044]
+
+```text
+CREATIVE VISUAL SYSTEMS                   3000005103                  Maintenance and Repair of Gerber Scientific, Mutoh and Allen Datagraph Equipment                                Open        Technology - Hardware                            Authority Contract - Competitive Bid       7/13/2021    7/22/2021                   Y                                     7/22/2021    52880.00       5256.80                             11226.80                           41653.20                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold                                                                                                 189 MEISTER AVENUE                                               BRANCHBURG           NJ      8876                                        USA
+```
+[p001_p0045]
+
+```text
+SELEX ES INC                              3000005335                  Elsag License Plate Recognition System                                                                          Open        Other                                            Purchased Under State Contract                                                                                                                        1090351.32                                                                                                                                                                Foreign                                               N                                                                                                                                                                                                                                                                                                                                                                                                        DBA ELSAG NORTH AMERICA             205 H CREEK RIDGE RD         GREENBORO            NC      27406                                       USA
+```
+[p001_p0046]
+
+```text
+SECUREWATCH24 LLC                         3000005443                  Maintenance and Administration of Electronic Security Systems ESS in accordance to Technical Speci              Open        Technology - Consulting/Development or Support   Purchased Under State Contract                                                                                                                        440227.44                                                                                                                                                                 NYS                                                   N                                                                                                                                                                                                                                                                                                                                                                                                        ONE PENN PLAZA                      SUITE 4000                   NEW YORK             NY      10119                                       USA
+```
+[p001_p0047]
+
+```text
+ADVETAGE SOLUTIONS                        3000005485                  Thermo Fisher Scientific Radiation Detection                                                                    Open        Commodities/Supplies                             Authority Contract - Competitive Bid       6/1/2022     6/30/2022                   Y                                     6/30/2022    693797.21      254506.31                           314041.21                          379756.00                        1                                                                 Foreign                                               N                                                              Y                                                                0                                                       Y                                                                                         Below Dollar Threshold                                                                                                 111 PENN ST, STE 202                                             EL SEGUNDO           CA      90245                                       USA
+```
+[p001_p0048]
+
+```text
+LEXIS NEXIS RISK SOLUTIONS FL INC         3000005879                  LexisNexis Accurint Computerized Research Service                                                               Open        Other                                            Purchased Under State Contract                                                                                                                        3664.80                                                                                                                                                                   Foreign                                               N                                                                                                                                                                                                                                                                                                                                                                                                        BILLING ID 1757367                  28330 NETWORK PLACE          CHICAGO              IL      60673           1283                        USA
+```
+[p001_p0049]
+
+```text
+S AND P CONSTRUCTION MANAGEMENT INC       AW-02S                      SBMP AW-02S                                                                                                     Completed   Design and Construction/Maintenance              Authority Contract - Competitive Bid       9/2/2021     9/2/2021                    Y                                     5/31/2023    1501929.43     816713.95                           1501929.43                         0.00                             3                                                                 NYS                                                   Y                                                              Y                                                                1                                                       Y                                                                                         Small Business Mentoring                                                                                               1975 HEMPSTEAD TURNPIKE             SUITE # 210                  EAST MEADOW          NY      11554                                       USA
+```
+[p001_p0050]
+
+```text
+KAPSCH TRAFFICCOM USA INC                 C300-TD-2571AA              ATM IDEAS                                                                                                       Completed   Other                                            Authority Contract - Competitive Bid       10/31/2001   9/18/2014                   Y                                     1/31/2023    1245967.35     8720.97                             1245967.35                         0.00                                                                                               Foreign                                               N                                                              Y                                                                0                                                       N                                                                                                                                                                                                                405 MURRAY HILL PKWY                                             EAST RUTHERFORD      NJ      7073                                        USA
+```
+[p001_p0051]
+
+```text
+CONDUENT STATE AND LOCAL SOLUTIONS INC    C3PSC-05-2741AB             E-ZPass CSC - Operating                                                                                         Open        Other Professional Services                      Authority Contract - Competitive Bid       10/5/2007    5/9/2017                    Y                                     3/4/2024     599079252.91   48574405.71                         357373154.60                       241706098.31                                                                                       NYS                                                   N                                                              N                                                                0                                                       N                                                                                                                                                                                                                1150 SOUTH AVENUE                                                STATEN ISLAND        NY      10314                                       USA
+```
+[p001_p0052]
+
+```text
+CONDUENT STATE AND LOCAL SOLUTIONS INC    PSC-05-2741C                EZPASS CAPITAL CBDTP ONLY!!!                                                                                    Open        Other Professional Services                      Authority Contract - Competitive Bid       10/5/2007    5/9/2017                    Y                                     3/4/2024     15100000.00    454388.00                           5738950.19                         9361049.81                                                                                         NYS                                                   N                                                              N                                                                0                                                       N                                                                                                                                                                                                                1150 SOUTH AVENUE                                                STATEN ISLAND        NY      10314                                       USA
+```
+[p001_p0053]
+
+```text
+NYC FIRE DEPT                             C3PSC-96-2439               NYCFD Firefighting Training fo                                                                                  Open        Other Professional Services                      Authority Contract - Non-Competitive Bid   4/22/1996    4/22/1996                   Y                                     12/31/2024   209432.95      5210.80                             66388.42                           143044.53                        0                                                                 NYS                                                   N                                                              N                                                                0                                                       Y                                                                                         Sole Source                   209432.95                                                                                CHURCH STREET STATION               P. O. BOX 840                NEW YORK             NY      10008           840                         USA
+```
+[p001_p0054]
+
+```text
+BANDR CONSTRUCTION SERVICES CORP.         GFM-544                     Emerg Egress Markings SBMP                                                                                      Completed   Design and Construction/Maintenance              Authority Contract - Competitive Bid       12/3/2021    12/3/2021                   Y                                     12/27/2022   1402285.58     675678.08                           1402285.58                         0.00                             3                                                                 NYS                                                   Y                                                              Y                                                                1                                                       Y                                                                                         Small Business Mentoring                                                                                               30 - 50 91ST ST                                                  ELMHURST             NY      11369                                       USA
+```
+[p001_p0055]
+
+```text
+DOMI-AMERICAN LLC                         HCM-386                     SBMP HCM-386                                                                                                    Completed   Design and Construction/Maintenance              Authority Contract - Competitive Bid       12/14/2022   12/14/2022                  Y                                     12/20/2023   322881.86      322881.86                           322881.86                          0.00                             5                                                                 NYS                                                   Y                                                              Y                                                                1                                                       Y                                                                                         Small Business Mentoring                                                                                               2727 GIFFORD AVE                                                 BRONX                NY      10465                                       USA
+```
+[p001_p0056]
+
+```text
+SAHEET CONSTRUCTION CORP                  HCM-387                     Tunnel Ceiling Cleaning                                                                                         Completed   Design and Construction/Maintenance              Authority Contract - Competitive Bid       11/16/2022   11/16/2022                  Y                                     9/27/2023    931207.24      738486.30                           738486.30                          192720.94                        5                                                                 NYS                                                   Y                                                              Y                                                                1                                                       Y                                                                                         Small Business Mentoring                                                                                               88-36 GETTYSBURG ST                                              BELLEROSE            NY      11426                                       USA
+```
+[p001_p0057]
+
+```text
+HONEY CONSTRUCTION NY INC                 HCM-388                     SBMP HCM-388                                                                                                    Completed   Design and Construction/Maintenance              Authority Contract - Competitive Bid       12/22/2022   12/19/2022                  Y                                     6/21/2023    386744.00      286744.00                           286744.00                          100000.00                        5                                                                 NYS                                                   Y                                                              Y                                                                1                                                       Y                                                                                         Small Business Mentoring                                                                                               135-16 124TH ST                                                  SOUTH OZONE PARK     NY      11420                                       USA
+```
+[p001_p0058]
+
+```text
+SUPERSTARS CONTRACTING INC                HHM-405                     Facade Sealant Repl HH Ser Bld                                                                                  Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       7/26/2023    7/26/2023                   Y                                     7/31/2024    575970.58      0.00                                0.00                               575970.58                        4                                                                 NYS                                                   N                                                              N                                                                0                                                       Y                                                                                         Small Business Mentoring                                                                                               80-14 255TH ST                                                   GLEN OAKS            NY      11004                                       USA
+```
+[p001_p0059]
+
+```text
+HMD LAWN SERVICE, LLC                     MPC-2302                    SBMP Marine Parkway Fence                                                                                       Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       12/11/2023   12/11/2023                  Y                                     1/1/2025     442939.30      0.00                                0.00                               442939.30                        7                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Small Business Mentoring                                                                                               21 Stagecoach Rd                                                 Millstone Twp        NJ      8510                                        USA
+```
+[p001_p0060]
+
+```text
+NYC FIRE DEPT                             C3PSC-96-2440               NYCFD Firefighter Refresher Tr                                                                                  Open        Other Professional Services                      Authority Contract - Non-Competitive Bid   4/22/1996    4/22/1997                   Y                                     12/31/2024   544707.32      40766.34                            473967.64                          70739.68                         0                                                                 NYS                                                   N                                                              N                                                                0                                                       Y                                                                                         Sole Source                   544707.32                                                                                CHURCH STREET STATION               P. O. BOX 840                NEW YORK             NY      10008           840                         USA
+```
+[p001_p0061]
+
+```text
+TRANSWORLD SYSTEMS INC                    PSC-10-2883A                Collection Services for the Recovery of Unpaid Tolls and Fees for All Methods of Toll Collection                Open        Other Professional Services                      Authority Contract - Competitive Bid       7/23/2012    3/10/2016                   Y                                     12/30/2024   0.00           0.00                                0.00                               0.00                             5                                                                 Foreign                                               N                                                              Y                                                                0                                                       N                                                                                                                                                                                                                507 PRUDENTIAL RD                                                HORSHAM              PA      19040                                       USA
+```
+[p001_p0062]
+
+```text
+OCCUPATIONAL HEALTH DECISIONS             PSC-12-2914                 Medical Services                                                                                                Open        Other Professional Services                      Authority Contract - Competitive Bid       6/29/2012    7/1/2012                    Y                                     6/30/2024    2825175.00     196061.14                           2206783.85                         618391.15                        4                                                                 NYS                                                   N                                                              N                                                                0                                                       N                                                                                                                                                                                                                387 SECOND AVE. #422                                             NEW YORK             NY      10010                                       USA
+```
+[p001_p0063]
+
+```text
+EXEC SAFETY AND HEALTH CONSULTANTS INC    PSC-13-2936                 Maint Safety Training                                                                                           Open        Other Professional Services                      Authority Contract - Competitive Bid       2/25/2015    2/25/2015                   Y                                     2/28/2025    205450.00      0.00                                142775.00                          62675.00                         4                                                                 NYS                                                   N                                                              Y                                                                3                                                       Y                                                                                         Discretionary Procurement                                                                                              481 EIGHT AVE. STE. 805                                          NEW YORK             NY      10001                                       USA
+```
+[p001_p0064]
+
+```text
+LEXINGTON HEARING AND SPEECH CENTER INC   PSC-13-2938X                Hearing Conservation Program                                                                                    Open        Other Professional Services                      Authority Contract - Competitive Bid       8/6/2014     8/6/2014                    Y                                     8/10/2020    293625.00      31200.00                            285225.00                          8400.00                          2                                                                 NYS                                                   N                                                              N                                                                0                                                       N                                                                                                                                                                                                                74 - 20 25TH AVE                                                 EAST ELMHURST        NY      11370                                       USA
+```
+[p001_p0065]
+
+```text
+JACOBS CIVIL CONSULTANTS, INC.            PSC-13-2941A                Misc Toll Consultant As-Needed                                                                                  Open        Other                                            Authority Contract - Competitive Bid       12/22/2014   12/22/2014                  Y                                     6/20/2024    3562021.97     45519.01                            2994251.89                         567770.08                        5                                                                 NYS                                                   N                                                              Y                                                                4                                                       N                                                                                                                                                                                                                ONE PENN PLAZA, 24TH FL, STE 2400                                NEW YORK             NY      10119                                       USA
+```
+[p001_p0066]
+
+```text
+ATKINS PA                                 PSC-13-2941B                CAPTIAL                                                                                                         Open        Consulting Services                              Authority Contract - Competitive Bid       6/5/2014     6/5/2014                    Y                                     3/31/2024    4758806.18     942898.53                           4143766.41                         615039.77                        5                                                                 Foreign                                               N                                                              Y                                                                5                                                       N                                                                                                                                                                                                                4030 W BAY SCOUT BLVD 700                                        TAMPA                FL      33607                                       USA
+```
+[p001_p0067]
+
+```text
+ATKINS PA                                 PSC-13-2941BA               Toll Collection Operating                                                                                       Open        Consulting Services                              Authority Contract - Competitive Bid       6/5/2014     6/5/2014                    Y                                     3/31/2024    1715364.00     87526.00                            1624645.15                         90718.85                         5                                                                 Foreign                                               N                                                              Y                                                                5                                                       N                                                                                                                                                                                                                4030 W BAY SCOUT BLVD 700                                        TAMPA                FL      33607                                       USA
+```
+[p001_p0068]
+
+```text
+CORPORATE COUNSELING ASSOCIATES INC       PSC-13-2943                 Work Life Assistance Program                                                                                    Open        Other Professional Services                      Authority Contract - Competitive Bid       9/26/2014    10/3/2014                   Y                                     10/5/2023    474350.00      33188.09                            411557.69                          62792.31                         2                                                                 NYS                                                   N                                                              N                                                                0                                                       N                                                                                                                                                                                                                475 PARK AVE S                      8 TH FL                      NEW YORK             NY      10016                                       USA
+```
+[p001_p0069]
+
+```text
+TRANSCORE                                 PSC-13-2949                 ORT - CAPITAL                                                                                                   Open        Other                                            Authority Contract - Competitive Bid       7/21/2014    7/21/2014                   Y                                     2/1/2024     80652041.00    342035.80                           68643086.51                        12008954.49                      3                                                                 Foreign                                               N                                                              Y                                                                8                                                       N                                                                                                                                                                                                                (F.K.A) SYNTONIC TECHNOLO           GY, INC                      CHICAGO              IL      60694           6100                        USA
+```
+[p001_p0070]
+
+```text
+TRANSCORE                                 PSC-13-2949A                ORT Henry Hudson                                                                                                Open        Other                                            Authority Contract - Competitive Bid       7/21/2014    7/21/2014                   Y                                     2/1/2024     0.00           0.00                                0.00                               0.00                             3                                                                 Foreign                                               N                                                              Y                                                                0                                                       N                                                                                                                                                                                                                (F.K.A) SYNTONIC TECHNOLO           GY, INC                      CHICAGO              IL      60694           6100                        USA
+```
+[p001_p0071]
+
+```text
+TRANSCORE                                 PSC-13-2949A1               ORT Operating                                                                                                   Open        Other Professional Services                      Authority Contract - Competitive Bid       7/21/2014    7/21/2014                   Y                                     2/1/2024     92987045.00    11488276.98                         75412633.75                        17574411.25                      3                                                                 Foreign                                               N                                                              Y                                                                8                                                       N                                                                                                                                                                                                                (F.K.A) SYNTONIC TECHNOLO           GY, INC                      CHICAGO              IL      60694           6100                        USA
+```
+[p001_p0072]
+
+```text
+MOUNT SINAI BETH ISRAEL MEDICAL CTR       PSC-14-2958                 Occupational Medical Exam                                                                                       Open        Consulting Services                              Authority Contract - Competitive Bid       4/1/2015     6/26/2015                   Y                                     3/31/2024    163650.00      20050.00                            119400.00                          44250.00                         3                                                                 NYS                                                   N                                                              N                                                                0                                                       N                                                                                                                                                                                                                317 E 17TH ST                       2ND FL                       NEW YORK             NY      10003                                       USA
+```
+[p001_p0073]
+
+```text
+MOUNT SINAI BETH ISRAEL MEDICAL CTR       PSC-14-2960                 Influenza Hepatitis B                                                                                           Open        Consulting Services                              Authority Contract - Competitive Bid       4/1/2015     4/1/2015                    Y                                     3/31/2024    283255.00      269.00                              86353.44                           196901.56                        3                                                                 NYS                                                   N                                                              N                                                                0                                                       N                                                                                                                                                                                                                317 E 17TH ST                       2ND FL                       NEW YORK             NY      10003                                       USA
+```
+[p001_p0074]
+
+```text
+GANNETT FLEMING ENGINEERS AND             PSC-15-2972A                Consulting E-ZPass Reciprocity                                                                                  Open        Consulting Services                              Authority Contract - Competitive Bid       2/26/2016    2/26/2016                   Y                                     6/30/2024    948610.14      278185.80                           669413.99                          279196.15                        4                                                                 NYS                                                   N                                                              Y                                                                0                                                       N                                                                                                                                                                                                                ARCHITECTS, PC                      ONE PENN PLAZA               NEW YORK             NY      10119                                       USA
+```
+[p001_p0075]
+
+```text
+HENNINGSON, DURHAM AND RICHARDSON         PSC-15-2980B                ITS Design As Needed Contract                                                                                   Open        Other Professional Services                      Authority Contract - Competitive Bid       9/8/2016     9/8/2016                    Y                                     7/31/2024    4035597.74     85700.29                            3791384.60                         244213.14                        5                                                                 NYS                                                   N                                                              Y                                                                10                                                      N                                                                                                                                                                                                                500 SEVENTH AVE                     15TH FLOOR                   NEW YORK             NY      10018                                       USA
+```
+[p001_p0076]
+
+```text
+TTEC GOVERNMENT SOLUTIONS LLC             PSC-15-2982XA - CBDTP CAP   NYCSC - CBDTP CAP                                                                                               Open        Other Professional Services                      Authority Contract - Competitive Bid       6/22/2022    6/22/2022                   Y                                     6/21/2027    6614387.00     1559041.97                          2026754.56                         4587632.44                       10                                                                Foreign                                               N                                                              Y                                                                2                                                       N                                                                                                                                                                                                                9197 S PEORIA ST                                                 ENGLEWOOD            CO      80112                                       USA
+```
+[p001_p0077]
+
+```text
+TTEC GOVERNMENT SOLUTIONS LLC             PSC-15-2982XA - CBDTP OPS   CBDTP NYCSC OPS - CAT A                                                                                         Open        Other                                            Authority Contract - Competitive Bid       8/9/2021     6/22/2022                   Y                                     6/21/2027    54134701.00    0.00                                0.00                               54134701.00                      10                                                                Foreign                                               N                                                              Y                                                                2                                                       N                                                                                                                                                                                                                9197 S PEORIA ST                                                 ENGLEWOOD            CO      80112                                       USA
+```
+[p001_p0078]
+
+```text
+TTEC GOVERNMENT SOLUTIONS LLC             PSC-15-2982XA-1             TOLLING OPS- NYCSC - CAT A                                                                                      Open        Other Professional Services                      Authority Contract - Competitive Bid       8/9/2021     6/22/2022                   Y                                     6/21/2027    61141295.00    1091329.37                          1091329.37                         60049965.63                      10                                                                Foreign                                               N                                                              Y                                                                2                                                       N                                                                                                                                                                                                                9197 S PEORIA ST                                                 ENGLEWOOD            CO      80112                                       USA
+```
+[p001_p0079]
+
+```text
+TRANSCORE                                 PSC-15-2982XB - CBDTP CAP   NYCSC - CBDTP Capital                                                                                           Open        Other Professional Services                      Authority Contract - Competitive Bid       6/22/2022    6/22/2022                   Y                                     6/21/2027    375804.00      112170.02                           112170.02                          263633.98                        10                                                                Foreign                                               N                                                              Y                                                                2                                                       N                                                                                                                                                                                                                (F.K.A) SYNTONIC TECHNOLO           GY, INC                      CHICAGO              IL      60694           6100                        USA
+```
+[p001_p0080]
+
+```text
+TRANSCORE                                 PSC-15-2982XB - CBDTP OPS   CBDTP Operations - NYCSC CAT B                                                                                  Open        Other Professional Services                      Authority Contract - Competitive Bid       2/1/2022     6/22/2022                   Y                                     6/21/2027    12148784.00    0.00                                0.00                               12148784.00                      10                                                                Foreign                                               N                                                              Y                                                                10                                                      N                                                                                                                                                                                                                (F.K.A) SYNTONIC TECHNOLO           GY, INC                      CHICAGO              IL      60694           6100                        USA
+```
+[p001_p0081]
+
+```text
+TRANSCORE                                 PSC-15-2982XB TOLLING OPS   Tolling OPS - NYCSC - CAT B                                                                                     Open        Other Professional Services                      Authority Contract - Competitive Bid       2/1/2022     6/22/2022                   Y                                     6/21/2027    13303491.00    112170.03                           112170.03                          13191320.97                      10                                                                Foreign                                               N                                                              Y                                                                10                                                      N                                                                                                                                                                                                                (F.K.A) SYNTONIC TECHNOLO           GY, INC                      CHICAGO              IL      60694           6100                        USA
+```
+[p001_p0082]
+
+```text
+HENNINGSON, DURHAM AND RICHARDSON         PSC-19-3027A                CAPITAL- ITS As-Needed                                                                                          Open        Other Professional Services                      Authority Contract - Competitive Bid       2/19/2020    2/19/2020                   Y                                     2/18/2025    2291955.12     431490.62                           1562553.17                         729401.95                        5                                                                 NYS                                                   N                                                              Y                                                                2                                                       N                                                                                                                                                                                                                500 SEVENTH AVE                     15TH FLOOR                   NEW YORK             NY      10018                                       USA
+```
+[p001_p0083]
+
+```text
+PBS ENGINEERING AND ASSOCIATES PC         PSC-19-3027B                ITS- AS Needed CAPTIAL                                                                                          Open        Other Professional Services                      Authority Contract - Competitive Bid       5/29/2020    5/29/2020                   Y                                     5/28/2025    1516902.50     157677.33                           403038.24                          1113864.26                       5                                                                 Foreign                                               Y                                                              Y                                                                2                                                       N                                                                                                                                                                                                                13 RUTLEDGE COURT                                                PLAINSBORO           NJ      8536                                        USA
+```
+[p001_p0084]
+
+```text
+PBS ENGINEERING AND ASSOCIATES PC         PSC-19-3027B-1              ITS As Needed - Operations                                                                                      Open        Other Professional Services                      Authority Contract - Competitive Bid       11/12/2021   11/12/2021                  Y                                     5/28/2025    1122248.42     197011.38                           301932.20                          820316.22                        5                                                                 Foreign                                               Y                                                              Y                                                                2                                                       N                                                                                                                                                                                                                13 RUTLEDGE COURT                                                PLAINSBORO           NJ      8536                                        USA
+```
+[p001_p0085]
+
+```text
+M AND J ENGINEERING PC                    PSC19-3027C                 MISC ITS-AS NEEDED - CAPITAL                                                                                    Open        Other Professional Services                      Authority Contract - Competitive Bid       4/2/2020     4/2/2020                    Y                                     4/1/2025     3523574.76     1778560.57                          2416543.48                         1107031.28                       5                                                                 NYS                                                   Y                                                              Y                                                                2                                                       N                                                                                                                                                                                                                ONE CROSS ISLAND PARKWAY            SUITE#213                    ROSEDALE             NY      11422                                       USA
+```
+[p001_p0086]
+
+```text
+M AND J ENGINEERING PC                    PSC-19-3027C-A              MiSC- ITS- As Needed- OPERATIN                                                                                  Open        Other Professional Services                      Authority Contract - Competitive Bid       4/2/2019     9/1/2021                    Y                                     4/1/2025     163490.89      0.00                                142955.02                          20535.87                         5                                                                 NYS                                                   Y                                                              Y                                                                2                                                       N                                                                                                                                                                                                                ONE CROSS ISLAND PARKWAY            SUITE#213                    ROSEDALE             NY      11422                                       USA
+```
+[p001_p0087]
+
+```text
+GANNETT FLEMING ENGINEERS AND             PSC-21-3047                 PMO NYCSC                                                                                                       Open        Consulting Services                              Authority Contract - Competitive Bid       3/22/2022    3/22/2022                   Y                                     3/21/2024    2488890.73     1103186.31                          1515600.44                         973290.29                        2                                                                 NYS                                                   N                                                              Y                                                                0                                                       N                                                                                                                                                                                                                ARCHITECTS, PC                      ONE PENN PLAZA               NEW YORK             NY      10119                                       USA
+```
+[p001_p0088]
+
+```text
+WSP USA INC                               PSC-21-3050A                Environmental - As Needed - Op                                                                                  Open        Consulting Services                              Authority Contract - Competitive Bid       4/29/2022    4/29/2022                   Y                                     4/28/2027    752436.00      288657.21                           651428.36                          101007.64                        2                                                                 NYS                                                   N                                                              Y                                                                0                                                       N                                                                                                                                                                                                                ONE PENN PLAZA, 4TH FL                                           NEW YORK             NY      10119                                       USA
+```
+[p001_p0089]
+
+```text
+OUDAZ GENERAL CONTRACTING INC             QMM-371                     SBMP QMM-371                                                                                                    Completed   Design and Construction/Maintenance              Authority Contract - Competitive Bid       12/14/2022   12/14/2022                  Y                                     6/18/2023    1123044.09     1123044.09                          1123044.09                         0.00                             4                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Small Business Mentoring                                                                                               80 W CENTURY ROAD, STE 303                                       PARAMUS              NJ      7652                                        USA
+```
+[p001_p0090]
+
+```text
+NEW YORK INTERNATIONAL BUILDERS CORP      QMM-372                     SBMP QMM-372                                                                                                    Completed   Design and Construction/Maintenance              Authority Contract - Competitive Bid       12/19/2022   12/19/2022                  Y                                     8/21/2023    345316.00      345316.00                           345316.00                          0.00                             5                                                                 NYS                                                   Y                                                              Y                                                                1                                                       Y                                                                                         Small Business Mentoring                                                                                               79-01 MYRTLE AVE                    REAR SUITE                   GLENDALE             NY      11385                                       USA
+```
+[p001_p0091]
+
+```text
+RED AND BLUE CONSTRUCTION CORP.           RK-58                       Randalls Island Roofs Replace                                                                                   Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       7/20/2021    7/20/2021                   Y                                     8/15/2022    1955984.02     319068.55                           1859710.67                         96273.35                         8                                                                 NYS                                                   Y                                                              Y                                                                8                                                       Y                                                                                         Small Business Mentoring                                                                                               677 ASHFORD STREET                                               BROOKLYN             NY      11207                                       USA
+```
+[p001_p0092]
+
+```text
+SAHEET CONSTRUCTION CORP                  RKM-376                     SBMP RKM-376                                                                                                    Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       12/19/2022   12/19/2022                  Y                                     12/27/2023   1474786.00     332343.73                           332343.73                          1142442.27                       4                                                                 NYS                                                   Y                                                              Y                                                                1                                                       Y                                                                                         Small Business Mentoring                                                                                               88-36 GETTYSBURG ST                                              BELLEROSE            NY      11426                                       USA
+```
+[p001_p0093]
+
+```text
+J.S.K. CONSTRUCTION CORP                  RKM-403                     Sidewalk replacement 26AND27Sts                                                                                 Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       9/22/2022    9/22/2022                   Y                                     10/3/2023    436671.72      335303.86                           335303.86                          101367.86                        5                                                                 NYS                                                   Y                                                              Y                                                                1                                                       Y                                                                                         Small Business Mentoring                                                                                               430 W MERRICK RD, #5                                             VALLEY STREAM        NY      11580                                       USA
+```
+[p001_p0094]
+
+```text
+ANTANAS CONSTRUCTION SERVICES LLC         RKM-410                     SBMP RKM-410                                                                                                    Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       12/11/2023   12/11/2023                  Y                                     1/1/2025     588000.00      0.00                                0.00                               588000.00                        3                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Small Business Mentoring                                                                                               212 S ODESSA AVE                                                 EGG HARBOR CITY      NJ      8215                                        USA
+```
+[p001_p0095]
+
+```text
+MADHU CONSTRUCTION CORPORATION            RKM-411                     SBMP RKM-411                                                                                                    Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       12/11/2023   12/11/2023                  Y                                     1/1/2025     1890000.00     0.00                                0.00                               1890000.00                       5                                                                 NYS                                                   Y                                                              Y                                                                1                                                       Y                                                                                         Small Business Mentoring                                                                                               90-28 209TH ST                                                   QUEENS VILLAGE       NY      11428                                       USA
+```
+[p001_p0096]
+
+```text
+BURROWES CONSTRUCTION INC                 VNM-396                     SBMP VNM-396                                                                                                    Completed   Design and Construction/Maintenance              Authority Contract - Competitive Bid       12/17/2021   12/17/2021                  Y                                     12/27/2022   336467.91      19497.15                            336467.91                          0.00                             4                                                                 NYS                                                   Y                                                              Y                                                                2                                                       Y                                                                                         Small Business Mentoring                                                                                               791 FOUNTAIN AVE                                                 BROOKLYN             NY      11208                                       USA
+```
+[p001_p0097]
+
+```text
+BLACKSTONE GROUP OF CONSTRUCTION INC      VNM-403                     Engineering Trailer Rehabilitation at the VN Service Building                                                   Completed   Design and Construction/Maintenance              Authority Contract - Competitive Bid       7/25/2022    7/25/2022                   Y                                     3/15/2023    78110.69       36939.59                            78110.69                           0.00                             4                                                                 NYS                                                   Y                                                              Y                                                                1                                                       Y                                                                                         Small Business Mentoring                                                                                               1647 E 51ST STREET                                               BROOKLYN             NY      11234                                       USA
+```
+[p001_p0098]
+
+```text
+PENCOL CONTRACTING CORP                   VNM-410                     SBMPVNM-410 BridgePreservat VN                                                                                  Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       10/17/2022   10/17/2022                  Y                                     11/17/2023   1372657.51     1366843.45                          1366843.45                         5814.06                          6                                                                 NYS                                                   Y                                                              Y                                                                1                                                       Y                                                                                         Small Business Mentoring                                                                                               70 E SUNRISE HWY                    SUITE 500                    VALLEY STREAM        NY      11581                                       USA
+```
+[p001_p0099]
+
+```text
+G-BROTHERS CONTRACTING CORP               VNM-412                     SBMP VNM-412                                                                                                    Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       12/11/2023   12/11/2023                  Y                                     1/1/2025     468092.00      0.00                                0.00                               468092.00                        3                                                                 NYS                                                   N                                                              N                                                                0                                                       Y                                                                                         Small Business Mentoring                                                                                               13316 127TH ST                                                   South Ozone Park     NY      11420                                       USA
+```
+[p001_p0100]
+
+```text
+UNIQUE CONSTRUCTION                       WBM-385                     Washing AND Spot Painting of the BW Queens Approach Viaduct - Phase 2                                           Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       12/11/2023   12/11/2023                  Y                                     1/1/2025     611800.00      0.00                                0.00                               611800.00                        4                                                                 NYS                                                   Y                                                              Y                                                                1                                                       Y                                                                                         Small Business Mentoring                                                                                               AND HOME IMPROVEMENT INC            144-34 HILLSIDE AVE 1ST FL   JAMAICA              NY      11435                                       USA
+```
+[p001_p0101]
+
+```text
+NATIONAL RAILROAD PASSENGER CORP          005155-AN513                Amtrak F Account AND MGT support services for the LIRR Penn Station Wireless Communication Services             Open        Design and Construction/Maintenance              Authority Contract - Non-Competitive Bid   3/31/2022    3/31/2022                   Y                                     12/31/2024   1888273.00     760645.17                           773866.81                          1114406.19                       1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Inter-agency Agreement        1888273.00                                                                               PO BOX 1140 DEPT A                                               MEMPHIS              TN      38101                                       USA
+```
+[p001_p0102]
+
+```text
+NRPC- NAT'L RAIL PASSENGER CORP           005155-P                    Amtrak FA Support AN 481-00                                                                                     Open        Other                                            Authority Contract - Non-Competitive Bid   7/13/2015    7/13/2015                   Y                                     12/31/2016   420082.00      383.78                              114900.67                          305181.33                        0                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Inter-agency Agreement        420082.00                                                                                30TH STREET STATION, 5NW - BOX 61                                CHICAGO              PA      19104                                       USA
+```
+[p001_p0103]
+
+```text
+KAWASAKI RAIL CAR INC                     0400000000000000000001281   5 year parts agreement                                                                                          Open        Other                                            Authority Contract - Non-Competitive Bid   7/1/2016     6/30/2016                   Y                                     10/31/2023   29749000.00    4719017.66                          27710775.58                        2038224.42                       1                                                                 NYS                                                   N                                                              N                                                                0                                                       Y                                                                                         Sole Source                   29749000.00                                                                              29 WELLS AVE                        BUILDING NO 4                YONKERS              NY      10701                                       USA
+```
+[p001_p0104]
+
+```text
+WABTEC GLOBAL SERVICES                    400000000001907             Various OEM Rail car and Locomotive parts for MNR-LIRR                                                          Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   2/6/2019     2/6/2019                    Y                                     3/31/2022    8000000.00     364894.56                           5359021.92                         2640978.08                       1                                                                 Foreign                                               N                                                              N                                                                0                                                       N                                                                                                                       8000000.00                                                                               8400 S STEWART AVE                                               CHICAGO              IL      60618                                       USA
+```
+[p001_p0105]
+
+```text
+WABTEC PASSENGER TRANSIT                  400000000001908             MNR Lead Agency. OEM Spare Parts.                                                                               Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   2/6/2019     2/6/2019                    Y                                     3/31/2022    10500000.00    96085.52                            3688346.50                         6811653.50                       1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Sole Source                   10500000.00                                                                              130 RIDGEVIEW CENTER DR                                          DUNCAN               SC      29334                                       USA
+```
+[p001_p0106]
+
+```text
+CALUMET ARMATURE AND ELECTRIC LLC         400000000002088             QPL Repair Return Field Coils                                                                                   Open        Other                                            Authority Contract - Non-Competitive Bid   10/8/2019    10/10/2019                  Y                                     3/9/2023     996190.00      119515.00                           591820.00                          404370.00                        1                                                                 Foreign                                               N                                                              N                                                                0                                                       N                                                                                                                       996190.00                                                                                1050 W 134TH ST                                                  RIVERDALE            IL      60827                                       USA
+```
+[p001_p0107]
+
+```text
+ICICLE QUALITY SERVICE INC                400000000001772             LIRR Ice Machine Maintenance                                                                                    Open        Other                                            Authority Contract - Competitive Bid       8/30/2018    9/15/2018                   Y                                     10/31/2023   10000.00       0.00                                0.00                               10000.00                         3                                                                 NYS                                                   N                                                              Y                                                                0                                                       Y                                                                                         Discretionary Procurement                                                                                              980 BROADWAY, STE 305                                            THORNWOOD            NY      10594                                       USA
+```
+[p001_p0108]
+
+```text
+LUMINATOR TECHNOLOGY GROUP                400000000002310             5 year parts agreement with Luminator                                                                           Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   7/21/2020    7/21/2020                   Y                                     6/30/2023    1191504.44     91660.38                            838781.30                          352723.14                        1                                                                 Foreign                                               N                                                              N                                                                0                                                       N                                                                                                                       1191504.44                                                                               1331-118TH AVENUE SE                SUITE 300                    BELLEVUE             WA      98005                                       USA
+```
+[p001_p0109]
+
+```text
+HOUGEN MANUFACTURING, INC.                400000000002673             3-Year Contract for Hougen Rai                                                                                  Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   5/20/2022    6/1/2022                    Y                                     5/30/2025    230000.00      102824.12                           131935.00                          98065.00                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Sole Source                   230000.00                                                                                3001 HOUGEN DR                                                   SWARTZ CREEK         MI      48473                                       USA
+```
+[p001_p0110]
+
+```text
+WABTEC PASSENGER TRANSIT                  400000000002740             5 Year OEM Contract for Parts                                                                                   Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   8/15/2022    8/15/2022                   Y                                     8/14/2027    21340000.00    439213.12                           446339.62                          20893660.38                      1                                                                 Foreign                                               N                                                              N                                                                0                                                       N                                                                                                                       21340000.00                                                                              130 RIDGEVIEW CENTER DR                                          DUNCAN               SC      29334                                       USA
+```
+[p001_p0111]
+
+```text
+VAPOR STONE RAIL SYSTEMS                  400000000002741             5 Year OEM Parts Agreement                                                                                      Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   8/15/2022    8/15/2022                   Y                                     8/14/2027    23324917.44    1107052.20                          1110400.57                         22214516.87                      1                                                                 Foreign                                               N                                                              N                                                                0                                                       N                                                                                                                       23324917.44                                                                              10000 CAVENDISH BLVD                                             VILLE ST - LAURENT           H4M 2V1                   QC                OTHER       CAN
+```
+[p001_p0112]
+
+```text
+WABTEC TRANSPORTATION SYSTEMS LLC         400000000002742             5 Year OEM Parts Agreement                                                                                      Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   8/15/2022    8/15/2022                   Y                                     8/14/2027    74000.00       0.00                                0.00                               74000.00                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       N                                                                                                                       74000.00                                                                                 500 W MONROE ST                                                  CHICAGO              IL      60661                                       USA
+```
+[p001_p0113]
+
+```text
+WABTEC GLOBAL SERVICES                    400000000002743             5 Year OEM Parts Agreement                                                                                      Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   8/15/2022    8/15/2022                   Y                                     8/14/2027    9201000.00     1685215.44                          1700661.04                         7500338.96                       1                                                                 Foreign                                               N                                                              N                                                                0                                                       N                                                                                                                       9201000.00                                                                               8400 S STEWART AVE                                               CHICAGO              IL      60618                                       USA
+```
+[p001_p0114]
+
+```text
+VAPOR STONE RAIL SYSTEMS                  400000000002803             C3 Door Control Module Upgrade                                                                                  Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   12/27/2022   12/27/2022                  Y                                     12/31/2025   3366082.56     0.00                                0.00                               3366082.56                       1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Sole Source                   3366082.56                                                                               10000 CAVENDISH BLVD                                             VILLE ST - LAURENT           H4M 2V1                   QC                OTHER       CAN
+```
+[p001_p0115]
+
+```text
+KLD LABS, INC.                            400000000002935             3-Year Service on LIRR TC-82 T                                                                                  Open        Commodities/Supplies                             Authority Contract - Competitive Bid       7/13/2023    8/1/2023                    Y                                     7/31/2026    321261.71      0.00                                0.00                               321261.71                        2                                                                 NYS                                                   N                                                              N                                                                0                                                       N                                                                                                                                                                                                                55 CABOT COURT                                                   HAUPPAUGE            NY      11788                                       USA
+```
+[p001_p0116]
+
+```text
+DEMATIC CORP                              400000000003048             Dematic - VFD Upgrade                                                                                           Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   12/18/2023   12/18/2023                  Y                                     12/18/2024   265900.00      0.00                                0.00                               265900.00                        1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Sole Source                   265900.00                                                                                507 PLYMOUTH AVE NE                                              GRAND RAPIDS         MI      49505                                       USA
+```
+[p001_p0117]
+
+```text
+GEISMAR NORTH AMERICA INC                 4000180499                  STA86714- STRAIGHT TOOL HOLDER                                                                                  Completed   Commodities/Supplies                             Authority Contract - Non-Competitive Bid   1/26/2023    1/26/2023                   Y                                     5/26/2023    41614.20       41614.20                            41614.20                           0.00                             1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Sole Source                   41614.20                                                                                 134 PARKER DR                                                    BEAUFORT             SC      29906                                       USA
+```
+[p001_p0118]
+
+```text
+HITACHI RAIL STS USA INC                  4000183085                  FOLLOWER, SOLID STATE CODE, RMS-201 ITEM no.978, ANSALDO N32003001 OR LIRR APPROVED EQUAL                       Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   3/22/2023    3/22/2023                   Y                                     6/14/2024    19501.12       0.00                                0.00                               19501.12                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        19501.12                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0119]
+
+```text
+HITACHI RAIL STS USA INC                  4000183089                  ARRESTOR UNIT,LOW VOLTAGE TYPE BLUE,USANDS no.N451552-0101 OR LIRR APPROVED EQUAL.                              Completed   Commodities/Supplies                             Authority Contract - Non-Competitive Bid   3/22/2023    3/22/2023                   Y                                     9/18/2023    30099.20       30099.20                            30099.20                           0.00                             1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        30099.20                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0120]
+
+```text
+HITACHI RAIL STS USA INC                  4000183237                  RELAY,SWITCH MACHINE,SOLID STATE,COMPLETE PACKAGE,ANSALDO N40103601                                             Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   3/24/2023    3/24/2023                   Y                                     5/22/2024    21510.00       0.00                                0.00                               21510.00                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        21510.00                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0121]
+
+```text
+HITACHI RAIL STS USA INC                  4000183522                  RELAY, PN150 EVT-SD, .01 SEC. TO 59 MIN., 59 SEC., DROP AWAY TIMER, ANSALDO P N N40101703, OR LIRR A            Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   3/30/2023    3/30/2023                   Y                                     6/24/2024    19377.90       0.00                                0.00                               19377.90                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        19377.90                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0122]
+
+```text
+HITACHI RAIL STS USA INC                  4000183533                  HOT FILAMENT CHECK, 25 W. INPUT 18-50 WATT 100 HZ LAMP, OUTPUT 1.7-30V, HITACHI RAIL STS USA N40104             Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   3/30/2023    3/30/2023                   Y                                     7/22/2024    46000.92       0.00                                0.00                               46000.92                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        46000.92                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0123]
+
+```text
+HITACHI RAIL STS USA INC                  4000183534                  RELAY,SWITCH MACHINE,SOLID STATE,COMPLETE PACKAGE,ANSALDO N40103601                                             Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   3/30/2023    3/30/2023                   Y                                     7/29/2024    17841.00       0.00                                0.00                               17841.00                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        17841.00                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0124]
+
+```text
+HITACHI RAIL STS USA INC                  4000183535                  OR-GATE, HITACHI RAIL STS USA no.N34800201 OR LIRR APPROVED EQUAL                                               Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   3/30/2023    3/30/2023                   Y                                     5/23/2024    30107.56       8651.40                             8651.40                            21456.16                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        30107.56                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0125]
+
+```text
+HITACHI RAIL STS USA INC                  4000183537                  TRANSCEIVER, ATT-20 AUDIO TRACK TRANSCEIVER TRACK CIRCUIT 15 KHZ, HITACHI ANSALDO STS PART no. N451052          Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   3/30/2023    3/30/2023                   Y                                     7/22/2024    64290.00       0.00                                0.00                               64290.00                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        64290.00                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0126]
+
+```text
+HITACHI RAIL STS USA INC                  4000183953                  LAMP, DRIVE AC, 110-130 V, 100 HZ INPUT, 110-130 V, 100 HZ 50 W. OUTPUT, HITACHI RAIL STS USA no. N40           Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   4/10/2023    4/10/2023                   Y                                     8/2/2024     24219.69       0.00                                0.00                               24219.69                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        24219.69                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0127]
+
+```text
+HITACHI RAIL STS USA INC                  4000183955                  RELAY, PN150 EVT-SD, .01 SEC. TO 59 MIN., 59 SEC., DROP AWAY TIMER, ANSALDO P N N40101703, OR LIRR A            Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   4/10/2023    4/10/2023                   Y                                     7/8/2024     67314.00       0.00                                0.00                               67314.00                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        67314.00                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0128]
+
+```text
+HITACHI RAIL STS USA INC                  4000183956                  BOOTLEG, JUNCTION BOX, 12Inch X18Inch, WITH 5Inch PEDESTAL, 2 CABLE OUTLETS, FOR M23 SWITCH MACHINES, ANSALDO   Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   4/10/2023    4/10/2023                   Y                                     11/21/2023   21608.60       21608.60                            21608.60                           0.00                             1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        21608.60                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0129]
+
+```text
+HITACHI RAIL STS USA INC                  4000184365                  Foot, LH, Insul. Swivel,Divide Slip, ANSALDO N291835-001                                                        Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   4/18/2023    4/18/2023                   Y                                     8/31/2023    60429.60       41082.30                            41082.30                           19347.30                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        60429.60                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0130]
+
+```text
+HITACHI RAIL STS USA INC                  4000184642                  RELAY, PN 150, H.D., 6FB, 240 OHM, HITACHI RAIL STS USA UN322505-705 OR LIRR APPROVED EQUAL                     Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   4/26/2023    4/26/2023                   Y                                     3/26/2024    17982.00       0.00                                0.00                               17982.00                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        17982.00                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0131]
+
+```text
+HITACHI RAIL STS USA INC                  4000185307                  MOTOR,SWITCH,FOR M23 SWITCH MACHINE,USANDS J717216-0301, OR LIRR APPROVED EQUAL                                 Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   5/9/2023     5/9/2023                    Y                                     4/23/2024    32682.51       14274.81                            14274.81                           18407.70                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        32682.51                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0132]
+
+```text
+HITACHI RAIL STS USA INC                  4000186405                  SWITCH,M-23A MACHINE,L.H., HVDC ELECTRIC WITH TWO 115V 15W HEATERS,ANSALDO N451160-1202 OR LIRR APP             Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   6/5/2023     6/5/2023                    Y                                     3/11/2024    224417.68      10638.00                            10638.00                           213779.68                        1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        224417.68                                                                                P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0133]
+
+```text
+HITACHI RAIL STS USA INC                  4000186478                  TRANSFORMER, SIGNAL LIGHTING, TO BE USED WITH RECTIFIER, 30VA, NOMINAL 115VAC PRIMARY VOLTAGE, SECON            Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   6/6/2023     6/6/2023                    Y                                     8/5/2024     34523.06       24538.50                            24538.50                           9984.56                          1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        34523.06                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0134]
+
+```text
+HITACHI RAIL STS USA INC                  4000186607                  HOT FILAMENT CHECK, 25 W. INPUT 18-50 WATT 100 HZ LAMP, OUTPUT 1.7-30V, HITACHI RAIL STS USA N40104             Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   6/8/2023     6/8/2023                    Y                                     9/30/2024    39158.88       0.00                                0.00                               39158.88                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        39158.88                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0135]
+
+```text
+HITACHI RAIL STS USA INC                  4000186608                  BASE, FOR PN-150 EVT RELAY MTG, GRS RACK MOUNT APPLICATION, ANSALDO PARTno. N40102901 OR LIRR APPROVED          Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   6/8/2023     6/8/2023                    Y                                     9/2/2024     85538.00       0.00                                0.00                               85538.00                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        85538.00                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0136]
+
+```text
+HITACHI RAIL STS USA INC                  4000186611                  RELAY, PN 150, H.D., 6FB, 240 OHM, HITACHI RAIL STS USA UN322505-705 OR LIRR APPROVED EQUAL                     Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   6/8/2023     6/8/2023                    Y                                     6/7/2024     34092.00       0.00                                0.00                               34092.00                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        34092.00                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0137]
+
+```text
+HITACHI RAIL STS USA INC                  4000186616                  LOCK,SWITCH CONTROLLER, SML-110V, FOR HIGH VOLTAGE SWITCHING MACHINES, USANDS N47302302                         Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   6/8/2023     6/8/2023                    Y                                     9/16/2024    32473.84       0.00                                0.00                               32473.84                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        32473.84                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0138]
+
+```text
+HITACHI RAIL STS USA INC                  4000187516                  RELAY, PN 150, H.D., 6FB, 240 OHM, HITACHI RAIL STS USA UN322505-705 OR LIRR APPROVED EQUAL                     Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   7/6/2023     7/6/2023                    Y                                     7/1/2024     27429.59       0.00                                0.00                               27429.59                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        27429.59                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0139]
+
+```text
+HITACHI RAIL STS USA INC                  4000188490                  BASE, KIT, FOR PN150 RELAY SERIES, COMPATIBLE W GRS AND SAFETRAN, USANDS no.N451376-0601                        Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   8/2/2023     8/2/2023                    Y                                     3/14/2024    51175.08       0.00                                0.00                               51175.08                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        51175.08                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0140]
+
+```text
+HITACHI RAIL STS USA INC                  4000189081                  TRANSFORMER,AUTO, PP-13, 800 VA. INPUT 110V 25 100HZ, OUTPUT 110-186V 110-22V, USANDS 98825055, OR L            Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   8/15/2023    8/15/2023                   Y                                     4/26/2024    51537.60       0.00                                0.00                               51537.60                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        51537.60                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0141]
+
+```text
+HITACHI RAIL STS USA INC                  4000189307                  RELAY, SLOW DROP, 5 SEC., PN150EVT 3F-1B, ANSALDO N40101702, OR LIRR APPROVED EQUAL RMS-201 ITEM 4              Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   8/21/2023    8/21/2023                   Y                                     4/22/2024    31823.66       7346.90                             7346.90                            24476.76                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        31823.66                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0142]
+
+```text
+HITACHI RAIL STS USA INC                  4000189693                  SWITCH, M3 MACHINE, SPECIAL LOW-PROFILE MODEL FOR 6776 SWITCH GEAR RATIO 1891, WRAP AROUND POINT                Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   8/30/2023    8/30/2023                   Y                                     4/11/2024    75608.00       0.00                                0.00                               75608.00                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        75608.00                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0143]
+
+```text
+HITACHI RAIL STS USA INC                  4000190707                  ARRESTOR UNIT,LOW VOLTAGE TYPE BLUE,USANDS no.N451552-0101 OR LIRR APPROVED EQUAL.                              Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   9/26/2023    9/26/2023                   Y                                     3/25/2024    22113.00       0.00                                0.00                               22113.00                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        22113.00                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0144]
+
+```text
+HITACHI RAIL STS USA INC                  4000190924                  BOOTLEG, JUNCTION BOX, 12Inch X18Inch, WITH 5Inch PEDESTAL, 2 CABLE OUTLETS, FOR M23 SWITCH MACHINES, ANSALDO   Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   9/29/2023    9/29/2023                   Y                                     5/13/2024    68450.40       0.00                                0.00                               68450.40                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        68450.40                                                                                 P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0145]
+
+```text
+HITACHI RAIL STS USA INC                  4000192467                  SWITCH,M23A MACHINE, L.H., COMPLETE, WITH LAYOUT, JUNCTION BOX, AND UNIVERSAL SADDLE PLATES. PER LIR            Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   11/9/2023    12/20/2023                  Y                                     6/21/2024    798003.00      0.00                                0.00                               798003.00                        1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        798003.00                                                                                P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0146]
+
+```text
+AMERICAN HEART ASSOCIATION INC            4000184921                  Heartsaver® First Aid CPR AED eCard Product Number 20-3002                                                      Completed   Commodities/Supplies                             Authority Contract - Non-Competitive Bid   5/2/2023     5/2/2023                    Y                                     5/2/2023     16150.00       16150.00                            16150.00                           0.00                             1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Sole Source                   16150.00                                                                                 PO BOX 841390                                                    DALLAS               TX      75284           1390                        USA
+```
+[p001_p0147]
+
+```text
+LTK ENGINEERING SERVICES OF NY LLP        4000171958                  Ruggedized memory module RMM                                                                                    Completed   Commodities/Supplies                             Authority Contract - Non-Competitive Bid   6/9/2022     6/9/2022                    Y                                     6/9/2022     18768.10       18518.10                            18518.10                           250.00                           1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        18768.10                                                                                 100 W BUTLER AVE.                                                AMBLER               PA      19002                                       USA
+```
+[p001_p0148]
+
+```text
+VERITECH INC                              4000168407                  VT-LIRRRJCT-01 Initial Unit VeriTranz Rail Jumper Cable Test Platform                                           Completed   Commodities/Supplies                             Authority Contract - Non-Competitive Bid   2/22/2022    2/22/2022                   Y                                     4/14/2022    49500.00       49500.00                            49500.00                           0.00                             1                                                                 Foreign                                               N                                                              N                                                                0                                                       N                                                                                                                       49500.00                                                                                 628 ROUTE 10                        UNIT 4                       WHIPPANY             NJ      07981                                       USA
+```
+[p001_p0149]
+
+```text
+L.B. FOSTER RAIL TECHNOLOGIES INC         4000179582                  7880701650- MC4 BAR ASSY W TROUGH AND CLAMPS 116LB RAIL                                                         Completed   Commodities/Supplies                             Authority Contract - Non-Competitive Bid   1/5/2023     1/5/2023                    Y                                     2/16/2023    46100.00       46100.00                            46100.00                           0.00                             1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        46100.00                                                                                 415 HOLIDAY DRIVE                                                PITTSBURGH           PA      15220                                       USA
+```
+[p001_p0150]
+
+```text
+BBM RAILWAY EQUIPMENT LLC                 4000168086                  Gap Filler Panels for Drop Table Bascule Release Top                                                            Completed   Commodities/Supplies                             Authority Contract - Non-Competitive Bid   2/10/2022    2/10/2022                   Y                                     2/10/2022    87310.00       87310.00                            87310.00                           0.00                             1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        87310.00                                                                                 3200 INNOVATION PLACE                                            YOUNGSTOWN           OH      44509                                       USA
+```
+[p001_p0151]
+
+```text
+CASSONE LEASING, INC.                     4000190482                  Purchase of existing 10 x 50 Office trailer currently being rented from Cassone no.01050-359, Lease             Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   9/21/2023    9/21/2023                   Y                                     9/22/2023    28100.00       0.00                                0.00                               28100.00                         1                                                                 NYS                                                   Y                                                              Y                                                                1                                                       Y                                                                                         Below Dollar Threshold        28100.00                                                                                 1900 LAKELAND AVE                                                RONKONKOMA           NY      11779                                       USA
+```
+[p001_p0152]
+
+```text
+CUMMINS SALES & SERVICE                   4000179089                  Car no. E401 – FULL PM SERVICE FM X2, FULL SVC AND BATTERY REPL X3, INSPECTION X5                               Open        Consulting Services                              Authority Contract - Non-Competitive Bid   12/16/2022   12/16/2022                  Y                                     12/16/2022   31448.16       2296.85                             2296.85                            29151.31                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        31448.16                                                                                 435 BERGEN AVE                                                   KEARNY               NJ      07032                                       USA
+```
+[p001_p0153]
+
+```text
+DEMATIC CORP                              4000149504                  Contract Service for 3 years, for ASRS System, per Proposal no.151350                                           Open        Consulting Services                              Authority Contract - Non-Competitive Bid   6/17/2020    6/17/2020                   Y                                     6/25/2020    74938.00       17139.33                            49473.99                           25464.01                         1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold        74938.00                                                                                 507 PLYMOUTH AVE NE                                              GRAND RAPIDS         MI      49505                                       USA
+```
+[p001_p0154]
+
+```text
+LASER TRIBOLOGY B.V.                      4000149340                  Lease Contract.with Laser Tribology for the testing and commissioning of 2 laser units each year, st            Open        Other                                            Authority Contract - Non-Competitive Bid   6/11/2020    6/11/2020                   Y                                     6/9/2025     5575000.00     1301191.08                          5319261.08                         255738.92                        1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Sole Source                   5575000.00                                                                               DUKDALFWEG 38                                                    AMSTERDAM                    1041                      0363              OTHER       NLD
+```
+[p001_p0155]
+
+```text
+EMPIRE CONSULTING LLC                     Multiple PO's - LIRRD       Various Items                                                                                                   Completed   Other                                            Non Contract Procurement/Purchase Order                                                                                                               31770.00                                                                                                                                                                  Foreign                                               N                                                                                                                                                                                                                                                                                                                                                                                                        328 MOUNTAIN RD                                                  WILTON               CT      06897                                       USA
+```
+[p001_p0156]
+
+```text
+FLORIAN FOOD SERVICE INC                  Multiple PO's - LIRRD       Various Items                                                                                                   Completed   Other                                            Non Contract Procurement/Purchase Order                                                                                                               20360.86                                                                                                                                                                  NYS                                                   N                                                                                                                                                                                                                                                                                                                                                                                                        50-1 FELDLAND ST                                                 BOHEMIA              NY      11716                                       USA
+```
+[p001_p0157]
+
+```text
+HITACHI RAIL STS USA INC                  Multiple PO's - LIRRD       Various Items                                                                                                   Completed   Commodities/Supplies                             Non Contract Procurement/Purchase Order                                                                                                               43513.69                                                                                                                                                                  Foreign                                               N                                                                                                                                                                                                                                                                                                                                                                                                        P.O. BOX 7780-1513                                               PHILADELPHIA         PA      19182                                       USA
+```
+[p001_p0158]
+
+```text
+OKONITE COMPANY INC.                      4000163130                  CABLE, 22 COND. COMPOSITE, 3 COND., POWER, AWG.4, 19 STRAND, 600V, STANDARD JACKET, PER LIRR SPEC. C            Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       9/13/2021    9/13/2021                   Y                                     3/14/2022    561586.53      561586.53                           561586.53                          0.00                             3                                                                 Foreign                                               N                                                              Y                                                                18                                                      N                                                                                                                                                                                                                3 GARRET MOUNTAIN PLAZA             STE 304                      WOODLAND PARK        NJ      07424                                       USA
+```
+[p001_p0159]
+
+```text
+PRYSMIAN CABLES AND SYSTEMS USA LLC       4000176366                  CABLE, 22 COND. COMPOSITE, 3 COND., POWER, AWG.4, 19 STRAND, 600V, STANDARD JACKET, PER LIRR SPEC. C            Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       10/7/2022    10/7/2022                   Y                                     6/23/2023    115450.44      115450.44                           115450.44                          0.00                             3                                                                 Foreign                                               N                                                              Y                                                                1                                                       Y                                                                                         Below Dollar Threshold                                                                                                 700 INDUSTRIAL DR                                                LEXINGTON            SC      29072                                       USA
+```
+[p001_p0160]
+
+```text
+PRYSMIAN GROUP SPECIALTY CABLES LLC       4000176939                  CABLE,4 COND., POWER, AWG.4, 19 STRANDED, 3000V, STANDARD JACKET, PER LIRR SPEC. CSI-PC-101 AND 101A            Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       10/21/2022   10/21/2022                  Y                                     4/10/2023    225208.90      225208.90                           225208.90                          0.00                             1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold                                                                                                 4 TESSENEER DR                                                   HIGHLAND HEIGHTS     KY      41076                                       USA
+```
+[p001_p0161]
+
+```text
+PRYSMIAN GROUP SPECIALTY CABLES LLC       4000186682                  CABLE, 1 COND., 3000V, NH-LS, 500 MCM, PER LIRR SPEC. ETD-8600 REV.no.10 DATED 04-11-19 DELIVERY VIA            Open        Commodities/Supplies                             Authority Contract - Competitive Bid       6/13/2023    6/13/2023                   Y                                     1/23/2024    71290.95       71290.95                            71290.95                           0.00                             5                                                                 Foreign                                               N                                                              Y                                                                2                                                       Y                                                                                         Below Dollar Threshold                                                                                                 4 TESSENEER DR                                                   HIGHLAND HEIGHTS     KY      41076                                       USA
+```
+[p001_p0162]
+
+```text
+EDSAL MACHINE PRODUCTS, INC.              4000174820                  CHOCK,WHEEL, HARD MAPLE OR WHITE OAK, PER LIRR DRAWING L-2906H                                                  Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       9/7/2022     9/7/2022                    Y                                     1/5/2023     24615.15       13937.75                            24615.15                           0.00                             1                                                                 NYS                                                   N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold                                                                                                 126 56TH ST                                                      BROOKLYN             NY      11220           2575                        USA
+```
+[p001_p0163]
+
+```text
+SEDIA INC.                                4000184853                  CUSHION, SEAT, L.H., 3 PASSENGER, NAVY-CHERRY, PER LIRR DWGS. N-3810C, L-3817B, L-3812B, S-3934D, S-            Open        Commodities/Supplies                             Authority Contract - Competitive Bid       5/1/2023     5/1/2023                    Y                                     5/22/2023    73736.82       73736.82                            73736.82                           0.00                             1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold                                                                                                 6040 N FLINT RD                                                  GLENDALE             WI      53209                                       USA
+```
+[p001_p0164]
+
+```text
+HAFCO FOUNDRY AND MACHINE CO., INC.       4000176731                  SPRING, CONTACT SHOE, STD PRESSURE, RIGHT HAND, PAINTED WITH RED OXIDE PRIMER, PER LIRR DWG. E-1204G            Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       10/18/2022   10/18/2022                  Y                                     5/26/2023    36960.00       27720.00                            36960.00                           0.00                             1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold                                                                                                 301 GREENWOOD AVENUE                                             MIDLAND PARK         NJ      07432                                       USA
+```
+[p001_p0165]
+
+```text
+HAFCO FOUNDRY AND MACHINE CO., INC.       4000178646                  PLATE, ADJUSTING, CONTACT SHOE, W MACHINED SURFACES, PER LIRR DWG. N-4795 M1, M3, M7, DM30, SD                  Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/7/2022    12/7/2022                   Y                                     9/15/2023    29133.00       21235.50                            29133.00                           0.00                             1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold                                                                                                 301 GREENWOOD AVENUE                                             MIDLAND PARK         NJ      07432                                       USA
+```
+[p001_p0166]
+
+```text
+SIEMENS MOBILITY INC                      4000185201                  REPAIR AND RETURN UNIT, INTERFACE, ATC D0058 P N D5574H88-A01 S N 2152                                          Open        Commodities/Supplies                             Authority Contract - Competitive Bid       5/5/2023     5/5/2023                    Y                                     6/26/2023    17486.75       10492.05                            10492.05                           6994.70                          1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold                                                                                                 PO BOX 3498                                                      CAROL STREAM         IL      60132                                       USA
+```
+[p001_p0167]
+
+```text
+GABRIELLI TRUCK SALES LTD                 4000144316                  PURCHASE OF TWO 2 HI RAIL BRIDGE INSPECTION TRUCKS IN ACCORDANCE WITH LIRR SPECIFICATION 403. MIL               Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       2/6/2020     2/6/2020                    Y                                     3/27/2021    752064.00      250688.00                           752064.00                          0.00                             3                                                                 NYS                                                   N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold                                                                                                 153-20 SOUTH CONDUIT AVENUE                                      JAMAICA              NY      11434                                       USA
+```
+[p001_p0168]
+
+```text
+CREATIVE PULTRUSIONS, INC.                4000177922                  BOARD, PROTECTION, FIBERGLASS, PER LIRR DWGS. ETD-20078 REV. 5 DATED 05 18 09, ETD-20081 DATED 05 21            Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       11/17/2022   11/17/2022                  Y                                     3/9/2023     621049.68      621049.68                           621049.68                          0.00                             3                                                                 Foreign                                               N                                                              N                                                                0                                                       N                                                                                                                                                                                                                214 INDUSTRIAL LN                                                ALUM BANK            PA      15521           8304                        USA
+```
+[p001_p0169]
+
+```text
+CREATIVE PULTRUSIONS, INC.                4000183002                  BOARD, PROTECTION, FIBERGLASS, PER LIRR DWGS. ETD-20078 REV. 5 DATED 05 18 09, ETD-20081 DATED 05 21            Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       3/20/2023    3/20/2023                   Y                                     7/10/2023    673778.90      673778.90                           673778.90                          0.00                             4                                                                 Foreign                                               N                                                              N                                                                0                                                       N                                                                                                                                                                                                                214 INDUSTRIAL LN                                                ALUM BANK            PA      15521           8304                        USA
+```
+[p001_p0170]
+
+```text
+EDSAL MACHINE PRODUCTS, INC.              4000170451                  TERMINAL,SPLIT CLAMP,TINNED BRONZE,COMP,W HEX.HD. BOLTS, NUT AND LOCKWASHER,PER LIRR DWG. ETD-8518 R            Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       4/22/2022    4/22/2022                   Y                                     9/19/2022    187678.20      11768.60                            187678.20                          0.00                             5                                                                 NYS                                                   N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold                                                                                                 126 56TH ST                                                      BROOKLYN             NY      11220           2575                        USA
+```
+[p001_p0171]
+
+```text
+KELLY AND HAYES ELECTRICAL                4000190172                  CABLE,AWG.2 0,7-WIRES,H.D. BARE COPPER,CIRC.112C 2000 FT REELS NON RETURNABLE REELS                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       9/14/2023    9/14/2023                   Y                                     10/16/2023   24347.57       24347.57                            24347.57                           0.00                             2                                                                 NYS                                                   N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold                                                                                                 SUPPLY OF L.I., INC.                RP                           NESCONSET            NY      11767                                       USA
+```
+[p001_p0172]
+
+```text
+PRYSMIAN CABLES AND SYSTEMS USA LLC       4000172945                  CABLE, 2 COND. AWG.2 0, SHIELDED, DUPLEXED, 5KV CABLE PER LIRR SPEC. ETD-30046 REV no.4 DATED 03-26-13          Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       7/13/2022    7/13/2022                   Y                                     1/11/2023    71051.46       71051.46                            71051.46                           0.00                             5                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Below Dollar Threshold                                                                                                 700 INDUSTRIAL DR                                                LEXINGTON            SC      29072                                       USA
+```
+[p001_p0173]
+
+```text
+PRYSMIAN CABLES AND SYSTEMS USA LLC       4000174106                  CABLE,37 COND.,12AWG.,2000V., CODED,OKONITE 202-14-2337, CUSTOM CABLE 23511-2KV OR LIRR APPROVED EQU            Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       8/17/2022    8/17/2022                   Y                                     2/15/2023    68738.45       68738.45                            68738.45                           0.00                             5                                                                 Foreign                                               N                                                              N                                                                0                                                       N                                                                                                                                                                                                                700 INDUSTRIAL DR                                                LEXINGTON            SC      29072                                       USA
+```
+[p001_p0174]
+
+```text
+ULTIMATE POWER, INC.                      0000149398                  REQno.149398, Boiler Repair                                                                                     Open        Other                                            Authority Contract - Competitive Bid       9/1/2020     10/1/2020                   Y                                     9/30/2025    239500.00      30716.18                            188728.37                          50771.63                         1                                                                 NYS                                                   N                                                              Y                                                                0                                                       Y                                                                                         Below Dollar Threshold                                                                                                 45 NANCY STREET                                                  WEST BABYLON         NY      11704                                       USA
+```
+[p001_p0175]
+
+```text
+NATIONAL RAILROAD PASSENGER CORP          005155-AN510-MOU12.16.22    LIRR West End Portal Security                                                                                   Open        Design and Construction/Maintenance              Authority Contract - Non-Competitive Bid   3/15/2023    3/15/2023                   Y                                     4/30/2024    3165337.92     616537.98                           616537.98                          2548799.94                       0                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Cntrct Assign. from Agency    3165337.92                                                                               PO BOX 1140 DEPT A                                               MEMPHIS              TN      38101                                       USA
+```
+[p001_p0176]
+
+```text
+NATIONAL RAILROAD PASSENGER CORP          005155-AN511                Amtrak Support for the Replacement of the PSNY Solari Signs                                                     Open        Design and Construction/Maintenance              Authority Contract - Non-Competitive Bid   6/1/2021     6/1/2021                    Y                                     4/1/2023     235310.00      94725.54                            102407.89                          132902.11                        1                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Inter-agency Agreement        235310.00                                                                                PO BOX 1140 DEPT A                                               MEMPHIS              TN      38101                                       USA
+```
+[p001_p0177]
+
+```text
+NATIONAL RAILROAD PASSENGER CORP          005155-AN514                Radio Expansion                                                                                                 Open        Other                                            Authority Contract - Non-Competitive Bid   7/7/2022     7/7/2022                    Y                                     3/1/2025     324310.00      6191.34                             6191.34                            318118.66                        0                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Cntrct Assign. from Agency    324310.00                                                                                PO BOX 1140 DEPT A                                               MEMPHIS              TN      38101                                       USA
+```
+[p001_p0178]
+
+```text
+NATIONAL RAILROAD PASSENGER CORP          005155-AN515                Amtrak Flood Mitigation                                                                                         Open        Other                                            Non Contract Procurement/Purchase Order                                                                                                               18556.87                                                                                                                                                                  Foreign                                               N                                                                                                                                                                                                                                                                                                                                                                                                        PO BOX 1140 DEPT A                                               MEMPHIS              TN      38101                                       USA
+```
+[p001_p0179]
+
+```text
+NATIONAL RAILROAD PASSENGER CORP          005155-AN516-SOGR2023       Amtrak Penn Station 2023 SOGR                                                                                   Open        Consulting Services                              Authority Contract - Non-Competitive Bid   5/23/2023    5/23/2023                   Y                                     9/30/2024    16967118.00    4241779.50                          4241779.50                         12725338.50                      0                                                                 Foreign                                               N                                                              N                                                                0                                                       Y                                                                                         Cntrct Assign. from Agency    16967118.00                                                                              PO BOX 1140 DEPT A                                               MEMPHIS              TN      38101                                       USA
+```
+[p001_p0180]
+
+```text
+NATIONAL RAILROAD PASSENGER CORP          005155-AN517-SOGR2024       Amtrak Penn Station 2024 SOGR                                                                                   Open        Consulting Services                              Authority Contract - Non-Competitive
+```
+
+## Page 2
+
+[p002_c0001] A blank sheet of graph paper featuring a uniform grid of small squares. The grid is composed of thin, light gray lines on a white background. The paper is oriented horizontally and contains no text, markings, or other content.
+[p002_p0001]
+
+```text
+JRCRUZ CORP                                400000000002764           Three Year Contract Foe Equipment Rental with Operator                                                   Open        Consulting Services                              Authority Contract - Competitive Bid       10/26/2022   10/27/2022   Y   10/26/2025   8041049.00    526668.50     526668.50     7514380.50    1    Foreign   N   N   0    N                                              33 WEST MAIN STREET                                                                    HOLMDEL            NJ   07733                 USA
+```
+[p002_p0002]
+
+```text
+GABRIELLI TRUCK SALES LTD                  400000000002766           Purchase of Two 2 Hi-Rail Bu                                                                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/27/2022   10/27/2022   Y   1/28/2024    997648.00     0.00          0.00          997648.00     1    NYS       N   N   0    N                                              153-20 SOUTH CONDUIT AVENUE                                                            JAMAICA            NY   11434                 USA
+```
+[p002_p0003]
+
+```text
+DIEHL AND SONS, INC.                       400000000002769           Purchase of Two 2 HiRail The                                                                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       11/1/2022    11/1/2022    Y   11/1/2024    599916.00     0.00          0.00          599916.00     3    NYS       N   N   0    N                                              DBA N.Y. FREIGHTLINER                                     129-01 ATLANTIC AVE.         RICHMOND HILL,     NY   11418                 USA
+```
+[p002_p0004]
+
+```text
+WISE COMPONENTS, INC.                      400000000002779           Cable Markers                                                                                            Open        Commodities/Supplies                             Authority Contract - Competitive Bid       1/24/2023    11/16/2022   Y   11/15/2024   103510.30     228.40        228.40        103281.90     4    Foreign   N   Y   1    Y   Below Dollar Threshold                     79 HARBOR VIEW AVE.                                                                    STAMFORD           CT   06902                 USA
+```
+[p002_p0005]
+
+```text
+WABTEC COMPONENTS LLC /G AND B SPECIALTI   400000000002788           Signal material                                                                                          Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/7/2022    12/7/2022    Y   12/6/2024    90482.05      6533.00       6533.00       83949.05      2    Foreign   N   Y   0    Y   Below Dollar Threshold                     DBA G AND B SPECIALTIES                                   P. O. BOX 305                BERWICK            PA   18603                 USA
+```
+[p002_p0006]
+
+```text
+POWER RESOURCES INTERNATIONAL, INC.        400000000002804           Motor Generator Replacement at                                                                           Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       1/3/2023     12/29/2022   Y   10/18/2023   1769242.00    0.00          0.00          1769242.00    2    NYS       Y   Y   1    N                                              31 NANCY ST                                                                            WEST BABYLON       NY   11704                 USA
+```
+[p002_p0007]
+
+```text
+MCCULLOCH RAIL                             400000000002806           Purchase of Two 2 Rubber Tra                                                                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       1/3/2023     1/3/2023     Y   2/20/2023    376870.00     376870.00     376870.00     0.00          1    Foreign   N   N   0    N                                              CRAIGIEMAINS, MAIN ST                                     BALLANTRAE, AYRSHIRE         UNITED KINGDOM          KA260NB               OTHER   GBR
+```
+[p002_p0008]
+
+```text
+EBENEZER RAILCAR SERVICES INC              400000000002812           Purchase of Twelve 12 Gondol                                                                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       1/18/2023    1/18/2023    Y   11/30/2023   2199600.00    0.00          0.00          2199600.00    1    NYS       N   N   0    N                                              1005 INDIAN CHURCH RD                                                                  WEST SENECA        NY   14224                 USA
+```
+[p002_p0009]
+
+```text
+ECODRIVE II LLC D/B/A SUNRISE CHEVROLET    400000000002814           Hi Rail Chevrolet Silverado 3500 Pickup Truck per Specification no.113C-ESA.                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/6/2023     1/12/2023    Y   8/28/2024    99240.34      0.00          0.00          99240.34      2    NYS       N   N   0    N                                              105-20 GERARD PL                                                                       FOREST HILLS       NY   11375                 USA
+```
+[p002_p0010]
+
+```text
+CR QUALITY SERVICES,INC.                   400000000002823           Factory Inspection Services                                                                              Open        Consulting Services                              Authority Contract - Competitive Bid       1/1/2023     1/1/2023     Y   12/31/2027   1600000.00    83137.97      83137.97      1516862.03    2    Foreign   N   N   0    N                                              PO BOX 10684                                                                           MERRILLVILLE       IN   46411                 USA
+```
+[p002_p0011]
+
+```text
+EBENEZER RAILCAR SERVICES INC              400000000002825           Purchase of 20 Remote Controll                                                                           Open        Commodities/Supplies                             Authority Contract - Competitive Bid       2/9/2023     2/28/2023    Y   9/10/2024    5550000.00    0.00          0.00          5550000.00    1    NYS       N   N   0    N                                              1005 INDIAN CHURCH RD                                                                  WEST SENECA        NY   14224                 USA
+```
+[p002_p0012]
+
+```text
+PLASSER AMERICAN CORP                      400000000002827           5-Year Contract for Spare Parts, Technical Assistance, Training and Repair of Plasser components         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       1/17/2023    1/1/2023     Y   12/31/2027   9353000.00    616746.74     616746.74     8736253.26    1    Foreign   N   N   0    Y   Sole Source                                POST OFFICE BOX 5464                                                                   CHESAPEAKE         VA   23324                 USA
+```
+[p002_p0013]
+
+```text
+UNITED RENTALS (NORTH AMERICA), INC.       400000000002836           Quarterly Inspection Preventative Maintenance 9 RTV’s x 1 Year x 4 Inspections per Year equal 36 Insp    Open        Consulting Services                              Authority Contract - Competitive Bid       3/6/2023     3/6/2023     Y   3/6/2024     67000.00      26117.69      26117.69      40882.31      1    Foreign   N   N   0    Y   Below Dollar Threshold                     100 FIRST STAMFORD PL                                     STE 700                      STAMFORD           CT   06902                 USA
+```
+[p002_p0014]
+
+```text
+RISA MANAGEMENT CORP.                      400000000002838           Purchase of Railings for LIRR                                                                            Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/10/2023    3/10/2023    Y   7/14/2023    131704.26     0.00          0.00          131704.26     2    NYS       Y   Y   2    N                                              55-01 43RD ST                                             3RD FL                       MASPETH            NY   11378     2023        USA
+```
+[p002_p0015]
+
+```text
+ROMAN STONE CONSTRUCTION CO.               400000000002840           Precast Concrete Lagging Panel                                                                           Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/13/2023    3/13/2023    Y   7/31/2023    41125.00      0.00          0.00          41125.00      2    NYS       N   Y   1    N                                              COMPANY                                                   S. 4TH ST. AND CORBIN AVE.   BAY SHORE          NY   11706                 USA
+```
+[p002_p0016]
+
+```text
+CLEARWAY INDUSTRIES LLC                    400000000002845           Vegetation Management Services                                                                           Open        Other                                            Authority Contract - Competitive Bid       4/1/2023     3/28/2023    Y   6/30/2024    7813020.00    3564128.00    3564128.00    4248892.00    5    NYS       Y   Y   1    N                                              2 STAGE RD                                                                             PINE ISLAND        NY   10969                 USA
+```
+[p002_p0017]
+
+```text
+POWER RESOURCES INTERNATIONAL, INC.        400000000002847           PLC based control cabinet to control traction power and Third rail heater contactor boxes                Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/22/2023    3/22/2023    Y   7/22/2023    204000.00     204000.00     204000.00     0.00          1    NYS       Y   Y   1    N                                              31 NANCY ST                                                                            WEST BABYLON       NY   11704                 USA
+```
+[p002_p0018]
+
+```text
+ELM TRANSIT MIX CORP                       400000000002848           3-Year Blanket Contract for Re                                                                           Open        Consulting Services                              Authority Contract - Competitive Bid       3/27/2023    3/28/2023    Y   3/28/2026    856897.50     46401.00      46401.00      810496.50     1    NYS       N   N   0    N                                              482 GRAND BLVD                                                                         WESTBURY           NY   11590                 USA
+```
+[p002_p0019]
+
+```text
+SPERLING RAILWAY SERVICES, INC             400000000002850           Purchase of Three Rail Carts                                                                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/31/2023    4/4/2023     Y   2/4/2024     352000.00     0.00          0.00          352000.00     1    Foreign   N   N   0    N                                              4313 SOUTHWAY ST. SW                                                                   CANTON             OH   44706                 USA
+```
+[p002_p0020]
+
+```text
+COLUMBIA EQUIPMENT COMPANY INC             400000000002855           Furnish, Deliver and Install T                                                                           Open        Commodities/Supplies                             Authority Contract - Competitive Bid       4/4/2023     4/4/2023     Y   6/20/2023    437404.00     145431.15     145431.15     291972.85     2    NYS       Y   Y   1    N                                              72 ALBANY AVE                                                                          FREEPORT           NY   11520                 USA
+```
+[p002_p0021]
+
+```text
+CRANE INSPECTION AND CERTIFICATION LLC     400000000002860           Mobile Crane Operator Refreshe                                                                           Open        Other Professional Services                      Authority Contract - Non-Competitive Bid   4/11/2023    4/6/2023     Y   7/1/2023     30200.00      30200.00      30200.00      0.00          1    Foreign   N   N   0    Y   Below Dollar Threshold       30200.00      11112 BOGGY CROOK RD                                                                   ORLANDO            FL   32824                 USA
+```
+[p002_p0022]
+
+```text
+NABSON INC                                 4000178075                HEAD ASSY. KIT,36 PIN, FOR THE BLACK MU JUMPER CABLE ASSY., NABSON 33003300 C-3, DE-DM30AC               Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       11/21/2022   11/21/2022   Y   12/1/2022    18400.00      18400.00      18400.00      0.00          1    Foreign   N   N   0    Y   Below Dollar Threshold                     480 NEPONSET ST                                           UNNIT 10C                    CANTON             MA   02021                 USA
+```
+[p002_p0023]
+
+```text
+TRANSIT SOURCING SERVICES INC (TSS INC)    400000000002864           4445629 Wheel 32 Inch req 200060                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       4/14/2023    4/14/2023    Y   5/31/2024    111720.00     0.00          0.00          111720.00     1    Foreign   N   N   0    Y   Below Dollar Threshold                     1279 THERNS FERRY DR                                                                   FORT MILL          SC   29708                 USA
+```
+[p002_p0024]
+
+```text
+DIEHL AND SONS, INC.                       400000000002866           Purchase of three 3 Hi Rail                                                                              Open        Commodities/Supplies                             Authority Contract - Competitive Bid       4/17/2023    4/17/2023    Y   4/6/2025     961692.00     0.00          0.00          961692.00     3    NYS       N   N   0    N                                              DBA N.Y. FREIGHTLINER                                     129-01 ATLANTIC AVE.         RICHMOND HILL,     NY   11418                 USA
+```
+[p002_p0025]
+
+```text
+JAMAICA HARDWARE AND PAINTS INC            400000000002868           Kerosene Discretionary RFQ                                                                               Open        Commodities/Supplies                             Authority Contract - Competitive Bid       4/20/2023    4/20/2023    Y   10/20/2023   41820.00      41820.00      41820.00      0.00          2    NYS       Y   Y   1    Y   Discretionary Procurement                  131-01 JAMAICA AVE                                                                     RICHMOND HILL      NY   11418                 USA
+```
+[p002_p0026]
+
+```text
+WISE COMPONENTS, INC.                      400000000002873           Purchase of Various Cable Wire                                                                           Open        Commodities/Supplies                             Authority Contract - Competitive Bid       4/20/2023    4/24/2023    Y   4/23/2024    170000.00     42500.15      42500.15      127499.85     3    Foreign   N   Y   0    N                                              79 HARBOR VIEW AVE.                                                                    STAMFORD           CT   06902                 USA
+```
+[p002_p0027]
+
+```text
+DIEHL AND SONS, INC.                       400000000002877           Purchase of one 1 Hi Rail Ca                                                                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       4/27/2023    4/27/2023    Y   8/6/2026     482353.00     0.00          0.00          482353.00     3    NYS       N   N   0    N                                              DBA N.Y. FREIGHTLINER                                     129-01 ATLANTIC AVE.         RICHMOND HILL,     NY   11418                 USA
+```
+[p002_p0028]
+
+```text
+EMPIRE CONSULTING LLC                      4000188310                Mobile Drug and Alcohol Testing - Empire - June 2023                                                     Completed   Other                                            Authority Contract - Non-Competitive Bid   7/27/2023    7/27/2023    Y   7/27/2023    18480.00      18480.00      18480.00      0.00          0    Foreign   N   N   0    Y   Emergency or Critical Need   18480.00      328 MOUNTAIN RD                                                                        WILTON             CT   06897                 USA
+```
+[p002_p0029]
+
+```text
+CASSONE LEASING, INC.                      400000000002886           Port Jefferson Trailer Purchas                                                                           Open        Commodities/Supplies                             Authority Contract - Competitive Bid       5/10/2023    5/10/2023    Y   8/30/2023    16232.00      16232.00      16232.00      0.00          2    NYS       Y   Y   1    N                                              1900 LAKELAND AVE                                                                      RONKONKOMA         NY   11779                 USA
+```
+[p002_p0030]
+
+```text
+LODUCA ASSOCIATES INC.                     400000000002887           Canopy Roof for Ronkonkoma Pla                                                                           Open        Commodities/Supplies                             Authority Contract - Competitive Bid       5/15/2023    5/11/2023    Y   10/31/2023   1298725.00    0.00          0.00          1298725.00    2    NYS       N   Y   1    N                                              113 DIVISION AVE                                                                       BLUE POINT         NY   11715                 USA
+```
+[p002_p0031]
+
+```text
+CONSTRUCCIONES Y AUXILIAR DE FERROCARRIL   400000000002889           7028529 Wheel 44Inch Dia. req 20                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       5/12/2023    5/12/2023    Y   5/31/2024    178130.00     0.00          0.00          178130.00     2    Foreign   N   N   0    Y   Below Dollar Threshold                     ORTEGA Y GASSET                                                                        MADRID                  28006            M    OTHER   ESP
+```
+[p002_p0032]
+
+```text
+MCVAC ENVIRONMENTAL SERVICES INC           400000000002890           Hi Rail-Vac Excavation Service                                                                           Open        Other                                            Authority Contract - Competitive Bid       5/22/2023    5/24/2023    Y   5/23/2024    755300.00     0.00          0.00          755300.00     2    Foreign   N   Y   0    N                                              481 GRAND AVE                                                                          NEW HAVEN          CT   06513                 USA
+```
+[p002_p0033]
+
+```text
+CONSTRUCTION TOOL WAREHOUSE                400000000002891           3-Year Contract for Lifting Eq                                                                           Open        Commodities/Supplies                             Authority Contract - Competitive Bid       5/16/2023    5/16/2023    Y   5/16/2026    119337.00     16800.68      16800.68      102536.32     1    NYS       N   N   0    N                                              1 TOMSON RD, #100                                                                      SAUGERTIES         NY   12477                 USA
+```
+[p002_p0034]
+
+```text
+HARSCO METRO RAIL LLC                      400000000002892           Track Laying Machine AND Tie Rac                                                                         Open        Other                                            Authority Contract - Competitive Bid       1/1/2023     1/1/2023     Y   12/31/2024   2785863.00    2255256.00    2255256.00    530607.00     2    Foreign   N   N   0    N                                              2401 EDMUND HWY                                                                        WEST COLUMBIA      SC   29170                 USA
+```
+[p002_p0035]
+
+```text
+DIEHL AND SONS, INC.                       400000000002893           Purchase of one 1 Digger Der                                                                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       6/12/2023    6/12/2023    Y   9/24/2026    455392.00     0.00          0.00          455392.00     3    NYS       N   N   0    N                                              DBA N.Y. FREIGHTLINER                                     129-01 ATLANTIC AVE.         RICHMOND HILL,     NY   11418                 USA
+```
+[p002_p0036]
+
+```text
+CIRCUIT BREAKER SALES NE LLC               400000000002894           Diagnosis and Repair of Three                                                                            Open        Commodities/Supplies                             Authority Contract - Competitive Bid       5/23/2023    5/23/2023    Y   12/23/2023   50820.00      50820.00      50820.00      0.00          1    Foreign   N   Y   0    N                                              79 MAIN STREET                                                                         SEYMOUR            CT   06483                 USA
+```
+[p002_p0037]
+
+```text
+MILLER ENVIRONMENTAL GROUP INC             400000000002897MILLER     IFB- Environmental services                                                                              Open        Other                                            Authority Contract - Competitive Bid       9/14/2023    9/14/2023    Y   9/13/2028    2887715.00    0.00          0.00          2887715.00    5    NYS       N   Y   1    N                                              538 EDWARDS AVENUE                                                                     CALVERTON          NY   11933     1636        USA
+```
+[p002_p0038]
+
+```text
+TRANSIT SOURCING SERVICES INC (TSS INC)    400000000002903           36 IN WHEEL C-3 REQ 203416                                                                               Open        Commodities/Supplies                             Authority Contract - Competitive Bid       6/6/2023     6/6/2023     Y   7/1/2024     116800.00     0.00          0.00          116800.00     2    Foreign   N   N   0    Y   Below Dollar Threshold                     1279 THERNS FERRY DR                                                                   FORT MILL          SC   29708                 USA
+```
+[p002_p0039]
+
+```text
+RISA MANAGEMENT CORP.                      400000000002905           Purchase of Staircase and Rail                                                                           Open        Commodities/Supplies                             Authority Contract - Competitive Bid       6/8/2023     6/8/2023     Y   8/18/2023    234217.00     0.00          0.00          234217.00     4    NYS       Y   Y   4    N                                              55-01 43RD ST                                             3RD FL                       MASPETH            NY   11378     2023        USA
+```
+[p002_p0040]
+
+```text
+FRONTIER INDUSTRIAL CORP                   400000000002906           Decommissioning of Obsolete Eq                                                                           Open        Other                                            Authority Contract - Competitive Bid       7/1/2023     7/1/2023     Y   6/30/2028    3199300.00    0.00          0.00          3199300.00    2    NYS       N   N   0    N                                              26 MISSISSIPPI ST                                         SUITE 400                    BUFFALO            NY   14203                 USA
+```
+[p002_p0041]
+
+```text
+CALUMET ARMATURE AND ELECTRIC LLC          400000000002917           QPL Bid for Calumet Repair AND R                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       6/27/2023    6/27/2023    Y   6/26/2026    964500.00     0.00          0.00          964500.00     1    Foreign   N   N   0    N                                              1050 W 134TH ST                                                                        RIVERDALE          IL   60827                 USA
+```
+[p002_p0042]
+
+```text
+SELCO MANUFACTURING CORP.                  400000000002918           Guardrails, Handrails AND Stairs                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       9/19/2023    9/20/2023    Y   3/4/2024     1531702.97    0.00          0.00          1531702.97    6    Foreign   N   Y   0    N                                              3 FAIRFIELD CRESCENT                                                                   W CALDWELL         NJ   07006                 USA
+```
+[p002_p0043]
+
+```text
+LHV PRECAST INC.                           400000000002919           Purchase of Four 4 Concrete                                                                              Open        Commodities/Supplies                             Authority Contract - Competitive Bid       6/28/2023    6/28/2023    Y   4/30/2024    846548.00     0.00          0.00          846548.00     2    NYS       N   N   0    N                                              540 ULSTER LANDING RD                                                                  KINGSTON           NY   12401                 USA
+```
+[p002_p0044]
+
+```text
+ENSCO RAIL INC                             400000000002929           Purchase of One 1 Track Geom                                                                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       7/21/2023    7/19/2023    Y   1/19/2026    15495200.00   0.00          0.00          15495200.00   2    Foreign   N   N   0    N                                              5400 PORT ROYAL ROAD                                                                   SPRINGFIELD        VA   22151                 USA
+```
+[p002_p0045]
+
+```text
+SELCO MANUFACTURING CORP.                  400000000002930           Design, Fabricate and Deliver                                                                            Open        Commodities/Supplies                             Authority Contract - Competitive Bid       7/7/2023     7/7/2023     Y   10/17/2023   270684.00     0.00          0.00          270684.00     2    Foreign   N   N   1    N                                              3 FAIRFIELD CRESCENT                                                                   W CALDWELL         NJ   07006                 USA
+```
+[p002_p0046]
+
+```text
+HOFFMAN INTERNATIONAL, INC                 400000000002931           IFBno.429355 Diesel Powered Mobi                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       7/7/2023     7/6/2023     Y   4/1/2024     2114670.00    0.00          0.00          2114670.00    2    Foreign   N   N   0    N                                              300 S RANDOLPHVILLE RD                                                                 PISCATAWAY         NJ   08854                 USA
+```
+[p002_p0047]
+
+```text
+CASSONE LEASING, INC.                      400000000002932           Southhampton Locker Bathroom T                                                                           Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       6/29/2023    7/7/2023     Y   12/31/2023   79256.00      0.00          0.00          79256.00      1    NYS       Y   Y   1    Y   Stock/QPL All vnd/Mnf/Aut                  1900 LAKELAND AVE                                                                      RONKONKOMA         NY   11779                 USA
+```
+[p002_p0048]
+
+```text
+BRIDGE BROTHERS INC                        400000000002933           Purchase of a Pedestrian Overp                                                                           Open        Commodities/Supplies                             Authority Contract - Competitive Bid       7/7/2023     7/7/2023     Y   6/10/2024    1783517.00    0.00          0.00          1783517.00    2    Foreign   N   N   0    N                                              57 OLD IVY SQUARE NE                                                                   ATLANTA            GA   30342                 USA
+```
+[p002_p0049]
+
+```text
+CONSTRUCCIONES Y AUXILIAR DE FERROCARRIL   400000000002943           36 IN WHEELS REQ 203406                                                                                  Open        Commodities/Supplies                             Authority Contract - Competitive Bid       7/19/2023    7/19/2023    Y   7/1/2024     1175720.00    0.00          0.00          1175720.00    1    Foreign   N   N   0    Y   Below Dollar Threshold                     ORTEGA Y GASSET                                                                        MADRID                  28006            M    OTHER   ESP
+```
+[p002_p0050]
+
+```text
+LORAM TECHNOLOGIES INC                     400000000002946           Bridge Monitoring Service for                                                                            Open        Consulting Services                              Authority Contract - Non-Competitive Bid   7/31/2023    7/21/2023    Y   8/3/2026     269784.00     14988.00      14988.00      254796.00     1    Foreign   N   N   0    N                                269784.00     111 COOPERATIVE WAY                                       STE 400                      GEORGETOWN         TX   78626                 USA
+```
+[p002_p0051]
+
+```text
+CEMBRE, INC.                               400000000002947           Purchase of Various Rail Conne                                                                           Open        Commodities/Supplies                             Authority Contract - Competitive Bid       8/2/2023     8/2/2023     Y   8/1/2026     601074.72     41996.06      41996.06      559078.66     1    Foreign   N   Y   0    N                                              181 FIELDCREST AVE                                                                     EDISON             NJ   08837     3911        USA
+```
+[p002_p0052]
+
+```text
+JAMAICA HARDWARE AND PAINTS INC            400000000002954           Hydraulic Dump Trailer, Vendor BigTow Towmaster Modelno. B-7HD, as per LIRR Specifications               Open        Commodities/Supplies                             Authority Contract - Competitive Bid       8/3/2023     8/3/2023     Y   9/4/2023     37560.00      37560.00      37560.00      0.00          2    NYS       Y   Y   1    Y   Below Dollar Threshold                     131-01 JAMAICA AVE                                                                     RICHMOND HILL      NY   11418                 USA
+```
+[p002_p0053]
+
+```text
+BAY CRANE SERVICE OF NEW YORK INC          400000000002958           3-Year Contract for Crane Rent                                                                           Open        Consulting Services                              Authority Contract - Competitive Bid       8/11/2023    8/17/2023    Y   8/17/2026    2400000.00    0.00          0.00          2400000.00    2    NYS       N   N   0    N                                              11-02 43RD AVE.                                                                        LONG ISLAND CITY   NY   11101                 USA
+```
+[p002_p0054]
+
+```text
+TWINCO MFG. CO., INC.                      4000192541                CASE,SWITCH HEATER, ELECTRIC, 240V AC POWER, PER LIRR SPEC. SWH-1 240AC REVISION DATE 6 8 2021.          Open        Commodities/Supplies                             Authority Contract - Competitive Bid       11/10/2023   11/10/2023   Y   4/8/2024     18995.00      0.00          0.00          18995.00      1    NYS       N   Y   0    Y   Below Dollar Threshold                     30 COMMERCE DRIVE                                                                      HAUPPAUGE          NY   11788                 USA
+```
+[p002_p0055]
+
+```text
+CREATING DESIGNS AND FABRICATION, INC.     400000000002965           IFB Deicer Storage Box 2 Years                                                                           Open        Commodities/Supplies                             Authority Contract - Competitive Bid       8/21/2023    8/21/2023    Y   8/21/2025    99680.00      17088.00      17088.00      82592.00      1    NYS       N   Y   0    Y   Below Dollar Threshold                     1630-4 OCEAN AVE                                                                       BOHEMIA            NY   11716                 USA
+```
+[p002_p0056]
+
+```text
+TWINCO MFG. CO., INC.                      4000192543                CASE,SWITCH HEATER, ELECTRIC, 240V AC POWER, PER LIRR SPEC. SWH-1 240AC REVISION DATE 6 8 2021.          Open        Commodities/Supplies                             Authority Contract - Competitive Bid       11/10/2023   11/10/2023   Y   4/8/2024     18995.00      0.00          0.00          18995.00      1    NYS       N   Y   0    Y   Below Dollar Threshold                     30 COMMERCE DRIVE                                                                      HAUPPAUGE          NY   11788                 USA
+```
+[p002_p0057]
+
+```text
+RAILROAD FRICTION PRODUCTS CORP            400000000002977           SHOE, BRAKE, TREAD BRAKE UNIT, 14 INCH, RAILROAD FRICTION PRODUCT COBRA V-728 C3 **STD.PKG. 164 P        Open        Commodities/Supplies                             Authority Contract - Competitive Bid       9/8/2023     9/8/2023     Y   4/23/2024    128721.96     6774.84       6774.84       121947.12     1    Foreign   N   N   0    Y   Stock/QPL All vnd/Mnf/Aut                  P O BOX 1349                                                                           LAURINBURG         NC   28353                 USA
+```
+[p002_p0058]
+
+```text
+TRANSIT SOURCING SERVICES INC (TSS INC)    400000000002982           WHEEL,36Inch, PER LIRR DWGS. S-4624C AND L-4623B AND LIRR SPEC LIS-480-M17 C-3 *WHEELS MUST BE STACKE    Open        Commodities/Supplies                             Authority Contract - Competitive Bid       9/18/2023    9/18/2023    Y   7/1/2024     172320.00     0.00          0.00          172320.00     2    Foreign   N   N   0    Y   Below Dollar Threshold                     1279 THERNS FERRY DR                                                                   FORT MILL          SC   29708                 USA
+```
+[p002_p0059]
+
+```text
+CASSONE LEASING, INC.                      400000000002986           Trailer Purchase for Fresh Pon                                                                           Open        Commodities/Supplies                             Authority Contract - Competitive Bid       9/20/2023    9/20/2023    Y   3/1/2024     74258.00      0.00          0.00          74258.00      2    NYS       Y   Y   2    Y   Discretionary Procurement                  1900 LAKELAND AVE                                                                      RONKONKOMA         NY   11779                 USA
+```
+[p002_p0060]
+
+```text
+WARDJET LLC                                400000000002989           IFBno.432612 Water Jet Cutting S                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       9/25/2023    9/22/2023    Y   3/29/2024    244870.00     0.00          0.00          244870.00     1    Foreign   N   N   0    N                                              180 South Ave                                                                          Tallmadge          OH   44278                 USA
+```
+[p002_p0061]
+
+```text
+ENGINEERED PLASTICS INC.                   400000000002995           3-Year Contract-Tactile Strips                                                                           Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/3/2023    10/12/2023   Y   10/12/2026   1014948.00    0.00          0.00          1014948.00    3    NYS       N   N   0    N                                              300 INTERNATIONAL DRIVE SUITE 100                                                      WILLIAMSVILLE      NY   14221                 USA
+```
+[p002_p0062]
+
+```text
+ICICLE QUALITY SERVICE INC                 400000000002997           Preventive Maintenance and Rep                                                                           Open        Other Professional Services                      Authority Contract - Competitive Bid       10/6/2023    9/15/2023    Y   9/14/2026    151810.21     0.00          0.00          151810.21     2    NYS       N   Y   0    N                                              980 BROADWAY, STE 305                                                                  THORNWOOD          NY   10594                 USA
+```
+[p002_p0063]
+
+```text
+UNITED REFRIGERATION INC                   400000000003000           COMPRESSOR, R-407C ONLY, COMPRESSOR ASSY., CARRIER INTERNATIONAL 06DG3288D03221, ALBATROS 652A076        Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/12/2023   10/12/2023   Y   7/1/2024     458652.00     0.00          0.00          458652.00     4    Foreign   N   N   0    Y   Below Dollar Threshold                     282 HUDSON STREET                                                                      HACKENSACK         NJ   07601     6750        USA
+```
+[p002_p0064]
+
+```text
+MARMON IEI - EAST GRANBY                   400000000003006           CABLE, 3 C WITH SHIELD, MULTI-CONDUCTOR, 4 0 AWG 2000V 125 DEG C., ROCKBESTOS SURPR.CABLE TD-006053      Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/18/2023   10/18/2023   Y   4/17/2024    159433.20     0.00          0.00          159433.20     3    Foreign   N   N   0    Y   Below Dollar Threshold                     MARMON INDUSTRIAL ENERGY AND INFRASTRUCTURE - EAST GRAN   20 BRADLEY PARK RD           EAST GRANBY        CT   06026                 USA
+```
+[p002_p0065]
+
+```text
+ROMAN STONE CONSTRUCTION CO.               400000000003023           CONCRETE LAGGING PANELS FOR BE                                                                           Open        Commodities/Supplies                             Authority Contract - Competitive Bid       11/20/2023   11/14/2023   Y   1/31/2024    132000.00     0.00          0.00          132000.00     1    NYS       N   Y   0    N                                              COMPANY                                                   S. 4TH ST. AND CORBIN AVE.   BAY SHORE          NY   11706                 USA
+```
+[p002_p0066]
+
+```text
+HAFCO FOUNDRY AND MACHINE CO., INC.        400000000003027           ICE SCRAPER, CONTACT SHOE, WITH MACHINED GROOVES, PER LIRR DWG. S-5056 AND S-4952B, M3, M7, M9 THIS      Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   11/16/2023   11/16/2023   Y   4/15/2024    271800.00     0.00          0.00          271800.00     1    Foreign   N   N   0    Y   Stock/QPL All vnd/Mnf/Aut    271800.00     301 GREENWOOD AVENUE                                                                   MIDLAND PARK       NJ   07432                 USA
+```
+[p002_p0067]
+
+```text
+HAFCO FOUNDRY AND MACHINE CO., INC.        400000000003028           SHOE, CONTACT, THIRD RAIL, PER LIRR DWG S-4952 - LATEST REVISION; ***ALL SHIPPING CRTS CTNS NOT TO B     Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   11/16/2023   11/15/2023   Y   4/16/2024    1385500.00    0.00          0.00          1385500.00    1    Foreign   N   N   0    Y   Stock/QPL All vnd/Mnf/Aut    1385500.00    301 GREENWOOD AVENUE                                                                   MIDLAND PARK       NJ   07432                 USA
+```
+[p002_p0068]
+
+```text
+TRANSIT SOURCING SERVICES INC (TSS INC)    400000000003034           WHEEL, 44Inch DIA.                                                                                       Open        Commodities/Supplies                             Authority Contract - Competitive Bid       11/27/2023   11/27/2023   Y   5/1/2025     236672.00     0.00          0.00          236672.00     2    Foreign   N   N   0    Y   Below Dollar Threshold                     1279 THERNS FERRY DR                                                                   FORT MILL          SC   29708                 USA
+```
+[p002_p0069]
+
+```text
+TRANSIT SOURCING SERVICES INC (TSS INC)    400000000003035           6501229-Axle                                                                                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       11/28/2023   11/28/2023   Y   5/1/2025     131252.00     0.00          0.00          131252.00     1    Foreign   N   N   0    Y   Below Dollar Threshold                     1279 THERNS FERRY DR                                                                   FORT MILL          SC   29708                 USA
+```
+[p002_p0070]
+
+```text
+RISA MANAGEMENT CORP.                      400000000003036           Purchase of Aluminum Stairs an                                                                           Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/4/2023    12/4/2023    Y   4/4/2024     209088.00     0.00          0.00          209088.00     4    NYS       Y   Y   1    N                                              55-01 43RD ST                                             3RD FL                       MASPETH            NY   11378     2023        USA
+```
+[p002_p0071]
+
+```text
+ANCHOR BRAKE SHOE COMPANY, LLC             400000000003039           B8584 - SINTERED BRAKE SHOE                                                                              Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/7/2023    12/7/2023    Y   6/11/2024    241825.00     0.00          0.00          241825.00     1    Foreign   N   N   0    Y   Below Dollar Threshold                     1920 DOWNS DRIVE                                                                       WEST CHICAGO       IL   60185                 USA
+```
+[p002_p0072]
+
+```text
+ROBINSON'S INDUSTRIAL GAS AND EQUIPMENT    400000000003043           3 Year Contract for Welding SuppliesEventno.388901 - Reqno.186095 via Reqno.162513- Replaces no.4 2655   Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/12/2023   12/13/2023   Y   4/18/2025    437565.10     0.00          0.00          437565.10     1    NYS       N   N   0    N                                              920-14 LINCOLN AVE.                                                                    HOLBROOK           NY   11741                 USA
+```
+[p002_p0073]
+
+```text
+PRYSMIAN CABLES AND SYSTEMS USA LLC        400000000003051           QPL 1 Year Cable Blanket                                                                                 Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/5/2023    12/5/2023    Y   12/4/2024    4008947.17    0.00          0.00          4008947.17    2    Foreign   N   N   0    Y   Stock/QPL All vnd/Mnf/Aut                  700 INDUSTRIAL DR                                                                      LEXINGTON          SC   29072                 USA
+```
+[p002_p0074]
+
+```text
+PRYSMIAN GROUP SPECIALTY CABLES LLC        400000000003052           QPL 1 Year Cable Blanket                                                                                 Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/21/2023   12/5/2023    Y   12/4/2024    469448.10     0.00          0.00          469448.10     2    Foreign   N   N   0    Y   Stock/QPL All vnd/Mnf/Aut                  4 TESSENEER DR                                                                         HIGHLAND HEIGHTS   KY   41076                 USA
+```
+[p002_p0075]
+
+```text
+CIRCLE JANITORIAL SUPPLIES INC             400000000003079           Stock De-Icer Winter 2024                                                                                Open        Commodities/Supplies                             Authority Contract - Competitive Bid       11/9/2023    11/8/2023    Y   6/30/2024    1161300.00    106176.00     106176.00     1055124.00    2    Foreign   Y   Y   1    N                                              5 E 12TH ST                                                                            PATERSON           NJ   07524                 USA
+```
+[p002_p0076]
+
+```text
+HITACHI RAIL STS USA INC                   40000000001409            250 Hz                                                                                                   Open        Other                                            Authority Contract - Non-Competitive Bid   4/27/2017    4/26/2017    Y   4/21/2022    6466009.73    67120.58      5596141.60    869868.13     1    Foreign   N   N   0    N                                10979029.00   P.O. BOX 7780-1513                                                                     PHILADELPHIA       PA   19182                 USA
+```
+[p002_p0077]
+
+```text
+AB OIL SERVICE LTD                         40006287-A                Haz AND Non-Haz Waste Removal                                                                            Open        Other                                            Authority Contract - Competitive Bid       3/26/2018    3/26/2018    Y   9/30/2024    2439065.94    313942.17     2438374.02    691.92        4    NYS       N   N   0    N                                              DBA AB ENVIRONMENT                                        1599 OCEAN AVE               BOHEMIA            NY   11716                 USA
+```
+[p002_p0078]
+
+```text
+AB OIL SERVICE LTD                         40006287-A-COVID          COVID expenditures                                                                                       Open        Other                                            Authority Contract - Competitive Bid       3/26/2018    3/13/2020    Y   3/31/2023    785000.00     4990.06       774513.23     10486.77      4    NYS       N   N   0    N                                              DBA AB ENVIRONMENT                                        1599 OCEAN AVE               BOHEMIA            NY   11716                 USA
+```
+[p002_p0079]
+
+```text
+MILLER ENVIRONMENTAL GROUP INC             40006287-A-MEG            Haz AND Non-Haz Waste Removal                                                                            Open        Other                                            Authority Contract - Competitive Bid       10/1/2023    10/1/2023    Y   9/30/2024    1060934.06    3932.95       3932.95       1057001.11    4    NYS       N   N   0    N                                              538 EDWARDS AVENUE                                                                     CALVERTON          NY   11933     1636        USA
+```
+[p002_p0080]
+
+```text
+ISLAND PUMP AND TANK LLC                   40006287-B                Haz AND Non-Haz Waste Removal                                                                            Open        Other                                            Authority Contract - Competitive Bid       3/26/2018    3/26/2018    Y   9/30/2024    1500000.00    118498.69     772424.81     727575.19     2    NYS       N   N   0    N                                              40 DOYLE COURT                                                                         EAST NORTHPORT     NY   11731                 USA
+```
+[p002_p0081]
+
+```text
+CLEAR RIVER ENVIRONMENTAL SERVICE CORP     40006292-R                Cesspool AND Sewer Services                                                                              Open        Other                                            Authority Contract - Competitive Bid       12/14/2018   4/15/2019    Y   4/30/2025    1744451.60    235807.75     1067022.53    677429.07     3    NYS       N   Y   0    N                                              847 11TH ST                                                                            RONKONKOMA         NY   11779                 USA
+```
+[p002_p0082]
+
+```text
+ATLAS ROLL-OFF CORP.                       40006339-ATLAS            On-Call Container Service                                                                                Open        Consulting Services                              Authority Contract - Competitive Bid       7/1/2019     6/5/2019     Y   6/30/2024    5668545.00    916010.00     3801030.00    1867515.00    6    NYS       N   N   0    N                                              895 ESSEX ST                                                                           BROOKLYN           NY   11208                 USA
+```
+[p002_p0083]
+
+```text
+NATIONAL WASTE SERVICES LLC                40006339-NAT-ON           On- Call Container Removal                                                                               Open        Consulting Services                              Authority Contract - Competitive Bid       7/1/2019     6/6/2019     Y   6/30/2024    2753780.00    498700.00     2282880.00    470900.00     6    NYS       N   N   0    N                                              1 JEM COURT                                                                            BAY SHORE          NY   11706                 USA
+```
+[p002_p0084]
+
+```text
+NATIONAL WASTE SERVICES LLC                40006339-NAT-SCH          Scheduled Rubbish Removal                                                                                Open        Consulting Services                              Authority Contract - Competitive Bid       7/1/2019     6/13/2019    Y   6/30/2024    1958776.24    345001.60     1612746.34    346029.90     6    NYS       N   Y   0    N                                              1 JEM COURT                                                                            BAY SHORE          NY   11706                 USA
+```
+[p002_p0085]
+
+```text
+ROYAL WASTE SERVICES, INC.                 40006339-ROYAL            Scheduled Rubbish Removal                                                                                Open        Consulting Services                              Authority Contract - Competitive Bid       7/1/2019     6/5/2019     Y   6/30/2024    6626387.69    1221786.10    5502585.28    1123802.41    6    NYS       N   Y   0    N                                              187-40 HOLLIS AVENUE                                                                   HOLLIS             NY   11423                 USA
+```
+[p002_p0086]
+
+```text
+PRIORITY EXTERMINATING AND ODOR            40006349-LIRR             Bird Control Services                                                                                    Open        Other                                            Authority Contract - Competitive Bid       10/9/2019    10/9/2019    Y   10/31/2024   1025000.00    133711.10     592834.02     432165.98     4    NYS       N   N   0    N                                              CONTROL INC                                               DBA BYE- BYE- BIRDIE         FRANKLIN SQUARE    NY   11010                 USA
+```
+[p002_p0087]
+
+```text
+HITACHI RAIL STS USA INC                   6013-A2                   Harold AND Point CILs                                                                                    Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       3/3/2008     11/6/2019    Y   12/31/2020   505297.08     161593.63     488429.43     16867.65      2    Foreign   N   N   0    N                                              P.O. BOX 7780-1513                                                                     PHILADELPHIA       PA   19182                 USA
+```
+[p002_p0088]
+
+```text
+HENNINGSON, DURHAM AND RICHARDSON          6052A-01-13-A             Design for four bridges, CPS                                                                             Open        Consulting Services                              Authority Contract - Competitive Bid       3/23/2015    3/23/2015    Y   11/30/2020   2173744.87    261.56        2158538.87    15206.00      4    NYS       N   N   0    N                                              500 SEVENTH AVE                                           15TH FLOOR                   NEW YORK           NY   10018                 USA
+```
+[p002_p0089]
+
+```text
+AECOM USA, INC.                            6052A-02-01-E             Hicksville Station AND Track                                                                             Open        Consulting Services                              Authority Contract - Competitive Bid       7/8/2013     7/8/2013     Y   1/6/2021     5960764.75    0.00          5946234.76    14529.99      6    NYS       N   N   0    N                                              605 THIRD AVENUE                                          30TH FLOOR                   NEW YORK           NY   10158                 USA
+```
+[p002_p0090]
+
+```text
+AECOM USA, INC.                            6052A-02-01-G             3rd Party Design Station Impr.                                                                           Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       6/1/2015     5/19/2015    Y   6/30/2020    879201.17     0.00          879201.17     0.00          7    NYS       N   Y   2    N                                              605 THIRD AVENUE                                          30TH FLOOR                   NEW YORK           NY   10158                 USA
+```
+[p002_p0091]
+
+```text
+GANNETT FLEMING ENGINEERS AND              6052A-02-15-C             LIC YARD DESIGN                                                                                          Open        Consulting Services                              Authority Contract - Competitive Bid       8/1/2014     8/1/2014     Y   12/31/2020   2993022.00    0.00          2856418.56    136603.44     3    NYS       N   N   0    N                                              ARCHITECTS, PC                                            ONE PENN PLAZA               NEW YORK           NY   10119                 USA
+```
+[p002_p0092]
+
+```text
+URS CORP                                   6052A-03-13-A             Penn Station SS Design                                                                                   Open        Consulting Services                              Authority Contract - Competitive Bid       3/4/2015     3/4/2015     Y   8/31/2024    2164689.55    0.00          1838116.84    326572.71     5    NYS       N   N   0    N                                              ALISA OTTENI, SENIOR PROJ. MGR                            646 PLANK RD. SUITE 202      CLIFTON PARK       NY   12065                 USA
+```
+[p002_p0093]
+
+```text
+LOUIS T. KLAUDER AND ASSOCIATES            6052B-06-03-A             M-9 M9A Consultant Support                                                                               Open        Consulting Services                              Authority Contract - Competitive Bid       6/1/2014     6/1/2014     Y   12/31/2025   57075804.00   3831123.65    54861651.62   2214152.38    1    Foreign   N   N   0    N                                              100 W BUTLER AVE                                                                       AMBLER             PA   19002                 USA
+```
+[p002_p0094]
+
+```text
+LOUIS T. KLAUDER AND ASSOCIATES            6052B-06-03-A-OPERATING   Consultant Services Bill Rhea                                                                            Open        Consulting Services                              Authority Contract - Competitive Bid       6/1/2014     1/24/2020    Y   12/31/2023   359312.00     2467.70       358096.54     1215.46       1    Foreign   N   N   0    N                                              100 W BUTLER AVE                                                                       AMBLER             PA   19002                 USA
+```
+[p002_p0095]
+
+```text
+LIRO ENGINEERS, INC.                       6052C-01-10-B             Modno.5-Cost Estimator                                                                                   Completed   Consulting Services                              Authority Contract - Competitive Bid       7/7/2014     7/1/2014     Y   8/31/2016    1177642.00    5996.58       1152947.06    24694.94      14   NYS       N   N   0    N                                              235 EAST JERICHO TPKE                                                                  MINEOLA            NY   11501                 USA
+```
+[p002_p0096]
+
+```text
+HENNINGSON, DURHAM AND RICHARDSON          6168A-01-15-A             Design for Three Bridges, CPS                                                                            Open        Consulting Services                              Authority Contract - Competitive Bid       11/30/2017   11/30/2017   Y   12/31/2024   2978418.27    257413.19     2065667.42    912750.85     3    NYS       N   N   0    N                                              500 SEVENTH AVE                                           15TH FLOOR                   NEW YORK           NY   10018                 USA
+```
+[p002_p0097]
+
+```text
+STV INC                                    6168A-01-45-A             Flood Barriers for WSY AND ERT P                                                                         Open        Consulting Services                              Authority Contract - Competitive Bid       11/14/2016   11/14/2016   Y   6/1/2019     2560318.84    344811.63     1841477.39    718841.45     2    NYS       N   N   0    N                                              225 PARK AVE SOUTH                                                                     NEW YORK           NY   10003                 USA
+```
+[p002_p0098]
+
+```text
+AECOM USA, INC.                            6168A-02-01-B             MODno.15 Additional Design North                                                                         Open        Consulting Services                              Authority Contract - Competitive Bid       7/20/2016    7/20/2016    Y   1/31/2024    6197452.58    168931.41     5889100.72    308351.86     2    NYS       N   Y   3    Y   Ride/Piggyback of MTA Ags                  605 THIRD AVENUE                                          30TH FLOOR                   NEW YORK           NY   10158                 USA
+```
+[p002_p0099]
+
+```text
+JACOBS CIVIL CONSULTANTS, INC.             6168A-02-23-C             Penn Station Platform Level                                                                              Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       6/14/2017    6/14/2017    Y   9/30/2023    3345298.85    177911.06     3055660.57    289638.28     4    NYS       N   N   0    Y   Below Dollar Threshold                     ONE PENN PLAZA, 24TH FL, STE 2400                                                      NEW YORK           NY   10119                 USA
+```
+[p002_p0100]
+
+```text
+STV INC                                    6168A-02-38-A             The New LIRR Mets Willets Poin                                                                           Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       3/29/2016    3/22/2016    Y   12/28/2022   10047244.66   253465.24     9272266.38    774978.28     4    NYS       N   Y   12   N                                              225 PARK AVE SOUTH                                                                     NEW YORK           NY   10003                 USA
+```
+[p002_p0101]
+
+```text
+WSP USA INC                                6168A-02-45-A-1           CPS Ronkonkoma Parking Garage                                                                            Open        Consulting Services                              Authority Contract - Competitive Bid       4/13/2020    4/13/2020    Y   12/31/2022   282638.58     12657.12      175566.56     107072.02     1    NYS       N   N   0    N                                              ONE PENN PLAZA, 4TH FL                                                                 NEW YORK           NY   10119                 USA
+```
+[p002_p0102]
+
+```text
+GANNETT FLEMING ENGINEERS AND              6168A-04-04-A             Queens Interlocking AND Signal                                                                           Open        Consulting Services                              Authority Contract - Competitive Bid       11/18/2019   11/18/2019   Y   1/1/2023     7086006.65    534464.23     4723386.65    2362620.00    3    NYS       N   Y   0    N                                              ARCHITECTS, PC                                            ONE PENN PLAZA               NEW YORK           NY   10119                 USA
+```
+[p002_p0103]
+
+```text
+HNTB NEW YORK ENGINEERING                  6168A-04-07-A             3rd Party Design JCI Phase II                                                                            Open        Consulting Services                              Authority Contract - Competitive Bid       12/19/2017   12/19/2017   Y   8/20/2021    58314468.72   3634465.50    52336872.44   5977596.28    2    NYS       N   Y   0    N                                              E PC                                                      FIVE PENN PLAZA              NEW YORK           NY   10001                 USA
+```
+[p002_p0104]
+
+```text
+HNTB NEW YORK ENGINEERING                  6168A-04-07-A-1           Task U Van Wyck Support                                                                                  Open        Consulting Services                              Authority Contract - Competitive Bid       4/7/2020     4/7/2020     Y   4/7/2023     10952227.11   2302605.37    6634695.72    4317531.39    1    NYS       N   N   0    N                                              E PC                                                      FIVE PENN PLAZA              NEW YORK           NY   10001                 USA
+```
+[p002_p0105]
+
+```text
+AECOM USA, INC.                            6168A-05-01-D             JCI P2 Signal Design Checker                                                                             Open        Consulting Services                              Authority Contract - Competitive Bid       10/17/2018   10/17/2018   Y   12/31/2021   7116444.15    387701.78     5760965.91    1355478.24    1    NYS       N   Y   0    N                                              605 THIRD AVENUE                                          30TH FLOOR                   NEW YORK           NY   10158                 USA
+```
+[p002_p0106]
+
+```text
+PARSONS TRANSPORTATION GROUP OF NY         6168A-05-09-A             JCC Signal Migration Strategy                                                                            Open        Consulting Services                              Authority Contract - Competitive Bid       11/6/2017    11/6/2017    Y   6/1/2024     1607139.99    0.00          1315225.86    291914.13     3    NYS       N   N   0    N                                              100 BROADWAY                                              20TH FLOOR                   NEW YORK           NY   10005                 USA
+```
+[p002_p0107]
+
+```text
+STV INC                                    6168A-06-06-A             Work Locomotive Remanufacture Specification Development                                                  Open        Consulting Services                              Authority Contract - Competitive Bid       10/23/2015   10/23/2015   Y   12/31/2023   522678.68     68504.26      415054.69     107623.99     3    NYS       N   N   0    N                                              225 PARK AVE SOUTH                                                                     NEW YORK           NY   10003                 USA
+```
+[p002_p0108]
+
+```text
+STV INC                                    6168A-06-06-B             Consulting Services for LEDLs                                                                            Open        Consulting Services                              Authority Contract - Competitive Bid       10/12/2017   11/29/2017   Y   12/31/2023   2681350.00    0.00          4627.30       2676722.70    3    NYS       N   Y   0    N                                              225 PARK AVE SOUTH                                                                     NEW YORK           NY   10003                 USA
+```
+[p002_p0109]
+
+```text
+TRC ENGINEERS INC                          6168A-09-32-A             SSPP review AND audit                                                                                    Open        Consulting Services                              Authority Contract - Competitive Bid       5/23/2018    5/21/2018    Y   12/30/2022   992766.03     55717.86      587960.00     404806.03     3    Foreign   N   Y   0    N                                              P O BOX 8500 53878                                                                     PHILADELPHIA       PA   19178     3878        USA
+```
+[p002_p0110]
+
+```text
+TRC ENGINEERS INC                          6168A-09-32-B             On-Call Environ Svcs - Regulat                                                                           Open        Consulting Services                              Authority Contract - Competitive Bid       2/6/2019     3/1/2019     Y   5/7/2024     1442576.09    114013.90     576817.33     865758.76     6    Foreign   N   Y   1    N                                              P O BOX 8500 53878                                                                     PHILADELPHIA       PA   19178     3878        USA
+```
+[p002_p0111]
+
+```text
+PARSONS TRANSPORTATION GROUP OF NY         6168A-2-33                GEC SBMP Design Const                                                                                    Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       7/23/2020    2/20/2018    Y   6/30/2024    3289988.57    266375.52     1828272.20    1461716.37    4    NYS       N   N   0    N                                              100 BROADWAY                                              20TH FLOOR                   NEW YORK           NY   10005                 USA
+```
+[p002_p0112]
+
+```text
+PARSONS TRANSPORTATION GROUP OF NY         6168A-2-33-1              Mod No. 5 to GEC 6168A-2-33 [Design for Grade Crossings                                                  Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       12/23/2020   12/17/2020   Y   6/30/2024    625678.40     170224.65     533882.80     91795.60      1    NYS       N   N   0    N                                              100 BROADWAY                                              20TH FLOOR                   NEW YORK           NY   10005                 USA
+```
+[p002_p0113]
+
+```text
+A I ENGINEERS INC                          6168B-01-03-B             Resident Eng. Van Wyck Expan.                                                                            Open        Consulting Services                              Authority Contract - Competitive Bid       12/4/2019    12/3/2019    Y   12/3/2020    1766502.00    331174.66     1258458.45    508043.55     2    Foreign   Y   Y   1    Y   Inter-agency Agreement                     919 MIDDLE ST                                                                          MIDDLETOWN         CT   06457                 USA
+```
+[p002_p0114]
+
+```text
+JED ENGINEERING PC                         6168B-01-22-A             OE for JCI Phase II                                                                                      Open        Consulting Services                              Authority Contract - Competitive Bid       3/27/2018    3/27/2018    Y   4/10/2024    1145404.93    174505.77     962722.58     182682.35     23   NYS       Y   Y   1    N                                              65 ROOSEVELT AVE                                          SUITE 207                    VALLEY STREAM      NY   11581                 USA
+```
+[p002_p0115]
+
+```text
+LIRO ENGINEERS, INC.                       6168B-01-24-F             CM Inspection Svcs. Hudson Yar                                                                           Open        Consulting Services                              Authority Contract - Competitive Bid       8/3/2017     8/3/2017     Y   8/10/2023    5373814.50    305498.41     4429045.91    944768.59     9    NYS       N   N   0    Y   Below Dollar Threshold                     235 EAST JERICHO TPKE                                                                  MINEOLA            NY   11501                 USA
+```
+[p002_p0116]
+
+```text
+TECTONIC ENGINEERING CONSULTANTS,          6168B-01-41-B             Two Resident Engineers                                                                                   Open        Consulting Services                              Authority Contract - Competitive Bid       7/15/2019    7/15/2019    Y   12/31/2023   1223092.69    22539.73      1070876.56    152216.13     12   NYS       N   Y   0    N                                              ANTS PC                                                   70 PLEASANT HILL RD          MOUNTAINVILLE      NY   10953                 USA
+```
+[p002_p0117]
+
+```text
+A I ENGINEERS INC                          6168B-02-02-B             CM Svcs. Office Eng. Western                                                                             Open        Consulting Services                              Authority Contract - Competitive Bid       2/8/2018     2/8/2018     Y   2/8/2020     3719954.93    392937.36     1736150.52    1983804.41    4    Foreign   Y   Y   1    Y   Below Dollar Threshold                     919 MIDDLE ST                                                                          MIDDLETOWN         CT   06457                 USA
+```
+[p002_p0118]
+
+```text
+LIRO ENGINEERS, INC.                       6168B-02-19-E             CM Svcs. Enhanced Station Init                                                                           Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       2/21/2018    2/21/2018    Y   7/31/2021    2988914.22    24439.44      2967001.32    21912.90      4    NYS       N   N   0    Y   Below Dollar Threshold                     235 EAST JERICHO TPKE                                                                  MINEOLA            NY   11501                 USA
+```
+[p002_p0119]
+
+```text
+LIRO ENGINEERS, INC.                       6168B-02-19-F             Morris Pk Loco Shop Construction - Construction Mgmnt Team                                               Open        Other Professional Services                      Authority Contract - Competitive Bid       4/16/2018    4/16/2018    Y   4/16/2020    2394802.48    23948.02      2394802.48    0.00          2    NYS       N   Y   0    N                                              235 EAST JERICHO TPKE                                                                  MINEOLA            NY   11501                 USA
+```
+[p002_p0120]
+
+```text
+SYSTRA ENGINEERING, INC.                   6168B-05-10-E             JCI Resident Engineer Signal                                                                             Open        Consulting Services                              Authority Contract - Competitive Bid       8/8/2019     8/8/2019     Y   9/24/2024    2243222.00    352558.13     1402034.01    841187.99     2    NYS       N   N   0    Y   Inter-agency Agreement                     520 EIGHTH AVE 21ST FLOOR                                                              NEW YORK           NY   10018                 USA
+```
+[p002_p0121]
+
+```text
+TRC ENGINEERS INC                          6168B-07-22-A             JTHA, RBA, and EA                                                                                        Open        Consulting Services                              Authority Contract - Competitive Bid       10/9/2019    10/8/2019    Y   10/23/2024   590724.07     114657.88     127934.75     462789.32     1    Foreign   N   Y   0    N                                              P O BOX 8500 53878                                                                     PHILADELPHIA       PA   19178     3878        USA
+```
+[p002_p0122]
+
+```text
+ARCADIS OF NEW YORK, INC.                  6168C-01-02-C             Project Controls Scheduler                                                                               Open        Consulting Services                              Authority Contract - Competitive Bid       4/12/2019    4/12/2019    Y   7/1/2021     452295.46     4522.98       452295.46     0.00          6    Foreign   N   N   1    N                                              630 PLAZA DR                                              SUITE 200                    HIGHLANDS RANCH    CO   80129     2379        USA
+```
+[p002_p0123]
+
+```text
+ATKINS PA                                  6168C-01-03-B             Scheduler, Jamaica Projects                                                                              Completed   Consulting Services                              Authority Contract - Competitive Bid       6/5/2018     6/5/2018     Y   7/31/2022    1841785.93    284107.96     1779989.09    61796.84      17   Foreign   N   N   0    N                                              4030 W BAY SCOUT BLVD 700                                                              TAMPA              FL   33607                 USA
+```
+[p002_p0124]
+
+```text
+M AND J ENGINEERING PC                     6168C-01-10-A             Project Controls Consultant                                                                              Open        Consulting Services                              Authority Contract - Competitive Bid       12/17/2015   12/17/2015   Y   9/16/2022    1243260.78    23064.23      1066406.36    176854.42     6    NYS       Y   Y   1    Y   Below Dollar Threshold                     ONE CROSS ISLAND PARKWAY                                  SUITE#213                    ROSEDALE           NY   11422                 USA
+```
+[p002_p0125]
+
+```text
+AECOM USA, INC.                            6168C-02-15-A             Cost Estimating Consultant                                                                               Open        Consulting Services                              Authority Contract - Competitive Bid       1/1/2019     1/2/2019     Y   1/3/2024     936870.67     0.00          643294.94     293575.73     5    NYS       N   Y   1    N                                              605 THIRD AVENUE                                          30TH FLOOR                   NEW YORK           NY   10158                 USA
+```
+[p002_p0126]
+
+```text
+TOSCANO CLEMENTS TAYLOR LLC                6168C-02-19-A             General Engineering Consultants - Cost Estimator                                                         Open        Consulting Services                              Authority Contract - Competitive Bid       12/24/2018   12/24/2018   Y   6/20/2024    1270880.97    232061.45     910987.49     359893.48     5    NYS       N   Y   1    N                                              16 OAKWOOD RD                                                                          HUNTINGTON         NY   11743                 USA
+```
+[p002_p0127]
+
+```text
+RAILROAD CONSTRUCTION COMPANY INC          6194-PJO-3                On-call Rapid Response                                                                                   Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       4/11/2022    4/11/2022    Y   4/14/2024    957472.40     0.00          0.00          957472.40     2    Foreign   N   N   0    Y   Inter-agency Agreement                     75 - 77 GROVE ST                                                                       PATERSON           NJ   07503                 USA
+```
+[p002_p0128]
+
+```text
+RAILROAD CONSTRUCTION COMPANY INC          6194-PJO-3-001            JOC Great Neck School Yard                                                                               Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       4/11/2023    4/11/2023    Y   7/1/2023     184961.42     184961.42     184961.42     0.00          1    Foreign   N   N   0    Y   Inter-agency Agreement                     75 - 77 GROVE ST                                                                       PATERSON           NJ   07503                 USA
+```
+[p002_p0129]
+
+```text
+RAILROAD CONSTRUCTION COMPANY INC          6194-PJO-3-002            JOC Cathedral Paving Cherry Va                                                                           Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       4/11/2023    11/1/2023    Y   5/31/2024    363295.92     0.00          0.00          363295.92     1    Foreign   N   N   0    Y   Inter-agency Agreement                     75 - 77 GROVE ST                                                                       PATERSON           NJ   07503                 USA
+```
+[p002_p0130]
+
+```text
+CLEAN HARBORS ENVIRONMENTAL SVS INC        6204R                     Non-Hazardous Waster Removal                                                                             Open        Consulting Services                              Authority Contract - Competitive Bid       1/1/2018     1/1/2018     Y   3/31/2023    1998315.00    90811.62      618462.17     1379852.83    6    Foreign   N   N   0    Y   Discretionary Procurement                  P.O. BOX 3442                                                                          BOSTON             MA   02241     3442        USA
+```
+[p002_p0131]
+
+```text
+MYERS CONTROLLED POWER LLC                 6228A                     Richmond Hill Substation                                                                                 Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       12/21/2017   12/21/2017   Y   11/11/2022   7068058.45    353402.93     7068058.45    0.00          1    Foreign   N   Y   0    N                                              219 E. MAPLE STREET                                       SUITE 100/200E               NORTH CANTON       OH   44720                 USA
+```
+[p002_p0132]
+
+```text
+HITACHI RAIL STS USA INC                   6256                      Provision of Maintenance Support for the LIRR Jamaica Signal Supervisory Office Control System           Completed   Technology - Consulting/Development or Support   Authority Contract - Competitive Bid       8/10/2017    8/10/2017    Y   2/2/2023     779625.00     0.00          779625.00     0.00          1    Foreign   N   N   0    N                                              P.O. BOX 7780-1513                                                                     PHILADELPHIA       PA   19182                 USA
+```
+[p002_p0133]
+
+```text
+HITACHI RAIL STS USA INC                   6283                      Babylon to Patchogue Signal                                                                              Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       5/20/2020    5/20/2020    Y   5/17/2025    26319065.00   12860481.16   18243095.63   8075969.37    2    Foreign   N   Y   0    N                                              P.O. BOX 7780-1513                                                                     PHILADELPHIA       PA   19182                 USA
+```
+[p002_p0134]
+
+```text
+HITACHI RAIL STS USA INC                   6288-0                    Design, Furnish AND Delivery of Wired Signal Instrument Huts for Beaver Johnson                          Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       1/2/2019     1/2/2019     Y   1/31/2020    5694518.25    938052.50     5694518.25    0.00          1    Foreign   N   N   0    N                                              P.O. BOX 7780-1513                                                                     PHILADELPHIA       PA   19182                 USA
+```
+[p002_p0135]
+
+```text
+AARCO ENVIRONMENTAL SERVICES CORP.         6302                      6302 Group D Substation Remedi                                                                           Open        Other Professional Services                      Authority Contract - Competitive Bid       6/4/2019     6/4/2019     Y   9/30/2022    555755.10     27787.75      555755.10     0.00          4    NYS       N   Y   0    N                                              50 GEAR AVE                                                                            LINDENHURST        NY   11757                 USA
+```
+[p002_p0136]
+
+```text
+MANDV CORPORATE TRANSPORTATION INC         6313-10S                  SCHEDULED BUS SERVICES                                                                                   Open        Other                                            Authority Contract - Competitive Bid       11/1/2018    10/25/2018   Y   3/31/2024    1450000.00    214277.50     1058040.00    391960.00     15   NYS       N   N   0    N                                              1117 JERICHO TURNPIKE                                                                  COMMACK            NY   11725                 USA
+```
+[p002_p0137]
+
+```text
+KNORR BRAKE COMPANY LLC                    4000179085                VALVE ASSEMBLY,AIR OPERATED PNEUMATIC TOILET 17870193-01 LEFT HAND,MONOGRAM IND. 55055-021 M1, M3        Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/16/2022   12/16/2022   Y   3/6/2023     19188.00      19188.00      19188.00      0.00          1    Foreign   N   N   0    Y   Below Dollar Threshold                     1 ARTHUR PECK DRIVE                                                                    WESTMINSTER        MD   21157                 USA
+```
+[p002_p0138]
+
+```text
+ACADEMY EXPRESS, LLC                       6313-1S                   SCHEDULED BUS SERVICES                                                                                   Open        Other                                            Authority Contract - Competitive Bid       11/1/2018    10/25/2018   Y   3/31/2024    3700000.00    17797.50      3611370.00    88630.00      15   Foreign   N   N   0    N                                              111 PATERSON AVENUE                                                                    HOBOKEN            NJ   07030                 USA
+```
+[p002_p0139]
+
+```text
+PRYSMIAN GROUP SPECIALTY CABLES LLC        4000178912                CABLE,2 COND.,6 AWG., 37 STRAND, STANDARD JACKET, PER LIRR SPEC CSI- TW-103 AND103A REV 1 3 25 02        Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/13/2022   12/13/2022   Y   7/25/2023    19312.00      0.00          0.00          19312.00      2    Foreign   N   N   0    Y   Below Dollar Threshold                     4 TESSENEER DR                                                                         HIGHLAND HEIGHTS   KY   41076                 USA
+```
+[p002_p0140]
+
+```text
+PRYSMIAN GROUP SPECIALTY CABLES LLC        4000178930                CABLE,2 COND.,6 AWG., 37 STRAND, STANDARD JACKET, PER LIRR SPEC CSI- TW-103 AND103A REV 1 3 25 02        Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/13/2022   12/13/2022   Y   7/25/2023    19312.00      0.00          0.00          19312.00      2    Foreign   N   N   0    Y   Below Dollar Threshold                     4 TESSENEER DR                                                                         HIGHLAND HEIGHTS   KY   41076                 USA
+```
+[p002_p0141]
+
+```text
+WHITE PLAINS BUS CO INC                    6313-5E                   EMERGENCY BUS SERVICES                                                                                   Open        Other                                            Authority Contract - Competitive Bid       11/1/2018    10/24/2018   Y   10/31/2023   298457.00     0.00          298456.00     1.00          15   NYS       N   N   0    N                                              14 FISHER LN                                              PO BOX 823C                  WHITE PLAINS       NY   10603                 USA
+```
+[p002_p0142]
+
+```text
+WHITE PLAINS BUS CO INC                    6313-5S                   SCHEDULED BUS SERVICES                                                                                   Open        Other                                            Authority Contract - Competitive Bid       11/1/2018    10/25/2018   Y   10/31/2023   855555.00     0.00          855554.00     1.00          15   NYS       N   N   0    N                                              14 FISHER LN                                              PO BOX 823C                  WHITE PLAINS       NY   10603                 USA
+```
+[p002_p0143]
+
+```text
+PRYSMIAN GROUP SPECIALTY CABLES LLC        4000178937                CABLE,2 COND.,6 AWG., 37 STRAND, STANDARD JACKET, PER LIRR SPEC CSI- TW-103 AND103A REV 1 3 25 02        Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/13/2022   12/13/2022   Y   7/25/2023    19312.00      0.00          0.00          19312.00      2    Foreign   N   N   0    Y   Below Dollar Threshold                     4 TESSENEER DR                                                                         HIGHLAND HEIGHTS   KY   41076                 USA
+```
+[p002_p0144]
+
+```text
+PRYSMIAN GROUP SPECIALTY CABLES LLC        4000178938                CABLE,2 COND.,6 AWG., 37 STRAND, STANDARD JACKET, PER LIRR SPEC CSI- TW-103 AND103A REV 1 3 25 02        Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/13/2022   12/13/2022   Y   7/25/2023    19312.00      0.00          0.00          19312.00      2    Foreign   N   N   0    Y   Below Dollar Threshold                     4 TESSENEER DR                                                                         HIGHLAND HEIGHTS   KY   41076                 USA
+```
+[p002_p0145]
+
+```text
+US BUS CHARTER AND LIMO                    6313-8E                   EMERGENCY BUS SERVICES                                                                                   Open        Other                                            Authority Contract - Competitive Bid       11/1/2018    10/25/2018   Y   10/31/2023   483225.66     0.00          482427.36     798.30        15   NYS       N   N   0    N                                              100 ST MARYS AVE                                                                       STATEN ISLAND      NY   10305                 USA
+```
+[p002_p0146]
+
+```text
+US BUS CHARTER AND LIMO                    6313-8S                   SCHEDULED BUS SERVICES                                                                                   Open        Other                                            Authority Contract - Competitive Bid       11/1/2018    10/24/2018   Y   10/31/2023   1484328.31    0.00          1484327.31    1.00          15   NYS       N   N   0    N                                              100 ST MARYS AVE                                                                       STATEN ISLAND      NY   10305                 USA
+```
+[p002_p0147]
+
+```text
+NSH USA CORPORATION                        4000192698                BEARING,OUTBOARD,WHEEL TRUING MACHINE,STANRAY 191-400 DP 7-91 PEMD                                       Open        Commodities/Supplies                             Authority Contract - Competitive Bid       11/16/2023   11/16/2023   Y   1/19/2024    19800.00      0.00          0.00          19800.00      1    NYS       N   N   0    Y   Below Dollar Threshold                     1700 NORTH BROADWAY                                                                    ALBANY             NY   12204                 USA
+```
+[p002_p0148]
+
+```text
+RED CARPET COACH LTD                       6313-9S                   SCHEDULED BUS SERVICES                                                                                   Open        Other                                            Authority Contract - Competitive Bid       11/1/2018    10/24/2018   Y   3/31/2024    5600000.00    2113017.36    5151466.86    448533.14     15   NYS       N   N   0    N                                              DBA RED CARPET LIMOUSINE                                  427 ROUTE 25A                ROCKY POINT        NY   11778                 USA
+```
+[p002_p0149]
+
+```text
+TRANSDEV SERVICES INC                      6316                      Supplemtal Agreement Transdev                                                                            Open        Other                                            Purchased Under State Contract                                                                      10169.97                                       NYS       N                                                           700 COMMERCIAL AVE                                                                     GARDEN CITY        NY   11530                 USA
+```
+[p002_p0150]
+
+```text
+TW CABLE LLC                               4000180302                FIBER, EXPRESS IU, MANAGEMENT PANEL, BLACK, EMPTY, AFL TELECOMMUNICATIONS FM002711-BE OR LIRR APPROV     Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       1/23/2023    1/23/2023    Y   2/27/2023    19800.00      19800.00      19800.00      0.00          4    NYS       N   N   0    Y   Below Dollar Threshold                     PO BOX 3259                                                                            FARMINGDALE        NY   11735                 USA
+```
+[p002_p0151]
+
+```text
+NAIK CONSULTING GROUP PC                   6340A-02-37-A1            Survey Services at KO Yard EIC                                                                           Open        Consulting Services                              Authority Contract - Competitive Bid       6/29/2021    6/29/2021    Y   9/30/2022    67155.56      45639.63      66453.05      702.51        1    Foreign   Y   Y   1    Y   Below Dollar Threshold                     200 METROPLEX DR, STE#403                                                              EDISON             NJ   08817                 USA
+```
+[p002_p0152]
+
+```text
+NAIK CONSULTING GROUP PC                   6340A-02-37-A10           Survey Services Smithtown Viad                                                                           Open        Consulting Services                              Authority Contract - Competitive Bid       6/20/2023    6/20/2023    Y   6/19/2024    40215.24      0.00          0.00          40215.24      1    Foreign   Y   Y   1    Y   Below Dollar Threshold                     200 METROPLEX DR, STE#403                                                              EDISON             NJ   08817                 USA
+```
+[p002_p0153]
+
+```text
+NAIK CONSULTING GROUP PC                   6340A-02-37-A2            Bolands Landin Survey                                                                                    Open        Other Professional Services                      Authority Contract - Competitive Bid       8/17/2021    8/17/2021    Y   1/31/2022    57064.22      11893.39      56493.57      570.65        1    Foreign   Y   Y   1    Y   Below Dollar Threshold                     200 METROPLEX DR, STE#403                                                              EDISON             NJ   08817                 USA
+```
+[p002_p0154]
+
+```text
+NAIK CONSULTING GROUP PC                   6340A-02-37-A3            Survey Services Dunton Ave.                                                                              Open        Consulting Services                              Authority Contract - Competitive Bid       8/25/2021    8/25/2021    Y   12/31/2021   27030.72      11893.39      26760.12      270.60        1    Foreign   Y   Y   1    Y   Below Dollar Threshold                     200 METROPLEX DR, STE#403                                                              EDISON             NJ   08817                 USA
+```
+[p002_p0155]
+
+```text
+NAIK CONSULTING GROUP PC                   6340A-02-37-A5            Survey Great Neck Pocket Track                                                                           Open        Other Professional Services                      Authority Contract - Competitive Bid       7/1/2022     7/1/2022     Y   12/31/2022   108271.80     107189.08     107189.08     1082.72       1    Foreign   Y   Y   1    Y   Below Dollar Threshold                     200 METROPLEX DR, STE#403                                                              EDISON             NJ   08817                 USA
+```
+[p002_p0156]
+
+```text
+NAIK CONSULTING GROUP PC                   6340A-02-37-A7            Survey Services Copiague Stair                                                                           Open        Other Professional Services                      Authority Contract - Competitive Bid       10/25/2022   11/29/2022   Y   11/28/2023   15467.40      9187.64       9187.64       6279.76       1    Foreign   Y   Y   1    Y   Below Dollar Threshold                     200 METROPLEX DR, STE#403                                                              EDISON             NJ   08817                 USA
+```
+[p002_p0157]
+
+```text
+NAIK CONSULTING GROUP PC                   6340A-02-37-A9            Survey Services Atlantic AND Law                                                                         Open        Other Professional Services                      Authority Contract - Competitive Bid       5/16/2023    5/16/2023    Y   5/15/2024    27841.32      27562.91      27562.91      278.41        1    Foreign   Y   Y   1    Y   Below Dollar Threshold                     200 METROPLEX DR, STE#403                                                              EDISON             NJ   08817                 USA
+```
+[p002_p0158]
+
+```text
+STV INC                                    6340A-02-48-A1            HSF Fire Water Main Design                                                                               Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       2/9/2022     2/9/2022     Y   3/31/2022    249523.00     25336.29      167657.80     81865.20      1    NYS       N   N   0    Y   Below Dollar Threshold                     225 PARK AVE SOUTH                                                                     NEW YORK           NY   10003                 USA
+```
+[p002_p0159]
+
+```text
+HNTB NEW YORK ENGINEERING                  6340A-05-07-A1            Signal Design Checker                                                                                    Open        Consulting Services                              Authority Contract - Competitive Bid       11/30/2020   11/30/2020   Y   11/29/2024   1316131.32    578655.00     1053328.19    262803.13     2    NYS       N   N   0    N                                              E PC                                                      FIVE PENN PLAZA              NEW YORK           NY   10001                 USA
+```
+[p002_p0160]
+
+```text
+HNTB NEW YORK ENGINEERING                  6340B-02-16-A             Assessment of On Track Safety                                                                            Open        Consulting Services                              Authority Contract - Non-Competitive Bid   4/11/2023    4/11/2023    Y   6/30/2023    268529.92     192744.13     192744.13     75785.79      1    NYS       N   N   0    Y   Emergency or Critical Need   268529.92     E PC                                                      FIVE PENN PLAZA              NEW YORK           NY   10001                 USA
+```
+[p002_p0161]
+
+```text
+LIRO ENGINEERS, INC.                       6340B-02-25-A             Liro VD Yard Resident Eng                                                                                Open        Consulting Services                              Authority Contract - Competitive Bid       11/2/2020    11/2/2020    Y   11/3/2023    1911632.41    170130.50     742500.20     1169132.21    13   NYS       N   Y   1    N                                              235 EAST JERICHO TPKE                                                                  MINEOLA            NY   11501                 USA
+```
+[p002_p0162]
+
+```text
+ARCADIS OF NEW YORK, INC.                  6340C-01-01-A             Project Controls Consultant                                                                              Open        Consulting Services                              Authority Contract - Competitive Bid       11/10/2023   11/10/2023   Y   11/11/2024   370847.91     0.00          0.00          370847.91     1    Foreign   N   Y   0    N                                              630 PLAZA DR                                              SUITE 200                    HIGHLANDS RANCH    CO   80129     2379        USA
+```
+[p002_p0163]
+
+```text
+WSP USA INC                                6340C-01-20-A             Scheduler Service Planning                                                                               Open        Consulting Services                              Authority Contract - Competitive Bid       12/29/2020   11/24/2020   Y   12/31/2024   423063.95     175.10        64435.91      358628.04     10   NYS       N   Y   1    Y   Inter-agency Agreement                     ONE PENN PLAZA, 4TH FL                                                                 NEW YORK           NY   10119                 USA
+```
+[p002_p0164]
+
+```text
+WSP USA INC                                6340C-01-20-B             Scheduler LIRR Service Plannin                                                                           Open        Consulting Services                              Authority Contract - Competitive Bid       12/29/2020   12/28/2020   Y   12/1/2023    369068.84     0.00          19827.24      349241.60     10   NYS       N   Y   1    Y   Inter-agency Agreement                     ONE PENN PLAZA, 4TH FL                                                                 NEW YORK           NY   10119                 USA
+```
+[p002_p0165]
+
+```text
+WSP USA INC                                6340C-01-20-C             Scheduler Svs Planning Dept.                                                                             Open        Consulting Services                              Authority Contract - Competitive Bid       12/29/2020   12/29/2020   Y   1/3/2024     663897.10     7948.89       43570.49      620326.61     10   NYS       N   Y   1    Y   Inter-agency Agreement                     ONE PENN PLAZA, 4TH FL                                                                 NEW YORK           NY   10119                 USA
+```
+[p002_p0166]
+
+```text
+OLDCASTLE PRECAST ENCL SOLUTIONS           4000184729                VAULT, 3660-48 CUBIS STAKKABOX ULTIMA CONNECT CHAMBER 1500x900x1200mm. *** INCLUDES 8 SIX INCH SE        Open        Commodities/Supplies                             Authority Contract - Competitive Bid       4/27/2023    4/27/2023    Y   8/3/2023     19900.00      0.00          0.00          19900.00      3    Foreign   N   Y   2    Y   Below Dollar Threshold                     2 INVERNESS ST                                                                         CANDIAC                 54554            QC   OTHER   CAN
+```
+[p002_p0167]
+
+```text
+TRC ENGINEERS INC                          6340C-11-03-A             System Safety Program Plan                                                                               Open        Consulting Services                              Authority Contract - Competitive Bid       1/1/2022     1/1/2023     Y   12/31/2025   689299.21     71389.46      71389.46      617909.75     1    Foreign   N   N   0    Y   Below Dollar Threshold                     P O BOX 8500 53878                                                                     PHILADELPHIA       PA   19178     3878        USA
+```
+[p002_p0168]
+
+```text
+NETWORK RAIL CONSULTING INC                6340C-12-12-A             Rail Activation Consultant                                                                               Open        Consulting Services                              Authority Contract - Competitive Bid       3/18/2022    3/21/2022    Y   3/31/2024    1784288.76    557981.25     1444884.29    339404.47     1    Foreign   N   N   0    Y   Below Dollar Threshold                     1001 CONNECTICUT AVE NW                                   STE 925                      WASHINGTON         DC   20036                 USA
+```
+[p002_p0169]
+
+```text
+AECOM USA, INC.                            6340C-13-01-A             Fire Protection Systems Assess                                                                           Open        Consulting Services                              Authority Contract - Competitive Bid       4/5/2023     4/5/2023     Y   1/31/2024    1127042.72    150763.63     150763.63     976279.09     1    NYS       N   N   0    Y   Inter-agency Agreement                     605 THIRD AVENUE                                          30TH FLOOR                   NEW YORK           NY   10158                 USA
+```
+[p002_p0170]
+
+```text
+T. MORIARTY AND SON, INC                   6355                      Ocean Avenue Substation Replac                                                                           Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       12/29/2020   12/29/2020   Y   6/7/2023     17443000.00   2330181.50    17443000.00   0.00          5    NYS       N   Y   0    N                                              63 CREAMER ST                                                                          BROOKLYN           NY   11231                 USA
+```
+[p002_p0171]
+
+```text
+POSILLICO CIVIL INC                        6356                      LIC Yard Construction 3B                                                                                 Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       12/13/2021   12/13/2021   Y   12/29/2023   38514829.14   16861738.41   23710537.09   14804292.05   11   NYS       N   Y   0    N                                              1750 NEW HIGHWAY                                                                       FARMINGDALE        NY   11735                 USA
+```
+[p002_p0172]
+
+```text
+LODUCA ASSOCIATES INC.                     6358                      LIRR to AirTrain Wayfinding                                                                              Completed   Design and Construction/Maintenance              Authority Contract - Competitive Bid       2/13/2020    2/13/2020    Y   6/16/2021    3631274.00    228810.51     3631274.00    0.00          2    NYS       N   Y   2    N                                              113 DIVISION AVE                                                                       BLUE POINT         NY   11715                 USA
+```
+[p002_p0173]
+
+```text
+POWER RESOURCES INTERNATIONAL, INC.        6359                      DB Hillside Babylon MGs                                                                                  Open        Consulting Services                              Authority Contract - Competitive Bid       12/15/2022   12/15/2022   Y   4/18/2025    13255285.31   2507998.92    2507998.92    10747286.39   5    NYS       Y   Y   1    N                                              31 NANCY ST                                                                            WEST BABYLON       NY   11704                 USA
+```
+[p002_p0174]
+
+```text
+EMPIRE STATE DEVELOPMENT                   6370                      Moynihan MTA LIRR Fit Out Cons                                                                           Open        Design and Construction/Maintenance              Authority Contract - Non-Competitive Bid   1/21/2020    1/21/2020    Y   12/31/2024   9827096.98    0.00          9767484.98    59612.00      1    NYS       N   N   0    Y   Below Dollar Threshold       9827096.98    633 THIRD AVE, 35TH FL                                    ATTN: TREASURY DEPT          NEW YORK           NY   10017                 USA
+```
+[p002_p0175]
+
+```text
+STRATEGIC PLANNING PARTNERS LLC            6376                      Two 2 SSI Consulatnts                                                                                    Open        Consulting Services                              Authority Contract - Competitive Bid       11/20/2020   12/1/2020    Y   11/30/2024   1878289.00    416957.16     1193847.04    684441.96     2    NYS       N   N   0    N                                              9 RONNY ST                                                                             EAST NORTHPORT     NY   11731                 USA
+```
+[p002_p0176]
+
+```text
+RAILWORKS TRANSIT LLC                      6378                      D B Babylon Interlocking                                                                                 Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       4/5/2022     4/5/2022     Y   5/23/2026    56714000.00   14008358.00   14008358.00   42705642.00   2    NYS       N   N   0    N                                              83 CENTRAL AVE                                                                         FARMINGDALE        NY   11735                 USA
+```
+[p002_p0177]
+
+```text
+MLJT                                       6382                      Hall Interlocking Expansion                                                                              Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       12/21/2022   12/21/2022   Y   12/21/2026   92371500.00   11413379.62   11413379.62   80958120.38   4    NYS       N   N   0    N                                              1010 NORTHERN BLVD                                        STE 200                      GREAT NECK         NY   11021                 USA
+```
+[p002_p0178]
+
+```text
+TRANSITAIR SYSTEMS LLC                     4000174906                COMPRSSOR ASSEMBLY, HVAC UNIT, TRANSITAIR 210-E001, CARRIER 06DM3138H33650LI OR LIRR APPROVED EQUAL      Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       9/8/2022     9/8/2022     Y   12/2/2022    19950.00      19950.00      19950.00      0.00          1    NYS       N   N   0    Y   Below Dollar Threshold                     1 WILLIAM K JACKSON LN                                                                 HORNELL            NY   14843                 USA
+```
+[p002_p0179]
+
+```text
+BLOOM CONSTRUCTION INC                     6385                      Franklin Ave Hatchway Repair                                                                             Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       8/3/2021     8/3/2021     Y   1/31/2023    2124096.00    545180.60     1954986.31    169109.69     6    NYS       Y   Y   1    N                                              269-20 UNION TURNPIKE                                                                  NEW HYDE PARK      NY   11040                 USA
+```
+[p002_p0180]
+
+```text
+FALCON BUILDER, INC.                       6387                      Huntington Station East Pedest                                                                           Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       11/18/2020   11/17/2020   Y   8/31/2022    3782837.49    442035.46     3781361.30    1476.19       7    NYS       N   Y   5    Y   Small Business Mentoring                   160 27TH. STREET                                                                       BROOKLYN           NY   11232                 USA
+```
+[p002_p0181]
+
+```text
+RESIDENTIAL FENCES CORP                    6388-003                  HSF Install 204th St. Queens                                                                             Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       2/7/2022     2/7/2022     Y   2/6/2023     30085.00      0.00          30085.00      0.00          1    NYS       N   N   0    Y   Below Dollar Threshold                     1775 ROUTE 25                                                                          RIDGE              NY   11961                 USA
+```
+[p002_p0182]
+
+```text
+RESIDENTIAL FENCES CORP                    6388-004                  NROW Easton S.                                                                                           Open        Other                                            Authority Contract - Competitive Bid       3/16/2022    3/16/2022    Y   3/16/2023    46595.00      46595.00      46595.00      0.00          1    NYS       N   N   0    Y   Below Dollar Threshold                     1775 ROUTE 25                                                                          RIDGE              NY   11961                 USA
+```
+[p002_p0183]
+
+```text
+RESIDENTIAL FENCES CORP                    6388-006                  HSF- Richmond Hill Substation                                                                            Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       4/13/2022    4/13/2022    Y   4/12/2023    24100.00      0.00          24100.00      0.00          1    NYS       N   N   0    Y   Below Dollar Threshold                     1775 ROUTE 25                                                                          RIDGE              NY   11961                 USA
+```
+[p002_p0184]
+
+```text
+RESIDENTIAL FENCES CORP                    6388-007                  HSF and Gate Install Arch St.                                                                            Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       4/27/2022    4/27/2022    Y   4/27/2023    249416.00     0.00          249416.00     0.00          1    NYS       N   N   0    Y   Below Dollar Threshold                     1775 ROUTE 25                                                                          RIDGE              NY   11961                 USA
+```
+[p002_p0185]
+
+```text
+RESIDENTIAL FENCES CORP                    6388-008                  HSF Installation WSY                                                                                     Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       4/27/2022    4/28/2022    Y   4/21/2023    37180.00      0.00          37180.00      0.00          1    NYS       N   N   0    Y   Below Dollar Threshold                     1775 ROUTE 25                                                                          RIDGE              NY   11961                 USA
+```
+[p002_p0186]
+
+```text
+RESIDENTIAL FENCES CORP                    6388-009                  HSF Queens Interlocking                                                                                  Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       6/16/2022    6/16/2022    Y   6/16/2023    339120.00     107815.00     107815.00     231305.00     1    NYS       N   N   0    Y   Below Dollar Threshold                     1775 ROUTE 25                                                                          RIDGE              NY   11961                 USA
+```
+[p002_p0187]
+
+```text
+RESIDENTIAL FENCES CORP                    6388-010                  HSF Installation Far Rockaway                                                                            Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       8/24/2022    8/24/2022    Y   8/23/2024    46500.00      44500.00      44500.00      2000.00       1    NYS       N   N   0    Y   Below Dollar Threshold                     1775 ROUTE 25                                                                          RIDGE              NY   11961                 USA
+```
+[p002_p0188]
+
+```text
+RESIDENTIAL FENCES CORP                    6388-011                  HSF Huntington Comm and Signal                                                                           Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       8/22/2022    8/22/2022    Y   8/21/2023    91090.00      91090.00      91090.00      0.00          1    NYS       N   N   0    Y   Below Dollar Threshold                     1775 ROUTE 25                                                                          RIDGE              NY   11961                 USA
+```
+[p002_p0189]
+
+```text
+RESIDENTIAL FENCES CORP                    6388-012                  HSF Install NROW SROW Hunting                                                                            Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       8/26/2022    9/7/2022     Y   9/8/2023     198348.00     198348.00     198348.00     0.00          1    NYS       N   N   0    Y   Below Dollar Threshold                     1775 ROUTE 25                                                                          RIDGE              NY   11961                 USA
+```
+[p002_p0190]
+
+```text
+RESIDENTIAL FENCES CORP                    6388-013                  HSF - Beaver Road Interlocking                                                                           Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       8/30/2022    8/30/2022    Y   8/29/2023    15984.00      15984.00      15984.00      0.00          1    NYS       N   N   0    Y   Below Dollar Threshold                     1775 ROUTE 25                                                                          RIDGE              NY   11961                 USA
+```
+[p002_p0191]
+
+```text
+RESIDENTIAL FENCES CORP                    6388-014                  HS Fence Install- Pine Aire Ya                                                                           Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       9/20/2022    9/20/2022    Y   9/19/2023    48308.00      48308.00      48308.00      0.00          1    NYS       N   N   0    Y   Below Dollar Threshold                     1775 ROUTE 25                                                                          RIDGE              NY   11961                 USA
+```
+[p002_p0192]
+
+```text
+RESIDENTIAL FENCES CORP                    6388-015                  HSFAND Gates E.93rd and 94th Str                                                                         Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       12/5/2022    12/15/2022   Y   12/14/2023   36438.00      36438.00      36438.00      0.00          1    NYS       N   N   0    Y   Below Dollar Threshold                     1775 ROUTE 25                                                                          RIDGE              NY   11961                 USA
+```
+[p002_p0193]
+
+```text
+RESIDENTIAL FENCES CORP                    6388-016                  HSF - Mid Suffolk Yard                                                                                   Open        Design and Construction/Maintenance              Authority Contract - Co
+```
+
+## Page 3
+
+> [p003_c0001] A full-page sheet of graph paper. The grid consists of small, uniform squares. The lines are thin and light gray, set against a white background. The grid extends across the entire visible area of the page.
+
+## Page 4
+
+> [p004_c0001] A blank sheet of graph paper. The background is a light gray color. Overlaid on this background is a grid of thin, dark gray lines. The grid consists of horizontal and vertical lines that intersect to form a pattern of small, equal-sized squares. The lines are evenly spaced and extend across the entire visible area of the page. There are no margins, text, or other markings on the paper.
+
+## Page 5
+
+[p005_c0001] A blank sheet of graph paper. The paper has a light gray background with a uniform grid of thin black lines. The grid consists of approximately 30 columns and 50 rows of small squares. The lines are straight and evenly spaced, creating a consistent pattern across the entire page.
+[p005_p0001]
+
+```text
+RAY'S TRANSPORTATION INC                   4000193375              CROSSTIE, WOOD, PREPLATED, FOR 136RE, PER LIRR SPEC, CE-1 S2-SS11-3, PLATE, TIE, 136RE WITH 6Inch BASE,         Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/6/2023    12/6/2023    Y   2/7/2024     93011.50     0.00         0.00         93011.50     1    NYS       N   N   0   Y   Below Dollar Threshold                    42 ARGENIO DRIVE                                                                         NEW WINDSOR          NY   12553          USA
+```
+[p005_p0002]
+
+```text
+RAM INDUSTRIAL SERVICES LLC                4000093778              D77 Armature 36489VR- VPI, Steam and Bake, Electrical Testing                                                   Open        Commodities/Supplies                  Authority Contract - Non-Competitive Bid   12/9/2016    12/9/2016    Y   1/13/2017    24836.00     1774.00      23949.00     887.00       1    Foreign   N   N   0   Y   Sole Source                  24836.00     2850 APPLETON STREET                                      SUITE#D                        CAMP HILL            PA   17011          USA
+```
+[p005_p0003]
+
+```text
+SELCO MANUFACTURING CORP.                  4000163123              INSULATOR,THIRD RAIL, 6.18InchH FIBERGLASS, FOR COMPOSITE THIRD RAIL, PER LIRR DWG. ETD-20060 TYPE 1A R         Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       9/13/2021    9/13/2021    Y   5/16/2022    447000.00    158863.80    447000.00    0.00         5    Foreign   N   Y   0   N                                             3 FAIRFIELD CRESCENT                                                                     W CALDWELL           NJ   07006          USA
+```
+[p005_p0004]
+
+```text
+STELLA -JONES CORP                         4000181839              Fabricate and deliver Bridge timbers and Spacers per MTA Long Island Rail Road 58-O-187 East Rockawa            Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       2/27/2023    2/27/2023    Y   5/29/2023    34577.80     34577.80     34577.80     0.00         1    Foreign   N   Y   0   Y   Below Dollar Threshold                    P.O. BOX 1496                                                                            TACOMA               WA   98401   1496   USA
+```
+[p005_p0005]
+
+```text
+TILCON CONNECTICUT, INC.                   4000167597              BALLAST, TRAP ROCK OR GRANITE, HOPPER DELIVERY,PER CURRENT MW-2000 PART III AND IN ACCORDANCE WITH C            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       1/27/2022    1/27/2022    Y   1/31/2025    8544000.00   668223.40    1826197.43   6717802.57   1    Foreign   N   Y   0   N                                             P O BOX 1357                                                                             NEW BRITAIN          CT   06050   1357   USA
+```
+[p005_p0006]
+
+```text
+TRANS TECH / TRANSTECH OF S CAROLINA INC   4000171195              RAIL, CONTACT THIRD RAIL, ALUMINUM W STAINLESS STEEL CAP, PER LIRR SPEC. ETD-20270 REV 2 DATED 12 28            Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       5/16/2022    5/16/2022    Y   12/5/2022    1233752.13   1233752.13   1233752.13   0.00         1    Foreign   N   N   0   Y   Stock/QPL All vnd/Mnf/Aut                 709 AUGUSTA ARBOR WAY                                                                    PIEDMONT             SC   29673          USA
+```
+[p005_p0007]
+
+```text
+TRANS TECH / TRANSTECH OF S CAROLINA INC   4000178730              RAIL, CONTACT THIRD RAIL, ALUMINUM W STAINLESS STEEL CAP, PER LIRR SPEC. ETD-20270 REV 2 DATED 12 28            Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       12/8/2022    12/8/2022    Y   6/8/2023     1135975.23   1135975.23   1135975.23   0.00         1    Foreign   N   N   0   N                                             709 AUGUSTA ARBOR WAY                                                                    PIEDMONT             SC   29673          USA
+```
+[p005_p0008]
+
+```text
+VOESTALPINE RAILWAY SYSTEMS NORTRAK LLC    4000160457              DERAIL, NO 10 LH SPLIT RAIL, ON 136RE RAIL WITH 136TW SWITCH POINT AND WOOD TIES AS PER CE-1 DRAWING            Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       6/15/2021    6/15/2021    Y   4/11/2022    103921.00    103921.00    103921.00    0.00         2    Foreign   N   Y   0   Y   Below Dollar Threshold                    3930 VALLEY E INDUSTRIAL DRIVE                                                           BIRMINGHAM           AL   35217          USA
+```
+[p005_p0009]
+
+```text
+VOESTALPINE RAILWAY SYSTEMS NORTRAK LLC    4000161966              TURNOUT no.15 136RE WELDED BOLTLESS MANGENESE WBM FROGS AS PER MW-2000 GEOMETRY, WITH 136-TW THICK W            Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       8/4/2021     8/4/2021     Y   3/31/2023    1758385.00   1758385.00   1758385.00   0.00         2    Foreign   N   Y   0   N                                             3930 VALLEY E INDUSTRIAL DRIVE                                                           BIRMINGHAM           AL   35217          USA
+```
+[p005_p0010]
+
+```text
+VOESTALPINE RAILWAY SYSTEMS NORTRAK LLC    4000162677              TURNOUT SWITCH AND STOCK RAIL PACKAGE BAYSIDE NO. 20RH TANGENTIAL 136 RE AND ZU1-60, RIGHT RAILS SET            Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       8/26/2021    8/26/2021    Y   8/22/2022    157168.00    157168.00    157168.00    0.00         2    Foreign   N   Y   0   N                                             3930 VALLEY E INDUSTRIAL DRIVE                                                           BIRMINGHAM           AL   35217          USA
+```
+[p005_p0011]
+
+```text
+VOESTALPINE RAILWAY SYSTEMS NORTRAK LLC    4000171787              CROSSOVER RH no.24, 136RE AS PER CE-1 S2-SS-24-MPF 136-TW SW PT AND LRSR MPF SPECIFICATIONS, MW-2000            Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       6/6/2022     6/6/2022     Y   4/3/2023     1176928.00   1176928.00   1176928.00   0.00         1    Foreign   N   Y   0   N                                             3930 VALLEY E INDUSTRIAL DRIVE                                                           BIRMINGHAM           AL   35217          USA
+```
+[p005_p0012]
+
+```text
+VOESTALPINE RAILWAY SYSTEMS NORTRAK LLC    4000171823              DSS DIAMOND PARTIAL RED AND BLUE PER DRAWING T-SW15A SHEET 180 OF 684 WITH TIEST WITH TURNOUT FROG              Open        Commodities/Supplies                  Authority Contract - Competitive Bid       6/7/2022     6/7/2022     Y   9/1/2023     878231.00    878231.00    878231.00    0.00         1    Foreign   N   N   0   N                                             3930 VALLEY E INDUSTRIAL DRIVE                                                           BIRMINGHAM           AL   35217          USA
+```
+[p005_p0013]
+
+```text
+VOESTALPINE RAILWAY SYSTEMS NORTRAK LLC    4000179620              FROG, no.10RH WBM FOR 115RE WITH WOOD TIE PLATE PACKAGE AS PER LIRR DRAWINGS 74363-1-B and 84363-1W-A           Open        Commodities/Supplies                  Authority Contract - Competitive Bid       1/5/2023     1/5/2023     Y   10/2/2023    119502.00    0.00         0.00         119502.00    2    Foreign   N   Y   0   N                                             3930 VALLEY E INDUSTRIAL DRIVE                                                           BIRMINGHAM           AL   35217          USA
+```
+[p005_p0014]
+
+```text
+VOESTALPINE RAILWAY SYSTEMS NORTRAK LLC    4000181579              STOCK RAIL, RIGHT STRAIGHT and CURVED SWITCH POINT with FLOATING HEEL BLOCK 115 RE, FOR No. 15 LH T             Open        Commodities/Supplies                  Authority Contract - Competitive Bid       2/21/2023    2/21/2023    Y   11/20/2023   464118.00    0.00         0.00         464118.00    4    Foreign   N   Y   0   N                                             3930 VALLEY E INDUSTRIAL DRIVE                                                           BIRMINGHAM           AL   35217          USA
+```
+[p005_p0015]
+
+```text
+VOESTALPINE RAILWAY SYSTEMS NORTRAK LLC    4000181639              STOCK RAIL, RIGHT STRAIGHT and CURVED SWITCH POINT with CONVENTIONAL HEEL BLOCK FOR 136RE no.10 LH T O          Open        Commodities/Supplies                  Authority Contract - Competitive Bid       2/22/2023    2/22/2023    Y   11/20/2023   300628.00    0.00         0.00         300628.00    4    Foreign   N   Y   0   N                                             3930 VALLEY E INDUSTRIAL DRIVE                                                           BIRMINGHAM           AL   35217          USA
+```
+[p005_p0016]
+
+```text
+VOESTALPINE RAILWAY SYSTEMS NORTRAK LLC    4000184813              CROSSING CURVED DIAMOND 136RE VALLEY STREAM INCLUDING WOOD TIES SOLID FROGS INSULATED JOINTS ETC OTM            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       4/28/2023    4/28/2023    Y   9/9/2024     577482.00    0.00         0.00         577482.00    2    Foreign   N   Y   0   Y   Below Dollar Threshold                    3930 VALLEY E INDUSTRIAL DRIVE                                                           BIRMINGHAM           AL   35217          USA
+```
+[p005_p0017]
+
+```text
+VOESTALPINE RAILWAY SYSTEMS NORTRAK LLC    4000186878              FROG, FROG ONLY, 115 RE, NO. 10, RBM, MAINTENANCE LENGTH FROG, RIGHT HAND, AS PER CURRENT LIRR STA              Open        Commodities/Supplies                  Authority Contract - Competitive Bid       6/16/2023    6/16/2023    Y   6/10/2024    485592.00    0.00         0.00         485592.00    3    Foreign   N   Y   0   Y   Below Dollar Threshold                    3930 VALLEY E INDUSTRIAL DRIVE                                                           BIRMINGHAM           AL   35217          USA
+```
+[p005_p0018]
+
+```text
+VOESTALPINE RAILWAY SYSTEMS NORTRAK LLC    4000189153              DSS - WSY RED-GREEN YELLOW-BLUE DSS WITH 2 DIAMONDS                                                             Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/16/2023    8/16/2023    Y   9/19/2024    87503.00     0.00         0.00         87503.00     1    Foreign   N   N   0   Y   Below Dollar Threshold                    3930 VALLEY E INDUSTRIAL DRIVE                                                           BIRMINGHAM           AL   35217          USA
+```
+[p005_p0019]
+
+```text
+VOESTALPINE RAILWAY SYSTEMS NORTRAK LLC    4000190015              FROG, MPF no.20 VEE POINT 136RE WITH FACTORY BONDING AS PER LIRR DRAWINGS T230901, 71016, 74165, AND 7          Open        Commodities/Supplies                  Authority Contract - Competitive Bid       9/11/2023    9/11/2023    Y   1/3/2025     514640.00    0.00         0.00         514640.00    2    Foreign   N   Y   0   Y   Below Dollar Threshold                    3930 VALLEY E INDUSTRIAL DRIVE                                                           BIRMINGHAM           AL   35217          USA
+```
+[p005_p0020]
+
+```text
+VOESTALPINE RAILWAY SYSTEMS NORTRAK LLC    4000192455              ZULU no.24 SW CONCRETE TIMBER                                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/8/2023    11/8/2023    Y   9/3/2024     85290.00     0.00         0.00         85290.00     2    Foreign   N   Y   0   Y   Below Dollar Threshold                    3930 VALLEY E INDUSTRIAL DRIVE                                                           BIRMINGHAM           AL   35217          USA
+```
+[p005_p0021]
+
+```text
+VOESTALPINE RAILWAY SYSTEMS NORTRAK LLC    4000193848              CROSSOVER no.15 136RE, WELDED BOLTLESS MANGENESE WBM FROGS, MW-2000 GEOMETRY, WITH 136-TW FOR SWITCH            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/18/2023   12/18/2023   Y   3/12/2025    597579.00    0.00         0.00         597579.00    1    Foreign   N   Y   0   N                                             3930 VALLEY E INDUSTRIAL DRIVE                                                           BIRMINGHAM           AL   35217          USA
+```
+[p005_p0022]
+
+```text
+WABTEC PASSENGER TRANSIT                   4000175537              VALVE,D-1-A TRIPLE VALVE, WAB 577893 OR LIRR APPROVED EQUAL M3 **MOQ 2 EA**                                     Open        Commodities/Supplies                  Authority Contract - Competitive Bid       9/20/2022    9/20/2022    Y   6/1/2023     16261.00     9756.60      9756.60      6504.40      1    Foreign   N   N   0   Y   Below Dollar Threshold                    130 RIDGEVIEW CENTER DR                                                                  DUNCAN               SC   29334          USA
+```
+[p005_p0023]
+
+```text
+WABTEC COMPONENTS LLC DBA UNITRAC          4000182008              STOCK RAIL, RIGHT STRAIGHT and CURVED SWITCH POINT with FLOATING HEEL BLOCK for 115RE and No. 10 LH             Open        Commodities/Supplies                  Authority Contract - Competitive Bid       3/2/2023     3/2/2023     Y   12/8/2023    266480.00    0.00         0.00         266480.00    4    Foreign   N   Y   0   N                                             30 ISABELLA ST                                                                           PITTSBURGH           PA   15212          USA
+```
+[p005_p0024]
+
+```text
+WABTEC COMPONENTS LLC DBA UNITRAC          4000186458              UNIVERSAL STRAIGHT STOCK RAIL ONLY, 136RE, 44 LONG AS PER LIRR DRAWING 83062-H **NOTE RED COLOR END             Open        Commodities/Supplies                  Authority Contract - Competitive Bid       6/6/2023     6/6/2023     Y   1/2/2024     262920.00    0.00         0.00         262920.00    1    Foreign   N   Y   0   Y   Below Dollar Threshold                    30 ISABELLA ST                                                                           PITTSBURGH           PA   15212          USA
+```
+[p005_p0025]
+
+```text
+WABTEC COMPONENTS LLC DBA UNITRAC          4000190409              RAIL,115RE, REGULAR STRENGTH, 44 LENGTHS, AS PER CURRENT LIRR SPEC S2-SS4-115R dated 12 20 2022 AND             Open        Commodities/Supplies                  Authority Contract - Competitive Bid       9/19/2023    9/19/2023    Y   3/1/2024     1281280.00   0.00         0.00         1281280.00   7    Foreign   N   Y   0   N                                             30 ISABELLA ST                                                                           PITTSBURGH           PA   15212          USA
+```
+[p005_p0026]
+
+```text
+R.J. SHERMAN AND ASSOCIATES, INC.          4000155608              Parts and Labor, for Repair of Vermeer Equipment                                                                Open        Commodities/Supplies                  Authority Contract - Competitive Bid       1/4/2021     1/4/2021     Y   1/4/2021     24000.00     1094.45      6968.52      17031.48     1    NYS       N   Y   0   N                                             DBA VERMEER NORTH ATLANTIC                                805 GRUNDY AVENUE              HOLBROOK             NY   11741          USA
+```
+[p005_p0027]
+
+```text
+ROMAN STONE CONSTRUCTION CO.               4000168072              8Inch Platform slabs per Project Extraordinary Interior Cleaning E.I.C Platform, Drawing Title Struct           Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       2/10/2022    2/15/2022    Y   9/30/2023    452346.14    452346.14    452346.14    0.00         2    NYS       N   Y   0   N                                             COMPANY                                                   S. 4TH ST. AND CORBIN AVE.     BAY SHORE            NY   11706          USA
+```
+[p005_p0028]
+
+```text
+INDUSTRY RAILWAY SUPPLIERS INC             4000176620              PADLOCK, RAILROAD, KEYED ALIKE TO CODE 00019, SARGENT AND GREENLEAF no.83-068-TYP-11A SIGNAL DEPT. FO           Completed   Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            25200.00                                    Foreign   N                                                         577 W LAMONT RD                                                                          ELMHURST             IL   60126          USA
+```
+[p005_p0029]
+
+```text
+SELCO MANUFACTURING CORP.                  4000171319              Additional funding required to purchase orderno. 4000171319 for a design change to meet field conditio          Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       5/19/2022    6/1/2022     Y   11/29/2023   1600419.00   1225524.24   1225524.24   374894.76    3    Foreign   N   Y   1   N                                             3 FAIRFIELD CRESCENT                                                                     W CALDWELL           NJ   07006          USA
+```
+[p005_p0030]
+
+```text
+SELCO MANUFACTURING CORP.                  4000172512              ADA Ramp Guardrails Handrails per MTA Long Island Rail Road Sea Cliff Station 67-9180 ADA Ramp and              Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       6/29/2022    7/18/2022    Y   9/28/2022    295207.78    295207.78    295207.78    0.00         2    Foreign   N   Y   1   N                                             3 FAIRFIELD CRESCENT                                                                     W CALDWELL           NJ   07006          USA
+```
+[p005_p0031]
+
+```text
+CRANEMASTERS INC                           4000142622              DESIGN, FABRICATE, DELIVER, INSTALL, TEST, START-UP AND CHECKOUT TWO 2 ONE HUNDRED AND THIRTY 130               Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       12/18/2019   12/18/2019   Y   10/4/2021    4047124.00   612916.00    4047124.00   0.00         1    Foreign   N   N   0   N                                             8020 WHITEPINE ROAD                                                                      NORTH CHESTERFIELD   VA   23237          USA
+```
+[p005_p0032]
+
+```text
+STAPLES                                    4000147183              BAG, PLASTIC, 4InchH X 11.25InchW, DOUBLE ZIPPER CLOSURE, GALLON SIZE, CLEAR; 38 BAGS PER BOX; ZIPLOC MODE      Open        Commodities/Supplies                  Authority Contract - Competitive Bid       4/9/2020     4/9/2020     Y   4/13/2020    17070.00     0.00         15647.50     1422.50      0    Foreign   N   N   0   Y   Below Dollar Threshold                    500 STAPLES DRIVE                                                                        FRAMINGHAM           MA   01702          USA
+```
+[p005_p0033]
+
+```text
+KAWASAKI RAIL CAR INC                      4000192278              SHADE, PARTITION DOOR, PARTITION DOOR ASSEMBLY, CAB, KAWASAKI 4463-000137 OR LIRR APPROVED EQUAL M9             Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            0.00                                        NYS       N                                                         29 WELLS AVE                                              BUILDING NO 4                  YONKERS              NY   10701          USA
+```
+[p005_p0034]
+
+```text
+KAWASAKI RAIL CAR INC                      4000192338              BRACKET ASSEMBLY, ATC ANTENNA, KAWASAKI RAIL CARS 5113-000767 OR LIRR APPROVED EQUAL, FOR ATC ANTENN            Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            0.00                                        NYS       N                                                         29 WELLS AVE                                              BUILDING NO 4                  YONKERS              NY   10701          USA
+```
+[p005_p0035]
+
+```text
+KAWASAKI RAIL CAR INC                      4000192980              BUFFER WALKWAY LIGHT B-END, LEC 7D1310-0005, KAW 7205-000080 OR LIRR APPROVED EQUAL M9                          Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            0.00                                        NYS       N                                                         29 WELLS AVE                                              BUILDING NO 4                  YONKERS              NY   10701          USA
+```
+[p005_p0036]
+
+```text
+KAWASAKI RAIL CAR INC                      4000193323              RUBBER,RADIUS ARM, PRIMARY SUSPENSION ASSY. KRC 2P111550-00 C-3 *MIN ORDER QTY 10 EA                            Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            0.00                                        NYS       N                                                         29 WELLS AVE                                              BUILDING NO 4                  YONKERS              NY   10701          USA
+```
+[p005_p0037]
+
+```text
+KAWASAKI RAIL CAR INC                      4000193334              RUBBER,TRACTION ROD, LONGITUDINAL STEERING ROD ASSY., BELL CRANK ASSY. KRC 2P111597-00 C-3 *M                   Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            0.00                                        NYS       N                                                         29 WELLS AVE                                              BUILDING NO 4                  YONKERS              NY   10701          USA
+```
+[p005_p0038]
+
+```text
+KAWASAKI RAIL CAR INC                      4000193349              SPRING DEVICE ASSY., TRUCK AND SUSPENSION SYSTEM, KRC 1P110511-02 OR LIRR APPROVED EQUAL C-3                    Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            0.00                                        NYS       N                                                         29 WELLS AVE                                              BUILDING NO 4                  YONKERS              NY   10701          USA
+```
+[p005_p0039]
+
+```text
+KAWASAKI RAIL CAR INC                      4000193350              STOP,LATERAL,RUBBER KRC 2P111655-00 C-3 *MIN ORDER QTY 5 EA                                                     Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            0.00                                        NYS       N                                                         29 WELLS AVE                                              BUILDING NO 4                  YONKERS              NY   10701          USA
+```
+[p005_p0040]
+
+```text
+KAWASAKI RAIL CAR INC                      4000193635              ROD,ADJUSTING,LV4-2B LEVELING VALVE,LEVELING VALVE ASSY., SECONDARY SUSPENSION ASSY., KRC 2P111624-0            Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            0.00                                        NYS       N                                                         29 WELLS AVE                                              BUILDING NO 4                  YONKERS              NY   10701          USA
+```
+[p005_p0041]
+
+```text
+KAWASAKI RAIL CAR INC                      4000193769              STEM, BUFFER, WITH ROUND HOLE, KRC JKCB0401-2 C-3                                                               Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            0.00                                        NYS       N                                                         29 WELLS AVE                                              BUILDING NO 4                  YONKERS              NY   10701          USA
+```
+[p005_p0042]
+
+```text
+KAWASAKI RAIL CAR INC                      4000193952              STEM, BUFFER, WITH OVAL HOLE, KRC JKCB0401-1 C-3                                                                Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            0.00                                        NYS       N                                                         29 WELLS AVE                                              BUILDING NO 4                  YONKERS              NY   10701          USA
+```
+[p005_p0043]
+
+```text
+KAWASAKI RAIL CAR INC                      4000194114              BUSHING,RUBBER, BELL CRANK, SECONDARY SUSPENSION ASSY. KRC 2P111596-00 C-3 *MIN ORDER QTY 25                    Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            0.00                                        NYS       N                                                         29 WELLS AVE                                              BUILDING NO 4                  YONKERS              NY   10701          USA
+```
+[p005_p0044]
+
+```text
+LUMINATOR TECHNOLOGY GROUP                 4000193860              INDICATOR LIGHT ASSY., EXTERIOR, R G A R, LUMINATOR 103238023 C-3 **MOQ 15 EA**                                 Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            0.00                                        Foreign   N                                                         1331-118TH AVENUE SE                                      SUITE 300                      BELLEVUE             WA   98005          USA
+```
+[p005_p0045]
+
+```text
+OILES AMERICA CORP                         4000192198              BEARING, THRUST, BRONZE GRAPHITE, BELL CRANK PIVOT PIN, KRC 2P111589-02, OILES AMERICA CORP Z G196-7            Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            0.00                                        Foreign   N                                                         4510 ENTERPRISE DR NW                                                                    CONCORD              NC   28027          USA
+```
+[p005_p0046]
+
+```text
+PROGRESS RAIL LOCOMOTIVE INC               4000192958              KIT, JOINT ASSY., EXPANSION, EXHAUST CHAMBER, ADAPTER TO TURBOCHARGER, EMD 40391429 DE-DM30AC KIT               Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            0.00                                        Foreign   N                                                         PO BOX 70530                                                                             CHICAGO              IL   60673          USA
+```
+[p005_p0047]
+
+```text
+SIEMENS INDUSTRY, INC.                     4000193533              BREAKER, CIRCUIT, WITH TYPE 81 ARC CHUTE, FAST DC, 3RD RAIL POWER, UTEX,SIEMENS ISLM076002 DM30AC               Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            0.00                                        Foreign   N                                                         350 KENT AVE                                                                             ELK GROVE VILLAGE    IL   60007          USA
+```
+[p005_p0048]
+
+```text
+UNITED REFRIGERATION INC                   4000192303              COMPRESSOR, HVAC UNIT, COPELAND DISCUS III 6DPNR23ME-TXK-250 OR LIRR APPROVED EQUAL C3                          Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            0.00                                        Foreign   N                                                         282 HUDSON STREET                                                                        HACKENSACK           NJ   07601   6750   USA
+```
+[p005_p0049]
+
+```text
+WABTEC GLOBAL SERVICES                     4000190595              COMPUTER, INTEGRATED CAB ELECTRONIC, ICE CCC, EMD 40117674 utex, UPGRADED WITH SOFTWARE VERSION                 Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            9744.00                                     Foreign   N                                                         8400 S STEWART AVE                                                                       CHICAGO              IL   60618          USA
+```
+[p005_p0050]
+
+```text
+AMERICAN VETERAN ENTERPRISE TEAM LLC       4000172083              COMMUNICATOR, WINDOW TALK-THRU WINDOW, INTERCOM WITH RECHARGEABLE BATTERY, PER LIRR SPEC C-204C DATE            Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       6/14/2022    6/14/2022    Y   12/22/2022   33090.96     8272.74      33090.96     0.00         5    NYS       N   N   0   N                                             1789 ROUTE 9                                                                             CLIFTON PARK         NY   12065          USA
+```
+[p005_p0051]
+
+```text
+APOGEE TRANSLITE, INC.                     4000172719              Fixture, LED, Apogee Lighting, Type A, Serious-70 Tunnel Luminaire Cat no. 70-W-1-SS-BK Or LIRR Approv          Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       7/7/2022     7/7/2022     Y   8/15/2022    394500.00    394500.00    394500.00    0.00         8    NYS       N   N   0   N                                             593 ACORN STREET                                                                         DEER PARK            NY   11729          USA
+```
+[p005_p0052]
+
+```text
+APOGEE TRANSLITE, INC.                     4000180467              SERIES 70 TUNNEL LIGHT., MfR. APOGEE TRANSLITE., Mfr. Part no. 70LED-S-SS-RAL-XX.                               Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       1/25/2023    1/25/2023    Y   3/27/2023    50550.00     50550.00     50550.00     0.00         5    NYS       N   N   0   Y   Below Dollar Threshold                    593 ACORN STREET                                                                         DEER PARK            NY   11729          USA
+```
+[p005_p0053]
+
+```text
+WABTEC PASSENGER TRANSIT                   4000174589              CAM, PLASTIC, ELECTRIC COUPLER, WABCO 0698344 OR LIRR APPROVED EQUAL M7, M9 **MOQ 10 EA**                       Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       8/30/2022    8/30/2022    Y   5/1/2023     25300.00     23000.00     25300.00     0.00         1    Foreign   N   N   0   Y   Below Dollar Threshold                    130 RIDGEVIEW CENTER DR                                                                  DUNCAN               SC   29334          USA
+```
+[p005_p0054]
+
+```text
+BAY FASTENING SYSTEMS, INC.                4000192331              BOLT,FOR FEEDER LEAD, HUCK C50LR-BR28-60-G                                                                      Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/3/2023    11/3/2023    Y   11/6/2023    53471.50     0.00         0.00         53471.50     4    NYS       N   N   0   Y   Below Dollar Threshold                    30 BANFI PLAZA NORTH                                                                     FARMINGDALE          NY   11735          USA
+```
+[p005_p0055]
+
+```text
+BBA PROJECT, INC.                          4000170635              SCREW,CAP, HEX HEAD, 3 4Inch-10 UNC X 2-1 4Inch L, GRADE 5 CARBON STEEL W INORGANIC HIGH RATIO ZINC SILICA      Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       4/27/2022    4/27/2022    Y   10/3/2022    131250.00    17500.00     131250.00    0.00         30   Foreign   Y   Y   1   Y   Legislation Require NYSCR                 155 NINTH AVE UNIT D                                                                     RUNNEMEDE            NJ   08078          USA
+```
+[p005_p0056]
+
+```text
+CEMBRE, INC.                               4000181946              CONNECTOR, 500 MCM, CONCENTRIC CABLE, ONE HOLE LUG, 90 DEGREE, CEMBRE PART no. A48-L12                          Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       3/1/2023     3/1/2023     Y   5/30/2023    55995.57     55995.57     55995.57     0.00         2    Foreign   N   N   0   Y   Below Dollar Threshold                    181 FIELDCREST AVE                                                                       EDISON               NJ   08837   3911   USA
+```
+[p005_p0057]
+
+```text
+CEMBRE, INC.                               4000181979              NUT COVER MP35-12-21 LD...., Mfr. CEMBRE., Mfr. Item no. 6001247.                                               Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       3/1/2023     3/1/2023     Y   3/31/2023    15698.66     15698.66     15698.66     0.00         1    Foreign   N   N   0   Y   Below Dollar Threshold                    181 FIELDCREST AVE                                                                       EDISON               NJ   08837   3911   USA
+```
+[p005_p0058]
+
+```text
+COLONIAL HARDWARE CORP                     4000169973              JACK, CABLE REEL, 10 TON CAP, TOP HOOK HEIGHT 31Inch MAX, FOR REELS 36Inch - 84Inch, RIGHT HAND, SIMPLEX MODE   Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       4/8/2022     4/8/2022     Y   5/6/2022     18930.51     10516.95     18928.95     1.56         5    Foreign   N   N   0   Y   Below Dollar Threshold                    33 COMMERCE ST                                                                           SPRINGFIELD          NJ   07081          USA
+```
+[p005_p0059]
+
+```text
+COLONIAL HARDWARE CORP                     4000179246              BAG,CANVAS TOOL,14Inch LONG, KLEIN 5102-14,ESTEX 2114-14 STD.PKG.6                                              Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       12/21/2022   12/21/2022   Y   1/18/2023    22740.12     22740.12     22740.12     0.00         3    Foreign   N   N   0   Y   Below Dollar Threshold                    33 COMMERCE ST                                                                           SPRINGFIELD          NJ   07081          USA
+```
+[p005_p0060]
+
+```text
+COLONIAL HARDWARE CORP                     4000190578              BAG,CANVAS TOOL,14Inch LONG, KLEIN 5102-14,ESTEX 2114-14 STD.PKG.6                                              Open        Commodities/Supplies                  Authority Contract - Competitive Bid       9/22/2023    9/22/2023    Y   12/3/2023    26395.20     0.00         0.00         26395.20     3    Foreign   N   N   0   Y   Below Dollar Threshold                    33 COMMERCE ST                                                                           SPRINGFIELD          NJ   07081          USA
+```
+[p005_p0061]
+
+```text
+CREATIVE PULTRUSIONS, INC.                 4000179779              COVER, PROTECTIVE, THIRD RAIL, BACK BOARD, FIBERGLASS, 4 FT. – 11IN. LENGTH, PER LIRR DWG. ETD-20307            Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       1/10/2023    1/10/2023    Y   5/10/2023    60545.00     60545.00     60545.00     0.00         2    Foreign   N   N   0   Y   Below Dollar Threshold                    214 INDUSTRIAL LN                                                                        ALUM BANK            PA   15521   8304   USA
+```
+[p005_p0062]
+
+```text
+CREATIVE PULTRUSIONS, INC.                 4000185196              BOARD, PROTECTION, FIBERGLASS, PER LIRR DWGS. ETD-20078 REV. 5 DATED 05 18 09, ETD-20081 DATED 05 21            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       5/5/2023     5/5/2023     Y   8/1/2023     70400.00     69949.44     69949.44     450.56       3    Foreign   N   N   0   Y   Below Dollar Threshold                    214 INDUSTRIAL LN                                                                        ALUM BANK            PA   15521   8304   USA
+```
+[p005_p0063]
+
+```text
+CREATIVE PULTRUSIONS, INC.                 4000187643              COVER, PROTECTIVE, THIRD RAIL, BACK BOARD, FIBERGLASS, 4 FT. – 11IN. LENGTH, PER LIRR DWG. ETD-20307            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       7/11/2023    7/11/2023    Y   10/3/2023    27036.10     27036.10     27036.10     0.00         0    Foreign   N   N   0                                                 214 INDUSTRIAL LN                                                                        ALUM BANK            PA   15521   8304   USA
+```
+[p005_p0064]
+
+```text
+D.B.E. ELECTRIC CORP                       4000173261              CABLE,3 COND.,AWG.2 0 TRIPLEXED OR PARALLELLED 35KV, PER LIRR SPEC.ETD-8616 REV. 6 DATED 7 19 2011,             Open        Commodities/Supplies                  Authority Contract - Competitive Bid       7/22/2022    7/22/2022    Y   12/1/2022    159573.00    147232.69    147232.69    12340.31     5    NYS       Y   Y   1   N                                             980 LITTLE EAST NECK RD.                                                                 WEST BABYLON         NY   11704          USA
+```
+[p005_p0065]
+
+```text
+ERICO INTERNATIONAL CORP                   4000170420              LUG,KIT,SUBSTATION IMPEDANCE BOND,EACH KIT TO INCLUDE 30 EA.LUG, 30 EA.SLEEVE RAYCHEM no. WCSM- 120 4           Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       4/21/2022    4/21/2022    Y   6/30/2022    48590.80     48590.80     48590.80     0.00         5    Foreign   N   N   0   N                                             34600 SOLON RD                                                                           SOLON                OH   44139          USA
+```
+[p005_p0066]
+
+```text
+ERICO INTERNATIONAL CORP                   4000170933              BOND,3RD.RAIL,9 IN.LG.,PER LIRR SPEC. ETD-8522 REV. 9 24 01, ROPE LAY CABLE **THIS ITEM IS ON OUR               Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       5/6/2022     5/6/2022     Y   8/15/2022    47675.00     47675.00     47675.00     0.00         1    Foreign   N   N   0   N                                             34600 SOLON RD                                                                           SOLON                OH   44139          USA
+```
+[p005_p0067]
+
+```text
+ERICO INTERNATIONAL CORP                   4000174794              BOND, 28 IN FEEDER LEAD, FOR COMPOSITE RAIL, PER LIRR DWG. ETD-20074 REV. 4 DATED 12 29 04 AND LIRR             Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       9/6/2022     9/6/2022     Y   11/20/2022   35270.00     35270.00     35270.00     0.00         3    Foreign   N   N   0   Y   Below Dollar Threshold                    34600 SOLON RD                                                                           SOLON                OH   44139          USA
+```
+[p005_p0068]
+
+```text
+ERICO INTERNATIONAL CORP                   4000175156              LEAD, NEGATIVE BONDING, 54Inch LONG, 500 MCM INSULATED CONCENTRIC COPPER CABLE, AS PER LIRR DWG ETD-202         Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       9/14/2022    9/14/2022    Y   12/23/2022   34476.00     34476.00     34476.00     0.00         1    Foreign   N   N   0   Y   Below Dollar Threshold                    34600 SOLON RD                                                                           SOLON                OH   44139          USA
+```
+[p005_p0069]
+
+```text
+ERICO INTERNATIONAL CORP                   4000181852              SIDE LEAD ASSEMBLY, WEB BOND, MECHANICAL RAIL CONNECTION, FOR 2500 AMP IMPEDANCE BOND, AS PER LIRR S            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       2/27/2023    2/27/2023    Y   7/31/2023    40277.05     21969.30     21969.30     18307.75     1    Foreign   N   N   0   N                                             34600 SOLON RD                                                                           SOLON                OH   44139          USA
+```
+[p005_p0070]
+
+```text
+FREMONT INDUSTRIAL CORP                    4000179761              CLIMBER, W NYLON STRAPS AND 140DS PADS, BASHLIN MODEL no. BD-14-5N OR LIRR APPROVED EQUAL                       Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       1/9/2023     1/9/2023     Y   4/10/2023    23126.25     23126.25     23126.25     0.00         3    NYS       N   N   0   Y   Below Dollar Threshold                    41 B KEYLAND COURT                                                                       BOHEMIA              NY   11716          USA
+```
+[p005_p0071]
+
+```text
+GLOBE ELECTRIC SUPPLY CO INC               4000171983              SWITCH, 3RD RAIL,NEMA 3R ENCLOSURE, ELEC. OPER., ISOLATING,6000 AMP.,LOAD BREAK RATED, S.P.S.T.,W VO            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       6/10/2022    6/10/2022    Y   1/31/2023    532800.00    0.00         0.00         532800.00    3    Foreign   N   N   0   N                                             10902 ROARK RD                                                                           HOUSTON              TX   77099          USA
+```
+[p005_p0072]
+
+```text
+GRAYBAR                                    4000176558              POLE, 12 FOOT ALUMINUM BLACK POLYESTER FINISH, WITH 4Inch O.D. TUBING STRAIGHT .188Inch WALL THICKNESS, TR      Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       10/13/2022   10/13/2022   Y   12/22/2022   39118.91     39118.91     39118.91     0.00         2    Foreign   N   N   0   Y   Below Dollar Threshold                    25 RESEARCH PARKWAY                                                                      WALLINGFORD          CT   06492          USA
+```
+[p005_p0073]
+
+```text
+GRAYBAR                                    4000191440              LIGHT, LED, BLUE, FIXTURES, KIM LIGHTING CATno. ETO 1SA WP9S2E45 60LBLUELED120 BL 5”RD POLE OR LIRR AP          Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/11/2023   10/11/2023   Y   11/27/2023   18291.44     0.00         0.00         18291.44     1    Foreign   N   N   0   Y   Below Dollar Threshold                    25 RESEARCH PARKWAY                                                                      WALLINGFORD          CT   06492          USA
+```
+[p005_p0074]
+
+```text
+HITACHI RAIL STS USA INC                   4000157162              HOT FILAMENT CHECK, 25 W. INPUT 18-50 WATT 100 HZ LAMP, OUTPUT 1.7-30V, USANDS no. N40104905 OR LIRR A          Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       2/25/2021    2/25/2021    Y   11/2/2021    20013.84     11436.48     20013.84     0.00         5    Foreign   N   N   0   Y   Below Dollar Threshold                    P.O. BOX 7780-1513                                                                       PHILADELPHIA         PA   19182          USA
+```
+[p005_p0075]
+
+```text
+J MIKULSKY RAILWAY SUPPLY CO INC           4000181115              NEENAH CATALOG no. 5901-E equal R-5901-C ROUND FRAME AND ROUND COVER FRAME TYPE-F REGULAR SEAT GI CLASS         Open        Commodities/Supplies                  Authority Contract - Competitive Bid       2/9/2023     2/9/2023     Y   6/29/2023    27820.00     27820.00     27820.00     0.00         1    Foreign   Y   Y   1   Y   Below Dollar Threshold                    295 W 49TH ST                                                                            READING              PA   19606          USA
+```
+[p005_p0076]
+
+```text
+KELLY AND HAYES ELECTRICAL                 4000188087              BRACE,CROSSARM,AB CHANCE 6942, MCGRAW EDISON DBIL5, JOSLYN J1508 OR LIRR APPROVED EQUAL STD.PKG.5               Open        Commodities/Supplies                  Authority Contract - Competitive Bid       7/21/2023    7/21/2023    Y   9/4/2023     30839.50     4197.91      4197.91      26641.59     2    NYS       N   N   0   Y   Below Dollar Threshold                    SUPPLY OF L.I., INC.                                      RP                             NESCONSET            NY   11767          USA
+```
+[p005_p0077]
+
+```text
+KELLY AND HAYES ELECTRICAL                 4000188199              CABLE, BLACK 2COND.,AWG.14, 600 VOLT RATED, STRANDED, TWISTED PAIR,SHIELDED,PUBLIC ADDRESS-OUTDOOR              Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       7/25/2023    7/25/2023    Y   8/14/2023    55900.00     55900.00     55900.00     0.00         2    NYS       N   N   0   Y   Below Dollar Threshold                    SUPPLY OF L.I., INC.                                      RP                             NESCONSET            NY   11767          USA
+```
+[p005_p0078]
+
+```text
+KELLY AND HAYES ELECTRICAL                 4000188586              CONNECTOR, 2000 MCM SPLICE, ELECTROLYTIC SEAMLESS COPPER TUBING, TIN PLATED, 6” LONG, FOR USE WITH C            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/3/2023     8/3/2023     Y   10/2/2023    18997.50     0.00         0.00         18997.50     2    NYS       N   N   0   Y   Below Dollar Threshold                    SUPPLY OF L.I., INC.                                      RP                             NESCONSET            NY   11767          USA
+```
+[p005_p0079]
+
+```text
+R.J. SHERMAN AND ASSOCIATES, INC.          400000000002876         Repair, Parts and Labor of Ver                                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       4/26/2023    4/26/2023    Y   4/25/2025    25500.00     0.00         0.00         25500.00     1    NYS       N   Y   0   N                                             DBA VERMEER NORTH ATLANTIC                                805 GRUNDY AVENUE              HOLBROOK             NY   11741          USA
+```
+[p005_p0080]
+
+```text
+KELLY AND HAYES ELECTRICAL                 4000193315              CROSSARM, 6 SUSPENSION ARM, LONG LEAF YELLOW PINE OR DOUG. FIR, PER LIRR DWG.ETD-9003B REV 2 DATED              Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/5/2023    12/5/2023    Y   2/5/2024     16450.00     0.00         0.00         16450.00     1    NYS       N   N   0   Y   Below Dollar Threshold                    SUPPLY OF L.I., INC.                                      RP                             NESCONSET            NY   11767          USA
+```
+[p005_p0081]
+
+```text
+L.B. FOSTER COMPANY                        4000170505              SPLICE JOINT KIT,W 2 SPLICE BARS,4-HUCK BOLT COMPOSITE RAIL,4 COLLARS AND BOLTS, PER LIRR SPEC.ETD-2            Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       4/25/2022    4/25/2022    Y   12/19/2022   124190.00    124190.00    124190.00    0.00         5    Foreign   N   N   0   N                                             415 HOLIDAY DRIVE                                                                        PITTSBURGH           PA   15220   2793   USA
+```
+[p005_p0082]
+
+```text
+L.B. FOSTER COMPANY                        4000179082              APPROACH, END, FOR COMPOSITE RAIL, 7 - 6Inch, PER LIRR SPEC. ETD- 20058, REV.no.3 DATED 10 19 10 AND DRA        Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       12/16/2022   12/16/2022   Y   6/2/2023     18318.45     18318.45     18318.45     0.00         2    Foreign   N   N   2   Y   Below Dollar Threshold                    415 HOLIDAY DRIVE                                                                        PITTSBURGH           PA   15220   2793   USA
+```
+[p005_p0083]
+
+```text
+L.B. FOSTER COMPANY                        4000179122              SPLICE JOINT KIT,W 2 SPLICE BARS,4-HUCK BOLT COMPOSITE RAIL,4 COLLARS AND BOLTS, PER LIRR SPEC.ETD-2            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/19/2022   12/19/2022   Y   6/5/2023     169605.00    0.00         0.00         169605.00    4    Foreign   N   N   0   N                                             415 HOLIDAY DRIVE                                                                        PITTSBURGH           PA   15220   2793   USA
+```
+[p005_p0084]
+
+```text
+L.B. FOSTER COMPANY                        4000182147              APPROACH, END, FOR COMPOSITE RAIL, 7 - 6Inch, PER LIRR SPEC. ETD- 20058, REV.no.3 DATED 10 19 10 AND DRA        Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       3/6/2023     3/6/2023     Y   9/4/2023     46780.50     46780.50     46780.50     0.00         1    Foreign   N   N   0   Y   Below Dollar Threshold                    415 HOLIDAY DRIVE                                                                        PITTSBURGH           PA   15220   2793   USA
+```
+[p005_p0085]
+
+```text
+L.B. FOSTER COMPANY                        4000184129              SPLICE JOINT KIT,W 2 SPLICE BARS,4-HUCK BOLT COMPOSITE RAIL,4 COLLARS AND BOLTS, PER LIRR SPEC.ETD-2            Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       4/13/2023    4/13/2023    Y   9/14/2023    26336.00     26336.00     26336.00     0.00         2    Foreign   N   N   0   Y   Below Dollar Threshold                    415 HOLIDAY DRIVE                                                                        PITTSBURGH           PA   15220   2793   USA
+```
+[p005_p0086]
+
+```text
+LOUIS SHIFFMAN ELECTRIC                    4000180129              HEATER,ELECTRIC,7.5 KW,480 VOLT,3 PHASE, MARKEL MODEL P3P5107CA1, TO INCLUDE MOUNTING BRACKET no.A5120          Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       1/19/2023    1/19/2023    Y   1/30/2023    15380.16     15380.16     15380.16     0.00         3    NYS       N   N   0   Y   Legislation Require NYSCR                 LOUIS SHIFFMAN                                            542 WORTMAN AVE                BROOKLYN             NY   11208          USA
+```
+[p005_p0087]
+
+```text
+MAC PRODUCTS INC                           4000174037              KIT, BOND, RAIL CONNECTOR, FOR 500MCM CONDUCTOR, 115 119 AND136LBS RAIL, KIT TO INCLUDE 1EA SINGLE              Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       8/16/2022    8/16/2022    Y   2/20/2023    759990.00    759990.00    759990.00    0.00         5    Foreign   N   N   0   N                                             60 PENNSYLVANIA AVE                                       P O BOX 469                    KEARNY               NJ   07032          USA
+```
+[p005_p0088]
+
+```text
+MAC PRODUCTS INC                           4000182614              SWITCH, 3RD RAIL, W FIBERGLASS BOX, 4500A, 750V, S.P.S.T., PER LIRR DWG. ETD-20193 REV 9 DATED.3 10             Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       3/14/2023    3/14/2023    Y   7/12/2023    15372.00     15372.00     15372.00     0.00         4    Foreign   N   N   0   Y   Below Dollar Threshold                    60 PENNSYLVANIA AVE                                       P O BOX 469                    KEARNY               NJ   07032          USA
+```
+[p005_p0089]
+
+```text
+MAC PRODUCTS INC                           4000183990              KIT, BOND, RAIL CONNECTOR, FOR 500MCM CONDUCTOR, 115 119 AND136LBS RAIL, KIT TO INCLUDE 1EA SINGLE              Open        Commodities/Supplies                  Authority Contract - Competitive Bid       4/11/2023    4/11/2023    Y   10/9/2023    817360.00    204340.00    204340.00    613020.00    4    Foreign   N   N   0   N                                             60 PENNSYLVANIA AVE                                       P O BOX 469                    KEARNY               NJ   07032          USA
+```
+[p005_p0090]
+
+```text
+MAC PRODUCTS INC                           4000186430              BOND, 34 IN FEEDER LEAD, FOR COMPOSITE RAIL, PER LIRR DWG. ETD-20074 REV. 4 DATED 12 29 04 AND LIRR             Open        Commodities/Supplies                  Authority Contract - Competitive Bid       6/5/2023     6/5/2023     Y   11/2/2023    61299.00     0.00         0.00         61299.00     1    Foreign   N   N   0   Y   Below Dollar Threshold                    60 PENNSYLVANIA AVE                                       P O BOX 469                    KEARNY               NJ   07032          USA
+```
+[p005_p0091]
+
+```text
+MAC PRODUCTS INC                           4000189581              KIT, BOND, RAIL CONNECTOR, FOR 500MCM CONDUCTOR, 115 119 AND136LBS RAIL, KIT TO INCLUDE 1EA SINGLE              Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/29/2023    8/29/2023    Y   2/26/2024    760400.00    0.00         0.00         760400.00    3    Foreign   N   N   0   N                                             60 PENNSYLVANIA AVE                                       P O BOX 469                    KEARNY               NJ   07032          USA
+```
+[p005_p0092]
+
+```text
+HITACHI RAIL STS USA INC                   4000183536              FINGER, RELAY CONTACT, FOR 10-12 WIRE, ANSALDO no.M451142-2703, OR LIRR APPROVED EQUAL                          Open        Commodities/Supplies                  Authority Contract - Non-Competitive Bid   3/30/2023    3/30/2023    Y   9/26/2023    25710.00     0.00         0.00         25710.00     1    Foreign   N   N   0   Y   Below Dollar Threshold       25710.00     P.O. BOX 7780-1513                                                                       PHILADELPHIA         PA   19182          USA
+```
+[p005_p0093]
+
+```text
+HITACHI RAIL STS USA INC                   4000183951              FINGER, RELAY CONTACT, FOR 14-16 WIRE, ANSALDO no.M451142-2702, OR LIRR APPROVED EQUAL                          Open        Commodities/Supplies                  Authority Contract - Competitive Bid       4/10/2023    4/10/2023    Y   10/9/2023    25710.00     0.00         0.00         25710.00     1    Foreign   N   Y   1   Y   Below Dollar Threshold                    P.O. BOX 7780-1513                                                                       PHILADELPHIA         PA   19182          USA
+```
+[p005_p0094]
+
+```text
+MAC PRODUCTS INC                           4000192230              SWITCH, 3RD RAIL, W FIBERGLASS BOX, 4500A, 750V, S.P.S.T., PER LIRR DWG. ETD-20193 REV 9 DATED.3 10             Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/1/2023    11/1/2023    Y   4/1/2024     34502.25     0.00         0.00         34502.25     2    Foreign   N   N   0   Y   Below Dollar Threshold                    60 PENNSYLVANIA AVE                                       P O BOX 469                    KEARNY               NJ   07032          USA
+```
+[p005_p0095]
+
+```text
+MARMON IEI - EAST GRANBY                   4000188734              CONNECTOR, CABLE, STAINLESS STEEL, W EARTH TAG, APPROPRIATE FOR 4 C no.4 FIRE RATED MC CABLE, Mfr. AM           Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/8/2023     8/8/2023     Y   12/26/2023   632928.00    0.00         0.00         632928.00    4    Foreign   N   N   0   N                                             MARMON INDUSTRIAL ENERGY AND INFRASTRUCTURE - EAST GRAN   20 BRADLEY PARK RD             EAST GRANBY          CT   06026          USA
+```
+[p005_p0096]
+
+```text
+NORMANDY MACHINE CO., INC.                 4000182254              SWITCH,QUICK BREAK,HANDLE OPERATED, OUTDOOR, W GLASTIC ENCLOSURE, 1200A DISCONNECT W 200A FUSE. NM              Open        Commodities/Supplies                  Authority Contract - Competitive Bid       3/7/2023     3/7/2023     Y   6/27/2023    50028.00     0.00         0.00         50028.00     2    Foreign   N   N   0   Y   Below Dollar Threshold                    DBA POWERSWITH, INC                                       815 EAST CHERRY STREET         TROY                 MO   63379          USA
+```
+[p005_p0097]
+
+```text
+POLYPLY COMPOSITES INC                     4000160620              INSULATOR, THIRD RAIL, 7.31Inch HIGH, FIBERGLASS, FOR COMPOSITE THIRD RAIL, PER LIRR DWG. ETD-20060 TYP         Open        Commodities/Supplies                  Authority Contract - Competitive Bid       6/21/2021    6/21/2021    Y   3/31/2022    318560.00    170867.62    311591.50    6968.50      7    Foreign   N   N   0   N                                             1540 MARION STREET                                                                       GRAND HAVEN          MI   49417          USA
+```
+[p005_p0098]
+
+```text
+POLYPLY COMPOSITES INC                     4000162514              INSULATOR,THIRD RAIL, 6.56Inch HIGH FIBERGLASS, FOR COMPOSITE THIRD RAIL, PER LIRR DWG.ETD-20060 TYPE 2         Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       8/20/2021    8/20/2021    Y   3/18/2022    29461.00     29461.00     29461.00     0.00         5    Foreign   N   N   0   Y   Below Dollar Threshold                    1540 MARION STREET                                                                       GRAND HAVEN          MI   49417          USA
+```
+[p005_p0099]
+
+```text
+POLYPLY COMPOSITES INC                     4000165654              INSULATOR,THIRD RAIL, 6.18InchH, FIBERGLASS, FOR CONVENTIONAL THIRD RAIL, PER LIRR DWG. ETD-20049 TYPE          Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       11/23/2021   11/23/2021   Y   5/23/2022    74820.00     74820.00     74820.00     0.00         5    Foreign   N   N   0   Y   Below Dollar Threshold                    1540 MARION STREET                                                                       GRAND HAVEN          MI   49417          USA
+```
+[p005_p0100]
+
+```text
+POLYPLY COMPOSITES INC                     4000166108              INSULATOR,THIRD RAIL, 6.56Inch HIGH FIBERGLASS, FOR COMPOSITE THIRD RAIL, PER LIRR DWG.ETD-20060 TYPE 2         Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/9/2021    12/9/2021    Y   6/7/2022     525780.00    376029.14    390191.74    135588.26    3    Foreign   N   N   1   Y   Below Dollar Threshold                    1540 MARION STREET                                                                       GRAND HAVEN          MI   49417          USA
+```
+[p005_p0101]
+
+```text
+POWER RESOURCES INTERNATIONAL, INC.        4000158487              Cisco P N CVR-QSFP-SFP10G                                                                                       Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       4/12/2021    4/12/2021    Y   11/18/2021   24357.44     24357.44     24357.44     0.00         5    NYS       Y   Y   1   Y   Below Dollar Threshold                    31 NANCY ST                                                                              WEST BABYLON         NY   11704          USA
+```
+[p005_p0102]
+
+```text
+POWER RESOURCES INTERNATIONAL, INC.        4000180912              SIEMENS S7-400 Backup Battery                                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       2/6/2023     2/6/2023     Y   6/6/2023     124774.24    183.44       183.44       124590.80    4    NYS       Y   Y   1   Y   Below Dollar Threshold                    31 NANCY ST                                                                              WEST BABYLON         NY   11704          USA
+```
+[p005_p0103]
+
+```text
+RAM INDUSTRIAL SERVICES LLC                4000183142              M3 Armatures 53315VR                                                                                            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       3/23/2023    3/23/2023    Y   3/23/2023    25760.00     25760.00     25760.00     0.00         1    Foreign   N   N   0   Y   Below Dollar Threshold                    2850 APPLETON STREET                                      SUITE#D                        CAMP HILL            PA   17011          USA
+```
+[p005_p0104]
+
+```text
+POWER RESOURCES INTERNATIONAL, INC.        4000187372              Third rail heater contactor boxes, 4 track territory, per. ETD-40536 THIRD RAIL HEATER CONTROL CABIN            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       6/30/2023    6/30/2023    Y   9/13/2023    59150.00     0.00         0.00         59150.00     1    NYS       Y   Y   1   Y   Below Dollar Threshold                    31 NANCY ST                                                                              WEST BABYLON         NY   11704          USA
+```
+[p005_p0105]
+
+```text
+PRYSMIAN CABLES AND SYSTEMS USA LLC        4000190928              CABLE, 22 COND. COMPOSITE, 3 COND., POWER, AWG.4, 19 STRAND, 600V, STANDARD JACKET, PER LIRR SPEC. C            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       9/29/2023    9/29/2023    Y   4/5/2024     70508.80     0.00         0.00         70508.80     2    Foreign   N   N   0   Y   Below Dollar Threshold                    700 INDUSTRIAL DR                                                                        LEXINGTON            SC   29072          USA
+```
+[p005_p0106]
+
+```text
+PRYSMIAN GROUP SPECIALTY CABLES LLC        4000184441              CABLE, 1 COND., 3000V, NH-LS, 500 MCM, PER LIRR SPEC. ETD-8600 REV.no.10 DATED 04-11-19 DELIVERY VIA            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       4/20/2023    4/20/2023    Y   12/14/2023   20620.00     0.00         0.00         20620.00     2    Foreign   N   N   0   Y   Below Dollar Threshold                    4 TESSENEER DR                                                                           HIGHLAND HEIGHTS     KY   41076          USA
+```
+[p005_p0107]
+
+```text
+PRYSMIAN GROUP SPECIALTY CABLES LLC        4000189186              CABLE, 1 COND., 3000V, NH-LS, 2000 MCM, PER LIRR SPEC. ETD-8601 REV. no.10 DATED 04-11-19 750 FT. NO            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/17/2023    8/17/2023    Y   2/1/2024     1009477.50   0.00         0.00         1009477.50   5    Foreign   N   N   0   N                                             4 TESSENEER DR                                                                           HIGHLAND HEIGHTS     KY   41076          USA
+```
+[p005_p0108]
+
+```text
+SELCO MANUFACTURING CORP.                  4000157840              EXTENSION, CHANNEL, NON-CONDUCTIVE, THIRD RAIL SUPPORT, FOR USE ON CONCRETE TRACK TIE, PER LIRR SPEC            Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       3/18/2021    3/18/2021    Y   4/1/2022     1311000.00   362520.00    1311000.00   0.00         5    Foreign   N   N   5   N                                             3 FAIRFIELD CRESCENT                                                                     W CALDWELL           NJ   07006          USA
+```
+[p005_p0109]
+
+```text
+SELCO MANUFACTURING CORP.                  4000171618              INSULATOR,THIRD RAIL, 5.43Inch HIGH, FIBERGLASS, FOR COMPOSITE THIRD RAIL, PER LIRR DWG. ETD-20060 TYPE         Open        Commodities/Supplies                  Authority Contract - Competitive Bid       5/27/2022    5/27/2022    Y   12/8/2022    570360.00    477769.60    570360.00    0.00         3    Foreign   N   N   0   N                                             3 FAIRFIELD CRESCENT                                                                     W CALDWELL           NJ   07006          USA
+```
+[p005_p0110]
+
+```text
+SELCO MANUFACTURING CORP.                  4000180297              SWITCH, 3RD RAIL, WITH FIBERGLASS BOX, 6000A. 750V, S.P.S.T., PER LIRR DWG. ETD-20192 REV. 7 DATED 3            Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       1/23/2023    1/23/2023    Y   3/24/2023    22680.00     22680.00     22680.00     0.00         1    Foreign   N   N   0   Y   Below Dollar Threshold                    3 FAIRFIELD CRESCENT                                                                     W CALDWELL           NJ   07006          USA
+```
+[p005_p0111]
+
+```text
+RAM INDUSTRIAL SERVICES LLC                4000185501              M3 Armatures 53315VR                                                                                            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       5/12/2023    5/12/2023    Y   5/19/2023    25760.00     11776.00     11776.00     13984.00     1    Foreign   N   N   0   Y   Below Dollar Threshold                    2850 APPLETON STREET                                      SUITE#D                        CAMP HILL            PA   17011          USA
+```
+[p005_p0112]
+
+```text
+SELCO MANUFACTURING CORP.                  4000186994              CASE,FOR TRANSFORMER AND 2200 VOLT SIGNAL FEEDER SWITCH,ALUMINUM, 116Inch,PER DWG.ETD-30009 REV. 6 DATE         Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       6/21/2023    6/21/2023    Y   9/13/2023    94475.00     94475.00     94475.00     0.00         1    Foreign   N   N   0   Y   Below Dollar Threshold                    3 FAIRFIELD CRESCENT                                                                     W CALDWELL           NJ   07006          USA
+```
+[p005_p0113]
+
+```text
+SELCO MANUFACTURING CORP.                  4000192595              CASE,FOR TRANSFORMER AND 2200 VOLT SIGNAL FEEDER SWITCH,ALUMINUM, 116Inch,PER DWG.ETD-30009 REV. 6 DATE         Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/14/2023   11/14/2023   Y   2/12/2024    38121.94     0.00         0.00         38121.94     3    Foreign   N   N   0   Y   Below Dollar Threshold                    3 FAIRFIELD CRESCENT                                                                     W CALDWELL           NJ   07006          USA
+```
+[p005_p0114]
+
+```text
+SELCO MANUFACTURING CORP.                  4000192941              CASE,FOR TRANSFORMER AND 2200 VOLT SIGNAL FEEDER SWITCH,ALUMINUM, 116Inch,PER DWG.ETD-30009 REV. 6 DATE         Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/22/2023   11/22/2023   Y   3/21/2024    95304.85     0.00         0.00         95304.85     2    Foreign   N   N   0   Y   Below Dollar Threshold                    3 FAIRFIELD CRESCENT                                                                     W CALDWELL           NJ   07006          USA
+```
+[p005_p0115]
+
+```text
+RAM INDUSTRIAL SERVICES LLC                4000193281              M3 Armatures 53315VR                                                                                            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/4/2023    12/4/2023    Y   12/4/2023    25760.00     0.00         0.00         25760.00     1    Foreign   N   N   0   Y   Below Dollar Threshold                    2850 APPLETON STREET                                      SUITE#D                        CAMP HILL            PA   17011          USA
+```
+[p005_p0116]
+
+```text
+SIEMENS MOBILITY INC                       4000166168              WAYSIDE SIGNAL, 3 ASPECT, V-20R, LED                                                                            Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       12/10/2021   12/10/2021   Y   4/5/2022     27135.54     27135.54     27135.54     0.00         5    Foreign   N   N   0   Y   Below Dollar Threshold                    PO BOX 3498                                                                              CAROL STREAM         IL   60132          USA
+```
+[p005_p0117]
+
+```text
+SWINGMASTER CORP                           4000189650              1800242C - TRACK WHEEL D-30                                                                                     Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/30/2023    8/30/2023    Y   9/1/2023     15494.80     15494.80     15494.80     0.00         1    Foreign   N   N   0   Y   Below Dollar Threshold                    11415 MELROSE AVE                                                                        FRANKLIN PARK        IL   60131          USA
+```
+[p005_p0118]
+
+```text
+TEKTRONICS ELECTRONIC COMPONENTS INC.      4000180228              METER,MEGGER,COMP.,W TEST LEADS AND CARRYING CASE,0-2000 MEGOHM RANGE,100-1000 VOLTS, ANALOG METER,             Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       1/20/2023    1/20/2023    Y   5/15/2023    35901.85     35901.85     35901.85     0.00         3    NYS       N   N   0   N                                             550 ROUTE 25A                                                                            ROCKY POINT          NY   11778          USA
+```
+[p005_p0119]
+
+```text
+TEKTRONICS ELECTRONIC COMPONENTS INC.      4000182469              CONVERTER, 24V DC DC, 150 WATT, POWERONE PART no.AK1601-9R OR LIRR APPROVED EQUAL TO BE USED WITH POWE          Open        Commodities/Supplies                  Authority Contract - Competitive Bid       3/10/2023    3/10/2023    Y   3/19/2024    20600.85     0.00         0.00         20600.85     3    NYS       N   N   0   Y   Cntrct Assign. from Agency                550 ROUTE 25A                                                                            ROCKY POINT          NY   11778          USA
+```
+[p005_p0120]
+
+```text
+TRANSIT SYSTEMS INC                        4000191446              LUG, CAST COPPER METHOD, FOR 2000 MCM COPPER CABLE, PER LIRR DWG.ETD-8524A - REVno.4 DATED 02 26 14             Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/11/2023   10/11/2023   Y   1/15/2024    36510.00     0.00         0.00         36510.00     1    Foreign   N   N   0   Y   Below Dollar Threshold                    161-34 WOODFORD AVENUE                                                                   PLAINVILLE           CT   06062          USA
+```
+[p005_p0121]
+
+```text
+TRISTAR PLASTICS CORP                      4000192026              1Inch X 6Inch X 8Inch RED POLYSTICK RUBBING BOARDS                                                              Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/26/2023   10/26/2023   Y   1/18/2024    26100.00     0.00         0.00         26100.00     1    Foreign   N   N   0   Y   Below Dollar Threshold                    906 BOSTON TURNPIKE                                                                      SHAEWSBURY           MA   01545          USA
+```
+[p005_p0122]
+
+```text
+TURTLE AND HUGHES INC                      4000174782              Split bus Switchboard, Front Access Front and Rear Align, Type 3R nonwalk-in Sloped Roof, 480Y 27               Open        Commodities/Supplies                  Authority Contract - Competitive Bid       9/6/2022     9/6/2022     Y   3/27/2023    345000.00    0.00         0.00         345000.00    2    NYS       Y   Y   1   N                                             1000 Prime Place                                                                         Hauppauge            NY   11788          USA
+```
+[p005_p0123]
+
+```text
+TURTLE AND HUGHES INC                      4000185960              CONDUIT, PVC, 6Inch X 10 FT., BELLED, SCHEDULE 40                                                               Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       5/23/2023    5/23/2023    Y   6/7/2023     273750.00    273750.00    273750.00    0.00         16   NYS       Y   Y   1   N                                             1000 Prime Place                                                                         Hauppauge            NY   11788          USA
+```
+[p005_p0124]
+
+```text
+TURTLE AND HUGHES INC                      4000187615              COUPLING,4Inch,PVC,FOR TYPE 11 DIRECT BURIAL DUCT, CARLON E240-N                                                Open        Commodities/Supplies                  Authority Contract - Competitive Bid       7/10/2023    7/10/2023    Y   7/25/2023    163191.50    161351.90    161351.90    1839.60      14   NYS       Y   Y   1   N                                             1000 Prime Place                                                                         Hauppauge            NY   11788          USA
+```
+[p005_p0125]
+
+```text
+TURTLE AND HUGHES INC                      4000191663              ADAPTER ASSY, FEEDER LEAD, FOR CONVENTIONAL 3RD RAIL, TO INCLUDE 2 TERMINAL FISH PLATE 4 BACKING                Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/16/2023   10/16/2023   Y   11/27/2023   70000.00     0.00         0.00         70000.00     3    NYS       Y   Y   1   Y   Below Dollar Threshold                    1000 Prime Place                                                                         Hauppauge            NY   11788          USA
+```
+[p005_p0126]
+
+```text
+TWINCO MFG. CO., INC.                      4000186452              CONNECTION, IMPEDANCE BOND, FLEXIBLE BUS COPPER, 15 LAMINATIONS, .0186”X4InchX19InchLG., ASTM SPEC.B-187-6      Open        Commodities/Supplies                  Authority Contract - Competitive Bid       6/6/2023     6/6/2023     Y   10/24/2023   121562.50    47360.75     47360.75     74201.75     1    NYS       N   N   0   Y   Below Dollar Threshold                    30 COMMERCE DRIVE                                                                        HAUPPAUGE            NY   11788          USA
+```
+[p005_p0127]
+
+```text
+TWINCO MFG. CO., INC.                      4000193354              CONNECTION, IMPEDANCE BOND, FLEXIBLE BUS COPPER, 15 LAMINATIONS, .0186”X4InchX19InchLG., ASTM SPEC.B-187-6      Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/5/2023    12/5/2023    Y   3/26/2024    61770.00     0.00         0.00         61770.00     2    NYS       N   N   0   Y   Below Dollar Threshold                    30 COMMERCE DRIVE                                                                        HAUPPAUGE            NY   11788          USA
+```
+[p005_p0128]
+
+```text
+VOESTALPINE RAILWAY SYSTEMS NORTRAK LLC    4000179267              4167 Replacment Material - Track                                                                                Open        Commodities/Supplies                  Authority Contract - Non-Competitive Bid   12/22/2022   12/22/2022   Y   10/18/2023   58591.00     58591.00     58591.00     0.00         1    Foreign   N   N   0   Y   Sole Source                  58591.00     3930 VALLEY E INDUSTRIAL DRIVE                                                           BIRMINGHAM           AL   35217          USA
+```
+[p005_p0129]
+
+```text
+WABTEC COMPONENTS LLC /G AND B SPECIALTI   4000185391              Layout-Rod Kit M3 RH Frog Layout Three Lug, 2Inch OP Rod GANDB 899252-001RX-A7060011                            Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       5/10/2023    5/10/2023    Y   8/8/2023     25242.00     25242.00     25242.00     0.00         2    Foreign   N   N   0   Y   Below Dollar Threshold                    DBA G AND B SPECIALTIES                                   P. O. BOX 305                  BERWICK              PA   18603          USA
+```
+[p005_p0130]
+
+```text
+WISE COMPONENTS, INC.                      4000173085              CABLE, GAMECHANGER CAT6 UNSHIELDED TWISTED PAIR PLENUM, 1000’ FT PER BX, PAIGE PARTno.258330804 OR LIR          Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       7/18/2022    7/18/2022    Y   2/2/2023     59340.00     14835.00     59340.00     0.00         5    Foreign   N   N   0   N                                             79 HARBOR VIEW AVE.                                                                      STAMFORD             CT   06902          USA
+```
+[p005_p0131]
+
+```text
+ABLE EQUIPMENT RENTAL, INC.                4000146872              BOOM LIFT, ARTICULATING, 60 FT. GAS PROPANE FUELED, JLG 600AJ RICHMOND HILL FACILITY                            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       4/1/2020     4/1/2020     Y   3/31/2023    192060.00    870.00       187570.00    4490.00      3    NYS       N   N   0   Y   Below Dollar Threshold                    1050 GRAND BOULEVARD                                                                     DEER PARK            NY   11729          USA
+```
+[p005_p0132]
+
+```text
+CASSONE LEASING, INC.                      4000146751              Cassone Trailer No. 01260-354                                                                                   Completed   Consulting Services                   Authority Contract - Competitive Bid       3/30/2020    3/30/2020    Y   4/12/2022    18288.00     2540.00      18288.00     0.00         1    NYS       Y   Y   1   Y   Below Dollar Threshold                    1900 LAKELAND AVE                                                                        RONKONKOMA           NY   11779          USA
+```
+[p005_p0133]
+
+```text
+CASSONE LEASING, INC.                      4000148640              Lease Trailer - Babylon Yard                                                                                    Open        Commodities/Supplies                  Authority Contract - Competitive Bid       5/26/2020    5/26/2020    Y   5/26/2020    15714.00     2233.00      15583.86     130.14       1    NYS       Y   Y   1   Y   Below Dollar Threshold                    1900 LAKELAND AVE                                                                        RONKONKOMA           NY   11779          USA
+```
+[p005_p0134]
+
+```text
+CASSONE LEASING, INC.                      4000176755              NEW 12 X 60 OFFICE TRAILER                                                                                      Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       10/18/2022   10/18/2022   Y   10/18/2022   101675.00    101675.00    101675.00    0.00         1    NYS       Y   Y   1   Y   Below Dollar Threshold                    1900 LAKELAND AVE                                                                        RONKONKOMA           NY   11779          USA
+```
+[p005_p0135]
+
+```text
+WABTEC PASSENGER TRANSIT                   4000175480              KIT, BASIC 3CD COMPRESSOR OVERHAUL, FOR 3CDBL COMPRESSOR, WABCO no. 655012 DE,DM **MOQ 5 EA**                   Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       9/19/2022    9/19/2022    Y   8/10/2023    26375.90     26375.90     26375.90     0.00         1    Foreign   N   N   0   Y   Below Dollar Threshold                    130 RIDGEVIEW CENTER DR                                                                  DUNCAN               SC   29334          USA
+```
+[p005_p0136]
+
+```text
+CASSONE LEASING, INC.                      4000184675              Office Trailer, 10 X 40 Trailer Size                                                                            Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       4/26/2023    4/26/2023    Y   6/26/2023    58941.00     58941.00     58941.00     0.00         2    NYS       Y   Y   1   Y   Below Dollar Threshold                    1900 LAKELAND AVE                                                                        RONKONKOMA           NY   11779          USA
+```
+[p005_p0137]
+
+```text
+CASSONE LEASING, INC.                      4000189103              12 X 60 NYS CODED TRAILER                                                                                       Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/15/2023    8/15/2023    Y   11/13/2023   244353.00    0.00         0.00         244353.00    1    NYS       Y   Y   1   Y   Below Dollar Threshold                    1900 LAKELAND AVE                                                                        RONKONKOMA           NY   11779          USA
+```
+[p005_p0138]
+
+```text
+CRANEMASTERS INC                           4000190406              Payment Only Cranemasters Invoice no.84                                                                         Open        Consulting Services                   Authority Contract - Competitive Bid       9/19/2023    9/19/2023    Y   9/19/2023    33285.00     33285.00     33285.00     0.00         1    Foreign   N   N   0   Y   Below Dollar Threshold                    8020 WHITEPINE ROAD                                                                      NORTH CHESTERFIELD   VA   23237          USA
+```
+[p005_p0139]
+
+```text
+HONEYWELL INDUSTRIES SOLUTIONS             4000164151              Honeywell Renewal Agreement US1109-1719 for period 9 1 2021 through 8 31 2022                                   Completed   Other                                 Authority Contract - Non-Competitive Bid   10/12/2021   10/12/2021   Y   8/31/2023    23804.00     0.00         23804.00     0.00         1    Foreign   N   N   0   Y   Below Dollar Threshold       23804.00     BUILDING SOLUTIONS                                        12490 COLLECTIONS CENTER DR.   CHICAGO              IL   60693          USA
+```
+[p005_p0140]
+
+```text
+PROGRESS RAIL LOCOMOTIVE INC               4000165317              ESA Battery Locomotive Product Test Agreement                                                                   Open        Other                                 Authority Contract - Non-Competitive Bid   11/15/2021   11/15/2021   Y   4/12/2023    3505000.00   0.00         0.00         3505000.00   1    Foreign   N   N   0   Y   Sole Source                  3505000.00   PO BOX 70530                                                                             CHICAGO              IL   60673          USA
+```
+[p005_p0141]
+
+```text
+WABTEC PASSENGER TRANSIT                   4000175539              KIT, BASIC 3CD COMPRESSOR OVERHAUL, FOR 3CDBL COMPRESSOR, WABCO no. 655012 DE,DM **MOQ 5 EA**                   Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       9/20/2022    9/20/2022    Y   6/6/2023     26375.90     26375.90     26375.90     0.00         1    Foreign   N   N   0   Y   Below Dollar Threshold                    130 RIDGEVIEW CENTER DR                                                                  DUNCAN               SC   29334          USA
+```
+[p005_p0142]
+
+```text
+B-TEC SOLUTIONS INC                        4000190377              BRACKET, PROTECTION BOARD, TOP ONLY, SUPPORT FOR COMPOSITE 3RD RAIL AND PROTECTION BOARD, PER LIRR D            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       9/19/2023    9/19/2023    Y   1/5/2024     26400.00     0.00         0.00         26400.00     3    Foreign   N   N   0   Y   Below Dollar Threshold                    913 CEDAR AVE                                                                            CROYDON              PA   19021          USA
+```
+[p005_p0143]
+
+```text
+A AND M INDUSTRIAL INC                     Multiple PO's - LIRRD   Various Items                                                                                                   Completed   Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            25550.47                                    Foreign   N                                                         PO BOX 40001                                                                             NEWARK               NJ   07101   4000   USA
+```
+[p005_p0144]
+
+```text
+ANCHOR ELECTRONIC DISTRIBUTING CORP        Multiple PO's - LIRRD   Various Items                                                                                                   Completed   Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            36179.69                                    NYS       N                                                         20 HOBART RD                                                                             SOUTHHOLD            NY   11971   1509   USA
+```
+[p005_p0145]
+
+```text
+BALCO INDUSTRIES INC                       Multiple PO's - LIRRD   Various Items                                                                                                   Completed   Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            37913.24                                    NYS       N                                                         99 LAFAYETTE DRIVE                                                                       SYOSSET              NY   11791          USA
+```
+[p005_p0146]
+
+```text
+CASSONE LEASING, INC.                      Multiple PO's - LIRRD   Various Items                                                                                                   Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            30207.74                                    NYS       N                                                         1900 LAKELAND AVE                                                                        RONKONKOMA           NY   11779          USA
+```
+[p005_p0147]
+
+```text
+EPAUL DYNAMICS                             Multiple PO's - LIRRD   Various Items                                                                                                   Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            55681.86                                    NYS       Y                                                         16 SINTSINK DRIVE EAST                                                                   PORT WASHINGTON      NY   11050          USA
+```
+[p005_p0148]
+
+```text
+FREMONT INDUSTRIAL CORP                    Multiple PO's - LIRRD   Various Items                                                                                                   Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            42304.47                                    NYS       N                                                         41 B KEYLAND COURT                                                                       BOHEMIA              NY   11716          USA
+```
+[p005_p0149]
+
+```text
+GRAYBAR                                    Multiple PO's - LIRRD   Various Items                                                                                                   Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            26914.14                                    Foreign   N                                                         25 RESEARCH PARKWAY                                                                      WALLINGFORD          CT   06492          USA
+```
+[p005_p0150]
+
+```text
+KELLY AND HAYES ELECTRICAL                 Multiple PO's - LIRRD   Various Items                                                                                                   Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            109339.98                                   NYS       N                                                         SUPPLY OF L.I., INC.                                      RP                             NESCONSET            NY   11767          USA
+```
+[p005_p0151]
+
+```text
+L.B. FOSTER RAIL TECHNOLOGIES INC          Multiple PO's - LIRRD   Various Items                                                                                                   Completed   Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            38999.00                                    Foreign   N                                                         415 HOLIDAY DRIVE                                                                        PITTSBURGH           PA   15220          USA
+```
+[p005_p0152]
+
+```text
+M.S. HI-TECH. INC                          Multiple PO's - LIRRD   Various Items                                                                                                   Completed   Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            26824.08                                    NYS       N                                                         517 ROUTE 111                                                                            HAUPPAUGE            NY   11788          USA
+```
+[p005_p0153]
+
+```text
+MENARD INDUSTRIES LLC                      Multiple PO's - LIRRD   Various Items                                                                                                   Completed   Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            66902.67                                    Foreign   N                                                         12052 HOMESTEAD RD                                                                       HOUSTON              TX   77050          USA
+```
+[p005_p0154]
+
+```text
+MULTI-SOURCE CORP                          Multiple PO's - LIRRD   Various Items                                                                                                   Completed   Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            26599.45                                    NYS       N                                                         2 SECATOAG AVENUE                                                                        PORT WASHINGTON      NY   11050   2107   USA
+```
+[p005_p0155]
+
+```text
+SIEMENS MOBILITY INC                       Multiple PO's - LIRRD   Various Items                                                                                                   Completed   Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            67878.56                                    Foreign   N                                                         PO BOX 3498                                                                              CAROL STREAM         IL   60132          USA
+```
+[p005_p0156]
+
+```text
+STAUFFER GLOVE AND SAFETY                  Multiple PO's - LIRRD   Various Items                                                                                                   Completed   Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            46144.38                                    Foreign   N                                                         P.O. BOX 45                                               (361 EAST SIXTH STREET)        RED HILL             PA   18076          USA
+```
+[p005_p0157]
+
+```text
+SWIFT TECH, LLC                            Multiple PO's - LIRRD   Various Items                                                                                                   Completed   Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            31828.32                                    NYS       N                                                         275A MARCUS BLVD.                                                                        HAUPPAUGE            NY   11788          USA
+```
+[p005_p0158]
+
+```text
+SWING INC                                  Multiple PO's - LIRRD   Various Items                                                                                                   Completed   Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            26546.97                                    Foreign   N                                                         11415 MELROSE AVE                                                                        FRANKLIN PARK        IL   60131          USA
+```
+[p005_p0159]
+
+```text
+TWINCO MFG. CO., INC.                      Multiple PO's - LIRRD   Various Items                                                                                                   Completed   Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            47146.16                                    NYS       N                                                         30 COMMERCE DRIVE                                                                        HAUPPAUGE            NY   11788          USA
+```
+[p005_p0160]
+
+```text
+W. W. GRAINGER INC.                        Multiple PO's - LIRRD   Various Items                                                                                                   Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            36907.79                                    NYS       N                                                         58 - 45 GRAND AVE                                                                        MASPETH              NY   11378          USA
+```
+[p005_p0161]
+
+```text
+WABTEC COMPONENTS LLC /G AND B SPECIALTI   Multiple PO's - LIRRD   Various Items                                                                                                   Completed   Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                            22003.00                                    Foreign   N                                                         DBA G AND B SPECIALTIES                                   P. O. BOX 305                  BERWICK              PA   18603          USA
+```
+[p005_p0162]
+
+```text
+TW CABLE LLC                               4000188173              STRAND,7 16 IN.,GALV.STL.,16M, CL.A GALV., PER LIRR SPEC. C501-02, 1000 FT. ON NON-PLY WOOD REELS,              Completed   Commodities/Supplies                  Authority Contract - Competitive Bid       7/25/2023    7/25/2023    Y   9/13/2023    26450.00     26450.00     26450.00     0.00         2    NYS       N   N   0   Y   Below Dollar Threshold                    PO BOX 3259                                                                              FARMINGDALE          NY   11735          USA
+```
+[p005_p0163]
+
+```text
+NSI NEAL SYSTEMS INC                       4000190080              On Site Visit Wheel Presses and Peripherals for period 9 1 2023 through 8 31 2024                               Open        Consulting Services                   Authority Contract - Non-Competitive Bid   9/12/2023    9/12/2023    Y   12/14/2026   26500.00     5300.00      5300.00      21200.00     1    Foreign   N   N   0   Y   Below Dollar Threshold       26500.00     122 TERRY DRIVE                                                                          NEWTOWN              PA   18940          USA
+```
+[p005_p0164]
+
+```text
+SIEMENS MOBILITY INC                       4000185790              SENSOR, SPEED, 3-PIN, SIEMENS 185068 OR LIRR APPROVED EQUAL, FOR USE ON PTC UNDERCAR C3                         Open        Commodities/Supplies                  Authority Contract - Competitive Bid       5/19/2023    5/19/2023    Y   9/6/2023     26500.00     0.00         0.00         26500.00     1    Foreign   N   N   0   Y   Below Dollar Threshold                    PO BOX 3498                                                                              CAROL STREAM         IL   60132          USA
+```
+[p005_p0165]
+
+```text
+NABSON INC                                 4000193317              HEAD ASSY. KIT,36 PIN, FOR THE BLUE COMMUNICATION JUMPER CABLE ASSY., NABSON 55002246 OR LIRR APPROV            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/5/2023    12/5/2023    Y   7/1/2024     28000.00     0.00         0.00         28000.00     1    Foreign   N   N   0   Y   Below Dollar Threshold                    480 NEPONSET ST                                           UNNIT 10C                      CANTON               MA   02021          USA
+```
+[p005_p0166]
+
+```text
+HITACHI RAIL STS USA INC                   4000190018              RELAY,SWITCH MACHINE,SOLID STATE,COMPLETE PACKAGE,ANSALDO N40103601                                             Open        Commodities/Supplies                  Authority Contract - Non-Competitive Bid   9/11/2023    9/11/2023    Y   12/4/2024    28337.76     0.00         0.00         28337.76     1    Foreign   N   N   0   Y   Below Dollar Threshold       28337.76     P.O. BOX 7780-1513                                                                       PHILADELPHIA         PA   19182          USA
+```
+[p005_p0167]
+
+```text
+HITACHI RAIL STS USA INC                   4000193867              RELAY,SWITCH MACHINE,SOLID STATE,COMPLETE PACKAGE,ANSALDO N40103601                                             Open        Commodities/Supplies                  Authority Contract - Non-Competitive Bid   12/19/2023   12/19/2023   Y   4/14/2025    28337.76     0.00         0.00         28337.76     1    Foreign   N   N   0   Y   Below Dollar Threshold       28337.76     P.O. BOX 7780-1513                                                                       PHILADELPHIA         PA   19182          USA
+```
+[p005_p0168]
+
+```text
+WABTEC COMPONENTS LLC /G AND B SPECIALTI   4000193231              KEY, BLACK SERIALIZED, USED FOR SWITCH LOCK, GANDB PARTno. 540200-007 OR LIRR APPROVED EQUAL                    Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/4/2023    12/4/2023    Y   3/25/2024    28800.00     0.00         0.00         28800.00     4    Foreign   N   Y   2   Y   Below Dollar Threshold                    DBA G AND B SPECIALTIES                                   P. O. BOX 305                  BERWICK              PA   18603          USA
+```
+[p005_p0169]
+
+```text
+SIEMENS MOBILITY INC                       4000192266              SIEMENS MPR Evaluation, Repair AND Calibration, 15 Units, See serial no.s below                                 Open        Commodities/Supplies                  Authority Contract - Non-Competitive Bid   11/2/2023    11/2/2023    Y   7/4/2024     29700.00     0.00         0.00         29700.00     1    Foreign   N   N   0   Y   Sole Source                  29700.00     PO BOX 3498                                                                              CAROL STREAM         IL   60132          USA
+```
+[p005_p0170]
+
+```text
+KELLY AND HAYES ELECTRICAL                 4000191233              TUBE, HIGH VOLTAGE, HEAT SHRINKABLE, NON-TRACKING, 3InchDIA. EXPANDED, RAYCHEM HVOT 82 29 A U 3Inch RED T       Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/5/2023    10/5/2023    Y   12/4/2023    29750.00     29750.00     29750.00     0.00         1    NYS       N   N   0   Y   Below Dollar Threshold                    SUPPLY OF L.I., INC.                                      RP                             NESCONSET            NY   11767          USA
+```
+[p005_p0171]
+
+```text
+MCINDOO ASSOCIATES INC.                    400000000002936         Pneumercator Fuel Services                                                                                      Open        Consulting Services                   Authority Contract - Non-Competitive Bid   7/11/2023    7/11/2023    Y   7/10/2026    30000.00     0.00         0.00         30000.00     1    NYS       N   N   0   Y   Sole Source                  30000.00     333 CONKLIN ST                                            SUITE C                        FARMINGDALE          NY   11735          USA
+```
+[p005_p0172]
+
+```text
+ROMAN STONE CONSTRUCTION CO.               400000000002861         Discretionary.I FB Slabs for                                                                                    Open        Commodities/Supplies                  Authority Contract - Competitive Bid       4/14/2023    4/14/2023    Y   7/31/2023    33000.00     0.00         0.00         33000.00     1    NYS       N   Y   0   Y   Discretionary Procurement                 COMPANY                                                   S. 4TH ST. AND CORBIN AVE.     BAY SHORE            NY   11706          USA
+```
+[p005_p0173]
+
+```text
+ROMAN STONE CONSTRUCTION CO.               400000000003033         DISCR CONCRETE LAGGING PANELS                                                                                   Open        Commodities/Supplies                  Authority Contract - Com
+```
+
+## Page 6
+
+> [p006_c0001] This image shows a full page of blank graph paper. The paper is covered with a uniform grid of small, light gray squares. The grid lines are thin and evenly spaced. There are no margins, text, or any other markings on the page. The overall appearance is that of a clean, unused sheet of stationery.
+
+## Page 7
+
+> [p007_c0001] A blank sheet of graph paper with a grid pattern.
+
+## Page 8
+
+> [p008_c0001] A blank sheet of graph paper with a uniform grid pattern.
+
+## Page 9
+
+> [p009_c0001] A blank sheet of graph paper with a grid pattern.
+
+## Page 10
+
+> [p010_c0001] A blank sheet of graph paper with a fine grid pattern.
+
+## Page 11
+
+[p011_c0001] A blank sheet of graph paper with a grid pattern. The grid consists of small, uniform squares. The paper is white, and the grid lines are light gray. There are no markings, text, or other features on the page.
+[p011_p0001]
+
+```text
+PARSONS TRANSPORTATION GROUP OF NY         S81120                      IQ Program-wide inspection services train signals                                                      Open        Consulting Services                   Authority Contract - Competitive Bid       6/1/2016     6/1/2016     Y   6/7/2022     29429868.00    6738985.27    27897079.76    1532788.24     5    NYS       N   Y   4    N                                              100 BROADWAY                  20TH FLOOR            NEW YORK          NY   10005          USA
+```
+[p011_p0002]
+
+```text
+PARSONS TRANSPORTATION GROUP OF NY         S81120 OPR                  IQ Program-wide inspection services train signals                                                      Open        Consulting Services                   Authority Contract - Competitive Bid       6/1/2016     6/1/2016     Y   5/31/2022    11520526.00    1359584.87    9678828.07     1841697.93     5    NYS       N   Y   4    N                                              100 BROADWAY                  20TH FLOOR            NEW YORK          NY   10005          USA
+```
+[p011_p0003]
+
+```text
+PARSONS TRANSPORTATION GROUP OF NY         S81236                      Consultant Services for Design and Construction Support for CBTC AWS Systems for Culver Line           Open        Consulting Services                   Authority Contract - Competitive Bid       12/27/2017   1/8/2018     Y   3/1/2025     7226575.00     1072391.72    4888344.84     2338230.16     3    NYS       N   N   0    N                                              100 BROADWAY                  20TH FLOOR            NEW YORK          NY   10005          USA
+```
+[p011_p0004]
+
+```text
+PARSONS TRANSPORTATION GROUP OF NY         D81550                      IQ A E Design Services for Miscellaneous MTA-Funded Construction Projects                              Open        Consulting Services                   Authority Contract - Competitive Bid       10/9/2015    10/9/2015    Y   4/2/2022     19077524.22    3077319.48    16050832.92    3026691.30     27   NYS       N   Y   10   N                                              100 BROADWAY                  20TH FLOOR            NEW YORK          NY   10005          USA
+```
+[p011_p0005]
+
+```text
+PARSONS TRANSPORTATION GROUP OF NY         D81550 OPR                  IQ A E Design Services for Miscellaneous MTA-Funded Construction Projects                              Open        Consulting Services                   Authority Contract - Competitive Bid       10/9/2015    10/9/2015    Y   4/2/2022     1586287.00     552632.43     1272072.92     314214.08      27   NYS       N   Y   10   N                                              100 BROADWAY                  20TH FLOOR            NEW YORK          NY   10005          USA
+```
+[p011_p0006]
+
+```text
+PARSONS TRANSPORTATION GROUP OF NY         W32366                      700 800 MHz Bus Radio System                                                                           Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       3/2/2016     3/2/2016     Y   1/1/2021     216698157.79   22379776.37   177514889.42   39183268.37    2    NYS       N   N   0    N                                              100 BROADWAY                  20TH FLOOR            NEW YORK          NY   10005          USA
+```
+[p011_p0007]
+
+```text
+PARSONS-WSP USA AANDE JOINT VENTURE        D81574A                     IQ A E Design Services for Miscellaneous Construction and Security Projects                            Open        Consulting Services                   Authority Contract - Competitive Bid       1/5/2018     8/12/2019    Y   1/4/2023     2925172.75     13436.66      2199965.88     725206.87      22   NYS       N   N   0    N                                              100 BROADWAY 18TH FL                                NEW YORK          NY   10005          USA
+```
+[p011_p0008]
+
+```text
+PAUL J. SCARIANO, INC.                     GFM-527I                    As-Needed Misc Construction                                                                            Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       3/16/2020    3/16/2020    Y   7/15/2024    11361823.01    2461088.34    10070245.56    1291577.45     15   NYS       N   N   0    N                                              12 POTTER AVE                                       NEW ROCHELLE      NY   10801          USA
+```
+[p011_p0009]
+
+```text
+PAUL J. SCARIANO, INC.                     106733                      M00007301- H AND S                                                                                     Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/13/2021   12/13/2021   Y   6/6/2023     16071748.31    8131832.09    14314470.26    1757278.05     15   NYS       N   N   0    N                                              12 POTTER AVE                                       NEW ROCHELLE      NY   10801          USA
+```
+[p011_p0010]
+
+```text
+PAUL J. SCARIANO, INC.                     CM030                       G05269 - Retail and Passenger experience enhancements to the GCT Concourse and Caverns.                Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       9/27/2021    9/27/2021    N                53310164.25    17669457.46   49657760.49    3652403.76     5    NYS       N   N   0    N                                              12 POTTER AVE                                       NEW ROCHELLE      NY   10801          USA
+```
+[p011_p0011]
+
+```text
+PAUL J. SCARIANO, INC.                     CM030-OPER                  Mod no.6 - 45th Street and Misc Changes                                                                Open        Legal Services                        Authority Contract - Competitive Bid       7/12/2022    7/12/2022    N                597345.00      164555.44     164555.44      432789.56      1    NYS       N   N   0    N                                              12 POTTER AVE                                       NEW ROCHELLE      NY   10801          USA
+```
+[p011_p0012]
+
+```text
+PAUL J. SCARIANO, INC.                     A37110                      ADA Upgrade of Bedford Park                                                                            Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       4/17/2018    4/19/2018    Y   8/18/2020    17591080.24    44000.00      17591080.24    0.00           5    NYS       N   Y   0    N                                              12 POTTER AVE                                       NEW ROCHELLE      NY   10801          USA
+```
+[p011_p0013]
+
+```text
+PAUL J. SCARIANO, INC.                     C42006C                     Stipend for RFP Participation                                                                          Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       1/19/2023    1/19/2023    Y   1/23/2023    34000.00       34000.00      34000.00       0.00           4    NYS       N   Y   0    N                                              12 POTTER AVE                                       NEW ROCHELLE      NY   10801          USA
+```
+[p011_p0014]
+
+```text
+PAUL J. SCARIANO, INC.                     E30645ST2                   Stipend for E30645                                                                                     Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       4/10/2023    4/10/2023    Y   4/24/2023    48000.00       48000.00      48000.00       0.00           1    NYS       N   N   0    N                                              12 POTTER AVE                                       NEW ROCHELLE      NY   10801          USA
+```
+[p011_p0015]
+
+```text
+PE AND CONSULTANTS NEW YORK LLC            C43066R                     Communication Room Upgrade                                                                             Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       4/27/2023    4/27/2023    Y   11/27/2023   595000.00      0.00          0.00           595000.00      5    NYS       Y   Y   3    Y   Small Business Mentoring                   505 NORTHERN BLVD, STE# 200                         GREAT NECK        NY   11021          USA
+```
+[p011_p0016]
+
+```text
+PE AND CONSULTANTS NEW YORK LLC            C43063                      Rehabilitation of Comm Room                                                                            Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/30/2021   12/30/2021   Y   10/31/2022   380000.00      15295.00      361000.00      19000.00       4    NYS       Y   Y   3    Y   Small Business Mentoring                   505 NORTHERN BLVD, STE# 200                         GREAT NECK        NY   11021          USA
+```
+[p011_p0017]
+
+```text
+PEAK TECHNICAL SERVICES, INC.              D81620                      IQ Staffing Services for Miscellaneous Projects                                                        Open        Staffing Services                     Authority Contract - Competitive Bid       9/13/2018    9/13/2018    Y   3/12/2025    4471865.00     366438.05     3292313.26     1179551.74     22   NYS       N   Y   6    N                                              5 PENN PLAZA                                        NEW YORK          NY   10001          USA
+```
+[p011_p0018]
+
+```text
+PEAK TECHNICAL SERVICES, INC.              D81624                      IQ Staffing Services for Miscellaneous Projects                                                        Open        Staffing Services                     Authority Contract - Competitive Bid       9/13/2018    5/5/2022     Y   9/12/2023    6761337.00     1056363.86    4736695.82     2024641.18     22   NYS       N   Y   6    N                                              5 PENN PLAZA                                        NEW YORK          NY   10001          USA
+```
+[p011_p0019]
+
+```text
+PEAK TECHNICAL SERVICES, INC.              D81624 OPR                  IQ Staffing Services for Miscellaneous Projects                                                        Open        Staffing Services                     Authority Contract - Competitive Bid       9/13/2018    9/13/2018    Y   3/12/2025    206006.00      77447.44      77447.44       128558.56      22   NYS       N   Y   6    N                                              5 PENN PLAZA                                        NEW YORK          NY   10001          USA
+```
+[p011_p0020]
+
+```text
+PENCOL CONTRACTING CORP                    A37377                      SBMP Station Ventilator                                                                                Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/26/2023   12/26/2023   Y   12/26/2024   1767391.00     0.00          0.00           1767391.00     6    NYS       Y   Y   6    Y   Small Business Mentoring                   70 E SUNRISE HWY              SUITE 500             VALLEY STREAM     NY   11581          USA
+```
+[p011_p0021]
+
+```text
+PENDA AIKEN INC                            T.O. 18017-PENDA AIKEN      Vetting Specialist - Erik Rigby 6 months                                                               Open        Consulting Services                   Authority Contract - Competitive Bid       2/21/2019    2/21/2019    N                771018.25      123177.84     546301.72      224716.53      4    NYS       N   N   0    N                                              330 LIVINGSTON ST             2ND FL                BROOKLYN          NY   11217          USA
+```
+[p011_p0022]
+
+```text
+PERI CONTRACTING INC                       A37358                      Street Stair Repairs S P1 at t                                                                         Completed   Design and Construction/Maintenance   Authority Contract - Competitive Bid       9/7/2021     9/7/2021     Y   5/13/2022    474300.00      45099.50      474300.00      0.00           5    NYS       N   Y   3    Y   Small Business Mentoring                   106-03 86TH ST                                      OZONE PARK        NY   11417          USA
+```
+[p011_p0023]
+
+```text
+PHASE 2 PARTNERSHIP                        C81190                      Consultant Design Services for Phase 2 of the Second Avenue Subway                                     Open        Consulting Services                   Authority Contract - Competitive Bid       12/30/2016   12/30/2016   Y   6/29/2024    190039502.00   12216545.13   170774437.46   19265064.54    3    NYS       N   Y   0    N                                              1 PENN PLAZA, 5TH FL                                NEW YORK          NY   10119          USA
+```
+[p011_p0024]
+
+```text
+PINNACLE ENVIRONMENTAL CORP                C-30851 OPR                 IQ Asbestos Abatement and Other Environmental Remediation Services                                     Open        Consulting Services                   Authority Contract - Competitive Bid       9/28/2020    9/30/2020    Y   9/29/2024    20886.88       8382.19       8382.19        12504.69       7    Foreign   N   Y   1    N                                              200 BROAD ST                                        CARLSTADT         NJ   7072           USA
+```
+[p011_p0025]
+
+```text
+PINNACLE ENVIRONMENTAL CORP                C30847                      IQ Asbestos Abatement and Other Environmental Remediation Services                                     Open        Other Professional Services           Authority Contract - Competitive Bid       9/28/2020    9/30/2020    Y   9/29/2024    1837914.41     126614.94     179572.35      1658342.06     7    Foreign   N   Y   1    N                                              200 BROAD ST                                        CARLSTADT         NJ   7072           USA
+```
+[p011_p0026]
+
+```text
+PINNACLE ENVIRONMENTAL CORP                C30851                      IQ Asbestos Abatement and Other Environmental Remediation Services                                     Open        Other Professional Services           Authority Contract - Competitive Bid       9/28/2020    9/30/2020    Y   9/29/2024    2124768.20     183975.44     559462.22      1565305.98     7    Foreign   N   Y   1    N                                              200 BROAD ST                                        CARLSTADT         NJ   7072           USA
+```
+[p011_p0027]
+
+```text
+PINNACLE ENVIRONMENTAL CORP                C31695                      IQ Asbestos Abatement and Other Environmental Remediation Services                                     Open        Other Professional Services           Authority Contract - Competitive Bid       9/1/2016     9/1/2016     Y   10/26/2020   4259965.00     21125.15      1119603.44     3140361.56     9    Foreign   N   Y   1    N                                              200 BROAD ST                                        CARLSTADT         NJ   7072           USA
+```
+[p011_p0028]
+
+```text
+PJS ELECTRIC, INC.                         600000000022496             W-32560 - Police Radio Enhance                                                                         Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       9/12/2018    11/7/2018    Y   1/4/2021     12385944.00    332395.17     12211710.77    174233.23      9    NYS       N   Y   3    Y   NYS/NYC/CountyContract                     12 POTTER AVE.                                      NEW ROCHELLE      NY   10801          USA
+```
+[p011_p0029]
+
+```text
+PJS ELECTRIC, INC.                         GFM-534E                    As Needed Electrical                                                                                   Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       4/13/2020    4/13/2020    Y   8/12/2024    4651225.78     1355698.35    2535378.35     2115847.43     9    NYS       N   Y   1    N                                              12 POTTER AVE.                                      NEW ROCHELLE      NY   10801          USA
+```
+[p011_p0030]
+
+```text
+PJS ELECTRIC, INC.                         C34847                      Fire Alarm System Replace                                                                              Completed   Design and Construction/Maintenance   Authority Contract - Competitive Bid       5/23/2018    5/23/2018    Y   8/23/2020    11548113.00    56280.00      11548113.00    0.00           7    NYS       N   Y   0    N                                              12 POTTER AVE.                                      NEW ROCHELLE      NY   10801          USA
+```
+[p011_p0031]
+
+```text
+PMA CONSULTANTS LLC                        PS866R-TO 18005-CIRM        cirm sERVICES                                                                                          Open        Consulting Services                   Authority Contract - Competitive Bid       6/28/2018    9/5/2018     N                6998714.50     1361794.46    6085899.93     912814.57      16   Foreign   Y   Y   3    N                                              226 W LIBERTY ST                                    ANN ARBOR         MI   48104          USA
+```
+[p011_p0032]
+
+```text
+PMA CONSULTANTS LLC                        PS865-25                    Professional and Technical Sta                                                                         Open        Staffing Services                     Authority Contract - Competitive Bid       1/1/2021     1/1/2021     Y   12/31/2021   1326848.61     310288.28     1105458.58     221390.03      0    Foreign   Y   Y   1    N                                              226 W LIBERTY ST                                    ANN ARBOR         MI   48104          USA
+```
+[p011_p0033]
+
+```text
+POPULAR SERVICES INC                       A37713                      Street Stair Repairs at Parksi                                                                         Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       9/23/2022    9/23/2022    Y   5/23/2023    590000.00      543613.74     543613.74      46386.26       4    NYS       Y   Y   1    Y   Small Business Mentoring                   9117 118TH ST                                       RICHMOND HILL     NY   11418          USA
+```
+[p011_p0034]
+
+```text
+POPULAR SERVICES INC                       A37773                      SBMP Stair Repairs                                                                                     Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       10/30/2023   10/30/2023   Y   6/30/2024    495715.00      0.00          0.00           495715.00      4    NYS       Y   Y   2    Y   Small Business Mentoring                   9117 118TH ST                                       RICHMOND HILL     NY   11418          USA
+```
+[p011_p0035]
+
+```text
+POPULAR SERVICES INC                       A37745                      Street Stair Repairs                                                                                   Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/16/2022   12/16/2022   Y   8/15/2023    887630.00      351735.12     351735.12      535894.88      5    NYS       Y   Y   4    Y   Small Business Mentoring                   9117 118TH ST                                       RICHMOND HILL     NY   11418          USA
+```
+[p011_p0036]
+
+```text
+POSILLICO CIVIL INC                        GFM-527J                    As-Needed Misc Construction                                                                            Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       3/16/2020    3/16/2020    Y   7/15/2024    4189765.44     2999215.99    3555593.39     634172.05      15   NYS       N   N   0    N                                              1750 NEW HIGHWAY                                    FARMINGDALE       NY   11735          USA
+```
+[p011_p0037]
+
+```text
+PPS(USA) CONSTRUCTION INC                  A37778                      SBMP Stair Repairs                                                                                     Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       11/21/2023   11/21/2023   Y   7/21/2024    639827.10      0.00          0.00           639827.10      5    NYS       N   Y   2    Y   Small Business Mentoring                   110-01 101st Ave                                    S.Richmond Hill   NY   11419          USA
+```
+[p011_p0038]
+
+```text
+PRISMATIC DEVELOPMENT CORP                 C82004                      D B of Clifton Shop                                                                                    Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/30/2016   12/30/2016   Y   6/17/2021    165362356.00   5973951.72    155274457.29   10087898.71    5    Foreign   N   N   0    N                                              60 ROUTE 46 EAST                                    FAIRFIELD         NJ   7004           USA
+```
+[p011_p0039]
+
+```text
+PROSKAUER ROSE LLP                         SASP2-IQ CONSULTANT         I Q Consultant Services for SASP2                                                                      Open        Other Professional Services           Authority Contract - Competitive Bid       6/22/2022    6/22/2022    N                500000.00      175768.51     319332.26      180667.74      1    NYS       N   N   0    N                                              ELEVEN TIMES SQUARE                                 NEW YORK          NY   10036          USA
+```
+[p011_p0040]
+
+```text
+R J GREEN CONSTRUCTION CORP                VNC-2001                    Misc. Repairs VNB Service Bldg                                                                         Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/23/2020   12/23/2020   Y   9/30/2022    1061558.96     70241.41      1037125.26     24433.70       8    NYS       Y   Y   7    Y   Small Business Mentoring                   814 CONEY ISLAND AVE                                BROOKLYN          NY   11218          USA
+```
+[p011_p0041]
+
+```text
+RAD-ENTECH JV                              PSC-18-3020                 CM for HH-07A HH-30                                                                                    Open        Consulting Services                   Authority Contract - Competitive Bid       9/30/2019    9/30/2019    Y   7/31/2022    3681291.89     29235.51      3575488.04     105803.85      3    NYS       N   Y   0    N                                              17 STATE STREET               36TH FL               NEW YORK          NY   10004          USA
+```
+[p011_p0042]
+
+```text
+RAILPROS INC                               PS21004-GEC TRAIN           RCC Modification                                                                                       Open        Commodities/Supplies                  Authority Contract - Competitive Bid       2/2/2022     2/2/2022     N                8387485.00     804390.14     8105034.77     282450.23      1    Foreign   N   N   0    N                                              3 PENN PLAZA EAST             SUITE A               NEWARK            NJ   07105          USA
+```
+[p011_p0043]
+
+```text
+RAILPROS INC                               PS21004-GEC TRAIN OPERATO   RCC Modification                                                                                       Open        Staffing Services                     Authority Contract - Competitive Bid       7/13/2021    7/13/2021    N                2148072.14     30324.08      1993696.67     154375.47      1    Foreign   N   N   0    N                                              3 PENN PLAZA EAST             SUITE A               NEWARK            NJ   07105          USA
+```
+[p011_p0044]
+
+```text
+RAILROAD CONSTRUCTION COMPANY INC          6375                        Cherry Valley Bridge Replac                                                                            Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       11/12/2021   11/30/2021   Y   11/2/2023    16746927.80    6886622.34    15762054.02    984873.78      7    Foreign   N   N   0    N                                              75 - 77 GROVE ST                                    PATERSON          NJ   7503           USA
+```
+[p011_p0045]
+
+```text
+RAILROAD CONSTRUCTION COMPANY INC          C33942ST3                   Stipend C33942 unsuccessful Pr                                                                         Open        Other                                 Authority Contract - Competitive Bid       2/2/2023     2/2/2023     Y   4/6/2023     70000.00       70000.00      70000.00       0.00           1    Foreign   N   N   0    N                                              75 - 77 GROVE ST                                    PATERSON          NJ   7503           USA
+```
+[p011_p0046]
+
+```text
+RAILROAD CONSTRUCTION COMPANY INC          C42006                      D B CIY Abutment AND St Marks Br                                                                       Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/29/2022   12/29/2022   Y   9/3/2024     19564820.00    3860003.82    3860003.82     15704816.18    4    Foreign   N   Y   0    N                                              75 - 77 GROVE ST                                    PATERSON          NJ   7503           USA
+```
+[p011_p0047]
+
+```text
+RAILROAD-MICHELS JOINT VENTURE LLC         CH058B                      Final dsgn and ctrctn of new tunnel for grade-separated crossover                                      Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       10/5/2021    8/2/2021     Y   12/31/2022   151896340.00   61190222.62   125082902.88   26813437.12    3    Foreign   N   N   0    N                                              75-77 GROVE ST                                      PATERSON          NJ   7503           USA
+```
+[p011_p0048]
+
+```text
+RCC/GCCOM - A JOINT VENTURE LLC            6501                        Webster Ave. Bridge Repl.                                                                              Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/28/2023   12/22/2023   N                10565240.00    0.00          0.00           10565240.00    4    Foreign   N   Y   0    N                                              75-77 Grove St                                      Paterson          NJ   07503          USA
+```
+[p011_p0049]
+
+```text
+REIS/AKAR RENOVATION INC                   A37791                      Platform Stair Replacement                                                                             Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       8/31/2023    8/31/2023    Y   8/31/2024    1177565.01     0.00          0.00           1177565.01     5    NYS       N   Y   4    Y   Small Business Mentoring                   60-44 56TH DR                                       MASPETH           NY   11378          USA
+```
+[p011_p0050]
+
+```text
+RESTANI CONSTRUCTION CORP                  GFM-526                     Authority Wide Roadway Repairs                                                                         Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/31/2018   12/31/2018   Y   4/30/2024    43570540.00    4553833.05    40737952.82    2832587.18     3    NYS       N   Y   0    N                                              4204 BERRIAN BLVD                                   ASTORIA           NY   11105          USA
+```
+[p011_p0051]
+
+```text
+RESTANI CONSTRUCTION CORP                  GFM-527L                    As-Needed Misc Construction                                                                            Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       3/16/2020    3/16/2020    Y   7/15/2024    727464.00      149060.41     691090.79      36373.21       15   NYS       N   N   0    N                                              4204 BERRIAN BLVD                                   ASTORIA           NY   11105          USA
+```
+[p011_p0052]
+
+```text
+RESTANI-ASW JV LLC                         VN-81X                      Suspended Span Lower Level Deck Rehabilitation at the Verrazzano-Narrows Bridge                        Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       4/17/2023    4/17/2023    Y   4/13/2026    92600000.00    10269995.80   10269995.80    82330004.20    5    NYS       N   Y   0    N                                              42-04 BERRIAN BLVD                                  ASTORIA           NY   11105          USA
+```
+[p011_p0053]
+
+```text
+RISING SUN CONSTRUCTION LLC                C34924                      Sandy MitigationResilency Pro                                                                          Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/19/2022   1/12/2023    Y   4/17/2025    25838246.00    4278366.08    4278366.08     21559879.92    7    Foreign   N   Y   1    N                                              273 MAIN STREET                                     SOUTH RIVER       NJ   8882           USA
+```
+[p011_p0054]
+
+```text
+RISING SUN CONSTRUCTION LLC                C40257                      CAP Contract C 40257 Facade R                                                                          Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       2/27/2020    3/6/2020     Y   9/21/2022    15927194.80    2870894.00    13121457.62    2805737.18     14   Foreign   N   Y   4    N                                              273 MAIN STREET                                     SOUTH RIVER       NJ   8882           USA
+```
+[p011_p0055]
+
+```text
+RK BEST CONSTRUCTION INC                   A37715                      Street Stair Repairs- Ralph Av                                                                         Completed   Design and Construction/Maintenance   Authority Contract - Competitive Bid       10/10/2022   10/10/2022   Y   6/23/2023    649000.00      618945.75     618945.75      30054.25       5    NYS       Y   Y   1    Y   Small Business Mentoring                   77 HEATHERFIELD RD.                                 VALLEY STREAM     NY   11581          USA
+```
+[p011_p0056]
+
+```text
+RK CONTRACTING INC                         6499                        Painting of Viaduct                                                                                    Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/8/2023    12/8/2023    Y   12/2/2024    2510000.00     0.00          0.00           2510000.00     6    NYS       N   Y   4    Y   Small Business Mentoring                   37-16 92ND ST                                       JACKSON HEIGHTS   NY   11372          USA
+```
+[p011_p0057]
+
+```text
+RK CONTRACTING INC                         C35319                      Rehabilitation of Exits                                                                                Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/15/2022   12/15/2022   Y   12/15/2023   1649000.00     981377.55     981377.55      667622.45      5    NYS       N   Y   3    Y   Small Business Mentoring                   37-16 92ND ST                                       JACKSON HEIGHTS   NY   11372          USA
+```
+[p011_p0058]
+
+```text
+RK CONTRACTING INC                         C6513                       SBM6513 Bethpage HVAC                                                                                  Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/22/2023   12/22/2023   Y   12/27/2024   4950000.00     0.00          0.00           4950000.00     3    NYS       N   N   0    Y   Small Business Mentoring                   37-16 92ND ST                                       JACKSON HEIGHTS   NY   11372          USA
+```
+[p011_p0059]
+
+```text
+RMSK CONTRACTING CORP                      C30539                      Wellpoint Rehabilitation Lenox                                                                         Completed   Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/28/2021   12/28/2021   Y   8/30/2023    6499000.00     1568150.28    6174049.99     324950.01      3    Foreign   Y   Y   1    N                                              20 PAULISON AVENUE                                  RIDGEFIELD PARK   NJ   7660           USA
+```
+[p011_p0060]
+
+```text
+ROTATOR STAFFING SERVICES INC              D81621                      IQ Staffing Services for Miscellaneous Projects                                                        Open        Staffing Services                     Authority Contract - Competitive Bid       9/13/2018    9/13/2018    Y   3/12/2025    11311487.58    1186597.23    7716281.44     3595206.14     22   Foreign   N   Y   6    N                                              P O BOX 366                   25 KENNEDY BLVD       E BRUNSWICK       NJ   8816    366    USA
+```
+[p011_p0061]
+
+```text
+ROTATOR STAFFING SERVICES INC              D81625                      IQ Staffing Services for Miscellaneous Projects                                                        Open        Staffing Services                     Authority Contract - Competitive Bid       9/13/2018    10/14/2022   Y   9/12/2023    14995604.00    1324753.66    9385991.63     5609612.37     22   Foreign   N   Y   6    N                                              P O BOX 366                   25 KENNEDY BLVD       E BRUNSWICK       NJ   8816    366    USA
+```
+[p011_p0062]
+
+```text
+ROTATOR STAFFING SERVICES INC              D81621 OPR                  IQ Staffing Services for Miscellaneous Projects                                                        Open        Staffing Services                     Authority Contract - Competitive Bid       9/13/2018    5/31/2019    Y   9/12/2023    316717.00      54831.91      269889.84      46827.16       22   Foreign   N   Y   6    N                                              P O BOX 366                   25 KENNEDY BLVD       E BRUNSWICK       NJ   8816    366    USA
+```
+[p011_p0063]
+
+```text
+ROTATOR STAFFING SERVICES INC              D81625 OPR                  IQ Staffing Services for Miscellaneous Projects                                                        Open        Staffing Services                     Authority Contract - Competitive Bid       9/13/2018    9/13/2018    Y   3/12/2025    1004351.00     117989.83     707186.72      297164.28      22   Foreign   N   Y   6    N                                              P O BOX 366                   25 KENNEDY BLVD       E BRUNSWICK       NJ   8816    366    USA
+```
+[p011_p0064]
+
+```text
+S AND P CONSTRUCTION MANAGEMENT INC        A37348                      Elevated Street Stair Repairs                                                                          Completed   Design and Construction/Maintenance   Authority Contract - Competitive Bid       9/21/2021    9/21/2021    Y   6/20/2022    1320000.00     66000.00      1320000.00     0.00           6    NYS       Y   Y   4    Y   Small Business Mentoring                   1975 HEMPSTEAD TURNPIKE       SUITE # 210           EAST MEADOW       NY   11554          USA
+```
+[p011_p0065]
+
+```text
+S AND S KINGS CORP                         B40611                      Chassis Wash AND Platform Lift R                                                                       Completed   Design and Construction/Maintenance   Authority Contract - Competitive Bid       4/30/2021    4/30/2021    Y   4/30/2022    1629750.00     81487.51      1629750.00     0.00           4    NYS       Y   Y   4    Y   Small Business Mentoring                   145-50 HOOVER AVE             SUITE#107             BRIARWOOD         NY   11435          USA
+```
+[p011_p0066]
+
+```text
+S AND S KINGS CORP                         C40283                      Facade Repair at JFK, LaGuardi                                                                         Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       11/15/2022   11/15/2022   Y   11/30/2023   4400000.00     2736815.10    2736815.10     1663184.90     14   NYS       Y   Y   8    N                                              145-50 HOOVER AVE             SUITE#107             BRIARWOOD         NY   11435          USA
+```
+[p011_p0067]
+
+```text
+S I ENGINEERING PC                         14073-0500-TBTA             Discretionary A E Contract                                                                             Open        Consulting Services                   Authority Contract - Competitive Bid       8/1/2015     8/16/2021    N                659000.00      31002.71      91051.19       567948.81      60   NYS       Y   Y   60   Y   Inter-agency Agreement                     107 GREENWICH STREET                                NEW YORK          NY   10006          USA
+```
+[p011_p0068]
+
+```text
+SA ENGINEERING LLC                         14073-4400-TBTA             14073-4400                                                                                             Completed   Consulting Services                   Authority Contract - Competitive Bid       8/1/2015     12/31/2019   Y   7/31/2022    1072816.53     10728.16      1072816.53     0.00           60   Foreign   Y   Y   60   Y   Inter-agency Agreement                     27 CLYDE RD STE 202                                 SOMERSET          NJ   8873           USA
+```
+[p011_p0069]
+
+```text
+SAF-GARD SAFETY SHOE COMPANY               SAF-GARD SAFETY SHOES       Purchase of Safety Shoes                                                                               Open        Commodities/Supplies                  Authority Contract - Competitive Bid       9/29/2022    9/29/2022    N                175000.00      29837.95      30213.70       144786.30      1    Foreign   N   N   0    Y   Ride/Piggyback of MTA Ags                  2701 PATTERSON STREET                               GREENSBORO        NC   27407          USA
+```
+[p011_p0070]
+
+```text
+SAHEET CONSTRUCTION CORP                   C34712                      Roof Repair at Tiffany Iron Sh                                                                         Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/29/2021   12/29/2021   Y   9/28/2022    1478600.00     169001.20     1333733.50     144866.50      6    NYS       Y   Y   6    Y   Small Business Mentoring                   88-36 GETTYSBURG ST                                 BELLEROSE         NY   11426          USA
+```
+[p011_p0071]
+
+```text
+SAI SERVICES INC                           158015A                     Construction                                                                                           Open        Other                                 Authority Contract - Competitive Bid       11/29/2021   11/29/2021   Y   5/28/2023    2018679.24     1187482.56    1836698.34     181980.90      6    Foreign   N   Y   6    N                                              265 US HIGHWAY 46 SUITE 3B                          TOTOWA            NJ   7512    1812   USA
+```
+[p011_p0072]
+
+```text
+SAM SCHWARTZ ENGINEERING, DPC              3000003632                  Traffic Engineering Services                                                                           Completed   Consulting Services                   Authority Contract - Competitive Bid       12/19/2018   12/19/2018   Y   2/23/2023    39335.00       4241.98       39335.00       0.00           2    NYS       N   Y   0    Y   Ride/Piggyback of MTA Ags                  611 BROADWAY                  STE 415               NEW YORK          NY   10012          USA
+```
+[p011_p0073]
+
+```text
+SANZ CONSTRUCTION INC                      A37786                      SBM A37786 Elevated Street St                                                                          Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       9/2/2023     12/31/2023   Y   9/2/2024     903332.00      0.00          0.00           903332.00      5    NYS       Y   Y   4    Y   Small Business Mentoring                   28 Birch Rd                                         STATEN ISLAND     NY   10303   1719   USA
+```
+[p011_p0074]
+
+```text
+SAW RESTORATION CORP                       A37379                      Station Ventilator Repairs                                                                             Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/30/2022   12/30/2022   Y   8/30/2023    958429.00      170908.80     170908.80      787520.20      4    NYS       Y   Y   1    Y   Small Business Mentoring                   430 SLOSSON AVE                                     STATEN ISLAND     NY   10314          USA
+```
+[p011_p0075]
+
+```text
+SBS SERVICES INC                           A37776                      SBM Stair Repairs                                                                                      Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       10/30/2023   10/30/2023   Y   6/30/2024    622825.00      0.00          0.00           622825.00      4    NYS       Y   Y   2    Y   Small Business Mentoring                   106 Millertown Road                                 Bedford           NY   10506          USA
+```
+[p011_p0076]
+
+```text
+SCHIAVONE CONSTRUCTION CO. LLC             C35327                      Rockaway Resiliency and Rehab                                                                          Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/29/2022   12/29/2022   Y   8/30/2026    392685186.01   51109817.94   51109817.94    341575368.07   3    Foreign   N   Y   0    N                                              150 MEADOWLANDS PKWY                                SECAUCUS          NJ   7094    1589   USA
+```
+[p011_p0077]
+
+```text
+SCHINDLER ELEVATOR CORP                    ES633 & ES636               Repair for escalators ES633 and ES636                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       5/12/2022    5/12/2022    N                787272.00      787272.00     787272.00      0.00           1    NYS       N   N   0    N                                              12 EAST 49TH STREET           14TH FLOOR            NEW YORK          NY   10017          USA
+```
+[p011_p0078]
+
+```text
+SCHINDLER ELEVATOR CORP                    VM014                       ESA Elevators                                                                                          Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       9/27/2010    9/27/2010    N                42770677.88    1448327.89    40926469.27    1844208.61     3    NYS       N   N   0    N                                              12 EAST 49TH STREET           14TH FLOOR            NEW YORK          NY   10017          USA
+```
+[p011_p0079]
+
+```text
+SCHINDLER ELEVATOR CORP                    VM014 OPERATING             ESA Elevators                                                                                          Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       9/27/2010    6/7/2023     N                12800553.68    10116521.31   10116521.31    2684032.37     3    NYS       N   N   0    N                                              12 EAST 49TH STREET           14TH FLOOR            NEW YORK          NY   10017          USA
+```
+[p011_p0080]
+
+```text
+SEGA CONTRACTING CORP                      A37709                      Street Stair Repairs                                                                                   Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       10/6/2022    10/6/2022    Y   9/5/2023     1593244.00     1263687.41    1263687.41     329556.59      5    NYS       Y   Y   5    Y   Small Business Mentoring                   1449 EAST 58TH ST                                   BROOKLYN          NY   11234          USA
+```
+[p011_p0081]
+
+```text
+SHAHEEN CONSTRUCTION CORP                  C43054                      Rehabilitation of Comm Room                                                                            Completed   Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/10/2021   12/10/2021   Y   8/9/2022     491895.00      24594.75      491895.00      0.00           2    NYS       Y   Y   2    Y   Small Business Mentoring                   25-20 84TH STREET                                   EAST ELMHURST     NY   11370          USA
+```
+[p011_p0082]
+
+```text
+SHAHEEN CONSTRUCTION CORP                  A37792                      Platform Stair Repair                                                                                  Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       9/13/2023    9/13/2023    Y   9/14/2024    1619980.70     0.00          0.00           1619980.70     5    NYS       Y   Y   2    Y   Small Business Mentoring                   25-20 84TH STREET                                   EAST ELMHURST     NY   11370          USA
+```
+[p011_p0083]
+
+```text
+SHERWANI CONTRACTING INC                   A37779                      SBMP Stair Repairs                                                                                     Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/15/2023   12/15/2023   Y   8/15/2024    672000.00      0.00          0.00           672000.00      5    NYS       Y   Y   3    Y   Small Business Mentoring                   1 BAY SHORE RD                                      BAY SHORE         NY   11706          USA
+```
+[p011_p0084]
+
+```text
+SHERWANI CONTRACTING INC                   A37736                      Stair Repairs at Woodlawn                                                                              Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/5/2022    12/5/2022    Y   8/4/2023     629000.00      466122.25     466122.25      162877.75      4    NYS       Y   Y   2    Y   Small Business Mentoring                   1 BAY SHORE RD                                      BAY SHORE         NY   11706          USA
+```
+[p011_p0085]
+
+```text
+SIDDIQUI ENGINEERING PC                    14073-4700-TBTA             14073- Work Order 14                                                                                   Completed   Consulting Services                   Authority Contract - Competitive Bid       8/1/2015     8/15/2018    N                550232.22      20313.42      550232.22      0.00           60   NYS       Y   Y   60   Y   Inter-agency Agreement                     35 ENGEL STREET                                     HICKSVILLE        NY   11801          USA
+```
+[p011_p0086]
+
+```text
+SIEMENS MOBILITY INC                       S87055TO1                   TO no.1 - DCS Multi Projects SOW                                                                       Open        Technology - Hardware                 Authority Contract - Non-Competitive Bid   4/18/2023    4/18/2023    Y   4/17/2028    22989995.00    5359973.76    5359973.76     17630021.24    1    Foreign   N   N   0    Y   Sole Source                  22989995.00   PO BOX 3498                                         CAROL STREAM      IL   60132          USA
+```
+[p011_p0087]
+
+```text
+SIEMENS MOBILITY INC                       S87055.01A                  Long Term Agrmnt LTA for Data Communication Systems DCS purch. for CBTC trains lines - R211 Cars       Open        Design and Construction/Maintenance   Authority Contract - Non-Competitive Bid   5/15/2019    5/15/2019    Y   1/6/2039     8130365.00     3011073.13    6359400.07     1770964.93     1    Foreign   N   N   0    N                                8130365.00    PO BOX 3498                                         CAROL STREAM      IL   60132          USA
+```
+[p011_p0088]
+
+```text
+SIEMENS MOBILITY INC                       S87055.01B                  Long Term Agrmnt LTA for Data Communication Systems DCS purch. for CBTC trains lines - R179 Cars       Open        Design and Construction/Maintenance   Authority Contract - Non-Competitive Bid   5/15/2019    5/15/2019    Y   1/6/2039     4948597.00     874228.46     4580491.77     368105.23      1    Foreign   N   N   0    N                                4948597.00    PO BOX 3498                                         CAROL STREAM      IL   60132          USA
+```
+[p011_p0089]
+
+```text
+SIEMENS MOBILITY INC                       S87055.01D                  Long Term Agrmnt LTA for Data Comm. Systems DCS purchase for CBTC trains lines - 8th Ave Line          Open        Design and Construction/Maintenance   Authority Contract - Non-Competitive Bid   5/15/2019    5/15/2019    Y   1/6/2039     8457737.56     331996.54     7800842.45     656895.11      1    Foreign   N   N   0    N                                8457737.56    PO BOX 3498                                         CAROL STREAM      IL   60132          USA
+```
+[p011_p0090]
+
+```text
+SIEMENS MOBILITY INC                       W-81199-1                   EO-168 Ultra-Wideband UWB-based Train Control System Pilot Program                                     Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       3/15/2019    3/15/2019    Y   9/30/2022    27724648.76    734955.09     27724648.76    0.00           3    Foreign   N   N   0    Y   Emergency or Critical Need                 PO BOX 3498                                         CAROL STREAM      IL   60132          USA
+```
+[p011_p0091]
+
+```text
+SIEMENS MOBILITY INC                       S48013-1                    R179 Carborne Equipment for the CBTC 8th Avenue Line                                                   Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       3/27/2019    3/27/2019    Y   3/26/2024    20818413.00    3535495.38    12177817.42    8640595.58     2    Foreign   N   N   0    N                                              PO BOX 3498                                         CAROL STREAM      IL   60132          USA
+```
+[p011_p0092]
+
+```text
+SJH ENGINEERING PC                         14073-1800-TBTA             14073-1800-TBTA                                                                                        Open        Consulting Services                   Authority Contract - Competitive Bid       8/1/2015     11/8/2017    Y   7/31/2022    458197.88      3213.88       288721.69      169476.19      60   Foreign   Y   Y   60   Y   Inter-agency Agreement                     3700 ROUTE 27, STE 201                              PRINCETON         NJ   8540           USA
+```
+[p011_p0093]
+
+```text
+SJH ENGINEERING PC                         D81425L                     IQ Staffing Contracts to Provide Schedulers                                                            Open        Staffing Services                     Authority Contract - Competitive Bid       11/30/2018   1/31/2023    Y   11/29/2023   217152.00      88113.60      88113.60       129038.40      20   Foreign   Y   Y   10   N                                              3700 ROUTE 27, STE 201                              PRINCETON         NJ   8540           USA
+```
+[p011_p0094]
+
+```text
+SJH ENGINEERING PC                         D81425                      IQ Staffing Contracts to Provide Schedulers                                                            Open        Staffing Services                     Authority Contract - Competitive Bid       11/30/2018   11/30/2018   Y   11/29/2023   14374423.00    612599.87     2832471.42     11541951.58    20   Foreign   Y   Y   10   N                                              3700 ROUTE 27, STE 201                              PRINCETON         NJ   8540           USA
+```
+[p011_p0095]
+
+```text
+SKADDEN ARPS SLATE MEAGHERD AND FLOM LLP   SKADDEN-MSG & VORNADO       Legal support for anticipated negotiations with MSG and Vornado as part of the Penn                    Open        Legal Services                        Non Contract Procurement/Purchase Order                                                              45396.60                                         NYS       N                                                           FOUR TIMES SQUARE                                   NEW YORK          NY   10036          USA
+```
+[p011_p0096]
+
+```text
+SKADDEN ARPS SLATE MEAGHERD AND FLOM LLP   PSA-SKADDEN ARPS SLATE      Legal Services for the 33rd Street Corridor Renovation Project                                         Open        Legal Services                        Authority Contract - Non-Competitive Bid   10/14/2019   10/14/2019   N                2282500.00     396789.20     2129059.41     153440.59      1    NYS       N   N   0    Y   Ride/Piggyback of MTA Ags    2282500.00    FOUR TIMES SQUARE                                   NEW YORK          NY   10036          USA
+```
+[p011_p0097]
+
+```text
+SKANSKA ECCO III 2 JV                      MNB81933OP TRANSFORMER      Harmon CSF ReplacementTransformer                                                                      Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       10/6/2023    10/6/2023    Y   12/31/2023   1442386.00     0.00          0.00           1442386.00     0    NYS       N   N   0    N                                              7520 ASTORIA BLVD             STE 200               E ELMHURST        NY   11370          USA
+```
+[p011_p0098]
+
+```text
+SKANSKA ECCO III 2 JV                      MN81933OP_FURNITURE         OPTION 7 FURNITURE ELECT STAGE 2 - NEW RRSS SHOP                                                       Open        Other                                 Authority Contract - Competitive Bid       1/7/2022     1/7/2022     N                2973922.00     2742122.04    2742122.04     231799.96      1    NYS       N   N   0    N                                              7520 ASTORIA BLVD             STE 200               E ELMHURST        NY   11370          USA
+```
+[p011_p0099]
+
+```text
+SKANSKA ECCO III 2 JV                      MN81933                     Harmon Shop Replacement - Phas                                                                         Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       10/31/2018   10/30/2018   Y   12/31/2023   372576747.43   61342849.36   362456216.26   10120531.17    2    NYS       N   N   0    N                                              7520 ASTORIA BLVD             STE 200               E ELMHURST        NY   11370          USA
+```
+[p011_p0100]
+
+```text
+SKANSKA E-J ELECTRIC 28S JV                P36317                      Construction of Substation                                                                             Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       10/24/2022   10/24/2022   Y   9/17/2025    51309900.00    17990890.65   17990890.65    33319009.35    8    NYS       N   N   0    N                                              7520 ASTORIA BLVD, STE 200                          EAST ELMHURST     NY   11370          USA
+```
+[p011_p0101]
+
+```text
+SKANSKA PENN STATION CONSTRUCTORS JV       33RD ST-PHASE 2-AECOM       LIRR Concourse Phase 2 DB                                                                              Open        Other                                 Non Contract Procurement/Purchase Order                                                              2708595.65                                       NYS       N                                                           75-20 ASTORIA BLVD                                  EAST ELMHURST     NY   11370          USA
+```
+[p011_p0102]
+
+```text
+SKANSKA PENN STATION CONSTRUCTORS JV       33RD ST.-PHASE 2-SKANSKA    LIRR Concourse Phase 2 DB contract                                                                     Open        Other                                 Non Contract Procurement/Purchase Order                                                              77714462.11                                      NYS       N                                                           75-20 ASTORIA BLVD                                  EAST ELMHURST     NY   11370          USA
+```
+[p011_p0103]
+
+```text
+SKANSKA RAILROAD JV                        A46030                      Improvements on Flushing Line                                                                          Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       9/19/2022    9/19/2022    Y   5/27/2025    199955000.00   54488937.89   54488937.89    145466062.11   3    NYS       N   Y   0    N                                              7520 ASTORIA BLVD, STE 200                          EAST ELMHURST     NY   11370          USA
+```
+[p011_p0104]
+
+```text
+SKANSKA USA CIVIL NORTHEAST INC.           A37693                      Circulation Improvements GCT                                                                           Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/29/2022   12/29/2022   Y   12/13/2024   74470000.00    20203660.41   20203660.41    54266339.59    4    NYS       N   Y   0    N                                              75-20 ASTORIA BLVD            SUITE 200             EAST ELMHURST     NY   11370          USA
+```
+[p011_p0105]
+
+```text
+SKANSKA USA CIVIL NORTHEAST INC.           E30641                      Replacement of 17 Escalators                                                                           Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       8/18/2022    8/18/2022    Y   8/17/2026    114970300.00   21771059.32   21771059.32    93199240.68    3    NYS       N   Y   0    N                                              75-20 ASTORIA BLVD            SUITE 200             EAST ELMHURST     NY   11370          USA
+```
+[p011_p0106]
+
+```text
+SKANSKA USA CIVIL NORTHEAST INC.           CH058A-HAROLD TRACKWORK 4   HAROLD TRACKWORK 4 B C Approach                                                                        Open        Other                                 Authority Contract - Competitive Bid       10/25/2018   10/25/2018   N                99057563.00    2715592.26    98300601.65    756961.35      6    NYS       N   N   0    N                                              75-20 ASTORIA BLVD            SUITE 200             EAST ELMHURST     NY   11370          USA
+```
+[p011_p0107]
+
+```text
+SKANSKA USA CIVIL NORTHEAST INC.           E34027                      CAP Contract E-34027 Replacem                                                                          Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       4/6/2018     4/6/2018     Y   5/6/2022     65509511.00    298851.00     60575803.87    4933707.13     3    NYS       N   Y   0    N                                              75-20 ASTORIA BLVD            SUITE 200             EAST ELMHURST     NY   11370          USA
+```
+[p011_p0108]
+
+```text
+SKANSKA USA CIVIL NORTHEAST INC.           C40355                      DB of a New Jamaica Bus Depot                                                                          Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/30/2022   12/30/2022   Y   5/30/2027    479956000.00   38371669.56   38371669.56    441584330.44   4    NYS       N   Y   0    N                                              75-20 ASTORIA BLVD            SUITE 200             EAST ELMHURST     NY   11370          USA
+```
+[p011_p0109]
+
+```text
+SKANSKA USA CIVIL NORTHEAST INC.           E30647                      Replacement of 21 Escalators                                                                           Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/31/2023   12/31/2023   Y   9/28/2026    145820000.00   0.00          0.00           145820000.00   4    NYS       N   Y   0    N                                              75-20 ASTORIA BLVD            SUITE 200             EAST ELMHURST     NY   11370          USA
+```
+[p011_p0110]
+
+```text
+SKANSKA-ECCO III JV                        MN27044                     Harmon Shop Phase V S1- Cap dollar                                                                     Completed   Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/30/2014   12/30/2014   Y   10/31/2020   254242470.40   241374.10     254242470.40   0.00           6    NYS       N   N   0    N                                              7520 ASTORIA BLVD             STE 200               EAST ELMHURST     NY   11370          USA
+```
+[p011_p0111]
+
+```text
+SKYVIEW CONSTRUCTION GROUP INC             A37717                      Street Stair Repairs                                                                                   Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/21/2022   12/21/2022   Y   11/20/2023   1324294.41     1133385.81    1133385.81     190908.60      5    NYS       Y   Y   4    Y   Small Business Mentoring                   2145 OCEAN AVE, APT B3                              BROOKLYN          NY   11229          USA
+```
+[p011_p0112]
+
+```text
+SOVEREIGN HYDROSEAL EAST INC               63RD ST DIRECT FIXATION     MC-881A-002 initial encumbrance to fund mainline track-direct fixation-63rd Street                     Open        Other                                 Authority Contract - Competitive Bid       11/30/2022   11/30/2022   N                2996700.00     450537.50     450537.50      2546162.50     1    NYS       N   N   0    N                                              32-02 VERNON BLVD                                   ASTORIA           NY   11106          USA
+```
+[p011_p0113]
+
+```text
+SOVEREIGN HYDROSEAL EAST INC               A37793                      Water Condition Remedy 2023                                                                            Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/31/2023   12/31/2023   Y   1/1/2026     3261294.00     0.00          0.00           3261294.00     4    NYS       N   Y   0    N                                              32-02 VERNON BLVD                                   ASTORIA           NY   11106          USA
+```
+[p011_p0114]
+
+```text
+SOVEREIGN HYDROSEAL EAST INC               A37793OPER                  Water Condition Remedy 2023                                                                            Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/31/2023   12/31/2023   Y   1/1/2026     1586816.00     0.00          0.00           1586816.00     4    NYS       N   Y   0    N                                              32-02 VERNON BLVD                                   ASTORIA           NY   11106          USA
+```
+[p011_p0115]
+
+```text
+SOWINSKI SULLIVAN ARCHITECTS PC            MN127291A                   GCT ADA North End Signage                                                                              Open        Consulting Services                   Authority Contract - Competitive Bid       12/9/2019    12/9/2019    Y   8/31/2021    639546.00      12551.85      472049.73      167496.27      1    Foreign   Y   Y   1    Y   Discretionary Procurement                  25 MOHAWK AVE                                       SPARTA            NJ   7871           USA
+```
+[p011_p0116]
+
+```text
+STANTEC CONSULTING SERVICES INC            CS00015B                    2023 Routine Tunnel Inspection at Queens-Midtown Tunnel and Hugh L. Carey Tunnel                       Open        Consulting Services                   Authority Contract - Competitive Bid       8/15/2023    8/15/2023    Y   5/15/2026    2436881.12     290604.96     290604.96      2146276.16     4    NYS       N   Y   1    N                                              475 FIFTH AVE, 12TH FL                              NEW YORK          NY   10017          USA
+```
+[p011_p0117]
+
+```text
+STANTEC CONSULTING SERVICES INC            D81686M                     All Agency IQ A E Services for Miscellaneous Construction AND Security Projects - State funded         Open        Consulting Services                   Authority Contract - Competitive Bid       4/21/2022    8/24/2023    Y   4/30/2025    326412.00      276179.25     276179.25      50232.75       21   NYS       N   Y   4    N                                              475 FIFTH AVE, 12TH FL                              NEW YORK          NY   10017          USA
+```
+[p011_p0118]
+
+```text
+STANTEC CONSULTING SERVICES INC            D81686                      IQ A E Design Svcs- State Fund                                                                         Open        Consulting Services                   Authority Contract - Competitive Bid       4/21/2022    4/21/2022    Y   4/30/2025    5526873.50     3025230.86    3072053.75     2454819.75     21   NYS       N   Y   4    N                                              475 FIFTH AVE, 12TH FL                              NEW YORK          NY   10017          USA
+```
+[p011_p0119]
+
+```text
+STANTEC CONSULTING SERVICES INC            CS00011B                    2023 Biennial Bridge Inspection and Design of Misc Structural Repairs at Throgs Neck Bridge            Open        Consulting Services                   Authority Contract - Competitive Bid       7/5/2023     7/5/2023     Y   4/4/2026     3087750.26     761104.30     761104.30      2326645.96     6    NYS       N   Y   3    N                                              475 FIFTH AVE, 12TH FL                              NEW YORK          NY   10017          USA
+```
+[p011_p0120]
+
+```text
+STANTEC CONSULTING SERVICES INC            PSC-20-3043B                2021 Biennial Bridge Inspection AND Design of Misce. Structural Repairs at the Bronx-Whitestone Brid   Open        Consulting Services                   Authority Contract - Competitive Bid       4/9/2021     4/27/2021    N                2639194.89     593075.00     2204453.08     434741.81      6    NYS       N   Y   0    N                                              475 FIFTH AVE, 12TH FL                              NEW YORK          NY   10017          USA
+```
+[p011_p0121]
+
+```text
+STANTEC CONSULTING SERVICES INC            PSC-20-3044                 2021 Routine Tunnel Inspections at the Queens-Midtown and Hugh L. Carey Tunnels                        Open        Consulting Services                   Authority Contract - Competitive Bid       3/24/2021    3/26/2021    Y   12/25/2023   2587159.14     370365.17     2220813.01     366346.13      3    NYS       N   Y   0    N                                              475 FIFTH AVE, 12TH FL                              NEW YORK          NY   10017          USA
+```
+[p011_p0122]
+
+```text
+STANTEC CONSULTING SERVICES INC            PSC-21-3049C                2022 Biennial Insp AND Des of Misc Repairs at the Verrazzano-Narrows Bridge - Main Line                Open        Consulting Services                   Authority Contract - Competitive Bid       5/16/2022    5/16/2022    Y   12/31/2024   3917795.22     1275395.58    2339787.64     1578007.58     6    NYS       N   Y   1    N                                              475 FIFTH AVE, 12TH FL                              NEW YORK          NY   10017          USA
+```
+[p011_p0123]
+
+```text
+STATIC ELECTRIC CORP                       C52161                      Passenger Identification                                                                               Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/29/2021   12/29/2021   Y   3/1/2023     1750000.00     240356.89     1662500.01     87499.99       5    NYS       Y   Y   4    Y   Small Business Mentoring                   4505 WHITE PLAINS RD                                BRONX             NY   10470          USA
+```
+[p011_p0124]
+
+```text
+STIRLING - FORTE JV                        C40688                      Upgrade of HVAC, Fire Alarm, Methane Gas Detection AND Building System at College Point                Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/31/2023   12/31/2023   Y   1/1/2026     25375000.00    0.00          0.00           25375000.00    5    NYS       N   Y   2    N                                              926 Lincoln Ave                                     Holbrook          NY   11741          USA
+```
+[p011_p0125]
+
+```text
+STV INC                                    D81687B                     All Agency IQ A E Services for Miscellaneous Construction AND Security Projects - State funded         Open        Consulting Services                   Authority Contract - Competitive Bid       4/21/2022    4/21/2022    Y   4/30/2025    675515.00      408410.51     408410.51      267104.49      21   NYS       N   Y   4    N                                              225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0126]
+
+```text
+STV INC                                    D81687M                     All Agency IQ A E Services for Miscellaneous Construction AND Security Projects - State funded         Open        Consulting Services                   Authority Contract - Competitive Bid       4/21/2022    4/21/2022    Y   4/30/2025    3869782.00     1680236.76    1680236.76     2189545.24     21   NYS       N   Y   4    N                                              225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0127]
+
+```text
+STV INC                                    D81411                      IQ A E Design Services for Federally Funded Miscellaneous Construction and Capital Security Projects   Open        Consulting Services                   Authority Contract - Competitive Bid       10/13/2011   10/13/2011   Y   7/2/2018     58386308.81    108961.68     45822557.92    12563750.89    4    NYS       N   N   0    N                                              225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0128]
+
+```text
+STV INC                                    D81519                      IQ Asbestos and Lead Monitoring and Design Services for Miscellaneous Construction Projects            Open        Consulting Services                   Authority Contract - Competitive Bid       5/28/2013    5/28/2013    Y   1/12/2022    5729656.69     51134.05      5036319.58     693337.11      11   NYS       N   Y   15   N                                              225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0129]
+
+```text
+STV INC                                    D81575                      IQ A E Design Services for Miscellaneous Construction and Security Projects                            Open        Consulting Services                   Authority Contract - Competitive Bid       12/15/2017   12/15/2017   Y   12/14/2022   39117415.54    3693651.63    19773432.15    19343983.39    22   NYS       N   N   0    N                                              225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0130]
+
+```text
+STV INC                                    D81673                      IQ A E Design Svcs - Fed Fund                                                                          Open        Consulting Services                   Authority Contract - Competitive Bid       4/21/2022    4/21/2022    Y   5/13/2025    3091383.00     1705297.46    1705297.46     1386085.54     21   NYS       N   Y   4    N                                              225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0131]
+
+```text
+STV INC                                    D81687                      IQ A E Design Svcs- State Fund                                                                         Open        Consulting Services                   Authority Contract - Competitive Bid       4/21/2022    4/21/2022    Y   4/30/2025    7655193.14     1894424.76    1894424.76     5760768.38     21   NYS       N   Y   4    N                                              225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0132]
+
+```text
+STV INC                                    D81705                      Asbestos Lead Air Monitoring                                                                           Open        Consulting Services                   Authority Contract - Competitive Bid       4/12/2022    4/12/2022    Y   4/11/2025    2836348.75     43196.51      43196.51       2793152.24     9    NYS       N   Y   3    N                                              225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0133]
+
+```text
+STV INC                                    D81705 OPR                  Asbestos Lead Air Monitoring                                                                           Open        Consulting Services                   Authority Contract - Competitive Bid       4/12/2022    4/12/2022    Y   4/11/2025    51186.19       20745.10      20745.10       30441.09       9    NYS       N   Y   3    N                                              225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0134]
+
+```text
+STV INC                                    D81443                      PMC 3P for ADA Upgrades AND Elev                                                                       Open        Consulting Services                   Authority Contract - Competitive Bid       12/30/2022   12/30/2022   Y   6/30/2027    43345251.71    4883215.94    4883215.94     38462035.77    4    NYS       N   Y   0    N                                              225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0135]
+
+```text
+STV INC                                    D81706                      Asbestos Lead Air Monitoring                                                                           Open        Consulting Services                   Authority Contract - Competitive Bid       4/12/2022    4/12/2022    Y   4/11/2025    877278.25      87636.27      87636.27       789641.98      9    NYS       N   Y   3    N                                              225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0136]
+
+```text
+STV INC                                    D81357                      IQ ARCHITECTURAL ENGINEERING DESIGN SVCS. FOR MISC. PROJECTS                                           Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       10/24/2008   10/24/2008   Y   2/10/2016    3977982.75     9694.05       3513905.35     464077.40      4    NYS       N   N   0    N                                              225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0137]
+
+```text
+STV INC                                    D81631                      IQ CCM and Inspection Services for Misc. Construction Projects                                         Open        Consulting Services                   Authority Contract - Competitive Bid       12/20/2018   12/20/2018   Y   6/30/2025    5561853.00     3919115.76    3953163.76     1608689.24     27   NYS       N   Y   2    N                                              225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0138]
+
+```text
+STV INC                                    MN66695                     GEC Design Harlem AND Hudson sta                                                                       Open        Consulting Services                   Authority Contract - Competitive Bid       10/14/2016   10/14/2016   Y   10/13/2021   5539349.35     376353.61     5187482.37     351866.98      9    NYS       N   Y   6    N                                              225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0139]
+
+```text
+STV INC                                    1000115980                  On-Call Staffing AND Design Svs                                                                        Open        Staffing Services                     Authority Contract - Non-Competitive Bid   5/31/2019    5/31/2019    Y   2/28/2023    4715091.34     134554.98     3569366.48     1145724.86     4    NYS       N   N   0    N                                4715091.34    225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0140]
+
+```text
+STV INC                                    83747                       GEC                                                                                                    Open        Consulting Services                   Authority Contract - Non-Competitive Bid   10/20/2017   10/20/2017   Y   6/30/2024    14376539.00    2113664.04    11255748.67    3120790.33     9    NYS       N   N   0    N                                14376539.00   225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0141]
+
+```text
+STV INC                                    83752                       CSANDI for Harlem Construction                                                                         Open        Consulting Services                   Authority Contract - Non-Competitive Bid   10/20/2017   10/20/2017   Y   7/15/2023    10581336.39    940367.97     10158049.48    423286.91      9    NYS       N   N   0    N                                10581336.39   225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0142]
+
+```text
+STV INC                                    CS00022C                    IQ Planning AND Conceptual Engin                                                                       Open        Consulting Services                   Authority Contract - Competitive Bid       9/28/2023    9/29/2023    Y   9/28/2028    0.00           0.00          0.00           0.00           2    NYS       N   Y   0    N                                              225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0143]
+
+```text
+STV INC                                    D81631L                     IQ CCM AND Inspection Svcs NYCT                                                                        Open        Consulting Services                   Authority Contract - Competitive Bid       12/20/2018   4/5/2022     Y   12/19/2023   1117475.61     565448.11     565448.11      552027.50      27   NYS       N   Y   2    N                                              225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0144]
+
+```text
+STV INC                                    D81626M                     IQ CCM and Inspection Services for Misc. Construction Projects                                         Open        Consulting Services                   Authority Contract - Competitive Bid       12/20/2018   12/20/2018   Y   12/19/2023   972479.00      374827.38     374827.38      597651.62      27   NYS       N   N   2    N                                              225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0145]
+
+```text
+STV INC                                    D81566                      IQ Eng. Design Services For Superstorm Sandy-Related Repair And Resiliency Projects and Misc. Const.   Open        Consulting Services                   Authority Contract - Competitive Bid       11/24/2014   11/24/2014   Y   11/23/2023   16949105.31    2119091.18    15235106.66    1713998.65     5    NYS       N   N   0    N                                              225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0146]
+
+```text
+STV INC                                    D81626                      IQ CCM and Inspection Services for Misc. Construction Projects                                         Open        Consulting Services                   Authority Contract - Competitive Bid       9/13/2018    9/13/2018    Y   9/12/2023    7091148.12     1317217.31    2527376.58     4563771.54     27   NYS       N   Y   2    N                                              225 PARK AVE SOUTH                                  NEW YORK          NY   10003          USA
+```
+[p011_p0147]
+
+```text
+SYSTRA ENGINEERING, INC.                   S81539                      Consultant Services to Support the Construction of the Communication Based Control CBTC AWS Signa      Open        Consulting Services                   Authority Contract - Competitive Bid       12/15/2014   12/15/2014   Y   4/30/2023    25573769.00    839478.10     18345234.34    7228534.66     2    NYS       N   N   0    N                                              520 EIGHTH AVE 21ST FLOOR                           NEW YORK          NY   10018          USA
+```
+[p011_p0148]
+
+```text
+SYSTRA ENGINEERING, INC.                   S81567                      Consulting Services - Design, Proc. and Construction Support for CBTC for the 8th Avenue Line          Open        Consulting Services                   Authority Contract - Competitive Bid       12/20/2017   12/20/2017   Y   12/19/2024   6392101.00     595665.74     4823810.72     1568290.28     3    NYS       N   N   0    N                                              520 EIGHTH AVE 21ST FLOOR                           NEW YORK          NY   10018          USA
+```
+[p011_p0149]
+
+```text
+SYSTRA/URBAHN JOINT VENTURE                D81688B                     All Agency IQ A E Services for Miscellaneous Construction AND Security Projects - State funded         Open        Consulting Services                   Authority Contract - Competitive Bid       5/13/2022    5/13/2022    Y   4/30/2025    621521.00      404023.57     404023.57      217497.43      21   NYS       N   Y   4    N                                              55 BROAD ST, 5TH FL                                 NEW YORK          NY   10004          USA
+```
+[p011_p0150]
+
+```text
+SYSTRA/URBAHN JOINT VENTURE                D81688L                     All Agency IQ A E Services for Miscellaneous Construction AND Security Projects - State funded         Open        Consulting Services                   Authority Contract - Competitive Bid       5/13/2022    5/14/2022    Y   4/30/2025    144470.00      68043.04      68043.04       76426.96       21   NYS       N   Y   4    N                                              55 BROAD ST, 5TH FL                                 NEW YORK          NY   10004          USA
+```
+[p011_p0151]
+
+```text
+SYSTRA/URBAHN JOINT VENTURE                D81688                      IQ A E Design Svcs- State Fund                                                                         Open        Consulting Services                   Authority Contract - Competitive Bid       5/13/2022    5/14/2022    Y   4/30/2025    929071.00      183193.23     183193.23      745877.77      21   NYS       N   Y   4    N                                              55 BROAD ST, 5TH FL                                 NEW YORK          NY   10004          USA
+```
+[p011_p0152]
+
+```text
+SYSTRA-MCSS JV                             D81632                      IQ CCM and Inspection Services for Misc. Construction Projects                                         Open        Consulting Services                   Authority Contract - Competitive Bid       1/9/2019     1/9/2019     Y   6/30/2025    45511027.00    12670375.56   35053934.23    10457092.77    27   NYS       N   Y   2    N                                              520 EIGHTH AVE                STE 2100              NEW YORK          NY   10018          USA
+```
+[p011_p0153]
+
+```text
+SYSTRA-MCSS JV                             D81632 OPR                  IQ CCM and Inspection Services for Misc. Construction Projects                                         Open        Consulting Services                   Authority Contract - Competitive Bid       1/9/2019     1/9/2019     Y   1/8/2024     9172338.00     1976707.30    8147323.40     1025014.60     27   NYS       N   Y   2    N                                              520 EIGHTH AVE                STE 2100              NEW YORK          NY   10018          USA
+```
+[p011_p0154]
+
+```text
+SYSTRA-MCSS JV                             D81627C                     IQ CCM and Insp Svcs Fed fund                                                                          Open        Consulting Services                   Authority Contract - Competitive Bid       1/9/2019     6/30/2022    Y   1/8/2024     404033.25      252423.42     369875.04      34158.21       27   NYS       N   Y   2    N                                              520 EIGHTH AVE                STE 2100              NEW YORK          NY   10018          USA
+```
+[p011_p0155]
+
+```text
+SYSTRA-MCSS JV                             D81632L                     IQ CCM and Insp Svces NYCT                                                                             Open        Consulting Services                   Authority Contract - Competitive Bid       4/6/2022     4/6/2022     Y   1/8/2024     763776.00      331860.89     629343.67      134432.33      27   NYS       N   Y   2    N                                              520 EIGHTH AVE                STE 2100              NEW YORK          NY   10018          USA
+```
+[p011_p0156]
+
+```text
+SYSTRA-MCSS JV                             D81632L OPR                 CCM and Inspection Services for Misc. Construction Projects                                            Open        Consulting Services                   Authority Contract - Competitive Bid       1/9/2019     1/9/2019     Y   1/8/2024     584648.00      99874.96      99874.96       484773.04      27   NYS       N   Y   2    N                                              520 EIGHTH AVE                STE 2100              NEW YORK          NY   10018          USA
+```
+[p011_p0157]
+
+```text
+SYSTRA-MCSS JV                             D81627                      IQ CCM and Insp Svcs Fed fund                                                                          Open        Consulting Services                   Authority Contract - Competitive Bid       12/20/2018   12/20/2018   Y   6/30/2025    6347824.00     440382.34     5273880.17     1073943.83     27   NYS       N   Y   2    N                                              520 EIGHTH AVE                STE 2100              NEW YORK          NY   10018          USA
+```
+[p011_p0158]
+
+```text
+T. MORIARTY AND SON, INC                   C40205                      Window Replacement at Flatbush                                                                         Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       11/8/2021    11/8/2021    Y   2/1/2023     6642108.00     1410789.23    6070748.01     571359.99      16   NYS       N   Y   9    N                                              63 CREAMER ST                                       BROOKLYN          NY   11231          USA
+```
+[p011_p0159]
+
+```text
+TAP ELECTRICAL CONTRACTING SVS INC         S32288-2                    Stipend for RFP Participation                                                                          Open        Other                                 Authority Contract - Competitive Bid       12/28/2023   1/18/2024    Y   4/30/2024    101000.00      0.00          0.00           101000.00      1    NYS       N   N   0    N                                              926 LINCOLN AVE               UNIT A                HOLBROOK          NY   11741          USA
+```
+[p011_p0160]
+
+```text
+TAP ELECTRICAL CONTRACTING SVS INC         GFM-534F                    As Needed Electrical                                                                                   Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       4/13/2020    4/13/2020    Y   8/12/2024    2210680.00     75000.00      2014746.07     195933.93      9    NYS       N   Y   1    N                                              926 LINCOLN AVE               UNIT A                HOLBROOK          NY   11741          USA
+```
+[p011_p0161]
+
+```text
+TAP ELECTRICAL CONTRACTING SVS INC         MN25781                     86th AND 110th St. Substations                                                                         Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       3/17/2014    3/20/2014    Y   12/31/2020   14286175.10    470000.00     13762794.13    523380.97      9    NYS       N   Y   0    N                                              926 LINCOLN AVE               UNIT A                HOLBROOK          NY   11741          USA
+```
+[p011_p0162]
+
+```text
+TAP ELECTRICAL CONTRACTING SVS INC         P36704                      Sandy Mitigation Montague Fur                                                                          Open        Other                                 Authority Contract - Competitive Bid       12/29/2020   12/29/2020   Y   6/29/2022    4127052.40     1340347.58    3743531.50     383520.90      12   NYS       N   Y   0    N                                              926 LINCOLN AVE               UNIT A                HOLBROOK          NY   11741          USA
+```
+[p011_p0163]
+
+```text
+TAP ELECTRICAL CONTRACTING SVS INC         C52072                      D B for PID System                                                                                     Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       3/31/2022    3/31/2022    Y   11/30/2023   50277000.00    38179470.37   41729328.87    8547671.13     4    NYS       N   Y   0    N                                              926 LINCOLN AVE               UNIT A                HOLBROOK          NY   11741          USA
+```
+[p011_p0164]
+
+```text
+TAP ELECTRICAL CONTRACTING SVS INC         C32474                      C32474 Sandy Repairs Culver                                                                            Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/30/2023   12/30/2023   Y   8/30/2026    62072000.00    0.00          0.00           62072000.00    3    NYS       N   Y   0    N                                              926 LINCOLN AVE               UNIT A                HOLBROOK          NY   11741          USA
+```
+[p011_p0165]
+
+```text
+TC ELECTRIC, LLC                           S32288-3                    Stipend for RFP Participation                                                                          Open        Other                                 Authority Contract - Competitive Bid       12/30/2023   1/18/2024    Y   4/30/2024    101000.00      0.00          0.00           101000.00      1    NYS       N   N   0    N                                              1010 NORTHERN BLVD            SUITE 203             GREAT NECK        NY   11021          USA
+```
+[p011_p0166]
+
+```text
+TC ELECTRIC, LLC                           S48012                      DB svcs - CBTC Crosstown Line                                                                          Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/29/2022   12/29/2022   Y   10/4/2027    404924259.60   41683856.87   41683856.87    363240402.73   2    NYS       N   Y   0    N                                              1010 NORTHERN BLVD            SUITE 203             GREAT NECK        NY   11021          USA
+```
+[p011_p0167]
+
+```text
+TC ELECTRIC, LLC                           P36491                      Replace Cables on 4th Ave Line                                                                         Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       3/31/2022    3/31/2022    Y   11/21/2023   26553855.00    11089958.10   19169494.56    7384360.44     7    NYS       N   Y   2    N                                              1010 NORTHERN BLVD            SUITE 203             GREAT NECK        NY   11021          USA
+```
+[p011_p0168]
+
+```text
+TC ELECTRIC, LLC                           C52146ST2                   Stipend for C52146ST2                                                                                  Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       3/7/2023     3/7/2023     Y   3/10/2023    75000.00       75000.00      75000.00       0.00           0    NYS       N   N   0    N                                              1010 NORTHERN BLVD            SUITE 203             GREAT NECK        NY   11021          USA
+```
+[p011_p0169]
+
+```text
+TC-JT RUTGERS JV                           600000000027776             Rutgers Tube Operating                                                                                 Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       7/28/2020    7/28/2020    Y   12/31/2022   3497500.00     3000.00       3000000.00     497500.00      3    NYS       N   Y   0    N                                              1010 NORTHERN BLVD                                  GREAT NECK        NY   11021          USA
+```
+[p011_p0170]
+
+```text
+TC-JT RUTGERS JV                           P36444                      Rutgers Tube Rehabilitation                                                                            Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       7/28/2020    7/28/2020    Y   12/31/2022   112378118.00   8361253.18    107919565.06   4458552.94     3    NYS       N   Y   0    N                                              1010 NORTHERN BLVD                                  GREAT NECK        NY   11021          USA
+```
+[p011_p0171]
+
+```text
+TDP ASSOCIATES INC                         E42265                      Fresh Pond Yard Light AND Fence                                                                        Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/30/2023   12/30/2023   Y   7/2/2025     9850000.00     0.00          0.00           9850000.00     6    NYS       Y   Y   2    N                                              153 SHEPHERD LN                                     ROSLYN HEIGHTS    NY   11577   2525   USA
+```
+[p011_p0172]
+
+```text
+TDP ASSOCIATES INC                         A37698                      CAP A37698 Sutphin Blvd. Arche                                                                         Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       10/19/2023   10/19/2023   Y   10/19/2024   5370000.00     0.00          0.00           5370000.00     3    NYS       Y   Y   1    N                                              153 SHEPHERD LN                                     ROSLYN HEIGHTS    NY   11577   2525   USA
+```
+[p011_p0173]
+
+```text
+TECTONIC - GANNETT FLEMING JV              37909CAP                    CM for Various Projects in GCT                                                                         Open        Consulting Services                   Authority Contract - Competitive Bid       5/7/2015     6/23/2015    Y   12/17/2019   5908810.53     49043.69      5870059.29     38751.24       2    NYS       N   N   0    N                                              2 PENN PLAZA, SUITE#552       380 SEVENTH AVE       NEW YORK          NY   10021   101    USA
+```
+[p011_p0174]
+
+```text
+TECTONIC ENGINEERING CONSULTANTS,          D81628C                     IQ CCM and Inspection Services                                                                         Open        Consulting Services                   Authority Contract - Competitive Bid       12/26/2018   12/26/2018   Y   1/25/2023    293280.38      236665.33     236665.33      56615.05       27   NYS       N   Y   2    N                                              ANTS PC                       70 PLEASANT HILL RD   MOUNTAINVILLE     NY   10953          USA
+```
+[p011_p0175]
+
+```text
+TECTONIC ENGINEERING CONSULTANTS,          D81633L                     IQ CCM and Inspection Services for Misc. Construction Projects                                         Open        Consulting Services                   Authority Contract - Competitive Bid       12/26/2018   11/10/2022   Y   12/25/2023   2045843.71     359642.07     359642.07      1686201.64     27   NYS       N   Y   2    N                                              ANTS PC                       70 PLEASANT HILL RD   MOUNTAINVILLE     NY   10953          USA
+```
+[p011_p0176]
+
+```text
+TECTONIC ENGINEERING CONSULTANTS,          D81633B                     IQ CCM and Inspection Services for Misc. Construction Projects                                         Open        Consulting Services                   Authority Contract - Competitive Bid       12/26/2018   12/26/2018   Y   12/25/2023   5200595.78     432986.92     432986.92      4767608.86     27   NYS       N   Y   2    N                                              ANTS PC                       70 PLEASANT HILL RD   MOUNTAINVILLE     NY   10953          USA
+```
+[p011_p0177]
+
+```text
+TECTONIC ENGINEERING CONSULTANTS,          D81628                      IQ CCM and Inspection Services for Misc. Construction Projects                                         Open        Consulting Services                   Authority Contract - Competitive Bid       12/26/2018   12/26/2018   Y   6/30/2025    1049994.00     426061.27     728820.85      321173.15      27   NYS       N   Y   2    N                                              ANTS PC                       70 PLEASANT HILL RD   MOUNTAINVILLE     NY   10953          USA
+```
+[p011_p0178]
+
+```text
+TECTONIC ENGINEERING CONSULTANTS,          D81633                      IQ CCM and Inspection Services for Misc. Construction Projects                                         Open        Consulting Services                   Authority Contract - Competitive Bid       12/26/2018   12/26/2018   Y   6/30/2025    25334047.52    5068833.55    6244137.76     19089909.76    27   NYS       N   Y   2    N                                              ANTS PC                       70 PLEASANT HILL RD   MOUNTAINVILLE     NY   10953          USA
+```
+[p011_p0179]
+
+```text
+TECTONIC ENGINEERING CONSULTANTS,          D81628L                     Resident Engineer Inspector Services for Atlantic Terminal HVAC Replacement for Track 6 Corridor and   Open        Consulting Services                   Authority Contract - Competitive Bid       12/26/2018   10/5/2022    Y   1/25/2023    12946780.16    1646008.42    1646008.42     11300771.74    27   NYS       N   Y   2    N                                              ANTS PC                       70 PLEASANT HILL RD   MOUNTAINVILLE     NY   10953          USA
+```
+[p011_p0180]
+
+```text
+THORNTON TOMASETTI INC                     PSC-13-2925A                Projects BW-14 BW-84 Des                                                                               Open        Consulting Services                   Authority Contract - Competitive Bid       9/30/2013    10/19/2016   Y   12/31/2023   2666267.83     204908.67     2086567.20     579700.63      3    NYS       N   Y   3    N                                              40 WALL ST                                          NEW YORK          NY   10005          USA
+```
+[p011_p0181]
+
+```text
+THORNTON TOMASETTI INC                     PSC-15-2977                 Design AND CSS for TN-53, Rehab AND Seismic Retrofit AND Lower Garage Rehab at TNB                     Open        Consulting Services                   Authority Contract - Competitive Bid       7/29/2016    7/29/2016    Y   12/31/2023   9275912.95     413499.01     7626152.81     1649760.14     5    NYS       N   N   0    N                                              40 WALL ST                                          NEW YORK          NY   10005          USA
+```
+[p011_p0182]
+
+```text
+THORNTON TOMASETTI INC                     PSC-16-2991N                As-Needed Design                                                                                       Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       7/12/2017    7/12/2017    Y   7/11/2023    9033153.09     1444066.97    5461762.25     3571390.84     10   NYS       N   Y   5    N                                              40 WALL ST                                          NEW YORK          NY   10005          USA
+```
+[p011_p0183]
+
+```text
+THORNTON TOMASETTI INC                     PSC-20-3043A                2021 Biennial Bridge Inspection and Design of Misc. Structural Repairs at the Throgs Neck Bridge       Open        Consulting Services                   Authority Contract - Competitive Bid       4/16/2021    4/16/2021    Y   12/31/2023   2476824.39     752134.15     2184376.02     292448.37      6    NYS       N   Y   0    N                                              40 WALL ST                                          NEW YORK          NY   10005          USA
+```
+[p011_p0184]
+
+```text
+TIBER HUDSON LLC                           ESA-JPMC - 270 PARK AVE     Outside Counsel for 270 Park Avenue                                                                    Open        Legal Services                        Authority Contract - Non-Competitive Bid   10/22/2019   10/22/2019   N                1297063.32     128449.75     929315.19      367748.13      1    Foreign   Y   Y   1    Y   Ride/Piggyback of MTA Ags    1297063.32    1800 M ST NW 350 SOUTH                              WASHINGTON        DC   20036          USA
+```
+[p011_p0185]
+
+```text
+TOLL INTERNATIONAL LLC                     D81426                      IQ Staffing Contracts to Provide Schedulers                                                            Open        Staffing Services                     Authority Contract - Competitive Bid       12/20/2018   12/20/2018   Y   12/19/2023   392215.70      26933.58      161927.10      230288.60      20   NYS       Y   Y   10   N                                              65 CENTRAL PARK W             SUITE 15A             NEW YORK          NY   10023          USA
+```
+[p011_p0186]
+
+```text
+TOSCANO CLEMENTS TAYLOR LLC                PS865-34                    Professional and Technical Sta                                                                         Open        Staffing Services                     Authority Contract - Competitive Bid       11/30/2020   11/30/2020   Y   11/29/2021   2203917.51     639926.47     1879856.63     324060.88      0    NYS       N   N   0    N                                              16 OAKWOOD RD                                       HUNTINGTON        NY   11743          USA
+```
+[p011_p0187]
+
+```text
+TRACKS UNLIMITED, LLC                      T80280                      SIR MLT Rehab                                                                                          Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/28/2018   12/28/2018   Y   12/19/2022   87392443.40    8422889.54    84361462.47    3030980.93     4    Foreign   N   Y   0    N                                              1140 GLOBE AVE.                                     MOUNTAINSIDE      NJ   7092           USA
+```
+[p011_p0188]
+
+```text
+TRANSPO INDUSTRIES INC                     3000004821                  Impact Attenuator Parts and Equipment on an As-Needed Basis                                            Open        Commodities/Supplies                  Purchased Under State Contract                                                                       84081.89                                         NYS       N                                                           20 JONES STREET                                     NEW ROCHELLE      NY   10801          USA
+```
+[p011_p0189]
+
+```text
+TRC                                        PSC-19-3029                 Safety Monitoring Services                                                                             Open        Consulting Services                   Authority Contract - Competitive Bid       12/11/2019   12/11/2019   Y   12/29/2023   4666419.14     1169507.05    4537632.35     128786.79      3    Foreign   N   N   0    N                                              21 GRIFFIN RD N                                     WINDSOR           CT   6095           USA
+```
+[p011_p0190]
+
+```text
+TREVCON CONSTRUCTION COMPANY INC           BW-07/BW-32                 D-B Fender Prot Fire Stndpipe                                                                          Completed   Design and Construction/Maintenance   Authority Contract - Competitive Bid       10/24/2019   10/24/2019   Y   12/23/2021   17275970.40    142693.12     17275970.40    0.00           5    Foreign   N   Y   0    N                                              30 CHURCH ST.                                       LIBERTY CORNER    NJ   7938           USA
+```
+### [p011_p0191] TREVCON CONSTRUCTION COMPANY INC           TN-87C/TN-PT                DB Serv
+
+## Page 12
+
+> [p012_c0001] A blank sheet of graph paper with a grid pattern.
+
+## Page 13
+
+> [p013_c0001] This image shows a full page of blank graph paper. The paper has a light gray or off-white background. Overlaid on this background is a consistent grid of thin, dark gray or black lines. The grid is composed of many small, equal-sized squares that fill the entire rectangular area of the page. There are no margins, text, or any other markings on the paper.
+
+## Page 14
+
+> [p014_c0001] A blank sheet of graph paper with a light gray background and a dense grid of thin black lines.
+
+## Page 15
+
+> [p015_c0001] A blank sheet of graph paper with a grid pattern.
+
+## Page 16
+
+> [p016_c0001] A blank sheet of graph paper with a uniform grid pattern.
+
+## Page 17
+
+[p017_c0001] A blank sheet of graph paper with a grid pattern. The grid consists of small, uniform squares. The paper is white, and the grid lines are a light gray color. There are no markings, text, or other features on the page.
+[p017_p0001]
+
+```text
+PORTA-KING BUILDING SYSTEMS               100000000081252        REQ Security Booth for MO Yard                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       8/31/2022    8/31/2022    Y   8/31/2023    30000.00      27947.20      27947.20      2052.80       3     Foreign   N   N   0    Y   Below Dollar Threshold                   JAY HENGES ENTERPRISES, INC           4133 SHORELINE DRIVE        EARTH CITY            MO   63045     2857        USA
+```
+[p017_p0002]
+
+```text
+COAST WELDING SUPPLY USA                  100000000081253        AS NEEDED 3 YR RELEASE                                                                                 Open        Commodities/Supplies                             Authority Contract - Competitive Bid       8/31/2022    11/15/2022   Y   11/14/2025   39488.75      0.00          0.00          39488.75      1     NYS       N   N   0    Y   Below Dollar Threshold                   920 - 14 LINCOLN AVE                                              HOLBROOK              NY   11741                 USA
+```
+[p017_p0003]
+
+```text
+SAFETY KLEEN SYSTEMS INC                  100000000081268        Req 190256 - Washer Maint                                                                              Open        Commodities/Supplies                             Authority Contract - Competitive Bid       9/15/2022    9/15/2022    Y   9/15/2027    305851.75     44141.16      55880.94      249970.81     2     NYS       N   N   0    Y   Below Dollar Threshold                   60 SEABRO AVE                                                     NORTH AMITYVILLE      NY   11701                 USA
+```
+[p017_p0004]
+
+```text
+VRD CONTRACTING INC                       100000000081272        SMO FCC Furniture                                                                                      Open        Commodities/Supplies                             Authority Contract - Competitive Bid       9/20/2022    9/21/2022    Y   12/31/2022   60407.84      60177.62      60177.62      230.22        1     NYS       Y   Y   1    Y   Below Dollar Threshold                   25 ANDREA RD                                                      HOLBROOK              NY   11741                 USA
+```
+[p017_p0005]
+
+```text
+CIRCLE JANITORIAL SUPPLIES INC            100000000081282        1YR JUMBO TOILET PAPER 212142                                                                          Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/20/2022   10/20/2022   Y   10/19/2023   322510.32     92075.04      95294.88      227215.44     2     Foreign   Y   Y   1    Y   Below Dollar Threshold                   5 E 12TH ST                                                       PATERSON              NJ   07524                 USA
+```
+[p017_p0006]
+
+```text
+COMPULINK TECHNOLOGIES, INC.              100000000081285        Dell PowerEdgeANDPrecision 3460                                                                        Open        Technology - Hardware                            Purchased Under State Contract                                                                      0.00                                            NYS       Y                                                         260 WEST 39TH ST                      STE 302                     NEW YORK              NY   10018                 USA
+```
+[p017_p0007]
+
+```text
+JAMAICA HARDWARE AND PAINTS INC           100000000081286        BLADE ABRASIVE RAILSAW 16 IN.                                                                          Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/5/2022    2/1/2023     Y   1/31/2024    124950.00     12495.00      12495.00      112455.00     2     NYS       Y   Y   1    Y   Below Dollar Threshold                   131-01 JAMAICA AVE                                                RICHMOND HILL         NY   11418                 USA
+```
+[p017_p0008]
+
+```text
+EPAUL DYNAMICS                            100000000081294        EQUIP FOR SURVEILLANCE                                                                                 Open        Technology - Hardware                            Authority Contract - Competitive Bid       10/10/2022   10/10/2022   Y   10/9/2023    26284.64      20963.50      26284.64      0.00          15    NYS       Y   Y   22   Y   Discretionary Procurement                16 SINTSINK DRIVE EAST                                            PORT WASHINGTON       NY   11050                 USA
+```
+[p017_p0009]
+
+```text
+MXV RAIL                                  100000000081296        3 YR FCC LICENSES                                                                                      Open        Telecommunication Equipment or Services          Authority Contract - Non-Competitive Bid   10/11/2022   10/11/2022   Y   10/10/2025   45000.00      3785.00       4395.00       40605.00      1     Foreign   N   N   0    Y   Sole Source                 45000.00     PO BOX 98382                                                      WASHINGTON            DC   20090     8300        USA
+```
+[p017_p0010]
+
+```text
+CARAHSOFT TECHNOLOGY CORP                 100000000081300        5320L Support Package                                                                                  Open        Technology - Software                            Authority Contract - Competitive Bid       10/17/2022   10/17/2022   Y   10/31/2024   30909.28      0.00          15454.64      15454.64      0     Foreign   N   N   0    N                                            11493 SUNSET HILLS ROAD               SUITE 100                   RESTON                VA   20190                 USA
+```
+[p017_p0011]
+
+```text
+GLOBE ELECTRIC SUPPLY CO INC              100000000081302        RUGGEDCOM RX1500 AND RUGGEDCOM ACCESSORY 6GK6000-8FE52-0AA0                                            Open        Technology - Hardware                            Authority Contract - Competitive Bid       10/18/2022   10/18/2022   Y   10/18/2023   61984.00      61984.00      61984.00      0.00          3     Foreign   N   Y   3    N                                            10902 ROARK RD                                                    HOUSTON               TX   77099                 USA
+```
+[p017_p0012]
+
+```text
+PITNEY BOWES, INC.                        100000000081303        One Year Service and Maintenance on Pitney Bowes Mailroom Equipment                                    Completed   Other Professional Services                      Purchased Under State Contract                                                                      0.00                                            Foreign   N                                                         PO BOX 981039                                                     BOSTON                MA   02298     1039        USA
+```
+[p017_p0013]
+
+```text
+VRD CONTRACTING INC                       100000000081304        Assemble install Herman Miller chairs and remove dispose of existing old chairs                        Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/20/2022   10/26/2022   Y   12/1/2022    23586.25      23586.25      23586.25      0.00          1     NYS       Y   Y   1    Y   Below Dollar Threshold                   25 ANDREA RD                                                      HOLBROOK              NY   11741                 USA
+```
+[p017_p0014]
+
+```text
+AMERICAN VETERAN ENTERPRISE TEAM LLC      100000000081307        REQ 205706 3YR BOILER PARTS                                                                            Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/4/2022    12/4/2022    Y   12/3/2025    293392.82     18823.44      18823.44      274569.38     1     NYS       N   N   0    Y   Below Dollar Threshold                   1789 ROUTE 9                                                      CLIFTON PARK          NY   12065                 USA
+```
+[p017_p0015]
+
+```text
+ACV ENVIRONMENTAL SERVICES INC            100000000081309        HAZ Waste Disposal                                                                                     Open        Other Professional Services                      Authority Contract - Competitive Bid       11/1/2022    10/27/2022   Y   8/26/2026    483887.80     114981.39     114981.39     368906.41     3     Foreign   N   Y   1    N                                            P.O. BOX 674985                                                   DETROIT               MI   48267     4985        USA
+```
+[p017_p0016]
+
+```text
+ACV ENVIRONMENTAL SERVICES INC            100000000081310        NON HAZ WASTE MGMT                                                                                     Open        Other Professional Services                      Authority Contract - Competitive Bid       11/1/2022    10/27/2022   Y   8/26/2026    1640704.00    69849.50      69849.50      1570854.50    3     Foreign   N   Y   1    N                                            P.O. BOX 674985                                                   DETROIT               MI   48267     4985        USA
+```
+[p017_p0017]
+
+```text
+INTIVITY INC                              100000000081319        Chairs and Sofas for D Hall at GCT                                                                     Open        Commodities/Supplies                             Authority Contract - Competitive Bid       11/8/2022    11/8/2022    Y   12/12/2022   18210.79      18210.79      18210.79      0.00          9     NYS       Y   Y   6    Y   Below Dollar Threshold                   106 DESPATCH DR.                      STE 2                       EAST ROCHESTER        NY   14445                 USA
+```
+[p017_p0018]
+
+```text
+CIRCLE JANITORIAL SUPPLIES INC            100000000081322        TOWEL PAPER UNBLEACHED 8 IN. X 350-400 FT 12 ROLLS PER CASE                                            Open        Commodities/Supplies                             Authority Contract - Competitive Bid       11/8/2022    11/7/2022    Y   11/6/2025    230223.17     67148.41      67148.41      163074.76     1     Foreign   Y   Y   1    Y   Below Dollar Threshold                   5 E 12TH ST                                                       PATERSON              NJ   07524                 USA
+```
+[p017_p0019]
+
+```text
+COMPULINK TECHNOLOGIES, INC.              100000000081324        Juniper Switches w 1yr support                                                                         Open        Telecommunication Equipment or Services          Purchased Under State Contract                                                                      158882.48                                       NYS       Y                                                         260 WEST 39TH ST                      STE 302                     NEW YORK              NY   10018                 USA
+```
+[p017_p0020]
+
+```text
+COMPULINK TECHNOLOGIES, INC.              100000000081325        Cisco network equipment                                                                                Open        Telecommunication Equipment or Services          Purchased Under State Contract                                                                      167828.26                                       NYS       Y                                                         260 WEST 39TH ST                      STE 302                     NEW YORK              NY   10018                 USA
+```
+[p017_p0021]
+
+```text
+EPAUL DYNAMICS                            100000000081327        Lenel Equipment                                                                                        Open        Technology - Hardware                            Authority Contract - Competitive Bid       11/9/2022    11/9/2022    Y   11/9/2023    46833.15      46833.15      46833.15      0.00          2     NYS       Y   Y   2    N                                            16 SINTSINK DRIVE EAST                                            PORT WASHINGTON       NY   11050                 USA
+```
+[p017_p0022]
+
+```text
+NATIONAL INDUSTRIES FOR THE BLIND         100000000081331        3 year safety vests contract                                                                           Open        Commodities/Supplies                             Non Contract Procurement/Purchase Order                                                             183595.89                                       NYS       N                                                         DBA NYSPSP                            136 STATE ST, 2ND FL        ALBANY                NY   12207                 USA
+```
+[p017_p0023]
+
+```text
+STORR TRACTOR COMPANY                     100000000081336        As-Needed Snowblowers                                                                                  Open        Commodities/Supplies                             Purchased Under State Contract                                                                      0.00                                            Foreign   N                                                         3191 HIGHWAY 22                                                   BRANCHBURG            NJ   08876                 USA
+```
+[p017_p0024]
+
+```text
+TXRX SYSTEMS INC                          100000000081343        INLINE POWER MONITOR P N 95-37F-01N-A-S 150-170MHZ, 19 RACK MT                                         Open        Technology - Hardware                            Authority Contract - Competitive Bid       12/14/2022   12/14/2022   Y   12/14/2023   37800.00      37800.00      37800.00      0.00          2     NYS       N   Y   1    N                                            8625 INDUSTRIAL PKWY                                              ANGOLA                NY   14006                 USA
+```
+[p017_p0025]
+
+```text
+UNITED STEEL PRODUCTS INC                 100000000081349        FURNISH AND INSTALROLLING DOOR                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       1/17/2023    3/14/2023    Y   9/13/2023    43400.00      43400.00      43400.00      0.00          1     NYS       N   N   0    Y   Below Dollar Threshold                   33-40 127TH PLACE                                                 FLUSHING              NY   11368                 USA
+```
+[p017_p0026]
+
+```text
+UNITED STEEL PRODUCTS INC                 100000000081350        ROLLING DOOR AND INSTALLATION                                                                          Open        Commodities/Supplies                             Authority Contract - Competitive Bid       1/15/2023    1/18/2023    Y   7/16/2023    64878.00      0.00          0.00          64878.00      1     NYS       N   N   0    Y   Below Dollar Threshold                   33-40 127TH PLACE                                                 FLUSHING              NY   11368                 USA
+```
+[p017_p0027]
+
+```text
+CASSONE LEASING, INC.                     100000000081352        OFFICE TRAILER                                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       1/12/2023    1/12/2023    Y   7/11/2023    31229.00      31229.00      31229.00      0.00          1     NYS       Y   Y   1    Y   Below Dollar Threshold                   1900 LAKELAND AVE                                                 RONKONKOMA            NY   11779                 USA
+```
+[p017_p0028]
+
+```text
+PACKAGE PAVEMENT CO INC                   100000000081353        3 YR LOCOMOTIVE SAND CONTRACT                                                                          Open        Commodities/Supplies                             Authority Contract - Competitive Bid       1/17/2023    1/26/2023    Y   1/25/2026    66528.00      0.00          0.00          66528.00      3     NYS       N   Y   1    Y   Below Dollar Threshold                   PO BOX 408                                                        STORMVILLE            NY   12582                 USA
+```
+[p017_p0029]
+
+```text
+PORTLAND WILLIAMS LLC                     100000000081359        RUGGEDCOM RX1500 LAYER 3 SWITCH                                                                        Open        Technology - Hardware                            Authority Contract - Competitive Bid       1/24/2023    1/24/2023    Y   1/24/2024    87910.00      87910.00      87910.00      0.00          5     NYS       N   Y   1    N                                            75 N CENTRAL AVE, STE# 105                                        ELMSFORD              NY   10523                 USA
+```
+[p017_p0030]
+
+```text
+RELADYNE NORTHEAST LLC                    100000000081364        1 YR CONTRACT OIL LUBE SAE15W4                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       2/3/2023     2/3/2023     Y   2/3/2025     74364.78      12390.00      12390.00      61974.78      6     NYS       N   Y   2    Y   Below Dollar Threshold                   35 DREXEL DR                                                      BAY SHORE             NY   11706                 USA
+```
+[p017_p0031]
+
+```text
+E PLUS TECHNOLOGY INC                     100000000081366        3 YR Cisco Smartnet Renewal                                                                            Open        Telecommunication Equipment or Services          Purchased Under State Contract                                                                      807252.18                                       Foreign   N                                                         13595 DULLES TECHNOLOGY DR                                        HERNDON               VA   20171                 USA
+```
+[p017_p0032]
+
+```text
+CIRCLE JANITORIAL SUPPLIES INC            100000000081367        3YR Contract Foaming Soap                                                                              Open        Commodities/Supplies                             Authority Contract - Competitive Bid       2/9/2023     2/9/2023     Y   2/8/2026     125400.00     45600.00      45600.00      79800.00      3     Foreign   Y   Y   3    Y   Below Dollar Threshold                   5 E 12TH ST                                                       PATERSON              NJ   07524                 USA
+```
+[p017_p0033]
+
+```text
+JOHNSTONE SUPPLY / THREE B SUPPLY INC     100000000081368        BOILER PARTS OIL AND GAS FIRED                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       2/17/2023    4/19/2023    Y   4/18/2025    124489.00     14718.79      14718.79      109770.21     1     NYS       Y   Y   1    Y   Below Dollar Threshold                   66 BROCKWAY PLACE                                                 WHITE PLAINS          NY   10601     4002        USA
+```
+[p017_p0034]
+
+```text
+CLUTCH SOLUTIONS LLC                      100000000081369        Getac S410 G4-14; Core i5 1135G7; 16 GB RAM 256 GB SSD                                                 Open        Technology - Hardware                            Authority Contract - Competitive Bid       2/13/2023    2/13/2023    Y   2/13/2024    22212.00      22212.00      22212.00      0.00          3     Foreign   N   N   0    N                                            2152 S VINEYARD AVE. BLD. 1 STE 102                               MESA                  AZ   85210                 USA
+```
+[p017_p0035]
+
+```text
+ASPEN AERIALS, INC.                       100000000081373        5 YR INSPECTIONS AND TRAINING                                                                          Open        Other Professional Services                      Authority Contract - Competitive Bid       2/27/2023    4/13/2023    Y   4/12/2028    79500.00      0.00          0.00          79500.00      1     Foreign   N   N   0    Y   Below Dollar Threshold                   4303 WEST 1ST STREET                                              DULUTH                MN   55807                 USA
+```
+[p017_p0036]
+
+```text
+COMPETITION UNLIMITED CORP                100000000081375        ONE 1 YEAR CONTRACT                                                                                    Open        Commodities/Supplies                             Authority Contract - Competitive Bid       2/28/2023    3/1/2023     Y   2/28/2025    24834.98      0.00          0.00          24834.98      2     NYS       N   N   0    Y   Below Dollar Threshold                   559 LIVINGSTON ST                                                 WESTBURY              NY   11590                 USA
+```
+[p017_p0037]
+
+```text
+FIBER NETWORKS, INC.                      100000000081376        Acuity Hybrid Support for V5-2000 Appliance                                                            Open        Technology - Software                            Authority Contract - Competitive Bid       3/1/2023     3/1/2023     Y   3/1/2024     94591.42      94591.42      94591.42      0.00          2     NYS       N   Y   1    N                                            25-40 SHORE BLVD, STE 22F                                         ASTORIA               NY   11102                 USA
+```
+[p017_p0038]
+
+```text
+VANGUARD DIRECT INC                       100000000081378        Form JB-1 RWSB Job Safety Briefing and Roadway Worker Safety Briefing Power Dept. Spec. JB-1 RWSB 20   Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/6/2023     3/6/2023     Y   3/5/2025     32600.00      5868.00       5868.00       26732.00      1     NYS       N   N   0    Y   Below Dollar Threshold                   519 EIGHTH AVE, 23RD FLOOR            ATTN: ACCOUNTS RECEIVABLE   NEW YORK              NY   10018                 USA
+```
+[p017_p0039]
+
+```text
+GAL MANUFACTURING CO LLC                  100000000081387        2YR GAL PARTS CONTRACT                                                                                 Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/19/2023    3/20/2023    Y   3/19/2025    93315.00      0.00          0.00          93315.00      0     NYS       N   N   0    Y   Below Dollar Threshold                   50 E 153RD ST                                                     BRONX                 NY   10451                 USA
+```
+[p017_p0040]
+
+```text
+E PLUS TECHNOLOGY INC                     100000000081388        Cisco Equip with support.                                                                              Open        Telecommunication Equipment or Services          Purchased Under State Contract                                                                      16451.98                                        Foreign   N                                                         13595 DULLES TECHNOLOGY DR                                        HERNDON               VA   20171                 USA
+```
+[p017_p0041]
+
+```text
+GAL MANUFACTURING CO LLC                  100000000081389        TWO YEAR GAL ELEVATOR PARTS CO                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/23/2023    3/24/2023    Y   3/23/2025    54985.00      14694.44      14694.44      40290.56      1     NYS       N   N   0    Y   Below Dollar Threshold                   50 E 153RD ST                                                     BRONX                 NY   10451                 USA
+```
+[p017_p0042]
+
+```text
+TENNANT SALES AND SERVICE CO              100000000081391        Tennant Mach. Maintenance                                                                              Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       4/3/2023     4/3/2023     Y   4/3/2027     267313.40     38141.81      38141.81      229171.59     1     NYS       N   N   0    Y   Below Dollar Threshold                   855 BETHEL AVE                                                    PENSAUKEN             NY   08110                 USA
+```
+[p017_p0043]
+
+```text
+COMPULINK TECHNOLOGIES, INC.              100000000081393        Waterfall Support                                                                                      Open        Technology - Software                            Authority Contract - Competitive Bid       3/31/2023    3/31/2023    Y   3/31/2024    74607.26      74607.26      74607.26      0.00          1     NYS       Y   Y   1    Y   Below Dollar Threshold                   260 WEST 39TH ST                      STE 302                     NEW YORK              NY   10018                 USA
+```
+[p017_p0044]
+
+```text
+MT KISCO TRUCK AND AUTO PARTS             100000000081399        1 YR Contract Equipment Lights                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       4/10/2023    7/1/2023     Y   6/30/2024    47778.50      5276.97       5276.97       42501.53      2     NYS       N   N   0    Y   Below Dollar Threshold                   135 KISCO AVE                                                     MT KISCO              NY   10549                 USA
+```
+[p017_p0045]
+
+```text
+TRANSAXLE LLC                             100000000081402        THREE-YEAR MASTER RELEASE CONT                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       4/18/2023    4/18/2023    Y   4/17/2026    247202.40     43175.61      43175.61      204026.79     1     Foreign   N   N   0    Y   Below Dollar Threshold                   2501 ROUTE 73 S                                                   CINNAMINSON           NJ   08077                 USA
+```
+[p017_p0046]
+
+```text
+BDI - BEARING DISTRIBUTORS INC            100000000081404        BEARINGS, SEALS AND CHAINS                                                                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       4/25/2023    7/2/2023     Y   7/1/2024     31858.89      5281.58       5281.58       26577.31      2     Foreign   N   N   0    Y   Below Dollar Threshold                   640 ACCESS RD                                                     STRATFORD             CT   06615                 USA
+```
+[p017_p0047]
+
+```text
+ENGHOUSE NETWORKS(US) INC                 100000000081405        Netboss XT Software Upgrade                                                                            Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   4/25/2023    4/25/2023    Y   6/30/2024    203449.00     203449.00     203449.00     0.00          1     Foreign   N   N   0    N                               203449.00    80 TIVERTON COURT STE 800                                         MARKHAM                    L3R0G4           ON   OTHER   CAN
+```
+[p017_p0048]
+
+```text
+D AND D ULTIMATE CONNECTION LLC           100000000081406        To procure surveillance equipment for Grand Central Station                                            Open        Telecommunication Equipment or Services          Authority Contract - Competitive Bid       4/28/2023    6/14/2023    Y   9/14/2023    27095.23      27095.23      27095.23      0.00          2     NYS       Y   Y   15   Y   Discretionary Procurement                C/O DONNELL J SLAY                    14227 130TH AVE.            JAMAICA               NY   11436                 USA
+```
+[p017_p0049]
+
+```text
+EPAUL DYNAMICS                            100000000081410        ONE YEAR AS NEEDED                                                                                     Open        Commodities/Supplies                             Authority Contract - Competitive Bid       5/3/2023     5/5/2023     Y   5/4/2024     217070.00     88992.00      88992.00      128078.00     3     NYS       Y   Y   3    Y   Below Dollar Threshold                   16 SINTSINK DRIVE EAST                                            PORT WASHINGTON       NY   11050                 USA
+```
+[p017_p0050]
+
+```text
+PLUGOUT LLC                               100000000081411        POWER SUPPLY AND LENEL INTELL                                                                          Open        Technology - Hardware                            Authority Contract - Competitive Bid       5/8/2023     5/8/2023     Y   5/8/2024     68426.58      55734.75      55734.75      12691.83      3     Foreign   N   Y   2    N                                            33 PARK PLACE                                                     ENGLEWOOD             NJ   07631                 USA
+```
+[p017_p0051]
+
+```text
+TOP AND BOTTOM WEAR                       100000000081413        3 YR SAFETY JACKET CONTRACT                                                                            Open        Commodities/Supplies                             Authority Contract - Competitive Bid       5/10/2023    6/21/2023    Y   6/20/2026    397740.00     82757.55      82757.55      314982.45     8     Foreign   Y   Y   2    Y   Below Dollar Threshold                   610 OLD YORK RD, STE 400                                          JENKINTOWN            PA   19046                 USA
+```
+[p017_p0052]
+
+```text
+UNITED STEEL PRODUCTS INC                 100000000081415        ROLLING DOOR INSTALLATION                                                                              Open        Commodities/Supplies                             Authority Contract - Competitive Bid       5/15/2023    5/15/2023    Y   11/14/2023   20795.00      20795.00      20795.00      0.00          1     NYS       N   N   0    Y   Below Dollar Threshold                   33-40 127TH PLACE                                                 FLUSHING              NY   11368                 USA
+```
+[p017_p0053]
+
+```text
+US AERIALS AND EQUIPMENT LLC              100000000081417        SCISSORS LIFT                                                                                          Open        Commodities/Supplies                             Authority Contract - Competitive Bid       5/19/2023    5/19/2023    Y   5/13/2024    39980.00      0.00          0.00          39980.00      2     NYS       Y   Y   2    Y   Below Dollar Threshold                   37-30 REVIEW AVE                                                  LONG ISLAND CITY      NY   11101                 USA
+```
+[p017_p0054]
+
+```text
+TWINCO MFG. CO., INC.                     100000000081418        Training MNR                                                                                           Open        Technology - Consulting/Development or Support   Authority Contract - Competitive Bid       5/24/2023    5/24/2023    Y   5/24/2023    42475.00      0.00          0.00          42475.00      1     NYS       N   N   0    Y   Below Dollar Threshold                   30 COMMERCE DRIVE                                                 HAUPPAUGE             NY   11788                 USA
+```
+[p017_p0055]
+
+```text
+CIRCLE JANITORIAL SUPPLIES INC            100000000081420        TWO YEAR AS NEEDED MINERAL SAL                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       5/30/2023    9/1/2023     Y   8/31/2025    256000.00     0.00          0.00          256000.00     5     Foreign   Y   Y   4    Y   Below Dollar Threshold                   5 E 12TH ST                                                       PATERSON              NJ   07524                 USA
+```
+[p017_p0056]
+
+```text
+CCP INDUSTRIES INC                        100000000081423        ORANGE 12.5 X 13.4 IN. 1 ROLL                                                                          Open        Commodities/Supplies                             Authority Contract - Competitive Bid       6/7/2023     6/8/2023     Y   6/7/2026     298584.00     22550.40      22550.40      276033.60     3     Foreign   N   Y   2    Y   Below Dollar Threshold                   26301 CURTISS WRIGHT PKWY             SUITE 200                   RICHMOND HEIGHTS      OH   44143                 USA
+```
+[p017_p0057]
+
+```text
+CIRCLE JANITORIAL SUPPLIES INC            100000000081429        SALT MINERAL ROCK NO1                                                                                  Open        Commodities/Supplies                             Authority Contract - Competitive Bid       6/20/2023    9/1/2023     Y   8/31/2026    129700.00     0.00          0.00          129700.00     2     Foreign   Y   Y   2    Y   Below Dollar Threshold                   5 E 12TH ST                                                       PATERSON              NJ   07524                 USA
+```
+[p017_p0058]
+
+```text
+D AND D ULTIMATE CONNECTION LLC           100000000081430        Consulting Services                                                                                    Open        Consulting Services                              Authority Contract - Competitive Bid       8/25/2023    8/25/2023    Y   11/24/2023   21466.33      21466.20      21466.20      0.13          2     NYS       Y   Y   1    Y   Below Dollar Threshold                   C/O DONNELL J SLAY                    14227 130TH AVE.            JAMAICA               NY   11436                 USA
+```
+[p017_p0059]
+
+```text
+SIEMENS INDUSTRY, INC.                    100000000081438        Network switches and modules for upgrades for NY node houses                                           Open        Other                                            Authority Contract - Competitive Bid       7/3/2023     7/21/2023    Y   9/30/2023    298860.00     0.00          0.00          298860.00     4     Foreign   N   Y   1    Y   Discretionary Procurement                350 KENT AVE                                                      ELK GROVE VILLAGE     IL   60007                 USA
+```
+[p017_p0060]
+
+```text
+L.B. FOSTER RAIL TECHNOLOGIES INC         100000000081439        3YR RAIL LUBRICATOR OEM PARTS                                                                          Open        Commodities/Supplies                             Authority Contract - Competitive Bid       6/30/2023    6/27/2023    Y   6/27/2026    169750.00     36444.00      36444.00      133306.00     1     Foreign   N   N   0    Y   Below Dollar Threshold                   415 HOLIDAY DRIVE                                                 PITTSBURGH            PA   15220                 USA
+```
+[p017_p0061]
+
+```text
+SIEMENS INDUSTRY, INC.                    100000000081441        To procure RUGGEDCOM network switches for CT node houses                                               Open        Other                                            Authority Contract - Competitive Bid       6/30/2023    7/20/2023    Y   9/30/2023    298860.00     0.00          0.00          298860.00     1     Foreign   N   N   0    Y   Discretionary Procurement                350 KENT AVE                                                      ELK GROVE VILLAGE     IL   60007                 USA
+```
+[p017_p0062]
+
+```text
+D AND D ULTIMATE CONNECTION LLC           100000000081444        Replacement battery cartridges and monitors for MNCRR                                                  Open        Other                                            Authority Contract - Competitive Bid       7/6/2023     7/6/2023     Y   10/6/2023    17984.08      0.00          0.00          17984.08      4     NYS       Y   Y   1    Y   Below Dollar Threshold                   C/O DONNELL J SLAY                    14227 130TH AVE.            JAMAICA               NY   11436                 USA
+```
+[p017_p0063]
+
+```text
+THALLE INDUSTRIES                         100000000081445        BITUMINOUS CONCRETE HMA                                                                                Open        Commodities/Supplies                             Authority Contract - Competitive Bid       7/6/2023     10/1/2023    Y   9/30/2026    192685.00     19162.59      19162.59      173522.41     6     NYS       N   N   0    Y   Below Dollar Threshold                   172 ROUTE 9                                                       FISHKILL              NY   12524                 USA
+```
+[p017_p0064]
+
+```text
+TILCON CONNECTICUT, INC.                  100000000081448        BITUMINOUS CONCRETE HMA                                                                                Open        Commodities/Supplies                             Authority Contract - Competitive Bid       7/10/2023    10/1/2023    Y   9/30/2026    252319.00     0.00          0.00          252319.00     6     Foreign   N   N   0    Y   Below Dollar Threshold                   P O BOX 1357                                                      NEW BRITAIN           CT   06050     1357        USA
+```
+[p017_p0065]
+
+```text
+MT KISCO TRUCK AND AUTO PARTS             100000000081469        1 YR Contract Equipment Lights                                                                         Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       4/10/2023    7/1/2023     Y   6/30/2024    0.00          0.00          0.00          0.00          2     NYS       N   N   0    Y   Below Dollar Threshold                   135 KISCO AVE                                                     MT KISCO              NY   10549                 USA
+```
+[p017_p0066]
+
+```text
+QUALITY AND ASSURANCE TECHNOLOGY CORP     100000000081481        Dell Power Servers                                                                                     Open        Technology - Hardware                            Authority Contract - Competitive Bid       8/30/2023    8/30/2023    Y   8/30/2024    51092.69      51092.69      51092.69      0.00          2     NYS       Y   Y   1    Y   NYS/NYC/CountyContract                   DBA QNA TECH                          18 MARGINWOOD DRIVE         RIDGE                 NY   11961                 USA
+```
+[p017_p0067]
+
+```text
+CIRCLE JANITORIAL SUPPLIES INC            100000000081488        MWBE SDVOB Only                                                                                        Open        Commodities/Supplies                             Authority Contract - Competitive Bid       9/13/2023    11/1/2023    Y   9/30/2024    429120.00     5793.12       5793.12       423326.88     11    Foreign   Y   Y   11   Y   Below Dollar Threshold                   5 E 12TH ST                                                       PATERSON              NJ   07524                 USA
+```
+[p017_p0068]
+
+```text
+QUALITY AND ASSURANCE TECHNOLOGY CORP     100000000081499        Dell Workstations                                                                                      Open        Technology - Hardware                            Purchased Under State Contract                                                                      0.00                                            NYS       Y                                                         DBA QNA TECH                          18 MARGINWOOD DRIVE         RIDGE                 NY   11961                 USA
+```
+[p017_p0069]
+
+```text
+CK SUPPLY LLC                             100000000081501        3YR Contract Sand                                                                                      Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/18/2023   10/18/2023   Y   10/17/2026   143994.00     12837.06      12837.06      131156.94     2     Foreign   N   Y   1    Y   Below Dollar Threshold                   11 DUNBARTON RD                                                   JACKSON               NJ   08527                 USA
+```
+[p017_p0070]
+
+```text
+QUALITY AND ASSURANCE TECHNOLOGY CORP     100000000081503        DELL P N PER760TM POWER EDGE R760                                                                      Open        Commodities/Supplies                             Purchased Under State Contract                                                                      0.00                                            NYS       Y                                                         DBA QNA TECH                          18 MARGINWOOD DRIVE         RIDGE                 NY   11961                 USA
+```
+[p017_p0071]
+
+```text
+QUALITY AND ASSURANCE TECHNOLOGY CORP     100000000081505        Dell Precision 3460 Cable Opti                                                                         Open        Commodities/Supplies                             Purchased Under State Contract                                                                      0.00                                            NYS       Y                                                         DBA QNA TECH                          18 MARGINWOOD DRIVE         RIDGE                 NY   11961                 USA
+```
+[p017_p0072]
+
+```text
+VRD CONTRACTING INC                       100000000081538        Cubicles                                                                                               Open        Commodities/Supplies                             Purchased Under State Contract                                                                      0.00                                            NYS       Y                                                         25 ANDREA RD                                                      HOLBROOK              NY   11741                 USA
+```
+[p017_p0073]
+
+```text
+FRED A COOK JR INC                        100000000081543        HOLDING TANK WASTE WATER PUMP                                                                          Open        Consulting Services                              Authority Contract - Competitive Bid       12/4/2023    4/1/2024     Y   3/31/2027    106080.00     0.00          0.00          106080.00     2     NYS       N   N   0    Y   Below Dollar Threshold                   P.O. BOX 70                                                       MONTROSE              NY   10548                 USA
+```
+[p017_p0074]
+
+```text
+COMPULINK TECHNOLOGIES, INC.              100000000081548        Juniper Equip. w 3 yrs of supp                                                                         Open        Telecommunication Equipment or Services          Purchased Under State Contract                                                                      0.00                                            NYS       Y                                                         260 WEST 39TH ST                      STE 302                     NEW YORK              NY   10018                 USA
+```
+[p017_p0075]
+
+```text
+NEST WIRELESS GLOBAL LLC                  100000000081555        Axis Cameras                                                                                           Open        Technology - Hardware                            Authority Contract - Competitive Bid       12/6/2023    12/6/2023    Y   12/22/2024   37395.00      0.00          0.00          37395.00      0     NYS       Y   Y   1    N                                            4115 Kissena Blvd                                                 Flushing              NY   11355                 USA
+```
+[p017_p0076]
+
+```text
+LUCCAH CONSULTING LLC                     100000000081556        AS NEEDED 3 YEAR CONTRACT                                                                              Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/22/2023   12/26/2023   Y   12/25/2026   209610.00     0.00          0.00          209610.00     5     NYS       Y   Y   5    Y   Below Dollar Threshold                   17 Murray Street                      Suite 3                     NEW YORK              NY   10007                 USA
+```
+[p017_p0077]
+
+```text
+CDW GOVERNMENT LLC                        100000000081576        Dell CTO PowerProtect                                                                                  Open        Commodities/Supplies                             Purchased Under State Contract                                                                      0.00                                            Foreign   N                                                         300 N. MILWAUKEE AVENUE                                           VERNON HILLS          IL   60061                 USA
+```
+[p017_p0078]
+
+```text
+CDW GOVERNMENT LLC                        100000000081577        Dell Adapter, 960GB SSD SAS AND Broadcom 57414 Dual PorT                                               Open        Commodities/Supplies                             Purchased Under State Contract                                                                      0.00                                            Foreign   N                                                         300 N. MILWAUKEE AVENUE                                           VERNON HILLS          IL   60061                 USA
+```
+[p017_p0079]
+
+```text
+WASTE TECHNOLOGY SERVICES INC.            1000047054             TANDD Regulated Waste                                                                                  Open        Other                                            Authority Contract - Competitive Bid       10/13/2015   10/13/2015   Y   1/30/2023    6000002.00    103420.29     4623633.02    1376368.98    4     NYS       N   N   0    N                                            435 N 2ND ST                                                      LEWISTON              NY   14092                 USA
+```
+[p017_p0080]
+
+```text
+K D ANALYTICAL CONSULTING LLC             1000076648             PROTECT Maintenance Program                                                                            Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   12/20/2021   2/1/2022     Y   1/31/2025    6165164.00    1962921.00    1962921.00    4202243.00    1     Foreign   N   N   0    N                               6165164.00   235-G LOG CANOE CIRCLE                                            STEVENSVILLE          MD   21666                 USA
+```
+[p017_p0081]
+
+```text
+K D ANALYTICAL CONSULTING LLC             1000076648C            PROTECT System design, delivery, installation, and initial maintenance service agreements              Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   7/27/2022    8/1/2022     Y   1/31/2025    2707707.64    2707707.64    2707707.64    0.00          0     Foreign   N   N   0    N                               2707707.64   235-G LOG CANOE CIRCLE                                            STEVENSVILLE          MD   21666                 USA
+```
+[p017_p0082]
+
+```text
+SKANSKA ECCO III 2 JV                     100008193              Design Build Services Harmon Shop Phase V Stage 2                                                      Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       10/31/2018   10/31/2018   Y   10/31/2024   0.00          0.00          0.00          0.00          2     NYS       N   N   0    N                                            7520 ASTORIA BLVD                     STE 200                     E ELMHURST            NY   11370                 USA
+```
+[p017_p0083]
+
+```text
+STANTEC CONSULTING SERVICES INC           1000087075             GCT Trainshed Priority Repairs                                                                         Open        Consulting Services                              Authority Contract - Competitive Bid       10/2/2017    10/9/2017    Y   2/1/2025     5377869.00    407266.19     4305881.32    1071987.68    1     NYS       N   N   0    N                                            475 FIFTH AVE, 12TH FL                                            NEW YORK              NY   10017                 USA
+```
+[p017_p0084]
+
+```text
+RR DONNELLEY AND SONS CO                  10077-0000             Payroll check stock forms and direct deposit advice stock forms                                        Open        Consulting Services                              Authority Contract - Non-Competitive Bid   12/14/2022   12/6/2022    Y   12/31/2023   78366.00      20679.00      20679.00      57687.00      1     Foreign   N   N   0    N                               78366.00     PO BOX 842307                                                     BOSTON                MA   02284     2307        USA
+```
+[p017_p0085]
+
+```text
+ROYAL PROPERTIES, INC.                    10083-0100             BROKERAGE SERVICES                                                                                     Open        Consulting Services                              Authority Contract - Competitive Bid       1/1/2011     1/1/2011     Y   7/31/2034    308500.00     0.00          86846.49      221653.51     5     NYS       N   N   0    N                                            850 BRONX RIVER RD                    STE 106                     BRONXVILLE            NY   10708                 USA
+```
+[p017_p0086]
+
+```text
+TDX CONSTRUCTION CORP.                    10200-01               Construction Mentoring                                                                                 Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       3/1/2018     3/1/2018     Y   9/30/2024    43058640.03   7485205.42    36909129.81   6149510.22    4     NYS       N   Y   1    N                                            3 MANHATTANVILLE RD, STE 104                                      PURCHASE              NY   10577                 USA
+```
+[p017_p0087]
+
+```text
+UNITED PARCEL SERVICE INC                 11005-0200             UPS SERVICE FOR HQ, PD AND BSC                                                                         Open        Other                                            Purchased Under State Contract                                                                      2206.25                                         Foreign   N                                                         P O BOX 7247-0244                                                 PHILADELPHIA          PA   19170     0001        USA
+```
+[p017_p0088]
+
+```text
+INVERIS TRAINING SOLUTIONS INC            11166-0100             Req. 8481                                                                                              Open        Other                                            Authority Contract - Non-Competitive Bid   12/23/2011   2/17/2012    Y   2/29/2024    98000.02      0.00          69916.67      28083.35      1     Foreign   N   N   0    Y   Sole Source                 98000.02     296 BROGDON RD                                                    SUWAREE               GA   30024                 USA
+```
+[p017_p0089]
+
+```text
+JEAN KYOUNG SHIN                          11193-0100             Artwork for 63rd Street 2nd Av                                                                         Open        Other Professional Services                      Authority Contract - Competitive Bid       12/16/2011   1/1/2012     Y   2/27/2026    1149695.00    0.00          1134644.96    15050.04      105   NYS       N   N   0    N                                            68 JAY ST, 306                                                    BROOKLYN              NY   11201                 USA
+```
+[p017_p0090]
+
+```text
+HATCH ASSOCIATES CONSULTANTS INC          113798-NYCT 2023       Rail Simulation                                                                                        Open        Consulting Services                              Authority Contract - Non-Competitive Bid   11/1/2023    11/1/2023    Y   10/31/2024   646933.00     0.00          0.00          646933.00     1     Foreign   N   Y   1    Y   Sole Source                 646933.00    1600 W CARSON ST, STE#1                                           PITTSBURGH            PA   15219                 USA
+```
+[p017_p0091]
+
+```text
+IIT INC                                   11396-0200             REQ. No 14667-GUS PARDO FROM 6-10-19 to 12-31-19                                                       Open        Other                                            Authority Contract - Competitive Bid       6/10/2019    6/17/2019    Y   12/30/2022   449677.00     3416.00       429211.25     20465.75      4     NYS       Y   Y   1    N                                            7 SUMMERWIND DRIVE                                                GLEN HEAD             NY   11545                 USA
+```
+[p017_p0092]
+
+```text
+CBRE INC                                  11417-0100             On-call Brokerage and Advisory Services for MTA Real Estate                                            Open        Other Professional Services                      Authority Contract - Competitive Bid       7/1/2019     11/1/2019    Y   10/31/2024   7360000.00    686871.53     3792046.42    3567953.58    4     Foreign   N   N   0    N                                            P.O. BOX 848844                                                   LOS ANGELES           CA   90084                 USA
+```
+[p017_p0093]
+
+```text
+US TECH SOLUTIONS, INC                    11483-0200             Consultant Services required to assist MTA Procurement during Consolidation.                           Open        Consulting Services                              Authority Contract - Competitive Bid       2/1/2023     12/27/2022   Y   12/31/2023   137760.00     113232.00     113232.00     24528.00      8     Foreign   N   Y   1    N                                            10 EXCHANGE PLACE                     SUITE# 1820                 JERSEY CITY           NJ   07302                 USA
+```
+[p017_p0094]
+
+```text
+US TECH SOLUTIONS, INC                    11483-0300             ONSULTANT SERVICES                                                                                     Open        Other Professional Services                      Authority Contract - Competitive Bid       1/1/2023     1/1/2023     Y   12/31/2023   118096.00     95354.50      95354.50      22741.50      8     Foreign   N   Y   8    N                                            10 EXCHANGE PLACE                     SUITE# 1820                 JERSEY CITY           NJ   07302                 USA
+```
+[p017_p0095]
+
+```text
+MIS SCIENCES CORP                         12011-0100             All-Agency Email Notification                                                                          Open        Telecommunication Equipment or Services          Authority Contract - Competitive Bid       4/10/2013    4/10/2013    Y   6/30/2024    3169480.00    138934.96     3036376.58    133103.42     4     Foreign   N   N   0    N                                            2550 N HOLLYWOOD WAY                  SUITE 404                   BURBANK               CA   91505                 USA
+```
+[p017_p0096]
+
+```text
+UNITED PARCEL SERVICE INC                 12171-0100             UPS SERVICES FOR MTAHQ IT                                                                              Open        Commodities/Supplies                             Authority Contract - Competitive Bid       8/16/2018    8/16/2018    Y   3/20/2022    160000.00     7257.85       154566.51     5433.49       3     Foreign   N   N   0    Y   Below Dollar Threshold                   P O BOX 7247-0244                                                 PHILADELPHIA          PA   19170     0001        USA
+```
+[p017_p0097]
+
+```text
+CONDUCTIV INC                             12193-0100             E-Procurement Services                                                                                 Open        Consulting Services                              Authority Contract - Competitive Bid       2/1/2013     2/1/2013     Y   12/31/2024   1618317.50    13550.00      1313587.00    304730.50     4     Foreign   N   Y   1    Y   Discretionary Procurement                2351 BOSTON POST RD, STE 208                                      GUILFORD              CT   06437                 USA
+```
+[p017_p0098]
+
+```text
+MERCER HEALTH AND BENEFITS LLC            12236-0200             MEDICAL BENEFITS SERVICES                                                                              Open        Other Professional Services                      Authority Contract - Competitive Bid       10/19/2009   11/1/2016    Y   10/31/2022   2788215.25    709158.56     2203700.76    584514.49     3     NYS       N   N   0    N                                            1166 AVENUE OF THE AMERICAS                                       NEW YORK              NY   10036                 USA
+```
+[p017_p0099]
+
+```text
+GENEVA WORLDWIDE, INC.                    12249-0200             TRANSCRIPTION SERVICE FOR MTA                                                                          Open        Commodities/Supplies                             Purchased Under State Contract                                                                      5867.75                                         NYS       N                                                         261 WEST 35TH ST.                     SUITE 700                   NEW YORK              NY   10011                 USA
+```
+[p017_p0100]
+
+```text
+J G T INDUSTRIES INC                      12500-0100             PRINT MEMO BOOKS FOR MTAPD                                                                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       1/25/2023    9/20/2018    Y   2/28/2023    29875.00      0.00          7875.00       22000.00      2     NYS       N   N   0    Y   Below Dollar Threshold                   DBA THOMAS GROUP                      121 VARICK STREET           NEW YORK              NY   10013                 USA
+```
+[p017_p0101]
+
+```text
+UNITED INSIGNIA CO.                       13036-0200             FURNISH SHILEDS FOR MTAPD-3 YR                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/13/2019    3/13/2019    Y   12/31/2023   67150.00      6085.00       60610.42      6539.58       3     NYS       N   N   0    Y   Below Dollar Threshold                   18-34 42ND ST                                                     ASTORIA               NY   11105                 USA
+```
+[p017_p0102]
+
+```text
+HILL INTERNATIONAL, INC.                  13053-0100             Independent Engineers Certifi                                                                          Open        Consulting Services                              Authority Contract - Competitive Bid       1/31/2015    3/27/2015    Y   3/25/2022    3311598.00    92813.57      3226083.55    85514.45      1     NYS       N   Y   2    N                                            ONE PENN PLAZA - SUITE 3415                                       NEW YORK              NY   10119                 USA
+```
+[p017_p0103]
+
+```text
+JONES LANG LASALLE AMERICAS, INC.         13112-0100             GRAND CENTRAL TERMINAL MANAGEM                                                                         Open        Consulting Services                              Authority Contract - Competitive Bid       6/1/2014     6/1/2014     Y   5/31/2024    95084755.01   12361268.67   85505167.09   9579587.92    3     NYS       N   N   0    N                                            15 VANDERBILT                                                     NEW YORK              NY   10017                 USA
+```
+[p017_p0104]
+
+```text
+DIRAD TECHNOLOGIES INC.                   13122-0100             Telephone IVR System inc. Main                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       7/2/2014     7/2/2014     Y   8/5/2023     1600474.99    0.00          1556037.49    44437.50      6     NYS       Y   Y   1    N                                            14 COMPUTER DRIVE EAST                                            ALBANY                NY   12205                 USA
+```
+[p017_p0105]
+
+```text
+KENTECH CONSULTING INC                    14343-0100             RE Credit and Background Serv                                                                          Open        Consulting Services                              Authority Contract - Competitive Bid       7/1/2016     7/1/2016     Y   3/31/2025    436000.00     86995.50      273209.50     162790.50     5     Foreign   Y   Y   1    N                                            520 W ERIE ST                         SUITE#340                   CHICAGO               IL   60654                 USA
+```
+[p017_p0106]
+
+```text
+IIT INC                                   14357-0800-1           New Consultant for Procurement                                                                         Open        Consulting Services                              Authority Contract - Competitive Bid       12/28/2022   12/27/2022   Y   6/30/2023    64480.00      0.00          0.00          64480.00      1     NYS       Y   Y   29   N                                            7 SUMMERWIND DRIVE                                                GLEN HEAD             NY   11545                 USA
+```
+[p017_p0107]
+
+```text
+TCA CONSULTING GROUP INC                  14357-2600-1           MTA IT requested to procure a replacement IT Buyer Consultant, Jacqueline Alexis Askew                 Open        Consulting Services                              Authority Contract - Competitive Bid       12/28/2022   12/22/2022   Y   6/30/2023    112888.00     70151.00      70151.00      42737.00      1     Foreign   Y   Y   33   N                                            3011 MAIN ST.                                                     GLASTONBURY           CT   06033                 USA
+```
+[p017_p0108]
+
+```text
+EMERGENCY SKILLS INC                      15036-0100             Philips Defibrillators                                                                                 Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/27/2015    3/27/2015    Y   3/26/2023    106201.50     0.00          106201.50     0.00          2     NYS       Y   Y   2    Y   Discretionary Procurement                350 SEVENTH AVE, SUITE 505                                        NEW YORK              NY   10001                 USA
+```
+[p017_p0109]
+
+```text
+EXIGIS, LLC                               15042-0100             Insurance Cert Management Sys                                                                          Open        Technology - Software                            Authority Contract - Competitive Bid       10/1/2015    10/1/2015    Y   4/30/2024    4519597.89    753667.00     4445183.30    74414.59      2     NYS       N   Y   3    N                                            1120 AVENUE OF THE AMERICAS           4TH FLOOR                   NEW YORK              NY   10036                 USA
+```
+[p017_p0110]
+
+```text
+MCKISSACK GROUP INC                       15095-0100             Independent Engineer Consultan                                                                         Open        Other Professional Services                      Authority Contract - Competitive Bid       3/1/2016     7/25/2016    Y   5/31/2023    70795513.00   3215709.67    62417190.76   8378322.24    2     NYS       Y   Y   1    N                                            1001 AVENUE OF THE AMERICAS           20TH FL                     NEW YORK              NY   10018                 USA
+```
+[p017_p0111]
+
+```text
+PARSONS TRANSPORTATION GROUP OF NY        15125-0200             ICS SCADA Consulting Services                                                                          Completed   Consulting Services                              Authority Contract - Competitive Bid       12/2/2015    12/2/2015    Y   12/31/2023   933027.12     0.00          724397.06     208630.06     5     NYS       N   N   0    N                                            100 BROADWAY                          20TH FLOOR                  NEW YORK              NY   10005                 USA
+```
+[p017_p0112]
+
+```text
+CORITY SOFTWARE INC                       15127-0200             Medgate Enterprise Safety                                                                              Open        Technology - Software                            Authority Contract - Competitive Bid       12/1/2015    5/15/2018    Y   12/14/2024   2850550.00    495654.51     2302424.22    548125.78     5     Foreign   N   N   0    N                                            250 BLOOR ST EAST                     SUITE 900                   TORONTO                    M4W 1E6          ON   OTHER   CAN
+```
+[p017_p0113]
+
+```text
+B2GNOW                                    15131-0200-CO          B2G Reporting Enhancements                                                                             Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   7/26/2021    7/26/2021    Y   9/30/2024    210352.00     103995.97     202761.25     7590.75       1     Foreign   N   N   0    N                               210352.00    ASKREPLY INC                          725 W MCDOWELL RD           PHOENIX               AZ   85007                 USA
+```
+[p017_p0114]
+
+```text
+VESTA PARTNERS LLC                        15133-1800             Enterprise Asset Management                                                                            Open        Consulting Services                              Authority Contract - Competitive Bid       3/31/2016    3/31/2016    Y   3/31/2023    0.00          0.00          0.00          0.00          85    Foreign   N   Y   5    N                                            300 FIRST STAMFORD PLACE                                          STAMFORD              CT   06902                 USA
+```
+[p017_p0115]
+
+```text
+CRESCENS INC                              15168-0900             Various IT Consulting Services                                                                         Open        Consulting Services                              Authority Contract - Competitive Bid       4/10/2019    4/10/2019    Y   7/31/2024    1000000.00    103860.10     330522.10     669477.90     66    Foreign   Y   Y   29   N                                            1200 ROUTE 22 EAST                    STE 2000-2176               BRIDGEWATER           NJ   08807                 USA
+```
+[p017_p0116]
+
+```text
+UNIQUE COMP, INC.                         15168-2500-3 CAPITAL   PDCU - MRRS Consultant Service                                                                         Open        Consulting Services                              Authority Contract - Competitive Bid       6/21/2023    6/21/2023    Y   6/4/2024     270000.00     33600.00      33600.00      236400.00     25    NYS       Y   Y   25   Y   Discretionary Procurement                Gautam Tooley, Vice President         27-08 42ND ROAD             LONG ISLAND CITY      NY   11101                 USA
+```
+[p017_p0117]
+
+```text
+SOURCEONE, INC                            15182-0100             EMS AND AMI Req 78765                                                                                  Open        Technology - Consulting/Development or Support   Authority Contract - Competitive Bid       7/23/2015    7/23/2015    Y   7/22/2024    17815368.00   1781271.60    8786898.60    9028469.40    5     NYS       N   N   0    N                                            370 SEVENTH AVENUE                    SUITE#704                   NEW YORK              NY   10001     0013        USA
+```
+[p017_p0118]
+
+```text
+NEW YORK COMMUNICATIONS CO INC            15197-0100             Portable Radio Lease                                                                                   Open        Telecommunication Equipment or Services          Authority Contract - Non-Competitive Bid   7/17/2015    7/17/2015    Y   7/31/2023    28240.00      2484.00       21346.00      6894.00       1     NYS       N   N   0    Y   Below Dollar Threshold      28240.00     53 W CEDAR ST                                                     POUGHKEEPSIE          NY   12601                 USA
+```
+[p017_p0119]
+
+```text
+HP INC                                    15253-0100             Managed Print Services                                                                                 Open        Telecommunication Equipment or Services          Authority Contract - Competitive Bid       10/28/2016   10/28/2016   Y   4/30/2026    33940000.00   3927096.66    16973681.57   16966318.43   4     Foreign   N   N   0    N                                            355 LEDGELAWN DRIVE                                               CONWAY                AR   72034                 USA
+```
+[p017_p0120]
+
+```text
+ALLIED UNIVERSAL SECURITY SERVICES        15264-0600A            BANDT SOC-OP                                                                                           Open        Consulting Services                              Authority Contract - Competitive Bid       8/31/2020    1/21/2021    Y   2/9/2023     1496643.07    282770.94     1068889.14    427753.93     1     Foreign   N   N   0    Y   Ride/Piggyback of MTA Ags                161 WASHINGTON ST                     STE#600                     CONSHOHOCKEN          PA   19428                 USA
+```
+[p017_p0121]
+
+```text
+CBRE INC                                  15326-0100             Property Management Services                                                                           Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       5/1/2016     5/1/2016     Y   4/30/2024    55685525.00   0.00          196700.00     55488825.00   4     Foreign   N   Y   3    N                                            P.O. BOX 848844                                                   LOS ANGELES           CA   90084                 USA
+```
+[p017_p0122]
+
+```text
+JOSEPH BOTTNER, M.D.                      15402_0100             Medical Doctor Services                                                                                Open        Consulting Services                              Authority Contract - Competitive Bid       5/11/2020    5/11/2020    Y   6/30/2024    600000.00     0.00          0.00          600000.00     1     NYS       N   N   0    N                                            40 NASSAU STREET                                                  MASSAPEQUA            NY   11758                 USA
+```
+[p017_p0123]
+
+```text
+CORITY SOFTWARE INC                       15440-0200             Upgrade of OHRS                                                                                        Open        Technology - Consulting/Development or Support   Authority Contract - Competitive Bid       3/28/2019    3/11/2017    Y   3/10/2025    2857773.31    417702.33     2166172.07    691601.24     1     Foreign   N   N   0    Y   NYS/NYC/CountyContract                   250 BLOOR ST EAST                     SUITE 900                   TORONTO                    M4W 1E6          ON   OTHER   CAN
+```
+[p017_p0124]
+
+```text
+CARVER FEDERAL SAVINGS BANK               15455-0100             REQNo9270-Carver 15455-0100- SBDP Tier 1- LIRR MNR                                                     Open        Financial Services                               Authority Contract - Competitive Bid       10/28/2016   8/10/2016    Y   8/9/2021     750000.00     13000.00      476000.30     273999.70     2     NYS       N   Y   1    N                                            75 W 125TH ST                         ATTN: STEVEN BERRIOS        NEW YORK              NY   10027                 USA
+```
+[p017_p0125]
+
+```text
+IHS GLOBAL INC                            15474-0100             Economic Forecasting Svcs                                                                              Open        Other Professional Services                      Authority Contract - Competitive Bid       4/1/2017     4/1/2017     Y   3/31/2024    359355.76     55237.62      352388.70     6967.06       1     Foreign   N   N   0    N                                            15 INVERNESS WAY EAST                                             ENGLEWOOD             CO   80112     5710        USA
+```
+[p017_p0126]
+
+```text
+CEC STUYVESANT COVE, INC. DBA SOLAR ONE   15519-0100             To hire a consultant to support the MTA Solar program through 2022.                                    Open        Consulting Services                              Authority Contract - Competitive Bid       3/19/2021    3/22/2021    Y   3/22/2024    150000.00     22689.48      109815.21     40184.79      10    NYS       N   N   0    N                                            9-03 44TH RD, UNIT 201                                            LONG ISLAND CITY      NY   11101                 USA
+```
+[p017_p0127]
+
+```text
+SUPERLATIVE GROUP INC                     15632                  Naming Rights Consulting Scvs                                                                          Open        Consulting Services                              Authority Contract - Competitive Bid       5/4/2022     5/4/2022     Y   5/3/2025     400000.00     0.00          0.00          400000.00     2     Foreign   N   N   0    N                                            2843 FRANKLIN BLVD                                                CLEVELAND             OH   44113                 USA
+```
+[p017_p0128]
+
+```text
+NEW YORK COMMUNICATIONS CO INC            16045-0100             PD Ericsson Radio EDACS                                                                                Open        Technology - Software                            Authority Contract - Non-Competitive Bid   2/10/2016    2/10/2016    Y   2/9/2029     30060.00      2860.00       20240.00      9820.00       1     NYS       N   N   0    Y   Below Dollar Threshold      30060.00     53 W CEDAR ST                                                     POUGHKEEPSIE          NY   12601                 USA
+```
+[p017_p0129]
+
+```text
+WORLD SOFTWARE CORP.                      16137-0100             Maintenance Renewal                                                                                    Open        Technology - Software                            Authority Contract - Competitive Bid       4/5/2016     4/5/2016     Y   5/31/2024    29260.00      0.00          29260.00      0.00          3     Foreign   N   N   0    Y   Below Dollar Threshold                   124 PROSPECT ST.                                                  RIDGEWOOD             NJ   07450                 USA
+```
+[p017_p0130]
+
+```text
+LEGEND AND WHITE ANIMAL HEALTH CORP       16141-2-0100           Purchase of K9 Dog Food MTAPD                                                                          Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/1/2017    10/1/2017    Y   3/31/2024    382845.88     67939.14      382845.88     0.00          2     Foreign   N   N   0    N                                            105 SCHELTER RD, STE#204                                          LINCOLNSHIRE          IL   60069                 USA
+```
+[p017_p0131]
+
+```text
+TDX CONSTRUCTION CORP.                    16148-0100             SMALL BUSINESS DEV. MENTORING                                                                          Open        Consulting Services                              Authority Contract - Competitive Bid       8/15/2016    8/15/2016    Y   9/30/2024    16640359.97   1995408.97    14186994.25   2453365.72    3     NYS       N   Y   2    N                                            3 MANHATTANVILLE RD, STE 104                                      PURCHASE              NY   10577                 USA
+```
+[p017_p0132]
+
+```text
+INDUSTRIAL/ORGANIZATIONAL SOLUTION INC    16168-0200             Written Exam Contract                                                                                  Open        Consulting Services                              Authority Contract - Competitive Bid       4/3/2023     1/1/2023     Y   12/31/2025   312000.00     172361.00     172361.00     139639.00     2     Foreign   N   N   0    N                                            1520 KENSINGTON RD                    SUITE 110                   OAK BROOK             IL   60523                 USA
+```
+[p017_p0133]
+
+```text
+LAZ PARKING                               16207-0100             BATTERY PARKING GARAGE                                                                                 Open        Other Professional Services                      Authority Contract - Competitive Bid       1/1/2017     1/1/2017     Y   12/31/2024   4997500.00    21288.48      44604.48      4952895.52    4     NYS       N   N   0    N                                            TENANT                                70 GREENWICH STREET         NEW YORK              NY   10006                 USA
+```
+[p017_p0134]
+
+```text
+NUENERGEN LLC                             16306-0100             Req 7612- Peak Load Management Services.                                                               Open        Consulting Services                              Purchased Under State Contract                                                                      0.00                                            NYS       N                                                         10 BANK ST STE 600                                                WHITE PLAINS          NY   10606                 USA
+```
+[p017_p0135]
+
+```text
+MARSH USA LLC                             16365                  Master Broker Services                                                                                 Open        Consulting Services                              Authority Contract - Competitive Bid       10/1/2017    10/1/2017    Y   12/31/2024   15265440.64   1308933.00    13247108.35   2018332.29    3     Foreign   N   N   0    N                                            NEW YORK OFFICE                       P.O. BOX 19601              NEWARK                NJ   07195                 USA
+```
+[p017_p0136]
+
+```text
+BULL-TECH SERVICES LLC                    16572-0100             Maintenance AND Support of MTA IT Computer Room A C CRAC Units                                         Open        Other                                            Authority Contract - Competitive Bid       5/1/2022     5/4/2022     Y   5/3/2025     772137.00     247839.58     345424.35     426712.65     2     NYS       N   Y   1    N                                            45 CLINTON AVE, STE B                                             VALLEY STREAM         NY   11580                 USA
+```
+[p017_p0137]
+
+```text
+IIT INC                                   18659-0100             Req. 18659 - Proc. Consultant R.Gregory                                                                Open        Consulting Services                              Authority Contract - Non-Competitive Bid   5/6/2021     5/6/2021     Y   12/31/2023   81475.00      3126.00       81475.00      0.00          0     NYS       Y   Y   1    N                               81475.00     7 SUMMERWIND DRIVE                                                GLEN HEAD             NY   11545                 USA
+```
+[p017_p0138]
+
+```text
+CLIFFSIDE BODY CORP                       200000000000212        Boss Snow Fighter Parts                                                                                Open        Commodities/Supplies                             Authority Contract - Competitive Bid       7/11/2019    7/11/2019    Y   7/10/2023    41000.00      0.00          1856.39       39143.61      3     Foreign   N   N   0    Y   Below Dollar Threshold                   PO BOX 206                            130 BROAD AVE.              FAIRVIEW              NJ   07022     0206        USA
+```
+[p017_p0139]
+
+```text
+RED'S GARAGE LTD                          200000000000218        Three Year Contract for SnowEx                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       9/23/2019    9/25/2019    Y   9/24/2023    29300.00      545.46        11597.50      17702.50      1     NYS       N   N   0    Y   Below Dollar Threshold                   25 MIDLAND AVE                                                    PORT CHESTER          NY   10573                 USA
+```
+[p017_p0140]
+
+```text
+NYTG INC                                  200000000000219        Repair and Replace Heavy Duty                                                                          Open        Other                                            Authority Contract - Competitive Bid       11/25/2019   12/2/2019    Y   8/31/2023    174408.00     9323.50       67663.76      106744.24     1     NYS       N   N   0    Y   Ride/Piggyback of MTA Ags                132-04 11TH AVE                                                   COLLEGE POINT         NY   11356                 USA
+```
+[p017_p0141]
+
+```text
+ABCO LOCK AND ALARM                       200000000000239        Req 27340 - Locksmith Services                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/15/2020   10/22/2020   Y   10/22/2023   112430.26     504.89        832.39        111597.87     2     NYS       N   N   0    Y   Below Dollar Threshold                   1991 PALMER AVE                                                   LARCHMONT             NY   10538                 USA
+```
+[p017_p0142]
+
+```text
+FRED BEANS PARTS, INC.                    200000000000243        Commodities/Supplies                                                                                   Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/4/2020    12/8/2020    Y   12/8/2025    26670.00      3756.90       5100.66       21569.34      1     Foreign   N   N   0    Y   Below Dollar Threshold                   131 DOYLE ST                                                      DOYLESTOWN            PA   18901                 USA
+```
+[p017_p0143]
+
+```text
+FRED BEANS PARTS, INC.                    200000000000245        3-year Purch. AND Del.Truck Part                                                                       Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/3/2020    12/8/2020    Y   12/8/2025    42374.00      7185.84       16180.29      26193.71      1     Foreign   N   N   0    Y   Below Dollar Threshold                   131 DOYLE ST                                                      DOYLESTOWN            PA   18901                 USA
+```
+[p017_p0144]
+
+```text
+GABRIELLI TRUCK SALES LTD                 200000000000246        3-year Contract for Purch. AND D                                                                       Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/3/2020    12/8/2020    Y   12/8/2023    35300.00      14406.89      26244.03      9055.97       1     NYS       N   N   0    Y   Below Dollar Threshold                   153-20 SOUTH CONDUIT AVENUE                                       JAMAICA               NY   11434                 USA
+```
+[p017_p0145]
+
+```text
+DIEHL AND SONS, INC.                      200000000000247        Commodities/Supplies                                                                                   Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/7/2020    12/8/2020    Y   12/7/2024    117227.00     31830.17      52964.83      64262.17      2     NYS       N   N   0    Y   Below Dollar Threshold                   DBA N.Y. FREIGHTLINER                 129-01 ATLANTIC AVE.        RICHMOND HILL,        NY   11418                 USA
+```
+[p017_p0146]
+
+```text
+DEPENDABLE REPAIR, INC.                   200000000000251        Vehicle Hydraulic Repair AND Maintenance Services for MTA Bus Company MTABC                            Open        Other                                            Authority Contract - Competitive Bid       4/7/2021     5/1/2021     Y   4/30/2025    62250.00      13723.43      19743.16      42506.84      1     NYS       N   N   0    Y   Ride/Piggyback of MTA Ags                DBA DEPENDABLE HYDRAULICS             18 RANICK DRIVE WEST        AMITYVILLE            NY   11701                 USA
+```
+[p017_p0147]
+
+```text
+DOOR AUTOMATION CORP.                     200000000000255        Req 309254 - Sliding Doors                                                                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       11/8/2021    11/8/2021    Y   12/31/2021   21500.00      21500.00      21500.00      0.00          2     NYS       N   N   0    Y   Below Dollar Threshold                   2700 SHAMES DR                                                    WESTBURY              NY   11590                 USA
+```
+[p017_p0148]
+
+```text
+FRED BEANS PARTS, INC.                    200000000000257        Purchase AND Deliver Ford Parts                                                                        Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/30/2021   12/30/2021   Y   12/30/2025   196010.00     48638.64      98821.85      97188.15      1     Foreign   N   N   0    Y   Below Dollar Threshold                   131 DOYLE ST                                                      DOYLESTOWN            PA   18901                 USA
+```
+[p017_p0149]
+
+```text
+PARTS AUTHORITY LLC                       200000000000265        Various Auto Truck Parts                                                                               Open        Commodities/Supplies                             Authority Contract - Competitive Bid       7/14/2022    7/14/2022    Y   4/1/2025     650951.00     236224.37     254804.61     396146.39     1     NYS       N   N   0    Y   Ride/Piggyback of MTA Ags                211-10 HILLSIDE AVE                                               QUEENS VILLAGE        NY   11427                 USA
+```
+[p017_p0150]
+
+```text
+SAGE INTEGRATION HOLDINGS LLC             200000000000266        electronic security system maintenance                                                                 Open        Technology - Hardware                            Authority Contract - Competitive Bid       9/8/2022     9/8/2022     Y   9/30/2025    2278400.00    353428.31     353428.31     1924971.69    3     Foreign   N   N   0    Y   NYS/NYC/CountyContract                   4075 KARG INDUSTRIAL PKWY             STE B                       KENT                  OH   44240                 USA
+```
+[p017_p0151]
+
+```text
+DIEHL AND SONS, INC.                      200000000000274        5 ROAD TRUCKS DEL AND TRAIN                                                                            Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/24/2023    4/4/2023     Y   4/3/2025     1349415.00    0.00          0.00          1349415.00    3     NYS       N   Y   1    Y   Below Dollar Threshold                   DBA N.Y. FREIGHTLINER                 129-01 ATLANTIC AVE.        RICHMOND HILL,        NY   11418                 USA
+```
+[p017_p0152]
+
+```text
+IIT INC                                   200000000000275        Admin Claims Consultant                                                                                Open        Staffing Services                                Authority Contract - Competitive Bid       5/23/2023    5/23/2023    Y   5/22/2024    69160.00      10623.38      10623.38      58536.62      1     NYS       Y   Y   1    Y   Discretionary Procurement                7 SUMMERWIND DRIVE                                                GLEN HEAD             NY   11545                 USA
+```
+[p017_p0153]
+
+```text
+GUARDIAN SERVICE INDUSTRIES, INC.         20211201               Custodial GCT retail space                                                                             Open        Consulting Services                              Authority Contract - Competitive Bid       3/1/2022     3/1/2022     Y   2/28/2025    15014428.00   0.00          0.00          15014428.00   10    NYS       N   N   0    N                                            55 WATER ST                                                       NEW YORK              NY   10041                 USA
+```
+[p017_p0154]
+
+```text
+VENTURE NY PROPERTY MANAGEMENT LLC        23632-0100             Easement Oversight - Venture                                                                           Open        Other Professional Services                      Authority Contract - Competitive Bid       11/1/2023    11/1/2023    Y   6/30/2024    89600.00      25600.00      25600.00      64000.00      2     NYS       N   N   0    Y   Below Dollar Threshold                   43-10 11th St                                                     Long Island city      NY   11101                 USA
+```
+[p017_p0155]
+
+```text
+LEXITAS COURT REPORTING                   258162-1300            Court Stenographic translation svcs.                                                                   Open        Consulting Services                              Authority Contract - Competitive Bid       11/1/2019    11/13/2023   Y   10/31/2024   70000.00      0.00          0.00          70000.00      7     NYS       N   Y   4    N                                            100 MERRICK RD, STE#320W                                          ROCKVILLE CENTRE      NY   11570                 USA
+```
+[p017_p0156]
+
+```text
+GENERAL AIRE SYSTEMS INC                  278845-0100            3 Year Contract for As Needed Air Filters                                                              Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/1/2019    10/7/2019    Y   3/31/2024    368681.20     58224.97      282471.98     86209.22      3     Foreign   N   Y   3    Y   Discretionary Procurement                115 N 5TH ST                                                      DARBY                 PA   19023                 USA
+```
+[p017_p0157]
+
+```text
+ABLE EQUIPMENT RENTAL, INC.               292949-001             Heavy Equipment Rental Aerial                                                                          Open        Other                                            Authority Contract - Competitive Bid       7/1/2020     7/1/2020     Y   6/30/2023    4050575.00    0.00          0.00          4050575.00    5     NYS       N   N   0    N                                            1050 GRAND BOULEVARD                                              DEER PARK             NY   11729                 USA
+```
+[p017_p0158]
+
+```text
+HERC RENTALS INC                          292949-002             Heavy Equipment Rental Other                                                                           Open        Other                                            Authority Contract - Competitive Bid       7/1/2020     7/1/2020     Y   6/30/2023    872800.00     0.00          0.00          872800.00     5     Foreign   N   N   0    N                                            P.O. BOX 650280                                                   DALLAS                TX   75265     0280        USA
+```
+[p017_p0159]
+
+```text
+SUNBELT RENTALS INC                       292949-003             Equipment Rental Construction                                                                          Open        Other                                            Authority Contract - Competitive Bid       7/1/2020     7/1/2020     Y   6/30/2023    3554932.00    0.00          0.00          3554932.00    5     NYS       N   N   0    N                                            91 N 12TH STREET                                                  BROOKLYN              NY   11211                 USA
+```
+[p017_p0160]
+
+```text
+AARCO ENVIRONMENTAL SERVICES CORP.        300000000000240        repair, replacement, testing and inspection of tank systems and associated piping at BANDT facilitie   Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       2/1/2019     2/1/2019     Y   1/23/2025    1478851.09    131782.27     877791.33     601059.76     3     NYS       N   N   0    N                                            50 GEAR AVE                                                       LINDENHURST           NY   11757                 USA
+```
+[p017_p0161]
+
+```text
+ROYAL WASTE SERVICES, INC.                300000000000243        Refuse Removal, Disposal and Recycling Services                                                        Open        Other                                            Authority Contract - Competitive Bid       5/1/2019     4/1/2019     Y   3/31/2025    1947146.00    379505.00     1377558.50    569587.50     2     NYS       N   N   0    N                                            187-40 HOLLIS AVENUE                                              HOLLIS                NY   11423                 USA
+```
+[p017_p0162]
+
+```text
+ROUTE 23 AUTOMALL LLC                     300000000000245        FORD MOTOR PARTS                                                                                       Open        Commodities/Supplies                             Authority Contract - Competitive Bid       4/15/2019    3/29/2019    Y   6/30/2022    634000.00     0.00          606239.81     27760.19      2     Foreign   N   N   0    N                                            1301 ROUTE 23 SOUTH                                               BUTLER                NJ   07405     1797        USA
+```
+[p017_p0163]
+
+```text
+NLR INC                                   300000000000252        5 Year contract for recycling of used bulbs, batteries, lamps and ballasts                             Open        Other                                            Authority Contract - Competitive Bid       9/2/2019     6/24/2019    Y   9/30/2024    17220.50      549.03        5909.36       11311.14      3     Foreign   N   N   0    N                                            256 MAIN ST SUITE B                   PO BOX 680                  EAST WINDSOR          CT   06088     0680        USA
+```
+[p017_p0164]
+
+```text
+GOODYEAR TIRE AND RUBBER CO               300000000000265        Various GoodYear Tires                                                                                 Open        Commodities/Supplies                             Purchased Under State Contract                                                                      90657.56                                        NYS       N                                                         C/O RUNWAY TIRE SERVICE CO. INC.      45-15 19TH AVENUE           ASTORIA               NY   11105                 USA
+```
+[p017_p0165]
+
+```text
+STATE TO STATE VAN LINES INC              300000000000276        BRTUN Moving Services                                                                                  Open        Consulting Services                              Authority Contract - Competitive Bid       12/2/2019    12/2/2019    Y   12/1/2024    135490.40     0.00          7358.88       128131.52     2     NYS       N   Y   1    N                                            DBA BASIC MOVING                      PO BOX 350-372              BROOKLYN              NY   11235                 USA
+```
+[p017_p0166]
+
+```text
+ATTS AUTOMOTIVE TECH.TRAINING SER. INC.   300000000000279        Training renewal                                                                                       Open        Telecommunication Equipment or Services          Authority Contract - Non-Competitive Bid   12/3/2019    12/3/2019    Y   12/30/2024   85148.95      0.00          18907.20      66241.75      1     NYS       N   N   0    Y   Below Dollar Threshold      85148.95     10 LUPI PLAZA                                                     MAHOPAC               NY   10541                 USA
+```
+[p017_p0167]
+
+```text
+SEIFERT GRAPHICS, INC.                    300000000000282        3M Sign Materials or Equal                                                                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       1/6/2020     12/26/2019   Y   1/6/2022     141450.45     29923.75      140408.95     1041.50       7     NYS       Y   Y   3    Y   Discretionary Procurement                6133 JUDD ROAD                                                    ORISKANY              NY   13424                 USA
+```
+[p017_p0168]
+
+```text
+PLUGOUT LLC                               300000000000285        Vieo Wall Equip                                                                                        Open        Commodities/Supplies                             Authority Contract - Competitive Bid       1/8/2020     1/8/2020     Y   1/8/2025     54636.38      0.00          13705.65      40930.73      1     Foreign   N   N   0    Y   Below Dollar Threshold                   33 PARK PLACE                                                     ENGLEWOOD             NJ   07631                 USA
+```
+[p017_p0169]
+
+```text
+SECURITY MANAGEMENT SYSTEMS INC           300000000000289        Genetec Equip                                                                                          Open        Technology - Hardware                            Authority Contract - Competitive Bid       1/30/2020    1/30/2020    Y   2/15/2025    21132.68      0.00          21132.68      0.00          2     NYS       N   N   0    Y   Below Dollar Threshold                   18 INDUSTRIAL PARK DR.                                            PORT WASHINGTON       NY   11050                 USA
+```
+[p017_p0170]
+
+```text
+LEXIS NEXIS RISK SOLUTIONS FL INC         300000000000291        Lexis Nexis XML Bankruptcy                                                                             Open        Consulting Services                              Purchased Under State Contract                                                                      22560.52                                        Foreign   N                                                         BILLING ID 1757367                    28330 NETWORK PLACE         CHICAGO               IL   60673     1283        USA
+```
+[p017_p0171]
+
+```text
+GABRIELLI TRUCK SALES LTD                 300000000000306        RACKBODY ATTENUATOR TRICKS                                                                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/27/2020    3/20/2020    Y   3/30/2023    966056.00     0.00          966056.00     0.00          2     NYS       N   N   0    Y   Below Dollar Threshold                   153-20 SOUTH CONDUIT AVENUE                                       JAMAICA               NY   11434                 USA
+```
+[p017_p0172]
+
+```text
+I. JANVEY AND SONS, INC.                  300000000000319        3 Yr Heavy Duty Eco Soap                                                                               Open        Commodities/Supplies                             Authority Contract - Competitive Bid       5/26/2020    8/1/2020     Y   7/31/2023    160875.00     21937.50      100990.88     59884.12      9     NYS       N   Y   1    Y   Below Dollar Threshold                   218 FRONT ST                                                      HEMPSTEAD             NY   11550                 USA
+```
+[p017_p0173]
+
+```text
+A ROYAL FLUSH INC                         300000000000324        Disposal of Sanitary Waste at all Authority Facilities                                                 Open        Other Professional Services                      Authority Contract - Competitive Bid       7/31/2020    12/6/2020    Y   12/5/2024    391654.00     51480.00      152996.80     238657.20     4     Foreign   N   N   0    Y   Discretionary Procurement                43 CORBIN DR                                                      DARIEN                CT   06820                 USA
+```
+[p017_p0174]
+
+```text
+ALLDATA CORP LLC                          300000000000326        3-year renewal of maintenance                                                                          Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   7/9/2020     7/9/2020     Y   7/8/2023     15840.00      0.00          14256.00      1584.00       1     Foreign   N   N   0    Y   Below Dollar Threshold      15840.00     9412 BIG HORN BOULEVARD                                           ELK GROVE             CA   95758                 USA
+```
+[p017_p0175]
+
+```text
+GABRIELLI TRUCK SALES LTD                 300000000000328        LIGHT DUTY WRECKERS                                                                                    Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       7/23/2020    7/23/2020    Y   12/31/2023   1400126.00    0.00          0.00          1400126.00    2     NYS       N   N   0    N                                            153-20 SOUTH CONDUIT AVENUE                                       JAMAICA               NY   11434                 USA
+```
+[p017_p0176]
+
+```text
+CORPORATE COURIER NY, INC.                300000000000331        4-YEAR MESSENGER MOTOR SVS                                                                             Open        Other                                            Authority Contract - Competitive Bid       7/31/2020    7/31/2020    Y   7/31/2024    29358.00      4585.95       15613.80      13744.20      3     NYS       Y   Y   3    Y   Below Dollar Threshold                   225 WEST 28TH STREET                                              NEW YORK              NY   10001                 USA
+```
+[p017_p0177]
+
+```text
+UNITED INDUSTRIES UNLIMITED LLC           300000000000341        Graffiti Removal Services                                                                              Open        Other                                            Authority Contract - Competitive Bid       11/1/2020    11/1/2020    Y   10/31/2025   329985.60     0.00          0.00          329985.60     5     NYS       N   Y   3    N                                            18 PARK DRIVE EAST                                                SYOSSET               NY   11791                 USA
+```
+[p017_p0178]
+
+```text
+BASS OIL AND CHEMICALS LLC                300000000000343        SYNTHETIC MOTOR OIL -3YRS                                                                              Open        Commodities/Supplies                             Authority Contract - Competitive Bid       11/12/2020   11/12/2020   Y   11/12/2024   171115.00     39336.00      109358.00     61757.00      7     NYS       N   Y   2    Y   Below Dollar Threshold                   126 SCOTT AVE.                                                    BROOKLYN              NY   11237                 USA
+```
+[p017_p0179]
+
+```text
+TRAFFIC LANE CLOSURES, LLC                300000000000344        PEXCO Delineators                                                                                      Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/28/2020   1/7/2021     Y   1/6/2023     410721.33     113159.50     352683.10     58038.23      2     NYS       N   Y   2    Y   Discretionary Procurement                1214 RT 52                                                        CARMEL                NY   10512                 USA
+```
+[p017_p0180]
+
+```text
+S AND M TIRE RECYCLING INC                300000000000346        Disposal of Used Tires                                                                                 Open        Commodities/Supplies                             Authority Contract - Competitive Bid       1/4/2021     1/4/2021     Y   1/3/2026     19770.00      3058.50       10015.50      9754.50       3     NYS       N   N   0    N                                            228 MILLER AVE.                                                   FREEPORT              NY   11520                 USA
+```
+[p017_p0181]
+
+```text
+QUADIENT INC                              300000000000349        POSTAGE METER FOR BANDT-3 YR.                                                                          Open        Commodities/Supplies                             Purchased Under State Contract                                                                      959.52                                          Foreign   N                                                         DEPT 3689                             PO BOX 123689               DALLAS                TX   75312     3689        USA
+```
+[p017_p0182]
+
+```text
+TRU SUPPLY COMPANY LLC                    300000000000350        CRS-2 Asphalt Emulsion                                                                                 Open        Commodities/Supplies                             Authority Contract - Competitive Bid       1/11/2021    1/11/2021    Y   1/10/2024    55725.00      0.00          0.00          55725.00      2     Foreign   Y   Y   1    N                                            17301 BISCAYNE BLVD                                               AVENTURA              FL   33160                 USA
+```
+[p017_p0183]
+
+```text
+UNLIMITED TECHNOLOGY INC                  300000000000351        Analytics Software                                                                                     Open        Technology - Software                            Authority Contract - Competitive Bid       2/1/2021     2/1/2021     Y   2/1/2023     30563.60      0.00          30563.60      0.00          3     NYS       N   Y   1    N                                            30-30 60TH ST                                                     WOODSIDE              NY   11377                 USA
+```
+[p017_p0184]
+
+```text
+AB OIL SERVICE LTD                        300000000000353        Main.ANDRepair Oil ANDWater Sepera                                                                     Open        Consulting Services                              Authority Contract - Competitive Bid       3/17/2021    4/1/2021     Y   3/31/2024    209983.00     28645.51      169573.85     40409.15      2     NYS       N   N   0    Y   Below Dollar Threshold                   DBA AB ENVIRONMENT                    1599 OCEAN AVE              BOHEMIA               NY   11716                 USA
+```
+[p017_p0185]
+
+```text
+UNITED STEEL PRODUCTS INC                 300000000000354        Motorized Gate Service                                                                                 Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       6/25/2021    7/1/2021     Y   6/30/2026    382700.00     90825.06      149795.40     232904.60     1     NYS       N   N   0    Y   Below Dollar Threshold                   33-40 127TH PLACE                                                 FLUSHING              NY   11368                 USA
+```
+[p017_p0186]
+
+```text
+FRED BEANS PARTS, INC.                    300000000000357        GM Parts                                                                                               Open        Commodities/Supplies                             Authority Contract - Competitive Bid       8/4/2021     8/4/2021     Y   12/8/2023    800000.00     111824.38     243895.67     556104.33     1     Foreign   N   N   0    Y   Ride/Piggyback of MTA Ags                131 DOYLE ST                                                      DOYLESTOWN            PA   18901                 USA
+```
+[p017_p0187]
+
+```text
+DIEHL AND SONS, INC.                      300000000000364        FREIGHTLINER TRUCK PARTS                                                                               Open        Commodities/Supplies                             Authority Contract - Competitive Bid       9/20/2021    9/27/2021    Y   9/25/2025    67575.00      14521.47      30501.07      37073.93      1     NYS       N   N   0    N                                            DBA N.Y. FREIGHTLINER                 129-01 ATLANTIC AVE.        RICHMOND HILL,        NY   11418                 USA
+```
+[p017_p0188]
+
+```text
+ABT PRODUCTS AND SERVICES LTD             300000000000367        Two way portable radio system                                                                          Open        Other                                            Authority Contract - Competitive Bid       10/5/2021    10/5/2021    Y   10/4/2026    167018.00     0.00          167018.00     0.00          2     NYS       Y   Y   2    Y   Discretionary Procurement                PO BOX 4409                           21A BAY AVE                 HUNTINGTON            NY   11743                 USA
+```
+[p017_p0189]
+
+```text
+EASTERN COMMUNICATIONS, LTD.              300000000000368        Purchase, Installation AND Suppo                                                                       Open        Other                                            Purchased Under State Contract                                                                      12000.00                                        NYS       N                                                         4814 36 ST                                                        LONG ISLAND CITY      NY   11101                 USA
+```
+[p017_p0190]
+
+```text
+CINTAS CORP NO.2                          300000000000370        Uniform Rental AND Cleaning                                                                            Open        Other                                            Authority Contract - Competitive Bid       10/29/2021   10/28/2021   Y   12/31/2023   279492.65     65500.98      153227.61     126265.04     2     Foreign   N   N   0    N                                            CINTAS                                PO BOX 631025               CINCINNATI            OH   45263     1025        USA
+```
+[p017_p0191]
+
+```text
+PLUGOUT LLC                               300000000000372        AXIS VIDEO ENCODERS PACKAGE                                                                            Open        Other                                            Purchased Under State Contract                                                                      91930.32                                        Foreign   N                                                         33 PARK PLACE                                                     ENGLEWOOD             NJ   07631                 USA
+```
+[p017_p0192]
+
+```text
+PCS CRANE SERVICES INC                    300000000000381        Maintenance Repair of Cranes                                                                           Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       3/1/2022     3/1/2022     Y   2/28/2025    354898.75     417.25        7093.25       347805.50     1     Foreign   N   N   0    Y   Below Dollar Threshold                   83 BROAD AVENUE                                                   FAIRVIEW              NJ   07022     1501        USA
+```
+[p017_p0193]
+
+```text
+COMPULINK TECHNOLOGIES, INC.              300000000000383        Axis Cameras                                                                                           Open        Technology - Hardware                            Authority Contract - Competitive Bid       3/25/2022    3/30/2022    Y   10/24/2022   63856.50      38601.03      63856.50      0.00          20    NYS       Y   Y   21   Y   Discretionary Procurement                260 WEST 39TH ST                      STE 302                     NEW YORK              NY   10018                 USA
+```
+[p017_p0194]
+
+```text
+ROUTE 23 AUTOMALL LLC                     300000000000384        FORD MOTOR PARTS                                                                                       Open        Commodities/Supplies                             Authority Contract - Competitive Bid       4/19/2022    7/1/2022     Y   6/30/2025    650000.00     247283.00     360657.83     289342.17     3     Foreign   N   N   0    Y   Below Dollar Threshold                   1301 ROUTE 23 SOUTH                                               BUTLER                NJ   07405     1797        USA
+```
+[p017_p0195]
+
+```text
+TRIPORT INT'L AIRCRAFT GROUND EQUIPMENT   300000000000385        Maint. AND Repair H.D. Vehicles                                                                        Open        Other                                            Authority Contract - Competitive Bid       4/20/2022    5/1/2022     Y   4/30/2025    563480.00     150588.38     184538.76     378941.24     3     NYS       N   N   0    N                                            REPAIRS INC                           150 - 46 182ND ST           JAMAICA               NY   11413                 USA
+```
+[p017_p0196]
+
+```text
+CAPPELLINO CHEVROLET INC                  300000000000386        8 2023 Chevrolet Express 3500 12 passenger vans                                                        Open        Commodities/Supplies                             Purchased Under State Contract                                                                      297493.12                                       NYS       N                                                         9000 BOSTON STATE RD                                              BOSTON                NY   14025                 USA
+```
+[p017_p0197]
+
+```text
+COMPULINK TECHNOLOGIES, INC.              300000000000389        PURCHASE OF CAMERAS                                                                                    Open        Commodities/Supplies                             Authority Contract - Competitive Bid       6/30/2022    6/30/2022    Y   1/31/2023    35222.97      4523.70       35222.97      0.00          4     NYS       Y   Y   4    Y   Discretionary Procurement                260 WEST 39TH ST                      STE 302                     NEW YORK              NY   10018                 USA
+```
+[p017_p0198]
+
+```text
+IP ACCESS INTERNATIONAL LLC               300000000000391        Satellite Service                                                                                      Open        Technology - Hardware                            Authority Contract - Competitive Bid       8/31/2022    7/11/2022    Y   7/10/2024    33827.83      0.00          5637.96       28189.87      22    Foreign   N   Y   1    Y   Below Dollar Threshold                   31831 CAMINO CAPISTRANO STE 30OA                                  SAN JUAN CAPISTRANO   CA   92675                 USA
+```
+[p017_p0199]
+
+```text
+COMPULINK TECHNOLOGIES, INC.              300000000000392        SmartOnline 120V 3kVA 2.4kW Do                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       7/22/2022    7/7/2022     Y   7/7/2023     16999.80      0.00          16999.80      0.00          3     NYS       Y   Y   1    N                                            260 WEST 39TH ST                      STE 302                     NEW YORK              NY   10018                 USA
+```
+[p017_p0200]
+
+```text
+GABRIELLI TRUCK SALES LTD                 300000000000393        EXTEND MACK WARRANTY COVER ON 50 SNOW TRUCKS FOR AN ADDITIONAL TWO YEARS                               Open        Consulting Services                              Authority Contract - Competitive Bid       8/2/2022     12/31/2023   Y   12/31/2025   97500.00      0.00          97500.00      0.00          1     NYS       N   N   0    Y   Below Dollar Threshold                   153-20 SOUTH CONDUIT AVENUE                                       JAMAICA               NY   11434                 USA
+```
+[p017_p0201]
+
+```text
+GENESEE VALLEY FORD LLC                   300000000000394        Thirty two 32 FY 23 Explorer K8A Dark Blue Hybrid Police Utility, two 2 FY 23 Explorer K8A Dark        Open        Commodities/Supplies                             Purchased Under State Contract                                                                      0.00                                            NYS       N                                                         1675 INTERSTATE DR                                                AVON                  NY   14414                 USA
+```
+[p017_p0202]
+
+```text
+COMPULINK TECHNOLOGIES, INC.              300000000000395        Video Equipment                                                                                        Open        Technology - Hardware                            Authority Contract - Competitive Bid       8/16/2022    8/16/2022    Y   8/16/2023
+```
+
+## Page 18
+
+> [p018_c0001] A blank sheet of graph paper with a light gray background and a uniform grid of thin black lines.
+
+## Page 19
+
+> [p019_c0001] A blank sheet of graph paper with a grid pattern.
+
+## Page 20
+
+[p020_c0001] A blank sheet of graph paper with a light gray background and a uniform grid of thin black lines. The grid consists of approximately 30 columns and 30 rows of small squares. The lines are evenly spaced and extend across the entire page.
+[p020_p0001]
+
+```text
+AL-HADID STUDIO LLC                      900000000004142     AANDD Penn Station 7th Ave                                                                           Open        Other                                            Authority Contract - Non-Competitive Bid   8/9/2022     8/9/2022     Y   3/31/2023    213000.00     4000.00      210000.00     3000.00       1     NYS       N   N   0    Y   Below Dollar Threshold      213000.00    394 STERLING PLACE                                                   BROOKLYN           NY   11238                 USA
+```
+[p020_p0002]
+
+```text
+ONE DIVERSIFIED LLC                      900000000004147     Professional Services                                                                                Open        Commodities/Supplies                             Authority Contract - Competitive Bid       7/27/2022    7/27/2022    Y   8/31/2024    650000.00     0.00         0.00          650000.00     1     Foreign   N   N   0    N                                            2975 NORTHWOODS PKWY                                                 NORCROSS           GA   30071                 USA
+```
+[p020_p0003]
+
+```text
+IGM TECHNOLOGY CORP                      900000000004152     Software                                                                                             Open        Technology - Software                            Authority Contract - Competitive Bid       8/15/2022    8/15/2022    Y   8/15/2025    49662.00      16390.00     32780.00      16882.00      3     Foreign   N   Y   2    N                                            2 BLOOR ST WEST, 7TH FL                                              TORONTO                 M4W 3E2          ON   OTHER   CAN
+```
+[p020_p0004]
+
+```text
+INSIGHT PUBLIC SECTOR INC.               900000000004153     BitSight continuous security                                                                         Open        Technology - Software                            Authority Contract - Competitive Bid       8/16/2022    8/16/2022    Y   8/19/2024    172039.72     0.00         172039.72     0.00          2     Foreign   N   Y   1    N                                            P.O. BOX 713096                                                      COLUMBUS           OH   43271     3096        USA
+```
+[p020_p0005]
+
+```text
+ASTUTE BUSINESS SOLUTIONS                900000000004154     FasTest Solution                                                                                     Open        Consulting Services                              Authority Contract - Non-Competitive Bid   8/16/2022    8/16/2022    Y   8/25/2023    1270500.00    506000.00    1270500.00    0.00          0     Foreign   N   N   0    Y   Sole Source                 1270500.00   11501 DUBLIN BLVD, SUITE 200                                         DUBLIN             CA   94568                 USA
+```
+[p020_p0006]
+
+```text
+CANON SOLUTIONS AMERICA INC.             900000000004155     Canon eCopy 3 yr Rnwl                                                                                Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   8/18/2022    1/1/2021     Y   12/31/2023   16334.35      16334.35     16334.35      0.00          1     Foreign   N   N   0    Y   Sole Source                 16334.35     100 PARK BLVD                                                        ITASCA             IL   60143                 USA
+```
+[p020_p0007]
+
+```text
+GUIDEHOUSE LLP                           900000000004157     Professional Services for PUM                                                                        Open        Other Professional Services                      Authority Contract - Competitive Bid       8/24/2022    8/25/2022    Y   2/5/2024     1784390.26    1624150.69   1752519.24    31871.02      3     Foreign   N   N   0    Y   Below Dollar Threshold                   PO BOX 7247-6037                                                     PHILADELPHIA       PA   19170     6037        USA
+```
+[p020_p0008]
+
+```text
+RR DONNELLEY AND SONS CO                 900000000004159     All Agency as needed W2 forms for a 1 year period CY 2022                                            Open        Consulting Services                              Authority Contract - Non-Competitive Bid   8/26/2022    8/26/2022    Y   8/31/2023    34824.25      34824.25     34824.25      0.00          1     Foreign   N   N   0    N                               34824.25     PO BOX 842307                                                        BOSTON             MA   02284     2307        USA
+```
+[p020_p0009]
+
+```text
+MAJORKEY TECHNOLOGIES LLC                900000000004161     Prof Serv for AD Consolidation                                                                       Open        Technology - Consulting/Development or Support   Authority Contract - Competitive Bid       8/29/2022    8/29/2022    Y   3/10/2024    784350.00     748146.88    749796.88     34553.12      1     Foreign   N   N   0    Y   Below Dollar Threshold                   10 E 22ND ST, STE 300                                                LOMBARD            IL   60148     6109        USA
+```
+[p020_p0010]
+
+```text
+GARTNER INC                              900000000004162     Gartner Subscription 2022-23                                                                         Open        Technology - Software                            Purchased Under State Contract                                                                      0.00                                           Foreign   N                                                         PO BOX 911319                                                        DALLAS             TX   75391     1319        USA
+```
+[p020_p0011]
+
+```text
+MELTWATER NEWS US INC                    900000000004165     Meltwater Licenses HQ                                                                                Open        Commodities/Supplies                             Authority Contract - Competitive Bid       9/7/2022     9/7/2022     Y   12/31/2023   92000.00      92000.00     92000.00      0.00          1     Foreign   N   N   0    Y   Below Dollar Threshold                   225 BUSH ST, STE 1000                                                FRANCISCO          CA   94104                 USA
+```
+[p020_p0012]
+
+```text
+COMPLY365 LLC                            900000000004167     Comply365 4,000 licenses for MNR and LIRR users                                                      Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   9/9/2022     9/9/2022     Y   9/8/2023     187000.00     0.00         0.00          187000.00     1     Foreign   N   N   0    Y   Sole Source                 187000.00    655 THIRD ST, STE 365                                                BELOIT             WI   53511                 USA
+```
+[p020_p0013]
+
+```text
+VPRIME TECH INC                          900000000004170     BeyondTrust Remote Support Renewal Maintenance                                                       Open        Commodities/Supplies                             Authority Contract - Competitive Bid       9/12/2022    9/12/2022    Y   10/31/2024   46475.00      24048.76     45227.26      1247.74       3     Foreign   N   Y   2    Y   Below Dollar Threshold                   1400 BROADFIELD BLVD, STE 200                                        HOUSTON            TX   77084     5162        USA
+```
+[p020_p0014]
+
+```text
+SAGE INTEGRATION HOLDINGS LLC            900000000004171     IT Service Retainer Contracr                                                                         Open        Technology - Consulting/Development or Support   Authority Contract - Competitive Bid       9/12/2022    9/12/2022    Y   9/12/2026    532480.00     178688.00    191104.00     341376.00     3     Foreign   N   N   0    Y   Inter-agency Agreement                   4075 KARG INDUSTRIAL PKWY             STE B                          KENT               OH   44240                 USA
+```
+[p020_p0015]
+
+```text
+SAGE INTEGRATION HOLDINGS LLC            900000000004173     Video Wall Consultant Retainer                                                                       Open        Technology - Consulting/Development or Support   Authority Contract - Competitive Bid       9/13/2022    9/13/2022    Y   4/30/2024    155760.00     26373.00     26373.00      129387.00     3     Foreign   N   N   0    Y   Ride/Piggyback of MTA Ags                4075 KARG INDUSTRIAL PKWY             STE B                          KENT               OH   44240                 USA
+```
+[p020_p0016]
+
+```text
+SHI INTERNATIONAL CORP                   900000000004177     Anomali ThreatStream Enterpris                                                                       Open        Technology - Software                            Purchased Under State Contract                                                                      640590.07                                      Foreign   N                                                         P.O. BOX 8500-41155                                                  PHILADELPHIA       PA   19178                 USA
+```
+[p020_p0017]
+
+```text
+CDW GOVERNMENT LLC                       900000000004178     DELL EMC ELA - YEAR 1 12 10 2022 - 12 9 2023                                                         Open        Technology - Software                            Purchased Under State Contract                                                                      3460753.22                                     Foreign   N                                                         300 N. MILWAUKEE AVENUE                                              VERNON HILLS       IL   60061                 USA
+```
+[p020_p0018]
+
+```text
+AURAPLAYER INC                           900000000004181     IT 2022 AuraPlayer                                                                                   Open        Technology - Software                            Authority Contract - Non-Competitive Bid   9/29/2022    9/29/2022    Y   9/30/2025    725000.00     250000.00    500000.00     225000.00     1     Foreign   N   N   0    Y   Sole Source                 725000.00    21 DALE DR                                                           WEST ORANGE        NJ   07052                 USA
+```
+[p020_p0019]
+
+```text
+VPRIME TECH INC                          900000000004185     Appspace Server Application License and Maintenance Renewal - MNR 1 Year                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/5/2022    10/26/2023   Y   11/1/2024    74940.00      73840.00     73840.00      1100.00       5     Foreign   N   Y   4    Y   Below Dollar Threshold                   1400 BROADFIELD BLVD, STE 200                                        HOUSTON            TX   77084     5162        USA
+```
+[p020_p0020]
+
+```text
+COMPULINK TECHNOLOGIES, INC.             900000000004186     Waterfall Software AND support                                                                       Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/5/2022    10/5/2022    Y   10/31/2026   1022236.15    145929.72    584447.00     437789.15     2     NYS       Y   Y   2    Y   Discretionary Procurement                260 WEST 39TH ST                      STE 302                        NEW YORK           NY   10018                 USA
+```
+[p020_p0021]
+
+```text
+INSIGHT PUBLIC SECTOR INC.               900000000004188     Dragon Professional Anywhere                                                                         Open        Technology - Software                            Authority Contract - Competitive Bid       10/6/2022    12/9/2022    Y   1/22/2025    24015.58      12334.38     12334.38      11681.20      2     Foreign   N   N   0    N                                            P.O. BOX 713096                                                      COLUMBUS           OH   43271     3096        USA
+```
+[p020_p0022]
+
+```text
+T.R. JOY AND ASSOCIATES, INC.            900000000004189     physical security related work                                                                       Open        Technology - Hardware                            Authority Contract - Competitive Bid       10/7/2022    10/7/2022    Y   10/7/2023    90000.00      88463.87     88463.87      1536.13       1     NYS       N   N   0    Y   Below Dollar Threshold                   18-30 42ND STREET                                                    ASTORIA            NY   11105                 USA
+```
+[p020_p0023]
+
+```text
+COMPULINK TECHNOLOGIES, INC.             900000000004191     Dell Rugged Server                                                                                   Open        Technology - Hardware                            Purchased Under State Contract                                                                      0.00                                           NYS       Y                                                         260 WEST 39TH ST                      STE 302                        NEW YORK           NY   10018                 USA
+```
+[p020_p0024]
+
+```text
+EIA DATACOM INC                          900000000004192     Telecommunications Network Cab                                                                       Open        Other                                            Authority Contract - Competitive Bid       10/13/2022   10/31/2022   Y   10/30/2027   12290514.00   0.00         0.00          12290514.00   6     NYS       N   Y   1    N                                            31 - 00 47TH AVE                      SUITE 1130                     LONG ISLAND CITY   NY   11101                 USA
+```
+[p020_p0025]
+
+```text
+WEBHOUSE INC.                            900000000004195     NetApp Cloud Insights Renewal                                                                        Open        Technology - Software                            Authority Contract - Competitive Bid       10/13/2022   10/13/2022   Y   10/21/2023   285238.48     0.00         285238.48     0.00          2     NYS       N   Y   1    N                                            2365 MILBURN AVE                      BLDG 2                         BALDWIN            NY   11510                 USA
+```
+[p020_p0026]
+
+```text
+DTN LLC                                  900000000004200     DTN Weather Services                                                                                 Open        Telecommunication Equipment or Services          Authority Contract - Non-Competitive Bid   10/14/2022   11/2/2023    Y   12/31/2023   16590.00      0.00         0.00          16590.00      1     Foreign   N   N   0    Y   Sole Source                 16590.00     9110 W DODGE RD, STE#100                                             OMAHA              NE   68114                 USA
+```
+[p020_p0027]
+
+```text
+CARAHSOFT TECHNOLOGY CORP                900000000004204     Copado Subscriptions for one year 2022-23                                                            Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   10/14/2022   10/17/2022   Y   10/16/2024   296802.05     142907.28    268886.05     27916.00      1     Foreign   N   N   0    N                               296802.05    11493 SUNSET HILLS ROAD               SUITE 100                      RESTON             VA   20190                 USA
+```
+[p020_p0028]
+
+```text
+NATHANIAL RAND INC                       900000000004205     Palo Alto Subscription for 3 Years                                                                   Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/18/2022   9/29/2022    Y   9/29/2025    18971028.15   0.00         18971028.15   0.00          1     NYS       Y   Y   1    N                                            10 AVERILL DRIVE                                                     MAHOPAC            NY   10541                 USA
+```
+[p020_p0029]
+
+```text
+COMPULINK TECHNOLOGIES, INC.             900000000004219     MicroFocus Suite Subscription and Support                                                            Open        Technology - Software                            Purchased Under State Contract                                                                      0.00                                           NYS       Y                                                         260 WEST 39TH ST                      STE 302                        NEW YORK           NY   10018                 USA
+```
+[p020_p0030]
+
+```text
+MAUREEN DATA SYSTEMS INC.                900000000004220     Prof Serv for Microsoft AD Cyb                                                                       Open        Other Professional Services                      Authority Contract - Competitive Bid       10/21/2022   10/21/2022   Y   1/31/2024    237480.00     223873.00    223873.00     13607.00      2     NYS       Y   Y   1    Y   Below Dollar Threshold                   500 WEST 43RD ST, 33C                                                NEW YORK           NY   10036                 USA
+```
+[p020_p0031]
+
+```text
+PROCESSMAKER INC                         900000000004221     Processmaker supports renewal                                                                        Open        Technology - Software                            Authority Contract - Competitive Bid       10/25/2022   10/27/2022   Y   10/26/2024   94463.32      47231.58     94463.24      0.08          2     Foreign   N   N   0    Y   Below Dollar Threshold                   5304 VENTURA DR                                                      DELRAY BEACH       FL   33484                 USA
+```
+[p020_p0032]
+
+```text
+SHI INTERNATIONAL CORP                   900000000004222     Dynatrace SaaS Subscription                                                                          Open        Technology - Software                            Authority Contract - Competitive Bid       10/27/2022   10/27/2022   Y   12/11/2023   914607.16     914607.16    914607.16     0.00          3     Foreign   N   Y   1    Y   Below Dollar Threshold                   P.O. BOX 8500-41155                                                  PHILADELPHIA       PA   19178                 USA
+```
+[p020_p0033]
+
+```text
+QUALITY UPTIME SERVICES                  900000000004223     Maintenanace AND Suppor for UPS                                                                      Open        Other                                            Authority Contract - Competitive Bid       10/31/2022   11/1/2022    Y   10/31/2027   2123625.00    397509.48    397509.48     1726115.52    1     Foreign   N   N   0    N                                            9 PARKLAWN DR                                                        BETHEL             CT   06801                 USA
+```
+[p020_p0034]
+
+```text
+INSIGHT PUBLIC SECTOR INC.               900000000004224     eFax Services                                                                                        Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/31/2022   7/29/2022    Y   7/31/2024    51726.00      0.00         25863.00      25863.00      3     Foreign   N   N   0    N                                            P.O. BOX 713096                                                      COLUMBUS           OH   43271     3096        USA
+```
+[p020_p0035]
+
+```text
+DELL MARKETING LP                        900000000004225     ITPKI Subscription Renewal                                                                           Open        Technology - Software                            Purchased Under State Contract                                                                      404828.00                                      Foreign   N                                                         580 ASBURY DR                                                        BUFFALO GROVE      IL   60089                 USA
+```
+[p020_p0036]
+
+```text
+SHERVONE NECKLES                         900000000004227     AANDD Westchester Sq                                                                                 Open        Other                                            Authority Contract - Competitive Bid       11/14/2022   11/14/2022   Y   11/1/2024    200000.00     26500.00     26500.00      173500.00     28    NYS       N   N   0    N                                            11226 207TH ST                                                       QUEENS VILLAGE     NY   11429                 USA
+```
+[p020_p0037]
+
+```text
+T-KARTOR USA CORPORATION                 900000000004228     T-Kartor NYAMAmapping portalsoftware subscription renewal                                            Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   11/4/2022    11/4/2022    Y   12/11/2028   661000.00     29900.00     29900.00      631100.00     1     Foreign   N   Y   1    Y   Sole Source                 661000.00    710 N TUCKER BLVD                     STE 304 / THE GLOBE BUILDING   ST LOUIS           MO   63101                 USA
+```
+[p020_p0038]
+
+```text
+PROTEK INFORMATION TECHNOLOGY SVS LLC    900000000004229     CrowdStrike Complete and CrowdStrike Identity See attached Price Schedule                            Open        Commodities/Supplies                             Purchased Under State Contract                                                                      2689587.00                                     NYS       Y                                                         492 MITCHELL DR                                                      VALLEY COTTAGE     NY   10989                 USA
+```
+[p020_p0039]
+
+```text
+COMPULINK TECHNOLOGIES, INC.             900000000004230     Cisco ASR1001 w 5yrs support                                                                         Open        Telecommunication Equipment or Services          Purchased Under State Contract                                                                      112958.41                                      NYS       Y                                                         260 WEST 39TH ST                      STE 302                        NEW YORK           NY   10018                 USA
+```
+[p020_p0040]
+
+```text
+SWITCH TECHNOLOGIES INC.                 900000000004231     LAN WAN Maintenance                                                                                  Open        Other                                            Purchased Under State Contract                                                                      170124.61                                      NYS       N                                                         78 Horseblock Road                    Unit 6                         Yaphank            NY   11980                 USA
+```
+[p020_p0041]
+
+```text
+COMPULINK TECHNOLOGIES, INC.             900000000004232     Tripwire Enterprise license                                                                          Open        Technology - Software                            Authority Contract - Competitive Bid       11/9/2022    11/9/2022    Y   11/27/2023   40601.09      0.00         40601.09      0.00          4     NYS       Y   Y   2    N                                            260 WEST 39TH ST                      STE 302                        NEW YORK           NY   10018                 USA
+```
+[p020_p0042]
+
+```text
+METAFILE INFORMATION SYSTEMS, INC.       900000000004233     MetaViewer Standard and Enterprise Software Maintenance                                              Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   11/13/2022   11/13/2022   Y   8/31/2025    115562.66     38921.90     74305.44      41257.22      1     Foreign   N   N   0    Y   Sole Source                 115562.66    3428 LAKERIDGE PL NW, STE 100                                        ROCHESTER          MN   55901     6573        USA
+```
+[p020_p0043]
+
+```text
+ICP                                      900000000004236     10 Dell EMC RecoverPoint GEN6 SAN Replication Appliances w 5 Year Support                            Open        Technology - Software                            Purchased Under State Contract                                                                      177994.00                                      NYS       Y                                                         20 CLIFTON AVE                                                       STATEN ISLAND      NY   10305                 USA
+```
+[p020_p0044]
+
+```text
+PROTEK INFORMATION TECHNOLOGY SVS LLC    900000000004237     ITForeScout Renewal 2022                                                                             Open        Technology - Software                            Purchased Under State Contract                                                                      0.00                                           NYS       Y                                                         492 MITCHELL DR                                                      VALLEY COTTAGE     NY   10989                 USA
+```
+[p020_p0045]
+
+```text
+PROTEK INFORMATION TECHNOLOGY SVS LLC    900000000004239     3 YEARS - Verodin Mandiant Verodin Breach and Attack Simulation BAS software                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       11/17/2022   11/17/2022   Y   12/2/2025    997037.85     997037.85    997037.85     0.00          3     NYS       Y   Y   3    Y   Below Dollar Threshold                   492 MITCHELL DR                                                      VALLEY COTTAGE     NY   10989                 USA
+```
+[p020_p0046]
+
+```text
+INSIGHT PUBLIC SECTOR INC.               900000000004240     2 Yrs Kezava Platform Software Maintenance                                                           Open        Commodities/Supplies                             Authority Contract - Competitive Bid       11/18/2022   11/18/2022   Y   10/5/2023    38662.64      0.00         32951.76      5710.88       2     Foreign   N   N   0    Y   Below Dollar Threshold                   P.O. BOX 713096                                                      COLUMBUS           OH   43271     3096        USA
+```
+[p020_p0047]
+
+```text
+QUALITY AND ASSURANCE TECHNOLOGY CORP    900000000004241     Dell UltraSharp 32 AND 27Inch                                                                        Open        Technology - Hardware                            Purchased Under State Contract                                                                      54834.50                                       NYS       Y                                                         DBA QNA TECH                          18 MARGINWOOD DRIVE            RIDGE              NY   11961                 USA
+```
+[p020_p0048]
+
+```text
+NEXUS CONSORTIUM, INC.                   900000000004242     DCIM for RCC DataCenters                                                                             Open        Technology - Hardware                            Authority Contract - Competitive Bid       11/23/2022   11/23/2022   Y   8/31/2024    354790.34     0.00         0.00          354790.34     2     Foreign   Y   Y   2    Y   Below Dollar Threshold                   1933 HIGHWAY 35 # 356                                                WALL               NJ   07719                 USA
+```
+[p020_p0049]
+
+```text
+STELLAR SERVICES INC                     900000000004243     Purchase of Open Text eDOCS S                                                                        Open        Other                                            Purchased Under State Contract                                                                      236134.71                                      NYS       Y                                                         70 W 36TH ST. STE 702                                                NEW YORK           NY   10018                 USA
+```
+[p020_p0050]
+
+```text
+rusd solutions                           900000000004244     5Y All Agency EA for GIS                                                                             Open        Technology - Software                            Authority Contract - Competitive Bid       12/1/2022    11/8/2022    Y   11/7/2027    13685500.00   5474200.00   5474200.00    8211300.00    2     Foreign   Y   Y   1    N                                            626 Woodland Ave                                                     Northvale          NJ   07647                 USA
+```
+[p020_p0051]
+
+```text
+SHI INTERNATIONAL CORP                   900000000004247     3 Yr. Duo Access Edition - 70,000 Users                                                              Open        Commodities/Supplies                             Purchased Under State Contract                                                                      1587200.00                                     Foreign   N                                                         P.O. BOX 8500-41155                                                  PHILADELPHIA       PA   19178                 USA
+```
+[p020_p0052]
+
+```text
+CANON SOLUTIONS AMERICA INC.             900000000004249     Maintenance for Legacy Canon                                                                         Open        Technology - Consulting/Development or Support   Authority Contract - Competitive Bid       12/6/2022    3/15/2022    Y   3/14/2024    187112.00     176869.24    176869.24     10242.76      1     Foreign   N   N   0    Y   Below Dollar Threshold                   100 PARK BLVD                                                        ITASCA             IL   60143                 USA
+```
+[p020_p0053]
+
+```text
+COMPULINK TECHNOLOGIES, INC.             900000000004250     Citrix Virtual Apps and Desktops Premium Edition plus Appliances Support                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/6/2022    12/26/2022   Y   12/31/2023   699373.00     699373.00    699373.00     0.00          1     NYS       Y   Y   1    N                                            260 WEST 39TH ST                      STE 302                        NEW YORK           NY   10018                 USA
+```
+[p020_p0054]
+
+```text
+WEBHOUSE INC.                            900000000004252     Netapp Storage Systems 2 with 5 Year Maintenance - PSIM                                              Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/13/2022   1/1/2023     Y   12/31/2027   566327.46     566327.46    566327.46     0.00          1     NYS       N   N   0    N                                            2365 MILBURN AVE                      BLDG 2                         BALDWIN            NY   11510                 USA
+```
+[p020_p0055]
+
+```text
+TENEO STRATEGY LLC                       900000000004253     Public Safety Advisory Service                                                                       Open        Consulting Services                              Authority Contract - Non-Competitive Bid   1/23/2023    1/9/2023     Y   12/29/2023   800000.00     799999.92    799999.92     0.08          1     NYS       N   N   0    N                               800000.00    280 PARK AVE, 4TH FL                                                 NEW YORK           NY                         USA
+```
+[p020_p0056]
+
+```text
+WEBHOUSE INC.                            900000000004254     Netapp Storage System with 3 Year Maintenance - Digital Content Team                                 Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/14/2022   1/2/2023     Y   12/31/2025   911903.22     911903.22    911903.22     0.00          3     NYS       N   N   0    N                                            2365 MILBURN AVE                      BLDG 2                         BALDWIN            NY   11510                 USA
+```
+[p020_p0057]
+
+```text
+VERTOSOFT LLC                            900000000004255     BeyondTrust Hardware Maintenan                                                                       Open        Technology - Software                            Authority Contract - Competitive Bid       12/14/2022   12/14/2022   Y   12/31/2024   293137.72     129505.73    129505.73     163631.99     9     Foreign   N   Y   8    N                                            1602 VILLAGE MARKET BLVD SE           STE 320                        LEESBURG           VA   20175                 USA
+```
+[p020_p0058]
+
+```text
+WI-TRONIX LLC                            900000000004261     Wi-Tronix Data Recorder Hardware purchase                                                            Open        Technology - Hardware                            Authority Contract - Competitive Bid       12/27/2022   12/27/2022   Y   6/30/2023    999935.00     999935.00    999935.00     0.00          1     Foreign   N   N   0    Y   Sole Source                              631 E BOUGHTON RD, STE#240                                           BOLINGBROOK        IL   60440                 USA
+```
+[p020_p0059]
+
+```text
+ACTIVU                                   900000000004263     Activu Hardware, OS and Software Upgrade ATS-A, Test and CBTC Canasie Environment                    Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   12/30/2022   12/30/2022   Y   12/31/2023   415059.81     166023.92    166023.92     249035.89     1     Foreign   N   N   0    Y   Sole Source                 415059.81    301 ROUND HILL DRIVE                                                 ROCKAWAY           NJ   07866                 USA
+```
+[p020_p0060]
+
+```text
+QUALITY AND ASSURANCE TECHNOLOGY CORP    900000000004264     Dell Optiplex 5000                                                                                   Open        Commodities/Supplies                             Purchased Under State Contract                                                                      32250.00                                       NYS       Y                                                         DBA QNA TECH                          18 MARGINWOOD DRIVE            RIDGE              NY   11961                 USA
+```
+[p020_p0061]
+
+```text
+CDW GOVERNMENT LLC                       900000000004265     MTAHQ Purchase of HPE Servers                                                                        Open        Telecommunication Equipment or Services          Purchased Under State Contract                                                                      119997.37                                      Foreign   N                                                         300 N. MILWAUKEE AVENUE                                              VERNON HILLS       IL   60061                 USA
+```
+[p020_p0062]
+
+```text
+BEELINE.COM INC                          900000000004266     Beeline Services Procurement Solution Module and the Additional Service Fees 1 1 23 - 12 31 23       Open        Commodities/Supplies                             Authority Contract - Competitive Bid       1/18/2023    1/1/2023     Y   12/31/2023   135000.00     110000.00    110000.00     25000.00      1     Foreign   N   N   0    N                                            12724 GRAN BAY PKWY WEST              SUITE 200                      JACKSONVILLE       FL   32258                 USA
+```
+[p020_p0063]
+
+```text
+COMPULINK TECHNOLOGIES, INC.             900000000004268     Accellion Kiteworks Secure File Sharing System Maintenance Renewal 2 1 23 - 1 31 24                  Open        Commodities/Supplies                             Authority Contract - Competitive Bid       1/19/2023    1/18/2023    Y   1/31/2024    31415.23      31415.23     31415.23      0.00          2     NYS       Y   Y   1    Y   Below Dollar Threshold                   260 WEST 39TH ST                      STE 302                        NEW YORK           NY   10018                 USA
+```
+[p020_p0064]
+
+```text
+COMPULINK TECHNOLOGIES, INC.             900000000004270     TransCAD Standard renewal                                                                            Open        Technology - Software                            Purchased Under State Contract                                                                      0.00                                           NYS       Y                                                         260 WEST 39TH ST                      STE 302                        NEW YORK           NY   10018                 USA
+```
+[p020_p0065]
+
+```text
+PRESIDIO NETWORKED SOLUTION GROUP LLC    900000000004271     Postman Enterprise software licenses                                                                 Open        Technology - Software                            Authority Contract - Competitive Bid       1/18/2022    1/18/2022    Y   2/11/2025    31787.92      8232.84      14113.44      17674.48      3     NYS       N   Y   1    N                                            110 PARKWAY DR SOUTH                                                 HAUPPAUGE          NY   11783                 USA
+```
+[p020_p0066]
+
+```text
+COMPULINK TECHNOLOGIES, INC.             900000000004272     eDOCS Prof Service                                                                                   Open        Other Professional Services                      Authority Contract - Competitive Bid       1/24/2023    1/24/2023    Y   1/23/2024    97740.00      80865.00     80865.00      16875.00      2     NYS       Y   Y   2    N                                            260 WEST 39TH ST                      STE 302                        NEW YORK           NY   10018                 USA
+```
+[p020_p0067]
+
+```text
+rusd solutions                           900000000004274     TransCAD Standard renewal                                                                            Open        Technology - Software                            Purchased Under State Contract                                                                      20150.00                                       Foreign   Y                                                         626 Woodland Ave                                                     Northvale          NJ   07647                 USA
+```
+[p020_p0068]
+
+```text
+DELL MARKETING LP                        900000000004275     Various Microsoft License                                                                            Open        Technology - Software                            Purchased Under State Contract                                                                      9493936.32                                     Foreign   N                                                         580 ASBURY DR                                                        BUFFALO GROVE      IL   60089                 USA
+```
+[p020_p0069]
+
+```text
+COMPULINK TECHNOLOGIES, INC.             900000000004276     Infinite Peripherals Quamtum P                                                                       Open        Technology - Hardware                            Authority Contract - Competitive Bid       1/26/2023    1/19/2023    Y   8/25/2023    15464.85      15464.85     15464.85      0.00          9     NYS       Y   Y   11   Y   Discretionary Procurement                260 WEST 39TH ST                      STE 302                        NEW YORK           NY   10018                 USA
+```
+[p020_p0070]
+
+```text
+INFOPEOPLE CORP                          900000000004277     EAM Category Manager PS                                                                              Open        Consulting Services                              Authority Contract - Competitive Bid       5/5/2022     5/5/2022     Y   5/8/2024     400000.00     165984.00    240240.00     159760.00     1     NYS       Y   Y   1    Y   Below Dollar Threshold                   450 SEVENTH AVE, STE# 1106                                           NEW YORK           NY   10123                 USA
+```
+[p020_p0071]
+
+```text
+CLUTCH SOLUTIONS LLC                     900000000004278     Twillio Messaging                                                                                    Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/22/2022   12/22/2022   Y   12/21/2023   70863.45      3188.65      3188.65       67674.80      3     Foreign   N   N   0    N                                            2152 S VINEYARD AVE. BLD. 1 STE 102                                  MESA               AZ   85210                 USA
+```
+[p020_p0072]
+
+```text
+DELL MARKETING LP                        900000000004279     Ivanti Maintenance Renewal 3 years paid annual                                                       Open        Commodities/Supplies                             Authority Contract - Competitive Bid       1/31/2023    1/31/2023    Y   12/31/2025   328196.88     109398.96    109398.96     218797.92     1     Foreign   N   N   0    N                                            580 ASBURY DR                                                        BUFFALO GROVE      IL   60089                 USA
+```
+[p020_p0073]
+
+```text
+CAPSTONE STRATEGY GROUP, LLC             900000000004281     IT Disc Consulting Services                                                                          Open        Consulting Services                              Authority Contract - Competitive Bid       2/2/2023     12/1/2022    Y   11/30/2023   262080.00     168714.00    168714.00     93366.00      5     NYS       Y   Y   5    Y   Below Dollar Threshold                   60 LABELLE RD                                                        MOUNT VERNON       NY   10552                 USA
+```
+[p020_p0074]
+
+```text
+NEAD ELECTRIC INC                        900000000004285-A   Wiring and DeviceInstallation                                                                        Open        Design and Construction/Maintenance              Purchased Under State Contract                                                                      0.00                                           Foreign   N                                                         187 EAST UNION AVE.                                                  EAST RUTHERFORD    NJ   07073                 USA
+```
+[p020_p0075]
+
+```text
+CDW GOVERNMENT LLC                       900000000004287     4 Genetec Streamvault Servers                                                                        Open        Commodities/Supplies                             Purchased Under State Contract                                                                      46668.16                                       Foreign   N                                                         300 N. MILWAUKEE AVENUE                                              VERNON HILLS       IL   60061                 USA
+```
+[p020_p0076]
+
+```text
+PIPER NETWORKS INC                       900000000004288     3Y Contract for Beacon Mainten                                                                       Open        Technology - Consulting/Development or Support   Authority Contract - Competitive Bid       2/10/2023    6/1/2022     Y   5/31/2025    2901000.00    967000.00    967000.00     1934000.00    1     Foreign   N   N   0    N                                            3636 NOBEL DR, STE#300                                               SAN DIEGO          CA   92122                 USA
+```
+[p020_p0077]
+
+```text
+CAMEROTA TRUCK PARTS                     900000000004289     ZF-Testman renewal software license P N 6008.208.690                                                 Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       2/13/2023    2/13/2023    Y   12/31/2023   37384.00      37384.00     37384.00      0.00          1     Foreign   N   N   0    Y   Below Dollar Threshold                   PO BOX 1134                                                          ENFIELD            CT   06083                 USA
+```
+[p020_p0078]
+
+```text
+COMPULINK TECHNOLOGIES, INC.             900000000004290     Modems                                                                                               Open        Commodities/Supplies                             Purchased Under State Contract                                                                      476840.50                                      NYS       Y                                                         260 WEST 39TH ST                      STE 302                        NEW YORK           NY   10018                 USA
+```
+[p020_p0079]
+
+```text
+DIANA COOPER                             900000000004291     AANDD Roosevelt Island                                                                               Open        Other                                            Authority Contract - Non-Competitive Bid   3/3/2023     2/14/2023    Y   12/31/2023   40250.00      40250.00     40250.00      0.00          1     NYS       N   N   0    Y   Below Dollar Threshold      40250.00     478 THIRD ST, APT 4R                                                 BROOKLYN           NY   11215                 USA
+```
+[p020_p0080]
+
+```text
+CIMQUEST INC                             900000000004293     Mastercam Mill License - 2D and Single Surface 3D Machining                                          Open        Commodities/Supplies                             Authority Contract - Competitive Bid       2/15/2023    2/15/2023    Y   2/26/2024    27326.25      27326.25     27326.25      0.00          3     Foreign   N   Y   1    Y   Below Dollar Threshold                   3434 RT 22 W, STE# 130                                               BRANCHBURG         NJ   08876                 USA
+```
+[p020_p0081]
+
+```text
+REPLICA INC                              900000000004297     1 Year Replica Software Subscription                                                                 Open        Technology - Software                            Authority Contract - Non-Competitive Bid   2/16/2023    2/16/2023    Y   2/16/2024    1035000.00    1035000.00   1035000.00    0.00          1     Foreign   N   N   0    N                               1035000.00   3610 W 95TH ST                                                       LEAWOOD            KS   66206                 USA
+```
+[p020_p0082]
+
+```text
+PENDA AIKEN INC                          900000000004299     Bogdan Mihaila                                                                                       Open        Other Professional Services                      Authority Contract - Competitive Bid       2/14/2023    2/14/2023    Y   12/31/2024   186890.00     143880.00    143880.00     43010.00      1     NYS       N   Y   1    Y   Below Dollar Threshold                   330 LIVINGSTON ST                     2ND FL                         BROOKLYN           NY   11217                 USA
+```
+[p020_p0083]
+
+```text
+METRO CATERING AND EVENTS                900000000004301     CARTERING SERVICE                                                                                    Completed   Consulting Services                              Authority Contract - Competitive Bid       2/1/2023     2/1/2023     Y   4/30/2023    0.00          0.00         0.00          0.00          1     NYS       N   N   0    Y   Below Dollar Threshold                   130 W 37TH ST, 2ND FL                                                NEW YORK           NY   10018                 USA
+```
+[p020_p0084]
+
+```text
+TCA CONSULTING GROUP INC                 900000000004302     Cons Servs for HQ Procurement                                                                        Open        Consulting Services                              Authority Contract - Competitive Bid       2/21/2023    2/21/2023    Y   12/31/2023   99917.00      59737.50     59737.50      40179.50      6     Foreign   Y   Y   6    Y   Below Dollar Threshold                   3011 MAIN ST.                                                        GLASTONBURY        CT   06033                 USA
+```
+[p020_p0085]
+
+```text
+QUALITY AND ASSURANCE TECHNOLOGY CORP    900000000004303     Infoscale                                                                                            Open        Commodities/Supplies                             Authority Contract - Competitive Bid       2/21/2023    2/21/2023    Y   3/31/2023    65186.30      65186.30     65186.30      0.00          2     NYS       Y   Y   2    Y   Below Dollar Threshold                   DBA QNA TECH                          18 MARGINWOOD DRIVE            RIDGE              NY   11961                 USA
+```
+[p020_p0086]
+
+```text
+DATA CONNECT ENTERPRISE, INC.            900000000004304     LabVIEW w 3yr Maint                                                                                  Open        Commodities/Supplies                             Authority Contract - Competitive Bid       2/21/2023    12/27/2022   Y   12/26/2025   18617.07      18617.07     18617.07      0.00          3     Foreign   N   N   0    N                                            3405 OLANDWOOD COURT                                                 OLNEY              MD   20832                 USA
+```
+[p020_p0087]
+
+```text
+SHI INTERNATIONAL CORP                   900000000004305     3 Year Wiz Subscription                                                                              Open        Technology - Software                            Authority Contract - Competitive Bid       2/22/2023    2/22/2023    Y   2/26/2026    490050.00     0.00         0.00          490050.00     2     Foreign   N   Y   1    N                                            P.O. BOX 8500-41155                                                  PHILADELPHIA       PA   19178                 USA
+```
+[p020_p0088]
+
+```text
+COMPULINK TECHNOLOGIES, INC.             900000000004308     3yr Bomgard Renewal                                                                                  Open        Technology - Software                            Authority Contract - Competitive Bid       2/23/2023    2/21/2023    Y   3/31/2026    137146.61     137146.61    137146.61     0.00          4     NYS       Y   Y   3    Y   Below Dollar Threshold                   260 WEST 39TH ST                      STE 302                        NEW YORK           NY   10018                 USA
+```
+[p020_p0089]
+
+```text
+IT SAVVY LLC                             900000000004309     ALLISON DOC PREMIUM FOR PRF and H40 50EP HYBRIDS LICENSE RENEWALS                                    Open        Commodities/Supplies                             Authority Contract - Competitive Bid       2/23/2023    2/23/2023    Y   10/2/2024    149227.05     118108.65    118108.65     31118.40      3     Foreign   N   Y   1    Y   Below Dollar Threshold                   33 NORTH LASALLE ST STE 2200                                         CHICAGO            IL   60602                 USA
+```
+[p020_p0090]
+
+```text
+NYS INDUSTRIES FOR THE DISABLED INC      900000000004312     Onsite Shredding Services MTA                                                                        Open        Commodities/Supplies                             Authority Contract - Competitive Bid       2/26/2023    2/26/2023    Y   4/30/2026    32760.00      0.00         0.00          32760.00      1     NYS       N   N   0    Y   Below Dollar Threshold                   11 COLUMBIA CIRCLE DRIVE                                             ALBANY             NY   12203                 USA
+```
+[p020_p0091]
+
+```text
+VICOM COMPUTER SERVICES INC              900000000004316     Cisco Equip w.3 yrs support                                                                          Open        Telecommunication Equipment or Services          Authority Contract - Competitive Bid       3/8/2023     3/8/2023     Y   3/7/2026     260482.80     260482.80    260482.80     0.00          9     NYS       N   Y   5    Y   Ride/Piggyback of MTA Ags                400 BROAD HOLLOW RD                   STE 1                          FARMINGDALE        NY   11735                 USA
+```
+[p020_p0092]
+
+```text
+DELL MARKETING LP                        900000000004317     3Y CLEAN Address Enterprise Su                                                                       Open        Technology - Software                            Authority Contract - Competitive Bid       3/1/2023     3/1/2023     Y   3/2/2026     252300.00     84100.00     84100.00      168200.00     3     Foreign   N   Y   2    N                                            580 ASBURY DR                                                        BUFFALO GROVE      IL   60089                 USA
+```
+[p020_p0093]
+
+```text
+QUALITY AND ASSURANCE TECHNOLOGY CORP    900000000004319     Dell Precision Tower 5820AND7920                                                                     Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/2/2023     2/28/2023    Y   3/1/2024     96945.79      96945.79     96945.79      0.00          3     NYS       Y   Y   1    N                                            DBA QNA TECH                          18 MARGINWOOD DRIVE            RIDGE              NY   11961                 USA
+```
+[p020_p0094]
+
+```text
+ERNST AND YOUNG U.S. LLP                 900000000004320     Professional Services                                                                                Open        Other Professional Services                      Authority Contract - Competitive Bid       3/3/2023     3/3/2023     Y   8/31/2023    585000.00     585000.00    585000.00     0.00          5     Foreign   N   N   0    N                                            200 PLAZA DR.                                                        SECAUCUS           NJ   094                   USA
+```
+[p020_p0095]
+
+```text
+UNIQUE COMP, INC.                        900000000004321     PDCOMM-Consulting Serv.MRRS                                                                          Open        Consulting Services                              Authority Contract - Competitive Bid       3/9/2023     3/9/2023     Y   3/8/2024     275195.20     79113.74     79113.74      196081.46     1     NYS       Y   Y   1    N                                            Gautam Tooley, Vice President         27-08 42ND ROAD                LONG ISLAND CITY   NY   11101                 USA
+```
+[p020_p0096]
+
+```text
+SHI INTERNATIONAL CORP                   900000000004322     3 Year contract Okta CIAM Software Lic Year 1                                                        Open        Technology - Software                            Authority Contract - Competitive Bid       3/10/2023    3/10/2023    Y   3/10/2026    665157.21     665157.21    665157.21     0.00          2     Foreign   N   N   0    N                                            P.O. BOX 8500-41155                                                  PHILADELPHIA       PA   19178                 USA
+```
+[p020_p0097]
+
+```text
+E PLUS TECHNOLOGY INC                    900000000004323     3 YR Cisco Modeling Lab                                                                              Open        Telecommunication Equipment or Services          Purchased Under State Contract                                                                      129493.00                                      Foreign   N                                                         13595 DULLES TECHNOLOGY DR                                           HERNDON            VA   20171                 USA
+```
+[p020_p0098]
+
+```text
+XEROX CORP                               900000000004324     Maintenance for LIRR Xerox check printer 1 1 23 - 12 31 25                                           Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   3/10/2023    3/10/2023    Y   12/31/2025   32751.18      11510.51     11510.51      21240.67      1     Foreign   N   N   0    Y   Sole Source                 32751.18     PO BOX 660501                                                        DALLAS             TX   75266     0501        USA
+```
+[p020_p0099]
+
+```text
+COMPULINK TECHNOLOGIES, INC.             900000000004325     1yr Juniper Support                                                                                  Open        Telecommunication Equipment or Services          Purchased Under State Contract                                                                      7260.00                                        NYS       Y                                                         260 WEST 39TH ST                      STE 302                        NEW YORK           NY   10018                 USA
+```
+[p020_p0100]
+
+```text
+POINT BLANK ENTERPRISES INC              900000000004328     5 YR Contract for Point Blank Enterprises AXBIIIA Vest Panels along with matching Outer Concealabl   Open        Commodities/Supplies                             Purchased Under State Contract                                                                      921970.58                                      Foreign   N                                                         2102 SW 2ND ST                                                       POMPANO BEACH      FL   33069                 USA
+```
+[p020_p0101]
+
+```text
+COMPULINK TECHNOLOGIES, INC.             900000000004329     Waterfall Licenses                                                                                   Open        Technology - Software                            Authority Contract - Competitive Bid       3/14/2023    3/14/2023    Y   4/1/2024     127046.18     119004.95    119004.95     8041.23       1     NYS       Y   Y   1    Y   Below Dollar Threshold                   260 WEST 39TH ST                      STE 302                        NEW YORK           NY   10018                 USA
+```
+[p020_p0102]
+
+```text
+CDW GOVERNMENT LLC                       900000000004330     Splunk Enterprise with Premium Success Plan 3 Years Paid annual basis                                Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   3/20/2023    4/1/2023     Y   3/31/2026    279918.24     86266.08     86266.08      193652.16     1     Foreign   N   N   0    N                               279918.24    300 N. MILWAUKEE AVENUE                                              VERNON HILLS       IL   60061                 USA
+```
+[p020_p0103]
+
+```text
+ICP                                      900000000004331     Cribl-Stream Enterprise license                                                                      Open        Technology - Software                            Authority Contract - Competitive Bid       3/21/2023    3/21/2023    Y   3/23/2026    386777.40     146327.40    146327.40     240450.00     3     NYS       Y   Y   2    Y   Discretionary Procurement                20 CLIFTON AVE                                                       STATEN ISLAND      NY   10305                 USA
+```
+[p020_p0104]
+
+```text
+ICAS CORPORATION                         900000000004333     Cabling Services                                                                                     Open        Other                                            Authority Contract - Competitive Bid       3/23/2023    4/1/2023     Y   3/31/2028    12779634.38   467243.33    467243.33     12312391.05   6     NYS       N   Y   1    N                                            42-19 23RD AVE.                                                      LONG ISLAND CITY   NY   11105                 USA
+```
+[p020_p0105]
+
+```text
+SHI INTERNATIONAL CORP                   900000000004334     ACUCOBOL and Acu4GL renewal                                                                          Open        Technology - Software                            Purchased Under State Contract                                                                      103509.14                                      Foreign   N                                                         P.O. BOX 8500-41155                                                  PHILADELPHIA       PA   19178                 USA
+```
+[p020_p0106]
+
+```text
+rusd solutions                           900000000004335     ITTableau Cloud x Paratransit                                                                        Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/31/2023    3/27/2023    Y   3/31/2024    96877.60      0.00         0.00          96877.60      3     Foreign   Y   Y   1    N                                            626 Woodland Ave                                                     Northvale          NJ   07647                 USA
+```
+[p020_p0107]
+
+```text
+INSIGHT PUBLIC SECTOR INC.               900000000004336     Esker Fax Software Renewal Maintenance for Document Management Center                                Open        Commodities/Supplies                             Purchased Under State Contract                                                                      18424.34                                       Foreign   N                                                         P.O. BOX 713096                                                      COLUMBUS           OH   43271     3096        USA
+```
+[p020_p0108]
+
+```text
+AXWAY INC                                900000000004339     STS Maintenance 3 Year Contrac                                                                       Open        Technology - Software                            Authority Contract - Competitive Bid       3/30/2023    1/1/2023     Y   12/31/2023   192858.00     0.00         0.00          192858.00     3     Foreign   N   Y   1    Y   Below Dollar Threshold                   6811 E. MAYO BLVD. SUITE 400                                         PHOENIX            AZ   85054                 USA
+```
+[p020_p0109]
+
+```text
+SHI INTERNATIONAL CORP                   900000000004340     SAP Sybase Software Maintenance Renewal 2023-24                                                      Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/30/2023    1/1/2023     Y   12/31/2023   138991.66     138991.66    138991.66     0.00          1     Foreign   N   N   0    N                                            P.O. BOX 8500-41155                                                  PHILADELPHIA       PA   19178                 USA
+```
+[p020_p0110]
+
+```text
+MIRACLE SOFTWARE SYSTEMS, INC.           900000000004341     IBM FileNet Renewal                                                                                  Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/31/2023    3/31/2023    Y   4/1/2024     171548.64     171548.64    171548.64     0.00          3     Foreign   N   Y   1    N                                            45625 GRAND RIVER AVENUE                                             NOVI               MI   48374                 USA
+```
+[p020_p0111]
+
+```text
+ALFRED A TOMASELLI                       900000000004343     AANDD 14th Street Complex Art                                                                        Open        Other                                            Authority Contract - Competitive Bid       12/12/2023   12/12/2023   Y   12/11/2025   485000.00     0.00         0.00          485000.00     33    NYS       N   N   0    N                                            424 HUMBOLDT ST                       ATTN: FRED TOMASELLI           BROOKLYN           NY   11211                 USA
+```
+[p020_p0112]
+
+```text
+PHILIP DUKE RILEY                        900000000004344     AANDD Northport Art                                                                                  Open        Other                                            Authority Contract - Non-Competitive Bid   5/23/2023    5/23/2023    Y   5/22/2025    269000.00     151500.00    151500.00     117500.00     1     NYS       N   N   0    Y   Sole Source                 269000.00    72 UNION ST, #2                                                      BROOKLYN           NY   11231                 USA
+```
+[p020_p0113]
+
+```text
+RAY ALLEN MANUFACTURING COMPANY, INC.    900000000004345     Canine Equipment AND Accessories                                                                     Open        Commodities/Supplies                             Authority Contract - Competitive Bid       4/7/2023     9/27/2023    Y   9/26/2026    97429.83      0.00         0.00          97429.83      2     Foreign   N   Y   1    Y   Below Dollar Threshold                   975 FORD ST                                                          COLORADO SPRINGS   CO   80915                 USA
+```
+[p020_p0114]
+
+```text
+NATHANIAL RAND INC                       900000000004346     Req 21751 Palo Alto SFPs AND Cables                                                                  Open        Commodities/Supplies                             Authority Contract - Competitive Bid       4/11/2023    4/10/2023    Y   4/11/2024    20593.11      0.00         0.00          20593.11      7     NYS       Y   Y   2    N                                            10 AVERILL DRIVE                                                     MAHOPAC            NY   10541                 USA
+```
+[p020_p0115]
+
+```text
+CARMEN LIZARDO                           900000000004347     AANDD 181st Street Artwork                                                                           Open        Other                                            Authority Contract - Competitive Bid       4/13/2023    4/27/2023    Y   4/26/2024    250000.00     221752.00    221752.00     28248.00      199   NYS       N   N   0    N                                            10 HUNTER ST                                                         KINGSTON           NY   12401                 USA
+```
+[p020_p0116]
+
+```text
+SHI INTERNATIONAL CORP                   900000000004348     Sentry Software                                                                                      Open        Commodities/Supplies                             Authority Contract - Competitive Bid       4/17/2023    4/17/2023    Y   4/16/2024    75911.45      75911.45     75911.45      0.00          3     Foreign   N   Y   1    N                                            P.O. BOX 8500-41155                                                  PHILADELPHIA       PA   19178                 USA
+```
+[p020_p0117]
+
+```text
+SHI INTERNATIONAL CORP                   900000000004349     ITOpenText all lics 2023 renw                                                                        Open        Technology - Software                            Authority Contract - Competitive Bid       4/19/2023    4/19/2023    Y   4/30/2024    261000.00     261000.00    261000.00     0.00          11    Foreign   N   Y   6    Y   Below Dollar Threshold                   P.O. BOX 8500-41155                                                  PHILADELPHIA       PA   19178                 USA
+```
+[p020_p0118]
+
+```text
+CLUTCH SOLUTIONS LLC                     900000000004350     Intercom Software                                                                                    Open        Commodities/Supplies                             Authority Contract - Competitive Bid       4/20/2023    4/20/2023    Y   4/19/2024    46116.00      46116.00     46116.00      0.00          5     Foreign   N   Y   1    N                                            2152 S VINEYARD AVE. BLD. 1 STE 102                                  MESA               AZ   85210                 USA
+```
+[p020_p0119]
+
+```text
+MAUREEN DATA SYSTEMS INC.                900000000004352     Rasterex Maintenance Renewal                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       4/21/2023    4/21/2023    Y   4/20/2024    32433.45      32433.45     32433.45      0.00          2     NYS       Y   Y   2    N                                            500 WEST 43RD ST, 33C                                                NEW YORK           NY   10036                 USA
+```
+[p020_p0120]
+
+```text
+BOC CAPITAL CORP                         900000000004354     Small Business Devt Program                                                                          Open        Financial Services                               Authority Contract - Competitive Bid       1/30/2023    1/30/2023    Y   1/29/2027    500000.00     0.00         0.00          500000.00     6     NYS       N   N   0    Y   Below Dollar Threshold                   85 SOUTH OXFORD ST                                                   BROOKLYN           NY   11217                 USA
+```
+[p020_p0121]
+
+```text
+COMPULINK TECHNOLOGIES, INC.             900000000004355     Flexera Subscription Software                                                                        Open        Technology - Software                            Authority Contract - Competitive Bid       5/2/2023     5/2/2023     Y   5/2/2024     233339.18     233339.18    233339.18     0.00          2     NYS       Y   Y   1    N                                            260 WEST 39TH ST                      STE 302                        NEW YORK           NY   10018                 USA
+```
+[p020_p0122]
+
+```text
+HYATT HOUSE FISHKILL                     900000000004357     Hotel accommodations                                                                                 Open        Other                                            Authority Contract - Competitive Bid       5/2/2023     7/10/2023    Y   7/9/2026     132000.00     28327.00     28327.00      103673.00     1     NYS       N   N   0    Y   Below Dollar Threshold                   100 WESTAGE BUSINESS CENTER DR                                       FISHKILL           NY   12524                 USA
+```
+[p020_p0123]
+
+```text
+CHRIS DOYLE STUDIO                       900000000004358     AANDD PSA Co-Op City                                                                                 Open        Other                                            Authority Contract - Competitive Bid       5/23/2023    5/23/2023    Y   5/22/2028    800000.00     190750.00    190750.00     609250.00     282   NYS       N   N   0    N                                            238 S 3RD ST, #1                                                     BROOKLYN           NY   11211                 USA
+```
+[p020_p0124]
+
+```text
+COMPLY365 LLC                            900000000004360     IT Comply 365 w Training                                                                             Open        Technology - Software                            Authority Contract - Non-Competitive Bid   5/3/2023     5/15/2023    Y   5/14/2024    192600.00     192600.00    192600.00     0.00          0     Foreign   N   N   0    Y   Sole Source                 192600.00    655 THIRD ST, STE 365                                                BELOIT             WI   53511                 USA
+```
+[p020_p0125]
+
+```text
+TRANSOFT SOLUTIONS INC                   900000000004361     AutoTURN Pro MAP RENEWAL MULTI-SITE 1 YEAR License No 25633                                          Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   5/3/2023     5/3/2023     Y   3/31/2024    16830.00      16830.00     16830.00      0.00          1     Foreign   N   N   0    Y   Sole Source                 16830.00     350-13700 INTERNATIONAL PLACE                                        RICHMOND                V6V 2X8          BC   OTHER   CAN
+```
+[p020_p0126]
+
+```text
+INDUSTRIAL/ORGANIZATIONAL SOLUTION INC   900000000004362     To establish a three year contract for the MTAPD written exam                                        Open        Other                                            Authority Contract - Competitive Bid       5/4/2023     1/1/2023     Y   12/31/2025   312000.00     0.00         0.00          312000.00     2     Foreign   N   N   0    N                                            1520 KENSINGTON RD                    SUITE 110                      OAK BROOK          IL   60523                 USA
+```
+[p020_p0127]
+
+```text
+PLUGOUT LLC                              900000000004365     POWER SUPPLY AND LENEL INTELL                                                                        Open        Technology - Software                            Authority Contract - Competitive Bid       5/8/2023     5/8/2023     Y   5/8/2024     55734.75      0.00         0.00          55734.75      3     Foreign   N   Y   2    N                                            33 PARK PLACE                                                        ENGLEWOOD          NJ   07631                 USA
+```
+[p020_p0128]
+
+```text
+AZH CONSTRUCTION AND CONSULTING CORP     900000000004367     EDX Wireless maintenance and Cirrus Data                                                             Open        Technology - Hardware                            Authority Contract - Competitive Bid       5/9/2023     5/9/2023     Y   5/9/2024     33965.00      33965.00     33965.00      0.00          2     NYS       Y   Y   2    N                                            80 Broad Street                       Ste# 530                       NEW YORK           NY   10004                 USA
+```
+[p020_p0129]
+
+```text
+ADVANTAGE SPORT AND FITNESS INC          900000000004368     Fitness Equipment                                                                                    Open        Commodities/Supplies                             Purchased Under State Contract                                                                      33779.58                                       NYS       N                                                         2255 N. Triphammer Rd.                                               Ithaca             NY   14850                 USA
+```
+[p020_p0130]
+
+```text
+SITE INTELLIGENCE GROUP                  900000000004370     SITE Product Subscription                                                                            Open        Technology - Software                            Authority Contract - Competitive Bid       5/11/2023    5/11/2023    Y   5/31/2026    300277.00     95250.00     95250.00      205027.00     1     Foreign   N   N   0    Y   Below Dollar Threshold                   C/O IG LLC, FINANCIAL OFFICE          1735 MARKET ST, STE A 428      PHILADELPHIA       PA   19103                 USA
+```
+[p020_p0131]
+
+```text
+SEVENTEENTH ADDITION LLC                 900000000004371     Additional workers compensation support                                                              Open        Other Professional Services                      Authority Contract - Competitive Bid       5/12/2023    5/12/2023    Y   11/12/2023   193360.00     55899.40     55899.40      137460.60     1     NYS       Y   Y   1    Y   Discretionary Procurement                18 BRIDGE ST, STE 1C                                                 BROOKLYN           NY   11201                 USA
+```
+[p020_p0132]
+
+```text
+E PLUS TECHNOLOGY INC                    900000000004373     Cisco Smartnet Support                                                                               Open        Telecommunication Equipment or Services          Purchased Under State Contract                                                                      4800.52                                        Foreign   N                                                         13595 DULLES TECHNOLOGY DR                                           HERNDON            VA   20171                 USA
+```
+[p020_p0133]
+
+```text
+NATHANIAL RAND INC                       900000000004376     1 Year Gigamon Maintenance                                                                           Open        Technology - Hardware                            Authority Contract - Competitive Bid       5/19/2023    12/23/2022   Y   12/31/2023   503709.00     503709.00    503709.00     0.00          3     NYS       Y   Y   1    Y   Below Dollar Threshold                   10 AVERILL DRIVE                                                     MAHOPAC            NY   10541                 USA
+```
+[p020_p0134]
+
+```text
+DELL MARKETING LP                        900000000004377     Quest ELA Enterprise License Agreement NYS OGS PD67644 3Years renewal                                Open        Technology - Software                            Purchased Under State Contract                                                                      1574913.81                                     Foreign   N                                                         580 ASBURY DR                                                        BUFFALO GROVE      IL   60089                 USA
+```
+[p020_p0135]
+
+```text
+VANDIS INC                               900000000004378     F5 Maintenance                                                                                       Open        Technology - Hardware                            Purchased Under State Contract                                                                      427238.21                                      NYS       N                                                         1 ALBERTSON AVE, STE 1                                               ALBERTSON          NY   11507                 USA
+```
+[p020_p0136]
+
+```text
+SAGE INTEGRATION HOLDINGS LLC            900000000004380     MTAPD Maint off retainer                                                                             Open        Technology - Hardware                            Authority Contract - Competitive Bid       5/25/2023    5/24/2023    Y   12/31/2026   899960.00     77862.40     77862.40      822097.60     2     Foreign   N   Y   1    Y   Ride/Piggyback of MTA Ags                4075 KARG INDUSTRIAL PKWY             STE B                          KENT               OH   44240                 USA
+```
+[p020_p0137]
+
+```text
+DELL MARKETING LP                        900000000004381     GoAnywhere Support                                                                                   Open        Technology - Software                            Purchased Under State Contract                                                                      30588.36                                       Foreign   N                                                         580 ASBURY DR                                                        BUFFALO GROVE      IL   60089                 USA
+```
+[p020_p0138]
+
+```text
+SUBMITTABLE                              900000000004384     1 year subscription with SSO                                                                         Open        Other Professional Services                      Authority Contract - Non-Competitive Bid   6/1/2023     5/1/2023     Y   4/30/2024    25840.00      25840.00     25840.00      0.00          1     Foreign   N   N   0    Y   Below Dollar Threshold      25840.00     PO BOX 8255                                                          MISSOULA           MT   59807                 USA
+```
+[p020_p0139]
+
+```text
+GARTNER INC                              900000000004387     3 Year Gartner Services contract                                                                     Open        Consulting Services                              Purchased Under State Contract                                                                      605887.83                                      Foreign   N                                                         PO BOX 911319                                                        DALLAS             TX   75391     1319        USA
+```
+[p020_p0140]
+
+```text
+NEXUS CONSORTIUM, INC.                   900000000004388     RSA Maintenance renewal and professional services 5 4 2022 - 5 3 2024                                Open        Other Professional Services                      Authority Contract - Competitive Bid       6/6/2023     6/6/2023     Y   5/3/2024     164462.00     164462.00    164462.00     0.00          3     Foreign   Y   Y   2    N                                            1933 HIGHWAY 35 # 356                                                WALL               NJ   07719                 USA
+```
+[p020_p0141]
+
+```text
+EW WHITE CONSULTING LLC                  900000000004389     Data Maintenance and Transfer                                                                        Open        Commodities/Supplies                             Authority Contract - Non-Competitive Bid   6/8/2023     6/8/2023     Y   6/30/2023    40000.00      40000.00     40000.00      0.00          1     Foreign   N   N   0    Y   Below Dollar Threshold      40000.00     1440 N ARTESIAN AVE                                                  CHICAGO            IL   60622     1703        USA
+```
+[p020_p0142]
+
+```text
+APTIMIZED LLC                            900000000004390     Enterprise Google Subscription                                                                       Open        Commodities/Supplies                             Authority Contract - Competitive Bid       6/12/2023    6/12/2023    Y   6/11/2024    86344.64      86344.64     86344.64      0.00          3     Foreign   N   Y   1    N                                            155 US 46 W, STE#108                                                 WAYNE              NJ   07470                 USA
+```
+[p020_p0143]
+
+```text
+DELL MARKETING LP                        900000000004391     Red Hat Ent Software                                                                                 Open        Technology - Software                            Purchased Under State Contract                                                                      916887.98                                      Foreign   N                                                         580 ASBURY DR                                                        BUFFALO GROVE      IL   60089                 USA
+```
+[p020_p0144]
+
+```text
+ATLANTIC TACTICAL INC                    900000000004392     THREE YEARS AS NEEDED CONTRACT                                                                       Open        Commodities/Supplies                             Purchased Under State Contract                                                                      229600.00                                      Foreign   N                                                         772 CORPORATE CIRCLE                                                 NEW CUMBERLAND     PA   17070                 USA
+```
+[p020_p0145]
+
+```text
+DIDIER WILLIAM LLC                       900000000004393     AANDD Parkchester Artwork                                                                            Open        Other                                            Authority Contract - Competitive Bid       8/22/2023    8/23/2023    Y   8/23/2028    800000.00     15000.00     15000.00      785000.00     282   Foreign   N   N   0    N                                            913 MELROSE AVE                                                      ELKINS PARK        PA   19027     2927        USA
+```
+[p020_p0146]
+
+```text
+SAYA WOOLFALK STUDIO LLC                 900000000004394     AANDD Morris Park Artwork                                                                            Open        Other                                            Authority Contract - Competitive Bid       7/21/2023    7/21/2023    Y   7/20/2028    800000.00     10000.00     10000.00      790000.00     282   NYS       N   N   0    Y   Below Dollar Threshold                   113 WALWORTH AVE                                                     SCARSDALE          NY   10583                 USA
+```
+[p020_p0147]
+
+```text
+CONVERGE TECHNOLOGY SOLUTIONS US LLC     900000000004398     YR 5 Release- Cisco Meraki                                                                           Open        Telecommunication Equipment or Services          Purchased Under State Contract                                                                      104331.24                                      NYS       N                                                         PO BOX 23623                                                         NEW YORK           NY   10087     3623        USA
+```
+[p020_p0148]
+
+```text
+EAST COAST ABSTRACT INC                  900000000004399     CANDS MNR Real-estate                                                                                Open        Other                                            Authority Contract - Competitive Bid       6/20/2023    6/27/2023    Y   12/31/2023   130000.00     0.00         0.00          130000.00     2     NYS       N   N   0    Y   Ride/Piggyback of MTA Ags                100 QUENTIN ROOSEVELT BLVD            SUITE#501                      GARDEN CITY        NY   11530                 USA
+```
+[p020_p0149]
+
+```text
+SHI INTERNATIONAL CORP                   900000000004400     Bluebeam Revu 20 Std Upgrade                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       6/26/2023    6/26/2023    Y   6/25/2024    89838.00      44453.52     44453.52      45384.48      1     Foreign   N   Y   1    N                                            P.O. BOX 8500-41155                                                  PHILADELPHIA       PA   19178                 USA
+```
+[p020_p0150]
+
+```text
+CDW GOVERNMENT LLC                       900000000004401     SysTrack Cloud Licenses                                                                              Open        Technology - Software                            Purchased Under State Contract                                                                      333500.00                                      Foreign   N                                                         300 N. MILWAUKEE AVENUE                                              VERNON HILLS       IL   60061                 USA
+```
+[p020_p0151]
+
+```text
+XLENT STRATEGIES LLC                     900000000004402     Qognify Software Maint - 5 Years 10 13 19 - 12 31 2024                                               Open        Technology - Software                            Authority Contract - Competitive Bid       6/30/2023    6/30/2023    Y   12/31/2024   7250367.00    932226.26    932226.26     6318140.74    4     Foreign   N   Y   2    N                                            18 UPPER BROOK DR                                                    NORTH BRUNSWICK    NJ   08902     1211        USA
+```
+[p020_p0152]
+
+```text
+VANDIS INC                               900000000004406     Exabeam SW AND HW                                                                                    Open        Technology - Software                            Authority Contract - Competitive Bid       7/11/2023    7/11/2023    Y   7/11/2024    727230.00     0.00         0.00          727230.00     2     NYS       N   Y   1    Y   Below Dollar Threshold                   1 ALBERTSON AVE, STE 1                                               ALBERTSON          NY   11507                 USA
+```
+[p020_p0153]
+
+```text
+ALLIANT INSURANCE SERVICES, INC          900000000004407     Insurance Broker Services                                                                            Open        Other Professional Services                      Authority Contract - Competitive Bid       8/1/2023     8/1/2023     Y   7/31/2028    3415894.00    236079.00    236079.00     3179815.00    4     NYS       N   N   0    N                                            333 EARLE OVINGTON BLVD               SUITE 700                      UNIONDALE          NY   11553                 USA
+```
+[p020_p0154]
+
+```text
+WILLIS TOWERS WATSON NORTHEAST INC       900000000004408     Insurance Broker Services                                                                            Open        Other Professional Services                      Authority Contract - Competitive Bid       8/1/2023     8/1/2023     Y   7/31/2028    1301404.00    181875.00    181875.00     1119529.00    4     NYS       N   N   0    N                                            P.O. BOX 4557                         CHURCH STREET STATION          NEW YORK           NY   10261                 USA
+```
+[p020_p0155]
+
+```text
+LEXIS NEXIS RISK SOLUTIONS FL INC        900000000004409     Accurint subscription                                                                                Open        Other Professional Services                      Purchased Under State Contract                                                                      0.00                                           Foreign   N                                                         BILLING ID 1757367                    28330 NETWORK PLACE            CHICAGO            IL   60673     1283        USA
+```
+[p020_p0156]
+
+```text
+CRTECH CONSULTING LLC                    900000000004410     consulting svs, training, and support to existing Hyperion Planning administrative staff in OMB.     Open        Other Professional Services                      Authority Contract - Non-Competitive Bid   7/10/2023    7/26/2023    Y   7/26/2024    300000.00     48000.00     48000.00      252000.00     1     NYS       N   N   0    Y   Sole Source                 300000.00    418 BROADWAY, STE R                                                  ALBANY             NY   12207                 USA
+```
+[p020_p0157]
+
+```text
+KIRA NAM GREENE STUDIO                   900000000004411     AANDD 82nd Street Artwork                                                                            Open        Other                                            Authority Contract - Competitive Bid       9/26/2023    9/26/2023    Y   9/26/2025    125000.00     5000.00      5000.00       120000.00     179   NYS       N   N   0    N                                            264 GREENE AVE, APT#1                                                BROOKLYN           NY   11238                 USA
+```
+[p020_p0158]
+
+```text
+SHI INTERNATIONAL CORP                   900000000004412     Wiz 3-Year Subscription                                                                              Open        Technology - Software                            Authority Contract - Competitive Bid       7/27/2023    7/27/2023    Y   7/27/2026    499554.00     151380.00    151380.00     348174.00     3     Foreign   N   Y   1    N                                            P.O. BOX 8500-41155                                                  PHILADELPHIA       PA   19178                 USA
+```
+[p020_p0159]
+
+```text
+MARCO GALLOTTA                           900000000004413     AANDD 111th Street Art                                                                               Open        Other                                            Authority Contract - Competitive Bid       8/8/2023     8/8/2023     Y   8/8/2025     125000.00     5000.00      5000.00       120000.00     179   NYS       N   N   0    N                                            552 RIVERSIDE DRIVE, 5D                                              NEW YORK           NY   10027                 USA
+```
+[p020_p0160]
+
+```text
+MARY LUM                                 900000000004414     AANDD 52nd Street                                                                                    Open        Other                                            Authority Contract - Competitive Bid       9/12/2023    9/12/2023    Y   9/12/2024    175000.00     6500.00      6500.00       168500.00     179   Foreign   N   N   0    N                                            243 UNION ST, #403                                                   NORTH ADAMS        MA   01247                 USA
+```
+[p020_p0161]
+
+```text
+GIRO, INC.                               900000000004416     1 YR. Giro Hastus Renewal                                                                            Open        Telecommunication Equipment or Services          Authority Contract - Non-Competitive Bid   7/28/2023    3/9/2023     Y   3/8/2024     525808.00     525808.00    525808.00     0.00          1     Foreign   N   N   0    Y   Sole Source                 525808.00    CHERCHE OPERATIONNELLE                75 RUE DE PORT - ROYAL E       MONTREAL                H3L 3T1          QC   OTHER   CAN
+```
+[p020_p0162]
+
+```text
+PETER J HAMLIN LLC                       900000000004417     AANDD 69th Street Art                                                                                Open        Other                                            Authority Contract - Competitive Bid       8/8/2023     8/8/2023     Y   8/8/2025     100000.00     3000.00      3000.00       97000.00      179   NYS       N   N   0    N                                            44 BENNETT AVE, APT 3F                                               NEW YORK           NY   10033                 USA
+```
+[p020_p0163]
+
+```text
+ART STUDIO BRICK INC                     900000000004419     AANDD 85th Street Artwork                                                                            Open        Other                                            Authority Contract - Competitive Bid       8/31/2023    8/31/2023    Y   8/30/2025    100000.00     3000.00      3000.00       97000.00      171   NYS       N   N   0    N                                            28 PARK PLACE, #1                                                    BROOKLYN           NY   11217                 USA
+```
+[p020_p0164]
+
+```text
+TALOGY LLC                               900000000004420     Promotion Exams for PD                                                                               Open        Consulting Services                              Authority Contract - Competitive Bid       6/1/2021     7/1/2023     Y   6/30/2024    91716.64      70948.83     70948.83      20767.81      3     Foreign   N   N   0    N                                            611 N BRAND BLVD, 10TH FL                                            GLENDALE           CA   91203                 USA
+```
+[p020_p0165]
+
+```text
+PELHAM CW CORP.                          900000000004421     TWO YEAR CAR WASH CONTRACT                                                                           Open        Other Professional Services                      Authority Contract - Competitive Bid       8/1/2023     8/1/2023     Y   7/31/2025    16344.00      6309.00      6309.00       10035.00      2     NYS       N   N   0    Y   Below Dollar Threshold                   4391 BOSTON POST RD                                                  PELHAM MANOR       NY   10803                 USA
+```
+[p020_p0166]
+
+```text
+KATHLEEN MCCARTHY                        900000000004422     AANDD Woodhaven Blvd Artwork                                                                         Open        Other                                            Authority Contract - Non-Competitive Bid   8/16/2023    8/16/2023    Y   8/15/2025    125000.00     4500.00      4500.00       120500.00     1     NYS       N   N   0    Y   Sole Source                 125000.00    37 GREENE STREET                                                     NEW YORK           NY   10018                 USA
+```
+[p020_p0167]
+
+```text
+EPAUL DYNAMICS                           900000000004423     Easy Popup Camera                                                                                    Open        Commodities/Supplies                             Authority Contract - Competitive Bid       8/3/2023     8/3/2023     Y   8/3/2024     29430.00      0.00         0.00          29430.00      3     NYS       Y   Y   2    N                                            16 SINTSINK DRIVE EAST                                               PORT WASHINGTON    NY   11050                 USA
+```
+[p020_p0168]
+
+```text
+BRITE COMPUTERS                          900000000004424     Mobile Data Terminals                                                                                Open        Commodities/Supplies                             Authority Contract - Competitive Bid       8/7/2023     8/7/2023     Y   8/31/2028    723314.70     0.00         0.00          723314.70     2     NYS       N   N   0    Y   Below Dollar Threshold                   7647 MAIN ST FISHERS                                                 VICTOR             NY   14564                 USA
+```
+[p020_p0169]
+
+```text
+CDW GOVERNMENT LLC                       900000000004425     PROTECT Servers - GCM                                                                                Open        Technology - Hardware                            Purchased Under State Contract                                                                      80264.90                                       Foreign   N                                                         300 N. MILWAUKEE AVENUE                                              VERNON HILLS       IL   60061                 USA
+```
+[p020_p0170]
+
+```text
+CONVERGE TECHNOLOGY SOLUTIONS US LLC     900000000004426     Cisco Equipment w 5yrs support                                                                       Open        Telecommunication Equipment or Services          Purchased Under State Contract                                                                      0.00                                           NYS       N                                                         PO BOX 23623                                                         NEW YORK           NY   10087     3623        USA
+```
+[p020_p0171]
+
+```text
+DATAWORKS PLUS LLC                       900000000004427     FingerPrint Scan AND 5 Yr. Maint                                                                     Open        Commodities/Supplies                             Authority Contract - Competitive Bid       8/7/2023     8/9/2023     Y   8/6/2028     196000.00     196000.00    196000.00     0.00          1     Foreign   N   N   0    N                                            728 N PLEASANTBURG DR                                                GREENVILLE         SC   29607                 USA
+```
+[p020_p0172]
+
+```text
+CARLOS W ENCARNACION VAZQUEZ             900000000004428     AANDD Hunts Point Artwork                                                                            Open        Other                                            Authority Contract - Competitive Bid       8/10/2023    9/29/2023    Y   9/28/2028    800000.00     10000.00     10000.00      790000.00     282   NYS       N   N   0    N                                            655 E 223RD ST, APT#C                                                BRONX              NY   10466                 USA
+```
+[p020_p0173]
+
+```text
+USAT LLC                                 900000000004429     3 Years CradlePoint maintenance and support of the IBR200 and IBR600c Cellular Modems                Open        Commodities/Supplies                             Purchased Under State Contract                                                                      59156.09                                       Foreign   N                                                         605 EASTOWNE DR                                                      CHAPEL HILL        NC   27514                 USA
+```
+[p020_p0174]
+
+```text
+USAT LLC                                 900000000004431     1 Year NetCloud subscription renewal thru 11 1 2024                                                  Open        Commodities/Supplies                             Purchased Under State Contract                                                                      189230.34                                      Foreign   N                                                         605 EASTOWNE DR                                                      CHAPEL HILL        NC   27514                 USA
+```
+[p020_p0175]
+
+```text
+MAIA PALILEO                             900000000004432     AANDD Cypress Hills Artwork                                                                          Open        Other                                            Authority Contract - Competitive Bid       8/18/2023    8/18/2023    Y   8/17/2025    175000.00     0.00         0.00          175000.00     171   NYS       N   N   0    N                                            231 OCEAN AVE. #5F                                                   BROOKLYN           NY   11225                 USA
+```
+[p020_p0176]
+
+```text
+FBI-LEEDA INC                            900000000004433     Executive Leadership Institute                                                                       Open        Other Professional Services                      Authority Contract - Non-Competitive Bid   6/1/2023     6/1/2023     Y   9/30/2023    33390.00      33390.00     33390.00      0.00          1     Foreign   N   N   0    Y   Below Dollar Threshold      33390.00     5 GREAT VALLEY PKWY                   STE 359                        MALVERN            PA   19355                 USA
+```
+[p020_p0177]
+
+```text
+CONVERGE TECHNOLOGY SOLUTIONS US LLC     900000000004434     5 Yrs Cisco DNA Licensing                                                                            Open        Telecommunication Equipment or Services          Purchased Under State Contract                                                                      49237.65                                       NYS       N                                                         PO BOX 23623                                                         NEW YORK           NY   10087     3623        USA
+```
+[p020_p0178]
+
+```text
+THUNDERCAT TECHNOLOGY LLC                900000000004436     UKG Kronos Contract Extension                                                                        Open        Commodities/Supplies                             Authority Contract - Competitive Bid       8/23/2023    9/1/2023     Y   8/31/2028    32896210.00   5414148.00   5414148.00    27482062.00   3     Foreign   N   N   0    N                                            1925 ISAAC NEWTON SQUARE, STE 180                                    RESTON             VA   20190                 USA
+```
+[p020_p0179]
+
+```text
+WEBHOUSE INC.                            900000000004438     NetApp Cloud Insights Renewal                                                                        Open        Technology - Software                            Purchased Under State Contract                                                                      278309.28                                      NYS       N                                                         2365 MILBURN AVE                      BLDG 2                         BALDWIN            NY   11510                 USA
+```
+[p020_p0180]
+
+```text
+NTT DATA AMERICAS INC                    900000000004440     Mercury Support Renewal 5 years Paid annual basis                                                    Open        Commodities/Supplies                             Authority Contract - Competitive Bid       8/30/2023    11/1/2023    Y   10/31/2028   6471370.00    0.00         0.00          6471370.00    2     Foreign   N   N   0    N                                            7950 LEGACY DR, STE# 1100                                            PLANO              TX   75024                 USA
+```
+[p020_p0181]
+
+```text
+CELLGAIN WIRELESS                        900000000004442     handheld radios AND accessories                                                                      Open        Telecommunication Equipment or Services          Purchased Under State Contract                                                                      0.00                                           Foreign   N                                                         68 WHITE ST                           STE 265                        RED BANK           NJ   07701                 USA
+```
+[p020_p0182]
+
+```text
+PORT STAINED GLASS                       900000000004445     AANDD Art Restoration                                                                                Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       9/5/2023     9/5/2023     Y   2/29/2024    38900.00      38900.00     38900.00      0.00          2     NYS       N   N   0    Y   Below Dollar Threshold                   29 HAVEN AVE                                                         PORT WASHINGTON    NY   11050                 USA
+```
+[p020_p0183]
+
+```text
+PHIRE, INC.                              900000000004446     IT 2023 Phire MR                                                                                     Open        Technology - Software                            Authority Contract - Non-Competitive Bid   9/5/2023     9/5/2023     Y   9/14/2024    17745.00      17745.00     17745.00      0.00          1     Foreign   N   N   0    Y   Sole Source                 17745.00     8370 GREENSBORO DRIVE STE 812                                        MCLEAN             VA   22102                 USA
+```
+[p020_p0184]
+
+```text
+ADVANCED VISUAL SYSTEMS INC              900000000004448     Advanced Visual Systems AVS                                                                          Open        Technology - Software                            Authority Contract - Non-Competitive Bid   9/8/2023     9/8/2023     Y   9/9/2024     29400.00      29400.00     29400.00      0.00          0     Foreign   N   N   0    N                               29400.00     2 BURLINGTON WOODS DR                 STE 100                        BURLINGTON         MA   01803                 USA
+```
+[p020_p0185]
+
+```text
+SOURCE OF FUTURE TECHNOLOGY INC.         900000000004449     Replacement Consultant - Sayed                                                                       Open        Consulting Services                              Authority Contract - Competitive Bid       9/11/2023    9/11/2023    Y   3/17/2024    37288.00      22803.50     22803.50      14484.50      5     NYS       Y   Y   5    Y   Discretionary Procurement                161 AVE OF THE AMERICAS               SUITE 904                      NEW YORK           NY   10013                 USA
+```
+[p020_p0186]
+
+```text
+SHI INTERNATIONAL CORP                   900000000004450     SaaS Subscription and Support                                                                        Open        Technology - Software                            Purchased Under State Contract                                                                      874184.94                                      Foreign   N                                                         P.O. BOX 8500-41155                                                  PHILADELPHIA       PA   19178                 USA
+```
+[p020_p0187]
+
+```text
+G-NET SOLUTIONS INC                      900000000004451     ITCommand Center Support                                                                             Open        Technology - Software                            Authority Contract - Competitive Bid       9/8/2023     7/1/2023     Y   6/30/2025    57209.82      0.00         0.00          57209.82      1     NYS       N   N   0    Y   Below Dollar Threshold                   110 COOPER ST. #364                                                  BABYLON            NY   11702                 USA
+```
+[p020_p0188]
+
+```text
+EMERGENCY RESPONDER PRODUCTS, LLC        900000000004452     POLICE UNIFORMS                                                                                      Open        Commodities/Supplies                             Authority Contract - Competitive Bid       9/12/2023    9/12/2023    Y   12/31/2023   600000.00     0.00         0.00          600000.00     5     NYS       N   Y   1    Y   Below Dollar Threshold                   260 SPAGNOLI ROAD                     2 FLR                          MELVILLE           NY   11747                 USA
+```
+[p020_p0189]
+
+```text
+CUMMINS SALES AND SERVICE                900000000004454     Cummins Insite Lite and Pro software renewal                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       9/15/2023    9/15/2023    Y   9/30/2024    119110.00     45940.00     45940.00      73170.00      2     Foreign   N   Y   1    Y   Below Dollar Threshold                   435 BERGEN AVE                                                       KEARNY             NJ   07032                 USA
+```
+[p020_p0190]
+
+```text
+INSIGHT PUBLIC SECTOR INC.               900000000004455     350 Absolute Data Subscription                                                                       Open        Technology - Software                            Purchased Under State Contract                                                                      17409.00                                       Foreign   N                                                         P.O. BOX 713096                                                      COLUMBUS           OH   43271     3096        USA
+```
+[p020_p0191]
+
+```text
+IIT INC                                  900000000004456     Procurement Consultant                                                                               Open        Consulting Services                              Authority Contract - Competitive Bid       10/16/2023   10/16/2023   Y   10/15/2024   107696.00     6343.43      6343.43       101352.57     6     NYS       Y   Y   6    Y   Below Dollar Threshold                   7 SUMMERWIND DRIVE                                                   GLEN HEAD          NY   11545                 USA
+```
+[p020_p0192]
+
+```text
+CLUTCH SOLUTIONS LLC                     900000000004459     Trellix Mobile License Renewal                                                                       Open        Technology - Software                            Authority Contract - Competitive Bid       9/26/2023    8/25/2023    Y   8/24/2024    127140.00     127140.00    127140.00     0.00          3     Foreign   N   Y   2    Y   Below Dollar Threshold                   2152 S VINEYARD AVE. BLD. 1 STE 102                                  MESA               AZ   85210                 USA
+```
+[p020_p0193]
+
+```text
+TOOLWATCH CORP                           900000000004462     ToolWatch Essentials Enterpris                                                                       Open        Commodities/Supplies                             Authority Contract - Competitive Bid       9/1/2023     9/1/2023     Y   8/31/2024    25379.00      0.00         0.00          25379.00      2     Foreign   N   N   0    N                                            10303 E DRY CREEK RD                  SUITE 250                      ENGLEWOOD          CO   80112                 USA
+```
+[p020_p0194]
+
+```text
+COMPULINK TECHNOLOGIES, INC.             900000000004465     mounting equipment for IW6300                                                                        Open        Telecommunication Equipment or Services          Authority Contract - Competitive Bid       10/4/2023    10/4/2023    Y   12/29/2023   116966.25     35968.75     35968.75      80997.50      9     NYS       Y   Y   9    Y   Discretionary Procurement                260 WEST 39TH ST                      STE 302                        NEW YORK           NY   10018                 USA
+```
+[p020_p0195]
+
+```text
+SENTRY MANAGEMENT SOLUTIONS              900000000004467     One Year Homeless Transport an                                                                       Open        Other Professional Services                      Authority Contract - Competitive Bid       10/5/2023    11/1/2023    Y   10/31/2024   445158.00     0.00         0.00          445158.00     1     NYS       Y   Y   1    N                                            1401 WEBSTER AVE, 2ND FL                                             BRONX              NY   10456                 USA
+```
+[p020_p0196]
+
+```text
+CLUTCH SOLUTIONS LLC                     900000000004469     VirusTotal Subscription Annual Renewal 10 1 2023 - 9 30 2024                                         Open        Technology - Software                            Authority Contract - Competitive Bid       10/6/2023    10/1/2023    Y   9/30/2024    50103.09      50103.09     50103.09      0.00          1     Foreign   N   N   0    N                                            2152 S VINEYARD AVE. BLD. 1 STE 102                                  MESA               AZ   85210                 USA
+```
+[p020_p0197]
+
+```text
+ERNST AND YOUNG U.S. LLP                 900000000004470     IT Job Architecture Developmen                                                                       Open        Consulting Services                              Authority Contract - Competitive Bid       10/9/2023    10/6/2023    Y   10/10/2024   1222078.64    0.00         0.00          1222078.64    6     Foreign   N   N   0    Y   Below Dollar Threshold                   200 PLAZA DR.                                                        SECAUCUS           NJ   094                   USA
+```
+[p020_p0198]
+
+```text
+COMPULINK TECHNOLOGIES, INC.             900000000004471     upgrade the ANSYS MECHANICAL PROFESSIONAL software                                                   Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/9/2023    8/31/2023    Y   8/31/2026    40944.63      0.00         0.00          40944.63      2     NYS       Y   Y   1    N                                            260 WEST 39TH ST                      STE 302                        NEW YORK           NY   10018                 USA
+```
+[p020_p0199]
+
+```text
+PIVOTAL RESOURCES INC                    900000000004472     Lean Six Sigma 3 year contract                                                                       Open        Other Professional Services                      Authority Contract - Competitive Bid       10/9/2023    10/9/2023    Y   12/31/2026   128271.00     0.00         0.00          128271.00     2     Foreign   N   Y   2    N                                            1646 N CALIFORNIA BLVD                STE 520                        WALNUT CREEK       CA   94596                 USA
+```
+[p020_p0200]
+
+```text
+ACI WORLDWIDE CORP.                      900000000004474     Base 24 Software Lic, Maint                                                                          Open        Technology - Software                            Authority Contract - Non-Competitive Bid   10/13/2023   10/13/2023   Y   10/3/2028    3396414.00    1094687.00   1094687.00    2301727.00    1     Foreign   N   N   0    Y   Sole Source                 3396414.00   16 CLIFF TRAIL                                                       KINNELON           NJ   07405                 USA
+```
+[p020_p0201]
+
+```text
+COMPULINK TECHNOLOGIES, INC.             900000000004475     purchase and renewal 2023-24 of Digicert certificates for one year                                   Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/16/2023   4/27/2023    Y   4/26/2024    27783.10      15283.10     15283.10      12500.00      1     NYS       Y   Y   1    N                                            260 WEST 39TH ST                      STE 302                        NEW YORK           NY   10018                 USA
+```
+[p020_p0202]
+
+```text
+CARAHSOFT TECHNOLOGY CORP                900000000004476     Akamai                                                                                               Open        Technology - Software                            Authority Contract - Competitive Bid       10/18/2023   10/18/2023   Y   9/30/2024    711948.00     59329.00     59329.00      652619.00     4     Foreign   N   N   0    Y   Below Dollar Threshold                   11493 SUNSET HILLS ROAD               SUITE 100                      RESTON             VA   20190                 USA
+```
+[p020_p0203]
+
+```text
+PROTEK INFORMATION TECHNOLOGY SVS LLC    900000000004477     IdentityIQ SW                                                                                        Open        Technology - Software                            Authority Contract - Competitive Bid       10/20/2023   10/20/2023   Y   5/26/2024    55964.63      55964.63     55964.63      0.00          1     NYS       Y   Y   1    Y   Below Dollar Threshold                   492 MITCHELL DR                                                      VALLEY COTTAGE     NY   10989                 USA
+```
+[p020_p0204]
+
+```text
+PIVOTEL SOLUTIONS INC                    900000000004480     Iridium 9555 Satellite Phone                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/25/2023   10/23/2023   Y   10/24/2024   100684.00     0.00         0.00          100684.00     0     Foreign   N   N   0    N                                            2 OAKWOOD BLVD, STE 200                                              HOLLYWOOD          FL   33020                 USA
+```
+[p020_p0205]
+
+```text
+HEWLETT PACKARD ENTERPRISE CO            900000000004481     2 yr HPE Maintenance Renewal                                                                         Open        Telecommunication Equipment or Services          Purchased Under State Contract                                                                      4931538.10                                     Foreign   N                                                         1701 E MOSSY OAKS ROAD                                               SPRING             TX   77389                 USA
+```
+[p020_p0206]
+
+```text
+DELL MARKETING LP                        900000000004484     DocAve Software 3 Year Contrac                                                                       Open        Technology - Software                            Authority Contract - Competitive Bid       11/1/2023    9/30/2023    Y   9/29/2026    1033050.00    0.00         0.00          1033050.00    7     Foreign   N   Y   3    N                                            580 ASBURY DR                                                        BUFFALO GROVE      IL   60089                 USA
+```
+[p020_p0207]
+
+```text
+PROTEK INFORMATION TECHNOLOGY SVS LLC    900000000004486     ITForescout Maint Renewal                                                                            Open        Technology - Software                            Authority Contract - Competitive Bid       11/2/2023    11/2/2023    Y   11/4/2024    497532.94     497532.94    497532.94     0.00          2     NYS       Y   Y   2    Y   Below Dollar Threshold                   492 MITCHELL DR                                                      VALLEY COTTAGE     NY   10989                 USA
+```
+### [p020_p0208] COMPULINK T
+
+## Page 21
+
+> [p021_c0001] A blank sheet of graph paper with a grid pattern.
+
+## Page 22
+
+> [p022_c0001] A blank sheet of graph paper. The background is a light gray color. Overlaid on this background is a grid of thin, dark gray lines. The grid consists of horizontal and vertical lines that intersect to form a pattern of small, equal-sized squares. The lines are straight and evenly spaced, creating a consistent texture across the entire page. There are no margins, text, or other markings on the paper.
+
+## Page 23
+
+> [p023_c0001] A full-page view of a blank sheet of graph paper. The paper is covered with a uniform grid of small, light gray squares. The grid is composed of thin, dark gray lines that intersect to form the squares. The background color is a very light gray. There are no margins, text, or any other markings on the page.
+
+## Page 24
+
+> [p024_c0001] A blank sheet of graph paper with a uniform grid pattern. The grid consists of small, equal-sized squares formed by thin, light gray lines. The background is white. The grid covers the entire page, with no margins or text.
+
+## Page 25
+
+> [p025_c0001] A full-page view of a blank sheet of graph paper. The paper is covered with a uniform grid of small, light gray squares. The grid is composed of thin, dark gray lines that intersect to form the squares. The background color is a very light gray. There are no margins, text, or any other markings on the page.
+
+## Page 26
+
+> [p026_c0001] A blank sheet of graph paper with a uniform grid pattern. The grid consists of small, equal-sized squares formed by thin, light gray lines. The background is white. The grid covers the entire page, with no margins or text.
+
+## Page 27
+
+> [p027_c0001] A blank sheet of graph paper. The background is a light gray color. Overlaid on this background is a grid of thin, dark gray lines. The grid consists of horizontal and vertical lines that intersect to form a pattern of small, equal-sized squares. The lines are straight and evenly spaced, creating a consistent texture across the entire page. There are no margins, text, or other markings on the paper.
+
+## Page 28
+
+> [p028_c0001] A blank sheet of graph paper with a grid pattern.
+
+## Page 29
+
+[p029_c0001] A blank sheet of graph paper with a uniform grid pattern. The grid consists of small, equal-sized squares formed by thin, light gray lines. The background is white. The grid covers the entire page, with no margins or text.
+[p029_p0001]
+
+```text
+MERSEN USA PTT CORP                       Multiple PO's - NYCTA   Various Items                                                                                  Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                              28125.00                                         Foreign   N                                                         400 MYRTLE AVE                                              BOONTON           NJ   07005                    USA
+```
+[p029_p0002]
+
+```text
+MERSEN USA PTT CORP                       600000000027236         Sub Ground Brush 12-68-2605                                                                    Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/18/2020   11/18/2020   Y   2/17/2023    118800.00      0.00          118404.00      396.00         2    Foreign   N   Y   0    Y   Below Dollar Threshold                   400 MYRTLE AVE                                              BOONTON           NJ   07005                    USA
+```
+[p029_p0003]
+
+```text
+METALOCAUCHO SL                           600000000028025         SUB RUBBER RADIUS ARM BUSHING                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       5/6/2021     5/6/2021     Y   8/4/2023     622840.00      258704.00     589904.00      32936.00       3    Foreign   N   Y   0    Y   Below Dollar Threshold                   DBA METALOCAUCHO MTC                POLIGONO ERRATZU 253    URNIETA                20130                    OTHER   ESP
+```
+[p029_p0004]
+
+```text
+METALOCAUCHO SL                           600000000032363         Sub, Radius Arm Rubber Bushing                                                                 Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/10/2023    8/10/2023    Y   11/9/2024    211600.00      0.00          0.00           211600.00      3    Foreign   N   Y   0    Y   Below Dollar Threshold                   DBA METALOCAUCHO MTC                POLIGONO ERRATZU 253    URNIETA                20130                    OTHER   ESP
+```
+[p029_p0005]
+
+```text
+METALOCAUCHO SL                           600000000030423         SUB BLOCK HOLDER                                                                               Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/5/2022     8/5/2022     Y   11/4/2024    240000.00      56000.00      56000.00       184000.00      4    Foreign   N   Y   0    Y   Below Dollar Threshold                   DBA METALOCAUCHO MTC                POLIGONO ERRATZU 253    URNIETA                20130                    OTHER   ESP
+```
+[p029_p0006]
+
+```text
+METRO ENVIRONMENTAL SERVICES LLC          600000000031920         Service Maintenance, Install AND Repair of Chemical Petroleum Product Dispensing Equipment     Open        Other Professional Services           Authority Contract - Competitive Bid       5/24/2023    5/28/2023    Y   5/27/2027    1424305.00     0.00          0.00           1424305.00     5    NYS       N   Y   0    N                                            208 Route 109, Ste 106                                      Farmingdale       NY   11735                    USA
+```
+[p029_p0007]
+
+```text
+METRO WIRE ROPE CORPORATION               600000000031983         DCE ROPE                                                                                       Open        Commodities/Supplies                  Authority Contract - Competitive Bid       6/2/2023     6/2/2023     Y   6/1/2024     26077.28       26077.28      26077.28       0.00           2    Foreign   N   Y   1    Y   Below Dollar Threshold                   553 LEHIGH AVE                                              UNION             NJ   07083                    USA
+```
+[p029_p0008]
+
+```text
+METRO WIRE ROPE CORPORATION               Multiple PO's - NYCTA   Various Items                                                                                  Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                              22373.52                                         Foreign   N                                                         553 LEHIGH AVE                                              UNION             NJ   07083                    USA
+```
+[p029_p0009]
+
+```text
+MGCOM INC                                 600000000032184         EANDE EL601 602 Rope Rollers                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       7/14/2023    7/14/2023    Y   7/15/2023    56210.00       0.00          0.00           56210.00       1    Foreign   N   Y   0    Y   Below Dollar Threshold                   22 HILLCREST DRIVE                                          WEAVERVILLE       NC   28787                    USA
+```
+[p029_p0010]
+
+```text
+MGCOM INC                                 600000000032727         Sub Transceiver 08-42-5870                                                                     Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/11/2023   10/11/2023   Y   10/13/2023   78750.00       0.00          0.00           78750.00       1    Foreign   N   Y   0    Y   Below Dollar Threshold                   22 HILLCREST DRIVE                                          WEAVERVILLE       NC   28787                    USA
+```
+[p029_p0011]
+
+```text
+MGCOM INC                                 600000000030875         INF Drain Covers                                                                               Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/8/2022    11/8/2022    Y   11/9/2022    56184.00       55434.88      55434.88       749.12         4    Foreign   N   Y   0    Y   Below Dollar Threshold                   22 HILLCREST DRIVE                                          WEAVERVILLE       NC   28787                    USA
+```
+[p029_p0012]
+
+```text
+MGCOM INC                                 600000000031345         MOW Motor with Gear Drive                                                                      Open        Commodities/Supplies                  Authority Contract - Competitive Bid       2/9/2023     2/9/2023     Y   2/10/2023    15798.00       15798.00      15798.00       0.00           4    Foreign   N   Y   1    Y   Below Dollar Threshold                   22 HILLCREST DRIVE                                          WEAVERVILLE       NC   28787                    USA
+```
+[p029_p0013]
+
+```text
+MGCOM INC                                 600000000032050         EANDE BEARING OTB                                                                              Open        Commodities/Supplies                  Authority Contract - Competitive Bid       6/16/2023    6/16/2023    Y   6/22/2023    21840.00       21840.00      21840.00       0.00           2    Foreign   N   N   0    Y   Below Dollar Threshold                   22 HILLCREST DRIVE                                          WEAVERVILLE       NC   28787                    USA
+```
+[p029_p0014]
+
+```text
+MGCOM INC                                 600000000032164         EMD FILTER, POWER PLANT, 6.25                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       7/11/2023    7/11/2023    Y   7/31/2023    45684.00       32148.00      32148.00       13536.00       4    Foreign   N   Y   3    Y   Below Dollar Threshold                   22 HILLCREST DRIVE                                          WEAVERVILLE       NC   28787                    USA
+```
+[p029_p0015]
+
+```text
+MGCOM INC                                 600000000032294         EANDE Service Brake 04-13-3143                                                                 Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/2/2023     8/1/2023     Y   8/2/2023     16680.80       0.00          0.00           16680.80       2    Foreign   N   Y   1    Y   Below Dollar Threshold                   22 HILLCREST DRIVE                                          WEAVERVILLE       NC   28787                    USA
+```
+[p029_p0016]
+
+```text
+MGCOM INC                                 600000000032341         EANDE Motor Starter 04-56-0517                                                                 Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/7/2023     8/7/2023     Y   8/6/2024     70714.80       18857.28      18857.28       51857.52       3    Foreign   N   Y   1    Y   Below Dollar Threshold                   22 HILLCREST DRIVE                                          WEAVERVILLE       NC   28787                    USA
+```
+[p029_p0017]
+
+```text
+MGCOM INC                                 600000000032351         EANDE Gearbox 04-29-2730                                                                       Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/8/2023     8/8/2023     Y   8/21/2023    42919.68       0.00          0.00           42919.68       2    Foreign   N   Y   1    Y   Below Dollar Threshold                   22 HILLCREST DRIVE                                          WEAVERVILLE       NC   28787                    USA
+```
+[p029_p0018]
+
+```text
+MGCOM INC                                 600000000032627         Sub Transducer 08-62-0006                                                                      Open        Commodities/Supplies                  Authority Contract - Competitive Bid       9/22/2023    9/22/2023    Y   9/29/2023    73625.00       16625.00      16625.00       57000.00       2    Foreign   N   Y   0    Y   Below Dollar Threshold                   22 HILLCREST DRIVE                                          WEAVERVILLE       NC   28787                    USA
+```
+[p029_p0019]
+
+```text
+MGCOM INC                                 600000000032757         Sig Compressor Condensate Cle                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/16/2023   10/16/2023   Y   10/17/2023   21490.66       0.00          0.00           21490.66       2    Foreign   N   Y   0    Y   Below Dollar Threshold                   22 HILLCREST DRIVE                                          WEAVERVILLE       NC   28787                    USA
+```
+[p029_p0020]
+
+```text
+MGCOM INC                                 600000000033029         MOW VF Display                                                                                 Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/28/2023   11/28/2023   Y   11/29/2023   16824.80       0.00          0.00           16824.80       3    Foreign   N   Y   1    Y   Below Dollar Threshold                   22 HILLCREST DRIVE                                          WEAVERVILLE       NC   28787                    USA
+```
+[p029_p0021]
+
+```text
+MGCOM INC                                 600000000033058         EANDE SKF TKSA 71 PRO Laser Sha                                                                Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/1/2023    12/1/2023    Y   12/4/2023    29990.00       0.00          0.00           29990.00       2    Foreign   N   Y   0    Y   Below Dollar Threshold                   22 HILLCREST DRIVE                                          WEAVERVILLE       NC   28787                    USA
+```
+[p029_p0022]
+
+```text
+MGCOM INC                                 600000000033125         MOW Motor, with Gear Drive                                                                     Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/12/2023   12/12/2023   Y   12/13/2023   21064.00       0.00          0.00           21064.00       2    Foreign   N   Y   1    Y   Below Dollar Threshold                   22 HILLCREST DRIVE                                          WEAVERVILLE       NC   28787                    USA
+```
+[p029_p0023]
+
+```text
+MGCOM INC                                 Multiple PO's - NYCTA   Various Items                                                                                  Completed   Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                              825751.97                                        Foreign   N                                                         22 HILLCREST DRIVE                                          WEAVERVILLE       NC   28787                    USA
+```
+[p029_p0024]
+
+```text
+MICROELETTRICA - USA LLC                  600000000030482         Sub Complete Arc Chute, 08-42                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/18/2022    8/18/2022    Y   11/17/2024   59400.00       29700.00      29700.00       29700.00       1    Foreign   N   Y   0    Y   Below Dollar Threshold                   4 MIDDLEBURY BOULEVARD              UNIT 12                 RANDOLPH          NJ   07869                    USA
+```
+[p029_p0025]
+
+```text
+MICROELETTRICA - USA LLC                  600000000026946         Auxiliary Contact 08-60-0382                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       9/25/2020    9/25/2020    Y   11/30/2022   126750.00      14625.00      117000.00      9750.00        1    Foreign   N   Y   0    Y   Below Dollar Threshold                   4 MIDDLEBURY BOULEVARD              UNIT 12                 RANDOLPH          NJ   07869                    USA
+```
+[p029_p0026]
+
+```text
+MICROELETTRICA - USA LLC                  600000000027113         Mobile Pole 08-42-7356                                                                         Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/27/2020   10/27/2020   Y   11/8/2022    178220.00      31920.00      178220.00      0.00           1    Foreign   N   Y   0    Y   Below Dollar Threshold                   4 MIDDLEBURY BOULEVARD              UNIT 12                 RANDOLPH          NJ   07869                    USA
+```
+[p029_p0027]
+
+```text
+MICROELETTRICA - USA LLC                  600000000027294         Contact Tips Kit 08-42-7641                                                                    Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/2/2020    12/2/2020    Y   3/2/2023     244200.00      25530.00      105450.00      138750.00      2    Foreign   N   Y   0    Y   Below Dollar Threshold                   4 MIDDLEBURY BOULEVARD              UNIT 12                 RANDOLPH          NJ   07869                    USA
+```
+[p029_p0028]
+
+```text
+MICROELETTRICA - USA LLC                  600000000028784         Mobile Contacts 09-60-0039                                                                     Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/7/2021    10/7/2021    Y   1/8/2024     732600.00      203500.00     366300.00      366300.00      2    Foreign   N   N   0    Y   Below Dollar Threshold                   4 MIDDLEBURY BOULEVARD              UNIT 12                 RANDOLPH          NJ   07869                    USA
+```
+[p029_p0029]
+
+```text
+MICROELETTRICA - USA LLC                  600000000029462         Complete Pole 08-42-7667                                                                       Open        Commodities/Supplies                  Authority Contract - Competitive Bid       2/14/2022    2/14/2022    Y   5/14/2024    399000.00      101745.00     201495.00      197505.00      1    Foreign   N   Y   0    Y   Below Dollar Threshold                   4 MIDDLEBURY BOULEVARD              UNIT 12                 RANDOLPH          NJ   07869                    USA
+```
+[p029_p0030]
+
+```text
+MICROELETTRICA - USA LLC                  600000000030721         Sub Auxilary, Contact 09-60-0                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/10/2022   10/10/2022   Y   1/9/2025     34750.00       13900.00      13900.00       20850.00       1    Foreign   N   Y   0    Y   Below Dollar Threshold                   4 MIDDLEBURY BOULEVARD              UNIT 12                 RANDOLPH          NJ   07869                    USA
+```
+[p029_p0031]
+
+```text
+MICROELETTRICA - USA LLC                  600000000031225         Sub Contact Tips 08-42-7641                                                                    Open        Commodities/Supplies                  Authority Contract - Competitive Bid       1/20/2023    1/20/2023    Y   4/19/2025    155400.00      16650.00      16650.00       138750.00      0    Foreign   N   Y   0    Y   Below Dollar Threshold                   4 MIDDLEBURY BOULEVARD              UNIT 12                 RANDOLPH          NJ   07869                    USA
+```
+[p029_p0032]
+
+```text
+MICROELETTRICA - USA LLC                  600000000031530         Sub Brake Resistor                                                                             Open        Commodities/Supplies                  Authority Contract - Competitive Bid       3/13/2023    3/13/2023    Y   3/15/2023    94380.00       47190.00      47190.00       47190.00       1    Foreign   N   Y   0    Y   Below Dollar Threshold                   4 MIDDLEBURY BOULEVARD              UNIT 12                 RANDOLPH          NJ   07869                    USA
+```
+[p029_p0033]
+
+```text
+MICROELETTRICA - USA LLC                  Multiple PO's - NYCTA   Various Items                                                                                  Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                              58741.10                                         Foreign   N                                                         4 MIDDLEBURY BOULEVARD              UNIT 12                 RANDOLPH          NJ   07869                    USA
+```
+[p029_p0034]
+
+```text
+MICROELETTRICA - USA LLC                  600000000030899         Sub Auxiliary Block 08-60-038                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/16/2022   11/16/2022   Y   2/15/2025    120750.00      51750.00      51750.00       69000.00       1    Foreign   N   Y   0    Y   Below Dollar Threshold                   4 MIDDLEBURY BOULEVARD              UNIT 12                 RANDOLPH          NJ   07869                    USA
+```
+[p029_p0035]
+
+```text
+MICROELETTRICA - USA LLC                  600000000032980         sub propulsion contacts 08-42                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/17/2023   11/17/2023   Y   2/16/2025    130000.00      0.00          0.00           130000.00      1    Foreign   N   Y   0    Y   Below Dollar Threshold                   4 MIDDLEBURY BOULEVARD              UNIT 12                 RANDOLPH          NJ   07869                    USA
+```
+[p029_p0036]
+
+```text
+MICROELETTRICA - USA LLC                  600000000031975         Sub Contact, 09-79-0012                                                                        Open        Commodities/Supplies                  Authority Contract - Competitive Bid       6/2/2023     6/2/2023     Y   6/5/2023     133200.00      133200.00     133200.00      0.00           1    Foreign   N   Y   0    Y   Below Dollar Threshold                   4 MIDDLEBURY BOULEVARD              UNIT 12                 RANDOLPH          NJ   07869                    USA
+```
+[p029_p0037]
+
+```text
+MICROELETTRICA - USA LLC                  600000000028669         Alstom Contacts 08-42-5106                                                                     Open        Commodities/Supplies                  Authority Contract - Competitive Bid       9/21/2021    9/21/2021    Y   12/21/2023   234000.00      126620.00     227370.00      6630.00        1    Foreign   N   Y   0    Y   Below Dollar Threshold                   4 MIDDLEBURY BOULEVARD              UNIT 12                 RANDOLPH          NJ   07869                    USA
+```
+[p029_p0038]
+
+```text
+MITSUBISHI ELECTRIC POWER PRODUCTS INC    600000000026957         Sub Evap Blower Motor                                                                          Open        Commodities/Supplies                  Authority Contract - Competitive Bid       9/28/2020    9/28/2020    Y   12/28/2021   308087.50      28168.00      91546.00       216541.50      2    Foreign   N   Y   0    Y   Below Dollar Threshold                   530 KEYSTONE DRIVE                                          WARRENDALE        PA   15086                    USA
+```
+[p029_p0039]
+
+```text
+MITSUBISHI ELECTRIC POWER PRODUCTS INC    600000000027639         Sub Angle Valve                                                                                Open        Commodities/Supplies                  Authority Contract - Competitive Bid       2/25/2021    2/25/2021    Y   5/24/2022    33628.50       2491.00       2491.00        31137.50       1    Foreign   N   Y   0    Y   Below Dollar Threshold                   530 KEYSTONE DRIVE                                          WARRENDALE        PA   15086                    USA
+```
+[p029_p0040]
+
+```text
+MITSUBISHI ELECTRIC POWER PRODUCTS INC    600000000028434         Service Overhaul of R160 HVAC                                                                  Open        Other                                 Authority Contract - Competitive Bid       7/22/2021    7/22/2021    Y   1/22/2030    19759611.12    3101660.32    6098003.16     13661607.96    4    Foreign   N   Y   0    N                                            530 KEYSTONE DRIVE                                          WARRENDALE        PA   15086                    USA
+```
+[p029_p0041]
+
+```text
+MITSUBISHI ELECTRIC POWER PRODUCTS INC    600000000028880         Sub Compressor                                                                                 Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/28/2021   10/28/2021   Y   12/17/2021   5223888.67     1909723.20    2387154.00     2836734.67     1    Foreign   N   Y   0    N                                            530 KEYSTONE DRIVE                                          WARRENDALE        PA   15086                    USA
+```
+[p029_p0042]
+
+```text
+MITSUBISHI ELECTRIC POWER PRODUCTS INC    600000000029015         Sub Impeller Wheel                                                                             Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/24/2021   11/29/2021   Y   2/28/2023    32592.00       23900.80      32592.00       0.00           1    Foreign   N   Y   0    Y   Below Dollar Threshold                   530 KEYSTONE DRIVE                                          WARRENDALE        PA   15086                    USA
+```
+[p029_p0043]
+
+```text
+MITSUBISHI ELECTRIC POWER PRODUCTS INC    Multiple PO's - NYCTA   Various Items                                                                                  Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                              58564.66                                         Foreign   N                                                         530 KEYSTONE DRIVE                                          WARRENDALE        PA   15086                    USA
+```
+[p029_p0044]
+
+```text
+MODERN ELEVATOR INSTALLATIONS INC         600000000027374         Maintenance, Repair and Inspection of Elevators at 8 Stations throughout NYC Transit system.   Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/31/2020   12/31/2020   Y   7/1/2038     8144593.00     17693.95      17693.95       8126899.05     5    NYS       N   Y   0    N                                            1441 BROADWAY                       3RD FL SUITE 3152       NEW YORK          NY   10018                    USA
+```
+[p029_p0045]
+
+```text
+MODERN ELEVATOR INSTALLATIONS INC         600000000029129         Maint. for Contract A37135                                                                     Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/16/2021   12/16/2021   Y   12/15/2036   9069985.00     4253.13       4253.13        9065731.87     2    NYS       N   N   0    N                                            1441 BROADWAY                       3RD FL SUITE 3152       NEW YORK          NY   10018                    USA
+```
+[p029_p0046]
+
+```text
+MODERN FACILITIES SERVICES, INC.          600000000026300         Subway Car Terminal Cleaning Disinfecting req 69669 -REQ 69670                                 Open        Other                                 Authority Contract - Competitive Bid       5/22/2020    5/22/2020    Y   12/31/2023   28830094.32    3332199.38    20610161.85    8219932.47     25   Foreign   N   Y   5    Y   Emergency or Critical Need               1500 COUNTY RD 517                  STE 300                 HACKETTSTOWN      NJ   07840                    USA
+```
+[p029_p0047]
+
+```text
+MODULAR PRODUCTION SYSTEMS LTD.           Multiple PO's - NYCTA   Various Items                                                                                  Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                              29310.00                                         Foreign   N                                                         UNIT 1A, VIKING INDUSTRIAL ESTATE                           BEDFORD                MK410LZ           BEDS   OTHER   GBR
+```
+[p029_p0048]
+
+```text
+MODULAR PRODUCTION SYSTEMS LTD.           600000000031636         EANDE STEP                                                                                     Open        Commodities/Supplies                  Authority Contract - Competitive Bid       3/28/2023    3/28/2023    Y   3/29/2023    149750.00      0.00          0.00           149750.00      2    Foreign   N   Y   0    Y   Below Dollar Threshold                   UNIT 1A, VIKING INDUSTRIAL ESTATE                           BEDFORD                MK410LZ           BEDS   OTHER   GBR
+```
+[p029_p0049]
+
+```text
+MOHAWK MFG AND SUPPLY CO.                 600000000022737         BUS Filter Secondary Fuel                                                                      Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/12/2018   12/12/2018   Y   3/11/2020    322740.00      35178.66      317791.32      4948.68        9    Foreign   N   Y   0    N                                            7200 N. OAK PARK AVE.                                       NILES             IL   60714                    USA
+```
+[p029_p0050]
+
+```text
+MOHAWK MFG AND SUPPLY CO.                 600000000028127         BUS Wiper Blade                                                                                Open        Commodities/Supplies                  Authority Contract - Competitive Bid       5/25/2021    5/25/2021    Y   8/24/2022    38270.00       14240.00      36935.00       1335.00        3    Foreign   N   Y   0    Y   Below Dollar Threshold                   7200 N. OAK PARK AVE.                                       NILES             IL   60714                    USA
+```
+[p029_p0051]
+
+```text
+MOHAWK MFG AND SUPPLY CO.                 600000000029054         Bus Brake Chamber Assy 15 M AP                                                                 Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/3/2021    12/3/2021    Y   3/3/2023     192900.00      0.00          141460.00      51440.00       4    Foreign   N   Y   0    Y   Below Dollar Threshold                   7200 N. OAK PARK AVE.                                       NILES             IL   60714                    USA
+```
+[p029_p0052]
+
+```text
+MOHAWK MFG AND SUPPLY CO.                 600000000029792         DOB BELT, V RIBBED, ALTERNATO                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       4/7/2022     4/7/2022     Y   7/6/2023     22312.50       0.00          4611.25        17701.25       4    Foreign   N   Y   1    Y   Below Dollar Threshold                   7200 N. OAK PARK AVE.                                       NILES             IL   60714                    USA
+```
+[p029_p0053]
+
+```text
+MOHAWK MFG AND SUPPLY CO.                 600000000031097         Bus Blade Assembly 26Inch 15 M AP                                                              Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/28/2022   12/28/2022   Y   3/28/2024    85200.00       57155.00      57155.00       28045.00       4    Foreign   N   Y   0    Y   Below Dollar Threshold                   7200 N. OAK PARK AVE.                                       NILES             IL   60714                    USA
+```
+[p029_p0054]
+
+```text
+MOHAWK MFG AND SUPPLY CO.                 600000000031098         Sub Filter Dryer Cartridge                                                                     Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/28/2022   12/28/2022   Y   12/27/2023   113650.00      113650.00     113650.00      0.00           1    Foreign   N   Y   0    Y   Below Dollar Threshold                   7200 N. OAK PARK AVE.                                       NILES             IL   60714                    USA
+```
+[p029_p0055]
+
+```text
+MOHAWK MFG AND SUPPLY CO.                 Multiple PO's - NYCTA   Various Items                                                                                  Completed   Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                              40736.50                                         Foreign   N                                                         7200 N. OAK PARK AVE.                                       NILES             IL   60714                    USA
+```
+[p029_p0056]
+
+```text
+MOLTEC INTERNATIONAL                      Multiple PO's - NYCTA   Various Items                                                                                  Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                              16213.14                                         Foreign   N                                                         DBA MOLTEC INTERNATIONAL            2-2699 BRISTOL CIRCLE   OAKVILLE               L6H6X5            ON     OTHER   CAN
+```
+[p029_p0057]
+
+```text
+MONDIAL AUTOMOTIVE, INC.                  600000000024279         DOB DPF Cleaning                                                                               Open        Other                                 Authority Contract - Competitive Bid       6/27/2019    6/28/2019    Y   6/30/2023    862446.75      163544.28     803414.09      59032.66       6    NYS       N   Y   0    N                                            P.O. BOX 560248                                             COLLEGE POINT     NY   11356      1422          USA
+```
+[p029_p0058]
+
+```text
+MONDIAL AUTOMOTIVE, INC.                  600000000025666         Service Rebuilding of Niehoff                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       2/7/2020     2/7/2020     Y   2/6/2023     395000.00      12640.00      291905.00      103095.00      2    NYS       N   Y   0    N                                            P.O. BOX 560248                                             COLLEGE POINT     NY   11356      1422          USA
+```
+[p029_p0059]
+
+```text
+MONDIAL AUTOMOTIVE, INC.                  600000000030461         BUS REGULATOR                                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/12/2022    8/12/2022    Y   11/11/2023   37638.00       12964.20      15055.20       22582.80       4    NYS       N   N   0    Y   Below Dollar Threshold                   P.O. BOX 560248                                             COLLEGE POINT     NY   11356      1422          USA
+```
+[p029_p0060]
+
+```text
+MONTANA DATACOM                           600000000029484         MWBE SDVOB Only PSLAN Pedesta                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       2/16/2022    2/16/2022    Y   5/15/2023    59840.64       6648.96       59840.64       0.00           4    NYS       Y   Y   4    Y   Discretionary Procurement                1723 STATE ROUTE 17A, BLDG 2                                FLORIDA           NY   10921      1066          USA
+```
+[p029_p0061]
+
+```text
+MONTANA DATACOM                           600000000030486         MWBE SDVOB Only TU Spec XHHW-                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/18/2022    8/18/2022    Y   9/1/2022     80465.66       80465.66      80465.66       0.00           7    NYS       Y   Y   7    Y   Discretionary Procurement                1723 STATE ROUTE 17A, BLDG 2                                FLORIDA           NY   10921      1066          USA
+```
+[p029_p0062]
+
+```text
+MONTANA DATACOM                           600000000030514         MWBE SDVOB Only TU Spec XHHW-                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/24/2022    8/24/2022    Y   9/1/2022     80956.44       66905.08      80956.44       0.00           7    NYS       Y   Y   7    Y   Discretionary Procurement                1723 STATE ROUTE 17A, BLDG 2                                FLORIDA           NY   10921      1066          USA
+```
+[p029_p0063]
+
+```text
+MONTANA DATACOM                           600000000031323         MWBE SDVOB Only Signal Code C                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       2/7/2023     2/7/2023     Y   8/6/2023     19809.40       19809.40      19809.40       0.00           3    NYS       Y   Y   3    Y   Discretionary Procurement                1723 STATE ROUTE 17A, BLDG 2                                FLORIDA           NY   10921      1066          USA
+```
+[p029_p0064]
+
+```text
+MONTANA DATACOM                           600000000032129         EMD Fiber Optic Equipment Cl                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       7/3/2023     7/3/2023     Y   7/15/2023    34555.00       0.00          0.00           34555.00       2    NYS       Y   Y   1    Y   Below Dollar Threshold                   1723 STATE ROUTE 17A, BLDG 2                                FLORIDA           NY   10921      1066          USA
+```
+[p029_p0065]
+
+```text
+MONTANA DATACOM                           600000000032136         EMD Fiber Optic Equipment Cl                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       7/6/2023     7/6/2023     Y   7/15/2023    53772.00       0.00          0.00           53772.00       2    NYS       Y   Y   1    Y   Below Dollar Threshold                   1723 STATE ROUTE 17A, BLDG 2                                FLORIDA           NY   10921      1066          USA
+```
+[p029_p0066]
+
+```text
+MONTANA DATACOM                           600000000032141         EMD Fiber Optic Equipment Cl                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       7/6/2023     7/6/2023     Y   7/15/2023    22018.59       22018.59      22018.59       0.00           2    NYS       Y   Y   1    Y   Below Dollar Threshold                   1723 STATE ROUTE 17A, BLDG 2                                FLORIDA           NY   10921      1066          USA
+```
+[p029_p0067]
+
+```text
+MONTANA DATACOM                           600000000032239         MWBE SDVOB Only Cable, Fiber                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       7/26/2023    7/26/2023    Y   8/15/2023    251370.10      251370.10     251370.10      0.00           5    NYS       Y   Y   5    Y   Discretionary Procurement                1723 STATE ROUTE 17A, BLDG 2                                FLORIDA           NY   10921      1066          USA
+```
+[p029_p0068]
+
+```text
+MONTANA DATACOM                           600000000032713         MWBE SDVOB Fiber Distribution                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/6/2023    10/6/2023    Y   10/7/2023    236214.90      0.00          0.00           236214.90      2    NYS       Y   Y   2    Y   Discretionary Procurement                1723 STATE ROUTE 17A, BLDG 2                                FLORIDA           NY   10921      1066          USA
+```
+[p029_p0069]
+
+```text
+MONTANA DATACOM                           600000000033168         MWBE SDVOB Coaxial Cable, Spe                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/19/2023   12/19/2023   Y   12/20/2023   19920.00       0.00          0.00           19920.00       6    NYS       Y   Y   6    Y   Discretionary Procurement                1723 STATE ROUTE 17A, BLDG 2                                FLORIDA           NY   10921      1066          USA
+```
+[p029_p0070]
+
+```text
+MONTANA DATACOM                           600000000033170         MWBE SDVOB Coaxial Cable, Spe                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/19/2023   12/19/2023   Y   12/20/2023   192456.00      0.00          0.00           192456.00      6    NYS       Y   Y   6    Y   Discretionary Procurement                1723 STATE ROUTE 17A, BLDG 2                                FLORIDA           NY   10921      1066          USA
+```
+[p029_p0071]
+
+```text
+MONTANA DATACOM                           Multiple PO's - NYCTA   Various Items                                                                                  Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                              186712.97                                        NYS       Y                                                         1723 STATE ROUTE 17A, BLDG 2                                FLORIDA           NY   10921      1066          USA
+```
+[p029_p0072]
+
+```text
+MOTIVEPOWER LLC                           R34156                  NEW LOCOMOTIVE                                                                                 Open        Design and Construction/Maintenance   Authority Contract - Competitive Bid       12/6/2005    12/6/2005    Y   12/21/2022   62536278.26    87300.00      61735875.13    800403.13      3    Foreign   N   N   0    N                                            4600 APPLE ST                                               BOISE             ID   83716                    USA
+```
+[p029_p0073]
+
+```text
+MOTIVEPOWER LLC                           R34255                  Purchase of R255 Locomotives                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/27/2020    8/27/2020    Y   8/27/2031    232940035.00   0.00          63747196.54    169192838.46   4    Foreign   N   N   0    Y   Emergency or Critical Need               4600 APPLE ST                                               BOISE             ID   83716                    USA
+```
+[p029_p0074]
+
+```text
+MOTOR COACH INDUSTRIES INC.               600000000023111         Repair of Buses Under B31153                                                                   Open        Other                                 Authority Contract - Non-Competitive Bid   1/28/2019    1/28/2019    Y   12/31/2024   637590.00      0.00          0.00           637590.00      1    Foreign   N   N   0    N                                637590.00   200 E OAKTON ST                                             DES PLAINES       IL   60018                    USA
+```
+[p029_p0075]
+
+```text
+MOTOR COACH INDUSTRIES INC.               B31153                  Purchase Express Buses                                                                         Open        Other                                 Authority Contract - Non-Competitive Bid   8/29/1997    6/4/1997     Y   12/31/2024   477241786.69   0.00          476959277.40   282509.29      1    Foreign   N   N   0    N                                            200 E OAKTON ST                                             DES PLAINES       IL   60018                    USA
+```
+[p029_p0076]
+
+```text
+MOYE HANDLING SYSTEMS                     600000000033059         INF HOIST CHAIN                                                                                Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/1/2023    12/1/2023    Y   12/7/2023    30930.00       0.00          0.00           30930.00       4    Foreign   N   Y   0    Y   Below Dollar Threshold                   236 DUKES PARKWAY EAST                                      HILLSBOROUGH      NJ   08844                    USA
+```
+[p029_p0077]
+
+```text
+MT VERNON BATTERY CO                      Multiple PO's - NYCTA   Various Items                                                                                  Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                              25447.00                                         NYS       N                                                         137 SOUTH 5TH AVE.                                          MOUNT VERNON      NY   10550                    USA
+```
+[p029_p0078]
+
+```text
+MULTI SOURCE ELECTRICAL                   600000000033003         DCECONTACTOR, AUXILIARY, FOR                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/22/2023   11/22/2023   Y   11/22/2024   36223.00       7969.06       7969.06        28253.94       2    NYS       N   Y   0    Y   Below Dollar Threshold                   AND INDUSTRIAL CORPORATION          2 SECATOAG AVENUE       PORT WASHINGTON   NY   11050      2107          USA
+```
+[p029_p0079]
+
+```text
+MULTI SOURCE ELECTRICAL                   Multiple PO's - NYCTA   Various Items                                                                                  Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                              181182.78                                        NYS       N                                                         AND INDUSTRIAL CORPORATION          2 SECATOAG AVENUE       PORT WASHINGTON   NY   11050      2107          USA
+```
+[p029_p0080]
+
+```text
+MULTI-SOURCE CORP                         600000000031290         MWBE SDVOB Small Aerosol Cont                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       2/3/2023     2/3/2023     Y   8/2/2023     54566.40       53188.80      53188.80       1377.60        13   NYS       N   Y   7    Y   Below Dollar Threshold                   2 SECATOAG AVENUE                                           PORT WASHINGTON   NY   11050      2107          USA
+```
+[p029_p0081]
+
+```text
+MULTI-SOURCE CORP                         Multiple PO's - NYCTA   Various Items                                                                                  Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                              95805.76                                         NYS       N                                                         2 SECATOAG AVENUE                                           PORT WASHINGTON   NY   11050      2107          USA
+```
+[p029_p0082]
+
+```text
+MULTI-WING AMERICA INC                    600000000031935         Sub Fan Blade                                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       5/26/2023    5/26/2023    Y   5/31/2023    64424.75       64424.75      64424.75       0.00           1    Foreign   N   N   0    Y   Below Dollar Threshold                   P.O. BOX 425                                                BURTON            OH   44021                    USA
+```
+[p029_p0083]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000029058         Bus Brake Chamber Assy 15 M AP                                                                 Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/3/2021    12/3/2021    Y   3/3/2023     87055.75       0.00          50548.50       36507.25       3    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0084]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000029059         Bus Brake Chamber Assy 15 M AP                                                                 Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/3/2021    12/3/2021    Y   3/3/2023     87055.75       0.00          50548.50       36507.25       2    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0085]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000026306         DOB Lower, Middle Axle, Radiu                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       5/26/2020    5/26/2020    Y   8/25/2022    248535.00      9205.00       129238.20      119296.80      4    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0086]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000027251         Inner Wheel Seals                                                                              Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/19/2020   11/19/2020   Y   2/18/2023    153075.00      14718.75      153075.00      0.00           4    Foreign   N   N   0    N                                            3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0087]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000027386         APOP Bus STARTER MOTOR 50MT                                                                    Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/18/2020   12/18/2020   Y   3/17/2023    56325.50       11858.00      21937.30       34388.20       3    Foreign   N   Y   0    N                                            3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0088]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000028345         Bus, Damper                                                                                    Open        Commodities/Supplies                  Authority Contract - Competitive Bid       6/30/2021    6/30/2021    Y   9/29/2023    635025.00      351803.85     635025.00      0.00           2    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0089]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000028519         BUS CLUTCH ASSEMBLY                                                                            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/10/2021    8/10/2021    Y   11/9/2022    96297.50       14815.00      96297.50       0.00           3    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0090]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000028580         APOP Bus SENSOR, FIRE, HEAT I                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/27/2021    8/27/2021    Y   11/25/2022   375497.10      15179.67      375497.10      0.00           5    Foreign   N   Y   0    N                                            3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0091]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000028845         One of the contracts awarded from SSE 357070                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/20/2021   10/20/2021   Y   10/19/2024   61958.26       10839.91      26116.71       35841.55       3    Foreign   N   Y   0    N                                            3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0092]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000028928         DOB TENSIONER, ALTERNATOR BEL                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/10/2021   11/10/2021   Y   4/18/2023    38285.44       18568.96      38128.96       156.48         5    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0093]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000028979         DOB ELEMENT, BREATHER, ENGINE                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/19/2021   11/19/2021   Y   2/18/2023    168055.00      52155.00      147772.50      20282.50       4    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0094]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000029028         Commodities/Supplies                                                                           Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/30/2021   11/30/2021   Y   11/29/2024   42772.00       831.00        831.00         41941.00       7    Foreign   N   Y   1    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0095]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000029056         Bus Brake Chamber Assy 15 M AP                                                                 Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/3/2021    12/3/2021    Y   3/3/2023     170521.00      26234.00      152157.20      18363.80       3    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0096]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000029153         BUS PULLEY ASSEMBLY                                                                            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/16/2021   12/16/2021   Y   3/15/2023    123563.00      28082.50      112330.00      11233.00       3    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0097]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000029292         Bus Auto Drain Valve 15 M APOP                                                                 Open        Commodities/Supplies                  Authority Contract - Competitive Bid       1/13/2022    1/13/2022    Y   4/13/2023    410950.00      108901.75     322595.75      88354.25       5    Foreign   N   Y   1    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0098]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000029294         Bus Dual System Air Dryer 15 M                                                                 Open        Commodities/Supplies                  Authority Contract - Competitive Bid       1/13/2022    1/13/2022    Y   4/13/2023    181698.00      72679.20      166831.80      14866.20       6    Foreign   N   Y   1    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0099]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000029332         DOB SENSOR, PRESSURE, ENGINE                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       1/21/2022    1/21/2022    Y   4/20/2023    45740.00       0.00          30645.80       15094.20       3    Foreign   N   N   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0100]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000029406         DOB PULLEY ASSEMBLY, DUAL GRO                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       2/2/2022     2/2/2022     Y   5/1/2023     88548.30       24596.75      68870.90       19677.40       2    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0101]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000029443         BUS Board                                                                                      Open        Commodities/Supplies                  Authority Contract - Competitive Bid       2/8/2022     2/8/2022     Y   5/7/2024     106632.40      52173.71      93303.35       13329.05       5    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0102]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000029469         APOP Bus NUT, WHEEL LUG                                                                        Open        Commodities/Supplies                  Authority Contract - Competitive Bid       2/15/2022    2/15/2022    Y   5/12/2023    27348.00       0.00          0.00           27348.00       5    Foreign   N   Y   1    N                                            3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0103]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000029477         BUS BEARING ASSEMBLY ROLLER                                                                    Open        Commodities/Supplies                  Authority Contract - Competitive Bid       2/15/2022    2/15/2022    Y   5/15/2023    260260.00      83083.00      226226.00      34034.00       9    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0104]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000029555         BUS BEARING ASSEMBLY                                                                           Open        Commodities/Supplies                  Authority Contract - Competitive Bid       3/1/2022     3/1/2022     Y   5/31/2023    231084.00      141218.00     231084.00      0.00           3    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0105]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000029747         BUS SWITCH ASSEMBLY APOP                                                                       Open        Commodities/Supplies                  Authority Contract - Competitive Bid       3/29/2022    3/29/2022    Y   6/28/2024    86830.20       47587.20      59484.00       27346.20       3    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0106]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000029906         APOP Bus MIRROR ASSEMBLY EXT                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       5/2/2022     5/2/2022     Y   8/1/2023     105735.00      83077.50      92140.50       13594.50       59   Foreign   N   Y   0    N                                            3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0107]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000029919         Front Brake Drum                                                                               Open        Commodities/Supplies                  Authority Contract - Competitive Bid       5/4/2022     5/4/2022     Y   1/3/2023     86520.50       14157.90      28315.80       58204.70       3    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0108]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000030048         Bus Radius Rod 15 M APOP INF                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       5/31/2022    5/31/2022    Y   8/30/2023    156580.00      90190.08      108040.20      48539.80       3    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0109]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000030201         BUS COIL ASSEMBLY                                                                              Open        Commodities/Supplies                  Authority Contract - Competitive Bid       6/23/2022    6/23/2022    Y   9/22/2023    169163.55      127812.46     150367.60      18795.95       5    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0110]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000030326         BUS BLOWER                                                                                     Open        Commodities/Supplies                  Authority Contract - Competitive Bid       7/19/2022    7/19/2022    Y   10/18/2023   42488.25       0.00          0.00           42488.25       3    Foreign   N   N   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0111]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000030355         BUS BOARD                                                                                      Open        Commodities/Supplies                  Authority Contract - Competitive Bid       7/22/2022    7/22/2022    Y   10/21/2023   19170.40       9105.94       9105.94        10064.46       4    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0112]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000030495         BUS Sensor                                                                                     Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/19/2022    8/19/2022    Y   11/18/2023   17055.50       17055.50      17055.50       0.00           2    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0113]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000030561         DOB TENSIONER, WATER PUMP BEL                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       9/1/2022     9/1/2022     Y   12/30/2023   64448.40       64261.05      64261.05       187.35         5    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0114]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000030567         APOP Bus BRACKET ASSEMBLY, C                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       9/2/2022     9/2/2022     Y   1/1/2024     128507.00      91276.00      105688.00      22819.00       2    Foreign   N   N   0    N                                            3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0115]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000030649         APOP Bus CONTROLLER, ELECTRO                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       9/22/2022    9/22/2022    Y   12/21/2023   60480.50       36288.30      36288.30       24192.20       3    Foreign   N   Y   1    N                                            3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0116]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000030709         DOB ARM ASSEMBLY, WINDSHIELD                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/7/2022    10/7/2022    Y   1/6/2024     40473.00       6745.50       6745.50        33727.50       4    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0117]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000030717         BUS HEATER ASSEMBLY                                                                            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/10/2022   10/10/2022   Y   1/9/2024     24820.60       0.00          0.00           24820.60       19   Foreign   N   Y   13   Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0118]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000030718         Bus Brake Chamber 6 M APOP                                                                     Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/10/2022   10/10/2022   Y   4/10/2023    258453.00      0.00          258453.00      0.00           2    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0119]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000030784         Hub and Bearing Assembly                                                                       Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/21/2022   10/21/2022   Y   1/20/2024    289200.00      237385.00     237385.00      51815.00       3    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0120]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000030916         BUS RADIATOR ASSEMBLY                                                                          Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/18/2022   11/18/2022   Y   11/19/2022   41554.60       41554.60      41554.60       0.00           2    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0121]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000030989         DOB MIRROR ASSY, PASSENGER SI                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/5/2022    12/5/2022    Y   3/4/2024     121838.00      0.00          0.00           121838.00      3    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0122]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000031064         APOP Bus MIRROR ASSEMBLY,CUR                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/20/2022   12/20/2022   Y   3/19/2024    332822.40      227878.40     227878.40      104944.00      4    Foreign   N   Y   1    N                                            3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0123]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000031116         DOB 97-88-2293 ALTERNATOR                                                                      Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/30/2022   12/30/2022   Y   3/31/2023    117937.75      117937.75     117937.75      0.00           1    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0124]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000031228         Wheel Bearing Unitized Hub                                                                     Open        Commodities/Supplies                  Authority Contract - Competitive Bid       1/23/2023    1/23/2023    Y   4/22/2024    76117.50       69013.20      69013.20       7104.30        5    Foreign   N   Y   1    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0125]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000031239         APOP Bus BLADE ASSEMBLY, WIN                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       1/25/2023    1/25/2023    Y   4/24/2024    131706.60      84768.30      84768.30       46938.30       4    Foreign   N   Y   1    N                                            3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0126]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000031518         BUS MIRROR ASSEMBLY CURBSIDE                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       3/9/2023     3/9/2023     Y   6/7/2024     90751.50       42350.70      42350.70       48400.80       3    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0127]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000031519         APOP Bus BEARING ASSEMBLY, R                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       3/10/2023    3/10/2023    Y   6/7/2024     80447.64       0.00          0.00           80447.64       2    Foreign   N   Y   0    N                                            3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0128]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000031633         BUS PULLEY ASSEMBLY                                                                            Open        Commodities/Supplies                  Authority Contract - Competitive Bid       3/28/2023    3/28/2023    Y   6/27/2024    66260.00       57646.20      57646.20       8613.80        3    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0129]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000031668         APOP Bus BEARING ASSEMBLY, R                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       4/4/2023     4/4/2023     Y   7/3/2024     101540.28      58910.50      58910.50       42629.78       5    Foreign   N   Y   1    N                                            3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0130]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000031741         BUS Switch Kit, Manual Dischar                                                                 Open        Commodities/Supplies                  Authority Contract - Competitive Bid       4/21/2023    4/21/2023    Y   7/20/2024    80155.92       43563.00      43563.00       36592.92       5    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0131]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000032076         BUS FILTER, EVAPORATOR FRESH A                                                                 Open        Commodities/Supplies                  Authority Contract - Competitive Bid       6/23/2023    6/23/2023    Y   9/22/2024    70460.00       13550.00      13550.00       56910.00       4    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0132]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000032230         BUS FILTER DEFROSTER 15 MONTH                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       7/25/2023    7/25/2023    Y   10/24/2024   65100.00       11625.00      11625.00       53475.00       4    Foreign   N   N   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0133]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000032244         BUS MIRROR ASSEMBLY, EXTERIOR                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       7/26/2023    7/26/2023    Y   10/25/2024   35303.40       9628.20       9628.20        25675.20       3    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0134]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000032257         BUS MOTOR AND FAN ASSEMBLY                                                                     Open        Commodities/Supplies                  Authority Contract - Competitive Bid       7/27/2023    10/30/2023   Y   1/30/2025    21222.00       0.00          0.00           21222.00       2    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0135]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000032323         APOP BUS MIRROR ASSEMBLY, EXT                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/3/2023     8/3/2023     Y   11/2/2024    154868.00      29424.92      29424.92       125443.08      3    Foreign   N   Y   0    N                                            3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0136]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000032360         BUS SENSOR                                                                                     Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/9/2023     8/9/2023     Y   11/9/2024    26406.00       0.00          0.00           26406.00       2    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0137]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000032446         BUS MIRROR ASSEMBLY, 10Inch X 11                                                               Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/23/2023    8/23/2023    Y   11/22/2024   102394.60      0.00          0.00           102394.60      4    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0138]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000032580         BUS Switch AND Controller                                                                      Open        Commodities/Supplies                  Authority Contract - Competitive Bid       9/18/2023    9/18/2023    Y   12/17/2024   42406.40       0.00          0.00           42406.40       2    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0139]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000032661         BUS COIL ASSEMBLY                                                                              Open        Commodities/Supplies                  Authority Contract - Competitive Bid       9/28/2023    9/28/2023    Y   12/27/2024   110260.00      0.00          0.00           110260.00      4    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0140]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000032695         Bus 97-79-0319 RADIATOR ASSEM                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/4/2023    10/4/2023    Y   1/10/2024    42515.05       0.00          0.00           42515.05       2    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0141]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000032705         APOP Bus BRACKET ASSEMBLY, C                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/5/2023    10/5/2023    Y   1/4/2025     104562.12      0.00          0.00           104562.12      3    Foreign   N   Y   0    N                                            3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0142]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000032855         BUS FILTER, FUEL, ELEMENT                                                                      Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/30/2023   10/30/2023   Y   1/29/2025    81747.00       0.00          0.00           81747.00       5    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0143]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000032890         BUS SWITCH                                                                                     Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/3/2023    11/3/2023    Y   2/2/2025     16928.40       0.00          0.00           16928.40       2    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0144]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000032975         BUS COIL, HEATER                                                                               Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/16/2023   11/16/2023   Y   2/15/2025    24782.00       0.00          0.00           24782.00       5    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0145]
+
+```text
+MUNCIE TRANSIT SUPPLY                     600000000033009         DOB 97-79-2000 RADIATOR ASSEM                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/27/2023   11/27/2023   Y   2/26/2025    91994.22       0.00          0.00           91994.22       2    Foreign   N   Y   0    Y   Below Dollar Threshold                   3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0146]
+
+```text
+MUNCIE TRANSIT SUPPLY                     Multiple PO's - NYCTA   Various Items                                                                                  Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                              2159030.22                                       Foreign   N                                                         3720 SOUTH MADISON STREET                                   MUNCIE            IN   47302                    USA
+```
+[p029_p0147]
+
+```text
+MV TRANSPORTATION, INC.                   600000000025791         Access-A-Ride Paratransit Primary Carrier Transportation Service                               Open        Other                                 Authority Contract - Competitive Bid       4/1/2020     4/1/2020     Y   3/31/2025    423254738.00   58859542.97   171224611.09   252030126.91   18   Foreign   N   Y   0    N                                            4620 WESTAMERICA DRIVE                                      FAIRFIELD         CA   94534                    USA
+```
+[p029_p0148]
+
+```text
+MVA POWER INC                             600000000028702         Transformer Replacements                                                                       Open        Commodities/Supplies                  Authority Contract - Competitive Bid       9/30/2021    9/30/2021    Y   3/29/2023    545817.60      0.00          0.00           545817.60      5    Foreign   N   Y   0    N                                            1 HOLLY ROAD                                                MONTREAL               H3X3K6            QC     OTHER   CAN
+```
+[p029_p0149]
+
+```text
+MWL BRASIL RODAS AND EIXOS LTDA           600000000026128         SUB SUBWAY CAR WHEELS                                                                          Open        Commodities/Supplies                  Authority Contract - Competitive Bid       4/22/2020    4/27/2020    Y   4/26/2023    16506000.00    476840.00     8102612.00     8403388.00     2    Foreign   N   Y   0    N                                            RODOVIA VITO ARDITO KM 1                                    CACAPAVA               12282535          SP     OTHER   BRA
+```
+[p029_p0150]
+
+```text
+MWL BRASIL RODAS AND EIXOS LTDA           600000000027548         SUB LIGHT WEIGHT WHEEL                                                                         Open        Commodities/Supplies                  Authority Contract - Competitive Bid       2/1/2021     2/1/2021     Y   4/30/2023    83520.00       0.00          55680.00       27840.00       1    Foreign   N   Y   0    Y   Below Dollar Threshold                   RODOVIA VITO ARDITO KM 1                                    CACAPAVA               12282535          SP     OTHER   BRA
+```
+[p029_p0151]
+
+```text
+MXV RAIL                                  600000000027874         DCE 2 Year AAR Auditing Servi                                                                  Open        Other                                 Authority Contract - Non-Competitive Bid   4/7/2021     4/7/2021     Y   1/6/2024     27635.00       0.00          16300.00       11335.00       1    Foreign   N   N   0    Y   Sole Source                  27635.00    PO BOX 98382                                                WASHINGTON        DC   20090      8300          USA
+```
+[p029_p0152]
+
+```text
+MXV RAIL                                  600000000032993         AAR Certification of Equipment                                                                 Open        Other                                 Authority Contract - Non-Competitive Bid   11/20/2023   11/20/2023   Y   11/19/2025   26730.00       0.00          0.00           26730.00       1    Foreign   N   N   0    Y   Sole Source                  26730.00    PO BOX 98382                                                WASHINGTON        DC   20090      8300          USA
+```
+[p029_p0153]
+
+```text
+MYLE WORLDWIDE INC                        600000000032292         Paratransit Contingency Recovery Service                                                       Open        Other                                 Authority Contract - Competitive Bid       8/1/2023     8/1/2023     Y   7/31/2026    6007223.96     361111.39     361111.39      5646112.57     10   NYS       N   Y   3    N                                            878 Mcdonald Ave                                            BROOKLYN          NY   11218                    USA
+```
+[p029_p0154]
+
+```text
+NAP INDUSTRIES, INC.                      Multiple PO's - NYCTA   Various Items                                                                                  Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                              78614.00                                         NYS       N                                                         667 KENT AVENUE                                             BROOKLYN          NY   11249                    USA
+```
+[p029_p0155]
+
+```text
+NASSOR ELECTRICAL SUPPLY                  600000000029031         SUB Circuit Breaker; 13-42-66                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/30/2021   11/30/2021   Y   3/1/2024     27900.00       0.00          16740.00       11160.00       1    Foreign   N   Y   0    Y   Below Dollar Threshold                   200 MOONACHIE AVE                                           MOONACHIE         NJ   07074                    USA
+```
+[p029_p0156]
+
+```text
+NATIONAL COMPRESSOR EXCHANGE              600000000032106         Remanufacturing of the Carrier                                                                 Open        Other Professional Services           Authority Contract - Competitive Bid       6/28/2023    6/28/2023    Y   6/29/2026    1772037.60     125082.96     125082.96      1646954.64     2    NYS       N   Y   0    N                                            75 ONDERDONK AVENUE                                         RIDGEWOOD         NY   11385                    USA
+```
+[p029_p0157]
+
+```text
+NATIONAL ELECTRICAL CARBON PRODUCTS INC   600000000031249         Sub Brush, Carbon, 12-62-2601                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       1/26/2023    1/26/2023    Y   4/25/2025    683380.00      10461.53      10461.53       672918.47      3    Foreign   N   Y   0    Y   Below Dollar Threshold                   DBA MORGAN ADVANCED MATERIALS       P.O. BOX 1056           GREENVILLE        SC   29602                    USA
+```
+[p029_p0158]
+
+```text
+NATIONAL ELECTRICAL CARBON PRODUCTS INC   Multiple PO's - NYCTA   Various Items                                                                                  Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                              15715.00                                         Foreign   N                                                         DBA MORGAN ADVANCED MATERIALS       P.O. BOX 1056           GREENVILLE        SC   29602                    USA
+```
+[p029_p0159]
+
+```text
+NATIONAL HIGHWAY PRODUCTS INC             Multiple PO's - NYCTA   Various Items                                                                                  Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                              15469.50                                         Foreign   N                                                         301 RIVER DR                                                MILLVILLE         NJ   08332                    USA
+```
+[p029_p0160]
+
+```text
+NATIONAL INDUSTRIES FOR THE BLIND         600000000027318         Sub 15oz Mop Head 61-36-5106                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/8/2020    12/8/2020    Y   3/7/2023     306940.00      23816.16      297928.48      9011.52        1    NYS       N   N   0    Y   Below Dollar Threshold                   DBA NYSPSP                          136 STATE ST, 2ND FL    ALBANY            NY   12207                    USA
+```
+[p029_p0161]
+
+```text
+NATIONAL INDUSTRIES FOR THE BLIND         Multiple PO's - NYCTA   Various Items                                                                                  Open        Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                              53075.25                                         NYS       N                                                         DBA NYSPSP                          136 STATE ST, 2ND FL    ALBANY            NY   12207                    USA
+```
+[p029_p0162]
+
+```text
+NATIONAL RAILWAY SUPPLY LLC               600000000031074         SIG NRS Rectifier Chargers                                                                     Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/21/2022   12/21/2022   Y   12/22/2022   49980.00       49980.00      49980.00       0.00           2    Foreign   N   Y   0    Y   Below Dollar Threshold                   PO BOX 13727                                                SAVANNAH          GA   31416                    USA
+```
+[p029_p0163]
+
+```text
+NATIONAL RAILWAY SUPPLY LLC               600000000030943         SUB R156 Battery                                                                               Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/22/2022   11/22/2022   Y   11/23/2022   55950.00       55950.00      55950.00       0.00           1    Foreign   N   Y   0    Y   Below Dollar Threshold                   PO BOX 13727                                                SAVANNAH          GA   31416                    USA
+```
+[p029_p0164]
+
+```text
+NATIONAL RAILWAY SUPPLY LLC               600000000031901         SUB Lead Acid Battery; 13-05-                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       5/23/2023    5/23/2023    Y   5/24/2023    42720.00       0.00          0.00           42720.00       1    Foreign   N   Y   0    Y   Below Dollar Threshold                   PO BOX 13727                                                SAVANNAH          GA   31416                    USA
+```
+[p029_p0165]
+
+```text
+NATIONAL RAILWAY SUPPLY LLC               600000000032678         ELEC Rectifiers                                                                                Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/2/2023    10/2/2023    Y   10/4/2023    49710.00       0.00          0.00           49710.00       2    Foreign   N   Y   0    Y   Below Dollar Threshold                   PO BOX 13727                                                SAVANNAH          GA   31416                    USA
+```
+[p029_p0166]
+
+```text
+NATIONAL RAILWAY SUPPLY LLC               600000000033181         SUB Lead Acid Battery; 13-05-                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/20/2023   12/20/2023   Y   12/21/2023   32040.00       0.00          0.00           32040.00       2    Foreign   N   Y   1    Y   Below Dollar Threshold                   PO BOX 13727                                                SAVANNAH          GA   31416                    USA
+```
+[p029_p0167]
+
+```text
+NATIONWIDE CHEMICAL CO INC                Multiple PO's - NYCTA   Various Items                                                                                  Completed   Commodities/Supplies                  Non Contract Procurement/Purchase Order                                                              41520.80                                         NYS       N                                                         P.O. BOX 633                                                JERICHO           NY   11753                    USA
+```
+[p029_p0168]
+
+```text
+NATIONWIDE CHEMICAL CO INC                600000000030094         Liquid Water Based Odor Elimin                                                                 Open        Commodities/Supplies                  Authority Contract - Competitive Bid       6/6/2022     6/6/2022     Y   6/5/2023     105840.00      70560.00      105840.00      0.00           2    NYS       N   Y   0    Y   Below Dollar Threshold                   P.O. BOX 633                                                JERICHO           NY   11753                    USA
+```
+[p029_p0169]
+
+```text
+NATIONWIDE CHEMICAL CO INC                600000000031830         Liquid Water Based Odor Elimin                                                                 Open        Commodities/Supplies                  Authority Contract - Competitive Bid       5/10/2023    5/10/2023    Y   5/9/2024     105840.00      35280.00      35280.00       70560.00       2    NYS       N   Y   0    Y   Below Dollar Threshold                   P.O. BOX 633                                                JERICHO           NY   11753                    USA
+```
+[p029_p0170]
+
+```text
+NATSCO TRANSIT SOLUTIONS, INC             600000000028872         Commodities/Supplies                                                                           Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/26/2021   10/26/2021   Y   10/25/2024   499197.14      0.00          22634.20       476562.94      3    NYS       N   Y   0    N                                            1800 BROADWAY ST, BLDG 4A                                   BUFFALO           NY   14212                    USA
+```
+[p029_p0171]
+
+```text
+NATSCO TRANSIT SOLUTIONS, INC             600000000028948         BUS Radiator Components                                                                        Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/16/2021   11/16/2021   Y   2/15/2023    520030.00      6118.00       312018.00      208012.00      2    NYS       N   Y   0    Y   Below Dollar Threshold                   1800 BROADWAY ST, BLDG 4A                                   BUFFALO           NY   14212                    USA
+```
+[p029_p0172]
+
+```text
+NATSCO TRANSIT SOLUTIONS, INC             600000000028949         BUS Radiator Components                                                                        Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/16/2021   11/16/2021   Y   2/15/2023    281520.00      41400.00      168912.00      112608.00      2    NYS       N   Y   0    Y   Below Dollar Threshold                   1800 BROADWAY ST, BLDG 4A                                   BUFFALO           NY   14212                    USA
+```
+[p029_p0173]
+
+```text
+NATSCO TRANSIT SOLUTIONS, INC             600000000028951         BUS Radiator Components                                                                        Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/16/2021   11/16/2021   Y   2/15/2023    448352.50      0.00          313846.75      134505.75      3    NYS       N   Y   0    Y   Below Dollar Threshold                   1800 BROADWAY ST, BLDG 4A                                   BUFFALO           NY   14212                    USA
+```
+[p029_p0174]
+
+```text
+NATSCO TRANSIT SOLUTIONS, INC             600000000029050         Commodities/Supplies                                                                           Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/2/2021    12/2/2021    Y   12/2/2024    142887.62      39017.60      104017.17      38870.45       7    NYS       N   Y   1    Y   Below Dollar Threshold                   1800 BROADWAY ST, BLDG 4A                                   BUFFALO           NY   14212                    USA
+```
+[p029_p0175]
+
+```text
+NATSCO TRANSIT SOLUTIONS, INC             600000000029259         BUS Radiator Components                                                                        Open        Commodities/Supplies                  Authority Contract - Competitive Bid       1/5/2022     1/5/2022     Y   4/4/2023     146840.00      3671.00       121143.00      25697.00       2    NYS       N   Y   0    Y   Below Dollar Threshold                   1800 BROADWAY ST, BLDG 4A                                   BUFFALO           NY   14212                    USA
+```
+[p029_p0176]
+
+```text
+NATSCO TRANSIT SOLUTIONS, INC             600000000029457         Bus Front Air Bag 15 M APOP                                                                    Open        Commodities/Supplies                  Authority Contract - Competitive Bid       2/10/2022    2/10/2022    Y   5/9/2023     79850.00       13973.75      24354.25       55495.75       3    NYS       N   Y   0    Y   Below Dollar Threshold                   1800 BROADWAY ST, BLDG 4A                                   BUFFALO           NY   14212                    USA
+```
+[p029_p0177]
+
+```text
+NATSCO TRANSIT SOLUTIONS, INC             600000000029920         Filter Element                                                                                 Open        Commodities/Supplies                  Authority Contract - Competitive Bid       5/4/2022     5/4/2022     Y   8/3/2024     89034.00       2360.75       2360.75        86673.25       2    NYS       N   N   0    Y   Below Dollar Threshold                   1800 BROADWAY ST, BLDG 4A                                   BUFFALO           NY   14212                    USA
+```
+[p029_p0178]
+
+```text
+NATSCO TRANSIT SOLUTIONS, INC             600000000030596         APOP Bus SENSOR, FIRE, HEAT I                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       9/14/2022    9/14/2022    Y   12/13/2023   293856.30      249219.90     249219.90      44636.40       4    NYS       N   Y   0    N                                            1800 BROADWAY ST, BLDG 4A                                   BUFFALO           NY   14212                    USA
+```
+[p029_p0179]
+
+```text
+NATSCO TRANSIT SOLUTIONS, INC             600000000030770         BUS CAC AND Radiator                                                                           Open        Commodities/Supplies                  Authority Contract - Non-Competitive Bid   10/20/2022   10/20/2022   Y   10/21/2022   139556.20      124603.75     124603.75      14952.45       1    NYS       N   N   0    Y   Below Dollar Threshold       139556.20   1800 BROADWAY ST, BLDG 4A                                   BUFFALO           NY   14212                    USA
+```
+[p029_p0180]
+
+```text
+NATSCO TRANSIT SOLUTIONS, INC             600000000031109         BUS Radiator Components                                                                        Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/29/2022   12/29/2022   Y   12/30/2022   148455.32      142745.50     142745.50      5709.82        2    NYS       N   Y   0    Y   Below Dollar Threshold                   1800 BROADWAY ST, BLDG 4A                                   BUFFALO           NY   14212                    USA
+```
+[p029_p0181]
+
+```text
+NATSCO TRANSIT SOLUTIONS, INC             600000000031110         BUS Radiator Components                                                                        Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/29/2022   12/29/2022   Y   12/30/2022   43345.40       43345.40      43345.40       0.00           2    NYS       N   Y   0    Y   Below Dollar Threshold                   1800 BROADWAY ST, BLDG 4A                                   BUFFALO           NY   14212                    USA
+```
+[p029_p0182]
+
+```text
+NATSCO TRANSIT SOLUTIONS, INC             600000000031111         BUS Radiator Components                                                                        Open        Commodities/Supplies                  Authority Contract - Competitive Bid       12/29/2022   12/29/2022   Y   12/30/2023   38055.86       38055.86      38055.86       0.00           2    NYS       N   Y   0    Y   Below Dollar Threshold                   1800 BROADWAY ST, BLDG 4A                                   BUFFALO           NY   14212                    USA
+```
+[p029_p0183]
+
+```text
+NATSCO TRANSIT SOLUTIONS, INC             600000000031928         BUS Radiator                                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       5/25/2023    5/25/2023    Y   5/26/2023    134505.75      0.00          0.00           134505.75      2    NYS       N   Y   0    Y   Below Dollar Threshold                   1800 BROADWAY ST, BLDG 4A                                   BUFFALO           NY   14212                    USA
+```
+[p029_p0184]
+
+```text
+NATSCO TRANSIT SOLUTIONS, INC             600000000032451         BUS Radiator Components                                                                        Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/23/2023    8/23/2023    Y   8/24/2023    102125.00      0.00          0.00           102125.00      2    NYS       N   Y   0    Y   Below Dollar Threshold                   1800 BROADWAY ST, BLDG 4A                                   BUFFALO           NY   14212                    USA
+```
+[p029_p0185]
+
+```text
+NATSCO TRANSIT SOLUTIONS, INC             600000000032452         BUS Radiator Components                                                                        Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/23/2023    8/23/2023    Y   8/24/2024    29906.25       0.00          0.00           29906.25       2    NYS       N   Y   0    Y   Below Dollar Threshold                   1800 BROADWAY ST, BLDG 4A                                   BUFFALO           NY   14212                    USA
+```
+[p029_p0186]
+
+```text
+NATSCO TRANSIT SOLUTIONS, INC             600000000032453         BUS Radiator Components                                                                        Open        Commodities/Supplies                  Authority Contract - Competitive Bid       8/23/2023    8/23/2023    Y   8/24/2024    63225.00       0.00          0.00           63225.00       2    NYS       N   Y   0    Y   Below Dollar Threshold                   1800 BROADWAY ST, BLDG 4A                                   BUFFALO           NY   14212                    USA
+```
+[p029_p0187]
+
+```text
+NATSCO TRANSIT SOLUTIONS, INC             600000000032900         APOP Bus SENSOR, FIRE, HEAT I                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/6/2023    11/6/2023    Y   2/6/2025     288760.80      0.00          0.00           288760.80      4    NYS       N   N   0    N                                            1800 BROADWAY ST, BLDG 4A                                   BUFFALO           NY   14212                    USA
+```
+[p029_p0188]
+
+```text
+NATSCO TRANSIT SOLUTIONS, INC             600000000028950         BUS Radiator Components                                                                        Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/16/2021   11/16/2021   Y   2/15/2023    285600.00      50400.00      168000.00      117600.00      2    NYS       N   Y   0    Y   Below Dollar Threshold                   1800 BROADWAY ST, BLDG 4A                                   BUFFALO           NY   14212                    USA
+```
+[p029_p0189]
+
+```text
+NAVILENS PROJECTS CORP                    600000000031710         Service DESCRIPTION OF SOLICI                                                                  Open        Other                                 Authority Contract - Non-Competitive Bid   4/14/2023    4/14/2023    Y   10/14/2024   200000.00      50000.00      50000.00       150000.00      1    Foreign   N   N   0    Y   Below Dollar Threshold       200000.00   2330 PONCE DE LEON BLVD                                     CORAL GABLES      FL   33134                    USA
+```
+[p029_p0190]
+
+```text
+NEAD ELECTRIC INC                         600000000030954         Electrical Maintenance of MetroCard Fare Collection Machines on Select Bus Service Routes      Open        Design and Construction/Maintenance   Authority Contract - Non-Competitive Bid   11/29/2022   11/29/2022   Y   2/28/2023    22300.00       20122.30      20122.30       2177.70        1    Foreign   N   N   0    Y   Ride/Piggyback of MTA Ags    22300.00    187 EAST UNION AVE.                                         EAST RUTHERFORD   NJ   07073                    USA
+```
+[p029_p0191]
+
+```text
+NEOPART TRANSIT LLC                       600000000029644         Disc Brake Assembly, Roadside                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       3/11/2022    3/11/2022    Y   6/10/2023    31479.36       0.00          0.00           31479.36       3    Foreign   N   N   0    Y   Below Dollar Threshold                   5C DUTCH COURT                                              READING           PA   19608                    USA
+```
+[p029_p0192]
+
+```text
+NEOPART TRANSIT LLC                       600000000029646         Disc Brake Assembly, Curbside                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       3/11/2022    3/11/2022    Y   6/10/2023    31479.36       6558.20       6558.20        24921.16       3    Foreign   N   Y   0    Y   Below Dollar Threshold                   5C DUTCH COURT                                              READING           PA   19608                    USA
+```
+[p029_p0193]
+
+```text
+NEOPART TRANSIT LLC                       600000000031831         DOB96-80-0048 0049 Reman Cali                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       5/10/2023    5/10/2023    Y   5/9/2025     34312.80       4003.16       4003.16        30309.64       2    Foreign   N   Y   0    Y   Below Dollar Threshold                   5C DUTCH COURT                                              READING           PA   19608                    USA
+```
+[p029_p0194]
+
+```text
+NEOPART TRANSIT LLC                       600000000031832         DOB96-80-0048 0049 Reman Cali                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       5/10/2023    5/10/2023    Y   5/9/2025     34312.80       6862.56       6862.56        27450.24       2    Foreign   N   Y   0    Y   Below Dollar Threshold                   5C DUTCH COURT                                              READING           PA   19608                    USA
+```
+[p029_p0195]
+
+```text
+NEOPART TRANSIT LLC                       600000000028364         BUS Driveshaft Assembly                                                                        Open        Commodities/Supplies                  Authority Contract - Competitive Bid       7/6/2021     7/6/2021     Y   10/5/2023    51537.75       27486.80      51537.75       0.00           4    Foreign   N   Y   0    Y   Below Dollar Threshold                   5C DUTCH COURT                                              READING           PA   19608                    USA
+```
+[p029_p0196]
+
+```text
+NEOPART TRANSIT LLC                       600000000029030         Bus Blade Assembly 15 M APOP                                                                   Open        Commodities/Supplies                  Authority Contract - Competitive Bid       11/30/2021   11/30/2021   Y   2/28/2023    154100.00      30820.00      154100.00      0.00           5    Foreign   N   Y   0    Y   Below Dollar Threshold                   5C DUTCH COURT                                              READING           PA   19608                    USA
+```
+[p029_p0197]
+
+```text
+NEOPART TRANSIT LLC                       600000000029279         BUS Rear Standard Meritor Bra                                                                  Open        Commodities/Supplies                  Authority Contract - Competitive Bid       1/11/2022    1/11/2022    Y   4/10/2023    49496.40       0.00          43996.80       5499.60        5    Foreign   N   Y   1    Y   Below Dollar Threshold                   5C DUTCH COURT                                              READING           PA   19608                    USA
+```
+[p029_p0198]
+
+```text
+NEOPART TRANSIT LLC                       600000000030695         BUS MODULE                                                                                     Open        Commodities/Supplies                  Authority Contract - Competitive Bid       10/3/2022    10/3/2022    Y   1/2/2024     46084.50       17204.88      17204.88       28879.62       36   Foreign   N   Y   23   Y   Below Dollar Threshold                   5C DUTCH COURT                                              READING           PA   19608                    USA
+```
+[p029_p0199]
+
+```text
+NEOPART TRANSIT LLC                       600000000031509         BUS BRAKE CALIPERS FOR NEW FLY                                                                 Open        Commodities/Supplies                  Authority Contract - Competitive Bid       3/9/2023     3/9/2023     Y   4/28/2023    18261.90       18261.90      18261.9
+```
+
+## Page 30
+
+> [p030_c0001] A blank sheet of graph paper. The background is a light gray color. Overlaid on this background is a grid of thin, dark gray lines. The grid consists of horizontal and vertical lines that intersect to form a pattern of small, equal-sized squares. The lines are evenly spaced and extend across the entire visible area of the page. There are no margins, text, or other markings on the paper.
+
+## Page 31
+
+> [p031_c0001] A full-page view of a blank sheet of graph paper. The paper is covered with a uniform grid of small, light gray squares. The grid is composed of thin, dark gray lines. There are no margins, text, or any other markings on the page. The overall appearance is that of a clean, unused piece of stationery.
+
+## Page 32
+
+> [p032_c0001] A blank sheet of graph paper. The background is a light gray color. Overlaid on this background is a grid of thin, dark gray lines. The grid consists of horizontal and vertical lines that intersect to form a pattern of small, equal-sized squares. The lines are evenly spaced and extend across the entire visible area of the page. There are no margins, text, or other markings on the paper.
+
+## Page 33
+
+> [p033_c0001] A blank sheet of graph paper with a grid pattern. The grid consists of small, uniform squares. The paper is white, and the grid lines are light gray. There are no markings, text, or other features on the page.
+
+## Page 34
+
+> [p034_c0001] A blank sheet of graph paper with a grid pattern. The grid consists of small, uniform squares. The paper is white, and the grid lines are a light gray color. There are no markings, text, or other features on the page.
+
+## Page 35
+
+[p035_c0001] <td
+[p035_p0001]
+
+```text
+RAIL SAFETY TECHNOLOGIES LLC               7000002188                  Commodities/Supplies                                                                                   Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       11/22/2022   11/22/2022   Y   1/6/2023     17086.50      17086.50    17086.50      0.00          1    Foreign   N   Y   0    Y   Below Dollar Threshold                    225 WILLITS WAY                                                    GLEN MILLS                  PA   19342                  USA
+```
+[p035_p0002]
+
+```text
+RAIL TEK LLC                               7000002301                  RailTek Shamrock No. RTG-150S Traction Gel 250 gallon Tote                                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       8/28/2023    8/28/2023    Y   9/27/2023    17071.35      17071.35    17071.35      0.00          1    Foreign   N   Y   0    N                                             225 WILLITS WAY                                                    GLEN MILLS                  PA   19342                  USA
+```
+[p035_p0003]
+
+```text
+RAILS COMPANY                              7000002244                  TH-10420-40-C Heater, TH,RS,600VDC,BH-l,5Lgs                                                           Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       4/1/2023     3/31/2023    Y   5/29/2023    32790.00      32790.00    32790.00      0.00          1    Foreign   N   Y   0    N                                             101 NEWARK WAY                                                     MAPLEWOOD                   NJ   7040                   USA
+```
+[p035_p0004]
+
+```text
+RAILS COMPANY                              7000002372                  THR-10761-07, DISCONNECT, FU, 101-200A, 1000VDC, SIDE MOUNT WITH 1 2Inch HASP                          Open        Commodities/Supplies                             Authority Contract - Competitive Bid       12/29/2023   12/29/2023   Y   5/17/2024    18920.00      0.00        0.00          18920.00      1    Foreign   N   Y   0    N                                             101 NEWARK WAY                                                     MAPLEWOOD                   NJ   7040                   USA
+```
+[p035_p0005]
+
+```text
+RICHMOND PLUMBING AND HEATING CO INC       7000002289                  Repair improper connection in waste line for mens bathroom at 331 Bay                                  Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       8/8/2023     8/8/2023     Y   9/1/2023     26500.00      0.00        0.00          26500.00      1    NYS       N   N   0    N                                             318 CLOVE RD                                                       STATEN ISLAND               NY   10310                  USA
+```
+[p035_p0006]
+
+```text
+ROBEL NORTH AMERICA CORP                   7000002340                  LDR 30 B LOCKING DEVICE RERAILING                                                                      Open        Commodities/Supplies                             Authority Contract - Competitive Bid       11/3/2023    11/2/2023    Y   12/18/2023   250720.05     0.00        0.00          250720.05     1    Foreign   N   Y   0    N                                             254 FERNWOOD AVENUE                                                EDISON                      NJ   8837                   USA
+```
+[p035_p0007]
+
+```text
+SIEMENS MOBILITY INC                       7000002174                  nyk012925-2x bond impedance szb-24                                                                     Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       10/27/2022   10/27/2022   Y   2/24/2023    101712.00     101712.00   101712.00     0.00          1    Foreign   N   Y   0    Y   Below Dollar Threshold                    PO BOX 3498                                                        CAROL STREAM                IL   60132                  USA
+```
+[p035_p0008]
+
+```text
+SIEMENS MOBILITY INC                       7000002329                  NYK 012925-2X Bond Impedance SZB-24 ASSY .no.                                                          Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/17/2023   10/17/2023   Y   2/6/2024     28557.26      0.00        0.00          28557.26      1    Foreign   N   Y   0    N                                             PO BOX 3498                                                        CAROL STREAM                IL   60132                  USA
+```
+[p035_p0009]
+
+```text
+SISSCO / PERMADUR INDUSTRIES               7000000650                  Contract, For Inspection of Two 2 Whiting Cranes Located at 845 Bay St. Staten Island, NY. and Two     Open        Consulting Services                              Authority Contract - Competitive Bid       10/3/2014    10/3/2014    Y   1/1/2023     26720.00      1169.00     23020.00      3700.00       1    Foreign   N   N   0    N                                             190 ROUTE 206 SOUTH                                                HILLSBOROUGH                NJ   8844                   USA
+```
+[p035_p0010]
+
+```text
+SNAP-ON-INDUSTRIAL                         7000001281                  Contract for Equipment AND Parts                                                                       Open        Commodities/Supplies                             Authority Contract - Competitive Bid       5/1/2018     5/1/2018     Y   2/1/2022     17379.83      1081.97     12765.81      4614.02       1    Foreign   N   N   0    Y   Below Dollar Threshold                    21755 NETWORK PLACE                                                CHICAGO                     IL   60673      1217        USA
+```
+[p035_p0011]
+
+```text
+SNAP-ON-INDUSTRIAL                         7000002288                  10PC HX KY SET 1.5-10MM - AWMEF10K                                                                     Open        Commodities/Supplies                             Authority Contract - Competitive Bid       7/31/2023    7/31/2023    Y   9/14/2023    28708.62      22545.00    22545.00      6163.62       1    Foreign   N   Y   0    N                                             21755 NETWORK PLACE                                                CHICAGO                     IL   60673      1217        USA
+```
+[p035_p0012]
+
+```text
+SOLARI CORP.                               7000002280                  8058X73 CPU Kit                                                                                        Open        Commodities/Supplies                             Authority Contract - Competitive Bid       7/17/2023    7/17/2023    Y   10/16/2023   25201.00      0.00        0.00          25201.00      1    NYS       N   Y   0    N                                             261 W 35TH ST                       SUITE#1402                     NEW YORK                    NY   10001                  USA
+```
+[p035_p0013]
+
+```text
+STEWART AND STEVENSON POWER PRODUCTS LLC   7000002284                  Perform Diagnosis on Locomotive 779 Diesel Engine - LGL07950                                           Open        Commodities/Supplies                             Authority Contract - Competitive Bid       7/21/2023    7/21/2023    Y   7/28/2023    17565.00      17564.99    17564.99      0.01          1    Foreign   N   N   0    Y   Emergency or Critical Need                180 ROUTE 17 S                                                     LODI                        NJ   7644                   USA
+```
+[p035_p0014]
+
+```text
+TEKTRONICS ELECTRONIC COMPONENTS INC.      7000002107                  Receiver SE-3, 100 HZ, Code-reset Siemens-NYK400044901100RX                                            Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       3/21/2022    3/21/2022    Y   4/28/2023    94630.05      42057.80    94630.05      0.00          1    NYS       N   Y   0    Y   Below Dollar Threshold                    550 ROUTE 25A                                                      ROCKY POINT                 NY   11778                  USA
+```
+[p035_p0015]
+
+```text
+THERMAL-FLEX SYSTEMS, INC                  7000002213                  Third Rail Heater Spring Clip for 115 lb area                                                          Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       1/19/2023    1/19/2023    Y   2/20/2023    15562.50      15562.50    15562.50      0.00          1    Foreign   N   Y   0    Y   Below Dollar Threshold                    1831 MIDDLETOWN AVE.                                               NORTHFORD                   CT   6472                   USA
+```
+[p035_p0016]
+
+```text
+TUV RHEINLAND INDUSTRIAL                   S01245                      ISA Consultant R211                                                                                    Completed   Consulting Services                              Authority Contract - Competitive Bid       9/17/2019    9/17/2019    Y   2/16/2025    0.00          0.00        0.00          0.00          3    Foreign   N   Y   0    N                                             SOLUTIONS INC.                      8181 BROADMOORE SE             CALEDONIA                   MI   49315                  USA
+```
+[p035_p0017]
+
+```text
+TWINCO MFG. CO., INC.                      7000002121                  Bootleg Head Gasket TB-5957-01                                                                         Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       4/12/2022    4/12/2022    Y   9/9/2022     29807.50      18167.50    29807.50      0.00          1    NYS       N   Y   0    Y   Below Dollar Threshold                    30 COMMERCE DRIVE                                                  HAUPPAUGE                   NY   11788                  USA
+```
+[p035_p0018]
+
+```text
+TWINCO MFG. CO., INC.                      7000002309                  239-5957-1-1 Bootleg Head Gasket                                                                       Open        Commodities/Supplies                             Authority Contract - Competitive Bid       9/20/2023    9/19/2023    Y   2/2/2024     46165.00      4290.00     4290.00       41875.00      1    NYS       N   Y   0    N                                             30 COMMERCE DRIVE                                                  HAUPPAUGE                   NY   11788                  USA
+```
+[p035_p0019]
+
+```text
+UNITED METRO ENERGY CORP                   7000000700                  Contract in dollars for 2 B5 Heating Fuel, to be delivered to Various SIRTOA Locations as per the At   Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/9/2015     3/9/2015     Y   3/6/2016     300000.00     10076.40    147289.52     152710.48     0    NYS       N   N   0                                                  500 KINGSLAND AVE                                                  BROOKLYN                    NY   11222                  USA
+```
+[p035_p0020]
+
+```text
+VERDANT FACILITIES MAINTENANCE LLC         700000000000210             SIRTA Station Cleaning 1-Yr                                                                            Open        Other Professional Services                      Authority Contract - Competitive Bid       6/29/2020    6/29/2020    Y   12/31/2022   2360685.56    175966.25   2212185.56    148500.00     1    NYS       Y   Y   1    N                                             5 PENN PLAZA, STE 23040                                            NEW YORK                    NY   10001                  USA
+```
+[p035_p0021]
+
+```text
+VERTIV CORP                                7000001901                  3-Yr Contract for Preventative Maintenance on the RCC-UPS Batteries, UPS Cabinet and By-Pass Mainte    Open        Other Professional Services                      Authority Contract - Competitive Bid       11/1/2020    11/1/2020    Y   11/3/2023    37902.00      5806.00     17418.00      20484.00      1    Foreign   N   Y   0    N                                             1050 DEARBORN DR                                                   COLUMBUS                    OH   43085                  USA
+```
+[p035_p0022]
+
+```text
+W. W. GRAINGER INC.                        7000002128                  Masonry Brush, White, 5 Inch                                                                           Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       5/11/2022    5/11/2022    Y   5/23/2022    23047.11      19.84       23047.11      0.00          1    NYS       N   Y   0    Y   Below Dollar Threshold                    58 - 45 GRAND AVE                                                  MASPETH                     NY   11378                  USA
+```
+[p035_p0023]
+
+```text
+W. W. GRAINGER INC.                        7000002199                  Impact wrench cordless - 54XX67                                                                        Completed   Commodities/Supplies                             Authority Contract - Competitive Bid       12/21/2022   12/21/2022   Y   12/22/2022   24218.36      24218.36    24218.36      0.00          1    NYS       N   Y   0    Y   Below Dollar Threshold                    58 - 45 GRAND AVE                                                  MASPETH                     NY   11378                  USA
+```
+[p035_p0024]
+
+```text
+W. W. GRAINGER INC.                        7000002332                  25CH29 Knee Column Milling Machine,3ph,230V JET 690161                                                 Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/20/2023   10/20/2023   Y   1/3/2024     18083.26      0.00        0.00          18083.26      2    NYS       N   Y   0    N                                             58 - 45 GRAND AVE                                                  MASPETH                     NY   11378                  USA
+```
+[p035_p0025]
+
+```text
+WEX BANK                                   7000000822                  Contract in dollars for emergency fuel card services, 87 Octane Gasoline and Ultra Low Sulfur Diesel   Open        Commodities/Supplies                             Non Contract Procurement/Purchase Order                                                             16416.28                                     Foreign   N                                                          7090 SOUTH UNION PARK CENTER        STE 350                        SALT LAKE CITY              UT   84047                  USA
+```
+[p035_p0026]
+
+```text
+STAPLES                                    STAPLES - OPERATING FUNDS   Office Supplies and Toners                                                                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       1/10/2017    1/11/2017    Y   3/14/2024    50000.00      9057.04     9041.44       40958.56      1    Foreign   N   N   0    Y   Inter-agency Agreement                    500 STAPLES DRIVE                                                  FRAMINGHAM                  MA   01702                  USA
+```
+[p035_p0027]
+
+```text
+STAPLES                                    STAPLES 2017                Office Supplies and Toners                                                                             Open        Commodities/Supplies                             Authority Contract - Competitive Bid       1/10/2017    1/10/2017    Y   3/14/2024    214091.95     0.00        206185.45     7906.50       1    Foreign   N   N   0    Y   Inter-agency Agreement                    500 STAPLES DRIVE                                                  FRAMINGHAM                  MA   01702                  USA
+```
+[p035_p0028]
+
+```text
+BUREAU VERITAS NORTH AMERICA, INC.         3000003424                  Social Compliance Audit Services in accordance with New York City Transit Contract 600000000019307     Open        Consulting Services                              Authority Contract - Competitive Bid       11/5/2018    4/4/2018     Y   11/5/2023    50000.00      0.00        0.00          50000.00      0    Foreign   N   N   0    Y   Ride/Piggyback of MTA Ags                 450 B ST                            SUITE 1500                     SAN DIEGO                   CA   92101                  USA
+```
+[p035_p0029]
+
+```text
+PEAK TECHNICAL SERVICES, INC.              3000003818                  Temporary Staffing                                                                                     Open        Staffing Services                                Authority Contract - Competitive Bid       12/17/2018   12/17/2018   Y   9/12/2023    175266.00     0.00        101484.25     73781.75      22   NYS       N   Y   2    Y   Ride/Piggyback of MTA Ags                 5 PENN PLAZA                                                       NEW YORK                    NY   10001                  USA
+```
+[p035_p0030]
+
+```text
+L J GONZER ASSOCIATES                      3000003819                  Temporary Staffing                                                                                     Open        Staffing Services                                Authority Contract - Competitive Bid       12/12/2018   12/12/2018   Y   9/12/2023    158346.72     0.00        158346.72     0.00          22   Foreign   N   Y   2    Y   Ride/Piggyback of MTA Ags                 1225 RAYMOND BOULEVARD                                             NEWARK                      NJ   07102                  USA
+```
+[p035_p0031]
+
+```text
+HEPCO, INC.                                3000003820                  Indefinite Qty Temp. Staffing                                                                          Open        Staffing Services                                Authority Contract - Competitive Bid       3/20/2019    3/20/2019    Y   9/12/2023    397632.00     0.00        300011.33     97620.67      22   Foreign   N   Y   2    Y   Ride/Piggyback of MTA Ags                 160 PEHLE AVE                       SUITE 202                      SADDLE BROOK                NJ   07663      5295        USA
+```
+[p035_p0032]
+
+```text
+ROTATOR STAFFING SERVICES INC              3000003821                  Temporary Staffing                                                                                     Open        Staffing Services                                Authority Contract - Competitive Bid       1/11/2019    1/11/2019    Y   9/12/2023    475196.80     0.00        454820.98     20375.82      22   Foreign   N   Y   2    Y   Ride/Piggyback of MTA Ags                 P O BOX 366                         25 KENNEDY BLVD                E BRUNSWICK                 NJ   08816      0366        USA
+```
+[p035_p0033]
+
+```text
+NAIK CONSULTING GROUP PC                   D81615B                     IQ CCM and Inspection Services for Miscellaneous Construction Projects                                 Open        Consulting Services                              Authority Contract - Competitive Bid       12/14/2018   11/8/2023    Y   12/13/2023   1191740.98    0.00        0.00          1191740.98    27   Foreign   Y   Y   2    N                                             200 METROPLEX DR, STE#403                                          EDISON                      NJ   08817                  USA
+```
+[p035_p0034]
+
+```text
+EPM-HVA JOINT VENTURE                      D81643B OPR                 Asbestos/Lead/Air Monitoring                                                                           Open        Consulting Services                              Authority Contract - Competitive Bid       4/8/2022     4/8/2022     Y   4/7/2025     32633.98      0.00        0.00          32633.98      9    NYS       N   Y   3    N                                             1983 MARCUS AVE, STE#109                                           LAKE SUCCESS                NY   11042                  USA
+```
+[p035_p0035]
+
+```text
+METRO DESIGNERS - A GANNETT FLEMING-       D81682B                     All Agency IQ A/E Services for Miscellaneous Construction AND Security Projects - State funded         Open        Consulting Services                              Authority Contract - Competitive Bid       5/13/2022    8/24/2023    Y   5/13/2025    80445.66      0.00        0.00          80445.66      21   NYS       N   Y   4    N                                             DEWBERRY JV                         ONE PENN PLAZA, STE 630        NEW YORK                    NY   10119      0101        USA
+```
+[p035_p0036]
+
+```text
+MICHAEL BAKER ENGINEERING INC              D81683B                     IQ A/E Design Svcs- State Fund                                                                         Open        Consulting Services                              Authority Contract - Competitive Bid       4/26/2022    11/14/2023   Y   4/30/2025    283128.58     0.00        0.00          283128.58     21   NYS       N   Y   4    N                                             11 MARTINE AVE. STE 675                                            WHITE PLAINS                NY   10606                  USA
+```
+[p035_p0037]
+
+```text
+TC ELECTRIC, LLC                           GFM-534G                    As Needed Electrical                                                                                   Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       4/13/2020    4/13/2020    Y   8/12/2024    7198000.00    0.00        0.00          7198000.00    9    NYS       N   Y   1    N                                             1010 NORTHERN BLVD                  SUITE 203                      GREAT NECK                  NY   11021                  USA
+```
+[p035_p0038]
+
+```text
+L AND L PAINTING CO INC                    GFM=525XD                   Misc Cleaning AND Painting                                                                             Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       10/9/2019    10/9/2019    Y   2/9/2024     4869200.00    0.00        4869100.00    100.00        5    NYS       N   Y   2    N                                             900 S OYSTER BAY RD                                                HICKSVILLE                  NY   11801                  USA
+```
+[p035_p0039]
+
+```text
+AMMANN AND WHITNEY CONSULTING ENGINEERS    PSC-16-2991B                As-Needed Design                                                                                       Completed   Design and Construction/Maintenance              Authority Contract - Competitive Bid       7/27/2017    7/27/2017    Y   7/26/2023    482698.69     0.00        482698.69     0.00          10   NYS       N   Y   5    N                                             96 MORTON STREET                                                   NEW YORK                    NY   10014                  USA
+```
+[p035_p0040]
+
+```text
+HENNINGSON, DURHAM AND RICHARDSON          PSC-16-2991GA               PSC-16-2991GA General Ledger Account                                                                   Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       4/12/2017    4/12/2017    Y   6/30/2023    2495218.96    0.00        1370888.78    1124330.18    15   NYS       N   Y   5    N                                             500 SEVENTH AVE                     15TH FLOOR                     NEW YORK                    NY   10018                  USA
+```
+[p035_p0041]
+
+```text
+JACOBS CIVIL CONSULTANTS, INC.             PSC-16-2991I                D04230 -Task 29 Value Engineering for Reconstruction AND Rehabilitation of the Upper Level Approach    Completed   Design and Construction/Maintenance              Authority Contract - Competitive Bid       6/21/2017    6/21/2017    Y   6/20/2023    967872.17     0.00        967872.17     0.00          10   NYS       N   Y   5    N                                             ONE PENN PLAZA, 24TH FL, STE 2400                                  NEW YORK                    NY   10119                  USA
+```
+[p035_p0042]
+
+```text
+JACOBS CIVIL CONSULTANTS, INC.             PSC-16-2991IA               PSC-16-2991IA General Ledger Account                                                                   Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       6/21/2017    6/21/2017    Y   6/20/2023    1198216.00    0.00        0.00          1198216.00    10   NYS       N   Y   5    N                                             ONE PENN PLAZA, 24TH FL, STE 2400                                  NEW YORK                    NY   10119                  USA
+```
+[p035_p0043]
+
+```text
+KSE-BTI -JV                                PSC-16-2991J                As-Needed Design                                                                                       Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       6/27/2017    6/27/2017    Y   6/26/2023    156359.00     0.00        95850.61      60508.39      10   Foreign   N   Y   5    N                                             494 BROAD ST, 4TH FL                                               NEWARK                      NJ   07102                  USA
+```
+[p035_p0044]
+
+```text
+PARSONS TRANSPORTATION GROUP OF NY         PSC-16-2991L                PSC-16-2991L                                                                                           Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       6/20/2017    6/20/2017    Y   6/19/2023    122810.04     0.00        121091.34     1718.70       15   NYS       N   Y   5    N                                             100 BROADWAY                        20TH FLOOR                     NEW YORK                    NY   10005                  USA
+```
+[p035_p0045]
+
+```text
+TY LIN INTERNATIONAL /MOTT MACDONALD JV    PSC-16-2991O                As-Needed Design                                                                                       Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       7/10/2017    7/10/2017    Y   7/9/2023     2152187.27    0.00        1808621.81    343565.46     10   NYS       N   Y   5    N                                             110 WILLIAM ST, 29TH FL                                            NEW YORK                    NY   10038                  USA
+```
+[p035_p0046]
+
+```text
+CAMPBELL FIRE PROTECTION, INC.             MNR1064                     FIRE EXTINGUISHER MTCE AND SVCS                                                                        Open        Other                                            Non Contract Procurement/Purchase Order                                                             0.00                                         NYS       N                                                          P O BOX 389                                                        SUFFERN                     NY   10901                  USA
+```
+[p035_p0047]
+
+```text
+WRS ENVIROMENTAL SERVICES INC.             1000A99124                  Asbestos Abatement Services                                                                            Open        Other                                            Authority Contract - Competitive Bid       4/5/2018     4/5/2018     Y   4/4/2023     2500000.00    0.00        494623.82     2005376.18    5    NYS       N   Y   0    N                                             17 OLD DOCK RD                                                     YAPHANK                     NY   11980                  USA
+```
+[p035_p0048]
+
+```text
+PS TECHNOLOGY, INC.                        MN2541                      Maint. LIRR TEAMS AND MNR CMS                                                                          Open        Technology - Consulting/Development or Support   Authority Contract - Competitive Bid       6/2/2014     6/2/2014     Y   6/1/2024     4980360.00    0.00        1320069.99    3660290.01    1    Foreign   N   Y   0    N                                             12567 COLLECTIONS CENTER DR                                        CHICAGO                     IL   60693                  USA
+```
+[p035_p0049]
+
+```text
+WRS ENVIROMENTAL SERVICES INC.             1000B99124                  Asbestos and Lead Abatement                                                                            Completed   Other                                            Authority Contract - Competitive Bid       4/5/2018     4/6/2018     Y   4/5/2023     5000000.00    0.00        0.00          5000000.00    5    NYS       N   Y   0    N                                             17 OLD DOCK RD                                                     YAPHANK                     NY   11980                  USA
+```
+[p035_p0050]
+
+```text
+RONNETTE RILEY ARCHITECT                   D81703M                     All-Agency Discretionary Contract utilizing NYS certified MWBEs and SDVOBs for AE Design, PM, Insp     Open        Consulting Services                              Authority Contract - Competitive Bid       10/21/2022   10/21/2022   Y   10/20/2025   305901.91     0.00        0.00          305901.91     63   NYS       N   Y   60   N                                             494 EIGHTH AVE, 15TH FL                                            NEW YORK                    NY   10001                  USA
+```
+[p035_p0051]
+
+```text
+AECOM USA, INC.                            D81663M                     IQ A/E Design Svcs - Fed Fund                                                                          Open        Consulting Services                              Authority Contract - Competitive Bid       4/21/2022    4/21/2022    Y   4/30/2025    527554.46     0.00        0.00          527554.46     21   NYS       N   Y   4    N                                             605 THIRD AVENUE                    30TH FLOOR                     NEW YORK                    NY   10158                  USA
+```
+[p035_p0052]
+
+```text
+GEODESIGN INC                              100000000081546             Landslide Remediation Emergenc                                                                         Open        Other Professional Services                      Authority Contract - Non-Competitive Bid   10/19/2023   10/19/2023   Y   12/31/2023   24786.38      0.00        0.00          24786.38      0    Foreign   N   N   0    Y   Emergency or Critical Need   24786.38     984 SOUTHFORD RD                                                   MIDDLEBURY                  CT   06762                  USA
+```
+[p035_p0053]
+
+```text
+GREATER BRIDGEPORT TRANSIT AUTHORITY       100000000080378             Bus Service 2018-2023                                                                                  Open        Other                                            Authority Contract - Competitive Bid       8/23/2018    10/1/2018    Y   1/31/2024    106333.00     0.00        6332.15       100000.85     6    Foreign   N   N   0    N                                             ONE CROSS ST                        ATTN MR THOMAS GORMAN          BRIDGEPORT                  CT   06610                  USA
+```
+[p035_p0054]
+
+```text
+BANTON CONSTRUCTION COMPANY                MN82133                     Hudson Line Cable Installation                                                                         Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       12/22/2017   2/1/2019     Y   5/5/2024     157920.00     0.00        0.00          157920.00     3    Foreign   N   Y   0    Y   NYS/NYC/CountyContract                    339 WASHINGTON AVE                                                 NORTH HAVEN                 CT   06473                  USA
+```
+[p035_p0055]
+
+```text
+HOLLISTER-WHITNEY ELEVATOR CO LLC          MN225331                    3-year Hollister Whitney Eleva                                                                         Open        Technology - Hardware                            Authority Contract - Non-Competitive Bid   7/3/2023     7/3/2023     Y   7/3/2026     200000.00     0.00        0.00          200000.00     1    Foreign   N   N   0    Y   Sole Source                  200000.00    1 HOLLISTER-WHITNEY PKWY            PO BOX 4025                    QUINCY                      IL   62305                  USA
+```
+[p035_p0056]
+
+```text
+BBM RAILWAY EQUIPMENT LLC                  100000000080652             Service of MNR and LIRR Turnta                                                                         Open        Consulting Services                              Authority Contract - Competitive Bid       10/7/2019    10/14/2019   Y   10/31/2024   220001.00     0.00        0.00          220001.00     3    Foreign   N   N   0    N                                             3200 INNOVATION PLACE                                              YOUNGSTOWN                  OH   44509                  USA
+```
+[p035_p0057]
+
+```text
+COMPETITION UNLIMITED CORP                 100000000081508             RFQnumber 227587 - 1 YR Paint, Prim                                                                    Open        Commodities/Supplies                             Authority Contract - Competitive Bid       10/24/2023   10/24/2023   Y   12/31/2024   228884.00     0.00        0.00          228884.00     2    NYS       N   Y   1    Y   Re-Bid/ Re-Solicited                      559 LIVINGSTON ST                                                  WESTBURY                    NY   11590                  USA
+```
+[p035_p0058]
+
+```text
+W. W. GRAINGER INC.                        100000000081270             3 Year Contract for Welders                                                                            Open        Commodities/Supplies                             Authority Contract - Competitive Bid       9/19/2022    9/19/2022    Y   9/18/2025    398317.39     0.00        0.00          398317.39     1    NYS       N   Y   0    Y   Below Dollar Threshold                    58 - 45 GRAND AVE                                                  MASPETH                     NY   11378                  USA
+```
+[p035_p0059]
+
+```text
+WHITE PLAINS BUS CO INC                    100000000080381             Bus Service 2018-2023                                                                                  Open        Other                                            Authority Contract - Competitive Bid       8/23/2018    10/1/2018    Y   3/29/2024    498101.00     0.00        494800.00     3301.00       6    NYS       N   N   0    Y   Legislation Require NYSCR                 14 FISHER LN                        PO BOX 823C                    WHITE PLAINS                NY   10603                  USA
+```
+[p035_p0060]
+
+```text
+NEELTRAN, INC.                             100000000081466             Transformer Refurb                                                                                     Open        Other Professional Services                      Authority Contract - Non-Competitive Bid   8/1/2023     8/1/2023     Y   4/1/2024     775688.66     0.00        0.00          775688.66     1    Foreign   N   N   0    Y   Sole Source                  775688.66    71 PICKETT DISTRICT RD              P.O. BOX 1659                  NEW MILFORD                 CT   06776      1659        USA
+```
+[p035_p0061]
+
+```text
+STV INC                                    100000000080117             Coach/ Locomotive ReplacementSpec, Development                                                         Open        Consulting Services                              Authority Contract - Competitive Bid       7/28/2017    7/28/2017    Y   1/31/2024    833028.44     0.00        757225.36     75803.08      2    NYS       N   N   0    N                                             225 PARK AVE SOUTH                                                 NEW YORK                    NY   10003                  USA
+```
+[p035_p0062]
+
+```text
+HENNINGSON, DURHAM AND RICHARDSON          MN70045                     MTA-10percent-ZR                                                                                       Open        Consulting Services                              Authority Contract - Competitive Bid       11/23/2010   4/25/2011    Y   12/31/2023   949177.29     0.00        849113.76     100063.53     9    NYS       N   N   0    N                                             500 SEVENTH AVE                     15TH FLOOR                     NEW YORK                    NY   10018                  USA
+```
+[p035_p0063]
+
+```text
+MWL BRASIL RODAS AND EIXOS LTDA            100000000080958             WHEEL 32 IN. CURVE PLATE, SHOR                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/15/2021    4/14/2021    Y   4/13/2026    1016046.00    0.00        50760.00      965286.00     10   Foreign   N   N   0    N                                             RODOVIA VITO ARDITO KM 1                                           CACAPAVA                         12282535          SP   OTHER   BRA
+```
+[p035_p0064]
+
+```text
+RONALD E DOWDY                             MN15452B                    PTC Spectrum Radio Frequency                                                                           Open        Technology - Software                            Authority Contract - Competitive Bid       3/21/2019    3/20/2019    Y   3/20/2024    3121639.79    0.00        3121638.79    1.00          2    Foreign   N   N   0    N                                             7209 INTERNATIONAL DR                                              ORLANDO                     FL   32819                  USA
+```
+[p035_p0065]
+
+```text
+STV INC                                    MN204634                    ADA Feasibility Study                                                                                  Open        Other Professional Services                      Authority Contract - Competitive Bid       12/28/2022   12/28/2022   Y   12/28/2024   3481039.55    0.00        0.00          3481039.55    5    NYS       N   Y   0    N                                             225 PARK AVE SOUTH                                                 NEW YORK                    NY   10003                  USA
+```
+[p035_p0066]
+
+```text
+HENNINGSON, DURHAM AND RICHARDSON          100000000081483             Engineering Services On-Call                                                                           Open        Other Professional Services                      Authority Contract - Competitive Bid       9/15/2023    10/5/2022    Y   10/4/2028    5000001.00    0.00        0.00          5000001.00    2    NYS       N   N   0    N                                             500 SEVENTH AVE                     15TH FLOOR                     NEW YORK                    NY   10018                  USA
+```
+[p035_p0067]
+
+```text
+MG VALDUNES                                100000000080962             WHEEL, 40 IN., LOCO, P32/GP35/                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/15/2021    4/14/2021    Y   4/13/2026    28750.00      0.00        9200.00       19550.00      10   Foreign   N   N   0    N                                             RUE GUSTAVE DELORY                  BP 12                          TRITH SAINT LEGER                59125             59   OTHER   FRA
+```
+[p035_p0068]
+
+```text
+CONSTRUCCIONES Y AUXILIAR DE FERROCARRIL   100000000080964             WHEEL 42 IN. FOR BL20 LOCOMOTI                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/15/2021    4/14/2021    Y   4/13/2026    67039.00      0.00        0.00          67039.00      6    Foreign   N   N   0    N                                             ORTEGA Y GASSET                                                    MADRID                           28006             M    OTHER   ESP
+```
+[p035_p0069]
+
+```text
+O R X RAILWAY CORP.                        100000000080973             AXLE 6-7/8 X 12 - PER MNR SPEC                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/15/2021    4/14/2021    Y   4/13/2026    97248.00      0.00        81040.00      16208.00      6    Foreign   N   N   0    N                                             ONE PARK AVE                                                       TIPTON                      PA   16684                  USA
+```
+[p035_p0070]
+
+```text
+LUCCHINI RS S P A                          100000000080961             WHEEL, 40 IN., LOCO, P32/GP35/                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/15/2021    4/14/2021    Y   4/13/2026    142317.00     0.00        0.00          142317.00     10   Foreign   N   N   0    N                                             VIA GIORGIO PAGLIA, 45                                             LOVERE (BG)                      24065             BG   OTHER   ITA
+```
+[p035_p0071]
+
+```text
+MG VALDUNES                                100000000080971             AXLE 6-7/8 X 12 - PER MNR SPEC                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/15/2021    4/14/2021    Y   4/13/2026    417125.00     0.00        0.00          417125.00     6    Foreign   N   N   0    N                                             RUE GUSTAVE DELORY                  BP 12                          TRITH SAINT LEGER                59125             59   OTHER   FRA
+```
+[p035_p0072]
+
+```text
+CONSTRUCCIONES Y AUXILIAR DE FERROCARRIL   100000000080970             AXLE, 6-1/2 X 11, M2/M3, SOLID                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/15/2021    4/14/2021    Y   4/13/2026    505960.00     0.00        277245.60     228714.40     6    Foreign   N   N   0    N                                             ORTEGA Y GASSET                                                    MADRID                           28006             M    OTHER   ESP
+```
+[p035_p0073]
+
+```text
+MG VALDUNES                                100000000080969             AXLE, 6-1/2 X 11, M2/M3, SOLID                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/15/2021    4/14/2021    Y   4/13/2026    749000.00     0.00        0.00          749000.00     10   Foreign   N   N   0    N                                             RUE GUSTAVE DELORY                  BP 12                          TRITH SAINT LEGER                59125             59   OTHER   FRA
+```
+[p035_p0074]
+
+```text
+MG VALDUNES                                100000000080966             AXLE, GRADE H, M7/M8, MNR                                                                              Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/15/2021    4/14/2021    Y   4/13/2026    1116500.00    0.00        0.00          1116500.00    6    Foreign   N   N   0    N                                             RUE GUSTAVE DELORY                  BP 12                          TRITH SAINT LEGER                59125             59   OTHER   FRA
+```
+[p035_p0075]
+
+```text
+K-IV ENTERPRISES LLC                       100000000080967             AXLE, DISC BRAKE, SHORLINER                                                                            Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/15/2021    4/14/2021    Y   4/13/2026    3625000.00    0.00        5800.00       3619200.00    6    Foreign   N   N   0    N                                             59 FLAMING ARROW ROAD                                              MAHWAH                      NJ   07430                  USA
+```
+[p035_p0076]
+
+```text
+CONSTRUCCIONES Y AUXILIAR DE FERROCARRIL   100000000080956             WHEEL 32 IN. CURVE PLATE, SHOR                                                                         Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/15/2021    4/14/2021    Y   4/13/2026    4614000.00    0.00        6152.00       4607848.00    10   Foreign   N   N   0    N                                             ORTEGA Y GASSET                                                    MADRID                           28006             M    OTHER   ESP
+```
+[p035_p0077]
+
+```text
+CONSTRUCCIONES Y AUXILIAR DE FERROCARRIL   100000000080965             AXLE, GRADE H, M7/M8                                                                                   Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/15/2021    4/14/2021    Y   4/13/2026    5243000.00    0.00        298593.60     4944406.40    6    Foreign   N   N   0    N                                             ORTEGA Y GASSET                                                    MADRID                           28006             M    OTHER   ESP
+```
+[p035_p0078]
+
+```text
+BDO GLOBAL RAIL PRODUCTS LLC               100000000080977             WHEEL, 36 IN. DIAMETER, M7/M8                                                                          Open        Commodities/Supplies                             Authority Contract - Competitive Bid       3/15/2021    4/14/2021    Y   4/13/2026    10400000.00   0.00        0.00          10400000.00   6    Foreign   N   N   0    N                                             3 MONROE PARKWAY #211                                              LAKE OSWEGO                 OR   97035                  USA
+```
+[p035_p0079]
+
+```text
+NEU INTERNATIONAL RAILWAYS                 600000000032983             R251 Enhanded Troubleshooting and Repair                                                               Open        Consulting Services                              Authority Contract - Competitive Bid       11/17/2023   4/17/2023    Y   12/31/2023   4800000.00    0.00        0.00          4800000.00    1    Foreign   N   N   0    Y   Sole Source                               92 RUE ALBERT EINSTEIN              ZA DE LA HOUSSAYE - CS 20013   LA CHAPELLE-D'ARMENTIERES        59933                  OTHER   FRA
+```
+[p035_p0080]
+
+```text
+CORCRAFT - NYS DEPT OF CORRECTIONAL SVS    600000000028561             DOB: fluid, windshield wiper                                                                           Open        Commodities/Supplies                             Non Contract Procurement/Purchase Order                                                             45330.45                                     NYS       N                                                          550 BROADWAY                                                       MENANDS                     NY   12204                  USA
+```
+[p035_p0081]
+
+```text
+NORTHEASTERN BUS REBUILDERS INC            600000000029451             DOB: 96-88-5009 BAE P/N 114E98                                                                         Open        Commodities/Supplies                             Non Contract Procurement/Purchase Order                                                             0.00                                         NYS       N                                                          3025 VETERANS MEMORIAL HIGHWAY                                     RONKONKOMA                  NY   11779                  USA
+```
+[p035_p0082]
+
+```text
+TRILLIUM CNG                               600000000023038             CNG OANDM Task Order                                                                                   Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       1/22/2019    1/22/2019    Y   3/31/2025    961503.00     0.00        956788.66     4714.34       1    Foreign   N   N   0    Y   Cntrct Assign. from Agency                PO BOX 26210                                                       OKLAHOMA CITY               OK   73126                  USA
+```
+[p035_p0083]
+
+```text
+MOTOR COACH INDUSTRIES INC.                B31153A                     From Req ID - 0000011718                                                                               Open        Other                                            Authority Contract - Competitive Bid       6/26/2012    8/31/2012    Y   12/31/2024   30410675.00   0.00        30183776.18   226898.82     1    Foreign   N   N   0    Y   Sole Source                               200 E OAKTON ST                                                    DES PLAINES                 IL   60018                  USA
+```
+[p035_p0084]
+
+```text
+WALSH CONSTRUCTION COMPANY II, LLC         C34838O                     AWO 75 Snow Removal                                                                                    Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       1/6/2021     1/6/2021     Y   11/4/2023    43000.00      0.00        43000.00      0.00          7    Foreign   N   Y   0    N                                             150 CLOVE ROAD                      11TH FLOOR                     LITTLE FALLS                NJ   07424                  USA
+```
+[p035_p0085]
+
+```text
+SKANSKA USA CIVIL NORTHEAST INC.           E34027OPR                   replacement                                                                                            Open        Design and Construction/Maintenance              Authority Contract - Competitive Bid       11/28/2022   11/28/2022   Y   11/28/2024   139626.00     0.00        0.00          139626.00     3    NYS       N   Y   0    N                                             75-20 ASTORIA BLVD                  SUITE 200                      EAST ELMHURST               NY   11370                  USA
+```
+[p035_p0086]
+
+```text
+SIEMENS MOBILITY INC                       S87055.01C                  Long Term Agreement LTA for Data Comm. Systems DCS purch. for CBTC trains / lines - Culver Line        Open        Design and Construction/Maintenance              Authority Contract - Non-Competitive Bid   5/15/2019    5/15/2019    Y   1/6/2039     4930829.00    0.00        4254396.81    676432.19     1    Foreign   N   N   0    N                                4930829.00   PO BOX 3498                                                        CAROL STREAM                IL   60132                  USA
+```
+[p035_p0087]
+
+```text
+VICOM COMPUTER SERVICES INC                T38240                      WAN/LAN Equip Repl, Network                                                                            Open        Technology - Hardware                            Authority Contract - Competitive Bid       10/30/2014   10/30/2014   Y   11/2/2025    15389287.74   0.00        15389287.74   0.00          9    NYS       N   Y   12   N                                             400 BROAD HOLLOW RD                 STE 1                          FARMINGDALE                 NY   11735                  USA
+```
+[p035_p0088]
+
+```text
+ENTECH ENGINEERING PC                      D81642 OPR                  All-Agency Indefinite Quantity Asbestos and Lead Disturbance Management and Air Monitoring Services    Open        Consulting Services                              Authority Contract - Competitive Bid       4/8/2022     4/8/2022     Y   4/7/2025     46862.77      0.00        0.00          46862.77      9    NYS       Y   Y   3    N                                             11 BROADWAY, 21ST FL                                               NEW YORK                    NY   10004                  USA
+```
+[p035_p0089]
+
+```text
+ARCADIS OF NEW YORK, INC.                  D81650                      IQ Risk Assessment Contract                                                                            Open        Other Professional Services                      Authority Contract - Competitive Bid       9/22/2022    11/11/2022   Y   11/10/2025   55268.96      0.00        0.00          55268.96      7    Foreign   N   Y   1    N                                             630 PLAZA DR                        SUITE 200                      HIGHLANDS RANCH             CO   80129      2379        USA
+```
+[p035_p0090]
+
+```text
+ARCADIS OF NEW YORK, INC.                  D81649                      IQ Risk Assessment Contract                                                                            Open        Other Professional Services                      Authority Contract - Competitive Bid       9/22/2022    11/10/2022   Y   11/10/2025   56246.79      0.00        0.00          56246.79      7    Foreign   N   Y   1    N                                             630 PLAZA DR                        SUITE 200                      HIGHLANDS RANCH             CO   80129      2379        USA
+```
+[p035_p0091]
+
+```text
+NAIK CONSULTING GROUP PC                   D81701 OPR                  All-Agency Discretionary Contract utilizing NYS certified MWBEs and SDVOBs for AE Design, PM, Insp     Open        Consulting Services                              Authority Contract - Competitive Bid       10/21/2022   10/21/2022   Y   10/20/2025   61893.10      0.00        0.00          61893.10      63   Foreign   Y   Y   3    N                                             200 METROPLEX DR, STE#403                                          EDISON                      NJ   08817                  USA
+```
+[p035_p0092]
+
+```text
+PAL ENVIRONMENTAL SAFETY CORP.             C30850 OPR                  IQ Asbestos Abatement and Other Environmental Remediation Services                                     Open        Other Professional Services                      Authority Contract - Competitive Bid       9/28/2020    9/30/2020    Y   9/29/2024    66671.36      0.00        0.00          66671.36      7    NYS       N   Y   1    N                                             11 - 02 QUEENS PLAZA S                                             LONG ISLAND CITY            NY   11101      4908        USA
+```
+[p035_p0093]
+
+```text
+INFOTRAN ENGINEERS AND ARCHITECTS PC       D81582 OPR                  IQ Staffing Services for Miscellaneous Projects                                                        Open        Staffing Services                                Authority Contract - Competitive Bid       9/13/2018    9/13/2018    Y   9/12/2023    179056.00     0.00        57896.77      121159.23     22   Foreign   Y   Y   6    N                                             60 EVERGREEN PLACE                  STE 301                        EAST ORANGE                 NJ   07018                  USA
+```
+[p035_p0094]
+
+```text
+NEW YORK ENVIRONMENTAL SYSTEMS, INC.       C30849                      IQ Asbestos Abatement and Other Environmental Remediation Services                                     Open        Other Professional Services                      Authority Contract - Competitive Bid       9/30/2020    9/30/2020    Y   9/29/2024    214179.12     0.00        118180.62     95998.50      7    NYS       N   Y   1    N                                             368 RICHARDSON ST                                                  BROOKLYN                    NY   11222                  USA
+```
+[p035_p0095]
+
+```text
+NESCO RESOURCE LLC                         D81622                      IQ Staffing Services for Miscellaneous Projects                                                        Open        Staffing Services                                Authority Contract - Competitive Bid       9/13/2018    9/13/2018    Y   9/12/2023    235057.00     0.00        192576.54     42480.46      22   Foreign   N   Y   6    N                                             P O BOX 901372                                                     CLEVELAND                   OH   44190                  USA
+```
+[p035_p0096]
+
+```text
+METRO TECH CONSULTING SVS INC              D81580 OPR                  IQ Staffing Services for Miscellaneous Projects                                                        Open        Staffing Services                                Authority Contract - Competitive Bid       9/13/2018    3/14/2019    Y   9/12/2023    247649.00     0.00        122254.80     125394.20     22   NYS       N   Y   6    N                                             244 MADISON AVE # 2050                                             NEW YORK                    NY   10016                  USA
+```
+[p035_p0097]
+
+```text
+HENNINGSON, DURHAM AND RICHARDSON          D81609 OPR                  IQ CCM and Inspection Services for Miscellaneous Construction Projects                                 Open        Consulting Services                              Authority Contract - Competitive Bid       12/10/2018   1/29/2024    Y   6/30/2025    459806.63     0.00        0.00          459806.63     27   NYS       N   Y   2    N                                             500 SEVENTH AVE                     15TH FLOOR                     NEW YORK                    NY   10018                  USA
+```
+[p035_p0098]
+
+```text
+A I ENGINEERS INC                          D81691                      Discretionary Contract                                                                                 Open        Consulting Services                              Authority Contract - Competitive Bid       10/21/2022   10/21/2022   Y   10/20/2025   484349.56     0.00        0.00          484349.56     63   Foreign   Y   Y   60   N                                             919 MIDDLE ST                                                      MIDDLETOWN                  CT   06457                  USA
+```
+[p035_p0099]
+
+```text
+MOTT MACDONALD NY INC                      D81614                      IQ CCM and Inspection Services for Miscellaneous Construction Projects                                 Open        Consulting Services                              Authority Contract - Competitive Bid       1/14/2019    1/14/2019    Y   6/30/2025    699644.00     0.00        423650.34     275993.66     27   NYS       N   Y   2    N                                             1400 BROADWAY, 21ST FL                                             NEW YORK                    NY   10018                  USA
+```
+[p035_p0100]
+
+```text
+HEPCO, INC.                                D81576 OPR 1                IQ Staffing Services for Miscellaneous Projects                                                        Open        Staffing Services                                Authority Contract - Competitive Bid       9/13/2018    9/13/2018    Y   9/12/2023    783051.00     0.00        641408.27     141642.73     22   Foreign   N   Y   6    N                                             160 PEHLE AVE                       SUITE 202                      SADDLE BROOK                NJ   07663      5295        USA
+```
+[p035_p0101]
+
+```text
+PAL ENVIRONMENTAL SAFETY CORP.             C30846                      IQ Asbestos Abatement and Other Environmental Remediation Services                                     Open        Other Professional Services                      Authority Contract - Competitive Bid       9/28/2020    9/30/2020    Y   9/29/2024    2437624.52    0.00        673481.20     1764143.32    7    NYS       N   Y   1    N                                             11 - 02 QUEENS PLAZA S                                             LONG ISLAND CITY            NY   11101      4908        USA
+```
+[p035_p0102]
+
+```text
+TUV RHEINLAND MOBILITY INC                 D81542                      IQ Independent Safety Assessor Services for New Tech, Relay-Based Train Control and Signaling Proj     Open        Consulting Services                              Authority Contract - Competitive Bid       10/16/2015   10/16/2015   Y   10/31/2024   2979333.21    0.00        2737514.41    241818.80     7    Foreign   N   Y   5    N                                             1901 MONTREAL RD                    SUITE 126                      TUCKER                      GA   30084                  USA
+```
+[p035_p0103]
+
+```text
+HNTB NEW YORK ENGINEERING                  D81611                      IQ CCM and Inspection Services for Miscellaneous Construction Projects                                 Open        Consulting Services                              Authority Contract - Competitive Bid       1/4/2019     1/4/2019     Y   6/30/2025    5067054.00    0.00        4629313.37    437740.63     27   NYS       N   Y   2    N                                             E PC                                FIVE PENN PLAZA                NEW YORK                    NY   10001                  USA
+```
+[p035_p0104]
+
+```text
+ROTATOR STAFFING SERVICES INC              D81415                      Temporary Professional/Technical Staffing Consultant Services for Federally Funded Capital Projects    Open        Staffing Services                                Authority Contract - Competitive Bid       12/1/2011    12/1/2011    Y   10/10/2023   10861035.58   0.00        9421029.02    1440006.56    5    Foreign   N   Y   1    N                                             P O BOX 366                         25 KENNEDY BLVD                E BRUNSWICK                 NJ   08816      0366        USA
+```
+[p035_p0105]
+
+```text
+NESCO RESOURCE LLC                         D81618                      IQ Staffing Services for Miscellaneous Projects                                                        Open        Staffing Services                                Authority Contract - Competitive Bid       9/13/2018    9/13/2018    Y   9/12/2023    11111111.11   0.00        0.00          11111111.11   22   Foreign   N   Y   6    N                                             P O BOX 901372                                                     CLEVELAND                   OH   44190                  USA
+```
+[p035_p0106]
+
+```text
+HNTB NEW YORK ENGINEERING                  D81603                      IQ CCM and Inspection Services for Miscellaneous Construction Projects                                 Open        Consulting Services                              Authority Contract - Competitive Bid       1/4/2019     1/4/2019     Y   6/30/2025    30769230.76   0.00        0.00          30769230.76   27   NYS       N   Y   2    N                                             E PC                                FIVE PENN PLAZA                NEW YORK                    NY   10001                  USA
+```
+[p035_p0107]
+
+```text
+WSP USA INC                                D81635                      IQ CCM and Inspection Services for Misc. Construction Projects                                         Open        Consulting Services                              Authority Contract - Competitive Bid       1/7/2019     1/7/2019     Y   6/30/2025    30769230.76   0.00        0.00          30769230.76   27   NYS       N   Y   2    N                                             ONE PENN PLAZA, 4TH FL                                             NEW YORK                    NY   10119                  USA
+```
+[p035_p0108]
+
+```text
+METRO DESIGNERS - A GANNETT FLEMING-       D81668L                     All Agency IQ A/E Services for Miscellaneous Construction AND Security Projects - Federal funded       Open        Consulting Services                              Authority Contract - Competitive Bid       5/13/2022    7/20/2023    Y   5/13/2025    237820.08     0.00        0.00          237820.08     21   NYS       N   Y   4    N                                             DEWBERRY JV                         ONE PENN PLAZA, STE 630        NEW YORK                    NY   10119      0101        USA
+```
+[p035_p0109]
+
+```text
+METRO DESIGNERS - A GANNETT FLEMING-       D81682L                     IQ A/E Design Svcs- State Fund                                                                         Open        Consulting Services                              Authority Contract - Competitive Bid       5/15/2022    5/15/2022    Y   5/13/2025    514377.00     0.00        0.00          514377.00     21   NYS       N   Y   4    N                                             DEWBERRY JV                         ONE PENN PLAZA, STE 630        NEW YORK                    NY   10119      0101        USA
+```
+[p035_p0110]
+
+```text
+NAIK CONSULTING GROUP PC                   D81607L                     IQ CCM and Inspection Services for Misc. Construction Projects                                         Open        Consulting Services                              Authority Contract - Competitive Bid       12/14/2018   12/14/2018   Y   12/13/2023   554230.96     0.00        0.00          554230.96     27   Foreign   Y   Y   2    N                                             200 METROPLEX DR, STE#403                                          EDISON                      NJ   08817                  USA
+```
+[p035_p0111]
+
+```text
+JACOBS CIVIL CONSULTANTS, INC.             D81612L                     IQ CCM and Inspection Services for Miscellaneous Construction Projects                                 Open        Consulting Services                              Authority Contract - Competitive Bid       12/11/2018   6/13/2023    Y   6/30/2025    801420.00     0.00        0.00          801420.00     27   NYS       N   Y   2    N                                             ONE PENN PLAZA, 24TH FL, STE 2400                                  NEW YORK                    NY   10119                  USA
+```
+[p035_p0112]
+
+```text
+ENTECH ENGINEERING PC                      D81695L                     Discretionary Contract                                                                                 Open        Consulting Services                              Authority Contract - Competitive Bid       10/21/2022   10/21/2022   Y   10/20/2025   855366.22     0.00        0.00          855366.22     63   NYS       Y   Y   60   N                                             11 BROADWAY, 21ST FL                                               NEW YORK                    NY   10004                  USA
+```
+[p035_p0113]
+
+```text
+SOLARI CORP.                               0400000000000000000000383   Maintenance of Solari Signs                                                                            Open        Technology - Hardware                            Authority Contract - Non-Competitive Bid   1/1/2012     1/1/2012     Y   6/28/2024    4977632.00    0.00        4809045.12    168586.88     1    NYS       N   N   0    Y   Sole Source                  4977632.00   261 W 35TH ST                       SUITE#1402                     NEW YORK                    NY   10001                  USA
+```

@@ -1,0 +1,70 @@
+{
+  "run_id": "2026-06-10T17-48-04-498Z_1496766-5bddf996_ingest_120507-brt-cb6-34th-street",
+  "generated_at": "2026-06-10T19:18:03.153Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 5,
+  "completed": 5,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 14,
+  "validated_decision_count": 13,
+  "quarantined_decision_count": 1,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T17-48-04-498Z_1496766-5bddf996_ingest_120507-brt-cb6-34th-street",
+    "manifest": "data/canonicalize/2026-06-10T17-48-04-498Z_1496766-5bddf996_ingest_120507-brt-cb6-34th-street/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T17-48-04-498Z_1496766-5bddf996_ingest_120507-brt-cb6-34th-street/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T17-48-04-498Z_1496766-5bddf996_ingest_120507-brt-cb6-34th-street/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T17-48-04-498Z_1496766-5bddf996_ingest_120507-brt-cb6-34th-street/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-48-04-498Z_1496766-5bddf996_ingest_120507-brt-cb6-34th-street/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-461Z_1609876-97a58d37_canonicalize_2026-06-10t17-48-04-498z-1496766-5bddf996-ingest-120507-brt-cb6-34th-street-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 6,
+      "validated_decision_count": 6,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-48-04-498Z_1496766-5bddf996_ingest_120507-brt-cb6-34th-street/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-462Z_1609876-f45dd8d2_canonicalize_2026-06-10t17-48-04-498z-1496766-5bddf996-ingest-120507-brt-cb6-34th-street-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-48-04-498Z_1496766-5bddf996_ingest_120507-brt-cb6-34th-street/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-470Z_1609876-7e62279f_canonicalize_2026-06-10t17-48-04-498z-1496766-5bddf996-ingest-120507-brt-cb6-34th-street-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-48-04-498Z_1496766-5bddf996_ingest_120507-brt-cb6-34th-street/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-470Z_1609876-488165a1_canonicalize_2026-06-10t17-48-04-498z-1496766-5bddf996-ingest-120507-brt-cb6-34th-street-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 5,
+      "validated_decision_count": 5,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-48-04-498Z_1496766-5bddf996_ingest_120507-brt-cb6-34th-street/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-470Z_1609876-70b6ee47_canonicalize_2026-06-10t17-48-04-498z-1496766-5bddf996-ingest-120507-brt-cb6-34th-street-treatment-relations"
+    }
+  ]
+}

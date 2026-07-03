@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T23-01-15-160Z_1976810-7fae13a5_ingest_2012-01-24-sbs-utica-merchants",
+  "generated_at": "2026-06-11T02:25:03.423Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 25,
+  "validated_decision_count": 24,
+  "quarantined_decision_count": 1,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T23-01-15-160Z_1976810-7fae13a5_ingest_2012-01-24-sbs-utica-merchants",
+    "manifest": "data/canonicalize/2026-06-10T23-01-15-160Z_1976810-7fae13a5_ingest_2012-01-24-sbs-utica-merchants/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T23-01-15-160Z_1976810-7fae13a5_ingest_2012-01-24-sbs-utica-merchants/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-01-15-160Z_1976810-7fae13a5_ingest_2012-01-24-sbs-utica-merchants/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T23-01-15-160Z_1976810-7fae13a5_ingest_2012-01-24-sbs-utica-merchants/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 2,
+      "validated_decision_count": 2,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-01-15-160Z_1976810-7fae13a5_ingest_2012-01-24-sbs-utica-merchants/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-19-43-109Z_2111393-75488284_canonicalize_2026-06-10t23-01-15-160z-1976810-7fae13a5-ingest-2012-01-24-sbs-utica-merchants-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 3,
+      "validated_decision_count": 3,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-01-15-160Z_1976810-7fae13a5_ingest_2012-01-24-sbs-utica-merchants/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-19-43-118Z_2111393-b22f702d_canonicalize_2026-06-10t23-01-15-160z-1976810-7fae13a5-ingest-2012-01-24-sbs-utica-merchants-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-01-15-160Z_1976810-7fae13a5_ingest_2012-01-24-sbs-utica-merchants/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-19-43-118Z_2111393-4c902a03_canonicalize_2026-06-10t23-01-15-160z-1976810-7fae13a5-ingest-2012-01-24-sbs-utica-merchants-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-01-15-160Z_1976810-7fae13a5_ingest_2012-01-24-sbs-utica-merchants/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-19-43-118Z_2111393-ac8d1c7b_canonicalize_2026-06-10t23-01-15-160z-1976810-7fae13a5-ingest-2012-01-24-sbs-utica-merchants-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 3,
+      "validated_decision_count": 2,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-01-15-160Z_1976810-7fae13a5_ingest_2012-01-24-sbs-utica-merchants/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-19-43-118Z_2111393-1315ade7_canonicalize_2026-06-10t23-01-15-160z-1976810-7fae13a5-ingest-2012-01-24-sbs-utica-merchants-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 15,
+      "validated_decision_count": 15,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-01-15-160Z_1976810-7fae13a5_ingest_2012-01-24-sbs-utica-merchants/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-19-43-118Z_2111393-08f44c72_canonicalize_2026-06-10t23-01-15-160z-1976810-7fae13a5-ingest-2012-01-24-sbs-utica-merchants-relation-linker"
+    }
+  ]
+}

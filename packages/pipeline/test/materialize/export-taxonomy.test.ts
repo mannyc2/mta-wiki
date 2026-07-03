@@ -1,0 +1,44 @@
+import { describe, expect, it } from "bun:test";
+import { stableJson } from "@mta-wiki/db/stable-json";
+import { buildTaxonomy } from "@mta-wiki/pipeline/materialize/export-taxonomy";
+import { ASSERTION_STATUSES } from "@mta-wiki/pipeline/records/assertion-qualifiers";
+import { RELATION_ENDPOINT_SHAPES, RELATION_FAMILIES, RELATION_FAMILY_BY_KIND } from "@mta-wiki/pipeline/records/relations";
+import type { JsonValue } from "@mta-wiki/db/types";
+
+describe("buildTaxonomy", () => {
+  it("lists every declared relation family once in declared order", () => {
+    const taxonomy = buildTaxonomy();
+    expect(taxonomy.families.map((entry) => entry.family)).toEqual([...RELATION_FAMILIES]);
+    expect(new Set(taxonomy.families.map((entry) => entry.family)).size).toBe(RELATION_FAMILIES.length);
+  });
+
+  it("lists every relation kind exactly once under its declared family", () => {
+    const taxonomy = buildTaxonomy();
+    const seen = new Map<string, string>();
+    for (const family of taxonomy.families) {
+      for (const kind of family.kinds) seen.set(kind.kind, family.family);
+    }
+    expect([...seen.keys()].sort()).toEqual([...RELATION_FAMILY_BY_KIND.keys()].sort());
+    for (const [kind, family] of RELATION_FAMILY_BY_KIND) {
+      expect(seen.get(kind)).toBe(family);
+    }
+  });
+
+  it("exports endpoint shapes for shaped relation kinds", () => {
+    const taxonomy = buildTaxonomy();
+    const metric = taxonomy.families.flatMap((family) => family.kinds).find((kind) => kind.kind === "has_metric");
+    expect(metric?.subject_kinds).toEqual([...RELATION_ENDPOINT_SHAPES.has_metric!.subject].sort());
+    expect(metric?.object_kinds).toEqual([...RELATION_ENDPOINT_SHAPES.has_metric!.object].sort());
+  });
+
+  it("exports assertion statuses from the assertion qualifier vocabulary", () => {
+    expect(buildTaxonomy().assertion_statuses).toEqual([...ASSERTION_STATUSES]);
+  });
+
+  it("is stable across builds", () => {
+    const first = buildTaxonomy();
+    const second = buildTaxonomy();
+    expect(second).toEqual(first);
+    expect(stableJson(second as unknown as JsonValue)).toBe(stableJson(first as unknown as JsonValue));
+  });
+});

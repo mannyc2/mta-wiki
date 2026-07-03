@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T23-15-07-535Z_1976810-1e49fd8b_ingest_2013-09-12-sbs-utica-cb8",
+  "generated_at": "2026-06-11T05:30:39.188Z",
+  "dry_run": false,
+  "wrote": true,
+  "decision_count": 13,
+  "reviewed_count": 8,
+  "alias_additions": [
+    {
+      "kind": "corridor",
+      "alias": "corridor_utica-av",
+      "target": "corridor_utica-ave-st-johns-pl-church-ave-2013",
+      "decision_id": "obs_corridor_utica_ave_st_johns_church_2013"
+    }
+  ],
+  "aliases_already_present": [],
+  "do_not_merge_additions": [],
+  "relation_submissions": 0,
+  "quarantined": 7,
+  "conflicts": [],
+  "paths": {
+    "merges": "data/identity-overrides/merges.json",
+    "do_not_merge": "data/identity-overrides/do-not-merge.json",
+    "relation_submissions_jsonl": "data/submissions/2026-06-10T23-15-07-535Z_1976810-1e49fd8b_ingest_2013-09-12-sbs-utica-cb8_canonicalize.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-15-07-535Z_1976810-1e49fd8b_ingest_2013-09-12-sbs-utica-cb8/apply-quarantine.jsonl",
+    "apply_report": "data/canonicalize/2026-06-10T23-15-07-535Z_1976810-1e49fd8b_ingest_2013-09-12-sbs-utica-cb8/apply-report.json"
+  }
+}

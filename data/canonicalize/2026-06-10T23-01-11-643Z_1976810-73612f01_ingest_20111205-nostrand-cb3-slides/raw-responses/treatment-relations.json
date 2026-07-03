@@ -1,0 +1,443 @@
+{
+  "run_id": "2026-06-10T23-01-11-643Z_1976810-73612f01_ingest_20111205-nostrand-cb3-slides",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T02:22:15.432Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-bus-signal-priority",
+        "local_observation_id": "treatment_bus_signal_priority_20111205",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_bus-signal-priority-20111205",
+            "description": "Bus Signal Priority featured as an SBS feature on the Nostrand/Rogers corridor",
+            "evidence_refs": [
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p003_c0002",
+                "source_quote": "An illustration showing a blue bus approaching a traffic light. A yellow cone is positioned between the bus and the light, with a green arrow pointing towards the light, symbolizing bus signal priority."
+              },
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p003_c0003",
+                "source_quote": "Bus Signal Priority"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 3 SBS Features heading explicitly presents Bus Signal Priority as an SBS feature for the Nostrand/Rogers project.",
+        "evidence_refs": [
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p003_c0002",
+            "source_quote": "An illustration showing a blue bus approaching a traffic light. A yellow cone is positioned between the bus and the light, with a green arrow pointing towards the light, symbolizing bus signal priority."
+          },
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p003_c0003",
+            "source_quote": "Bus Signal Priority"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-lanes",
+        "local_observation_id": "treatment_bus_lanes_20111205",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_bus-lanes-20111205",
+            "description": "Bus Lanes featured as an SBS feature on the Nostrand/Rogers corridor",
+            "evidence_refs": [
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p003_c0004",
+                "source_quote": "A photograph of a city street with a designated bus lane. A bus is visible in the lane, and other vehicles are in the adjacent lanes. The street is lined with shops and buildings."
+              },
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p003_c0005",
+                "source_quote": "Bus Lanes"
+              },
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p007_c0004",
+                "source_quote": "Note: Bus Lane is at right curb on Nostrand & Rogers between Eastern Pkwy & Empire Blvd, and on Bedford Ave between DeKalb & Flushing Aves"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 3 SBS Features and page 7 Nostrand SBS Project Features both identify bus lanes as a treatment of the project.",
+        "evidence_refs": [
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p003_c0004",
+            "source_quote": "A photograph of a city street with a designated bus lane. A bus is visible in the lane, and other vehicles are in the adjacent lanes. The street is lined with shops and buildings."
+          },
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p003_c0005",
+            "source_quote": "Bus Lanes"
+          },
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p007_c0004",
+            "source_quote": "Note: Bus Lane is at right curb on Nostrand & Rogers between Eastern Pkwy & Empire Blvd, and on Bedford Ave between DeKalb & Flushing Aves"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-pre-payment",
+        "local_observation_id": "treatment_pre_payment_20111205",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_pre-payment-20111205",
+            "description": "Pre-Payment (off-board fare collection) featured as an SBS feature on the Nostrand/Rogers corridor",
+            "evidence_refs": [
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p003_c0006",
+                "source_quote": "A photograph of a person standing at a pre-payment kiosk at a bus stop. The kiosk is blue and has a screen and a coin slot. There are other people and a bus stop shelter in the background."
+              },
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p003_c0007",
+                "source_quote": "Pre-Payment"
+              },
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p004_c0002",
+                "source_quote": "1. Pay before you board by dipping MetroCard at sidewalk MetroCard machine or inserting coins at sidewalk coin machine 2. Take your proof of payment receipt 3. Enter through front or rear door of bus – no need to show receipt to the driver"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 3 SBS Features and dedicated page 4 'How Pre-Payment Works' clearly present pre-payment as a treatment of the SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p003_c0006",
+            "source_quote": "A photograph of a person standing at a pre-payment kiosk at a bus stop. The kiosk is blue and has a screen and a coin slot. There are other people and a bus stop shelter in the background."
+          },
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p003_c0007",
+            "source_quote": "Pre-Payment"
+          },
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p004_c0002",
+            "source_quote": "1. Pay before you board by dipping MetroCard at sidewalk MetroCard machine or inserting coins at sidewalk coin machine 2. Take your proof of payment receipt 3. Enter through front or rear door of bus – no need to show receipt to the driver"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-sbs-stations",
+        "local_observation_id": "treatment_sbs_stations_20111205",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_sbs-stations-20111205",
+            "description": "SBS Stations featured as an SBS feature on the Nostrand/Rogers corridor",
+            "evidence_refs": [
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p003_c0010",
+                "source_quote": "A photograph of a bus stop shelter. A person is waiting inside the shelter, which has a glass wall. There are posters on the shelter, including one that says \"Llama sin usar\"."
+              },
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p003_c0011",
+                "source_quote": "Stations"
+              },
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p008_c0003",
+                "source_quote": "Local Bus Stop at curb New Shelter Fare Collection Machines Bus Bulb: Sidewalks at SBS stations will extend out to the bus lane. Buses will not need to pull in and out of traffic. Higher curbs on the SBS platform will allow for easier boarding."
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 3 SBS Features and page 8 Empire Blvd SBS Station detail explicitly present SBS stations as a treatment.",
+        "evidence_refs": [
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p003_c0010",
+            "source_quote": "A photograph of a bus stop shelter. A person is waiting inside the shelter, which has a glass wall. There are posters on the shelter, including one that says \"Llama sin usar\"."
+          },
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p003_c0011",
+            "source_quote": "Stations"
+          },
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p008_c0003",
+            "source_quote": "Local Bus Stop at curb New Shelter Fare Collection Machines Bus Bulb: Sidewalks at SBS stations will extend out to the bus lane. Buses will not need to pull in and out of traffic. Higher curbs on the SBS platform will allow for easier boarding."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-passenger-info",
+        "local_observation_id": "treatment_passenger_info_20111205",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_passenger-info-20111205",
+            "description": "Passenger Info featured as an SBS feature on the Nostrand/Rogers corridor",
+            "evidence_refs": [
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p003_c0008",
+                "source_quote": "A diagram showing bus routes and stops. The top part is labeled \"Westbound to Inwood\" and the bottom part is labeled \"Eastbound to Bay Plaza\". It shows a series of stops with bus numbers and directions."
+              },
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p003_c0009",
+                "source_quote": "Passenger Info"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 3 SBS Features explicitly lists Passenger Info as an SBS feature.",
+        "evidence_refs": [
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p003_c0008",
+            "source_quote": "A diagram showing bus routes and stops. The top part is labeled \"Westbound to Inwood\" and the bottom part is labeled \"Eastbound to Bay Plaza\". It shows a series of stops with bus numbers and directions."
+          },
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p003_c0009",
+            "source_quote": "Passenger Info"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-branding",
+        "local_observation_id": "treatment_branding_20111205",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_branding-20111205",
+            "description": "SBS Branding featured as an SBS feature on the Nostrand/Rogers corridor",
+            "evidence_refs": [
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p003_c0012",
+                "source_quote": "A photograph of a blue and white bus. The destination sign on the front of the bus says \"542 to 55th Ave\". The bus is parked on a city street."
+              },
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p003_c0013",
+                "source_quote": "Branding"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 3 SBS Features explicitly lists Branding as an SBS feature.",
+        "evidence_refs": [
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p003_c0012",
+            "source_quote": "A photograph of a blue and white bus. The destination sign on the front of the bus says \"542 to 55th Ave\". The bus is parked on a city street."
+          },
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p003_c0013",
+            "source_quote": "Branding"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-fare-enforcement",
+        "local_observation_id": "treatment_fare_enforcement_20111205",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_fare-enforcement-20111205",
+            "description": "Fare Enforcement (Eagle Team) as part of Pre-Payment system on Nostrand/Rogers SBS",
+            "evidence_refs": [
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p005_c0002",
+                "source_quote": "• Inspector teams conduct random checks of buses • $100 fine for passengers without a receipt • Fare evasion on Bx12 SBS and M15 SBS declined after pre-payment introduced"
+              },
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p005_c0003",
+                "source_quote": "A photograph showing two NYCT Eagle Team officers in dark blue uniforms with 'NYCT' on the back, standing next to a white and blue bus. The bus has '+selectbuservice' written on its side. A label 'NYCT Eagle Team' is positioned above the officers. The bus is parked on a sidewalk, and the scene is outdoors during the day."
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 5 'How Pre-Payment Works: Enforcement' is part of the same SBS presentation and describes fare enforcement as a treatment component.",
+        "evidence_refs": [
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "• Inspector teams conduct random checks of buses • $100 fine for passengers without a receipt • Fare evasion on Bx12 SBS and M15 SBS declined after pre-payment introduced"
+          },
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p005_c0003",
+            "source_quote": "A photograph showing two NYCT Eagle Team officers in dark blue uniforms with 'NYCT' on the back, standing next to a white and blue bus. The bus has '+selectbuservice' written on its side. A label 'NYCT Eagle Team' is positioned above the officers. The bus is parked on a sidewalk, and the scene is outdoors during the day."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-offset-bus-lane",
+        "local_observation_id": "treatment_offset_bus_lane_nostrand_rogers_20111205",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_offset-bus-lane-nostrand-rogers-20111205",
+            "description": "Offset bus lane on Nostrand & Rogers and Bedford Ave as part of Nostrand SBS Project Features",
+            "evidence_refs": [
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p007_c0003",
+                "source_quote": "Parking in midday, nights, and weekends; Travel Lane in AM and PM peak periods Travel Lane Dedicated Bus Lane & Right Turn Lane: Offset bus lane allows buses to move quickly and preserves parking Parking along the curb except at bus stops"
+              },
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p007_c0004",
+                "source_quote": "Note: Bus Lane is at right curb on Nostrand & Rogers between Eastern Pkwy & Empire Blvd, and on Bedford Ave between DeKalb & Flushing Aves"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 7 under 'Nostrand SBS Project Features' explicitly describes the offset bus lane configuration.",
+        "evidence_refs": [
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p007_c0003",
+            "source_quote": "Parking in midday, nights, and weekends; Travel Lane in AM and PM peak periods Travel Lane Dedicated Bus Lane & Right Turn Lane: Offset bus lane allows buses to move quickly and preserves parking Parking along the curb except at bus stops"
+          },
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p007_c0004",
+            "source_quote": "Note: Bus Lane is at right curb on Nostrand & Rogers between Eastern Pkwy & Empire Blvd, and on Bedford Ave between DeKalb & Flushing Aves"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-bulb-empire",
+        "local_observation_id": "treatment_bus_bulb_empire_blvd_20111205",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_bus-bulb-empire-blvd-20111205",
+            "description": "Empire Blvd SBS Station with bus bulb as part of Nostrand SBS Project Features",
+            "evidence_refs": [
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p008_c0002",
+                "source_quote": "Empire Blvd SBS Station"
+              },
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p008_c0003",
+                "source_quote": "Local Bus Stop at curb New Shelter Fare Collection Machines Bus Bulb: Sidewalks at SBS stations will extend out to the bus lane. Buses will not need to pull in and out of traffic. Higher curbs on the SBS platform will allow for easier boarding."
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 8 under 'Nostrand SBS Project Features' explicitly describes the Empire Blvd SBS Station with bus bulb.",
+        "evidence_refs": [
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p008_c0002",
+            "source_quote": "Empire Blvd SBS Station"
+          },
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p008_c0003",
+            "source_quote": "Local Bus Stop at curb New Shelter Fare Collection Machines Bus Bulb: Sidewalks at SBS stations will extend out to the bus lane. Buses will not need to pull in and out of traffic. Higher curbs on the SBS platform will allow for easier boarding."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-delivery-zones",
+        "local_observation_id": "treatment_delivery_zones_20111205",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_delivery-zones-20111205",
+            "description": "Delivery Windows curb solution presented as part of the Nostrand/Rogers SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p019_c0003",
+                "source_quote": "• Commercial Vehicle delivery zones help businesses get deliveries and reduce double parking • 10am-12pm on one side of street, 12pm-2pm on other side of street – preserves critical afternoon parking"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 19 'Curb Solutions' is part of the same SBS presentation and presents Delivery Windows as a supporting treatment.",
+        "evidence_refs": [
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p019_c0003",
+            "source_quote": "• Commercial Vehicle delivery zones help businesses get deliveries and reduce double parking • 10am-12pm on one side of street, 12pm-2pm on other side of street – preserves critical afternoon parking"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metered-parking",
+        "local_observation_id": "treatment_metered_parking_20111205",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_metered-parking-20111205",
+            "description": "Metered Parking curb solution presented as part of the Nostrand/Rogers SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p019_c0005",
+                "source_quote": "• Encourages drivers to park just as long as needed, then space is open to the next shopper • Add to commercial areas without meters"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 19 'Curb Solutions' presents Metered Parking as a supporting treatment within the SBS project presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p019_c0005",
+            "source_quote": "• Encourages drivers to park just as long as needed, then space is open to the next shopper • Add to commercial areas without meters"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-13-36-861Z_2111393-c01d4217_canonicalize_2026-06-10t23-01-11-643z-1976810-73612f01-ingest-20111205-nostrand-cb3-slides-treatment-relations"
+}

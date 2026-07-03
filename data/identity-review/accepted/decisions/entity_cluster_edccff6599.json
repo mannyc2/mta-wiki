@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "entity_cluster_edccff6599",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_edccff6599.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_edccff6599.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 1,
+    "do_not_merge_count": 0,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [
+    [
+      "entity_s-chu-cgc-oct2025",
+      "entity_s-chu-committee-member"
+    ]
+  ],
+  "do_not_merge": [],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "Both records have identical strong identity fields (entity_name: 'S. Chu', entity_type: 'person') and share the identity key 'entity_s-chu'. The suffixes '-cgc-oct2025' and '-committee-member' are source-local observation id suffixes, not indicating distinct objects. Per same-object test (test 2), these are lifecycle records or different source references of the same person, so they merge. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

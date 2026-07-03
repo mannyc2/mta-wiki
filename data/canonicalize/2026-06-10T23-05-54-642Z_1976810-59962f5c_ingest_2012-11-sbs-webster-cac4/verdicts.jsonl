@@ -1,0 +1,17 @@
+{"decision_id":"rel-offset-bus-lanes-webster","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4#p008_c0002","2012_11_sbs_webster_cac4#p021_c0003"]}
+{"decision_id":"rel-fordham-rd-improvements","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4#p026_c0002","2012_11_sbs_webster_cac4#p026_c0003","2012_11_sbs_webster_cac4#p026_c0004"]}
+{"decision_id":"rel-bx41-daily-ridership-to-route","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4#p005_c0002"]}
+{"decision_id":"rel-webster-population-to-corridor","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4#p005_c0002"]}
+{"decision_id":"rel-webster-length-to-corridor","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4#p005_c0002"]}
+{"decision_id":"rel-webster-carfree-to-corridor","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4#p005_c0002"]}
+{"decision_id":"rel-webster-transit-commuters-to-corridor","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4#p005_c0002"]}
+{"decision_id":"rel-sbs-speed-to-project","verdict":"fail","failure_reason":"The cited block p004_c0002 ('Speed: 15-20% faster') is a general SBS program-wide metric, not a metric of the Webster Avenue SBS project. The metric record itself confirms this with description 'SBS speed improvement results across corridors.' Co-occurrence in a Webster Avenue SBS presentation does not establish a has_metric relation to project_12-webster-ave.","evidence_checked":["2012_11_sbs_webster_cac4#p004_c0002"]}
+{"decision_id":"rel-sbs-ridership-to-project","verdict":"fail","failure_reason":"The cited block p004_c0003 ('Ridership: 5-10% increase in first year') is a general SBS program-wide metric, not specific to the Webster Avenue SBS project. The metric record's description confirms it is 'SBS ridership increase results across corridors.' Co-occurrence in the Webster Avenue CAC presentation is not a relation.","evidence_checked":["2012_11_sbs_webster_cac4#p004_c0003"]}
+{"decision_id":"rel-sbs-satisfaction-to-project","verdict":"fail","failure_reason":"The cited block p004_c0004 ('Customer Satisfaction: over 95% satisfied or very satisfied') is a general SBS program-wide metric, not specific to the Webster Avenue SBS project. The metric record describes this as 'SBS customer satisfaction results across corridors.' Co-occurrence in the Webster Avenue CAC presentation is not a relation.","evidence_checked":["2012_11_sbs_webster_cac4#p004_c0004"]}
+{"decision_id":"rel-sbs-safety-to-first-second-ave","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4#p004_c0005"]}
+{"decision_id":"rel-offset-bus-lane-claim-to-project","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4#p012_c0002"]}
+{"decision_id":"rel-ped-safety-claim-to-project","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4#p013_c0002"]}
+{"decision_id":"rel-existing-traffic-to-corridor","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4#p020_c0002"]}
+{"decision_id":"rel-projected-traffic-to-project","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4#p022_c0002"]}
+{"decision_id":"rel-cac-mtg4-to-project","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4#p001_c0003"]}
+{"decision_id":"rel-open-house-2-to-project","verdict":"pass","evidence_checked":["2012_11_sbs_webster_cac4#p037_c0002","2012_11_sbs_webster_cac4#p037_c0003"]}

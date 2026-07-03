@@ -1,0 +1,98 @@
+# Dossier: Automated Camera Enforcement (ACE)
+
+- record_id: `project_ace-automated-camera-enforcement`
+- kind: project
+- confirmation: source_only (2 sources, max authority rank 3)
+
+## Facts (source literals, never normalized away)
+- **buses_equipped**: 1400
+- **coverage_miles**: 560
+- **daily_customers_benefitted**: 915000
+- **description**: "A bus-mounted camera system that issues violations to vehicles occupying bus lanes, to double parked vehicles along bus routes, and to vehicles blocking bus stops. Administered in partnership between the MTA, NYC Department of Finance (DOF), and NYC Department of Transportation (DOT). The 2023 NYS Legislature passed a provision in the budget to expand ACE. Currently active on 60 bus routes."
+- **document_time_status**: "active"
+- **project_family**: "enforcement_program"
+- **project_name**: "Automated Camera Enforcement (ACE)"
+- **project_type**: "camera enforcement program"
+- **routes_covered**: 54
+- **start_date**: "June 2024"
+- **status**: "active"
+
+## Relations
+- → covers_route B60 Brooklyn `route_b60` [delivered, as of 2025-12] (authored)
+- → covers_route B68 Bus Route `route_b68-nyct-2025` [delivered, as of 2025-12] (authored)
+- → covers_route M57 Bus Route `route_m57-nyct-2025` [delivered, as of 2025-12] (authored)
+- → has_partner MTA NYCT Reference `entity_mta-nyct` [delivered] (authored)
+- → has_partner New York City Department of Finance `entity_nyc-dept-finance-2024` [delivered] (authored)
+- → has_partner NYC DOT as Publisher `entity_nyc-dot` [delivered] (authored)
+- → has_timeline_event 2023 NYS Legislature expands ACE `event_ace-2023-legislature-expansion` [delivered] (authored)
+- → serves_route M60 SBS - Manhattan to La Guardia Airport `route_125th-laguardia-sbs` [delivered] (authored)
+- → serves_route M23-SBS - ABLE route `route_23rd-st-sbs` [delivered] (authored)
+- → serves_route S79-SBS - ABLE route `route_able-s79-sbs` [delivered] (authored)
+- → serves_route B11 `route_b11` [delivered] (authored)
+- → serves_route B12 `route_b12-ace` [delivered] (authored)
+- → serves_route B15 `route_b15-ace` [delivered] (authored)
+- → serves_route B25 - ABLE route `route_b25` [delivered] (authored)
+- → serves_route B26 - ABLE route `route_b26` [delivered] (authored)
+- → serves_route B35 `route_b35-ace` [delivered] (authored)
+- → serves_route Proposed B41 Local `route_b41-ace` [delivered] (authored)
+- → serves_route B42 - ABLE route `route_b42` [delivered] (authored)
+- → serves_route Nostrand Avenue-Rogers Avenue Select Bus Service (B44) `route_b44-sbs` [delivered] (authored)
+- → serves_route B60 Brooklyn `route_b60` [delivered] (authored)
+- → serves_route B62 - ABLE route `route_b62` [delivered] (authored)
+- → serves_route B63 `route_b63-ace` [delivered] (authored)
+- → serves_route B68 Bus Route `route_b68-nyct-2025` [delivered] (authored)
+- → serves_route Southern Brooklyn Select Bus Service `route_b82-sbs` [delivered] (authored)
+- → serves_route Q44-SBS - ABLE route `route_bronx-flushing-jamaica-sbs` [delivered] (authored)
+- → serves_route BX12-SBS - ABLE route `route_bx12-plus` [delivered] (authored)
+- → serves_route Bx15 `route_bx15-ace` [delivered] (authored)
+- → serves_route BX19 - ABLE route `route_bx19` [delivered] (authored)
+- → serves_route Bx2 `route_bx2-ace` [delivered] (authored)
+- → serves_route Bx20 `route_bx20-ace` [delivered] (authored)
+- → serves_route Bx22 `route_bx22` [delivered] (authored)
+- → serves_route Bx28 `route_bx28-addendum-update` [delivered] (authored)
+- → serves_route MTA Bus Bx3 `route_bx3` [delivered] (authored)
+- → serves_route BX35 - ABLE route `route_bx35` [delivered] (authored)
+- → serves_route BX36 - ABLE route `route_bx36` [delivered] (authored)
+- → serves_route Bx38 `route_bx38-ace` [delivered] (authored)
+- → serves_route Bx5 `route_bx5-addendum-update` [delivered] (authored)
+- → serves_route South Bronx Select Bus Service (Bx6) `route_bx6-sbs` [delivered] (authored)
+- → serves_route Bx7 `route_bx7-ace` [delivered] (authored)
+- → serves_route Bx9 `route_bx9` [delivered] (authored)
+- → serves_route M100 `route_m100-ace` [delivered] (authored)
+- → serves_route M101 `route_m101` [delivered] (authored)
+- → serves_route M116 Manhattan `route_m116` [delivered] (authored)
+- → serves_route M14 A/D Select Bus Service `route_m14-ad-sbs` [delivered] (authored)
+- → serves_route M15-SBS - ABLE route `route_m15-sbs` [delivered] (authored)
+- → serves_route M2 `route_m2-ace` [delivered] (authored)
+- → serves_route M31 `route_m31-ace` [delivered] (authored)
+- → serves_route M34/M34A on 34th Street Busway `route_m34-sbs` [delivered] (authored)
+- → serves_route M4 `route_m4-ace` [delivered] (authored)
+- → serves_route M42 `route_m42-ace` [delivered] (authored)
+- → serves_route M57 Bus Route `route_m57-nyct-2025` [delivered] (authored)
+- → serves_route M7 Bus Route `route_m7` [delivered] (authored)
+- → serves_route M79 Select Bus Service `route_m79-sbs` [delivered] (authored)
+- → serves_route M86 SBS Route `route_m86-sbs` [delivered] (authored)
+- → serves_route M96 `route_m96-ace` [delivered] (authored)
+- → serves_route Q10 bus route `route_q10` [delivered] (authored)
+- → serves_route Q17 `route_q17-ace` [delivered] (authored)
+- → serves_route Q27 `route_q27-ace` [delivered] (authored)
+- → serves_route Q43 - ABLE route `route_q43` [delivered] (authored)
+- → serves_route Q5 on Merrick Boulevard, Queens (TSP in development) `route_q5-ace` [delivered] (authored)
+- → serves_route Q53 SBS on Woodhaven Boulevard, Queens (TSP in development) `route_q53-sbs-ace` [delivered] (authored)
+- → serves_route Q54 - ABLE route `route_q54` [delivered] (authored)
+- → serves_route Q58 - ABLE route `route_q58` [delivered] (authored)
+- → serves_route Q6 `route_q6-ace` [delivered] (authored)
+- → serves_route Q60 `route_q60-ace` [delivered] (authored)
+- → serves_route Q69 `route_q69-ace` [delivered] (authored)
+- → serves_route Q80 bus route `route_q80` [delivered] (authored)
+- → serves_route S46/S96 `route_s46-s96` [delivered] (authored)
+- → serves_route B46-SBS - ABLE route `route_utica-ave-sbs` [delivered] (authored)
+- → serves_route BX41-SBS - ABLE route `route_webster-ave-sbs` [delivered] (authored)
+
+## Evidence
+- mta_automated_camera_enforcement p1 p001_b0001
+- mta_automated_camera_enforcement p1 p001_b0001
+- mta_automated_camera_enforcement p1 p001_b0001
+- mta_automated_camera_enforcement p1 p001_b0001
+- nyct_key_performance_metrics_doc194001 p11 p011_c0009
+

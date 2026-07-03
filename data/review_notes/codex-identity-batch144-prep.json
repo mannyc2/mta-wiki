@@ -1,0 +1,153 @@
+{
+  "batch_id": "identity144",
+  "prepared_count": 8,
+  "proposed_aliases": [
+    {
+      "global_kind": "route",
+      "alias_id": "route_m23-sbs-ace",
+      "target_id": "route_23rd-st-sbs",
+      "confidence": "high",
+      "reason": "The alias is an ACE-program spelling for M23 SBS. The target route is the canonical M23 Select Bus Service record with route_id M23, service_variant sbs, and source evidence from the route index, bus lane camera report, automated camera enforcement list, and M23 project kickoff material.",
+      "evidence_refs": [
+        "brt_route_index#p001_b0001",
+        "bus_lane_camera_report_2024#p008_c0004",
+        "mta_automated_camera_enforcement#p001_b0001",
+        "2015_10_14_brt_23rdst_kickoff#p001_c0001"
+      ],
+      "guard_notes": "Route guard satisfied: explicit SBS alias for the same M23 SBS durable route identity. Pair is absent from current merges, do-not-merge, and prior codex identity prep artifacts checked in data/review_notes. This does not merge M23 local service into M23 SBS. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_m79-sbs-ace",
+      "target_id": "route_m79-sbs",
+      "confidence": "high",
+      "reason": "The alias is an ACE-program spelling for M79 SBS. The target route is the canonical M79 Select Bus Service record with route_id M79 and service_variant sbs, supported by Better Buses, route index, automated camera enforcement, and M86/M79 progress-report evidence.",
+      "evidence_refs": [
+        "better_buses#p001_b0001",
+        "brt_route_index#p001_b0001",
+        "mta_automated_camera_enforcement#p001_b0001",
+        "m86_sbs_progress_report_2017#p011_c0010"
+      ],
+      "guard_notes": "Route guard satisfied: explicit SBS alias for the same M79 SBS durable route identity. Pair is absent from current merges, do-not-merge, and prior codex identity prep artifacts checked in data/review_notes. This does not merge M79 local service into M79 SBS. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_m86-sbs-ace",
+      "target_id": "route_m86-sbs",
+      "confidence": "high",
+      "reason": "The alias is an ACE-program spelling for M86 SBS. The target route is the canonical M86 SBS record with route_id/internal route id M86+, service_variant sbs, and M86 progress-report evidence for the route and limits.",
+      "evidence_refs": [
+        "m86_sbs_progress_report_2017#p003_c0006",
+        "m86_sbs_progress_report_2017#p003_c0007"
+      ],
+      "guard_notes": "Route guard satisfied: explicit SBS alias for the same M86 SBS durable route identity. Pair is absent from current merges, do-not-merge, and prior codex identity prep artifacts checked in data/review_notes. This does not merge M86 local service into M86 SBS. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_m34-sbs-ace",
+      "target_id": "route_m34-sbs",
+      "confidence": "high",
+      "reason": "The alias is an ACE-program spelling for M34 SBS. The target route is the canonical M34 SBS record with route_id M34, service_variant sbs, and evidence from the 34th Street busway page, ACE dataset dictionary, and 34th Street busway source.",
+      "evidence_refs": [
+        "34th_st_busway#p002_c0005",
+        "ace_routes_dataset_dictionary#p001_b0006",
+        "ace_routes_dataset_dictionary#p001_b0025",
+        "busway_34thstreet#p001_b0001"
+      ],
+      "guard_notes": "Route guard satisfied: explicit SBS alias for the same M34 SBS durable route identity. Pair is absent from current merges, do-not-merge, and prior codex identity prep artifacts checked in data/review_notes. This does not merge M34 local service or M34A SBS into the M34 SBS record. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_b82-sbs-bay-pkwy",
+      "target_id": "route_b82-sbs",
+      "confidence": "high",
+      "reason": "The alias names B82 SBS in the Bay Parkway corridor context. The target route is the canonical Southern Brooklyn/B82 Select Bus Service record with route_id B82, service_variant sbs, and evidence from the route index, automated camera enforcement list, Brooklyn bus network draft plan, and Bay Parkway/Cropsey source.",
+      "evidence_refs": [
+        "brt_route_index#p001_b0001",
+        "mta_automated_camera_enforcement#p001_b0001",
+        "brooklyn_bus_network_draft_plan_without_route_profiles#p044_c0003",
+        "bay_pkwy_cropsey_ave_jan2025#p004_c0002"
+      ],
+      "guard_notes": "Route guard satisfied: explicit B82 SBS alias for the same SBS route identity. Pair is absent from current merges, do-not-merge, and prior codex identity prep artifacts checked in data/review_notes. This does not merge B82 local or B82 limited service into B82 SBS. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_m15-sbs-2010-09-14",
+      "target_id": "route_m15-sbs",
+      "confidence": "high",
+      "reason": "The alias is a dated M15 SBS source alias from the 2010 First/Second Avenue SBS rollout context. The target route is the canonical M15 SBS record with service_variant sbs, internal route id M15+, and evidence from ACE, route index, and bus lane camera sources.",
+      "evidence_refs": [
+        "ace_routes_dataset_dictionary#p001_b0006",
+        "ace_routes_dataset_dictionary#p001_b0061",
+        "brt_route_index#p001_b0001",
+        "bus_lane_camera_report_2024#p008_c0004"
+      ],
+      "guard_notes": "Route guard satisfied: explicit M15 SBS alias for the same SBS route identity. Pair is absent from current merges, do-not-merge, and prior codex identity prep artifacts checked in data/review_notes. This does not merge M15 local, M15 limited, or bundled M15 local/limited records into M15 SBS. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_bay-parkway-from-ave-j-to-shore-parkway",
+      "target_id": "corridor_bay-parkway-avenue-j-to-shore-pkwy",
+      "confidence": "high",
+      "reason": "The alias is a fully limit-specific spelling of the same Bay Parkway corridor from Avenue J to Shore Parkway in Brooklyn. The target corridor has matching corridor_name Bay Parkway, borough Brooklyn, limits Avenue J to Shore Parkway, and matching Bay Parkway/Cropsey source evidence.",
+      "evidence_refs": [
+        "bay_pkwy_cropsey_ave_jan2025#p004_c0002",
+        "bay_pkwy_cropsey_ave_cb12_jun2025#p004_c0002"
+      ],
+      "guard_notes": "Corridor guard satisfied: same corridor name, same borough, and same explicit limits. Pair is absent from current merges, do-not-merge, and prior codex identity prep artifacts checked in data/review_notes. This does not merge the broader Bay Parkway/Cropsey combined corridor or any unlabeled Bay Pkwy corridor. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_woodhaven-blvd-queens-blvd-to-107-ave",
+      "target_id": "corridor_woodhaven-boulevard",
+      "confidence": "high",
+      "reason": "The alias is a limit-specific spelling for Woodhaven Boulevard from Queens Boulevard to 107 Avenue. The target corridor is the canonical Woodhaven Boulevard record in Queens with limits Queens Boulevard to 107th Avenue and supporting Woodhaven/Q52-Q53 corridor evidence.",
+      "evidence_refs": [
+        "better_buses#p001_b0001",
+        "2014_10_22_brt_woodhaven_cac2_discussionmaterials#p001_c0004",
+        "2014_10_22_brt_woodhaven_cac2_discussionmaterials#p001_c0005",
+        "2015_04_30_brt_woodhaven_dw4_presentation#p013_c0007"
+      ],
+      "guard_notes": "Corridor guard satisfied: same street name after Boulevard/Blvd normalization, same borough, and compatible Queens Boulevard-to-107th Avenue limits. Pair is absent from current merges, do-not-merge, and prior codex identity prep artifacts checked in data/review_notes. This does not touch the guarded 125th Street pair or merge broader Woodhaven/Cross Bay scopes. Durable merge direction is alias_id -> target_id."
+    }
+  ],
+  "commands_run": [
+    "pwd && rg --files | rg '(^data/review_notes/|merges\\\\.json$|do-not|canonical|wiki/sources|raw/sources)'",
+    "find data -maxdepth 3 -type f \\( -name '*merge*' -o -name '*do*merge*' -o -path '*/canonical/*' -o -path '*/review_notes/*' \\) | sort",
+    "ls -la data/review_notes || true",
+    "jq 'keys, .proposed_aliases[0]' data/review_notes/codex-identity-batch141-prep.json",
+    "jq 'keys, {merge_keys:(.merges|keys? // empty | .[0:5]), top:.}' data/identity-overrides/merges.json | head -200",
+    "jq 'keys, .[0:5]' data/identity-overrides/do-not-merge.json 2>/dev/null || jq '.' data/identity-overrides/do-not-merge.json | head -100",
+    "head -5 data/canonical/routes.jsonl && head -5 data/canonical/corridors.jsonl",
+    "jq '.aliases | keys[0:20], (.aliases|length)' data/identity-overrides/merges.json",
+    "jq -r '.pairs.route[]?.record_ids[]?, .pairs.corridor[]?.record_ids[]?' data/identity-overrides/do-not-merge.json | sort -u | head -200",
+    "jq -r '.proposed_aliases[]? | [.global_kind,.alias_id,.target_id] | @tsv' data/review_notes/codex-identity-batch*.json | sort -u > /tmp/mta_prior_aliases.tsv && wc -l /tmp/mta_prior_aliases.tsv && head -20 /tmp/mta_prior_aliases.tsv",
+    "jq -r '[.record_id, (.payload.route_id // .payload.route_label // \"\"), (.payload.route_type_normalized // .payload.route_type // \"\"), (.payload.service_variant // \"\"), (.display_name // \"\")] | @tsv' data/canonical/routes.jsonl | head -200",
+    "jq '.aliases.route | to_entries[0:10]' data/identity-overrides/merges.json",
+    "jq -r '. as $r | {id:.record_id, aliases:.record_aliases, display:.display_name, payload:.payload, evidence:(.evidence_refs[0:3]|map(.evidence_id))}' data/canonical/routes.jsonl | head -300",
+    "jq -r '[.record_id, (.payload.corridor_name // .payload.street // .display_name // \"\"), (.payload.borough_normalized // .payload.borough // \"\"), (.payload.limits // .payload._merged_field_values.limits?[0] // \"\"), (.display_name // \"\")] | @tsv' data/canonical/corridors.jsonl | head -300",
+    "jq -s -r route exact grouping over data/canonical/routes.jsonl",
+    "jq -s -r corridor normalized-name grouping over data/canonical/corridors.jsonl",
+    "jq route/corridor merge alias extraction to /tmp/mta_merges.tsv and attempted do-not-merge extraction to /tmp/mta_dnm.tsv",
+    "rg -n selected M15 and corridor candidate ids in data/identity-overrides and prior identity prep artifacts",
+    "jq -r selected route records from data/canonical/routes.jsonl",
+    "jq -r selected corridor records from data/canonical/corridors.jsonl",
+    "jq '.pairs.route // [], .pairs.corridor // []' data/identity-overrides/do-not-merge.json | head -120",
+    "jq -s -r route_id grouping over data/canonical/routes.jsonl with rg route filters",
+    "jq -s -r corridor candidate listing over data/canonical/corridors.jsonl",
+    "rg -n selected B-route ids in data/identity-overrides and prior identity prep artifacts",
+    "jq -r merge alias keys to /tmp/route_merge_aliases.txt and /tmp/corridor_merge_aliases.txt; compared canonical record_aliases not present in merges",
+    "jq -r prior proposed alias ids to /tmp/mta_prior_alias_ids.txt and wc -l /tmp/route_merge_aliases.txt /tmp/corridor_merge_aliases.txt /tmp/mta_prior_alias_ids.txt",
+    "jq -r selected route/corridor canonical records with aliases, payload, and evidence",
+    "for id in selected aliases; jq checked current merge target or not_in_merges",
+    "rg -n selected final aliases in data/identity-overrides/do-not-merge.json and data/review_notes/codex-identity-batch*.json",
+    "jq -r selected final route/corridor target summaries and evidence refs",
+    "jq -r selected final aliases confirmed present on target canonical records"
+  ],
+  "commands_not_run": [
+    "No provider-backed commands or agent harness commands were run.",
+    "No canonicalize, campaign dedup, identity-review, write, ask, schema, ontology-normalize, or --profile/provider commands were run.",
+    "No materialize, export-jsonl, or full validate commands were run.",
+    "No canonical JSONL, wiki pages, DB, LOG.md, manifest, retired submissions, submissions, or merges.json files were edited."
+  ]
+}

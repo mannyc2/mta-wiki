@@ -1,0 +1,66 @@
+{
+  "run_id": "2026-06-09T11-27-28-135Z_chandra-ocr-queue",
+  "generated_at": "2026-06-09T11:27:28.135Z",
+  "dry_run": false,
+  "force": false,
+  "summary": {
+    "discovered_pdf_sources": 2547,
+    "considered": 1,
+    "queued": 0,
+    "partial": 1,
+    "complete": 0,
+    "skipped": 0
+  },
+  "entries": [
+    {
+      "source_id": "116_st_morningside_ave_pleasant_ave_cb10_feb2025",
+      "source_dir": "/mnt/models/dev/mta-wiki/raw/sources/116_st_morningside_ave_pleasant_ave_cb10_feb2025",
+      "pdf_path": "/mnt/models/dev/mta-wiki/raw/sources/116_st_morningside_ave_pleasant_ave_cb10_feb2025/source.pdf",
+      "chandra_dir": "/mnt/models/dev/mta-wiki/raw/sources/116_st_morningside_ave_pleasant_ave_cb10_feb2025/chandra",
+      "status": "partial",
+      "page_count": 36,
+      "completed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "failed_pages": [],
+      "missing_pages": [
+        31
+      ]
+    }
+  ],
+  "manifest_path": "/mnt/models/dev/mta-wiki/data/chandra-ocr/2026-06-09T11-27-28-135Z_chandra-ocr-queue.json"
+}

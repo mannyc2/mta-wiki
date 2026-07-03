@@ -1,0 +1,71 @@
+{
+  "review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "reviewed_at": "2026-06-08T21:10:49.551Z",
+  "packet_path": "data/identity-review/packets/route_cluster_015.md",
+  "cluster_id": "route_cluster_015",
+  "kind": "route",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "suggestion": {
+    "cluster_id": "route_cluster_015",
+    "kind": "route",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "route_m86",
+          "route_m86-sbs"
+        ],
+        "reason": "M86+ (limited-stop variant) and M86 SBS (Select Bus Service variant) are distinct service patterns on the same base M86 route. The '+' label indicates limited-stop service while 'SBS' indicates Select Bus Service with off-board fare payment, distinct branding, and a dedicated launch timeline event. The shared base route 'M86' is a broad corridor identifier, not a canonical identity field sufficient to merge distinct operational variants."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "route_m86",
+        "aliases": [
+          "M86",
+          "M86 SBS",
+          "M86 Select Bus Service",
+          "86th Street Select Bus Service"
+        ],
+        "reason": "These alias strings appear in source labels or evidence snippets for the SBS record but are not authoritative identity fields. They are useful for cross-referencing but do not establish canonical identity."
+      },
+      {
+        "record_id": "route_m86-sbs",
+        "aliases": [
+          "M86",
+          "M86+",
+          "M86 Bus Route"
+        ],
+        "reason": "These alias strings appear in source labels for the plus-record but are generic base route references, not SBS-specific identifiers."
+      }
+    ],
+    "missing_fields": [
+      {
+        "record_id": "route_m86",
+        "fields": [
+          "variant_type",
+          "borough",
+          "limits_confirmed"
+        ]
+      },
+      {
+        "record_id": "route_m86-sbs",
+        "fields": [
+          "variant_type",
+          "borough",
+          "limits"
+        ]
+      }
+    ],
+    "ambiguous": [],
+    "suggested_rules": [
+      "For bus routes, variant labels (+, SBS, LTD, local) are variant-distinguishing identity fields, not merge hints. Shared base_route alone is insufficient to merge route variants with different service designations."
+    ],
+    "confidence": "high",
+    "rationale": "Strong evidence from variant labels (M86+ vs M86 SBS), distinct display names, distinct identity keys, and the SBS record's dedicated timeline event clearly establish these as distinct route variants. The shared base route 'M86' and shared source references (progress report) reflect corridor overlap, not canonical identity. The negative signal explicitly flags the variant mismatch."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T21-10-37-020Z_3449211-58c8712a_identity-review-run_route-cluster-015",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-10-37-020Z_2026-06-08T21-10-37-020Z_3449211-58c8712a_identity-review-run_route-cluster-015.jsonl"
+}

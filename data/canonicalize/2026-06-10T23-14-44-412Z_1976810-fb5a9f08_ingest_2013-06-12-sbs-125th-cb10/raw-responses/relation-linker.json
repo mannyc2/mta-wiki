@@ -1,0 +1,12 @@
+{
+  "run_id": "2026-06-10T23-14-44-412Z_1976810-fb5a9f08_ingest_2013-06-12-sbs-125th-cb10",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T04:02:22.013Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "assistant_text",
+  "parse_error": "JSON Parse error: Unexpected identifier \"Now\"",
+  "raw_response": "Now I have all the evidence I need. Let me analyze each observation and build the decisions.\n\nLooking at the source document, I can see the full text and block structure. Let me now compile all 35 decisions:\n\n**Key registry subjects to link to:**\n- `corridor_125th-street-manhattan` — 125th Street corridor (has this source in source_ids)\n- `route_125th-laguardia-sbs` — M60 SBS route\n- `route_bx15-ace` — Bx15 route  \n- `route_m100-ace` — M100 route\n- `route_m101` — M101 route\n- `project_m60-sbs-125th-street-2013` — the SBS project\n\nNow let me submit the complete envelope:\n\n",
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-55-41-723Z_2111393-c4deb609_canonicalize_2026-06-10t23-14-44-412z-1976810-fb5a9f08-ingest-2013-06-12-sbs-125th-cb10-relation-linker"
+}

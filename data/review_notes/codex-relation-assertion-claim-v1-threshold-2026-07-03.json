@@ -1,0 +1,138 @@
+{
+  "note_id": "codex-relation-assertion-claim-v1-threshold-2026-07-03",
+  "date": "2026-07-03",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed profiles",
+    "Pioneer/OpenAI/DeepSeek/vLLM/chandra model calls"
+  ],
+  "bucket": "v1_route_scoped_assertion_status_claim_context",
+  "implemented_change": {
+    "summary": "Drive claim_context under the v1 10% unknown threshold with deterministic same-source claim, presentation, and recurring-agenda lanes.",
+    "code_paths": [
+      "packages/pipeline/src/records/assertion-qualifiers.ts",
+      "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+    ],
+    "rules": [
+      {
+        "name": "source_stated_subject_claims",
+        "relation_family": "claim_context",
+        "relation_kind": "has_claim",
+        "statuses": [
+          "delivered",
+          "planned",
+          "proposed",
+          "in_progress"
+        ],
+        "required_signals": [
+          "subject is corridor/entity/event/project/route/treatment_component",
+          "object is a claim record from the same source",
+          "relation has evidence from its source",
+          "claim/relation text is non-empty",
+          "mixed delivered plus planned/proposed lifecycle text remains unknown",
+          "missing relation evidence, source mismatches, no-proposed, and will-not-be-implemented text remain unknown"
+        ]
+      },
+      {
+        "name": "evidenced_presented_to_audiences",
+        "relation_family": "claim_context",
+        "relation_kind": "presented_to",
+        "statuses": [
+          "delivered",
+          "planned"
+        ],
+        "required_signals": [
+          "subject is an entity or event",
+          "object is a board/committee/community-board audience entity",
+          "relation has evidence from its source",
+          "presentation/report/update/provided-monthly wording is present",
+          "future/not-presented/no-meeting/no-item/cancelled/deferred text remains unknown"
+        ]
+      },
+      {
+        "name": "recurring_agenda_items",
+        "relation_family": "claim_context",
+        "relation_kind": "has_recurring_agenda_item",
+        "status": "planned",
+        "required_signals": [
+          "subject is an entity",
+          "object is a same-source claim with relation evidence",
+          "citing source is work-plan/workplan shaped",
+          "no no-item/no-meeting/postponed/deferred/cancelled language"
+        ]
+      }
+    ]
+  },
+  "baseline": {
+    "claim_context_total": 815,
+    "claim_context_unknown": 406,
+    "claim_context_unknown_pct": 49.8,
+    "has_claim_unknown": 342,
+    "presented_to_unknown": 22,
+    "has_recurring_agenda_item_unknown": 8
+  },
+  "after": {
+    "validate_issues": 0,
+    "relation_assertion_unknown_total": 2619,
+    "claim_context_total": 815,
+    "claim_context_unknown": 73,
+    "claim_context_unknown_pct": 9.0,
+    "has_claim_unknown": 34,
+    "has_claim_delivered": 359,
+    "has_claim_planned": 110,
+    "has_claim_proposed": 91,
+    "has_claim_in_progress": 102,
+    "presented_to_unknown": 5,
+    "presented_to_delivered": 25,
+    "presented_to_planned": 17,
+    "has_recurring_agenda_item_unknown": 0,
+    "has_recurring_agenda_item_planned": 8
+  },
+  "delta": {
+    "relation_assertion_unknown_total": -333,
+    "claim_context_unknown": -333,
+    "claim_context_unknown_pct_points": -40.8,
+    "has_claim_unknown": -308,
+    "presented_to_unknown": -17,
+    "has_recurring_agenda_item_unknown": -8
+  },
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+      "result": "passed: 95 tests, 493 expect calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "passed"
+    },
+    {
+      "command": "bun run materialize",
+      "result": "passed: Materialized 93067/98119 submissions; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "bun run validate",
+      "result": "passed: Issues 0"
+    },
+    {
+      "command": "threshold SQL",
+      "result": "claim_context 73/815 unknown, 9.0%; all Plan 004 target families under 10%"
+    }
+  ],
+  "intentionally_unresolved": [
+    "Small residual relation kinds outside has_claim, presented_to, and recurring agenda items remain unknown.",
+    "Mixed current/future has_claim rows remain unknown unless an older specific rule safely classifies them.",
+    "Source mismatches and missing relation evidence remain unknown.",
+    "Future presentation scheduling, not-presented, no-meeting, no-item, cancelled, and deferred presentation rows remain unknown."
+  ],
+  "next_candidate_lanes": [
+    "Plan 004 deterministic cleanup is complete for v1 because claim_context, corridor_scope, metric_context, route_scope, timeline_context, and treatment_context are all under 10% unknown.",
+    "Do not broaden claim_context further for v1 unless downstream consumers expose a concrete residual gap."
+  ]
+}

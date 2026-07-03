@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-06-10T17-48-04-600Z_1496766-6452eb74_ingest_2009-05-13-brt-1st2nd-cac1",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-10T21:04:02.758Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d01-project-first-second-ave-sbs-2009",
+        "local_observation_id": "project_first_second_ave_sbs_2009",
+        "decision": "new",
+        "rationale": "Observation's base_record_id is project_first-second-ave-sbs. The registry card with that record_id matches exactly: same project name ('First Avenue/Second Avenue SBS'), project_type ('Select Bus Service'), borough (Manhattan), and the observation's source_id 2009_05_13_brt_1st2nd_cac1 is already listed in that card's source_ids. Since the observation already resolves to its own base_record_id, and link-to-self is prohibited, the decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p001_c0002",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p021_c0004",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p021_c0005",
+            "source_quote": ""
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T21-03-44-591Z_1774507-466efd55_canonicalize_2026-06-10t17-48-04-600z-1496766-6452eb74-ingest-2009-05-13-brt-1st2nd-cac1-project-identity"
+}

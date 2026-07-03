@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T22-56-13-279Z_1976810-d212e19e_ingest_20110314-34th-cac4-slides",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T01:27:00.461Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d01",
+        "local_observation_id": "project_34th_st_sbs_cac4_20110314",
+        "decision": "new",
+        "rationale": "The observation base_record_id 'project_34th-st-sbs-2012' matches an existing registry record with the same id. The source_id '20110314_34th_cac4_slides' is already listed among the record's source_ids. The observation describes the same project: 34th Street Select Bus Service with off-board fare collection, bus lane camera enforcement, offset bus lanes, bus bulbs, and expanded loading zones. Since the observation already resolves to its own base_record_id and the matching registry record is the same, this is 'new' — no different target needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p007_c0001",
+            "source_quote": "34 th Street SBS design"
+          },
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p007_c0002",
+            "source_quote": "2011 planned improvements – Off-board fare collection on M34 and M16 – Bus lane camera enforcement • 2012 proposed design – Offset bus lanes – Bus bulbs and sidewalk extensions – Expanded loading zones"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-26-39-809Z_2111393-63fce4e6_canonicalize_2026-06-10t22-56-13-279z-1976810-d212e19e-ingest-20110314-34th-cac4-slides-project-identity"
+}

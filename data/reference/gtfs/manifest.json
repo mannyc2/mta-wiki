@@ -1,0 +1,18 @@
+{
+  "feed_date": "2026-03-19_mta_bus_all",
+  "imported_from": "/tmp/gtfs/merged",
+  "files": {
+    "routes.txt": {
+      "sha256": "7b04d611eee9ad689eda88556e6934fe36c699342cf489c61dcdfef2c2670097",
+      "rows": 386
+    },
+    "agency.txt": {
+      "sha256": "e4dbaf368da3e96c566d6091f9a575bfa300a6f768333952d992c19dde163c72",
+      "rows": 2
+    },
+    "feed_info.txt": {
+      "sha256": "d9c5a28c5aa24e6bb0b8ff40d65f05c83f5be94a2cdebee0c0e6f92b1c110660",
+      "rows": 1
+    }
+  }
+}

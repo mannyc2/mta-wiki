@@ -1,0 +1,177 @@
+{
+  "id": "codex-metric-identity-relation-continuation-2026-06-30-u",
+  "date": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "goal_status": "active",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "provider-backed identity-review-run",
+    "provider-backed ontology-normalize-run",
+    "provider profiles"
+  ],
+  "subagents": {
+    "used": true,
+    "completed_read_only_scouts": [
+      {
+        "id": "019f191a-ad49-7953-80dc-a5b07d7fdef9",
+        "lane": "scaled ridership and service metric unit residuals"
+      },
+      {
+        "id": "019f191a-b0d0-7d50-9223-e5429d910205",
+        "lane": "safety and enforcement count-like metric unit residuals"
+      },
+      {
+        "id": "019f191a-b528-7391-aee2-31cb94b8c4dc",
+        "lane": "entity identity duplicate tail"
+      },
+      {
+        "id": "019f191a-ba36-7621-8423-f62b2a6c7ec1",
+        "lane": "relation assertion-status unknown operated-by shape"
+      }
+    ],
+    "session_cleanup": "Session-management tool was not exposed after context compaction; completed scout outputs were recorded here."
+  },
+  "baseline": {
+    "submissions": 98102,
+    "canonical_records": 84041,
+    "wiki_pages": 7335,
+    "metrics": {
+      "total": 36534,
+      "unit_family_other": 6100,
+      "unit_family_ridership": 1302,
+      "unit_family_count": 731,
+      "unit_family_enforcement": 2
+    },
+    "relations": {
+      "total": 20650,
+      "assertion_status_unknown": 11157,
+      "assertion_status_delivered": 1971
+    },
+    "entities": 1895,
+    "routes": 319
+  },
+  "final": {
+    "submissions": 98102,
+    "canonical_records": 84040,
+    "wiki_pages": 7334,
+    "metrics": {
+      "total": 36534,
+      "unit_family_other": 5019,
+      "unit_family_ridership": 2001,
+      "unit_family_count": 898,
+      "unit_family_enforcement": 217
+    },
+    "relations": {
+      "total": 20650,
+      "assertion_status_unknown": 11141,
+      "assertion_status_delivered": 1987,
+      "assertion_status_proposed": 3104,
+      "assertion_status_planned": 2794,
+      "assertion_status_in_progress": 1600,
+      "assertion_status_deferred": 22,
+      "assertion_status_cancelled": 2
+    },
+    "entities": 1894,
+    "routes": 319
+  },
+  "deltas": {
+    "metric_unit_family_other": -1081,
+    "metric_unit_family_ridership": 699,
+    "metric_unit_family_count": 167,
+    "metric_unit_family_enforcement": 215,
+    "relation_assertion_status_unknown": -16,
+    "relation_assertion_status_delivered": 16,
+    "entities": -1,
+    "canonical_records": -1,
+    "wiki_pages": -1
+  },
+  "implemented": [
+    {
+      "slice": "scaled_ridership_and_traffic_unit_aliases",
+      "description": "Added exact aliases for boardings and selected million-scale ridership/traffic units with normalized scale factors.",
+      "files": [
+        "packages/pipeline/src/ontology/normalizers.ts",
+        "packages/pipeline/test/records/submissions.test.ts",
+        "packages/pipeline/test/ontology/normalizers.test.ts"
+      ]
+    },
+    {
+      "slice": "crossings_and_enforcement_unit_aliases",
+      "description": "Added exact crossings/count and arrests/summons enforcement aliases while guarding rate-like and ambiguous variants.",
+      "files": [
+        "packages/pipeline/src/ontology/normalizers.ts",
+        "packages/pipeline/test/ontology/normalizers.test.ts"
+      ]
+    },
+    {
+      "slice": "tlc_entity_identity_alias",
+      "description": "Merged the 2011 TLC agency surface into the canonical NYC Taxi and Limousine Commission entity.",
+      "files": [
+        "data/identity-overrides/merges.json",
+        "packages/db/test/identity.test.ts"
+      ]
+    },
+    {
+      "slice": "passive_operated_by_relation_status",
+      "description": "Inferred delivered assertion status for passive true-route operated_by relations with future/proposed wording guards.",
+      "files": [
+        "packages/pipeline/src/records/assertion-qualifiers.ts",
+        "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+      ]
+    }
+  ],
+  "validation": {
+    "focused_tests": [
+      {
+        "command": "bun test packages/pipeline/test/records/submissions.test.ts",
+        "result": "pass",
+        "tests": 29,
+        "expects": 176
+      },
+      {
+        "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+        "result": "pass",
+        "tests": 270,
+        "expects": 4116
+      },
+      {
+        "command": "bun test packages/db/test/identity.test.ts",
+        "result": "pass",
+        "tests": 28,
+        "expects": 122
+      },
+      {
+        "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+        "result": "pass",
+        "tests": 13,
+        "expects": 38
+      }
+    ],
+    "typecheck": "pass",
+    "materialize": "pass",
+    "sqlite_quick_check": "ok",
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "issues": 0,
+      "submissions": 98102,
+      "canonical_records": 84040,
+      "wiki_pages": 7334
+    }
+  },
+  "intentionally_unresolved": [
+    "Bare customers remains unit_family other because scout sampling found mixed eligible customers, participation, special-event, and validation-count semantics.",
+    "Bare millions remains unit_family other because it is underspecified without a deterministic unit.",
+    "Rate-like crossings and summons/felony rate variants remain unresolved pending explicit rate-family policy.",
+    "Large relation assertion-status unknown buckets remain mostly context, publication, and role edges; the implemented rule only promotes passive true-route operated_by statements."
+  ],
+  "next_lanes": [
+    "metric residual: incidents/complaints/gallons with strict rate and safety guards",
+    "relation residual: high-count unknown relation kinds with direct status wording",
+    "identity tail: duplicate agency/corridor/entity surfaces with exact acronym and source-context evidence",
+    "route aggregate/split candidates if they still have measurable false duplicate pressure"
+  ]
+}

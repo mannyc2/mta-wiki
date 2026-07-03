@@ -1,0 +1,144 @@
+{
+  "batch_id": "identity135",
+  "prepared_count": 8,
+  "proposed_aliases": [
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_125th-street-manhattan",
+      "target_id": "corridor_125th-st-manhattan",
+      "confidence": "high",
+      "reason": "Both records describe the 125th Street Manhattan SBS/bus-priority corridor with compatible east-west Manhattan limits ending at Second Avenue. The alias uses Amsterdam Avenue to Second Avenue, while the target already consolidates 125th Street/M60 SBS/Phase II corridor evidence including Morningside Avenue to Second Avenue and broader 125th Street crosstown naming.",
+      "evidence_refs": [
+        "2012_09_sbs_125th_workshop_1#p002_c0001",
+        "2012_09_sbs_125th_workshop_1#p002_c0004",
+        "2012_12_03_sbs_125th_workshop_summary#p001_c0001",
+        "2012_09_19_125th_st_sbs_public_workshop_summary#p002_c0005",
+        "2013_03_07_sbs_125th_cb9#p001_c0001",
+        "2013_03_07_sbs_125th_cb9#p011_c0004"
+      ],
+      "guard_notes": "Corridor guard satisfied: same 125th Street Manhattan corridor and compatible SBS/bus-priority scope; not a route variant, rail, or borough mismatch. Alias is absent from corridor merges and the pair is absent from corridor do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_brt-bx6-cb4-mar2017-south-bronx",
+      "target_id": "corridor_bx6-south-bronx",
+      "confidence": "high",
+      "reason": "Both records name the Bx6 South Bronx corridor. The alias is a March 2017 CB4 South Bronx record and the target is the consolidated Bx6 South Bronx corridor with Hunts Point to Riverside Drive scope and existing South Bronx corridor aliases.",
+      "evidence_refs": [
+        "brt_bx6_cb4_mar2017#p003_c0001",
+        "brt_bx6_cb4_mar2017#p003_c0002",
+        "brt_bx6_cb4_mar2017#p003_c0003",
+        "brt_bx6_south_bronx_june2016#p007_c0002",
+        "brt_bx6_south_bronx_june2016#p009_c0002",
+        "brt_bx6_south_bronx_sept2016#p007_c0002"
+      ],
+      "guard_notes": "Corridor guard satisfied: exact Bx6 South Bronx corridor identity; compatible Bronx/South Bronx context. Alias is absent from corridor merges and the pair is absent from corridor do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_bx6-south-bronx-cb12-apr2017",
+      "target_id": "corridor_bx6-south-bronx",
+      "confidence": "high",
+      "reason": "Both records use the same Bx6 South Bronx corridor name. The alias is an April 2017 CB12 extraction with the same corridor label, while the target is the established Bx6 South Bronx corridor cluster.",
+      "evidence_refs": [
+        "brt_bx6_cb12_apr2017#p003_c0001",
+        "brt_bx6_cb12_apr2017#p003_c0002",
+        "brt_bx6_south_bronx_june2016#p007_c0002",
+        "brt_bx6_south_bronx_june2016#p009_c0002",
+        "brt_bx6_south_bronx_sept2016#p007_c0002"
+      ],
+      "guard_notes": "Corridor guard satisfied: exact corridor name and compatible Bx6 South Bronx scope. Alias is absent from corridor merges and the pair is absent from corridor do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_bx6-south-bronx-may2016",
+      "target_id": "corridor_bx6-south-bronx",
+      "confidence": "high",
+      "reason": "Both records describe the Bx6 South Bronx corridor. The alias gives Riverside Drive/Washington Heights to Hunts Point wording, which is compatible with the target corridor scope of Hunts Point to Riverside Drive.",
+      "evidence_refs": [
+        "brt_bx6_south_bronx_may2016#p007_c0001",
+        "brt_bx6_south_bronx_may2016#p007_c0002",
+        "brt_bx6_south_bronx_may2016#p006_c0002",
+        "brt_bx6_south_bronx_june2016#p007_c0002",
+        "brt_bx6_south_bronx_june2016#p009_c0002",
+        "brt_bx6_south_bronx_sept2016#p007_c0002"
+      ],
+      "guard_notes": "Corridor guard satisfied: same Bx6 South Bronx durable corridor, with matching endpoints expressed in reverse/order variants. Alias is absent from corridor merges and the pair is absent from corridor do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_bx6-sbs-brt-bx6-cb2",
+      "target_id": "corridor_bx6-brt-bx6-cb12-may2022",
+      "confidence": "high",
+      "reason": "Both records are named Bx6 Corridor and refer to the same Bx6 bus-priority/SBS corridor context. The target preserves explicit terminals from Riverside Drive West Terminal/Washington Heights to Food Center Drive Terminal/Hunts Point; the alias is a CB2 EDC record with the same corridor label.",
+      "evidence_refs": [
+        "brt_bx6_cb2_edc_may2022#p004_c0003",
+        "brt_bx6_cb2_edc_may2022#p011_c0002",
+        "brt_bx6_cb12_may2022#p004_c0003",
+        "brt_bx6_cb12_may2022#p010_c0002"
+      ],
+      "guard_notes": "Corridor guard satisfied: exact Bx6 Corridor name and compatible Bx6 SBS/BRT planning context. Alias is absent from corridor merges and the pair is absent from corridor do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_ibx-sunset-park-jackson-heights-208006",
+      "target_id": "corridor_ibx-brooklyn-queens-rail",
+      "confidence": "high",
+      "reason": "Both records describe the Interborough Express corridor from Sunset Park to Jackson Heights. The alias spells the endpoints in the record id/display name, and the target describes the existing Brooklyn-Queens rail corridor with the same Sunset Park to Jackson Heights scope.",
+      "evidence_refs": [
+        "meeting_doc_208006#p010_c0005",
+        "meeting_doc_206071#p016_c0012"
+      ],
+      "guard_notes": "Corridor guard satisfied: same IBX corridor endpoints and corridor identity; this is a corridor merge, not a route-service merge. Alias is absent from corridor merges and the pair is absent from corridor do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_kissena-parsons-blvds-pw3",
+      "target_id": "corridor_kissena-parsons-boulevards-flushing-jamaica-2014",
+      "confidence": "high",
+      "reason": "Both records name the Kissena/Parsons Boulevards corridor in Queens. The target provides the Flushing-to-Jamaica corridor scope, and the alias is a PW3 record using the same corridor name and project context.",
+      "evidence_refs": [
+        "2015_01_22_brt_flushingjamaica_pw3_boards#p006_c0002",
+        "2015_01_22_brt_flushingjamaica_pw3_boards#p006_c0010",
+        "2014_brt_flushingjamaica_workshopsummary#p002_c0001"
+      ],
+      "guard_notes": "Corridor guard satisfied: same Kissena/Parsons Boulevards corridor naming and compatible Queens Flushing-Jamaica context. Alias is absent from corridor merges and the pair is absent from corridor do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_parsons-kissena-2015",
+      "target_id": "corridor_parsons-kissena-blvd-2014",
+      "confidence": "high",
+      "reason": "Both records describe the Parsons Boulevard/Kissena Boulevard corridor in Queens. The target records Jamaica to College Point/Whitestone scope from 2014, while the alias is a 2015 Queens record with the same Parsons/Kissena corridor label.",
+      "evidence_refs": [
+        "2015_06_09_brt_flushing_jamaica_cb12#p006_c0007",
+        "2015_06_15_brt_flushing_jamaica_cb8_presentation#p006_c0007",
+        "2015_06_15_brt_flushing_jamaica_cb8_presentation#p006_c0008",
+        "2014_10_07_brt_flushingjamaica_pw1_presentation#p014_c0004",
+        "2014_10_07_brt_flushingjamaica_pw1_presentation#p014_c0005"
+      ],
+      "guard_notes": "Corridor guard satisfied: same Parsons/Kissena Boulevard corridor name and compatible Queens Flushing-Jamaica planning context. Alias is absent from corridor merges and the pair is absent from corridor do-not-merge. Durable merge direction is alias_id -> target_id."
+    }
+  ],
+  "commands_run": [
+    "pwd && rg --files | rg '(^data/review_notes/|merges\\.json$|do-not|canonical|wiki/sources|raw/sources)'",
+    "git status --short",
+    "ls -la data/review_notes && find data/canonical -maxdepth 2 -type f | sort",
+    "jq 'keys, .proposed_aliases[0]' data/review_notes/codex-identity-batch132-prep.json",
+    "jq 'keys' data/identity-overrides/merges.json && jq 'keys' data/identity-overrides/do-not-merge.json",
+    "head -n 3 data/canonical/routes.jsonl && head -n 3 data/canonical/corridors.jsonl",
+    "jq route/corridor TSV summaries into /tmp/routes135.tsv and /tmp/corridors135.tsv (read-only)",
+    "jq inspection of data/identity-overrides/merges.json and data/identity-overrides/do-not-merge.json",
+    "awk grouping over /tmp/corridors135.tsv and /tmp/routes135.tsv",
+    "bun -e read-only corridor duplicate grouping over data/canonical/corridors.jsonl",
+    "bun -e read-only selected pair check against merges.json and do-not-merge.json"
+  ],
+  "commands_not_run": [
+    "no provider-backed commands or agent harness commands",
+    "no canonicalize*, campaign dedup, identity-review, write, ask, schema, ontology-normalize, or --profile/provider commands",
+    "no materialize",
+    "no export-jsonl",
+    "no full validate",
+    "no edits to canonical JSONL, wiki pages, DB, LOG.md, manifest, retired submissions, submissions, or merges.json"
+  ]
+}

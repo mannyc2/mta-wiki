@@ -1,0 +1,89 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-127596"
+record_kind: "source"
+display_name: "November 2023 Fuel Hedges"
+source_id: "meeting_doc_127596"
+source_ids:
+  - "meeting_doc_127596"
+local_observation_id: "source_meeting_doc_127596"
+local_observation_ids:
+  - "source_meeting_doc_127596"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-23T15:56:30.008Z"
+submission_ids:
+  - "sub_315584f623f80a6e"
+payload:
+  content_type: "spreadsheet"
+  date_text: "November 2023"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2023-11"
+    precision: "month"
+    raw_text: "November 2023"
+  published_date_normalized: "2023-11"
+  published_date_precision: "month"
+  title: "Fuel Hedging Program: Active Ultra-Low Sulfur Diesel (ULSD) Hedges"
+evidence_refs:
+  -
+    block_id: "p001_b0008"
+    evidence_id: "meeting_doc_127596#p001_b0008"
+    page_number: 1
+    role: "title_block"
+    source_id: "meeting_doc_127596"
+    source_path: "raw/sources/meeting_doc_127596/blocks.jsonl"
+    text_sha256: "sha256:a33562d071dee23e8a1df1849741c12bbc4ba589837a30e59162b9d7858809e2"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0003"
+    evidence_id: "meeting_doc_127596#p001_b0003"
+    page_number: 1
+    role: "source_file"
+    source_id: "meeting_doc_127596"
+    source_path: "raw/sources/meeting_doc_127596/blocks.jsonl"
+    text_sha256: "sha256:85eb288a329a8a536eacd10d9b99155ce379af2472d465801f3c9e420e4357cb"
+    text_source: "raw_text"
+---
+
+# November 2023 Fuel Hedges
+
+source_id: meeting_doc_127596
+citation: cite block ids exactly as shown in square brackets
+document: 33 block(s)
+
+## Page 1
+
+### [p001_b0001] Spreadsheet source: meeting_doc_127596
+### [p001_b0002] Preview run: spreadsheet-backlog-20260623
+### [p001_b0003] Source file: raw/sources/meeting_doc_127596/source.xlsx
+### [p001_b0004] Sheet: Sheet1
+### [p001_b0005] Sheet path: xl/worksheets/sheet1.xml
+### [p001_b0006] Rows: 31
+### [p001_b0007] Cells: 156
+[p001_b0008] Row 1: [Sheet1!A1] Fuel Hedging Program: Active Ultra-Low Sulfur Diesel (ULSD) Hedges
+[p001_b0009] Row 2: [Sheet1!A2] Date | [Sheet1!B2] Gallons Hedged | [Sheet1!C2] Percent of Expected Gallons Purchased* | [Sheet1!D2] Weighted Average Hedge Price for Each Month | [Sheet1!E2] 2023 Adopted Budget (February Plan) Forecasted Commodity Price
+[p001_b0010] Row 4: [Sheet1!A4] 45231 | [Sheet1!B4] 2659407 | [Sheet1!C4] 51.860855714356902 | [Sheet1!D4] 2.7241818286557873 | [Sheet1!E4] 3.06
+[p001_b0011] Row 5: [Sheet1!A5] 45261 | [Sheet1!B5] 2479089 | [Sheet1!C5] 46.885480917065046 | [Sheet1!D5] 2.7641988995151041 | [Sheet1!E5] 3.06
+[p001_b0012] Row 6: [Sheet1!A6] 45292 | [Sheet1!B6] 2756162 | [Sheet1!C6] 55.923919002342657 | [Sheet1!D6] 2.7912898495081206 | [Sheet1!E6] 2.72
+[p001_b0013] Row 7: [Sheet1!A7] 45323 | [Sheet1!B7] 2703685 | [Sheet1!C7] 52.786926594083248 | [Sheet1!D7] 2.7970706775382488 | [Sheet1!E7] 2.72
+[p001_b0014] Row 8: [Sheet1!A8] 45352 | [Sheet1!B8] 2798962 | [Sheet1!C8] 49.999998596735239 | [Sheet1!D8] 2.7774895574859539 | [Sheet1!E8] 2.72
+[p001_b0015] Row 9: [Sheet1!A9] 45383 | [Sheet1!B9] 2576170 | [Sheet1!C9] 49.99998405203867 | [Sheet1!D9] 2.7569714371722367 | [Sheet1!E9] 2.72
+[p001_b0016] Row 10: [Sheet1!A10] 45413 | [Sheet1!B10] 2644233 | [Sheet1!C10] 49.99999964144115 | [Sheet1!D10] 2.7113027112209855 | [Sheet1!E10] 2.72
+[p001_b0017] Row 11: [Sheet1!A11] 45444 | [Sheet1!B11] 2696809 | [Sheet1!C11] 49.999990744854983 | [Sheet1!D11] 2.6288988042163903 | [Sheet1!E11] 2.72
+[p001_b0018] Row 12: [Sheet1!A12] 45474 | [Sheet1!B12] 2551355 | [Sheet1!C12] 49.999985281078104 | [Sheet1!D12] 2.6292436238782924 | [Sheet1!E12] 2.72
+[p001_b0019] Row 13: [Sheet1!A13] 45505 | [Sheet1!B13] 2824348 | [Sheet1!C13] 49.999983559773675 | [Sheet1!D13] 2.5653135178455346 | [Sheet1!E13] 2.72
+[p001_b0020] Row 14: [Sheet1!A14] 45536 | [Sheet1!B14] 2646658 | [Sheet1!C14] 49.99999348944953 | [Sheet1!D14] 2.562642971135674 | [Sheet1!E14] 2.72
+[p001_b0021] Row 15: [Sheet1!A15] 45566 | [Sheet1!B15] 2669081 | [Sheet1!C15] 49.999990758783163 | [Sheet1!D15] 2.546380692305704 | [Sheet1!E15] 2.72
+[p001_b0022] Row 16: [Sheet1!A16] 45597 | [Sheet1!B16] 2350300 | [Sheet1!C16] 45.832988025320311 | [Sheet1!D16] 2.5227970568438072 | [Sheet1!E16] 2.72
+[p001_b0023] Row 17: [Sheet1!A17] 45627 | [Sheet1!B17] 2203106 | [Sheet1!C17] 41.665984690856803 | [Sheet1!D17] 2.499976482021292 | [Sheet1!E17] 2.72
+[p001_b0024] Row 18: [Sheet1!A18] 45658 | [Sheet1!B18] 1848105 | [Sheet1!C18] 37.498983850667884 | [Sheet1!D18] 2.4836503781440991 | [Sheet1!E18] 2.57
+[p001_b0025] Row 19: [Sheet1!A19] 45689 | [Sheet1!B19] 1707226 | [Sheet1!C19] 33.331994496958913 | [Sheet1!D19] 2.4707540371339238 | [Sheet1!E19] 2.57
+[p001_b0026] Row 20: [Sheet1!A20] 45717 | [Sheet1!B20] 1632634 | [Sheet1!C20] 29.164989631507055 | [Sheet1!D20] 2.4755340498850331 | [Sheet1!E20] 2.57
+[p001_b0027] Row 21: [Sheet1!A21] 45748 | [Sheet1!B21] 1287982 | [Sheet1!C21] 24.997992934982115 | [Sheet1!D21] 2.4822038337492298 | [Sheet1!E21] 2.57
+[p001_b0028] Row 22: [Sheet1!A22] 45778 | [Sheet1!B22] 1101640 | [Sheet1!C22] 20.830993185924701 | [Sheet1!D22] 2.5286451710177555 | [Sheet1!E22] 2.57
+[p001_b0029] Row 23: [Sheet1!A23] 45809 | [Sheet1!B23] 898792 | [Sheet1!C23] 16.663987579969401 | [Sheet1!D23] 2.5872097090316779 | [Sheet1!E23] 2.57
+[p001_b0030] Row 24: [Sheet1!A24] 45839 | [Sheet1!B24] 637685 | [Sheet1!C24] 12.496983216355344 | [Sheet1!D24] 2.6006766216862558 | [Sheet1!E24] 2.57
+[p001_b0031] Row 25: [Sheet1!A25] 45870 | [Sheet1!B25] 470536 | [Sheet1!C25] 8.3299905904943969 | [Sheet1!D25] 2.6161325409745482 | [Sheet1!E25] 2.57
+[p001_b0032] Row 26: [Sheet1!A26] 45901 | [Sheet1!B26] 220360 | [Sheet1!C26] 4.1629853820686691 | [Sheet1!D26] 2.5798000000000001 | [Sheet1!E26] 2.57
+[p001_b0033] Row 28: [Sheet1!A28] *MTA’s fuel hedging program mitigates budget risk by dollar cost averaging approximately 50% of projected fuel expenses. The goal of the program is to be 50% hedged for the next 12 months. Monthly hedges are equal to approximately  4% of the projected fuel purchases expected to occur 13-24 months from each hedge execution date. The actual  percentage hedged could be higher or lower than the 50% target depending on the actual levels of fuel consumption. While the fuel heding program includes compressed natrual gas, there are currently no actve hedges.

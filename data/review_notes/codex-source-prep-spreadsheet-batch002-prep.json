@@ -1,0 +1,118 @@
+{
+  "batch_id": "spreadsheet-batch002",
+  "prepared_at": "2026-06-23T15:42:11Z",
+  "candidate_count": 10,
+  "candidates": [
+    {
+      "source_id": "meeting_doc_26721",
+      "source_file": "raw/sources/meeting_doc_26721/source.xlsx",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26721/preview.json",
+      "current_blocks_lines": 0,
+      "expected_reason": "Reviewed spreadsheet preview is status ok with one populated Sheet1, 26 rows, 156 cells, and ULSD hedge headers plus monthly numeric data; applying the preview should produce nonempty text/blocks.",
+      "guard_notes": "Current campaign readiness row is ready=false and ingested=false; raw/sources/meeting_doc_26721/blocks.jsonl currently has 0 lines; not present in spreadsheet batch001."
+    },
+    {
+      "source_id": "meeting_doc_26751",
+      "source_file": "raw/sources/meeting_doc_26751/source.xlsx",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_26751/preview.json",
+      "current_blocks_lines": 0,
+      "expected_reason": "Reviewed spreadsheet preview is status ok with one populated Sheet1, 26 rows, 156 cells, and ULSD hedge headers plus monthly numeric data; applying the preview should produce nonempty text/blocks.",
+      "guard_notes": "Current campaign readiness row is ready=false and ingested=false; raw/sources/meeting_doc_26751/blocks.jsonl currently has 0 lines; not present in spreadsheet batch001."
+    },
+    {
+      "source_id": "meeting_doc_33681",
+      "source_file": "raw/sources/meeting_doc_33681/source.xlsx",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_33681/preview.json",
+      "current_blocks_lines": 0,
+      "expected_reason": "Reviewed spreadsheet preview is status ok with one populated Sheet1, 26 rows, 156 cells, and ULSD hedge headers plus monthly numeric data; applying the preview should produce nonempty text/blocks.",
+      "guard_notes": "Current campaign readiness row is ready=false and ingested=false; raw/sources/meeting_doc_33681/blocks.jsonl currently has 0 lines; not present in spreadsheet batch001."
+    },
+    {
+      "source_id": "meeting_doc_42426",
+      "source_file": "raw/sources/meeting_doc_42426/source.xlsx",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_42426/preview.json",
+      "current_blocks_lines": 0,
+      "expected_reason": "Reviewed spreadsheet preview is status ok with one populated Sheet1, 26 rows, 156 cells, and ULSD hedge headers plus monthly numeric data; applying the preview should produce nonempty text/blocks.",
+      "guard_notes": "Current campaign readiness row is ready=false and ingested=false; raw/sources/meeting_doc_42426/blocks.jsonl currently has 0 lines; not present in spreadsheet batch001."
+    },
+    {
+      "source_id": "meeting_doc_43886",
+      "source_file": "raw/sources/meeting_doc_43886/source.xlsx",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_43886/preview.json",
+      "current_blocks_lines": 0,
+      "expected_reason": "Reviewed spreadsheet preview is status ok with one populated Sheet1, 26 rows, 156 cells, and ULSD hedge headers plus monthly numeric data; applying the preview should produce nonempty text/blocks.",
+      "guard_notes": "Current campaign readiness row is ready=false and ingested=false; raw/sources/meeting_doc_43886/blocks.jsonl currently has 0 lines; not present in spreadsheet batch001."
+    },
+    {
+      "source_id": "meeting_doc_58566",
+      "source_file": "raw/sources/meeting_doc_58566/source.xlsx",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_58566/preview.json",
+      "current_blocks_lines": 0,
+      "expected_reason": "Reviewed spreadsheet preview is status ok with one populated Sheet1, 27 rows, 157 cells, and ULSD hedge headers plus monthly numeric data and a note row; applying the preview should produce nonempty text/blocks.",
+      "guard_notes": "Current campaign readiness row is ready=false and ingested=false; raw/sources/meeting_doc_58566/blocks.jsonl currently has 0 lines; not present in spreadsheet batch001."
+    },
+    {
+      "source_id": "meeting_doc_76616",
+      "source_file": "raw/sources/meeting_doc_76616/source.xlsx",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_76616/preview.json",
+      "current_blocks_lines": 0,
+      "expected_reason": "Reviewed spreadsheet preview is status ok with one populated Sheet1, 27 rows, 157 cells, and ULSD hedge headers plus monthly numeric data and a note row; applying the preview should produce nonempty text/blocks.",
+      "guard_notes": "Current campaign readiness row is ready=false and ingested=false; raw/sources/meeting_doc_76616/blocks.jsonl currently has 0 lines; not present in spreadsheet batch001."
+    },
+    {
+      "source_id": "meeting_doc_127596",
+      "source_file": "raw/sources/meeting_doc_127596/source.xlsx",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_127596/preview.json",
+      "current_blocks_lines": 0,
+      "expected_reason": "Reviewed spreadsheet preview is status ok with one populated Sheet1, 31 rows, 156 cells, and Fuel Hedging Program ULSD headers plus monthly numeric data; applying the preview should produce nonempty text/blocks.",
+      "guard_notes": "Current campaign readiness row is ready=false and ingested=false; raw/sources/meeting_doc_127596/blocks.jsonl currently has 0 lines; not present in spreadsheet batch001."
+    },
+    {
+      "source_id": "meeting_doc_151906",
+      "source_file": "raw/sources/meeting_doc_151906/source.xlsx",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_151906/preview.json",
+      "current_blocks_lines": 0,
+      "expected_reason": "Reviewed spreadsheet preview is status ok with one populated Sheet1, 31 rows, 156 cells, and Fuel Hedging Program ULSD headers plus monthly numeric data; applying the preview should produce nonempty text/blocks.",
+      "guard_notes": "Current campaign readiness row is ready=false and ingested=false; raw/sources/meeting_doc_151906/blocks.jsonl currently has 0 lines; not present in spreadsheet batch001."
+    },
+    {
+      "source_id": "meeting_doc_154886",
+      "source_file": "raw/sources/meeting_doc_154886/source.xlsx",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_154886/preview.json",
+      "current_blocks_lines": 0,
+      "expected_reason": "Reviewed spreadsheet preview is status ok with one populated Sheet1, 31 rows, 156 cells, and Fuel Hedging Program ULSD headers plus monthly numeric data; applying the preview should produce nonempty text/blocks.",
+      "guard_notes": "Current campaign readiness row is ready=false and ingested=false; raw/sources/meeting_doc_154886/blocks.jsonl currently has 0 lines; not present in spreadsheet batch001."
+    }
+  ],
+  "excluded_examples": [
+    {
+      "source_id": "meeting_doc_100251",
+      "reason": "Excluded because it was already applied in spreadsheet batch001."
+    },
+    {
+      "source_id": "meeting_doc_109251",
+      "reason": "Excluded because it was already applied in spreadsheet batch001."
+    },
+    {
+      "source_id": "meeting_doc_109296",
+      "reason": "Excluded because current campaign readiness marks it ingested=true."
+    },
+    {
+      "source_id": "meeting_doc_109256",
+      "reason": "Excluded because the reviewed preview has status ok but 0 rows and 0 cells, so it is unlikely to produce nonempty blocks."
+    },
+    {
+      "source_id": "meeting_doc_85481",
+      "reason": "Excluded because the reviewed preview has status ok but 0 rows and 0 cells, so it is unlikely to produce nonempty blocks."
+    },
+    {
+      "source_id": "meeting_doc_100246",
+      "reason": "Excluded from this small high-confidence batch because it has a larger two-sheet preview with 130 rows and 1,780 cells."
+    },
+    {
+      "source_id": "meeting_doc_105821",
+      "reason": "Excluded from this small high-confidence batch because it has a larger two-sheet preview with 136 rows and 1,856 cells."
+    }
+  ],
+  "recommended_apply_command": "for source_id in meeting_doc_26721 meeting_doc_26751 meeting_doc_33681 meeting_doc_42426 meeting_doc_43886 meeting_doc_58566 meeting_doc_76616 meeting_doc_127596 meeting_doc_151906 meeting_doc_154886; do bun packages/cli/src/cli.ts source-prep-apply-preview \"$source_id\" --run-id spreadsheet-backlog-20260623; done"
+}

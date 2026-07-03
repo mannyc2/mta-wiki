@@ -1,0 +1,74 @@
+{
+  "run_id": "2026-06-10T17-48-04-824Z_1496766-1c7fdb21_ingest_2010-06-22-brt-nostrand-cb9",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-10T19:48:25.439Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "b44-limited-confirm",
+        "local_observation_id": "route_b44_limited_cb9_2010",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_b44-limited already resolves directly to the registry record route_b44-limited, which has this source (2010_06_22_brt_nostrand_cb9) in its source_ids and the alias route_b44-limited-cb9-2010. No different record to link to; do_not_merge_pairs confirm it is distinct from route_b44-local and route_b44-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_22_brt_nostrand_cb9",
+            "block_id": "p008_c0002",
+            "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+          },
+          {
+            "source_id": "2010_06_22_brt_nostrand_cb9",
+            "block_id": "p007_c0003",
+            "source_quote": "Currently served by B44 bus route"
+          }
+        ]
+      },
+      {
+        "decision_id": "b44-local-confirm",
+        "local_observation_id": "route_b44_local_cb9_2010",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_b44-local already resolves directly to the registry record route_b44-local, which has this source in its source_ids and the alias route_b44-local-cb9-2010. No different record to link to; do_not_merge_pairs confirm it is distinct from route_b44-limited and route_b44-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_22_brt_nostrand_cb9",
+            "block_id": "p008_c0002",
+            "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+          }
+        ]
+      },
+      {
+        "decision_id": "b44-sbs-confirm",
+        "local_observation_id": "route_b44_sbs_cb9_2010",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_b44-sbs already resolves directly to the registry record route_b44-sbs, which has this source in its source_ids and the alias route_b44-sbs-cb9-2010. No different record to link to; do_not_merge_pairs confirm it is distinct from route_b44-limited and route_b44-local.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_22_brt_nostrand_cb9",
+            "block_id": "p008_c0002",
+            "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "predecessor_of",
+            "subject_id": "route_b44-limited",
+            "object_id": "route_b44-sbs",
+            "description": "The B44 Limited service is stated to become B44 SBS (Select Bus Service); the Limited variant is the predecessor that will be replaced by the SBS variant.",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_22_brt_nostrand_cb9",
+                "block_id": "p008_c0002",
+                "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-47-25-736Z_1663150-b2ce5043_canonicalize_2026-06-10t17-48-04-824z-1496766-1c7fdb21-ingest-2010-06-22-brt-nostrand-cb9-route-identity"
+}

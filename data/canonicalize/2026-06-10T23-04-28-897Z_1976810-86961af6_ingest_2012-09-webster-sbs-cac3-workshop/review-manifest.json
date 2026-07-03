@@ -1,0 +1,16 @@
+{
+  "run_id": "2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop",
+  "generated_at": "2026-06-11T03:05:56.683Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "reviewed_decision_count": 7,
+  "pass_count": 4,
+  "fail_count": 3,
+  "unsure_count": 0,
+  "paths": {
+    "verdicts_jsonl": "data/canonicalize/2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop/verdicts.jsonl",
+    "manifest": "data/canonicalize/2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop/review-manifest.json"
+  }
+}

@@ -1,0 +1,392 @@
+{
+  "note_id": "codex-identity-batch071-prep",
+  "batch": "identity-batch071",
+  "created_at": "2026-06-22T23:35:12Z",
+  "lane": "IDENTITY PREP ONLY",
+  "status": "prepared",
+  "checkpoint": "post-identity070-applied-materialized-validated",
+  "scope": {
+    "write_scope": [
+      "data/review_notes/codex-identity-batch071-prep.json"
+    ],
+    "excluded_outputs": [
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json",
+      "data/submission-overrides/retired.json",
+      "LOG.md",
+      "manifest",
+      "data/canonical",
+      "data/materialized",
+      "wiki",
+      "data/canonical.db"
+    ],
+    "prior_prep_disjoint_through_batch": "identity-batch070"
+  },
+  "context": {
+    "source_issue": "remaining duplicate entity identities after identity070 application",
+    "selection_policy": "high-confidence person entity aliases with exact full-name matches and compatible board, committee, agency, or executive role context; initials-only, organization, broad agency, compound-person, and ambiguous role records were deferred.",
+    "canonical_entity_records_scanned": 2543,
+    "prior_prep_files_considered_through_batch070": 24,
+    "prior_prep_unique_records_excluded_through_batch070": 393,
+    "current_merges_entity_alias_count": 465,
+    "current_identity_aliases_entity_count": 465,
+    "current_do_not_merge_entity_pair_count": 20,
+    "selected_candidate_count": 9
+  },
+  "intended_mutation": {
+    "aliases": {
+      "entity": {
+        "entity_david-mack-chair": "entity_193976-david-mack",
+        "entity_james-odonnell-mar2026": "entity_193976-james-odonnell",
+        "entity_meeting-doc-140311-samuel-chu": "entity_193976-samuel-chu",
+        "entity_jamey-barbas-audit-chair": "entity_audit-committee-chair-barbas",
+        "entity_meeting-doc-98211-sherif-soliman": "entity_audit-committee-soliman",
+        "entity_meeting-doc-166926-blanca-lopez": "entity_blanca-lopez-166966",
+        "entity_meeting-doc-199171-christopher-leathers": "entity_christopher-leathers-oct2025",
+        "entity_meeting-doc-143306-ydanis-rodriguez": "entity_council-member-ydanis-rodriguez-tsp-2017",
+        "entity_meeting-doc-29941-craig-cipriano": "entity_meeting-doc-105931-craig-cipriano"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_david-mack-chair",
+      "target": "entity_193976-david-mack",
+      "validator_duplicate_key": "entity_david-mack",
+      "reason": "Both records identify David Mack as a person and Bridges and Tunnels committee chair/co-chair; the alias is a shorter chair-title duplicate of the target's full-name committee context.",
+      "evidence_refs": [
+        "meeting_doc_113966#p004_c0005",
+        "meeting_doc_193976#p016_c0005"
+      ],
+      "shared_identity_keys": [
+        "entity_david-mack"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_disjoint_from_current_merges_records": true,
+        "target_disjoint_from_current_merges_records": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch070": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_james-odonnell-mar2026",
+      "target": "entity_193976-james-odonnell",
+      "validator_duplicate_key": "entity_james-o-donnell",
+      "reason": "Both records identify James O'Donnell as the same person in MTA board/committee member context, with exact full-name evidence and no conflicting role context.",
+      "evidence_refs": [
+        "meeting_doc_201651#p016_c0005",
+        "meeting_doc_193976#p016_c0005"
+      ],
+      "shared_identity_keys": [
+        "entity_james-o-donnell"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_disjoint_from_current_merges_records": true,
+        "target_disjoint_from_current_merges_records": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch070": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-140311-samuel-chu",
+      "target": "entity_193976-samuel-chu",
+      "validator_duplicate_key": "entity_samuel-chu",
+      "reason": "Both records identify Samuel Chu as a person and committee co-chair; honorific/title wording differs but the full person name and committee role context align.",
+      "evidence_refs": [
+        "meeting_doc_140311#p001_c0004",
+        "meeting_doc_193976#p016_c0005"
+      ],
+      "shared_identity_keys": [
+        "entity_samuel-chu"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_disjoint_from_current_merges_records": true,
+        "target_disjoint_from_current_merges_records": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch070": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_jamey-barbas-audit-chair",
+      "target": "entity_audit-committee-chair-barbas",
+      "validator_duplicate_key": "entity_jamey-barbas",
+      "reason": "Both records identify Jamey Barbas as the Audit Committee chair/person; one record uses an initialed display label, but its entity_name and cited source evidence carry the same full name.",
+      "evidence_refs": [
+        "meeting_doc_91561#p003_c0004",
+        "meeting_doc_72531#p004_c0008"
+      ],
+      "shared_identity_keys": [
+        "entity_jamey-barbas"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_disjoint_from_current_merges_records": true,
+        "target_disjoint_from_current_merges_records": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch070": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-98211-sherif-soliman",
+      "target": "entity_audit-committee-soliman",
+      "validator_duplicate_key": "entity_sherif-soliman",
+      "reason": "Both records identify Sherif Soliman as a person in Audit Committee context; the alias is a full-name meeting-doc duplicate of the target's committee-member record.",
+      "evidence_refs": [
+        "meeting_doc_98211#p001_c0006",
+        "meeting_doc_105876#p003_c0004"
+      ],
+      "shared_identity_keys": [
+        "entity_sherif-soliman"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_disjoint_from_current_merges_records": true,
+        "target_disjoint_from_current_merges_records": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch070": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-166926-blanca-lopez",
+      "target": "entity_blanca-lopez-166966",
+      "validator_duplicate_key": "entity_blanca-lopez",
+      "reason": "Both records identify Blanca Lopez as a person and MTA committee chair/co-chair; the source-backed name and committee leadership context are compatible.",
+      "evidence_refs": [
+        "meeting_doc_166926#p034_c0005",
+        "meeting_doc_166966#p003_c0006"
+      ],
+      "shared_identity_keys": [
+        "entity_blanca-lopez"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_disjoint_from_current_merges_records": true,
+        "target_disjoint_from_current_merges_records": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch070": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-199171-christopher-leathers",
+      "target": "entity_christopher-leathers-oct2025",
+      "validator_duplicate_key": "entity_christopher-leathers",
+      "reason": "Both records identify Christopher Leathers as the same person and MTA board member; honorific/title wording differs but the full-name evidence is exact.",
+      "evidence_refs": [
+        "meeting_doc_199171#p001_c0004",
+        "meeting_doc_192251#p001_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_christopher-leathers"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_disjoint_from_current_merges_records": true,
+        "target_disjoint_from_current_merges_records": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch070": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-143306-ydanis-rodriguez",
+      "target": "entity_council-member-ydanis-rodriguez-tsp-2017",
+      "validator_duplicate_key": "entity_ydanis-rodriguez",
+      "reason": "Both records identify Ydanis Rodriguez as the same person in public-official context; the target includes Council Member context and the alias preserves the exact full name.",
+      "evidence_refs": [
+        "meeting_doc_143306#p002_c0002",
+        "tsp_status_2017#p001_b0001"
+      ],
+      "shared_identity_keys": [
+        "entity_ydanis-rodriguez"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_disjoint_from_current_merges_records": true,
+        "target_disjoint_from_current_merges_records": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch070": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-29941-craig-cipriano",
+      "target": "entity_meeting-doc-105931-craig-cipriano",
+      "validator_duplicate_key": "entity_craig-cipriano",
+      "reason": "Both records identify Craig Cipriano as the same MTA/NYCT buses executive; the title wording changes across records but the full person name and agency context align.",
+      "evidence_refs": [
+        "meeting_doc_29941#p041_c0002",
+        "meeting_doc_105931#p001_c0010"
+      ],
+      "shared_identity_keys": [
+        "entity_craig-cipriano"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_disjoint_from_current_merges_records": true,
+        "target_disjoint_from_current_merges_records": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch070": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    }
+  ],
+  "aggregate_guard_results": {
+    "candidate_count": 9,
+    "canonical_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "aliases_disjoint_from_current_merges_records": true,
+    "targets_disjoint_from_current_merges_records": true,
+    "targets_not_alias_mapped_in_merges_json": true,
+    "targets_not_alias_mapped_in_identity_aliases_table": true,
+    "no_overlap_with_prior_prep_through_batch070": true,
+    "prior_prep_files_considered_through_batch070": 24,
+    "prior_prep_unique_records_excluded_through_batch070": 393,
+    "current_merges_entity_alias_count": 465,
+    "current_identity_aliases_entity_count": 465,
+    "current_do_not_merge_entity_pair_count": 20,
+    "do_not_merge_guard_hits": 0,
+    "raw_source_blocks_checked": 18,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 18,
+    "source_page_blocks_missing": [],
+    "all_pass": true
+  },
+  "commands_used_for_evidence": [
+    "git status --short",
+    "sed -n '1,220p' LOG.md",
+    "rg --files data/review_notes data/identity-overrides data/canonical packages",
+    "jq '.' data/review_notes/codex-identity-batch070-prep.json",
+    "jq '[.aliases.entity[]? // empty] | length' data/identity-overrides/merges.json",
+    "jq 'keys' data/identity-overrides/do-not-merge.json",
+    "jq '.aliases.entity | to_entries[0:10]' data/identity-overrides/merges.json",
+    "jq '.pairs.entity[0:20]' data/identity-overrides/do-not-merge.json",
+    "sqlite3 data/canonical.db '.tables'",
+    "sqlite3 data/canonical.db 'pragma table_info(records); pragma table_info(entities); pragma table_info(identity_aliases); pragma table_info(do_not_merge); pragma table_info(evidence_refs);'",
+    "sqlite3 data/canonical.db \"select count(*) from records where record_kind='entity'; select count(*) from identity_aliases where kind='entity'; select count(*) from do_not_merge where kind='entity';\"",
+    "rg -n 'function identityKeysForRecord|export function identityKeysForRecord' packages/db/src/identity.ts",
+    "sed -n '260,460p' packages/db/src/identity.ts",
+    "ls data/review_notes/codex-identity-batch*-prep.json | sort -V | tail -30",
+    "bun -e '<read-only duplicate entity candidate scan using packages/db/src/identity.ts identityKeysForRecord, data/canonical.db, current merges/do-not-merge guards, and prior prep files through batch070>'",
+    "sqlite3 data/canonical.db \"select record_id, source_id, block_id, page_number, ref_json from evidence_refs where record_id in (...) order by record_id, ordinal;\"",
+    "bun -e '<read-only aggregate guard check for canonical presence, current merges and identity_aliases disjointness, prior prep overlap through batch070, do-not-merge hits, raw blocks, and source pages>'",
+    "date -u +%Y-%m-%dT%H:%M:%SZ"
+  ],
+  "commands_intentionally_not_run": [
+    "canonicalize",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "materialize",
+    "export-jsonl",
+    "full validate",
+    "DB repair/publish",
+    "any command with --profile",
+    "any provider-backed command"
+  ],
+  "deferred_low_confidence_examples": [
+    {
+      "alias": "entity_193976-andrew-albert",
+      "target": "entity_safety-committee-member-albert-jan2022",
+      "reason": "One display surface is initialed as A. Albert; likely Andrew Albert, but deferred from this exact full-name batch."
+    },
+    {
+      "alias": "entity_randolph-glucksman-115226",
+      "target": "entity_193976-randolph-glucksman",
+      "reason": "One display surface is R. Glucksman; likely Randolph Glucksman, but deferred because this batch favored exact full names on both sides."
+    },
+    {
+      "alias": "entity_39651-l-lacewell",
+      "target": "entity_bt-committee-chair-lacewell",
+      "reason": "Initial-only L. Lacewell records may be duplicates, but no full first-name evidence was used for this batch."
+    },
+    {
+      "alias": "entity_ellen-kirwin-meeting-doc-157721",
+      "target": "entity_ellen-kirwin-matthew-kirwin",
+      "reason": "Combined two-person entity risk; aliasing could collapse a compound record rather than one person identity."
+    }
+  ]
+}

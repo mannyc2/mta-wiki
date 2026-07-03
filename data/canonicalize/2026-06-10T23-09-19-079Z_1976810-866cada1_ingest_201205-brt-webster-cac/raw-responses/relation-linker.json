@@ -1,0 +1,12 @@
+{
+  "run_id": "2026-06-10T23-09-19-079Z_1976810-866cada1_ingest_201205-brt-webster-cac",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T03:23:58.036Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "assistant_text",
+  "parse_error": "JSON Parse error: Unexpected EOF",
+  "raw_response": "",
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-18-19-870Z_2111393-96aa72ad_canonicalize_2026-06-10t23-09-19-079z-1976810-866cada1-ingest-201205-brt-webster-cac-relation-linker"
+}

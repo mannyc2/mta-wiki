@@ -1,0 +1,53 @@
+{
+  "run_id": "2026-06-10T22-56-13-202Z_1976810-516f2e3c_ingest_2011-09-15-sbs-utica-cb8-9-17",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T01:11:57.166Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "utica-2011-self-resolve",
+        "local_observation_id": "project_utica_avenue_improvements_2011",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'project_utica-avenue-improvements-2011' already exists in the registry with matching source '2011_09_15_sbs_utica_cb8_9_17', matching project_name 'Utica Avenue Improvements', matching project_type 'bus lane and loading improvements', matching status 'proposed', and matching borough 'Brooklyn'. The observation resolves to its own existing registry record; no DIFFERENT registry record represents the same real-world thing. The similar record 'project_utica-ave-bus-priority-safety-study' has a distinct name ('Utica Avenue Bus Priority and Safety Study'), distinct project_type ('study'), distinct status ('ongoing'), and distinct source_ids (2012-2013), indicating it is a broader follow-on effort, not the same project.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_09_15_sbs_utica_cb8_9_17",
+            "block_id": "p001_c0002",
+            "source_quote": "Utica Avenue Improvements"
+          },
+          {
+            "source_id": "2011_09_15_sbs_utica_cb8_9_17",
+            "block_id": "p002_c0003",
+            "source_quote": "Proposed loading and bus lane improvement"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "superseded_by",
+            "subject_id": "project_utica-avenue-improvements-2011",
+            "object_id": "project_utica-ave-bus-priority-safety-study",
+            "description": "The 2011 Utica Avenue Improvements proposal was superseded by and incorporated into the broader Utica Avenue Bus Priority and Safety Study (2012-2013). The study description explicitly includes 'proposed loading and bus lane improvements and a corridor study from Carroll St. to Church Ave.', mirroring the 2011 proposal scope.",
+            "evidence_refs": [
+              {
+                "source_id": "2011_09_15_sbs_utica_cb8_9_17",
+                "block_id": "p002_c0003",
+                "source_quote": "Proposed loading and bus lane improvement"
+              },
+              {
+                "source_id": "2011_09_15_sbs_utica_cb8_9_17",
+                "block_id": "p010_c0004",
+                "source_quote": "Signal timing improvements for all traffic • Transit Signal Priority (TSP) for buses • Left turn bays to reduce blockages by turning vehicles • Pedestrian safety improvements"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-10-50-869Z_2111393-05a5e59a_canonicalize_2026-06-10t22-56-13-202z-1976810-516f2e3c-ingest-2011-09-15-sbs-utica-cb8-9-17-project-identity"
+}

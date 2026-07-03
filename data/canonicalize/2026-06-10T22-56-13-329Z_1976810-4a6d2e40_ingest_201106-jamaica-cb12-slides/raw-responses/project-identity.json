@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-06-10T22-56-13-329Z_1976810-4a6d2e40_ingest_201106-jamaica-cb12-slides",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T01:36:35.419Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "decision_project_jamaica_bus_improvement_study_cb12_2011",
+        "local_observation_id": "project_jamaica_bus_improvement_study_cb12_2011",
+        "decision": "new",
+        "rationale": "The observation maps to its own base_record_id project_jamaica-bus-improvement-study, which is the correct registry record for the Jamaica Bus Improvement Study. The observation's source (201106_jamaica_cb12_slides) is already listed among the registry card's source_ids, and the description, borough, project type, and status all align. Per rules, when the closest match is the observation's own base_record_id, the decision is new (the observation already resolves to that id).",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p001_c0001",
+            "source_quote": "Jamaica Bus Improvement Study"
+          },
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p003_c0003",
+            "source_quote": "Jamaica Bus Improvement Study"
+          },
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p010_c0003",
+            "source_quote": "Jamaica Bus Improvement Study"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-35-46-826Z_2111393-ee58ec4f_canonicalize_2026-06-10t22-56-13-329z-1976810-4a6d2e40-ingest-201106-jamaica-cb12-slides-project-identity"
+}

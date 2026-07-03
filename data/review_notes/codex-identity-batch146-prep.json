@@ -1,0 +1,591 @@
+{
+  "note_id": "codex-identity-batch146-prep",
+  "batch": "identity146",
+  "created_at": "2026-06-23T07:08:57Z",
+  "status": "ready_for_conductor_apply",
+  "lane": "codex_only_identity_cleanup_prep",
+  "scope": {
+    "global_kind": "project",
+    "allowed_write": "data/review_notes/codex-identity-batch146-prep.json",
+    "durable_inputs_mutated": false,
+    "generated_outputs_mutated": false,
+    "db_mutated": false,
+    "provider_backed_commands_run": false
+  },
+  "prepared_count": 10,
+  "proposed_aliases": [
+    {
+      "global_kind": "project",
+      "alias_id": "project_14th-st-ada-accessible-complex",
+      "canonical_id": "project_14th-st-ada-accessibility",
+      "target_id": "project_14th-st-ada-accessibility",
+      "confidence": "high",
+      "validator_duplicate_key": "project_14th-st-1-2-3-f-m-l-complex-ada-accessibility",
+      "reason": "Both records describe the same 14th Street 1/2/3/F/M/L complex ADA accessibility project. The alias is a progress-update wording for making the complex fully ADA accessible; the target is the cleaner project record with the same project name and matching elevator-progress description.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "major progress towards making the three-station 14th St 1/2/3/F/M/L complex fully ADA accessible by completing the mezzanine to platform elevator on the Uptown side of the 1/2/3",
+          "source_ids": [
+            "meeting_doc_160096"
+          ],
+          "evidence_refs": [
+            "meeting_doc_160096#p008_c0006"
+          ]
+        },
+        "target": {
+          "display_name": "14th Street 1/2/3/F/M/L Complex ADA Accessibility",
+          "source_ids": [
+            "meeting_doc_160246",
+            "meeting_doc_160431"
+          ],
+          "evidence_refs": [
+            "meeting_doc_160246#p008_c0006",
+            "meeting_doc_160431#p008_c0006"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_14th-st-ada-accessibility and project_14th-st-ada-accessible-complex share identity key project_14th-st-1-2-3-f-m-l-complex-ada-accessibility.",
+        "shared_identity_keys": [
+          "project_14th-st-1-2-3-f-m-l-complex-ada-accessibility"
+        ]
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_ada-package-1-eight-stations",
+      "canonical_id": "project_ada-eight-stations-package1",
+      "target_id": "project_ada-eight-stations-package1",
+      "confidence": "high",
+      "validator_duplicate_key": "project_ada-package-1-eight-stations",
+      "reason": "Both records identify ADA Package 1 for accessibility upgrades at eight stations. The payloads list the same package scope and station set, with compatible design-build/accessibility status details.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "ADA Package 1 - Accessibility Upgrades at Eight Stations",
+          "source_ids": [
+            "meeting_doc_91616"
+          ],
+          "evidence_refs": [
+            "meeting_doc_91616#p025_c0003",
+            "meeting_doc_91616#p015_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "ADA Package 1 - Eight Stations",
+          "source_ids": [
+            "meeting_doc_105871",
+            "meeting_doc_121021",
+            "meeting_doc_44206",
+            "meeting_doc_72541"
+          ],
+          "evidence_refs": [
+            "meeting_doc_105871#p012_c0005",
+            "meeting_doc_105871#p012_c0007"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_ada-eight-stations-package1 and project_ada-package-1-eight-stations share identity key project_ada-package-1-eight-stations.",
+        "shared_identity_keys": [
+          "project_ada-package-1-eight-stations"
+        ]
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_ada-package-2-eight-stations",
+      "canonical_id": "project_ada-eight-stations-package2",
+      "target_id": "project_ada-eight-stations-package2",
+      "confidence": "high",
+      "validator_duplicate_key": "project_ada-package-2-eight-stations",
+      "reason": "Both records identify ADA Package 2 for accessibility upgrades at eight stations. The alias and target share the package number, eight-station scope, and elevator/accessibility upgrade details.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "ADA Package 2 - Accessibility Upgrade at Eight Stations",
+          "source_ids": [
+            "meeting_doc_91616"
+          ],
+          "evidence_refs": [
+            "meeting_doc_91616#p016_c0004",
+            "meeting_doc_91616#p016_c0005"
+          ]
+        },
+        "target": {
+          "display_name": "ADA Package 2 - Eight Stations",
+          "source_ids": [
+            "meeting_doc_105871",
+            "meeting_doc_121021"
+          ],
+          "evidence_refs": [
+            "meeting_doc_105871#p014_c0001",
+            "meeting_doc_105871#p014_c0003"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_ada-eight-stations-package2 and project_ada-package-2-eight-stations share identity key project_ada-package-2-eight-stations.",
+        "shared_identity_keys": [
+          "project_ada-package-2-eight-stations"
+        ]
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_bus-camera-security-system-maintenance-extension",
+      "canonical_id": "project_bcss-extension-105971",
+      "target_id": "project_bcss-extension-105971",
+      "confidence": "high",
+      "validator_duplicate_key": "project_bus-camera-security-system-maintenance-extension",
+      "reason": "Both records describe the same Bus Camera Security System maintenance extension. The alias gives the expanded BCSS maintenance contract extension wording; the target gives the same extension with the 11-month maintenance scope for buses and depots.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Bus Camera Security System (BCSS) Maintenance Contract Extension",
+          "source_ids": [
+            "meeting_doc_105946"
+          ],
+          "evidence_refs": [
+            "meeting_doc_105946#p006_c0010",
+            "meeting_doc_105946#p007_c0006"
+          ]
+        },
+        "target": {
+          "display_name": "Bus Camera Security System Maintenance Extension",
+          "source_ids": [
+            "meeting_doc_105971"
+          ],
+          "evidence_refs": [
+            "meeting_doc_105971#p055_c0005"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_bcss-extension-105971 and project_bus-camera-security-system-maintenance-extension share identity key project_bus-camera-security-system-maintenance-extension.",
+        "shared_identity_keys": [
+          "project_bus-camera-security-system-maintenance-extension"
+        ]
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_bus-operator-simulator-procurement",
+      "canonical_id": "project_bos-procurement-2025",
+      "target_id": "project_bos-procurement-2025",
+      "confidence": "high",
+      "validator_duplicate_key": "project_bus-operator-simulator-systems-procurement",
+      "reason": "Both records identify the Bus Operator Simulator Systems procurement for purchase, installation, and maintenance of four simulator systems. The alias includes Contract 462672; the target is the cleaner approved procurement record for the same BOS systems.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Bus Operator Simulator Systems Procurement - Contract 462672",
+          "source_ids": [
+            "meeting_doc_167236"
+          ],
+          "evidence_refs": [
+            "meeting_doc_167236#p005_c0006",
+            "meeting_doc_167236#p006_c0004"
+          ]
+        },
+        "target": {
+          "display_name": "Bus Operator Simulator Systems Procurement",
+          "source_ids": [
+            "meeting_doc_170981"
+          ],
+          "evidence_refs": [
+            "meeting_doc_170981#p004_c0008"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_bos-procurement-2025 and project_bus-operator-simulator-procurement share identity key project_bus-operator-simulator-systems-procurement.",
+        "shared_identity_keys": [
+          "project_bus-operator-simulator-systems-procurement"
+        ]
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_smith-ninth-st-escalator-replacement",
+      "canonical_id": "project_smith-ninth-escalator-201601",
+      "target_id": "project_smith-ninth-escalator-201601",
+      "confidence": "high",
+      "validator_duplicate_key": "project_smith-ninth-st-escalator-replacement",
+      "reason": "Both records describe the Smith-Ninth Street station escalator replacement project. They share the same station, replacement scope, and distinctive description of the highest elevated subway station context.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "project_smith_ninth_st_escalator_replacement",
+          "source_ids": [
+            "meeting_doc_205556"
+          ],
+          "evidence_refs": [
+            "meeting_doc_205556#p012_c0001"
+          ]
+        },
+        "target": {
+          "display_name": "Smith-Ninth Street Escalator Replacement",
+          "source_ids": [
+            "meeting_doc_201601"
+          ],
+          "evidence_refs": [
+            "meeting_doc_201601#p012_c0001"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_smith-ninth-escalator-201601 and project_smith-ninth-st-escalator-replacement share identity key project_smith-ninth-st-escalator-replacement.",
+        "shared_identity_keys": [
+          "project_smith-ninth-st-escalator-replacement"
+        ]
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_station-spruce-up-lirr",
+      "canonical_id": "project_lirr-station-spruce-up",
+      "target_id": "project_lirr-station-spruce-up",
+      "confidence": "high",
+      "validator_duplicate_key": "project_lirr-station-spruce-up-program",
+      "reason": "Both records identify the LIRR Station Spruce-Up Program. The alias is a single-source shorthand; the target is the broader canonical program record with matching station-improvement/spruce-up wording.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "LIRR Station Spruce-Up Program",
+          "source_ids": [
+            "meeting_doc_170826"
+          ],
+          "evidence_refs": [
+            "meeting_doc_170826#p005_c0001"
+          ]
+        },
+        "target": {
+          "display_name": "LIRR Station Spruce-Up Program",
+          "source_ids": [
+            "meeting_doc_157676",
+            "meeting_doc_160096",
+            "meeting_doc_170851",
+            "meeting_doc_201561",
+            "meeting_doc_208026"
+          ],
+          "evidence_refs": [
+            "meeting_doc_157676#p021_c0006",
+            "meeting_doc_157676#p021_c0007"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_lirr-station-spruce-up and project_station-spruce-up-lirr share identity key project_lirr-station-spruce-up-program.",
+        "shared_identity_keys": [
+          "project_lirr-station-spruce-up-program",
+          "project_station-spruce-up-program"
+        ]
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_tbta-its-design-services",
+      "canonical_id": "project_meeting-doc-201641-its-consultant-services",
+      "target_id": "project_meeting-doc-201641-its-consultant-services",
+      "confidence": "high",
+      "validator_duplicate_key": "project_miscellaneous-intelligent-transportation-system-and-operations-systems-consultant-design-service",
+      "reason": "Both records identify the same TBTA miscellaneous ITS and operations systems consultant design services contracts. The wording, contract-services scope, four-firm award context, and five-year aggregate amount are compatible.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Miscellaneous Intelligent Transportation System and Operations Systems Consultant Design Services",
+          "source_ids": [
+            "meeting_doc_205651"
+          ],
+          "evidence_refs": [
+            "meeting_doc_205651#p003_c0005"
+          ]
+        },
+        "target": {
+          "display_name": "Miscellaneous ITS & Operations Systems Consultant Design Services",
+          "source_ids": [
+            "meeting_doc_201641"
+          ],
+          "evidence_refs": [
+            "meeting_doc_201641#p001_c0004",
+            "meeting_doc_201641#p001_c0006"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_meeting-doc-201641-its-consultant-services and project_tbta-its-design-services share identity key project_miscellaneous-intelligent-transportation-system-and-operations-systems-consultant-design-service.",
+        "shared_identity_keys": [
+          "project_miscellaneous-intelligent-transportation-system-and-operations-systems-consultant-design-service"
+        ]
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_throgs-neck-bridge-deck-replacement",
+      "canonical_id": "project_meeting-doc-111711-throgs-neck-deck",
+      "target_id": "project_meeting-doc-111711-throgs-neck-deck",
+      "confidence": "high",
+      "validator_duplicate_key": "project_throgs-neck-bridge-deck-replacement",
+      "reason": "Both records identify the Throgs Neck Bridge deck replacement project. The alias is a later project status/update record; the target is the same main-span deck replacement project with compatible reconstruction scope.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Throgs Neck Bridge Deck Replacement Project",
+          "source_ids": [
+            "meeting_doc_72536"
+          ],
+          "evidence_refs": [
+            "meeting_doc_72536#p007_c0014"
+          ]
+        },
+        "target": {
+          "display_name": "Throgs Neck Bridge Deck Replacement",
+          "source_ids": [
+            "meeting_doc_111711",
+            "meeting_doc_87681"
+          ],
+          "evidence_refs": [
+            "meeting_doc_111711#p056_c0002",
+            "meeting_doc_87681#p044_c0008"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_meeting-doc-111711-throgs-neck-deck and project_throgs-neck-bridge-deck-replacement share identity key project_throgs-neck-bridge-deck-replacement.",
+        "shared_identity_keys": [
+          "project_throgs-neck-bridge-deck-replacement"
+        ]
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_vnb-tower-painting-electrical-dec2025",
+      "canonical_id": "project_vnb-tower-painting-electrical",
+      "target_id": "project_vnb-tower-painting-electrical",
+      "confidence": "high",
+      "validator_duplicate_key": "project_tower-painting-and-electrical-upgrades-at-the-verrazzano-narrows-bridge",
+      "reason": "Both records identify the Verrazzano-Narrows Bridge tower painting and electrical upgrades project. The alias is a later completion-status wording; the target is the cleaner project record with matching painting, lighting/electrical, and VNB scope.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "VNB Tower Painting and Electrical Upgrades",
+          "source_ids": [
+            "meeting_doc_193911"
+          ],
+          "evidence_refs": [
+            "meeting_doc_193911#p025_c0001",
+            "meeting_doc_193911#p025_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "Tower Painting, Lighting and Electrical Upgrades at VNB",
+          "source_ids": [
+            "meeting_doc_129101",
+            "meeting_doc_129196",
+            "meeting_doc_160206"
+          ],
+          "evidence_refs": [
+            "meeting_doc_129196#p040_c0007",
+            "meeting_doc_129196#p040_c0009"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_vnb-tower-painting-electrical and project_vnb-tower-painting-electrical-dec2025 share identity key project_tower-painting-and-electrical-upgrades-at-the-verrazzano-narrows-bridge.",
+        "shared_identity_keys": [
+          "project_tower-painting-and-electrical-upgrades-at-the-verrazzano-narrows-bridge"
+        ]
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    }
+  ],
+  "exclusions_and_guards": {
+    "canonical_project_records_scanned": 1977,
+    "current_project_merge_aliases_considered": 229,
+    "current_project_do_not_merge_pairs_considered": 1,
+    "validator_duplicate_global_identity_project_issues_considered": 154,
+    "prior_project_prep_entries_considered": 27,
+    "prior_project_prep_unique_records_excluded": 50,
+    "selection_policy": [
+      "Project-only batch; no entity, route, or corridor aliases proposed.",
+      "Require alias_id and target_id to exist in current data/canonical/projects.jsonl.",
+      "Exclude aliases already present under data/identity-overrides/merges.json aliases.project.",
+      "Exclude targets that are themselves alias-mapped in current project merges to avoid target chains.",
+      "Exclude alias_id == target_id.",
+      "Exclude pairs matching current project do-not-merge guards.",
+      "Exclude records already used as project alias or target in prior codex identity prep artifacts.",
+      "Prefer exact project/package/contract names with shared validator identity keys and compatible payload scope.",
+      "Reject broad parent-program/subproject, financing-resolution/program, agency-wide, or cross-agency scope matches even when they share a weak identity key."
+    ],
+    "specific_exclusions": [
+      {
+        "candidate_area": "Better Buses Restart / Jamaica Busway",
+        "reason": "Current do-not-merge guard documents parent-program versus child-project distinction."
+      },
+      {
+        "candidate_area": "ABLE Program / ABLE Expansion / ABLE camera expansion",
+        "reason": "Some pairs are parent program, expansion wave, or route-specific expansion records rather than guaranteed same project identity."
+      },
+      {
+        "candidate_area": "CBD tolling / congestion relief revenue obligations / TransCore modification",
+        "reason": "Some records are program, financing resolution, or contract-modification facets rather than exact project aliases."
+      },
+      {
+        "candidate_area": "Woodhaven 2017 Street Improvement / 79th Street 2017 Street Improvement",
+        "reason": "Shared key appears broad or contaminated across distinct locations."
+      }
+    ],
+    "all_selected_aliases_passed_guards": true
+  },
+  "command_evidence": [
+    {
+      "command": "pwd && rg --files data/identity-overrides data/canonical data/review_notes | sort",
+      "purpose": "Confirmed repo root and available identity override, canonical, and review-note inputs."
+    },
+    {
+      "command": "git status --short",
+      "purpose": "Confirmed the worktree is busy and treated all unrelated changes as off-limits."
+    },
+    {
+      "command": "sed -n '1,220p' LOG.md",
+      "purpose": "Skimmed project log as instructed; did not edit it."
+    },
+    {
+      "command": "sed -n '1,220p' data/review_notes/codex-identity-batch144-prep.json",
+      "purpose": "Matched current review-note conventions while keeping this batch project-only."
+    },
+    {
+      "command": "jq '.aliases.project | length, (to_entries[0:5])' data/identity-overrides/merges.json",
+      "purpose": "Read current project merge override shape and counted 229 project aliases."
+    },
+    {
+      "command": "jq '.pairs.project | length, (.[0:5])' data/identity-overrides/do-not-merge.json",
+      "purpose": "Read current project do-not-merge guards and counted one project guard."
+    },
+    {
+      "command": "wc -l data/canonical/projects.jsonl && sed -n '1,5p' data/canonical/projects.jsonl",
+      "purpose": "Confirmed 1977 current canonical project records and inspected JSONL shape."
+    },
+    {
+      "command": "bun --eval import validateRepo from ./packages/pipeline/src/validate.ts and print project duplicate_global_identity issues",
+      "purpose": "Read-only validator evidence; found 154 project duplicate_global_identity issues without running CLI validate."
+    },
+    {
+      "command": "bun --eval import identityKeysForRecord from ./packages/db/src/identity.ts and mine project duplicate pairs with merge, do-not-merge, stale-record, target-chain, and prior-prep filters",
+      "purpose": "Generated deterministic local candidate list for manual high-confidence selection."
+    },
+    {
+      "command": "bun --eval selected-pair guard/evidence check over projects.jsonl, merges.json, do-not-merge.json, identityKeysForRecord, and raw/sources/*/blocks.jsonl",
+      "purpose": "Verified selected aliases and targets exist, are not already mapped, have no project do-not-merge hit, share validator keys, and cite present raw evidence blocks."
+    },
+    {
+      "command": "jq -r '.proposed_aliases[]? | select(.global_kind==\"project\") | [.alias_id,.target_id,.validator_duplicate_key // \"\"] | @tsv' data/review_notes/codex-identity-batch*.json | sort -u",
+      "purpose": "Excluded prior project prep aliases and targets from this batch."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "purpose": "Captured artifact created_at timestamp."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "No provider-backed commands were run.",
+    "No materialize command was run.",
+    "No export-jsonl command was run.",
+    "No full CLI validate command was run.",
+    "No write, ask, schema, ontology, identity-review, canonicalize, campaign, or dedup commands were run.",
+    "No data/identity-overrides/merges.json edit was made.",
+    "No data/identity-overrides/do-not-merge.json edit was made.",
+    "No LOG.md, manifest, canonical JSONL, wiki page, DB, generated output, submission, or submission override edit was made."
+  ]
+}

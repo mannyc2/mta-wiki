@@ -1,0 +1,48 @@
+{
+  "review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "reviewed_at": "2026-06-08T21:07:28.353Z",
+  "packet_path": "data/identity-review/packets/route_cluster_007.md",
+  "cluster_id": "route_cluster_007",
+  "kind": "route",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "suggestion": {
+    "cluster_id": "route_cluster_007",
+    "kind": "route",
+    "merge_groups": [
+      [
+        "route_bx34",
+        "route_bx34-addendum-update"
+      ]
+    ],
+    "do_not_merge": [],
+    "weak_aliases": [],
+    "missing_fields": [
+      {
+        "record_id": "route_bx34",
+        "fields": [
+          "variant",
+          "borough",
+          "limits"
+        ]
+      },
+      {
+        "record_id": "route_bx34-addendum-update",
+        "fields": [
+          "variant",
+          "borough",
+          "limits"
+        ]
+      }
+    ],
+    "ambiguous": [],
+    "suggested_rules": [
+      "Records sharing the same route_id (e.g., Bx34) and representing the base route without conflicting variant labels should be merged as the same canonical identity, even when sourced from different documents."
+    ],
+    "confidence": "high",
+    "rationale": "Both records share route_id 'Bx34', which is a strong identity field. The addendum record explicitly aliases route_bx34 and carries it as an identity key. The validator duplicate_global_identity signal confirms the collision is real. Neither record specifies a variant (local/SBS/limited), so both refer to the base Bx34 route. Complementary corridor descriptions (Fordham Road vs Bainbridge/Valentine Avenue) describe the same route's geography, not distinct services. The second record is an update about the same route from a different planning document."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T21-07-03-815Z_3449211-d14270ed_identity-review-run_route-cluster-007",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-07-03-815Z_2026-06-08T21-07-03-815Z_3449211-d14270ed_identity-review-run_route-cluster-007.jsonl"
+}

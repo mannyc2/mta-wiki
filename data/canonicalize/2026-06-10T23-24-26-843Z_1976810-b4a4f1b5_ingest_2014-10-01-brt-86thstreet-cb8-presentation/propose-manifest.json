@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T23-24-26-843Z_1976810-b4a4f1b5_ingest_2014-10-01-brt-86thstreet-cb8-presentation",
+  "generated_at": "2026-06-11T04:05:07.181Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 35,
+  "validated_decision_count": 0,
+  "quarantined_decision_count": 6,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T23-24-26-843Z_1976810-b4a4f1b5_ingest_2014-10-01-brt-86thstreet-cb8-presentation",
+    "manifest": "data/canonicalize/2026-06-10T23-24-26-843Z_1976810-b4a4f1b5_ingest_2014-10-01-brt-86thstreet-cb8-presentation/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T23-24-26-843Z_1976810-b4a4f1b5_ingest_2014-10-01-brt-86thstreet-cb8-presentation/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-24-26-843Z_1976810-b4a4f1b5_ingest_2014-10-01-brt-86thstreet-cb8-presentation/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T23-24-26-843Z_1976810-b4a4f1b5_ingest_2014-10-01-brt-86thstreet-cb8-presentation/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-26-843Z_1976810-b4a4f1b5_ingest_2014-10-01-brt-86thstreet-cb8-presentation/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-04-154Z_2111393-f0146942_canonicalize_2026-06-10t23-24-26-843z-1976810-b4a4f1b5-ingest-2014-10-01-brt-86thstreet-cb8-presentation-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-26-843Z_1976810-b4a4f1b5_ingest_2014-10-01-brt-86thstreet-cb8-presentation/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-04-154Z_2111393-d83724ad_canonicalize_2026-06-10t23-24-26-843z-1976810-b4a4f1b5-ingest-2014-10-01-brt-86thstreet-cb8-presentation-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-26-843Z_1976810-b4a4f1b5_ingest_2014-10-01-brt-86thstreet-cb8-presentation/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-04-154Z_2111393-b67f6911_canonicalize_2026-06-10t23-24-26-843z-1976810-b4a4f1b5-ingest-2014-10-01-brt-86thstreet-cb8-presentation-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-26-843Z_1976810-b4a4f1b5_ingest_2014-10-01-brt-86thstreet-cb8-presentation/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-04-154Z_2111393-8d5e2df1_canonicalize_2026-06-10t23-24-26-843z-1976810-b4a4f1b5-ingest-2014-10-01-brt-86thstreet-cb8-presentation-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-26-843Z_1976810-b4a4f1b5_ingest_2014-10-01-brt-86thstreet-cb8-presentation/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-04-154Z_2111393-dd555c3c_canonicalize_2026-06-10t23-24-26-843z-1976810-b4a4f1b5-ingest-2014-10-01-brt-86thstreet-cb8-presentation-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-26-843Z_1976810-b4a4f1b5_ingest_2014-10-01-brt-86thstreet-cb8-presentation/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-04-154Z_2111393-b0881b7b_canonicalize_2026-06-10t23-24-26-843z-1976810-b4a4f1b5-ingest-2014-10-01-brt-86thstreet-cb8-presentation-relation-linker"
+    }
+  ]
+}

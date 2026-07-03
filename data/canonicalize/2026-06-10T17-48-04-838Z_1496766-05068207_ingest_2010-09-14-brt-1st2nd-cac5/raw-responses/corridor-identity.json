@@ -1,0 +1,99 @@
+{
+  "run_id": "2026-06-10T17-48-04-838Z_1496766-05068207_ingest_2010-09-14-brt-1st2nd-cac5",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-10T19:49:39.745Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "corridor-first-second-avenues-brt-new",
+        "local_observation_id": "corridor_first_second_avenues_brt_2010",
+        "decision": "new",
+        "rationale": "The observation's base_record_id corridor_first-second-avenues-brt already exists in the registry with matching corridor name (First & Second Avenues), borough (Manhattan), and consistent limits (South Ferry to 125th Street per evidence quote). No different registry record refers to this same combined corridor; the observation already resolves to its own record.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p010_c0011",
+            "source_quote": "The route starts at South Ferry and ends at 125 St/2 Av and 125 St/1 Av"
+          },
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p005_c0009",
+            "source_quote": "First Avenue Second Avenue Markings • Houston St to 125 th St"
+          }
+        ]
+      },
+      {
+        "decision_id": "corridor-first-avenue-manhattan-2010-new",
+        "local_observation_id": "corridor_first_avenue_manhattan_2010",
+        "decision": "new",
+        "rationale": "The observation's base_record_id corridor_first-avenue-manhattan-2010 already exists in the registry with matching corridor name (First Avenue), limits (Houston Street to 125th Street), and borough (Manhattan). This is a distinct single-avenue corridor that is a component of the combined First/Second Avenues corridor — not the same real-world entity as the combined corridor. No different registry record refers to this same single-avenue entity.",
+        "proposed_relations": [
+          {
+            "relation_kind": "part_of",
+            "subject_id": "corridor_first-avenue-manhattan-2010",
+            "object_id": "corridor_first-second-avenues-brt",
+            "description": "First Avenue corridor is a component of the combined First & Second Avenues M15 SBS corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p005_c0009",
+                "source_quote": "First Avenue Second Avenue Markings • Houston St to 125 th St"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p005_c0009",
+            "source_quote": "First Avenue Second Avenue Markings • Houston St to 125 th St"
+          },
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p010_c0011",
+            "source_quote": "The route starts at South Ferry and ends at 125 St/2 Av and 125 St/1 Av"
+          }
+        ]
+      },
+      {
+        "decision_id": "corridor-second-avenue-manhattan-2010-new",
+        "local_observation_id": "corridor_second_avenue_manhattan_2010",
+        "decision": "new",
+        "rationale": "The observation's base_record_id corridor_second-avenue-manhattan-2010 already exists in the registry with matching corridor name (Second Avenue), limits (125th Street to Houston Street), and borough (Manhattan). This is a distinct single-avenue corridor that is a component of the combined First/Second Avenues corridor — not the same real-world entity as the combined corridor. No different registry record refers to this same single-avenue entity.",
+        "proposed_relations": [
+          {
+            "relation_kind": "part_of",
+            "subject_id": "corridor_second-avenue-manhattan-2010",
+            "object_id": "corridor_first-second-avenues-brt",
+            "description": "Second Avenue corridor is a component of the combined First & Second Avenues M15 SBS corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p005_c0009",
+                "source_quote": "First Avenue Second Avenue Markings • Houston St to 125 th St • 125 th St to 101 st St • 69 th St to 14 th St"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p005_c0009",
+            "source_quote": "First Avenue Second Avenue Markings • Houston St to 125 th St • 125 th St to 101 st St • 69 th St to 14 th St"
+          },
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p010_c0011",
+            "source_quote": "The route starts at South Ferry and ends at 125 St/2 Av and 125 St/1 Av"
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-48-32-199Z_1665469-808fb1c2_canonicalize_2026-06-10t17-48-04-838z-1496766-05068207-ingest-2010-09-14-brt-1st2nd-cac5-corridor-identity"
+}

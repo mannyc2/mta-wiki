@@ -1,0 +1,152 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-164871"
+record_kind: "source"
+display_name: "2024 Annual Operating Report"
+source_id: "meeting_doc_164871"
+source_ids:
+  - "meeting_doc_164871"
+local_observation_id: "source_2024_annual_operating_report"
+local_observation_ids:
+  - "source_2024_annual_operating_report"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T16:51:48.078Z"
+raw_text: "2024 Annual Operating Report"
+submission_ids:
+  - "sub_8f89bf19ed8053ee"
+payload:
+  authority_tier: "plan_document"
+  content_type: "annual report"
+  description: "Metro-North Railroad 2024 annual operating performance report covering on-time performance, delays, cancellations, MDBF, elevator and escalator availability"
+  document_type: "Annual Operating Report"
+  published_date_normalized: "2024"
+  published_date_precision: "year"
+  publisher: "MTA Metro-North Railroad"
+  title: "2024 Annual Operating Report"
+  year: 2024
+evidence_refs:
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_164871#p001_c0003"
+    page_number: 1
+    role: "title"
+    source_id: "meeting_doc_164871"
+    source_path: "raw/sources/meeting_doc_164871/blocks.jsonl"
+    text_sha256: "sha256:1db13af98ba1259040c7f94fbb816374d9b0995080000f63df0f6eec64526978"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0002"
+    evidence_id: "meeting_doc_164871#p002_c0002"
+    page_number: 2
+    role: "table_of_contents"
+    source_id: "meeting_doc_164871"
+    source_path: "raw/sources/meeting_doc_164871/blocks.jsonl"
+    text_sha256: "sha256:a9360e0212a4d173581c91da68494d022ee55871188be00acf863d2ed0cf7a6a"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0001"
+    evidence_id: "meeting_doc_164871#p003_c0001"
+    page_number: 3
+    role: "section_header"
+    source_id: "meeting_doc_164871"
+    source_path: "raw/sources/meeting_doc_164871/blocks.jsonl"
+    text_sha256: "sha256:f90136a3ba142a55599384901b4796a02cd9d9b6efaf2b2d26b15ff5558d1d89"
+    text_source: "raw_text"
+---
+
+# 2024 annual operating report
+
+source_id: meeting_doc_164871
+citation: cite block ids exactly as shown in square brackets
+document: 36 block(s)
+
+## Page 1
+
+> [p001_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+> [p001_c0002] A blue MTA locomotive, number 214, is shown from a front-three-quarter view, traveling along a track. The train is blue with white stripes and the MTA logo. The background features a scenic view of a body of water and hills under a blue sky with white clouds. A large white diagonal shape is overlaid on the bottom left corner of the image.
+### [p001_c0003] 2024 Annual Operating Report
+
+## Page 2
+
+> [p002_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p002_c0002] Table of Contents
+[p002_c0003] 2024 Annual Operating Performance Summary 3 On Time Performance by Month and Year 4 Scheduled and Adversely Impacted Trains 5 Category of Delays 6 Metro-North Delays, Cancellations, and Terminations 7 2024 West of Hudson Performance Summary 8 Mean Distance Between Failure (MDBF) 9 Elevator and Escalator Availability 10
+
+## Page 3
+
+### [p003_c0001] 2024 Annual Operating Performance Summary
+[p003_c0002]
+
+```text
+Goal 2024 2023 On Time Performance (Trains that arrive at their final destination within 5 minutes 59 seconds of scheduled arrival time) System Overall 94.0% 98.3% 97.4% AM Peak 94.0% 97.8% 97.1% AM Reverse Peak 94.0% 98.1% 97.2% PM Peak 94.0% 98.5% 97.1% Total Peak 94.0% 98.1% 97.1% Off Peak Weekday 94.0% 98.4% 97.3% Weekend 94.0% 98.6% 98.2% Hudson Line Overall 94.0% 98.7% 97.2% AM Peak 94.0% 98.0% 97.2% AM Reverse Peak 94.0% 99.0% 97.4% PM Peak 94.0% 99.3% 96.9% Total Peak 94.0% 98.9% 97.1% Off Peak Weekday 94.0% 98.8% 97.2% Weekend 94.0% 98.5% 97.4% Harlem Line Overall 94.0% 98.3% 97.2% AM Peak 94.0% 98.2% 97.1% AM Reverse Peak 94.0% 97.5% 97.0% PM Peak 94.0% 97.8% 96.2% Total Peak 94.0% 97.9% 96.8% Off Peak Weekday 94.0% 98.3% 97.1% Weekend 94.0% 98.8% 98.4% New Haven Line Overall 94.0% 98.2% 97.4% AM Peak 94.0% 97.1% 97.0% AM Reverse Peak 94.0% 98.2% 97.2% PM Peak 94.0% 98.6% 97.8% Total Peak 94.0% 97.9% 97.4% Off Peak Weekday 94.0% 98.2% 97.5% Weekend 94.0% 98.5% 98.5% Operating Statistics Trains Scheduled 223,284 222,303 Avg. Delay per Late Train (min) excluding trains cancelled or terminated 14.6 16.5 Trains Over 15 min. Late excluding trains cancelled or terminated 2,300 896 Trains Canceled 230 77 Trains Terminated 230 140 Percent of Scheduled Trips Completed 99.8% 99.9% Consist Compliance (Percent of trains where the number of seats provided was greater than or equal to the required number of seats per loading standards) System Overall 99.0% 99.9% 99.9% AM Peak 99.0% 99.8% 99.8% AM Reverse Peak 99.0% 99.9% 100.0% PM Peak 99.0% 99.8% 99.8% Total Peak 99.0% 99.8% 99.9% Off Peak Weekday 99.0% 99.9% 99.9% Weekend 99.0% 100.0% 99.9% Hudson Line AM Peak 99.0% 100.0% 100.0% PM Peak 99.0% 99.9% 99.9% Harlem Line AM Peak 99.0% 99.7% 99.8% PM Peak 99.0% 99.9% 99.9% New Haven AM Peak 99.0% 99.8% 99.8% PM Peak 99.0% 99.9% 99.6%
+```
+[p003_c0003] _3_
+
+## Page 4
+
+### [p004_c0001] 2024 On Time Performance By Month
+> [p004_c0002] Month On Time Performance (%) January 98.5% February 99.2% March 99.0% April 98.1% May 98.3% June 98.0% July 97.5% August 97.9% September 99.0% October 98.5% November 97.9% December 98.3%
+### [p004_c0003] On Time Performance By Year 1983 through 2024
+> [p004_c0004] Year On Time Performance (%) 1983 80.5% 1984 87.0% 1985 90.0% 1986 92.2% 1987 92.2% 1988 89.2% 1989 92.5% 1990 94.5% 1991 94.8% 1992 96.5% 1993 96.0% 1994 95.5% 1995 95.2% 1996 94.8% 1997 96.5% 1998 96.8% 1999 96.2% 2000 96.8% 2001 96.8% 2002 97.5% 2003 96.5% 2004 96.0% 2005 97.5% 2006 97.8% 2007 97.5% 2008 97.5% 2009 97.8% 2010 97.8% 2011 96.8% 2012 97.5% 2013 94.8% 2014 91.5% 2015 93.5% 2016 93.8% 2017 93.5% 2018 90.1% 2019 94.5% 2020 97.8% 2021 97.0% 2022 97.0% 2023 97.5% 2024 98.3%
+[p004_c0005] _4_
+
+## Page 5
+
+### [p005_c0001] Scheduled Trains by Year
+> [p005_c0002] COVID-19 Pandemic resulted in schedule reduction in 2020: (163,116 trains Scheduled) Year Scheduled Trains 1986 161,000 1987 161,000 1988 161,000 1989 168,000 1990 171,000 1991 172,000 1992 173,000 1993 173,000 1994 174,000 1995 174,000 1996 173,000 1997 175,000 1998 177,000 1999 178,000 2000 180,000 2001 184,000 2002 188,000 2003 188,000 2004 191,000 2005 193,000 2006 200,000 2007 204,000 2008 208,000 2009 210,000 2010 209,000 2011 209,000 2012 210,000 2013 223,000 2014 228,000 2015 231,000 2016 231,000 2017 230,000 2018 230,000 2019 231,000 2020 163,116 2021 167,000 2022 215,000 2023 223,000 2024 223,000
+### [p005_c0003] Percentage of Adversely Impacted Trains (>15' Late, Cancelled, Terminated)
+> [p005_c0004] Year Percentage 1986 2.4% 1987 2.1% 1988 3.0% 1989 2.0% 1990 1.5% 1991 1.3% 1992 1.0% 1993 1.2% 1994 1.2% 1995 1.1% 1996 1.3% 1997 1.0% 1998 0.9% 1999 1.2% 2000 0.9% 2001 1.0% 2002 0.7% 2003 1.0% 2004 1.2% 2005 0.7% 2006 0.8% 2007 0.8% 2008 0.8% 2009 0.7% 2010 0.8% 2011 1.1% 2012 0.8% 2013 1.2% 2014 1.6% 2015 1.3% 2016 1.5% 2017 1.5% 2018 2.4% 2019 1.3% 2020 0.7% 2021 0.8% 2022 1.0% 2023 1.0% 2024 0.5%
+[p005_c0005] _5_
+
+## Page 6
+
+[p006_c0001]
+
+```text
+Category of Delays % Total 2024 Data Year Ending Dec 31 2023 Data Year Ending Dec 31 YTD 2024 vs 2023 System Overall 100.0% 4,489 6,756 -2,267 Infrastructure Maintenance 25.0% 1,123 1,266 -143 Fleet 18.8% 842 971 -129 Train Operations 13.7% 617 606 11 Capital 0.4% 17 77 -60 External Factors 29.4% 1,322 2,652 -1,330 Police 10.3% 463 1,035 -572 Customer Assistance 2.3% 105 149 -44 Hudson Line Overall 100.0% 869 1,711 -842 Infrastructure Maintenance 19.1% 166 290 -124 Fleet 23.8% 207 322 -115 Train Operations 26.0% 226 210 16 Capital 0.3% 3 29 -26 External Factors 19.6% 170 625 -455 Police 8.6% 75 200 -125 Customer Assistance 2.5% 22 35 -13 Harlem Line Overall 100.0% 1,419 2,224 -805 Infrastructure Maintenance 22.6% 321 451 -130 Fleet 17.0% 241 247 -6 Train Operations 10.4% 148 155 -7 Capital 0.4% 5 19 -14 External Factors 36.6% 519 971 -452 Police 10.9% 154 334 -180 Customer Assistance 2.2% 31 47 -16 New Haven Line Overall 100.0% 2,201 2,821 -620 Infrastructure Maintenance 28.9% 636 525 111 Fleet 17.9% 394 402 -8 Train Operations 11.0% 243 241 2 Capital 0.4% 9 29 -20 External Factors 28.8% 633 1,056 -423 Police 10.6% 234 501 -267 Customer Assistance 2.4% 52 67 -15
+```
+[p006_c0002] _6_
+
+## Page 7
+
+### [p007_c0001] 2024 Metro-North Delays
+> [p007_c0002] A bar chart titled '2024 Metro-North Delays' showing the number of delays for various categories. The y-axis represents the number of delays, ranging from 0 to 1,400 in increments of 200. The x-axis lists the categories: External Factors, Infrastructure Maintenance, Fleet, Train Operations, Police, Customer Assistance, and Capital Projects. Each bar is blue and has its value labeled on top. Category Delays External Factors 1,322 Infrastructure Maintenance 1,123 Fleet 842 Train Operations 617 Police 463 Customer Assistance 105 Capital Projects 17
+### [p007_c0003] 2024 Metro-North Cancellations and Terminations
+> [p007_c0004] A bar chart titled '2024 Metro-North Cancellations and Terminations' showing the number of cancellations and terminations for various categories. The y-axis represents the number of cancellations, ranging from 0 to 100 in increments of 10. The x-axis lists the categories: External Factors, Fleet, Police, Train Operations, Infrastructure Maintenance, Customer Assistance, and Capital Projects. Each bar is blue and has its value labeled on top. Category Cancellations and Terminations External Factors 93 Fleet 63 Police 22 Train Operations 21 Infrastructure Maintenance 16 Customer Assistance 2 Capital Projects -
+[p007_c0005] _7_
+
+## Page 8
+
+[p008_c0001]
+
+```text
+2024 West of Hudson Performance Summary Goal 2024 2023 On Time Performance (Trains that arrive at their final destination within 5 minutes 59 seconds of scheduled arrival time) West of Hudson Total Overall 94.0% 93.0% 93.2% AM Peak 94.0% 94.3% 95.3% PM Peak 94.0% 92.3% 94.2% Total Peak 94.0% 93.4% 94.8% Off Peak 94.0% 91.3% 93.1% Weekend 94.0% 91.8% 90.9% Pascack Valley Line Overall 94.0% 94.5% 95.1% AM Peak 94.0% 96.5% 96.5% PM Peak 94.0% 95.4% 96.5% Total Peak 94.0% 96.0% 96.5% Off Peak 94.0% 94.3% 95.4% Weekend 94.0% 92.9% 92.1% Port Jervis Line Overall 94.0% 90.9% 90.8% AM Peak 94.0% 90.3% 93.0% PM Peak 94.0% 89.2% 91.9% Total Peak 94.0% 89.7% 92.4% Off Peak 94.0% 92.0% 90.3% Weekend 94.0% 90.2% 89.0% Operating Statistics Trains Scheduled 20,024 19,735 Avg. Delay per Late Train (min) excluding trains cancelled or terminated 21.9 21.4 Trains Over 15 min. Late excluding trains cancelled or terminated 300 719 684 Trains Canceled 60 76 39 Trains Terminated 60 76 65 Percent of Scheduled Trips Completed 99.4% 99.2% 99.5% Consist Compliance * (Percent of trains where the number of coaches provided met the scheduled requirement) System AM Peak 99.0% 93.8% 94.7% Pascack Valley Line AM Peak 99.0% 96.5% 96.9% Port Jervis Line AM Peak 99.0% 90.7% 92.2%
+```
+[p008_c0002] *Consist Compliance Reporting for West of Hudson PM Peak trains is currently unavailable.
+[p008_c0003] _8_
+
+## Page 9
+
+[p009_c0001]
+
+```text
+Mean Distance Between Failure 2024 Data Year Ending Dec 31 2023 Data Year Ending Dec 31 Equipment Type Total Fleet Size MDBF Goals (in miles) (in miles) Overall Fleet 1,186 200,000 332,059 331,964 M8 471 400,000 642,028 684,503 M3 138 80,000 100,953 104,419 M7 334 330,000 544,247 566,166 Coach 207 260,000 436,925 450,852 P-32 31 25,000 37,727 34,640 BL-20 12 15,000 32,556 34,556
+```
+### [p009_c0002] All Fleets Mean Distance Between Failures 2010-2024
+> [p009_c0003] Mean Distance Between Failures Data (2010-2024) Year Mean Distance Between Failures (Miles) 2010 130,000 2011 115,000 2012 165,000 2013 155,000 2014 145,000 2015 200,000 2016 215,000 2017 195,000 2018 145,000 2019 240,000 2020 280,000 2021 190,000 2022 235,000 2023 330,000 2024 330,000
+[p009_c0004] _9_
+
+## Page 10
+
+[p010_c0001]
+
+```text
+Elevator Availability 2024 Data Year Ending Dec 31 2023 Data Year Ending Dec 31 Overall Average 99.62% 99.52% Grand Central Terminal 99.04% 98.60% Harlem 99.85% 99.84% Hudson 99.79% 99.82% New Haven 99.81% 99.80%
+```
+[p010_c0002]
+
+```text
+Escalator Availability 2024 Data Year Ending Dec 31 2023 Data Year Ending Dec 31 Overall Average 99.87% 99.96% Grand Central Terminal 100.00% 100.00% White Plains 99.73% 99.91%
+```
+[p010_c0003] _10_

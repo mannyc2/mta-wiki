@@ -1,0 +1,41 @@
+{
+  "run_id": "2026-06-10T22-56-13-249Z_1976810-1c537fb6_ingest_20110118-34th-cac-mtg-minutes",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T01:22:50.120Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "d01",
+        "local_observation_id": "route_m16_20110118",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id route_m16-mentioned, which already exists in the registry as an M16 bus route record on 34th Street. No link to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p005_c0001",
+            "source_quote": "fare collection machines, particularly on the M16 bus route north on Eighth Avenue"
+          }
+        ]
+      },
+      {
+        "decision_id": "d02",
+        "local_observation_id": "route_m34_local_20110118",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id route_m34-local-20110118, which already exists in the registry as the M34 local bus route in Manhattan. No link to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p005_c0001",
+            "source_quote": "Identify the location of the M34 stop near the Jacob Javits Convention Center"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-22-11-499Z_2111393-667ba123_canonicalize_2026-06-10t22-56-13-249z-1976810-1c537fb6-ingest-20110118-34th-cac-mtg-minutes-route-identity"
+}

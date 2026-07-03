@@ -1,0 +1,1359 @@
+{
+  "schema_proposal_run_id": "2026-06-08T23-05-26-749Z_schema-proposal-run",
+  "proposed_at": "2026-06-08T23:08:36.564Z",
+  "observation_kind": "project",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "audit_packet": {
+    "observation_kind": "project",
+    "submission_count": 109,
+    "accepted_count": 106,
+    "rejected_count": 3,
+    "declared_anchor_fields": [
+      "description",
+      "name",
+      "project_name",
+      "project_type",
+      "status"
+    ],
+    "enum_candidates": [
+      {
+        "field": "borough",
+        "occurrences": 19,
+        "coverage": 0.17,
+        "distinct_values": 5,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Bronx",
+          "Brooklyn",
+          "Manhattan",
+          "Queens",
+          "Staten Island"
+        ],
+        "value_counts": [
+          {
+            "value": "Manhattan",
+            "count": 7
+          },
+          {
+            "value": "Brooklyn",
+            "count": 6
+          },
+          {
+            "value": "Queens",
+            "count": 3
+          },
+          {
+            "value": "Bronx",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "operator",
+        "occurrences": 5,
+        "coverage": 0.05,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "MTA",
+          "NYC DOT"
+        ],
+        "value_counts": [
+          {
+            "value": "NYC DOT",
+            "count": 3
+          },
+          {
+            "value": "MTA",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "duration",
+        "occurrences": 4,
+        "coverage": 0.04,
+        "distinct_values": 3,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "18-month pilot",
+          "one year",
+          "one-year pilot"
+        ],
+        "value_counts": [
+          {
+            "value": "one year",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "publisher",
+        "occurrences": 4,
+        "coverage": 0.04,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "NYC Comptroller Brad Lander",
+          "People Oriented Cities"
+        ],
+        "value_counts": [
+          {
+            "value": "NYC Comptroller Brad Lander",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "field": "boroughs",
+        "occurrences": 2,
+        "coverage": 0.02,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Brooklyn",
+          "Queens"
+        ],
+        "value_counts": [
+          {
+            "value": "Brooklyn",
+            "count": 2
+          },
+          {
+            "value": "Queens",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "completion_date",
+        "occurrences": 2,
+        "coverage": 0.02,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "November 25, 2025",
+          "summer 2017"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "launch_date",
+        "occurrences": 2,
+        "coverage": 0.02,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "2021-04-26",
+          "July 13, 2015"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "start_date",
+        "occurrences": 2,
+        "coverage": 0.02,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "June 2016",
+          "June 2024"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "start_date_text",
+        "occurrences": 2,
+        "coverage": 0.02,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "October 24, 2021",
+          "October 3, 2019"
+        ],
+        "value_counts": []
+      }
+    ],
+    "additional_keys": [
+      {
+        "field": "agency",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "NYC DOT"
+        ]
+      },
+      {
+        "field": "authorizing_legislation",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Chapter 489 of the Laws of 2021"
+        ]
+      },
+      {
+        "field": "benefits",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "increased reliability, reduced delays, shorter travel times; 2.5 times more riders benefit than those with longer trips"
+        ]
+      },
+      {
+        "field": "bus_capacity",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "buses_equipped",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "capacity_per_month",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "community_meetings",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "nearly 300 outreach events since 2019"
+        ]
+      },
+      {
+        "field": "completion_date_normalized",
+        "occurrences": 2,
+        "coverage": 0.02,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "completion_target_year",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "corridor",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "79th Street"
+        ]
+      },
+      {
+        "field": "corridor_length_miles",
+        "occurrences": 21,
+        "coverage": 0.19,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "corridors",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Archer Avenue",
+          "Jamaica Avenue"
+        ]
+      },
+      {
+        "field": "coverage_miles",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "csc_planned_additional",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "csc_target_total",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "csc_total_open",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "daily_customers_benefitted",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "daily_ridership",
+        "occurrences": 24,
+        "coverage": 0.22,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "expected_completion",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "summer of 2026"
+        ]
+      },
+      {
+        "field": "expected_timeline",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "later in 2025"
+        ]
+      },
+      {
+        "field": "express_routes_existing",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "express_routes_proposed",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "goals",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Improve safety along a Vision Zero Priority corridor",
+          "Increase speeds and reliability for M14 A/D Select Bus Service"
+        ]
+      },
+      {
+        "field": "implementation_target",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "spring 2012"
+        ]
+      },
+      {
+        "field": "implementing_agency",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "NYCDOT"
+        ]
+      },
+      {
+        "field": "launch_date_normalized",
+        "occurrences": 2,
+        "coverage": 0.02,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "launch_date_text",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "October 24, 2021"
+        ]
+      },
+      {
+        "field": "launch_date_text_normalized",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "lead_agency",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "NYC Department of Transportation"
+        ]
+      },
+      {
+        "field": "local_hiring_goal",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "20% of NY State workforce from Southeast Queens"
+        ]
+      },
+      {
+        "field": "local_routes_existing",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "local_routes_proposed",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "location",
+        "occurrences": 5,
+        "coverage": 0.05,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "14th Street, Manhattan",
+          "Bronx, New York City",
+          "Church Avenue Station, Brooklyn",
+          "Queens",
+          "Sunset Park, Brooklyn"
+        ]
+      },
+      {
+        "field": "location_normalized",
+        "occurrences": 5,
+        "coverage": 0.05,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "new_location",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "90th Avenue"
+        ]
+      },
+      {
+        "field": "new_location_normalized",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "noise_mitigation",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "sound-reducing walls along 107th Avenue and 165th Street"
+        ]
+      },
+      {
+        "field": "old_location",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Merrick Boulevard"
+        ]
+      },
+      {
+        "field": "old_location_normalized",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "partner_agency",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "NYC Department of Design and Construction"
+        ]
+      },
+      {
+        "field": "partners",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "MTA",
+          "NYPD"
+        ]
+      },
+      {
+        "field": "phase",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Draft Plan"
+        ]
+      },
+      {
+        "field": "phase_1_start_date",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "June 29, 2025"
+        ]
+      },
+      {
+        "field": "phase_1_start_date_normalized",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "phase_2_start_date",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "August 31, 2025"
+        ]
+      },
+      {
+        "field": "phase_2_start_date_normalized",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "program",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Better Buses Restart"
+        ]
+      },
+      {
+        "field": "public_comments_received",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "more than 18,000"
+        ]
+      },
+      {
+        "field": "publication_date",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "December 2022"
+        ]
+      },
+      {
+        "field": "publication_date_normalized",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "routes_covered",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "routes_served",
+        "occurrences": 24,
+        "coverage": 0.22,
+        "value_kind": "array_string",
+        "classification": "free_text",
+        "sample_values": [
+          "B103",
+          "B83",
+          "BM2",
+          "BM3",
+          "BM4",
+          "Q20A",
+          "Q20B",
+          "Q44 SBS"
+        ]
+      },
+      {
+        "field": "rush_routes_proposed",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "start_date_normalized",
+        "occurrences": 2,
+        "coverage": 0.02,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "start_date_text_normalized",
+        "occurrences": 2,
+        "coverage": 0.02,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "start_year",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "subway_lines",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "B",
+          "Q"
+        ]
+      },
+      {
+        "field": "sustainability_features",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "green roof, LEED certification standards, stormwater detention tanks (3,600 feet of storm drain and fuel piping, 30,000 cubic feet of stormwater detention tanks)"
+        ]
+      },
+      {
+        "field": "total_routes_existing",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "total_routes_proposed",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "year",
+        "occurrences": 3,
+        "coverage": 0.03,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "years_of_planning",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      }
+    ]
+  },
+  "closure_policy": "deferred",
+  "closure_signals": [
+    {
+      "field": "borough",
+      "closure_readiness": "open",
+      "occurrences": 19,
+      "coverage": 0.17
+    },
+    {
+      "field": "operator",
+      "closure_readiness": "open",
+      "occurrences": 5,
+      "coverage": 0.05
+    },
+    {
+      "field": "duration",
+      "closure_readiness": "open",
+      "occurrences": 4,
+      "coverage": 0.04
+    },
+    {
+      "field": "publisher",
+      "closure_readiness": "open",
+      "occurrences": 4,
+      "coverage": 0.04
+    },
+    {
+      "field": "boroughs",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.02
+    },
+    {
+      "field": "completion_date",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.02
+    },
+    {
+      "field": "launch_date",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.02
+    },
+    {
+      "field": "start_date",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.02
+    },
+    {
+      "field": "start_date_text",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.02
+    }
+  ],
+  "valid": true,
+  "schema_issues": [],
+  "warnings": [],
+  "proposal": {
+    "observation_kind": "project",
+    "field_proposals": [
+      {
+        "field": "borough",
+        "decision": "enum",
+        "canonical_values": [
+          "bronx",
+          "brooklyn",
+          "manhattan",
+          "queens",
+          "staten_island"
+        ],
+        "value_mapping": [
+          {
+            "from": "Bronx",
+            "to": "bronx"
+          },
+          {
+            "from": "Brooklyn",
+            "to": "brooklyn"
+          },
+          {
+            "from": "Manhattan",
+            "to": "manhattan"
+          },
+          {
+            "from": "Queens",
+            "to": "queens"
+          },
+          {
+            "from": "Staten Island",
+            "to": "staten_island"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "borough_other"
+        },
+        "rationale": "Five NYC boroughs observed; open enum with canonical lowercase names."
+      },
+      {
+        "field": "operator",
+        "decision": "enum",
+        "canonical_values": [
+          "mta",
+          "nyc_dot"
+        ],
+        "value_mapping": [
+          {
+            "from": "MTA",
+            "to": "mta"
+          },
+          {
+            "from": "NYC DOT",
+            "to": "nyc_dot"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "operator_other"
+        },
+        "rationale": "Two distinct operator values observed; enum open."
+      },
+      {
+        "field": "duration",
+        "decision": "enum",
+        "canonical_values": [
+          "18_month_pilot",
+          "one_year"
+        ],
+        "value_mapping": [
+          {
+            "from": "18-month pilot",
+            "to": "18_month_pilot"
+          },
+          {
+            "from": "one year",
+            "to": "one_year"
+          },
+          {
+            "from": "one-year pilot",
+            "to": "one_year"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "duration_other"
+        },
+        "rationale": "Few values, 'one year' and 'one-year pilot' normalized to one_year; open enum."
+      },
+      {
+        "field": "publisher",
+        "decision": "enum",
+        "canonical_values": [
+          "nyc_comptroller_brad_lander",
+          "people_oriented_cities"
+        ],
+        "value_mapping": [
+          {
+            "from": "NYC Comptroller Brad Lander",
+            "to": "nyc_comptroller_brad_lander"
+          },
+          {
+            "from": "People Oriented Cities",
+            "to": "people_oriented_cities"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "publisher_other"
+        },
+        "rationale": "Specific but repeatable; open enum."
+      },
+      {
+        "field": "boroughs",
+        "decision": "drop",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "boroughs_other"
+        },
+        "rationale": "Likely duplicate of 'borough' with inconsistent plural naming; only 2 occurrences."
+      },
+      {
+        "field": "completion_date",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "completion_date_other"
+        },
+        "rationale": "Mixed date formats and relative strings; treat as free text."
+      },
+      {
+        "field": "launch_date",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "launch_date_other"
+        },
+        "rationale": "Mixed date formats; treat as free text."
+      },
+      {
+        "field": "start_date",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "start_date_other"
+        },
+        "rationale": "Mixed date formats; treat as free text."
+      },
+      {
+        "field": "start_date_text",
+        "decision": "drop",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "start_date_text_other"
+        },
+        "rationale": "Duplicate of start_date with text variant; very low coverage."
+      }
+    ],
+    "key_dispositions": [
+      {
+        "key": "agency",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Single occurrence; indicates operating agency, related to operator field."
+      },
+      {
+        "key": "authorizing_legislation",
+        "disposition": "promote_field",
+        "target": "authorizing_legislation",
+        "rationale": "Specific legislation reference, may appear in more records."
+      },
+      {
+        "key": "benefits",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Descriptive text likely captured in description; sparse."
+      },
+      {
+        "key": "bus_capacity",
+        "disposition": "promote_field",
+        "target": "bus_capacity",
+        "rationale": "Numeric metric, sparse but potentially meaningful."
+      },
+      {
+        "key": "buses_equipped",
+        "disposition": "promote_field",
+        "target": "buses_equipped",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "capacity_per_month",
+        "disposition": "promote_field",
+        "target": "capacity_per_month",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "community_meetings",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Descriptive text, sparse."
+      },
+      {
+        "key": "completion_date_normalized",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Derived structured version of completion_date; not a primary field."
+      },
+      {
+        "key": "completion_target_year",
+        "disposition": "promote_field",
+        "target": "completion_target_year",
+        "rationale": "Numeric target year."
+      },
+      {
+        "key": "corridor",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Single occurrence, sparse location detail."
+      },
+      {
+        "key": "corridor_length_miles",
+        "disposition": "promote_field",
+        "target": "corridor_length_miles",
+        "rationale": "Common numeric metric (21 occurrences)."
+      },
+      {
+        "key": "corridors",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Plural variant, single occurrence."
+      },
+      {
+        "key": "coverage_miles",
+        "disposition": "promote_field",
+        "target": "coverage_miles",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "csc_planned_additional",
+        "disposition": "promote_field",
+        "target": "csc_planned_additional",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "csc_target_total",
+        "disposition": "promote_field",
+        "target": "csc_target_total",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "csc_total_open",
+        "disposition": "promote_field",
+        "target": "csc_total_open",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "daily_customers_benefitted",
+        "disposition": "promote_field",
+        "target": "daily_customers_benefitted",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "daily_ridership",
+        "disposition": "promote_field",
+        "target": "daily_ridership",
+        "rationale": "Common numeric metric (24 occurrences)."
+      },
+      {
+        "key": "expected_completion",
+        "disposition": "promote_field",
+        "target": "expected_completion",
+        "rationale": "Free text expected completion."
+      },
+      {
+        "key": "expected_timeline",
+        "disposition": "promote_field",
+        "target": "expected_timeline",
+        "rationale": "Free text timeline."
+      },
+      {
+        "key": "express_routes_existing",
+        "disposition": "promote_field",
+        "target": "express_routes_existing",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "express_routes_proposed",
+        "disposition": "promote_field",
+        "target": "express_routes_proposed",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "goals",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Array of goals, sparse; likely captured in description."
+      },
+      {
+        "key": "implementation_target",
+        "disposition": "promote_field",
+        "target": "implementation_target",
+        "rationale": "Free text target date."
+      },
+      {
+        "key": "implementing_agency",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Single occurrence; relation context similar to operator."
+      },
+      {
+        "key": "launch_date_normalized",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Derived structured version of launch_date."
+      },
+      {
+        "key": "launch_date_text",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Duplicate text variant of launch_date; sparse."
+      },
+      {
+        "key": "launch_date_text_normalized",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Derived structured version; drop."
+      },
+      {
+        "key": "lead_agency",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Single occurrence; relation context."
+      },
+      {
+        "key": "local_hiring_goal",
+        "disposition": "promote_field",
+        "target": "local_hiring_goal",
+        "rationale": "Free text goal."
+      },
+      {
+        "key": "local_routes_existing",
+        "disposition": "promote_field",
+        "target": "local_routes_existing",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "local_routes_proposed",
+        "disposition": "promote_field",
+        "target": "local_routes_proposed",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "location",
+        "disposition": "promote_field",
+        "target": "location",
+        "rationale": "Free text location with 5 occurrences; likely consistent."
+      },
+      {
+        "key": "location_normalized",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Derived structured version of location."
+      },
+      {
+        "key": "new_location",
+        "disposition": "promote_field",
+        "target": "new_location",
+        "rationale": "Free text new location."
+      },
+      {
+        "key": "new_location_normalized",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Derived structured version."
+      },
+      {
+        "key": "noise_mitigation",
+        "disposition": "promote_field",
+        "target": "noise_mitigation",
+        "rationale": "Free text description."
+      },
+      {
+        "key": "old_location",
+        "disposition": "promote_field",
+        "target": "old_location",
+        "rationale": "Free text old location."
+      },
+      {
+        "key": "old_location_normalized",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Derived structured version."
+      },
+      {
+        "key": "partner_agency",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Single occurrence; relation context."
+      },
+      {
+        "key": "partners",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Array of partner names; relation context."
+      },
+      {
+        "key": "phase",
+        "disposition": "promote_field",
+        "target": "phase",
+        "rationale": "Single value; may become enum with more data, treat as free text for now."
+      },
+      {
+        "key": "phase_1_start_date",
+        "disposition": "promote_field",
+        "target": "phase_1_start_date",
+        "rationale": "Free text date."
+      },
+      {
+        "key": "phase_1_start_date_normalized",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Derived structured version."
+      },
+      {
+        "key": "phase_2_start_date",
+        "disposition": "promote_field",
+        "target": "phase_2_start_date",
+        "rationale": "Free text date."
+      },
+      {
+        "key": "phase_2_start_date_normalized",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Derived structured version."
+      },
+      {
+        "key": "program",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Program name; relation context."
+      },
+      {
+        "key": "public_comments_received",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Descriptive text; sparse."
+      },
+      {
+        "key": "publication_date",
+        "disposition": "promote_field",
+        "target": "publication_date",
+        "rationale": "Free text date."
+      },
+      {
+        "key": "publication_date_normalized",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Derived structured version."
+      },
+      {
+        "key": "routes_covered",
+        "disposition": "promote_field",
+        "target": "routes_covered",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "routes_served",
+        "disposition": "promote_field",
+        "target": "routes_served",
+        "rationale": "Common array of route IDs; treat as free_text array."
+      },
+      {
+        "key": "rush_routes_proposed",
+        "disposition": "promote_field",
+        "target": "rush_routes_proposed",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "start_date_normalized",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Derived structured version of start_date."
+      },
+      {
+        "key": "start_date_text_normalized",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Derived structured version; drop."
+      },
+      {
+        "key": "start_year",
+        "disposition": "promote_field",
+        "target": "start_year",
+        "rationale": "Numeric year."
+      },
+      {
+        "key": "subway_lines",
+        "disposition": "promote_field",
+        "target": "subway_lines",
+        "rationale": "Array of subway line IDs; treat as free_text array."
+      },
+      {
+        "key": "sustainability_features",
+        "disposition": "promote_field",
+        "target": "sustainability_features",
+        "rationale": "Free text description."
+      },
+      {
+        "key": "total_routes_existing",
+        "disposition": "promote_field",
+        "target": "total_routes_existing",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "total_routes_proposed",
+        "disposition": "promote_field",
+        "target": "total_routes_proposed",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "year",
+        "disposition": "promote_field",
+        "target": "year",
+        "rationale": "Numeric year, though sparse (3 occurrences)."
+      },
+      {
+        "key": "years_of_planning",
+        "disposition": "promote_field",
+        "target": "years_of_planning",
+        "rationale": "Numeric metric."
+      }
+    ],
+    "notes": "Enum fields borough, operator, duration, publisher are open; duration normalized 'one year' and 'one-year pilot' into 'one_year'. Numerous numeric and free-text additional keys promoted to fields; many derived '_normalized' keys dropped. Sparse or duplicate keys like 'boroughs', 'start_date_text' dropped. Relation context keys (agency, partners, program, etc.) marked for contextual use rather than identity."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T23-07-40-202Z_3564593-b16d4d40_schema-proposal-run_project",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-07-40-211Z_2026-06-08T23-07-40-202Z_3564593-b16d4d40_schema-proposal-run_project.jsonl"
+}

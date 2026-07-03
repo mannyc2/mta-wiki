@@ -1,0 +1,983 @@
+{
+  "run_id": "2026-06-08T13-07-31-374Z_source-import_gap_roadmap_docs_2026_05_25",
+  "generated_at": "2026-06-08T13:07:31.374Z",
+  "root": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25",
+  "dry_run": false,
+  "force": false,
+  "extract_layout": false,
+  "summary": {
+    "discovered": 61,
+    "considered": 61,
+    "staged": 53,
+    "would_stage": 0,
+    "skipped": 8,
+    "failed": 0
+  },
+  "entries": [
+    {
+      "status": "skipped",
+      "upstream_source_id": "mta_ace_launch_expanded_violations_2024",
+      "title": "MTA ACE Expanded Violations Launch",
+      "source_group": "ace_able",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_ace_launch_expanded_violations_2024",
+      "artifact_files": [
+        "metadata.json"
+      ],
+      "reason": "missing_stageable_surface"
+    },
+    {
+      "status": "staged",
+      "source_id": "mta_automated_camera_enforcement",
+      "upstream_source_id": "mta_ace_page",
+      "title": "MTA Automated Camera Enforcement",
+      "source_group": "ace_able",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_ace_page",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/mta_automated_camera_enforcement",
+      "artifact_files": [
+        "metadata.json",
+        "source.html",
+        "text.txt"
+      ],
+      "text_bytes": 9046,
+      "block_count": 1
+    },
+    {
+      "status": "staged",
+      "source_id": "ace_routes_dataset_dictionary",
+      "upstream_source_id": "mta_ace_routes_dataset_dictionary",
+      "title": "MTA ACE Routes Dataset Columns",
+      "source_group": "dataset_dictionary",
+      "detected_content_type": "json",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_ace_routes_dataset_dictionary",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/ace_routes_dataset_dictionary",
+      "artifact_files": [
+        "metadata.json",
+        "source.json"
+      ],
+      "text_bytes": 4932,
+      "block_count": 236
+    },
+    {
+      "status": "staged",
+      "source_id": "bronx_bus_network_final_plan_2019",
+      "upstream_source_id": "mta_bronx_bus_network_final_plan_2019_pdf",
+      "title": "Bronx Bus Network Redesign Final Plan",
+      "source_group": "route_redesign",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_bronx_bus_network_final_plan_2019_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/bronx_bus_network_final_plan_2019",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 35453234,
+      "block_count": 138969
+    },
+    {
+      "status": "staged",
+      "source_id": "bronx_bus_network_final_plan_addendum_2021",
+      "upstream_source_id": "mta_bronx_bus_network_final_plan_addendum_2021_pdf",
+      "title": "Bronx Bus Network Redesign Final Plan Addendum",
+      "source_group": "route_redesign",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_bronx_bus_network_final_plan_addendum_2021_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/bronx_bus_network_final_plan_addendum_2021",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 1575715,
+      "block_count": 5895
+    },
+    {
+      "status": "skipped",
+      "upstream_source_id": "mta_bronx_local_bus_network_redesign",
+      "title": "MTA Bronx Local Bus Network Redesign",
+      "source_group": "route_redesign",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_bronx_local_bus_network_redesign",
+      "artifact_files": [
+        "metadata.json"
+      ],
+      "reason": "missing_stageable_surface"
+    },
+    {
+      "status": "staged",
+      "source_id": "brooklyn_bus_network_draft_plan_with_route_profiles",
+      "upstream_source_id": "mta_brooklyn_bus_network_draft_plan_with_route_profiles_pdf",
+      "title": "Brooklyn Bus Network Redesign Draft Plan with Route Profiles",
+      "source_group": "route_redesign",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_brooklyn_bus_network_draft_plan_with_route_profiles_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/brooklyn_bus_network_draft_plan_with_route_profiles",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 26491607,
+      "block_count": 175769
+    },
+    {
+      "status": "staged",
+      "source_id": "brooklyn_bus_network_draft_plan_without_route_profiles",
+      "upstream_source_id": "mta_brooklyn_bus_network_draft_plan_without_route_profiles_pdf",
+      "title": "Brooklyn Bus Network Redesign Draft Plan without Route Profiles",
+      "source_group": "route_redesign",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_brooklyn_bus_network_draft_plan_without_route_profiles_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/brooklyn_bus_network_draft_plan_without_route_profiles",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 1998646,
+      "block_count": 17200
+    },
+    {
+      "status": "staged",
+      "source_id": "capital_dashboard",
+      "upstream_source_id": "mta_capital_dashboard",
+      "title": "MTA Capital Program Dashboard",
+      "source_group": "capital_projects",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_capital_dashboard",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/capital_dashboard",
+      "artifact_files": [
+        "metadata.json",
+        "source.html",
+        "text.txt"
+      ],
+      "text_bytes": 25,
+      "block_count": 1
+    },
+    {
+      "status": "staged",
+      "source_id": "fare_free_bus_pilot_evaluation",
+      "upstream_source_id": "mta_fare_free_bus_pilot_evaluation_pdf",
+      "title": "MTA Fare-Free Bus Pilot One-Year Evaluation",
+      "source_group": "fare_policy",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_fare_free_bus_pilot_evaluation_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/fare_free_bus_pilot_evaluation",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 34675,
+      "block_count": 1233
+    },
+    {
+      "status": "skipped",
+      "upstream_source_id": "mta_fare_free_bus_pilot_launch_2023",
+      "title": "MTA Fare-Free Bus Pilot Launch",
+      "source_group": "fare_policy",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_fare_free_bus_pilot_launch_2023",
+      "artifact_files": [
+        "metadata.json"
+      ],
+      "reason": "missing_stageable_surface"
+    },
+    {
+      "status": "staged",
+      "source_id": "nyct_key_performance_metrics_doc194001",
+      "upstream_source_id": "mta_nyct_key_performance_metrics_doc194001_pdf",
+      "title": "NYCT Key Performance Metrics Committee Book",
+      "source_group": "board_books",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_nyct_key_performance_metrics_doc194001_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/nyct_key_performance_metrics_doc194001",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 72035,
+      "block_count": 1642
+    },
+    {
+      "status": "staged",
+      "source_id": "nyct_key_performance_metrics_june2025",
+      "upstream_source_id": "mta_nyct_key_performance_metrics_june2025_pdf",
+      "title": "NYCT Key Performance Metrics June 2025",
+      "source_group": "board_books",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_nyct_key_performance_metrics_june2025_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/nyct_key_performance_metrics_june2025",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 70121,
+      "block_count": 1557
+    },
+    {
+      "status": "staged",
+      "source_id": "open_data_lessons_2026",
+      "upstream_source_id": "mta_open_data_lessons_2026",
+      "title": "MTA Lessons Learned in Managing the Open Data Program",
+      "source_group": "dataset_methodology",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_open_data_lessons_2026",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/open_data_lessons_2026",
+      "artifact_files": [
+        "metadata.json",
+        "source.html",
+        "text.txt"
+      ],
+      "text_bytes": 11517,
+      "block_count": 1
+    },
+    {
+      "status": "staged",
+      "source_id": "open_data_plan_2022",
+      "upstream_source_id": "mta_open_data_plan_2022_pdf",
+      "title": "MTA Open Data Plan 2022",
+      "source_group": "open_data_plan",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_open_data_plan_2022_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/open_data_plan_2022",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 8736,
+      "block_count": 153
+    },
+    {
+      "status": "staged",
+      "source_id": "open_data_plan_2023_update",
+      "upstream_source_id": "mta_open_data_plan_2023_update_pdf",
+      "title": "MTA Open Data Plan 2023 Annual Update",
+      "source_group": "open_data_plan",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_open_data_plan_2023_update_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/open_data_plan_2023_update",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 5351,
+      "block_count": 98
+    },
+    {
+      "status": "staged",
+      "source_id": "open_data_plan_2024_update",
+      "upstream_source_id": "mta_open_data_plan_2024_update_pdf",
+      "title": "MTA Open Data Plan 2024 Annual Update",
+      "source_group": "open_data_plan",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_open_data_plan_2024_update_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/open_data_plan_2024_update",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 8205,
+      "block_count": 136
+    },
+    {
+      "status": "staged",
+      "source_id": "open_data_plan_2025_update",
+      "upstream_source_id": "mta_open_data_plan_2025_update_pdf",
+      "title": "MTA Open Data Plan 2025 Annual Update",
+      "source_group": "open_data_plan",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_open_data_plan_2025_update_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/open_data_plan_2025_update",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 8255,
+      "block_count": 130
+    },
+    {
+      "status": "staged",
+      "source_id": "open_data_plan_2026_update",
+      "upstream_source_id": "mta_open_data_plan_2026_update_pdf",
+      "title": "MTA Open Data Plan 2026 Annual Update",
+      "source_group": "open_data_plan",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_open_data_plan_2026_update_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/open_data_plan_2026_update",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 12224,
+      "block_count": 163
+    },
+    {
+      "status": "staged",
+      "source_id": "open_data_program",
+      "upstream_source_id": "mta_open_data_program_page",
+      "title": "MTA Open Data Program",
+      "source_group": "open_data_plan",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_open_data_program_page",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/open_data_program",
+      "artifact_files": [
+        "metadata.json",
+        "source.html",
+        "text.txt"
+      ],
+      "text_bytes": 4939,
+      "block_count": 1
+    },
+    {
+      "status": "staged",
+      "source_id": "q70_fare_free_service_increases_2025",
+      "upstream_source_id": "mta_q70_fare_free_service_increases_2025_pdf",
+      "title": "MTA LaGuardia Link Q70 Select Bus Service Service Increases",
+      "source_group": "fare_policy",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_q70_fare_free_service_increases_2025_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/q70_fare_free_service_increases_2025",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 2628,
+      "block_count": 42
+    },
+    {
+      "status": "staged",
+      "source_id": "queens_addendum_equity_evaluation_appendix_d",
+      "upstream_source_id": "mta_queens_addendum_equity_evaluation_appendix_d_pdf",
+      "title": "Queens Bus Network Redesign Proposed Final Plan Addendum Appendix D Equity Evaluation",
+      "source_group": "route_redesign",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_queens_addendum_equity_evaluation_appendix_d_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/queens_addendum_equity_evaluation_appendix_d",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 54679,
+      "block_count": 1310
+    },
+    {
+      "status": "skipped",
+      "upstream_source_id": "mta_queens_bus_network_redesign_project_page",
+      "title": "Queens Bus Network Redesign Project Page",
+      "source_group": "route_redesign",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_queens_bus_network_redesign_project_page",
+      "artifact_files": [
+        "metadata.json"
+      ],
+      "reason": "missing_stageable_surface"
+    },
+    {
+      "status": "skipped",
+      "upstream_source_id": "mta_queens_bus_network_redesign_service_changes",
+      "title": "MTA Queens Bus Network Redesign Service Changes",
+      "source_group": "route_redesign",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_queens_bus_network_redesign_service_changes",
+      "artifact_files": [
+        "metadata.json"
+      ],
+      "reason": "missing_stageable_surface"
+    },
+    {
+      "status": "staged",
+      "source_id": "queens_proposed_final_plan_2023",
+      "upstream_source_id": "mta_queens_proposed_final_plan_2023_pdf",
+      "title": "Queens Bus Network Redesign Proposed Final Plan",
+      "source_group": "route_redesign",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_queens_proposed_final_plan_2023_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/queens_proposed_final_plan_2023",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 34265,
+      "block_count": 897
+    },
+    {
+      "status": "staged",
+      "source_id": "queens_proposed_final_plan_addendum_2024",
+      "upstream_source_id": "mta_queens_proposed_final_plan_addendum_2024_pdf",
+      "title": "Queens Bus Network Redesign Proposed Final Plan Addendum",
+      "source_group": "route_redesign",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_queens_proposed_final_plan_addendum_2024_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/queens_proposed_final_plan_addendum_2024",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 3608,
+      "block_count": 96
+    },
+    {
+      "status": "skipped",
+      "upstream_source_id": "mta_queens_redesign_implementation_dates",
+      "title": "MTA Announces Planned Implementation Dates for Queens Bus Network Redesign",
+      "source_group": "route_redesign",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_queens_redesign_implementation_dates",
+      "artifact_files": [
+        "metadata.json"
+      ],
+      "reason": "missing_stageable_surface"
+    },
+    {
+      "status": "staged",
+      "source_id": "queens_service_change_board_item_2025",
+      "upstream_source_id": "mta_queens_service_change_board_item_2025_pdf",
+      "title": "Queens Bus Network Redesign Service Change Board Item",
+      "source_group": "board_books",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_queens_service_change_board_item_2025_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/queens_service_change_board_item_2025",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 63700,
+      "block_count": 907
+    },
+    {
+      "status": "staged",
+      "source_id": "segment_speed_methodology_2024",
+      "upstream_source_id": "mta_segment_speed_methodology_2024",
+      "title": "MTA Segment Speed Methodology Article",
+      "source_group": "dataset_methodology",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_segment_speed_methodology_2024",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/segment_speed_methodology_2024",
+      "artifact_files": [
+        "metadata.json",
+        "source.html",
+        "text.txt"
+      ],
+      "text_bytes": 7727,
+      "block_count": 1
+    },
+    {
+      "status": "skipped",
+      "upstream_source_id": "mta_staten_island_express_redesign_retrospective",
+      "title": "MTA Staten Island Express Bus Network Redesign Retrospective",
+      "source_group": "route_redesign",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/mta_staten_island_express_redesign_retrospective",
+      "artifact_files": [
+        "metadata.json"
+      ],
+      "reason": "missing_stageable_surface"
+    },
+    {
+      "status": "staged",
+      "source_id": "behind_schedule_2025",
+      "upstream_source_id": "nyc_comptroller_behind_schedule_2025_pdf",
+      "title": "Behind Schedule: How New York City's Bus System Slow Rolls Riders",
+      "source_group": "comptroller_audit",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_comptroller_behind_schedule_2025_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/behind_schedule_2025",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 115744,
+      "block_count": 1872
+    },
+    {
+      "status": "staged",
+      "source_id": "life_in_slow_lane_2025",
+      "upstream_source_id": "nyc_comptroller_life_in_slow_lane_2025_pdf",
+      "title": "Life in the Slow Lane: A Report Card for New York City's Bus System",
+      "source_group": "comptroller_audit",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_comptroller_life_in_slow_lane_2025_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/life_in_slow_lane_2025",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 21340,
+      "block_count": 441
+    },
+    {
+      "status": "staged",
+      "source_id": "14th_street_busway",
+      "upstream_source_id": "nyc_dot_14th_street_busway",
+      "title": "NYC DOT 14th Street Busway",
+      "source_group": "busway",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_14th_street_busway",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/14th_street_busway",
+      "artifact_files": [
+        "metadata.json",
+        "source.html",
+        "text.txt"
+      ],
+      "text_bytes": 6271,
+      "block_count": 1
+    },
+    {
+      "status": "staged",
+      "source_id": "14th_street_busway_brochure",
+      "upstream_source_id": "nyc_dot_14th_street_busway_brochure_pdf",
+      "title": "NYC DOT 14th Street Busway Brochure",
+      "source_group": "busway",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_14th_street_busway_brochure_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/14th_street_busway_brochure",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 14445,
+      "block_count": 238
+    },
+    {
+      "status": "staged",
+      "source_id": "b44_sbs_progress_report_2016",
+      "upstream_source_id": "nyc_dot_b44_sbs_progress_report_2016_pdf",
+      "title": "B44 Select Bus Service Nostrand Avenue Progress Report",
+      "source_group": "select_bus_service",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_b44_sbs_progress_report_2016_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/b44_sbs_progress_report_2016",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 152943,
+      "block_count": 3213
+    },
+    {
+      "status": "staged",
+      "source_id": "better_buses",
+      "upstream_source_id": "nyc_dot_better_buses",
+      "title": "NYC DOT Better Buses",
+      "source_group": "better_buses",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_better_buses",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/better_buses",
+      "artifact_files": [
+        "metadata.json",
+        "source.html",
+        "text.txt"
+      ],
+      "text_bytes": 23928,
+      "block_count": 1
+    },
+    {
+      "status": "staged",
+      "source_id": "better_buses_action_plan_2019",
+      "upstream_source_id": "nyc_dot_better_buses_action_plan_2019_pdf",
+      "title": "NYC DOT Better Buses Action Plan",
+      "source_group": "better_buses",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_better_buses_action_plan_2019_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/better_buses_action_plan_2019",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 163461,
+      "block_count": 3831
+    },
+    {
+      "status": "staged",
+      "source_id": "brt_route_index",
+      "upstream_source_id": "nyc_dot_brt_route_index",
+      "title": "NYC DOT Select Bus Service Routes",
+      "source_group": "select_bus_service",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_brt_route_index",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/brt_route_index",
+      "artifact_files": [
+        "metadata.json",
+        "source.html",
+        "text.txt"
+      ],
+      "text_bytes": 5903,
+      "block_count": 1
+    },
+    {
+      "status": "staged",
+      "source_id": "bus_lane_camera_report_2024",
+      "upstream_source_id": "nyc_dot_bus_lane_camera_report_2024_pdf",
+      "title": "NYC DOT Bus Lane Camera Enforcement 2024 Report",
+      "source_group": "ace_able",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_bus_lane_camera_report_2024_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/bus_lane_camera_report_2024",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 27213,
+      "block_count": 875
+    },
+    {
+      "status": "staged",
+      "source_id": "bus_lanes_dataset_dictionary",
+      "upstream_source_id": "nyc_dot_bus_lanes_dataset_dictionary",
+      "title": "NYC DOT Bus Lanes Dataset Columns",
+      "source_group": "dataset_dictionary",
+      "detected_content_type": "json",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_bus_lanes_dataset_dictionary",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/bus_lanes_dataset_dictionary",
+      "artifact_files": [
+        "metadata.json",
+        "source.json"
+      ],
+      "text_bytes": 36973,
+      "block_count": 1829
+    },
+    {
+      "status": "staged",
+      "source_id": "jamaica",
+      "upstream_source_id": "nyc_dot_bus_priority_page_jamaica",
+      "title": "NYC DOT Jamaica Bus Priority",
+      "source_group": "bus_priority_document",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_bus_priority_page_jamaica",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/jamaica",
+      "artifact_files": [
+        "metadata.json",
+        "source.html",
+        "text.txt"
+      ],
+      "text_bytes": 3494,
+      "block_count": 1
+    },
+    {
+      "status": "staged",
+      "source_id": "busway_34thstreet",
+      "upstream_source_id": "nyc_dot_busway_page_34thstreet",
+      "title": "NYC DOT 34th Street Busway",
+      "source_group": "busway",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_busway_page_34thstreet",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/busway_34thstreet",
+      "artifact_files": [
+        "metadata.json",
+        "source.html",
+        "text.txt"
+      ],
+      "text_bytes": 6330,
+      "block_count": 1
+    },
+    {
+      "status": "staged",
+      "source_id": "busway_tremontavenue",
+      "upstream_source_id": "nyc_dot_busway_page_tremontavenue",
+      "title": "NYC DOT Tremont Avenue Busway",
+      "source_group": "busway",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_busway_page_tremontavenue",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/busway_tremontavenue",
+      "artifact_files": [
+        "metadata.json",
+        "source.html",
+        "text.txt"
+      ],
+      "text_bytes": 7366,
+      "block_count": 1
+    },
+    {
+      "status": "staged",
+      "source_id": "181st_street_jun2022",
+      "upstream_source_id": "nyc_dot_busway_pdf_181st_street_jun2022",
+      "title": "NYC DOT 181st Street Busway Community Advisory Board Meeting",
+      "source_group": "busway",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_busway_pdf_181st_street_jun2022",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/181st_street_jun2022",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 7877,
+      "block_count": 278
+    },
+    {
+      "status": "staged",
+      "source_id": "34th_st_busway",
+      "upstream_source_id": "nyc_dot_busway_pdf_34th_st_busway",
+      "title": "NYC DOT 34th Street Busway Brochure",
+      "source_group": "busway",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_busway_pdf_34th_st_busway",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/34th_st_busway",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 8560,
+      "block_count": 159
+    },
+    {
+      "status": "staged",
+      "source_id": "jamaica_archer_brochure",
+      "upstream_source_id": "nyc_dot_busway_pdf_jamaica_archer_brochure",
+      "title": "NYC DOT Jamaica and Archer Avenue Busway Brochure",
+      "source_group": "busway",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_busway_pdf_jamaica_archer_brochure",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/jamaica_archer_brochure",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 15958,
+      "block_count": 269
+    },
+    {
+      "status": "staged",
+      "source_id": "jay_street_pilot_overview",
+      "upstream_source_id": "nyc_dot_busway_pdf_jay_street_pilot_overview",
+      "title": "NYC DOT Jay Street Busway Pilot Overview",
+      "source_group": "busway",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_busway_pdf_jay_street_pilot_overview",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/jay_street_pilot_overview",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 4739,
+      "block_count": 69
+    },
+    {
+      "status": "staged",
+      "source_id": "tremont_ave_busway",
+      "upstream_source_id": "nyc_dot_busway_pdf_tremont_ave_busway",
+      "title": "NYC DOT Tremont Avenue Busway Brochure",
+      "source_group": "busway",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_busway_pdf_tremont_ave_busway",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/tremont_ave_busway",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 5839,
+      "block_count": 146
+    },
+    {
+      "status": "staged",
+      "source_id": "busways",
+      "upstream_source_id": "nyc_dot_busways",
+      "title": "NYC DOT Busways",
+      "source_group": "busway",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_busways",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/busways",
+      "artifact_files": [
+        "metadata.json",
+        "source.html",
+        "text.txt"
+      ],
+      "text_bytes": 5392,
+      "block_count": 1
+    },
+    {
+      "status": "staged",
+      "source_id": "jamaica_busway_monitoring_update_2022",
+      "upstream_source_id": "nyc_dot_jamaica_busway_monitoring_update_2022_pdf",
+      "title": "Jamaica Busway Monitoring Update November 2022",
+      "source_group": "busway",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_jamaica_busway_monitoring_update_2022_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/jamaica_busway_monitoring_update_2022",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 8907,
+      "block_count": 296
+    },
+    {
+      "status": "skipped",
+      "source_id": "m86_sbs_progress_report_2017",
+      "upstream_source_id": "nyc_dot_m86_sbs_progress_report_2017_pdf",
+      "title": "M86 Select Bus Service Progress Report",
+      "source_group": "select_bus_service",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_m86_sbs_progress_report_2017_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/m86_sbs_progress_report_2017",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "reason": "already_staged"
+    },
+    {
+      "status": "staged",
+      "source_id": "sbs_features",
+      "upstream_source_id": "nyc_dot_sbs_features",
+      "title": "NYC DOT Select Bus Service Features",
+      "source_group": "select_bus_service",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_sbs_features",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/sbs_features",
+      "artifact_files": [
+        "metadata.json",
+        "source.html",
+        "text.txt"
+      ],
+      "text_bytes": 5411,
+      "block_count": 1
+    },
+    {
+      "status": "staged",
+      "source_id": "soundview_bus_priority_press_release_2021",
+      "upstream_source_id": "nyc_dot_soundview_bus_priority_press_release_2021",
+      "title": "NYC DOT Soundview Bus-Priority Corridor Completion",
+      "source_group": "bus_priority_document",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_soundview_bus_priority_press_release_2021",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/soundview_bus_priority_press_release_2021",
+      "artifact_files": [
+        "metadata.json",
+        "source.html",
+        "text.txt"
+      ],
+      "text_bytes": 10149,
+      "block_count": 1
+    },
+    {
+      "status": "staged",
+      "source_id": "streets_plan",
+      "upstream_source_id": "nyc_dot_streets_plan_page",
+      "title": "NYC Streets Plan",
+      "source_group": "better_buses",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_streets_plan_page",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/streets_plan",
+      "artifact_files": [
+        "metadata.json",
+        "source.html",
+        "text.txt"
+      ],
+      "text_bytes": 2305,
+      "block_count": 1
+    },
+    {
+      "status": "staged",
+      "source_id": "streets_plan_update_2026",
+      "upstream_source_id": "nyc_dot_streets_plan_update_2026_pdf",
+      "title": "NYC Streets Plan Update 2026",
+      "source_group": "better_buses",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_streets_plan_update_2026_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/streets_plan_update_2026",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 6185,
+      "block_count": 148
+    },
+    {
+      "status": "staged",
+      "source_id": "tsp_report_2017",
+      "upstream_source_id": "nyc_dot_tsp_report_2017_pdf",
+      "title": "NYC DOT Green Means Go Transit Signal Priority Report",
+      "source_group": "transit_signal_priority",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_tsp_report_2017_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/tsp_report_2017",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 23784,
+      "block_count": 757
+    },
+    {
+      "status": "staged",
+      "source_id": "tsp_status_2017",
+      "upstream_source_id": "nyc_dot_tsp_status_2017",
+      "title": "NYC DOT Announces Transit Signal Priority Expansion",
+      "source_group": "transit_signal_priority",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_dot_tsp_status_2017",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/tsp_status_2017",
+      "artifact_files": [
+        "metadata.json",
+        "source.html",
+        "text.txt"
+      ],
+      "text_bytes": 7447,
+      "block_count": 1
+    },
+    {
+      "status": "staged",
+      "source_id": "speeding_up_slowly_2025",
+      "upstream_source_id": "nyc_ibo_speeding_up_slowly_2025_pdf",
+      "title": "Speeding Up Slowly: A Review of Initiatives to Improve Bus Speeds in New York City",
+      "source_group": "ibo_report",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_ibo_speeding_up_slowly_2025_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/speeding_up_slowly_2025",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 60603,
+      "block_count": 1155
+    },
+    {
+      "status": "staged",
+      "source_id": "161st_bx6_capital_project_2026",
+      "upstream_source_id": "nyc_mayor_161st_bx6_capital_project_2026",
+      "title": "NYC Mayor's Office East 161st Street and Bx6 Capital Project",
+      "source_group": "capital_projects",
+      "detected_content_type": "html",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/nyc_mayor_161st_bx6_capital_project_2026",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/161st_bx6_capital_project_2026",
+      "artifact_files": [
+        "metadata.json",
+        "source.html",
+        "text.txt"
+      ],
+      "text_bytes": 19647,
+      "block_count": 1
+    },
+    {
+      "status": "staged",
+      "source_id": "14th_street_fall2019_monitoring",
+      "upstream_source_id": "sam_schwartz_14th_street_fall2019_monitoring_pdf",
+      "title": "14th Street Transit and Truck Priority Pilot Preliminary Report Fall 2019",
+      "source_group": "busway",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/sam_schwartz_14th_street_fall2019_monitoring_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/14th_street_fall2019_monitoring",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 346297,
+      "block_count": 4859
+    },
+    {
+      "status": "staged",
+      "source_id": "14th_street_winter2020_monitoring",
+      "upstream_source_id": "sam_schwartz_14th_street_winter2020_monitoring_pdf",
+      "title": "14th Street Transit and Truck Priority Pilot Report 2 Winter 2020",
+      "source_group": "busway",
+      "detected_content_type": "pdf",
+      "source_dir": "/mnt/models/dev/bus-reliability-tracker/data/artifacts/docs/gap-roadmap-docs-2026-05-25/sources/sam_schwartz_14th_street_winter2020_monitoring_pdf",
+      "staged_dir": "/mnt/models/dev/mta-wiki/raw/sources/14th_street_winter2020_monitoring",
+      "artifact_files": [
+        "metadata.json",
+        "source.pdf"
+      ],
+      "text_bytes": 406945,
+      "block_count": 5833
+    }
+  ],
+  "manifest_path": "data/source-imports/2026-06-08T13-07-31-374Z_source-import_gap_roadmap_docs_2026_05_25.json"
+}

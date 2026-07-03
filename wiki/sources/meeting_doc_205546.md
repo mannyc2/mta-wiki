@@ -1,0 +1,452 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-205546"
+record_kind: "source"
+display_name: "New York City Transit Key Performance Metrics - April 2026"
+source_id: "meeting_doc_205546"
+source_ids:
+  - "meeting_doc_205546"
+local_observation_id: "source_meeting_doc_205546"
+local_observation_ids:
+  - "source_meeting_doc_205546"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T22:25:23.996Z"
+submission_ids:
+  - "sub_dbcbc3185cad4357"
+payload:
+  authority_tier: "board_material"
+  content_type: "performance metrics document"
+  date_text: "April 2026"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2026-04"
+    precision: "month"
+    raw_text: "April 2026"
+  description: "This performance metrics document was prepared for the New York City Transit & Bus Committee meeting."
+  published_date_normalized: "2026-04"
+  published_date_precision: "month"
+  publisher: "MTA"
+  title: "NEW YORK CITY TRANSIT KEY PERFORMANCE METRICS"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_205546#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_205546"
+    source_path: "raw/sources/meeting_doc_205546/blocks.jsonl"
+    text_sha256: "sha256:652428edc2ec73a399f9be33e568011d4dc409b54fea8b501c9001f180567afb"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_205546#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_205546"
+    source_path: "raw/sources/meeting_doc_205546/blocks.jsonl"
+    text_sha256: "sha256:af669edb611a567d0bcf52f5ae9834fbb797bb296c7c50581c7720bfe31a722a"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0001"
+    evidence_id: "meeting_doc_205546#p003_c0001"
+    page_number: 3
+    source_id: "meeting_doc_205546"
+    source_path: "raw/sources/meeting_doc_205546/blocks.jsonl"
+    text_sha256: "sha256:0082c9aa9eaa5e20c224f9fccd0b007cfc41506ae2798c3728d55c9ce089cf50"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0003"
+    evidence_id: "meeting_doc_205546#p003_c0003"
+    page_number: 3
+    source_id: "meeting_doc_205546"
+    source_path: "raw/sources/meeting_doc_205546/blocks.jsonl"
+    text_sha256: "sha256:1df4b7482ae4e5bd8861a23da6d674c5b787590ac858d3cb734c004898895556"
+    text_source: "raw_text"
+---
+
+# Key performance metrics
+
+source_id: meeting_doc_205546
+citation: cite block ids exactly as shown in square brackets
+document: 281 block(s)
+
+## Page 1
+
+### [p001_c0001] NEW YORK CITY TRANSIT KEY PERFORMANCE METRICS
+[p001_c0002] April 2026
+[p001_c0003] mta.info
+> [p001_c0004] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a white circle.
+
+## Page 2
+
+> [p002_c0001] A close-up photograph of a man with a beard and glasses, wearing a New York City Transit Authority (NYCTA) uniform. He is leaning his head on his gloved hand, looking out of a subway car window. The subway car is red with a large white oval logo for the New York City Subway, featuring the MTA logo and the text "New York City Subway". Above the logo, the number "9542" is painted in white. The man's uniform includes a dark cap with an MTA logo and the number "103766" on a patch. He is also wearing a high-visibility orange and green safety vest. The background shows the interior of the subway car and another person in a safety vest.
+[p002_c0002] 9542
+> [p002_c0003] A man wearing a dark blue MTA uniform cap and clear safety glasses. The cap has a gold-colored patch with the MTA logo and the number "103766". He has a beard and is looking towards the camera.
+> [p002_c0004] A close-up of the man's gloved hand, wearing a black glove with white stitching, resting on the window frame.
+> [p002_c0005] A white oval logo on the side of the subway car. It features the MTA logo (a stylized train) and the text "New York City Subway".
+> [p002_c0006] A high-visibility safety vest with orange and green reflective stripes, worn by the man. The word "MAG" is partially visible on the vest.
+
+## Page 3
+
+[p003_c0001] This performance metrics document was prepared for the New York City Transit & Bus Committee meeting.
+[p003_c0002] 2 Broadway • New York, NY 10004
+[p003_c0003] April 27th, 2026
+### [p003_c0004] Table of Contents
+[p003_c0005] Message from the President..... 4 Service Performance..... 8 Ridership..... 14 Safety and Security..... 16 Customer Satisfaction..... 20 Capital Projects..... 24 Customers and Communities..... 25 Accessibility..... 26 Financial Results..... 27 Special Feature..... 28
+[p003_c0006] Visit new.mta.info/transparency/board-and-committee-meetings/ or scan the QR code for Board action staff summaries, administrative items, and information items.
+[p003_c0007] Visit metrics.mta.info or scan the QR code to access a comprehensive dashboard of New York City Transit metrics.
+[p003_c0008] _| 3 |_
+
+## Page 4
+
+### [p004_c0001] MESSAGE FROM THE PRESIDENT
+> [p004_c0002] A portrait of Demetrius Crichlow, President of New York City Transit. He is a Black man with a grey beard and mustache, smiling warmly at the camera. He is wearing a dark blue suit jacket over a light blue dress shirt and a patterned tie with purple and blue floral designs. A small purple flower is pinned to his left lapel. The background is slightly blurred, showing what appears to be an outdoor urban setting with colorful graffiti on a wall.
+### [p004_c0003] Demetrius Crichlow
+[p004_c0004] President
+[p004_c0005] New York City Transit
+### [p004_c0006] President's Message
+[p004_c0007] After battling through numerous winter weather conditions, this month, I had the pleasure of enjoying Spring, directly hearing from riders and employees alike across the transit system. Being in the field is always a great opportunity to gain a deeper understanding of how thousands of New York City Transit employees keep operations running smoothly and safely for New Yorkers. But this month, I had some special opportunities to connect with riders, the community, and employees across the system.
+[p004_c0008] But first, thanks to the start of the Tap and Ride era, I'm pleased to share updates to one of our critical components of how we're ensuring all riders are paying their fair share. Previously, we never had the ability to validate MetroCard or coin payments. However, now with Tap and Ride, we can make sure all riders are paying. And with that in mind, we're beginning to make updates to how the EAGLE teams carry out their duties that riders may have started to notice this month.
+[p004_c0009] As a reminder, New York City Transit has had its EAGLE team of civilian fare enforcement agents in place since the debut of Select Bus Service (SBS), who issue summonses to riders who board buses without paying their fares. They are strategically deployed to bus routes and stops with traditionally high levels of fare evasion. Historically, team members issued summonses based on their own observations; however, now with Tap and Ride, they can validate that a rider has paid. Previously, these teams have focused on SBS routes where payment is either done off-board or via Tap and Ride. On-Board Validation Devices (OVD) are the mobile tool they use to verify that customers have paid their fare by OMNY taps on buses. With over 97% of rides taken with taps, we're ready to bring those handheld validation devices to local routes. Riders should now expect to see EAGLE teams validating their fare on local buses. For the small number of riders who have yet to make the transition and still pay via MetroCard or coin, we use this opportunity to educate them on how easy it is to switch to Tap and Ride. In an effort to increase visibility and understanding of the EAGLE teams, we've also begun posting new signage and decals on all buses reminding riders that not only is a fare required to ride, but all customers are subject to fare validation.
+[p004_c0010] _The MTA logo, consisting of the letters "MTA" in white inside a blue circle._
+[p004_c0011] _| 4 |_
+
+## Page 5
+
+### [p005_c0001] MESSAGE FROM THE PRESIDENT
+[p005_c0002] Our EAGLE teams play important roles in two of the four fare enforcement methods listed in the 2022 MTA Blue Ribbon Panel on fare evasion. They do critical work to both educate and enforce fare payments. We'll continue to roll out improvements to the EAGLE teams over the next few months to ensure all riders are paying their fare.
+[p005_c0003] I got to see an EAGLE team in action earlier this month when I headed to the Bronx to connect with riders. In an effort to encourage all riders to participate in the Spring Customers Count survey, I personally handed out flyers with QR codes linking to the survey at Fordham Plaza in the Bronx. The feedback we receive helps us to determine how we can improve service and the station environment for riders. For example, in recent years, we've made changes to the process for cleaning cars based on customer feedback and have seen significant improvement in customer satisfaction as a result. The Stations and Facilities groups regularly look at station ratings to target where our next Revive projects should be. Believe me when I say customer survey responses are important and relevant at the most senior levels at NYC Transit. Another great way for riders to ensure their feedback is received is by coming to a TransitTalk. The team hosted a TransitTalk this month at 125th St on the A C B D . These events are great opportunities for riders to share their ideas, get help with items like enrolling in Fair Fares or switching to Tap and Ride, or even simply saying hello. I always appreciate talking directly with riders and I look forward to the next one.
+[p005_c0004] Not only did I have the chance to connect directly with riders this month, but I also had the opportunity to meet with different groups in the community. In addition to continuing to ensure seniors are utilizing Tap and Ride technology with visits to senior centers, I also had the wonderful opportunity to connect with another community by celebrating Autism Acceptance Month with a special group of kids. Along with our colleagues at Metro-North, the MTA hosted a group of children at Grand Central to check out a vintage bus and explore a Metro-North train simulator. It's always rewarding to be reminded of how much some people love the transit system. Yes, we do the work we do at Transit to ensure millions of New Yorkers get where they need to go. It's an essential need, so our work is a given, a basic assumption to many New Yorkers. And to be clear, Transit agrees. We don't need laurels
+[p005_c0005] _| 5 |_
+[p005_c0006] _The MTA logo, consisting of the letters "MTA" in white inside a blue circle._
+
+## Page 6
+
+### [p006_c0001] MESSAGE FROM THE PRESIDENT
+[p006_c0002] to motivate us. But it is special to meet with kids who see our bus and train operators, conductors with real wonder in their eyes. Participating in Autism Acceptance Month is one of my favorite things I get to do at Transit. I value it every year.
+[p006_c0003] Speaking of gaining a new perspective on employees, I got another one myself this month. In April, our new state-of-the-art bus simulators came online at our Zerega and Spring Creek facilities. These simulators deliver immersive, real world environments across different bus types and scenarios. They are key to setting up more than 4,300 both new and veteran bus operators up for success. And last week I got to try one out and see for myself just how hard it is to navigate New York City streets. I have always had great respect for the incredibly difficult job bus operators have, but now I have an even better understanding of just how challenging their job can be. I'm thrilled we've made this $1.4 million investment in ensuring operators have the skills they need to stay safe and deliver reliable and efficient service for bus riders.
+[p006_c0004] While we're on the topic of delivering safe, reliable, and efficient bus service highly skilled bus operators are just one component to getting that done. Along with other effective tools like signal prioritization, bus lanes, and more, ACE is another important means of improving bus service in the city. And we've hit an exciting milestone in the program this spring. There are now 60 ACE-enabled routes throughout the city. More than 1,700 buses are now ACE equipped, covering 560 miles of routes and benefiting over one million customers on an average weekday. I look forward to continuing to work with City Hall to ensure we're using all the tools at our disposal to speed buses for the millions of New Yorkers who rely on them every day.
+[p006_c0005] After overcoming the harshest winter we've seen in recent years, the NYC Transit team got a lot done this month. I look forward to continuing that momentum into May as we make more improvements to how we deliver safe, reliable, and efficient service for New Yorkers.
+> [p006_c0006] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+[p006_c0007] _| 6 |_
+
+## Page 7
+
+> [p007_c0001] A photograph of a blue and yellow articulated bus (B-19) at a bus stop. The bus is in the foreground, facing the camera, with its destination sign displaying "B-19 BRONX PARK". The bus number "6351" is visible on the front. To the right, another articulated bus is partially visible. The scene is set outdoors on a sunny day with a bright blue sky and scattered white clouds. Large, leafy green trees are in the background. On the left, a person in a purple jacket and helmet is riding a scooter on a sidewalk. The road has white markings, including a crosswalk and "ONLY" lane markings. A black metal fence and stone pillars are visible on the left side of the street.
+
+## Page 8
+
+### [p008_c0001] SERVICE PERFORMANCE
+### [p008_c0002] Subway Service Delivered
+[p008_c0003] The share of scheduled trains that are actually provided (compared to schedule) during peak hours
+> [p008_c0004] Year Month Service Delivered (%) 2023 Apr 96 2023 May 95 2023 Jun 95 2023 Jul 94 2023 Aug 94 2023 Sep 94 2023 Oct 94 2023 Nov 91 2023 Dec 93 2024 Jan 95 2024 Feb 95 2024 Mar 95 2024 Apr 94 2024 May 94 2024 Jun 94 2024 Jul 95 2024 Aug 94 2024 Sep 92 2024 Oct 92 2024 Nov 93 2024 Dec 96 2025 Jan 96 2025 Feb 95 2025 Mar 94 2025 Apr 94 2025 May 94 2025 Jun 94 2025 Jul 94 2025 Aug 94 2025 Sep 93 2025 Oct 94 2025 Nov 93 2025 Dec 92 2026 Jan 94 2026 Feb 92
+### [p008_c0005] Subway Delays
+[p008_c0006] The share of trains that arrived at terminal locations more than five minutes late, did not operate, or that skipped any planned station stops
+> [p008_c0007] Year Month Infrastructure & Equipment (%) Scheduled Maintenance (%) Police & Medical (%) Operating Conditions (%) Crew Availability (%) External Factors (%) Total (%) 2023 Apr 5 5 5 5 5 0 20 2023 May 5 5 5 5 5 0 20 2023 Jun 5 5 5 5 5 0 20 2023 Jul 5 5 5 5 5 0 20 2023 Aug 5 5 5 5 5 0 20 2023 Sep 5 5 5 5 5 0 20 2023 Oct 5 5 5 5 5 0 20 2023 Nov 5 5 5 5 5 0 20 2023 Dec 5 5 5 5 5 0 20 2024 Jan 5 5 5 5 5 0 20 2024 Feb 5 5 5 5 5 0 20 2024 Mar 5 5 5 5 5 0 20 2024 Apr 5 5 5 5 5 0 20 2024 May 5 5 5 5 5 0 20 2024 Jun 5 5 5 5 5 0 20 2024 Jul 5 5 5 5 5 0 20 2024 Aug 5 5 5 5 5 0 20 2024 Sep 5 5 5 5 5 0 20 2024 Oct 5 5 5 5 5 0 20 2024 Nov 5 5 5 5 5 0 20 2024 Dec 5 5 5 5 5 0 20 2025 Jan 5 5 5 5 5 0 20 2025 Feb 5 5 5 5 5 0 20 2025 Mar 5 5 5 5 5 0 20 2025 Apr 5 5 5 5 5 0 20 2025 May 5 5 5 5 5 0 20 2025 Jun 5 5 5 5 5 0 20 2025 Jul 5 5 5 5 5 0 20 2025 Aug 5 5 5 5 5 0 20 2025 Sep 5 5 5 5 5 0 20 2025 Oct 5 5 5 5 5 0 20 2025 Nov 5 5 5 5 5 0 20 2025 Dec 5 5 5 5 5 0 20 2026 Jan 5 5 5 5 5 0 20 2026 Feb 5 5 5 5 5 0 20
+### [p008_c0008] Data Review
+[p008_c0009] In March, subway performance improved following the operational challenges posed by winter weather earlier in the year. Weekday On-Time Performance (OTP) increased to 82.5%, up 3.4 points from February and trending toward its 85% target. Weekend OTP rose to 87.9%, exceeding its 85% target and improving 1.0 point over month. Customer Journey Time Performance (CJTP) reached 84.7%, up 1.7 points from February and approaching its target of 86%.
+[p008_c0010] These gains were driven in part by the system's continued recovery from severe winter conditions. As temperatures normalized, delays related to inclement weather and external debris on the roadbed declined. Crew availability also strengthened, further supporting more reliable service delivery. Performance strengthened over the course of the month, with improved reliability in the second half, signaling positive momentum toward sustained achievement of system performance targets and a return to OTP levels seen through much of 2025.
+[p008_c0011] _| 8 |_
+
+## Page 9
+
+### [p009_c0001] SERVICE PERFORMANCE
+### [p009_c0002] Subway Additional Platform Time + Additional Train Time
+[p009_c0003] APT: The average time that customers spend waiting at a station beyond their scheduled wait time
+[p009_c0004] ATT: The average time that customers spend onboard a train beyond their scheduled travel time
+> [p009_c0005] A stacked bar chart showing the average time spent beyond scheduled wait time (APT, green) and travel time (ATT, blue) in minutes from January 2023 to March 2026. The y-axis ranges from 0.0 to 2.5 minutes. The x-axis shows months and years. APT values are generally between 1.2 and 1.5 minutes, while ATT values are between 0.5 and 1.0 minutes. The total time per month fluctuates between approximately 1.7 and 2.2 minutes.
+### [p009_c0006] Customer Journey Time Performance
+[p009_c0007] The share of customer trips with a total travel time within 5 minutes of the scheduled time
+> [p009_c0008] A bar chart showing the percentage of customer trips with a total travel time within 5 minutes of the scheduled time for various subway lines. The y-axis ranges from 60% to 100%. The x-axis lists lines: 1, 2, 3, 4, 5, 6, 7, S 42nd, A, B, C, D, E, F, G, JZ, L, M, N, Q, R, S Fltn, S Rock, and W. A horizontal line indicates the systemwide average of 84.7%. Line 7 shows the highest performance at nearly 100%, while line B shows the lowest at approximately 78%.
+### [p009_c0009] Moving Forward
+[p009_c0010] Subways is building on March's progress through targeted, data-driven improvements to service planning and delivery. Pilot programs conducted in March, focused on testing targeted adjustments to rail operations, demonstrated measurable benefits on several lines. Upcoming schedule changes in May will expand these approaches across 13 lines, better aligning service with operating conditions and customer demand. Previous schedule updates have already demonstrated success, including significant reliability improvements on the B and C lines following changes implemented last fall.
+[p009_c0011] Looking ahead, longer-term investments will further support reliability and the customer experience. We are advancing the next phase of fleet modernization, building on progress in the B Division with the R160, R179, and R211 fleets. Efforts are now focused on replacing aging A Division cars, including the R62 and R62A fleets serving the 1 , 3 , and 6 lines. We are also continuing to better align rider priorities with service improvements through initiatives like the Spring "Customers Count" survey released in early April. These and other efforts position Subways to build on our efforts to deliver a more reliable experience for our customers.
+[p009_c0012] _| 9 |_
+
+## Page 10
+
+### [p010_c0001] SERVICE PERFORMANCE
+### [p010_c0002] Bus Service Delivered
+[p010_c0003] The share of scheduled buses that are actually provided at the peak load point during peak hours
+> [p010_c0004] Month Service Delivered (%) Apr 2023 96.0 May 2023 95.5 Jun 2023 95.0 Jul 2023 94.5 Aug 2023 95.5 Sep 2023 95.0 Oct 2023 95.5 Nov 2023 95.0 Dec 2023 95.5 Jan 2024 96.0 Feb 2024 96.5 Mar 2024 95.5 Apr 2024 95.0 May 2024 94.5 Jun 2024 94.0 Jul 2024 94.5 Aug 2024 95.0 Sep 2024 95.5 Oct 2024 95.0 Nov 2024 95.5 Dec 2024 96.5 Jan 2025 96.0 Feb 2025 96.5 Mar 2025 96.0 Apr 2025 95.0 May 2025 92.0 Jun 2025 92.0 Jul 2025 93.0 Aug 2025 93.5 Sep 2025 94.0 Oct 2025 94.5 Nov 2025 94.0 Dec 2025 92.0 Jan 2026 95.0 Feb 2026 89.0 Mar 2026 93.0
+### [p010_c0005] Bus Speeds, by Time of Day
+[p010_c0006] The average speed of all NYCT & MTA buses
+> [p010_c0007] Month AM Peak (6a-10a) (mph) Midday (10a-3p) (mph) PM Peak (3p-7p) (mph) Apr 2023 8.30 7.20 7.50 May 2023 8.10 7.10 7.40 Jun 2023 8.20 7.10 7.50 Jul 2023 8.30 7.20 7.60 Aug 2023 8.50 7.20 7.60 Sep 2023 7.80 7.00 7.20 Oct 2023 7.90 7.10 7.30 Nov 2023 8.10 7.10 7.30 Dec 2023 8.10 7.20 7.50 Jan 2024 8.10 7.10 7.40 Feb 2024 8.20 7.10 7.50 Mar 2024 7.90 7.00 7.20 Apr 2024 8.30 7.20 7.60 May 2024 8.40 7.20 7.60 Jun 2024 8.40 7.10 7.50 Jul 2024 7.80 7.00 7.30 Aug 2024 8.00 7.10 7.30 Sep 2024 8.00 7.10 7.20 Oct 2024 8.30 7.30 7.70 Nov 2024 8.20 7.30 7.60 Dec 2024 8.20 7.20 7.50 Jan 2025 8.10 7.10 7.40 Feb 2025 8.00 7.10 7.30 Mar 2025 8.50 7.20 7.70 Apr 2025 8.80 7.40 7.90 May 2025 8.10 7.20 7.60 Jun 2025 8.20 7.20 7.50 Jul 2025 8.30 7.20 7.60 Aug 2025 8.40 7.30 7.80 Sep 2025 7.90 7.00 7.40 Oct 2025 8.30 7.20 7.70 Nov 2025 8.20 7.20 7.50 Dec 2025 8.30 7.30 7.60 Jan 2026 8.20 7.20 7.70 Feb 2026 8.10 7.10 7.50 Mar 2026 8.30 7.30 7.80
+### [p010_c0008] Data Review
+[p010_c0009] Bus performance in March 2026 reflected a marked recovery from February and continued to trend positively. All key metrics improved month-over-month and remained stable compared with March 2025. Service Delivered was 93%, up 4.2 percentage points from February, one percentage point below last year. This is two percentage points below our yearly goal of 95%. The 12-month average increased by 0.9 percentage points.
+[p010_c0010] Customer Journey Time Performance increased to 68.3%, up 9.6 percentage points from February 2026 and down 0.9 percentage points compared with last March. Bus speeds improved to 8.3 mph, reflecting a 3.8 percent month-over-month gain and a 1.2 percent year-over-year improvement.
+[p010_c0011] _| 10 |_
+
+## Page 11
+
+### [p011_c0001] SERVICE PERFORMANCE
+### [p011_c0002] Additional Bus Stop Time + Additional Travel Time
+[p011_c0003] ABST: The average time that customers spend waiting at a stop beyond their scheduled wait time
+[p011_c0004] ATT: The average time customers spend onboard a bus beyond their scheduled travel time
+> [p011_c0005] Estimated data for Additional Bus Stop Time (ABST) and Additional Travel Time (ATT) Month ATT (min) ABST (min) Total (min) Apr 2023 0.5 1.5 2.0 May 2023 0.5 2.0 2.5 Jun 2023 0.5 1.5 2.0 Jul 2023 0.5 1.5 2.0 Aug 2023 0.5 1.5 2.0 Sep 2023 0.5 2.5 3.0 Oct 2023 0.5 2.5 3.0 Nov 2023 0.5 2.0 2.5 Dec 2023 0.5 1.5 2.0 Jan 2024 0.5 1.5 2.0 Feb 2024 0.5 1.5 2.0 Mar 2024 0.5 2.0 2.5 Apr 2024 0.5 2.5 3.0 May 2024 0.5 2.0 2.5 Jun 2024 0.5 1.5 2.0 Jul 2024 0.5 2.5 3.0 Aug 2024 0.5 2.5 3.0 Sep 2024 0.5 2.5 3.0 Oct 2024 0.5 2.0 2.5 Nov 2024 0.5 1.5 2.0 Dec 2024 0.5 1.5 2.0 Jan 2025 0.5 1.5 2.0 Feb 2025 0.5 1.5 2.0 Mar 2025 0.5 2.0 2.5 Apr 2025 0.5 2.5 3.0 May 2025 0.5 2.5 3.0 Jun 2025 0.5 2.5 3.0 Jul 2025 0.5 2.5 3.0 Aug 2025 0.5 3.5 4.0 Sep 2025 0.5 3.0 3.5 Oct 2025 0.5 3.0 3.5 Nov 2025 0.5 3.0 3.5 Dec 2025 0.5 2.0 2.5 Jan 2026 0.5 1.5 2.0 Feb 2026 0.5 5.0 5.5 Mar 2026 0.5 2.5 3.0
+### [p011_c0006] Bus Customer Journey Time Performance
+[p011_c0007] The share of customer trips with a total travel time within 5 minutes of the scheduled time
+> [p011_c0008] Bus Customer Journey Time Performance by Borough Borough Performance (%) Bronx 65% Brooklyn 65% Manhattan 75% Queens 68% Staten Island 65% Systemwide Average 68%
+### [p011_c0009] Moving Forward
+[p011_c0010] Strong enforcement of bus priority remains essential to delivering faster, more reliable service. Camera enforcement has proven to be one of our most effective tools. With the recent activation of Automated Camera Enforcement (ACE) on the B15 and M31, both routes began their 60-day warning period on April 13. The focus is to enhance service reliability by ensuring greater adherence to current traffic regulations. More than one million daily riders across 60 routes now benefit from ACE. The program continues to show measurable success, improving bus speeds, reducing collisions and emissions, and keeping bus lanes and stops clear, strengthening the reliability of the customer journey.
+[p011_c0011] The bus operator simulators previously in use are nearly twenty years old and no longer reflect the realities of operating in today's New York City. To modernize our training program, we have deployed four new state-of-the-art simulators at Zerega and Spring Creek. These units provide a far more realistic experience, with operator cabins that replicate our diesel, hybrid, electric, and articulated fleets. They feature immersive 4K environments with accurate lighting, weather, and traffic, as well as customizable scenarios for emergencies and complex operating challenges. Integrated performance dashboards help instructors identify skill gaps and deliver targeted coaching. This investment aligns our training environment with current operating conditions and strengthens safety and operational readiness across the system.
+[p011_c0012] _| 11 |_
+
+## Page 12
+
+### [p012_c0001] SERVICE PERFORMANCE
+### [p012_c0002] Paratransit Trips, by Type of Provider
+[p012_c0003] The number of paratransit trips, by type of service
+> [p012_c0004] This stacked bar chart displays the number of paratransit trips in thousands, categorized by provider type from April 2023 to March 2026. The Y-axis ranges from 0 to 1000 in increments of 200. The X-axis lists months from A (April) to M (March) for each year. The legend identifies five categories: Broker (green), E-Hail (blue), Street Hall (orange), Primary Provider (red), and All others (purple). Broker trips are the most frequent, consistently forming the base of each bar. The total number of trips shows a steady increase over the period, starting around 600 in early 2023 and reaching nearly 1000 by early 2026. Month Broker E-Hail Street Hall Primary Provider All others Total 2023 A 450 20 20 100 10 600 2023 M 450 20 20 100 10 600 2024 A 500 20 20 100 10 650 2024 M 500 20 20 100 10 650 2025 A 600 20 20 100 10 750 2025 M 600 20 20 100 10 750 2026 A 700 20 20 100 10 850 2026 M 700 20 20 100 10 850
+### [p012_c0005] Paratransit On-Time Performance
+[p012_c0006] The share of paratransit customers who are picked up within 20 minutes of schedule
+> [p012_c0007] This line chart tracks the percentage of paratransit customers picked up within 20 minutes of their scheduled time from April 2023 to March 2026. The Y-axis ranges from 70% to 100% in 5% increments. The X-axis lists months from A (April) to M (March) for each year. Two data series are shown: Primary provider (20 min) in green and Broker (20 min) in blue. The Broker series starts at approximately 85% and shows a general upward trend, ending near 87%. The Primary provider series starts at approximately 91% and fluctuates, ending near 88%. Month Primary provider (20 min) Broker (20 min) 2023 A 91% 85% 2023 M 90% 86% 2024 A 90% 94% 2024 M 86% 94% 2025 A 90% 94% 2025 M 88% 94% 2026 A 85% 92% 2026 M 88% 87%
+### [p012_c0008] Paratransit Provider No-Shows
+[p012_c0009] The share of providers that do not arrive at the pick-up location within 30 minutes of the promised time and the trip is not provided
+> [p012_c0010] This line chart illustrates the number of no-shows per 1,000 scheduled trips for Broker and Primary providers from April 2023 to March 2026. The Y-axis ranges from 0 to 5 in increments of 1. The X-axis lists months from A (April) to M (March) for each year. The Broker series (blue) shows a significant peak of nearly 5 no-shows in June 2023, followed by a decline and then a sharp rise to nearly 4 in early 2026. The Primary series (green) remains relatively stable, fluctuating between 0.5 and 2.5 no-shows per 1,000 trips throughout the period. Month Broker Primary 2023 A 3.0 0.5 2023 M 4.8 0.8 2024 A 1.5 1.0 2024 M 1.0 1.0 2025 A 1.0 1.0 2025 M 1.0 1.0 2026 A 1.0 1.0 2026 M 3.8 0.8
+[p012_c0011] _| 12 |_
+
+## Page 13
+
+### [p013_c0001] SERVICE PERFORMANCE
+### [p013_c0002] Data Review
+[p013_c0003] Paratransit saw record-high ridership in March along with operational challenges that impacted overall performance. The team worked diligently throughout March to address performance issues and finish the month with strong performance on all KPIs.
+[p013_c0004] March delivered another major milestone, with total ridership surpassing the previous record set in October 2025. Total ridership increased 12.7% year over year to more than 1.4 million, and total trips increased 14.7% when compared to the same month last year to over 1 million. Compared to December 2019, March 2026 ridership is up nearly 50%, underscoring sustained, significant growth beyond pre-pandemic levels.
+[p013_c0005] On-time performance was just under goal at 93.6% systemwide but remained strong this month despite record trip volumes. Our primary carrier service completed 94.7% of pickups within the 30-minute window, nearly 3% higher than February and above our goal of 94%. Broker service completed more than 93% of trips within the 30-minute pickup window, a slight decline of 0.9% from February. Shifts in the broker driver market, coupled with high demand, created challenges, but overall performance remained solid and showed significant improvement late in the month.
+[p013_c0006] No-shows for primary service improved meaningfully. The March no-show rate was 0.70 per 1,000 trips—a decrease of 1.4 per 1,000 from February and well below the goal of 3 per 1,000, despite the historic ridership levels. Broker service saw an increase in no-shows and failed to meet the less-than-3-per-1,000 goal for the month. Paratransit worked actively to limit customer impacts of no-shows by reallocating trips on the day of service. We continue working closely with broker partners to reduce no-shows and maintain performance within target.
+[p013_c0007] Call center performance declined in March due to the combination of record-high trips and on-street issues, driving over a million calls, including many complex and lengthy same-day calls. The percentage of calls answered was 81%, an 8-point decline from February, and the average answer speed was approximately 5 minutes. Though March numbers were well below goal, the Paratransit team worked actively to maximize agent availability and more efficiently address on-street issues, and saw significant improvement in the last week of the month.
+### [p013_c0008] Moving Forward
+[p013_c0009] Our focus remains on our goal of maintaining our performance as ridership grows. Based on our daily customer feedback and monthly Pulse surveys, we continue working to address the issues most important to our customers, including increasing on-time performance, addressing issues on the day of service more effectively, and maintaining consistent call center performance.
+[p013_c0010] _| 13 |_
+[p013_c0011] _The MTA logo, consisting of the letters "MTA" in white inside a blue circle._
+
+## Page 14
+
+### [p014_c0001] RIDERSHIP
+### [p014_c0002] Subway Ridership
+[p014_c0003] The number of paying subway & SIR customers, and estimated number of non-paying customers, on an average weekday
+> [p014_c0004] Year Month Paid (Millions) Unpaid (Millions) Total (Millions) 2023 M 3.5 0.5 4.0 A 3.6 0.4 4.0 M 3.7 0.3 4.0 J 3.8 0.2 4.0 J 3.9 0.1 4.0 A 3.8 0.2 4.0 S 3.7 0.3 4.0 O 3.8 0.4 4.2 N 3.9 0.3 4.2 D 3.8 0.4 4.2 J 3.7 0.5 4.2 F 3.8 0.4 4.2 2024 M 3.9 0.3 4.2 A 4.0 0.2 4.2 M 4.1 0.1 4.2 J 4.2 0.0 4.2 J 4.1 0.1 4.2 J 4.0 0.2 4.2 A 3.9 0.3 4.2 S 4.0 0.4 4.4 O 4.1 0.3 4.4 N 4.0 0.4 4.4 D 3.9 0.5 4.4 J 3.8 0.6 4.4 2025 F 3.9 0.4 4.3 M 4.0 0.3 4.3 A 4.1 0.2 4.3 M 4.2 0.1 4.3 J 4.3 0.0 4.3 J 4.2 0.1 4.3 J 4.1 0.2 4.3 A 4.0 0.3 4.3 S 4.1 0.4 4.5 O 4.2 0.3 4.5 N 4.1 0.4 4.5 D 4.0 0.5 4.5 2026 J 3.9 0.6 4.5 F 3.8 0.7 4.5 M 3.9 0.6 4.5 F 4.0 0.5 4.5
+### [p014_c0005] Bus Ridership
+[p014_c0006] The number of paying bus (NYCT and MTA) customers, and estimated number of non-paying customers, on an average weekday
+> [p014_c0007] Year Month Paid (Millions) Unpaid (Millions) Total (Millions) 2023 A 1.2 1.1 2.3 M 1.3 1.0 2.3 J 1.4 0.9 2.3 J 1.5 0.8 2.3 A 1.4 0.9 2.3 S 1.5 0.8 2.3 O 1.6 0.7 2.3 N 1.7 0.6 2.3 D 1.6 0.7 2.3 J 1.5 0.8 2.3 F 1.4 0.9 2.3 M 1.3 1.0 2.3 2024 A 1.4 0.9 2.3 M 1.5 0.8 2.3 J 1.6 0.7 2.3 J 1.7 0.6 2.3 A 1.6 0.7 2.3 S 1.7 0.6 2.3 O 1.8 0.5 2.3 N 1.7 0.6 2.3 D 1.6 0.7 2.3 J 1.5 0.8 2.3 F 1.4 0.9 2.3 M 1.3 1.0 2.3 2025 A 1.4 0.9 2.3 M 1.5 0.8 2.3 J 1.6 0.7 2.3 M 1.7 0.6 2.3 J 1.8 0.5 2.3 J 1.9 0.4 2.3 A 1.8 0.5 2.3 S 1.9 0.4 2.3 O 2.0 0.3 2.3 N 1.9 0.4 2.3 D 1.8 0.5 2.3 J 1.7 0.6 2.3 2026 F 1.6 0.7 2.3 M 1.5 0.8 2.3 F 1.4 0.9 2.3
+### [p014_c0008] Paratransit Ridership
+[p014_c0009] The total of AAR clients, PCAs, and guests taking Paratransit over the course of the month
+> [p014_c0010] Year Month Ridership (Millions) 2023 M 0.9 A 0.8 M 0.9 J 0.9 J 0.9 A 0.9 S 0.9 O 1.0 N 1.0 D 1.0 J 0.9 F 0.9 2024 M 1.0 A 1.0 M 1.1 J 1.1 J 1.1 A 1.1 S 1.1 O 1.2 N 1.1 D 1.1 J 1.1 F 1.1 2025 M 1.2 A 1.2 M 1.3 J 1.3 J 1.3 A 1.3 S 1.4 O 1.3 N 1.3 D 1.2 J 1.1 F 1.4 2026 M 1.4 A 1.4 M 1.4 J 1.4 J 1.4 A 1.4 S 1.4 O 1.3 N 1.3 D 1.2 J 1.1 F 1.4
+[p014_c0011] _| 14 |_
+
+## Page 15
+
+### [p015_c0001] RIDERSHIP
+### [p015_c0002] Data Review
+[p015_c0003] As expected, ridership rebounded in March with better weather. Paid subway weekday ridership was 3.7% higher than in March 2025, with 4.18 million. This represents the third highest monthly weekday average recorded since the pandemic. Core midweek days rose 4.0% YOY, with 4.39 million riders. Of particular note, March 18th saw 4.51 million riders, which was the first time the 4.5 million threshold has been surpassed in the Spring. (All such prior days have occurred in October through December). Weekends continue to show slightly higher growth, with Saturdays up 4.7% to 2.85 million, and Sundays up 6.9% to 2.18 million.
+[p015_c0004] On the bus side, weekday paid ridership was 1.33 million, down 10% from March 2025. This was a 12.7% improvement over February 2026. The weekend trends are marginally better, with Saturday paid ridership at 874,000 and Sunday paid ridership at 671,000, declines of 9.4% and 6.2% versus comparable days in 2025.
+[p015_c0005] Paratransit continued to show the strongly positive trends seen in recent years. March 2026 set a new Paratransit record with more than 1.4m riders, the highest monthly total ever, surpassing the previous peak in October 2025. Reaching this milestone so early in the year points to the sustained growth of paratransit ridership. Weekday ridership averaged 52,061, up 11% from March 2025, while weekends averaged 33,579, a nearly 12% increase. Peak ridership hit 56,478 riders on March 11, the weekday high, and 35,650 on March 29, the weekend high. Overall, the strong March 2026 figures coming out of the harsh 2026 winter highlight growing demand among paratransit users earlier in the year than typically seen.
+> [p015_c0006] A photograph showing the interior of a crowded subway train car. The car is filled with passengers, many of whom are holding up their smartphones to take pictures or videos. The train's interior features a dark ceiling with a series of white, curved light fixtures. A digital display above the passengers shows the number '7' in a red circle, indicating the subway line, and the destination 'Willets Pt Shea Stm'. The passengers are wearing various casual clothing, and some are wearing blue caps. The overall atmosphere is one of a busy, modern public transportation system.
+[p015_c0007] _| 15 |_
+[p015_c0008] _The logo for the Metropolitan Transportation Authority (MTA), featuring the letters 'MTA' in white inside a blue circle._
+
+## Page 16
+
+### [p016_c0001] SAFETY AND SECURITY
+### [p016_c0002] Customer Accident Rate
+[p016_c0003] The number of reportable subway and bus customer accidents per million customers (12-month rolling average)
+[p016_c0004] March 2026 data not yet available
+> [p016_c0005] This line chart displays the 12-month rolling average of reportable customer accidents per million customers for the Bus (blue line) and Subway (green line) from July 2023 to March 2026. The Y-axis ranges from 0 to 3.5. The Subway rate is consistently higher than the Bus rate, starting around 2.8 in July 2023 and gradually declining to approximately 2.5 by March 2026. The Bus rate starts around 2.2 and shows a slight upward trend, reaching about 2.4 by March 2026. Month Bus Subway July 2023 2.2 2.8 August 2023 2.2 2.7 September 2023 2.3 2.6 October 2023 2.3 2.6 November 2023 2.3 2.6 December 2023 2.3 2.7 January 2024 2.3 2.7 February 2024 2.3 2.7 March 2024 2.4 2.7 April 2024 2.4 2.7 May 2024 2.4 2.7 June 2024 2.5 2.7 July 2024 2.5 2.7 August 2024 2.5 2.6 September 2024 2.5 2.6 October 2024 2.5 2.6 November 2024 2.5 2.6 December 2024 2.5 2.6 January 2025 2.5 2.6 February 2025 2.5 2.6 March 2025 2.5 2.6 April 2025 2.4 2.6 May 2025 2.4 2.6 June 2025 2.4 2.6 July 2025 2.4 2.6 August 2025 2.4 2.6 September 2025 2.4 2.6 October 2025 2.4 2.6 November 2025 2.4 2.6 December 2025 2.4 2.6 January 2026 2.4 2.6 February 2026 2.4 2.6 March 2026 2.4 2.6
+### [p016_c0006] Bus Collision Rate
+[p016_c0007] The number of bus collisions per million miles
+> [p016_c0008] This line chart shows the number of bus collisions per million miles from July 2023 to March 2026. The Y-axis ranges from 40 to 90. The rate fluctuates between approximately 50 and 70 until late 2025, after which it shows a sharp increase, peaking at about 85 in January 2026 before dropping to around 60 in February 2026. Month Rate July 2023 55 August 2023 53 September 2023 52 October 2023 65 November 2023 67 December 2023 65 January 2024 63 February 2024 53 March 2024 58 April 2024 60 May 2024 58 June 2024 63 July 2024 62 August 2024 55 September 2024 54 October 2024 64 November 2024 68 December 2024 67 January 2025 62 February 2025 55 March 2025 54 April 2025 62 May 2025 55 June 2025 54 July 2025 55 August 2025 65 September 2025 64 October 2025 63 November 2025 58 December 2025 68 January 2026 72 February 2026 85 March 2026 60
+### [p016_c0009] Subway Fires
+[p016_c0010] Total number of fires in the subway, including right-of-way, in stations and on trains
+> [p016_c0011] This bar chart displays the total number of fires in the subway, including right-of-way, in stations and on trains, from July 2023 to March 2026. The Y-axis ranges from 0 to 140. The number of fires fluctuates significantly, with peaks around 100 in July 2023, 90 in August 2023, 90 in December 2024, 90 in January 2025, and a major peak of approximately 120 in March 2026. Month Fires July 2023 100 August 2023 75 September 2023 65 October 2023 90 November 2023 70 December 2023 70 January 2024 55 February 2024 75 March 2024 75 April 2024 75 May 2024 70 June 2024 60 July 2024 55 August 2024 75 September 2024 65 October 2024 75 November 2024 70 December 2024 90 January 2025 70 February 2025 85 March 2025 70 April 2025 70 May 2025 65 June 2025 75 July 2025 70 August 2025 75 September 2025 70 October 2025 60 November 2025 80 December 2025 75 January 2026 105 February 2026 120 March 2026 120
+[p016_c0012] _| 16 |_
+
+## Page 17
+
+### [p017_c0001] SAFETY AND SECURITY
+### [p017_c0002] Employee Lost Time Accident Rate
+[p017_c0003] The number of reportable employee lost time accidents per 100 employees (12-month rolling average)
+[p017_c0004] March 2026 data not yet available
+> [p017_c0005] Month Bus Rate Subway Rate Jan 2023 6.5 4.2 Jul 2023 6.4 4.3 Jan 2024 6.3 4.2 Jul 2024 6.1 4.0 Jan 2025 5.8 3.8 Jul 2025 5.5 3.6 Jan 2026 5.2 3.5 Jul 2026 6.0 4.0
+### [p017_c0006] Assaults and Harassments Against NYCT Employees
+[p017_c0007] Note: January 2026 data not yet available Assault, under NYS penal law, requires physical injury. Harassment involves actions that annoy or alarm with no resulting physical injury
+[p017_c0008] March 2026 data not yet available
+> [p017_c0009] Month Harassments Assaults Total Mar 2023 210 15 225 Apr 2023 200 15 215 May 2023 220 15 235 Jun 2023 210 15 225 Jul 2023 170 15 185 Aug 2023 180 15 195 Sep 2023 160 15 175 Oct 2023 210 15 225 Nov 2023 190 15 205 Dec 2023 170 15 185 Jan 2024 140 15 155 Feb 2024 160 15 175 Mar 2024 150 15 165 Apr 2024 150 15 165 May 2024 150 15 165 Jun 2024 150 15 165 Jul 2024 150 15 165 Aug 2024 180 15 195 Sep 2024 190 15 205 Oct 2024 180 15 195 Nov 2024 160 15 175 Dec 2024 150 15 165 Jan 2025 140 15 155 Feb 2025 150 15 165 Mar 2025 140 15 155 Apr 2025 150 15 165 May 2025 130 15 145 Jun 2025 160 15 175 Jul 2025 150 15 165 Aug 2025 160 15 175 Sep 2025 150 15 165 Oct 2025 160 15 175 Nov 2025 150 15 165 Dec 2025 160 15 175 Jan 2026 100 15 115 Feb 2026 110 15 125
+### [p017_c0010] Data Review
+[p017_c0011] Subway Customer Accident Rates slightly declined when comparing the most recent 12-month period to the previous one.
+[p017_c0012] Bus Customer Accident Rates decreased while Collision Rates increased only slightly when comparing these 12-month periods, too.
+- [p017_c0013] • Collisions increased by +10.3% in addition to mileage with a +1.2% increase. The rate impact reflects the formula's sensitivity to simultaneous increases in Collisions and decreases in Miles operated.
+[p017_c0014] On a 12-month rolling basis, Subway Fires increased (853 --> 942, +10.4%) when comparing periods ending March 2026 and March 2025.
+- [p017_c0015] • March 2026 had increase in fire incidences when comparing to March 2025 within Maintenance of Way (500 -> 623, +24.6%) and Trains (79 -> 88, +11.4%)
+[p017_c0016] _| 17 |_
+
+## Page 18
+
+### [p018_c0001] SAFETY AND SECURITY
+### [p018_c0002] Major Crimes Against Subway Customers
+[p018_c0003] The rate of all major felonies (murder, rape, robbery, felony assault, grand larceny) against subway customers
+> [p018_c0004] Estimated Data for Major Crimes Against Subway Customers Month Total Crimes (Right Axis) Crimes per Million Customers (Left Axis) Jan 2023 180 1.0 Feb 2023 190 1.0 Mar 2023 200 1.0 Apr 2023 190 1.0 May 2023 180 1.0 Jun 2023 190 1.0 Jul 2023 200 1.0 Aug 2023 190 1.0 Sep 2023 200 1.0 Oct 2023 210 1.0 Nov 2023 220 1.0 Dec 2023 210 1.0 Jan 2024 200 1.0 Feb 2024 190 0.8 Mar 2024 180 0.6 Apr 2024 190 0.6 May 2024 200 0.6 Jun 2024 210 0.6 Jul 2024 200 0.6 Aug 2024 210 0.8 Sep 2024 220 0.8 Oct 2024 210 0.8 Nov 2024 200 0.8 Dec 2024 190 0.8 Jan 2025 180 0.6 Feb 2025 190 0.6 Mar 2025 200 0.6 Apr 2025 210 0.6 May 2025 200 0.6 Jun 2025 190 0.6 Jul 2025 200 0.6 Aug 2025 210 0.6 Sep 2025 220 0.6 Oct 2025 210 0.6 Nov 2025 200 0.6 Dec 2025 190 0.6 Jan 2026 200 0.8 Feb 2026 210 0.8 Mar 2026 200 0.8
+### [p018_c0005] NYPD Summonses & Arrests
+[p018_c0006] The number of summonses issued for fare evasion (TABS + criminal); number of summonses issued for other infractions; and number of arrests made by NYPD
+> [p018_c0007] Estimated Data for NYPD Summonses & Arrests (Thousands) Month Fare Evasion Summonses All Other Summonses Subway Arrests Jan 2023 10 5 1 Feb 2023 11 5 1 Mar 2023 12 5 1 Apr 2023 11 5 1 May 2023 12 5 1 Jun 2023 13 5 1 Jul 2023 14 5 1 Aug 2023 15 5 1 Sep 2023 16 5 1 Oct 2023 17 5 1 Nov 2023 18 5 1 Dec 2023 19 5 1 Jan 2024 20 5 1 Feb 2024 21 5 1 Mar 2024 22 5 1 Apr 2024 23 5 1 May 2024 24 5 1 Jun 2024 25 5 1 Jul 2024 26 5 1 Aug 2024 27 5 1 Sep 2024 28 5 1 Oct 2024 29 5 1 Nov 2024 30 5 1 Dec 2024 31 5 1 Jan 2025 32 5 1 Feb 2025 33 5 1 Mar 2025 34 5 1 Apr 2025 35 5 1 May 2025 36 5 1 Jun 2025 37 5 1 Jul 2025 38 5 1 Aug 2025 39 5 1 Sep 2025 40 5 1 Oct 2025 41 5 1 Nov 2025 42 5 1 Dec 2025 43 5 1 Jan 2026 44 5 1 Feb 2026 45 5 1 Mar 2026 46 5 1
+### [p018_c0008] Perception of Safety and Police Presence
+[p018_c0009] On a scale of 1-10, where 1 is very unsafe and 10 is very safe, how safe do you feel using the subway?
+[p018_c0010] Pulse survey was not conducted in April or October while the Customers Count Survey was in the field
+> [p018_c0011] Estimated Safety Ratings (1-10) Month Rating Feb 2024 5.8 Mar 2024 6.0 Apr 2024 6.0 May 2024 6.1 Jun 2024 6.2 Jul 2024 6.2 Aug 2024 6.2 Sep 2024 6.2 Oct 2024 6.2 Nov 2024 6.5 Dec 2024 6.3 Jan 2025 6.3 Feb 2025 6.3 Mar 2025 6.3
+[p018_c0012] How do you feel about the number of uniformed police officers you've seen in the subway?
+> [p018_c0013] Estimated Police Presence Responses (%) Month Too few police Right amount Too many Nov 2026 50% 40% 10% Dec 2026 55% 35% 10% Jan 2026 50% 40% 10% Feb 2026 45% 45% 10%
+[p018_c0014] _| 18 |_
+
+## Page 19
+
+### [p019_c0001] SAFETY AND SECURITY
+### [p019_c0002] Data Review
+[p019_c0003] In March 2026, Major Felony Crime was down both month over month as well as versus the equivalent month last year. Further, crimes per million riders were also down significantly both versus February 2026 and March 2025. We are extremely encouraged by this downtrend on both a count and a per rider basis. This demonstrates how our collaborative efforts to combat crime patterns within our transit system have continued to show effects year over year. Our strong performance in March has driven the 2026 YTD figure below 2025. We, at the MTA, will continue to work with our law enforcement partners on quality-of-life and crime control initiatives and hope to see this downtrend continue throughout 2026.
+[p019_c0004] As the primary policing agency in the NYCT subway system, the NYPD continues to enforce laws, rules, and regulations within the transit system. Their summons and arrest activity remains strong compared to pre-COVID levels, and we are encouraged by their commitment to ensure order and safety are maintained within the transit system. The MTA also continues to offer our support and partner with the NYPD to deploy internal resources like the MTAPD Transit Ops, Scout Teams (Daytime and Overnight), Eagle Teams, Guard Teams, and SERT Teams within the transit environment. We work collaboratively to address crime and quality-of-life conditions that are identified within the transit system.
+### [p019_c0005] Moving Forward
+[p019_c0006] The long-term effects of our initiatives show our proactive crime, security, and safety programs are working as designed and are leading to declines in crime trends. Our customers are noticing a change in the culture within the subway system, as reflected in improving safety scores in the Pulse and Biannual Surveys. We hope to see our Spring 'Customers Count' Survey reflect these encouraging trends in reported safety and security scores.
+[p019_c0007] We have been able to maintain security of the transit system concurrent with increasing ridership. We believe that our new crime and quality-of-life initiatives have been proven effective by impacting top-line statistics and the customer experience. Crime and disorder in our system continue to be dynamic issues, and they remain a top priority for the MTA. We will continue to press ahead and ensure all safety milestones are being met.
+[p019_c0008] _| 19 |_
+[p019_c0009] _The MTA logo, consisting of the letters 'MTA' in white inside a blue circle._
+
+## Page 20
+
+### [p020_c0001] CUSTOMER SATISFACTION
+### [p020_c0002] Monthly Pulse Survey Results - Subways
+### [p020_c0003] How satisfied are you with your last trip?
+[p020_c0004] Note: Pulse survey was not conducted in October while the Customers Count Survey was in the field
+> [p020_c0005] Last Trip Overall Month Very Satisfied Satisfied Dissatisfied Very Dissatisfied Jan 16% 52% 22% 10% Feb 16% 52% 21% 11% Mar 16% 54% 22% 8% Line Month Very Satisfied Satisfied Dissatisfied Very Dissatisfied Jan 23% 47% 21% 9% Feb 23% 45% 22% 10% Mar 24% 47% 20% 9% Station Month Very Satisfied Satisfied Dissatisfied Very Dissatisfied Jan 19% 46% 23% 12% Feb 19% 47% 22% 12% Mar 19% 48% 23% 10% Legend: Very Satisfied (blue), Satisfied (green), Dissatisfied (orange), Very Dissatisfied (red)
+### [p020_c0006] How satisfied were you with each of the following on your last trip?
+> [p020_c0007] By Time of Day Time of Day Last Trip Overall Wait Times Crowding 6:30am-9:29am ~65% ~65% ~55% 9:30am-3:29pm ~75% ~75% ~75% 3:30pm-7:59pm ~70% ~70% ~60% 8:00pm-6:00am ~65% ~65% ~65% Monthly Trends Attribute Jan Feb Mar Train cleanliness ~65% ~65% ~65% Station cleanliness ~65% ~65% ~65% On-board crowding ~65% ~65% ~65% Wait time ~65% ~65% ~65% Travel time ~75% ~75% ~75% Legend: Jan (orange), Feb (green), Mar (blue)
+### [p020_c0008] What needs to improve to increase your satisfaction?
+[p020_c0009] Percentage of respondents choosing each attribute (up to 3 allowed)
+> [p020_c0010] Attribute January February March More reliable service ~38% ~42% ~42% Reduction in 'quality of life' concerns ~38% ~38% ~38% Fewer people behaving erratically ~30% ~30% ~30% More frequent service on weekends ~30% ~28% ~28% Cleaner stations ~22% ~25% ~25% Legend: January (orange), February (green), March (blue)
+[p020_c0011] _| 20 |_
+
+## Page 21
+
+### [p021_c0001] CUSTOMER SATISFACTION
+### [p021_c0002] Monthly Pulse Survey Results - Bus
+[p021_c0003] How satisfied are you with your last trip?
+> [p021_c0004] Service Type Month Very Satisfied Satisfied Dissatisfied Very Dissatisfied Local/Limited Bus Jan 21% 45% 20% 4% Feb 20% 39% 24% 7% Mar 22% 44% 21% 3% Select Bus Service Jan 21% 49% 19% 11% Feb 16% 51% 20% 13% Mar 23% 47% 15% 15% Express Bus Jan 23% 47% 21% 9% Feb 25% 39% 25% 11% Mar 22% 52% 16% 10% Legend: Very Satisfied (blue), Satisfied (green), Dissatisfied (orange), Very Dissatisfied (red)
+[p021_c0005] How satisfied were you with each of the following on your last trip?
+> [p021_c0006] By Time of Day Time of Day Last Trip Overall Wait Times Crowding 6:30am-9:29am ~65% ~50% ~50% 9:30am-3:29pm ~68% ~55% ~55% 3:30pm-7:59pm ~65% ~45% ~55% 8:00pm-6:00am ~68% ~48% ~65% Monthly Trends Attribute Jan Feb Mar Cleanliness ~65% ~65% ~68% Wait time ~50% ~48% ~52% Travel time ~70% ~68% ~72% Operator helpfulness ~68% ~68% ~68% Crowding ~55% ~50% ~55% Legend: Jan (orange), Feb (green), Mar (blue)
+### [p021_c0007] What needs to improve to increase your satisfaction?
+[p021_c0008] Percentage of respondents choosing each attribute (up to 3 allowed)
+> [p021_c0009] Attribute January February March Wait time ~50% ~55% ~50% More reliable service ~35% ~33% ~30% Crowding ~32% ~33% ~35% People not paying (fare evasion) ~28% ~30% ~28% Travel times & bus speeds ~20% ~20% ~20% Legend: January (orange), February (green), March (blue)
+[p021_c0010] _| 21 |_
+
+## Page 22
+
+### [p022_c0001] CUSTOMER SATISFACTION
+### [p022_c0002] Monthly Pulse Survey Results - Paratransit
+### [p022_c0003] How satisfied are you with your last trip?
+> [p022_c0004] Month Very Satisfied Satisfied Dissatisfied Very Dissatisfied Jan 56% 28% 10% 6% Feb 55% 27% 11% 7% Mar 49% 32% 13% 6%
+### [p022_c0005] How satisfied were you with each of the following on your last trip?
+> [p022_c0006] Time of Day Last Trip Overall On-time pick up Driver Courtesy 6:30am-9:29am ~75% ~65% ~82% 9:30am-3:29pm ~85% ~75% ~88% 3:30pm-7:59pm ~78% ~70% ~80% 8:00pm-6:00am ~88% ~78% ~92%
+> [p022_c0007] Attribute Jan Feb Mar On-time pickup ~78% ~78% ~72% Travel time ~82% ~82% ~82% Vehicle cleanliness ~82% ~82% ~82% Driver courtesy ~85% ~85% ~85% Vehicle comfort ~82% ~82% ~82%
+### [p022_c0008] What needs to improve to increase your satisfaction?
+[p022_c0009] Percentage of respondents choosing each attribute (up to 3 allowed)
+> [p022_c0010] Attribute January February March On-time pick up ~36% ~35% ~45% Trip no shows ~9% ~12% ~15% Get a ride for the day/time requested ~17% ~18% ~20% Driver assistance ~14% ~15% ~10% Travel times ~9% ~9% ~11%
+[p022_c0011] _| 22 |_
+
+## Page 23
+
+### [p023_c0001] CUSTOMER SATISFACTION
+### [p023_c0002] Data Review
+[p023_c0003] In March, 70% of subway customers were satisfied with their last subway trip, unchanged from February. Last trip overall line satisfaction is 71%, up from February, while last trip overall station satisfaction (66%) is on par with February. Overall, 68% of subway customers feel safe in the subway system, unchanged from February but up from a year ago (63%). For their most recent trip, 75% felt safe in stations and 76% felt safe on trains. These numbers are steady compared to February, but both are up from last year, when 72% felt safe in stations and on trains. “More reliable service” (42%), unchanged from February, topped the list of what customers say needs to improve to increase their subway satisfaction. “Reduction in quality-of-life concerns” (38%) and “Fewer people behaving erratically in the system” (30%) are the next most frequently selected improvement factors.
+[p023_c0004] In March, 68% of bus customers were satisfied with their last trip, up 7 points from February and at its highest level since August 2025 (71%). ‘Wait times’ continues to be mentioned most by customers as what needs to improve to increase satisfaction at 50%—but down from 56% last month. Local/Ltd satisfaction is 66% (up 7), SBS is 70% (unchanged), and Express bus is 75% (up 11). For Local/SBS routes, satisfaction with key service attributes ‘Waiting time’ is up 5 points to 52%, and ‘Crowding’ is up 4 to 55%. Last trip satisfaction is 63% in Brooklyn (up 8) and 67% in Queens (up 7) for Local/SBS trips, while all other boroughs remain on par with February.
+[p023_c0005] In March, 80% of Access-A-Ride customers were satisfied with their last trip, consistent with February (81%). Satisfaction with ‘On-time pick-up’ is 72%—down 6 points from last month, while ‘On-time drop-off’ is 79%, down 3 points. All other service-related attributes were consistent with February. ‘On-time pick-up’ satisfaction with broker trips is down 4 points to 69%—for dedicated carrier vehicles, ‘On-time pick-up’ satisfaction is steady at 75% this month. Satisfaction this month with trips taken during the midday (9:30 a.m. – 3:29 p.m.) is highest at 83%, but lowest for morning trips (6:30 a.m. – 9:29 a.m.) at 74%.
+[p023_c0006] _| 23 |_
+[p023_c0007] _The MTA logo, consisting of the letters 'MTA' in white inside a blue circle._
+
+## Page 24
+
+### [p024_c0001] CAPITAL PROJECTS
+### [p024_c0002] Modernizing Elevators Across 11 Subway Lines
+[p024_c0003] While the MTA continues the critical work of building out an accessible transit network by bringing elevators and other accessibility features to more subway stations, ensuring New York has an accessible system for all doesn't stop there. It's also about ensuring existing infrastructure is maintained and key to that process are elevator and escalator replacements.
+[p024_c0004] This month the MTA put upgraded elevators and escalators into service across 11 subway lines. At the 14 St-Union Sq station, crews replaced a street to mezzanine elevator serving the L N Q R W lines in both directions. One street-to-mezzanine elevators and two mezzanine -to-platform elevators were put into service at the DeKalb Av B C R station. One escalator was replaced at the 145 St A B C D station serving the mezzanine to B D platform, and three mezzanine and platforms escalators were put into service at the Lexington Av-63 St F M Q station.
+[p024_c0005] Just in time for baseball season, the team also opened three newly modernized elevators serving street to mezzanine and mezzanine to platform at 161 St – Yankee Stadium B D station. Two more elevators are expected to open at 161 St – Yankee Stadium 4 station soon.
+[p024_c0006] While less complex than building out new infrastructure to support new elevators, efforts to replace them still require detailed work. This includes full replacements of elevator cab and associated equipment within the cab, shaft, and pit, along with replacing elevator head house glass and canopy at street level. It also means modifications to the shaft and pit needed to accommodate new equipment. Equipment updates ensure the elevator ride is smoother and the elevator is more reliable in the future. Replacement and modernization of all elevator machine room, electrical and mechanical equipment for better and more reliable service is carried out. Work also includes upgrades to the remote monitoring equipment, fire alarm system, intercom system and cameras to enhance security and allow crews to respond more quickly and precisely if an elevator goes out of service.
+[p024_c0007] We look forward to continuing to replace elevators and escalators to ensure customers can easily and seamlessly navigate this system with replacement projects underway in the Bronx, Brooklyn, Queens, and Manhattan.
+[p024_c0008] _The MTA logo, consisting of the letters "MTA" in white inside a blue circle._
+[p024_c0009] _| 24 |_
+
+## Page 25
+
+### [p025_c0001] CUSTOMERS AND COMMUNITIES
+### [p025_c0002] RF OMNY Adult Luncheon Club OAC
+[p025_c0003] On Tuesday, March 10, President Crichlow and the Government and Community Relations team engaged with more than 75 attendees at the Adult Luncheon Club Older Adult Center focused on Reduced Fare OMNY benefits available via Tap and Ride, Paratransit, and the upcoming phaseout of coin acceptance on buses.
+### [p025_c0004] RF OMNY – Selfhelp Latimer Gardens Older Adult Center
+[p025_c0005] On Wednesday March 11, the Government and Community Relations team connected with the Selfhelp Older Adult Center, which serves a predominantly Mandarin-speaking community, to share resources that focused on Reduced Fare OMNY benefits available via Tap and Ride, Paratransit, and the upcoming discontinuation of coin acceptance on buses. The team also highlighted the customer service centers and mobile sales vans where individuals can receive in-person assistance with any OMNY or MetroCard issues and get answers to their questions.
+[p025_c0006] _| 25 |_
+
+## Page 26
+
+### [p026_c0001] ACCESSIBILITY
+### [p026_c0002] Elevator Availability
+[p026_c0003] The share of time that elevators across the system are running and available for customer use
+> [p026_c0004] Year Total Elevator Availability (%) NYCT Elevator Availability (%) 3rd Party Elevator Availability (%) 2023 96.5 97.5 86.5 2024 97.0 97.5 94.5 2025 97.5 97.5 95.0 2026 97.5 97.5 94.0
+### [p026_c0005] Accessibility Update
+[p026_c0006] Earlier this month, the MTA opened a new, redundant elevator at the 59 St-Columbus Circle station serving the southbound ABCD lines and northbound 1 line. This redundant elevator means that customers will always have a second option in case the current elevator is out for maintenance or being modernized. Redundancy is an important improvement for our customers and allows people with disabilities more peace of mind when counting on accessible subway trips. The best part of this elevator is that it was built using a public-private partnership model and was completely paid for and constructed by a developer, Global Holdings, with no cost to the MTA. By collaborating with developers, the MTA has been able to accelerate transit upgrades, expand accessibility, and direct public funding toward other high-priority needs across the system.
+[p026_c0007] The MTA welcomed back nine different elevators from complete overhauls in the last few weeks. Elevators across Manhattan, Brooklyn, and the Bronx were brought back into service, including three elevators at 161-Yankee Stadium ahead of Opening Day. Elevator modernization and replacement projects are a huge part of the MTA's accessibility story. Once elevators are incorporated into a station, the MTA has an entire team that works 24/7 to ensure those elevators are as reliable as possible. However, after a few decades of around-the-clock use, the internal mechanics of the system wear down, and the MTA completely replaces the internal components of the elevator. While the construction creates a temporary detour, these are important long-term investments in the reliability of our accessibility infrastructure, which benefit so many more people than just those with disabilities. We currently have 20 additional elevators being replaced to ensure our system continues to meet the needs of people with disabilities for decades to come.
+[p026_c0008] _| 26 |_
+
+## Page 27
+
+### [p027_c0001] FINANCIAL RESULTS
+### [p027_c0002] 2026 Operating Revenue & Expenses, January Year-to-Date
+[p027_c0003]
+
+```text
+in $ millions New York City Transit MTA Bus Staten Island Rail Budget Actual Variance Budget Actual Variance Budget Actual Variance Total non-reimbursable revenues 959.7 941.4 (18.3) 54.0 46.0 (8.0) 1.5 1.5 (0.1) Farebox revenues 748.9 742.0 (6.9) 49.1 42.1 (7.0) 1.0 0.9 (0.1) Other revenues 210.8 199.4 (11.4) 4.9 3.9 (1.0) 0.6 0.6 - Total non-reimbursable expenses 2,734.5 2,727.8 6.7 249.1 243.1 6.0 21.5 22.1 (0.6) Labor expenses 2,021.3 2,030.5 (9.2) 188.3 184.2 4.0 16.0 17.4 (1.4) Non-labor expenses 713.3 697.3 15.9 60.9 58.9 2.0 5.5 4.7 0.8 Non-cash liabilities 620.3 598.6 21.6 18.2 19.0 (0.8) 4.4 8.0 (3.6) Net surplus/ (deficit) - accrued (2,225.6) (2,229.8) (4.2) (213.4) (216.1) (2.8) (24.3) (28.6) (4.3)
+```
+### [p027_c0004] Staffing Levels (Full-Time Equivalents)
+[p027_c0005]
+
+```text
+New York City Transit MTA Bus Staten Island Rail Budget Actual Variance Budget Actual Variance Budget Actual Variance Non-Reimbursable 45,414 43,423 1,991 4,019 3,964 55 381 394 -13 Reimbursable 4,980 4,001 980 38 28 10 54 11 43 Total Positions 50,394 47,424 2,971 4,057 3,992 65 435 405 30
+```
+### [p027_c0006] Data Review
+[p027_c0007] Farebox revenue was unfavorable to the Budget by $21.2 million mainly due to lower than projected subway and bus paid ridership. Other Revenue was $11.4 million unfavorable to the Budget mainly due to lower than projected paratransit reimbursement and advertising revenues. Expenses were lower than the Budget by $6.7 million. Labor expenses, including fringe benefits, were unfavorable by $9.2 million driven largely by higher than projected absentee coverage needs and severe weather conditions. Non-labor expenses were favorable by $15.9 million mainly due to favorable timing of professional service contracts, materials & supplies and lower paratransit service contract expense reflecting lower trip volume and timing.
+### [p027_c0008] Moving Forward
+[p027_c0009] The Agency remains dedicated to filling vacancies, monitoring ridership trends, implementing cost-effective strategies for operational efficiencies, and prioritizing strict management of expenses, with a focus on overtime control.
+[p027_c0010] _| 27 |_
+
+## Page 28
+
+### [p028_c0001] SPECIAL FEATURE
+### [p028_c0002] Ensuring All Riders Pay Their Fair Share
+[p028_c0003] In 2022, MTA leadership created the Blue-Ribbon Panel to hit the reset button on how the authority and its stakeholders approach fare and toll evasion in New York. The panel, convened of high-profile New Yorkers with relevant expertise, understood the challenge of addressing an issue that raises difficult questions about social cohesion, inequality, and appropriate use of enforcement. That panel laid out the strategy of the four “E’s”: education, enforcement, environment, and equity. By looking at each mode through these four lenses, the MTA has been able to effectively tackle the problems of fare evasion across all modes of transit. Nowhere is that more evident than on our buses.
+[p028_c0004] Fare evasion remains a persistent and existential challenge for the MTA. On the subways, fare evasion has dropped by 30% thanks to successful compliance efforts including hardening fare arrays with fins and sleeves, installing delayed egress at emergency exit gates that have long been major opportunities for fare evasion, investing in modern fare gates currently being piloted in the system, expanding Student OMNY cards to provide students with more rides all year round and encouraging qualified riders to utilize the Fair Fare Program. But the problem on buses continues to be more pronounced. By utilizing the four “E’s”, the MTA has been working to increase fare compliance on buses in a variety of ways including supporting the transition to tap and ride, encouraging riders who qualify to sign up for the Fair Fares program, enhancing communications on buses to remind riders a fare payment is required to ride, and more. A critical component of these efforts is the use of EAGLE teams.
+### [p028_c0005] How EAGLE Teams are Deployed
+[p028_c0006] New York City Transit (NYCT) has had its EAGLE team of civilian fare enforcement agents in place since the debut of Select Bus Service (SBS). EAGLE team agents issue summonses to riders who board buses without paying their fares. Historically, these teams have focused on proof-of-payment enforcement on SBS routes where payment is either done off-board or via Tap and Ride. Following the recommendation of the MTA’s Blue-Ribbon Panel, NYCT began to redeploy EAGLE teams to support fare enforcement on local bus routes as well as their existing SBS coverage.
+[p028_c0007] In August of 2024 NYCT began a strategic shift in how EAGLE teams are deployed and in the tactics they utilize to limit fare evasion and increase fare compliance. This new strategy sought to bring high visibility to bus fare enforcement by increasing touchpoints with riders and raising awareness of fare enforcement. EAGLE teams are deployed in data-driven locations in all five boroughs, providing targeted fare enforcement at bus stops and on bus routes with the highest rates of fare evasion.
+[p028_c0008] _The MTA logo, consisting of the letters "MTA" in white inside a blue circle._
+[p028_c0009] _| 28 |_
+
+## Page 29
+
+### [p029_c0001] SPECIAL FEATURE
+[p029_c0002] In these deployments, EAGLE team members were supported by our partners at the NYPD.
+### [p029_c0003] How EAGLE Teams Validate Payment
+[p029_c0004] The MTA has never had the ability to validate MetroCard or coin payments. EAGLE Team members have always issued summonses based on their own observations. However, with the era of Tap and Ride allowing for a payment validation system, the MTA can now make sure all riders are paying.
+[p029_c0005] On-Board Validation Device (OVD) is a mobile tool used by EAGLE Team personnel to verify that customers have paid their fare by OMNY taps on buses. It is designed strictly for validation purposes. It does not accept payments and does not use or store any financial or other personal information. The OVD program was established in September 2020 to support proof-of-payment enforcement on Select Bus Service (SBS) routes, providing a reliable way to confirm fare compliance in a high-volume, off-board payment environment. Building on that foundation, the program is now being gradually expanded to local-limited bus service across New York City, enhancing system-wide fare verification, improving operational consistency, and supporting the move to a full proof of payment system.
+### [p029_c0006] Continuing Efforts to Increase Fare Payment
+[p029_c0007] The work doesn't stop here. As agents continue to tackle the challenge of fare evasion on buses, the EAGLE team is implementing new ways to increase footprint, utilize technology, to gain fare compliance. EAGLE Teams will expand to cover more locations throughout the city, on both SBS and Local/Limited buses.
+[p029_c0008] The Blue Ribbon panel recommended the strategy of the four "E's", explicitly noting that addressing only one of the "E's" would be insufficient. These strategies are meant to be implemented in unison. Only focusing on "Enforcement" will not solve the challenges of fare evasion.
+[p029_c0009] NYCT continues to prioritize education, both for riders and employees. New marketing materials were deployed to remind riders that a fare is required to ride all buses and to emphasize the importance and benefits of paying the fare. Teams across the MTA will continue their work with the Department of Buses and our public communications staff to distribute educational materials to customers who continue to pay with coins or MetroCards to help them transition to Tap and Ride.
+[p029_c0010] _| 29 |_
+[p029_c0011] _The MTA logo, consisting of the letters "MTA" in white inside a blue circle._
+
+## Page 30
+
+> [p030_c0001] A close-up, low-angle photograph of a male construction worker. He is wearing a grey hard hat, a black neck gaiter, clear safety glasses, and a bright orange high-visibility safety vest over a grey long-sleeved shirt. He has a goatee and is looking upwards and to the right. He is wearing brown leather work gloves and is using a wooden-handled hammer to strike a wooden beam. A metal tool, possibly a pry bar or a specialized hammer, is tucked into his safety harness. The background is a bright, overcast sky. The image is oriented vertically.
+
+## Page 31
+
+### [p031_c0001] ABOUT THE METROPOLITAN TRANSPORTATION AUTHORITY & NEW YORK CITY TRANSIT
+[p031_c0002] The Metropolitan Transportation Authority is North America's largest transportation network, serving a population of 15.3 million people across a 5,000-square-mile travel area surrounding New York City through Long Island, southeastern New York State, and Connecticut.
+[p031_c0003] New York City Transit and MTA Bus operate all subways and buses in New York City. Our 45,000 employees serve 4,500,000 passengers a day. We operate nearly 6,700 subway cars and 5,900 buses, and we maintain 472 subway stations, 640 miles of track, 27 bus depots and 70 shops and yards.
+[p031_c0004] The MTA is governed by a 23-member Board of Directors, organized in eight committees. Members of the New York City Transit Committee include:
+- [p031_c0005] • Haeda Mihaltses, Chair • Andrew Albert • Samuel Chu • Dan Garodnick • David Jones • Melva M. Miller • John Ross "JR" Rizzo • John Samuelsen • Lisa Sorin
+[p031_c0006] _mta.info_
+[p031_c0007] _The MTA logo, featuring the letters "MTA" in a bold, sans-serif font inside a white circle._

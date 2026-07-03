@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "route_cluster_ae73bc0dfa",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_ae73bc0dfa.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_ae73bc0dfa.json",
+  "source_review_run_id": "2026-06-23T14-38-47-609Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "route_23rd-st-sbs",
+        "route_m23-local-cb4-apr2016"
+      ],
+      "reason": "Contradiction test: service_variant differs (sbs vs local). Per-kind route rule: identity = base route id + service variant; different variants never merge (explicit rule). Even though both share base M23, the variant mismatch makes them distinct routes."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "The two records have the same base route M23 but explicit service_variants 'sbs' and 'local'. Under the Identity Merge Canon's per-kind route rules, different variants never merge. The contradiction test (strong identity field variant) forces do_not_merge. No ambiguity. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

@@ -1,0 +1,384 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch032-prep",
+  "created_at": "2026-06-23T01:35:00Z",
+  "author": "codex",
+  "scope": "relation endpoint-shape cleanup prep only; durable retire+replace mechanism planned but not applied",
+  "batch": "batch032",
+  "run_id_for_replacements": "2026-06-23_codex_relation_cleanup_batch032",
+  "submitted_at_for_dry_run": "2026-06-23T01:35:00Z",
+  "durable_mechanism_planned_not_applied": {
+    "retirements_target": "data/submission-overrides/retired.json",
+    "replacement_journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch032.jsonl",
+    "applied": false
+  },
+  "bucket": {
+    "name": "has_timeline_event metric-claim-to-event contract timeline rows",
+    "original_relation_kind": "has_timeline_event",
+    "original_endpoint_shape": "metric_claim -> event",
+    "replacement_relation_kind": "supports",
+    "replacement_endpoint_shape": "event -> metric_claim",
+    "prepared_count": 4,
+    "why_coherent": "After excluding retired submissions, prior relation cleanup batches017-031, and missing-target repair work, the conductor-preferred part_of_program project->source bucket from codex-relation-rule-or-data-next9-prep.json was already fully consumed by batch031. The next exact high-confidence bucket has four has_timeline_event rows where metric_claim records were incorrectly used as timeline subjects. Each cited block ties a contract amount metric claim to a contract delivery/evaluation/extension event. Replacing with supports event -> metric_claim preserves the source-backed association without widening has_timeline_event beyond timeline-capable subjects."
+  },
+  "checkpoint_context": {
+    "method": "Read-only inventory over canonical JSONL and canonical.db with current endpoint-shape rules; excluded retired submissions, prior codex relation cleanup prep originals through batch031, and missing-target repair work. Did not run CLI validate, materialize, export-jsonl, DB repair/publish, or provider-backed commands.",
+    "next9_project_source_bucket_status": {
+      "source_artifact": "data/review_notes/codex-relation-rule-or-data-next9-prep.json",
+      "preferred_bucket": "part_of_program project->source",
+      "status_after_exclusions": "All three exact examples from next9 are excluded because batch031 prepared them.",
+      "excluded_by_batch031_record_ids": [
+        "relation_meeting-doc-112141-grand-central-part-of-20yr",
+        "relation_meeting-doc-112141-zerobus-part-of-20yr",
+        "relation_meeting-doc-115221-psa-capital-program"
+      ]
+    },
+    "canonical_db_read_check": {
+      "command": "sqlite3 data/canonical.db select record_id, relation_kind, subject_id, object_id for the four candidate records",
+      "result": "Confirmed all four candidate records are current canonical has_timeline_event rows with metric_claim subjects and event objects."
+    },
+    "remaining_endpoint_shape_inventory_after_exclusions": {
+      "total": 51,
+      "selected_bucket": "has_timeline_event metric_claim->event",
+      "selected_bucket_count": 4,
+      "prepared_count": 4,
+      "other_top_buckets": [
+        {
+          "bucket": "implemented_by metric_claim->entity",
+          "count": 4
+        },
+        {
+          "bucket": "part_of_program project->event",
+          "count": 3
+        },
+        {
+          "bucket": "has_metric source->metric_claim",
+          "count": 2
+        },
+        {
+          "bucket": "has_timeline_event claim->event",
+          "count": 2
+        },
+        {
+          "bucket": "implemented_by route->entity",
+          "count": 2
+        }
+      ]
+    }
+  },
+  "exclusions_and_guards": {
+    "excluded_batches": [
+      "batch017",
+      "batch019",
+      "batch020",
+      "batch021",
+      "batch022",
+      "batch023",
+      "batch024",
+      "batch025",
+      "batch026",
+      "batch027",
+      "batch028",
+      "batch029",
+      "batch030",
+      "batch031"
+    ],
+    "missing_target_repair_excluded": true,
+    "retired_json_not_edited": true,
+    "submission_journals_not_edited": true,
+    "generated_outputs_not_edited": true,
+    "log_not_edited": true,
+    "manifest_merges_retired_not_edited": true,
+    "wiki_source_pages_not_edited": true,
+    "original_submission_guard": {
+      "retired_hits": [],
+      "prior_relation_batch_hits": []
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": [],
+      "prior_review_note_submission_id_hits": [],
+      "prior_review_note_local_observation_id_hits": []
+    }
+  },
+  "local_validation": {
+    "tooling": "createSubmissionEntry plus relationEndpointIssues using accepted local observation ids by source; relationEndpointShapeIssue checked against canonical endpoint kinds for each replacement",
+    "summary": {
+      "prepared_count": 4,
+      "retire_replace_count": 4,
+      "retire_only_count": 0,
+      "accepted_replacement_count": 4,
+      "issue_count": 0,
+      "warning_count": 0,
+      "endpoint_shape_issue_count_after_replacement": 0
+    }
+  },
+  "command_evidence": [
+    {
+      "command": "test -f data/review_notes/codex-relation-cleanup-batch032-prep.json; echo $?",
+      "result": "1 before writing; artifact did not already exist."
+    },
+    {
+      "command": "sed -n '1,260p' data/review_notes/codex-relation-rule-or-data-next9-prep.json",
+      "result": "Confirmed next9 recommended part_of_program project->source examples and exact record ids."
+    },
+    {
+      "command": "endpoint-shape inventory script excluding retired submissions and cleanup batches017-031",
+      "result": "Remaining top exact buckets included has_timeline_event metric_claim->event count 4; next9 project->source examples were excluded by batch031."
+    },
+    {
+      "command": "createSubmissionEntry dry run for four supports replacements",
+      "result": "All four replacement entries accepted with no issues, no warnings, and no endpoint-shape issue."
+    },
+    {
+      "command": "collision guard script over retired.json, data/submissions, and prior prep artifacts",
+      "result": "No original retired/prior hits and no replacement submission id or local observation id collisions."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts export-jsonl",
+    "provider-backed ingest/write/ask commands",
+    "database repair or publish commands"
+  ],
+  "prepared": [
+    {
+      "retire": {
+        "submission_id": "sub_29d615318aa71ccd",
+        "original_record_id": "relation_meeting91591-nova-has-timeline-event-delivery",
+        "original_local_observation_id": "relation_meeting91591_nova_has_timeline_event_delivery",
+        "malformed_shape": "has_timeline_event metric_claim -> event",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_id": "metric_meeting91591-nova-total-amount",
+        "original_subject_local_observation_id": "metric_claim_meeting91591_nova_total_amount",
+        "original_object_id": "event_meeting91591-nova-delivery-completion",
+        "original_object_local_observation_id": "event_meeting91591_nova_delivery_completion",
+        "reason": "The original relation uses a metric_claim as the has_timeline_event subject. The cited block ties the Nova Bus AEB total amount to an April 2024 delivery completion event, so supports event -> metric_claim preserves the association without treating the metric claim as a timeline-bearing record."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_98b0a4d37420cbb8",
+        "proposed_relation_kind": "supports",
+        "proposed_endpoint_shape": "event -> metric_claim",
+        "tool_args": {
+          "source_id": "meeting_doc_91591",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch032_nova_delivery_completion_supports_total_amount",
+          "label": "Nova AEB delivery completion supports total amount metric",
+          "raw_text": "Delivery of all five buses is anticipated to be completed in April 2024.",
+          "payload": {
+            "relation_kind": "supports",
+            "subject_id": "event_meeting91591-nova-delivery-completion",
+            "object_id": "metric_meeting91591-nova-total-amount",
+            "description": "Replacement for malformed has_timeline_event metric_claim -> event relation; source links the Nova Bus AEB contract amount with the delivery completion timeline, so the event supports the contract amount metric claim.",
+            "relation_family": "dependency_or_reference"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_91591",
+              "evidence_id": "meeting_doc_91591#p007_c0010",
+              "source_path": "raw/sources/meeting_doc_91591/blocks.jsonl",
+              "page_number": 7,
+              "block_id": "p007_c0010",
+              "text_sha256": "sha256:8614efa6e7527717d8cde599d3610329b5762be3a3a908e3e628c4e4eb1c8665",
+              "text_source": "raw_text",
+              "role": "metric_timeline_context",
+              "source_quote": "Delivery of all five buses is anticipated to be completed in April 2024"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_ba06afe6a894a67f",
+        "original_record_id": "relation_meeting91591-nova-has-timeline-event-inservice",
+        "original_local_observation_id": "relation_meeting91591_nova_has_timeline_event_inservice",
+        "malformed_shape": "has_timeline_event metric_claim -> event",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_id": "metric_meeting91591-nova-total-amount",
+        "original_subject_local_observation_id": "metric_claim_meeting91591_nova_total_amount",
+        "original_object_id": "event_meeting91591-nova-lead-bus-inservice-evaluation",
+        "original_object_local_observation_id": "event_meeting91591_nova_lead_bus_inservice_evaluation",
+        "reason": "The original relation uses a metric_claim as the has_timeline_event subject. The cited block ties the Nova Bus AEB total amount to an October 2023 lead bus in-service evaluation event, so supports event -> metric_claim preserves the association without treating the metric claim as a timeline-bearing record."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_54feb2147c635e26",
+        "proposed_relation_kind": "supports",
+        "proposed_endpoint_shape": "event -> metric_claim",
+        "tool_args": {
+          "source_id": "meeting_doc_91591",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch032_nova_inservice_evaluation_supports_total_amount",
+          "label": "Nova AEB in-service evaluation supports total amount metric",
+          "raw_text": "The lead bus is scheduled for in-service evaluation starting in October 2023.",
+          "payload": {
+            "relation_kind": "supports",
+            "subject_id": "event_meeting91591-nova-lead-bus-inservice-evaluation",
+            "object_id": "metric_meeting91591-nova-total-amount",
+            "description": "Replacement for malformed has_timeline_event metric_claim -> event relation; source links the Nova Bus AEB contract amount with the lead bus in-service evaluation timeline, so the event supports the contract amount metric claim.",
+            "relation_family": "dependency_or_reference"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_91591",
+              "evidence_id": "meeting_doc_91591#p007_c0010",
+              "source_path": "raw/sources/meeting_doc_91591/blocks.jsonl",
+              "page_number": 7,
+              "block_id": "p007_c0010",
+              "text_sha256": "sha256:8614efa6e7527717d8cde599d3610329b5762be3a3a908e3e628c4e4eb1c8665",
+              "text_source": "raw_text",
+              "role": "metric_timeline_context",
+              "source_quote": "The lead bus is scheduled for in-service evaluation starting in October 2023"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_b7860762eca2c595",
+        "original_record_id": "relation_meeting91591-sprague-has-timeline-event-extension",
+        "original_local_observation_id": "relation_meeting91591_sprague_has_timeline_event_extension",
+        "malformed_shape": "has_timeline_event metric_claim -> event",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_id": "metric_meeting91591-sprague-total-amount",
+        "original_subject_local_observation_id": "metric_claim_meeting91591_sprague_total_amount",
+        "original_object_id": "event_meeting91591-sprague-extension-start",
+        "original_object_local_observation_id": "event_meeting91591_sprague_extension_start",
+        "reason": "The original relation uses a metric_claim as the has_timeline_event subject. The cited block ties the Sprague extension term to the combined estimated total, so supports event -> metric_claim preserves the association without treating the metric claim as a timeline-bearing record."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_187692e8321bfa9a",
+        "proposed_relation_kind": "supports",
+        "proposed_endpoint_shape": "event -> metric_claim",
+        "tool_args": {
+          "source_id": "meeting_doc_91591",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch032_sprague_extension_supports_total_amount",
+          "label": "Sprague extension supports total amount metric",
+          "raw_text": "Sprague contract extension from September 1, 2022, to August 31, 2023 for combined estimated total of $209,923,366.",
+          "payload": {
+            "relation_kind": "supports",
+            "subject_id": "event_meeting91591-sprague-extension-start",
+            "object_id": "metric_meeting91591-sprague-total-amount",
+            "description": "Replacement for malformed has_timeline_event metric_claim -> event relation; source links the Sprague contract extension term with the combined estimated total, so the event supports the contract amount metric claim.",
+            "relation_family": "dependency_or_reference"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_91591",
+              "evidence_id": "meeting_doc_91591#p011_c0005",
+              "source_path": "raw/sources/meeting_doc_91591/blocks.jsonl",
+              "page_number": 11,
+              "block_id": "p011_c0005",
+              "text_sha256": "sha256:60e98f3e216a77febd92bfa795874be0084199f99419ca2ff915d99c813d67d3",
+              "text_source": "raw_text",
+              "role": "metric_timeline_context",
+              "source_quote": "from September 1, 2022, to August 31, 2023, to furnish and deliver Ultra Low Sulfur Diesel #2 Fuel"
+            },
+            {
+              "source_id": "meeting_doc_91591",
+              "evidence_id": "meeting_doc_91591#p011_c0005",
+              "source_path": "raw/sources/meeting_doc_91591/blocks.jsonl",
+              "page_number": 11,
+              "block_id": "p011_c0005",
+              "text_sha256": "sha256:60e98f3e216a77febd92bfa795874be0084199f99419ca2ff915d99c813d67d3",
+              "text_source": "raw_text",
+              "role": "metric_timeline_context",
+              "source_quote": "combined estimated total of $209,923,366"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_9edc7f349f40a400",
+        "original_record_id": "relation_meeting91591-wsp-has-timeline-event-extension",
+        "original_local_observation_id": "relation_meeting91591_wsp_has_timeline_event_extension",
+        "malformed_shape": "has_timeline_event metric_claim -> event",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_id": "metric_meeting91591-wsp-total-amount",
+        "original_subject_local_observation_id": "metric_claim_meeting91591_wsp_total_amount",
+        "original_object_id": "event_meeting91591-wsp-extension-start",
+        "original_object_local_observation_id": "event_meeting91591_wsp_extension_start",
+        "reason": "The original relation uses a metric_claim as the has_timeline_event subject. The cited block ties the WSP two-year extension term to the $20,000,000 amount, so supports event -> metric_claim preserves the association without treating the metric claim as a timeline-bearing record."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_73115dbf2edae279",
+        "proposed_relation_kind": "supports",
+        "proposed_endpoint_shape": "event -> metric_claim",
+        "tool_args": {
+          "source_id": "meeting_doc_91591",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch032_wsp_extension_supports_total_amount",
+          "label": "WSP extension supports total amount metric",
+          "raw_text": "Two-year contract extension for WSP USA Incorporated for $20,000,000 from November 1, 2022 to October 31, 2024.",
+          "payload": {
+            "relation_kind": "supports",
+            "subject_id": "event_meeting91591-wsp-extension-start",
+            "object_id": "metric_meeting91591-wsp-total-amount",
+            "description": "Replacement for malformed has_timeline_event metric_claim -> event relation; source links the WSP two-year contract extension term with the $20,000,000 amount, so the event supports the contract amount metric claim.",
+            "relation_family": "dependency_or_reference"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_91591",
+              "evidence_id": "meeting_doc_91591#p009_c0006",
+              "source_path": "raw/sources/meeting_doc_91591/blocks.jsonl",
+              "page_number": 9,
+              "block_id": "p009_c0006",
+              "text_sha256": "sha256:5668f4619b7fe17b01a697bd5fccc3e3598eda4a28b231fce519c3f43497808f",
+              "text_source": "raw_text",
+              "role": "metric_timeline_context",
+              "source_quote": "WSP USA Incorporated $20,000,000"
+            },
+            {
+              "source_id": "meeting_doc_91591",
+              "evidence_id": "meeting_doc_91591#p009_c0006",
+              "source_path": "raw/sources/meeting_doc_91591/blocks.jsonl",
+              "page_number": 9,
+              "block_id": "p009_c0006",
+              "text_sha256": "sha256:5668f4619b7fe17b01a697bd5fccc3e3598eda4a28b231fce519c3f43497808f",
+              "text_source": "raw_text",
+              "role": "metric_timeline_context",
+              "source_quote": "Two-year contract extension for worldwide inspection and testing services"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    }
+  ]
+}

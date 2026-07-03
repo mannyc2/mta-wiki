@@ -1,0 +1,91 @@
+{
+  "id": "metric-date-event-repair",
+  "date": "2026-07-03",
+  "mode": "codex_only_deterministic_cleanup",
+  "provider_backed_llm_commands": "not_used",
+  "summary": "Retired four metric_claim submissions that modeled date or milestone facts as numeric metrics, and replaced them with same-source event submissions.",
+  "subagent_audit": {
+    "agent_id": "019f256d-c6aa-7920-8d7b-c3c0645f113e",
+    "nickname": "Descartes",
+    "mode": "read_only",
+    "verdict": "All four candidates are high-confidence mis-modeled dates or milestones, not metric claims. The deterministic fix is retirement plus same-source replacement event submissions."
+  },
+  "before": {
+    "metric_claims": 36534,
+    "date_metric_target_records": 4,
+    "metric_unit_family_other": 3,
+    "validation_issues": 0
+  },
+  "after": {
+    "metric_claims": 36530,
+    "date_metric_target_records": 0,
+    "metric_unit_family_other": 0,
+    "events_added": 4,
+    "validation_issues": 0
+  },
+  "retired_metric_submissions": [
+    {
+      "record_id": "metric_omny-nyct-substantial-completion-dec2025",
+      "submission_id": "sub_43b8ba85c893df5e",
+      "reason": "December 2025 is a substantial-completion milestone date, not a metric value.",
+      "replacement_submission_id": "sub_bbe614fe84dee172",
+      "replacement_record_id": "event_omny-nyct-substantial-completion-dec2025",
+      "source_id": "meeting_doc_140456",
+      "evidence_block": "p010_c0007"
+    },
+    {
+      "record_id": "metric_omny-rr-substantial-completion-q2-2026",
+      "submission_id": "sub_6453fca20a63f4f2",
+      "reason": "Q2 2026 is a substantial-completion milestone date, not a metric value.",
+      "replacement_submission_id": "sub_422856269dd11ae0",
+      "replacement_record_id": "event_omny-rr-substantial-completion-q2-2026",
+      "source_id": "meeting_doc_140456",
+      "evidence_block": "p010_c0007"
+    },
+    {
+      "record_id": "metric_sas-phase2-revenue-service-target",
+      "submission_id": "sub_dd7a6cf869f023de",
+      "reason": "2032 is a planned revenue-service target year, not a metric value.",
+      "replacement_submission_id": "sub_9994d9df3a6f2a71",
+      "replacement_record_id": "event_sas-phase2-revenue-service-target-2032",
+      "source_id": "meeting_doc_187096",
+      "evidence_block": "p006_c0007"
+    },
+    {
+      "record_id": "metric_sas2-revenue-service-date-2032-v3",
+      "submission_id": "sub_da031007e8a55666",
+      "reason": "September 2032 is a forecasted revenue-service date, not a metric value.",
+      "replacement_submission_id": "sub_c77606b510ea9d6c",
+      "replacement_record_id": "event_sas2-revenue-service-target-sep2032",
+      "source_id": "meeting_doc_208006",
+      "evidence_block": "p011_c0006"
+    }
+  ],
+  "files_changed": [
+    "data/submission-overrides/retired.json",
+    "data/submissions/2026-07-03_codex_metric_date_event_repair.jsonl",
+    "data/canonical/metric_claims.jsonl",
+    "data/canonical/events.jsonl",
+    "data/canonical.db",
+    "wiki/"
+  ],
+  "commands": [
+    {
+      "command": "bun test packages/pipeline/test/records/submissions.test.ts",
+      "result": "passed: 29 tests, 176 expect calls"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "passed: Materialized 93067/98119 submissions; retired submissions skipped 269; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "passed: Issues 0; Submissions 98119; Canonical records 84027; Wiki pages 7331"
+    }
+  ],
+  "remaining_intentionally_unresolved": [
+    "This slice only addressed date/milestone facts masquerading as metric values.",
+    "Potential project timeline relation submissions for the four replacement events are deferred to a separate relation cleanup lane.",
+    "Other non-date metric payload anomalies, including missing or source-conflicted unit/value cases, remain separate backlog buckets."
+  ]
+}

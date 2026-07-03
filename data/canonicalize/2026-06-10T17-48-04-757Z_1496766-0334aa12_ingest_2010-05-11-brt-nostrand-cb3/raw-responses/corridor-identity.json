@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T17-48-04-757Z_1496766-0334aa12_ingest_2010-05-11-brt-nostrand-cb3",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-10T19:39:52.994Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "nostrand-ave-2010-cb3-self-match",
+        "local_observation_id": "corridor_nostrand_avenue_2010_cb3",
+        "decision": "new",
+        "rationale": "The observation describes Nostrand Avenue from Williamsburg Bridge to Sheepshead Bay in Brooklyn, which is the same real-world corridor as the existing registry record corridor_nostrand-avenue — the observation's own base_record_id. The payloads match on corridor name, borough, limits, and endpoints. The observation already resolves to this id; no different target exists to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_11_brt_nostrand_cb3",
+            "block_id": "p011_c0002",
+            "source_quote": "9.3 miles from Williamsburg Bridge to Sheepshead Bay"
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-39-30-161Z_1649437-634e427b_canonicalize_2026-06-10t17-48-04-757z-1496766-0334aa12-ingest-2010-05-11-brt-nostrand-cb3-corridor-identity"
+}

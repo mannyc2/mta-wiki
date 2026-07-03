@@ -1,0 +1,21 @@
+{
+  "run_id": "2026-06-10T23-00-12-469Z_1976810-c1d669fe_ingest_201110-qbb-summary-recommendations",
+  "generated_at": "2026-06-11T04:39:49.074Z",
+  "dry_run": false,
+  "wrote": true,
+  "decision_count": 34,
+  "reviewed_count": 22,
+  "alias_additions": [],
+  "aliases_already_present": [],
+  "do_not_merge_additions": [],
+  "relation_submissions": 3,
+  "quarantined": 16,
+  "conflicts": [],
+  "paths": {
+    "merges": "data/identity-overrides/merges.json",
+    "do_not_merge": "data/identity-overrides/do-not-merge.json",
+    "relation_submissions_jsonl": "data/submissions/2026-06-10T23-00-12-469Z_1976810-c1d669fe_ingest_201110-qbb-summary-recommendations_canonicalize.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-00-12-469Z_1976810-c1d669fe_ingest_201110-qbb-summary-recommendations/apply-quarantine.jsonl",
+    "apply_report": "data/canonicalize/2026-06-10T23-00-12-469Z_1976810-c1d669fe_ingest_201110-qbb-summary-recommendations/apply-report.json"
+  }
+}

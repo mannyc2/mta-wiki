@@ -1,0 +1,373 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "entity_ny-sdod-lga-aa"
+record_aliases:
+  - "entity_new-york-state-department-of-transportation"
+  - "entity_nysdot"
+  - "entity_nysdot-2012-04-26"
+  - "entity_nysdot-dec2023"
+record_kind: "entity"
+display_name: "New York State Department of Transportation (NYSDOT)"
+source_id: "110622_lga_aa_slides"
+source_ids:
+  - "110622_lga_aa_slides"
+  - "201111_1st2nd_progress_report"
+  - "2012_04_26_sbs_utica"
+  - "2014_08_25_brt_websteravenue_progressreport"
+  - "meeting_doc_102761"
+  - "meeting_doc_102766"
+  - "meeting_doc_102911"
+  - "meeting_doc_113916"
+  - "meeting_doc_115231"
+  - "meeting_doc_128916"
+  - "meeting_doc_129196"
+  - "meeting_doc_160136"
+  - "meeting_doc_160141"
+  - "meeting_doc_160196"
+  - "meeting_doc_160316"
+  - "meeting_doc_160966"
+  - "meeting_doc_189776"
+  - "meeting_doc_194101"
+  - "meeting_doc_201541"
+  - "meeting_doc_208021"
+  - "meeting_doc_44276"
+  - "meeting_doc_91801"
+  - "meeting_doc_92016"
+  - "meeting_doc_95286"
+local_observation_id: "entity_ny_sdod_lga_aa"
+local_observation_ids:
+  - "entity_meeting128916_nysdot"
+  - "entity_meeting_doc_102761_nysdot"
+  - "entity_meeting_doc_113916_nysdot"
+  - "entity_meeting_doc_160136_nysdot"
+  - "entity_meeting_doc_160141_nysdot"
+  - "entity_meeting_doc_160196_nysdot"
+  - "entity_meeting_doc_160316_nysdot"
+  - "entity_meeting_doc_189776_nysdot"
+  - "entity_meeting_doc_194101_nysdot"
+  - "entity_meeting_doc_44276_nysdot"
+  - "entity_meeting_doc_91801_nysdot"
+  - "entity_meeting_doc_92016_nys_dot"
+  - "entity_meeting_doc_95286_nysdot"
+  - "entity_meeting_doc_nysdot"
+  - "entity_ny_sdod_lga_aa"
+  - "entity_nysdot_201111_progress_report"
+  - "entity_nysdot_2012_04_26"
+  - "entity_nysdot_201408_webster"
+  - "entity_nysdot_208021_property"
+  - "entity_nysdot_dec2023"
+  - "entity_nysdot_meeting_doc_102766"
+  - "entity_nysdot_meeting_doc_115231"
+  - "entity_nysdot_meeting_doc_160966"
+  - "entity_nysdot_meeting_doc_201541"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-22T22:00:30.849Z"
+raw_text: "New York State Department of Transportation (NYSDOT)"
+submission_ids:
+  - "sub_07d79dc403fb5b1b"
+  - "sub_167cd1eb4ebd4abf"
+  - "sub_1c76095e221ad095"
+  - "sub_3cc45ec99a7a3477"
+  - "sub_45a02701b5467f85"
+  - "sub_4c3b67bb8d059840"
+  - "sub_5a3e398fc318e6c2"
+  - "sub_5c50cfe367036111"
+  - "sub_6d99e49f65d07691"
+  - "sub_8b273c796610d0ce"
+  - "sub_92000810e2141096"
+  - "sub_934f26142037bdc3"
+  - "sub_968df2a2394e6867"
+  - "sub_96a9fd84592d6a06"
+  - "sub_aac277364d84db30"
+  - "sub_afa6b21c7d080b19"
+  - "sub_b0a0fbf2dcfea8df"
+  - "sub_ba18476e3d2476d9"
+  - "sub_c131d561061e81df"
+  - "sub_ca84f470219f6cd3"
+  - "sub_d147805e70609670"
+  - "sub_d379a650bdfa2964"
+  - "sub_f498ad61e1de946b"
+  - "sub_f769e49eccb761a7"
+payload:
+  _merged_field_values:
+    acronym:
+      - "NYSDOT"
+      - "NYS DOT"
+    description:
+      - "Partner agency in the LaGuardia Airport Access Alternatives Analysis"
+      - "State transportation agency that participated in joint BRT study initiatives launched in 2004."
+      - "State transportation agency that provides Congestion Mitigation/Air Quality (CMAQ) funds for the Newburgh-Beacon Ferry lease reimbursement"
+      - "Entity with option for up to 26 dual-mode locomotives in alternate configuration under base contract"
+      - "NYSDOT previously reimbursed City for lease payments under expired contract; has committed CMAQ funds for Metro-North reimbursement"
+      - "Implemented WZSE; first annual report cited showing speeding decline in enforced work zones"
+      - "Grantor of CMAQ funds to Metro-North for connecting services."
+    entity_name:
+      - "New York State Department of Transportation"
+      - "New York State Department of Transportation (NYSDOT)"
+      - "NYS DOT"
+    entity_type:
+      - "government_agency"
+      - "agency"
+      - "state agency"
+      - "state transportation agency"
+      - "government agency"
+  acronym: "NYSDOT"
+  agency_name: "New York State Department of Transportation"
+  description: "Partner agency in the LaGuardia Airport Access Alternatives Analysis"
+  entity_name: "New York State Department of Transportation"
+  entity_type: "government_agency"
+  short_name: "NYSDOT"
+evidence_refs:
+  -
+    block_id: "p004_c0010"
+    evidence_id: "110622_lga_aa_slides#p004_c0010"
+    page_number: 4
+    role: "partner"
+    source_id: "110622_lga_aa_slides"
+    source_path: "raw/sources/110622_lga_aa_slides/blocks.jsonl"
+    text_sha256: "sha256:7d104deed9b993fba70d4c3dd207e24680a3d6cbdcf06a14d460209db0c21946"
+    text_source: "raw_text"
+  -
+    block_id: "p004_c0011"
+    evidence_id: "110622_lga_aa_slides#p004_c0011"
+    page_number: 4
+    role: "partner"
+    source_id: "110622_lga_aa_slides"
+    source_path: "raw/sources/110622_lga_aa_slides/blocks.jsonl"
+    source_quote: "New York State Department of Transportation"
+    text_sha256: "sha256:6717b35650649ef2cfb394267bfa649c52bf2a359863cc255a3810f46bb4f206"
+    text_source: "raw_text"
+  -
+    block_id: "p005_c0004"
+    evidence_id: "201111_1st2nd_progress_report#p005_c0004"
+    page_number: 5
+    role: "stated"
+    source_id: "201111_1st2nd_progress_report"
+    source_path: "raw/sources/201111_1st2nd_progress_report/blocks.jsonl"
+    source_quote: "NYCDOT, NYCT, and the New York State Department of Transportation (NYSDOT) launched a series of initiatives to reverse the decline in bus speeds"
+    text_sha256: "sha256:a0e401f7363f56779f6aff991211f235e56f7ec2476c7a987c1dc979c66f5525"
+    text_source: "raw_text"
+  -
+    block_id: "p022_c0003"
+    evidence_id: "2012_04_26_sbs_utica#p022_c0003"
+    page_number: 22
+    source_id: "2012_04_26_sbs_utica"
+    source_path: "raw/sources/2012_04_26_sbs_utica/blocks.jsonl"
+    source_quote: "Presented to USDOT and NYSDOT"
+    text_sha256: "sha256:8fae5866b6419d8130a61a04e0878b32d65e31c22e32d083a7d31e4318e748b5"
+    text_source: "raw_text"
+  -
+    block_id: "p006_c0004"
+    evidence_id: "2014_08_25_brt_websteravenue_progressreport#p006_c0004"
+    page_number: 6
+    role: "entity_name"
+    source_id: "2014_08_25_brt_websteravenue_progressreport"
+    source_path: "raw/sources/2014_08_25_brt_websteravenue_progressreport/blocks.jsonl"
+    source_quote: "New York State Department of Transportation"
+    text_sha256: "sha256:ba88df66e78e3514d21324ff01b097be246bb3d88765868a1e14d3b7952dd490"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0010"
+    evidence_id: "meeting_doc_102761#p001_c0010"
+    page_number: 1
+    role: "purpose"
+    source_id: "meeting_doc_102761"
+    source_path: "raw/sources/meeting_doc_102761/blocks.jsonl"
+    text_sha256: "sha256:7aac6088896259715973026a28b93c9164c29410d4c2061818588c638fc027e4"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0010"
+    evidence_id: "meeting_doc_102766#p001_c0010"
+    page_number: 1
+    role: "entity_name"
+    source_id: "meeting_doc_102766"
+    source_path: "raw/sources/meeting_doc_102766/blocks.jsonl"
+    source_quote: "New York State Department of Transportation (NYSDOT)"
+    text_sha256: "sha256:f6d3368181fb5f98739a57061d979ba50c13f254c87d97b29dfb86e20bcfde01"
+    text_source: "raw_text"
+  -
+    block_id: "p060_c0010"
+    evidence_id: "meeting_doc_102911#p060_c0010"
+    page_number: 60
+    source_id: "meeting_doc_102911"
+    source_path: "raw/sources/meeting_doc_102911/blocks.jsonl"
+    text_sha256: "sha256:7aac6088896259715973026a28b93c9164c29410d4c2061818588c638fc027e4"
+    text_source: "raw_text"
+  -
+    block_id: "p006_c0007"
+    evidence_id: "meeting_doc_113916#p006_c0007"
+    page_number: 6
+    source_id: "meeting_doc_113916"
+    source_path: "raw/sources/meeting_doc_113916/blocks.jsonl"
+    text_sha256: "sha256:ff8cf7d9f735e3091986519f7ce1c26c7b9f21c85e4496c5ebaa7a1d55a831c8"
+    text_source: "raw_text"
+  -
+    block_id: "p011_c0005"
+    evidence_id: "meeting_doc_115231#p011_c0005"
+    page_number: 11
+    source_id: "meeting_doc_115231"
+    source_path: "raw/sources/meeting_doc_115231/blocks.jsonl"
+    text_sha256: "sha256:c65d17ff0f07240cb483fc2b8f489e1a6b215037ce12b7db230d5baccd884239"
+    text_source: "raw_text"
+  -
+    block_id: "p012_c0007"
+    evidence_id: "meeting_doc_115231#p012_c0007"
+    page_number: 12
+    source_id: "meeting_doc_115231"
+    source_path: "raw/sources/meeting_doc_115231/blocks.jsonl"
+    text_sha256: "sha256:a742979cb957c0ad52c28147719aaf37426bc1e85a51900720af4bd9a43ccdc3"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0010"
+    evidence_id: "meeting_doc_128916#p001_c0010"
+    page_number: 1
+    source_id: "meeting_doc_128916"
+    source_path: "raw/sources/meeting_doc_128916/blocks.jsonl"
+    text_sha256: "sha256:e95c4a57274369c54aebee737902913e1017ed915b42168d3297b596bb560451"
+    text_source: "raw_text"
+  -
+    block_id: "p054_c0010"
+    evidence_id: "meeting_doc_129196#p054_c0010"
+    page_number: 54
+    source_id: "meeting_doc_129196"
+    source_path: "raw/sources/meeting_doc_129196/blocks.jsonl"
+    text_sha256: "sha256:e95c4a57274369c54aebee737902913e1017ed915b42168d3297b596bb560451"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0010"
+    evidence_id: "meeting_doc_160141#p001_c0010"
+    page_number: 1
+    role: "entity_name_source"
+    source_id: "meeting_doc_160141"
+    source_path: "raw/sources/meeting_doc_160141/blocks.jsonl"
+    text_sha256: "sha256:ef20493737eb350b5c4f1edb183e0ea9d729d2fdda0817e2d1384665bf4b87a4"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0010"
+    evidence_id: "meeting_doc_160136#p001_c0010"
+    page_number: 1
+    role: "entity_reference"
+    source_id: "meeting_doc_160136"
+    source_path: "raw/sources/meeting_doc_160136/blocks.jsonl"
+    text_sha256: "sha256:0aa7bef6c5a912439f4e0e73be590d4258a781a30c6681035ea5b74d081583ab"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0008"
+    evidence_id: "meeting_doc_160136#p002_c0008"
+    page_number: 2
+    role: "entity_reference"
+    source_id: "meeting_doc_160136"
+    source_path: "raw/sources/meeting_doc_160136/blocks.jsonl"
+    text_sha256: "sha256:ae2d3dc605d28506435de49d2f06781fd61b608de1342efcb849d3a3a47cfb08"
+    text_source: "raw_text"
+  -
+    block_id: "p006_c0007"
+    evidence_id: "meeting_doc_160316#p006_c0007"
+    page_number: 6
+    source_id: "meeting_doc_160316"
+    source_path: "raw/sources/meeting_doc_160316/blocks.jsonl"
+    text_sha256: "sha256:c7ec4ab38f97133f39b084927ce7a2af6ab53a57b09e752a74510eb25f2a33c7"
+    text_source: "raw_text"
+  -
+    block_id: "p006_c0007"
+    evidence_id: "meeting_doc_160196#p006_c0007"
+    page_number: 6
+    source_id: "meeting_doc_160196"
+    source_path: "raw/sources/meeting_doc_160196/blocks.jsonl"
+    text_sha256: "sha256:c7ec4ab38f97133f39b084927ce7a2af6ab53a57b09e752a74510eb25f2a33c7"
+    text_source: "raw_text"
+  -
+    block_id: "p004_c0002"
+    evidence_id: "meeting_doc_160966#p004_c0002"
+    page_number: 4
+    source_id: "meeting_doc_160966"
+    source_path: "raw/sources/meeting_doc_160966/blocks.jsonl"
+    text_sha256: "sha256:d948f8e5e7bef4f4f6b9bd15bc2486aa31027209b8c4d09694d54a0927e08722"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0007"
+    evidence_id: "meeting_doc_189776#p001_c0007"
+    page_number: 1
+    source_id: "meeting_doc_189776"
+    source_path: "raw/sources/meeting_doc_189776/blocks.jsonl"
+    source_quote: "New York State Department of Transportation"
+    text_sha256: "sha256:223037170ea9897935c5b5629b5272403b6dae5c8522aa052e5de62bd6d3d05a"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0008"
+    evidence_id: "meeting_doc_189776#p001_c0008"
+    page_number: 1
+    source_id: "meeting_doc_189776"
+    source_path: "raw/sources/meeting_doc_189776/blocks.jsonl"
+    source_quote: "NYSDOT's first annual report"
+    text_sha256: "sha256:53ff61f1412bcb00c89b508c08827a657378fd291727fde8568f40a17aa4ed52"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0008"
+    evidence_id: "meeting_doc_194101#p001_c0008"
+    page_number: 1
+    role: "mentioned_as_grantor"
+    source_id: "meeting_doc_194101"
+    source_path: "raw/sources/meeting_doc_194101/blocks.jsonl"
+    text_sha256: "sha256:a47cde60be09c5cf4d46ab13e54e852fd5c0a2ee8e9ca97f9f1d75152f8b39c5"
+    text_source: "raw_text"
+  -
+    block_id: "p006_c0012"
+    evidence_id: "meeting_doc_201541#p006_c0012"
+    page_number: 6
+    source_id: "meeting_doc_201541"
+    source_path: "raw/sources/meeting_doc_201541/blocks.jsonl"
+    source_quote: "New York State Department of Transportation"
+    text_sha256: "sha256:076d44a1ed7deb06528a23629f9f8e4579e46fd7d87e4cab4098d7a4e711f286"
+    text_source: "raw_text"
+  -
+    block_id: "p249_c0008"
+    evidence_id: "meeting_doc_208021#p249_c0008"
+    page_number: 249
+    role: "entity_description"
+    source_id: "meeting_doc_208021"
+    source_path: "raw/sources/meeting_doc_208021/blocks.jsonl"
+    text_sha256: "sha256:8355defddfa541b3495c6c36e116e4a544e42dc455cf1476947bda11948e5688"
+    text_source: "raw_text"
+  -
+    block_id: "p020_c0005"
+    evidence_id: "meeting_doc_44276#p020_c0005"
+    page_number: 20
+    source_id: "meeting_doc_44276"
+    source_path: "raw/sources/meeting_doc_44276/blocks.jsonl"
+    source_quote: "New York State Department of Transportation (NYSDOT) worked collaboratively with NYMTC to establish performance targets."
+    text_sha256: "sha256:a7786550ac3b5c6d0cb905b7e093fd3712518391c3962885a3cca4058f68351c"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0002"
+    evidence_id: "meeting_doc_92016#p002_c0002"
+    page_number: 2
+    role: "mentioned"
+    source_id: "meeting_doc_92016"
+    source_path: "raw/sources/meeting_doc_92016/blocks.jsonl"
+    text_sha256: "sha256:6376de526a777e3e0e5dd675c567c2446cdfabd97c5e5ae9be7b2061faa90d1b"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0009"
+    evidence_id: "meeting_doc_91801#p001_c0009"
+    page_number: 1
+    role: "mention"
+    source_id: "meeting_doc_91801"
+    source_path: "raw/sources/meeting_doc_91801/blocks.jsonl"
+    text_sha256: "sha256:4f413421b3d54d38e52ebea6bbd261a4c8edb3373de3a54bb19b48e0e72d4a97"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0013"
+    evidence_id: "meeting_doc_95286#p002_c0013"
+    page_number: 2
+    source_id: "meeting_doc_95286"
+    source_path: "raw/sources/meeting_doc_95286/blocks.jsonl"
+    source_quote: "New York State Department of Transportation (\"NYSDOT\")"
+    text_sha256: "sha256:75fa1283258108be48866a7ede8e249f20958cf3c0d955741a4658a5fb18013c"
+    text_source: "raw_text"
+---
+
+<!-- mta-wiki:writer:start -->
+
+<!-- mta-wiki:writer:end -->

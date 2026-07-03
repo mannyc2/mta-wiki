@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "review_state": "accepted",
+  "accepted_at": "2026-06-10T21:42:17.724582Z",
+  "reviewer": "claude-w2-canon-validation-2026-06-10",
+  "source": "llm_suggestion_scored_against_w2-dedup-expected",
+  "cluster_id": "project_cluster_002-w2-2026-06-10",
+  "kind": "project",
+  "packet_path": "data/identity-review/packets/project_cluster_002.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/project_cluster_002.json",
+  "source_review_run_id": "2026-06-10T21-39-01-072Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Pro",
+  "action_summary": {
+    "merge_group_count": 1,
+    "do_not_merge_count": 0,
+    "weak_alias_count": 1,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [
+    [
+      "project_nostrand-rogers-sbs",
+      "project_nostrand-rogers-sbs-cac-2010",
+      "project_nostrand-rogers-sbs-cb3",
+      "project_nostrand-rogers-sbs-cb9-2010"
+    ]
+  ],
+  "do_not_merge": [],
+  "weak_aliases": [
+    {
+      "record_id": "project_nostrand-rogers-sbs",
+      "aliases": [
+        "project_nostrand-and-rogers-sbs",
+        "project_nostrand-ave-rogers-ave-sbs",
+        "Nostrand & Rogers Select Bus Service"
+      ],
+      "reason": "Source-local naming variants; useful for search, not merge authority."
+    }
+  ],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "Same-object test (test 2): all four records share identical strong identity fields \u2014 project_name (Nostrand Ave/Rogers Ave SBS), project_type (Select Bus Service), corridor scope (9.3 miles from Williamsburg Bridge to Sheepshead Bay), and route served (B44 Limited\u2192SBS). The three suffixed records (cac-2010, cb3, cb9-2010) are lifecycle records of the same durable project, each capturing a document-time moment (CAC meeting slides, CB3 presentation, CB9 presentation). Per project per-kind rule: 'Records of the same project produced by different documents (community-board presentations, CAC meetings, dated copies) DO merge into the base project record.' No contradicting strong identity fields across any pair. The validator_duplicate_identity on shared key project_nostrand-ave-rogers-ave-sbs confirms structural identity."
+}

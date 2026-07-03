@@ -1,0 +1,21 @@
+{
+  "release_id": "v1-rc5",
+  "status": "importer_passed_anchor_aware",
+  "bus_repo": "/mnt/models/dev/bus-reliability-tracker",
+  "bus_revision": "8c5bdff00398b0e6c372fd4887ded55d5f052be9",
+  "run_mode": "temporary origin/main archive after PR #45 merge; generated routes.json copied read-only from the local bus artifact; mta-wiki release pinned with --wiki-release v1-rc5",
+  "command": "bun --filter @bp/pipeline-v2 cli -- studio import-mta-wiki-route-evidence --mta-wiki-root /mnt/models/dev/mta-wiki --wiki-release v1-rc5 --routes-path /tmp/bus-main-v1rc5-parity-vwFd8O/bus-origin-main/data/artifacts/studio/v1/routes.json --output /tmp/bus-main-v1rc5-parity-vwFd8O/route-evidence.json --serving-output-dir /tmp/bus-main-v1rc5-parity-vwFd8O/serving --json",
+  "reason": "The anchor-aware bus importer on origin/main exits 0 against the pinned v1-rc5 release, consumes route_anchors.jsonl, and reports zero ambiguous omissions. M14A+ and M14D+ are honest no_wiki_coverage anchor rows in this release, so 10 of the 12 served Bus routes have matched wiki route records.",
+  "routeCount": 12,
+  "matchedBusRouteCount": 10,
+  "unmatchedWikiRouteCount": 308,
+  "citationCount": 1792,
+  "omittedAmbiguousRecordCount": 0,
+  "release_anchor_proxy": {
+    "gtfsRouteCount": 396,
+    "canonicalAnchorCount": 213,
+    "noWikiCoverageCount": 183,
+    "ambiguousDispositionCount": 0,
+    "nullCanonicalWithCoverageCount": 0
+  }
+}

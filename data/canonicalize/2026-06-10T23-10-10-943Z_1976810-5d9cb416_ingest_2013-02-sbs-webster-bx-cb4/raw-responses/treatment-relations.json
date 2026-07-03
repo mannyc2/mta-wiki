@@ -1,0 +1,429 @@
+{
+  "run_id": "2026-06-10T23-10-10-943Z_1976810-5d9cb416_ingest_2013-02-sbs-webster-bx-cb4",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T03:26:42.425Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "rel-offset-bus-lanes-webster",
+        "local_observation_id": "treatment_offset_bus_lanes_webster_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_offset-bus-lanes-webster-2013",
+            "description": "Offset bus lanes on Webster Avenue for Bx41 SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb4",
+                "block_id": "p011_c0002",
+                "source_quote": "■ Bx41 LTD → Bx41 SBS ■ 4 miles of offset bus lanes with bus bulb stations"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "treatment_offset-bus-lanes-webster-2013",
+            "description": "Offset bus lanes on Webster Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb4",
+                "block_id": "p024_c0003",
+                "source_quote": "Replace one general travel lane with a bus lane in each direction"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p011_c0002 explicitly lists offset bus lanes as part of Bx41 SBS on Webster Avenue; p024_c0003 is under 'Webster Ave SBS traffic changes' heading and describes replacing travel lanes with bus lanes on Webster Avenue.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p011_c0002",
+            "source_quote": "■ Bx41 LTD → Bx41 SBS ■ 4 miles of offset bus lanes with bus bulb stations"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p024_c0003",
+            "source_quote": "Replace one general travel lane with a bus lane in each direction"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-off-board-fare-webster",
+        "local_observation_id": "treatment_off_board_fare_webster_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_off-board-fare-webster-2013",
+            "description": "Off-board fare collection for Bx41 SBS on Webster Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb4",
+                "block_id": "p011_c0002",
+                "source_quote": "■ Bx41 LTD → Bx41 SBS … – Off-board fare collection"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "treatment_off-board-fare-webster-2013",
+            "description": "Off-board fare collection on Webster Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb4",
+                "block_id": "p036_c0002",
+                "source_quote": "■ Off board fare collection (like the Bx12 SBS on Fordham Road)"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0002 lists off-board fare collection as part of Bx41 SBS on Webster Avenue; p036_c0002 under 'Webster Avenue' heading describes off board fare collection for the Bx41 SBS.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p011_c0002",
+            "source_quote": "■ Bx41 LTD → Bx41 SBS … – Off-board fare collection"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p036_c0002",
+            "source_quote": "■ Off board fare collection (like the Bx12 SBS on Fordham Road)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-tsp-webster",
+        "local_observation_id": "treatment_transit_signal_priority_webster_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_transit-signal-priority-webster-2013_2",
+            "description": "Transit signal priority for Bx41 SBS on Webster Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb4",
+                "block_id": "p011_c0002",
+                "source_quote": "■ Bx41 LTD → Bx41 SBS … – Transit signal priority"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "treatment_transit-signal-priority-webster-2013_2",
+            "description": "Transit signal priority on Webster Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb4",
+                "block_id": "p016_c0002",
+                "source_quote": "Transit Signal Priority"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0002 lists transit signal priority under Bx41 SBS on Webster Avenue; p016_c0002 shows TSP callout on a Webster Avenue intersection image labeled 'Webster Avenue / E 167th Street'.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p011_c0002",
+            "source_quote": "■ Bx41 LTD → Bx41 SBS … – Transit signal priority"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p016_c0002",
+            "source_quote": "Transit Signal Priority"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-bulbs-webster",
+        "local_observation_id": "treatment_bus_bulbs_webster_2014_2015",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_bus-bulbs-webster-2014-2015",
+            "description": "Bus bulbs at SBS stations on Webster Avenue planned for 2014-2015",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb4",
+                "block_id": "p039_c0012",
+                "source_quote": "2014-2015: Bus bulbs and other capital construction"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "treatment_bus-bulbs-webster-2014-2015",
+            "description": "Bus bulbs on Webster Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb4",
+                "block_id": "p027_c0002",
+                "source_quote": "2014-2015 - Bus bulbs - Additional capital construction items"
+              }
+            ]
+          }
+        ],
+        "rationale": "p039_c0012 under 'Project timeline' lists bus bulbs as part of the Webster Avenue project; p027_c0002 under 'SBS in CB4' lists bus bulbs under 2014-2015 implementation for Webster Avenue.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p039_c0012",
+            "source_quote": "2014-2015: Bus bulbs and other capital construction"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p027_c0002",
+            "source_quote": "2014-2015 - Bus bulbs - Additional capital construction items"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-ped-safety-webster",
+        "local_observation_id": "treatment_pedestrian_safety_webster_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_pedestrian-safety-webster-2013_3",
+            "description": "Pedestrian safety improvements on Webster Avenue for Bx41 SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb4",
+                "block_id": "p011_c0002",
+                "source_quote": "■ Bx41 LTD → Bx41 SBS … – Pedestrian safety improvements"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "treatment_pedestrian-safety-webster-2013_3",
+            "description": "Pedestrian safety improvements on Webster Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb4",
+                "block_id": "p018_c0003",
+                "source_quote": "Curb extensions and medians improve pedestrian safety"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0002 lists pedestrian safety improvements under Bx41 SBS; p018_c0003 ('Benefits of proposed design') explicitly states curb extensions and medians improve pedestrian safety on Webster Avenue; p021 confirms neckdowns and refuge islands as pedestrian safety elements.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p011_c0002",
+            "source_quote": "■ Bx41 LTD → Bx41 SBS … – Pedestrian safety improvements"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p018_c0003",
+            "source_quote": "Curb extensions and medians improve pedestrian safety"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p021_c0003",
+            "source_quote": "Neckdown / curb extension"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p021_c0005",
+            "source_quote": "Pedestrian refuge / Median"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-queue-jump-cbe",
+        "local_observation_id": "treatment_queue_jump_cbe_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_queue-jump-cbe-2013",
+            "description": "SB Bus-Only Queue Jump at Cross Bronx Expressway for Bx41 SBS on Webster Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb4",
+                "block_id": "p031_c0002",
+                "source_quote": "SB Bus-Only Queue Jump allows buses to get ahead of traffic where there is no bus lane"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "treatment_queue-jump-cbe-2013",
+            "description": "SB Bus-Only Queue Jump at Cross Bronx Expressway on Webster Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb4",
+                "block_id": "p031_c0002",
+                "source_quote": "Cross Bronx Expy - 2013 … SB Bus-Only Queue Jump allows buses to get ahead of traffic where there is no bus lane"
+              }
+            ]
+          }
+        ],
+        "rationale": "p031_c0002 is under 'Cross Bronx Expy - 2013' heading showing aerial map of Webster Avenue / CBE intersection with SB Bus-Only Queue Jump callout, explicitly part of the Webster Ave SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p031_c0002",
+            "source_quote": "Cross Bronx Expy - 2013 … SB Bus-Only Queue Jump allows buses to get ahead of traffic where there is no bus lane"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-dual-right-turn-cbe",
+        "local_observation_id": "treatment_dual_right_turn_lanes_cbe_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_dual-right-turn-lanes-cbe-2013",
+            "description": "Dual right-turning lanes at Cross Bronx Expressway for Bx41 SBS on Webster Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb4",
+                "block_id": "p031_c0002",
+                "source_quote": "Dual right-turning lanes better accommodate the high vehicle volumes accessing the CBE"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "treatment_dual-right-turn-lanes-cbe-2013",
+            "description": "Dual right-turning lanes at Cross Bronx Expressway on Webster Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb4",
+                "block_id": "p031_c0002",
+                "source_quote": "Cross Bronx Expy - 2013 … Dual right-turning lanes better accommodate the high vehicle volumes accessing the CBE"
+              }
+            ]
+          }
+        ],
+        "rationale": "p031_c0002 shows the CBE intersection map with 'Dual right-turning lanes' callout, part of the Webster Ave SBS presentation; p032_c0005 reiterates under 'Cross Bronx Expy - 2014/15'.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p031_c0002",
+            "source_quote": "Dual right-turning lanes better accommodate the high vehicle volumes accessing the CBE"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p032_c0005",
+            "source_quote": "Dual right-turning lanes better accommodate the high vehicle volumes accessing the CBE"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-ban-left-turns-cbe",
+        "local_observation_id": "treatment_ban_left_turns_cbe_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_ban-left-turns-cbe-2013",
+            "description": "Ban left-turns at Cross Bronx Expressway on-ramp for Bx41 SBS on Webster Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb4",
+                "block_id": "p032_c0004",
+                "source_quote": "Banning left-turns at the CBE on-ramp simplifies operations at this very congested intersection. NB vehicles are rerouted to Ittner Pl."
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "treatment_ban-left-turns-cbe-2013",
+            "description": "Ban left-turns at Cross Bronx Expressway on-ramp on Webster Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb4",
+                "block_id": "p032_c0004",
+                "source_quote": "Banning left-turns at the CBE on-ramp simplifies operations at this very congested intersection. NB vehicles are rerouted to Ittner Pl."
+              }
+            ]
+          }
+        ],
+        "rationale": "p032_c0004 under 'Cross Bronx Expy - 2014/15' explicitly describes banning left-turns at the CBE on-ramp, part of the Webster Avenue SBS project improvements at the CBE intersection.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p032_c0004",
+            "source_quote": "Banning left-turns at the CBE on-ramp simplifies operations at this very congested intersection. NB vehicles are rerouted to Ittner Pl."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-ittner-place-one-way",
+        "local_observation_id": "treatment_ittner_place_one_way_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_ittner-place-one-way-2013",
+            "description": "Convert Ittner Place to one-way as part of Webster Avenue Bx41 SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb4",
+                "block_id": "p031_c0002",
+                "source_quote": "Convert Ittner Place to one-way to improve access onto the CBE"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "treatment_ittner-place-one-way-2013",
+            "description": "Convert Ittner Place to one-way on Webster Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb4",
+                "block_id": "p031_c0002",
+                "source_quote": "Cross Bronx Expy - 2013 … Convert Ittner Place to one-way to improve access onto the CBE"
+              }
+            ]
+          }
+        ],
+        "rationale": "p031_c0002 shows the CBE intersection map with 'Convert Ittner Place to one-way' callout, and p032_c0012 repeats it; both are within the Webster Avenue SBS presentation, making Ittner Place a supporting treatment of the Webster Ave/Bx41 SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p031_c0002",
+            "source_quote": "Convert Ittner Place to one-way to improve access onto the CBE"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p032_c0012",
+            "source_quote": "Convert Ittner Place to one-way to improve access onto the CBE"
+          }
+        ]
+      }
+    ],
+    "packet_id": "treatment-relations"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-23-58-658Z_2111393-bf27fb63_canonicalize_2026-06-10t23-10-10-943z-1976810-5d9cb416-ingest-2013-02-sbs-webster-bx-cb4-treatment-relations"
+}

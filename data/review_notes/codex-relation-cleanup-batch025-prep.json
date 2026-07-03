@@ -1,0 +1,431 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-22-endpoint-shape-batch025-prep",
+  "created_at": "2026-06-22T21:45:00Z",
+  "author": "codex",
+  "scope": "relation endpoint-shape cleanup prep only; no durable retire/apply writes",
+  "batch": "batch025",
+  "run_id_for_replacements": "2026-06-22_codex_relation_cleanup_batch025",
+  "submitted_at_for_dry_run": "2026-06-22T21:45:00Z",
+  "bucket": {
+    "name": "claim records linked directly to timeline events",
+    "original_relation_kind": "has_timeline_event",
+    "original_endpoint_shape": "claim -> event",
+    "replacement_relation_kind": "supports",
+    "replacement_endpoint_shape": "event -> claim",
+    "why_coherent": "All five originals use has_timeline_event with a claim subject. Current endpoint rules allow has_timeline_event from project, route, corridor, entity, source, or event subjects, not from claims. Prior relation020 used the same repair pattern for this malformed shape: reverse the direction and use supports event -> claim so the event provides source-backed timeline context for the claim without widening the validator."
+  },
+  "checkpoint_context": {
+    "method": "Read-only inventory over canonical records with relationEndpointShapeIssue(); excluded relation cleanup batches017 and 019-024 plus retired submissions; did not run CLI validate, materialize, export-jsonl, DB repair, or provider-backed commands.",
+    "remaining_endpoint_shape_inventory_after_exclusions": {
+      "total": 69,
+      "selected_bucket": "has_timeline_event claim->event",
+      "selected_bucket_count": 5,
+      "other_top_buckets": [
+        {
+          "bucket": "operated_by entity->entity",
+          "count": 4
+        },
+        {
+          "bucket": "published_by claim->entity",
+          "count": 4
+        },
+        {
+          "bucket": "implemented_by entity->entity",
+          "count": 4
+        },
+        {
+          "bucket": "has_timeline_event metric_claim->event",
+          "count": 4
+        },
+        {
+          "bucket": "serves_route project->project",
+          "count": 3
+        }
+      ]
+    }
+  },
+  "exclusions_and_guards": {
+    "excluded_batches": [
+      "batch017",
+      "batch019",
+      "batch020",
+      "batch021",
+      "batch022",
+      "batch023",
+      "batch024"
+    ],
+    "retired_json_not_edited": true,
+    "submission_journals_not_edited": true,
+    "generated_outputs_not_edited": true,
+    "log_not_edited": true,
+    "manifest_merges_retired_not_edited": true,
+    "wiki_source_pages_not_edited": true,
+    "original_submission_guard": {
+      "retired_hits": [],
+      "prior_relation_batch_hits": []
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": []
+    }
+  },
+  "relationEndpointIssues_dry_run_acceptance": {
+    "tooling": "createSubmissionEntry plus relationEndpointIssues using accepted local observation ids by source; relationEndpointShapeIssue checked against replacement endpoint kinds",
+    "summary": {
+      "prepared_count": 5,
+      "accepted_count": 5,
+      "issue_count": 0,
+      "warning_count": 0,
+      "endpoint_shape_issue_count": 0
+    }
+  },
+  "prepared": [
+    {
+      "retire": {
+        "submission_id": "sub_ff3c3606743df3de",
+        "original_record_id": "relation_meeting-doc-135731-congestion-pricing-theme",
+        "original_local_observation_id": "relation_meeting_doc_135731_congestion_pricing_theme",
+        "malformed_shape": "has_timeline_event claim -> event",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_kind": "claim",
+        "original_subject_id": "claim_meeting-doc-135731-strengthen-expand-network",
+        "original_subject_local_observation_id": "claim_meeting_doc_135731_strengthen_expand_network",
+        "original_object_kind": "event",
+        "original_object_id": "event_meeting-doc-135731-congestion-pricing-vote",
+        "original_object_local_observation_id": "event_meeting_doc_135731_congestion_pricing_vote",
+        "reason": "The original has_timeline_event relation uses a claim subject, which is outside the current allowed subject kinds. The evidence links the Strengthen & Expand the Network theme to a board vote on congestion pricing tolling structure."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_a67187e745682f12",
+        "proposed_relation_kind": "supports",
+        "proposed_endpoint_shape": "event -> claim",
+        "input": {
+          "source_id": "meeting_doc_135731",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch025_congestion_pricing_vote_supports_strengthen_network_claim",
+          "label": "Board vote supports Strengthen & Expand Network claim",
+          "raw_text": "Strengthen & Expand the Network; Board to Vote on Tolling Structure for Congestion Pricing",
+          "payload": {
+            "relation_kind": "supports",
+            "subject_local_observation_id": "event_meeting_doc_135731_congestion_pricing_vote",
+            "object_local_observation_id": "claim_meeting_doc_135731_strengthen_expand_network",
+            "description": "Replacement for malformed has_timeline_event claim -> event relation; the board-vote event provides timeline context for the Strengthen & Expand the Network claim."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_135731",
+              "evidence_id": "meeting_doc_135731#p002_c0002",
+              "source_path": "raw/sources/meeting_doc_135731/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0002",
+              "text_sha256": "sha256:3876c94dde5eb100dbeb15c90648caee07d46b36da23b091788095d5da1eebbc",
+              "text_source": "raw_text",
+              "source_quote": "Strengthen & Expand the Network"
+            },
+            {
+              "source_id": "meeting_doc_135731",
+              "evidence_id": "meeting_doc_135731#p002_c0004",
+              "source_path": "raw/sources/meeting_doc_135731/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0004",
+              "text_sha256": "sha256:14742334bf3c7a5633d5abcbd5bd4623d2e7343cd4aea77a670b2efd2d4f1977",
+              "text_source": "raw_text",
+              "source_quote": "Board to Vote on Tolling Structure for Congestion Pricing"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_b2b4ab00d355b629",
+        "original_record_id": "relation_meeting-doc-160441-express-spring2025",
+        "original_local_observation_id": "relation_meeting_doc_160441_express_spring2025",
+        "malformed_shape": "has_timeline_event claim -> event",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_kind": "claim",
+        "original_subject_id": "claim_meeting-doc-160441-recommendation",
+        "original_subject_local_observation_id": "claim_meeting_doc_160441_recommendation",
+        "original_object_kind": "event",
+        "original_object_id": "event_meeting-doc-160441-express-spring-2025",
+        "original_object_local_observation_id": "event_meeting_doc_160441_express_spring_2025",
+        "reason": "The original has_timeline_event relation uses a claim subject, which is outside the current allowed subject kinds. The evidence ties the service enhancement recommendation to Spring 2025 implementation for express bus routes."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_3ff919da2c39809d",
+        "proposed_relation_kind": "supports",
+        "proposed_endpoint_shape": "event -> claim",
+        "input": {
+          "source_id": "meeting_doc_160441",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch025_express_spring2025_supports_service_enhancement_recommendation",
+          "label": "Express Spring 2025 implementation supports service enhancement recommendation",
+          "raw_text": "Provide frequency increases and/or running time adjustments on eight express bus routes and 16 local bus routes/route combinations; Express bus routes: Spring 2025",
+          "payload": {
+            "relation_kind": "supports",
+            "subject_local_observation_id": "event_meeting_doc_160441_express_spring_2025",
+            "object_local_observation_id": "claim_meeting_doc_160441_recommendation",
+            "description": "Replacement for malformed has_timeline_event claim -> event relation; the Spring 2025 express-bus implementation event provides timeline context for the service enhancement recommendation."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_160441",
+              "evidence_id": "meeting_doc_160441#p001_c0007",
+              "source_path": "raw/sources/meeting_doc_160441/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0007",
+              "text_sha256": "sha256:40acfcafc415e14cee2debc1ef57b16bbacd39b8cd13aa03ff0f35bec9fc81ea",
+              "text_source": "raw_text",
+              "source_quote": "Provide frequency increases and/or running time adjustments on eight express bus routes and 16 local bus routes/route combinations."
+            },
+            {
+              "source_id": "meeting_doc_160441",
+              "evidence_id": "meeting_doc_160441#p001_c0012",
+              "source_path": "raw/sources/meeting_doc_160441/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0012",
+              "text_sha256": "sha256:01e72dd6a057bc1690b0d360ab8a6a68668a346a33dd6fe6de718ebd46e09995",
+              "text_source": "raw_text",
+              "source_quote": "Express bus routes: Spring 2025"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_f66641833f5cbc0b",
+        "original_record_id": "relation_meeting-doc-160441-local-summer2025",
+        "original_local_observation_id": "relation_meeting_doc_160441_local_summer2025",
+        "malformed_shape": "has_timeline_event claim -> event",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_kind": "claim",
+        "original_subject_id": "claim_meeting-doc-160441-recommendation",
+        "original_subject_local_observation_id": "claim_meeting_doc_160441_recommendation",
+        "original_object_kind": "event",
+        "original_object_id": "event_meeting-doc-160441-local-summer-2025",
+        "original_object_local_observation_id": "event_meeting_doc_160441_local_summer_2025",
+        "reason": "The original has_timeline_event relation uses a claim subject, which is outside the current allowed subject kinds. The evidence ties the same service enhancement recommendation to Summer 2025 implementation for local bus routes."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_8d92a0a351f3f1b2",
+        "proposed_relation_kind": "supports",
+        "proposed_endpoint_shape": "event -> claim",
+        "input": {
+          "source_id": "meeting_doc_160441",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch025_local_summer2025_supports_service_enhancement_recommendation",
+          "label": "Local Summer 2025 implementation supports service enhancement recommendation",
+          "raw_text": "Provide frequency increases and/or running time adjustments on eight express bus routes and 16 local bus routes/route combinations; Local bus routes: Summer 2025",
+          "payload": {
+            "relation_kind": "supports",
+            "subject_local_observation_id": "event_meeting_doc_160441_local_summer_2025",
+            "object_local_observation_id": "claim_meeting_doc_160441_recommendation",
+            "description": "Replacement for malformed has_timeline_event claim -> event relation; the Summer 2025 local-bus implementation event provides timeline context for the service enhancement recommendation."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_160441",
+              "evidence_id": "meeting_doc_160441#p001_c0007",
+              "source_path": "raw/sources/meeting_doc_160441/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0007",
+              "text_sha256": "sha256:40acfcafc415e14cee2debc1ef57b16bbacd39b8cd13aa03ff0f35bec9fc81ea",
+              "text_source": "raw_text",
+              "source_quote": "Provide frequency increases and/or running time adjustments on eight express bus routes and 16 local bus routes/route combinations."
+            },
+            {
+              "source_id": "meeting_doc_160441",
+              "evidence_id": "meeting_doc_160441#p001_c0013",
+              "source_path": "raw/sources/meeting_doc_160441/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0013",
+              "text_sha256": "sha256:dcc639baef5c6739ece99ea21cf887ab1e3dbf69b8dd91bd2ae01264865719bc",
+              "text_source": "raw_text",
+              "source_quote": "Local bus routes: Summer 2025"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_7203db313e9c6538",
+        "original_record_id": "relation_meeting-doc-196866-implementation-event",
+        "original_local_observation_id": "relation_meeting_doc_196866_implementation_event",
+        "malformed_shape": "has_timeline_event claim -> event",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_kind": "claim",
+        "original_subject_id": "claim_meeting-doc-196866-cost-neutral",
+        "original_subject_local_observation_id": "claim_meeting_doc_196866_cost_neutral",
+        "original_object_kind": "event",
+        "original_object_id": "event_meeting-doc-196866-implementation-may2026",
+        "original_object_local_observation_id": "event_meeting_doc_196866_implementation_may2026",
+        "reason": "The original has_timeline_event relation uses a claim subject, which is outside the current allowed subject kinds. The evidence ties the cost-neutral proposed-adjustments claim to May 2026 implementation timing."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_1dec2039987d3796",
+        "proposed_relation_kind": "supports",
+        "proposed_endpoint_shape": "event -> claim",
+        "input": {
+          "source_id": "meeting_doc_196866",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch025_may2026_implementation_supports_cost_neutral_claim",
+          "label": "May 2026 implementation supports cost-neutral claim",
+          "raw_text": "The proposed adjustments are expected to be cost neutral; These proposed minor subway schedule changes would be implemented in May 2026.",
+          "payload": {
+            "relation_kind": "supports",
+            "subject_local_observation_id": "event_meeting_doc_196866_implementation_may2026",
+            "object_local_observation_id": "claim_meeting_doc_196866_cost_neutral",
+            "description": "Replacement for malformed has_timeline_event claim -> event relation; the May 2026 implementation event provides timeline context for the cost-neutral proposed-adjustments claim."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_196866",
+              "evidence_id": "meeting_doc_196866#p001_c0009",
+              "source_path": "raw/sources/meeting_doc_196866/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0009",
+              "text_sha256": "sha256:a411ac401a72ec05b0cf4834e5966cacc25f3cefb041f322a394f398732274fc",
+              "text_source": "raw_text",
+              "source_quote": "The proposed adjustments are expected to be cost neutral."
+            },
+            {
+              "source_id": "meeting_doc_196866",
+              "evidence_id": "meeting_doc_196866#p001_c0011",
+              "source_path": "raw/sources/meeting_doc_196866/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0011",
+              "text_sha256": "sha256:8f525337bee1c325b43b3d53c489307d7abad68f35c9d68549827175603a0f3d",
+              "text_source": "raw_text",
+              "source_quote": "These proposed minor subway schedule changes would be implemented in May 2026."
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_c326c53312321b3d",
+        "original_record_id": "relation_meeting-doc-199141-railroad-highlights-nov2026",
+        "original_local_observation_id": "relation_meeting_doc_199141_railroad_highlights_nov2026",
+        "malformed_shape": "has_timeline_event claim -> event",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_kind": "claim",
+        "original_subject_id": "claim_meeting-doc-199141-ntsb-recommendations",
+        "original_subject_local_observation_id": "claim_meeting_doc_199141_ntsb_recommendations",
+        "original_object_kind": "event",
+        "original_object_id": "event_meeting-doc-199141-nov2026-safety-committee",
+        "original_object_local_observation_id": "event_meeting_doc_199141_nov2026_safety_committee",
+        "reason": "The original has_timeline_event relation uses a claim subject, which is outside the current allowed subject kinds. The evidence places the NTSB Recommendations Update within the November 2026 Safety/Security Committee meeting context."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_5375d06c2072b0b7",
+        "proposed_relation_kind": "supports",
+        "proposed_endpoint_shape": "event -> claim",
+        "input": {
+          "source_id": "meeting_doc_199141",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch025_nov2026_committee_supports_ntsb_recommendations_update",
+          "label": "November 2026 committee event supports NTSB recommendations update claim",
+          "raw_text": "November 2026; NTSB Recommendations Update; The committee will receive an update on the status of Recommendations issued to the MTA by the NTSB.",
+          "payload": {
+            "relation_kind": "supports",
+            "subject_local_observation_id": "event_meeting_doc_199141_nov2026_safety_committee",
+            "object_local_observation_id": "claim_meeting_doc_199141_ntsb_recommendations",
+            "description": "Replacement for malformed has_timeline_event claim -> event relation; the November 2026 committee event provides timeline context for the NTSB recommendations update claim."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_199141",
+              "evidence_id": "meeting_doc_199141#p002_c0020",
+              "source_path": "raw/sources/meeting_doc_199141/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0020",
+              "text_sha256": "sha256:5061e77e507d12a27c632e8e897c3afb5fdbb52ed7cb65e1678ef297c5361e70",
+              "text_source": "raw_text",
+              "source_quote": "November 2026"
+            },
+            {
+              "source_id": "meeting_doc_199141",
+              "evidence_id": "meeting_doc_199141#p002_c0025",
+              "source_path": "raw/sources/meeting_doc_199141/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0025",
+              "text_sha256": "sha256:e1b1cfc0f36ec7afece1a4f0a031fe593401776e26498d93c3edc2539e30927d",
+              "text_source": "raw_text",
+              "source_quote": "NTSB Recommendations Update"
+            },
+            {
+              "source_id": "meeting_doc_199141",
+              "evidence_id": "meeting_doc_199141#p002_c0026",
+              "source_path": "raw/sources/meeting_doc_199141/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0026",
+              "text_sha256": "sha256:dd2d0fc3738f0b93d710fc31b26e66c1159722e2f82051ba6dcfc0da0295f570",
+              "text_source": "raw_text",
+              "source_quote": "The committee will receive an update on the status of Recommendations issued to the MTA by the NTSB."
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "bucket": "has_timeline_event metric_claim -> event",
+      "count": 4,
+      "reason": "This may use a similar supports event -> metric_claim repair, but metric/event semantics should be reviewed separately rather than mixed into the claim cleanup batch."
+    },
+    {
+      "bucket": "operated_by entity -> entity",
+      "count": 4,
+      "reason": "Likely data cleanup, but the best replacement kind differs by example: some rows look like agency hierarchy, others like loose program/operations context."
+    },
+    {
+      "bucket": "published_by claim -> entity",
+      "count": 4,
+      "reason": "Likely data cleanup, but claim-publication semantics need source-by-source review to avoid replacing article attribution with a weak generic relation."
+    }
+  ]
+}

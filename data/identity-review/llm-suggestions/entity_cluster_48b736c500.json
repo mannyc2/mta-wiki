@@ -1,0 +1,45 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:34:36.799Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_48b736c500.md",
+  "cluster_id": "entity_cluster_48b736c500",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_48b736c500",
+    "kind": "entity",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "entity_meeting-doc-twu",
+          "entity_twu-local-100"
+        ],
+        "reason": "Contradiction test: entity_type differs (union vs labor union) and the records represent a parent organization (Transport Workers Union) and its subsidiary local (TWU Local 100). Per Identity Merge Canon: Authority vs subsidiary never merge. The shared identity keys are weak aliases and do not override the strong identity field contradiction."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "entity_twu-local-100",
+        "aliases": [
+          "entity_transport-workers-union",
+          "entity_transport-workers-union-twu"
+        ],
+        "reason": "These aliases refer to the parent union, not the local. They are useful for search but not merge authority."
+      }
+    ],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [
+      "Parent-subsidiary entities (e.g., international union vs local chapter) should never merge regardless of shared name components."
+    ],
+    "confidence": "high",
+    "rationale": "The two records denote distinct entities: the Transport Workers Union (a national/international union) and its local chapter TWU Local 100. Strong identity field entity_type differs, and the parent-subsidiary rule from the canon applies. The duplicate validator flags were triggered by misleading aliases on the local record, but the canonical identity fields confirm separation. No merge possible."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-34-23-924Z_1282984-083c54fb_identity-review-run_entity-cluster-48b736c500",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-34-23-924Z_2026-06-23T14-34-23-924Z_1282984-083c54fb_identity-review-run_entity-cluster-48b736c500.jsonl"
+}

@@ -1,0 +1,354 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_flatbush-ave-bus-priority-cb6-oct2025"
+record_kind: "source"
+display_name: "Flatbush Ave Bus Priority - CB6 Presentation"
+source_id: "flatbush_ave_bus_priority_cb6_oct2025"
+source_ids:
+  - "flatbush_ave_bus_priority_cb6_oct2025"
+local_observation_id: "source_flatbush_ave_bus_priority_cb6_oct2025"
+local_observation_ids:
+  - "source_flatbush_ave_bus_priority_cb6_oct2025"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T18:37:02.917Z"
+submission_ids:
+  - "sub_e429f9193370574c"
+payload:
+  authority_tier: "board_material"
+  content_type: "presentation"
+  date_text: "October 15, 2025"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2025-10-15"
+    precision: "day"
+    raw_text: "October 15, 2025"
+  description: "Community Board 6 Presentation about Flatbush Avenue Bus Priority"
+  published_date_normalized: "2025-10-15"
+  published_date_precision: "day"
+  publisher: "MTA, BETTERBUSES, NYC DOT"
+  title: "Flatbush Ave Bus Priority"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "flatbush_ave_bus_priority_cb6_oct2025#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "flatbush_ave_bus_priority_cb6_oct2025"
+    source_path: "raw/sources/flatbush_ave_bus_priority_cb6_oct2025/blocks.jsonl"
+    text_sha256: "sha256:ba341abe7fb1fd3b6a8ba54f018777f1502585ac09dfaea012db410a4d05da1d"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "flatbush_ave_bus_priority_cb6_oct2025#p001_c0002"
+    page_number: 1
+    role: "subtitle"
+    source_id: "flatbush_ave_bus_priority_cb6_oct2025"
+    source_path: "raw/sources/flatbush_ave_bus_priority_cb6_oct2025/blocks.jsonl"
+    text_sha256: "sha256:d33a5e4f3c3dbb345263245af255d485a0303790084362a657482d37fdfbbc89"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "flatbush_ave_bus_priority_cb6_oct2025#p001_c0003"
+    page_number: 1
+    role: "date"
+    source_id: "flatbush_ave_bus_priority_cb6_oct2025"
+    source_path: "raw/sources/flatbush_ave_bus_priority_cb6_oct2025/blocks.jsonl"
+    text_sha256: "sha256:41e4102a28aac155a3f7e9d840815952129fc780b3144320378240e4259c3f54"
+    text_source: "raw_text"
+---
+
+# Flatbush Avenue Bus Priority - presented to Brooklyn Community Board 6 in October 2025 (pdf)
+
+source_id: flatbush_ave_bus_priority_cb6_oct2025
+citation: cite block ids exactly as shown in square brackets
+document: 202 block(s)
+
+## Page 1
+
+### [p001_c0001] Flatbush Ave Bus Priority
+[p001_c0002] Community Board 6 Presentation
+[p001_c0003] October 15, 2025
+> [p001_c0004] An aerial photograph of a busy urban intersection on Flatbush Avenue. The image highlights a new bus priority system. Two lanes are painted a dark red color and marked with white text: "ONLY BUS" and "ONLY BUS ONLY". A large blue bus is seen driving through one of these lanes. To the left, a white ambulance with red and blue markings is parked. A police car is also visible. Pedestrians are walking on the sidewalks, and several bicycles are on the bike lanes. The intersection is surrounded by a mix of historic brick buildings and modern glass skyscrapers. A glass-enclosed bus stop is located on the corner. The sky is clear and blue.
+[p001_c0005] _The logo for the Metropolitan Transportation Authority (MTA), featuring the letters "MTA" in a bold, sans-serif font inside a dark circle._
+[p001_c0006] _The logo for "BETTERBUSES", with the word "BETTER" in blue and "BUSES" in green, both in a bold, sans-serif font._
+[p001_c0007] _The logo for the New York City Department of Transportation (NYC DOT), featuring the text "NEW YORK CITY" above a stylized "DOT" logo._
+
+## Page 2
+
+### [p002_c0001] Table of Contents
+- [p002_c0002] 1. Background 2. Detailed Proposal 3. Summary and Next Steps
+[p002_c0003] _2_
+[p002_c0004] _The MTA logo, consisting of the letters 'MTA' in white inside a black circle._
+[p002_c0005] _The BETTERBUSES logo, with 'BETTER' in blue and 'BUSES' in green, separated by a stylized blue and green graphic._
+[p002_c0006] _The NEW YORK CITY DOT logo, featuring the text 'NEW YORK CITY' above 'DOT' and a stylized graphic of a bus or train._
+
+## Page 3
+
+### [p003_c0001] Background
+[p003_c0002] 1
+[p003_c0003] _3_
+[p003_c0004] _The MTA logo, consisting of the letters 'MTA' in white inside a black circle._
+[p003_c0005] _The BETTERBUSES logo, with 'BETTER' in blue and 'BUSES' in green, separated by a stylized blue and green graphic._
+[p003_c0006] _The New York City Department of Transportation (NYC DOT) logo, featuring the text 'NEW YORK CITY' above 'DOT' and a stylized graphic of a bus and a train._
+
+## Page 4
+
+### [p004_c0001] Why Flatbush Avenue? Safety, Transit, Commerce
+- [p004_c0002] • Vision Zero Priority Corridor with 140 people killed or severely injured within the past 5 years • 132,000 daily riders use 12 bus routes, bus speeds crawl as slow as 4 mph • Pedestrians and transit power local economy • DOT's pedestrian intercept survey found that 92% of people get to Flatbush Avenue by walking or public transit • Current parking regulations do not support freight and bike delivery needs
+[p004_c0003] _4_
+
+## Page 5
+
+### [p005_c0001] Concept Proposal – Reimagined Flatbush Avenue
+[p005_c0002] New pedestrian spaces and shorter crossing distances to improve safety, comfort, and neighborhood connectivity
+[p005_c0003] Less space for traffic, more space for people and transit
+[p005_c0004] High-performing transit priority street connecting Brooklyn neighborhoods
+[p005_c0005] _5_
+[p005_c0006] _BETTERBUSES_
+
+## Page 6
+
+### [p006_c0001] Public Outreach to Date
+### [p006_c0002] Kick-Off Meetings
+- [p006_c0003] • Public Town Hall (June 2022) • Mayoral Bus Ride with Rider's Alliance (August 2022) • Presentations to elected officials, CBs, stakeholders (2022 – 2023) • Merchant Surveys on Flatbush, between Parkside Ave and Avenue D (November 2022) • Community Advisory Board Meeting 1 (November 2022)
+### [p006_c0004] Present Design Options for Northern Section
+- [p006_c0005] • Community Advisory Board Meeting 2 (June 2024) • CBs 2, 6, 8 (June 2024) • Meetings with North Flatbush BID, Downtown Brooklyn Partnership (2024 – 2025) • Merchant Surveys, Pedestrian Intercept Surveys (July 2024) • Brooklyn Open Streets Surveys (August 2024) • Citywide Bus Boarding Island Survey (2024-2025)
+### [p006_c0006] Present Center-Running Bus Lane Proposal for Northern Section
+- [p006_c0007] • Meetings with local elected officials (2025) • Meetings with North Flatbush BID, Downtown Brooklyn Partnership (2025) • CBs 2, 6, 8 (June 2025)
+> [p006_c0008] Flatbush Ave Bus Rally
+[p006_c0009] _6_
+
+## Page 7
+
+### [p007_c0001] What We've Heard From You
+### [p007_c0002] Feedback we received
+### [p007_c0003] Next steps
+### [p007_c0004] Pedestrian Safety
+- [p007_c0005] • Add safety treatments: curb ext. & bus islands • Harden curb extensions to prevent truck incursions
+### [p007_c0006] Traffic Congestion
+- [p007_c0007] • Adjust our design to add traffic capacity where necessary (potentially northbound Flatbush Avenue between Atlantic and 4 th Avenues)
+### [p007_c0008] Parking & Local Business Access
+- [p007_c0009] • Provide solutions to turnover curb • Add roadway bike parking to support small business and reduce bike racks on sidewalk
+### [p007_c0010] Loading Needs
+- [p007_c0011] • Explore options for truck/neighborhood loading zones and short-term parking on Flatbush Avenue & side streets
+### [p007_c0012] Island Amenities
+- [p007_c0013] • Incorporate toolkit items such as benches, leaning bars, shelters, bollards, and potentially greenspace
+[p007_c0014] _7_
+
+## Page 8
+
+### [p008_c0001] Making It Work: Vehicle Volume Reduction on Comparable Corridors
+> [p008_c0002] A street-level photograph of 21st Street in Queens. A dedicated bus lane is marked with a red 'BUS' zone and white 'BUS' text on the pavement. A bus is visible in the lane, and several cars are in the adjacent general travel lanes. Buildings and trees line the street.
+### [p008_c0003] 21 st St, Queens
+- [p008_c0004] • 1,300 vehicles per hour with 2 general travel lanes per direction (pre-bus lane). Truck Route. • Access to Queensboro Bridge, Queens Midtown Tunnel • With bus lane, vehicle volumes dropped by up to 40%
+> [p008_c0005] A street-level photograph of Northern Boulevard in Queens. A dedicated bus lane is marked with a red 'BUS' zone and white 'BUS' text on the pavement. A bus is visible in the lane, and several cars are in the adjacent general travel lanes. Buildings and trees line the street.
+### [p008_c0006] Northern Blvd, Queens
+- [p008_c0007] • 1,200 vehicles per hour with 2 general travel lanes per direction (pre-bus lane). Truck Route. • Access to BQE, Grand Central Parkway, Whitestone Expressway, LaGuardia Airport • With bus lane, vehicle volumes dropped by up to 49%
+> [p008_c0008] A street-level photograph of Flatbush Avenue in Brooklyn. A dedicated bus lane is marked with a red 'BUS' zone and white 'BUS' text on the pavement. A bus is visible in the lane, and several cars are in the adjacent general travel lanes. Buildings and trees line the street.
+### [p008_c0009] Flatbush Ave, Brooklyn
+- [p008_c0010] • 1,200 vehicles per hour with 2 general travel lanes per direction (south of Atlantic Ave). Truck Route. • Access to Manhattan and Brooklyn Bridges, BQE • With proposed bus lanes, vehicle volumes expected to decline as well
+[p008_c0011] _8_
+[p008_c0012] _The logo for the Metropolitan Transportation Authority (MTA), featuring the letters 'MTA' in a stylized font inside a circle._
+[p008_c0013] _The logo for 'BETTERBUSES', with 'BETTER' in blue and 'BUSES' in green, separated by a stylized graphic._
+[p008_c0014] _The logo for the New York City Department of Transportation (NYC DOT), featuring the text 'NEW YORK CITY' above a stylized 'DOT' logo._
+
+## Page 9
+
+### [p009_c0001] Making It Work: Traffic Network Adjustments
+[p009_c0002] To improve traffic flow both on Flatbush Avenue and in the Downtown Brooklyn area, DOT is proposing to reverse the direction of Pacific St between Flatbush Ave and 4 th Ave to westbound.
+- [p009_c0003] • Allows for improved bus lane functioning with physical protection on Flatbush Avenue • Prevents left-turning vehicles from Pacific St from blocking traffic on Flatbush Ave • Provides an alternate route for deliveries from restaurant hubs on the corridor
+> [p009_c0004] A map of the intersection of Pacific St and Flatbush Ave in Brooklyn. A large red arrow points westbound along Pacific St, indicating the proposed direction change. The map shows the intersection area, including the Pacific Street Bears Community Garden to the north and Taqueria Cecilio Food Truck Mexican to the south. Flatbush Ave is shown to the east of Pacific St. The map also includes street numbers like 617, 611, 352, 588, 594, 592-596, and 608. A 'Created by Kids' logo is visible near the intersection.
+[p009_c0005] _9_
+
+## Page 10
+
+### [p010_c0001] Making It Work: Proposed Curb Management Plan
+- [p010_c0002] • While each block will vary based on local context, DOT is proposing the following curb regulations on Flatbush Avenue between Dean Street and Grand Army Plaza: • Weekdays • 7am-8am: No Standing • 8am-4pm (or later if needed): 2-Hour Metered Parking with Truck Loading at select locations • 4pm (or later if needed) -10pm 2-Hour Metered Parking • Saturdays • 7am-8am, No Standing • 8am-10pm 2-Hour Metered Parking • New metered parking and loading would be proposed for the side streets on Pacific St, Dean St, Bergen St, St Marks Av, Prospect Pl, and Park Pl • Although 41 net parking spaces would be removed as part of this project, this comprehensive parking management change to the corridor will improve access to support Flatbush businesses.
+[p010_c0003] _10_
+
+## Page 11
+
+### [p011_c0001] Bus Routing and Stop Consolidation
+- [p011_c0002] • DOT/MTA are evaluating bus routing, in conjunction with the Brooklyn Bus Network Redesign on Flatbush Ave to improve travel times for riders as well as minimize traffic congestion and bus delays. • DOT/MTA propose removing 6 of 12 existing curbside bus stops, consolidating them onto 6 boarding islands. • Bus boarding islands would be concentrated at subway stations : Atlantic Av/Barclays Center, Bergen St, and 7 th Av. • Consolidating bus stops increases speed and reliability for bus riders. • A 20% speed improvement from center-running bus lanes would mean ~2 minutes saved per passenger-trip, or 11,675 minutes saved of passenger time saved per day on the B41 (Local & Limited).
+> [p011_c0003] Fewer Stops = Faster Buses Improve Stop Spacing
+[p011_c0004] _11_
+
+## Page 12
+
+### [p012_c0001] Potential Reroutes – B63
+- [p012_c0002] • Alternate routing prevents left turning B63 from blocking B41 at Atlantic Ave. • NB B63 would turn left onto Bergen St, right onto 4 th Ave, then left onto Atlantic Ave. • SB B63 would turn right onto 4 th Ave, left onto Dean St, then right onto 5 th Ave. • NB B63 stop at 5 th Ave and Bergen St would be the only missed stop.
+> [p012_c0003] A map of the Brooklyn area showing the existing B63 route (solid blue line) and a proposed reroute (dashed black line). The existing route runs along Flatbush Ave, Atlantic Ave, and Bergen St. The proposed reroute follows a different path: from Flatbush Ave, it turns left onto Bergen St, then right onto 4th Ave, then left onto Atlantic Ave. The map includes labels for various landmarks such as Atlantic Terminal, Target, Atlantic Center, Stop & Shop, Marshalls, Barclays Center, Brooklyn Public Library, No Pork Halal Kitchen, Art World ESPO, St Marks Pl, Saint Marks Place Sales Gallery, Warren St. Market, Wasan, Inkaico, and Gahm. A legend in the top right corner identifies the solid blue line as 'B63 (Existing)' and the dashed black line as 'B63 (Proposed)'. A scale bar indicates 100 ft, and a north arrow is located in the bottom right corner. The map is credited to rembix, Mapbox, and OpenStreetMap.
+[p012_c0004] _12_
+[p012_c0005] _BETTERBUSES_
+
+## Page 13
+
+### [p013_c0001] Potential Terminal Swap – B45 & B63
+- [p013_c0002] • Swapping the B45 and B63 terminals prevents left turning B63 from blocking B41 on Flatbush Ave. • NB B63 would turn left onto Flatbush Ave from 5th Ave and continue along Flatbush Ave and Livingston St and terminate in Downtown Brooklyn. • WB B45 would cross Flatbush Ave and continue along Atlantic Ave and terminate at Brooklyn Bridge Park. • All existing stops would continue to be served.
+> [p013_c0003] The map illustrates the proposed terminal swap for B45 and B63 in Brooklyn. The existing routes are shown in solid lines: B45 (Existing) in purple and B63 (Existing) in green. The proposed routes are shown in dashed lines: B45 (Proposed) in purple and B63 (Proposed) in green. The map shows the intersection of Flatbush Ave and Atlantic Ave, with the proposed routes swapping their paths west of this intersection. A callout box states: 'Routings swap west of Flatbush Ave & Atlantic Ave'. The map includes street names such as Flatbush Ave, Atlantic Ave, Livingston St, and various parks and landmarks like the New York Transit Museum, Fort Greene, and Prospect Heights. A legend in the bottom left corner identifies the route types. A scale bar indicates 2000 ft, and a north arrow is located in the bottom right corner.
+[p013_c0004] _13_
+
+## Page 14
+
+### [p014_c0001] Potential Reroutes – B69
+- [p014_c0002] • Alternate routing prevents turning B69 from blocking B41 on Flatbush Ave. • NB B69 would turn right onto Park Pl, then left onto Vanderbilt Ave. • SB B69 would turn right onto Sterling Pl, then left onto 7 th Ave. • The B69 would no longer serve the Grand Army Plaza 2/3 station. SB customers would have a longer walk to 7 th Ave B/Q station.
+> [p014_c0003] A map of Flatbush, Brooklyn, showing the existing B69 route (solid blue line) and proposed reroutes (dashed black lines). The existing route runs north-south along Flatbush Ave, with stops at Flatbush Market, Kamii, and Grand Army Plaza. The proposed reroutes show two main alternatives: one for Northbound (NB) traffic turning right onto Park Pl and then left onto Vanderbilt Ave, and one for Southbound (SB) traffic turning right onto Sterling Pl and then left onto 7th Ave. The map also shows the Grand Army Plaza 2/3 station, which would no longer be served by B69. Various local businesses and landmarks are labeled, including Burrito Bar and Kitchen, Gertrude's, Bombay Kabab, Kamii, and Chery's Global Soul. A scale bar indicates 300 ft, and a north arrow is present in the bottom right corner.
+[p014_c0004] _14_
+
+## Page 15
+
+### [p015_c0001] Detailed Proposal
+[p015_c0002] 2
+[p015_c0003] _15_
+[p015_c0004] _The MTA logo, consisting of the letters 'MTA' in white inside a black circle._
+[p015_c0005] _The BETTERBUSES logo, with 'BETTER' in blue and 'BUSES' in green, separated by a stylized blue and green graphic._
+[p015_c0006] _The New York City Department of Transportation (NYC DOT) logo, featuring the text 'NEW YORK CITY' above 'DOT' and a stylized graphic of a bus and a train._
+
+## Page 16
+
+### [p016_c0001] Proposed Design
+### [p016_c0002] Flatbush Av. from Atlantic Av. to 5 th Av.
+> [p016_c0003] The diagram illustrates a proposed street design for Flatbush Av. between Atlantic Av. and 5th Av. Key features include: Atlantic Av.: The northern boundary of the section. Barclays Center: Located at the top of the diagram. Concrete bus boarding island: A new island for bus boarding located on the north side of Flatbush Av. New pedestrian space: A designated area for pedestrians on the west side of Flatbush Av. New Crosswalk: A new crosswalk at the intersection of Flatbush Av. and Pacific St. No Left Turn: A prohibition sign for left turns at the intersection of Flatbush Av. and Pacific St. Former curbside bus stop, Proposed No Standing Anytime regulation: A former bus stop on the east side of Flatbush Av. is being converted to a no-standing zone. Physical protection: A new physical barrier is being installed on the west side of Flatbush Av. Proposed No Standing Anytime regulation: A no-standing zone is being proposed on the west side of Flatbush Av. Maintains one general travel lane in each direction: The current lane configuration is maintained. Exploring conversion of Pacific St to Westbound Only: A proposal to convert Pacific St. to a one-way street for westbound traffic. Proposed Truck Loading Only: A new truck loading zone is being proposed at the intersection of Flatbush Av. and Pacific St. Flatbush Av.: The main street running horizontally through the center of the diagram. Pacific St.: The street running diagonally from the bottom left to the center. 5th Av.: The southern boundary of the section.
+[p016_c0004] _16_
+[p016_c0005] _BETTERBUSES_
+
+## Page 17
+
+### [p017_c0001] Proposed Design (continued)
+[p017_c0002] Flatbush Av. from 5 th Av. to Bergen St.
+> [p017_c0003] Flatbush Av. Dean St. 5 Av. Physical protection Proposed No Standing Anytime regulation New pedestrian space & bike parking Proposed No Standing Anytime regulation Former curbside bus stop New pedestrian space & bike parking Proposed Truck Loading Only and 2-Hour Metered Parking Proposed Truck Loading Only Proposed No Standing Anytime regulation Bus boarding island New mid-block pedestrian crossing
+[p017_c0004] _17_
+[p017_c0005] _BETTERBUSES_
+
+## Page 18
+
+### [p018_c0001] Proposed Design (continued)
+### [p018_c0002] Flatbush Av. from Bergen St. to St. Marks Av.
+> [p018_c0003] The diagram illustrates the proposed design for Flatbush Av. from Bergen St. to St. Marks Av. Key features include: Physical protection: Indicated by blue callouts pointing to specific areas along the street. Proposed No Standing Anytime regulation: Indicated by purple callouts pointing to bus stop areas. Former curbside bus stop: Indicated by purple callouts pointing to existing bus stop locations. Bus boarding island: A central island in the middle of Flatbush Av. with a callout pointing to it. New pedestrian space & bike parking: Indicated by blue callouts pointing to new designated areas. Former curbside bus stop, proposed Truck Loading Only and 2-Hour Metered Parking: Indicated by a purple callout pointing to a specific area on the right side of the street. Right turn ban for overlength vehicles: Indicated by a blue callout pointing to a right-turn lane. Proposed Truck Loading Only and 2-Hour Metered Parking: Indicated by a purple callout pointing to a specific area on the left side of the street. Proposed Truck Loading Only: Indicated by a purple callout pointing to a specific area on the right side of the street. New pedestrian space: Indicated by a blue callout pointing to a new designated area. The diagram also shows the following street names and station markers: Streets: Bergen St., Flatbush Av., 6th Av., St. Marks Av. Station Markers: 2 3 Station (repeated at multiple locations). Bus Lines: B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, B22, B23, B24, B25, B26, B27, B28, B29, B30, B31, B32, B33, B34, B35, B36, B37, B38, B39, B40, B41, B42, B43, B44, B45, B46, B47, B48, B49, B50, B51, B52, B53, B54, B55, B56, B57, B58, B59, B60, B61, B62, B63, B64, B65, B66, B67, B68, B69, B70, B71, B72, B73, B74, B75, B76, B77, B78, B79, B80, B81, B82, B83, B84, B85, B86, B87, B88, B89, B90, B91, B92, B93, B94, B95, B96, B97, B98, B99, B100.
+[p018_c0004] _18_
+[p018_c0005] _BETTERBUSES_
+
+## Page 19
+
+### [p019_c0001] Proposed Design (continued)
+### [p019_c0002] Flatbush Av. from St. Marks Av. to Prospect Pl.
+> [p019_c0003] The diagram illustrates the proposed design for Flatbush Av. between St. Marks Av. and Prospect Pl. The street is shown with a central bus lane marked 'BUS' and 'SMB'. The design includes several proposed zones and spaces: St. Marks Av. (Top Left): Features a 'Bike parking' area and a 'New pedestrian space'. Flatbush Av. (Center): Contains a 'Proposed Neighborhood Loading Zone', a 'Proposed Truck Loading Only and 2-Hour Metered Parking' zone, and a 'Proposed 2-Hour Metered Parking' zone. Prospect Pl. (Top Right): Features a 'Proposed 2-Hour Metered Parking & Neighborhood Loading Zone', a 'Bike parking' area, and a 'New pedestrian space'. Flatbush Av. (Bottom Center): Features a 'Proposed Truck Loading Only and 2-Hour Metered Parking' zone. Prospect Pl. (Bottom Right): Features a 'New pedestrian space' and a 'Proposed Truck Loading Only and 2-Hour Metered Parking' zone. A north arrow is located in the bottom left corner of the diagram area.
+[p019_c0004] _19_
+
+## Page 20
+
+### [p020_c0001] Proposed Design (continued)
+### [p020_c0002] Flatbush Av. from Prospect Pl. to Carlton Av.
+> [p020_c0003] Proposed Truck Loading Only and 2-Hour Metered Parking Bus boarding island Proposed right turn ban at Park Pl. Former curbside bus stop New pedestrian space Exploring potential slip lane closure on Carlton Ave between Flatbush Av. & Park Pl. Physical protection Proposed Truck Loading Only and 2-Hour Metered Parking New pedestrian space & bike parking Physical protection Proposed Truck Loading Only Former curbside bus stop Proposed No Standing Anytime regulation Bus boarding island New pedestrian space 7 Av. Flatbush Av. Park Pl. Carlton Av. B Q Station B Q Station
+[p020_c0004] _20_
+[p020_c0005] _BETTERBUSES_
+
+## Page 21
+
+### [p021_c0001] Proposed Design (continued)
+[p021_c0002] Flatbush Av. from Carlton Av. to 8 th Av.
+[p021_c0003] _21_
+[p021_c0004] _BETTERBUSES_
+
+## Page 22
+
+### [p022_c0001] Proposed Design (continued)
+[p022_c0002] Flatbush Av. from 8 th Av. to Plaza St.
+> [p022_c0003] The diagram illustrates a proposed street design for Flatbush Av. between 8th Av. and Plaza St. Key features include: Proposed Truck Loading Only and 2-Hour Metered Parking: Indicated by purple boxes on the north and south sides of Flatbush Av. New pedestrian spaces: Indicated by blue boxes along the sidewalks and at the intersections with Plaza St. E. and Plaza St. W. Southbound bus lane ends: Indicated by a blue box at the southbound end of Flatbush Av. near 8th Av. 2 3 Station: Four existing subway stations are marked with red and white signs at the intersections with Plaza St. E., Plaza St. W., and St. Johns Pl. Street Names: Flatbush Av., Plaza St. E., Plaza St. W., St. Johns Pl., and 8 Av. Road Markings: The diagram shows various lane markings, including 'ONLY' and 'BUS' lanes, pedestrian crossings, and directional arrows. Orientation: A north arrow is located in the bottom right corner.
+[p022_c0004] _22_
+[p022_c0005] _BETTERBUSES_
+[p022_c0006] _NEW YORK CITY DOT_
+
+## Page 23
+
+### [p023_c0001] Proposed Design (continued)
+### [p023_c0002] Flatbush Av. from Plaza St. to Grand Army Plaza
+[p023_c0003] _23_
+[p023_c0004] _BETTERBUSES_
+
+## Page 24
+
+### [p024_c0001] Potential Bus Boarding Island Amenities
+> [p024_c0002] Benches
+> [p024_c0003] Planters
+> [p024_c0004] Shelters
+> [p024_c0005] Real-time passenger information
+> [p024_c0006] Leaning bars
+> [p024_c0007] Public Art
+[p024_c0008] _24_
+
+## Page 25
+
+### [p025_c0001] Bus Boarding Island Amenities: Flatbush Av and Park Pl
+> [p025_c0002] A photograph of a city street intersection at Flatbush Av and Park Pl. The scene is a busy urban area with a bus boarding island in the foreground. The island is separated from the street by a green metal fence and features a shelter and benches. People are waiting on the island and walking on the sidewalk. In the background, there are buildings, trees, and a blue bus. A street sign for 'Park Pl' is visible on the right, and a '7 Av' sign is on the left. A '25' speed limit sign is also visible. The overall atmosphere is a typical New York City street scene.
+[p025_c0003] _25_
+[p025_c0004] _The MTA logo, consisting of the letters 'MTA' in a stylized font inside a circle._
+[p025_c0005] _BETTERBUSES_
+[p025_c0006] _The New York City Department of Transportation (NYC DOT) logo, featuring the words 'NEW YORK CITY' above 'DOT' with a stylized 'D'._
+
+## Page 26
+
+### [p026_c0001] Summary and Next Steps
+[p026_c0002] 3
+[p026_c0003] _26_
+[p026_c0004] _The MTA logo, consisting of the letters 'MTA' in white inside a black circle._
+[p026_c0005] _The BETTERBUSES logo, with 'BETTER' in blue and 'BUSES' in green, separated by a stylized blue and green graphic._
+[p026_c0006] _The New York City Department of Transportation (NYC DOT) logo, featuring the text 'NEW YORK CITY' above 'DOT' and a stylized graphic of a bus._
+
+## Page 27
+
+### [p027_c0001] Project Summary*
+- [p027_c0002] - Center-Running Bus Lanes and high-quality bus stops - Adds 15,800 ft 2 of painted pedestrian space - Daylights and shortens the crossing distances at 13 intersections on a Vision Zero Priority Corridor - Potential to increase public realm greenery with maintenance partners - Potential for art through DOT's Art Partners program - Adds 13,000+ft 2 of concrete pedestrian space via 6 new bus boarding islands - Adds up to 10 new roadway bike parking areas which can fit 150+ bikes - 17 new dedicated loading zones, which can fit over 70 trucks or 112 passenger vehicles
+[p027_c0003] *all calculations are estimates, subject to change based on engineering judgement and traffic analysis
+> [p027_c0004] A photograph of a city street corner featuring a vibrant red-painted pedestrian area with large, stylized white and black animal figures. The area is bordered by a sidewalk with potted plants and a red umbrella. In the background, a building is under construction with scaffolding and signs for 'OLD NAVY' and 'CHANEL'.
+[p027_c0005] _Photo Credit: Philip Greenberg_
+[p027_c0006] _27_
+[p027_c0007] _The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark circle._
+[p027_c0008] _The BETTERBUSES logo, with 'BETTER' in blue and 'BUSES' in green, separated by a stylized blue and green graphic._
+[p027_c0009] _The New York City Department of Transportation (NYC DOT) logo, featuring the text 'NEW YORK CITY' above 'DOT' and a stylized globe graphic._
+
+## Page 28
+
+### [p028_c0001] Project Timeline
+### [p028_c0002] Analysis and Outreach:
+### [p028_c0003] Spring 2024:
+- [p028_c0004] • Community Advisory Board meeting #2 • Community Boards 2, 6, 8
+### [p028_c0005] Summer 2024:
+- [p028_c0006] • On-street surveys for merchants and bus riders • Continue traffic analysis and project design
+### [p028_c0007] Fall/Winter 2024-2025:
+- [p028_c0008] • Complete traffic analysis and project design
+### [p028_c0009] Spring 2025:
+- [p028_c0010] • Present proposal to CBs 2, 6, 8, and elected officials • Collect feedback and continue refining proposal
+### [p028_c0011] Summer 2025:
+- [p028_c0012] • Present updated proposal to Community Advisory Board
+### [p028_c0013] Fall 2025:
+- [p028_c0014] • Present Updated Design and Implementation Timeline
+### [p028_c0015] Projected Implementation Phasing:
+### [p028_c0016] Fall 2025:
+- [p028_c0017] • Install bus lane markings north of 4 th Av (CB 2) • Traffic monitoring of new bus lane segment
+### [p028_c0018] Spring 2026:
+- [p028_c0019] • Begin concrete and signal construction • Construction phasing would be completed by direction of travel • Temporary markings would be installed to minimize disruptions to travel
+### [p028_c0020] Summer/Fall 2026:
+- [p028_c0021] • Complete concrete and signal construction • Install final roadway markings • Re-route buses as necessary
+### [p028_c0022] Late Fall 2026:
+- [p028_c0023] • Bus lanes open for operation
+[p028_c0024] _28_
+
+## Page 29
+
+[p029_c0001] Thank You!
+[p029_c0002] Questions?
+> [p029_c0003] The logo for the New York City Department of Transportation (NYC DOT). It features the words "NEW YORK CITY" in a bold, sans-serif font at the top. Below this, the letters "DOT" are displayed in a large, stylized font. The "D" and "O" are green and contain horizontal white lines, while the "T" is green and has a white square at its base.
+> [p029_c0004] The Facebook logo, which is a lowercase letter "f" in white.
+[p029_c0005] NYC DOT
+> [p029_c0006] The Twitter logo, which is a white bird in flight.
+[p029_c0007] NYC DOT
+> [p029_c0008] The Instagram logo, which is a white camera icon.
+[p029_c0009] nyc_dot
+> [p029_c0010] The YouTube logo, which consists of the word "You" above the word "Tube" in white.
+[p029_c0011] NYC DOT
+[p029_c0012] _29_
+[p029_c0013] _The MTA logo, which is a black circle with the letters "MTA" in white._
+[p029_c0014] _The BETTERBUSES logo, which features the word "BETTER" in blue and "BUSES" in green, with a stylized blue and green graphic to the left._
+[p029_c0015] _A smaller version of the New York City DOT logo, showing the text "NEW YORK CITY" above the stylized "DOT" letters._

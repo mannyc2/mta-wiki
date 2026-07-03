@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T23-03-12-876Z_1976810-853fca30_ingest_2012-05-webster-cac2-summary",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T02:40:14.434Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "webster-ave-sbs-cac2-identity",
+        "local_observation_id": "project_webster_ave_sbs_cac2",
+        "decision": "new",
+        "rationale": "The observation's base_record_id is project_12-webster-ave, which is the same existing registry record that already captures the Webster Avenue SBS project. The registry record's source_ids already include 2012_05_webster_cac2_summary and its aliases already include project_webster-ave-sbs-cac2. Since the closest match IS the observation's own base_record_id, the decision is 'new' — no different registry record needs linking.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p001_c0006",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p001_c0007",
+            "source_quote": ""
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-39-44-937Z_2111393-4503943d_canonicalize_2026-06-10t23-03-12-876z-1976810-853fca30-ingest-2012-05-webster-cac2-summary-project-identity"
+}

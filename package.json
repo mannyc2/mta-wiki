@@ -1,0 +1,51 @@
+{
+  "name": "mta-llm-wiki",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.3.9",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "cli": "bun packages/cli/src/cli.ts",
+    "harness": "bun packages/cli/src/cli.ts",
+    "profiles": "bun packages/cli/src/cli.ts profiles",
+    "providers": "bun packages/cli/src/cli.ts providers",
+    "models": "bun packages/cli/src/cli.ts models",
+    "transcripts": "bun packages/cli/src/cli.ts transcripts",
+    "usage": "bun packages/cli/src/cli.ts usage",
+    "prepare-source": "bun packages/cli/src/cli.ts prepare-source",
+    "import-sources": "bun packages/cli/src/cli.ts import-sources",
+    "chandra-queue": "bun packages/cli/src/cli.ts chandra-queue",
+    "chandra-run": "bun packages/cli/src/cli.ts chandra-run",
+    "chandra-server": "scripts/chandra-vllm.sh",
+    "chandra-server:start": "scripts/chandra-vllm.sh start",
+    "chandra-server:stop": "scripts/chandra-vllm.sh stop",
+    "chandra-server:status": "scripts/chandra-vllm.sh status",
+    "chandra-server:logs": "scripts/chandra-vllm.sh logs",
+    "chandra-server:wait": "scripts/chandra-vllm.sh wait",
+    "embeddings-server": "scripts/embeddings-vllm.sh",
+    "embeddings-server:start": "scripts/embeddings-vllm.sh start",
+    "embeddings-server:stop": "scripts/embeddings-vllm.sh stop",
+    "embeddings-server:status": "scripts/embeddings-vllm.sh status",
+    "embeddings-server:logs": "scripts/embeddings-vllm.sh logs",
+    "embeddings-server:wait": "scripts/embeddings-vllm.sh wait",
+    "ingest": "bun packages/cli/src/cli.ts ingest",
+    "write": "bun packages/cli/src/cli.ts write",
+    "ask": "bun packages/cli/src/cli.ts ask",
+    "build-index": "bun packages/cli/src/cli.ts build-index",
+    "materialize": "bun packages/cli/src/cli.ts materialize",
+    "rebuild-db": "bun packages/cli/src/cli.ts rebuild-db-from-canonical",
+    "rebuild-evidence-index": "bun packages/cli/src/cli.ts rebuild-evidence-index",
+    "export:release": "bun packages/cli/src/cli.ts export-release",
+    "audit": "bun packages/cli/src/cli.ts audit",
+    "resume": "bun packages/cli/src/cli.ts resume",
+    "test": "bun test packages --timeout 900000",
+    "typecheck": "bun run --cwd packages/core typecheck && bun run --cwd packages/db typecheck && bun run --cwd packages/pipeline typecheck && bun run --cwd packages/agents typecheck && bun run --cwd packages/cli typecheck",
+    "validate": "bun packages/cli/src/cli.ts validate"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "run_id": "2026-06-10T23-02-39-444Z_1976810-c9c547a6_ingest_2012-02-06-brt-webster-cac1",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:22:36.884Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "entity-nyct-new",
+        "local_observation_id": "entity_nyct_2012_02_06_webster_cac",
+        "decision": "new",
+        "rationale": "Observation 'New York City Transit' matches the existing registry record entity_mta-nyct (entity_name: 'MTA New York City Transit', entity_type: 'agency'). The registry alias 'entity_nyct-2012-02-06-webster-cac' confirms this source is already associated. Base_record_id is the closest and correct match — no different target record needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p001_c0001",
+            "source_quote": "New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-nycdot-new",
+        "local_observation_id": "entity_nyc_dot_2012_02_06_webster_cac",
+        "decision": "new",
+        "rationale": "Observation 'New York City Department of Transportation (NYC DOT)' matches the existing registry record entity_nyc-dot (entity_name: 'New York City Department of Transportation', entity_type: 'agency'). The registry alias 'entity_nyc-dot-2012-02-06-webster-cac' confirms this source is already associated. Base_record_id is the closest and correct match — no different target record needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p002_c0005",
+            "source_quote": "The New York City Department of Transportation (NYC DOT) logo"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-21-29-151Z_2111393-31330198_canonicalize_2026-06-10t23-02-39-444z-1976810-c9c547a6-ingest-2012-02-06-brt-webster-cac1-entity-identity"
+}

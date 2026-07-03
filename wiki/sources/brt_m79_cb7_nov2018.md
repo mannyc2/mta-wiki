@@ -1,0 +1,187 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_brt-m79-cb7-nov2018"
+record_kind: "source"
+display_name: "M79 Crosstown Select Bus Service – Fall 2018 Update · CB 7"
+source_id: "brt_m79_cb7_nov2018"
+source_ids:
+  - "brt_m79_cb7_nov2018"
+local_observation_id: "source_brt_m79_cb7_nov2018"
+local_observation_ids:
+  - "source_brt_m79_cb7_nov2018"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T18:10:02.859Z"
+submission_ids:
+  - "sub_233911125419f60e"
+payload:
+  authority_tier: "board_material"
+  content_type: "presentation"
+  date_text: "Fall 2018"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2018-fall"
+    precision: "season"
+    raw_text: "Fall 2018"
+  description: "Fall 2018 Update for Community Board 7 on M79 Crosstown Select Bus Service"
+  published_date_normalized: "2018-fall"
+  published_date_precision: "season"
+  publisher: "New York City Department of Transportation (NYC DOT)"
+  title: "M79 Crosstown Select Bus Service"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "brt_m79_cb7_nov2018#p001_c0001"
+    page_number: 1
+    source_id: "brt_m79_cb7_nov2018"
+    source_path: "raw/sources/brt_m79_cb7_nov2018/blocks.jsonl"
+    text_sha256: "sha256:e28823b0ea89cac534a814063d87e63028021df273b628f3b4d967104b1cfdef"
+    text_source: "raw_text"
+---
+
+# Download the presentation (pdf)
+
+source_id: brt_m79_cb7_nov2018
+citation: cite block ids exactly as shown in square brackets
+document: 96 block(s)
+
+## Page 1
+
+### [p001_c0001] M79 Crosstown Select Bus Service
+[p001_c0002] Fall 2018 Update · CB 7
+> [p001_c0003] A photograph of a city street featuring a red-painted bus lane. A blue MTA bus is driving in the lane. To the left is a sidewalk with trees and pedestrians. To the right is a street with parked cars and a white delivery truck. Tall brick buildings are visible in the background.
+> [p001_c0004] The MTA logo, consisting of the letters 'MTA' in a stylized font inside a circle.
+[p001_c0005] +selectbusservice
+> [p001_c0006] The New York City Department of Transportation (NYC DOT) logo, featuring the words 'NEW YORK CITY' above 'DOT' and a stylized bridge graphic.
+
+## Page 2
+
+### [p002_c0001] Project Background
+[p002_c0002] The M79 bus corridor was identified as a potential candidate for Select Bus Service in the 2009 Bus Rapid Transit Phase II Study.
+- [p002_c0003] • Request for M79 SBS from local elected officials and community • Heavily used route with slow trips • Carries 12,500 passengers per day over about 2 miles • Crucial connection to trains and 16 bus routes, including M15 SBS • 2 pedestrians killed, 34 people severely injured, and 458 total reported crash injuries along the M79 corridor (2012-2016) • Vision Zero Priority Intersections or overlapping corridors at 79 Street and Broadway, 3 rd Ave, 2 nd Ave, & 1 st Ave
+[p002_c0004] _+selectbuservice_
+[p002_c0005] _2_
+
+## Page 3
+
+### [p003_c0001] M79 SBS Stops and Route
+> [p003_c0002] A map of the M79 SBS route in New York City, showing stops and other SBS routes. The M79 SBS route is highlighted in dark blue, and stops are marked with a crosshair symbol. Other SBS routes are shown in light blue. The map includes street names such as Riverside Dr, Broadway, Amsterdam Av, Columbus Av, Central Park West, 79 St Transverse, Madison Av, Lexington Av, 3 Av, 2 Av, 1 Av, York Av, and East End Av. A legend in the bottom right corner identifies the symbols for M79 SBS stops, the M79 SBS route, and other SBS routes. A scale bar indicates distances up to 0.25 miles, and a north arrow is also present. Legend: M79 SBS Stops (Crosshair symbol) M79 SBS Route (Dark blue line) Other SBS Routes (Light blue line) Scale: 0 to 0.25 Miles
+[p003_c0003] _+selectbuservice_
+[p003_c0004] _3_
+
+## Page 4
+
+### [p004_c0001] M79 SBS Service Launch – May 2017
+[p004_c0002] _Improved fare collection at all stops_
+[p004_c0003] _0.75 miles of bus lanes_
+[p004_c0004] _12 new Bus Time/WalkNYC information displays_
+[p004_c0005] _10 intersections with signal timing improvements_
+[p004_c0006] _+selectbuservice_
+[p004_c0007] _4_
+
+## Page 5
+
+### [p005_c0001] M79 West Side Bus Lane Treatments
+> [p005_c0002] A map illustrating the proposed bus lane treatments for the M79 West Side. The map shows a grid of streets including West End Avenue, Amsterdam Avenue, Columbus Avenue, and Central Park West, running north-south. W 81 Street and W 79 Street run east-west. A blue line represents the M79 bus route, which follows these streets. A red line segment on W 81 Street east of Central Park West indicates an 'Added curbside bus lane to W 81 St eastbound'. Green arrows indicate 'New protected turns' at the intersections of W 79 Street with West End Avenue, Amsterdam Avenue, and Columbus Avenue. Blue circles with white plus signs are placed along the bus lane route. A grey box labeled 'AMNH' is located near the intersection of W 79 Street and Columbus Avenue. A green line with arrows shows a new protected turn from W 79 Street to Amsterdam Avenue. A yellow callout box points to the red line segment with the text 'Added curbside bus lane to W 81 St eastbound'. Another yellow callout box points to the green arrows with the text 'New protected turns'.
+[p005_c0003] _+selectbuservice_
+[p005_c0004] _5_
+
+## Page 6
+
+### [p006_c0001] Results
+- [p006_c0002] • Speed: M79 SBS is on average 8% faster than previous M79 service – 21% less time stopped at bus stops – 5% less time stopped in traffic • Ridership: M79 SBS ridership up 9% one year after launch – Compared to all Manhattan routes up 0.5% • Popularity: 96% M79 SBS customer satisfaction (compared to 84% satisfaction with pre-SBS M79 service)
+> [p006_c0003] A photograph of a New York City bus on a city street. The bus is white with blue accents and a 'New York City Bus' logo. It is stopped at a bus stop. The street has a red-painted bus stop area with white markings that say 'BUS' and 'ONLY'. A yellow taxi is visible in the background, and there are buildings and pedestrians.
+> [p006_c0004] A photograph showing people boarding a New York City bus. The bus is white with blue accents and a 'New York City Bus' logo. The destination sign on the bus says 'H79 + SELECT BUS'. The bus number '5877' is visible on the side. People are waiting to board the bus, and some are already inside.
+[p006_c0005] _+selectbusservice_
+[p006_c0006] _6_
+
+## Page 7
+
+### [p007_c0001] Bus Travel Time
+[p007_c0002] Travel Time: On average, M79 SBS is 8% faster than the previous M79 service.
+[p007_c0003] _Eastbound Bus Travel Time (Minutes)_
+> [p007_c0004] Time Interval M79 LCL (Sept 2016) (Minutes) M79 SBS (Sept 2018) (Minutes) Percentage Decrease 7 AM - 10 AM 25.2 23.6 -6% 10 AM - 3 PM 25.7 24.9 -3% 3 PM - 7 PM 25.7 23.4 -9% 7 PM - 12 AM 19.4 18.3 -6% ■ M79 LCL (Sept 2016) ■ M79 SBS (Sept 2018)
+[p007_c0005] _Westbound Bus Travel Time (Minutes)_
+> [p007_c0006] Time Interval M79 LCL (Sept 2016) (Minutes) M79 SBS (Sept 2018) (Minutes) Percentage Decrease 7 AM - 10 AM 22.5 20.0 -11% 10 AM - 3 PM 24.3 22.0 -9% 3 PM - 7 PM 24.8 21.9 -12% 7 PM - 12 AM 18.7 17.2 -8% ■ M79 LCL (Sept 2016) ■ M79 SBS (Sept 2018)
+[p007_c0007] _+selectbusservice_
+[p007_c0008] _7_
+
+## Page 8
+
+### [p008_c0001] Time Spent at Bus Stops
+[p008_c0002] Dwell Time: On average, M79 SBS spends 21% less time stopped at bus stops than the previous M79 service.
+[p008_c0003] _Eastbound Dwell Time at Bus Stops (Minutes)_
+> [p008_c0004] Time Interval M79 LCL (Sept 2016) (Minutes) M79 SBS (Sept 2018) (Minutes) Percentage Decrease 7 AM - 10 AM 5.9 4.9 -17% 10 AM - 3 PM 6 4.6 -23% 3 PM - 7 PM 5.7 4.2 -26% 7 PM - 12 AM 4.3 3.7 -14% ■ M79 LCL (Sept 2016) ■ M79 SBS (Sept 2018)
+[p008_c0005] _Westbound Dwell Time at Bus Stops (Minutes)_
+> [p008_c0006] Time Interval M79 LCL (Sept 2016) (Minutes) M79 SBS (Sept 2018) (Minutes) Percentage Decrease 7 AM - 10 AM 6.2 4.7 -24% 10 AM - 3 PM 7.2 5.6 -22% 3 PM - 7 PM 7.1 5.6 -21% 7 PM - 12 AM 5.2 4.3 -17% ■ M79 LCL (Sept 2016) ■ M79 SBS (Sept 2018)
+[p008_c0007] _+selectbusservice_
+[p008_c0008] _8_
+
+## Page 9
+
+### [p009_c0001] Ridership
+- [p009_c0002] • M79 ridership had been decreasing in recent years, and continued to decline in the months before the conversion to SBS. • Since its May 2017 launch, M79 SBS has reversed this decline and ridership is growing. After one year of SBS service, ridership increased by 9% (May 2017 to May 2018).
+> [p009_c0003] Year to Year Ridership Change - M79 vs. Manhattan % Change from Same Month 1 Year Prior Month M79 SBS (%) All Manhattan Routes (%) Sept '15 to '16 0 -2 Oct '15 to '16 -11 -7 Nov '15 to '16 -12 -6 Dec '15 to '16 -11 -4 Jan '16 to '17 -16 -7 Feb '16 to '17 -17 -8 Mar '16 to '17 -22 -13 Apr '16 to '17 -22 -13 May '16 to '17 -18 -10 Jun '16 to '17 -18 -8 Jul '16 to '17 -17 -7 Aug '16 to '17 -17 -8 Sept '16 to '17 -16 -8 Oct '16 to '17 -12 -8 Nov '16 to '17 -3 -4 Dec '16 to '17 -2 -4 Jan '17 to '18 -3 -5 Feb '17 to '18 -4 -8 Mar '17 to '18 4 0 Apr '17 to '18 4 -3 May '17 to '18 7 0 Jun '17 to '18 9 0 Jul '17 to '18 9 -3 Aug '17 to '18 5 -2 Sept '17 to '18 2 2 2 nd Ave Subway Opens M79 SBS Launch
+[p009_c0004] _+selectbuservice_
+[p009_c0005] _9_
+
+## Page 10
+
+### [p010_c0001] Non-Bus Vehicle Travel Time
+[p010_c0002] Average travel time has decreased by 8% for non-bus vehicles along the M79 route between Riverside Drive and Central Park West.*
+> [p010_c0003] Non-Bus Travel Time Westside, minutes Eastbound Time Interval Sept. 2016 (minutes) Sept. 2018 w/ bus lanes (minutes) Change (%) 7am-10am 4.0 3.2 -20% 10am-3pm 4.1 3.5 -15% 3pm-7pm 4.7 3.6 -23% 7pm-12am 3.2 3.1 -3% ■ Sept. 2016 ■ Sept. 2018 w/ bus lanes
+[p010_c0004] Source: INRIX RITIS. Travel time data uses closest available parameters (Riverside Drive and Central Park West)
+> [p010_c0005] Non-Bus Travel Time Westside, minutes Westbound Time Interval Sept. 2016 (minutes) Sept. 2018 w/ bus lanes (minutes) Change (%) 7am-10am 3.4 3.5 +3% 10am-3pm 3.6 3.5 -3% 3pm-7pm 3.5 3.3 -6% 7pm-12am 3.2 3.3 +3% ■ Sept. 2016 ■ Sept. 2018 w/ bus lanes
+[p010_c0006] Source: INRIX RITIS. Travel time data uses closest available parameters (Riverside Drive and Central Park West)
+[p010_c0007] *Extents: W 79 th St from Riverside to Columbus Ave, Amsterdam from W 79 th St to W 81 st St, Columbus from W 79 th St to W 81 st St, and 81 st from Amsterdam to CPW.
+[p010_c0008] _+selectbuservice_
+[p010_c0009] _10_
+
+## Page 11
+
+### [p011_c0001] M79 SBS Capital Project
+- [p011_c0002] • The 79 th Street SBS capital project aims to improve bus speeds, reliability, and pedestrian safety through various street design treatments along 79 th Street. – Treatments will include: • Bus bulbs • Curb extensions • Bus pads • Pedestrian islands
+> [p011_c0003] A horizontal timeline diagram with four chevron-shaped boxes pointing to the right. Above each box is a dark blue bar with a year or year range. The first box is labeled 'DDC to begin initial design' and is positioned under the '2019' bar. The second box is labeled 'Preliminary design' and is positioned under the '2020-2021' bar. The third box is labeled 'Final design' and is positioned under the '2020-2021' bar. The fourth box is labeled 'Construction to begin' and is positioned under the '2022' bar. 2019 2020-2021 2022 DDC to begin initial design Preliminary design Final design Construction to begin
+[p011_c0004] _+selectbuservice_
+[p011_c0005] _11_
+
+## Page 12
+
+### [p012_c0001] M79 SBS Capital Project Treatments
+> [p012_c0002] A photograph of a city street corner featuring a pedestrian island. The island is a raised concrete area with a circular manhole cover. Pedestrians are walking across a crosswalk that leads to the island. A traffic light is mounted on a pole over the intersection. Buildings and trees are visible in the background.
+[p012_c0003] _Pedestrian Island_
+> [p012_c0004] A photograph of a city street corner showing a curb extension. The curb has been extended further into the street, creating a wider sidewalk area. A crosswalk is visible, and a traffic light is mounted on a pole. Buildings and trees are in the background.
+[p012_c0005] _Curb Extension_
+> [p012_c0006] A photograph of a city street corner featuring a bus bulb. A bus is stopped at a bus stop, which is located on a raised concrete platform. The bus stop is surrounded by a small landscaped area with trees and a fence. A red car is driving on the street in front of the bus stop.
+[p012_c0007] _Bus Bulb_
+[p012_c0008] _+selectbusservice_
+[p012_c0009] _12_
+
+## Page 13
+
+### [p013_c0001] 2018-19 Capital Project – West Side (CB 7)
+- [p013_c0002] • 3 bus bulbs • 6 curb extensions • 4 bus pads • 1 pedestrian island
+> [p013_c0003] A map of the West Side (CB 7) area in New York City, showing proposed transportation improvements. The map includes a legend in the bottom left corner: Bus Bulb w/ Pad (Blue rectangle) Curb Extension (Orange rectangle) Bus Pad (Grey rectangle) Pedestrian Island (Green rectangle) The map shows the following locations and streets: Streets: W 79th St, W 78th St, W 77th St, W 80th St, W 81st St, West End Ave, Broadway, Amsterdam Ave, Columbus Ave, Riverside Dr, Henry Hudson Pkwy, Central Park West. Landmarks and Businesses: Children's Museum of Manhattan, Zabor's, NYLO New York City, Middle School 44, The Evelyn, American Museum of Natural History, Hayden Planetarium, New-York Historical Museum, 81 St - Museum of Natural Hist., Central Park West. Proposed Improvements: Bus Bulb w/ Pad: Located at the intersection of West End Ave and W 79th St. Curb Extension: Located at the intersection of W 79th St and W 81st St. Bus Pad: Located at the intersection of West End Ave and W 79th St. Pedestrian Island: Located at the intersection of W 81st St and Central Park West. Other Features: A red arrow points north-northeast from the intersection of West End Ave and W 79th St.
+[p013_c0004] _+selectbuservice_
+[p013_c0005] _13_
+
+## Page 14
+
+### [p014_c0001] M79 SBS Capital Project – Site Examples
+> [p014_c0002] A street-level photograph of the southwest corner of W 79th St and Broadway. The image shows a large, multi-story building with a classical facade featuring a series of arched windows on the ground floor. A bus stop shelter is visible on the sidewalk, and a bus stop sign is mounted on a pole. A car is parked on the street to the left.
+[p014_c0003] _W 79 th St at Broadway, SW corner will receive a bus bulb_
+> [p014_c0004] An aerial photograph of the intersection of W 79th St and Riverside Dr. A red oval highlights a specific area on the corner where a curb extension is planned. Several cars are visible on the streets, and there are trees and buildings in the background.
+[p014_c0005] _W 79 th St at Riverside Dr. curb extensions will be built out in concrete_
+> [p014_c0006] A street-level photograph of the northwest corner of W 79th St and Central Park West. The image shows a crosswalk with white stripes, a traffic light on a pole, and several cars parked along the curb. A group of people is walking across the crosswalk. Trees are visible in the background.
+[p014_c0007] _W 79 th St at Central Park West, NW corner will receive a curb extension_
+> [p014_c0008] A street-level photograph of the northeast corner of W 79th St and Amsterdam Ave. The image shows a multi-story building with a brick facade, a bus stop shelter, and a traffic light. A car is parked on the street to the right. The corner area is marked with a crosswalk.
+[p014_c0009] _W 79 th St at Amsterdam Ave, NE corner will receive two bus bulbs_
+[p014_c0010] _+selectbuservice_
+[p014_c0011] _14_
+
+## Page 15
+
+### [p015_c0001] Questions?
+> [p015_c0002] The image shows a man in a grey jacket and black pants using a blue pay station at a bus stop. The pay station has a coin slot and a card reader. The man is inserting a coin into the slot. The pay station has a sign that says "Get Ticket Here" and "Only for M79 SBS". There is also a sign that says "Obtenga boleto al bus" and "Solo para M79 SBS". The background shows a bus stop shelter, a street with a traffic light, and some trees. The NYC DOT logo is visible in the bottom right corner of the image.
+[p015_c0003] _+selectbuservice_
+[p015_c0004] _15_

@@ -1,0 +1,295 @@
+{
+  "run_id": "2026-06-10T23-03-11-313Z_1976810-8253a411_ingest_2012-04-26-sbs-utica",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T02:41:04.384Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "relate-bus-lane-relocation-st-johns-carroll",
+        "local_observation_id": "treatment_bus_lane_relocation_st_johns_carroll",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_bus-lane-relocation-st-johns-carroll",
+            "description": "Bus lane relocation on SB approach to Eastern Pkwy, part of the Utica Avenue Bus Priority and Safety Study proposed plan for St. Johns Pl. to Carroll St.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p010_c0007",
+                "source_quote": "• Relocates bus lane to SB approach • Provides more parking bet Pres. and Carroll Sts • Reduces bus delays on SB approach to Eastern Pkwy. • Net gain: 19 peak period parking spaces"
+              }
+            ]
+          }
+        ],
+        "rationale": "Cited block p010_c0007 is on page 10 within the 'Proposed Improvement' section of the 'Proposed Plan: St. Johns Pl. to Carroll St.' presentation, which is part of the Utica Avenue Bus Priority and Safety Study project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p010_c0007",
+            "source_quote": "• Relocates bus lane to SB approach • Provides more parking bet Pres. and Carroll Sts • Reduces bus delays on SB approach to Eastern Pkwy. • Net gain: 19 peak period parking spaces"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-pedestrian-refuge-island",
+        "local_observation_id": "treatment_pedestrian_refuge_island",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_pedestrian-refuge-island",
+            "description": "Pedestrian refuge island concept for Carroll St. to Church Ave. corridor, part of the Utica Avenue Bus Priority and Safety Study improvement concepts.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p012_c0003",
+                "source_quote": "Pedestrian Refuge Island"
+              }
+            ]
+          }
+        ],
+        "rationale": "Cited blocks p012_c0003 and p012_c0004 are on page 12 under the 'Improvement Concepts: Carroll St. to Church Ave.' section and 'Pedestrian Safety Improvements' heading, within the Utica Avenue Bus Priority and Safety Study presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p012_c0003",
+            "source_quote": "Pedestrian Refuge Island"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-neckdowns",
+        "local_observation_id": "treatment_neckdowns",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_neckdowns_2",
+            "description": "Neckdowns concept for pedestrian safety on Carroll St. to Church Ave. corridor, part of the Utica Avenue Bus Priority and Safety Study improvement concepts.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p012_c0006",
+                "source_quote": "Neckdowns"
+              }
+            ]
+          }
+        ],
+        "rationale": "Cited blocks p012_c0006 and p012_c0007 are on page 12 under the 'Improvement Concepts: Carroll St. to Church Ave.' section and 'Pedestrian Safety Improvements' heading, within the Utica Avenue Bus Priority and Safety Study presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p012_c0006",
+            "source_quote": "Neckdowns"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-offset-bus-lane",
+        "local_observation_id": "treatment_offset_bus_lane",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_offset-bus-lane_2",
+            "description": "Offset bus lane concept for Carroll St. to Church Ave. corridor, part of the Utica Avenue Bus Priority and Safety Study improvement concepts.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p013_c0002",
+                "source_quote": "Bus Lane Improvements"
+              }
+            ]
+          }
+        ],
+        "rationale": "Cited blocks p013_c0002 and p013_c0003 are on page 13 under the 'Improvement Concepts: Carroll St. to Church Ave.' section and 'Bus Lane Improvements' heading, within the Utica Avenue Bus Priority and Safety Study presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p013_c0002",
+            "source_quote": "Bus Lane Improvements"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-transit-signal-priority",
+        "local_observation_id": "treatment_transit_signal_priority",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_transit-signal-priority_2",
+            "description": "Transit Signal Priority (TSP) for buses, part of signal timing improvements in the Utica Avenue Bus Priority and Safety Study improvement concepts.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p014_c0004",
+                "source_quote": "• Signal timing improvements for all traffic • Transit Signal Priority (TSP) for buses"
+              }
+            ]
+          }
+        ],
+        "rationale": "Cited block p014_c0004 is on page 14 under the 'Improvement Concepts: Carroll St. to Church Ave.' section and 'Signal Timing Improvements' heading, within the Utica Avenue Bus Priority and Safety Study presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p014_c0004",
+            "source_quote": "• Signal timing improvements for all traffic • Transit Signal Priority (TSP) for buses"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-left-turn-bans",
+        "local_observation_id": "treatment_left_turn_bans",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_left-turn-bans",
+            "description": "Potential left turn bans at Utica Ave intersections including Union St and St. John's Pl, part of the Utica Avenue Bus Priority and Safety Study improvement concepts.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p017_c0002",
+                "source_quote": "Potential Left Turn Bans"
+              }
+            ]
+          }
+        ],
+        "rationale": "Cited blocks p017_c0002 and p017_c0004 are on page 17 under the 'Improvement Concepts: Carroll St. to Church Ave.' section and 'Potential Left Turn Bans' heading, within the Utica Avenue Bus Priority and Safety Study presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p017_c0002",
+            "source_quote": "Potential Left Turn Bans"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-empire-blvd-sidewalk-extension",
+        "local_observation_id": "treatment_empire_blvd_sidewalk_extension",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_empire-blvd-utica-ave-east-ny-ave",
+            "object_id": "treatment_empire-blvd-sidewalk-extension",
+            "description": "Sidewalk extension at Empire Blvd/Utica Ave/East New York Ave intersection, part of the Empire Blvd./Utica Ave./East New York Ave. Project.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p024_c0003",
+                "source_quote": "Construct sidewalk extension"
+              }
+            ]
+          }
+        ],
+        "rationale": "Cited block p024_c0003 is on page 24 under the 'Project Proposal' heading within the 'Empire Blvd. / Utica Ave. / East New York Ave. Project' section of the presentation. The block diagram explicitly lists 'Construct sidewalk extension' as a proposed change at this intersection.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p024_c0003",
+            "source_quote": "Construct sidewalk extension"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-empire-blvd-back-in-angle-parking",
+        "local_observation_id": "treatment_empire_blvd_back_in_angle_parking",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_empire-blvd-utica-ave-east-ny-ave",
+            "object_id": "treatment_empire-blvd-back-in-angle-parking",
+            "description": "Add ~25 back-in angle parking spaces on Empire Blvd, part of the Empire Blvd./Utica Ave./East New York Ave. Project.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p024_c0003",
+                "source_quote": "Add ~25 back-in angle parking spaces"
+              }
+            ]
+          }
+        ],
+        "rationale": "Cited block p024_c0003 is on page 24 under the 'Project Proposal' heading within the 'Empire Blvd. / Utica Ave. / East New York Ave. Project' section. The block diagram explicitly lists 'Add ~25 back-in angle parking spaces' as a proposed change.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p024_c0003",
+            "source_quote": "Add ~25 back-in angle parking spaces"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-east-ny-ave-two-way-conversion",
+        "local_observation_id": "treatment_east_ny_ave_two_way_conversion",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_empire-blvd-utica-ave-east-ny-ave",
+            "object_id": "treatment_east-ny-ave-two-way-conversion",
+            "description": "Convert E New York Ave to two-way traffic at Empire Blvd/Utica Ave intersection, part of the Empire Blvd./Utica Ave./East New York Ave. Project.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p024_c0003",
+                "source_quote": "Convert to two-way traffic"
+              }
+            ]
+          }
+        ],
+        "rationale": "Cited block p024_c0003 is on page 24 under the 'Project Proposal' heading within the 'Empire Blvd. / Utica Ave. / East New York Ave. Project' section. The block diagram explicitly lists 'Convert to two-way traffic' as a proposed change on E New York Ave.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p024_c0003",
+            "source_quote": "Convert to two-way traffic"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-remsen-ave-street-closure",
+        "local_observation_id": "treatment_remsen_ave_street_closure",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_empire-blvd-utica-ave-east-ny-ave",
+            "object_id": "treatment_remsen-ave-street-closure",
+            "description": "Close Remsen Ave street segment to traffic and expand GreenStreets, part of the Empire Blvd./Utica Ave./East New York Ave. Project.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_26_sbs_utica",
+                "block_id": "p024_c0003",
+                "source_quote": "Close street segment to traffic and expand GreenStreets"
+              }
+            ]
+          }
+        ],
+        "rationale": "Cited block p024_c0003 is on page 24 under the 'Project Proposal' heading within the 'Empire Blvd. / Utica Ave. / East New York Ave. Project' section. The block diagram explicitly lists 'Close street segment to traffic and expand GreenStreets' as a proposed change on Remsen Ave.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p024_c0003",
+            "source_quote": "Close street segment to traffic and expand GreenStreets"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-36-18-326Z_2111393-ac4a9c6b_canonicalize_2026-06-10t23-03-11-313z-1976810-8253a411-ingest-2012-04-26-sbs-utica-treatment-relations"
+}

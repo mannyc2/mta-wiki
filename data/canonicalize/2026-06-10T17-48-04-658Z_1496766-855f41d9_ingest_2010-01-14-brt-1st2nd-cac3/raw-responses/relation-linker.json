@@ -1,0 +1,961 @@
+{
+  "run_id": "2026-06-10T17-48-04-658Z_1496766-855f41d9_ingest_2010-01-14-brt-1st2nd-cac3",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-10T20:55:58.025Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "rel-m15-limited-bus-in-motion-54pct",
+        "local_observation_id": "metric_m15_limited_bus_in_motion_54pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-local-limited",
+            "object_id": "metric_m15-limited-bus-in-motion-54pct",
+            "description": "M15 Limited delay source: Bus in Motion 54%",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p014_c0005",
+                "source_quote": "Sources of delay on M15 Limited... Bus in Motion 54%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p014_c0005 explicitly names 'M15 Limited' and presents the pie chart showing 54% Bus in Motion.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p014_c0005",
+            "source_quote": "Sources of delay on M15 Limited"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m15-limited-stopped-bus-stops-22pct",
+        "local_observation_id": "metric_m15_limited_stopped_at_bus_stops_22pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-local-limited",
+            "object_id": "metric_m15-limited-stopped-at-bus-stops-22pct_2",
+            "description": "M15 Limited delay source: Stopped at Bus Stops 22%",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p014_c0005",
+                "source_quote": "Sources of delay on M15 Limited... Stopped at Bus Stops 22%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p014_c0005 explicitly names 'M15 Limited' and shows 22% Stopped at Bus Stops.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p014_c0005",
+            "source_quote": "Stopped at Bus Stops 22%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m15-limited-red-lights-21pct",
+        "local_observation_id": "metric_m15_limited_stopped_red_lights_21pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-local-limited",
+            "object_id": "metric_m15-limited-stopped-red-lights-21pct_2",
+            "description": "M15 Limited delay source: Stopped During Red Lights 21%",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p014_c0005",
+                "source_quote": "Sources of delay on M15 Limited... Stopped During Red Lights 21%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p014_c0005 explicitly names 'M15 Limited' and shows 21% Stopped During Red Lights.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p014_c0005",
+            "source_quote": "Stopped During Red Lights 21%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m15-limited-other-delays-4pct",
+        "local_observation_id": "metric_m15_limited_other_delays_4pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-local-limited",
+            "object_id": "metric_m15-limited-other-delays-4pct",
+            "description": "M15 Limited delay source: Other Delays 4%",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p014_c0005",
+                "source_quote": "Sources of delay on M15 Limited... Other Delays 4%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p014_c0005 explicitly names 'M15 Limited' and shows 4% Other Delays.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p014_c0005",
+            "source_quote": "Other Delays 4%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-34th-st-travel-time-17pct",
+        "local_observation_id": "metric_34th_st_travel_time_improvement_17pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-street-enhanced-bus-priority",
+            "object_id": "metric_34th-st-travel-time-improvement-17pct",
+            "description": "34th Street Enhanced Bus Priority: 17% improvement in travel time",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p015_c0006",
+                "source_quote": "17% improvement in travel time"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p015_c0006 appears under the page heading '34th Street Enhanced Bus Priority' (p015_c0002) and states the travel time improvement result.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p015_c0006",
+            "source_quote": "17% improvement in travel time"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-34th-st-red-lights-29pct",
+        "local_observation_id": "metric_34th_st_less_time_stopped_red_lights_29pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-street-enhanced-bus-priority",
+            "object_id": "metric_34th-st-less-time-stopped-red-lights-29pct",
+            "description": "34th Street Enhanced Bus Priority: 29% less time stopped at red lights",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p015_c0006",
+                "source_quote": "29% less time stopped at red lights"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p015_c0006 appears under the page heading '34th Street Enhanced Bus Priority' and states the red light reduction result.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p015_c0006",
+            "source_quote": "29% less time stopped at red lights"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-fordham-travel-time-20pct",
+        "local_observation_id": "metric_fordham_rd_travel_time_reduction_20pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_fordham-road-sbs-2010-01-14",
+            "object_id": "metric_fordham-rd-travel-time-reduction-20pct",
+            "description": "Fordham Road SBS: 20% reduction in running time",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p016_c0008",
+                "source_quote": "Travel Time: 20% reduction in running time"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p016_c0008 appears under the page heading 'Fordham Road Select Bus Service' (p016_c0002) and states the travel time result.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p016_c0008",
+            "source_quote": "Travel Time: 20% reduction in running time"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-fordham-ridership-10pct",
+        "local_observation_id": "metric_fordham_rd_ridership_increase_10pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_fordham-road-sbs-2010-01-14",
+            "object_id": "metric_fordham-rd-ridership-increase-10pct",
+            "description": "Fordham Road SBS: 10% ridership increase October 2007 to October 2008",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p016_c0009",
+                "source_quote": "Ridership: 10% increase from October 2007 to October 2008"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p016_c0009 appears under 'Fordham Road Select Bus Service' and states the ridership result.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p016_c0009",
+            "source_quote": "Ridership: 10% increase from October 2007 to October 2008"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-fordham-satisfaction-98pct",
+        "local_observation_id": "metric_fordham_rd_customer_satisfaction_98pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_fordham-road-sbs-2010-01-14",
+            "object_id": "metric_fordham-rd-customer-satisfaction-98pct",
+            "description": "Fordham Road SBS: 98% customer satisfaction",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p016_c0010",
+                "source_quote": "Customer Satisfaction: 98% satisfied or very satisfied"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p016_c0010 appears under 'Fordham Road Select Bus Service' and states the satisfaction result.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p016_c0010",
+            "source_quote": "Customer Satisfaction: 98% satisfied or very satisfied"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-first-ave-ped-fatalities-7",
+        "local_observation_id": "metric_first_ave_pedestrian_fatalities_7",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_first-ave-pedestrian-fatalities-7",
+            "description": "First Avenue pedestrian fatalities 2006-2008: 7",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p017_c0006",
+                "source_quote": "Pedestrian fatalities Pedestrian crashes First Avenue 7 538"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p017_c0006 explicitly names 'First Avenue' and states 7 pedestrian fatalities.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p017_c0006",
+            "source_quote": "First Avenue 7"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-second-ave-ped-fatalities-4",
+        "local_observation_id": "metric_second_ave_pedestrian_fatalities_4",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_second-ave-pedestrian-fatalities-4",
+            "description": "Second Avenue pedestrian fatalities 2006-2008: 4",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p017_c0006",
+                "source_quote": "Second Avenue 4 597"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p017_c0006 explicitly names 'Second Avenue' and states 4 pedestrian fatalities.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p017_c0006",
+            "source_quote": "Second Avenue 4"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-first-ave-ped-crashes-538",
+        "local_observation_id": "metric_first_ave_pedestrian_crashes_538",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_first-ave-pedestrian-crashes-538",
+            "description": "First Avenue pedestrian crashes 2006-2008: 538",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p017_c0006",
+                "source_quote": "Pedestrian fatalities Pedestrian crashes First Avenue 7 538"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p017_c0006 explicitly names 'First Avenue' and states 538 pedestrian crashes.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p017_c0006",
+            "source_quote": "First Avenue 7 538"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-second-ave-ped-crashes-597",
+        "local_observation_id": "metric_second_ave_pedestrian_crashes_597",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_second-ave-pedestrian-crashes-597",
+            "description": "Second Avenue pedestrian crashes 2006-2008: 597",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p017_c0006",
+                "source_quote": "Second Avenue 4 597"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p017_c0006 explicitly names 'Second Avenue' and states 597 pedestrian crashes.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p017_c0006",
+            "source_quote": "Second Avenue 4 597"
+          }
+        ]
+      },
+      {
+        "decision_id": "unc-ped-injuries-broadway",
+        "local_observation_id": "metric_pedestrian_injuries_broadway_down_40pct",
+        "decision": "uncertain",
+        "rationale": "Evidence block p018_c0006 names 'Broadway' but this is a result from a different project cited as precedent; no canonical Broadway corridor record exists in the registry for this context.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p018_c0006",
+            "source_quote": "Pedestrian injuries on Broadway: ↓ 40%"
+          }
+        ]
+      },
+      {
+        "decision_id": "unc-ped-injuries-ninth-ave",
+        "local_observation_id": "metric_pedestrian_injuries_ninth_ave_down_29pct",
+        "decision": "uncertain",
+        "rationale": "Evidence block p018_c0006 names 'Ninth Avenue' but this is a result from a different project cited as precedent; no canonical Ninth Avenue subject record exists for this context.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p018_c0006",
+            "source_quote": "Ninth Avenue: ↓ 29%"
+          }
+        ]
+      },
+      {
+        "decision_id": "unc-ped-injuries-grand-st",
+        "local_observation_id": "metric_pedestrian_injuries_grand_street_down_28pct",
+        "decision": "uncertain",
+        "rationale": "Evidence block p018_c0006 names 'Grand Street' but this is a result from a different project cited as precedent; no canonical Grand Street subject record exists for this context.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p018_c0006",
+            "source_quote": "Grand Street: ↓ 28%"
+          }
+        ]
+      },
+      {
+        "decision_id": "unc-bike-volumes-broadway",
+        "local_observation_id": "metric_bike_volumes_broadway_up_58pct",
+        "decision": "uncertain",
+        "rationale": "Evidence block p020_c0005 names 'Broadway' but this is a bike volume result from a different project cited as precedent.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p020_c0005",
+            "source_quote": "Broadway \\uparrow 58%"
+          }
+        ]
+      },
+      {
+        "decision_id": "unc-bike-volumes-ninth-ave",
+        "local_observation_id": "metric_bike_volumes_ninth_ave_up_37pct",
+        "decision": "uncertain",
+        "rationale": "Evidence block p020_c0006 names 'Ninth Avenue' but this is a bike volume result from a different project cited as precedent.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p020_c0006",
+            "source_quote": "Ninth Avenue \\uparrow 37%"
+          }
+        ]
+      },
+      {
+        "decision_id": "unc-bike-volumes-grand-st",
+        "local_observation_id": "metric_bike_volumes_grand_street_up_24pct",
+        "decision": "uncertain",
+        "rationale": "Evidence block p020_c0007 names 'Grand Street' but this is a bike volume result from a different project cited as precedent.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p020_c0007",
+            "source_quote": "Grand Street \\uparrow 24%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-improve-bus-service",
+        "local_observation_id": "claim_design_goals_improve_bus_service",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs-cac3",
+            "object_id": "claim_design-goals-improve-bus-service",
+            "description": "Design goal: Improve bus service",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p014_c0003",
+                "source_quote": "Improve bus service"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence blocks p014_c0003, p017_c0003, p019_c0003, p021_c0003 all state 'Improve bus service' as a design goal for the First Avenue/Second Avenue SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p014_c0003",
+            "source_quote": "Improve bus service"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-improve-ped-safety",
+        "local_observation_id": "claim_design_goals_improve_pedestrian_safety",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs-cac3",
+            "object_id": "claim_design-goals-improve-pedestrian-safety",
+            "description": "Design goal: Improve pedestrian safety",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p017_c0004",
+                "source_quote": "Improve pedestrian safety"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence blocks p017_c0004, p019_c0004, p021_c0004 all state 'Improve pedestrian safety' as a design goal.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p017_c0004",
+            "source_quote": "Improve pedestrian safety"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-improve-bicycle-access",
+        "local_observation_id": "claim_design_goals_improve_bicycle_access",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs-cac3",
+            "object_id": "claim_design-goals-improve-bicycle-access",
+            "description": "Design goal: Improve bicycle access on the East Side",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p019_c0005",
+                "source_quote": "Improve bicycle access on the East Side"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence blocks p019_c0005 and p021_c0005 state 'Improve bicycle access on the East Side' as a design goal.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p019_c0005",
+            "source_quote": "Improve bicycle access on the East Side"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-maintain-traffic-flow",
+        "local_observation_id": "claim_design_goals_maintain_traffic_flow",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs-cac3",
+            "object_id": "claim_design-goals-maintain-traffic-flow",
+            "description": "Design goal: Maintain traffic flow",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p021_c0006",
+                "source_quote": "Maintain traffic flow"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p021_c0006 states 'Maintain traffic flow' as a design goal for the project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p021_c0006",
+            "source_quote": "Maintain traffic flow"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-curb-access-deliveries",
+        "local_observation_id": "claim_design_goals_curb_access_deliveries",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs-cac3",
+            "object_id": "claim_design-goals-curb-access-deliveries",
+            "description": "Design goal: Allow curb access for deliveries, dropoffs",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p021_c0007",
+                "source_quote": "Allow curb access for deliveries, dropoffs"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p021_c0007 states 'Allow curb access for deliveries, dropoffs' as a design goal.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p021_c0007",
+            "source_quote": "Allow curb access for deliveries, dropoffs"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-metered-parking",
+        "local_observation_id": "claim_design_goals_metered_parking",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs-cac3",
+            "object_id": "claim_design-goals-metered-parking",
+            "description": "Design goal: Provide metered parking",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p021_c0008",
+                "source_quote": "Provide metered parking"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p021_c0008 states 'Provide metered parking' as a design goal.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p021_c0008",
+            "source_quote": "Provide metered parking"
+          }
+        ]
+      },
+      {
+        "decision_id": "unc-protected-bicycle-paths-features",
+        "local_observation_id": "claim_protected_bicycle_paths_features",
+        "decision": "uncertain",
+        "rationale": "Evidence block p018_c0004 describes features of protected bicycle paths on Broadway, Ninth Ave, and Grand Street — projects cited as precedent, not the First/Second Avenue project itself.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p018_c0004",
+            "source_quote": "Physically separated right-of-way Pedestrian refuge islands Floating Parking Trees and plantings"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-corridor-treatment-variation",
+        "local_observation_id": "claim_corridor_treatment_variation",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs-cac3",
+            "object_id": "claim_corridor-treatment-variation",
+            "description": "Street design rationale: range of treatments due to traffic levels, street width changes, and curbside access needs",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p023_c0003",
+                "source_quote": "Range of treatments throughout the corridor due to:"
+              },
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p023_c0004",
+                "source_quote": "Traffic levels"
+              },
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p023_c0005",
+                "source_quote": "Changes in street width"
+              },
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p023_c0006",
+                "source_quote": "Curbside access needs"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence blocks p023_c0003-6 state the street design rationale for the First Avenue/Second Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p023_c0003",
+            "source_quote": "Range of treatments throughout the corridor due to:"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-cac-meeting-3",
+        "local_observation_id": "event_cac_meeting_3_2010_01_14",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs-cac3",
+            "object_id": "event_cac-meeting-3-2010-01-14",
+            "description": "CAC Meeting #3: Bike Facility Design, January 2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p004_c0003",
+                "source_quote": "CAC meeting #3: bike facility design"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p004_c0003 shows the 2010 schedule with 'CAC meeting #3: bike facility design' in January.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p004_c0003",
+            "source_quote": "CAC meeting #3: bike facility design"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-cb-meetings-first-open-house",
+        "local_observation_id": "event_cb_meetings_first_open_house_2010_02",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs-cac3",
+            "object_id": "event_cb-meetings-first-open-house-2010-02",
+            "description": "CB meetings, First open house, February 2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p004_c0003",
+                "source_quote": "CB meetings, First open house"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p004_c0003 shows 'CB meetings, First open house' in February on the 2010 schedule.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p004_c0003",
+            "source_quote": "CB meetings, First open house"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-cac-meeting-4",
+        "local_observation_id": "event_cac_meeting_4_2010_03",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs-cac3",
+            "object_id": "event_cac-meeting-4-2010-03",
+            "description": "CAC Meeting #4: Curb Regulations, March 2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p004_c0003",
+                "source_quote": "CAC meeting #4: curb regulations"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p004_c0003 shows 'CAC meeting #4: curb regulations' in March/April, and p037_c0006 confirms 'Fourth CAC meeting - March 2010'.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p004_c0003",
+            "source_quote": "CAC meeting #4: curb regulations"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-cac-meeting-5",
+        "local_observation_id": "event_cac_meeting_5_2010_06",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs-cac3",
+            "object_id": "event_cac-meeting-5-2010-06",
+            "description": "CAC Meeting #5, June 2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p004_c0003",
+                "source_quote": "CAC meeting #5"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p004_c0003 shows 'CAC meeting #5' in June on the 2010 schedule.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p004_c0003",
+            "source_quote": "CAC meeting #5"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-finalize-station-locations",
+        "local_observation_id": "event_finalize_station_locations_2010_01",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs-cac3",
+            "object_id": "event_finalize-station-locations-2010-01",
+            "description": "Finalize station locations, January 2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p004_c0003",
+                "source_quote": "Finalize station locations"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p004_c0003 shows 'Finalize station locations' as a January 2010 milestone.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p004_c0003",
+            "source_quote": "Finalize station locations"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-finalize-phase1-design",
+        "local_observation_id": "event_finalize_phase1_design_2010_05",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs-cac3",
+            "object_id": "event_finalize-phase1-design-2010-05",
+            "description": "Finalize Phase 1 design, May 2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p004_c0003",
+                "source_quote": "Finalize Phase 1 design"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p004_c0003 shows 'Finalize Phase 1 design' as a May 2010 milestone.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p004_c0003",
+            "source_quote": "Finalize Phase 1 design"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-ceqr-seqr-approval",
+        "local_observation_id": "event_ceqr_seqr_approval_2010_06",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs-cac3",
+            "object_id": "event_ceqr-seqr-approval-2010-06",
+            "description": "CEQR/SEQR Approval, June 2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p004_c0003",
+                "source_quote": "CEQR/ SEQR Approval"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p004_c0003 shows 'CEQR/SEQR Approval' as a June 2010 milestone.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p004_c0003",
+            "source_quote": "CEQR/ SEQR Approval"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-complete-installation",
+        "local_observation_id": "event_complete_installation_physical_elements_2010_09",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs-cac3",
+            "object_id": "event_complete-installation-physical-elements-2010-09",
+            "description": "Complete installation of physical elements, September 2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p004_c0003",
+                "source_quote": "Complete installation of physical elements"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p004_c0003 shows 'Complete installation of physical elements' as a September 2010 milestone.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p004_c0003",
+            "source_quote": "Complete installation of physical elements"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-second-open-house",
+        "local_observation_id": "event_second_open_house_2010_10",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs-cac3",
+            "object_id": "event_second-open-house-2010-10",
+            "description": "Second open house, October 2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p004_c0003",
+                "source_quote": "Second open house"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p004_c0003 shows 'Second open house' as an October 2010 outreach activity.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p004_c0003",
+            "source_quote": "Second open house"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-phase1-sbs-implementation",
+        "local_observation_id": "event_phase1_sbs_implementation_2010_11",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs-cac3",
+            "object_id": "event_phase1-sbs-implementation-2010-11",
+            "description": "Phase 1 SBS Implementation, November 2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p004_c0003",
+                "source_quote": "Phase 1 SBS Implementation"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p004_c0003 shows 'Phase 1 SBS Implementation' as a November 2010 milestone.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p004_c0003",
+            "source_quote": "Phase 1 SBS Implementation"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T20-46-32-092Z_1744250-41006ac6_canonicalize_2026-06-10t17-48-04-658z-1496766-855f41d9-ingest-2010-01-14-brt-1st2nd-cac3-relation-linker"
+}

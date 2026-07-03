@@ -1,0 +1,578 @@
+{
+  "run_id": "2026-06-10T22-56-13-345Z_1976810-5bb38f51_ingest_201109-brt-hylan-introductory-info",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T01:40:03.031Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "d001-metric-hylan-vehicles-per-day",
+        "local_observation_id": "metric_hylan_vehicles_per_day",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "metric_hylan-vehicles-per-day",
+            "description": "28,000 vehicles per day on Hylan Blvd corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_introductory_info",
+                "block_id": "p004_c0004",
+                "source_quote": "28,000 vehicles pass through the corridor on a typical weekday"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric describes traffic volume on the Hylan Boulevard corridor; cited text names the corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p004_c0004",
+            "source_quote": "28,000 vehicles pass through the corridor on a typical weekday"
+          }
+        ]
+      },
+      {
+        "decision_id": "d002-metric-hylan-commute-over-60min-pct",
+        "local_observation_id": "metric_hylan_commute_over_60min_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "metric_hylan-commute-over-60min-pct",
+            "description": "72% of transit commuters on Hylan Blvd corridor have trips longer than 60 minutes",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_introductory_info",
+                "block_id": "p004_c0006",
+                "source_quote": "72% of transit commuters have a trip longer than 60 minutes"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric describes commute time percentage for transit commuters in the Hylan Blvd corridor; scope explicitly names the corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p004_c0006",
+            "source_quote": "72% of transit commuters have a trip longer than 60 minutes"
+          }
+        ]
+      },
+      {
+        "decision_id": "d003-metric-hylan-transit-commute-share",
+        "local_observation_id": "metric_hylan_transit_commute_share",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "metric_hylan-transit-commute-share",
+            "description": "20% of people in the Hylan Blvd corridor commute by transit",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_introductory_info",
+                "block_id": "p004_c0006",
+                "source_quote": "20% of people in the Hylan Blvd corridor commute by transit"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric describes transit mode share for the Hylan Blvd corridor; cited text explicitly names the corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p004_c0006",
+            "source_quote": "20% of people in the Hylan Blvd corridor commute by transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "d004-metric-hylan-si-bus-commuters-along-hylan",
+        "local_observation_id": "metric_hylan_si_bus_commuters_along_hylan",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "metric_hylan-si-bus-commuters-along-hylan",
+            "description": "One third of all SI bus commuters live along Hylan Blvd",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_introductory_info",
+                "block_id": "p004_c0006",
+                "source_quote": "One third of all SI bus commuters live along Hylan Blvd"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric describes share of Staten Island bus commuters living along Hylan Blvd; cited text explicitly names Hylan Blvd.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p004_c0006",
+            "source_quote": "One third of all SI bus commuters live along Hylan Blvd"
+          }
+        ]
+      },
+      {
+        "decision_id": "d005-metric-hylan-express-bus-trips",
+        "local_observation_id": "metric_hylan_express_bus_trips",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "metric_hylan-express-bus-trips",
+            "description": "15,000 trips/day on 8 express bus routes serving the Hylan Blvd corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_introductory_info",
+                "block_id": "p004_c0006",
+                "source_quote": "15,000 trips/day on 8 express bus routes"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric describes daily ridership on express bus routes that serve the Hylan Blvd corridor; part of the corridor baseline conditions.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p004_c0006",
+            "source_quote": "15,000 trips/day on 8 express bus routes"
+          }
+        ]
+      },
+      {
+        "decision_id": "d006-metric-hylan-s78-s79-daily-trips",
+        "local_observation_id": "metric_hylan_s78_s79_daily_trips",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "metric_hylan-s78-s79-daily-trips",
+            "description": "16,000 trips/day on S78 and S79 local buses on Hylan Blvd",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_introductory_info",
+                "block_id": "p004_c0006",
+                "source_quote": "16,000 trips/day on S78 and S79 local buses"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_s78-hylan-2010",
+            "object_id": "metric_hylan-s78-s79-daily-trips",
+            "description": "16,000 trips/day on S78 (combined with S79) local buses",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_introductory_info",
+                "block_id": "p004_c0006",
+                "source_quote": "16,000 trips/day on S78 and S79 local buses"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_s79-hylan-2010",
+            "object_id": "metric_hylan-s78-s79-daily-trips",
+            "description": "16,000 trips/day on S79 (combined with S78) local buses",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_introductory_info",
+                "block_id": "p004_c0006",
+                "source_quote": "16,000 trips/day on S78 and S79 local buses"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric names S78 and S79 local buses explicitly; links to both the Hylan corridor and the two specific bus routes.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p004_c0006",
+            "source_quote": "16,000 trips/day on S78 and S79 local buses"
+          }
+        ]
+      },
+      {
+        "decision_id": "d007-claim-hylan-only-continuous-ns-route",
+        "local_observation_id": "claim_hylan_only_continuous_ns_route",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "claim_hylan-only-continuous-ns-route",
+            "description": "Hylan Blvd is the only continuous North-South route on the south shore",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_introductory_info",
+                "block_id": "p004_c0004",
+                "source_quote": "Hylan Blvd is the only continuous North-South route on the south shore"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim describes a corridor characteristic of Hylan Blvd; cited text explicitly names Hylan Blvd.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p004_c0004",
+            "source_quote": "Hylan Blvd is the only continuous North-South route on the south shore"
+          }
+        ]
+      },
+      {
+        "decision_id": "d008-claim-hylan-congestion-delays",
+        "local_observation_id": "claim_hylan_congestion_delays",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "claim_hylan-congestion-delays",
+            "description": "Congested intersections on Hylan Blvd cause travel time delays",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_introductory_info",
+                "block_id": "p004_c0004",
+                "source_quote": "Congested intersections cause travel time delays"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim identifies a corridor issue on Hylan Blvd; description explicitly references the corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p004_c0004",
+            "source_quote": "Congested intersections cause travel time delays"
+          }
+        ]
+      },
+      {
+        "decision_id": "d009-claim-hylan-congestion-reduces-bus-reliability",
+        "local_observation_id": "claim_hylan_congestion_reduces_bus_reliability",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "claim_hylan-congestion-reduces-bus-reliability",
+            "description": "Congestion on Hylan Blvd reduces reliability of bus services",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_introductory_info",
+                "block_id": "p004_c0006",
+                "source_quote": "Congestion causes delays and reduces reliability of local and express bus services"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim identifies a corridor issue; description references congestion on Hylan Blvd specifically.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p004_c0006",
+            "source_quote": "Congestion causes delays and reduces reliability of local and express bus services"
+          }
+        ]
+      },
+      {
+        "decision_id": "d010-claim-hylan-safety-improvement",
+        "local_observation_id": "claim_hylan_safety_improvement",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "claim_hylan-safety-improvement",
+            "description": "Safety can be improved for all Hylan Blvd corridor users",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_introductory_info",
+                "block_id": "p004_c0004",
+                "source_quote": "Safety can be improved for all corridor users, including motorists, transit riders and pedestrians"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim describes a corridor issue; cited text explicitly names corridor users.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p004_c0004",
+            "source_quote": "Safety can be improved for all corridor users, including motorists, transit riders and pedestrians"
+          }
+        ]
+      },
+      {
+        "decision_id": "d011-claim-hylan-goal-improve-safety",
+        "local_observation_id": "claim_hylan_goal_improve_safety",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "claim_hylan-goal-improve-safety",
+            "description": "Project goal: improve safety for all corridor users",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_introductory_info",
+                "block_id": "p004_c0008",
+                "source_quote": "Improve safety for all corridor users"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim states a project goal for the Hylan Boulevard Transportation Improvement Study; description confirms this.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p004_c0008",
+            "source_quote": "Improve safety for all corridor users"
+          }
+        ]
+      },
+      {
+        "decision_id": "d012-claim-hylan-goal-improve-traffic-flow",
+        "local_observation_id": "claim_hylan_goal_improve_traffic_flow",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "claim_hylan-goal-improve-traffic-flow",
+            "description": "Project goal: improve traffic flow on Hylan Blvd",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_introductory_info",
+                "block_id": "p004_c0008",
+                "source_quote": "Improve traffic flow"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim states a project goal for the Hylan Boulevard Transportation Improvement Study.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p004_c0008",
+            "source_quote": "Improve traffic flow"
+          }
+        ]
+      },
+      {
+        "decision_id": "d013-claim-hylan-goal-reduce-bus-travel-time",
+        "local_observation_id": "claim_hylan_goal_reduce_bus_travel_time",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "claim_hylan-goal-reduce-bus-travel-time",
+            "description": "Project goal: reduce bus travel time and improve reliability",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_introductory_info",
+                "block_id": "p004_c0008",
+                "source_quote": "Reduce bus travel time and improve bus travel time reliability"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim states a project goal for the Hylan Boulevard Transportation Improvement Study.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p004_c0008",
+            "source_quote": "Reduce bus travel time and improve bus travel time reliability"
+          }
+        ]
+      },
+      {
+        "decision_id": "d014-claim-hylan-goal-improve-transit-access",
+        "local_observation_id": "claim_hylan_goal_improve_transit_access",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "claim_hylan-goal-improve-transit-access",
+            "description": "Project goal: improve transit access to Manhattan, Brooklyn and SI destinations",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_introductory_info",
+                "block_id": "p004_c0008",
+                "source_quote": "Improve transit access to Manhattan, Brooklyn and to SI destinations"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim states a project goal for the Hylan Boulevard Transportation Improvement Study.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p004_c0008",
+            "source_quote": "Improve transit access to Manhattan, Brooklyn and to SI destinations"
+          }
+        ]
+      },
+      {
+        "decision_id": "d015-claim-hylan-goal-maintain-business-access",
+        "local_observation_id": "claim_hylan_goal_maintain_business_access",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "claim_hylan-goal-maintain-business-access",
+            "description": "Project goal: maintain access to Hylan Blvd businesses",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_introductory_info",
+                "block_id": "p004_c0008",
+                "source_quote": "Maintain access to Hylan Blvd businesses"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim states a project goal for the Hylan Boulevard Transportation Improvement Study.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p004_c0008",
+            "source_quote": "Maintain access to Hylan Blvd businesses"
+          }
+        ]
+      },
+      {
+        "decision_id": "d016-event-cb-meeting-jun2010",
+        "local_observation_id": "event_hylan_meeting_community_boards_jun2010",
+        "decision": "skip",
+        "rationale": "Already linked via existing relation: has_timeline_event project_hylan-blvd-transportation-improvement-study -> event_hylan-meeting-community-boards-jun2010.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p005_c0002",
+            "source_quote": "Meeting with Community Boards 1, 2 & 3, and Staten Island Elected Officials (June 18, 2010)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d017-event-cac-meeting-1-oct2010",
+        "local_observation_id": "event_hylan_cac_meeting_1_oct2010",
+        "decision": "skip",
+        "rationale": "Already linked via existing relation: has_timeline_event project_hylan-blvd-transportation-improvement-study -> event_hylan-cac-meeting-1-oct2010.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p005_c0002",
+            "source_quote": "CAC Meeting #1 (October 25, 2010)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d018-event-public-meeting-dec2010",
+        "local_observation_id": "event_hylan_public_meeting_dec2010",
+        "decision": "skip",
+        "rationale": "Already linked via existing relation: has_timeline_event project_hylan-blvd-transportation-improvement-study -> event_hylan-public-meeting-dec2010.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p005_c0002",
+            "source_quote": "Public Meeting (December 2, 2010)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d019-event-cac-meeting-2-jun2011",
+        "local_observation_id": "event_hylan_cac_meeting_2_jun2011",
+        "decision": "skip",
+        "rationale": "Already linked via existing relation: has_timeline_event project_hylan-blvd-transportation-improvement-study -> event_hylan-cac-meeting-2-jun2011.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p005_c0002",
+            "source_quote": "CAC Meeting #2 (June 2, 2011)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d020-event-public-meeting-jun2011",
+        "local_observation_id": "event_hylan_public_meeting_jun2011",
+        "decision": "skip",
+        "rationale": "Already linked via existing relation: has_timeline_event project_hylan-blvd-transportation-improvement-study -> event_hylan-public-meeting-jun2011.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p005_c0002",
+            "source_quote": "Public Meeting (June 8, 2011)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d021-event-public-meeting-sep2011",
+        "local_observation_id": "event_hylan_public_meeting_sep2011",
+        "decision": "skip",
+        "rationale": "Already linked via existing relation: has_timeline_event project_hylan-blvd-transportation-improvement-study -> event_hylan-public-meeting-sep2011.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p005_c0002",
+            "source_quote": "Public Meeting (September 15, 2011)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d022-event-cac-meeting-3-nov2011",
+        "local_observation_id": "event_hylan_cac_meeting_3_nov2011",
+        "decision": "skip",
+        "rationale": "Already linked via existing relation: has_timeline_event project_hylan-blvd-transportation-improvement-study -> event_hylan-cac-meeting-3-nov2011.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p005_c0002",
+            "source_quote": "CAC Meeting #3*"
+          }
+        ]
+      },
+      {
+        "decision_id": "d023-event-public-meetings-dec2011",
+        "local_observation_id": "event_hylan_public_meetings_dec2011",
+        "decision": "skip",
+        "rationale": "Already linked via existing relation: has_timeline_event project_hylan-blvd-transportation-improvement-study -> event_hylan-public-meetings-dec2011.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p005_c0002",
+            "source_quote": "Public Meetings*"
+          }
+        ]
+      },
+      {
+        "decision_id": "d024-event-implementation-target",
+        "local_observation_id": "event_hylan_implementation_target",
+        "decision": "skip",
+        "rationale": "Already linked via existing relation: has_timeline_event project_hylan-blvd-transportation-improvement-study -> event_hylan-implementation-target.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p005_c0002",
+            "source_quote": "Implementation (Target 2012 or 2013)"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-37-50-109Z_2111393-92c5988c_canonicalize_2026-06-10t22-56-13-345z-1976810-5bb38f51-ingest-201109-brt-hylan-introductory-info-relation-linker"
+}

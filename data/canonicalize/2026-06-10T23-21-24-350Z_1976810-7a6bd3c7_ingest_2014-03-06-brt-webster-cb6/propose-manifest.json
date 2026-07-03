@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T23-21-24-350Z_1976810-7a6bd3c7_ingest_2014-03-06-brt-webster-cb6",
+  "generated_at": "2026-06-11T04:04:51.937Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 35,
+  "validated_decision_count": 0,
+  "quarantined_decision_count": 6,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T23-21-24-350Z_1976810-7a6bd3c7_ingest_2014-03-06-brt-webster-cb6",
+    "manifest": "data/canonicalize/2026-06-10T23-21-24-350Z_1976810-7a6bd3c7_ingest_2014-03-06-brt-webster-cb6/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T23-21-24-350Z_1976810-7a6bd3c7_ingest_2014-03-06-brt-webster-cb6/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-21-24-350Z_1976810-7a6bd3c7_ingest_2014-03-06-brt-webster-cb6/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T23-21-24-350Z_1976810-7a6bd3c7_ingest_2014-03-06-brt-webster-cb6/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-21-24-350Z_1976810-7a6bd3c7_ingest_2014-03-06-brt-webster-cb6/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-04-48-271Z_2111393-63486125_canonicalize_2026-06-10t23-21-24-350z-1976810-7a6bd3c7-ingest-2014-03-06-brt-webster-cb6-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-21-24-350Z_1976810-7a6bd3c7_ingest_2014-03-06-brt-webster-cb6/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-04-48-271Z_2111393-d3b7a667_canonicalize_2026-06-10t23-21-24-350z-1976810-7a6bd3c7-ingest-2014-03-06-brt-webster-cb6-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-21-24-350Z_1976810-7a6bd3c7_ingest_2014-03-06-brt-webster-cb6/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-04-48-271Z_2111393-6645e698_canonicalize_2026-06-10t23-21-24-350z-1976810-7a6bd3c7-ingest-2014-03-06-brt-webster-cb6-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-21-24-350Z_1976810-7a6bd3c7_ingest_2014-03-06-brt-webster-cb6/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-04-48-271Z_2111393-82b12887_canonicalize_2026-06-10t23-21-24-350z-1976810-7a6bd3c7-ingest-2014-03-06-brt-webster-cb6-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-21-24-350Z_1976810-7a6bd3c7_ingest_2014-03-06-brt-webster-cb6/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-04-48-271Z_2111393-c20081e1_canonicalize_2026-06-10t23-21-24-350z-1976810-7a6bd3c7-ingest-2014-03-06-brt-webster-cb6-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-21-24-350Z_1976810-7a6bd3c7_ingest_2014-03-06-brt-webster-cb6/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-04-48-271Z_2111393-c0bad559_canonicalize_2026-06-10t23-21-24-350z-1976810-7a6bd3c7-ingest-2014-03-06-brt-webster-cb6-relation-linker"
+    }
+  ]
+}

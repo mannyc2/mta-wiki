@@ -1,0 +1,301 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_2014-hylan-blvd-final-report"
+record_kind: "source"
+display_name: "S79 on Hylan Boulevard +selectbus service Progress Report"
+source_id: "2014_hylan_blvd_final_report"
+source_ids:
+  - "2014_hylan_blvd_final_report"
+local_observation_id: "source_2014_hylan_blvd_final_report"
+local_observation_ids:
+  - "source_2014_hylan_blvd_final_report"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T17:54:36.069Z"
+submission_ids:
+  - "sub_ef5b1af8186b0dfa"
+payload:
+  authority_tier: "plan_document"
+  content_type: "progress report"
+  published_date_normalized: "2014"
+  published_date_precision: "year"
+  published_date_provenance: "staged_metadata"
+  title: "S79 on Hylan Boulevard +selectbus service Progress Report"
+evidence_refs:
+  -
+    block_id: "p001_c0002"
+    evidence_id: "2014_hylan_blvd_final_report#p001_c0002"
+    page_number: 1
+    source_id: "2014_hylan_blvd_final_report"
+    source_path: "raw/sources/2014_hylan_blvd_final_report/blocks.jsonl"
+    text_sha256: "sha256:7b4090b15f7cea94719adeb34729637fbbd3dc4d14b81dd817acff1d85e5a8d6"
+    text_source: "raw_text"
+---
+
+# Read the full report
+
+source_id: 2014_hylan_blvd_final_report
+citation: cite block ids exactly as shown in square brackets
+document: 187 block(s)
+
+## Page 1
+
+> [p001_c0001] A blue and white WATA bus is shown from a front-three-quarter view. The bus's destination sign at the top displays 'S79' in large orange letters and '+SELECT BUS SERVICE+' in smaller orange letters. A blue emergency light is illuminated on the left side of the sign. The bus number '4246' is printed in white on the black panel below the windshield. The side of the bus features a large white circle with the word 'WATA' in blue, followed by the text '+selectbus service' in white. A small blue and white sign on the window indicates 'Route number above' with an upward arrow and 'Control ID for MTA use' with a rightward arrow. Several people are waiting at the bus stop on the left, including a woman with curly hair and sunglasses. The bus is parked on a street with a yellow curb.
+### [p001_c0002] S79 on Hylan Boulevard +selectbus service Progress Report
+
+## Page 2
+
+### [p002_c0001] EXECUTIVE SUMMARY
+[p002_c0002] In September 2012, MTA New York City Transit and the New York City Department of Transportation implemented Select Bus Service along the S79 route, primarily along Hylan Boulevard (see Figure 1 below). This project was developed with substantial community consultation, which resulted in a project designed not only to improve service on the S79 and on local and express bus routes on the corridors, and to improve conditions for drivers and pedestrians along the corridor. The results of the project were as follows:
+- [p002_c0003] • 13-19% improvement in bus speeds on the S79; • Ridership increase of 10.8% of the S79 and increase of 6.6% on the combined S59/78/79, at a time when there was a 1.2% increase on other Staten Island routes; • No substantial impact on traffic flow; • Many new sidewalks, bus shelters, and other benefits to pedestrians.
+[p002_c0004] This report lays out the planning process behind the project, provides details on what the project contained, provides results of the project in greater detail, and suggests additional future improvements on the corridor.
+> [p002_c0005] The map, titled 'Hylan Boulevard/Richmond Avenue Select Bus Service', shows the SBS route (red line with dots) and the Staten Island Railway (dashed blue line) along Hylan Boulevard. Key locations include the Staten Island Transit Center, Eltingville Transit Center, and various bus stops and transit hubs. A legend in the top right corner identifies the SBS Route and Stations, the Staten Island Railway, and Bus Transit Hubs. A scale bar indicates distances up to 1.0 mile, and a north arrow is also present.
+[p002_c0006] _Figure 1 – Hylan Boulevard SBS corridor_
+[p002_c0007] _Executive Summary_
+[p002_c0008] _1_
+
+## Page 3
+
+### [p003_c0001] INTRODUCTION
+[p003_c0002] Hylan Boulevard is one of the most important transportation corridors on Staten Island, serving as the primary route along Staten Island's east and south shores. Over the past several years, the Department of Transportation (DOT) has implemented many upgrades to traffic along the corridor, including new left turn bays, banned left turns at other locations, and upgraded traffic signal timing. However, despite these changes prior to 2012, the corridor remained congested at many times of day, which caused problems for all corridor travelers.
+[p003_c0003] Hylan Boulevard is a key route for automobile traffic, carrying more than 40,000 daily vehicles (at New Dorp Lane), with much of the traffic headed to the Verrazano-Narrows Bridge (VNB). For most of Hylan Boulevard, no continuous parallel streets are available, although Father Capodanno Boulevard provides an alternate route to the VNB for the northern two miles of the corridor, north of Midland Avenue. Traffic congestion can be severe at peak hours, particularly at bottleneck intersections where large numbers of turning vehicles and cross traffic limits the amount of traffic signal time available to through traffic.
+[p003_c0004] Hylan Boulevard is also the most important corridor for bus service in the Borough, including local bus services connecting to the Staten Island Ferry and to Brooklyn, and express bus services to Manhattan. Hylan Boulevard carries over 32,000 customers per day on all of the local and express bus routes combined. However, bus travel times were slow, with one-way travel time on the S79 from the beginning to the end of the route generally exceeding one hour.
+[p003_c0005] With more than 2.9 million annual passengers and nearly 9,000 customers on an average weekday, the 15-mile S79 bus route is the second busiest bus route on Staten Island. The S79 provides service between the Staten Island Mall and the 86th Street subway station in Bay Ridge, Brooklyn, via Hylan Boulevard and Richmond Avenue. The S79 provides transfer opportunities to/from the Staten Island Railway, the R subway line in Brooklyn and many of the local and express bus routes traversing the island. Along its route it made three deviations to serve destinations off the main corridor: the Eltingville Transit Center (ETC) the Yukon Bus Depot, and Richmond Hill Road. The corridor is also served by the S78 local and by eight express bus routes.
+[p003_c0006] Additionally, Hylan Boulevard provides many challenges for pedestrians. The seventy-foot width of the street and the high volume of traffic make crossing difficult. In many locations sidewalks and curb ramps were in disrepair or were non-existent. Since every bus rider is a pedestrian for a portion of their trip – and most need to cross the street at some point – addressing these pedestrian issues was a key goal of the project.
+[p003_c0007] Although the project was focused on the S79 bus route, this also provided an opportunity to holistically address the needs of the Hylan Boulevard corridor. The project looked not only at the S79, but also at other bus routes, traffic patterns, and pedestrian needs along the corridor.
+[p003_c0008] _Introduction_
+[p003_c0009] _2_
+
+## Page 4
+
+### [p004_c0001] PROJECT BACKGROUND
+[p004_c0002] In 2004, NYCT, DOT, and the New York State Department of Transportation (NYSDOT) launched a series of initiatives to reverse the decline in bus speeds and improve the reliability and comfort of bus service, including a joint study of how Bus Rapid Transit (BRT) could be implemented in New York City. The study identified candidate corridors for BRT leading to the selection of five “Phase 1” projects citywide, which were branded as Select Bus Service (SBS). NYCT and NYCDOT have been implementing these SBS routes, beginning with the Bx12 Fordham Road-Pelham Parkway corridor in 2008, the M15 First Avenue / Second Avenue corridor in 2010, and the M34 34th Street corridor in 2011. Since implementing the S79 Hylan Boulevard Corridor in 2012, NYCT and DOT have also implemented the Bx41 Webster Avenue corridor and the B44 Nostrand Avenue / Rogers Avenue corridor in 2013.
+[p004_c0003] Prior to the launch of the S79 SBS project, the three previously implemented SBS routes launched around the city resulted in consistent improvements to bus service, with bus travel times improving approximately 15-20%, and bus ridership increasing by about 10%, with high levels of customer satisfaction. These results led the agencies to continue planning for implementation of additional routes.
+> [p004_c0004] A photograph of a typical roadway and land use condition along Hylan Boulevard. The image shows a multi-lane street with a crosswalk, traffic lights, and various commercial buildings and signs. A 'LEFT TURN SIGNAL' sign is visible on a traffic light pole. The street is lined with businesses, including 'Crown Jewel' and 'Leady's'. A 'ONLY' marking is visible on the road surface. A white van is parked on the right side of the street.
+[p004_c0005] _Figure 2 – Typical roadway and land use conditions along Hylan Boulevard_
+[p004_c0006] _Project Background_
+[p004_c0007] _3_
+
+## Page 5
+
+### [p005_c0001] PROJECT PLANNING
+[p005_c0002] The S79 was selected for SBS based on high ridership, its interborough connection, the slow speed of the route and the high level of community support for corridor improvements. Specific project work included a detailed study of traffic and parking conditions along the corridor, analysis of needed pedestrian connections, and a complete evaluation of bus service. Together, these efforts produced a project that would deliver a major transit improvement while remaining sensitive to community concerns including respecting the high level of private vehicle use on the corridor.
+### [p005_c0003] Public Outreach Efforts
+[p005_c0004] NYCDOT and NYCT established a Community Advisory Committee (CAC) for the S79 SBS, co-sponsored by Staten Island Borough President James Molinaro. The CAC comprised all of the Community Boards (CBs) along the route, as well as local, state, and federal elected officials and other key stakeholders, such as medical institutions, the Staten Island Mall and independent community groups.
+[p005_c0005] During the course of the project planning, the CAC convened two times, to consider topics that generally followed the sequence of project planning, focusing first on introducing the concepts, then adding more detail about station locations, street design, and parking regulations.
+[p005_c0006] In addition to the CAC meetings, four well-attended open houses were held at a central location. The first open house (December 2010) introduced the project, while at the second open house (June 2011) the project team discussed various design options and how they would be applied in representative sections of the corridor. At the third open house (September 2011), the project team presented an overall design and bus service plan. Finally, at the last open house (March 2012) the project team provided details on the preferred service plan and roadway designs. In addition to these larger meetings, the project team met with elected officials and Community Boards, for a total of 12 community meetings between June 2010 and June 2012.
+[p005_c0007] _Project Planning_
+[p005_c0008] _4_
+
+## Page 6
+
+[p006_c0001]
+
+```text
+June 2010 Meeting with Community Boards 1, 2 and 3, and Staten Island elected officials (June 18, 2010). Sept 2010 – Jan 2011 Assess baseline conditions. Oct 25, 2010 Community Advisory Committee Meeting # 1 Dec 2, 2010 Open House # 1 Feb 2011 – July 2011 Develop and Review Preliminary Draft Concepts June 2, 2011 Community Advisory Committee Meeting # 2 June 8, 2011 Open House # 2 July 2011 – Oct 2011 Develop and Refine Preferred Alternative Sept 5, 2011 Open House # 3 Nov 2011 – Jan 2012 Develop Implementation Plan March 14, 2012 Open House # 4 Sept 2, 2012 S79 SBS LAUNCH
+```
+[p006_c0002] _Table 1: Public outreach process and interaction with other planning work_
+### [p006_c0003] Traffic Planning
+[p006_c0004] NYCDOT and NYCT collected significant information about how buses and traffic use the S79 corridor, as well as collecting data on parking conditions and needs along the corridor. This information was carefully analyzed to ensure that the street changes would result in improved conditions for bus riders, maintenance of traffic flow for all other vehicles on the street, while maintaining curb and property access along the corridor. The project plan went through environmental review with both the local (CEQR) and federal (NEPA) processes, qualifying as a Type II action and as a Categorical Exclusion, respectively.
+[p006_c0005] Because of the high frequency of total bus service (80 buses per hour during peak periods) along Hylan Boulevard, the curbside travel lanes are heavily-used by buses both traveling and stopping. This activity limited the volume of general traffic that used the curb lanes for through movement, as opposed to accessing driveways or turning right at intersections. This condition indicated that it might be feasible and desirable to convert curbside travel lanes on Hylan Boulevard to bus lanes. However, in order to avoid traffic impacts, bus
+[p006_c0006] _Project Planning_
+[p006_c0007] _5_
+
+## Page 7
+
+[p007_c0001] lanes on Hylan Boulevard were only planned in the section where Father Capodanno Boulevard provides a parallel route (approximately 2 miles between the Verrazano-Narrows Bridge and Greeley Avenue) and a fast alternate route between the Bridge and central and southern areas of Hylan Boulevard.
+[p007_c0002] Bus lanes were also planned in two other segments of the corridor. As the S79 bus route travels to and from the Staten Island Mall, it travels along a section of Richmond Avenue with four travel lanes in each direction plus a wide center median with left turn bays (in some cases with double left turn lanes). Because this segment of Richmond Avenue can become congested at peak shopping times but was otherwise under-capacity, full-time bus lanes were installed for approximately 0.6 miles in this area, from Platinum Avenue to just south of Forest Hill Road. Although there is no on-street parking in this area, the bus lanes were placed in the offset position one lane away from the curb in order to normalize the remaining lane widths and reduce off-peak speeding. The resulting configuration has three travel lanes in each direction, in addition to the bus lanes and left turn bays.
+[p007_c0003] At the southernmost section of Richmond Avenue approaching Hylan Boulevard, queues typically formed because most morning-peak traffic and buses from Richmond Avenue turn left to travel north on Hylan Boulevard. A southbound offset bus lane was installed on the final ¼ mile approaching Hylan Boulevard, except for part of the last block, in order to provide sufficient capacity for all traffic at the intersection. In addition to the bus lane there is one general traffic lane and a parking lane in each direction, the same number of lanes as existed before the project was implemented.
+[p007_c0004] The traffic planning for this project was by no means limited to bus lane design. Left turn bays were added at two intersections, and street geometry was adjusted at other locations to help all traffic flow on the corridor. In some locations, flush medians and similar treatments were used to narrow travel lanes to reduce off-peak speeding issues, in ways that did not affect bus service. Finally, traffic signal timing was better coordinated along the corridor, improving flow for both buses and general traffic.
+### [p007_c0005] Station Locations
+[p007_c0006] The Hylan Boulevard corridor is home to three primary local bus routes as well as eight express bus routes. SBS station locations were therefore not considered in isolation, but also considered how this entire set of bus routes could work together to provide a high level of bus service.
+[p007_c0007] As part of the project, the S79 SBS was changed to operate with fewer, more widely-spaced stations than the former S79 local service, which enables buses to travel faster between stations and reduce overall travel time along the corridor. Prior to the SBS project, the S79 local route made 80 stops from end-to-end in each direction. This number was reduced to 18 to speed service, transforming the route to a limited-stop bus service with stops only at major cross streets or transit connections. In Bay Ridge, Brooklyn there are 2 stops, one at the intermodal terminal at 86th Street and one near the Verrazano Bridge. These are the two main transfer points and the busiest locations along the route.
+[p007_c0008] Frequent local bus service is provided by the S59 along Richmond Avenue and the S78 along Hylan Boulevard. At meetings with stakeholders, some customers expressed concern that the local S59 and S78 bus routes would become overcrowded due to the greater stop spacing on the S79 SBS. To address this concern, frequency and service span were increased on these two underlying local services. To also assist in the transition to SBS, an additional free “3rd leg” transfer was offered to customers who start their trip using a local bus, transfer to the S79 SBS, and then connect to a bus or subway in Brooklyn.
+[p007_c0009] _Project Planning_
+[p007_c0010] _6_
+
+## Page 8
+
+> [p008_c0001] A photograph of a blue and white MTA bus at a bus stop on Hylan Boulevard. The bus is labeled 's79 ST MALL' and has the number '130' and '4245' on its front. The bus stop features a blue and white shelter with a sign that says 'CENUSA'. To the left of the bus stop, there is a pink poster that reads '7000 HIGH SCHOOL STUDENTS DROP OUT EVERY SCHOOL DAY. THAT'S A STACK OF DESKS 12 ENTIRE STATE BUILDINGS HIGH. boost Uporg/THState'. In the background, there are buildings, including one with a red roof, and a sign for 'Zio's'. The street is lined with utility poles and wires, and there are other cars visible in the distance.
+[p008_c0002] _Figure 3 – Typical street design and SBS bus station on Hylan Boulevard following project implementation_
+> [p008_c0003] A photograph of a new concrete sidewalk and bus pad at a bus stop. The sidewalk is made of light-colored concrete and has a metal trash can on it. In the background, there is a yellow mobile unit, possibly a food truck, and a blue and white bus stop sign. The street is lined with trees and a grassy area. A silver minivan is parked on the left side of the street.
+[p008_c0004] _Figure 4 – New sidewalk constructed for bus stop previously in dirt path, new concrete bus pad_
+[p008_c0005] _Project Planning_
+[p008_c0006] _7_
+
+## Page 9
+
+[p009_c0001] Community input was essential to deciding the final station locations. Since SBS makes significantly fewer stops than the S79 local service which it replaced, riders were sensitive to station placement. In general S79 SBS and local bus services were located at the same stop, which facilitates transfers between SBS and local services. At some stations, local and/or express bus stops were slightly relocated to make it easier for buses to access the curb, to provide more space for waiting customers, expedite boarding, reduce overall dwell time and to facilitate buses passing each other.
+### [p009_c0002] Pedestrian and Station Improvements
+[p009_c0003] The SBS project focused heavily on improving sidewalks, providing pedestrian ramps and refuge islands and improving pedestrian access to bus stops. At multiple locations along the corridor, bus stops either lacked sidewalks entirely or had only small segments immediately adjacent to the stop. NYCDOT constructed new sidewalks at these locations. Although many intersection corners along the corridor have full pedestrian ramps, some corners did not. To mitigate this condition, and where space existed, NYCDOT installed ADA accessible ramps with tactile warning strips near bus stops. In total, 32 locations received upgraded sidewalks as part of the project.
+[p009_c0004] Many SBS stations were also enhanced by the installation of new bus shelters and concrete bus pads. A dedicated S79 SBS bus station was constructed at the ETC, in an area not previously accessible to bus passengers.
+[p009_c0005] At five signalized intersections where the medians were wide enough, NYCDOT constructed pedestrian safety islands to provide a refuge for pedestrians unable to finish crossing the street during the designated Walk phase of the signal. One of these pedestrian islands (at Hylan Boulevard and Richmond Avenue) was later removed because it was struck repeatedly by turning vehicles.
+[p009_c0006] _Project Planning_
+[p009_c0007] _8_
+
+## Page 10
+
+### [p010_c0001] S79 SELECT BUS SERVICE ELEMENTS
+### [p010_c0002] Bus Lanes
+[p010_c0003] NYCDOT painted two types of bus lanes along the project corridor: offset bus lanes and curbside bus lanes. Both types are terra cotta red and are identified with signs mounted on traffic signal mast arms and at the side of the road, along with overhead gantry mounted signs on Richmond Avenue.
+[p010_c0004] Offset bus lanes are located in the second lane from the right curb of each avenue and are in effect at all times of the day. This arrangement preserves curbside parking or loading activity on the right side of the street. Offset lanes were installed on northbound and southbound Richmond Avenue near the Staten Island Mall and on southbound Richmond Avenue approaching Hylan Boulevard.
+[p010_c0005] As described above, curbside bus lanes were installed on Hylan Boulevard between Lincoln Avenue and Steuben Street. They are in effect from 6:00-9:00 am northbound and 3:00-7:00 pm southbound, replacing general traffic lanes that were in effect at most of the same times (the afternoon general traffic lanes started operation at 4pm instead of 3pm).
+[p010_c0006] _Figure 5 – Installation of bus lane on Hylan Blvd_
+[p010_c0007] _Figure 6 – Richmond Avenue offset bus lane_
+[p010_c0008] For both types of bus lanes, vehicles are allowed to enter bus lanes to make the next available right turn, to quickly pick-up or drop-off passengers, or to access a parking spot or driveway.
+### [p010_c0009] Streamlined Travel Path
+[p010_c0010] At three locations, S79 service was streamlined in order to provide a more direct travel path. The service was rerouted in both directions at two locations near the Staten Island Mall, and the northbound S79 route was revised for a more direct travel path avoiding a northbound double loop through the ETC. These three travel path revisions saved approximately five to nine minutes in travel time in each direction.
+### [p010_c0011] Branding
+[p010_c0012] The development of BRT in NYC led to the creation of the distinct SBS brand. All branded elements including stations, bus interiors/exteriors, bus stops and customer information carry the unique SBS brand with unifying colors and logos. A particular success from the Bx12 SBS repeated on the M15 SBS was the inclusion of flashing blue LED lights on the front of the buses, which allowed the buses to be seen and easily identified from a long distance. Although initially used on the S79 SBS, the lights were subsequently removed from
+[p010_c0013] _S79 Select Bus Service Elements_
+[p010_c0014] _9_
+
+## Page 11
+
+[p011_c0001] operation due to issues with the New York State vehicular traffic law. Efforts are underway to find a suitable replacement for this important SBS branding item.
+> [p011_c0002] A photograph showing two MTA Clean Air Hybrid Electric Buses parked at a bus stop. The buses are white with blue and teal accents, featuring the MTA logo and the text "Clean Air Hybrid Electric Bus". The bus on the left is numbered 4252. The bus on the right is numbered 4247 and has "S79" displayed on its destination sign. A person is standing near the right bus. In the background, there is a multi-story brick building with several windows and a fire escape. A yellow "DANGER" sign is visible on the building's facade. A white sign with contact information is also visible on the right side of the building.
+[p011_c0003] _Figure 7 – Branded SBS buses at the Bay Ridge bus stop_
+### [p011_c0004] IMPROVED CUSTOMER SERVICE INFORMATION
+[p011_c0005] Customer service improvements are one of the chief methods used to differentiate SBS from other NYCT bus services. Currently, comprehensive fixed bus information is available at every SBS station including first and last arrival times and simple strip maps. NYCT installed a second schedule canister at each SBS station to provide additional customer information. In the bus shelters, and on-board the bus, there are strip maps of the route. Additionally, NYCT launched the BusTime system in Staten Island in September 2012. This system provides real time bus information system, as well as web-based and SMS text-based on-demand bus location information. A real-time bus time display is provided at ETC and a display device is being pilot tested at the station at Hylan Boulevard and Reno Avenue. The display devices show the number of stops away for the nearest SBS bus.
+### [p011_c0006] Transit Signal Priority
+[p011_c0007] Hylan Boulevard has a coordinated signal progression towards the Verrazano-Narrows Bridge and St George in the morning and away from the Verrazano-Narrows Bridge and St George in the evening. Traffic signals are therefore timed to provide a signal progression or “green wave” that allows a bus to have green lights as long as it keeps up with traffic, helped by the bus lanes. Active transit signal priority technology will allow buses to communicate with upcoming traffic signals to shorten red or extend green signals to keep specific buses moving. This enhancement is expected to be implemented in 2014.
+[p011_c0008] _S79 Select Bus Service Elements_
+[p011_c0009] _10_
+
+## Page 12
+
+### [p012_c0001] IMPLEMENTATION
+### [p012_c0002] Project Launch
+[p012_c0003] All elements described above were substantially in place for SBS service launch on September 2, 2012. In the days prior to the beginning of SBS service, fliers were distributed to passengers at key bus stops to inform them of service changes, in addition to posted notices on the bus, and information provided at all SBS stops.
+### [p012_c0004] Customer Ambassadors
+[p012_c0005] A team of NYCT and NYCDOT employees were stationed as customer ambassadors at key SBS stations for the first two weeks of service. These ambassadors assisted riders in all aspects of using the service with a focus on explaining the new S79 SBS stopping pattern.
+### [p012_c0006] Service Adjustments
+[p012_c0007] Over the first two weeks of service, NYCT closely monitored service frequency, reliability and crowding along the S79 route. NYCT was able to quickly respond to the service issues that occurred as part of the initial launch through measures such as adding 12 additional weekday bus trips to the route in January 2013. NYCT continues to closely monitor both SBS and local service along the Hylan Boulevard corridor and adjust service to meet ridership demands.
+[p012_c0008] _Implementation_
+[p012_c0009] _11_
+
+## Page 13
+
+### [p013_c0001] PROJECT RESULTS
+### [p013_c0002] Bus Ridership
+[p013_c0003] Ridership analysis showed that S79 ridership changed very little year-over-year in September and October 2012. However beginning in November 2012, ridership on the S79 as well as the S59/78/79 began to greatly outperform the rest of Staten Island, increasing by over 200 riders daily (Figure 8). This was likely due to a combination of riders attracted to the faster service provided by the S79 SBS, as well as some ridership diversion from the parallel SIR, which experienced service disruptions (and ridership loss) after Sandy.
+[p013_c0004] An analysis of bus-subway transfer activity revealed a significant development. Between October 2011 and October 2013, transfers between the S79 and the R subway route in Bay Ridge, Brooklyn increased by 35% from 1,227 per day to 1,651 per day. This shows a noticeable change in travel patterns of more people taking the SBS to the subway, indicating that customers are responding to the faster service.
+[p013_c0005] Following Superstorm Sandy, weekday and weekend ridership began to increase rapidly on both the S79 SBS and the associated S59 and S78 local routes (Figures 8 and 9). This pattern indicates that the SBS has proven to be an attractive alternative for many riders. This is an especially important outcome in light of the fact that many of the homes along part of the Hylan Boulevard Corridor were rendered uninhabitable by Hurricane Sandy. Between 2011 (the last full year before SBS implementation) and 2013 (the first full year with SBS), the average daily ridership on the S79 grew by 10.8%, while the combined S59, S78, and S79 grew by 6.6%, and all other local Staten Island routes grew by only 1.2%.
+> [p013_c0006] Average Weekday Ridership Changes on S79 Corridor Compared to Other Staten Island Local Routes (% Change from One Year Before) Month S79 Select Bus Service (%) Combined S59/78/79 (%) All other Staten Island Local Routes (%) Jan-12 6 1 1 Mar-12 2 1 -2 May-12 2 -2 -3 Jul-12 1 -1 -3 Sep-12 3 1 3 Nov-12 4 1 -4 Jan-13 5 3 -4 Mar-13 2 -3 -8 May-13 11 10 4 Jul-13 5 7 1 Sep-13 15 8 6 Nov-13 8 4 7 Jan-12 Mar-12 May-12 Jul-12 Sep-12 Nov-12 Jan-13 Mar-13 May-13 Jul-13 Sep-13 Nov-13 — S79 Select Bus Service    — Combined S59/78/79    — All other Staten Island Local Routes
+[p013_c0007] _Figure 8 – Monthly Ridership Trends on S79, Combined S59/78/79, and All Other Staten Island Local Routes_
+[p013_c0008] _Project Results_
+[p013_c0009] _12_
+
+## Page 14
+
+[p014_c0001] _Annual Average Weekday Ridership of the S59/S78 and S79 SBS Compared to Other Staten Island Routes_
+> [p014_c0002] Year S59/S78/S79 Select Bus Service Other Staten Island Routes 2007 75,010 19,493 2008 77,666 19,804 2009 75,142 19,225 2010 74,273 19,428 2011 72,647 19,313 Jan-Jul 2012 (Pre-SBS) 70,045 18,704 2013 73,424 20,592
+[p014_c0003] _Figure 9 – Comparison of Annual Average Weekday S59/S78/S79 SBS ridership with other Staten Island Routes_
+### [p014_c0004] Bus Travel Times
+[p014_c0005] A comparison of S79 bus travel times from summer 2012, immediately before the implementation of S79 SBS and March 2013, after the implementation of the service indicated travel time savings of 13-19%. The average end-to-end travel time decreased from 71 to 62 minutes northbound (to Brooklyn) and from 68 to 55 minutes southbound (to the SI Mall), representing a 13% and 19% reduction in travel times, respectively. The improvements are due to having fewer stops, dedicated bus lanes along a section of the route, traffic signal optimization, and three routing changes to make the route more direct. This time savings is similar to the time savings achieved on other SBS implementations, even though there was no off-board fare collection used on this corridor.
+[p014_c0006] Bus travel times were also assessed in detail on the two mile section of Hylan Boulevard where bus lanes were installed. This section is used by a majority of express and local bus services in addition to the S79. The comparison of before and after SBS implementation travel times for all these buses is provided in the table below:
+[p014_c0007] As shown in the table, northbound S79 travel times decreased from 15.5 minutes to 13.4 minutes, a difference of 14%. This was observed during the am peak when the bus lane is in effect, although significant travel time decreases were observed during the midday (17.4 to 12.5 minutes) and pm peak (16.3 to 13.6 minutes) as well. Southbound travel times decreased from 17.1 minutes to 10.6 minutes, a difference of 38%. This was observed during the pm peak when the bus lane is in effect, although travel time decreases were observed
+[p014_c0008] _Project Results_
+[p014_c0009] _13_
+
+## Page 15
+
+[p015_c0001]
+
+```text
+Route AM Mid-day PM Saturday Jun-12 Mar-13 Jun-12 Mar-13 Jun-12 Mar-13 Jun-12 Mar-13 S78 NB 15.6 14.5 17.8 15.6 17.3 17.3 17.3 17.8 SB 16.2 17.3 16.8 15.9 18.9 16.2 18.1 16.5 S78 SBS NB 15.5 13.4 17.4 12.5 16.3 13.6 14.1 14.0 SB 14.0 12.0 14.1 10.2 17.1 10.6 14.3 11.5 X1 NB 15.4 16.2 14.6 14.1 14.2 14.5 12.8 15.2 SB - - 11.2 10.0 12.7 10.7 10.8 10.1 X2 NB 16.4 17.0 - - SB - - 13.1 9.9 X3 NB 15.9 16.3 - - SB - - 12.3 10.2
+```
+[p015_c0002] _Table 2 – Comparison of bus travel times (in minutes) before and after SBS implementation On Hylan Blvd and Steuben St between Midland Ave and Narrows Rd South_
+[p015_c0003] during the midday (14.1 to 10.2 minutes) and am peak (14.0 to 12.0 minutes) as well. The data indicates that travel time savings is realized even when the lane is not operation, possibly due to the consolidation of stops. The introduction of Transit Signal Priority in summer 2014 is expected to decrease these travel times further.
+[p015_c0004] Meanwhile, travel times on the express X1, X2, and X3 routes on Hylan Boulevard increased by less than 1 minute in the morning peak, declined slightly in the midday, and declined mostly by 2 minutes or more in the evening peak. This suggests that the express routes have benefitted from the bus lanes, even without the bus stop changes implemented on the S79.
+### [p015_c0005] Traffic Patterns
+[p015_c0006] There have been no significant traffic impacts along the corridor, despite the introduction of new bus lanes. On Richmond Avenue near the Staten Island Mall and approaching Hylan Boulevard, general traffic is easily accommodated in the remaining general traffic lanes. In the northbound direction approaching the Mall, bus lanes are serving major right turning volume turning into the large shopping centers located on the east side of the street.
+[p015_c0007] Along Hylan Boulevard, the reduction in general traffic capacity due to bus lanes is not as disruptive as might be expected for the following three reasons:
+- [p015_c0008] • High volumes of buses (one per minute during peak hours) previously traveled and made stops in the curb lane. Many drivers, therefore, avoided the curb lane; • The bus lane reduces the friction caused by general traffic weaving in and out of the curb lane while
+[p015_c0009] _Project Results_
+[p015_c0010] _14_
+
+## Page 16
+
+[p016_c0001] attempting to bypass stopped buses and turning vehicles; and
+- [p016_c0002] • Curbside bus lanes serve all right-turning traffic. Hylan Boulevard is lined by many off-street parking lots and has frequent cross streets. The bus lane serves to isolate traffic turning right onto intersecting streets and driveways, similar to right turn bays.
+[p016_c0003] In order to measure the impact of the project on traffic conditions, Automated Traffic Recorder (ATR) counts from before the project, in June 2012, were compared to ATR counts collected in March 2013, after the project was implemented. Overall, while peak hour traffic volumes declined slightly on Hylan Boulevard, there was no clear pattern of diversion to other streets.
+[p016_c0004] In the AM peak hour of 7:15 to 8:15 AM, northbound traffic on Hylan Boulevard at Steuben Street heading towards the Verrazano-Narrows Bridge declined by 22%, or 327 vehicles. However, the northbound volume at the parallel location on the Father Capodanno corridor, on Lily Pond Avenue at Major Avenue, also decreased by 10%, or 233 vehicles. The decrease in traffic volumes on both corridors combined with the increase in bus ridership discussed previously indicates a potential travel mode shift. Another possible explanation for this pattern could be that Hurricane Sandy's damage to the neighborhoods between Hylan and Father Capodanno resulted in lower travel demand on both of these streets.
+[p016_c0005] Farther south, the volume changes were not as substantial. Just north of Seaview Avenue, after the primary opportunity for drivers to move from Hylan to Capodanno, the volume on Hylan increased by 3%, or 52 vehicles, while it declined by 6%, or 103 vehicles, on Father Capodanno.
+[p016_c0006] Meanwhile, on the parallel route inland from Hylan, Richmond Road, the volume remained substantially the same on the approach to the Verrazano-Narrows Bridge at West Fingerboard Road, with an increase of 1% or just 14 vehicles. This negligible change indicates that there has been no major shift in traffic from the Hylan to Richmond Road corridor.
+[p016_c0007] In the evening peak hour of 4:30 to 5:30 PM, there was a similar pattern of traffic declines on Hylan and Father Capodanno Boulevards, while traffic remained steady on Richmond Road. Traffic reduced by 8%, or 92 vehicles, on Hylan Boulevard at Steuben Street, even as traffic reduced even more on Lily Pond Avenue approaching Father Capodanno Boulevard, by 13% or 224 vehicles. At Seaview Avenue these declines occurred in a reverse pattern, with a 12% drop (208 vehicles) on Hylan and a 9% drop (128 vehicles) on Father Capodanno. Meanwhile, traffic on Richmond Road effectively held steady with an increase of 8 vehicles just south of West Fingerboard Road.
+[p016_c0008] In summary, traffic volumes on Hylan Boulevard after bus lanes were implemented did not substantially change or divert to parallel streets.
+[p016_c0009] _Project Results_
+[p016_c0010] _15_
+
+## Page 17
+
+### [p017_c0001] Northbound Traffic Volume Comparison on the Approach to Verrazano Narrows During AM Peak Hours
+> [p017_c0002] This bar chart displays the peak hour traffic volume for northbound traffic during AM peak hours at three different locations on the approach to the Verrazano Narrows. The y-axis represents the 'Peak Hour Traffic Volume' ranging from 0 to 2500. The x-axis is divided into three sections: Hylan Boulevard, Father Capodanno Boulevard, and Richmond Road. Each section compares the traffic volume for June 2012 and March 2013. The bars are colored olive green. Location June 2012 March 2013 Hylan Boulevard 1496 1169 Father Capodanno Boulevard 2342 2109 Richmond Road 1137 1123
+[p017_c0003] _Figure 10: Northbound AM Peak Hour Traffic Volumes on Hylan Blvd at Steuben St, Lily Pond Ave (Father Capodanno Blvd) at Major Ave, and Richmond Rd at W Fingerboard Rd_
+### [p017_c0004] Southbound Traffic Volume Comparison on the Approach to Verrazano Narrows During PM Peak Hours
+> [p017_c0005] This bar chart displays the peak hour traffic volume for southbound traffic during PM peak hours at three different locations on the approach to the Verrazano Narrows. The y-axis represents the 'Peak Hour Traffic Volume' ranging from 0 to 2500. The x-axis is divided into three sections: Hylan Boulevard, Father Capodanno Boulevard, and Richmond Road. Each section compares the traffic volume for June 2012 and March 2013. The bars are colored light blue. Location June 2012 March 2013 Hylan Boulevard 1189 1097 Father Capodanno Boulevard 1694 1470 Richmond Road 1088 1096
+[p017_c0006] _Figure 11: Southbound PM Peak Hour Traffic Volumes on Hylan Blvd at Steuben St, Lily Pond Ave (Father Capodanno Blvd) at Major Ave, and Richmond Rd at W Fingerboard Rd_
+[p017_c0007] _Project Results_
+[p017_c0008] _16_
+
+## Page 18
+
+### [p018_c0001] Travel Times
+[p018_c0002] The impact on traffic conditions were also measured by comparing vehicular travel time data collected before and after the project was implemented. The travel times were collected on the northern portion of Hylan Boulevard where the bus lanes were installed, and on the parallel alternative, Father Capodanno Boulevard. Data was collected in June 2012 prior to bus lane installation, and in June 2013 after the project was completed. The results are presented in the table below:
+[p018_c0003]
+
+```text
+Travel Time Comparison in Minutes Hylan Corridor: 3.5 miles between Hylan/Otis and Narrows Rd South/Fingerboard, via Steuben St Father Capodanno Corridor: 3.9 miles between Hylan/Otis and Lily Pond/Major, via Midland AM Peak Period (7AM - 9AM) PM Peak Period (4PM - 6PM) NB SB NB SB Jun-12 Jun-13 Jun-12 Jun-13 Jun-12 Jun-13 Jun-12 Jun-13 Hylan Blvd 9:48 11:36 11:40 12:33 13:16 13:10 18:57 20:18 Fr Capodanno Blvd 9:42 11:26 9:47 11:25 9:59 11:23 15:55 15:36
+```
+[p018_c0004] _Table 3: General Traffic Travel Times Before and After SBS Implementation_
+[p018_c0005] Travel times overall increased between 2012 and 2013; however the increase is not easily explained because it happened on both Hylan Boulevard where the bus lanes were implemented, and on Father Capodanno Boulevard where no changes were made and traffic volumes declined. Similar changes were also observed in the off-peak directions, where the bus lanes were not in effect.
+[p018_c0006] In the northbound AM peak period, travel times increased by about 1 minute and 45 seconds on both corridors; this is equivalent to a driver stopping at one additional traffic light on each trip. In the southbound PM peak, travel times increased by 1 minute and 20 seconds on Hylan Boulevard while they declined by 20 seconds on Father Capodanno Blvd. Overall, travel times increased in 3 of the four periods and directions measured on both corridors. In fact the average travel time increase was slightly greater on Father Capodanno Boulevard despite the lack of roadway changes and the reduction in traffic volume.
+[p018_c0007] While travel times did increase on Hylan Boulevard when the bus lanes are in effect, they also increased in the off-peak direction where the bus lanes were not in effect, and on Father Capodanno Boulevard, where no operational changes were made. This suggests that the changed travel times on both corridors is likely not related to the addition of bus lanes on Hylan Boulevard. Rather, it most likely reflects natural day to day variation in travel times captured during the before and after study periods.
+### [p018_c0008] Customer Satisfaction
+[p018_c0009] S79 ridership has continued to grow and overall customer satisfaction has been favorable. Customer satisfaction surveys were conducted both prior to the implementation of the S79 SBS in June 2012 and after its implementation in April 2013 to gauge and compare overall rider satisfaction. There has been a noticeable improvement in service perceptions especially about the wait and ride times, and more prominently among S79 than S78 riders.
+[p018_c0010] The average customer self-reported wait times decreased from 8.4 minutes to 5.9 minutes on the S78 route and from 6.5 minutes to 4.8 minutes on the S79 route. Similarly, the average customer self-reported travel
+[p018_c0011] _Project Results_
+[p018_c0012] _17_
+
+## Page 19
+
+> [p019_c0001] Crashes and Injury Crashes on Hylan Boulevard (Richmond Ave - Steuben St) 2003-2013 Year Total Crashes Injury Crashes 2003 1083 374 2004 1016 338 2005 1040 357 2006 943 245 2007 841 246 2008 986 264 2009 913 198 2010 1005 243 2011 935 225 2012 1061 278 2013 875 245
+[p019_c0002] _Figure 12: Annual Crashes and Injury Crashes on Hylan Blvd from Richmond Ave to Steuben St_
+[p019_c0003] times decreased from 27.9 minutes to 23.7 minutes on the S78 and from 32.3 minutes to 31 minutes on the S79 route. Among the riders traveling through on Hylan Boulevard between Richmond Avenue and Clove Road, the S79 average reported ride times decreased from 54.6 minutes to 46.5 minutes. This reduction (8.1 minutes) is significant and shows the benefit of the curbside peak period bus lanes for two miles in this section of the corridor.
+[p019_c0004] In addition to reporting on wait and travel times, riders were also asked about other factors such as bus stops, cleanliness, seat availability, sidewalk quality etc. Overall, 97% of the S79 SBS riders and 96% of the S78 riders are “satisfied” or “very satisfied” with the service. The primary reasons for satisfaction were faster rides, shorter wait times, increase in frequency and the availability of new bus shelters. Out of the riders who were dissatisfied, the main reason for dissatisfaction was the skipping of their closest bus stop and the need for additional transfer.
+### [p019_c0005] Safety
+[p019_c0006] The Hylan Boulevard SBS project is a continuation of the focus that DOT has had over the past decade of improving the safety of Hylan Boulevard. In addition to the SBS changes described in this report, DOT has installed additional pedestrian refuge islands, restricted left turns, and reconfigured intersections to improve the overall safety of the street. While street safety is affected by many factors, the overall trend is towards a safer corridor for all roadway users.
+[p019_c0007] _Project Results_
+[p019_c0008] _18_
+
+## Page 20
+
+### [p020_c0001] Next Steps
+[p020_c0002] As is the case with all SBS projects, DOT and NYCT remain committed to working to improve travel conditions along the Hylan Boulevard corridor. The agencies continuously monitor service on the corridor, adjusting bus service or signal timings as needed to match traffic flow. In addition, the agencies are working on a number of future corridor enhancements:
+### [p020_c0003] Transit Signal Priority
+[p020_c0004] DOT and NYCT expect to activate Transit Signal Priority along the S79 route in the summer of 2014. This will provide increased bus speeds on the S79 SBS, without any additional delays to private vehicles on the corridor.
+### [p020_c0005] Bus lane cameras
+[p020_c0006] Beginning in the summer of 2013, DOT installed bus lane enforcement cameras along Hylan Boulevard and Richmond Avenue. These cameras are designed to help keep the bus lanes clear during the hours that the bus lanes are in operation, without requiring extensive on-street enforcement from NYPD. DOT has made adjustments to the program to meet the needs of Staten Island, including relocating some cameras and adjusting many cameras to be able to see whether someone is turning into a driveway just past the intersection. DOT also updated its bus lane rule to ensure that it is always safe and legal to use a bus lane to enter a driveway.
+### [p020_c0007] New bus pads
+[p020_c0008] While some bus pads were installed as part of this project using DOT's in-house concrete crews, these crews are limited in how many bus pads they could construct, since they are also responsible for substantial other concrete work on Staten Island. As a result, DOT has initiated a contract through the Department of Design and Construction to construct bus pads at many other locations along the corridor, at both SBS and local bus stops. These bus pads will help keep the Hylan Boulevard road surface in good condition, providing better trips for all roadway users.
+### [p020_c0009] 92nd St Curb Extension
+[p020_c0010] As part of the planning study, the corner of 92nd Street and Fort Hamilton Parkway was identified as in need of improvements. At this corner, the geometry of the sidewalk means that the bus has difficulty pulling to the curb. Additionally, the roadway is very wide here, making the street difficult to cross for pedestrians. DOT will look to build a curb extension with DDC at this location to address these issues, subject to outreach to Brooklyn Community Board 10.
+### [p020_c0011] Richmond Avenue median station
+[p020_c0012] Currently, the S79 SBS – and other local and express bus routes – stop on the west side of Richmond Avenue, near Yukon Avenue. Since there is no destination on that side of the street other than the bus stop, all bus riders must cross the full width of Richmond Avenue. DOT plans to work with DDC to reconfigure Richmond Avenue to bring the bus lane and bus stop to the median of the street, while maintaining all of the existing lanes for general traffic.
+### [p020_c0013] Bus Time Signs
+[p020_c0014] Currently, real time bus location information is available for all bus routes on Staten Island via text message or web-enabled devices. However, the agencies believe that this information would be useful if it were visible on signs at bus stops as well. A solar-powered real time bus arrival information sign was installed
+[p020_c0015] _Project Results_
+[p020_c0016] _19_
+
+## Page 21
+
+[p021_c0001] at the northbound bus stop on Hylan Blvd at Reno Avenue in October 2013; if this test is successful, then additional locations will be installed along Hylan Boulevard, as well as elsewhere on Staten Island and around New York City.
+### [p021_c0002] Real Time Driver Information Signs
+[p021_c0003] As part of the SBS project, DOT installed RFID readers along Hylan Boulevard to monitor traffic flow in real time along both Hylan Boulevard and Father Capodanno Boulevard. This information is currently available on the DOT website, however it is not yet available to help drivers on the street avoid congestion. DOT plans to install a variable message sign to tell northbound drivers the average travel time to the Verrazano Narrows Bridge via both routes.
+> [p021_c0004] Route Stop # Arrival Time $57 14 $78 12 $79 10
+[p021_c0005] _Figure 13: Real-time Bus Arrival Information Sign on Hylan Blvd at Reno Ave_
+> [p021_c0006] TIME TO Verrazano Br. Hylan Blvd 15 Fr Capodanno Blvd 12
+[p021_c0007] _Figure 14: Conceptual Design of Planned Real-Time Traffic Information Sign_
+[p021_c0008] _Project Results_
+[p021_c0009] _20_

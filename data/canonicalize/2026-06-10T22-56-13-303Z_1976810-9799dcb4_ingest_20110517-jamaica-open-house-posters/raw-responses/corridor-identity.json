@@ -1,0 +1,77 @@
+{
+  "run_id": "2026-06-10T22-56-13-303Z_1976810-9799dcb4_ingest_20110517-jamaica-open-house-posters",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T01:31:44.680Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "archer-ave-bus-lanes-new",
+        "local_observation_id": "corridor_archer_ave_bus_lanes",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id corridor_archer-ave-busway, which already exists as a registry card. The closest match is the observation's own base_record_id, so this is new.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p005_c0002",
+            "source_quote": "Archer Avenue: Sutphin Boulevard to Parsons Boulevard"
+          },
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p005_c0004",
+            "source_quote": "Archer Avenue: Parsons Boulevard to Merrick Boulevard"
+          }
+        ]
+      },
+      {
+        "decision_id": "jamaica-ave-bus-lanes-new",
+        "local_observation_id": "corridor_jamaica_ave_bus_lanes",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id corridor_jamaica-ave-busway, which already exists as a registry card. The closest match is the observation's own base_record_id, so this is new.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p006_c0002",
+            "source_quote": "Jamaica Avenue: Sutphin Boulevard to Parsons Boulevard"
+          },
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p006_c0004",
+            "source_quote": "Jamaica Avenue: Parsons Boulevard to 168 th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "merrick-blvd-bus-lanes-new",
+        "local_observation_id": "corridor_merrick_blvd_bus_lanes",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id corridor_merrick-blvd-bus-lanes, which already exists as a registry card. The closest match is the observation's own base_record_id, so this is new.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p007_c0002",
+            "source_quote": "Merrick Boulevard: Archer Avenue to Hillside Avenue"
+          }
+        ]
+      },
+      {
+        "decision_id": "165th-st-bus-lanes-new",
+        "local_observation_id": "corridor_165th_st_bus_lanes",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id corridor_165th-st-bus-lanes, which already exists as a registry card. The closest match is the observation's own base_record_id, so this is new.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p007_c0004",
+            "source_quote": "165 th Street: 89 th Avenue to Hillside Avenue"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-30-12-890Z_2111393-968445fa_canonicalize_2026-06-10t22-56-13-303z-1976810-9799dcb4-ingest-20110517-jamaica-open-house-posters-corridor-identity"
+}

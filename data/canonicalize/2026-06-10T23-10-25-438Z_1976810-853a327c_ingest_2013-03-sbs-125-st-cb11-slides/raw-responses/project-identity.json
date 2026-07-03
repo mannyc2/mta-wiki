@@ -1,0 +1,66 @@
+{
+  "run_id": "2026-06-10T23-10-25-438Z_1976810-853a327c_ingest_2013-03-sbs-125-st-cb11-slides",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T03:33:38.152Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "project_125th_st_sbs_2013",
+        "decision": "new",
+        "rationale": "Observation matches its own base record project_125th-st-sbs-2013. Same source (2013_03_sbs_125_st_cb11_slides), same 125th Street SBS corridor, same project scope. The closest registry match is the observation's own base_record_id, so decision is new (observation already resolves to this id). Other 125th St registry records represent distinct stages/scopes: project_125th-st-bus-service-improvement (2012 workshop), project_125th-st-curb-regulations-2014 (curb regulations only), project_125th-street-transportation-improvements (2012 broader framing), project_m60-sbs-125th-street (different source CB10), and project_sbs-125th-street-2012-12 (earlier workshop). None match this specific 2013 CB11 SBS proposal.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_125_st_cb11_slides",
+            "block_id": "p002_c0006",
+            "source_quote": "Proposed Street Design in CB 11"
+          },
+          {
+            "source_id": "2013_03_sbs_125_st_cb11_slides",
+            "block_id": "p006_c0005",
+            "source_quote": "Select Bus Service on the M60"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2",
+        "local_observation_id": "project_m100_reroute_east_harlem",
+        "decision": "new",
+        "rationale": "Observation matches its own base record project_m100-reroute-east-harlem. Same source (2013_03_sbs_125_st_cb11_slides), same distinct bus reroute project for M100 in East Harlem. No other registry record covers this specific M100 reroute proposal. The project is a distinct type (bus reroute) from the 125th Street SBS project, though presented in the same CB11 document.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_125_st_cb11_slides",
+            "block_id": "p024_c0004",
+            "source_quote": "Proposed Reroute of M100 in East Harlem"
+          },
+          {
+            "source_id": "2013_03_sbs_125_st_cb11_slides",
+            "block_id": "p024_c0005",
+            "source_quote": "Eliminates unsafe left turn from 125th Street onto 3rd Avenue and reduces delays for through traffic"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "part_of_same_presentation",
+            "subject_id": "project_125th-st-sbs-2013",
+            "object_id": "project_m100-reroute-east-harlem",
+            "description": "Both the M60 SBS proposal and the M100 reroute were presented together in the March 2013 CB11 slides on 125th Street corridor improvements. The M100 reroute increases service on 125th Street between 3rd Avenue and 1st Avenue, complementing the M60 SBS proposal.",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_sbs_125_st_cb11_slides",
+                "block_id": "p024_c0006",
+                "source_quote": "Increases service on 125th Street between 3rd Avenue and 1st Avenue"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-32-40-288Z_2111393-b76c24d9_canonicalize_2026-06-10t23-10-25-438z-1976810-853a327c-ingest-2013-03-sbs-125-st-cb11-slides-project-identity"
+}

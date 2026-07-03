@@ -1,0 +1,219 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-189881"
+record_kind: "source"
+display_name: "Long Island Rail Road Financial and Ridership Reports – September 2025"
+source_id: "meeting_doc_189881"
+source_ids:
+  - "meeting_doc_189881"
+local_observation_id: "source_meeting_doc_189881"
+local_observation_ids:
+  - "source_meeting_doc_189881"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T20:14:28.716Z"
+raw_text: "Long Island Rail Road - Financial and Ridership Reports – September 2025"
+submission_ids:
+  - "sub_bc4ece2fed3ad0ca"
+payload:
+  authority_tier: "plan_document"
+  content_type: "financial report"
+  date_text: "September 2025"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2025-09"
+    precision: "month"
+    raw_text: "September 2025"
+  document_date: "September 2025"
+  document_date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2025-09"
+    precision: "month"
+    raw_text: "September 2025"
+  published_date_normalized: "2025-09"
+  published_date_precision: "month"
+  publisher: "MTA Long Island Rail Road"
+  title: "Long Island Rail Road Financial and Ridership Reports – September 2025"
+evidence_refs:
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_189881#p001_c0003"
+    page_number: 1
+    role: "title"
+    source_id: "meeting_doc_189881"
+    source_path: "raw/sources/meeting_doc_189881/blocks.jsonl"
+    text_sha256: "sha256:adfbb7f0dc9f47f1bec7b4c4ca8df82a07c0ee69ffc7d669e86b6fbe4ae50e79"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_189881#p001_c0004"
+    page_number: 1
+    role: "author"
+    source_id: "meeting_doc_189881"
+    source_path: "raw/sources/meeting_doc_189881/blocks.jsonl"
+    text_sha256: "sha256:ba884242a38f56a027cabc36be3ea65053a65c16052152d95b7d78804f73b93a"
+    text_source: "raw_text"
+---
+
+# Financial performance report
+
+source_id: meeting_doc_189881
+citation: cite block ids exactly as shown in square brackets
+document: 71 block(s)
+
+## Page 1
+
+> [p001_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a dark blue circle.
+### [p001_c0002] Long Island Rail Road
+### [p001_c0003] Financial and Ridership Reports – September 2025
+[p001_c0004] Michael Reilly, Financial Liaison
+
+## Page 2
+
+### [p002_c0001] Financial Report Highlights
+### [p002_c0002] September Year-to-Date Budget Performance Summary
+- [p002_c0003] • Total revenue of $908.2 million was $43.4 million favorable to the forecast. This favorable variance was primarily due to higher other operating revenue and the timing of reimbursement for capital activity. • Through September 2025, ridership was 60.7 million which was 9.7% above 2024 and 0.1% above the forecast. Commutation ridership of 22.9 million was 10.3% above 2024 and 5.4% below the forecast. Non-Commutation ridership of 37.8 million was 9.3% above 2024 and 3.8% above the forecast. Consequently, the farebox revenue of $517.1 million was $3.4 million higher than the forecast, driven by higher yield per passenger and higher ridership. • Total expenses before non-cash liability adjustments of $1,825.2 million were $5.1 million or 0.3% favorable to the forecast. The primary drivers of this favorable variance were due to lower payroll, associated fringe costs, and pensions. These favorable variances were partially offset by overtime, electric power, fuel, maintenance & other operating contracts, the timing of material and supplies, insurance, professional service contracts, and other business expenses. • Total headcount was 7,849 which was 115 positions lower than the forecast. Non-reimbursable was 66 positions higher than the forecast and reimbursable was 181 positions lower than the forecast. • September non-reimbursable operating results were favorable to the forecast by $41.9 million. Non-reimbursable revenues were $14.5 million favorable to the forecast due to higher other operating revenue. Total non-reimbursable expenses before non-cash liabilities were $34.0 million favorable due to payroll and associated fringe, overtime, pensions, and maintenance and other operating contracts, and claims, partially offset by materials and supplies, electric power, fuel, insurance, professional services contracts, and other business expenses. Non-cash liabilities were $6.6 million unfavorable.
+### [p002_c0004] 2025 Operating Revenue & Expenses, September Year-to-Date
+[p002_c0005]
+
+```text
+In $ Millions Long Island Rail Road Forecast Actual Variance Total Revenues $548.4 $563.0 $14.5 Farebox Revenue $513.7 $517.1 $3.4 Other Revenue $34.7 $45.9 $11.2 Total Expenses $1,513.9 $1,480.0 $34.0 Labor Expenses $1,132.1 $1,102.1 $29.9 Non Labor Expenses $381.8 $377.8 $4.0 Non Cash Liabilities $431.2 $437.9 ($6.6) Net Surplus/(Deficit) - Accrued ($1,396.7) ($1,354.9) $41.9
+```
+### [p002_c0006] Staffing Levels
+[p002_c0007]
+
+```text
+In Full-Time Equivalents Long Island Rail Road Forecast Actual Variance Non-Reimbursable 6,778 6,844 (66) Reimbursable 1,186 1,005 181 Total Positions 7,964 7,849 115
+```
+
+## Page 3
+
+### [p003_c0001] Revenues
+- [p003_c0002] • Farebox Revenues were $3.4 million favorable to the forecast due to higher yield per passenger and higher ridership. Ridership through September was 60.7 million, 9.7% higher than in 2024 (adjusted for the same number of calendar workdays) and 0.1% higher than the forecast. • Other Operating Revenues were $11.2 million favorable to the forecast primarily due to higher rental revenue and advertising income.
+### [p003_c0003] Expenses
+[p003_c0004] Labor Expenses: $29.9 million favorable.
+- [p003_c0005] • Payroll expenses were $15.5 million favorable (lower average pay rates reflecting new hires). • Overtime expenses were $2.4 million favorable (lower programmatic/routine maintenance, vacancy/absentee coverage, scheduled service, unscheduled service, and weather emergencies, partially offset by unscheduled maintenance). • Health & Welfare expenses were $8.8 million favorable (lower rates and vacant positions). • OPEB Current Payments were $0.3 million favorable (fewer retirees/beneficiaries). • Pensions expenses were $2.3 million favorable due to the timing of pension payments, partially offset by percentage of pension allocated to reimbursable being over-estimated. • Other Fringe Benefits expenses were $2.7 million unfavorable primarily due to higher FELA indemnity payments partially offset by lower Railroad Retirement Taxes (RRT). • Reimbursable Overhead expenses were $3.4 million favorable primarily due to the timing of project activity.
+[p003_c0006] Non-Labor Expenses: $4.0 million favorable.
+- [p003_c0007] • Electric Power expenses were $2.7 million unfavorable primarily due to higher rates, partially offset by lower consumption. • Fuel expenses were $1.2 million unfavorable primarily due to higher diesel rates. • Insurance expenses were $0.8 million unfavorable due to higher liability insurance, partially offset by lower property insurance. • Claims expenses were $0.7 million favorable due to a decrease in reserves. • Maintenance and Other Operating Contracts were $12.7 million favorable primarily due to higher project reimbursement for vehicles and work train usage, timing of the JCC building assessment and Moynihan train hall expenses, escalator and elevator maintenance, bus & transfer service and uniforms, partially offset by the timing of weed control and clearing and joint facility costs.
+
+## Page 4
+
+- [p004_c0001] • Professional Service Contracts were $0.3 million unfavorable primarily due to higher medical services expense, test precision railhead expense and Sperry Rail testing, partially offset by the timing of MTA chargebacks and fiber optic network expenses. • Materials and Supplies were $1.0 million unfavorable primarily due to pooled materials chargeout, miscellaneous inventory adjustment and right of way materials, partially offset by modification and RCM activity for Revenue Fleet and higher project material reimbursement. • Other Business Expenses were $3.3 million unfavorable primarily due to increase in bad debt reserves, partially offset by lower office supplies.
+[p004_c0002] Depreciation and Other were $6.6 million unfavorable (primarily depreciation and environmental remediation).
+### [p004_c0003] Overtime
+- [p004_c0004] • Total overtime was $6.4 million unfavorable. Non-reimbursable was $2.4 million favorable and reimbursable was $8.8 million unfavorable. • Favorable non-reimbursable overtime was due to lower programmatic/routine maintenance, scheduled service, vacancy/absentee coverage, unscheduled service, and weather emergencies, partially offset by unscheduled maintenance.
+### [p004_c0005] Staffing Levels
+- [p004_c0006] • Total headcount at the end of September was 7,849 which was 115 positions lower than the forecast. • The vacancies were primarily in Maintenance of Way.
+### [p004_c0007] Financial Metrics
+- [p004_c0008] • The year-to-date September Adjusted Farebox Operating Ratio was 38.9%, which was above the forecast due to higher farebox revenue and lower expenses. • The year-to-date September Adjusted Cost per Passenger was $23.86, which was lower than the forecast due to higher ridership and lower expenses. • The year-to-date September Revenue per Passenger was $8.51, which was above the forecast due to a higher yield per passenger.
+
+## Page 5
+
+### [p005_c0001] TABLE 1
+### [p005_c0002] MTA LONG ISLAND RAIL ROAD JULY FINANCIAL PLAN - 2025 MID-YEAR FORECAST ACCRUAL STATEMENT of OPERATIONS by CATEGORY September 2025 ($ in millions)
+[p005_c0003]
+
+```text
+Nonreimbursable Reimbursable Total Forecast Actual Favorable (Unfavorable) Forecast Actual Favorable (Unfavorable) Forecast Actual Favorable (Unfavorable) Variance Percent Variance Percent Variance Percent Revenue Farebox Revenue $59,904 $62,411 $2,507 4.2 $0,000 $0,000 $0,000 - $59,904 $62,411 $2,507 4.2 Vehicle Toll Revenue 0,000 0,000 0,000 - 0,000 0,000 0,000 - 0,000 0,000 0,000 - Other Operating Revenue 3,043 3,868 0,825 27.1 0,000 0,000 0,000 - 3,043 3,868 0,825 27.1 Capital & Other Reimbursements 0,000 0,000 0,000 - 38,883 50,775 11,892 30.6 38,883 50,775 11,892 30.6 Total Revenue $62,947 $66,279 $3,332 5.3 $38,883 $50,775 $11,892 30.6 $101,829 $117,053 $15,224 15.0 Expenses Labor: Payroll $58,257 $54,349 $3,908 6.7 $14,457 $13,979 $0,479 3.3 $72,715 $68,328 $4,387 6.0 Overtime 14,973 15,182 (0,209) (1.4) 3,768 7,352 (3,584) (95.1) 18,741 22,534 (3,794) (20.2) Health and Welfare 14,978 13,488 1,490 9.9 3,296 3,649 (0,353) (10.7) 18,273 17,137 1,137 6.2 OPEB Current Payment 6,617 6,629 (0,012) (0.2) 0,000 0,000 0,000 - 6,617 6,629 (0,012) (0.2) Pensions 15,600 15,048 0,552 3.5 5,355 4,610 0,745 13.9 20,955 19,657 1,297 6.2 Other Fringe Benefits 17,470 17,613 (0,143) (0.8) 3,370 3,773 (0,403) (11.9) 20,841 21,386 (0,545) (2.6) Reimbursable Overhead (3,609) (4,675) 1,066 29.5 3,609 4,675 (1,066) (29.5) 0,000 0,000 0,000 - Total Labor Expenses $124,286 $117,634 $6,652 5.4 $33,855 $38,037 ($4,182) (12.4) $158,141 $155,671 $2,470 1.6 Non-Labor: Electric Power $10,432 $11,324 ($0,892) (8.6) $0,030 $0,047 ($0,017) (57.4) $10,462 $11,371 ($0,909) (8.7) Fuel 1,775 2,084 (0,309) (17.4) 0,000 0,000 0,000 - 1,775 2,084 (0,309) (17.4) Insurance 2,528 2,696 (0,168) (6.7) 1,070 1,117 (0,047) (4.4) 3,598 3,814 (0,216) (6.0) Claims 0,399 (0,011) 0,409 * 0,000 0,000 0,000 - 0,399 (0,011) 0,409 * Paratransit Service Contracts 0,000 0,000 0,000 - 0,000 0,000 0,000 - 0,000 0,000 0,000 - Maintenance and Other Operating Contracts 9,716 5,510 4,206 43.3 1,590 4,776 (3,186) * 11,305 10,285 1,020 9.0 Professional Service Contracts 3,717 2,718 1,000 26.9 0,069 0,284 (0,215) * 3,786 3,002 0,784 20.7 Materials & Supplies 10,947 10,648 0,299 2.7 2,223 6,408 (4,185) * 13,170 17,057 (3,886) (29.5) Other Business Expenses 1,800 5,174 (3,375) * 0,046 0,105 (0,059) * 1,845 5,279 (3,433) * Total Non-Labor Expenses $41,313 $40,144 $1,169 2.8 $5,027 $12,737 ($7,710) * $46,341 $52,881 ($6,541) (14.1) Other Expense Adjustments: Other $0,000 $0,000 $0,000 - $0,000 $0,000 $0,000 - $0,000 $0,000 $0,000 - Total Other Expense Adjustments $0,000 $0,000 $0,000 - $0,000 $0,000 $0,000 - $0,000 $0,000 $0,000 - Total Expenses before Depreciation & Other Post Employment Benefits $165,599 $157,778 $7,821 4.7 $38,883 $50,775 ($11,892) (30.6) $204,482 $208,553 ($4,071) (2.0) Depreciation $46,404 $47,136 ($0,732) (1.6) $0,000 $0,000 $0,000 - $46,404 $47,136 ($0,732) (1.6) GASB 75 OPEB Expense Adjustment 0,000 0,000 0,000 - 0,000 0,000 0,000 - 0,000 0,000 0,000 - GASB 68 Pension Expense Adjustment 0,000 0,000 0,000 - 0,000 0,000 0,000 - 0,000 0,000 0,000 - GASB 87 Lease Compliance (0,052) (1,138) 1,086 * 0,000 0,000 0,000 - (0,052) (1,138) 1,086 * GASB 96 - SBITA Asset Subscriptions 0,050 0,275 (0,225) * 0,000 0,000 0,000 - 0,050 0,275 (0,225) * Environmental Remediation 0,133 3,629 (3,496) * 0,000 0,000 0,000 - 0,133 3,629 (3,496) * Total Expenses $212,135 $207,680 $4,455 2.1 $38,883 $50,775 ($11,892) (30.6) $251,018 $258,455 ($7,437) (3.0) Net Surplus/(Deficit) ($149,189) ($141,402) $7,787 5.2 $0,000 $0,000 $0,000 - ($149,189) ($141,402) $7,787 5.2 Cash Conversion Adjustments Depreciation $46,404 $47,136 $0,732 1.6 $0,000 $0,000 $0,000 - $46,404 $47,136 $0,732 1.6 Operating/Capital (1,157) ($1,976) (0,819) (70.8) 0,000 0,000 0,000 - (1,157) (1,976) (0,819) (70.8) Other Cash Adjustments 23,961 54,441 30,480 * 0,000 0,000 0,000 - 23,961 54,441 30,480 * Total Cash Conversion Adjustments $69,209 $99,601 $30,393 43.9 0,000 $0,000 $0,000 - $69,209 $99,601 $30,393 43.9 Net Cash Surplus/(Deficit) ($79,980) ($41,800) $38,180 47.7 $0,000 $0,000 $0,000 0.0 ($79,980) ($41,800) $38,180 47.7
+```
+[p005_c0004] _Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current months' actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results._
+
+## Page 6
+
+### [p006_c0001] TABLE 2
+### [p006_c0002] MTA LONG ISLAND RAIL ROAD JULY FINANCIAL PLAN - 2025 MID-YEAR FORECAST ACCRUAL STATEMENT of OPERATIONS by CATEGORY September Year-To-Date
+[p006_c0003] ($ in millions)
+[p006_c0004]
+
+```text
+Nonreimbursable Reimbursable Total Forecast Actual Favorable (Unfavorable) Forecast Actual Favorable (Unfavorable) Forecast Actual Favorable (Unfavorable) Variance Percent Variance Percent Variance Percent Revenue Farebox Revenue $513,734 $517,109 $3,375 0.7 $0,000 $0,000 $0,000 - $513,734 $517,109 $3,375 0.7 Vehicle Toll Revenue 0.000 0.000 0.000 - 0.000 0.000 0.000 - 0.000 0.000 0.000 - Other Operating Revenue 34,692 45,855 11,162 32.2 0.000 0.000 0.000 - 34,692 45,855 11,162 32.2 Capital & Other Reimbursements 0.000 0.000 0.000 - 316,361 345,200 28,839 9.1 316,361 345,200 28,839 9.1 Total Revenue $548,426 $562,964 $14,537 2.7 $316,361 $345,200 $28,839 9.1 $864,787 $908,164 $43,377 5.0 Expenses Labor: Payroll $539,510 $524,030 $15,480 2.9 $105,443 $100,866 $4,577 4.3 $644,953 $624,896 $20,057 3.1 Overtime 127,861 125,440 2,421 1.9 35,217 44,015 (8,798) (25.0) 163,077 169,454 (6,377) (3.9) Health and Welfare 135,968 127,218 8,750 6.4 24,954 25,079 (0,126) (0.5) 160,922 152,297 8,624 5.4 OPEB Current Payment 59,335 59,068 0,267 0.5 0.000 0.000 0.000 - 59,335 59,068 0,267 0.5 Pensions 143,867 141,527 2,340 1.6 37,289 32,583 4,707 12.6 181,156 174,110 7,047 3.9 Other Fringe Benefits 154,601 157,273 (2,672) (1.7) 25,668 25,986 (0,318) (1.2) 180,269 183,259 (2,990) (1.7) Reimbursable Overhead (29,044) (32,406) 3,362 11.6 29,044 32,406 (3,362) (11.6) 0.000 0.000 0.000 - Total Labor Expenses $1,132,097 $1,102,150 $29,948 2.6 $257,615 $260,934 ($3,319) (1.3) $1,389,712 $1,363,084 $26,628 1.9 Non-Labor: Electric Power $87,918 $90,648 ($2,730) (3.1) $0,533 $0,576 ($0,043) (8.0) $88,452 $91,224 ($2,772) (3.1) Fuel 18,515 19,702 (1,186) (6.4) 0.000 0.000 0.000 - 18,515 19,702 (1,186) (6.4) Insurance 22,804 23,604 (0,800) (3.5) 7,690 7,574 0,116 1.5 30,494 31,178 (0,684) (2.2) Claims 2,741 2,008 0,733 26.8 0.000 0.000 0.000 - 2,741 2,008 0,733 26.8 Paratransit Service Contracts 0.000 0.000 0.000 - 0.000 0.000 0.000 - 0.000 0.000 0.000 - Maintenance and Other Operating Contracts 81,842 69,124 12,718 15.5 19,633 33,160 (13,527) (68.9) 101,474 102,284 (0,810) (0.8) Professional Service Contracts 37,988 38,325 (0,337) (0.9) 1,275 3,430 (2,155) * 39,263 41,755 (2,493) (6.3) Materials & Supplies 110,882 111,925 (1,044) (0.9) 29,224 39,003 (9,779) (33.5) 140,106 150,928 (10,822) (7.7) Other Business Expenses 19,127 22,472 (3,344) (17.5) 0,390 0,522 (0,131) (33.7) 19,518 22,994 (3,476) (17.8) Total Non-Labor Expenses $381,817 $377,807 $4,010 1.1 $58,746 $84,265 ($25,519) (43.4) $440,563 $462,072 ($21,509) (4.9) Other Expense Adjustments Other $0,000 $0,000 $0,000 - $0,000 $0,000 $0,000 - $0,000 $0,000 $0,000 - Total Other Expense Adjustments $0,000 $0,000 $0,000 - $0,000 $0,000 $0,000 - $0,000 $0,000 $0,000 - Total Expenses before Depreciation & Other Post Employment Benefits $1,513,914 $1,479,957 $33,957 2.2 $316,361 $345,199 ($28,838) (9.1) $1,830,275 $1,825,156 $5,119 0.3 Depreciation $423,504 $430,996 ($7,491) (1.8) $0,000 $0,000 $0,000 - $423,504 $430,996 ($7,491) (1.8) GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 - 0.000 0.000 0.000 - 0.000 0.000 0.000 - GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 - 0.000 0.000 0.000 - 0.000 0.000 0.000 - GASB 87 Lease Compliance 4,702 1,597 3,105 66.0 0.000 0.001 (0,001) - 4,702 1,598 3,103 66.0 GASB 96 - SBITA Asset Subscriptions 1,406 (1,291) 2,697 * 0.000 0.000 0.000 - 1,406 (1,291) 2,697 * Environmental Remediation 1,634 6,563 (4,929) * 0.000 0.000 0.000 - 1,634 6,563 (4,929) * Total Expenses $1,945,160 $1,917,821 $27,339 1.4 $316,361 $345,200 ($28,839) (9.1) $2,261,521 $2,263,021 ($1,501) (0.1) Net Surplus/(Deficit) ($1,396,733) ($1,354,857) $41,876 3.0 $0,000 $0,000 ($0,000) - ($1,396,733) ($1,354,857) $41,876 3.0 Cash Conversion Adjustments Depreciation $423,504 $430,996 $7,491 1.8 $0,000 $0,000 $0,000 - $423,504 $430,996 $7,491 1.8 Operating/Capital (9,668) (7,396) 2,272 23.5 0.000 0.000 0.000 - (9,668) (7,396) 2,272 23.5 Other Cash Adjustments 176,660 203,023 26,362 14.9 0.000 0.000 0.000 - 176,660 203,023 26,362 14.9 Total Cash Conversion Adjustments $590,497 $626,623 $36,126 6.1 $0,000 $0,000 $0,000 0.0 $590,497 $626,623 $36,126 6.1 Net Cash Surplus/(Deficit) ($806,236) ($728,234) $78,002 9.7 $0,000 $0,000 $0,000 0.0 ($806,236) ($728,234) $78,002 9.7
+```
+[p006_c0005] _Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current months' actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results._
+
+## Page 7
+
+### [p007_c0001] MTA LONG ISLAND RAIL ROAD JULY FINANCIAL PLAN - 2025 MID-YEAR FORECAST CASH RECEIPTS and EXPENDITURES September 2025 ($ in millions)
+[p007_c0002]
+
+```text
+Month Year-to-Date Forecast Actual Variance Percent Forecast Actual Variance Percent Favorable (Unfavorable) Favorable (Unfavorable) Opening Cash Balance $0.000 $33.016 $33.016 - $0.000 $33.016 $33.016 - Receipts Farebox Revenue $60.469 $65.701 $5.232 8.7 $516.713 $517.270 $0.557 0.1 Vehicle Toll Revenue 0.000 0.000 0.000 - 0.000 0.000 0.000 - Other Operating Revenue 2.915 3.191 0.276 9.5 35.629 40.713 5.084 14.3 Capital & Other Reimbursements 40.386 59.277 18.891 46.8 318.268 338.405 20.137 6.3 Total Receipts $103.770 $128.169 $24.399 23.5 $870.610 $896.387 $25.777 3.0 Expenditures Labor: Payroll $72.047 $64.804 $7.243 10.1 $657.195 $621.443 $35.751 5.4 Overtime 15.111 17.227 (2.116) (14.0) 162.288 165.360 (3.072) (1.9) Health and Welfare 18.581 16.264 2.316 12.5 159.987 147.313 12.674 7.9 OPEB Current Payment 6.755 6.308 0.447 6.6 58.921 57.040 1.881 3.2 Pensions 0.497 (0.006) 0.504 * 2.439 3.826 (1.387) (56.9) Other Fringe Benefits 17.168 15.560 1.608 9.4 177.191 179.595 (2.404) (1.4) Contribution to GASB Fund 0.000 0.000 0.000 - 0.000 0.000 0.000 - Reimbursable Overhead 0.000 0.000 0.000 - 0.000 0.000 0.000 - Total Labor Expenditures $130.159 $120.156 $10.002 7.7 $1,218.020 $1,174.577 $43.444 3.6 Non-Labor: Electric Power $10.462 $11.355 ($0.893) (8.5) $89.831 $90.995 ($1.163) (1.3) Fuel 1.775 2.071 (0.296) (16.7) 18.897 20.293 (1.396) (7.4) Insurance 4.989 5.287 (0.298) (6.0) 26.204 36.333 (10.129) (38.7) Claims 0.597 0.111 0.486 81.5 2.714 (0.053) 2.767 * Paratransit Service Contracts 0.000 0.000 0.000 - 0.000 0.000 0.000 - Maintenance and Other Operating Contracts 12.247 8.838 3.410 27.8 114.758 107.582 7.177 6.3 Professional Service Contracts 5.589 2.446 3.143 56.2 30.800 25.049 5.751 18.7 Materials & Supplies 14.485 17.107 (2.621) (18.1) 148.669 148.836 (0.168) (0.1) Other Business Expenses 2.336 2.600 (0.264) (11.3) 21.076 20.755 0.321 1.5 Total Non-Labor Expenditures $52.480 $49.813 $2.667 5.1 $452.948 $449.789 $3.159 0.7 Other Expenditure Adjustments: Other $1.112 $0.000 $1.112 100.0 $5.878 $0.256 $5.622 95.7 Total Other Expenditure Adjustments $1.112 $0.000 $1.112 100.0 $5.878 $0.256 $5.622 95.7 Total Expenditures $183.751 $169.970 $13.781 7.5 $1,676.846 $1,624.622 $52.225 3.1 Net Cash Surplus/(Deficit) ($79.980) ($41.800) $38.180 47.7 ($806.236) ($728.234) $78.002 9.7 MTA Subsidy $79.980 $47.083 ($32.897) (41.1) $806.236 $738.171 ($68.066) (8.4) Cash Timing and Availability Adjustment $0.000 $0.226 $0.226 - $0.000 ($6.283) ($6.283) - Net Cash Deficit with Cash Timing & Availability Adj. ($79.980) ($41.574) $38.406 48.0 ($806.236) ($734.518) $71.718 8.9 Closing Cash Balance $0.000 $38.525 $38.525 - $0.000 $36.669 $36.669 -
+```
+
+## Page 8
+
+### [p008_c0001] MTA LONG ISLAND RAIL ROAD JULY FINANCIAL PLAN - 2025 MID-YEAR FORECAST CASH CONVERSION (CASH FLOW ADJUSTMENTS) September 2025 ($ in millions)
+[p008_c0002]
+
+```text
+Month Year-to-Date Forecast Actual Variance Favorable Forecast Actual Favorable Percent (Unfavorable) (Unfavorable) Receipts Farebox Revenue $0.565 $3.290 $2.725 * $2.978 $0.160 ($2.818) (94.6) Vehicle Toll Revenue 0.000 0.000 0.000 - 0.000 0.000 0.000 - Other Operating Revenue (0.128) (0.677) (0.549) * 0.937 (5.142) (6.079) * Capital & Other Reimbursements 1.504 8.503 6.999 * 1.907 (6.796) (8.703) * Total Receipts $1.941 11.116 $9.175 * $5.822 (11.777) ($17.600) * Expenditures Labor: Payroll $0.668 $3.524 $2.856 * ($12.242) $3.453 $15.695 * Overtime 3.630 5.307 1.677 46.2 0.789 4.095 3.305 * Health and Welfare (0.307) 0.872 1.179 * 0.935 4.985 4.050 * OPEB Current Payment (0.138) 0.322 0.460 * 0.414 2.027 1.613 * Pensions 20.457 19.664 (0.794) (3.9) 178.718 170.284 (8.434) (4.7) Other Fringe Benefits 3.673 5.826 2.154 58.6 3.078 3.664 0.586 19.0 Contribution to GASB Fund 0.000 0.000 0.000 - 0.000 0.000 0.000 - Reimbursable Overhead 0.000 0.000 0.000 - 0.000 0.000 0.000 - Total Labor Expenditures $27.983 $35.515 $7.533 26.9 $171.692 $188.507 $16.815 9.8 Non-Labor: Electric Power $0.000 $0.016 $0.016 - ($1.380) $0.229 $1.609 * Fuel 0.000 0.013 0.013 - (0.382) (0.591) (0.210) (54.9) Insurance (1.390) (1.473) (0.083) (5.9) 4.291 (5.155) (9.446) * Claims (0.198) (0.121) 0.077 38.8 0.027 2.061 2.033 * Paratransit Service Contracts 0.000 0.000 0.000 - 0.000 0.000 0.000 - Maintenance and Other Operating Contracts (0.942) 1.448 2.390 * (13.284) (5.298) 7.986 60.1 Professional Service Contracts (1.803) 0.556 2.359 * 8.463 16.707 8.243 97.4 Materials & Supplies (1.315) (0.050) 1.265 96.2 (8.563) 2.092 10.655 * Other Business Expenses (0.491) 2.679 3.169 * (1.558) 2.239 3.797 * Total Non-Labor Expenditures ($6.139) $3.068 $9.207 * ($12.385) $12.283 $24.668 * Other Expenditure Adjustments: Other ($1.112) $0.000 $1.112 100.0 ($5.878) ($0.256) $5.622 95.7 Total Other Expenditure Adjustments ($1.112) $0.000 $1.112 100.0 ($5.878) ($0.256) $5.622 95.7 Total Expenditures $20.732 $38.583 $17.852 86.1 $153.429 $200.534 $47.106 30.7 Depreciation Adjustment $46.404 $47.136 $0.732 1.6 $423.504 $430.996 $7.491 1.8 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 - 0.000 0.000 0.000 - GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 - 0.000 0.000 0.000 - GASB 87 Lease Compliance (0.052) (1.138) (1.086) * 4.702 1.598 (3.103) (66.0) GASB 96 0.050 0.275 0.225 * 1.406 (1.291) (2.697) * Environmental Remediation 0.133 3.629 3.496 * 1.634 6.563 4.929 * Total Expenditures After Non-Cash Liabilities $67.268 $88.485 $21.218 31.5 $584.674 $638.400 $53.725 9.2 Total Cash Conversion Adjustments $69.209 $99.601 $30.393 43.9 $590.497 $626.623 $36.126 6.1 Cash Timing and Availability Adjustment $0.000 $0.226 0.226 - $0.000 ($6.283) (6.283) - Total Cash Conversion Adjustments with Cash Timing $69.209 $99.827 $30.619 44.2 $590.497 $620.339 $29.842 5.1
+```
+
+## Page 9
+
+### [p009_c0001] LONG ISLAND RAIL ROAD
+### [p009_c0002] THE BIG PICTURE
+- [p009_c0003] • Underspend of $2.4M vs Mid-Year Forecast primarily due to favorable Programmatic/Routine Maintenance, Scheduled Service, Vacancy/Absentee Coverage, Unscheduled Service, and Weather-Related Overtime, partially offset by Unscheduled Maintenance.
+> [p009_c0004] Budget Performance Non-Reimbursable Overtime - YTD September (all dollars in millions) Period Mid-Year Forecast Actual YTD 2019 $108.7 $104.3 YTD 2024 $114.6 $116.6 YTD 2025 $127.9 $125.4
+### [p009_c0005] NON-REIMBURSABLE OVERTIME
+### [p009_c0006] AGENCY DETAIL
+- [p009_c0007] • Maintenance of Equipment (MOE): • Maintenance of Equipment Overtime of $53.5 M is 43% of 2025 YTD Actuals. • $0.8M favorable vs 2025 Mid-Year Forecast primarily driven by Vacancy/Absentee Coverage, Scheduled Service, Weather Emergencies and Programmatic/Routine Maintenance. • Maintenance of Way (MOW): • MOW of $23.0M is 18% of 2025 YTD Actuals. • $0.4M favorable vs 2025 Mid-Year Forecast primarily driven by Programmatic/Routine Maintenance, Scheduled Service, and Weather Emergencies, partially offset by Unscheduled Maintenance and Vacancy/Absentee Coverage. • Transportation: • Transportation Overtime of $43.0 M is 34% of 2025 YTD Actuals. • $1.9M favorable vs 2025 Mid-Year Forecast mainly driven by Scheduled Service, Vacancy/ Absentee Coverage, Unscheduled Service and Weather Emergencies. • Stations: • Stations Overtime of $4.2M is 3% of 2024 YTD Actuals. • $0.5M unfavorable vs 2025 Mid-Year Forecast driven by Vacancy/ Absentee Coverage.
+
+## Page 10
+
+### [p010_c0001] LONG ISLAND RAIL ROAD
+### [p010_c0002] THE BIG PICTURE
+- [p010_c0003] • Overspend of $8.8M vs Mid-Year Forecast driven by various capital projects and Transportation flagging needs.
+> [p010_c0004] Period Mid-Year Forecast Actual YTD 2019 $31.0 $40.8 YTD 2024 $33.6 $41.3 YTD 2025 $35.2 $44.0
+### [p010_c0005] REIMBURSABLE OVERTIME
+### [p010_c0006] AGENCY DETAIL
+- [p010_c0007] • Maintenance of Equipment (MOE) • MOE Overtime of $0.4M is 1% of 2025 YTD Actuals. • $0.1M favorable vs 2025 Mid-Year Forecast . • Maintenance of Way (MOW): • MOW Overtime of $37.3M is 85% of 2025 YTD Actuals. • $7.8M unfavorable vs 2025 Mid-Year Forecast driven by various capital projects. • Transportation: • Transportation Overtime of $5.8M is 13% of 2025 YTD Actuals. • $1.0M unfavorable vs 2025 Mid-Year Forecast driven by various capital projects and flagging needs. • Stations • Stations Overtime of $0.3M is 1% of 2025 YTD Actuals. • $0.1M unfavorable vs 2025 Mid-Year Forecast .
+
+## Page 11
+
+### [p011_c0001] MTA LONG ISLAND RAIL ROAD JULY FINANCIAL PLAN - 2025 MID-YEAR FORECAST Total Full-Time Positions & FTEs by Function and Department END-of-MONTH September 2025
+[p011_c0002]
+
+```text
+Forecast Actual Favorable (unfavorable) Variance Administration President 15 18 (3) Market Dev & Mailroom 14 13 1 Security 14 12 2 Safety 55 54 1 Training 72 69 3 Rolling Stock Programs 17 10 7 VP Ops Support & Org Res 4 4 0 Communications 54 55 (1) Labor Relations 13 12 1 Diversity 2 1 1 Legal 25 26 (1) Procurement & Matl Mgmt 144 143 1 Finance 58 57 1 People 37 34 3 Security Pass Office 3 2 1 Total Administration 527 510 17 Operations Service Planning 28 31 (3) Sr Vice President - Operations 4 5 (1) Enterprise Asset Management 9 8 1 Transportation 2,267 2,339 (72) Stations 539 527 12 Total Operations 2,847 2,910 (63) Maintenance Sr. Vice President - Engineering 1 0 1 Maintenance of Way 2,197 2,087 110 Maintenance of Equipment 2,166 2,193 (27) Railroad Program Support 52 40 12 Total Maintenance 4,416 4,320 96 Engineering/Capital Special Projects 46 30 16 Construction & Development 128 79 49 Total Engineering/Capital 174 109 65 Baseline Total Positions 7,964 7,849 115 Non-Reimbursable 6,778 6,844 (66) Reimbursable 1,186 1,005 181 Total Full-Time 7,964 7,849 115 Total Full-Time-Equivalents 0 0 0
+```
+
+## Page 12
+
+### [p012_c0001] MTA LONG ISLAND RAIL ROAD JULY FINANCIAL PLAN - 2025 MID-YEAR FORECAST Total Positions by Function and Occupational Group END-of-MONTH September 2025
+[p012_c0002]
+
+```text
+Forecast Actual Favorable (unfavorable) Variance Administration Managers/Supervisors 259 253 6 Professional, Technical, Clerical 155 144 11 Operational Hourlies 113 113 0 Total Administration 527 510 17 Operations Managers/Supervisors 395 378 17 Professional, Technical, Clerical 151 141 10 Operational Hourlies 2,301 2,391 (90) Total Operations 2,847 2,910 (63) Maintenance Managers/Supervisors 1,032 917 115 Professional, Technical, Clerical 250 238 12 Operational Hourlies 3,134 3,165 (31) Total Maintenance 4,416 4,320 96 Engineering/Capital Managers/Supervisors 118 98 20 Professional, Technical, Clerical 56 11 45 Operational Hourlies 0 0 0 Total Engineering/Capital 174 109 65 Baseline Total Positions Managers/Supervisors 1,804 1,646 158 Professional, Technical, Clerical 611 534 77 Operational Hourlies 5,548 5,669 (121) Total Baseline 7,964 7,849 115
+```
+
+## Page 13
+
+### [p013_c0001] MTA LONG ISLAND RAIL ROAD JULY FINANCIAL PLAN - 2025 MID-YEAR FORECAST MONTHLY PERFORMANCE INDICATORS September 2025
+[p013_c0002]
+
+```text
+MONTH VARIANCE Actual 2025 Forecast 2025 Actual 2024 vs. Forecast vs. 2024 Farebox Operating Ratio Standard (1) 37.1% 34.2% 32.7% 2.9% 4.4% Adjusted (2) 42.5% 38.6% 36.7% 3.9% 5.8% Cost Per Passenger Standard (1) $22.84 $24.66 $26.61 $1.82 $3.77 Adjusted (2) $21.25 $23.01 $24.85 $1.76 $3.60 Passenger Revenue/Passenger (3) $8.48 $8.44 $8.70 $0.04 ($0.22) YEAR-TO-DATE VARIANCE Actual 2025 Forecast 2025 Actual 2024 vs. Forecast vs. 2024 Farebox Operating Ratio Standard (1) 33.2% 32.2% 32.0% 1.0% 1.2% Adjusted (2) 38.9% 36.8% 37.0% 2.1% 1.9% Cost Per Passenger Standard (1) $25.63 $26.29 $27.02 $0.66 $1.39 Adjusted (2) $23.86 $24.56 $25.16 $0.70 $1.30 Passenger Revenue/Passenger (3) $8.51 $8.47 $8.64 $0.04 ($0.13)
+```
+[p013_c0003] (1) The Standard Farebox Operating Ratio and Cost Per Passenger indicators reflect MTA-wide adopted calculations that exclude non-cash liability adjustments: Depreciation, Other Post Employment Benefits and Environmental Remediation (GASB-49).
+[p013_c0004] (2) Adjusted Fare Box Operating Ratio and Cost Per Passenger indicators have been adjusted for comparability between the Long Island Rail Road and Metro-North Railroad and are being presented only at the railroad operating committees. These adjustments are not being used MTA-wide. Adjustments have been made to reflect all operating revenue and significant financial impacts that are outside management's control. These adjustments include: Inclusion of Other Operating Revenue, Removal of OPEB Current Payment expenses for retirees, and Removal of the UAAL associated with the LIRR's closed pension plan.
+[p013_c0005] Note: Expenses for Grand Central Madison Concourse Operating Company (GCMCOC) are included in LIRR performance indicator calculations.
+
+## Page 14
+
+### [p014_c0001] Farebox Revenue Report Highlights
+### [p014_c0002] Month of September
+[p014_c0003] LIRR revenue totaled $62.4 million in September 2025, $2.5 million or 4.2% higher than the forecast.
+- [p014_c0004] • Commutation revenue of $19.5 million was $0.6 million or 3% lower than the forecast. • Non-commutation revenue of $42.9 million was $3.1 million or 7.8% higher than the forecast.
+### [p014_c0005] Year-to-Date
+[p014_c0006] LIRR revenue totaled $517.1 million through September 2025, $3.4 million or 0.7% higher than the forecast.
+- [p014_c0007] • Commutation revenue of $162.0 million was $9.6 million or 5.6% lower than the forecast. • Non-commutation revenue of $355.1 million was $12.9 million or 3.8% higher than forecast.
+[p014_c0008]
+
+```text
+September 2025 Ridership vs. Forecast - (In Millions) September September Year-to-Date More/(Less) More/(Less) Forecast Actual Variance Percent Forecast Actual Variance Percent Commutation 2.851 2.777 (0.073) -2.6% 24.188 22.892 (1.296) -5.4% Non-Commutation 4.243 4.581 0.338 8.0% 36.475 37.847 1.372 3.8% Total 7.094 7.359 0.265 3.7% 60.662 60.739 0.076 0.1%
+```
+[p014_c0009]
+
+```text
+September 2025 Farebox Revenue vs. Forecast - (In $ Millions) September September Year-to-Date Fav/(Unfav) Fav/(Unfav) Forecast Actual Variance Percent Forecast Actual Variance Percent Commutation $20.1 $19.5 ($0.6) -3.0% $171.6 $162.0 ($9.6) -5.6% Non-Commutation $39.8 $42.9 $3.1 7.8% $342.2 $355.1 $12.9 3.8% Total $59.9 $62.4 $2.5 4.2% $513.7 $517.1 $3.4 0.7%
+```

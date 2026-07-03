@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T22-56-13-356Z_1976810-01d96a6f_ingest_201109-brt-nostrand-cac4",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T01:46:05.741Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1-nostrand-rogers-sbs-already-resolved",
+        "local_observation_id": "project_nostrand_rogers_sbs_cac4_201109",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'project_nostrand-rogers-sbs' exactly matches an existing canonical registry record. That record already lists source_id '201109_brt_nostrand_cac4' in its source_ids and includes the alias 'project_nostrand-rogers-sbs-cac4-201109'. The observation is already canonically resolved to this identity; no cross-record link is needed. Per the rule: closest match IS the observation's own base_record_id → decision is 'new'.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_nostrand_cac4",
+            "block_id": "p001_c0004",
+            "source_quote": "Nostrand Avenue / Rogers Avenue Select Bus Service Community Advisory Committee Meeting 4 - Tuesday, September 20, 2011"
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-43-19-855Z_2111393-6672db17_canonicalize_2026-06-10t22-56-13-356z-1976810-01d96a6f-ingest-201109-brt-nostrand-cac4-project-identity"
+}

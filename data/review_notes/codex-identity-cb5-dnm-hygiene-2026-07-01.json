@@ -1,0 +1,73 @@
+{
+  "id": "identity-cb5-dnm-hygiene",
+  "date": "2026-07-01",
+  "external_provider_llms_used": false,
+  "forbidden_commands_used": false,
+  "bucket": "entity duplicate identity keys / do-not-merge alias-collapse hygiene",
+  "baseline": {
+    "validate": {
+      "submissions": 98115,
+      "canonical_records": 84030,
+      "wiki_pages": 7333,
+      "issues": 0
+    },
+    "entity_do_not_merge_pairs": 173,
+    "duplicate_entity_do_not_merge_pairs": 0,
+    "canonical_pairs_present_before": {
+      "entity_bronx-cb5-2012-11-webster <> entity_brooklyn-cb5-linden-blvd-2025": false,
+      "entity_brooklyn-cb5-linden-blvd-2025 <> entity_community-board-5-queens-2015": false,
+      "entity_bronx-cb5-2012-11-webster <> entity_community-board-5-queens-2015": true
+    }
+  },
+  "implemented": [
+    {
+      "kind": "do_not_merge",
+      "record_ids": [
+        "entity_bronx-cb5-2012-11-webster",
+        "entity_brooklyn-cb5-linden-blvd-2025"
+      ],
+      "reason": "Bronx Community Board 5 and Brooklyn Community Board 5 are distinct borough-scoped community boards; the prior guard used a stale Brooklyn alias that now collapses to entity_brooklyn-cb5-linden-blvd-2025."
+    },
+    {
+      "kind": "do_not_merge",
+      "record_ids": [
+        "entity_brooklyn-cb5-linden-blvd-2025",
+        "entity_community-board-5-queens-2015"
+      ],
+      "reason": "Brooklyn Community Board 5 and Queens Community Board 5 are distinct borough-scoped community boards; the prior guard used a stale Brooklyn alias that now collapses to entity_brooklyn-cb5-linden-blvd-2025."
+    }
+  ],
+  "expected_effect": {
+    "strict_entity_duplicate_identity_open_pairs": 0,
+    "strict_project_duplicate_identity_open_pairs": 0,
+    "identity_review_effect": "Suppresses canonicalized false-positive CB5 merge pressure while preserving borough-scoped community board records as separate entities.",
+    "materialization_required": false
+  },
+  "verification": {
+    "json_parse": "passed",
+    "canonical_pairs_present_after": {
+      "entity_bronx-cb5-2012-11-webster <> entity_brooklyn-cb5-linden-blvd-2025": true,
+      "entity_brooklyn-cb5-linden-blvd-2025 <> entity_community-board-5-queens-2015": true,
+      "entity_bronx-cb5-2012-11-webster <> entity_community-board-5-queens-2015": true
+    },
+    "entity_do_not_merge_pairs_after": 175,
+    "duplicate_entity_do_not_merge_pairs_after": 0,
+    "relation_family_other_total": 0,
+    "validate": {
+      "submissions": 98115,
+      "canonical_records": 84030,
+      "wiki_pages": 7333,
+      "issues": 0
+    }
+  },
+  "files_changed": [
+    "data/identity-overrides/do-not-merge.json",
+    "data/review_notes/codex-identity-cb5-dnm-hygiene-2026-07-01.json",
+    "LOG.md"
+  ],
+  "next_buckets": [
+    "treatment_family other",
+    "project status/family other",
+    "route split/aggregate candidates"
+  ]
+}

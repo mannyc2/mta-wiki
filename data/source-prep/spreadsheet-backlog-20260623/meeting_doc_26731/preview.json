@@ -1,0 +1,11 @@
+{
+  "kind": "spreadsheet_preview",
+  "status": "unsupported",
+  "source_id": "meeting_doc_26731",
+  "run_id": "spreadsheet-backlog-20260623",
+  "generated_at": "2026-06-23T12:36:16.126Z",
+  "source_path": "raw/sources/meeting_doc_26731/source.xls",
+  "source_sha256": "sha256:bf8f45fb39dbeab94e7cbc6a22f531402d0275030da8dc8575cbb801954765b8",
+  "reason": "Legacy source.xls workbooks are not supported by the deterministic XLSX sidecar preview yet",
+  "sheets": []
+}

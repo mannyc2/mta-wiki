@@ -1,0 +1,1035 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-128981"
+record_kind: "source"
+display_name: "Bridges and Tunnels Committee Meeting December 2023"
+source_id: "meeting_doc_128981"
+source_ids:
+  - "meeting_doc_128981"
+local_observation_id: "source_meeting_doc_128981"
+local_observation_ids:
+  - "source_meeting_doc_128981"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T13:39:55.475Z"
+raw_text: "Bridges and Tunnels Committee Meeting December 2023 - Committee Book containing meeting minutes, work plan, operations report, safety report, financial report, budget, and diversity report."
+submission_ids:
+  - "sub_83f397cca4c3b983"
+payload:
+  authority_tier: "board_material"
+  content_type: "Committee Meeting Book"
+  date: "December 2023"
+  date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2023-12"
+    precision: "month"
+    raw_text: "December 2023"
+  date_text: "December 2023"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2023-12"
+    precision: "month"
+    raw_text: "December 2023"
+  description: "Bridges and Tunnels Committee Meeting book for December 2023 containing minutes, work plan, operations report, safety report, financial report, budget/financial plan, and diversity report."
+  published_date_normalized: "2023-12"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "Bridges and Tunnels Committee Meeting"
+evidence_refs:
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_128981#p001_c0004"
+    page_number: 1
+    role: "document_date"
+    source_id: "meeting_doc_128981"
+    source_path: "raw/sources/meeting_doc_128981/blocks.jsonl"
+    source_quote: "December 2023"
+    text_sha256: "sha256:2075e9377d598ba88fe91655a4627ad490bf781ee394a318fa2e746c5b05f7d6"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002..p001_c0003"
+    block_range: "p001_c0002..p001_c0003"
+    child_block_ids:
+      - "p001_c0002"
+      - "p001_c0003"
+    evidence_id: "meeting_doc_128981#p001_c0002..p001_c0003"
+    page_number: 1
+    role: "document_title"
+    source_id: "meeting_doc_128981"
+    source_path: "raw/sources/meeting_doc_128981/blocks.jsonl"
+    source_quote: "Metropolitan Transportation Authority Bridges and Tunnels Committee Meeting"
+    text_sha256: "sha256:24715ce7d0e6d8e7e16ea11854b7ce29d80b532eea972d93e3e543725bb48988"
+    text_source: "raw_text"
+---
+
+# Bridges and Tunnels Committee Book
+
+source_id: meeting_doc_128981
+citation: cite block ids exactly as shown in square brackets
+document: 551 block(s)
+
+## Page 1
+
+> [p001_c0001] The logo for the Metropolitan Transportation Authority (MTA), featuring the letters "MTA" in white inside a black circle.
+[p001_c0002] Metropolitan Transportation Authority
+### [p001_c0003] Bridges and Tunnels Committee Meeting
+[p001_c0004] December 2023
+### [p001_c0005] Committee Members
+[p001_c0006] D. Mack, Chair
+[p001_c0007] A. Albert
+[p001_c0008] J. Barbas
+[p001_c0009] N. Brown
+[p001_c0010] R. Glucksman
+[p001_c0011] K. Law
+[p001_c0012] J. Samuelsen
+[p001_c0013] V. Tessitore
+[p001_c0014] N. Zuckerman
+
+## Page 2
+
+### [p002_c0001] Bridges & Tunnels Committee Meeting 2 Broadway, 20th Floor Board Room New York, NY 10004 Monday, 12/18/2023 9:00 - 9:30 AM ET
+[p002_c0002] 1. Summary of Actions - None
+[p002_c0003] 2. Public Comments Period
+[p002_c0004] 3. Approval of Minutes - November 2023
+[p002_c0005] B&T Committee Minutes - November 2023 - Page 3
+[p002_c0006] 4. Proposed 2024 Committee Work Plan
+[p002_c0007] B&T Committee Work Plan - Page 8
+[p002_c0008] 5. Report on Operations - October 2023
+[p002_c0009] B&T Report on Operations - October 2023 - Page 14
+[p002_c0010] 6. Safety Report - October 2023
+[p002_c0011] B&T Safety Report - October 2023 - Page 26
+[p002_c0012] 7. Financial Report - November 2023
+[p002_c0013] B&T Financial Report- November 2023 - Page 31
+[p002_c0014] 8. 2024 Adopted Budget and Financial Plan 2024-2027 (Information Item)
+[p002_c0015] B&T 2024 Adopted Budget and Financial Plan 2024-2027 - Page 45
+[p002_c0016] 9. Procurements - None
+[p002_c0017] 10. B&T Diversity Report - Third Quarter 2023
+[p002_c0018] B&T Diversity Report - Third Quarter 2023 - Page 55
+
+## Page 3
+
+> [p003_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a black circle.
+### [p003_c0002] Bridges and Tunnels
+### [p003_c0003] Minutes of Committee Meeting November 2023
+> [p003_c0004] A vertical line consisting of three parallel lines, likely a placeholder for a signature or a decorative element.
+[p003_c0005] _Master Page # 3 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 4
+
+### [p004_c0001] MONTHLY MEETING OF TRIBOROUGH BRIDGE AND TUNNEL AUTHORITY COMMITTEE
+[p004_c0002] November 29, 2023
+[p004_c0003] 9:30 a.m.
+[p004_c0004] In attendance were the Honorable:
+[p004_c0005] David Mack, Chair Andrew Albert Jamey Barbas Norman Brown Randolph Glucksman Lisa Sorin Vincent Tessitore, Jr. Midori Valdivia
+[p004_c0006] In Person:
+[p004_c0007] Nichola Angel, Vice President of Intelligent Transportation Systems and Tolling Joyce Brown, Agency Chief Equal Opportunity Officer Allison L. C. de Cerreño, Ph.D., Chief Operating Officer Paul L. Friman, General Counsel and Corporate Secretary – TBTA, MTA Lynn Gore, Deputy Chief Procurement Officer Richard Hildebrand, Vice President and Chief of Operations Donald E. Look, Vice President and Chief Security Officer Eric Osnes, Vice President and Chief Safety Officer Rose Pascone, Deputy Director of Public Affairs and Agency Support Charles J. Passarella, Vice President of Maintenance and Operations Support Catherine T. Sheridan, P.E., President
+[p004_c0008] _Master Page # 4 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 5
+
+### [p005_c0001] MONTHLY MEETING OF TRIBOROUGH BRIDGE AND TUNNEL AUTHORITY COMMITTEE
+[p005_c0002] November 29, 2023
+[p005_c0003] Minutes of TBTA Committee held November 29, 2023 at 9:30 a.m. A list of those in attendance is attached.
+### [p005_c0004] Public Speakers
+[p005_c0005] The following speakers commented during the public speakers' session:
+- [p005_c0006] • Jason Anthony about safety. • Matthew Buchys Hyland about congestion pricing. • Michael Ring about the NYC marathon. • Aleta Dupree about revenue collections. • Murray Bodin about safety.
+### [p005_c0007] Minutes
+[p005_c0008] Upon a motion duly made and seconded, the minutes of the Committee Meeting held on October 23, 2023 were approved.
+### [p005_c0009] Committee Work Plan
+[p005_c0010] President Sheridan stated that there are no changes to the TBTA Committee Work Plan.
+### [p005_c0011] President Sheridan's Remarks
+[p005_c0012] President Sheridan opened her remarks by stating that the 52nd running of the TCS New York City Marathon kicked off on November 5th from its traditional starting line at TBTA's Verrazzano-Narrows Bridge (VNB). More than 50,000 participants along with a sea of event organizers and officials convened for the race. TBTA employees' collective efforts allowed for a smooth executed event from the start that showcased the VNB to a worldwide audience.
+[p005_c0013] President Sheridan stated that this was her first Marathon experience, and was honored to represent the MTA along with other City officials, event sponsors, and the New York Road Runners at the "Blue Line Painting Ceremony" on November 1st. President Sheridan added that she was thrilled to be offered the privilege of firing the cannon to signal the start of one of the waves of the runners on Event-Sunday. President Sheridan applauded those TBTA and MTA colleagues who rose early to meet the challenge to run across New York City, and congratulated all on this impressive achievement.
+### [p005_c0014] Presentation on Annual Marathon Preparation and Execution
+[p005_c0015] TBTA Department Heads Richard Hildebrand, Vice President and Chief of Operations; Donald E. Look, Vice President and Chief Security Officer; Eric Osnes, Vice President and Chief Safety Officer; and Charles Passarella, Vice President of Maintenance and Operations Support, presented TBTA's review of annual marathon preparation and execution.
+[p005_c0016] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for the details of the presentation, Committee members comments, TBTA Department Heads responses, and President Sheridan's remarks.
+[p005_c0017] _Master Page # 5 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 6
+
+### [p006_c0001] Procurements
+[p006_c0002] For November 2023, Deputy Chief Procurement Officer (DCPO) Lynn Gore stated that there are three (3) procurement actions.
+### [p006_c0003] Non-Competitive Procurements
+[p006_c0004] DCPO Gore stated that there are no non-competitive procurements or ratifications.
+### [p006_c0005] Competitive Procurements
+[p006_c0006] DCPO Gore stated that there are three (3) competitively solicited personal service contracts sought to be awarded to: (A) Atkins, P.A. P.C.; (B) Gannett Fleming Engineers and Architects, P. C.; and (C) Henningson, Durham and Richardson Architecture and Engineering, P.C. (“HDR”), to provide miscellaneous toll collection consultant support services on an as-needed basis in the aggregate not-to-exceed amount of $10 million over a period of five years, as follows:
+### [p006_c0007] Personal Service Contracts
+[p006_c0008]
+
+```text
+Atkins, P.A. P.C. Contract No. PSC-21- 3055A Five Years TBTA is seeking Board approval to award three competitively solicited personal service contracts, one to Atkins, P.A. P.C, the second to Gannett Fleming Engineers and Architects, P.C., and the third to Henningson, Durham and Richardson Architecture and Engineering, P.C., for miscellaneous toll collection consultant support services on an as-needed basis. $10,000,000 (Aggregate A, B & C) Gannett Fleming Engineers and Architects, P.C. Contract No. PSC-21- 3055B Five Years Henningson, Durham and Richardson Architecture and Engineering, P.C. Contract No. PSC-21- 3055C Five Years
+```
+[p006_c0009] Upon a motion duly made and seconded, the Committee considered and voted in favor of the competitive procurement actions.
+[p006_c0010] In response to Commissioner Valdivia’s question about the status of a consolidated back office related to NY E-ZPass, Chief Operating Officer C. de Cerreño clarified that TBTA has had a consolidated back office for E-ZPass and then Tolls by Mail (TbM) for a long time, and that TBTA did conduct a more recent procurement that has been awarded under which the contractors are currently working on the back office upgrades. Responding to Commissioner Valdivia’s follow up question as to whether the procurement actions presently under consideration support back office operations generally, DCPO Gore explained that the three contracts support the Open Road Tolling (ORT) system and, to a limited extent, relate to the back office.
+[p006_c0011] _Master Page # 6 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 7
+
+### [p007_c0001] Adjournment
+[p007_c0002] There being no further business before the Committee, the meeting was adjourned.
+[p007_c0003] Respectfully submitted,
+[p007_c0004] _Paul L. Friman General Counsel and Corporate Secretary_
+[p007_c0005] _Master Page # 7 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 8
+
+> [p008_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a black circle.
+### [p008_c0002] Bridges and Tunnels
+### [p008_c0003] Committee Work Plan
+> [p008_c0004] A vertical line composed of three parallel lines, serving as a left margin for the page content.
+[p008_c0005] _Master Page # 8 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 9
+
+### [p009_c0001] BRIDGES & TUNNELS COMMITTEE WORK PLAN
+### [p009_c0002] I. RECURRING AGENDA ITEMS
+### [p009_c0003] TOPIC
+[p009_c0004] Approval of Minutes Committee Work Plan Report on Operations Safety Report Financial Report
+[p009_c0005] Procurements Action Items (if any)
+### [p009_c0006] Responsibility
+[p009_c0007] Committee Chair & Members Committee Chair & Members ITS & Tolling Safety & Health Controller/Office of Management & Budget Procurement & Materials
+### [p009_c0008] II. SPECIFIC AGENDA ITEMS
+### [p009_c0009] Responsibility
+### [p009_c0010] December 2023
+[p009_c0011] 2024 Proposed Committee Work Plan 2024 Proposed Final Budget
+[p009_c0012] Diversity Report – 3 rd Quarter
+[p009_c0013] Committee Chair & Members Office of Management & Budget EEO
+### [p009_c0014] January 2024
+[p009_c0015] Approval of 2024 Work Plan
+[p009_c0016] Committee Chair & Members
+### [p009_c0017] February 2024
+[p009_c0018] 2024 Adopted Budget/Financial Plan 2024-2027
+[p009_c0019] 2023 B&T Operating Surplus 2023 Customer Environment Report
+[p009_c0020] Office of Management & Budget Controller Operations
+### [p009_c0021] March 2024
+[p009_c0022] Annual Procurement Contracts Report
+[p009_c0023] Office of Management & Budget
+### [p009_c0024] April 2024
+[p009_c0025] No items scheduled
+### [p009_c0026] May 2024
+[p009_c0027] Final Review of 2023 Year-End Operating Results
+[p009_c0028] Office of Management & Budget
+### [p009_c0029] June 2024
+[p009_c0030] No items scheduled
+[p009_c0031] _Master Page # 9 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 10
+
+### [p010_c0001] July 2024
+[p010_c0002] No items scheduled
+### [p010_c0003] August 2024
+[p010_c0004] No meeting scheduled
+### [p010_c0005] September 2024
+[p010_c0006] 2025 Preliminary Budget
+[p010_c0007] Office of Management & Budget
+### [p010_c0008] October 2024
+[p010_c0009] 2025 Preliminary Budget
+[p010_c0010] Office of Management & Budget
+### [p010_c0011] November 2024
+[p010_c0012] No items scheduled
+[p010_c0013] _Master Page # 10 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 11
+
+### [p011_c0001] BRIDGES & TUNNELS COMMITTEE WORK PLAN
+### [p011_c0002] Detailed Summary
+### [p011_c0003] I. RECURRING
+### [p011_c0004] Approval of Minutes
+[p011_c0005] Approval of the official proceedings of the Committee Meeting.
+### [p011_c0006] Report on Operations
+[p011_c0007] Summary of major B&T service indicators, including graphs and tables depicting total traffic for all facilities, average daily traffic by method of payment and vehicle type, traffic by facility, and data on factors that can impact B&T traffic such as weather and gasoline prices. The Report on Operations is provided on a two-month lag, except in September when it includes reports with June and July data.
+### [p011_c0008] Safety Report
+[p011_c0009] A compilation of key leading and lagging customer and employee safety indicators, including collision rates, employee lost time injury rates, and leading indicators for roadway and fire safety. The Safety Report is provided on a two-month lag, except in September when it includes reports with June and July data.
+### [p011_c0010] Financial Report
+[p011_c0011] Summary presentation of the financial indicators for the month, which includes the Balance Sheet for the reported month, Accrual Statement of Operations for the month and year-to-date, variance analysis, traffic volume and ridership information, toll collection rates, and headcount charts. The Financial Report is provided on a one-month lag, except in the month of September, at which time it includes the July and August reports.
+### [p011_c0012] Procurements
+[p011_c0013] List of procurement action items requiring Board approval. The non-competitive items are listed first, followed by competitive items, and then ratifications. The list will indicate items that require a 2/3 vote and a majority vote of the Board for approval. Procurements are for the current month; in the month of September, the August and September procurements are included.
+[p011_c0014] Staff summary documents presented to the Board for approval for items affecting business standards and practices.
+[p011_c0015] _Master Page # 11 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 12
+
+### [p012_c0001] II. SPECIFIC AGENDA ITEMS
+### [p012_c0002] DECEMBER 2023
+### [p012_c0003] 2024 Proposed Committee Work Plan
+[p012_c0004] The Committee Chair will present a draft Bridges and Tunnels Committee Work Plan for 2024 that will address initiatives to be reported throughout the year.
+### [p012_c0005] 2024 Proposed Final Budget
+[p012_c0006] The Committee will recommend action to the Board.
+### [p012_c0007] Diversity Report – 3 rd Quarter 2023
+[p012_c0008] Review and discuss workforce analysis and activities as presented to the Board's Diversity Committee Quarterly meeting.
+### [p012_c0009] JANUARY 2024
+### [p012_c0010] Approval of Work Plan for 2024
+[p012_c0011] The committee will have already received a draft work plan for 2024 at the December 2023 meeting. The committee will be requested to approve the amended work plan for the year.
+### [p012_c0012] FEBRUARY 2024
+### [p012_c0013] 2024 Adopted Budget and February Financial Plan 2024-2027
+[p012_c0014] The Agency will present its revised 2024 Adopted Budget and Financial Plan which incorporates any changes made by the Board at the December 2023 meeting and any Agency technical adjustments is included for information.
+### [p012_c0015] 2023 B&T Operating Surplus
+[p012_c0016] The Committee will recommend action to the Board.
+### [p012_c0017] 2023 Customer Environment Report
+[p012_c0018] Review and discuss key customer service areas: improve customer service and traffic mobility at all facilities; ensure the safety of customers traveling over the bridges and tunnels; and enhance the customer environment of bridge and tunnel facilities.
+### [p012_c0019] MARCH 2024
+### [p012_c0020] Annual Procurement Contracts Report
+[p012_c0021] This report contains information on contracts awarded during the previous fiscal year and contracts open from the previous years as required by Section 2879 of the State Public Authorities Law.
+### [p012_c0022] APRIL 2024
+[p012_c0023] No items scheduled
+[p012_c0024] _Master Page # 12 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 13
+
+### [p013_c0001] MAY 2024
+### [p013_c0002] Final Review of 2023 Year-End Operating Results
+[p013_c0003] The customary review of prior year's budget results and their implications for current and future budget performance will be presented to the Committee. Each Agency will present for inclusion in the agenda materials, and be prepared to answer questions on, a review of its financial performance. The MTA Budget Division will prepare an overall review also for inclusion in the materials that draws MTA-wide conclusions.
+### [p013_c0004] JUNE 2024
+[p013_c0005] No items scheduled
+### [p013_c0006] JULY 2024
+[p013_c0007] No items scheduled
+### [p013_c0008] AUGUST 2024
+[p013_c0009] No meeting scheduled
+### [p013_c0010] SEPTEMBER 2024
+### [p013_c0011] 2025 Preliminary Budget
+[p013_c0012] Agency will present highlights of the Preliminary Budget to the Committee. Public comment will be accepted on the 2025 Preliminary Budget.
+### [p013_c0013] OCTOBER 2024
+### [p013_c0014] 2025 Preliminary Budget
+[p013_c0015] Agency will present highlights of the Preliminary Budget to the Committee. Public comment will be accepted on the 2025 Preliminary Budget.
+### [p013_c0016] NOVEMBER 2024
+[p013_c0017] No items scheduled
+[p013_c0018] _Master Page # 13 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 14
+
+> [p014_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a black circle.
+### [p014_c0002] Bridges and Tunnels
+### [p014_c0003] Report on Operations October 2023
+> [p014_c0004] A vertical line composed of three parallel black lines, positioned to the left of the main content area.
+[p014_c0005] _Master Page # 14 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 15
+
+### [p015_c0001] MTA Bridges and Tunnels October 2023 Traffic Trends
+### [p015_c0002] Summary
+[p015_c0003] B&T's total paid traffic for October was 29.0 million, an increase of 2.4% compared to 28.3 million crossings in October 2022. Compared to October 2021, B&T paid traffic was 3.3% higher with an increase of 0.9 million crossings. E-ZPass market share was 92.4% in October, lower than both last year and two years ago.
+[p015_c0004] Gasoline prices decreased slightly in October to an average of $3.85 per gallon, which is $0.12 higher than October 2022, and $0.36 higher than two years ago. Gasoline prices and weather conditions were not significant factors on October traffic.
+[p015_c0005] _Master Page # 15 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 16
+
+### [p016_c0001] MTA Bridges and Tunnels Traffic Volume - All Facilities Two Years Ending October 2023
+> [p016_c0002] Month 10/22 - 10/23 (Millions) 10/21 - 10/22 (Millions) Oct 28.33 28.08 Nov 26.91 26.84 Dec 27.06 26.02 Jan 25.74 23.97 Feb 23.97 23.45 Mar 27.89 27.36 Apr 27.40 27.40 May 29.74 28.87 Jun 29.35 28.85 Jul 29.66 28.71 Aug 29.19 29.02 Sep 28.14 27.79 Oct 28.33 28.33
+[p016_c0003] _Master Page # 16 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 17
+
+### [p017_c0001] MTA Bridges and Tunnels E-ZPass and Tolls by Mail Traffic October 2023 Preliminary data subject to final audit
+[p017_c0002]
+
+```text
+All B&T Facilities by Method of Payment October 2023 October 2022 October 2021 2023 YTD E-ZPass 1 26,809,803 26,976,680 26,717,546 235,096,236 Tolls by Mail 1 2,207,115 1,355,341 1,392,165 15,685,416 Total 29,016,918 28,332,021 28,079,713 250,779,717 E-ZPass Market Share: Total 92.4% 95.2% 95.1% 93.7% Cars 92.2% 95.1% 95.1% 93.9% Trucks 95.4% 97.1% 96.0% 95.7%
+```
+[p017_c0003]
+
+```text
+Facility Average Weekend 2 E-ZPass Market Share Average Weekend 2 E-ZPass Market Share Total Total Oct 2023 Oct 2022 Oct 2021 Total Total Oct 2023 Oct 2022 Oct 2021 E-ZPass TBM E-ZPass E-ZPass TBM E-ZPass E-ZPass TBM E-ZPass TBM Bronx-Whitestone Bridge 138,227 125,610 12,617 90.9% 94.3% 94.4% 94.4% 94.4% 94.4% 138,227 125,610 12,617 90.9% 94.3% 94.4% 94.4% 94.4% Cross Bay Bridge 22,628 21,092 1,536 93.2% 96.4% 96.1% 96.1% 96.1% 96.1% 22,628 21,092 1,536 93.2% 96.4% 96.1% 96.1% 96.1% Henry Hudson Bridge 74,555 69,586 4,969 93.3% 95.7% 95.6% 95.6% 95.6% 95.6% 74,555 69,586 4,969 93.3% 95.7% 95.6% 95.6% 95.6% High-L. Casey Tunnel 67,831 63,941 3,890 94.3% 96.7% 96.7% 96.7% 96.7% 96.7% 67,831 63,941 3,890 94.3% 96.7% 96.7% 96.7% 96.7% Maine Parkway Bridge 22,745 21,639 1,106 95.1% 97.2% 97.0% 97.0% 97.0% 97.0% 22,745 21,639 1,106 95.1% 97.2% 97.0% 97.0% 97.0% Queens Midtown Tunnel 88,629 83,945 4,684 94.4% 96.6% 96.4% 96.4% 96.4% 96.4% 88,629 83,945 4,684 94.4% 96.6% 96.4% 96.4% 96.4% Robert F. Kennedy Bridge 194,684 178,965 16,088 91.7% 95.1% 95.1% 95.1% 95.1% 95.1% 194,684 178,965 16,088 91.7% 95.1% 95.1% 95.1% 95.1% Throg Neck Bridge 117,010 107,244 9,766 91.7% 94.3% 95.0% 95.0% 95.0% 95.0% 117,010 107,244 9,766 91.7% 94.3% 95.0% 95.0% 95.0% Vernazzano-Narrows Bridge 1 224,754 210,265 13,989 93.8% 96.3% 96.1% 96.1% 96.1% 96.1% 224,754 210,265 13,989 93.8% 96.3% 96.1% 96.1% 96.1% All Facilities 1 951,063 862,137 69,926 92.8% 95.7% 95.5% 95.5% 95.5% 95.5% 951,063 862,137 69,926 92.8% 95.7% 95.5% 95.5% 95.5%
+```
+[p017_c0004] Notes:
+- [p017_c0005] As of April 1, 2023, customers receiving E-ZPass violation notices are now receiving Tolls by Mail notices. Previously these customers were included in E-ZPass market share. Average traffic and market share figures exclude holidays.
+[p017_c0006] _Master Page # 17 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 18
+
+### [p018_c0001] MTA Bridges and Tunnels E-ZPass and Tolls by Mail Traffic October 2023
+[p018_c0002] Preliminary data subject to final audit
+[p018_c0003]
+
+```text
+Distribution by Facility & Time Period Facility October 2023 Weekday AM Peak Weekday PM Peak Off-Peak Bronx-Whitestone Bridge 21.9% 23.3% 54.8% Cross Bay Bridge 25.3% 24.5% 50.2% Henry Hudson Bridge 23.2% 29.1% 47.7% Hugh L. Carey Tunnel 23.7% 23.7% 52.5% Marine Parkway Bridge 25.5% 26.9% 47.7% Queens Midtown Tunnel 20.3% 22.7% 57.0% Robert F. Kennedy Bridge 23.4% 21.3% 55.3% Throgs Neck Bridge 23.4% 23.4% 53.2% Verrazzano-Narrows Bridge 22.9% 23.7% 53.3% All Facilities 22.9% 23.5% 53.6%
+```
+[p018_c0004]
+
+```text
+Payment Method by Facility (Transactions) Facility October 2023 NY CSC E-ZPass Non-NY CSC E-ZPass Tolls By Mail Bronx-Whitestone Bridge 85.5% 5.0% 9.5% Cross Bay Bridge 91.7% 1.4% 6.9% Henry Hudson Bridge 81.6% 11.5% 7.0% Hugh L. Carey Tunnel 88.2% 5.9% 6.0% Marine Parkway Bridge 91.9% 3.0% 5.1% Queens Midtown Tunnel 89.0% 5.1% 5.9% Robert F. Kennedy Bridge 85.3% 6.1% 8.5% Throgs Neck Bridge 83.6% 7.7% 8.7% Verrazzano-Narrows Bridge 82.9% 10.4% 6.6% All Facilities 85.1% 7.3% 7.6%
+```
+[p018_c0005] NOTE: As of April 1, 2023, customers receiving E-ZPass violation notices are now receiving Tolls by Mail notices. Previously these customers were included in E-ZPass market share.
+[p018_c0006] _Master Page # 18 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 19
+
+> [p019_c0001] MTA Bridges and Tunnels Average Daily Traffic October 2021 - October 2023 All Vehicles Month Average Daily Traffic (All Vehicles) Oct-21 905,797 Nov-21 910,000 Dec-21 920,000 Jan-22 700,000 Feb-22 700,000 Mar-22 750,000 Apr-22 780,000 May-22 800,000 Jun-22 820,000 Jul-22 850,000 Aug-22 880,000 Sep-22 900,000 Oct-22 910,000 Nov-22 920,000 Dec-22 930,000 Jan-23 940,000 Feb-23 950,000 Mar-23 960,000 Apr-23 970,000 May-23 980,000 Jun-23 990,000 Jul-23 1,000,000 Aug-23 1,010,000 Sep-23 1,020,000 Oct-23 936,030
+[p019_c0002] _Master Page # 19 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 20
+
+### [p020_c0001] MTA Bridges and Tunnels Average Daily Traffic October 2021 - October 2023
+> [p020_c0002] E-ZPass Vehicles Month Average Daily Traffic (E-ZPass Vehicles) Oct-21 861,856 Nov-21 861,856 Dec-21 861,856 Jan-22 861,856 Feb-22 720,000 Mar-22 800,000 Apr-22 850,000 May-22 880,000 Jun-22 900,000 Jul-22 900,000 Aug-22 900,000 Sep-22 900,000 Oct-22 900,000 Nov-22 900,000 Dec-22 900,000 Jan-23 900,000 Feb-23 900,000 Mar-23 900,000 Apr-23 900,000 May-23 900,000 Jun-23 900,000 Jul-23 900,000 Aug-23 900,000 Sep-23 900,000 Oct-23 900,000
+[p020_c0003] _Master Page # 20 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 21
+
+### [p021_c0001] MTA Bridges and Tunnels Average Daily Traffic October 2021- October 2023
+[p021_c0002] Tolls by Mail Vehicles
+> [p021_c0003] Month Tolls by Mail Vehicles Oct-21 43,941 Nov-21 44,500 Dec-21 45,000 Jan-22 46,000 Feb-22 47,000 Mar-22 48,000 Apr-22 49,000 May-22 50,000 Jun-22 51,000 Jul-22 52,000 Aug-22 53,000 Sep-22 54,000 Oct-22 55,000 Nov-22 56,000 Dec-22 57,000 Jan-23 58,000 Feb-23 59,000 Mar-23 60,000 Apr-23 61,000 May-23 62,000 Jun-23 63,000 Jul-23 64,000 Aug-23 65,000 Sep-23 66,000 Oct-23 71,197
+[p021_c0004] _Master Page # 21 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 22
+
+### [p022_c0001] MTA Bridges and Tunnels Average Daily Traffic October 2021 - October 2023
+> [p022_c0002] Passenger Vehicles Month Average Daily Traffic (Passenger Vehicles) Oct-21 843,356 Nov-21 843,356 Dec-21 843,356 Jan-22 843,356 Feb-22 843,356 Mar-22 843,356 Apr-22 843,356 May-22 843,356 Jun-22 843,356 Jul-22 843,356 Aug-22 843,356 Sep-22 843,356 Oct-22 843,356 Nov-22 843,356 Dec-22 843,356 Jan-23 843,356 Feb-23 843,356 Mar-23 843,356 Apr-23 843,356 May-23 843,356 Jun-23 843,356 Jul-23 843,356 Aug-23 843,356 Sep-23 843,356 Oct-23 875,118
+[p022_c0003] _Master Page # 22 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 23
+
+### [p023_c0001] MTA Bridges and Tunnels Average Daily Traffic October 2021 - October 2023
+[p023_c0002] Other Vehicles
+> [p023_c0003] Month Average Daily Traffic (Other Vehicles) Oct-21 62,442 Nov-21 62,442 Dec-21 62,442 Jan-22 62,442 Feb-22 62,442 Mar-22 62,442 Apr-22 62,442 May-22 62,442 Jun-22 62,442 Jul-22 62,442 Aug-22 62,442 Sep-22 62,442 Oct-22 62,442 Nov-22 62,442 Dec-22 62,442 Jan-23 62,442 Feb-23 62,442 Mar-23 62,442 Apr-23 62,442 May-23 62,442 Jun-23 62,442 Jul-23 62,442 Aug-23 62,442 Sep-23 60,911 Oct-23 60,911
+[p023_c0004] _Master Page # 23 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 24
+
+### [p024_c0001] MTA Bridges and Tunnels Percent Change in Average Daily Traffic by Toll Media
+[p024_c0002]
+
+```text
+Corridor Toll Media Oct(1) 3 Months(2) (Aug-Oct) 6 Months(3) (May-Oct) 9 Months(4) (Feb-Oct) 12 Months(5) (Nov-Oct) All Facilities Total Vehicles 2.4% 0.9% 1.6% 1.5% 2.6% E-ZPass -0.6% -1.8% -0.7% -0.4% 0.9% Tolls by Mail 62.7% 52.9% 47.1% 40.4% 37.0% RFK Bridge Total Vehicles 3.6% 2.0% 3.0% 2.7% 4.2% E-ZPass 0.1% -1.2% 0.2% 0.4% 2.1% Tolls by Mail 68.1% 58.6% 52.9% 45.3% 42.8% Queens Midtown Tunnel Hugh L. Carey Tunnel Total Vehicles 3.1% 1.0% 0.9% 0.8% 2.5% E-ZPass 0.7% -1.1% -1.0% -0.8% 1.2% Tolls by Mail 65.4% 56.0% 48.8% 41.4% 38.1% Bronx-Whitestone Bridge Throgs Neck Bridge Total Vehicles 2.3% 1.4% 2.1% 1.3% 2.9% E-ZPass -1.3% -1.7% -0.6% -0.5% 0.9% Tolls by Mail 59.1% 51.3% 45.3% 39.4% 36.3% Verrazzano-Narrows Bridge Total Vehicles 2.1% 0.8% 1.8% 1.7% 2.6% E-ZPass -0.6% -1.4% -0.2% 0.1% 1.2% Tolls by Mail 63.9% 51.0% 47.4% 40.8% 36.1% Henry Hudson Bridge Total Vehicles -0.2% -1.8% -0.5% -0.5% 0.7% E-ZPass -2.6% -4.1% -2.5% -2.1% -0.6% Tolls By Mail 49.4% 41.7% 37.8% 31.7% 28.8% Marine Parkway Bridge Cross Bay Bridge Total Vehicles 1.5% -1.8% -2.2% -2.2% -1.6% E-ZPass -1.2% -4.0% -3.9% -3.6% -2.8% Tolls by Mail 77.0% 56.0% 39.9% 33.0% 29.2%
+```
+[p024_c0003] (1) October 2023 vs. October 2022
+[p024_c0004] (2) August 2023 to October 2023 vs. August 2022 to October 2022
+[p024_c0005] (3) May 2023 to October 2023 vs. May 2022 to October 2022
+[p024_c0006] (4) February 2023 to October 2023 vs. February 2022 to October 2022
+[p024_c0007] (5) November 2022 to October 2023 vs. November 2021 to October 2022
+[p024_c0008] _Master Page # 24 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 25
+
+### [p025_c0001] MTA Bridges and Tunnels Percent Change in Average Daily Traffic by Vehicle Type
+[p025_c0002]
+
+```text
+Corridor Toll Media Oct(1) 3 Months(2) (Aug-Oct) 6 Months(3) (May-Oct) 9 Months(4) (Feb-Oct) 12 Months(5) (Nov-Oct) All Facilities Total Vehicles 2.4% 0.9% 1.6% 1.5% 2.6% Passenger 2.9% 1.5% 1.9% 1.8% 2.9% Other -3.5% -6.8% -2.5% -2.0% -0.9% RFK Bridge Total Vehicles 3.6% 2.0% 3.0% 2.7% 4.2% Passenger 4.2% 2.7% 3.4% 3.0% 4.4% Other -3.9% -6.7% -1.7% -0.5% 1.1% Queens Midtown Tunnel Total Vehicles 3.1% 1.0% 0.9% 0.8% 2.5% Passenger 3.9% 1.8% 1.2% 1.0% 2.7% Other -8.2% -10.0% -3.8% -2.2% 0.1% Bronx-Whitestone Bridge Total Vehicles 2.3% 1.4% 2.1% 1.3% 2.9% Passenger 2.7% 2.2% 2.7% 1.6% 3.5% Other -1.9% -6.6% -4.0% -2.2% -3.3% Throgs Neck Bridge Total Vehicles 2.1% 0.8% 1.8% 1.7% 2.6% Passenger 2.4% 1.3% 2.0% 1.9% 2.8% Other -1.9% -4.7% -0.2% -0.4% -0.1% Henry Hudson Bridge Total Vehicles -0.2% -1.8% -0.5% -0.5% 0.7% Passenger -0.1% -1.7% -0.5% -0.5% 0.7% Other -5.2% -11.8% -2.1% -0.3% 4.9% Marine Parkway Bridge Total Vehicles 1.5% -1.8% -2.2% -2.2% -1.6% Passenger 2.0% -1.3% -2.2% -2.3% -1.7% Other -6.3% -9.9% -3.4% -1.6% -0.1% Cross Bay Bridge Total Vehicles 1.5% -1.8% -2.2% -2.2% -1.6% Passenger 2.0% -1.3% -2.2% -2.3% -1.7% Other -6.3% -9.9% -3.4% -1.6% -0.1%
+```
+[p025_c0003] (1) October 2023 vs. October 2022
+[p025_c0004] (2) August 2023 to October 2023 vs. August 2022 to October 2022
+[p025_c0005] (3) May 2023 to October 2023 vs. May 2022 to October 2022
+[p025_c0006] (4) February 2023 to October 2023 vs. February 2022 to October 2022
+[p025_c0007] (5) November 2022 to October 2023 vs. November 2021 to October 2022
+[p025_c0008] _Master Page # 25 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 26
+
+> [p026_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a black circle.
+### [p026_c0002] Bridges and Tunnels
+### [p026_c0003] Safety Report October 2023
+> [p026_c0004] A vertical line composed of three parallel lines, extending from the left margin down the page.
+[p026_c0005] _Master Page # 26 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 27
+
+### [p027_c0001] Safety Report
+[p027_c0002] Statistical results for the 12-Month period are shown below.
+[p027_c0003]
+
+```text
+Performance Indicator Performance Indicator 12-Month Average November 2020 - October 2021 November 2021 - October 2022 November 2022 - October 2023 Customer Collisions Rate per Million Vehicles 3.94 3.92 3.56 Customer Injury Collisions Rate per Million Vehicles 0.64 0.80 0.82 Employee Accident Reports 141 110 142 Employee Lost Time Injuries Rate per 200,000 Hours Worked 6.0 5.4 4.9
+```
+[p027_c0004]
+
+```text
+Leading Indicators Roadway Safety 2022 2023 October Year End October Year to Date Workforce Development (# of Participants) 44 490 96 1004 Fleet Preventative Maintenance Insp. 120 1531 114 1209 * Safety Taskforce Inspections 3 14 4 14 Fire Safety October Year End October Year to Date * Fire Code Audits Completed 1 14 1 11 ** FDNY Liaison Visits 14 29 10 26
+```
+[p027_c0005] * Safety Taskforce Inspections and Fire Code Audits occur annually and commence during the month of March.
+[p027_c0006] ** FDNY Liaison Visits are scheduled by the local responding authorities and typically occur seasonally during spring and fall.
+### [p027_c0007] Definitions:
+[p027_c0008] Workforce Development provides for focused safety and skills training to all operations, maintenance and staff personnel. Classes feature OSHA 10 and 30 Classes, operations mandatory safety and skills instruction and retraining and specialty training (TIMS, CDL, FDNY instruction, Wrecker Driver Instruction and Roadway Safety Rules).
+[p027_c0009] Fleet Preventative Maintenance Inspections are conducted at each location to improve the customer and worker safety environment. Inspections identify potential hazardous roadway or facility conditions and prescribe corrective actions to eliminate hazards.
+[p027_c0010] Safety Taskforce Inspections are conducted by the joint Labor and Management Committee at each facility throughout the year on a rotating basis. The inspections consists of reviewing past accident and incident experiences/reports and facility safety reports. The Taskforce meets with location management and union representatives and make a complete tour of the facility. The Taskforce is comprised of representatives of the Safety and Operations groups and has representation from each of the represented unions.
+[p027_c0011] Fire Code Audits are required by the NY'S Uniform Fire Prevention Code. They are conducted by the Safety and Health Department at each building and facility throughout the Agency. They feature a review of fire prevention activities and the condition of fire fighting and suppression equipment.
+[p027_c0012] FDNY Annual Liaison Visits are scheduled by the local responding authorities and typically occur seasonally during spring and fall and conducted as a regular basis (typically twice a year) whereby local fire companies visit and tour the facilities to become familiar with the structures and buildings and the fire equipment provided. This facilitates the development of strategies for fighting fires and responding to emergencies. Additionally, special drills and training exercises are conducted to drill on communications and special rescue operations should they be required.
+[p027_c0013] _Master Page # 27 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 28
+
+### [p028_c0001] Collision Rates – All Facilities Year over Year Comparison of Monthly Data
+### [p028_c0002] Collisions with Injuries per Million Vehicles
+> [p028_c0003] Month November 2021 - October 2022 November 2022 - October 2023 Nov 0.74 0.93 Dec 0.57 0.70 Jan 0.32 0.85 Feb 0.46 0.51 Mar 0.71 0.87 Apr 0.87 1.16 May 0.97 0.70 Jun 0.97 0.88 Jul 1.09 1.15 Aug 0.96 1.08 Sep 0.78 0.70 Oct 0.65 0.54
+### [p028_c0004] Total Collisions per Million Vehicles
+> [p028_c0005] Month November 2021 - October 2022 November 2022 - October 2023 Nov 4.01 4.15 Dec 3.18 3.65 Jan 2.49 3.37 Feb 3.19 3.22 Mar 3.90 4.08 Apr 4.62 3.62 May 4.18 4.21 Jun 4.60 4.06 Jul 4.13 4.05 Aug 4.22 3.16 Sep 4.01 3.19 Oct 3.30 3.30
+[p028_c0006] _Master Page # 28 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 29
+
+### [p029_c0001] Collision Rates by Facility Year over Year Comparison of 12-Month Averages
+### [p029_c0002] Collisions with Injuries per Million Vehicles
+> [p029_c0003] Facility November 2021 - October 2022 November 2022 - October 2023 RFK 0.94 0.90 BWB 0.65 0.72 HHB 0.16 0.16 MPB 0.25 0.25 CBB 0.25 0.13 QMT 0.24 0.23 HLC 0.41 0.35 TNB 0.66 0.44 VNB 1.50 1.69 Total 0.80 0.82
+### [p029_c0004] Total Collisions per Million Vehicles
+> [p029_c0005] Facility November 2021 - October 2022 November 2022 - October 2023 RFK 5.07 4.76 BWB 3.43 3.32 HHB 0.48 0.44 MPB 1.63 1.65 CBB 0.50 0.26 QMT 2.69 1.42 HLC 1.87 2.39 TNB 3.97 3.01 VNB 6.00 5.63 Total 3.92 3.56
+[p029_c0006] _Master Page # 29 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 30
+
+### [p030_c0001] Collision Rates by Facility Total Collisions per Million Vehicles: October 2022 – October 2023
+[p030_c0002]
+
+```text
+22-Oct 22-Nov 22-Dec 23-Jan 23-Feb 23-Mar 23-Apr 23-May 23-Jun 23-Jul 23-Aug 23-Sep 23-Oct RFK 6.47 6.45 4.22 4.07 3.74 3.00 5.57 5.40 5.55 5.45 3.99 4.77 4.72 BWB 3.01 1.44 1.94 4.56 2.49 2.39 2.18 3.89 5.78 4.96 3.11 4.79 2.10 TNB 3.12 4.79 3.61 3.72 3.64 3.16 3.38 1.81 3.12 2.29 1.53 3.05 2.68 VNB 5.81 6.99 6.74 4.73 3.43 6.53 6.52 5.66 6.37 6.84 4.96 3.19 5.25 QMT 2.60 0.80 1.22 1.28 0.90 0.77 2.80 0.75 1.92 0.39 2.29 1.95 1.83 HLC 1.04 2.19 3.23 0.00 1.20 2.05 4.89 2.02 1.02 2.70 3.57 2.11 3.44 HHB 1.34 0.48 0.49 0.53 0.56 0.47 0.47 1.29 0.00 0.48 0.46 0.00 0.00 MPB 1.59 3.32 1.67 3.49 0.00 1.60 0.00 2.77 2.71 0.00 1.28 1.49 1.53 CBB 1.53 1.64 0.00 0.00 0.00 0.00 0.00 0.00 0.00 1.29 0.00 0.00 0.00 Total 4.01 4.15 3.65 3.37 2.63 3.22 4.08 3.62 4.21 4.05 3.16 3.19 3.30
+```
+[p030_c0003] _Master Page # 30 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 31
+
+> [p031_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a black circle.
+### [p031_c0002] Bridges and Tunnels
+### [p031_c0003] Financial Report November 2023
+> [p031_c0004] A vertical line composed of three parallel lines, extending from the top of the report title area down to the bottom of the page.
+[p031_c0005] _Master Page # 31 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 32
+
+### [p032_c0001] MTA BRIDGES & TUNNELS STATEMENT OF NET POSITION As of November 30, 2023 (in thousands)
+### [p032_c0002] ASSETS AND DEFERRED OUTFLOWS OF RESOURCES
+### [p032_c0003] CURRENT ASSETS:
+[p032_c0004]
+
+```text
+Cash-Unrestricted 11,607 Investments: Unrestricted 664,611 Restricted 1,368,801 Accrued interest receivable -158,664 Accounts receivable 534,307 Accounts receivable-Other 35,843 Less allowance for uncollectible accounts -487,970 Tolls due from other agencies 79,967 Loan receivable from MTA 11,432,217 Prepaid expenses 7,190 Total current assets 13,487,910
+```
+### [p032_c0005] NONCURRENT ASSETS:
+[p032_c0006]
+
+```text
+Investments: Unrestricted 175,314 Restricted - Facilities, less acc.dep of $2,501,244 7,832,579 Capital lease 2 Broadway net acc. dep. 35,745 Derivative Hedge Assets 3,446 Total noncurrent assets 8,047,083
+```
+[p032_c0007]
+
+```text
+TOTAL ASSETS: 21,534,993
+```
+### [p032_c0008] DEFERRED OUTFLOWS OF RESOURCES:
+[p032_c0009]
+
+```text
+Deferred outflows of resources related to pension 65,648 Deferred outflow of resources related to other post-employment benefits 155,800 Deferred outflow of resources related to capital Lease 13,122 Accumulated decreases in fair value of derivative instruments 50,259 Defeasance costs 71,249
+```
+[p032_c0010]
+
+```text
+TOTAL DEFERRED OUTFLOWS OF RESOURCES: 356,077
+```
+[p032_c0011]
+
+```text
+TOTAL ASSETS AND DEFERRED OUTFLOWS OF RESOURCES 21,891,070
+```
+[p032_c0012] _Master Page # 32 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 33
+
+### [p033_c0001] MTA BRIDGES & TUNNELS STATEMENT OF NET POSITION As of November 30, 2023 (in thousands)
+### [p033_c0002] LIABILITIES AND INFLOWS OF RESOURCES
+### [p033_c0003] CURRENT LIABILITIES:
+[p033_c0004]
+
+```text
+Current portion-long term debt 6,420 Interest Payable 58,763 Accounts Payable 117,655 Accrued Pension Payable 11,920 Payable to MTA-CAP 26,780 Due to MTA-Operating Expenses 5,602 Due to NYCTA-Operating Expenses 134 Accrued salaries 26,144 Accrued Vac & Sick Benefits 18,278 Current portion of estimated liability arising from injury 406 Due to New York City Transit Authority 83,721 Due to Metropolitan Transportation Authority 107,223 Unearned Toll Revenue 237,222 Tolls due to other agencies 106,031 E-ZPass Airport Toll Liability 6,162 Total current liabilities 812,460
+```
+### [p033_c0005] NONCURRENT LIABILITIES:
+[p033_c0006]
+
+```text
+Long term debt 23,408,178 Post Employment Benefits Other than Pensions 908,111 Estimated liability arising from injury 53,777 Capital lease obligations 64,875 Other long-term liabilities - Derivative Hedge Liabilities 11,364 Due (to)/from MTA - change in fair value of derivative 42,341 Net Pension Liability 167,407 Security deposits-Contra - Total noncurrent liabilities 24,656,054
+```
+### [p033_c0007] DEFERRED INFLOW OF RESOURCES
+[p033_c0008]
+
+```text
+Deferred Inflow of resources related to Pension 54,456 Deferred Inflow of resources related to other post-employment benefits 167,013 Deferred Inflow of resources related to Capital Lease 12,160
+```
+[p033_c0009] TOTAL LIABILITIES AND DEFERRED INFLOWS OF RESOURCES 25,702,143
+[p033_c0010] NET POSITION -3,811,073 *
+[p033_c0011] TOTAL LIABILITIES, DEFERRED INFLOWS OF RESOURCES & NET 21,891,070
+[p033_c0012] _*The negative Net Position consists of various fund balances such as surplus monies and purchase of assets on behalf of MTA and NYCTA. The negative balance occurs because the assets are transferred to MTA and NYCTA during the year, and taken off the B&T Statement of Net Position; while the debt to purchase these assets remains as a liability on the Statement of Net Position of B&T._
+[p033_c0013] _Master Page # 33 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 34
+
+### [p034_c0001] MTA BRIDGES AND TUNNELS JULY FINANCIAL PLAN - 2023 MID-YEAR FORECAST ACCRUAL STATEMENT OF OPERATIONS by CATEGORY November 2023 ($ in millions)
+[p034_c0002]
+
+```text
+Nonreimbursable Reimbursable Total Mid-Year Forecast Actual Favorable (Unfavorable) Variance Mid-Year Forecast Actual Favorable (Unfavorable) Variance Mid-Year Forecast Actual Favorable (Unfavorable) Variance Percent Percent Percent Revenue Farebox Revenue $0.000 $0.000 - $0.000 $0.000 - $0.000 $0.000 - Vehicle Toll Revenue 206.213 169.077 (36.136) 0.000 0.000 - 206.213 169.077 (36.136) Other Operating Revenue 1.587 2.177 0.590 37.2 0.000 - 1.587 2.177 0.590 Capital & Other Reimbursements 0.000 0.000 - 0.000 0.000 - 0.000 0.000 - Investment Income 0.104 1.273 1.169 - 1.613 (23.9) 1.613 1.273 (23.9) Total Revenue $206.903 $172.527 ($34.377) (16.6) $1.613 ($0.385) $208.516 $173.754 ($34.762) Expenses Labor: Payroll $11.247 $10.228 $1.019 9.1 $0.622 $0.411 $0.211 $0.639 $1.230 Overtime 2.176 2.988 (0.811) (37.3) $0.039 (0.030) (77.8) 3.056 (0.841) Health and Welfare 2.947 1.863 1.084 36.8 $0.148 0.049 33.4 1.961 1.134 OPEB Current Payment 2.391 2.618 (0.228) (9.5) 0.000 0.000 - 2.618 (0.228) Pensions 2.381 2.391 (0.010) (0.4) 0.171 0.077 45.1 2.485 0.068 Other Fringe Benefits 2.748 1.183 1.565 56.9 0.078 0.030 39.3 1.230 1.595 Reimbursable Overhead (0.555) (0.508) (0.047) (8.5) 0.508 0.047 8.5 0.000 - Total Labor Expenses $23.335 $20.763 $2.572 11.0 $1.613 $0.385 23.9 $21.990 $2.957 Non-Labor: Electric Power $0.313 $0.285 $0.029 9.1 $0.000 $0.000 - $0.285 $0.029 Fuel 0.389 0.120 0.269 69.2 0.000 0.000 0.000 0.120 0.269 Insurance 2.365 1.090 1.275 53.9 0.000 0.000 0.000 1.090 1.275 Claims 0.000 0.000 0.000 - 0.000 0.000 - 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 - 0.000 0.000 - 0.000 0.000 Maintenance and Other Operating Contracts 12.333 8.293 4.041 32.8 0.000 0.000 0.000 8.293 4.041 Professional Service Contracts 2.737 11.942 (9.205) * 0.000 0.000 2.737 11.942 (9.205) Materials & Supplies 0.506 0.141 0.365 72.2 0.000 0.000 0.506 0.141 0.365 Other Business Expenses 4.310 5.878 (1.568) (36.4) 0.000 0.000 4.310 5.878 (1.568) Total Non-Labor Expenses $22.954 $27.749 ($4.794) (20.9) $0.000 0.000 $22.954 $27.749 ($4.794) Other Expense Adjustments: Other 0.000 0.000 0.000 - 0.000 0.000 - 0.000 - Total Other Expense Adjustments $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses before Non-Cash Liability Adjs. $46.289 $48.512 ($2.222) (4.8) $1.613 $0.385 23.9 $47.902 ($1.837) Depreciation $16.510 $18.108 ($1.599) (9.7) $0.000 $0.000 - $18.108 ($1.599) OPEB Obligation 0.000 0.000 0.000 - 0.000 0.000 - 0.000 - GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 - 0.000 0.000 - 0.000 - GASB 68 Pension Adjustment 0.000 0.000 0.000 - 0.000 0.000 - 0.000 - Environmental Remediation 0.000 0.000 0.000 - 0.000 0.000 - 0.000 - GASB 87 Net Adjustment 0.291 0.000 0.291 100.0 0.000 0.000 - 0.000 - Total Expenses after Non-Cash Liability Adjs. $63.089 $66.620 ($3.530) (5.6) $1.613 $0.385 23.9 $67.847 ($4.767) Less: Depreciation $16.510 $18.108 ($1.599) (9.7) $0.000 $0.000 - $18.108 ($1.599) Less: OPEB Obligation 0.000 0.000 0.000 - 0.000 0.000 - 0.000 - Less: GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 - 0.000 0.000 - 0.000 - Less: GASB 68 Pension Adjustment 0.000 0.000 0.000 - 0.000 0.000 - 0.000 - Less: GASB 87 Net Adjustment 0.291 0.000 0.291 100.0 0.000 0.000 - 0.000 - Total Expenses $46.289 $48.512 ($2.222) (4.8) $1.613 $0.385 23.9 $47.902 ($1.837) Net Surplus/(Deficit) $160.614 $124.015 ($36.599) (22.8) $0.000 $0.000 $160.614 $124.015 ($36.599)
+```
+[p034_c0003] _Results are preliminary and subject to audit review. Differences are due to rounding. *Variance exceeds 100%_
+[p034_c0004] _Master Page # 34 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 35
+
+[p035_c0001]
+
+```text
+MTA BRIDGES AND TUNNELS JULY FINANCIAL PLAN - 2023 MID-YEAR FORECAST ACCRUAL STATEMENT of OPERATIONS by CATEGORY November 2023 ($ in millions) Nonreimbursable Reimbursable Total Favorable (Unfavorable) Mid-Year Forecast Actual Variance Percent Mid-Year Forecast Actual Variance Percent Mid-Year Forecast Actual Variance Percent Net Income/(Deficit) $160,614 $124,015 ($36,599) (22.8) Less: Capitalized Assets 0.360 0.262 0.098 27.3 Reserves 0.000 0.000 0.000 - GASB Reserves 0.000 0.000 0.000 - Adjusted Net Income/(Deficit) $160,254 $123,753 ($36,501) (22.8) Less: Debt Service 54.146 54.352 (0.205) (0.4) Less: Contribution to the Capital Program 0.000 0.000 0.000 - Income Available for Distribution $106,108 $69,402 ($36,706) (34.8) Distributable To: MTA - Investment Income 0.104 1.273 1.169 * MTA - Distributable Income 56.424 36.820 (19.604) (34.7) NYCTR - Distributable Income 49.580 31.309 (18.271) (36.9) Total Distributable Income $106,108 $69,402 ($36,706) (34.8) Support to Mass Transit: Total Revenues 208.516 173.754 (34.762) (16.7) Less: Total Operating Expenses 47.902 49.739 (1.837) (3.8) Net Operating Income/(Deficit) $160,614 $124,015 ($36,599) (22.8) Deductions from Net Operating Income: Capitalized Assets 0.360 0.262 0.098 27.3 Reserves 0.000 0.000 0.000 - GASB Reserves 0.000 0.000 0.000 - B&T Debt Service 30.498 33.605 (3.107) (10.2) Contribution to the Capital Program 0.000 0.000 0.000 - GASB Reserves 0.000 0.000 0.000 - Total Deductions From Operating Income $30.858 $33.867 ($3.009) (9.8) Total Support to Mass Transit $129,756 $90,148 ($39,608) (30.3)
+```
+[p035_c0002] Note (a) - Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current month's actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results.
+[p035_c0003] _Master Page # 35 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 36
+
+### [p036_c0001] MTA BRIDGES AND TUNNELS JULY FINANCIAL PLAN - 2023 MID-YEAR FORECAST ACCRUAL STATEMENT of OPERATIONS by CATEGORY November 2023 Year-To-Date ($ in millions)
+[p036_c0002]
+
+```text
+Nonreimbursable Reimbursable Total Mid-Year Forecast Actual Variance Favorable (Unfavorable) Actual Variance Mid-Year Forecast Actual Variance Revenue Farebox Revenue $0.000 $0.000 $0.000 - $0.000 $0.000 - $0.000 - Vehicle Toll Revenue 2,238,458 2,212,255 (26,203) (1.2) 0.000 0.000 2,238,458 2,212,255 (26,203) Other Operating Revenue 19,042 25,991 6,549 34.4 0.000 0.000 19,042 25,991 6,549 Capital & Other Reimbursements 0.000 0.000 0.000 - 15,942 16,692 15,942 16,692 750 Investment Income 3,963 11,076 7,113 - 0.000 0.000 3,963 11,076 7,113 Total Revenue $2,261,464 $2,248,922 ($12,542) (0.6) $15,942 $16,692 $2,277,406 $2,265,614 ($11,792) Expenses Labor: Payroll $112,376 $98,256 $14,120 12.6 5,687 $5,504 $0.183 $103,760 $14,303 Overtime 24,167 26,752 (2,585) (10.7) 0.765 0.909 (0.144) 24,932 (2,729) Health and Welfare 28,689 24,754 4,935 16.6 1,357 1,321 0.036 26,075 1,357 OPEB Current Payment 28,430 29,661 (1,231) (4.3) 0.000 0.000 - 28,430 (1,231) Pensions 25,798 24,681 1,118 4.3 1,490 1,258 0.232 25,939 1,349 Other Fringe Benefits 20,743 14,108 6,635 32.0 0.691 0.632 15.5 14,740 6694 Reimbursable Overhead (5,952) (7,069) 1,117 18.8 5,952 7,069 (1,117) 0.000 - Total Labor Expenses $235,252 $211,144 $24,108 10.2 $15,942 $16,692 ($0.750) $227,836 $23,358 Non-Labor: Electric Power $3,323 $3,417 ($0.094) (2.8) 0.000 0.000 - $3,417 ($0.094) Fuel 2,616 1,725 0.891 34.1 0.000 0.000 0.000 1,725 0.891 Insurance 18,160 11,779 6,381 35.1 0.000 0.000 0.000 11,779 6,381 Claims 0.000 0.000 0.000 - 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 - 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 138,716 120,974 17,742 12.8 0.000 0.000 0.000 120,974 17,742 Professional Service Contracts 30,546 21,954 8,592 28.1 0.000 0.000 0.000 21,954 8,592 Materials & Supplies 4,330 2,590 1,740 28.2 0.000 0.000 0.000 2,590 1,740 Other Business Expenses 51,156 50,707 449 0.9 0.000 0.000 0.000 50,707 449 Total Non-Labor Expenses $248,847 $213,147 $35,700 14.3 $0.000 $0.000 - $213,147 $35,700 Other Expense Adjustments Other 0.000 0.000 0.000 - 0.000 0.000 0.000 0.000 0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 - $0.000 $0.000 0.000 $0.000 $0.000 Total Expenses before Non-Cash Liability Adjs. $484,099 $424,291 $59,808 12.4 $15,942 $16,692 ($0.750) $440,983 $59,058 Depreciation $181,605 $191,847 ($10,242) (5.6) 0.000 0.000 0.000 $191,847 ($10,242) OPEB Obligation 0.000 0.000 0.000 - 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 - 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Adjustment 0.000 0.000 0.000 - 0.000 0.000 0.000 0.000 0.000 Environmental Remediation 0.000 0.000 0.000 - 0.000 0.000 0.000 0.000 0.000 GASB 87 Net Adjustment 2,034 3,641 (1,608) (79.1) 0.000 0.000 0.000 3,641 (1,608) Total Expenses after Non-Cash Liability Adjs. $667,738 $619,779 $47,958 7.2 $15,942 $16,692 ($0.750) $636,472 $47,208 Less: Depreciation $181,605 $191,847 ($10,242) (5.6) 0.000 0.000 0.000 $191,847 ($10,242) Less: OPEB Obligation 0.000 0.000 0.000 - 0.000 0.000 0.000 0.000 0.000 Less: GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 - 0.000 0.000 0.000 0.000 0.000 Less: GASB 68 Pension Adjustment 0.000 0.000 0.000 - 0.000 0.000 0.000 0.000 0.000 Less: GASB 87 Net Adjustment 2,034 3,641 (1,608) (79.1) 0.000 0.000 0.000 3,641 (1,608) Total Expenses $484,099 $424,291 $59,808 12.4 $15,942 $16,692 ($0.750) $440,983 $59,058 Net Surplus/(Deficit) $1,777,365 $1,824,631 $47,266 2.7 $0.000 $0.000 - $1,777,365 $47,266
+```
+[p036_c0003] Results are preliminary and subject to audit review. Differences are due to rounding. *Variance exceeds 100%
+[p036_c0004] _Master Page # 36 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 37
+
+[p037_c0001]
+
+```text
+MTA BRIDGES AND TUNNELS JULY FINANCIAL PLAN - 2023 MID-YEAR FORECAST ACCRUAL STATEMENT of OPERATIONS by CATEGORY November 2023 Year-To-Date ($ in millions) Nonreimbursable Reimbursable Total Favorable (Unfavorable) Mid-Year Forecast Actual Variance Percent Mid-Year Forecast Actual Variance Percent Mid-Year Forecast Actual Variance Percent Net Income/(Deficit) $1,777,365 $1,824,631 $47,266 2.7 Less: Capitalized Assets 10,460 5,932 $4,529 43.3 Reserves 0.000 0.000 0.000 - GASB Reserves 0.000 0.000 0.000 - Adjusted Net Income/(Deficit) $1,766,905 $1,818,700 $51,795 2.9 Less: Debt Service 624,554 614,914 9,640 1.5 Less: Contribution to the Capital Program 0.000 0.000 0.000 - Income Available for Distribution $1,142,350 $1,203,785 $61,435 5.4 Distributable To: MTA - Investment Income 3,963 11,076 7,113 * MTA - Distributable Income 609,777 633,684 23,907 3.9 NYCTR - Distributable Income 528,617 559,026 30,409 5.8 Total Distributable Income $1,142,357 $1,203,785 $61,428 5.4 Support to Mass Transit: Total Revenues 2,277,406 2,266,614 (11,792) (0.5) Less: Total Operating Expenses 500,041 440,983 59,058 11.8 Net Operating Income/(Deficit) $1,777,365 $1,824,631 $47,266 2.7 Deductions from Net Operating Income: Capitalized Assets 10,460 5,932 4,529 43.3 Reserves 0.000 0.000 0.000 - B&T Debt Service 342,154 343,963 (1,808) (0.5) Contribution to the Capital Program 0.000 0.000 0.000 - GASB Reserves 0.000 0.000 0.000 - Total Deductions From Operating Income $352,614 $349,894 $2,720 0.8 Total Support to Mass Transit $1,424,750 $1,474,737 $49,987 3.5
+```
+[p037_c0002] Note (A) : Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current month's actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results.
+[p037_c0003] _Master Page # 37 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 38
+
+### [p038_c0001] TABLE 3
+### [p038_c0002] MTA BRIDGES AND TUNNELS JULY FINANCIAL PLAN - 2023 MID-YEAR FORECAST EXPLANATION OF VARIANCES BETWEEN MID-YEAR FORECAST AND ACTUAL ACCRUAL BASIS ($ in millions)
+[p038_c0003]
+
+```text
+Generic Revenue or Expense Category Nov-23 Year-to-Date Favorable/ (Unfavorable) Variance Reason for Variance Favorable/ (Unfavorable) Variance Reason for Variance $ % $ % Non-reimbursable Vehicle Toll Revenue (36.136) -17.6% Lower toll revenue is due to a $38.3 million one-time collection reserve increase for uncollected toll revenue. Toll revenue without this provision is reflected in the Traffic Volume and Revenue table. (26.203) -1.2% Lower toll revenue is due to a $38.3 million one-time collection reserve increase for uncollected toll revenue. Toll revenue without this provision is reflected in the Traffic Volume and Revenue table. Other Operating Revenue 0.590 37.2% Higher revenue primarily due to the timing of income from E-ZPass administrative fees. 6.549 34.4% Higher revenue primarily due to the timing of income from E-ZPass administrative fees. Investment Income 1.169 * Higher than anticipated short-term investment returns on fund balances. 7.113 * Higher than anticipated short-term investment returns on fund balances. Payroll 1.019 9.1% Lower payroll expenses primarily due to vacancies. 14.120 12.6% Lower payroll expenses primarily due to vacancies. Overtime (0.811) -37.3% Higher overtime is mainly due to unfilled vacancies. (2.585) -10.7% Higher overtime is mainly due to unfilled vacancies. Health and Welfare 1.084 36.8% Lower expenses primarily due to timing against the mid-year forecast allocation as well as vacancies. 4.935 16.6% Lower expenses primarily due to vacancies. OPEB Current Payment (0.228) -9.5% Higher expenses primarily due to timing against the mid-year forecast allocation (1.231) -4.3% Higher expenses primarily due to timing against the mid-year forecast allocation. Pensions (0.010) -0.4% Higher non-reimbursable expenses primarily due to the timing against the mid-year forecast allocation as well as vacancies. 1.118 4.3% Higher non-reimbursable expenses primarily due to the timing against the mid-year forecast allocation as well as vacancies. Other Fringe Benefits 1.565 56.9% Lower expenses primarily due to timing against the mid-year forecast allocation as well as vacancies. 6.635 32.0% Lower expenses primarily due to the timing against the mid-year forecast allocation as well as vacancies. Electric Power 0.029 9.1% Lower electricity expenses primarily due to timing against the mid-year forecast allocation. (0.094) -2.6% Higher electricity expenses primarily due to timing against the mid-year forecast allocation. Fuel 0.269 69.2% Lower fuel expenses primarily due to timing against the monthly mid-year forecast allocation. 0.891 34.1% Lower fuel expenses primarily due to timing against the monthly mid-year forecast allocation. Insurance 1.275 53.9% Lower insurance expenses primarily due to lower-than-forecasted property insurance premiums and the timing against the monthly mid-year forecast allocation. 6.381 35.1% Lower insurance expenses primarily due to lower-than-forecasted liability and property insurance premiums and the timing against the monthly mid-year forecast allocation. Maintenance and Other Operating Contracts 4.041 32.8% Lower expenses are mainly due to lower expenses and the timing against the monthly mid-year forecast allocation for Refuse & Recycling ($1.867 Mill), Refuse & Recycling ($1.355 Mill), E-ZPass Equipment maintenance costs ($0.672 Mill), partially offset by higher E-ZPass tag costs ($0.519 Mill). 17.742 12.6% Lower expenses are mainly due to lower expenses and the timing against the monthly mid-year forecast allocation for Refuse & Recycling ($9.528 Mill), E-ZPass Equipment maintenance costs ($4.678 Mill), Major Maintenance & Painting ($1.893 Mill), and E-ZPass tag costs ($0.987 Mill). Professional Service Contracts (9.205) * Higher expenses are primarily due to the reversal of a $11.045 Mill. credit in legal fees that occurred in October resulting from a payment booked in Liabilities reserves and not booked to expense. Additionally there was favorable timing against the monthly mid-year forecast allocation for Bond issuance costs ($1.269 Mill). 8.592 28.1% Lower expenses are primarily due to the favorable timing against the monthly mid-year forecast allocation for Bond issuance costs ($4.294 Mill.), legal services ($1.688 Mill.) engineering services ($0.987 Mill.), and professional service contracts ($0.570 Mill.), and medical services ($0.348 Mill.), and outside services ($0.316 Mill.). Materials & Supplies 0.365 72.2% Lower expenses across a variety of small equipment and supply categories, due to timing, against the monthly mid-year forecast allocation. 1.740 40.2% Lower expenses are primarily due to lower expenses and timing for de-icing materials ($0.933 Mill.) and a variety of small equipment and supply categories against the monthly mid-year forecast allocation. Other Business Expense (1.568) -36.4% Higher expenses primarily due to higher-than-forecasted credit card processing fees. 0.449 0.9% Lower expenses primarily due to lower-than-forecasted credit card processing fees. Depreciation (1.599) -9.7% Higher depreciation expense primarily due to timing against the monthly mid-year forecast allocation. (10.242) -5.6% Higher depreciation expense primarily due to timing against the monthly mid-year forecast allocation. Reimbursable Capital and Other Reimbursements (0.385) -23.9% Lower capital reimbursements due to timing against the monthly mid-year forecast allocation. 0.750 4.7% Higher capital reimbursements due to timing against the monthly mid-year forecast allocation. Payroll 0.211 33.9% Lower capital reimbursements due to timing against the monthly mid-year forecast allocation. 0.183 3.2% Lower capital reimbursements due to timing against the monthly mid-year forecast allocation. Overtime (0.030) -77.8% Higher capital reimbursements due to timing against the monthly mid-year forecast allocation. (0.144) -18.6% Higher capital reimbursements due to timing against the monthly mid-year forecast allocation. Health and Welfare 0.049 33.4% Lower capital reimbursements due to timing against the monthly mid-year forecast allocation. 0.036 2.7% Lower capital reimbursements due to timing against the monthly mid-year forecast allocation. Pensions 0.077 45.1% Lower capital reimbursements due to timing against the monthly mid-year forecast allocation. 0.232 15.5% Lower capital reimbursements due to timing against the monthly mid-year forecast allocation. Other Fringe Benefits 0.030 39.3% Lower capital reimbursements due to timing against the monthly mid-year forecast allocation. 0.059 8.5% Lower capital reimbursements due to timing against the monthly mid-year forecast allocation. Reimbursable Overhead 0.047 8.5% Lower capital reimbursements due to timing against the monthly mid-year forecast allocation. (1.117) -18.6% Higher capital reimbursements due to timing against the monthly mid-year forecast allocation.
+```
+[p038_c0004] *Variance exceeds 100%
+[p038_c0005] _Master Page # 38 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 39
+
+### [p039_c0001] MTA BRIDGES AND TUNNELS TRAFFIC VOLUME AND REVENUE (millions)
+### [p039_c0002] Month of November
+### [p039_c0003] Comparison Current Year vs. Prior Year:
+### [p039_c0004] Year to date ending November 2023
+[p039_c0005]
+
+```text
+Prior Year *Current Year Percentage Change Prior Year *Current Year Percentage Change Traffic Revenue Traffic Revenue Traffic Revenue Traffic Revenue Traffic Revenue Traffic Revenue Bronx/Whitestone 4.1 $32.0 4.1 $33.7 -1.0% 5.3% 46.8 $369.4 46.0 $372.0 -1.6% 0.7% Cross Bay 0.6 1.6 0.6 1.8 -1.9% 10.7% 7.3 20.0 7.1 19.9 -2.1% -0.5% Henry Hudson 2.1 8.1 2.1 9.2 1.6% 13.7% 22.9 89.6 23.1 94.1 1.2% 5.0% Hugh L. Carey 1.8 12.2 1.9 13.6 4.2% 11.6% 20.0 139.7 20.7 147.0 3.3% 5.3% Marine Parkway 0.6 1.6 0.6 1.7 1.6% 8.9% 7.3 19.7 7.3 19.9 -0.3% 1.0% Queens Midtown 2.5 18.0 2.5 19.3 1.3% 7.2% 27.4 203.8 27.8 211.6 1.6% 3.8% RFK 5.4 40.3 5.7 45.2 4.6% 12.1% 59.8 462.4 62.2 489.5 4.1% 5.9% Throgs Neck 3.3 29.7 3.6 34.2 7.9% 15.3% 36.3 338.1 39.7 367.6 9.4% 8.7% Verrazzano-Narrows 6.4 44.0 6.6 48.6 2.3% 10.5% 71.6 498.5 73.5 529.1 2.7% 6.1% Total 26.9 $187.5 27.7 $207.4 2.8% 10.6% 299.2 $2,141.0 307.5 $2,250.6 2.7% 5.1% Revenue Per Vehicle $7,496 7.6% $7,155 $7,320 2.3%
+```
+### [p039_c0006] Comparison Actual vs. Mid-Year Forecast:
+[p039_c0007]
+
+```text
+November Forecast November Actual Percentage Change YTD Forecast YTD Actual Percentage Change Traffic Revenue Traffic Revenue Traffic Revenue Traffic Revenue Traffic Revenue Traffic Revenue Total All 27.7 $205.2 27.7 $207.4 0.0% 1.1% 308.7 $2,238.5 307.5 $2,250.6 -0.4% 0.5% Revenue Per Vehicle $7,418 $7,496 1.1% $7,252 $7,320 0.9%
+```
+[p039_c0008] NOTE: For the month of November, as shown above, the toll revenue excludes a $38.3 million one-time collection reserve increase for uncollected toll revenue, which is reflected in the Statement of Operations.
+[p039_c0009] _1) Toll increase implemented August 6, 2023 2) Numbers may not add due to rounding. 3) 2023 November traffic is 0.8M above November 2019 traffic, an increase of 2.8%, and November YTD traffic is 5.0M above November YTD 2019. Excluding the $38.3 million one-time collection reserve increase, 2023 November revenue is $33.7M above November 2019, a increase of 20.8%, and November YTD revenue is $347.2M above November 2019, an increase 18.2%._
+[p039_c0010] _Master Page # 39 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 40
+
+### [p040_c0001] MTA Bridges and Tunnels Toll Revenue Collection Rates Preliminary data subject to final audit
+[p040_c0002]
+
+```text
+Facility Revenue Collection Rate November 2023 1 Henry Hudson Bridge 94.5% Hugh L. Carey Tunnel 95.3% Queens Midtown Tunnel 96.7% Marine Parkway Bridge 95.3% Cross Bay Bridge 93.1% Robert F. Kennedy Bridge 93.1% Verrazzano-Narrows Bridge 92.8% Bronx-Whitestone Bridge 93.0% Throgs Neck Bridge 94.1% All Facilities 93.7%
+```
+[p040_c0003] 1. Represents total revenue collections from transactions December 2021 through November 2022
+[p040_c0004] _Master Page # 40 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 41
+
+### [p041_c0001] MTA BRIDGES AND TUNNELS JULY FINANCIAL PLAN - 2023 MID-YEAR FORECAST TOTAL POSITIONS BY FUNCTION AND DEPARTMENT NON-REIMBURSABLE/REIMBURSABLE and FULL-TIME POSITIONS/FULL-TIME EQUIVALENTS November 2023
+[p041_c0002]
+
+```text
+Department Mid-Year Forecast Actual Favorable (Unfavorable) Variance Explanation of Variances Administration Executive 15 10 5 6 Managerial vacancies partially offset by 1 position overrun in Professional Law (1) 12 5 7 2 Managerial and 5 Professional vacancies Budget & Finance (2) 17 10 7 5 Managerial and 2 Professional vacancies Administration (3) 34 25 9 5 Managerial and 4 Professional vacancies EEO 1 - 1 1 Professional vacancy Total Administration 79 50 29 Operations ITS & Tolling 66 68 (2) 5 Managerial vacancies offset by 7 overrun in Professional Central Business District Tolling Program 47 37 10 4 Managerial and 33 Professional vacancies Operations (Non-Security) 54 35 19 29 Managerial vacancies partially offset by 10 position overrun in Professional Total Operations 167 113 54 Maintenance Maintenance 205 201 4 7 Managerial and 2 Professional vacancies partially offset by 5 position overrun in Operations - Maintainers 183 152 31 Maintainers Total Maintenance 388 353 35 31 Maintainer vacancies Engineering/Capital Engineering & Construction 123 99 24 4 Managerial and 20 Professional vacancies Health & Safety 9 7 2 2 Managerial vacancies Law (1) 18 9 9 3 Managerial and 6 Professional vacancies Planning & Budget Capital 8 6 2 1 Managerial and 1 Professional vacancy Total Engineering/Capital 158 121 37 Public Safety Operations (Security) 540 365 175 64 Managerial and 111 Operational vacancies Internal Security - Operations 45 29 16 5 Managerial and 11 Professional vacancies Total Public Safety 585 394 191 Total Positions 1,377 1,031 346 Non-Reimbursable 1,246 900 346 Reimbursable 131 131 - Total Full-Time 1,377 1,031 346
+```
+[p041_c0003] _(1) Includes Legal and Procurement staff. (2) Includes Controller and Operating Budget staff. (3) Includes Human Resources, Labor Relations, and Administration staff._
+[p041_c0004] _Master Page # 41 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 42
+
+### [p042_c0001] MTA BRIDGES AND TUNNELS JULY FINANCIAL PLAN - 2023 MID-YEAR FORECAST TOTAL POSITIONS BY FUNCTION AND OCCUPATION FULL-TIME POSITIONS AND FULL-TIME EQUIVALENTS November 2023
+[p042_c0002]
+
+```text
+Mid-Year Forecast Actual Favorable (Unfavorable) Variance Explanation of Variances Administration Managers/Supervisors 30 12 18 5 vacancies in Administration, 6 in Executive, 5 in Budget & Finance, and 2 in Law Professional, Technical, Clerical 49 38 11 4 vacancies in Administration, 5 in Law, 2 in Budget, 1 vacancy in EEO, and 1 overrun in Executive Operational Hourlies Total Administration 79 50 29 Operations Managers/Supervisors 73 35 38 29 vacancies in Operations, 5 in ITS & Tolling, and 4 in CBOTP Professional, Technical, Clerical 94 78 16 33 in CBOTP, partially offset by a 10 position overrun in Operations, 7 overrun in ITS & Tolling, Operational Hourlies - - - Total Operations 167 113 54 Maintenance Managers/Supervisors 27 20 7 7 vacancies in Maintenance Professional, Technical, Clerical 11 9 2 2 vacancies in Maintenance Operational Hourlies (1) 350 324 26 26 vacancies in Operations Total Maintenance 388 353 35 Engineering/Capital Managers/Supervisors 34 24 10 4 vacancies in Engineering, 3 in Law, 2 in Health & Safety and 1 vacancy in Capital Budget Professional, Technical, Clerical 124 97 27 20 vacancies in Engineering, 6 in Law, and 1 in Capital Budget Operational Hourlies Total Engineering/Capital 158 121 37 Public Safety Managers/Supervisors 179 110 69 64 vacancies in Operations and 5 in Internal Security Professional, Technical, Clerical 36 25 11 11 vacancies in Internal Security Operational Hourlies (2) 370 259 111 111 BTO vacancies in Operations Total Public Safety 585 394 191 Total Positions Managers/Supervisors 343 201 142 Professional, Technical, Clerical 314 247 67 Operational Hourlies 720 583 137 Total Positions 1,377 1,031 346
+```
+[p042_c0003] _(1) Represents Maintenance personnel. These positions are paid annually, not hourly. (2) Represents Bridge and Tunnel Officers performing public safety. These positions are paid annually, not hourly._
+[p042_c0004] _Master Page # 42 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 43
+
+### [p043_c0001] MTA BRIDGES AND TUNNELS MID-YEAR FORECAST AND NOVEMBER FORECAST vs. ACTUAL RESULTS (NON-REIMBURSABLE) NOVEMBER 2023 YEAR-TO-DATE ($ in millions)
+[p043_c0002]
+
+```text
+October Year-to-Date Favorable(Unfavorable) Variance Mid-Year Forecast November Forecast Actual Mid-Year Forecast November Forecast $ $ $ $ $ % % Total Revenue 2,261,464 2,220,495 2,248,922 (12,542) (0.6) 28,427 1.3 Investment Income 3,963 7,557 11,076 7,113 179.5 3,519 46.6 Total Revenue without Investment Income 2,257,501 2,212,938 2,237,846 (19,655) (0.9) 24,908 1.1 Total Expenses before Non-Cash Liability Adjs 484,099 461,449 424,291 59,808 12.4 37,159 8.1 Depreciation 181,605 213,033 191,847 (10,242) (5.6) 21,185 9.9 GASB 68 Pension Adjustment 0.000 0.000 0.000 0.000 - 0.000 - GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 - 0.000 - GASB 87 Net Adjustment 2,034 1,743 3,641 (1,607) * (1,898) * Environmental Remediation 0.000 0.000 0.000 0.000 - 0.000 - Total Expenses after Non-Cash Liability Adjs 667,738 676,225 619,779 47,959 7.2 56,445 8.3 Less: Depreciation 181,605 213,033 191,847 (10,242) (5.6) 21,185 9.9 Less: Other Post-Employment Benefits 2,034 1,743 3,641 (1,607) * (1,898) * Total Expenses 484,099 461,449 424,291 59,808 12.4 37,159 8.1 Net Surplus/(Deficit) 1,777,365 1,759,046 1,824,631 47,266 2.7 65,585 3.7 Net Income without Investment Income 1,773,402 1,751,489 1,813,556 40,153 2.3 62,067 3.5
+```
+[p043_c0003] Note: Totals may not add due to rounding
+[p043_c0004] _Master Page # 43 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 44
+
+### [p044_c0001] MTA BRIDGES AND TUNNELS EXPLANATION OF VARIANCES BETWEEN NOVEMBER FORECAST AND ACTUAL RESULTS NON-REIMBURSABLE NOVEMBER 2023 YEAR-TO-DATE ($ in millions)
+[p044_c0002]
+
+```text
+Favorable/(Unfavorable) Percent Variance Explanation Total Revenue $28.427 1.3 Higher revenue is primarily due to higher toll revenue, and income from E-ZPass administrative fees, as well as higher investment income due to higher interest rates. Total Expenses $37.159 8.1 Lower expenses are primarily due to vacancies, and lower expenses and timing for insurance, E-Zpass equipment maintenance, major maintenance & painting, and lower credit card processing fees, partially offset by higher professional services contract expenses.
+```
+[p044_c0003] NOTE: Mid-Year Forecast vs. Actual Variance explanations are provided in the monthly report to the Finance Committee
+[p044_c0004] _Master Page # 44 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 45
+
+> [p045_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a black circle.
+### [p045_c0002] Bridges and Tunnels
+### [p045_c0003] 2024 Adopted Budget/Financial Plan 2024-2027 (Information Item)
+> [p045_c0004] A vertical line composed of three parallel black lines, positioned on the left side of the page.
+[p045_c0005] _Master Page # 45 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 46
+
+### [p046_c0001] Staff Summary
+[p046_c0002]
+
+```text
+Subject MTA B&T 2024 Budget and 2024-2027 Financial Plan Adoption Department Office of the Chief Financial Officer Department Head Name Kevin Willens, Chief Financial Officer Department Head Signature Project Manager Name David Keller Project Manager Signature
+```
+[p046_c0003]
+
+```text
+Date December 18, 2023 Vendor Name Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p046_c0004]
+
+```text
+Board Action Order To Date Approval Info Other 1 B&T Committee 12/18/23 X 2 Finance Committee 12/18/3 X 3 MTA Board 12/20/23 X
+```
+[p046_c0005]
+
+```text
+Internal Approvals Order Approval Order Approval 1 OMB 12/12/2023 2 Financial Liaison 12/11/2023 3 President 12/12/2023
+```
+[p046_c0006]
+
+```text
+Internal Approvals (cont.) Order Approval Order Approval Order Approval Order Approval Other
+```
+### [p046_c0007] Purpose
+[p046_c0008] To secure MTA Board adoption of the MTA Bridges and Tunnels' (B&T) 2023 November Forecast, 2024 Final Proposed Budget, and the Four-Year Financial Plan for 2024-2027.
+### [p046_c0009] Discussion
+[p046_c0010] The 2024 Final Proposed Budget, which is consistent with information presented to the Board in December 2023, provides funding to maintain MTA Bridges and Tunnels' commitment to delivering safe, secure, and reliable transportation and first-class customer service. B&T projections do not include MTA consolidated below-the-line adjustments, including the estimated impacts of projected toll increases, which are presented as part of MTA consolidated materials.
+[p046_c0011] MTA operating agencies have been engaged in an ambitious effort to identify innovative ways of conducting business more efficiently, reduce expenses and improve service to customers. During 2023, concrete initiatives have been identified to generate savings that lower the outyear deficits by $23 million for B&T annually beginning in 2024. The $23 million savings is driven primarily from the reduction of vacant positions due to Open Road Tolling efficiencies ($103 million over the Plan period).
+[p046_c0012] B&T forecasts that $1,893.0 million will be provided in baseline net operating income for 2023 and $2,012.5 million for 2024.
+[p046_c0013] B&T continues its work on the Central Business District Tolling Program (CBDTP), which aims to reduce congestion in Manhattan's Central Business District (CBD) and generate sufficient net revenue to support $15 billion for the MTA 2020-2024 Capital Program and subsequent capital programs. The CBDTP, which was authorized by the MTA Reform and Traffic Mobility Act, enacted in April 2019, will impose a toll for vehicles
+[p046_c0014] _Master Page # 46 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 47
+
+### [p047_c0001] Staff Summary
+### [p047_c0002] Page 2 of 2
+[p047_c0003] entering or remaining in the CBD, defined as Manhattan south of and inclusive of 60th Street, not including the FDR Drive or the West Side Highway (which includes the Battery Park underpass and or any surface roadway portion of the Hugh L. Carey Tunnel that connects to West Street).
+[p047_c0004] Revenues produced from the CBDTP will cover operating expenses and are projected to net after expenses of $400 million in 2024 and $1 billion dollars annually beginning in 2025 to support the MTA Capital Program. Until the commencement of operations, implementation costs continue to be funded through B&T operating capital and other capital resources, all of which will be reimbursed by CBDTP revenue when the program becomes fully operational.
+### [p047_c0005] 2023 November Forecast- Baseline
+[p047_c0006] The 2023 November Forecast projects $2,427.3 million in non-reimbursable revenues, of which $2,400.2 million is from Toll Revenue. Total non-reimbursable expenses before depreciation and other post-employment benefits are projected to be $534.3 million, consisting of $247.5 million in labor expenses and $286.8 million in non-labor expenses. Total Support to Mass Transit is projected to be $1,489.3 million. Reimbursable revenue and expenses are both forecast at $17.4 million. Total end-of-year positions are budgeted at 1,216, including 1,085 non-reimbursable positions and 131 reimbursable positions.
+### [p047_c0007] 2024 Final Proposed Budget- Baseline
+[p047_c0008] The 2024 Final Proposed Budget projects nearly $2,558.4 million in non-reimbursable revenues, of which $2,526.2 million is from Toll Revenue. Total non-reimbursable expenses before depreciation and other post-employment benefits are projected to be $545.9 million, consisting of $248.4 million in labor expenses and $297.5 million in non-labor expenses. Total Support to Mass Transit is projected to be $1,583.6 million. Reimbursable revenue and expenses are both forecast at $30.8 million. Total end-of-year positions are currently budgeted at 1,217 including 1,086 non-reimbursable positions and 131 reimbursable positions.
+### [p047_c0009] Impact on Funding
+[p047_c0010] The 2023 November Forecast, the 2024 Final Proposed Budget, and the Four-Year Financial Plan 2024-2027, which are presented in the attached tables, are consistent with the proposed MTA Financial Plan.
+### [p047_c0011] Recommendation
+[p047_c0012] It is recommended that the MTA Board adopt the 2023 November Forecast, the 2024 Final Proposed Budget, and the Four-Year Financial Plan for 2024-2027 for MTA Bridges and Tunnels.
+[p047_c0013] _The legal name of MTA Bridges and Tunnels is Triborough Bridge and Tunnel Authority._
+[p047_c0014] _Master Page # 47 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 48
+
+### [p048_c0001] MTA BRIDGES AND TUNNELS November Financial Plan 2024 - 2027 Accrual Statement of Operations By Category ($ in millions)
+[p048_c0002]
+
+```text
+Actual 2022 November Forecast 2023 Final Proposed Budget 2024 2025 2026 2027 Non-Reimbursable Operating Revenue Toll Revenue $2,332.384 $2,400.165 $2,526.207 $2,529.488 $2,531.495 $2,534.027 Other Operating Revenue 24.222 18.936 18.936 18.936 18.936 18.936 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Investment Income 3.718 8.240 13.240 1.240 1.240 1.240 Total Revenues $2,360.324 $2,427.341 $2,558.383 $2,549.665 $2,551.672 $2,554.203 Operating Expense Labor: Payroll $105.032 $113.891 $112.790 $116.469 $119.521 $122.103 Overtime 22.685 26.849 29.231 30.335 31.300 31.459 Health and Welfare 25.255 32.214 35.180 37.607 40.137 42.798 OPEB Current Payments 27.993 30.820 32.670 34.630 36.708 38.910 Pension 30.512 27.980 24.326 27.267 29.599 30.912 Other Fringe Benefits 16.200 22.180 22.703 23.257 23.847 23.840 Reimbursable Overhead (5.377) (6.459) (8.523) (8.523) (8.523) (8.523) Total Labor Expenses $222.300 $247.475 $248.376 $261.042 $272.588 $281.498 Non-Labor: Electric Power $4.645 $4.345 $5.099 $5.486 $5.521 $5.650 Fuel 2.812 3.086 3.093 2.868 2.767 2.807 Insurance 13.774 12.831 16.732 19.569 22.555 26.178 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 149.436 166.823 169.340 177.975 179.298 181.733 Professional Services Contracts 23.844 39.041 45.615 46.264 46.715 47.693 Materials and Supplies 3.631 5.243 3.380 3.398 3.481 3.560 Other Business Expenses 53.818 55.452 54.214 54.268 54.306 54.344 Total Non-Labor Expenses $251.960 $286.822 $297.474 $309.827 $314.644 $321.965 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $474.260 $534.296 $545.850 $570.869 $587.232 $603.463 Depreciation $203.935 $209.397 $202.491 $202.491 $202.491 $202.491 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment (22.211) (19.406) (17.210) (19.867) (21.816) (22.847) GASB 75 OPEB Expense Adjustment 24.982 29.203 29.166 29.043 28.983 26.781 GASB 87 Lease Adjustment 14.499 2.324 2.324 2.324 2.324 2.324 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 Total Expenses After Depreciation and GASB Adjs. $695.465 $755.814 $762.621 $784.860 $799.215 $812.212 Less: Depreciation $203.935 $209.397 $202.491 $202.491 $202.491 $202.491 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adj. (22.211) (19.406) (17.210) (19.867) (21.816) (22.847) GASB 75 OPEB Expense Adj 24.982 29.203 29.166 29.043 28.983 26.781 GASB 87 Lease Adjustment 14.499 2.324 2.324 2.324 2.324 2.324 Total Expenses $474.260 $534.296 $545.850 $570.869 $587.232 $603.463 Net Surplus/(Deficit) $1,886.064 $1,893.045 $2,012.533 $1,978.795 $1,964.440 $1,950.740
+```
+[p048_c0003] _Master Page # 48 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 49
+
+### [p049_c0001] MTA BRIDGES AND TUNNELS November Financial Plan 2024 - 2027 Accrual Statement of Operations By Category ($ in millions)
+[p049_c0002]
+
+```text
+Actual 2022 November Forecast 2023 Final Proposed Budget 2024 2025 2026 2027 Reimbursable Operating Revenue Toll Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 11.376 17.422 30.838 30.958 31.101 31.225 Investment Income 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $11.376 $17.422 $30.838 $30.958 $31.101 $31.225 Operating Expense Labor: Payroll $3.448 $6.242 $13.525 $13.603 $13.684 $13.766 Overtime 0.420 0.824 1.039 1.039 1.060 1.060 Health and Welfare 0.821 1.489 2.801 2.816 2.831 2.846 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.888 1.645 3.406 3.424 3.443 3.462 Other Fringe Benefits 0.422 0.763 1.545 1.552 1.560 1.568 Reimbursable Overhead 5.377 6.459 8.523 8.523 8.523 8.523 Total Labor Expenses $11.376 $17.422 $30.838 $30.958 $31.101 $31.225 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $11.376 $17.422 $30.838 $30.958 $31.101 $31.225 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p049_c0003] _Master Page # 49 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 50
+
+### [p050_c0001] MTA BRIDGES AND TUNNELS November Financial Plan 2024 - 2027 Accrual Statement of Operations By Category ($ in millions)
+[p050_c0002]
+
+```text
+Actual 2022 November Forecast 2023 Final Proposed Budget 2024 2025 2026 2027 Non-Reimbursable / Reimbursable Page 1 of 2 Operating Revenue Toll Revenue $2,332,384 $2,400,165 $2,526,207 $2,529,488 $2,531,495 $2,534,027 Other Operating Revenue 24,222 18,936 18,936 18,936 18,936 18,936 Capital and Other Reimbursements 11,376 17,422 30,838 30,958 31,101 31,225 Investment Income 3,718 8,240 13,240 1,240 1,240 1,240 Total Revenues $2,371,700 $2,444,764 $2,589,221 $2,580,622 $2,582,772 $2,585,428 Operating Expense Labor: Payroll $108,480 $120,134 $126,314 $130,072 $133,205 $135,869 Overtime 23,104 27,672 30,270 31,375 32,360 32,519 Health and Welfare 26,077 33,703 37,981 40,423 42,967 45,644 OPEB Current Payments 27,993 30,820 32,670 34,630 36,708 38,910 Pension 31,401 29,625 27,732 30,691 33,042 34,374 Other Fringe Benefits 16,622 22,943 24,248 24,810 25,408 25,408 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $233,676 $264,897 $279,214 $292,000 $303,689 $312,723 Non-Labor: Electric Power $4,645 $4,345 $5,099 $5,486 $5,521 $5,650 Fuel 2,812 3,086 3,093 2,868 2,767 2,807 Insurance 13,774 12,831 16,732 19,569 22,555 26,178 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 149,436 166,823 169,340 177,975 179,298 181,733 Professional Services Contracts 23,844 39,041 45,615 46,264 46,715 47,693 Materials and Supplies 3,631 5,243 3,380 3,398 3,481 3,560 Other Business Expenses 53,818 55,452 54,214 54,268 54,306 54,344 Total Non-Labor Expenses $251,960 $286,822 $297,474 $309,827 $314,644 $321,965 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $485,636 $551,719 $576,688 $601,827 $618,333 $634,689 Depreciation $203,935 $209,397 $202,491 $202,491 $202,491 $202,491 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment (22,211) (19,406) (17,210) (19,867) (21,816) (22,847) GASB 75 OPEB Expense Adjustment 24,982 29,203 29,166 29,043 28,983 26,781 GASB 87 Lease Adjustment 14,499 2,324 2,324 2,324 2,324 2,324 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 Total Expenses After Depreciation and GASB Adjs. $706,841 $773,237 $793,459 $815,818 $830,315 $843,437 Less: Depreciation $203,935 $209,397 $202,491 $202,491 $202,491 $202,491 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adj. (22,211) (19,406) (17,210) (19,867) (21,816) (22,847) GASB 75 OPEB Expense Adj 24,982 29,203 29,166 29,043 28,983 26,781 GASB 87 Lease Adjustment 14,499 2,324 2,324 2,324 2,324 2,324 Total Expenses $485,636 $551,719 $576,688 $601,827 $618,333 $634,689 Net Surplus/(Deficit) $1,886,064 $1,893,045 $2,012,533 $1,978,795 $1,964,440 $1,950,740
+```
+[p050_c0003] _Master Page # 50 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 51
+
+### [p051_c0001] MTA BRIDGES AND TUNNELS November Financial Plan 2024 - 2027 Accrual Statement of Operations by Category ($ in millions)
+[p051_c0002]
+
+```text
+Actual 2022 November Forecast 2023 Final Proposed Budget 2024 2025 2026 2027 Non-Reimbursable / Reimbursable Page 2 of 2 Net Surplus/(Deficit) $1,886.064 $1,893.045 $2,012.533 $1,978.795 $1,964.440 $1,950.740 Deductions from Income: Less: Capitalized Assets $13.100 $23.600 $22.441 $23.302 $23.857 $24.419 B&T Capital Reserves & Prepaid Exp. (1.627) 0.000 0.000 0.000 0.000 0.000 GASB 45 Reserves 0.000 0.000 0.000 0.000 0.000 0.000 Adjusted Net Surplus/(Deficit) $1,874.591 $1,869.445 $1,990.092 $1,955.493 $1,940.583 $1,926.320 Less: Debt Service $681.139 $682.041 $677.170 $793.828 $819.237 $871.894 Less: Contribution to the Capital Program 0.000 0.000 0.000 0.000 0.000 0.000 Income Available for Distribution $1,193.452 $1,187.404 $1,312.922 $1,161.666 $1,121.347 $1,054.426 Distributable To: MTA - Investment Income $3.718 $8.240 $13.240 $1.240 $1.240 $1.240 MTA - Distributable Income 640.318 633.418 689.295 626.052 604.697 572.263 NYCT - Distributable Income 549.416 545.746 610.387 534.373 515.409 480.923 Total Distributable Income $1,193.452 $1,187.404 $1,312.922 $1,161.666 $1,121.347 $1,054.426 Actual Cash Transfers: MTA - Investment Income - Prior Year $0.094 $3.718 $8.240 $13.240 $1.240 $1.240 MTA - Cash Surplus Transfer 642.664 672.163 683.707 632.376 606.833 575.506 NYCT - Cash Surplus Transfer 550.587 576.178 603.923 541.975 517.305 484.371 Total Cash Transfers $1,193.346 $1,252.059 $1,295.870 $1,187.591 $1,125.378 $1,061.118 SUPPORT TO MASS TRANSIT: Total Revenue $2,371.700 $2,444.764 $2,589.221 $2,580.622 $2,582.772 $2,585.428 Total Expenses Before Non-Cash Liability Adjs. 485.636 551.719 576.688 601.827 618.333 634.689 Net Operating Income $1,886.064 $1,893.045 $2,012.533 $1,978.795 $1,964.440 $1,950.740 Deductions from Operating Income: B&T Debt Service $365.788 $380.184 $406.452 $490.177 $524.156 $571.469 Contribution to the Capital Program 0.000 0.000 0.000 0.000 0.000 0.000 Capitalized Assets 13.100 23.600 22.441 23.302 23.857 24.419 B&T Capital Reserves (1.627) 0.000 0.000 0.000 0.000 0.000 GASB Reserves 0.000 0.000 0.000 0.000 0.000 0.000 Total Deductions from Operating Income $377.262 $403.784 $428.893 $513.479 $548.013 $595.889 Total Support to Mass Transit $1,508.802 $1,489.261 $1,583.640 $1,465.316 $1,416.427 $1,354.851
+```
+[p051_c0003] _Master Page # 51 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 52
+
+### [p052_c0001] MTA BRIDGES AND TUNNELS November Financial Plan 2024 - 2027 Traffic Volume (Utilization) and Toll Revenue (in millions)
+[p052_c0002]
+
+```text
+Actual November Forecast Final Proposed Budget 2022 2023 2024 2025 2026 2027
+```
+### [p052_c0003] TRAFFIC VOLUME
+[p052_c0004] Total Traffic Volume
+[p052_c0005]
+
+```text
+326.304 333.853 332.188 332.620 332.884 333.216
+```
+### [p052_c0006] TOLL REVENUE
+[p052_c0007] Toll Revenue
+[p052_c0008]
+
+```text
+$2,332.384 $2,400.165 $2,526.207 $2,529.488 $2,531.495 $2,534.027
+```
+[p052_c0009] _Master Page # 52 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 53
+
+### [p053_c0001] MTA BRIDGES & TUNNELS November Financial Plan 2024-2027 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-time/Full-time Equivalents
+[p053_c0002]
+
+```text
+FUNCTION/DEPARTMENT Actual 2022 November Forecast 2023 Final Proposed Budget 2024 2025 2026 2027 Administration Executive 8 17 17 17 17 17 Law (1) 6 12 12 12 12 12 Budget & Finance (2) 9 17 17 17 17 17 Administration (3) 23 38 38 38 38 38 EEO 0 1 1 1 1 1 Total Administration 46 85 85 85 85 85 Operations ITS & Tolling 50 64 65 65 65 65 Central Business District Tolling Program 10 47 47 47 47 47 Operations (Non-Security) 38 54 54 54 54 54 Total Operations 98 165 166 166 166 166 Maintenance Maintenance 182 205 205 205 205 205 Operations - Maintainers 153 183 183 183 183 183 Total Maintenance 335 388 388 388 388 388 Engineering/Capital Engineering & Construction 107 123 123 123 123 123 Health & Safety 7 9 9 9 9 9 Law (1) 10 18 18 18 18 18 Planning & Budget Capital 6 8 8 8 8 8 Total Engineering/Capital 130 158 158 158 158 158 Public Safety Operations (Security) 412 375 375 375 375 375 Internal Security - Operations 28 45 45 45 45 45 Total Public Safety 440 420 420 420 420 420 Total Positions 1,049 1,216 1,217 1,217 1,217 1,217 Non-Reimbursable 955 1,085 1,086 1,086 1,086 1,086 Reimbursable 94 131 131 131 131 131 Total Full-Time 1,049 1,216 1,217 1,217 1,217 1,217 Total Full-Time Equivalents 0 0 0 0 0 0
+```
+[p053_c0003] (1) Includes Legal and Procurement staff.
+[p053_c0004] (2) Includes Controller and Operating Budget staff.
+[p053_c0005] (3) Includes Human Resources, Labor Relations, and Administration staff.
+[p053_c0006] _Master Page # 53 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 54
+
+### [p054_c0001] MTA BRIDGES AND TUNNELS November Financial Plan 2024 - 2027 Total Positions By Function and Occupational Group
+[p054_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual 2022 November Forecast 2023 Final Proposed Budget 2024 2025 2026 2027 Administration Managers/Supervisors 11 32 32 32 32 32 Professional/Technical/Clerical 35 53 53 53 53 53 Operational Hourlies 0 0 0 0 0 0 Total Administration Headcount 46 85 85 85 85 85 Operations Managers/Supervisors 43 73 73 73 73 73 Professional/Technical/Clerical 55 92 93 93 93 93 Operational Hourlies (1) 0 0 0 0 0 0 Total Operations Headcount 98 165 166 166 166 166 Maintenance Managers/Supervisors 21 27 27 27 27 27 Professional/Technical/Clerical 8 11 11 11 11 11 Operational Hourlies (2) 306 350 350 350 350 350 Total Maintenance Headcount 335 388 388 388 388 388 Engineering / Capital Managers/Supervisors 25 34 34 34 34 34 Professional/Technical/Clerical 105 124 124 124 124 124 Operational Hourlies 0 0 0 0 0 0 Total Engineering Headcount 130 158 158 158 158 158 Public Safety Managers/Supervisors 117 117 117 117 117 117 Professional/Technical/Clerical 22 36 36 36 36 36 Operational Hourlies (3) 301 267 267 267 267 267 Total Public Safety Headcount 440 420 420 420 420 420 Total Positions Managers/Supervisors 217 283 283 283 283 283 Professional/Technical/ Clerical 225 316 317 317 317 317 Operational Hourlies 607 617 617 617 617 617 Total Positions 1,049 1,216 1,217 1,217 1,217 1,217
+```
+[p054_c0003] (1) Represents Bridge and Tunnel Officers. These positions are paid annually, not hourly.
+[p054_c0004] (2) Represents maintenance personnel. These positions are paid annually, not hourly.
+[p054_c0005] (3) Represents Bridge and Tunnel Officers performing public safety. These positions are paid annually, not hourly.
+[p054_c0006] _Master Page # 54 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 55
+
+> [p055_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a black circle.
+### [p055_c0002] Bridges and Tunnels
+### [p055_c0003] Diversity Report Third Quarter 2023
+> [p055_c0004] A vertical line composed of three parallel lines, positioned on the left side of the page.
+[p055_c0005] _Master Page # 55 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 56
+
+### [p056_c0001] MTA Bridges and Tunnels
+### [p056_c0002] EEO Report – 3 rd Quarter 2023
+[p056_c0003] December 18, 2023
+> [p056_c0004] The MTA logo, consisting of the letters 'MTA' in white inside a dark grey circle.
+[p056_c0005] _Master Page # 56 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 57
+
+### [p057_c0001] EEO 3 rd Quarter Executive Summary
+### [p057_c0002] ☐ EEO
+[p057_c0003] As of September 30, 2023 , MTA Bridges and Tunnels' workforce consisted of 867 employees of which females represented 19% (169) , minorities represented 58% (506) , veterans represented 2% (15) and employees identifying as a person with a disability represented 2% (15) of the total workforce.
+[p057_c0004] In comparison with the 3 rd Quarter 2022 (3Q22):
+- [p057_c0005] ☐ B&T's 3 rd Quarter workforce decreased by 52 employees. ☐ Female representation remained constant with a slight decrease of 2 female employees. ☐ Minority representation remained constant with a decrease of 22 minority employees. ☐ There were 0 employees hired who self-identified as a veteran and 2 employees separated that self-identified as a veteran . ☐ B&T handled* a total of 7 EEO complaints; of which 2 were internal and 5 were external (including lawsuits). During 2023, B&T received a total of 6 EEO complaints; of which 2 were internal and 4 were external. ☐ B&T did not receive any Title VI complaints or lawsuits during this reporting period.
+[p057_c0006] * Complaints handled include incoming 2023 cases and cases that carried over from prior years.
+> [p057_c0007] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark grey circle.
+[p057_c0008] _Master Page # 57 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 58
+
+### [p058_c0001] EEO 3 rd Quarter Executive Summary Cont.
+- [p058_c0002] ■ When vacancies occur for EEO job categories, B&T's action strategy to address areas of underutilization will include: □ Creating unique approaches to attract, promote and retain the specific job group/job title; □ Forecasting future opportunities for underutilized job groups/titles, in communication with hiring manager, and raising awareness of need to make extra efforts to achieve representation of targeted groups in the candidate pools; □ Identifying specific job groups/job titles within the underutilized category that present an opportunity for targeted recruitment; □ Engaging with potential outreach sources relevant to the underutilized groups such as hosting career fairs to attract qualified candidates into the pipeline for non-traditional technical positions.
+> [p058_c0003] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is centered within a dark grey circle.
+[p058_c0004] _Master Page # 58 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 59
+
+### [p059_c0001] EEO 3 rd Quarter Executive Summary Cont.
+- [p059_c0002] ❑ D&I in Motion – All Agency Employee Resource Groups Quarterly Highlights - Employee Resource Groups (ERGs) are important pillars of the MTA and contribute to a culture of inclusion and belonging while making a positive impact on the MTA. Ultimately all initiatives and programs should serve and champion members, maximize available resources, align with the MTA strategic priorities as well as the ERG goals and objectives. For the remainder of the year, we focused on the MTA Strategic Priority Revive Talent and Culture with a focus on belonging, health and well being.
+### [p059_c0003] ❑ All Generational – Generations in the Workforce – September 26, 2023
+[p059_c0004] A conversation Across Generations – embracing generational perspectives at the MTA. The panel included members of all five generations and centered on the following conversations. What is meant by generational differences? What traits, beliefs, and life experiences shape each generation? How do world events impact generational perspectives? What challenges do generational differences present to those who manage and lead others?
+### [p059_c0005] ❑ Empowering Women in Transportation – Breast Cancer Awareness Walk - October 15, 2023
+[p059_c0006] MTA employees united with the American Cancer Society for the Making Strides Against Breast Cancer Walk to raise funds and awareness, support survivors, thrivers, and caregivers and honor those we've lost. This year's walk was the 30 th anniversary and it took place in Central Park.
+### [p059_c0007] ❑ All Generational – Winter Toy and Coat Drive – November 1- December 8, 2023
+[p059_c0008] A winter toy and coat drive to benefit The Henry Street Settlement and The Bronx Defenders. The Henry Street Settlement opens doors of opportunity for Lower East Side residents and other New Yorkers through social services, arts, and health care programs. The Bronx Defenders provides innovative, holistic, and client-centered criminal defense, family defense, civil legal services, social work support and advocacy to indigent people in the Bronx.
+### [p059_c0009] ❑ Veterans - Veterans Day Ceremony November 8, 2023
+[p059_c0010] The Veterans ERG held a luncheon ceremony to commemorate Veterans Day. Veterans ERG were joined by MTA Veterans, Chairman Janno Lieber, Executive Sponsors, and employees to pay tribute to members of the Armed Service who served their nation.
+> [p059_c0011] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark circle.
+[p059_c0012] _MTA Strategic Priority – Revive Talent and Culture_
+[p059_c0013] _Master Page # 59 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 60
+
+### [p060_c0001] EEO 3rd Quarter Executive Summary Cont.
+### [p060_c0002] ■ EEO
+[p060_c0003] B&T conducted a utilization analysis of females and minorities in its workforce. The utilization analysis consists of comparing B&T's September 30, 2023 , workforce percentages for females and minorities to the estimated availability of the females and minorities available within the relevant labor market.
+[p060_c0004] Based on the utilization analysis , B&T's 2023 workforce estimated availability targets are:
+[p060_c0005]
+
+```text
+EEO4 Category Minorities Females Black Hispanic Asian Am Ind/Al Nat NHOPi 2 Races Officials & Administrators 37.7% 16.2% 17.8% 10.0% 5.8% 0.3% 0.0% 3.8% Professionals 48.0% 30.5% 18.7% 16.9% 8.0% 0.0% 0.0% 4.4% Technicians 32.8% 12.2% 17.3% 12.4% 1.3% 0.0% 0.0% 1.8% Protective Services 43.1% 41.1% 15.2% 22.8% 2.5% 0.1% 0.1% 2.3% Paraprofessionals 43.0% 71.6% 4.4% 6.4% 24.5% 0.1% 0.0% 7.4% Administrative Support 24.3% 34.1% 8.9% 10.5% 3.9% 0.1% 0.0% 1.0% Skilled Craft 62.7% 11.6% 24.7% 27.6% 8.1% 0.1% 0.0% 2.0% Service Maintenance 72.4% 38.3% 23.6% 41.7% 5.8% 0.1% 0.0% 1.1%
+```
+[p060_c0006] _Master Page # 60 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 61
+
+### [p061_c0001] EEO 3rd Quarter Executive Summary Cont.
+[p061_c0002] Based on the B&T utilization analysis*, the underrepresentation for females and minorities occurred in the following EEO categories:
+### [p061_c0003] All Females:
+- [p061_c0004] Professional - Whites Technicians – Blacks and Whites Protective Services – Hispanics, Asian and Whites Paraprofessional – 2+ Races Administrative Support – Hispanic and Whites Skilled Craft – Blacks, and Hispanics Service Maintenance – Blacks, and Whites
+### [p061_c0005] Minority Males:
+- [p061_c0006] Officials & Administrators – Hispanics Technicians – 2+ Races Skilled Craft – Blacks, Hispanics and Asians Service Maintenance – Hispanics
+[p061_c0007] _*The utilization analysis compares the percentages of females and minorities employed in each job group to 80 percent of the females and minorities available within the relevant labor market._
+> [p061_c0008] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark grey circle.
+[p061_c0009] _Master Page # 61 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 62
+
+[p062_c0001] MTA B&T
+### [p062_c0002] Workforce as of September 30, 2023
+> [p062_c0003] The MTA logo, consisting of the letters 'MTA' in white inside a dark grey circle.
+[p062_c0004] _Master Page # 62 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 63
+
+### [p063_c0001] Definitions of EEO Job Categories
+- [p063_c0002] ❑ Officials & Administrators - Occupations in which employees set broad policies, exercise overall responsibility for execution of these policies, or direct individual departments or special phases of the agency's operations, or provide specialized consultation on a regional, district or area basis. ❑ Professionals - Occupations which require specialized and theoretical knowledge which is usually acquired through college training or through work experience and other training which provides comparable knowledge. ❑ Technicians - Occupations which require a combination of basic scientific or technical knowledge and manual skill which can be obtained through specialized post-secondary school education or through equivalent on-the-job training. ❑ Protective Services - Occupations in which workers are entrusted with public safety, security and protection from destructive forces. ❑ Paraprofessionals - Occupations in which workers perform some of the duties of a professional or technician in a supportive role, which usually require less formal training and/or experience normally required for professional or technical status. ❑ Administrative Support - Occupations in which workers are responsible for internal and external communication, recording and retrieval of data and/or information and other paperwork required in an office. ❑ Skilled Craft - Occupations in which workers perform jobs which require special manual skill and a thorough and comprehensive knowledge of the process involved in the work which is acquired through on-the-job training and experience or through apprenticeship or other formal training programs. ❑ Service Maintenance - Occupations in which workers perform duties which result in or contribute to the comfort, convenience, hygiene or safety of the general public or which contribute to the upkeep and care of buildings, facilities or grounds of public property.
+> [p063_c0003] The MTA logo is a circular emblem with the letters 'MTA' in a bold, sans-serif font. The 'M' and 'T' are stacked vertically, with the 'A' positioned to the right of the 'T'. The entire logo is set against a dark, textured background.
+[p063_c0004] _Master Page # 63 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 64
+
+### [p064_c0001] EEO 3rd Quarter Executive Summary Cont.
+[p064_c0002] The table below is a snapshot of B&T workforce by race/ethnicity, gender and veterans as of September 30, 2023.
+[p064_c0003]
+
+```text
+JOB CATEGORY TOTAL Minorities WHITES BLACKS HISPANICS ASIANS AJ/AN* NHOPi** 2+ RACES VETERANS PWD*** # % # % # % # % # % # % # % # % # % # % # % Officials & Administrators 118 67 57% 51 43% 33 28% 15 13% 12 10% 0 0% 0 0% 7 6% 3 3% 9 8% F 42 36% 31 26% 11 9% 21 18% 5 4% 4 3% 0 0% 0 0% 1 1% 1 1% 6 5% M 76 64% 36 31% 40 34% 12 10% 10 8% 8 7% 0 0% 0 0% 6 5% 2 2% 3 3% Professionals 87 65 75% 22 22% 25 29% 20 23% 11 13% 0 0% 0 0% 9 10% 1 1% 1 1% F 40 46% 33 38% 7 8% 18 21% 10 11% 4 5% 0 0% 0 0% 1 1% 0 0% 0 0% M 47 54% 32 37% 15 17% 7 8% 10 11% 7 8% 0 0% 0 0% 8 9% 1 1% 1 1% Technicians 83 41 49% 42 51% 12 14% 20 24% 5 6% 2 2% 0 0% 2 2% 1 1% 0 0% F 14 17% 12 14% 2 2% 3 4% 5 6% 1 1% 1 1% 0 0% 2 2% 0 0% 0 0% M 69 83% 29 35% 40 48% 9 11% 15 18% 4 5% 1 1% 0 0% 0 0% 1 1% 0 0% Protective Services 261 173 66% 88 34% 82 31% 70 27% 8 3% 1 0% 0 0% 12 5% 4 2% 2 1% F 48 18% 43 16% 5 2% 33 13% 7 3% 0 0% 1 0% 0 0% 2 1% 0 0% 2 1% M 213 82% 130 50% 83 32% 49 19% 63 24% 8 3% 0 0% 0 0% 10 4% 4 2% 0 0% Paraprofessionals 2 1 50% 1 50% 0 0% 0 0% 1 50% 0 0% 0 0% 0 0% 0 0% 0 0% F 2 100% 1 50% 0 0% 0 0% 0 0% 1 50% 0 0% 0 0% 0 0% 0 0% 0 0% M 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% Administrative Support 14 13 93% 1 7% 8 57% 1 7% 1 7% 0 0% 0 0% 3 21% 1 7% 0 0% F 12 86% 12 86% 0 0% 8 57% 1 7% 1 7% 0 0% 0 0% 2 14% 1 7% 0 0% M 2 14% 1 7% 1 7% 0 0% 0 0% 0 0% 0 0% 0 0% 1 7% 0 0% 0 0% Skilled Craft 280 125 45% 155 55% 54 19% 43 15% 10 4% 3 1% 0 0% 15 5% 5 2% 2 1% F 4 1% 2 1% 2 1% 1 0% 1 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% M 276 99% 123 44% 153 55% 53 19% 42 15% 10 4% 3 1% 0 0% 15 5% 5 2% 2 1% Service Maintenance 22 21 95% 1 5% 11 50% 8 36% 1 5% 0 0% 0 0% 1 5% 0 0% 1 5% F 7 32% 7 32% 0 0% 1 5% 6 27% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% M 15 68% 14 64% 1 5% 10 45% 2 9% 1 5% 0 0% 0 0% 1 5% 0 0% 1 5% Total 867 506 58% 361 42% 225 26% 177 20% 49 6% 6 1% 0 0% 49 6% 15 2% 15 2%
+```
+[p064_c0004] * American Indian/Alaskan Native
+[p064_c0005] **Native Hawaiian Other Pacific Islander
+[p064_c0006] Note: All percentages have been rounded up to the nearest whole number.
+[p064_c0007] _Master Page # 64 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 65
+
+### [p065_c0001] B&T Workforce as of September 30, 2023
+[p065_c0002] _Workforce By Sex_
+> [p065_c0003] Sex Percentage Count Males 81% 698 Females 19% 169
+[p065_c0004] _Workforce By Race/Ethnicity_
+> [p065_c0005] Race/Ethnicity Percentage Count Whites 42% 361 Hispanics 20% 177 Black... 10% 225 2+ Races 6% 49 Asians 6% 49 NHOP... 0% 0 AI/AN 1% 6 Other ~1% ~6
+[p065_c0006] MTA B&T employed 867 employees, 19% (169) of the workforce were females , 58% (506) minorities , veterans comprised 2% (15) and 2% (15) self identified as a person with a disability.
+- [p065_c0007] ❑ The percentage of female representation in the workforce remained constant at 19% with a net change 2 female employees when compared to 3 rd Quarter 2022 . ❑ The percentage of minorities in the workforce increased by one percentage point with a net change of 22 minority employees when compared to 3 rd Quarter 2022 .
+[p065_c0008] _Master Page # 65 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 66
+
+### [p066_c0001] Bridges and Tunnel's Underutilization Analysis
+[p066_c0002] B&T has conducted an availability analysis of females and minorities in its workforce. The availability analysis consists of comparing B&T's September 30, 2023 , workforce percentages for females and minorities to 80 percent of the females and minorities available within the relevant labor market based on the U.S. Census.
+[p066_c0003] *The Whole-Person Rule was used to determine underutilization, where Actual % < Estimated Availability % by 1 whole person
+[p066_c0004]
+
+```text
+JOB CATEGORY Gender BLACKS HISPANIC ASIANS AJ/AN** NHOP*** 2+ RACES WHITES Est Actual % Est Actual % Est Actual % Est Actual % Est Actual % Est Actual % Est Actual % Officials & Administrators F 7% 18% 1% 4% 2% 3% 0% 0% 0% 0% 0% 0% 0% 0% 0% 0% 0% 1% 6% 9% M 10% 10% 9% 8% 4% 7% 0% 0% 0% 0% 0% 0% 0% 0% 0% 4% 5% Professionals F 10% 21% 7% 11% 2% 5% 0% 0% 0% 0% 0% 0% 0% 0% 0% 1% 1% 10% 8% M 9% 8% 10% 11% 6% 8% 0% 0% 0% 0% 0% 0% 0% 0% 0% 3% 9% Technicians F 6% 4% 2% 6% 0% 1% 0% 1% 0% 0% 0% 0% 0% 0% 0% 0% 2% 4% 2% M 11% 11% 10% 18% 1% 6% 0% 1% 0% 0% 0% 0% 0% 0% 0% 2% 0% Protective Services F 9% 13% 11% 3% 1% 0% 0% 0% 0% 0% 0% 0% 0% 0% 0% 1% 1% 19% 2% M 6% 19% 11% 24% 1% 3% 0% 0% 0% 0% 0% 0% 0% 0% 0% 2% 4%
+```
+[p066_c0005] **American Indian/Alaskan Native
+[p066_c0006] ***Native Hawaiian Other Pacific Islander
+[p066_c0007] Note: Pursuant to FTA Circular 4704.1 A EEO Requirements and Guidelines, white males have been excluded from the availability analysis.
+[p066_c0008] Percentages highlighted in green indicates underutilization
+[p066_c0009] _Master Page # 66 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 67
+
+### [p067_c0001] Bridges and Tunnel's Underutilization Analysis
+[p067_c0002]
+
+```text
+JOB CATEGORY Gender BLACKS HISPANIC ASIANS AI/AN** NHOP*** 2+ RACES WHITES Est Actual Est Actual Est Actual Est Actual Est Actual Est Actual Est Actual Paraprofessionals F 3%* 0%* 5%* 0%* 23% 60% 0% 0% 0% 0% 7% 0% 33% 40% M 1%* 0%* 1%* 0%* 1%* 0%* 0% 0% 0% 0% 0% 0% Administrative Support F 8% 67% 9% 8% 3% 8% 0% 0% 0% 0% 1% 8% 13% 0% M 1%* 0%* 1%* 0%* 1%* 0%* 0% 0% 0% 0% 0% 0% Skilled Craft F 3% 0% 8% 0% 0% 0% 0% 0% 0% 0% 0% 0% 1% 1% M 22% 19% 20% 15% 8% 4% 0% 1% 0% 0% 2% 6% Service Maintenance F 7% 5% 25%* 24%* 3%* 0%* 0% 0% 0% 0% 0% 0% 4% 0% M 17% 48% 17% 10% 3% 5% 0% 0% 0% 0% 1% 5%
+```
+[p067_c0003] **American Indian/Alaskan Native
+[p067_c0004] ***Native Hawaiian Other Pacific Islander
+[p067_c0005] Note: Pursuant to FTA Circular 4704.1A EEO Requirements and Guidelines, white males have been excluded from the availability analysis.
+[p067_c0006] Percentages highlighted in green indicates underutilization
+[p067_c0007] _Master Page # 67 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 68
+
+[p068_c0001] MTA B&T
+### [p068_c0002] New Hires and Separation
+[p068_c0003] January 1, 2023 – September 30, 2023
+> [p068_c0004] The MTA logo, consisting of the letters 'MTA' in white inside a dark gray circle.
+[p068_c0005] _Master Page # 68 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 69
+
+### [p069_c0001] MTA B&T New Hires and Separations by Sex
+[p069_c0002] _New Hires By Sex_
+> [p069_c0003] Sex Count Percentage Males 17 55% Females 14 45%
+[p069_c0004] _Separations By Sex_
+> [p069_c0005] Sex Count Percentage Male 48 72% Female 19 28%
+[p069_c0006] As of the 3 rd Quarter 2023, B&T hired 31 employees, 14 females and 17 males. During this same reporting period, 67 employees separated from B&T, 19 females and 48 males.
+- [p069_c0007] ❑ The result was negative change of 5 female and 31 male employees. ❑ The net change for employees who self-identified as veterans is negative 2 .
+[p069_c0008] _Master Page # 69 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 70
+
+### [p070_c0001] MTA B&T
+### [p070_c0002] New Hires and Separations by Race/Ethnicity
+[p070_c0003] _New Hires By Race/Ethnicity_
+> [p070_c0004] Race/Ethnicity Count Percentage Blacks 11 38% Whites 8 28% Hispanics 6 20% 2+ Races 3 13%
+[p070_c0005] _Separations By Race/Ethnicity_
+> [p070_c0006] Race/Ethnicity Count Percentage Whites 29 43% Blacks 24 36% Hispanics 8 12% 2+ Races 2 3%
+[p070_c0007] During the 3 rd Quarter 2023, B&T hired 31 employees, 23 minorities and 8 non-minorities. During this same reporting period 67 employees separated from B&T, 38 minorities and 29 non-minorities.
+- [p070_c0008] ❑ The result was a net decrease of 15 minority employees. ❑ The number of employees that self-identified as a person with a disability increased . There were 4 persons with disabilities hired and 0 persons with disabilities separated during 2023.
+[p070_c0009] _Master Page # 70 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 71
+
+### [p071_c0001] Metropolitan Transportation Authority Department of Diversity and Civil Rights
+[p071_c0002] MTA B&T Complaints and Lawsuits 3 rd Quarter 2023
+[p071_c0003] December 18, 2023
+> [p071_c0004] The MTA logo, consisting of the letters "MTA" in a bold, sans-serif font, is centered within a dark gray circle.
+[p071_c0005] _Master Page # 71 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 72
+
+### [p072_c0001] MTA B&T
+### [p072_c0002] EEO Internal/External Discrimination Complaints by Bases January 1, 2023, to September 30, 2023
+### [p072_c0003] INTERNAL EEO COMPLAINTS BY BASES
+> [p072_c0004] Base Percentage Sex/Gender 100%
+### [p072_c0005] EXTERNAL EEO COMPLAINTS BASES
+> [p072_c0006] Base Percentage Count Sexual Harassment 25% 2 Sex/Gender 25% 2 National Origin 13% 1 Age 13% 1 Disability 13% 1 Retaliation 13% 1
+### [p072_c0007] LAWSUIT(S) BY BASES
+[p072_c0008] There were no lawsuits filed alleging discrimination
+- [p072_c0009] ❑ 2 internal EEO complaints filed citing 1 base(s)* . ❑ 4 filed external complaint(s) citing 8 bases* . ❑ 0 EEO lawsuit(s) filed.
+[p072_c0010] Note: *Formal complaints and lawsuits can be filed alleging multiple bases. Additionally, numerous incoming matters were also handled during this time period.
+[p072_c0011] _Master Page # 72 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_
+
+## Page 73
+
+### [p073_c0001] MTA B&T Internal/External Title VI and Related Discrimination Complaints by Bases January 1, 2023, to September 30, 2023
+[p073_c0002] There were no Title VI and related discrimination complaints filed at B&T during this time period.
+[p073_c0003] Note: *Formal complaints can be filed alleging multiple bases. Note: **Related Discrimination complaints are filed by customers based on age, disability, religion and sex.
+> [p073_c0004] The MTA logo, consisting of the letters "MTA" in a bold, sans-serif font, is enclosed within a dark gray circle.
+[p073_c0005] _Master Page # 73 of 73 - Bridges & Tunnels Committee Meeting 12/18/2023_

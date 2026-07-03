@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "corridor_cluster_27952469fe",
+  "kind": "corridor",
+  "packet_path": "data/identity-review/packets/corridor_cluster_27952469fe.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_27952469fe.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "medium"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "corridor_bus-fwd-2-church-av-brooklyn-local",
+        "corridor_church-av"
+      ],
+      "reason": "Different limits: corridor_bus-fwd-2-church-av-brooklyn-local spans Coney Island Av to Flatbush Av, while corridor_church-av spans Flatbush Ave to Ocean Pkwy. Per identity merge canon, same street with differing limits never merges (test 1: contradiction in strong identity field 'limits')."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "Two records have explicit, non-overlapping limits and are clearly distinct (do_not_merge). The third record lacks limits entirely, making its relationship to the others ambiguous. No merge is justified under the identity merge canon because the strong identity field 'limits' either contradicts or is missing. The validator identity collision on alias 'corridor_church-ave' is insufficient to merge without corroborating limits. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

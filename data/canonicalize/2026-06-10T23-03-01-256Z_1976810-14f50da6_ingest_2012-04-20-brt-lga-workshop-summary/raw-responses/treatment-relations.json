@@ -1,0 +1,123 @@
+{
+  "run_id": "2026-06-10T23-03-01-256Z_1976810-14f50da6_ingest_2012-04-20-brt-lga-workshop-summary",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T02:40:07.352Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "tr-brt-toolbox-2012",
+        "local_observation_id": "treatment_brt_toolbox_features_2012",
+        "decision": "skip",
+        "rationale": "Block p005_c0008 merely lists BRT toolbox features introduced to workshop participants. No explicit statement attaches these features to any specific corridor or project. The block simply lists features and amenities.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0008",
+            "source_quote": "Facilitators introduced the features and amenities that are part of the NYCDOT/NYCT's BRT toolbox. These included: Offset and Curbside Bus Lanes, Off-Board Fare Collection, Enhanced Stations, Real-time Arrival Information, BRT Vehicles, Subway-like Station Spacing, and Traffic Signal Priority for Buses."
+          }
+        ]
+      },
+      {
+        "decision_id": "tr-off-board-fare-2012",
+        "local_observation_id": "treatment_off_board_fare_collection_2012",
+        "decision": "skip",
+        "rationale": "Blocks p005_c0008 and p005_c0010 discuss off-board fare collection as a BRT feature with participant comments. p005_c0008 only lists the feature in the toolbox. p005_c0010 contains participant comments asking about its success. Neither block explicitly states this treatment is attached to any specific corridor or project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0008",
+            "source_quote": "Facilitators introduced the features and amenities that are part of the NYCDOT/NYCT's BRT toolbox. These included: Offset and Curbside Bus Lanes, Off-Board Fare Collection, Enhanced Stations, Real-time Arrival Information, BRT Vehicles, Subway-like Station Spacing, and Traffic Signal Priority for Buses."
+          },
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0010",
+            "source_quote": "• Off-board fare payment would be particularly helpful. • Off-Board fare collection is good. • How successful is off-board fare collection in New York City?"
+          }
+        ]
+      },
+      {
+        "decision_id": "tr-bus-lanes-2012",
+        "local_observation_id": "treatment_bus_lanes_2012",
+        "decision": "skip",
+        "rationale": "Blocks p005_c0008, p005_c0010, and p006_c0006 discuss bus lanes as BRT features with participant comments. p005_c0008 only lists them in the toolbox. p005_c0010 includes participant skepticism and questions about bus lane locations. p006_c0006 includes a participant comment that Junction Boulevard is good for bus lanes. None of these blocks explicitly state bus lanes are being attached to any specific corridor or project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0008",
+            "source_quote": "Facilitators introduced the features and amenities that are part of the NYCDOT/NYCT's BRT toolbox. These included: Offset and Curbside Bus Lanes... "
+          },
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0010",
+            "source_quote": "• Bus lanes do not work; local streets are too congested. • Where would bus lanes be? • Need to tie treatments to areas."
+          },
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p006_c0006",
+            "source_quote": "• Junction Boulevard is good for bus lanes."
+          }
+        ]
+      },
+      {
+        "decision_id": "tr-tsp-2012",
+        "local_observation_id": "treatment_traffic_signal_priority_2012",
+        "decision": "skip",
+        "rationale": "Blocks p005_c0008 and p005_c0010 discuss traffic signal priority as a BRT feature. p005_c0008 only lists it in the toolbox. p005_c0010 includes a participant question about how it works without a bus lane. Neither block explicitly states this treatment is attached to any specific corridor or project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0008",
+            "source_quote": "Facilitators introduced the features and amenities that are part of the NYCDOT/NYCT's BRT toolbox. These included: ... Traffic Signal Priority for Buses."
+          },
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0010",
+            "source_quote": "• How does traffic signal priority work without a bus lane?"
+          }
+        ]
+      },
+      {
+        "decision_id": "tr-enhanced-stations-2012",
+        "local_observation_id": "treatment_enhanced_stations_2012",
+        "decision": "skip",
+        "rationale": "Blocks p005_c0008 and p006_c0009 discuss enhanced stations as a BRT feature. p005_c0008 only lists it in the toolbox. p006_c0009 reports survey results showing participants preferred enhanced stations. Neither block explicitly states this treatment is attached to any specific corridor or project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0008",
+            "source_quote": "Facilitators introduced the features and amenities that are part of the NYCDOT/NYCT's BRT toolbox. These included: Offset and Curbside Bus Lanes, Off-Board Fare Collection, Enhanced Stations, Real-time Arrival Information, BRT Vehicles, Subway-like Station Spacing, and Traffic Signal Priority for Buses."
+          },
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p006_c0009",
+            "source_quote": "In looking at the features and amenities that a BRT system could offer, the participants preferred Real Time Bus Information, Enhanced Stations, Off-set Bus Lanes and Off-Board Fair Collection."
+          }
+        ]
+      },
+      {
+        "decision_id": "tr-real-time-info-2012",
+        "local_observation_id": "treatment_real_time_arrival_info_2012",
+        "decision": "skip",
+        "rationale": "Blocks p005_c0008 and p006_c0009 discuss real-time arrival information as a BRT feature. p005_c0008 only lists it in the toolbox. p006_c0009 reports survey results showing participants preferred real-time bus information. Neither block explicitly states this treatment is attached to any specific corridor or project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0008",
+            "source_quote": "Facilitators introduced the features and amenities that are part of the NYCDOT/NYCT's BRT toolbox. These included: ... Real-time Arrival Information ..."
+          },
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p006_c0009",
+            "source_quote": "In looking at the features and amenities that a BRT system could offer, the participants preferred Real Time Bus Information, Enhanced Stations, Off-set Bus Lanes and Off-Board Fair Collection."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-34-57-470Z_2111393-a1fe9936_canonicalize_2026-06-10t23-03-01-256z-1976810-14f50da6-ingest-2012-04-20-brt-lga-workshop-summary-treatment-relations"
+}

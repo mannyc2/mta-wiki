@@ -1,0 +1,26 @@
+{"decision_id":"rel-001-metric-36k-bus-passengers-corridor","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p005_c0002"]}
+{"decision_id":"rel-002-metric-corridor-length","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p005_c0002"]}
+{"decision_id":"rel-003-metric-m116-delay-route","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p008_c0002"]}
+{"decision_id":"rel-004-metric-49k-residents-corridor","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p006_c0003"]}
+{"decision_id":"rel-005-metric-car-free-corridor","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p006_c0003"]}
+{"decision_id":"rel-006-metric-sustainable-commute-corridor","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p006_c0003"]}
+{"decision_id":"rel-007-metric-bus-speed-corridor","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p008_c0002"]}
+{"decision_id":"rel-008-metric-ksi-corridor","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p007_c0002"]}
+{"decision_id":"rel-009-metric-ped-injuries-corridor","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p007_c0004"]}
+{"decision_id":"rel-010-metric-bike-injuries-corridor","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p007_c0004"]}
+{"decision_id":"rel-011-metric-mv-injuries-corridor","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p007_c0004"]}
+{"decision_id":"rel-012-metric-total-injuries-corridor","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p007_c0004"]}
+{"decision_id":"rel-016-metric-ped-severe-injuries-corridor","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p007_c0004"]}
+{"decision_id":"rel-018-metric-bus-lanes-project","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p023_c0002"]}
+{"decision_id":"rel-019-metric-bike-lanes-project","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p023_c0002"]}
+{"decision_id":"rel-020-metric-parking-project","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p023_c0002"]}
+{"decision_id":"rel-022-claim-vision-zero-corridor","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p007_c0002"]}
+{"decision_id":"rel-023-claim-slow-bus-corridor","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p008_c0002"]}
+{"decision_id":"rel-024-claim-crosstown-corridor","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p005_c0002"]}
+{"decision_id":"rel-025-claim-dangerous-corridor","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p007_c0002"]}
+{"decision_id":"rel-026-claim-traffic-analysis-project","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p032_c0002"]}
+{"decision_id":"rel-027-event-draft-proposal-project","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p025_c0002"]}
+{"decision_id":"rel-028-event-engineering-review-project","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p025_c0002"]}
+{"decision_id":"rel-029-event-updated-proposal-project","verdict":"pass","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p025_c0002"]}
+{"decision_id":"rel-030-event-implementation-project","verdict":"fail","failure_reason":"The cited block p025_c0002 does not state the connection between event_begin-implementation-summer2025 and project_116th-st-bus-pedestrian-priority. The block is a numbered list of timeline items that never mentions the project name. The slide heading (p025_c0001) only says 'Project Timeline' without specifying which project. The connection to the 116th Street project is inferred from document-level context (page 1 of the same presentation deck), which is co-occurrence, not a stated relation. Per review instructions: 'co-occurrence in a document is not a relation.'","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p025_c0002","116_st_morningside_ave_pleasant_ave_cb11_may2025#p025_c0001"]}
+{"decision_id":"rel-031-event-streets-plan-project","verdict":"fail","failure_reason":"The cited block p025_c0002 does not state the connection between event_nyc-streets-plan-2021-cb11 and project_116th-st-bus-pedestrian-priority. The block is a numbered list of timeline items that never mentions the project name. The slide heading (p025_c0001) only says 'Project Timeline' without specifying which project. The connection to the 116th Street project is inferred from document-level context (page 1 of the same presentation deck), which is co-occurrence, not a stated relation. Per review instructions: 'co-occurrence in a document is not a relation.'","evidence_checked":["116_st_morningside_ave_pleasant_ave_cb11_may2025#p025_c0002","116_st_morningside_ave_pleasant_ave_cb11_may2025#p025_c0001"]}

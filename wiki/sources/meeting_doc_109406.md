@@ -1,0 +1,319 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-109406"
+record_kind: "source"
+display_name: "BudgetWatch April 2023 Flash Report"
+source_id: "meeting_doc_109406"
+source_ids:
+  - "meeting_doc_109406"
+local_observation_id: "source_meeting_doc_109406"
+local_observation_ids:
+  - "source_meeting_doc_109406"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T20:28:33.112Z"
+submission_ids:
+  - "sub_ef02fc64f6c2041e"
+payload:
+  authority_tier: "plan_document"
+  content_type: "financial report"
+  date_text: "April 2023"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2023-04"
+    precision: "month"
+    raw_text: "April 2023"
+  description: "Summary of March 2023 MTA financial results including operating revenue, expenses, debt service, subsidies, ridership, and regional economy data"
+  publication_date: "April 2023"
+  publication_date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2023-04"
+    precision: "month"
+    raw_text: "April 2023"
+  published_date_normalized: "2023-04"
+  published_date_precision: "month"
+  title: "BudgetWatch April 2023 Flash Report"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_109406#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_109406"
+    source_path: "raw/sources/meeting_doc_109406/blocks.jsonl"
+    text_sha256: "sha256:767d187ead5f02ace3c6839adbc0f75ed04ca366daec4f486825729eba571792"
+    text_source: "raw_text"
+---
+
+# BudgetWatch
+
+source_id: meeting_doc_109406
+citation: cite block ids exactly as shown in square brackets
+document: 114 block(s)
+
+## Page 1
+
+### [p001_c0001] BudgetWatch April 2023 Flash Report
+### [p001_c0002] Summary of March Results
+[p001_c0003]
+
+```text
+YTD March 2023 ($ in millions) Month of March 2023 ($ in millions) Actual Adopted Budget Diff % Diff Actual Adopted Budget Diff % Diff Operating Revenue 1 $1,806.5 $1,752.6 $53.9 3.1% $666.1 $633.0 $33.1 5.2% Operating Expenses $3,748.8 $3,848.1 $99.3 2.6% $1,281.9 $1,302.2 $20.3 1.6% Debt Service $776.2 $818.1 $41.9 5.1% $245.3 $272.5 $27.2 10.0% Operating Subsidies 2 $926.6 $1,015.6 ($89.0) -8.8% $372.3 $422.1 ($49.7) -11.8% Surplus/(Deficit) ($1,791.9) ($1,898.0) $106.1 5.6% ($488.8) ($519.6) $30.9 5.9%
+```
+### [p001_c0004] Overall Latest Condition (compared with Budget):
+[p001_c0005] Net preliminary operating results for YTD and the month of March were favorable to the Adopted Budget by $106 million (6%) and $31 million (6%), respectively.
+[p001_c0006] Operating revenue YTD through March was favorable by $54 million (3%), reflecting favorable passenger revenue of $36 million (4%) and favorable toll revenue of $36 million (7%), and offset by lower other operating revenue of $18 million (8%). For March, operating revenue was $33 million (5%) favorable: passenger revenue was $25 million (7%) favorable and toll revenue was $16 million (9%) favorable, offset by lower other operating revenue of $8 million (9%).
+[p001_c0007] Operating expenses YTD through March were favorable by $99 million (3%): labor expenses were $73 million (3%) favorable, and non-labor expenses were $28 million (3%) favorable. For March, operating expenses were $20 million (2%) favorable: labor expenses were $19 million (2%) favorable and non-labor expenses were $2 million (less than 1%) favorable. Other Expenses Adjustments, both YTD and for March, were unfavorable by less than $1 million. Overtime spending YTD through March was $46 million (21%) unfavorable, and was $28 million (41%) unfavorable in March, both primarily due to vacancy/absentee coverage at NYCT. Debt service through March was favorable by $42 million (5%) and was favorable by $27 million (10%) in March, both primarily due to timing and lower than forecasted variable rates.
+[p001_c0008] Operating subsidies for March YTD were $89 million (9%) unfavorable, as noted in the table above. Looking forward, on an April year-to-date cash subsidy basis, subsidy receipts dedicated for operating purposes were $93 million (7%) unfavorable, primarily reflecting results for the real estate transaction taxes, unfavorable by $104 million (28%), the Petroleum Business Tax, favorable by $8 million (4%), the Payroll Mobility Tax, favorable $16 million (3%); and the For-Hire Vehicle Surcharge, unfavorable by $12 million (10%).
+[p001_c0009] _1 Includes Farebox Revenue, Toll Revenue and Other Operating Revenue._
+[p001_c0010] _2 Operating Subsidies are for March 2023 , while subsidy results provided later in this report are for April 2023 . Does not include State and Local Operating Assistance, Station Maintenance, City Subsidies for MTA Bus, and Staten Island Railway, CDOT Subsidy for Metro-North Railroad, and Other Subsidy Adjustments._
+
+## Page 2
+
+### [p002_c0001] Passenger and Toll Revenues
+[p002_c0002]
+
+```text
+YTD March 2023 ($ in millions) Month of March 2023 ($ in millions) Actual Adopted Budget Diff % Diff Actual Adopted Budget Diff % Diff NYCT: Subway $611.6 $583.0 $28.6 4.9% $223.5 $204.7 $18.8 9.2% Bus 152.9 157.4 (4.4) -2.8% 55.7 55.4 0.4 0.7% Other 11.0 11.5 (0.5) -4.6% 3.8 3.9 (0.1) -2.4% NYCT $775.5 $751.9 $23.6 3.1% $283.0 $264.0 $19.1 7.2% SIR $0.8 $1.1 (0.2) -22.2% $0.3 $0.4 (0.1) -19.0% MTA Bus 41.0 40.8 0.2 0.4% 14.7 14.4 0.3 2.4% LIRR 121.7 120.0 1.7 1.4% 43.5 41.8 1.7 4.0% MNR 121.7 110.9 10.9 9.8% 43.5 39.2 4.3 10.9% Sub-total $1,060.8 $1,024.7 $36.1 3.5% $385.1 $359.8 $25.3 7.0% B&T 552.7 516.7 35.9 7.0% 198.5 182.6 15.9 8.7% Total $1,613.4 $1,541.4 $72.0 4.7% $583.6 $542.4 $41.2 7.6%
+```
+[p002_c0003] Passenger revenues for both the month and YTD were better than budget due to both higher than budgeted ridership and higher than anticipated average fares. In March, consolidated ridership was 11 million (8%) above budget, while YTD consolidated ridership was favorable by 15 million (4%). Toll revenues for both the month and YTD were favorable to the budget, reflecting higher than budgeted traffic volume. In March, traffic was 2 million (7%) favorable and YTD was 4 million (5%) favorable.
+> [p002_c0004] The figure contains four line charts comparing actual performance against various scenarios from January 2021 to November 2023. MTA-wide Farebox Revenue: Shows revenue as a percentage of budget. Actual performance (solid black line) is consistently above the McKinsey Midpoint of Scenarios (solid green line) and the McKinsey Low Case (dotted green line), but below the McKinsey High Case (dashed green line). MTA-wide Ridership: Shows ridership as a percentage of budget. Actual performance (solid black line) is consistently above the McKinsey Midpoint of Scenarios (solid green line) and the McKinsey Low Case (dotted green line), but below the McKinsey High Case (dashed green line). B&T Toll Revenue: Shows toll revenue as a percentage of budget. Actual performance (solid black line) is consistently above the 100% Recovery line (solid green line). B&T Traffic: Shows traffic as a percentage of budget. Actual performance (solid black line) is consistently above the 100% Recovery line (solid green line).
+[p002_c0005] The 2023 Adopted Budget is based on the midpoint between the “high case” and “low case” scenarios prepared by McKinsey & Co. last spring. While exceeding the McKinsey projections, passenger revenues remain significantly below pre-pandemic levels: YTD March passenger revenues were down $393 million (27%) compared with YTD March 2019 and March
+
+## Page 3
+
+[p003_c0001] passenger revenues were $125 million (28%) below March 2019. Toll revenue, when adjusted to account for the 2021 toll increase, was higher by $66 million (15%).
+### [p003_c0002] Total Operating Expenses before Non-Cash Liability Adjustments
+[p003_c0003]
+
+```text
+YTD March 2023 ($ in millions) Month of March 2023 ($ in millions) Actual Adopted Budget Diff % Diff Actual Adopted Budget Diff % Diff NYCT $2,328.1 $2,326.4 ($1.8) -0.1% $788.5 $764.6 ($23.9) -3.1% SIR $15.9 $18.8 2.8 15.1% $5.1 $6.6 1.5 22.9% MTA Bus 204.5 240.6 36.0 15.0% 67.7 83.0 15.3 18.4% LIRR 451.6 482.4 30.8 6.4% 152.3 166.4 14.2 8.5% MNR 378.4 368.6 (9.8) -2.7% 138.4 124.1 (14.3) -11.5% B&T 111.3 130.9 19.6 15.0% 41.7 49.8 8.0 16.1% MTA HQ 233.3 244.4 11.1 4.6% 74.2 95.2 20.9 22.0% C&D 2.1 1.3 (0.8) -62.7% 1.8 0.7 (1.1) -161.0% FMTAC 0.4 12.0 11.6 96.8% 5.1 4.0 (1.1) -27.4% GCMCOC 21.7 22.2 0.5 2.2% 6.4 7.4 1.0 14.1% Total $3,747.5 $3,847.6 $100.1 2.6% $1,281.1 $1,301.7 $20.6 1.6%
+```
+[p003_c0004] Year-to-date expenses were favorable by $100 million (3%). The MTA Bus underrun was due to lower unscheduled overtime and the timing of expenses for materials, contracts, interagency billings, claims, health & welfare and OPEB. At the LIRR, lower spending was primarily due to vacancies, underruns in health & welfare and other fringe benefits, and the timing of pension payments, materials costs, maintenance contracts and reimbursable overhead. The B&T underrun reflects vacancies, lower health & welfare and timing of other fringe benefits, maintenance of E-ZPass equipment and E-ZPass tag-related costs. At FMTAC, the favorable variance mainly reflects the timing of contract renewals, recording of claims and projected loss reserves. Lower spending at MTA HQ was primarily due to the timing of hiring, retroactive wage adjustments, health & welfare, other fringe benefits, pensions, maintenance and operating contracts partially offset by higher professional services from 2022, reimbursable overhead, other program expenses, higher overtime in police deployment and vacancy coverage. The favorable variances above are offset primarily by MNR overrun due to overtime vacancy coverage, health & welfare rates, reimbursable charges, timing of repairs, rolling stock and material reserves. At NYCT, higher spending primarily reflects higher overtime, pension, maintenance, operating and paratransit contracts partially offset by vacancies, lower health & welfare, OPEB claims, timing of rebate credits and lower electric power expenses.
+[p003_c0005] Preliminary expenses for March were favorable by $21 million (2%). Favorable variances at MTA HQ were due to timing of hiring, retroactive wage adjustments, pensions, professional services, maintenance and operating contracts, partially offset by higher overtime in police deployment and reimbursable overhead. At MTA Bus, the underrun was due to vacancies, lower unscheduled and programmatic overtime, lower workers compensation; timing of health & welfare, claims, maintenance-related and service contracts, interagency billings, and lower material usage. Lower spending at the LIRR was due to vacant positions, lower railroad retirement taxes, timing of indemnity reserves and maintenance-related contracts partially offset primarily by higher overtime for scheduled/unscheduled service, vacancies and absentee coverage, and higher rates in electric power. The B&T underrun was due to vacancies, timing of pensions, bond issuance costs and other business expenses. The favorable variances above are offset primarily by NYCT overrun mainly reflecting overtime for vacancies and absentee coverage; timing of pension expenses, other fringe benefits, electric power, paratransit costs, real estate service charges, facility and subway cleaning contracts and partially offset mainly by health & welfare credits. The MNR overrun was due to retroactive wage adjustments, higher health & welfare, electric power rates, timing of maintenance-related services, contracts, leases, material reserves and infrastructure repairs.
+
+## Page 4
+
+### [p004_c0001] Overtime
+[p004_c0002]
+
+```text
+YTD March 2023 ($ in millions) Month of March 2023 ($ in millions) Actual Adopted Budget Diff % Diff Actual Adopted Budget Diff % Diff NYCT $167.8 $122.8 ($45.0) -36.6% $62.2 $37.3 ($24.8) -66.5% SIR $1.0 $1.0 (0.0) -1.8% 0.4 $0.3 (0.0) -14.3% MTA Bus 20.4 25.5 5.2 20.2% 7.7 8.5 0.8 9.6% LIRR 39.1 38.9 (0.2) -0.5% 13.2 11.9 (1.3) -11.1% MNR 25.0 22.4 (2.6) -11.4% 7.5 7.0 (0.4) -5.7% B&T 6.8 5.6 (1.2) -20.9% 2.5 1.8 (0.6) -35.1% MTA HQ 7.3 4.7 (2.6) -56.2% 3.0 1.6 (1.4) -91.4% MTA C&D 0.0 0.0 0.0 0.0% 0.0 0.0 0.0 0.0% FMTAC 0.0 0.0 0.0 0.0% 0.0 0.0 0.0 0.0% Total $267.5 $221.1 ($46.4) -21.0% $96.4 $68.5 ($27.9) -40.7%
+```
+[p004_c0003] Overtime expense overruns at NYCT, MNR, B&T, LIRR were primarily due to vacancies and absentee coverage. MTA HQ was unfavorable mainly due to increased MTA PD deployment requirements and at LIRR higher scheduled/unscheduled service. Partially offsetting these unfavorable results were lower overtime at MTA Bus. YTD overtime expenses were higher than forecast. The overrun variances were primarily due to factors noted for the month.
+### [p004_c0004] Debt Service
+[p004_c0005] Debt Service for March was $245 million, which was $27 million (10%) favorable due to the timing of debt issuances, debt service deposits and lower than budgeted variable rates. YTD Debt Service expenses of $776 million were $42 million (5%) favorable due to the same reasons noted for the month.
+### [p004_c0006] State Dedicated Taxes and Fees
+[p004_c0007]
+
+```text
+YTD April 2023 ($ in millions) Month of April 2023 ($ in millions) Actual Adopted Budget Diff % Diff Actual Adopted Budget Diff % Diff MMTOA $0.0 $0.0 $0.0 0.0% $0.0 $0.0 $0.0 0.0% PBT 210.9 202.7 8.2 4.0% 71.4 46.3 25.1 54.2% PMT 3 580.2 564.7 15.5 2.7% 181.6 156.8 24.8 15.8% MTA Aid 4 64.4 64.4 (0.0) 0.0% 0.0 0.0 0.0 0.0% FHV 5 113.8 126.2 (12.4) -9.8% 26.5 31.6 (5.1) -16.1% Total $969.3 $958.1 $11.2 1.2% $279.5 $234.6 $44.9 19.1%
+```
+[p004_c0008] The first MMTOA payment for the year is expected in May.
+### [p004_c0009] Real Estate Transaction Taxes
+[p004_c0010]
+
+```text
+YTD April 2023 ($ in millions) Month of April 2023 ($ in millions) Actual Adopted Budget Diff % Diff Actual Adopted Budget Diff % Diff MRT $128.6 $211.0 ($82.4) -39.0% $29.8 $52.7 ($22.9) -43.4% NYC Urban Tax 144.6 166.7 (22.0) -13.2% 31.7 41.7 (10.0) -24.0% Total $273.3 $377.7 ($104.4) -27.6% $61.5 $94.4 ($32.9) -34.8%
+```
+[p004_c0011] _3 PMT replacement funds of $244.3 million are excluded from the results reported in this table._
+[p004_c0012] _4 MTA Aid includes the License Fee, Vehicle Registration Fee, Taxi Fee, and Automobile Rental Fee._
+[p004_c0013] _5 For-Hire Vehicle Surcharge._
+
+## Page 5
+
+[p005_c0001] Regional Mortgage Recording Tax 6 receipts for April were $23 million (43%), unfavorable; MRT-1 was unfavorable by $13 million (39%), and MRT-2 receipts were unfavorable by $10 million (51%). YTD MRT receipts were unfavorable by $82 million (39%), with MRT-1 receipts $45 million (33%) unfavorable and MRT-2 receipts $38 million (49%) unfavorable.
+[p005_c0002] New York City Urban Tax 7 receipts for April were $10 million (24%), unfavorable, and YTD receipts were $22 million (13%) unfavorable. For April, the Real Property Transfer Tax (RPTT) portion of the Urban Tax was unfavorable by $17 million (65%), while the MRT portion of the Urban Tax was $7 million (47%) favorable. YTD, RPTT receipts were $53 million (50%) unfavorable, while the MRT portion of the Urban Tax was $31 million (51%) favorable.
+### [p005_c0003] Capital Lockbox Funding Sources
+[p005_c0004]
+
+```text
+YTD April 2023 ($ in millions) Month of April 2023 ($ in millions) Adopted Adopted Actual Budget Diff % Diff Actual Budget Diff % Diff Mansion Tax 8 $103.6 $103.9 ($0.3) -0.3% $19.5 $26.0 ($6.4) -24.8% Internet Sales Tax - NYS 9 38.3 51.1 (12.9) -25.2% 0.0 12.9 (12.9) -100.0% Internet Sales Tax - NYC 9 58.0 58.0 0.0 0.0% 14.6 14.6 0.0 0.0% Total $199.8 $213.0 ($13.2) -6.2% $34.1 $53.4 ($19.3) -36.1%
+```
+[p005_c0005] Funds received from the Mansion Tax and the Internet Sales Tax are deposited into the Capital Lockbox and are only available for capital purposes. At the time this report was prepared, the NYS portion of the Internet Sales Tax for April had not been transferred to the MTA.
+[p005_c0006] _6 Mortgage Recording Taxes consist of two separate taxes on mortgages recorded in the twelve-county region: MRT-1 is a tax on all mortgages, while MRT-2 is also imposed on residential real estate structures containing up to six dwelling units._
+[p005_c0007] _7 New York City Urban Taxes are imposed on commercial property and apartment building transactions within New York City. The MRT component is imposed on mortgages exceeding $500,000, and the Real Property Transfer Tax component is imposed on transfers exceeding $500,000._
+[p005_c0008] _8 The Real Property Transfer Tax Surcharge (the "Mansion Tax") is a supplemental transfer tax, on the sale of residential properties valued at $2 million or more in New York City; the supplemental tax rate increases as the property valuation increases._
+[p005_c0009] _9 Internet Marketplace Sales Tax receipts are captured through the elimination of the tax loophole that previously exempted third-party internet marketplace providers from collecting and remitting applicable New York State and New York City sales taxes on transactions conducted on their sites._
+
+## Page 6
+
+### [p006_c0001] Real Estate Transaction Taxes Receipts ($ in millions)
+### [p006_c0002] Adopted Budget vs. Actual Receipts
+[p006_c0003]
+
+```text
+2023 Adopted Budget 2023 Jan-23 Feb-23 Mar-23 Apr-23 May-23 Jun-23 Jul-23 Aug-23 Sep-23 Oct-23 Nov-23 Dec-23 YTD Apr MRT-1 $400.3 $33.4 $33.4 $33.4 $33.4 $33.4 $33.4 $33.4 $33.4 $33.4 $33.4 $33.4 $33.4 $133.4 MRT-2 232.7 19.4 19.4 19.4 19.4 19.4 19.4 19.4 19.4 19.4 19.4 19.4 19.4 77.6 Total MRT 633.0 52.7 52.7 52.7 52.7 52.7 52.7 52.7 52.7 52.7 52.7 52.7 52.7 211.0 RPTT $316.7 $26.4 $26.4 $26.4 $26.4 $26.4 $26.4 $26.4 $26.4 $26.4 $26.4 $26.4 $26.4 $105.6 MRT 183.4 15.3 15.3 15.3 15.3 15.3 15.3 15.3 15.3 15.3 15.3 15.3 15.3 61.1 Total Urban Tax - NYCT 90% share $500.1 $41.7 $41.7 $41.7 $41.7 $41.7 $41.7 $41.7 $41.7 $41.7 $41.7 $41.7 $41.7 $166.7 Total Real Estate Taxes $1,133.0 $94.4 $94.4 $94.4 $94.4 $94.4 $94.4 $94.4 $94.4 $94.4 $94.4 $94.4 $94.4 $377.7
+```
+[p006_c0004]
+
+```text
+2023 Monthly Actuals Jan-23 Feb-23 Mar-23 Apr-23 May-23 Jun-23 Jul-23 Aug-23 Sep-23 Oct-23 Nov-23 Dec-23 YTD Apr MRT-1 $26.6 $23.0 $19.0 $20.3 $88.9 MRT-2 10.7 10.4 9.1 9.5 39.7 Total MRT $37.3 $33.4 $28.1 $29.8 $128.6 RPTT $20.1 $12.7 $10.3 $9.3 $52.3 MRT 26.8 18.5 24.6 22.4 92.3 Total Urban Tax - NYCT 90% share $46.8 $31.3 $34.8 $31.7 $144.6 Total Real Estate Taxes $84.1 $64.7 $63.0 $61.5 $273.3
+```
+[p006_c0005]
+
+```text
+Variances Jan-23 Feb-23 Mar-23 Apr-23 May-23 Jun-23 Jul-23 Aug-23 Sep-23 Oct-23 Nov-23 Dec-23 YTD Apr MRT-1 ($6.8) ($10.3) ($14.4) ($13.1) ($44.6) MRT-2 (8.7) (9.0) (10.3) (9.9) (37.8) Total MRT ($15.5) ($19.3) ($24.6) ($22.9) ($82.4) RPTT ($6.3) ($13.7) ($16.1) ($17.1) ($53.2) MRT 11.5 3.3 9.3 7.1 31.2 Total Urban Tax - NYCT 90% share $5.2 ($10.4) ($6.8) ($10.0) ($22.0) Total Real Estate Taxes ($10.3) ($29.8) ($31.4) ($32.9) ($104.4) MRT-1 -20.4% -31.0% -43.1% -39.1% -33.4% MRT-2 -44.8% -46.4% -52.9% -50.8% -48.8% Total MRT -29.4% -36.7% -46.7% -43.4% -39.0% RPTT -24.0% -51.8% -61.0% -64.9% -50.4% MRT 75.4% 21.4% 60.7% 46.7% 51.0% Total Urban Tax - NYCT 90% share 12.4% -25.0% -16.4% -24.0% -13.2% Total Real Estate Taxes -10.9% -31.5% -33.3% -34.8% -27.6%
+```
+
+## Page 7
+
+### [p007_c0001] Real Estate Transaction Taxes Receipts ($ in millions)
+### [p007_c0002] 2023 Receipts vs. 2022 Receipts
+[p007_c0003]
+
+```text
+2022 Monthly Actuals 2022 Act Jan-22 Feb-22 Mar-22 Apr-22 May-22 Jun-22 Jul-22 Aug-22 Sep-22 Oct-22 Nov-22 Dec-22 YTD Apr MRT-1 $438.7 $41.1 $53.1 $34.5 $44.3 $34.7 $35.6 $42.6 $37.2 $39.4 $27.7 $23.4 $25.0 $173.1 MRT-2 209.2 19.8 21.6 19.2 21.7 18.4 17.3 19.7 18.0 19.2 11.6 11.5 11.2 82.2 Total MRT $648.0 $60.9 $74.7 $53.7 $66.0 $53.1 $52.9 $62.3 $55.2 $58.6 $39.3 $34.9 $36.2 $255.3 RPTT $472.5 $96.1 $47.2 $44.7 $49.1 $26.6 $36.7 $47.8 $36.5 $22.9 $27.3 $22.4 $15.4 $237.1 MRT 257.0 23.6 40.0 14.2 24.5 17.4 19.4 23.3 21.5 22.2 19.5 12.8 18.5 102.2 Total Urban Tax - NYCT 90% share $729.5 $119.6 $87.2 $58.9 $73.6 $44.0 $56.1 $71.1 $58.0 $45.1 $46.8 $35.2 $33.9 $339.3 Total Real Estate Taxes $1,377.4 $180.5 $162.0 $112.6 $139.5 $97.2 $109.0 $133.4 $113.2 $103.7 $86.1 $70.1 $70.1 $594.6
+```
+[p007_c0004]
+
+```text
+2023 Monthly Actuals Jan-23 Feb-23 Mar-23 Apr-23 May-23 Jun-23 Jul-23 Aug-23 Sep-23 Oct-23 Nov-23 Dec-23 YTD Apr MRT-1 $26.6 $23.0 $19.0 $20.3 $88.9 MRT-2 10.7 10.4 9.1 9.5 39.7 Total MRT $37.3 $33.4 $28.1 $29.8 $128.6 RPTT $20.1 $12.7 $10.3 $9.3 $52.3 MRT 26.8 18.5 24.6 22.4 92.3 Total Urban Tax - NYCT 90% share $46.8 $31.3 $34.8 $31.7 $144.6 Total Real Estate Taxes $84.1 $64.7 $63.0 $61.5 $273.3
+```
+[p007_c0005]
+
+```text
+Variances Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec YTD Apr MRT-1 ($14.6) ($30.1) ($15.5) ($24.0) ($84.2) MRT-2 (9.1) (11.2) (10.1) (12.1) (42.5) Total MRT ($23.6) ($41.3) ($25.6) ($36.1) ($126.7) RPTT ($76.0) ($34.5) ($34.4) ($39.8) ($184.8) MRT 3.2 (21.4) 10.3 (2.1) (9.9) Total Urban Tax - NYCT 90% share ($72.8) ($56.0) ($24.1) ($41.9) ($194.7) Total Real Estate Taxes ($96.4) ($97.3) ($49.6) ($78.0) ($321.3) MRT-1 -35.4% -56.7% -45.0% -54.2% -48.6% MRT-2 -45.9% -51.9% -52.4% -56.0% -51.7% Total MRT -38.8% -55.3% -47.6% -54.8% -49.6% RPTT -79.1% -73.1% -77.0% -81.1% -77.9% MRT 13.7% -53.6% 72.8% -8.4% -9.7% Total Urban Tax - NYCT 90% share -60.8% -64.2% -40.8% -56.9% -57.4% Total Real Estate Taxes -53.4% -60.1% -44.1% -55.9% -54.0%
+```
+
+## Page 8
+
+### [p008_c0001] BUDGETWATCH Regional Economy Report
+### [p008_c0002] New York City Employment
+### [p008_c0003] Year-over-Year Changes:
+### [p008_c0004] Increases
+- [p008_c0005] · Construction, Mining, Natural Resources · Education & Health Services · Financial Activities · Government · Leisure & Hospitality · Manufacturing · Other Service · Professional & Business Services · Trade
+### [p008_c0006] Decreases
+- [p008_c0007] · Information · Transportation, Utilities
+[p008_c0008]
+
+```text
+New York City Employment (in thousands) Feb-23 versus Prelim Feb-23 Revised Jan-23 Feb-22 Jan-23 Feb-22 Net Pct Net Pct Total Employment 4,619.4 4,575.1 4,433.1 44.3 1.0% 186.3 4.2% Goods Producing 201.9 197.7 195.3 4.2 2.1% 6.6 3.4% Construction, Mining, Nat Res 145.2 141.6 138.6 3.6 2.5% 6.6 4.8% Manufacturing 56.7 56.1 56.7 0.6 1.1% 0.0 0.0% Service Providing 4,417.5 4,377.4 4,237.8 40.1 0.9% 179.7 4.2% Transportation, Utilities 143.6 147.4 147.8 (3.8) -2.6% (4.2) -2.8% Trade 431.3 434.4 428.2 (3.1) -0.7% 3.1 0.7% Information 229.7 223.3 230.9 6.4 2.9% (1.2) -0.5% Financial Activities 491.3 490.7 473.3 0.6 0.1% 18.0 3.8% Professional & Business Svcs 783.5 775.5 756.5 8.0 1.0% 27.0 3.6% Education & Health Svcs 1,166.2 1,144.2 1,099.3 22.0 1.9% 66.9 6.1% Leisure & Hospitality 416.8 409.1 360.8 7.7 1.9% 56.0 15.5% Other Services 184.1 181.8 174.3 2.3 1.3% 9.8 5.6% Government 571.0 571.0 566.7 0.0 0.0% 4.3 0.8%
+```
+[p008_c0009] Preliminary February 2023 employment in New York City marks the 23 rd consecutive month of employment recovery, compared with one year earlier, since the COVID pandemic began, with an increase of 186,300 jobs (4.2%) when compared to last February's employment level. Increases occurred in all sectors except for Transportation, Utilities and Information. Sectors experiencing the greatest increases were Education & Health Services, up 66,900 jobs (6.1%), Leisure & Hospitality, up 56,000 jobs (15.5%), and Professional & Business Services, up 27,000 jobs (3.6%). February, however, remains below pre-pandemic employment, down 55,600 jobs (1.2%) when compared with February 2020.
+[p008_c0010] Employment in New York City's service-providing sectors increased by 179,700 jobs (4.2%) over the February 2022 level, and service-providing employment excluding the Government sector increased by 175,400 jobs (4.8%).
+
+## Page 9
+
+### [p009_c0001] BUDGETWATCH Regional Economy Report
+> [p009_c0002] New York City Employment 12-month Percent Change This line chart tracks the 12-month percent change in New York City employment from January 2017 to January 2023. The y-axis ranges from -25.0% to 15.0% in 5% increments. Three data series are plotted: 'Total' (solid black line), 'Service Providing' (dashed red line), and 'Private Sector Service Providing' (dashed green line). All three series remain relatively flat near 0% until April 2020, when they all drop sharply to between -18% and -20%. They then recover, peaking at approximately 12% in April 2021, before gradually declining to around 5% by January 2023. Month Total (%) Service Providing (%) Private Sector Service Providing (%) Jan-17 2.0 2.0 2.0 Apr-17 1.5 1.5 1.5 Jul-17 2.5 2.5 2.5 Oct-17 2.0 2.0 2.0 Jan-18 2.0 2.0 2.0 Apr-18 2.5 2.5 2.5 Jul-18 2.0 2.0 2.0 Oct-18 2.5 2.5 2.5 Jan-19 2.5 2.5 2.5 Apr-19 3.0 3.0 3.0 Jul-19 2.5 2.5 2.5 Oct-19 2.0 2.0 2.0 Jan-20 2.0 2.0 2.0 Apr-20 -18.0 -18.0 -18.0 Jul-20 -15.0 -15.0 -15.0 Oct-20 -12.0 -12.0 -12.0 Jan-21 -13.0 -13.0 -13.0 Apr-21 12.0 12.0 12.0 Jul-21 10.0 10.0 10.0 Oct-21 6.0 6.0 6.0 Jan-22 7.0 7.0 7.0 Apr-22 9.0 9.0 9.0 Jul-22 8.0 8.0 8.0 Oct-22 5.0 5.0 5.0 Jan-23 5.0 5.0 5.0
+> [p009_c0003] New York City Employment (in thousands) This line chart displays monthly employment in thousands for New York City from January to December for the years 2020, 2021, 2022, and 2023. The y-axis ranges from 3,700 to 4,800 in increments of 100. The 2020 series (dashed red line with circles) shows a sharp decline from approximately 4,650 in March to 3,750 in April, followed by a steady recovery to about 4,180 by December. The 2021 series (dotted black line with squares) starts at 4,050 in January, peaks at 4,300 in July, and ends at 4,480 in December. The 2022 series (solid blue line with circles) shows a steady upward trend from 4,350 in January to 4,700 in December. The 2023 series (dashed green line with triangles) is only partially visible, showing data for January and February at approximately 4,580 and 4,620 respectively. Month 2020 2021 2022 2023 Jan 4,650 4,050 4,350 4,580 Feb 4,680 4,080 4,420 4,620 Mar 4,650 4,130 4,480 Apr 3,750 4,170 4,500 May 3,800 4,190 4,520 Jun 3,880 4,220 4,550 Jul 3,920 4,300 4,630 Aug 3,980 4,300 4,630 Sep 4,050 4,280 4,560 Oct 4,150 4,400 4,630 Nov 4,180 4,450 4,670 Dec 4,180 4,480 4,700
+
+## Page 10
+
+### [p010_c0001] BUDGETWATCH Regional Economy Report
+[p010_c0002] In February 2023, seasonally adjusted New York City employment of 4.670 million was higher than in February 2022 by 203.8 jobs (4.6%), although it remains 43,300 jobs (0.69%) below the pre-pandemic February 2020 level. February seasonally adjusted employment was 12,400 jobs above last month, a 0.3% increase, and has increased in thirty-two of the thirty-four months since employment bottomed in April 2020; declines occurred in September and October 2022, when it declined 0.5% over those two months, a reduction of 21,800 jobs.
+> [p010_c0003] Seasonally Adjusted New York City Employment (in thousands) Month Employment (thousands) Jan-17 4,440 Apr-17 4,445 Jul-17 4,455 Oct-17 4,460 Jan-18 4,465 Apr-18 4,470 Jul-18 4,475 Oct-18 4,480 Jan-19 4,490 Apr-19 4,500 Jul-19 4,510 Oct-19 4,515 Jan-20 4,520 Apr-20 4,670 Jul-20 3,750 Oct-20 4,080 Jan-21 4,090 Apr-21 4,100 Jul-21 4,250 Oct-21 4,350 Jan-22 4,400 Apr-22 4,450 Jul-22 4,500 Oct-22 4,490 Jan-23 4,670
+### [p010_c0004] Ridership and Employment
+[p010_c0005] From January 2011 through February 2020, the twelve-month employment average increased 24.1%, while the 12-month MTA-wide ridership average fell 0.7%. The COVID pandemic has altered these trajectories: compared with January 2017, January employment is 4.7% higher, while MTA-wide ridership is 41.0% lower.
+> [p010_c0006] MTA-Wide Ridership vs. New York City Employment 12-Month Averages Month Ridership (%) Employment (%) Jan-17 0% 0% Apr-17 0% 0% Jul-17 0% 0% Oct-17 0% 0% Jan-18 0% 0% Apr-18 0% 0% Jul-18 0% 0% Oct-18 0% 0% Jan-19 0% 0% Apr-19 0% 0% Jul-19 0% 0% Oct-19 0% 0% Jan-20 0% 0% Apr-20 -10% 5% Jul-20 -35% 0% Oct-20 -55% -5% Jan-21 -70% -10% Apr-21 -75% -10% Jul-21 -65% -5% Oct-21 -55% 0% Jan-22 -50% 0% Apr-22 -45% 0% Jul-22 -40% 0% Oct-22 -42% 0% Jan-23 -40% 5%
+
+## Page 11
+
+### [p011_c0001] BUDGETWATCH Regional Economy Report
+[p011_c0002] The following ridership and vehicular traffic trend graphs depict 12-month averages; for example, the January 2017 data point is the average of February 2016 to January 2017, and the February 2017 data point is the average of March 2016 to February 2017, providing a visual representation of trends over time. Further, data have been standardized to 1.0, allowing for an easier comparison of trends over time.
+> [p011_c0003] 12 Month Average Ridership - Subway This line graph tracks the 12-month average ridership for the subway system from January 2017 to January 2023. The y-axis represents a standardized index from 0.10 to 1.20. Three data series are plotted: Weekday (solid blue line), Saturday (dotted red line), and Sunday (dashed yellow line). All three series start at 1.0 in January 2017. They remain relatively stable until April 2020, when a sharp decline begins. By April 2021, ridership reaches its lowest point, around 0.25 for weekdays and 0.30 for weekends. From April 2021 to January 2023, ridership shows a steady recovery, with Sunday reaching approximately 0.68 and Weekdays reaching approximately 0.58. Month Weekday Saturday Sunday Jan-17 1.00 1.00 1.00 Apr-17 1.00 1.00 1.00 Jul-17 1.00 1.00 1.00 Oct-17 1.00 1.00 1.00 Jan-18 0.98 0.98 0.98 Apr-18 0.97 0.97 0.97 Jul-18 0.96 0.96 0.96 Oct-18 0.95 0.95 0.95 Jan-19 0.94 0.94 0.94 Apr-19 0.93 0.93 0.93 Jul-19 0.93 0.93 0.93 Oct-19 0.94 0.94 0.94 Jan-20 0.95 0.95 0.95 Apr-20 0.90 0.90 0.90 Jul-20 0.65 0.65 0.65 Oct-20 0.45 0.45 0.45 Jan-21 0.25 0.28 0.25 Apr-21 0.25 0.30 0.25 Jul-21 0.35 0.40 0.35 Oct-21 0.40 0.45 0.40 Jan-22 0.45 0.50 0.45 Apr-22 0.50 0.55 0.50 Jul-22 0.55 0.60 0.55 Oct-22 0.58 0.62 0.58 Jan-23 0.58 0.65 0.68
+> [p011_c0004] 12 Month Average Weekday Ridership by Time of Day - Subway This line graph displays the 12-month average weekday ridership for the subway system, broken down by time of day from January 2017 to January 2023. The y-axis is a standardized index from 0.10 to 1.20. Five time intervals are shown: 12 AM - 6 AM (solid green line), 6 AM - 9 AM (dotted orange line), 9 AM - 4 PM (solid grey line), 4 PM - 7 PM (dashed yellow line), and 7 PM - 12 AM (solid blue line). All intervals start at 1.0 in January 2017. They remain relatively stable until April 2020, when a sharp decline begins. By April 2021, ridership reaches its lowest point, with the 12 AM - 6 AM interval dropping to approximately 0.35 and the 7 PM - 12 AM interval dropping to approximately 0.18. From April 2021 to January 2023, ridership shows a steady recovery, with the 12 AM - 6 AM interval reaching approximately 0.65 and the 7 PM - 12 AM interval reaching approximately 0.50. Month 12 AM - 6 AM 6 AM - 9 AM 9 AM - 4 PM 4 PM - 7 PM 7 PM - 12 AM Jan-17 1.00 1.00 1.00 1.00 1.00 Apr-17 1.00 1.00 1.00 1.00 1.00 Jul-17 1.00 1.00 1.00 1.00 1.00 Oct-17 1.00 1.00 1.00 1.00 1.00 Jan-18 0.98 0.98 0.98 0.98 0.98 Apr-18 0.97 0.97 0.97 0.97 0.97 Jul-18 0.96 0.96 0.96 0.96 0.96 Oct-18 0.95 0.95 0.95 0.95 0.95 Jan-19 0.94 0.94 0.94 0.94 0.94 Apr-19 0.93 0.93 0.93 0.93 0.93 Jul-19 0.93 0.93 0.93 0.93 0.93 Oct-19 0.94 0.94 0.94 0.94 0.94 Jan-20 0.95 0.95 0.95 0.95 0.95 Apr-20 0.90 0.90 0.90 0.90 0.90 Jul-20 0.65 0.65 0.65 0.65 0.65 Oct-20 0.45 0.45 0.45 0.45 0.45 Jan-21 0.35 0.25 0.28 0.25 0.18 Apr-21 0.35 0.25 0.28 0.25 0.18 Jul-21 0.45 0.35 0.35 0.35 0.25 Oct-21 0.50 0.40 0.40 0.40 0.30 Jan-22 0.55 0.45 0.45 0.45 0.35 Apr-22 0.58 0.50 0.50 0.50 0.40 Jul-22 0.60 0.55 0.55 0.55 0.45 Oct-22 0.62 0.58 0.58 0.58 0.48 Jan-23 0.65 0.60 0.60 0.60 0.50
+
+## Page 12
+
+### [p012_c0001] BUDGETWATCH Regional Economy Report
+> [p012_c0002] 12 Month Average Ridership - NYCT Bus This line chart tracks the 12-month average bus ridership for the NYCT from January 2017 to January 2023. The Y-axis represents a normalized ridership index from 0.10 to 1.20. The X-axis shows time in 7-month intervals. Three data series are plotted: Weekday (solid blue line), Saturday (dotted red line), and Sunday (dashed yellow line). All three series follow a very similar trajectory, starting at 1.00 in Jan-17, gradually declining to about 0.85 by Jan-20, then experiencing a sharp drop to a low of approximately 0.25 in April 2021. Following this, ridership recovers to about 0.55 by Jan-23. Month Weekday Saturday Sunday Jan-17 1.00 1.00 1.00 Jan-18 0.95 0.95 0.95 Jan-19 0.90 0.90 0.90 Jan-20 0.85 0.85 0.85 Jan-21 0.25 0.25 0.25 Jan-22 0.50 0.50 0.50 Jan-23 0.55 0.55 0.55
+> [p012_c0003] 12 Month Average Ridership by Time of Day - NYCT Bus This line chart displays the 12-month average bus ridership broken down by time of day for the NYCT from January 2017 to January 2023. The Y-axis is a normalized index from 0.10 to 1.20. The X-axis shows time in 7-month intervals. Five data series are plotted: 12 AM - 6 AM (solid green), 6 AM - 9 AM (dotted orange), 9 AM - 4 PM (solid grey), 4 PM - 7 PM (dashed yellow), and 7 PM - 12 AM (solid blue). All series show a similar trend, with a sharp decline in early 2020. The 12 AM - 6 AM period consistently has the highest ridership, while the 7 PM - 12 AM period has the lowest. By Jan-23, the 12 AM - 6 AM period has recovered to about 0.60, while the 7 PM - 12 AM period has recovered to about 0.45. Month 12 AM - 6 AM 6 AM - 9 AM 9 AM - 4 PM 4 PM - 7 PM 7 PM - 12 AM Jan-17 1.00 1.00 1.00 1.00 1.00 Jan-18 0.95 0.95 0.95 0.95 0.95 Jan-19 0.90 0.90 0.90 0.90 0.90 Jan-20 0.85 0.85 0.85 0.85 0.85 Jan-21 0.35 0.35 0.35 0.35 0.35 Jan-22 0.55 0.55 0.55 0.55 0.55 Jan-23 0.60 0.60 0.60 0.60 0.45
+
+## Page 13
+
+### [p013_c0001] BUDGETWATCH Regional Economy Report
+> [p013_c0002] 12 Month Average Ridership - MTA Bus This line chart tracks the 12-month average ridership for MTA buses from January 2017 to January 2023. The y-axis represents a normalized ridership index from 0.10 to 1.20. Three data series are shown: Weekday (solid blue line), Saturday (dotted red line), and Sunday (dashed yellow line). All series start at 1.00 in Jan-17. They remain relatively stable until Jan-20, when a sharp decline occurs, reaching a low of approximately 0.28 in Apr-21. Following this, ridership recovers, reaching about 0.65 by Jan-23. Saturday and Sunday ridership are consistently higher than weekday ridership during the recovery period. Month Weekday Saturday Sunday Jan-17 1.00 1.00 1.00 Jan-18 0.98 0.98 0.98 Jan-19 0.98 0.98 0.98 Jan-20 0.95 0.98 0.95 Jan-21 0.28 0.32 0.30 Jan-22 0.55 0.62 0.58 Jan-23 0.65 0.68 0.65
+> [p013_c0003] 12 Month Average Ridership by Time of Day - MTABus This line chart displays the 12-month average ridership for MTA buses, broken down by five time intervals: 12 AM - 6 AM (solid green line), 6 AM - 9 AM (dotted orange line), 9 AM - 4 PM (solid grey line), 4 PM - 7 PM (dashed yellow line), and 7 PM - 12 AM (solid blue line). The y-axis is a normalized index from 0.10 to 1.20. All intervals start at 1.00 in Jan-17. A significant dip occurs in Apr-21, with the 7 PM - 12 AM interval dropping to its lowest point of approximately 0.22. The 12 AM - 6 AM interval shows the highest ridership during the recovery phase, peaking at about 0.78 in Jan-23. The 9 AM - 4 PM interval shows a steady increase from 0.95 in Jan-20 to 0.70 in Jan-23. Month 12 AM - 6 AM 6 AM - 9 AM 9 AM - 4 PM 4 PM - 7 PM 7 PM - 12 AM Jan-17 1.00 1.00 1.00 1.00 1.00 Jan-18 1.00 0.98 0.98 0.98 0.98 Jan-19 1.00 0.98 0.98 0.98 0.98 Jan-20 1.08 0.95 0.95 0.95 0.90 Jan-21 0.40 0.28 0.32 0.30 0.22 Jan-22 0.65 0.50 0.60 0.55 0.45 Jan-23 0.78 0.68 0.70 0.65 0.55
+
+## Page 14
+
+### [p014_c0001] BUDGETWATCH Regional Economy Report
+> [p014_c0002] 12 Month Average Ridership - Long Island Rail Road This line chart tracks the 12-month average ridership for the Long Island Rail Road from January 2017 to January 2023. The Y-axis represents ridership as a ratio from 0.10 to 1.20. The X-axis shows time in quarterly intervals. Three data series are plotted: Weekday (solid blue line), Saturday (dotted red line), and Sunday (dashed yellow line). All three series start at 1.00 in Jan-17. They remain relatively stable until April 2020, when a sharp decline begins. By April 2021, ridership reaches its lowest point, with Weekday at approximately 0.20, Saturday at 0.30, and Sunday at 0.30. From April 2021, ridership begins to recover. By Jan-23, Weekday ridership is at 0.60, Saturday is at 0.65, and Sunday is at 0.60. Month Weekday Saturday Sunday Jan-17 1.00 1.00 1.00 Apr-17 1.00 1.00 1.00 Jul-17 1.00 1.00 1.00 Oct-17 1.00 1.00 1.00 Jan-18 1.00 1.00 1.00 Apr-18 1.00 1.00 1.00 Jul-18 1.00 1.00 1.00 Oct-18 1.00 1.00 1.00 Jan-19 1.00 1.00 1.00 Apr-19 1.00 1.00 1.00 Jul-19 1.00 1.00 1.00 Oct-19 1.00 1.00 1.00 Jan-20 1.00 1.00 1.00 Apr-20 0.90 0.90 0.90 Jul-20 0.65 0.65 0.65 Oct-20 0.45 0.45 0.45 Jan-21 0.20 0.30 0.30 Apr-21 0.20 0.30 0.30 Jul-21 0.25 0.35 0.35 Oct-21 0.30 0.45 0.45 Jan-22 0.35 0.60 0.60 Apr-22 0.40 0.70 0.70 Jul-22 0.45 0.70 0.70 Oct-22 0.50 0.65 0.65 Jan-23 0.60 0.65 0.60
+> [p014_c0003] 12 Month Average Ridership - Metro-North Railroad This line chart tracks the 12-month average ridership for the Metro-North Railroad from January 2017 to January 2023. The Y-axis represents ridership as a ratio from 0.10 to 1.20. The X-axis shows time in quarterly intervals. Three data series are plotted: Weekday (solid blue line), Saturday (dotted red line), and Sunday (dashed yellow line). All three series start at 1.00 in Jan-17. They remain relatively stable until April 2020, when a sharp decline begins. By April 2021, ridership reaches its lowest point, with Weekday at approximately 0.15, Saturday at 0.25, and Sunday at 0.25. From April 2021, ridership begins to recover. By Jan-23, Weekday ridership is at 0.55, Saturday is at 0.75, and Sunday is at 0.80. Month Weekday Saturday Sunday Jan-17 1.00 1.00 1.00 Apr-17 1.00 1.00 1.00 Jul-17 1.00 1.00 1.00 Oct-17 1.00 1.00 1.00 Jan-18 1.00 1.00 1.00 Apr-18 1.00 1.00 1.00 Jul-18 1.00 1.00 1.00 Oct-18 1.00 1.00 1.00 Jan-19 1.00 1.00 1.00 Apr-19 1.00 1.00 1.00 Jul-19 1.00 1.00 1.00 Oct-19 1.00 1.00 1.00 Jan-20 1.00 1.00 1.00 Apr-20 0.90 0.90 0.90 Jul-20 0.65 0.65 0.65 Oct-20 0.45 0.45 0.45 Jan-21 0.20 0.25 0.25 Apr-21 0.15 0.25 0.25 Jul-21 0.20 0.35 0.35 Oct-21 0.25 0.45 0.45 Jan-22 0.30 0.55 0.55 Apr-22 0.35 0.65 0.65 Jul-22 0.45 0.70 0.70 Oct-22 0.50 0.70 0.75 Jan-23 0.55 0.75 0.80
+
+## Page 15
+
+### [p015_c0001] BUDGETWATCH Regional Economy Report
+> [p015_c0002] 12 Month Average Ridership - Staten Island Railway This line chart tracks the 12-month average ridership for the Staten Island Railway from January 2017 to January 2023. The y-axis represents a normalized index from 0.10 to 1.20. Three data series are shown: Weekday (solid blue line), Saturday (dotted red line), and Sunday (dashed yellow line). All series start at 1.00 in Jan-17. Ridership remains relatively stable until late 2018, when it peaks at approximately 1.10. Following this peak, there is a sharp decline. By April 2020, ridership has dropped to around 0.70. It reaches its lowest point in early 2021, around 0.15-0.20. From there, it shows a steady recovery, reaching approximately 0.45 by January 2023. Month Weekday Saturday Sunday Jan-17 1.00 1.00 1.00 Apr-17 1.00 1.00 1.00 Jul-17 1.00 1.00 1.00 Oct-17 1.00 1.00 1.00 Jan-18 1.00 1.00 1.00 Apr-18 1.00 1.00 1.00 Jul-18 1.00 1.00 1.00 Oct-18 1.00 1.00 1.00 Jan-19 1.00 1.00 1.00 Apr-19 1.00 1.00 1.00 Jul-19 1.00 1.00 1.00 Oct-19 1.00 1.00 1.00 Jan-20 1.00 1.00 1.00 Apr-20 0.70 0.70 0.70 Jul-20 0.50 0.50 0.50 Oct-20 0.30 0.30 0.30 Jan-21 0.20 0.20 0.20 Apr-21 0.25 0.25 0.25 Jul-21 0.30 0.30 0.30 Oct-21 0.35 0.35 0.35 Jan-22 0.40 0.40 0.40 Apr-22 0.45 0.45 0.45 Jul-22 0.45 0.45 0.45 Oct-22 0.45 0.45 0.45 Jan-23 0.45 0.45 0.45
+> [p015_c0003] 12 Month Average Traffic - Bridges & Tunnels This line chart tracks the 12-month average traffic for Bridges & Tunnels from January 2017 to January 2023. The y-axis represents a normalized index from 0.70 to 1.20. Two data series are shown: Weekday (solid blue line) and Weekend (dashed yellow line). Both series start at 1.00 in Jan-17. Traffic remains relatively stable until late 2020, when it peaks at approximately 1.10. Following this peak, there is a sharp decline. By April 2021, traffic has dropped to around 0.80. It reaches its lowest point in early 2021, around 0.75. From there, it shows a steady recovery, reaching approximately 1.10 by January 2023. Month Weekday Weekend Jan-17 1.00 1.00 Apr-17 1.00 1.00 Jul-17 1.00 1.00 Oct-17 1.00 1.00 Jan-18 1.00 1.00 Apr-18 1.00 1.00 Jul-18 1.00 1.00 Oct-18 1.00 1.00 Jan-19 1.00 1.00 Apr-19 1.00 1.00 Jul-19 1.00 1.00 Oct-19 1.00 1.00 Jan-20 1.00 1.00 Apr-20 0.90 0.90 Jul-20 0.85 0.85 Oct-20 0.80 0.80 Jan-21 0.80 0.75 Apr-21 0.90 0.90 Jul-21 0.95 0.95 Oct-21 1.00 1.00 Jan-22 1.00 1.00 Apr-22 1.05 1.05 Jul-22 1.05 1.05 Oct-22 1.05 1.05 Jan-23 1.05 1.10
+
+## Page 16
+
+### [p016_c0001] BUDGETWATCH Regional Economy Report
+### [p016_c0002] Consumer Price Index
+### [p016_c0003] Month-over-Month Changes:
+### [p016_c0004] Increases
+- [p016_c0005] · Food · Apparel
+### [p016_c0006] Decreases
+- [p016_c0007] · Electric · Gasoline · Medical Care · Transportation
+[p016_c0008]
+
+```text
+Mar-23 Feb-23 Mar-22 Mar-23 versus Feb-23 Mar-22 Net Pct Net Pct Regional CPI-U 319.04 319.30 305.02 (0.26) -0.1% 14.01 4.6% Medical Care Component 569.59 571.74 555.77 (2.15) -0.4% 13.82 2.5% Electricity Component 197.96 210.70 200.12 (12.75) -6.1% (2.17) -1.1% Gasoline (all grades) Component 266.34 271.99 334.60 (5.65) -2.1% (68.26) -20.4% National CPI-U 301.84 300.84 287.50 1.00 0.3% 14.33 5.0%
+```
+> [p016_c0009] Regional Inflation Trend: CPI-U, Gasoline Component, Electricity Component Estimated Data Points from Chart Month CPI-U NY Gasoline (All Types) Electricity Jan-17 100.0 100.0 100.0 Jul-17 100.0 100.0 100.0 Jan-18 100.0 100.0 100.0 Jul-18 100.0 120.0 100.0 Jan-19 100.0 100.0 100.0 Jul-19 100.0 110.0 100.0 Jan-20 100.0 100.0 100.0 Jul-20 100.0 90.0 100.0 Jan-21 100.0 100.0 100.0 Jul-21 100.0 120.0 100.0 Jan-22 100.0 130.0 100.0 Jul-22 110.0 190.0 110.0 Jan-23 110.0 140.0 110.0
+
+## Page 17
+
+### [p017_c0001] BUDGETWATCH Regional Economy Report
+### [p017_c0002] Fuel Prices
+[p017_c0003]
+
+```text
+Fuel - Spot Prices NY Harbor, except Crude Oil (WTI) Latest Price: 4/10/23 Mar-23 Feb-23 Mar-22 Mar-23 versus Feb-23 Mar-22 Crude Oil ($/bbl) 79.79 73.28 76.83 108.50 -4.6% -32.5% Conventional Regular Gasoline ($/gal) 2.89 2.52 2.53 3.18 -0.7% -21.0% Low Sulfur No.2 Diesel Fuel ($/gal) 2.72 2.75 2.83 3.78 -3.0% -27.3% No.2 Heating Oil ($/gal) 2.55 2.57 2.65 3.64 -2.8% -29.3%
+```
+> [p017_c0004] Change in Spot Fuel Prices Estimated Data Points from Chart Date Crude Oil (WTI) ($/bbl) No.2 Diesel Low Sulfur (NY Harbor) ($/gal) Jan-17 100.0 100.0 Mar-17 100.0 100.0 May-17 95.0 95.0 Jul-17 90.0 90.0 Sep-17 100.0 100.0 Nov-17 110.0 110.0 Jan-18 120.0 120.0 Mar-18 125.0 125.0 May-18 130.0 130.0 Jul-18 130.0 130.0 Sep-18 130.0 130.0 Nov-18 140.0 140.0 Jan-19 110.0 110.0 Mar-19 120.0 120.0 May-19 125.0 125.0 Jul-19 110.0 110.0 Sep-19 110.0 110.0 Nov-19 110.0 110.0 Jan-20 120.0 120.0 Mar-20 100.0 100.0 May-20 40.0 40.0 Jul-20 75.0 75.0 Sep-20 80.0 80.0 Nov-20 80.0 80.0 Jan-21 100.0 100.0 Mar-21 110.0 110.0 May-21 120.0 120.0 Jul-21 130.0 130.0 Sep-21 130.0 130.0 Nov-21 150.0 150.0 Jan-22 140.0 140.0 Mar-22 180.0 180.0 May-22 200.0 280.0 Jul-22 220.0 250.0 Sep-22 180.0 220.0 Nov-22 160.0 260.0 Jan-23 150.0 200.0 Mar-23 140.0 160.0
+
+## Page 18
+
+### [p018_c0001] BUDGETWATCH Regional Economy Report
+[p018_c0002]
+
+```text
+Nassau, Suffolk Employment (in thousands) Feb-23 versus Prelim Feb-23 Revised Jan-23 Feb-22 Jan-23 Feb-22 Net Percent Net Percent Total Employment 1,313.6 1,306.2 1,286.0 7.4 0.6% 27.6 2.1% Goods Producing 149.0 148.7 144.7 0.3 0.2% 4.3 3.0% Construction, Mining, Nat Res 78.8 78.9 75.2 (0.1) -0.1% 3.6 4.8% Manufacturing 70.2 69.8 69.5 0.4 0.6% 0.7 1.0% Service Providing 1,164.6 1,157.5 1,141.3 7.1 0.6% 23.3 2.0% Transportation, Utilities 44.6 44.7 44.1 (0.1) -0.2% 0.5 1.1% Trade 204.5 205.8 207.8 (1.3) -0.6% (3.3) -1.6% Information 14.4 14.3 14.4 0.1 0.7% 0.0 0.0% Financial Activities 71.3 70.9 70.9 0.4 0.6% 0.4 0.6% Professional & Business Svcs 176.7 175.2 166.8 1.5 0.9% 9.9 5.9% Education & Health Svcs 279.4 275.8 275.0 3.6 1.3% 4.4 1.6% Leisure & Hospitality 120.4 120.3 112.9 0.1 0.1% 7.5 6.6% Other Services 55.3 55.5 54.5 (0.2) -0.4% 0.8 1.5% Government 198.0 195.0 194.9 3.0 1.5% 3.1 1.6%
+```
+[p018_c0003]
+
+```text
+Orange, Rockland, Westchester Employment (in thousands) Feb-23 versus Prelim Feb-23 Revised Jan-23 Feb-22 Jan-23 Feb-22 Net Percent Net Percent Total Employment 707.3 699.9 699.1 7.4 1.1% 8.2 1.2% Goods Producing 72.1 72.1 70.1 0.0 0.0% 2.0 2.9% Construction, Mining, Nat Res 43.5 43.4 41.6 0.1 0.2% 1.9 4.6% Manufacturing 28.6 28.7 28.5 (0.1) -0.3% 0.1 0.4% Service Providing 635.2 627.8 629.0 7.4 1.2% 6.2 1.0% Transportation, Utilities 27.3 27.2 27.1 0.1 0.4% 0.2 0.7% Trade 106.6 108.0 106.3 (1.4) -1.3% 0.3 0.3% Information 10.1 10.0 10.9 0.1 1.0% (0.8) -7.3% Financial Activities 36.8 36.9 36.7 (0.1) -0.3% 0.1 0.3% Professional & Business Svcs 94.2 92.2 93.4 2.0 2.2% 0.8 0.9% Education & Health Svcs 163.5 158.4 159.3 5.1 3.2% 4.2 2.6% Leisure & Hospitality 58.4 58.8 55.6 (0.4) -0.7% 2.8 5.0% Other Services 31.1 30.5 30.6 0.6 2.0% 0.5 1.6% Government 107.2 105.8 109.1 1.4 1.3% (1.9) -1.7%
+```
+[p018_c0004]
+
+```text
+Dutchess, Putnam Employment (in thousands) Feb-23 versus Prelim Feb-23 Revised Jan-23 Feb-22 Jan-23 Feb-22 Net Percent Net Percent Total Employment 138.1 136.2 140.4 1.9 1.4% (2.3) -1.6% Goods Producing 17.0 17.1 16.3 (0.1) -0.6% 0.7 4.3% Construction, Mining, Nat Res 8.9 8.9 8.0 0.0 0.0% 0.9 11.3% Manufacturing 8.1 8.2 8.3 (0.1) -1.2% (0.2) -2.4% Service Providing 121.1 119.1 124.1 2.0 1.7% (3.0) -2.4% Transportation, Utilities 4.1 4.2 4.1 (0.1) -2.4% 0.0 0.0% Trade 19.3 19.5 19.5 (0.2) -1.0% (0.2) -1.0% Information 1.4 1.4 1.6 0.0 0.0% (0.2) -12.5% Financial Activities 5.2 5.2 5.1 0.0 0.0% 0.1 2.0% Professional & Business Svcs 11.9 12.0 12.5 (0.1) -0.8% (0.6) -4.8% Education & Health Svcs 36.2 34.8 37.4 1.4 4.0% (1.2) -3.2% Leisure & Hospitality 12.3 11.9 13.2 0.4 3.4% (0.9) -6.8% Other Services 6.5 6.5 6.3 0.0 0.0% 0.2 3.2% Government 24.2 23.6 24.4 0.6 2.5% (0.2) -0.8%
+```
+
+## Page 19
+
+### [p019_c0001] BUDGETWATCH Regional Economy Report
+> [p019_c0002] Nassau / Suffolk Employment (in thousands) Month 2020 2021 2022 2023 Jan 1,320 1,220 1,280 1,320 Feb 1,325 1,225 1,290 1,325 Mar 1,310 1,235 1,300 Apr 1,040 1,265 1,320 May 1,090 1,275 1,330 Jun 1,155 1,295 1,350 Jul 1,185 1,295 1,345 Aug 1,205 1,290 1,340 Sep 1,225 1,285 1,335 Oct 1,255 1,315 1,345 Nov 1,265 1,320 1,345 Dec 1,265 1,325 1,345
+> [p019_c0003] Orange / Rockland / Westchester Employment (in thousands) Month 2020 2021 2022 2023 Jan 720 660 690 700 Feb 730 660 695 705 Mar 715 670 695 Apr 580 680 700 May 605 685 710 Jun 625 690 725 Jul 640 690 720 Aug 650 690 715 Sep 660 685 710 Oct 680 705 720 Nov 690 710 730 Dec 680 710 730
+> [p019_c0004] Dutchess / Putnam Employment (in thousands) Month 2020 2021 2022 2023 Jan 145 132 136 136 Feb 147 133 140 138 Mar 145 136 141 Apr 121 138 143 May 125 139 143 Jun 128 139 143 Jul 130 138 143 Aug 132 137 142 Sep 135 138 141 Oct 139 142 143 Nov 139 143 142 Dec 138 143 141
+
+## Page 20
+
+### [p020_c0001] Revenue Passengers in February
+[p020_c0002]
+
+```text
+2019 2021 2022 2023 2023 v 2022 2023 v 2019 MTA New York City Transit 168,500,761 57,993,365 94,808,725 110,960,228 17.04% -34.15% MTA New York City Subway 126,359,734 39,170,408 70,027,806 84,353,096 20.46% -33.24% MTA New York City Bus 42,141,027 18,822,957 24,780,919 26,607,132 7.37% -36.86% MTA Staten Island Railway 318,372 77,293 145,316 161,771 11.32% -49.19% MTA Long Island Rail Road 6,544,351 1,586,865 3,180,253 4,296,380 35.10% -34.35% MTA Metro-North Railroad 6,216,047 1,301,932 2,793,315 3,945,780 41.26% -36.52% East of Hudson 6,097,880 1,271,204 2,762,416 3,872,227 40.18% -36.50% Harlem Line 1,993,046 425,370 896,586 1,224,763 36.60% -38.55% Hudson Line 1,223,780 272,080 563,886 777,399 37.86% -36.48% New Haven Line 2,881,054 573,754 1,301,944 1,870,065 43.64% -35.09% West of Hudson 118,167 30,728 30,899 73,553 138.04% -37.76% Port Jervis Line 68,805 20,442 19,487 41,371 112.30% -39.87% Pascack Valley Line 49,362 10,286 11,412 32,182 182.00% -34.80% MTA Bus Company 9,024,999 4,144,587 5,935,627 6,545,034 10.27% -27.48% MTA Bridges & Tunnels 23,532,562 18,255,564 23,453,884 23,934,777 2.05% 1.71% Total All Agencies 190,604,530 65,104,040 106,863,235 125,909,193 17.82% -33.94% (Excludes Bridges & Tunnels) Weekdays: 19 19 19 19 Holidays: 1 1 1 1 Weekend Days: 8 8 8 8 Days 28 28 28 28
+```
+
+## Page 21
+
+### [p021_c0001] Revenue Passengers Year-to-Date Through February
+[p021_c0002]
+
+```text
+2019 2021 2022 2023 2023 v 2022 2023 v 2019 MTA New York City Transit 347,579,523 119,886,028 181,611,507 228,270,800 25.69% -34.33% MTA New York City Subway 260,904,458 80,293,939 133,575,192 173,351,069 29.78% -33.56% MTA New York City Bus 86,675,065 39,592,089 48,036,315 54,919,731 14.33% -36.64% MTA Staten Island Railway 699,972 158,785 282,906 346,113 22.34% -50.55% MTA Long Island Rail Road 13,711,044 3,316,879 5,930,391 8,929,150 50.57% -34.88% MTA Metro-North Railroad 13,060,440 2,688,486 5,158,205 8,420,179 63.24% -35.53% East of Hudson 12,812,324 2,625,361 5,071,599 8,273,909 63.14% -35.42% Harlem Line 4,186,347 872,845 1,662,308 2,610,586 57.05% -37.64% Hudson Line 2,557,295 563,065 1,040,783 1,656,178 59.13% -35.24% New Haven Line 6,068,682 1,189,452 2,368,507 4,007,145 69.18% -33.97% West of Hudson 248,116 63,125 86,606 146,270 68.89% -41.05% Port Jervis Line 144,393 41,857 52,637 78,328 48.81% -45.75% Pascack Valley Line 103,723 21,268 33,969 67,942 100.01% -34.50% MTA Bus Company 18,751,638 8,657,844 11,525,399 13,440,451 16.62% -28.32% MTA Bridges & Tunnels 48,537,248 39,270,280 45,481,269 49,676,506 9.22% 2.35% Total All Agencies 393,802,617 134,708,022 204,508,408 259,406,693 26.84% -34.13% (Excludes Bridges & Tunnels) Weekdays: 40 38 39 40 Holidays: 3 3 2 2 Weekend Days: 16 18 18 17 Days 59 59 59 59
+```
+
+## Page 22
+
+### [p022_c0001] 12 Month Average Revenue Passengers in February
+[p022_c0002]
+
+```text
+2019 2021 2022 2023 2023 v 2022 2023 v 2019 MTA New York City Transit 187,063,854 50,887,588 94,466,316 116,929,342 23.78% -37.49% MTA New York City Subway 139,904,049 37,540,546 67,771,498 87,765,836 29.50% -37.27% MTA New York City Bus 47,159,805 13,347,043 26,694,818 29,163,505 9.25% -38.16% MTA Staten Island Railway 374,292 75,182 132,655 172,696 30.18% -53.86% MTA Long Island Rail Road 7,510,367 1,651,279 3,136,190 4,628,273 47.58% -38.37% MTA Metro-North Railroad 7,217,221 1,390,714 2,765,977 4,342,938 57.01% -39.83% East of Hudson 7,080,383 1,355,656 2,712,360 4,263,480 57.19% -39.78% Harlem Line 2,283,380 453,716 862,151 1,328,332 54.07% -41.83% Hudson Line 1,434,989 295,352 571,905 885,767 54.88% -38.27% New Haven Line 3,362,014 606,588 1,278,304 2,049,380 60.32% -39.04% West of Hudson 136,838 35,058 53,617 79,458 48.19% -41.93% Port Jervis Line 79,551 22,450 33,695 46,314 37.45% -41.78% Pascack Valley Line 57,287 12,608 19,923 33,144 66.36% -42.14% MTA Bus Company 10,140,604 2,956,094 6,191,585 7,043,013 13.75% -30.55% MTA Bridges & Tunnels 27,029,330 20,212,097 26,126,093 27,541,588 5.42% 1.90% Total All Agencies 212,306,337 56,960,856 106,692,723 133,116,261 24.77% -37.30% (Excludes Bridges & Tunnels) Weekdays: 19 19 19 19 Holidays: 1 1 1 1 Weekend Days: 8 8 8 8 Days 28 28 28 28
+```

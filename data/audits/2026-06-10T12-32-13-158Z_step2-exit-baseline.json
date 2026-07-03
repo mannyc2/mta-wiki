@@ -1,0 +1,1104 @@
+{
+  "generated_at": "2026-06-10T12:32:13.158Z",
+  "scope": {},
+  "submissions": {
+    "total": 3957,
+    "accepted": 3792,
+    "rejected": 165,
+    "retired": 17,
+    "acceptance_rate": 0.9583,
+    "by_kind": [
+      {
+        "observation_kind": "metric_claim",
+        "submissions": 1272,
+        "accepted": 1228,
+        "rejected": 44,
+        "acceptance_rate": 0.9654
+      },
+      {
+        "observation_kind": "relation",
+        "submissions": 637,
+        "accepted": 589,
+        "rejected": 48,
+        "acceptance_rate": 0.9246
+      },
+      {
+        "observation_kind": "claim",
+        "submissions": 471,
+        "accepted": 449,
+        "rejected": 22,
+        "acceptance_rate": 0.9533
+      },
+      {
+        "observation_kind": "route",
+        "submissions": 315,
+        "accepted": 305,
+        "rejected": 10,
+        "acceptance_rate": 0.9683
+      },
+      {
+        "observation_kind": "entity",
+        "submissions": 275,
+        "accepted": 271,
+        "rejected": 4,
+        "acceptance_rate": 0.9855
+      },
+      {
+        "observation_kind": "event",
+        "submissions": 270,
+        "accepted": 260,
+        "rejected": 10,
+        "acceptance_rate": 0.963
+      },
+      {
+        "observation_kind": "treatment_component",
+        "submissions": 222,
+        "accepted": 216,
+        "rejected": 6,
+        "acceptance_rate": 0.973
+      },
+      {
+        "observation_kind": "project",
+        "submissions": 158,
+        "accepted": 149,
+        "rejected": 9,
+        "acceptance_rate": 0.943
+      },
+      {
+        "observation_kind": "table",
+        "submissions": 151,
+        "accepted": 149,
+        "rejected": 2,
+        "acceptance_rate": 0.9868
+      },
+      {
+        "observation_kind": "corridor",
+        "submissions": 122,
+        "accepted": 114,
+        "rejected": 8,
+        "acceptance_rate": 0.9344
+      },
+      {
+        "observation_kind": "source",
+        "submissions": 59,
+        "accepted": 57,
+        "rejected": 2,
+        "acceptance_rate": 0.9661
+      },
+      {
+        "observation_kind": "source_gap",
+        "submissions": 5,
+        "accepted": 5,
+        "rejected": 0,
+        "acceptance_rate": 1
+      }
+    ],
+    "rejection_reasons": {
+      "object_local_observation_id references missing local observation id \"ent…": 11,
+      "object_local_observation_id references missing local observation id \"tre…": 1,
+      "evidence_refs[0].source_quote is not present in the cited block": 68,
+      "evidence_refs[1].source_quote is not present in the cited block": 13,
+      "metric_claim payload with raw_value_text should include normalized numer…": 28,
+      "evidence_refs[0].source_quote must be 280 characters or fewer": 27,
+      "object_local_observation_id references missing local observation id \"rou…": 1,
+      "subject_local_observation_id references missing local observation id \"ro…": 1,
+      "evidence_refs[2].source_quote is not present in the cited block": 4,
+      "claim payload must include at least one of": 1,
+      "relation payload.object_local_observation_id is required": 4,
+      "evidence_refs[1].source_quote must be 280 characters or fewer": 4,
+      "route target_record_id route_able-m15-sbs implies service_variant \"sbs\" …": 1,
+      "subject_local_observation_id references missing local observation id \"en…": 1,
+      "evidence_refs[3].source_quote is not present in the cited block": 1,
+      "object_local_observation_id references missing local observation id \"pro…": 1,
+      "route target_record_id route_southern-brooklyn-sbs implies service_varia…": 1,
+      "route target_record_id route_bx6-sbs implies service_variant \"sbs\" but p…": 1,
+      "route target_record_id route_m34-sbs implies service_variant \"sbs\" but p…": 1,
+      "route target_record_id route_125th-laguardia-sbs implies service_variant…": 1,
+      "route target_record_id route_b44-sbs implies service_variant \"sbs\" but p…": 1,
+      "route target_record_id route_utica-ave-sbs implies service_variant \"sbs\"…": 1,
+      "route target_record_id route_b82-sbs implies service_variant \"sbs\" but p…": 1
+    }
+  },
+  "runs": [
+    {
+      "run_id": "2026-06-08T19-44-31-970Z_3367739-c1e03724_ingest_m86-sbs-progress-report-2017",
+      "submissions": 76,
+      "accepted": 76,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 18,
+        "total_tokens": 389556,
+        "estimated_cost": 0.023542600000000004,
+        "cost_per_accepted_submission": 0.00031
+      }
+    },
+    {
+      "run_id": "2026-06-08T19-45-39-334Z_3369466-1124e857_ingest_14th-street-winter2020-monitoring",
+      "submissions": 128,
+      "accepted": 128,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 16,
+        "total_tokens": 618063,
+        "estimated_cost": 0.0337494,
+        "cost_per_accepted_submission": 0.000264
+      }
+    },
+    {
+      "run_id": "2026-06-08T19-45-39-336Z_3369460-daa98496_ingest_14th-street-busway",
+      "submissions": 29,
+      "accepted": 29,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 10,
+        "total_tokens": 159523,
+        "estimated_cost": 0.0088675,
+        "cost_per_accepted_submission": 0.000306
+      }
+    },
+    {
+      "run_id": "2026-06-08T19-45-39-336Z_3369462-f3abcba1_ingest_14th-street-busway-brochure",
+      "submissions": 33,
+      "accepted": 33,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 8,
+        "total_tokens": 98368,
+        "estimated_cost": 0.007754500000000001,
+        "cost_per_accepted_submission": 0.000235
+      }
+    },
+    {
+      "run_id": "2026-06-08T19-45-39-336Z_3369465-51612d41_ingest_14th-street-fall2019-monitoring",
+      "submissions": 113,
+      "accepted": 113,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 19,
+        "total_tokens": 719419,
+        "estimated_cost": 0.0404561,
+        "cost_per_accepted_submission": 0.000358
+      }
+    },
+    {
+      "run_id": "2026-06-08T19-45-39-341Z_3369468-26f24246_ingest_161st-bx6-capital-project-2026",
+      "submissions": 69,
+      "accepted": 66,
+      "rejected": 3,
+      "acceptance_rate": 0.9565,
+      "usage": {
+        "request_count": 22,
+        "total_tokens": 818553,
+        "estimated_cost": 0.0338535,
+        "cost_per_accepted_submission": 0.000513
+      }
+    },
+    {
+      "run_id": "2026-06-08T19-48-04-636Z_3372996-0307d12a_ingest_181st-street-jun2022",
+      "submissions": 85,
+      "accepted": 85,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 15,
+        "total_tokens": 665639,
+        "estimated_cost": 0.034645800000000004,
+        "cost_per_accepted_submission": 0.000408
+      }
+    },
+    {
+      "run_id": "2026-06-08T19-48-43-982Z_3373918-83337c6c_ingest_34th-st-busway",
+      "submissions": 30,
+      "accepted": 29,
+      "rejected": 1,
+      "acceptance_rate": 0.9667,
+      "usage": {
+        "request_count": 7,
+        "total_tokens": 76359,
+        "estimated_cost": 0.007622900000000001,
+        "cost_per_accepted_submission": 0.000263
+      }
+    },
+    {
+      "run_id": "2026-06-08T19-50-07-433Z_3375146-37556ce4_ingest_ace-routes-dataset-dictionary",
+      "submissions": 55,
+      "accepted": 47,
+      "rejected": 8,
+      "acceptance_rate": 0.8545,
+      "usage": {
+        "request_count": 25,
+        "total_tokens": 521354,
+        "estimated_cost": 0.033581900000000005,
+        "cost_per_accepted_submission": 0.000715
+      }
+    },
+    {
+      "run_id": "2026-06-08T19-50-49-655Z_3376101-dea1ff56_ingest_b44-sbs-progress-report-2016",
+      "submissions": 117,
+      "accepted": 117,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 14,
+        "total_tokens": 1469236,
+        "estimated_cost": 0.015947400000000004,
+        "cost_per_accepted_submission": 0.000136
+      }
+    },
+    {
+      "run_id": "2026-06-08T19-51-21-072Z_3376520-d3b98f69_ingest_behind-schedule-2025",
+      "submissions": 101,
+      "accepted": 101,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 31,
+        "total_tokens": 1423885,
+        "estimated_cost": 0.07437389999999999,
+        "cost_per_accepted_submission": 0.000736
+      }
+    },
+    {
+      "run_id": "2026-06-08T19-53-51-500Z_3378562-e85f204c_ingest_better-buses",
+      "submissions": 121,
+      "accepted": 116,
+      "rejected": 5,
+      "acceptance_rate": 0.9587,
+      "usage": {
+        "request_count": 27,
+        "total_tokens": 987418,
+        "estimated_cost": 0.07384800000000001,
+        "cost_per_accepted_submission": 0.000637
+      }
+    },
+    {
+      "run_id": "2026-06-08T19-53-53-761Z_3378621-62db19bc_ingest_better-buses-action-plan-2019",
+      "submissions": 96,
+      "accepted": 95,
+      "rejected": 1,
+      "acceptance_rate": 0.9896,
+      "usage": {
+        "request_count": 26,
+        "total_tokens": 1048478,
+        "estimated_cost": 0.0631212,
+        "cost_per_accepted_submission": 0.000664
+      }
+    },
+    {
+      "run_id": "2026-06-08T19-54-35-338Z_3379502-a028712d_ingest_bronx-bus-network-final-plan-2019",
+      "submissions": 103,
+      "accepted": 96,
+      "rejected": 7,
+      "acceptance_rate": 0.932,
+      "usage": {
+        "request_count": 57,
+        "total_tokens": 3254512,
+        "estimated_cost": 0.24474249999999997,
+        "cost_per_accepted_submission": 0.002549
+      }
+    },
+    {
+      "run_id": "2026-06-08T19-56-36-643Z_3381505-76dae6f3_ingest_bronx-bus-network-final-plan-addendum-2021",
+      "submissions": 55,
+      "accepted": 55,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 20,
+        "total_tokens": 484516,
+        "estimated_cost": 0.0406675,
+        "cost_per_accepted_submission": 0.000739
+      }
+    },
+    {
+      "run_id": "2026-06-08T19-58-44-855Z_3383678-3c31d234_ingest_brooklyn-bus-network-draft-plan-with-route-profiles",
+      "submissions": 79,
+      "accepted": 79,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 38,
+        "total_tokens": 1890978,
+        "estimated_cost": 0.1386445,
+        "cost_per_accepted_submission": 0.001755
+      }
+    },
+    {
+      "run_id": "2026-06-08T19-58-59-035Z_3383904-665a7dfc_ingest_brt-route-index",
+      "submissions": 95,
+      "accepted": 91,
+      "rejected": 4,
+      "acceptance_rate": 0.9579,
+      "usage": {
+        "request_count": 25,
+        "total_tokens": 722105,
+        "estimated_cost": 0.053216700000000006,
+        "cost_per_accepted_submission": 0.000585
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-03-41-492Z_3387723-6cbb5056_ingest_bus-lane-camera-report-2024",
+      "submissions": 109,
+      "accepted": 109,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 26,
+        "total_tokens": 922992,
+        "estimated_cost": 0.047014900000000005,
+        "cost_per_accepted_submission": 0.000431
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-06-36-356Z_3393938-da93e722_ingest_bus-lanes-dataset-dictionary",
+      "submissions": 64,
+      "accepted": 59,
+      "rejected": 5,
+      "acceptance_rate": 0.9219,
+      "usage": {
+        "request_count": 22,
+        "total_tokens": 992079,
+        "estimated_cost": 0.0545141,
+        "cost_per_accepted_submission": 0.000924
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-09-30-754Z_3396260-93ef214c_ingest_busway-34thstreet",
+      "submissions": 33,
+      "accepted": 27,
+      "rejected": 6,
+      "acceptance_rate": 0.8182,
+      "usage": {
+        "request_count": 12,
+        "total_tokens": 234013,
+        "estimated_cost": 0.008718300000000002,
+        "cost_per_accepted_submission": 0.000323
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-09-49-986Z_3396655-488ab8f7_ingest_busways",
+      "submissions": 38,
+      "accepted": 37,
+      "rejected": 1,
+      "acceptance_rate": 0.9737,
+      "usage": {
+        "request_count": 14,
+        "total_tokens": 193451,
+        "estimated_cost": 0.009406500000000002,
+        "cost_per_accepted_submission": 0.000254
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-10-54-201Z_3397555-f45e53ba_ingest_busway-tremontavenue",
+      "submissions": 29,
+      "accepted": 29,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 7,
+        "total_tokens": 103819,
+        "estimated_cost": 0.008726800000000002,
+        "cost_per_accepted_submission": 0.000301
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-12-11-232Z_3398543-522dec23_ingest_capital-dashboard",
+      "submissions": 1,
+      "accepted": 1,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 7,
+        "total_tokens": 28535,
+        "estimated_cost": 0.0017157000000000001,
+        "cost_per_accepted_submission": 0.001716
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-12-54-689Z_3399138-8112f439_ingest_fare-free-bus-pilot-evaluation",
+      "submissions": 117,
+      "accepted": 117,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 22,
+        "total_tokens": 671307,
+        "estimated_cost": 0.04108340000000001,
+        "cost_per_accepted_submission": 0.000351
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-13-01-642Z_3399304-b2d3eaaa_ingest_jamaica",
+      "submissions": 33,
+      "accepted": 33,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 14,
+        "total_tokens": 184568,
+        "estimated_cost": 0.0112816,
+        "cost_per_accepted_submission": 0.000342
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-13-03-998Z_3399356-dfea7d2a_ingest_jamaica-archer-brochure",
+      "submissions": 25,
+      "accepted": 25,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 7,
+        "total_tokens": 81202,
+        "estimated_cost": 0.004465,
+        "cost_per_accepted_submission": 0.000179
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-13-27-955Z_3399808-1a732fae_ingest_jamaica-busway-monitoring-update-2022",
+      "submissions": 90,
+      "accepted": 85,
+      "rejected": 5,
+      "acceptance_rate": 0.9444,
+      "usage": {
+        "request_count": 34,
+        "total_tokens": 1241179,
+        "estimated_cost": 0.0318476,
+        "cost_per_accepted_submission": 0.000375
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-13-45-752Z_3400224-0510c8b8_ingest_jay-street-pilot-overview",
+      "submissions": 29,
+      "accepted": 28,
+      "rejected": 1,
+      "acceptance_rate": 0.9655,
+      "usage": {
+        "request_count": 10,
+        "total_tokens": 171094,
+        "estimated_cost": 0.0106338,
+        "cost_per_accepted_submission": 0.00038
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-16-13-182Z_3403295-dc7227b8_ingest_life-in-slow-lane-2025",
+      "submissions": 93,
+      "accepted": 78,
+      "rejected": 15,
+      "acceptance_rate": 0.8387,
+      "usage": {
+        "request_count": 24,
+        "total_tokens": 840838,
+        "estimated_cost": 0.030516000000000005,
+        "cost_per_accepted_submission": 0.000391
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-16-42-712Z_3403855-2875f407_ingest_mta-automated-camera-enforcement",
+      "submissions": 154,
+      "accepted": 153,
+      "rejected": 1,
+      "acceptance_rate": 0.9935,
+      "usage": {
+        "request_count": 27,
+        "total_tokens": 1233165,
+        "estimated_cost": 0.06260509999999998,
+        "cost_per_accepted_submission": 0.000409
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-17-04-832Z_3404295-846fc9a7_ingest_nyct-key-performance-metrics-doc194001",
+      "submissions": 86,
+      "accepted": 82,
+      "rejected": 4,
+      "acceptance_rate": 0.9535,
+      "usage": {
+        "request_count": 23,
+        "total_tokens": 1232149,
+        "estimated_cost": 0.0308677,
+        "cost_per_accepted_submission": 0.000376
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-20-11-231Z_3407317-a3cca1c2_ingest_nyct-key-performance-metrics-june2025",
+      "submissions": 84,
+      "accepted": 81,
+      "rejected": 3,
+      "acceptance_rate": 0.9643,
+      "usage": {
+        "request_count": 29,
+        "total_tokens": 1459282,
+        "estimated_cost": 0.0536474,
+        "cost_per_accepted_submission": 0.000662
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-21-08-595Z_3408333-d49c05ca_ingest_open-data-lessons-2026",
+      "submissions": 44,
+      "accepted": 40,
+      "rejected": 4,
+      "acceptance_rate": 0.9091,
+      "usage": {
+        "request_count": 15,
+        "total_tokens": 301390,
+        "estimated_cost": 0.016753700000000003,
+        "cost_per_accepted_submission": 0.000419
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-21-51-856Z_3409231-9293daa6_ingest_open-data-plan-2022",
+      "submissions": 37,
+      "accepted": 34,
+      "rejected": 3,
+      "acceptance_rate": 0.9189,
+      "usage": {
+        "request_count": 17,
+        "total_tokens": 354310,
+        "estimated_cost": 0.007066200000000001,
+        "cost_per_accepted_submission": 0.000208
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-21-52-884Z_3409278-f7f8641a_ingest_open-data-plan-2023-update",
+      "submissions": 23,
+      "accepted": 23,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 9,
+        "total_tokens": 102422,
+        "estimated_cost": 0.0063886,
+        "cost_per_accepted_submission": 0.000278
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-23-35-256Z_3410856-c8c816cd_ingest_open-data-plan-2024-update",
+      "submissions": 53,
+      "accepted": 51,
+      "rejected": 2,
+      "acceptance_rate": 0.9623,
+      "usage": {
+        "request_count": 27,
+        "total_tokens": 540770,
+        "estimated_cost": 0.018764500000000003,
+        "cost_per_accepted_submission": 0.000368
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-23-58-005Z_3411237-de87ddb8_ingest_open-data-plan-2025-update",
+      "submissions": 47,
+      "accepted": 41,
+      "rejected": 6,
+      "acceptance_rate": 0.8723,
+      "usage": {
+        "request_count": 16,
+        "total_tokens": 485291,
+        "estimated_cost": 0.0320185,
+        "cost_per_accepted_submission": 0.000781
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-24-28-237Z_3411726-36ca0130_ingest_open-data-plan-2026-update",
+      "submissions": 37,
+      "accepted": 37,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 14,
+        "total_tokens": 298802,
+        "estimated_cost": 0.018508800000000002,
+        "cost_per_accepted_submission": 0.0005
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-24-34-722Z_3411856-620360cb_ingest_open-data-program",
+      "submissions": 25,
+      "accepted": 21,
+      "rejected": 4,
+      "acceptance_rate": 0.84,
+      "usage": {
+        "request_count": 12,
+        "total_tokens": 202918,
+        "estimated_cost": 0.0042405,
+        "cost_per_accepted_submission": 0.000202
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-26-16-304Z_3413306-2591a8f4_ingest_q70-fare-free-service-increases-2025",
+      "submissions": 38,
+      "accepted": 38,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 9,
+        "total_tokens": 223897,
+        "estimated_cost": 0.020079000000000007,
+        "cost_per_accepted_submission": 0.000528
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-26-36-330Z_3413594-64cf58ba_ingest_queens-addendum-equity-evaluation-appendix-d",
+      "submissions": 49,
+      "accepted": 49,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 12,
+        "total_tokens": 307781,
+        "estimated_cost": 0.0221488,
+        "cost_per_accepted_submission": 0.000452
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-28-13-878Z_3414990-8ea1a1ff_ingest_queens-proposed-final-plan-2023",
+      "submissions": 34,
+      "accepted": 33,
+      "rejected": 1,
+      "acceptance_rate": 0.9706,
+      "usage": {
+        "request_count": 9,
+        "total_tokens": 271812,
+        "estimated_cost": 0.014475,
+        "cost_per_accepted_submission": 0.000439
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-28-20-422Z_3415135-e10cf0e3_ingest_queens-proposed-final-plan-addendum-2024",
+      "submissions": 33,
+      "accepted": 32,
+      "rejected": 1,
+      "acceptance_rate": 0.9697,
+      "usage": {
+        "request_count": 9,
+        "total_tokens": 267946,
+        "estimated_cost": 0.025884300000000002,
+        "cost_per_accepted_submission": 0.000809
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-31-04-977Z_3418050-9af85c31_ingest_queens-service-change-board-item-2025",
+      "submissions": 10,
+      "accepted": 10,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 7,
+        "total_tokens": 194477,
+        "estimated_cost": 0.0118138,
+        "cost_per_accepted_submission": 0.001181
+      }
+    },
+    {
+      "run_id": "2026-06-08T20-31-12-983Z_3418284-389b7a8b_ingest_sbs-features",
+      "submissions": 7,
+      "accepted": 7,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 3,
+        "total_tokens": 24930,
+        "estimated_cost": 0.0023664000000000003,
+        "cost_per_accepted_submission": 0.000338
+      }
+    },
+    {
+      "run_id": "2026-06-09_migration_batch1",
+      "submissions": 17,
+      "accepted": 17,
+      "rejected": 0,
+      "acceptance_rate": 1
+    },
+    {
+      "run_id": "2026-06-09_migration_batch2",
+      "submissions": 16,
+      "accepted": 16,
+      "rejected": 0,
+      "acceptance_rate": 1
+    },
+    {
+      "run_id": "2026-06-09T00-28-45-506Z_3640842-585a9d48_ingest_m86-sbs-progress-report-2017",
+      "submissions": 93,
+      "accepted": 93,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 18,
+        "total_tokens": 777667,
+        "estimated_cost": 0.0157532,
+        "cost_per_accepted_submission": 0.000169
+      }
+    },
+    {
+      "run_id": "2026-06-09T00-38-44-881Z_3649811-21656c30_resume_m86-sbs-progress-report-2017",
+      "submissions": 2,
+      "accepted": 2,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 5,
+        "total_tokens": 397858,
+        "estimated_cost": 0.009098599999999998,
+        "cost_per_accepted_submission": 0.004549
+      }
+    },
+    {
+      "run_id": "2026-06-09T01-20-39-101Z_3685821-f38be298_ingest_speeding-up-slowly-2025",
+      "submissions": 95,
+      "accepted": 94,
+      "rejected": 1,
+      "acceptance_rate": 0.9895,
+      "usage": {
+        "request_count": 20,
+        "total_tokens": 958949,
+        "estimated_cost": 0.03796430000000001,
+        "cost_per_accepted_submission": 0.000404
+      }
+    },
+    {
+      "run_id": "2026-06-09T01-26-29-255Z_3690734-5b2b709b_ingest_tsp-report-2017",
+      "submissions": 101,
+      "accepted": 100,
+      "rejected": 1,
+      "acceptance_rate": 0.9901,
+      "usage": {
+        "request_count": 26,
+        "total_tokens": 1186373,
+        "estimated_cost": 0.020933400000000005,
+        "cost_per_accepted_submission": 0.000209
+      }
+    },
+    {
+      "run_id": "2026-06-09T01-31-36-360Z_3695068-12801afd_ingest_streets-plan-update-2026",
+      "submissions": 75,
+      "accepted": 73,
+      "rejected": 2,
+      "acceptance_rate": 0.9733,
+      "usage": {
+        "request_count": 33,
+        "total_tokens": 1476766,
+        "estimated_cost": 0.11011910000000003,
+        "cost_per_accepted_submission": 0.001508
+      }
+    },
+    {
+      "run_id": "2026-06-09T01-39-58-582Z_3702126-7bf29513_ingest_tremont-ave-busway",
+      "submissions": 29,
+      "accepted": 27,
+      "rejected": 2,
+      "acceptance_rate": 0.931,
+      "usage": {
+        "request_count": 9,
+        "total_tokens": 199277,
+        "estimated_cost": 0.021174300000000004,
+        "cost_per_accepted_submission": 0.000784
+      }
+    },
+    {
+      "run_id": "2026-06-09T01-43-49-234Z_3705354-ce14f391_ingest_segment-speed-methodology-2024",
+      "submissions": 12,
+      "accepted": 11,
+      "rejected": 1,
+      "acceptance_rate": 0.9167,
+      "usage": {
+        "request_count": 9,
+        "total_tokens": 193072,
+        "estimated_cost": 0.0183472,
+        "cost_per_accepted_submission": 0.001668
+      }
+    },
+    {
+      "run_id": "2026-06-09T01-48-12-691Z_3709427-319a7775_ingest_soundview-bus-priority-press-release-2021",
+      "submissions": 43,
+      "accepted": 41,
+      "rejected": 2,
+      "acceptance_rate": 0.9535,
+      "usage": {
+        "request_count": 15,
+        "total_tokens": 552873,
+        "estimated_cost": 0.021358399999999996,
+        "cost_per_accepted_submission": 0.000521
+      }
+    },
+    {
+      "run_id": "2026-06-09T01-53-25-642Z_3713476-f1fbd6e7_ingest_streets-plan",
+      "submissions": 12,
+      "accepted": 11,
+      "rejected": 1,
+      "acceptance_rate": 0.9167,
+      "usage": {
+        "request_count": 17,
+        "total_tokens": 251391,
+        "estimated_cost": 0.004751600000000001,
+        "cost_per_accepted_submission": 0.000432
+      }
+    },
+    {
+      "run_id": "2026-06-09T01-55-49-325Z_3715573-897075be_ingest_tsp-status-2017",
+      "submissions": 91,
+      "accepted": 64,
+      "rejected": 27,
+      "acceptance_rate": 0.7033,
+      "usage": {
+        "request_count": 18,
+        "total_tokens": 900824,
+        "estimated_cost": 0.03299889999999999,
+        "cost_per_accepted_submission": 0.000516
+      }
+    },
+    {
+      "run_id": "2026-06-09T15-43-15-011Z_317158-8d96cbae_ingest_080421-brt-cb5-34th-street-fullboardpresentation",
+      "submissions": 58,
+      "accepted": 58,
+      "rejected": 0,
+      "acceptance_rate": 1,
+      "usage": {
+        "request_count": 17,
+        "total_tokens": 763768,
+        "estimated_cost": 0.03973450000000001,
+        "cost_per_accepted_submission": 0.000685
+      }
+    },
+    {
+      "run_id": "2026-06-09T15-49-25-704Z_322227-bcf66429_ingest_100331-brt-cb5-34th-street-transitway",
+      "submissions": 53,
+      "accepted": 47,
+      "rejected": 6,
+      "acceptance_rate": 0.8868,
+      "usage": {
+        "request_count": 24,
+        "total_tokens": 705215,
+        "estimated_cost": 0.06418810000000001,
+        "cost_per_accepted_submission": 0.001366
+      }
+    },
+    {
+      "run_id": "2026-06-09T15-55-10-720Z_327109-c6abff77_ingest_100503-brt-cb5-34th-street-transitway",
+      "submissions": 57,
+      "accepted": 49,
+      "rejected": 8,
+      "acceptance_rate": 0.8596,
+      "usage": {
+        "request_count": 22,
+        "total_tokens": 796853,
+        "estimated_cost": 0.028210500000000003,
+        "cost_per_accepted_submission": 0.000576
+      }
+    },
+    {
+      "run_id": "2026-06-09T15-59-57-171Z_332592-5ca738ad_ingest_100915-brt-cb5-34th-street-transitway",
+      "submissions": 72,
+      "accepted": 65,
+      "rejected": 7,
+      "acceptance_rate": 0.9028,
+      "usage": {
+        "request_count": 23,
+        "total_tokens": 850995,
+        "estimated_cost": 0.07441800000000001,
+        "cost_per_accepted_submission": 0.001145
+      }
+    },
+    {
+      "run_id": "2026-06-09T16-08-04-167Z_340527-0a6ca060_ingest_110622-lga-aa-slides",
+      "submissions": 48,
+      "accepted": 47,
+      "rejected": 1,
+      "acceptance_rate": 0.9792,
+      "usage": {
+        "request_count": 18,
+        "total_tokens": 653455,
+        "estimated_cost": 0.0374028,
+        "cost_per_accepted_submission": 0.000796
+      }
+    },
+    {
+      "run_id": "2026-06-09T16-13-32-751Z_345371-1f59bad2_ingest_116-st-morningside-ave-pleasant-ave-cb10-feb2025",
+      "submissions": 96,
+      "accepted": 93,
+      "rejected": 3,
+      "acceptance_rate": 0.9688,
+      "usage": {
+        "request_count": 22,
+        "total_tokens": 1200114,
+        "estimated_cost": 0.04951010000000001,
+        "cost_per_accepted_submission": 0.000532
+      }
+    },
+    {
+      "run_id": "2026-06-09T16-21-47-565Z_351926-dc1e8f51_ingest_116-st-morningside-ave-pleasant-ave-cb10-jun2025",
+      "submissions": 87,
+      "accepted": 81,
+      "rejected": 6,
+      "acceptance_rate": 0.931,
+      "usage": {
+        "request_count": 28,
+        "total_tokens": 1447184,
+        "estimated_cost": 0.08858330000000002,
+        "cost_per_accepted_submission": 0.001094
+      }
+    },
+    {
+      "run_id": "2026-06-09T16-29-18-358Z_358143-7d630e3d_ingest_brooklyn-bus-network-draft-plan-without-route-profiles",
+      "submissions": 93,
+      "accepted": 87,
+      "rejected": 6,
+      "acceptance_rate": 0.9355,
+      "usage": {
+        "request_count": 30,
+        "total_tokens": 2470407,
+        "estimated_cost": 0.09087370000000002,
+        "cost_per_accepted_submission": 0.001045
+      }
+    }
+  ],
+  "identity": {
+    "link_vs_new": {
+      "global_submissions": 839,
+      "linked": 381,
+      "created_new": 451,
+      "unresolved": 7,
+      "link_ratio": 0.4541
+    },
+    "alias_count": 63,
+    "do_not_merge_pair_count": 32,
+    "duplicate_candidate_pairs": 4,
+    "duplicate_clusters": 4,
+    "duplicate_candidates": [
+      {
+        "kind": "entity",
+        "record_ids": [
+          "entity_tri-state-transportation-campaign",
+          "entity_tri-state-transportation-campaign-tsp-2017"
+        ],
+        "score": 100,
+        "reasons": [
+          "identity key entity_tri-state-transportation-campaign"
+        ]
+      },
+      {
+        "kind": "route",
+        "record_ids": [
+          "route_m34-mentioned",
+          "route_m34-sbs"
+        ],
+        "score": 100,
+        "reasons": [
+          "identity key route_m34"
+        ]
+      },
+      {
+        "kind": "corridor",
+        "record_ids": [
+          "corridor_fulton-st",
+          "corridor_fulton-st-busway"
+        ],
+        "score": 90,
+        "reasons": [
+          "text similarity 90"
+        ]
+      },
+      {
+        "kind": "route",
+        "record_ids": [
+          "route_bxm1",
+          "route_bxm1-jun2025"
+        ],
+        "score": 90,
+        "reasons": [
+          "text similarity 90"
+        ]
+      }
+    ]
+  },
+  "graph": {
+    "nodes_probed": 2575,
+    "connected": 644,
+    "orphans": 1931,
+    "orphan_rate": 0.7499,
+    "relation_records": 806,
+    "relation_edges_resolved": 806,
+    "relation_edges_unresolved": 0,
+    "orphans_by_kind": {
+      "claim": 416,
+      "corridor": 31,
+      "entity": 54,
+      "event": 110,
+      "metric_claim": 1102,
+      "project": 31,
+      "route": 31,
+      "treatment_component": 156
+    }
+  },
+  "canonical": {
+    "total_records": 3442,
+    "by_kind": {
+      "claim": 447,
+      "corridor": 75,
+      "entity": 109,
+      "event": 258,
+      "metric_claim": 1219,
+      "project": 111,
+      "relation": 806,
+      "route": 140,
+      "source_gap": 5,
+      "source": 56,
+      "treatment_component": 216
+    }
+  },
+  "sources": {
+    "total": 56,
+    "dated": 49,
+    "undated": 7,
+    "undated_rate": 0.125,
+    "by_date_provenance": {
+      "payload": 36,
+      "filename_pattern": 1,
+      "reviewed_override": 1,
+      "staged_metadata": 11
+    },
+    "undated_source_ids": [
+      "ace_routes_dataset_dictionary",
+      "better_buses",
+      "brt_route_index",
+      "bus_lanes_dataset_dictionary",
+      "busways",
+      "capital_dashboard",
+      "sbs_features"
+    ]
+  },
+  "relations": {
+    "total_edges": 806,
+    "derived_edges": 221,
+    "authored_edges": 585,
+    "by_assertion_status": {
+      "delivered": 261,
+      "in_progress": 74,
+      "unknown": 273,
+      "deferred": 6,
+      "proposed": 107,
+      "planned": 85
+    },
+    "edges_with_as_of_date": 674,
+    "derived_value_count": 616,
+    "derived_resolved": 240,
+    "dangling_total": 358,
+    "dangling_ambiguous": 87,
+    "dangling_unresolved": 271
+  },
+  "gaps": {
+    "orphan_record": 1935,
+    "source_undated": 7,
+    "date_unnormalized": 27,
+    "registry_uncovered": 132,
+    "single_source_fact": 1924,
+    "value_conflict": 113,
+    "dangling_reference": 358,
+    "unresolved_source_gap": 5,
+    "lifecycle_unanchored": 13,
+    "lifecycle_incomplete": 21,
+    "treatment_gap": 21
+  }
+}

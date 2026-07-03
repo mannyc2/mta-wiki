@@ -1,0 +1,363 @@
+{
+  "note_id": "codex-canonical-cleanup-2026-06-22-identity-alias-batch-062-prep",
+  "created_at": "2026-06-22T22:01:51Z",
+  "status": "ready_for_conductor_apply",
+  "lane": "identity_prep_only",
+  "batch": "identity-batch062",
+  "scope": {
+    "allowed_write": "data/review_notes/codex-identity-batch062-prep.json",
+    "durable_inputs_mutated": false,
+    "generated_outputs_mutated": false,
+    "provider_backed_commands_run": false,
+    "forbidden_commands_run": []
+  },
+  "context": {
+    "source_backlog": "unresolved duplicate_global_identity canonical backlog after prior prep through identity061",
+    "candidate_mining_summary": {
+      "current_entity_records_scanned_from_jsonl": 2598,
+      "current_alias_overrides_considered": 379,
+      "db_identity_alias_rows_considered": 329,
+      "prior_prep_aliases_considered_through_batch061": 120,
+      "prior_prep_targets_considered_through_batch061": 70,
+      "identity_key_groups_scanned": 14133,
+      "candidate_pairs_after_alias_and_do_not_merge_filters": 1136,
+      "selected_high_confidence_candidates": 10
+    },
+    "selection_policy": [
+      "Prefer exact named-person aliases with shared deterministic identity keys and source evidence on both sides.",
+      "Exclude broad agencies, programs, committees, target-churn cases, aliases already mapped in merges.json/current identity_aliases/prior prep, and do-not-merge suppressed pairs.",
+      "Defer initial-only, nickname-adjacent, committee-member-list, and visibly contaminated-field cases unless source evidence makes identity unambiguous."
+    ]
+  },
+  "intended_mutation": {
+    "aliases": {
+      "entity": {
+        "entity_meeting-doc-111711-charles-passarella": "entity_meeting-doc-113966-charles-passarella",
+        "entity_chris-pangilinan-mta-3q2022": "entity_meeting-doc-186836-chris-pangilinan",
+        "entity_meeting-doc-160316-craig-daly": "entity_meeting-doc-160196-craig-daly",
+        "entity_meeting-doc-190056-david-jones": "entity_david-jones-audit-chair",
+        "entity_meeting-doc-david-keller": "entity_david-keller-meeting-doc-102711",
+        "entity_meeting-doc-196846-gerard-bringmann": "entity_gerard-bringmann",
+        "entity_meeting-doc-138396-haeda-mihaltses": "entity_meeting-doc-102806-haeda-mihaltses",
+        "entity_haley-stein-meeting-doc-171436": "entity_meeting-doc-113891-haley-stein",
+        "entity_patrick-warren-85811": "entity_meeting-doc-127566-patrick-warren",
+        "entity_patrick-isom-dec2025": "entity_patrick-isom-meeting-doc-205666"
+      }
+    }
+  },
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "canonical_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "aliases_not_in_prior_prep_artifacts": true,
+    "targets_not_aliases_in_merges_json": true,
+    "targets_not_aliases_in_identity_aliases_table": true,
+    "targets_not_aliases_in_prior_prep_artifacts": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 20,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 20,
+    "source_page_blocks_missing": [],
+    "all_pass": true
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-111711-charles-passarella",
+      "target": "entity_meeting-doc-113966-charles-passarella",
+      "validator_duplicate_key": "entity_charles-j-passarella",
+      "reason": "Both records identify Charles J. Passarella as Vice President of Maintenance and Operations Support in MTA Bridges and Tunnels/TBTA context.",
+      "evidence_refs": [
+        "meeting_doc_111711#p004_c0008",
+        "meeting_doc_113966#p004_c0007"
+      ],
+      "shared_identity_keys": [
+        "entity_charles-j-passarella"
+      ],
+      "guards": {
+        "alias_not_already_mapped": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_not_in_prior_prep_through_batch061": true,
+        "target_not_alias_mapped": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_chris-pangilinan-mta-3q2022",
+      "target": "entity_meeting-doc-186836-chris-pangilinan",
+      "validator_duplicate_key": "entity_chris-pangilinan",
+      "reason": "Both records identify Chris Pangilinan as an MTA/NYC Transit buses or paratransit official; exact person identity key overlaps.",
+      "evidence_refs": [
+        "meeting_doc_102731#p005_c0004",
+        "meeting_doc_186836#p006_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_chris-pangilinan"
+      ],
+      "guards": {
+        "alias_not_already_mapped": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_not_in_prior_prep_through_batch061": true,
+        "target_not_alias_mapped": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-160316-craig-daly",
+      "target": "entity_meeting-doc-160196-craig-daly",
+      "validator_duplicate_key": "entity_craig-daly",
+      "reason": "Both records identify Craig Daly, including Chief Rolling Stock Programs Officer/LIRR context; exact person identity key overlaps.",
+      "evidence_refs": [
+        "meeting_doc_160316#p006_c0003",
+        "meeting_doc_160196#p006_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_craig-daly"
+      ],
+      "guards": {
+        "alias_not_already_mapped": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_not_in_prior_prep_through_batch061": true,
+        "target_not_alias_mapped": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-190056-david-jones",
+      "target": "entity_david-jones-audit-chair",
+      "validator_duplicate_key": "entity_david-jones",
+      "reason": "Both records identify David Jones as Audit Committee Chair, with exact person and role-specific identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_190056#p001_c0006",
+        "meeting_doc_163066#p001_c0006"
+      ],
+      "shared_identity_keys": [
+        "entity_david-jones",
+        "entity_david-jones-audit-committee-chair"
+      ],
+      "guards": {
+        "alias_not_already_mapped": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_not_in_prior_prep_through_batch061": true,
+        "target_not_alias_mapped": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-david-keller",
+      "target": "entity_david-keller-meeting-doc-102711",
+      "validator_duplicate_key": "entity_david-keller",
+      "reason": "Both records identify David Keller in project-manager/OMB context; exact person identity key overlaps and the target carries richer role evidence.",
+      "evidence_refs": [
+        "meeting_doc_102716#p001_c0004",
+        "meeting_doc_102711#p001_c0002"
+      ],
+      "shared_identity_keys": [
+        "entity_david-keller"
+      ],
+      "guards": {
+        "alias_not_already_mapped": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_not_in_prior_prep_through_batch061": true,
+        "target_not_alias_mapped": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-196846-gerard-bringmann",
+      "target": "entity_gerard-bringmann",
+      "validator_duplicate_key": "entity_gerard-bringmann",
+      "reason": "Both records identify Gerard Bringmann; the target preserves the richer commuter council chair/MTA Board member context.",
+      "evidence_refs": [
+        "meeting_doc_196846#p002_c0006",
+        "meeting_doc_189841#p027_c0008"
+      ],
+      "shared_identity_keys": [
+        "entity_gerard-bringmann"
+      ],
+      "guards": {
+        "alias_not_already_mapped": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_not_in_prior_prep_through_batch061": true,
+        "target_not_alias_mapped": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-138396-haeda-mihaltses",
+      "target": "entity_meeting-doc-102806-haeda-mihaltses",
+      "validator_duplicate_key": "entity_haeda-mihaltses",
+      "reason": "Both records identify Hon. Haeda Mihaltses as Committee Chair, with exact person and role-specific identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_138396#p001_c0005",
+        "meeting_doc_105931#p001_c0004"
+      ],
+      "shared_identity_keys": [
+        "entity_haeda-mihaltses",
+        "entity_hon-haeda-mihaltses-committee-chair"
+      ],
+      "guards": {
+        "alias_not_already_mapped": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_not_in_prior_prep_through_batch061": true,
+        "target_not_alias_mapped": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_haley-stein-meeting-doc-171436",
+      "target": "entity_meeting-doc-113891-haley-stein",
+      "validator_duplicate_key": "entity_haley-stein",
+      "reason": "Both records identify Haley Stein; the target preserves the fuller LIRR vice president/general counsel/secretary role context.",
+      "evidence_refs": [
+        "meeting_doc_171436#p001_c0003",
+        "meeting_doc_113891#p011_c0010"
+      ],
+      "shared_identity_keys": [
+        "entity_haley-stein"
+      ],
+      "guards": {
+        "alias_not_already_mapped": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_not_in_prior_prep_through_batch061": true,
+        "target_not_alias_mapped": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_patrick-warren-85811",
+      "target": "entity_meeting-doc-127566-patrick-warren",
+      "validator_duplicate_key": "entity_patrick-warren",
+      "reason": "Both records identify Patrick Warren as MTA Chief Safety & Security, with exact person and role-specific identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_85811#p003_c0008",
+        "meeting_doc_127566#p003_c0007"
+      ],
+      "shared_identity_keys": [
+        "entity_patrick-warren",
+        "entity_patrick-warren-mta-chief-safety-and-security"
+      ],
+      "guards": {
+        "alias_not_already_mapped": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_not_in_prior_prep_through_batch061": true,
+        "target_not_alias_mapped": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_patrick-isom-dec2025",
+      "target": "entity_patrick-isom-meeting-doc-205666",
+      "validator_duplicate_key": "entity_patrick-isom",
+      "reason": "Both records identify Patrick Isom as Senior Manager, Finance and Debt Management; exact person identity key and matching role text overlap.",
+      "evidence_refs": [
+        "meeting_doc_197006#p004_c0017",
+        "meeting_doc_205666#p007_c0010"
+      ],
+      "shared_identity_keys": [
+        "entity_patrick-isom"
+      ],
+      "guards": {
+        "alias_not_already_mapped": true,
+        "alias_not_in_current_identity_aliases": true,
+        "alias_not_in_prior_prep_through_batch061": true,
+        "target_not_alias_mapped": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      },
+      "confidence": "high"
+    }
+  ],
+  "deferred_low_confidence_examples": [
+    {
+      "candidate": "A. Albert / J. Lieber / P. Dietlin initial-only variants",
+      "reason": "Deferred because initial-only person labels are more target-churn prone than full-name exact matches."
+    },
+    {
+      "candidate": "Bridges and Tunnels Committee Members / committee-member-list aliases",
+      "reason": "Deferred because committee/member-list identities are broad collection records rather than stable individual entities."
+    },
+    {
+      "candidate": "entity_catherine-sheridan-115226 -> entity_meeting-doc-111711-catherine-sheridan",
+      "reason": "Deferred despite strong shared keys because one side has visibly contaminated merged-field values; a cleaner person batch avoided that risk."
+    },
+    {
+      "candidate": "county/station organization-place aliases",
+      "reason": "Deferred to keep this batch focused on named-person entity aliases."
+    }
+  ],
+  "commands_used_for_evidence": [
+    {
+      "command": "test ! -e data/review_notes/codex-identity-batch062-prep.json && echo missing || echo exists",
+      "purpose": "Confirmed the batch062 prep artifact did not already exist before writing.",
+      "result": "missing"
+    },
+    {
+      "command": "jq '.intended_mutation.aliases.entity, .aggregate_guard_results' data/review_notes/codex-identity-batch061-prep.json",
+      "purpose": "Excluded prior batch061 aliases and checked prior guard shape.",
+      "result": "batch061 contained 10 aliases with all aggregate guards passing."
+    },
+    {
+      "command": "bun --eval '<read-only duplicate_global_identity mining over data/canonical/entities.jsonl, identityKeysForRecord(), current merges.json, read-only identity_aliases, prior prep aliases through batch061, and do-not-merge guards>'",
+      "purpose": "Mined unresolved duplicate_global_identity candidates while excluding already mapped, current identity_aliases, prior prep, and do-not-merge pairs.",
+      "result": "2598 current entity records scanned; 1136 candidate pairs after filters; 10 high-confidence candidates selected."
+    },
+    {
+      "command": "bun --eval '<read-only final guard script for canonical record presence, alias/target guard checks, prior prep exclusion, shared identity keys, raw source blocks, and source-page blocks>'",
+      "purpose": "Verified selected aliases and evidence before writing this prep artifact.",
+      "result": "all_pass true; 20 raw source blocks checked, 20 source-page blocks checked, no missing evidence blocks."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "purpose": "Stamped this prep artifact.",
+      "result": "2026-06-22T22:01:51Z"
+    }
+  ],
+  "commands_intentionally_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "export-jsonl",
+    "DB repair or publish commands",
+    "provider-backed post-ingest commands",
+    "identity-review-run or apply commands"
+  ]
+}

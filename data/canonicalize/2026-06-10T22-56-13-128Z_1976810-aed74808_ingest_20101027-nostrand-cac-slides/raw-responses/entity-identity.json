@@ -1,0 +1,41 @@
+{
+  "run_id": "2026-06-10T22-56-13-128Z_1976810-aed74808_ingest_20101027-nostrand-cac-slides",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T01:04:20.387Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "decision-entity-nyct-20101027",
+        "local_observation_id": "entity_mta_nyct_20101027",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_mta-nyct. The existing registry record entity_mta-nyct has matching entity_name 'MTA New York City Transit' and entity_type 'agency'. No different target record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "20101027_nostrand_cac_slides",
+            "block_id": "p001_c0002",
+            "source_quote": "MTA New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "decision-entity-nyc-dot-20101027",
+        "local_observation_id": "entity_nyc_dot_20101027",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_nyc-dot. The existing registry record entity_nyc-dot has matching entity_name 'New York City Department of Transportation' and entity_type 'agency'. No different target record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "20101027_nostrand_cac_slides",
+            "block_id": "p001_c0003",
+            "source_quote": "NEW YORK CITY DOT"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-46-729Z_2111393-0f628c59_canonicalize_2026-06-10t22-56-13-128z-1976810-aed74808-ingest-20101027-nostrand-cac-slides-entity-identity"
+}

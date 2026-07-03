@@ -1,0 +1,303 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "entity_christopher-pangilinan-ops-planning"
+record_aliases:
+  - "entity_chris-pangilinan"
+  - "entity_chris-pangilinan-mta-3q2022"
+  - "entity_chris-pangilinan-vice-president-paratransit-nyct"
+  - "entity_christopher-pangilinan"
+  - "entity_christopher-pangilinan-chief-of-operations-planning"
+  - "entity_christopher-pangilinan-vice-president-paratransit-nyct"
+  - "entity_meeting-doc-107531-chris-pangilinan"
+  - "entity_meeting-doc-113986-chris-pangilinan"
+  - "entity_meeting-doc-138396-christopher-pangilinan"
+  - "entity_meeting-doc-186836-chris-pangilinan"
+record_kind: "entity"
+display_name: "Christopher Pangilinan, Chief of Operations Planning"
+source_id: "queens_service_change_board_item_2025"
+source_ids:
+  - "meeting_doc_102731"
+  - "meeting_doc_107531"
+  - "meeting_doc_111811"
+  - "meeting_doc_113946"
+  - "meeting_doc_113986"
+  - "meeting_doc_121046"
+  - "meeting_doc_138391"
+  - "meeting_doc_138396"
+  - "meeting_doc_140461"
+  - "meeting_doc_146846"
+  - "meeting_doc_151651"
+  - "meeting_doc_160441"
+  - "meeting_doc_176331"
+  - "meeting_doc_186836"
+  - "meeting_doc_91596"
+  - "meeting_doc_95161"
+  - "meeting_doc_98291"
+  - "queens_service_change_board_item_2025"
+local_observation_id: "entity_christopher_pangilinan_ops_planning"
+local_observation_ids:
+  - "entity_chris_pangilinan_may2025"
+  - "entity_chris_pangilinan_mta_3q2022"
+  - "entity_christopher_pangilinan_meeting_doc_146846"
+  - "entity_christopher_pangilinan_meeting_doc_98291"
+  - "entity_christopher_pangilinan_ops_planning"
+  - "entity_department_of_paratransit_meeting_doc_98291"
+  - "entity_meeting151651_christopher_pangilinan"
+  - "entity_meeting91596_chris_pangilinan"
+  - "entity_meeting_doc_107531_chris_pangilinan"
+  - "entity_meeting_doc_111811_chris_pangilinan"
+  - "entity_meeting_doc_113946_chris_pangilinan"
+  - "entity_meeting_doc_113986_chris_pangilinan"
+  - "entity_meeting_doc_121046_chris_pangilinan"
+  - "entity_meeting_doc_138391_chris_pangilinan"
+  - "entity_meeting_doc_138396_christopher_pangilinan"
+  - "entity_meeting_doc_140461_chris_pangilinan"
+  - "entity_meeting_doc_160441_pangilinan"
+  - "entity_meeting_doc_186836_chris_pangilinan"
+  - "entity_meeting_doc_95161_chris_pangilinan"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-22T22:21:53.366Z"
+raw_text: "Christopher Pangilinan, Chief, Operations Planning"
+submission_ids:
+  - "sub_1754190ef8f2fc1f"
+  - "sub_39e2abaf2a836008"
+  - "sub_503165b8ff0faffc"
+  - "sub_730f414ed2fc6653"
+  - "sub_7e8f7ae1373f9a7d"
+  - "sub_8552cafb8737c1e7"
+  - "sub_924f6014b839690e"
+  - "sub_a147fb94c87f63d4"
+  - "sub_a4a5255ae110a2be"
+  - "sub_b19bacab657ecd89"
+  - "sub_be273d91a93f1fd6"
+  - "sub_be4f5496df3572fb"
+  - "sub_cf03ca7c519950e9"
+  - "sub_d33fc6bed60c258f"
+  - "sub_d7d05b01fdf70920"
+  - "sub_e15af7cb49155885"
+  - "sub_ecb243aab644f522"
+  - "sub_f03984ba43a3a3a0"
+  - "sub_fd716c010a5f9601"
+payload:
+  _merged_field_values:
+    agency:
+      - "New York City Transit"
+      - "NYC Transit Department of Buses"
+    description:
+      - "Requesting department head for paratransit vehicle procurements"
+      - "NYCT department requesting paratransit vehicle procurements"
+    entity_name:
+      - "Christopher Pangilinan"
+      - "Chris Pangilinan"
+      - "Department of Paratransit"
+    entity_type:
+      - "person"
+      - "department"
+    organization:
+      - "MTA"
+      - "NYCT"
+      - "New York City Transit"
+      - "New York City Transit Authority"
+    title:
+      - "Chief of Operations Planning"
+      - "Vice President of Paratransit"
+      - "Vice President, Paratransit, NYCT"
+      - "Paratransit Vice President"
+      - "Vice President, Paratransit"
+      - "Vice President"
+      - "Chief of Operations Planning at NYCT"
+      - "Chief, Operations Planning"
+      - "Vice President, Paratransit, NYCT; departing to serve as Chief of Operations Planning"
+      - "Acting Senior Vice President, Department of Buses"
+      - "Department of Buses requestor"
+      - "Department of Paratransit"
+  agency: "New York City Transit"
+  agency_name: "MTA New York City Transit"
+  description: "Requesting department head for paratransit vehicle procurements"
+  entity_name: "Christopher Pangilinan"
+  entity_type: "person"
+  office: "Paratransit"
+  organization: "MTA"
+  parent_entity: "New York City Transit"
+  title: "Chief of Operations Planning"
+evidence_refs:
+  -
+    block_id: "p001_c0003"
+    evidence_id: "queens_service_change_board_item_2025#p001_c0003"
+    page_number: 1
+    role: "identified"
+    source_id: "queens_service_change_board_item_2025"
+    source_path: "raw/sources/queens_service_change_board_item_2025/blocks.jsonl"
+    text_sha256: "sha256:10d17d6962ab48018ab48e8d330796bd938882b17a8eecf5a3b5c145e76c7c03"
+    text_source: "raw_text"
+  -
+    block_id: "p005_c0004"
+    evidence_id: "meeting_doc_102731#p005_c0004"
+    page_number: 5
+    role: "entity_mention"
+    source_id: "meeting_doc_102731"
+    source_path: "raw/sources/meeting_doc_102731/blocks.jsonl"
+    text_sha256: "sha256:6da8a3e6e0368fa7426d0af3ad381556705ca284df4fe8c04c7034bd943ba7e6"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0008"
+    evidence_id: "meeting_doc_107531#p001_c0008"
+    page_number: 1
+    role: "staff_attendance"
+    source_id: "meeting_doc_107531"
+    source_path: "raw/sources/meeting_doc_107531/blocks.jsonl"
+    text_sha256: "sha256:41c0c6a35489ebd253db2ddce2f0c8d7b6405e16f7ba311ef38246496160ec60"
+    text_source: "raw_text"
+  -
+    block_id: "p007_c0005"
+    evidence_id: "meeting_doc_113986#p007_c0005"
+    page_number: 7
+    role: "entity_reference"
+    source_id: "meeting_doc_113986"
+    source_path: "raw/sources/meeting_doc_113986/blocks.jsonl"
+    source_quote: "Paratransit Vice President Chris Pangilinan"
+    text_sha256: "sha256:2f11e1ea5cbee52167bd18e3bc8910dbc8ff28d8aaa2f484e29ca1a921e15ce2"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0008"
+    evidence_id: "meeting_doc_113946#p001_c0008"
+    page_number: 1
+    source_id: "meeting_doc_113946"
+    source_path: "raw/sources/meeting_doc_113946/blocks.jsonl"
+    text_sha256: "sha256:418651de22cf682f32ff25cf1892b6d5021d981412c3d1962dc49d4c804ccc46"
+    text_source: "raw_text"
+  -
+    block_id: "p007_c0005"
+    evidence_id: "meeting_doc_111811#p007_c0005"
+    page_number: 7
+    source_id: "meeting_doc_111811"
+    source_path: "raw/sources/meeting_doc_111811/blocks.jsonl"
+    source_quote: "Vice President Chris Pangilinan and his entire team"
+    text_sha256: "sha256:9e74ef9f6a7fc91d60140dcd189e2ce6174b9cce9ed636e7b1066b729fe3a774"
+    text_source: "raw_text"
+  -
+    block_id: "p026_c0006"
+    evidence_id: "meeting_doc_121046#p026_c0006"
+    page_number: 26
+    source_id: "meeting_doc_121046"
+    source_path: "raw/sources/meeting_doc_121046/blocks.jsonl"
+    text_sha256: "sha256:3e85a70677681ee5d592a3f4a20a8dee779cc019bfd6bcc215dd2954fa54c8a2"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0011"
+    evidence_id: "meeting_doc_138396#p001_c0011"
+    page_number: 1
+    role: "entity"
+    source_id: "meeting_doc_138396"
+    source_path: "raw/sources/meeting_doc_138396/blocks.jsonl"
+    text_sha256: "sha256:5bf5e1243b8f89a55165798d43698200b6d3f6b997179c8b8ebcaaa0e6001a36"
+    text_source: "raw_text"
+  -
+    block_id: "p018_c0008"
+    evidence_id: "meeting_doc_138391#p018_c0008"
+    page_number: 18
+    source_id: "meeting_doc_138391"
+    source_path: "raw/sources/meeting_doc_138391/blocks.jsonl"
+    text_sha256: "sha256:0f1a53950b12517059cdd011ca795c811524791d6a6720dceb6b8f3d7b57f05e"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_146846#p001_c0003"
+    page_number: 1
+    role: "author"
+    source_id: "meeting_doc_146846"
+    source_path: "raw/sources/meeting_doc_146846/blocks.jsonl"
+    text_sha256: "sha256:10d17d6962ab48018ab48e8d330796bd938882b17a8eecf5a3b5c145e76c7c03"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_160441#p001_c0003"
+    page_number: 1
+    source_id: "meeting_doc_160441"
+    source_path: "raw/sources/meeting_doc_160441/blocks.jsonl"
+    text_sha256: "sha256:10d17d6962ab48018ab48e8d330796bd938882b17a8eecf5a3b5c145e76c7c03"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0004"
+    evidence_id: "meeting_doc_160441#p002_c0004"
+    page_number: 2
+    source_id: "meeting_doc_160441"
+    source_path: "raw/sources/meeting_doc_160441/blocks.jsonl"
+    text_sha256: "sha256:3a136a59b0c5c0520a734143c7d75854300b3de7e41fb8d297557abab4c349df"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0011"
+    evidence_id: "meeting_doc_140461#p001_c0011"
+    page_number: 1
+    source_id: "meeting_doc_140461"
+    source_path: "raw/sources/meeting_doc_140461/blocks.jsonl"
+    text_sha256: "sha256:d17df33a2b7afc1367890c4e8551d0ba7bd281c30ee4163ac39d874a94b22210"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0010"
+    evidence_id: "meeting_doc_151651#p001_c0010"
+    page_number: 1
+    role: "entity_attendance"
+    source_id: "meeting_doc_151651"
+    source_path: "raw/sources/meeting_doc_151651/blocks.jsonl"
+    text_sha256: "sha256:c88b212b3a292333b43016164d957e6748cd090e072af45a66184c82dbcc3954"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0008"
+    evidence_id: "meeting_doc_176331#p003_c0008"
+    page_number: 3
+    source_id: "meeting_doc_176331"
+    source_path: "raw/sources/meeting_doc_176331/blocks.jsonl"
+    source_quote: "Chris Pangilinan, Acting Senior Vice President, Department of Buses"
+    text_sha256: "sha256:87d052cadefaf5cd040bcbad694445fb198cfdbdf57c9742a78157d9549b0a3a"
+    text_source: "raw_text"
+  -
+    block_id: "p006_c0003"
+    evidence_id: "meeting_doc_186836#p006_c0003"
+    page_number: 6
+    role: "entity_details"
+    source_id: "meeting_doc_186836"
+    source_path: "raw/sources/meeting_doc_186836/blocks.jsonl"
+    text_sha256: "sha256:c309d9a8787e08691780face576328af4e8c4299aef7bb856de882e719d93c5e"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0006"
+    evidence_id: "meeting_doc_95161#p001_c0006"
+    page_number: 1
+    source_id: "meeting_doc_95161"
+    source_path: "raw/sources/meeting_doc_95161/blocks.jsonl"
+    text_sha256: "sha256:8a46789d022a337b2b5d9c4f13013ded856a64436c690749d3c589bddb049ab5"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0006"
+    evidence_id: "meeting_doc_91596#p001_c0006"
+    page_number: 1
+    source_id: "meeting_doc_91596"
+    source_path: "raw/sources/meeting_doc_91596/blocks.jsonl"
+    source_quote: "Chris Pangilinan, Vice President, Paratransit, NYCT"
+    text_sha256: "sha256:9ee77bc2689afa0792851b85af87b351933ab2369665407dbf8a3a9c3771f5ca"
+    text_source: "raw_text"
+  -
+    block_id: "p013_c0003"
+    evidence_id: "meeting_doc_98291#p013_c0003"
+    page_number: 13
+    role: "requesting_department"
+    source_id: "meeting_doc_98291"
+    source_path: "raw/sources/meeting_doc_98291/blocks.jsonl"
+    text_sha256: "sha256:0d2e55e2fcdc2f61dfb2c6a6e38408a121c642afc010ad08ef4d1a68240402aa"
+    text_source: "raw_text"
+  -
+    block_id: "p013_c0003"
+    evidence_id: "meeting_doc_98291#p013_c0003"
+    page_number: 13
+    role: "requesting_department"
+    source_id: "meeting_doc_98291"
+    source_path: "raw/sources/meeting_doc_98291/blocks.jsonl"
+    text_sha256: "sha256:0d2e55e2fcdc2f61dfb2c6a6e38408a121c642afc010ad08ef4d1a68240402aa"
+    text_source: "raw_text"
+---
+
+<!-- mta-wiki:writer:start -->
+
+<!-- mta-wiki:writer:end -->

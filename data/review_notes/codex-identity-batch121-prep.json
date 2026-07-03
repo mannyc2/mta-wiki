@@ -1,0 +1,550 @@
+{
+  "note_id": "codex-identity-batch121-prep",
+  "batch_id": "identity121",
+  "created_at": "2026-06-23T05:31:57Z",
+  "author": "codex",
+  "scope": "Codex-only deterministic identity cleanup prep; entity-only global record kind",
+  "batch": "identity121",
+  "global_kinds": [
+    "entity"
+  ],
+  "prepared_count": 10,
+  "aliases": [
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_meeting-doc-113886-apta",
+      "target_id": "entity_meeting-doc-113886-apta",
+      "alias_id": "entity_bt-kpi-oct2025-apta",
+      "canonical_name": "American Public Transportation Association",
+      "alias_name": "American Public Transportation Association",
+      "reason": "Same durable organization. The alias record names American Public Transportation Association and expands APTA in the evidence; the target is the established APTA association record with the same full entity name and APTA aliases.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_meeting-doc-113886-apta",
+          "record_kind": "entity",
+          "entity_name": "American Public Transportation Association",
+          "entity_type": "association",
+          "source_ids": [
+            "meeting_doc_113886",
+            "meeting_doc_115141",
+            "meeting_doc_124991",
+            "meeting_doc_143151",
+            "meeting_doc_199151"
+          ],
+          "evidence_refs": [
+            "meeting_doc_113886#p008_c0006",
+            "meeting_doc_115141#p005_c0004",
+            "meeting_doc_124991#p002_c0001"
+          ],
+          "source_quote": "the American Public Transportation Association (\"APTA\") Rail Conference in Pittsburgh"
+        },
+        "alias": {
+          "record_id": "entity_bt-kpi-oct2025-apta",
+          "record_kind": "entity",
+          "entity_name": "American Public Transportation Association",
+          "entity_type": "organization",
+          "source_ids": [
+            "meeting_doc_189786"
+          ],
+          "evidence_refs": [
+            "meeting_doc_189786#p005_c0001"
+          ],
+          "source_quote": "American Public Transportation Association (APTA)"
+        }
+      },
+      "guard_notes": "Entity merge guard satisfied: exact full organization name with acronym expansion; no role/person, committee/member, agency/subunit, or source-time conflict. Alias absent from data/identity-overrides/merges.json and visible identity prep through identity120; pair absent from do-not-merge."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_amtrak",
+      "target_id": "entity_amtrak",
+      "alias_id": "entity_meeting-doc-amtrak",
+      "canonical_name": "Amtrak",
+      "alias_name": "Amtrak",
+      "reason": "Same durable railroad entity. The alias record is a one-source Amtrak mention; the target is the established National Railroad Passenger Corporation (Amtrak) record with many Amtrak aliases and source references.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_amtrak",
+          "record_kind": "entity",
+          "entity_name": "Amtrak",
+          "display_name": "National Railroad Passenger Corporation (Amtrak)",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_100291",
+            "meeting_doc_105836",
+            "meeting_doc_105871",
+            "meeting_doc_107616",
+            "meeting_doc_107621"
+          ],
+          "evidence_refs": [
+            "meeting_doc_105871#p006_c0001",
+            "meeting_doc_100291#p016_c0011",
+            "meeting_doc_107616#p002_c0008",
+            "meeting_doc_107621#p005_c0001"
+          ],
+          "source_quote": "Amtrak's Northeast Corridor"
+        },
+        "alias": {
+          "record_id": "entity_meeting-doc-amtrak",
+          "record_kind": "entity",
+          "entity_name": "Amtrak",
+          "entity_type": "railroad",
+          "source_ids": [
+            "meeting_doc_102686"
+          ],
+          "evidence_refs": [
+            "meeting_doc_102686#p008_c0003"
+          ],
+          "source_quote": "Amtrak (which provided the Acela equipment and fully participated)"
+        }
+      },
+      "guard_notes": "Entity merge guard satisfied: exact Amtrak name and target display expands the legal/common name; railroad/agency type labels are compatible for the same operator. Alias absent from data/identity-overrides/merges.json and visible identity prep through identity120; pair absent from do-not-merge."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_better-buses-program",
+      "target_id": "entity_better-buses-program",
+      "alias_id": "entity_betterbuses-program-mar2025",
+      "canonical_name": "BETTERBUSES",
+      "alias_name": "BETTERBUSES",
+      "reason": "Same durable Better Buses program branding. Both records use the exact BETTERBUSES entity name; the alias is a later MTA BETTERBUSES program record and the target already consolidates Better Buses program aliases across bus-priority sources.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_better-buses-program",
+          "record_kind": "entity",
+          "entity_name": "BETTERBUSES",
+          "display_name": "Better Buses",
+          "entity_type": "program",
+          "source_ids": [
+            "42nd_st_cb5_jun242019",
+            "bay_pkwy_cropsey_ave_cb11_jun2025",
+            "bay_pkwy_cropsey_ave_cb12_jun2025",
+            "flatbush_ave_brooklyn_bus_priority_kick_off_june2022"
+          ],
+          "evidence_refs": [
+            "bay_pkwy_cropsey_ave_cb11_jun2025#p001_c0005",
+            "bay_pkwy_cropsey_ave_cb12_jun2025#p001_c0005",
+            "42nd_st_cb5_jun242019#p002_c0005"
+          ],
+          "source_quote": "BETTERBUSES"
+        },
+        "alias": {
+          "record_id": "entity_betterbuses-program-mar2025",
+          "record_kind": "entity",
+          "entity_name": "BETTERBUSES",
+          "display_name": "MTA BETTERBUSES",
+          "entity_type": "program",
+          "source_ids": [
+            "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "116_st_morningside_ave_pleasant_ave_cb9_feb2025",
+            "116_st_morningside_ave_pleasant_ave_cb9_jun2025",
+            "34th_st_enhanced_bus_priority_cb4_may2025"
+          ],
+          "evidence_refs": [
+            "116_st_morningside_ave_pleasant_ave_cb11_mar2025#p001_c0004",
+            "116_st_morningside_ave_pleasant_ave_cb9_feb2025#p001_c0004",
+            "116_st_morningside_ave_pleasant_ave_cb9_jun2025#p001_c0006"
+          ],
+          "source_quote": "BETTERBUSES"
+        }
+      },
+      "guard_notes": "Entity merge guard satisfied: exact branded program name and compatible program type; not merging a project/corridor/source-time event. Alias absent from data/identity-overrides/merges.json and visible identity prep through identity120; pair absent from do-not-merge."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_201203-brt-34th-cac6-city-of-ny",
+      "target_id": "entity_201203-brt-34th-cac6-city-of-ny",
+      "alias_id": "entity_city-of-new-york-meeting-doc-138456",
+      "canonical_name": "City of New York",
+      "alias_name": "City of New York",
+      "reason": "Same durable municipal government entity. Both records use the exact City of New York name; the alias is a single meeting-doc reference to City funding and the target is the broader City of New York entity record.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_201203-brt-34th-cac6-city-of-ny",
+          "record_kind": "entity",
+          "entity_name": "City of New York",
+          "entity_type": "agency",
+          "source_ids": [
+            "201203_brt_34th_cac6",
+            "meeting_doc_129041",
+            "meeting_doc_160406",
+            "meeting_doc_160441"
+          ],
+          "evidence_refs": [
+            "201203_brt_34th_cac6#p019_c0003",
+            "201203_brt_34th_cac6#p019_c0004",
+            "meeting_doc_160406#p001_c0011"
+          ],
+          "source_quote": "The MTA is reimbursed by the City of New York for the operating deficits of MTA Bus Company."
+        },
+        "alias": {
+          "record_id": "entity_city-of-new-york-meeting-doc-138456",
+          "record_kind": "entity",
+          "entity_name": "City of New York",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_138456"
+          ],
+          "evidence_refs": [
+            "meeting_doc_138456#p001_c0011"
+          ],
+          "source_quote": "$496,000 for the SIM23 and SIM24 funded by the City of New York"
+        }
+      },
+      "guard_notes": "Entity merge guard satisfied: exact municipal-government name; not a city agency subunit, office, or person. Alias absent from data/identity-overrides/merges.json and visible identity prep through identity120; pair absent from do-not-merge."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_201203-brt-34th-cac6-city-of-ny",
+      "target_id": "entity_201203-brt-34th-cac6-city-of-ny",
+      "alias_id": "entity_meeting-doc-104796-nyc",
+      "canonical_name": "City of New York",
+      "alias_name": "City of New York",
+      "reason": "Same durable municipal government entity. The alias record identifies City of New York as municipal government and includes the quoted City full name; the target is the broader City of New York entity record.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_201203-brt-34th-cac6-city-of-ny",
+          "record_kind": "entity",
+          "entity_name": "City of New York",
+          "entity_type": "agency",
+          "source_ids": [
+            "201203_brt_34th_cac6",
+            "meeting_doc_129041",
+            "meeting_doc_160406",
+            "meeting_doc_160441"
+          ],
+          "evidence_refs": [
+            "201203_brt_34th_cac6#p019_c0003",
+            "201203_brt_34th_cac6#p019_c0004",
+            "meeting_doc_160406#p001_c0011"
+          ],
+          "source_quote": "East Section - City of New York"
+        },
+        "alias": {
+          "record_id": "entity_meeting-doc-104796-nyc",
+          "record_kind": "entity",
+          "entity_name": "City of New York",
+          "entity_type": "municipal government",
+          "source_ids": [
+            "meeting_doc_104796",
+            "meeting_doc_129051",
+            "meeting_doc_147341"
+          ],
+          "evidence_refs": [
+            "meeting_doc_104796#p004_c0003",
+            "meeting_doc_104796#p076_c0009",
+            "meeting_doc_129051#p001_c0003"
+          ],
+          "source_quote": "City of New York (\"City\")"
+        }
+      },
+      "guard_notes": "Entity merge guard satisfied: exact municipal-government name and compatible broad government type; not a city agency subunit, office, or person. Alias absent from data/identity-overrides/merges.json and visible identity prep through identity120; pair absent from do-not-merge."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_nyc-ddc",
+      "target_id": "entity_nyc-ddc",
+      "alias_id": "entity_nyc-ddc-brt-woodhaven-may2016",
+      "canonical_name": "NYC Department of Design and Construction",
+      "alias_name": "NYC Department of Design and Construction",
+      "reason": "Same durable NYC agency. The alias record gives the full NYC Department of Design and Construction name with DDC acronym; the target is the established DDC agency record.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_nyc-ddc",
+          "record_kind": "entity",
+          "entity_name": "NYC Department of Design and Construction",
+          "display_name": "Department of Design and Construction",
+          "entity_type": "government_agency",
+          "source_ids": [
+            "161st_bx6_capital_project_2026",
+            "201011_nostrand_handout",
+            "2012_04_26_sbs_utica",
+            "2012_06_nostrand_sbs_cac5_slides"
+          ],
+          "evidence_refs": [
+            "161st_bx6_capital_project_2026#p001_b0001",
+            "b44_sbs_progress_report_2016#p005_c0007",
+            "m86_sbs_progress_report_2017#p011_c0008",
+            "201011_nostrand_handout#p002_c0008"
+          ],
+          "source_quote": "DOT, NYCT, and the Department of Design and Construction are in the process of designing SBS stations."
+        },
+        "alias": {
+          "record_id": "entity_nyc-ddc-brt-woodhaven-may2016",
+          "record_kind": "entity",
+          "entity_name": "NYC Department of Design and Construction",
+          "display_name": "NYC Department of Design and Construction (DDC)",
+          "entity_type": "agency",
+          "source_ids": [
+            "brt_woodhaven_openhouses_boards_may2016"
+          ],
+          "evidence_refs": [
+            "brt_woodhaven_openhouses_boards_may2016#p008_c0019"
+          ],
+          "source_quote": "In partnership with the NYC Department of Design and Construction (DDC)"
+        }
+      },
+      "guard_notes": "Entity merge guard satisfied: exact full agency name with acronym expansion and compatible agency type; not an office/person or agency/subunit mismatch. Alias absent from data/identity-overrides/merges.json and visible identity prep through identity120; pair absent from do-not-merge."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_nyc-ddc",
+      "target_id": "entity_nyc-ddc",
+      "alias_id": "entity_nyc-ddc-woodhaven-2015",
+      "canonical_name": "NYC Department of Design and Construction",
+      "alias_name": "NYC Department of Design and Construction",
+      "reason": "Same durable NYC agency. The alias record names NYC Department of Design and Construction in a Woodhaven source; the target is the established DDC agency record.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_nyc-ddc",
+          "record_kind": "entity",
+          "entity_name": "NYC Department of Design and Construction",
+          "display_name": "Department of Design and Construction",
+          "entity_type": "government_agency",
+          "source_ids": [
+            "161st_bx6_capital_project_2026",
+            "201011_nostrand_handout",
+            "2012_04_26_sbs_utica",
+            "2012_06_nostrand_sbs_cac5_slides"
+          ],
+          "evidence_refs": [
+            "161st_bx6_capital_project_2026#p001_b0001",
+            "b44_sbs_progress_report_2016#p005_c0007",
+            "m86_sbs_progress_report_2017#p011_c0008",
+            "201011_nostrand_handout#p002_c0008"
+          ],
+          "source_quote": "DOT, NYCT, and the Department of Design and Construction are in the process of designing SBS stations."
+        },
+        "alias": {
+          "record_id": "entity_nyc-ddc-woodhaven-2015",
+          "record_kind": "entity",
+          "entity_name": "NYC Department of Design and Construction",
+          "entity_type": "agency",
+          "source_ids": [
+            "2015_05_13_brt_woodhaven_cb6_presentation"
+          ],
+          "evidence_refs": [
+            "2015_05_13_brt_woodhaven_cb6_presentation#p038_c0002"
+          ],
+          "source_quote": "Fall 2015: Transfer project to NYC Dept. of Design and Construction for Final Design and engineering"
+        }
+      },
+      "guard_notes": "Entity merge guard satisfied: exact full agency name with common Dept. abbreviation in evidence and compatible agency type; not an office/person or agency/subunit mismatch. Alias absent from data/identity-overrides/merges.json and visible identity prep through identity120; pair absent from do-not-merge."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_nyc-dot",
+      "target_id": "entity_nyc-dot",
+      "alias_id": "entity_nyc-dot-sep2022",
+      "canonical_name": "New York City Department of Transportation",
+      "alias_name": "NYC Department of Transportation",
+      "reason": "Same durable NYC DOT agency. The alias record uses the NYC Department of Transportation name; the target is the established New York City Department of Transportation agency record with many NYC DOT aliases.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_nyc-dot",
+          "record_kind": "entity",
+          "entity_name": "New York City Department of Transportation",
+          "display_name": "NYC DOT as Publisher",
+          "entity_type": "agency",
+          "source_ids": [
+            "080421_brt_cb5_34th_street_fullboardpresentation",
+            "100331_brt_cb5_34th_street_transitway",
+            "100503_brt_cb5_34th_street_transitway",
+            "100915_brt_cb5_34th_street_transitway"
+          ],
+          "evidence_refs": [
+            "m86_sbs_progress_report_2017#p003_c0003",
+            "14th_street_winter2020_monitoring#p002_c0006",
+            "14th_street_fall2019_monitoring#p002_c0006",
+            "14th_street_busway#p001_b0001"
+          ],
+          "source_quote": "Select Bus Service is a joint project of NYC DOT and MTA New York City Transit"
+        },
+        "alias": {
+          "record_id": "entity_nyc-dot-sep2022",
+          "record_kind": "entity",
+          "entity_name": "NYC Department of Transportation",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_95176"
+          ],
+          "evidence_refs": [
+            "meeting_doc_95176#p006_c0012"
+          ],
+          "source_quote": "We continue to work with our partners at NYC Department of Transportation to expand bus priority throughout the city this year."
+        }
+      },
+      "guard_notes": "Entity merge guard satisfied: NYC Department of Transportation is the same agency as New York City Department of Transportation; compatible agency type and no person/office/subunit conflict. Alias absent from data/identity-overrides/merges.json and visible identity prep through identity120; pair absent from do-not-merge."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_nyc-dot",
+      "target_id": "entity_nyc-dot",
+      "alias_id": "entity_nyc-dot-meeting-doc-133406",
+      "canonical_name": "New York City Department of Transportation",
+      "alias_name": "NYC Department of Transportation",
+      "reason": "Same durable NYC DOT agency. The alias record gives NYC Department of Transportation with the NYC DOT acronym; the target is the established New York City Department of Transportation agency record.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_nyc-dot",
+          "record_kind": "entity",
+          "entity_name": "New York City Department of Transportation",
+          "display_name": "NYC DOT as Publisher",
+          "entity_type": "agency",
+          "source_ids": [
+            "080421_brt_cb5_34th_street_fullboardpresentation",
+            "100331_brt_cb5_34th_street_transitway",
+            "100503_brt_cb5_34th_street_transitway",
+            "100915_brt_cb5_34th_street_transitway"
+          ],
+          "evidence_refs": [
+            "m86_sbs_progress_report_2017#p003_c0003",
+            "14th_street_winter2020_monitoring#p002_c0006",
+            "14th_street_fall2019_monitoring#p002_c0006",
+            "14th_street_busway#p001_b0001"
+          ],
+          "source_quote": "Select Bus Service is a joint project of NYC DOT and MTA New York City Transit"
+        },
+        "alias": {
+          "record_id": "entity_nyc-dot-meeting-doc-133406",
+          "record_kind": "entity",
+          "entity_name": "NYC Department of Transportation",
+          "display_name": "NYC Department of Transportation (NYC DOT)",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_133406"
+          ],
+          "evidence_refs": [
+            "meeting_doc_133406#p001_c0010"
+          ]
+        }
+      },
+      "guard_notes": "Entity merge guard satisfied: NYC Department of Transportation and NYC DOT acronym match the target agency; compatible agency type and no person/office/subunit conflict. Alias absent from data/identity-overrides/merges.json and visible identity prep through identity120; pair absent from do-not-merge."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_nyc-dot",
+      "target_id": "entity_nyc-dot",
+      "alias_id": "entity_meeting-doc-113986-nyc-dot",
+      "canonical_name": "New York City Department of Transportation",
+      "alias_name": "NYC Department of Transportation",
+      "reason": "Same durable NYC DOT agency. The alias record's entity name is NYC Department of Transportation and its evidence quote is NYC DOT; the target is the established New York City Department of Transportation agency record.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_nyc-dot",
+          "record_kind": "entity",
+          "entity_name": "New York City Department of Transportation",
+          "display_name": "NYC DOT as Publisher",
+          "entity_type": "agency",
+          "source_ids": [
+            "080421_brt_cb5_34th_street_fullboardpresentation",
+            "100331_brt_cb5_34th_street_transitway",
+            "100503_brt_cb5_34th_street_transitway",
+            "100915_brt_cb5_34th_street_transitway"
+          ],
+          "evidence_refs": [
+            "m86_sbs_progress_report_2017#p003_c0003",
+            "14th_street_winter2020_monitoring#p002_c0006",
+            "14th_street_fall2019_monitoring#p002_c0006",
+            "14th_street_busway#p001_b0001"
+          ],
+          "source_quote": "Select Bus Service is a joint project of NYC DOT and MTA New York City Transit"
+        },
+        "alias": {
+          "record_id": "entity_meeting-doc-113986-nyc-dot",
+          "record_kind": "entity",
+          "entity_name": "NYC Department of Transportation",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_113986"
+          ],
+          "evidence_refs": [
+            "meeting_doc_113986#p006_c0010"
+          ],
+          "source_quote": "NYC DOT"
+        }
+      },
+      "guard_notes": "Entity merge guard satisfied: alias uses the NYC DOT agency name/acronym matching the established target agency; compatible agency type and no person/office/subunit conflict. Alias absent from data/identity-overrides/merges.json and visible identity prep through identity120; pair absent from do-not-merge."
+    }
+  ],
+  "guard_summary": {
+    "scope": "Only global record kind entity considered.",
+    "exclusions": [
+      "Excluded aliases already present in data/identity-overrides/merges.json.",
+      "Excluded entity aliases already prepared in visible codex identity prep batches through identity120.",
+      "Checked data/identity-overrides/do-not-merge.json entity pairs for the proposed target/alias pairs.",
+      "Skipped low-confidence role/person, committee/member, office/person, agency/subunit, broad label, and source-time false-friend candidates."
+    ],
+    "durable_shape_reminder": "data/identity-overrides/merges.json stores alias_id -> target_id entries; each proposal names target_id and alias_id explicitly.",
+    "proposal_filter": "High-confidence exact durable entity identity only; no provider-backed or external LLM commands."
+  },
+  "command_evidence": [
+    {
+      "command": "rg --files data | rg '(^data/identity-overrides/merges\\.json$|^data/review_notes/.*identity.*\\.json$|^data/canonical/.*entity.*|^data/materialized/.*entity.*)'",
+      "purpose": "Located relevant deterministic identity, review-note, and canonical entity files."
+    },
+    {
+      "command": "jq 'to_entries[0:10]' data/identity-overrides/merges.json",
+      "purpose": "Confirmed durable merge override shape uses alias_id -> target_id entries under aliases.<kind>."
+    },
+    {
+      "command": "jq -n ... data/review_notes/codex-identity-batch*-prep.json",
+      "purpose": "Built visible prepared-entity alias exclusion set through identity120."
+    },
+    {
+      "command": "jq -n --slurpfile merges data/identity-overrides/merges.json --slurpfile ents data/canonical/entities.jsonl ...",
+      "purpose": "Grouped canonical entity records by deterministic normalized entity names and filtered aliases absent from applied merges and prior prep files."
+    },
+    {
+      "command": "jq -r 'select(.record_id as $id | [...candidate ids...] | index($id)) | {...}' data/canonical/entities.jsonl",
+      "purpose": "Inspected target and alias record names, types, source ids, aliases, and evidence refs for candidate proposals."
+    },
+    {
+      "command": "jq -r --argjson pairs '[...] ' '(.pairs.entity // []) as $dnm | $pairs | map(. as $p | {pair:$p, blocked:any($dnm[]; ((.record_ids|index($p[0])) and (.record_ids|index($p[1]))))})' data/identity-overrides/do-not-merge.json",
+      "purpose": "Verified proposed target/alias pairs are not listed in do-not-merge."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "purpose": "Captured artifact created_at timestamp."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "canonicalize",
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema-propose",
+    "ontology-normalize-run",
+    "ingest --profile",
+    "write --profile",
+    "materialize",
+    "validate",
+    "export-jsonl",
+    "DB publish",
+    "DB repair",
+    "provider-backed commands",
+    "external LLM commands"
+  ]
+}

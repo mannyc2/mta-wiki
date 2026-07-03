@@ -1,0 +1,100 @@
+{
+  "note_id": "codex-source-prep-spreadsheet-batch020-prep",
+  "created_at": "2026-06-23T17:47:46.865Z",
+  "author": "codex",
+  "kind": "source_prep_spreadsheet_batch_applied_and_ingest_started",
+  "status": "applied_wave46_detached_running",
+  "scope": "Applied subagent-reviewed deterministic spreadsheet preview sidecars for 10 not-ready spreadsheet sources after a clean wave45 generated-output checkpoint, refreshed readiness, and started the reopened ready pool as detached wave46.",
+  "reviewed_by_subagent": {
+    "agent_id": "019ef592-8dbb-7320-8626-4139ea8d349e",
+    "mode": "read_only",
+    "confirmation": "No edits, provider-backed commands, Chandra/vLLM/OCR touches."
+  },
+  "mutation_mechanism": "bun packages/cli/src/cli.ts source-prep-apply-preview <source_id> --run-id spreadsheet-backlog-20260623; writes raw/sources/<source_id>/text.txt and blocks.jsonl from reviewed data/source-prep sidecars",
+  "sources": [
+    {
+      "source_id": "meeting_doc_33686",
+      "blocks": 144,
+      "hazard": "Abbreviated sheet labels: Consold, Occp-Gr; preserve literals."
+    },
+    {
+      "source_id": "meeting_doc_33691",
+      "blocks": 115,
+      "hazard": "None obvious."
+    },
+    {
+      "source_id": "meeting_doc_33701",
+      "blocks": 376,
+      "hazard": "Large 4-sheet variance/subsidy workbook; preserve long labels, negative values, ACCRUAL/CASH split."
+    },
+    {
+      "source_id": "meeting_doc_42416",
+      "blocks": 135,
+      "hazard": "Dense debt-service budget workbook."
+    },
+    {
+      "source_id": "meeting_doc_42431",
+      "blocks": 144,
+      "hazard": "Abbreviated sheet labels; preserve literals."
+    },
+    {
+      "source_id": "meeting_doc_42436",
+      "blocks": 117,
+      "hazard": "None obvious."
+    },
+    {
+      "source_id": "meeting_doc_42441",
+      "blocks": 63,
+      "hazard": "None obvious."
+    },
+    {
+      "source_id": "meeting_doc_42446",
+      "blocks": 387,
+      "hazard": "Dense 7770-cell preview; large 4-sheet variance/subsidy workbook."
+    },
+    {
+      "source_id": "meeting_doc_43876",
+      "blocks": 135,
+      "hazard": "Dense debt-service budget workbook."
+    },
+    {
+      "source_id": "meeting_doc_43891",
+      "blocks": 115,
+      "hazard": "None obvious."
+    }
+  ],
+  "verification": {
+    "source_prep_tests": "bun test packages/pipeline/test/sources/source-prep.test.ts: 6 pass, 0 fail",
+    "blocks_line_counts_checked": true,
+    "repo_secret_scan_after_launch": "rg for Pioneer key fragments returned no matches"
+  },
+  "readiness_after_apply": {
+    "command": "bun packages/cli/src/cli.ts campaign readiness --id validation-2026-06",
+    "total": 2566,
+    "ready": 2492,
+    "ready_never_ingested": 10,
+    "already_ingested": 2490,
+    "quarantined": 74,
+    "interpretation": "The reopened 10-source pool came from batch020 and was launched as wave46."
+  },
+  "ingest_started": {
+    "wave": 46,
+    "pid": 1476775,
+    "source_count": 10,
+    "concurrency": 10,
+    "materialize_cadence": "MTA_MATERIALIZE_EVERY=100000",
+    "profile": "pioneer-deepseek-flash",
+    "command_template": "PIONEER_API_KEY='<PIONEER_API_KEY>' MTA_MATERIALIZE_EVERY=100000 setsid -f bun packages/cli/src/cli.ts campaign ingest --wave 46 --id validation-2026-06 --size 10 --concurrency 10 --timeout-min 300 --profile pioneer-deepseek-flash",
+    "secret_persisted": false
+  },
+  "commands_not_run": [
+    "campaign dedup",
+    "canonicalize*",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "write",
+    "ask",
+    "schema",
+    "generated-output materialize/export/validate while wave46 active"
+  ]
+}

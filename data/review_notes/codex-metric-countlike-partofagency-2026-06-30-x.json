@@ -1,0 +1,181 @@
+{
+  "note_id": "codex-metric-countlike-partofagency-2026-06-30-x",
+  "created_at": "2026-06-30",
+  "mode": "codex_only_deterministic",
+  "external_provider_llms_used": false,
+  "forbidden_commands_used": [],
+  "subagents": [
+    {
+      "agent_id": "019f199b-2220-74f1-9ef5-1ff7ad65413c",
+      "role": "bounded_read_only_scout",
+      "status": "closed",
+      "finding": "Recommended the static organization_hierarchy/part_of_agency relation-status rule as the next high-confidence non-metric slice."
+    }
+  ],
+  "implemented_changes": [
+    {
+      "bucket": "metric_claim.unit_normalized.unit_family",
+      "change": "Added exact aliases for residual count-like, population, safety, safety-rate, count-rate, frequency, duration-rate, money-rate, mass, engagement, and ridership metric-unit literals.",
+      "files": [
+        "packages/pipeline/src/ontology/normalizers.ts",
+        "packages/pipeline/test/ontology/normalizers.test.ts"
+      ],
+      "before": {
+        "other": 1978,
+        "count": 2253,
+        "ridership": 2071,
+        "population": 320,
+        "safety": 294,
+        "safety_rate": 213,
+        "rate": 188,
+        "count_rate": 68,
+        "engagement": 62,
+        "frequency": 10,
+        "duration_rate": 2,
+        "money_rate": 695,
+        "mass": 0
+      },
+      "after": {
+        "other": 1533,
+        "count": 2517,
+        "ridership": 2080,
+        "population": 348,
+        "safety": 335,
+        "safety_rate": 235,
+        "rate": 197,
+        "count_rate": 93,
+        "engagement": 71,
+        "frequency": 23,
+        "duration_rate": 10,
+        "money_rate": 703,
+        "mass": 9
+      },
+      "intentionally_guarded_literals": [
+        "millions",
+        "customers",
+        "thousands",
+        "units",
+        "M",
+        "B",
+        "year",
+        "riders per car",
+        "per annum",
+        "per square foot"
+      ]
+    },
+    {
+      "bucket": "relation.assertion_status",
+      "change": "Added narrow materialize-time assertion inference for static entity-to-entity organization_hierarchy/part_of_agency relations, guarded against self-links and future/former/proposed wording.",
+      "files": [
+        "packages/pipeline/src/records/assertion-qualifiers.ts",
+        "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+      ],
+      "before": {
+        "unknown": 10329,
+        "delivered": 2740
+      },
+      "after": {
+        "unknown": 9799,
+        "delivered": 3270
+      },
+      "guard_examples_left_unknown": [
+        "self-linked entity part_of_agency edges",
+        "non-entity endpoints",
+        "wrong relation family or kind",
+        "future/proposed/former/previous organization wording"
+      ]
+    }
+  ],
+  "duplicate_identity_status": {
+    "answer": "Yes, duplicate projects and routes have been fixed when deterministic evidence supports an alias or guard. The current obvious duplicate-display-name counters are already at zero, so remaining project/route work is mostly source-context review or policy-floor split/aggregate decisions rather than broad blind merging.",
+    "route": {
+      "canonical_records": 319,
+      "display_name_duplicate_keys": 0,
+      "merge_aliases": 147,
+      "do_not_merge_pairs": 68
+    },
+    "project": {
+      "canonical_records": 1862,
+      "display_name_duplicate_keys": 0,
+      "merge_aliases": 352,
+      "do_not_merge_pairs": 65
+    }
+  },
+  "verification": {
+    "tests": [
+      {
+        "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+        "result": "pass",
+        "tests": 274,
+        "expects": 4224
+      },
+      {
+        "command": "bun test packages/pipeline/test/records/submissions.test.ts",
+        "result": "pass",
+        "tests": 29,
+        "expects": 176
+      },
+      {
+        "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+        "result": "pass",
+        "tests": 19,
+        "expects": 57
+      },
+      {
+        "command": "bun run typecheck",
+        "result": "pass"
+      }
+    ],
+    "materialize": {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "pass",
+      "materialized_submissions": 93092,
+      "total_submissions": 98102,
+      "retired_submissions_skipped": 243,
+      "pages_reported": 7338,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass",
+      "issues": 0,
+      "submissions": 98102,
+      "canonical_records": 84040,
+      "wiki_pages": 7334
+    },
+    "sqlite": {
+      "command": "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+      "result": "ok"
+    }
+  },
+  "remaining_measurable_buckets": [
+    {
+      "bucket": "metric_claim.unit_normalized.unit_family other",
+      "count": 1533,
+      "next_examples": [
+        "millions",
+        "customers",
+        "thousands",
+        "crimes",
+        "riders per car",
+        "pedestrians per hour",
+        "buses per hour",
+        "outages",
+        "invoices"
+      ],
+      "policy": "Continue exact literal aliases only where the unit semantics are stable; leave broad scaled or service-rate forms guarded until context can distinguish family and denominator."
+    },
+    {
+      "bucket": "relation.assertion_status unknown",
+      "count": 9799,
+      "policy": "Continue narrow shape-based status rules only when endpoint kinds, relation family/kind, and wording prove lifecycle state."
+    },
+    {
+      "bucket": "route/project duplicate pressure",
+      "count": "policy_floor",
+      "policy": "Use identity aliases and do-not-merge guards for deterministic duplicate/split cases; avoid blind merging of aggregate/list context records."
+    }
+  ],
+  "validation_clean": true,
+  "goal_status": "active"
+}

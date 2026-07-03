@@ -1,0 +1,1676 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-95536"
+record_kind: "source"
+display_name: "MTA Board Action Items - September 2022"
+source_id: "meeting_doc_95536"
+source_ids:
+  - "meeting_doc_95536"
+local_observation_id: "source_meeting_doc_95536"
+local_observation_ids:
+  - "source_meeting_doc_95536"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-22T22:10:04.045Z"
+raw_text: "MTA Board Action Items - September 2022. Minutes of the MTA and MTA Agencies Regular Board Meeting held July 27, 2022, plus procurement and real estate actions for September 2022 Board meeting."
+submission_ids:
+  - "sub_0e8c3099393ec8e9"
+payload:
+  authority_tier: "board_material"
+  content_type: "board meeting minutes and board action items"
+  date_text: "September 2022"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2022-09"
+    precision: "month"
+    raw_text: "September 2022"
+  description: "MTA Board meeting materials including minutes from July 27, 2022 board meeting and procurement/real estate action items for September 21, 2022 board meeting."
+  published_date_normalized: "2022-09"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "MTA Board Action Items"
+evidence_refs:
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_95536#p001_c0003"
+    page_number: 1
+    source_id: "meeting_doc_95536"
+    source_path: "raw/sources/meeting_doc_95536/blocks.jsonl"
+    source_quote: "September 2022"
+    text_sha256: "sha256:d3de569b7c2f7f122fba8046d966cd109673d0c87ac58412c3d64f2b2a4c0649"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_95536#p001_c0004"
+    page_number: 1
+    source_id: "meeting_doc_95536"
+    source_path: "raw/sources/meeting_doc_95536/blocks.jsonl"
+    source_quote: "MTA Board Action Items"
+    text_sha256: "sha256:5f9cd9ce531d6511df2421ee46214de32e778d30511a3e4407e407cd96421065"
+    text_source: "raw_text"
+  -
+    block_id: "p004_c0001"
+    evidence_id: "meeting_doc_95536#p004_c0001"
+    page_number: 4
+    source_id: "meeting_doc_95536"
+    source_path: "raw/sources/meeting_doc_95536/blocks.jsonl"
+    source_quote: "Regular Board Meeting 2 Broadway New York, NY 10004 Wednesday, July 27, 2022 10:00 a.m."
+    text_sha256: "sha256:16c650cbfd368ab84a8fdf685e51b108da85646f414d92fbbd1fc17b384a30ef"
+    text_source: "raw_text"
+---
+
+# Board Book
+
+source_id: meeting_doc_95536
+citation: cite block ids exactly as shown in square brackets
+document: 934 block(s)
+
+## Page 1
+
+> [p001_c0001] The MTA logo, consisting of the letters 'MTA' in a stylized font inside a white circle.
+[p001_c0002] Metropolitan Transportation Authority
+[p001_c0003] September 2022
+[p001_c0004] MTA Board Action Items
+> [p001_c0005] A large, stylized MTA logo featuring the letters 'MTA' in a bold, sans-serif font, set against a dark blue circular background. The logo is centered on the page.
+
+## Page 2
+
+### [p002_c0001] MTA Board Meeting
+[p002_c0002] 2 Broadway 20th Floor Board Room New York, NY 10004 Wednesday, 9/21/2022 10:00 AM - 12:00 PM ET
+### [p002_c0003] 1. PUBLIC COMMENT PERIOD
+### [p002_c0004] 2. APPROVAL OF MINUTES
+### [p002_c0005] MTA and MTA Agencies Regular Board Meeting Joint Minutes - July 27, 2022
+[p002_c0006] MTAHQ
+[p002_c0007] NYCT/MaBSTOA/SIRTOA/MTA Bus Company
+[p002_c0008] MTA Metro-North Railroad
+[p002_c0009] MTA Long Island Rail Road
+[p002_c0010] MTA Triborough Bridge and Tunnel Authority
+[p002_c0011] MTA Construction & Development
+[p002_c0012] MTA and MTA Agencies Regular Board Meeting Joint Minutes - July 27, 2022 - Page 4
+### [p002_c0013] 3. COMMITTEE ON CAPITAL PROGRAM
+### [p002_c0014] C&D Procurements
+[p002_c0015] C&D Procurements - Page 19
+### [p002_c0016] 4. COMMITTEE ON METRO-NORTH RAILROAD & LONG ISLAND RAIL ROAD
+### [p002_c0017] LIRR Procurements Report (no items)
+### [p002_c0018] MNR Procurements Report
+[p002_c0019] MNR Procurements - Page 33
+### [p002_c0020] i. Non-Competitive (no items)
+### [p002_c0021] ii. Competitive
+[p002_c0022] Competitive - Page 37
+### [p002_c0023] iii. Ratification (no items)
+### [p002_c0024] 5. COMMITTEE ON NYCT & BUS
+### [p002_c0025] NYCT & Bus Procurements Report
+[p002_c0026] NYCT & Bus Procurements Report - Page 39
+### [p002_c0027] i. Non-Competitive
+[p002_c0028] NYCT Non-Competitive - Page 43
+### [p002_c0029] ii. Competitive (no items)
+### [p002_c0030] iii. Ratification (no items)
+
+## Page 3
+
+### [p003_c0001] 6. COMMITTEE ON MTA BRIDGES & TUNNELS OPERATIONS (no items)
+### [p003_c0002] 7. COMMITTEE ON FINANCE
+### [p003_c0003] Action Item
+### [p003_c0004] i. Independent Engineer for TBTA Bond Issues
+[p003_c0005] Approval of Independent Engineer for TBTA Bond Issues - Page 45
+### [p003_c0006] MTAHQ Procurements Report
+[p003_c0007] MTAHQ Procurement Report - Page 47
+### [p003_c0008] i. Non-Competitive (no items)
+### [p003_c0009] ii. Competitive
+[p003_c0010] MTAHQ Competitive Procurement - Page 51
+### [p003_c0011] iii. Ratification (no items)
+### [p003_c0012] Real Estate Items
+### [p003_c0013] i. Real Estate Agenda and Staff Summaries
+[p003_c0014] Real Estate Agenda and Staff Summaries - Page 54
+### [p003_c0015] 8. FIRST MUTUAL TRANSPORTATION ASSURANCE CO (FMTAC) (no items)
+### [p003_c0016] 9. EXECUTIVE SESSION
+
+## Page 4
+
+### [p004_c0001] Joint Minutes of the Metropolitan Transportation Authority, the New York City Transit Authority, the Manhattan and Bronx Surface Transit Operating Authority, the Staten Island Rapid Transit Operating Authority, the Metropolitan Suburban Bus Authority, the Triborough Bridge and Tunnel Authority, the Long Island Rail Road Company, Metro-North Commuter Railroad Company, MTA Construction & Development, the MTA Bus Company and the First Mutual Transportation Assurance Company Regular Board Meeting 2 Broadway New York, NY 10004 Wednesday, July 27, 2022 10:00 a.m.
+[p004_c0002] The following Board Members were present ( *Attended remotely ):
+[p004_c0003] Hon. Janno Lieber, Chair & CEO Hon. Andrew Albert Hon. Jamey Barbas Hon. Frank Borelli, Jr. Hon. Samuel Chu Hon. Michael Fleischer Hon. David Jones Hon. Blanca Lopez Hon. David Mack Hon. Isabel Midori Valdivia Espino* Hon. Haeda B. Mihaltses Hon Frankie Miranda Hon. Robert F. Mujica Hon. Harold Porr, III Hon Sheriff Soliman Hon Lisa Sorin Hon. Vincent Tessitore, Jr. Hon. Elizabeth Velez Hon. Neal Zuckerman
+[p004_c0004] The following alternate non-voting members were present:
+[p004_c0005] Hon. Gerard Bringmann Hon. Norman Brown Hon. Randolph Glucksman Hon. John Samuelsen
+[p004_c0006] _Master Page # 4 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 5
+
+[p005_c0001] Paige Graves, General Counsel, Lisette Camilo, Chief Administrative Officer, Quemuel Arroyo, Chief Accessibility Officer and Special Advisor to the Chair, Kevin Willens, Chief Financial Officer, Patrick Warren, Chief Safety and Security Officer, Richard Davey, President, NYCTA, Craig Cipriano, Chief Operating Officer, NYCT, Frank Annicaro, Acting President, MTA Bus Company, Catherine Rinaldi, President, Metro-North Railroad/LIRR Interim President, Daniel DeCrescenzo, President, TBTA, Jamie Torres-Springer, President, MTA C&D, Chris Pangilinan, Vice President, Paratransit, Michele Woods, Auditor General, Jaibala Patel, Chief, Office of the CFO, Sarah Meyer, Senior Vice President & Chief Customer Officer, Tim Mulligan, Senior Vice President, Operations, NYCT, Allison C. de Cerreno, Deputy Chief Operating Officer, Lucille Songhai, Assistant Director Government Affairs, State and Local Affairs-NYC, also attended the meeting.
+[p005_c0002] The Board of the Metropolitan Transportation Authority also met as the Boards of the New York City Transit Authority, the Manhattan and Bronx Surface Transit Operating Authority, the Staten Island Rapid Transit Operating Authority, the Metropolitan Suburban Bus Authority, the Triborough Bridge and Tunnel Authority, the Long Island Rail Road Company, Metro-North Commuter Railroad Company, the MTA Capital Construction Company, the MTA Bus Company, and the First Mutual Transportation Assurance Company.
+[p005_c0003] Unless otherwise indicated, these minutes reflect items on the agenda of the Board of the Metropolitan Transportation Authority, the New York City Transit Authority, the Manhattan and Bronx Surface Transit Operating Authority, the Staten Island Rapid Transit Operating Authority, the Metropolitan Suburban Bus Authority, the Triborough Bridge and Tunnel Authority, the Long Island Rail Road Company, Metro-North Commuter Railroad Company, the MTA Capital Construction Company, and the First Mutual Transportation Assurance Company.
+[p005_c0004] Chair Lieber called to order the July 2022 Board meeting.
+[p005_c0005] General Counsel Paige Graves confirmed a quorum of the Board members in attendance and noted the Board member joining the meeting remotely.
+[p005_c0006] A recorded audio public safety announcement was played.
+[p005_c0007] Chair Lieber noted that there is a capacity issue and the constraints on the number of people that the Board room can accommodate, which is a safety issue, and he stated that staff is assisting with managing the capacity issue.
+[p005_c0008] _MTA and Agencies' Regular Board Meeting Joint Minutes July 27, 2022_
+[p005_c0009] _Master Page # 5 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 6
+
+### [p006_c0001] 1. PUBLIC SPEAKERS' SESSION.
+[p006_c0002] The MTA Moderator announced that the following public speakers will speak either live virtually or in-person.
+[p006_c0003] The MTA Moderator reminded public speakers of the rules of conduct, the two-minute speaking limit and that speakers will be alerted when 30 seconds remain to conclude their remarks.
+[p006_c0004] The following public speakers commented (*live virtual comments):
+[p006_c0005] Christopher Greif, PCAC Howard Bernbaum, TWU Bradley Brashears, PCAC Jason Rabinowitz, private citizen* Lisa Daglian, Executive Director, PCAC Gian Carlo Pedulla, private citizen David Kupferberg, private citizen Charlton D'Souza, President, Passengers United* Cassie Raffucci, private citizen Valerie Joseph, Drivers Cooperative Michael Howard, Riders Alliance Vittorio Bugatti, private citizen* Tashia Lerebours, Access-A-Ride Reform Group ("AARRG") Daniel Roth, Mobilization for Justice Shelby Garner, representative for Congresswoman Carol B. Maloney Michael Ring, Disabled in Action Jean Ryan, President, Disabled In Action Reverend Brenda Price, Convent Avenue Baptist Church* Elizabeth Valdez, BCID Yesenia Torres, private citizen Khalia Hayslett, Travel Trainer Katheryn Fazio, private citizen Sunita Dutta, CIDNY Miriam Fisher, private citizen* Ruth Lowenkron, NYPLI CN, private citizen Jason Anthony, Amazon Labor Union*
+[p006_c0006] The Moderator announced that the allotted time for the public speakers' comments session has been reached and asked the remaining registered speakers to standby as the agency transitions to a separate live recording session. Remote public speakers participating via Zoom were advised to standby and wait for further instructions from the Moderator. Public speakers in attendance were advised to assemble in conference room #4. As a reminder, the Moderator stated that recorded comments will be distributed to the MTA Board and posted to the Board meeting web page and on YouTube.
+[p006_c0007] _MTA and Agencies' Regular Board Meeting Joint Minutes July 27, 2022_
+[p006_c0008] _Master Page # 6 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 7
+
+[p007_c0001] Refer to the video recording of the meeting produced by the MTA and maintained in MTA records for the content of speakers' statements.
+### [p007_c0002] 2. CHAIR LIEBER'S REMARKS.
+[p007_c0003] Chair Lieber thanked the public speakers, stating that it is important that the MTA hear directly from its stakeholders and hear from and interact directly with the public. Chair Lieber stated that many of the public speakers are part of the MTA's stakeholder advisory groups in one way or another, and he noted that public interaction is one aspect of the MTA's work that is incredibly important. The Chair thanked the public speakers for taking the time to come out and participate.
+[p007_c0004] Chair Lieber thanked everyone for joining today's meeting. Chair Lieber noted that there were substantive discussions at Monday's committee meetings, and the Chair thanked the Board, especially the new members, for their very substantive contributions as the organization prepares to face one of the MTA's biggest challenges ever, which is the looming fiscal cliff discussed at some length on Monday.
+[p007_c0005] Chair Lieber stated that, although government at all levels is not always known for taking on the hard issues, but with Governor Hochul's support, the MTA is taking on challenging issues: congestion pricing, redesigning the antiquated bus routes, and dramatically accelerating progress toward ADA accessibility. MTA celebrated the ADA settlement and the commitment of the MTA to making the entire subway system, along with its fully accessible bus system, fully accessible, and the partnership with the disability community is an incredibly important part of the process. Chair Lieber stated that MTA is trying to figure out, with the leadership of people like Board Member David Jones, how to have a fair and just system that will help reduce fare evasion—a complicated issue. In addition, MTA is executing transformative projects that were talked about for generations but never delivered—East Side Access, Third Track, Metro-North Penn Access (changing the lives of hundreds of thousands of people in the East Bronx), the Second Avenue Subway (a project that was promised to East Harlem since the '40s when they started knocking down the elevated train), and soon, with Governor Hochul's leadership, the reconstruction of existing Penn Station, the largest transportation facility in North America.
+[p007_c0006] Chair Lieber stated that the MTA is being transparent about all the issues it is facing, and the biggest issue is the financial tsunami, as referred to by former Chair Patrick Foye, brought on by COVID. The Chair stated that dealing with these issues is the only way forward if the MTA is going to be able to support the region's recovery and deliver on its mission, which is an equity mission as well as a mobility mission—that every community, especially those that do not have the option to get into a $50 Uber and get where they need to go, and true accessibility for all. Chair Lieber stated that he knows that every member of this Board takes those responsibilities incredibly seriously.
+[p007_c0007] Chair Lieber stated that Monday's committee meetings were busy, especially as previously stated, the Finance committee meeting, where CFO Kevin Willens unveiled the July Financial Plan, which the Chair stated came as no surprise since there have been many discussions about
+[p007_c0008] _MTA and Agencies' Regular Board Meeting Joint Minutes July 27, 2022_
+[p007_c0009] _Master Page # 7 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 8
+
+[p008_c0001] the MTA's finances and that the updated version has a more negative financial outlook than the February Plan, largely due to slower than expected ridership recovery rates.
+[p008_c0002] Chair Lieber stated that for well over a year, ridership was tracking to McKinsey's 2020 projections, and those projections had assumed that COVID would be a two-year pandemic that would recede after 2-3 distinct waves or surges thanks to the anticipated widespread vaccination. The Chair stated that a lot has changed since those initial projections, most important, the pandemic dragged out, with multiple COVID waves and a slow and steady shift in habits and attitudes that entrenched a certain level of remote work.
+[p008_c0003] Chair Lieber stated that also unpredicted at the time of McKinsey's 2020 report was frankly the upsurge in subway crime and disorder, which has had a measurable impact on rider and lapsed rider attitudes and experience. As a result of these variables, ridership since Omicron has returned more slowly than expected—at just 60% of pre-COVID numbers, when prior estimates had us by the end of this year closing in on 80-85%. Chair Lieber stated that the bottom line is that the operating deficit in the July Plan is projected to be $500 million larger and it will come sooner than previously anticipated.
+[p008_c0004] As a reminder, Chair Lieber stated that all this incredibly important information is being conveyed but the MTA is not taking any specific action on the Financial Plan today. The Chair stated that today's presentation is a preview of what may be expected in the November plan, before a vote on a final budget in December. Chair Lieber stated that it is important to provide the information so that discussions among all levels of government and all levels of the MTA's civic community can begin, because the MTA is an essential service, like fire, police, and sanitation, and millions of New Yorkers are relying on the MTA to continue providing full service. Chair Lieber stated that the MTA is not providing that much more service than in the bad days of the 1990s when the agency had the same level of ridership as it is having post-COVID.
+[p008_c0005] Chair Lieber stated that the MTA's prior business model was that revenue from the farebox made up 40-50% of the budget, however that is no longer viable or realistic. The MTA cannot expect to simply cut its way to balance the budget deficit, and as a result, the MTA is starting a dialogue with decision-makers in Albany, especially in the Legislature, to start everybody thinking about funding for mass transit. Chair Lieber stated that the MTA is not sitting on its hands until the Legislature is back in session in January—part of doing the hard stuff is being innovative and looking for new sources of revenue, which is what the agency is doing with the Transit Wireless contract, as discussed by Deputy CDO – Planning Fredericka Cuenca at Monday's Finance Committee.
+[p008_c0006] Chair Lieber stated that the Transit Wireless deal expands Wi-Fi connectivity to the MTA's tunnels—an amenity riders have been requesting for many years, and to all the above-ground stations. All the capital investment will be funded by the MTA's licensee, Transit Wireless, not out of MTA's pocket. Chair Lieber stated that there were some comments during the public comment period that obviously did not have that information—Transit Wireless is going to build out the entire underground system and the above ground system. The Chair
+[p008_c0007] _MTA and Agencies' Regular Board Meeting Joint Minutes July 27, 2022_
+[p008_c0008] _Master Page # 8 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 9
+
+[p009_c0001] stated that the Transit Wireless deal really checks every box—bringing new technology into the system, benefit for customers, producing significant additional revenue for the MTA.
+[p009_c0002] Chair Lieber stated that the MTA is also looking to provide financial support for key capital projects that have recently taken shape since the original 2020-2024 Capital Program was adopted—both reconstruction projects like Metro-North Penn Station Access, and the design phase of the Penn Reconstruction, but also for additional investments that have come up because of safety: subway platform doors, additional ADA upgrades, and a plan to more quickly and efficiently rebuild Metro-North’s indispensable Park Avenue Viaduct, which is one of the actions included in the Capital Program today.
+[p009_c0003] Chair Lieber stated that the MTA is putting forth an amendment to the Capital Plan to make room for these projects while also adjusting to the reality of higher rates of inflation, as discussed in detail by Tim Mulligan, Senior Vice President, Operations, NYCT, on Monday, and which the Board will vote on today.
+[p009_c0004] Chair Lieber stated that congestion pricing is obviously key to the MTA’s ability to deliver on all these projects, which represents $15 billion of the $55 billion Capital Plan, and the agency is quickly moving forward to get this historic program up and running. Chair Lieber stated that he leveled with the Board and with the public when the agency hit roadblocks in Washington, but with Governor Hochul’s support, the agency has overcome almost all those obstacles. Chair Lieber stated that he is happy to announce today that with the United States Department of Transportation’s (“USDOT”) approval of the Environmental Assessment—the environmental document that is the key to the federal process, expected very soon, the MTA is now expecting to publish the document for public comment early in August. The MTA will also schedule another six public hearings, on top of the 20 that have already taken place. Chair Lieber stated that Allison de Cerreño, who is the head of the MTA’s Central Business District Tolling program, will provide a presentation on congestion pricing later in the meeting.
+[p009_c0005] Chair Lieber stated that this major progress on congestion pricing makes it the right time to empanel the Traffic Mobility Review Board (“TMRB”)—the group that was required by state legislation to be formed by the MTA Board and charged with analyzing all the issues: the pricing and the arguments for exemptions and discounts and figuring out a package that would be recommended to the Board for review and approval. Chair Lieber emphasized that forming the TMRB is an important step and a step in compliance with state law for the process of congestion pricing. The TMRB’s recommendations will come back to the MTA Board for adoption, rejection, or modification when the TMRB have completed their work.
+[p009_c0006] Chair Lieber stated that he is honored to announce that an extraordinary group of New Yorkers have so far agreed to serve on this panel:
+- [p009_c0007] • Carl Weisbrod, former Chair of the City Planning Commission of New York, and a former member of this Board. • Scott Rechler, the Chairman of the Regional Plan Association (which worries about New Jersey and Connecticut as well as New York), Chair of RXR Realty, and a former MTA Board member.
+[p009_c0008] _MTA and Agencies’ Regular Board Meeting Joint Minutes July 27, 2022_
+[p009_c0009] _Master Page # 9 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 10
+
+- [p010_c0001] • Kathy Wylde, the longtime President of the Partnership for New York City. • John Banks, former MTA Board member. John Banks, who has had an amazing career in so many phases of New York civic life, most recently as the head of the Real Estate Board of New York and as the chief intergovernmental person for Con Edison. • MTA Board Member Elizabeth Velez, Bronxite owner of a Manhattan-based MWBE, who just finished an extraordinary term as the Chair of the New York Building Congress.
+[p010_c0002] Chair Lieber stated that the Board will vote today to approve the staff summary to establish the TMRB and appoint the TMRB members.
+[p010_c0003] Chair Lieber stated that he wants to take a moment to celebrate one of MTA's successes of late—the successful rollout of the Bronx Bus Network Redesign. Chair Lieber stated that the bus system in the Bronx has remained virtually unchanged for decades, and we all know change is never easy but so far, most customers are reacting positively.
+[p010_c0004] Chair Lieber presented a video created by the MTA's social media team consisting of feedback from riders on the new Bronx Bus Network Redesign.
+[p010_c0005] Chair Lieber thanked the entire team who worked on the Redesign—from Operations Planning to the Government/Community Relations outfit and everyone in between, which includes 225 employees who volunteered to be Bronx Bus Ambassadors, talking to customers across the borough as the program launched. Chair Lieber stated that it has been so gratifying to see this redesign launch and see it embraced by New Yorkers.
+[p010_c0006] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for the details of Chair Lieber's remarks and Board members' comments.
+### [p010_c0007] 3. CHIEF FINANCIAL OFFICER'S PRESENTATION OF 2022 MID-YEAR FORECAST, 2023 PRELIMINARY BUDGET AND JULY FINANCIAL PLAN 2023- 2026.
+[p010_c0008] MTA Chief Financial Officer Kevin Willens presented the MTA 2022 Mid-Year Forecast, 2023 Preliminary Budget and the July Financial Plan 2023-2026 to the Finance Committee and MTA Board members. Copies of the Mid-Year Forecast, Preliminary Budget, and July Financial Plan were distributed to Board members.
+[p010_c0009] Chair Lieber thanked Kevin Willens for the presentation and invited Board discussion.
+[p010_c0010] The details of the presentation and Board members' comments and discussion with respect thereto are included in the videotape of the meeting produced by the MTA and maintained in MTA records and the documents are available on MTA.info.
+[p010_c0011] _MTA and Agencies' Regular Board Meeting Joint Minutes July 27, 2022_
+[p010_c0012] _Master Page # 10 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 11
+
+### [p011_c0001] 4. CENTRAL BUSINESS TOLLING PROGRAM UPDATE.
+[p011_c0002] Allison C. deCerro, Deputy Chief Operating Officer, provided an update and presented highlights of the Central Business Tolling program.
+[p011_c0003] Chair Lieber thanked Allison C. deCerro for the presentation and invited Board discussion.
+[p011_c0004] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for the details of Allison C. deCerro's presentation and Board members' comments and discussion.
+### [p011_c0005] 5. MTA 2020-2024 CAPITAL PROGRAM AMENDMENT.
+[p011_c0006] Tim Mulligan Senior Vice President, Operations, NYCT, presented a summary of the proposed amendments to the Capital Program.
+- [p011_c0007] 1. Upon motion duly made and seconded, the Board approved the proposed amendment to the MTA 2020-2024 Capital Program that increases the total funding to $55.442 billion and authorizes the MTA to submit the $52.116 billion Capital Program Review Board (CPRB) portion of it to the CPRB for its review and approval, consistent with the recommendations of the Crowe Forensic Audit and in accordance with the Public Authorities Law Section 1269-b.
+[p011_c0008] Refer to the staff summary and documentation filed with the records of this meeting for the details on this item, and to the video recording of the meeting, produced by the MTA and maintained in MTA records, for Tim Mulligan's summary, and Board Member's comments and discussion.
+### [p011_c0009] 6. SUBWAY AND BUSES MONTHLY PULSE SURVEY.
+[p011_c0010] Sarah Meyer, Senior Vice President & Chief Customer Officer, presented a few major results of the survey.
+[p011_c0011] Chair Lieber acknowledged that this is Sarah Meyer's last Board meeting and he thanked her for all the presentations she provided during her tenure at MTA. Chair Lieber stated the Sarah Meyer leaves a strong legacy at the MTA and noted that she is highly regarded by the MTA riders and stakeholders, and he stated that the MTA is a better place because of her work.
+[p011_c0012] Chair Lieber announced that Shanifa Rieara, Senior Advisor for Communications and Policy, will act as Interim Chief Customer Officer, and he noted that recruitment for a new Chief Customer Officer is on-going.
+[p011_c0013] _MTA and Agencies' Regular Board Meeting Joint Minutes July 27, 2022_
+[p011_c0014] _Master Page # 11 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 12
+
+### [p012_c0001] 7. CENTRAL BUSINESS TOLLING PROGRAM - APPROVAL OF TRAFFIC MOBILITY REVIEW BOARD (“TMRB”).
+[p012_c0002] Upon motion duly made and seconded, the Board approved the establishment of the Traffic Mobility Review Board (“TMRB”), pursuant to NY CLS PAL, Section 553-k, and the appointment of the TMRB members. Board members David Mack and Frank Borelli, Jr. voted in opposition. Board member Elizabeth Velez abstained from the vote.
+[p012_c0003] Refer to the staff summary and documentation filed with the records of this meeting for the details on this item, and to the video recording of the meeting, produced by the MTA and maintained in MTA records, for Board Member’s comments and discussion.
+### [p012_c0004] 8. APPROVAL OF MINUTES.
+[p012_c0005] Upon motion duly made and seconded, the Board approved the Joint Minutes of the MTA and MTA Agencies Regular Board meeting held on June 29, 2022.
+[p012_c0006] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records for the details.
+### [p012_c0007] 9. TRIBOROUGH AND TUNNEL COMMITTEE.
+### [p012_c0008] A. Procurements:
+[p012_c0009] Commissioner Mack stated that there is one competitive procurement totaling $113.38 million.
+[p012_c0010]
+
+```text
+Personal Service Contract No. PSC-05-2741 $113,383,077 Contracts Conduent TBTA is seeking Board State & Local approval to amend this Solutions, Inc. personal service contract with Conduent State & Local Solutions, Inc. to extend the contract term for seventeen (17) months with supporting funding to provide customer service center services for E-ZPass New York customers.
+```
+### [p012_c0011] 10. JOINT LONG ISLAND RAIL ROAD/METRO-NORTH RAILROAD COMMITTEE.
+### [p012_c0012] A. Procurement Item: No Items.
+[p012_c0013] _MTA and Agencies’ Regular Board Meeting Joint Minutes July 27, 2022_
+[p012_c0014] _Master Page # 12 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 13
+
+### [p013_c0001] 11. NEW YORK CITY TRANSIT AND BUS COMMITTEE.
+### [p013_c0002] A. Procurements:
+[p013_c0003] Upon a motion duly made and seconded, the Board:
+- [p013_c0004] 1. Waived formal competitive bidding pursuant to Public Authorities Law, Section 1209-9(d) to test a new source, product, and technology; evaluate the service and reliability and approve the purchase of five low-floor 40-foot articulated all-electric buses from Nova in the total estimated amount of $8,275,562. 2. Approved a two-year contract extension with WSP USA Incorporated for worldwide inspection and testing services (November 1, 2022-October 31, 2024). 3-4. Exercise the contract option to extend the term of NYC Transit contract 06%11052 and MTA Bus Company (“MTABC”) contract J131613 with Sprague Operating Resources LLC for one year, from September 1, 2022 to August 31, 2023, to furnish and deliver Ultra-Low Sulfur Diesel #2 Fuel (“ULSD”) with Additives for use in buses at NYC Transit and MTABC locations for the combined estimated total of $209,923,366 ($160,500,243 for NYC Transit and $49,423,123 for MTABC).
+[p013_c0005] Refer to the staff summaries and documentation filed with the records of this meeting for the details on these items.
+### [p013_c0006] 12. AUDIT COMMITTEE.
+[p013_c0007] Refer to the Audit Committee’s minutes of this date for the details of the items approved by the Board, and to the video recording of the meeting, produced by the MTA and maintained in MTA records, for further information.
+### [p013_c0008] 13. CAPITAL PROGRAM COMMITTEE.
+### [p013_c0009] A. Procurements:
+[p013_c0010] Upon a motion duly made and seconded, the Board:
+- [p013_c0011] 1. Approved the award of a publicly advertised and competitively solicited contract (A46030) to Skanska Railroad Joint Venture (a joint venture consisting of Skanska USA Civil Northeast, Inc. and Railroad Construction Company, Inc.) for improvements on the Flushing Line in the amount of $199,955,000 and a duration of 980 calendar days. 2. Approved the award of a publicly advertised and competitively solicited contract (E30641) to Skanska USA Civil Northeast, Inc. for design-build services to replace seventeen (17) escalators at six (6) subway stations located in the Bronx, Brooklyn, and Manhattan in the amount of $114,970,000 and a duration of 1,447 calendar days.
+[p013_c0012] _MTA and Agencies’ Regular Board Meeting Joint Minutes July 27, 2022_
+[p013_c0013] _Master Page # 13 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 14
+
+- [p014_c0001] 3. Approved the award of a publicly advertised and competitively solicited contract (QM-36 B/C) to E-J Electric Installation Company for design-build services for the replacement and relocation of the Queens Midtown Tunnel refueling station and Queens Service Building switchgear for the amount of $25,450,000 and a duration of two (2) years and two (2) months. 4. Approved the award of three (3) modifications (Numbers 41, 42 and 43) to the Rutgers Tube Rehabilitation contract (P36444) with TC Electric/J-Track JV (a joint venture consisting of TC Electric LLC. and J-Track LLC) to address deterioration and corrosion of electrical systems in the 53 rd St. Tube for a total cost of $5,378,820. 5. Ratified a modification (Number 11) to the Component Replacement of High-Tension Switchgear at Seven Locations contract (P-37600) with Voltamps Electrical Contractor for the replacement of the existing transformer and rectifier equipment at the 41 st Street Substation in Queens for a total cost of $3,775,000.
+[p014_c0002] Refer to the staff summaries and documentation filed with the records of this meeting for the details on these items.
+### [p014_c0003] 14. MTA COMMITTEE ON FINANCE.
+### [p014_c0004] A. Procurement Items.
+[p014_c0005] Upon a motion duly made and seconded the Board approved the procurement items listed below. The specifics are set forth in the staff summaries and documentation filed with the meeting materials.
+- [p014_c0006] 1. Giro, Inc. (Montreal, Quebec) – Upgrade of HASTUS Scheduling System – No. 900000000004134. Approved the award of a six-year non-competitive miscellaneous service contract to Giro Inc. to upgrade the existing HASTUS Scheduling System for MTA Bus and NYCT Transit. 2. KD Analytical LLC (Alexandria, Virginia) – PROTECT Chemical Detection System Maintenance, Support & Related Services – No. 1000076648. Approval to modify a non-competitive miscellaneous services contract with KD Analytical LLC for the delivery, installation and maintenance of the MTA PROTECT Chemical Detection system to the Grand Central Madison Terminal (“GCM”) and Moynihan Train Hall (“Moynihan”), adjacent to Penn Station, at the estimated cost of $2,707,707. 3. Bentley Systems Inc. (Exton, Pennsylvania) – Bentley AssetWise SaaS Software – No. 900000000002257. Approval to extend the non-competitive contract with Bentley Systems Inc. for one additional year of software-as-a-service (“SaaS”) cloud subscription of MTA’s existing asset management software. This contract extension covers October 2022 through September 2023, in the not-to-exceed amount of $2,314,932.
+[p014_c0007] _MTA and Agencies’ Regular Board Meeting Joint Minutes July 27, 2022_
+[p014_c0008] _Master Page # 14 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 15
+
+- [p015_c0001] 4. Kronos, Inc. (Chelmsford, Massachusetts) – Kronos Timekeeping System, Hardware, Software, Training and Consulting – No. 900000000002396. Approval to add necessary funding to the previously Board-approved non-competitive All-Agency Timekeeping System Contract with Kronos, Inc. to provide one-year of continued maintenance and replacement of hardware, software licensing and support, firmware upgrade and professional services. The additional funding necessary for these critical timekeeping services for the additional one (1) year totals $8,770,992.04 and will cover services through and including August 30, 2023. 5. Oliver Wyman – Actuarial and Risk Management Consulting Services – No. 15744-0100. Approved the award of a competitively negotiated personal services contract to Oliver Wyman for the provision of actuarial and risk management consulting services in connection with the self-insured programs of MTA Agencies and programs insured through FMTAC. 6. WSP USA, Inc. (New York, N.Y.) – Transportation Planning Research Services – No. 15099-0300. Approval to increase the aggregate amount of the Transportation Planning and Research contract by the not-to-exceed amount of $8.725 million. The increase will be used to engage the services of one of the approved firms, WSP USA, Inc. (“WSP”), to complete the environmental documentation for the Central Business District Tolling Program Environmental Review (“CBDTO”). 7. Quality and Assurance Technology Corp. (New York, N.Y.) – All-Agency As-Needed Purchase of Dell Hardware – No. 900000000002860. Approval to extend the current contract with Quality and Assurance Technology Corp. (“QnA”) to furnish and deliver the Dell PCs, laptops, and related accessories to the MTA on an as-needed basis for a three-year period and add funding in the amount of $20,230,000 to purchase additional desktop and laptop computers and related accessories during the extension period. 8. Sprague Operating Resources, LLC (Portsmouth, New Hampshire) – Supply and Delivery of Transportation and Heating Fuels and Related Services – 16043-0000. Approval for a modification to the competitively negotiated, five-year estimated quantity all-agency contract approved by the Board and awarded to Sprague Operating Resources, LLC in September of 2017 to provide transportation and heating fuels and related services for MTA’s operating agencies. This modification, in the amount of $61.5 million is needed to extend the contract (expiring August 31, 2022) by four months. 9. Goldman Sachs & Co., LLC (New York, N.Y.) – Financial Advisory Services for Alternative Delivery – No. 0000015502-0100. Ratified modification to a competitively awarded contract to Goldman Sachs & Co., LLC for an additional not-to-exceed amount of $4 million resulting in a total contract value of $4.4 million for financial advisory services in support of a Public Private Partnership procurement through the Rapid Station Accessibility Upgrade Program.
+[p015_c0002] _MTA and Agencies’ Regular Board Meeting Joint Minutes July 27, 2022_
+[p015_c0003] _Master Page # 15 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 16
+
+- [p016_c0001] 10. Skae Power Solutions LLC (Palisades, N.Y.) – No. 900000000004072. Ratified the award of a non-competitive emergency personal services contract to Skae Power Solutions LLC to provide engineering analysis at various MTA critical facilities throughout the New York Metro area.
+### [p016_c0002] B. Real Estate Items.
+[p016_c0003] Upon a motion duly made and seconded the Board approved the real estate items listed below. The specifics are set forth in the staff summaries and documentation filed with the meeting materials.
+### [p016_c0004] Metropolitan Transportation Authority
+- [p016_c0005] 1. Adoption of Board policy to permit MTA Real Estate, in partnership with MTA Transit Oriented Development, to enter into licenses with suburban counties, municipalities, non-profit organizations, or private entities to provide first/last mile amenities at MTA suburban passenger commuter rail stations. 2. Approval of a new policy to regulate the process MTA Real Estate follows to enter into certain agreements as set forth in the staff summary and resolution. 3. Licenses with Northwell Healthcare, Inc. for the installation of MTAPD communications antennas on rooftops with equipment cabinets at 699 92 nd Street / 9012 Seventh Avenue, Brooklyn, N.Y. 11228; 475 Seaview Avenue, Staten Island, N.Y. 10305; and 375 Sequine Avenue, Staten Island, N.Y. 10309
+### [p016_c0006] New York City Transit
+- [p016_c0007] 4. Short-term license agreement with a prospective tenant for parking at 880 5 th Avenue & 38 th Street, Brooklyn, N.Y. 11232. 5. Short-term access agreement with The Bank Building Condominium for MTA C&D subgrade vault repairs, inspection, and maintenance of NYCT infrastructure at 300 West 14 th Street, New York, N.Y. 6. License with Transit Wireless, LLC for cellular service in the New York City Transit tunnels and Wi-Fi at above ground New York City Transit stations and Staten Island Railway.
+### [p016_c0008] 15. EXECUTIVE SESSION.
+[p016_c0009] Upon motion duly made and seconded, the Board voted to convene an Executive Session, in accordance with Section 105(1)(e) to discuss labor matters.
+[p016_c0010] Upon motion duly made and seconded, the Board voted to reconvene in public session.
+[p016_c0011] _MTA and Agencies' Regular Board Meeting Joint Minutes July 27, 2022_
+[p016_c0012] _Master Page # 16 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 17
+
+### [p017_c0001] 16. PUBLIC SESSION RESUME.
+[p017_c0002] Chair Lieber announced that in Executive Session the Board approved:
+- [p017_c0003] 1. Collective bargaining agreement between MTA Metro-North Railroad and Transportation Communications Union (TCU), representing Clerical employees, Custodians, Ticket Sellers and Attendants, Procurement employees and other titles. 2. Collective bargaining agreement between MTA Long Island Rail Road and the Sheet Metal, Air, Rail and Transportation Workers International Association – Yardmasters (SMART-Y). 3. Collective bargaining agreement between MTA Long Island Rail Road and the Brotherhood of Railroad Signalmen (BRS). 4. Collective bargaining agreement between MTA Long Island Rail Road and the International Association of Machinists (IAM). 5. Collective bargaining agreement between MTA Long Island Rail Road and the Sheet Metal, Air, Rail and Transportation Workers International Association-Transportation Division (SMART-TD) 6. Collective bargaining agreement between MTA Long Island Rail Road and the Independent Railway Supervisors Association (IRSA). 7. Collective bargaining agreement between MTA Long Island Rail Road and the Sheet Metal, Air, Rail and Transportation Workers International Association-Local 149 (SMART L.149). 8. Collective bargaining agreement between MTA Long Island Rail Road and the Transportation Communications Union. 9. Collective bargaining agreement between the Staten Island Railway and the Sheet Metal, Air, Rail and Transportation union, Local 1440 (SMART-L.1440). 10. Collective bargaining agreement between MTA Bridges and Tunnels and the Superior Officers Benevolent Association (SOBA). 11. Collective bargaining agreement between MTA Metro-North Railroad and Association of Commuter Rail Employees Division 9 (ACRE-9), representing Passenger Engineers.
+### [p017_c0004] 17. ADJOURNMENT.
+[p017_c0005] Upon motion duly made and seconded, the Board voted to adjourn the meeting at 12:58 p.m.
+[p017_c0006] _MTA and Agencies' Regular Board Meeting Joint Minutes July 27, 2022_
+[p017_c0007] _Master Page # 17 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 18
+
+[p018_c0001] Respectfully submitted,
+[p018_c0002] Susan Sarch Vice President, General Counsel and Secretary Metro-North Railroad
+[p018_c0003] Stephen N. Papandon Acting Vice President, General Counsel and Secretary Long Island Rail Road Company
+[p018_c0004] Mariel A. Thompson Assistant Secretary NYCT
+[p018_c0005] David K. Cannon Assistant Secretary MTA C&D
+[p018_c0006] Paul Friman Acting General Counsel and Corporate Secretary TBTA
+[p018_c0007] Victoria Clement Assistant Secretary MTAHQ
+[p018_c0008] _MTA and Agencies' Regular Board Meeting Joint Minutes July 27, 2022_
+[p018_c0009] _Master Page # 18 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 19
+
+### [p019_c0001] Construction & Development
+### [p019_c0002] Contracts Department
+[p019_c0003] Steve Plochochi, Senior Vice President
+### [p019_c0004] PROCUREMENT PACKAGE
+[p019_c0005] September 2022
+[p019_c0006] _Master Page # 19 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 20
+
+### [p020_c0001] Construction & Development
+### [p020_c0002] PROCUREMENTS
+[p020_c0003] The Procurement Agenda this month includes seventeen (17) actions for a proposed expenditure of $112.1M.
+[p020_c0004] _Master Page # 20 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 21
+
+[p021_c0001]
+
+```text
+Subject Request for Authorization to Award Various Procurement Actions Contract Department Steve Plochochi, Senior Vice President Board Action Order To Date Approval Info Other 1 Capital Program Committee 9/19/22 X 2 Board 9/21/22 X
+```
+[p021_c0002]
+
+```text
+Date: September 16, 2022 Internal Approvals Approval Approval X Deputy Chief Development Officer, Delivery X President X Deputy Chief Development Officer, Development X Executive Vice President & General Counsel
+```
+### [p021_c0003] Purpose
+[p021_c0004] To obtain the approval of the Board to award procurement actions and to inform the Capital Program Committee of these procurement actions.
+### [p021_c0005] Discussion
+[p021_c0006] MTA Construction & Development proposes to award Competitive Procurements in the following categories:
+[p021_c0007]
+
+```text
+Schedules Requiring Majority Vote # of Actions $ Amount F. Personal Services Contracts 13 $ 30,000,000 G. Miscellaneous Services Contracts 1 $ 73,666,488 I. Modifications to Purchase and Public Work Contracts 1 $ 2,350,000 SUBTOTAL 15 $106,016,488
+```
+[p021_c0008] MTA Construction & Development proposes to award Ratifications in the following category:
+[p021_c0009]
+
+```text
+Schedules Requiring Majority Vote # of Actions $ Amount K. Ratification of Completed Procurement Actions 2 $ 6,057,204 SUBTOTAL 2 $ 6,057,204 TOTAL 17 $112,073,692
+```
+### [p021_c0010] Budget Impact
+[p021_c0011] The approval of these procurement actions will obligate capital and operating funds in the amounts listed. Funds are available in the capital and operating budgets for this purpose.
+### [p021_c0012] Recommendation
+[p021_c0013] The procurement actions be approved as proposed. (The items are included in the resolution of approval at the beginning of the Procurement Section.)
+[p021_c0014] _Master Page # 21 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 22
+
+### [p022_c0001] MTA Construction & Development
+### [p022_c0002] BOARD RESOLUTION
+[p022_c0003] WHEREAS , in accordance with Sections 2879, 1209 and 1265-a of the Public Authorities Law and the All Agency Procurement Guidelines, the Board authorizes the award of certain non-competitive purchase and public works contracts, and the solicitation and award of request for proposals in regard to purchase and public work contracts; and
+[p022_c0004] WHEREAS , in accordance with the All Agency Procurement Guidelines, the Board authorizes the award of certain non-competitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts;
+[p022_c0005] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Guidelines for Procurement of Services, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p022_c0006] NOW, the Board resolves as follows:
+- [p022_c0007] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract. 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals and authorizes the solicitation of such proposals. 3. As to each request for proposals (for purchase and public work contracts set forth in Schedule C for which a recommendation is made to award the contract), the Board authorizes the execution of said contract. 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein, and ratifies each action for which ratification is requested. 5. The Board authorizes the execution of each of the following for which Board authorization is required: i) the miscellaneous procurement contracts set forth in Schedule E; ii) the personal service contracts set forth in Schedule F; iii) the miscellaneous service contracts set forth in Schedule G; iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; v) the contract modifications to purchase and public work contracts set forth in Schedule I; vi) the modifications to miscellaneous procurement contracts set forth in Schedule J. 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p022_c0008] _Master Page # 22 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 23
+
+### [p023_c0001] Schedule F: Personal Service Contracts Item Number 1
+### [p023_c0002] Construction & Development
+### [p023_c0003] Page 1 of 3
+[p023_c0004] September 2022
+### [p023_c0005] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p023_c0006] Procurements Requiring Majority Vote:
+- [p023_c0007] 1 - 13. Multiple Consultants                                        $30,000,000 (Est. Aggregate) Staff Summary Attached Contract Nos. D81691 – D81703 36 Months
+[p023_c0008] MTA Construction and Development request Board approval to award 13 competitively solicited All Agency Discretionary Contracts utilizing New York State certified Minority-Owned Business Enterprises, Women-Owned Business Enterprises and Service-Disabled Veteran-Owned Businesses to perform architectural and engineering design, project management, and inspection services on an as-needed basis.
+### [p023_c0009] Schedule G. Miscellaneous Service Contracts (Staff Summaries required for items estimated to be greater than $1M)
+- [p023_c0010] 14. George S. Hall, Inc.                                        $73,666,488 Staff Summary Attached Contract No. VS250 Nine Months with Two Six Month Options
+[p023_c0011] MTA Construction and Development request Board approval to award a publicly advertised and competitively solicited contract for the interim maintenance of East Side Access facility assets.
+### [p023_c0012] Schedule I. Modifications to Purchase and Public Work Contracts (Staff Summaries required for all items greater than $1M)
+- [p023_c0013] 15. Tracks Unlimited, LLC                                        $ 2,350,000 Staff Summary Attached Contract No. T-80280.35
+[p023_c0014] MTA Construction & Development requests Board approval to award a modification to the Contract for installation of a new drainage system at the Princes Bay station.
+[p023_c0015] _Master Page # 23 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 24
+
+### [p024_c0001] Schedule F: Personal Service Contracts Item Numbers 1 - 13
+### [p024_c0002] MTA Construction & Development
+### [p024_c0003] Page 1 of 3
+[p024_c0004]
+
+```text
+Dept & Dept Head Name: Tom Abdallah, Vice President, Design Services, Delivery
+```
+[p024_c0005]
+
+```text
+Contracts Department: Laura A. Smith, Chief Officer
+```
+[p024_c0006]
+
+```text
+Board Reviews Order To Date Approval Info Other 1 Capital Program Committee 9/19/22 X 2 Board 9/21/22 X
+```
+[p024_c0007]
+
+```text
+Internal Approvals
+```
+[p024_c0008]
+
+```text
+Order Approval Order Approval X Deputy Chief, Development X President X Deputy Chief, Delivery X Executive VP & General Counsel
+```
+### [p024_c0009] SUMMARY INFORMATION
+[p024_c0010]
+
+```text
+Vendor Name See the list below Contract Number D81691-D81703
+```
+[p024_c0011]
+
+```text
+Description All Agency Discretionary Contract utilizing New York State certified Minority and Women-Owned Business Enterprises and Service-Disabled Veteran-Owned Businesses to Perform Architectural and Engineering Design, Project Management, and Inspection Services
+```
+[p024_c0012]
+
+```text
+Total Amount $30,000,000 Estimated Aggregate
+```
+[p024_c0013]
+
+```text
+Contract Term 36 Months
+```
+[p024_c0014]
+
+```text
+Option(s) included in Total Amount? Yes No N/A
+```
+[p024_c0015]
+
+```text
+Renewal? Yes No
+```
+[p024_c0016]
+
+```text
+Procurement Type Competitive Non-competitive
+```
+[p024_c0017]
+
+```text
+Solicitation Type RFP Bid Other:
+```
+[p024_c0018]
+
+```text
+Funding Source Operating Capital Federal Other
+```
+### [p024_c0019] Purpose/Recommendation
+[p024_c0020] MTA Construction and Development ("C&D") requests Board approval to award 13 competitively solicited All Agency Discretionary Contracts utilizing New York State certified Minority-Owned Business Enterprises ("MBE"), Women-Owned Business Enterprises ("WBE") and Service-Disabled Veteran-Owned Businesses ("SDVOB") to perform architectural and engineering ("A&E") design, project management, and inspection services on an as-needed basis for a period of 36 months. These contracts will be "zero-dollar" based with no minimum guarantee on any assignments. The selected firms and their respective contracts are:
+### [p024_c0021] Consultants
+### [p024_c0022] Contract Nos.
+### [p024_c0023] M/WBE
+- [p024_c0024] AI Engineers, Inc. ("AIE") Arora Engineers, Inc. ("Arora") CSA Group NY Architects and Engineers, P.C. ("CSA") Enovate Engineering and Land Surveying, PLLC ("Enovate") EnTech Engineering, PC ("EnTech") Garg Consulting Services, Inc. ("Garg") Gedeon Engineering, PC dba Gedeon GRC Consulting ("Gedeon") Infrastructure Engineering, Inc. P.C. ("IEI") Kheops Architecture, Engineering & Survey, DPC ("Kheops") KS Engineers, P.C. ("KSE") Naik Consulting Group, P.C. ("Naik") PACO Group, Inc. ("PACO") Ronnette Riley Architect ("Ronnette")
+- [p024_c0025] D81691 MBE D81692 MBE D81693 MBE D81694 WBE D81695 WBE D81696 MBE D81697 MBE D81698 MBE D81699 MBE D81700 MBE D81701 MBE D81702 MBE D81703 WBE
+[p024_c0026] _Master Page # 24 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 25
+
+### [p025_c0001] Schedule F: Personal Service Contracts Item Numbers 1 - 13
+### [p025_c0002] Construction & Development
+### [p025_c0003] Page 2 of 3
+### [p025_c0004] Discussion
+[p025_c0005] C&D is seeking to award Contracts for a variety of services including: A&E design, consultant construction management, project management consultant, staff augmentation, and technical activities as required to support the capital program. The consultants will perform the above services for all phases of project planning, design, procurement, construction and closeout for various project delivery methodologies. Project facilities include, but are not limited to: tunnels, bridges, terminals, stations, rail, bus, operation and maintenance facilities, office buildings, and communication, power and signal infrastructures. Work under this contract series will be performed on an as-needed task order basis. Specific work requirements for a project will be defined in the scope of work for each task order that, in general, will be competed among the consultants and task order awards can be issued in up to $1.5 million increments with a total aggregate budget amount of $30 million.
+[p025_c0006] Section 1265-a(2)(b) of the Public Authorities Law and Article V.B of the All-Agency Service Contract Procurement Guidelines permit MTA C&D to make awards to certified MWBEs and SDVOBs up to $1.5 million without competitive sealed bidding or other formal competitive process. Such procurements may be set aside for MWBEs and SDVOBs in order to promote participation of those certified firms in MTA contracts, as mandated by Article 15-A of the Executive Law and to assist MTA with meeting its M/WBE and SDVOB goals. As set-asides, such procurements are not required to be publicly advertised. Under the proposed contracts, individual work assignments will be awarded through a competitive mini-Request for Proposal ("RFP") process, among some or all firms in an amount not-to-exceed $1.5 million. These Contracts will replace the previous Discretionary Contract series for similar services.
+[p025_c0007] In August 2021, C&D Contracts began outreach to M/WBE and SDVOB firms with engineering and project management experience and sought recommendations from ethnic minority trade groups and associations. A pre-solicitation outreach meeting was held with 103 potential proposers on November 3, 2021 to inform the community about the RFP process, discuss potential upcoming projects, and to allow potential proposers to ask questions. On December 13, 2021, C&D Contracts issued notification of a one-step RFP requesting the submission of technical and cost proposals to 161 certified M/WBE and SDVOB firms with engineering and project management experience, and 23 professional and other organizations that represent or regularly notify M/WBEs and SDVOBs of procurement opportunities. The solicitation was also advertised in the Daily News, Engineering News-Record, Minority Commerce Weekly, New York State Contract Reporter, New York Construction Report, and on the C&D Website. A pre-proposal conference was held December 28, 2021 with 71 firms in attendance. On February 9, 2022, 63 firms submitted proposals.
+[p025_c0008] The selection committee consisting of representatives from C&D Delivery and the MTA's Department of Diversity and Civil Rights, reviewed the written technical proposals utilizing the selection criteria set forth below, listed in relative order of importance:
+- [p025_c0009] • Plan of Approach • Experience in Relevant Areas • Experience of Project Team/Key Personnel • Management Approach • Experience of Prime and Subconsultant Key Personnel • Quality Assurance Plan • Current Workload of Prime and Subconsultants • Diversity Practices • Other Relevant Matters
+[p025_c0010] After review of all 63 proposals, the selection committee shortlisted 33 firms for oral presentations based on the RFP requirements and the above evaluation criteria. During oral presentations, firms demonstrated their strengths and amplified their technical proposals. Many firms brought their subconsultants to attend as well and provided examples of projects they had successfully completed together.
+[p025_c0011] After review of the technical proposals and oral presentations, the selection committee met to discuss all of the presentations and to shortlist firms for negotiations. In addition, the cost proposals for all 13 firms were also reviewed by the selection committee. The following 13 firms were unanimously selected to be brought in for negotiations: AIE, Arora, CSA, Enovate, EnTech, Garg, Gedeon, IEL, Kheops, KSE, Naik, Paco, and Ronnette.
+[p025_c0012] The 13 firms selected all provided strong written proposals, presented clear and concise oral presentations and responded well during the question-and-answer period. During the question-and-answer period the selected firms showed a command of how they would coordinate with various user groups, how they would address changes in scopes of work during a project and demonstrated the importance of safety protocols. The selected firms had staffing plans with teams of people available to mobilize quickly and displayed a variety of experience. C&D conducted several rounds of negotiations with all 13 firms and provided estimated total hours, the breakdown of hours for each title, and the cost for out-of-pocket expenses to ensure a fair and equitable evaluation of the cost. During negotiations with the firms,
+[p025_c0013] _Master Page # 25 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 26
+
+### [p026_c0001] Schedule F: Personal Service Contracts Item Numbers 1 - 13
+### [p026_c0002] Construction & Development
+### [p026_c0003] Page 3 of 3
+[p026_c0004] discussions centered on direct labor rates and overhead rates for both the prime consultants and their proposed subconsultants. The overhead rates were reviewed by MTA Audit and adjusted pursuant to MTA Audit recommendations. Final negotiations were held with all 13 firms finalizing direct labor rates and confirming the audited overhead rates for each of the prime consultants and their proposed subconsultants.
+[p026_c0005] Best and Final offers (“BAFOs”) were received from all 13 firms and evaluated against C&D’s in-house budget estimate based on hours distributed among various titles and overheads rates. Based on the evaluation of the initial and revised cost proposals, in-house estimate, and the competitive nature of the RFP, the BAFOs were determined to be fair and reasonable.
+[p026_c0006] The 13 selected proposers presented detailed technical proposals and exhibited a comprehensive knowledge of A&E design services as well as project management. Moreover, each of the selected proposers demonstrated strong qualifications, vast experience, a thorough understanding of the various project requirements under individual task orders and a well-developed management and staffing approach to fulfilling potential scopes of work. All 13 firms provided teams capable of performing a variety of both design and project management task orders and providing staff to support the capital program. The selection committee unanimously voted to recommend all 13 firms for a award.
+[p026_c0007] The 13 selected firms include eight incumbent firms from the previous Discretionary Contract series and five new firms. The 13 prime consultants also proposed 65 distinct subconsultants of which 45 are certified firms (21 MBE, 13 WBE, 2 dual-certified M/WBE, 7 SDVOB and 2 dual-certified MBE/SDVOB firms).
+[p026_c0008] All 13 firms were found to be responsible and financially qualified to perform these contracts.
+### [p026_c0009] D/M/WBE Information
+[p026_c0010] The MTA Department of Diversity and Civils Right has established 0% M/WBE/SDVOB goals on this All-Agency Discretionary Contract. This procurement provides multiple professional service prime contracting opportunities for NYS certified M/WBE firms. The participation on these prime contracts will contribute toward MTA’s overall 30% M/WBE goal.
+### [p026_c0011] Impact on Funding
+[p026_c0012] D81691 – D81703 will be 100% MTA funded. These Contracts are all “zero-dollar” based, and therefore funds will be provided on a task-order basis by the project requiring these services.
+### [p026_c0013] Alternatives
+[p026_c0014] Solicit these task orders from non-M/WBE firms. Not recommended as this would eliminate the opportunity for M/WBE firms to gain vital prime contract experience and would diminish their ability to propose on additional prime opportunities in the future.
+[p026_c0015] _Master Page # 26 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 27
+
+### [p027_c0001] Schedule G: Miscellaneous Service Contracts Item Number 14
+### [p027_c0002] MTA Construction & Development
+### [p027_c0003] Page 1 of 2
+[p027_c0004]
+
+```text
+Dept & Dept Head Name: East Side Access, Rob Troup, SVP and Sr. Program Executive Contracts Department: Sergey Leonidov, SVP and Deputy General Counsel Board Reviews Order To Date Approval Info Other 1 Capital Program Committee 9/19/22 X 2 Board 9/21/22 X Internal Approvals Order Approval Order Approval X Deputy Chief, Development X President X Deputy Chief, Delivery X Executive VP & General Counsel
+```
+[p027_c0005]
+
+```text
+SUMMARY INFORMATION Vendor Name George S. Hall, Inc. Contract Number VS250 Description Interim Maintenance of the East Side Access Project Part 2 Total Amount $59,138,760 (Base Contract) $ 7,263,864 (First Sixth Month Option) $ 7,263,864 (Second Sixth Month Option) Contract Term Nine months with two six month options Option(s) included in Total Amount? Yes No N/A Renewal? Yes No Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Funding Source Operating Capital Federal Other
+```
+### [p027_c0006] Purpose/Recommendation
+[p027_c0007] MTA Construction and Development (“C&D”) requests Board approval to a ward of a publicly advertised and competitively solicited contract for the interim maintenance of East Side Access (“ESA”) facility assets to George S. Hall, Inc. in the amount of $59,138,760 and a duration of nine months. The Contract also includes two options, allowing for extensions of the Contract duration by six months each for a total of up to 12 months, to be exercised at the C&D’s sole discretion, at a cost of $7,263,864 for each option.
+### [p027_c0008] Discussion
+[p027_c0009] The Work under Contract VS250 (the “Contract”) is to perform interim maintenance services within the East Side Access Project territory, both before revenue service, while construction, testing and railroad training are ongoing, and after revenue service, until MTA awards a long-term maintenance contract and the systems are turned over to that contractor. This Contract includes operation of the Grand Central Madison Terminal (“GCMT”) building management and automatic temperature control systems, the chiller and steam plant and the tunnel ventilation systems, as well as preventative maintenance for the mechanical and plumbing, electrical, communication, fire protection, and security systems. The Contract also includes building maintenance for project facilities including, but not limited to, the GCMT, the Yard Service Building in Queens, Ventilation Plants, and Tunnel and Wayside facilities.
+[p027_c0010] A one-step Request for Proposal (“RFP”) was used to solicit this Contract. The Contract was advertised in the NYS Contract Reporter, NY Daily News, Minority Commerce Weekly and on the MTA Website. Notices were also sent to 20 firms, and 12 firms ordered and received the RFP package. Despite the outreach, only one proposal, from George S. Hall, Inc. (“GSH”), was received in response to the RFP. In order to ascertain why only one proposal was received, C&D contacted the 11 firms who received the RFP package and were advised that some of the firms did not have sufficient manpower to take on the entire scope of work, others were only interested in smaller portions of the work, additionally others felt the risk associated with the project was too big for their firms to take on and finally others simply indicated the scope of work was beyond their capabilities.
+[p027_c0011] GSH’s technical proposal was opened and evaluated by a selection committee consisting of representatives from C&D utilizing pre-established selection criterion considering the following factors: management plan, preventive maintenance, service, operations, safety
+[p027_c0012] _Master Page # 27 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 28
+
+### [p028_c0001] Schedule G: Miscellaneous Service Contracts Item Number 14
+### [p028_c0002] Construction & Development
+### [p028_c0003] Page 2 of 2
+[p028_c0004] and quality, diversity practices, preparedness for performing the work, financial qualification and overall cost. A technical working group, consisting of ESA design and construction management consultants, supported the selection committee. The selection committee determined that the technical proposal submitted by GSH was responsive and acceptable. The selection committee next opened GSH's price proposal which reflected a cost of $46,234,583 for the base term and $5,450,749 for each of the two option terms.
+[p028_c0005] Negotiations were held with GSH focusing on scope clarification, maintenance and operations details, risk and indemnification language, insurance coverage and pricing. C&D then issued an addendum increasing the scope and the insurance requirements. GSH's BAFO reflected a final cost of $59,138,760 for the base term and $7,263,864 for each of the options. The BAFO reflects an increase over the initial cost proposal and is primarily due to the work added by addenda and the increased insurance requirements. The negotiated cost is considered to be fair and reasonable.
+[p028_c0006] GSH has been found to be responsible.
+### [p028_c0007] DBE/MBE/WBE/SDVOB Information
+[p028_c0008] The MTA Department of Diversity and Civil Rights has established 22.5% DBE Goal. The submitted DBE plan is under review.
+[p028_c0009] GSH has not completed any MTA contracts with DBE/MBE/WBE goals, therefore, no assessment of their past performance can be determined at this time.
+### [p028_c0010] Impact on Funding
+[p028_c0011] This contract will be funded in MTA's operating budget.
+### [p028_c0012] Alternative
+[p028_c0013] The MTA does not have the internal resources available to perform these interim services so the alternative would be to issue modifications to the third-party contractors that provided the assets. Such modifications would result in significant time extensions and interfere with the orderly closeout of these contracts.
+[p028_c0014] _Master Page # 28 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 29
+
+### [p029_c0001] Schedule I Modifications to Purchase and Public Work Contracts
+[p029_c0002] Item Number 15
+[p029_c0003]
+
+```text
+Vendor Name (Location) Tracks Unlimited, LLC (Mountainside, NJ) Description Mainline Track Rehabilitation and Clifton Yard Track & Switch Reconfiguration in the Borough of Staten Island Contract Term (including Options, if any) December 28, 2018 – December 21, 2022 Option(s) included in Total Amt? Yes No n/a Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Dept./Div., Dept./Div. Head Name: Delivery/Mark Roche
+```
+[p029_c0004]
+
+```text
+Contract Number Modification Number T-80280 35 Original Amount: $ 44,427,000 Prior Modifications: $ 40,209,744 Prior Budgetary Increases: $ 0 Current Amount: $ 84,636,744 This Request: $ 2,350,000 % of This Request to Current Amount: 2.8% % of Modifications (including This Request) to Original Amount: 95.8%
+```
+### [p029_c0005] Discussion:
+[p029_c0006] Contract T-80280 (the “Contract”) is for track rehabilitation on the Staten Island Railway (“SIR”) mainline and track and switch reconfiguration at the Clifton Yard. MTA Construction and Development (“C&D”) requests that the Board approve a modification to the Contract for the installation of a new drainage system at the Princes Bay station.
+[p029_c0007] This Contract was awarded for the first of two phases of a project to replace track along the SIR mainline necessary to maintain a state of good repair and for the reconfiguration of track and switches at the Clifton Yard to align with the construction of the new Clifton Shop. As part of the project, the Contractor is to install new track in the vicinity of the Princes Bay station. This area of track is prone to frequent flooding, often requiring the termination of service in both directions. Five such flooding events occurred in 2021 resulting in SIR having to completely shut down service and provide bus support to service the southern side of the island. If the flooding condition is not addressed, service will continue to be interrupted and the life expectancy of the new roadbed and track will likely be impacted.
+[p029_c0008] Under this modification the Contractor will replace four clogged catch basins and install over 1,200 linear feet of 12-inch drainage piping at depths from 4.5 feet to 10 feet that will facilitate proper drainage in the affected area. All work will be performed during weekend shutdowns. In further efforts to preserve schedule, the purchase of long lead items, i.e., pipe and catch basins, was addressed under Modification No. 37 to the Contract, which was issued in September 2022 for $50,000.
+[p029_c0009] The Contractor submitted a cost proposal of $2,502,488. Negotiations resulted in the agreed lump sum price of $2,350,000 which has been determined to be fair and reasonable.
+[p029_c0010] _Master Page # 29 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 30
+
+### [p030_c0001] Construction & Development
+[p030_c0002] SEPTEMBER 2022
+### [p030_c0003] LIST OF RATIFICATIONS FOR BOARD APPROVAL
+### [p030_c0004] Procurements Requiring Majority Vote:
+### [p030_c0005] Schedule K. Ratification of Completed Procurement Actions (Involving Schedule E – J) (Staff Summaries required for all items)
+- [p030_c0006] 16. Tutor Perini Corporation Contract No. CS179.624 $4,367,204 Staff Summary Attached
+[p030_c0007] MTA Construction and Development requests the Board ratify a modification to the Contract to compensate the Contractor for working extended shifts and to include an incentive for completing work along the Project's Right of Way no later than September 11, 2022.
+- [p030_c0008] 17. Siemens Industry, Inc. Contract No. S-48004-1.32 $1,690,000 Staff Summary Attached
+[p030_c0009] MTA Construction and Development requests the Board ratify a modification to the Contract to develop a customizable animated track map displaying real-time train location information from New York City Transit's ("NYCT") B-Division on the large screen display in the NYCT Rail Control Center.
+[p030_c0010] _Master Page # 30 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 31
+
+### [p031_c0001] Schedule K: Ratification of Completed Procurement Actions Item Number 16
+[p031_c0002]
+
+```text
+Vendor Name (& Location) Tutor Perini Corporation (Peekskill, New York) Description Systems Facilities Package No. 1 for the East Side Access Project Contract Term (including Options, if any) 75 Months Option(s) included in Total Amount? Yes No N/A Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Dept/Div & Dept/Div Head Name: East Side Access, Rob Troup
+```
+[p031_c0003]
+
+```text
+Contract Number Modification Number CS179 624 Original Amount: $ 333,588,000 Prior Modifications: $ 202,700,491 Exercised Options: $ 216,800,001 Current Amount: $ 753,088,492 This Request $ 4,367,204 % of This Request to Current Amount: 0.6 % % of Modifications (including This Request) to Original Amount: 62 %
+```
+### [p031_c0004] Discussion:
+[p031_c0005] Contract CS179 (the "Contract") provides systems for the East Side Access project (the "Project"). MTA Construction and Development ("C&D") requests that the Board ratify a modification to the Contract to compensate the Contractor for working extended shifts and to include an incentive for completing work along the Project's Right of Way no later than September 11, 2022.
+[p031_c0006] In an effort to accelerate the pace of the Work in order to meet the Project's revenue service goal, C&D has agreed with the Contractor on unit rates for the premium-time cost differential of providing work crews for six 10-hour work shifts per week through October 22, 2022. In addition, the modification includes an incentive payment to the Contractor in the amount of $500,000 for completing the work along the Project's right-of-way by September 11, 2022. In order to maintain this critical schedule, the President approved a retroactive waiver and the Contractor was directed to proceed with performing Contract work utilizing 10 hour shifts Mondays through Saturdays and the Contractor completed the right-of-way work by September 11.
+[p031_c0007] The Contractor submitted a cost proposal with unit rates for the premium time through October 22, 2022 totaling $7,775,850. Negotiations resulted in the agreed upon rates in the not-to-exceed amount totaling $4,367,204, inclusive of the incentive payment, which has been determined to be fair and reasonable.
+[p031_c0008] In connection with previous contracts awarded to Tutor Perini Corporation, Tutor Perini Corporation was found to be responsible, notwithstanding significant adverse information ("SAI") pursuant to the All-Agency Responsibility Guidelines and such responsibility findings were approved by the MTA Chairman/CEO in consultation with the MTA General Counsel in February 2017. No new significant adverse information has been found relating to Tutor Perini Corporation and Tutor Perini Corporation has been found to be responsible.
+[p031_c0009] _Master Page # 31 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 32
+
+### [p032_c0001] Schedule K: Ratification of Completed Procurement Actions Item Number 17
+[p032_c0002]
+
+```text
+Vendor Name (Location) Siemens Industry, Inc. (New York, NY) Description Communications-Based Train Control for Queens Boulevard West Phase I Contract Term (including Options, if any) August 24, 2015 – March 24, 2021 Option(s) included in Total Amt? Yes No N/A Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Dept./Div., Dept./Div. Head Name: Delivery/Mark Roche
+```
+[p032_c0003]
+
+```text
+Contract Number S-48004-1 Modification Number 32 Original Amount: $ 156,172,932 Prior Modifications: $ 27,146,845 Prior Budgetary Increases: $ 0 Current Amount: $ 183,319,777 This Request: $ 1,690,000 % of This Request to Current Amount: 0.9% % of Modifications (including This Request) to Original Amount: 18.5%
+```
+### [p032_c0004] Discussion:
+[p032_c0005] This Contract S-48004-1 (the “Contract”) provides carbone and wayside Communication Based Train Control (“CBTC”) equipment for the CBTC signaling project on the Queens Boulevard Line - West (“QBL”). MTA Construction and Development (“C&D”) requests that the Board ratify a modification to the Contract to develop a customizable animated track map displaying real-time train location information from New York City Transit’s (“NYCT”) B-Division on the large screen display in the NYCT Rail Control Center (“RCC”).
+[p032_c0006] The development of a customizable track map for display of NYCT B-Division train locations at the RCC was originally included in Contract W-32789, which also provided for the installation of a large screen display at the RCC. Contract W-32789 was to carry out the third phase in the development of the integrated service information and management system for the B-Division (“ISIM-B”) to implement an advanced train-traffic management system which would provide situational awareness to dispatchers overseeing the B-Division through the collection and configuration of data from multiple existing sources for display at the RCC. ISIM-B was meant to be an interim train location solution until CBTC with Automatic Train Supervision (“ATS”) was installed on all lines in the B-Division.
+[p032_c0007] However, in advance of full CBTC roll-out in the B-Division, the MTA decided to install ATS in the entire B-Division (“ATS-B”) through a modification to this Contract approved by this Board in March 2018. ATS provides more precise train location information in real-time. With the advancement of ATS installation throughout the B-Division, the MTA determined that skipping the interim phases where ISIM-B would be used for train location, was operationally preferred and cost effective. For those reasons, a modification was issued to Contract W-32789 deleting the work associated with the display of B-Division train location information at the RCC and taking the correspondent credit.
+[p032_c0008] Pursuant to this modification to this Contract, the contractor will design, furnish, install, and test the ATS-B client Graphic User Interface application system to display data from the ATS-B system across the large screen displays. The display will consist of an animated subway map indicating real-time train operations with the data content from the entire B-Division. The contractor was directed to proceed with the work in April 2022.
+[p032_c0009] The contractor submitted a cost proposal of $1,815,236. Negotiations resulted in the agreed lump sum price of $1,690,000 which has been determined to be fair and reasonable.
+[p032_c0010] In connection with a previous contract awarded to Siemens, Siemens was found to be responsible notwithstanding significant adverse information (“SAI”) pursuant to the All-Agency Responsibility Guidelines and such responsibility finding was approved by the MTA Chairman and Chief Executive Officer in consultation with the MTA General Counsel in August 2016. No new SAI has been found relating to Siemens and Siemens has been found to be responsible. A Contractor Compliance Program was put in place for Siemens in April 2018.
+[p032_c0011] _Master Page # 32 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 33
+
+### [p033_c0001] The logo for MTA Metro-North Railroad, featuring a black circle with the white letters "MTA" inside, followed by the text "Metro-North Railroad" in a bold, black, sans-serif font.
+### [p033_c0002] Metro-North Railroad Procurements
+[p033_c0003] Anthony Gardner , MTA Assistant Deputy Chief Procurement Officer – Procurement Operations
+[p033_c0004] _Master Page # 33 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 34
+
+### [p034_c0001] Metro-North Railroad
+### [p034_c0002] PROCUREMENTS
+[p034_c0003] The Procurement Agenda this month includes 1 action for a proposed estimated expenditure of $8.2M.
+[p034_c0004] _Master Page # 34 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 35
+
+[p035_c0001]
+
+```text
+Subject Request for Authorization to Award Various Procurements Department MTA Procurement Department Head Name Kuvershen Ayer Department Head Signature Ayer Kuvershen (Sep 14, 2022 15:11 EDT) Project Manager Name Rose Davis Board Action Order To Date Approval Info Other 1 Committee 9/19/22 2 Board 9/21/22
+```
+[p035_c0002]
+
+```text
+September 14, 2022 Department Department Head Name Department Head Signature Internal Approvals Approval Approval 1 President 2 VP & General Counsel
+```
+[p035_c0003]
+
+```text
+Internal Approvals (cont.) Order Approval Order Approval Order Approval Order Approval
+```
+### [p035_c0004] PURPOSE
+[p035_c0005] To obtain approval of the Board to award various contracts and purchase orders, and to inform the MTAHQ Committee of these procurement actions.
+### [p035_c0006] DISCUSSION
+[p035_c0007] Metro-North Railroad proposes to award Noncompetitive procurements in the following categories: None
+[p035_c0008] Metro-North Railroad proposes to award Competitive procurements in the following categories:
+[p035_c0009]
+
+```text
+Schedules Requiring Majority Vote: # of Actions $ Amount Schedule H: Modifications to Personal/Miscellaneous Service Contracts 1 $ 8.2 M SUBTOTAL 1 $ 8.2 M
+```
+[p035_c0010] Metro-North Railroad proposes to award Ratifications in the following categories: None
+[p035_c0011]
+
+```text
+SUBTOTAL 1 $ 8.2 M TOTAL 1 $ 8.2 M
+```
+[p035_c0012] COMPETITIVE BIDDING REQUIREMENTS: The procurement actions in Schedules A, B, C, and D are subject to the competitive bidding requirements of PAL 1209 or 1265-a relating to contracts for the purchase of goods or public work. Procurement actions in the remaining Schedules are not subject to these requirements.
+[p035_c0013] BUDGET IMPACT: The purchases/contracts will result in obligating funds in the amounts listed. Funds are available in the current operating/capital budgets for this purpose.
+[p035_c0014] RECOMMENDATION: That the purchases/contracts be approved as proposed. (Items are included in the resolution of approval at the beginning of the Procurement Section.)
+[p035_c0015] _Master Page # 35 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 36
+
+### [p036_c0001] Metro-North Railroad
+### [p036_c0002] BOARD RESOLUTION
+[p036_c0003] WHEREAS , in accordance with Sections 1265-a and 1209 of the Public Authorities Law and the All-Agency General Contract Procurement Guidelines, the Board authorizes the award of certain noncompetitive purchase and public work contracts, and the solicitation and award of requests for proposals regarding purchase and public work contracts; and
+[p036_c0004] WHEREAS , in accordance with the All-Agency Service Contract Procurement Guidelines and General Contract Procurement Guidelines the Board authorizes the award of certain noncompetitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts, and
+[p036_c0005] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Service Contract Procurement Guidelines, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p036_c0006] NOW, the Board resolves as follows:
+[p036_c0007] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract.
+[p036_c0008] 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals, and authorizes the solicitation of such proposals.
+[p036_c0009] 3. As to each request for proposals (for purchase and public work contracts) set forth in Schedule C for which a recommendation is made to award the contract, the Board authorizes the execution of said contract.
+[p036_c0010] 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein and ratifies each action for which ratification is requested.
+[p036_c0011] 5. The Board authorizes the execution of each of the following for which Board authorization is required: (i) the miscellaneous procurement contracts set forth in Schedule E; (ii) the personal service contracts set forth in Schedule F; (iii) the miscellaneous service contracts set forth in Schedule G; (iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; (v) the contract modifications to purchase and public work contracts set forth in Schedule I; and (vi) the modifications to miscellaneous procurement contracts set forth in Schedule J.
+[p036_c0012] 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p036_c0013] _Master Page # 36 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 37
+
+### [p037_c0001] Metro-North Railroad
+[p037_c0002] SEPTEMBER 2022
+### [p037_c0003] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p037_c0004] Procurements Requiring Majority Vote:
+### [p037_c0005] H. Modifications to Personal Service Contracts and Miscellaneous Service Contracts Awarded as Contracts for Services (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p037_c0006] 1. Port Imperial Ferry Corporation d/b/a NY Waterway 8 years Contract# 1000044225 AWO 9 $8,244,372 Staff Summary Attached Modification to exercise the final two-year contract renewal option for the period of January 1, 2023, to December 31, 2024.
+[p037_c0007] _Master Page # 37 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 38
+
+### [p038_c0001] Schedule H: Modifications to Personal Service and Miscellaneous Service Contracts
+[p038_c0002] Metro-North Railroad
+[p038_c0003] Item Number: 1
+[p038_c0004]
+
+```text
+Vendor Name (Location) Port Imperial Ferry Corporation d/b/a NY Waterway (Weehawken, New Jersey) Description Ferry Service (Including Ancillary Services) Contract Term (including Options, if any) Four Years with three 2-Year Renewal Options Option(s) included in Total Amount? Yes No Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Funding Source Operating Capital Federal Other: State (NYSDOT) Requesting Department Operations Planning and Analysis
+```
+[p038_c0005]
+
+```text
+Contract Number Modification 1000044225 9 Original Amount: $16,000,000 Prior Modifications: $6,593,620 Prior Budgetary Increases: 0 Current Amount: $22,593,620 This Request: $8,244,372 % of This Request to Current Amount: 36.5% % of Modifications (including This Request) to Original Amount: 92.7%
+```
+### [p038_c0006] Discussion:
+[p038_c0007] Metro-North Railroad (“MNR”) is seeking Board approval to modify Contract 1000044225 with Port Imperial Ferry Corporation d/b/a NY Waterway (“NY Waterway”) to add funding in the amount of $8,244,372 to cover continued services for the last quarter of 2022, plus the exercise of the final two-year contract renewal option for the period January 1, 2023, to December 31, 2024.
+[p038_c0008] MNR awarded this competitively solicited contract in 2014 for a term of four years with three 2-year renewal options. Under this modification, NY Waterway will continue to provide service for the Haverstraw-Ossining and Newburgh-Beacon routes. Each route has regularly scheduled commuter ferry service, Monday through Friday, throughout the morning and afternoon peak periods, except on MNR designated holidays. Ancillary services provided by NY Waterway are also included, such as daily maintenance of the parking facilities, trash removal, snow removal, ferry repairs, and management of interim bus services if the ferry is out of service or unable to operate due to adverse weather conditions. Ferry services are provided to improve access between Rockland/Orange counties and MNR’s Grand Central Terminal and East of Hudson stations, and to improve air quality by reducing the number of single-occupancy vehicles on the road.
+[p038_c0009] Contract pricing for the ferry and ancillary services was originally based on negotiated hourly rates adjusted annually using the NY Region Consumer Price Index (“CPI”). However, for this renewal option, an annual increase of 2 percent was negotiated, which is currently 1.09 percent less than the most recent CPI and is projected to be less than the CPI for year two of this two-year renewal option term. All other terms, conditions, and pricing remain the same.
+[p038_c0010] During this final two-year renewal period, MNR will conduct a competitive solicitation to establish a new contract for the continuation of these services.
+[p038_c0011] This contract has been evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state, and local law and regulations. Any applicable cybersecurity requirements, to the extent required, have been included in the contract terms and conditions.
+[p038_c0012] Ferry services under this contract were suspended between March 2020 and August 2021 as a result of the Covid-19 pandemic. As such, previously approved funds for service were available and applied to services during the past year (September 2021–September 2022). At this time, funding totaling $8,244,372 is being requested to cover services for the last quarter of year 2022 in the amount of $883,763, and the final two-year contract renewal option in the amount of $7,360,609.
+### [p038_c0013] Impact on Funding
+[p038_c0014] Funding for this modification is based on the New York State Department of Transportation (“NYSDOT”) Memorandum of Understanding with MNR for both ferry service routes, including federal and state grants. The ferry service will be funded by NYSDOT (39 percent), federal funding (38 percent), and MNR operating funds along with ferry revenue (23 percent).
+[p038_c0015] _Master Page # 38 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 39
+
+> [p039_c0001] The MTA logo, consisting of a blue circle with the white letters "MTA" inside.
+### [p039_c0002] New York City Transit Procurements
+[p039_c0003] Louis Montanti , MTA Deputy Chief Procurement Officer – Procurement Operations
+[p039_c0004] _Master Page # 39 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 40
+
+### [p040_c0001] New York City Transit
+### [p040_c0002] PROCUREMENTS
+[p040_c0003] The Procurement Agenda this month includes 1 action for a proposed estimated expenditure of $7.9M.
+[p040_c0004] _Master Page # 40 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 41
+
+[p041_c0001]
+
+```text
+Subject Request for Authorization to Award Various Procurements Department MTA Procurement Department Head Name Kuvershen Ayer Department Head Signature Kuvershen Ayer Project Manager Name Rose Davis Board Action Order To Date Approval Info Other 1 Committee 09/19/22 2 Board 09/21/22
+```
+[p041_c0002]
+
+```text
+September 19, 2022 Internal Approvals Approval Approval President NYCT X Subways X COO X Diversity/Civil Rights X Law
+```
+[p041_c0003]
+
+```text
+Internal Approvals (cont.) Order Approval Order Approval Order Approval Order Approval
+```
+### [p041_c0004] PURPOSE
+[p041_c0005] To obtain approval of the Board to award various contracts and purchase orders, and to inform the NYC Transit Committee of these procurement actions.
+### [p041_c0006] DISCUSSION
+[p041_c0007] NYC Transit proposes to award Noncompetitive procurements in the following categories:
+[p041_c0008]
+
+```text
+Schedules Requiring Majority Vote: # of Actions $Amount Schedule H: Modifications to Personal/Miscellaneous Service Contracts 1 $ 7.9 M SUBTOTAL 1 $ 7.9 M
+```
+[p041_c0009] NYC Transit proposes to award Competitive procurements in the following categories: None
+[p041_c0010] NYC Transit proposes to award Ratifications in the following categories: None
+[p041_c0011]
+
+```text
+SUBTOTAL 1 $ 7.9 M TOTAL 1 $ 7.9 M
+```
+[p041_c0012] COMPETITIVE BIDDING REQUIREMENTS: The procurement actions in Schedules A, B, C, and D are subject to the competitive bidding requirements of PAL 1209 or 1265-a relating to contracts for the purchase of goods or public work. Procurement actions in the remaining Schedules are not subject to these requirements.
+[p041_c0013] BUDGET IMPACT: The purchases/contracts will result in obligating funds in the amounts listed. Funds are available in the current operating/capital budgets for this purpose.
+[p041_c0014] RECOMMENDATION: That the purchases/contracts be approved as proposed. (Items are included in the resolution of approval at the beginning of the Procurement Section.)
+[p041_c0015] _Master Page # 41 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 42
+
+### [p042_c0001] BOARD RESOLUTION
+[p042_c0002] WHEREAS , in accordance with Sections 1265-a and 1209 of the Public Authorities Law and the All-Agency General Contract Procurement Guidelines, the Board authorizes the award of certain noncompetitive purchase and public work contracts, and the solicitation and award of requests for proposals regarding purchase and public work contracts; and
+[p042_c0003] WHEREAS , in accordance with the All-Agency Service Contract Procurement Guidelines and General Contract Procurement Guidelines the Board authorizes the award of certain noncompetitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts, and
+[p042_c0004] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Service Contract Procurement Guidelines, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p042_c0005] NOW, the Board resolves as follows:
+[p042_c0006] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract.
+[p042_c0007] 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals, and authorizes the solicitation of such proposals.
+[p042_c0008] 3. As to each request for proposals (for purchase and public work contracts) set forth in Schedule C for which a recommendation is made to award the contract, the Board authorizes the execution of said contract.
+[p042_c0009] 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein and ratifies each action for which ratification is requested.
+[p042_c0010] 5. The Board authorizes the execution of each of the following for which Board authorization is required: (i) the miscellaneous procurement contracts set forth in Schedule E; (ii) the personal service contracts set forth in Schedule F; (iii) the miscellaneous service contracts set forth in Schedule G; (iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; (v) the contract modifications to purchase and public work contracts set forth in Schedule I; and (vi) the modifications to miscellaneous procurement contracts set forth in Schedule J.
+[p042_c0011] 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p042_c0012] _Master Page # 42 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 43
+
+[p043_c0001] SEPTEMBER 2022
+### [p043_c0002] LIST OF NONCOMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p043_c0003] Procurements Requiring Majority Vote:
+### [p043_c0004] H. Modifications to Personal Service Contracts and Miscellaneous Service Contracts Awarded as Contracts for Services
+[p043_c0005] (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p043_c0006] 2. DPR Ultrasonic Technologies LLC      $7,849,087 Staff Summary Attached Five Years Contract # 6%19338
+[p043_c0007] Modification to the contract for Ultrasonic Internal Rail Flaw Inspections, adding a three-year extension of time.
+[p043_c0008] _Master Page # 43 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 44
+
+### [p044_c0001] Schedule H: Modifications to Miscellaneous Service Contracts
+### [p044_c0002] Item 2
+[p044_c0003]
+
+```text
+Vendor Name (Location) DPR Ultrasonic Technologies, LLC (Ridgefield, Connecticut) Description: Ultrasonic Internal Rail Flaw Inspections Contract Term (including Options, if any) November 1, 2017–October 31, 2022 Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Department: Department of Subways, Demetrius Crichlow
+```
+[p044_c0004]
+
+```text
+Contract Number AWO/Mod. #: 6%19338 1 Original Amount: $ 10,352,334 Prior Modifications $ 0 Prior Budgetary Increases: $ 0 Current Amount: $ 10,352,334 This request: $ 7,849,087 % of This Request to Current Amount: 76% % of Modifications (including This Request) to Original Amount: 76%
+```
+### [p044_c0005] Discussion:
+[p044_c0006] NYC Transit requests MTA Board approval of a three-year extension to the contract for Ultrasonic Internal Rail Flaw Inspections. The contract was awarded pursuant to EO168 to DPR Ultrasonic Technologies, LLC (“DPR”) on November 1, 2017, and ratified by the December 2017 Board for a period of five years (through October 31, 2022), in the total estimated amount of $10,352,334, as a noncompetitive estimated quantity contract due to the specific ultrasonic testing performed to ensure track integrity, and the maintenance and technical support DPR provides on its rail testing equipment and technology. All services provided by DPR on this contract are performed by, and proprietary to, DPR. DPR is the only firm that can operate its equipment.
+[p044_c0007] Under this contract, DPR performs ultrasonic testing of rail-using equipment of its own design mounted to NYC Transit-owned and operated Track Geometry Cars (“TGCs”). Ultrasonic inspection is a function of ensuring track integrity by detecting potential flaws in rail that may not be visible to the naked eye by emitting high-frequency soundwaves into the rail and subsequently measuring how those soundwaves move through the rail. By detecting and analyzing otherwise invisible flaws within the rail, the rail can be replaced before a failure occurs. The inspection process is continuous, enabling the detection of flaws without requiring the TGC vehicle to stop, minimizing its impact to revenue service operations. The data resulting from the inspection is then analyzed by DPR staff and presented to Department of Subways (“DOS”) personnel as Priority 1, Priority 2, or lesser rail defects to assist DOS in track maintenance and specifically rail replacement to ensure the track is safe for the operation of subway trains. This contract also includes maintenance and technical support of DPR’s equipment on the TGCs.
+[p044_c0008] Services under this contract include the provision of on-vehicle staff to operate the ultrasonic testing equipment, independent analysis staff embedded with NYC Transit staff to mutually interpret the data collected, as well as pricing for maintenance and as-needed repairs of the equipment. Pricing on the base contract was negotiated as firm, fixed pricing for each year of its five-year term. DPR originally proposed $8,604,427 for this extension. Through discussions, DPR offered a unilateral price concession resulting in a final estimated expenditure amount of $7,849,087 over the extension period. As a result, cost avoidance of approximately $755,340 were achieved. The pricing for the extension has been found fair and reasonable.
+[p044_c0009] The contract resulting from this procurement action has been evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state, and local law and regulations. The Authority is working with the contractor to include applicable cybersecurity requirements prior to the exercise of this modification.
+### [p044_c0010] Impact on Funding
+[p044_c0011] This requirement will utilize Operating funds.
+[p044_c0012] _Master Page # 44 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 45
+
+### [p045_c0001] Staff Summary
+[p045_c0002]
+
+```text
+Approval of Independent Engineer for TBTA Bond Issues Department Finance Department Head Name Kevin Willens, Chief Financial Officer Department Head Signature Project Manager Name Patrick McCoy, Deputy Chief, Financial Services
+```
+[p045_c0003]
+
+```text
+Date September 19, 2022 Vendor Names Stantec Consulting Services Inc. Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p045_c0004]
+
+```text
+Board Action Internal Approvals Order To Date Approval Info Other Order Approval Order Approval 1 Finance Comm. 09/19 X 1 Legal 3 DDCR 2 Board 09/21 X 2 Chief of Staff
+```
+### [p045_c0005] PURPOSE:
+[p045_c0006] To obtain Board approval of a competitively negotiated personal services contract with Stantec Consulting Services Inc. (“Stantec”) to provide consulting services as an Independent Engineer required by the MTA Triborough Bridge and Tunnel Authority (“TBTA”) General Revenue Bond Resolution (“GRBR”), for a five-year term, with one one-year option to renew, for a not-to-exceed cost of $1,106,976.
+### [p045_c0007] DISCUSSION:
+[p045_c0008] TBTA’s Independent Engineer, as required by the TBTA GRBR, is responsible for preparing, on an annual basis, a report projecting traffic, toll revenues and expenses on TBTA’s bridges and tunnels. In addition, TBTA’s Independent Engineer reviews the physical condition of the bridges and tunnels. The annual report that is entitled “History and Projection of Traffic, Toll Revenues and Expenses and Review of Physical Conditions of the Facilities of Triborough Bridge and Tunnel Authority” is referenced in disclosure documents used in the issuance from time to time of MTA Bridges and Tunnels’ bonds through the public credit markets. Bondholders may rely upon the report in making their investment decisions.
+[p045_c0009] Stantec specializes in working with toll authorities in North and South America and their financial advisors, in providing traffic and revenue and engineering services. The services include, but are not limited to, traffic and toll revenue forecasting, feasibility studies, physical inspections, and testing the feasibility of system expansions. Stantec has served as TBTA’s Independent Engineer pursuant to a contract approved by the Board in January 2012. The Stantec “team” will include the following three subcontractors: Urbanomics, Inc., a New York State certified WBE, KC Engineering and Land Surveying, PC., a New York State certified MBE, and Dinmore Engineering PLLC, a certified SDVOB. Urbanomics will review factors affecting traffic growth, KC Engineering and Land Surveying, P.C. will perform a review of regional operational and construction impacts, and Dinmore Engineering will perform a review of physical conditions at the TBTA facilities.
+### [p045_c0010] BACKGROUND
+[p045_c0011] In October 2019, MTA issued a Request for Proposals (RFP) for an Independent Engineer for TBTA Bond Issues. The RFP was initially delayed due to the COVID-19 pandemic, and then recently required additional time due to the new Cyber Security requirements that had to be met by Stantec. The RFP evaluation criteria included: i) relevant experience and qualifications of proposer’s key personnel, ii) reasonableness of the methodology proposed, iii) proposer’s ability to complete the project in a professional and timely manner, iv) overall quality and responsiveness of the proposal, v) reasonableness of cost and work estimates, and vi) proposer’s diversity practices. Two proposals were received: one from the incumbent, Stantec, and the other from Steer Davies & Gleave Limited (“Steer”). A Selection Committee, comprised of representatives of MTA’s Finance Department and TBTA’s Planning Department (“Selection Committee”), reviewed the two proposals and unanimously found that Stantec was the more technically qualified firm to work on this matter and rated it higher than Steer when the evaluation criteria was taken into consideration. However, the Selection Committee recommended that MTA Procurement request Best and Final Offers (“BAFOs”) from both Stantec and Steer.
+[p045_c0012] _Master Page # 45 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 46
+
+### [p046_c0001] Staff Summary
+### [p046_c0002] Metropolitan Transportation Authority
+[p046_c0003] Stantec submitted a proposal for a five-year contract in the amount of $916,906 or $15,282 per month. In year six (the one year extension option) the monthly price would be $15,339 per month. The total for six years is $1,106,976. Steer submitted a proposal for the same time periods and their proposal exceeded Stantec's total by approximately 23%. The Selection Committee recommended award of the contract to Stantec as it provided the best value to the MTA based on its technical expertise and BAFO. The Selection Committee considered Stantec the more qualified of the two firms to provide the services based upon the following: it has a large and diverse practice as independent engineer to local, regional, and national toll and bridge authorities, and it has previous experience working with the MTA and TBTA on the following matters: remediating the after-effects of Superstorm Sandy, analyzing the multiple toll rate changes, TBTA's shift to all electronic tolling, and preparing the preliminary analyses related the Central Business District Tolling Program.
+[p046_c0004] The contract resulting from this procurement has been evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state, and local law and regulations. The applicable cybersecurity requirements will be included prior to the exercise of this award.
+[p046_c0005] Stantec has certified that, pursuant to EO 16, it is not doing business in Russia.
+### [p046_c0006] M/W/DBE INFORMATION
+[p046_c0007] The Department of Diversity and Civil Rights (DDCR) has established 15% MBE, 15% WBE and 6% SDVOB participation goals on the contract. Stantec Consulting Services Inc. has submitted an MWBE/SDVOB utilization plan that meets the required 36% MWBE/SDVOB goal. Stantec Consulting Services Inc. has achieved its goals on recently completed contracts.
+### [p046_c0008] FUNDING
+[p046_c0009] Funding for these services will become available upon the issuance of TBTA bonds.
+### [p046_c0010] ALTERNATIVES:
+[p046_c0011] There is no alternative for the MTA and TBTA to not use an Independent Engineer.
+### [p046_c0012] RECOMMENDATION:
+[p046_c0013] Based on Stantec's qualifications and price proposal, the Selection Committee recommends the award of a contract to Stantec to serve as TBTA's Independent Engineer in connection with the issuance of TBTA bonds for a period of five years, with a one year option to renew.
+[p046_c0014] _Master Page # 46 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 47
+
+> [p047_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p047_c0002] MTA Headquarters Procurements
+[p047_c0003] Kuvershen Ayer , Chief Procurement Officer – Office of the Chief Procurement Officer
+[p047_c0004] _Master Page # 47 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 48
+
+> [p048_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p048_c0002] PROCUREMENTS
+[p048_c0003] The Procurement Agenda this month includes 1 action for a proposed estimated expenditure of $4.8M.
+[p048_c0004] _Master Page # 48 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 49
+
+[p049_c0001]
+
+```text
+Subject Request for Authorization to Award Various Procurements Department MTA Procurement Department Head Name Kuvershen Ayer Department Head Signature Kuvershen Ayer Project Manager Name Rose Davis Board Action Order To Date Approval Info Other 1 Committee 09/19/22 2 Board 09/21/22
+```
+[p049_c0002]
+
+```text
+September 16, 2022 Department Department Head Name Department Head Signature Internal Approvals Approval Approval 1 CAO 2 Legal 3 CFO
+```
+### [p049_c0003] Internal Approvals (cont.)
+[p049_c0004]
+
+```text
+Order Approval Order Approval Order Approval Order Approval
+```
+### [p049_c0005] PURPOSE
+[p049_c0006] To obtain approval of the Board to award various contracts and purchase orders, and to inform the Finance Committee of these procurement actions.
+### [p049_c0007] DISCUSSION
+[p049_c0008] MTAHQ proposes to award Noncompetitive procurements in the following categories: None
+[p049_c0009] MTAHQ proposes to award Competitive procurements in the following categories:
+[p049_c0010]
+
+```text
+Schedules Requiring Majority Vote: # of Items $Amount Schedule F: Personal Service Contracts 1 $ 4.8 M SUBTOTAL 1 $ 4.8 M
+```
+[p049_c0011] MTAHQ proposes to award Ratifications in the following categories: None
+[p049_c0012]
+
+```text
+SUBTOTAL 1 $ 4.8 M TOTAL 1 $ 4.8 M
+```
+[p049_c0013] COMPETITIVE BIDDING REQUIREMENTS: The procurement actions in Schedules A, B, C, and D are subject to the competitive bidding requirements of PAL 1209 or 1265-a relating to contracts for the purchase of goods or public work. Procurement actions in the remaining Schedules are not subject to these requirements.
+[p049_c0014] BUDGET IMPACT: The purchases/contracts will result in obligating funds in the amounts listed. Funds are available in the current operating/capital budgets for this purpose.
+[p049_c0015] RECOMMENDATION: That the purchases/contracts be approved as proposed. (Items are included in the resolution of approval at the beginning of the Procurement Section.)
+[p049_c0016] _Master Page # 49 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 50
+
+### [p050_c0001] BOARD RESOLUTION
+[p050_c0002] WHEREAS , in accordance with Sections 1265-a and 1209 of the Public Authorities Law and the All-Agency General Contract Procurement Guidelines, the Board authorizes the award of certain noncompetitive purchase and public work contracts, and the solicitation and award of requests for proposals regarding purchase and public work contracts; and
+[p050_c0003] WHEREAS , in accordance with the All-Agency Service Contract Procurement Guidelines and General Contract Procurement Guidelines the Board authorizes the award of certain noncompetitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts, and
+[p050_c0004] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Service Contract Procurement Guidelines, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p050_c0005] NOW, the Board resolves as follows:
+[p050_c0006] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract.
+[p050_c0007] 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals, and authorizes the solicitation of such proposals.
+[p050_c0008] 3. As to each request for proposals (for purchase and public work contracts) set forth in Schedule C for which a recommendation is made to award the contract, the Board authorizes the execution of said contract.
+[p050_c0009] 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein and ratifies each action for which ratification is requested.
+[p050_c0010] 5. The Board authorizes the execution of each of the following for which Board authorization is required: (i) the miscellaneous procurement contracts set forth in Schedule E; (ii) the personal service contracts set forth in Schedule F; (iii) the miscellaneous service contracts set forth in Schedule G; (iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; (v) the contract modifications to purchase and public work contracts set forth in Schedule I; and (vi) the modifications to miscellaneous procurement contracts set forth in Schedule J.
+[p050_c0011] 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p050_c0012] _Master Page # 50 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 51
+
+### [p051_c0001] SEPTEMBER 2022
+### [p051_c0002] Metropolitan Transportation Authority
+### [p051_c0003] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p051_c0004] Procurements Requiring Majority Vote:
+### [p051_c0005] F. Personal Service Contracts
+[p051_c0006] (Staff Summaries required for items estimated to be greater than $1,000,000.)
+### [p051_c0007] 1. Hill International, Inc.
+[p051_c0008] $4,762,800
+[p051_c0009] Staff Summary Attached
+[p051_c0010] Five-years plus two 1-year options
+[p051_c0011] Contract # 15733
+[p051_c0012] Award of a personal services contract to provide Independent Engineer services for the Certification of Transit and Railroad Programs required by the bond covenants of the General Resolution Authorizing Transportation Revenue Obligations.
+[p051_c0013] _Master Page # 51 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 52
+
+### [p052_c0001] Staff Summary
+### [p052_c0002] Metropolitan Transportation Authority
+### [p052_c0003] Page 1 of 2
+[p052_c0004]
+
+```text
+Item Number 1 Department: MTA Procurement, Kuvershen Ayer Internal Approvals Order Approval Order Approval 1 CAO 2 Legal 3 DDCR 4 CFO
+```
+[p052_c0005]
+
+```text
+SUMMARY INFORMATION Vendor Name Hill International, Inc. Contract No. 15733 Description Independent Engineer Certifications Total Amount: $4,762,800 Contract Term (including Options, if any) Five years plus two 1-year options Option(s) included in Total Amt? Yes No N/A Renewal? Yes No Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Funding Source Operating Capital Federal Other:
+```
+### [p052_c0006] Purpose
+[p052_c0007] To obtain Board approval to award a competitively negotiated personal services contract to Hill International, Inc. ("Hill") to provide Independent Engineer Services for the Certification of Transit and Railroad Programs required by the bond covenants of the General Resolution Authorizing Transportation Revenue Obligations. The contract will be for a term of five years from October 1, 2022, to September 31, 2027, with two 1-year renewal options, for the not-to-exceed amount of $4,762,800.
+### [p052_c0008] Discussion
+[p052_c0009] Under this contract, Hill will function as Independent Engineer with the responsibility of certifying that the inspection, maintenance, and repair programs ("Programs") adopted by NYC Transit, Long Island Rail Road ("LIRR"), Metro-North Railroad ("MNR"), and MTA Bus are appropriate and sufficient to ensure the continued operation of the systems as a whole. In this capacity, Hill will be responsible for certifying that the costs estimated for the Programs are logically derived and reasonable, and that adequate provisions are included in each respective operating agency's budget. Hill, currently serving as the MTA's current Independent Engineer service provider, is also required to issue four reports annually: one each for NYC Transit, LIRR, MNR, and MTA Bus.
+[p052_c0010] A competitive Request for Proposals ("RFP") was publicly advertised, and notifications were emailed to 489 firms informing them of the RFP for the replacement contract. The RFP evaluation criteria included (1) proposer's ability to complete the project in a professional and timely manner; (2) relevant experience and qualifications of proposer's key personnel; (3) reasonableness of the methodology proposed; (4) proposer's prior experience in public transportation operations, e.g., bus, commuter rail and subway; (5) reasonableness of cost and work estimates, (6) overall quality and responsiveness of the proposal; and (7) demonstration of a clear understanding of the project's objectives. Proposals were received from two firms: Hill, and Clark Transportation Consulting & Services, LLC, dba Bison Rail Systems ("Bison"). A Selection Committee ("SC") comprised of representatives of MTA's Management and Budget Department evaluated each of the proposals and found both firms technically qualified. However, Hill was unanimously determined technically superior to provide the necessary services. The SC recommended that MTA Procurement proceed with negotiations with both firms.
+[p052_c0011] _Master Page # 52 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 53
+
+### [p053_c0001] Staff Summary
+### [p053_c0002] Page 2 of 2
+[p053_c0003] Both firm's initial cost proposals included fixed pricing for the five-year base term. Hill's proposal was in the amount of $4,263,358. Bison's proposal was in the amount of $3,312,000. As a result of negotiations, Hill's Best and Final Offer ("BAFO") for the five-year base term was reduced to $3,264,000 (23 percent or $999,358). Bison's BAFO was in the amount of $3,126,000, which is 4 percent less than Hill's for the same base term.
+[p053_c0004] The MTA also negotiated two optional years with both proposers with an escalation percentage applied for years six and seven. Hill's BAFO for the seven years was $4,762,800, which is 7 percent higher than Bison's ($4,423,713).
+[p053_c0005] Upon review of the BAFOs, the SC unanimously recommended award of the contract to Hill. The SC determined Hill to be the most qualified firm to provide the necessary services based on the following: extensive experience regarding inspection/maintenance repair programs; track record in providing Independent Engineering Consulting services to transportation entities countrywide; prior experience with the MTA and the Federal Trade Administration; and the qualifications and capabilities of the internal support team being assigned to the MTA account. Although Hill is not the lowest cost proposer, the SC determined that Hill's proposal provided the best value to the MTA and rated it highest overall with all evaluation criteria taken into consideration. Based on the foregoing, Hill's BAFO pricing was found to be fair and reasonable.
+[p053_c0006] In connection with the award of this contract, Hill has been found responsible notwithstanding Significant Adverse Information that was found pursuant to the All-Agency Responsibility Guidelines and such responsibility finding has been approved by the MTA Deputy Chief Operating Officer in consultation with the MTA General Counsel on September 14, 2022.
+[p053_c0007] The contract resulting from this procurement has been evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state, and local law and regulations. The applicable cybersecurity requirements will be included prior to the exercise of this award.
+### [p053_c0008] M/W/DBE Information
+[p053_c0009] The Department of Diversity and Civil Rights has established 15 percent MBE, 15 percent WBE, and 6 percent SDVOB participation goals on the contract. Hill International, Inc. has submitted an MWBE/SDVOB utilization plan that meets required MWBE/SDVOB goal requirements. Hill International, Inc. has not completed any MTA contracts with goals; therefore, no assessment of their MWBE performance is available at this time.
+### [p053_c0010] Impact on Funding
+[p053_c0011] The total not-to-exceed cost of $4,762,800 for the seven-year contract will be funded through MTAHQ's budget.
+### [p053_c0012] Alternatives
+[p053_c0013] None. The Independent Engineer Certification is legally required by the bond covenants of the General Resolution Authorizing Transportation Revenue Obligations.
+[p053_c0014] Perform services in-house: Not feasible, as the MTA does not have staff with the specialized expertise, experience, and independence the General Resolution Authorizing Transportation Revenue Obligations requires.
+### [p053_c0015] Recommendation
+[p053_c0016] Award a competitively negotiated personal services contract to Hill to perform the services of Independent Engineer for Certification of NYC Transit, LIRR, MNR, and MTA Bus Programs.
+[p053_c0017] _Master Page # 53 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 54
+
+### [p054_c0001] SEPTEMBER 2022 MTA REAL ESTATE LIST OF REAL ESTATE ACTION ITEMS FOR BOARD APPROVAL
+### [p054_c0002] METROPOLITAN TRANSPORTATION AUTHORITY
+[p054_c0003] Acquisition of property interests for Phase 2 of the Second Avenue Subway Project
+[p054_c0004] Amendment to the Grand Central Terminal Short Term License Program to include Grand Central Madison's retail concourse
+### [p054_c0005] MTA METRO-NORTH RAILROAD
+[p054_c0006] Acquisition of property interests in the Bronx, Queens, and Westchester for the Penn Station Access Project – Approval of Determination and Findings under the Eminent Domain Procedure Law
+[p054_c0007] Acquisition of real property interests at 4 Fisher Lane, White Plains, Westchester, NY
+### [p054_c0008] MTA NEW YORK CITY TRANSIT
+[p054_c0009] Surrender of surplus zoning floor area and certain easement interests to the City of New York pursuant to the NYCT Master Lease at the Garfield Place Substation, Brooklyn, NY
+[p054_c0010] Lease extension with Thor Equities for office space at 180 Livingston Street, Brooklyn, NY
+[p054_c0011] License agreement with South Hill Food, Inc. for two retail spaces at Atlantic Ave – Barclay's Center subway station, Brooklyn, NY
+[p054_c0012] _Master Page # 54 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 55
+
+### [p055_c0001] Staff Summary
+### [p055_c0002] Metropolitan Transportation Authority
+### [p055_c0003] Page 1 of 3
+[p055_c0004]
+
+```text
+Subject ACQUISITION OF PROPERTY INTERESTS FOR PHASE 2 OF THE SECOND AVENUE SUBWAY PROJECT Department MTA TRANSIT ORIENTED DEVELOPMENT Department Head Name ROBERT PALEY Department Head Signature Project Manager Name HELENE CINQUE/ ROBAIR REICHENSTEIN
+```
+[p055_c0005]
+
+```text
+Date SEPTEMBER 21, 2022 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p055_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 9/19/22 X 2 Board 9/21/22 X
+```
+[p055_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p055_c0008] AGENCY: Metropolitan Transportation Authority (“MTA”) and MTA New York City Transit (“NYCT”) SELLER: Various property owners, see attached schedule LOCATION: Various locations, see attached schedule ACTIVITY: Acquisition of permanent and temporary easements (collectively “Easements”) through negotiated agreement or eminent domain ACTION REQUESTED: Authorization to acquire the Easements through negotiated agreement or eminent domain SPACE: Various easement areas at and below grade level COMPENSATION: Various, all to be determined
+### [p055_c0009] COMMENTS:
+[p055_c0010] In connection with the construction of Phase 2 of NYCT’s Second Avenue Subway Project (“SAS-2”), a number of Easements (as identified on the attached schedule) are required for the new subway tunnel that will run from 105 th Street to 125 th Street, and then west along 125 th Street to just past Lenox Avenue, and the station entrances and ancillary facilities that run along the length of the alignment. The Easements are primarily needed for support of excavation, ground support and improvement work to stabilize the ground below properties that are adjacent to the subway tunnel, station entrances and ancillary facilities. The required Easements will run along the entire length of the alignment and in and around the areas reserved for the station entrances and ancillary facilities.
+[p055_c0011] The Easements are necessary for the support of excavation systems to be installed under existing buildings and/or properties. These support systems (which can be any combination of rock bolts, tie backs, grouting, or other structural members) will be located below many existing building foundations within the temporary easement areas. The duration of the temporary Easements will vary typically from three (3) to five (5) years. The properties listed on the attachment to this staff summary indicate the Easements that are currently targeted for acquisition as part of SAS-2.
+[p055_c0012] MTA will endeavor to acquire all of the required Easements through negotiated agreements. However, for a project of this magnitude, MTA may not be able to reach agreements with all property owners and may be compelled to acquire some of the required Easements by eminent domain. Thus, Board approval is being sought for MTA to begin taking steps to satisfy the requirements of Eminent Domain Procedure Law, to preserve MTA’s rights and lessen the potential for delays to the project and ensure the timely acquisition of the required Easements. If negotiated agreements to acquire any of the required Easements are reached prior to the filing of condemnation papers with the court, the terms of any such agreements will be presented to the Finance Committee and MTA Board for further approval.
+[p055_c0013] _Master Page # 55 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 56
+
+[p056_c0001] Based on the foregoing, MTA Real Estate requests authorization, pursuant to the attached resolution, to proceed with the acquisition, by negotiated agreement, subject to further Board approval as to the negotiated terms thereof, or condemnation, of the permanent and temporary Easements identified on the attached schedule, upon the terms described above.
+[p056_c0002] _Master Page # 56 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 57
+
+### [p057_c0001] Staff Summary
+### [p057_c0002] Metropolitan Transportation Authority
+### [p057_c0003] Page 2 of 3
+### [p057_c0004] BOARD RESOLUTION
+[p057_c0005] WHEREAS, MTA is undertaking the construction of the second phase of the MTA New York City Transit Second Avenue Subway Project (“SAS-2”);
+[p057_c0006] WHEREAS, in connection with SAS-2, a number of permanent and temporary easements (collectively, Easements”) are required as set forth on the attachment to this Resolution, in and around the subway tunnel and station areas and ancillary facilities along the length of the alignment;
+[p057_c0007] WHEREAS, MTA will endeavor to acquire the Easements through negotiated voluntary agreements with the affected property owners and tenants but, to preserve MTA’s rights and lessen the potential for future delays to the project if agreements cannot be negotiated in a timely manner, MTA must take preliminary steps under the Eminent Domain Procedure Law to secure the Easements needed for SAS-2.
+[p057_c0008] NOW THEREFORE, BE IT RESOLVED that, in accordance with the Eminent Domain Procedure Law and Section 1267 of the Public Authorities Law, the Chairman or designated staff member of MTA is authorized to proceed with the acquisition of the Easements described in the attached schedule by negotiated agreements, if possible, subject to further Board approval of the negotiated terms thereof, or eminent domain, if necessary, and to schedule and undertake such preliminary steps, including holding a public hearing, as may be required under the Eminent Domain Procedure Law, in connection with the acquisition of the required Easements.
+[p057_c0009] BE IT FURTHER RESOLVED, that the proposed acquisition of the required Easements will be subject to prior satisfactory completion of any required environmental reviews.
+[p057_c0010] See attachment for list of properties and the related Easements.
+[p057_c0011] This resolution shall take effect immediately upon its adoption.
+[p057_c0012] _Master Page # 57 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 58
+
+### [p058_c0001] Staff Summary
+### [p058_c0002] Metropolitan Transportation Authority
+### [p058_c0003] FINANCE COMMITTEE MEETING ACQUISITION OF PROPERTY INTERESTS FOR PHASE 2 OF THE SECOND AVENUE SUBWAY PROJECT (Cont'd.)
+### [p058_c0004] Page 3 of 3
+### [p058_c0005] Acquisition of Temporary Easement Property Interests in Support of the MTA New York City Transit's Second Avenue Subway Project by Negotiated Purchase or Condemnation
+[p058_c0006]
+
+```text
+Block Lot Type of Interest Reputed Owner Address 1678 1 Permanent & Temporary Easements Franklin Plaza Apartments, Inc. 2086 Second Avenue 1789 37 Permanent & Temporary Easements NY Public Library 226 East 125 th Street 1785 23 Temporary Easement 1841 Park Ave Realty Corp. 2343 Second Avenue 1785 24 Temporary Easement 2347 Assets LLC 2347 Second Avenue 1785 25 Temporary Easement Hope East of Fifth Housing Development Fund Co. Inc. 2349 Second Avenue 1785 26 Temporary Easement Diego Ortiz / Edward Ortiz 2351 Second Avenue 1785 27 Temporary Easement Nite Homes Housing Development Fund Company, Inc 2353 Second Avenue 1785 28 Temporary Easement Old Harlem Road, L. P. 2355 Second Avenue 1785 29 Temporary Easement Odyssey House Inc. 2357 Second Avenue 1789 21 Temporary Easement East 124 th Street LLC 245 East 124 th Street 1789 26 Temporary Easement La Casa Nuestra Housing Development Fund Corp 260 East 125 th Street 1789 27 Temporary Easement E 129 St Cluster LP 258 East 125 th Street 1789 28 Temporary Easement Tano Associates, Inc 256 East 125 th Street 1789 29 Temporary Easement 254-125 LLC 254 East 125 th Street 1789 34 Temporary Easement Church of Scientology Religious Trust 232 East 125 th Street 1789 35 Temporary Easement Church of Scientology Religious Trust 230 East 125 th Street 1789 36 Temporary Easement Church of Scientology Religious Trust 228 East 125 th Street 1749 33 Temporary Easement The Durst Organization 1796-1816 Park Ave
+```
+[p058_c0007] _Master Page # 58 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 59
+
+### [p059_c0001] Staff Summary
+### [p059_c0002] Metropolitan Transportation Authority
+### [p059_c0003] Page 1 of 1
+[p059_c0004]
+
+```text
+Subject GRAND CENTRAL TERMINAL RETAIL LICENSING PROGRAM MODIFICATION Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name KIM TREVISAN
+```
+[p059_c0005]
+
+```text
+Date SEPTEMBER 21, 2022 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p059_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 09/19/22 X 2 Board 09/21/22 X
+```
+[p059_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p059_c0008] AGENCY: Metropolitan Transportation Authority (“MTA”) and Grand Central Madison Operating Corporation (“GCMCOC”) PURPOSE: To obtain MTA Board approval for expansion of the Real Estate Policies and Procedures for the Licensing of Real Property regarding Grand Central Terminal Retail Licensing Program, as adopted on April 27, 2009 and amended July 22, 2020, September 23, 2020 and June 29, 2022, to include Grand Central Madison.
+### [p059_c0009] COMMENTS:
+[p059_c0010] By Staff Summary dated June 26, 2022, (attached), the MTA Board made permanent a revision, adopted by the Board in July 22, 2020 (Staff Summary attached) to the policy governing short-term licenses in Grand Central Terminal (“GCT Short Term Licensing Policy”), originally adopted by the Board on April 27, 2009. The GCT Short Term Licensing Policy now allows MTA Real Estate to enter into short-term license agreements in Grand Central Terminal, for durations of up to three (3) years – rather the two (2) years under the original policy. The GCT Short Term Licensing Policy has been successfully used in GCT as a post-Covid approach to quickly activate vacant retail spaces while providing time to develop long-term plans for an evolving retail market.
+[p059_c0011] In Grand Central Madison, the same short-term license agreements will be used to engage and activate pop-up retail along the Madison Concourse, and the LIRR mezzanine below, until GCMCOC secures a long-term retail master tenant which will curate long term retail occupancies. By extending the policy to GC Madison MTA Real Estate seeks to ensure MTA customers can enjoy retail amenities and conveniences in Grand Central Madison upon terminal opening – in advance of the retail master tenant.
+[p059_c0012] As with other licensing and leasing procedures, MTA Real Estate has put in place procedures providing governance over public offering and tenant selection protocols.
+[p059_c0013] MTA Real Estate seeks authorization to amend the current Grand Central Terminal Retail Licensing Program to include Grand Central Madison.
+[p059_c0014] _Master Page # 59 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 60
+
+### [p060_c0001] staff summary
+### [p060_c0002] Metropolitan Transportation Authority
+### [p060_c0003] Page 1 of 1
+[p060_c0004]
+
+```text
+Subject GRAND CENTRAL TERMINAL RETAIL LICENSING PROGRAM MODIFICATION Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name KIM TREVISAN
+```
+[p060_c0005]
+
+```text
+Date JUNE 29, 2022 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p060_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 6/27/22 X 2 Board 6/29/22 X
+```
+[p060_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p060_c0008] AGENCY: Metropolitan Transportation Authority (“MTA”) and MTA Metro-North Railroad (“Metro-North”) URPOSE: To obtain MTA Board approval for a permanent modification to Real Estate Policies and procedures for the Licensing of Retail Property within the Grand Central Terminal Retail Licensing Program, as adopted on April 27, 2009 and amended July 22, 2020 and September 23, 2020
+### [p060_c0009] COMMENTS:
+[p060_c0010] By staff summary dated July 22, 2020 and September 23, 2020 (each attached), the MTA Board adopted amendments to the policy governing short-term retail licenses at Grand Central Terminal (“GCT Short Term Licensing Policy”) originally adopted by the Board on April 27, 2009 (attached). The amendments to the GCT Short Term Licensing Policy are set to expire in August 2022 unless further action is taken by the MTA Board.
+[p060_c0011] As with other licensing and leasing procedures, MTA Real Estate put in place procedures providing oversight over public office and tenant selection protocols.
+[p060_c0012] The GCT Short Term Licensing Policy, as amended, has been extremely successful. The information it submitted to the Finance Committee in April, 2022 reported 15 new or renewed licenses as a result of amendments completed in Grand Central Terminal which contributed to the retail environment in a post-Covid world. The 3-year term, along with the other modifications, has been utilized to quickly activate retail spaces until the retail market can be better valued in a post-Covid world and, in the long term, will allow the MTA to react nimbly to changes in retail trends, as well as demonstrate the value of GCT's retail space in realty, which market in the retail space for long term leases via a Request for Proposals process.
+[p060_c0013] MTA Real Estate seeks authorization to permanently adopt the GCT Short Term Licensing Program as amended on terms and conditions stated above.
+[p060_c0014] _Master Page Page 140 of 6016284 Final Board Meeting 9/21/2022_
+
+## Page 61
+
+### [p061_c0001] Staff Summary
+### [p061_c0002] Metropolitan Transportation Authority
+### [p061_c0003] Page 1 of 1
+[p061_c0004]
+
+```text
+Subject GRAND CENTRAL TERMINAL RETAIL LICENSING PROGRAM MODIFICATION Department REAL ESTATE Department Head Name JOHN N. LIEBER Department Head Signature Project Manager Name DAVID FLORIO
+```
+[p061_c0005]
+
+```text
+Date JULY 22, 2020 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p061_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 7/22/20 X 2 Board 7/22/20 X
+```
+[p061_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p061_c0008] AGENCY: Metropolitan Transportation Authority (“MTA”) and MTA Metro-North Railroad (“Metro-North”) PURPOSE: To obtain MTA Board approval for a modification to Real Estate Policies and Procedures for the Licensing of Real Property, as adopted on April 27, 2009 EXPIRATION: The modification will expire August 1, 2022
+### [p061_c0009] COMMENTS:
+[p061_c0010] By staff summary dated April 27, 2009, the MTA Board approved the attached policy and accompanying resolution, authorizing MTA Real Estate to enter into short term license agreements in Grand Central Terminal for up to two years. The policy was created to address retail vacancies that were occurring in the Terminal before Requests for Proposals (RFPs) were awarded and a new tenant would take possession. The policy sought to keep retail space occupied and maintain customer amenities in order to continue to generate revenue.
+[p061_c0011] With the advent of COVID-19, the overall retail market has suffered and many of our tenants, and proposed tenants with whom we were negotiating, are wavering on remaining in the Terminal as their leases and licenses expire.
+[p061_c0012] MTA Real Estate recognizes these current, retail market challenges and the significant impact it has on businesses, especially the retail tenants at Grand Central Terminal. In an effort to avoid vacant or “dark” spaces during a time when responses to RFPs are unknown, MTA Real Estate requests the following:
+- [p061_c0013] Modification of the existing policy to increase the maximum term of new short-term license agreements in Grand Central Terminal to three (3) years (including authorization to enter into new short-term license agreements with existing lessees occupying space under expiring leases for up to three (3) years); and Authorization to extend existing, short term, license agreements in Grand Central Terminal for up to an additional three (3) years.
+[p061_c0014] MTA Real Estate seeks authorization to amend the current Grand Central Terminal Retail Licensing Program on the terms and conditions stated above.
+[p061_c0015] _Master Page Page # 6116284 Final Board Meeting 9/21/2022_
+
+## Page 62
+
+### [p062_c0001] Staff Summary
+### [p062_c0002] Metropolitan Transportation Authority
+### [p062_c0003] Page 1 of 1
+[p062_c0004]
+
+```text
+Subject GRAND CENTRAL TERMINAL RETAIL LICENSING PROGRAM MODIFICATION Department REAL ESTATE Department Head Name JOHN N. LIEBER Department Head Signature Project Manager Name DAVID FLORIO
+```
+[p062_c0005]
+
+```text
+Date SEPTEMBER 23, 2020 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p062_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 9/23/20 X 2 Board 9/23/20 X
+```
+[p062_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p062_c0008] AGENCY: Metropolitan Transportation Authority (“MTA”) and MTA Metro-North Railroad (“Metro-North”) PURPOSE: To obtain MTA Board approval for a further modification to Real Estate Policies and Procedures for the Licensing of Real Property, as adopted on April 27, 2009 and amended July 22, 2020 EXPIRATION: The modification will expire August 1, 2022
+### [p062_c0009] COMMENTS:
+[p062_c0010] By staff summary dated July 22, 2020 (attached), the MTA Board approved the amendment of the policy governing short-term licenses that was comprised of:
+- [p062_c0011] Modification of the existing policy to increase the maximum term of new short-term license agreements in Grand Central Terminal to three (3) years (including authorization to enter into new short-term license agreements with existing lessees occupying space under expiring leases for up to three (3) years); and Authorization to extend existing, short term, license agreements in Grand Central Terminal for up to an additional three (3) years.
+[p062_c0012] However, the policy amendment failed to include the temporary modification of the limitation of short term license agreements to existing tenants. In light of the impacts of Covid-19, MTA Real Estate seeks to broaden the offering of these short-term licenses beyond the current MTA tenant roster. As with other licensing and leasing policies, MTA Real Estate will put in place procedures that provide governance over public offering and tenant selection protocols.
+[p062_c0013] MTA Real Estate seeks authorization to amend the current Grand Central Terminal Retail Licensing Program on the terms and conditions stated above.
+[p062_c0014] _Master Page # 6216284 Final Board Meeting 9/23/2022_
+
+## Page 63
+
+### [p063_c0001] REPORT ON AGREEMENTS ENTERED INTO DIRECTLY BY THE REAL ESTATE DEPARTMENT PURSUANT TO BOARD POLICY
+[p063_c0002] March 28th, 2022
+[p063_c0003]
+
+```text
+Agency/Project Manager Renewal/RFP Generated (Lessee or Licensee) Location/Use Term Effective Date Rental Annual Increases Price/SF Year Rent/ Compensation MTA & MNR/ David Florio License Renewal Leather Spa Grand Central Terminal/ Shoe Repair 3 Years March 3, 2022 1 $18,000 $106 2 $36,000 50% $213 3 $60,000 66% $255 Total $114,000 MTA & MNR/ David Florio New License Karma & Luck Grand Central Terminal/ Jewelry 3 Years March 3, 2022 1 $199,230 $290 2 $205,206 3% $298 3 $211,363 3% $307 Total $615,799 MTA & MNR/ David Florio License Renewal Joe's Coffee Grand Central Terminal/ Coffee 3 Years March 9, 2021 1 $72,000 9% $363 2 $74,160 3% $374 3 $76,384 3% $385 Total $222,544 MTA & MNR/ David Florio New License Joe's Coffee Grand Central Terminal/ Coffee 3 Years March 10, 2021 1 $65,000 $194 2 $71,500 10% $213 3 $78,650 10% $234 Total $215,150 MTA & MNR/ David Florio License Renewal Grand Central Optical Grand Central Terminal/ Optical Store 3 Years March 19, 2021 1 $250,000 $354 2 $275,000 10% $390 3 $300,000 9% $425 Total $825,000 MTA & MNR/ David Florio License Renewal L'Occitance Grand Central Terminal/ Bath & Body Products 3 Years June 1, 2021 1 $100,000 $117 2 $240,000 140% $281 3 $240,000 $281 Total $580,000 MTA & MNR/ David Florio License Renewal Chirping Chicken Grand Central Terminal/ Grab & Go Chicken 3 Years June 1, 2021 1 $36,600 $79 2 $73,200 50% $159 3 $73,200 $159 Total $183,000
+```
+[p063_c0004] March 28th, 2022
+[p063_c0005] _Page 1 of 2_
+[p063_c0006] _MasterPageFile\143\631628-41-MTAs\BomniMeeting\02222022_
+
+## Page 64
+
+### [p064_c0001] REPORT ON AGREEMENTS ENTERED INTO DIRECTLY BY THE REAL ESTATE DEPARTMENT PURSUANT TO BOARD POLICY
+[p064_c0002]
+
+```text
+Agency/Project Manager Renewal/RFP Generated (Lessee or Licensee) Location/Use Term Effective Date Rental Annual Increases Price/SF Year Ren/ Compensation MTA & MNR/ David Florio License Renewal Coffee Table Grand Central Terminal/ Cosmetics 3 Years July 27, 2021 1 $54,000 $385 2 $72,600 35% $518 3 $79,860 10% $570 Total $206,460 MTA & MNR/ David Florio License Renewal Doughnut Plant Grand Central Terminal/ Doughnuts 3 Years August 1, 2021 1 $66,000 $333 2 $72,000 9% $364 3 $72,000 $364 Total $210,000 MTA & MNR/ David Florio New License Dirty Tacos Grand Central Terminal/ Tacos 3 Years November 19, 2021 1 $90,000 $74 2 $102,000 13% $169 3 $114,000 12% $189 Total $306,000 MTA & MNR/ David Florio License Renewal Vanderbilt Tennis Grand Central Terminal/ Tennis Facility 3 Years November 19, 2021 1 $367,500 $41 2 $385,875 5% $43 3 $405,168 5% $46 Total $1,158,543 MTA & MNR/ David Florio New License Markey's Caviar Grand Central Terminal/ Caviar 3 Years November 19, 2021 1 $0 2 $55,000 $384 3 $85,000 54% $594 Total $140,000 MTA & MNR/ David Florio License Renewal Li-Lac Chocolates Grand Central Terminal/ Artisanal Chocolate Store 3 Years August 1, 2020 1 $46,240 $205 2 $46,240 $205 3 $77,835 60% $345 Total $170,315 MTA & MNR/ David Florio License Renewal Magnolia Bakery Grand Central Terminal/ Bakery 3 Years October 1, 2020 1 $271,380 $556 2 $200,000 N/A $410 3 $200,000 $410 Total $671,380 MTA & MNR/ David Florio New License Murray's Cheese Grand Central Terminal/ Gourmet Cheese 3 Years November 1, 2020 1 $210,000 $188 2 $216,300 3% $193 3 $222,789 3% $199 Total $649,089
+```
+[p064_c0003] _MasterPagePage164#621628-41-MT&B BondMeeting8/22/2022_
+[p064_c0004] _March 28th, 2022_
+[p064_c0005] _Page 2 of 2_
+
+## Page 65
+
+### [p065_c0001] Staff Summary
+### [p065_c0002] Metropolitan Transportation Authority
+### [p065_c0003] Page 1 of 8
+[p065_c0004]
+
+```text
+Subject ACQUISITION OF PROPERTY INTERESTS FOR PENN STATION ACCESS PROJECT Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name NEIL MASTROPIETRO / ANGELA SZU
+```
+[p065_c0005]
+
+```text
+Date SEPTEMBER 21, 2022 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p065_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 9/19/22 X 2 Board 9/21/22 X
+```
+[p065_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Administrative Officer 3 Chief Financial Officer
+```
+[p065_c0008] AGENCY: Metropolitan Transportation Authority (“MTA”) PROJECT: Penn Station Access Project (the “Project”) ACTIVITY: Acquisition of Fee Interests and Permanent Easements in properties listed on the attached Determination and Findings for the Project ACTION REQUESTED: Approval of Determination and Findings Under the New York Eminent Domain Procedure Law with respect to the acquisition of property needed to facilitate the Project
+### [p065_c0009] COMMENTS:
+[p065_c0010] The Penn Station Access Project will provide direct rail access to Penn Station-New York and Manhattan’s west side from southern Connecticut, Westchester County, and the east Bronx for New Haven Line customers and introduce convenient, direct Manhattan west-side rail service to communities in the eastern Bronx currently underserved by mass transit, primarily along existing sections of Amtrak’s Hell Gate Line. The Project will allow Metro-North trains to traverse Amtrak’s Hell Gate Line after construction of various infrastructure improvements to Amtrak’s existing Hell Gate Line and construction of four (4) new Metro-North stations along the line in the east Bronx at Hunts Point, Parkchester-Van Nest, Morris Park, and Co-op City. The Project area of construction will begin at Shell Interlocking, which is just west of Metro-North’s New Rochelle yard and the location where the Hell Gate Line and the New Haven Line diverge. The Project will then continue west making improvements and installing stations along the length of the Hell Gate Line in the Bronx, entering Queens via the Hell Gate Bridge and meeting the LIRR Mainline at Harold Interlocking, from which it will access Penn Station.
+[p065_c0011] MTA requires various property interests in the Bronx, Queens, and Westchester in support of the Project, which are set forth in a chart on the attached Determination and Findings. Efforts will be made to acquire these property interests by negotiated agreements. In those instances where MTA cannot reach agreements with the affected property owners, legal proceedings must be commenced under Article 2 of the New York State Eminent Domain Procedure Law (“EDPL”).
+[p065_c0012] On June 22, 2022, MTA held an EDPL public hearing in person and via simultaneous internet streaming to describe the public uses, benefits, purposes and location of the work elements covered by the Project; the property interests to be acquired, and the Project’s general impact on the environment. Notices of this public hearing were published in newspapers, as required under the EDPL. Property owners affected tenants and other interested parties were also given advance notice of the hearing by certified mail. MTA Construction & Development (“MTA C&D”) personnel attended this virtual hearing via internet connection.
+[p065_c0013] _Master Page # 65 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 66
+
+### [p066_c0001] Staff Summary
+### [p066_c0002] FINANCE COMMITTEE MEETING
+### [p066_c0003] ACQUISITION OF PROPERTY INTERESTS FOR PENN STATION ACCESS PROJECT (Cont'd.)
+> [p066_c0004] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle containing the white letters 'MTA', followed by the text 'Metropolitan Transportation Authority' in a black sans-serif font.
+[p066_c0005] Page 2 of 8
+[p066_c0006] As part of the hearing, following a presentation by MTA's hearing officer, 15 speakers made statements about the Project and the proposed property acquisitions. In addition, written submissions with comments about the Project and the proposed property acquisitions were received by MTA prior to the end of the written submission period until the close of business on July 8, 2022 at 5:30 p.m. The following summarizes the topics addressed in the comments received: (a) concerns about the siting of the Hunts Point Station Plaza adjacent to an historical station house instead of acquiring portions of, and utilizing, the station house in connection with a planned private development; (b) questions regarding the needs for certain property interests and lack of specific detailed construction information and impact mitigations; (c) expressing concern for increased train frequency/noise adjacent to a large residential development in Queens as well as lack of a station stop in Queens; (d) concerns about the impact to property access/parking/refuse pick-up as a result of the proposed takings; (e) support for the Project's goal of equitable expansion of public transit to underserved communities; and (f) questions regarding MTA bus service connectivity to the new stations. All comments have been given careful, extensive and due consideration by MTA. Moreover, MTA, MTA C&D and Project staff will continue to work with property owners, tenants and other potentially affected parties as the Project moves forward in an effort to mitigate project-related adverse impacts as much as reasonably practicable.
+[p066_c0007] After due consideration of all statements made during the EDPL public hearing and comments period, MTA staff recommends Board approval of the attached Determination and Findings under the EDPL with respect to the acquisition, by eminent domain, if necessary, of the property interests described therein that are needed to facilitate the Project.
+[p066_c0008] A copy of the Determination and Findings under the EDPL is attached for the Board's consideration and approval. MTA staff hereby requests Board approval of the attached Determination and Findings. This action will authorize MTA staff and counsel to continue with the EDPL proceedings to acquire the required property interests described in the Determination and Findings by eminent domain, if necessary.
+[p066_c0009] _Master Page # 66 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 67
+
+### [p067_c0001] Staff Summary
+### [p067_c0002] FINANCE COMMITTEE MEETING
+### [p067_c0003] ACQUISITION OF PROPERTY INTERESTS FOR PENN STATION ACCESS PROJECT (Cont'd.)
+> [p067_c0004] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a circular emblem with the letters 'MTA' inside, followed by the text 'Metropolitan Transportation Authority' in a serif font.
+### [p067_c0005] Page 3 of 8
+### [p067_c0006] DETERMINATION AND FINDINGS PURSUANT TO ARTICLE 2 OF THE NEW YORK EMINENT DOMAIN PROCEDURE LAW
+### [p067_c0007] PENN STATION ACCESS PROJECT
+[p067_c0008] In accordance with Section 204 of the New York Eminent Domain Procedure Law ("EDPL"), the Board of the Metropolitan Transportation Authority ("MTA") hereby approves the acquisition of property interests described below by eminent domain, if necessary, and adopts the following statutory findings:
+[p067_c0009] 1. EDPL Public Hearing. On June 22, 2022, MTA held an EDPL public hearing to inform the public and to receive the public's comments on proposed property acquisitions for the Penn Station Access Project (the "Project"). All oral comments received at the hearing and all written comments received by the end of the written submission period following the hearing have been reviewed, made part of the record, and given due consideration.
+[p067_c0010] 2. Location of Property Required for the Project. The location and nature of the property interests required for the Project, and hereby approved for acquisition, are as described on the chart below.
+[p067_c0011] At the June 22, 2022 public hearing and in letters and maps mailed to property owners and interested parties prior to the public hearing, MTA provided more detailed descriptions of the required property interests and estimated time frames when the property interests would be needed for the Project, currently scheduled to occur from late 2023 through mid-2024.
+[p067_c0012] MTA reserves the right to acquire a lesser interest in any of the properties described below, or to refrain from acquiring any of such property interests, as dictated by the needs of the Project.
+[p067_c0013] 3. Public Use, Purpose and Benefits. With respect to the Project in general, the Project will provide direct rail access to Penn Station-New York and Manhattan's west side from southern Connecticut, Westchester County, and the east Bronx by providing direct service to New Haven Line customers and introducing convenient, direct rail service to communities in the eastern Bronx currently underserved by mass transit. The Project will make various infrastructure improvements to Amtrak's existing Hell Gate Line and will construct four (4) new Metro-North stations along the line in the East Bronx at Hunts Point, Parkchester-Van Nest, Morris Park, and Co-op City.
+[p067_c0014] More specifically, the Project's area of construction will begin at Shell Interlocking, which is just west of Metro-North's New Rochelle yard and the location where the Hell Gate Line and the New Haven Line diverge. The Project will then continue west along the length of the Hell Gate Line in the Bronx, entering Queens via the Hell Gate Bridge and meeting the LIRR Mainline at Harold Interlocking.
+[p067_c0015] The Project will greatly improve transit access for communities in the East Bronx, including low-income and minority communities, saving riders traveling to Penn Station New York approximately 50 minutes. East Bronx passengers traveling to Connecticut could save up to approximately 75 minutes. Additionally, the new Metro-North stations will provide better access to employment opportunities, shopping and entertainment, the enhancement of transportation options for residents, workers and visitors as well as create a more attractive environment for residential and commercial development.
+[p067_c0016] _Master Page # 67 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 68
+
+### [p068_c0001] Staff Summary
+### [p068_c0002] FINANCE COMMITTEE MEETING
+> [p068_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a circular emblem with the letters 'MTA' inside, followed by the text 'Metropolitan Transportation Authority' in a serif font.
+### [p068_c0004] ACQUISITION OF PROPERTY INTERESTS FOR PENN STATION ACCESS PROJECT (Cont'd.)
+[p068_c0005] Page 4 of 8
+[p068_c0006] 4. Reasons for Selecting the Project Locations: MTA the Federal Transit Administration ("FTA") and the Federal Railroad Administration ("FRA") fully evaluated alternatives during the environmental assessment process, as set forth in detail in the Environmental Assessment ("EA") issued in May 2021. On September 24, 2021 FTA issued a Finding of No Significant Impact ("FONSI"). Additionally, on November 16, 2021 the FRA issued a FONSI, concluding the environmental review for the Project by recommending the Project as the alternative that best satisfies the goal and objectives of the National Environmental Policy Act.
+[p068_c0007] 5. General Effect of the Project on the Environment and Residents of the Locality. The environmental impacts of the Project as a whole are thoroughly covered in the EA. The Project will take place along the existing railroad right-of-way and will result in adverse impacts to only a select number of environmental technical areas, none of which will be significant and all of which will be temporary or which MTA will mitigate. The general environmental impacts are summarized as follows:
+[p068_c0008] The following six environmental technical areas could have potential adverse impacts:
+- [p068_c0009] • Historic Resources • Archaeological Resources • Department of Transportation Act, Section 4(f) • Transportation • Noise and Vibration and • Contaminated Materials
+### [p068_c0010] Historic Resources:
+[p068_c0011] The Amtrak Hell Gate Line bascule bridge over the Bronx River will be rehabilitated, and a new two-span bridge will be constructed adjacent to it. The work will not alter the significant features of the bascule bridge, but will preserve and protect this historic resource by conducting the necessary upgrades that will allow it to continue to function, albeit in a modified form.
+[p068_c0012] The Project could have visual effects on the Parkchester Apartment Complex due to the nearby Parkchester-Van Nest Station. The station and the façade for the Van Nest AC Substation will incorporate contextually sensitive design elements into the architecture. A construction monitoring plan will be implemented to ensure there will be no adverse effect to the complex during construction.
+[p068_c0013] The Project will expand the New Rochelle Yard in the vicinity of the Kaufman Building but will have no adverse effect, and a monitoring plan will ensure the protection of the resource.
+[p068_c0014] The Pelham Lane Pathway Bridge in Pelham Bay Park was recently determined to be eligible for listing on the National Register of Historic Places. The bridge is proposed to be rehabilitated or replaced. Replacement would have an adverse effect. However, MTA will explore alternatives to demolition and consult with the NYS State Historic Preservation Office ("SHPO"), as described in the Programmatic Agreement, which is included as an Appendix to the EA.
+### [p068_c0015] Archeological Resources:
+[p068_c0016] The Project could have an impact on potential archaeological resources in the corridor beneath 22 inches of ballast in areas where tracks are at grade elevation, including the Co-op City and Morris Park Station sites. Should design indicate that the identified archaeologically sensitive deposits may be disturbed by the Project, testing work plans will be developed and submitted to SHPO. Future steps to be taken to
+[p068_c0017] _Master Page # 68 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 69
+
+### [p069_c0001] Staff Summary
+### [p069_c0002] FINANCE COMMITTEE MEETING
+> [p069_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a circular emblem with the letters 'MTA' inside, followed by the text 'Metropolitan Transportation Authority' in a serif font.
+### [p069_c0004] ACQUISITION OF PROPERTY INTERESTS FOR PENN STATION ACCESS PROJECT (Cont'd.)
+[p069_c0005] Page 5 of 8
+[p069_c0006] protect archaeological resources are set forth in the Programmatic Agreement for the Project that has been executed by FTA, the State Historic Preservation Office, and the MTA. A copy of the Programmatic Agreement is included as an Appendix to the EA.
+### [p069_c0007] Department of Transportation Act, Section 4(f)
+[p069_c0008] Section 4(f) of the USDOT Act of 1966, as amended (23 CFR Part § 774, codified in 49 U.S.C. 303 and generally referred to as "Section 4(f)"), prohibits the Secretary of Transportation from approving any program or project that requires the "use" of the following:
+- [p069_c0009] • Any publicly owned parkland, recreation area, or wildlife and waterfowl refuge of national, state, or local significance; or • Any land from a historic site of national, state, or local significance, unless there is no feasible and prudent alternative to the use of such land and such program or project includes all possible planning to minimize harm to the Section 4(f) properties.
+[p069_c0010] The EA for the Project identifies Section 4(f) properties within the study area, including 33 publicly owned parkland and recreational areas, one wildlife refuge, and 10 historic architectural resources, and describes the effect of the Project on those properties. Because the proposed easements within NYC parklands will not adversely change the activities, features or properties of the resource, FTA has made a de minimis finding. However, the rehabilitation or replacement of the Pelham Lane Pathway Bridge will result in a permanent use of a Section 4(f) resource. As outlined in the FONSI and the Programmatic Agreement MTA will follow the process for resolution of adverse effects. MTA will consult with SHPO regarding minimization or mitigation measures with regard to the rehabilitation or replacement of the Pelham Lane Pathway Bridge.
+### [p069_c0011] Transportation
+[p069_c0012] Traffic: While the Project would result in an increase of more than 10 seconds of delay at two locations (Eighth Avenue at West 33rd Street in the PM, and Morris Park Avenue at Eastchester Road in the AM), the Project's overall traffic increases would not result in adverse traffic impacts.
+[p069_c0013] Parking: Consistent with Metro-North policy for urban stations, the Project will not include new parking spaces. No parking impacts are expected in the Penn Station New York ("PSNY") area or in the vicinity of the new Bronx stations. At stations north of the Bronx, any increased parking demand will be addressed by local municipalities through additional parking structures or by encouraging alternative modes of transportation to the stations.
+[p069_c0014] Transit: Ridership is forecast to increase on the Seventh Avenue and Eighth Avenue subway lines in PSNY and on the five bus routes serving the PSNY area. However, existing subway and bus services would adequately accommodate Metro-North passengers making connections via transit with no adverse impact to such services. At the proposed Bronx stations, current bus and subway services would adequately accommodate increased ridership. NYCT will address any future capacity or service deficiencies in its systemwide planning and programming.
+[p069_c0015] Rail Operations: The Project will not result in any adverse impacts to Amtrak's operations along the Hell Gate Line ("HGL") or at PSNY. Overall commuter and intercity passenger rail operations for the area will largely be improved by the additional track flexibility.
+[p069_c0016] _Master Page # 69 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 70
+
+### [p070_c0001] Staff Summary
+### [p070_c0002] FINANCE COMMITTEE MEETING
+### [p070_c0003] ACQUISITION OF PROPERTY INTERESTS FOR PENN STATION ACCESS PROJECT (Cont'd.)
+> [p070_c0004] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a circular emblem with the letters 'MTA' inside, followed by the text 'Metropolitan Transportation Authority' in a serif font.
+[p070_c0005] Page 6 of 8
+[p070_c0006] Pedestrians: MTA expects no pedestrian-related impacts for sidewalks surrounding the proposed stations, because the additional pedestrian trips to/from the proposed stations will be dispersed over multiple blocks at each location.
+[p070_c0007] MTA will employ an extensive community outreach program throughout construction to keep the affected neighborhoods informed about construction activities taking place. MTA will use the outreach program to work closely with business organizations, community groups, schools, houses of worship, and other organizations to share information about Project-related construction activities.
+### [p070_c0008] Noise and Vibration
+[p070_c0009] The Project will increase ambient noise levels by one to four decibels over existing levels and create severe (i.e., significant) noise impacts at 17 buildings (34 dwelling units) and moderate impacts at 270 buildings (765 dwelling units) along the HGL Corridor. Severe impacts will be abated by a noise barrier (noise wall) at 7 buildings where space is available for installation. At the remaining 10 buildings with severe impacts, all existing windows on building facades that have visual exposure to the tracks will be offered replacement windows. The Project will create vibration impacts at 40 buildings (84 dwelling units) along the HGL Corridor. Vibration impacts will be abated by using under-rail pads and resilient fasteners in track construction.
+### [p070_c0010] Contaminated Materials
+[p070_c0011] During construction some contaminated materials may be encountered in the station areas and HGL Corridor, caused by historic rail operations, spills, and historical site uses. Discovery of existing groundwater contamination caused by petroleum products and chlorinated solvents is possible based on the historical use of the subject sites and neighboring properties. Lead-based paint, asbestos-containing material, and mold may be present on existing structures (including bridges undergoing rehabilitation). Appropriate measures will be taken to protect human health during construction activities. The results of the subsurface investigation, and any additional investigations performed by the design-builder during final design, will be used to prepare a site-specific Health and Safety Plan and Hazardous Materials Management Plan. Overall, MTA anticipates environmental contamination to be low to moderate, but some remediation may be necessary.
+### [p070_c0012] General Disruption Associated with Construction
+[p070_c0013] Construction of the Project would result in temporary effects along the railroad right-of-way and in areas adjacent to sections of the right-of-way where passenger stations, bridge modifications, and other Project elements are proposed. The HGL was originally designed to hold six railroad tracks and is now occupied by two Amtrak passenger tracks and one CSX freight track. Therefore, the right-of-way has sufficient space for the majority of the Project elements. Based on conceptual plans and schedule, construction would last approximately five years. There would be approximately 24 to 36 months of consistent station work at each station and up to 36 months of work at each new substation, with shorter durations of work along the HGL Corridor which could occur simultaneously. Access points and staging areas could be active for the duration of the Project. To minimize any potential adverse effects during construction, the design-builder will implement specific measures to minimize community impacts.
+[p070_c0014] To help minimize potential impacts, MTA will make every reasonable effort to maintain access; control dust, noise and vibration; screen construction activities; control rodents and pests; and minimize other
+[p070_c0015] _Master Page # 70 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 71
+
+### [p071_c0001] Staff Summary
+### [p071_c0002] FINANCE COMMITTEE MEETING
+> [p071_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a circular emblem with the letters 'MTA' inside, followed by the text 'Metropolitan Transportation Authority' in a serif font.
+### [p071_c0004] ACQUISITION OF PROPERTY INTERESTS FOR PENN STATION ACCESS PROJECT (Cont'd.)
+[p071_c0005] Page 7 of 8
+[p071_c0006] disruptions, where practicable. MTA's goal here is to create an active program of construction security and quality of life controls to ensure community safety.
+### [p071_c0007] COMMENTS
+[p071_c0008] At the public hearing, oral comments were received from the public, and it was stated that written comments would be accepted until the close of business on July 8, 2022.
+[p071_c0009] The following summarizes the comments received: (a) concerns about the siting of the Hunts Point Station Plaza adjacent to an historical station house instead of acquiring portions of, and utilizing, the station house in connection with a planned private development; (b) questions regarding the needs for certain property interests and lack of specific detailed construction information and impact mitigations; (c) expressing concern for increased train frequency/noise adjacent to a large residential development in Queens as well as lack of a station stop in Queens; (d) concerns about the impact to property access/parking/refuse pick-up as a result of the proposed takings; (e) support for the projects goal of equitable expansion of public transit to underserved communities; and (f) questions regarding MTA bus connectivity to the new stations.
+[p071_c0010] All comments have been given careful, extensive and due consideration by MTA.
+### [p071_c0011] DETERMINATION
+[p071_c0012] Based on due consideration of the record and the foregoing findings, it is determined that the MTA should exercise its power of eminent domain to acquire the property interests set forth in the chart below in order to promote and permit the purposes of the Project to be achieved.
+[p071_c0013] Copies of this Determination and Findings are available and will be forwarded without cost and upon request, by writing to:
+[p071_c0014] Joseph O'Donnell, Director of Public Affairs MTA Construction & Development 2 Broadway, D8135 New York, N.Y.10004
+[p071_c0015] ANYONE SEEKING JUDICIAL REVIEW OF THE ABOVE DETERMINATION AND FINDINGS MUST COMMENCE A LEGAL PROCEEDING IN ACCORDANCE WITH EDPL § 207 NO LATER THAN 30 DAYS AFTER MTA COMPLETES ITS TWO-DAY PUBLICATION OF THIS DOCUMENT, OR A SYNOPSIS THEREOF. UNDER EDPL § 207 AND § 208, THE EXCLUSIVE VENUE FOR SUCH PROCEEDING FOR PROPERTY TO BE CONDEMNED IN THE BRONX IS THE APPELLATE DIVISION, FIRST JUDICIAL DEPARTMENT, 27 MADISON AVENUE, NEW YORK, NEW YORK 10010. THE EXCLUSIVE VENUE FOR SUCH PROCEEDING FOR PROPERTY TO BE CONDEMNED IN QUEENS OR WESTCHESTER IS THE APPELLATE DIVISION, SECOND JUDICIAL DEPARTMENT, 45 MONROE PLACE, BROOKLYN, NEW YORK 11201.
+[p071_c0016] _Master Page # 71 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 72
+
+### [p072_c0001] Staff Summary
+### [p072_c0002] FINANCE COMMITTEE MEETING
+### [p072_c0003] ACQUISITION OF PROPERTY INTERESTS FOR PENN STATION ACCESS PROJECT (Cont'd.)
+[p072_c0004] Metropolitan Transportation Authority
+### [p072_c0005] Page 8 of 8
+### [p072_c0006] Acquisition of fee interests and permanent easements for the Penn Station Access Project
+[p072_c0007]
+
+```text
+Borough Block Lot Property Address Type of Interest Bronx 2599 1 Southern Boulevard Permanent Partial Taking Bronx 2599 89 400 Walnut Avenue Permanent Partial Taking Bronx 2599 123 327 Walnut Avenue Permanent Partial Taking Bronx 2741 50 1161 Garrison Avenue Permanent Full Taking Bronx 3017 28 1476 Sheridan Expressway Permanent Partial Taking Bronx 3910 36 Van Nest Avenue Permanent Full Taking Bronx 4042 254 2015 East Tremont Avenue Permanent Full Taking Bronx 4411 300 1770 Stillwell Avenue Permanent Partial Taking Queens 120 50 50-02 Northern Boulevard Permanent Partial Taking Queens 1024 152 58-11 30th Avenue Permanent Partial Taking Queens 1113 43/7501 30-30 60 th St a/k/a 57-07 31 st St Permanent Partial Taking Queens 1114 11 60-01 31 st Avenue Permanent Partial Taking Westchester 238 10 171 Huguenot Street Permanent Partial Taking Westchester 238 20 8 Commerce Drive Permanent Partial Taking Westchester 238 21 12 Commerce Drive Permanent Partial Taking Westchester 250 1 8 Joyce Road Permanent Partial Taking Westchester 267 3 Oak Street Permanent Partial Taking Westchester 267 15 2525 Palmer Avenue Permanent Partial Taking Westchester 267 30 2533 Palmer Avenue Permanent Partial Taking Westchester 308 29 186 Lisenard Avenue Permanent Partial Taking Westchester 308 30 Oak Street Permanent Partial Taking Westchester 310 20 2425 Palmer Avenue Permanent Partial Taking
+```
+[p072_c0008] _Master Page # 72 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 73
+
+### [p073_c0001] Staff Summary
+### [p073_c0002] Metropolitan Transportation Authority
+### [p073_c0003] Page 1 of 3
+[p073_c0004]
+
+```text
+Subject ACQUISITION OF PROPERTY INTERESTS FOR THE METRO-NORTH UPGRADE AUTOMOTIVE FUEL SYSTEM PROJECT Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name ANDREW GREENBERG
+```
+[p073_c0005]
+
+```text
+Date SEPTEMBER 21, 2022 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p073_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 9/19/22 X 2 Board 9/21/22 X
+```
+[p073_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p073_c0008] AGENCY: Metropolitan Transportation Authority (“MTA”) and MTA Metro-North Railroad (“Metro-North”) SELLER: 4 Fisher Lane Realty Co., LLC LOCATION: 4 Fisher Lane, White Plains, NY Westchester County Tax Map Section 120.20, Block 1, Lot 1 in the City of White Plains ACTIVITY: Acquisition of real property interests in connection with the Metro-North Upgrade Automotive Fuel System Project (“AFS”) ACTION REQUESTED: Authorization to acquire real property interests through negotiated agreements or eminent domain COMPENSATION: To be determined separately via negotiation or condemnation
+### [p073_c0009] COMMENTS:
+[p073_c0010] Metro-North’s AFS Project, addresses design and construction of automotive fueling stations with above ground fueling systems to replace existing facilities at Harmon Yard, Brewster North Yard and North White Plains Yard. The current locations need modifications to meet current compliance regulation updates and have 30-year-old underground tanks and fueling systems in need of replacement. While there is sufficient property for Harmon and Brewster North Yards, the North White Plains site requires the acquisition of property at 4 Fisher Lane, which is adjacent to the North White Plains Yard and is strategically located for this use. This site would offer significant safety benefits by locating the fueling system in an area with less traffic and will also benefit the overall traffic flow in the area.
+[p073_c0011] The MTA will endeavor to acquire all property interests for the project through negotiated agreement but may not be able to reach agreement with this property owner and will be compelled to acquire property interests by eminent domain. Thus, Board approval is being sought for the MTA to begin taking steps to satisfy the requirements of the Eminent Domain Procedure Law in order to preserve MTA’s rights, lessen the potential for delays to AFS Project and ensure the timely acquisition of the necessary property interests. If a negotiated agreement to acquire any of the property interests is reached prior to the filing of condemnation papers with the court, the terms of any such agreements will be presented to the Finance Committee and the MTA Board for further approval.
+[p073_c0012] _Master Page # 73 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 74
+
+### [p074_c0001] Staff Summary
+> [p074_c0002] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle containing the white letters "MTA", followed by the text "Metropolitan Transportation Authority" in a black, sans-serif font.
+### [p074_c0003] FINANCE COMMITTEE MEETING ACQUISITION OF PROPERTY INTERESTS FOR THE METRO-NORTH UPGRADE AUTOMOTIVE FUEL SYSTEM PROJECT (Cont'd.)
+[p074_c0004] Based on the foregoing, MTA Real Estate requests authorization to proceed with the acquisition, by negotiated agreement or eminent domain, of 4 Fisher Lane, White Plains, NY, on the above-described terms and conditions.
+[p074_c0005] _Master Page # 74 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 75
+
+### [p075_c0001] Staff Summary
+> [p075_c0002] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle containing the white letters "MTA", followed by the text "Metropolitan Transportation Authority" in a black, sans-serif font.
+### [p075_c0003] FINANCE COMMITTEE MEETING ACQUISITION OF PROPERTY INTERESTS FOR THE METRO-NORTH UPGRADE AUTOMOTIVE FUEL SYSTEM PROJECT (Cont'd.)
+### [p075_c0004] BOARD RESOLUTION
+[p075_c0005] WHEREAS, the MTA is undertaking the construction of the MTA Metro-North Railroad Upgrade Automotive Fuel System Project ("AFS") for compliance regulation updates and replacement of 30-year-old underground tanks and fueling of systems at the North White Plains Yard.
+[p075_c0006] WHEREAS, in connection with the AFS Project, MTA will endeavor to acquire the real property interests of 4 Fisher Lane, White Plains, NY through negotiated voluntary agreements with the affected property owner. To preserve the MTA's rights and lessen the potential for future delays to the project if agreement cannot be negotiated in a timely manner, the MTA must take preliminary steps under the Eminent Domain Procedure Law to secure the property interests needed.
+[p075_c0007] NOW THEREFORE, BE IT RESOLVED that in accordance with the Eminent Domain Procedure Law and Section 1267 of the Public Authorities Law, the Chairman or designated staff member of the MTA is authorized to proceed with the acquisition of real property interests in the property described above by negotiated agreement or eminent domain and to schedule and undertake such preliminary steps, including holding a public hearing, as may be required under the Eminent Domain Procedure Law, in connection with these acquisitions.
+[p075_c0008] BE IT FURTHER RESOLVED that the proposed acquisition will be subject to prior, satisfactory completion of any required environmental review(s).
+[p075_c0009] This resolution shall take effect immediately upon its adoption.
+[p075_c0010] _Master Page # 75 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 76
+
+### [p076_c0001] Staff Summary
+### [p076_c0002] Metropolitan Transportation Authority
+### [p076_c0003] Page 1 of 2
+[p076_c0004]
+
+```text
+Subject SURRENDER OF NYCT PROPERTY RIGHTS – THE GARFIELD PLACE SUBSTATION, BROOKLYN, NY Department MTATRANSIT ORIENTED DEVELOPMENT Department Head Name ROBERT PALEY Department Head Signature Project Manager Name JOHN COYNE
+```
+[p076_c0005]
+
+```text
+Date SEPTEMBER 21, 2022 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p076_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 09/19/2022 X 2 Board 09/21/2022 X
+```
+[p076_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p076_c0008] AGENCY: MTA New York City Transit Authority (“NYCT”) TRANSFEROR: City of New York (the “City”) LOCATION: 4th Ave – Garfield Place Substation, 276 4 Ave, Brooklyn, Block 456, Lot 29 (the “Substation Property”) ACTIVITY: Surrender of surplus zoning floor area and certain easement rights to the City, pursuant to the NYCT Master Lease ACTION REQUESTED: Approval of terms SPACE: Surrender of no less than 28,000 square feet and no more than 30,000 square feet of surplus zoning floor area development rights to the City, and consent to a zoning lot development and easement agreement pursuant to which the City will, among other things, grant to a developer a light and air easement above a horizontal limiting plane 50’ above grade (collectively, “Development Rights”) COMPENSATION: No less than $4,348,438 and no more than $4,684,375 ($155 per square foot of zoning floor area)
+### [p076_c0009] COMMENTS:
+[p076_c0010] Pursuant to a 2012 memorandum of understanding between NYCT and the City, as amended and restated on April 15, 2022, (the “NYCT Master Lease MOU”), NYCT agreed to surrender certain properties or property interests in certain City-owned properties leased to NYCT under the 1953 master lease (the “NYCT Master Lease”) and not required by NYCT for the operation of the subway system, in return for the City disposing of those properties or property interests, as applicable, via open market transactions for fair market value and remitting the net sale proceeds to MTA, which would be credited against the City’s funding commitment to MTA’s 2010-2014 capital program. In the case of the Substation Property the property interests in question are excess development rights available to be transferred to an adjacent receiving parcel within the same zoning lot.
+[p076_c0011] In November, 2021, the City approved the Gowanus Neighborhood Plan, which, among other City actions, modified the zoning designation of approximately 80 blocks of the Gowanus neighborhood of Brooklyn, within which the Substation Property is located. As a result of this change in zoning designation, the Substation Property’s zoning district was changed from M1-2, which allowed a maximum of 11,744± square feet of manufacturing floor area to be constructed on the Substation Property, to C4-4D, which now allows a maximum of 49,913± square feet of residential and mixed-use floor area to be constructed on the Substation Property. The 4 Ave – Garfield Place Substation, which occupies the
+[p076_c0012] _Master Page # 76 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 77
+
+### [p077_c0001] Staff Summary
+### [p077_c0002] FINANCE COMMITTEE MEETING
+[p077_c0003] Metropolitan Transportation Authority
+### [p077_c0004] Surrender of Garfield Place Substation NYCT Master Lease Property Interests
+[p077_c0005] Page 2 of 2
+[p077_c0006] Substation Property, uses less than 5,000 square feet of zoning floor area, and there are no expansion plans or capacity needs at this location. NYCT determined that up to 40,000 square feet of this new zoning floor area was not needed for transit operations and could be sold to an adjacent property for use in a development, provided the development would occur entirely on that adjacent property (rather than on or above the Substation Property), and would have no impact on the facility or NYCT transit operations.
+[p077_c0007] Pursuant to the NYCT Master Lease MOU, the New York City Economic Development Corporation ("EDC"), acting on behalf of the City, marketed the excess development rights appurtenant to the Substation Property pursuant to a request for proposals issued in April, 2022. EDC received one proposal in response, from Avery Hall LLC, on behalf of its special purpose entity, 272 4th Avenue LLC ("Avery Hall"). Avery Hall owns the adjacent properties encompassing 264 through 274 4 Avenue and 538 through 540 Carroll Street (Brooklyn Block 456, Lots 13, 17 and 23). Avery Hall intends to construct an approximately 130,000 square foot, 132-unit mixed-use and mixed-income development on its property.
+[p077_c0008] Avery Hall offered to purchase up to 30,000 square feet of zoning floor area, contingent upon a favorable determination from the New York City Department of Buildings related to a question about constructing up to the lot line of Avery Hall's property. If Avery Hall receives a favorable determination, they will purchase 30,000 square feet of zoning floor area comprising the Development Rights for $4,684,375. If they do not receive a favorable determination, they will reduce the quantity of zoning floor area they purchase to 28,000 square feet and reduce the purchase price to $4,348,438. Depending on the outcome of this determination NYCT will retain either 19,914± or 21,914± square feet of zoning floor area for future use, if needed. The purchase price of $155 per square foot of zoning floor area for the Development Rights equals or exceeds the fair market value for the same, as determined by the EDC appraisal report prepared by a qualified third-party appraiser.
+[p077_c0009] In both scenarios the City will enter into a zoning lot development and easement agreement ("ZLDEA") pursuant to which certain development restrictions will be imposed upon the combined zoning lot comprised of the Substation Property and the adjacent properties owned by Avery Hall and the City will grant to Avery Hall a light and air easement above the Substation Property at a limiting plane commencing 50 feet above street grade (the "Light and Air Easement"). The Light and Air Easement will allow Avery Hall to construct lot line windows facing the Substation Property above the horizontal limiting plane of 50' above street level. Roof structures, including HVAC and communications equipment, will be permitted at the Substation Property for an additional 15' above the horizontal limiting plane of the Light and Air Easement, subject to setback and other limitations.
+[p077_c0010] The Gowanus Neighborhood Plan includes within it the approval of an application for the disposition of the Development Rights. As such, no further public process is required to complete this transaction. However, there is a pending legal action pursuant to Article 78 of the New York Civil Practice Laws and Rules challenging the City's approval of the Gowanus Neighborhood Plan. The New York Supreme Court dismissed this action in June 2022, but the petitioners filed a notice of appeal that has yet to be reviewed by the Appellate Division. Accordingly, the closing of the transfer of the Development Rights cannot occur unless and until this challenge is resolved. If this legal challenge is resolved in the City's favor and the City is ready to close this transaction, NYCT will issue a surrender letter to the City by which the Development Rights will be released from the NYCT Master Lease, the City will transfer the Development Rights to Avery Hall and the City and Avery Hall will enter into the ZLDEA pursuant to which the City will agree to the imposition of the development restrictions on the combined zoning lot that will include the Substation Property and the Avery Hall Development and grant the Light and Air Easement to Avery Hall.
+[p077_c0011] Based on the foregoing, authorization is requested for NYCT to surrender the Development Rights to the City and consent to the execution by the City of the ZLDEA and the grant by the City of the Light and Air Easement to Avery Hall on the above-described terms and conditions.
+[p077_c0012] _Master Page # 77 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 78
+
+### [p078_c0001] Staff Summary
+### [p078_c0002] Metropolitan Transportation Authority
+### [p078_c0003] Page 1 of 2
+[p078_c0004]
+
+```text
+Subject LEASE EXTENSION WITH THOR EQUITIES AT 180 LIVINGSTON STREET, BROOKLYN, NY Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name CHRISTOPHER NESTERCZUK
+```
+[p078_c0005]
+
+```text
+Date SEPTEMBER 21, 2022 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p078_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 9/19/22 x 2 Board 9/21/22 x
+```
+[p078_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer 4 Chief of Staff
+```
+[p078_c0008] AGENCY: MTA New York City Transit ("NYCT") LANDLORD: Thor Equities LOCATION: 180 Livingston Street, Brooklyn, NY ACTIVITY: One year extension of current lease ACTION REQUESTED: Approval of terms TERM: 1 Year – Extension of the existing lease on existing space PREMISES: Existing Space – 123,900 RSF COMPENSATION: Rent has been negotiated on a gross basis for $32.00/rsf. In addition, the Landlord has agreed to leave the current real estate condominium structure in place. The rent is net of real estate taxes the MTA is exempt from paying.
+[p078_c0009]
+
+```text
+Rent/RSF Annual Rent May 1, 2023 -April 30, 2024 $32.00 $3,964,800
+```
+[p078_c0010] Space will be as currently built out, furnished and occupied. Occupancy by the MTA will continue on a 24 hours a day, 7 days a week basis.
+[p078_c0011] LEASE & RENT COMMENCEMENT: May 1, 2023
+[p078_c0012] RENEWAL OPTIONS: None
+[p078_c0013] REAL PROPERTY TAX ESCALATION: N/A
+[p078_c0014] _Master Page # 78 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 79
+
+### [p079_c0001] Staff Summary
+> [p079_c0002] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle with the white letters "MTA" inside, followed by the text "Metropolitan Transportation Authority" in a black sans-serif font.
+### [p079_c0003] FINANCE COMMITTEE MEETING LEASE EXTENSION WITH THOR EQUITIES
+[p079_c0004] (Cont'd.)
+[p079_c0005] Page 2 of 2
+[p079_c0006]
+
+```text
+OPERATING EXPENSE ESCALATION: N/A Direct meter. ELECTRICITY: Landlord provides 24/7 access to the Premises including an after hours dedicated elevator to the 5 th floor medical labs. HVAC services are provided 24/7 and are connected to the MTA's direct utility meter. SERVICES: TENANT IMPROVEMENT ALLOWANCE: N/A N/A LANDLORD WORK: Landlord is responsible for all repairs and maintenance to building infrastructure and systems including the HVAC, elevators, etc. as part of the monthly rent. MAINTENANCE AND REPAIRS: Landlord responsible for daily clean of all non-medical lab space. MTA cleans the medical lab space. CLEANING: None. SECURITY DEPOSIT: COMMENTS:
+```
+[p079_c0007] NYCT's current twenty-year lease at 180 Livingston Street, Brooklyn will expire on April 30, 2023. MTA Real Estate is in the process of relocating the 180 Livingston Street operations to One Pierrepont (AKA 300 Cadman Plaza) as approved by the MTA Board in February, 2022. Due to protracted lease negotiations and unanticipated supply chain delays, the completion of the new space is not anticipated to occur until the 4 th quarter of 2023. It is in NYCT's best interest to extend the existing lease for a period of no less than 1 year in order to avoid additional penalties and ensure there is sufficient time for an orderly relocation to One Pierrepont. The MTA's real estate consultant CBRE has determined that $32.00 per rental square feet to be at market. All remaining terms and conditions of the existing lease remain unchanged.
+[p079_c0008] _Master Page # 79 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 80
+
+### [p080_c0001] Staff Summary
+### [p080_c0002] Metropolitan Transportation Authority
+### [p080_c0003] Page 1 of 2
+[p080_c0004]
+
+```text
+Subject LICENSE AGREEMENT WITH SOUTH HILL FOOD, INC. FOR TWO RETAIL SPACES AT ATLANTIC AVE – BARCLAY’S CENTER SUBWAY STATION Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name ARTURO ESPINOZA
+```
+[p080_c0005]
+
+```text
+Date SEPTEMBER 21, 2022 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p080_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 9/19/22 X 2 Board 9/21/22 X
+```
+[p080_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Administrative Officer 3 Chief Financial Officer
+```
+[p080_c0008] AGENCY: MTA New York City Transit (“NYCT”) LICENSEE: South Hill Food, Inc. dba Wetzel’s Pretzels (“Wetzel’s”) LOCATION: Atlantic Avenue – Barclay’s Center subway station, Brooklyn ACTIVITY: Sale of food, soft drinks, coffee, and branded accessories ACTION REQUESTED: Authorization to enter into a license agreement TERM: Ten (10) years, subject to at will revocation on 60 days’ notice, at no cost SPACE: Two units totaling approximately 386 square feet COMPENSATION:
+[p080_c0009]
+
+```text
+Period Total Annual Compensation Total Monthly Compensation License Year 1 $100,000.00 $8,333.33 License Year 2 $103,000.00 $8,583.33 License Year 3 $106,090.00 $8,840.83 License Year 4 $109,272.00 $9,106.00 License Year 5 $112,550.00 $9,379.17 License Year 6 $115,927.00 $9,660.58 License Year 7 $119,405.00 $9,950.42 License Year 8 $122,987.00 $10,248.92 License Year 9 $126,677.00 $10,556.42 License Year 10 $130,477.00 $10,873.08
+```
+[p080_c0010] _Master Page # 80 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 81
+
+### [p081_c0001] Staff Summary
+### [p081_c0002] FINANCE COMMITTEE MEETING
+### [p081_c0003] LICENSE AGREEMENT WITH SOUTH HILL FOOD, INC.
+[p081_c0004] (Cont'd)
+[p081_c0005] Page 2 of 2
+### [p081_c0006] COMMENTS:
+[p081_c0007] Pursuant to the attached July 22, 2020 policy modification for the licensing of real property for vacant spaces, extended June 29, 2022, MTA Real Estate advertised the two vacant retail units via a Solicitation of Interest for Available MTA Retail Units. The first qualified proposal received was on behalf of Mr. Rafiq Alam, the sole owner of South Hill Food, Inc., and who is a successful multi-unit Wetzel's Pretzels franchisee.
+[p081_c0008] After careful evaluation of his proposal and a satisfactory background investigation, it was determined MTA Real Estate would proceed with Mr. Alam's proposal. Mr. Alam's financials support the proposed improvements as well as his payment of compensation throughout the 10-year term. The present value of the rental stream is $831,878. The proposed compensation falls within an acceptable competitive range, that as determined by an independent opinion of value of the rent, especially when taking into consideration the current challenging market conditions caused by the Covid-19 pandemic.
+[p081_c0009] Mr. Alam indicated he intends to invest more than $360,000 for the build out of the new Wetzel's Pretzels retail locations, and he will be responsible for the construction, operation, and maintenance of each of the units. The food and beverages offered will be prepared off premises at a nearby leased location inside the Atlantic Terminal Mall.
+[p081_c0010] Based on the foregoing, MTA Real Estate requests authorization for NYCT to enter into a license agreement with South Hill Food, Inc. on the above-described terms and conditions.
+[p081_c0011] _Master Page # 81 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 82
+
+### [p082_c0001] Staff Summary
+### [p082_c0002] Metropolitan Transportation Authority
+### [p082_c0003] Page 1 of 2
+[p082_c0004]
+
+```text
+Subject MODIFICATION TO POLICIES AND PROCEDURES FOR THE LICENSING OF REAL PROPERTY FOR VACANT SPACES Department REAL ESTATE Department Head Name JOHN N. LIEBER Department Head Signature Project Manager Name ARTURO ESPINOZA
+```
+[p082_c0005]
+
+```text
+Date JULY 22, 2020 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p082_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 7/22/20 X 2 Board 7/22/20 X
+```
+[p082_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p082_c0008] AGENCY: All Agencies PURPOSE: To obtain MTA Board approval for a temporary modification to Real Estate Policies and Procedures for the Licensing of Real Property, as adopted November 29, 2011. EXPIRATION: The modification will expire August 1, 2022.
+### [p082_c0009] COMMENTS:
+[p082_c0010] The reduction of the MTA's ridership as a result of the COVID-19 pandemic has had a direct impact on retail tenants within the MTA portfolio that depend on consistent subway and commuter rail ridership to generate sales revenue. Many of the tenants in the NYCT portfolio, in particular those who were already at or near the end of their tenancies have already surrendered their spaces due to the continued uncertainty about future ridership and the retail economy in general. For NYCT the number of customer amenities has decreased from 144 primary retail locations to 117. This is in addition to the over 90 vacancies MTA Real Estate has been addressing through RFP issuance and license negotiation.
+[p082_c0011] The goal of the proposed policy amendment is to address the increased vacancies in our retail portfolio and restore customer amenities and non-farebox revenue. Although New York State is slowly re-opening and ridership is expected to increase, it is contemplated that the severe disruption of the MTA's retail operations will take a long time to overcome. The MTA needs to confront the challenge of attracting new tenants under uncertain conditions.
+[p082_c0012] MTA Real Estate's existing policies and procedures for awarding licenses for retail spaces were designed for conventional market conditions. Under the current, extraordinary conditions, it is believed that they will hamper a speedy retail re-occupancy plan. Offering retail license agreements through competitive requests for proposals is time-consuming. MTA Real Estate believes that directly marketing and negotiating new licenses will speed re-occupation of vacant spaces.
+[p082_c0013] MTA Real Estate's Board-approved licensing policies and procedures already recognize and allow for certain defined "Circumstances" where it is appropriate to award a license without competition where a request for proposals likely would not generate enough competition or revenue to justify the time and effort, though the Board's approval is required. Those Circumstances include (1) where an earlier request for proposals was unsuccessful; (2) the market value rental is below $5,000 a year; (3) the property is located such that only a single adjacent owner can make use of the property; (4) the property is to be licensed to municipalities for municipal purposes, or to nonprofits for beautification purposes; or (5) the license is a fiber optic or other pole, pipe or wire agreement where occupancy will be non-exclusive.
+[p082_c0014] It is proposed that the Board adopt an additional, temporary Circumstance #6 to allow the award of license agreements by negotiation and without a formal public offering for vacant retail spaces. The spaces eligible would not exceed 500
+[p082_c0015] _Master Page # 82 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 83
+
+### [p083_c0001] Staff Summary
+### [p083_c0002] FINANCE COMMITTEE MEETING
+### [p083_c0003] MODIFICATION TO POLICIES AND PROCEDURES (Cont'd.)
+> [p083_c0004] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle containing the white letters "MTA", followed by the text "Metropolitan Transportation Authority" in a black, sans-serif font.
+### [p083_c0005] Page 2 of 2
+[p083_c0006] square feet in size, thereby limiting MTA Real Estate's latitude to smaller, travel/convenience retail in our operating environment and smaller licensed spaces in Grand Central Terminal. It is further recommended that this temporary modification expire on August 1, 2022 (the "Temporary Modification Outside Date") and apply to (a) existing vacant spaces, (b) spaces in which an existing licensee or lessee has already given notice to terminate, or any licensee or lessee that gives notice to terminate between now and Temporary Modification Outside Date.
+[p083_c0007] Temporarily suspending the request for proposal requirement will save substantial time in marketing and consummating new occupancies. MTA Real Estate will still publicly advertise the inventory of vacant retail spaces on the MTA website, keep inquiries in a database, and direct its outside broker to help market the spaces. As currently practiced, MTA Real Estate will employ a governance rigor including performing due diligence, such as credit and background investigations, on all licensees, and selection of the most financially responsible proposers.
+[p083_c0008] Under this proposed temporary modification, the new license term (or extension, as applicable) will not exceed ten years, including any option term (e.g., one 5-year new initial term and one 5-year option term). As with our standard license agreements, those awarded will be terminable by the MTA upon not more than 60 days' notice without compensation paid by the MTA including repayment of any unamortized tenant improvements. Offering a term agreement incentivizes the licensee to invest in improvements to the space thereby rendering the space more marketable in the long-term and providing a superior amenity to the public.
+[p083_c0009] The compensation structure in the agreements may include fixed base rent or a percentage rent derived from the licensee's gross sales, or a combination of the two. An independent valuation will be obtained to assist in determining the rent in the option term for agreements with fixed rent structures. For agreements with percentage rent structures, the rent collected as a percent of gross sales during the initial term will form the basis of a fixed, Minimum Annual Guarantee ("MAG") rent for the option term. MTA Real Estate will ensure that a consistent methodology is applied in these valuations.
+[p083_c0010] The terms of the negotiated transaction will be presented to the MTA Board for approval, if required.
+[p083_c0011] Based on the foregoing, MTA Real Estate recommends adoption of the modification to the MTA Real Estate Policies and Procedures for the Licensing of Real Property on the terms and conditions set forth above.
+[p083_c0012] _Master Page # 83 of 84 - MTA Board Meeting 9/21/2022_
+
+## Page 84
+
+### [p084_c0001] Staff Summary
+### [p084_c0002] Metropolitan Transportation Authority
+### [p084_c0003] Page 1 of 1
+[p084_c0004]
+
+```text
+Subject EXTENSION OF A TEMPORARY MODIFICATION TO POLICIES AND PROCEDURES FOR THE LICENSING OF REAL PROPERTY FOR VACANT SPACES Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name ARTURO ESPINOZA
+```
+[p084_c0005]
+
+```text
+Date JUNE 29, 2022 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p084_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 6/27/22 X 2 Board 6/29/22 X
+```
+[p084_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Administrative Officer 3 Chief Financial Officer
+```
+[p084_c0008] AGENCY: All Agencies, excluding Grand Central Terminal PURPOSE: To obtain MTA Board approval to extend a temporary modification to Real Estate Policies and Procedures for the Licensing of Real Property, as adopted November 29, 2011. EXPIRATION: Amended expiration date is August 1, 2023.
+### [p084_c0009] COMMENTS:
+[p084_c0010] This is to request a one-year extension of the expiration date of the attached policies and procedures modification, adopted July 22, 2020, to address a surge of vacancies in the MTA retail portfolio brought about by the decline in ridership due to the Covid-19 pandemic. Ridership levels remain depressed and continue to directly impact retail tenants who are dependent on consistent ridership to generate sales revenue.
+[p084_c0011] Following adoption of the July 22, 2020 modification, Real Estate adopted procedures in pursuing and consummating deals for vacant retail spaces. They are summarized as follows: 1) identify and have an independent opinion of value of the vacant space prepared; 2) issue a solicitation document containing information on the vacant space and post the solicitation on the Real Estate website; 3) review and evaluate proposals, on a first-come, first-serve basis, for adherence to the submission criteria; and 4) perform due diligence on the proposers. Where there are multiple proposals, Real Estate may select the most responsible proposal as determined by the selection criteria.
+[p084_c0012] While the established processes resulted in generating interest in the retail portfolio, MTA Real Estate has experienced limited success in completing deals given the ongoing, depressed ridership and therefore is asking for more time for implementation.
+[p084_c0013] Based on the foregoing, MTA Real Estate recommends adoption of extending the expiration date of the modification to the MTA Real Estate Policies and Procedures for the Licensing of Real Property on the terms and conditions set forth above.
+[p084_c0014] _Master Page # 84 of 84 - MTA Board Meeting 9/21/2022_

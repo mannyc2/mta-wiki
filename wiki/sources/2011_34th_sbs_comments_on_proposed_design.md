@@ -1,0 +1,338 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_2011-34th-sbs-comments-on-proposed-design"
+record_kind: "source"
+display_name: "Summary of Public Comments on the Proposed Design for 34th Street Select Bus Service (SBS)"
+source_id: "2011_34th_sbs_comments_on_proposed_design"
+source_ids:
+  - "2011_34th_sbs_comments_on_proposed_design"
+local_observation_id: "source_34th_sbs_comments_2011"
+local_observation_ids:
+  - "source_34th_sbs_comments_2011"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-10T22:58:20.252Z"
+raw_text: "Summary of Public Comments on the Proposed Design for 34th Street Select Bus Service (SBS). July 2011. New York City Department of Transportation."
+submission_ids:
+  - "sub_abd46222ccc62a85"
+payload:
+  authority_tier: "plan_document"
+  content_type: "report"
+  date: "July 2011"
+  date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2011-07"
+    precision: "month"
+    raw_text: "July 2011"
+  date_text: "July 2011"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2011-07"
+    precision: "month"
+    raw_text: "July 2011"
+  published_date_normalized: "2011-07"
+  published_date_precision: "month"
+  publisher: "New York City Department of Transportation"
+  title: "Summary of Public Comments on the Proposed Design for 34th Street Select Bus Service (SBS)"
+evidence_refs:
+  -
+    block_id: "p001_c0005"
+    evidence_id: "2011_34th_sbs_comments_on_proposed_design#p001_c0005"
+    page_number: 1
+    source_id: "2011_34th_sbs_comments_on_proposed_design"
+    source_path: "raw/sources/2011_34th_sbs_comments_on_proposed_design/blocks.jsonl"
+    text_sha256: "sha256:6d9dfca9162eda46b43e2f1d87f51df07c4ee50f5614d791fa449726a1598bd2"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0006"
+    evidence_id: "2011_34th_sbs_comments_on_proposed_design#p001_c0006"
+    page_number: 1
+    source_id: "2011_34th_sbs_comments_on_proposed_design"
+    source_path: "raw/sources/2011_34th_sbs_comments_on_proposed_design/blocks.jsonl"
+    text_sha256: "sha256:b0765e1e2262c7ef6eb24e7012e4cc8f53fcfebb96eaec895ba44b01f6114b0e"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0007"
+    evidence_id: "2011_34th_sbs_comments_on_proposed_design#p001_c0007"
+    page_number: 1
+    source_id: "2011_34th_sbs_comments_on_proposed_design"
+    source_path: "raw/sources/2011_34th_sbs_comments_on_proposed_design/blocks.jsonl"
+    text_sha256: "sha256:93e65d5a884d755c484b87fc3d2f7d015bd58cb9ad67f19b6730870c58b87474"
+    text_source: "raw_text"
+---
+
+# Read the report
+
+source_id: 2011_34th_sbs_comments_on_proposed_design
+citation: cite block ids exactly as shown in square brackets
+document: 222 block(s)
+
+## Page 1
+
+### [p001_c0001] 34 th Street Select Bus Service
+> [p001_c0002] The MTA logo, which consists of the letters "MTA" inside a blue circle.
+[p001_c0003] New York City Transit
+> [p001_c0004] The New York City Department of Transportation (NYC DOT) logo, featuring the words "NEW YORK CITY" above "DOT" and a stylized graphic of a bus or train.
+### [p001_c0005] Summary of Public Comments on the Proposed Design for 34 th Street Select Bus Service (SBS)
+[p001_c0006] July 2011
+[p001_c0007] New York City Department of Transportation
+
+## Page 2
+
+> [p002_c0001] The logo for the New York City Department of Transportation (NYC DOT) is located in the top left corner. It features the words "NEW YORK CITY" in a small, sans-serif font above a stylized green graphic. The graphic consists of three horizontal bars of varying lengths, with the top bar being the longest, creating a sense of motion or speed.
+### [p002_c0002] Department of Transportation
+### [p002_c0003] JANETTE SADIK-KHAN, Commissioner
+### [p002_c0004] I. Introduction
+[p002_c0005] The New York City Department of Transportation (DOT) and MTA New York City Transit (NYCT) conducted a Community Advisory Committee meeting and two public meetings in March 2011 to obtain feedback on the proposed design for Select Bus Service (SBS) on 34 th Street. In addition to these meetings, DOT and NYCT met with a number of project stakeholders, including local elected officials, building owners and community groups, to solicit further feedback. The proposed design was published on DOT's website, www.nyc.gov/brt , and members of the public were also able to email and mail comments to the project team. This report summarizes the comments, questions and suggestions that we received from community residents, business and building owners, local organizations, elected officials and others.
+### [p002_c0006] II. Public Meetings Held in Spring 2011
+### [p002_c0007] Community Advisory Committee Meeting
+- [p002_c0008] • Monday, March 14, 2011 New Yorker Hotel, Gramercy Park Suite 481 8 th Avenue, New York, NY 6:00 – 8:00 PM
+### [p002_c0009] Public Meetings
+- [p002_c0010] • Wednesday, March 30, 2011 Norman Thomas High School, Cafeteria 111 East 33 rd Street, New York, NY 6:00 – 8:00 PM • Thursday, March 31, 2011 New Yorker Hotel, Gramercy Park Suite 481 8 th Avenue, New York, NY 6:30 – 8:30 PM
+[p002_c0011] Public Meeting Outreach: In advance of the public meetings, DOT sent out a meeting flier to Manhattan Community Boards 4, 5, and 6, elected officials, Community Advisory Committee (CAC) members and public stakeholders. All recipients were asked to distribute the flier to their constituents or group members. In addition, DOT distributed fliers door-to-door to every storefront business and accessible building along 34 th Street between the FDR Drive and Twelfth Avenue. Meeting notices were also posted on the project website and advertised using DOT's Facebook and Twitter pages.
+[p002_c0012] _34 th Street Select Bus Service March 2011_
+[p002_c0013] _2_
+
+## Page 3
+
+### [p003_c0001] Department of Transportation
+### [p003_c0002] JANETTE SADIK-KHAN, Commissioner
+### [p003_c0003] III. Summary of Comments
+### [p003_c0004] General Comments
+[p003_c0005] The following is a summary of overall comments and questions that DOT and NYCT heard from residents, businesses, and other 34 th Street stakeholders at the CAC, the public meetings, through written comments, and by direct outreach. The comments are divided into categories, and where applicable DOT and/or NYCT have provided a response. In many cases, similar comments were made by multiple attendees; where appropriate, similar comments have been grouped for clarity.
+### [p003_c0006] Overall Project Comments
+- [p003_c0007] • Comment: Participants offered differing opinions about the proposed plan. Some were strong proponents, while others did not perceive a need for the project and requested that the DOT maintain the current configuration of 34 th Street. • Question: Will the 34 th Street design be compliant with the Americans with Disabilities Act (ADA)? A large population of disabled individuals resides on 34 th Street.
+[p003_c0008] Response: the project will be fully compliant with the Americans with Disabilities Act (ADA).
+- [p003_c0009] • Comment: Consider similar SBS treatments for 23 rd , 42 nd , and 57 th Streets, as well as other bus routes in all five boroughs.
+[p003_c0010] Response: DOT and NYCT are considering additional SBS corridors in Manhattan and across the five boroughs. For more information, visit the BRT Phase II website at: http://www.nyc.gov/html/brt/html/future/brt_phase2.shtml
+### [p003_c0011] Access/Loading Comments
+- [p003_c0012] • Question: What will the loading zone regulations be? Loading zones should prioritize loading over parking.
+[p003_c0013] Response: DOT agrees. The curb regulations, which will be determined in consultation with the 34 th Street Community Advisory Committee, residents and other project stakeholders, will prioritize loading over parking. For example, loading zones on residential streets could be signed No Parking, which allows for pick-up and drop-off of passengers and the loading and unloading of goods by both private and commercial vehicles.
+- [p003_c0014] • Question: Can DOT implement interim loading windows on 34 th Street prior to the implementation of the project?
+[p003_c0015] Response: DOT is committed to improving loading access on 34 th Street. The proposed 34 th Street Select Bus Service project would increase the amount of legal midday loading on the corridor from about 50 spaces to about 350 spaces. If the 34 th Street SBS project is
+[p003_c0016] _34 th Street Select Bus Service March 2011_
+[p003_c0017] _3_
+
+## Page 4
+
+> [p004_c0001] The logo for the New York City Department of Transportation (NYCT DOT) is located in the top left corner. It features the words "NEW YORK CITY" in a small, bold, sans-serif font above a larger, stylized "DOT" logo. The "DOT" logo consists of three horizontal green bars of varying lengths, creating a sense of motion or speed.
+### [p004_c0002] Department of Transportation
+### [p004_c0003] JANETTE SADIK-KHAN, Commissioner
+[p004_c0004] found to be feasible and completes environmental review by early 2012, NYCT and DOT plan to begin construction on the project in the summer of 2012, less than 12 months from the release of this report.
+[p004_c0005] The current curbside bus lane configuration on 34 th Street provides significant benefits to bus riders, including decreased travel times, and has lead to growth in bus ridership on 34 th Street. Similar no standing regulations are common in many areas of Manhattan. Given the time frame for implementation of the project and the negative impact a loading window would have on bus riders and general traffic, DOT will not implement an interim loading window of 34 th Street in advance of the project.
+- [p004_c0006] • Comment: The NYPD is ticketing Access-A-Ride vehicles and taxis for picking up/dropping off passengers on 34 th Street. As a result, taxis are refusing to drop off in front of residential buildings.
+[p004_c0007] Response: A typical bus lane, including those on 34 th Street, has a “No Standing” curbside regulation. It is legal for vehicles, including taxis, Access-A-Ride vans, and private cars, to expeditiously drop-off or pick-up passengers from these bus lanes, including the bus lanes on 34 th Street. In bus stops, expeditious pickups and dropoffs of passengers are allowed as long as they are not interfering with the operation of a bus. DOT continues to work with the NYPD and the Taxi and Limousine Commission, which regulates the taxi industry, to ensure that police offices and taxi drivers are aware of bus lane rules and enforce those rules appropriately.
+### [p004_c0008] Traffic Comments
+- [p004_c0009] • Question: Will the proposed design for 34 th Street be able to accommodate the existing levels of traffic on 34 th Street? Adjacent side street are already very congested.
+[p004_c0010] Response: As promised throughout the community outreach for the 34 th Street SBS project, DOT is conducting a comprehensive traffic analysis of the proposed design. This analysis will take into account the traffic effects of the project on 34 th Street, as well as the cross streets to the north and south and intersecting avenues. The results of this analysis will be completed in early fall of 2011 and then presented to the Community Advisory Committee and the community for review and comment. DOT is confident that the proposed plan, which maintains traffic in both directions from river to river, will accommodate traffic demand on 34 th Street without spillover effects onto parallel side streets.
+- [p004_c0011] • Question: Can DOT reopen 33 rd Street as a through street westbound at Broadway/Sixth Avenue?
+[p004_c0012] Response: At the request of the community and key stakeholders, DOT is analyzing the feasibility of reopening 33 rd Street westbound at Broadway/Sixth Avenue. The results of
+[p004_c0013] _34 th Street Select Bus Service March 2011_
+[p004_c0014] _4_
+
+## Page 5
+
+> [p005_c0001] The logo for the New York City Department of Transportation (NYCT DOT) is located in the top left corner. It features the words "NEW YORK CITY" in a small, bold, sans-serif font above a large, stylized "DOT" where the letters are green and the "O" is a circle with horizontal lines.
+### [p005_c0002] Department of Transportation
+### [p005_c0003] JANETTE SADIK-KHAN, Commissioner
+[p005_c0004] this analysis will be completed and presented to the CAC and the community at the same time the results of the overall traffic analysis are complete.
+- [p005_c0005] • Question: Would vehicles be allowed to continue to use 34 th Street as a through route river to river?
+[p005_c0006] Response: Under the proposed plan, vehicles could continue to use 34 th Street as a through route. However, most traffic on 34 th Street is for local access.
+- [p005_c0007] • Comment: Truck traffic and tour buses traveling on the side streets in Murray Hill are an issue. These trucks and buses should be restricted from driving on side streets.
+[p005_c0008] Response: Buses and trucks should travel on designated truck routes unless making a local delivery or a stop. DOT continues to work with the trucking industry and with the NYPD, which enforces truck route rules, to improve truck route compliance.
+- [p005_c0009] • Comment: Bicycles need to be more integrated into the plan for 34 th Street. Consider installing bike lanes. • Comment: Consider making the bus lane a dual purpose lane, allowing trucks to use the bus lane at all times. • Comment: Reduce the area in which the traffic analysis would focus to streets within close proximity of 34 th Street. • Comment: Divert truck traffic to alternate roadways instead of using 34 th Street as a connection for the Queens Midtown Tunnel (QMT) and Lincoln Tunnel.
+### [p005_c0010] Bus Service Comments
+- [p005_c0011] • Question: Can the SBS stops at Lexington Avenue and Madison Avenue be added back to the project plan?
+[p005_c0012] Response: As part of this project, DOT and NYCT are looking to improve the local service by aligning 34 th Street bus stop spacing with citywide local bus stop spacing guidelines. On the East Side, NYCT and DOT are proposing that the Lexington Avenue and Third Avenue stops be combined, and that the Madison Avenue and Fifth Avenue stops also be combined. These consolidations are recommended for two reasons. First, these consolidations would help speed bus service by creating equal distances between bus stops, in line with NYCT citywide local stop spacing guidelines, which call for 750-1,000 feet between stops. All other proposed M34 and M16 stops on 34 th Street are spaced within that range, as most blocks on the corridor are about 875 feet long.
+[p005_c0013] _34 th Street Select Bus Service March 2011_
+[p005_c0014] _5_
+
+## Page 6
+
+> [p006_c0001] The logo for the New York City Department of Transportation (NYCT DOT) is located in the top left corner. It features the words "NEW YORK CITY" in a small, bold, sans-serif font above a stylized green graphic. The graphic consists of three horizontal bars of varying lengths, with the top bar being the longest, creating a sense of motion or a stylized "D" shape.
+### [p006_c0002] Department of Transportation
+### [p006_c0003] JANETTE SADIK-KHAN, Commissioner
+[p006_c0004] Including stops at Madison Avenue and Lexington Avenue would result in stop spacing of less than 250 feet in some cases.
+[p006_c0005] Secondly, the stop consolidations will accommodate the requests of many residents and businesses for more loading space in this segment of 34 th Street. For example residents between Park Avenue and Lexington Avenue have requested more loading space, but adding back a westbound stop at Lexington Avenue would require eliminating the entire proposed loading zone on the north curb of 34 th Street between Park Avenue and Lexington Avenue. Overall, adding back the Lexington Avenue and Madison Avenue stops would result in a loss of about 15-20 parking or loading spaces between Fifth Avenue and Third Avenue.
+- [p006_c0006] • Questions: Can the express bus stops on the East Side be consolidated? The number of express buses operating on 34 th Street should be limited in order to improve the quality of life for residents.
+[p006_c0007] Response: As part of the 34 th Street SBS plan, DOT and NYCT are proposing reducing the number of express bus stops on 34 th Street. The number of express buses operating on the street is based on the demand for that service for people traveling into Manhattan by bus.
+- [p006_c0008] • Comment: Describe the type of buses that would now operate on the SBS route. Consider using hybrid buses.
+[p006_c0009] Response: Initially service will operate with the hybrid- electric, low floor buses currently used on M34 and M16 routes. Should there be significant increases in ridership, low floor articulated buses would be used.
+- [p006_c0010] • Comment: Reinstate M1 service on Park Avenue.
+[p006_c0011] Response: At this time there are no plans to reinstate M1 service on Park Avenue.
+- [p006_c0012] • Comment: Express buses often idle on 37 th Street between Second and Third Avenues.
+[p006_c0013] Response: DOT has reported this condition to the NYPD.
+- [p006_c0014] • Comment: Buses are often delayed by cars accessing the parking garages. • Comment: Consider an alternative to Transit Signal Priority (TSP) technology.
+[p006_c0015] _34 th Street Select Bus Service March 2011_
+[p006_c0016] _6_
+
+## Page 7
+
+> [p007_c0001] The logo for the New York City Department of Transportation (NYC DOT). It features the words "NEW YORK CITY" in a small box above a stylized green "DOT" logo consisting of three horizontal bars and a circle.
+### [p007_c0002] Department of Transportation
+### [p007_c0003] JANETTE SADIK-KHAN, Commissioner
+### [p007_c0004] Bus Lane Comments
+- [p007_c0005] • Question: How will DOT and NYCT enforce the bus lane? What would be done to keep trucks, shuttle buses, and cabs out of the bus lane? How would camera enforcement of the bus lane work?
+[p007_c0006] Response: In addition to regular enforcement of the bus lane by the NYPD, DOT uses bus cameras to enforce bus lane rules. NYCT is considering a proposal to mount cameras on buses as well. DOT/NYCT personnel can review the video footage from these cameras to determine whether to issue a summons by mail to the owner of the offending vehicle.
+- [p007_c0007] • Question: When will the bus lane be in effect?
+[p007_c0008] Response: The offset bus lane will be in operations 24 hours, seven days a week and the curbside bus lane will operate 7 AM to 7 PM on weekdays.
+- [p007_c0009] • Question: Why is DOT proposing offset bus lanes?
+[p007_c0010] Response: Offset bus lanes allow for loading/parking without obstructing bus operations.
+- [p007_c0011] • Question: When would private vehicles be allowed to use the bus lane?
+[p007_c0012] Response: As with other bus lanes citywide, private vehicles will be permitted to use the bus lane when making the next available right turn and to access the curb.
+- [p007_c0013] • Question: Are buses restricted to the bus lane or are they permitted to use the general traffic lane as well?
+[p007_c0014] Response: Buses are not restricted to the bus lane, and may use the general traffic lane as appropriate, such as if the bus lane is obstructed.
+### [p007_c0015] Pedestrian Safety and Bus Bulb Comments
+- [p007_c0016] • Comment: Minimize the removal of any street trees.
+[p007_c0017] Response: The City of New York and DOT share a desire to not only protect existing street trees, but to plant additional street trees where feasible. As part of the project, DOT will seek to protect existing street trees. If there is a conflict with a street tree in the design, that tree will be relocated within the immediate vicinity. In addition, DOT will be evaluating opportunities for additional street trees and green storm water management infrastructure at each bus bulb location.
+- [p007_c0018] • Comment: The proposed bus bulbs (sidewalk extensions) will make driving on the corridor difficult, especially when making turns.
+[p007_c0019] _34 th Street Select Bus Service March 2011_
+[p007_c0020] _7_
+
+## Page 8
+
+> [p008_c0001] The logo for the New York City Department of Transportation (NYCT DOT) is located in the top left corner. It features the words "NEW YORK CITY" in a small, bold, sans-serif font above a larger, stylized "DOT" logo. The "DOT" logo consists of three horizontal green bars of varying lengths, creating a sense of motion or speed.
+### [p008_c0002] Department of Transportation
+### [p008_c0003] JANETTE SADIK-KHAN, Commissioner
+[p008_c0004] Response: the bus bulbs will be designed so that all vehicles, including trucks, buses, and emergency vehicles, can safely make turns.
+- [p008_c0005] • Comment: Alleviating pedestrian congestion should be one of the key focuses of the project. • Comment: The proposed bus bulbs will encourage pedestrians to walk in the street more than is the case today.
+### [p008_c0006] Off-Board Fare Collection Comments
+- [p008_c0007] • Comment: Visible signage should be provided at the bus stops notifying passengers that they need to pay their fares prior to entering the SBS bus. Also proper lighting needs to be provided at the fare machines.
+[p008_c0008] Response: Visible signage will be provided at bus stops notifying passengers that they need to pay their fares prior to boarding a bus. Prior to and during the first weeks of off board fare collection, NYCT and DOT will conduct extensive outreach to M34 and M16 riders to inform them of the new system and to provide customer assistance.
+- [p008_c0009] • Question: How will the fare machines at Penn Station accommodate the high volume of riders at that stop?
+[p008_c0010] Response: Additional fare machines will be located at Penn Station to accommodate the high number of riders at this stop.
+- [p008_c0011] • Question: Will M16/M34 SBS riders be able to transfer to the M15 SBS with the same receipt, without having to dip their MetroCard again at a fare collection machine?
+[p008_c0012] Response: Riders making a transfer to the M15 SBS will have to obtain a separate receipt at a M15 SBS MetroCard fare collection machine or coin fare collection machine. Existing transfer policies, including free bus to bus transfer, will apply.
+- [p008_c0013] • Comment: Consider a better design for the fare collection machines. Those currently in use on the M15 SBS route are too bulky.
+[p008_c0014] _34 th Street Select Bus Service March 2011_
+[p008_c0015] _8_
+
+## Page 9
+
+> [p009_c0001] The logo for the New York City Department of Transportation (NYC DOT) is located in the top left corner. It features the words "NEW YORK CITY" in a small, bold, sans-serif font above a stylized green graphic. The graphic consists of three horizontal bars of varying lengths, with the top bar being the longest, creating a sense of motion or a stylized "D" shape.
+### [p009_c0002] Department of Transportation
+### [p009_c0003] JANETTE SADIK-KHAN, Commissioner
+### [p009_c0004] Block-by-Block Comments
+[p009_c0005] The following is a summary of questions, comments, and answers that were raised and discussed at the block-by-block break-out sessions. Italicized text illustrates responses from project staff.
+### [p009_c0006] FDR Drive to First Avenue
+- [p009_c0007] • Comment: Identify any new developments for 34 th Street at the FDR.
+[p009_c0008] Response: NYU Langone Medical Center plans to build a new building on the southeast corner of First Avenue and 34 th Street.
+### [p009_c0009] First to Second Avenue
+- [p009_c0010] • Question: Can DOT reinstate the left turn from eastbound 34 th Street onto northbound First Avenue? The turn restrictions on 34 th Street can force drivers out of their way to get to their final destination.
+[p009_c0011] Response: DOT is currently evaluating a proposal to restore the left from eastbound 34 th Street onto northbound First Avenue, subject to further traffic and safety analysis. As discussed at the CAC meetings and recent round of open houses, reinstituting the left turn at First Avenue requires that the eastbound bus lane between Second and First Avenue be located at the curb. As a result, loading at this curb would be limited to 7pm to 7 am on weekdays and all day on the weekends.
+- [p009_c0012] • Question: Will vehicles be permitted to make a left turn onto Second Avenue? Consider lifting this restriction and install a turning arrow.
+[p009_c0013] Response: This left turn is prohibited because doing so improves pedestrian safety and traffic flow on 34 th Street and Second Avenue.
+- [p009_c0014] • Question: There are often moving trucks that need to access 300 East 34 th Street, but the plan proposes a bus stop in front of the building entrance. Where will moving trucks and other deliveries be able to access 300 East 34 th Street?
+[p009_c0015] Response: To better accommodate loading at 300 East 34 th Street, DOT is proposing adding a commercial loading zone on the east side of Second Avenue just south of 34 th Street.
+- [p009_c0016] • The curb cut in front of 325 and 327 E. 3 4th Street is not needed and should be removed.
+[p009_c0017] Response: DOT does not have the authority to remove curb cuts without an agreement with the property owner.
+[p009_c0018] _34 th Street Select Bus Service March 2011_
+[p009_c0019] _9_
+
+## Page 10
+
+> [p010_c0001] The logo for the New York City Department of Transportation (NYC DOT) is located in the top left corner. It features the words "NEW YORK CITY" in a small box above a stylized green "DOT" logo consisting of three horizontal bars and a circle.
+### [p010_c0002] Department of Transportation
+### [p010_c0003] JANETTE SADIK-KHAN, Commissioner
+- [p010_c0004] • Comment: Restricting access to the QMT via 34 th Street would result in increase traffic on surrounding streets.
+[p010_c0005] Response: It is expected that access to the QMT will remain similar to existing conditions. For more information, see the Traffic Comments section on page 6.
+- [p010_c0006] • Comment: Consider moving the westbound bus stop to the near side of the intersection, as the currently proposed far side location tends to become congested resulting in buses spilling onto First Avenue. • Comment: There are conflicts between delivery trucks and bicyclists on Second Avenue/ The the Second Avenue bike lane should begin at 33 rd Street. • Comment: Better signage is needed to indicate the location of bike lanes, particularly for cyclists traveling westbound on 34 th Street wanting to connect to the bike lanes on Second Avenue. • Comment: The occasional closing of the entrance to the QMT (as currently done) would affect the traffic flow on 34 th Street. • Comment: The three lanes feeding into one lane from the QMT causes traffic congestion. The traffic signal seems to have timing problems. • Comment: The curb in front of the Armenian Church (north side of 34 th Street between Second Avenue and entrance to the QMT) is not heavily utilized; consider using the curb lane for non-loading parking use.
+### [p010_c0007] Second to Third Avenue
+- [p010_c0008] • Comment: Traffic officers should be placed at the intersections of Third Avenue and 36 th and 37 th Streets to reduce vehicular-pedestrian conflicts at these locations. Speed limits should be posted in the Murray Hill area.
+[p010_c0009] Response: DOT will consult with the NYPD to address these issues.
+- [p010_c0010] • Comment: Clarify if loading/parking lane in front of the 225 E. 34 th Street building will be available to everyone or just 34 th Street residents. Permitting others to use the lanes could create problems for the residents, impeding access to the curb space in front of the building.
+[p010_c0011] Response: There is no regulation which allows DOT to limit who can legally stop or park in a given location, so the curb space would be available for parking or loading to anyone.
+[p010_c0012] _34 th Street Select Bus Service March 2011_
+[p010_c0013] _10_
+
+## Page 11
+
+> [p011_c0001] The logo for the New York City Department of Transportation (NYC DOT) is located in the top left corner. It features the words "NEW YORK CITY" in a small, bold, sans-serif font above a stylized green graphic. The graphic consists of three horizontal bars of varying lengths, creating a sense of motion or speed, with the letters "DOT" integrated into the design.
+### [p011_c0002] Department of Transportation
+### [p011_c0003] JANETTE SADIK-KHAN, Commissioner
+- [p011_c0004] • Question: Will a right turn will be permitted from Second Avenue onto 34 th Street?
+[p011_c0005] Response: Yes, a right turn will be permitted at this location.
+- [p011_c0006] • Comment: Buses approaching the QMT entrance (between Second and Third Avenues) are often stuck in mixed traffic. • Comment: Consider rerouting some of the traffic (particularly buses) generated by the QMT elsewhere to relieve some of congestion on 34 th Street. • Comment: Midday traffic conditions differ from that of traditional peak periods. Car traffic volumes exiting the QMT are higher than buses during this period, often resulting in congestion between Second and Third Avenues. • Comment: Consider instituting no parking or no standing regulations on a 24-hour, seven days a week on the north side of the block. Currently people are allowed to park here over the entire weekend which limits curb access. • Comment: Express buses and police vehicles often sit and idle in the bus lane on the north side of 34 th Street in this block. This defeats the purpose of the bus lane. • Comment: Consider shifting the westbound bus stop to the middle of the block to better accommodate the buses. Bus bunching at the currently proposed location would block traffic on Second Avenue. • Comment: Consider eliminating the right turn out of the Queens Midtown Tunnel onto 35 th Street. Traffic congestion in the area is an issue.
+### [p011_c0007] Third to Lexington Avenues
+- [p011_c0008] • For a response to comments regarding a bus stop at Lexington Avenue, please refer to Bus Service Comments on page 8. • Comment: Consolidate the Park Avenue and Third Avenue express bus stops in front of 132 E 34 th Street at the corner of Lexington. Residents need better access to 155 East 34 th and are also concerned about idling express buses.
+[p011_c0009] Response: As with the M34 and M16 riders, bus riders on the express buses that use 34 th Street want bus stops at convenient intervals. Consolidating the Third Avenue and Park Avenue express at Lexington Avenue bus stops would limit the choices of express bus riders and place the stop a block from the most significant transfer point—the 6 train at Park Avenue and 33 rd Street. The suggested Lexington Avenue stop location is also not
+[p011_c0010] _34 th Street Select Bus Service March 2011_
+[p011_c0011] _11_
+
+## Page 12
+
+> [p012_c0001] The logo for the New York City Department of Transportation (NYC DOT) is located in the top left corner. It features the words "NEW YORK CITY" in a small, bold, sans-serif font above a stylized green "DOT" logo. The "DOT" logo consists of three horizontal green bars of varying lengths, creating a sense of motion or speed.
+### [p012_c0002] Department of Transportation
+### [p012_c0003] JANETTE SADIK-KHAN, Commissioner
+[p012_c0004] feasible from a safety perspective, as the bus lanes shift at this location from a curbside design to an offset design.
+[p012_c0005] That said, DOT understands the concerns raised by the residents of the Warren House at 155 East 34 th Street regarding access to their building. Therefore, DOT proposes to consolidate the Third Avenue westbound express bus stop with the Third Avenue westbound M34 and M16 stop. With this consolidation, only half of the 34 th Street frontage of the Warren House will be occupied by a bus stop. The other half will be available for expeditious drop-off and pick-up at all times. DOT will continue to work with the MTA to ensure no buses are idling or standing in front of the building.
+[p012_c0006] In terms of deliveries, including residents who wish to load and unload private vehicles, DOT proposes changing the curb regulation on west side of Third Avenue north of 34 th Street, around the corner from the Warren House. The current regulation is No Parking Except Commercial Vehicles, which can pay for up to 3 hours of parking. DOT proposes changing the first 100 feet of curb north of corner to No Parking, which allows both private vehicles and commercial vehicles to load and unload 24 hours a day and does not allow for long term parking.
+- [p012_c0007] • Comment: The left turn onto Third Avenue from 34 th Street often interferes with pedestrian crossing activity. Consider installing countdown pedestrian signals at this intersection. • Comment: Buses often bunch at this area blocking the crosswalks and traffic on Third Avenue.
+### [p012_c0008] Lexington to Park Avenues
+- [p012_c0009] • For a response to comments regarding a bus stop at Lexington Avenue, please refer to the Bus Service Comments section on page 8. • Comment: The service entrance for 7 Park Avenue is located on 34 th Street at the proposed site for the express bus stop, which will make building access difficult.
+[p012_c0010] Response: DOT has reviewed the turning volumes from 34 th Street westbound onto Park Avenue northbound and determined that a modest number of vehicles make this turn each hour. Therefore, DOT can shorten the right turn bay on the north curb of 34 th Street between Park Avenue and Lexington Avenue, providing an additional 30 feet of loading space on this block.
+[p012_c0011] _34 th Street Select Bus Service March 2011_
+[p012_c0012] _12_
+
+## Page 13
+
+> [p013_c0001] The logo for the New York City Department of Transportation (NYC DOT) is located in the top left corner. It features the words "NEW YORK CITY" in a small, bold, sans-serif font above a larger, stylized "DOT" logo. The "DOT" logo consists of three horizontal green bars of varying lengths, creating a sense of motion or speed.
+### [p013_c0002] Department of Transportation
+### [p013_c0003] JANETTE SADIK-KHAN, Commissioner
+- [p013_c0004] • Comment: It is good that a loading lane is being proposed in front of the US Post Office (115 E. 34 th Street), as the postal trucks often impede the buses operating in the current curbside bus lane.
+### [p013_c0005] Park to Madison Avenues
+- [p013_c0006] • For a response to comments regarding a bus stop at Lexington Avenue, please refer to Bus Service Comments on page 8. • Comment: Residents of 10 Park Avenue expressed concerns regarding the placement of the bus bulb on the northwest corner of Park Avenue and 34 th Street and its effect of delivery access and trash collection at 10 Park. A recommendation was made to move the bus stop and bulb closer to Madison Avenue. • Response: the northwest corner of 34 th Street at Park Avenue is currently a bus stop, and as such the addition of a bus bulb would not change access to 10 Park Avenue. In addition, the biggest transfer point on the M34 and M16 on the East Side is to the 6 train at Park Avenue. Moving the bus stop towards Madison Avenue would drop off passengers farther from the 6 station.
+### [p013_c0007] Madison to Fifth Avenues
+[p013_c0008] No comments were offered for this segment.
+### [p013_c0009] Fifth to Sixth Avenues
+- [p013_c0010] • Question: When would deliveries be permitted in the bus lane on the north side of 34 th Street?
+[p013_c0011] Response: Properties on the north side of 34 th Street between Fifth and Sixth Avenue that do not have loading access on 34 th Street could receive deliveries from the loading lane on the south curb of 34 th St at all times or from the bus lane on the north curb between 7 PM and 7 AM.
+- [p013_c0012] • Comment: 7 W. 34 th Street, a building with multiple stores requires a loading area. Consider narrowing the sidewalk and provide loading zones on both sides of the street.
+[p013_c0013] Response: The block between Fifth and Sixth Avenues carries a very high volume of pedestrians. Removing pedestrian space to create a loading zone would increase crowding and create a potential pedestrian safety issue.
+[p013_c0014] _34 th Street Select Bus Service March 2011_
+[p013_c0015] _13_
+
+## Page 14
+
+> [p014_c0001] The logo for the New York City Department of Transportation (NYC DOT) is located in the top left corner. It features the words "NEW YORK CITY" in a small, bold, sans-serif font above a large, stylized "DOT" where the letters are green and the "O" is a circle with horizontal lines.
+### [p014_c0002] Department of Transportation
+### [p014_c0003] JANETTE SADIK-KHAN, Commissioner
+- [p014_c0004] • Comment: Consider moving the eastbound bus stop from the far side of Fifth Avenue to the nearside of the intersection. • Comment: Concern about the tour buses standing/idling in the turning lane on the south side of the street.
+### [p014_c0005] Sixth to Seventh Avenues
+- [p014_c0006] • Comment: People could walk in the parking/loading lane to access the express bus stop on the south side of the street. • Comment: Consider adding a curb extension on the south side of 34 th Street at Broadway to accommodate the heavy pedestrian traffic and subway entrance. • Comment: Consider creating a “newsstand and vendor free zone” at the Seventh Avenue intersection (at all four corners) as they impede the flow of pedestrian traffic. • Comment: Consider reopening the underground pedestrian tunnel between Sixth and Seventh Avenues along 33 rd Street.
+### [p014_c0007] Seventh to Eighth Avenues
+- [p014_c0008] • Comment: Relocate the loading/parking lane to the north side of the block as 34 th Street, as many buildings on the north side only have access on 34 th Street. The buildings on the south side are set back and have access to an underground parking garage. • Comment: Consider building overhead pedestrian walkways at 34 th Street and Seventh Avenue to alleviate the pedestrian congestion. • Comment: Consider relocating street vendors currently operating in front of the LIRR entrance. • Comment: Consider providing kiosks for vendors so that they could all have a uniformed appearance.
+### [p014_c0009] Eighth to Ninth Avenues
+- [p014_c0010] • Comment: Introduce a Barnes Dance (a pedestrian crossing system that stops all vehicular traffic and allows pedestrians to cross an intersection in every direction) at Eighth and Ninth Avenues. • Comment: Concerns were expressed about Bolt buses and police cars impeding the flow of traffic, often blocking the bus lane.
+[p014_c0011] _34 th Street Select Bus Service March 2011_
+[p014_c0012] _14_
+
+## Page 15
+
+> [p015_c0001] The logo for the New York City Department of Transportation (NYCT DOT) is located in the top left corner. It features the words "NEW YORK CITY" in a small, bold, sans-serif font above a larger, stylized "DOT" logo. The "DOT" logo consists of three horizontal green bars of varying lengths, creating a sense of motion or speed.
+### [p015_c0002] Department of Transportation
+### [p015_c0003] JANETTE SADIK-KHAN, Commissioner
+### [p015_c0004] Ninth to Tenth Avenues
+- [p015_c0005] • Comment: Consider reinstating a westbound bus stop at Dyer Avenue, as over 1,300 residents, including many elderly, live in this area.
+[p015_c0006] Response: Given the number of residents on the block between Ninth Avenue and Tenth Avenue, and the strong request from CB4, DOT and NYCT agree that a stop at this location makes more sense than a stop on the west corner of 34 th Street and Tenth Avenue. Therefore, DOT and NYCT propose to relocate the westbound Tenth Avenue stop to the west side of Dyer Avenue. With this move, the design will include both a westbound and eastbound bus stop within the block from Tenth Avenue to Eleventh Avenue.
+- [p015_c0007] • Comment: The right turn lane onto Dyer Avenue from 34 th Street is not long enough to accommodate the high volume of vehicles making that turn. Traffic tends to build up there, especially during non-traditional peak hours (e.g., on Sunday evenings). Lengthening this lane however would conflict with the loading needs in front of 365 W. 34 th Street. DOT should discuss closing this entrance to the Lincoln Tunnel with the Port Authority of NY & NJ.
+[p015_c0008] Comment: Lincoln Tunnel traffic from Dyer Avenue feeds a high volume of truck traffic onto 34 th Street turning left and then heading east. It was suggested to close the Dyer Avenue tunnel entrance and reroute the incoming traffic onto non-residential blocks.
+[p015_c0009] Response: Dyer Avenue is owned and operated by the Port Authority of New York and New Jersey. DOT works closely with the Port Authority on access to the Lincoln Tunnel and continues to seek to identify ways to improve its operation. As part of this project, DOT is engaged with the Port Authority on a discussion of Dyer Avenue and ways to reduce traffic back-ups at that location.
+- [p015_c0010] • Comment: 408 and 423 W. 34 th Street are fronted by a right turn lane. While it would appear that the parking/loading lane ends fairly close to these buildings, 414 and 424 constitutes St. Michael's Church which means that parking and/or standing in this lane effectively stops at Dyer Avenue Sufficient space is needed to accommodate deliveries in front of these residential buildings.
+[p015_c0011] Response: To clarify, the proposed loading area in front 424 and 414 West 34 th Street would not be limited to use by St. Michaels Church. For example, this area could be signed No Parking (the typical regulation in front of a house of worship), which would allow residents of 408 West 34 th Street to pick-up or drop-off passengers or to load or unload their private vehicle. This area could also be used by commercial vehicles and moving vans making deliveries or pick-ups.
+[p015_c0012] _34 th Street Select Bus Service March 2011_
+[p015_c0013] _15_
+
+## Page 16
+
+> [p016_c0001] The logo for the New York City Department of Transportation (NYC DOT) is located in the top left corner. It features the words "NEW YORK CITY" in a small, bold, sans-serif font above a large, stylized "DOT" where the letters are green and the "O" is a circle with horizontal lines.
+### [p016_c0002] Department of Transportation
+### [p016_c0003] JANETTE SADIK-KHAN, Commissioner
+- [p016_c0004] • Comment: Residents expressed concern about the Bolt and Mega buses idling between Ninth and Tenth Avenues waiting for room to stage on Ninth Avenue. They need to be relocated elsewhere. • Comment: A taxi loading zone should be incorporated in front and behind the bus stations. • Comment: Pedestrian safety is a concern at the Dyer Avenue intersection. Consider installing a red light camera here. • Comment: Bus stop should be at the far side of Ninth Avenue instead of the nearside.
+### [p016_c0005] Tenth to Eleventh Avenues
+- [p016_c0006] • Question: Why are there two westbound bus stops on this block? Why is there not a stop closer to the Javits Center?
+[p016_c0007] Response: With the proposed move of the westbound Tenth Avenue stop to Dyer Avenue, there will be two stops in the vicinity of the Hudson Yards. The westbound stop is proposed for the Hudson Yards Boulevard and the eastbound stop is proposed for the east side of Eleventh Avenue. This placement will allow for regular intervals between stops. These two stops will be built by the Hudson Yards Development Corporation as part of Hudson Yards boulevard and park project, scheduled for completion in 2013.
+### [p016_c0008] Eleventh to Twelfth Avenues
+- [p016_c0009] • No comments were offered for this segment.
+[p016_c0010] _34 th Street Select Bus Service March 2011_
+[p016_c0011] _16_

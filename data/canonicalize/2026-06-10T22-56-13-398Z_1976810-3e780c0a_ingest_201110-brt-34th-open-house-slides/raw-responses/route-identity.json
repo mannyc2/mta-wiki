@@ -1,0 +1,104 @@
+{
+  "run_id": "2026-06-10T22-56-13-398Z_1976810-3e780c0a_ingest_201110-brt-34th-open-house-slides",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T01:54:35.561Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "d1-m34-sbs-renamed-new",
+        "local_observation_id": "route_m34_sbs_201110_renamed",
+        "decision": "new",
+        "rationale": "Observation's base_record_id is route_m34-sbs, which is already the closest match. The registry record route_m34-sbs already includes local_observation_id route_m34_sbs_201110_renamed in its local_observation_ids. No different record is a better match — the M34 renamed to M34 SBS is the same route variant (SBS) on the same 34th Street corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_open_house_slides",
+            "block_id": "p028_c0002",
+            "source_quote": "M34 to be renamed M34 SBS"
+          },
+          {
+            "source_id": "201110_brt_34th_open_house_slides",
+            "block_id": "p028_c0002",
+            "source_quote": "Pre-payment will be introduced at all M34 and M34A stops"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2-m16-renamed-new",
+        "local_observation_id": "route_m16_renamed_to_m34a_sbs",
+        "decision": "new",
+        "rationale": "Observation's base_record_id is route_m16-mentioned, which is already the closest match. The registry record route_m16-mentioned already includes local_observation_id route_m16_renamed_to_m34a_sbs and aggregates this exact evidence. While route_m34a-sbs also references the same real-world route post-renaming (M34A SBS), the observation centers on the M16 identity being renamed, and the base_record_id route_m16-mentioned is the closest canonical home.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_open_house_slides",
+            "block_id": "p028_c0002",
+            "source_quote": "M16 to be renamed the M34A SBS for clearer passenger communication"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "renamed_to",
+            "subject_id": "route_m16-mentioned",
+            "object_id": "route_m34a-sbs",
+            "description": "M16 bus route renamed to M34A SBS in November 2011 for clearer passenger communication; same service levels and route.",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_open_house_slides",
+                "block_id": "p028_c0002",
+                "source_quote": "M16 to be renamed the M34A SBS for clearer passenger communication"
+              },
+              {
+                "source_id": "201110_brt_34th_open_house_slides",
+                "block_id": "p028_c0002",
+                "source_quote": "Service levels and route will remain the same on both M34 SBS and M34A SBS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "d3-m34a-sbs-new",
+        "local_observation_id": "route_m34a_sbs_201110",
+        "decision": "new",
+        "rationale": "Observation's base_record_id is route_m34a-sbs, which is already the closest match. The registry record route_m34a-sbs already includes local_observation_id route_m34a_sbs_201110 and the same evidence about the M16-to-M34A-SBS renaming establishing the M34A SBS identity. No different record is a better match.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_open_house_slides",
+            "block_id": "p028_c0002",
+            "source_quote": "M16 to be renamed the M34A SBS"
+          },
+          {
+            "source_id": "201110_brt_34th_open_house_slides",
+            "block_id": "p028_c0002",
+            "source_quote": "Service levels and route will remain the same on both M34 SBS and M34A SBS"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "corridor_sibling",
+            "subject_id": "route_m34-sbs",
+            "object_id": "route_m34a-sbs",
+            "description": "M34 SBS and M34A SBS are sibling Select Bus Service routes sharing the 34th Street corridor; pre-payment introduced at all stops on both routes simultaneously in November 2011.",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_open_house_slides",
+                "block_id": "p028_c0002",
+                "source_quote": "Pre-payment will be introduced at all M34 and M34A stops"
+              },
+              {
+                "source_id": "201110_brt_34th_open_house_slides",
+                "block_id": "p028_c0002",
+                "source_quote": "Service levels and route will remain the same on both M34 SBS and M34A SBS"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-49-55-163Z_2111393-67665034_canonicalize_2026-06-10t22-56-13-398z-1976810-3e780c0a-ingest-201110-brt-34th-open-house-slides-route-identity"
+}

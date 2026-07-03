@@ -1,0 +1,80 @@
+{
+  "run_id": "2026-06-10T22-56-13-329Z_1976810-4a6d2e40_ingest_201106-jamaica-cb12-slides",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T01:37:03.252Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "nyc-dot-jamaica-cb12",
+        "local_observation_id": "entity_nyc_dot_jamaica_cb12_2011",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot matches the existing registry card entity_nyc-dot (New York City Department of Transportation, agency). The observation already resolves to this canonical identity; no different record is a better match.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p002_c0007",
+            "source_quote": "NEW YORK CITY DOT / NEW YORK CITY DOIT - The logo for the New York City Department of Infrastructure and Transportation"
+          }
+        ]
+      },
+      {
+        "decision_id": "nyct-jamaica-cb12",
+        "local_observation_id": "entity_nyct_jamaica_cb12_2011",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-nyct matches the existing registry card entity_mta-nyct (MTA New York City Transit, agency). The observation already resolves to this canonical identity; no different record is a better match.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p004_c0004",
+            "source_quote": "47 NYCT, MTA Bus and LI Bus routes – hub for services throughout SE Queens"
+          }
+        ]
+      },
+      {
+        "decision_id": "mta-bus-company-jamaica-cb12",
+        "local_observation_id": "entity_mta_bus_company_jamaica_cb12_2011",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-bus-company matches the existing registry card entity_mta-bus-company (MTA Bus Company, transit agency division). The observation already resolves to this canonical identity; no different record is a better match.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p004_c0004",
+            "source_quote": "47 NYCT, MTA Bus and LI Bus routes – hub for services throughout SE Queens"
+          }
+        ]
+      },
+      {
+        "decision_id": "queens-cb12",
+        "local_observation_id": "entity_queens_community_board_12_cb12_2011",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_queens-community-board-12 matches the existing registry card entity_queens-community-board-12 (Queens Community Board 12, community board). The observation already resolves to this canonical identity; no different record is a better match.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p001_c0001",
+            "source_quote": "Jamaica Bus Improvement Study Queens Community Board 12 Meeting"
+          }
+        ]
+      },
+      {
+        "decision_id": "jamaica-center-bid",
+        "local_observation_id": "entity_jamaica_center_bid_2011",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_jamaica-center-bid-2011 matches the existing registry card entity_jamaica-center-bid-2011 (Jamaica Center BID, organization). The observation already resolves to this canonical identity; no different record is a better match.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p008_c0003",
+            "source_quote": "May 2011 survey of Jamaica Ave merchants in coordination with the Jamaica Center BID"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-35-46-826Z_2111393-60a33183_canonicalize_2026-06-10t22-56-13-329z-1976810-4a6d2e40-ingest-201106-jamaica-cb12-slides-entity-identity"
+}

@@ -1,0 +1,54 @@
+{
+  "run_id": "2026-06-10T22-56-13-345Z_1976810-5bb38f51_ingest_201109-brt-hylan-introductory-info",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T01:38:30.107Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "dec_route_s78_hylan_sep2011_new",
+        "local_observation_id": "route_s78_hylan_sep2011",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id 'route_s78-hylan-2010', which is a canonical registry record with matching alias 'route_s78-hylan-sep2011'. Source confirms it is the S78 local bus on Hylan Boulevard; no different record is a closer identity match.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p004_c0006",
+            "source_quote": "16,000 trips/day on S78 and S79 local buses"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_route_s79_hylan_sep2011_new",
+        "local_observation_id": "route_s79_hylan_sep2011",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id 'route_s79-hylan-2010', which is a canonical registry record with matching alias 'route_s79-hylan-sep2011'. Source confirms it is the S79 local bus on Hylan Boulevard; no different record is a closer identity match.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p004_c0006",
+            "source_quote": "16,000 trips/day on S78 and S79 local buses"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_route_hylan_richmond_av_sbs_proposed_new",
+        "local_observation_id": "route_hylan_richmond_av_sbs_proposed",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id 'route_hylan-richmond-av-sbs-proposed', which is a canonical registry record sourced from the same document (201109_brt_hylan_introductory_info). Payload fields match: route_id 'Hylan Boulevard/Richmond Avenue', route_type 'Select Bus Service', borough 'Staten Island'. No different record is a closer identity match.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p002_c0002",
+            "source_quote": "Hylan Boulevard/ Richmond Avenue Select Bus Service - Proposed SBS Route"
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-37-50-100Z_2111393-ab50cb14_canonicalize_2026-06-10t22-56-13-345z-1976810-5bb38f51-ingest-201109-brt-hylan-introductory-info-route-identity"
+}

@@ -1,0 +1,69 @@
+{
+  "run_id": "2026-06-10T22-56-13-211Z_1976810-4d6654f7_ingest_2011-34th-sbs-comments-on-proposed-design",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T01:18:07.086Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "m15-sbs-self",
+        "local_observation_id": "route_m15_sbs_2011",
+        "decision": "new",
+        "rationale": "Observation's base_record_id route_m15-sbs already exists in the registry as a canonical record for M15 Select Bus Service. The observation payload (M15, SBS, Manhattan, First/Second Avenues) matches the registry card's identity. Per rule, when the closest match is the observation's own base_record_id, decision is 'new' — the observation already resolves to that canonical id.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p008_c0011",
+            "source_quote": "M15 SBS"
+          },
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p008_c0012",
+            "source_quote": "M15 SBS MetroCard fare collection machine or coin fare collection machine"
+          }
+        ]
+      },
+      {
+        "decision_id": "m16-mentioned-self",
+        "local_observation_id": "route_m16_2011",
+        "decision": "new",
+        "rationale": "Observation's base_record_id route_m16-mentioned exists in the registry as 'M16 Bus Route on 34th Street'. The observation describes the existing M16 local bus route on 34th Street discussed in the 2011 SBS design comments. Registry record and observation refer to the same real-world route.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p005_c0012",
+            "source_quote": "M16 routes"
+          },
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p006_c0009",
+            "source_quote": "M16 routes"
+          }
+        ]
+      },
+      {
+        "decision_id": "m34-local-self",
+        "local_observation_id": "route_m34_local_2011",
+        "decision": "new",
+        "rationale": "Observation's base_record_id route_m34-local-2011 exists in the registry as 'M34 Bus Route'. The observation describes the existing M34 local bus route on 34th Street discussed in the 2011 SBS design comments. Registry record and observation refer to the same real-world route.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p005_c0012",
+            "source_quote": "M34 routes"
+          },
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p006_c0009",
+            "source_quote": "M34 routes"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-17-12-642Z_2111393-65f48787_canonicalize_2026-06-10t22-56-13-211z-1976810-4d6654f7-ingest-2011-34th-sbs-comments-on-proposed-design-route-identity"
+}

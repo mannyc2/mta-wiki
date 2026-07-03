@@ -1,0 +1,34 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:35:16.338Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_1b426c94c5.md",
+  "cluster_id": "entity_cluster_1b426c94c5",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_1b426c94c5",
+    "kind": "entity",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "entity_brooklyn-community-board-12",
+          "entity_community-board-12-brooklyn"
+        ],
+        "reason": "Contradiction test (test 1): entity_name differs: the first record is specifically 'Brooklyn Community Board 12 Transportation Committee' (a committee), while the second is 'Community Board 12, Brooklyn' (the full board). A committee is a subsidiary/sub-unit of the board, so by the 'Authority vs subsidiary never merge' rule, they are distinct entities. Relate with part_of_agency, not merge."
+      }
+    ],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "The two records refer to different organizational levels: one is the full Community Board 12 in Brooklyn, the other is its Transportation Committee. The Identity Merge Canon explicitly states that parent vs. subsidiary (or committee) never merge. The naming and evidence samples confirm this distinction."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-35-03-911Z_1282984-815a6fde_identity-review-run_entity-cluster-1b426c94c5",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-35-03-911Z_2026-06-23T14-35-03-911Z_1282984-815a6fde_identity-review-run_entity-cluster-1b426c94c5.jsonl"
+}

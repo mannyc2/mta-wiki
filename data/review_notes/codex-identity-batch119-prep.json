@@ -1,0 +1,442 @@
+{
+  "note_id": "codex-identity-batch119-prep",
+  "batch_id": "identity119",
+  "created_at": "2026-06-23T05:17:59Z",
+  "author": "codex",
+  "scope": {
+    "description": "Codex-only deterministic identity cleanup prep for global project records only.",
+    "included_global_kinds": [
+      "project"
+    ],
+    "excluded_global_kinds": [
+      "corridor",
+      "entity",
+      "event",
+      "metric_claim",
+      "relation",
+      "route",
+      "source",
+      "source_gap",
+      "table",
+      "treatment_component"
+    ],
+    "selection_policy": "Only high-confidence aliases for the same durable project were queued. Candidates were excluded when they looked like program-vs-project, phase-vs-whole-project, option/award/contract-modification, station-specific, or source-time status conflicts.",
+    "exclusions_checked": {
+      "identity_overrides_merges_project_aliases": 151,
+      "visible_prior_identity_prep_project_aliases": 78,
+      "highest_visible_identity_prep_batch": "identity117",
+      "identity118_visible": false,
+      "project_do_not_merge_guards_reviewed": [
+        "project_better-buses-restart-2021 != project_jamaica-busway"
+      ]
+    }
+  },
+  "batch": "identity119",
+  "global_kind": "project",
+  "prepared_count": 8,
+  "aliases": [
+    {
+      "global_kind": "project",
+      "canonical_id": "project_rail-replacement-atlantic-branch-133331",
+      "target_id": "project_rail-replacement-atlantic-branch-133331",
+      "alias_id": "project_meeting-doc-115156-rail-replacement-atlantic-branch",
+      "canonical_name": "Rail Replacement and Maintenance on the Atlantic Branch",
+      "alias_name": "Rail Replacement and Maintenance on the Atlantic Branch",
+      "reason": "Same durable LIRR Atlantic Branch rail replacement and maintenance project. The target and alias share the exact project name and compatible rail replacement/maintenance project type; the alias's September 2023 timetable wording is a source-time support context, not a different project.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_kind": "project",
+          "project_name": "Rail Replacement and Maintenance on the Atlantic Branch",
+          "project_type": "Rail Replacement and Maintenance",
+          "source_ids": [
+            "meeting_doc_133331"
+          ],
+          "evidence_refs": [
+            "meeting_doc_133331#p001_c0005"
+          ],
+          "local_observation_ids": [
+            "project_rail_replacement_atlantic_branch_133331"
+          ]
+        },
+        "alias": {
+          "record_kind": "project",
+          "project_name": "Rail Replacement and Maintenance on the Atlantic Branch",
+          "project_type": "rail replacement",
+          "source_ids": [
+            "meeting_doc_115156"
+          ],
+          "evidence_refs": [
+            "meeting_doc_115156#p001_c0006"
+          ],
+          "local_observation_ids": [
+            "project_meeting_doc_115156_rail_replacement_atlantic_branch"
+          ]
+        },
+        "source_block_summary": "Both cited LIRR timetable blocks list the same Atlantic Branch rail replacement and maintenance work among supported projects."
+      },
+      "guard_notes": "Project merge guard satisfied: exact durable project name, same railroad branch, compatible maintenance scope. Preserves timetable/date differences as source-time context."
+    },
+    {
+      "global_kind": "project",
+      "canonical_id": "project_rail-replacement-atlantic-branch-133331",
+      "target_id": "project_rail-replacement-atlantic-branch-133331",
+      "alias_id": "project_meeting-doc-138226-rail-replacement-atlantic",
+      "canonical_name": "Rail Replacement and Maintenance on the Atlantic Branch",
+      "alias_name": "Rail Replacement and Maintenance on the Atlantic Branch",
+      "reason": "Same durable LIRR Atlantic Branch rail replacement and maintenance project. The target and alias share the exact project name and compatible maintenance/rail replacement scope; no phase, station, award, or program-child distinction is present.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_kind": "project",
+          "project_name": "Rail Replacement and Maintenance on the Atlantic Branch",
+          "project_type": "Rail Replacement and Maintenance",
+          "source_ids": [
+            "meeting_doc_133331"
+          ],
+          "evidence_refs": [
+            "meeting_doc_133331#p001_c0005"
+          ],
+          "local_observation_ids": [
+            "project_rail_replacement_atlantic_branch_133331"
+          ]
+        },
+        "alias": {
+          "record_kind": "project",
+          "project_name": "Rail Replacement and Maintenance on the Atlantic Branch",
+          "project_type": "maintenance",
+          "source_ids": [
+            "meeting_doc_138226"
+          ],
+          "evidence_refs": [
+            "meeting_doc_138226#p001_c0006"
+          ],
+          "local_observation_ids": [
+            "project_meeting_doc_138226_rail_replacement_atlantic"
+          ]
+        },
+        "source_block_summary": "Both cited LIRR timetable blocks identify the same named Atlantic Branch maintenance project."
+      },
+      "guard_notes": "Project merge guard satisfied: exact durable project name and same branch. No conflicting source-time status or scope expansion was found."
+    },
+    {
+      "global_kind": "project",
+      "canonical_id": "project_rail-replacement-atlantic-branch-133331",
+      "target_id": "project_rail-replacement-atlantic-branch-133331",
+      "alias_id": "project_meeting-doc-164866-rail-replacement-atlantic-branch",
+      "canonical_name": "Rail Replacement and Maintenance on the Atlantic Branch",
+      "alias_name": "Rail Replacement and Maintenance on the Atlantic Branch",
+      "reason": "Same durable LIRR Atlantic Branch rail replacement and maintenance project. The alias has the exact project name, compatible rail replacement type, and planned document-time status that fits a later source-time update for the same work.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_kind": "project",
+          "project_name": "Rail Replacement and Maintenance on the Atlantic Branch",
+          "project_type": "Rail Replacement and Maintenance",
+          "source_ids": [
+            "meeting_doc_133331"
+          ],
+          "evidence_refs": [
+            "meeting_doc_133331#p001_c0005"
+          ],
+          "local_observation_ids": [
+            "project_rail_replacement_atlantic_branch_133331"
+          ]
+        },
+        "alias": {
+          "record_kind": "project",
+          "project_name": "Rail Replacement and Maintenance on the Atlantic Branch",
+          "project_type": "rail replacement",
+          "status": "planned",
+          "document_time_status": "planned",
+          "source_ids": [
+            "meeting_doc_164866"
+          ],
+          "evidence_refs": [
+            "meeting_doc_164866#p001_c0006"
+          ],
+          "local_observation_ids": [
+            "project_meeting_doc_164866_rail_replacement_atlantic_branch"
+          ]
+        },
+        "source_block_summary": "Both cited LIRR timetable blocks list the same named Atlantic Branch rail replacement and maintenance work."
+      },
+      "guard_notes": "Project merge guard satisfied: exact durable project name and same railroad branch. Planned status is source-time context, not a separate phase identity."
+    },
+    {
+      "global_kind": "project",
+      "canonical_id": "project_rail-replacement-atlantic-branch-133331",
+      "target_id": "project_rail-replacement-atlantic-branch-133331",
+      "alias_id": "project_meeting-doc-170846-atlantic-branch-rail-replacement",
+      "canonical_name": "Rail Replacement and Maintenance on the Atlantic Branch",
+      "alias_name": "Rail Replacement and Maintenance on the Atlantic Branch",
+      "reason": "Same durable LIRR Atlantic Branch rail replacement and maintenance project. The alias repeats the exact project name and describes support during a May 2025 timetable period, which is compatible source-time scheduling context for the same named work.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_kind": "project",
+          "project_name": "Rail Replacement and Maintenance on the Atlantic Branch",
+          "project_type": "Rail Replacement and Maintenance",
+          "source_ids": [
+            "meeting_doc_133331"
+          ],
+          "evidence_refs": [
+            "meeting_doc_133331#p001_c0005"
+          ],
+          "local_observation_ids": [
+            "project_rail_replacement_atlantic_branch_133331"
+          ]
+        },
+        "alias": {
+          "record_kind": "project",
+          "project_name": "Rail Replacement and Maintenance on the Atlantic Branch",
+          "project_type": "rail replacement and maintenance",
+          "status": "supported during May 2025 timetable",
+          "document_time_status": "other",
+          "source_ids": [
+            "meeting_doc_170846"
+          ],
+          "evidence_refs": [
+            "meeting_doc_170846#p001_c0004"
+          ],
+          "local_observation_ids": [
+            "project_meeting_doc_170846_atlantic_branch_rail_replacement"
+          ]
+        },
+        "source_block_summary": "Both cited timetable blocks name the same Atlantic Branch rail replacement and maintenance work among supported projects."
+      },
+      "guard_notes": "Project merge guard satisfied: exact durable project name and same branch. The May 2025 timetable support phrase is not treated as a distinct project."
+    },
+    {
+      "global_kind": "project",
+      "canonical_id": "project_rail-replacement-atlantic-branch-133331",
+      "target_id": "project_rail-replacement-atlantic-branch-133331",
+      "alias_id": "project_rail-replacement-maintenance-atlantic-branch-124266",
+      "canonical_name": "Rail Replacement and Maintenance on the Atlantic Branch",
+      "alias_name": "Rail Replacement and Maintenance on the Atlantic Branch",
+      "reason": "Same durable LIRR Atlantic Branch rail replacement and maintenance project. The target and alias share the exact project name, Atlantic Branch scope, compatible maintenance type, and no phase or contract-modification distinction.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_kind": "project",
+          "project_name": "Rail Replacement and Maintenance on the Atlantic Branch",
+          "project_type": "Rail Replacement and Maintenance",
+          "source_ids": [
+            "meeting_doc_133331"
+          ],
+          "evidence_refs": [
+            "meeting_doc_133331#p001_c0005"
+          ],
+          "local_observation_ids": [
+            "project_rail_replacement_atlantic_branch_133331"
+          ]
+        },
+        "alias": {
+          "record_kind": "project",
+          "project_name": "Rail Replacement and Maintenance on the Atlantic Branch",
+          "project_type": "maintenance",
+          "status": "planned",
+          "document_time_status": "planned",
+          "source_ids": [
+            "meeting_doc_124266"
+          ],
+          "evidence_refs": [
+            "meeting_doc_124266#p001_c0005"
+          ],
+          "local_observation_ids": [
+            "project_rail_replacement_maintenance_atlantic_branch_124266"
+          ]
+        },
+        "source_block_summary": "Both cited LIRR timetable blocks include the same named Atlantic Branch rail replacement and maintenance project."
+      },
+      "guard_notes": "Project merge guard satisfied: exact durable project name and same branch. Planned status is source-time context."
+    },
+    {
+      "global_kind": "project",
+      "canonical_id": "project_hc07-rehabilitation-hct-ventilation-systems",
+      "target_id": "project_hc07-rehabilitation-hct-ventilation-systems",
+      "alias_id": "project_39651-hc07-ventilation-rehab",
+      "canonical_name": "HC-07 Rehabilitation of HCT Ventilation Systems",
+      "alias_name": "Rehabilitation of HCT Ventilation Systems",
+      "reason": "Same MTA Bridges and Tunnels capital project. The target and alias cite status-table rows for project ID HC-07 / ACEP D704HC07 and the same HCT ventilation systems rehabilitation; differing physical-completion percentages are document-time progress updates.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_kind": "project",
+          "project_name": "HC-07 Rehabilitation of HCT Ventilation Systems",
+          "project_type": "capital project",
+          "status": "in progress",
+          "document_time_status": "other",
+          "agency": "MTA Bridges and Tunnels",
+          "source_ids": [
+            "meeting_doc_42391"
+          ],
+          "evidence_refs": [
+            "meeting_doc_42391#p049_c0003"
+          ],
+          "local_observation_ids": [
+            "project_hc07_rehabilitation_hct_ventilation_systems"
+          ]
+        },
+        "alias": {
+          "record_kind": "project",
+          "project_name": "Rehabilitation of HCT Ventilation Systems",
+          "project_type": "capital project",
+          "status": "in progress",
+          "document_time_status": "other",
+          "description": "Rehabilitation of Hugh L. Carey Tunnel ventilation systems",
+          "source_ids": [
+            "meeting_doc_39651"
+          ],
+          "evidence_refs": [
+            "meeting_doc_39651#p051_c0003"
+          ],
+          "local_observation_ids": [
+            "project_39651_hc07_ventilation_rehab"
+          ]
+        },
+        "source_block_summary": "Both cited status-table rows use the same HC-07 / D704HC07 identifiers for HCT ventilation systems rehabilitation."
+      },
+      "guard_notes": "Project merge guard satisfied: exact project code and same Hugh L. Carey Tunnel ventilation scope. Completion percentage differences are progress snapshots, not separate projects."
+    },
+    {
+      "global_kind": "project",
+      "canonical_id": "project_hc07-rehabilitation-hct-ventilation-systems",
+      "target_id": "project_hc07-rehabilitation-hct-ventilation-systems",
+      "alias_id": "project_hc07-hct-ventilation-rehab",
+      "canonical_name": "HC-07 Rehabilitation of HCT Ventilation Systems",
+      "alias_name": "HC-07 Rehabilitation of HCT Ventilation Systems",
+      "reason": "Same MTA Bridges and Tunnels capital project. The target and alias share the HC-07 code, HCT ventilation systems rehabilitation name, budget context, and in-progress source-time status; the later physical-completion value is a progress update.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_kind": "project",
+          "project_name": "HC-07 Rehabilitation of HCT Ventilation Systems",
+          "project_type": "capital project",
+          "status": "in progress",
+          "document_time_status": "other",
+          "agency": "MTA Bridges and Tunnels",
+          "source_ids": [
+            "meeting_doc_42391"
+          ],
+          "evidence_refs": [
+            "meeting_doc_42391#p049_c0003"
+          ],
+          "local_observation_ids": [
+            "project_hc07_rehabilitation_hct_ventilation_systems"
+          ]
+        },
+        "alias": {
+          "record_kind": "project",
+          "project_name": "Rehabilitation of HCT Ventilation Systems",
+          "project_type": "capital project",
+          "status": "in progress",
+          "document_time_status": "other",
+          "description": "HC-07 Rehabilitation of Hugh L. Carey Tunnel ventilation systems. Budget $88.0 million. 88% physically complete.",
+          "source_ids": [
+            "meeting_doc_52711"
+          ],
+          "evidence_refs": [
+            "meeting_doc_52711#p085_c0003"
+          ],
+          "local_observation_ids": [
+            "project_hc07_hct_ventilation_rehab"
+          ]
+        },
+        "source_block_summary": "Both cited status-table rows identify HC-07 / D704HC07 as the HCT ventilation systems rehabilitation project."
+      },
+      "guard_notes": "Project merge guard satisfied: same project code, same tunnel-system scope, same capital-project family. Progress percentage differences are source-time status updates."
+    },
+    {
+      "global_kind": "project",
+      "canonical_id": "project_hc07-rehabilitation-hct-ventilation-systems",
+      "target_id": "project_hc07-rehabilitation-hct-ventilation-systems",
+      "alias_id": "project_hct-ventilation-rehab",
+      "canonical_name": "HC-07 Rehabilitation of HCT Ventilation Systems",
+      "alias_name": "HC-07 Rehabilitation of HCT Ventilation Systems",
+      "reason": "Same MTA Bridges and Tunnels capital project. The target and alias cite the same HC-07 / D704HC07 HCT ventilation systems rehabilitation table row; the alias's lower completion percentage and October 2021 forecast are source-time progress data, not a separate durable project.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_kind": "project",
+          "project_name": "HC-07 Rehabilitation of HCT Ventilation Systems",
+          "project_type": "capital project",
+          "status": "in progress",
+          "document_time_status": "other",
+          "agency": "MTA Bridges and Tunnels",
+          "source_ids": [
+            "meeting_doc_42391"
+          ],
+          "evidence_refs": [
+            "meeting_doc_42391#p049_c0003"
+          ],
+          "local_observation_ids": [
+            "project_hc07_rehabilitation_hct_ventilation_systems"
+          ]
+        },
+        "alias": {
+          "record_kind": "project",
+          "project_name": "Rehabilitation of HCT Ventilation Systems",
+          "project_type": "Capital project completion",
+          "status": "74% complete, completing October 2021",
+          "document_time_status": "other",
+          "source_ids": [
+            "meeting_doc_33241"
+          ],
+          "evidence_refs": [
+            "meeting_doc_33241#p051_c0003"
+          ],
+          "local_observation_ids": [
+            "project_hct_ventilation_rehab"
+          ]
+        },
+        "source_block_summary": "Both cited status-table rows identify the same HC-07 / D704HC07 HCT ventilation systems rehabilitation project."
+      },
+      "guard_notes": "Project merge guard satisfied: same project code and same HCT ventilation scope. Treat completion percentage and forecast differences as source-time progress snapshots."
+    }
+  ],
+  "guard_summary": {
+    "project_only": true,
+    "confidence_floor": "high",
+    "alias_shape_reminder": "data/identity-overrides/merges.json uses alias_id -> target_id entries; each proposal above names both canonical_id/target_id and alias_id explicitly.",
+    "positive_guards": [
+      "Exact durable project name match for Atlantic Branch rail replacement and maintenance proposals.",
+      "Exact HC-07 / D704HC07 project-code match for HCT ventilation rehabilitation proposals.",
+      "Compatible project types and source-time statuses only."
+    ],
+    "negative_guards": [
+      "No program-vs-project pairs included.",
+      "No phase-vs-whole-project pairs included.",
+      "No option, award, contract modification, or station-specific false friends included.",
+      "No alias already present in data/identity-overrides/merges.json or visible prior identity prep batches included."
+    ]
+  },
+  "command_evidence": [
+    "pwd && rg --files data/review_notes data/identity-overrides data/canonical LOG.md | sort",
+    "sed -n '1,180p' LOG.md",
+    "rg --files data/review_notes | rg 'identity-batch(11[0-9]|0[4-9][0-9])-prep|identity118|batch118|identity119'",
+    "jq -r '.aliases.project // {} | to_entries[] | [.key,.value] | @tsv' data/identity-overrides/merges.json | wc -l",
+    "jq -r '(.aliases // .proposed_aliases // [])[]? | select((.global_kind? // .kind? // \"\") == \"project\") | .alias_id // .alias // empty' data/review_notes/codex-identity-batch*.json | sort -u | wc -l",
+    "jq 'type, .' data/identity-overrides/do-not-merge.json",
+    "node read-only scan of data/canonical/projects.jsonl grouped by normalized project fields with current/prior alias exclusions",
+    "node read-only inspection of selected project records in data/canonical/projects.jsonl",
+    "node read-only inspection of selected evidence blocks under raw/sources/*/blocks.jsonl",
+    "node read-only check that selected alias IDs are absent from data/identity-overrides/merges.json and visible prior identity prep artifacts",
+    "date -u +%Y-%m-%dT%H:%M:%SZ"
+  ],
+  "forbidden_commands_not_run": [
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema-propose",
+    "ontology-normalize-run",
+    "ingest/write with --profile/provider",
+    "materialize",
+    "validate",
+    "export-jsonl",
+    "DB publish/repair",
+    "provider-backed or external LLM commands"
+  ]
+}

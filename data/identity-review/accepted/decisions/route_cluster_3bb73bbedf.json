@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "route_cluster_3bb73bbedf",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_3bb73bbedf.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_3bb73bbedf.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 4,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "route_m15-limited-2010-06-09",
+        "route_m15-local-2010-09-14"
+      ],
+      "reason": "Per-route rule: different service variants (limited_stop vs local) never merge. Strong identity field: service_variant."
+    },
+    {
+      "record_ids": [
+        "route_m15-limited-2010-06-09",
+        "route_m15-sbs"
+      ],
+      "reason": "Per-route rule: different service variants (limited_stop vs sbs) never merge. Strong identity field: service_variant."
+    },
+    {
+      "record_ids": [
+        "route_m15-local-2010-09-14",
+        "route_m15-sbs"
+      ],
+      "reason": "Per-route rule: different service variants (local vs sbs) never merge. Strong identity field: service_variant."
+    },
+    {
+      "record_ids": [
+        "route_m15-local-limited",
+        "route_m15-sbs"
+      ],
+      "reason": "Per-route rule: route_m15-local-limited bundles local/limited and cannot be merged into the SBS variant (different service variant). Strong identity fields: service_variant differing (limited_stop vs sbs) and bundling nature."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "All cross-variant pairs have different service_variant values or represent a multi-variant bundle, which per the route merge canon never merge. The limited and local records are clearly distinct variants. The bundle record route_m15-local-limited is ambiguous in its variant representation but cannot be merged with any single variant record. No merge groups are valid. The do_not_merge decisions are forced by test 1 (contradiction in strong identity field service_variant) and the per-kind rule about multi-variant bundles. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

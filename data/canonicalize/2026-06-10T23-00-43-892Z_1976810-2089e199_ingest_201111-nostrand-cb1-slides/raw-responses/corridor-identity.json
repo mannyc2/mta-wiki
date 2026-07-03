@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-06-10T23-00-43-892Z_1976810-2089e199_ingest_201111-nostrand-cb1-slides",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T02:12:36.683Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "corridor_nostrand_rogers_ave_201111",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id corridor_nostrand-avenue. Source 201111_nostrand_cb1_slides is listed as a source_id for this record, and the limits (Williamsburg Bridge to Sheepshead Bay), boroughs (Brooklyn, Manhattan), and street names (Nostrand Ave/Rogers Ave) all match the existing registry record corridor_nostrand-avenue.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p002_c0001",
+            "source_quote": "9.3 miles from Williamsburg Bridge to Sheepshead Bay"
+          },
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p002_c0002",
+            "source_quote": "9.3 miles from Williamsburg Bridge to Sheepshead Bay"
+          },
+          {
+            "source_id": "201111_nostrand_cb1_slides",
+            "block_id": "p002_c0007",
+            "source_quote": "9.3 miles from Williamsburg Bridge to Sheepshead Bay"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-11-52-714Z_2111393-a32d9eab_canonicalize_2026-06-10t23-00-43-892z-1976810-2089e199-ingest-201111-nostrand-cb1-slides-corridor-identity"
+}

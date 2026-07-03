@@ -1,0 +1,499 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-208026"
+record_kind: "source"
+display_name: "Joint Metro-North and LIRR Committee Key Performance Metrics - May 2026"
+source_id: "meeting_doc_208026"
+source_ids:
+  - "meeting_doc_208026"
+local_observation_id: "source_meeting_doc_208026"
+local_observation_ids:
+  - "source_meeting_doc_208026"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T22:47:14.158Z"
+submission_ids:
+  - "sub_21c8dd259a08545d"
+payload:
+  authority_tier: "board_material"
+  content_type: "performance metrics document"
+  date_text: "May 2026"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2026-05"
+    precision: "month"
+    raw_text: "May 2026"
+  description: "This performance metrics document was prepared for the May 2026 meeting of the Joint Long Island Rail Road & Metro-North Railroad Committees."
+  published_date_normalized: "2026-05"
+  published_date_precision: "month"
+  publisher: "MTA"
+  title: "LONG ISLAND RAIL ROAD & METRO-NORTH RAILROAD KEY PERFORMANCE METRICS"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_208026#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_208026"
+    source_path: "raw/sources/meeting_doc_208026/blocks.jsonl"
+    text_sha256: "sha256:ad1fb4952e04a2206493e6b412cb6b618de7742482a0b5e53ce10ea580487a57"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_208026#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_208026"
+    source_path: "raw/sources/meeting_doc_208026/blocks.jsonl"
+    text_sha256: "sha256:4f7d169525e16819fdde8b0a2a48db134b369fa7ba8e6abc115f221262b94419"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0001"
+    evidence_id: "meeting_doc_208026#p003_c0001"
+    page_number: 3
+    source_id: "meeting_doc_208026"
+    source_path: "raw/sources/meeting_doc_208026/blocks.jsonl"
+    text_sha256: "sha256:b3a1d0c4be557aeb6e63e771b7541017918e42e71106c3965af777d69959bfc2"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0002"
+    evidence_id: "meeting_doc_208026#p003_c0002"
+    page_number: 3
+    source_id: "meeting_doc_208026"
+    source_path: "raw/sources/meeting_doc_208026/blocks.jsonl"
+    text_sha256: "sha256:1ab45de0cd8a176e91fc44edf7566bcaa17df64cce6ca7e5984904b012389231"
+    text_source: "raw_text"
+---
+
+# Joint Metro-North and LIRR Committee
+
+source_id: meeting_doc_208026
+citation: cite block ids exactly as shown in square brackets
+document: 303 block(s)
+
+## Page 1
+
+### [p001_c0001] LONG ISLAND RAIL ROAD & METRO-NORTH RAILROAD KEY PERFORMANCE METRICS
+[p001_c0002] May 2026
+[p001_c0003] mta.info
+> [p001_c0004] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a white circle.
+
+## Page 2
+
+### [p002_c0001] SELECT THE TOP AREAS THAT WOULD BENEFIT FROM IMPROVEMENT AT JAMAICA STATION
+[p002_c0002] SELECT UP TO 3
+[p002_c0003] Announcements
+[p002_c0004] Signage
+[p002_c0005] Retail & Concessions
+[p002_c0006] Crowding
+[p002_c0007] Ease of Transfer
+[p002_c0008] Escalator Elevator
+[p002_c0009] HOW TO PARTICIPATE: SCAN THE QR CODE OR VISIT WWW.JFKAIRPORT.COM/STATION
+[p002_c0010] The MTA, together with the Port Authority of New York and New Jersey, held an in-person outreach effort at the Jamaica LIRR Station to connect directly with customers about the upcoming station redesign. MTA staff set up a table in the station alongside Port Authority representatives and local elected officials, giving riders a chance to ask questions, share feedback, and speak directly with the project team.
+
+## Page 3
+
+[p003_c0001] This performance metrics document was prepared for the May 2026 meeting of the Joint Long Island Rail Road & Metro-North Railroad Committees.
+[p003_c0002] 2 Broadway • New York, NY 10004 May 20, 2026
+### [p003_c0003] Table of Contents
+### [p003_c0004] Long Island Rail Road
+[p003_c0005] Message from the President ..... 6 Ridership ..... 10 Financial Results ..... 12 Service Performance ..... 13 Major Projects ..... 14 Customers and Communities ..... 15 Safety and Security ..... 16
+### [p003_c0006] Metro-North Railroad
+[p003_c0007] Message from the President ..... 22 Ridership ..... 24 Financial Results ..... 26 Service Performance ..... 27 Major Projects ..... 28 Customers and Communities ..... 29 Safety and Security ..... 30
+[p003_c0008] Visit https://new.mta.info/transparency/board-and-committee-meetings or scan the QR code for Board action staff summaries, administrative items, and information items.
+[p003_c0009] Visit metrics.mta.info or scan the QR code to access a comprehensive dashboard of Long Island Rail Road and Metro-North Railroad metrics.
+
+## Page 4
+
+> [p004_c0001] A photograph of a modern train station platform. In the foreground, two sets of train tracks run horizontally. A yellow and white pedestrian bridge with large, colorful stained-glass windows spans across the top of the frame. Below the bridge, a yellow station building with a gabled roof and arched entrance is visible. A man in a green shirt and dark pants is walking on the platform. Another man in a white shirt is standing near a covered area on the left. The sky is blue with some clouds.
+
+## Page 5
+
+### [p005_c0001] LONG ISLAND RAIL ROAD
+> [p005_c0002] A photograph of a Long Island Rail Road station building. The building is constructed with red brick and features a prominent external staircase with a dark metal railing. A person is walking up the stairs. In the foreground, there is a covered walkway with a yellow and red striped safety strip. A sign indicates directions to Platform B and an elevator. A trash can is visible under the walkway. The sky is blue with some clouds.
+### [p005_c0003] LONG ISLAND RAIL ROAD
+[p005_c0004] Overpass to Platform B - Pointe East Elevator to Overpass & Platform B
+
+## Page 6
+
+### [p006_c0001] Long Island Rail Road MESSAGE FROM THE PRESIDENT
+> [p006_c0002] A professional headshot of Rob Free, President of Long Island Rail Road. He is a middle-aged man with short, light-colored hair, smiling warmly at the camera. He is dressed in a dark navy blue suit jacket over a white dress shirt and a solid red necktie. The background is a soft, out-of-focus blue.
+[p006_c0003] _Rob Free President, Long Island Rail Road_
+### [p006_c0004] It is Great to Be Back
+[p006_c0005] With a tentative deal reached with the five labor unions on Monday evening, May 18, the Long Island Rail Road is back to doing what it does best – moving our region safely and efficiently following a strike we never wanted.
+[p006_c0006] I want to give a huge shout-out to our employees who stepped up to help our customers prepare for, and navigate, this difficult situation – and then to quickly ramp-up and reestablish our service once the strike ended. Given the many logistical complexities of our service, that was no easy task.
+[p006_c0007] We intend to issue prorated refunds to May monthly ticket holders for any business day that service was suspended due to the strike, pending board approval.
+[p006_c0008] I'd also like to thank Governor Kathy Hochul and MTA Chairman & CEO Janno Lieber for their leadership and dedication to reaching a fair deal that also protects the taxpayers and our riders - and most especially our customers for their patience and flexibility throughout.
+[p006_c0009] We love our customers as we love our employees, so let's make this a summer to remember on Long Island and the metropolitan region now that this ordeal is finally behind us.
+### [p006_c0010] On Ridership and Performance
+[p006_c0011] April ridership continued its upward trend and is sitting up nicely for the traditional summer travel season. April total ridership was 7.2 million customers, up 6.2% compared to April 2025 and representing 93.4% of April 2019
+- [p006_c0012] • Commutation ridership was up 7.3% • Monthly ticket ridership increased 4.6% over April 2025
+[p006_c0013] Total OTP for April was 95.8% - nearly the same as March – and YTD we've cracked the 95% mark at 95.1%.
+> [p006_c0014] The official logo of the Metropolitan Transportation Authority (MTA). It consists of a dark blue circle with the letters 'MTA' in a bold, white, sans-serif font.
+[p006_c0015] _| 6 |_
+
+## Page 7
+
+### [p007_c0001] Safety
+[p007_c0002] For the 12-month period ending March 2026, we had a 14.0% decrease in the customer injury rate (per 1 million customers) over March 2025 - and our employee injury rate (per 200,000 working hours) decreased 7.1% compared to the prior 12 months.
+### [p007_c0003] Summer Service (and The U.S. Open) Returns
+[p007_c0004] With our latest timetable change of May 11, we are expanding service to the East End to accommodate the usual uptick in ridership during the busy summer season, including additional weekday options to Montauk.
+[p007_c0005] We are also getting ready for this year's U.S. Open at Shinnecock Hills in Southampton, taking place the week of June 15-21. Preparations are being made as we work closely with the USGA. And to support the additional ridership, we'll be providing extra train service to and from a temporary station being built just south of Shinnecock Hills Country Club.
+[p007_c0006] We anticipate that tens of thousands of golf fans from around the world will utilize our service.
+### [p007_c0007] Kew Gardens Ready for its Close-up
+[p007_c0008] If you traveled from Kew Gardens lately, you've no doubt noticed the incredible transformation of our station building and plaza - the latest success of our Station Spruce Up program.
+[p007_c0009] Our in-house team demonstrated what master craftspeople they truly are. The entire waiting room was renovated, including restoration of the original ticket windows and the modernized, now ADA-compliant restrooms. There was also extensive exterior work conducted to create a classic and stylish look.
+[p007_c0010] Thank you to the extremely talented team at the LIRR for performing magnificent work, as you always do.
+[p007_c0011] 14%
+[p007_c0012] reduction in customer injuries (per 1M customers) for the 12-month period ending March 2026
+[p007_c0013] 95.8%
+[p007_c0014] total LIRR OTP for April
+[p007_c0015] 7.2M
+[p007_c0016] customers traveled on the LIRR in April, which represents 93.4% of April 2019
+[p007_c0017] _| 7 |_
+
+## Page 8
+
+[p008_c0001] DO NOT DISABLING WHEN FLASHING
+[p008_c0002] EXIT
+[p008_c0003] WARNING Watch the Gap
+[p008_c0004] Lo Ra
+[p008_c0005] WATCH YOUR STEP
+[p008_c0006] WATCH THE GAP
+
+## Page 9
+
+[p009_c0001] ng Island il Road
+
+## Page 10
+
+### [p010_c0001] Long Island Rail Road RIDERSHIP
+### [p010_c0002] Monthly Ridership
+[p010_c0003] Estimated number of monthly trips taken, per million trips. Ridership is based on ticket sales data.
+> [p010_c0004] Year Month Ridership (in millions) 2023 Jan 5.0 2023 Feb 5.6 2023 Mar 5.7 2023 Apr 5.5 2023 May 5.8 2023 Jun 5.6 2023 Jul 6.0 2023 Aug 5.8 2023 Sep 5.8 2023 Oct 5.5 2023 Nov 5.5 2023 Dec 5.5 2024 Jan 5.5 2024 Feb 5.8 2024 Mar 6.0 2024 Apr 6.5 2024 May 6.5 2024 Jun 6.5 2024 Jul 6.5 2024 Aug 6.5 2024 Sep 6.8 2024 Oct 7.2 2024 Nov 6.5 2024 Dec 6.5 2025 Jan 5.5 2025 Feb 6.5 2025 Mar 6.8 2025 Apr 7.0 2025 May 7.0 2025 Jun 7.0 2025 Jul 7.2 2025 Aug 7.2 2025 Sep 7.3 2025 Oct 7.3 2025 Nov 6.5 2025 Dec 7.2 2026 Jan 6.0 2026 Feb 5.5 2026 Mar 7.2 2026 Apr 7.2
+### [p010_c0005] Data Review
+[p010_c0006] LIRR ridership continued to grow when compared to the same month of the prior year. April 2026 ridership with 7.2 million customers increased 6.2% compared to April 2025, representing 93.4% of April 2019. Commutation ridership with 2.9 million customers increased 7.3% over 2025, boosted by ticket switching to monthly and weekly tickets after the retirement of 10-trip tickets in January.
+[p010_c0007] Non-Commutation ridership with 4.3 million customers increased 5.4% above 2025, rebounding from the lower levels caused by the harsh winter. Non-Commutation exceeded pre-pandemic levels, reaching 131.4% of 2019 ridership. Year-to-date ridership with 26.1 million customers is 5.2% above 2025, representing 90.3% of the ridership compared to the same period in 2019.
+[p010_c0008] The average weekday ridership in April 2026 increased 0.9% compared to March 2026, with Thursday April 23 the 6th highest ridership since the start of the pandemic with 299,239 customers. The average weekend ridership increased 5.3%, above March with Saturdays increasing 5.6% and Sundays increasing 2.1% compared to last month, attributed, possibly, to the spring holidays in April.
+### [p010_c0009] Moving Forward
+[p010_c0010] LIRR customers continue to take advantage of the GCM service. In April 2026, GCM ridership was 1,745,376 passengers (based on load weigh data). GCM accounted for 41% of all AM Peak travel to Manhattan, while 59% used Penn Station. Looking ahead, the LIRR ridership growth is expected to continue as extra summer service will start on Memorial Day weekend and leisure ridership to popular summer attractions on Long Island, coupled with USGA's 2026 US Open Championship at Shinnecock Hills will bring additional ridership.
+[p010_c0011] _| 10 |_
+
+## Page 11
+
+### [p011_c0001] FINANCIAL RESULTS
+### [p011_c0002] 2026 Revenues & Expenses, April Year-to-Date
+[p011_c0003] $ in millions
+[p011_c0004]
+
+```text
+Budget Actual Variance Total Non-Reimbursable Revenues $229.2 $239.7 $10.5 Farebox Revenues $214.0 $222.0 $8.0 Other Revenues $15.3 $17.8 $2.5 Total Non-Reimbursable Expenses $713.9 $709.4 $4.5 Labor Expenses $527.5 $532.8 ($5.3) Non-Labor Expenses $186.4 $176.6 $9.8 Non Cash Liabilities $193.0 $207.1 ($14.1) Net Surplus / (Deficit) - Accrued ($677.6) ($676.7) $0.9
+```
+### [p011_c0005] Staffing Levels
+[p011_c0006]
+
+```text
+Positions (Full-Time Equivalents) Budget Actual Variance Non-Reimbursable 6,914 6,802 112 Reimbursable 1,160 1,013 147 Total Positions 8,074 7,815 259
+```
+### [p011_c0007] Data Review
+[p011_c0008] Through April, farebox revenue was $8.0 million higher than the budget due to higher-than-expected ridership partially offset by lower yield per passenger.
+[p011_c0009] Labor expenses are higher than the budget by $5.3 million due to overtime and pension costs partially offset by lower payroll, health and welfare, and other fringe costs. At the end of April, there were 259 vacancies compared to the budget.
+[p011_c0010] Non-labor expenses are lower than the budget by $9.8 million, primarily driven by materials & supplies, maintenance and other operating contracts costs, and other business expenses, partially offset by the electric power, claims, and fuel expenses.
+### [p011_c0011] Moving Forward
+[p011_c0012] We are aggressively moving forward to fill all vacancies at LIRR. We are aware of the financial challenges faced by the MTA, and we continually look for cost-effective ways to operate efficiently, ranging from workforce management to material needs.
+[p011_c0013] _| 11 |_
+
+## Page 12
+
+### [p012_c0001] Long Island Rail Road SERVICE PERFORMANCE
+### [p012_c0002] Service Delivered
+[p012_c0003] The share of scheduled train trips completed
+> [p012_c0004] Year Month Share of Scheduled Trips Completed (%) 2023 Apr 99.5 2023 May 99.5 2023 Jun 99.5 2023 Jul 99.5 2023 Aug 99.5 2023 Sep 99.5 2023 Oct 99.5 2023 Nov 99.5 2023 Dec 99.5 2024 Jan 99.5 2024 Feb 99.5 2024 Mar 99.5 2024 Apr 99.5 2024 May 99.5 2024 Jun 99.5 2024 Jul 99.5 2024 Aug 99.5 2024 Sep 99.5 2024 Oct 99.5 2024 Nov 99.5 2024 Dec 99.5 2025 Jan 99.5 2025 Feb 99.5 2025 Mar 99.5 2025 Apr 99.5 2025 May 99.5 2025 Jun 99.5 2025 Jul 99.5 2025 Aug 99.5 2025 Sep 99.5 2025 Oct 99.5 2025 Nov 99.5 2025 Dec 99.5 2026 Jan 99.5 2026 Feb 99.5 2026 Mar 99.5 2026 Apr 99.5
+### [p012_c0005] Delays by Type
+[p012_c0006] The number of delayed trains by type of delay
+> [p012_c0007] Year Month Infrastructure Maintenance Capital Projects Train Operations Fleet Police External Factors Customer Assistance 2023 Apr 500 0 400 200 100 100 100 2023 May 400 0 300 200 100 100 100 2023 Jun 300 0 400 200 100 100 100 2023 Jul 200 0 400 200 100 100 100 2023 Aug 300 0 400 200 100 100 100 2023 Sep 400 0 400 200 100 100 100 2023 Oct 500 0 400 200 100 100 100 2023 Nov 400 0 400 200 100 100 100 2023 Dec 300 0 400 200 100 100 100 2024 Jan 200 0 400 200 100 100 100 2024 Feb 100 0 400 200 100 100 100 2024 Mar 100 0 400 200 100 100 100 2024 Apr 200 0 400 200 100 100 100 2024 May 200 0 400 200 100 100 100 2024 Jun 100 0 400 200 100 100 100 2024 Jul 100 0 400 200 100 100 100 2024 Aug 100 0 400 200 100 100 100 2024 Sep 100 0 400 200 100 100 100 2024 Oct 100 0 400 200 100 100 100 2024 Nov 100 0 400 200 100 100 100 2024 Dec 100 0 400 200 100 100 100 2025 Jan 100 0 400 200 100 100 100 2025 Feb 100 0 400 200 100 100 100 2025 Mar 100 0 400 200 100 100 100 2025 Apr 100 0 400 200 100 100 100 2025 May 100 0 400 200 100 100 100 2025 Jun 100 0 400 200 100 100 100 2025 Jul 100 0 400 200 100 100 100 2025 Aug 100 0 400 200 100 100 100 2025 Sep 100 0 400 200 100 100 100 2025 Oct 100 0 400 200 100 100 100 2025 Nov 100 0 400 200 100 100 100 2025 Dec 100 0 400 200 100 100 100 2026 Jan 100 0 400 200 100 100 100 2026 Feb 100 0 400 200 100 100 100 2026 Mar 100 0 400 200 100 100 100 2026 Apr 100 0 400 200 100 100 100
+### [p012_c0008] Mean Distance Between Failures
+[p012_c0009] The average number of miles a railcar or locomotive travels before failing and causing a delay
+> [p012_c0010] Year Month Mean Distance Between Failures (miles) 2023 Apr 180,000 2023 May 160,000 2023 Jun 230,000 2023 Jul 150,000 2023 Aug 140,000 2023 Sep 180,000 2023 Oct 150,000 2023 Nov 170,000 2023 Dec 140,000 2024 Jan 160,000 2024 Feb 140,000 2024 Mar 190,000 2024 Apr 150,000 2024 May 160,000 2024 Jun 170,000 2024 Jul 160,000 2024 Aug 120,000 2024 Sep 210,000 2024 Oct 220,000 2024 Nov 160,000 2024 Dec 180,000 2025 Jan 170,000 2025 Feb 170,000 2025 Mar 220,000 2025 Apr 210,000 2025 May 160,000 2025 Jun 170,000 2025 Jul 160,000 2025 Aug 200,000 2025 Sep 140,000 2025 Oct 130,000 2025 Nov 140,000 2025 Dec 130,000 2026 Jan 120,000 2026 Feb 110,000 2026 Mar 130,000 2026 Apr 190,000
+[p012_c0011] _| 12 |_
+
+## Page 13
+
+### [p013_c0001] SERVICE PERFORMANCE
+### [p013_c0002] On-Time Performance
+[p013_c0003] The share of trains that arrive at their terminus station within 5:59 minutes of schedule
+> [p013_c0004] On-Time Performance Data (Estimated) Year Month OTP (%) 2023 Apr 93.5 2023 May 94.5 2023 Jun 92.5 2023 Jul 93.0 2023 Aug 92.5 2023 Sep 92.5 2023 Oct 94.5 2023 Nov 93.5 2023 Dec 94.5 2024 Jan 95.5 2024 Feb 96.0 2024 Mar 96.5 2024 Apr 95.5 2024 May 94.5 2024 Jun 95.5 2024 Jul 94.5 2024 Aug 95.5 2024 Sep 96.0 2024 Oct 96.0 2024 Nov 95.5 2024 Dec 96.5 2025 Jan 96.0 2025 Feb 96.5 2025 Mar 96.5 2025 Apr 96.0 2025 May 95.5 2025 Jun 96.0 2025 Jul 95.5 2025 Aug 95.5 2025 Sep 95.5 2025 Oct 96.0 2025 Nov 95.5 2025 Dec 94.5 2026 Jan 95.5 2026 Feb 96.0 2026 Mar 96.0 2026 Apr 96.0
+### [p013_c0005] On-Time Performance, by Branch
+[p013_c0006]
+
+```text
+Atlantic 98.8% Montauk 97.6% Babylon 95.0% Oyster Bay 96.3% Far Rockaway 96.9% Port Jefferson 95.9% Hempstead 94.8% Port Washington 97.6% Huntington 93.6% Ronkonkoma 92.8% Long Beach 93.3% West Hempstead 98.0%
+```
+### [p013_c0007] Data Review
+[p013_c0008] In April, on-time performance (OTP) was 95.8%, above the goal of 94%. Year-to-date OTP was 95.1%, exceeding the 94% goal. There were 14 incidents this month that resulted in 10 or more late or cancelled or terminated trains. The most significant event occurred on April 29th when there was a debris strike. The event caused 146 late trains, delayed our customers an average of 16 minutes and reduced our monthly OTP by less than one percent.
+[p013_c0009] As a result of these events, at Jamaica, 63.8% of trains arrived less than 3 minutes behind scheduled time during the morning peak periods and 67.7% during afternoon peak periods, both falling short of the 70% goal.
+[p013_c0010] The fleet mean distance between failures operated at 196,120 miles in March, and 150,180 year-to-date against the target of 150,000 miles
+### [p013_c0011] Moving Forward
+[p013_c0012] The Long Island Rail Road will provide extra service to and from a temporary station being built at Shinnecock Hills which will be located just south of the Shinnecock Hills Country Club. The event will take place from June 18th through June 21st.
+[p013_c0013] _| 13 |_
+
+## Page 14
+
+### [p014_c0001] Long Island Rail Road MAJOR PROJECTS
+### [p014_c0002] A New Substation is On the Way
+[p014_c0003] The LIRR is replacing its aging Jamaica traction-power substation, which was built in 1971 and is now beyond its intended service life. A new, modern facility is being constructed right next to the existing substation in the Richmond Hill section of Queens.
+[p014_c0004] The project scope includes the design, fabrication, and installation of a new two-story prefabricated modular substation building. These modular sections house pre-installed AC and DC switchgear, rectifiers, a new motor generator, and associated equipment, and are assembled on site into a single building on a new foundation.
+[p014_c0005] This month, MTA Construction & Development and the LIRR reached a major milestone. Over the weekend of May 9, the design build contractor installed the first six prefabricated modules onto their permanent foundation, followed by the installation of an additional module during the weekend of May 16. Following the installation of the remaining five sections in the future, all twelve modules will be in place and will form the complete building structure.
+[p014_c0006] Throughout construction, the existing substation will remain fully operational. The new facility will only take over after installation, testing, and acceptance are complete, ensuring there is no interruption to train power in one of the busiest parts of the LIRR network. Before the old substation is demolished, the LIRR will salvage any equipment it needs to retain, abatement work will be performed on remaining components, and the contractor will remove all other equipment. Once the new substation successfully completes testing, the old facility will be decommissioned and removed.
+[p014_c0007] This essential state-of-good-repair investment will strengthen the LIRR's power infrastructure and support reliable service for customers for decades to come.
+> [p014_c0008] A large prefabricated modular substation building is being assembled on a construction site. A crane is lifting a large, rectangular module into place. The building is situated on a concrete foundation. Workers in safety gear are visible on the site, and construction equipment is present. The sky is clear and blue.
+[p014_c0009] _The MTA logo, consisting of the letters 'MTA' in white inside a blue circle._
+[p014_c0010] _| 14 |_
+
+## Page 15
+
+### [p015_c0001] CUSTOMERS & COMMUNITIES
+### [p015_c0002] Lakeview Pride in Action with Spring Cleanup Success
+[p015_c0003] We were proud to join the Lakeview Civic Association for their Spring Clean-Up at Lakeview Station. Our Stations Department supplied key materials to support the effort, and the MTA Police Department was on-site to help ensure everything ran safely and smoothly. The strong turnout and shared enthusiasm made the day especially inspiring. Volunteers brought real energy and commitment, working together to brighten the station and its surrounding areas.
+[p015_c0004] New tulips and daffodils now add vibrant splashes of pink, red, and yellow throughout the station grounds, creating a more welcoming environment for customers and neighbors alike. The cleanup not only refreshed the appearance of the area—it reinforced a sense of shared responsibility for keeping our public spaces clean, safe, and inviting. These efforts make an immediate difference.
+[p015_c0005] We deeply value opportunities to partner with local organizations and residents to improve the places we all rely on every day. Thank you to everyone who contributed your time and effort. Your commitment helps make Lakeview Station a place the entire community can be proud of.
+> [p015_c0006] A large group of volunteers, including MTA staff and community members, are posing for a group photo at Lakeview Station. They are standing behind a black banner that reads "LAKEVIEW STATION CIVIC ASSOCIATION". To the right, another banner says "SPC". In the foreground, there is a green trash bin, several bags of debris, and a sign that says "Spring 2023 Community". The group is diverse, with many people wearing blue gloves and some in MTA uniforms. The background shows the station's red brick building and a clear blue sky.
+[p015_c0007] _| 15 |_
+[p015_c0008] _The MTA logo, which consists of the letters "MTA" in white inside a blue circle._
+
+## Page 16
+
+### [p016_c0001] Long Island Rail Road SAFETY & SECURITY
+### [p016_c0002] Customer Injury Rate
+[p016_c0003] The number of reportable customer injuries per one million customers (12-month rolling average)
+> [p016_c0004] April data not yet available Month Year Rate (per 1M customers) Jan 2023 2.1 Apr 2023 2.2 Jul 2023 2.3 Oct 2023 2.6 Dec 2023 2.6 Jan 2024 2.5 Apr 2024 2.4 Jul 2024 2.1 Oct 2024 1.8 Dec 2024 1.8 Jan 2025 1.8 Apr 2025 1.6 Jul 2025 1.5 Oct 2025 1.4 Dec 2025 1.2 Jan 2026 1.3 Apr 2026 1.45
+### [p016_c0005] Employee Lost Time Injury Rate
+[p016_c0006] The number of reportable employee lost time injuries per 200,000 hours worked (12-month rolling average)
+> [p016_c0007] April data not yet available Month Year Rate (per 200,000 hours) Jan 2023 4.4 Apr 2023 4.5 Jul 2023 4.6 Oct 2023 4.7 Dec 2023 4.6 Jan 2024 4.5 Apr 2024 4.4 Jul 2024 4.2 Oct 2024 4.0 Dec 2024 4.1 Jan 2025 4.0 Apr 2025 3.8 Jul 2025 3.6 Oct 2025 3.5 Dec 2025 3.5 Jan 2026 3.6 Apr 2026 3.62
+### [p016_c0008] Data Review
+[p016_c0009] The reportable customer injury rate decreased from 1.69 to 1.45 per one million customers in the current 12-month reporting period, April 2025 through March 2026, compared to the prior 12 months. The reportable employee lost time injury rate decreased from 3.89 to 3.62 per 200,000 working hours, compared to the prior 12 months.
+### [p016_c0010] Moving Forward
+[p016_c0011] On May 21, the Long Island Rail Road will recognize the winners of last year's School Safety Backpack Contest during a ceremony at Oregon Middle School in Medford, NY. Last year, students were invited to create a safety-themed slogan or illustration promoting Safety Around Trains and Tracks. Winning entries were selected by LIRR Safety representatives and will be featured on customized backpacks distributed at upcoming T.R.A.C.K.S. presentations and LIRR Customer Safety Day events.
+[p016_c0012] _| 16 |_
+
+## Page 17
+
+### [p017_c0001] SAFETY & SECURITY
+### [p017_c0002] Major Crimes Against Customers
+[p017_c0003] The rate of all major crimes (burglary, murder, rape, robbery, felony assault, grand larceny, grand larceny of a vehicle) against customers, per million customers
+> [p017_c0004] Estimated Data for Major Crimes Against Customers Month Ridership (millions) Major Crime Rate (per million customers) Apr 2023 5.0 2.5 May 2023 5.5 3.0 Jun 2023 5.8 3.5 Jul 2023 5.5 3.0 Aug 2023 5.8 2.5 Sep 2023 5.5 2.0 Oct 2023 5.8 3.0 Nov 2023 5.5 3.5 Dec 2023 5.8 3.0 Jan 2024 5.5 3.5 Feb 2024 5.8 3.0 Mar 2024 6.0 2.5 Apr 2024 6.2 3.0 May 2024 6.5 3.5 Jun 2024 6.8 3.0 Jul 2024 6.5 2.5 Aug 2024 6.8 3.0 Sep 2024 7.0 3.5 Oct 2024 6.5 3.0 Nov 2024 6.8 2.5 Dec 2024 6.5 3.0 Jan 2025 6.8 2.5 Feb 2025 6.5 3.0 Mar 2025 6.8 2.5 Apr 2025 7.0 3.0 May 2025 7.2 3.5 Jun 2025 7.0 3.0 Jul 2025 7.2 2.5 Aug 2025 7.5 2.0 Sep 2025 7.0 1.5 Oct 2025 6.5 2.0 Nov 2025 6.8 2.5 Dec 2025 6.5 2.0 Jan 2026 6.8 2.5 Feb 2026 7.0 3.0 Mar 2026 7.2 3.5 Apr 2026 7.0 3.0
+### [p017_c0005] Assaults and Harassments Against Employees
+[p017_c0006] The number of assaults and harassments against LIRR employees recorded by MTA Police Department, per NYS criminal law
+> [p017_c0007] Estimated Data for Assaults and Harassments Against Employees Month Assaults Harassments Apr 2023 1 6 May 2023 1 2 Jun 2023 2 4 Jul 2023 3 3 Aug 2023 4 4 Sep 2023 1 2 Oct 2023 1 5 Nov 2023 1 6 Dec 2023 2 6 Jan 2024 2 10 Feb 2024 2 7 Mar 2024 2 8 Apr 2024 2 8 May 2024 2 10 Jun 2024 2 8 Jul 2024 2 23 Aug 2024 2 12 Sep 2024 2 15 Oct 2024 2 12 Nov 2024 1 1 Dec 2024 1 2 Jan 2025 1 3 Feb 2025 1 2 Mar 2025 1 5 Apr 2025 1 5 May 2025 1 3 Jun 2025 1 5 Jul 2025 1 5 Aug 2025 1 5 Sep 2025 1 5 Oct 2025 1 5 Nov 2025 1 6 Dec 2025 1 5 Jan 2026 1 6 Feb 2026 1 2 Mar 2026 1 2 Apr 2026 1 7
+### [p017_c0008] Summonses and Arrests
+[p017_c0009] The number of criminal summonses issued for fare evasion, the number of criminal summonses issued for other infractions, and the number of arrests made by MTA Police Department
+> [p017_c0010] Estimated Data for Summonses and Arrests Month Arrests Fare Evasion Criminal Summonses All Other Summonses Apr 2023 100 100 100 May 2023 100 100 100 Jun 2023 100 100 100 Jul 2023 100 100 100 Aug 2023 100 100 100 Sep 2023 100 100 100 Oct 2023 100 100 100 Nov 2023 100 100 100 Dec 2023 100 100 100 Jan 2024 100 100 100 Feb 2024 100 100 100 Mar 2024 100 100 100 Apr 2024 100 100 100 May 2024 100 100 100 Jun 2024 100 100 100 Jul 2024 100 100 100 Aug 2024 100 100 100 Sep 2024 100 100 100 Oct 2024 100 100 100 Nov 2024 100 100 100 Dec 2024 100 100 100 Jan 2025 100 100 100 Feb 2025 100 100 100 Mar 2025 100 100 100 Apr 2025 100 100 100 May 2025 100 100 100 Jun 2025 100 100 100 Jul 2025 100 100 100 Aug 2025 100 100 100 Sep 2025 100 100 100 Oct 2025 100 100 100 Nov 2025 100 100 100 Dec 2025 100 100 100 Jan 2026 100 100 100 Feb 2026 100 100 100 Mar 2026 100 100 100 Apr 2026 100 100 100
+[p017_c0011] _| 17 |_
+
+## Page 18
+
+### [p018_c0001] METRO-NORTH RAILROAD
+> [p018_c0002] A photograph of a Metro-North Railroad locomotive and passenger train. The locomotive is blue, white, and red, with the number 250 on its side. It is pulling a silver and blue passenger train. The train is passing under a concrete bridge. The scene is outdoors on a sunny day with a clear blue sky and some trees in the background.
+
+## Page 19
+
+> [p019_c0001] A blue and red train engine, likely a Canadian Pacific locomotive, is the central focus of the image. The front of the engine is painted blue with a red and white horizontal stripe. The number '250' is prominently displayed in white on both sides of the central emblem, which features a circle of stars with the number '76' in the center. Below the stripe, two white stars are visible. The engine has two large headlights and two smaller circular lights. It is parked on a set of tracks. To the right, a station platform with a wooden roof and a brick wall is visible. A bench and a trash can are on the platform. The sky is clear and blue.
+
+## Page 20
+
+### [p020_c0001] Metro-North Railroad MESSAGE FROM THE PRESIDENT
+> [p020_c0002] A portrait of Justin Vonashek, President of Metro-North Railroad. He is a man with short brown hair, glasses, and a beard, wearing a dark blue suit, a white shirt, and a blue patterned tie. He is standing with his arms crossed, smiling at the camera. The background is a blurred tunnel entrance with yellow and white lines on the wall.
+[p020_c0003] _Justin Vonashek President, Metro-North Railroad_
+### [p020_c0004] Ridership & Performance
+[p020_c0005] Metro-North continued to deliver excellent customer service in April, with on-time performance reaching 98.1% and year-to-date service standing at 96.8%. Our service-delivery rate for April was 99.9%, reflecting our commitment to providing safe, reliable service that our region can depend on.
+[p020_c0006] Metro-North carried 6.4 million riders in April, 86.2% of April 2019 levels, a 3.6% increase over March and a 6.2% increase from the same month in 2025. April's average daily ridership increased to 213,740, a 7.0% increase over March. Average weekday ridership increased 3.9% from March and 4.7% year over year. Our discretionary weekend ridership remained strong, 14.2% higher than March and 10.2% higher than April 2025.
+### [p020_c0007] New 250th Anniversary Heritage Locomotive
+[p020_c0008] Metro-North unveiled our ninth Heritage locomotive on April 30, celebrating the nation's 250th anniversary and tying directly to our own 43 years of public service. Locomotive 250 highlights both our railroad's history and the broader American story, connecting our past and present to this national milestone.
+[p020_c0009] Locomotive No. 250's design rises to this celebratory occasion, featuring an American flag formed from the text of the Declaration of Independence. The locomotive's design also incorporates historic symbols drawn from early U.S. coinage, including Benjamin Franklin's "We Are One" emblem from the first officially authorized U.S. federal coin, the Fugio cent, and a heraldic eagle inspired by the Bowed Liberty dollar. The official America250 logo rounds out the look.
+[p020_c0010] The lifespan-extending body work was completed by the skilled craftsmen in our Paint and Freight Shop at North White Plains, where the wrap was also applied. A special thank you goes to Emily Moser of our Operations Training Department, the creative talent behind this remarkable display.
+[p020_c0011] The design was conceived in house, and the 250th-anniversary wrap showcases our teams' vision and abilities.
+[p020_c0012] _The MTA logo, consisting of the letters "MTA" in white inside a blue circle._
+[p020_c0013] _| 20 |_
+
+## Page 21
+
+### [p021_c0001] Waterbury Branch Station Improvements
+[p021_c0002] We debuted the new locomotive on Friday, May 1 at an event celebrating substantial new improvements for our customers, in strong collaboration with our partners at the Connecticut Department of Transportation (CTDOT).
+[p021_c0003] I joined Connecticut Governor Ned Lamont, US Senators Richard Blumenthal and Chris Murphy, US Representatives Rosa DeLauro and Jahana Hayes, CTDOT Commissioner Garrett Eucalitto and local elected officials at Derby-Shelton station to announce the start of construction on four Waterbury Branch stations, located at Derby-Shelton, Ansonia, Beacon Falls and Seymour.
+[p021_c0004] The upgrades will transform these stations with new 350-foot platforms designed to accommodate full train boarding, along with covered canopies and enclosed windshields to improve comfort in all weather. Stations will feature real-time arrival information, ticket vending, improved lighting, and clear wayfinding. Each location will be ADA accessible, with better pedestrian access and safer passenger flow.
+[p021_c0005] As ridership continues to increase on the Waterbury Branch, to 150% of 2019 levels and beyond, these station upgrades will allow us to work with CTDOT to provide a more seamless travel experience across the entire region. Thanks to CTDOT's infrastructure improvements, in 2022 we increased the number of weekday trains on the line from 15 to 22, and ridership has responded enthusiastically.
+[p021_c0006] Today, while ridership continues to climb across the system, the Waterbury Branch is the only line on which ridership exceeds pre-COVID levels, the result of the increased frequencies and greater convenience to customers.
+### [p021_c0007] Promoting Summer Travel
+[p021_c0008] Metro-North is ready for summer! We sponsored a Staycation Showcase event in Grand Central's Vanderbilt Hall a week ago, and it was a tremendous success, introducing local-area day-trip and vacation ideas to more than 500 visitors. Over 25 tourism partners attended,
+[p021_c0009] 9th Heritage Locomotive - #250
+[p021_c0010] 14th Annual Metro- North/GCT Blood Drive
+[p021_c0011] 208% Ridership at Derby- Shelton compared to 2019
+[p021_c0012] _| 21 |_
+
+## Page 22
+
+### [p022_c0001] Metro-North Railroad
+### [p022_c0002] MESSAGE FROM THE PRESIDENT
+[p022_c0003] spanning a wide range of destinations and attractions including car-free, transit-friendly day-trips, festivals, parks, foodie adventures, cultural institutions and more in the Metro-North region. Take advantage of all there is to see and do on Metro-North this summer, from NYC to the Hudson Valley and across Westchester, Connecticut and beyond.
+### [p022_c0004] Haverstraw-Ossining Weekend Ferry Returns
+[p022_c0005] Another summer attraction returns on Memorial Day Saturday, May 23, when weekend ferry service between Haverstraw and Ossining begins, operating through Saturday, October 31, two weeks longer than in previous years. Ferries will operate on Saturdays and Sundays between Haverstraw and Ossining, with hourly service between 11:23 am and 9:10 pm, scheduled to meet Hudson Line trains at Ossining. Ferries will not operate on Memorial Day or Labor Day holidays, but will operate this year on Independence Day.
+[p022_c0006] On the west side of the river, Transport of Rockland buses will meet all ferries to provide complimentary rides into Haverstraw Village and other popular Rockland County destinations, including the Garner Arts Center, Rockland Lake State Park, the Village of Nyack and Palisades Center Mall. From summer days on the river to peak fall foliage, extending service through Halloween gives customers more time to take advantage of everything the route has to offer.
+### [p022_c0007] Annual Blood Drive
+[p022_c0008] One of Metro-North's events that's nearest to my heart is our partnership with the New York Blood Center for the annual blood drive in Grand Central's Vanderbilt Hall, now in its 14th year. On May 14, I was honored to roll up my sleeve and be amongst hundreds of coworkers and public donors who helped people in need of life-saving blood. Across our system, we'll also be having employee drives at North White Plains on Thursday, May 21, and at Croton-Harmon on Thursday, May 28.
+[p022_c0009] I'm always heartened and cheered by the enthusiasm that Metro-North employees display for our blood drives. Everyone knows someone – a family member, a friend or a neighbor – who has needed blood at some time in their lives, and it is volunteer donors who roll up their sleeves and provide what's needed.
+### [p022_c0010] Connect With Us – Stamford
+[p022_c0011] We continued our series of Connect With Us events with a morning visit to Stamford on Tuesday, May 12. These are events where Metro-North leadership meet and listen to our riders at stations across the system. These sessions help us meet our customers where they are, listen to their thoughts about our service and engage with each other in a meaningful way.
+[p022_c0012] _| 22 |_
+
+## Page 23
+
+### [p023_c0001] Metro-North's Staycation Showcase
+[p023_c0002] Today, 11 a.m.-3 p.m. Vanderbilt Hall, Grand Central
+> [p023_c0003] A photograph of two women on bicycles standing on a bridge. The woman on the left is wearing a blue t-shirt and a blue helmet, leaning against the wooden railing. The woman on the right is wearing a pink long-sleeved shirt and a black helmet, also leaning against the railing. They are both looking towards the right. The bridge has a wooden railing and a metal structure. In the background, there is a dense green forest and a body of water. The sky is a clear blue.
+[p023_c0004] Come check out the summer's hottest car-free destinations, attractions, and festivals in the Hudson Valley, Connecticut, and beyond!
+> [p023_c0005] The MTA logo, which consists of the letters "MTA" in a bold, sans-serif font inside a white circle.
+
+## Page 24
+
+### [p024_c0001] Metro-North Railroad RIDERSHIP
+### [p024_c0002] Monthly Ridership
+[p024_c0003] Estimated number of monthly trips taken. Ridership is based on ticket sales data.
+> [p024_c0004] Month East of Hudson (Millions) West of Hudson (Millions) Apr 2023 4.8 4.7 May 2023 4.9 4.8 Jun 2023 5.3 5.2 Jul 2023 5.4 5.3 Aug 2023 4.9 4.8 Sep 2023 5.0 4.9 Oct 2023 4.9 4.8 Nov 2023 5.6 5.5 Dec 2023 5.4 5.3 Jan 2024 5.3 5.2 Feb 2024 4.8 4.7 Mar 2024 5.3 5.2 Apr 2024 5.8 5.7 May 2024 5.7 5.6 Jun 2024 5.7 5.6 Jul 2024 5.7 5.6 Aug 2024 5.4 5.3 Sep 2024 5.7 5.6 Oct 2024 6.5 6.4 Nov 2024 5.7 5.6 Dec 2024 5.8 5.7 Jan 2025 5.3 5.2 Feb 2025 4.8 4.7 Mar 2025 5.8 5.7 Apr 2025 6.0 5.9 May 2025 6.0 5.9 Jun 2025 6.1 6.0 Jul 2025 6.1 6.0 Aug 2025 6.2 6.1 Sep 2025 5.8 5.7 Oct 2025 6.7 6.6 Nov 2025 5.8 5.7 Dec 2025 6.0 5.9 Jan 2026 5.2 5.1 Feb 2026 4.8 4.7 Mar 2026 6.2 6.1 Apr 2026 6.4 6.3
+### [p024_c0005] Data Review
+[p024_c0006] Metro-North carried 6.4 million riders in April, a 3.6% increase over March despite one fewer day in the month. Adjusting for calendar effects, average daily ridership rose 7.0% to 213,740. Weekday ridership increased 3.9% to 237,448, while weekend ridership surged 14.2% to 120,620, driven by improved weather, Easter weekend, and the return of Yankees baseball.
+[p024_c0007] Total April ridership rose 6.2% from April 2025, reaching 86.2% of April 2019 levels. Average weekday ridership increased 4.7% year over year, standing at 82.8% of April 2019. Estimated Tuesday–Thursday ridership of 242,813 climbed 2.3% from March and 4.7% from last year, reaching 84.6% of an average April 2019 weekday. Weekend ridership grew 10.2% compared with April 2025, reaching 96.7% of April 2019 levels.
+[p024_c0008] Total commutation ticket ridership fell 1.6% from March. Commutation and peak ticket trips were essentially flat overall, and commutation's share of total rides slipped 2.2%, from 45.1% to 42.9%.
+### [p024_c0009] Moving Forward
+[p024_c0010] May typically brings another step-up in ridership as warmer weather takes hold. While average daily ridership dipped 1.1% last year from April to May — after rising 2.1% the year before and 9.2% in 2023 — that softening reflects a normalizing recovery rather than a reversal. Rising temperatures, commencement season, Memorial Day weekend travel, and another 14 Yankees home games all point to continued growth as more riders choose the rails in the month ahead. Ridership has also rebounded strongly over the past two months after a difficult winter, signaling pent-up demand and setting the stage for a solid May.
+[p024_c0011] _| 24 |_
+
+## Page 25
+
+### [p025_c0001] FINANCIAL RESULTS
+### [p025_c0002] 2026 Revenues & Expenses, April Year-to-Date
+[p025_c0003] $ in millions
+[p025_c0004]
+
+```text
+Budget Actual Variance Total Non-Reimbursable Revenues $224.8 $228.5 $3.7 Farebox Revenues $208.1 $210.1 $2.0 Other Revenues $16.6 $18.4 $1.7 Total Non-Reimbursable Expenses $566.3 $582.4 ($16.1) Labor Expenses $385.8 $409.8 ($24.0) Non-Labor Expenses $180.4 $172.6 $7.8 Non Cash Liabilities $116.8 $119.0 ($2.2) Net Surplus / (Deficit) - Accrued ($458.3) ($472.9) ($14.7)
+```
+### [p025_c0005] Staffing Levels
+[p025_c0006]
+
+```text
+Positions (Full-Time Equivalents) Budget Actual Variance Non-Reimbursable 6,132 6,165 (33) Reimbursable 816 564 252 Total Positions 6,948 6,729 219
+```
+### [p025_c0007] Data Review
+[p025_c0008] Through April, farebox revenue was $2.0M favorable to the Budget due to higher commutation ridership across all lines and a higher average yield per passenger on the Harlem Line. These gains were partially offset by lower non-commutation ridership on all East of Hudson lines, as well as lower average yield per passenger on the Hudson and New Haven Lines.
+[p025_c0009] Labor expenses are higher than the Budget by $24.0 million due primarily to lower reimbursable overhead, higher other fringe benefits, health and welfare and overtime costs. At the end of April, paid headcount was 219 lower than Budget reflecting 229 vacancies against the year-end paid headcount.
+[p025_c0010] Non-labor expenses are lower than the Budget by $7.8 million due primarily to lower maintenance and other operating contracts, materials and supplies, other business expenses and professional service contracts partially offset by higher electric and fuel costs.
+### [p025_c0011] Moving Forward
+[p025_c0012] We are focused on growing staff to budgeted targets across all crafts. We are aware of the financial challenges faced by the MTA, and we continually look for cost-effective ways to operate efficiently, ranging from workforce management to material needs.
+[p025_c0013] _| 25 |_
+
+## Page 26
+
+### [p026_c0001] Metro-North Railroad SERVICE PERFORMANCE
+### [p026_c0002] Service Delivered
+[p026_c0003] The share of scheduled train trips completed. NJ Transit operates West of Hudson trains.
+> [p026_c0004] Year Month East of Hudson (%) West of Hudson (%) 2023 A 99.5 99.5 2023 M 99.5 99.5 2023 J 99.5 99.5 2023 J 99.5 99.5 2023 A 99.5 99.5 2023 S 99.5 98.5 2023 O 99.5 99.5 2023 N 99.5 99.5 2023 D 99.5 99.5 2024 J 99.5 99.5 2024 F 99.5 99.5 2024 M 99.5 99.5 2024 A 99.5 99.5 2024 M 99.5 99.5 2024 J 99.5 99.5 2024 J 99.5 99.5 2024 A 99.5 99.5 2024 S 99.5 99.5 2024 O 99.5 99.5 2024 N 99.5 99.5 2025 D 99.5 99.5 2025 J 99.5 99.5 2025 F 99.5 99.5 2025 M 99.5 99.5 2025 A 99.5 99.5 2025 M 99.5 99.5 2025 J 99.5 99.5 2025 J 99.5 99.5 2025 A 99.5 99.5 2025 S 99.5 99.5 2025 O 99.5 99.5 2025 N 99.5 99.5 2026 D 99.5 99.5 2026 J 99.5 99.5 2026 F 99.5 99.5 2026 M 99.5 99.5 2026 A 99.5 99.5
+### [p026_c0005] Delays by Type
+[p026_c0006] The number of delayed trains on East of Hudson lines by type of delay
+> [p026_c0007] Year Month Infrastructure Maintenance Train Operations Police Customer Assistance External Factors Fleet Capital Projects 2023 A 100 100 100 100 100 100 100 2023 M 100 100 100 100 100 100 100 2023 J 100 100 100 100 100 100 100 2023 J 100 100 100 100 100 100 100 2023 A 100 100 100 100 100 100 100 2023 S 100 100 100 100 100 100 100 2023 O 100 100 100 100 100 100 100 2023 N 100 100 100 100 100 100 100 2023 D 100 100 100 100 100 100 100 2024 J 100 100 100 100 100 100 100 2024 F 100 100 100 100 100 100 100 2024 M 100 100 100 100 100 100 100 2024 A 100 100 100 100 100 100 100 2024 M 100 100 100 100 100 100 100 2024 J 100 100 100 100 100 100 100 2024 J 100 100 100 100 100 100 100 2024 A 100 100 100 100 100 100 100 2024 S 100 100 100 100 100 100 100 2024 O 100 100 100 100 100 100 100 2024 N 100 100 100 100 100 100 100 2025 D 100 100 100 100 100 100 100 2025 J 100 100 100 100 100 100 100 2025 F 100 100 100 100 100 100 100 2025 M 100 100 100 100 100 100 100 2025 A 100 100 100 100 100 100 100 2025 M 100 100 100 100 100 100 100 2025 J 100 100 100 100 100 100 100 2025 J 100 100 100 100 100 100 100 2025 A 100 100 100 100 100 100 100 2025 S 100 100 100 100 100 100 100 2025 O 100 100 100 100 100 100 100 2025 N 100 100 100 100 100 100 100 2026 D 100 100 100 100 100 100 100 2026 J 100 100 100 100 100 100 100 2026 F 100 100 100 100 100 100 100 2026 M 100 100 100 100 100 100 100 2026 A 100 100 100 100 100 100 100
+### [p026_c0008] Mean Distance Between Failures
+[p026_c0009] The average number of miles a railcar or locomotive travels on East of Hudson lines before failing and causing a delay
+> [p026_c0010] Year Month Mean Distance (miles) 2023 A 400,000 2023 M 500,000 2023 J 300,000 2023 J 400,000 2023 A 200,000 2023 S 250,000 2023 O 250,000 2023 N 250,000 2023 D 250,000 2024 J 250,000 2024 F 650,000 2024 M 250,000 2024 A 300,000 2024 M 300,000 2024 J 350,000 2024 J 350,000 2024 A 250,000 2024 S 300,000 2024 O 450,000 2024 N 350,000 2025 D 350,000 2025 J 250,000 2025 F 300,000 2025 M 350,000 2025 A 250,000 2025 M 500,000 2025 J 250,000 2025 J 200,000 2025 A 350,000 2025 S 350,000 2025 O 650,000 2025 N 400,000 2026 D 300,000 2026 J 200,000 2026 F 200,000 2026 M 400,000
+[p026_c0011] _| 26 |_
+
+## Page 27
+
+### [p027_c0001] SERVICE PERFORMANCE
+### [p027_c0002] On-Time Performance
+[p027_c0003] The share of trains that arrive at their terminus station within 5:59 minutes of schedule. NJ Transit operates West of Hudson trains.
+> [p027_c0004] The chart displays the monthly on-time performance for two regions: East of Hudson (blue line) and West of Hudson (orange line). The Y-axis represents the percentage of trains arriving within 5:59 minutes of schedule, ranging from 80% to 100%. The X-axis shows the months from April 2023 to April 2026. A horizontal dashed line at 94% represents the target performance level. The East of Hudson line generally stays above the 94% target, while the West of Hudson line fluctuates more significantly, often dipping below the target. Estimated On-Time Performance Data (%) Month East of Hudson (%) West of Hudson (%) Apr 2023 96.0 94.0 May 2023 97.5 94.0 Jun 2023 96.5 87.5 Jul 2023 96.0 89.0 Aug 2023 97.0 94.0 Sep 2023 96.0 93.0 Oct 2023 96.5 93.5 Nov 2023 97.0 94.0 Dec 2023 97.5 95.5 Jan 2024 98.0 91.5 Feb 2024 98.5 92.0 Mar 2024 97.5 95.5 Apr 2024 97.0 95.0 May 2024 97.5 89.5 Jun 2024 97.0 92.5 Jul 2024 97.5 92.5 Aug 2024 98.0 95.0 Sep 2024 97.5 89.5 Oct 2024 97.0 92.5 Nov 2024 97.5 91.5 Dec 2024 97.0 92.5 Jan 2025 97.5 91.0 Feb 2025 98.0 91.0 Mar 2025 97.5 97.0 Apr 2025 97.0 94.0 May 2025 97.5 94.0 Jun 2025 96.5 95.0 Jul 2025 96.0 95.5 Aug 2025 97.0 95.5 Sep 2025 97.5 92.5 Oct 2025 97.0 92.5 Nov 2025 96.5 91.5 Dec 2025 95.5 91.0 Jan 2026 96.0 91.0 Feb 2026 97.0 92.0 Mar 2026 97.5 95.0 Apr 2026 98.0 96.0
+### [p027_c0005] On-Time Performance, by Line
+[p027_c0006]
+
+```text
+Hudson 98.0% Pascack Valley 97.5% Harlem 98.0% Port Jervis 95.4% New Haven 98.3%
+```
+### [p027_c0007] Data Review
+[p027_c0008] Metro-North's April 2026 service delivered rate was 99.9%. Systemwide OTP reached 98.1%, exceeding the 94% goal. Seven major incidents affected April OTP, driven largely by one event where a train was unable to take power due to a mechanical failure. This affected 52 trains on April 13.
+[p027_c0009] The fleet's January Mean Distance Between Failures (MDBF) was 424,185 miles, above the the 200,000-mile goal.
+### [p027_c0010] Moving Forward
+[p027_c0011] On the Hudson Line, tie replacement work will finish along the lower Hudson before shifting north toward Peekskill. On the Harlem Line, crews will conduct weekend tie and rail replacements on the upper section of the line. On the New Haven Line, work is ongoing along the eastern segment, with tie and switch installations. Meanwhile, weekend service on the New Canaan Branch will continue to be substituted with buses through early June to support essential capital improvement projects.
+[p027_c0012] _| 27 |_
+
+## Page 28
+
+### [p028_c0001] Metro-North Railroad MAJOR PROJECTS
+### [p028_c0002] Power Upgrades Advance on the New Haven Line
+[p028_c0003] This month, MTA Construction & Development moved forward with upgrades to boost power capacity, resiliency, and overall reliability on the New Haven Line. To make these improvements, the team is replacing two aging AC power substations — Substation 128 in Mamaroneck and Substation 178 in Harrison, with substantial completion expected in December 2026.
+[p028_c0004] The new substations will help the system stay running even if nearby substations go offline because of severe weather, planned work, or issues with transmission lines. Site Acceptance Testing for the new Mamaroneck substation is scheduled to begin this month. Remaining major electrical work includes installing cross-track feeder cables at both sites, which will require four track outages. Additional work ahead includes smaller tasks such as stairs, railings, ramps, fencing, retaining walls, and final grading.
+[p028_c0005] The existing substations were built in the 1980s and still rely on outdoor switchyards with overhead wiring. They'll be replaced with modern, prefabricated, walk-in metal-clad switchgear enclosures connected to the overhead catenary system through insulated medium-voltage cables. The upgraded substations will include key electrical and safety systems and these improvements will significantly strengthen power capacity, resiliency, and day-to-day system reliability while meeting today's standards.
+[p028_c0006] _| 28 |_
+
+## Page 29
+
+### [p029_c0001] CUSTOMERS & COMMUNITIES
+### [p029_c0002] Metro-North Welcomes Partners of Westchester County
+[p029_c0003] Metro-North Railroad welcomed the Westchester County Planning Department to Grand Central Terminal for a tour to learn about operations and history within the crown jewel of transit. MNR was happy to show off our facilities to our amazing partners in Westchester.
+[p029_c0004] Metro-North is lucky to have a close working relationship with the Westchester County Planning Department with whom we keep in close contact with and have a constant dialogue with of current and future plans and needs. Metro-North Railroad maintain a multi-agency, multi-departmental quarterly meeting with Westchester County Planning to keep each other apprised of the most recent developments.
+[p029_c0005] Metro-North looks forward to maintaining the close partnership with Westchester County Planning going forward.
+> [p029_c0006] A group of approximately 12-15 people are gathered in a large, well-lit indoor space, likely Grand Central Terminal. They are standing in a circle, facing each other, suggesting a group discussion or tour. The group includes men and women of various ages and ethnicities. Some are wearing casual clothing, while others appear to be in uniform or professional attire. The background shows the architectural details of the terminal, including stone walls and a large, ornate chandelier hanging from the ceiling.
+### [p029_c0007] Metro-North Attends Rivertowns Summit
+[p029_c0008] Metro-North Director of Government and Community Relations Andy Buder was honored to attend and speak at the 2nd Annual Rivertowns Summit, hosted by Historic Hudson River Towns. The organization represents communities on both sides of the Hudson River in Westchester and Rockland Counties, with sixteen municipal members—thirteen in Westchester and three in Rockland—along with support from both counties.
+[p029_c0009] The Summit featured presentations on wayfinding and signage, tourism and visitation, microtransit, and more, alongside Metro-North's update. We were proud to share strong ridership recovery in the Rivertowns, including exceptionally high discretionary travel. Last fall set new records, driven by the surge of leaf-peeping and “spooky season” events along the Hudson Line—weekend ridership even surpassed weekday levels on several days.
+[p029_c0010] The Rivertowns depend on Metro-North both for residents commuting to work and for bringing visitors into their vibrant communities. Metro-North is committed to working closely with these towns to support our shared goals and continued growth.
+[p029_c0011] _| 29 |_
+[p029_c0012] _The MTA logo, consisting of the letters "MTA" in white inside a blue circle._
+
+## Page 30
+
+### [p030_c0001] Metro-North Railroad SAFETY & SECURITY
+### [p030_c0002] Customer Injury Rate
+[p030_c0003] The number of reportable customer injuries per one million customers (12-month rolling average)
+> [p030_c0004] April data not yet available Year Month Rate 2023 Jan 2.1 2023 Jul 2.3 2023 Dec 2.0 2024 Jun 1.7 2024 Dec 1.4 2025 Jun 1.6 2025 Dec 1.5 2026 Mar 1.4
+### [p030_c0005] Employee Lost Time Injury Rate
+[p030_c0006] The number of reportable employee lost time injuries per 200,000 hours worked (12-month rolling average)
+> [p030_c0007] April data not yet available Year Month Rate 2023 Jan 2.2 2023 Jul 2.1 2023 Dec 1.9 2024 Jun 1.8 2024 Dec 1.6 2025 Jun 1.6 2025 Dec 1.7 2026 Mar 1.98
+### [p030_c0008] Data Review
+[p030_c0009] The reportable customer injury rate decreased from 1.50 to 1.43 per one million customers in the current 12-month reporting period, April 2025 through March 2026, compared to the prior 12 months. The reportable employee lost time injury rate increased from 1.63 to 1.98 per 200,000 working hours, compared to the prior 12 months.
+### [p030_c0010] Moving Forward
+[p030_c0011] Metro-North is ramping up for summer outreach events with coordinated safety outreach across our territory. This month, members of the Office of System Safety completed training to become authorized Operation Lifesaver volunteers in New York and Connecticut, expanding our ability to deliver rail safety education directly to schools, community groups, and local partners. By strengthening outreach and sharpening our safety message, Metro-North continues working to keep our employees, customers, and communities safe.
+[p030_c0012] _| 30 |_
+
+## Page 31
+
+### [p031_c0001] SAFETY & SECURITY
+### [p031_c0002] Major Crimes Against Customers
+[p031_c0003] The rate of all major crimes (burglary, murder, rape, robbery, felony assault, grand larceny, grand larceny of a vehicle) against customers, per million customers
+> [p031_c0004] Estimated Data for Major Crimes Against Customers Year Month Ridership (millions) Major Crime Rate (per million customers) 2023 Jan 4.8 2.2 2023 Feb 5.2 2.0 2023 Mar 5.0 2.5 2023 Apr 5.3 3.5 2023 May 5.1 2.0 2023 Jun 5.4 3.5 2023 Jul 5.2 1.2 2023 Aug 5.5 3.2 2023 Sep 5.3 3.2 2023 Oct 5.1 3.2 2023 Nov 5.4 3.8 2023 Dec 5.2 3.2 2024 Jan 5.5 2.5 2024 Feb 5.3 2.5 2024 Mar 5.6 2.5 2024 Apr 5.4 2.5 2024 May 5.7 2.2 2024 Jun 5.5 2.0 2024 Jul 5.8 1.5 2024 Aug 5.6 1.0 2024 Sep 5.9 2.8 2024 Oct 5.7 2.2 2024 Nov 5.5 2.2 2024 Dec 5.8 0.5 2025 Jan 6.0 3.5 2025 Feb 6.2 2.0 2025 Mar 6.1 2.0 2025 Apr 6.3 1.5 2025 May 6.2 1.5 2025 Jun 6.4 2.2 2025 Jul 6.1 1.0 2025 Aug 6.5 2.5 2025 Sep 6.3 1.5 2025 Oct 6.6 1.0 2025 Nov 6.4 0.8 2025 Dec 6.2 1.8 2026 Jan 6.0 1.8 2026 Feb 6.3 1.5 2026 Mar 6.5 1.2
+### [p031_c0005] Assaults and Harassments Against Employees
+[p031_c0006] The number of assaults and harassments against Metro-North employees recorded by MTA Police Department, per NYS criminal law
+> [p031_c0007] Estimated Data for Assaults and Harassments Against Employees Year Month Assaults Harassments 2023 Jan 1 9 2023 Feb 1 9 2023 Mar 1 7 2023 Apr 2 15 2023 May 1 1 2023 Jun 1 10 2023 Jul 1 11 2023 Aug 1 5 2023 Sep 1 6 2023 Oct 1 12 2023 Nov 1 6 2023 Dec 1 11 2024 Jan 1 11 2024 Feb 1 9 2024 Mar 1 9 2024 Apr 1 7 2024 May 1 7 2024 Jun 1 5 2024 Jul 1 13 2024 Aug 1 4 2024 Sep 1 1 2024 Oct 1 2 2024 Nov 1 2 2024 Dec 1 2 2025 Jan 1 3 2025 Feb 1 3 2025 Mar 1 3 2025 Apr 1 3 2025 May 1 3 2025 Jun 1 3 2025 Jul 1 3 2025 Aug 1 3 2025 Sep 1 1 2025 Oct 1 1 2025 Nov 1 2 2025 Dec 1 2 2026 Jan 1 3 2026 Feb 1 3 2026 Mar 1 3
+### [p031_c0008] Summonses and Arrests
+[p031_c0009] The number of criminal summonses issued for fare evasion, the number of criminal summonses issued for other infractions, and the number of arrests made by MTA Police Department
+> [p031_c0010] Estimated Data for Summonses and Arrests Year Month Arrests Fare Evasion Summonses Other Criminal Summonses 2023 Jan 50 20 30 2023 Feb 50 20 30 2023 Mar 50 20 30 2023 Apr 50 20 30 2023 May 50 20 30 2023 Jun 50 20 30 2023 Jul 50 20 30 2023 Aug 50 20 30 2023 Sep 50 20 30 2023 Oct 50 20 30 2023 Nov 50 20 30 2023 Dec 50 20 30 2024 Jan 50 20 30 2024 Feb 50 20 30 2024 Mar 50 20 30 2024 Apr 50 20 30 2024 May 50 20 30 2024 Jun 50 20 30 2024 Jul 50 20 30 2024 Aug 50 20 30 2024 Sep 50 20 30 2024 Oct 50 20 30 2024 Nov 50 20 30 2024 Dec 50 20 30 2025 Jan 50 20 30 2025 Feb 50 20 30 2025 Mar 50 20 30 2025 Apr 50 20 30 2025 May 50 20 30 2025 Jun 50 20 30 2025 Jul 50 20 30 2025 Aug 50 20 30 2025 Sep 50 20 30 2025 Oct 50 20 30 2025 Nov 50 20 30 2025 Dec 50 20 30 2026 Jan 50 20 30 2026 Feb 50 20 30 2026 Mar 50 20 30
+[p031_c0011] _| 31 |_
+
+## Page 32
+
+### [p032_c0001] MTA Metro-North Railroad
+[p032_c0002] Take Your Children To Work Day April 23, 2026
+[p032_c0003] Junior Rail Ambassador
+### [p032_c0004] MTA Metro-North Railroad
+[p032_c0005] Take Your Children To Work Day April 23, 2026
+[p032_c0006] Junior Rail Ambassador
+
+## Page 33
+
+> [p033_c0001] A solid, uniform dark blue background with no visible text, patterns, or other features.
+
+## Page 34
+
+### [p034_c0001] ABOUT THE METROPOLITAN TRANSPORTATION AUTHORITY, THE LONG ISLAND RAIL ROAD, AND METRO-NORTH RAILROAD
+[p034_c0002] The Metropolitan Transportation Authority is North America's largest transportation network, serving a population of 15.3 million people across a 5,000 square-mile travel area surrounding New York City through Long Island, southeastern New York State, and Connecticut.
+[p034_c0003] Long Island Rail Road is comprised of over 7,000 employees serving over 200,000 passengers a day. We operate 700 trains daily and maintain 125 stations, nearly 700 miles of track, and 27 shops and yards.
+[p034_c0004] Metro-North Railroad is comprised of nearly 6,000 employees serving over 200,000 passengers a day. We operate 700 trains daily and maintain 124 stations, nearly 900 miles of track, and 19 shops and yards.
+[p034_c0005] The MTA is governed by a 23-member Board, organized in eight committees. Members of the Joint Long Island Rail Road and Metro-North Railroad Committee include:
+- [p034_c0006] • Marc Herbst, Co-Chair • Blanca Lopez, Co-Chair • Gerard Bringmann • Samuel Chu • Michael Fleischer • Daniel Garodnick • Randolph Glucksman • Christopher Leathers • David Mack • Melva M. Miller • James O'Donnell • Lisa Sorin • Midori Valdivia • Ed Valente • Neal Zuckerman
+> [p034_c0007] The MTA logo, consisting of the letters "MTA" in a bold, sans-serif font, is centered within a white circle. The circle is set against a dark blue background.

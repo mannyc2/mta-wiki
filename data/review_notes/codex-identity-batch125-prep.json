@@ -1,0 +1,445 @@
+{
+  "note_id": "codex-identity-batch125-prep",
+  "batch_id": "identity125",
+  "batch": "identity125",
+  "created_at": "2026-06-23T00:00:00.000Z",
+  "author": "codex",
+  "scope": {
+    "mode": "codex-only deterministic prep",
+    "global_kind": "project",
+    "global_kinds": [
+      "project"
+    ],
+    "output_artifact": "data/review_notes/codex-identity-batch125-prep.json"
+  },
+  "prepared_count": 8,
+  "aliases": [
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_lirr-ada-package-1",
+      "target_id": "project_lirr-ada-package-1",
+      "alias_id": "project_lirr-ada-station-package-1",
+      "canonical_name": "LIRR ADA Station Improvements Package 1",
+      "alias_name": "LIRR ADA Station Improvements Package #1",
+      "reason": "Same LIRR ADA Station Improvements Package 1 design-build project. Both records describe ADA improvements to the same nine-station LIRR package, with board-award status at document time and no conflicting phase or package number.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_lirr-ada-package-1",
+          "record_kind": "project",
+          "display_name": "LIRR ADA Station Improvements Package 1",
+          "project_name": "LIRR ADA Station Improvements Package 1",
+          "description": "ADA improvements to nine LIRR stations: Amityville, Copiague, Lindenhurst, Massapequa Park, Laurelton, St. Albans, Locust Manor, Auburndale, Valley Stream.",
+          "status": "Board approval sought for award November 2022",
+          "source_ids": [
+            "meeting_doc_100281"
+          ],
+          "evidence_refs": [
+            "meeting_doc_100281#p078_c0009",
+            "meeting_doc_100281#p078_c0008"
+          ]
+        },
+        "alias": {
+          "record_id": "project_lirr-ada-station-package-1",
+          "record_kind": "project",
+          "display_name": "LIRR ADA Station Improvements Package #1",
+          "project_name": "Long Island Rail Road ADA Station Improvements Package #1",
+          "description": "ADA improvements to nine LIRR stations in Nassau, Suffolk, and Queens counties",
+          "status": "board approval to award",
+          "source_ids": [
+            "meeting_doc_101026"
+          ],
+          "evidence_refs": [
+            "meeting_doc_101026#p026_c0007",
+            "meeting_doc_101026#p026_c0009"
+          ]
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: exact package number, same LIRR ADA station-improvement scope, compatible board-award document-time status, and no station/contract/program-vs-project conflict found. Alias absent from data/identity-overrides/merges.json and visible identity prep through identity123; no identity124 artifact was visible; pair absent from project do-not-merge."
+    },
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_lirr-ada-package-1",
+      "target_id": "project_lirr-ada-package-1",
+      "alias_id": "project_meeting-doc-192191-lirr-ada-pkg1",
+      "canonical_name": "LIRR ADA Station Improvements Package 1",
+      "alias_name": "LIRR ADA Station Improvements Package 1",
+      "reason": "Same LIRR ADA Station Improvements Package 1 project. The alias repeats the package title and lists the same station set, with later in-progress status rather than a separate package or phase.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_lirr-ada-package-1",
+          "record_kind": "project",
+          "display_name": "LIRR ADA Station Improvements Package 1",
+          "project_name": "LIRR ADA Station Improvements Package 1",
+          "description": "ADA improvements to nine LIRR stations: Amityville, Copiague, Lindenhurst, Massapequa Park, Laurelton, St. Albans, Locust Manor, Auburndale, Valley Stream.",
+          "status": "Board approval sought for award November 2022",
+          "source_ids": [
+            "meeting_doc_100281"
+          ],
+          "evidence_refs": [
+            "meeting_doc_100281#p078_c0009",
+            "meeting_doc_100281#p078_c0008"
+          ]
+        },
+        "alias": {
+          "record_id": "project_meeting-doc-192191-lirr-ada-pkg1",
+          "record_kind": "project",
+          "display_name": "LIRR ADA Station Improvements Package 1",
+          "project_name": "LIRR ADA Station Improvements Package 1",
+          "description": "Nine stations: Amityville, Copiague, Lindenhurst, Massapequa Park, St. Albans, Laurelton, Locust Manor, Valley Stream (escalator replacement & elevator replacement) and Auburndale (elevator replacement). Work includes new elevators/escalators, ADA station building amenities, ADA path of travel amenities.",
+          "status": "in progress",
+          "source_ids": [
+            "meeting_doc_192191"
+          ],
+          "evidence_refs": [
+            "meeting_doc_192191#p016_c0008",
+            "meeting_doc_192191#p016_c0009",
+            "meeting_doc_192191#p016_c0010"
+          ]
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: exact project/package title, same package number, same station list with later lifecycle status, and no indication of a distinct phase or successor contract. Alias absent from data/identity-overrides/merges.json and visible identity prep through identity123; no identity124 artifact was visible; pair absent from project do-not-merge."
+    },
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_nostrand-ave-ada-208021",
+      "target_id": "project_nostrand-ave-ada-208021",
+      "alias_id": "project_nostrand-ave-ada-may2026",
+      "canonical_name": "Nostrand Avenue ADA Project",
+      "alias_name": "NYCT Nostrand Avenue ADA Project",
+      "reason": "Same NYCT ADA accessibility project at Nostrand Avenue Station on the IND Fulton Street Line. Both records describe the same Brooklyn station, three new elevators, station reconfiguration/new fare control work, and property-acquisition/eminent-domain context.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_nostrand-ave-ada-208021",
+          "record_kind": "project",
+          "display_name": "Nostrand Avenue ADA Project",
+          "project_name": "ADA Accessibility Updates at the Nostrand Avenue Station on the IND Fulton Street Line Project",
+          "borough_normalized": "brooklyn",
+          "description": "Installation of three new elevators, reconfiguration of station layout to support new vertical circulation, construction of new fare control areas, and critical state-of-good-repair work on station platforms including platform edges at Nostrand Avenue Station (IND Fulton Street Line). Property acquisition at 1242 Fulton Street for ADA elevator construction.",
+          "status": "ongoing",
+          "source_ids": [
+            "meeting_doc_208021"
+          ],
+          "evidence_refs": [
+            "meeting_doc_208021#p246_c0003",
+            "meeting_doc_208021#p246_c0007",
+            "meeting_doc_208021#p242_c0008"
+          ]
+        },
+        "alias": {
+          "record_id": "project_nostrand-ave-ada-may2026",
+          "record_kind": "project",
+          "display_name": "NYCT Nostrand Avenue ADA Project",
+          "project_name": "NYCT Nostrand Avenue ADA Project",
+          "borough_normalized": "brooklyn",
+          "location": "1242 Fulton Street, Brooklyn, NY",
+          "description": "ADA accessibility project at Nostrand Avenue Station on the IND Fulton Street Line, including installation of three new elevators, reconfiguration of station layout, new fare control areas, and state-of-good-repair work on station platforms",
+          "status": "eminent domain proceedings",
+          "source_ids": [
+            "meeting_doc_208146"
+          ],
+          "evidence_refs": [
+            "meeting_doc_208146#p051_c0010"
+          ]
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: same station, same line, same borough, same 1242 Fulton Street acquisition context, and compatible ongoing/eminent-domain statuses. Alias absent from data/identity-overrides/merges.json and visible identity prep through identity123; no identity124 artifact was visible; pair absent from project do-not-merge."
+    },
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_nostrand-ave-ada-208021",
+      "target_id": "project_nostrand-ave-ada-208021",
+      "alias_id": "project_nostrand-avenue-ada-project",
+      "canonical_name": "Nostrand Avenue ADA Project",
+      "alias_name": "Nostrand Avenue ADA Project",
+      "reason": "Same Nostrand Avenue Station ADA accessibility project. The alias shares the project title, Brooklyn borough, Nostrand Avenue subway station scope, and 1242 Fulton Street acquisition context with the target.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_nostrand-ave-ada-208021",
+          "record_kind": "project",
+          "display_name": "Nostrand Avenue ADA Project",
+          "project_name": "ADA Accessibility Updates at the Nostrand Avenue Station on the IND Fulton Street Line Project",
+          "borough_normalized": "brooklyn",
+          "description": "Installation of three new elevators, reconfiguration of station layout to support new vertical circulation, construction of new fare control areas, and critical state-of-good-repair work on station platforms including platform edges at Nostrand Avenue Station (IND Fulton Street Line). Property acquisition at 1242 Fulton Street for ADA elevator construction.",
+          "status": "ongoing",
+          "source_ids": [
+            "meeting_doc_208021"
+          ],
+          "evidence_refs": [
+            "meeting_doc_208021#p246_c0003",
+            "meeting_doc_208021#p246_c0007",
+            "meeting_doc_208021#p242_c0008"
+          ]
+        },
+        "alias": {
+          "record_id": "project_nostrand-avenue-ada-project",
+          "record_kind": "project",
+          "display_name": "Nostrand Avenue ADA Project",
+          "project_name": "Nostrand Avenue ADA Project",
+          "borough_normalized": "brooklyn",
+          "description": "NYCT project to construct a new ADA elevator at the Nostrand Avenue subway station, requiring acquisition of 1242 Fulton Street, Brooklyn.",
+          "status": "In progress - property acquisition phase",
+          "source_ids": [
+            "meeting_doc_186831"
+          ],
+          "evidence_refs": [
+            "meeting_doc_186831#p021_c0008",
+            "meeting_doc_186831#p021_c0010"
+          ]
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: exact project title, same Brooklyn station, same ADA elevator/property-acquisition scope, and compatible in-progress/ongoing document-time status. Alias absent from data/identity-overrides/merges.json and visible identity prep through identity123; no identity124 artifact was visible; pair absent from project do-not-merge."
+    },
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_marcy-av-bus-priority-sip-12263-cb1-jun2025",
+      "target_id": "project_marcy-av-bus-priority-sip-12263-cb1-jun2025",
+      "alias_id": "project_marcy-ave-bus-priority-sip12263",
+      "canonical_name": "Marcy Av, Borinquen Pl to Broadway - Bus Priority Street Improvement Project (SIP ID: 12263)",
+      "alias_name": "Marcy Av, Borinquen Pl to Broadway - Bus Priority Street Improvement Project (SIP ID: 12263)",
+      "reason": "Same Marcy Avenue Bus Priority Street Improvement Project. Both records share the exact corridor limits, Brooklyn borough, SIP ID 12263, proposed status, and bus-priority lane/loading/turning-improvement scope across June and September 2025 source presentations.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_marcy-av-bus-priority-sip-12263-cb1-jun2025",
+          "record_kind": "project",
+          "display_name": "Marcy Av, Borinquen Pl to Broadway - Bus Priority Street Improvement Project (SIP ID: 12263)",
+          "project_name": "Marcy Av, Borinquen Pl to Broadway - Bus Priority Street Improvement Project",
+          "borough_normalized": "brooklyn",
+          "description": "Bus Priority Street Improvement Project (SIP ID: 12263) along Marcy Avenue from Borinquen Place to Broadway, Brooklyn. Presented as a CB1 Transportation Committee Project Proposal in June 2025. Includes travel lane widened for safer truck/bus turns, bus lane merges into general travel lane, new Neighborhood Loading Zone, part-time parking lane replaced with full-time general travel lane, general travel lane converted to Bus Priority Lane.",
+          "status": "Proposed",
+          "source_ids": [
+            "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_jun2025"
+          ],
+          "evidence_refs": [
+            "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_jun2025#p001_c0002",
+            "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_jun2025#p001_c0003",
+            "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_jun2025#p006_c0001"
+          ]
+        },
+        "alias": {
+          "record_id": "project_marcy-ave-bus-priority-sip12263",
+          "record_kind": "project",
+          "display_name": "Marcy Av, Borinquen Pl to Broadway - Bus Priority Street Improvement Project (SIP ID: 12263)",
+          "project_name": "Marcy Av, Borinquen Pl to Broadway",
+          "borough_normalized": "brooklyn",
+          "description": "Bus priority improvements along Marcy Avenue from Borinquen Place to Broadway, including bus priority lane, loading zone, pavement markings, and turning improvements",
+          "status": "proposed",
+          "source_ids": [
+            "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_sept2025"
+          ],
+          "evidence_refs": [
+            "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_sept2025#p001_c0001",
+            "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_sept2025#p001_c0002",
+            "ace_able_pdf_marcy_ave_borinquen_pl_broadway_cb1_sept2025#p001_c0003"
+          ]
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: exact SIP ID 12263, same street limits and borough, same project family, and compatible proposed document-time status. Alias absent from data/identity-overrides/merges.json and visible identity prep through identity123; no identity124 artifact was visible; pair absent from project do-not-merge."
+    },
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_marble-hill-substation",
+      "target_id": "project_marble-hill-substation",
+      "alias_id": "project_meeting-doc-170991-marble-hill-substation",
+      "canonical_name": "NYCT Marble Hill Substation Project",
+      "alias_name": "NYCT Marble Hill Substation Project",
+      "reason": "Same NYCT Marble Hill / 225th Street substation project. Both records describe a new electrical substation in the Bronx supporting NYCT subway operations on the Broadway-Seventh Avenue Line, with property acquisition as a project step rather than a separate durable project.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_marble-hill-substation",
+          "record_kind": "project",
+          "display_name": "NYCT Marble Hill Substation Project",
+          "project_name": "225th Street / Marble Hill Substation Project",
+          "borough_normalized": "bronx",
+          "description": "Construction of a new electrical substation at 5229 Broadway, Bronx, in support of NYCT subway operations along the Broadway-Seventh Avenue Line",
+          "status": "active",
+          "source_ids": [
+            "meeting_doc_171381"
+          ],
+          "evidence_refs": [
+            "meeting_doc_171381#p046_c0010"
+          ]
+        },
+        "alias": {
+          "record_id": "project_meeting-doc-170991-marble-hill-substation",
+          "record_kind": "project",
+          "display_name": "NYCT Marble Hill Substation Project",
+          "project_name": "NYCT Marble Hill Substation Project",
+          "borough_normalized": "bronx",
+          "description": "Property acquisition for new electrical substation in support of NYCT subway operations along the Broadway-Seventh Avenue Line",
+          "status": "Authorization requested to acquire property through negotiated agreement or eminent domain",
+          "source_ids": [
+            "meeting_doc_170991"
+          ],
+          "evidence_refs": [
+            "meeting_doc_170991#p001_c0006",
+            "meeting_doc_170991#p007_c0010"
+          ]
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: exact project display name, same Bronx substation, same subway-line support purpose, and compatible property-acquisition/active lifecycle statuses. Alias absent from data/identity-overrides/merges.json and visible identity prep through identity123; no identity124 artifact was visible; pair absent from project do-not-merge."
+    },
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_marble-hill-substation",
+      "target_id": "project_marble-hill-substation",
+      "alias_id": "project_meeting-doc-171021-marble-hill-substation",
+      "canonical_name": "NYCT Marble Hill Substation Project",
+      "alias_name": "NYCT Marble Hill Substation Project",
+      "reason": "Same NYCT Marble Hill Substation Project. The alias repeats the exact title and describes authorization to acquire property interests in Bronx, NY for the same substation project represented by the target.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_marble-hill-substation",
+          "record_kind": "project",
+          "display_name": "NYCT Marble Hill Substation Project",
+          "project_name": "225th Street / Marble Hill Substation Project",
+          "borough_normalized": "bronx",
+          "description": "Construction of a new electrical substation at 5229 Broadway, Bronx, in support of NYCT subway operations along the Broadway-Seventh Avenue Line",
+          "status": "active",
+          "source_ids": [
+            "meeting_doc_171381"
+          ],
+          "evidence_refs": [
+            "meeting_doc_171381#p046_c0010"
+          ]
+        },
+        "alias": {
+          "record_id": "project_meeting-doc-171021-marble-hill-substation",
+          "record_kind": "project",
+          "display_name": "NYCT Marble Hill Substation Project",
+          "project_name": "NYCT Marble Hill Substation Project",
+          "borough_normalized": "bronx",
+          "location": "Bronx, NY",
+          "description": "Authorization to acquire property interests by negotiated agreement or eminent domain for the NYCT Marble Hill Substation Project in Bronx, NY",
+          "source_ids": [
+            "meeting_doc_171021"
+          ],
+          "evidence_refs": [
+            "meeting_doc_171021#p001_c0003"
+          ]
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: exact project title, same Bronx location, same property-acquisition/substation scope, and no distinct station/contract/phase signal. Alias absent from data/identity-overrides/merges.json and visible identity prep through identity123; no identity124 artifact was visible; pair absent from project do-not-merge."
+    },
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_vn49-paint-suspended-span",
+      "target_id": "project_vn49-paint-suspended-span",
+      "alias_id": "project_vn49-paint-suspended-span-upper-lower-level-steel",
+      "canonical_name": "VN-49 Paint Suspended Span Upper & Lower Level Steel",
+      "alias_name": "VN-49 Paint Suspended Span Upper & Lower Level Steel",
+      "reason": "Same VN-49 Verrazzano-Narrows Bridge capital project. Both records share the exact VN-49 project title, suspended-span upper/lower-level steel painting scope, Verrazzano-Narrows Bridge location, $73.6 million budget, in-progress status, and December 2021 completion timing.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_vn49-paint-suspended-span",
+          "record_kind": "project",
+          "display_name": "VN-49 Paint Suspended Span Upper & Lower Level Steel",
+          "project_name": "Paint Suspended Span Upper & Lower Level Steel",
+          "description": "VN-49 Paint suspended span upper and lower level steel at Verrazzano-Narrows Bridge. Budget $73.6 million. 70% physically complete.",
+          "status": "in progress",
+          "completion_target_year": "December 2021",
+          "source_ids": [
+            "meeting_doc_52711"
+          ],
+          "evidence_refs": [
+            "meeting_doc_52711#p085_c0003"
+          ]
+        },
+        "alias": {
+          "record_id": "project_vn49-paint-suspended-span-upper-lower-level-steel",
+          "record_kind": "project",
+          "display_name": "VN-49 Paint Suspended Span Upper & Lower Level Steel",
+          "project_name": "VN-49 Paint Suspended Span Upper & Lower Level Steel",
+          "description": "Painting of suspended span upper and lower level steel at Verrazzano-Narrows Bridge. Budget $73.6 million, 58% physically complete, 17% contingency spent.",
+          "status": "in progress",
+          "completion_date": "Dec-21",
+          "source_ids": [
+            "meeting_doc_42391"
+          ],
+          "evidence_refs": [
+            "meeting_doc_42391#p049_c0003"
+          ]
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: exact VN-49 code/title, same bridge and steel-painting scope, matching budget and completion timing, and no separate award/phase signal. Alias absent from data/identity-overrides/merges.json and visible identity prep through identity123; no identity124 artifact was visible; pair absent from project do-not-merge."
+    }
+  ],
+  "guard_summary": {
+    "project_only": true,
+    "deterministic_only": true,
+    "target_limit": 8,
+    "prepared_count": 8,
+    "confidence_policy": "Only high-confidence aliases included; lower-confidence same-name clusters with possible program-vs-project, phase, option, award, contract, station, or scope ambiguity were excluded.",
+    "exclusions_checked": [
+      "data/identity-overrides/merges.json .aliases.project alias_id keys",
+      "visible data/review_notes/codex-identity-batch*-prep.json project aliases through identity123",
+      "identity124 searched but no visible identity124 prep artifact or reference was found",
+      "data/identity-overrides/do-not-merge.json .pairs.project"
+    ],
+    "merge_shape_reminder": "Prepared aliases assume durable overrides use alias_id -> target_id entries under data/identity-overrides/merges.json .aliases.project."
+  },
+  "command_evidence": [
+    {
+      "command": "rg --files data | rg '(^data/identity-overrides/merges\\.json$|^data/review_notes/.*identity.*(batch|prep).*\\.json$|^data/canonical/.*project|^data/materialized/.*project)'",
+      "purpose": "Located existing identity override, prior identity prep, and project canonical artifacts."
+    },
+    {
+      "command": "rg -n \"identity124|batch124|identity-batch124|batch 124\" data/review_notes data/identity-overrides || true",
+      "purpose": "Checked for visible identity124 prep/application references; none were found."
+    },
+    {
+      "command": "jq -r '.aliases.project | keys[]' data/identity-overrides/merges.json | sort -u | wc -l",
+      "purpose": "Confirmed project alias exclusion set from durable merges.json."
+    },
+    {
+      "command": "jq -r '.aliases[]? | select((.global_kind // .kind) == \"project\") | [.target_id,.alias_id] | @tsv' data/review_notes/codex-identity-batch*-prep.json | sort -u",
+      "purpose": "Collected visible prior project prep aliases for exclusion."
+    },
+    {
+      "command": "node -e '<read-only project duplicate clustering over data/canonical/projects.jsonl, data/identity-overrides/merges.json, and data/review_notes/codex-identity-batch*-prep.json>'",
+      "purpose": "Identified candidate project duplicate clusters after excluding durable and prior-prepped aliases."
+    },
+    {
+      "command": "node -e '<read-only project record detail inspection for selected candidate ids>'",
+      "purpose": "Inspected payloads, source_ids, and evidence_refs for candidate project records."
+    },
+    {
+      "command": "node -e '<read-only do-not-merge check against data/identity-overrides/do-not-merge.json .pairs.project>'",
+      "purpose": "Confirmed selected target/alias pairs were absent from project do-not-merge."
+    },
+    {
+      "command": "test ! -e data/review_notes/codex-identity-batch125-prep.json && echo absent || echo exists",
+      "purpose": "Confirmed the requested output artifact did not already exist before writing."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema-propose",
+    "ontology-normalize-run",
+    "ingest/write with --profile/provider",
+    "materialize",
+    "validate",
+    "export-jsonl",
+    "DB publish/repair",
+    "provider-backed or external LLM commands"
+  ]
+}

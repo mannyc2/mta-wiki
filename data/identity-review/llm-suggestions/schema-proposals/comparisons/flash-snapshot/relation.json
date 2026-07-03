@@ -1,0 +1,234 @@
+{
+  "schema_proposal_run_id": "2026-06-08T23-05-26-749Z_schema-proposal-run",
+  "proposed_at": "2026-06-08T23:05:40.881Z",
+  "observation_kind": "relation",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "audit_packet": {
+    "observation_kind": "relation",
+    "submission_count": 370,
+    "accepted_count": 354,
+    "rejected_count": 16,
+    "declared_anchor_fields": [
+      "object_local_observation_id",
+      "relation_kind",
+      "subject_local_observation_id"
+    ],
+    "enum_candidates": [
+      {
+        "field": "raw_relation_kind",
+        "occurrences": 4,
+        "coverage": 0.01,
+        "distinct_values": 1,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "affects_route"
+        ],
+        "value_counts": [
+          {
+            "value": "affects_route",
+            "count": 4
+          }
+        ]
+      }
+    ],
+    "additional_keys": [
+      {
+        "field": "contractor",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Skanska"
+        ]
+      },
+      {
+        "field": "description",
+        "occurrences": 97,
+        "coverage": 0.26,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "ACE program expanded to five new bus routes",
+          "MTA Data & Analytics team publishes blog posts including Curious customers, cool tools, and open data",
+          "MTA released subway hourly ridership and bus hourly ridership datasets in 2023",
+          "The MTA Open Data Program held the Budget Press Tour public engagement events in 2024",
+          "14th Street bus boarding platform installation",
+          "14th Street Busway was made permanent in June 2020",
+          "14th Street is a Vision Zero Priority Corridor",
+          "14th Street TTP Pilot Project implemented by NYCDOT"
+        ]
+      },
+      {
+        "field": "hotline",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "(929) 380-5778"
+        ]
+      },
+      {
+        "field": "new_location",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "90th Avenue"
+        ]
+      },
+      {
+        "field": "new_location_normalized",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "old_location",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Merrick Boulevard"
+        ]
+      },
+      {
+        "field": "old_location_normalized",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "routes",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Bx5",
+          "M100",
+          "M2",
+          "M4",
+          "M42"
+        ]
+      },
+      {
+        "field": "routes_affected",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Bx5",
+          "M100",
+          "M2",
+          "M4",
+          "M42"
+        ]
+      }
+    ]
+  },
+  "closure_policy": "deferred",
+  "closure_signals": [
+    {
+      "field": "raw_relation_kind",
+      "closure_readiness": "open",
+      "occurrences": 4,
+      "coverage": 0.01
+    }
+  ],
+  "valid": true,
+  "schema_issues": [],
+  "warnings": [],
+  "proposal": {
+    "observation_kind": "relation",
+    "field_proposals": [
+      {
+        "field": "raw_relation_kind",
+        "decision": "enum",
+        "canonical_values": [
+          "affects_route"
+        ],
+        "value_mapping": [
+          {
+            "from": "affects_route",
+            "to": "affects_route"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "relation_kind_other"
+        },
+        "rationale": "Single observed value; open enum with escape hatch for future kinds."
+      }
+    ],
+    "key_dispositions": [
+      {
+        "key": "contractor",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Sparse scalar identifying a specific contractor involved in the relation; not a core field."
+      },
+      {
+        "key": "description",
+        "disposition": "promote_field",
+        "target": "description",
+        "rationale": "Adequate coverage (26%) as free text; provides narrative context for the relation."
+      },
+      {
+        "key": "hotline",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Sparse scalar contact detail; specific to a single relation instance."
+      },
+      {
+        "key": "new_location",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Sparse scalar; part of a location change detail not generalized across relations."
+      },
+      {
+        "key": "new_location_normalized",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Sparse structured object associated with the same location change; insufficient sample to promote."
+      },
+      {
+        "key": "old_location",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Sparse scalar; counterpart to new_location."
+      },
+      {
+        "key": "old_location_normalized",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Sparse structured object; counterpart to new_location_normalized."
+      },
+      {
+        "key": "routes",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Sparse array of route identifiers specific to one relation instance."
+      },
+      {
+        "key": "routes_affected",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Sparse array similar to routes; appears in only two instances, not yet generalizable."
+      }
+    ],
+    "notes": "anchor fields (relation_kind, subject_local_observation_id, object_local_observation_id) are already declared and not proposed here. All additional keys are treated as relation context due to sparsity or specificity, except description which has sufficient coverage to promote as free text."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T23-05-26-751Z_3564593-abad7b3c_schema-proposal-run_relation",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-05-26-751Z_2026-06-08T23-05-26-751Z_3564593-abad7b3c_schema-proposal-run_relation.jsonl"
+}

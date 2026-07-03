@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "entity_cluster_015834c48e",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_015834c48e.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_015834c48e.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "quarantined",
+  "quarantine": {
+    "blocker": "merge entity_meeting-doc-127956-hdr + entity_meeting-doc-199016-hdr: entity_meeting-doc-127956-hdr and entity_meeting-doc-199016-hdr share no strong identity key (canon test 2 shape not met)"
+  },
+  "original_merge_groups": [
+    [
+      "entity_meeting-doc-127956-hdr",
+      "entity_meeting-doc-199016-hdr"
+    ]
+  ],
+  "original_do_not_merge": []
+}

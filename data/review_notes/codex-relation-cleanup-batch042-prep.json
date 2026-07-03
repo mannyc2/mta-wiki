@@ -1,0 +1,283 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch042-prep",
+  "created_at": "2026-06-23T00:42:00Z",
+  "author": "codex",
+  "batch_id": "relation042",
+  "batch": "batch042",
+  "scope": "Codex-only relation endpoint-shape cleanup prep; no durable retirements or replacement submissions applied",
+  "bucket": {
+    "name": "related_route project-to-route Q44 SBS route-scope row",
+    "original_relation_kind": "related_route",
+    "original_endpoint_shape": "project -> route",
+    "replacement_relation_kind": "serves_route",
+    "replacement_endpoint_shape": "project -> route",
+    "prepared_original_count": 1,
+    "cleanup_direction": "data cleanup only; do not widen related_route beyond route -> route",
+    "rationale": "The accepted original label says the Q44 SBS project serves the Q44 LTD route, but the relation kind was related_route, whose endpoint rule is route -> route. The same source already has accepted project and Q44 LTD route local ids, and current rules accept serves_route project -> route. Replacing only the relation kind preserves the source-backed route-scope fact without schema or ontology invention."
+  },
+  "checkpoint_context": {
+    "reported_checkpoint": {
+      "unexpected_relation_endpoint_shape": 29,
+      "context": "Fresh baseline after relation041/identity073/next17 checkpoint supplied in task."
+    },
+    "read_only_probe_count": 13,
+    "read_only_probe_note": "Local canonical JSONL in the shared dirty worktree currently shows 13 shaped relation issues under current endpoint rules; this prep uses the task-supplied baseline of 29 for the expected delta estimate.",
+    "selected_bucket_count": 1,
+    "expected_endpoint_shape_issue_delta": -1,
+    "endpoint_shape_issue_count_after_replacement_estimate": 28,
+    "endpoint_shape_probe": {
+      "related_route project->route": "Relation kind related_route expects route -> route, got project -> route.",
+      "serves_route project->route": "accepted by current endpoint-shape rules"
+    }
+  },
+  "durable_mechanism_prepared_not_applied": {
+    "retire_originals_via": "data/submission-overrides/retired.json",
+    "replacement_journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch042.jsonl",
+    "mutation_status": "not_applied_by_this_prep",
+    "only_file_written_by_this_task": "data/review_notes/codex-relation-cleanup-batch042-prep.json"
+  },
+  "exclusions_and_guards": {
+    "excluded_prior_relation_batches": [
+      "batch037",
+      "batch038",
+      "batch039",
+      "batch040",
+      "batch041"
+    ],
+    "missing_target_repairs_excluded": true,
+    "schema_or_ontology_invention_candidates_excluded": true,
+    "guarded_files_not_edited": [
+      "data/submission-overrides/retired.json",
+      "data/submissions/*.jsonl",
+      "data/canonical/*.jsonl",
+      "data/canonical.db",
+      "wiki/*",
+      "LOG.md",
+      "manifest files",
+      "identity overrides",
+      "code"
+    ],
+    "original_submission_guard": {
+      "selected_original_submission_id": "sub_98132bef60809a07",
+      "selected_original_record_id": "relation_project-q44-sbs-has-q44-ltd",
+      "retired_hits_for_selected_originals": [],
+      "prior_relation_batches_037_041_hits_for_selected_originals": [],
+      "canonical_original_present": true
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": [],
+      "canonical_record_collision_hits_for_new_batch042_locals": []
+    },
+    "known_endpoint_local_ids_confirmed": [
+      "project_q44_sbs_launch_2015",
+      "route_q44_ltd_2015_cb7"
+    ],
+    "nearby_existing_relation_context": [
+      {
+        "record_id": "relation_project-q44-sbs-has-route",
+        "local_observation_id": "relation_project_q44_sbs_has_route",
+        "relation_kind": "serves_route",
+        "subject_local_observation_id": "project_q44_sbs_launch_2015",
+        "object_local_observation_id": "route_q44_sbs_2015_cb7",
+        "note": "Existing valid companion relation links the same project to the Q44 SBS route; batch042 only repairs the malformed Q44 LTD route-scope row."
+      }
+    ]
+  },
+  "local_validation": {
+    "clean": true,
+    "tooling": "createSubmissionEntry dry-run for one corrected serves_route project->route replacement, relationEndpointIssues using accepted same-source local ids, and relationEndpointShapeIssue probe for original and replacement shapes.",
+    "summary": {
+      "prepared_count": 1,
+      "retire_replace_count": 1,
+      "retire_only_count": 0,
+      "replacement_submission_count": 1,
+      "accepted_replacement_count": 1,
+      "issue_count": 0,
+      "warning_count": 0,
+      "relation_endpoint_issue_count": 0,
+      "endpoint_shape_issue_count_after_replacement": 0,
+      "endpoint_shape_issue_count_after_replacement_estimate": 28
+    }
+  },
+  "prepared_count": 1,
+  "retire_replace_count": 1,
+  "accepted_replacement_count": 1,
+  "issue_count": 0,
+  "endpoint_shape_issue_count_after_replacement_estimate": 28,
+  "all_pass": true,
+  "decisions": [
+    {
+      "action": "retire_and_replace",
+      "retire": {
+        "submission_id": "sub_98132bef60809a07",
+        "run_id": "2026-06-19T17-54-14-761Z_357538-b5949a9e_ingest_2015-09-22-brt-flushing-jamaica-cb7-presentation",
+        "original_record_id": "relation_project-q44-sbs-has-q44-ltd",
+        "original_local_observation_id": "relation_project_q44_sbs_has_q44_ltd",
+        "malformed_shape": "related_route project -> route",
+        "original_relation_kind": "related_route",
+        "original_subject_id": "project_q44-sbs-launch-2015",
+        "original_subject_kind": "project",
+        "original_subject_local_observation_id": "project_q44_sbs_launch_2015",
+        "original_subject_name": "Q44 Select Bus Service",
+        "original_object_id": "route_q44-ltd-2014-10-07-flushing-jamaica",
+        "original_object_kind": "route",
+        "original_object_local_observation_id": "route_q44_ltd_2015_cb7",
+        "original_object_name": "Q44 LTD",
+        "current_args": {
+          "source_id": "2015_09_22_brt_flushing_jamaica_cb7_presentation",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_project_q44_sbs_has_q44_ltd",
+          "label": "Q44 SBS Project serves Q44 LTD route",
+          "payload": {
+            "relation_kind": "related_route",
+            "subject_local_observation_id": "project_q44_sbs_launch_2015",
+            "object_local_observation_id": "route_q44_ltd_2015_cb7",
+            "description": "Q44 SBS replaces Q44 LTD on same corridor",
+            "relation_family": "route_scope"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "2015_09_22_brt_flushing_jamaica_cb7_presentation",
+              "evidence_id": "2015_09_22_brt_flushing_jamaica_cb7_presentation#p007_c0003",
+              "source_path": "raw/sources/2015_09_22_brt_flushing_jamaica_cb7_presentation/blocks.jsonl",
+              "page_number": 7,
+              "block_id": "p007_c0003",
+              "text_sha256": "sha256:532d0f481c27713830e20b0108a93cd401e06b6c17364bedcab85c4f80cf3a7f",
+              "text_source": "raw_text"
+            }
+          ]
+        },
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_98132bef60809a07",
+          "reason": "Codex relation cleanup batch042 replaces malformed related_route project -> route relation relation_project-q44-sbs-has-q44-ltd with validator-compatible serves_route project -> route relation preserving Q44 SBS/Q44 LTD route-scope evidence.",
+          "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch042",
+          "reviewed_at": "2026-06-23T00:42:00Z"
+        },
+        "source_evidence": [
+          {
+            "source_id": "2015_09_22_brt_flushing_jamaica_cb7_presentation",
+            "evidence_id": "2015_09_22_brt_flushing_jamaica_cb7_presentation#p007_c0003",
+            "source_path": "raw/sources/2015_09_22_brt_flushing_jamaica_cb7_presentation/blocks.jsonl",
+            "page_number": 7,
+            "block_id": "p007_c0003",
+            "text_sha256": "sha256:532d0f481c27713830e20b0108a93cd401e06b6c17364bedcab85c4f80cf3a7f",
+            "text_source": "raw_text",
+            "source_quote": "Q20A/B: Jamaica to College Point; Q44: Jamaica to Bronx Zoo"
+          },
+          {
+            "source_id": "2015_09_22_brt_flushing_jamaica_cb7_presentation",
+            "evidence_id": "2015_09_22_brt_flushing_jamaica_cb7_presentation#p007_c0004",
+            "source_path": "raw/sources/2015_09_22_brt_flushing_jamaica_cb7_presentation/blocks.jsonl",
+            "page_number": 7,
+            "block_id": "p007_c0004",
+            "text_sha256": "sha256:134c113c04548038eaa8f430b35b7c9e82775057a4b750dddd31efed7333fda2",
+            "text_source": "raw_text",
+            "source_quote": "Q44 LTD will be replaced by Q44 SBS, operating at all times"
+          },
+          {
+            "source_id": "2015_09_22_brt_flushing_jamaica_cb7_presentation",
+            "evidence_id": "2015_09_22_brt_flushing_jamaica_cb7_presentation#p007_c0005",
+            "source_path": "raw/sources/2015_09_22_brt_flushing_jamaica_cb7_presentation/blocks.jsonl",
+            "page_number": 7,
+            "block_id": "p007_c0005",
+            "text_sha256": "sha256:f2954219cb4f73af0b5370f279e98651398eb045dda91ce3b9648e6142172272",
+            "text_source": "raw_text",
+            "source_quote": "SBS will follow same route as LTD from Merrick Blvd in Jamaica to the Bronx Zoo"
+          }
+        ],
+        "reason": "related_route is only valid route -> route. Here the durable subject is the Q44 SBS project and the object is the Q44 LTD route. The source text and the original label support a project route-scope relation, so serves_route project -> route is the minimal validator-compatible repair.",
+        "expected_endpoint_shape_delta": -1,
+        "confidence": "high"
+      },
+      "replacement": {
+        "run_id": "2026-06-23_codex_relation_cleanup_batch042",
+        "journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch042.jsonl",
+        "replacement_entries": [
+          {
+            "role": "corrected relation replacement",
+            "deterministic_submission_id": "sub_848da0ee58429abb",
+            "tool_args_sha256": "sha256:848da0ee58429abbf7b01bd03c2ca7d4ef21fbd437c43915172d288ab9049a15",
+            "proposed_relation_kind": "serves_route",
+            "proposed_endpoint_shape": "project -> route",
+            "tool_args": {
+              "source_id": "2015_09_22_brt_flushing_jamaica_cb7_presentation",
+              "observation_kind": "relation",
+              "local_observation_id": "relation_batch042_q44_sbs_serves_q44_ltd",
+              "label": "Q44 SBS project serves Q44 LTD route",
+              "raw_text": "Q44 LTD will be replaced by Q44 SBS; SBS will follow same route as LTD from Merrick Blvd in Jamaica to the Bronx Zoo.",
+              "payload": {
+                "relation_kind": "serves_route",
+                "subject_local_observation_id": "project_q44_sbs_launch_2015",
+                "object_local_observation_id": "route_q44_ltd_2015_cb7",
+                "description": "Replacement for malformed related_route project -> route relation; source states that Q44 LTD will be replaced by Q44 SBS and that SBS will follow the same route as LTD."
+              },
+              "evidence_refs": [
+                {
+                  "source_id": "2015_09_22_brt_flushing_jamaica_cb7_presentation",
+                  "evidence_id": "2015_09_22_brt_flushing_jamaica_cb7_presentation#p007_c0004",
+                  "source_path": "raw/sources/2015_09_22_brt_flushing_jamaica_cb7_presentation/blocks.jsonl",
+                  "page_number": 7,
+                  "block_id": "p007_c0004",
+                  "text_sha256": "sha256:134c113c04548038eaa8f430b35b7c9e82775057a4b750dddd31efed7333fda2",
+                  "text_source": "raw_text",
+                  "role": "route_replacement_context",
+                  "source_quote": "Q44 LTD will be replaced by Q44 SBS, operating at all times"
+                },
+                {
+                  "source_id": "2015_09_22_brt_flushing_jamaica_cb7_presentation",
+                  "evidence_id": "2015_09_22_brt_flushing_jamaica_cb7_presentation#p007_c0005",
+                  "source_path": "raw/sources/2015_09_22_brt_flushing_jamaica_cb7_presentation/blocks.jsonl",
+                  "page_number": 7,
+                  "block_id": "p007_c0005",
+                  "text_sha256": "sha256:f2954219cb4f73af0b5370f279e98651398eb045dda91ce3b9648e6142172272",
+                  "text_source": "raw_text",
+                  "role": "route_replacement_context",
+                  "source_quote": "SBS will follow same route as LTD from Merrick Blvd in Jamaica to the Bronx Zoo"
+                }
+              ]
+            },
+            "local_validation": {
+              "state": "accepted",
+              "issues": [],
+              "warnings": [],
+              "relationEndpointIssues": [],
+              "endpoint_shape_issue_after_replacement": null,
+              "known_local_observation_ids_confirmed": [
+                "project_q44_sbs_launch_2015",
+                "route_q44_ltd_2015_cb7"
+              ]
+            }
+          }
+        ],
+        "confidence": "high"
+      }
+    }
+  ],
+  "command_evidence": [
+    {
+      "command": "bun --eval '<read canonical JSONL plus endpoint shape inventory from packages/pipeline/src/records/relations.ts>'",
+      "output_excerpt": "Local current probe found 13 shaped relation issues; selected row relation_project-q44-sbs-has-q44-ltd is related_route with project subject and route object."
+    },
+    {
+      "command": "rg -n 'sub_98132bef60809a07|relation_project-q44-sbs-has-q44-ltd|relation_batch042_q44_sbs_serves_q44_ltd' data/submissions data/review_notes data/submission-overrides/retired.json data/canonical/relations.jsonl",
+      "output_excerpt": "Original accepted submission and canonical relation are present; no retired.json hit, no prior batch037-041 prep hit, and no replacement id/local id collision."
+    },
+    {
+      "command": "rg -n 'Q44|LTD|SBS|replaces|same route' raw/sources/2015_09_22_brt_flushing_jamaica_cb7_presentation/blocks.jsonl",
+      "output_excerpt": "Confirmed p007_c0004 states Q44 LTD will be replaced by Q44 SBS and p007_c0005 states SBS will follow same route as LTD."
+    },
+    {
+      "command": "createSubmissionEntry dry run for one serves_route project->route replacement",
+      "output_excerpt": "Generated deterministic submission sub_848da0ee58429abb with sha256:848da0ee58429abbf7b01bd03c2ca7d4ef21fbd437c43915172d288ab9049a15; validation accepted with issues=[], warnings=[], relationEndpointIssues=[]; replacement shape probe returned null."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed ingest/write/ask commands",
+    "canonicalize/campaign dedup/identity-review/schema/ontology-normalize commands",
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts export-jsonl",
+    "database publish commands"
+  ]
+}

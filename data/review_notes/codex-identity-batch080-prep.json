@@ -1,0 +1,450 @@
+{
+  "note_id": "codex-identity-batch080-prep",
+  "batch_id": "identity080",
+  "batch": "identity-batch080",
+  "created_at": "2026-06-23T00:00:00Z",
+  "lane": "codex-only deterministic/manual identity cleanup",
+  "status": "prepared",
+  "prepared_count": 8,
+  "all_pass": true,
+  "baseline_context": {
+    "source": "user-supplied current checkpoint after identity079/relation050, cross-checked by read-only deterministic duplicate_global_identity scan over live data/canonical.db",
+    "total_validate_backlog": 1460,
+    "unexpected_relation_endpoint_shape": 15,
+    "duplicate_global_identity": 1445
+  },
+  "scope": {
+    "record_kind": "entity",
+    "decision_kind": "duplicate_global_identity",
+    "selection_rule": "High-confidence person-entity duplicates with exact canonical payload.entity_name matches, compatible title/role/organization context, current duplicate_global_identity rows, and no live override, identity_aliases, or do-not-merge conflicts. Initials-only, broad agency/team, ambiguous role-transition, and weak title-context candidates were excluded."
+  },
+  "intended_mutation_path": "aliases.entity",
+  "intended_mutation": {
+    "aliases": {
+      "entity": {
+        "entity_rose-davis-meeting-doc-98291": "entity_rose-davis",
+        "entity_kevin-willens-cfo": "entity_kevin-willens-140486",
+        "entity_meeting-doc-98321-kevin-willens": "entity_kevin-willens-140486",
+        "entity_meeting-doc-richard-davey": "entity_richard-davey-nyct-president",
+        "entity_meeting91596-louis-montanti": "entity_louis-montanti",
+        "entity_meeting-doc-151646-quemuel-arroyo": "entity_meeting-doc-102806-quemuel-arroyo",
+        "entity_meeting-doc-95161-quemuel-arroyo": "entity_meeting-doc-102806-quemuel-arroyo",
+        "entity_quemuel-arroyo-mta-cao": "entity_meeting-doc-102806-quemuel-arroyo"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "alias_id": "entity_rose-davis-meeting-doc-98291",
+      "target_id": "entity_rose-davis",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify the same person, Rose Davis, with the same Project Manager title. The alias is a one-source shard; the target aggregates the Rose Davis project-manager identity across sixty current sources.",
+      "evidence": {
+        "shared_identity_keys": ["entity_rose-davis"],
+        "canonical_alias": {
+          "record_id": "entity_rose-davis-meeting-doc-98291",
+          "display_name": "Rose Davis",
+          "entity_name": "Rose Davis",
+          "entity_type": "person",
+          "title": "Project Manager",
+          "source_ids": ["meeting_doc_98291"],
+          "evidence_refs": ["meeting_doc_98291#p004_c0001"],
+          "source_paths": ["raw/sources/meeting_doc_98291/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_rose-davis",
+          "display_name": "Rose Davis",
+          "entity_name": "Rose Davis",
+          "entity_type": "person",
+          "title": "Project Manager",
+          "role": "Project Manager",
+          "organization": "MTA Long Island Rail Road",
+          "source_id_count": 60,
+          "source_ids_sample": ["meeting_doc_105946", "meeting_doc_107536", "meeting_doc_107606", "meeting_doc_111826", "meeting_doc_115191", "meeting_doc_115251"],
+          "evidence_refs_sample": ["meeting_doc_105946#p004_c0001", "meeting_doc_107606#p003_c0001", "meeting_doc_107536#p004_c0001", "meeting_doc_111826#p004_c0001"],
+          "source_paths_sample": ["raw/sources/meeting_doc_105946/blocks.jsonl", "raw/sources/meeting_doc_107536/blocks.jsonl", "raw/sources/meeting_doc_107606/blocks.jsonl", "raw/sources/meeting_doc_111826/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_rose-davis and entity_rose-davis-meeting-doc-98291 share identity key entity_rose-davis."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_kevin-willens-cfo",
+      "target_id": "entity_kevin-willens-140486",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify Kevin Willens as Chief Financial Officer. The alias is a one-source CFO shard; the target aggregates Kevin Willens CFO evidence across fifty-six current sources.",
+      "evidence": {
+        "shared_identity_keys": ["entity_kevin-willens"],
+        "canonical_alias": {
+          "record_id": "entity_kevin-willens-cfo",
+          "display_name": "Kevin Willens",
+          "entity_name": "Kevin Willens",
+          "entity_type": "person",
+          "title": "Chief Financial Officer",
+          "organization": "Metropolitan Transportation Authority",
+          "source_ids": ["meeting_doc_91561"],
+          "evidence_refs": ["meeting_doc_91561#p004_c0001"],
+          "source_paths": ["raw/sources/meeting_doc_91561/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_kevin-willens-140486",
+          "display_name": "Kevin Willens",
+          "entity_name": "Kevin Willens",
+          "entity_type": "person",
+          "title": "Chief Financial Officer",
+          "role": "Chief Financial Officer of MTA Metro-North Railroad",
+          "organization": "MTA Long Island Rail Road",
+          "source_id_count": 56,
+          "source_ids_sample": ["meeting_doc_102711", "meeting_doc_102716", "meeting_doc_102771", "meeting_doc_102796", "meeting_doc_102816", "meeting_doc_114016"],
+          "evidence_refs_sample": ["meeting_doc_102711#p001_c0002", "meeting_doc_102716#p001_c0004", "meeting_doc_102816#p002_c0004", "meeting_doc_102771#p048_c0003"],
+          "source_paths_sample": ["raw/sources/meeting_doc_102711/blocks.jsonl", "raw/sources/meeting_doc_102716/blocks.jsonl", "raw/sources/meeting_doc_102771/blocks.jsonl", "raw/sources/meeting_doc_102796/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_kevin-willens-140486 and entity_kevin-willens-cfo share identity key entity_kevin-willens."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-98321-kevin-willens",
+      "target_id": "entity_kevin-willens-140486",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify Kevin Willens as Chief Financial Officer, and the current validator reports both the person-name and CFO identity keys. The alias is a one-source shard; the target is the larger Kevin Willens CFO aggregate.",
+      "evidence": {
+        "shared_identity_keys": ["entity_kevin-willens", "entity_kevin-willens-chief-financial-officer"],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-98321-kevin-willens",
+          "display_name": "Kevin Willens, Chief Financial Officer",
+          "entity_name": "Kevin Willens",
+          "entity_type": "person",
+          "title": "Chief Financial Officer",
+          "organization": "Metropolitan Transportation Authority",
+          "source_ids": ["meeting_doc_98321"],
+          "evidence_refs": ["meeting_doc_98321#p005_c0021"],
+          "source_paths": ["raw/sources/meeting_doc_98321/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_kevin-willens-140486",
+          "display_name": "Kevin Willens",
+          "entity_name": "Kevin Willens",
+          "entity_type": "person",
+          "title": "Chief Financial Officer",
+          "role": "Chief Financial Officer of MTA Metro-North Railroad",
+          "organization": "MTA Long Island Rail Road",
+          "source_id_count": 56,
+          "source_ids_sample": ["meeting_doc_102711", "meeting_doc_102716", "meeting_doc_102771", "meeting_doc_102796", "meeting_doc_102816", "meeting_doc_114016"],
+          "evidence_refs_sample": ["meeting_doc_102711#p001_c0002", "meeting_doc_102716#p001_c0004", "meeting_doc_102816#p002_c0004", "meeting_doc_102771#p048_c0003"],
+          "source_paths_sample": ["raw/sources/meeting_doc_102711/blocks.jsonl", "raw/sources/meeting_doc_102716/blocks.jsonl", "raw/sources/meeting_doc_102771/blocks.jsonl", "raw/sources/meeting_doc_102796/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_kevin-willens-140486 and entity_meeting-doc-98321-kevin-willens share identity key entity_kevin-willens.",
+          "validate: duplicate_global_identity | Global entity records entity_kevin-willens-140486 and entity_meeting-doc-98321-kevin-willens share identity key entity_kevin-willens-chief-financial-officer."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-richard-davey",
+      "target_id": "entity_richard-davey-nyct-president",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify Richard Davey as president, with the target carrying the fuller New York City Transit president context. The current validator reports three shared identity keys for the same person/role.",
+      "evidence": {
+        "shared_identity_keys": ["entity_richard-davey", "entity_richard-davey-president", "entity_richard-davey-president-nycta"],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-richard-davey",
+          "display_name": "Richard Davey, President",
+          "entity_name": "Richard Davey",
+          "entity_type": "person",
+          "title": "President",
+          "organization": "MTA",
+          "source_ids": ["meeting_doc_102841", "meeting_doc_105956", "meeting_doc_112036"],
+          "evidence_refs": ["meeting_doc_102841#p003_c0013", "meeting_doc_105956#p004_c0014", "meeting_doc_112036#p005_c0001"],
+          "source_paths": ["raw/sources/meeting_doc_102841/blocks.jsonl", "raw/sources/meeting_doc_105956/blocks.jsonl", "raw/sources/meeting_doc_112036/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_richard-davey-nyct-president",
+          "display_name": "Richard Davey, President of New York City Transit",
+          "entity_name": "Richard Davey",
+          "entity_type": "person",
+          "title": "President, New York City Transit",
+          "role": "President of New York City Transit",
+          "organization": "New York City Transit",
+          "source_id_count": 51,
+          "source_ids_sample": ["meeting_doc_100341", "meeting_doc_102806", "meeting_doc_102836", "meeting_doc_104781", "meeting_doc_104791", "meeting_doc_105921"],
+          "evidence_refs_sample": ["meeting_doc_102836#p004_c0003", "meeting_doc_105931#p001_c0010", "meeting_doc_105921#p004_c0003", "meeting_doc_102806#p001_c0006"],
+          "source_paths_sample": ["raw/sources/meeting_doc_100341/blocks.jsonl", "raw/sources/meeting_doc_102806/blocks.jsonl", "raw/sources/meeting_doc_102836/blocks.jsonl", "raw/sources/meeting_doc_104781/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-richard-davey and entity_richard-davey-nyct-president share identity key entity_richard-davey.",
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-richard-davey and entity_richard-davey-nyct-president share identity key entity_richard-davey-president.",
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-richard-davey and entity_richard-davey-nyct-president share identity key entity_richard-davey-president-nycta."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting91596-louis-montanti",
+      "target_id": "entity_louis-montanti",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify Louis Montanti with the same Deputy Chief Procurement Officer, Operations, MTA title and Metropolitan Transportation Authority context. The alias has two sources; the target is the larger current aggregate.",
+      "evidence": {
+        "shared_identity_keys": ["entity_louis-montanti", "entity_louis-montanti-deputy-chief-procurement-officer-operations-mta"],
+        "canonical_alias": {
+          "record_id": "entity_meeting91596-louis-montanti",
+          "display_name": "Louis Montanti, Deputy Chief Procurement Officer, Operations, MTA",
+          "entity_name": "Louis Montanti",
+          "entity_type": "person",
+          "title": "Deputy Chief Procurement Officer, Operations, MTA",
+          "organization": "Metropolitan Transportation Authority",
+          "source_ids": ["meeting_doc_91596", "meeting_doc_95161"],
+          "evidence_refs": ["meeting_doc_95161#p001_c0006", "meeting_doc_91596#p001_c0006"],
+          "source_paths": ["raw/sources/meeting_doc_91596/blocks.jsonl", "raw/sources/meeting_doc_95161/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_louis-montanti",
+          "display_name": "Louis Montanti, Deputy Chief Procurement Officer, Operations, MTA",
+          "entity_name": "Louis Montanti",
+          "entity_type": "person",
+          "title": "Deputy Chief Procurement Officer, Operations, MTA",
+          "role": "MTA Deputy Chief Procurement Officer - Procurement Operations",
+          "organization": "Metropolitan Transportation Authority",
+          "source_id_count": 31,
+          "source_ids_sample": ["meeting_doc_102806", "meeting_doc_105946", "meeting_doc_107531", "meeting_doc_107536", "meeting_doc_111826", "meeting_doc_111971"],
+          "evidence_refs_sample": ["meeting_doc_102806#p001_c0006", "meeting_doc_105946#p002_c0003", "meeting_doc_107536#p002_c0003", "meeting_doc_107536#p007_c0004"],
+          "source_paths_sample": ["raw/sources/meeting_doc_102806/blocks.jsonl", "raw/sources/meeting_doc_105946/blocks.jsonl", "raw/sources/meeting_doc_107531/blocks.jsonl", "raw/sources/meeting_doc_107536/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_louis-montanti and entity_meeting91596-louis-montanti share identity key entity_louis-montanti.",
+          "validate: duplicate_global_identity | Global entity records entity_louis-montanti and entity_meeting91596-louis-montanti share identity key entity_louis-montanti-deputy-chief-procurement-officer-operations-mta."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-151646-quemuel-arroyo",
+      "target_id": "entity_meeting-doc-102806-quemuel-arroyo",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify Quemuel Arroyo in MTA Chief Accessibility Officer context. The alias is a one-source shard; the target aggregates the same accessibility-officer identity across twenty-four current sources.",
+      "evidence": {
+        "shared_identity_keys": ["entity_quemuel-arroyo"],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-151646-quemuel-arroyo",
+          "display_name": "Quemuel Arroyo",
+          "entity_name": "Quemuel Arroyo",
+          "entity_type": "person",
+          "title": "MTA Chief Accessibility Officer",
+          "source_ids": ["meeting_doc_151646"],
+          "evidence_refs": ["meeting_doc_151646#p005_c0006"],
+          "source_paths": ["raw/sources/meeting_doc_151646/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-102806-quemuel-arroyo",
+          "display_name": "Quemuel Arroyo, Chief Accessibility Officer, MTA",
+          "entity_name": "Quemuel Arroyo",
+          "entity_type": "person",
+          "title": "Chief Accessibility Officer",
+          "organization": "Metropolitan Transportation Authority",
+          "source_id_count": 24,
+          "source_ids_sample": ["meeting_doc_102806", "meeting_doc_104781", "meeting_doc_107531", "meeting_doc_109976", "meeting_doc_111971", "meeting_doc_113946"],
+          "evidence_refs_sample": ["meeting_doc_104781#p001_c0008", "meeting_doc_102806#p001_c0006", "meeting_doc_107531#p001_c0008", "meeting_doc_109976#p014_c0002"],
+          "source_paths_sample": ["raw/sources/meeting_doc_102806/blocks.jsonl", "raw/sources/meeting_doc_104781/blocks.jsonl", "raw/sources/meeting_doc_107531/blocks.jsonl", "raw/sources/meeting_doc_109976/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-102806-quemuel-arroyo and entity_meeting-doc-151646-quemuel-arroyo share identity key entity_quemuel-arroyo."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-95161-quemuel-arroyo",
+      "target_id": "entity_meeting-doc-102806-quemuel-arroyo",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify Quemuel Arroyo as Chief Accessibility Officer in Metropolitan Transportation Authority context. The current validator reports both the person-name key and the title-specific Chief Accessibility Officer key.",
+      "evidence": {
+        "shared_identity_keys": ["entity_quemuel-arroyo", "entity_quemuel-arroyo-chief-accessibility-officer-mta"],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-95161-quemuel-arroyo",
+          "display_name": "Quemuel Arroyo, Chief Accessibility Officer, MTA",
+          "entity_name": "Quemuel Arroyo",
+          "entity_type": "person",
+          "title": "Chief Accessibility Officer, MTA",
+          "organization": "Metropolitan Transportation Authority",
+          "source_ids": ["meeting_doc_138396", "meeting_doc_95161"],
+          "evidence_refs": ["meeting_doc_138396#p001_c0011", "meeting_doc_95161#p001_c0006"],
+          "source_paths": ["raw/sources/meeting_doc_138396/blocks.jsonl", "raw/sources/meeting_doc_95161/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-102806-quemuel-arroyo",
+          "display_name": "Quemuel Arroyo, Chief Accessibility Officer, MTA",
+          "entity_name": "Quemuel Arroyo",
+          "entity_type": "person",
+          "title": "Chief Accessibility Officer",
+          "organization": "Metropolitan Transportation Authority",
+          "source_id_count": 24,
+          "source_ids_sample": ["meeting_doc_102806", "meeting_doc_104781", "meeting_doc_107531", "meeting_doc_109976", "meeting_doc_111971", "meeting_doc_113946"],
+          "evidence_refs_sample": ["meeting_doc_104781#p001_c0008", "meeting_doc_102806#p001_c0006", "meeting_doc_107531#p001_c0008", "meeting_doc_109976#p014_c0002"],
+          "source_paths_sample": ["raw/sources/meeting_doc_102806/blocks.jsonl", "raw/sources/meeting_doc_104781/blocks.jsonl", "raw/sources/meeting_doc_107531/blocks.jsonl", "raw/sources/meeting_doc_109976/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-102806-quemuel-arroyo and entity_meeting-doc-95161-quemuel-arroyo share identity key entity_quemuel-arroyo.",
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-102806-quemuel-arroyo and entity_meeting-doc-95161-quemuel-arroyo share identity key entity_quemuel-arroyo-chief-accessibility-officer-mta."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_quemuel-arroyo-mta-cao",
+      "target_id": "entity_meeting-doc-102806-quemuel-arroyo",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify Quemuel Arroyo in Metropolitan Transportation Authority Chief Accessibility Officer context. The alias is a two-source MTA CAO shard; the target is the larger current Quemuel Arroyo accessibility-officer aggregate.",
+      "evidence": {
+        "shared_identity_keys": ["entity_quemuel-arroyo", "entity_quemuel-arroyo-mta-chief-accessibility-officer"],
+        "canonical_alias": {
+          "record_id": "entity_quemuel-arroyo-mta-cao",
+          "display_name": "Quemuel Arroyo, MTA Chief Accessibility Officer",
+          "entity_name": "Quemuel Arroyo",
+          "entity_type": "person",
+          "title": "MTA Chief Accessibility Officer",
+          "organization": "Metropolitan Transportation Authority",
+          "source_ids": ["meeting_doc_128921", "meeting_doc_72576"],
+          "evidence_refs": ["meeting_doc_128921#p002_c0001", "meeting_doc_72576#p010_c0006"],
+          "source_paths": ["raw/sources/meeting_doc_128921/blocks.jsonl", "raw/sources/meeting_doc_72576/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-102806-quemuel-arroyo",
+          "display_name": "Quemuel Arroyo, Chief Accessibility Officer, MTA",
+          "entity_name": "Quemuel Arroyo",
+          "entity_type": "person",
+          "title": "Chief Accessibility Officer",
+          "organization": "Metropolitan Transportation Authority",
+          "source_id_count": 24,
+          "source_ids_sample": ["meeting_doc_102806", "meeting_doc_104781", "meeting_doc_107531", "meeting_doc_109976", "meeting_doc_111971", "meeting_doc_113946"],
+          "evidence_refs_sample": ["meeting_doc_104781#p001_c0008", "meeting_doc_102806#p001_c0006", "meeting_doc_107531#p001_c0008", "meeting_doc_109976#p014_c0002"],
+          "source_paths_sample": ["raw/sources/meeting_doc_102806/blocks.jsonl", "raw/sources/meeting_doc_104781/blocks.jsonl", "raw/sources/meeting_doc_107531/blocks.jsonl", "raw/sources/meeting_doc_109976/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-102806-quemuel-arroyo and entity_quemuel-arroyo-mta-cao share identity key entity_quemuel-arroyo.",
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-102806-quemuel-arroyo and entity_quemuel-arroyo-mta-cao share identity key entity_quemuel-arroyo-mta-chief-accessibility-officer."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    }
+  ],
+  "blockers": [],
+  "verification": {
+    "commands_run": [
+      "read-only live data/canonical.db duplicate_global_identity scan using packages/db/src/identity.ts identityKeysForRecord",
+      "read-only guard checks against data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, canonical.db identity_aliases, current DB records, source ids, and evidence source paths"
+    ],
+    "provider_backed_commands_run": false,
+    "generated_output_commands_run": false,
+    "materialize_or_validate_commands_run": false,
+    "validator_duplicate_rows_seen": 1445
+  }
+}

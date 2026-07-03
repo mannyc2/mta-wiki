@@ -1,0 +1,66 @@
+{
+  "review_run_id": "2026-06-10T21-39-01-072Z_identity-review-run",
+  "reviewed_at": "2026-06-10T21:39:20.079Z",
+  "packet_path": "data/identity-review/packets/project_cluster_001.md",
+  "cluster_id": "project_cluster_001",
+  "kind": "project",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "suggestion": {
+    "cluster_id": "project_cluster_001",
+    "kind": "project",
+    "merge_groups": [
+      [
+        "project_first-second-ave-sbs",
+        "project_first-second-ave-sbs-2010",
+        "project_first-second-ave-sbs-cac3",
+        "project_first-second-ave-sbs-cb8-2010"
+      ]
+    ],
+    "do_not_merge": [],
+    "weak_aliases": [
+      {
+        "record_id": "project_first-second-ave-sbs",
+        "aliases": [
+          "First Avenue/Second Avenue SBS",
+          "First Avenue/Second Avenue Select Bus Service",
+          "project_first-ave-second-ave-sbs",
+          "project_first-second-ave-sbs-2009"
+        ],
+        "reason": "SBS/Select Bus Service abbreviation expansion; date suffix variant for search."
+      },
+      {
+        "record_id": "project_first-second-ave-sbs-2010",
+        "aliases": [
+          "project_first-ave-second-ave-sbs",
+          "First Avenue/Second Avenue Select Bus Service"
+        ],
+        "reason": "Source-local label and shared identity key alias."
+      },
+      {
+        "record_id": "project_first-second-ave-sbs-cac3",
+        "aliases": [
+          "project_first-ave-second-ave-sbs",
+          "First Avenue/Second Avenue SBS"
+        ],
+        "reason": "Source-local label and shared identity key alias."
+      },
+      {
+        "record_id": "project_first-second-ave-sbs-cb8-2010",
+        "aliases": [
+          "project_first-ave-second-ave-sbs",
+          "First Avenue/Second Avenue Select Bus Service"
+        ],
+        "reason": "Source-local label and shared identity key alias."
+      }
+    ],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "All four records describe the same project: M15 Select Bus Service on First and Second Avenues, Manhattan, from South Ferry to 125th Street (8.5 miles). Strong identity fields agree: project_type (Select Bus Service), corridor/limits, and route (M15). Differences are lifecycle moments captured by different documents (status: planning → proposed → design in progress → Phase I launch) and source/meeting suffixes (-2010, -cac3, -cb8-2010). Per project merge canon: \"Records of the same project produced by different documents (community-board presentations, CAC meetings, dated copies) DO merge into the base project record\" and \"Distinct phases count as one project unless sources treat a phase as its own named undertaking.\" The name delta is abbreviation-only (SBS ↔ Select Bus Service). Decisive test: Same-object test (Test 2). Decisive identity field: project_name + corridor/limits + route_served (M15)."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T21-39-01-073Z_1822282-3e06d98e_identity-review-run_project-cluster-001",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-10T21-39-01-074Z_2026-06-10T21-39-01-073Z_1822282-3e06d98e_identity-review-run_project-cluster-001.jsonl"
+}

@@ -1,0 +1,171 @@
+{
+  "run_id": "2026-06-23T14-39-41-061Z_identity-review-run",
+  "generated_at": "2026-06-23T14:39:41.061Z",
+  "dry_run": false,
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "concurrency": 4,
+  "packet_count": 15,
+  "completed": 0,
+  "skipped": 0,
+  "failed": 15,
+  "paths": {
+    "suggestions_dir": "data/identity-review/llm-suggestions",
+    "review_runs_dir": "data/identity-review/llm-suggestions/review-runs",
+    "manifest": "data/identity-review/llm-suggestions/review-runs/2026-06-23T14-39-41-061Z_identity-review-run.json",
+    "latest": "data/identity-review/llm-suggestions/review-runs/latest.json"
+  },
+  "results": [
+    {
+      "cluster_id": "route_cluster_b138a00bfb",
+      "packet_path": "data/identity-review/packets/route_cluster_b138a00bfb.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_b138a00bfb.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-23T14-39-41-063Z_1288724-6205dde3_identity-review-run_route-cluster-b138a00bfb",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-39-41-063Z_2026-06-23T14-39-41-063Z_1288724-6205dde3_identity-review-run_route-cluster-b138a00bfb.jsonl",
+      "status": "failed",
+      "attempts": 1,
+      "error": "Suggestion JSON parse error: 402 Insufficient Balance"
+    },
+    {
+      "cluster_id": "route_cluster_c30f25548f",
+      "packet_path": "data/identity-review/packets/route_cluster_c30f25548f.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_c30f25548f.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-23T14-39-41-063Z_1288724-cdbc24e8_identity-review-run_route-cluster-c30f25548f",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-39-41-063Z_2026-06-23T14-39-41-063Z_1288724-cdbc24e8_identity-review-run_route-cluster-c30f25548f.jsonl",
+      "status": "failed",
+      "attempts": 1,
+      "error": "Suggestion JSON parse error: 402 Insufficient Balance"
+    },
+    {
+      "cluster_id": "route_cluster_a6d89c367d",
+      "packet_path": "data/identity-review/packets/route_cluster_a6d89c367d.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_a6d89c367d.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-23T14-39-41-063Z_1288724-047ef6fd_identity-review-run_route-cluster-a6d89c367d",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-39-41-063Z_2026-06-23T14-39-41-063Z_1288724-047ef6fd_identity-review-run_route-cluster-a6d89c367d.jsonl",
+      "status": "failed",
+      "attempts": 1,
+      "error": "Suggestion JSON parse error: 402 Insufficient Balance"
+    },
+    {
+      "cluster_id": "corridor_cluster_745cc01e16",
+      "packet_path": "data/identity-review/packets/corridor_cluster_745cc01e16.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_745cc01e16.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-23T14-39-41-063Z_1288724-5aee753b_identity-review-run_corridor-cluster-745cc01e16",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-39-41-064Z_2026-06-23T14-39-41-063Z_1288724-5aee753b_identity-review-run_corridor-cluster-745cc01e16.jsonl",
+      "status": "failed",
+      "attempts": 1,
+      "error": "Suggestion JSON parse error: 402 Insufficient Balance"
+    },
+    {
+      "cluster_id": "corridor_cluster_51576e2f75",
+      "packet_path": "data/identity-review/packets/corridor_cluster_51576e2f75.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_51576e2f75.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-23T14-39-41-862Z_1288724-1ddc3165_identity-review-run_corridor-cluster-51576e2f75",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-39-41-862Z_2026-06-23T14-39-41-862Z_1288724-1ddc3165_identity-review-run_corridor-cluster-51576e2f75.jsonl",
+      "status": "failed",
+      "attempts": 1,
+      "error": "Suggestion JSON parse error: 402 Insufficient Balance"
+    },
+    {
+      "cluster_id": "corridor_cluster_6fa803cc3c",
+      "packet_path": "data/identity-review/packets/corridor_cluster_6fa803cc3c.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_6fa803cc3c.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-23T14-39-41-871Z_1288724-cdafad86_identity-review-run_corridor-cluster-6fa803cc3c",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-39-41-871Z_2026-06-23T14-39-41-871Z_1288724-cdafad86_identity-review-run_corridor-cluster-6fa803cc3c.jsonl",
+      "status": "failed",
+      "attempts": 1,
+      "error": "Suggestion JSON parse error: 402 Insufficient Balance"
+    },
+    {
+      "cluster_id": "corridor_cluster_e2b5809961",
+      "packet_path": "data/identity-review/packets/corridor_cluster_e2b5809961.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_e2b5809961.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-23T14-39-41-884Z_1288724-1a024cd6_identity-review-run_corridor-cluster-e2b5809961",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-39-41-885Z_2026-06-23T14-39-41-884Z_1288724-1a024cd6_identity-review-run_corridor-cluster-e2b5809961.jsonl",
+      "status": "failed",
+      "attempts": 1,
+      "error": "Suggestion JSON parse error: 402 Insufficient Balance"
+    },
+    {
+      "cluster_id": "corridor_cluster_0a55f247eb",
+      "packet_path": "data/identity-review/packets/corridor_cluster_0a55f247eb.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_0a55f247eb.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-23T14-39-41-964Z_1288724-231b2819_identity-review-run_corridor-cluster-0a55f247eb",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-39-41-964Z_2026-06-23T14-39-41-964Z_1288724-231b2819_identity-review-run_corridor-cluster-0a55f247eb.jsonl",
+      "status": "failed",
+      "attempts": 1,
+      "error": "Suggestion JSON parse error: 402 Insufficient Balance"
+    },
+    {
+      "cluster_id": "corridor_cluster_5b54a55adc",
+      "packet_path": "data/identity-review/packets/corridor_cluster_5b54a55adc.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_5b54a55adc.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-23T14-39-42-548Z_1288724-70147cc9_identity-review-run_corridor-cluster-5b54a55adc",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-39-42-548Z_2026-06-23T14-39-42-548Z_1288724-70147cc9_identity-review-run_corridor-cluster-5b54a55adc.jsonl",
+      "status": "failed",
+      "attempts": 1,
+      "error": "Suggestion JSON parse error: 402 Insufficient Balance"
+    },
+    {
+      "cluster_id": "corridor_cluster_a445644335",
+      "packet_path": "data/identity-review/packets/corridor_cluster_a445644335.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_a445644335.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-23T14-39-42-581Z_1288724-4ce8e9cb_identity-review-run_corridor-cluster-a445644335",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-39-42-581Z_2026-06-23T14-39-42-581Z_1288724-4ce8e9cb_identity-review-run_corridor-cluster-a445644335.jsonl",
+      "status": "failed",
+      "attempts": 1,
+      "error": "Suggestion JSON parse error: 402 Insufficient Balance"
+    },
+    {
+      "cluster_id": "corridor_cluster_10a61c45f9",
+      "packet_path": "data/identity-review/packets/corridor_cluster_10a61c45f9.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_10a61c45f9.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-23T14-39-42-611Z_1288724-23b71556_identity-review-run_corridor-cluster-10a61c45f9",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-39-42-611Z_2026-06-23T14-39-42-611Z_1288724-23b71556_identity-review-run_corridor-cluster-10a61c45f9.jsonl",
+      "status": "failed",
+      "attempts": 1,
+      "error": "Suggestion JSON parse error: 402 Insufficient Balance"
+    },
+    {
+      "cluster_id": "corridor_cluster_8ad85f1523",
+      "packet_path": "data/identity-review/packets/corridor_cluster_8ad85f1523.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_8ad85f1523.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-23T14-39-42-685Z_1288724-3ee9265c_identity-review-run_corridor-cluster-8ad85f1523",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-39-42-685Z_2026-06-23T14-39-42-685Z_1288724-3ee9265c_identity-review-run_corridor-cluster-8ad85f1523.jsonl",
+      "status": "failed",
+      "attempts": 1,
+      "error": "Suggestion JSON parse error: 402 Insufficient Balance"
+    },
+    {
+      "cluster_id": "project_cluster_15471d97c3",
+      "packet_path": "data/identity-review/packets/project_cluster_15471d97c3.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/project_cluster_15471d97c3.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-23T14-39-43-278Z_1288724-1110fdab_identity-review-run_project-cluster-15471d97c3",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-39-43-278Z_2026-06-23T14-39-43-278Z_1288724-1110fdab_identity-review-run_project-cluster-15471d97c3.jsonl",
+      "status": "failed",
+      "attempts": 1,
+      "error": "Suggestion JSON parse error: 402 Insufficient Balance"
+    },
+    {
+      "cluster_id": "project_cluster_5374bac3ce",
+      "packet_path": "data/identity-review/packets/project_cluster_5374bac3ce.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/project_cluster_5374bac3ce.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-23T14-39-43-340Z_1288724-7928b833_identity-review-run_project-cluster-5374bac3ce",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-39-43-340Z_2026-06-23T14-39-43-340Z_1288724-7928b833_identity-review-run_project-cluster-5374bac3ce.jsonl",
+      "status": "failed",
+      "attempts": 1,
+      "error": "Suggestion JSON parse error: 402 Insufficient Balance"
+    },
+    {
+      "cluster_id": "project_cluster_34157302e3",
+      "packet_path": "data/identity-review/packets/project_cluster_34157302e3.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/project_cluster_34157302e3.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-23T14-39-43-429Z_1288724-f00254e0_identity-review-run_project-cluster-34157302e3",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-39-43-429Z_2026-06-23T14-39-43-429Z_1288724-f00254e0_identity-review-run_project-cluster-34157302e3.jsonl",
+      "status": "failed",
+      "attempts": 1,
+      "error": "Suggestion JSON parse error: 402 Insufficient Balance"
+    }
+  ]
+}

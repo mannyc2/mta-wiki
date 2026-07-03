@@ -1,0 +1,457 @@
+{
+  "batch_id": "codex-identity-batch103",
+  "created_at": "2026-06-23T04:21:04Z",
+  "prepared_count": 10,
+  "all_pass": true,
+  "expected_delta": {
+    "duplicate_global_identity": -10
+  },
+  "proposed_aliases": [
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-104761-mta-real-estate",
+      "target_id": "entity_mta-real-estate",
+      "reason": "Both records represent the same MTA Real Estate department. The alias and target are record_kind=entity, have display/entity name MTA Real Estate, and no agency, acronym, or entity-type conflict.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Real Estate",
+          "entity_name": "MTA Real Estate",
+          "entity_type": "agency department",
+          "primary_source_id": "meeting_doc_104761"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Real Estate",
+          "entity_name": "MTA Real Estate",
+          "entity_type": "department",
+          "primary_source_id": "meeting_doc_133386"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-104761-mta-real-estate",
+          "source_id": "meeting_doc_104761",
+          "block_id": "p004_c0018",
+          "quote": "MTA Real Estate will provide an annual report on leasing and construction opportunities and financial and marketing information related to retail development in Grand Central Terminal."
+        },
+        {
+          "record_id": "entity_mta-real-estate",
+          "source_id": "meeting_doc_133386",
+          "block_id": "p002_c0011",
+          "quote": "This license was entered into pursuant to MTA Board Policy ... which allows MTA Real Estate to negotiate access rights and privileges required by MTA operating agencies."
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-105786-mta-real-estate",
+      "target_id": "entity_mta-real-estate",
+      "reason": "Both records represent the same MTA Real Estate department. The alias and target share the exact display/entity name MTA Real Estate and compatible department-style entity types.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Real Estate",
+          "entity_name": "MTA Real Estate",
+          "entity_type": "agency department",
+          "primary_source_id": "meeting_doc_105786"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Real Estate",
+          "entity_name": "MTA Real Estate",
+          "entity_type": "department",
+          "primary_source_id": "meeting_doc_133386"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-105786-mta-real-estate",
+          "source_id": "meeting_doc_105786",
+          "block_id": "p004_c0012",
+          "quote": "MTA Real Estate will provide an annual report on leasing and construction opportunities and financial and marketing information related to retail development in Grand Central Terminal."
+        },
+        {
+          "record_id": "entity_mta-real-estate",
+          "source_id": "meeting_doc_133386",
+          "block_id": "p003_c0009",
+          "quote": "MTA Real Estate initiated an effort to identify non-traditional uses for former retail units throughout the NYCT system."
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-114016-mta-real-estate",
+      "target_id": "entity_mta-real-estate",
+      "reason": "Both records represent the same MTA Real Estate department. The alias has entity_name MTA Real Estate and acronym MTARE; the target has the same entity name and no conflicting acronym.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Real Estate",
+          "entity_name": "MTA Real Estate",
+          "acronym": "MTARE",
+          "entity_type": "department",
+          "primary_source_id": "meeting_doc_114016"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Real Estate",
+          "entity_name": "MTA Real Estate",
+          "entity_type": "department",
+          "primary_source_id": "meeting_doc_133386"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-114016-mta-real-estate",
+          "source_id": "meeting_doc_114016",
+          "block_id": "p077_c0010",
+          "quote": "A policy permitting MTA Real Estate (\"MTARE\") to license, lease or acquire property rights in support of MTA capital projects or ongoing operations."
+        },
+        {
+          "record_id": "entity_mta-real-estate",
+          "source_id": "meeting_doc_133386",
+          "block_id": "p004_c0012",
+          "quote": "This license was entered into pursuant to the MTA Board-approved Policy ... which authorizes MTA Real Estate to enter into agreements in support of MTA capital projects."
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-124206-mta-real-estate",
+      "target_id": "entity_mta-real-estate",
+      "reason": "Both records represent the same MTA Real Estate department. The alias and target share display/entity name MTA Real Estate and department classification.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Real Estate",
+          "entity_name": "MTA Real Estate",
+          "entity_type": "department",
+          "primary_source_id": "meeting_doc_124206"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Real Estate",
+          "entity_name": "MTA Real Estate",
+          "entity_type": "department",
+          "primary_source_id": "meeting_doc_133386"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-124206-mta-real-estate",
+          "source_id": "meeting_doc_124206",
+          "block_id": "p002_c0011",
+          "quote": "MTA Real Estate hereby requests Board approval of the attached Determination and Findings."
+        },
+        {
+          "record_id": "entity_mta-real-estate",
+          "source_id": "meeting_doc_133386",
+          "block_id": "p005_c0011",
+          "quote": "This permanent easement was acquired pursuant to MTA Board Policy ... which allows MTA Real Estate to acquire property rights."
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-mta-real-estate",
+      "target_id": "entity_mta-real-estate",
+      "reason": "Both records represent the same MTA Real Estate department. The alias has matching display, entity_name, name, agency_name, and acronym MTARE; the target has the same entity_name and compatible department type.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Real Estate",
+          "entity_name": "MTA Real Estate",
+          "name": "MTA Real Estate",
+          "agency_name": "MTA Real Estate",
+          "acronym": "MTARE",
+          "entity_type": "department",
+          "primary_source_id": "meeting_doc_102726"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Real Estate",
+          "entity_name": "MTA Real Estate",
+          "entity_type": "department",
+          "primary_source_id": "meeting_doc_133386"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-mta-real-estate",
+          "source_id": "meeting_doc_115186",
+          "block_id": "p001_c0010",
+          "quote": "the MTA Board authorized MTA Real Estate to proceed with property interest acquisitions"
+        },
+        {
+          "record_id": "entity_mta-real-estate",
+          "source_id": "meeting_doc_133386",
+          "block_id": "p002_c0004",
+          "quote": "Department REAL ESTATE"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-151836-mta-tod",
+      "target_id": "entity_mta-tod-meeting-doc-160301",
+      "reason": "Both records represent MTA Transit Oriented Development. The alias and target share entity_name MTA Transit Oriented Development, acronym TOD, and no conflicting organization attributes.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Transit Oriented Development (TOD)",
+          "entity_name": "MTA Transit Oriented Development",
+          "acronym": "TOD",
+          "entity_type": "program",
+          "primary_source_id": "meeting_doc_151836"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Transit Oriented Development (TOD)",
+          "entity_name": "MTA Transit Oriented Development",
+          "acronym": "TOD",
+          "entity_type": "department",
+          "primary_source_id": "meeting_doc_160301"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-151836-mta-tod",
+          "source_id": "meeting_doc_151836",
+          "block_id": "p002_c0006",
+          "quote": "MTA Transit Oriented Development (\"TOD\") and MNR view Hudson Harbor's proposal ..."
+        },
+        {
+          "record_id": "entity_mta-tod-meeting-doc-160301",
+          "source_id": "meeting_doc_160301",
+          "block_id": "p003_c0007",
+          "quote": "MTA Transit Oriented Development (\"TOD\") and MNR engaged in extensive discussions with Webster Leasing."
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-170991-tod",
+      "target_id": "entity_mta-tod-meeting-doc-160301",
+      "reason": "Both records represent MTA Transit Oriented Development. The alias and target share entity_name MTA Transit Oriented Development, acronym TOD, and compatible department classification.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Transit Oriented Development (TOD)",
+          "entity_name": "MTA Transit Oriented Development",
+          "acronym": "TOD",
+          "entity_type": "department",
+          "primary_source_id": "meeting_doc_170991"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Transit Oriented Development (TOD)",
+          "entity_name": "MTA Transit Oriented Development",
+          "acronym": "TOD",
+          "entity_type": "department",
+          "primary_source_id": "meeting_doc_160301"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-170991-tod",
+          "source_id": "meeting_doc_170991",
+          "block_id": "p010_c0009",
+          "quote": "MTA's Transit Oriented Development group (\"TOD\")"
+        },
+        {
+          "record_id": "entity_mta-tod-meeting-doc-160301",
+          "source_id": "meeting_doc_160301",
+          "block_id": "p002_c0003",
+          "quote": "Department TRANSIT ORIENTED DEVELOPMENT"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-mta-tod",
+      "target_id": "entity_mta-tod-meeting-doc-160301",
+      "reason": "Both records represent MTA Transit Oriented Development. The alias and target share entity_name MTA Transit Oriented Development, acronym TOD, and no conflicting entity attributes.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Transit Oriented Development (TOD)",
+          "entity_name": "MTA Transit Oriented Development",
+          "acronym": "TOD",
+          "entity_type": "program",
+          "primary_source_id": "meeting_doc_105851"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Transit Oriented Development (TOD)",
+          "entity_name": "MTA Transit Oriented Development",
+          "acronym": "TOD",
+          "entity_type": "department",
+          "primary_source_id": "meeting_doc_160301"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-mta-tod",
+          "source_id": "meeting_doc_105851",
+          "block_id": "p002_c0008",
+          "quote": "MTA Transit Oriented Development (\"TOD\") submitted the proposed disposition of the MTA Property Interests to MNR."
+        },
+        {
+          "record_id": "entity_mta-tod-meeting-doc-160301",
+          "source_id": "meeting_doc_160301",
+          "block_id": "p001_c0001",
+          "quote": "DECEMBER 2024 MTA REAL ESTATE MTA C&D TRANSIT ORIENTED DEVELOPMENT FINANCE COMMITTEE AGENDA ITEMS"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_170871-mtapd",
+      "target_id": "entity_annual-report-2021-mtapd",
+      "reason": "Both records represent the MTA Police Department. The alias and target share display/entity/agency name MTA Police Department, short_name MTA Police, acronym MTAPD, and compatible agency/police-department types.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Police Department",
+          "entity_name": "MTA Police Department",
+          "agency_name": "MTA Police Department",
+          "short_name": "MTA Police",
+          "acronym": "MTAPD",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_170871"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Police Department",
+          "entity_name": "MTA Police Department",
+          "agency_name": "MTA Police Department",
+          "short_name": "MTA Police",
+          "acronym": "MTAPD",
+          "entity_type": "police department",
+          "primary_source_id": "annual_report_narrative_2021"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "entity_170871-mtapd",
+          "source_id": "meeting_doc_201651",
+          "block_id": "p004_c0005",
+          "quote": "we continued to strengthen our partnership with the MTA Police Department"
+        },
+        {
+          "record_id": "entity_annual-report-2021-mtapd",
+          "source_id": "annual_report_narrative_2021",
+          "block_id": "p047_c0003",
+          "quote": "Provided systemwide policing through the MTA Police Department (MTAPD)"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-79341-mta-pd",
+      "target_id": "entity_annual-report-2021-mtapd",
+      "reason": "Both records represent the MTA Police Department. The alias and target share entity_name MTA Police Department and acronym MTAPD; MTA PD in the alias id is an abbreviation, not a distinct organization.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Police Department",
+          "entity_name": "MTA Police Department",
+          "acronym": "MTAPD",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_79341"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Police Department",
+          "entity_name": "MTA Police Department",
+          "agency_name": "MTA Police Department",
+          "short_name": "MTA Police",
+          "acronym": "MTAPD",
+          "entity_type": "police department",
+          "primary_source_id": "annual_report_narrative_2021"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-79341-mta-pd",
+          "source_id": "meeting_doc_79341",
+          "block_id": "p047_c0006",
+          "quote": "MTA Police Department (\"MTAPD\")"
+        },
+        {
+          "record_id": "entity_annual-report-2021-mtapd",
+          "source_id": "annual_report_narrative_2021",
+          "block_id": "p047_c0003",
+          "quote": "Provided systemwide policing through the MTA Police Department (MTAPD)"
+        }
+      ]
+    }
+  ],
+  "guard_summary": {
+    "record_existence_and_kind": {
+      "command": "sqlite3 -header -csv data/canonical.db \"select r.record_id,r.record_kind,r.display_name,r.primary_source_id,e.entity_name,e.name,e.agency_name,e.short_name,e.acronym,e.entity_type from records r join entities e using(record_id) where r.record_id in ('entity_meeting-doc-104761-mta-real-estate','entity_meeting-doc-105786-mta-real-estate','entity_meeting-doc-114016-mta-real-estate','entity_meeting-doc-124206-mta-real-estate','entity_meeting-doc-mta-real-estate','entity_mta-real-estate','entity_meeting-doc-151836-mta-tod','entity_meeting-doc-170991-tod','entity_meeting-doc-mta-tod','entity_mta-tod-meeting-doc-160301','entity_170871-mtapd','entity_meeting-doc-79341-mta-pd','entity_annual-report-2021-mtapd') order by r.record_id;\"",
+      "result": "Returned all 13 selected alias/target records, each with record_kind=entity. The MTA Real Estate records share entity_name/display_name MTA Real Estate; the TOD records share entity_name MTA Transit Oriented Development and acronym TOD; the MTA Police Department records share entity_name MTA Police Department and acronym MTAPD."
+    },
+    "existing_alias_conflicts": {
+      "merges_json_command": "jq -r --argjson ids '[\"entity_meeting-doc-104761-mta-real-estate\",\"entity_meeting-doc-105786-mta-real-estate\",\"entity_meeting-doc-114016-mta-real-estate\",\"entity_meeting-doc-124206-mta-real-estate\",\"entity_meeting-doc-mta-real-estate\",\"entity_meeting-doc-151836-mta-tod\",\"entity_meeting-doc-170991-tod\",\"entity_meeting-doc-mta-tod\",\"entity_170871-mtapd\",\"entity_meeting-doc-79341-mta-pd\"]' '.aliases.entity // {} | to_entries[] | select(.key as $k | $ids | index($k)) | [.key,.value] | @tsv' data/identity-overrides/merges.json",
+      "merges_json_result": "Returned no rows.",
+      "identity_aliases_command": "sqlite3 -header -csv data/canonical.db \"select kind,alias,target from identity_aliases where kind='entity' and alias in ('entity_meeting-doc-104761-mta-real-estate','entity_meeting-doc-105786-mta-real-estate','entity_meeting-doc-114016-mta-real-estate','entity_meeting-doc-124206-mta-real-estate','entity_meeting-doc-mta-real-estate','entity_meeting-doc-151836-mta-tod','entity_meeting-doc-170991-tod','entity_meeting-doc-mta-tod','entity_170871-mtapd','entity_meeting-doc-79341-mta-pd');\"",
+      "identity_aliases_result": "Returned no rows."
+    },
+    "do_not_merge_conflicts": {
+      "db_command": "sqlite3 -header -csv data/canonical.db \"select kind,record_id_a,record_id_b,reason from do_not_merge where kind='entity' and (record_id_a in (<selected aliases and targets>) or record_id_b in (<selected aliases and targets>));\"",
+      "db_result": "Returned no rows.",
+      "json_command": "jq -r --argjson ids '[<selected aliases and targets>]' '.pairs.entity[]? | select(any(.record_ids[]; . as $rid | $ids | index($rid))) | [.record_ids[0],.record_ids[1],.reason] | @tsv' data/identity-overrides/do-not-merge.json",
+      "json_result": "Returned no rows."
+    },
+    "prior_prep_conflicts": {
+      "command": "jq -r --argjson ids '[\"entity_meeting-doc-104761-mta-real-estate\",\"entity_meeting-doc-105786-mta-real-estate\",\"entity_meeting-doc-114016-mta-real-estate\",\"entity_meeting-doc-124206-mta-real-estate\",\"entity_meeting-doc-mta-real-estate\",\"entity_meeting-doc-151836-mta-tod\",\"entity_meeting-doc-170991-tod\",\"entity_meeting-doc-mta-tod\",\"entity_170871-mtapd\",\"entity_meeting-doc-79341-mta-pd\"]' '.proposed_aliases[]? | select(.kind==\"entity\" and (.alias_id as $a | $ids | index($a))) | [.kind,.alias_id,.target_id] | @tsv' data/review_notes/codex-identity-batch0{47..99}-prep.json data/review_notes/codex-identity-batch100-prep.json data/review_notes/codex-identity-batch101-prep.json data/review_notes/codex-identity-batch102-prep.json 2>/dev/null | sort -u",
+      "result": "Returned no rows; none of the selected alias_ids appeared in prior Codex identity prep artifacts through identity102."
+    },
+    "candidate_discovery": {
+      "commands": [
+        "sqlite3 -header -csv data/canonical.db \"select lower(trim(coalesce(entity_name,name,agency_name,short_name,display_name))) as norm, count(*) n, group_concat(record_id,' | ') ids, group_concat(display_name,' | ') names from entities join records using(record_id) where record_kind='entity' group by norm having n>1 order by n desc, norm limit 80;\"",
+        "sqlite3 -header -csv data/canonical.db \"select lower(replace(replace(replace(replace(replace(trim(coalesce(entity_name,name,agency_name,short_name,display_name)),'.',''),'&','and'),'-',' '),'  ',' '),'  ',' ')) as norm, count(*) n, group_concat(record_id,' | ') ids, group_concat(display_name,' | ') names from entities join records using(record_id) where record_kind='entity' group by norm having n>1 order by n desc, norm limit 120;\"",
+        "sqlite3 -header -csv data/canonical.db \"select acronym, count(*) n, group_concat(record_id,' | ') ids, group_concat(display_name,' | ') names from entities join records using(record_id) where record_kind='entity' and acronym is not null and length(acronym)>1 group by lower(acronym) having n>1 order by n desc, lower(acronym) limit 80;\""
+      ],
+      "result": "Selected exact or acronym-consistent organizational clusters only. Community-board, committee-member, and ambiguous acronym clusters were left out."
+    },
+    "source_evidence": {
+      "commands": [
+        "sqlite3 -header -csv data/canonical.db \"select source_id,block_id,substr(replace(replace(raw_text,char(10),' '),char(13),' '),1,260) as block_text from blocks_fts where source_id='meeting_doc_124206' and blocks_fts match '\\\"MTA Real Estate\\\" OR \\\"Real Estate\\\"' order by block_id limit 40;\"",
+        "sqlite3 -header -csv data/canonical.db \"select source_id,block_id,substr(replace(replace(raw_text,char(10),' '),char(13),' '),1,260) as block_text from blocks_fts where source_id='meeting_doc_151836' and blocks_fts match '\\\"Transit Oriented Development\\\" OR TOD' order by block_id limit 40;\"",
+        "sqlite3 -header -csv data/canonical.db \"select source_id,block_id,substr(replace(replace(raw_text,char(10),' '),char(13),' '),1,260) as block_text from blocks_fts where source_id='meeting_doc_160301' and blocks_fts match '\\\"Transit Oriented Development\\\" OR TOD' order by block_id limit 40;\"",
+        "sqlite3 -header -csv data/canonical.db \"select source_id,block_id,substr(replace(replace(raw_text,char(10),' '),char(13),' '),1,260) as block_text from blocks_fts where source_id='meeting_doc_79341' and blocks_fts match '\\\"MTA Police Department\\\" OR MTAPD' order by block_id limit 40;\""
+      ],
+      "result": "Confirmed direct citeable source blocks for the selected MTA Real Estate, MTA Transit Oriented Development/TOD, and MTA Police Department/MTAPD records."
+    },
+    "scope_and_rejection_notes": [
+      "Only global record kind entity is proposed.",
+      "No project, corridor, route, or treatment_component records are included.",
+      "Dropped community-board clusters because same-number boards across boroughs are not safe global duplicates.",
+      "Dropped committee/member snapshot clusters where records may represent a committee, a membership roster, or a meeting-specific role rather than one stable entity."
+    ],
+    "forbidden_command_compliance": {
+      "no_external_or_provider_backed_commands": true,
+      "no_profiles_or_providers": true,
+      "no_canonicalize_or_canonicalize_wave_or_canonicalize_review": true,
+      "no_campaign_dedup_or_identity_review_run": true,
+      "no_write_ask_schema_propose_or_ontology_normalize_run": true,
+      "no_materialize_export_jsonl_or_validate": true,
+      "inspection_commands_used": [
+        "pwd",
+        "rg",
+        "git status --short",
+        "sed",
+        "jq",
+        "sqlite3 data/canonical.db",
+        "test",
+        "date -u"
+      ],
+      "files_written": [
+        "data/review_notes/codex-identity-batch103-prep.json"
+      ]
+    }
+  }
+}

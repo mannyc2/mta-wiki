@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T23-09-19-079Z_1976810-866cada1_ingest_201205-brt-webster-cac",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T03:19:00.949Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "webster-ave-201205-new",
+        "local_observation_id": "corridor_webster_ave_201205",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'corridor_webster-ave-bronx' already exists in the registry and fully captures this observation: the source '201205_brt_webster_cac' is listed in the record's source_ids, the alias 'corridor_webster-ave-201205' is in record_aliases, the corridor name 'Webster Avenue Corridor' matches, borough 'Bronx' matches, and the description ('Based on the existing Bx41 route') is consistent. The observation already resolves to this record — no linking to a different target is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "201205_brt_webster_cac",
+            "block_id": "p008_c0001",
+            "source_quote": "Webster Avenue Corridor - Based on the existing Bx41 route - 5.3 miles long - Within a quarter mile of the corridor: 125,000 residents - 74% of households do not own a car - 63% of residents commute by transit"
+          },
+          {
+            "source_id": "201205_brt_webster_cac",
+            "block_id": "p008_c0003",
+            "source_quote": "Based on the existing Bx41 route, 5.3 milesased on the existing Bx41 route, 5.3 miles long\"}]}]}"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-18-19-870Z_2111393-1c1238e6_canonicalize_2026-06-10t23-09-19-079z-1976810-866cada1-ingest-201205-brt-webster-cac-corridor-identity"
+}

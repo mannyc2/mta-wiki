@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "route_cluster_68f78a564f",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_68f78a564f.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_68f78a564f.json",
+  "source_review_run_id": "2026-06-23T14-38-47-609Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "quarantined",
+  "quarantine": {
+    "blocker": "do_not_merge route_q100-oct2022 <> route_q66-flushing: reason does not cite a strong identity field"
+  },
+  "original_merge_groups": [],
+  "original_do_not_merge": [
+    {
+      "record_ids": [
+        "route_q100-oct2022",
+        "route_q66-flushing"
+      ],
+      "reason": "Contradiction test (test 1): strong identity field route_id differs (Q100 vs Q66). Records are distinct routes regardless of shared_base_route signal."
+    }
+  ]
+}

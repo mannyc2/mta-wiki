@@ -1,0 +1,61 @@
+{
+  "run_id": "2026-06-10T23-12-22-690Z_1976810-a6473111_ingest_2013-04-09-sbs-125th-workshop-3",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T03:43:49.188Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "entity-mta-nyct-self-resolves",
+        "local_observation_id": "entity_mta_nyct_2013_04_09_sbs_125th_workshop_3",
+        "decision": "new",
+        "rationale": "Observation cleanly self-resolves to base_record_id entity_mta-nyct. Registry card matches on entity_name 'MTA New York City Transit', entity_type 'agency', acronym NYCT. No better target in registry; do_not_merge_pairs confirm this is distinct from parent authority and person records.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p001_c0018",
+            "source_quote": "MTA New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-nyc-dot-self-resolves",
+        "local_observation_id": "entity_nyc_dot_2013_04_09_sbs_125th_workshop_3",
+        "decision": "new",
+        "rationale": "Observation cleanly self-resolves to base_record_id entity_nyc-dot. Registry card matches on entity_name 'New York City Department of Transportation', entity_type 'agency', acronym DOT. No better target in registry; do_not_merge_pairs confirm this is distinct from commissioner/person records.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p001_c0020",
+            "source_quote": "NEW YORK CITY DOT"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "partners_with",
+            "subject_id": "entity_mta-nyct",
+            "object_id": "entity_nyc-dot",
+            "description": "Both entities appear jointly in the same 2013 SBS 125th Street Workshop source as co-presenting agencies. Registry payloads confirm both are joint project leads for Select Bus Service.",
+            "evidence_refs": [
+              {
+                "source_id": "2013_04_09_sbs_125th_workshop_3",
+                "block_id": "p001_c0018",
+                "source_quote": "MTA New York City Transit"
+              },
+              {
+                "source_id": "2013_04_09_sbs_125th_workshop_3",
+                "block_id": "p001_c0020",
+                "source_quote": "NEW YORK CITY DOT"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-42-30-479Z_2111393-32325d01_canonicalize_2026-06-10t23-12-22-690z-1976810-a6473111-ingest-2013-04-09-sbs-125th-workshop-3-entity-identity"
+}

@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "review_state": "accepted",
+  "accepted_at": "2026-06-08T21:21:36.731Z",
+  "reviewer": "codex-audit-2026-06-08",
+  "source": "audit_safe_to_promote",
+  "cluster_id": "project_cluster_001",
+  "kind": "project",
+  "packet_path": "data/identity-review/packets/project_cluster_001.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/project_cluster_001.json",
+  "source_review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Flash",
+  "action_summary": {
+    "merge_group_count": 1,
+    "do_not_merge_count": 0,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [
+    [
+      "project_ace-automated-camera-enforcement",
+      "project_automated-camera-enforcement-ace"
+    ]
+  ],
+  "do_not_merge": [],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [
+    "Merge project records when they share identity keys via record_aliases and describe the same program by name, acronym, and partner agencies, even if source-specific surface labels differ."
+  ],
+  "rationale": "Both records describe the MTA's Automated Camera Enforcement (ACE) program — the same bus-mounted camera system for enforcing bus lanes, bus stops, and double-parking violations, administered by MTA/NYCDOF/NYCDOT. They share identity key 'project_automated-camera-enforcement-ace'; record 1's aliases include record 2's full record ID. The validator signal confirms the duplicate. Slight differences in display name ('ACE' vs 'ACE Program') and status ('active' vs 'ongoing') are source-surface variations from different documents (MTA website vs NYCT performance metrics), not distinct programs. The relation context shows overlapping coverage of the same ACE route network."
+}

@@ -1,0 +1,31 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:37:08.196Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_ec33df2ad5.md",
+  "cluster_id": "entity_cluster_ec33df2ad5",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_ec33df2ad5",
+    "kind": "entity",
+    "merge_groups": [
+      [
+        "entity_jose-lasalle-nov2022",
+        "entity_meeting-doc-151646-jose-la-salle"
+      ]
+    ],
+    "do_not_merge": [],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "Test-2 (same-object test) applies: strong identity fields agree (entity_type: person, entity_name: 'Jose LaSalle' vs 'Jose La Salle' is a minor spelling/abbreviation variant explained by source-local naming conventions). No contradicting fields. The second record is a source-specific lifecycle record (id includes 'meeting-doc-151646') that merges into the durable canonical record."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-36-58-662Z_1282984-858a1a45_identity-review-run_entity-cluster-ec33df2ad5",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-36-58-663Z_2026-06-23T14-36-58-662Z_1282984-858a1a45_identity-review-run_entity-cluster-ec33df2ad5.jsonl"
+}

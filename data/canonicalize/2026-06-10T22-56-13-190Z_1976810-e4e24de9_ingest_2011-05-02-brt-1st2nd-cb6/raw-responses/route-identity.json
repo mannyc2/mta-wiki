@@ -1,0 +1,54 @@
+{
+  "run_id": "2026-06-10T22-56-13-190Z_1976810-e4e24de9_ingest_2011-05-02-brt-1st2nd-cb6",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T01:09:56.129Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "m15-sbs-new",
+        "local_observation_id": "route_m15_sbs_2011_05_02",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_m15-sbs matches the existing registry record route_m15-sbs exactly (same route_id M15, route_type Select Bus Service, borough Manhattan, service_variant sbs). Observation already resolves to its own base_record_id; no different target applies.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_05_02_brt_1st2nd_cb6",
+            "block_id": "p003_c0005",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "m15-local-new",
+        "local_observation_id": "route_m15_local_2011_05_02",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_m15-local-2010-09-14 matches the existing registry record route_m15-local-2010-09-14 exactly (same route_id M15, route_label M15 Local, route_type Local, borough Manhattan, service_variant local). Observation already resolves to its own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_05_02_brt_1st2nd_cb6",
+            "block_id": "p005_c0010",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "m15-limited-new",
+        "local_observation_id": "route_m15_limited_2011_05_02",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_m15-limited-2010-06-09 matches the existing registry record route_m15-limited-2010-06-09 exactly (same route_id M15, route_label M15 Limited, route_type Limited, borough Manhattan, service_variant limited_stop). Observation already resolves to its own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_05_02_brt_1st2nd_cb6",
+            "block_id": "p005_c0011",
+            "source_quote": ""
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-09-14-407Z_2111393-3a5b96fd_canonicalize_2026-06-10t22-56-13-190z-1976810-e4e24de9-ingest-2011-05-02-brt-1st2nd-cb6-route-identity"
+}

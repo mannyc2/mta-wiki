@@ -1,0 +1,424 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-22-endpoint-shape-batch027-prep",
+  "created_at": "2026-06-22T23:05:00Z",
+  "author": "codex",
+  "scope": "relation endpoint-shape cleanup prep only; durable mechanism planned but not applied",
+  "batch": "batch027",
+  "run_id_for_replacements": "2026-06-22_codex_relation_cleanup_batch027",
+  "submitted_at_for_dry_run": "2026-06-22T23:05:00Z",
+  "durable_mechanism_planned_not_applied": {
+    "retirements_target": "data/submission-overrides/retired.json",
+    "replacement_journal_target": "data/submissions/2026-06-22_codex_relation_cleanup_batch027.jsonl",
+    "applied": false
+  },
+  "bucket": {
+    "name": "claim records linked directly to publisher/source entities",
+    "original_relation_kind": "published_by",
+    "original_endpoint_shape": "claim -> entity",
+    "replacement_relation_kind": "has_claim",
+    "replacement_endpoint_shape": "entity -> claim",
+    "why_coherent": "These rows use published_by with a claim subject, but current endpoint rules allow published_by only from source, project, or entity subjects to entity objects. The source evidence supports the named newsroom or agency as the entity carrying the cited article/policy claim. Replacing with has_claim entity -> claim preserves the source-backed attribution in a validator-compatible shape without broadening published_by to claims."
+  },
+  "checkpoint_context": {
+    "method": "Read-only inventory over canonical records with the current endpoint-shape table; excluded retired submissions and prior codex relation cleanup prep originals through batch026. Did not run CLI validate, materialize, export-jsonl, DB repair/publish, or provider-backed commands.",
+    "remaining_endpoint_shape_inventory_after_exclusions": {
+      "total": 68,
+      "selected_bucket": "published_by claim->entity",
+      "selected_bucket_count": 6,
+      "prepared_count": 5,
+      "deferred_from_selected_bucket": 1,
+      "other_top_buckets": [
+        {
+          "bucket": "operated_by entity->entity",
+          "count": 4
+        },
+        {
+          "bucket": "implemented_by entity->entity",
+          "count": 4
+        },
+        {
+          "bucket": "serves_route project->project",
+          "count": 3
+        },
+        {
+          "bucket": "part_of_program project->source",
+          "count": 3
+        }
+      ]
+    }
+  },
+  "exclusions_and_guards": {
+    "excluded_batches": [
+      "batch017",
+      "batch019",
+      "batch020",
+      "batch021",
+      "batch022",
+      "batch023",
+      "batch024",
+      "batch025",
+      "batch026"
+    ],
+    "retired_json_not_edited": true,
+    "submission_journals_not_edited": true,
+    "generated_outputs_not_edited": true,
+    "log_not_edited": true,
+    "manifest_merges_retired_not_edited": true,
+    "wiki_source_pages_not_edited": true,
+    "original_submission_guard": {
+      "retired_hits": [],
+      "prior_relation_batch_hits": []
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": [],
+      "prior_review_note_submission_id_hits": [],
+      "prior_review_note_local_observation_id_hits": []
+    }
+  },
+  "local_validation": {
+    "tooling": "createSubmissionEntry plus relationEndpointIssues using accepted local observation ids by source; relationEndpointShapeIssue checked for has_claim entity -> claim",
+    "summary": {
+      "prepared_count": 5,
+      "accepted_count": 5,
+      "issue_count": 0,
+      "warning_count": 0,
+      "endpoint_shape_issue_count": 0
+    }
+  },
+  "prepared": [
+    {
+      "retire": {
+        "submission_id": "sub_11ebb95205802b82",
+        "original_record_id": "relation_the-city-mta-article",
+        "original_local_observation_id": "relation_the_city_mta_article",
+        "malformed_shape": "published_by claim -> entity",
+        "original_relation_kind": "published_by",
+        "original_subject_id": "claim_mta-financially-stable-adding-service",
+        "original_subject_local_observation_id": "claim_mta_financially_stable_adding_service",
+        "original_object_id": "entity_the-city-194506",
+        "original_object_local_observation_id": "entity_the_city_194506",
+        "reason": "The original relation uses published_by with a claim subject. The evidence identifies THE CITY and the quoted MTA financial-stability/service-addition claim, so the safer replacement is THE CITY has_claim the claim."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_7720f137ed1676f2",
+        "proposed_relation_kind": "has_claim",
+        "proposed_endpoint_shape": "entity -> claim",
+        "tool_args": {
+          "source_id": "meeting_doc_194506",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch027_the_city_has_claim_mta_financial_stability",
+          "label": "THE CITY has MTA financial stability claim",
+          "raw_text": "THE CITY; The MTA is financially stable in the near term, with years of projected balanced budgets and it is adding service, not cutting, on the subways and buses.",
+          "payload": {
+            "relation_kind": "has_claim",
+            "subject_local_observation_id": "entity_the_city_194506",
+            "object_local_observation_id": "claim_mta_financially_stable_adding_service",
+            "description": "Replacement for malformed published_by claim -> entity relation; THE CITY is the source entity carrying the MTA financial stability and service-addition claim.",
+            "relation_family": "claim_context"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_194506",
+              "evidence_id": "meeting_doc_194506#p003_c0002",
+              "source_path": "raw/sources/meeting_doc_194506/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0002",
+              "text_sha256": "sha256:e16715e507fba3ca9c4c5afed72a638471312d1fc8023ada67c00d2949b9b92d",
+              "text_source": "raw_text",
+              "source_quote": "THE CITY"
+            },
+            {
+              "source_id": "meeting_doc_194506",
+              "evidence_id": "meeting_doc_194506#p003_c0009",
+              "source_path": "raw/sources/meeting_doc_194506/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0009",
+              "text_sha256": "sha256:6402dc12d821741c067560bf441c62ee48d2d2b10bb6edc01cdd58e113f2ee3c",
+              "text_source": "raw_text",
+              "source_quote": "The MTA is financially stable in the near term"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_92fe7a22892140e2",
+        "original_record_id": "relation_gothamist-congestion-pricing",
+        "original_local_observation_id": "relation_gothamist_congestion_pricing",
+        "malformed_shape": "published_by claim -> entity",
+        "original_relation_kind": "published_by",
+        "original_subject_id": "claim_congestion-pricing-air-quality",
+        "original_subject_local_observation_id": "claim_congestion_pricing_air_quality",
+        "original_object_id": "entity_meeting-doc-135731-gothamist",
+        "original_object_local_observation_id": "entity_gothamist_194506",
+        "reason": "The original relation uses published_by with a claim subject. The evidence identifies Gothamist and the congestion-pricing air-quality headline claim, so the replacement links Gothamist to the claim with has_claim."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_75feb5a0481d5ef8",
+        "proposed_relation_kind": "has_claim",
+        "proposed_endpoint_shape": "entity -> claim",
+        "tool_args": {
+          "source_id": "meeting_doc_194506",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch027_gothamist_has_claim_congestion_pricing_air_quality",
+          "label": "Gothamist has congestion pricing air quality claim",
+          "raw_text": "Gothamist; Congestion pricing makes NYC's air a bit less filthy, study finds",
+          "payload": {
+            "relation_kind": "has_claim",
+            "subject_local_observation_id": "entity_gothamist_194506",
+            "object_local_observation_id": "claim_congestion_pricing_air_quality",
+            "description": "Replacement for malformed published_by claim -> entity relation; Gothamist is the source entity carrying the congestion pricing air-quality headline claim.",
+            "relation_family": "claim_context"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_194506",
+              "evidence_id": "meeting_doc_194506#p004_c0002",
+              "source_path": "raw/sources/meeting_doc_194506/blocks.jsonl",
+              "page_number": 4,
+              "block_id": "p004_c0002",
+              "text_sha256": "sha256:3e8f5648e1b877feb791513de72f1d38f4209a5f34a166130a46c25cee65b0df",
+              "text_source": "raw_text",
+              "source_quote": "Gothamist"
+            },
+            {
+              "source_id": "meeting_doc_194506",
+              "evidence_id": "meeting_doc_194506#p004_c0003",
+              "source_path": "raw/sources/meeting_doc_194506/blocks.jsonl",
+              "page_number": 4,
+              "block_id": "p004_c0003",
+              "text_sha256": "sha256:884eeebee39cacc5b8308e34799a11e19c40ceb7d3593cc1c59ea18b98198b1e",
+              "text_source": "raw_text",
+              "source_quote": "Congestion pricing makes NYC's air a bit less filthy, study finds"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_a07e9c7a830c72c7",
+        "original_record_id": "relation_meeting-doc-177271-nytimes-reported-congestion-pricing",
+        "original_local_observation_id": "relation_meeting_doc_177271_nytimes_reported_congestion_pricing",
+        "malformed_shape": "published_by claim -> entity",
+        "original_relation_kind": "published_by",
+        "original_subject_id": "claim_meeting-doc-177271-nytimes-findings",
+        "original_subject_local_observation_id": "claim_meeting_doc_177271_nytimes_findings",
+        "original_object_id": "entity_meeting-doc-128981-nyct",
+        "original_object_local_observation_id": "entity_meeting_doc_177271_nyct",
+        "reason": "The original relation uses published_by with a claim subject and points to NYCT even though the cited publisher text is The New York Times. A same-source The New York Times entity exists, so the replacement corrects the publisher endpoint and uses has_claim entity -> claim."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_30ebc70bfed8f75b",
+        "proposed_relation_kind": "has_claim",
+        "proposed_endpoint_shape": "entity -> claim",
+        "tool_args": {
+          "source_id": "meeting_doc_177271",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch027_nytimes_has_claim_congestion_pricing_findings",
+          "label": "The New York Times has congestion pricing findings claim",
+          "raw_text": "The New York Times; Cars on the street Fewer Traffic speeds Faster",
+          "payload": {
+            "relation_kind": "has_claim",
+            "subject_local_observation_id": "entity_meeting_doc_177271_nytimes",
+            "object_local_observation_id": "claim_meeting_doc_177271_nytimes_findings",
+            "description": "Replacement for malformed published_by claim -> entity relation; corrects the publisher endpoint from NYCT to the same-source The New York Times entity and links that entity to the congestion-pricing findings claim.",
+            "relation_family": "claim_context"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_177271",
+              "evidence_id": "meeting_doc_177271#p012_c0002",
+              "source_path": "raw/sources/meeting_doc_177271/blocks.jsonl",
+              "page_number": 12,
+              "block_id": "p012_c0002",
+              "text_sha256": "sha256:cef48094c18a91b355d1487eb22191bd3c42c46b460ae2133ef044be93e3fb4d",
+              "text_source": "raw_text",
+              "source_quote": "The New York Times"
+            },
+            {
+              "source_id": "meeting_doc_177271",
+              "evidence_id": "meeting_doc_177271#p012_c0013",
+              "source_path": "raw/sources/meeting_doc_177271/blocks.jsonl",
+              "page_number": 12,
+              "block_id": "p012_c0013",
+              "text_sha256": "sha256:97a679588a3e82ee9bfbade511a5421b35eabd28a94a536b92f7fff919e02add",
+              "text_source": "raw_text",
+              "source_quote": "Cars on the street Fewer Traffic speeds Faster"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_cd86f0d84b46bccd",
+        "original_record_id": "relation_meeting-doc-79466-lirr-policy",
+        "original_local_observation_id": "relation_meeting_doc_79466_lirr_policy",
+        "malformed_shape": "published_by claim -> entity",
+        "original_relation_kind": "published_by",
+        "original_subject_id": "claim_meeting-doc-79466-lirr-purpose",
+        "original_subject_local_observation_id": "claim_meeting_doc_79466_lirr_purpose",
+        "original_object_id": "entity_annual-report-2021-lirr",
+        "original_object_local_observation_id": "entity_meeting_doc_79466_lirr",
+        "reason": "The original relation uses published_by with a claim subject. The evidence identifies LIRR's MED-005 policy and LIRR's policy-purpose claim, so the replacement links LIRR to that claim with has_claim."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_239e3c23bd2a97fa",
+        "proposed_relation_kind": "has_claim",
+        "proposed_endpoint_shape": "entity -> claim",
+        "tool_args": {
+          "source_id": "meeting_doc_79466",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch027_lirr_has_claim_alcohol_substance_policy",
+          "label": "LIRR has alcohol and substance abuse policy claim",
+          "raw_text": "Policy LIRR MED-005 Alcohol Substance Abuse; The MTA Long Island Rail Road (LIRR) is committed to an alcohol and drug free workplace.",
+          "payload": {
+            "relation_kind": "has_claim",
+            "subject_local_observation_id": "entity_meeting_doc_79466_lirr",
+            "object_local_observation_id": "claim_meeting_doc_79466_lirr_purpose",
+            "description": "Replacement for malformed published_by claim -> entity relation; LIRR is the entity carrying the MED-005 alcohol and substance abuse policy claim.",
+            "relation_family": "claim_context"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_79466",
+              "evidence_id": "meeting_doc_79466#p002_c0003",
+              "source_path": "raw/sources/meeting_doc_79466/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0003",
+              "text_sha256": "sha256:a9e6f70e7b49f439e09d1f2dfa71b3b5c62cde47bc28d6623b33148078de6edf",
+              "text_source": "raw_text",
+              "source_quote": "Policy LIRR MED-005 Alcohol Substance Abuse - Page 3"
+            },
+            {
+              "source_id": "meeting_doc_79466",
+              "evidence_id": "meeting_doc_79466#p003_c0005",
+              "source_path": "raw/sources/meeting_doc_79466/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0005",
+              "text_sha256": "sha256:cd8324bb28df723a26c6e39294097d26ffcc06f8f2bf2a4ac882f1f4e6d8026b",
+              "text_source": "raw_text",
+              "source_quote": "The MTA Long Island Rail Road (LIRR) is committed to an alcohol and drug free workplace."
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_2c63d193107bfc99",
+        "original_record_id": "relation_meeting-doc-79466-mnr-policy",
+        "original_local_observation_id": "relation_meeting_doc_79466_mnr_policy",
+        "malformed_shape": "published_by claim -> entity",
+        "original_relation_kind": "published_by",
+        "original_subject_id": "claim_meeting-doc-79466-mnr-purpose",
+        "original_subject_local_observation_id": "claim_meeting_doc_79466_mnr_purpose",
+        "original_object_id": "entity_meeting-doc-124881-mnr",
+        "original_object_local_observation_id": "entity_meeting_doc_79466_metro_north",
+        "reason": "The original relation uses published_by with a claim subject. The evidence identifies Metro-North's 21-012 policy and policy-purpose claim, so the replacement links Metro-North Railroad to that claim with has_claim."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_69accf157eab8902",
+        "proposed_relation_kind": "has_claim",
+        "proposed_endpoint_shape": "entity -> claim",
+        "tool_args": {
+          "source_id": "meeting_doc_79466",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch027_mnr_has_claim_alcohol_substance_policy",
+          "label": "Metro-North has alcohol and substance abuse policy claim",
+          "raw_text": "Policy MNR21-012 Alcohol and Substance Abuse; Metro-North Railroad (MNR) is committed to operating and maintaining an alcohol-free and drug- free workplace.",
+          "payload": {
+            "relation_kind": "has_claim",
+            "subject_local_observation_id": "entity_meeting_doc_79466_metro_north",
+            "object_local_observation_id": "claim_meeting_doc_79466_mnr_purpose",
+            "description": "Replacement for malformed published_by claim -> entity relation; Metro-North Railroad is the entity carrying the 21-012 alcohol and substance abuse policy claim.",
+            "relation_family": "claim_context"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_79466",
+              "evidence_id": "meeting_doc_79466#p002_c0005",
+              "source_path": "raw/sources/meeting_doc_79466/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0005",
+              "text_sha256": "sha256:fa291dc3f405560b3f382374ea0fc9ca43d39515e51982954f3a6c291ed4516b",
+              "text_source": "raw_text",
+              "source_quote": "Policy MNR21-012 Alcohol and Substance Abuse - Page 39"
+            },
+            {
+              "source_id": "meeting_doc_79466",
+              "evidence_id": "meeting_doc_79466#p039_c0008",
+              "source_path": "raw/sources/meeting_doc_79466/blocks.jsonl",
+              "page_number": 39,
+              "block_id": "p039_c0008",
+              "text_sha256": "sha256:b338bd026b6dd795010641e42def8db5b6c9f7e5bfe4bf16f7b9069122086ff5",
+              "text_source": "raw_text",
+              "source_quote": "Metro-North Railroad (MNR) is committed to operating and maintaining an alcohol-free and drug- free workplace"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "record_id": "relation_meeting-doc-177271-rpa-published-findings",
+      "submission_id": "sub_687fd4513ffda23a",
+      "bucket": "published_by claim -> entity",
+      "reason": "Deferred from this batch because the relation points RPA to the NYT findings claim. The evidence supports an RPA report heading, but there is no distinct same-source RPA findings claim endpoint in the prepared replacement set."
+    },
+    {
+      "bucket": "operated_by entity -> entity",
+      "count": 4,
+      "reason": "Likely data cleanup, but examples split between agency grouping, service/program operation, and possible hierarchy; keep separate from publisher/claim cleanup."
+    },
+    {
+      "bucket": "implemented_by entity -> entity",
+      "count": 4,
+      "reason": "Likely cleanup, but includes self-links and agreement/agency rows with mixed semantics."
+    }
+  ]
+}

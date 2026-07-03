@@ -1,0 +1,3487 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-194406"
+record_kind: "source"
+display_name: "MTA Board Action Items - December 2025"
+source_id: "meeting_doc_194406"
+source_ids:
+  - "meeting_doc_194406"
+local_observation_id: "source_meeting_doc_194406"
+local_observation_ids:
+  - "source_meeting_doc_194406"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T21:21:04.041Z"
+submission_ids:
+  - "sub_ca54c1a96053b6cf"
+payload:
+  authority_tier: "board_material"
+  content_type: "board book/meeting agenda"
+  date_text: "December 2025"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2025-12"
+    precision: "month"
+    raw_text: "December 2025"
+  description: "MTA Board meeting agenda, minutes, procurement actions, and 2026 Budget and 2026-2029 Financial Plan adoption materials for the December 17, 2025 Board meeting."
+  published_date_normalized: "2025-12"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "MTA Board Action Items"
+evidence_refs:
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_194406#p001_c0003"
+    page_number: 1
+    source_id: "meeting_doc_194406"
+    source_path: "raw/sources/meeting_doc_194406/blocks.jsonl"
+    text_sha256: "sha256:1c2e7d7242d4937bffeb7ae2ac5b4071b084298424eb1637e9c216f6f292d64f"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_194406#p001_c0004"
+    page_number: 1
+    source_id: "meeting_doc_194406"
+    source_path: "raw/sources/meeting_doc_194406/blocks.jsonl"
+    text_sha256: "sha256:5f9cd9ce531d6511df2421ee46214de32e778d30511a3e4407e407cd96421065"
+    text_source: "raw_text"
+---
+
+# Board Book
+
+source_id: meeting_doc_194406
+citation: cite block ids exactly as shown in square brackets
+document: 1898 block(s)
+
+## Page 1
+
+### [p001_c0001] OS19014_16MTA_board_action_MTA Board Action covers 1/9/19 3:46 PM Page 11
+> [p001_c0002] The logo for the Metropolitan Transportation Authority (MTA) is located at the top left. It consists of a white circle containing the letters "MTA" in blue, followed by the text "Metropolitan Transportation Authority" in a white sans-serif font.
+### [p001_c0003] December 2025
+### [p001_c0004] MTA Board Action Items
+> [p001_c0005] A large, stylized graphic of the MTA logo is centered on the page. It features the letters "MTA" in a bold, white, sans-serif font, set against a dark blue circular background. The letters are slightly offset, creating a 3D effect.
+
+## Page 2
+
+### [p002_c0001] MTA Board Meeting
+[p002_c0002] 2 Broadway 20th Floor Boardroom New York, NY 10004
+[p002_c0003] Wednesday, 12/17/2025 9:00 AM - 12:00 PM ET
+### [p002_c0004] 1. PUBLIC COMMENT PERIOD
+### [p002_c0005] 2. EXECUTIVE SESSION
+### [p002_c0006] 3. PRESENTATION
+### [p002_c0007] 4. APPROVAL OF MINUTES
+[p002_c0008] November 2025 Finance and Board Joint Meeting Minutes - Page 3
+### [p002_c0009] 5. Adoption of the 2026 Budget and 2026-2029 Financial Plan - (materials distributed separately and available in the Exhibit Book and MTA.info)
+### [p002_c0010] 6. COMMITTEE ON METRO-NORTH RAILROAD & LONG ISLAND RAILROAD
+### [p002_c0011] a. MNR Procurement
+[p002_c0012] MNR Procurement - Laser Train lease - Page 10
+### [p002_c0013] b. LIRR Action Items - None
+### [p002_c0014] c. MNR Action
+[p002_c0015] NYSDOT Grant for Connecting Services - Page 17
+### [p002_c0016] 7. COMMITTEE ON NYCT & BUS
+### [p002_c0017] a. NYCT - Procurement
+[p002_c0018] NYCT Procurement - Page 18
+### [p002_c0019] 8. COMMITTEE ON MTA BRIDGES & TUNNELS OPERATIONS
+### [p002_c0020] 9. COMMITTEE ON CAPITAL PROGRAM
+### [p002_c0021] a. Action Items
+[p002_c0022] C&D CPC Summary of Actions (4) - Page 27
+### [p002_c0023] b. Procurements
+[p002_c0024] C&D Procurement Package - Page 29
+### [p002_c0025] 10. COMMITTEE ON FINANCE
+### [p002_c0026] a. Action Items
+[p002_c0027] 2026 Budget and 2026-2029 Financial Plan Adoption Materials (1) - Page 54
+[p002_c0028] Alternative Dispute Resolution (ADR) - Second Avenue Subway Phase II (1) - Page 179
+[p002_c0029] Authorization to Issue 2026 MTA and TBTA New Money Bonds, Bond Anticipation Notes, Refunding and Other Obligation; Approval of Reimbursement Resolutions for Federal Tax Purposes (1) - Page 181
+### [p002_c0030] b. MTA HQ Procurement
+[p002_c0031] MTAHQ Competitive Procurement - Page 227
+### [p002_c0032] c. Real Estate Items
+[p002_c0033] Real Estate Package - Page 229
+
+## Page 3
+
+### [p003_c0001] Joint Minutes of the Metropolitan Transportation Authority, the New York City Transit Authority, the Manhattan and Bronx Surface Transit Operating Authority, the Staten Island Rapid Transit Operating Authority, the Metropolitan Suburban Bus Authority, the Triborough Bridge and Tunnel Authority, the Long Island Rail Road Company, Metro-North Commuter Railroad Company, MTA Construction and Development Company, the MTA Bus Company, Grand Central Madison Operating Company, and the First Mutual Transportation Assurance Company
+### [p003_c0002] Joint Finance Committee and Regular Board Meeting Minutes
+[p003_c0003] November 19, 2025
+[p003_c0004] 1:30 PM
+[p003_c0005] 2 Broadway
+[p003_c0006] New York, New York
+### [p003_c0007] The following Board Members were present (*attended remotely):
+[p003_c0008] Hon. Janno Lieber, Chair & CEO
+[p003_c0009] Hon. Andrew Albert
+[p003_c0010] Hon. Samuel Chu *
+[p003_c0011] Hon. Michael Fleischer
+[p003_c0012] Hon. Marc Herbst
+[p003_c0013] Hon. David Jones
+[p003_c0014] Hon. Christopher Leathers
+[p003_c0015] Hon. Blanca Lopez
+[p003_c0016] Hon. David Mack
+[p003_c0017] Hon. Haeda B. Mihaltses
+[p003_c0018] Hon. Melva M. Miller
+[p003_c0019] Hon. James O'Donnell
+[p003_c0020] Hon. Dr. John-Ross Rizzo
+[p003_c0021] Hon. Lisa Sorin*
+[p003_c0022] Hon. Midori Valdivia
+[p003_c0023] Hon. Edward Valente
+[p003_c0024] Hon. Neal Zuckerman
+### [p003_c0025] The following alternate non-voting members were present:
+[p003_c0026] Hon. Gerard Bringmann
+[p003_c0027] Hon. Randolph Glucksman
+### [p003_c0028] The following Board Members were not present:
+[p003_c0029] Hon. Daniel Garodnick
+[p003_c0030] Hon. Blanca Lopez
+[p003_c0031] Hon. John Samuelsen
+[p003_c0032] Paige Graves, General Counsel, John McCarthy, Chief External Relations & Policy, Lisette Camilo, Chief Administrative Officer, Jai Patel, Chief Financial Officer, Justin Vonashek, President Metro-North Railroad, Robert Free, President LIRR, Jamie Torres-Springer, President MTA C&D, Shanifah Rieara, Senior Advisor for Communications and Policy/Chief Customer Officer, Juliette Michaelson, Chief of Staff and Strategic Planning, Catherine Sheridan, President Bridges & Tunnels, Demetrius Crichlow, President New York City Transit, Monica Murray, Auditor General, Thomas Taffe, Chief MTA PD, and Michael Kemper, Chief Security Office MTA HQ also attended the meeting.
+[p003_c0033] Chair Lieber called to order the joint meeting of November 2025 Board meeting and Finance Committee.
+[p003_c0034] _Master Page # 3 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 4
+
+[p004_c0001] A safety announcement was made.
+### [p004_c0002] 1. PUBLIC SPEAKERS' SESSION
+[p004_c0003] The MTA moderator announced that the following public speakers will speak either live virtually or in-person. The moderator reminded public speakers of the rules of conduct and the two-minute speaking limit. The moderator reminded speakers of the warning beep when 30 seconds remain to conclude their remarks. The moderator advised that the public comment will be recorded, published to the MTA website, and available for MTA Board Members' review.
+[p004_c0004] The following public speakers commented (*live virtual comments):
+[p004_c0005] Gabina SantaMarina, Riders Alliance Angela Kravtchenko, Stop the Noise Tramell Thompson, TWU Local 100 David Kupferberg, Passengers United Mike Howard, private citizen Rachael Fauss, Reinvent Albany* Brian Fritsch, PCAC Cassie Raffucci, Passengers United Eric Roman, Jobs to Move America Maurice Wells, private citizen Norm Miller, New York Public Interest Research Group Carson Carter, Save the Ferry* Matt McMillian, TWU Local 100* Lolita Dilviolta, Stop the Noise Jason Busolt, SMART Local 28* Andy Pollack, Passengers United* Charlton D'Souza, Passengers United* Jesse Figueroa, VFW Department of NY* Mo-Yain Tham, Jobs to Move America*
+[p004_c0006] Chair Lieber thanked everyone who joined the meeting today, especially the public speakers.
+[p004_c0007] General Counsel Paige Graves confirmed a quorum for the record.
+### [p004_c0008] 1. CHAIR'S REMARKS
+[p004_c0009] Chair Lieber thanked everyone who joined the meeting and stated that MTA Chief Financial Officer Jai Patel ("CFO Patel") will present the latest financial plan. Before that is presented, the Chair provided good news about the operating budget. MTA is about to implement a 4% fare increase on January 4, and the
+[p004_c0010] _Master Page # 4 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 5
+
+[p005_c0001] public wants to know: is this agency being well managed financially? The Chair stated the answer is yes. Chair Lieber stated that CFO Patel will go into more detail, but MTA has a balanced budget for 2026. The outyears remain slightly trickier but MTA is doing much better than four years ago. MTA's total deficit over the 2025-2029 five-year financial plan period is about half of one percent of the budget. Compared to 2021, the MTA was looking at a $2.5 billion annual deficit, representing about 14% of the budget.
+[p005_c0002] MTA has been able to get back on track thanks to amazing support from Albany. In 2023, Governor Hochul, with the support of the Legislature, stood up for MTA riders – and allowed MTA to have enough money to stay afloat without cutting service or having layoffs. Thanks to the Governor, the MTA is not grappling with 20% fare increases like NJT or SEPTA, nor entertaining huge service cuts like the ones being contemplated in Chicago, San Francisco, and Philadelphia.
+[p005_c0003] Another major factor in this agency's fiscal stability has been the cost savings achieved in recent years, which was a condition of the 2023 budget deal. MTA committed to a $400 million package of efficiencies in a two-year period. The Chair stated that not only has MTA met that $400 million goal, MTA has surpassed it. In 2025, MTA is hitting $500 million in savings, all without cuts or reductions in people or reductions to service.
+[p005_c0004] The Chair further explained how MTA is achieving and exceeding the cost saving goals. Phase 1 of the cost savings program achieved $500 million in savings through a range of improvements, for example, adjustments to the frequency of rail car maintenance based on data analysis. MTA is using technology to optimize railroad and crew scheduling. MTA increased energy efficiencies by installing LED lighting all over the system, and is evaluating usage patterns on computer systems to eliminate wasteful software licenses. Additionally, MTA renegotiated deals with cell phone carriers, and removed cell phones and other electronic devices not in use. Further, MTA is realizing savings from the transition to tap-and-ride, although it was not what motivated us to move to the more modern system, by not having to collect money from every MetroCard machine.
+[p005_c0005] Chair Lieber stated that MTA is taking the next step, shooting for another $250 million in annual efficiency savings. CFO Patel will present a plan that projects the 2027 deficit, which was $345 million back in July, to be $160 million, with additional reductions in deficits to come in 2028 and 2029. As a result of these plans for additional efficiencies, the November Financial Plan significantly cuts the projected deficits in the outyears. All told, MTA is expected to achieve more than $2 billion in cost savings over the next four years.
+[p005_c0006] Chair Lieber stated that MTA is cutting costs while we're running a ton more service than before COVID. There is more service on 13 subway lines, including the A and the L. MTA is running more bus service, in large part due to the additional $35 million invested in the Queens bus system as a result of the bus network redesign. MTA is running more railroad service across the board. Chair Lieber further noted, cost savings are being delivered despite the fact that we're spending $300+ million a year on operating Grand Central Madison. The Chair stated that figuring out how to keep doing more with less has been the daily priority of the MTA these last few years and doing it pretty well.
+[p005_c0007] The Chair stated that MTA is also focused on the transition to tap-and-ride. This week, Shanifah Rieara, Demetrius Crichlow, and the Customer Service team have been out helping folks trade in their old MetroCards for free new OMNY cards. There is nearly full adoption of tap-and-ride – 90% of customers have switched from MetroCard to OMNY. All the new vending machines for OMNY have been installed,
+[p005_c0008] _Master Page # 5 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 6
+
+[p006_c0001] and MTA is ahead of expectations in terms of the penetration of tap-and-ride among riders. The advantages are clear.
+[p006_c0002] The Chair acknowledged, as did public speakers, that there were real concerns that we are in the process of addressing about transparency and the mechanics of OMNY. He stated that is a huge improvement that customers no longer have to put money on a MetroCard in advance. Customers do not have to pre-pay to get a $34 weekly or $132 for a monthly. Chair Liber stated that tap-and-ride is going to unlock a lot of new equity advantages but also new possibilities for us to address challenges of affordability.
+[p006_c0003] The Chair stated that affordability is a priority that we share with the Mayor-elect. The MTA is thrilled that transit got so much attention in the mayoral campaign in general, and in particular from the Mayor-elect. We are blessed to have a pro-transit Governor, who has done enormous amounts to keep the MTA in good shape and to help us move forward, and we're blessed to have a pro-transit incoming mayor. Are there some differences to work out about how best to support the affordability agenda? Yes. But it shouldn't be lost on anyone that we've never had a more pro-transit combo in City Hall and in Albany than we are looking at starting in 2026. The Chair concluded that this is a positive moment for the MTA, it's positive for our riders, and it's positive for everybody who cares about transit in New York and in the United States.
+[p006_c0004] Chair Lieber called on Chief Financial Officer, Jai Patel, to go through the budget details.
+### [p006_c0005] 1. MTA PROPOSED BUDGET AND 2026-2029 FINANCIAL PLAN
+[p006_c0006] MTA Chief Financial Officer Jai Patel presented the proposed budget and November 2025 Financial Plan. Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records for details of the presentation.
+### [p006_c0007] 2. COMMITTEE ON FINANCE
+[p006_c0008] MTA Chief Financial Officer led the presentation of finance committee agenda items.
+[p006_c0009] Upon motion duly made and seconded, the Board voted to approve the following procurement items:
+- [p006_c0010] A. Action Item i. Approval of TBTA Congestion Relief Zone Toll Revenue Obligation Resolution B. Procurement i. Competitive procurements a. Retainer contract award to 17 consulting firms to provide as-needed technical and management consulting services in support of MTA's Enterprise Asset Management ("EAM") Program. Various vendors. $135,000,000 estimated. b. Contract for Fleet Management Services: Modification to (1) extend the contract for eight months in order to ensure continuation of the fleet maintenance service program during the current Request for Proposal process to award a replacement contract; and (2) procure additional funding. Automotive Rentals Inc. $15,700,000 c. Contract for New Fare Payment System; Modification to procure 20 Customer Service Point of Sale terminals. Cubic Transportation Systems. $1,364,510.
+[p006_c0011] Board Member Zuckerman abstained from the vote on item B(i)(a).
+[p006_c0012] _Master Page # 6 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 7
+
+[p007_c0001] On item B(i)(c); Board Members Mihaltses and Valdivia voted against; Board Member Miller abstained from the vote.
+[p007_c0002] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for the presented Informational Items, discussion, and details on the approved procurement items.
+[p007_c0003] Upon motion duly made and seconded, the Board voted to approve the following real estate items:
+### [p007_c0004] C. Real Estate
+### [p007_c0005] i. Administrative Items
+- [p007_c0006] a. MTA MNR – Amendment of the Grand Central Terminal event fee schedule policy.
+### [p007_c0007] ii. Transactional Items
+- [p007_c0008] a. MTA – Sale of Eastern Rail yard transferable development rights to Related Companies, L.P. b. MTA - Lease with 111 Washington Avenue, LLC for MTA Government and Community Relations Office Space at 111 Washington Avenue, Albany, NY c. MTA NYCT – Extension of lease with 27-35 Jackson Ave LLC for office space located in 27-35 Jackson Avenue, Long Island City, NY d. MTA LIRR – Lease with Muhammad Afzal for retail space at the Long Beach Station, Long Beach, NY e. MTA LIRR - Lease renewal (Part 3) with Alzamora Commercial Holdings LLC for office space in 300 Old Country Road, Suite 103, Mineola, NY. f. MTA LIRR – License with Libla realty Corp. For the use of property for storage and parking under the viaduct in Valley Stream, NY
+[p007_c0009] Board Member Mihaltses abstained from the vote on item C(ii)(a).
+[p007_c0010] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records for details on the approved real estate items.
+### [p007_c0011] 3. APPROVAL OF MINUTES
+[p007_c0012] Upon motion duly made and seconded, the Board approved the MTA Regular Board meeting held on October 29, 2025, as distributed.
+[p007_c0013] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records for the details.
+### [p007_c0014] 4. TRIBOROUGH BRIDGE AND TUNNEL AUTHORITY COMMITTEE
+[p007_c0015] There were no items to report for Board approval for the TBTA Committee.
+### [p007_c0016] 5. JOINT LONG ISLAND RAIL ROAD/METRO-NORTH RAILROAD COMMITTEE
+[p007_c0017] There were no items to report for Board approval for the Joint Railroad Committee.
+[p007_c0018] _Master Page # 7 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 8
+
+### [p008_c0001] 6. NEW YORK CITY TRANSIT COMMITTEE
+[p008_c0002] Upon motion duly made and seconded, the Board approved the following:
+### [p008_c0003] A. Non-Competitive Procurements
+- [p008_c0004] 1. Contract for the provision of software maintenance and support services related to the Intelligent Vehicle Network (“IVN”) system. Clever Devices LTD. $40,194,597.
+### [p008_c0005] B. Competitive Procurements
+- [p008_c0006] a. Contract for the purchase of 110 low-floor 40-foot diesel-electric hybrid buses; Modification to purchase 219 low-floor 40-foot Option Buses (161 diesel-electric hybrid and 58 clean diesel) in order to exercise the option for 558 Option Buses. New Flyer of America, Inc. $257,602,924.
+### [p008_c0007] C. Ratifications
+- [p008_c0008] a. Contract for the procurement of 3,000 subway car wheels; Ratification of an Immediate Operating Need. Standard Steel LLC $7,350,000.
+[p008_c0009] Refer to the video recording, the staff summary, and documentation filed with the records of this meeting, produced by the MTA and maintained in MTA records for the details of this item.
+### [p008_c0010] 7. CAPITAL PROGRAM COMMITTEE
+[p008_c0011] Upon a motion duly made and seconded, the Board voted to approve the following three actions:
+- [p008_c0012] 1. Award of a modification to a contract with Gannett Fleming Engineers and Architects (Contract PSC-19-3031) to provide for structural testing and analysis of four support buildings and construction support services for façade work. This modification will also extend the Contract term by 26 months, to May 30, 2027, to support the additional façade work. 2. Award of a unilateral modification to a contract with Judlau Contracting (Contract A46026) to compensate the contractor for the direct costs of resequencing the work and ten months of impact costs, through October 20, 2026. This modification will also provide for an extension of the Substantial Completion date to October 20, 2026. 3. Ratification of a modification to a contract with Approved General Contractors (Contract 6484) addressing unforeseen site conditions.
+[p008_c0013] Refer to the staff summaries and documentation filed with the records of this meeting for the details of these items, and refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for Board members’ and C&D representatives’ comments.
+### [p008_c0014] 8. ADJOURNMENT
+[p008_c0015] _Master Page # 8 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 9
+
+[p009_c0001] Upon motion duly made and seconded, the Board voted to adjourn the meeting at 11:26 am.
+[p009_c0002] Paige Graves General Counsel and Corporate Secretary MTA
+[p009_c0003] Eamonn Foley Vice President, General Counsel and Corporate Secretary Metro-North Commuter Railroad Company
+[p009_c0004] David Farber General Counsel and Corporate Secretary NYCT and MTA Bus
+[p009_c0005] Haley Stein Vice President, General Counsel and Corporate Secretary Long Island Rail Road Company
+[p009_c0006] Paul L. Friman General Counsel and Corporate Secretary Triborough Bridge & Tunnel Authority
+[p009_c0007] Evan Eisland General Counsel and Corporate Secretary MTA C&D
+[p009_c0008] _Master Page # 9 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 10
+
+> [p010_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p010_c0002] Metro-North Railroad Procurements
+[p010_c0003] Thomas Voytek , Acting Assistant Deputy Chief Procurement Officer – MTA Office of the Chief Procurement Officer
+[p010_c0004] _Master Page # 10 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 11
+
+> [p011_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p011_c0002] PROCUREMENTS
+[p011_c0003] The Procurement Agenda this month includes 1 action for a proposed estimated expenditure of $14.8M.
+[p011_c0004] _Master Page # 11 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 12
+
+[p012_c0001]
+
+```text
+Subject Request for Authorization to Award Various Procurements Department MTA Procurement Department Head Name Lisette Camilo Department Head Signature Lisette Camilo Project Manager Name Rose Davis
+```
+[p012_c0002]
+
+```text
+Board Action Order To Date Approval Info Other 1 Committee 12/15/25 2 Board 12/17/25
+```
+[p012_c0003]
+
+```text
+Internal Approvals (cont.) Order Approval Order Approval
+```
+[p012_c0004] December 10, 2025
+[p012_c0005] Department
+[p012_c0006] Department Head Name
+[p012_c0007] Department Head Signature
+[p012_c0008]
+
+```text
+Internal Approvals Approval Approval President [Signature] SVP Operations JL [Signature] General Counsel [Signature]
+```
+### [p012_c0009] PURPOSE
+[p012_c0010] To obtain approval of the Board to award various contracts and purchase orders, and to inform the Metro-North Committee of these procurement actions.
+### [p012_c0011] DISCUSSION
+[p012_c0012] Metro-North proposes to award Noncompetitive procurements in the following categories:
+[p012_c0013] Schedules Requiring Majority Vote:
+[p012_c0014]
+
+```text
+# of Actions $ Amount Schedule G: Miscellaneous Service Contracts 1 $ 14.8 M
+```
+[p012_c0015] Metro-North proposes to award Competitive procurements in the following categories: None
+[p012_c0016] Metro-North proposes to award Ratifications in the following categories: None
+[p012_c0017] TOTAL 1 $ 14.8 M
+[p012_c0018] COMPETITIVE BIDDING REQUIREMENTS: The procurement actions in Schedules A, B, C, and D are subject to the competitive bidding requirements of PAL 1209 or 1265-a relating to contracts for the purchase of goods or public work. Procurement actions in the remaining Schedules are not subject to these requirements.
+[p012_c0019] BUDGET IMPACT: The purchases/contracts will result in obligating funds in the amounts listed. Funds are available in the current operating/capital budgets for this purpose.
+[p012_c0020] RECOMMENDATION: That the purchases/contracts be approved as proposed. (Items are included in the resolution of approval at the beginning of the Procurement Section.)
+[p012_c0021] _Master Page # 12 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 13
+
+### [p013_c0001] BOARD RESOLUTION
+[p013_c0002] WHEREAS , in accordance with Sections 1265-a and 1209 of the Public Authorities Law and the All-Agency General Contract Procurement Guidelines, the Board authorizes the award of certain noncompetitive purchase and public work contracts, and the solicitation and award of requests for proposals regarding purchase and public work contracts; and
+[p013_c0003] WHEREAS , in accordance with the All-Agency Service Contract Procurement Guidelines and General Contract Procurement Guidelines the Board authorizes the award of certain noncompetitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts, and
+[p013_c0004] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Service Contract Procurement Guidelines, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p013_c0005] NOW, the Board resolves as follows:
+[p013_c0006] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract.
+[p013_c0007] 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals, and authorizes the solicitation of such proposals.
+[p013_c0008] 3. As to each request for proposals (for purchase and public work contracts) set forth in Schedule C for which a recommendation is made to award the contract, the Board authorizes the execution of said contract.
+[p013_c0009] 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein and ratifies each action for which ratification is requested.
+[p013_c0010] 5. The Board authorizes the execution of each of the following for which Board authorization is required: (i) the miscellaneous procurement contracts set forth in Schedule E; (ii) the personal service contracts set forth in Schedule F; (iii) the miscellaneous service contracts set forth in Schedule G; (iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; (v) the contract modifications to purchase and public work contracts set forth in Schedule I; and (vi) the modifications to miscellaneous procurement contracts set forth in Schedule J.
+[p013_c0011] 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p013_c0012] _Master Page # 13 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 14
+
+### [p014_c0001] Metro-North Railroad
+### [p014_c0002] DECEMBER 2025
+### [p014_c0003] LIST OF NONCOMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p014_c0004] Procurements Requiring Majority Vote:
+### [p014_c0005] G. Miscellaneous Service Contracts
+[p014_c0006] (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p014_c0007] 1. Laser Tribology B.V. $14,768,112 Staff Summary Attached
+[p014_c0008] Two years + one-year option
+[p014_c0009] Contract # 520098
+[p014_c0010] Contract award for the leasing of three train modules (one for Metro-North Railroad and two for Long Island Rail Road) for Rail-Based Cleaning.
+[p014_c0011] _Master Page # 14 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 15
+
+### [p015_c0001] Schedule G: Miscellaneous Service Contracts
+[p015_c0002] Item Number: 1
+[p015_c0003]
+
+```text
+Vendor Name (Location) Laser Tribology B.V. (Amsterdam, The Netherlands) Contract Number 520098 Renewal? Yes No Description Lease Agreement for Laser Train Module for Rail-Based Cleaning Total Amount: $14,768,112 MNR: $5,607,755 LIRR: $9,160,357 Contract Term (including Options, if any): Two years with a one-year option Base: January 2026–December 2027 Option: January 2028–December 2028 Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Sole Source Funding Source Operating Capital Federal Other: Requesting Departments Maintenance of Equipment MNR: Jason Sharkey, Chief Mechanical Officer Maintenance of Equipment LIRR: John Stolz, Chief Mechanical Officer
+```
+### [p015_c0004] Discussion:
+[p015_c0005] Metro-North Railroad (“MNR”), on behalf of itself and the Long Island Rail Road (“LIRR”), (collectively, “the Railroads”), requests Board approval to award a noncompetitive miscellaneous service contract for the leasing of three laser train modules (one for MNR and two for LIRR) for rail-based cleaning to Laser Tribology B.V. (“LT”). The contract term is for two years (January 2026–December 2027) plus a one-year extension option (January 2028–December 2028), if elected. The total amount of this contract, including the option period, is $14,768,000 (MNR $5.61 million and LIRR $9.16 million). The Railroads are also seeking Board approval to authorize the MTA Assistant Deputy Chief Procurement Officer to approve the exercise of the one-year option.
+[p015_c0006] The laser train modules, consisting of cleaning heads attached to the truck of a non-revenue railcar, provide railhead-based cleaning for the removal of leaf debris and contaminants from the top of rail surfaces to reduce the number of damaging slip/slide events and enhance resulting equipment availability, safety, and reliability. In addition to providing the laser train modules, LT’s proposal includes continuous remote monitoring, scheduled preventative maintenance, supply of spare parts, performance evaluation at the beginning and end of each leaf season, Geographic Information System data validation, and the winterizing of the lasers before and after the winter seasons.
+[p015_c0007] Following each leaf season, typically from early October to late November, the Railroads have historically experienced slip/slide events due to contamination of the rail by leaf debris. This reduces the level of adhesion between the rail and train wheel, and adversely affects a train’s ability to stop, resulting in damage to wheels in the form of flat spots. The resulting wheel damage requires removing passenger cars and locomotives from service for repair, thereby causing delays, and shorter or canceled trains.
+[p015_c0008] The utilization of laser train modules has provided great benefits to the Railroads, having cleaned more than 30,000 miles of track in 2024. As a result of laser train module implementation, the Railroads realized significant savings by reducing annual wheel maintenance over time and eliminating thousands of wheel repairs/replacements during the peak leaf season. This resulted in the Railroads saving more than $1 million in 2024, in addition to improving customer support and safety.
+[p015_c0009] LT debuted its first laser train module with LIRR in 2020 via a successful pilot agreement, which expanded to an agreement for 2021–2024. Based on LIRR’s demonstrated success with this system, MNR entered into a laser train module lease with LT in 2024 (ending in May 2026) that included an option for Staten Island Railway Transit Operating Authority (“SIRTOA”). Following LIRR’s initial agreement with LT, LIRR elected to continue laser train module service via a ride of the MNR/SIRTOA agreement. SIRTOA has decided not to join the new agreement as the per-mile cost on its territory was not deemed financially beneficial.
+[p015_c0010] This new agreement is necessary to ensure continued coverage for future leaf seasons for both Railroads and to increase LIRR’s laser train modules’ capabilities beyond the current 35-miles-per-hour configuration, to 60 miles per hour, mirroring MNR.
+[p015_c0011] LT’s proposal for this new contract term includes a fixed annual laser module lease price of $1.25 million for MNR’s one laser train module, and $1.104 million each for LIRR’s two laser train modules, which represents a savings of 4 percent off the previous contract price for the three modules, while providing enhanced support to both Railroads with 60-miles-per-hour service.
+[p015_c0012] _Master Page # 15 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 16
+
+### [p016_c0001] Schedule G: Miscellaneous Service Contracts
+### [p016_c0002] Metro-North Railroad
+[p016_c0003] In accordance with the MTA All-Agency Procurement Guidelines, the Railroads advertised their intent to procure the laser train modules on a sole-source basis in the Journal News and on the MTA website. No other firms expressed interest in participating in this procurement.
+[p016_c0004] This contract has been evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state, and local law and regulations. Any applicable cybersecurity requirements, to the extent required, have been included in the contract terms and conditions.
+[p016_c0005] LT has certified that pursuant to EO 16, it is not doing business in Russia, and no current SAI has been found that would preclude LT from this award.
+### [p016_c0006] Alternatives
+[p016_c0007] No alternatives are recommended. LT is the only current vendor providing this type of cutting-edge technology for rail cleaning.
+### [p016_c0008] M/W/DBE Information
+[p016_c0009] The MTA Department of Diversity and Civil Rights has established zero percent MWBE/SDVOB goals on this contract due to the lack of subcontracting opportunities and MWBE/SDVOB firms in the marketplace.
+### [p016_c0010] Impact on Funding
+[p016_c0011] This procurement will be funded by each Railroad's Operating Budget.
+[p016_c0012] _Master Page # 16 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 17
+
+### [p017_c0001] Staff Summary
+### [p017_c0002] Page 1 of 1
+[p017_c0003]
+
+```text
+Subject NYSDOT Grant for Connecting Services Department Service Design Department Head Name Sean Fahey Department Head Signature Project Manager Name Donna Y Mason Program Manager Name
+```
+[p017_c0004]
+
+```text
+Date December 3, 2025 Vendor Name N/A Contract Number N/A Contract Manager Name N/A Table of Contents Ref#
+```
+[p017_c0005]
+
+```text
+Board Action Order To Date Approval Info Other 1 M-N Comm. Mtg. 12/15/25 2 MTA Board Mtg. 12/15/25
+```
+[p017_c0006]
+
+```text
+Internal Approvals Order Approval Order Approval 1 VP & General Counsel 2 Sr. Vice President, Operations 3 MNR President
+```
+[p017_c0007]
+
+```text
+Internal Approvals (cont.) Order Approval Order Approval Order Approval Order Approval
+```
+[p017_c0008] Narrative PURPOSE: To obtain MTA Board approval to enter into a contract to accept up to $365,000 in a Congestion Mitigation/Air Quality (CMAQ) grant from the New York State Department of Transportation (NYSDOT) to support connecting services covering the period from January 1, 2026 through December 31, 2026. DISCUSSION: Metro-North has worked with NYSDOT to implement various projects to improve access to Metro-North stations. These projects, which include connecting buses (e.g., Hudson Link, Newburgh Beacon Bridge Shuttle, Dutchess LOOP, HARTransit, etc.), and the Haverstraw-Ossining Ferry, create station access/egress and increase ridership and revenue for the Railroad, as well as reduce the number of single occupancy vehicles on the roads. Over the past fifteen plus years, Metro-North has received over $5 million from similar NYSDOT (CMAQ) grants. These funds have been used for a variety of operational and marketing activities: providing customer information (e.g., signage, kiosks, etc.); marketing/advertising to launch and support these services; for customer parking and miscellaneous operational improvements. Metro-North plans to use the funds from the new CMAQ grant in a similar fashion, working with our regional partners to maintain service quality and improve station access. BUDGET IMPACT: No budget impacts. These monies allow for projects that would not otherwise be implemented. RECOMMENDATION: That the MTA Board grant approval to enter into a contract to accept up to $365,000 in a Congestion Mitigation/Air Quality (CMAQ) grant from the New York State Department of Transportation (NYSDOT) to support connecting services, covering the period from January 1, 2026 through December 31, 2026.
+[p017_c0009] The legal name of MTA Metro-North Railroad is Metro-North Commuter Railroad Company
+[p017_c0010] _Master Page # 17 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 18
+
+### [p018_c0001] New York City Transit Procurements
+[p018_c0002] Louis Montanti , MTA Deputy Chief Procurement Officer – Procurement Operations
+[p018_c0003] _Master Page # 18 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 19
+
+### [p019_c0001] PROCUREMENTS
+[p019_c0002] The Procurement Agenda this month includes 2 actions for a proposed estimated expenditure of $104.9M.
+[p019_c0003] _Master Page # 19 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 20
+
+[p020_c0001]
+
+```text
+Subject Request for Authorization to Award Various Procurements Department MTA Procurement Department Head Name Lisette Camilo Department Head Signature Project Manager Name Rose Davis Board Action Order To Date Approval Info Other 1 Committee 12/15/25 2 Board 12/17/25
+```
+[p020_c0002]
+
+```text
+December 15, 2025 Department Department Head Name Department Head Signature Internal Approvals Approval Approval President NYCT Pres. MTA Bus/SVP DOB X CFO X Subways Law X Diversity/Civil Rights
+```
+[p020_c0003]
+
+```text
+Internal Approvals (cont.) Order Approval Order Approval Order Approval Order Approval
+```
+### [p020_c0004] PURPOSE
+[p020_c0005] To obtain approval of the Board to award various contracts and purchase orders, and to inform the NYC Transit Committee of these procurement actions.
+### [p020_c0006] DISCUSSION
+[p020_c0007] NYC Transit proposes to award Noncompetitive procurements in the following categories: None
+[p020_c0008] NYC Transit proposes to award Competitive Procurements in the following categories:
+[p020_c0009]
+
+```text
+Procurements Requiring Majority Vote: # of $ Amount Actions Schedule I: Modifications to Purchase and Public Works Contracts 1 $ 97.6 M SUBTOTAL 1 $ 97.6 M
+```
+[p020_c0010] NYC Transit proposes to award Ratifications in the following categories:
+[p020_c0011]
+
+```text
+Schedules Requiring Two-Thirds Vote: Schedule D: Ratification of Completed Procurement Actions 1 $ 7.3 M SUBTOTAL 1 $ 7.3 M TOTAL 2 $ 104.9 M
+```
+[p020_c0012] COMPETITIVE BIDDING REQUIREMENTS: The procurement actions in Schedules A, B, C, and D are subject to the competitive bidding requirements of PAL 1209 or 1265-a relating to contracts for the purchase of goods or public work. Procurement actions in the remaining Schedules are not subject to these requirements.
+[p020_c0013] BUDGET IMPACT: The purchases/contracts will result in obligating funds in the amounts listed. Funds are available in the current operating/capital budgets for this purpose.
+[p020_c0014] RECOMMENDATION: That the purchases/contracts be approved as proposed. (Items are included in the resolution of approval at the beginning of the Procurement Section.)
+[p020_c0015] _Master Page # 20 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 21
+
+### [p021_c0001] BOARD RESOLUTION
+[p021_c0002] WHEREAS , in accordance with Sections 1265-a and 1209 of the Public Authorities Law and the All-Agency General Contract Procurement Guidelines, the Board authorizes the award of certain noncompetitive purchase and public work contracts, and the solicitation and award of requests for proposals regarding purchase and public work contracts; and
+[p021_c0003] WHEREAS , in accordance with the All-Agency Service Contract Procurement Guidelines and General Contract Procurement Guidelines the Board authorizes the award of certain noncompetitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts, and
+[p021_c0004] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Service Contract Procurement Guidelines, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p021_c0005] NOW, the Board resolves as follows:
+[p021_c0006] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract.
+[p021_c0007] 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals, and authorizes the solicitation of such proposals.
+[p021_c0008] 3. As to each request for proposals (for purchase and public work contracts) set forth in Schedule C for which a recommendation is made to award the contract, the Board authorizes the execution of said contract.
+[p021_c0009] 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein and ratifies each action for which ratification is requested.
+[p021_c0010] 5. The Board authorizes the execution of each of the following for which Board authorization is required: (i) the miscellaneous procurement contracts set forth in Schedule E; (ii) the personal service contracts set forth in Schedule F; (iii) the miscellaneous service contracts set forth in Schedule G; (iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; (v) the contract modifications to purchase and public work contracts set forth in Schedule I; and (vi) the modifications to miscellaneous procurement contracts set forth in Schedule J.
+[p021_c0011] 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p021_c0012] _Master Page # 21 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 22
+
+### [p022_c0001] New York City Transit
+[p022_c0002] DECEMBER 2025
+### [p022_c0003] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p022_c0004] Procurements Requiring Majority Vote:
+### [p022_c0005] I. Modifications to Purchase and Public Work Contracts
+[p022_c0006] (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p022_c0007] 1. Nova Bus (US), Inc. $97,641,522 Staff Summary Attached TBD Contract# B40666-1 Mod 6
+[p022_c0008] Contract modification to exercise an option for the purchase of 100 option low-floor 40-foot diesel buses for NYC Transit.
+[p022_c0009] _Master Page # 22 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 23
+
+### [p023_c0001] Schedule I: Modifications to Purchase and Public Work Contracts
+[p023_c0002] Item Number: 1
+[p023_c0003]
+
+```text
+Vendor Name (Location) Nova Bus (US), Inc. (Saint-Eustache, QC, Canada) Description Furnish and Deliver 165 low-floor 40-foot diesel-electric hybrid buses with up to 558 Option Buses Contract Term (including Options, if any) 90 months Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Department: Department of Buses, Frank Farrell
+```
+[p023_c0004]
+
+```text
+Contract Number B40666-1 AWO/Mod. # Mod 6 Original Amount: $ 132,349,722 Option Amount: $ 364,592,679 Total Amount: $ 496,942,451 Prior Modifications: $ 367,556,487 Prior Budgetary Increases: $ 0 Current Amount: $ 499,906,259 This Request: $ 97,641,522 % of This Request to Current Amount: 19.53% % of Modifications (including This Request) to Original Amount: 76.01%
+```
+### [p023_c0005] Discussion:
+[p023_c0006] It is requested that the Board approve the award of Modification No. 6 to Contract B40666-1 by NYC Transit to purchase 100 additional low-floor 40-foot clean diesel buses from Nova Bus (US), Inc. ("Nova Bus") in the estimated amount of $97,641,522.
+[p023_c0007] The base contract was the result of a competitively solicited and negotiated Request for Proposal for the purchase of 275 low-floor 40-foot diesel-electric hybrid ("hybrid") buses to replace buses that were beyond their 12-year service life as well as related items such as spare parts, special tools and equipment, diagnostic testing, technical documentation, and training. In December 2019, the Board approved a split award of two separate contracts to: (1) Nova Bus for 165 hybrids buses in the amount of $132,349,722 plus 126 hybrid Option Buses and 209 diesel Option Buses for an aggregate amount of $227,233,620 and (2) New Flyer for 110 Buses for $86,555,608.
+[p023_c0008] The Board subsequently approved the award of 173 additional Option Buses to Nova Bus in November 2022.
+[p023_c0009] In June 2024, Nova Bus completed delivery of the 673 Base and Option Buses previously awarded under the contract.
+[p023_c0010] The 100 buses that are the subject of this current modification to the Nova contract include 50 remaining Option Buses as well as an additional 50 buses. When NYC Transit approached Nova Bus about exercising the remaining option for 50 buses, Nova Bus indicated that it had additional production capacity at the end of 2026. NYC Transit decided to take advantage of this unforeseen opportunity and purchase an additional 50 buses given its urgent need to replace buses that are beyond their 12-year service life. The additional 50 buses are the subject of an Immediate Operating Need.
+[p023_c0011] This award to Nova Bus will consist of 100 low-floor 40-foot clean diesel buses in the estimated amount of $96,500,000 ($965,000 per bus); $1,141,522 for diagnostic tools and manuals, training and spare parts for a total award amount of $97,641,522. Pricing for these buses is based on the price per bus competitively obtained in the base contract to which an adjustment formula has been applied which reflects changes in labor and material cost indices, currency exchange rates, and other agreed-upon factors.
+[p023_c0012] Procurement, the Department of Buses, and NYC Transit's Cost-Price Analysis Unit have determined the final price to be fair and reasonable.
+[p023_c0013] These buses will be outfitted with new features including driver enclosure, OMNY, and Automated Camera Enforcement.
+[p023_c0014] Nova Bus will deliver the 100 clean diesel Option Buses starting in Q1 2027 and concluding in Q2 2027.
+[p023_c0015] Nova Bus has committed to meeting a New York State Content of 2.0 percent for the 100 clean diesel buses.
+[p023_c0016] Nova Bus has certified that pursuant to Executive Order No. 16, it is not conducting business in Russia.
+[p023_c0017] The modification resulting from this procurement has been evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state, and local law and regulations. Any applicable cybersecurity requirements, to the extent required, have been included in the contract terms and conditions.
+[p023_c0018] _Master Page # 23 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 24
+
+### [p024_c0001] Schedule I: Modifications to Purchase and Public Work Contracts
+> [p024_c0002] The MTA logo, which consists of the letters 'MTA' in a stylized font inside a dark circle.
+### [p024_c0003] New York City Transit
+### [p024_c0004] M/W/DBE Information
+[p024_c0005] The MTA Department of Diversity and Civil Rights (DDCR) has established zero percent MWBE and zero percent SDVOB goals on this contract as, historically, there has been limited M/WBE/SDVOB attainment due to lack of subcontracting availability.
+### [p024_c0006] Impact on Funding
+[p024_c0007] These Option Buses for NYC Transit will be funded with 100 percent MTA capital funds. Funds have been approved in the MTA 2025–2029 Capital Program. No award shall be made until a WAR certificate has been secured.
+### [p024_c0008] Alternatives
+[p024_c0009] There are no alternatives.
+### [p024_c0010] Recommendation
+[p024_c0011] It is recommended that the Board approve the award of Modification No. 6 to Contract B40666-1 for the purchase of 100 additional low-floor 40-foot clean diesel buses as well as spare parts, special tools and equipment, diagnostic testing, technical documentation, and training for NYC Transit from Nova Bus in the estimated amount of $97,641,522.
+[p024_c0012] _Master Page # 24 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 25
+
+### [p025_c0001] New York City Transit
+[p025_c0002] DECEMBER 2025
+### [p025_c0003] LIST OF RATIFICATIONS FOR BOARD APPROVAL
+### [p025_c0004] Procurements Requiring Two-Thirds Vote:
+### [p025_c0005] D. Ratification of Completed Procurement Actions
+[p025_c0006] (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p025_c0007] 1. Boyce Technologies, Inc. Two Years Contract# 6%36243 $7,300,000 Staff Summary Attached Contract to furnish and install Fare Evasion Turnstile Sleeves and Stainless-Steel Vertical Fins; Ratification of an Immediate Operating Need.
+[p025_c0008] _Master Page # 25 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 26
+
+### [p026_c0001] Schedule D: Ratification of Completed Procurement Actions
+### [p026_c0002] Item Number: 1
+[p026_c0003]
+
+```text
+Vendor Name (Location) Boyce Technologies, Inc. (Long Island City, New York) Contract Numbers 6%36243 Renewal? Yes No Description Furnish and Installation of Fare Evasion Turnstile Sleeves and Stainless-Steel Vertical Fins (Immediate Operating Need) Total Amount: $7,300,000 (Estimated Quantity) Contract Terms (including Options, if any) May 16, 2025–May15, 2027 Funding Source Operating Capital Federal Other: Option(s) included in Total Amount? Yes No n/a Requesting Department: Department of Subways, William Amarosa Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: ION
+```
+### [p026_c0004] Discussion:
+[p026_c0005] It is requested that the Board ratify the declaration of an Immediate Operating Need (“ION”) approved by the Deputy Chief Procurement Officer, MTA Procurement, waiving competitive bidding pursuant to Article III, (B)(1), of the All Agency General Contract Procurement Guidelines and Public Authorities Law 1209, subsection 9(a) and approve the award of an emergency estimated quantity contract to furnish and install Fare Evasion Turnstile Sleeves (“sleeves”) and Stainless-Steel Vertical Fins (“fins”) to Boyce Technologies, Inc. (“Boyce”) in the estimated total amount of $7.3 million.
+[p026_c0006] The MTA has implemented a program to research, develop, and test new technologies to prevent fare evasion in subway stations. This program, an expansion of those previously piloted, is a response to the high cost of fare evasion, which cost the MTA about $400 million in 2025 for subways alone. Sleeves and fins were tested on turnstiles in pilot stations within the system in combination with back-cocking modifications and delayed egress into the fare-control area.
+[p026_c0007] This project began with MTA Construction and Development (“C&D”) retaining a consultant to design fare evasion hardware consisting of Turnstile Sleeves and the Stainless-Steel Vertical Fins. The consultant developed a drawing and tested prototypes from two firms. Based upon the results of the testing, Boyce’s products for both applications were approved. Once Boyce was approved, an ION was declared to implement the program across all stations systemwide. Procurement conducted outreach to eight firms to determine if any other company could fabricate and install the fare evasion hardware. However, it was determined that Boyce was the only company that had the requisite equipment and personnel readily available to manufacture, fabricate, and install sleeves and fins to the required specifications at this time. To date, approximately 2,900 sleeves and fins have been installed across 327 stations. The Department of Subways (“DOS”) estimates that fare evasion hardware will be installed at an additional 129 stations by January 2026.
+[p026_c0008] The sleeve kits consist of three sleeves, clamps, and knuckle hinges as well as the hardware (pins, gaskets, screws, and barrels) required to install the sleeves to a tripod turnstile. Attached to each sleeve is a 3/16-inch-thick perforated aluminum plate that will prevent fare evaders from jumping over the turnstile arm. Each fin weighs approximately 40 pounds and is installed on the side of the turnstile assembly to prevent fare evaders from using them as leverage to propel themselves over the turnstile arms.
+[p026_c0009] The Price Schedule has three line items for furnishing and installing: (1) one Fare Evasion Sleeve Kit (three sleeves per kit); (2) one Stainless-Steel Vertical Fin; and (3) both items concurrently. Pricing was offered on a per-turnstile basis. Through discussions between Procurement and Boyce, Boyce offered a unilateral price concession of 10 percent from its initial offer for all line items. As a result, if the entire quantities are exhausted, approximately $800,000 in savings will be realized. The pricing offered by Boyce was found fair and reasonable based on the unit costs being lower than its pilot program, and its unilateral price concession.
+[p026_c0010] This contract has been evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state, and local law and regulations. Any applicable cybersecurity requirements, to the extent required, have been included in the contract terms and conditions.
+[p026_c0011] Boyce has certified that pursuant to EO 16 it is not doing business in Russia.
+### [p026_c0012] Impact on Funding
+[p026_c0013] This procurement action will utilize Operating funds.
+[p026_c0014] _Master Page # 26 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 27
+
+### [p027_c0001] CONSTRUCTION & DEVELOPMENT COMMITTEE ACTIONS SUMMARY for DECEMBER 2025
+[p027_c0002]
+
+```text
+Responsible Department Vendor Name Total Amount Summary of Action Contracts Paul J. Scariano $ 84,662,000 Approval to award a publicly advertised and competitively solicited contract for design-build services to provide Americans with Disabilities Act upgrades at New York City Transit's 42nd Street-Bryant Park and Fifth Avenue Station Complex (B, D, F, M, 7, S). Board approval is also requested to award a long-term elevator maintenance contract for a duration of 15 years. Mid-American Elevator Co. Inc. $ 5,746,000 Contracts Forte Construction Corp. $169,950,000 Approval to award a publicly advertised and competitively solicited contract for design-build services for Americans with Disabilities Act upgrades at three New York City Transit stations: Briarwood Station (F, E), Parsons Boulevard Station (F), and Gates Avenue Station (J, Z). Board approval is also requested to award a long-term elevator maintenance contract for a duration of 15 years. Mid American Elevator Co. Inc. $12,248,000 Contracts Navillus Tile Inc. d/b/a Navillus Contracting $138,252,750 Approval to award a publicly advertised and competitively solicited contract for design-build services for a fire suppression system at the Hugh L. Carey and Queens Midtown Tunnels. Board approval is also requested to award a maintenance contract for the fire suppression systems for a duration of 5 years. Navillus Tile Inc. d/b/a Navillus Contracting $9,970,000 Contracts LK Comstock & Company LLC $1,390,000,000 Approval to award a publicly advertised and competitively solicited contract for design-build services to provide a wayside Communication Based Train Control ("CBTC") system on the Fulton Street and Liberty Avenue lines. Board approval is also requested to award a maintenance contract to maintain the installed CBTC system for a duration of 25 years. Siemens Mobility Inc. $235,001,777 Contracts Naik Consulting Group, PC $2,530,024 Approval of a modification to provide oversight and coordination services in connection with the construction of a new office and hotel development at 175 Park Avenue and to extend the Contract term by four months to September 1, 2026. Contracts RCC/AMCC Joint Venture $3,350,000 Approval of a modification for impact costs related to compensable delay in the construction of a new diesel locomotive repair shop and employee facility at Long Island Railroad's Morris Park Yard. Contracts Sovereign Hydroseal East, Inc. $3,000,975 Approval of a modification to extend the term of this unit price Contract by one year to January 2, 2027, and increase quantities to various unit price items to support forecasted work orders for remediation services.
+```
+[p027_c0003] _Master Page # 27 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 28
+
+### [p028_c0001] CONSTRUCTION & DEVELOPMENT COMMITTEE ACTIONS SUMMARY for DECEMBER 2025
+[p028_c0002]
+
+```text
+Contracts Skanska Railroad Construction JV $19,540,000 Approval of a modification for the replacement of eight deteriorated platform girders (four at the Manhattan-bound track and four at Flushing-bound track) at the 61st Street Woodside station on the Flushing line and to accelerate the work at the Manhattan-bound track and extend the milestone for that work and the Substantial Completion date to August 17, 2026. Contracts TAP Electrical Contracting Services, Inc. $3,000,000 Approval of a modification to the contract for the replacement of Metro-North Railroad's 86th Street Substation and the negative return reactors at Metro-North's 110th Street Substation to resolve all remaining claims asserted by the contractor for compensable and excusable delays. Contracts Infinity Contracting, Inc. $2,340,000 Ratification of a modification for the investigation and emergency repair of an 8" sanitary sewer line at the Gun Hill Bus Depot.
+```
+[p028_c0003] _Master Page # 28 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 29
+
+### [p029_c0001] Construction & Development
+### [p029_c0002] Contracts Department
+[p029_c0003] Evan Eisland, Executive Vice President and General Counsel
+### [p029_c0004] PROCUREMENT PACKAGE DECEMBER 2025
+[p029_c0005] _Master Page # 29 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 30
+
+### [p030_c0001] Construction & Development
+### [p030_c0002] PROCUREMENTS
+[p030_c0003] The Procurement Agenda this month includes 14 actions for a proposed expenditure of $ 2.0 B.
+[p030_c0004] _Master Page # 30 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 31
+
+### [p031_c0001] Staff Summary
+### [p031_c0002] Page 1 of 2
+[p031_c0003]
+
+```text
+Subject Request Authorization for Several Procurement Actions Contracts Department Evan Eisland, Executive Vice President and General Counsel Board Action Order To Date Approval Info Other 1 Capital Program Committee 12/15/25 X 2 Board 12/17/25 X
+```
+[p031_c0004]
+
+```text
+Date: December 10, 2025 Internal Approvals Approval Approval X Deputy Chief Development Officer, Delivery X President X Deputy Chief Development Officer, Development X Executive Vice President & General Counsel
+```
+### [p031_c0005] Purpose
+[p031_c0006] To obtain the approval of the Board to award several procurement actions and to inform the Capital Program Committee of these procurement actions.
+### [p031_c0007] Discussion
+[p031_c0008] MTA Construction & Development proposes to award Competitive Procurements in the following categories:
+[p031_c0009]
+
+```text
+Schedules Requiring Two-Thirds Vote # of Actions $ Amount C. Competitive Requests for Proposals (Award of Purchases and Public Work Contracts) 8 $ 1,962,650,133 SUBTOTAL 8 $ 1,962,650,133 Schedules Requiring Majority Vote # of Actions $ Amount H. Modifications to Personal Service Contracts and Miscellaneous Service Contracts Awarded as Contracts for Services 1 $ 2,530,024 I. Modifications to Purchase and Public Work Contracts 4 $ 28,890,975 SUBTOTAL 5 $ 31,420,999
+```
+[p031_c0010] MTA Construction & Development proposes to ratify awards in the following category:
+[p031_c0011]
+
+```text
+Schedules Requiring Majority Vote # of Actions $ Amount K. Ratification of Completed Procurement Actions 1 $ 2,340,000 SUBTOTAL 1 $ 2,340,000 TOTAL 14 $ 1,996,411,132
+```
+### [p031_c0012] Budget Impact
+[p031_c0013] The approval of these procurement actions will obligate capital and operating funds in the amounts listed. Funds are available in the capital program and operating budgets for this purpose.
+### [p031_c0014] Recommendation
+[p031_c0015] That the procurement actions be approved as proposed. (The items are included in the resolution of approval at the beginning of the Procurement Section.)
+[p031_c0016] _Master Page # 31 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 32
+
+### [p032_c0001] MTA Construction & Development
+### [p032_c0002] BOARD RESOLUTION
+[p032_c0003] WHEREAS , in accordance with Sections 559, 2879, 1209 and 1265-a of the Public Authorities Law and the All Agency General Contract Procurement Guidelines, the Board authorizes the award of certain non-competitive purchase and public works contracts, and the solicitation and award of request for proposals in regard to purchase and public work contracts; and
+[p032_c0004] WHEREAS , in accordance with the All Agency Service Contract Procurement Guidelines and the All Agency General Contract Procurement Guidelines, the Board authorizes the award of certain non-competitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts; and
+[p032_c0005] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Guidelines for Procurement of Services, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p032_c0006] NOW, the Board resolves as follows:
+- [p032_c0007] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract. 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals and authorizes the solicitation of such proposals. 3. As to each request for proposals (for purchase and public work contracts set forth in Schedule C for which a recommendation is made to award the contract), the Board authorizes the execution of said contract. 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein, and ratifies each action for which ratification is requested. 5. The Board authorizes the execution of each of the following for which Board authorization is required: i) the miscellaneous procurement contracts set forth in Schedule E; ii) the personal service contracts set forth in Schedule F; iii) the miscellaneous service contracts set forth in Schedule G; iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; v) the contract modifications to purchase and public work contracts set forth in Schedule I; vi) the modifications to miscellaneous procurement contracts set forth in Schedule J. 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p032_c0008] _Master Page # 32 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 33
+
+### [p033_c0001] DECEMBER 2025
+### [p033_c0002] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p033_c0003] Procurements Requiring Two-Thirds Vote:
+### [p033_c0004] Schedule C. Competitive Requests for Proposals (Award of Purchase and Public Work Contracts) (Staff Summaries required for items requiring Board approval.)
+[p033_c0005]
+
+```text
+1-2. Paul J. Scariano, Inc. Contract No. A37149 $84,662,000 Staff Summary Attached Mid-American Elevator Co., Inc. Contract No. 600000000037490 $5,746,000 Staff Summary Attached
+```
+[p033_c0006] MTA Construction and Development requests Board approval to award a publicly advertised and competitively solicited contract for design-build services to provide Americans with Disabilities Act upgrades at New York City Transit's 42nd Street-Bryant Park and Fifth Avenue Station Complex (B, D, F, M, 7, S). Board approval is also requested to award a long-term elevator maintenance contract for a duration of 15 years.
+[p033_c0007]
+
+```text
+3-4. Forte Construction Corp. Contract No. A37824 $169,950,000 Staff Summary Attached Mid-American Elevator Co., Inc. Contract No. 600000000037466 $12,248,000 Staff Summary Attached
+```
+[p033_c0008] MTA Construction and Development requests Board approval to award a publicly advertised and competitively solicited contract for design-build services for Americans with Disabilities Act upgrades at three New York City Transit stations: Briarwood Station (F, E), Parsons Boulevard Station (F), and Gates Avenue Station (J, Z). Board approval is also requested to award a long-term elevator maintenance contract for a duration of 15 years.
+[p033_c0009]
+
+```text
+5-6. Navillus Tile Inc. d/b/a Navillus Contracting Contract No. HC-9R/QM-9R $138,252,750 Staff Summary Attached Navillus Tile Inc. d/b/a Navillus Contracting Contract No. 300000000000551 $9,970,000 Staff Summary Attached
+```
+[p033_c0010] MTA Construction and Development requests Board approval to award a publicly advertised and competitively solicited contract for design-build services for a fire suppression system at the Hugh L. Carey and Queens Midtown Tunnels. Board approval is also requested to award a maintenance contract for the fire suppression systems for a duration of 5 years.
+[p033_c0011]
+
+```text
+7-8. LK Comstock & Company LLC Contract No. S48019R $1,390,000,000 Staff Summary Attached Siemens Mobility Inc. Contract No. 600000000037462 $151,821,383 Staff Summary Attached
+```
+[p033_c0012] MTA Construction and Development requests Board approval to award a publicly advertised and competitively solicited contract for design-build services to provide a wayside Communication Based Train Control ("CBTC") system on the Fulton Street and Liberty Avenue lines. Board approval is also requested to award a maintenance contract to maintain the installed CBTC system for a duration of 25 years.
+[p033_c0013] _Master Page # 33 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 34
+
+### [p034_c0001] Procurements Requiring Majority Vote:
+### [p034_c0002] Schedule H. Modifications to Personal Service Contracts and Miscellaneous Service Contracts Awarded as Contracts for Services
+[p034_c0003] (Approvals/Staff Summaries required for substantial change orders and change orders that cause the original contract to equal or exceed the monetary threshold required for Board approval.)
+- [p034_c0004] 9. Naik Consulting Group, PC Staff Summary Attached Contract No. PS886 $2,530,024
+[p034_c0005] MTA Construction and Development requests Board approval of a modification to provide for oversight and coordination services in connection with the construction of a new office and hotel development at 175 Park Avenue and to extend the Contract term by four months to September 1, 2026.
+### [p034_c0006] Schedule I. Modifications to Purchase and Public Work Contracts
+[p034_c0007] (Staff Summaries required for individual change orders greater than $1M. Approval required for change orders greater than 10% of the original contract amount or duration.)
+- [p034_c0008] 10. RCC/AMCC Joint Venture Staff Summary Attached Contract No. 6241 $3,350,000
+[p034_c0009] MTA Construction and Development requests Board approval of a modification for impact costs related to compensable delay in the construction of a new diesel locomotive repair shop and employee facility at Long Island Railroad's Morris Park Yard.
+- [p034_c0010] 11. Sovereign Hydrosal East, Inc. Staff Summary Attached Contract No. A37793 $3,000,975
+[p034_c0011] MTA Construction and Development requests Board approval of a modification to extend the term of this unit price water remediation contract by one year, to January 2, 2027, and to increase quantities to unit price items to support forecasted work orders for remediation services.
+- [p034_c0012] 12. Skanska Railroad Construction JV Staff Summary Attached Contract No. A46030 $19,540,000
+[p034_c0013] MTA Construction and Development requests Board approval of a modification for the replacement of eight deteriorated platform girders (four at the Manhattan-bound track and four at Flushing-bound track) at the 61st Street Woodside station on the Flushing line and to accelerate the work at the Manhattan-bound track and extend the milestone for that work and the Substantial Completion date to August 17, 2026.
+- [p034_c0014] 13. TAP Electrical Contracting Services, Inc. Staff Summary Attached Contract No. MN25781 $3,000,000
+[p034_c0015] MTA Construction and Development requests Board approval of a modification to a Contract for the replacement of Metro-North Railroad's 86th Street Substation and the negative return reactors at Metro-North's 110th Street Substation to resolve all remaining claims asserted by the contractor for compensable and excusable delays.
+[p034_c0016] _Master Page # 34 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 35
+
+### [p035_c0001] Staff Summary
+### [p035_c0002] Schedule C: Competitive Requests for Proposals (Award of Purchase and Public Works Contracts)
+[p035_c0003] Page 1 of 3
+[p035_c0004]
+
+```text
+Item Number 1-2 Department, Department Head Name: Delivery, William Montanile, Senior Vice President, Stations Board Reviews Order To Date Approval Info Other 1 Capital Program Committee 12/15/25 X 2 Board 12/17/25 X Internal Approvals Order Approval Order Approval X Deputy Chief, Development X Executive Vice President & General Counsel X Deputy Chief, Delivery X President
+```
+[p035_c0005]
+
+```text
+SUMMARY INFORMATION Vendor Name Contract Number 1. Paul J. Scariano, Inc. 1. A37149 2. Mid-American Elevator Co. Inc. 2. 600000000037490 Description Design-Build Services for Accessibility Upgrades at 42nd St-Bryant Park & Fifth Avenue Station Complex Total Amount 1. Design Build Contract $84,662,000 2. Long Term Elevator Maintenance Contract $5,746,000 3. Stipend $300,000 Contract Term (including Options, if any) 1. A37149 1,049 Calendar Days 2. Maintenance Contract 15 years Option(s) included in Total Amount? Yes No N/A Renewal? Yes No Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Funding Source Operating** Capital* Federal Other:
+```
+[p035_c0006] *Design-Build Contract
+[p035_c0007] **Maintenance Contract and Retail Space
+### [p035_c0008] ACTION REQUESTED
+[p035_c0009] MTA Construction and Development (“C&D”) requests Board approval to award to Paul J. Scariano, Inc. (“PJS”) a publicly advertised and competitively solicited contract for design-build services to provide American with Disabilities Act (“ADA”) upgrades at New York City Transit’s (“NYCT”) 42nd Street-Bryant Park and Fifth Avenue Station Complex (B, D, F, M, 7, S) as well as upgrades to the retail space at the Times Square-42nd Street Station (the “Contract”). The Contract is in the amount of $84,662,000 and for a duration of 1,049 Calendar Days. Board approval is also requested to award a long-term elevator maintenance contract to Mid-American Elevator Co. Inc. (“Mid-American”) in the amount of $5,746,000 and for a duration of 15 years. In accordance with MTA policy regarding the use of design-build contracts, and to enhance competition and defray proposal costs, this solicitation includes a stipend of $100,000 to be paid to each of the three unsuccessful proposers for a total amount of $300,000.
+### [p035_c0010] DISCUSSION
+[p035_c0011] This Contract is one of the first to be unlocked by Congestion Relief, and is one of a series of projects in support of the MTA’s commitment to make stations ADA accessible, providing design-build services for ADA upgrades at the 42nd Street-Bryant Park and Fifth Avenue Station Complex, including the installation of four new elevators. In addition, the work includes removal and relocation of stairs, design and construction of an ADA boarding area at platform level, design, construction, and installation of a fire alarm system. The work also includes upgrades to the plumbing, ventilation, telecommunications and fire suppression systems for the retail space at the Times Square-42nd Street Station.
+[p035_c0012] C&D also seeks to engage the elevator manufacturer to provide long term maintenance of the elevators installed under this Contract. To ensure long-term, optimum performance of the elevators, the procurement was structured to require continuity between the design and installation of the elevator equipment and its subsequent maintenance. Only the elevator manufacturer or installer is eligible for the award of the Maintenance Contract. The goal is to ensure that the design-builder works in concert with its elevator subcontractor to choose sufficiently robust equipment to not only withstand the rigors of the
+[p035_c0013] _Master Page # 35 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 36
+
+[p036_c0001] NYCT system, but to also take into consideration the elevator subcontractor's ultimate responsibility under a performance-based, long-term Maintenance Contract. The Maintenance Contract is for a fifteen-year term, commencing on the service start date for the last elevator installed under the Contract, and includes two options, each to extend the maintenance period for an additional five years.
+[p036_c0002] A two-step procurement process was conducted for this Contract. In Step 1, a Request for Qualifications was advertised resulting in the submission of ten Statements of Qualifications, which were then evaluated against pre-established Threshold Criteria (addressing completeness, timeliness, capacity, responsibility, and financial capability) and Substantive Evaluation Criteria (addressing team, key personnel and organization, project approach, prior Design-Build experience, past performance and diversity compliance). Based on these criteria, the following firms were selected to receive a Request for Proposal ("RFP") in Step 2:
+- [p036_c0003] • PJS • Citnalta Construction Corp. ("Citnalta") • Forte Construction Corp. ("Forte"), • MLJ Contracting Corp. and TC Electric, LLC ("MLJTC2")
+[p036_c0004] In response to the RFP, PJS, Citnalta, Forte, and MLJTC2 submitted technical and price proposals. Forte proposed Modern Elevator as the elevator manufacturer and installer, while Citnalta, MLJTC2, and PJS proposed Mid-American. The selection committee, consisting of representatives from C&D Delivery, Development and Contracts and NYCT Department of Elevator and Escalators, reviewed the technical proposals and attended the oral presentations of each of the four teams. The selection committee evaluated the technical proposals using the following preestablished selection criteria: design and construction, schedule, elevator maintenance plan, management plan, experience, record of performance, safety and quality, diversity practices, and other relevant matters. After evaluating technical proposals, the selection committee opened the price proposals which were as follows: PJS: $83,427,137 (maintenance: $5,746,000); Citnalta: $97,676,000 (maintenance - $5,746,000); Forte: $105,876,000 (maintenance $5,746,000); and MLJTC2: $90,090,000 (maintenance: $5,746,000).
+[p036_c0005] The selection committee invited MLJTC2 and PJS to participate in negotiations. Citnalta and Forte were not invited to participate in negotiations because their price proposals were outside of the competitive range. Negotiations with MLJTC2 and PJS included detailed discussions of the proposers' general conditions and other costs, and their approach to design and construction. Following negotiations, the two proposers were asked to submit Best and Final Offers ("BAFO"). The BAFOs submitted by the proposers were as follows: PJS: $84,662,000 (maintenance: $5,746,000); and MLJTC2: $87,800,000 (maintenance $5,746,000).
+[p036_c0006] The selection committee concluded that MLJTC2 offered an excellent proposal and a qualified team. Nevertheless, the selection committee unanimously recommended PJS for award of the Contract and Mid-American for the award of the long-term elevator maintenance contract. In addition to providing the lowest competitive price, the selection committee determined that PJS's technical proposal demonstrates an ability to complete the work safely, ahead of schedule, and within budget. PJS's proposal provides a team of key personnel and major participants with qualifications and prior experience successfully completing work of similar scope and magnitude. PJS' BAFO of $84,662,000 and Mid-American's proposal of $5,746,000 are deemed to be fair and reasonable.
+[p036_c0007] In connection with the review of PJS' responsibility pursuant to the All-Agency Responsibility Guidelines, PJS was found to be responsible notwithstanding significant adverse information and such responsibility finding was approved by the MTA Chair in consultation with the MTA General Counsel in January 2016. In connection with the review of Mid-American's responsibility pursuant to the All-Agency Responsibility Guidelines, no significant adverse information was discovered and Mid-American is determined to be a responsible vendor.
+### [p036_c0008] MBE/WBE/SDVOB INFORMATION
+[p036_c0009] The MTA Department of Diversity and Civil Rights has established an MBE goal of 15%, a WBE goal of 15%, and an SDVOB goal of 6% for the Contract. PJS is committed to meeting the goals requirements. PJS has achieved its DBE/MBE/WBE/SDVOB goals on recently completed MTA contracts.
+[p036_c0010] DDCR has established a 0% MBE/WBE/SDVOB goal for the Maintenance Contract due to the lack of MBE/WBE/SDVOB firms in the marketplace. Mid-American has not completed any MTA contracts with goals; therefore, no assessment of its performance can be determined at this time.
+[p036_c0011] _Master Page # 36 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 37
+
+### [p037_c0001] Construction & Development
+### [p037_c0002] IMPACT ON FUNDING
+[p037_c0003] Funding for the Contract and the stipend for the unsuccessful proposer is included in the MTA's 2020-2024 Capital Program. Funding for the Maintenance Contract and retail space is included in the NYCT operating budget.
+### [p037_c0004] ALTERNATIVES
+[p037_c0005] None recommended. MTA lacks available in-house technical personnel to perform the scope of work associated with this Contract.
+[p037_c0006] _Master Page # 37 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 38
+
+### [p038_c0001] Staff Summary
+### [p038_c0002] Schedule C: Competitive Requests for Proposals (Award of Purchase and Public Works Contracts)
+[p038_c0003] Page 1 of 3
+[p038_c0004]
+
+```text
+Item Number 3-4 Department, Department Head Name: Delivery, William Montanile, Senior Vice President, Stations Board Reviews Order To Date Approval Info Other 1 Capital Program Committee 12/15/25 X 2 Board 12/17/25 X Internal Approvals Order Approval Order Approval X Deputy Chief, Development X Executive Vice President & General Counsel X Deputy Chief, Delivery X President
+```
+[p038_c0005]
+
+```text
+SUMMARY INFORMATION Vendor Name Contract Number 1. Forte Construction Corp. 2. Mid-American Elevator Co., Inc. 1. A37824 2. 6000000000037466 Description Design Build Services for ADA Upgrades -- Package 9 Total Amount 1. Design Build Contract $169,950,000 2. Long Term Elevator Maintenance Contract $12,248,000 3. Stipend $750,000 Contract Term (including Options, if any) 1. A37824 1,100 Calendar Days 2. Maintenance Contract 15 years Option(s) included in Total Amount? Yes No Renewal? Yes** No* Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Funding Source Operating** Capital* Federal Other:
+```
+[p038_c0006] *Design Build Contract
+[p038_c0007] **Maintenance Contract
+### [p038_c0008] ACTION REQUESTED
+[p038_c0009] MTA Construction and Development ("C&D") requests Board approval to award to Forte Construction Corp. ("Forte"), a publicly advertised and competitively solicited contract for design-build services for ADA upgrades at three New York City Transit ("NYCT") stations: Briarwood Station (F, E), Parsons Boulevard Station (F), and Gates Avenue Station (J, Z) (the "Contract"). The Contract is in the amount of $169,950,000 and for a duration of 1,100 Calendar Days. Board approval is also requested to award a long-term elevator maintenance contract to Mid-American Elevator Co., Inc. ("Mid-American") in the amount of $12,248,000 and for a duration of 15 years. In accordance with MTA policy regarding the use of design-build contracts, and to enhance competition and defray proposal costs, this solicitation includes a stipend of $250,000 to be paid to each of the three unsuccessful proposers for a total amount of $750,000.
+### [p038_c0010] DISCUSSION
+[p038_c0011] This Contract is one of the first to be unlocked by Congestion Relief, and is one of a series of Americans with Disabilities Act ("ADA") projects in support of the MTA's commitment to make stations ADA accessible. The work consists of the installation of seven new ADA-compliant elevators and other accessibility upgrades at the three stations, and state of good repair work, including platform repairs and replacements at Gates Avenue Station and other station rehabilitation work at Briarwood Station.
+[p038_c0012] C&D also seeks to engage the elevator manufacturer to provide long term maintenance for the elevators installed under this Contract. To ensure long-term, optimum performance of the elevators, the procurement was structured to require continuity between the design and installation of the elevator equipment and their subsequent maintenance. Only the elevator manufacturer or installer is eligible for the award of the Maintenance Contract. The goal is to ensure that the Design-Builder works in concert with its elevator subcontractor to choose sufficiently robust equipment to not only withstand the rigors of the NYCT system, but to also take into consideration the elevator subcontractor's ultimate responsibility under a performance-based, long-term Maintenance Contract. The Maintenance Contract is for a fifteen-year term, commencing on achievement
+[p038_c0013] _Master Page # 38 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 39
+
+[p039_c0001] of Substantial Completion of the Contract, and includes two options, each to extend the maintenance period for an additional five years.
+[p039_c0002] A two-step procurement process was conducted for this Contract. In Step 1, a Request for Qualifications was advertised resulting in the submission of ten Statements of Qualifications, which were then evaluated against pre-established Threshold Criteria (addressing completeness, timeliness, capacity, responsibility, and financial capability) and Substantive Evaluation Criteria (addressing team, key personnel and organization, project approach, prior experience and past performance). Based on these criteria, the following four firms were selected to receive a Request for Proposal ("RFP") in Step 2:
+- [p039_c0003] ▪ Forte ▪ Citnalta Construction Corp. ("Citnalta") ▪ John Civetta & Sons, Inc. ("Civetta") ▪ J-Track LLC ("J-Track")
+[p039_c0004] In response to the RFP, Forte, Citnalta, Civetta, and J-Track all submitted technical and price proposals and each proposed Mid-American Elevator Co., Inc. as the elevator manufacturer and installer, and therefore, for the long-term elevator maintenance contract. The selection committee, consisting of representatives from C&D Delivery, Development and Contracts and NYC Transit Department of Subways – Division of Stations, reviewed the technical proposals and attended the oral presentations of each of the four teams. The selection committee evaluated the technical proposals using the following preestablished selection criteria: design and construction, schedule, elevator maintenance plan, management plan, experience, record of performance, safety and quality, diversity practices, and other relevant matters. After evaluating technical proposals, the selection committee opened the price proposals which were as follows: Forte: $168,242,000 (maintenance $12,248,000); Citnalta: $210,972,000 (maintenance - $12,248,000); Civetta: $213,295,886 (maintenance: $14,888,800); and J-Track: $187,569,258 (maintenance: $12,248,000).
+[p039_c0005] The selection committee invited Forte and J-Track to participate in negotiations. Citnalta and Civetta were not invited to participate in negotiations because their price proposals were outside of the competitive range. Negotiations with Forte and J-Track included detailed scope discussions including design, utilities, general requirements, mobilization, and structural and architectural work related to ADA and state of good repair work. Following negotiations, the two proposers were asked to submit revised proposals and subsequently Best and Final Offers ("BAFO"). The BAFOs submitted by the proposers were as follows: Forte: $169,950,000 (maintenance: $12,248,000); and J-Track: $185,782,210.10 (maintenance: $12,248,000).
+[p039_c0006] The selection committee unanimously recommended Forte for award of the Contract and Mid-American for the award of the long-term elevator maintenance contract. In addition to providing the lowest price, the selection committee determined that Forte's proposal offered the best value to the MTA when considering the quality of its technical proposal. Forte's technical proposal demonstrates an ability to complete the work safely, on time, and within budget, and provides a team of key personnel and major participants with qualifications and prior experience successfully completing work of similar scope and magnitude. Forte's BAFO of $169,950,000 and Mid-American's Proposal of $12,248,000 are deemed to be fair and reasonable.
+[p039_c0007] In connection with the review of Forte's responsibility pursuant to the All-Agency Responsibility Guidelines, no significant adverse information was discovered, and Forte is determined to be a responsible vendor. In connection with the review of Mid-American's responsibility pursuant to the All-Agency Responsibility Guidelines, no significant adverse information was discovered and Mid-American is determined to be a responsible vendor.
+### [p039_c0008] MBE/WBE/SDVOB INFORMATION
+[p039_c0009] The MTA Department of Diversity and Civil Rights has established an MBE goal of 15%, a WBE goal of 15%, and an SDVOB goal of 6% for the Contract. Forte is committed to meeting the required goal requirements. Forte has achieved its MBE/WBE/SDVOB goals on recently completed MTA contracts.
+[p039_c0010] DDCR has established a 0% MBE/WBE/SDVOB goal for the Maintenance Contract due to the lack of MBE/WBE/SDVOB firms in the marketplace. Mid-American has not completed any MTA contracts with goals; therefore, no assessment of its performance can be determined at this time.
+[p039_c0011] _Master Page # 39 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 40
+
+### [p040_c0001] The logo for MTA Construction & Development, featuring a blue circle with the letters "MTA" in white, followed by the text "Construction & Development" in blue.
+### [p040_c0002] IMPACT ON FUNDING
+[p040_c0003] Funding for the Contract, and stipends for the two unsuccessful proposers, are included in the NYCT portion of the MTA's 2020-2024 Capital Program. Funding for the Maintenance Contract is included in the NYCT operating budget.
+### [p040_c0004] ALTERNATIVES
+[p040_c0005] None recommended. MTA lacks available in-house technical personnel to perform the scope of work associated with this Contract.
+[p040_c0006] _Master Page # 40 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 41
+
+### [p041_c0001] Staff Summary
+### [p041_c0002] Schedule C: Competitive Requests for Proposals (Award of Purchase and Public Works Contracts)
+### [p041_c0003] Page 1 of 2
+[p041_c0004]
+
+```text
+Item Number 5-6 Department, Department Head Name: Delivery, Romolo Desantis, P.E., SVP & Chief Engineer, B&T Business Unit Board Reviews Order To Date Approval Info Other 1 Capital Program Committee 12/15/25 X 2 Board 12/17/25 X Internal Approvals Order Approval Order Approval X Deputy Chief, Development X Executive Vice President & General Counsel X Deputy Chief, Delivery X President
+```
+[p041_c0005]
+
+```text
+SUMMARY INFORMATION Vendor Name Contract Number 1. Navillus Tile Inc. d/b/a Navillus Contracting 2. Navillus Tile Inc. d/b/a Navillus Contracting 1. HC-9R/QM-9R 2. 300000000000551 Description Design-Build Services for Installation of Fire Suppression Systems at Hugh L. Carey and Queens Midtown Tunnels Total Amount 1. Design-Build Contract: $138,252,750 2. Maintenance Contract: $9,970,000 3. Stipend Payments: $350,000 Contract Term (including Options, if any) 1. HC-9R/QM-9R 1,140 Calendar Days 2. Maintenance Contract 5 Years Option(s) included in Total Amount? Yes No Renewal? Yes No Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Funding Source Operating** Capital* Federal Other:
+```
+[p041_c0006] *Design Build Contract
+[p041_c0007] **Maintenance Contract
+### [p041_c0008] ACTION REQUESTED
+[p041_c0009] MTA Construction & Development ("C&D") requests Board approval to award to Navillus Tile Inc. doing business as Navillus Contracting ("Navillus") a publicly advertised and competitively solicited contract (the "Contract") for design-build services for a fire suppression system at the Hugh L. Carey and the Queens Midtown Tunnels. The Contract is in the amount of $138,252,750 and for a duration of 1,140 Calendar Days. Board approval is also requested to award a maintenance contract for the fire suppression systems to Navillus in the amount of $9,970,000 and for a duration of 5 years. In accordance with MTA policy regarding the use of design-build contracts, and to enhance competition and defray proposal costs, the solicitation included a stipend of $175,000 to be paid to each of the two unsuccessful proposers for a total of $350,000.
+### [p041_c0010] DISCUSSION
+[p041_c0011] The Contract includes the expansion of the fire suppression system that was successfully piloted in a segment of the Hugh L. Carey Tunnel to cover the entire tunnel and the installation of a new fire suppression system in the Queens Midtown Tunnel. These systems use a high-pressure water mist to suppress fire for life safety and asset protection in the event of a fire. The project also includes state of good repair work to the tunnel ceiling ventilation exhaust ports at both tunnels to take advantage of the tunnel closures required for the installation of the suppression system. C&D also seeks to engage the fire suppression system provider to provide for maintenance of the system for a period of 5 years from Substantial Completion.
+[p041_c0012] A two-step procurement process was utilized for this Contract. In Step 1, a Request for Qualifications was advertised, resulting in the submission of five Statements of Qualifications which were then evaluated against pre-established Threshold Criteria (addressing completeness, timeliness, capacity, responsibility, and financial capability) and Substantive Evaluation Criteria (addressing team, key personnel and organization, project approach, prior Design-Build experience, past performance, and diversity compliance). Based on these criteria, the following four firms were selected to receive a Request for Proposals ("RFP") in Step 2:
+[p041_c0013] _Master Page # 41 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 42
+
+- [p042_c0001] • Navillus • E-J Electric Installation Co. ("E-J") • Forte Construction Corp. ("Forte") • Welkin Mechanical, LLC ("Welkin")
+[p042_c0002] In response to the RFP, Forte, Navillus, and Welkin submitted technical and price proposals. E-J withdrew from the RFP process stating that it was unable to provide the services required under the accompanying maintenance contract. Forte proposed United Fire Protection Corporation as the maintainer, while Navillus and Welkin proposed to self-perform the maintenance work. The selection committee, consisting of representatives from C&D Delivery, Development, Contracts, and MTA Bridges & Tunnel's ("B&T") Maintenance Department, reviewed the technical proposals and attended the oral presentations of each of the three teams. The selection committee evaluated the technical proposals using the following preestablished selection criteria: design and construction, schedule, maintenance, key personnel, management plan, safety and quality, past performance, diversity practices, and other relevant matters. The selection committee next opened the price proposals, which were as follows: Forte $348,333,000 (maintenance $16,498,455), Navillus $138,252,750 (maintenance $9,970,000), Welkin $268,200,000 (maintenance $22,144,000).
+[p042_c0003] After reviewing the price proposals, the selection committee invited Navillus to participate in negotiations. Forte and Welkin were not invited to participate in negotiations because their price proposals were outside of the competitive range. Negotiations with Navillus included detailed discussions of Navillus' overall cost as well as the proposed schedule and approach to design, construction, and maintenance work. Following negotiations, Navillus was given the opportunity to submit a Best and Final Offer ("BAFO"). Navillus' BAFO confirmed its original price proposal of $138,252,750 (maintenance $9,970,000) and improved their schedule by approximately four months.
+[p042_c0004] The selection committee unanimously recommends Navillus for the award of the Design-Build Contract and the maintenance contract. In addition to providing the lowest competitive price, the selection committee determined that Navillus' proposal provided the best value to the MTA when considering the quality of its technical proposal. Navillus' schedule includes a reduction of 138 calendar days from the maximum duration permitted under the Contract. Navillus previously installed the piloted system, which was awarded through a separate competitive procurement, providing the firm with substantial insight into the system's technical and maintenance requirements. Navillus further demonstrated a comprehensive understanding of all elements of the work, supported by key personnel with successful experience delivering Design-Build projects of similar scale. Navillus' BAFO of $138,252,750 (maintenance $9,970,000) is deemed to be fair and reasonable.
+[p042_c0005] In connection with the review of the Navillus' responsibility pursuant to the All-Agency Responsibility Guidelines, Navillus was found to be responsible notwithstanding significant adverse information and such responsibility finding was approved by the MTA Chief Administrative Officer, in consultation with the MTA General Counsel, in October 2024.
+### [p042_c0006] MBE/WBE/SDVOB INFORMATION
+[p042_c0007] The MTA Department of Diversity and Civil Rights has established an MBE goal of 15%, WBE goal of 15%, and SDVOB goal of 6% for the Contract. Navillus is committed to meet the required goal requirements and their utilization plan is under review. Navillus has not recently completed any MTA contracts with goals; therefore, no assessment of its performance is available at this time.
+[p042_c0008] DDCR has established a 0% MBE/WBE/SDVOB goal for the Maintenance Contract due to the lack of MBE/WBE/SDVOB firms in the marketplace. Navillus has not completed any MTA contracts with goals, therefore, no assessment of its performance can be determined at this time.
+### [p042_c0009] IMPACT ON FUNDING
+[p042_c0010] Funding for the Contract and the stipend for the unsuccessful proposer is included in the MTA's 2020-2024 Capital Program. Funding for the Maintenance Contract is included in the B&T operating budget.
+### [p042_c0011] ALTERNATIVES
+[p042_c0012] None recommended. MTA lacks available in-house technical personnel to perform the scope of work associated with this Contract.
+[p042_c0013] _Master Page # 42 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 43
+
+### [p043_c0001] Staff Summary
+### [p043_c0002] Schedule C: Competitive Requests for Proposals (Award of Purchase and Public Works Contracts)
+### [p043_c0003] Page 1 of 3
+[p043_c0004]
+
+```text
+Item Number 7-8 Department, Department Head Name: Delivery, Gregoire Sulmont, Senior Vice President, Signals and Train Control Board Reviews Order To Date Approval Info Other 1 Capital Program Committee 12/15/25 X 2 Board 12/17/25 X Internal Approvals Order Approval Order Approval X Deputy Chief, Development X Executive Vice President & General Counsel X Deputy Chief, Delivery X President
+```
+[p043_c0005]
+
+```text
+SUMMARY INFORMATION Vendor Name Contract Number 1. L.K. Comstock & Company LLC 2. Siemens Mobility Inc. 1. S48019R 2. 600000000037462 Description Design-Build Services for CBTC – Fulton-Liberty Line Total Amount 1. Design Build Contract $1,390,000,000 2. Long Term CBTC Maintenance Contract $151,821,383 3. Stipend $1,300,000 Contract Term (including Options, if any) 1. S48019R 2,290 Calendar Days 2. Maintenance Contract 25 years Option(s) included in Total Amount? Yes No N/A Renewal? Yes No Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Funding Source Operating** Capital* Federal Other:
+```
+[p043_c0006] *Design-Build Contract
+[p043_c0007] **Maintenance Contract
+### [p043_c0008] ACTION REQUESTED
+[p043_c0009] MTA Construction and Development (“C&D”) requests Board approval to award to L.K. Comstock & Company LLC (“LKC”), a publicly advertised and competitively solicited contract for design-build services to provide a wayside Communications Based Train Control (“CBTC”) system on the Fulton Street and Liberty Avenue lines (the “Contract”). The Contract is in the amount of $1,390,000,000 and for a duration of 2,290 Calendar Days. Board approval is also requested to award a long-term maintenance contract to maintain the CBTC system provided under the Contract to Siemens Mobility Inc. (“Siemens”) in the amount of $151,821,383 and for a duration of 25 years. In accordance with MTA policy regarding the use of Design-Build contracts, and to enhance competition and defray proposal costs, this solicitation includes a stipend of $650,000 to be paid to each of the two unsuccessful proposers for a total amount of $1,300,000.
+### [p043_c0010] DISCUSSION
+[p043_c0011] This Contract is one of the first to be unlocked by Congestion Relief, and provides for design-build services to replace the nearly century-old fixed-block, relay-based signal system on New York City Transit’s Fulton Street Line and Liberty Avenue Line with a CBTC-based system compliant with MTA’s Interoperability Interface Standard (“I2S”). Replacing the existing system with a CBTC-based system will improve overall performance by allowing trains to run more frequently with reduced headways, increase system reliability and safety, and lower long-term maintenance costs by reducing dependence on aging wayside signal infrastructure. In addition to delivering the new train control system, the design-builder will repair and replace track switches, install equipment and cabling to support deployment of a wireless cellular network by a third-party provider, and replace the tunnel lighting system throughout the project limits, completing a comprehensive modernization of the Fulton and Liberty Lines.
+[p043_c0012] _Master Page # 43 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 44
+
+### [p044_c0001] MTA Construction & Development
+[p044_c0002] C&D also seeks to engage Siemens, the entity providing the CBTC equipment as a subcontractor to LKC under the design-build Contract, to provide long term maintenance of the CBTC equipment installed under the Contract. The maintenance contract is for a twenty-five-year term, and includes two options, each exercisable in the MTA's sole discretion to extend the maintenance period for an additional five years.
+[p044_c0003] A two-step procurement process was conducted for this Contract. In Step 1, a Request for Qualifications was advertised resulting in the submission of three Statements of Qualifications, which were then evaluated against pre-established Threshold Criteria (addressing completeness, timeliness, capacity, responsibility, and financial capability) and Substantive Evaluation Criteria (addressing team, key personnel and organization, project approach, prior Design-Build experience, past performance and diversity compliance). Based on these criteria, the following firms were selected to receive a Request for Proposal ("RFP") in Step 2:
+- [p044_c0004] • LKC with Siemens designing and furnishing the CBTC system as a subcontractor to LKC; • E-J Electric Installation Co. ("E-J") with Mitsubishi Electric Power Products Inc. ("Mitsubishi") designing and furnishing the CBTC system as a subcontractor to E-J; • T&G Partners ("T&G"), an unincorporated joint venture comprised of MLJTC2 and Hitachi Rail GTS USA Inc. ("Hitachi"), with Hitachi designing and supplying the CBTC system as a member of the joint venture.
+[p044_c0005] During the RFP process, C&D representatives met separately with representatives from LKC, E-J, and T&G on multiple occasions to address questions and concerns about the Contract requirements and to monitor the proposers' progress in developing their proposals. In addition, C&D solicited from each of the proposers suggested changes to the contract documents, referred to as Alternative Technical Concepts ("ATCs"), that might reduce costs, shorten the project schedule, and/or mitigate risks. To encourage creativity, ATCs are kept confidential between the MTA and the submitting proposer. The proposers submitted multiple ATCs suggesting revisions to the technical requirements and meetings were held with each proposer to discuss their respective ATCs. Thereafter, MTA evaluated the ATCs, considering the cost and/or schedule savings and the added or reduced risks involved and either approved, approved with conditions, or rejected each of the ATCs. In all, over 15 ATCs were approved or approved with conditions. LKC, E-J, and T&G then submitted technical and price proposals that incorporated their approved or conditionally approved ATCs.
+[p044_c0006] The selection committee, consisting of representatives from C&D Delivery, Development, and Contracts and NYC Transit Department of Subways, evaluated the technical proposals from the three proposers using the following preestablished selection criteria: design and construction, schedule, maintenance, management plan, safety and quality, experience, record of performance, diversity practices, and other relevant matters. After evaluating technical proposals, the selection committee opened the price proposals which were as follows: LKC: $1,510,443,000 (maintenance: $188,643,283); E-J: $2,298,765,000 (maintenance: $166,201,569); and T&G: $1,594,600,000 (maintenance: $131,428,622).
+[p044_c0007] The selection committee then invited all three proposers to participate in negotiations. Negotiations with E-J, LKC, and T&G included detailed discussions of each proposer's price and proposed schedule. Thereafter, each proposer was requested to submit a revised price proposal, identifying the proposed savings for certain of the items discussed during negotiations. The revised price proposals were as follows: LKC: $1,479,600,000 (maintenance: $160,217,707.25); E-J: $2,200,080,900 (maintenance: $169,260,756.56); and T&G: $1,557,000,000 (maintenance: $124,862,058.16). Based on the revised pricing received, it was determined that E-J was outside of the competitive range and would not be considered for further negotiations.
+[p044_c0008] Additional negotiations with LKC and T&G identified further cost savings opportunities and agreement on certain Contract revisions. At the conclusion of these meetings, LKC and T&G submitted Best and Final Offers ("BAFOs") as follows: LKC: $1,390,000,000 (maintenance $151,821,383); T&G: $1,486,000,000 (maintenance $109,140,733).
+[p044_c0009] The selection committee unanimously recommended LKC for award of the Contract and Siemens for award of the long-term CBTC maintenance contract. Based on its evaluation of the technical and price proposals, as well as information presented during the oral presentations and negotiations, the selection committee determined that LKC's proposal offers the best value to the MTA. In addition to offering the lowest price, LKC's proposal demonstrates a deep understanding of both the civil and train control system requirements and utilizes a detailed and innovative design approach that reduces the installation time for the system and a cutover strategy that will minimize service disruptions by including a reversion plan that will allow the system to revert to the legacy system if necessary. LKC committed to completing the work approximately ten months ahead
+[p044_c0010] _Master Page # 44 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 45
+
+### [p045_c0001] The logo for MTA Construction & Development, featuring the MTA logo in a blue circle followed by the text "Construction & Development" in a bold, sans-serif font.
+[p045_c0002] of the maximum duration permitted by the RFP. LKC's BAFO of $1,390,000,000 (maintenance $151,821,383) is considered fair and reasonable.
+[p045_c0003] In connection with the review of LKC's responsibility pursuant to the All-Agency Responsibility Guidelines, LKC was found to be responsible notwithstanding significant adverse information and such responsibility finding was approved by the MTA Chair in consultation with the MTA General Counsel in March 2022. In connection with the review of Siemens' responsibility pursuant to the All-Agency Responsibility Guidelines, no significant adverse information was discovered and Siemens is determined to be a responsible vendor.
+### [p045_c0004] MBE/WBE/SDVOB INFORMATION
+[p045_c0005] The MTA Department of Diversity and Civil Rights has established a MBE goal of 7%, a WBE goal of 7% and a SDVOB goal of 1% for the Contract. LKC is committed to meeting the goals requirements. LKC has achieved its DBE/MBE/WBE/SDVOB goals on recently completed MTA contracts.
+[p045_c0006] DDCR has established a 0% MBE/WBE/SDVOB goal for the Maintenance Contract due to the lack of MBE/WBE/SDVOB firms in the marketplace. Siemens has not completed any MTA contracts with goals; therefore, no assessment of its performance can be determined at this time.
+### [p045_c0007] IMPACT ON FUNDING
+[p045_c0008] Funding for the Contract and the stipend for the unsuccessful proposer is included in the MTA's 2020-2024 and 2025-2029 Capital Programs. Funding for the Maintenance Contract is included in the NYCT operating budget. The cellular work will be paid for in first instance by the Capital Program and will be reimbursed by the wireless provider.
+### [p045_c0009] ALTERNATIVES
+[p045_c0010] None recommended. MTA lacks available in-house technical personnel to perform the scope of work associated with this Contract.
+[p045_c0011] _Master Page # 45 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 46
+
+### [p046_c0001] Staff Summary
+### [p046_c0002] Schedule H: Modification to Personal Service & Miscellaneous Service Contracts
+[p046_c0003] Page 1 of 1
+[p046_c0004] Item Number: 9
+[p046_c0005]
+
+```text
+Vendor Name (& Location) Naik Consulting Group, PC (New York, New York) Description Program Management and Consultant Construction Management Services for Midtown 42nd Street Corridor Projects Contract Term (including Options, if any) June 21, 2021 – April 30, 2026 Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Developer Reimbursement Requesting Dept/Div & Dept/Div Head Name: Delivery, Mark Roche, Deputy Chief Development Officer
+```
+[p046_c0006]
+
+```text
+Contract Number PS886 AWO/Modification # 3 Original Amount: $ 26,426,103 Prior Modifications: $ 8,564,600 Prior Budgetary Increases: $ 0 Current Amount: $ 34,990,703 This Request: $ 2,530,024 % of This Request to Current Amount: 7.2% % of Modifications (including This Request) to Original Amount: 42%
+```
+### [p046_c0007] Discussion:
+[p046_c0008] This Contract provides for centralized project management and administrative oversight and coordination services for both in-house and third-party projects along the 42nd Street Corridor (the “42nd Street Corridor Projects”). MTA Construction & Development (“C&D”) requests Board approval of a modification, in the not-to-exceed amount of $2,530,024, to provide for additional services in connection with the construction of a new office and hotel development at 175 Park Avenue (the “175 Park Project”). This modification will also extend the Contract term by four months to September 1, 2026.
+[p046_c0009] The 175 Park Project will demolish the Hyatt Hotel located at the eastern edge of Grand Central Terminal and replace it with a 1,500-foot-tall commercial and hotel tower of approximately two million square feet. Both the New York City Transit Lexington Avenue subway station and the loop tracks of Metro-North Railroad lie within the footprint of the 175 Park Project site. As such, the new building will need to place large foundations within MTA property. This modification provides for the consultant, as part of its coordination of 42nd Street Corridor Projects, to review and comment on all 175 Park Project submissions for design compliance, constructability and potential impacts to MTA real estate and operations. The consultant will also coordinate MTA stakeholder review for design concurrence and the MTA resource utilization.
+[p046_c0010] The consultant submitted its cost proposal in the amount of $2,538,076.89. Negotiations yielded a final price of $2,530,023.29, which is considered fair and reasonable. The developer will be reimbursing MTA for the cost of this work.
+[p046_c0011] _Master Page # 46 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 47
+
+### [p047_c0001] Staff Summary
+### [p047_c0002] Schedule I: Modifications to Purchase and Public Work Contracts
+[p047_c0003] Page 1 of 1
+[p047_c0004] Item Number: 10
+[p047_c0005]
+
+```text
+Vendor Name (& Location) RCC/AMCC Joint Venture (Paterson, New Jersey) Description Morris Park Yard Locomotive Shop and Employee Fac Des/Build Contract Term (including Options, if any) December 12, 2017 – October 12, 2019 Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Dept/Div & Dept/Div Head Name: Delivery, Mark Roche, Deputy Chief Development Officer
+```
+[p047_c0006]
+
+```text
+Contract Number 6241 AWO/Modification # 11 Original Amount: $ 89,859,236.00 Prior Modifications: $ 7,936,266.85 Prior Budgetary Increases: $ 0 Current Amount: $ 97,795,502.85 This Request: $ 3,350,000 % of This Request to Current Amount: 3.4% % of Modifications (including This Request) to Original Amount: 12.6%
+```
+### [p047_c0007] DISCUSSION:
+[p047_c0008] This Contract is for the engineering, design and construction of a new diesel locomotive repair shop and employee facility at Long Island Railroad's Morris Park Yard in Richmond Hill, Queens, NY. All Contract work has been completed. Previously awarded modifications addressed additional design and construction costs associated with the issues discussed below and awarded excusable time extensions that in total extended the Contract's Substantial Completion date by 656 days from October 12, 2019, to July 29, 2021. Those modifications reserved the contractor's claims for impact costs for a future modification. MTA Construction and Development ("C&D") now requests Board approval of a modification that will resolve those reserved claims.
+[p047_c0009] Construction of the new Morris Park Deisel Locomotive Shop was delayed due to issues and resulting modifications associated with 1) insufficient water pressure in the vicinity of the Shop requiring the installation of a diesel pump to provide water service to the building acceptable for firewater supply, 2) required fire system upgrades in the facility storage area, 3) Con Edison issues with the provision of permanent power, and 4) access delays preventing commencement of foundation work.
+[p047_c0010] The contractor submitted an impact cost proposal of $7,432,835.02 asserting that the entire time extension was compensable. Negotiations resulted in agreement of $3,350,000, which is considered fair and reasonable, compensating the contractor for 376 days of excusable, compensable delays and settling all outstanding change orders and claims. The negotiated savings is attributed to the reduction in compensable days (due to concurrent contractor delays) and proposed costs that were disallowed in accordance with the Contract.
+[p047_c0011] _Master Page # 47 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 48
+
+### [p048_c0001] Staff Summary
+### [p048_c0002] Schedule I: Modifications to Purchase and Public Work Contracts
+### [p048_c0003] Page 1 of 1
+[p048_c0004] Item Number: 11
+[p048_c0005]
+
+```text
+Vendor Name (& Location) Sovereign Hydroseal East, Inc. (Astoria, New York) Description Water Remediation at Various Locations Contract Term (including Options, if any) January 2, 2024 – January 2, 2026 Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Dept/Div & Dept/Div Head Name: Delivery, Mark Roche, Deputy Chief Development Officer
+```
+[p048_c0006]
+
+```text
+Contract Number AWO/Modification # A37793 4 Original Amount: $ 4,848,110 Prior Modifications: $ 0 Prior Budgetary Increases: $ 0 Current Amount: $ 4,848,110 This Request: $ 3,000,975 % of This Request to Current Amount: 61.9% % of Modifications (including This Request) to Original Amount: 61.9%
+```
+### [p048_c0007] DISCUSSION:
+[p048_c0008] Contract A37793 is a unit price contract to provide water remediation and structural protection tasks on an as-needed basis at fixed unit prices to address water infiltration in subway stations and on selected segments of subway tunnels. MTA Construction and Development (“C&D”) requests Board approval of a modification to extend the Contract term by one year to January 2, 2027, while a replacement contract is procured and to increase quantities to various unit price items to support remediation work planned during this extended period.
+[p048_c0009] The work includes the injection of liquid chemical grout into active leaks across critical infrastructure components, such as concrete cracks, joints, or holes. These repairs target roofs, ceilings, foundation walls, floors, columns, beams, and other structural elements within tunnels and stations.
+[p048_c0010] Based on surveys and pending requests for remediation services, C&D has forecasted the additional quantities of unit priced items required for remediation work for the upcoming year. Negotiations yielded reductions to the unit price of the positive-side grouting used at station locations and at tunnel sites and maintained the unit prices for the remaining items, resulting in a total price of $3,000,975 which is considered fair and reasonable.
+[p048_c0011] _Master Page # 48 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 49
+
+### [p049_c0001] Staff Summary
+### [p049_c0002] Schedule I: Modifications to Purchase and Public Work Contracts
+### [p049_c0003] Page 1 of 2
+[p049_c0004] Item Number: 12
+[p049_c0005]
+
+```text
+Vendor Name (& Location) Skanska Railroad Construction JV (East Elmhurst, New York) Description Design-Build Services for Improvements on the Flushing Line Contract Term (including Options, if any) September 19, 2022 – May 25, 2025 Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Dept/Div & Dept/Div Head Name: Delivery, Mark Roche, Deputy Chief Development Officer
+```
+[p049_c0006]
+
+```text
+Contract Number Modification No. A46030 29 Original Amount: $ 199,955,000 Prior Modifications: $ 34,564,730 Prior Budgetary Increases: $ 0 Current Amount: $ 234,519,730 This Request: $ 19,540,000 % of This Request to Current Amount: 8.33% % of Modifications (including This Request) to Original Amount: 27.06%
+```
+### [p049_c0007] DISCUSSION:
+[p049_c0008] Contract A46030 (the “Contract”) is for the rehabilitation of the 61st Street Woodside station, including replacement of an escalator, stairs, repair of structural elements, and replacement of three escalators at the 74 th Street Broadway Station in Queens. MTA Construction and Development requests Board approval of a modification to provide for the replacement of eight existing deteriorated platform girders at the 61st Street-Woodside station and acceleration of the work on the Manhattan-bound side. This Modification will also extend Milestone 3 and the Substantial Completion date to August 17, 2026.
+[p049_c0009] The Contract provides for steel girder repairs but did not anticipate the need for full replacements. During the performance of the Contract work to expose the steel girders to be repaired, it became apparent that the deterioration of the girders was too severe for just repairs and that full replacement would be necessary. It was not practical to assess the full condition of the steel during the development of this Contract because of the location of the steel, which would have required track outages to access and because the steel was encased in concrete which needed to be removed to perform an accurate condition survey.
+[p049_c0010] There are eight steel platform girders that require replacement (four at the Manhattan-bound track and four at the Flushing-bound track). Adding this work to this Contract by modification is the most efficient solution because the Contractor is already mobilized to perform similar work and the required track outages are already scheduled. Deferral of this work to a future date under a separate contract would incur additional general conditions costs and require additional track outages which are difficult to schedule. In addition, work to be performed under this Contract to rehabilitate the concrete platforms would have to be redone.
+[p049_c0011] In order to complete the work on the Manhattan-bound side before baseball season and special events like the FIFA World Cup and the US Open, during which track outages will be unavailable, and to reduce the impact of this work on follow-on work, this Modification provides for acceleration of the work on the Manhattan-bound side, and an early completion incentive of $8,000 per day for each day that that work is completed before April 10, 2026 and a disincentive in the amount of $8,000 per day for each day that the Design-Builder completes that work after April 10, 2026. If the work is not completed by the Milestone 3 completion date, which is being adjusted by this Modification from July 12, 2024 to August 17, 2026, liquidated damages will also apply. This Modification will also extend the contractual Substantial Completion date from May 25, 2025 to August 17, 2026, but does not address time impacts associated with the work on the Flushing-bound side and certain other factors which will extend Substantial Completion beyond that date.
+[p049_c0012] The Contractor submitted its direct cost proposal in the amount of $38,393,633.39. Negotiations yielded a final price of $32,000,000, which is considered fair and reasonable. To take advantage of planned outages and partially mitigate delay to this Contract, expedited unilateral modifications were issued authorizing a total amount not to exceed $12,700,000, which
+[p049_c0013] _Master Page # 49 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 50
+
+### [p050_c0001] Construction & Development
+[p050_c0002] has already been added to the Contract price, for design development, procurement of steel and commencement of the work. This modification will fix the total price of this Work at $32 million and fund the remaining $19.54 million that remains to be added to the Contract.
+[p050_c0003] _Master Page # 50 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 51
+
+### [p051_c0001] Staff Summary
+### [p051_c0002] Schedule I: Modifications to Purchase and Public Work Contracts
+[p051_c0003] Page 1 of 1
+[p051_c0004] Item Number: 13
+[p051_c0005]
+
+```text
+Vendor Name (& Location) TAP Electrical Contracting Service, Inc. (Holbrook, New York) Description Replacement of 86th Street Substation and Negative Return Reactors at 110th Street Substation. Contract Term (including Options, if any) 24 Months Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Dept/Div & Dept/Div Head Name: Delivery, Mark Roche, Deputy Chief Development Officer
+```
+[p051_c0006]
+
+```text
+Contract Number AWO/Modification # MN25781 47 Original Amount: $ 11,775,000.00 Prior Modifications: $ 2,614,810.67 Prior Budgetary Increases: $ Current Amount: $ 14,389,810.67 This Request: $ 3,000,000 % of This Request to Current Amount: 20.8% % of Modifications (including This Request) to Original Amount: 39%
+```
+### [p051_c0007] Discussion:
+[p051_c0008] This Contract provides for the replacement of Metro-North Railroad's ("MNR") 86th Street Substation and the negative return reactors at MNR's 110th Street Substation. The work increased the capacity of the 86th Street Substation and replaced the existing reactors at the 110th Street Substation with larger, more efficient reactors to increase the capacity of that substation, improving the ability of the substations to support normal operations during unanticipated loss of power events. MTA Construction and Development ("C&D") requests Board approval of a modification that will resolve all remaining claims asserted by TAP Electrical Contracting Service, Inc. ("TAP"), including all claims for compensable and excusable delays, except for one change order in the amount of $99,300 for added work that is being processed separately. All Contract work has been satisfactorily completed by the Contractor.
+[p051_c0009] Substantial Completion was initially scheduled for December 17, 2015. However, the project was delayed for a total of 3,272 days, which included 31 separate delay events contributing to the delay during that ten-year period. The principal delays for which MTA was responsible included substantial changes in the sequencing and phasing of the work because TAP was not permitted to perform the work at both stations concurrently as was permitted under the Contract, redesign for installation of new negative return reactors necessitated by vibrations from rail traffic, modifying the procedure for column removals based on new structural considerations, and the de-energization of the 86th Street substation caused by, among other things, redesign of steel supports due to unanticipated space and accessibility issues in the Park Avenue tunnel and the late discovery of asbestos. Substantial Completion was issued on March 1, 2025. TAP considered the entire delay excusable and compensable and demanded $5 million in Impact Costs. Although MTA acknowledged responsibility for certain delays, MTA rejected the demand for $5 million as excessive.
+[p051_c0010] The parties had extensive discussions regarding TAP's claim for delay. MTA determined that 1,241 days were Excusable/Compensable Delay, 1,538 days were Excusable Non-Compensable Delay, and 493 were Non-Excusable/Non-Compensable Delay and applied a daily rate for the Compensable Delay that it considered fair and reasonable under the Contract. After negotiations, TAP agreed to accept $3,000,000 in settlement of all outstanding claims (except for the outstanding change order noted above). MTA considers the amount agreed to fair and reasonable and especially in light of the significant cost and exposure associated with defending this matter in court.
+[p051_c0011] _Master Page # 51 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 52
+
+### [p052_c0001] Construction & Development
+[p052_c0002] DECEMBER 2025
+### [p052_c0003] LIST OF RATIFICATIONS FOR BOARD APPROVAL
+### [p052_c0004] Procurements Requiring Majority Vote:
+### [p052_c0005] Schedule K. Ratification of Completed Procurement Actions (Involving Schedule E – J) (Staff Summaries required for all items requiring Board approval)
+- [p052_c0006] 14. Infinity Contracting, Inc. $2,340,000 Staff Summary Attached Contract No. C33945
+[p052_c0007] MTA Construction and Development requests Board ratification of a modification for the investigation and emergency repair of an 8" sanitary sewer line at the Gun Hill Bus Depot.
+[p052_c0008] _Master Page # 52 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 53
+
+### [p053_c0001] Staff Summary
+### [p053_c0002] Schedule K: Ratification of Completed Procurement Actions
+[p053_c0003] Page 1 of 1
+[p053_c0004] Item Number: 14
+[p053_c0005]
+
+```text
+Vendor Name (& Location) Infinity Contracting Services Corp. (College Point, New York) Description Component Repairs at the 207 th Street Overhaul and Maintenance Facilities, in the Borough of Manhattan Contract Term (including Options, if any) December 20, 2022 – February 17, 2025 Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Dept/Div & Dept/Div Head Name: Delivery, Mark Roche, Deputy Chief Development Officer
+```
+[p053_c0006]
+
+```text
+Contract Number AWO/Modification # C33945 10 Original Amount: $ 21,416,000 Prior Modifications: $ 3,236,753 Prior Budgetary Increases: $ 0 Current Amount: $ 24,652,753 This Request: $ 2,340,000 % of This Request to Current Amount: 9.49% % of Modifications (including This Request) to Original Amount: 26.04%
+```
+### [p053_c0007] DISCUSSION:
+[p053_c0008] Contract C33945 provides for repairs at New York City Transit's ("NYCT") 207 th Street overhaul and maintenance facility in Manhattan, consisting of replacement of obsolete/deteriorated windows, window air conditioning units, a sewer connection, deteriorated roll-up doors, brick repair & replacement, and repair and/or replacement of structural elements of steel beams and columns. MTA Construction and Development ("C&D") requests Board ratification of a modification for the investigation and emergency repair of an 8" sanitary sewer line at the Gun Hill Bus Depot.
+[p053_c0009] The Gun Hill Bus Depot operates 24 hours per day/7 days per week with over 900 employees providing critical operations and maintenance for 20 bus lines serving the boroughs of the Bronx and Manhattan. On May 31, 2025, after several flooding and plumbing events, water service to the Depot was shut down. A preliminary investigation found several leaks in the 8" sanitary sewer, rendering all sanitary lines unusable, directly impacting restrooms, washrooms, and maintenance operations across the facility. On June 23, 2025, NYCT Department of Buses declared that the repairs to the sanitary line constituted an Immediate Operating Need. Thus, to return the Gun Hill Bus Depot to normal operations as soon as possible, authorization was obtained from the President of C&D on August 18, 2025, for the contractor to proceed with the repair to the sanitary line to restore water service to the Depot up to an amount not-to-exceed $1,500,000. The work under this modification is complete.
+[p053_c0010] The Contractor's proposal was submitted in the amount of $2,483,181.99 Negotiations were held and agreement was reached in the amount of $2,340,000, which is considered fair and reasonable.
+[p053_c0011] _Master Page # 53 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 54
+
+### [p054_c0001] MTA 2026 BUDGET AND 2026-2029 FINANCIAL PLAN ADOPTION MATERIALS
+[p054_c0002] MTA Finance Committee MTA Board Meeting
+[p054_c0003] December 15, 2025 December 17, 2025
+> [p054_c0004] The logo for the Metropolitan Transportation Authority (MTA) is located in the bottom left corner. It consists of a black circle containing the white letters "MTA". To the right of the circle, the words "Metropolitan Transportation Authority" are written in a bold, black, sans-serif font.
+[p054_c0005] _Master Page # 54 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 55
+
+### [p055_c0001] MTA 2026 Budget and 2026-2029 Financial Plan Adoption Materials
+### [p055_c0002] Table of Contents
+[p055_c0003] I. Staff Summary MTA Consolidated 2026 Budget and 2026-2029 Financial Plan..... I-1 II. Agencies' Staff Summaries – 2026 Budget and 2026-2029 Financial Plan: Bridges and Tunnels..... II-1 Construction & Development..... II-11 Long Island Rail Road..... II-21 MTA Grand Central Madison Operating Company..... II-31 Metro-North Railroad..... II-41 MTA Headquarters..... II-51 Inspector General..... II-61 First Mutual Transportation Assurance Co. (FMTAC)..... II-67 New York City Transit..... II-73 MTA Bus Company..... II-83 Staten Island Railway..... II-93
+[p055_c0004] _Master Page # 55 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 56
+
+### [p056_c0001] I. Staff Summary MTA Consolidated 2026 Budget and 2026-2029 Financial Plan
+[p056_c0002] _Master Page # 56 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 57
+
+### [p057_c0001] Staff Summary
+### [p057_c0002] Metropolitan Transportation Authority
+### [p057_c0003] Page 1 of 5
+[p057_c0004]
+
+```text
+Subject MTA 2026 Budget and 2026-2029 Financial Plan Adoption Department Office of the Chief Financial Officer Department Head Name Jaibala Patel, Chief Financial Officer Department Head Signature Project Manager/Division Head Jacob Luce, OMB
+```
+[p057_c0005]
+
+```text
+Date December 3, 2025 Vendor Name Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p057_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Comm. 12/15 X 2 Board 12/17 X
+```
+[p057_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 OMB 2 Legal 3 Chair/CEO
+```
+### [p057_c0008] Purpose:
+[p057_c0009] The purpose of this staff summary is to secure MTA Board (i) adoption of the accompanying 2026 Final Proposed Budget and the Four-Year Financial Plan 2026-2029 (“November Plan” or “Plan”), which includes approving the 2025 November Forecast and Plan Adjustments (items below the baseline), and (ii) authorization of Budget and Plan adjustments, including MTA policy actions, as set forth below in this Staff Summary.
+### [p057_c0010] Discussion:
+[p057_c0011] This document summarizes the November Plan, which was presented for information purposes to the MTA Board at its meeting held on November 19, 2025, and projects ending cash balances of $0 annually for 2025 and 2026, with deficits of $160 million in 2027 (0.7% of expenses), $243 million in 2028 (1.1% of expenses) and $306 million in 2029 (1.3% of expenses). See attachment A. This is an improvement in the Plan deficit of $419 million from the 2025 July Financial Plan (“July Plan”).
+[p057_c0012] The July Plan included additional farebox and toll revenues from proposed fare and toll rate and policy changes for implementation in January 2026. With MTA Board approval in September 2025, the additional revenue projected from these actions, which were represented below-the-line in the July Plan, have been incorporated into Agency financial plans. Overall, farebox and toll revenues, compared with the July Plan, are $20 million favorable over the Plan period.
+[p057_c0013] Compared with the July Plan, Debt Service expense is $161 million favorable.
+[p057_c0014] The net cost of Paratransit service, which reflects paratransit service contracts and other expenses, Paratransit fare revenue, Urban Tax receipts dedicated to Paratransit, and City Subsidy for Paratransit, is $11 million higher than in the July Plan, driven primarily by higher service expenses due to increased ridership. While the City’s contribution to Paratransit is currently legislated at 80 percent of expenses, there is a contribution cap of 50 percent plus $165 million. As a result, the City’s contribution is less than 80 percent and is further reduced each year as expenses continue to increase, reaching $150 million in 2028.
+[p057_c0015] Information on New Needs, which over the Plan period cost $44 million and cover maintenance and operations, safety and security, information technology, and other service support initiatives, can be found in Volume 2 of the November Plan.
+[p057_c0016] Other Agency baseline operating expenses are $319 million higher than in the July Plan. Major expense changes include Workers’ Compensation, FELA and Pension, which are $378 million unfavorable due to higher actuarial re-estimates, and Electric Power and Fuel, which are $95 million unfavorable due to rate and price increases.
+[p057_c0017] _Master Page # 57 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 58
+
+### [p058_c0001] Staff Summary
+### [p058_c0002] Metropolitan Transportation Authority
+### [p058_c0003] Page 2 of 5
+[p058_c0004] Health & Welfare expenses are $532 million favorable stemming from 2025 vacancy savings and higher prescription drug credits.
+[p058_c0005] In 2023, the MTA committed to achieving $500 million in annually recurring cost savings through operating efficiencies, which was attained by the end of 2025 with initiatives ranging from insourcing functions like cleaning, using reliability data to tailor maintenance frequencies, and standardizing work practices to improve productivity. Details on these savings actions are included in Volume 2, Section II of the 2023 November Financial Plan.
+[p058_c0006] Savings targets from new operating efficiencies are being introduced in this Plan. Achievable savings of $75 million in 2026, growing to $150 million in 2027 and $200 million in 2028, are expected to reach a full value of $250 million in annual recurring operating savings by 2029. While the 2023 operating efficiencies focused primarily on operations at NYC Transit, Long Island Rail Road, Metro-North Railroad and Bridges and Tunnels, new operating efficiencies will also include MTA Headquarters as shared services have recently been centralized as part of the MTA consolidation efforts. Initiatives have been identified to capture $75 million in savings for 2026 and subsequent years and are detailed under "MTA Initiatives" in Volume 1, Section 3 of the November Plan. Details on initiatives to achieve remaining savings will be identified in future Plans.
+[p058_c0007] Revenues from Taxes and State and Local Subsidies are unchanged from the July Plan.
+[p058_c0008] Consistent with prior Plans, this Plan proposes, effective March 2027 and March 2029, biennial fare and toll rate changes to generate a 4 percent yield increase in farebox and toll revenues. These proposals are projected to generate $39 million above the forecast in the July Plan.
+[p058_c0009] The Plan also reflects re-timing of the Penn Station Access project. Full completion of the project, which extends Metro-North's New Haven Line to reach Penn Station with four new accessible stations in the Bronx, has experienced delays due to coordination issues with Amtrak for work on its right-of-way. The full completion of the project, originally scheduled for 2027, is now expected to be delayed until 2030. Nevertheless, MTA is planning to begin providing about 30 percent of the planned scheduled service to three of the four new Bronx stations in 2027. This interim plan, which is predicated on cooperation by Amtrak, will result in shifts in operating budget spending, lowering net costs by $58 million over the Plan period.
+[p058_c0010] MTA expects a further delay in the reimbursement of direct COVID-related expenses through the Federal Emergency Management Agency (FEMA). In the July Plan, reimbursements of $300 million in 2025 and $300 million in 2026 were anticipated, while the February Plan assumed the reimbursement would be received earlier: $250 million in 2025, $140 million in 2025, and $210 million in 2026. In this Plan, the reimbursement is expected over the 2026 to 2028 period, with receipt of $200 million each year.
+[p058_c0011] Tolling through the Central Business District Tolling Program (CBDTP) began in January 2025. CBDTP net revenue, dedicated to the 2020-2024 MTA Capital Program, is deposited into the Capital Lockbox Fund, and does not impact the bottom line of the Plan. Further information on CBDTP can be found in Volume 2 of the November Plan.
+[p058_c0012] While the Plan presents balanced budgets through 2026, and reduced deficits for 2027 through 2029, based on sound budgeting and assumptions, there are risks, including:
+- [p058_c0013] • Dedicated tax receipts. Almost 45 percent of operating revenues that are necessary to cover operating budget expenses are derived from dedicated taxes, and an economic slowdown or recession could adversely impact MTA's ability to cover costs.
+[p058_c0014] _Master Page # 58 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 59
+
+### [p059_c0001] Staff Summary
+### [p059_c0002] Metropolitan Transportation Authority
+### [p059_c0003] Page 3 of 5
+- [p059_c0004] • FEMA COVID reimbursement. The MTA expects reimbursement through the Federal Emergency Management Agency (FEMA) for direct COVID-related expenses incurred during the pandemic. These reimbursements have already slipped beyond the anticipated date of receipt, and should these reimbursements not materialize, the Plan will be put into deficit by $200 million in 2026, and deficits will be $200 million higher in both 2027 and 2028. • Casino revenue. The awarding of casino licenses is expected by the end of 2025. Should the commencement of operations be delayed, the Plan, which assumes license and gaming tax revenues of $500 million in both 2026 and 2027, $600 million in 2028, and $200 million in 2029, will be out of balance. • Approval and implementation of fare and toll yield increases. The Plan includes fare and toll rate increases proposed for March 2027 and March 2029. These increases are expected to generate $1.22 billion over the Plan period. • Labor agreements. Major collective bargaining agreements expire over the course of the Plan period, and the Plan assumes annual 2% wage increases at the conclusion of existing agreements. • City Paratransit reimbursements. The net cost of Paratransit service, which reflects paratransit service contracts and other expenses, paratransit fare revenue, Urban Tax receipts dedicated to Paratransit, and City Subsidy for Paratransit, continues to increase. Under current State law, the City's responsibility for reimbursing paratransit expenses reduces from a cap of 50 percent plus $165 million to 50 percent in July 2027 through June 2030, when the State law requiring City contribution expires. Beginning in July 2030, City reimbursement would revert to being the lesser of one-third of net costs or twenty percent more than the prior year's reimbursement. The Plan assumes a continuation of an 80 percent contribution from the City of New York, and without an extension of State law maintaining the 80 percent reimbursement, deficits will increase.
+### [p059_c0005] Recommendation:
+[p059_c0006] It is recommended that the Board:
+- [p059_c0007] • Adopt the 2026 Final Proposed Budget and Four-Year Financial Plan 2026-2029, which includes approving the 2025 November Forecast and Plan Adjustments (items below the baseline). The approval of this Plan will supersede prior Board Plan approvals for this period. Note that the projected 2027 and 2029 fare and toll rate increase proposals will require separate Board actions in advance of those dates. • Authorize MTA staff to initiate administrative procedures that are required for the consideration, but not implementation, of fare and toll changes consistent with the financial plan. Administrative procedures include any required notices and conducting any required hearings. Only after required public notices and public hearings have been held will specific proposed fare and toll changes be submitted to the Board for approval. This approval is a standard provision that has been included in prior budget adoption materials. • Authorize the Chief Financial Officer or their designee to apply funds consistent with the approved budget and financial plan which targets operating deficits directly, debt savings, retiree health expenses and/or pension costs. • Authorize staff, under the guidance and direction of the Chair/CEO, Chief Financial Officer, or their designees to take actions to implement the policy actions set forth in the Plan.
+[p059_c0008] _Master Page # 59 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 60
+
+### [p060_c0001] Staff Summary
+### [p060_c0002] Metropolitan Transportation Authority
+### [p060_c0003] Page 4 of 5
+- [p060_c0004] • Authorize technical adjustments to MTA budgets and forecasts of a non-material nature in the 2026 February Plan. • Authorize the Chair/CEO, Chief Financial Officer, or their designees to execute and file with grant applications the required certifications, assurances and other documents required under Federal regulations, and to execute federal grants and cooperative agreements. • Authorize adjustment of MTA budgets and forecasts to reflect labor settlements approved from time to time by the Board. • Authorize staff, under the guidance and direction of the Chairman/CEO, the Chief Financial Officer, or their designees (including the MTA Treasurer), to take additional budget and cash management actions, as has been done in past budgets, to draw on the general reserve and/or make budget adjustments to respond to unexpected expenses or revenue/subsidy shortfalls, and other actions described below:
+### [p060_c0005] Advance of Bridges and Tunnels Operating Surplus
+[p060_c0006] The Board is requested to authorize Bridges and Tunnels to advance to MTA and MTA New York City Transit, to the extent funds are available, all or part of the estimated operating surplus for the year 2025.
+### [p060_c0007] Uses of MTA MRT-2 Corporate Account Monies
+[p060_c0008] Unlike many other forms of intergovernmental aid, these subsidy monies, by statute, can be allocated at the Board's discretion. It is recommended that the Board authorize that these funds be used as set forth in the Plan, authorize staff to administer these funds in a manner consistent with the Plan, and to temporarily help stabilize cash flow requirements. As in the past, the advance of funds to the MTA and its affiliates and subsidiaries to stabilize cash flow requirements may be made, provided they are repaid prior to the end of the fiscal year in which they are made.
+### [p060_c0009] Uses of Payroll Mobility Tax (and Replacement Funds) and MTA Aid Trust Account
+[p060_c0010] Like the MRT-2 Corporate Account monies, these subsidy monies, by statute, can be allocated at the Board's discretion. It is recommended that the Board authorize that the revenues from the PMT (and Replacement Funds) be released as needed: (i) for pledged revenues by MTA to secure and be applied to the payment of bonds to be issued in the future, to fund capital projects of MTA, its subsidiaries, and MTA New York City Transit and its subsidiary and (ii) to pay capital costs, including debt service of MTA, its subsidiaries, and MTA New York City Transit and its subsidiary. It is further recommended that the Board authorize that subject to the provisions of any such pledge, or in the event there is no such pledge, the PMT Revenues be used by MTA to pay for costs, including operating and capital costs of MTA, its subsidiaries and MTA New York City Transit and its subsidiary.
+[p060_c0011] Further, it is recommended that the Board authorize that the revenues in the MTA Aid Trust Account (derived from four fees and taxes imposed in the Metropolitan Commuter Transportation District – a supplemental motor vehicle license fee, a supplemental motor vehicle registration fee, a tax on medallion taxicab rides, and a supplemental tax on passenger car rentals) be released as needed and used as pledged revenues by MTA or pledged to the Triborough Bridge and Tunnel Authority to secure debt of MTA Bridges and Tunnels. Further, subject to the provisions of such pledge, or in the event there is no such pledge, the Board authorizes the release of these funds to be used by MTA for the payment of operating and capital costs of the MTA and its subsidiaries, and MTA New York City Transit, and its subsidiary.
+[p060_c0012] _Master Page # 60 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 61
+
+### [p061_c0001] Staff Summary
+### [p061_c0002] Metropolitan Transportation Authority
+### [p061_c0003] Page 5 of 5
+### [p061_c0004] Inter-Agency Loans
+[p061_c0005] The Board is requested to authorize staff acting under Section 1266 (6-a) of the Public Authorities Law, to enter into inter-agency loan agreements among the MTA and its affiliates and subsidiaries. This authorization would allow the temporary movement of funds among agencies to meet cash flow requirements for operating or capital purposes resulting from a mismatch between the receipt of subsidies and other monies and cash flow needs. The statute requires that any such inter-agency loans be repaid no later than the end of the next succeeding calendar year.
+### [p061_c0006] Use of Stabilization Reserve: Provision for Prompt Payment of Contractual Obligations
+[p061_c0007] In 1996, the Board approved the establishment of a Stabilization Reserve, to be held by the MTA Treasurer (the "Treasurer"), to stabilize MTA Agencies' cash flow requirements. The fund consists of two accounts, the MTA New York City Transit Account (the "Transit Account") and the MTA Commuter Railroad Account (the "Commuter Railroad Account"). The Board is requested to authorize the use of any balances in such accounts, plus any amounts authorized to be transferred to such accounts, to meet the cash flow requirements of MTA New York City Transit, MTA Long Island Rail Road and MTA Metro-North Railroad, and to authorize MTA New York City Transit to pay to the Treasurer for deposit in the Transit Account such amounts as it deems necessary to accomplish the purpose thereof, consistent with this Plan; and the Treasurer to pay into the Commuter Railroad Account such amounts as are deemed necessary to accomplish the purpose thereof, consistent with this Plan. The Treasurer, upon request of MTA New York City Transit, shall pay to MTA New York City Transit such amounts as are necessary to meet cash flow requirements of MTA New York City Transit and shall transfer from the Commuter Railroad Account such amounts as are necessary to meet the cash flow requirements of MTA Long Island Rail Road and MTA Metro-North Railroad. The Treasurer shall also use such funds as from time to time may be necessary or convenient to timely make debt service payments on MTA bonds.
+[p061_c0008] _Master Page # 61 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 62
+
+### [p062_c0001] Attachment A METROPOLITAN TRANSPORTATION AUTHORITY November Financial Plan 2026 - 2029 MTA Consolidated Accrued Statement of Operations By Category ($ in millions)
+[p062_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenues Farebox Revenue $4,997 $5,226 $5,528 $5,617 $5,684 $5,699 Toll Revenue 2,572 2,585 2,767 2,795 2,813 2,825 Other Revenue 3,352 4,258 1,199 1,249 1,390 1,444 Capital and Other Reimbursements 0 0 0 0 0 0 Total Revenues $10,920 $12,069 $9,494 $9,661 $9,887 $9,969 Operating Expenses Labor: Payroll $6,075 $6,341 $6,684 $6,819 $6,962 $7,109 Overtime 1,107 1,217 926 909 915 928 Health and Welfare 1,719 1,831 2,051 2,196 2,348 2,517 OPEB Current Payments 856 883 970 1,049 1,136 1,229 Pension 1,421 1,593 1,708 1,754 1,773 1,793 Other Fringe Benefits 967 1,271 1,187 1,251 1,312 1,371 Reimbursable Overhead (553) (535) (557) (538) (538) (546) Total Labor Expenses $11,593 $12,601 $12,969 $13,441 $13,908 $14,401 Non-Labor: Electric Power $531 $653 $648 $656 $685 $714 Fuel 205 207 212 210 210 217 Insurance 8 32 33 32 48 62 Claims 1,160 441 440 452 465 473 Paratransit Service Contracts 617 761 874 949 1,000 1,057 Maintenance and Other Operating Contracts 1,000 1,094 1,097 1,104 1,100 1,119 Professional Services Contracts 655 851 890 866 817 810 Materials and Supplies 645 718 776 898 944 998 Other Business Expenses 304 303 326 332 360 359 Total Non-Labor Expenses $5,126 $5,061 $5,297 $5,500 $5,629 $5,809 Other Expense Adjustments: Other $14 $16 $14 $14 $14 $15 General Reserve 195 200 210 220 230 240 Total Other Expense Adjustments $209 $216 $224 $234 $244 $255 Total Expenses Before Non-Cash Liability Adjs. $16,928 $17,877 $18,489 $19,175 $19,782 $20,465 Depreciation $3,799 $3,934 $3,927 $3,956 $3,991 $4,039 GASB 49 Environmental Remediation 52 6 6 6 6 6 GASB 68 Pension Expense Adjustment (35) (28) (107) (41) (203) (205) GASB 75 OPEB Expense Adjustment 389 578 588 601 612 624 GASB 87 Lease Adjustment 39 40 39 37 36 34 GASB 96 SBITA Adjustment 2 18 22 22 22 21 GASB 101 Compensated Absences 0 11 11 11 11 12 Total Non-Cash Liability Adjustments $4,247 $4,559 $4,486 $4,591 $4,475 $4,531 Total Expenses After Non-Cash Liability Adjs. $21,175 $22,436 $22,975 $23,766 $24,256 $24,996 Conversion to Cash Basis: Non-Cash Liability Adjs. ($4,247) ($4,559) ($4,486) ($4,591) ($4,475) ($4,531) Debt Service 2,860 2,444 2,913 3,231 3,393 3,534 Total Expenses with Debt Service $19,788 $20,321 $21,402 $22,406 $23,175 $23,999 Dedicated Taxes & State and Local Subsidies $9,930 $10,432 $11,327 $11,687 $11,939 $11,741 Net Surplus/(Deficit) After Subsidies and Debt Service $1,062 $2,180 ($581) ($1,058) ($1,348) ($2,289) Conversion to Cash Basis: GASB Account $0 $0 $0 $0 $0 $0 Conversion to Cash Basis: All Other (1,062) (2,180) 304 277 350 1,079 Cash Balance Before Prior-Year Carryover $0 $0 ($277) ($781) ($998) ($1,210) Below the Line Adjustments $0 $0 $277 $621 $754 $905 Prior Year Carryover Balance 0 0 0 0 0 0 Net Cash Balance $0 $0 $0 ($160) ($243) ($306)
+```
+[p062_c0003] _Master Page # 62 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 63
+
+### [p063_c0001] Attachment A
+### [p063_c0002] METROPOLITAN TRANSPORTATION AUTHORITY November Financial Plan 2026 - 2029 Plan Adjustments ($ in millions)
+[p063_c0003]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Cash Balance Before Prior-Year Carryover $0 $0 ($277) ($781) ($998) ($1,210) Fare and Toll Increases: March 2027 (4% Fare and Toll Yield) 0 0 287 339 341 Subsidy Impact, March 2027 (4% Fare and Toll Yield) 0 0 (13) (10) (9) March 2029 (4% Fare and Toll Yield) 0 0 0 0 303 Subsidy Impact, March 2029 (4% Fare and Toll Yield) 0 0 0 0 (14) Subtotal: $0 $0 $274 $329 $621 MTA Initiatives: MTA Operating Efficiencies 0 75 150 200 250 MTA Re-estimates: Re-Timing of Penn Station Access 0 2 (3) 25 34 Other: FEMA COVID Reimbursement 0 200 200 200 0 TOTAL ADJUSTMENTS $0 $277 $621 $754 $905 Prior Year Carryover Balance 0 0 0 0 0 0 Net Cash Surplus/(Deficit) $0 $0 $0 ($160) ($243) ($306)
+```
+[p063_c0004] _Master Page # 63 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 64
+
+[p064_c0001] [THIS PAGE INTENTIONALLY LEFT BLANK]
+[p064_c0002] _Master Page # 64 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 65
+
+### [p065_c0001] II. Agencies' Staff Summaries 2026 Budget and 2026-2029 Financial Plan
+[p065_c0002] _Master Page # 65 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 66
+
+### [p066_c0001] Bridges and Tunnels
+[p066_c0002] _Master Page # 66 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 67
+
+### [p067_c0001] Staff Summary
+### [p067_c0002] Page 1 of 2
+[p067_c0003]
+
+```text
+Subject MTA B&T 2026 Budget and 2026-2029 Financial Plan Adoption Department Office of the Chief Financial Officer Department Head Name Jaibala Patel, Chief Financial Officer Department Head Signature Project Manager/Division Head Jacob Luce, OMB
+```
+[p067_c0004]
+
+```text
+Date December 8, 2025 Vendor Name Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p067_c0005]
+
+```text
+Board Action Order To Date Approval Info Other 1 B&T Comm. 12/15 X 2 Finance Comm. 12/15 X 3 Board 12/17 X
+```
+[p067_c0006]
+
+```text
+Internal Approvals Order Approval Order Approval 1 OMB JL 2 Financial Liaison 3 B&T President
+```
+### [p067_c0007] Purpose:
+[p067_c0008] To secure MTA Board adoption of the MTA Bridges and Tunnels' (B&T) 2025 November Forecast, 2026 Final Proposed Budget, and the Four-Year Financial Plan for 2026-2029.
+### [p067_c0009] Discussion:
+[p067_c0010] The 2026 Final Proposed Budget, which is consistent with information presented to the Board in November 2025, provides funding to maintain MTA Bridges and Tunnels' commitment to delivering safe, secure, and reliable transportation and first-class customer service. B&T projections do not include MTA consolidated below-the-line adjustments, which are presented as part of MTA consolidated materials. The 2026 Final Proposed Budget does include the estimated impacts of projected toll increases scheduled to be implemented in January 2026. Major Plan highlights include:
+### [p067_c0011] Public Safety Initiative
+- [p067_c0012] • MTA is phasing in MTAPD support for public safety functions at B&T facilities. • Initial implementation began in early 2025 at the Bronx-Whitestone and Throgs Neck Bridges. • In October 2025, the MTAPD began support for public safety functions at the Cross Bay, Marine Parkway and Henry Hudson Bridges. • Expansion will continue as needs arise.
+### [p067_c0013] Work Zone Speed Enforcement (WZSE) Program
+- [p067_c0014] • Deployment of speed-camera technology to deter speeding in active work zones. • Cameras issue violations when a vehicle exceeds the posted work-zone limit by 10 mph or more. • Enforcement applies only when crews are present and work is actively underway. • Clear advance signage will be installed leading up to each monitored work zone.
+### [p067_c0015] Weigh-in-Motion (WIM) Pilot – RFK Bridge
+- [p067_c0016] • Implementation of state-authorized WIM technology to protect critical infrastructure. • Sensors and cameras weigh vehicles in motion and capture identifying information, with signage notifying drivers of WIM monitoring. • Violations trigger penalties when gross vehicle weight exceeds legal limits by 10% or more, and/or axle weight exceeds limits by 20% or more, with vehicles violating both thresholds incurring separate penalties.
+[p067_c0017] _Master Page # 67 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 68
+
+### [p068_c0001] Staff Summary
+### [p068_c0002] Metropolitan Transportation Authority
+### [p068_c0003] Page 2 of 2
+### [p068_c0004] 2025 November Forecast- Baseline
+[p068_c0005] The 2025 November Forecast projects $2,615.2 million in non-reimbursable revenues, of which $2,584.7 million is from Toll Revenue. Total non-reimbursable expenses before depreciation and other post-employment benefits are projected to be $506.6 million, consisting of $231.3 million in labor expenses and $275.3 million in non-labor expenses. Total Support to Mass Transit is projected to be $1,624.4 million. Reimbursable revenue and expenses are both forecast at $31.0 million. Total end-of-year positions are budgeted at 996, including 924 non-reimbursable positions and 72 reimbursable positions.
+### [p068_c0006] 2026 Final Proposed Budget- Baseline
+[p068_c0007] The 2026 Final Proposed Budget projects nearly $2,812.0 million in non-reimbursable revenues, of which $2,767.4 million is from Toll Revenue. Total non-reimbursable expenses before depreciation and other post-employment benefits are projected to be $533.5 million, consisting of $244.1 million in labor expenses and $289.5 million in non-labor expenses. Total Support to Mass Transit is projected to be $1,660.9 million. Reimbursable revenue and expenses are both forecast at $31.1 million. Total end-of-year positions are currently budgeted at 939, including 867 non-reimbursable positions and 72 reimbursable positions.
+### [p068_c0008] Impact on Funding
+[p068_c0009] The 2025 November Forecast, the 2026 Final Proposed Budget, and the Four-Year Financial Plan 2026-2029, which are presented in the attached tables, are consistent with the proposed MTA Financial Plan.
+### [p068_c0010] Recommendation:
+[p068_c0011] It is recommended that the MTA Board adopt the 2025 November Forecast, the 2026 Final Proposed Budget, and the Four-Year Financial Plan for 2026-2029 for MTA Bridges and Tunnels.
+[p068_c0012] _Master Page # 68 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 69
+
+### [p069_c0001] MTA BRIDGES AND TUNNELS November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p069_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenue Toll Revenue $2,572,260 $2,584,730 $2,767,435 $2,794,851 $2,813,397 $2,825,431 Other Operating Revenue 26,536 25,352 43,290 48,007 47,973 48,177 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Investment Income 11,250 5,098 1,240 1,240 1,240 1,240 Total Revenues $2,610.046 $2,615.180 $2,811.966 $2,844.098 $2,862.610 $2,874.848 Operating Expense Labor: Payroll $108,792 $97,422 $101,749 $99,991 $91,951 $84,531 Overtime 30,974 29,732 27,597 24,713 18,946 13,672 Health and Welfare 28,640 25,932 31,355 32,451 32,103 32,066 OPEB Current Payments 34,830 34,830 36,850 38,987 41,248 43,641 Pension 34,019 36,545 38,359 38,705 35,673 30,600 Other Fringe Benefits 15,610 15,367 16,678 16,196 14,664 13,292 Reimbursable Overhead (6,938) (8,523) (8,523) (8,523) (8,523) (8,523) Total Labor Expenses $245.927 $231.304 $244.065 $242.519 $226.062 $209.279 Non-Labor: Electric Power $4,504 $4,994 $5,847 $6,036 $6,409 $6,630 Fuel 2,196 2,011 1,964 1,944 1,939 2,040 Insurance 12,736 14,042 14,006 12,954 13,789 14,151 Claims 0.070 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 155,437 160,852 165,807 167,946 170,189 173,010 Professional Services Contracts 21,384 31,309 40,000 43,422 43,814 44,531 Materials and Supplies 4,974 3,390 3,598 4,036 4,116 4,213 Other Business Expenses 63,322 58,705 58,234 58,195 58,215 58,239 Total Non-Labor Expenses $264.623 $275.305 $289.456 $294.533 $298.472 $302.815 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $510.550 $506.609 $533.521 $537.052 $524.533 $512.094 Depreciation $228,346 $233,920 $224,583 $228,828 $232,453 $236,849 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment (11,646) (15,045) (16,335) (16,825) (15,019) (11,050) GASB 75 OPEB Expense Adjustment 12,686 20,716 19,500 20,352 20,021 19,616 GASB 87 Lease Adjustment 7,488 5,616 5,616 5,616 5,616 5,616 GASB 96 SBITA Adjustment 0.108 0.002 0.002 0.002 0.002 0.002 GASB 101 Compensated Absences 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $236.981 $245.209 $233.366 $237.973 $243.072 $251.034 Total Expenses After Depreciation and GASB Adjs. $747.532 $751.818 $766.887 $775.026 $767.606 $763.128 Less: Depreciation $228,346 $233,920 $224,583 $228,828 $232,453 $236,849 GASB 68 Pension Expense Adj. (11,646) (15,045) (16,335) (16,825) (15,019) (11,050) GASB 75 OPEB Expense Adj 12,686 20,716 19,500 20,352 20,021 19,616 GASB 87 Lease Adjustment 7,488 5,616 5,616 5,616 5,616 5,616 GASB 96 SBITA Adjustment 0.108 0.002 0.002 0.002 0.002 0.002 Total Expenses $510.550 $506.609 $533.521 $537.052 $524.533 $512.094 Net Surplus/(Deficit) $2,099.496 $2,108.571 $2,278.444 $2,307.046 $2,338.077 $2,362.754
+```
+[p069_c0003] _Master Page # 69 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 70
+
+### [p070_c0001] MTA BRIDGES AND TUNNELS November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p070_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Reimbursable Operating Revenue Toll Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 16.350 30.958 31.101 31.225 31.335 31.335 Investment Income 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $16.350 $30.958 $31.101 $31.225 $31.335 $31.335 Operating Expense Labor: Payroll $5.414 $13.603 $13.684 $13.766 $13.832 $13.832 Overtime 0.853 1.039 1.060 1.060 1.060 1.060 Health and Welfare 1.114 2.816 2.831 2.846 2.862 2.862 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 1.429 3.424 3.443 3.462 3.481 3.481 Other Fringe Benefits 0.601 1.552 1.560 1.568 1.576 1.576 Reimbursable Overhead 6.938 8.523 8.523 8.523 8.523 8.523 Total Labor Expenses $16.350 $30.958 $31.101 $31.225 $31.335 $31.335 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $16.350 $30.958 $31.101 $31.225 $31.335 $31.335 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p070_c0003] _Master Page # 70 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 71
+
+### [p071_c0001] MTA BRIDGES AND TUNNELS November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p071_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Non-Reimbursable / Reimbursable Page 1 of 2 Operating Revenue Toll Revenue $2,572,260 $2,584,730 $2,767,435 $2,794,851 $2,813,397 $2,825,431 Other Operating Revenue 26,536 25,352 43,290 48,007 47,973 48,177 Capital and Other Reimbursements 16,350 30,958 31,101 31,225 31,335 31,335 Investment Income 11,250 5,098 1,240 1,240 1,240 1,240 Total Revenues $2,626,396 $2,646,138 $2,843,066 $2,875,324 $2,893,945 $2,906,183 Operating Expense Labor: Payroll $114,206 $111,026 $115,433 $113,757 $105,783 $98,363 Overtime 31,827 30,772 28,657 25,773 20,006 14,732 Health and Welfare 29,754 28,747 34,186 35,297 34,965 34,928 OPEB Current Payments 34,830 34,830 36,850 38,987 41,248 43,641 Pension 35,449 39,969 41,802 42,167 39,154 34,082 Other Fringe Benefits 16,211 16,919 18,238 17,764 16,240 14,868 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $262,277 $262,262 $275,166 $273,744 $257,396 $240,614 Non-Labor: Electric Power $4,504 $4,994 $5,847 $6,036 $6,409 $6,630 Fuel 2,196 2,011 1,964 1,944 1,939 2,040 Insurance 12,736 14,042 14,006 12,954 13,789 14,151 Claims 0.070 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 155,437 160,852 165,807 167,946 170,189 173,010 Professional Services Contracts 21,384 31,309 40,000 43,422 43,814 44,531 Materials and Supplies 4,974 3,390 3,598 4,036 4,116 4,213 Other Business Expenses 63,322 58,705 58,234 58,195 58,215 58,239 Total Non-Labor Expenses $264,623 $275,305 $289,456 $294,533 $298,472 $302,815 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $526,900 $537,567 $564,622 $568,278 $555,868 $543,429 Depreciation $228,346 $233,920 $224,583 $228,828 $232,453 $236,849 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment (11,646) (15,045) (16,335) (16,825) (15,019) (11,050) GASB 75 OPEB Expense Adjustment 12,686 20,716 19,500 20,352 20,021 19,616 GASB 87 Lease Adjustment 7,488 5,616 5,616 5,616 5,616 5,616 GASB 96 SBITA Adjustment 0.108 0.002 0.002 0.002 0.002 0.002 GASB 101 Compensated Absences 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $236,981 $245,209 $233,366 $237,973 $243,072 $251,034 Total Expenses After Depreciation and GASB Adjs. $763,881 $782,776 $797,988 $806,251 $798,941 $794,463 Less: Depreciation $228,346 $233,920 $224,583 $228,828 $232,453 $236,849 GASB 68 Pension Expense Adj. (11,646) (15,045) (16,335) (16,825) (15,019) (11,050) GASB 75 OPEB Expense Adj 12,686 20,716 19,500 20,352 20,021 19,616 GASB 87 Lease Adjustment 7,488 5,616 5,616 5,616 5,616 5,616 GASB 96 SBITA Adjustment 0.108 0.002 0.002 0.002 0.002 0.002 Total Expenses $526,900 $537,567 $564,622 $568,278 $555,868 $543,429 Net Surplus/(Deficit) $2,099,496 $2,108,571 $2,278,444 $2,307,046 $2,338,077 $2,362,754
+```
+[p071_c0003] _Master Page # 71 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 72
+
+### [p072_c0001] MTA BRIDGES AND TUNNELS November Financial Plan 2026 - 2029 Accrual Statement of Operations by Category ($ in millions)
+[p072_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Non-Reimbursable / Reimbursable Page 2 of 2 Net Surplus/(Deficit) $2,099.496 $2,108.571 $2,278.444 $2,307.046 $2,338.077 $2,362.754 Deductions from Income: Less: Capitalized Assets $8.580 $25.533 $23.799 $24.388 $24.893 $25.503 B&T Capital Reserves & Prepaid Exp. 3.432 0.000 0.000 0.000 0.000 0.000 GASB 45 Reserves 0.000 0.000 0.000 0.000 0.000 0.000 Adjusted Net Surplus/(Deficit) $2,087.484 $2,083.038 $2,254.645 $2,282.658 $2,313.183 $2,337.251 Less: Debt Service $653.559 $724.691 $807.006 $862.676 $953.503 $928.332 Less: Contribution to the Capital Program 0.000 0.000 0.000 0.000 0.000 0.000 Income Available for Distribution $1,433.925 $1,358.347 $1,447.639 $1,419.983 $1,359.680 $1,408.920 Distributable To: MTA - Investment Income $11.250 $5.098 $1.240 $1.240 $1.240 $1.240 MTA - Distributable Income 743.947 714.850 750.138 736.679 709.072 735.330 NYCT - Distributable Income 678.729 638.399 696.261 682.064 649.368 672.349 Total Distributable Income $1,433.925 $1,358.347 $1,447.639 $1,419.983 $1,359.680 $1,408.920 Actual Cash Transfers: MTA - Investment Income - Prior Year $12.369 $11.250 $5.098 $1.240 $1.240 $1.240 MTA - Cash Surplus Transfer 752.061 749.146 746.609 738.025 711.832 732.704 NYCT - Cash Surplus Transfer 688.833 665.510 690.475 683.483 652.638 670.051 Total Cash Transfers $1,453.263 $1,425.906 $1,442.182 $1,422.748 $1,365.710 $1,403.996 SUPPORT TO MASS TRANSIT: Total Revenue $2,626.396 $2,646.138 $2,843.066 $2,875.324 $2,893.945 $2,906.183 Total Expenses Before Non-Cash Liability Adjs. 526.900 537.567 564.622 568.278 555.868 543.429 Net Operating Income $2,099.496 $2,108.571 $2,278.444 $2,307.046 $2,338.077 $2,362.754 Deductions from Operating Income: B&T Debt Service $416.043 $458.611 $593.703 $647.349 $725.056 $696.485 Contribution to the Capital Program 0.000 0.000 0.000 0.000 0.000 0.000 Capitalized Assets 8.580 25.533 23.799 24.388 24.893 25.503 B&T Capital Reserves 3.432 0.000 0.000 0.000 0.000 0.000 GASB Reserves 0.000 0.000 0.000 0.000 0.000 0.000 Total Deductions from Operating Income $428.055 $484.144 $617.503 $671.737 $749.950 $721.988 Total Support to Mass Transit $1,671.440 $1,624.427 $1,660.942 $1,635.309 $1,588.127 $1,640.767
+```
+[p072_c0003] _Master Page # 72 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 73
+
+### [p073_c0001] MTA BRIDGES AND TUNNELS November Financial Plan 2026 - 2029 Traffic Volume (Utilization) and Toll Revenue (in millions)
+### [p073_c0002] TRAFFIC VOLUME
+[p073_c0003] Total Traffic Volume
+[p073_c0004]
+
+```text
+Actual November Forecast Final Proposed Budget 2024 2025 2026 2027 2028 2029
+```
+[p073_c0005]
+
+```text
+337.333 338.967 339.690 343.055 345.332 346.717
+```
+### [p073_c0006] TOLL REVENUE
+[p073_c0007] Toll Revenue
+[p073_c0008]
+
+```text
+$2,572.260 $2,584.730 $2,767.435 $2,794.851 $2,813.397 $2,825.431
+```
+[p073_c0009] _Master Page # 73 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 74
+
+### [p074_c0001] MTA BRIDGES & TUNNELS November Financial Plan 2026-2029 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-time/Full-time Equivalents
+[p074_c0002]
+
+```text
+FUNCTION/DEPARTMENT Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Administration Executive 15 17 20 20 20 20 Law (1) 5 5 5 5 5 5 CFO (2) 10 12 12 12 12 12 Administration 26 26 26 26 26 26 EEO 0 0 0 0 0 0 Total Administration 56 60 63 63 63 63 Operations ITS & Tolling 69 63 66 66 66 66 Operations (Non-Security) 27 54 54 54 54 54 Total Operations 96 117 120 120 120 120 Maintenance Maintenance 212 205 205 205 205 205 Operations - Maintainers 150 183 183 183 183 183 Total Maintenance 362 388 388 388 388 388 Engineering/Capital Engineering & Construction 93 97 97 97 97 97 Health & Safety 7 9 9 9 9 9 Law (1) 4 6 6 6 6 6 Planning & Budget Capital 6 6 6 6 6 6 Total Engineering/Capital 110 118 118 118 118 118 Public Safety Operations (Security) 307 268 205 205 110 39 Internal Security - Operations 32 45 45 45 45 45 Total Public Safety 339 313 250 250 155 84 Total Positions 963 996 939 939 844 773 Non-Reimbursable 904 924 867 867 772 701 Reimbursable 59 72 72 72 72 72 Total Full-Time 963 996 939 939 844 773 Total Full-Time Equivalents 0 0 0 0 0 0
+```
+[p074_c0003] (1) Includes Legal and Procurement staff.
+[p074_c0004] (2) Includes Controller and Operating Budget staff
+[p074_c0005] (3) Includes Human Resources and Administration staff.
+[p074_c0006] _Master Page # 74 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 75
+
+### [p075_c0001] MTA BRIDGES AND TUNNELS November Financial Plan 2026 - 2029 Total Positions By Function and Occupational Group
+[p075_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Administration Managers/Supervisors 15 20 21 21 21 21 Professional/Technical/Clerical 41 40 42 42 42 42 Operational Hourlies 0 0 0 0 0 0 Total Administration Headcount 56 60 63 63 63 63 Operations Managers/Supervisors 24 62 63 63 63 63 Professional/Technical/Clerical 72 55 57 57 57 57 Operational Hourlies (1) 0 0 0 0 0 0 Total Operations Headcount 96 117 120 120 120 120 Maintenance Managers/Supervisors 21 27 27 27 27 27 Professional/Technical/Clerical 20 11 11 11 11 11 Operational Hourlies (2) 321 350 350 350 350 350 Total Maintenance Headcount 362 388 388 388 388 388 Engineering / Capital Managers/Supervisors 19 23 23 23 23 23 Professional/Technical/Clerical 91 95 95 95 95 95 Operational Hourlies 0 0 0 0 0 0 Total Engineering Headcount 110 118 118 118 118 118 Public Safety Managers/Supervisors 102 98 77 77 42 36 Professional/Technical/Clerical 30 36 36 36 36 36 Operational Hourlies (3) 207 179 137 137 77 12 Total Public Safety Headcount 339 313 250 250 155 84 Total Positions Managers/Supervisors 181 230 211 211 176 170 Professional/Technical/ Clerical 254 237 241 241 241 241 Operational Hourlies 528 529 487 487 427 362 Total Positions 963 996 939 939 844 773
+```
+[p075_c0003] (1) Represents Bridge and Tunnel Officers. These positions are paid annually, not hourly.
+[p075_c0004] (2) Represents maintenance personnel. These positions are paid annually, not hourly.
+[p075_c0005] (3) Represents Bridge and Tunnel Officers performing public safety. These positions are paid annually, not hourly.
+[p075_c0006] _Master Page # 75 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 76
+
+[p076_c0001] [THIS PAGE INTENTIONALLY LEFT BLANK]
+[p076_c0002] _Master Page # 76 of 237 - MTA Board Meeting 12/17/2025_
+[p076_c0003] _140_
+
+## Page 77
+
+### [p077_c0001] Construction & Development
+[p077_c0002] _Master Page # 77 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 78
+
+### [p078_c0001] Staff Summary
+### [p078_c0002] Metropolitan Transportation Authority
+### [p078_c0003] Page 1 of 2
+[p078_c0004]
+
+```text
+Subject MTA C&D 2026 Budget and 2026-2029 Financial Plan Adoption Department Office of the Chief Financial Officer Department Head Name Jaibala Patel, Chief Financial Officer Department Head Signature Project Manager/Division Head Jacob Luce, OMB
+```
+[p078_c0005]
+
+```text
+Date December 8, 2025 Vendor Name Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p078_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 CP Comm. 12/15 X 2 Finance Comm. 12/15 X 3 Board 12/17 X
+```
+[p078_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 OMB 1 2 C&D - SVP of Financial Operations 2 3 C&D President 3
+```
+### [p078_c0008] Purpose:
+[p078_c0009] To secure MTA Board adoption of the MTA Construction & Development (C&D) 2025 November Forecast, 2026 Final Proposed Budget, and the Four-Year Financial Plan for 2026-2029.
+### [p078_c0010] Discussion:
+[p078_c0011] The 2026 Final Proposed Budget, which is consistent with the information presented to the Board in November 2025, provides funding to maintain MTA Construction & Development (MTA C&D) commitment to rebuild, improve, and expand the MTA's extensive network of subways, buses, commuter railroads, bridges, and tunnels infrastructure. MTA C&D identifies, prioritizes, develops, and builds capital infrastructure projects needed to renew and enhance the MTA's extensive assets. MTA C&D ensures the continued performance, modernization, and long-term reliability of the regional transit system. The organization's budgeted headcount directly supports the execution of the MTA Capital Program through essential functions, including project delivery, engineering, planning, development, operations, and contract management. These staff provide technical expertise, oversight, and strategic guidance needed to advance systemwide capital projects, with associated labor costs reimbursed through capital programs, interagency chargebacks, and third-party funding arrangements.
+[p078_c0012] The Financial Plan reflects work associated with the MTA Capital Program and various third-party or pass-through activities, including digital advertising, broadband and wireless expansion, and multiple real estate and development projects such as 60 Wall Street, Quay Street, Westbury Phase II, Harlem River Lift Bridge Transferable Development Rights (TDRs), and other Transit-Oriented Development (TOD) initiatives. MTA C&D projections do not include the estimated impacts of MTA consolidated below-the-line adjustments, which are presented as part of MTA consolidated materials.
+### [p078_c0013] 2025 November Forecast – Baseline
+[p078_c0014] The 2025 November Forecast projects a balanced financial position for MTA C&D. Reimbursable expenses before depreciation total $187.7 million, consisting of $150.9 million in labor and $36.8 million in non-labor. All reimbursable expenses are fully offset by corresponding Capital and Other Reimbursements, resulting in a baseline cash deficit of $0.0 million. Non-reimbursable labor and non-labor expenses total $3.73 million before depreciation and are fully offset through inter-agency chargebacks, yielding a net-zero baseline.
+[p078_c0015] The 2025 forecasted headcount is 805 positions, inclusive of the approved increase of 50 additional roles. Of this total, 16 positions are non-reimbursable and support functions such as TOD, Planning, and Special Project
+[p078_c0016] _Master Page # 78 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 79
+
+### [p079_c0001] Staff Summary
+### [p079_c0002] Metropolitan Transportation Authority
+### [p079_c0003] Page 2 of 2
+[p079_c0004] Development. The remaining 789 positions are reimbursable and aligned to Administration, Engineering, and broader capital delivery departments, to ensure adequate staffing for ongoing capital work across the MTA system.
+### [p079_c0005] 2026 Final Proposed Budget – Baseline
+[p079_c0006] The 2026 Final Proposed Budget continues to reflect a balanced baseline. Reimbursable expenses total $199.5 million, including $169.2 million in labor and $30.3 million in non-labor, and are fully supported by corresponding third-party revenue and capital project funding recorded under Capital and Other Reimbursements, resulting in a baseline cash deficit of $0.0 million. Non-reimbursable expenses consist of $3.5 million in labor and $0.03 million in non-labor before depreciation, all of which are fully offset through inter-agency chargebacks.
+[p079_c0007] The 2026 proposed staffing plan remains stable, with a baseline headcount of 805 positions, including the previously approved increase of 50 roles necessary to support both reimbursable capital activities and non-reimbursable operational functions within MTA C&D.
+### [p079_c0008] Impact on Funding:
+[p079_c0009] The 2025 November Forecast, the 2026 Final Proposed Budget, and the Four-Year Financial Plan for 2026-2029, which are presented in the attached tables, are fully consistent with the proposed MTA Financial Plan.
+### [p079_c0010] Recommendation:
+[p079_c0011] It is recommended that the MTA Board adopt the 2025 November Forecast, the 2026 Final Proposed Budget and the Four-Year Financial Plan for 2026-2029 for MTA Construction & Development (C&D).
+[p079_c0012] _Master Page # 79 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 80
+
+### [p080_c0001] MTA CONSTRUCTION & DEVELOPMENT November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p080_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Operating Expense Labor: Payroll $3.602 $2.835 $2.409 $2.456 $2.494 $2.541 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.442 0.391 0.523 0.565 0.609 0.658 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.420 0.261 0.364 0.384 0.402 0.424 Other Fringe Benefits 0.247 0.219 0.227 0.233 0.237 0.243 Reimbursable Overhead 0.000 (3.706) (3.524) (3.637) (3.742) (3.865) Total Labor Expenses $4.711 $0.000 $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts (4.628) (0.031) (0.030) (0.031) (0.031) (0.031) Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.037 0.031 0.030 0.031 0.031 0.031 Total Non-Labor Expenses ($4.591) $0.000 $0.000 $0.000 $0.000 $0.000 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $0.120 $0.000 $0.000 $0.000 $0.000 $0.000 Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 101 Compensated Absences 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses $0.120 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) ($0.120) $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p080_c0003] _Master Page # 80 of 237 - MTA Board Meeting 12/17/2025_
+[p080_c0004] _113_
+
+## Page 81
+
+### [p081_c0001] MTA CONSTRUCTION & DEVELOPMENT November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p081_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 129.505 187.664 199.514 210.997 211.535 217.298 Total Revenues $129.505 $187.664 $199.514 $210.997 $211.535 $217.298 Operating Expense Labor: Payroll $82.226 $111.957 $113.328 $115.550 $117.321 $119.535 Overtime 0.005 0.000 0.000 0.000 0.000 0.000 Health and Welfare 9.710 16.516 24.616 26.566 28.618 30.940 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 7.222 9.999 16.987 17.881 18.736 19.740 Other Fringe Benefits 5.981 8.720 10.712 10.964 11.185 11.445 Reimbursable Overhead 0.000 3.706 3.524 3.637 3.742 3.865 Total Labor Expenses $105.143 $150.899 $169.166 $174.598 $179.601 $185.525 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.001 0.006 0.006 0.006 0.006 0.006 Insurance 0.003 0.042 0.046 0.051 0.057 0.063 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 3.538 4.515 4.549 4.687 4.830 4.978 Professional Services Contracts 19.591 29.978 23.516 29.697 25.059 24.714 Materials and Supplies 0.002 0.095 0.046 0.047 0.047 0.048 Other Business Expenses 1.226 2.130 2.184 1.911 1.934 1.964 Total Non-Labor Expenses $24.362 $36.766 $30.347 $36.399 $31.933 $31.773 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $129.505 $187.664 $199.514 $210.997 $211.535 $217.298 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p081_c0003] _Master Page # 81 of 237 - MTA Board Meeting 12/17/2025_
+[p081_c0004] _114_
+
+## Page 82
+
+### [p082_c0001] MTA CONSTRUCTION & DEVELOPMENT November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p082_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 129.505 187.664 199.514 210.997 211.535 217.298 Total Revenues $129.505 $187.664 $199.514 $210.997 $211.535 $217.298 Operating Expense Labor: Payroll $85.828 $114.793 $115.737 $118.006 $119.815 $122.076 Overtime 0.005 0.000 0.000 0.000 0.000 0.000 Health and Welfare 10.152 16.907 25.139 27.131 29.226 31.598 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 7.642 10.259 17.351 18.264 19.138 20.164 Other Fringe Benefits 6.227 8.940 10.939 11.196 11.422 11.688 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $109.854 $150.899 $169.166 $174.598 $179.601 $185.525 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.001 0.006 0.006 0.006 0.006 0.006 Insurance 0.003 0.042 0.046 0.051 0.057 0.063 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 3.538 4.515 4.549 4.687 4.830 4.978 Professional Services Contracts 14.963 29.947 23.486 29.667 25.028 24.683 Materials and Supplies 0.002 0.095 0.046 0.047 0.047 0.048 Other Business Expenses 1.264 2.161 2.214 1.941 1.965 1.995 Total Non-Labor Expenses $19.771 $36.766 $30.347 $36.399 $31.933 $31.773 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $129.625 $187.664 $199.514 $210.997 $211.535 $217.298 Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 101 Compensated Absences 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses $129.625 $187.664 $199.514 $210.997 $211.535 $217.298 Net Surplus/(Deficit) ($0.120) $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p082_c0003] _Master Page # 82 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 83
+
+### [p083_c0001] MTA CONSTRUCTION & DEVELOPMENT
+### [p083_c0002] November Financial Plan 2026 - 2029
+### [p083_c0003] Cash Receipts and Expenditures
+[p083_c0004] ($ in millions)
+[p083_c0005]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 18.940 187.664 199.514 210.997 211.535 217.298 Total Receipts $18.940 $187.664 $199.514 $210.997 $211.535 $217.298 Expenditures Labor: Payroll $95.698 $114.793 $115.737 $118.006 $119.815 $122.076 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 12.958 16.907 25.139 27.131 29.226 31.598 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 1.875 10.259 17.351 18.264 19.138 20.164 Other Fringe Benefits 6.776 8.940 10.939 11.196 11.422 11.688 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $117.307 $150.899 $169.166 $174.598 $179.601 $185.525 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.001 0.006 0.006 0.006 0.006 0.006 Insurance 0.003 0.042 0.046 0.051 0.057 0.063 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.249 4.515 4.549 4.687 4.830 4.978 Professional Services Contracts 20.920 29.947 23.486 29.667 25.028 24.683 Materials and Supplies 0.002 0.095 0.046 0.047 0.047 0.048 Other Business Expenses 1.102 2.161 2.214 1.941 1.965 1.995 Total Non-Labor Expenditures $22.277 $36.766 $30.347 $36.399 $31.933 $31.773 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $139.584 $187.664 $199.514 $210.997 $211.535 $217.298 Net Cash Balance ($120.644) $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p083_c0006] _Master Page # 83 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 84
+
+### [p084_c0001] MTA CONSTRUCTION & DEVELOPMENT
+### [p084_c0002] November Financial Plan 2026 - 2029
+### [p084_c0003] Cash Conversion (Cash Flow Adjustments)
+[p084_c0004] ($ in millions)
+[p084_c0005]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Cash Flow Adjustments Receipts Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements (110.565) 0.000 0.000 0.000 0.000 0.000 Total Receipts ($110.565) $0.000 $0.000 $0.000 $0.000 $0.000 Expenditures Labor: Payroll ($9.870) $0.000 $0.000 $0.000 $0.000 $0.000 Overtime 0.005 0.000 0.000 0.000 0.000 0.000 Health and Welfare (2.806) 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 5.767 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits (0.549) 0.000 0.000 0.000 0.000 0.000 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures ($7.453) $0.000 $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 3.289 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts (5.957) 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.162 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenditures ($2.506) $0.000 $0.000 $0.000 $0.000 $0.000 Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures ($9.959) $0.000 $0.000 $0.000 $0.000 $0.000 Total Cash Conversion Adjustments before Depreciation ($120.524) $0.000 $0.000 $0.000 $0.000 $0.000 Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 101 Compensated Absences 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Cash Conversion Adjustments ($120.524) $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p084_c0006] _Master Page # 84 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 85
+
+### [p085_c0001] MTA CONSTRUCTION & DEVELOPMENT November Financial Plan 2026-2029 Total Positions by Function and Department Non-Reimbursable/ Reimbursable and Full-Time Positions/Full-Time Equivalents
+[p085_c0002]
+
+```text
+Function/Department 2024 Actual 2025 November Forecast 2026 Final Proposed Budget 2027 2028 2029 Non-Reimbursable Capital Program Management Dir. Of Facilities and Support Office Services Transit Oriented Development 15 Real Estate Operations Deputy CDO, Planning 2 2 2 2 2 2 Spec. Project Develop/Planning Transit Advertising & Media 11 10 10 10 10 10 GCT Development Total Non-Reimbursable Administatic 28 12 12 12 12 12 Non-Reimbursable Engineering/Capital Transit Oriented Development 4 4 4 4 4 Transit Advertising & Media Total Non-Reimbursable Engineering - 4 4 4 4 4 Total Non-Reimbursable Baseline 28 16 16 16 16 16 Reimbursable Administration MTA C&D 385 455 455 455 455 455 Engineering/Capital MTA C&D 356 334 334 334 334 334 East Side Access 5 Security Program Second Avenue Subway 13 Lower Manhattan Projects 7 Line Extension OMNY 13 Penn Station Access 6 LIRR 3rd Track Canarsie Line Reconstruction LIRR Concourse Train Hall 1 Total Engineering/Capital 394 334 334 334 334 334 Total Baseline Positions 807 805 805 805 805 805 Non-Reimbursable 28 16 16 16 16 16 Reimbursable 779 789 789 789 789 789 Total Full-Time 807 805 805 805 805 805 Total Full-Time Equivalents 807 805 805 805 805 805
+```
+[p085_c0003] _Master Page # 85 of 237 - MTA Board Meeting 12/17/2025_
+[p085_c0004] _11-19_
+
+## Page 86
+
+### [p086_c0001] MTA CONSTRUCTION & DEVELOPMENT November Financial Plan 2026 - 2029 Total Positions By Function and Occupational Group
+[p086_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Administration Managers/Supervisors 370 451 451 451 451 451 Professional/Technical/Clerical 43 10 10 10 10 10 Operational Hourlies 0 6 6 6 6 6 Total Administration Headcount 413 467 467 467 467 467 Operations Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Operations Headcount 0 0 0 0 0 0 Maintenance Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Maintenance Headcount 0 0 0 0 0 0 Engineering / Capital Managers/Supervisors 0 253 253 253 253 253 Professional/Technical/Clerical 394 70 70 70 70 70 Operational Hourlies 0 15 15 15 15 15 Total Engineering Headcount 394 338 338 338 338 338 Public Safety Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Public Safety Headcount 0 0 0 0 0 0 Total Positions Managers/Supervisors 370 704 704 704 704 704 Professional/Technical/ Clerical 437 80 80 80 80 80 Operational Hourlies 0 21 21 21 21 21 Total Positions 807 805 805 805 805 805
+```
+[p086_c0003] _Master Page # 86 of 237 - MTA Board Meeting 12/17/2025_
+[p086_c0004] _119_
+
+## Page 87
+
+[p087_c0001] [THIS PAGE INTENTIONALLY LEFT BLANK]
+[p087_c0002] _Master Page # 87 of 237 - MTA Board Meeting 12/17/2025_
+[p087_c0003] _120_
+
+## Page 88
+
+### [p088_c0001] Long Island Rail Road
+[p088_c0002] _Master Page # 88 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 89
+
+### [p089_c0001] Staff Summary
+### [p089_c0002] Page 1 of 2
+[p089_c0003]
+
+```text
+Subject MTA LIRR 2026 Budget and 2026-2029 Financial Plan Adoption Department Office of the Chief Financial Officer Department Head Name Jaibala Patel, Chief Financial Officer Department Head Signature Project Manager/Division Head Jacob Luce, OMB
+```
+[p089_c0004]
+
+```text
+Date December 8, 2025 Vendor Name Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p089_c0005]
+
+```text
+Board Action Order To Date Approval Info Other 1 LIRR Comm. 12/15 X 2 Finance Comm. 12/15 X 3 Board 12/17 X
+```
+[p089_c0006]
+
+```text
+Internal Approvals Order Approval Order Approval 1 OMB 2 Financial Liaison 3 LIRR President
+```
+### [p089_c0007] Purpose:
+[p089_c0008] To secure MTA Board adoption of the MTA Long Island Rail Road's (LIRR) 2025 November Forecast, 2026 Final Proposed Budget, and the Four-Year Financial Plan for 2026-2029.
+### [p089_c0009] Discussion:
+[p089_c0010] The 2026 Final Proposed Budget, which is consistent with information presented to the Board in November 2025 provides funding to maintain the LIRR's commitment to delivering safe, secure, and reliable transportation and first-class customer service. The LIRR projections do not include MTA consolidated below-the-line adjustments including the estimated impacts of projected fare increases, which are presented as part of MTA consolidated materials.
+### [p089_c0011] 2025 November Forecast – Baseline
+[p089_c0012] The 2025 Non-Reimbursable November Forecast reflects revenues totaling $748.9 million, including $695.2 million in Farebox Revenue and $53.6 million in Other Operating Revenue. Total Operating Expense projections of $2,637.1 million consist of labor costs of $1,508.7 million, non-labor costs of $518.0 million and non-cash liability adjustments of $610.3 million. The cash budget incorporates $1,184.3 million in cash receipts and $2,280.3 million in cash expenditures, which results in a baseline cash requirement of $1,095.9 million. Total Reimbursable expense projections of $431.3 million are fully offset by capital reimbursements. Total end-of-year authorized positions are projected at 8,016 and include 6,882 Non-Reimbursable positions and 1,134 Reimbursable positions.
+### [p089_c0013] 2026 Final Proposed Budget – Baseline
+[p089_c0014] The 2026 Non-Reimbursable Final Proposed Budget reflects revenues totaling $770.4 million, including $722.9 million in Farebox Revenue and $47.5 million in Other Operating Revenue. Total Operating Expense projections of $2,744.1 million consist of labor costs of $1,594.6 million, non-labor costs of $572.2 million and non-cash liability adjustments of $577.3 million. The cash budget incorporates $1,192.4 million in cash receipts and $2,590.9 million in cash expenditures which results in a baseline cash requirement of $1,398.5 million. Total Reimbursable expense projections of $446.2 million are fully offset by capital reimbursements. Total end-of-year authorized positions are projected at 8,079 and include 7,116 Non-Reimbursable positions and 963 Reimbursable positions.
+[p089_c0015] _Master Page # 89 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 90
+
+### [p090_c0001] Staff Summary
+### [p090_c0002] Metropolitan Transportation Authority
+### [p090_c0003] Page 2 of 2
+### [p090_c0004] Impact on Funding
+[p090_c0005] The 2025 November Forecast, the 2026 Final Proposed Budget, and the Four-Year Financial Plan 2026–2029, which are presented in the attached tables, are consistent with the proposed MTA Financial Plan.
+### [p090_c0006] Recommendation:
+[p090_c0007] It is recommended that the MTA Board adopt the 2025 November Forecast, the 2026 Final Proposed Budget and the Four-Year Financial Plan for 2026–2029 for the MTA Long Island Rail Road.
+[p090_c0008] _Master Page # 90 of 237 - MTA Board Meeting 12/17/2025_
+[p090_c0009] _122_
+
+## Page 91
+
+### [p091_c0001] MTA LONG ISLAND RAIL ROAD November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p091_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenue Farebox Revenue $649.735 $695.229 $722.904 $722.904 $724.936 $728.061 Other Operating Revenue 46.482 53.636 47.468 47.874 48.834 49.820 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $696.217 $748.866 $770.372 $770.778 $773.770 $777.881 Operating Expense Labor: Payroll $677.955 $725.322 $764.565 $797.476 $811.165 $831.848 Overtime 160.343 170.208 168.337 172.468 171.264 173.470 Health and Welfare 165.803 175.887 198.840 220.433 234.619 249.162 OPEB Current Payments 77.707 78.907 83.901 88.742 93.846 99.079 Pension 171.078 199.790 209.652 213.039 210.867 211.925 Other Fringe Benefits 181.568 198.525 206.233 213.154 217.141 222.033 Reimbursable Overhead (50.880) (39.914) (36.953) (38.968) (39.429) (40.555) Total Labor Expenses $1,383.575 $1,508.725 $1,594.573 $1,666.345 $1,699.472 $1,746.962 Non-Labor: Electric Power $103.522 $123.460 $129.628 $124.746 $128.012 $132.582 Fuel 26.542 25.718 24.300 24.400 24.410 25.441 Insurance 28.113 30.390 35.848 35.978 38.184 38.876 Claims 18.780 3.911 3.937 3.937 3.937 4.016 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 104.717 118.415 121.666 130.393 155.783 154.238 Professional Services Contracts 68.004 53.140 51.528 50.476 51.514 51.674 Materials and Supplies 133.828 137.630 178.337 274.565 304.323 317.650 Other Business Expenses 23.677 25.366 26.961 27.092 27.022 27.374 Total Non-Labor Expenses $507.182 $518.030 $572.206 $671.588 $733.185 $751.851 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $1,890.757 $2,026.755 $2,166.779 $2,337.933 $2,432.657 $2,498.813 Depreciation $563.128 $569.538 $575.233 $580.985 $586.794 $592.662 GASB 49 Environmental Remediation 7.512 2.000 2.000 2.000 2.000 2.000 GASB 68 Pension Expense Adjustment 6.892 (1.670) (39.750) (0.190) (95.160) (96.520) GASB 75 OPEB Expense Adjustment (42.330) 35.000 35.700 36.414 37.142 37.885 GASB 87 Lease Adjustment (1.064) 2.528 (0.620) (0.620) (0.620) (0.620) GASB 96 SBITA Adjustment (3.645) (1.366) 0.600 0.600 0.600 0.600 GASB 101 Compensated Absences 0.000 4.272 4.149 4.244 4.341 4.440 Total Non-Cash Liability Adjustments $530.492 $610.302 $577.312 $623.433 $535.097 $540.447 Total Expenses $2,421.249 $2,637.057 $2,744.091 $2,961.366 $2,967.755 $3,039.260 Net Surplus/(Deficit) ($1,725.032) ($1,888.192) ($1,973.719) ($2,190.588) ($2,193.985) ($2,261.379) Cash Conversion Adjustments Depreciation $563.128 $569.538 $575.233 $580.985 $586.794 $592.662 Operating/Capital (9.530) (10.642) (24.167) (15.436) (14.934) (14.050) Other Cash Adjustments (1.274) 233.366 24.173 70.701 (33.332) (33.729) Total Cash Conversion Adjustments $552.324 $792.262 $575.239 $636.250 $538.528 $544.883 Net Cash Surplus/(Deficit) ($1,172.709) ($1,095.930) ($1,398.480) ($1,554.338) ($1,655.457) ($1,716.496)
+```
+[p091_c0003] _Master Page # 91 of 237 - MTA Board Meeting 12/17/2025_
+[p091_c0004] _123_
+
+## Page 92
+
+### [p092_c0001] MTA LONG ISLAND RAIL ROAD November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p092_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 468.396 431.314 446.243 453.619 453.257 461.655 Total Revenues $468.396 $431.314 $446.243 $453.619 $453.257 $461.655 Operating Expense Labor: Payroll $132.513 $137.429 $149.657 $157.822 $159.433 $162.796 Overtime 54.090 49.814 48.367 46.774 43.267 44.132 Health and Welfare 34.358 32.944 36.620 38.006 38.217 39.018 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 50.706 46.680 59.498 61.751 62.093 63.395 Other Fringe Benefits 36.026 33.987 37.447 38.865 39.081 39.900 Reimbursable Overhead 50.880 39.914 36.953 38.968 39.429 40.555 Total Labor Expenses $358.573 $340.767 $368.543 $382.186 $381.520 $389.796 Non-Labor: Electric Power $0.338 $0.649 $0.360 $0.360 $0.360 $0.360 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 7.502 10.056 8.743 9.262 9.342 9.526 Claims 0.100 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 45.486 34.440 20.068 20.156 20.364 20.604 Professional Services Contracts 6.799 3.706 0.963 0.778 0.794 0.810 Materials and Supplies 48.734 41.119 47.057 40.350 40.347 40.018 Other Business Expenses 0.864 0.577 0.508 0.527 0.530 0.541 Total Non-Labor Expenses $109.823 $90.547 $77.699 $71.433 $71.736 $71.859 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $468.396 $431.314 $446.243 $453.619 $453.257 $461.655 Net Surplus/(Deficit) $0.000 ($0.001) $0.000 $0.000 $0.000 $0.000
+```
+[p092_c0003] _Master Page # 92 of 237 - MTA Board Meeting 12/17/2025_
+[p092_c0004] _1124_
+
+## Page 93
+
+### [p093_c0001] MTA LONG ISLAND RAIL ROAD November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p093_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $649.735 $695.229 $722.904 $722.904 $724.936 $728.061 Other Operating Revenue 46.482 53.636 47.468 47.874 48.834 49.820 Capital and Other Reimbursements 468.396 431.314 446.243 453.619 453.257 461.655 Total Revenues $1,164.613 $1,180.179 $1,216.615 $1,224.397 $1,227.026 $1,239.536 Operating Expense Labor: Payroll $810.468 $862.751 $914.222 $955.298 $970.599 $994.644 Overtime 214.433 220.022 216.704 219.242 214.531 217.602 Health and Welfare 200.161 208.831 235.461 258.440 272.836 288.180 OPEB Current Payments 77.707 78.907 83.901 88.742 93.846 99.079 Pension 221.784 246.470 269.150 274.790 272.960 275.320 Other Fringe Benefits 217.595 232.512 243.680 252.019 256.221 261.933 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $1,742.148 $1,849.492 $1,963.117 $2,048.531 $2,080.993 $2,136.758 Non-Labor: Electric Power $103.859 $124.109 $129.988 $125.106 $128.372 $132.942 Fuel 26.542 25.718 24.300 24.400 24.410 25.441 Insurance 35.614 40.446 44.591 45.240 47.526 48.403 Claims 18.880 3.911 3.937 3.937 3.937 4.016 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 150.203 152.855 141.734 150.549 176.147 174.842 Professional Services Contracts 74.804 56.845 52.491 51.255 52.308 52.484 Materials and Supplies 182.562 178.749 225.395 314.915 344.670 357.668 Other Business Expenses 24.541 25.943 27.468 27.619 27.551 27.915 Total Non-Labor Expenses $617.005 $608.577 $649.905 $743.021 $804.921 $823.711 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $2,359.153 $2,458.069 $2,613.022 $2,791.552 $2,885.914 $2,960.468 Depreciation $563.128 $569.538 $575.233 $580.985 $586.794 $592.662 GASB 49 Environmental Remediation 7.512 2.000 2.000 2.000 2.000 2.000 GASB 68 Pension Expense Adjustment 6.892 (1.670) (39.750) (0.190) (95.160) (96.520) GASB 75 OPEB Expense Adjustment (42.330) 35.000 35.700 36.414 37.142 37.885 GASB 87 Lease Adjustment (1.064) 2.529 (0.620) (0.620) (0.620) (0.620) GASB 96 SBITA Adjustment (3.645) (1.366) 0.600 0.600 0.600 0.600 GASB 101 Compensated Absences 0.000 4.272 4.149 4.244 4.341 4.440 Total Non-Cash Liability Adjustments $530.492 $610.303 $577.312 $623.433 $535.097 $540.447 Total Expenses $2,889.645 $3,068.372 $3,190.334 $3,414.985 $3,421.011 $3,500.915 Net Surplus/(Deficit) ($1,725.032) ($1,888.193) ($1,973.719) ($2,190.588) ($2,193.985) ($2,261.379) Cash Conversion Adjustments Depreciation $563.128 $569.538 $575.233 $580.985 $586.794 $592.662 Operating/Capital (9.530) (10.642) (24.167) (15.436) (14.934) (14.050) Other Cash Adjustments (1.274) 233.366 24.173 70.701 (33.332) (33.729) Total Cash Conversion Adjustments $552.324 $792.262 $575.239 $636.250 $538.528 $544.883 Net Cash Surplus/(Deficit) ($1,172.709) ($1,095.931) ($1,398.480) ($1,554.338) ($1,655.457) ($1,716.496)
+```
+[p093_c0003] _Master Page # 93 of 237 - MTA Board Meeting 12/17/2025_
+[p093_c0004] _125_
+
+## Page 94
+
+### [p094_c0001] MTA LONG ISLAND RAIL ROAD November Financial Plan 2026 - 2029 Cash Receipts and Expenditures ($ in millions)
+[p094_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Farebox Revenue $655,570 $690,686 $722,904 $722,904 $724,936 $728,061 Other Operating Revenue 96,674 54,141 47,983 48,399 49,371 50,358 Capital and Other Reimbursements 436,375 439,504 421,560 437,657 437,785 447,067 Total Receipts $1,188,620 $1,184,332 $1,192,448 $1,208,960 $1,212,092 $1,225,486 Expenditures Labor: Payroll $808,261 $887,081 $914,222 $955,298 $970,599 $994,644 Overtime 208,030 226,973 216,704 219,242 214,531 217,602 Health and Welfare 201,278 208,831 235,461 258,440 272,836 288,180 OPEB Current Payments 77,467 78,907 83,901 88,742 93,846 99,079 Pension 228,419 6,380 269,150 274,790 272,960 275,320 Other Fringe Benefits 231,439 234,973 232,680 241,019 245,221 250,933 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $1,754,894 $1,643,144 $1,952,117 $2,037,531 $2,069,993 $2,125,758 Non-Labor: Electric Power $112,231 $124,109 $129,988 $125,106 $128,372 $132,942 Fuel 26,607 25,983 24,300 24,400 24,410 25,441 Insurance 31,023 39,594 43,706 44,833 47,007 47,897 Claims 3,335 4,478 1,929 1,929 1,929 2,008 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 148,848 170,245 141,734 150,549 176,147 174,842 Professional Services Contracts 43,334 53,118 39,491 38,255 39,308 39,484 Materials and Supplies 211,939 190,371 227,373 310,187 349,869 362,696 Other Business Expenses 25,218 29,221 30,289 30,509 30,513 30,914 Total Non-Labor Expenditures $602,534 $637,120 $638,811 $725,767 $797,556 $816,224 Other Expenditure Adjustments: Other $3,900 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $3,900 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $2,361,328 $2,280,264 $2,590,927 $2,763,298 $2,867,549 $2,941,982 Net Cash Balance ($1,172,709) ($1,095,931) ($1,398,480) ($1,554,338) ($1,655,457) ($1,716,496) Cash Timing and Availability Adjustment 8,373 (0.000) (0.000) (0.000) (0.000) (0.000) Net Cash Balance after Cash Timing & Availability Adj ($1,164,336) ($1,095,931) ($1,398,480) ($1,554,338) ($1,655,457) ($1,716,496)
+```
+[p094_c0003] _Master Page # 94 of 237 - MTA Board Meeting 12/17/2025_
+[p094_c0004] _1126_
+
+## Page 95
+
+### [p095_c0001] MTA LONG ISLAND RAIL ROAD November Financial Plan 2026 - 2029 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p095_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Cash Flow Adjustments Receipts Farebox Revenue $5.835 ($4.543) $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 50.192 0.505 0.515 0.525 0.538 0.538 Capital and Other Reimbursements (32.021) 8.191 (24.682) (15.962) (15.472) (14.588) Total Receipts $24.007 $4.153 ($24.167) ($15.436) ($14.934) ($14.050) Expenditures Labor: Payroll $2.207 ($24.330) $0.000 $0.000 $0.000 $0.000 Overtime 6.403 (6.951) 0.000 0.000 0.000 0.000 Health and Welfare (1.117) 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.240 0.000 0.000 0.000 0.000 0.000 Pension (6.635) 240.090 0.000 0.000 0.000 0.000 Other Fringe Benefits (13.844) (2.461) 11.000 11.000 11.000 11.000 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures ($12.746) $206.348 $11.000 $11.000 $11.000 $11.000 Non-Labor: Electric Power ($8.371) $0.000 0.000 $0.000 $0.000 $0.000 Fuel (0.065) (0.265) 0.000 0.000 0.000 0.000 Insurance 4.592 0.852 0.885 0.407 0.519 0.506 Claims 15.545 (0.567) 2.008 2.008 2.008 2.008 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 1.355 (17.390) 0.000 0.000 0.000 0.000 Professional Services Contracts 31.470 3.727 13.000 13.000 13.000 13.000 Materials and Supplies (29.377) (11.622) (1.979) 4.728 (5.200) (5.028) Other Business Expenses (0.677) (3.279) (2.820) (2.890) (2.962) (2.999) Total Non-Labor Expenditures $14.471 ($28.543) $11.094 $17.254 $7.365 $7.486 Other Expenditure Adjustments: Other Expense Adjustments ($3.900) $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments ($3.900) $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures ($2.175) $177.805 $22.094 $28.254 $18.365 $18.486 Total Cash Conversion Adjustments before Depreciation $21.831 $181.957 ($2.073) $12.817 $3.431 $4.436 Depreciation $563.128 $569.538 $575.233 $580.985 $586.794 $592.662 GASB 49 Environmental Remediation 7.512 2.000 2.000 2.000 2.000 2.000 GASB 68 Pension Expense Adjustment 6.892 (1.670) (39.750) (0.190) (95.160) (96.520) GASB 75 OPEB Expense Adjustment (42.330) 35.000 35.700 36.414 37.142 37.885 GASB 87 Lease Adjustment (1.064) 2.530 (0.620) (0.620) (0.620) (0.620) GASB 96 SBITA Adjustment (3.645) (1.366) 0.600 0.600 0.600 0.600 GASB 101 Compensated Absences 0.000 4.272 4.149 4.244 4.341 4.440 Total Non-Cash Liability Adjustments $530.492 $610.304 $577.312 $623.433 $535.097 $540.447 Cash Timing and Availability Adjustment 8.373 0.000 0.000 0.000 0.000 0.000 Total Cash Conversion Adjustments $560.697 $792.262 $575.239 $636.250 $538.528 $544.883
+```
+[p095_c0003] _Master Page # 95 of 237 - MTA Board Meeting 12/17/2025_
+[p095_c0004] _127_
+
+## Page 96
+
+### [p096_c0001] MTA LONG ISLAND RAIL ROAD November Financial Plan 2026 - 2029 Ridership (Utilization) and Revenue (in millions)
+### [p096_c0002] RIDERSHIP
+[p096_c0003]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Total Commutation 28.207 31.556 31.569 31.581 31.557 31.768 Total Non-Commutation 47.304 50.298 50.211 50.211 50.352 50.569 Total Ridership 75.510 81.853 81.780 81.792 81.909 82.338
+```
+### [p096_c0004] FAREBOX REVENUE
+[p096_c0005]
+
+```text
+Baseline Total Farebox Revenue $649.735 $695.229 $722.904 $722.904 $724.936 $728.061
+```
+[p096_c0006] _Master Page # 96 of 237 - MTA Board Meeting 12/17/2025_
+[p096_c0007] _128_
+
+## Page 97
+
+### [p097_c0001] MTA LONG ISLAND RAIL ROAD November Financial Plan 2026-2029 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time/Full Time Equivalents
+[p097_c0002]
+
+```text
+FUNCTION/DEPARTMENT 2024 Actual 2025 November Forecast 2026 Final Proposed Budget 2027 2028 2029 Administration President 11 15 19 19 19 19 Market Dev & Mailroom 13 14 14 14 14 14 Security 12 14 13 13 13 13 Safety 54 55 55 55 55 55 Training 69 72 73 69 69 69 Rolling Stock Programs 10 17 17 17 17 17 VP Ops Support & Org Res 3 4 4 4 4 4 Communications 56 54 54 54 54 54 Labor Relations 13 13 13 13 13 13 Diversity 2 2 2 2 2 2 Legal 27 25 25 25 25 25 Procurement & Matl Mgmt 141 144 145 145 145 145 Finance 53 58 58 58 58 58 People 36 37 37 37 37 37 Security Pass Office 3 3 3 3 3 3 Total Administration 503 527 532 528 528 528 Operations Service Planning 31 28 31 25 25 22 Sr Vice President - Operations 3 4 4 4 4 4 Enterprise Asset Management 7 9 9 9 9 9 Transportation 2,356 2,264 2,266 2,355 2,354 2,357 Stations 544 538 536 536 536 536 Total Operations 2,941 2,843 2,846 2,929 2,928 2,928 Maintenance Sr. Vice President - Engineering 1 1 1 1 1 1 Maintenance of Way 2,124 2,249 2,209 2,282 2,282 2,282 Maintenance of Equipment 2,170 2,170 2,264 2,381 2,381 2,381 Railroad Program Support 44 52 52 52 52 52 Total Maintenance 4,339 4,472 4,526 4,716 4,716 4,716 Engineering/Capital Special Projects 32 46 47 47 47 47 Construction & Development 84 128 128 128 128 128 Total Engineering/Capital 116 174 175 175 175 175 Total Baseline Positions 7,899 8,016 8,079 8,348 8,347 8,347 Non-Reimbursable 6,903 6,882 7,116 7,357 7,357 7,357 Reimbursable 996 1,134 963 991 990 990 Total Full-Time 7,899 8,016 8,079 8,348 8,347 8,347 Total Full-Time Equivalents - - - - - -
+```
+[p097_c0003] _Master Page # 97 of 237 - MTA Board Meeting 12/17/2025_
+[p097_c0004] _1129_
+
+## Page 98
+
+### [p098_c0001] MTA LONG ISLAND RAIL ROAD November Financial Plan 2026 - 2029 Total Positions By Function and Occupational Group
+[p098_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Administration Managers/Supervisors 250 259 262 258 258 258 Professional/Technical/Clerical 144 155 157 157 157 157 Operational Hourlies 109 113 113 113 113 113 Total Administration Headcount 503 527 532 528 528 528 Operations Managers/Supervisors 378 395 396 391 390 390 Professional/Technical/Clerical 150 148 150 149 149 146 Operational Hourlies 2,413 2,300 2,300 2,389 2,389 2,392 Total Operations Headcount 2,941 2,843 2,846 2,929 2,928 2,928 Maintenance Managers/Supervisors 922 1,048 1,058 1,041 1,021 1,016 Professional/Technical/Clerical 220 250 260 288 288 288 Operational Hourlies 3,197 3,174 3,208 3,387 3,407 3,412 Total Maintenance Headcount 4,339 4,472 4,526 4,716 4,716 4,716 Engineering / Capital Managers/Supervisors 104 118 119 119 119 119 Professional/Technical/Clerical 12 56 56 56 56 56 Operational Hourlies 0 0 0 0 0 0 Total Engineering Headcount 116 174 175 175 175 175 Public Safety Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Public Safety Headcount 0 0 0 0 0 0 Total Positions Managers/Supervisors 1,654 1,820 1,835 1,809 1,788 1,783 Professional/Technical/ Clerical 526 609 623 650 650 647 Operational Hourlies 5,719 5,587 5,621 5,889 5,909 5,917 Total Positions 7,899 8,016 8,079 8,348 8,347 8,347
+```
+[p098_c0003] _Master Page # 98 of 237 - MTA Board Meeting 12/17/2025_
+[p098_c0004] _150_
+
+## Page 99
+
+### [p099_c0001] MTA Grand Central Madison Operating Company
+[p099_c0002] _Master Page # 99 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 100
+
+### [p100_c0001] Staff Summary
+### [p100_c0002] Metropolitan Transportation Authority
+### [p100_c0003] Page 1 of 2
+[p100_c0004]
+
+```text
+Subject MTA GCMOC 2026 Budget and 2026-2029 Financial Plan Adoption Department Office of the Chief Financial Officer Department Head Name Jaibala Patel, Chief Financial Officer Department Head Signature Project Manager/Division Head Jacob Luce, OMB
+```
+[p100_c0005]
+
+```text
+Date December 8, 2025 Vendor Name Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p100_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Comm. 12/15 X 2 Board 12/17 X
+```
+[p100_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 OMB 2 Financial Liaison 3 GCMOC Chief
+```
+### [p100_c0008] Purpose:
+[p100_c0009] To secure MTA Board adoption of the MTA Grand Central Madison Operating Company (GCMOC) 2025 November Forecast, 2026 Final Proposed Budget, and the Four-Year Financial Plan for 2026–2029.
+### [p100_c0010] Discussion:
+[p100_c0011] The 2026 Final Proposed Budget which is consistent with information presented to the Board in November 2025 provides funding to maintain Grand Central Madison, a train concourse below Grand Central Terminal (GCT) servicing the LIRR-operated section of GCT.
+[p100_c0012] This entity is responsible for maintenance of the facility and concourse which includes cleaning the concourse and public-facing areas (excluding platform level), elevator/escalator maintenance, HVAC, chiller and steam plants, pump stations, sewers, tunnel drainage, fire/life safety systems, power systems, access control and intrusion detection systems, etc. Other operating and financial aspects of Grand Central Madison are captured in the LIRR, Metro-North and MTA HQ financial plans.
+### [p100_c0013] 2025 November Forecast – Baseline
+[p100_c0014] The 2025 Non-Reimbursable November Forecast reflects Other Operating Revenues totaling $0.5 million. Total Operating Expense projections of $302.4 million consist of labor costs of $1.9 million, non-labor costs of $92.9 million and non-cash liability adjustments of $207.6 million. The cash budget incorporates $(0.4) million in cash receipts and $124.0 million in cash expenditures which results in a baseline cash requirement of $124.4 million. Total end-of-year authorized positions are projected at 10 positions.
+### [p100_c0015] 2026 Final Proposed Budget – Baseline
+[p100_c0016] The 2026 Non-Reimbursable Final Proposed Budget reflects Other Operating Revenues totaling $0.1 million. Total Operating Expense projections of $303.2 million consist of labor costs of $2.3 million, non-labor costs of $100.4 million and non-cash liability adjustments of $200.6 million. The cash budget incorporates $0.1 million in cash receipts and $102.6 million in cash expenditures which results in a baseline cash requirement of $102.6 million. Total end-of-year authorized positions are projected at 10 positions.
+[p100_c0017] _Master Page # 100 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 101
+
+### [p101_c0001] Staff Summary
+### [p101_c0002] Page 2 of 2
+### [p101_c0003] Impact on Funding
+[p101_c0004] The 2025 November Forecast, the 2026 Final Proposed Budget, and the Four-Year Financial Plan 2026–2029 which are presented in the attached tables are consistent with the proposed MTA Financial Plan.
+### [p101_c0005] Recommendation:
+[p101_c0006] It is recommended that the MTA Board adopt the 2025 November Forecast, the 2026 Final Proposed Budget and the Four-Year Financial Plan for 2026–2029 for the Grand Central Madison Operating Company.
+[p101_c0007] _Master Page # 101 of 237 - MTA Board Meeting 12/17/2025_
+[p101_c0008] _132_
+
+## Page 102
+
+### [p102_c0001] MTA GRAND CENTRAL MADISON OPERATING COMPANY November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p102_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.583 0.502 0.055 0.867 1.315 1.693 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $0.583 $0.502 $0.055 $0.867 $1.315 $1.693 Operating Expense Labor: Payroll $0.705 $1.228 $1.682 $1.715 $1.743 $1.785 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.087 0.276 0.290 0.306 0.323 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.486 0.567 0.314 0.324 0.334 0.345 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $1.191 $1.882 $2.271 $2.330 $2.383 $2.452 Non-Labor: Electric Power $3.797 $5.027 $5.562 $5.197 $5.526 $5.801 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 90.393 86.395 93.432 91.490 92.135 92.508 Professional Services Contracts 3.820 1.472 1.350 0.859 0.861 0.863 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.001 0.013 0.010 0.010 0.010 0.011 Total Non-Labor Expenses $98.011 $92.907 $100.354 $97.556 $98.532 $99.184 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $99.202 $94.788 $102.626 $99.886 $100.915 $101.636 Depreciation $209.437 $207.639 $200.608 $200.608 $200.608 $200.608 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 101 Compensated Absences 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $209.437 $207.639 $200.608 $200.608 $200.608 $200.608 Total Expenses $308.638 $302.427 $303.234 $300.494 $301.523 $302.244 Net Surplus/(Deficit) ($308.055) ($301.925) ($303.179) ($299.627) ($300.208) ($300.551)
+```
+[p102_c0003] _Master Page # 102 of 237 - MTA Board Meeting 12/17/2025_
+[p102_c0004] _133_
+
+## Page 103
+
+### [p103_c0001] MTA GRAND CENTRAL MADISON OPERATING COMPANY November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p103_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Operating Expense Labor: Payroll $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p103_c0003] _Master Page # 103 of 237 - MTA Board Meeting 12/17/2025_
+[p103_c0004] _134_
+
+## Page 104
+
+### [p104_c0001] MTA GRAND CENTRAL MADISON OPERATING COMPANY November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p104_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.583 0.502 0.055 0.867 1.315 1.693 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $0.583 $0.502 $0.055 $0.867 $1.315 $1.693 Operating Expense Labor: Payroll $0.705 $1.228 $1.682 $1.715 $1.743 $1.785 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.087 0.276 0.290 0.306 0.323 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.486 0.567 0.314 0.324 0.334 0.345 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $1.191 $1.882 $2.271 $2.330 $2.383 $2.452 Non-Labor: Electric Power $3.797 $5.027 $5.562 $5.197 $5.526 $5.801 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 90.393 86.395 93.432 91.490 92.135 92.508 Professional Services Contracts 3.820 1.472 1.350 0.859 0.861 0.863 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.001 0.013 0.010 0.010 0.010 0.011 Total Non-Labor Expenses $98.011 $92.907 $100.354 $97.556 $98.532 $99.184 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $99.202 $94.788 $102.626 $99.886 $100.915 $101.636 Depreciation $209.437 $207.639 $200.608 $200.608 $200.608 $200.608 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 101 Compensated Absences 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $209.437 $207.639 $200.608 $200.608 $200.608 $200.608 Total Expenses $308.638 $302.427 $303.234 $300.494 $301.523 $302.244 Net Surplus/(Deficit) ($308.055) ($301.925) ($303.179) ($299.627) ($300.208) ($300.551)
+```
+[p104_c0003] _Master Page # 104 of 237 - MTA Board Meeting 12/17/2025_
+[p104_c0004] _135_
+
+## Page 105
+
+### [p105_c0001] MTA GRAND CENTRAL MADISON OPERATING COMPANY November Financial Plan 2026 - 2029 Cash Receipts and Expenditures ($ in millions)
+[p105_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.820 (0.440) 0.055 0.867 1.315 1.693 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Receipts $0.820 ($0.440) $0.055 $0.867 $1.315 $1.693 Expenditures Labor: Payroll $0.252 $1.699 $1.682 $1.715 $1.743 $1.785 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.087 0.276 0.290 0.306 0.323 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 0.850 0.314 0.324 0.334 0.345 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $0.252 $2.636 $2.271 $2.330 $2.383 $2.452 Non-Labor: Electric Power $3.631 $5.027 $5.562 $5.197 $5.526 $5.801 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 87.394 107.848 93.432 91.490 92.135 92.508 Professional Services Contracts 3.177 3.703 1.350 0.859 0.861 0.863 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses (1.780) 4.749 0.010 0.010 0.010 0.011 Total Non-Labor Expenditures $92.423 $121.327 $100.354 $97.556 $98.532 $99.184 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $92.675 $123.962 $102.626 $99.886 $100.915 $101.636 Net Cash Balance ($91.855) ($124.402) ($102.571) ($99.019) ($99.599) ($99.943)
+```
+[p105_c0003] _Master Page # 105 of 237 - MTA Board Meeting 12/17/2025_
+[p105_c0004] _136_
+
+## Page 106
+
+### [p106_c0001] MTA GRAND CENTRAL MADISON OPERATING COMPANY
+### [p106_c0002] November Financial Plan 2026 - 2029
+### [p106_c0003] Cash Conversion (Cash Flow Adjustments)
+[p106_c0004] ($ in millions)
+[p106_c0005]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Cash Flow Adjustments Receipts Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.236 0.942 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Receipts $0.236 ($0.942) $0.000 $0.000 $0.000 $0.000 Expenditures Labor: Payroll $0.452 ($0.471) $0.000 $0.000 $0.000 $0.000 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.486 (0.283) 0.000 0.000 0.000 0.000 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $0.938 ($0.754) $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.165 $0.000 0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 2.999 (21.453) 0.000 0.000 0.000 0.000 Professional Services Contracts 0.643 (2.231) 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 1.781 (4.736) 0.000 0.000 0.000 0.000 Total Non-Labor Expenditures $5.588 ($28.420) $0.000 $0.000 $0.000 $0.000 Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $6.527 ($29.174) $0.000 $0.000 $0.000 $0.000 Total Cash Conversion Adjustments before Depreciation $6.763 ($30.116) $0.000 $0.000 $0.000 $0.000 Depreciation $209.437 $207.639 $200.608 $200.608 $200.608 $200.608 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 101 Compensated Absences 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $209.437 $207.639 $200.608 $200.608 $200.608 $200.608 Total Cash Conversion Adjustments $216.200 $177.523 $200.608 $200.608 $200.608 $200.608
+```
+[p106_c0006] _Master Page # 106 of 237 - MTA Board Meeting 12/17/2025_
+[p106_c0007] _137_
+
+## Page 107
+
+### [p107_c0001] MTA Grand Central Madison Operating Company November Financial Plan 2026-2029 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time/Full Time Equivalents
+[p107_c0002]
+
+```text
+FUNCTION/DEPARTMENT 2024 Actual 2025 November Forecast 2026 Final Proposed Budget 2027 2028 2029 Administration President 5 10 10 10 10 10 Total Administration 5 10 10 10 10 10 Total Baseline Positions 5 10 10 10 10 10
+```
+[p107_c0003] _Master Page # 107 of 237 - MTA Board Meeting 12/17/2025_
+[p107_c0004] _138_
+
+## Page 108
+
+### [p108_c0001] MTA GRAND CENTRAL MADISON OPERATING COMPANY November Financial Plan 2026 - 2029 Total Positions By Function and Occupational Group
+[p108_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Administration Managers/Supervisors 5 7 7 7 7 7 Professional/Technical/Clerical 0 3 3 3 3 3 Operational Hourlies 0 0 0 0 0 0 Total Administration Headcount 5 10 10 10 10 10 Operations Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Operations Headcount 0 0 0 0 0 0 Maintenance Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Maintenance Headcount 0 0 0 0 0 0 Engineering / Capital Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Engineering Headcount 0 0 0 0 0 0 Public Safety Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Public Safety Headcount 0 0 0 0 0 0 Total Positions Managers/Supervisors 5 7 7 7 7 7 Professional/Technical/ Clerical 0 3 3 3 3 3 Operational Hourlies 0 0 0 0 0 0 Total Positions 5 10 10 10 10 10
+```
+[p108_c0003] _Master Page # 108 of 237 - MTA Board Meeting 12/17/2025_
+[p108_c0004] _139_
+
+## Page 109
+
+[p109_c0001] [THIS PAGE INTENTIONALLY LEFT BLANK]
+[p109_c0002] _Master Page # 109 of 237 - MTA Board Meeting 12/17/2025_
+[p109_c0003] _140_
+
+## Page 110
+
+### [p110_c0001] Metro-North Railroad
+[p110_c0002] _Master Page # 110 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 111
+
+### [p111_c0001] Staff Summary
+### [p111_c0002] Metropolitan Transportation Authority
+### [p111_c0003] Page 1 of 2
+[p111_c0004]
+
+```text
+Subject MTA MNR 2026 Budget and 2026-2029 Financial Plan Adoption Department Office of the Chief Financial Officer Department Head Name Jaibala Patel, Chief Financial Officer Department Head Signature Project Manager/Division Head Jacob Luce, OMB
+```
+[p111_c0005]
+
+```text
+Date December 8, 2025 Vendor Name Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p111_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 MNR Comm. 12/15 X 2 Finance Comm. 12/15 X 3 Board 12/17 X
+```
+[p111_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 OMB 2 Financial Liaison (JL) 3 MNR President
+```
+### [p111_c0008] Purpose:
+[p111_c0009] To secure MTA Board adoption of the MTA Metro-North Railroad's (Metro-North's) 2025 November Forecast, 2026 Final Proposed Budget, and the Four-Year Financial Plan for 2026-2029.
+### [p111_c0010] Discussion:
+[p111_c0011] The 2025 Final Proposed Budget, which is consistent with information presented to the Board in November 2025, provides funding to maintain Metro-North's commitment to delivering safe, secure, reliable transportation and first-class customer service. The Metro-North projections do not include MTA consolidated below-the-line adjustments, which are presented as part of MTA consolidated materials.
+### [p111_c0012] 2025 November Forecast-Baseline
+[p111_c0013] The 2025 Non-Reimbursable Forecast reflects revenues totaling $725.9 million, including $661.2 million of farebox revenue and $64.8 million in other operating revenue. Total operating expense projections of $2,082.9 million consist of labor costs of $1,153.9 million, non-labor costs of $488.5 million, and non-cash liability adjustments of $440.6 million. After including cash adjustments of $428.3 million, the projected net cash deficit is $928.7 million, of which $681.7 million represents the MTA share and $246.9 million the CDOT share. Total reimbursable expense projections of $342.3 million are fully offset by capital reimbursements. Total end-of-year positions are projected at 6,895 and include 6,153 non-reimbursable positions and 742 reimbursable positions.
+### [p111_c0014] 2026 Final Proposed Budget-Baseline
+[p111_c0015] The 2026 Final Proposed Non-Reimbursable Budget reflects revenues totaling $735.8 million. Farebox revenue of $685.9 million includes CDOT and East of Hudson farebox increases and other operating revenue of $49.9 million. Total operating expense projections of $2,152.8 million consist of labor costs of $1,176.4 million, non-labor costs of $537.5 million and non-cash liability adjustments of $438.9 million. After including cash adjustments of $359.2 million, the projected net cash deficit is $1,057.8 million, of which $796.2 million represents the MTA share and $261.6 million the CDOT share. Total reimbursable expense projections of $407.5 million are fully offset by capital reimbursements. Total end-of-year positions are projected at 6,988 and include 6,271 non-reimbursable positions and 717 reimbursable positions.
+[p111_c0016] _Master Page # 111 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 112
+
+### [p112_c0001] Staff Summary
+### [p112_c0002] Metropolitan Transportation Authority
+### [p112_c0003] Page 2 of 2
+### [p112_c0004] Impact on Funding
+[p112_c0005] The 2025 November Forecast, the 2026 Final Proposed Budget and the Four-Year Financial Plan for 2026-2029, which are presented in the attached tables, are consistent with the proposed MTA Financial Plan.
+### [p112_c0006] Recommendation:
+[p112_c0007] It is recommended that the MTA Board adopt the 2025 November Forecast, the 2026 Final Proposed Budget, and the Four-Year Financial Plan for 2026-2029 for MTA Metro-North Railroad.
+[p112_c0008] _Master Page # 112 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 113
+
+### [p113_c0001] MTA METRO-NORTH RAILROAD November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p113_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenue Farebox Revenue $625,670 $661,156 $685,876 $692,811 $698,113 $709,105 Other Operating Revenue 47,597 64,774 49,912 53,629 57,353 59,694 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $673,267 $725,930 $735,788 $746,440 $755,466 $768,799 Operating Expense Labor: Payroll $638,801 $669,656 $683,927 $711,092 $731,641 $753,851 Overtime 100,881 89,242 91,039 94,505 96,377 99,124 Health and Welfare 147,048 150,684 163,159 177,889 192,176 207,169 OPEB Current Payments 53,526 54,000 55,000 56,000 57,000 58,000 Pension 125,130 136,416 149,467 149,033 145,744 145,636 Other Fringe Benefits 149,231 166,863 161,310 167,098 171,417 176,155 Reimbursable Overhead (81,605) (113,000) (127,535) (120,954) (124,046) (126,820) Total Labor Expenses $1,133,012 $1,153,861 $1,176,368 $1,234,663 $1,270,310 $1,313,115 Non-Labor: Electric Power $81,532 $97,629 $103,022 $103,377 $106,339 $111,578 Fuel 23,506 23,614 22,406 22,130 22,108 23,314 Insurance 21,293 32,062 35,163 36,571 37,976 39,788 Claims 6,008 4,127 1,000 1,000 1,000 1,000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 140,193 136,061 148,679 148,191 143,381 154,912 Professional Services Contracts 55,566 56,315 57,931 61,035 62,202 64,695 Materials and Supplies 117,692 110,116 137,289 182,488 184,165 198,120 Other Business Expenses 30,691 28,572 32,058 31,338 50,063 50,336 Total Non-Labor Expenses $476,480 $488,497 $537,547 $586,130 $607,233 $643,742 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $1,609,492 $1,642,357 $1,713,915 $1,820,793 $1,877,542 $1,956,857 Depreciation $351,615 $340,386 $354,245 $372,885 $397,938 $436,659 GASB 49 Environmental Remediation 2,496 4,000 4,000 4,000 4,000 4,000 GASB 68 Pension Expense Adjustment 25,058 26,210 3,860 31,810 (32,540) (32,900) GASB 75 OPEB Expense Adjustment 2,548 61,620 63,977 66,434 68,889 71,430 GASB 87 Lease Adjustment 3,850 2,946 4,862 2,627 1,664 (0,197) GASB 96 SBITA Adjustment (3,652) 0.444 2,834 2,754 2,592 2,370 GASB 101 Compensated Absences 0.000 4,972 5,103 5,205 5,309 5,415 Total Non-Cash Liability Adjustments $381,915 $440,578 $438,881 $485,713 $447,853 $486,777 Total Expenses $1,991,407 $2,082,935 $2,152,796 $2,306,506 $2,325,395 $2,443,634 Net Surplus/(Deficit) ($1,318,140) ($1,357,005) ($1,417,008) ($1,560,066) ($1,569,930) ($1,674,835) Cash Conversion Adjustments Depreciation $351,615 $340,386 $354,245 $372,885 $397,938 $436,659 Operating/Capital (30,314) (35,950) (50,550) (28,689) (28,065) (25,119) Other Cash Adjustments (19,207) 123,905 55,480 104,160 44,041 47,792 Total Cash Conversion Adjustments $302,094 $428,341 $359,175 $448,355 $413,915 $459,332 Net Cash Surplus/(Deficit) ($1,016,046) ($928,664) ($1,057,834) ($1,111,710) ($1,156,015) ($1,215,503)
+```
+[p113_c0003] _Master Page # 113 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 114
+
+### [p114_c0001] MTA METRO-NORTH RAILROAD November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p114_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 MNR - MTA 135.592 163.184 175.971 154.921 181.454 175.086 MNR - CDOT 105.555 160.115 214.322 137.426 131.869 122.801 MNR - Other 20.772 18.957 17.200 19.926 14.750 22.343 Capital and Other Reimbursements 261.919 342.256 407.493 312.274 328.073 320.230 Total Revenues $261.919 $342.256 $407.493 $312.274 $328.073 $320.230 Operating Expense Labor: Payroll $47.268 $62.500 $71.885 $67.112 $69.960 $70.206 Overtime 33.400 37.982 40.820 40.790 40.628 42.541 Health and Welfare 21.928 25.624 29.132 27.855 28.659 29.098 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 12.579 15.392 17.320 16.472 16.950 17.217 Other Fringe Benefits 13.796 17.426 19.688 18.756 19.309 19.617 Reimbursable Overhead 80.156 111.997 127.535 120.954 124.046 126.820 Total Labor Expenses $209.127 $270.920 $306.379 $291.939 $299.552 $305.499 Non-Labor: Electric Power $0.218 $0.056 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.837 0.856 1.089 1.097 1.224 1.369 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 16.562 23.722 12.101 7.355 6.975 7.298 Professional Services Contracts 5.588 26.158 73.324 8.112 13.668 0.000 Materials and Supplies 29.253 20.390 14.600 3.771 6.654 6.064 Other Business Expenses 0.334 0.156 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $52.792 $71.336 $101.114 $20.335 $28.521 $14.731 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $261.919 $342.256 $407.493 $312.274 $328.073 $320.230 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p114_c0003] _Master Page # 114 of 237 - MTA Board Meeting 12/17/2025_
+[p114_c0004] _114_
+
+## Page 115
+
+### [p115_c0001] MTA METRO-NORTH RAILROAD November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p115_c0002]
+
+```text
+Actual November Final 2024 Forecast Proposed 2026 2027 2028 2025 2026 2029 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $625,670 $661,156 $685,876 $692,811 $698,113 $709,105 Other Operating Revenue 47,597 64,774 49,912 53,629 57,353 59,694 MNR - MTA 135,592 163,184 175,971 154,921 181,454 175,086 MNR - CDOT 105,555 160,115 214,322 137,426 131,869 122,801 MNR - Other 20,772 18,957 17,200 19,926 14,750 22,343 Capital and Other Reimbursements 261,919 342,256 407,493 312,274 328,073 320,230 Total Revenues $935,186 $1,068,186 $1,143,281 $1,058,714 $1,083,539 $1,089,029 Operating Expense Labor: Payroll $686,069 $732,156 $755,812 $778,204 $801,601 $824,057 Overtime 134,281 127,224 131,858 135,295 137,005 141,665 Health and Welfare 168,976 176,308 192,292 205,744 220,835 236,267 OPEB Current Payments 53,526 54,000 55,000 56,000 57,000 58,000 Pension 137,709 151,808 166,787 165,504 162,695 162,853 Other Fringe Benefits 163,027 184,288 180,998 185,855 190,727 195,772 Reimbursable Overhead (1,449) (1,004) 0.000 0.000 0.000 0.000 Total Labor Expenses $1,342,139 $1,424,780 $1,482,747 $1,526,601 $1,569,862 $1,618,614 Non-Labor: Electric Power $81,750 $97,685 $103,022 $103,377 $106,339 $111,578 Fuel 23,506 23,614 22,406 22,130 22,108 23,314 Insurance 22,130 32,918 36,252 37,667 39,200 41,157 Claims 6,008 4,127 1,000 1,000 1,000 1,000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 156,755 159,783 160,781 155,546 150,356 162,210 Professional Services Contracts 61,154 82,473 131,255 69,147 75,870 64,695 Materials and Supplies 146,945 130,506 151,889 186,259 190,818 204,184 Other Business Expenses 31,025 28,728 32,058 31,338 50,063 50,336 Total Non-Labor Expenses $529,272 $559,833 $638,661 $606,465 $635,754 $658,473 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $1,871,411 $1,984,613 $2,121,408 $2,133,066 $2,205,616 $2,277,087 Depreciation $351,615 $340,386 $354,245 $372,885 $397,938 $436,659 GASB 49 Environmental Remediation 2,496 4,000 4,000 4,000 4,000 4,000 GASB 68 Pension Expense Adjustment 25,058 26,210 3,860 31,810 (32,540) (32,900) GASB 75 OPEB Expense Adjustment 2,548 61,620 63,977 66,434 68,889 71,430 GASB 87 Lease Adjustment 3,850 2,946 4,862 2,627 1,664 (0,197) GASB 96 SBITA Adjustment (3,652) 0.444 2,834 2,754 2,592 2,370 GASB 101 Compensated Absences 0.000 4,972 5,103 5,205 5,309 5,415 Total Non-Cash Liability Adjustments $381,915 $440,578 $438,881 $485,713 $447,853 $486,777 Total Expenses $2,253,326 $2,425,191 $2,560,289 $2,618,779 $2,653,468 $2,763,864 Net Surplus/(Deficit) ($1,318,140) ($1,357,005) ($1,417,008) ($1,560,066) ($1,569,930) ($1,674,835) Cash Conversion Adjustments Depreciation $351,615 $340,386 $354,245 $372,885 $397,938 $436,659 Operating/Capital (30,314) (35,950) (50,550) (28,689) (28,065) (25,119) Other Cash Adjustments (19,207) 123,905 55,480 104,160 44,041 47,792 Total Cash Conversion Adjustments $302,094 $428,341 $359,175 $448,355 $413,915 $459,332 Net Cash Surplus/(Deficit) ($1,016,046) ($928,664) ($1,057,834) ($1,111,710) ($1,156,015) ($1,215,503)
+```
+[p115_c0003] _Master Page # 115 of 237 - MTA Board Meeting 12/17/2025_
+[p115_c0004] _145_
+
+## Page 116
+
+### [p116_c0001] MTA METRO-NORTH RAILROAD November Financial Plan 2026 - 2029 Cash Receipts and Expenditures ($ in millions)
+[p116_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Farebox Revenue $607.325 $637.920 $661.327 $667.760 $672.581 $682.966 Other Operating Revenue 147.858 109.924 95.080 99.896 86.131 89.204 MNR - MTA 128.317 163.184 175.971 154.921 181.454 175.086 MNR - CDOT 77.363 188.759 214.322 137.426 131.869 122.801 MNR - Other 24.169 18.957 17.200 19.926 14.750 22.343 Capital and Other Reimbursements 229.849 370.900 407.493 312.274 328.073 320.230 Total Receipts $985.032 $1,118.744 $1,163.900 $1,079.929 $1,086.786 $1,092.400 Expenditures Labor: Payroll $664.679 $787.031 $759.954 $768.709 $790.941 $811.394 Overtime 128.946 144.480 134.953 136.909 136.807 140.490 Health and Welfare 187.963 194.785 210.058 224.286 239.255 255.212 OPEB Current Payments 53.593 54.000 55.000 56.000 57.000 58.000 Pension 145.349 3.910 167.060 165.910 162.760 162.920 Other Fringe Benefits 162.892 193.774 176.843 178.607 183.064 187.598 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $1,343.422 $1,377.980 $1,503.868 $1,530.421 $1,569.827 $1,615.614 Non-Labor: Electric Power $84.201 $100.053 $103.587 $103.582 $106.544 $111.783 Fuel 24.489 23.614 22.406 22.130 22.108 23.314 Insurance 39.402 35.794 37.328 38.065 40.754 41.983 Claims 1.180 9.894 1.146 1.146 1.146 1.146 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 189.292 200.704 183.349 161.648 158.113 173.934 Professional Services Contracts 81.564 119.800 137.794 73.557 75.870 64.695 Materials and Supplies 178.787 120.485 160.606 190.885 193.070 206.120 Other Business Expenses 58.741 59.084 71.649 70.207 75.368 69.313 Total Non-Labor Expenditures $657.656 $669.428 $717.866 $661.219 $672.974 $692.289 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $2,001.078 $2,047.408 $2,221.734 $2,191.640 $2,242.801 $2,307.903 Net Cash Balance ($1,016.046) ($928.664) ($1,057.834) ($1,111.710) ($1,156.015) ($1,215.503) Subsidies MTA $752.287 $681.736 $796.188 $836.413 $866.699 $906.361 CDOT 283.407 246.927 261.645 275.297 289.316 309.142 Total Subsidies $1,035.694 $928.664 $1,057.834 $1,111.710 $1,156.015 $1,215.503
+```
+[p116_c0003] _Master Page # 116 of 237 - MTA Board Meeting 12/17/2025_
+[p116_c0004] _116_
+
+## Page 117
+
+### [p117_c0001] MTA METRO-NORTH RAILROAD November Financial Plan 2026 - 2029 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p117_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Cash Flow Adjustments Receipts Farebox Revenue ($18.345) ($23.236) ($24.549) ($25.052) ($25.531) ($26.140) Other Operating Revenue 100.261 45.150 45.168 46.267 28.778 29.510 MNR - MTA (7.275) 0.000 0.000 0.000 0.000 0.000 MNR - CDOT (28.192) 28.644 0.000 0.000 0.000 0.000 MNR - Other 3.397 0.000 0.000 0.000 0.000 0.000 Total Capital and Other Reimbursements ($32.070) $28.644 $0.000 $0.000 $0.000 $0.000 Total Receipts $49.846 $50.558 $20.619 $21.216 $3.247 $3.371 Expenditures Labor: Payroll $21.390 ($54.875) ($4.143) $9.495 $10.660 $12.664 Overtime 5.335 (17.256) (3.095) (1.614) 0.198 1.175 Health and Welfare (18.987) (18.477) (17.766) (18.542) (18.420) (18.945) OPEB Current Payments (0.067) 0.000 0.000 0.000 0.000 0.000 Pension (7.640) 147.898 (0.273) (0.406) (0.065) (0.067) Other Fringe Benefits 0.135 (9.486) 4.155 7.248 7.663 8.173 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead (1.449) (1.004) 0.000 0.000 0.000 0.000 Total Labor Expenditures ($1.283) $46.801 ($21.121) ($3.819) $0.035 $3.000 Non-Labor: Electric Power ($2.451) ($2.368) (0.566) ($0.205) ($0.205) ($0.205) Fuel (0.983) 0.000 0.000 0.000 0.000 0.000 Insurance (17.272) (2.876) (1.077) (0.397) (1.554) (0.826) Claims 4.828 (5.767) (0.146) (0.146) (0.146) (0.146) Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts (32.537) (40.921) (22.568) (6.102) (7.757) (11.724) Professional Services Contracts (20.410) (37.327) (6.540) (4.410) 0.000 0.000 Materials and Supplies (31.842) 10.022 (8.717) (4.626) (2.252) (1.936) Other Business Expenses (27.716) (30.356) (39.591) (38.868) (25.305) (18.978) Total Non-Labor Expenditures ($128.384) ($109.595) ($79.205) ($54.755) ($37.220) ($33.815) Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures ($129.667) ($62.794) ($100.325) ($58.574) ($37.185) ($30.815) Total Cash Conversion Adjustments before Depreciation ($79.821) ($12.236) ($79.706) ($37.358) ($33.938) ($27.445) Depreciation $351.615 $340.386 $354.245 $372.885 $397.938 $436.659 GASB 49 Environmental Remediation 2.496 4.000 4.000 4.000 4.000 4.000 GASB 68 Pension Expense Adjustment 25.058 26.210 3.860 31.810 (32.540) (32.900) GASB 75 OPEB Expense Adjustment 2.548 61.620 63.977 66.434 68.889 71.430 GASB 87 Lease Adjustment 3.850 2.946 4.862 2.627 1.664 (0.197) GASB 96 SBITA Adjustment (3.652) 0.444 2.834 2.754 2.592 2.370 GASB 101 Compensated Absences 0.000 4.972 5.103 5.205 5.309 5.415 Total Non-Cash Liability Adjustments $381.915 $440.578 $438.881 $485.713 $447.853 $486.777 Total Cash Conversion Adjustments $302.094 $428.341 $359.175 $448.355 $413.915 $459.332
+```
+[p117_c0003] _Master Page # 117 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 118
+
+### [p118_c0001] MTA METRO-NORTH RAILROAD November Financial Plan 2026 - 2029 Ridership (Utilization) and Revenue (in millions)
+[p118_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 RIDERSHIP Harlem Line Ridership - Commutation 8.540 9.553 9.589 9.526 9.654 9.690 Harlem Line Ridership - Non-Commutation 11.901 12.277 12.306 12.306 12.340 12.393 Total Harlem Line 20.441 21.829 21.894 21.832 21.994 22.083 Hudson Line Ridership - Commutation 4.724 5.377 5.396 5.362 5.432 5.453 Hudson Line Ridership - Non-Commutation 9.055 9.291 9.321 9.321 9.348 9.388 Total Hudson Line 13.779 14.668 14.718 14.683 14.780 14.841 New Haven Line Ridership - Commutation 11.663 13.364 13.417 13.330 13.503 13.556 New Haven Line Ridership - Non-Commutation 20.411 20.765 20.867 20.867 20.908 20.998 Total New Haven Line 32.074 34.129 34.284 34.197 34.411 34.554 Penn Station Access Line Ridership – Commutation 0.000 0.000 0.000 0.000 0.150 0.600 Penn Station Access Line Ridership – Non-Commutation 0.000 0.000 0.000 0.000 0.279 1.115 Total Penn Station Access Line 0.000 0.000 0.000 0.000 0.429 1.715 Total Commutation Ridership 24.928 28.293 28.403 28.218 28.740 29.299 Total Non-Commutation Ridership 41.366 42.333 42.494 42.494 42.874 43.894 Total East of Hudson Ridership 66.294 70.626 70.896 70.712 71.614 73.193 West of Hudson Ridership 1.085 1.117 1.084 1.082 1.088 1.092 Total Ridership 67.379 71.743 71.980 71.795 72.702 74.285 FAREBOX REVENUE Harlem Line - Commutation Revenue 52.647 59.121 59.528 59.556 59.720 59.970 Harlem Line - Non-Commutation Revenue 114.546 116.705 118.062 118.015 118.341 118.837 Total Harlem Line Revenue $167.194 $175.826 $177.591 $177.572 $178.061 $178.807 Hudson Line - Commutation Revenue 35.069 39.947 41.698 41.620 41.735 41.913 Hudson Line - Non-Commutation Revenue 107.206 108.656 112.648 112.726 113.038 113.518 Total Hudson Line Revenue $142.275 $148.603 $154.346 $154.346 $154.774 $155.431 New Haven Line - Commutation Revenue 75.021 88.005 92.161 93.809 94.239 94.642 New Haven Line - Non-Commutation Revenue 230.953 237.211 250.025 255.331 256.574 257.671 Total New Haven Line Revenue $305.975 $325.216 $342.186 $349.140 $350.813 $352.313 Penn Station Access Line Ridership – Commutation 0.000 0.000 0.000 0.000 0.150 0.600 Penn Station Access Line Ridership – Non-Commutation 0.000 0.000 0.000 0.000 0.279 1.115 Total Penn Station Access Line $0.000 $0.000 $0.000 $0.000 0.429 1.715 Total Commutation Revenue $162.738 $187.073 $193.387 $194.986 $195.845 $197.125 Total Non-Commutation Revenue 452.706 462.572 480.735 486.072 488.231 491.140 Total East of Hudson Revenue $615.444 $649.644 $674.122 $681.057 $686.326 $697.268 West of Hudson Revenue $10.226 $11.512 $11.754 $11.754 $11.787 $11.838 Total Farebox Revenue $625.670 $661.156 $685.876 $692.811 $698.113 $709.105
+```
+[p118_c0003] Notes: West of Hudson total ridership is both Pascack Valley and Port Jervis lines.
+[p118_c0004] _Master Page # 118 of 237 - MTA Board Meeting 12/17/2025_
+[p118_c0005] _149_
+
+## Page 119
+
+### [p119_c0001] MTA METRO-NORTH RAILROAD November Financial Plan 2026 - 2029 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time/Full-Time Equivalents
+[p119_c0002]
+
+```text
+FUNCTION/DEPARTMENT 2024 Actual 2025 2026 2027 2028 2029 November Forecast Final Proposed Budget Administration President 4 18 18 18 18 18 Security 18 18 18 18 18 18 Safety 78 45 45 45 45 45 Training 93 93 96 96 96 96 Rolling Stock Programs 7 9 16 16 16 16 Ops Support and Org Resiliency 24 21 21 21 21 21 Communications 45 46 46 46 46 46 Labor Relations 12 11 11 11 11 11 Diversity 5 5 5 5 5 5 Legal 16 16 16 16 16 16 Procurement & Material Management 109 120 120 120 120 120 Public Safety & Security 10 11 11 11 11 11 Finance 69 72 72 72 72 72 Strategic Initiatives - 2 2 2 2 2 People 40 40 40 40 40 40 Total Administration 530 527 537 537 537 537 Operations Operations Support 27 26 28 28 28 28 Performance Analysis 10 4 4 4 4 4 Service Planning 23 25 25 25 25 25 Enterprise Asset Management 17 21 21 21 21 21 Transportation 1,755 1,794 1,794 1,794 1,794 1,794 Stations 397 445 445 445 445 445 Penn Station Access 0 9 80 153 231 231 Corporate 0 0 0 0 0 0 Total Operations 2,229 2,324 2,397 2,470 2,548 2,548 Maintenance Maintenance of Way 2,222 2,092 2,100 2,100 2,100 2,100 Maintenance of Equipment 1,596 1,655 1,657 1,657 1,657 1,657 Metro-North West 28 31 31 31 31 31 Stations 0 191 191 191 191 191 Corporate 0 0 0 0 0 100 Total Maintenance 3,846 3,969 3,979 3,979 3,979 4,079 Engineering/Capital Construction & Development 70 75 75 75 75 75 Total Engineering/Capital 70 75 75 75 75 75 Total Positions 6,674 6,895 6,988 7,061 7,139 7,239 Non-Reimbursable 6,195 6,153 6,271 6,346 6,392 6,492 Reimbursable 479 742 717 715 747 747 Total Full-Time 6,673 6,894 6,987 7,060 7,138 7,238 Total Full-Time-Equivalents 1 1 1 1 1 1
+```
+[p119_c0003] _Master Page # 119 of 237 - MTA Board Meeting 12/17/2025_
+[p119_c0004] _119_
+
+## Page 120
+
+### [p120_c0001] MTA METRO-NORTH RAILROAD November Financial Plan 2026 - 2029 Total Positions By Function and Occupational Group
+[p120_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Administration Managers/Supervisors 171 192 197 197 197 197 Professional/Technical/Clerical 358 335 340 340 340 340 Operational Hourlies 0 0 0 0 0 0 Total Administration Headcount 530 527 537 537 537 537 Operations Managers/Supervisors 303 312 323 334 341 341 Professional/Technical/Clerical 248 290 292 303 320 320 Operational Hourlies 1,677 1,722 1,782 1,833 1,887 1,887 Total Operations Headcount 2,229 2,324 2,397 2,470 2,548 2,548 Maintenance Managers/Supervisors 726 747 747 747 747 747 Professional/Technical/Clerical 418 443 453 453 453 453 Operational Hourlies 2,702 2,779 2,779 2,779 2,779 2,879 Total Maintenance Headcount 3,846 3,969 3,979 3,979 3,979 4,079 Engineering / Capital Managers/Supervisors 39 46 46 46 46 46 Professional/Technical/Clerical 31 29 29 29 29 29 Operational Hourlies 0 0 0 0 0 0 Total Engineering Headcount 70 75 75 75 75 75 Public Safety Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Public Safety Headcount 0 0 0 0 0 0 Total Positions Managers/Supervisors 1,240 1,297 1,313 1,324 1,331 1,331 Professional/Technical/ Clerical 1,055 1,097 1,114 1,125 1,142 1,142 Operational Hourlies 4,379 4,501 4,561 4,612 4,666 4,766 Total Positions 6,674 6,895 6,988 7,061 7,139 7,239
+```
+[p120_c0003] _Master Page # 120 of 237 - MTA Board Meeting 12/17/2025_
+[p120_c0004] _11-59_
+
+## Page 121
+
+### [p121_c0001] MTA Headquarters
+[p121_c0002] _Master Page # 121 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 122
+
+### [p122_c0001] Staff Summary
+### [p122_c0002] Metropolitan Transportation Authority
+### [p122_c0003] Page 1 of 2
+[p122_c0004]
+
+```text
+Subject MTA Headquarters 2026 Budget and 2026-2029 Financial Plan Adoption Department Office of the Chief Financial Officer Department Head Name Jaibala Patel, Chief Financial Officer Department Head Signature Project Manager/Division Head Jacob Luce, OMB
+```
+[p122_c0005]
+
+```text
+Date December 8, 2025 Vendor Name Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p122_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Comm. 12/15 X 2 Board 12/17 X
+```
+[p122_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 OMB 2 Legal 3 Chief Financial Officer
+```
+### [p122_c0008] Purpose:
+[p122_c0009] To secure MTA Board adoption of the MTA Headquarters (MTAHQ) 2025 November Forecast, 2026 Final Proposed Budget, and the Four-Year Financial Plan for 2026-2029.
+### [p122_c0010] Discussion:
+[p122_c0011] The 2026 Final Proposed Budget, which is consistent with information presented to the Board in November 2025, provides sufficient funding to maintain the current MTAHQ commitment to support the overall MTA mission by providing policy, financial guidance, administrative services, and oversight to the Operating Agencies, and a safe and secure system for customers, employees and those doing business with the MTA.
+[p122_c0012] This Plan continues to support high-priority initiatives that began in previous plans that are aimed at increasing efficiency, safety, communication, and the customer experience throughout the system including:
+- [p122_c0013] • Real Estate state of good repair project work. • Information Technology (IT) initiatives and upgrades to support business and Agency needs. • Strategic headcount investments to strengthen core operational and support capabilities. • Ongoing collaboration initiatives between the MTA Police Department and MTA Bridges and Tunnels. • Grade Crossing Safety Improvement Program expansion.
+### [p122_c0014] 2025 November Forecast – Baseline
+[p122_c0015] The 2025 November Forecast includes non-reimbursable operating revenues of $49.4 million and expenses before depreciation and other post-employment benefits of $1,235.6 million, consisting of $690.4 million in labor expenses and $545.3 million in non-labor expenses. Depreciation and GASB adjustments total $333.5 million. Including these non-cash items, the resulting baseline deficit is $1,519.8 million.
+[p122_c0016] Reimbursements are projected to be $164.5 million, consisting of labor expenses of $67.0 million and non-labor expenses of $97.5 million. Favorable cash adjustments before depreciation and GASB adjustments are $49.8 million, primarily reflecting the impacts of current year spending and project timing.
+[p122_c0017] _Master Page # 122 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 123
+
+### [p123_c0001] Staff Summary
+### [p123_c0002] Metropolitan Transportation Authority
+### [p123_c0003] Page 2 of 2
+[p123_c0004] Total year-end positions are projected to be 3,587 positions. Non-reimbursable and reimbursable positions are 3,510 and 77 positions, respectively.
+### [p123_c0005] 2026 Final Proposed Budget - Baseline
+[p123_c0006] The MTAHQ 2026 Final Proposed Budget includes non-reimbursable operating revenues of $49.8 million and expenses before depreciation and non-cash items of $1,312.1 million, consisting of $710.9 million in labor expenses and $601.3 million in non-labor expenses. Depreciation and GASB adjustments total $293.3 million. Including these non-cash items, the resulting baseline deficit is $1,555.7 million.
+[p123_c0007] Reimbursements are projected to be $173.2 million, with reimbursable labor expenses of $72.4 million and non-labor expenses of $100.9 million. Unfavorable cash adjustments before non-cash liabilities are $46.9 million, primarily reflecting lower pension and professional services. The resulting baseline cash deficit is projected to be $1,309.3 million, $136.3 million unfavorable to the July Plan of $1,173.0 million.
+[p123_c0008] Total year-end positions are projected to be 3,576 positions. Non-reimbursable and reimbursable positions are 3,499 and 77 positions, respectively.
+### [p123_c0009] Impact on Funding
+[p123_c0010] The 2025 November Forecast, the 2026 Final Proposed Budget, and the Four-Year Financial Plan 2026-2029, which are presented in the attached tables, are consistent with the proposed MTA Financial Plan.
+### [p123_c0011] Recommendation:
+[p123_c0012] It is recommended that the MTA Board adopt the 2025 November Forecast, the 2026 Final Proposed Budget and the Four-Year Financial Plan for 2026-2029 for MTA Headquarters.
+[p123_c0013] _Master Page # 123 of 237 - MTA Board Meeting 12/17/2025_
+[p123_c0014] _152_
+
+## Page 124
+
+### [p124_c0001] MTA HEADQUARTERS November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p124_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue: Rental Income 43.643 43.873 43.873 45.573 45.673 45.673 Advertising 0.013 0.000 0.000 0.000 0.000 0.000 Other 11.768 5.551 5.897 5.897 5.897 5.897 Other Operating Revenue 55.423 49.425 49.770 51.470 51.570 51.570 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $55.423 $49.425 $49.770 $51.470 $51.570 $51.570 Operating Expense Labor: Payroll $431.877 $452.610 $455.873 $464.225 $476.091 $490.172 Overtime 33.928 19.966 18.182 17.151 17.898 18.398 Health and Welfare 85.918 94.726 100.512 106.936 114.735 123.240 OPEB Current Payments 36.835 36.835 38.971 41.232 43.623 46.153 Pension 86.615 102.075 114.674 123.359 126.067 128.569 Other Fringe Benefits 41.918 44.859 45.882 47.224 48.741 50.573 Reimbursable Overhead (78.898) (60.688) (63.230) (65.012) (66.372) (67.794) Total Labor Expenses $638.193 $690.383 $710.864 $735.114 $760.783 $789.312 Non-Labor: Electric Power $6.643 $8.925 $10.492 $10.915 $10.396 $10.101 Fuel 1.435 1.714 1.748 1.689 1.618 1.746 Insurance 2.711 5.318 5.675 5.938 6.189 6.365 Claims 2.369 2.592 2.592 2.592 2.592 2.592 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 110.513 163.157 170.389 171.086 171.642 172.389 Professional Services Contracts 248.243 328.173 366.678 325.781 318.973 301.392 Materials and Supplies 0.190 3.650 1.069 0.981 0.992 1.004 Other Business Expenses MTA Internal Subsidy 12.015 21.433 34.960 35.187 35.380 35.560 Other 11.358 10.299 7.649 6.814 12.251 12.691 Other Business Expenses 23.373 31.733 42.609 42.001 47.631 48.251 Total Non-Labor Expenses $395.477 $545.261 $601.253 $560.982 $560.032 $543.840 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $1,033.670 $1,235.644 $1,312.116 $1,296.096 $1,320.815 $1,333.151 Depreciation $112.431 $80.500 $46.213 $46.213 $46.213 $46.213 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 13.186 17.073 4.963 13.769 (12.527) (11.864) GASB 75 OPEB Expense Adjustment 214.814 219.469 225.674 232.044 238.245 244.546 GASB 87 Lease Adjustment (2.083) (1.981) (1.981) (1.981) (1.981) (1.981) GASB 96 SBITA Adjustment 9.365 18.468 18.468 18.468 18.468 18.468 GASB 101 Compensated Absences 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $347.713 $333.530 $293.338 $308.514 $288.418 $295.383 Total Expenses $1,381.382 $1,569.174 $1,605.454 $1,604.610 $1,609.234 $1,628.534 Net Surplus/(Deficit) ($1,325.960) ($1,519.750) ($1,555.684) ($1,553.139) ($1,557.663) ($1,576.964)
+```
+[p124_c0003] _Master Page # 124 of 237 - MTA Board Meeting 12/17/2025_
+[p124_c0004] _153_
+
+## Page 125
+
+### [p125_c0001] MTA HEADQUARTERS November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p125_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 181.343 164.501 173.210 165.792 165.980 167.799 Total Revenues $181.343 $164.501 $173.210 $165.792 $165.980 $167.799 Operating Expense Labor: Payroll $4.002 $4.480 $6.213 $6.336 $6.432 $6.552 Overtime 2.893 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.794 0.967 1.513 1.619 1.726 1.845 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.466 0.468 0.739 0.844 0.874 0.904 Other Fringe Benefits 0.348 0.432 0.659 0.682 0.699 0.720 Reimbursable Overhead 78.898 60.688 63.230 65.012 66.372 67.794 Total Labor Expenses $87.401 $67.035 $72.354 $74.493 $76.104 $77.815 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.001 0.001 0.001 0.001 0.001 Professional Services Contracts 93.921 97.405 100.783 91.224 89.801 89.907 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses MTA Internal Subsidy 0.000 0.000 0.000 0.000 0.000 0.000 Other 0.022 0.060 0.072 0.074 0.075 0.076 Other Business Expenses 0.022 0.060 0.072 0.074 0.075 0.076 Total Non-Labor Expenses $93.942 $97.466 $100.856 $91.299 $89.876 $89.984 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $181.343 $164.501 $173.210 $165.792 $165.980 $167.799 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p125_c0003] _Master Page # 125 of 237 - MTA Board Meeting 12/17/2025_
+[p125_c0004] _1154_
+
+## Page 126
+
+### [p126_c0001] MTA HEADQUARTERS November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p126_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue: Rental Income 43.643 43.873 43.873 45.573 45.673 45.673 Advertising 0.013 0.000 0.000 0.000 0.000 0.000 Other 11.768 5.551 5.897 5.897 5.897 5.897 Other Operating Revenue 55.423 49.425 49.770 51.470 51.570 51.570 Capital and Other Reimbursements 181.343 164.501 173.210 165.792 165.980 167.799 Total Revenues $236.766 $213.926 $222.980 $217.263 $217.551 $219.369 Operating Expense Labor: Payroll $435.878 $457.090 $462.086 $470.561 $482.524 $496.724 Overtime 36.822 19.966 18.182 17.151 17.898 18.398 Health and Welfare 86.712 95.693 102.025 108.554 116.461 125.085 OPEB Current Payments 36.835 36.835 38.971 41.232 43.623 46.153 Pension 87.081 102.543 115.413 124.203 126.941 129.473 Other Fringe Benefits 42.266 45.291 46.541 47.906 49.440 51.292 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $725.594 $757.418 $783.217 $809.607 $836.887 $867.126 Non-Labor: Electric Power $6.643 $8.925 $10.492 $10.915 $10.396 $10.101 Fuel 1.435 1.714 1.748 1.689 1.618 1.746 Insurance 2.711 5.318 5.675 5.938 6.189 6.365 Claims 2.369 2.592 2.592 2.592 2.592 2.592 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 110.513 163.158 170.390 171.087 171.643 172.390 Professional Services Contracts 342.163 425.578 467.461 417.005 408.774 391.299 Materials and Supplies 0.190 3.650 1.069 0.981 0.992 1.004 Other Business Expenses MTA Internal Subsidy 12.015 21.433 34.960 35.187 35.380 35.560 Other 11.379 10.360 7.721 6.888 12.326 12.767 Other Business Expenses 23.394 31.793 42.682 42.075 47.706 48.327 Total Non-Labor Expenses $489.419 $642.728 $702.109 $652.281 $649.909 $633.823 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $1,215.013 $1,400.145 $1,485.326 $1,461.888 $1,486.795 $1,500.950 Depreciation $112.431 $80.500 $46.213 $46.213 $46.213 $46.213 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 13.186 17.073 4.963 13.769 (12.527) (11.864) GASB 75 OPEB Expense Adjustment 214.814 219.469 225.674 232.044 238.245 244.546 GASB 87 Lease Adjustment (2.083) (1.981) (1.981) (1.981) (1.981) (1.981) GASB 96 SBITA Adjustment 9.365 18.468 18.468 18.468 18.468 18.468 GASB 101 Compensated Absences 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $347.713 $333.530 $293.338 $308.514 $288.418 $295.383 Total Expenses $1,562.726 $1,733.675 $1,778.664 $1,770.402 $1,775.214 $1,796.333 Net Surplus/(Deficit) ($1,325.960) ($1,519.750) ($1,555.684) ($1,553.139) ($1,557.663) ($1,576.964)
+```
+[p126_c0003] _Master Page # 126 of 237 - MTA Board Meeting 12/17/2025_
+[p126_c0004] _1155_
+
+## Page 127
+
+### [p127_c0001] MTA HEADQUARTERS November Financial Plan 2026 - 2029 Cash Receipts and Expenditures ($ in millions)
+[p127_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue: Rental Income 40.168 43.873 43.873 45.573 45.673 45.673 Advertising 0.013 0.000 0.000 0.000 0.000 0.000 Other Revenue 11.696 5.551 5.897 5.897 5.897 5.897 Other Operating Revenue 51.876 49.425 49.770 51.470 51.570 51.570 Capital and Other Reimbursements 181.343 164.501 173.210 165.792 165.980 167.799 Total Receipts $233.220 $213.926 $222.980 $217.263 $217.551 $219.369 Expenditures Labor: Payroll $419.229 $419.457 $444.868 $452.890 $464.378 $478.048 Overtime 36.515 19.977 18.182 17.151 17.898 18.398 Health and Welfare 88.452 84.501 90.023 95.717 102.690 110.304 OPEB Current Payments 32.114 38.282 43.314 45.574 47.965 50.495 Pension 98.711 54.632 126.673 131.240 132.553 135.447 Other Fringe Benefits 39.841 43.972 45.185 46.511 48.000 49.798 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $714.861 $660.820 $768.244 $789.083 $813.485 $842.492 Non-Labor: Electric Power $6.262 $6.628 $7.792 $8.105 $7.720 $7.501 Fuel 1.385 1.570 1.602 1.548 1.482 1.600 Insurance 0.768 5.286 5.675 5.938 6.189 6.365 Claims 1.227 2.592 2.592 2.592 2.592 2.592 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 103.871 162.463 169.664 170.351 170.905 171.648 Professional Services Contracts 339.113 413.926 454.662 405.450 397.461 380.470 Materials and Supplies 0.001 3.650 1.069 0.981 0.992 1.004 Other Business Expenses: MTA Internal Subsidy 8.515 21.433 34.960 35.187 35.380 35.560 Other 11.399 9.073 6.678 6.888 14.859 12.767 Other Business Expenses 19.914 30.506 41.639 42.075 50.239 48.327 Total Non-Labor Expenditures $472.542 $626.620 $684.694 $637.039 $637.579 $619.507 Other Expenditure Adjustments: Operating Capital 87.266 62.883 79.305 46.400 28.424 25.556 Total Other Expense Adjustments $87.266 $62.883 $79.305 $46.400 $28.424 $25.556 Total Expenditures $1,274.669 $1,350.324 $1,532.243 $1,472.522 $1,479.488 $1,487.555 Net Cash Balance ($1,041.450) ($1,136.398) ($1,309.262) ($1,255.259) ($1,261.937) ($1,268.186)
+```
+[p127_c0003] _Master Page # 127 of 237 - MTA Board Meeting 12/17/2025_
+[p127_c0004] _1156_
+
+## Page 128
+
+### [p128_c0001] MTA HEADQUARTERS November Financial Plan 2026 - 2029 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p128_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Cash Flow Adjustments Receipts Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Rent and Utilities (3.475) 0.000 0.000 0.000 0.000 0.000 Advertising 0.000 0.000 0.000 0.000 0.000 0.000 Other Revenue (0.072) 0.000 0.000 0.000 0.000 0.000 Other Operating Revenue (3.547) 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Receipts (3.547) $0.000 $0.000 $0.000 $0.000 $0.000 Expenditures Labor: Payroll $16.649 $37.633 $17.219 $17.671 $18.145 $18.676 Overtime 0.307 (0.011) 0.000 0.000 0.000 0.000 Health and Welfare (1.740) 11.193 12.001 12.837 13.771 14.781 OPEB Current Payments 4.721 (1.447) (4.342) (4.342) (4.342) (4.342) Pension (11.630) 47.911 (11.260) (7.037) (5.612) (5.974) Other Fringe Benefits 2.425 1.319 1.355 1.395 1.440 1.494 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $10.732 $96.597 $14.973 $20.524 $23.402 $24.634 Non-Labor: Electric Power $0.381 $2.297 2.701 $2.809 $2.676 $2.600 Fuel 0.050 0.144 0.146 0.142 0.136 0.146 Insurance 1.943 0.032 0.000 0.000 0.000 0.000 Claims 1.142 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 6.642 0.695 0.726 0.737 0.738 0.741 Professional Services Contracts 3.051 11.652 12.799 11.555 11.313 10.829 Materials and Supplies 0.189 0.000 0.000 0.000 0.000 0.000 Other Business Expenses MTA Internal Subsidy 3.500 0.000 0.000 0.000 0.000 0.000 Other Business Expenses (0.020) 1.287 1.043 0.000 (2.533) 0.000 Total Other Business Expenses 3.480 1.287 1.043 0.000 (2.533) 0.000 Total Non-Labor Expenditures $16.877 $16.107 $17.415 $15.243 $12.330 $14.316 Other Expenditure Adjustments: Operating Capital (87.266) (62.883) (79.305) (46.400) (28.424) (25.556) Total Other Expenditure Adjustments (87.266) (62.883) (79.305) (46.400) (28.424) (25.556) Total Expenditures (59.656) $49.821 (46.916) (10.633) $7.308 $13.395 Total Cash Conversion Adjustments before Depreciation (63.203) $49.821 (46.916) (10.633) $7.308 $13.395 Depreciation $112.431 $80.500 $46.213 $46.213 $46.213 $46.213 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 13.186 17.073 4.963 13.769 (12.527) (11.864) GASB 75 OPEB Expense Adjustment 214.814 219.469 225.674 232.044 238.245 244.546 GASB 87 Lease Adjustment (2.083) (1.981) (1.981) (1.981) (1.981) (1.981) GASB 96 SBITA Adjustment 9.365 18.468 18.468 18.468 18.468 18.468 GASB 101 Compensated Absences 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $347.713 $333.530 $293.338 $308.514 $288.418 $295.383 Total Cash Conversion Adjustments $284.510 $383.351 $246.421 $297.880 $295.726 $308.778
+```
+[p128_c0003] _Master Page # 128 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 129
+
+### [p129_c0001] MTA HEADQUARTERS November Financial Plan 2026-2029 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time/Full-Time Equivalents
+[p129_c0002]
+
+```text
+FUNCTION/DEPARTMENT Actual 2024 Final Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Policy & Administration Office of the Chair and CEO (incl PCAC) 31 42 42 42 42 42 Policy & Administration 68 76 76 64 61 61 Headquarters Services Audit 60 62 62 62 62 62 Customer Communications 43 25 25 25 25 25 Diversity & Inclusion 57 54 54 54 54 54 Policy & External Relations 38 29 29 29 29 29 Finance 273 236 236 236 236 236 Labor Relations 49 19 19 19 19 19 Legal & Compliance 117 90 90 90 90 90 IT Department 916 958 962 962 960 960 OMNY New Fare Payment - - - - - - People 322 260 260 260 260 260 Procurement 125 80 75 75 75 75 Real Estate 52 53 53 53 53 53 Rolling Stock Programs 2 9 9 9 9 9 MTA Safety & Environment 25 20 20 20 20 20 MTA Security 27 40 40 40 40 40 Occupational Health Services 82 91 91 91 91 91 Public Safety MTA Police Department 1,327 1,443 1,433 1,433 1,503 1,552 Baseline Total Positions 3,614 3,587 3,576 3,564 3,629 3,678 Non-Reimbursable 3,551 3,510 3,499 3,487 3,552 3,601 Reimbursable 63 77 77 77 77 77 Full-Time 3,614 3,587 3,576 3,564 3,629 3,678 Full-Time Equivalents - - - - - -
+```
+[p129_c0003] _Master Page # 129 of 237 - MTA Board Meeting 12/17/2025_
+[p129_c0004] _1159_
+
+## Page 130
+
+### [p130_c0001] MTA HEADQUARTERS November Financial Plan 2026 - 2029 Total Positions By Function and Occupational Group
+[p130_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Administration Managers/Supervisors 1,026 963 963 955 951 951 Professional/Technical/Clerical 1,260 1,181 1,180 1,176 1,175 1,175 Operational Hourlies 1 0 0 0 0 0 Total Administration Headcount 2,287 2,144 2,143 2,131 2,126 2,126 Operations Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Operations Headcount 0 0 0 0 0 0 Maintenance Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Maintenance Headcount 0 0 0 0 0 0 Engineering / Capital Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Engineering Headcount 0 0 0 0 0 0 Public Safety Managers/Supervisors 229 253 253 253 266 273 Professional/Technical/Clerical 70 74 74 74 74 74 Operational Hourlies 1,028 1,116 1,106 1,106 1,163 1,205 Total Public Safety Headcount 1,327 1,443 1,433 1,433 1,503 1,552 Total Positions Managers/Supervisors 1,255 1,216 1,216 1,208 1,217 1,224 Professional/Technical/ Clerical 1,330 1,255 1,254 1,250 1,249 1,249 Operational Hourlies 1,029 1,116 1,106 1,106 1,163 1,205 Total Positions 3,614 3,587 3,576 3,564 3,629 3,678
+```
+[p130_c0003] _Master Page # 130 of 237 - MTA Board Meeting 12/17/2025_
+[p130_c0004] _11/19_
+
+## Page 131
+
+[p131_c0001] [THIS PAGE INTENTIONALLY LEFT BLANK]
+[p131_c0002] _Master Page # 131 of 237 - MTA Board Meeting 12/17/2025_
+[p131_c0003] _11/69_
+
+## Page 132
+
+### [p132_c0001] Inspector General
+[p132_c0002] _Master Page # 132 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 133
+
+### [p133_c0001] Staff Summary
+[p133_c0002] Metropolitan Transportation Authority
+### [p133_c0003] Page 1 of 1
+[p133_c0004]
+
+```text
+Subject Office of the MTA Inspector General 2026 Budget and 2026-2029 Financial Plan Adoption Department Office of the Chief Financial Officer Department Head Name Jaibala Patel, Chief Financial Officer Department Head Signature Jaibala Patel Project Manager/Division Head Jacob Luce, OMB
+```
+[p133_c0005]
+
+```text
+Date December 8, 2025 Vendor Name Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p133_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Comm. 12/15 X 2 Board 12/17 X
+```
+[p133_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 OMB ✓ 2 OIG - Dir of Admin ✓ 3 Inspector General ✓
+```
+### [p133_c0008] Purpose:
+[p133_c0009] To secure MTA Board adoption of the Office of the MTA Inspector General's 2025 November Forecast, 2026 Final Proposed Budget, and the Four-Year Financial Plan for 2026-2029.
+### [p133_c0010] Discussion:
+[p133_c0011] The 2026 Final Proposed Budget provides the resources necessary to investigate and audit matters of concern throughout the MTA and its subsidiaries.
+### [p133_c0012] 2025 November Forecast – Baseline
+[p133_c0013] Total Capital and Other Reimbursements are projected to be $17.4 million. Total Reimbursable labor expenses are $13.4 million and non-labor expenses are $4.0 million.
+### [p133_c0014] 2026 Final Proposed Budget – Baseline
+[p133_c0015] Total Capital and Other Reimbursements are projected to be $20.2 million. Total Reimbursable labor expenses are $16.1 million and non-labor expenses are $4.1 million.
+### [p133_c0016] Impact on Funding
+[p133_c0017] The 2025 November Forecast, the 2026 Final Proposed Budget, and the Four-Year Financial Plan 2026-2029, which are presented in the attached tables, are consistent with the proposed MTA Financial Plan.
+### [p133_c0018] Recommendation:
+[p133_c0019] It is recommended that the MTA Board adopt the 2025 November Forecast, the 2026 Final Proposed Budget, and the Four-Year Financial Plan for 2026-2029 for the Office of the MTA Inspector General.
+[p133_c0020] _Master Page # 133 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 134
+
+### [p134_c0001] MTA INSPECTOR GENERAL November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p134_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 14.903 17.367 20.196 20.849 21.299 21.832 Total Revenues $14.903 $17.367 $20.196 $20.849 $21.299 $21.832 Operating Expense Labor: Payroll $9,180 $10,110 $11,407 $11,628 $11,803 $12,022 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 1.086 1.622 2.473 2.668 2.873 3.106 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.868 0.814 1.124 1.339 1.385 1.429 Other Fringe Benefits 0.680 0.818 1.049 1.076 1.096 1.121 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $11.813 $13.364 $16.053 $16.710 $17.157 $17.878 Non-Labor: Electric Power $0.052 $0.064 $0.069 $0.069 $0.068 $0.067 Fuel 0.008 0.014 0.015 0.011 0.008 0.012 Insurance 0.017 0.021 0.020 0.021 0.022 0.023 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 2.373 3.186 3.284 3.290 3.293 3.297 Professional Services Contracts 0.518 0.547 0.561 0.554 0.553 0.553 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.123 0.172 0.195 0.195 0.198 0.201 Total Non-Labor Expenses $3.090 $4.003 $4.143 $4.139 $4.142 $4.154 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $14.903 $17.367 $20.196 $20.849 $21.299 $21.832 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p134_c0003] _Master Page # 134 of 237 - MTA Board Meeting 12/17/2025_
+[p134_c0004] _11-62_
+
+## Page 135
+
+### [p135_c0001] MTA INSPECTOR GENERAL November Financial Plan 2026 - 2029 Cash Receipts and Expenditures ($ in millions)
+[p135_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 14.903 17.367 20.196 20.849 21.299 21.832 Total Receipts $14.903 $17.367 $20.196 $20.849 $21.299 $21.832 Expenditures Labor: Payroll $9.180 $10.110 $11.407 $11.628 $11.803 $12.022 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 1.086 1.622 2.473 2.668 2.873 3.106 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.868 0.814 1.124 1.339 1.385 1.429 Other Fringe Benefits 0.680 0.818 1.049 1.076 1.096 1.121 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $11.813 $13.364 $16.053 $16.710 $17.157 $17.678 Non-Labor: Electric Power $0.052 $0.064 $0.069 $0.069 $0.068 $0.067 Fuel 0.008 0.014 0.015 0.011 0.008 0.012 Insurance 0.017 0.021 0.020 0.021 0.022 0.023 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 2.373 3.186 3.284 3.290 3.293 3.297 Professional Services Contracts 0.518 0.547 0.561 0.554 0.553 0.553 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.123 0.172 0.195 0.195 0.198 0.201 Total Non-Labor Expenditures $3.090 $4.003 $4.143 $4.139 $4.142 $4.154 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $14.903 $17.367 $20.196 $20.849 $21.299 $21.832 Net Cash Balance $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p135_c0003] _Master Page # 135 of 237 - MTA Board Meeting 12/17/2025_
+[p135_c0004] _1453_
+
+## Page 136
+
+### [p136_c0001] MTA INSPECTOR GENERAL November Financial Plan 2026 - 2029 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p136_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Cash Flow Adjustments Receipts Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Receipts $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Expenditures Labor: Payroll $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 0.000 0.000 0.000 0.000 0.000 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenditures $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Cash Conversion Adjustments before Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 101 Compensated Absences 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Cash Conversion Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p136_c0003] _Master Page # 136 of 237 - MTA Board Meeting 12/17/2025_
+[p136_c0004] _11-64_
+
+## Page 137
+
+### [p137_c0001] MTA INSPECTOR GENERAL November Financial Plan 2026 - 2029 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time Positions/Full Time Equivalents
+[p137_c0002]
+
+```text
+FUNCTION/DEPARTMENT Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Administration Office of the Inspector General 77 96 96 96 96 96 Total Administration 77 96 96 96 96 96 Baseline Total Positions 77 96 96 96 96 96 Non-Reimbursable - - - - - - Reimbursable 77 96 96 96 96 96 Total 77 96 96 96 96 96 Total Full-Time 77 96 96 96 96 96 Total Full-Time Equivalents - - - - - -
+```
+[p137_c0003] _Master Page # 137 of 237 - MTA Board Meeting 12/17/2025_
+[p137_c0004] _11-55_
+
+## Page 138
+
+[p138_c0001] [THIS PAGE INTENTIONALLY LEFT BLANK]
+[p138_c0002] _Master Page # 138 of 237 - MTA Board Meeting 12/17/2025_
+[p138_c0003] _11.66_
+
+## Page 139
+
+### [p139_c0001] First Mutual Transportation Assurance Co. (FMTAC)
+[p139_c0002] _Master Page # 139 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 140
+
+### [p140_c0001] Staff Summary
+### [p140_c0002] Metropolitan Transportation Authority
+### [p140_c0003] Page 1 of 1
+### [p140_c0004] Subject
+[p140_c0005] MTA FMTAC 2026 Budget and 2026-2029 Financial Plan Adoption
+### [p140_c0006] Department
+[p140_c0007] Office of the Chief Financial Officer
+### [p140_c0008] Department Head Name
+[p140_c0009] Jaibala Patel, Chief Financial Officer
+### [p140_c0010] Department Head Signature
+[p140_c0011] Jaibala Patel
+### [p140_c0012] Project Manager/Division Head
+[p140_c0013] Jacob Luce, OMB
+### [p140_c0014] Date
+[p140_c0015] December 8, 2025
+### [p140_c0016] Vendor Name
+### [p140_c0017] Contract Number
+### [p140_c0018] Contract Manager Name
+### [p140_c0019] Table of Contents Ref #
+### [p140_c0020] Board Action
+[p140_c0021]
+
+```text
+Order To Date Approval Info Other 1 Finance Comm. 12/15 X 2 Board 12/17 X
+```
+### [p140_c0022] Internal Approvals
+[p140_c0023]
+
+```text
+Order Approval Order Approval 1 OMB 2 Legal 3 Dep. Chief Dir, Risk & Insurance Mgmt.
+```
+### [p140_c0024] Purpose:
+[p140_c0025] To secure MTA Board adoption of the MTA First Mutual Transportation Assurance Company's (FMTAC) 2025 November Forecast, 2026 Final Proposed Budget, and the Four-Year Financial Plan for 2026-2029.
+### [p140_c0026] Discussion:
+[p140_c0027] FMTAC generates a net cash deficit of zero and has no impact on MTA cash balances. FMTAC cash reserves are separate and distinct from MTA and are necessary to maintain the appropriate capital and reserve levels pursuant to the State of New York Insurance guidelines.
+[p140_c0028] The 2026 Final Proposed Budget, which is consistent with information presented to the Board in November 2025, provides sufficient resources to address the challenges related to risk and insurance management of the MTA. This is accomplished by maximizing the efficiency and flexibility of the insurance programs while minimizing costs to the MTA and its subsidiaries.
+### [p140_c0029] 2025 November Forecast-Baseline:
+[p140_c0030] Total operating revenues are projected at $38.1 million. Total operating expenses are projected to result in a credit of ($31.1) million, resulting in a net surplus of $69.2 million.
+### [p140_c0031] 2026 Final Proposed Budget-Baseline:
+[p140_c0032] Total operating revenues are projected at $38.9 million. Total operating expenses are projected to result in a credit of ($34.1) million, resulting in a net surplus of $73.0 million.
+### [p140_c0033] Impact of Funding:
+[p140_c0034] The 2025 November Forecast, the 2026 Final Proposed Budget, and the Four-Year Financial Plan 2026-2029, which are presented in the attached tables, are consistent with the proposed MTA Financial Plan.
+### [p140_c0035] Recommendation:
+[p140_c0036] It is recommended that the MTA Board adopt the 2025 November Forecast, the 2026 Final Proposed Budget, and the Four-Year Financial Plan for 2026-2029 for the MTA First Mutual Transportation Assurance Company.
+[p140_c0037] _Master Page # 140 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 141
+
+### [p141_c0001] MTA FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p141_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Investment Income 32.153 38.119 38.942 39.947 40.873 41.769 Total Revenues $32.153 $38.119 $38.942 $39.947 $40.873 $41.769 Operating Expense Labor: Payroll $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance (141.208) (147.691) (160.381) (164.845) (157.355) (151.930) Claims 246.366 120.596 130.325 136.173 142.312 148.755 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 7.473 6.000 6.120 6.242 6.367 6.495 Total Non-Labor Expenses $112.631 ($21.095) ($23.936) ($22.430) ($8.676) $3.320 Other Expense Adjustments: Other Expense Adjustments $2.282 ($10.000) ($10.150) ($10.302) ($10.457) ($10.614) Total Other Expense Adjustments $2.282 ($10.000) ($10.150) ($10.302) ($10.457) ($10.614) Total Expenses Before Depreciation and GASB Adjs. $114.913 ($31.095) ($34.086) ($32.732) ($19.133) ($7.294) Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 101 Compensated Absences 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses $114.913 ($31.095) ($34.086) ($32.732) ($19.133) ($7.294) Net Surplus/(Deficit) ($82.760) $69.214 $73.028 $72.679 $60.006 $49.063
+```
+[p141_c0003] _Master Page # 141 of 237 - MTA Board Meeting 12/17/2025_
+[p141_c0004] _11-59_
+
+## Page 142
+
+### [p142_c0001] MTA FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p142_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Investment Income 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Operating Expense Labor: Payroll $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p142_c0003] _Master Page # 142 of 237 - MTA Board Meeting 12/17/2025_
+[p142_c0004] _149_
+
+## Page 143
+
+### [p143_c0001] MTA FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY
+### [p143_c0002] November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category
+[p143_c0003] ($ in millions)
+[p143_c0004]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Investment Income 32.153 38.119 38.942 39.947 40.873 41.769 Total Revenues $32.153 $38.119 $38.942 $39.947 $40.873 $41.769 Operating Expense Labor: Payroll $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance (141.208) (147.691) (160.381) (164.845) (157.355) (151.930) Claims 246.366 120.596 130.325 136.173 142.312 148.755 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 7.473 6.000 6.120 6.242 6.367 6.495 Total Non-Labor Expenses $112.631 ($21.095) ($23.936) ($22.430) ($8.676) $3.320 Other Expense Adjustments: Other Expense Adjustments $2.282 ($10.000) ($10.150) ($10.302) ($10.457) ($10.614) Total Other Expense Adjustments $2.282 ($10.000) ($10.150) ($10.302) ($10.457) ($10.614) Total Expenses Before Depreciation and GASB Adjs. $114.913 ($31.095) ($34.086) ($32.732) ($19.133) ($7.294) Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 101 Compensated Absences 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses $114.913 ($31.095) ($34.086) ($32.732) ($19.133) ($7.294) Net Surplus/(Deficit) ($82.760) $69.214 $73.028 $72.679 $60.006 $49.063
+```
+[p143_c0005] _Master Page # 143 of 237 - MTA Board Meeting 12/17/2025_
+[p143_c0006] _1170_
+
+## Page 144
+
+### [p144_c0001] MTA FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY November Financial Plan 2026 - 2029 Cash Receipts and Expenditures ($ in millions)
+[p144_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Other Operating Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Investment Income 32.153 38.119 38.942 39.947 40.873 41.769 Total Receipts $32.153 $38.119 $38.942 $39.947 $40.873 $41.769 Expenditures Labor: Payroll $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 0.000 0.000 0.000 0.000 0.000 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance (141.208) (147.691) (160.381) (164.845) (157.355) (151.930) Claims 246.366 126.110 127.646 125.151 123.505 123.920 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 7.473 6.000 6.120 6.242 6.367 6.495 Total Non-Labor Expenditures $112.631 ($15.581) ($26.615) ($33.452) ($27.483) ($21.515) Other Expenditure Adjustments: Other ($80.478) $53.700 $65.557 $73.399 $68.356 $63.284 Total Other Expense Adjustments ($80.478) $53.700 $65.557 $73.399 $68.356 $63.284 Total Expenditures $32.153 $38.119 $38.942 $39.947 $40.873 $41.769 Net Cash Balance $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p144_c0003] _Master Page # 144 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 145
+
+### [p145_c0001] MTA FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY
+### [p145_c0002] November Financial Plan 2026 - 2029
+### [p145_c0003] Cash Conversion (Cash Flow Adjustments)
+[p145_c0004] ($ in millions)
+[p145_c0005]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Cash Flow Adjustments Receipts Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Investment Income 0.000 0.000 0.000 0.000 0.000 0.000 Total Receipts $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Expenditures Labor: Payroll $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 0.000 0.000 0.000 0.000 0.000 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Non-Labor: Electric Power $0.000 $0.000 0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 (5.514) 2.679 11.022 18.807 24.835 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenditures $0.000 ($5.514) $2.679 $11.022 $18.807 $24.835 Other Expenditure Adjustments: Other Expense Adjustments $82.760 ($63.700) ($75.707) ($83.701) ($78.813) ($73.898) Total Other Expenditure Adjustments $82.760 ($63.700) ($75.707) ($83.701) ($78.813) ($73.898) Total Expenditures $82.760 ($69.214) ($73.028) ($72.679) ($60.006) ($49.063) Total Cash Conversion Adjustments before Depreciation $82.760 ($69.214) ($73.028) ($72.679) ($60.006) ($49.063) Depreciation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 GASB 49 Environmental Remediation 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 101 Compensated Absences 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Cash Conversion Adjustments $82.760 ($69.214) ($73.028) ($72.679) ($60.006) ($49.063)
+```
+[p145_c0006] _Master Page # 145 of 237 - MTA Board Meeting 12/17/2025_
+[p145_c0007] _142_
+
+## Page 146
+
+### [p146_c0001] New York City Transit
+[p146_c0002] _Master Page # 146 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 147
+
+### [p147_c0001] Staff Summary
+[p147_c0002] Metropolitan Transportation Authority
+### [p147_c0003] Page 1 of 2
+[p147_c0004]
+
+```text
+Subject MTA NYCT 2026 Budget and 2026-2029 Financial Plan Adoption Department Office of the Chief Financial Officer Department Head Name Jaibala Patel, Chief Financial Officer Department Head Signature Project Manager/Division Head Jacob Luce, OMB
+```
+[p147_c0005]
+
+```text
+Date December 8, 2025 Vendor Name Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p147_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 NYCT Comm. 12/15 X 2 Finance Comm. 12/15 X 3 Board 12/17 X
+```
+[p147_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 OMB 2 Financial Liaison 3 NYCT President
+```
+### [p147_c0008] Purpose:
+[p147_c0009] To secure MTA Board adoption of the MTA New York City Transit's 2025 November Forecast, 2026 Final Proposed Budget, and the Four-Year Financial Plan for 2026-2029.
+### [p147_c0010] Discussion:
+[p147_c0011] The 2026 Final Proposed Budget, which is consistent with information presented to the Board in November 2025, provides funding to maintain New York City Transit's commitment to delivering safe, secure, and reliable transportation and first-class customer service. NYCT projections do not include MTA consolidated below-the-line adjustments, including the estimated impacts of projected fare increases, which are presented as part of MTA consolidated materials.
+[p147_c0012] The November Financial Plan reflects additional annual operating savings of $37 million beginning in 2026, including initiatives to improve operational flexibility, contract utilization, and energy efficiency, among others. Additional savings are expected for 2027 and beyond, and initiative-level details will be reflected in future financial plans.
+[p147_c0013] The 2026 Final Proposed Budget reflects key initiatives deemed essential to providing safe and reliable service to customers while ensuring assets remain in a state of good repair. Among the initiatives included are:
+- [p147_c0014] • Customer Service Center buildout to support 14 new Customer Service Centers across all five boroughs. This includes booth rehabilitations and staffing to enhance the customer experience. These centers will help our riders fully transition to OMNY and support the fair fares program. • LED Lighting Initiative to upgrade to energy-efficient LED bulbs in non-station facilities. This initiative reduces energy costs and contributes to maintaining infrastructure in a state of good repair. • Track Monitoring Analytics to equip revenue cars with sensors and leverage Artificial Intelligence and Machine Learning models to detect and predict track non-conformities. This enables proactive maintenance and helps reduce service disruptions. • Electric Bus Charging Equipment Maintenance to invest in inspections, maintenance, and training on equipment installed as part of the Zero Emission Bus Fleet Transformation program at several bus depots.
+[p147_c0015] _Master Page # 147 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 148
+
+### [p148_c0001] Staff Summary
+### [p148_c0002] Metropolitan Transportation Authority
+### [p148_c0003] Page 2 of 2
+### [p148_c0004] 2025 November Forecast – Baseline
+[p148_c0005] Farebox revenue is forecasted at $3,677.1 million. In addition, Non-Reimbursable revenue includes $3,058 million in federal formula funding applied to capital. Total Non-Reimbursable expenses are projected to be $11,126.9 million, consisting of labor expenses of $8,214.2 million and non-labor expenses of $2,912.7 million, with non-cash liability adjustments of $2,551.0 million. Projected Reimbursable expenses of $1,366.9 million are fully offset by capital reimbursements. Total baseline full-time and full-time equivalent positions are 50,498, including 45,543 Non-Reimbursable positions and 4,954 Reimbursable positions.
+### [p148_c0006] 2026 Final Proposed Budget – Baseline
+[p148_c0007] Total Non-Reimbursable revenues are projected at $4,856.6 million, including farebox revenues of $3,908.4 million. Total Non-Reimbursable expenses are projected to be $11,353.1 million, consisting of labor expenses of $8,404.6 million and non-labor expenses of $2,948.5 million, with non-cash liability adjustments of $2,575.0 million. Projected Reimbursable expenses of $1,500.7 million are fully offset by capital reimbursements. Total end-of-year positions are projected at 50,447, including 45,468 Non-Reimbursable positions and 4,978 Reimbursable positions.
+### [p148_c0008] Impact on Funding
+[p148_c0009] The 2025 November Forecast, the 2026 Final Proposed Budget and the Four-Year Financial Plan for 2026-2029, which are presented in the attached tables, are consistent with the proposed MTA Financial Plan.
+### [p148_c0010] Recommendation:
+[p148_c0011] It is recommended that the MTA Board adopt the 2025 November Forecast, the 2026 Final Proposed Budget, and the Four-Year Financial Plan for 2026-2029 for MTA New York City Transit.
+[p148_c0012] _Master Page # 148 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 149
+
+### [p149_c0001] MTA NEW YORK CITY TRANSIT November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p149_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenue Farebox Revenue: Subway $2,820.175 $2,971.535 $3,103.844 $3,155.798 $3,200.688 $3,200.125 Bus 614.946 654.541 732.928 771.272 793.249 792.518 Paratransit 26.950 33.108 39.584 43.543 45.720 48.006 Fare Media Liability 71.554 17.923 32.053 13.060 0.000 0.000 Farebox Revenue $3,533.626 $3,677.107 $3,908.408 $3,983.673 $4,039.656 $4,040.649 Other Operating Revenue: Fare Reimbursement 84.016 89.516 84.016 84.016 84.016 84.016 Paratransit Reimbursement 530.035 604.091 661.115 701.739 831.713 877.631 Other 2,512.905 3,309.558 203.031 199.834 204.615 208.443 Other Operating Revenue $3,126.956 $4,003.165 $948.162 $985.590 $1,120.344 $1,170.090 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $6,660.582 $7,680.273 $4,856.570 $4,969.262 $5,160.000 $5,210.738 Operating Expense Labor: Payroll $3,855.050 $4,012.319 $4,279.287 $4,340.460 $4,439.418 $4,529.374 Overtime 685.203 808.510 519.563 495.890 505.448 515.526 Total Salaries and Wages $4,540.253 $4,820.830 $4,798.850 $4,836.350 $4,944.866 $5,044.901 Health and Welfare 1,177.935 1,259.095 1,424.680 1,519.285 1,627.184 1,750.413 OPEB Current Payments 617.061 641.664 716.525 783.419 856.193 935.547 Pension 936.525 1,044.325 1,113.974 1,148.845 1,174.666 1,195.794 Other Fringe Benefits 502.184 756.641 666.840 715.091 767.141 815.841 Total Fringe Benefits $3,233.704 $3,701.725 $3,922.019 $4,166.640 $4,425.184 $4,697.595 Reimbursable Overhead (331.635) (308.320) (316.315) (299.424) (294.740) (297.270) Total Labor Expenses $7,442.323 $8,214.234 $8,404.554 $8,703.566 $9,075.310 $9,445.225 Non-Labor: Electric Power $324.316 $404.982 $383.936 $395.997 $417.643 $436.688 Fuel 121.912 123.109 132.048 130.266 130.691 134.333 Insurance 75.715 85.274 88.414 90.717 93.954 98.466 Claims 800.164 250.537 241.219 246.326 251.587 251.587 Paratransit Service Contracts 616.823 761.262 874.399 949.174 1,000.224 1,056.994 Maintenance and Other Operating Contracts 361.953 386.775 347.920 353.703 325.317 330.160 Professional Services Contracts 223.826 339.262 319.584 331.020 292.896 299.931 Materials and Supplies 346.020 417.729 409.386 392.005 405.509 431.476 Other Business Expenses 147.623 143.746 151.589 159.095 162.062 160.145 Total Non-Labor Expenses $3,018.352 $2,912.675 $2,948.495 $3,048.303 $3,079.884 $3,199.779 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $10,460.675 $11,126.909 $11,353.050 $11,751.869 $12,155.194 $12,645.004 Depreciation $2,244.257 $2,413.000 $2,437.000 $2,437.000 $2,437.000 $2,437.000 GASB 49 Environmental Remediation 41.015 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment (66.206) (66.000) (66.000) (66.000) (66.000) (66.000) GASB 75 OPEB Expense Adjustment 172.793 173.000 173.000 173.000 173.000 173.000 GASB 87 Lease Adjustment 30.923 31.000 31.000 31.000 31.000 31.000 GASB 96 SBITA Adjustment 0.320 0.000 0.000 0.000 0.000 0.000 GASB 101 Compensated Absences 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $2,423.102 $2,557.000 $2,575.000 $2,575.000 $2,575.000 $2,575.000 Total Expenses $12,883.777 $13,677.909 $13,928.050 $14,326.869 $14,730.194 $15,220.004 Net Surplus/(Deficit) ($6,223.196) ($5,997.636) ($9,071.479) ($9,357.607) ($9,570.194) ($10,009.266)
+```
+[p149_c0003] _Master Page # 149 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 150
+
+### [p150_c0001] MTA NEW YORK CITY TRANSIT November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p150_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 1,432.235 1,366.858 1,500.721 1,444.251 1,425.077 1,436.532 Total Revenues $1,432.235 $1,366.858 $1,500.721 $1,444.251 $1,425.077 $1,436.532 Operating Expense Labor: Payroll $448.535 $465.542 $578.852 $557.442 $544.999 $546.333 Overtime 204.412 190.503 168.851 164.585 167.878 170.797 Total Salaries and Wages $652.947 $656.045 $747.703 $722.027 $712.877 $717.130 Health and Welfare 18.199 13.487 19.562 20.639 21.777 22.981 OPEB Current Payments 16.087 17.334 18.528 19.827 21.204 22.678 Pension 40.553 39.319 39.069 39.866 40.254 40.938 Other Fringe Benefits 219.670 216.295 249.857 239.161 233.447 233.859 Total Fringe Benefits $294.509 $286.435 $327.016 $319.493 $316.682 $320.456 Reimbursable Overhead 331.634 308.320 316.315 299.424 294.740 297.270 Total Labor Expenses $1,279.090 $1,250.800 $1,391.034 $1,340.944 $1,324.299 $1,334.857 Non-Labor: Electric Power $0.302 $0.252 $0.252 $0.252 $0.252 $0.252 Fuel 0.457 0.198 0.198 0.198 0.198 0.198 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 48.963 43.413 41.681 40.681 40.381 40.381 Professional Services Contracts 17.294 15.091 9.166 9.166 9.166 10.063 Materials and Supplies 75.751 58.088 59.284 53.888 51.643 51.643 Other Business Expenses 10.380 (0.984) (0.893) (0.877) (0.861) (0.861) Total Non-Labor Expenses $153.145 $116.058 $109.687 $103.307 $100.778 $101.675 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $1,432.235 $1,366.858 $1,500.721 $1,444.251 $1,425.077 $1,436.532 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p150_c0003] _Master Page # 150 of 237 - MTA Board Meeting 12/17/2025_
+[p150_c0004] _176_
+
+## Page 151
+
+### [p151_c0001] MTA NEW YORK CITY TRANSIT November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p151_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue: Subway $2,820.175 $2,971.535 $3,103.844 $3,155.798 $3,200.688 $3,200.125 Bus 614.946 654.541 732.928 771.272 793.249 792.518 Paratransit 26.950 33.108 39.584 43.543 45.720 48.006 Fare Media Liability 71.554 17.923 32.053 13.060 0.000 0.000 Farebox Revenue $3,533.626 $3,677.107 $3,908.408 $3,983.673 $4,039.656 $4,040.649 Other Operating Revenue: Fare Reimbursement 84.016 89.516 84.016 84.016 84.016 84.016 Paratransit Reimbursement 530.035 604.091 661.115 701.739 831.713 877.631 Other 2,512.905 3,309.558 203.031 199.834 204.615 208.443 Other Operating Revenue $3,126.956 $4,003.165 $948.162 $985.590 $1,120.344 $1,170.090 Capital and Other Reimbursements 1,432.235 1,366.858 1,500.721 1,444.251 1,425.077 1,436.532 Total Revenues $8,092.816 $9,047.130 $6,357.291 $6,413.513 $6,585.078 $6,647.270 Operating Expense Labor: Payroll $4,303.585 $4,477.861 $4,858.139 $4,897.902 $4,984.416 $5,075.707 Overtime 889.615 999.013 688.415 660.475 673.327 686.324 Total Salaries and Wages $5,193.200 $5,476.874 $5,546.554 $5,558.377 $5,657.743 $5,762.031 Health and Welfare 1,196.134 1,272.582 1,444.241 1,539.924 1,648.961 1,773.394 OPEB Current Payments 633.148 658.998 735.053 803.246 877.397 958.226 Pension 977.078 1,083.644 1,153.043 1,188.711 1,214.920 1,236.731 Other Fringe Benefits 721.854 972.936 916.697 954.252 1,000.588 1,049.700 Total Fringe Benefits $3,528.213 $3,988.160 $4,249.034 $4,486.133 $4,741.866 $5,018.051 Reimbursable Overhead (0.001) 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $8,721.413 $9,465.034 $9,795.588 $10,044.510 $10,399.610 $10,780.082 Non-Labor: Electric Power $324.618 $405.234 $384.188 $396.249 $417.895 $436.940 Fuel 122.369 123.307 132.246 130.464 130.889 134.531 Insurance 75.715 85.274 88.414 90.717 93.954 98.466 Claims 800.164 250.537 241.219 246.326 251.587 251.587 Paratransit Service Contracts 616.823 761.262 874.399 949.174 1,000.224 1,056.994 Maintenance and Other Operating Contracts 410.916 430.188 389.601 394.384 365.698 370.540 Professional Services Contracts 241.119 354.353 328.750 340.186 302.062 309.993 Materials and Supplies 421.771 475.816 468.669 445.893 457.152 483.119 Other Business Expenses 158.003 142.762 150.696 158.218 161.201 159.284 Total Non-Labor Expenses $3,171.497 $3,028.733 $3,058.182 $3,151.610 $3,180.662 $3,301.454 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $11,892.910 $12,493.767 $12,853.770 $13,196.120 $13,580.271 $14,081.536 Depreciation $2,244.257 $2,413.000 $2,437.000 $2,437.000 $2,437.000 $2,437.000 GASB 49 Environmental Remediation 41.015 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment (66.206) (66.000) (66.000) (66.000) (66.000) (66.000) GASB 75 OPEB Expense Adjustment 172.793 173.000 173.000 173.000 173.000 173.000 GASB 87 Lease Adjustment 30.923 31.000 31.000 31.000 31.000 31.000 GASB 96 SBITA Adjustment 0.320 0.000 0.000 0.000 0.000 0.000 GASB 101 Compensated Absences 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $2,423.102 $2,551.000 $2,575.000 $2,575.000 $2,575.000 $2,575.000 Total Expenses $14,316.012 $15,044.767 $15,428.770 $15,771.120 $16,155.271 $16,656.536 Net Surplus/(Deficit) ($6,223.196) ($5,997.636) ($9,071.479) ($9,357.607) ($9,570.194) ($10,009.266)
+```
+[p151_c0003] _Master Page # 151 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 152
+
+### [p152_c0001] MTA NEW YORK CITY TRANSIT November Financial Plan 2026 - 2029 Cash Receipts and Expenditures ($ in millions)
+[p152_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Farebox Revenue $3,442.876 $3,714.629 $3,908.608 $3,983.873 $4,039.856 $4,040.849 Other Operating Revenue: Fare Reimbursement 39.052 104.480 84.016 84.016 84.016 84.016 Paratransit Reimbursement 486.121 661.988 660.516 701.660 831.631 877.543 Other Revenue 210.046 251.506 203.031 199.834 204.615 208.443 Other Operating Revenue 735.219 1,017.974 947.563 985.510 1,120.262 1,170.002 Capital and Other Reimbursements 1,363.743 1,480.256 1,579.906 1,555.392 1,498.479 1,433.032 Total Receipts $5,541.838 $6,212.859 $6,436.077 $6,524.775 $6,658.597 $6,643.883 Expenditures Labor: Payroll $4,258.880 $4,578.440 $4,853.754 $4,854.035 $4,920.143 $5,028.686 Overtime 889.615 999.013 688.415 660.475 673.327 686.324 Total Salaries & Wages $5,148.495 $5,577.453 $5,542.169 $5,514.510 $5,593.470 $5,715.010 Health and Welfare 1,208.681 1,292.089 1,428.413 1,524.136 1,631.988 1,755.149 OPEB Current Payments 633.148 658.998 735.053 803.246 877.397 958.226 Pension 993.818 916.413 1,153.043 1,188.711 1,214.920 1,236.731 Other Fringe Benefits 611.718 666.248 686.180 685.891 712.143 742.696 Total Fringe Benefits $3,447.365 $3,533.748 $4,002.689 $4,201.984 $4,436.448 $4,692.802 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $8,595.860 $9,111.201 $9,544.858 $9,716.494 $10,029.918 $10,407.812 Non-Labor: Electric Power $329.144 $416.156 $395.110 $407.171 $428.817 $447.862 Fuel 121.554 123.307 132.246 130.464 130.889 134.531 Insurance 104.624 88.386 90.182 89.742 94.142 100.678 Claims 151.534 364.295 160.235 165.342 170.603 170.603 Paratransit Service Contracts 599.571 759.262 872.399 947.174 998.224 1,054.994 Maintenance and Other Operating Contracts 394.586 449.188 389.601 394.384 365.698 370.540 Professional Services Contracts 230.487 345.353 319.750 331.186 293.062 300.993 Materials and Supplies 460.731 471.316 464.169 441.393 452.652 478.619 Other Business Expenses 139.817 142.762 150.696 158.218 161.201 159.284 Total Non-Labor Expenditures $2,532.048 $3,160.025 $2,974.388 $3,065.073 $3,095.288 $3,218.104 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $11,127.908 $12,271.226 $12,519.247 $12,781.567 $13,125.206 $13,625.916 Net Cash Balance ($5,586.070) ($6,058.367) ($6,083.170) ($6,256.793) ($6,466.609) ($6,982.033)
+```
+[p152_c0003] _Master Page # 152 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 153
+
+### [p153_c0001] MTA NEW YORK CITY TRANSIT November Financial Plan 2026 - 2029 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p153_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Cash Flow Adjustments Receipts Farebox Revenue ($90.750) $37.522 $0.200 $0.200 $0.200 $0.200 Other Operating Revenue: Fare Reimbursement (44.964) 14.964 0.000 0.000 0.000 0.000 Paratransit Reimbursement (43.914) 57.897 (0.599) (0.080) (0.082) (0.088) Other Revenue (2,302.859) (3,058.053) 0.000 0.000 0.000 0.000 Other Operating Revenue ($2,391.737) ($2,985.192) ($0.599) ($0.080) ($0.082) ($0.088) Capital and Other Reimbursements (68.492) 113.398 79.185 111.141 73.401 (3.499) Total Receipts ($2,550.978) ($2,834.272) $78.786 $111.261 $73.520 ($3.387) Expenditures Labor: Payroll $44.705 ($100.578) $4.385 $43.866 $64.273 $47.021 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Total Salaries and Wages $44.705 ($100.578) $4.385 $43.866 $64.273 $47.021 Health and Welfare (12.547) (19.507) 15.828 15.788 16.973 18.245 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension (16.740) 167.231 0.000 0.000 0.000 0.000 Other Fringe Benefits 110.136 306.687 230.517 268.361 288.445 307.004 Total Fringe Benefits $80.848 $454.412 $246.345 $284.149 $305.418 $325.249 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead (0.001) 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $125.553 $353.833 $250.730 $328.016 $369.691 $372.270 Non-Labor: Electric Power ($4.526) ($10.922) (10.922) ($10.922) ($10.922) ($10.922) Fuel 0.815 0.000 0.000 0.000 0.000 0.000 Insurance (28.909) (3.112) (1.768) 0.975 (0.189) (2.212) Claims 648.630 (113.758) 80.984 80.984 80.984 80.984 Paratransit Service Contracts 17.252 2.000 2.000 2.000 2.000 2.000 Maintenance and Other Operating Contracts 16.330 (19.000) 0.000 0.000 0.000 0.000 Professional Services Contracts 10.632 9.000 9.000 9.000 9.000 9.000 Materials and Supplies (38.960) 4.500 4.500 4.500 4.500 4.500 Other Business Expenses 18.186 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenditures $639.449 ($131.292) $83.794 $86.537 $85.373 $83.350 Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $765.002 $222.541 $334.524 $414.553 $455.065 $455.620 Total Cash Conversion Adjustments before Depreciation ($1,785.977) ($2,611.730) $413.310 $525.814 $528.584 $452.233 Depreciation $2,244.257 $2,413.000 $2,437.000 $2,437.000 $2,437.000 $2,437.000 GASB 49 Environmental Remediation 41.015 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment (66.206) (66.000) (66.000) (66.000) (66.000) (66.000) GASB 75 OPEB Expense Adjustment 172.793 173.000 173.000 173.000 173.000 173.000 GASB 87 Lease Adjustment 30.923 31.000 31.000 31.000 31.000 31.000 GASB 96 SBITA Adjustment 0.320 0.000 0.000 0.000 0.000 0.000 GASB 101 Compensated Absences 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $2,423.102 $2,551.000 $2,575.000 $2,575.000 $2,575.000 $2,575.000 Total Cash Conversion Adjustments $637.126 ($60.731) $2,988.310 $3,100.814 $3,103.584 $3,027.233
+```
+[p153_c0003] _Master Page # 153 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 154
+
+### [p154_c0001] MTA NEW YORK CITY TRANSIT November Financial Plan 2026 - 2029 Ridership (Utilization) and Revenue (in millions)
+### [p154_c0002] RIDERSHIP
+[p154_c0003]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Subway 1,194.866 1,286.532 1,274.843 1,296.211 1,314.722 1,314.441 Bus 323.905 362.704 371.516 390.951 402.096 401.708 Paratransit 13.311 16.067 18.471 20.318 21.334 22.400 Total Ridership 1,532.082 1,665.303 1,664.830 1,707.480 1,738.152 1,738.550
+```
+### [p154_c0004] FAREBOX REVENUE (Excluding fare media liability)
+[p154_c0005]
+
+```text
+Subway $2,820.175 $2,971.535 $3,103.844 $3,155.798 $3,200.688 $3,200.125 Bus 614.946 654.541 732.928 771.272 793.249 792.518 Paratransit 26.950 33.108 39.584 43.543 45.720 48.006 Total Revenue $3,462.071 $3,659.184 $3,876.355 $3,970.613 $4,039.656 $4,040.649
+```
+[p154_c0006] _Master Page # 154 of 237 - MTA Board Meeting 12/17/2025_
+[p154_c0007] _11-30_
+
+## Page 155
+
+### [p155_c0001] MTA New York City Transit November Financial Plan 2026 - 2029 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time/Full-Time Equivalents
+[p155_c0002]
+
+```text
+2024 2025 Actual November Forecast 2026 2027 2028 2029 Administration Office of the Chief Administrative Officer 38 54 56 56 56 56 Office of the President 11 20 20 20 20 20 Law 129 195 191 191 191 191 Office of the EVP - - - - - - Human Resources 84 120 120 120 120 120 EEO - 11 11 11 11 11 Office of Management and Budget 9 33 33 33 33 33 Strategy & Customer Experience 118 165 165 165 165 165 Non-Departmental - (108) (62) (34) (34) (34) Labor Relations 37 89 89 89 89 89 Office of People & Business Transformation 25 42 16 16 16 16 Materiel 106 147 143 143 143 143 Controller 77 109 109 109 109 109 Total Administration 634 876 891 919 919 919 Operations Subways Operation Support /Admin 434 450 450 450 450 450 Subways Service Delivery 8,702 9,093 9,047 8,972 8,959 8,917 Subways Stations 2,219 2,319 2,319 2,319 2,319 2,319 Subtotal - Subways 11,355 11,862 11,816 11,741 11,728 11,686 Buses 11,447 11,548 11,583 11,583 11,583 11,583 Paratransit 180 192 195 195 195 195 Operations Planning 268 374 370 366 366 366 Revenue Control 477 520 505 505 505 505 Non-Departmental - (83) (9) (9) (9) (9) Total Operations 23,727 24,413 24,460 24,381 24,368 24,326 Maintenance Subways Operation Support /Admin 154 168 174 150 131 131 Subways Service Delivery 78 84 84 84 84 84 Subways Engineering 318 380 382 355 331 310 Subways Car Equipment 4,928 5,393 5,278 5,391 5,435 5,569 Subways Infrastructure 1,200 1,323 1,333 1,183 1,161 1,136 Subways Elevator & Escalators 386 434 435 435 435 409 Subways Stations 2,452 2,608 2,623 2,623 2,588 2,588 Subways Facilities 1,623 1,893 2,080 1,896 1,855 1,777 Subways Track 2,546 2,648 2,648 2,550 2,550 2,549 Subways Power 1,196 1,283 1,286 1,243 1,243 1,237 Subways Signals 1,628 1,736 1,732 1,710 1,705 1,692 Subways Electronics Maintenance 1,354 1,458 1,455 1,401 1,337 1,337 Subways Electronics Maintenance 17,862 19,410 19,512 19,023 18,857 18,821 Buses 3,382 3,585 3,546 3,437 3,432 3,429 Supply Logistics 505 524 524 524 524 524 System Safety 76 93 92 92 92 92 OHS 59 75 75 75 75 75 Non-Departmental - (245) (432) (200) (157) (70) Total Maintenance 21,885 23,442 23,317 22,951 22,823 22,871 Engineering/Capital Construction & Development 649 832 832 832 832 832 Matrixed C & D Support 75 81 81 81 81 81 Total Engineering/Capital 724 913 913 913 913 913 Public Safety Security 729 853 865 853 853 853 Total Public Safety 729 853 865 853 853 853 Total Baseline Positions 47,698 50,498 50,447 50,018 49,877 49,883 Non-Reimbursable 44,255 45,543 45,468 45,384 45,424 45,527 Reimbursable 3,443 4,954 4,978 4,633 4,452 4,355 Total Full-Time 47,606 50,343 50,291 49,862 49,721 49,727 Total Full-Time Equivalents 92 155 156 156 156 156
+```
+[p155_c0003] _Master Page # 155 of 237 - MTA Board Meeting 12/17/2025_
+[p155_c0004] _155_
+
+## Page 156
+
+### [p156_c0001] MTA NEW YORK CITY TRANSIT November Financial Plan 2026 - 2029 Total Positions By Function and Occupational Group
+[p156_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Administration Managers/Supervisors 143 304 308 320 320 320 Professional/Technical/Clerical 475 548 559 575 575 575 Operational Hourlies 16 24 24 24 24 24 Total Administration Headcount 634 876 891 919 919 919 Operations Managers/Supervisors 2,737 2,913 2,935 2,931 2,919 2,913 Professional/Technical/Clerical 418 459 448 448 448 446 Operational Hourlies 20,571 21,042 21,078 21,003 21,002 20,968 Total Operations Headcount 23,727 24,413 24,460 24,381 24,368 24,326 Maintenance Managers/Supervisors 3,972 4,227 4,290 4,183 4,095 4,041 Professional/Technical/Clerical 872 1,086 1,077 1,035 1,013 999 Operational Hourlies 17,041 18,129 17,950 17,733 17,715 17,831 Total Maintenance Headcount 21,885 23,442 23,317 22,951 22,823 22,871 Engineering / Capital Managers/Supervisors 339 349 349 349 349 349 Professional/Technical/Clerical 383 562 562 562 562 562 Operational Hourlies 2 2 2 2 2 2 Total Engineering Headcount 724 913 913 913 913 913 Public Safety Managers/Supervisors 377 474 486 474 474 474 Professional/Technical/Clerical 37 45 45 45 45 45 Operational Hourlies 315 334 334 334 334 334 Total Public Safety Headcount 729 853 865 853 853 853 Total Positions Managers/Supervisors 7,568 8,267 8,368 8,257 8,157 8,097 Professional/Technical/ Clerical 2,185 2,700 2,691 2,665 2,643 2,627 Operational Hourlies 37,945 39,531 39,388 39,096 39,077 39,159 Total Positions 47,698 50,498 50,447 50,018 49,877 49,883
+```
+[p156_c0003] _Master Page # 156 of 237 - MTA Board Meeting 12/17/2025_
+[p156_c0004] _142_
+
+## Page 157
+
+### [p157_c0001] MTA Bus Company
+[p157_c0002] _Master Page # 157 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 158
+
+### [p158_c0001] Staff Summary
+[p158_c0002] Metropolitan Transportation Authority
+### [p158_c0003] Page 1 of 2
+[p158_c0004]
+
+```text
+Subject MTA Bus 2026 Budget and 2026-2029 Financial Plan Adoption Department Office of the Chief Financial Officer Department Head Name Jaibala Patel, Chief Financial Officer Department Head Signature (Signature) Project Manager/Division Head Jacob Luce, OMB
+```
+[p158_c0005]
+
+```text
+Date December 8, 2025 Vendor Name Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p158_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 NYCT Comm. 12/15 X 2 Finance Comm. 12/15 X 3 Board 12/17 X
+```
+[p158_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 OMB 2 Financial Liaison 3 NYCT President (Signature)
+```
+### [p158_c0008] Purpose:
+[p158_c0009] To secure MTA Board adoption of MTA Bus Company's 2025 November Forecast, 2026 Final Proposed Budget, and the Four-Year Financial Plan for 2026-2029.
+### [p158_c0010] Discussion:
+[p158_c0011] The 2026 Final Proposed Budget, which is consistent with information presented to the Board in November 2025, provides sufficient funding to support MTA Bus Company's planned service levels, as well as MTA's commitment to provide safe, secure, reliable, and cost-efficient transportation service to the metropolitan New York region. The City of New York reimburses the MTA for the MTA Bus Company's operating deficits.
+[p158_c0012] The 2026 Final Proposed Budget reflects increases in revenue and expenses. The primary reasons for these changes include revenue fare increase and the timing of non-labor expenses. MTA Bus projections do not include MTA consolidated below-the-line adjustments, which are presented as part of MTA consolidated materials.
+### [p158_c0013] 2025 November Forecast – Baseline
+[p158_c0014] Total Non-Reimbursable operating revenues are budgeted at $209.5 million, including farebox revenues of $189.2 million and $20.3 million of Other Operating Revenue. Total Non-Reimbursable expenses are projected to be $968.2 million, consisting of labor expenses of $739.5 million and non-labor expenses of $228.6 million, with non-cash liability adjustments of $146.4 million. Projected Reimbursable expenses of $7.7 million are fully offset by capital reimbursements. Total end-of-year positions are projected at 4,052, consisting of 4,014 non-reimbursable positions and 38 reimbursable positions.
+### [p158_c0015] 2026 Final Proposed Budget – Baseline
+[p158_c0016] Total Non-Reimbursable operating revenues are budgeted at $226.5 million, including farebox revenues of $206.4 million and $20.0 million of Other Operating Revenue. Total non-reimbursable expenses are projected to be $1,016.1 million in 2026, consisting of labor expenses of $772.8 million and non-labor expenses of $243.3 million, with non-cash liability adjustments of $143.3 million. Projected reimbursable expenses of $7.8 million are fully offset by capital reimbursements. Total end-of-year positions are projected at 4,057, consisting of 4,019 non-reimbursable positions and 38 reimbursable positions.
+[p158_c0017] _Master Page # 158 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 159
+
+### [p159_c0001] Staff Summary
+### [p159_c0002] Metropolitan Transportation Authority
+### [p159_c0003] Page 2 of 2
+### [p159_c0004] Impact on Funding
+[p159_c0005] The 2025 November Forecast, the 2026 Final Proposed Budget, and the Four-Year Financial Plan for 2026-2029, which are presented in the attached tables, are consistent with the proposed MTA Financial Plan.
+### [p159_c0006] Recommendation:
+[p159_c0007] It is recommended that the MTA Board adopt the 2025 November Forecast, the 2026 Final Proposed Budget, and the Four-Year Financial Plan for 2026-2029 for the MTA Bus Company.
+[p159_c0008] _Master Page # 159 of 237 - MTA Board Meeting 12/17/2025_
+[p159_c0009] _1144_
+
+## Page 160
+
+### [p160_c0001] MTA BUS COMPANY November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p160_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenue Farebox Revenue $183.645 $189.205 $206.443 $213.927 $217.383 $217.256 Other Operating Revenue 13.759 20.330 20.035 19.790 19.871 19.953 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $197.404 $209.535 $226.478 $233.717 $237.254 $237.209 Operating Expense Labor: Payroll $327.949 $345.751 $360.186 $366.990 $374.238 $381.638 Overtime 91.801 95.325 97.459 100.063 102.064 104.106 Health and Welfare 106.459 114.541 121.402 128.435 135.876 143.748 OPEB Current Payments 32.088 33.687 35.719 37.787 39.976 42.292 Pension 59.931 65.640 71.910 71.560 70.360 70.590 Other Fringe Benefits 74.683 85.868 87.439 88.138 88.943 89.793 Reimbursable Overhead (3.131) (1.269) (1.278) (1.285) (1.292) (1.299) Total Labor Expenses $689.779 $739.544 $772.837 $791.690 $810.165 $830.868 Non-Labor: Electric Power $1.909 $2.196 $2.549 $2.651 $2.830 $2.969 Fuel 29.156 30.351 29.512 29.203 29.224 30.175 Insurance 6.951 10.267 11.167 11.644 12.483 12.829 Claims 78.667 58.838 60.115 61.516 62.863 64.202 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 33.739 36.135 38.480 37.472 37.408 37.390 Professional Services Contracts 36.743 38.851 49.141 52.119 45.865 45.819 Materials and Supplies 39.230 44.339 44.665 42.348 43.243 44.052 Other Business Expenses 7.356 7.672 7.672 7.775 7.818 7.899 Total Non-Labor Expenses $233.750 $228.650 $243.301 $244.729 $241.735 $245.336 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $923.529 $968.194 $1,016.138 $1,036.419 $1,051.900 $1,076.204 Depreciation $65.194 $72.000 $72.000 $72.000 $72.000 $72.000 GASB 49 Environmental Remediation 0.680 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment (3.997) 10.840 5.610 (5.540) 20.160 15.090 GASB 75 OPEB Expense Adjustment 27.706 62.488 64.583 66.754 68.926 71.162 GASB 87 Lease Adjustment (0.027) 0.001 0.001 0.001 0.001 0.001 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 101 Compensated Absences 0.000 1.100 1.136 1.159 1.182 1.206 Total Non-Cash Liability Adjustments $89.556 $146.429 $143.330 $134.374 $162.269 $159.459 Total Expenses $1,013.085 $1,114.624 $1,159.469 $1,170.793 $1,214.169 $1,235.663 Net Surplus/(Deficit) ($815.682) ($905.089) ($932.991) ($937.075) ($976.916) ($998.454)
+```
+[p160_c0003] _Master Page # 160 of 237 - MTA Board Meeting 12/17/2025_
+[p160_c0004] _145_
+
+## Page 161
+
+### [p161_c0001] MTA BUS COMPANY November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p161_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 6.640 7.663 7.786 7.895 8.006 8.119 Total Revenues $6.640 $7.663 $7.786 $7.895 $8.006 $8.119 Operating Expense Labor: Payroll $3.652 $4.729 $4.837 $4.933 $5.032 $5.133 Overtime 0.088 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 1.664 1.672 1.677 1.682 1.687 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.061 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 2.840 1.269 1.278 1.285 1.292 1.299 Total Labor Expenses $6.640 $7.663 $7.786 $7.895 $8.006 $8.119 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $6.640 $7.663 $7.786 $7.895 $8.006 $8.119 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p161_c0003] _Master Page # 161 of 237 - MTA Board Meeting 12/17/2025_
+[p161_c0004] _11-36_
+
+## Page 162
+
+### [p162_c0001] MTA BUS COMPANY November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p162_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $183.645 $189.205 $206.443 $213.927 $217.383 $217.256 Other Operating Revenue 13.759 20.330 20.035 19.790 19.871 19.953 Capital and Other Reimbursements 6.640 7.663 7.786 7.895 8.006 8.119 Total Revenues $204.043 $217.197 $234.264 $241.613 $245.260 $245.328 Operating Expense Labor: Payroll $331.601 $350.480 $365.023 $371.924 $379.270 $386.771 Overtime 91.889 95.325 97.459 100.063 102.064 104.106 Health and Welfare 106.459 116.206 123.074 130.112 137.558 145.436 OPEB Current Payments 32.088 33.687 35.719 37.787 39.976 42.292 Pension 59.931 65.640 71.910 71.560 70.360 70.590 Other Fringe Benefits 74.743 85.868 87.439 88.138 88.943 89.793 Reimbursable Overhead (0.291) 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $696.419 $747.207 $780.623 $799.585 $818.171 $838.987 Non-Labor: Electric Power $1.909 $2.196 $2.549 $2.651 $2.830 $2.969 Fuel 29.156 30.351 29.512 29.203 29.224 30.175 Insurance 6.951 10.267 11.167 11.644 12.483 12.829 Claims 78.667 58.838 60.115 61.516 62.863 64.202 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 33.739 36.135 38.480 37.472 37.408 37.390 Professional Services Contracts 36.743 38.851 49.141 52.119 45.865 45.819 Materials and Supplies 39.230 44.339 44.665 42.348 43.243 44.052 Other Business Expenses 7.356 7.672 7.672 7.775 7.818 7.899 Total Non-Labor Expenses $233.750 $228.650 $243.301 $244.729 $241.735 $245.336 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $930.169 $975.857 $1,023.924 $1,044.314 $1,059.906 $1,084.323 Depreciation $65.194 $72.000 $72.000 $72.000 $72.000 $72.000 GASB 49 Environmental Remediation 0.680 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment (3.997) 10.840 5.610 (5.540) 20.160 15.090 GASB 75 OPEB Expense Adjustment 27.706 62.488 64.583 66.754 68.926 71.162 GASB 87 Lease Adjustment (0.027) 0.001 0.001 0.001 0.001 0.001 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 101 Compensated Absences 0.000 1.100 1.136 1.159 1.182 1.206 Total Non-Cash Liability Adjustments $89.556 $146.429 $143.330 $134.374 $162.269 $159.459 Total Expenses $1,019.725 $1,122.286 $1,167.255 $1,178.688 $1,222.175 $1,243.782 Net Surplus/(Deficit) ($815.682) ($905.089) ($932.991) ($937.075) ($976.916) ($998.454)
+```
+[p162_c0003] _Master Page # 162 of 237 - MTA Board Meeting 12/17/2025_
+[p162_c0004] _147_
+
+## Page 163
+
+### [p163_c0001] MTA BUS COMPANY November Financial Plan 2026 - 2029 Cash Receipts and Expenditures ($ in millions)
+[p163_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Farebox Revenue $181.401 $189.205 $206.443 $213.927 $217.383 $217.256 Other Operating Revenue 159.760 240.578 77.368 19.790 19.871 19.953 Capital and Other Reimbursements 5.981 8.321 7.785 7.894 8.005 8.119 Total Receipts $347.142 $438.104 $291.596 $241.612 $245.259 $245.328 Expenditures Labor: Payroll $327.092 $365.761 $364.604 $371.505 $378.850 $386.352 Overtime 92.233 95.326 97.459 100.063 102.064 104.106 Health and Welfare 101.247 121.406 123.074 130.113 137.559 145.436 OPEB Current Payments 33.200 33.687 35.718 37.787 39.976 42.291 Pension 0.000 67.290 71.910 71.560 70.360 70.590 Other Fringe Benefits 70.588 70.684 72.255 72.954 73.759 74.609 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $624.359 $754.154 $765.020 $783.981 $802.568 $823.384 Non-Labor: Electric Power $4.775 $2.196 $2.550 $2.652 $2.830 $2.970 Fuel 28.523 30.352 29.512 29.203 29.224 30.175 Insurance 14.978 10.266 11.167 11.644 12.483 12.829 Claims 50.328 52.910 52.910 52.910 52.910 52.910 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 34.914 42.426 39.330 38.342 38.296 38.296 Professional Services Contracts 38.176 56.021 48.291 51.250 44.978 44.913 Materials and Supplies 40.477 44.339 44.665 42.348 43.243 44.052 Other Business Expenses 7.358 7.672 7.672 7.775 7.819 7.900 Total Non-Labor Expenditures $219.529 $246.183 $236.097 $236.124 $231.783 $234.044 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $843.888 $1,000.337 $1,001.117 $1,020.105 $1,034.351 $1,057.428 Net Cash Balance ($496.746) ($562.233) ($709.521) ($778.493) ($789.092) ($812.100)
+```
+[p163_c0003] _Master Page # 163 of 237 - MTA Board Meeting 12/17/2025_
+[p163_c0004] _11-89_
+
+## Page 164
+
+### [p164_c0001] MTA BUS COMPANY November Financial Plan 2026 - 2029 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p164_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Cash Flow Adjustments Receipts Farebox Revenue ($2,244) $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 146.002 220.248 57.333 0.000 0.000 0.000 Capital and Other Reimbursements (0.659) 0.659 0.000 (0.001) 0.000 0.000 Total Receipts $143.099 $220.907 $57.333 ($0.001) ($0.001) $0.000 Expenditures Labor: Payroll $4.508 ($15.281) $0.419 $0.419 $0.419 $0.419 Overtime (0.344) 0.000 0.000 0.000 0.000 0.000 Health and Welfare 5.212 (5.201) (0.001) (0.001) (0.001) (0.001) OPEB Current Payments (1.112) 0.000 0.001 0.001 0.000 0.000 Pension 59.931 (1.650) 0.000 0.000 0.000 0.000 Other Fringe Benefits 4.155 15.184 15.184 15.184 15.184 15.184 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead (0.291) 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $72.060 ($6.947) $15.603 $15.604 $15.603 $15.603 Non-Labor: Electric Power ($2.867) $0.000 0.000 $0.000 $0.000 $0.000 Fuel 0.633 (0.001) 0.000 0.000 0.000 0.000 Insurance (8.028) 0.000 0.000 0.000 0.000 0.000 Claims 28.339 5.928 7.205 8.606 9.953 11.292 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts (1.175) (6.291) (0.850) (0.870) (0.888) (0.906) Professional Services Contracts (1.432) (17.169) 0.850 0.869 0.888 0.906 Materials and Supplies (1.247) 0.001 0.001 0.001 0.001 0.001 Other Business Expenses (0.002) 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenditures $14.221 ($17.533) $7.204 $8.605 $9.952 $11.292 Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $86.281 ($24.480) $22.808 $24.209 $25.555 $26.895 Total Cash Conversion Adjustments before Depreciation $229.380 $196.427 $80.140 $24.208 $25.554 $26.895 Depreciation $65.194 $72.000 $72.000 $72.000 $72.000 $72.000 GASB 49 Environmental Remediation 0.680 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment (3.997) 10.840 5.610 (5.540) 20.160 15.090 GASB 75 OPEB Expense Adjustment 27.706 62.488 64.583 66.754 68.926 71.162 GASB 87 Lease Adjustment (0.027) 0.001 0.001 0.001 0.001 0.001 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 101 Compensated Absences 0.000 1.100 1.136 1.159 1.182 1.206 Total Non-Cash Liability Adjustments $89.556 $146.429 $143.330 $134.374 $162.269 $159.459 Total Cash Conversion Adjustments $318.936 $342.856 $223.470 $158.582 $187.823 $186.353
+```
+[p164_c0003] _Master Page # 164 of 237 - MTA Board Meeting 12/17/2025_
+[p164_c0004] _149_
+
+## Page 165
+
+### [p165_c0001] MTA BUS COMPANY November Financial Plan 2026 - 2029 Ridership (Utilization) and Revenue (in millions)
+### [p165_c0002] RIDERSHIP
+[p165_c0003]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Fixed Route 85.129 93.027 92.673 96.036 97.513 97.389 Total Ridership 85.129 93.027 92.673 96.036 97.513 97.389
+```
+### [p165_c0004] FAREBOX REVENUE
+[p165_c0005]
+
+```text
+Fixed Route Farebox Revenue $183.645 $189.205 $206.443 $213.927 $217.383 $217.256 Farebox Revenue $183.645 $189.205 $206.443 $213.927 $217.383 $217.256
+```
+[p165_c0006] _Master Page # 165 of 237 - MTA Board Meeting 12/17/2025_
+[p165_c0007] _11/30_
+
+## Page 166
+
+### [p166_c0001] MTA BUS COMPANY November Financial Plan 2026-2029 Total Positions by Function & Department Non-Reimbursable/Reimbursable and Full-Time/Full-Time Equivalents
+[p166_c0002]
+
+```text
+FUNCTION/DEPARTMENT Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Administration Office of the EVP 4 5 5 5 5 5 Human Resources 3 13 13 13 13 13 Office of Management and Budget 11 16 17 17 17 17 Materiel 10 15 15 15 15 15 Controller 14 19 19 19 19 19 Office of the President 3 10 11 11 11 11 System Safety Administration 0 0 0 0 0 0 Law 10 20 20 20 20 20 Strategic Office 24 22 26 26 26 26 Non Departmental 0 0 0 0 0 0 Total Administration 79 120 126 126 126 126 Operations Buses 2,386 2,466 2,466 2,466 2,466 2,466 Office of the Executive Vice President, Regional 3 3 3 3 3 3 Safety & Training 136 68 68 68 68 68 Road Operations 124 134 134 132 132 132 Transportation Support 31 33 33 33 33 33 Operations Planning 30 33 33 33 33 33 Revenue Control 5 6 6 6 6 6 Total Operations 2,715 2,743 2,743 2,741 2,741 2,741 Maintenance Buses 692 731 731 730 730 730 Maintenance Support/CMF 216 228 227 227 227 227 Facilities 61 87 87 87 87 87 Supply Logistics 88 104 104 104 104 104 Total Maintenance 1,057 1,150 1,149 1,148 1,148 1,148 Engineering/Capital Capital Program Management 22 26 26 26 26 26 Public Safety Office of the Senior Vice President 11 13 13 13 13 13 Total Positions 3,884 4,052 4,057 4,054 4,054 4,054 Non-Reimbursable 3,849 4,014 4,019 4,016 4,016 4,016 Reimbursable 35 38 38 38 38 38 Total Full-Time 3,884 4,034 4,039 4,036 4,036 4,036 Total Full-Time Equivalents - 18 18 18 18 18
+```
+[p166_c0003] _Master Page # 166 of 237 - MTA Board Meeting 12/17/2025_
+[p166_c0004] _154_
+
+## Page 167
+
+### [p167_c0001] MTA BUS COMPANY November Financial Plan 2026 - 2029 Total Positions By Function and Occupational Group
+[p167_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Administration Managers/Supervisors 30 56 56 56 56 56 Professional/Technical/Clerical 49 64 70 70 70 70 Operational Hourlies 0 0 0 0 0 0 Total Administration Headcount 79 120 126 126 126 126 Operations Managers/Supervisors 314 319 319 317 317 317 Professional/Technical/Clerical 39 45 45 45 45 45 Operational Hourlies 2,362 2,379 2,379 2,379 2,379 2,379 Total Operations Headcount 2,715 2,743 2,743 2,741 2,741 2,741 Maintenance Managers/Supervisors 230 251 251 251 251 251 Professional/Technical/Clerical 28 37 36 36 36 36 Operational Hourlies 799 862 862 861 861 861 Total Maintenance Headcount 1,057 1,150 1,149 1,148 1,148 1,148 Engineering / Capital Managers/Supervisors 13 15 15 15 15 15 Professional/Technical/Clerical 9 11 11 11 11 11 Operational Hourlies 0 0 0 0 0 0 Total Engineering Headcount 22 26 26 26 26 26 Public Safety Managers/Supervisors 6 8 8 8 8 8 Professional/Technical/Clerical 5 5 5 5 5 5 Operational Hourlies 0 0 0 0 0 0 Total Public Safety Headcount 11 13 13 13 13 13 Total Positions Managers/Supervisors 593 649 649 647 647 647 Professional/Technical/ Clerical 130 162 167 167 167 167 Operational Hourlies 3,161 3,241 3,241 3,240 3,240 3,240 Total Positions 3,884 4,052 4,057 4,054 4,054 4,054
+```
+[p167_c0003] _Master Page # 167 of 237 - MTA Board Meeting 12/17/2025_
+[p167_c0004] _1142_
+
+## Page 168
+
+### [p168_c0001] Staten Island Railway
+[p168_c0002] _Master Page # 168 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 169
+
+### [p169_c0001] Staff Summary
+### [p169_c0002] Metropolitan Transportation Authority
+### [p169_c0003] Page 1 of 2
+[p169_c0004]
+
+```text
+Subject MTA SIR 2026 Budget and 2026-2029 Financial Plan Adoption Department Office of the Chief Financial Officer Department Head Name Jaibala Patel, Chief Financial Officer Department Head Signature Project Manager/Division Head Jacob Luce, OMB
+```
+[p169_c0005]
+
+```text
+Date December 8, 2025 Vendor Name Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p169_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 NYCT Comm. 12/15 X 2 Finance Comm. 12/15 X 3 Board 12/17 X
+```
+[p169_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 OMB 2 Financial Liaison 3 NYCT President
+```
+### [p169_c0008] Purpose:
+[p169_c0009] To secure MTA Board adoption of MTA Staten Island Railway’s 2025 November Forecast, 2026 Final Proposed Budget, and the Four-Year Financial Plan for 2026-2029.
+### [p169_c0010] Discussion:
+[p169_c0011] The 2026 Final Proposed Budget, which is consistent with information presented to the Board in November 2025, provides funding to maintain SIR’s commitment to delivering safe, secure, and reliable transportation and first-class customer service.
+[p169_c0012] The 2026 Final Proposed Budget reflects increases in revenue and expenses. The primary reasons for these changes include revenue fare increase and the timing of non-labor expenses. The SIR’s projections do not include MTA consolidated below-the-line adjustments which are presented as part of MTA consolidated materials.
+### [p169_c0013] 2025 November Forecast – Baseline
+[p169_c0014] The 2025 Non-Reimbursable forecast reflects revenues projected at $6.3 million, including farebox revenues of $3.8 million and other operating revenue of $2.5 million. Total Non-Reimbursable expenses are projected to be $81.6 million, consisting of labor expenses of $61.3 million and non-labor expenses of $20.3 million, with non-cash liability adjustments of $23.9 million. Projected reimbursable expenses of $7.6 million are fully offset by capital reimbursements. Total baseline full-time and full-time equivalent positions are 435, including 381 non-reimbursable and 54 reimbursable positions.
+### [p169_c0015] 2026 Final Proposed Budget – Baseline
+[p169_c0016] The 2026 Final Proposed Budget reflects total revenues of $13.4 million, of which $5.7 million are operating revenues and $7.7 million are capital and other reimbursements. Non-reimbursable expenses (before depreciation and GASB adjustments) are $8.0 million higher than the Mid-Year Forecast, primarily due to the timing of non-labor expenses, which include $4.6 million in maintenance and other operating expenses, and $2.9 million in professional service contract expenses. The total number of baseline full-time and full-time equivalent positions is 428, including 374 non-reimbursable positions and 54 reimbursable positions, reflecting no change in positions from the Mid-Year Forecast.
+[p169_c0017] _Master Page # 169 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 170
+
+### [p170_c0001] Staff Summary
+### [p170_c0002] Metropolitan Transportation Authority
+### [p170_c0003] Page 2 of 2
+### [p170_c0004] Impact on Funding
+[p170_c0005] The 2025 November Forecast, the 2026 Final Proposed Budget and the Four-Year Financial Plan for 2026-2029, which are presented in the attached tables, are consistent with the proposed MTA Financial Plan.
+### [p170_c0006] Recommendation:
+[p170_c0007] It is recommended that the MTA Board adopt the 2025 November Forecast, the 2026 Final Proposed Budget and the Four-Year Financial Plan for 2026-2029 for MTA Staten Island Railway.
+[p170_c0008] _Master Page # 170 of 237 - MTA Board Meeting 12/17/2025_
+[p170_c0009] _1144_
+
+## Page 171
+
+### [p171_c0001] MTA STATEN ISLAND RAILWAY November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p171_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Non-Reimbursable Operating Revenue Farebox Revenue $3.866 $3.775 $4.126 $4.127 $4.158 $4.158 Other Operating Revenue 2.188 2.493 1.521 1.474 1.490 1.506 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $6.054 $6.268 $5.647 $5.601 $5.648 $5.664 Operating Expense Labor: Payroll $30.551 $34.171 $34.506 $34.705 $33.558 $33.622 Overtime 4.011 3.758 3.642 3.859 3.431 3.440 Health and Welfare 6.451 9.936 10.650 10.089 10.417 10.475 OPEB Current Payments 4.395 3.282 3.300 3.318 3.818 3.818 Pension 7.447 8.380 9.270 9.230 9.080 9.110 Other Fringe Benefits 1.446 1.813 1.957 3.283 3.137 3.136 Reimbursable Overhead 0.015 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $54.316 $61.340 $63.325 $64.484 $63.441 $63.601 Non-Labor: Electric Power $5.020 $5.905 $6.919 $7.056 $7.438 $7.591 Fuel 0.295 0.350 0.338 0.334 0.333 0.350 Insurance 1.532 2.338 2.945 2.943 3.185 3.244 Claims 7.231 0.887 0.887 0.887 0.887 0.887 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 3.362 5.808 10.603 4.130 4.079 4.080 Professional Services Contracts 2.015 2.282 4.263 1.265 1.232 1.218 Materials and Supplies 3.539 1.482 1.471 1.289 1.288 1.311 Other Business Expenses 0.923 1.235 0.438 0.441 0.442 0.447 Total Non-Labor Expenses $23.918 $20.288 $27.864 $18.344 $18.885 $19.128 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $78.234 $81.627 $91.190 $82.828 $82.326 $82.729 Depreciation $24.589 $17.500 $17.500 $17.500 $17.500 $17.500 GASB 49 Environmental Remediation 0.127 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 2.025 0.320 0.430 1.770 (1.880) (1.910) GASB 75 OPEB Expense Adjustment 0.951 5.601 5.789 5.984 6.178 6.379 GASB 87 Lease Adjustment 0.185 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 101 Compensated Absences 0.000 0.410 0.418 0.427 0.435 0.444 Total Non-Cash Liability Adjustments $27.878 $23.831 $24.137 $25.681 $22.233 $22.413 Total Expenses $106.112 $105.458 $115.327 $108.508 $104.559 $105.142 Net Surplus/(Deficit) ($100.057) ($99.191) ($109.679) ($102.907) ($98.911) ($99.478)
+```
+[p171_c0003] _Master Page # 171 of 237 - MTA Board Meeting 12/17/2025_
+[p171_c0004] _11.95_
+
+## Page 172
+
+### [p172_c0001] MTA STATEN ISLAND RAILWAY November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p172_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 6.225 7.635 7.713 4.211 4.323 4.320 Total Revenues $6.225 $7.635 $7.713 $4.211 $4.323 $4.320 Operating Expense Labor: Payroll $1.524 $4.255 $4.301 $2.363 $2.412 $2.412 Overtime 1.752 0.950 0.952 0.825 0.844 0.843 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 2.927 2.430 2.460 1.022 1.067 1.066 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $6.203 $7.635 $7.713 $4.210 $4.323 $4.321 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.028 0.000 0.000 0.000 0.000 0.000 Materials and Supplies (0.006) 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $0.022 $0.000 $0.000 $0.000 $0.000 $0.000 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $6.225 $7.635 $7.713 $4.210 $4.323 $4.321 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.001 $0.000 ($0.001)
+```
+[p172_c0003] _Master Page # 172 of 237 - MTA Board Meeting 12/17/2025_
+[p172_c0004] _11.96_
+
+## Page 173
+
+### [p173_c0001] MTA STATEN ISLAND RAILWAY November Financial Plan 2026 - 2029 Accrual Statement of Operations By Category ($ in millions)
+[p173_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $3.866 $3.775 $4.126 $4.127 $4.158 $4.158 Other Operating Revenue 2.188 2.493 1.521 1.474 1.490 1.506 Capital and Other Reimbursements 6.225 7.635 7.713 4.211 4.323 4.320 Total Revenues $12.279 $13.903 $13.360 $9.812 $9.971 $9.984 Operating Expense Labor: Payroll $32.075 $38.426 $38.807 $37.068 $35.970 $36.034 Overtime 5.763 4.708 4.594 4.684 4.275 4.283 Health and Welfare 6.451 9.936 10.650 10.089 10.417 10.475 OPEB Current Payments 4.395 3.282 3.300 3.318 3.818 3.818 Pension 7.447 8.380 9.270 9.230 9.080 9.110 Other Fringe Benefits 4.373 4.243 4.417 4.305 4.204 4.202 Reimbursable Overhead 0.015 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $60.519 $68.975 $71.038 $68.694 $67.764 $67.922 Non-Labor: Electric Power $5.020 $5.905 $6.919 $7.056 $7.438 $7.591 Fuel 0.295 0.350 0.338 0.334 0.333 0.350 Insurance 1.532 2.338 2.945 2.943 3.185 3.244 Claims 7.231 0.887 0.887 0.887 0.887 0.887 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 3.362 5.808 10.603 4.130 4.079 4.080 Professional Services Contracts 2.043 2.282 4.263 1.265 1.232 1.218 Materials and Supplies 3.533 1.482 1.471 1.289 1.288 1.311 Other Business Expenses 0.923 1.235 0.438 0.441 0.442 0.447 Total Non-Labor Expenses $23.940 $20.288 $27.864 $18.344 $18.885 $19.128 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $84.459 $89.262 $98.903 $87.038 $86.649 $87.050 Depreciation $24.589 $17.500 $17.500 $17.500 $17.500 $17.500 GASB 49 Environmental Remediation 0.127 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 2.025 0.320 0.430 1.770 (1.880) (1.910) GASB 75 OPEB Expense Adjustment 0.951 5.601 5.789 5.984 6.178 6.379 GASB 87 Lease Adjustment 0.185 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 101 Compensated Absences 0.000 0.410 0.418 0.427 0.435 0.444 Total Non-Cash Liability Adjustments $27.878 $23.831 $24.137 $25.681 $22.233 $22.413 Total Expenses $112.337 $113.093 $123.040 $112.718 $108.882 $109.463 Net Surplus/(Deficit) ($100.057) ($99.191) ($109.679) ($102.906) ($98.911) ($99.479)
+```
+[p173_c0003] _Master Page # 173 of 237 - MTA Board Meeting 12/17/2025_
+[p173_c0004] _147_
+
+## Page 174
+
+### [p174_c0001] MTA STATEN ISLAND RAILWAY November Financial Plan 2026 - 2029 Cash Receipts and Expenditures ($ in millions)
+[p174_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Cash Receipts and Expenditures Receipts Farebox Revenue $3.892 $3.774 $4.126 $4.127 $4.158 $4.158 Other Operating Revenue 12.853 2.493 1.521 1.474 1.490 1.506 Capital and Other Reimbursements 8.563 7.635 7.713 4.211 4.323 4.320 Total Receipts $25.307 $13.902 $13.360 $9.812 $9.971 $9.984 Expenditures Labor: Payroll $31.123 $39.555 $38.715 $36.973 $35.784 $35.848 Overtime 5.610 4.707 4.595 4.684 4.275 4.280 Health and Welfare 9.137 9.936 10.650 10.089 10.417 10.475 OPEB Current Payments 2.721 3.282 3.300 3.318 3.818 3.818 Pension 0.000 8.310 9.270 9.230 9.080 9.110 Other Fringe Benefits 2.532 2.899 2.980 2.870 2.760 2.756 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $51.124 $68.689 $69.510 $67.164 $66.134 $66.287 Non-Labor: Electric Power $4.869 $6.209 $6.919 $6.819 $7.201 $7.354 Fuel 0.280 0.350 0.338 0.326 0.325 0.342 Insurance 1.278 2.338 2.945 2.943 3.185 3.244 Claims 0.431 1.005 0.500 0.500 0.500 0.500 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 3.686 5.808 10.603 4.130 4.079 4.080 Professional Services Contracts 1.939 2.482 4.463 1.465 1.432 1.418 Materials and Supplies 3.544 1.482 1.471 1.289 1.288 1.311 Other Business Expenses 0.401 1.035 0.238 0.241 0.242 0.247 Total Non-Labor Expenditures $16.427 $20.710 $27.477 $17.712 $18.253 $18.496 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $67.551 $89.398 $96.988 $84.876 $84.387 $84.783 Net Cash Balance ($42.243) ($75.496) ($83.627) ($75.063) ($74.416) ($74.799)
+```
+[p174_c0003] _Master Page # 174 of 237 - MTA Board Meeting 12/17/2025_
+[p174_c0004] _11.99_
+
+## Page 175
+
+### [p175_c0001] MTA STATEN ISLAND RAILWAY November Financial Plan 2026 - 2029 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p175_c0002]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Cash Flow Adjustments Receipts Farebox Revenue $0.026 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 10.665 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 2.338 0.000 0.000 0.000 0.000 0.000 Total Receipts $13.028 $0.000 $0.000 $0.000 $0.000 $0.000 Expenditures Labor: Payroll $0.953 ($1.129) $0.092 $0.095 $0.186 $0.186 Overtime 0.153 0.001 (0.001) 0.000 0.000 0.003 Health and Welfare (2.686) 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 1.673 0.000 0.000 0.000 0.000 0.000 Pension 7.447 0.070 0.000 0.000 0.000 0.000 Other Fringe Benefits 1.842 1.344 1.437 1.435 1.444 1.446 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.015 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $9.395 $0.286 $1.528 $1.530 $1.630 $1.635 Non-Labor: Electric Power $0.152 ($0.304) 0.000 $0.237 $0.237 $0.237 Fuel 0.015 0.000 0.000 0.008 0.008 0.008 Insurance 0.254 0.000 0.000 0.000 0.000 0.000 Claims 6.800 (0.118) 0.387 0.387 0.387 0.387 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts (0.324) 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.104 (0.200) (0.200) (0.200) (0.200) (0.200) Materials and Supplies (0.011) 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.523 0.200 0.200 0.200 0.200 0.200 Total Non-Labor Expenditures $7.513 ($0.422) $0.387 $0.632 $0.632 $0.632 Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $16.908 ($0.136) $1.915 $2.162 $2.262 $2.267 Total Cash Conversion Adjustments before Depreciation $29.937 ($0.136) $1.915 $2.162 $2.262 $2.267 Depreciation $24.589 $17.500 $17.500 $17.500 $17.500 $17.500 GASB 49 Environmental Remediation 0.127 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 2.025 0.320 0.430 1.770 (1.880) (1.910) GASB 75 OPEB Expense Adjustment 0.951 5.601 5.789 5.984 6.178 6.379 GASB 87 Lease Adjustment 0.185 0.000 0.000 0.000 0.000 0.000 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 101 Compensated Absences 0.000 0.410 0.418 0.427 0.435 0.444 Total Non-Cash Liability Adjustments $27.878 $23.831 $24.137 $25.681 $22.233 $22.413 Total Cash Conversion Adjustments $57.814 $23.695 $26.052 $27.843 $24.495 $24.680
+```
+[p175_c0003] _Master Page # 175 of 237 - MTA Board Meeting 12/17/2025_
+[p175_c0004] _11/19_
+
+## Page 176
+
+### [p176_c0001] MTA STATEN ISLAND RAILWAY November Financial Plan 2026 - 2029 Ridership (Utilization) and Revenue (in millions)
+### [p176_c0002] RIDERSHIP
+[p176_c0003]
+
+```text
+Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Fixed Route 2.299 2.408 2.390 2.390 2.408 2.408
+```
+### [p176_c0004] FAREBOX REVENUE
+[p176_c0005]
+
+```text
+Fixed Route Farebox Revenue $3.866 $3.775 $4.126 $4.127 $4.158 $4.158
+```
+[p176_c0006]
+
+```text
+Farebox Revenue $3.866 $3.775 $4.126 $4.127 $4.158 $4.158
+```
+[p176_c0007] _Master Page # 176 of 237 - MTA Board Meeting 12/17/2025_
+[p176_c0008] _11/100_
+
+## Page 177
+
+### [p177_c0001] MTA STATEN ISLAND RAILWAY November Financial Plan 2026-2029 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time/Full Time Equivalents
+[p177_c0002]
+
+```text
+FUNCTION/DEPARTMENT 2024 Actual 2025 2026 2027 2028 2029 Administration Executive 6 8 8 8 8 8 General Office 18 20 20 20 20 20 Purchasing/Stores 4 4 4 4 4 4 Total Administration 28 32 32 32 32 32 Operations Transportation 143 157 155 145 145 145 Maintenance Mechanical 53 61 56 55 55 55 Electronic/Electrical 21 25 25 25 25 25 Power/Signals 31 33 33 33 32 32 Maintenance of Way 86 92 92 79 60 60 Infrastructure 25 29 29 29 29 29 Total Maintenance 216 240 235 221 201 201 Engineering/Capital Capital Project Support 7 6 6 4 4 4 Public Safety Police Baseline Total Positions 394 435 428 402 382 382 Non-Reimbursable 386 381 374 374 354 354 Reimbursable 8 54 54 28 28 28 Total Full-Time 394 435 428 402 382 382 Total Full-Time Equivalents
+```
+[p177_c0003] _Master Page # 177 of 237 - MTA Board Meeting 12/17/2025_
+[p177_c0004] _11/10/1_
+
+## Page 178
+
+### [p178_c0001] MTA STATEN ISLAND RAILWAY November Financial Plan 2026 - 2029 Total Positions By Function and Occupational Group
+[p178_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual 2024 November Forecast 2025 Final Proposed Budget 2026 2027 2028 2029 Administration Managers/Supervisors 14 16 16 16 16 16 Professional/Technical/Clerical 6 8 8 8 8 8 Operational Hourlies 8 8 8 8 8 8 Total Administration Headcount 28 32 32 32 32 32 Operations Managers/Supervisors 21 27 27 27 27 27 Professional/Technical/Clerical 6 6 6 6 6 6 Operational Hourlies 116 124 122 112 112 112 Total Operations Headcount 143 157 155 145 145 145 Maintenance Managers/Supervisors 27 33 32 31 28 28 Professional/Technical/Clerical 8 9 9 9 9 9 Operational Hourlies 181 198 194 181 164 164 Total Maintenance Headcount 216 240 235 221 201 201 Engineering / Capital Managers/Supervisors 5 4 4 4 4 4 Professional/Technical/Clerical 2 2 2 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Engineering Headcount 7 6 6 4 4 4 Public Safety Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Public Safety Headcount 0 0 0 0 0 0 Total Positions Managers/Supervisors 67 80 79 78 75 75 Professional/Technical/ Clerical 22 25 25 23 23 23 Operational Hourlies 305 330 324 301 284 284 Total Positions 394 435 428 402 382 382
+```
+[p178_c0003] _Master Page # 178 of 237 - MTA Board Meeting 12/17/2025_
+[p178_c0004] _11/102_
+
+## Page 179
+
+### [p179_c0001] Staff Summary Schedule F: Personal Service Contracts
+[p179_c0002]
+
+```text
+Item 1-3 Department, Department Head Name: Finance, Jaibala Patel Division, Division Head Name: Risk and Insurance Management Board Reviews Order To Date Ap Info Other 1 Board 12/15/2025 x Internal Approvals Order Approval Order Approval 1 Procurement 4 Legal 2 Risk and Insurance Mgmt. 5 Chief of Staff 3 CAO
+```
+[p179_c0003]
+
+```text
+SUMMARY INFORMATION Vendor Names: Alliant Insurance Service Inc. Contract Numbers: 15625-0100 Description: Alternative Dispute Resolution (ADR) – Second Avenue Subway Phase II – Contract 2 Total Amount: $4,355,815.32 Contract Term (including Options, if any): Four Years Option(s) included in Total Amount? Yes No Renewal? Yes No Procurement Type: Competitive Noncompetitive Solicitation Type: RFP Bid Other: Funding Source: Operating Capital Federal Other:
+```
+### [p179_c0004] Purpose:
+[p179_c0005] To obtain MTA Board approval to add Alternative Dispute Resolution (ADR) services to a competitively negotiated insurance broker agreement awarded to Alliant Insurance Services (Alliant) for the placement of the Owner Controlled Insurance Program (OCIP) for Second Avenue Subway Phase II (OCIP III), Contract 2, in the amount of $4,355,815.32 and to add as options pass-through retainage of a Builder’s Risk Third-Party Administrator (TPA) in the amount of not-to-exceed $96,250 and a Property Claims Consulting in the amount of not-to-exceed $75,000.
+[p179_c0006] The alternative dispute resolution (ADR) program is an alternative method for managing workers’ compensation claims for union workers. The main goals of the program are to ultimately lower the MTA’s overall insurance costs, reduce the cost of claims by getting injured workers to receive prompt treatment and return to work quickly. This program will include on-site medical care to evaluate and triage any injuries that arise during construction for Contract 2, as well as provision of a qualified network of medical providers for injured workers to access. Based on previous experiences implementing ADR programs on MTA and other projects, Alliant estimates savings of approximately $20 million ($16 million in net savings). The program also enhances the workers’ compensation process for injured construction workers and improves relationships with the New York City construction unions.
+[p179_c0007] In August 2025, the MTA Board approved OCIP III, a six to eight-year contract for Second Avenue Subway Phase II, awarded to Alliant with a period of performance from 2025 to a maximum of 2033. The August Board
+[p179_c0008] _Master Page # 179 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 180
+
+### [p180_c0001] Staff Summary Schedule F: Personal Service Contracts
+> [p180_c0002] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle with the white letters "MTA" inside, followed by the text "Metropolitan Transportation Authority" in a black sans-serif font.
+[p180_c0003] approval awarded funding for the OCIP covering Second Avenue Subway Phase II, Contract 2 (OCIP III Contract 2) for an estimated four-year term.
+[p180_c0004] The award to Alliant included an option to administer ADR on behalf of MTA with different options for ADR administration, one including NFP (subcontractor) as the administrator, and one without NFP. The option for ADR including NFP administration had a not-to-exceed value of $5,513,476.10 for OCIP III Contract 2 per Alliant's proposal. Budget for this option was not included in the August 2025 board meeting.
+[p180_c0005] The MTA negotiated an ADR agreement with relevant labor unions participating in Contract 2. These discussions resulted in the selection of NFP as the ADR administrator.
+[p180_c0006] On November 2, 2025, Risk Management and Alliant negotiated a reduced cost of the proposed ADR administration for Contract 2 with NFP for $4,355,815.32, a cost reduction of $1,157,60.78 or 21%.
+[p180_c0007] The ADR Administration includes:
+- [p180_c0008] • Magna-Care Preferred Provider Organization (PPO) Networks • Specialized Claim Dispute Process, Return to Work Programs • Creation of a Labor Management Committee • Injured Worker Advocate • First Care Medical On-Site Provider • Third Party Administrator (TPA) • Broker ADR Claims Oversight and Analytic Reporting
+### [p180_c0009] D/M/WBE Information:
+[p180_c0010] N/A
+### [p180_c0011] Impact on Funding:
+[p180_c0012] This work is to be funded from the MTA Capital Program. The implementation of the program is expected to generate approximately $20 million in savings as a result of faster injury resolution and reduced claims.
+### [p180_c0013] Alternatives:
+[p180_c0014] Perform service in-house. This alternative is neither feasible nor cost-effective. The MTA does not have the staff nor has the ability to perform an ADR service in-house.
+[p180_c0015] _Master Page # 180 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 181
+
+### [p181_c0001] Staff Summary
+[p181_c0002]
+
+```text
+Subject Authorization to Issue 2026 MTA and TBTA New Money Bonds, Bond Anticipation Notes, Refunding and Other Obligations; Approval of Reimbursement Resolutions for Federal Tax Purposes Department Finance Department Head Name Jaibala Patel, Chief Financial Officer Department Head Signature Project Manager Name Olga Chernat, Deputy Chief, Financial Services
+```
+[p181_c0003]
+
+```text
+Date December 17, 2025 Vendor Name Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p181_c0004]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Comm. 12/15/25 2 Board 12/17/25
+```
+[p181_c0005]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief of Staff
+```
+### [p181_c0006] PURPOSE:
+[p181_c0007] The MTA Finance Department is seeking the MTA and TBTA Boards’ authorization and approval of the necessary documentation to issue or incur new money bond anticipation notes (BANs), bonds and other obligations to finance (i) capital projects set forth in approved transit and commuter capital programs, (ii) MTA short-term (12 months or less) interim working capital borrowings, and (iii) capital projects set forth in TBTA’s capital programs. In order to provide additional flexibility relating to the issuance of such BANs, bonds and other obligations during the year, the aggregate principal amounts authorized hereby reflect amounts consistent with the prior year’s authorizations and/or the most recent Financial Plan, as such Financial Plan may be amended from time to time (the “Authorized Maximum Amounts”), currently (i) up to $7 billion for transit and commuter capital programs, (ii) up to $1.5 billion for MTA working capital borrowings, and (iii) up to $700 million for TBTA capital projects.
+[p181_c0008] The annexed resolutions authorize MTA and TBTA to incur loan obligations by entering into loan facilities secured by existing bond resolutions or by amounts not otherwise pledged under such existing bond resolutions that are authorized under law and available to be pledged by MTA or TBTA in order to finance the projects set forth above or to refinance existing loan obligations. As part of efforts to lower borrowing costs and/or achieve attractive terms, MTA has borrowed capital funds in the form of loans rather than issuing notes or bonds. For example, MTA previously entered into a loan with the federal government under the Railroad Rehabilitation and Improvement Financing Program to finance the positive train control project for Long Island Rail Road and Metro-North Railroad. Also, last year TBTA entered into a loan in the credit markets secured by congestion pricing revenue to finance 2020-24 capital program transit and commuter projects shortly after the start of congestion pricing. The MTA Finance Department will continue to explore similar loan opportunities that could be attractive compared to issuing notes or bonds.
+[p181_c0009] In addition, the MTA and TBTA Boards periodically adopt reimbursement resolutions to maintain the ability of MTA and TBTA to finance (i) capital projects in the capital improvement programs and (ii) working capital and liquidity needs on a tax-exempt or tax-advantaged basis, consistent with Federal tax law. The MTA Finance Department also seeks adoption of the consolidated supplemental resolutions to preserve the ability to finance certain capital projects on a tax-exempt or tax-advantaged basis.
+[p181_c0010] With respect to short-term working capital/liquidity notes, the MTA Finance Department believes it is in the best interest of MTA to maintain sufficient liquidity to address seasonal liquidity needs. This is necessary both to properly manage
+[p181_c0011] _Master Page # 181 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 182
+
+### [p182_c0001] Staff Summary
+[p182_c0002] cash flow risk and support MTA's credit ratings. The working capital notes are expected to mature and be repaid from available dedicated taxes and subsidies within 12 months of issuance and to be used to address a timing mismatch between expenses and revenues rather than be used as deficit financing. Although the primary security of such working capital notes will be refunding notes or bonds, the authorizing resolution sets forth the intention of MTA to deposit funds from available revenues or subsidies amounts necessary to pay principal and interest on such maturing notes rather than issue refunding notes or bonds. This is to establish that the working capital notes are intended solely as interim working capital for 12 months or less rather than as longer-term deficit financing.
+[p182_c0003] The MTA Finance Department will report to the MTA and TBTA Boards on the results of each financing authorized pursuant to this approval. It is expected that the MTA Finance Department will seek renewed authorization and approval for debt issuance annually hereafter to update debt issuance expectations; however, the authorization granted by the MTA and TBTA Boards today will remain in effect as described under "Recommendation" below.
+[p182_c0004] The attached annual supplemental resolutions provide for the financings of capital projects and working capital through the issuance of MTA's (i) Transportation Revenue obligations, (ii) Dedicated Tax Fund senior and subordinate obligations, and (iii) Payroll Mobility Tax obligations for working capital; and of TBTA's (i) senior, subordinate and second subordinate obligations, (ii) Payroll Mobility Tax senior and subordinate obligations, (iii) Sales Tax Revenue senior and subordinate obligations, (iv) Real Estate Transfer Tax Revenue senior and subordinate obligations, and (v) CRZ Tolling senior and subordinate obligations. The attached resolutions also provide for MTA and TBTA to enter into loan facilities secured by the foregoing resolutions or other available revenues.
+### [p182_c0005] DISCUSSION:
+[p182_c0006] The MTA and TBTA Boards' approval is sought for the following two resolutions, documents and activities in connection with the issuance of bonds, BANs and other obligations in an aggregate principal amount not to exceed the amount necessary to finance, as applicable, (i) capital projects for the transit and commuter systems set forth in approved capital programs and capital projects set forth in TBTA's capital programs, and (ii) certain MTA working capital projects ("New Money Working Capital Notes"):
+- [p182_c0007] • Multiple credit supplemental resolution authorizing MTA to issue or incur new money bonds, bond anticipation notes, refunding obligations, parity reimbursement obligations and other obligations for transit and commuter programs and/or working capital purposes (collectively, "MTA Obligations"), including providing for the following: ○ Issuance of new money bonds and BANs in an amount sufficient to produce net proceeds of up to the Authorized Maximum Amount applicable to transit and commuter programs (excluding obligations issued to refinance such new money bonds and BANs), in one or more series from time to time, necessary to finance MTA transit or commuter capital programs (less amounts issued for such purposes under the TBTA multiple credit supplemental resolution referenced below), or to retire such obligations when due, plus accrued interest, applicable issuance costs and any original issue discount; ○ Issuance of new money bonds and BANs (including the New Money Working Capital Notes) to finance MTA working capital in one or more series from time to time, or to retire such obligations when due, plus accrued interest, applicable issuance costs and any original issue discount; ○ Issuance of refunding obligations without limitation to refund and/or refinance other outstanding obligations that meet the Board's adopted policy on refundings, if applicable; ○ Issuance of MTA obligations in competitive or negotiated public sales, by direct placement or in connection with a revolving credit or other loan agreements; ○ Issuance of MTA Parity Reimbursement Obligations and other Parity Debt in an amount sufficient to secure any Credit Facilities entered into in connection with the issuance of MTA Obligations; ○ Entering into of loan facilities secured by amounts pledged under the existing MTA bond resolutions, or amounts not otherwise pledged under such existing bond resolutions that are authorized under law and available to be pledged by MTA; and ○ Reimbursement of expenditures for MTA capital programs and working capital/liquidity needs.
+[p182_c0008] _Master Page # 182 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 183
+
+### [p183_c0001] Staff Summary
+- [p183_c0002] • Multiple credit supplemental resolution authorizing TBTA senior and subordinate new money bonds, BANs, refunding obligations, parity reimbursement obligations and other obligations (collectively, “TBTA Obligations”) for TBTA capital projects and MTA transit or commuter capital programs, including providing for the issuance of the following: ○ Issuance of TBTA general resolution senior and subordinate new money bonds and BANs in an amount sufficient to produce net proceeds of up to the Authorized Maximum Amount applicable to TBTA capital projects (excluding obligations issued to refinance such new money bonds and BANs) in one or more series from time to time, necessary to finance TBTA capital projects, or to retire such obligations when due, plus accrued interest, applicable issuance costs and any original issue discount; ○ Issuance of new money bonds and BANs in an amount sufficient to produce net proceeds of up to the Authorized Maximum Amount applicable to transit and commuter programs (excluding obligations issued to refinance such new money bonds and BANs) in one or more series from time to time, necessary to finance MTA transit or commuter capital programs (less amounts issued for such purposes under the MTA multiple credit supplemental resolution referenced above), or to retire such obligations when due, plus accrued interest, applicable issuance costs and any original issue discount; ○ Issuance of refunding obligations without limitation to refund and/or refinance other outstanding obligations that meet the Board’s adopted policy on refundings, if applicable; ○ Issuance of TBTA obligations in competitive or negotiated public sales, or by direct placement; ○ Issuance of Parity Reimbursement Obligations and other Parity Debt in an amount sufficient to secure any Credit Facilities entered into in connection with the issuance of TBTA Obligations; ○ Entering into of loan facilities secured by amounts pledged under the existing TBTA bond resolutions or amounts not otherwise pledged under such existing bond resolutions that are authorized under law and available to be pledged by TBTA; and ○ Reimbursement of expenditures for each of the TBTA capital programs and the MTA capital programs.
+[p183_c0003] With respect to the above-referenced financial transactions, the MTA and TBTA Boards’ approval, as applicable, is sought:
+[p183_c0004] (a) delegating authority to the Chairman, the Chief Financial Officer or the Deputy Chief, Financial Services of MTA, or their designees, to award the obligations either pursuant to competitive bid or to members (or entities related to such firms) of the Board-approved underwriting syndicate or authorized purchasers under a federal or State of New York program and to execute and/or deliver in each case, where appropriate:
+- [p183_c0005] ○ Notices of Sale and bid forms, ○ Purchase Agreements with underwriters and other authorized purchasers, ○ Direct Purchase Agreements, ○ Revolving Credit Agreements or other loan facilities, ○ Official Statements and other disclosure documents, ○ Continuing Disclosure Agreements and related filings, ○ Remarketing Agreements and Firm Remarketing Agreements, ○ Dealer and Broker/Dealer Agreements, ○ Issuing and Paying Agent and Tender Agent Agreements, ○ Credit Facilities and related Parity Reimbursement Obligations and Parity Debt, ○ Related Subordinated Contract Obligations, ○ Escrow Agreements, and ○ Investment Agreements.
+[p183_c0006] Any such documents will be in substantially the form of any document previously entered into by MTA or TBTA for previous issues, with such changes as approved by any one or more of the foregoing officers, or in substantially the forms such officers shall deem advisable, with the execution and delivery of such documents being conclusive evidence of the determinations and approval of any one or more of the foregoing officers.
+[p183_c0007] _Master Page # 183 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 184
+
+### [p184_c0001] Staff Summary
+[p184_c0002] (b) authorizing such officers to terminate, amend, supplement, replace or extend any such documents, including Credit Facilities (and related Parity Reimbursement Obligations and Parity Debt), as they shall deem advisable, and to take such other actions as may be necessary or desirable to effectuate the issuance of the new money bonds and BANs and other financial transactions set forth above, on behalf of MTA, TBTA or other MTA subsidiaries and affiliates.
+### [p184_c0003] ALTERNATIVES:
+[p184_c0004] There are no viable funding alternatives to (i) meeting the bond funded portion of approved capital programs, and (ii) financing working capital to address seasonal liquidity needs as well as to support MTA's credit ratings.
+### [p184_c0005] RECOMMENDATION:
+[p184_c0006] The MTA and TBTA Boards approve the above-referenced resolutions and documents and all other actions described above, including the execution and delivery of such other documents, and the taking of all other actions, from time to time deemed necessary or desirable by such officers in connection therewith. The authorization to issue or incur the bonds, BANs, loan facilities and other obligations and take other related actions hereunder shall continue in effect without any further action by the MTA and TBTA Boards until the adoption by the MTA and TBTA Boards of subsequent bond supplemental resolutions authorizing future BANs, bonds and loan issues (except that rollover 2026 BANs and bonds may still be issued to refinance 2026 BANs outstanding at any time, and the authorization to issue obligations to finance working capital/liquidity needs shall continue until modified or repealed) unless (a) the MTA and TBTA Boards shall have confirmed the effectiveness of this authorization for an additional period, or (b) the MTA and TBTA Boards shall have modified or repealed this authorization.
+[p184_c0007] _Master Page # 184 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 185
+
+### [p185_c0001] METROPOLITAN TRANSPORTATION AUTHORITY
+### [p185_c0002] MULTIPLE CREDIT AND SERIES 2026 SUPPLEMENTAL RESOLUTION AUTHORIZING OBLIGATIONS, OBLIGATION ANTICIPATION NOTES AND REFUNDING OBLIGATIONS
+[p185_c0003] Adopted December 17, 2025
+[p185_c0004] _Master Page # 185 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 186
+
+### [p186_c0001] MULTIPLE CREDIT AND SERIES 2026 SUPPLEMENTAL RESOLUTION AUTHORIZING OBLIGATIONS, OBLIGATION ANTICIPATION NOTES AND REFUNDING OBLIGATIONS
+[p186_c0002] BE IT RESOLVED by the Board of Metropolitan Transportation Authority (the “Issuer”), as follows:
+### [p186_c0003] ARTICLE I
+### [p186_c0004] DEFINITIONS AND STATUTORY AUTHORITY
+[p186_c0005] Section 1.01. Supplemental Resolution. This Multiple Credit and Series 2026 Supplemental Resolution Authorizing Obligations, Obligation Anticipation Notes and Refunding Obligations (the “Supplemental Resolution”) is supplemental to, and is adopted in accordance with Article II, Article A-II and Article A-VIII of the Applicable Resolutions described below and the Issuer Act.
+### [p186_c0006] Section 1.02. Definitions.
+[p186_c0007] 1. All capitalized terms which are used but not otherwise defined in this Supplemental Resolution shall have the same meanings, respectively, as such terms are given in the Applicable Resolution.
+[p186_c0008] 2. In this Supplemental Resolution:
+[p186_c0009] “Applicable Project(s)” shall mean the Applicable Transit and Commuter Project and Applicable Working Capital Purpose, and any other project or purpose permitted to be financed under any other Applicable Resolution from time to time.
+[p186_c0010] “Applicable Resolution(s)” shall mean the Applicable Transit and Commuter Resolutions and the Applicable Working Capital Resolutions.
+[p186_c0011] “Applicable Transit and Commuter Project(s)” shall mean the DTF Transit and Commuter Project in the case of the DTF Resolution and the DTF Second Lien Resolution, the Resolution Transportation District Project in the case of the TRB Resolution and any transit or commuter project permitted to be financed under any other Applicable Resolution from time to time.
+[p186_c0012] “Applicable Transit and Commuter Resolution(s)” shall mean each of the following resolutions of the Issuer, as applicable:
+- [p186_c0013] a. the DTF Resolution; b. the TRB Resolution; c. the DTF Second Lien Resolution; and d. any other resolution adopted by the Issuer with the expectation that obligations may be issued thereunder during the term of this Supplemental Resolution for the Applicable Transit and Commuter Projects permitted to be financed or refinanced under this Supplemental Resolution, as such Supplemental Resolution may be amended or supplemented from time to time.
+[p186_c0014] _Master Page # 186 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 187
+
+[p187_c0001] “Applicable Working Capital Purpose(s)” shall mean the purposes for which the Issuer may issue bonds, notes or other obligations in accordance with the MTA PMT Resolution or any other resolution or trust indenture, trust agreement or other financing agreement for deficit or working capital purposes by resolution of the Board from time to time.
+[p187_c0002] “Applicable Working Capital Resolution(s)” shall mean each of the following resolutions of the Issuer, as applicable:
+- [p187_c0003] a. the MTA PMT Resolution; and b. any other resolution adopted by the Issuer with the expectation that obligations may be issued thereunder during the term of this Supplemental Resolution for the Applicable Working Capital Purposes permitted to be financed or refinanced under this Supplemental Resolution, as such Supplemental Resolution may be amended or supplemented from time to time.
+[p187_c0004] “Authorized Officer” shall include (i) with respect to any Applicable Resolution, the officers designated as such in the Applicable Resolution, and, if not designated therein, the Chairman, the Chief Financial Officer or the Deputy Chief, Financial Services, or their designees, as well as any officer duly designated as “Acting” in said officer’s capacity, except that, “Authorized Officer” shall not include the Secretary or any Assistant Secretary of the Issuer unless expressly delegated, and (ii) with respect to any Loan Facility, any individual designated by the Issuer, whether by title, appointment, or other means, as having the authority to act on behalf of the Issuer with respect to matters arising under this Supplemental Resolution, including the execution and delivery of documents, making of certifications, and performance of other acts required or permitted under this Supplemental Resolution, including but not limited to, any officer of the Issuer designated as such in the Applicable Resolution, and the Chairman and Chief Executive Officer, the Chief Financial Officer, and the Deputy Chief, Financial Services, as well as any officer duly designated as “Acting” in said officer’s capacity, except that, for the purposes of any delegation set forth herein with respect to a Loan Facility that does not expressly include any Assistant Secretary, “Authorized Officer” shall not include any Assistant Secretary of the Issuer unless expressly delegated.
+[p187_c0005] “Board” shall mean, when used with respect to the Issuer, the board of the Issuer acting as such pursuant to the provisions of the Issuer Act.
+[p187_c0006] “Bond Counsel” shall mean Nixon Peabody LLP, Orrick, Herrington & Sutcliffe LLP, D. Seaton and Associates, P.A., P.C., Bryant Rabbino LLP or any other attorney or firm of attorneys of nationally recognized standing in the field of law relating to the issuance of obligations by state and municipal entities, selected by the Issuer.
+[p187_c0007] “Code” shall mean the Internal Revenue Code of 1986, as amended, and regulations thereunder.
+[p187_c0008] “Continuing Disclosure Agreement” has the meaning set forth in Section 2.11.
+[p187_c0009] “Cross-Credit Obligations” shall mean indebtedness or other obligations issued or incurred by the Issuer or any other Related Entity as described in clause (iii) of the definition of “Capital Costs” under the Applicable Resolution, but excluding Obligations originally issued under the same Applicable Resolution.
+[p187_c0010] “DTC” means The Depository Trust Company.
+[p187_c0011] “DTF Resolution” shall mean the resolution adopted by the Issuer on March 26, 2002, entitled “Dedicated Tax Fund Obligation Resolution”, as supplemented and amended from time to time.
+[p187_c0012] _2_
+[p187_c0013] _Master Page # 187 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 188
+
+[p188_c0001] “DTF Second Lien Resolution” shall mean the resolution of the Issuer to be adopted entitled “Second Lien Dedicated Tax Fund Obligation Resolution”, as supplemented and amended from time to time.
+[p188_c0002] “Loan Facility” shall mean a loan agreement, line of credit, revolving credit agreement or similar facility.
+[p188_c0003] “MTA PMT Resolution” shall mean the resolution adopted by the Issuer on November 18, 2020, entitled “Payroll Mobility Tax Obligation Resolution”, as heretofore supplemented and amended.
+[p188_c0004] “Noteholder”, “Holder” or “Holder of Notes”, or any similar term, means any person who shall be the registered owner of any Outstanding Series 2026 Note or Notes.
+[p188_c0005] “Notice of Sale” shall mean the form of Notice of Sale to be distributed with the Preliminary Official Statement, hereinafter defined, and published in the event of a competitive sale of any Series 2026 Obligations.
+[p188_c0006] “Official Statement” means a final official statement, offering circular or other disclosure document of the Issuer.
+[p188_c0007] “Other Available Revenues” shall mean monies not otherwise pledged under any Applicable Resolution (including monies that are no longer subject to the pledge of any Applicable Resolution after satisfaction of the flow of funds requirements thereunder) that are authorized under law and available to be pledged by the Issuer to secure a Loan Facility to finance or refinance Applicable Projects.
+[p188_c0008] “Preliminary Official Statement” means a preliminary official statement, offering circular, or other disclosure document of the Issuer.
+[p188_c0009] “Proceeds Account” shall mean the Proceeds Account or the Second Lien Proceeds Account established in accordance with the provisions of the Applicable Resolution.
+[p188_c0010] “Purchase Agreement” means a bond purchase agreement, note purchase agreement, Loan Facility, continuing covenant agreement or similar agreement.
+[p188_c0011] “Series 2026 Bonds” shall mean Series 2026 New Money Bonds and Series 2026 Refunding Obligations that are bonds.
+[p188_c0012] “Series 2026 New Money Bonds” shall mean the Series 2026 New Money Transit and Commuter Bonds and the Series 2026 New Money Working Capital Bonds.
+[p188_c0013] “Series 2026 New Money Notes” shall mean the Series 2026 New Money Transit and Commuter Notes and the Series 2026 New Money Working Capital Notes.
+[p188_c0014] “Series 2026 New Money Transit and Commuter Bonds” shall mean the Bonds issued for Applicable Transit and Commuter Projects authorized by Article II of this Supplemental Resolution in one or more Series or subseries, subject to redesignation as hereinafter provided.
+[p188_c0015] “Series 2026 New Money Transit and Commuter Notes” shall mean the Notes (including Obligation Anticipation Notes) issued for Applicable Transit and Commuter Projects authorized by Article II of this Supplemental Resolution in one or more Series or subseries, subject to redesignation as hereinafter provided.
+[p188_c0016] _3_
+[p188_c0017] _Master Page # 188 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 189
+
+[p189_c0001] “Series 2026 New Money Working Capital Bonds” shall mean the Bonds issued for Applicable Working Capital Purposes authorized by Article II of this Supplemental Resolution in one or more Series or subseries, subject to redesignation as hereinafter provided.
+[p189_c0002] “Series 2026 New Money Working Capital Notes” shall mean the Notes (including Obligation Anticipation Notes) issued for Applicable Working Capital Purposes authorized by Article II of this Supplemental Resolution in one or more Series or subseries, subject to redesignation as hereinafter provided.
+[p189_c0003] “Series 2026 Notes” shall mean the Series 2026 New Money Notes and the Series 2026 Refunding Obligations that are notes.
+[p189_c0004] “Series 2026 Obligations” shall mean the Series 2026 Bonds, the Series 2026 Notes and the Series 2026 Refunding Obligations.
+[p189_c0005] “Series 2026 Refunding Obligations” shall mean the bonds, notes (including Obligation Anticipation Notes) and other obligations authorized by Article II of this Supplemental Resolution that are (i) Refunding Obligations (as defined in the Applicable Resolutions and as authorized pursuant to Section 2.01(g)), (ii) Obligations or Obligation Anticipation Notes for the purpose of refunding Cross-Credit Obligations, and (iii) notes other than Obligation Anticipation Notes issued to refinance outstanding notes, in each case in one or more Series or subseries, subject to redesignation as hereinafter provided, and any Series 2026 Refunding Obligations may be issued pursuant to this Supplemental Resolution to restructure principal amortization within the maturity limits permitted by law.
+[p189_c0006] “SOFR” means the Secured Overnight Financing Rate published by The Federal Reserve Bank of New York.
+[p189_c0007] “TBTA” means the Triborough Bridge and Tunnel Authority.
+[p189_c0008] “TBTA Multiple Credit and Series 2026 Supplemental Resolution” shall mean the supplemental resolution adopted by TBTA on the date of adoption of this Supplemental Resolution authorizing the issuance of bonds, notes and other obligations for various purposes during 2026, as supplemented and amended from time to time.
+[p189_c0009] “TRB Resolution” shall mean the resolution adopted by the Issuer on March 26, 2002, entitled “General Resolution Authorizing Transportation Revenue Obligations”, as supplemented and amended from time to time.
+[p189_c0010] “Trustee” shall have the meaning set forth in the Applicable Resolution.
+[p189_c0011] References herein to the terms “Bonds,” “Obligations,” “Obligation Anticipation Notes” and “Proceeds Account” as used in the Applicable Resolutions shall refer to the “Bonds,” “Obligations” and “Obligation Anticipation Notes” issued under, and the “Proceeds Account” established under, such Applicable Resolutions, notwithstanding the differences in the lien level at which such “Bonds,” “Obligations” and “Obligation Anticipation Notes” are secured at, or the “Proceeds Account” is established for, under such Applicable Resolutions. By way of example, the term “Obligation” as used herein refers, as the context requires, to “Obligations” issued under the DTF Resolution, as well as “Second Lien Obligations” issued under the DTF Second Lien Resolution.
+[p189_c0012] Section 1.03. Authority for this Supplemental Resolution. This Supplemental Resolution is adopted pursuant to the provisions of the Issuer Act and the Applicable Resolutions.
+[p189_c0013] _4_
+[p189_c0014] _Master Page # 189 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 190
+
+### [p190_c0001] ARTICLE II
+### [p190_c0002] AUTHORIZATION OF SERIES 2026 OBLIGATIONS
+[p190_c0003] Section 2.01. Principal Amount, Designation and Series. (a) Pursuant to the Applicable Transit and Commuter Resolutions and in order to finance, as applicable, Capital Costs for Applicable Transit and Commuter Projects, (i) Series 2026 New Money Transit and Commuter Bonds, (ii) Series 2026 New Money Transit and Commuter Notes, and (iii) Loan Facilities, which may be issued in one or more Series or subseries and from time to time, entitled to the benefit, protection and security of the Applicable Transit and Commuter Resolutions, are hereby authorized to be issued in an aggregate principal amount not exceeding $7 billion at any one time Outstanding to effectuate the purposes set forth in Section 2.02 hereof (the “Authorized Principal Amount”), which Authorized Principal Amount shall exclude any Series 2026 Obligations issued under the Applicable Transit and Commuter Resolutions issued to refinance Series 2026 New Money Transit and Commuter Notes and Series 2026 New Money Transit and Commuter Bonds. If determined to be advisable by an Authorized Officer in connection with the marketing of such Series 2026 Obligations, the proceeds of such Series 2026 Obligations to finance Capital Costs, after giving effect to any net original issue premium, may exceed the Authorized Principal Amount; provided, however, the Amount of Proceeds Delivered to the Capital Program shall not exceed the limitation imposed by Section 1269(12) of the Issuer Act. The “Amount of Proceeds Delivered to the Capital Program” shall mean, in connection with any issuance, the amount of proceeds spent on Capital Costs of the Applicable Transit and Commuter Project(s), which shall not take into account (i) Costs of Issuance, (ii) original issue premium or discount, if any, and (iii) any amounts to fund accrued interest, reserve funds or capitalized interest. The Authorized Principal Amount hereunder shall be reduced by the principal amount of bonds, notes or Loan Facilities issued under the TBTA Multiple Credit and Series 2026 Supplemental Resolution for transit and commuter projects.
+[p190_c0004] (b) Pursuant to the MTA PMT Resolution and in order to finance the costs of working capital for any one or more Related Entity, (i) Series 2026 New Money Working Capital Notes, (ii) Series 2026 New Money Working Capital Bonds, and (iii) Loan Facilities, which may be issued in one or more Series or subseries and from time to time, entitled to the benefit, protection and security of the MTA PMT Resolution are hereby authorized to be issued in the aggregate principal amount of not to exceed $1.5 billion at any one time outstanding in accordance with the provisions of the MTA PMT Resolution (including any amounts necessary to pay all costs incurred in connection with the issuance of such obligations). Such Series 2026 New Money Working Capital Notes and Series 2026 New Money Working Capital Bonds shall only be issued for an Authorized Purpose (as defined in the MTA PMT Resolution). Any Series 2026 New Money Working Capital Notes issued hereunder shall have a maturity date no later than 12 months from the date of issuance of such notes.
+[p190_c0005] (c) The Issuer is hereby authorized to issue Series 2026 Refunding Obligations under any Applicable Resolution for the purposes permitted under such Applicable Resolution without limitation as to principal amount for the purposes provided in Section 2.02 hereof.
+[p190_c0006] (d) The Series 2026 Obligations shall be designated as, and shall be distinguished from, the Obligations of all other Series by the title or titles set forth in one or more Certificates of Determination.
+[p190_c0007] (e) The Series 2026 Obligations may be issued in the form of a Loan Facility.
+[p190_c0008] (f) The authority to issue the Obligations and Obligation Anticipation Notes and take related actions granted under previous resolutions of the Issuer shall continue in full force and effect. The authorization to issue the Series 2026 Obligations and take other actions hereunder shall continue in effect without any action by the Issuer until the adoption by the Board of a subsequent supplemental resolution
+[p190_c0009] _5_
+[p190_c0010] _Master Page # 190 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 191
+
+[p191_c0001] authorizing future new money financings and refundings; provided, however , (i) the authorization to issue the Series 2026 Obligations to refinance the Series 2026 Notes authorized hereunder shall continue in effect until all of such Series 2026 Notes have been repaid, refinanced by Series 2026 Bonds or otherwise refinanced by some other means, including, but not limited to, Cross-Credit Obligations or bonds, notes or other obligations secured in whole or in part by Other Available Revenues or other bond resolutions approved for the financing or refinancing of the same Applicable Projects as were financed by the Series 2026 Notes, and (ii) for purposes of refunding or refinancing a Loan Facility, the Loan Facility shall be treated in the same manner as Series 2026 Notes hereunder, to the effect that the authorization to issue Series 2026 Obligations or incur a Loan Facility to refinance a Loan Facility shall continue in effect until such Loan Facility has been refinanced or otherwise repaid by some other means.
+[p191_c0002] (g) Nothing in this Supplemental Resolution is intended to preclude the issuance of Series 2026 Refunding Obligations as refunding obligations (including Cross-Credit Obligations) under the new money provisions of the Applicable Resolution.
+[p191_c0003] (h) The Issuer hereby covenants and agrees for the benefit of the Holders and Beneficial Owners of the Series 2026 Notes that it will maintain issuance capacity pursuant to the Applicable Resolution to issue Bonds or additional Obligation Anticipation Notes or incur Loan Facilities in an amount sufficient to pay the principal of and interest on the Series 2026 Notes when due.
+[p191_c0004] (i) Notwithstanding anything to the contrary in Sections 2.01(a) and (b), a Loan Facility may, as specified in an additional Supplemental Resolution, Certificate of Determination, or similar instrument executed in connection with the Loan Facility, be entitled to, or excluded from, the benefit, protection, and security of any Applicable Resolutions.
+[p191_c0005] Section 2.02. Purposes. The purposes for which the Series 2026 Obligations are issued shall be set forth in one or more Certificates of Determination and may include (a) with respect to the Series 2026 New Money Bonds and Series 2026 New Money Notes (i) the payment of all or any part of (y) the Capital Costs, including Costs of Issuance relating to the applicable issuance or (z) any Authorized Purpose under an Applicable Working Capital Resolution, and (ii) the payment of principal of, redemption premium, if any, and interest on Outstanding Series 2026 Notes all to the extent and in the manner provided in this Supplemental Resolution, (b) with respect to Series 2026 Refunding Obligations, the refunding, refinancing, restructuring or payment, including by purchasing, exchanging or tendering therefor, of all or any portion of any Outstanding Obligations or Parity Debt or Cross-Credit Obligations deemed advisable by an Authorized Officer in accordance with the Applicable Resolutions, and (c) with respect to Loan Facilities, for any of the purposes described in paragraphs (a) and (b) of this Section, as applicable.
+[p191_c0006] Section 2.03. Dates, Maturities, Principal Amounts and Interest. The Series 2026 Obligations, except as otherwise provided in the Applicable Resolutions, shall be dated the date or dates determined in the related Certificate of Determination. The Series 2026 Obligations shall mature on the date or dates and in the year or years and in the principal amount or amounts, and shall bear interest at the rate or rates per annum, if any, specified in or determined in the manner provided in the related Certificate of Determination. The Series 2026 Notes shall be subject to redemption prior to maturity as provided in the Certificate of Determination.
+[p191_c0007] Section 2.04. Interest Payments. The Series 2026 Obligations shall bear interest from their date or dates and be payable on such date or dates as may be determined pursuant to the related Certificate of Determination. Except as otherwise provided in the related Certificate of Determination, interest on the Series 2026 Obligations shall be computed on the basis of twelve (12) 30-day months and a 360-day year.
+[p191_c0008] _6_
+[p191_c0009] _Master Page # 191 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 192
+
+[p192_c0001] Section 2.05. Denominations, Numbers and Letters. Unless otherwise provided in the related Certificate of Determination, the Series 2026 Obligations shall be issued in fully registered form without coupons in the denomination of $5,000 or any integral multiple thereof. The Series 2026 Obligations shall be numbered and lettered as provided in the related Certificate of Determination.
+[p192_c0002] Section 2.06. Places of Payment and Paying Agents. Except as otherwise provided in the related Certificate of Determination, principal and Redemption Price of the Series 2026 Obligations shall be payable to the registered owner of each Series 2026 Obligation when due upon presentation of such Series 2026 Obligation at the principal corporate trust office of the applicable Trustee. Except as otherwise provided in the related Certificate of Determination, interest on the registered Series 2026 Obligations will be paid by check or draft mailed on the interest payment date by the applicable Paying Agent, to the registered owner at his address as it appears on the registration books or, at the option of any Owner or Holder of at least one million dollars ($1,000,000) in principal amount of the Series 2026 Obligations, by wire transfer in immediately available funds on each interest payment date to such Owner or Holder thereof upon written notice from such Owner or Holder to the related Trustee, at such address as such Trustee may from time to time notify such Owner or Holder, containing the wire transfer address (which shall be in the continental United States) to which such Owner or Holder wishes to have such wire directed, if such written notice is received not less than twenty (20) days prior to the related interest payment date (such notice may refer to multiple interest payments).
+[p192_c0003] Section 2.07. Sinking Fund Installments. Except as otherwise provided in the related Certificate of Determination, the Series 2026 Bonds, if any, determined in the related Certificate of Determination shall be subject to redemption (a) in part, by lot, (b) pro rata (in the case of Series 2026 Bonds issued as Taxable Obligations), or (c) otherwise as determined in accordance with the Applicable Resolution, on each date in the year or years as determined in the related Certificate of Determination at the principal amount thereof plus accrued interest up to but not including the date of redemption thereof, from mandatory Sinking Fund Installments which are required to be made in amounts sufficient to redeem on each such date the principal amount of such Series 2026 Bonds.
+[p192_c0004] Section 2.08. Redemption Prices and Terms. The Series 2026 Bonds may also be subject to redemption prior to maturity, at the option of the Issuer, upon notice as provided in Article A-IV of the Applicable Resolution, at any time as a whole or in part (and by lot within a maturity, or otherwise as determined in accordance with Section A-404 of the Applicable Resolution, if less than all of a maturity is to be redeemed), from maturities designated by the Issuer on and after the date and in the years and at the Redemption Prices (expressed as a percentage of principal amount) determined in the related Certificate of Determination, plus accrued interest up to but not including the redemption date; provided, however , that if any Series 2026 Obligations are redeemable at the election of the Issuer, such redemption may be a pro rata redemption and the Redemption Price may be determined as provided in clause of (f) of Section 2.10 hereof, all as determined in the related Certificate of Determination.
+[p192_c0005] Section 2.09. Sources of Payment for Series 2026 Notes Issued as Obligation Anticipation Notes.
+[p192_c0006] (a) Principal and Interest. There are hereby pledged to the payment of principal of and interest on the Series 2026 Notes issued as Obligation Anticipation Notes: (i) the proceeds of other Series 2026 Notes issued for the same purposes to refinance such Series 2026 Notes issued as Obligation Anticipation Notes, and (ii) the proceeds of the Series 2026 New Money Bonds issued for the same purposes to refinance such Series 2026 Notes issued as Obligation Anticipation Notes, and any such pledge of the items set forth in clauses (i) and (ii) shall have priority over any other pledge created by the Applicable Resolution.
+[p192_c0007] _7_
+[p192_c0008] _Master Page # 192 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 193
+
+[p193_c0001] (b) Interest only. There is also hereby pledged to the payment of interest on the Series 2026 Notes issued as Obligation Anticipation Notes under an Applicable Resolution amounts available for transfer pursuant to such Applicable Resolution for the payment of Subordinated Indebtedness in accordance with and subject to the limitations contained in such Applicable Resolution.
+[p193_c0002] (c) Permissive Pledge to Principal. To the extent set forth in a Certificate of Determination, there may be pledged to the payment of principal of the Series 2026 Notes issued as Obligation Anticipation Notes: (i) the proceeds of notes or other evidences of indebtedness, or any other amounts that are not pledged under the Applicable Resolution (which may include Other Available Revenues), and (ii) amounts available for transfer pursuant to such Applicable Resolution for the payment of Subordinated Indebtedness in accordance with and subject to the limitations contained in such Applicable Resolution.
+[p193_c0003] (d) Permissive Pledge to Interest. To the extent set forth in a Certificate of Determination, there may be pledged to the payment of interest on the Series 2026 Notes issued as Obligation Anticipation Notes the proceeds of notes or other evidences of indebtedness, or any other amounts that are not pledged under the Applicable Resolution (which may include Other Available Revenues).
+[p193_c0004] (e) With respect to any Series 2026 New Money Working Capital Notes issued hereunder, although the sources identified in paragraphs (a) and (b) above would be pledged to secure repayment of principal and interest on such Series 2026 New Money Working Capital Notes, if issued, the Issuer would likely deposit with the Trustee funds from legally available revenues or subsidies necessary to pay principal and interest on such maturing Notes rather than issue Refunding Obligations hereunder.
+[p193_c0005] Section 2.10. Delegation to an Authorized Officer. 1. There is hereby delegated to each Authorized Officer, subject to the limitations contained in this Supplemental Resolution, the following powers with respect to the Series 2026 Obligations:
+[p193_c0006] (a) to determine whether and when to issue any (i) Series 2026 New Money Bonds, the amount of the Series 2026 New Money Bonds to be applied to finance Capital Costs or other uses as provided in Section 2.02 hereof, and the amount of the proceeds of the Series 2026 New Money Bonds estimated to be necessary to pay the Costs of Issuance of the Series 2026 New Money Bonds and capitalized interest, if any, (ii) Series 2026 New Money Notes, the amount of the Series 2026 New Money Notes to be applied to finance Capital Costs or other uses as provided in Section 2.02 of this Supplemental Resolution and the amount of the proceeds of the Series 2026 New Money Notes estimated to be necessary to pay the Costs of Issuance of the Series 2026 New Money Notes and capitalized interest, if any, and (iii) Series 2026 Refunding Obligations constituting Refunding Obligations or Obligations issued to refund Cross-Credit Obligations, and to determine the amount of the proceeds of the Series 2026 Refunding Obligations to be applied to refunding purposes as well as the specific Obligations or Parity Debt or Cross-Credit Obligations, or portions of either to be refunded and the date or dates, if any, on which such refunded obligations shall be redeemed, and the amount of the proceeds of the Series 2026 Refunding Obligations estimated to be necessary to pay the Costs of Issuance of the Series 2026 Refunding Obligations;
+[p193_c0007] (b) with respect to any Loan Facility: (i) to identify, designate, and apply any Other Available Revenues, if any, pledged to secure the Issuer's repayment obligations thereunder; (ii) to negotiate, approve, and finalize the terms and conditions of the Loan Facility, including, without limitation, interest rate and fee provisions, representations, warranties and other covenants, events of default, remedies (including prepayment, amortization, and rate-mode provisions), and any required reserves; (iii) to execute and deliver one or more loan agreements (including amendments, supplements, waivers, or consents) with one or more financial institutions, government agencies or other entities selected by such Authorized Officer; (iv) to execute and deliver any other documents
+[p193_c0008] _8_
+[p193_c0009] _Master Page # 193 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 194
+
+[p194_c0001] (including security agreements, account control agreements, intercreditor or collateral agency agreements, subordination agreements, collateral assignments, UCC financing statements and continuations, opinions, closing certificates, amendments, and related instruments) in the form and with such changes as an Authorized Officer determines are advisable (such determination to be conclusively evidenced by such Authorized Officer's execution thereof); (v) to grant to or confer upon the Trustee for the benefit of any lender under a Loan Facility (in its capacity as an Owner under the Applicable Resolution) any additional rights, remedies, powers, authority or security that may lawfully be granted to or conferred upon such lender or the Trustee which are not contrary to or inconsistent with Applicable Resolution as then in effect; and (vi) to take all other actions an Authorized Officer determines are necessary or desirable to effectuate the Loan Facility, including establishing accounts or funds, providing and perfecting security interests, making elections, delivering certificates and notices, selecting and appointing advisors, and obtaining or providing credit enhancement, in each case consistent with applicable law and the Applicable Resolution;
+[p194_c0002] (c) to determine the purpose or purposes for which the Series 2026 Obligations are being issued, which shall be one or more of the purposes set forth in Section 2.02 of this Supplemental Resolution;
+[p194_c0003] (d) to determine the principal amounts of the Series 2026 Obligations to be issued for the purposes set forth in Section 2.02 of this Supplemental Resolution and whether such principal amounts constitute a separate Series or a subseries of Series 2026 Obligations, which principal amounts (and the aggregate of all such Series and subseries) shall not exceed the principal amounts permitted by Section 2.01 of this Supplemental Resolution, and with respect to Series 2026 Bonds, to determine Accreted Values and Appreciated Values, if applicable;
+[p194_c0004] (e) to determine the maturity date and principal amount of each maturity of the Series 2026 Obligations and with respect to Series 2026 Bonds, the amount and due date of each Sinking Fund Installment, if any;
+[p194_c0005] (f) to determine the date or dates which the Series 2026 Obligations shall be dated and the interest rate or rates of the Series 2026 Obligations or the manner of determining such interest rate or rates; provided, however, that (i) any Series 2026 New Money Bonds issued as fixed rate Tax-Exempt Obligations shall be subject to a maximum interest rate of not greater than 10% per annum, any Series 2026 New Money Bonds issued as fixed rate Taxable Obligations shall be subject to a maximum interest rate of not greater than 12% per annum, any Variable Interest Rate Obligations issued as Tax-Exempt Obligations shall be subject to a maximum interest rate of not greater than 15% per annum, any Variable Interest Rate Obligations issued as Taxable Obligations shall be subject to a maximum interest rate of not greater than 18% per annum and any Parity Reimbursement Obligations shall be subject to a maximum interest rate of not greater than 25% per annum, or, in each such case, such higher rate or rates as determined by the Board; and (ii) the true interest cost (as calculated by the officers of the Issuer executing any Certificate of Determination, which calculation shall be conclusive) on the Series 2026 Notes bearing a fixed rate of interest shall not exceed 8.00% per annum and for Series 2026 Notes bearing interest at a variable interest rate shall not exceed a rate equal to SIFMA or SOFR, as applicable, or another short-term index generally accepted in the marketplace chosen by an Authorized Officer and set forth in the Certificate of Determination, in each case, plus 5.00% and any default rate or equivalent rate shall not exceed the sum of 12.00% plus either a specified prime rate, the federal funds rate or another index generally accepted in the marketplace, in which case the total default rate shall not exceed 25%;
+[p194_c0006] _9_
+[p194_c0007] _Master Page # 194 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 195
+
+[p195_c0001] (g) to determine the Redemption Price, Redemption Prices or prepayment cost, if any, and the redemption terms, if any, for the Series 2026 Obligations; provided, however, that if the Series 2026 Obligations are to be redeemable at the election of the Issuer, the Redemption Price shall not be greater than one hundred three percent (103%) of the principal amount of the Series 2026 Obligations to be redeemed (the "Cap"), plus accrued interest thereon up to but not including the date of redemption, unless the Authorized Officer deems it advisable to provide for a make-whole redemption in excess of the Cap;
+[p195_c0002] (h) to determine whether the sale of any or a portion of the Series 2026 Obligations shall be conducted on either a negotiated or competitive bid basis and, as applicable, to determine the purchase price for the Series 2026 Obligations to be paid by the purchaser or purchasers referred to in one or more Purchase Agreements or a bank direct purchase agreement, the purchase price for the Series 2026 Obligations to be paid by the winning bidder, if such sale is conducted by competitive bid pursuant to a Notice of Sale, in either case as such document is described in Section 2.11 of this Supplemental Resolution, which may include such original issue discount and original issue premium as shall be determined in the related Certificate of Determination; provided, however, that, in the case of Series 2026 Bonds sold on a negotiated basis (and not competitive sale), the underwriters' discount reflected in such purchase price shall not exceed (i) $7.00 for each one thousand dollars ($1,000) principal amount of the Series 2026 Bonds and (ii) $3.50 for each one thousand dollars ($1,000) principal amount of the Series 2026 Notes;
+[p195_c0003] (i) to take all actions required for the Series 2026 Obligations to be eligible under the rules and regulations of DTC for investment and trading as uncertificated securities, to execute and deliver a standard form of letter of representation with DTC and, notwithstanding any provisions to the contrary contained in this Supplemental Resolution, to include in the related Certificate of Determination such terms and provisions as may be appropriate or necessary to provide for uncertificated securities in lieu of Series 2026 Obligations issuable in fully registered form;
+[p195_c0004] (j) to determine whether to issue all or any portion of the Series 2026 Obligations as Tax-Exempt Obligations, Taxable Obligations, Put Obligations, Variable Interest Rate Obligations or as any other form of Obligations or Obligation Anticipation Notes permitted by the Applicable Resolution or this Supplemental Resolution and any matters related thereto, including (i) the terms and provisions of any such Series 2026 Obligations, (ii) the selection of remarketing agents, tender agents, calculation agents, auction agents, dealers, bidding agents or any other agents or parties to ancillary arrangements and the terms of any such arrangements, and (iii) the methods for determining the accrual of Debt Service;
+[p195_c0005] (k) to determine the advisability, as compared to an unenhanced transaction, of obtaining one or more Credit Facilities, to select a provider or providers thereof and to determine and accept the terms and provisions and price thereof, to determine the items to be pledged to the Series 2026 Obligations from those permitted by Section A-203 of the Applicable Resolution, and to determine such other matters related thereto as in the opinion of the officer executing the related Certificate of Determination shall be considered necessary or appropriate and to effect such determinations by making any changes in or additions to this Supplemental Resolution required by Credit Facility providers, if any, or required by a Rating Agency in order to attain or maintain specific ratings on the Series 2026 Obligations, or relating to the mechanisms for the repayment of amounts advanced thereunder or payment of fees, premiums, expenses or any other amounts, notices, the provision of information, and such other matters of a technical, mechanical, procedural or descriptive nature necessary or appropriate to obtain or implement a Credit Facility with respect to the Series 2026 Obligations, and to make any changes in connection therewith. Such changes
+[p195_c0006] _10_
+[p195_c0007] _Master Page # 195 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 196
+
+[p196_c0001] may include, but are not limited to, the making of any additional covenants with Holders or other parties deemed necessary or appropriate by the officer executing any Certificate of Determination;
+[p196_c0002] (l) to determine that Series 2026 Refunding Obligations comply with all Board policies relating to the issuance of refunding obligations in effect at the time of such determination, unless otherwise provided by the Board;
+[p196_c0003] (m) to make such changes to the form of this Supplemental Resolution as may be required by a Rating Agency in order to attain or maintain specific ratings on the Series 2026 Obligations;
+[p196_c0004] (n) to make such changes to the form of this Supplemental Resolution as may be necessary or desirable in order to cure any ambiguities, inconsistencies or other defects;
+[p196_c0005] (o) to determine whether to (i) enter into an escrow agreement or other arrangement in connection with the issuance of Refunding Obligations, including the selection of escrow agents, verification agents and the manner of determining specified matters relating to the defeasance of the refunded obligations and (ii) purchase SLGs or open market securities and the form and substance thereof and any related investment agreement, and to determine the application of any amounts released in connection with any such refunding; and
+[p196_c0006] (p) to determine any other matters provided for herein, or permitted by the provisions of the Applicable Resolutions, including the election and determination of matters relating to Tax-Exempt Obligations, to establish any additional bonds tests or reserve requirements, and to determine matters relating to the payment or defeasance of Obligation Anticipation Notes, including preparation of any documentation therefor.
+[p196_c0007] 2. Any Authorized Officer shall execute one or more Certificates of Determination evidencing the determinations made pursuant to this Supplemental Resolution and any such Certificate of Determination shall be conclusive evidence of the determinations of such Authorized Officer, as stated therein. More than one Certificate of Determination may be delivered to the extent more than one Series or subseries of Series 2026 Obligations are delivered from time to time, or other authority is exercised under this Supplemental Resolution from time to time and each such Certificate of Determination shall be delivered to the related Trustee concurrently with the authentication and delivery of the respective Series or subseries of Series 2026 Obligations by such Trustee or other documentation. Determinations set forth in any Certificate of Determination shall have the same effect as if set forth in this Supplemental Resolution.
+[p196_c0008] 3. Any such Authorized Officer may exercise any authority delegated under this Supplemental Resolution from time to time following issuance of any Series 2026 Obligations, as appropriate for any purposes, including to remove or replace Trustees under Applicable Resolutions as permitted by the Applicable Resolution, provided such substitute Trustee meets the requirements of the Applicable Resolution; to amend any Certificate of Determination to make such changes to the form thereof as may be necessary or desirable in order to cure any ambiguities, inconsistencies or other defects; to change interest rate modes or auction periods; to obtain or terminate one or more Credit Facilities, including substitute or additional Credit Facilities; to enter into one or more bank direct purchase agreements or similar instruments providing for the private placement of Series 2026 Obligations with financial or governmental entities; to appoint new or additional agents or other parties deemed appropriate to a particular form or mode of Series 2026 Obligation or Series 2026 Obligation Anticipation Note or manner of sale; to enter into one or more remarketing agreements, firm remarketing agreements, continuing disclosure agreements or other agreements in connection with the remarketing of any Series 2026 Obligations; if any Series 2026 Obligations shall consist of multiple subseries, to change the principal
+[p196_c0009] _11_
+[p196_c0010] _Master Page # 196 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 197
+
+[p197_c0001] amounts and number of the individual subseries or to combine one or more subseries into a single Series or subseries; or, if any Series 2026 Obligations consist of a single Series or subseries, to divide such Series or subseries into two or more subseries and to determine the principal amount of such subseries. In connection with the remarketing, by negotiated sale, competitive bid or direct or private placement, of any Series 2026 Obligations, any such Authorized Officer is hereby authorized to make public and to authorize the use and distribution by remarketing agents or other appropriate parties of a remarketing circular (including a preliminary remarketing circular), or other disclosure document, in substantially the form most recently executed or delivered by the Issuer in connection with the remarketing of Obligations or Obligation Anticipation Notes to the extent applicable, with such changes, omissions, insertions and revisions as such Authorized Officer shall deem advisable. Any Authorized Officer shall execute one or more amendments to the applicable Certificate or Certificates of Determination evidencing the determinations made pursuant to this paragraph and any such amended Certificate of Determination shall be conclusive evidence of the determinations of such Authorized Officer, as stated therein.
+[p197_c0002] Section 2.11. Sale of Series 2026 Obligations. Each Authorized Officer is hereby authorized either (i) to sell and award all or any portion of the Series 2026 Obligations through a competitive bidding process to purchasers meeting the requirements of one or more Notices of Sale to be published in order to give notice of the competitive sale of the Series 2026 Obligations; (ii) to sell and award all or any portion of the Series 2026 Obligations through a negotiated sale to the purchasers who are referred to in the Purchase Agreement and who shall be selected from the then current list of approved underwriters or shall be an approved governmental lender under a federal or State program; (iii) to sell and award all or any portion of the Series 2026 Obligations through a direct sale to the financial or governmental institution or institutions selected by the Authorized Officer who shall be referred to in the continuing covenant, direct purchase or similar agreement; or (iv) to issue all or any portion of the Series 2026 Obligations in the form of a Loan Facility to any financial or governmental institution or institutions selected by the Authorized Officer or pledge such Series 2026 Obligations as security for any Loan Facility. Each Authorized Officer is hereby authorized to sell and award the Series 2026 Obligations to the purchasers referred to in the preceding sentence in the case of a bond purchase agreement or note purchase agreement, in substantially the form most recently executed or delivered by the Issuer, to the extent applicable, in connection with the sale of Obligations or Obligation Anticipation Notes, or, with respect to a continuing covenant, direct purchase or similar agreement, containing bank facility terms and provisions (including, without limitation, increased costs, term-out, events of default and remedies) in substantially the form set forth in a letter of credit reimbursement agreement most recently executed or delivered by the Issuer to the extent applicable, including, if applicable, that the requirement that the Loan Facility issuer or direct purchaser offer to the Issuer a term-out provision of no less than five years, with such revisions to reflect the terms and provisions of the Series 2026 Obligations as may be approved by the Authorized Officer executing the Purchase Agreement. Each Authorized Officer is hereby authorized to agree to the selection of the representative of the underwriters or the other purchasers or facility providers as referred to in the Purchase Agreement or Agreements and to execute and deliver the Purchase Agreement or Agreements for and on behalf and in the name of the Issuer with such changes, omissions, insertions and revisions as may be approved by the Authorized Officer executing the Purchase Agreement or Agreements, said execution being conclusive evidence of such approval and concurrence in the selection of the representative of the underwriters.
+[p197_c0003] If it is determined that any sale of Series 2026 Obligations shall be conducted on a competitive bid basis, each Authorized Officer is hereby further authorized to conduct the sale and award of the Series 2026 Obligations on the basis of a competitive bid, pursuant to the terms of a Notice of Sale, in a form, including any limitations on permitted bidders and a description of the basis for determining the winning bidder or bidders, determined by such Authorized Officer. Each Authorized Officer is hereby authorized to conduct such competitive sale of the Series 2026 Obligations in a manner consistent with this Supplemental Resolution and to utilize the services of the Authority's financial advisor and the services of an electronic
+[p197_c0004] _12_
+[p197_c0005] _Master Page # 197 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 198
+
+[p198_c0001] bidding service, as such Authorized Officer shall determine, and the execution by such Authorized Officer of a letter of award shall be conclusive evidence of such award.
+[p198_c0002] Each Authorized Officer is hereby authorized to make public and to authorize the use and distribution by said purchasers or other appropriate parties of a Preliminary Official Statement in connection with each public offering or any direct or private placement of the Series 2026 Obligations, in substantially the form most recently executed or delivered by the Issuer in connection with the sale of Obligations or Obligation Anticipation Notes to the extent applicable, with such changes, omissions, insertions and revisions as such officer shall deem advisable, said distribution being conclusive evidence of the approval of such changes, omissions, insertions and revisions. The Issuer authorizes any of said officers to deliver a certification to the effect that such Preliminary Official Statement or Official Statement, if deemed necessary or appropriate, together with such other documents, if any, described in such certificate, was deemed final as of its date for purposes of Rule 15c2-12 of the Securities and Exchange Commission as applicable.
+[p198_c0003] Each Authorized Officer is hereby authorized to make public and to authorize distribution of an Official Statement in substantially the form of each Preliminary Official Statement or the most recently executed and delivered Official Statement if there is not a Preliminary Official Statement to the extent applicable, with such changes, omissions, insertions and revisions as such Authorized Officer shall deem advisable, to sign such Official Statement and to deliver such Official Statement to the purchasers of such issue of the Series 2026 Obligations, such execution being conclusive evidence of the approval of such changes, omissions, insertions and revisions.
+[p198_c0004] Notwithstanding the preceding two paragraphs, however, each Authorized Officer may make public and authorize the use and distribution of a final Official Statement in connection with the public offering of the Series 2026 Obligations meeting the requirements of the preceding two paragraphs and may deem such Official Statement final as of its date for purposes of Rule 15c2-12 of the Securities and Exchange Commission.
+[p198_c0005] Each Authorized Officer is hereby authorized to execute and deliver for and on behalf and in the name of the Issuer, to the extent determined by such Authorized Officer to be necessary or convenient, a Continuing Disclosure Agreement, substantially in the form of the Continuing Disclosure Agreement most recently executed and delivered by the Issuer to the extent applicable, with such changes, omissions, insertions and revisions as such Authorized Officer shall deem advisable (the "Continuing Disclosure Agreement"), said execution being conclusive evidence of the approval of such changes, omissions, insertions and revisions.
+[p198_c0006] The proceeds of each good faith deposit, if any, received by the Issuer from the purchasers of each issue of the Series 2026 Obligations under the terms of the related Purchase Agreement or Notice of Sale may be invested by the Issuer pending application of the proceeds of such good faith deposit for the purposes provided in Section 2.02 of this Supplemental Resolution at the time of the issuance and delivery of such Series 2026 Obligations.
+[p198_c0007] Each Authorized Officer (including any Assistant Secretary of the Issuer) is hereby authorized and directed to execute, deliver, amend, replace or terminate any and all documents and instruments (including any remarketing agreements, dealer agreements, broker dealer agreements, tender agent agreements, escrow agreements, auction agency agreements, any investment agreements or arrangements, or any reimbursement agreements or documents or instruments relating to a Credit Facility deemed appropriate to a given form or mode of an Obligation) and to do and cause to be done any and all acts necessary or proper for carrying out each Purchase Agreement or Notice of Sale, each Continuing Disclosure Agreement, the terms of any Credit Facility or other such agreement or arrangement, and the issuance, sale and delivery of
+[p198_c0008] _13_
+[p198_c0009] _Master Page # 198 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 199
+
+[p199_c0001] the Series 2026 Obligations and for implementing the terms of the Series 2026 Obligations and the transactions contemplated hereby or thereby.
+[p199_c0002] When reference is made in this Supplemental Resolution to the authorization of an Authorized Officer to do any act, such act may be accomplished by any of such officers individually.
+### [p199_c0003] Section 2.12. Forms of Series 2026 Obligations and Trustee's Authentication Certificate.
+[p199_c0004] (a) Subject to the provisions of the Applicable Resolution, the form of registered Series 2026 Bonds, and the related Trustee's certificate of authentication, shall be substantially in the form set forth in Exhibit One (or any analogous attachment or reference thereto) to the Applicable Resolution including, if necessary, any changes to comply with the requirements of DTC or the provisions of this Supplemental Resolution or the related Certificate of Determination.
+[p199_c0005] (b) The form of registered Series 2026 Notes, and the certificate of authentication, shall be of substantially the form and tenor provided in any Certificate of Determination.
+### [p199_c0006] Section 2.13. Appointment of Trustees and Paying Agents.
+[p199_c0007] (a) With respect to the Series 2026 Bonds, unless otherwise provided by any Certificate of Determination, The Bank of New York Mellon shall be the Trustee under each of the Applicable Resolutions and the Paying Agent for the Series 2026 Bonds.
+[p199_c0008] (b) With respect to the Series 2026 Notes, there is hereby delegated to any Authorized Officer executing any Certificate of Determination the right and authority to appoint any trustee, paying agent, fiscal agent or other agent with respect to the Series 2026 Notes deemed advisable by such Authorized Officer and to determine the terms and provisions of any arrangements with any such parties.
+### [p199_c0009] Section 2.14. General Provisions.
+[p199_c0010] (a) As and to the extent provided in any Certificate of Determination, the provisions of the Applicable Resolutions relating to "General Terms and Provisions of Obligations," "Redemption at Demand of the State or the City," "Redemption and Tender of Obligations," "Concerning the Trustee, Paying Agents and the Registrar," "Amendments" and "Miscellaneous" (or similar provisions of Applicable Resolutions hereafter added) may apply equally to the Series 2026 Notes as though set forth in full herein but with each reference to Bonds being a reference to Series 2026 Notes, except as affected by the terms hereof and the procedures of the Securities Depository; provided that the Authorized Officer executing any Certificate of Determination may, in the alternative, set forth in any Certificate of Determination provisions relating to any such matters as deemed necessary or appropriate by such Authorized Officer.
+[p199_c0011] (b) In addition to the delegations authorized by Section 2.10, there is hereby delegated to each Authorized Officer, subject to the limitations contained in any Applicable Resolution, the power to make such changes to any Applicable Resolution as may be necessary or desirable in order to cure any ambiguities, inconsistencies or other defects, as provided in a Certificate of Determination. This Supplemental Resolution shall constitute a "Supplemental Resolution" under any section of an Applicable Resolution permitting the cure of any ambiguities, inconsistencies or other defects therein provided such changes are filed with the applicable trustee and accompanied by an Opinion of Bond Counsel.
+[p199_c0012] _14_
+[p199_c0013] _Master Page # 199 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 200
+
+### [p200_c0001] ARTICLE III
+### [p200_c0002] DISPOSITION AND ALLOCATION OF SERIES 2026 OBLIGATION PROCEEDS
+[p200_c0003] Section 3.01. Disposition and Allocation of Series 2026 New Money Bond Proceeds. Except as otherwise provided under Applicable Resolutions hereafter added or as otherwise provided in any Certificate of Determination, any proceeds of the sale of the Series 2026 Bonds, other than accrued interest and capitalized interest, if any, shall be deposited, simultaneously with the issuance and delivery of a series or subseries of the Series 2026 Bonds, or shall otherwise be disposed of or applied pursuant to the related Certificate of Determination in accordance with the Applicable Resolution, as follows:
+[p200_c0004] (a) such proceeds shall be (i) deposited in the Series 2026 Bond Proceeds Account, which is hereby established in the proceeds fund established under the Applicable Resolution (the "Proceeds Fund") for each such series or subseries, and applied to the payment of Capital Costs or the payment of principal of and redemption premium, if any, and interest on the Series 2026 Notes or (ii) otherwise applied to the payment of such amounts; and
+[p200_c0005] (b) the balance of such proceeds shall be (i) deposited in the Series 2026 Costs of Issuance Account, which is hereby established in the Proceeds Fund for each such series or subseries, and applied to the payment of Costs of Issuance, or (ii) otherwise applied to the payment of Costs of Issuance.
+[p200_c0006] Section 3.02. Disposition of Series 2026 Note Proceeds. Except as otherwise provided under Applicable Resolutions hereafter added or as otherwise provided in any Certificate of Determination, the proceeds of the sale of the Series 2026 Notes shall be deposited in the Series 2026 Note Proceeds Account which is hereby established in the related Proceeds Fund and applied pursuant to the related Certificate of Determination to (i) the payment of Capital Costs, including any Costs of Issuance and accrued and capitalized interest or (ii) any Authorized Purpose under an Applicable Working Capital Resolution, and in each case the payment of principal of and interest on such Outstanding Series 2026 Notes.
+[p200_c0007] Section 3.03. Disposition of Refunding Obligation Proceeds. Except as otherwise provided under Applicable Resolutions hereafter added or as otherwise provided in any Certificate of Determination, any proceeds of the sale of the Series 2026 Refunding Obligations, other than accrued interest, if any, shall be deposited, simultaneously with the issuance and delivery of a series or subseries of the Series 2026 Refunding Obligations, or shall otherwise be disposed of or applied pursuant to the related Certificate of Determination as follows:
+[p200_c0008] (a) such proceeds shall be (i) deposited in the Series 2026 Refunding Obligations Proceeds Account, which is hereby established in the Proceeds Fund for each such series or subseries, and applied to the refunding of any Obligations, Parity Debt or Cross Credit Obligations, or portions of any of them, in accordance with Section 2.02 hereof or (ii) otherwise applied to such refunding; and
+[p200_c0009] (b) the balance of such proceeds shall be (i) deposited in the Series 2026 Refunding Obligations Costs of Issuance Account, which is hereby established in the Proceeds Fund for each such series or subseries, and applied to the payment of Costs of Issuance, or (ii) otherwise applied to the payment of Costs of Issuance.
+[p200_c0010] Section 3.04. Accrued Interest. Unless otherwise provided in the related Certificate of Determination, the accrued interest and capitalized interest (excluding capitalized interest on Series 2026 Refunding Obligations), if any, received on the sale of the Series 2026 Obligations shall be deposited in the related debt service fund created under the Applicable Resolution.
+[p200_c0011] _15_
+[p200_c0012] _Master Page # 200 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 201
+
+### [p201_c0001] ARTICLE IV
+### [p201_c0002] TAX COVENANTS AND DEFEASANCE
+[p201_c0003] Section 4.01. Tax Covenants Relating to the Series 2026 Obligations. The Issuer covenants that, in order to maintain the exclusion from gross income for federal income tax purposes of the interest on the Series 2026 Obligations issued as Tax-Exempt Obligations, the Issuer will satisfy, or take such actions as are necessary to cause to be satisfied, each provision of the Code necessary to maintain such exclusion. In furtherance of this covenant, the Issuer agrees to comply with such written instructions as may be provided by Bond Counsel. In furtherance of the covenant contained in the preceding sentence, the Issuer agrees to continually comply with the provisions of any “Arbitrage and Use of Proceeds Certificate” or “Tax Certificate” to be executed by the Issuer in connection with the execution and delivery of any Series 2026 Obligations issued as Tax-Exempt Obligations, as amended from time to time.
+[p201_c0004] Notwithstanding any other provision of the Applicable Resolution to the contrary, upon the Issuer’s failure to observe, or refusal to comply with, the above covenant (a) the Owners or Holders of the Series 2026 Obligations, or the Trustee acting on their behalf, shall be entitled to the rights and remedies provided to Owners or the Trustee under Section 702 (or other analogous provision) of the Applicable Resolution (as though such provisions related to Series 2026 Notes rather than Bonds), and (b) neither the Owners of the Obligations or notes of any Series or holders of any Parity Debt (other than the Owners of the Series 2026 Obligations or the Trustee acting on their behalf), nor the Trustee acting on their behalf, shall be entitled to exercise any right or remedy provided to the Owners, the Parity Debt holders, the Trustee or Noteholders under the Applicable Resolution based upon the Issuer’s failure to observe, or refusal to comply with, the above covenant.
+[p201_c0005] The provisions of the foregoing covenants set forth in this Section shall not apply to any Series 2026 Refunding Obligations, including any subseries thereof, which the Issuer determines pursuant to the applicable Certificate of Determination to issue as Taxable Obligations.
+[p201_c0006] Section 4.02. Defeasance. In the event the Issuer shall seek, prior to the maturity or redemption date thereof, to pay or cause to be paid, within the meaning and with the effect expressed in the Applicable Resolution, all or less than all Outstanding Series 2026 Obligations issued as Tax-Exempt Obligations and the provisions of Section 4.01 hereof shall then be of any force or effect, then, notwithstanding the provisions of the Applicable Resolutions, the Series 2026 Obligations issued as Tax-Exempt Obligations which the Issuer then seeks to pay or cause to be paid shall not be deemed to have been paid within the meaning and with the effect expressed in the defeasance provisions of the Applicable Resolutions unless (i) the Issuer has confirmed in writing that the Owners or Holders of the Series 2026 Obligations issued as Tax-Exempt Obligations which the Issuer then seeks to pay or cause to be paid will continue, after such action, to have the benefit of a covenant to the effect of the covenant of the Issuer contained in Section 4.01 hereof or (ii) there shall have been delivered to the related Trustee an Opinion of Bond Counsel to the effect that non-compliance thereafter with the applicable provisions of the Code will not affect the then current treatment of interest on the Series 2026 Obligations issued as Tax-Exempt Obligations in determining gross income for Federal income tax purposes.
+### [p201_c0007] ARTICLE V
+### [p201_c0008] REIMBURSEMENT
+[p201_c0009] Section 5.01. Capital Program Reimbursement. (a) The Issuer intends to finance Applicable Transit and Commuter Projects in 2026 (the “Capital Project”) (whether directly or as a reimbursement) consisting of capital assets, whether in the nature of personal or real property, which are used for transit,
+[p201_c0010] _16_
+[p201_c0011] _Master Page # 201 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 202
+
+[p202_c0001] commuter or transportation purposes as more fully described in the capital programs adopted by the Issuer (the “Capital Programs”).
+[p202_c0002] (b) The Issuer desires to finance the Capital Project through the issuance of tax-exempt debt or tax-advantaged debt, if available, and other available sources, including moneys derived from the Issuer and its affiliates and subsidiaries, and expects to reimburse expenditures made from such other sources with proceeds of such tax-exempt or tax-advantaged debt.
+[p202_c0003] (c) The statements contained in this Section 5.01 with respect to the reimbursement of the expenditures described in this Supplemental Resolution are intended to be statements of official intent as required by, and in conformance with, the provisions of Treasury Regulation Section 1.150-2(e).
+[p202_c0004] (d) The expenditures in connection with the Capital Project to be reimbursed pursuant to this Supplemental Resolution have been incurred and paid not more than 60 days prior to the date this Supplemental Resolution (or any amendment of or supplement to this Supplemental Resolution, as applicable) is adopted or will be incurred and paid after the date this Supplemental Resolution (or any amendment of or supplement to this Supplemental Resolution, as applicable) is adopted in connection with the Capital Project. The reimbursement of such expenditures with proceeds of tax-exempt or tax-advantaged debt will be made in compliance with Treasury Regulation Section 1.150-2(d).
+[p202_c0005] (e) The Issuer reasonably expects that the maximum principal amount of tax-exempt or tax-advantaged debt (including bonds, commercial paper and bond anticipation notes) to be issued by the Issuer and/or by TBTA pursuant to the TBTA Multiple Credit and Series 2026 Supplemental Resolution subsequent to the date hereof to pay the Capital Project expenditures in 2026 (whether directly or as a reimbursement), in addition to amounts previously authorized by other resolutions intended to be statements of official intent as required by, and in conformance with, the provisions of Treasury Regulation Section 1.150-2(e), is $7 billion, which is the amount set forth in Section 2.01(a) of this Supplemental Resolution (plus associated financing costs).
+[p202_c0006] (f) This Section shall take effect immediately.
+### [p202_c0007] Section 5.02. Working Capital Reimbursement.
+[p202_c0008] (a) The Issuer intends to finance working capital expenditures in 2026 (the “Working Capital Purpose”) (whether directly or as a reimbursement) through the issuance of taxable, or tax-exempt or tax-advantaged debt if permitted under the Code, and other available sources, including moneys derived from the Issuer and its affiliates and subsidiaries, and expects to reimburse expenditures made from such other sources with proceeds of such debt.
+[p202_c0009] (b) The statements contained in this Section 5.02 with respect to the reimbursement of the expenditures described in this Supplemental Resolution are intended to be statements of official intent as required by, and in conformance with, the provisions of Treasury Regulation Section 1.150-2(e).
+[p202_c0010] (c) The expenditures in connection with the Working Capital Purpose to be reimbursed with tax-exempt or tax-advantaged debt pursuant to this Supplemental Resolution have been incurred and paid not more than 60 days prior to the date this Supplemental Resolution (or any amendment of or supplement to this Supplemental Resolution, as applicable) is adopted or will be incurred and paid after the date this Supplemental Resolution (or any amendment of or supplement to this Supplemental Resolution, as applicable) is adopted in connection with the Working Capital Purpose. The reimbursement of such expenditures with proceeds of tax-exempt or tax-advantaged debt will be made in compliance with Treasury Regulation Section 1.150-2(d) or such other applicable Treasury Regulations.
+[p202_c0011] _17_
+[p202_c0012] _Master Page # 202 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 203
+
+[p203_c0001] (d) The Issuer reasonably expects that the maximum principal amount of taxable, tax-exempt or tax-advantaged debt (including bonds, commercial paper and bond anticipation notes) to be issued by the Issuer subsequent to the date hereof to pay for the Working Capital Purposes in 2026 (whether directly or as a reimbursement), in addition to amounts previously authorized by other resolutions intended to be statements of official intent as required by, and in conformance with, the provisions of Treasury Regulation Section 1.150-2(e), is $1.5 billion, which is the amount set forth in Section 2.01(b) of this Supplemental Resolution (plus associated financing costs).
+[p203_c0002] (e) This Section shall take effect immediately.
+[p203_c0003] _18_
+[p203_c0004] _Master Page # 203 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 204
+
+### [p204_c0001] TRIBOROUGH BRIDGE AND TUNNEL AUTHORITY
+### [p204_c0002] MULTIPLE CREDIT AND SERIES 2026 SUPPLEMENTAL RESOLUTION AUTHORIZING OBLIGATIONS, OBLIGATION ANTICIPATION NOTES AND REFUNDING OBLIGATIONS
+[p204_c0003] Adopted December 17, 2025
+[p204_c0004] _Master Page # 204 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 205
+
+### [p205_c0001] MULTIPLE CREDIT AND SERIES 2026 SUPPLEMENTAL RESOLUTION AUTHORIZING OBLIGATIONS, OBLIGATION ANTICIPATION NOTES AND REFUNDING OBLIGATIONS
+[p205_c0002] BE IT RESOLVED by the Board of Triborough Bridge and Tunnel Authority (the “Issuer”), as follows:
+### [p205_c0003] ARTICLE I
+### [p205_c0004] DEFINITIONS AND STATUTORY AUTHORITY
+[p205_c0005] Section 1.01 Supplemental Resolution. This Multiple Credit and Series 2026 Supplemental Resolution Authorizing Obligations, Obligation Anticipation Notes and Refunding Obligations (the “Supplemental Resolution”) is supplemental to, and is adopted in accordance with, each of the Applicable Resolutions described below and the Issuer Act.
+### [p205_c0006] Section 1.02 Definitions.
+[p205_c0007] 1. All capitalized terms which are used but not otherwise defined in this Supplemental Resolution shall have the same meanings, respectively, as such terms are given in the Applicable Resolutions.
+[p205_c0008] 2. In this Supplemental Resolution:
+[p205_c0009] “Applicable Bridge and Tunnel Project(s)” shall mean the financing of TBTA Facilities in the case of the Senior Resolution and the Subordinate Resolution, and any bridge or tunnel project permitted to be financed under any other Applicable Resolution from time to time.
+[p205_c0010] “Applicable Bridge and Tunnel Resolution(s)” shall mean each of the following resolutions of the Issuer, as applicable:
+- [p205_c0011] (1) the Senior Resolution; (2) the Subordinate Resolution; and (3) any other resolution adopted by the Issuer with the expectation that obligations may be issued thereunder during the term of this Supplemental Resolution for the Applicable Bridge and Tunnel Projects permitted to be financed or refinanced under this Supplemental Resolution, as such Supplemental Resolution may be amended or supplemented from time to time.
+[p205_c0012] “Applicable CRZ Tolling Project(s)” shall mean the financing of the CRZ Tolling Program, as permitted to be financed under any Applicable CRZ Tolling Projects Resolution from time to time.
+[p205_c0013] _Master Page # 205 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 206
+
+[p206_c0001] “Applicable CRZ Tolling Projects Resolution(s)” shall mean each of the following resolutions of the Issuer, as applicable:
+- [p206_c0002] (1) the Second Subordinate Resolution; (2) the City Sales Tax Resolution; (3) the RETT Resolution; (4) the CRZ Resolution; and (5) any other resolution adopted by the Issuer with the expectation that obligations may be issued thereunder during the term of this Supplemental Resolution for the Applicable CRZ Tolling Projects permitted to be financed or refinanced under this Supplemental Resolution, as such Supplemental Resolution may be amended or supplemented from time to time.
+[p206_c0003] “Applicable Project(s)” shall mean the Applicable Bridge and Tunnel Project, the Applicable CRZ Tolling Project and the Applicable Transit and Commuter Project, and any other project permitted to be financed under any other Applicable Resolution from time to time.
+[p206_c0004] “Applicable Resolution(s)” shall mean the Applicable Bridge and Tunnel Resolution(s), the Applicable CRZ Tolling Projects Resolution(s) and the Applicable Transit and Commuter Resolution(s).
+[p206_c0005] “Applicable Transit and Commuter Project(s)” shall mean the financing of (i) the TBTA Transit and Commuter Project in the case of the Senior Resolution, the Subordinate Resolution, the City Sales Tax Resolution, the RETT Resolution and the CRZ Resolution, (ii) the PMT Transit and Commuter Project in the case of the PMT Resolution, and (iii) any transit or commuter project permitted to be financed under any other Applicable Resolution from time to time.
+[p206_c0006] “Applicable Transit and Commuter Resolution(s)” shall mean each of the following resolutions of the Issuer, as applicable:
+- [p206_c0007] (1) the Senior Resolution; (2) the Subordinate Resolution; (3) the PMT Resolution; (4) the City Sales Tax Resolution (5) the RETT Resolution; (6) the CRZ Resolution; and (7) any other resolution adopted by the Issuer with the expectation that obligations may be issued thereunder during the term of this Supplemental
+[p206_c0008] _- 2 -_
+[p206_c0009] _Master Page # 206 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 207
+
+[p207_c0001] Resolution for the Applicable Transit and Commuter Projects permitted to be financed or refinanced under this Supplemental Resolution, as such Supplemental Resolution may be amended or supplemented from time to time.
+[p207_c0002] “Authorized Officer” shall include (i) with respect to any Applicable Resolution, the officers designated as such in the Applicable Resolution, and, if not designated therein, the Chairman, the Chief Financial Officer of the MTA or the Deputy Chief, Financial Services of the MTA, or their designees, as well as any officer duly designated as “Acting” in said officer’s capacity, except that “Authorized Officer” shall not include the Secretary or any Assistant Secretary of the Issuer unless expressly delegated, and (ii) with respect to any Loan Facility, any individual designated by the Issuer, whether by title, appointment, or other means, as having the authority to act on behalf of the Issuer with respect to matters arising under this Supplemental Resolution, including the execution and delivery of documents, making of certifications, and performance of other acts required or permitted under this Supplemental Resolution, including but not limited to, any officer of the Issuer designated as such in the Applicable Resolution, and the Chairman and Chief Executive Officer, the Chief Financial Officer, and the Deputy Chief, Financial Services, as well as any officer duly designated as “Acting” in said officer’s capacity, except that, for the purposes of any delegation set forth herein with respect to a Loan Facility that does not expressly include any Assistant Secretary, “Authorized Officer” shall not include any Assistant Secretary of the Issuer unless expressly delegated.
+[p207_c0003] “Board” shall mean, when used with respect to the Issuer, the board of the Issuer acting as such pursuant to the provisions of the Issuer Act.
+[p207_c0004] “Bond Counsel” shall mean Nixon Peabody LLP, Orrick, Herrington & Sutcliffe LLP, D. Seaton and Associates, P.A., P.C., Bryant Rabbino LLP or any other attorney or firm of attorneys of nationally recognized standing in the field of law relating to the issuance of obligations by state and municipal entities, selected by the Issuer.
+[p207_c0005] “City Sales Tax Resolution” shall mean the resolution adopted by the Issuer on September 15, 2021, entitled “Special Obligation Resolution Authorizing Sales Tax Revenue Obligations (TBTA Capital Lockbox – City Sales Tax)”, as supplemented and amended from time to time.
+[p207_c0006] “Code” shall mean the Internal Revenue Code of 1986, as amended, and regulations thereunder.
+[p207_c0007] “Continuing Disclosure Agreement” has the meaning set forth in Section 2.11.
+[p207_c0008] “Cross-Credit Obligations” shall mean indebtedness or other obligations issued or incurred by the Issuer or any other Related Entity as described in clause (iii) of the definition of “Capital Costs” under the Applicable Resolution, but excluding Obligations originally issued under the same Applicable Resolution.
+[p207_c0009] “CRZ Resolution” shall mean the resolution adopted by the Issuer on November 19, 2025, entitled “Congestion Relief Zone Toll Revenue Obligation Resolution”, as supplemented and amended from time to time.
+[p207_c0010] _- 3 -_
+[p207_c0011] _Master Page # 207 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 208
+
+[p208_c0001] “CRZ Tolling Program” shall have the meaning set forth in the CRZ Resolution.
+[p208_c0002] “DTC” means The Depository Trust Company.
+[p208_c0003] “Loan Facility” shall mean a loan agreement, line of credit, revolving credit agreement or similar facility.
+[p208_c0004] “MTA Multiple Credit and Series 2026 Supplemental Resolution” shall mean the supplemental resolution adopted by MTA on the date of adoption of this Supplemental Resolution authorizing the issuance of bonds, notes and other obligations for various purposes during 2026, as supplemented and amended from time to time.
+[p208_c0005] “Noteholder”, “Holder” or “Holder of Notes”, or any similar term, means any person who shall be the registered owner of any Outstanding Series 2026 Note.
+[p208_c0006] “Notice of Sale” shall mean the form of Notice of Sale to be distributed with the Preliminary Official Statement, hereinafter defined, and published in the event of a competitive sale of any Series 2026 Obligations.
+[p208_c0007] “Official Statement” means a final official statement, offering circular or other disclosure document of the Issuer.
+[p208_c0008] “Other Available Revenues” shall mean monies not otherwise pledged under any Applicable Resolution (including monies that are no longer subject to the pledge of any Applicable Resolution after satisfaction of the flow of funds requirements thereunder) that are authorized under law and available to be pledged by the Issuer to secure a Loan Facility to finance or refinance Applicable Projects. For purposes of clarification, revenues pledged under the CRZ Resolution shall be “Other Available Revenues” until the first issuance of Obligations thereunder.
+[p208_c0009] “PMT Resolution” shall mean the resolution adopted by the Issuer on March 17, 2021, entitled “Payroll Mobility Tax Obligation Resolution”, as supplemented and amended from time to time.
+[p208_c0010] “Preliminary Official Statement” means a preliminary official statement, offering circular, or other disclosure document of the Issuer.
+[p208_c0011] “Purchase Agreement” means a bond purchase agreement, note purchase agreement, Loan Facility, continuing covenant agreement or similar agreement.
+[p208_c0012] “RETT Resolution” shall mean the resolution adopted by the Issuer on December 18, 2024 entitled “Special Obligation Resolution Authorizing Real Estate Transfer Tax Revenue Obligations (TBTA Capital Lockbox)”, as supplemented and amended from time to time.
+[p208_c0013] “Second Subordinate Resolution” shall mean the resolution adopted by the Issuer on December 18, 2019, entitled “CBDTP Second Subordinate Resolution Authorizing CBDTP Second Subordinate Revenue Obligations (Central Business District Tolling Program)”, as supplemented and amended from time to time.
+[p208_c0014] _- 4 -_
+[p208_c0015] _Master Page # 208 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 209
+
+[p209_c0001] “Senior Resolution” shall mean the resolution adopted by the Issuer on March 26, 2002, entitled “General Resolution Authorizing General Revenue Obligations”, as supplemented and amended from time to time.
+[p209_c0002] “Series 2026 Bonds” shall mean Series 2026 New Money Bonds and Series 2026 Refunding Obligations that are bonds.
+[p209_c0003] “Series 2026 New Money Bonds” shall mean the Series 2026 New Money Bridge and Tunnel Bonds, the Series 2026 New Money CRZ Tolling Bonds and the Series 2026 New Money Transit and Commuter Bonds.
+[p209_c0004] “Series 2026 New Money Bridge and Tunnel Bonds” shall mean the Bonds issued for Applicable Bridge and Tunnel Projects authorized by Article II of this Supplemental Resolution in one or more Series or subseries, subject to redesignation as hereinafter provided.
+[p209_c0005] “Series 2026 New Money Bridge and Tunnel Notes” shall mean the notes (including Obligation Anticipation Notes) issued for Applicable Bridge and Tunnel Projects authorized by Article II of this Supplemental Resolution in one or more Series or subseries, subject to redesignation as hereinafter provided.
+[p209_c0006] “Series 2026 New Money CRZ Tolling Bonds” shall mean the Bonds, if any, issued for Applicable CRZ Tolling Projects authorized by Article II of this Supplemental Resolution in one or more Series or subseries, subject to redesignation as hereinafter provided.
+[p209_c0007] “Series 2026 New Money CRZ Tolling Notes” shall mean the notes (including Obligation Anticipation Notes), if any, issued for Applicable CRZ Tolling Projects authorized by Article II of this Supplemental Resolution in one or more Series or subseries, subject to redesignation as hereinafter provided.
+[p209_c0008] “Series 2026 New Money Notes” shall mean the Series 2026 New Money Bridge and Tunnel Notes, the Series 2026 New Money CRZ Tolling Notes and the Series 2026 New Money Transit and Commuter Notes.
+[p209_c0009] “Series 2026 New Money Transit and Commuter Bonds” shall mean the Bonds issued for Applicable Transit and Commuter Projects authorized by Article II of this Supplemental Resolution in one or more Series or subseries, subject to redesignation as hereinafter provided.
+[p209_c0010] “Series 2026 New Money Transit and Commuter Notes” shall mean the notes (including Obligation Anticipation Notes) issued for Applicable Transit and Commuter Projects authorized by Article II of this Supplemental Resolution in one or more Series or subseries, subject to redesignation as hereinafter provided.
+[p209_c0011] “Series 2026 Notes” shall mean the Series 2026 New Money Notes and the Series 2026 Refunding Obligations that are notes.
+[p209_c0012] “Series 2026 Obligations” shall mean the Series 2026 New Money Bonds, the Series 2026 New Money Notes and the Series 2026 Refunding Obligations.
+[p209_c0013] _- 5 -_
+[p209_c0014] _Master Page # 209 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 210
+
+[p210_c0001] “Series 2026 Refunding Obligations” shall mean the bonds, notes (including Obligation Anticipation Notes) and other obligations authorized by Article II of this Supplemental Resolution that are (i) Refunding Obligations (as defined in the Applicable Resolutions and as authorized pursuant to Section 2.01(g)), (ii) Obligations or Obligation Anticipation Notes for the purpose of refunding Cross-Credit Obligations, and (iii) notes other than Obligation Anticipation Notes issued to refinance outstanding notes, in each case in one or more Series or subseries, subject to redesignation as hereinafter provided, and any Series 2026 Refunding Obligations may be issued pursuant to this Supplemental Resolution to restructure principal amortization within the maturity limits permitted by law.
+[p210_c0002] “Series 2026 Transit and Commuter Capital Cost Bonds” means the Series 2026 New Money Bonds and any similar bonds issued by MTA in accordance with the MTA Multiple Credit and Series 2026 Supplemental Resolution to finance projects that would be Applicable Transit and Commuter Projects under the Applicable Transit and Commuter Resolutions.
+[p210_c0003] “Series 2026 Transit and Commuter Capital Cost Notes” means the Series 2026 Notes (including Obligation Anticipation Notes) and any similar notes issued by MTA in accordance with the MTA Multiple Credit and Series 2026 Supplemental Resolution to finance projects that would be Applicable Transit and Commuter Projects under the Applicable Transit and Commuter Resolutions.
+[p210_c0004] “SOFR” means the Secured Overnight Financing Rate published by The Federal Reserve Bank of New York.
+[p210_c0005] “Subordinate Resolution” shall mean the resolution adopted by the Issuer on March 26, 2002, entitled “2001 Subordinate Revenue Resolution Authorizing Subordinate Revenue Obligations”, as supplemented and amended from time to time.
+[p210_c0006] “Trustee” shall have the meaning set forth in the Applicable Resolution.
+[p210_c0007] References herein to the terms “Bonds,” “Obligations,” “Obligation Anticipation Notes” and “Proceeds Account” as used in the Applicable Resolutions shall refer to the “Bonds,” “Obligations” and “Obligation Anticipation Notes” issued under, and the “Proceeds Account” established under, such Applicable Resolutions, notwithstanding the differences in the lien level at which such “Bonds,” “Obligations” and “Obligation Anticipation Notes” are secured at, or the “Proceeds Account” is established for, under such Applicable Resolutions. By way of example, the term “Obligation” as used herein refers, as the context requires, to “Obligations” issued under the Senior Resolution, as well as “Obligations” issued under the Subordinate Resolution.
+[p210_c0008] Section 1.03 Authority for this Supplemental Resolution. This Supplemental Resolution is adopted pursuant to the provisions of the Issuer Act and the Applicable Resolutions.
+### [p210_c0009] ARTICLE II
+### [p210_c0010] AUTHORIZATION OF SERIES 2026 OBLIGATIONS
+[p210_c0011] Section 2.01 Principal Amount, Designation and Series. (a) Pursuant to the Applicable Transit and Commuter Resolutions and in order to finance, as applicable, Capital Costs
+[p210_c0012] _- 6 -_
+[p210_c0013] _Master Page # 210 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 211
+
+[p211_c0001] for Applicable Transit and Commuter Projects, (i) Series 2026 New Money Transit and Commuter Bonds, (ii) Series 2026 New Money Transit and Commuter Notes, and (iii) Loan Facilities, which may be issued in one or more Series or subseries and from time to time, entitled to the benefit, protection and security of the Applicable Transit and Commuter Resolutions, are hereby authorized to be issued in an aggregate principal amount not exceeding $7 billion at any one time Outstanding under the Applicable Transit and Commuter Resolutions, to effectuate the purposes set forth in Section 2.02 hereof (the “Transit and Commuter Authorized Principal Amount”), which Transit and Commuter Authorized Principal Amount shall exclude any Series 2026 Obligations issued under the Applicable Transit and Commuter Resolutions issued to refinance Series 2026 New Money Transit and Commuter Notes and Series 2026 New Money Transit and Commuter Bonds. If determined to be advisable by an Authorized Officer in connection with the marketing of such Series 2026 Obligations, the proceeds of such Series 2026 Obligations to finance Capital Costs of the Applicable Transit and Commuter Project(s), after giving effect to any net original issue premium, may exceed the Transit and Commuter Authorized Principal Amount; provided, however, the Amount of Proceeds Delivered to the Transit and Commuter Capital Program shall not exceed the limitation imposed by Section 1269(12) of the MTA Act. The “Amount of Proceeds Delivered to the Transit and Commuter Capital Program” shall mean, in connection with any issuance, the amount of proceeds spent on Capital Costs of the Applicable Transit and Commuter Project(s), which shall not take into account (i) Costs of Issuance, (ii) original issue premium or discount, if any, and (iii) any amounts to fund accrued interest, reserve funds or capitalized interest. The Transit and Commuter Authorized Principal Amount shall be reduced by (i) the principal amount of bonds, notes or Loan Facilities issued under the MTA Multiple Credit and Series 2026 Supplemental Resolution for transit and commuter projects.
+[p211_c0002] (b) Pursuant to the Applicable Bridge and Tunnel Resolutions and in order to finance, as applicable, Capital Costs for Applicable Bridge and Tunnel Projects, (i) Series 2026 New Money Bridge and Tunnel Bonds, (ii) Series 2026 New Money Bridge and Tunnel Notes, and (iii) Loan Facilities, which may be issued in one or more Series or subseries and from time to time, entitled to the benefit, protection and security of the Applicable Bridge and Tunnel Resolutions, are hereby authorized to be issued in an aggregate principal amount not exceeding $700 million at any one time Outstanding to effectuate the purposes set forth in Section 2.02 hereof (the “Bridge and Tunnel Authorized Principal Amount”), which Bridge and Tunnel Authorized Principal Amount shall exclude any Series 2026 Obligations issued under the Applicable Bridge and Tunnel Resolutions issued to refinance Series 2026 New Money Bridge and Tunnel Notes and Series 2026 New Money Bridge and Tunnel Bonds. If determined to be advisable by an Authorized Officer in connection with the marketing of such Series 2026 Obligations, the proceeds of such Series 2026 Obligations to finance Capital Costs of the Applicable Bridge and Tunnel Project(s), after giving effect to any net original issue premium, may exceed the Bridge and Tunnel Authorized Principal Amount.
+[p211_c0003] (c) Reserved.
+[p211_c0004] (d) The Issuer is hereby authorized to issue Series 2026 Refunding Obligations under any Applicable Resolution for the purposes permitted under such Applicable Resolution without limitation as to principal amount for the purposes provided in Section 2.02 hereof.
+[p211_c0005] _- 7 -_
+[p211_c0006] _Master Page # 211 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 212
+
+[p212_c0001] (e) The Series 2026 Obligations shall be designated as, and shall be distinguished from the Obligations of all other Series by, the title or titles set forth in one or more Certificates of Determination.
+[p212_c0002] (f) The Series 2026 Obligations may be issued in the form of a Loan Facility.
+[p212_c0003] (g) The authority to issue the Obligations and Obligation Anticipation Notes and take related actions granted under previous resolutions of the Issuer shall continue in full force and effect. The authorization to issue the Series 2026 Obligations and take other actions hereunder shall continue in effect without any action by the Issuer until the adoption by the Board of a subsequent supplemental resolution authorizing future new money financings and refundings; provided, however, (i) the authorization to issue the Series 2026 Obligations to refinance the Series 2026 Notes authorized hereunder shall continue in effect until all of such Series 2026 Notes have been repaid, refinanced by Series 2026 Bonds or otherwise refinanced by some other means, including, but not limited to, Cross-Credit Obligations or bonds, notes or other obligations secured in whole or in part by Other Available Revenues or other bond resolutions approved for the financing or refinancing of the same Applicable Projects as were financed by the Series 2026 Notes, and (ii) for purposes of refunding or refinancing a Loan Facility, the Loan Facility shall be treated in the same manner as Series 2026 Notes hereunder, to the effect that the authorization to issue Series 2026 Obligations or incur a Loan Facility to refinance a Loan Facility shall continue in effect until such Loan Facility has been refinanced or otherwise repaid by some other means.
+[p212_c0004] (h) Nothing in this Supplemental Resolution is intended to preclude the issuance of Series 2026 Refunding Obligations as refunding obligations (including Cross-Credit Obligations) under the new money provisions of the Applicable Resolution.
+[p212_c0005] (i) The Issuer hereby covenants and agrees for the benefit of the Holders and Beneficial Owners of the Series 2026 Notes that it will maintain issuance capacity pursuant to the Applicable Resolution to issue Bonds or additional Obligation Anticipation Notes or incur Loan Facilities in an amount sufficient to pay the principal of and interest on the Series 2026 Notes when due.
+[p212_c0006] (j) Notwithstanding anything to the contrary in Sections 2.01(a) and (b), a Loan Facility may, as specified in an additional Supplemental Resolution, Certificate of Determination, or similar instrument executed in connection with the Loan Facility, be entitled to, or excluded from, the benefit, protection, and security of any Applicable Resolutions.
+[p212_c0007] Section 2.02 Purposes. The purposes for which the Series 2026 Obligations are issued shall be set forth in one or more Certificates of Determination and may include (a) with respect to the Series 2026 New Money Bonds and Series 2026 New Money Notes (i) the payment of all or any part of the Capital Costs, including Costs of Issuance relating to the applicable issuance, and (ii) the payment of principal of, redemption premium, if any, and interest on Outstanding Series 2026 Notes, all to the extent and in the manner provided in this Supplemental Resolution, (b) with respect to Series 2026 Refunding Obligations, the refunding, refinancing, restructuring or payment, including by purchasing, exchanging or tendering therefor, of all or any portion of any Outstanding Obligations or Parity Debt or Cross-Credit Obligations deemed advisable by an
+[p212_c0008] _- 8 -_
+[p212_c0009] _Master Page # 212 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 213
+
+[p213_c0001] Authorized Officer in accordance with the Applicable Resolutions, and (c) with respect to Loan Facilities, for any of the purposes described in paragraphs (a) and (b) of this Section, as applicable.
+[p213_c0002] Section 2.03 Dates, Maturities, Principal Amounts and Interest. The Series 2026 Obligations, except as otherwise provided in the Applicable Resolutions, shall be dated the date or dates determined in the related Certificate of Determination. The Series 2026 Obligations shall mature on the date or dates and in the year or years and in the principal amount or amounts, and shall bear interest at the rate or rates per annum, if any, specified in or determined in the manner provided in the related Certificate of Determination. The Series 2026 Notes shall be subject to redemption prior to maturity as provided in the Certificate of Determination.
+[p213_c0003] Section 2.04 Interest Payments. The Series 2026 Obligations shall bear interest from their date or dates and be payable on such date or dates as may be determined pursuant to the related Certificate of Determination. Except as otherwise provided in the related Certificate of Determination, interest on the Series 2026 Obligations shall be computed on the basis of twelve (12) 30-day months and a 360-day year.
+[p213_c0004] Section 2.05 Denominations, Numbers and Letters. Unless otherwise provided in the related Certificate of Determination, the Series 2026 Obligations shall be issued in fully registered form without coupons in the denomination of $5,000 or any integral multiple thereof. The Series 2026 Obligations shall be numbered and lettered as provided in the related Certificate of Determination.
+[p213_c0005] Section 2.06 Places of Payment and Paying Agents. Except as otherwise provided in the related Certificate of Determination, principal and Redemption Price of the Series 2026 Obligations shall be payable to the registered owner of each Series 2026 Obligation when due upon presentation of such Series 2026 Obligation at the principal corporate trust office of the applicable Trustee. Except as otherwise provided in the related Certificate of Determination, interest on the registered Series 2026 Obligations will be paid by check or draft mailed on the interest payment date by the applicable Paying Agent, to the registered owner at his address as it appears on the registration books or, at the option of any Owner or Holder of at least one million dollars ($1,000,000) in principal amount of the Series 2026 Obligations, by wire transfer in immediately available funds on each interest payment date to such Owner or Holder thereof upon written notice from such Owner or Holder to the related Trustee, at such address as such Trustee may from time to time notify such Owner or Holder, containing the wire transfer address (which shall be in the continental United States) to which such Owner or Holder wishes to have such wire directed, if such written notice is received not less than twenty (20) days prior to the related interest payment date (such notice may refer to multiple interest payments).
+[p213_c0006] Section 2.07 Sinking Fund Installments. Except as otherwise provided in the related Certificate of Determination, the Series 2026 Bonds, if any, determined in the related Certificate of Determination shall be subject to redemption (a) in part, by lot, (b) pro rata (in the case of Series 2026 Bonds issued as Taxable Obligations), or (c) otherwise as determined in accordance with the Applicable Resolution, on each date in the year or years as determined in the related Certificate of Determination at the principal amount thereof, plus accrued interest up to but not including the date of redemption thereof, from mandatory Sinking Fund Installments which are required to be
+[p213_c0007] _- 9 -_
+[p213_c0008] _Master Page # 213 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 214
+
+[p214_c0001] made in amounts sufficient to redeem on each such date the principal amount of such Series 2026 Bonds.
+[p214_c0002] Section 2.08 Redemption Prices and Terms. The Series 2026 Bonds may also be subject to redemption prior to maturity, at the option of the Issuer, upon notice as provided in Article A-IV of the Applicable Resolution, at any time as a whole or in part (and by lot within a maturity, or otherwise as determined in accordance with Section A-404 of the Applicable Resolution, if less than all of a maturity is to be redeemed), from maturities designated by the Issuer on and after the date and in the years and at the Redemption Prices (expressed as a percentage of principal amount) determined in the related Certificate of Determination, plus accrued interest up to but not including the redemption date; provided, however , that if any Series 2026 Obligations are redeemable at the election of the Issuer, such redemption may be a pro rata redemption and the Redemption Price may be determined as provided in clause of (f) of Section 2.10 hereof, all as determined in the related Certificate of Determination.
+### [p214_c0003] Section 2.09 Sources of Payment for Series 2026 Notes Issued as Obligation Anticipation Notes.
+[p214_c0004] (a) Principal and Interest. There are hereby pledged to the payment of principal of and interest on the Series 2026 Notes issued as Obligation Anticipation Notes: (i) the proceeds of other Series 2026 Notes issued for the same purposes to refinance such Series 2026 Notes issued as Obligation Anticipation Notes, and (ii) the proceeds of the Series 2026 New Money Bonds issued for the same purposes to refinance such Series 2026 Notes issued as Obligation Anticipation Notes, and any such pledge of the items set forth in clauses (i) and (ii) shall have priority over any other pledge created by the Applicable Resolution.
+[p214_c0005] (b) Interest only. There is also hereby pledged to the payment of interest on the Series 2026 Notes issued as Obligation Anticipation Notes under an Applicable Resolution amounts available for transfer pursuant to such Applicable Resolution for the payment of Subordinated Indebtedness in accordance with and subject to the limitations contained in such Applicable Resolution.
+[p214_c0006] (c) Permissive Pledge to Principal. To the extent set forth in a Certificate of Determination, there may be pledged to the payment of principal of the Series 2026 Notes issued as Obligation Anticipation Notes: (i) the proceeds of notes or other evidences of indebtedness, or any other amounts that are not pledged under the Applicable Resolution (which may include Other Available Revenues), and (ii) amounts available for transfer pursuant to such Applicable Resolution for the payment of Subordinated Indebtedness in accordance with and subject to the limitations contained in such Applicable Resolution.
+[p214_c0007] (d) Permissive Pledge to Interest. To the extent set forth in a Certificate of Determination, there may be pledged to the payment of interest on the Series 2026 Notes issued as Obligation Anticipation Notes the proceeds of notes or other evidences of indebtedness, or any other amounts that are not pledged under the Applicable Resolution (which may include Other Available Revenues).
+[p214_c0008] _- 10 -_
+[p214_c0009] _Master Page # 214 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 215
+
+[p215_c0001] For purposes of clarification, Series 2026 Bonds issued under the Second Subordinate Resolution are Subordinated Indebtedness as described in the Subordinate Resolution and the payment of interest on the Series 2026 Notes issued as Obligation Anticipation Notes under the Second Subordinate Resolution is subordinate to the payment of principal of and interest on the Series 2026 Bonds issued under the Second Subordinate Resolution.
+[p215_c0002] Section 2.10 Delegation to an Authorized Officer. 1. There is hereby delegated to each Authorized Officer, subject to the limitations contained in this Supplemental Resolution, the following powers with respect to the Series 2026 Obligations:
+[p215_c0003] (a) to determine whether and when to issue any (i) Series 2026 New Money Bonds, the amount of the Series 2026 New Money Bonds to be applied to finance Capital Costs or other uses as provided in Section 2.02 hereof, and the amount of the proceeds of the Series 2026 New Money Bonds, estimated to be necessary to pay the Costs of Issuance of the Series 2026 New Money Bonds and capitalized interest, if any, (ii) Series 2026 New Money Notes, the amount of the Series 2026 New Money Notes to be applied to finance Capital Costs or other uses as provided in Section 2.02 of this Supplemental Resolution and the amount of the proceeds of the Series 2026 New Money Notes estimated to be necessary to pay the Costs of Issuance of the Series 2026 New Money Notes and capitalized interest, if any, and (iii) Series 2026 Refunding Obligations constituting Refunding Obligations or Obligations issued to refund Cross-Credit Obligations, and to determine the amount of the proceeds of the Series 2026 Refunding Obligations to be applied to refunding purposes as well as the specific Obligations or Parity Debt or Cross-Credit Obligations, or portions of either to be refunded and the date or dates, if any, on which such refunded obligations shall be redeemed, and the amount of the proceeds of the Series 2026 Refunding Obligations estimated to be necessary to pay the Costs of Issuance of the Series 2026 Refunding Obligations;
+[p215_c0004] (b) with respect to any Loan Facility: (i) to identify, designate, and apply any Other Available Revenues, if any, pledged to secure the Issuer's repayment obligations thereunder; (ii) to negotiate, approve, and finalize the terms and conditions of the Loan Facility, including, without limitation, interest rate and fee provisions, representations, warranties and other covenants, events of default, remedies (including prepayment, amortization, and rate-mode provisions), and any required reserves; (iii) to execute and deliver one or more loan agreements (including amendments, supplements, waivers, or consents) with one or more financial institutions, government agencies or other entities selected by such Authorized Officer; (iv) to execute and deliver any other documents (including security agreements, account control agreements, intercreditor or collateral agency agreements, subordination agreements, collateral assignments, UCC financing statements and continuations, opinions, closing certificates, amendments, and related instruments) in the form and with such changes as an Authorized Officer determines are advisable (such determination to be conclusively evidenced by such Authorized Officer's execution thereof); (v) to grant to or confer upon the Trustee for the benefit of any lender under a Loan Facility (in its capacity as an Owner under the Applicable Resolution) any additional rights, remedies, powers, authority or security that may lawfully be granted to or conferred upon such lender or the Trustee which are not contrary to or inconsistent with Applicable Resolution as then in effect; and (vi) to take all other actions an Authorized
+[p215_c0005] _- 11 -_
+[p215_c0006] _Master Page # 215 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 216
+
+[p216_c0001] Officer determines are necessary or desirable to effectuate the Loan Facility, including establishing accounts or funds, providing and perfecting security interests, making elections, delivering certificates and notices, selecting and appointing advisors, and obtaining or providing credit enhancement, in each case consistent with applicable law and the Applicable Resolution;
+[p216_c0002] (c) to determine the purpose or purposes for which the Series 2026 Obligations are being issued, which shall be one or more of the purposes set forth in Section 2.02 of this Supplemental Resolution;
+[p216_c0003] (d) to determine the principal amounts of the Series 2026 Obligations to be issued for the purposes set forth in Section 2.02 of this Supplemental Resolution and whether such principal amounts constitute a separate Series or a subseries of Series 2026 Obligations, which principal amounts (and the aggregate of all such Series and subseries) shall not exceed the principal amounts permitted by Section 2.01 of this Supplemental Resolution, and with respect to Series 2026 Bonds, to determine Accreted Values and Appreciated Values, if applicable;
+[p216_c0004] (e) to determine the maturity date and principal amount of each maturity of the Series 2026 Obligations and with respect to Series 2026 Bonds, the amount and due date of each Sinking Fund Installment, if any;
+[p216_c0005] (f) to determine the date or dates which the Series 2026 Obligations shall be dated and the interest rate or rates of the Series 2026 Obligations or the manner of determining such interest rate or rates; provided, however, that (i) any Series 2026 New Money Bonds issued as fixed rate Tax-Exempt Obligations shall be subject to a maximum interest rate of not greater than 10% per annum, any Series 2026 New Money Bonds issued as fixed rate Taxable Obligations shall be subject to a maximum interest rate of not greater than 12% per annum, any Variable Interest Rate Obligations issued as Tax-Exempt Obligations shall be subject to a maximum interest rate of not greater than 15% per annum, any Variable Interest Rate Obligations issued as Taxable Obligations shall be subject to a maximum interest rate of not greater than 18% per annum and any Parity Reimbursement Obligations shall be subject to a maximum interest rate of not greater than 25% per annum, or, in each such case, such higher rate or rates as determined by the Board; and (ii) the true interest cost (as calculated by the officers of the Issuer executing any Certificate of Determination, which calculation shall be conclusive) on the Series 2026 Notes bearing a fixed rate of interest shall not exceed 8.00% per annum and for Series 2026 Notes bearing interest at a variable interest rate shall not exceed a rate equal to SIFMA or SOFR, as applicable, or another short-term index generally accepted in the marketplace chosen by an Authorized Officer and set forth in the Certificate of Determination, in each case, plus 5.00% and any default rate or equivalent rate shall not exceed the sum of 12.00% plus either a specified prime rate, the federal funds rate or another index generally accepted in the marketplace, in which case the total default rate shall not exceed 25%;
+[p216_c0006] (g) to determine the Redemption Price, Redemption Prices or prepayment cost, if any, and the redemption terms, if any, for the Series 2026 Obligations; provided, however, that if the Series 2026 Obligations are to be redeemable at the election of the
+[p216_c0007] _- 12 -_
+[p216_c0008] _Master Page # 216 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 217
+
+[p217_c0001] Issuer, the Redemption Price shall not be greater than one hundred three percent (103%) of the principal amount of the Series 2026 Obligations to be redeemed (the "Cap"), plus accrued interest thereon up to but not including the date of redemption, unless the Authorized Officer deems it advisable to provide for a make-whole redemption in excess of the Cap;
+[p217_c0002] (h) to determine whether the sale of any or a portion of the Series 2026 Obligations shall be conducted on either a negotiated or competitive bid basis and, as applicable, to determine the purchase price for the Series 2026 Obligations to be paid by the purchaser or purchasers referred to in one or more Purchase Agreements or a bank direct purchase agreement, the purchase price for the Series 2026 Obligations to be paid by the winning bidder, if such sale is conducted by competitive bid pursuant to a Notice of Sale, in either case as such document is described in Section 2.11 of this Supplemental Resolution, which may include such original issue discount and original issue premium as shall be determined in the related Certificate of Determination; provided, however, that, in the case of Series 2026 Bonds sold on a negotiated basis (and not competitive sale), the underwriters' discount reflected in such purchase price shall not exceed (i) $7.00 for each one thousand dollars ($1,000) principal amount of the Series 2026 Bonds and (ii) $3.50 for each one thousand dollars ($1,000) principal amount of the Series 2026 Notes;
+[p217_c0003] (i) to take all actions required for the Series 2026 Obligations to be eligible under the rules and regulations of DTC for investment and trading as uncertificated securities, to execute and deliver a standard form of letter of representation with DTC and, notwithstanding any provisions to the contrary contained in this Supplemental Resolution, to include in the related Certificate of Determination such terms and provisions as may be appropriate or necessary to provide for uncertificated securities in lieu of Series 2026 Obligations issuable in fully registered form;
+[p217_c0004] (j) to determine whether to issue all or any portion of the Series 2026 Obligations as Tax-Exempt Obligations, Taxable Obligations, Put Obligations, Variable Interest Rate Obligations or as any other form of Obligations or Obligation Anticipation Notes permitted by the Applicable Resolution or this Supplemental Resolution and any matters related thereto, including (i) the terms and provisions of any such Series 2026 Obligations, (ii) the selection of remarketing agents, tender agents, calculation agents, auction agents, dealers, bidding agents or any other agents or parties to ancillary arrangements and the terms of any such arrangements, and (iii) the methods for determining the accrual of Debt Service;
+[p217_c0005] (k) to determine the advisability, as compared to an unenhanced transaction, of obtaining one or more Credit Facilities, to select a provider or providers thereof and to determine and accept the terms and provisions and price thereof, to determine the items to be pledged to the Series 2026 Obligations from those permitted by Section A-203 of the Applicable Resolution, and to determine such other matters related thereto as in the opinion of the officer executing the related Certificate of Determination shall be considered necessary or appropriate and to effect such determinations by making any changes in or additions to this Supplemental Resolution required by Credit Facility providers, if any, or required by a Rating Agency in order to attain or maintain specific ratings on the Series
+[p217_c0006] _- 13 -_
+[p217_c0007] _Master Page # 217 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 218
+
+[p218_c0001] 2026 Obligations, or relating to the mechanisms for the repayment of amounts advanced thereunder or payment of fees, premiums, expenses or any other amounts, notices, the provision of information, and such other matters of a technical, mechanical, procedural or descriptive nature necessary or appropriate to obtain or implement a Credit Facility with respect to the Series 2026 Obligations, and to make any changes in connection therewith. Such changes may include, but are not limited to, the making of any additional covenants with Holders or other parties deemed necessary or appropriate by the officer executing any Certificate of Determination;
+[p218_c0002] (l) to determine that Series 2026 Refunding Obligations comply with all Board policies relating to the issuance of refunding obligations in effect at the time of such determination, unless otherwise provided by the Board;
+[p218_c0003] (m) to make such changes to the form of this Supplemental Resolution as may be required by a Rating Agency in order to attain or maintain specific ratings on the Series 2026 Obligations;
+[p218_c0004] (n) to make such changes to the form of this Supplemental Resolution as may be necessary or desirable in order to cure any ambiguities, inconsistencies or other defects;
+[p218_c0005] (o) to determine whether to (i) enter into an escrow agreement or other arrangement in connection with the issuance of Refunding Obligations, including the selection of escrow agents, verification agents and the manner of determining specified matters relating to the defeasance of the refunded obligations and (ii) purchase SLGs or open market securities and the form and substance thereof and any related investment agreement, and to determine the application of any amounts released in connection with any such refunding; and
+[p218_c0006] (p) to determine any other matters provided for herein, or permitted by the provisions of the Applicable Resolutions, including the election and determination of matters relating to Tax-Exempt Obligations, to establish any additional bonds tests or reserve requirements, and to determine matters relating to the payment or defeasance of Obligation Anticipation Notes, including preparation of any documentation therefor.
+[p218_c0007] 2. Any Authorized Officer shall execute one or more Certificates of Determination evidencing the determinations made pursuant to this Supplemental Resolution and any such Certificate of Determination shall be conclusive evidence of the determinations of such Authorized Officer, as stated therein. More than one Certificate of Determination may be delivered to the extent more than one Series or subseries of Series 2026 Obligations are delivered from time to time or other authority is exercised under this Supplemental Resolution from time to time and each such Certificate of Determination shall be delivered to the related Trustee concurrently with the authentication and delivery of the respective Series or subseries of Series 2026 Obligations by such Trustee or other documentation. Determinations set forth in any Certificate of Determination shall have the same effect as if set forth in this Supplemental Resolution.
+[p218_c0008] 3. Any such Authorized Officer may exercise any authority delegated under this Supplemental Resolution from time to time following issuance of any Series 2026 Obligations, as
+[p218_c0009] _- 14 -_
+[p218_c0010] _Master Page # 218 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 219
+
+[p219_c0001] appropriate for any purposes, including to remove or replace Trustees under Applicable Resolutions as permitted by the Applicable Resolution, provided such substitute Trustee meets the requirements of the Applicable Resolution; to amend any Certificate of Determination to make such changes to the form thereof as may be necessary or desirable in order to cure any ambiguities, inconsistencies or other defects; to change interest rate modes or auction periods; to obtain or terminate one or more Credit Facilities, including substitute or additional Credit Facilities; to enter into one or more bank direct purchase agreements or similar instruments providing for the private placement of Series 2026 Obligations with financial or governmental entities; to appoint new or additional agents or other parties deemed appropriate to a particular form or mode of Series 2026 Obligation or Series 2026 Obligation Anticipation Note or manner of sale; to enter into one or more remarketing agreements, firm remarketing agreements, continuing disclosure agreements or other agreements in connection with the remarketing of any Series 2026 Obligations; if any Series 2026 Obligations shall consist of multiple subseries, to change the principal amounts and number of the individual subseries or to combine one or more subseries into a single Series or subseries; or, if any Series 2026 Obligations consist of a single Series or subseries, to divide such Series or subseries into two or more subseries and to determine the principal amount of such subseries. In connection with the remarketing, by negotiated sale, competitive bid or direct or private placement, of any Series 2026 Obligations, any such Authorized Officer is hereby authorized to make public and to authorize the use and distribution by remarketing agents or other appropriate parties of a remarketing circular (including a preliminary remarketing circular), or other disclosure document, in substantially the form most recently executed or delivered by the Issuer in connection with the remarketing of Obligations or Obligation Anticipation Notes to the extent applicable, with such changes, omissions, insertions and revisions as such Authorized Officer shall deem advisable. Any Authorized Officer shall execute one or more amendments to the applicable Certificate or Certificates of Determination evidencing the determinations made pursuant to this paragraph and any such amended Certificate of Determination shall be conclusive evidence of the determinations of such Authorized Officer, as stated therein.
+[p219_c0002] Section 2.11 Sale of Series 2026 Obligations. Each Authorized Officer is hereby authorized either (i) to sell and award all or any portion of the Series 2026 Obligations through a competitive bidding process to purchasers meeting the requirements of one or more Notices of Sale to be published in order to give notice of the competitive sale of the Series 2026 Obligations; (ii) to sell and award all or any portion of the Series 2026 Obligations through a negotiated sale to the purchasers who are referred to in the Purchase Agreement and who shall be selected from the then current list of approved underwriters or shall be an approved governmental lender under a federal or State program; (iii) to sell and award all or any portion of the Series 2026 Obligations through a direct sale to the financial or governmental institution or institutions selected by the Authorized Officer who shall be referred to in the continuing covenant, direct purchase or similar agreement; or (iv) to issue all or any portion of the Series 2026 Obligations in the form of a Loan Facility to any financial or governmental institution or institutions selected by the Authorized Officer or pledge such Series 2026 Obligations as security for any Loan Facility. Each Authorized Officer is hereby authorized to sell and award the Series 2026 Obligations to the purchasers referred to in the preceding sentence in the case of a bond purchase agreement or note purchase agreement, in substantially the form most recently executed or delivered by the Issuer, to the extent applicable, in connection with the sale of Obligations or Obligation Anticipation Notes, or, with respect to a continuing covenant, direct purchase or similar agreement, containing bank facility terms and provisions (including, without limitation, increased costs, term-out, events of default
+[p219_c0003] _- 15 -_
+[p219_c0004] _Master Page # 219 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 220
+
+[p220_c0001] and remedies) in substantially the form set forth in a letter of credit reimbursement agreement most recently executed or delivered by the Issuer to the extent applicable, including, if applicable, that the requirement that the Loan Facility issuer or direct purchaser offer to the Issuer a term-out provision of no less than five years, with such revisions to reflect the terms and provisions of the Series 2026 Obligations as may be approved by the Authorized Officer executing the Purchase Agreement. Each Authorized Officer is hereby authorized to agree to the selection of the representative of the underwriters or the other purchasers or facility providers as referred to in the Purchase Agreement or Agreements and to execute and deliver the Purchase Agreement or Agreements for and on behalf and in the name of the Issuer with such changes, omissions, insertions and revisions as may be approved by the Authorized Officer executing the Purchase Agreement or Agreements, said execution being conclusive evidence of such approval and concurrence in the selection of the representative of the underwriters.
+[p220_c0002] If it is determined that any sale of Series 2026 Obligations shall be conducted on a competitive bid basis, each Authorized Officer is hereby further authorized to conduct the sale and award of the Series 2026 Obligations on the basis of a competitive bid, pursuant to the terms of a Notice of Sale, in a form, including any limitations on permitted bidders and a description of the basis for determining the winning bidder or bidders, determined by such Authorized Officer. Each Authorized Officer is hereby authorized to conduct such competitive sale of the Series 2026 Obligations in a manner consistent with this Supplemental Resolution and to utilize the services of the Authority's financial advisor and the services of an electronic bidding service, as such Authorized Officer shall determine, and the execution by such Authorized Officer of a letter of award shall be conclusive evidence of such award.
+[p220_c0003] Each Authorized Officer is hereby authorized to make public and to authorize the use and distribution by said purchasers or other appropriate parties of a Preliminary Official Statement in connection with each public offering or any direct or private placement of the Series 2026 Obligations, in substantially the form most recently executed or delivered by the Issuer in connection with the sale of Obligations or Obligation Anticipation Notes, to the extent applicable, with such changes, omissions, insertions and revisions as such officer shall deem advisable, said distribution being conclusive evidence of the approval of such changes, omissions, insertions and revisions. The Issuer authorizes any of said officers to deliver a certification to the effect that such Preliminary Official Statement or Official Statement, if deemed necessary or appropriate, together with such other documents, if any, described in such certificate, was deemed final as of its date for purposes of Rule 15c2-12 of the Securities and Exchange Commission, as applicable.
+[p220_c0004] The proceeds of each good faith deposit, if any, received by the Issuer from the purchasers of each issue of the Series 2026 Obligations under the terms of the related Purchase Agreement or Notice of Sale may be invested by the Issuer pending application of the proceeds of such good faith deposit for the purposes provided in Section 2.02 of this Supplemental Resolution at the time of the issuance and delivery of such Series 2026 Obligations.
+[p220_c0005] Each Authorized Officer is hereby authorized to make public and to authorize distribution of an Official Statement in substantially the form of each Preliminary Official Statement or the most recently executed and delivered Official Statement if there is not a Preliminary Official Statement to the extent applicable, with such changes, omissions, insertions and revisions as such Authorized Officer shall deem advisable, to sign such Official Statement and to deliver such
+[p220_c0006] _- 16 -_
+[p220_c0007] _Master Page # 220 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 221
+
+[p221_c0001] Official Statement to the purchasers of such issue of the Series 2026 Obligations, such execution being conclusive evidence of the approval of such changes, omissions, insertions and revisions.
+[p221_c0002] Notwithstanding the preceding two paragraphs, however, each Authorized Officer may make public and authorize the use and distribution of a final Official Statement in connection with the public offering of the Series 2026 Obligations meeting the requirements of the preceding two paragraphs and may deem such Official Statement final as of its date for purposes of Rule 15c2-12 of the Securities and Exchange Commission.
+[p221_c0003] Each Authorized Officer is hereby authorized to execute and deliver for and on behalf and in the name of the Issuer, to the extent determined by such Authorized Officer to be necessary or convenient, a Continuing Disclosure Agreement, substantially in the form of the Continuing Disclosure Agreement most recently executed and delivered by the Issuer to the extent applicable, with such changes, omissions, insertions and revisions as such Authorized Officer shall deem advisable (the “Continuing Disclosure Agreement”), said execution being conclusive evidence of the approval of such changes, omissions, insertions and revisions.
+[p221_c0004] Each Authorized Officer (including any Assistant Secretary of the Issuer) is hereby authorized and directed to execute, deliver, amend, replace or terminate any and all documents and instruments (including any remarketing agreements, dealer agreements, broker-dealer agreements, tender agent agreements, escrow agreements, auction agency agreements, any investment agreements or arrangements, or any reimbursement agreements or documents or instruments relating to a Credit Facility deemed appropriate to a given form or mode of an Obligation) and to do and cause to be done any and all acts necessary or proper for carrying out each Purchase Agreement or Notice of Sale, each Continuing Disclosure Agreement, the terms of any Credit Facility or other such agreement or arrangement, and the issuance, sale and delivery of the Series 2026 Obligations and for implementing the terms of the Series 2026 Obligations and the transactions contemplated hereby or thereby.
+[p221_c0005] When reference is made in this Supplemental Resolution to the authorization of an Authorized Officer to do any act, such act may be accomplished by any of such officers individually.
+### [p221_c0006] Section 2.12 Forms of Series 2026 Obligations and Trustee’s Authentication Certificate.
+[p221_c0007] (a) Subject to the provisions of the Applicable Resolution, the form of registered Series 2026 Bonds, and the related Trustee’s certificate of authentication, shall be substantially in the form set forth in Exhibit One (or any analogous attachment or reference thereto) to the Applicable Resolution including, if necessary, any changes to comply with the requirements of DTC or the provisions of this Supplemental Resolution or the related Certificate of Determination.
+[p221_c0008] (b) The form of registered Series 2026 Notes, and the certificate of authentication, shall be of substantially the form and tenor provided in any Certificate of Determination.
+### [p221_c0009] Section 2.13 Appointment of Trustees and Paying Agents.
+[p221_c0010] _- 17 -_
+[p221_c0011] _Master Page # 221 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 222
+
+[p222_c0001] (a) With respect to the Series 2026 Bonds (other than Series 2026 Bonds issued under the CRZ Resolution), unless otherwise provided by any Certificate of Determination, The Bank of New York Mellon shall be the Trustee under each of the Applicable Resolutions and the Paying Agent for the Series 2026 Bonds.
+[p222_c0002] (b) With respect to the Series 2026 Notes or Series 2026 Bonds issued under the CRZ Resolution, there is hereby delegated to any Authorized Officer executing any Certificate of Determination the right and authority to appoint any trustee, paying agent, fiscal agent or other agent with respect to the Series 2026 Notes or such Series 2026 Bonds, in each case deemed advisable by such Authorized Officer and to determine the terms and provisions of any arrangements with any such parties.
+### [p222_c0003] Section 2.14 General Provisions.
+[p222_c0004] (a) As and to the extent provided in any Certificate of Determination, the provisions of the Applicable Resolutions relating to “General Terms and Provisions of Obligations,” “Redemption at Demand of the State or the City,” “Redemption and Tender of Obligations,” “Concerning the Trustee, Paying Agents and the Registrar,” “Amendments” and “Miscellaneous” (or similar provisions of Applicable Resolutions hereafter added) may apply equally to the Series 2026 Notes as though set forth in full herein but with each reference to Bonds being a reference to Series 2026 Notes, except as affected by the terms hereof and the procedures of the Securities Depository; provided that the Authorized Officer executing any Certificate of Determination may, in the alternative, set forth in any Certificate of Determination provisions relating to any such matters as deemed necessary or appropriate by such Authorized Officer.
+[p222_c0005] (b) In addition to the delegations authorized by Section 2.10, there is hereby delegated to each Authorized Officer, subject to the limitations contained in any Applicable Resolution, the power to make such changes to any Applicable Resolution as may be necessary or desirable in order to cure any ambiguities, inconsistencies or other defects, as provided in a Certificate of Determination. This Supplemental Resolution shall constitute a “Supplemental Resolution” under any section of an Applicable Resolution permitting the cure of any ambiguities, inconsistencies or other defects therein provided such changes are filed with the applicable trustee and accompanied by an Opinion of Bond Counsel.
+### [p222_c0006] ARTICLE III
+### [p222_c0007] DISPOSITION AND ALLOCATION OF SERIES 2026 OBLIGATION PROCEEDS
+### [p222_c0008] Section 3.01 Disposition and Allocation of Series 2026 New Money Bond Proceeds.
+[p222_c0009] Except as otherwise provided under Applicable Resolutions hereafter added or as otherwise provided in any Certificate of Determination, any proceeds of the sale of the Series 2026 Bonds, other than accrued interest and capitalized interest, if any, shall be deposited, simultaneously with the issuance and delivery of a series or subseries of the Series 2026 Bonds, or shall otherwise be disposed of or applied pursuant to the related Certificate of Determination in accordance with the Applicable Resolution, as follows:
+[p222_c0010] _- 18 -_
+[p222_c0011] _Master Page # 222 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 223
+
+[p223_c0001] (a) such proceeds shall be (i) deposited in the Series 2026 Bond Proceeds Account, which is hereby established in the proceeds fund established under the Applicable Resolution (the “Proceeds Fund”) for each such series or subseries, and applied to the payment of Capital Costs or the payment of principal of and redemption premium, if any, and interest on the Series 2026 Notes or (ii) otherwise applied to the payment of such amounts; and
+[p223_c0002] (b) the balance of such proceeds shall be (i) deposited in the Series 2026 Costs of Issuance Account, which is hereby established in the Proceeds Fund for each such series or subseries, and applied to the payment of Costs of Issuance, or (ii) otherwise applied to the payment of Costs of Issuance.
+[p223_c0003] Section 3.02 Disposition of Series 2026 Note Proceeds. Except as otherwise provided under Applicable Resolutions hereafter added or as otherwise provided in any Certificate of Determination, the proceeds of the sale of the Series 2026 Notes shall be deposited in the Series 2026 Note Proceeds Account which is hereby established in the related Proceeds Fund and applied pursuant to the related Certificate of Determination to the payment of Capital Costs, including any Costs of Issuance and accrued and capitalized interest, and the payment of principal of and interest on Outstanding Series 2026 Notes.
+[p223_c0004] Section 3.03 Disposition of Refunding Obligation Proceeds. Except as otherwise provided under Applicable Resolutions hereafter added or as otherwise provided in any Certificate of Determination, any proceeds of the sale of the Series 2026 Refunding Obligations, other than accrued interest, if any, shall be deposited, simultaneously with the issuance and delivery of a series or subseries of the Series 2026 Refunding Obligations, or shall otherwise be disposed of or applied pursuant to the related Certificate of Determination as follows:
+[p223_c0005] (a) such proceeds shall be (i) deposited in the Series 2026 Refunding Obligations Proceeds Account, which is hereby established in the Proceeds Fund for each such series or subseries, and applied to the refunding of any Obligations, Parity Debt or Cross Credit Obligations, or portions of any of them, in accordance with Section 2.02 hereof or (ii) otherwise applied to such refunding; and
+[p223_c0006] (b) the balance of such proceeds shall be (i) deposited in the Series 2026 Refunding Obligations Costs of Issuance Account, which is hereby established in the Proceeds Fund for each such series or subseries, and applied to the payment of Costs of Issuance, or (ii) otherwise applied to the payment of Costs of Issuance.
+[p223_c0007] Section 3.04 Accrued Interest. Unless otherwise provided in the related Certificate of Determination, the accrued interest and capitalized interest (excluding capitalized interest on Series 2026 Refunding Obligations), if any, received on the sale of the Series 2026 Obligations shall be deposited in the related debt service fund created under the Applicable Resolution.
+### [p223_c0008] ARTICLE IV
+### [p223_c0009] TAX COVENANTS AND DEFEASANCE
+[p223_c0010] Section 4.01 Tax Covenants Relating to the Series 2026 Obligations. The Issuer covenants that, in order to maintain the exclusion from gross income for federal income tax
+[p223_c0011] _- 19 -_
+[p223_c0012] _Master Page # 223 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 224
+
+[p224_c0001] purposes of the interest on the Series 2026 Obligations issued as Tax-Exempt Obligations, the Issuer will satisfy, or take such actions as are necessary to cause to be satisfied, each provision of the Code necessary to maintain such exclusion. In furtherance of this covenant, the Issuer agrees to comply with such written instructions as may be provided by Bond Counsel. In furtherance of the covenant contained in the preceding sentence, the Issuer agrees to continually comply with the provisions of any "Arbitrage and Use of Proceeds Certificate" or "Tax Certificate" to be executed by the Issuer in connection with the execution and delivery of any Series 2026 Obligations issued as Tax-Exempt Obligations, as amended from time to time.
+[p224_c0002] Notwithstanding any other provision of the Applicable Resolution to the contrary, upon the Issuer's failure to observe, or refusal to comply with the above covenant (a) the Owners or Holders of the Series 2026 Obligations, or the Trustee acting on their behalf, shall be entitled to the rights and remedies provided to Owners or the Trustee under the Applicable Resolutions (for the Series 2026 Notes, as though such provisions related to Series 2026 Notes rather than Bonds), other than the right (which is hereby abrogated solely as to the Issuer's failure to observe, or refusal to comply with the above covenant) to declare the principal of all Obligations then Outstanding, and the interest accrued thereon, to be due and payable pursuant to Section 567 of the Issuer Act, and (b) neither the Owners of the Obligations or notes of any Series or holders of any Parity Debt (other than the Owners of the Series 2026 Obligations or the Trustee acting on their behalf), nor the Trustee acting on their behalf, shall be entitled to exercise any right or remedy provided to the Owners, the Parity Debt holders or the Trustee or Noteholders under the Applicable Resolution based upon the Issuer's failure to observe, or refusal to comply with, the above covenant.
+[p224_c0003] The provisions of the foregoing covenants set forth in this Section shall not apply to any Series 2026 Refunding Obligations, including any subseries thereof, which the Issuer determines pursuant to the applicable Certificate of Determination to issue as Taxable Obligations.
+### [p224_c0004] Section 4.02 Additional Covenants.
+[p224_c0005] 1. The Issuer covenants and agrees that it will not issue any Obligations under the Senior Resolution (other than pursuant to Section 205 thereof) unless in addition to satisfying the requirements of the Senior Resolution, an Authorized Officer delivers to the trustee under the Senior Resolution a certificate demonstrating that for any period of 12 consecutive calendar months out of the 18 complete calendar months next preceding the date of authentication and delivery of such issue of Senior Obligations, Net Revenues are at least equal to 1.10 times the Combined Maximum Annual Calculated Debt Service for all Obligations, and Parity Debt under each of the Senior Resolution and Subordinate Resolution.
+[p224_c0006] 2. The Issuer covenants and agrees that in addition to complying with the provisions of Section 6.04 of the Subordinate Resolution, the Issuer shall at all times establish, levy, maintain and collect, or cause to be established, levied, maintained and collected, such tolls, rentals and other charges in connection with the TBTA Facilities as shall always be sufficient, together with other money available therefor (including the anticipated receipt of proceeds of sale of Obligations or other bonds, notes or other obligations or evidences of indebtedness of the Issuer that will be used to pay the principal of Obligations issued in anticipation of such receipt, but not including any anticipated or actual proceeds from the sale of TBTA Facilities), to equal or exceed in each calendar year the greater of (a) an amount equal to the sum of amounts necessary in such
+[p224_c0007] _- 20 -_
+[p224_c0008] _Master Page # 224 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 225
+
+[p225_c0001] calendar year (i) to pay all Operating Expenses of the Issuer, plus (ii) to pay the sum of Calculated Debt Service as defined in the Subordinate Resolution and Calculated Debt Service as defined in the Senior Resolution, plus (iii) to maintain any reserve established by the Issuer pursuant to the Senior Resolution, in such amount as may be determined from time to time by an Authorized Officer in his or her judgment, or (b) an amount such that Revenues less Operating Expenses shall equal at least 1.10 times the sum of Calculated Debt Service as defined in the Senior Resolution and Calculated Debt Service as defined in the Subordinate Resolution for such calendar year.
+[p225_c0002] Section 4.03 Defeasance. In the event the Issuer shall seek, prior to the maturity or redemption date thereof, to pay or cause to be paid, within the meaning and with the effect expressed in the Applicable Resolution, all or less than all Outstanding Series 2026 Obligations issued as Tax-Exempt Obligations and the provisions of Section 4.01 hereof shall then be of any force or effect, then, notwithstanding the provisions of this Supplemental Resolution or the defeasance provisions of the Applicable Resolutions, the Series 2026 Obligations issued as Tax-Exempt Obligations which the Issuer then seeks to pay or cause to be paid shall not be deemed to have been paid within the meaning and with the effect expressed in this Supplemental Resolution or the defeasance provisions of the Applicable Resolutions unless (i) the Issuer has confirmed in writing that the Owners or Holders of the Series 2026 Obligations issued as Tax-Exempt Obligations which the Issuer then seeks to pay or cause to be paid will continue, after such action, to have the benefit of a covenant to the effect of the covenant of the Issuer contained in Section 4.01 hereof or (ii) there shall have been delivered to the related Trustee an Opinion of Bond Counsel to the effect that non-compliance thereafter with the applicable provisions of the Code will not affect the then current treatment of interest on the Series 2026 Obligations issued as Tax-Exempt Obligations in determining gross income for Federal income tax purposes.
+### [p225_c0003] ARTICLE V
+### [p225_c0004] REIMBURSEMENT
+### [p225_c0005] Section 5.01 Capital Program Reimbursement.
+[p225_c0006] (a) The Issuer intends to finance Applicable Transit and Commuter Project expenditures and Applicable Bridge and Tunnel Project expenditures in 2026 (together, the “Capital Project”) (whether directly or as a reimbursement) consisting of capital assets, whether in the nature of personal or real property, as more fully described in the capital programs (the “Capital Programs”) adopted by the Issuer or by the Metropolitan Transportation Authority (“MTA”).
+[p225_c0007] (b) The Issuer desires to finance the Capital Project through the issuance of tax-exempt debt or tax-advantaged debt, if available, and other available sources, including moneys derived from the Issuer or MTA and its affiliates and subsidiaries, and expects to reimburse expenditures made from such other sources with proceeds of such tax-exempt or tax-advantaged debt.
+[p225_c0008] (c) The statements contained in this Section 5.01 with respect to the reimbursement of the expenditures described in this Supplemental Resolution are intended to be statements of official intent as required by, and in conformance with, the provisions of Treasury Regulation Section 1.150-2(e).
+[p225_c0009] _- 21 -_
+[p225_c0010] _Master Page # 225 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 226
+
+[p226_c0001] (d) The expenditures in connection with the Capital Project to be reimbursed pursuant to this Supplemental Resolution have been incurred and paid not more than 60 days prior to the date this Supplemental Resolution (or any amendment of or supplement to this Supplemental Resolution, as applicable) is adopted or will be incurred and paid after the date this Supplemental Resolution (or any amendment of or supplement to this Supplemental Resolution, as applicable) is adopted in connection with the Capital Project. The reimbursement of such expenditures with proceeds of tax-exempt or tax-advantaged debt will be made in compliance with Treasury Regulation Section 1.150-2(d).
+[p226_c0002] (e) The Issuer reasonably expects that the maximum principal amount of tax-exempt or tax-advantaged debt (including bonds, commercial paper and bond anticipation notes) to be issued by the Issuer and/or by MTA pursuant to the MTA Multiple Credit and Series 2026 Supplemental Resolution subsequent to the date hereof to pay the Capital Project consisting of Applicable Transit and Commuter Project expenditures, in 2026 (whether directly or as a reimbursement), in addition to amounts previously authorized by other resolutions intended to be statements of official intent as required by, and in conformance with, the provisions of Treasury Regulation Section 1.150-2(e), is $7 billion, which is the amount set forth in Section 2.01(a) of this Supplemental Resolution (plus associated financing costs).
+[p226_c0003] (f) The Issuer reasonably expects that the maximum principal amount of tax-exempt or tax-advantaged debt (including bonds, commercial paper and bond anticipation notes) to be issued by the Issuer to pay the Capital Projects consisting of Applicable Bridge and Tunnel Project expenditures in 2026 (whether directly or as a reimbursement), in addition to amounts previously authorized by other resolutions intended to be statements of official intent as required by, and in conformance with, the provisions of Treasury Regulation Section 1.150-2(e), are $700 million, which is the amount set forth in Section 2.01(b) of this Supplemental Resolution (plus associated financing costs).
+[p226_c0004] (g) This Section shall take effect immediately.
+[p226_c0005] _- 22 -_
+[p226_c0006] _Master Page # 226 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 227
+
+### [p227_c0001] Metropolitan Transportation Authority
+[p227_c0002] DECEMBER 2025
+### [p227_c0003] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p227_c0004] Procurements Requiring Majority Vote:
+### [p227_c0005] H. Modification to Personal and Miscellaneous Service Contracts Awarded as Contracts for Services (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p227_c0006] 1. Metropolitan Life Insurance Company $16,950,000 Staff Summary Attached Five Years Contract # 0000015524-0100.3
+[p227_c0007] Contract for the provision of life/accidental death and dismemberment (“Life/AD&D”), long-term, and short-term disability benefits for non-represented employees and certain represented and retired employees: Modification to increase funding.
+[p227_c0008] _Master Page # 227 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 228
+
+### [p228_c0001] Schedule H: Modifications to Personal Service & Miscellaneous Service Contracts
+### [p228_c0002] Item Number: 1
+[p228_c0003]
+
+```text
+Vendor Name (Location) Metropolitan Life Insurance Company (New York, New York) Description: Life/AD&D, Long-term and Short-term Disability Benefits Insurance Contract Term (including Options, if any) January 1, 2021–December 31, 2026 Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Department: Deputy Chief Benefits Administration Officer, Stephen Scholl
+```
+[p228_c0004]
+
+```text
+Contract Number 0000015524-0100 AWO/Mod. # 3 Original Amount: $ 55,511,837 Prior Modifications: $ 14,140,000 Prior Budgetary Increases: 1 Current Amount: $ 69,651,837 This Request: $ 16,950,000 % of This Request to Current Amount: 24.0% % of Modifications (including This Request) to Original Amount: 56.0%
+```
+### [p228_c0005] Discussion:
+[p228_c0006] MTA Headquarters is seeking Board approval to increase the funding for a competitively negotiated personal services contract awarded to Metropolitan Life Insurance Company (“MetLife”) to continue providing life/accidental death and dismemberment (“Life/AD&D”), long-term (“LTD”), and short-term disability (“STD”) benefits for non-represented employees and certain represented and retired employees in the amount of $16,950,000. In September 2020, the Board approved the five-year contract for a projected amount of $55,511,837 for the term from January 1, 2021, to December 31, 2025. In January 2025, incremental funding in the amount of $14,140,000 was added to the contract. At that time, the Board was advised that in the event a successor contract is not awarded in time to provide coverage commencing 2026, the Board may be requested to approve an extension to this contract. During this contract extension, a replacement RFP is estimated to be released in Q1 2026.
+[p228_c0007] In all, over 88,000 employees and retirees are eligible for the current coverage offerings. The MTA pays the full premiums for the basic Life/AD&D and Disability benefits insurance programs without any premium contribution from participating employees, retirees, or their dependents. Certain MTA employees are offered additional voluntary life insurance programs, which the employee pays for through payroll deductions.
+[p228_c0008] The $16,950,000 additional 2026 funding requested is itemized below:
+- [p228_c0009] • Basic Life & AD&D – $8,940,000 • Voluntary Life & AD&D – $4,040,000 • STD – $970,000 • LTD – $3,000,000
+[p228_c0010] To arrive at the 2026 premium rates, a loss ratio analysis (the difference between the ratios of premiums paid to MetLife and MTA’s claims experience) was performed. The loss ratio analysis was conducted on a combined basis for Life/AD&D, LTD and STD. As a result of the loss ratio analysis and negotiations, MetLife’s total projected annual 2026 costs are expected to increase 20 percent based on current enrollment and wage increases over the current 2025 annual amount. This is primarily driven by a 65 percent increase in basic life insurance rates, while optional life and LTD rates remained unchanged and STD rates decreased by 15 percent compared to rates charged for 2025.
+[p228_c0011] Negotiations for Basic Life resulted in savings of $500,000, which is the difference in its initial and final proposal, and a $150,000 reduction for STD. For all coverages, the rates are considered fair and reasonable from an underwriting perspective.
+[p228_c0012] The contract resulting from this procurement is currently being evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state, and local law and regulations. The MTA will be working with MetLife and Dentcare to include applicable cybersecurity requirements prior to issuance of the notice of award.
+[p228_c0013] MetLife has certified that pursuant to EO 16 it is not doing business in Russia.
+[p228_c0014] A responsibility review was conducted for MetLife pursuant to the All-Agency Responsibility Guidelines (“Guidelines”). In connection with a previous contract awarded to MetLife, MetLife was found to be responsible notwithstanding significant adverse information (“SAI”) pursuant to the Guidelines, and such responsibility finding was approved by the MTA Interim Executive Director with the concurrence of the MTA General Counsel in March 2017. No new SAI has been found relating to MetLife and MetLife has been found to be responsible.
+### [p228_c0015] Impact on Funding
+[p228_c0016] The contract is funded by the MTA’s operating budget and employee contributions for the optional insurance programs.
+[p228_c0017] _Master Page # 228 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 229
+
+### [p229_c0001] DECEMBER 2025 MTA REAL ESTATE MTA C&D TRANSIT ORIENTED DEVELOPMENT FINANCE COMMITTEE AGENDA ITEMS
+### [p229_c0002] 1. TRANSACTIONAL ACTION ITEMS
+### [p229_c0003] Metropolitan Transportation Authority
+- [p229_c0004] a. Acquisition of a permanent easement and construction license from RLF Bassett II LLC in support of the Penn Station Access Project, Bronx NY
+### [p229_c0005] MTA Metro-North Railroad
+- [p229_c0006] b. Lease with Azor Bake Shop Inc dba Zaro's Family Bakery for retail space in Grand Central Terminal c. Lease with Bien Cuit LLC for retail space in Grand Central Terminal
+### [p229_c0007] 2. INFORMATION ITEMS
+- [p229_c0008] a. Report on agreements entered into directly by the Real Estate Department pursuant to board policy
+[p229_c0009]
+
+```text
+Legal Name Popular Name Abbreviation New York City Transit Authority MTA New York City Transit NYC Transit The Long Island Rail Road Company MTA Long Island Rail Road LIRR Metro-North Commuter Railroad Company MTA Metro-North Railroad MNR Triborough Bridge and Tunnel Authority MTA Bridges and Tunnels MTA B&T MTA Construction and Development Company MTA Construction and Development MTA C&D MTA Bus Company MTA Bus Company MTA Bus MTA Grand Central Madison Operating Company Grand Central Madison GCMC
+```
+[p229_c0010] Staten Island Rapid Transit Operating Authority is a subsidiary of the Metropolitan Transportation Authority. Its popular name is MTA Staten Island Railway (abbreviated as SIR).
+[p229_c0011] Manhattan and Bronx Surface Transit Operating Authority is a subsidiary of the New York City Transit Authority (abbreviated as MaBSTOA).
+[p229_c0012] _Master Page # 229 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 230
+
+### [p230_c0001] METROPOLITAN TRANSPORTATION AUTHORITY
+[p230_c0002] _Master Page # 230 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 231
+
+### [p231_c0001] Staff Summary
+### [p231_c0002] Metropolitan Transportation Authority
+### [p231_c0003] Page 1 of 2
+[p231_c0004]
+
+```text
+Subject ACQUISITION OF PERMANENT EASEMENT AND CONSTRUCTION LICENSE FROM RLF BASSETT II LLC IN THE BRONX, NEW YORK IN SUPPORT OF THE PENN ACCESS PROJECT Department TRANSIT ORIENTED DEVELOPMENT Department Head Name MIRIAM G. HARRIS Department Head Signature Project Manager Name NICHOLAS ROBERTS
+```
+[p231_c0005]
+
+```text
+Date DECEMBER 17, 2025 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p231_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 12/15/25 X 2 Board 12/17/25 X
+```
+[p231_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p231_c0008] AGENCY: Metropolitan Transportation Authority (“MTA”) and MTA Construction & Development Company (“C&D”) GRANTOR: RLF II BASSETT LLC (the “Grantor”) LOCATION: 1502 Bassett Avenue, Bronx, New York (the “Property”) ACTIVITY: Acquisition of a permanent easement and construction license for a pedestrian overpass at the south entrance of Metro-North Railroad’s new Morris Park Station as part of the Penn Access Project (the “Property Interest”) ACTION REQUIRED: Authorization to acquire the Property Interest, construct a new entrance to the Grantor’s Property, and enter into the Pedestrian Overpass Agreements (as defined below) EASEMENT AREA: 2,203 square feet LICENSED AREA: Private Bassett Avenue between Eastchester Road and Metro Atrium Drive COMPENSATION: $1,000,000.00, plus construction of a new entrance to the Grantor’s Property.
+### [p231_c0009] COMMENTS:
+[p231_c0010] Penn Station Access (“PSA”) is a new Metro-North Railroad (“MNR”) link to Penn Station that will provide one-seat passenger rail service to Penn Station for MNR’s New Haven Line customers. In October 2021, the MTA Board authorized MTA Real Estate to proceed with property acquisitions in support of PSA by negotiated agreement or condemnation, with the terms of any negotiated agreement subject to further MTA Board approval.
+[p231_c0011] The Property is in the Morris Park section of the Bronx and is improved with a 367,000 square foot last-mile distribution facility that is leased by the Grantor to Amazon. The Property is further improved by a private road known as Bassett Avenue (“Bassett Avenue”) that is adjacent to Amtrak’s right of way for the Hell Gate Line (the “Hell Gate ROW”) which will serve as the trackage for the PSA project. Bassett Avenue is the sole means of ingress and egress to the Property. The platform for the future Morris Park Station (the “Station Platform”) will be sited within the Hell Gate ROW while its south entrance (the “South Station Entrance”) will be sited on separate privately owned property adjacent to Bassett
+[p231_c0012] _Master Page # 231 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 232
+
+### [p232_c0001] Staff Summary
+### [p232_c0002] Metropolitan Transportation Authority
+### [p232_c0003] FINANCE COMMITTEE MEETING
+### [p232_c0004] ACQUISITION OF PERMANENT EASEMENT AND CONSTRUCTION LICENSE FROM RLF BASSETT II LLC IN THE BRONX, NEW YORK IN SUPPORT OF THE PENN ACCESS PROJECT (Cont'd.)
+[p232_c0005] Page 2 of 2
+[p232_c0006] Avenue. A pedestrian overpass (the "Pedestrian Overpass") will be constructed to connect the Station Platform with the South Station Entrance. The only viable location for the Pedestrian Overpass is above Bassett Avenue.
+[p232_c0007] To construct the Pedestrian Overpass and to allow for its eventual use by MNR customers, MTA will be required to enter into a permanent easement agreement and a construction license with the Grantor (collectively, the "Pedestrian Overpass Agreements"). The Grantor has conditioned its willingness to enter into the Pedestrian Overpass Agreements on receipt of a one-time, lump sum payment of $1M from the MTA and the MTA's willingness to construct at its own expense a new entrance to the Property from an adjacent public street (the "New Property Entrance").
+[p232_c0008] MTA Transit Oriented Development ("TOD") has concluded, based on the recommendation of legal counsel and an independent appraisal of the Property Interest, that the payment of the $1M and the cost of constructing the New Property Entrance, estimated at $310,943, is materially less expensive than condemning the Property Interest and avoids the litigation risk and associated costs associated that may otherwise be incurred by the MTA. Further, the Pedestrian Overpass is critical to the design and use of the future Station; it is not feasible to construct the Station without it.
+[p232_c0009] Based on the foregoing, TOD requests authorization for the MTA to acquire the Property Interest from the Grantor on the above-described terms and conditions, including payment of the $1M compensation to the Grantor and the construction of the New Property Entrance at the MTA's expense.
+[p232_c0010] _Master Page # 232 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 233
+
+### [p233_c0001] MTA METRO-NORTH RAILROAD
+[p233_c0002] _Master Page # 233 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 234
+
+### [p234_c0001] Staff Summary
+### [p234_c0002] Metropolitan Transportation Authority
+### [p234_c0003] Page 1 of 2
+[p234_c0004]
+
+```text
+Subject LEASE WITH AZOR BAKE SHOP INC. DBA ZARO'S FAMILY BAKERY FOR RETAIL SPACE AT GRAND CENTRAL TERMINAL Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name KIM TREVISAN
+```
+[p234_c0005]
+
+```text
+Date DECEMBER 17, 2025 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p234_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 MNR Committee 12/15/25 X 2 Finance Committee 12/15/25 X 3 Board 12/17/25 X
+```
+[p234_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Administrative Officer 3 Chief Financial Officer
+```
+[p234_c0008] AGENCY: Metropolitan Transportation Agency ("MTA") and MTA Metro-North Railroad ("MNR") LESSEE: Azor Bake Shop Inc dba Zaro's Family Bakery ("Zaro's") LOCATION: Grand Central Terminal ("GCT") Main Concourse PREMISES: MC-31: Approximately 480 sq. ft. USE: Retail sale of baked goods ACTION REQUESTED: Authorization to enter into a lease agreement TERM: 10 years CAM: $11,040 per annum with 3% annual escalations LESSEE WORK: Complete renovation including replacing existing storefront, new showcases, track lighting, and signage
+### [p234_c0009] BASE RENT:
+[p234_c0010]
+
+```text
+Year Guaranteed Annual Minimum Rent Percentage Rent 1 $360,000.00 8% of gross sales over breakpoint of $3,200,000 2 $365,400.00 8% of gross sales over breakpoint of $3,248,000 3 $376,362.00 8% of gross sales over breakpoint of $3,296,720 4 $387,652.86 8% of gross sales over breakpoint of $3,351,116 5 $399,282.45 8% of gross sales over breakpoint of $3,409,760 6 $411,260.92 8% of gross sales over breakpoint of $3,472,760 7 $423,598.75 8% of gross sales over breakpoint of $3,540,561 8 $436,306.71 8% of gross sales over breakpoint of $3,611,372 9 $449,395.91 8% of gross sales over breakpoint of $3,689,017 10 $462,877.79 8% of gross sales over breakpoint of $3,781,242
+```
+[p234_c0011] _Master Page # 234 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 235
+
+### [p235_c0001] Staff Summary
+### [p235_c0002] FINANCE COMMITTEE MEETING LEASE AGREEMENT WITH AZOR BAKE SHOP INC. DBA ZARO’S FAMILY BAKERY AT GRAND CENTRAL TERMINAL (Cont’d)
+[p235_c0003] Page 1 of 2
+### [p235_c0004] COMMENTS:
+[p235_c0005] A publicly offered Request for Proposals (“RFP”) was issued on April 15, 2025, seeking a single-use retail operator for space MC-31 located on the Main Concourse of Grand Central Terminal.
+[p235_c0006] Two (2) proposals were received on May 28, 2025, and are summarized below:
+[p235_c0007]
+
+```text
+Proposer Term Use Yr 1 MAG / % Rent % Rent NPV (MAG & % Rent) Zaro’s 10 years Bakery $360,000 with 3% annual escalations 8% over $3,200,000 escalating 3% annually $2,980,548.75 Eli Zabar 10 years Bakery $250,000 with 3% annual escalations 12% over $2,500,000 escalating 3% annually $2,370,712.40
+```
+[p235_c0008] After reviewing and evaluating all proposals, MTA Real Estate determined that Zaro’s proposal was the highest and best use offer. Zaro’s has been operating in space MC-31 since 2012 and is currently operating month-to-month as their license agreement expired on May 31, 2025.
+[p235_c0009] The owner/operators of Zaro’s are fourth generation operators and are in good standing for over 45 years, operating spaces on the Main Concourse and the Dining Concourse.
+[p235_c0010] Zaro’s will be investing $234,000 to renovate the entire Premises, including replacement of all interior finishes, installing new, first-class quality trade fixtures, equipment, lighting throughout, and replacing the current storefront.
+[p235_c0011] Based on the foregoing, MTA Real Estate requests authorization to enter a lease on behalf of MTA and MNR with Azor Bake Shop Inc dba Zaro’s Family Bakery under the above-described terms and conditions.
+[p235_c0012] _Master Page # 235 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 236
+
+### [p236_c0001] Staff Summary
+### [p236_c0002] Metropolitan Transportation Authority
+### [p236_c0003] Page 1 of 2
+[p236_c0004]
+
+```text
+Subject LEASE WITH BIEN CUIT LLC FOR RETAIL SPACE AT GRAND CENTRAL TERMINAL Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name KIM TREVISAN
+```
+[p236_c0005]
+
+```text
+Date DECEMBER 17, 2025 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p236_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 MNR Committee 12/15/25 X 2 Finance Committee 12/15/25 X 3 Board 12/17/25 X
+```
+[p236_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Administrative Officer 3 Chief Financial Officer
+```
+[p236_c0008] AGENCY: Metropolitan Transportation Agency (“MTA”) and MTA Metro-North Railroad (“MNR”) LESSEE: Bien Cuit LLC (“Bien Cuit”) LOCATION: Grand Central Terminal (“GCT”) Market PREMISES: MKT-20: Approximately 197 sq. ft. USE: Retail sale of baked goods ACTION REQUESTED: Authorization to enter into a lease agreement TERM: 10 years CAM: $4,531 per annum with 3% annual escalations LESSEE WORK: Update display cases and track lighting
+[p236_c0009]
+
+```text
+BASE RENT: Guaranteed Annual Minimum Year Rent Percentage Rent 1 $186,000.00 15% of gross sales over breakpoint of $1,240,000 2 $191,580.00 15% of gross sales over breakpoint of $1,227,200 3 $197,327.40 15% of gross sales over breakpoint of $1,315,513 4 $203,247.22 15% of gross sales over breakpoint of $1,354,981 5 $209,344.64 15% of gross sales over breakpoint of $1,395,630 6 $215,624.98 15% of gross sales over breakpoint of $1,437,499 7 $222,093.73 15% of gross sales over breakpoint of $1,480,624 8 $228,756.54 15% of gross sales over breakpoint of $1,525,043 9 $235,619.24 15% of gross sales over breakpoint of $1,507,794 10 $242,678.81 15% of gross sales over breakpoint of $1,617,918
+```
+[p236_c0010] _Master Page # 236 of 237 - MTA Board Meeting 12/17/2025_
+
+## Page 237
+
+### [p237_c0001] Staff Summary
+### [p237_c0002] Metropolitan Transportation Authority
+### [p237_c0003] FINANCE COMMITTEE MEETING
+### [p237_c0004] LEASE WITH BIEN CUIT LLC FOR RETAIL SPACE AT GRAND CENTRAL TERMINAL (Cont'd.)
+[p237_c0005] Page 2 of 2
+### [p237_c0006] COMMENTS:
+[p237_c0007] A publicly offered Request for Proposals ("RFP") was issued on July 21, 2025, seeking a single-use retail operator for space MKT-20 located in Grand Central Terminal's Grand Central Market.
+[p237_c0008] Two (2) proposals were received on August 8, 2025 and are summarized below:
+[p237_c0009]
+
+```text
+Proposer Term Use Yr 1 MAG / % Rent % Rent NPV (MAG & % Rent) Bien Cuit 10 years Bakery Goods $186,000 with 3% annual escalations 15% over $1,240,000 escalating 3% annually $1,547,297 Whoops 10 years Retail Sale of Macaroons $46,150 with 3% annual escalations 7% over $667,823 escalating 3% annually $388,884.29
+```
+[p237_c0010] After reviewing and evaluation of all proposals, MTA Real Estate determined that Bien Cuit's proposal was the highest and best use offer. Bien Cuit has been operating in MKT-20 since 2016 and is a tenant in good standing operating on a month-to-month basis, as their license agreement expired on August 31, 2025.
+[p237_c0011] Bien Cuit will be investing $34,500 to refresh their space, including replacement of their pastry cases with first-class quality trade fixtures and upgrading electricity and lighting throughout the Premises.
+[p237_c0012] Based on the foregoing, MTA Real Estate requests authorization to enter a lease on behalf of MTA and MNR with Bien Cuit LLC under the above-described terms and conditions.
+[p237_c0013] _Master Page # 237 of 237 - MTA Board Meeting 12/17/2025_

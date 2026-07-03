@@ -1,0 +1,416 @@
+{
+  "run_id": "2026-06-10T23-05-20-796Z_1976810-59c965fc_ingest_2012-10-webster-sbs-newsletter",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T03:08:17.274Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "rel-001-metric-bx41-riders",
+        "local_observation_id": "metric_bx41_daily_riders_22000",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_bx41-limited-2012-10-webster",
+            "object_id": "metric_bx41-daily-riders-22000",
+            "description": "22,000 daily riders on the Bx41 route",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_webster_sbs_newsletter",
+                "block_id": "p001_c0004",
+                "source_quote": "Select Bus Service (SBS) is coming to Webster Avenue through a partnership between the New York City Department of Transportation (DOT) and MTA New York City Transit (NYCT). See the photo below to learn about SBS improvements, which will make bus travel faster and more reliable for the 22,000 daily riders on the Bx41 route."
+              }
+            ]
+          }
+        ],
+        "rationale": "The block explicitly states 22,000 daily riders on the Bx41 route, which corresponds to the existing Bx41 Limited service.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p001_c0004",
+            "source_quote": "Select Bus Service (SBS) is coming to Webster Avenue through a partnership between the New York City Department of Transportation (DOT) and MTA New York City Transit (NYCT). See the photo below to learn about SBS improvements, which will make bus travel faster and more reliable for the 22,000 daily riders on the Bx41 route."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-002-metric-businesses-surveyed",
+        "local_observation_id": "metric_business_survey_158_businesses",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "metric_business-survey-158-businesses",
+            "description": "158 businesses surveyed by the Webster Avenue SBS project team",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_webster_sbs_newsletter",
+                "block_id": "p002_c0011",
+                "source_quote": "In August, the project team surveyed 158 businesses in the vicinity of the Bx41 Limited bus stops."
+              }
+            ]
+          }
+        ],
+        "rationale": "The project team conducted this survey as part of the Webster Avenue SBS project; the block names the project team directly.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p002_c0011",
+            "source_quote": "In August, the project team surveyed 158 businesses in the vicinity of the Bx41 Limited bus stops."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-003-skip-sbs-trip-time",
+        "local_observation_id": "metric_sbs_trip_time_reduction_15_20_pct",
+        "decision": "skip",
+        "rationale": "This metric describes general SBS benefits from other implemented routes (Bx12, M15, M34/34A, S79), not specific to any named Webster Avenue subject. Per rule, only relate when cited text names a specific subject.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p003_c0007",
+            "source_quote": "▪ 15% to 20% faster trips ▪ 33% reduction in time spent at bus stops ▪ 10% reduction in all other travel time ▪ Over 95% customer satisfaction ▪ 10% ridership increase on the entire route, including SBS and local"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-004-skip-sbs-stop-time",
+        "local_observation_id": "metric_sbs_stop_time_reduction_33_pct",
+        "decision": "skip",
+        "rationale": "General SBS benefit from other implemented routes; does not name a specific Webster Avenue subject.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p003_c0007",
+            "source_quote": "▪ 15% to 20% faster trips ▪ 33% reduction in time spent at bus stops ▪ 10% reduction in all other travel time ▪ Over 95% customer satisfaction ▪ 10% ridership increase on the entire route, including SBS and local"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-005-skip-sbs-other-time",
+        "local_observation_id": "metric_sbs_other_travel_time_reduction_10_pct",
+        "decision": "skip",
+        "rationale": "General SBS benefit from other implemented routes; does not name a specific Webster Avenue subject.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p003_c0007",
+            "source_quote": "▪ 15% to 20% faster trips ▪ 33% reduction in time spent at bus stops ▪ 10% reduction in all other travel time ▪ Over 95% customer satisfaction ▪ 10% ridership increase on the entire route, including SBS and local"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-006-skip-sbs-ridership",
+        "local_observation_id": "metric_sbs_ridership_increase_10_pct",
+        "decision": "skip",
+        "rationale": "General SBS benefit from other implemented routes; does not name a specific Webster Avenue subject.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p003_c0007",
+            "source_quote": "▪ 15% to 20% faster trips ▪ 33% reduction in time spent at bus stops ▪ 10% reduction in all other travel time ▪ Over 95% customer satisfaction ▪ 10% ridership increase on the entire route, including SBS and local"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-007-skip-sbs-satisfaction",
+        "local_observation_id": "metric_sbs_customer_satisfaction_95_pct_v2",
+        "decision": "skip",
+        "rationale": "General SBS benefit from other implemented routes; does not name a specific Webster Avenue subject.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p003_c0007",
+            "source_quote": "▪ 15% to 20% faster trips ▪ 33% reduction in time spent at bus stops ▪ 10% reduction in all other travel time ▪ Over 95% customer satisfaction ▪ 10% ridership increase on the entire route, including SBS and local"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-008-metric-business-deliveries",
+        "local_observation_id": "metric_business_survey_over_85_pct_deliveries_v2",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "metric_business-survey-over-85-pct-deliveries-v2",
+            "description": "Over 85% of surveyed businesses rely on Webster Avenue curb space for deliveries",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_webster_sbs_newsletter",
+                "block_id": "p002_c0011",
+                "source_quote": "In August, the project team surveyed 158 businesses in the vicinity of the Bx41 Limited bus stops. The survey found that over 85% of businesses rely on Webster Avenue curb space for their deliveries."
+              }
+            ]
+          }
+        ],
+        "rationale": "The survey was conducted by the project team as part of the Webster Avenue SBS project; the metric is attributed to the project's business outreach effort.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p002_c0011",
+            "source_quote": "In August, the project team surveyed 158 businesses in the vicinity of the Bx41 Limited bus stops. The survey found that over 85% of businesses rely on Webster Avenue curb space for their deliveries."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-009-claim-sbs-fare",
+        "local_observation_id": "claim_sbs_fare_equals_local_fare",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_webster-ave-sbs",
+            "object_id": "claim_sbs-fare-equals-local-fare",
+            "description": "Bx41 SBS fare equals local bus fare",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_webster_sbs_newsletter",
+                "block_id": "p001_c0006",
+                "source_quote": "▪ Bx41 SBS replaces the Bx41 Limited ▪ Bx41 local route remains the same ▪ SBS fare = local bus fare"
+              }
+            ]
+          }
+        ],
+        "rationale": "The block explicitly discusses Bx41 SBS features; the SBS fare claim is a characteristic of the Bx41 SBS route.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p001_c0006",
+            "source_quote": "▪ Bx41 SBS replaces the Bx41 Limited ▪ Bx41 local route remains the same ▪ SBS fare = local bus fare"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-010-claim-parking-concerns",
+        "local_observation_id": "claim_business_concerns_double_parking",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "claim_business-concerns-double-parking",
+            "description": "Customer parking and double parking identified as concerns in the Webster Avenue SBS business survey",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_webster_sbs_newsletter",
+                "block_id": "p002_c0011",
+                "source_quote": "Additionally, customer parking and double parking were identified as concerns."
+              }
+            ]
+          }
+        ],
+        "rationale": "The claim comes from the business survey conducted by the project team for the Webster Avenue SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p002_c0011",
+            "source_quote": "Additionally, customer parking and double parking were identified as concerns."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-011-claim-curb-regulations",
+        "local_observation_id": "claim_survey_guides_curb_regulations",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "claim_survey-guides-curb-regulations",
+            "description": "Survey information will guide DOT in improving curb regulations along the Webster Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_webster_sbs_newsletter",
+                "block_id": "p002_c0011",
+                "source_quote": "This information will guide DOT in improving curb regulations in order to create better delivery space for businesses along the corridor and discourage double-parking."
+              }
+            ]
+          }
+        ],
+        "rationale": "The claim is about the project's use of survey findings to improve curb regulations as part of the Webster Avenue SBS effort.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p002_c0011",
+            "source_quote": "This information will guide DOT in improving curb regulations in order to create better delivery space for businesses along the corridor and discourage double-parking."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-012-claim-hope-similar-results",
+        "local_observation_id": "claim_dot_nyct_hope_similar_results",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "claim_dot-nyct-hope-similar-results",
+            "description": "DOT and NYCT hope to achieve similar SBS results on Webster Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_webster_sbs_newsletter",
+                "block_id": "p003_c0008",
+                "source_quote": "DOT and NYCT hope to achieve similar results on Webster Avenue."
+              }
+            ]
+          }
+        ],
+        "rationale": "The claim explicitly names Webster Avenue and expresses the project's goal of achieving SBS benefits.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p003_c0008",
+            "source_quote": "DOT and NYCT hope to achieve similar results on Webster Avenue."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-013-event-design-ideas",
+        "local_observation_id": "event_webster_sbs_design_ideas_winter_2011_12",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "event_webster-sbs-design-ideas-winter-2011-12",
+            "description": "Design Ideas phase of the Webster Avenue SBS project (Winter 2011-12)",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_webster_sbs_newsletter",
+                "block_id": "p003_c0004",
+                "source_quote": "Design Ideas Winter 2011-12 CAC Meetings and Public Open House to introduce project and discuss possible SBS designs for Webster Avenue"
+              }
+            ]
+          }
+        ],
+        "rationale": "This is a phase on the Webster Avenue SBS project timeline.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p003_c0004",
+            "source_quote": "Design Ideas Winter 2011-12 CAC Meetings and Public Open House to introduce project and discuss possible SBS designs for Webster Avenue"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-014-event-draft-corridor",
+        "local_observation_id": "event_webster_sbs_draft_corridor_plan_spring_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "event_webster-sbs-draft-corridor-plan-spring-2012",
+            "description": "Develop Draft Corridor Plan phase (Spring 2012)",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_webster_sbs_newsletter",
+                "block_id": "p003_c0004",
+                "source_quote": "Develop Draft Corridor Plan Spring 2012 CAC Meetings to review preferred designs and station locations"
+              }
+            ]
+          }
+        ],
+        "rationale": "This is a phase on the Webster Avenue SBS project timeline.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p003_c0004",
+            "source_quote": "Develop Draft Corridor Plan Spring 2012 CAC Meetings to review preferred designs and station locations"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-015-event-refine-plan",
+        "local_observation_id": "event_webster_sbs_refine_plan_fall_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "event_webster-sbs-refine-plan-fall-2012",
+            "description": "Refine Plan Based on Feedback phase (Fall 2012)",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_webster_sbs_newsletter",
+                "block_id": "p003_c0004",
+                "source_quote": "Refine Plan Based on Feedback Fall 2012 CAC Meeting and Public Open House to review final draft plan"
+              }
+            ]
+          }
+        ],
+        "rationale": "This is a phase on the Webster Avenue SBS project timeline.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p003_c0004",
+            "source_quote": "Refine Plan Based on Feedback Fall 2012 CAC Meeting and Public Open House to review final draft plan"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-016-event-final-design",
+        "local_observation_id": "event_webster_sbs_final_design_winter_2012_2014",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "event_webster-sbs-final-design-winter-2012-2014",
+            "description": "Final Design & Implementation phase (Winter 2012-13 to 2013-2014)",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_webster_sbs_newsletter",
+                "block_id": "p003_c0004",
+                "source_quote": "Final Design & Implementation Winter 2012-13 to 2013-2014 Present final design at CAC Meeting and Public Open House"
+              }
+            ]
+          }
+        ],
+        "rationale": "This is a phase on the Webster Avenue SBS project timeline.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p003_c0004",
+            "source_quote": "Final Design & Implementation Winter 2012-13 to 2013-2014 Present final design at CAC Meeting and Public Open House"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-017-event-business-survey",
+        "local_observation_id": "event_webster_business_survey_august_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "event_webster-business-survey-august-2012",
+            "description": "Business outreach survey conducted August 2012 as part of the Webster Avenue SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_webster_sbs_newsletter",
+                "block_id": "p002_c0011",
+                "source_quote": "In August, the project team surveyed 158 businesses in the vicinity of the Bx41 Limited bus stops."
+              }
+            ]
+          }
+        ],
+        "rationale": "The survey was conducted by the project team as part of business outreach for the Webster Avenue SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p002_c0011",
+            "source_quote": "In August, the project team surveyed 158 businesses in the vicinity of the Bx41 Limited bus stops."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-03-23-230Z_2111393-5944700f_canonicalize_2026-06-10t23-05-20-796z-1976810-59c965fc-ingest-2012-10-webster-sbs-newsletter-relation-linker"
+}

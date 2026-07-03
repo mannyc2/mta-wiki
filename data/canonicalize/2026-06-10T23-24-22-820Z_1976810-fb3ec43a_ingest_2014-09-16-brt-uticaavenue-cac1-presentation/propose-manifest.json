@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T23-24-22-820Z_1976810-fb3ec43a_ingest_2014-09-16-brt-uticaavenue-cac1-presentation",
+  "generated_at": "2026-06-11T04:05:04.635Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 34,
+  "validated_decision_count": 0,
+  "quarantined_decision_count": 6,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T23-24-22-820Z_1976810-fb3ec43a_ingest_2014-09-16-brt-uticaavenue-cac1-presentation",
+    "manifest": "data/canonicalize/2026-06-10T23-24-22-820Z_1976810-fb3ec43a_ingest_2014-09-16-brt-uticaavenue-cac1-presentation/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T23-24-22-820Z_1976810-fb3ec43a_ingest_2014-09-16-brt-uticaavenue-cac1-presentation/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-24-22-820Z_1976810-fb3ec43a_ingest_2014-09-16-brt-uticaavenue-cac1-presentation/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T23-24-22-820Z_1976810-fb3ec43a_ingest_2014-09-16-brt-uticaavenue-cac1-presentation/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-22-820Z_1976810-fb3ec43a_ingest_2014-09-16-brt-uticaavenue-cac1-presentation/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-02-161Z_2111393-0658ac35_canonicalize_2026-06-10t23-24-22-820z-1976810-fb3ec43a-ingest-2014-09-16-brt-uticaavenue-cac1-presentation-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-22-820Z_1976810-fb3ec43a_ingest_2014-09-16-brt-uticaavenue-cac1-presentation/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-02-162Z_2111393-5b05ab15_canonicalize_2026-06-10t23-24-22-820z-1976810-fb3ec43a-ingest-2014-09-16-brt-uticaavenue-cac1-presentation-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-22-820Z_1976810-fb3ec43a_ingest_2014-09-16-brt-uticaavenue-cac1-presentation/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-02-162Z_2111393-f9d9b6af_canonicalize_2026-06-10t23-24-22-820z-1976810-fb3ec43a-ingest-2014-09-16-brt-uticaavenue-cac1-presentation-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-22-820Z_1976810-fb3ec43a_ingest_2014-09-16-brt-uticaavenue-cac1-presentation/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-02-162Z_2111393-d6abd6a9_canonicalize_2026-06-10t23-24-22-820z-1976810-fb3ec43a-ingest-2014-09-16-brt-uticaavenue-cac1-presentation-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-22-820Z_1976810-fb3ec43a_ingest_2014-09-16-brt-uticaavenue-cac1-presentation/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-02-162Z_2111393-a17260ef_canonicalize_2026-06-10t23-24-22-820z-1976810-fb3ec43a-ingest-2014-09-16-brt-uticaavenue-cac1-presentation-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-22-820Z_1976810-fb3ec43a_ingest_2014-09-16-brt-uticaavenue-cac1-presentation/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-02-162Z_2111393-1b21d4b9_canonicalize_2026-06-10t23-24-22-820z-1976810-fb3ec43a-ingest-2014-09-16-brt-uticaavenue-cac1-presentation-relation-linker"
+    }
+  ]
+}

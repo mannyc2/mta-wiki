@@ -1,0 +1,496 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-196906"
+record_kind: "source"
+display_name: "Long Island Rail Road & Metro-North Railroad Key Performance Metrics - January 2026"
+source_id: "meeting_doc_196906"
+source_ids:
+  - "meeting_doc_196906"
+local_observation_id: "source_meeting_doc_196906"
+local_observation_ids:
+  - "source_meeting_doc_196906"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T21:14:43.230Z"
+raw_text: "LONG ISLAND RAIL ROAD & METRO-NORTH RAILROAD KEY PERFORMANCE METRICS. January 2026. This performance metrics document was prepared for the January 2026 meeting of the Joint Long Island Rail Road & Metro-North Railroad Committees. 2 Broadway • New York, NY 10004 January 26, 2026."
+submission_ids:
+  - "sub_a35caf74e6739f35"
+payload:
+  authority_tier: "plan_document"
+  content_type: "performance metrics report"
+  date_text: "January 2026"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2026-01"
+    precision: "month"
+    raw_text: "January 2026"
+  document_date: "January 26, 2026"
+  document_date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2026-01-26"
+    precision: "day"
+    raw_text: "January 26, 2026"
+  prepared_for: "Joint Long Island Rail Road & Metro-North Railroad Committees"
+  published_date_normalized: "2026-01-26"
+  published_date_precision: "day"
+  publisher: "MTA"
+  title: "Long Island Rail Road & Metro-North Railroad Key Performance Metrics"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_196906#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_196906"
+    source_path: "raw/sources/meeting_doc_196906/blocks.jsonl"
+    text_sha256: "sha256:ad1fb4952e04a2206493e6b412cb6b618de7742482a0b5e53ce10ea580487a57"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0001"
+    evidence_id: "meeting_doc_196906#p003_c0001"
+    page_number: 3
+    source_id: "meeting_doc_196906"
+    source_path: "raw/sources/meeting_doc_196906/blocks.jsonl"
+    text_sha256: "sha256:8bb66b0351ae4fdbf31e8dc7b5eda32c7e3393524d58cdc017525f8958d8b0fb"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0002"
+    evidence_id: "meeting_doc_196906#p003_c0002"
+    page_number: 3
+    source_id: "meeting_doc_196906"
+    source_path: "raw/sources/meeting_doc_196906/blocks.jsonl"
+    text_sha256: "sha256:406a243759ca530ed63415448007d9ac844597aac9f009cb5e7576c7e97306fa"
+    text_source: "raw_text"
+---
+
+# Key performance metrics
+
+source_id: meeting_doc_196906
+citation: cite block ids exactly as shown in square brackets
+document: 304 block(s)
+
+## Page 1
+
+### [p001_c0001] LONG ISLAND RAIL ROAD & METRO-NORTH RAILROAD KEY PERFORMANCE METRICS
+[p001_c0002] January 2026
+[p001_c0003] _mta.info_
+
+## Page 2
+
+[p002_c0001] Thanks to Congestion Relief, which celebrated its one-year anniversary this month, both the LIRR Hollis and Forest Hills stations are currently receiving crucial upgrades. Hollis is getting comprehensively reconstructed, including brand new, lengthened platforms, a new entrance, and ADA access via new elevators. Meanwhile Forest Hills will see repairs to the historic Tudor station, new ADA-accessible ramps, and lengthened platforms.
+
+## Page 3
+
+[p003_c0001] This performance metrics document was prepared for the January 2026 meeting of the Joint Long Island Rail Road & Metro-North Railroad Committees.
+[p003_c0002] 2 Broadway • New York, NY 10004 January 26, 2026
+### [p003_c0003] Table of Contents
+### [p003_c0004] Long Island Rail Road
+[p003_c0005] Message from the President ..... 6 Service Performance..... 10 Ridership ..... 12 Financial Results..... 13 Major Projects..... 14 Customers and Communities..... 15 Safety and Security..... 16
+### [p003_c0006] Metro-North Railroad
+[p003_c0007] Message from the President ..... 22 Service Performance..... 24 Ridership ..... 26 Financial Results..... 27 Major Projects ..... 28 Customers and Communities ..... 29 Safety and Security..... 30
+[p003_c0008] Visit https://new.mta.info/transparency/board-and-committee-meetings or scan the QR code for Board action staff summaries, administrative items, and information items.
+[p003_c0009] Visit metrics.mta.info or scan the QR code to access a comprehensive dashboard of Long Island Rail Road and Metro-North Railroad metrics.
+
+## Page 4
+
+### [p004_c0001] LONG ISLAND RAIL ROAD
+[p004_c0002] MIA Help Point
+[p004_c0003] New Hyde Park
+
+## Page 5
+
+> [p005_c0001] A silver and blue MTA Long Island Rail Road train, number 9192, is stopped at a station platform at night. The train's destination sign displays 'Huntington' in red. The platform edge is marked with a yellow tactile strip and a red line. The MTA logo and 'Long Island Rail Road' text are visible on the front of the train.
+[p005_c0002] Huntington
+[p005_c0003] Huntington
+[p005_c0004] 9192
+> [p005_c0005] The MTA logo, consisting of the letters 'MTA' in white inside a blue circle.
+[p005_c0006] Long Island Rail Road
+
+## Page 6
+
+### [p006_c0001] Long Island Rail Road MESSAGE FROM THE PRESIDENT
+> [p006_c0002] A professional headshot of Rob Free, President of Long Island Rail Road. He is a middle-aged man with short, light-colored hair, smiling warmly at the camera. He is dressed in a dark navy blue suit jacket over a white dress shirt and a solid red necktie. The background is a soft, out-of-focus blue.
+[p006_c0003] _Rob Free President, Long Island Rail Road_
+### [p006_c0004] Ridership & Performance
+[p006_c0005] What a year for ridership at the LIRR. We continue to move closer to pre-pandemic ridership levels and, in some areas, have surpassed them. Total ridership for the year came in at 81,946,669 million, which is 8.5% higher than 2024 – 6.4 million more customers took the LIRR in 2025 than 2024.
+[p006_c0006] 2025 total year ridership represented 90% of 2019 ridership.
+[p006_c0007] December total ridership was 7.2 million customers, representing 94% of December 2019.
+- [p006_c0008] • Commutation ridership increased 11.5% over last December • Monthly ticket ridership increased 16.5% over December 2024 • December Non-Commutation ridership surpassed December 2019 by 25%
+[p006_c0009] We also set a couple of post COVID ridership records in December:
+- [p006_c0010] • Best Saturday on December 13 (183,250 riders) • Best Sunday on December 21 (152,661)
+[p006_c0011] Operational Reliability had a strong month and an exceptional year.
+- [p006_c0012] • December total OTP was 94.9% • We ended 2025 with a total OTP for the year of 96.17% - our best OTP in recorded history outside of one year during the pandemic
+[p006_c0013] For the 12 month period ending November 2025, we had a 33% reduction in the reportable customer injury rate (per 1 million customers) over November 2024 – and our employee lost time injury rate (per 200,000 working hours) also dropped 14% during that same time span.
+[p006_c0014] _The logo for the Metropolitan Transportation Authority (MTA), featuring the letters 'MTA' in white inside a dark blue circle._
+[p006_c0015] _| 6 |_
+
+## Page 7
+
+### [p007_c0001] Modernizing Queens Interlocking
+[p007_c0002] We constantly work to modernize and expand our system, which has led to us to update Queens Interlocking, a major junction point in our system connecting the Hempstead Branch with our Main Line and seeing 333 trains operate through it each weekday.
+[p007_c0003] This tremendous effort will take place over the course of this year. The upcoming work in February will require service modifications over three weekends to allow this modernization effort to take place.
+[p007_c0004] Once complete, the improved switch configuration and modernized signal system will provide enhanced routing options, additional capacity and improve OTP through this vital segment of the Main Line Corridor.
+[p007_c0005] Customers should check the website and TrainTime app for special timetables and the most up-to-date schedule information for any service changes that may occur as we improve our system.
+### [p007_c0006] Here a Lift, There a Lift
+[p007_c0007] The last few months have been quite busy when it comes to introducing ADA station improvements. After unveiling a new elevator and station improvements at Auburndale in October, we cut the ribbon on brand new elevators (and much more) at Valley Stream in December and Laurelton just this month.
+[p007_c0008] The Valley Stream Station work not only brought the station complex to a state of good repair, it also beautified it and greatly enhanced the customer experience. Three years of hard work resulted in an amazing makeover.
+[p007_c0009] Valley Stream highlights included:
+- [p007_c0010] • A new replacement elevator & escalator • Viaduct water proofing and drainage improvements
+[p007_c0011] 81.9M
+[p007_c0012] total LIRR ridership in 2025
+[p007_c0013] 96%
+[p007_c0014] total OTP for 2025 – best non-COVID total ever
+[p007_c0015] 333
+[p007_c0016] weekday trains operate through Queens Interlocking, site of major ongoing modernization project
+[p007_c0017] _| 7 |_
+
+## Page 8
+
+### [p008_c0001] Long Island Rail Road
+### [p008_c0002] MESSAGE FROM THE PRESIDENT
+- [p008_c0003] • Station and bridge painting and repair work to the support columns • Improved lighting and much more...
+[p008_c0004] And at Laurelton Station, we cut the ribbon on a beautiful, brand new elevator where none existed before, making it the latest LIIRR station to become accessible.
+[p008_c0005] Locust Manor's brand new elevators are next on deck to be celebrated, and that event is scheduled to take place by the end of January.
+[p008_c0006] By the end of this program, 95% of our system will be ADA accessible.
+[p008_c0007] Thank you to our partners at MTA C&D, the project team, and especially our incredible employees for their partnership and superb work.
+[p008_c0008] _The MTA logo, consisting of the letters 'MTA' in white inside a dark blue circle._
+[p008_c0009] _| 8 |_
+
+## Page 9
+
+[p009_c0001] Long Island Rail Road
+[p009_c0002] JFK Airport via AirTrain → ← Subway E J Z ← ♿ 🚉
+[p009_c0003] JAMAICA
+[p009_c0004] WATCH THE GAP
+
+## Page 10
+
+### [p010_c0001] Long Island Rail Road SERVICE PERFORMANCE
+### [p010_c0002] Service Delivered
+[p010_c0003] The share of scheduled train trips completed
+> [p010_c0004] The chart displays the percentage of scheduled train trips completed over time. The y-axis represents the percentage, ranging from 90% to 100% in 2% increments. The x-axis shows months from December 2022 to December 2025. The data points are plotted as a blue line, showing a consistent performance level that remains above 98% throughout the period.
+### [p010_c0005] Delays by Type
+[p010_c0006] The number of delayed trains by type of delay
+> [p010_c0007] This stacked bar chart illustrates the volume of delayed trains categorized by the underlying cause. The y-axis measures the number of delayed trains from 0 to 2,200. The x-axis covers the period from December 2022 to December 2025. The legend identifies seven categories: Customer Assistance (orange), External Factors (grey), Police (purple), Fleet (red), Train Operations (yellow), Capital Projects (green), and Infrastructure Maintenance (blue). The chart shows seasonal peaks in delays, with the highest total counts occurring in the summer months of 2023 and 2024.
+### [p010_c0008] Mean Distance Between Failures
+[p010_c0009] The average number of miles a railcar or locomotive travels before failing and causing a delay
+> [p010_c0010] The line chart tracks the average distance traveled by a railcar or locomotive before a failure that leads to a delay. The y-axis scales from 0 to 400,000 miles. The x-axis spans from December 2022 to December 2025. A horizontal dashed line marks the 2025 target of 150,000 miles. The data shows significant fluctuations, with a notable peak in early 2023 followed by a general downward trend and subsequent volatility. A note indicates that December data for 2025 is not yet available.
+[p010_c0011] _| 10 |_
+
+## Page 11
+
+### [p011_c0001] SERVICE PERFORMANCE
+### [p011_c0002] On-Time Performance
+[p011_c0003] The share of trains that arrive at their terminus station within 5:59 minutes of schedule
+> [p011_c0004] On-Time Performance Data (Estimated) Month Year OTP (%) D 2022 95.5 J 2022 97.8 F 2022 96.5 M 2022 95.0 A 2022 94.5 M 2023 94.0 J 2023 94.5 J 2023 93.5 J 2023 93.0 A 2023 93.5 S 2023 94.5 O 2023 94.0 N 2023 94.5 D 2023 95.0 J 2024 96.0 F 2024 96.5 M 2024 97.0 A 2024 96.0 M 2024 95.0 J 2024 95.5 J 2024 96.0 A 2024 96.0 S 2024 96.0 O 2024 96.5 N 2024 95.5 D 2024 97.0 J 2025 96.5 F 2025 96.0 M 2025 97.0 A 2025 96.5 M 2025 96.0 J 2025 96.0 J 2025 96.0 A 2025 96.5 S 2025 96.0 O 2025 95.5 N 2025 95.0 D 2025 94.5
+### [p011_c0005] On-Time Performance, by Branch
+[p011_c0006]
+
+```text
+Atlantic 99.1% Montauk 92.2% Babylon 94.2% Oyster Bay 92.9% Far Rockaway 97.1% Port Jefferson 91.0% Hempstead 94.9% Port Washington 97.3% Huntington 92.6% Ronkonkoma 91.8% Long Beach 95.8% West Hempstead 97.3%
+```
+### [p011_c0007] Data Review
+[p011_c0008] In December, on-time performance was 94.9%, above the goal of 94%. Year-to-date OTP is 96.2% which is also above goal. There were 16 incidents this month that resulted in 10 or more late, cancelled or terminated trains. The largest was on December 15th when there was a storm that brought snow and ice conditions. The event caused 90 late trains, delayed our customers an average of 17 minutes and reduced our monthly on-time performance by less than one percent.
+[p011_c0009] At Jamaica, 60.9% of trains arrived into the station less than 3 minutes behind schedule during the morning peak periods and 68.5% during afternoon peak periods.
+[p011_c0010] The fleet's mean distance between failures operated at 134,733 miles in November, falling short of the target of 150,000 miles.
+### [p011_c0011] Moving Forward
+[p011_c0012] LIRR's continued Queens Interlocking renewal project supports improving operations and state of good repair in a critical area of the network. For the first three weekends in February, two of the four main tracks will be out of service to perform signal testing in advance of a signal cutover which will be performed later this year.
+[p011_c0013] _| 11 |_
+
+## Page 12
+
+### [p012_c0001] Long Island Rail Road RIDERSHIP
+### [p012_c0002] Monthly Ridership
+[p012_c0003] Estimated number of monthly trips taken, per million trips. Ridership is based on ticket sales data.
+> [p012_c0004] Year Month Trips (in millions) 2022 D 4.8 2022 J 4.6 2022 F 4.4 2022 M 5.2 2022 A 5.0 2022 M 5.6 2022 J 5.7 2022 J 5.5 2022 A 5.8 2022 S 5.5 2022 O 6.0 2022 N 5.8 2022 D 5.8 2023 J 5.5 2023 F 5.3 2023 M 5.9 2023 A 6.0 2023 M 6.5 2023 J 6.4 2023 J 6.4 2023 A 6.4 2023 S 6.6 2023 O 7.1 2023 N 6.3 2023 D 6.6 2024 J 6.0 2024 F 5.6 2024 M 6.5 2024 A 6.7 2024 M 6.8 2024 J 6.8 2024 J 6.8 2024 A 6.8 2024 S 6.9 2024 O 7.1 2024 N 6.8 2024 D 6.6 2025 J 6.5 2025 F 6.7 2025 M 6.8 2025 A 6.9 2025 M 7.0 2025 J 7.0 2025 J 7.1 2025 A 7.2 2025 S 7.3 2025 O 6.6 2025 N 7.1 2025 D 7.2
+### [p012_c0005] Data Review
+[p012_c0006] The LIRR ended 2025 on a high note, continuing its upward ridership trend. Total annual ridership reached 81.9 million customers, an 8.5% increase over 2024's 75.5 million and representing 89.9% of 2019 levels. When adjusted for calendar differences, 2025 ridership was 8.9% higher than 2024's adjusted total of 75.2 million.
+[p012_c0007] Commutation ridership grew even faster, rising 9.6% year-over-year to 30.9 million customers, and 10.7% above the calendar-adjusted 2024 figure, driven by improved service performance and more people returning to office work. Non-commutation ridership also remained strong, increasing 7.9% to 51.0 million customers, which is 126% of 2019 levels, underscoring the resilience of discretionary travel.
+[p012_c0008] December 2025 ridership rose 7.4% compared to December 2024, reaching 93.9% of December 2019 levels. Commutation ridership saw an even stronger increase of 11.5% over the previous year, while non-commutation ridership grew by 5.2%, surpassing December 2019 by 25%. Average weekday ridership in December dipped slightly by 0.9% compared to November, largely due to holiday vacations. In contrast, weekend ridership climbed 7.6%, driven by discretionary travel, with Saturdays up 8.2% and Sundays up 6.8% month-over-month. December also set new post-pandemic records, including the highest Saturday ridership of 183,250 customers on December 13 and the highest Sunday ridership of 152,661 customers on December 21.
+### [p012_c0009] Moving Forward
+[p012_c0010] LIRR customers continue to take advantage of the GCM service. In December 2025, GCM ridership was 1,755,383 passengers (based on load weigh data). In December GCM accounted for 41% of AM Peak travel to Manhattan, while 59% used Penn Station. Looking ahead, the increasing ridership trends are expected to continue.
+[p012_c0011] _| 12 |_
+
+## Page 13
+
+### [p013_c0001] FINANCIAL RESULTS
+### [p013_c0002] 2025 Revenues & Expenses, December Year-to-Date
+[p013_c0003] $ in millions
+[p013_c0004]
+
+```text
+Budget Actual Variance Total Non-Reimbursable Revenues $748.9 $759.0 $10.2 Farebox Revenues $695.2 $695.7 $0.4 Other Revenues $53.6 $63.4 $9.8 Total Non-Reimbursable Expenses $2,026.8 $1,990.8 $36.0 Labor Expenses $1,508.7 $1,477.1 $31.7 Non-Labor Expenses $518.0 $513.7 $4.3 Non Cash Liabilities $610.3 $579.9 $30.4 Net Surplus / (Deficit) - Accrued ($1,888.2) ($1,811.7) $76.5
+```
+### [p013_c0005] Staffing Levels
+[p013_c0006]
+
+```text
+Positions (Full-Time Equivalents) Budget Actual Variance Non-Reimbursable 6,882 6,805 77 Reimbursable 1,134 1,004 131 Total Positions 8,016 7,808 208
+```
+### [p013_c0007] Data Review
+[p013_c0008] Through December, farebox revenue was $0.4 million higher than the forecast due to above forecast ridership partially offset by lower yield per passenger ridership.
+[p013_c0009] Labor expenses are lower than the forecast by $31.7 million due to lower payroll, health and welfare, and associated fringe costs, partially offset by FELA-related costs. At the end of December, there were 208 vacancies compared to the budget.
+[p013_c0010] Non-labor expenses are lower than the forecast by $4.3 million, primarily driven by maintenance and other operating contracts, partially offset by the timing of material usage, fuel expenses, and other business expenses.
+### [p013_c0011] Moving Forward
+[p013_c0012] We are aggressively moving forward to fill all vacancies at LIRR. We are aware of the financial challenges faced by the MTA, and we continually look for cost-effective ways to operate efficiently, ranging from workforce management to material needs.
+[p013_c0013] _| 13 |_
+
+## Page 14
+
+### [p014_c0001] Long Island Rail Road MAJOR PROJECTS
+### [p014_c0002] LIRR Completes Major ADA Work
+[p014_c0003] This month, MTA Construction & Development, in partnership with the LIRR, celebrated a major milestone in our ongoing commitment to expand station accessibility. Several stations now feature new elevators officially open to the public—including Laurelton, Locust Manor, and Valley Stream. Earlier in October 2025, Auburndale and St. Albans stations also unveiled new elevators.
+[p014_c0004] Additional project elements included stair replacements, modifications and state of good repair work to the platforms, viaducts, and canopies, power upgrades to accommodate new elevator machine rooms, the addition of ADA accessible parking spots and path of travel enhancements, new light installations, and improvements to amenities and wayfinding signage. These enhancements not only improve accessibility but also create a more welcoming and accommodating experience for all customers.
+[p014_c0005] These stations join Amityville, Copiague, Lindenhurst, and Massapequa Park, which were completed earlier and have been serving customers since 2024. Altogether, nine stations were delivered in a single Design-Build contract, which allows the MTA to take advantage of efficiencies of scale and repetition to deliver accessibility improvements better, faster, and cheaper. With the completion of this package, 117 out of 126 LIRR stations are now ADA compliant.
+[p014_c0006] _| 14 |_
+
+## Page 15
+
+### [p015_c0001] CUSTOMERS & COMMUNITIES
+### [p015_c0002] LIRR Empowers Riders of Every Generation
+[p015_c0003] On Thursday, December 4th, Ron Kessler, the Oyster Bay Branch Line Manager, met with members of Age Friendly Glen Cove and City of Glen Cove Mayor Pam Panzenback to strengthen the role of public transportation in building an inclusive and connected older adult community. The meeting highlighted a shared commitment to ensuring that commuting remains accessible, welcoming, and empowering for residents of all ages.
+[p015_c0004] As part of Age Friendly Glen Cove's AARP Community Challenge Grant, the group have planned experiential learning trips on the LIRR. These trips are designed to build confidence and familiarity with public transit while reinforcing that travel, learning, and exploration do not have an age limit. This outing included a visit to Grand Central Madison and the Bryant Park Holiday Market, combining practical transit skills with social connection and seasonal enjoyment.
+[p015_c0005] During the meeting, the Branch Line Manager offered hands-on support by helping participants download and navigate the TrainTime app. He also explained the new fare policy changes that went into effect on January 4th, ensuring riders felt informed and prepared.
+[p015_c0006] This collaboration underscores the importance of commuting as more than just a way to get from place to place. Accessible transportation supports independence, social engagement, and economic participation at every stage of life. The older adult community in Glen Cove continues to move toward a future where everyone can travel with confidence, dignity, and ease.
+> [p015_c0007] A group of approximately 15 diverse older adults, mostly women, are posing for a group photo outdoors. They are standing in front of a chain-link fence and a bridge structure. They are holding a large black banner with white text that reads "We are Ready to Ride". Above the text is a logo with the letters "A", "F", "G", and "C" in colored circles. Below the main text is the AARP logo. A smaller text block at the bottom of the banner reads: "This campaign is made possible thanks to the generous support of AARP through the AARP Community Challenge Grant Program". The group is dressed in winter clothing, including coats and scarves.
+[p015_c0008] _| 15 |_
+[p015_c0009] _The MTA logo, consisting of the letters "MTA" in white inside a blue circle._
+
+## Page 16
+
+### [p016_c0001] Long Island Rail Road SAFETY & SECURITY
+### [p016_c0002] Customer Injury Rate
+[p016_c0003] The number of reportable customer injuries per one million customers (12-month rolling average)
+[p016_c0004] December data not yet available
+> [p016_c0005] Month Rate Dec 2022 2.5 Jan 2023 2.2 Feb 2023 2.0 Mar 2023 2.1 Apr 2023 2.1 May 2023 2.2 Jun 2023 2.2 Jul 2023 2.3 Aug 2023 2.6 Sep 2023 2.6 Oct 2023 2.6 Nov 2023 2.5 Dec 2023 2.4 Jan 2024 2.3 Feb 2024 2.3 Mar 2024 2.2 Apr 2024 2.1 May 2024 2.0 Jun 2024 1.9 Jul 2024 1.8 Aug 2024 1.8 Sep 2024 1.8 Oct 2024 1.8 Nov 2024 1.8 Dec 2024 1.7 Jan 2025 1.6 Feb 2025 1.5 Mar 2025 1.5 Apr 2025 1.4 May 2025 1.4 Jun 2025 1.3 Jul 2025 1.3 Aug 2025 1.2 Sep 2025 1.2 Oct 2025 1.2 Nov 2025 1.23
+### [p016_c0006] Employee Lost Time Injury Rate
+[p016_c0007] The number of reportable employee lost time injuries per 200,000 hours worked (12-month rolling average)
+[p016_c0008] December data not yet available
+> [p016_c0009] Month Rate Dec 2022 4.3 Jan 2023 4.2 Feb 2023 4.2 Mar 2023 4.3 Apr 2023 4.4 May 2023 4.5 Jun 2023 4.6 Jul 2023 4.6 Aug 2023 4.5 Sep 2023 4.5 Oct 2023 4.4 Nov 2023 4.4 Dec 2023 4.3 Jan 2024 4.3 Feb 2024 4.2 Mar 2024 4.2 Apr 2024 4.1 May 2024 4.0 Jun 2024 4.0 Jul 2024 3.9 Aug 2024 3.9 Sep 2024 3.9 Oct 2024 3.9 Nov 2024 3.9 Dec 2024 3.8 Jan 2025 3.7 Feb 2025 3.6 Mar 2025 3.6 Apr 2025 3.5 May 2025 3.5 Jun 2025 3.4 Jul 2025 3.4 Aug 2025 3.4 Sep 2025 3.4 Oct 2025 3.4 Nov 2025 3.47
+### [p016_c0010] Data Review
+[p016_c0011] The reportable customer injury rate decreased from 1.85 to 1.23 per one million customers in the current 12-month reporting period, December 2024 through November 2025, compared to the prior 12 months. The reportable employee lost time injury rate decreased from 4.04 to 3.47 per 200,000 working hours, compared to the prior 12 months.
+### [p016_c0012] Moving Forward
+[p016_c0013] In 2025, LIRR launched a School Safety Backpack Contest for students in Queens, Brooklyn, Nassau, and Suffolk counties. Students created safety-themed messages and illustrations to promote awareness around trains and tracks. This month, LIRR leadership will recognize winning designs, selected by the Safety Liaison Committee, and printed on backpacks for use in customer safety initiatives and outreach programs.
+[p016_c0014] _| 16 |_
+
+## Page 17
+
+### [p017_c0001] SAFETY & SECURITY
+### [p017_c0002] Major Crimes Against Customers
+[p017_c0003] The rate of all major crimes (burglary, murder, rape, robbery, felony assault, grand larceny, grand larceny of a vehicle) against customers, per million customers
+> [p017_c0004] Year Month Ridership (millions) Major Crime Rate (per million customers) 2022 D 4.5 3.0 2022 J 4.8 5.8 2022 F 4.5 4.0 2022 M 5.0 3.5 2022 A 5.2 4.8 2022 M 5.5 4.5 2022 J 5.8 3.5 2022 J 5.5 2.0 2022 A 5.8 5.5 2022 S 6.0 3.0 2022 O 5.8 4.2 2022 N 6.0 4.0 2023 D 5.5 4.5 2023 J 5.8 3.0 2023 F 5.5 4.5 2023 M 5.8 4.0 2023 A 6.0 3.5 2023 M 6.2 4.5 2023 J 6.5 2.5 2023 J 6.8 4.5 2023 A 7.0 2.5 2023 S 6.5 4.8 2023 O 6.2 3.5 2023 N 6.5 3.5 2024 D 6.0 2.5 2024 J 6.5 3.5 2024 F 6.8 3.0 2024 M 7.0 3.5 2024 A 7.2 2.0 2024 M 7.5 3.5 2024 J 7.8 3.0 2024 J 7.5 4.5 2024 A 7.8 3.0 2024 S 7.5 2.0 2024 O 7.2 1.5 2024 N 7.5 3.0 2025 D 7.8 2.0 2025 J 7.5 1.5 2025 F 7.2 3.0 2025 M 7.5 2.0 2025 A 7.8 2.5 2025 M 8.0 3.5 2025 J 7.5 2.0 2025 J 7.8 1.5 2025 A 8.0 3.0 2025 S 7.5 2.0 2025 O 7.8 1.5 2025 N 8.0 2.0
+### [p017_c0005] Assaults and Harassments Against Employees
+[p017_c0006] The number of assaults and harassments against LIRR employees recorded by MTA Police Department, per NYS criminal law
+> [p017_c0007] Year Month Assaults Harrassments 2022 D 0 5 2022 J 0 4 2022 F 0 3 2022 M 0 8 2022 A 0 7 2022 M 0 3 2022 J 0 6 2022 J 0 6 2022 A 4 4 2022 S 0 3 2022 O 0 6 2022 N 0 8 2023 D 0 6 2023 J 0 8 2023 F 3 4 2023 M 0 8 2023 A 0 7 2023 M 0 8 2023 J 0 7 2023 J 0 12 2023 J 0 7 2023 A 0 9 2023 S 0 10 2023 O 2 23 2023 N 2 12 2024 D 0 12 2024 J 0 1 2024 F 0 3 2024 M 0 5 2024 A 0 3 2024 M 0 8 2024 J 0 5 2024 J 0 5 2024 A 0 3 2024 S 0 3 2024 O 0 2 2025 D 0 5 2025 J 0 6 2025 F 0 5 2025 M 0 5 2025 A 0 5 2025 M 0 3 2025 J 0 6 2025 J 0 1 2025 A 0 3 2025 S 0 6 2025 O 0 5 2025 N 0 5
+### [p017_c0008] Summonses and Arrests
+[p017_c0009] The number of criminal summonses issued for fare evasion, the number of criminal summonses issued for other infractions, and the number of arrests made by MTA Police Department
+> [p017_c0010] Year Month Arrests Fare Evasion Criminal Summonses All Other Summonses 2022 D 50 20 50 2022 J 50 20 50 2022 F 50 20 50 2022 M 50 20 50 2022 A 50 20 50 2022 M 50 20 50 2022 J 50 20 50 2022 J 50 20 50 2022 A 50 20 50 2022 S 50 20 50 2022 O 50 20 50 2023 D 50 20 50 2023 J 50 20 50 2023 F 50 20 50 2023 M 50 20 50 2023 A 50 20 50 2023 M 50 20 50 2023 J 50 20 50 2023 J 50 20 50 2023 A 50 20 50 2023 S 50 20 50 2023 O 50 20 50 2024 D 50 20 50 2024 J 50 20 50 2024 F 50 20 50 2024 M 50 20 50 2024 A 50 20 50 2024 M 50 20 50 2024 J 50 20 50 2024 J 50 20 50 2024 A 50 20 50 2024 S 50 20 50 2024 O 50 20 50 2025 D 50 20 50 2025 J 50 20 50 2025 F 50 20 50 2025 M 50 20 50 2025 A 50 20 50 2025 M 50 20 50 2025 J 50 20 50 2025 J 50 20 50 2025 A 50 20 50 2025 S 50 20 50 2025 O 50 20 50 2025 N 50 20 50
+[p017_c0011] _| 17 |_
+
+## Page 18
+
+### [p018_c0001] An aerial photograph of a large rail yard. In the foreground, several silver and red train cars are parked in a row on tracks. The cars are long and rectangular, with red roofs and red accents on the front. The tracks are made of steel rails on gravel ballast. Overhead, there are several sets of catenary wires and support poles. To the left of the tracks is a wide, paved area. In the background, there are various industrial buildings, including a large grey building with two large doors. Further back, there are hills and some city buildings under a clear blue sky. A large, dark, triangular graphic overlay is positioned in the upper right corner, containing the text 'METRO-NORTH RAILROAD' in white, bold, sans-serif capital letters. METRO-NORTH RAILROAD
+
+## Page 19
+
+> [p019_c0001] An aerial photograph of a train yard and surrounding urban landscape. In the foreground, several silver commuter trains with red roofs and red accents are parked on tracks. A large, grey overhead catenary structure with yellow insulators spans across the tracks. Beyond the train yard is a large asphalt parking lot filled with numerous cars. Further back, there are several industrial buildings, including a long white warehouse-like structure. In the distance, a city skyline with various buildings and a bridge is visible under a blue sky with scattered white clouds.
+
+## Page 20
+
+### [p020_c0001] Metro-North Railroad MESSAGE FROM THE PRESIDENT
+> [p020_c0002] A portrait of Justin Vonashek, President of Metro-North Railroad. He is a man with short dark hair, glasses, and a beard, wearing a dark blue suit, a white shirt, and a blue patterned tie. He is standing with his arms crossed, smiling at the camera. The background is a blurred tunnel with yellow and white lights.
+[p020_c0003] _Justin Vonashek President, Metro-North Railroad_
+[p020_c0004] Our 2025 accomplishments reflect a year of exceptional operational performance, driven by the initiatives that strengthened safety, service and reliability across the railroad. Our workforce consistently exemplifies outstanding talent, dedication, and teamwork in achieving industry-leading results.
+### [p020_c0005] Safety
+[p020_c0006] Safety remains at the core of our operation. This year, we leveraged Artificial Intelligence (AI) to enhance grade crossing and right-of-way worker safety across the railroad. In one example, AI identified frequent grade crossing violations by pedestrians and vehicles, entering the crossing while the gates were down. In response, we implemented targeted engineering solutions, which led to a significant reduction in violations. What once took months, from issue identification to verified results, can now be achieved in days.
+### [p020_c0007] Reliability and Service
+[p020_c0008] For the sixth consecutive year, Metro-North's on-time performance was above 97%, finishing 2025 with an OTP of 97.8%. Safe, reliable, and on-time service is fundamental to ridership recovery and customer satisfaction. Customers know they can count on our service to get them where they want to go safely and on time.
+[p020_c0009] While our employees make this look easy, it is the result of extensive planning, dedication and sustained focus. Behind the scenes, our teams proactively balance the operation of more than 700 weekday trains in all weather conditions while also performing essential right-of-way inspections, maintenance work, and capital upgrades. Key initiatives driving our success include:
+- [p020_c0010] • Innovative approaches to challenging project work. Intertrack barriers were used during the Park Avenue Viaduct project to allow our employees to work, unimpeded by train traffic, while maintaining their safety. • Maximizing productivity through improved coordination to ensure maintenance and capital right-of-way work can be performed with minimal delays. Last year our MofW forces
+[p020_c0011] _The MTA logo, which consists of the letters "MTA" in white inside a blue circle._
+[p020_c0012] _| 20 |_
+
+## Page 21
+
+[p021_c0001] installed nearly 34,000 ties and 12 miles of rail. Delay minutes have been significantly reduced by consolidating projects under shared track outages and refining schedules to optimize production through improved outage analysis.
+- [p021_c0002] • Our service design team is leveraging advanced tools and performance data to improve our service plans. Last year, over 4,000 runs of our simulation software thoroughly tested every outage and base service plan for reliability. We are also utilizing new data streams to inform our service design decisions, such as automated passenger estimates and train-based GPS data which allow us to better monitor and adapt train sizes. • Multiple fleet initiatives targeted at improving fleet availability and reliability led to a 3rd consecutive year of keeping our fleetwide Mean Distance Between Failures (MDBF) above 330,000 miles, achieving our highest MDBF on record at 333,159 miles.
+### [p021_c0003] Reducing Travel Times
+[p021_c0004] While safe, frequent, and reliable service are top of mind for our customers, we also know their time is extremely valuable. In 2025, we implemented our super-express service on the Hudson and New Haven lines. These trains have running times of 90 minutes or less between Grand Central Terminal and the Poughkeepsie and New Haven stations. We were able to achieve these reduced travel times through a combination of signaling system improvements and strategic routing of these trains. In December, we even added an additional super-express train between GCT and New Haven to meet surging demand for holiday travel to and from the City.
+### [p021_c0005] Ridership
+[p021_c0006] We had healthy ridership growth in 2025, with 71.4 million rides, an annual increase of 6%. This growth rate outpaces our pre-pandemic levels, when ridership increased by less than 1% annually between 2010 and 2019. Overall ridership
+[p021_c0007] 97.8%
+[p021_c0008] On-time performance for 2025
+[p021_c0009] 87%
+[p021_c0010] customer satisfaction
+[p021_c0011] $67M
+[p021_c0012] in operating efficiencies savings
+[p021_c0013] _| 21 |_
+
+## Page 22
+
+### [p022_c0001] Metro-North Railroad
+### [p022_c0002] MESSAGE FROM THE PRESIDENT
+[p022_c0003] recovered to 82.5% of 2019 levels. Growth was especially strong in key areas. CityTicket expansion swelled Bronx ridership well beyond pre-pandemic levels, reaching 116% within New York City. Ridership to and from Bronx stations is at 107% for travel throughout our territory. Connecticut's Waterbury Branch reached 147% of 2019 levels.
+[p022_c0004] Metro-North saw a ridership surge in the fall, driven by strong weekday and record weekend ridership. Highlights include:
+- [p022_c0005] • Average weekday ridership rose to nearly 237,000 between Labor Day and Christmas • Foliage trains reached 109% of October 2019 weekend ridership, an October record • Shoppers' Specials also set weekend records in December • 2025 had nine weekends that were higher than 2019 averages
+[p022_c0006] December 2025 ridership totaled 6.2 million, up 6.5% from November, and 5.7% higher year over year, representing 85.7% of December 2019 levels. Growth was driven by strong weekend and holiday travel, with December's weekend ridership 98.8% of 2019 levels, and weekday ridership at 81.2%. Demand continued to exceed expectations, prompting us to add capacity and schedule additional weekend trains into the schedules to ensure a comfortable ride for all customers.
+### [p022_c0007] Accessibility
+[p022_c0008] In 2025, we continued to advance accessibility across our system to better serve all customers. Work is underway in the Bronx at Botanical Garden, Woodlawn, and Williams Bridge, where station upgrades will bring new elevators and ramps to ensure full accessibility. We responded to more than 3,400 accessibility requests throughout the year, an increase of over 700 from 2024, demonstrating our ongoing commitment to meeting the needs of our customers through the Metro-North Care Program. Working with MTA Accessibility, we also piloted Convo, which provides American Sign Language services to customers in need, and we now plan to expand this to all stations with ticket agents and ambassadors in 2026. Finally, the Suffern Station Accessibility Feasibility Study is expected to provide important findings this spring to guide future improvements in our West of Hudson stations.
+### [p022_c0009] Fare Collection and Revenue
+[p022_c0010] Our train crews remain focused on collecting every fare. Through our partnership with MTAPD we implemented a series of internal and customer-facing improvements. We have reduced our Fare Not Collected rates for the third consecutive year to 2.5% at the end of 2025. These efforts translated into nearly $664M in fare revenue for 2025, exceeding the forecast by more than $3M. We expect continued gains in 2026 with the new ticketing policies that went into effect on January 4. Last October, we also accelerated the rollout of our next-generation Ticket Vending Machines (TVMs), designed to enhance the customer experience. By year-end, 74 of 241 planned machines were in service, with full deployment expected by mid-2026.
+[p022_c0011] _| 22 |_
+
+## Page 23
+
+### [p023_c0001] Innovation
+[p023_c0002] Innovation transforms our vision and strategic priorities into action. From AI-driven insights to automated data collection, we are building a smarter, more resilient system. Some innovation highlights from 2025 include:
+- [p023_c0003] • Piloted an Automated Passenger Counting system on the M8 fleet to provide real-time ridership data, enabling better service planning and resource allocation. • Launched our Drone Program to enhance infrastructure inspections, completing 30 inspection and mapping missions to date. • Initiated several AI-driven pilots focused on predictive analytics and operational efficiency all aimed at reducing delays and improving safety. • Transitioned an AI system from the Transit Tech Lab to help optimize material management and better predict inventory needs, reduce stockouts, and improve equipment availability, while supporting our Standard Work and reliability goals.
+[p023_c0004] These initiatives demonstrate our commitment to leveraging technology for safety, efficiency, and improving the customer experience.
+### [p023_c0005] Operating Efficiencies
+[p023_c0006] We continued to focus on a long-term effort to embed efficiencies into our operating model. In 2025, we achieved $67M in operating efficiencies and leveraged advanced data analytics and revamped management approaches to improve productivity and reduce overtime by 12% compared to 2024. We also expanded our standard work program initiatives beyond rail car maintenance to include track tie maintenance and production.
+### [p023_c0007] Workforce
+[p023_c0008] In 2025, we strengthened employee engagement through quarterly labor-management meetings, bi-monthly Engagement Days, and Metro-North One events. Our “Be the One” program connected leadership with frontline staff, and we celebrated teams on Transit Employee Appreciation Day. Employees enjoyed wellness programs like Healthy4U!, plus Book Club and Lunch & Learn sessions. We welcomed the public at the New Haven Open House and honored outstanding contributions with Metro-North Awards, including the President’s, Team Excellence, and Pillar Awards. These initiatives enhanced communication and connection and we have even more is planned for 2026!
+### [p023_c0009] Customer Satisfaction
+[p023_c0010] When we consider all these factors, I can confidently say Metro-North maintained its reputation as a high-performing railroad in 2025, with customers agreeing. The MTA’s fall Customer Counts survey shows overall satisfaction at 87%, up 2% from Fall 2024. The Hudson and Harlem Lines led at 89%, while the New Haven Line dipped to 86%. Satisfaction has consistently remained in the mid-to-high 80s since the survey’s current format launched in 2022.
+[p023_c0011] _| 23 |_
+[p023_c0012] _The MTA logo, consisting of the letters "MTA" in white inside a dark blue circle._
+
+## Page 24
+
+### [p024_c0001] Metro-North Railroad SERVICE PERFORMANCE
+### [p024_c0002] Service Delivered
+[p024_c0003] The share of scheduled train trips completed. NJ Transit operates West of Hudson trains.
+> [p024_c0004] Legend: East of Hudson (Blue), West of Hudson (Orange) Year Month East of Hudson (%) West of Hudson (%) 2022 D 99.5 98.5 2022 J 99.5 99.5 2022 F 99.5 98.5 2022 M 99.5 99.5 2022 A 99.5 99.5 2022 M 99.5 99.5 2022 J 99.5 99.5 2022 J 99.5 99.5 2022 A 99.5 99.5 2022 S 98.5 99.5 2022 O 99.5 99.5 2022 N 99.5 99.5 2023 D 99.5 99.5 2023 J 99.5 99.5 2023 F 99.5 99.5 2023 M 99.5 99.5 2023 A 99.5 99.5 2023 M 99.5 99.5 2023 J 99.5 99.5 2023 J 99.5 99.5 2023 A 99.5 99.5 2023 S 99.5 99.5 2023 O 99.5 99.5 2023 N 99.5 99.5 2024 D 99.5 99.5 2024 J 99.5 99.5 2024 F 99.5 99.5 2024 M 99.5 99.5 2024 A 99.5 99.5 2024 M 99.5 99.5 2024 J 99.5 99.5 2024 J 99.5 99.5 2024 A 99.5 99.5 2024 S 99.5 99.5 2024 O 99.5 99.5 2024 N 99.5 99.5 2025 D 99.5 99.5 2025 J 99.5 99.5 2025 F 99.5 99.5 2025 M 99.5 99.5 2025 A 99.5 99.5 2025 M 99.5 99.5 2025 J 99.5 99.5 2025 J 99.5 99.5 2025 A 99.5 99.5 2025 S 99.5 99.5 2025 O 99.5 99.5 2025 N 99.5 99.5
+### [p024_c0005] Delays by Type
+[p024_c0006] The number of delayed trains on East of Hudson lines by type of delay
+> [p024_c0007] Year Month Customer Assistance Police Train Operations Infrastructure Maintenance External Factors Fleet Capital Projects 2022 D 100 100 100 100 100 100 100 2022 J 100 100 100 100 100 100 100 2022 F 100 100 100 100 100 100 100 2022 M 100 100 100 100 100 100 100 2022 A 100 100 100 100 100 100 100 2022 M 100 100 100 100 100 100 100 2022 J 100 100 100 100 100 100 100 2022 J 100 100 100 100 100 100 100 2022 A 100 100 100 100 100 100 100 2022 S 100 100 100 100 100 100 100 2022 O 100 100 100 100 100 100 100 2022 N 100 100 100 100 100 100 100 2023 D 100 100 100 100 100 100 100 2023 J 100 100 100 100 100 100 100 2023 F 100 100 100 100 100 100 100 2023 M 100 100 100 100 100 100 100 2023 A 100 100 100 100 100 100 100 2023 M 100 100 100 100 100 100 100 2023 J 100 100 100 100 100 100 100 2023 J 100 100 100 100 100 100 100 2023 A 100 100 100 100 100 100 100 2023 S 100 100 100 100 100 100 100 2023 O 100 100 100 100 100 100 100 2023 N 100 100 100 100 100 100 100 2024 D 100 100 100 100 100 100 100 2024 J 100 100 100 100 100 100 100 2024 F 100 100 100 100 100 100 100 2024 M 100 100 100 100 100 100 100 2024 A 100 100 100 100 100 100 100 2024 M 100 100 100 100 100 100 100 2024 J 100 100 100 100 100 100 100 2024 J 100 100 100 100 100 100 100 2024 A 100 100 100 100 100 100 100 2024 S 100 100 100 100 100 100 100 2024 O 100 100 100 100 100 100 100 2024 N 100 100 100 100 100 100 100 2025 D 100 100 100 100 100 100 100 2025 J 100 100 100 100 100 100 100 2025 F 100 100 100 100 100 100 100 2025 M 100 100 100 100 100 100 100 2025 A 100 100 100 100 100 100 100 2025 M 100 100 100 100 100 100 100 2025 J 100 100 100 100 100 100 100 2025 J 100 100 100 100 100 100 100 2025 A 100 100 100 100 100 100 100 2025 S 100 100 100 100 100 100 100 2025 O 100 100 100 100 100 100 100 2025 N 100 100 100 100 100 100 100
+### [p024_c0008] Mean Distance Between Failures
+[p024_c0009] The average number of miles a railcar or locomotive travels on East of Hudson lines before failing and causing a delay
+> [p024_c0010] Year Month Mean Distance (Miles) 2022 D 250,000 2022 J 600,000 2022 F 380,000 2022 M 380,000 2022 A 530,000 2022 M 300,000 2022 J 400,000 2022 J 250,000 2022 A 280,000 2022 S 280,000 2022 O 300,000 2022 N 380,000 2023 D 280,000 2023 J 650,000 2023 F 280,000 2023 M 300,000 2023 A 300,000 2023 M 380,000 2023 J 300,000 2023 J 380,000 2023 A 250,000 2023 S 280,000 2023 O 480,000 2023 N 380,000 2024 D 350,000 2024 J 280,000 2024 F 300,000 2024 M 300,000 2024 A 380,000 2024 M 300,000 2024 J 250,000 2024 J 280,000 2024 A 250,000 2024 S 280,000 2024 O 380,000 2024 N 350,000 2025 D 280,000 2025 J 350,000 2025 F 280,000 2025 M 380,000 2025 A 250,000 2025 M 250,000 2025 J 380,000 2025 J 350,000 2025 A 680,000 2025 S 400,000 2025 O 250,000 2025 N 250,000
+[p024_c0011] _| 24 |_
+
+## Page 25
+
+### [p025_c0001] SERVICE PERFORMANCE
+### [p025_c0002] On-Time Performance
+[p025_c0003] The share of trains that arrive at their terminus station within 5:59 minutes of schedule. NJ Transit operates West of Hudson trains.
+> [p025_c0004] Estimated On-Time Performance Data (%) Month East of Hudson (%) West of Hudson (%) Dec 2022 97.5 91.0 Jan 2023 98.0 96.0 Feb 2023 97.5 92.5 Mar 2023 97.0 92.5 Apr 2023 98.0 94.0 May 2023 97.5 94.5 Jun 2023 97.0 88.0 Jul 2023 97.5 90.0 Aug 2023 98.0 93.0 Sep 2023 97.0 94.0 Oct 2023 97.5 94.5 Nov 2023 98.0 96.0 Dec 2023 99.0 92.0 Jan 2024 98.5 92.5 Feb 2024 98.0 96.0 Mar 2024 97.5 95.0 Apr 2024 97.0 90.0 May 2024 97.5 93.0 Jun 2024 98.0 93.5 Jul 2024 98.5 90.0 Aug 2024 98.0 93.0 Sep 2024 97.5 92.0 Oct 2024 98.0 93.0 Nov 2024 98.5 91.0 Dec 2024 99.0 91.5 Jan 2025 98.5 98.0 Feb 2025 98.0 94.0 Mar 2025 97.5 94.5 Apr 2025 97.0 95.0 May 2025 97.5 96.0 Jun 2025 98.0 95.0 Jul 2025 98.5 93.0 Aug 2025 98.0 93.5 Sep 2025 97.5 92.0 Oct 2025 97.0 92.5 Nov 2025 97.5 92.0 Dec 2025 97.0 92.5
+### [p025_c0005] On-Time Performance, by Line
+[p025_c0006]
+
+```text
+Hudson 97.1% Pascack Valley 92.9% Harlem 97.3% Port Jervis 93.1% New Haven 97.1%
+```
+### [p025_c0007] Data Review
+[p025_c0008] Service delivered in December was 99.9% and the fleet's mean distance between failures was 405,824 miles, surpassing the 200,000-mile goal. Systemwide on-time performance (OTP) reached 97.2%, exceeding the 94% goal. 5 major incidents impacted November's OTP, and the most significant incident occurred on December 5, affecting 134 trains, when track pulled apart south of Woodlawn affecting morning services.
+### [p025_c0009] Moving Forward
+[p025_c0010] Metro-North will provide enhanced Saturday service on Martin Luther King Jr. Day, January 19, and a Saturday schedule will also be in effect for Presidents' Day on February 16. The new schedule will be released in March, with additional details about the spring timetable available next month.
+[p025_c0011] _| 25 |_
+
+## Page 26
+
+### [p026_c0001] Metro-North Railroad RIDERSHIP
+### [p026_c0002] Monthly Ridership
+[p026_c0003] Estimated number of monthly trips taken. Ridership is based on ticket sales data.
+> [p026_c0004] Year Month East of Hudson (Millions) West of Hudson (Millions) 2022 D 4.5 4.5 2022 J 4.3 4.3 2022 F 4.0 4.0 2022 M 4.8 4.8 2022 A 4.5 4.5 2022 M 5.2 5.2 2022 J 5.0 5.0 2022 J 4.8 4.8 2022 A 4.8 4.8 2022 S 4.8 4.8 2022 O 5.5 5.5 2022 N 5.3 5.3 2023 D 4.8 4.8 2023 J 4.5 4.5 2023 F 4.8 4.8 2023 M 5.5 5.5 2023 A 5.8 5.8 2023 M 5.5 5.5 2023 J 5.5 5.5 2023 J 5.5 5.5 2023 A 5.5 5.5 2023 S 6.5 6.5 2023 O 5.5 5.5 2023 N 5.8 5.8 2024 D 5.5 5.5 2024 J 5.2 5.2 2024 F 4.8 4.8 2024 M 5.8 5.8 2024 A 6.0 6.0 2024 M 6.0 6.0 2024 J 6.0 6.0 2024 J 6.2 6.2 2024 A 5.8 5.8 2024 S 6.5 6.5 2024 O 6.8 6.8 2024 N 6.0 6.0 2025 D 5.5 5.5 2025 J 5.8 5.8 2025 F 6.0 6.0 2025 M 6.2 6.2 2025 A 6.2 6.2 2025 M 6.2 6.2 2025 J 6.2 6.2 2025 J 6.5 6.5 2025 A 6.8 6.8 2025 S 6.5 6.5 2025 O 6.2 6.2 2025 N 6.2 6.2
+### [p026_c0005] Data Review
+[p026_c0006] Metro North's total ridership in 2025 continued to rise faster than pre-pandemic growth rates, up 6.0% from 2024 to 71.4 million and 82.5% of 2019. Average daily ridership for 2025 rose 6.3% from 2024 to 195,626 and average weekday ridership rose 7.2%. Total peak ridership's similar 6.3% increase masks commutation ridership's even stronger rise of 10.4%, hinting at congestion pricing and return-to-office impacts as commuters abandon one-way peak tickets. City ticket ridership rose faster, up 11.5%, but off-peak ridership grew only 5.4% despite strong baseball, foliage, and holiday ridership.
+[p026_c0007] December 2025 totaled 6.2 million trips, up 6.5% from November for an average daily ridership rise of 3.1% to 199,681, boosted by getaway ridership and Shoppers' Special trains providing a weekend average of 128,845 rides per day, up 3.3%. This was our strongest non October weekend average and the third highest weekend average since 2020, increasing 6.1% over December 2024 and representing 98.8% of December 2019. Average weekday ridership's 4.0% decline to 226,596 due to the holiday week was mitigated by four more weekdays than November. Overall December ridership grew 5.7% from 2024, standing at 85.7% of 2019. Weekday ridership rose 4.9% from December 2024 and stood at 81.2% of 2019. Commutation ticket ridership increased 12.7% from November. Commutation, single, and ten trip peak ridership rose 8.5%, and commutation's share rose 2.0% from 35.7% to 37.7%.
+### [p026_c0008] Moving Forward
+[p026_c0009] January ridership typically dips after the holidays as winter vacations begin, driving both peak work trips and discretionary travel lower, and the gap has widened for the past three years, with January 2025 down 8.5% from December, compared with a drop of 6.7% the previous year and 3.0% for 2022-2023. It's likely that January 2026 will show a similar or larger drop before ridership recovers in the spring.
+[p026_c0010] _| 26 |_
+
+## Page 27
+
+### [p027_c0001] FINANCIAL RESULTS
+### [p027_c0002] 2025 Revenues & Expenses, December Year-to-Date
+[p027_c0003] $ in millions
+[p027_c0004]
+
+```text
+Budget Actual Variance Total Non-Reimbursable Revenues $725.9 $739.4 $13.5 Farebox Revenues $661.2 $664.5 $3.3 Other Revenues $64.8 $75.0 $10.2 Total Non-Reimbursable Expenses $1,642.4 $1,637.4 $5.0 Labor Expenses $1,153.9 $1,127.2 $26.7 Non-Labor Expenses $488.5 $510.2 ($21.7) Non Cash Liabilities $440.6 $353.2 $87.3 Net Surplus / (Deficit) - Accrued ($1,357.0) ($1,251.2) $105.8
+```
+### [p027_c0005] Staffing Levels
+[p027_c0006]
+
+```text
+Positions (Full-Time Equivalents) Budget Actual Variance Non-Reimbursable 6,153 6,266 (113) Reimbursable 742 448 294 Total Positions 6,895 6,714 181
+```
+### [p027_c0007] Data Review
+[p027_c0008] Through December, farebox revenue was $3.3 million higher than the Forecast due to increased non-commutation ridership and higher average yield per passenger across all East of Hudson lines partially offset by lower commutation ridership across all lines and lower average yield per passenger across West of Hudson lines.
+[p027_c0009] Labor expenses are lower than the Forecast by $26.7 million due primarily to decrease in payroll, health and welfare costs as well as lower other fringe benefits partially offset by lower reimbursable overhead. At the end of December, paid headcount was 181 lower than Forecast.
+[p027_c0010] Non-labor expenses are higher than the Forecast by $21.7 million due primarily to higher materials and supplies as well as higher maintenance and other operating contracts partially offset by lower professional service contracts.
+### [p027_c0011] Moving Forward
+[p027_c0012] We are focused on growing staff to budgeted targets across all crafts. We are aware of the financial challenges faced by the MTA, and we continually look for cost-effective ways to operate efficiently, ranging from workforce management to material needs.
+[p027_c0013] _| 27 |_
+
+## Page 28
+
+### [p028_c0001] Metro-North Railroad MAJOR PROJECTS
+### [p028_c0002] Major Harlem Line Station Improvements Underway in the Bronx
+[p028_c0003] MTA Construction & Development, in partnership with Metro-North, is advancing accessibility and station upgrades at three Harlem Line stations in the Bronx: Williams Bridge, Woodlawn, and Botanical Garden.
+[p028_c0004] At Williams Bridge and Woodlawn, work includes new elevators and machine rooms, full platform replacements with new foundations, stairway upgrades, and new canopies. Botanical Garden improvements feature a new platform slab, select pier replacements, elevator upgrades, ADA-compliant stairs, ramps, and walkways, plus restoration of the historic wood canopy.
+[p028_c0005] All three stations will receive new amenities such as platform shelters, benches, leaning bars, recycling centers, customer information displays, public address systems, security cameras, and artwork coordinated by MTA Arts & Design.
+[p028_c0006] Currently, crews are replacing inbound platforms at all three stations, with new foundations, slabs, and structural steel installed. Work on canopies, staircases, ramps, and electrical systems is underway, and inbound platforms are scheduled to reopen in March 2026. The second phase—outbound platform replacements—will run from April to November 2026. These upgrades will strengthen accessibility and create a more welcoming experience for all Metro-North customers.
+> [p028_c0007] A photograph taken at night showing a large yellow crane lifting a tall, rectangular structural steel frame. The frame is composed of several horizontal and vertical steel beams. The crane's boom is extended upwards, and its hook is attached to the top of the frame. The background is dark, with some distant lights visible. The crane has "ATLANTIC CRANE" printed on its side. An orange ladder is leaning against the side of the structure.
+[p028_c0008] _The MTA logo, which consists of the letters "MTA" in white inside a blue circle._
+[p028_c0009] _| 28 |_
+
+## Page 29
+
+### [p029_c0001] CUSTOMERS & COMMUNITIES
+### [p029_c0002] Elected Officials and Staff Tour Grand Central Terminal
+[p029_c0003] Prior to the start of the new legislative session, Assemblyman Anil Beephan, his staff, and staff from Assemblymembers Paulin, Shimsky, Bores and Speaker Heastie joined MTA Metro-North Director of Government Relations on a tour with Grand Central Terminal Assistant Station Master and Historian John Weyhausen for an in depth look at the crown jewel of transit.
+> [p029_c0004] A group of approximately ten people, including elected officials and MTA staff, are posing for a group photo in the grand hall of Grand Central Terminal. The group is diverse, with men and women of various ages and ethnicities. They are dressed in a mix of casual and professional attire, including jackets, sweaters, and a uniform. The background shows the ornate architecture of the terminal, with its high ceilings, decorative columns, and various informational signs like "THE SHOPS" and "INFORMATION".
+### [p029_c0005] Metro-North Welcomes the New Ticket Vending Machines
+[p029_c0006] With the rollout well underway, Metro-North proudly marked the next generation of our ticket vending machines. To celebrate this milestone, we hosted a ribbon-cutting ceremony unveiling machines that can issue any railroad ticket — Metro-North or LIRR — from any location. These state-of-the-art machines replace aging units that had reached the end of their service life and were delivered in record time thanks to the dedication of our entire team and our trusted contractor. This achievement is especially noteworthy given the significant pivot required just over a year ago, making today's success a true testament to collaboration and hard work.
+[p029_c0007] _| 29 |_
+[p029_c0008] _The MTA logo, which consists of the letters "MTA" in a bold, sans-serif font inside a blue circle._
+
+## Page 30
+
+### [p030_c0001] Metro-North Railroad SAFETY & SECURITY
+### [p030_c0002] Customer Injury Rate
+[p030_c0003] The number of reportable customer injuries per one million customers (12-month rolling average)
+[p030_c0004] December data not yet available
+> [p030_c0005] Year Month Rate 2022 Dec 2.4 2022 Jan 2.3 2022 Feb 2.2 2022 Mar 2.1 2022 Apr 2.1 2022 May 2.2 2022 Jun 2.2 2022 Jul 2.3 2022 Aug 2.2 2022 Sep 2.1 2022 Oct 2.0 2022 Nov 2.0 2022 Dec 2.0 2023 Jan 2.0 2023 Feb 2.0 2023 Mar 1.9 2023 Apr 1.8 2023 May 1.7 2023 Jun 1.6 2023 Jul 1.6 2023 Aug 1.5 2023 Sep 1.5 2023 Oct 1.4 2023 Nov 1.4 2023 Dec 1.4 2024 Jan 1.4 2024 Feb 1.4 2024 Mar 1.5 2024 Apr 1.5 2024 May 1.6 2024 Jun 1.6 2024 Jul 1.7 2024 Aug 1.6 2024 Sep 1.6 2024 Oct 1.5 2024 Nov 1.5 2024 Dec 1.5 2025 Jan 1.5 2025 Feb 1.5 2025 Mar 1.6 2025 Apr 1.6 2025 May 1.6 2025 Jun 1.5 2025 Jul 1.5 2025 Aug 1.5 2025 Sep 1.5 2025 Oct 1.5 2025 Nov 1.5 2025 Dec 1.5
+### [p030_c0006] Employee Lost Time Injury Rate
+[p030_c0007] The number of reportable employee lost time injuries per 200,000 hours worked (12-month rolling average)
+[p030_c0008] December data not yet available
+> [p030_c0009] Year Month Rate 2022 Dec 2.2 2022 Jan 2.1 2022 Feb 2.2 2022 Mar 2.2 2022 Apr 2.1 2022 May 2.1 2022 Jun 2.1 2022 Jul 2.1 2022 Aug 2.0 2022 Sep 2.0 2022 Oct 1.9 2022 Nov 1.9 2022 Dec 1.9 2023 Jan 1.9 2023 Feb 1.8 2023 Mar 1.8 2023 Apr 1.8 2023 May 1.8 2023 Jun 1.7 2023 Jul 1.7 2023 Aug 1.7 2023 Sep 1.6 2023 Oct 1.6 2023 Nov 1.6 2023 Dec 1.6 2024 Jan 1.6 2024 Feb 1.6 2024 Mar 1.6 2024 Apr 1.6 2024 May 1.6 2024 Jun 1.7 2024 Jul 1.6 2024 Aug 1.6 2024 Sep 1.6 2024 Oct 1.6 2024 Nov 1.6 2024 Dec 1.6 2025 Jan 1.6 2025 Feb 1.6 2025 Mar 1.7 2025 Apr 1.6 2025 May 1.6 2025 Jun 1.6 2025 Jul 1.7 2025 Aug 1.7 2025 Sep 1.7 2025 Oct 1.7 2025 Nov 1.7 2025 Dec 1.7
+### [p030_c0010] Data Review
+[p030_c0011] The reportable customer injury rate increased from 1.41 to 1.52 per one million customers in the current 12-month reporting period, December through November 2025, compared to the prior 12 months. The reportable employee lost time injury rate increased from 1.65 to 1.73 per 200,000 working hours, compared to the prior 12 months.
+### [p030_c0012] Moving Forward
+[p030_c0013] Metro-North was honored at the Connections365 conference for advancing safety through its use of the Comply365 digital platform. The system gives employees real-time, role-specific safety and operational information while ensuring compliance. A key improvement was providing train crews instant access to MTAPD wanted and missing-person alerts on iPads, replacing slow paper postings, leading to two arrests and stronger coordination with law enforcement. The platform streamlines communication and improves preparedness, supporting a safer railroad.
+[p030_c0014] _| 30 |_
+
+## Page 31
+
+### [p031_c0001] SAFETY & SECURITY
+### [p031_c0002] Major Crimes Against Customers
+[p031_c0003] The rate of all major crimes (burglary, murder, rape, robbery, felony assault, grand larceny, grand larceny of a vehicle) against customers, per million customers
+> [p031_c0004] Estimated Data for Major Crimes Against Customers Month Ridership (in millions) Major Crime Rate (per million customers) Dec 2022 4.5 1.0 Jan 2023 4.5 3.0 Feb 2023 4.5 3.5 Mar 2023 4.8 2.5 Apr 2023 5.2 2.5 May 2023 5.2 2.0 Jun 2023 5.2 2.5 Jul 2023 5.2 3.5 Aug 2023 5.2 2.0 Sep 2023 5.2 3.5 Oct 2023 5.2 1.5 Nov 2023 5.2 3.2 Dec 2023 5.2 3.2 Jan 2024 5.2 3.2 Feb 2024 5.2 3.5 Mar 2024 5.2 3.0 Apr 2024 5.2 3.2 May 2024 5.2 2.5 Jun 2024 5.2 2.5 Jul 2024 5.2 2.5 Aug 2024 5.2 2.0 Sep 2024 5.2 1.5 Oct 2024 5.2 2.5 Nov 2024 5.2 2.0 Dec 2024 5.2 1.5 Jan 2025 5.2 3.5 Feb 2025 5.2 2.0 Mar 2025 5.2 2.0 Apr 2025 5.2 1.5 May 2025 5.2 2.0 Jun 2025 5.2 1.0 Jul 2025 5.2 2.5 Aug 2025 5.2 1.5 Sep 2025 5.2 1.0 Oct 2025 5.2 0.5 Nov 2025 5.2 0.5 Dec 2025 5.2 0.5
+### [p031_c0005] Assaults and Harassments Against Employees
+[p031_c0006] The number of assaults and harassments against Metro-North employees recorded by MTA Police Department, per NYS criminal law
+> [p031_c0007] Estimated Data for Assaults and Harassments Against Employees Month Assaults Harassments Dec 2022 0 5 Jan 2023 0 4 Feb 2023 0 3 Mar 2023 0 8 Apr 2023 0 7 May 2023 0 3 Jun 2023 0 6 Jul 2023 0 6 Aug 2023 0 8 Sep 2023 0 3 Oct 2023 0 6 Nov 2023 0 8 Dec 2023 0 8 Jan 2024 0 12 Feb 2024 0 7 Mar 2024 0 9 Apr 2024 0 9 May 2024 0 10 Jun 2024 0 10 Jul 2024 0 25 Aug 2024 0 12 Sep 2024 0 15 Oct 2024 0 12 Nov 2024 0 2 Dec 2024 0 3 Jan 2025 0 5 Feb 2025 0 3 Mar 2025 0 5 Apr 2025 0 8 May 2025 0 3 Jun 2025 0 5 Jul 2025 0 5 Aug 2025 0 3 Sep 2025 0 2 Oct 2025 0 5 Nov 2025 0 6 Dec 2025 0 5
+### [p031_c0008] Summonses and Arrests
+[p031_c0009] The number of criminal summonses issued for fare evasion, the number of criminal summonses issued for other infractions, and the number of arrests made by MTA Police Department
+> [p031_c0010] Estimated Data for Summonses and Arrests Month Arrests Fare Evasion Criminal Summonses Other Criminal Summonses Dec 2022 20 10 20 Jan 2023 20 10 20 Feb 2023 20 10 20 Mar 2023 20 10 20 Apr 2023 20 10 20 May 2023 20 10 20 Jun 2023 20 10 20 Jul 2023 20 10 20 Aug 2023 20 10 20 Sep 2023 20 10 20 Oct 2023 20 10 20 Nov 2023 20 10 20 Dec 2023 20 10 20 Jan 2024 20 10 20 Feb 2024 20 10 20 Mar 2024 20 10 20 Apr 2024 20 10 20 May 2024 20 10 20 Jun 2024 20 10 20 Jul 2024 20 10 20 Aug 2024 20 10 20 Sep 2024 20 10 20 Oct 2024 20 10 20 Nov 2024 20 10 20 Dec 2024 20 10 20 Jan 2025 20 10 20 Feb 2025 20 10 20 Mar 2025 20 10 20 Apr 2025 20 10 20 May 2025 20 10 20 Jun 2025 20 10 20 Jul 2025 20 10 20 Aug 2025 20 10 20 Sep 2025 20 10 20 Oct 2025 20 10 20 Nov 2025 20 10 20 Dec 2025 20 10 20
+[p031_c0011] _| 31 |_
+
+## Page 32
+
+[p032_c0001] 7798
+[p032_c0002] 7798
+> [p032_c0003] The logo consists of two stylized American flags, one on the left and one on the right, with three stars above them. Below the flags, the text "WE SERVE WITH PRIDE" is written in a bold, sans-serif font.
+> [p032_c0004] The MTA logo is a blue circle with the letters "MTA" in white.
+[p032_c0005] Long Island Rail Road
+
+## Page 34
+
+### [p034_c0001] ABOUT THE METROPOLITAN TRANSPORTATION AUTHORITY, THE LONG ISLAND RAIL ROAD, AND METRO-NORTH RAILROAD
+[p034_c0002] The Metropolitan Transportation Authority is North America's largest transportation network, serving a population of 15.3 million people across a 5,000 square-mile travel area surrounding New York City through Long Island, southeastern New York State, and Connecticut.
+[p034_c0003] Long Island Rail Road is comprised of over 7,000 employees serving over 200,000 passengers a day. We operate 700 trains daily and maintain 125 stations, nearly 700 miles of track, and 27 shops and yards.
+[p034_c0004] Metro-North Railroad is comprised of nearly 6,000 employees serving over 200,000 passengers a day. We operate 700 trains daily and maintain 124 stations, nearly 900 miles of track, and 19 shops and yards.
+[p034_c0005] The MTA is governed by a 23-member Board, organized in eight committees. Members of the Joint Long Island Rail Road and Metro-North Railroad Committee include:
+- [p034_c0006] • Marc Herbst, Co-Chair • Blanca Lopez, Co-Chair • Gerard Bringmann • Samuel Chu • Michael Fleischer • Daniel Garodnick • Randolph Glucksman • Christopher Leathers • David Mack • Melva M. Miller • James O'Donnell • Lisa Sorin • Midori Valdivia • Ed Valente • Neal Zuckerman
+> [p034_c0007] The MTA logo, consisting of the letters "MTA" in a bold, sans-serif font, is centered within a white circle. The circle is set against a dark blue background.

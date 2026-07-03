@@ -1,0 +1,85 @@
+{
+  "note_id": "codex-source-prep-spreadsheet-batch014-prep",
+  "created_at": "2026-06-23T17:04:40.459Z",
+  "author": "codex",
+  "kind": "source_prep_spreadsheet_batch_applied_and_ingest_started",
+  "status": "applied_wave40_detached_running",
+  "scope": "Applied deterministic spreadsheet preview sidecars for 10 not-ready spreadsheet sources, refreshed readiness, and started the reopened ready pool as detached wave40.",
+  "mutation_mechanism": "bun packages/cli/src/cli.ts source-prep-apply-preview <source_id> --run-id spreadsheet-backlog-20260623; writes raw/sources/<source_id>/text.txt and blocks.jsonl from reviewed data/source-prep sidecars",
+  "sources": [
+    {
+      "source_id": "meeting_doc_151891",
+      "blocks": 158
+    },
+    {
+      "source_id": "meeting_doc_151901",
+      "blocks": 117
+    },
+    {
+      "source_id": "meeting_doc_151911",
+      "blocks": 83
+    },
+    {
+      "source_id": "meeting_doc_154856",
+      "blocks": 119
+    },
+    {
+      "source_id": "meeting_doc_154876",
+      "blocks": 158
+    },
+    {
+      "source_id": "meeting_doc_154891",
+      "blocks": 83
+    },
+    {
+      "source_id": "meeting_doc_157591",
+      "blocks": 116
+    },
+    {
+      "source_id": "meeting_doc_160341",
+      "blocks": 158
+    },
+    {
+      "source_id": "meeting_doc_160356",
+      "blocks": 123
+    },
+    {
+      "source_id": "meeting_doc_160361",
+      "blocks": 83
+    }
+  ],
+  "verification": {
+    "source_prep_tests": "bun test packages/pipeline/test/sources/source-prep.test.ts: 6 pass, 0 fail",
+    "blocks_line_counts_checked": true,
+    "repo_secret_scan_after_launch": "rg for Pioneer key fragments returned no matches"
+  },
+  "readiness_after_apply": {
+    "command": "bun packages/cli/src/cli.ts campaign readiness --id validation-2026-06",
+    "total": 2566,
+    "ready": 2432,
+    "ready_never_ingested": 10,
+    "already_ingested": 2430,
+    "quarantined": 134,
+    "interpretation": "The reopened 10-source pool came from batch014 and was launched as wave40."
+  },
+  "ingest_started": {
+    "wave": 40,
+    "pid": 1431478,
+    "source_count": 10,
+    "concurrency": 10,
+    "materialize_cadence": "MTA_MATERIALIZE_EVERY=100000",
+    "profile": "pioneer-deepseek-flash",
+    "command_template": "PIONEER_API_KEY='<PIONEER_API_KEY>' MTA_MATERIALIZE_EVERY=100000 setsid -f bun packages/cli/src/cli.ts campaign ingest --wave 40 --id validation-2026-06 --size 10 --concurrency 10 --timeout-min 300 --profile pioneer-deepseek-flash",
+    "secret_persisted": false
+  },
+  "commands_not_run": [
+    "campaign dedup",
+    "canonicalize*",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "write",
+    "ask",
+    "schema",
+    "generated-output materialize/export/validate while wave40 active"
+  ]
+}

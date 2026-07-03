@@ -1,0 +1,279 @@
+{
+  "run_id": "2026-06-10T23-10-24-333Z_1976810-1a314ef0_ingest_2013-03-13-sbs-125th-cb10",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T03:32:05.686Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-offset-bus-lanes-125th",
+        "local_observation_id": "treatment_offset_bus_lanes_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "treatment_offset-bus-lanes-125th_4",
+            "description": "Offset Bus Lanes on 125th Street between Amsterdam Avenue and Second Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_13_sbs_125th_cb10",
+                "block_id": "p011_c0004",
+                "source_quote": "Offset Bus Lanes replace one general travel lane in each direction and maintain curb access"
+              },
+              {
+                "source_id": "2013_03_13_sbs_125th_cb10",
+                "block_id": "p017_c0007",
+                "source_quote": "Offset Bus Lanes replace one general travel lane in each direction"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source p011_c0004 and p017_c0007 explicitly state offset bus lanes are part of the proposed 125th Street M60 SBS design",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_13_sbs_125th_cb10",
+            "block_id": "p011_c0004",
+            "source_quote": "Offset Bus Lanes replace one general travel lane in each direction and maintain curb access"
+          },
+          {
+            "source_id": "2013_03_13_sbs_125th_cb10",
+            "block_id": "p017_c0007",
+            "source_quote": "Offset Bus Lanes replace one general travel lane in each direction"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-off-board-fare-125th",
+        "local_observation_id": "treatment_off_board_fare_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "treatment_off-board-fare-125th",
+            "description": "Off-Board Fare Collection on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_13_sbs_125th_cb10",
+                "block_id": "p006_c0008",
+                "source_quote": "Off-Board Fare Collection"
+              },
+              {
+                "source_id": "2013_03_13_sbs_125th_cb10",
+                "block_id": "p007_c0007",
+                "source_quote": "Pay at sidewalk Metrocard or coin machines before boarding the bus"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source p006_c0008 lists Off-Board Fare Collection as a proposed SBS improvement and p007_c0007 describes sidewalk fare machines for prepayment",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_13_sbs_125th_cb10",
+            "block_id": "p006_c0008",
+            "source_quote": "Off-Board Fare Collection"
+          },
+          {
+            "source_id": "2013_03_13_sbs_125th_cb10",
+            "block_id": "p007_c0007",
+            "source_quote": "Pay at sidewalk Metrocard or coin machines before boarding the bus"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-tsp-125th",
+        "local_observation_id": "treatment_transit_signal_priority_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "treatment_transit-signal-priority-125th",
+            "description": "Transit Signal Priority on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_13_sbs_125th_cb10",
+                "block_id": "p006_c0011",
+                "source_quote": "Transit Signal Priority reduces time stopped at red lights"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source p006_c0011 explicitly states Transit Signal Priority is a proposed improvement on the M60 SBS corridor",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_13_sbs_125th_cb10",
+            "block_id": "p006_c0011",
+            "source_quote": "Transit Signal Priority reduces time stopped at red lights"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-limited-stops-125th",
+        "local_observation_id": "treatment_limited_stops_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "treatment_limited-stops-125th_2",
+            "description": "Limited Stops on 125th Street for M60 SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_13_sbs_125th_cb10",
+                "block_id": "p006_c0007",
+                "source_quote": "Limited Stops"
+              },
+              {
+                "source_id": "2013_03_13_sbs_125th_cb10",
+                "block_id": "p014_c0005",
+                "source_quote": "M60 SBS makes limited stops in Manhattan and Queens"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source p006_c0007 lists Limited Stops as a proposed M60 SBS improvement; p014_c0005 confirms M60 SBS makes limited stops in Manhattan and Queens",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_13_sbs_125th_cb10",
+            "block_id": "p006_c0007",
+            "source_quote": "Limited Stops"
+          },
+          {
+            "source_id": "2013_03_13_sbs_125th_cb10",
+            "block_id": "p014_c0005",
+            "source_quote": "M60 SBS makes limited stops in Manhattan and Queens"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-left-turn-restrictions-125th",
+        "local_observation_id": "treatment_left_turn_restrictions_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "treatment_left-turn-restrictions-125th",
+            "description": "Left Turn Restrictions on 125th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_13_sbs_125th_cb10",
+                "block_id": "p018_c0005",
+                "source_quote": "Left Turn Restrictions reduce conflicts and increase signal time for through traffic"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source p018_c0005 explicitly states left turn restrictions are proposed on 125th Street to reduce conflicts and increase signal time for through traffic",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_13_sbs_125th_cb10",
+            "block_id": "p018_c0005",
+            "source_quote": "Left Turn Restrictions reduce conflicts and increase signal time for through traffic"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-right-turn-bays-125th",
+        "local_observation_id": "treatment_right_turn_bays_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "treatment_right-turn-bays-125th",
+            "description": "Right-Turn Bays on 125th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_13_sbs_125th_cb10",
+                "block_id": "p019_c0009",
+                "source_quote": "Right-turn bays reduce blockages at intersections"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source p019_c0009 explicitly states right-turn bays are proposed on 125th Street to reduce blockages",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_13_sbs_125th_cb10",
+            "block_id": "p019_c0009",
+            "source_quote": "Right-turn bays reduce blockages at intersections"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-pedestrian-safety-125th",
+        "local_observation_id": "treatment_pedestrian_safety_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "treatment_pedestrian-safety-125th",
+            "description": "Pedestrian Safety Improvements at key intersections on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_13_sbs_125th_cb10",
+                "block_id": "p006_c0012",
+                "source_quote": "Pedestrian Safety Improvements at key intersections"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source p006_c0012 explicitly lists Pedestrian Safety Improvements at key intersections as a proposed M60 SBS improvement on 125th Street",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_13_sbs_125th_cb10",
+            "block_id": "p006_c0012",
+            "source_quote": "Pedestrian Safety Improvements at key intersections"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-curb-regulations-125th",
+        "local_observation_id": "treatment_curb_regulations_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "treatment_curb-regulations-125th",
+            "description": "Updated Curb Regulations on 125th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_13_sbs_125th_cb10",
+                "block_id": "p006_c0010",
+                "source_quote": "Updated curb regulations reduce double parking, and make deliveries easier"
+              },
+              {
+                "source_id": "2013_03_13_sbs_125th_cb10",
+                "block_id": "p019_c0010",
+                "source_quote": "Updated Curb Regulations reduce double parking"
+              }
+            ]
+          }
+        ],
+        "rationale": "Sources p006_c0010 and p019_c0010 both explicitly describe updated curb regulations as part of the proposed 125th Street design",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_13_sbs_125th_cb10",
+            "block_id": "p006_c0010",
+            "source_quote": "Updated curb regulations reduce double parking, and make deliveries easier"
+          },
+          {
+            "source_id": "2013_03_13_sbs_125th_cb10",
+            "block_id": "p019_c0010",
+            "source_quote": "Updated Curb Regulations reduce double parking"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-29-07-361Z_2111393-91b2743f_canonicalize_2026-06-10t23-10-24-333z-1976810-1a314ef0-ingest-2013-03-13-sbs-125th-cb10-treatment-relations"
+}

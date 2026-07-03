@@ -1,0 +1,393 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-22-endpoint-shape-batch039-prep",
+  "created_at": "2026-06-22T23:36:01Z",
+  "author": "codex",
+  "batch": "batch039",
+  "bucket": {
+    "name": "implemented_by route->entity",
+    "source_triage_artifact": "data/review_notes/codex-relation-rule-or-data-next14-prep.json",
+    "original_relation_kind": "implemented_by",
+    "original_endpoint_shape": "route -> entity",
+    "prepared_original_count": 2,
+    "cleanup_direction": "data cleanup only; do not widen implemented_by beyond project -> entity",
+    "durable_mechanism_plan": {
+      "retire_originals_via": "data/submission-overrides/retired.json",
+      "append_replacements_via": "data/submissions/2026-06-23_codex_relation_cleanup_batch039.jsonl",
+      "mutation_status": "not_applied_by_this_prep",
+      "only_file_written_by_this_task": "data/review_notes/codex-relation-cleanup-batch039-prep.json"
+    }
+  },
+  "checkpoint_context": {
+    "reported_checkpoint": "Current state is after relation038 and identity070, with unexpected_relation_endpoint_shape at 36.",
+    "selected_bucket_from_next14": "implemented_by route->entity",
+    "next14_context_before_relation038": "next14 selected this bucket when the unexpected_relation_endpoint_shape backlog was 38 after relation037/identity069; relation038 then handled the tied part_of_program event->entity bucket.",
+    "current_selected_bucket_count": 2,
+    "expected_remaining_after_applying_prepared_decisions": 34,
+    "endpoint_shape_probe": {
+      "implemented_by route->entity": "Relation kind implemented_by expects project -> entity, got route -> entity.",
+      "implemented_by project->entity": "accepted by current endpoint-shape rules"
+    }
+  },
+  "exclusions_and_guards": {
+    "excluded_prior_relation_batches": [
+      "batch017",
+      "batch018",
+      "batch019",
+      "batch020",
+      "batch021",
+      "batch022",
+      "batch023",
+      "batch024",
+      "batch025",
+      "batch026",
+      "batch027",
+      "batch028",
+      "batch029",
+      "batch030",
+      "batch031",
+      "batch032",
+      "batch033",
+      "batch034",
+      "batch035",
+      "batch036",
+      "batch037",
+      "batch038"
+    ],
+    "missing_target_repairs_excluded": true,
+    "guarded_files_not_edited": [
+      "data/submission-overrides/retired.json",
+      "data/submissions/*.jsonl",
+      "LOG.md",
+      "manifest files",
+      "data/canonical/*",
+      "wiki/*",
+      "data/canonical.db"
+    ],
+    "original_submission_guard": {
+      "retired_hits_for_selected_originals": [],
+      "prior_relation_batch_prepared_hits_for_selected_originals": [],
+      "observed_mentions": [
+        {
+          "file": "data/review_notes/codex-relation-rule-or-data-next14-prep.json",
+          "note": "Selected bucket and representative-record mentions only; not an applied cleanup."
+        }
+      ]
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": [],
+      "canonical_record_collision_hits_for_new_batch039_locals": []
+    }
+  },
+  "local_validation": {
+    "clean": true,
+    "summary": {
+      "prepared_count": 2,
+      "retire_replace_count": 1,
+      "retire_only_count": 1,
+      "replacement_submission_count": 3,
+      "accepted_replacement_submission_count": 3,
+      "replacement_issue_count": 0,
+      "replacement_warning_count": 0,
+      "relation_endpoint_issue_count": 0,
+      "endpoint_shape_issue_count_after_replacement": 0,
+      "known_local_ids_confirmed_for_bx12_replacement": [
+        "entity_nyc_dot_fordham_rd_workshop",
+        "entity_mta_fordham_rd_workshop"
+      ],
+      "new_batch039_local_id_needed_before_relation_replacements": "project_batch039_bx12_sbs_launch"
+    },
+    "tooling": "createSubmissionEntry dry-runs for the Bx12 project target-record observation and two implemented_by project->entity relation replacements; relationEndpointIssues dry-run included accepted same-source local ids plus the new batch039 project local id."
+  },
+  "prepared": [
+    {
+      "action": "retire_only",
+      "retire": {
+        "submission_id": "sub_47edac229f4563f0",
+        "run_id": "2026-06-21T18-09-19-070Z_2907661-ebab3e7e_ingest_meeting-doc-179556",
+        "original_record_id": "relation_meeting-doc-179556-mnrr-implements-fare-increase",
+        "original_local_observation_id": "relation_meeting_doc_179556_mnrr_implements_fare_increase",
+        "malformed_shape": "implemented_by route -> entity",
+        "original_relation_kind": "implemented_by",
+        "original_subject_id": "route_meeting-doc-106021-new-haven-line",
+        "original_subject_kind": "route",
+        "original_subject_local_observation_id": "route_meeting_doc_179556_new_haven_line",
+        "original_subject_name": "New Haven Line",
+        "original_object_id": "entity_mta-metro-north-railroad",
+        "original_object_kind": "entity",
+        "original_object_local_observation_id": "entity_meeting_doc_179556_mta_metro_north",
+        "original_object_name": "MTA Metro-North Railroad",
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_47edac229f4563f0",
+          "reason": "Codex relation cleanup batch039 retires malformed implemented_by route -> entity relation relation_meeting-doc-179556-mnrr-implements-fare-increase. The source describes Metro-North implementing CTDOT fare increases, while same-source route timeline/event and fare-claim records already preserve the New Haven Line fare-increase context without using route as an implemented_by subject.",
+          "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch039",
+          "reviewed_at": "2026-06-22T23:36:01Z"
+        },
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_179556",
+            "evidence_id": "meeting_doc_179556#p001_c0009",
+            "source_path": "raw/sources/meeting_doc_179556/blocks.jsonl",
+            "page_number": 1,
+            "block_id": "p001_c0009",
+            "text_sha256": "sha256:f9f9dcaa551df048bc247f9af3285457328229c00d1d50d64ec9de6d80c41e90",
+            "text_source": "raw_text",
+            "source_quote": "Metro-North will also implement CTDOT's Connecticut Branch Line fare increases at the same times as the New Haven Main Line increases."
+          },
+          {
+            "source_id": "meeting_doc_179556",
+            "evidence_id": "meeting_doc_179556#p002_c0010",
+            "source_path": "raw/sources/meeting_doc_179556/blocks.jsonl",
+            "page_number": 2,
+            "block_id": "p002_c0010",
+            "text_sha256": "sha256:bdb8e08001cbbcb574e041a07d005f01203bee5606e70c7e65ecead163a26618",
+            "text_source": "raw_text",
+            "source_quote": "the MTA Board hereby approves implementation of the increases proposed by CTDOT"
+          }
+        ],
+        "replacement": null,
+        "retire_only_reason": "A validator-compatible replacement would be less precise or duplicative. Same-source accepted/canonical records already include the branch-line fare claim, the September 1, 2025 and July 1, 2026 fare-increase events, the July 30, 2025 MTA Board approval event, and valid route has_timeline_event relations for those events.",
+        "nearby_existing_records_preserving_context": [
+          "claim_meeting-doc-179556-branch-line-fares",
+          "event_meeting-doc-179556-fare-increase-sept-2025",
+          "event_meeting-doc-179556-fare-increase-july-2026",
+          "event_meeting-doc-179556-mta-board-approval",
+          "relation_meeting-doc-179556-fare-increase-sept-2025-timeline",
+          "relation_meeting-doc-179556-fare-increase-july-2026-timeline",
+          "relation_meeting-doc-179556-board-approval-timeline"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "action": "retire_and_replace",
+      "retire": {
+        "submission_id": "sub_710cc7d848b51680",
+        "run_id": "2026-06-19T18-37-05-825Z_357538-33ad0c9f_ingest_fordham-rd-major-deegan-expwy-boston-rd-jun2021",
+        "original_record_id": "relation_nyc-dot-mta-launched-bx12-sbs",
+        "original_local_observation_id": "relation_nyc_dot_mta_launched_bx12_sbs",
+        "malformed_shape": "implemented_by route -> entity",
+        "original_relation_kind": "implemented_by",
+        "original_subject_id": "route_bx12-plus",
+        "original_subject_kind": "route",
+        "original_subject_local_observation_id": "route_bx12_sbs_fordham_rd_workshop",
+        "original_subject_name": "BX12-SBS - ABLE route",
+        "original_object_id": "entity_nyc-dot",
+        "original_object_kind": "entity",
+        "original_object_local_observation_id": "entity_nyc_dot_fordham_rd_workshop",
+        "original_object_name": "NYC DOT",
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_710cc7d848b51680",
+          "reason": "Codex relation cleanup batch039 replaces malformed implemented_by route -> entity relation relation_nyc-dot-mta-launched-bx12-sbs with validator-compatible project -> entity implemented_by replacements for the Bx12 Select Bus Service launch context.",
+          "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch039",
+          "reviewed_at": "2026-06-22T23:36:01Z"
+        },
+        "source_evidence": [
+          {
+            "source_id": "fordham_rd_major_deegan_expwy_boston_rd_jun2021",
+            "evidence_id": "fordham_rd_major_deegan_expwy_boston_rd_jun2021#p029_c0002",
+            "source_path": "raw/sources/fordham_rd_major_deegan_expwy_boston_rd_jun2021/blocks.jsonl",
+            "page_number": 29,
+            "block_id": "p029_c0002",
+            "text_sha256": "sha256:f818d74675760441be41559f0802fb58fa0009ec824f14c0dbaee2096ef50ac5",
+            "text_source": "raw_text",
+            "source_quote": "In 2008, MTA and DOT launched the first Select Bus Service (SBS) route on the Bx12"
+          }
+        ],
+        "reason": "The source-backed fact is a launch/project implementation context, not a route being implemented by an agency. A project target-record observation plus project -> entity implemented_by relations preserve the launch sentence without widening the endpoint rule.",
+        "confidence": "high"
+      },
+      "replacement": {
+        "run_id": "2026-06-23_codex_relation_cleanup_batch039",
+        "journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch039.jsonl",
+        "replacement_entries": [
+          {
+            "role": "target-record project observation needed for relation endpoints",
+            "deterministic_submission_id": "sub_80400035f5d5f004",
+            "tool_args_sha256": "sha256:80400035f5d5f00409c3e7c4f27ad126fea0bc13831e3caa7a1a020cd4715855",
+            "tool_args": {
+              "source_id": "fordham_rd_major_deegan_expwy_boston_rd_jun2021",
+              "observation_kind": "project",
+              "local_observation_id": "project_batch039_bx12_sbs_launch",
+              "target_record_id": "project_fordham-road-sbs-2010-01-14",
+              "label": "Bx12 Select Bus Service launch",
+              "raw_text": "In 2008, MTA and DOT launched the first Select Bus Service (SBS) route on the Bx12",
+              "payload": {
+                "project_name": "Bx12 Select Bus Service launch",
+                "project_type": "Select Bus Service",
+                "status": "implemented",
+                "description": "MTA and DOT launched the first Select Bus Service route on the Bx12 in 2008.",
+                "document_time_status": "implemented",
+                "project_family": "sbs_or_brt"
+              },
+              "evidence_refs": [
+                {
+                  "source_id": "fordham_rd_major_deegan_expwy_boston_rd_jun2021",
+                  "evidence_id": "fordham_rd_major_deegan_expwy_boston_rd_jun2021#p029_c0002",
+                  "source_path": "raw/sources/fordham_rd_major_deegan_expwy_boston_rd_jun2021/blocks.jsonl",
+                  "page_number": 29,
+                  "block_id": "p029_c0002",
+                  "text_sha256": "sha256:f818d74675760441be41559f0802fb58fa0009ec824f14c0dbaee2096ef50ac5",
+                  "text_source": "raw_text",
+                  "source_quote": "In 2008, MTA and DOT launched the first Select Bus Service (SBS) route on the Bx12"
+                }
+              ]
+            },
+            "local_validation": {
+              "state": "accepted",
+              "issues": [],
+              "warnings": []
+            }
+          },
+          {
+            "role": "corrected relation replacement for original NYC DOT endpoint",
+            "deterministic_submission_id": "sub_9bdeb7d404af1abd",
+            "tool_args_sha256": "sha256:9bdeb7d404af1abd1874f4afc076160e3173e36abd41f9895d4bcc4366b45a75",
+            "proposed_relation_kind": "implemented_by",
+            "proposed_endpoint_shape": "project -> entity",
+            "tool_args": {
+              "source_id": "fordham_rd_major_deegan_expwy_boston_rd_jun2021",
+              "observation_kind": "relation",
+              "local_observation_id": "relation_batch039_bx12_sbs_launch_implemented_by_nyc_dot",
+              "label": "Bx12 SBS launch implemented by NYC DOT",
+              "raw_text": "In 2008, MTA and DOT launched the first Select Bus Service (SBS) route on the Bx12",
+              "payload": {
+                "relation_kind": "implemented_by",
+                "subject_local_observation_id": "project_batch039_bx12_sbs_launch",
+                "object_local_observation_id": "entity_nyc_dot_fordham_rd_workshop",
+                "description": "Replacement for malformed implemented_by route -> entity relation; the source states that MTA and DOT launched the first SBS route on the Bx12 in 2008.",
+                "relation_family": "agency_role"
+              },
+              "evidence_refs": [
+                {
+                  "source_id": "fordham_rd_major_deegan_expwy_boston_rd_jun2021",
+                  "evidence_id": "fordham_rd_major_deegan_expwy_boston_rd_jun2021#p029_c0002",
+                  "source_path": "raw/sources/fordham_rd_major_deegan_expwy_boston_rd_jun2021/blocks.jsonl",
+                  "page_number": 29,
+                  "block_id": "p029_c0002",
+                  "text_sha256": "sha256:f818d74675760441be41559f0802fb58fa0009ec824f14c0dbaee2096ef50ac5",
+                  "text_source": "raw_text",
+                  "source_quote": "In 2008, MTA and DOT launched the first Select Bus Service (SBS) route on the Bx12"
+                }
+              ]
+            },
+            "local_validation": {
+              "state": "accepted",
+              "issues": [],
+              "warnings": [],
+              "relationEndpointIssues": [],
+              "endpoint_shape_issue_after_replacement": null
+            }
+          },
+          {
+            "role": "companion relation preserving the MTA half of the same source sentence",
+            "deterministic_submission_id": "sub_834c90bbb1dc152a",
+            "tool_args_sha256": "sha256:834c90bbb1dc152a08bbbaee5472c7ca2dcefa30a9bc7e757e9363c0b12cd41b",
+            "proposed_relation_kind": "implemented_by",
+            "proposed_endpoint_shape": "project -> entity",
+            "tool_args": {
+              "source_id": "fordham_rd_major_deegan_expwy_boston_rd_jun2021",
+              "observation_kind": "relation",
+              "local_observation_id": "relation_batch039_bx12_sbs_launch_implemented_by_mta",
+              "label": "Bx12 SBS launch implemented by MTA",
+              "raw_text": "In 2008, MTA and DOT launched the first Select Bus Service (SBS) route on the Bx12",
+              "payload": {
+                "relation_kind": "implemented_by",
+                "subject_local_observation_id": "project_batch039_bx12_sbs_launch",
+                "object_local_observation_id": "entity_mta_fordham_rd_workshop",
+                "description": "Companion correction preserving the same source sentence that MTA and DOT launched the first SBS route on the Bx12 in 2008.",
+                "relation_family": "agency_role"
+              },
+              "evidence_refs": [
+                {
+                  "source_id": "fordham_rd_major_deegan_expwy_boston_rd_jun2021",
+                  "evidence_id": "fordham_rd_major_deegan_expwy_boston_rd_jun2021#p029_c0002",
+                  "source_path": "raw/sources/fordham_rd_major_deegan_expwy_boston_rd_jun2021/blocks.jsonl",
+                  "page_number": 29,
+                  "block_id": "p029_c0002",
+                  "text_sha256": "sha256:f818d74675760441be41559f0802fb58fa0009ec824f14c0dbaee2096ef50ac5",
+                  "text_source": "raw_text",
+                  "source_quote": "In 2008, MTA and DOT launched the first Select Bus Service (SBS) route on the Bx12"
+                }
+              ]
+            },
+            "local_validation": {
+              "state": "accepted",
+              "issues": [],
+              "warnings": [],
+              "relationEndpointIssues": [],
+              "endpoint_shape_issue_after_replacement": null
+            }
+          }
+        ],
+        "confidence": "high"
+      }
+    }
+  ],
+  "command_evidence": [
+    {
+      "command": "test ! -e data/review_notes/codex-relation-cleanup-batch039-prep.json && echo artifact_missing || echo artifact_exists",
+      "output": "artifact_missing"
+    },
+    {
+      "command": "sed -n '1,240p' data/review_notes/codex-relation-rule-or-data-next14-prep.json",
+      "output_excerpt": "next14 selected implemented_by route->entity as the next data-cleanup bucket and listed sub_47edac229f4563f0 plus sub_710cc7d848b51680."
+    },
+    {
+      "command": "sed -n '1,260p' data/review_notes/codex-relation-cleanup-batch038-prep.json",
+      "output_excerpt": "batch038 handled the tied part_of_program event->entity bucket; this prep therefore excludes relation batches017-038."
+    },
+    {
+      "command": "rg -n \"relation_meeting-doc-179556-mnrr-implements-fare-increase|relation_nyc-dot-mta-launched-bx12-sbs\" data/canonical/relations.jsonl data/submissions data/review_notes -S",
+      "output_excerpt": "Confirmed the two current canonical route->entity implemented_by records and their original submission ids."
+    },
+    {
+      "command": "sqlite3 -readonly data/canonical.db \"SELECT r.record_id, rel.relation_kind, rel.subject_id, rs.record_kind AS subject_kind, rel.object_id, ro.record_kind AS object_kind FROM relations rel JOIN records r ON r.record_id=rel.record_id LEFT JOIN records rs ON rs.record_id=rel.subject_id LEFT JOIN records ro ON ro.record_id=rel.object_id WHERE rel.record_id IN (...)\"",
+      "output_excerpt": "Both selected records are implemented_by with route subjects and entity objects."
+    },
+    {
+      "command": "jq -c 'select(.source_id==\"meeting_doc_179556\") | ...' data/canonical/{claims,events,projects,entities,routes,relations,metric_claims}.jsonl",
+      "output_excerpt": "Found same-source branch-line fare claim, fare-increase events, MTA Board approval event, and existing route has_timeline_event relations; supports retire-only for sub_47edac229f4563f0."
+    },
+    {
+      "command": "jq -c 'select(.tool_args.source_id==\"fordham_rd_major_deegan_expwy_boston_rd_jun2021\" and (...))' data/submissions/*.jsonl",
+      "output_excerpt": "Confirmed accepted same-source local ids entity_nyc_dot_fordham_rd_workshop and entity_mta_fordham_rd_workshop; the existing project_fordham_rd_bus_priority local id targets a different current Fordham Road Bus Priority project and is not the Bx12 SBS launch project."
+    },
+    {
+      "command": "rg -n '\"block_id\":\"p001_c0007\"|\"block_id\":\"p001_c0009\"|\"block_id\":\"p002_c0010\"|\"block_id\":\"p002_c0011\"' raw/sources/meeting_doc_179556/blocks.jsonl && rg -n '\"block_id\":\"p029_c0002\"' raw/sources/fordham_rd_major_deegan_expwy_boston_rd_jun2021/blocks.jsonl",
+      "output_excerpt": "Confirmed source evidence blocks for the fare-increase row and the Bx12 SBS launch row."
+    },
+    {
+      "command": "bun --eval '<createSubmissionEntry dry-run for Bx12 target-record project observation plus two implemented_by project->entity relation replacements>'",
+      "output_excerpt": "Generated sub_80400035f5d5f004, sub_9bdeb7d404af1abd, and sub_834c90bbb1dc152a; all accepted with zero issues and zero warnings. Shape probe rejected implemented_by route->entity and accepted implemented_by project->entity."
+    },
+    {
+      "command": "rg -n \"sub_80400035f5d5f004|sub_9bdeb7d404af1abd|sub_834c90bbb1dc152a|project_batch039_bx12_sbs_launch|relation_batch039_bx12_sbs_launch_implemented_by_nyc_dot|relation_batch039_bx12_sbs_launch_implemented_by_mta|sub_47edac229f4563f0|sub_710cc7d848b51680\" data/submissions data/review_notes data/submission-overrides/retired.json",
+      "output_excerpt": "Original submission ids appear only in existing submissions and next14; replacement submission ids/local ids have no existing hits."
+    },
+    {
+      "command": "git status --short data/review_notes/codex-relation-cleanup-batch039-prep.json data/submission-overrides/retired.json data/submissions data/canonical.db data/canonical/relations.jsonl LOG.md",
+      "output_excerpt": "Workspace already has unrelated dirty durable/generated files; this task did not edit them. The only intended new write is the batch039 prep artifact."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "output": "2026-06-22T23:36:01Z"
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "canonicalize",
+    "campaign dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "materialize",
+    "export-jsonl",
+    "full validate CLI",
+    "DB repair/publish",
+    "any command with --profile",
+    "any provider-backed command"
+  ],
+  "blockers": []
+}

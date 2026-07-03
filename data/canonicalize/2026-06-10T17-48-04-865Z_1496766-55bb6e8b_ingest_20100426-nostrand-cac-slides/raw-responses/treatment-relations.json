@@ -1,0 +1,211 @@
+{
+  "run_id": "2026-06-10T17-48-04-865Z_1496766-55bb6e8b_ingest_20100426-nostrand-cac-slides",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-10T19:29:07.286Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "rel-offset-bus-lanes-bulbs",
+        "local_observation_id": "treatment_offset_bus_lanes_bulbs_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs-cac-2010",
+            "object_id": "treatment_offset-bus-lanes-bulbs-2010",
+            "description": "Offset bus lanes with bus bulbs at stations for 5 miles, part of Nostrand/Rogers SBS project features",
+            "evidence_refs": [
+              {
+                "source_id": "20100426_nostrand_cac_slides",
+                "block_id": "p009_c0003",
+                "source_quote": "Offset bus lanes with bus bulbs at stations for 5 miles"
+              }
+            ]
+          }
+        ],
+        "rationale": "Treatment is listed as a Project Feature on page 9 of the Nostrand/Rogers SBS CAC Meeting 2 presentation, directly under the 'Project Features' heading.",
+        "evidence_refs": [
+          {
+            "source_id": "20100426_nostrand_cac_slides",
+            "block_id": "p009_c0003",
+            "source_quote": "Offset bus lanes with bus bulbs at stations for 5 miles"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-tsp-flatbush-sheepshead",
+        "local_observation_id": "treatment_tsp_flatbush_sheepshead_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs-cac-2010",
+            "object_id": "treatment_tsp-flatbush-sheepshead-2010",
+            "description": "Transit Signal Priority for 3.8 miles from Flatbush Avenue to Sheepshead Bay, part of Nostrand/Rogers SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20100426_nostrand_cac_slides",
+                "block_id": "p009_c0004",
+                "source_quote": "Transit Signal Priority for 3.8 miles from Flatbush Avenue to Sheepshead Bay"
+              }
+            ]
+          }
+        ],
+        "rationale": "Treatment is listed as a Project Feature on page 9 of the Nostrand/Rogers SBS CAC Meeting 2 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "20100426_nostrand_cac_slides",
+            "block_id": "p009_c0004",
+            "source_quote": "Transit Signal Priority for 3.8 miles from Flatbush Avenue to Sheepshead Bay"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-new-low-floor-buses",
+        "local_observation_id": "treatment_new_low_floor_buses_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs-cac-2010",
+            "object_id": "treatment_new-low-floor-buses-2010",
+            "description": "New low-floor buses for entire route, part of Nostrand/Rogers SBS project features",
+            "evidence_refs": [
+              {
+                "source_id": "20100426_nostrand_cac_slides",
+                "block_id": "p009_c0006",
+                "source_quote": "• New low-floor buses • Next generation fare collection • Branding of stations and buses"
+              }
+            ]
+          }
+        ],
+        "rationale": "Treatment is listed under 'For the Entire Route' bullet on page 9 of the Nostrand/Rogers SBS CAC Meeting 2 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "20100426_nostrand_cac_slides",
+            "block_id": "p009_c0006",
+            "source_quote": "• New low-floor buses • Next generation fare collection • Branding of stations and buses"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-next-gen-fare-collection",
+        "local_observation_id": "treatment_next_gen_fare_collection_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs-cac-2010",
+            "object_id": "treatment_next-gen-fare-collection-2010",
+            "description": "Next generation fare collection for entire route, part of Nostrand/Rogers SBS project features",
+            "evidence_refs": [
+              {
+                "source_id": "20100426_nostrand_cac_slides",
+                "block_id": "p009_c0006",
+                "source_quote": "• New low-floor buses • Next generation fare collection • Branding of stations and buses"
+              }
+            ]
+          }
+        ],
+        "rationale": "Treatment is listed under 'For the Entire Route' bullet on page 9 of the Nostrand/Rogers SBS CAC Meeting 2 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "20100426_nostrand_cac_slides",
+            "block_id": "p009_c0006",
+            "source_quote": "• New low-floor buses • Next generation fare collection • Branding of stations and buses"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-branding-stations-buses",
+        "local_observation_id": "treatment_branding_stations_buses_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs-cac-2010",
+            "object_id": "treatment_branding-stations-buses-2010",
+            "description": "Branding of stations and buses for entire route, part of Nostrand/Rogers SBS project features",
+            "evidence_refs": [
+              {
+                "source_id": "20100426_nostrand_cac_slides",
+                "block_id": "p009_c0006",
+                "source_quote": "• New low-floor buses • Next generation fare collection • Branding of stations and buses"
+              }
+            ]
+          }
+        ],
+        "rationale": "Treatment is listed under 'For the Entire Route' bullet on page 9 of the Nostrand/Rogers SBS CAC Meeting 2 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "20100426_nostrand_cac_slides",
+            "block_id": "p009_c0006",
+            "source_quote": "• New low-floor buses • Next generation fare collection • Branding of stations and buses"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-bulb-stations",
+        "local_observation_id": "treatment_bus_bulb_stations_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs-cac-2010",
+            "object_id": "treatment_bus-bulb-stations-2010",
+            "description": "Bus bulb stations between Lafayette or DeKalb Ave and Church Ave, part of Nostrand/Rogers SBS station design",
+            "evidence_refs": [
+              {
+                "source_id": "20100426_nostrand_cac_slides",
+                "block_id": "p017_c0003",
+                "source_quote": "Bus bulbs extend sidewalk out to the bus lane, at SBS stations between Lafayette or DeKalb Ave and Church Ave."
+              }
+            ]
+          }
+        ],
+        "rationale": "Treatment is described under 'Bus Bulb Stations' on page 17 of the Nostrand/Rogers SBS CAC Meeting 2 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "20100426_nostrand_cac_slides",
+            "block_id": "p017_c0003",
+            "source_quote": "Bus bulbs extend sidewalk out to the bus lane, at SBS stations between Lafayette or DeKalb Ave and Church Ave."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-curbside-stations",
+        "local_observation_id": "treatment_curbside_stations_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs-cac-2010",
+            "object_id": "treatment_curbside-stations-2010",
+            "description": "Curbside stations on existing sidewalk with bus shelters and ticket vending machines, part of Nostrand/Rogers SBS station design",
+            "evidence_refs": [
+              {
+                "source_id": "20100426_nostrand_cac_slides",
+                "block_id": "p017_c0005",
+                "source_quote": "These stations would be placed on the existing sidewalk, with no construction other than bus shelters and ticket vending machines."
+              }
+            ]
+          }
+        ],
+        "rationale": "Treatment is described under 'Curbside Stations' on page 17 of the Nostrand/Rogers SBS CAC Meeting 2 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "20100426_nostrand_cac_slides",
+            "block_id": "p017_c0005",
+            "source_quote": "These stations would be placed on the existing sidewalk, with no construction other than bus shelters and ticket vending machines."
+          }
+        ]
+      }
+    ],
+    "packet_id": "treatment-relations"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-28-05-017Z_1629944-c23035df_canonicalize_2026-06-10t17-48-04-865z-1496766-55bb6e8b-ingest-20100426-nostrand-cac-slides-treatment-relations"
+}

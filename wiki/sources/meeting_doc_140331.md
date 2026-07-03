@@ -1,0 +1,277 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-140331"
+record_kind: "source"
+display_name: "Financial Performance Report - May 2024"
+source_id: "meeting_doc_140331"
+source_ids:
+  - "meeting_doc_140331"
+local_observation_id: "source_meeting_doc_140331"
+local_observation_ids:
+  - "source_meeting_doc_140331"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T16:36:41.684Z"
+submission_ids:
+  - "sub_a8fec1f6882097c6"
+payload:
+  authority_tier: "board_material"
+  content_type: "financial report"
+  date_text: "May 20, 2024"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2024-05-20"
+    precision: "day"
+    raw_text: "May 20, 2024"
+  description: "MTA Finance Committee Financial Performance Report covering April 2024 monthly and year-to-date results with comparisons to the 2024 Adopted Budget"
+  published_date_normalized: "2024-05-20"
+  published_date_precision: "day"
+  publisher: "Metropolitan Transportation Authority (MTA)"
+  title: "Financial Performance Report"
+evidence_refs:
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_140331#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_140331"
+    source_path: "raw/sources/meeting_doc_140331/blocks.jsonl"
+    text_sha256: "sha256:c8c971562dffe2071e7a338c9067cc78daac2572b9ad7f25d717f87a54ce0565"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_140331#p001_c0003"
+    page_number: 1
+    source_id: "meeting_doc_140331"
+    source_path: "raw/sources/meeting_doc_140331/blocks.jsonl"
+    text_sha256: "sha256:f97a6497d8f6f3fbbcd4bee98a9a15528dad2bd9b52cbc06ae9177c8f0aabda8"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_140331#p001_c0004"
+    page_number: 1
+    source_id: "meeting_doc_140331"
+    source_path: "raw/sources/meeting_doc_140331/blocks.jsonl"
+    text_sha256: "sha256:904467e63391fc3f2a1c7220bb19f6e41233c8d52db69577b25d739f35faa497"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0001"
+    evidence_id: "meeting_doc_140331#p003_c0001"
+    page_number: 3
+    source_id: "meeting_doc_140331"
+    source_path: "raw/sources/meeting_doc_140331/blocks.jsonl"
+    text_sha256: "sha256:9b4c1992bb3433624407e1e7cd9181a5df86943904b787511e0850cdf1c43a5a"
+    text_source: "raw_text"
+---
+
+# Financial performance report
+
+source_id: meeting_doc_140331
+citation: cite block ids exactly as shown in square brackets
+document: 112 block(s)
+
+## Page 1
+
+> [p001_c0001] The logo for the Metropolitan Transportation Authority (MTA) is located in the top left corner. It consists of a blue circle containing the white letters "MTA" in a bold, sans-serif font. To the right of the circle, the words "Metropolitan Transportation Authority" are written in a blue, sans-serif font.
+[p001_c0002] MTA Finance Committee
+### [p001_c0003] Financial Performance Report
+[p001_c0004] May 20, 2024
+
+## Page 2
+
+### [p002_c0001] Table of Contents
+[p002_c0002] Finance Summary ..... 1 Summary of Financial Results ..... 1 Operating Revenue ..... 2 Farebox, Toll and Other Revenue ..... 2 MTA Farebox and Toll Revenue vs. McKinsey Projections ..... 3 MTA Paid Ridership vs. McKinsey Projections ..... 4 MTA Paid Ridership vs. McKinsey Projections ..... 5 MTA Paid Ridership vs. McKinsey Projections ..... 6 Total Subsidies ..... 7 Subsidies – Summary ..... 7 Consolidated Operating Subsidies ..... 8 Operating Expenses ..... 9 Capital Financing ..... 10 MTA Fixed Rate Bond & Note Tracker ..... 10 Statement of Operations ..... 11 Total Positions ..... 13 Total Positions by Agency ..... 13 Total Positions by Function and Agency ..... 14 Farebox Operating Ratios ..... 15
+
+## Page 3
+
+### [p003_c0001] Finance Summary
+### [p003_c0002] Summary of Financial Results, April 2024
+[p003_c0003]
+
+```text
+$ in millions Year-to-Date April 2024 April 2024 Adopted Budget Actual Variance % Diff Adopted Budget Actual Variance % Diff Operating Revenue $2,683.1 $2,692.7 $9.7 0.4% $715.3 $719.8 $4.5 0.6% Operating Subsidies * 2,193.5 2,082.3 (111.2) -5.1% 532.2 478.2 (54.1) -10.2% Operating Expenses 5,213.5 5,199.2 14.3 0.3% 1,293.3 1,304.5 (11.2) -0.9% Debt Service 988.6 987.0 1.6 0.2% 223.9 235.3 (11.3) -5.1% Surplus / (Deficit) ($1,325.6) ($1,411.1) ($85.6) -6.5% ($269.7) ($341.8) ($72.0) -26.7%
+```
+[p003_c0004] Net preliminary operating results for YTD April were unfavorable to the Adopted Budget by $86 million (7%), while results for the month of April were unfavorable by $72 million (27%). Subsidy shortfalls and lower farebox revenue were partially offset by favorable tolls, other revenues, debt service, investment income, and operating expenses. However, reported operating expenses were significantly impacted by a positive accounting adjustment of $43 million in March that reverses accruals of 2023 Headquarters expenses. Excluding this adjustment, unfavorable net preliminary operating results would have been worse: the YTD April deficit would have been $128 million.
+[p003_c0005] Overall Latest Condition (compared with the Adopted Budget):
+[p003_c0006] - Operating revenue for YTD April was $10 million (0.4%) favorable, comprised of higher toll revenue of $38 million (5%) and favorable other operating revenues of $29 million (10%), mostly offset by lower net passenger revenues of $57 million (4%). Operating revenue for the month of April was $5 million (1%) favorable, comprised of favorable toll revenue of $13 million (7%) and higher other operating revenues of $11 million (14%), mostly offset by lower passenger revenues of $20 million (5%).
+[p003_c0007] - Operating Subsidies, which also reflects Investment Income, was unfavorable for YTD April by $111 million (5%). Excluding Investment Income, subsidies directed to the operating budget were unfavorable by $129 million (6%). This primarily reflected unfavorable Mortgage Recording Tax (MRT) of $51 million (34%), Urban Tax of $49 million (29%), Payroll Mobility Tax (PMT) of $47 million (5%), MTA Aid of $13 million (18%), Automated Camera Enforcement of $8 million (72%), and For-Hire Vehicle Surcharge of $8 million (6%). These results were partially offset by favorable Petroleum Business Tax (PBT) of $39 million (19%), which was primarily due to December 2023 receipts not transferred to the MTA until early January. Favorable results were also realized for CDOT Subsidy of $5 million (5%) and Local Operating Assistance of $3 million (45%). Subsidies directed to the operating budget for April primarily reflect unfavorable PMT of $27 million (10%), Urban Tax of $16 million (36%), Automated Camera Enforcement of $11 million (<100%), MRT of $11 million (29%), partially offset by favorable Local Operating Assistance of $4 million (>100%), PBT of $2 million (2%), and CDOT of $1 million (5%).
+[p003_c0008] - Operating expenses for YTD April were $14 million (less than 1%) favorable; however, as noted above, an accounting adjustment skews these results. Without the benefit of this adjustment, YTD April operating expenses were $28 million (0.5%) unfavorable. Labor expenses were $36 million (1%) unfavorable, non-labor expenses were $77 million (6%) favorable, and other expense adjustments were $27 million unfavorable. The non-labor expense favorable result, when adjusted for the accounting adjustment, is lower by $43 million to a favorable result of $34 million (2%). Within labor expenses, overtime YTD spending was $127 million (48%) unfavorable, partially offset by favorable payroll of $78 million (4%). YTD overtime primarily reflected coverage requirements due to availability, weather-related events, programmatic/routine maintenance at NYCT, the LIRR and MNR. For April, operating expenses were $11 million (1%) unfavorable; adjusting for the accounting adjustment, the unfavorable operating expense variance would have been increased to $54 million (4%). Overtime spending in April was $26 million (40%) unfavorable, mostly offset by favorable payroll of $24 million (5%) and was primarily due to availability requirements at NYCT and MNR.
+[p003_c0009] - Debt Service expenses for YTD April were $2 million (less than 1%) favorable. Debt Service for April was unfavorable by $11 million (5%), both primarily due to the timing of debt service accruals.
+[p003_c0010] _* Also captures Investment Income._
+[p003_c0011] _1_
+
+## Page 4
+
+### [p004_c0001] Operating Revenue
+### [p004_c0002] Farebox, Toll and Other Revenue
+[p004_c0003] Revenue generated from subway, bus, and commuter rail fares and bridges and tunnels tolls. Other revenue includes but is not limited to fare and paratransit reimbursements, as well as advertising, rental, and parking revenue. This report represents revenues received on an accrual basis.
+[p004_c0004]
+
+```text
+$ in millions Year-to-Date April 2024 April 2024 Adopted Budget Actual Variance % Diff Adopted Budget Actual Variance % Diff Farebox Revenue $1,611.4 $1,554.9 ($56.5) -3.5% $427.2 $407.2 ($20.0) -4.7% NYCT 1,173.7 1,110.4 (63.3) -5.4% 313.0 290.6 (22.4) -7.2% Subway 919.8 899.5 (20.3) -2.2% 245.1 236.3 (8.8) -3.6% Bus 240.3 197.6 (42.7) -17.8% 64.4 50.8 (13.6) -21.1% Other 13.5 13.2 (0.3) -2.4% 3.4 3.4 (0.0) -0.2% Staten Island Railway 1.4 1.2 (0.2) -13.3% 0.3 0.3 0.0 2.2% MTA Bus 63.0 58.3 (4.7) -7.4% 15.8 14.8 (1.0) -6.2% LIRR 197.4 194.8 (2.6) -1.3% 51.3 50.9 (0.4) -0.8% Metro-North 176.0 190.2 14.2 8.1% 46.8 50.6 3.8 8.1% Toll Revenue $770.2 $808.0 $37.7 4.9% $205.3 $218.8 $13.4 6.5% Other Revenue $301.4 $329.9 $28.5 9.5% $82.7 $93.9 $11.2 13.5% Total $2,683.1 $2,692.7 $9.7 0.4% $715.3 $719.8 $4.5 0.6%
+```
+[p004_c0005] Passenger revenues were unfavorable by $57 million (4%) for YTD April and by $20 million (5%) in April. The unfavorable variances primarily reflected unfavorable paid ridership for NYCT Bus, NYCT Subway, MTA Bus (which was also adversely impacted by lower average yield), and Staten Island Railway. LIRR was unfavorable due to lower average yield, although ridership was favorable, and MNR was favorable due to better than anticipated ridership.
+[p004_c0006] Toll revenue was favorable for YTD April and for April, reflecting both better than anticipated traffic volume and higher average toll revenue.
+[p004_c0007] The 2024 Adopted Budget is based on the midpoint between the McKinsey-prepared “high case” and “low case” scenarios. In April, recovery of passenger revenues, when compared with April 2019, were above the midpoint, 74.2% vs. 71.7%.
+[p004_c0008] Passenger revenues remain significantly below pre-pandemic levels: April YTD passenger revenues were down $539 million (28%) compared with YTD April 2019. Toll revenue was higher by $52 million (8%). These changes from 2019 are adjusted to account for rate changes in fares and tolls during this period.
+[p004_c0009] _2_
+
+## Page 5
+
+### [p005_c0001] MTA Farebox and Toll Revenue vs. McKinsey Projections
+[p005_c0002] MTA farebox and toll revenue as a percentage of pre-COVID levels versus McKinsey & Co. projections of post-COVID revenue.
+[p005_c0003] _NYCT and Commuter Rail Farebox Revenue (as a percentage of 2019)_
+> [p005_c0004] This line chart tracks farebox revenue as a percentage of 2019 levels. The y-axis ranges from 50% to 100% in 10% increments. The x-axis shows time from Jan-23 to Jul-24. A blue line represents 'Actual Results', which fluctuates between approximately 68% and 74%. A green line represents the 'Midpoint Forecast', which shows a steady upward trend from about 63% in Jan-23 to 75% in Jul-24. A light green shaded area around the green line indicates the forecast's confidence interval. A callout box points to the end of the blue line, stating 'Apr-24, 74.2%'. Month Actual Results (%) Midpoint Forecast (%) Jan-23 68.5 63.0 Jul-23 69.0 68.0 Jan-24 71.0 71.0 Jul-24 74.2 75.0
+[p005_c0005] _Bridges and Tunnels Toll Revenue (as a percentage of 2019)_
+> [p005_c0006] This line chart tracks toll revenue as a percentage of 2019 levels. The y-axis ranges from 80% to 120% in 10% increments. The x-axis shows time from Jan-23 to Jul-24. A blue line represents 'Actual Results', which fluctuates significantly, starting near 108% in Jan-23, dipping to 100% in late 2023, and peaking at 111.3% in April 2024. A horizontal green line at the 100% mark represents the '2019' baseline. Month Actual Results (%) 2019 Baseline (%) Jan-23 108.0 100.0 Jul-23 109.0 100.0 Jan-24 107.0 100.0 Apr-24 111.3 100.0
+[p005_c0007] Excludes the impact of fare and toll increases
+[p005_c0008] _3_
+
+## Page 6
+
+### [p006_c0001] MTA Paid Ridership vs. McKinsey Projections
+[p006_c0002] MTA paid ridership as a percentage of pre-COVID levels versus McKinsey & Co. projections of post-COVID ridership.
+[p006_c0003] _NYCT and Commuter Rail Paid Ridership (as a percentage of 2019)_
+> [p006_c0004] This chart displays the percentage of pre-COVID ridership for NYCT and Commuter Rail from January 2023 to July 2024. The y-axis ranges from 50% to 100% in 10% increments. The x-axis shows time in months. A blue line represents 'Actual Results', which shows significant volatility, starting around 63% in Jan-23, peaking near 68% in Jul-23, and ending at 66.1% in Apr-24. A green line represents the 'Midpoint Forecast', which shows a steady upward trend from approximately 64% in Jan-23 to 76% in Jul-24. A light green shaded area around the green line indicates the forecast's confidence interval. A callout box points to the final data point of the blue line, stating 'Apr-24, 66.1%'. Month Actual Results (%) Midpoint Forecast (%) Jan-23 63.0 64.0 Jul-23 68.0 69.0 Jan-24 66.0 71.0 Jul-24 66.1 76.0
+[p006_c0005] _NYCT Subway Paid Ridership (as a percentage of 2019)_
+> [p006_c0006] This chart displays the percentage of pre-COVID ridership for NYCT Subway from January 2023 to July 2024. The y-axis ranges from 50% to 100% in 10% increments. The x-axis shows time in months. A blue line represents 'Actual Results', which shows volatility, starting around 66% in Jan-23, peaking near 71% in Jul-23, and ending at 68.4% in Apr-24. A green line represents the 'Midpoint Forecast', which shows a steady upward trend from approximately 64% in Jan-23 to 76% in Jul-24. A light green shaded area around the green line indicates the forecast's confidence interval. A callout box points to the final data point of the blue line, stating 'Apr-24, 68.4%'. Month Actual Results (%) Midpoint Forecast (%) Jan-23 66.0 64.0 Jul-23 69.0 68.0 Jan-24 68.0 71.0 Jul-24 68.4 76.0
+[p006_c0007] _4_
+
+## Page 7
+
+### [p007_c0001] MTA Paid Ridership vs. McKinsey Projections
+[p007_c0002] MTA subway and bus ridership as a percentage of pre-COVID levels versus McKinsey & Co. projections of post-COVID ridership.
+> [p007_c0003] NYCT Bus Paid Ridership (as a percentage of 2019) This chart displays the percentage of pre-COVID ridership for NYCT Bus from January 2023 to July 2024. The y-axis ranges from 50% to 100% in 10% increments. The x-axis shows time in approximately three-month intervals. A blue line represents the actual results, which fluctuate between 55.7% and 66.5%. A green line represents the midpoint forecast, which shows a steady upward trend from 67% to 78.5%. A light green shaded area around the green line indicates the forecast's confidence interval. Date Actual Results (%) Midpoint Forecast (%) Jan-23 63.5 67.0 Apr-23 66.5 70.0 Jul-23 60.0 72.5 Oct-23 58.0 73.5 Jan-24 56.0 74.0 Apr-24 55.7 76.0 Jul-24 - 78.5
+> [p007_c0004] Commuter Rail Paid Ridership (as a percentage of 2019) This chart displays the percentage of pre-COVID ridership for Commuter Rail from January 2023 to July 2024. The y-axis ranges from 50% to 100% in 10% increments. The x-axis shows time in approximately three-month intervals. A blue line represents the actual results, which fluctuate between 62.5% and 79.5%. A green line represents the midpoint forecast, which shows a steady upward trend from 60.5% to 71.5%. A light green shaded area around the green line indicates the forecast's confidence interval. Date Actual Results (%) Midpoint Forecast (%) Jan-23 62.5 60.5 Apr-23 66.5 63.5 Jul-23 67.5 64.5 Oct-23 72.5 66.5 Jan-24 74.5 69.0 Apr-24 77.0 69.5 Jul-24 - 71.5
+[p007_c0005] _5_
+
+## Page 8
+
+### [p008_c0001] MTA Paid Traffic vs. McKinsey Projections
+[p008_c0002] MTA paid traffic as a percentage of pre-COVID levels versus McKinsey & Co. projections of post-COVID traffic.
+> [p008_c0003] Bridges and Tunnels Paid Traffic (as a percentage of 2019) The chart displays the percentage of Bridges and Tunnels Paid Traffic relative to 2019 levels. The y-axis ranges from 80% to 120% in 10% increments. The x-axis shows time from Jan-23 to Jul-24. A horizontal green line at 100% represents the 2019 baseline. A blue line represents 'Actual Results'. The blue line starts at approximately 103% in Jan-23, fluctuates, and ends at 100.6% in Apr-24. A callout box points to the end of the blue line with the text 'Apr-24, 100.6%'. Date Actual Results (%) 2019 Baseline (%) Jan-23 103.0 100.0 Feb-23 102.0 100.0 Mar-23 102.0 100.0 Apr-23 100.0 100.0 May-23 102.0 100.0 Jun-23 102.0 100.0 Jul-23 101.5 100.0 Aug-23 100.0 100.0 Sep-23 103.0 100.0 Oct-23 103.0 100.0 Nov-23 103.0 100.0 Dec-23 101.5 100.0 Jan-24 106.0 100.0 Feb-24 103.0 100.0 Mar-24 101.0 100.0 Apr-24 100.6 100.0
+[p008_c0004] _6_
+
+## Page 9
+
+### [p009_c0001] Total Subsidies
+### [p009_c0002] Subsidies - Summary
+[p009_c0003] Dedicated taxes and subsidies received from the State of New York, businesses, individuals and localities in the MTA region.
+[p009_c0004]
+
+```text
+$ in millions Year-to-Date April 2024 April 2024 Adopted Budget Actual Variance % Diff Adopted Budget Actual Variance % Diff Operating Subsidies $2,173.0 $2,044.3 ($128.7) -5.9% $527.1 $469.0 ($58.1) -11.0% B&T Surplus Transfer 371.0 502.5 131.5 35.5% 93.7 97.3 3.6 3.9% Investment Income 20.5 38.0 17.5 85.6% 5.1 9.1 4.0 78.5% Sub-Total $2,564.5 $2,584.9 $20.4 0.8% $625.9 $575.5 ($50.4) -8.1% Capital Subsidies $217.0 $195.6 ($21.5) -9.9% $54.5 $31.5 ($22.9) -42.1% Gross Subsidies $2,523.5 $2,508.8 ($14.7) -0.6% $615.7 $557.2 ($58.5) -9.5%
+```
+[p009_c0005] Operating Subsidies for YTD April primarily reflected unfavorable receipts for Mortgage Recording Tax (MRT) of $51 million, Urban Tax of $49 million, Payroll Mobility Tax (PMT) of $47 million, MTA Aid of $13 million, Automated Camera Enforcement of $8 million, and For-Hire Vehicle Surcharge of $8 million. Partially offsetting these results was favorable Petroleum Business Tax (PBT) of $39 million, which was primarily due to $36 million of December 2023 receipts not transferred to the MTA until early January. Favorable results were also realized for CDOT Subsidy of $5 million and Local Operating Assistance of $3 million.
+[p009_c0006] The YTD B&T Surplus Transfer favorable variance of $132 million was primarily due to better-than-expected 2023 B&T net income of $97 million transferred in early 2024, with the remaining $35 million variance reflecting favorable 2024 results from higher revenues and lower expenses. Investment Income was favorable by $18 million.
+[p009_c0007] YTD total resources funding the operating budget, which include Operating Subsidies, B&T Surplus Transfer, and Investment Income, were favorable by $20 million.
+[p009_c0008] April Operating Subsidies primarily reflect unfavorable PMT of $27 million, Urban Tax of $16 million, Automated Camera Enforcement of $11 million, and MRT of $11 million, partially offset by favorable, Local Operating Assistance of $4 million due to timing, PBT of $2 million, and CDOT of $1 million.
+[p009_c0009] April B&T Surplus Transfer was favorable by $4 million. Investment Income was favorable by $4 million.
+[p009_c0010] April total resources funding the operating budget, which include Operating Subsidies, B&T Surplus Transfer, and Investment Income, were unfavorable by $50 million.
+[p009_c0011] Capital Subsidies for April YTD were unfavorable by $22 million and $23 million unfavorable for the month of April, reflecting lower-than-expected cash receipts for the Real Property Transfer Tax Surcharge and timing of the transfer of receipts from the State component of the Internet Marketplace Tax. The City component of the Internet Marketplace Tax was on target with the Adopted Budget for YTD and the month of April.
+[p009_c0012] _7_
+
+## Page 10
+
+### [p010_c0001] Consolidated Operating Subsidies
+[p010_c0002] Detailed breakout of the dedicated taxes and subsidies received from the State of New York and businesses, individuals and localities in the MTA region. This is a cash basis record that represents funding received by the MTA.
+[p010_c0003]
+
+```text
+$ in millions Year-to-Date April 2024 April 2024 Adopted Budget Actual Variance % Diff Adopted Budget Actual Variance % Diff Operating Subsidies $2,173.0 $2,044.3 ($128.7) -5.9% $527.1 $469.0 ($58.1) -11.0% Metropolitan Mass Transportation Operating Assistance (MMTOA) 0.0 0.0 0.0 N/A 0.0 0.0 0.0 N/A Petroleum Business Tax (PBT) 208.6 248.0 39.3 18.8% 70.6 72.1 1.5 2.1% Mortgage Recording Tax (MRT) 151.8 100.8 (51.0) -33.6% 37.9 26.9 (11.1) -29.2% MRT Adjustments 0.0 0.0 0.0 N/A 0.0 0.0 0.0 N/A Urban Taxes 170.6 121.8 (48.8) -28.6% 42.7 27.2 (15.5) -36.3% Payroll Mobility Tax (PMT) 1,014.4 967.2 (47.2) -4.7% 269.4 242.3 (27.1) -10.1% PMT Replacement Funds 0.0 0.0 0.0 N/A 0.0 0.0 0.0 N/A MTA Aid 70.7 57.8 (13.0) -18.3% 0.0 0.0 0.0 N/A For-Hire Vehicle (FHV) Surcharge 125.0 117.2 (7.8) -6.2% 31.2 31.5 0.3 1.0% Automated Camera Enforcement (ACE) 11.3 3.2 (8.1) -71.6% 11.3 0.0 (11.3) -100.0% Peer-to-Peer Car Sharing Trip Tax 0.1 0.6 0.5 N/A 0.0 0.2 0.2 N/A State Operating Assistance 0.0 0.0 0.0 N/A 0.0 0.0 0.0 N/A Local Operating Assistance 7.3 10.6 3.3 44.9% 0.0 3.8 3.8 N/A Station Maintenance 0.0 0.0 0.0 N/A 0.0 0.0 0.0 N/A State General Fund Subsidy 150.0 150.0 0.0 0.0% 0.0 0.0 0.0 N/A City Subsidy for MTA Bus Company 172.4 172.0 (0.4) -0.3% 43.0 43.0 0.0 0.0% City Subsidy for Staten Island Railway 0.0 0.0 0.0 N/A 0.0 0.0 0.0 N/A CDOT Subsidy for Metro-North Railroad 90.7 95.2 4.6 5.0% 20.9 21.9 1.0 5.0% Capital Subsidies $0.0 $0.0 $0.0 N/A $0.0 $0.0 $0.0 N/A Central Business District Tolling 0.0 0.0 0.0 N/A 0.0 0.0 0.0 N/A Real Property Transfer Tax Surcharge 106.9 98.4 (8.5) -7.9% 26.7 16.8 (9.9) -37.2% Internet Marketplace Tax - State 51.6 38.6 (13.0) -25.2% 13.0 0.0 (13.0) -100.0% Internet Marketplace Tax - City 58.5 58.5 (0.0) 0.0% 14.7 14.7 0.0 0.0% Less: Debt Service on Lockbox Bonds (69.0) (68.0) 1.0 -1.5% (17.3) (19.7) (2.5) N/A Less: Lockbox Allocated to PAYGO (148.0) (127.6) 20.4 -13.8% (37.2) (11.8) 25.4 -68.3% Additional Income, Adj. and Transfers $391.5 $540.5 $149.1 38.1% $98.8 $106.5 $7.7 7.8% Investment Income 20.5 38.0 17.5 85.6% 5.1 9.1 4.0 78.5% Subsidy Adjustments 0.0 0.0 0.0 N/A 0.0 0.0 0.0 N/A B&T Operating Surplus Transfer 371.0 502.5 131.5 35.5% 93.7 97.3 3.6 3.9% Total $2,564.5 $2,584.9 $20.4 0.8% $625.9 $575.5 ($50.4) -8.1%
+```
+[p010_c0004] _8_
+
+## Page 11
+
+### [p011_c0001] Operating Expenses
+[p011_c0002] Labor expenses and non-labor expenses rolled up by agency. For a breakdown of Operating Expenses by expense category, see the Statement of Operations. This report represents expenses on an accrual basis.
+[p011_c0003]
+
+```text
+$ in millions Year-to-Date April 2024 April 2024 Adopted Budget Actual Variance % Diff Adopted Budget Actual Variance % Diff NYCT Subway & Bus $3,187.0 $3,272.3 ($85.3) -2.7% $798.4 $816.2 ($17.8) -2.2% Staten Island Railway 25.7 24.3 1.4 5.6% 6.4 6.4 (0.1) -1.0% MTA Bus 321.9 286.0 35.9 11.2% 80.0 71.5 8.5 10.7% Commuter Railroads Long Island Rail Road $639.9 $626.2 $13.7 2.1% $153.8 $154.9 ($1.2) -0.8% Metro-North Railroad 502.3 537.4 (35.1) -7.0% 123.2 132.1 (8.9) -7.3% GCMOC 33.4 30.5 2.9 8.7% 8.4 7.7 0.8 9.3% Bridges & Tunnels $158.3 $145.5 $12.8 8.1% $37.8 $27.3 $10.6 27.9% Headquarters $345.8 $263.1 $82.8 23.9% $86.1 $74.4 $11.7 13.6% Construction & Development 4.4 3.2 1.3 N/A 1.1 2.1 (1.0) N/A FMTAC (7.5) 10.3 (17.7) N/A (1.9) 12.0 (13.9) N/A Other Expense Adjustments $2.2 $0.6 $1.6 74.2% $0.1 $0.0 $0.1 70.7% Total $5,213.5 $5,199.2 $14.3 0.3% $1,293.3 $1,304.5 ($11.2) -0.9%
+```
+[p011_c0004] Year-to-date expenses were favorable by $14 million (less than 1%) and April expenses were $11 million (1%) unfavorable. However, this result is significantly impacted by an accounting adjustment of $43 million in March that reverses accruals of 2023 Headquarters non-labor expenses, primarily in the IT and Real Estate departments. Adjusting for this impact, YTD April operating expenses would be unfavorable by $28 million (1%).
+[p011_c0005] Year-to-date, underruns were at all agencies except for NYCT, MNR and FMTAC, and mostly due to timing. The unfavorable variance at NYCT was primarily due to overtime for availability requirements, an obsolete materials inventory write-off, and other business expenses. Paratransit expenses, which are mostly reimbursed by New York City, were also unfavorable due to greater than forecast trip volume and support costs, and the timing of paratransit fleet purchases. Partially offsetting these unfavorable expenses were favorable payroll, electric power, and fuel. MNR's unfavorable variance was primarily due to increased payroll mainly in connection with lower reimbursable activities, hiring for critical operations, overtime, a higher employee claim provision, and higher subsidy payments for West of Hudson service, partially offset favorable electric power. FMTAC's unfavorable variance was due to a negative shift in the market value of the invested asset portfolio and the timing of policy renewals, partially offset by favorable claims.
+[p011_c0006] In April, NYCT, MNR, and FMTAC reported expense overruns primarily for the reasons mentioned above. Unfavorable results at the LIRR were primarily due to overruns in overtime and other fringe benefits. Favorable results for HQ reflect timing and maintenance & other operating contracts. Vacancies and timing contributed to favorable results at B&T. MTA Bus expenses were favorable due to lower overtime and timing. expenses were unfavorable due to timing.
+[p011_c0007] _GCMOC - Grand Central Madison Operating Company FMTAC - First Mutual Transportation Assurance Corporation_
+[p011_c0008] _9_
+
+## Page 12
+
+### [p012_c0001] Capital Financing
+### [p012_c0002] MTA Fixed Rate Bond & Note Tracker
+[p012_c0003] Tracks MTA Fixed Rate Bonds and Notes against the 30-year Municipal Market Data (MMD) Index, which is the average yield on municipal bonds with 30-year maturities that have an average rating equivalent to Aaa for Moody's and AAA for S&P.
+> [p012_c0004] MTA Fixed Rate Bond & Note Tracker MTA Fixed Rate Bond & Note Tracker Data Points Date Transaction Yield to Call Avg. Life 5/4/2023 PMT 2023B 2.867% 7.84 Yrs. 7/4/2023 TBTA 2023B 3.833% 18.82 Yrs. 9/4/2023 PMT 2023C 4.166% 14.93 Yrs. 10/4/2023 MTA PMT BANs 2024A (Federally Taxable) 5.306% 0.75 Yrs. 11/4/2023 Sales Tax 2024A 3.903% 31.45 Yrs. 1/4/2024 PMT 2024A 3.521% 22.45 Yrs. 2/4/2024 TRB 2024A 3.850% 18.66 Yrs. 3/4/2024 TBTA PMT BANs 2024B 2.711% 2.99 Yrs. 5/4/2024 PMT 2024B 3.883% 23.31 Yrs. 6/4/2024 Index 3.93% -
+### [p012_c0005] Recent Transaction
+### [p012_c0006] $591,785,000 Triborough Bridge and Tunnel Authority Payroll Mobility Tax Senior Lien Green Bonds, Series 2024B (Climate Bond Certified)
+[p012_c0007] On May 8, 2024, MTA priced $591.785 million of Triborough Bridge and Tunnel Authority Payroll Mobility Tax Senior Lien Green Bonds, Series 2024B. Proceeds from the transaction are being used to retire $525.685 million of TBTA Payroll Mobility Tax Bond Anticipation Notes, Series 2022A and refund $115.000 million of certain Transportation Revenue Bonds. This transaction is closing on May 20, 2024.
+[p012_c0008] This transaction was led by book-running senior manager BofA Securities together with special co-senior managers: Blaylock Van, LLC(MBE); Mischler Financial Group, Inc.(SDVOB); and Stern Brothers & Co.(WBE). Orrick, Herrington & Sutcliffe LLP and Bryant Rabbino LLP(MBE) served as co-bond counsel, and Public Resources Advisory Group and Backstrom McCarley Berry & Co., LLC(MBE) served as co-financial advisors.
+[p012_c0009]
+
+```text
+PMT 2024B Par Amount $591.785 million Rate/Mode/Tax Exemption Fixed/Tax-Exempt All-in TIC 4.49% Average Life 23.31 years Final Maturity 5/15/2054 State Bond Issuance Fee (1) $0 Underwriter's Discount (2) $2,473,203/ $4.18 per bond Cost of Issuance (2) $972,597/ $1.64 per bond Ratings (S&P/Fitch/Kroll) AA+/AA+/AA+
+```
+[p012_c0010] _(1) MTA received a waiver from making this payment from the State Division of the Budget for this transaction._
+[p012_c0011] _(2) Underwriter's Discount is comprised of underwriter's compensation and reimbursement of expenses. Cost of Issuance includes legal, advisory and rating agencies fees._
+[p012_c0012] _10_
+
+## Page 13
+
+### [p013_c0001] METROPOLITAN TRANSPORTATION AUTHORITY February Financial Plan - 2024 Adopted Budget Accrual Statement of Operations by Category April 2024 Monthly ($ in millions)
+[p013_c0002]
+
+```text
+Non-Reimburseable Reimburseable Total Adopted Budget Actual Variance: Fav/(Unfav) Dollars Adopted Budget Actual Variance: Fav/(Unfav) Dollars Adopted Budget Actual Variance: Fav/(Unfav) Dollars Percent Percent Percent Revenue Farebox Revenue $427.2 $407.2 ($20.0) $0.0 $0.0 $0.0 N/A $427.2 ($20.0) Total Revenue 205.3 218.8 13.4 0.0 0.0 0.0 N/A 205.3 13.4 Other Revenue 82.7 93.9 11.2 0.0 0.0 0.0 N/A 82.7 11.2 Capital and Other Reimbursements 0.0 0.0 0.0 189.4 213.1 23.7 12.5 189.4 23.7 Total Revenues $715.3 $719.8 $4.5 $189.4 $213.1 $23.7 12.5 $904.6 $28.2 Expenses Labor Payroll $494.3 $470.7 $23.5 $86.5 $63.0 $23.5 5.3 $560.8 $27.1 Overtime 65.4 91.6 (26.2) 16.9 23.6 (6.7) (39.6) 82.3 (39.9) Health and Welfare 148.3 145.5 2.9 8.6 7.8 0.8 9.7 157.0 3.7 OPEB Current Payments 71.9 77.7 (5.8) 1.5 1.3 0.2 12.4 73.4 (5.6) Pension 107.0 112.1 (5.1) 10.5 9.8 0.7 6.9 117.5 (4.4) Other Fringe Benefits 89.8 91.7 (1.9) 22.4 22.5 0.0 (0.1) 112.2 (2.0) Reimburseable Overtime (37.7) (47.8) 10.2 37.7 47.3 (9.6) (25.6) (0.5) >100.0 Total Labor Expenses $339.0 $341.5 ($2.5) $164.2 $175.3 ($11.1) (6.7) $1,103.2 ($13.6) Non-Labor Electric Power $50.2 $48.8 $1.5 $0.1 $0.1 $0.0 (11.7) $50.3 $1.5 Fuel 19.9 18.7 1.2 0.0 0.0 0.0 98.7 19.9 2.9 Insurance 2.4 (0.2) 2.6 >100.0 0.8 0.0 4.5 3.2 6.0 Claims 34.4 33.3 1.1 0.0 0.0 0.0 N/A 34.4 1.1 Paratransit Service Contracts 48.9 48.9 (7.6) 0.0 0.0 0.0 N/A 41.3 (7.6) Maintenance and Other Operating Contracts 74.8 77.2 (2.4) 5.3 8.7 (3.4) (65.1) 80.1 (5.8) Professional Services Contracts 55.3 50.5 4.9 9.5 7.3 2.2 23.2 64.8 57.8 Materials and Supplies 51.9 50.6 1.3 9.0 14.4 (5.4) (99.5) 61.0 (4.0) Other Business Expenses 24.7 17.4 7.4 0.4 6.5 (6.1) <(100.0) 25.2 1.3 Total Non-Labor Expenses $355.1 $345.1 $10.0 $25.2 $37.8 ($12.6) (50.1) $380.2 ($2.6) Total Non-Labor Expenses Other Expense Adjustments Other ($0.7) $17.9 ($18.6) $0.0 $0.0 $0.0 N/A ($0.7) ($18.6) General Reserve 0.0 0.0 0.0 0.0 0.0 0.0 N/A 0.0 0.0 Total Other Expense Adjustments ($0.7) $17.9 ($18.6) $0.0 $0.0 $0.0 N/A ($0.7) ($18.6) Total Expenses Before Non-Cash Liability Adjs. $1,293.3 $1,304.5 ($11.2) $189.4 $213.1 ($23.7) (12.5) $1,482.7 ($34.9) Depreciation $296.7 $294.5 $2.2 $0.0 $0.0 $0.0 N/A $296.7 $2.2 GASB 68 Pension Expense Adjustment 5.5 0.0 5.5 0.0 0.0 0.0 N/A 5.5 0.0 GASB 75 OPEB Expense Adjustment 6.5 0.0 6.5 0.0 0.0 0.0 N/A 6.5 0.0 GASB 97 Lease Adjustment 0.4 1.3 (0.9) 0.0 0.0 0.0 N/A 0.4 1.3 GASB 95 SBITA Adjustment 0.0 4.2 (4.2) 0.0 0.0 0.0 N/A 0.0 4.2 Environmental Remediation 0.5 0.4 0.1 0.0 0.0 0.0 N/A 0.5 0.1 Total Expenses After Non-Cash Liability Adjs. $1,603.0 $1,604.8 ($1.9) $189.4 $213.1 ($23.7) (12.5) $1,792.3 ($25.6) Less: B&T Depreciation & GASB Adjustments $17.1 $20.0 ($2.9) $0.0 $0.0 $0.0 0.0 $17.1 ($2.9) Adjusted Total Expenses $1,586.2 $1,581.7 $4.6 $189.4 $215.0 ($25.6) (13.5) $1,775.6 ($21.0) Net Surplus/(Deficit) ($871.0) ($861.9) $9.1 $0.0 ($1.9) ($1.9) N/A ($871.0) $7.2 Total Subsidies $519.5 $474.3 ($45.1) $0.0 $0.0 $0.0 N/A $519.5 ($45.1) Debt Service 223.9 235.3 (11.3) 0.0 0.0 0.0 N/A 223.9 (11.3)
+```
+[p013_c0003] _Notes: Totals may not add due to rounding Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current months' actuals do not include post-close adjustments, which will be captured in the YTD results._
+[p013_c0004] _11_
+
+## Page 14
+
+### [p014_c0001] METROPOLITAN TRANSPORTATION AUTHORITY February Financial Plan - 2024 Adopted Budget Accrual Statement of Operations by Category April 2024 Year-to-Date
+[p014_c0002] ($ in millions)
+[p014_c0003]
+
+```text
+Non-Reimburseable Reimburseable Total Adopted Budget Actual Variance: Fav/(Unfav) Percent Adopted Budget Actual Variance: Fav/(Unfav) Percent Adopted Budget Actual Variance: Fav/(Unfav) Percent Revenue Farebox Revenue $1,611.4 $1,554.9 (3.5) $0.0 $0.0 0.0 $1,611.4 $1,554.9 (3.5) Toll Revenue 770.2 808.0 37.7 0.0 0.0 0.0 770.2 808.0 4.9 Other Revenue 301.4 329.9 28.5 0.0 0.0 0.0 301.4 329.9 9.5 Capital and Other Reimbursements 0.0 0.0 N/A 752.0 764.0 12.1 752.0 764.0 1.6 Total Revenues $2,683.1 $2,692.7 0.4 $752.0 $764.0 $12.1 $3,435.0 $3,456.8 0.6 Expenses Labor Payroll $2,003.9 $1,925.5 (3.9) $260.1 $230.8 (29.3) $2,264.1 $2,156.3 (4.8) Overtime 268.7 396.3 (127.6) 75.6 90.5 (19.6) 344.3 486.8 (41.4) Health and Welfare 595.8 586.0 9.8 31.9 26.9 5.0 627.7 612.9 2.4 OPEB Current Payments 295.7 281.5 14.2 6.1 5.4 0.6 301.8 287.0 4.9 Pension 447.6 457.0 (9.4) 38.7 32.6 6.1 486.3 486.3 (3.3) Other Fringe Benefits 355.7 370.0 (14.3) 91.4 88.1 3.3 447.0 458.1 (2.5) Reimburseable Overhead (155.7) (168.7) 13.0 155.6 168.4 (12.8) (0.1) (0.2) >100.0 Total Labor Expenses $3,811.7 $3,847.7 (596.0) $659.4 $642.7 $16.7 $4,471.2 $4,490.4 (0.4) Non-Labor Electric Power $210.9 $178.9 (32.0) $0.2 $0.2 0.0 $211.1 $179.1 (32.0) Fuel 86.6 76.0 10.5 0.2 0.2 0.0 86.8 76.0 12.3 Insurance 8.0 10.1 (20.1) 2.7 2.4 0.3 10.7 12.4 (13.9) Claims 138.4 124.5 13.9 0.0 0.0 0.0 138.4 124.5 10.0 Paratransit Service Contracts 160.5 189.6 (29.1) 0.0 0.0 0.0 160.5 189.6 (29.1) Maintenance and Other Operating Contracts 293.3 292.8 2.5 21.2 25.4 (4.2) 316.4 318.2 (1.8) Professional Services Contracts 221.1 151.4 69.7 37.6 40.1 (2.6) 258.6 191.5 67.1 Materials and Supplies 208.5 209.5 (2.8) 31.5 45.2 (31.7) 238.2 254.6 (6.9) Other Business Expenses 75.6 93.2 (17.7) 0.7 8.0 <(100.0) 74.8 101.2 (26.4) Total Non-Labor Expenses $1,403.0 $1,326.1 $76.9 $92.5 $121.3 ($28.8) $1,495.5 $1,447.4 $48.2 Other Expense Adjustments Other ($1.2) $25.5 (26.7) $0.0 $0.0 0.0 ($1.2) $25.5 <(100.0) General Reserve 0.0 0.0 N/A 0.0 0.0 0.0 0.0 0.0 N/A Total Other Expense Adjustments ($1.2) $25.5 <(100.0) $0.0 $0.0 0.0 ($1.2) $25.5 <(100.0) Total Expenses Before Non-Cash Liability Adjs. $5,213.5 $5,199.2 $14.3 $752.0 $764.0 ($12.1) $5,965.5 $5,963.3 $2.2 Depreciation $1,186.7 $1,173.7 $12.9 $0.0 $0.0 $0.0 $1,186.7 $1,173.7 $12.9 GASB 68 Pension Expense Adjustment 22.0 0.0 22.0 0.0 0.0 0.0 22.0 0.0 100.0 GASB 75 OPEB Expense Adjustment 26.0 0.0 26.0 0.0 0.0 0.0 26.0 0.0 100.0 GASB 97 Lease Adjustment 1.8 5.1 (3.4) 0.0 0.0 0.0 1.8 5.1 <(100.0) GASB 98 SBITA Adjustment 0.0 4.6 (4.6) 0.0 0.0 0.0 0.0 4.6 N/A Environmental Remediation 2.0 2.7 (0.7) 0.0 0.0 0.0 2.0 2.7 (36.9) Total Expenses After Non-Cash Liability Adjs. $6,452.0 $6,385.5 $66.5 $752.0 $764.0 ($12.1) $7,204.0 $7,149.5 $54.5 Less: B&T Depreciation & GASB Adjustments $68.3 $76.3 (98.0) $0.0 $0.0 0.0 $68.3 $76.3 (11.7) Adjusted Total Expenses $6,383.7 $6,309.3 $75.8 $752.0 $765.1 ($13.2) $7,137.1 $7,074.5 $62.7 Net Surplus/(Deficit) ($3,702.1) ($3,616.6) $85.5 $0.0 ($1.1) ($1.1) ($3,702.1) ($3,617.7) $84.4 Total Subsidies $2,472.9 $2,330.1 ($142.8) $0.0 $0.0 $0.0 $2,472.9 $2,330.1 ($142.8) Debt Service 986.6 987.0 1.6 0.0 0.0 0.0 986.6 987.0 0.2
+```
+[p014_c0004] Notes: Totals may not add due to rounding Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current months' actuals do not include post-close adjustments, which will be captured in the YTD results.
+[p014_c0005] _12_
+
+## Page 15
+
+### [p015_c0001] Total Positions
+### [p015_c0002] Total Positions by Agency
+[p015_c0003] The total number of employees at each agency. Totals may differ due to rounding.
+[p015_c0004]
+
+```text
+Agency Adopted Budget April Actual Variance Total Positions, All Agencies 73,949 70,590 3,358 NYC Transit 50,085 46,963 3,122 MTA Bus Company 3,908 3,676 232 Staten Island Railway 422 364 58 Long Island Rail Road 8,067 7,870 197 GCMOC (1) 3 3 - Metro-North Railroad 6,544 6,634 (90) Headquarters 3,448 3,392 56 Bridges & Tunnels 1,217 1,007 210 Construction & Development 255 681 (426) Reimbursable Positions 7,318 6,345 973 Non-Reimbursable Positions 66,631 64,246 2,384
+```
+[p015_c0005] On an MTA-Wide basis, there were 3,358 vacancies in April, representing a vacancy rate of (5%), which was primarily comprised of vacancies in operations and maintenance (78% of total vacancies).
+[p015_c0006] Positions data are as of March 19, 2024 and are subject to revision as well as adjustments. GCMOC - Grand Central Madison Operating Company
+[p015_c0007] _13_
+
+## Page 16
+
+### [p016_c0001] Total Positions by Function and Agency
+[p016_c0002] The number of employees at each agency by position function.
+[p016_c0003]
+
+```text
+Function/Agency Adopted Budget April Actual Variance Administration 4,237 4,177 59 NYC Transit 848 672 176 Bus Company 116 77 39 Staten Island Railway 31 24 7 LIRR 501 432 69 GCMOC 3 3 - MNR 479 448 31 HQ 2,117 2,122 (5) Bridges & Tunnels 79 51 28 C&D 63 348 (285) Operations 31,907 30,884 1,023 NYC Transit 23,878 22,953 925 Bus Company 2,608 2,561 47 Staten Island Railway 152 139 13 LIRR 2,818 2,881 (63) GCMOC - - - MNR 2,279 2,234 45 HQ - - - Bridges & Tunnels 172 116 56 C&D - - - Maintenance 33,291 31,678 1,613 NYC Transit 23,279 21,829 1,450 Bus Company 1,145 1,004 141 Staten Island Railway 233 196 37 LIRR 4,540 4,409 131 GCMOC - - - MNR 3,706 3,892 (186) HQ - - - Bridges & Tunnels 388 348 40 C&D - - - Engineering/Capital 1,910 1,485 425 NYC Transit 1,240 800 440 Bus Company 26 23 3 Staten Island Railway 6 5 1 LIRR 208 148 60 GCMOC - - - MNR 80 60 20 HQ - - - Bridges & Tunnels 158 116 42 C&D 192 333 (141) Public Safety 2,604 2,365 239 NYC Transit 840 708 132 Bus Company 13 11 2 Staten Island Railway - - - LIRR - - - GCMOC - - - MNR - - - HQ 1,331 1,270 61 Bridges & Tunnels 420 376 44 C&D - - - Total Positions 73,949 70,590 3,358
+```
+[p016_c0004] _14_
+
+## Page 17
+
+### [p017_c0001] Farebox Operating Ratios
+[p017_c0002]
+
+```text
+Adopted Budget April Actual YTD New York City Transit 37.9% 34.9% Staten Island Railway 8.4% 6.6% Long Island Rail Road 29.0% 29.5% Metro-North RailRoad 37.0% 36.2% MTA Bus Company 21.2% 20.6% MTA Total Agency Average 35.3% 33.3%
+```
+[p017_c0003] Farebox operating ratio focuses on Agency operating financial performance. It reflects the way the MTA meets its statutory and bond-covenant budget-balancing requirements, and it excludes certain costs that are not subject to Agency control, but are provided centrally by the MTA.
+[p017_c0004] In the agenda materials for the Metro-North/Long Island Rail Road Committee meeting, farebox operating ratios for the LIRR and MNR use a revised methodology to put the railroads on a more comparable basis, and differ from the statistics presented in this table.
+[p017_c0005] Long Island Rail Road farebox operating ratios include expenses associated with the Grand Central Madison Operating Company (GCMOC), which is responsible for the LIRR-operating portion of Grand Central Terminal.
+[p017_c0006] _15_

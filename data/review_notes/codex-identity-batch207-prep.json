@@ -1,0 +1,394 @@
+{
+  "note_id": "codex-identity-batch207-prep",
+  "created_at": "2026-06-23T12:00:14Z",
+  "scope": {
+    "global_kind": "entity",
+    "operation": "prepare_alias_cleanup_only",
+    "checkpoint": "after identity205-corridor206",
+    "selection_note": "Codex-only entity alias cleanup from the remaining duplicate_global_identity backlog. A deterministic local identityKeysForRecord scan reproduced the current checkpoint count: 315 duplicate_global_identity issues total, with entity 307 and corridor 8. No provider-backed commands, materialize, validate CLI, write, ask, canonicalize, identity-review, schema, or ontology commands were run.",
+    "write_limit": "Exactly one artifact was written: data/review_notes/codex-identity-batch207-prep.json. No merges.json, do-not-merge.json, canonical JSONL, DB, LOG.md, manifest, wiki, submissions, or retired overrides were edited."
+  },
+  "prepared_count": 12,
+  "proposed_aliases": [
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_olga-chernat-129061",
+      "target_id": "entity_meeting-doc-129041-olga-chernat",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-129041-olga-chernat and entity_olga-chernat-129061 share identity key entity_olga-chernat.",
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-129041-olga-chernat and entity_olga-chernat-129061 share identity key entity_olga-chernat-deputy-chief-financial-services."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Olga Chernat, Deputy Chief, Financial Services', entity_name 'Olga Chernat', entity_type 'person', title 'Deputy Chief, Financial Services', organization 'Metropolitan Transportation Authority', evidence meeting_doc_197061#p001_c0003 states 'MTA Finance Department Olga Chernat Deputy Chief, Financial Services January 26, 2026'.",
+        "Target canonical record: display_name 'Olga Chernat, Deputy Chief, Financial Services', entity_name/name 'Olga Chernat', entity_type 'person', same title and organization, with many Finance Department evidence refs including meeting_doc_129041#p001_c0009 and meeting_doc_124351#p157_c0003."
+      ],
+      "reason": "Exact person identity; both records name Olga Chernat with the same Deputy Chief, Financial Services / MTA Finance context.",
+      "guard_checks": {
+        "current_records_present": true,
+        "alias_present": true,
+        "target_present": true,
+        "alias_unmapped": true,
+        "alias_not_already_mapped": true,
+        "target_root": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "not_prior_202_205_alias": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_rafail-portnoy-201766",
+      "target_id": "entity_mta-cto-portnoy",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_mta-cto-portnoy and entity_rafail-portnoy-201766 share identity key entity_rafail-portnoy."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name/entity_name 'Rafail Portnoy', entity_type 'person', title 'MTA Chief Technology Officer', organization 'MTA IT', evidence meeting_doc_201766#p002_c0004 names 'MTA IT, Rafail Portnoy, MTA CTO'.",
+        "Target canonical record: display_name 'Rafail Portnoy, MTA Chief Technology Officer', entity_name 'Rafail Portnoy', entity_type 'person', title 'Chief Technology Officer', organization 'Metropolitan Transportation Authority', evidence meeting_doc_105876#p187_c0002 says 'Chief Technology Officer - Rafail Portnoy'."
+      ],
+      "reason": "Exact person identity; both records identify Rafail Portnoy as the MTA chief technology officer.",
+      "guard_checks": {
+        "current_records_present": true,
+        "alias_present": true,
+        "target_present": true,
+        "alias_unmapped": true,
+        "alias_not_already_mapped": true,
+        "target_root": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "not_prior_202_205_alias": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-121091-richard-mack",
+      "target_id": "entity_richard-mack-meeting-doc-135306",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-121091-richard-mack and entity_richard-mack-meeting-doc-135306 share identity key entity_richard-mack."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name/entity_name 'Richard Mack', entity_type 'person', title 'MTA Assistant Deputy Chief Procurement Officer', evidence meeting_doc_121091#p015_c0009 names MTA Assistant Deputy Chief Procurement Officer Richard Mack.",
+        "Target canonical record: display_name/entity_name 'Richard Mack', entity_type 'person', title variants include MTA Assistant Deputy Chief Contracts/Procurement Officer - LIRR Procurements, evidence meeting_doc_107606#p001_c0003 and meeting_doc_115191#p001_c0003."
+      ],
+      "reason": "Exact person identity; the procurement/contracts title variants refer to Richard Mack in MTA/LIRR procurement context.",
+      "guard_checks": {
+        "current_records_present": true,
+        "alias_present": true,
+        "target_present": true,
+        "alias_unmapped": true,
+        "alias_not_already_mapped": true,
+        "target_root": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "not_prior_202_205_alias": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_robert-foran-dec2021",
+      "target_id": "entity_meeting-doc-33876-robert-foran",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-33876-robert-foran and entity_robert-foran-dec2021 share identity key entity_robert-foran."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Robert Foran, MTA Chief Financial Officer', entity_name 'Robert Foran', entity_type 'person', evidence meeting_doc_73021#p005_c0001 includes 'Robert Foran, MTA Chief Financial Officer'.",
+        "Target canonical record: display_name 'Robert E. Foran', merged entity_name values include 'Robert E. Foran' and 'Robert Foran', entity_type 'person', title 'Chief Financial Officer', evidence meeting_doc_68306#p005_c0001 and meeting_doc_68196#p037_c0003."
+      ],
+      "reason": "Exact person identity; Robert Foran and Robert E. Foran share MTA chief financial officer context.",
+      "guard_checks": {
+        "current_records_present": true,
+        "alias_present": true,
+        "target_present": true,
+        "alias_unmapped": true,
+        "alias_not_already_mapped": true,
+        "target_root": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "not_prior_202_205_alias": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-127496-robert-lai",
+      "target_id": "entity_robert-lai-2025",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-127496-robert-lai and entity_robert-lai-2025 share identity key entity_robert-lai."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name/entity_name 'Robert Lai', entity_type 'person', title 'Acting Deputy Chief Bus Service Planning', organization 'New York City Transit', evidence meeting_doc_127496#p002_c0015 names Robert Lai in bus service planning.",
+        "Target canonical record: display_name 'Robert Lai, Project Manager', entity_name 'Robert Lai', entity_type 'person', evidence q70_fare_free_service_increases_2025#p002_c0002 and queens_service_change_board_item_2025#p002_c0004 name Robert Lai as project manager in Operations Planning items."
+      ],
+      "reason": "Exact person identity; both records name Robert Lai in NYC Transit / Operations Planning bus-service contexts.",
+      "guard_checks": {
+        "current_records_present": true,
+        "alias_present": true,
+        "target_present": true,
+        "alias_unmapped": true,
+        "alias_not_already_mapped": true,
+        "target_root": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "not_prior_202_205_alias": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_n-zuckerman-committee-member",
+      "target_id": "entity_meeting-doc-131646-neal-zuckerman",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-131646-neal-zuckerman and entity_n-zuckerman-committee-member share identity key entity_neal-zuckerman."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'N. Zuckerman', merged entity_name values include 'N. Zuckerman' and 'Neal Zuckerman', entity_type 'person', title 'Chair, Finance Committee', evidence meeting_doc_127561#p001_c0006 states 'N. Zuckerman, Chair'.",
+        "Target canonical record: display_name 'Hon. Neal Zuckerman', entity_name 'Neal Zuckerman', entity_type 'person', title/role values include Chair and Finance Committee Chair, evidence meeting_doc_131646#p001_c0003 quotes 'Hon. Neal Zuckerman, Chair'."
+      ],
+      "reason": "Exact person identity; the initialed N. Zuckerman record already carries the full Neal Zuckerman name and the same MTA Finance Committee chair context.",
+      "guard_checks": {
+        "current_records_present": true,
+        "alias_present": true,
+        "target_present": true,
+        "alias_unmapped": true,
+        "alias_not_already_mapped": true,
+        "target_root": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "not_prior_202_205_alias": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_lisette-camillo-lirr-erg",
+      "target_id": "entity_nyct-eeo-lisette-camillo",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_lisette-camillo-lirr-erg and entity_nyct-eeo-lisette-camillo share identity key entity_lisette-camillo."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name/entity_name 'Lisette Camillo', entity_type 'person', role 'Executive Sponsor of Latinos & Friends Employee Resource Group', evidence meeting_doc_121136#p003_c0004 and meeting_doc_121136#p004_c0004.",
+        "Target canonical record: display_name 'Lisette Camillo, Executive Sponsor', entity_name 'Lisette Camillo', entity_type 'person', description 'Executive Sponsor of Latinos & Friends Employee Resource Group', organization 'MTA', evidence meeting_doc_121051#p003_c0004 and meeting_doc_121056#p003_c0004."
+      ],
+      "reason": "Exact person identity; both records name Lisette Camillo as Executive Sponsor for the same Latinos & Friends ERG context.",
+      "guard_checks": {
+        "current_records_present": true,
+        "alias_present": true,
+        "target_present": true,
+        "alias_unmapped": true,
+        "alias_not_already_mapped": true,
+        "target_root": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "not_prior_202_205_alias": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_mta-ewt-erg",
+      "target_id": "entity_ewt-erg",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_ewt-erg and entity_mta-ewt-erg share identity key entity_empowering-women-in-transportation-ewt."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'EWT', entity_name 'Empowering Women in Transportation (EWT)', acronym 'EWT', entity_type 'Employee Resource Group', evidence meeting_doc_138421#p006_c0008 names the group.",
+        "Target canonical record: display_name/entity_name 'Empowering Women in Transportation (EWT)', acronym 'EWT', entity_type 'employee resource group', organization 'MTA', evidence meeting_doc_138426#p006_c0007 and meeting_doc_160126#p005_c0003."
+      ],
+      "reason": "Exact MTA employee resource group identity; EWT is the source-backed acronym for Empowering Women in Transportation.",
+      "guard_checks": {
+        "current_records_present": true,
+        "alias_present": true,
+        "target_present": true,
+        "alias_unmapped": true,
+        "alias_not_already_mapped": true,
+        "target_root": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "not_prior_202_205_alias": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_nyct-eeo-latinos-friends-erg",
+      "target_id": "entity_latinos-friends-erg-lirr",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_latinos-friends-erg-lirr and entity_nyct-eeo-latinos-friends-erg share identity key entity_latinos-and-friends."
+      ],
+      "source_evidence": [
+        "Alias canonical record: entity_name 'Latinos & Friends', entity_type 'Employee Resource Group', organization 'MTA', evidence meeting_doc_121051#p003_c0003 states 'Latinos & Friends, Shadow Day Initiative'.",
+        "Target canonical record: display_name 'Latinos & Friends (Employee Resource Group)', entity_name 'Latinos & Friends', merged entity_type values include employee resource group / Employee Resource Group, organization 'MTA', evidence meeting_doc_121136#p003_c0003 and meeting_doc_176311#p004_c0015."
+      ],
+      "reason": "Exact MTA employee resource group identity; both records preserve the same Latinos & Friends name and ERG context.",
+      "guard_checks": {
+        "current_records_present": true,
+        "alias_present": true,
+        "target_present": true,
+        "alias_unmapped": true,
+        "alias_not_already_mapped": true,
+        "target_root": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "not_prior_202_205_alias": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_mta-inspector-general-meeting-doc-173841",
+      "target_id": "entity_meeting-doc-ig",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-ig and entity_mta-inspector-general-meeting-doc-173841 share identity key entity_mta-office-of-the-inspector-general."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name/entity_name 'MTA Office of the Inspector General', entity_type 'agency office', organization 'Metropolitan Transportation Authority', evidence meeting_doc_173841#p037_c0006 names 'Office of the Inspector General Metropolitan Transportation Authority'.",
+        "Target canonical record: display_name 'Office of the MTA Inspector General', merged entity_name values include 'Office of the MTA Inspector General', 'MTA Office of the Inspector General', and 'MTA Inspector General', evidence meeting_doc_102796#p076_c0001 and meeting_doc_128996#p080_c0001."
+      ],
+      "reason": "Exact titled agency office identity; both records refer to the MTA Office of the Inspector General.",
+      "guard_checks": {
+        "current_records_present": true,
+        "alias_present": true,
+        "target_present": true,
+        "alias_unmapped": true,
+        "alias_not_already_mapped": true,
+        "target_root": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "not_prior_202_205_alias": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_mta-eagle-team-meeting-doc-205666",
+      "target_id": "entity_eagle-team-2010",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_eagle-team-2010 and entity_mta-eagle-team-meeting-doc-205666 share identity key entity_mta-eagle-team."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name/entity_name 'MTA EAGLE Team', entity_type 'team', evidence meeting_doc_205666#p005_c0003 has source_quote 'MTA EAGLE Team Special Inspectors'.",
+        "Target canonical record: display_name 'Eagle Team', merged entity_name values include 'Eagle Team', 'NYCT Eagle Team', 'EAGLE Team', 'MTA Eagle Team', and 'MTA EAGLE Team', organization values include NYCT / MTA New York City Transit, evidence 2010_09_14_brt_1st2nd_cac5#p015_c0004 and meeting_doc_151636#p001_c0008."
+      ],
+      "reason": "Exact titled enforcement team identity; MTA EAGLE Team is a source-backed name variant of the NYCT/MTA Eagle Team record.",
+      "guard_checks": {
+        "current_records_present": true,
+        "alias_present": true,
+        "target_present": true,
+        "alias_unmapped": true,
+        "alias_not_already_mapped": true,
+        "target_root": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "not_prior_202_205_alias": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_department-of-finance-sbs-features",
+      "target_id": "entity_nyc-dept-finance-2024",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_department-of-finance-sbs-features and entity_nyc-dept-finance-2024 share identity key entity_new-york-city-department-of-finance."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'NYC Department of Finance', agency_name 'NYC Department of Finance', merged entity_name values include 'Department of Finance' and 'New York City Department of Finance', acronym 'DOF', evidence sbs_features#p001_b0001 and meeting_doc_201621#p028_c0005.",
+        "Target canonical record: display_name/entity_name/agency_name 'New York City Department of Finance', acronym 'DOF', entity_type 'city_agency', evidence bus_lane_camera_report_2024#p015_c0004 says notices are sent to the New York City Department of Finance for adjudication."
+      ],
+      "reason": "Exact NYC agency identity; both records name the New York City Department of Finance / DOF in bus-lane and camera-enforcement context.",
+      "guard_checks": {
+        "current_records_present": true,
+        "alias_present": true,
+        "target_present": true,
+        "alias_unmapped": true,
+        "alias_not_already_mapped": true,
+        "target_root": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "not_prior_202_205_alias": true
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "ids": [
+        "entity_bronx-cb6-2012-11-webster",
+        "entity_brooklyn-cb6-flatbush-ave-oct2025"
+      ],
+      "reason": "Deferred as a cross-borough community-board collision on generic key entity_community-board-6; below this batch's precise matching borough/scope bar."
+    },
+    {
+      "ids": [
+        "entity_community-advisory-committee-flushing-jamaica",
+        "entity_community-advisory-committee-webster",
+        "entity_hylan-cac"
+      ],
+      "reason": "Deferred as broad CAC/community-advisory committee collisions across different SBS/corridor scopes."
+    },
+    {
+      "ids": [
+        "entity_audit-committee-sorin",
+        "entity_catherine-sheridan-115226"
+      ],
+      "reason": "Deferred because the shared Lisa Sorin name appears inside a Catherine Sheridan record; this remains mixed member-list evidence rather than a safe alias."
+    },
+    {
+      "ids": [
+        "entity_meeting-doc-189866-p-dietlin",
+        "entity_meeting-doc-192156-p-dietlin",
+        "entity_meeting-doc-205616-p-dietlin",
+        "entity_p-dietlin-fall-trackwork"
+      ],
+      "reason": "Deferred because the surface is initial-only 'P. Dietlin'; likely related but below this batch's exact full-name threshold."
+    },
+    {
+      "ids": [
+        "entity_mta-entity-update-2025",
+        "entity_mta-real-estate",
+        "entity_mta-construction-and-development",
+        "entity_meeting-doc-143306-mta-hq"
+      ],
+      "reason": "Deferred because the large MTA root record carries many department/subsidiary names; these are parent/subunit or evidence-contamination risks rather than bounded alias proposals."
+    }
+  ],
+  "blockers": []
+}

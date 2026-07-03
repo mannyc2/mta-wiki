@@ -1,0 +1,59 @@
+{
+  "run_id": "2026-06-10T23-14-25-320Z_1976810-10f0b3f3_ingest_2013-06-06-sbs-125th-cb1",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T03:52:51.013Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1-nyc-dot-2013-125th",
+        "local_observation_id": "entity_nyc_dot_2013_06_125th_cb1",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot already matches the existing canonical registry record entity_nyc-dot (New York City Department of Transportation). No evidence supports linking to a different record.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_06_sbs_125th_cb1",
+            "block_id": "p001_c0004",
+            "source_quote": "The logo for the New York City Department of Transportation (NYC DOT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2-mta-nyct-2013-125th",
+        "local_observation_id": "entity_mta_nyct_2013_06_125th_cb1",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-nyct already matches the existing canonical registry record entity_mta-nyct (MTA New York City Transit). No evidence supports linking to a different record.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_06_sbs_125th_cb1",
+            "block_id": "p001_c0005",
+            "source_quote": "The logo for the Metropolitan Transportation Authority (MTA)"
+          },
+          {
+            "source_id": "2013_06_06_sbs_125th_cb1",
+            "block_id": "p001_c0006",
+            "source_quote": "New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "d3-cb1-manhattan-2013-125th",
+        "local_observation_id": "entity_community_board_1_manhattan_2013_06",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_community-board-1-manhattan-2013-06 already matches the existing canonical registry record entity_community-board-1-manhattan-2013-06 (Manhattan Community Board 1). Source id 2013_06_06_sbs_125th_cb1 is already listed in the registry record's source_ids. No evidence supports linking to a different record.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_06_sbs_125th_cb1",
+            "block_id": "p001_c0002",
+            "source_quote": "Community Board 1 Briefing"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-52-16-182Z_2111393-7e2c9ba3_canonicalize_2026-06-10t23-14-25-320z-1976810-10f0b3f3-ingest-2013-06-06-sbs-125th-cb1-entity-identity"
+}

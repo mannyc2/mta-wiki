@@ -1,0 +1,499 @@
+{
+  "kind": "spreadsheet_preview",
+  "status": "ok",
+  "source_id": "meeting_doc_26731",
+  "run_id": "legacy-xls-backlog-20260623",
+  "generated_at": "2026-06-23T22:35:00.000Z",
+  "source_path": "raw/sources/meeting_doc_26731/source.xls",
+  "source_sha256": "sha256:bf8f45fb39dbeab94e7cbc6a22f531402d0275030da8dc8575cbb801954765b8",
+  "reason": "Legacy .xls parsed deterministically with xlrd 2.0.1 in a throwaway local venv for the final readiness backlog source.",
+  "sheets": [
+    {
+      "name": "ConsVarExplan",
+      "path": "raw/sources/meeting_doc_26731/source.xls#ConsVarExplan",
+      "row_count": 27,
+      "cell_count": 43,
+      "rows": [
+        {
+          "row_number": 4,
+          "cells": [
+            {
+              "ref": "B4",
+              "column": "B",
+              "row": 4,
+              "type": "1",
+              "raw_value": "Favorable",
+              "text": "Favorable"
+            }
+          ]
+        },
+        {
+          "row_number": 5,
+          "cells": [
+            {
+              "ref": "B5",
+              "column": "B",
+              "row": 5,
+              "type": "1",
+              "raw_value": "(Unfavorable)",
+              "text": "(Unfavorable)"
+            },
+            {
+              "ref": "E5",
+              "column": "E",
+              "row": 5,
+              "type": "1",
+              "raw_value": "Reason for Variance",
+              "text": "Reason for Variance"
+            }
+          ]
+        },
+        {
+          "row_number": 6,
+          "cells": [
+            {
+              "ref": "B6",
+              "column": "B",
+              "row": 6,
+              "type": "1",
+              "raw_value": "Variance",
+              "text": "Variance"
+            },
+            {
+              "ref": "C6",
+              "column": "C",
+              "row": 6,
+              "type": "1",
+              "raw_value": "Percent",
+              "text": "Percent"
+            }
+          ]
+        },
+        {
+          "row_number": 8,
+          "cells": [
+            {
+              "ref": "A8",
+              "column": "A",
+              "row": 8,
+              "type": "1",
+              "raw_value": "Total Revenue",
+              "text": "Total Revenue"
+            },
+            {
+              "ref": "B8",
+              "column": "B",
+              "row": 8,
+              "type": "2",
+              "raw_value": "237",
+              "text": "237"
+            },
+            {
+              "ref": "C8",
+              "column": "C",
+              "row": 8,
+              "type": "2",
+              "raw_value": "0.029",
+              "text": "0.029"
+            },
+            {
+              "ref": "E8",
+              "column": "E",
+              "row": 8,
+              "type": "1",
+              "raw_value": "B&T - $159.7M favorable mainly due to traffic volume exceeding projected levels.",
+              "text": "B&T - $159.7M favorable mainly due to traffic volume exceeding projected levels."
+            }
+          ]
+        },
+        {
+          "row_number": 10,
+          "cells": [
+            {
+              "ref": "E10",
+              "column": "E",
+              "row": 10,
+              "type": "1",
+              "raw_value": "NYCT - $88.2M favorable mainly due to higher bus and subway farebox revenue.",
+              "text": "NYCT - $88.2M favorable mainly due to higher bus and subway farebox revenue."
+            }
+          ]
+        },
+        {
+          "row_number": 12,
+          "cells": [
+            {
+              "ref": "E12",
+              "column": "E",
+              "row": 12,
+              "type": "1",
+              "raw_value": "FMTAC - $16.3M favorable due to a higher gain in the market value of the invested asset portfolio and higher realized income from investments.",
+              "text": "FMTAC - $16.3M favorable due to a higher gain in the market value of the invested asset portfolio and higher realized income from investments."
+            }
+          ]
+        },
+        {
+          "row_number": 14,
+          "cells": [
+            {
+              "ref": "E14",
+              "column": "E",
+              "row": 14,
+              "type": "1",
+              "raw_value": "MTA Bus - $11.3M favorable primarily due to higher average fare and ridership, and higher aid from the federal CARES Act.",
+              "text": "MTA Bus - $11.3M favorable primarily due to higher average fare and ridership, and higher aid from the federal CARES Act."
+            }
+          ]
+        },
+        {
+          "row_number": 16,
+          "cells": [
+            {
+              "ref": "E16",
+              "column": "E",
+              "row": 16,
+              "type": "1",
+              "raw_value": "LIRR - ($6.3M) unfavorable, reflecting lower farebox and advertising revenue.",
+              "text": "LIRR - ($6.3M) unfavorable, reflecting lower farebox and advertising revenue."
+            }
+          ]
+        },
+        {
+          "row_number": 18,
+          "cells": [
+            {
+              "ref": "E18",
+              "column": "E",
+              "row": 18,
+              "type": "1",
+              "raw_value": "MTA HQ - ($12.8M) unfavorable mainly due to the timing of the MTA District Attorney's grant funding of security enhancement activity, lower Transit Museum revenue, and lower other income and retail store revenue due to COVID-19.",
+              "text": "MTA HQ - ($12.8M) unfavorable mainly due to the timing of the MTA District Attorney's grant funding of security enhancement activity, lower Transit Museum revenue, and lower other income and retail store revenue due to COVID-19."
+            }
+          ]
+        },
+        {
+          "row_number": 20,
+          "cells": [
+            {
+              "ref": "E20",
+              "column": "E",
+              "row": 20,
+              "type": "1",
+              "raw_value": "MNR - ($18.7M) unfavorable, primarily reflecting lower East of Hudson commutation ridership due to the COVID-19 pandemic.",
+              "text": "MNR - ($18.7M) unfavorable, primarily reflecting lower East of Hudson commutation ridership due to the COVID-19 pandemic."
+            }
+          ]
+        },
+        {
+          "row_number": 22,
+          "cells": [
+            {
+              "ref": "E22",
+              "column": "E",
+              "row": 22,
+              "type": "1",
+              "raw_value": "SIR - ($0.6M) unfavorable mostly due to lower farebox revenue and lower school fare reimbursement.",
+              "text": "SIR - ($0.6M) unfavorable mostly due to lower farebox revenue and lower school fare reimbursement."
+            }
+          ]
+        },
+        {
+          "row_number": 25,
+          "cells": [
+            {
+              "ref": "A25",
+              "column": "A",
+              "row": 25,
+              "type": "1",
+              "raw_value": "Total  Expenses",
+              "text": "Total  Expenses"
+            },
+            {
+              "ref": "B25",
+              "column": "B",
+              "row": 25,
+              "type": "2",
+              "raw_value": "639.6",
+              "text": "639.6"
+            },
+            {
+              "ref": "C25",
+              "column": "C",
+              "row": 25,
+              "type": "2",
+              "raw_value": "0.041",
+              "text": "0.041"
+            },
+            {
+              "ref": "E25",
+              "column": "E",
+              "row": 25,
+              "type": "1",
+              "raw_value": "MTA Bus - $179.2M favorable mainly due to the timing of: GASB 68 Pension Expense adjustments, GASB 75 OPEB adjustments, lower usage of general maintenance and construction materials due to the pandemic, as well as the timing of COVID-19 expenses, Shop Program, Bus Technology, New Fare Payment System (NFPS), and interagency billings, partially offset by higher payroll expenses (due to vacation payment, higher cash payouts for sick and personal time, retroactive payments, and lower attrition).",
+              "text": "MTA Bus - $179.2M favorable mainly due to the timing of: GASB 68 Pension Expense adjustments, GASB 75 OPEB adjustments, lower usage of general maintenance and construction materials due to the pandemic, as well as the timing of COVID-19 expenses, Shop Program, Bus Technology, New Fare Payment System (NFPS), and interagency billings, partially offset by higher payroll expenses (due to vacation payment, higher cash payouts for sick and personal time, retroactive payments, and lower attrition)."
+            }
+          ]
+        },
+        {
+          "row_number": 27,
+          "cells": [
+            {
+              "ref": "E27",
+              "column": "E",
+              "row": 27,
+              "type": "1",
+              "raw_value": "MTA HQ - $150.4M favorable primarily due to the timing of professional service contracts (includes recoveries), maintenance and other service contracts, the impact of vacancies, lower overtime, the timing of temporary services related to staffing of the COVID-19 overtime hotline, health monitoring, Homeless Outreach Services, and utilities, and lower depreciation expenses, partially offset by lower reimbursable overhead, and higher OPEB current payments.",
+              "text": "MTA HQ - $150.4M favorable primarily due to the timing of professional service contracts (includes recoveries), maintenance and other service contracts, the impact of vacancies, lower overtime, the timing of temporary services related to staffing of the COVID-19 overtime hotline, health monitoring, Homeless Outreach Services, and utilities, and lower depreciation expenses, partially offset by lower reimbursable overhead, and higher OPEB current payments."
+            }
+          ]
+        },
+        {
+          "row_number": 29,
+          "cells": [
+            {
+              "ref": "E29",
+              "column": "E",
+              "row": 29,
+              "type": "1",
+              "raw_value": "NYCT - $145.6M favorable primarily due to lower expenses for health & welfare/OPEB (the timing of prescription drug rebates as well as lower medical utilization due to COVID), maintenance and other operating expenses, other business expenses, payroll (in part due to vacancies), overtime, material & supplies, paratransit service costs, and other fringe benefits, partially offset by higher depreciation, GASB 75 OPEB adjustments, and GASB 68 Pension adjustments.",
+              "text": "NYCT - $145.6M favorable primarily due to lower expenses for health & welfare/OPEB (the timing of prescription drug rebates as well as lower medical utilization due to COVID), maintenance and other operating expenses, other business expenses, payroll (in part due to vacancies), overtime, material & supplies, paratransit service costs, and other fringe benefits, partially offset by higher depreciation, GASB 75 OPEB adjustments, and GASB 68 Pension adjustments."
+            }
+          ]
+        },
+        {
+          "row_number": 32,
+          "cells": [
+            {
+              "ref": "B32",
+              "column": "B",
+              "row": 32,
+              "type": "1",
+              "raw_value": "Favorable",
+              "text": "Favorable"
+            }
+          ]
+        },
+        {
+          "row_number": 33,
+          "cells": [
+            {
+              "ref": "B33",
+              "column": "B",
+              "row": 33,
+              "type": "1",
+              "raw_value": "(Unfavorable)",
+              "text": "(Unfavorable)"
+            },
+            {
+              "ref": "E33",
+              "column": "E",
+              "row": 33,
+              "type": "1",
+              "raw_value": "Reason for Variance",
+              "text": "Reason for Variance"
+            }
+          ]
+        },
+        {
+          "row_number": 34,
+          "cells": [
+            {
+              "ref": "B34",
+              "column": "B",
+              "row": 34,
+              "type": "1",
+              "raw_value": "Variance",
+              "text": "Variance"
+            },
+            {
+              "ref": "C34",
+              "column": "C",
+              "row": 34,
+              "type": "1",
+              "raw_value": "Percent",
+              "text": "Percent"
+            }
+          ]
+        },
+        {
+          "row_number": 36,
+          "cells": [
+            {
+              "ref": "E36",
+              "column": "E",
+              "row": 36,
+              "type": "1",
+              "raw_value": "LIRR - $77.3M favorable primarily due to vacancies and associated fringe costs, lower fleet maintenance and modifications, overtime, OPEB current expenses, and the timing of maintenance & other operating contracts and professional services, partially offset by higher depreciation, Federal Employers Liability Act (FELA) indemnity reserves, bad debt reserves and miscellaneous inventory adjustments.",
+              "text": "LIRR - $77.3M favorable primarily due to vacancies and associated fringe costs, lower fleet maintenance and modifications, overtime, OPEB current expenses, and the timing of maintenance & other operating contracts and professional services, partially offset by higher depreciation, Federal Employers Liability Act (FELA) indemnity reserves, bad debt reserves and miscellaneous inventory adjustments."
+            }
+          ]
+        },
+        {
+          "row_number": 38,
+          "cells": [
+            {
+              "ref": "E38",
+              "column": "E",
+              "row": 38,
+              "type": "1",
+              "raw_value": "B&T - $61.2M favorable primarily due to vacancies, lower overtime, and the timing of bond issuance costs.",
+              "text": "B&T - $61.2M favorable primarily due to vacancies, lower overtime, and the timing of bond issuance costs."
+            }
+          ]
+        },
+        {
+          "row_number": 40,
+          "cells": [
+            {
+              "ref": "E40",
+              "column": "E",
+              "row": 40,
+              "type": "1",
+              "raw_value": "MNR - $48.4M favorable primarily due to lower labor costs (mainly attribute to the lower train and engine crew overtime from schedule changes), lower contractual services expense, and material usage.",
+              "text": "MNR - $48.4M favorable primarily due to lower labor costs (mainly attribute to the lower train and engine crew overtime from schedule changes), lower contractual services expense, and material usage."
+            }
+          ]
+        },
+        {
+          "row_number": 42,
+          "cells": [
+            {
+              "ref": "E42",
+              "column": "E",
+              "row": 42,
+              "type": "1",
+              "raw_value": "SIR - $4.7M favorable mostly due to lower payroll & overtime expenses (mainly due to vacancies and less backfill coverage), the timing of other business expenses, maintenance contract expenses, materials & supplies, and health & welfare/OPEB current payments.",
+              "text": "SIR - $4.7M favorable mostly due to lower payroll & overtime expenses (mainly due to vacancies and less backfill coverage), the timing of other business expenses, maintenance contract expenses, materials & supplies, and health & welfare/OPEB current payments."
+            }
+          ]
+        },
+        {
+          "row_number": 44,
+          "cells": [
+            {
+              "ref": "E44",
+              "column": "E",
+              "row": 44,
+              "type": "1",
+              "raw_value": "FMTAC - ($24.8M) unfavorable primarily due to the timing of claims expenses.",
+              "text": "FMTAC - ($24.8M) unfavorable primarily due to the timing of claims expenses."
+            }
+          ]
+        },
+        {
+          "row_number": 46,
+          "cells": [
+            {
+              "ref": "E46",
+              "column": "E",
+              "row": 46,
+              "type": "1",
+              "raw_value": "Other Expense Adjustments - ($2.4M) unfavorable mainly due to timing differences in project completions.",
+              "text": "Other Expense Adjustments - ($2.4M) unfavorable mainly due to timing differences in project completions."
+            }
+          ]
+        },
+        {
+          "row_number": 48,
+          "cells": [
+            {
+              "ref": "A48",
+              "column": "A",
+              "row": 48,
+              "type": "1",
+              "raw_value": "Subsidies",
+              "text": "Subsidies"
+            },
+            {
+              "ref": "B48",
+              "column": "B",
+              "row": 48,
+              "type": "2",
+              "raw_value": "360.582843441",
+              "text": "360.582843441"
+            },
+            {
+              "ref": "C48",
+              "column": "C",
+              "row": 48,
+              "type": "2",
+              "raw_value": "0.064",
+              "text": "0.064"
+            },
+            {
+              "ref": "E48",
+              "column": "E",
+              "row": 48,
+              "type": "1",
+              "raw_value": "The favorable variance was partially attributable  to better-than-forecasted results and also to timing of accruals for PMT and PBT, and to higher MRT transactions, due to strong mortgage activities in the MCTD, and Urban Tax  transactions, due to strong real estate activity in NYC.",
+              "text": "The favorable variance was partially attributable  to better-than-forecasted results and also to timing of accruals for PMT and PBT, and to higher MRT transactions, due to strong mortgage activities in the MCTD, and Urban Tax  transactions, due to strong real estate activity in NYC."
+            }
+          ]
+        },
+        {
+          "row_number": 51,
+          "cells": [
+            {
+              "ref": "A51",
+              "column": "A",
+              "row": 51,
+              "type": "1",
+              "raw_value": "Debt Service",
+              "text": "Debt Service"
+            },
+            {
+              "ref": "B51",
+              "column": "B",
+              "row": 51,
+              "type": "2",
+              "raw_value": "-15.2",
+              "text": "-15.2"
+            },
+            {
+              "ref": "C51",
+              "column": "C",
+              "row": 51,
+              "type": "2",
+              "raw_value": "-0.006",
+              "text": "-0.006"
+            },
+            {
+              "ref": "E51",
+              "column": "E",
+              "row": 51,
+              "type": "1",
+              "raw_value": "The unfavorable variance of $15.2 million or 0.6% unfavorable was primarily due to the timing related to the non-receipt of the November 2020 BAB subsidies.",
+              "text": "The unfavorable variance of $15.2 million or 0.6% unfavorable was primarily due to the timing related to the non-receipt of the November 2020 BAB subsidies."
+            }
+          ]
+        },
+        {
+          "row_number": 56,
+          "cells": [
+            {
+              "ref": "A56",
+              "column": "A",
+              "row": 56,
+              "type": "1",
+              "raw_value": "Notes: Totals may not add due to rounding",
+              "text": "Notes: Totals may not add due to rounding"
+            }
+          ]
+        },
+        {
+          "row_number": 57,
+          "cells": [
+            {
+              "ref": "A57",
+              "column": "A",
+              "row": 57,
+              "type": "1",
+              "raw_value": "Results are preliminary and subject to audit review",
+              "text": "Results are preliminary and subject to audit review"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

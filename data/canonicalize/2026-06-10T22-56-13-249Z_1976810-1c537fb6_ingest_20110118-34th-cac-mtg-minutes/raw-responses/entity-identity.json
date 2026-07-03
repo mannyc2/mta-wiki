@@ -1,0 +1,272 @@
+{
+  "run_id": "2026-06-10T22-56-13-249Z_1976810-1c537fb6_ingest_20110118-34th-cac-mtg-minutes",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T01:24:37.331Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "d01-nycdot-agency",
+        "local_observation_id": "entity_nycdot_20110118_cac3",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot already matches existing registry record entity_nyc-dot (NYC DOT as Publisher, entity_name: New York City Department of Transportation). Same entity — no different canonical to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p001_c0007",
+            "source_quote": "Eric Beaton, Director of Transit Development of the New York City Department of Transportation (NYCDOT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d02-nyct-agency",
+        "local_observation_id": "entity_mta_nyct_20110118_cac3",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-nyct already matches existing registry record entity_mta-nyct (MTA NYCT Reference, entity_name: MTA New York City Transit). Same entity — no different canonical to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p001_c0009",
+            "source_quote": "Ted Orosz, the director of Long-Range Bus Planning for New York City Transit (NYCT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d03-hsh-firm",
+        "local_observation_id": "entity_hsh_20110118_cac3",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_hsh-20100921-cac already matches existing registry record entity_hsh-20100921-cac (Howard/Stein-Hudson Associates (HSH)). Registry record already has alias entity_hsh-20110118-cac3. Same entity.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p001_c0007",
+            "source_quote": "Arnie Bloch of Howard/Stein-Hudson Associates (HSH)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d04-akrf-firm",
+        "local_observation_id": "entity_akrf_20110118",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_akrf-20110118 already matches existing registry record entity_akrf-20110118 (AKRF, environmental consulting firm). Same entity.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p001_c0009",
+            "source_quote": "Chris Calvert of the firm AKRF, which is leading the Environmental Assessment (EA) for the NYCDOT"
+          }
+        ]
+      },
+      {
+        "decision_id": "d05-cac-committee",
+        "local_observation_id": "entity_34th_st_cac_20110118",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_34th-st-cac-20100921 already matches existing registry record entity_34th-st-cac-20100921 (34th Street Transitway CAC). Registry already has alias entity_34th-st-cac-20110118. Same entity.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p001_c0007",
+            "source_quote": "Community Advisory Committee (CAC) members"
+          }
+        ]
+      },
+      {
+        "decision_id": "d06-eric-beaton-person",
+        "local_observation_id": "entity_eric_beaton_20110118",
+        "decision": "new",
+        "proposed_relations": [
+          {
+            "relation_kind": "part_of_agency",
+            "subject_id": "entity_eric-beaton-20100921",
+            "object_id": "entity_nyc-dot",
+            "description": "Eric Beaton is Director of Transit Development at NYC DOT",
+            "evidence_refs": [
+              {
+                "source_id": "20110118_34th_cac_mtg_minutes",
+                "block_id": "p001_c0007",
+                "source_quote": "Eric Beaton, Director of Transit Development of the New York City Department of Transportation (NYCDOT)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Observation base_record_id entity_eric-beaton-20100921 matches registry record entity_eric-beaton-20100921 (Eric Beaton, alias entity_eric-beaton-20110118). Same entity. Proposed relation: works at NYCDOT.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p001_c0007",
+            "source_quote": "Eric Beaton, Director of Transit Development of the New York City Department of Transportation (NYCDOT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d07-ted-orosz-person",
+        "local_observation_id": "entity_ted_orosz_20110118",
+        "decision": "new",
+        "proposed_relations": [
+          {
+            "relation_kind": "part_of_agency",
+            "subject_id": "entity_ted-orosz-20100921",
+            "object_id": "entity_mta-nyct",
+            "description": "Ted Orosz is Director of Long-Range Bus Planning at MTA New York City Transit",
+            "evidence_refs": [
+              {
+                "source_id": "20110118_34th_cac_mtg_minutes",
+                "block_id": "p001_c0009",
+                "source_quote": "Ted Orosz, the director of Long-Range Bus Planning for New York City Transit (NYCT)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Observation base_record_id entity_ted-orosz-20100921 matches registry record entity_ted-orosz-20100921 (Ted Orosz, alias entity_ted-orosz-20110118). Same entity. Proposed relation: works at NYCT.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p001_c0009",
+            "source_quote": "Ted Orosz, the director of Long-Range Bus Planning for New York City Transit (NYCT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d08-arnie-bloch-person",
+        "local_observation_id": "entity_arnie_bloch_20110118",
+        "decision": "new",
+        "proposed_relations": [
+          {
+            "relation_kind": "part_of_agency",
+            "subject_id": "entity_arnie-bloch-20110118",
+            "object_id": "entity_hsh-20100921-cac",
+            "description": "Arnie Bloch works at Howard/Stein-Hudson Associates",
+            "evidence_refs": [
+              {
+                "source_id": "20110118_34th_cac_mtg_minutes",
+                "block_id": "p001_c0007",
+                "source_quote": "Arnie Bloch of Howard/Stein-Hudson Associates (HSH)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Observation base_record_id entity_arnie-bloch-20110118 matches registry record entity_arnie-bloch-20110118 (Arnie Bloch). Same entity. Proposed relation: works at HSH.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p001_c0007",
+            "source_quote": "Arnie Bloch of Howard/Stein-Hudson Associates (HSH)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d09-chris-calvert-person",
+        "local_observation_id": "entity_chris_calvert_20110118",
+        "decision": "new",
+        "proposed_relations": [
+          {
+            "relation_kind": "part_of_agency",
+            "subject_id": "entity_chris-calvert-20110118",
+            "object_id": "entity_akrf-20110118",
+            "description": "Chris Calvert works at AKRF",
+            "evidence_refs": [
+              {
+                "source_id": "20110118_34th_cac_mtg_minutes",
+                "block_id": "p001_c0009",
+                "source_quote": "Chris Calvert of the firm AKRF, which is leading the Environmental Assessment (EA) for the NYCDOT"
+              }
+            ]
+          },
+          {
+            "relation_kind": "contracted_by",
+            "subject_id": "entity_akrf-20110118",
+            "object_id": "entity_nyc-dot",
+            "description": "AKRF is leading the Environmental Assessment for NYCDOT",
+            "evidence_refs": [
+              {
+                "source_id": "20110118_34th_cac_mtg_minutes",
+                "block_id": "p001_c0009",
+                "source_quote": "Chris Calvert of the firm AKRF, which is leading the Environmental Assessment (EA) for the NYCDOT"
+              }
+            ]
+          }
+        ],
+        "rationale": "Observation base_record_id entity_chris-calvert-20110118 matches registry record entity_chris-calvert-20110118 (Chris Calvert). Same entity. Proposed relations: Chris Calvert at AKRF; AKRF contracted by NYCDOT.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p001_c0009",
+            "source_quote": "Chris Calvert of the firm AKRF, which is leading the Environmental Assessment (EA) for the NYCDOT"
+          }
+        ]
+      },
+      {
+        "decision_id": "d10-cb4-committee",
+        "local_observation_id": "entity_community_board_4_manhattan_20110118",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_community-board-4-manhattan-20110118 matches registry record entity_community-board-4-manhattan-20110118 (CB4 Manhattan). Same entity.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p001_c0013",
+            "source_quote": "Community Board 4 (Eighth to Twelfth Avenues)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d11-cb5-committee",
+        "local_observation_id": "entity_community_board_5_manhattan_20110118",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_community-board-5-manhattan-20110118 matches registry record entity_community-board-5-manhattan-20110118 (CB5 Manhattan). Same entity.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p002_c0004",
+            "source_quote": "Community Board 5 (Lexington to Eighth Avenues)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d12-cb6-committee",
+        "local_observation_id": "entity_community_board_6_manhattan_20110118",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_manhattan-community-board-6 matches registry record entity_manhattan-community-board-6 (Manhattan CB6, alias entity_community-board-6-manhattan-20110118). Same entity.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p003_c0002",
+            "source_quote": "Community Board 6 (FDR Drive to Lexington Avenue)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d13-will-carry-person",
+        "local_observation_id": "entity_will_carry_20110118",
+        "decision": "new",
+        "proposed_relations": [
+          {
+            "relation_kind": "part_of_agency",
+            "subject_id": "entity_will-carry-20110118",
+            "object_id": "entity_nyc-dot",
+            "description": "Will Carry is Project Manager of the 34th Street Transitway at NYCDOT",
+            "evidence_refs": [
+              {
+                "source_id": "20110118_34th_cac_mtg_minutes",
+                "block_id": "p001_c0007",
+                "source_quote": "He then introduced Will Carry as the new Project Manager of the 34 th Street Transitway project at NYCDOT."
+              }
+            ]
+          }
+        ],
+        "rationale": "Observation base_record_id entity_will-carry-20110118 matches registry record entity_will-carry-20110118 (Will Carry). Same entity. Proposed relation: works at NYCDOT.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p001_c0007",
+            "source_quote": "He then introduced Will Carry as the new Project Manager of the 34 th Street Transitway project at NYCDOT."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-22-11-499Z_2111393-7b3dd1a8_canonicalize_2026-06-10t22-56-13-249z-1976810-1c537fb6-ingest-20110118-34th-cac-mtg-minutes-entity-identity"
+}

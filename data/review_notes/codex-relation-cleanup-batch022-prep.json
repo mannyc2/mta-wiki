@@ -1,0 +1,470 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-22-endpoint-shape-batch022-prep",
+  "created_at": "2026-06-22T00:00:00.000Z",
+  "author": "codex",
+  "scope": "relation endpoint-shape cleanup prep only; no durable retire/apply writes",
+  "batch": "batch022",
+  "run_id_for_replacements": "2026-06-22_codex_relation_cleanup_batch022",
+  "submitted_at_for_dry_run": "2026-06-22T00:00:00.000Z",
+  "bucket": {
+    "name": "source records linked directly to metric claims",
+    "original_relation_kind": "has_metric",
+    "original_endpoint_shape": "source -> metric_claim",
+    "replacement_relation_kind": "includes",
+    "replacement_endpoint_shape": "source -> metric_claim",
+    "why_coherent": "All six originals use has_metric from a source record to a metric claim. Current endpoint rules allow has_metric only from project, route, corridor, entity, or event subjects, so source subjects create endpoint-shape issues. The replacement relation kind includes preserves the source-document containment semantics without using the shaped has_metric relation."
+  },
+  "exclusions_and_guards": {
+    "excluded_batches": [
+      "batch013",
+      "batch014",
+      "batch015",
+      "batch016",
+      "batch017",
+      "batch018",
+      "batch019",
+      "batch020",
+      "batch021"
+    ],
+    "retired_json_not_edited": true,
+    "submission_journals_not_edited": true,
+    "generated_outputs_not_edited": true,
+    "original_submission_guard": {
+      "retired_hits": [],
+      "batch013_021_hits": [],
+      "batch013_021_submission_count_checked": 45,
+      "retired_submission_count_checked": 127
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": []
+    }
+  },
+  "relationEndpointIssues_dry_run_acceptance": {
+    "tooling": "createSubmissionEntry plus relationEndpointIssues using accepted local observation ids by source",
+    "summary": {
+      "prepared_count": 6,
+      "accepted_count": 6,
+      "issue_count": 0,
+      "endpoint_shape_issue_count": 0
+    }
+  },
+  "prepared": [
+    {
+      "retire": {
+        "submission_id": "sub_15be12ac12d8f53c",
+        "original_record_id": "relation_meeting-doc-164961-procurement-has-metric-count",
+        "original_local_observation_id": "relation_meeting_doc_164961_procurement_has_metric_count",
+        "original_relation_kind": "has_metric",
+        "original_subject_kind": "source",
+        "original_subject_id": "source_meeting-doc-164961",
+        "original_subject_local_observation_id": "source_meeting_doc_164961",
+        "original_object_kind": "metric_claim",
+        "original_object_id": "metric_meeting-doc-164961-actions-count",
+        "original_object_local_observation_id": "metric_meeting_doc_164961_actions_count",
+        "reason": "The original has_metric relation uses a source subject, which is outside the current allowed subject kinds for has_metric."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_9a2589be08b84efd",
+        "input": {
+          "source_id": "meeting_doc_164961",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch022_meeting_doc_164961_includes_actions_count",
+          "label": "Procurement agenda includes action-count metric",
+          "raw_text": "Procurement agenda includes action-count metric",
+          "payload": {
+            "relation_kind": "includes",
+            "subject_local_observation_id": "source_meeting_doc_164961",
+            "object_local_observation_id": "metric_meeting_doc_164961_actions_count",
+            "description": "The procurement agenda source includes the metric claim for one action requiring majority vote."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_164961",
+              "evidence_id": "meeting_doc_164961#p002_c0003",
+              "source_path": "raw/sources/meeting_doc_164961/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0003",
+              "text_sha256": "sha256:1a9eb1da37df5a609e902cacdbb455376c9305998546e5fba6733f01e318f7cd",
+              "text_source": "raw_text",
+              "role": "relation"
+            },
+            {
+              "source_id": "meeting_doc_164961",
+              "evidence_id": "meeting_doc_164961#p003_c0010",
+              "source_path": "raw/sources/meeting_doc_164961/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0010",
+              "text_sha256": "sha256:64335e45d42c8b17f541b86d2fdf5017c4a7f0b9b0e80d70ffda4475c0a56d8b",
+              "text_source": "raw_text",
+              "role": "relation"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_26f07eed31466c37",
+        "original_record_id": "relation_meeting-doc-164961-procurement-has-metric-expenditure",
+        "original_local_observation_id": "relation_meeting_doc_164961_procurement_has_metric_expenditure",
+        "original_relation_kind": "has_metric",
+        "original_subject_kind": "source",
+        "original_subject_id": "source_meeting-doc-164961",
+        "original_subject_local_observation_id": "source_meeting_doc_164961",
+        "original_object_kind": "metric_claim",
+        "original_object_id": "metric_meeting-doc-164961-expenditure-amount",
+        "original_object_local_observation_id": "metric_meeting_doc_164961_expenditure_amount",
+        "reason": "The original has_metric relation uses a source subject, which is outside the current allowed subject kinds for has_metric."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_576e0cde4b5cf9b0",
+        "input": {
+          "source_id": "meeting_doc_164961",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch022_meeting_doc_164961_includes_expenditure_amount",
+          "label": "Procurement agenda includes expenditure metric",
+          "raw_text": "Procurement agenda includes expenditure metric",
+          "payload": {
+            "relation_kind": "includes",
+            "subject_local_observation_id": "source_meeting_doc_164961",
+            "object_local_observation_id": "metric_meeting_doc_164961_expenditure_amount",
+            "description": "The procurement agenda source includes the metric claim for the $9.5M proposed estimated expenditure."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_164961",
+              "evidence_id": "meeting_doc_164961#p002_c0003",
+              "source_path": "raw/sources/meeting_doc_164961/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0003",
+              "text_sha256": "sha256:1a9eb1da37df5a609e902cacdbb455376c9305998546e5fba6733f01e318f7cd",
+              "text_source": "raw_text",
+              "role": "relation"
+            },
+            {
+              "source_id": "meeting_doc_164961",
+              "evidence_id": "meeting_doc_164961#p003_c0010",
+              "source_path": "raw/sources/meeting_doc_164961/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0010",
+              "text_sha256": "sha256:64335e45d42c8b17f541b86d2fdf5017c4a7f0b9b0e80d70ffda4475c0a56d8b",
+              "text_source": "raw_text",
+              "role": "relation"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_53d64154e12f6591",
+        "original_record_id": "relation_mta-has-metric-total-program",
+        "original_local_observation_id": "relation_mta_has_metric_total_program",
+        "original_relation_kind": "has_metric",
+        "original_subject_kind": "source",
+        "original_subject_id": "source_meeting-doc-155621",
+        "original_subject_local_observation_id": "source_2015_2019_capital_amendment_6",
+        "original_object_kind": "metric_claim",
+        "original_object_id": "metric_total-program-proposed-2024",
+        "original_object_local_observation_id": "metric_total_program_proposed_2024",
+        "reason": "The original has_metric relation uses a source subject, which is outside the current allowed subject kinds for has_metric."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_71b08166a97ba604",
+        "input": {
+          "source_id": "meeting_doc_155621",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch022_meeting_doc_155621_includes_total_program_metric",
+          "label": "Capital amendment source includes total-program metric",
+          "raw_text": "Capital amendment source includes total-program metric",
+          "payload": {
+            "relation_kind": "includes",
+            "subject_local_observation_id": "source_2015_2019_capital_amendment_6",
+            "object_local_observation_id": "metric_total_program_proposed_2024",
+            "description": "The capital amendment source includes the metric claim for the proposed 2015-2019 total program."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_155621",
+              "evidence_id": "meeting_doc_155621#p002_c0004",
+              "source_path": "raw/sources/meeting_doc_155621/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0004",
+              "text_sha256": "sha256:034d78fbf3e2adf0a3d8771eb606ef0b4a14f3ee10ef1a43f7245ece474a1fc0",
+              "text_source": "raw_text",
+              "role": "evidence"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_2db52e67cd18151c",
+        "original_record_id": "relation_mta-has-total-positions",
+        "original_local_observation_id": "relation_mta_has_total_positions",
+        "original_relation_kind": "has_metric",
+        "original_subject_kind": "source",
+        "original_subject_id": "source_meeting-doc-124136",
+        "original_subject_local_observation_id": "source_mta_july_financial_plan_2023_midyear_positions",
+        "original_object_kind": "metric_claim",
+        "original_object_id": "metric_total-positions-midyear-forecast_3",
+        "original_object_local_observation_id": "metric_total_positions_midyear_forecast",
+        "reason": "The original has_metric relation uses a source subject, which is outside the current allowed subject kinds for has_metric."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_a058501c26ec3883",
+        "input": {
+          "source_id": "meeting_doc_124136",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch022_meeting_doc_124136_includes_total_positions_metric",
+          "label": "Midyear forecast source includes total-positions metric",
+          "raw_text": "Midyear forecast source includes total-positions metric",
+          "payload": {
+            "relation_kind": "includes",
+            "subject_local_observation_id": "source_mta_july_financial_plan_2023_midyear_positions",
+            "object_local_observation_id": "metric_total_positions_midyear_forecast",
+            "description": "The midyear financial plan source includes the metric claim for total positions in the midyear forecast."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_124136",
+              "evidence_id": "meeting_doc_124136#p001_c0002",
+              "source_path": "raw/sources/meeting_doc_124136/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0002",
+              "text_sha256": "sha256:cd8bfbaf72cae19e8ecbc2e72438bd33399f5253ec46ad182566bf4cd438beed",
+              "text_source": "raw_text",
+              "role": "relation"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_516dca7aa29a1cf5",
+        "original_record_id": "relation_report-has-elevator-metric",
+        "original_local_observation_id": "relation_report_has_elevator_metric",
+        "original_relation_kind": "has_metric",
+        "original_subject_kind": "source",
+        "original_subject_id": "source_meeting-doc-135296",
+        "original_subject_local_observation_id": "source_mnr_elevator_escalator_2023",
+        "original_object_kind": "metric_claim",
+        "original_object_id": "metric_passenger-elevator-availability-jan2023",
+        "original_object_local_observation_id": "metric_passenger_elevator_availability_jan2023",
+        "reason": "The original has_metric relation uses a source subject, which is outside the current allowed subject kinds for has_metric."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_d516310993283d34",
+        "input": {
+          "source_id": "meeting_doc_135296",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch022_meeting_doc_135296_includes_elevator_availability_metric",
+          "label": "Elevator/escalator report includes passenger elevator availability metric",
+          "raw_text": "Elevator/escalator report includes passenger elevator availability metric",
+          "payload": {
+            "relation_kind": "includes",
+            "subject_local_observation_id": "source_mnr_elevator_escalator_2023",
+            "object_local_observation_id": "metric_passenger_elevator_availability_jan2023",
+            "description": "The elevator/escalator report source includes the passenger elevator availability metric claim."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_135296",
+              "evidence_id": "meeting_doc_135296#p002_c0003",
+              "source_path": "raw/sources/meeting_doc_135296/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0003",
+              "text_sha256": "sha256:87aa1cb81aa57453aa6ea5ed6a2c14973c4ffa44a04f094091a60ba267ab17ee",
+              "text_source": "raw_text"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_3c9282ecf0523bf6",
+        "original_record_id": "relation_report-has-escalator-5-6-availability-metric",
+        "original_local_observation_id": "relation_report_has_escalator_5_6_availability_metric",
+        "original_relation_kind": "has_metric",
+        "original_subject_kind": "source",
+        "original_subject_id": "source_meeting-doc-135296",
+        "original_subject_local_observation_id": "source_mnr_elevator_escalator_2023",
+        "original_object_kind": "metric_claim",
+        "original_object_id": "metric_escalator5-availability-2023",
+        "original_object_local_observation_id": "metric_escalator5_availability_2023",
+        "reason": "The original has_metric relation uses a source subject, which is outside the current allowed subject kinds for has_metric."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_ac9a7be461349b77",
+        "input": {
+          "source_id": "meeting_doc_135296",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch022_meeting_doc_135296_includes_escalator_availability_metric",
+          "label": "Elevator/escalator report includes escalator availability metric",
+          "raw_text": "Elevator/escalator report includes escalator availability metric",
+          "payload": {
+            "relation_kind": "includes",
+            "subject_local_observation_id": "source_mnr_elevator_escalator_2023",
+            "object_local_observation_id": "metric_escalator5_availability_2023",
+            "description": "The elevator/escalator report source includes the escalator availability metric claim."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_135296",
+              "evidence_id": "meeting_doc_135296#p008_c0002",
+              "source_path": "raw/sources/meeting_doc_135296/blocks.jsonl",
+              "page_number": 8,
+              "block_id": "p008_c0002",
+              "text_sha256": "sha256:a038392fe5d55eb997b90fdddd9b8732fc5d40c1d3aa3e7efae05efd1330144f",
+              "text_source": "raw_text"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    }
+  ],
+  "source_evidence_blocks_checked": [
+    {
+      "source_id": "meeting_doc_164961",
+      "block_id": "p002_c0003",
+      "page_number": 2,
+      "text_sha256": "sha256:1a9eb1da37df5a609e902cacdbb455376c9305998546e5fba6733f01e318f7cd",
+      "evidence_summary": "States the procurement agenda includes 1 action for a proposed estimated expenditure of $9.5M."
+    },
+    {
+      "source_id": "meeting_doc_164961",
+      "block_id": "p003_c0010",
+      "page_number": 3,
+      "text_sha256": "sha256:64335e45d42c8b17f541b86d2fdf5017c4a7f0b9b0e80d70ffda4475c0a56d8b",
+      "evidence_summary": "Table-like block lists one miscellaneous service-contract action totaling $9.5M."
+    },
+    {
+      "source_id": "meeting_doc_155621",
+      "block_id": "p002_c0004",
+      "page_number": 2,
+      "text_sha256": "sha256:034d78fbf3e2adf0a3d8771eb606ef0b4a14f3ee10ef1a43f7245ece474a1fc0",
+      "evidence_summary": "Capital program table includes the proposed Total MTA Capital Program value."
+    },
+    {
+      "source_id": "meeting_doc_124136",
+      "block_id": "p001_c0002",
+      "page_number": 1,
+      "text_sha256": "sha256:cd8bfbaf72cae19e8ecbc2e72438bd33399f5253ec46ad182566bf4cd438beed",
+      "evidence_summary": "Mid-year forecast table includes Total Positions values."
+    },
+    {
+      "source_id": "meeting_doc_135296",
+      "block_id": "p002_c0003",
+      "page_number": 2,
+      "text_sha256": "sha256:87aa1cb81aa57453aa6ea5ed6a2c14973c4ffa44a04f094091a60ba267ab17ee",
+      "evidence_summary": "Passenger elevator availability chart block lists monthly 2023 elevator availability percentages."
+    },
+    {
+      "source_id": "meeting_doc_135296",
+      "block_id": "p008_c0002",
+      "page_number": 8,
+      "text_sha256": "sha256:a038392fe5d55eb997b90fdddd9b8732fc5d40c1d3aa3e7efae05efd1330144f",
+      "evidence_summary": "Escalator availability table lists Escalator 5 and 6 availability at 51.6%."
+    }
+  ],
+  "conductor_application_plan": {
+    "only_after_conflict_free_checkpoint": true,
+    "retire_submission_ids": [
+      "sub_15be12ac12d8f53c",
+      "sub_26f07eed31466c37",
+      "sub_53d64154e12f6591",
+      "sub_2db52e67cd18151c",
+      "sub_516dca7aa29a1cf5",
+      "sub_3c9282ecf0523bf6"
+    ],
+    "append_replacement_entries_to": "data/submissions/2026-06-22_codex_relation_cleanup_batch022.jsonl",
+    "replacement_submission_ids": [
+      "sub_9a2589be08b84efd",
+      "sub_576e0cde4b5cf9b0",
+      "sub_71b08166a97ba604",
+      "sub_a058501c26ec3883",
+      "sub_d516310993283d34",
+      "sub_ac9a7be461349b77"
+    ]
+  },
+  "blockers": [],
+  "commands_run": [
+    "git status --short -- data/review_notes/codex-relation-cleanup-batch022-prep.json data/submission-overrides/retired.json data/submissions/2026-06-22_codex_relation_cleanup_batch021.jsonl data/submissions/2026-06-22_codex_relation_cleanup_batch022.jsonl data/canonical/relations.jsonl packages/pipeline/src/records/relations.ts",
+    "sed -n '220,255p' packages/pipeline/src/records/relations.ts",
+    "for f in data/submissions/2026-06-22_codex_relation_cleanup_batch{013..021}.jsonl; do [ -f \"$f\" ] && printf '%s ' \"$f\" && wc -l < \"$f\"; done",
+    "bun --eval '<deterministic endpoint-shape inventory excluding retired submissions and batches013-021>'",
+    "bun --eval '<inspect has_metric source->metric_claim candidate bucket>'",
+    "bun --eval '<dry-run createSubmissionEntry plus relationEndpointIssues for six includes replacements>'",
+    "bun --eval '<guard originals against retired.json and batches013-021>'",
+    "rg -n '<replacement ids and local ids>' data -S",
+    "jq -c 'select((.submission_ids // []) as $s | any($s[]; . == \"sub_15be12ac12d8f53c\" or . == \"sub_26f07eed31466c37\" or . == \"sub_53d64154e12f6591\" or . == \"sub_2db52e67cd18151c\" or . == \"sub_516dca7aa29a1cf5\" or . == \"sub_3c9282ecf0523bf6\")) | {record_id,local_observation_id,display_name,submission_ids,payload,evidence_refs}' data/canonical/relations.jsonl",
+    "jq -c '<selected evidence blocks from raw/sources/meeting_doc_164961, meeting_doc_155621, meeting_doc_124136, and meeting_doc_135296>'",
+    "jq empty data/review_notes/codex-relation-cleanup-batch022-prep.json && jq '{note_id,batch,prepared_count:(.prepared|length), blockers, replacement_submission_ids:.conductor_application_plan.replacement_submission_ids}' data/review_notes/codex-relation-cleanup-batch022-prep.json",
+    "bun --eval '<rehydrate artifact replacement inputs through createSubmissionEntry plus relationEndpointIssues>'",
+    "git status --short -- data/review_notes/codex-relation-cleanup-batch022-prep.json data/submission-overrides/retired.json data/submissions/2026-06-22_codex_relation_cleanup_batch022.jsonl data/canonical/relations.jsonl packages/pipeline/src/records/relations.ts",
+    "git diff --no-index --check /dev/null data/review_notes/codex-relation-cleanup-batch022-prep.json"
+  ],
+  "commands_intentionally_not_run": [
+    "materialize",
+    "export-jsonl --verify",
+    "full validate CLI",
+    "provider-backed commands",
+    "canonicalize",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize"
+  ]
+}

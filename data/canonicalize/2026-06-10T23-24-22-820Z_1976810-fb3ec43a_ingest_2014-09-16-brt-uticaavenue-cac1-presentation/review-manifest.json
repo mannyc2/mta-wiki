@@ -1,0 +1,16 @@
+{
+  "run_id": "2026-06-10T23-24-22-820Z_1976810-fb3ec43a_ingest_2014-09-16-brt-uticaavenue-cac1-presentation",
+  "generated_at": "2026-06-11T04:05:04.695Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "reviewed_decision_count": 0,
+  "pass_count": 0,
+  "fail_count": 0,
+  "unsure_count": 0,
+  "paths": {
+    "verdicts_jsonl": "data/canonicalize/2026-06-10T23-24-22-820Z_1976810-fb3ec43a_ingest_2014-09-16-brt-uticaavenue-cac1-presentation/verdicts.jsonl",
+    "manifest": "data/canonicalize/2026-06-10T23-24-22-820Z_1976810-fb3ec43a_ingest_2014-09-16-brt-uticaavenue-cac1-presentation/review-manifest.json"
+  }
+}

@@ -1,0 +1,372 @@
+{
+  "note_id": "codex-identity-batch221-entity-prep",
+  "batch": "identity221",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "scope": {
+    "operation": "prepare_identity_cleanup_artifact_only",
+    "checkpoint_after": "identity220-relation220",
+    "issue_type": "duplicate_global_identity",
+    "global_kind": "entity",
+    "selection_note": "Selected high-confidence ENTITY duplicate_global_identity backlog items where the validator shared key plus record evidence identify either the same entity or a clear false-friend pair. No provider-backed, materialize, validate, export, canonical, generated, override, LOG, or manifest mutation was performed.",
+    "write_limit": "Exactly one artifact was written: data/review_notes/codex-identity-batch221-entity-prep.json."
+  },
+  "prepared_count": 10,
+  "decision_type_counts": {
+    "alias_merge": 8,
+    "do_not_merge": 2
+  },
+  "proposed_durable_decisions": [
+    {
+      "decision_id": "identity221-entity-001",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias": "entity_167646-grand-central-madison",
+      "target": "entity_meeting-doc-121001-gcmoc",
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_grand-central-madison-concourse-operating-company"
+        ],
+        "message": "Global entity records entity_167646-grand-central-madison and entity_meeting-doc-121001-gcmoc share identity key entity_grand-central-madison-concourse-operating-company."
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_167646-grand-central-madison",
+          "evidence_ref": "meeting_doc_167646#p256_c0008",
+          "quote": "Grand Central Madison Concourse Operating Company"
+        },
+        {
+          "record_id": "entity_meeting-doc-121001-gcmoc",
+          "evidence_ref": "meeting_doc_121001#p001_c0007",
+          "quote": "Grand Central Madison Operating Company (GCMOC), which is responsible for the LIRR-operating portion of Grand Central Terminal"
+        }
+      ],
+      "reason": "Both records identify the same Grand Central Madison operating/concourse company entity. The target is the established multi-source GCMOC/GCMCOC cluster; the alias is a one-source meeting_doc_167646 occurrence.",
+      "guard_notes": "Treat Concourse Operating Company and Operating Company spelling/acronym variants as the same entity only in this GCM operating-company context; do not merge with Grand Central Madison station/project records or LIRR itself."
+    },
+    {
+      "decision_id": "identity221-entity-002",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias": "entity_167646-sirtoa",
+      "target": "entity_meeting-doc-100241-staten-island-railway",
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_meeting-doc-100241-staten-island-railway",
+          "entity_staten-island-rapid-transit-operating-authority"
+        ],
+        "messages": [
+          "Global entity records entity_167646-sirtoa and entity_meeting-doc-100241-staten-island-railway share identity key entity_meeting-doc-100241-staten-island-railway.",
+          "Global entity records entity_167646-sirtoa and entity_meeting-doc-100241-staten-island-railway share identity key entity_staten-island-rapid-transit-operating-authority."
+        ]
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_167646-sirtoa",
+          "evidence_ref": "meeting_doc_167646#p256_c0008",
+          "quote": "Staten Island Rapid Transit Operating Authority"
+        },
+        {
+          "record_id": "entity_meeting-doc-100241-staten-island-railway",
+          "evidence_ref": "validator_record",
+          "quote": "Target record carries Staten Island Railway/SIRTOA identity keys in the current identity-review records snapshot."
+        }
+      ],
+      "reason": "Both records identify the Staten Island Railway/SIRTOA operating entity. The alias is a thin legal-name occurrence from meeting_doc_167646; the target is the established Staten Island Railway cluster.",
+      "guard_notes": "Do not use this merge as a precedent for merging Staten Island Railway service/corridor records with the operating authority entity."
+    },
+    {
+      "decision_id": "identity221-entity-003",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias": "entity_167646-triborough-bridge-tunnel",
+      "target": "entity_mta-bridges-and-tunnels",
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_triborough-bridge-and-tunnel-authority"
+        ],
+        "message": "Global entity records entity_167646-triborough-bridge-tunnel and entity_mta-bridges-and-tunnels share identity key entity_triborough-bridge-and-tunnel-authority."
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_167646-triborough-bridge-tunnel",
+          "evidence_ref": "meeting_doc_167646#p256_c0008",
+          "quote": "Triborough Bridge and Tunnel Authority"
+        },
+        {
+          "record_id": "entity_mta-bridges-and-tunnels",
+          "evidence_ref": "validator_record",
+          "quote": "Target record carries MTA Bridges and Tunnels / TBTA / Triborough Bridge and Tunnel Authority identity in the current identity-review records snapshot."
+        }
+      ],
+      "reason": "Triborough Bridge and Tunnel Authority is the formal/legal identity behind MTA Bridges and Tunnels/TBTA. The target is the established B&T/TBTA agency cluster.",
+      "guard_notes": "Keep committee/member records and individual B&T officers separate from the agency identity."
+    },
+    {
+      "decision_id": "identity221-entity-004",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias": "entity_college-point-bus-depot",
+      "target": "entity_college-point-depot",
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_college-point-depot"
+        ],
+        "message": "Global entity records entity_college-point-bus-depot and entity_college-point-depot share identity key entity_college-point-depot."
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_college-point-bus-depot",
+          "evidence_ref": "meeting_doc_201776#p288_c0001",
+          "quote": "College Point (Queens)"
+        },
+        {
+          "record_id": "entity_college-point-depot",
+          "evidence_ref": "meeting_doc_138436#p001_c0009",
+          "quote": "College Point Depot"
+        }
+      ],
+      "reason": "Both records identify the same Queens bus depot. The alias record's depot-vs-agency typing is extraction noise; the target is the established bus-depot record with operational details.",
+      "guard_notes": "Merge only the facility identity; do not merge employees assigned to College Point Depot into the depot entity."
+    },
+    {
+      "decision_id": "identity221-entity-005",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias": "entity_community-board-12-brooklyn",
+      "target": "entity_brooklyn-community-board-12",
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_community-board-12",
+          "entity_community-board-12-brooklyn"
+        ],
+        "messages": [
+          "Global entity records entity_brooklyn-community-board-12 and entity_community-board-12-brooklyn share identity key entity_community-board-12.",
+          "Global entity records entity_brooklyn-community-board-12 and entity_community-board-12-brooklyn share identity key entity_community-board-12-brooklyn."
+        ]
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_community-board-12-brooklyn",
+          "evidence_ref": "church_ave_cb12_jun2019#p001_c0002",
+          "quote": "Community Board 12 | June 25, 2019"
+        },
+        {
+          "record_id": "entity_brooklyn-community-board-12",
+          "evidence_ref": "bay_pkwy_cropsey_ave_cb12_jun2025#p001_c0002",
+          "quote": "Brooklyn Community Board 12 Transportation Committee"
+        }
+      ],
+      "reason": "Both records identify Brooklyn Community Board 12 / its transportation committee context. The target is the broader multi-source Brooklyn CB12 cluster.",
+      "guard_notes": "This is borough-specific Brooklyn CB12 only; do not merge with Community Board 12 records from other boroughs."
+    },
+    {
+      "decision_id": "identity221-entity-006",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias": "entity_queens-cb5-grand-ave-2024",
+      "target": "entity_community-board-5-queens-2015",
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_queens-community-board-5"
+        ],
+        "message": "Global entity records entity_community-board-5-queens-2015 and entity_queens-cb5-grand-ave-2024 share identity key entity_queens-community-board-5."
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_queens-cb5-grand-ave-2024",
+          "evidence_ref": "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024#p001_c0002",
+          "quote": "Queens Community Board 5 Transportation Committee"
+        },
+        {
+          "record_id": "entity_community-board-5-queens-2015",
+          "evidence_ref": "fresh_pond_rd_may2019#p001_c0002",
+          "quote": "Community Board 5 Transportation Committee | May 21, 2019"
+        }
+      ],
+      "reason": "Both records identify Queens Community Board 5 / its transportation committee. The target is the broader multi-source Queens CB5 cluster.",
+      "guard_notes": "This is borough-specific Queens CB5 only; do not merge with Manhattan/Bronx/Brooklyn Community Board 5 records."
+    },
+    {
+      "decision_id": "identity221-entity-007",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias": "entity_meeting-doc-87841-mta-treasury",
+      "target": "entity_meeting-doc-111901-mta-treasury",
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_mta-treasury-department"
+        ],
+        "message": "Global entity records entity_meeting-doc-111901-mta-treasury and entity_meeting-doc-87841-mta-treasury share identity key entity_mta-treasury-department."
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-111901-mta-treasury",
+          "evidence_ref": "meeting_doc_111901#p034_c0005",
+          "quote": "MTA Treasury Department"
+        },
+        {
+          "record_id": "entity_meeting-doc-87841-mta-treasury",
+          "evidence_ref": "validator_edge",
+          "quote": "Validator shared identity key entity_mta-treasury-department."
+        }
+      ],
+      "reason": "Both records identify the same MTA Treasury Department. The target is the richer multi-source MTA Treasury cluster.",
+      "guard_notes": "Do not merge Treasury with MTA OMB or parent MTA; those are related finance entities, not this department identity."
+    },
+    {
+      "decision_id": "identity221-entity-008",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias": "entity_permanent-citizens-advisory-committee-pcac",
+      "target": "entity_meeting-doc-113891-pcac",
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_permanent-citizens-advisory-committee-pcac",
+          "entity_permanent-citizens-advisory-committee-to-the-mta",
+          "entity_permanent-citizens-advisory-committee-to-the-mta-pcac"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-113891-pcac and entity_permanent-citizens-advisory-committee-pcac share identity key entity_permanent-citizens-advisory-committee-pcac.",
+          "Global entity records entity_meeting-doc-113891-pcac and entity_permanent-citizens-advisory-committee-pcac share identity key entity_permanent-citizens-advisory-committee-to-the-mta.",
+          "Global entity records entity_meeting-doc-113891-pcac and entity_permanent-citizens-advisory-committee-pcac share identity key entity_permanent-citizens-advisory-committee-to-the-mta-pcac."
+        ]
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-113891-pcac",
+          "evidence_ref": "2012_10_brt_webster_cac3_meeting_summary#p005_c0003",
+          "quote": "Permanent Citizens Advisory Committee to the MTA"
+        },
+        {
+          "record_id": "entity_permanent-citizens-advisory-committee-pcac",
+          "evidence_ref": "meeting_doc_201776#p290_c0001",
+          "quote": "Permanent Citizens Advisory Committee to the MTA (PCAC)"
+        }
+      ],
+      "reason": "Both records identify the Permanent Citizens Advisory Committee to the MTA (PCAC). The target is the existing multi-source PCAC cluster.",
+      "guard_notes": "Keep individual PCAC staff/speakers and rider testimony separate from the advisory committee entity."
+    },
+    {
+      "decision_id": "identity221-entity-009",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "alias": "entity_meeting-doc-twu",
+      "target": "entity_twu-local-100",
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_transport-workers-union",
+          "entity_transport-workers-union-twu"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-twu and entity_twu-local-100 share identity key entity_transport-workers-union.",
+          "Global entity records entity_meeting-doc-twu and entity_twu-local-100 share identity key entity_transport-workers-union-twu."
+        ]
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-twu",
+          "evidence_ref": "meeting_doc_109971#p008_c0002",
+          "quote": "Landmark agreement with TWU"
+        },
+        {
+          "record_id": "entity_twu-local-100",
+          "evidence_ref": "flatbush_ave_cb8_jun2025#p015_c0003",
+          "quote": "TWU Local 100"
+        }
+      ],
+      "reason": "The generic Transport Workers Union/TWU record and the specific TWU Local 100 record are related labor-union identities but not the same canonical entity. Local 100 is a local affiliate, not necessarily identical to the parent/generic TWU mention.",
+      "guard_notes": "A future reviewer may merge generic TWU mentions into Local 100 only when source evidence explicitly says Local 100; absent that, keep generic TWU and TWU Local 100 distinct."
+    },
+    {
+      "decision_id": "identity221-entity-010",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "alias": "entity_ny-sdod-lga-aa",
+      "target": "entity_ny-state-dot",
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_new-york-state-department-of-transportation"
+        ],
+        "message": "Global entity records entity_ny-sdod-lga-aa and entity_ny-state-dot share identity key entity_new-york-state-department-of-transportation."
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_ny-sdod-lga-aa",
+          "evidence_ref": "110622_lga_aa_slides#p004_c0011",
+          "quote": "New York State Department of Transportation"
+        },
+        {
+          "record_id": "entity_ny-state-dot",
+          "evidence_ref": "meeting_doc_192561#p003_c0008",
+          "quote": "Commissioner of Transportation"
+        }
+      ],
+      "reason": "entity_ny-sdod-lga-aa is the NYSDOT agency cluster, while entity_ny-state-dot has a role-shaped display name/evidence for Commissioner of Transportation despite an NYSDOT payload. Until the role-shaped record is corrected or retired, it should not be merged into the agency cluster.",
+      "guard_notes": "This protects agency-vs-role/person semantics. If later evidence proves entity_ny-state-dot is only a mislabeled NYSDOT agency record, revisit as a data cleanup rather than blindly merging this pair."
+    }
+  ],
+  "skipped_review_only": [
+    {
+      "candidate": "entity_167646-mta-real-estate <> entity_mta-real-estate / entity_mta-real-estate-department",
+      "reason": "High apparent same-department signal, but target selection is ambiguous between a huge existing MTA Real Estate cluster and a precise one-source MTA Real Estate Department record. Needs a dedicated MTA Real Estate target-selection cleanup."
+    },
+    {
+      "candidate": "entity_mta-real-estate-tod <> entity_mta-tod-meeting-doc-160301 / entity_mta-transit-oriented-development",
+      "reason": "Likely same TOD department/program family, but current candidates form a three-record cluster and should be handled together to avoid selecting the wrong canonical target."
+    },
+    {
+      "candidate": "entity_meeting-doc-102746-committee <> Metro-North agency records",
+      "reason": "Validator keys point at Metro-North, but the left record appears committee-shaped. Keep for reviewer-only inspection; likely agency/committee contamination."
+    },
+    {
+      "candidate": "entity_mabstoa <> entity_mta-bus-company",
+      "reason": "Known subsidiary/operator false-friend risk. MaBSTOA and MTA Bus Company are related bus entities but not automatically identical."
+    },
+    {
+      "candidate": "entity_meeting-doc-128981-nyct <> broad MTA / subsidiary records",
+      "reason": "Many shared keys are overbroad MTA/NYCT parent-subsidiary contamination. Needs a separate do-not-merge sweep rather than opportunistic pair decisions."
+    },
+    {
+      "candidate": "entity_stv-20100615 <> entity_stv-inc",
+      "reason": "Likely same consulting firm, but prior batches already handled nearby STV aliases. Skipped to avoid duplicate prep without checking applied-vs-pending state in overrides."
+    }
+  ],
+  "commands_run": [
+    "pwd && rg -n \"identity220|duplicate_global_identity|ENTITY|entity\" data docs packages wiki -g '*.json' -g '*.jsonl' -g '*.md'",
+    "find data -maxdepth 4 -type f | sort | rg 'identity|review|override|canonical|materialized'",
+    "git status --short",
+    "find data/review_notes -maxdepth 1 -type f | sort | tail -40",
+    "jq -r 'keys' data/identity-review/latest.json 2>/dev/null || true",
+    "head -5 data/identity-review/validation_issues.jsonl && head -3 data/identity-review/candidate_edges.jsonl && head -2 data/identity-review/records.jsonl",
+    "find data/review_notes -maxdepth 1 -type f -name '*identity*entity*prep*.json' -o -name '*identity*batch*.json' | sort | tail -20",
+    "jq . data/review_notes/codex-identity-batch220-prep.json | head -220",
+    "jq -r 'select(.kind==\"entity\" and (.validation_issue_codes // [] | index(\"duplicate_global_identity\"))) | [.left_record_id,.right_record_id,(.shared_keys|join(\";\")),(.sources|join(\";\")),(.validation_messages|join(\" | \"))] | @tsv' data/identity-review/candidate_edges.jsonl | head -120",
+    "jq -r 'select(.code==\"duplicate_global_identity\" and (.message|test(\"Global entity records\"))) | .message' data/identity-review/validation_issues.jsonl | head -120",
+    "jq -r '.top_clusters[]? | select(.kind==\"entity\") | [.cluster_id,.size,.score] | @tsv' data/identity-review/latest.json 2>/dev/null | head -40",
+    "rg -n \"entity_college-point-bus-depot|entity_college-point-depot|entity_brooklyn-community-board-12|entity_community-board-12-brooklyn|entity_community-board-5-queens-2015|entity_queens-cb5-grand-ave-2024|entity_167646-grand-central-madison|entity_meeting-doc-121001-gcmoc|entity_167646-sirtoa|entity_meeting-doc-100241-staten-island-railway|entity_167646-triborough-bridge-tunnel|entity_mta-bridges-and-tunnels|entity_meeting-doc-111901-mta-treasury|entity_meeting-doc-87841-mta-treasury|entity_meeting-doc-113891-pcac|entity_permanent-citizens-advisory-committee-pcac|entity_meeting-doc-124881-mnr|entity_metro-north-railroad|entity_167646-mta-real-estate|entity_mta-real-estate-department\" data/review_notes/*.json",
+    "jq -c 'select(.record_id as $id | [\"entity_college-point-bus-depot\",\"entity_college-point-depot\",\"entity_brooklyn-community-board-12\",\"entity_community-board-12-brooklyn\",\"entity_community-board-5-queens-2015\",\"entity_queens-cb5-grand-ave-2024\",\"entity_167646-grand-central-madison\",\"entity_meeting-doc-121001-gcmoc\",\"entity_167646-sirtoa\",\"entity_meeting-doc-100241-staten-island-railway\",\"entity_167646-triborough-bridge-tunnel\",\"entity_mta-bridges-and-tunnels\",\"entity_meeting-doc-111901-mta-treasury\",\"entity_meeting-doc-87841-mta-treasury\",\"entity_meeting-doc-113891-pcac\",\"entity_permanent-citizens-advisory-committee-pcac\",\"entity_meeting-doc-124881-mnr\",\"entity_metro-north-railroad\",\"entity_167646-mta-real-estate\",\"entity_mta-real-estate-department\",\"entity_mta-real-estate\"] | index($id))' data/identity-review/records.jsonl",
+    "jq -r 'select(.kind==\"entity\" and (.validation_issue_codes // [] | index(\"duplicate_global_identity\")) and ((.left_record_id|test(\"college-point|brooklyn-community-board-12|community-board-5-queens|167646-grand-central|167646-sirtoa|167646-triborough|111901-mta-treasury|113891-pcac|124881-mnr|167646-mta-real-estate\")) or (.right_record_id|test(\"college-point|community-board-12-brooklyn|queens-cb5|121001-gcmoc|100241-staten|mta-bridges-and-tunnels|87841-mta-treasury|permanent-citizens|metro-north-railroad|mta-real-estate\")))) | {left_record_id,right_record_id,shared_keys,sources,validation_messages,edge_id}' data/identity-review/candidate_edges.jsonl",
+    "jq '{merges:(.merges? // . // []) | length}' data/identity-overrides/merges.json 2>/dev/null; jq '{dnm:(.do_not_merge? // . // []) | length}' data/identity-overrides/do-not-merge.json 2>/dev/null",
+    "jq -r 'select(.record_id|IN(\"entity_community-board-5-queens-2015\",\"entity_queens-cb5-grand-ave-2024\",\"entity_meeting-doc-111901-mta-treasury\",\"entity_meeting-doc-87841-mta-treasury\",\"entity_meeting-doc-113891-pcac\",\"entity_permanent-citizens-advisory-committee-pcac\",\"entity_meeting-doc-121001-gcmoc\",\"entity_mta-bridges-and-tunnels\",\"entity_meeting-doc-124881-mnr\",\"entity_metro-north-railroad\",\"entity_mta-real-estate\",\"entity_mta-real-estate-department\")) | {record_id,display_name,payload:.payload_identity_fields,evidence:(.evidence_samples|map({evidence_id,source_quote,snippet})|.[0:3]),aliases:.record_aliases,keys:.identity_keys,source_ids:.source_ids}' data/identity-review/records.jsonl",
+    "jq . data/identity-overrides/merges.json | head -80 && jq . data/identity-overrides/do-not-merge.json | head -100",
+    "jq -r 'select(.kind==\"entity\" and (.validation_issue_codes // [] | index(\"duplicate_global_identity\"))) | [.left_record_id,.right_record_id] | @tsv' data/identity-review/candidate_edges.jsonl | wc -l",
+    "rg -n \"entity_167646-grand-central-madison|entity_167646-sirtoa|entity_167646-triborough-bridge-tunnel|entity_167646-mta-real-estate|entity_college-point-bus-depot|entity_community-board-12-brooklyn|entity_queens-cb5-grand-ave-2024|entity_meeting-doc-87841-mta-treasury|entity_permanent-citizens-advisory-committee-pcac\" data/review_notes/*.json",
+    "jq -r 'select(.kind==\"entity\" and (.validation_issue_codes // [] | index(\"duplicate_global_identity\"))) | [.left_record_id,.right_record_id,(.shared_keys|join(\";\"))] | @tsv' data/identity-review/candidate_edges.jsonl | sed -n '120,220p'",
+    "jq -r 'select(.record_id|IN(\"entity_mta-real-estate-tod\",\"entity_mta-tod-meeting-doc-160301\",\"entity_mta-transit-oriented-development\",\"entity_meeting-doc-twu\",\"entity_twu-local-100\",\"entity_stv-20100615\",\"entity_stv-inc\",\"entity_ny-sdod-lga-aa\",\"entity_ny-state-dot\")) | {record_id,display_name,payload:.payload_identity_fields,evidence:(.evidence_samples|map({evidence_id,source_quote,snippet})|.[0:3]),aliases:.record_aliases,keys:.identity_keys,source_ids:.source_ids}' data/identity-review/records.jsonl",
+    "jq -r 'select(.kind==\"entity\" and (.validation_issue_codes // [] | index(\"duplicate_global_identity\")) and ((.left_record_id|test(\"mta-real-estate-tod|meeting-doc-twu|stv-20100615|ny-sdod\")) or (.right_record_id|test(\"mta-tod|transit-oriented|twu-local|stv-inc|ny-state-dot\")))) | {left_record_id,right_record_id,shared_keys,sources,validation_messages}' data/identity-review/candidate_edges.jsonl",
+    "rg -n \"entity_mta-real-estate-tod|entity_mta-tod-meeting-doc-160301|entity_mta-transit-oriented-development|entity_meeting-doc-twu|entity_twu-local-100|entity_stv-20100615|entity_stv-inc|entity_ny-sdod-lga-aa|entity_ny-state-dot\" data/review_notes/*.json",
+    "test ! -e data/review_notes/codex-identity-batch221-entity-prep.json && echo absent || echo exists"
+  ],
+  "blockers": []
+}

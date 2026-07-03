@@ -1,0 +1,78 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:36:59.788Z",
+  "packet_path": "data/identity-review/packets/corridor_cluster_43406c6cbd.md",
+  "cluster_id": "corridor_cluster_43406c6cbd",
+  "kind": "corridor",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "corridor_cluster_43406c6cbd",
+    "kind": "corridor",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "corridor_woodhaven-blvd-dry-harbor-to-metropolitan",
+          "corridor_woodhaven-blvd-union-tpke-to-81st-rd"
+        ],
+        "reason": "Different limits: Dry Harbor Road to Metropolitan Avenue vs Union Turnpike to 81st Road. Per corridor rule: same street+borough but different limits never merge."
+      },
+      {
+        "record_ids": [
+          "corridor_woodhaven-blvd-dry-harbor-to-metropolitan",
+          "corridor_woodhaven-boulevard"
+        ],
+        "reason": "Different limits: Dry Harbor Road to Metropolitan Avenue vs Queens Boulevard to Union Turnpike (from payload). These are distinct segments on Woodhaven Boulevard."
+      },
+      {
+        "record_ids": [
+          "corridor_woodhaven-blvd-union-tpke-to-81st-rd",
+          "corridor_woodhaven-boulevard"
+        ],
+        "reason": "Different limits: Union Turnpike to 81st Road vs Queens Boulevard to Union Turnpike. The first begins at Union Turnpike and goes south; the second ends at Union Turnpike (or extends to 107th Avenue per display). Distinct corridors."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "corridor_woodhaven-blvd-dry-harbor-to-metropolitan",
+        "aliases": [
+          "corridor_woodhaven-blvd",
+          "corridor_woodhaven-blvd-dry-harbor-rd-to-metropolitan-ave",
+          "corridor_woodhaven-blvd-dry-harbor-metropolitan-cb6-2016"
+        ],
+        "reason": "Variants of the same corridor with abbreviation/document date suffixes; not merge authority."
+      },
+      {
+        "record_id": "corridor_woodhaven-blvd-union-tpke-to-81st-rd",
+        "aliases": [
+          "corridor_woodhaven-blvd",
+          "corridor_woodhaven-blvd-union-turnpike-to-81st-rd"
+        ],
+        "reason": "Abbreviation variant; not merge authority."
+      },
+      {
+        "record_id": "corridor_woodhaven-boulevard",
+        "aliases": [
+          "corridor_woodhaven-blvd",
+          "corridor_woodhaven-blvd-queens",
+          "corridor_woodhaven-blvd-corridor",
+          "corridor_woodhaven-blvd-queens-blvd-to-107th-ave-queens"
+        ],
+        "reason": "These are all aliases referencing the same broad Woodhaven Boulevard corridor record."
+      }
+    ],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [
+      "Consider relating these corridor segments with 'subsegment_of' relation if they fall within a larger corridor."
+    ],
+    "confidence": "high",
+    "rationale": "All three records share the same street (Woodhaven Boulevard) and borough (Queens) but have distinct limits. Per corridor identity rule: 'Same street name with differing borough or limits never merges.' No contradiction test failure other than limits differences, which are decisive. These are distinct segments of the same boulevard, not the same canonical corridor."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-36-38-661Z_1282984-b547e3eb_identity-review-run_corridor-cluster-43406c6cbd",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-36-38-661Z_2026-06-23T14-36-38-661Z_1282984-b547e3eb_identity-review-run_corridor-cluster-43406c6cbd.jsonl"
+}

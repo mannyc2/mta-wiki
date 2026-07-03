@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "review_state": "accepted",
+  "accepted_at": "2026-06-08T21:21:36.731Z",
+  "reviewer": "codex-audit-2026-06-08",
+  "source": "audit_safe_to_promote",
+  "cluster_id": "route_cluster_010",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_010.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_010.json",
+  "source_review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Flash",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 1,
+    "missing_field_count": 2,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "route_q10-ace",
+        "route_q10-queens"
+      ],
+      "reason": "route_q10-ace is an ACE enforcement grouping of both Q10 and Q80 routes under the combined label 'Q10/Q80' on Lefferts Blvd, as evidenced by the ACE source page listing 'Q10/Q80, Lefferts Blvd (in 60-day warning period)'. route_q10-queens is specifically the Q10 bus route in Queens with multiple service patterns (Kew Gardens-JFK Airport) as described in the Queens bus network redesign. The queens addendum explicitly distinguishes Q10 from Q80 as separate routes. They share the identity key 'route_q10' only because the ACE label contains 'Q10' as part of the composite 'Q10/Q80' designation, which is insufficient evidence for merging distinct canonical routes."
+    }
+  ],
+  "weak_aliases": [
+    {
+      "record_id": "route_q10-ace",
+      "aliases": [
+        "Q10/Q80",
+        "route_q10"
+      ],
+      "reason": "The ACE listing 'Q10/Q80' is a useful search alias referencing the Q10 route (among others) for camera enforcement purposes, but it is not a merge-authoritative identity."
+    }
+  ],
+  "missing_fields": [
+    {
+      "record_id": "route_q10-ace",
+      "fields": [
+        "limits",
+        "variant_type"
+      ]
+    },
+    {
+      "record_id": "route_q10-queens",
+      "fields": [
+        "borough",
+        "streets",
+        "variant_type"
+      ]
+    }
+  ],
+  "ambiguous": [],
+  "suggested_rules": [
+    "ACE composite labels like 'Q10/Q80' should not be merged with individual route records unless the ACE source explicitly treats them as a single route. When an ACE listing concatenates multiple route IDs with a slash, each component route should be treated as a distinct canonical identity."
+  ],
+  "rationale": "The ACE source page groups Q10 and Q80 under a composite 'Q10/Q80' label for camera enforcement on shared Lefferts Blvd corridor. The queens addendum appendix D explicitly describes Q10 and Q80 as separate routes with distinct service patterns. Canonical JSONL has a separate route_q80-queens record. The shared identity key 'route_q10' exists because the ACE composite label includes 'Q10', not because both records represent the same canonical route. Strong evidence from the queens addendum text confirms Q10 and Q80 are distinct bus routes."
+}

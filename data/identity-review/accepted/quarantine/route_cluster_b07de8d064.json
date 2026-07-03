@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "route_cluster_b07de8d064",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_b07de8d064.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_b07de8d064.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "quarantined",
+  "quarantine": {
+    "blocker": "do_not_merge route_s78-hylan-2010 <> route_s79-hylan-2010: reason does not cite a strong identity field"
+  },
+  "original_merge_groups": [],
+  "original_do_not_merge": [
+    {
+      "record_ids": [
+        "route_s78-hylan-2010",
+        "route_s79-hylan-2010"
+      ],
+      "reason": "Strong identity field route_id differs (S78 vs S79). Decision test 1 forces do_not_merge."
+    }
+  ]
+}

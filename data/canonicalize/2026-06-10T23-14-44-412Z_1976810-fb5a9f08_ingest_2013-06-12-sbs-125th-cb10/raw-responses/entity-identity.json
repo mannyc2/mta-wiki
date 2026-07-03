@@ -1,0 +1,80 @@
+{
+  "run_id": "2026-06-10T23-14-44-412Z_1976810-fb5a9f08_ingest_2013-06-12-sbs-125th-cb10",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T03:57:45.103Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1-nyc-dot-new",
+        "local_observation_id": "entity_nyc_dot_2013_06_12",
+        "decision": "new",
+        "rationale": "Observation entity_nyc_dot_2013_06_12 has base_record_id entity_nyc-dot which directly matches canonical registry record entity_nyc-dot (New York City Department of Transportation, entity_type: agency). The observation already resolves to its correct identity — the closest match is its own base_record_id. Source confirms NYC DOT logo on page 1.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_12_sbs_125th_cb10",
+            "block_id": "p001_c0004",
+            "source_quote": "The logo for the New York City Department of Transportation (NYC DOT), featuring the letters 'NYC' in a stylized font with horizontal lines through them."
+          }
+        ]
+      },
+      {
+        "decision_id": "d2-mta-nyct-new",
+        "local_observation_id": "entity_mta_nyct_2013_06_12",
+        "decision": "new",
+        "rationale": "Observation entity_mta_nyct_2013_06_12 has base_record_id entity_mta-nyct which directly matches canonical registry record entity_mta-nyct (MTA New York City Transit, entity_type: agency). The observation already resolves to its correct identity. Source confirms 'New York City Transit' on page 1.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_12_sbs_125th_cb10",
+            "block_id": "p001_c0006",
+            "source_quote": "New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "d3-cb10-new",
+        "local_observation_id": "entity_community_board_10_manhattan_2013_06",
+        "decision": "new",
+        "rationale": "Observation entity_community_board_10_manhattan_2013_06 has base_record_id entity_community-board-10-manhattan which directly matches canonical registry record entity_community-board-10-manhattan (Manhattan Community Board 10, entity_type: community_board). The source is already listed in that registry card's source_ids. Source confirms 'Community Board 10 Update' on page 1.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_12_sbs_125th_cb10",
+            "block_id": "p001_c0002",
+            "source_quote": "Community Board 10 Update"
+          }
+        ]
+      },
+      {
+        "decision_id": "d4-cb9-new",
+        "local_observation_id": "entity_community_board_9_manhattan_2013_06",
+        "decision": "new",
+        "rationale": "Observation entity_community_board_9_manhattan_2013_06 has base_record_id entity_community-board-9-manhattan which directly matches canonical registry record entity_community-board-9-manhattan (Community Board 9, Manhattan, entity_type: community board). The source is already listed in that registry card's source_ids. Source confirms 'Consultation with CB9, CB10 and CB11' on page 7.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_12_sbs_125th_cb10",
+            "block_id": "p007_c0006",
+            "source_quote": "Summer 2012 Consultation with CB9, CB10 and CB11"
+          }
+        ]
+      },
+      {
+        "decision_id": "d5-cb11-new",
+        "local_observation_id": "entity_community_board_11_manhattan_2013_06",
+        "decision": "new",
+        "rationale": "Observation entity_community_board_11_manhattan_2013_06 has base_record_id entity_community-board-11-manhattan which directly matches canonical registry record entity_community-board-11-manhattan (Community Board 11, Manhattan, entity_type: community board). The source is already listed in that registry card's source_ids. Source confirms 'Consultation with CB9, CB10 and CB11' on page 7.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_12_sbs_125th_cb10",
+            "block_id": "p007_c0006",
+            "source_quote": "Summer 2012 Consultation with CB9, CB10 and CB11"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-55-41-723Z_2111393-2a6d21ab_canonicalize_2026-06-10t23-14-44-412z-1976810-fb5a9f08-ingest-2013-06-12-sbs-125th-cb10-entity-identity"
+}

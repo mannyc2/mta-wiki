@@ -1,0 +1,251 @@
+{
+  "note_id": "codex-relation-rule-or-data-next24-prep",
+  "batch_id": "next24",
+  "created_at": "2026-06-23T01:48:57Z",
+  "author": "codex",
+  "scope": "Codex-only relation endpoint-shape rule-or-data triage artifact; deterministic local inspection only; no provider-backed commands, post-ingest LLM harnesses, materialize/export-jsonl/full validate/DB publish, durable data edits, code edits, LOG edits, manifest edits, submissions edits, retired.json edits, or canonical/generated edits",
+  "current_checkpoint_context": {
+    "reported_validate_backlog_after_identity079_relation050": {
+      "issue_count": 1460,
+      "unexpected_relation_endpoint_shape": 15,
+      "duplicate_global_identity": 1445
+    },
+    "observed_endpoint_shape_issue_count": 15,
+    "recent_work_not_repeated": [
+      "next20 validator patch for operates_on_corridor entity->corridor",
+      "relation046 data cleanup for has_treatment claim->treatment_component",
+      "relation048 data cleanup for operated_by entity->event",
+      "relation049 data cleanup for metric-context endpoint-shape rows",
+      "relation050 data cleanup for implemented_by entity->entity",
+      "relation037 through relation050"
+    ],
+    "inspection_method": "Read-only SQLite queries against data/canonical.db using the current RELATION_ENDPOINT_SHAPES table in packages/pipeline/src/records/relations.ts, plus read-only rg/sed inspection of existing submission journals, source blocks, and prior review notes. No validate/materialize/export/publish/provider command was run."
+  },
+  "remaining_bucket_counts": {
+    "total": 15,
+    "buckets": [
+      { "bucket": "has_claim claim->claim", "count": 1 },
+      { "bucket": "has_timeline_event event->entity", "count": 1 },
+      { "bucket": "has_timeline_event project->entity", "count": 1 },
+      { "bucket": "has_timeline_event source->entity", "count": 1 },
+      { "bucket": "implemented_by source->entity", "count": 1 },
+      { "bucket": "operated_by entity->entity", "count": 1 },
+      { "bucket": "operated_by treatment_component->entity", "count": 1 },
+      { "bucket": "operates_on_corridor project->entity", "count": 1 },
+      { "bucket": "owned_by event->entity", "count": 1 },
+      { "bucket": "owned_by source->entity", "count": 1 },
+      { "bucket": "published_by claim->entity", "count": 1 },
+      { "bucket": "published_by metric_claim->source", "count": 1 },
+      { "bucket": "related_route project->project", "count": 1 },
+      { "bucket": "serves_route project->entity", "count": 1 },
+      { "bucket": "serves_route project->project", "count": 1 }
+    ],
+    "triage_note": "All remaining exact endpoint-shape buckets are singletons. The selected operated_by entity->entity row is the clearest next deterministic data cleanup because prior cleanup lanes explicitly kept operated_by entity->entity out of the validator, and this particular row is supported only by a Paratransit Report agenda heading rather than direct operator evidence."
+  },
+  "recommendation": "data_cleanup",
+  "recommended_bucket": "operated_by entity->entity",
+  "expected_delta": {
+    "baseline_unexpected_relation_endpoint_shape": 15,
+    "selected_rows_cleared": 1,
+    "replacement_rows_added": 0,
+    "replacement_rows_expected_to_be_endpoint_shape_valid": 0,
+    "expected_remaining_after_cleanup": 14
+  },
+  "recommended_data_cleanup": {
+    "mechanism": "retire_only",
+    "why_data_cleanup": "The current row uses operated_by with entity endpoints. Current operated_by is intentionally scoped to project|route|corridor -> entity, and prior relation cleanup notes rejected broad operated_by entity->entity admission because the bucket mixes service, agency, hierarchy, and weak document-context assertions. This singleton's accepted evidence is only the meeting agenda heading 'iii. Paratransit Report', so it is too thin to justify either a validator rule patch or a source-specific replacement assertion.",
+    "why_not_validator_rule_patch": "Adding entity to RELATION_ENDPOINT_SHAPES.operated_by.subject would clear this row but would also validate broad entity->entity operator assertions, including service/program, agency hierarchy, vendor/operator, and loose document-context rows. Previous rule triage for operated_by corridor->entity explicitly kept operated_by entity->entity invalid. The current corpus already has more precise Access-A-Ride/NYCT structure through part_of_agency and operates relations from stronger sources, so this row is not evidence of a rule gap.",
+    "candidate_submissions_to_retire": [
+      {
+        "submission_id": "sub_9e51ef484cc836e5",
+        "run_id": "2026-06-22T21-31-24-465Z_382829-0d339fd2_ingest_meeting-doc-91586",
+        "submission_path": "data/submissions/2026-06-22T21-31-24-465Z_382829-0d339fd2_ingest_meeting-doc-91586.jsonl",
+        "record_id": "relation_access-a-ride-operated-by-nyct",
+        "source_id": "meeting_doc_91586",
+        "current_relation_kind": "operated_by",
+        "current_shape": "entity -> entity",
+        "retire_reason": "Malformed endpoint shape and insufficient direct evidence: the submitted relation says Access-A-Ride is operated by NYCT, but the accepted evidence is only the Paratransit Report agenda heading in an NYCT/Bus committee metrics report."
+      }
+    ],
+    "proposed_semantic_replacement_direction": {
+      "replacement_needed": false,
+      "reason": "No accepted replacement entry is recommended from this submission alone. The cited evidence block supports only that the source contains a Paratransit Report section, not a new NYCT-operated-by-Access-A-Ride relation or hierarchy assertion.",
+      "if_a_future_worker_requires_preservation": {
+        "preferred_kind": "related_to",
+        "preferred_endpoint_shape": "entity -> source or entity -> entity",
+        "caution": "Use only if additional same-source evidence beyond p001_c0011 is added to the replacement. Do not encode the current submitted description as part_of_agency or operates without stronger source text."
+      },
+      "existing_semantic_coverage": [
+        {
+          "record_id": "relation_135421-aar-nyct-paratransit",
+          "relation_kind": "part_of_agency",
+          "shape": "entity -> entity",
+          "source_id": "meeting_doc_135421",
+          "summary": "Access-A-Ride is NYCT's paratransit operation."
+        },
+        {
+          "record_id": "relation_meeting-doc-131541-access-a-ride-part-of-nyct",
+          "relation_kind": "part_of_agency",
+          "shape": "entity -> entity",
+          "source_id": "meeting_doc_131541",
+          "summary": "Access-A-Ride is part of NYCT."
+        },
+        {
+          "record_id": "relation_nyct-operates-access-a-ride",
+          "relation_kind": "operates",
+          "shape": "entity -> entity",
+          "source_id": "meeting_doc_98291",
+          "summary": "NYCT operates Access-A-Ride paratransit service."
+        }
+      ]
+    },
+    "replacement_collision_check": "Read-only relation lookup found existing Access-A-Ride/NYCT semantic coverage in stronger sources. Adding a new part_of_agency or operates replacement for meeting_doc_91586 would be redundant and under-evidenced."
+  },
+  "representative_records": [
+    {
+      "record_id": "relation_access-a-ride-operated-by-nyct",
+      "source_id": "meeting_doc_91586",
+      "submission_ids": [
+        "sub_9e51ef484cc836e5"
+      ],
+      "current_malformed_shape": "operated_by entity->entity",
+      "current_relation": {
+        "relation_kind": "operated_by",
+        "relation_family": "agency_role",
+        "subject": {
+          "record_id": "entity_annual-report-2021-accessaride",
+          "record_kind": "entity",
+          "display_name": "MTA Access-a-Ride",
+          "local_observation_id_used_by_relation": "entity_meeting_doc_91586_access_a_ride",
+          "canonical_local_observation_id": "entity_annual_report_2021_accessaride"
+        },
+        "object": {
+          "record_id": "entity_meeting-doc-128981-nyct",
+          "record_kind": "entity",
+          "display_name": "New York City Transit Authority (NYCT)",
+          "local_observation_id_used_by_relation": "entity_meeting_doc_91586_nyct",
+          "canonical_local_observation_id": "entity_meeting_doc_128981_nyct"
+        },
+        "payload_summary": {
+          "description": "Access-A-Ride paratransit service is operated as part of NYCT",
+          "as_of_date": "2022-07-25",
+          "assertion_status": "unknown"
+        }
+      },
+      "triage_read": "The statement may be true in the broader corpus, but this accepted relation has only an agenda-heading evidence ref. The row should not become the reason to allow operated_by entity->entity globally, and a replacement is not needed because stronger same-concept relations already exist."
+    }
+  ],
+  "source_and_evidence_summary": {
+    "source_id": "meeting_doc_91586",
+    "source_title": "Legacy committee metrics report",
+    "source_url": "https://www.mta.info/document/91586",
+    "source_path": "raw/sources/meeting_doc_91586/blocks.jsonl",
+    "submission_raw_text": "Paratransit Report - included in NYCT and Bus Committee Meeting",
+    "evidence_blocks": [
+      {
+        "evidence_id": "meeting_doc_91586#p001_c0011",
+        "page_number": 1,
+        "block_id": "p001_c0011",
+        "block_kind": "heading",
+        "text_sha256": "sha256:0be671c624a37a5ae293c92dd38aaa962cd81b2184930fe116beb85b5de336a9",
+        "summary": "Agenda heading for a Paratransit Report section.",
+        "short_source_quote": "iii. Paratransit Report"
+      }
+    ],
+    "nearby_context_blocks_not_used_as_relation_evidence": [
+      {
+        "evidence_id": "meeting_doc_91586#p048_c0003",
+        "page_number": 48,
+        "block_id": "p048_c0003",
+        "summary": "Defines Access-A-Ride trips/ridership and notes ridership is presented by provider type."
+      },
+      {
+        "evidence_id": "meeting_doc_91586#p048_c0004",
+        "page_number": 48,
+        "block_id": "p048_c0004",
+        "summary": "Lists Access-A-Ride provider categories, including primary providers operated by contractors, brokers, e-hails, street hails, and voucher/enhanced broker service."
+      }
+    ],
+    "endpoint_records": [
+      {
+        "record_id": "entity_annual-report-2021-accessaride",
+        "record_kind": "entity",
+        "display_name": "MTA Access-a-Ride",
+        "local_observation_id_relevant_to_cleanup": "entity_meeting_doc_91586_access_a_ride",
+        "payload_summary": {
+          "entity_name": "MTA Access-a-Ride",
+          "entity_type": "paratransit service program",
+          "description": "Paratransit service managed by MTA NYCT Department of Buses."
+        }
+      },
+      {
+        "record_id": "entity_meeting-doc-128981-nyct",
+        "record_kind": "entity",
+        "display_name": "New York City Transit Authority (NYCT)",
+        "local_observation_id_relevant_to_cleanup": "entity_meeting_doc_91586_nyct",
+        "payload_summary": {
+          "entity_name": "New York City Transit Authority",
+          "entity_type": "agency",
+          "description": "New York City Transit Authority as reported in 2023 Prompt Payment Annual Report"
+        }
+      }
+    ]
+  },
+  "validator_boundary": {
+    "current_valid_operated_by_shapes": [
+      "project->entity",
+      "route->entity",
+      "corridor->entity"
+    ],
+    "endpoint_combos_that_must_remain_invalid": [
+      "operated_by entity->entity",
+      "operated_by treatment_component->entity",
+      "operated_by source->entity",
+      "operated_by event->entity",
+      "operated_by entity->event",
+      "operated_by project->event",
+      "operated_by route->event",
+      "operated_by corridor->event",
+      "operated_by project->project",
+      "operated_by route->route",
+      "operated_by corridor->corridor"
+    ]
+  },
+  "why_safe": [
+    "Retiring the single malformed submission clears one endpoint-shape issue without changing validator behavior or generated outputs in this prep lane.",
+    "The row's only accepted evidence block is an agenda heading, so retire-only avoids converting weak evidence into a stronger agency-role or hierarchy assertion.",
+    "The Access-A-Ride and NYCT endpoint records remain materialized and are not modified.",
+    "More precise Access-A-Ride/NYCT relations already exist from stronger sources, so retiring this under-evidenced row does not remove the corpus's only semantic coverage for the relationship.",
+    "The recommendation preserves prior validator boundaries that kept operated_by entity->entity invalid after the operated_by corridor->entity scoped rule patch.",
+    "The selected bucket does not overlap next20, relation046, relation048, relation049, relation050, or relation037-relation050 cleanup work."
+  ],
+  "guards": {
+    "non_goals": [
+      "Do not edit packages/pipeline/src/records/relations.ts or tests for next24.",
+      "Do not edit data/submission-overrides/retired.json in this prep lane.",
+      "Do not append replacement submissions in this prep lane.",
+      "Do not edit data/canonical/*.jsonl, data/canonical.db, data/materialized/*, wiki/*, LOG.md, manifests, campaign files, or generated-output files.",
+      "Do not run canonicalize, campaign dedup, identity-review, write, ask, schema, ontology-normalize, any provider/profile-backed command, materialize, export-jsonl, full validate, or DB publish."
+    ],
+    "follow_up_apply_ready_relation_worker_needed": true,
+    "follow_up_worker_scope": "Retire sub_9e51ef484cc836e5 only; no replacement submission is recommended unless the worker finds stronger same-source evidence than the current p001_c0011 agenda heading."
+  },
+  "commands_run": [
+    {
+      "command": "git status --short",
+      "purpose": "Confirmed the worktree is heavily dirty and must not be disturbed."
+    },
+    {
+      "command": "sqlite3 data/canonical.db read-only shape reconstruction queries",
+      "purpose": "Reconstructed the 15 current unexpected_relation_endpoint_shape rows without running validate."
+    },
+    {
+      "command": "sed -n packages/pipeline/src/records/relations.ts",
+      "purpose": "Read current endpoint-shape rules only."
+    },
+    {
+      "command": "rg/sed over data/review_notes, data/submissions, and raw/sources/meeting_doc_91586",
+      "purpose": "Checked prior cleanup decisions, located the accepted submission, and summarized evidence."
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+  "note_id": "codex-identity-batch165-prep",
+  "batch": "identity165",
+  "created_at": "2026-06-23T08:25:48Z",
+  "scope": {
+    "global_kind": "entity",
+    "selection_note": "Codex-only entity prep from current data/canonical/entities.jsonl, current data/identity-overrides/merges.json, current data/identity-overrides/do-not-merge.json, and checked-in validateRepo duplicate_global_identity backlog artifacts. No provider-backed, materialize, validate, or export commands were run."
+  },
+  "prepared_count": 8,
+  "proposed_aliases": [
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_community-board-4-manhattan-2011",
+      "target_id": "entity_manhattan-community-board-4",
+      "canonical_id": "entity_manhattan-community-board-4",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_manhattan-community-board-4",
+      "reason": "Both current records identify Manhattan Community Board 4. The validator reports the two records share the Manhattan-specific identity key, the alias already carries entity_manhattan-community-board-4 as a record alias, and the target is the broader Manhattan CB4 cluster.",
+      "validator_evidence": "validateRepo duplicate_global_identity: Global entity records entity_community-board-4-manhattan-2011 and entity_manhattan-community-board-4 share identity key entity_manhattan-community-board-4.",
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "Manhattan Community Board 4",
+          "entity_name": "Manhattan Community Board 4",
+          "entity_type": "community board",
+          "source_count": 3,
+          "record_aliases_include": [
+            "entity_community-board-4-manhattan",
+            "entity_manhattan-community-board-4"
+          ]
+        },
+        "target": {
+          "display_name": "Manhattan Community Board 4",
+          "entity_name": "Manhattan Community Board 4",
+          "entity_type": "community_board",
+          "source_count": 8,
+          "record_aliases_include": [
+            "entity_cb4-manhattan-20110314",
+            "entity_manhattan-community-board-four"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_community-board-4-manhattan-2011",
+          "evidence_id": "2011_34th_sbs_comments_on_proposed_design#p002_c0011",
+          "quote": "Manhattan Community Boards 4, 5, and 6"
+        },
+        {
+          "record_id": "entity_manhattan-community-board-4",
+          "evidence_id": "120418_brt_cb4_34th_street#p001_c0001",
+          "quote": "34 th Street SBS Presentation to Manhattan CB 4 Transportation Committee"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_entities_jsonl": true,
+        "alias_already_merged": false,
+        "target_is_merge_alias": false,
+        "alias_equals_target": false,
+        "do_not_merge_hit": false
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_community-board-5-manhattan-2011",
+      "target_id": "entity_manhattan-community-board-5",
+      "canonical_id": "entity_manhattan-community-board-5",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_manhattan-community-board-5",
+      "reason": "Both current records identify Manhattan Community Board 5. The validator reports the Manhattan-specific duplicate identity key, the alias already carries entity_manhattan-community-board-5, and the target is the richer Manhattan CB5 cluster with borough evidence.",
+      "validator_evidence": "validateRepo duplicate_global_identity: Global entity records entity_community-board-5-manhattan-2011 and entity_manhattan-community-board-5 share identity key entity_manhattan-community-board-5.",
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "Manhattan Community Board 5",
+          "entity_name": "Manhattan Community Board 5",
+          "entity_type": "community board",
+          "source_count": 3,
+          "record_aliases_include": [
+            "entity_community-board-5",
+            "entity_manhattan-community-board-5"
+          ]
+        },
+        "target": {
+          "display_name": "Manhattan Community Board 5",
+          "entity_name": "Manhattan Community Board 5",
+          "entity_type": "community_board",
+          "source_count": 12,
+          "borough": "Manhattan"
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_community-board-5-manhattan-2011",
+          "evidence_id": "2011_34th_sbs_comments_on_proposed_design#p002_c0011",
+          "quote": "Manhattan Community Boards 4, 5, and 6"
+        },
+        {
+          "record_id": "entity_manhattan-community-board-5",
+          "evidence_id": "080421_brt_cb5_34th_street_fullboardpresentation#p001_c0001",
+          "quote": "Manhattan Community Board 5"
+        },
+        {
+          "record_id": "entity_manhattan-community-board-5",
+          "evidence_id": "100331_brt_cb5_34th_street_transitway#p001_c0002",
+          "quote": "Manhattan Community Board 5 - March 31, 2010"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_entities_jsonl": true,
+        "alias_already_merged": false,
+        "target_is_merge_alias": false,
+        "alias_equals_target": false,
+        "do_not_merge_hit": false
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_community-board-6-manhattan-2011",
+      "target_id": "entity_manhattan-community-board-6",
+      "canonical_id": "entity_manhattan-community-board-6",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_manhattan-community-board-6",
+      "reason": "Both current records identify Manhattan Community Board 6. The validator reports the Manhattan-specific duplicate identity key, the alias is a one-source Manhattan CB6 mention, and the target is the broader Manhattan CB6 record.",
+      "validator_evidence": "validateRepo duplicate_global_identity: Global entity records entity_community-board-6-manhattan-2011 and entity_manhattan-community-board-6 share identity key entity_manhattan-community-board-6.",
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "Manhattan Community Board 6",
+          "entity_name": "Manhattan Community Board 6",
+          "entity_type": "community board",
+          "source_count": 1,
+          "record_aliases_include": [
+            "entity_manhattan-community-board-6"
+          ]
+        },
+        "target": {
+          "display_name": "Manhattan Community Board 6",
+          "entity_name": "Manhattan Community Board 6",
+          "entity_type": "community_board",
+          "source_count": 17,
+          "borough": "Manhattan"
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_community-board-6-manhattan-2011",
+          "evidence_id": "2011_34th_sbs_comments_on_proposed_design#p002_c0011",
+          "quote": "Manhattan Community Boards 4, 5, and 6"
+        },
+        {
+          "record_id": "entity_manhattan-community-board-6",
+          "evidence_id": "120507_brt_cb6_34th_street#p001_c0001",
+          "quote": "34 th Street SBS Presentation to Manhattan CB 6 Transportation Committee"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_entities_jsonl": true,
+        "alias_already_merged": false,
+        "target_is_merge_alias": false,
+        "alias_equals_target": false,
+        "do_not_merge_hit": false
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_community-board-8-brooklyn-20110915",
+      "target_id": "entity_community-board-8-brooklyn",
+      "canonical_id": "entity_community-board-8-brooklyn",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_community-board-8-brooklyn",
+      "reason": "Both current records identify Brooklyn Community Board 8. The validator reports the Brooklyn-specific duplicate key, and both records carry Brooklyn CB8 aliases/evidence; the target is a multi-source Brooklyn CB8 cluster.",
+      "validator_evidence": "validateRepo duplicate_global_identity: Global entity records entity_community-board-8-brooklyn and entity_community-board-8-brooklyn-20110915 share identity key entity_community-board-8-brooklyn.",
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "Community Board 8, Brooklyn",
+          "entity_name": "Community Board 8",
+          "entity_type": "community board",
+          "source_count": 8,
+          "borough": "Brooklyn",
+          "record_aliases_include": [
+            "entity_brooklyn-community-board-8",
+            "entity_community-board-8-brooklyn"
+          ]
+        },
+        "target": {
+          "display_name": "Community Board 8",
+          "entity_name": "Community Board 8",
+          "entity_type": "community_board",
+          "source_count": 7,
+          "description": "Brooklyn Community Board 8"
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_community-board-8-brooklyn-20110915",
+          "evidence_id": "2013_09_12_sbs_utica_cb8#p001_c0004",
+          "quote": "Brooklyn CB 8, September 12, 2013"
+        },
+        {
+          "record_id": "entity_community-board-8-brooklyn",
+          "evidence_id": "flatbush_ave_cb8_jun2025#p001_c0002",
+          "quote": "Presentation to Community Board 8 Environment, Sanitation and Transportation Committee"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_entities_jsonl": true,
+        "alias_already_merged": false,
+        "target_is_merge_alias": false,
+        "alias_equals_target": false,
+        "do_not_merge_hit": false
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_cb8-20111205",
+      "target_id": "entity_community-board-8-brooklyn",
+      "canonical_id": "entity_community-board-8-brooklyn",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_community-board-8",
+      "reason": "The alias is a one-source CB8 mention from the Nostrand/Rogers Brooklyn SBS context, and the target is the Brooklyn Community Board 8 cluster. The validator reports that the two current records share the Community Board 8 identity key.",
+      "validator_evidence": "validateRepo duplicate_global_identity: Global entity records entity_cb8-20111205 and entity_community-board-8-brooklyn share identity key entity_community-board-8.",
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "Community Board 8",
+          "entity_name": "Community Board 8",
+          "entity_type": "community board",
+          "source_count": 1,
+          "description": "Community Board referenced as having 11,000 people boarding the B44 in CB 8."
+        },
+        "target": {
+          "display_name": "Community Board 8",
+          "entity_name": "Community Board 8",
+          "entity_type": "community_board",
+          "source_count": 7,
+          "description": "Brooklyn Community Board 8",
+          "record_aliases_include": [
+            "entity_brooklyn-community-board-8",
+            "entity_community-board-8-brooklyn-2015-09-10"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_cb8-20111205",
+          "evidence_id": "20111205_nostrand_cb3_slides#p002_c0004",
+          "quote": "11,000 people board in CB 8"
+        },
+        {
+          "record_id": "entity_community-board-8-brooklyn",
+          "evidence_id": "201110_nostrand_cb8_slides#p001_c0001",
+          "quote": "Brooklyn Community Board 8"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_entities_jsonl": true,
+        "alias_already_merged": false,
+        "target_is_merge_alias": false,
+        "alias_equals_target": false,
+        "do_not_merge_hit": false
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_community-board-9-brooklyn-2012-04-26",
+      "target_id": "entity_community-board-9-brooklyn-brt-nostrand",
+      "canonical_id": "entity_community-board-9-brooklyn-brt-nostrand",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_community-board-9-brooklyn",
+      "reason": "Both current records identify Brooklyn Community Board 9. The validator reports the Brooklyn-specific duplicate key, while the alias describes Brooklyn CB9 and the target is the broader Brooklyn CB9 cluster with borough-scoped aliases and evidence.",
+      "validator_evidence": "validateRepo duplicate_global_identity: Global entity records entity_community-board-9-brooklyn-2012-04-26 and entity_community-board-9-brooklyn-brt-nostrand share identity key entity_community-board-9-brooklyn.",
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "Community Board 9, Brooklyn",
+          "entity_name": "Community Board 9",
+          "entity_type": "community board",
+          "source_count": 2,
+          "description": "Brooklyn Community Board 9"
+        },
+        "target": {
+          "display_name": "Community Board 9, Brooklyn",
+          "entity_name": "Community Board 9",
+          "entity_type": "community board",
+          "source_count": 7,
+          "borough": "Brooklyn",
+          "record_aliases_include": [
+            "entity_brooklyn-community-board-9",
+            "entity_community-board-9-brooklyn"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_community-board-9-brooklyn-2012-04-26",
+          "evidence_id": "2012_04_26_sbs_utica#p022_c0003",
+          "quote": "Presented concept to Community Board 9, 17 & Congresswoman Yvette Clarke"
+        },
+        {
+          "record_id": "entity_community-board-9-brooklyn-brt-nostrand",
+          "evidence_id": "2013_09_24_sbs_utica_cb9#p001_c0004",
+          "quote": "Brooklyn CB 9 September 24, 2013"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_entities_jsonl": true,
+        "alias_already_merged": false,
+        "target_is_merge_alias": false,
+        "alias_equals_target": false,
+        "do_not_merge_hit": false
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_community-board-17-201110",
+      "target_id": "entity_community-board-17-brooklyn-20110915",
+      "canonical_id": "entity_community-board-17-brooklyn-20110915",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_community-board-17",
+      "reason": "The alias is a one-source Community Board 17 record from the Nostrand/Rogers SBS presentation context, and the target is the multi-source Brooklyn Community Board 17 cluster. The validator reports the shared Community Board 17 identity key, and the target canonical evidence supplies the Brooklyn scope for the same Utica/Nostrand board cluster.",
+      "validator_evidence": "validateRepo duplicate_global_identity: Global entity records entity_community-board-17-201110 and entity_community-board-17-brooklyn-20110915 share identity key entity_community-board-17.",
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "Community Board 17",
+          "entity_name": "Community Board 17",
+          "entity_type": "community board",
+          "source_count": 1,
+          "record_aliases_include": [
+            "entity_community-board-17"
+          ]
+        },
+        "target": {
+          "display_name": "Community Board 17, Brooklyn",
+          "entity_name": "Community Board 17",
+          "entity_type": "community board",
+          "source_count": 6,
+          "borough": "Brooklyn",
+          "record_aliases_include": [
+            "entity_brooklyn-community-board-17",
+            "entity_community-board-17-brooklyn"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_community-board-17-201110",
+          "evidence_id": "201110_nostrand_cb17_slides#p001_c0005",
+          "quote": "Nostrand Avenue / Rogers Avenue Select Bus Service Presentation to Community Board 17"
+        },
+        {
+          "record_id": "entity_community-board-17-brooklyn-20110915",
+          "evidence_id": "2013_09_19_sbs_utica_cb17#p001_c0004",
+          "quote": "Brooklyn CB 17 September 19, 2013"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_entities_jsonl": true,
+        "alias_already_merged": false,
+        "target_is_merge_alias": false,
+        "alias_equals_target": false,
+        "do_not_merge_hit": false
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_community-board-6-bronx-2012-02",
+      "target_id": "entity_bronx-cb6-2012-11-webster",
+      "canonical_id": "entity_bronx-cb6-2012-11-webster",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_community-board-6",
+      "reason": "Both current records identify Bronx Community Board 6 in Webster Avenue/Bronx bus-priority materials. The validator reports the shared Community Board 6 identity key, the alias source attendee list is explicitly Bronx-contextual, and the target is the richer Bronx CB6 cluster.",
+      "validator_evidence": "validateRepo duplicate_global_identity: Global entity records entity_bronx-cb6-2012-11-webster and entity_community-board-6-bronx-2012-02 share identity key entity_community-board-6.",
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "Community Board 6",
+          "entity_name": "Community Board 6",
+          "entity_type": "community board",
+          "source_count": 1,
+          "record_aliases_include": [
+            "entity_community-board-6"
+          ]
+        },
+        "target": {
+          "display_name": "Community Board 6 (Bronx)",
+          "entity_name": "Community Board 6",
+          "entity_type": "community board",
+          "source_count": 13,
+          "description": "Bronx community board",
+          "record_aliases_include": [
+            "entity_bronx-community-board-6",
+            "entity_community-board-6-bronx"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_community-board-6-bronx-2012-02",
+          "evidence_id": "2012_02_brt_webster_cac1_summary#p004_c0009",
+          "quote": "Bronx Borough President's Office ... Community Board 6"
+        },
+        {
+          "record_id": "entity_bronx-cb6-2012-11-webster",
+          "evidence_id": "2014_03_06_brt_webster_cb6#p001_c0003",
+          "quote": "Presentation to CB 6 Transportation Committee | March 6, 2014"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_entities_jsonl": true,
+        "alias_already_merged": false,
+        "target_is_merge_alias": false,
+        "alias_equals_target": false,
+        "do_not_merge_hit": false
+      }
+    }
+  ],
+  "exclusions_and_guards": [
+    "Only entity duplicate_global_identity issues from data/identity-review/validation_issues.jsonl and data/identity-review/candidate_edges.jsonl were considered; no validateRepo or CLI validate command was run in this task.",
+    "Every proposed alias_id and target_id was checked against current data/canonical/entities.jsonl and exists as a current record_id.",
+    "Checked current data/identity-overrides/merges.json; no proposed alias_id is already a merge alias and no proposed target_id is a merge alias.",
+    "Checked current data/identity-overrides/do-not-merge.json; no proposed pair is covered by a do-not-merge guard.",
+    "Excluded already-merged stale backlog hits such as 34th Street Partnership, Arnie Bloch, Bedford Mosholu Community Association, 34th Street CAC, NYPD, TLC, Port Authority, Pratt Center Community Division, Scott Stringer, Will Carry, and Zetlin Strategic Communications.",
+    "Excluded broad or ambiguous community-board collisions when the validator key did not distinguish borough and the source/canonical evidence pointed to different boroughs, including Brooklyn CB1 vs Bronx/Manhattan/Staten Island CB1, Bronx CB3 vs Brooklyn/Staten Island CB3, Bronx CB4/5/6 vs Manhattan CB4/5/6 broad-key collisions, Bronx CB7 broad-key collisions, and Brooklyn CB9 vs Manhattan CB9.",
+    "Excluded community-advisory-committee broad-key collisions across Flushing-Jamaica, Webster, and Hylan because the committee name alone is insufficient to merge distinct project advisory committees.",
+    "Excluded entity_mta-bus-company <-> entity_mta-nyct because MTA Bus Company and New York City Transit are distinct agency/division identities despite a shared stale source-specific identity key.",
+    "Prepared only eight proposals because those were the high-confidence current entity aliases that satisfied the guard checks without relying on cross-borough or project-committee ambiguity."
+  ],
+  "command_evidence": [
+    {
+      "command": "jq -r 'select(.code==\"duplicate_global_identity\" and (.message|test(\"Global entity records\"))) | [.recordId,.message] | @tsv' data/identity-review/validation_issues.jsonl",
+      "purpose": "Read the checked-in validateRepo entity duplicate_global_identity backlog without running validation."
+    },
+    {
+      "command": "bun -e '<local read-only parser over entities.jsonl, merges.json, do-not-merge.json, and validation_issues.jsonl>'",
+      "purpose": "Mechanically filtered validator pairs for current record_id presence, already-merged aliases, target merge-alias chains, alias==target, and do-not-merge hits."
+    },
+    {
+      "command": "bun -e '<local read-only parser over data/identity-review/candidate_edges.jsonl with the same guards>'",
+      "purpose": "Cross-checked candidate-edge validator messages and shared keys for the remaining non-stale entity backlog."
+    },
+    {
+      "command": "jq -r 'select(.record_id==...) | {record_id,display_name,aliases: .record_aliases,source_ids,payload,evidence_refs} | @json' data/canonical/entities.jsonl",
+      "purpose": "Inspected current canonical entity records, aliases, source ids, payload names/types, and evidence refs for each proposed pair."
+    },
+    {
+      "command": "jq 'select(.block_id==...)' raw/sources/*/blocks.jsonl",
+      "purpose": "Read local source blocks for evidence quotes where canonical evidence_refs did not already include source_quote."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "purpose": "Generated the UTC created_at timestamp."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed commands",
+    "materialize",
+    "validate",
+    "export",
+    "prepare-source",
+    "ingest",
+    "write",
+    "ask",
+    "ontology-review",
+    "ontology-normalize-run",
+    "identity-review",
+    "canonicalize",
+    "campaign dedup"
+  ]
+}

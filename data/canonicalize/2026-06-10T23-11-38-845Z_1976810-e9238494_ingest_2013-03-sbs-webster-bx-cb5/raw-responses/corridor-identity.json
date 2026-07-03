@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T23-11-38-845Z_1976810-e9238494_ingest_2013-03-sbs-webster-bx-cb5",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T03:35:33.072Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "webster-ave-cb5-matches-base",
+        "local_observation_id": "corridor_webster_ave_2013_03_cb5",
+        "decision": "new",
+        "rationale": "The observation's base_record_id is corridor_webster-ave-bronx, which is the exact same corridor: both describe Webster Avenue in the Bronx from The Hub to Williamsbridge, based on the Bx41 route, sourced from the same document (2013_03_sbs_webster_bx_cb5). The registry record corridor_webster-ave-bronx already includes this source in its source_ids and matches on corridor_name, street, limits, from, to, borough, and description. Since the closest match IS the observation's own base_record_id, the decision is new per the rule that observations already resolving to their base record should not link to their own id. No other registry record (e.g., corridor_webster-ave-bronx-2012, corridor_webster-avenue-bronx-2012, corridor_webster-avenue-sbs) is a better match — the 2012 records lack specific limits and the SBS record has different limits (Harlem River to The Hub vs The Hub to Williamsbridge).",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb5",
+            "block_id": "p007_c0002",
+            "source_quote": "Based on the existing Bx41 route that carries over 20,000 daily riders. 5.3 miles from The Hub to Williamsbridge."
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-34-56-666Z_2111393-98198f78_canonicalize_2026-06-10t23-11-38-845z-1976810-e9238494-ingest-2013-03-sbs-webster-bx-cb5-corridor-identity"
+}

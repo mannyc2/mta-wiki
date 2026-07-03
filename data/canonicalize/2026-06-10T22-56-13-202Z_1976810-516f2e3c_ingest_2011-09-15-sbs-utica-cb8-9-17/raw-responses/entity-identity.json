@@ -1,0 +1,123 @@
+{
+  "run_id": "2026-06-10T22-56-13-202Z_1976810-516f2e3c_ingest_2011-09-15-sbs-utica-cb8-9-17",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T01:11:30.973Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "nyc-dot-20110915",
+        "local_observation_id": "entity_nyc_dot_20110915_utica",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'entity_nyc-dot' matches an existing registry record exactly. The observation already resolves to that canonical record — no linking needed.",
+        "proposed_relations": [
+          {
+            "relation_kind": "presented_to",
+            "subject_id": "entity_nyc-dot",
+            "object_id": "entity_community-board-8-brooklyn-20110915",
+            "description": "NYC DOT presented to Brooklyn Community Board 8",
+            "evidence_refs": [
+              {
+                "source_id": "2011_09_15_sbs_utica_cb8_9_17",
+                "block_id": "p001_c0001",
+                "source_quote": "The logo for the New York City Department of Transportation (NYC DOT) is located in the top left corner."
+              },
+              {
+                "source_id": "2011_09_15_sbs_utica_cb8_9_17",
+                "block_id": "p001_c0003",
+                "source_quote": "Presentation to Representatives of Community Boards 8, 9 and 17"
+              }
+            ]
+          },
+          {
+            "relation_kind": "presented_to",
+            "subject_id": "entity_nyc-dot",
+            "object_id": "entity_community-board-9-brooklyn-brt-nostrand",
+            "description": "NYC DOT presented to Brooklyn Community Board 9",
+            "evidence_refs": [
+              {
+                "source_id": "2011_09_15_sbs_utica_cb8_9_17",
+                "block_id": "p001_c0001",
+                "source_quote": "The logo for the New York City Department of Transportation (NYC DOT) is located in the top left corner."
+              },
+              {
+                "source_id": "2011_09_15_sbs_utica_cb8_9_17",
+                "block_id": "p001_c0003",
+                "source_quote": "Presentation to Representatives of Community Boards 8, 9 and 17"
+              }
+            ]
+          },
+          {
+            "relation_kind": "presented_to",
+            "subject_id": "entity_nyc-dot",
+            "object_id": "entity_community-board-17-brooklyn-20110915",
+            "description": "NYC DOT presented to Brooklyn Community Board 17",
+            "evidence_refs": [
+              {
+                "source_id": "2011_09_15_sbs_utica_cb8_9_17",
+                "block_id": "p001_c0001",
+                "source_quote": "The logo for the New York City Department of Transportation (NYC DOT) is located in the top left corner."
+              },
+              {
+                "source_id": "2011_09_15_sbs_utica_cb8_9_17",
+                "block_id": "p001_c0003",
+                "source_quote": "Presentation to Representatives of Community Boards 8, 9 and 17"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_09_15_sbs_utica_cb8_9_17",
+            "block_id": "p001_c0001",
+            "source_quote": "New York City Department of Transportation (NYC DOT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "cb8-brooklyn-20110915",
+        "local_observation_id": "entity_community_board_8_brooklyn_20110915",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'entity_community-board-8-brooklyn-20110915' matches the existing registry record exactly. Already resolved.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_09_15_sbs_utica_cb8_9_17",
+            "block_id": "p001_c0003",
+            "source_quote": "Presentation to Representatives of Community Boards 8, 9 and 17"
+          }
+        ]
+      },
+      {
+        "decision_id": "cb9-brooklyn-20110915",
+        "local_observation_id": "entity_community_board_9_brooklyn_20110915",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'entity_community-board-9-brooklyn-brt-nostrand' matches the existing registry record exactly. Already resolved.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_09_15_sbs_utica_cb8_9_17",
+            "block_id": "p001_c0003",
+            "source_quote": "Presentation to Representatives of Community Boards 8, 9 and 17"
+          }
+        ]
+      },
+      {
+        "decision_id": "cb17-brooklyn-20110915",
+        "local_observation_id": "entity_community_board_17_brooklyn_20110915",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'entity_community-board-17-brooklyn-20110915' matches the existing registry record exactly. Already resolved.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_09_15_sbs_utica_cb8_9_17",
+            "block_id": "p001_c0003",
+            "source_quote": "Presentation to Representatives of Community Boards 8, 9 and 17"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-10-50-868Z_2111393-ea609a49_canonicalize_2026-06-10t22-56-13-202z-1976810-516f2e3c-ingest-2011-09-15-sbs-utica-cb8-9-17-entity-identity"
+}

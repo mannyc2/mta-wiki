@@ -1,0 +1,51 @@
+{
+  "run_id": "2026-06-10T22-56-13-259Z_1976810-f3a30c74_ingest_20110118-34th-cac3-slides",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T01:28:21.032Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "dec-m16-20110118",
+        "local_observation_id": "route_m16_20110118",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id route_m16-mentioned, which is the correct registry record for the M16 station locations diagram on page 20 of the 20110118 34th St CAC3 slides. No different registry record is a closer match.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac3_slides",
+            "block_id": "p020_c0001",
+            "source_quote": "M16 Station Locations"
+          },
+          {
+            "source_id": "20110118_34th_cac3_slides",
+            "block_id": "p020_c0002",
+            "source_quote": "The diagram illustrates the M16 subway line route in New York City, highlighting Uptown and Downtown stop locations. The route is shown as a green line with circular markers at each station."
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-m34-local-20110118",
+        "local_observation_id": "route_m34_local_20110118",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id route_m34-local-20110118, which is the correct registry record for the M34 local bus mentioned on pages 10 and 17 of the 20110118 34th St CAC3 slides. No different registry record is a closer match.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac3_slides",
+            "block_id": "p010_c0003",
+            "source_quote": "a bus with a destination sign that reads \"M34\""
+          },
+          {
+            "source_id": "20110118_34th_cac3_slides",
+            "block_id": "p017_c0001",
+            "source_quote": "M34 East Side Station Locations"
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-24-00-201Z_2111393-18d14812_canonicalize_2026-06-10t22-56-13-259z-1976810-f3a30c74-ingest-20110118-34th-cac3-slides-route-identity"
+}

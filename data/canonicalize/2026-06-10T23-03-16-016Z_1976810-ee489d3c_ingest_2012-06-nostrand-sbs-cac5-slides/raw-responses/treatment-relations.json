@@ -1,0 +1,384 @@
+{
+  "run_id": "2026-06-10T23-03-16-016Z_1976810-ee489d3c_ingest_2012-06-nostrand-sbs-cac5-slides",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T02:51:14.673Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "tr-nostrand-bus-bulbs-2012-06",
+        "local_observation_id": "treatment_bus_bulb_stations_2012_06",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-ave-rogers-ave-sbs-2012-06",
+            "object_id": "treatment_bus-bulb-stations-2012-06",
+            "evidence_refs": [
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p005_c0006",
+                "source_quote": "Bus Bulb:"
+              },
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p005_c0007",
+                "source_quote": "Sidewalks at SBS stations will extend out to the bus lane."
+              },
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p005_c0008",
+                "source_quote": "Buses will not need to pull in and out of traffic."
+              },
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p005_c0009",
+                "source_quote": "Higher curbs on the SBS platform will allow for easier boarding."
+              },
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p011_c0004",
+                "source_quote": "• SBS bus bulb stations at DeKalb Ave and Fulton St • Bus lane • All new roadway and sidewalks"
+              },
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p012_c0004",
+                "source_quote": "• SBS bus bulb stations • Bus lanes and street resurfacing • Sidewalk repairs"
+              }
+            ]
+          }
+        ],
+        "rationale": "Bus bulb stations are explicitly described as SBS project features in the Nostrand/Rogers CAC5 slides, with construction details under both HWK 1129 (Northern Nostrand) and HWK 1130 (south of Atlantic) DDC projects that deliver the SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p005_c0006",
+            "source_quote": "Bus Bulb:"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p005_c0007",
+            "source_quote": "Sidewalks at SBS stations will extend out to the bus lane."
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p005_c0008",
+            "source_quote": "Buses will not need to pull in and out of traffic."
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p005_c0009",
+            "source_quote": "Higher curbs on the SBS platform will allow for easier boarding."
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p011_c0004",
+            "source_quote": "• SBS bus bulb stations at DeKalb Ave and Fulton St • Bus lane • All new roadway and sidewalks"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p012_c0004",
+            "source_quote": "• SBS bus bulb stations • Bus lanes and street resurfacing • Sidewalk repairs"
+          }
+        ]
+      },
+      {
+        "decision_id": "tr-nostrand-bus-lanes-2012-06",
+        "local_observation_id": "treatment_bus_lanes_2012_06",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-ave-rogers-ave-sbs-2012-06",
+            "object_id": "treatment_bus-lanes-2012-06",
+            "evidence_refs": [
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p004_c0003",
+                "source_quote": "Parking in midday, nights, and weekends; Travel Lane in AM and PM peak periods Dedicated Bus Lane & Right Turn Lane: Offset bus lane allows buses to move quickly and preserves parking"
+              },
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p004_c0004",
+                "source_quote": "Note: Bus Lane is at right curb on Nostrand & Rogers between Eastern Pkwy & Empire Blvd, and on Bedford Ave between DeKalb & Flushing Aves"
+              }
+            ]
+          }
+        ],
+        "rationale": "Dedicated bus lanes are presented under 'Nostrand SBS Project Features' heading in the CAC5 slides, with specific locations along Nostrand, Rogers, and Bedford Avenues that match the SBS corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p004_c0003",
+            "source_quote": "Parking in midday, nights, and weekends; Travel Lane in AM and PM peak periods Dedicated Bus Lane & Right Turn Lane: Offset bus lane allows buses to move quickly and preserves parking"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p004_c0004",
+            "source_quote": "Note: Bus Lane is at right curb on Nostrand & Rogers between Eastern Pkwy & Empire Blvd, and on Bedford Ave between DeKalb & Flushing Aves"
+          }
+        ]
+      },
+      {
+        "decision_id": "tr-nostrand-station-features-2012-06",
+        "local_observation_id": "treatment_sbs_station_features_2012_06",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-ave-rogers-ave-sbs-2012-06",
+            "object_id": "treatment_sbs-station-features-2012-06",
+            "evidence_refs": [
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p005_c0003",
+                "source_quote": "Local Bus Stop at curb"
+              },
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p005_c0004",
+                "source_quote": "New Shelter"
+              },
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p005_c0005",
+                "source_quote": "Fare Collection Machines"
+              },
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p013_c0003",
+                "source_quote": "• Bus bulbs • Bus pads • Fare machines • Shelters • Landscaping"
+              }
+            ]
+          }
+        ],
+        "rationale": "SBS station features (shelters, fare machines, bus pads, landscaping) are listed under the Empire Blvd SBS Station slide and the Nostrand/Rogers SBS Construction slide, all part of the SBS project features.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p005_c0003",
+            "source_quote": "Local Bus Stop at curb"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p005_c0004",
+            "source_quote": "New Shelter"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p005_c0005",
+            "source_quote": "Fare Collection Machines"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p013_c0003",
+            "source_quote": "• Bus bulbs • Bus pads • Fare machines • Shelters • Landscaping"
+          }
+        ]
+      },
+      {
+        "decision_id": "tr-nostrand-curbside-bus-turn-2012-06",
+        "local_observation_id": "treatment_curbside_bus_right_turn_lanes_flatbush",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-ave-rogers-ave-sbs-2012-06",
+            "object_id": "treatment_curbside-bus-right-turn-lanes-flatbush",
+            "evidence_refs": [
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p006_c0001",
+                "source_quote": "Nostrand/Flatbush Junction Area"
+              },
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p006_c0002",
+                "source_quote": "Curbside bus/right turn lanes for peak periods provide extra capacity on approach to Flatbush Ave."
+              },
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p006_c0003",
+                "source_quote": "Left turn bans reduce conflicts in the intersection."
+              }
+            ]
+          }
+        ],
+        "rationale": "Curbside bus/right turn lanes at Nostrand/Flatbush Junction are presented in the CAC5 slides as part of the overall Nostrand SBS project features addressing the southern end of the corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p006_c0001",
+            "source_quote": "Nostrand/Flatbush Junction Area"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p006_c0002",
+            "source_quote": "Curbside bus/right turn lanes for peak periods provide extra capacity on approach to Flatbush Ave."
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p006_c0003",
+            "source_quote": "Left turn bans reduce conflicts in the intersection."
+          }
+        ]
+      },
+      {
+        "decision_id": "tr-nostrand-delivery-zones-2012-06",
+        "local_observation_id": "treatment_delivery_zones_2012_06",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-ave-rogers-ave-sbs-2012-06",
+            "object_id": "treatment_delivery-zones-2012-06",
+            "evidence_refs": [
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p007_c0001",
+                "source_quote": "Delivery Zones"
+              },
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p007_c0002",
+                "source_quote": "Commercial loading zones keep curb clear for store deliveries"
+              },
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p008_c0001",
+                "source_quote": "Overall Plan:"
+              },
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p008_c0002",
+                "source_quote": "Delivery \"Windows\" on Alternating Curbs, 10 AM to Noon on East Curb, Noon to 2 PM on West Curb"
+              }
+            ]
+          }
+        ],
+        "rationale": "Commercial loading zones/delivery windows are presented in the CAC5 slides alongside parking and loading changes that are part of the Nostrand SBS project scope, including site-specific delivery zone plans.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p007_c0001",
+            "source_quote": "Delivery Zones"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p007_c0002",
+            "source_quote": "Commercial loading zones keep curb clear for store deliveries"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p008_c0001",
+            "source_quote": "Overall Plan:"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p008_c0002",
+            "source_quote": "Delivery \"Windows\" on Alternating Curbs, 10 AM to Noon on East Curb, Noon to 2 PM on West Curb"
+          }
+        ]
+      },
+      {
+        "decision_id": "tr-nostrand-metered-parking-2012-06",
+        "local_observation_id": "treatment_metered_parking_2012_06",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-ave-rogers-ave-sbs-2012-06",
+            "object_id": "treatment_metered-parking-2012-06",
+            "evidence_refs": [
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p010_c0001",
+                "source_quote": "Metered Parking"
+              },
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p010_c0003",
+                "source_quote": "Add meters in commercial areas where there are parking time limits but no meters, or no limits at all"
+              },
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p010_c0004",
+                "source_quote": "All single space meters will be replaced by Muni-Meters"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metered parking and Muni-Meter installation are presented in the CAC5 slides as parking regulation changes along Nostrand Avenue commercial areas that are part of the SBS project scope.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p010_c0001",
+            "source_quote": "Metered Parking"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p010_c0003",
+            "source_quote": "Add meters in commercial areas where there are parking time limits but no meters, or no limits at all"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p010_c0004",
+            "source_quote": "All single space meters will be replaced by Muni-Meters"
+          }
+        ]
+      },
+      {
+        "decision_id": "tr-nostrand-curb-regulation-2012-06",
+        "local_observation_id": "treatment_curb_regulation_changes_2012_06",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-ave-rogers-ave-sbs-2012-06",
+            "object_id": "treatment_curb-regulation-changes-2012-06",
+            "evidence_refs": [
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p015_c0001",
+                "source_quote": "Curb Regulation Changes Nostrand south of Atlantic, and Rogers Ave"
+              },
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p015_c0002",
+                "source_quote": "Rush hour curbside travel lanes will be switched from the right to the left side of the street in the fall, to allow bus bulb construction on the right side."
+              },
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p015_c0003",
+                "source_quote": "Midday commercial loading zones will be implemented during construction."
+              }
+            ]
+          }
+        ],
+        "rationale": "Curb regulation changes (rush hour lane switch and midday loading zones) are explicitly described in the CAC5 slides as part of the construction staging for the Nostrand/Rogers SBS project, specifically to allow bus bulb construction.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p015_c0001",
+            "source_quote": "Curb Regulation Changes Nostrand south of Atlantic, and Rogers Ave"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p015_c0002",
+            "source_quote": "Rush hour curbside travel lanes will be switched from the right to the left side of the street in the fall, to allow bus bulb construction on the right side."
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p015_c0003",
+            "source_quote": "Midday commercial loading zones will be implemented during construction."
+          }
+        ]
+      }
+    ],
+    "packet_id": "treatment-relations"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-46-00-323Z_2111393-adaf27af_canonicalize_2026-06-10t23-03-16-016z-1976810-ee489d3c-ingest-2012-06-nostrand-sbs-cac5-slides-treatment-relations"
+}

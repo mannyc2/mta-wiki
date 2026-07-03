@@ -1,0 +1,478 @@
+{
+  "batch": "identity217",
+  "generated_at": "2026-06-23T13:08:42Z",
+  "candidates": [
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_170871-nypd",
+      "target_id": "entity_nypd",
+      "identity_key": "entity_nypd",
+      "confidence": "high",
+      "reason": "Exact agency identity. Both records identify the New York City Police Department / NYPD; the alias is a newer police-department extraction while the target is the broader NYPD reference already used across bus-priority sources.",
+      "evidence": [
+        {
+          "record_id": "entity_nypd",
+          "display_name": "NYPD Reference",
+          "entity_name": "New York City Police Department",
+          "entity_type": "government agency",
+          "aliases": [
+            "entity_buslane-brochure-nypd",
+            "entity_meeting-doc-100361-nypd",
+            "entity_nypd",
+            "entity_nypd-34th-st-busway"
+          ],
+          "evidence_refs": [
+            "14th_street_busway#p001_b0001 quote: NYPD traffic agents may also issue summonses",
+            "14th_street_busway_brochure#p001_c0030 quote: Curb regulations are enforced by NYPD traffic agents",
+            "34th_st_busway#p002_c0023"
+          ]
+        },
+        {
+          "record_id": "entity_170871-nypd",
+          "display_name": "New York City Police Department (NYPD)",
+          "entity_name": "New York City Police Department",
+          "entity_type": "police department",
+          "aliases": [
+            "entity_new-york-city-police-department",
+            "entity_new-york-city-police-department-nypd",
+            "entity_nypd"
+          ],
+          "evidence_refs": [
+            "meeting_doc_104796#p004_c0003",
+            "meeting_doc_104796#p070_c0008",
+            "meeting_doc_170871#p005_c0013"
+          ]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_nyct-meeting-doc-131666",
+      "target_id": "entity_mta-nyct",
+      "identity_key": "entity_mta-nyct",
+      "confidence": "high",
+      "reason": "Exact agency identity. The alias record explicitly says New York City Transit Authority is MTA New York City Transit; the target is the richer NYCT agency reference.",
+      "evidence": [
+        {
+          "record_id": "entity_mta-nyct",
+          "display_name": "MTA NYCT Reference",
+          "entity_name": "MTA New York City Transit",
+          "entity_type": "agency",
+          "organization": "Metropolitan Transportation Authority",
+          "aliases": [
+            "entity_mta-nyct",
+            "entity_new-york-city-transit",
+            "entity_nyc-transit",
+            "entity_nyct"
+          ],
+          "evidence_refs": [
+            "m86_sbs_progress_report_2017#p003_c0003",
+            "14th_street_winter2020_monitoring#p003_c0005",
+            "14th_street_fall2019_monitoring#p003_c0005"
+          ]
+        },
+        {
+          "record_id": "entity_nyct-meeting-doc-131666",
+          "display_name": "MTA New York City Transit",
+          "entity_name": "New York City Transit Authority",
+          "entity_type": "transit authority",
+          "aliases": [
+            "entity_mta-nyct",
+            "entity_new-york-city-transit-authority"
+          ],
+          "evidence_refs": [
+            "meeting_doc_131666#p003_c0012 quote: New York City Transit Authority (\"MTA New York City Transit\")"
+          ]
+        }
+      ]
+    }
+  ],
+  "do_not_merge": [
+    {
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-100361-nypd-transit-bureau",
+        "entity_nypd"
+      ],
+      "identity_key": "entity_nypd",
+      "confidence": "high",
+      "reason": "Bureau versus parent agency. NYPD's Transit Bureau is a bureau within the New York City Police Department, not the same canonical entity as NYPD itself.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-100361-nypd-transit-bureau",
+          "display_name": "NYPD's Transit Bureau",
+          "entity_name": "NYPD's Transit Bureau",
+          "entity_type": "agency bureau",
+          "organization": "New York City Police Department",
+          "aliases": [
+            "entity_meeting-doc-100361-nypd-transit-bureau",
+            "entity_meeting-doc-102826-nypd-transit-bureau",
+            "entity_nypd"
+          ],
+          "evidence_refs": [
+            "meeting_doc_100361#p001_c0003 quote: The report is submitted by NYPD's Transit Bureau",
+            "meeting_doc_102826#p001_c0003 quote: The report is submitted by NYPD's Transit Bureau"
+          ]
+        },
+        {
+          "record_id": "entity_nypd",
+          "display_name": "NYPD Reference",
+          "entity_name": "New York City Police Department",
+          "entity_type": "government agency",
+          "evidence_refs": [
+            "14th_street_busway#p001_b0001 quote: NYPD traffic agents may also issue summonses",
+            "14th_street_busway_brochure#p001_c0030 quote: Curb regulations are enforced by NYPD traffic agents"
+          ]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_alexander-lindsay-mtapd",
+        "entity_annual-report-2021-mtapd"
+      ],
+      "identity_key": "entity_mta-police-department",
+      "confidence": "high",
+      "reason": "Person versus agency. Alexander Lindsay is a person affiliated with the MTA Police Department; the MTA Police Department is the agency.",
+      "evidence": [
+        {
+          "record_id": "entity_alexander-lindsay-mtapd",
+          "display_name": "Alexander Lindsay",
+          "entity_name": "Alexander Lindsay",
+          "entity_type": "person",
+          "role": "Commanding Officer of Internal Affairs, Designated Employer Representative (DER) for MTA Police Department",
+          "organization": "MTA Police Department",
+          "aliases": [
+            "entity_alexander-lindsay",
+            "entity_mta-police-department"
+          ],
+          "evidence_refs": [
+            "meeting_doc_112151#p003_c0006",
+            "meeting_doc_186616#p019_c0005 quote: MTAPD Transit Ops"
+          ]
+        },
+        {
+          "record_id": "entity_annual-report-2021-mtapd",
+          "display_name": "MTA Police Department",
+          "entity_name": "MTA Police Department",
+          "entity_type": "police department",
+          "organization": "Metropolitan Transportation Authority",
+          "evidence_refs": [
+            "annual_report_narrative_2021#p047_c0003",
+            "meeting_doc_105786#p002_c0029 quote: MTA Police will highlight the significant police activities"
+          ]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_annual-report-2021-lirr",
+        "entity_meeting-doc-128981-nyct"
+      ],
+      "identity_key": "entity_lirr",
+      "confidence": "high",
+      "reason": "Different operating agencies. The Long Island Rail Road Company / MTA Long Island Rail Road is distinct from New York City Transit Authority / NYCT; shared LIRR aliases on the NYCT record are contamination.",
+      "evidence": [
+        {
+          "record_id": "entity_annual-report-2021-lirr",
+          "display_name": "MTA Long Island Rail Road",
+          "entity_name": "The Long Island Rail Road Company",
+          "entity_type": "public benefit corporation subsidiary",
+          "organization": "Metropolitan Transportation Authority",
+          "evidence_refs": [
+            "annual_report_narrative_2021#p015_c0001",
+            "annual_report_narrative_2021#p093_c0006"
+          ]
+        },
+        {
+          "record_id": "entity_meeting-doc-128981-nyct",
+          "display_name": "New York City Transit Authority (NYCT)",
+          "entity_name": "New York City Transit Authority",
+          "entity_type": "agency",
+          "organization": "MTA",
+          "aliases": [
+            "entity_lirr",
+            "entity_long-island-rail-rd",
+            "entity_mta-nyct"
+          ],
+          "evidence_refs": [
+            "meeting_doc_128981#p033_c0004 quote: Due to New York City Transit Authority",
+            "meeting_doc_128981#p035_c0001 quote: NYCTR - Distributable Income"
+          ]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_annual-report-2021-lirr",
+        "entity_meeting-doc-124881-mnr"
+      ],
+      "identity_key": "entity_long-island-rail-rd",
+      "confidence": "high",
+      "reason": "Different railroad agencies. MTA Long Island Rail Road and MTA Metro-North Railroad are sibling agencies, not the same entity; shared LIRR aliases on the Metro-North record are contamination.",
+      "evidence": [
+        {
+          "record_id": "entity_annual-report-2021-lirr",
+          "display_name": "MTA Long Island Rail Road",
+          "entity_name": "The Long Island Rail Road Company",
+          "entity_type": "public benefit corporation subsidiary",
+          "organization": "Metropolitan Transportation Authority",
+          "evidence_refs": [
+            "annual_report_narrative_2021#p015_c0001",
+            "meeting_doc_104766#p001_c0001 quote: Long Island Rail Road"
+          ]
+        },
+        {
+          "record_id": "entity_meeting-doc-124881-mnr",
+          "display_name": "MTA Metro-North Railroad",
+          "entity_name": "Metro-North Commuter Railroad Company",
+          "entity_type": "agency",
+          "organization": "Metropolitan Transportation Authority",
+          "aliases": [
+            "entity_long-island-rail-rd",
+            "entity_metro-north-railroad",
+            "entity_mta-metro-north-railroad"
+          ],
+          "evidence_refs": [
+            "meeting_doc_124881#p004_c0011",
+            "meeting_doc_131536#p001_c0007 quote: AGENCY: MTA Metro-North Railroad (\"MNR\")"
+          ]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-128981-nyct",
+        "entity_mta-entity-update-2025"
+      ],
+      "identity_key": "entity_mta",
+      "confidence": "high",
+      "reason": "Subsidiary agency versus parent authority. NYCT is an operating agency under MTA; it should not merge into the Metropolitan Transportation Authority parent record.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-128981-nyct",
+          "display_name": "New York City Transit Authority (NYCT)",
+          "entity_name": "New York City Transit Authority",
+          "entity_type": "agency",
+          "organization": "MTA",
+          "evidence_refs": [
+            "meeting_doc_128981#p033_c0004 quote: Due to New York City Transit Authority",
+            "meeting_doc_133551#p004_c0001"
+          ]
+        },
+        {
+          "record_id": "entity_mta-entity-update-2025",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "entity_name": "Metropolitan Transportation Authority",
+          "entity_type": "transit_authority",
+          "organization": "Metropolitan Transportation Authority",
+          "evidence_refs": [
+            "better_buses_action_plan_2019#p002_c0004",
+            "better_buses_action_plan_2019#p002_c0006"
+          ]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_annual-report-2021-lirr",
+        "entity_lirr-committee-meeting-doc-131511"
+      ],
+      "identity_key": "entity_long-island-rail-rd-committee",
+      "confidence": "high",
+      "reason": "Agency versus board committee. The MTA Long Island Rail Road agency is distinct from the Long Island Rail Road Committee.",
+      "evidence": [
+        {
+          "record_id": "entity_annual-report-2021-lirr",
+          "display_name": "MTA Long Island Rail Road",
+          "entity_name": "The Long Island Rail Road Company",
+          "entity_type": "public benefit corporation subsidiary",
+          "organization": "Metropolitan Transportation Authority",
+          "evidence_refs": [
+            "annual_report_narrative_2021#p015_c0001",
+            "annual_report_narrative_2021#p093_c0006"
+          ]
+        },
+        {
+          "record_id": "entity_lirr-committee-meeting-doc-131511",
+          "display_name": "Long Island Rail Road Committee",
+          "entity_name": "Long Island Rail Road Committee",
+          "entity_type": "committee",
+          "organization": "Metropolitan Transportation Authority",
+          "evidence_refs": [
+            "meeting_doc_131511#p001_c0002",
+            "meeting_doc_133306#p001_c0002",
+            "meeting_doc_140306#p001_c0001"
+          ]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_grand-central-madison-127546",
+        "entity_meeting-doc-121001-gcmoc"
+      ],
+      "identity_key": "entity_meeting-doc-121001-gcmoc",
+      "confidence": "high",
+      "reason": "Facility versus operating company. Grand Central Madison is a station/facility; Grand Central Madison Operating Company is an MTA agency/company responsible for the LIRR-operating portion, not the station itself.",
+      "evidence": [
+        {
+          "record_id": "entity_grand-central-madison-127546",
+          "display_name": "Grand Central Madison",
+          "entity_name": "Grand Central Madison",
+          "entity_type": "station",
+          "aliases": [
+            "entity_grand-central-madison",
+            "entity_meeting-doc-121001-gcmoc"
+          ],
+          "evidence_refs": [
+            "meeting_doc_127546#p001_c0008",
+            "meeting_doc_131501#p002_c0002"
+          ]
+        },
+        {
+          "record_id": "entity_meeting-doc-121001-gcmoc",
+          "display_name": "Grand Central Madison Operating Company (GCMOC)",
+          "entity_name": "Grand Central Madison Operating Company",
+          "entity_type": "agency",
+          "organization": "Metropolitan Transportation Authority",
+          "evidence_refs": [
+            "meeting_doc_121001#p001_c0007 quote: Grand Central Madison Operating Company (GCMOC)",
+            "meeting_doc_121181#p001_c0002"
+          ]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_janno-lieber-2025",
+        "entity_meeting-doc-64066-mta"
+      ],
+      "identity_key": "entity_janno-lieber",
+      "confidence": "high",
+      "reason": "Person versus agency. Janno Lieber is an individual MTA chair/CEO, while Metropolitan Transportation Authority is the agency; shared Janno Lieber aliases on the MTA record are person-field contamination.",
+      "evidence": [
+        {
+          "record_id": "entity_janno-lieber-2025",
+          "display_name": "Janno Lieber, MTA Chair & CEO",
+          "entity_name": "Janno Lieber",
+          "entity_type": "person",
+          "title": "MTA Chair and CEO",
+          "organization": "Metropolitan Transportation Authority",
+          "evidence_refs": [
+            "nyct_key_performance_metrics_june2025#p002_c0001",
+            "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026#p002_c0002 quote: MTA Chairman Janno Lieber"
+          ]
+        },
+        {
+          "record_id": "entity_meeting-doc-64066-mta",
+          "display_name": "Metropolitan Transportation Authority",
+          "entity_name": "Metropolitan Transportation Authority",
+          "entity_type": "agency",
+          "organization": "MTA",
+          "aliases": [
+            "entity_janno-lieber",
+            "entity_janno-lieber-chair-ceo-mta"
+          ],
+          "evidence_refs": [
+            "meeting_doc_64066#p001_c0002 quote: Metropolitan Transportation Authority",
+            "meeting_doc_72546#p001_c0002 quote: Metropolitan Transportation Authority"
+          ]
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "reason": "Skipped broader MTA and committee/member-list clusters where a single DNM pair would not cleanly resolve the group without a broader modeling pass.",
+      "records_sample": [
+        "entity_department-of-buses",
+        "entity_mta-nyct",
+        "entity_nyct-mta-bus-committee-charter",
+        "entity_finance-committee-mta",
+        "entity_meeting-doc-111901-mta-finance"
+      ]
+    },
+    {
+      "reason": "Skipped exact aliases already present in current merge overrides or visible prior identity prep notes.",
+      "records_sample": [
+        "entity_meeting-doc-160141-metro-north-commuter-railroad -> entity_meeting-doc-124881-mnr",
+        "entity_mtapd-meeting-doc-205666 -> entity_annual-report-2021-mtapd",
+        "entity_mta-grand-central-madison-operating-co -> entity_meeting-doc-121001-gcmoc",
+        "entity_meeting-doc-208011-j-lieber -> entity_janno-lieber-2025"
+      ]
+    },
+    {
+      "reason": "Skipped additional sibling/parent authority collisions from the same large contaminated clusters once this artifact reached the requested bounded size.",
+      "records_sample": [
+        "entity_meeting-doc-124881-mnr <> entity_mta-entity-update-2025",
+        "entity_finance-committee-mta <> entity_mta-entity-update-2025",
+        "entity_gcmcoc-2023-adopted-budget <> entity_mta-entity-update-2025"
+      ]
+    }
+  ],
+  "guard_summary": {
+    "scope": "Prepared the next bounded entity identity cleanup artifact after the identity212-216-source-prep-pilot checkpoint.",
+    "allowed_write": "Only this artifact was written: data/review_notes/codex-identity-batch217-prep.json.",
+    "source_of_truth_mutation": "none",
+    "live_duplicate_snapshot": {
+      "user_supplied_checkpoint": "Current 181 entity duplicate_global_identity backlog after identity212-216-source-prep-pilot.",
+      "local_read_only_replay_method": "Read-only shared-key replay over data/canonical/entities.jsonl using record_id plus record_aliases, with current data/identity-overrides/merges.json roots and data/identity-overrides/do-not-merge.json pair suppression. This is a conservative local selection aid, not a validate CLI run.",
+      "entity_records": 1911,
+      "raw_shared_key_instances_after_current_dnm": 305,
+      "unique_unsuppressed_entity_pairs_after_current_dnm": 188,
+      "duplicate_keys_with_unsuppressed_pairs": 132,
+      "snapshot_caveat": "The local raw shared-key replay overcounts the user-supplied 181 validator checkpoint because it counts all shared record_alias keys observed in canonical JSONL. Candidate selection used only pairs still present in this replay and absent from exact current overrides or prior identity prep coverage."
+    },
+    "coverage_checks": {
+      "selected_candidate_count": 2,
+      "selected_do_not_merge_count": 8,
+      "total_selected_decision_count": 10,
+      "current_override_or_prior_batch_exact_pair_hits": 0
+    },
+    "commands_used": [
+      "git status --short",
+      "rg --files data/review_notes data/identity-overrides data/canonical",
+      "ls -la data/review_notes data/identity-overrides",
+      "wc -l data/canonical/entities.jsonl",
+      "sed read-only inspection of data/review_notes/codex-identity-batch212-prep.json, batch213, batch215, batch216, data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, and initial data/canonical/entities.jsonl rows",
+      "rg read-only searches for duplicate_global_identity, current backlog notes, and selected record ids across data/review_notes, data/identity-overrides, and existing validation-output paths",
+      "rg --files data | rg 'validation|validate|issues|backlog|identity-review' to locate existing validation-output artifacts without running validation",
+      "bun --eval read-only duplicate shared-key replay over data/canonical/entities.jsonl plus current merge/DNM overrides",
+      "bun --eval read-only exact current override/prior identity prep pair coverage checks for selected pairs",
+      "bun --eval read-only selected record summaries from data/canonical/entities.jsonl",
+      "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "test ! -e data/review_notes/codex-identity-batch217-prep.json"
+    ],
+    "commands_not_used": [
+      "provider-backed commands",
+      "canonicalize*",
+      "identity-review-run",
+      "ontology-normalize-run",
+      "write",
+      "ask",
+      "schema commands",
+      "profile/provider/model inspection commands",
+      "materialize",
+      "validate CLI",
+      "export-jsonl",
+      "generated canonical JSONL/DB/wiki edits",
+      "identity override edits"
+    ],
+    "selection_filters": [
+      "Excluded any alias id already present in data/identity-overrides/merges.json.",
+      "Excluded any direct DNM pair already present in data/identity-overrides/do-not-merge.json.",
+      "Excluded selected pairs already visible in prior codex-identity review-note candidates or do_not_merge sections.",
+      "Preferred exact same-agency aliases and clear person-vs-agency, subsidiary-vs-parent, agency-vs-committee, bureau-vs-parent, or facility-vs-operating-company guards.",
+      "Avoided adding source-of-truth overrides; this artifact is review prep only."
+    ],
+    "worktree_note": "The worktree was already dirty, including source-of-truth and generated files. This prep did not revert, overwrite, materialize, validate, export, or mutate those files."
+  }
+}

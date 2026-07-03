@@ -1,0 +1,100 @@
+{
+  "id": "codex-project-status-derived-family-2026-06-30-q",
+  "created_at": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-profile commands"
+  ],
+  "implemented_changes": [
+    {
+      "bucket": "projects.document_time_status",
+      "before": 34,
+      "after": 32,
+      "change": "derive project-family context inside project status normalization so the exact Additional NYCT Initiatives operating-efficiency payload can classify as active even when replay input still carries project_family=other",
+      "records_moved": [
+        {
+          "record_id": "project_meeting-doc-100351-a-line-initiative",
+          "document_time_status": "active",
+          "note": "Existing exact A Line initiative gate remained effective after rematerialization."
+        },
+        {
+          "record_id": "project_nyct-additional-initiatives",
+          "document_time_status": "active",
+          "note": "New derived-family guard lets the exact operating-efficiency initiative classify without relying on prior family normalization order."
+        }
+      ]
+    }
+  ],
+  "tests_and_validation": [
+    {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "result": "pass",
+      "details": "267 pass, 0 fail, 4076 expect() calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    {
+      "command": "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+      "result": "pass",
+      "details": "Materialized 93092/98102 submissions; SQLite FTS quick_check: ok"
+    },
+    {
+      "command": "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+      "result": "pass",
+      "details": "ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass",
+      "details": "Submissions 98102; canonical records 84048; wiki pages 7337; Issues 0"
+    }
+  ],
+  "subagent_findings": [
+    {
+      "agent_id": "019f18d6-bf97-7de2-90e6-7719b1e14f51",
+      "finding": "Public special-event/facility-impact event records could move event_family other 107 -> 93 with an exact allowlist, but existing tests and LOG policy intentionally keep these as other; deferred as representation policy."
+    },
+    {
+      "agent_id": "019f18d6-c347-7b32-8137-3e52719476e9",
+      "finding": "Project-status scout identified eight possible records; only the safest active-status pair was implemented in this checkpoint."
+    },
+    {
+      "agent_id": "019f18d6-c6a9-7360-8562-b3499a831390",
+      "finding": "Route M101 local/SBS spillover would move split_candidate 8 -> 7, but current tests intentionally classify it as split_candidate; deferred as policy reversal."
+    }
+  ],
+  "active_next_fanout": [
+    {
+      "agent_id": "019f18df-7954-79c1-badc-6adfc72c8481",
+      "lane": "source_gap.gap_kind_normalized residuals"
+    },
+    {
+      "agent_id": "019f18df-9cca-7f72-8554-0fff4d3525c3",
+      "lane": "project family/status residuals"
+    },
+    {
+      "agent_id": "019f18df-a1ce-7851-b605-1ea17bcd2e26",
+      "lane": "entity duplicate identity keys and override candidates"
+    },
+    {
+      "agent_id": "019f18df-bad3-7740-bef0-f6df44b7de52",
+      "lane": "route residual guardrail candidates"
+    }
+  ],
+  "remaining_intentionally_unresolved": [
+    "32 project records still lack concrete document_time_status after this checkpoint.",
+    "10 project records still have missing/other project_family.",
+    "107 event_family other records remain; a 14-record public/special-event slice is deferred pending representation-policy approval.",
+    "M101 local/SBS route spillover remains split_candidate because implementing it would reverse an existing test expectation.",
+    "Canonical JSONL was updated only by deterministic materialization, not hand-edited."
+  ]
+}

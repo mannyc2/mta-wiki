@@ -1,0 +1,66 @@
+{
+  "run_id": "2026-06-10T17-48-04-772Z_1496766-26d4ac0d_ingest_2010-05-17-brt-nostrand-cb15",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-10T19:41:02.505Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "nostrand-ave-rogers-ave-sbs-new",
+        "local_observation_id": "corridor_nostrand_ave_rogers_ave_sbs_2010",
+        "decision": "new",
+        "rationale": "Observation's base_record_id (corridor_nostrand-avenue) matches the existing registry record. The observation already resolves to that canonical record — the 9.3-mile Nostrand/Rogers SBS corridor from Williamsburg Bridge to Sheepshead Bay, served by B44 in Brooklyn, with streets Nostrand Avenue and Rogers Avenue.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_17_brt_nostrand_cb15",
+            "block_id": "p011_c0002",
+            "source_quote": "9.3 miles from Williamsburg Bridge to Sheepshead Bay"
+          },
+          {
+            "source_id": "2010_05_17_brt_nostrand_cb15",
+            "block_id": "p011_c0003",
+            "source_quote": "Currently served by B44 bus route"
+          },
+          {
+            "source_id": "2010_05_17_brt_nostrand_cb15",
+            "block_id": "p012_c0007",
+            "source_quote": "The map illustrates the Nostrand Ave Bus Rapid Transit (BRT) route, which runs parallel to the Nostrand Avenue corridor. The route is divided into two main sections: the Northbound section on Rogers Avenue and the Southbound section on Nostrand Avenue."
+          }
+        ]
+      },
+      {
+        "decision_id": "rogers-ave-sbs-new",
+        "local_observation_id": "corridor_rogers_ave_sbs_2010",
+        "decision": "new",
+        "rationale": "Observation's base_record_id (corridor_rogers-avenue) matches the existing registry record. The observation already resolves to that canonical record — Rogers Avenue is the northbound SBS section of the Nostrand/Rogers corridor, part of the 9.3-mile route from Williamsburg Bridge to Sheepshead Bay.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_17_brt_nostrand_cb15",
+            "block_id": "p012_c0007",
+            "source_quote": "The map illustrates the Nostrand Ave Bus Rapid Transit (BRT) route, which runs parallel to the Nostrand Avenue corridor. The route is divided into two main sections: the Northbound section on Rogers Avenue and the Southbound section on Nostrand Avenue."
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "part_of",
+            "subject_id": "corridor_rogers-avenue",
+            "object_id": "corridor_nostrand-avenue",
+            "description": "Rogers Avenue is the northbound SBS section of the broader Nostrand/Rogers corridor from Williamsburg Bridge to Sheepshead Bay.",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_17_brt_nostrand_cb15",
+                "block_id": "p012_c0007",
+                "source_quote": "The map illustrates the Nostrand Ave Bus Rapid Transit (BRT) route, which runs parallel to the Nostrand Avenue corridor. The route is divided into two main sections: the Northbound section on Rogers Avenue and the Southbound section on Nostrand Avenue."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-39-53-264Z_1650285-5ae6885a_canonicalize_2026-06-10t17-48-04-772z-1496766-26d4ac0d-ingest-2010-05-17-brt-nostrand-cb15-corridor-identity"
+}

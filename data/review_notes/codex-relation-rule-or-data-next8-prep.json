@@ -1,0 +1,275 @@
+{
+  "note_id": "codex-relation-rule-or-data-next8-prep",
+  "created_at": "2026-06-22T21:36:40Z",
+  "author": "codex",
+  "scope": "validator/rule-data triage only for next relation endpoint bucket after last materialized checkpoint plus applied-but-unmaterialized relation027; artifact-only prep; no materialize, validate, export-jsonl, provider-backed commands, generated canonical/wiki/DB edits, or relation-rule mutations",
+  "kind": "relation_endpoint_rule_or_data_triage",
+  "recommendation": {
+    "type": "data_cleanup_bucket",
+    "bucket": "implemented_by entity->entity",
+    "summary": "Do not widen implemented_by to accept entity subjects. After the last materialized checkpoint and after virtually excluding relation027's five applied-but-unmaterialized published_by claim->entity originals, the first top bucket is four implemented_by entity->entity rows, tied with operated_by entity->entity. The four implemented_by examples are not a coherent validator gap: two are same-entity self-links, one is a license-agreement agency/licensee row, and one is broad OCIP coverage context.",
+    "recommended_action": "Prepare a narrow relation cleanup batch that retires the four malformed implemented_by entity->entity submissions. Use replacement relations only where a row has a clear source-backed non-agency-role assertion; otherwise retire without replacement. Do not patch RELATION_ENDPOINT_SHAPES.implemented_by.",
+    "proposed_mechanism": {
+      "mutation_kind_for_followup": "retire-first data cleanup batch",
+      "retire_original_submission_ids": [
+        "sub_da5e43202dc357bb",
+        "sub_17257510bbc1870d",
+        "sub_c18efe02a3ab1819",
+        "sub_f0b5f134f7fdd789"
+      ],
+      "replacement_guidance": [
+        "For self-links, prefer no replacement.",
+        "For the LIRR/VPCT license row, a weak unshaped related_to entity->entity replacement may be acceptable if the cleanup preparer wants to preserve agency/licensee context.",
+        "For OCIP coverage, prefer no replacement unless a source-backed project/source carrier is already present in the same source; do not invent one in cleanup prep.",
+        "For the TBTA legal-name self-link, prefer no replacement because the entity payload already carries the legal-name fact."
+      ],
+      "scoped_test_or_code_plan_if_rule_change_were_warranted": null
+    },
+    "why_not_validator_patch": {
+      "rejected_patch": "Add entity to RELATION_ENDPOINT_SHAPES.implemented_by.subject",
+      "reason": "The current implemented_by shape intentionally models project -> entity. These rows do not show a stable entity-implemented-by-entity relation class; they mostly show self-links, legal-name/entity identity facts, license counterparties, or coverage context. Widening would hide extraction mistakes and conflict with the previous relation024/next5 decision not to broaden implemented_by for non-project subjects.",
+      "confidence": "high"
+    }
+  },
+  "checkpoint_context": {
+    "last_materialized_checkpoint_from_log": {
+      "after": "identity056 and relation026",
+      "unexpected_relation_endpoint_shape": 68,
+      "notes": "The checkpoint materialized relation026's four has_timeline_event metric_claim->event retirements and supports event->metric_claim replacements."
+    },
+    "applied_but_unmaterialized_adjustment": {
+      "relation027": "five published_by claim->entity originals were retired and five has_claim entity->claim replacements were appended while wave26 remained live; generated-output checks are pending.",
+      "excluded_relation027_original_record_ids": [
+        "relation_gothamist-congestion-pricing",
+        "relation_meeting-doc-177271-nytimes-reported-congestion-pricing",
+        "relation_meeting-doc-79466-lirr-policy",
+        "relation_meeting-doc-79466-mnr-policy",
+        "relation_the-city-mta-article"
+      ]
+    },
+    "method": "Read-only bun --eval over readCanonicalRecords('data/canonical') and relationEndpointShapeIssue(), excluding only relation027 original record ids from data/review_notes/codex-relation-cleanup-batch027-prep.json. This is a simulated inventory over current canonical JSONL plus applied-but-unmaterialized durable cleanup, not a validate CLI run."
+  },
+  "bucket_counts_after_relation027_exclusion": {
+    "unexpected_relation_endpoint_shape_total": 63,
+    "by_relation_kind": {
+      "part_of_program": 12,
+      "implemented_by": 10,
+      "serves_route": 10,
+      "has_timeline_event": 7,
+      "operated_by": 7,
+      "has_treatment": 4,
+      "owned_by": 3,
+      "has_claim": 2,
+      "has_metric": 2,
+      "operates_on_corridor": 2,
+      "published_by": 2,
+      "related_route": 2
+    },
+    "top_shape_buckets": [
+      {
+        "bucket": "implemented_by entity->entity",
+        "count": 4,
+        "classification": "data_cleanup_bucket_recommended_here"
+      },
+      {
+        "bucket": "operated_by entity->entity",
+        "count": 4,
+        "classification": "defer; also likely data cleanup, but next8 takes the first top bucket"
+      },
+      {
+        "bucket": "part_of_program project->source",
+        "count": 3,
+        "classification": "defer; source object suggests containment/reference cleanup"
+      },
+      {
+        "bucket": "serves_route project->project",
+        "count": 3,
+        "classification": "defer; likely endpoint identity or relation-kind cleanup"
+      },
+      {
+        "bucket": "has_metric source->metric_claim",
+        "count": 2,
+        "classification": "defer; possible source-carried metric context, but lower count and needs separate source-page/metric semantics review"
+      },
+      {
+        "bucket": "has_timeline_event claim->event",
+        "count": 2,
+        "classification": "defer; relation025 precedent says claim-owned timeline rows are cleanup, not validator widening"
+      }
+    ]
+  },
+  "exact_examples": [
+    {
+      "record_id": "relation_lirr-implemented-by-lirr-dept",
+      "submission_id": "sub_da5e43202dc357bb",
+      "source_id": "meeting_doc_104741",
+      "malformed_shape": "implemented_by entity -> entity",
+      "subject": {
+        "record_id": "entity_annual-report-2021-lirr",
+        "kind": "entity",
+        "local_observation_id": "entity_lirr_meeting_doc_104741",
+        "display_name": "MTA Long Island Rail Road"
+      },
+      "object": {
+        "record_id": "entity_annual-report-2021-lirr",
+        "kind": "entity",
+        "local_observation_id": "entity_lirr_meeting_doc_104741",
+        "display_name": "MTA Long Island Rail Road"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_104741#p001_c0009",
+          "text": "Representing Long Island Rail Road:"
+        }
+      ],
+      "triage": "Same-entity self-link. Retire without replacement; the evidence is an attendance/representation heading, not an implementation relation."
+    },
+    {
+      "record_id": "relation_lirr-license-implemented-by-lirr",
+      "submission_id": "sub_17257510bbc1870d",
+      "source_id": "meeting_doc_131696",
+      "malformed_shape": "implemented_by entity -> entity",
+      "subject": {
+        "record_id": "entity_annual-report-2021-lirr",
+        "kind": "entity",
+        "local_observation_id": "entity_lirr_meeting_doc_131696",
+        "display_name": "MTA Long Island Rail Road"
+      },
+      "object": {
+        "record_id": "entity_meeting-doc-104796-vpct-realty",
+        "kind": "entity",
+        "local_observation_id": "entity_vpct_realty_llc_meeting_doc_131696",
+        "display_name": "VPCT Realty LLC"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_131696#p009_c0007",
+          "text": "AGENCY: MTA Long Island Rail Road (\"LIRR\") LICENSEE: VPCT Realty LLC (\"VPCT\")"
+        }
+      ],
+      "triage": "The source supports a license-agreement agency/licensee context, not implementation. If preserving it is useful, use a loose unshaped related_to entity->entity replacement; otherwise retire without replacement."
+    },
+    {
+      "record_id": "relation_meeting-doc-121201-ocip",
+      "submission_id": "sub_c18efe02a3ab1819",
+      "source_id": "meeting_doc_121201",
+      "malformed_shape": "implemented_by entity -> entity",
+      "subject": {
+        "record_id": "entity_mta-nyct",
+        "kind": "entity",
+        "local_observation_id": "entity_meeting_doc_121201_nyct",
+        "display_name": "MTA NYCT Reference"
+      },
+      "object": {
+        "record_id": "entity_mta-entity-update-2025",
+        "kind": "entity",
+        "local_observation_id": "entity_meeting_doc_121201_mta",
+        "display_name": "Metropolitan Transportation Authority (MTA)"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_121201#p019_c0010",
+          "text": "MTA Construction and Development identified 229 projects throughout the NYCT, LIRR, MNR and SBDP to be awarded within a 27-month period"
+        }
+      ],
+      "triage": "The evidence is OCIP package coverage/project population context, not NYCT being implemented by MTA. Retire unless a cleanup preparer finds an existing source-backed OCIP/project carrier in the same source."
+    },
+    {
+      "record_id": "relation_tbta-operated-by-mta-bt",
+      "submission_id": "sub_f0b5f134f7fdd789",
+      "source_id": "meeting_doc_165006",
+      "malformed_shape": "implemented_by entity -> entity",
+      "subject": {
+        "record_id": "entity_meeting-doc-124881-bridges-tunnels",
+        "kind": "entity",
+        "local_observation_id": "entity_meeting_doc_165006_tbta",
+        "display_name": "MTA Bridges and Tunnels"
+      },
+      "object": {
+        "record_id": "entity_meeting-doc-124881-bridges-tunnels",
+        "kind": "entity",
+        "local_observation_id": "entity_meeting_doc_165006_tbta",
+        "display_name": "MTA Bridges and Tunnels"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_165006#p046_c0014",
+          "text": "The legal name of MTA Bridges and Tunnels is Triborough Bridge and Tunnel Authority."
+        }
+      ],
+      "triage": "Same-entity self-link whose evidence is an identity/legal-name statement. Retire without replacement; the entity payload already carries this fact."
+    }
+  ],
+  "simulated_impact": {
+    "baseline_after_relation027_exclusion": 63,
+    "resolved_by_retiring_this_bucket": 4,
+    "remaining_endpoint_shape_issues_after_bucket_cleanup": 59,
+    "assumption": "All four original malformed implemented_by entity->entity submissions are retired. Replacement rows, if any, use unshaped or currently validator-compatible relation kinds and pass createSubmissionEntry/relationEndpointIssues guards. This artifact did not create replacements or edit retired.json/submissions.",
+    "why_rule_patch_would_have_same_count_but_wrong_signal": "Adding entity as an implemented_by subject would also remove these four endpoint-shape issues, but would bless self-links and unrelated entity-to-entity context as implementation."
+  },
+  "commands_run": [
+    {
+      "command": "rg --files data/review_notes | sort | rg 'relation-(rule-or-data|cleanup).*prep|canonical-cleanup'",
+      "outcome": "Found existing relation rule/data prep artifacts through next7 and relation cleanup prep artifacts through batch027."
+    },
+    {
+      "command": "git status --short -- data/review_notes packages/pipeline/src/records/relations.ts packages/pipeline/test/records/relations.test.ts data/submission-overrides/retired.json data/submissions",
+      "outcome": "Observed existing shared worktree modifications, including relation rules/tests and relation027 durable cleanup files. No unrelated changes were reverted or overwritten."
+    },
+    {
+      "command": "rg -n \"relation027|batch027|unexpected_relation_endpoint_shape|next8|next7\" LOG.md data/review_notes data/submissions data/submission-overrides -g '*.md' -g '*.json' -g '*.jsonl'",
+      "outcome": "Confirmed relation027 retired five published_by claim->entity originals and queued five has_claim entity->claim replacements behind wave26."
+    },
+    {
+      "command": "sed -n '4220,4275p' LOG.md",
+      "outcome": "Read the last materialized checkpoint: relation026 was materialized and validate reported 68 unexpected_relation_endpoint_shape issues; relation027 is applied but unmaterialized."
+    },
+    {
+      "command": "jq '{note_id,batch,bucket,prepared_count:(.prepared|length), first:.prepared[0].retire, aggregate_guard_results, relationEndpointIssues_dry_run_acceptance}' data/review_notes/codex-relation-cleanup-batch026-prep.json data/review_notes/codex-relation-cleanup-batch027-prep.json",
+      "outcome": "Reviewed relation026 and relation027 cleanup bucket definitions and replacement shapes."
+    },
+    {
+      "command": "jq '.targeted_inventory_after_exclusions.top_shape_buckets, .simulated_impact' data/review_notes/codex-relation-rule-or-data-next7-prep.json",
+      "outcome": "Reviewed next7 context; relation026 later materialized the metric_claim timeline cleanup that next7 recommended."
+    },
+    {
+      "command": "bun --eval '<readCanonicalRecords plus relationEndpointShapeIssue inventory excluding relation027 original record ids>'",
+      "outcome": "Computed simulated total 63 unexpected endpoint-shape rows. Top buckets were implemented_by entity->entity count 4 and operated_by entity->entity count 4."
+    },
+    {
+      "command": "rg selected evidence block ids in raw/sources/meeting_doc_104741/blocks.jsonl raw/sources/meeting_doc_131696/blocks.jsonl raw/sources/meeting_doc_121201/blocks.jsonl raw/sources/meeting_doc_165006/blocks.jsonl",
+      "outcome": "Verified evidence text for the four implemented_by entity->entity examples."
+    },
+    {
+      "command": "bun --eval '<print targeted endpoint records for implemented_by entity->entity subjects/objects>'",
+      "outcome": "Inspected endpoint record kinds and display names; confirmed the bucket consists of entity subjects and entity objects, including two same-entity self-links."
+    },
+    {
+      "command": "rg -n \"relation_lirr_implemented_by_lirr_dept|relation_lirr_license_implemented_by_lirr|relation_meeting_doc_121201_ocip|relation_tbta_operated_by_mta_bt|sub_da5e43202dc357bb|sub_17257510bbc1870d|sub_c18efe02a3ab1819|sub_f0b5f134f7fdd789\" data/submissions data/review_notes -g '*.jsonl' -g '*.json' | head -120",
+      "outcome": "Checked original submission rows and labels/payloads for the four candidate cleanup rows."
+    },
+    {
+      "command": "test ! -e data/review_notes/codex-relation-rule-or-data-next8-prep.json && date -u +%Y-%m-%dT%H:%M:%SZ",
+      "outcome": "Confirmed the target artifact did not already exist and captured timestamp 2026-06-22T21:36:40Z."
+    }
+  ],
+  "commands_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts export-jsonl --verify",
+    "DB repair or publish commands",
+    "provider-backed ingest/post-ingest commands",
+    "tests or typecheck, because this triage produced no code changes"
+  ],
+  "files_intentionally_not_edited": [
+    "packages/pipeline/src/records/relations.ts",
+    "packages/pipeline/test/records/relations.test.ts",
+    "data/canonical/",
+    "data/canonical.db",
+    "data/materialized/",
+    "data/submission-overrides/retired.json",
+    "data/submissions/",
+    "wiki/",
+    "LOG.md"
+  ]
+}

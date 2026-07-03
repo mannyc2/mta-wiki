@@ -1,0 +1,548 @@
+{
+  "batch_id": "identity082",
+  "prepared_count": 10,
+  "all_pass": true,
+  "proposed_aliases": [
+    {
+      "kind": "entity",
+      "alias_id": "entity_brooklyn-community-board-11",
+      "target_id": "entity_community-board-11-brooklyn",
+      "reason": "Both records identify Brooklyn Community Board 11 / Community Board 11 Transportation Committee.",
+      "evidence": [
+        {
+          "record_id": "entity_brooklyn-community-board-11",
+          "display_name": "Brooklyn Community Board 11",
+          "source_ids": ["bay_pkwy_cropsey_ave_cb11_jun2025"],
+          "evidence_refs": [
+            {
+              "source_id": "bay_pkwy_cropsey_ave_cb11_jun2025",
+              "block_id": "p001_c0002",
+              "evidence_id": "bay_pkwy_cropsey_ave_cb11_jun2025#p001_c0002",
+              "source_quote": "Brooklyn Community Board 11 Transportation Committee"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_community-board-11-brooklyn",
+          "display_name": "Brooklyn Community Board 11",
+          "source_ids": [
+            "bay_pkwy_cropsey_ave_nov2024",
+            "brt_south_brooklyn_b82_cb11_apr2017",
+            "brt_south_brooklyn_b82_feb2018"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "bay_pkwy_cropsey_ave_nov2024",
+              "block_id": "p001_c0002",
+              "evidence_id": "bay_pkwy_cropsey_ave_nov2024#p001_c0002",
+              "role": "audience"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_brooklyn-cb12-bay-pkwy-cropsey-jun2025",
+      "target_id": "entity_brooklyn-community-board-12",
+      "reason": "Both records identify Brooklyn Community Board 12.",
+      "evidence": [
+        {
+          "record_id": "entity_brooklyn-cb12-bay-pkwy-cropsey-jun2025",
+          "display_name": "Brooklyn Community Board 12",
+          "source_ids": ["bay_pkwy_cropsey_ave_cb12_jun2025"],
+          "evidence_refs": [
+            {
+              "source_id": "bay_pkwy_cropsey_ave_cb12_jun2025",
+              "block_id": "p001_c0002",
+              "evidence_id": "bay_pkwy_cropsey_ave_cb12_jun2025#p001_c0002",
+              "source_quote": "Brooklyn Community Board 12 Transportation Committee"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_brooklyn-community-board-12",
+          "display_name": "Brooklyn Community Board 12",
+          "source_ids": [
+            "bay_pkwy_cropsey_ave_cb11_jun2025",
+            "bay_pkwy_cropsey_ave_jan2025"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "bay_pkwy_cropsey_ave_jan2025",
+              "block_id": "p001_c0002",
+              "evidence_id": "bay_pkwy_cropsey_ave_jan2025#p001_c0002"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_brooklyn-cb5-linden-blvd-apr2026",
+      "target_id": "entity_brooklyn-cb5-linden-blvd-2025",
+      "reason": "Both records identify Brooklyn Community Board 5 in Linden Boulevard source context.",
+      "evidence": [
+        {
+          "record_id": "entity_brooklyn-cb5-linden-blvd-apr2026",
+          "display_name": "Brooklyn Community Board 5",
+          "source_ids": ["linden_blvd_fountain_ave_conduit_ave_bkcb5_apr2026"],
+          "evidence_refs": [
+            {
+              "source_id": "linden_blvd_fountain_ave_conduit_ave_bkcb5_apr2026",
+              "block_id": "p001_c0002",
+              "evidence_id": "linden_blvd_fountain_ave_conduit_ave_bkcb5_apr2026#p001_c0002",
+              "source_quote": "Community Board 5"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_brooklyn-cb5-linden-blvd-2025",
+          "display_name": "Brooklyn Community Board 5",
+          "source_ids": ["linden_blvd_fountain_ave_conduit_ave_bkcb5_jan2025"],
+          "evidence_refs": [
+            {
+              "source_id": "linden_blvd_fountain_ave_conduit_ave_bkcb5_jan2025",
+              "block_id": "p001_c0002",
+              "evidence_id": "linden_blvd_fountain_ave_conduit_ave_bkcb5_jan2025#p001_c0002",
+              "role": "audience"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_flatbush-ave-cb6-cb6-brooklyn",
+      "target_id": "entity_brooklyn-cb6-flatbush-ave-oct2025",
+      "reason": "Both records identify Brooklyn Community Board 6 in Flatbush Avenue source context.",
+      "evidence": [
+        {
+          "record_id": "entity_flatbush-ave-cb6-cb6-brooklyn",
+          "display_name": "Brooklyn Community Board 6",
+          "source_ids": ["flatbush_ave_cb6_jun2025"],
+          "evidence_refs": [
+            {
+              "source_id": "flatbush_ave_cb6_jun2025",
+              "block_id": "p001_c0002",
+              "evidence_id": "flatbush_ave_cb6_jun2025#p001_c0002",
+              "role": "audience"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_brooklyn-cb6-flatbush-ave-oct2025",
+          "display_name": "Brooklyn Community Board 6",
+          "source_ids": [
+            "flatbush_ave_bus_priority_cb6_oct2025",
+            "flatbush_ave_cb6_jun2024"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "flatbush_ave_bus_priority_cb6_oct2025",
+              "block_id": "p001_c0002",
+              "evidence_id": "flatbush_ave_bus_priority_cb6_oct2025#p001_c0002",
+              "source_quote": "Community Board 6 Presentation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_community-board-12-brooklyn-church-ave",
+      "target_id": "entity_brooklyn-community-board-12",
+      "reason": "Both records identify Community Board 12 in Brooklyn.",
+      "evidence": [
+        {
+          "record_id": "entity_community-board-12-brooklyn-church-ave",
+          "display_name": "Community Board 12, Brooklyn",
+          "source_ids": ["church_ave_public_forum_jul2019"],
+          "evidence_refs": [
+            {
+              "source_id": "church_ave_public_forum_jul2019",
+              "block_id": "p012_c0002",
+              "evidence_id": "church_ave_public_forum_jul2019#p012_c0002",
+              "role": "mentioned"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_brooklyn-community-board-12",
+          "display_name": "Brooklyn Community Board 12",
+          "source_ids": [
+            "bay_pkwy_cropsey_ave_cb11_jun2025",
+            "bay_pkwy_cropsey_ave_jan2025"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "bay_pkwy_cropsey_ave_jan2025",
+              "block_id": "p001_c0002",
+              "evidence_id": "bay_pkwy_cropsey_ave_jan2025#p001_c0002"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_community-board-17-brooklyn-2012-04-26",
+      "target_id": "entity_community-board-17-brooklyn-20110915",
+      "reason": "Both records identify Community Board 17 in Brooklyn.",
+      "evidence": [
+        {
+          "record_id": "entity_community-board-17-brooklyn-2012-04-26",
+          "display_name": "Community Board 17, Brooklyn",
+          "source_ids": ["2012_04_26_sbs_utica"],
+          "evidence_refs": [
+            {
+              "source_id": "2012_04_26_sbs_utica",
+              "block_id": "p022_c0003",
+              "evidence_id": "2012_04_26_sbs_utica#p022_c0003",
+              "source_quote": "Presented concept to Community Board 9, 17 & Congresswoman Yvette Clarke"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_community-board-17-brooklyn-20110915",
+          "display_name": "Community Board 17, Brooklyn",
+          "source_ids": [
+            "2011_09_15_sbs_utica_cb8_9_17",
+            "2013_09_19_sbs_utica_cb17",
+            "2015_04_15_brt_uticaave_cb17_presentation",
+            "brt_cb17_uticaave_apr2016",
+            "brt_uticaave_cb17_transportation_committee_2016"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "2013_09_19_sbs_utica_cb17",
+              "block_id": "p001_c0004",
+              "evidence_id": "2013_09_19_sbs_utica_cb17#p001_c0004",
+              "source_quote": "Brooklyn CB 17 September 19, 2013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_bronx-cb3-2012-11-webster",
+      "target_id": "entity_community-board-3-bronx-2012",
+      "reason": "Both records identify Community Board 3 in the Bronx.",
+      "evidence": [
+        {
+          "record_id": "entity_bronx-cb3-2012-11-webster",
+          "display_name": "Community Board 3 (Bronx)",
+          "source_ids": [
+            "2012_11_sbs_webster_cac4_summary",
+            "brt_bx6_cb3_feb2017",
+            "bx_cb4_projects_feb052020"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_bx6_cb3_feb2017",
+              "block_id": "p001_c0002",
+              "evidence_id": "brt_bx6_cb3_feb2017#p001_c0002",
+              "role": "audience"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_community-board-3-bronx-2012",
+          "display_name": "Community Board 3 (Bronx)",
+          "source_ids": [
+            "2012_05_webster_cac2_summary",
+            "2012_10_brt_webster_cac3_meeting_summary",
+            "2013_02_sbs_webster_bx_cb3",
+            "2014_03_11_brt_webster_cb3",
+            "brt_bx6_south_bronx_may2016"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "2013_02_sbs_webster_bx_cb3",
+              "block_id": "p001_c0005",
+              "evidence_id": "2013_02_sbs_webster_bx_cb3#p001_c0005",
+              "source_quote": "Presentation to Community Board 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_community-board-5-bronx-2012",
+      "target_id": "entity_bronx-cb5-2012-11-webster",
+      "reason": "Both records identify Community Board 5 in the Bronx.",
+      "evidence": [
+        {
+          "record_id": "entity_community-board-5-bronx-2012",
+          "display_name": "Community Board 5 (Bronx)",
+          "source_ids": [
+            "2012_05_webster_cac2_summary",
+            "2012_10_brt_webster_cac3_meeting_summary"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+              "block_id": "p005_c0003",
+              "evidence_id": "2012_10_brt_webster_cac3_meeting_summary#p005_c0003",
+              "source_quote": "Community Board 5 (2 participants)"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_bronx-cb5-2012-11-webster",
+          "display_name": "Community Board 5 (Bronx)",
+          "source_ids": [
+            "2012_11_sbs_webster_cac4_summary",
+            "2013_03_sbs_webster_bx_cb5",
+            "2014_03_20_brt_webste_cb5",
+            "bx_cb5_projects_dec032019",
+            "fordham_rd_inwood_cb5_jun2023",
+            "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb5_may2026",
+            "tremont_ave_bus_priority_cb5_jun2024",
+            "tremont_ave_bus_priority_cb5_mar2024",
+            "tremont_ave_bus_priority_cb5_nov2024",
+            "tremont_ave_bus_priority_cb6_feb2024",
+            "tremont_ave_bus_priority_cb6_jul2024",
+            "tremont_ave_bus_priority_cb6_jun2024",
+            "tremont_ave_bus_priority_cb6_nov2024",
+            "webster_ave_e174_st_e176_st_may2019",
+            "webster_cross_bronx_cb5_may2019"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "2013_03_sbs_webster_bx_cb5",
+              "block_id": "p001_c0003",
+              "evidence_id": "2013_03_sbs_webster_bx_cb5#p001_c0003",
+              "role": "presented_to"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_community-board-6-bronx-2012",
+      "target_id": "entity_bronx-cb6-2012-11-webster",
+      "reason": "Both records identify Community Board 6 in the Bronx.",
+      "evidence": [
+        {
+          "record_id": "entity_community-board-6-bronx-2012",
+          "display_name": "Community Board 6 (Bronx)",
+          "source_ids": ["2012_05_webster_cac2_summary"],
+          "evidence_refs": [
+            {
+              "source_id": "2012_05_webster_cac2_summary",
+              "block_id": "p005_c0015",
+              "evidence_id": "2012_05_webster_cac2_summary#p005_c0015",
+              "role": "attendee_list"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_bronx-cb6-2012-11-webster",
+          "display_name": "Community Board 6 (Bronx)",
+          "source_ids": [
+            "2012_11_sbs_webster_cac4_summary",
+            "2013_03_sbs_webster_bx_cb6",
+            "2014_03_06_brt_webster_cb6",
+            "fordham_rd_inwood_cb6_jun2023",
+            "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026",
+            "tremont_ave_bus_priority_cb5_jun2024",
+            "tremont_ave_bus_priority_cb5_mar2024",
+            "tremont_ave_bus_priority_cb6_feb2024",
+            "tremont_ave_bus_priority_cb6_jul2024",
+            "tremont_ave_bus_priority_cb6_jun2024",
+            "tremont_ave_bus_priority_cb6_nov2024",
+            "webster_cross_bronx_cb6_may2019"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "2013_03_sbs_webster_bx_cb6",
+              "block_id": "p001_c0003",
+              "evidence_id": "2013_03_sbs_webster_bx_cb6#p001_c0003",
+              "role": "audience"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_community-board-7-bronx-2012",
+      "target_id": "entity_bronx-cb7-2012-11-webster",
+      "reason": "Both records identify Community Board 7 in the Bronx.",
+      "evidence": [
+        {
+          "record_id": "entity_community-board-7-bronx-2012",
+          "display_name": "Community Board 7 (Bronx)",
+          "source_ids": [
+            "2012_05_webster_cac2_summary",
+            "2012_10_brt_webster_cac3_meeting_summary"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+              "block_id": "p005_c0003",
+              "evidence_id": "2012_10_brt_webster_cac3_meeting_summary#p005_c0003",
+              "source_quote": "Community Board 7 (2 participants)"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_bronx-cb7-2012-11-webster",
+          "display_name": "Community Board 7 (Bronx)",
+          "source_ids": [
+            "2012_11_sbs_webster_cac4_summary",
+            "2013_03_sbs_webster_bx_cb7",
+            "2014_04_10_brt_webster_cb7",
+            "fordham_rd_inwood_cb7_jun2023",
+            "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb7_may2026"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "2013_03_sbs_webster_bx_cb7",
+              "block_id": "p001_c0003",
+              "evidence_id": "2013_03_sbs_webster_bx_cb7#p001_c0003",
+              "source_quote": "Presentation to Community Board 7"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guard_checks": {
+    "summary": {
+      "alias_exists_in_canonical_before_apply": true,
+      "target_exists": true,
+      "alias_not_already_mapped": true,
+      "no_target_cycle": true,
+      "no_do_not_merge_match_found": true
+    },
+    "checks": [
+      {
+        "kind": "entity",
+        "alias_id": "entity_brooklyn-community-board-11",
+        "target_id": "entity_community-board-11-brooklyn",
+        "alias_exists_in_canonical_before_apply": true,
+        "target_exists": true,
+        "alias_not_already_mapped": true,
+        "no_target_cycle": true
+      },
+      {
+        "kind": "entity",
+        "alias_id": "entity_brooklyn-cb12-bay-pkwy-cropsey-jun2025",
+        "target_id": "entity_brooklyn-community-board-12",
+        "alias_exists_in_canonical_before_apply": true,
+        "target_exists": true,
+        "alias_not_already_mapped": true,
+        "no_target_cycle": true
+      },
+      {
+        "kind": "entity",
+        "alias_id": "entity_brooklyn-cb5-linden-blvd-apr2026",
+        "target_id": "entity_brooklyn-cb5-linden-blvd-2025",
+        "alias_exists_in_canonical_before_apply": true,
+        "target_exists": true,
+        "alias_not_already_mapped": true,
+        "no_target_cycle": true
+      },
+      {
+        "kind": "entity",
+        "alias_id": "entity_flatbush-ave-cb6-cb6-brooklyn",
+        "target_id": "entity_brooklyn-cb6-flatbush-ave-oct2025",
+        "alias_exists_in_canonical_before_apply": true,
+        "target_exists": true,
+        "alias_not_already_mapped": true,
+        "no_target_cycle": true
+      },
+      {
+        "kind": "entity",
+        "alias_id": "entity_community-board-12-brooklyn-church-ave",
+        "target_id": "entity_brooklyn-community-board-12",
+        "alias_exists_in_canonical_before_apply": true,
+        "target_exists": true,
+        "alias_not_already_mapped": true,
+        "no_target_cycle": true
+      },
+      {
+        "kind": "entity",
+        "alias_id": "entity_community-board-17-brooklyn-2012-04-26",
+        "target_id": "entity_community-board-17-brooklyn-20110915",
+        "alias_exists_in_canonical_before_apply": true,
+        "target_exists": true,
+        "alias_not_already_mapped": true,
+        "no_target_cycle": true
+      },
+      {
+        "kind": "entity",
+        "alias_id": "entity_bronx-cb3-2012-11-webster",
+        "target_id": "entity_community-board-3-bronx-2012",
+        "alias_exists_in_canonical_before_apply": true,
+        "target_exists": true,
+        "alias_not_already_mapped": true,
+        "no_target_cycle": true
+      },
+      {
+        "kind": "entity",
+        "alias_id": "entity_community-board-5-bronx-2012",
+        "target_id": "entity_bronx-cb5-2012-11-webster",
+        "alias_exists_in_canonical_before_apply": true,
+        "target_exists": true,
+        "alias_not_already_mapped": true,
+        "no_target_cycle": true
+      },
+      {
+        "kind": "entity",
+        "alias_id": "entity_community-board-6-bronx-2012",
+        "target_id": "entity_bronx-cb6-2012-11-webster",
+        "alias_exists_in_canonical_before_apply": true,
+        "target_exists": true,
+        "alias_not_already_mapped": true,
+        "no_target_cycle": true
+      },
+      {
+        "kind": "entity",
+        "alias_id": "entity_community-board-7-bronx-2012",
+        "target_id": "entity_bronx-cb7-2012-11-webster",
+        "alias_exists_in_canonical_before_apply": true,
+        "target_exists": true,
+        "alias_not_already_mapped": true,
+        "no_target_cycle": true
+      }
+    ],
+    "commands_used": [
+      "jq against data/canonical/entities.jsonl for record/evidence inspection",
+      "jq against data/identity-overrides/merges.json for nested aliases.entity checks",
+      "jq against data/identity-overrides/do-not-merge.json for exact candidate-id screening",
+      "sqlite3 data/canonical.db schema/read-only alias inspection"
+    ]
+  },
+  "skipped_candidates": [
+    {
+      "kind": "entity",
+      "alias_id": "entity_brooklyn-cb11-bay-pkwy-cropsey-jun2025",
+      "candidate_target_id": "entity_community-board-11-brooklyn",
+      "reason": "Likely the same Brooklyn Community Board 11, but the inspected evidence quote is a combined 'CBs 11 & 12' outreach reference rather than a standalone board-11 mention."
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_community-board-5-bronx-2012-02",
+      "candidate_target_id": "entity_bronx-cb5-2012-11-webster",
+      "reason": "Likely Bronx CB5 from Webster context, but the inspected display/evidence only says 'Community Board 5' without the borough in the record label."
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_community-board-6-bronx-2012-02",
+      "candidate_target_id": "entity_bronx-cb6-2012-11-webster",
+      "reason": "Likely Bronx CB6 from Webster context, but the inspected display/evidence only says 'Community Board 6' without the borough in the record label."
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_community-board-7-bronx-2012-02",
+      "candidate_target_id": "entity_bronx-cb7-2012-11-webster",
+      "reason": "Likely Bronx CB7 from Webster context, but the inspected display/evidence only says 'Community Board 7' without the borough in the record label."
+    }
+  ]
+}

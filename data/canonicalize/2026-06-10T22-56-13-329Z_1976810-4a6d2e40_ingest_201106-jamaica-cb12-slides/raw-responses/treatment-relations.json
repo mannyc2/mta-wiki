@@ -1,0 +1,524 @@
+{
+  "run_id": "2026-06-10T22-56-13-329Z_1976810-4a6d2e40_ingest_201106-jamaica-cb12-slides",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T01:40:38.786Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-ar-01",
+        "local_observation_id": "treatment_archer_ave_improved_bus_lanes",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "treatment_archer-ave-improved-bus-lanes_2",
+            "description": "Archer Avenue improved bus lanes recommendation from Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p015_c0005",
+                "source_quote": "Improve bus lane signs and install terra-cotta red bus lane markings to enhance compliance"
+              },
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p015_c0006",
+                "source_quote": "Maintain existing 24-hour bus lane operations"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_archer-ave-busway",
+            "object_id": "treatment_archer-ave-improved-bus-lanes_2",
+            "description": "Archer Avenue improved bus lanes on corridor from 150th to 160th Streets",
+            "evidence_refs": [
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p015_c0005",
+                "source_quote": "Improve bus lane signs and install terra-cotta red bus lane markings to enhance compliance"
+              },
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p015_c0006",
+                "source_quote": "Maintain existing 24-hour bus lane operations"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source blocks p015_c0005 and p015_c0006 explicitly describe improved bus lanes on Archer Avenue (150th-160th) as a recommendation of the Jamaica Bus Improvement Study. Treatment attaches to both the study project and the Archer Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p015_c0005",
+            "source_quote": "Improve bus lane signs and install terra-cotta red bus lane markings to enhance compliance"
+          },
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p015_c0006",
+            "source_quote": "Maintain existing 24-hour bus lane operations"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-ar-02",
+        "local_observation_id": "treatment_archer_av_eb_west_ext",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "treatment_archer-av-eb-west-ext",
+            "description": "Archer Avenue eastbound bus lane west extension recommendation",
+            "evidence_refs": [
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p016_c0003",
+                "source_quote": "West Extension: Sutphin Boulevard to 150 th Street"
+              },
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p016_c0005",
+                "source_quote": "Benefits predominant direction of bus travel May require some curb parking/delivery restrictions"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_archer-ave-busway",
+            "object_id": "treatment_archer-av-eb-west-ext",
+            "description": "Archer Avenue eastbound bus lane west extension on corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p016_c0003",
+                "source_quote": "West Extension: Sutphin Boulevard to 150 th Street"
+              },
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p016_c0005",
+                "source_quote": "Benefits predominant direction of bus travel May require some curb parking/delivery restrictions"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source blocks p016_c0003 and p016_c0005 describe the west extension of Archer Avenue eastbound bus lane from Sutphin Blvd to 150th St as a study recommendation. Attaches to both the study project and the Archer Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p016_c0003",
+            "source_quote": "West Extension: Sutphin Boulevard to 150 th Street"
+          },
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p016_c0005",
+            "source_quote": "Benefits predominant direction of bus travel May require some curb parking/delivery restrictions"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-ar-03",
+        "local_observation_id": "treatment_archer_av_eb_east_ext",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "treatment_archer-av-eb-east-ext",
+            "description": "Archer Avenue eastbound bus lane east extension recommendation",
+            "evidence_refs": [
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p017_c0003",
+                "source_quote": "East Extension: 160 th Street to Merrick Boulevard"
+              },
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p017_c0005",
+                "source_quote": "Lane use reconfiguration (160 th St to Guy R. Brewer Blvd) - 2 eastbound lanes, 1 westbound lane"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_archer-ave-busway",
+            "object_id": "treatment_archer-av-eb-east-ext",
+            "description": "Archer Avenue eastbound bus lane east extension on corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p017_c0003",
+                "source_quote": "East Extension: 160 th Street to Merrick Boulevard"
+              },
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p017_c0005",
+                "source_quote": "Lane use reconfiguration (160 th St to Guy R. Brewer Blvd) - 2 eastbound lanes, 1 westbound lane"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source blocks p017_c0003 and p017_c0005 describe the east extension of Archer Avenue eastbound bus lane from 160th St to Merrick Blvd with lane reconfiguration. Attaches to both the study project and Archer Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p017_c0003",
+            "source_quote": "East Extension: 160 th Street to Merrick Boulevard"
+          },
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p017_c0005",
+            "source_quote": "Lane use reconfiguration (160 th St to Guy R. Brewer Blvd) - 2 eastbound lanes, 1 westbound lane"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-ja-01",
+        "local_observation_id": "treatment_jamaica_ave_improved_bus_lanes",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "treatment_jamaica-ave-improved-bus-lanes_2",
+            "description": "Jamaica Avenue offset bus lanes with expanded hours recommendation",
+            "evidence_refs": [
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p020_c0003",
+                "source_quote": "Existing Lanes: Parsons Blvd to 168 th St"
+              },
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p020_c0005",
+                "source_quote": "Offset bus lanes, expanded hours of operation, & turn restrictions"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_jamaica-ave-busway",
+            "object_id": "treatment_jamaica-ave-improved-bus-lanes_2",
+            "description": "Jamaica Avenue offset bus lanes on corridor from Parsons Blvd to 168th St",
+            "evidence_refs": [
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p020_c0003",
+                "source_quote": "Existing Lanes: Parsons Blvd to 168 th St"
+              },
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p020_c0005",
+                "source_quote": "Offset bus lanes, expanded hours of operation, & turn restrictions"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source blocks p020_c0003 and p020_c0005 explicitly describe offset bus lanes with expanded hours on Jamaica Avenue from Parsons Blvd to 168th St. Attaches to both the study project and Jamaica Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p020_c0003",
+            "source_quote": "Existing Lanes: Parsons Blvd to 168 th St"
+          },
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p020_c0005",
+            "source_quote": "Offset bus lanes, expanded hours of operation, & turn restrictions"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-ja-02",
+        "local_observation_id": "treatment_jamaica_ave_w_ext_curbside",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "treatment_jamaica-ave-w-ext-curbside",
+            "description": "Jamaica Avenue west extension curbside bus lane recommendation",
+            "evidence_refs": [
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p022_c0003",
+                "source_quote": "West Extension: Parsons Blvd to Sutphin Blvd"
+              },
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p022_c0005",
+                "source_quote": "Curbside bus lane would benefit primary direction of bus travel May require some curb parking/delivery restrictions"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_jamaica-ave-busway",
+            "object_id": "treatment_jamaica-ave-w-ext-curbside",
+            "description": "Jamaica Avenue west extension curbside bus lane on corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p022_c0003",
+                "source_quote": "West Extension: Parsons Blvd to Sutphin Blvd"
+              },
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p022_c0005",
+                "source_quote": "Curbside bus lane would benefit primary direction of bus travel May require some curb parking/delivery restrictions"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source blocks p022_c0003 and p022_c0005 describe the west extension of a curbside bus lane on Jamaica Avenue from Parsons Blvd to Sutphin Blvd. Attaches to both the study project and Jamaica Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p022_c0003",
+            "source_quote": "West Extension: Parsons Blvd to Sutphin Blvd"
+          },
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p022_c0005",
+            "source_quote": "Curbside bus lane would benefit primary direction of bus travel May require some curb parking/delivery restrictions"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-mb-01",
+        "local_observation_id": "treatment_merrick_blvd_bus_lane_24hr",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "treatment_merrick-blvd-bus-lane-24hr",
+            "description": "Merrick Boulevard 24-hour bus lane recommendation",
+            "evidence_refs": [
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p024_c0003",
+                "source_quote": "Hillside Avenue to Archer Avenue"
+              },
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p024_c0005",
+                "source_quote": "High-visibility, 24-hour bus lane would improve access to the 165 th Street Bus Terminal"
+              },
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p024_c0006",
+                "source_quote": "Offset bus lane would allow for bus layover north of 89 th Avenue"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_merrick-blvd-cb12-2011",
+            "object_id": "treatment_merrick-blvd-bus-lane-24hr",
+            "description": "Merrick Boulevard 24-hour bus lane on corridor from Hillside Avenue to Archer Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p024_c0003",
+                "source_quote": "Hillside Avenue to Archer Avenue"
+              },
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p024_c0005",
+                "source_quote": "High-visibility, 24-hour bus lane would improve access to the 165 th Street Bus Terminal"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source blocks p024_c0003, p024_c0005, and p024_c0006 explicitly describe a high-visibility 24-hour bus lane on Merrick Boulevard from Hillside Ave to Archer Ave. Attaches to both the study project and Merrick Boulevard corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p024_c0003",
+            "source_quote": "Hillside Avenue to Archer Avenue"
+          },
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p024_c0005",
+            "source_quote": "High-visibility, 24-hour bus lane would improve access to the 165 th Street Bus Terminal"
+          },
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p024_c0006",
+            "source_quote": "Offset bus lane would allow for bus layover north of 89 th Avenue"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-165-01",
+        "local_observation_id": "treatment_165th_st_bus_lane",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "treatment_165th-st-bus-lane",
+            "description": "165th Street bus lane recommendation",
+            "evidence_refs": [
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p025_c0003",
+                "source_quote": "Hillside Avenue to 89 th Avenue"
+              },
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p025_c0005",
+                "source_quote": "Prioritizes bus movements exiting from 165 th Street Bus Terminal"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_165th-st-cb12-2011",
+            "object_id": "treatment_165th-st-bus-lane",
+            "description": "165th Street bus lane on corridor from Hillside Avenue to 89th Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p025_c0003",
+                "source_quote": "Hillside Avenue to 89 th Avenue"
+              },
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p025_c0005",
+                "source_quote": "Prioritizes bus movements exiting from 165 th Street Bus Terminal"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source blocks p025_c0003 and p025_c0005 describe a bus lane on 165th Street from Hillside Ave to 89th Ave prioritizing bus movements from the terminal. Attaches to both the study project and 165th Street corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p025_c0003",
+            "source_quote": "Hillside Avenue to 89 th Avenue"
+          },
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p025_c0005",
+            "source_quote": "Prioritizes bus movements exiting from 165 th Street Bus Terminal"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bs-01",
+        "local_observation_id": "treatment_bus_stop_reconfig_hillside_sutphin",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "treatment_bus-stop-reconfig-hillside-sutphin_2",
+            "description": "Bus stop reconfiguration at Hillside Avenue and Sutphin Boulevard recommendation",
+            "evidence_refs": [
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p027_c0004",
+                "source_quote": "Lengthen, separate, & reverse bus stop locations"
+              },
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p026_c0006",
+                "source_quote": "Q20A/Q20B/Q43/Q44 Bus Stop 120 FT Truck Loading 60 FT 90 FT 1-Hour Parking"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source blocks p027_c0004 and p026_c0006 describe bus stop reconfiguration at Hillside Ave and Sutphin Blvd. The treatment spans this intersection and is clearly a Jamaica Bus Improvement Study recommendation. No single corridor in the registry maps cleanly to this intersection treatment.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p027_c0004",
+            "source_quote": "Lengthen, separate, & reverse bus stop locations"
+          },
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p026_c0006",
+            "source_quote": "Q20A/Q20B/Q43/Q44 Bus Stop 120 FT Truck Loading 60 FT 90 FT 1-Hour Parking"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-pr-01",
+        "local_observation_id": "treatment_parking_regulation_changes",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "treatment_parking-regulation-changes_2",
+            "description": "Parking regulation changes with truck loading zones recommendation",
+            "evidence_refs": [
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p028_c0004",
+                "source_quote": "Implement \"NO STANDING ANYTIME EXCEPT TRUCKS LOADING AND UNLOADING 8AM-6PM M-F\" - Additional Truck Loading Zone - Extend Existing Bus Layover Area to include 40' regulated as \"NO STANDING ANYTIME\""
+              }
+            ]
+          }
+        ],
+        "rationale": "Source block p028_c0004 describes parking regulation changes across multiple streets (146th St, 91st Ave, Jamaica Ave, Archer Ave area). This is a multi-corridor study-area treatment that attaches to the project.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p028_c0004",
+            "source_quote": "Implement \"NO STANDING ANYTIME EXCEPT TRUCKS LOADING AND UNLOADING 8AM-6PM M-F\" - Additional Truck Loading Zone - Extend Existing Bus Layover Area to include 40' regulated as \"NO STANDING ANYTIME\""
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-hi-01",
+        "local_observation_id": "treatment_hillside_169th_intersection_realignment",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "treatment_hillside-169th-intersection-realignment",
+            "description": "Hillside Avenue & Home Lawn St/169th St intersection realignment recommendation",
+            "evidence_refs": [
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p030_c0004",
+                "source_quote": "Home Lawn St becomes primary north/south roadway - Provision for more pedestrian space - RED PLAZA - BOLLARDS - PARKING - MOUNTABLE CURB FOR EMERGENCY VEHICLES TURN AROUND"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_hillside-ave-queens",
+            "object_id": "treatment_hillside-169th-intersection-realignment",
+            "description": "Hillside Avenue intersection realignment treatment on Hillside Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201106_jamaica_cb12_slides",
+                "block_id": "p030_c0004",
+                "source_quote": "Home Lawn St becomes primary north/south roadway - Provision for more pedestrian space - RED PLAZA - BOLLARDS - PARKING - MOUNTABLE CURB FOR EMERGENCY VEHICLES TURN AROUND"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source block p030_c0004 explicitly describes intersection realignment at Hillside Ave, Home Lawn St, and 169th St as a study recommendation. Attaches to both the study project and the Hillside Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p030_c0004",
+            "source_quote": "Home Lawn St becomes primary north/south roadway - Provision for more pedestrian space - RED PLAZA - BOLLARDS - PARKING - MOUNTABLE CURB FOR EMERGENCY VEHICLES TURN AROUND"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-35-46-826Z_2111393-d9595614_canonicalize_2026-06-10t22-56-13-329z-1976810-4a6d2e40-ingest-201106-jamaica-cb12-slides-treatment-relations"
+}

@@ -1,0 +1,386 @@
+{
+  "note_id": "codex-canonical-cleanup-2026-06-22-identity-alias-batch-058-prep",
+  "created_at": "2026-06-22T21:37:02Z",
+  "author": "codex",
+  "status": "ready_for_conductor_apply",
+  "lane": "identity_prep_only",
+  "batch": "identity-batch058",
+  "scope": "Codex-only identity alias preparation after identity057; no generated output, validation CLI, materialization, export, DB repair, publish, or provider-backed commands run",
+  "context": {
+    "starting_point": "unresolved duplicate_global_identity backlog after current identity overrides and prior prep artifacts through identity057",
+    "candidate_mining_summary": {
+      "current_entity_records_scanned_from_jsonl": 2598,
+      "current_alias_overrides_considered": 339,
+      "db_identity_alias_rows_considered": 329,
+      "prior_prep_aliases_considered_through_batch057": 80,
+      "candidate_pairs_after_alias_and_do_not_merge_filters": 731,
+      "selected_high_confidence_candidates": 10,
+      "selection_policy": "Exact named person identities only; broad agencies, subsidiaries, programs, committees, hierarchy records, aliases already mapped in merges.json or canonical DB identity_aliases, and aliases already reserved by prior prep artifacts through batch057 were excluded."
+    },
+    "write_scope_used_for_this_task": [
+      "data/review_notes/codex-identity-batch058-prep.json"
+    ],
+    "paths_intentionally_not_edited": [
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json",
+      "data/submission-overrides/retired.json",
+      "data/canonical/",
+      "data/canonical.db",
+      "data/materialized/",
+      "data/submissions/",
+      "wiki/",
+      "LOG.md"
+    ],
+    "db_read_note": "Canonical records were read from data/canonical JSONL; identity_aliases were checked through a read-only SQLite handle."
+  },
+  "intended_mutation": {
+    "path": "data/identity-overrides/merges.json",
+    "operation": "add_aliases",
+    "aliases": {
+      "entity": {
+        "entity_janno-lieber-cgc": "entity_janno-lieber-2025",
+        "entity_meeting-doc-106031-janno-lieber": "entity_janno-lieber-2025",
+        "entity_janno-lieber-dec2021": "entity_janno-lieber-2025",
+        "entity_janno-lieber-meeting-doc-135256": "entity_janno-lieber-2025",
+        "entity_meeting-doc-131491-janno-lieber": "entity_janno-lieber-2025",
+        "entity_meeting-doc-164901-janno-lieber": "entity_janno-lieber-2025",
+        "entity_meeting-doc-205556-janno-lieber": "entity_janno-lieber-2025",
+        "entity_mta-board-chair-janno-lieber": "entity_janno-lieber-2025",
+        "entity_meeting-doc-129041-david-florio": "entity_david-florio",
+        "entity_meeting-doc-131646-david-florio": "entity_david-florio"
+      }
+    }
+  },
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "all_pass": true,
+    "canonical_records_present": true,
+    "target_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "aliases_not_in_prior_prep_artifacts": true,
+    "targets_not_aliases_in_merges_json": true,
+    "targets_not_aliases_in_identity_aliases_table": true,
+    "targets_not_aliases_in_prior_prep_artifacts": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 20,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 20,
+    "source_page_blocks_missing": [],
+    "confidence": "high"
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_janno-lieber-cgc",
+      "target": "entity_janno-lieber-2025",
+      "validator_duplicate_key": "entity_janno-lieber",
+      "reason": "Exact person identity for Janno Lieber. The alias identifies Janno Lieber as Chair of the MTA Corporate Governance Committee / Chairperson and CEO, and the target is the richer multi-source Janno Lieber MTA Chair and CEO record.",
+      "evidence_refs": [
+        "meeting_doc_128986#p001_c0006",
+        "nyct_key_performance_metrics_june2025#p002_c0001"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_j-lieber",
+          "entity_janno-lieber"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-106031-janno-lieber",
+      "target": "entity_janno-lieber-2025",
+      "validator_duplicate_key": "entity_janno-lieber",
+      "reason": "Exact person identity for Janno Lieber. The alias names Janno Lieber as MTA Chair & CEO, matching the target's same person and MTA Chair and CEO identity.",
+      "evidence_refs": [
+        "meeting_doc_106031#p004_c0003",
+        "nyct_key_performance_metrics_june2025#p002_c0001"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_janno-lieber",
+          "entity_janno-lieber-chair-and-ceo-mta"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_janno-lieber-dec2021",
+      "target": "entity_janno-lieber-2025",
+      "validator_duplicate_key": "entity_janno-lieber",
+      "reason": "Exact person identity for Janno Lieber. The alias identifies Hon. Janno Lieber as Acting Chair & CEO, which is role chronology within the target's same MTA Chair and CEO person identity.",
+      "evidence_refs": [
+        "meeting_doc_73021#p004_c0003",
+        "nyct_key_performance_metrics_june2025#p002_c0001"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_janno-lieber"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_janno-lieber-meeting-doc-135256",
+      "target": "entity_janno-lieber-2025",
+      "validator_duplicate_key": "entity_janno-lieber",
+      "reason": "Exact person identity for Janno Lieber. The alias names Janno Lieber as Chair of the Corporate Governance Committee, matching the target's same person and MTA chair identity.",
+      "evidence_refs": [
+        "meeting_doc_135256#p001_c0006",
+        "nyct_key_performance_metrics_june2025#p002_c0001"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_janno-lieber"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-131491-janno-lieber",
+      "target": "entity_janno-lieber-2025",
+      "validator_duplicate_key": "entity_janno-lieber",
+      "reason": "Exact person identity for Janno Lieber. The alias identifies Janno Lieber as MTA Chair, matching the target's same MTA Chair and CEO person identity.",
+      "evidence_refs": [
+        "meeting_doc_131491#p001_c0006",
+        "nyct_key_performance_metrics_june2025#p002_c0001"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_janno-lieber",
+          "entity_janno-lieber-mta-chair"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-164901-janno-lieber",
+      "target": "entity_janno-lieber-2025",
+      "validator_duplicate_key": "entity_janno-lieber",
+      "reason": "Exact person identity for Janno Lieber. The alias names Janno Lieber as Chair of the Capital Program Committee, which is committee role context for the same person represented by the target.",
+      "evidence_refs": [
+        "meeting_doc_164901#p001_c0006",
+        "nyct_key_performance_metrics_june2025#p002_c0001"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_janno-lieber"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-205556-janno-lieber",
+      "target": "entity_janno-lieber-2025",
+      "validator_duplicate_key": "entity_janno-lieber",
+      "reason": "Exact person identity for Janno Lieber. The alias identifies Janno Lieber as MTA Chair & CEO, matching the target's same person and title family.",
+      "evidence_refs": [
+        "meeting_doc_205556#p001_c0005",
+        "nyct_key_performance_metrics_june2025#p002_c0001"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_janno-lieber"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_mta-board-chair-janno-lieber",
+      "target": "entity_janno-lieber-2025",
+      "validator_duplicate_key": "entity_janno-lieber",
+      "reason": "Exact person identity for Janno Lieber. The alias names Janno Lieber as MTA Board Chair, matching the target's same person and MTA Chair and CEO record.",
+      "evidence_refs": [
+        "meeting_doc_105776#p001_c0012",
+        "nyct_key_performance_metrics_june2025#p002_c0001"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_janno-lieber"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-129041-david-florio",
+      "target": "entity_david-florio",
+      "validator_duplicate_key": "entity_david-florio",
+      "reason": "Exact person identity for David Florio. The alias identifies David Florio as Chief Real Estate Transactions and Operations Officer, matching the target's richer MTA Real Estate department-head person record.",
+      "evidence_refs": [
+        "meeting_doc_129041#p001_c0009",
+        "meeting_doc_129066#p005_c0004"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_david-florio",
+          "entity_david-florio-chief-real-estate-transactions-and-operations-officer"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-131646-david-florio",
+      "target": "entity_david-florio",
+      "validator_duplicate_key": "entity_david-florio",
+      "reason": "Exact person identity for David Florio. The alias names David Florio as Chief Real Estate Transactions and Operations Officer, matching the target's same person and MTA Real Estate leadership identity.",
+      "evidence_refs": [
+        "meeting_doc_131646#p003_c0007",
+        "meeting_doc_129066#p005_c0004"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_david-florio"
+        ]
+      },
+      "confidence": "high"
+    }
+  ],
+  "deferred_low_confidence_examples": [
+    {
+      "candidate": "entity_lirr-meeting-doc-131666 -> entity_annual-report-2021-lirr",
+      "reason": "Broad/subsidiary agency identity; intentionally deferred under high-confidence entity-person selection policy."
+    },
+    {
+      "candidate": "additional lower-scored staff/person clusters",
+      "reason": "Left for later batches after this top exact-person set."
+    }
+  ],
+  "commands_used_for_evidence": [
+    "test ! -e data/review_notes/codex-identity-batch058-prep.json && echo missing || echo exists",
+    "jq '.intended_mutation.aliases.entity, .aggregate_guard_results' data/review_notes/codex-identity-batch057-prep.json",
+    "bun --eval '<read-only duplicate_global_identity mining over readCanonicalRecordsFromJsonl(), identityKeysForRecord(), current merges.json, read-only identity_aliases, prior prep aliases through batch057, and do-not-merge guards>'",
+    "bun --eval '<read-only final guard script for canonical record presence, alias/target guard checks, prior prep exclusion, shared identity keys, raw source blocks, and source-page blocks>'",
+    "bun --eval '<read-only selected record payload/evidence summary from data/canonical JSONL>'"
+  ],
+  "commands_intentionally_not_run": [
+    "materialize",
+    "validate CLI",
+    "export-jsonl",
+    "DB repair/publish",
+    "provider-backed post-ingest commands",
+    "identity-review-run",
+    "identity-review-apply"
+  ],
+  "conductor_apply_note": "This prep artifact intentionally does not edit data/identity-overrides/merges.json or generated outputs. Re-run deterministic guards immediately before conductor application because concurrent work may update canonical DB rows, durable identity overrides, or prior prep state."
+}

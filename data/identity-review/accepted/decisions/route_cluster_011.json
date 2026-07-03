@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "review_state": "accepted",
+  "accepted_at": "2026-06-08T21:21:36.731Z",
+  "reviewer": "codex-audit-2026-06-08",
+  "source": "audit_safe_to_promote",
+  "cluster_id": "route_cluster_011",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_011.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_011.json",
+  "source_review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Flash",
+  "action_summary": {
+    "merge_group_count": 1,
+    "do_not_merge_count": 0,
+    "weak_alias_count": 1,
+    "missing_field_count": 1,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [
+    [
+      "route_q43",
+      "route_q43-queens"
+    ]
+  ],
+  "do_not_merge": [],
+  "weak_aliases": [
+    {
+      "record_id": "route_q43",
+      "aliases": [
+        "route_able-q43",
+        "route_q43-ace"
+      ],
+      "reason": "These are program-specific aliases (ABLE/ACE) for the same base route Q43."
+    }
+  ],
+  "missing_fields": [
+    {
+      "record_id": "route_q43-queens",
+      "fields": [
+        "borough",
+        "streets",
+        "program"
+      ]
+    }
+  ],
+  "ambiguous": [],
+  "suggested_rules": [
+    "Merge route records sharing the same route_id/route_label when one is a generic reference and the other is a program-specific variant of the same base route, unless variant labels (e.g., SBS, Limited, +) differ."
+  ],
+  "rationale": "Both records refer to the Q43 bus route in Queens. route_q43 has ABLE/ACE program context and streets (Sutphin Blvd / Hillside Av), while route_q43-queens is a generic reference from a Queens equity evaluation. Both share route_id=Q43, route_label=Q43, and the identity key route_q43. The validator flagged duplicate_global_identity on shared key route_q43. The negative variant mismatch (ace-dataset vs unknown) is not a real conflict since the queens record simply lacks a variant label rather than having a different one. These are the same canonical route."
+}

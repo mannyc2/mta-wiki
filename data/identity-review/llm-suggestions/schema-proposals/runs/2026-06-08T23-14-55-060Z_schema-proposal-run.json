@@ -1,0 +1,31 @@
+{
+  "run_id": "2026-06-08T23-14-55-060Z_schema-proposal-run",
+  "generated_at": "2026-06-08T23:14:55.060Z",
+  "dry_run": true,
+  "profile_name": "deepseek-pro",
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "concurrency": 3,
+  "audit_manifest": "data/identity-review/schema-audit/latest.json",
+  "kind_count": 1,
+  "completed": 0,
+  "skipped": 1,
+  "failed": 0,
+  "invalid": 0,
+  "paths": {
+    "proposals_dir": "data/identity-review/llm-suggestions/schema-proposals",
+    "runs_dir": "data/identity-review/llm-suggestions/schema-proposals/runs",
+    "manifest": "data/identity-review/llm-suggestions/schema-proposals/runs/2026-06-08T23-14-55-060Z_schema-proposal-run.json",
+    "latest": "data/identity-review/llm-suggestions/schema-proposals/runs/latest.json"
+  },
+  "results": [
+    {
+      "observation_kind": "route",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/route.json",
+      "status": "skipped",
+      "schema_issues": [],
+      "warnings": [],
+      "error": "proposal already exists; pass --force to replace it"
+    }
+  ]
+}

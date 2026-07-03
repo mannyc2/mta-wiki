@@ -1,0 +1,22 @@
+{"decision_id":"rel-offset-bus-lanes-webster","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb4#p011_c0002","2013_02_sbs_webster_bx_cb4#p024_c0003"]}
+{"decision_id":"rel-bus-bulbs-webster","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb4#p039_c0012","2013_02_sbs_webster_bx_cb4#p027_c0002"]}
+{"decision_id":"rel-ban-left-turns-cbe","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb4#p032_c0004"]}
+{"decision_id":"rel-metric-bx41-daily-ridership","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb4#p007_c0002"]}
+{"decision_id":"rel-metric-traffic-injury-reduction","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb4#p006_c0005"]}
+{"decision_id":"rel-metric-population-walk","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb4#p007_c0002"]}
+{"decision_id":"rel-metric-households-no-car","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb4#p007_c0002"]}
+{"decision_id":"rel-metric-commute-by-transit","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb4#p007_c0002"]}
+{"decision_id":"rel-metric-corridor-length","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb4#p007_c0002"]}
+{"decision_id":"rel-claim-community-priorities","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb4#p009_c0003"]}
+{"decision_id":"rel-claim-project-goals","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb4#p010_c0003","2013_02_sbs_webster_bx_cb4#p010_c0005","2013_02_sbs_webster_bx_cb4#p010_c0007"]}
+{"decision_id":"rel-claim-sbs-timeline","verdict":"fail","failure_reason":"The cited block p004_c0006 ('2013 Webster Ave (Bx41)') is a single entry in a multi-corridor SBS program timeline. The claim record captures the full program-level timeline covering seven corridors (Fordham Rd, 1st/2nd Ave, 34th St, Hylan Blvd, Webster Ave, Nostrand Ave, LaGuardia Airport). The Webster Avenue project merely appears as one item in this list. This is co-occurrence in a document — not a claim that meaningfully belongs to the Webster Avenue project specifically. Co-occurrence is not a relation.","evidence_checked":["2013_02_sbs_webster_bx_cb4#p004_c0006"]}
+{"decision_id":"rel-event-start-of-service","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb4#p040_c0006"]}
+{"decision_id":"rel-event-cb4-presentation","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb4#p001_c0003"]}
+{"decision_id":"rel-event-implementation-march-may","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb4#p040_c0003"]}
+{"decision_id":"rel-event-june-implementation","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb4#p040_c0006"]}
+{"decision_id":"rel-event-cac-meeting-1","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb4#p008_c0002"]}
+{"decision_id":"rel-event-cac-meeting-2","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb4#p008_c0002"]}
+{"decision_id":"rel-event-cac-meeting-3","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb4#p008_c0002"]}
+{"decision_id":"rel-event-cac-meeting-4","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb4#p008_c0002"]}
+{"decision_id":"rel-event-open-house-1","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb4#p008_c0002"]}
+{"decision_id":"rel-event-open-house-2","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb4#p008_c0002"]}

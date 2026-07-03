@@ -1,0 +1,110 @@
+{
+  "note_id": "codex-metric-context-tail11-2026-07-02",
+  "created_at": "2026-07-02",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llm_used": false,
+  "banned_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-profile commands"
+  ],
+  "bucket": "metric_claim missing unit_family",
+  "before": {
+    "missing_unit_family": 13,
+    "finite_missing_unit_family": 12,
+    "distinct_missing_metric_names": 13,
+    "other_unit_family": 4
+  },
+  "after": {
+    "missing_unit_family": 11,
+    "finite_missing_unit_family": 10,
+    "distinct_missing_metric_names": 11,
+    "other_unit_family": 4
+  },
+  "implemented": [
+    "Allowed metric_claim payload normalization to receive NormalizationContext.",
+    "Made selected missing-unit evidence gates inspect source context in addition to payload fields.",
+    "Added context-positive tests for ridership, vacancies, subway fires, train derailments, revenue vehicles, and traffic fatalities/injuries while retaining bare-payload negatives.",
+    "Added a composite safety rule for traffic_fatalities_and_injuries requiring fatality and injury evidence.",
+    "Threaded context through existing gated ridership, vacancy, safety, rating, and test-count rules."
+  ],
+  "materialized_effect": {
+    "cleared_metric_names": [
+      "traffic_fatalities_and_injuries",
+      "train_derailments"
+    ],
+    "not_cleared_despite_context_tests": [
+      "ridership",
+      "vacancies",
+      "subway_fires",
+      "revenue_vehicles"
+    ],
+    "reason_not_cleared": "The materialized rows did not carry enough non-name source context into the normalizer for those gates. They remain candidates for narrow payload-only gates or source/payload repair, not broad inference."
+  },
+  "remaining_missing_metric_names": [
+    "cares_program_count",
+    "infrastructure_protection",
+    "internal_eeo_complaints_by_basis",
+    "procurement_amount",
+    "revenue_vehicles",
+    "ridership",
+    "ridership_recovery_rate",
+    "substantial_completion_date",
+    "subway_fires",
+    "vacancies",
+    "workforce_development"
+  ],
+  "unchanged_other_unit_family_examples": [
+    {
+      "metric_name": "cost_per_daily_rider",
+      "unit": "2027 $M"
+    },
+    {
+      "metric_name": "substantial_completion_date",
+      "unit": "year"
+    },
+    {
+      "metric_name": "target_completion_year",
+      "unit": "year"
+    },
+    {
+      "metric_name": "forecasted_revenue_service_date",
+      "unit": "year"
+    }
+  ],
+  "verification": {
+    "focused_tests": {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "result": "pass",
+      "tests": 278,
+      "expect_calls": 5003
+    },
+    "typecheck": {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    "materialize": {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "pass",
+      "sqlite_fts_quick_check": "ok"
+    },
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass",
+      "issues": 0,
+      "submissions": 98115,
+      "canonical_records": 84027,
+      "wiki_pages": 7331
+    }
+  },
+  "next_candidates": [
+    "Narrow payload-only ridership gate for high-confidence million-rider rail rows with agency/entity context.",
+    "Narrow subway_fires gate requiring subway scope and date/period.",
+    "Decide whether revenue_vehicles under Bridges & Tunnels is vehicle crossings rather than riders before normalizing.",
+    "Defer ambiguous program/procurement/workforce and conflicting EEO basis rows until source-specific repair is safe."
+  ]
+}

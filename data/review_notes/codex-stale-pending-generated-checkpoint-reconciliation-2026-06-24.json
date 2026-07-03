@@ -1,0 +1,344 @@
+{
+  "generated_at": "2026-06-24T03:35:00.000Z",
+  "kind": "stale_applied_pending_generated_checkpoint_label_reconciliation",
+  "summary": {
+    "pending_label_rows": 87,
+    "by_kind": {
+      "identity_alias_batch_applied": 38,
+      "relation_retire_and_replace_batch_applied": 22,
+      "relation_missing_target_repair_applied": 1,
+      "relation_retire_only_batch_applied": 1,
+      "identity_alias_and_do_not_merge_batch_applied": 4,
+      "do_not_merge_batch_applied": 1,
+      "identity_batch_applied": 17,
+      "relation_endpoint_cleanup_applied": 1,
+      "identity_batch_repair": 1,
+      "relation_endpoint_shape_batch_applied": 1
+    }
+  },
+  "interpretation": "These rows are historical labels from before later generated-output checkpoints. They do not by themselves indicate unprocessed post-ingest backlog. Current authoritative gates are validation=0, source-id-drift-audit=0 candidates, post-ingest-audit ok, and writer packet coverage complete while writer execution remains paused.",
+  "current_gates": {
+    "validate": "Issues 0; submissions 98102; canonical records 83983; wiki pages 7355",
+    "post_ingest_audit": "ok; readiness 2566/2566 ready, 0 ready-never-ingested, 2566 ingested, 0 not-ready; post-ingest scope 2566 scoped sources across 344 plan files; writer packet coverage complete 2703/2703",
+    "source_id_drift_audit": "ok; 0 candidates",
+    "writer_dispatch_readiness": "data/post-ingest/2026-06-24T02-13-03-496Z_writer-packet-dispatch-readiness.json ready; all 109 shards claimed; all 2703 packet pages empty"
+  },
+  "sample_pending_note_ids": [
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity-alias-batch-073",
+      "kind": "identity_alias_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch042",
+      "kind": "relation_retire_and_replace_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity-alias-batch-074",
+      "kind": "identity_alias_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch043",
+      "kind": "relation_retire_and_replace_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity-alias-batch-075",
+      "kind": "identity_alias_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch044",
+      "kind": "relation_retire_and_replace_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity-alias-batch-076",
+      "kind": "identity_alias_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity-alias-batch-186",
+      "kind": "identity_alias_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity-alias-batch-187",
+      "kind": "identity_alias_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity-alias-batch-188",
+      "kind": "identity_alias_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity-alias-batch-189",
+      "kind": "identity_alias_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity-alias-batch-190",
+      "kind": "identity_alias_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity-alias-batch-193",
+      "kind": "identity_alias_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity-batch-196-dnm-197-198",
+      "kind": "identity_alias_and_do_not_merge_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity-batch-199-dnm-200-201",
+      "kind": "identity_alias_and_do_not_merge_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-dnm-203-204",
+      "kind": "do_not_merge_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity-batch-202",
+      "kind": "identity_alias_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity205-corridor206",
+      "kind": "identity_alias_and_do_not_merge_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-corridor209",
+      "kind": "identity_alias_and_do_not_merge_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity207-208",
+      "kind": "identity_alias_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity210-211",
+      "kind": "identity_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity214",
+      "kind": "identity_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity213",
+      "kind": "identity_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity212",
+      "kind": "identity_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity215",
+      "kind": "identity_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity216",
+      "kind": "identity_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity217",
+      "kind": "identity_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity218",
+      "kind": "identity_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity219",
+      "kind": "identity_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-relation-endpoint-cleanup-2026-06-23-batch220",
+      "kind": "relation_endpoint_cleanup_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity220",
+      "kind": "identity_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity221",
+      "kind": "identity_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity222-mta-parent",
+      "kind": "identity_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity222-early-entity",
+      "kind": "identity_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity223",
+      "kind": "identity_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity223-repair",
+      "kind": "identity_batch_repair",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity224-local",
+      "kind": "identity_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-canonical-cleanup-2026-06-23-identity225-live-parent",
+      "kind": "identity_batch_applied",
+      "status": "applied_pending_generated_checkpoint"
+    },
+    {
+      "note_id": "codex-identity-batch227-wave34-applied-2026-06-23",
+      "kind": "identity_batch_applied",
+      "status": "applied_pending_generated_checkpoint_wave36_active"
+    },
+    {
+      "note_id": "codex-relation-cleanup-batch228-applied-2026-06-23",
+      "kind": "relation_endpoint_shape_batch_applied",
+      "status": "applied_pending_generated_checkpoint_wave36_active"
+    }
+  ],
+  "pending_note_ids": [
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-047",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-048",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-049",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-050",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-051",
+    "codex-relation-cleanup-2026-06-22-endpoint-shape-batch022",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-052",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-053",
+    "codex-relation-cleanup-2026-06-22-endpoint-shape-batch023",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-054",
+    "codex-relation-cleanup-2026-06-22-endpoint-shape-batch024",
+    "codex-relation-cleanup-2026-06-22-endpoint-shape-batch025",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-055",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-056",
+    "codex-relation-cleanup-2026-06-22-endpoint-shape-batch026",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-057",
+    "codex-relation-cleanup-2026-06-22-endpoint-shape-batch027",
+    "codex-relation-cleanup-2026-06-22-missing-target-repair001",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-058",
+    "codex-relation-cleanup-2026-06-22-endpoint-shape-batch028",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-059",
+    "codex-relation-cleanup-2026-06-22-endpoint-shape-batch029",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-060",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-061",
+    "codex-relation-cleanup-2026-06-22-endpoint-shape-batch030",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-062",
+    "codex-relation-cleanup-2026-06-22-endpoint-shape-batch031",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-063",
+    "codex-relation-cleanup-2026-06-22-endpoint-shape-batch032",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-064",
+    "codex-relation-cleanup-2026-06-22-endpoint-shape-batch033",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-065",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-066",
+    "codex-relation-cleanup-2026-06-22-endpoint-shape-batch034",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-067",
+    "codex-relation-cleanup-2026-06-22-endpoint-shape-batch035",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-068",
+    "codex-relation-cleanup-2026-06-22-endpoint-shape-batch036",
+    "codex-relation-cleanup-2026-06-23-endpoint-shape-batch037",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-069",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-070",
+    "codex-relation-cleanup-2026-06-23-endpoint-shape-batch038",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-071",
+    "codex-relation-cleanup-2026-06-22-endpoint-shape-batch039",
+    "codex-canonical-cleanup-2026-06-22-identity-alias-batch-072",
+    "codex-relation-cleanup-2026-06-22-endpoint-shape-batch040",
+    "codex-relation-cleanup-2026-06-22-endpoint-shape-batch041",
+    "codex-canonical-cleanup-2026-06-23-identity-alias-batch-073",
+    "codex-relation-cleanup-2026-06-23-endpoint-shape-batch042",
+    "codex-canonical-cleanup-2026-06-23-identity-alias-batch-074",
+    "codex-relation-cleanup-2026-06-23-endpoint-shape-batch043",
+    "codex-canonical-cleanup-2026-06-23-identity-alias-batch-075",
+    "codex-relation-cleanup-2026-06-23-endpoint-shape-batch044",
+    "codex-canonical-cleanup-2026-06-23-identity-alias-batch-076",
+    "codex-canonical-cleanup-2026-06-23-identity-alias-batch-186",
+    "codex-canonical-cleanup-2026-06-23-identity-alias-batch-187",
+    "codex-canonical-cleanup-2026-06-23-identity-alias-batch-188",
+    "codex-canonical-cleanup-2026-06-23-identity-alias-batch-189",
+    "codex-canonical-cleanup-2026-06-23-identity-alias-batch-190",
+    "codex-canonical-cleanup-2026-06-23-identity-alias-batch-193",
+    "codex-canonical-cleanup-2026-06-23-identity-batch-196-dnm-197-198",
+    "codex-canonical-cleanup-2026-06-23-identity-batch-199-dnm-200-201",
+    "codex-canonical-cleanup-2026-06-23-dnm-203-204",
+    "codex-canonical-cleanup-2026-06-23-identity-batch-202",
+    "codex-canonical-cleanup-2026-06-23-identity205-corridor206",
+    "codex-canonical-cleanup-2026-06-23-corridor209",
+    "codex-canonical-cleanup-2026-06-23-identity207-208",
+    "codex-canonical-cleanup-2026-06-23-identity210-211",
+    "codex-canonical-cleanup-2026-06-23-identity214",
+    "codex-canonical-cleanup-2026-06-23-identity213",
+    "codex-canonical-cleanup-2026-06-23-identity212",
+    "codex-canonical-cleanup-2026-06-23-identity215",
+    "codex-canonical-cleanup-2026-06-23-identity216",
+    "codex-canonical-cleanup-2026-06-23-identity217",
+    "codex-canonical-cleanup-2026-06-23-identity218",
+    "codex-canonical-cleanup-2026-06-23-identity219",
+    "codex-relation-endpoint-cleanup-2026-06-23-batch220",
+    "codex-canonical-cleanup-2026-06-23-identity220",
+    "codex-canonical-cleanup-2026-06-23-identity221",
+    "codex-canonical-cleanup-2026-06-23-identity222-mta-parent",
+    "codex-canonical-cleanup-2026-06-23-identity222-early-entity",
+    "codex-canonical-cleanup-2026-06-23-identity223",
+    "codex-canonical-cleanup-2026-06-23-identity223-repair",
+    "codex-canonical-cleanup-2026-06-23-identity224-local",
+    "codex-canonical-cleanup-2026-06-23-identity225-live-parent",
+    "codex-identity-batch227-wave34-applied-2026-06-23",
+    "codex-relation-cleanup-batch228-applied-2026-06-23"
+  ],
+  "next_action": "No additional canonical/relation/identity mutation is indicated by current deterministic evidence. Remaining broad backlog is paused writer-region execution with dispatch readiness prepared, plus any future source-prep/ingest if new ready sources appear.",
+  "commands_not_run": [
+    "campaign dedup",
+    "canonicalize*",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "write",
+    "ask",
+    "schema",
+    "provider-backed post-ingest commands",
+    "writer agents",
+    "wiki prose edits"
+  ],
+  "updated_at": "2026-06-24T03:45:00.000Z",
+  "subagent_reconciliations": {
+    "identity": {
+      "agent_id": "019ef77f-06ac-7382-8584-f58013dba916",
+      "note_id": "codex-identity-pending-generated-checkpoint-reconciled-2026-06-24",
+      "pending_identity_notes": 61,
+      "conclusion": "No unapplied identity mutation remains; stale pending statuses are superseded by later clean checkpoints."
+    },
+    "relation": {
+      "agent_id": "019ef77f-2355-7142-8183-28c398eb5ece",
+      "note_id": "codex-relation-pending-generated-checkpoint-reconciled-2026-06-24",
+      "conclusion": "No safe relation mutation remains; batch220/batch228 durable inputs are materialized and covered by later clean checkpoints."
+    }
+  }
+}

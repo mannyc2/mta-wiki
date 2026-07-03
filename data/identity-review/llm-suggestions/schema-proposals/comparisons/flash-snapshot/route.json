@@ -1,0 +1,665 @@
+{
+  "schema_proposal_run_id": "2026-06-08T23-05-26-749Z_schema-proposal-run",
+  "proposed_at": "2026-06-08T23:06:17.050Z",
+  "observation_kind": "route",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "audit_packet": {
+    "observation_kind": "route",
+    "submission_count": 212,
+    "accepted_count": 212,
+    "rejected_count": 0,
+    "declared_anchor_fields": [
+      "route",
+      "route_id",
+      "route_label",
+      "route_name",
+      "routes"
+    ],
+    "enum_candidates": [
+      {
+        "field": "borough",
+        "occurrences": 78,
+        "coverage": 0.37,
+        "distinct_values": 5,
+        "closure_readiness": "saturated",
+        "corpus_values": [
+          "Bronx",
+          "Brooklyn",
+          "Manhattan",
+          "Queens",
+          "Staten Island"
+        ],
+        "value_counts": [
+          {
+            "value": "Bronx",
+            "count": 20
+          },
+          {
+            "value": "Brooklyn",
+            "count": 20
+          },
+          {
+            "value": "Manhattan",
+            "count": 20
+          },
+          {
+            "value": "Queens",
+            "count": 15
+          },
+          {
+            "value": "Staten Island",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "field": "program",
+        "occurrences": 21,
+        "coverage": 0.1,
+        "distinct_values": 1,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "ABLE"
+        ],
+        "value_counts": [
+          {
+            "value": "ABLE",
+            "count": 21
+          }
+        ]
+      },
+      {
+        "field": "route_type",
+        "occurrences": 18,
+        "coverage": 0.08,
+        "distinct_values": 6,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "express_bus",
+          "limited_stop_bus",
+          "Local",
+          "local_bus",
+          "Rush",
+          "select_bus_service"
+        ],
+        "value_counts": [
+          {
+            "value": "express_bus",
+            "count": 6
+          },
+          {
+            "value": "select_bus_service",
+            "count": 4
+          },
+          {
+            "value": "Local",
+            "count": 3
+          },
+          {
+            "value": "local_bus",
+            "count": 2
+          },
+          {
+            "value": "Rush",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "mode",
+        "occurrences": 10,
+        "coverage": 0.05,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "bus",
+          "subway"
+        ],
+        "value_counts": [
+          {
+            "value": "subway",
+            "count": 7
+          },
+          {
+            "value": "bus",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "field": "operator",
+        "occurrences": 4,
+        "coverage": 0.02,
+        "distinct_values": 1,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "MTA"
+        ],
+        "value_counts": [
+          {
+            "value": "MTA",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "field": "limits",
+        "occurrences": 3,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Rosedale to Jamaica",
+          "W 87th Street and West End Avenue to E 92nd Street and York Avenue"
+        ],
+        "value_counts": [
+          {
+            "value": "Rosedale to Jamaica",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "route_type_proposed",
+        "occurrences": 3,
+        "coverage": 0.01,
+        "distinct_values": 1,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Local"
+        ],
+        "value_counts": [
+          {
+            "value": "Local",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "field": "agency",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 1,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Bee-Line Bus System"
+        ],
+        "value_counts": [
+          {
+            "value": "Bee-Line Bus System",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "corridors",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Guy R Brewer Blvd",
+          "Merrick Blvd"
+        ],
+        "value_counts": []
+      }
+    ],
+    "additional_keys": [
+      {
+        "field": "description",
+        "occurrences": 77,
+        "coverage": 0.36,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Bronx-Manhattan express bus route serving 116th Street study area",
+          "Bronx bus route serving Fordham Road corridor",
+          "Bus route serving 116th Street study area in Manhattan",
+          "MTA bus route serving the 181st Street corridor; mentioned as still slow and inadequate in survey comments",
+          "Select Bus Service route on 34th Street",
+          "Serves 34th Street Busway corridor between Ninth Avenue and Third Avenue",
+          "Westchester County Bee-Line bus route serving Fordham Road corridor",
+          "Williamsburg Bridge/Washington Plaza-bound bus route, serving Marcy Avenue corridor in Brooklyn."
+        ]
+      },
+      {
+        "field": "existing_route_length_miles",
+        "occurrences": 3,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "existing_stop_spacing_feet",
+        "occurrences": 3,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "existing_turns_per_mile",
+        "occurrences": 3,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "note",
+        "occurrences": 26,
+        "coverage": 0.12,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "ABLE cameras operated on this route through 2023",
+          "in 60-day warning period",
+          "Hook Creek Blvd / Sunrise Highway on weekends only"
+        ]
+      },
+      {
+        "field": "proposed_route_length_miles",
+        "occurrences": 3,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "proposed_stop_spacing_feet",
+        "occurrences": 3,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "proposed_turns_per_mile",
+        "occurrences": 3,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "related_existing_routes",
+        "occurrences": 3,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "free_text",
+        "sample_values": [
+          "B1",
+          "B3",
+          "B44",
+          "B44 SBS",
+          "B49"
+        ]
+      },
+      {
+        "field": "service_description",
+        "occurrences": 3,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Service between Bay Ridge and Manhattan Beach",
+          "Service between Bedford-Stuyvesant and Sheepshead Bay",
+          "Service between Gravesend and Bergen Beach"
+        ]
+      },
+      {
+        "field": "status",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "proposed"
+        ]
+      },
+      {
+        "field": "streets",
+        "occurrences": 61,
+        "coverage": 0.29,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "1 Av / 2 Av",
+          "116 St / Manhattan Av",
+          "125 St / Astoria Blvd",
+          "14 St",
+          "21 St / Ditmars Blvd",
+          "23 St",
+          "3 Av / Lexington Av",
+          "34 St"
+        ]
+      }
+    ]
+  },
+  "closure_policy": "deferred",
+  "closure_signals": [
+    {
+      "field": "borough",
+      "closure_readiness": "saturated",
+      "occurrences": 78,
+      "coverage": 0.37
+    },
+    {
+      "field": "program",
+      "closure_readiness": "open",
+      "occurrences": 21,
+      "coverage": 0.1
+    },
+    {
+      "field": "route_type",
+      "closure_readiness": "open",
+      "occurrences": 18,
+      "coverage": 0.08
+    },
+    {
+      "field": "mode",
+      "closure_readiness": "open",
+      "occurrences": 10,
+      "coverage": 0.05
+    },
+    {
+      "field": "operator",
+      "closure_readiness": "open",
+      "occurrences": 4,
+      "coverage": 0.02
+    },
+    {
+      "field": "limits",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "coverage": 0.01
+    },
+    {
+      "field": "route_type_proposed",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "coverage": 0.01
+    },
+    {
+      "field": "agency",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "corridors",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.01
+    }
+  ],
+  "valid": true,
+  "schema_issues": [],
+  "warnings": [],
+  "proposal": {
+    "observation_kind": "route",
+    "field_proposals": [
+      {
+        "field": "borough",
+        "decision": "enum",
+        "canonical_values": [
+          "bronx",
+          "brooklyn",
+          "manhattan",
+          "queens",
+          "staten_island"
+        ],
+        "value_mapping": [
+          {
+            "from": "Bronx",
+            "to": "bronx"
+          },
+          {
+            "from": "Brooklyn",
+            "to": "brooklyn"
+          },
+          {
+            "from": "Manhattan",
+            "to": "manhattan"
+          },
+          {
+            "from": "Queens",
+            "to": "queens"
+          },
+          {
+            "from": "Staten Island",
+            "to": "staten_island"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "borough_other"
+        },
+        "rationale": "Borough is a closed set of five New York City boroughs, saturated in corpus."
+      },
+      {
+        "field": "program",
+        "decision": "enum",
+        "canonical_values": [
+          "able"
+        ],
+        "value_mapping": [
+          {
+            "from": "ABLE",
+            "to": "able"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "program_other"
+        },
+        "rationale": "Program names form an open set; only one observed value."
+      },
+      {
+        "field": "route_type",
+        "decision": "enum",
+        "canonical_values": [
+          "express_bus",
+          "limited_stop_bus",
+          "local",
+          "rush",
+          "select_bus_service"
+        ],
+        "value_mapping": [
+          {
+            "from": "express_bus",
+            "to": "express_bus"
+          },
+          {
+            "from": "limited_stop_bus",
+            "to": "limited_stop_bus"
+          },
+          {
+            "from": "Local",
+            "to": "local"
+          },
+          {
+            "from": "local_bus",
+            "to": "local"
+          },
+          {
+            "from": "Rush",
+            "to": "rush"
+          },
+          {
+            "from": "select_bus_service",
+            "to": "select_bus_service"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "route_type_other"
+        },
+        "rationale": "Route type categories normalized to snake_case; variants merged."
+      },
+      {
+        "field": "mode",
+        "decision": "enum",
+        "canonical_values": [
+          "bus",
+          "subway"
+        ],
+        "value_mapping": [
+          {
+            "from": "bus",
+            "to": "bus"
+          },
+          {
+            "from": "subway",
+            "to": "subway"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "mode_other"
+        },
+        "rationale": "Transport mode, open set but only two observed."
+      },
+      {
+        "field": "operator",
+        "decision": "enum",
+        "canonical_values": [
+          "mta"
+        ],
+        "value_mapping": [
+          {
+            "from": "MTA",
+            "to": "mta"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "operator_other"
+        },
+        "rationale": "Operator name; single observed value."
+      },
+      {
+        "field": "limits",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Descriptive route limits, not enumerable."
+      },
+      {
+        "field": "route_type_proposed",
+        "decision": "enum",
+        "canonical_values": [
+          "local"
+        ],
+        "value_mapping": [
+          {
+            "from": "Local",
+            "to": "local"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "route_type_proposed_other"
+        },
+        "rationale": "Proposed route type, single value matches main route_type enum."
+      },
+      {
+        "field": "agency",
+        "decision": "needs_more_data",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Single agency value insufficient to determine enum or free_text; more data needed."
+      },
+      {
+        "field": "corridors",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Street corridor names, free text."
+      }
+    ],
+    "key_dispositions": [
+      {
+        "key": "description",
+        "disposition": "promote_field",
+        "target": "description",
+        "rationale": "Free text description of route."
+      },
+      {
+        "key": "existing_route_length_miles",
+        "disposition": "promote_field",
+        "target": "existing_route_length_miles",
+        "rationale": "Numeric measurement."
+      },
+      {
+        "key": "existing_stop_spacing_feet",
+        "disposition": "promote_field",
+        "target": "existing_stop_spacing_feet",
+        "rationale": "Numeric measurement."
+      },
+      {
+        "key": "existing_turns_per_mile",
+        "disposition": "promote_field",
+        "target": "existing_turns_per_mile",
+        "rationale": "Numeric measurement."
+      },
+      {
+        "key": "note",
+        "disposition": "promote_field",
+        "target": "note",
+        "rationale": "Free text note."
+      },
+      {
+        "key": "proposed_route_length_miles",
+        "disposition": "promote_field",
+        "target": "proposed_route_length_miles",
+        "rationale": "Numeric measurement."
+      },
+      {
+        "key": "proposed_stop_spacing_feet",
+        "disposition": "promote_field",
+        "target": "proposed_stop_spacing_feet",
+        "rationale": "Numeric measurement."
+      },
+      {
+        "key": "proposed_turns_per_mile",
+        "disposition": "promote_field",
+        "target": "proposed_turns_per_mile",
+        "rationale": "Numeric measurement."
+      },
+      {
+        "key": "related_existing_routes",
+        "disposition": "promote_field",
+        "target": "related_existing_routes",
+        "rationale": "Array of route identifiers."
+      },
+      {
+        "key": "service_description",
+        "disposition": "promote_field",
+        "target": "service_description",
+        "rationale": "Free text service description."
+      },
+      {
+        "key": "status",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single sparse value; needs more data to decide enum vs free_text."
+      },
+      {
+        "key": "streets",
+        "disposition": "promote_field",
+        "target": "streets",
+        "rationale": "Free text street names."
+      }
+    ],
+    "notes": "Anchor fields (route, route_id, route_label, route_name, routes) are identity fields and not proposed for normalization."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T23-05-40-882Z_3564593-75b87d03_schema-proposal-run_route",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-05-40-882Z_2026-06-08T23-05-40-882Z_3564593-75b87d03_schema-proposal-run_route.jsonl"
+}

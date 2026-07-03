@@ -1,0 +1,266 @@
+{
+  "run_id": "2026-06-10T23-04-42-552Z_1976810-b13e57f4_ingest_2012-10-brt-webster-cac3-meeting-summary",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:58:04.845Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "d_nycdot_2012_webster_cac3",
+        "local_observation_id": "entity_nycdot_2012_webster_cac3",
+        "decision": "new",
+        "rationale": "base_record_id entity_nyc-dot already exists in the registry as NYC DOT — observation already resolves correctly.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p001_c0006",
+            "source_quote": "The New York City Department of Transportation (NYCDOT) and MTA New York City Transit (NYCT), held the third Community Advisory Committee (CAC) meeting for the Webster Avenue Select Bus Service (SBS) project"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_mta_nyct_2012_webster_cac3",
+        "local_observation_id": "entity_mta_nyct_2012_webster_cac3",
+        "decision": "new",
+        "rationale": "base_record_id entity_mta-nyct already exists in the registry as MTA New York City Transit — observation already resolves correctly.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p001_c0006",
+            "source_quote": "The New York City Department of Transportation (NYCDOT) and MTA New York City Transit (NYCT), held the third Community Advisory Committee (CAC) meeting for the Webster Avenue Select Bus Service (SBS) project"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_ted_orosz_2012_webster_cac3",
+        "local_observation_id": "entity_ted_orosz_2012_webster_cac3",
+        "decision": "new",
+        "rationale": "base_record_id entity_ted-orosz-20100921 already exists in the registry as Ted Orosz — observation already resolves correctly.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p001_c0007",
+            "source_quote": "Ted Orosz, Director of Long Range Bus Planning for NYCT, introduced himself and led the introductions of the CAC members present."
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "works_for",
+            "subject_id": "entity_ted-orosz-20100921",
+            "object_id": "entity_mta-nyct",
+            "description": "Ted Orosz is Director of Long Range Bus Planning for MTA New York City Transit.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+                "block_id": "p001_c0007",
+                "source_quote": "Ted Orosz, Director of Long Range Bus Planning for NYCT, introduced himself and led the introductions of the CAC members present."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "d_eric_beaton_2012_webster_cac3",
+        "local_observation_id": "entity_eric_beaton_2012_webster_cac3",
+        "decision": "new",
+        "rationale": "base_record_id entity_eric-beaton-20100921 already exists in the registry as Eric Beaton — observation already resolves correctly.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p001_c0007",
+            "source_quote": "Mr. Orosz and Eric Beaton, Director of Transit Development for NYCDOT, then presented a more detailed overview"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "works_for",
+            "subject_id": "entity_eric-beaton-20100921",
+            "object_id": "entity_nyc-dot",
+            "description": "Eric Beaton is Director of Transit Development for NYC DOT.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+                "block_id": "p001_c0007",
+                "source_quote": "Mr. Orosz and Eric Beaton, Director of Transit Development for NYCDOT, then presented a more detailed overview"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "d_bronx_bp_office_2012",
+        "local_observation_id": "entity_bronx_borough_presidents_office_2012",
+        "decision": "new",
+        "rationale": "base_record_id entity_bronx-borough-presidents-office-2012 already exists in the registry — observation already resolves correctly.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p005_c0003",
+            "source_quote": "Bronx Borough President's Office"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_fordham_road_bid_2012",
+        "local_observation_id": "entity_fordham_road_bid_2012",
+        "decision": "new",
+        "rationale": "base_record_id entity_fordham-road-bid-2012 already exists in the registry — observation already resolves correctly.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p005_c0003",
+            "source_quote": "Fordham Road BID"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_nycedc_2012_webster_cac3",
+        "local_observation_id": "entity_nycedc_2012_webster_cac3",
+        "decision": "new",
+        "rationale": "base_record_id entity_nycedc-qbb-study already exists in the registry as NYCEDC — observation already resolves correctly.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p005_c0003",
+            "source_quote": "New York City Economic Development Corporation"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_bedford_mosholu_2012",
+        "local_observation_id": "entity_bedford_mosholu_community_association_2012",
+        "decision": "new",
+        "rationale": "base_record_id entity_bedford-mosholu-community-association-2012 already exists in the registry — observation already resolves correctly.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p005_c0003",
+            "source_quote": "Bedford-Mosholu Community Association (2 participants)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_transportation_alternatives_2012",
+        "local_observation_id": "entity_transportation_alternatives_2012_webster_cac3",
+        "decision": "new",
+        "rationale": "base_record_id entity_transportation-alternatives already exists in the registry — observation already resolves correctly.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p005_c0003",
+            "source_quote": "Transportation Alternatives (2 participants)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_pcac_mta_2012",
+        "local_observation_id": "entity_pcac_mta_2012_webster_cac3",
+        "decision": "new",
+        "rationale": "base_record_id entity_pcac-mta-2012-webster-cac3 already exists in the registry — observation already resolves correctly.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p005_c0003",
+            "source_quote": "Permanent Citizens Advisory Committee to the MTA"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_nypirg_straphangers_2012",
+        "local_observation_id": "entity_nypirg_straphangers_campaign_2012",
+        "decision": "new",
+        "rationale": "base_record_id entity_nypirg-straphangers-campaign-2012 already exists in the registry — observation already resolves correctly.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p005_c0003",
+            "source_quote": "NYPIRG Straphangers Campaign"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_nypirg_bcc_2012",
+        "local_observation_id": "entity_nypirg_bronx_community_college_2012",
+        "decision": "new",
+        "rationale": "base_record_id entity_nypirg-bronx-community-college-2012 already exists in the registry — observation already resolves correctly.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p005_c0003",
+            "source_quote": "NYPIRG Bronx Community College"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_tri_state_2012",
+        "local_observation_id": "entity_tri_state_transportation_campaign_2012_webster",
+        "decision": "new",
+        "rationale": "base_record_id entity_tri-state-transportation-campaign already exists in the registry — observation already resolves correctly.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p005_c0003",
+            "source_quote": "Tri-State Transportation Campaign"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_pratt_center_2012",
+        "local_observation_id": "entity_pratt_center_community_development_2012",
+        "decision": "new",
+        "rationale": "base_record_id entity_pratt-center-community-development-2012 already exists in the registry — observation already resolves correctly.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p005_c0003",
+            "source_quote": "Pratt Center for Community Development"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_cb3_bronx_2012",
+        "local_observation_id": "entity_community_board_3_bronx_2012",
+        "decision": "new",
+        "rationale": "base_record_id entity_community-board-3-bronx-2012 already exists in the registry — observation already resolves correctly.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p005_c0003",
+            "source_quote": "Community Board 3"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_cb5_bronx_2012",
+        "local_observation_id": "entity_community_board_5_bronx_2012",
+        "decision": "new",
+        "rationale": "base_record_id entity_community-board-5-bronx-2012 already exists in the registry — observation already resolves correctly.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p005_c0003",
+            "source_quote": "Community Board 5 (2 participants)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_cb7_bronx_2012",
+        "local_observation_id": "entity_community_board_7_bronx_2012",
+        "decision": "new",
+        "rationale": "base_record_id entity_community-board-7-bronx-2012 already exists in the registry — observation already resolves correctly.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p005_c0003",
+            "source_quote": "Community Board 7 (2 participants)"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-55-43-158Z_2111393-2c0ab11c_canonicalize_2026-06-10t23-04-42-552z-1976810-b13e57f4-ingest-2012-10-brt-webster-cac3-meeting-summary-entity-identity"
+}

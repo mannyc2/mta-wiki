@@ -1,0 +1,203 @@
+{
+  "run_id": "2026-06-10T23-07-32-203Z_1976810-d29b08e7_ingest_2012-12-03-sbs-125th-workshop-summary",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T03:09:25.303Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "relate-offboard-fare-to-project",
+        "local_observation_id": "treatment_off_board_fare_collection_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_125th-street-transportation-improvements",
+            "object_id": "treatment_off-board-fare-collection-125th_2",
+            "description": "Off-board fare collection proposed as part of M60 SBS on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2012_12_03_sbs_125th_workshop_summary",
+                "block_id": "p003_c0006",
+                "source_quote": "introduced the selection of the M60 to upgrade to SBS Service with off-board fare collection, dedicated off-set bus lanes and other potential transportation improvements"
+              },
+              {
+                "source_id": "2012_12_03_sbs_125th_workshop_summary",
+                "block_id": "p004_c0006",
+                "source_quote": "There were several requests for increased public education on off-board fare collection, with an emphasis on educating the public on the consequences of fare evasion."
+              }
+            ]
+          }
+        ],
+        "rationale": "p003_c0006 explicitly introduces off-board fare collection as part of the M60 SBS upgrade under the 125th Street Transportation Improvements Project. p004_c0006 discusses public reception of this proposed treatment.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_12_03_sbs_125th_workshop_summary",
+            "block_id": "p003_c0006",
+            "source_quote": "introduced the selection of the M60 to upgrade to SBS Service with off-board fare collection, dedicated off-set bus lanes and other potential transportation improvements"
+          },
+          {
+            "source_id": "2012_12_03_sbs_125th_workshop_summary",
+            "block_id": "p004_c0006",
+            "source_quote": "There were several requests for increased public education on off-board fare collection, with an emphasis on educating the public on the consequences of fare evasion."
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-offset-bus-lanes-to-project",
+        "local_observation_id": "treatment_offset_bus_lanes_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_125th-street-transportation-improvements",
+            "object_id": "treatment_offset-bus-lanes-125th_2",
+            "description": "Offset bus lanes proposed as part of M60 SBS on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2012_12_03_sbs_125th_workshop_summary",
+                "block_id": "p003_c0006",
+                "source_quote": "introduced the selection of the M60 to upgrade to SBS Service with off-board fare collection, dedicated off-set bus lanes and other potential transportation improvements"
+              },
+              {
+                "source_id": "2012_12_03_sbs_125th_workshop_summary",
+                "block_id": "p004_c0008",
+                "source_quote": "Many participants could see the benefits of off-set bus lanes to both buses and other vehicles."
+              }
+            ]
+          }
+        ],
+        "rationale": "p003_c0006 explicitly introduces dedicated off-set bus lanes as part of the M60 SBS upgrade under the 125th Street Transportation Improvements Project. p004_c0006 and p004_c0008 discuss participant reception.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_12_03_sbs_125th_workshop_summary",
+            "block_id": "p003_c0006",
+            "source_quote": "introduced the selection of the M60 to upgrade to SBS Service with off-board fare collection, dedicated off-set bus lanes and other potential transportation improvements"
+          },
+          {
+            "source_id": "2012_12_03_sbs_125th_workshop_summary",
+            "block_id": "p004_c0008",
+            "source_quote": "Many participants could see the benefits of off-set bus lanes to both buses and other vehicles."
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-tsp-to-project",
+        "local_observation_id": "treatment_traffic_signal_priority_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_125th-street-transportation-improvements",
+            "object_id": "treatment_traffic-signal-priority-125th",
+            "description": "Traffic Signal Priority proposed as part of M60 SBS on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2012_12_03_sbs_125th_workshop_summary",
+                "block_id": "p005_c0004",
+                "source_quote": "Many participants embraced Traffic Signal Priority as a good idea for 125th Street."
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0004 explicitly discusses Traffic Signal Priority in the context of SBS amenities proposed for 125th Street as part of the project. The treatment is discussed within the 'Select Bus Service and Amenities' section of the workshop summary.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_12_03_sbs_125th_workshop_summary",
+            "block_id": "p005_c0004",
+            "source_quote": "Many participants embraced Traffic Signal Priority as a good idea for 125th Street."
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-all-door-boarding-to-project",
+        "local_observation_id": "treatment_all_door_boarding_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_125th-street-transportation-improvements",
+            "object_id": "treatment_all-door-boarding-125th",
+            "description": "All-door boarding proposed as SBS amenity for M60 on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2012_12_03_sbs_125th_workshop_summary",
+                "block_id": "p005_c0004",
+                "source_quote": "All door boarding was seen as a positive amenity to reduce the time it takes to load a bus."
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0004 discusses all-door boarding within the 'Select Bus Service and Amenities' section of the workshop summary for the 125th Street Transportation Improvements Project. It is presented as one of the proposed SBS amenities.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_12_03_sbs_125th_workshop_summary",
+            "block_id": "p005_c0004",
+            "source_quote": "All door boarding was seen as a positive amenity to reduce the time it takes to load a bus."
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-limited-stops-to-project",
+        "local_observation_id": "treatment_limited_stops_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_125th-street-transportation-improvements",
+            "object_id": "treatment_limited-stops-125th",
+            "description": "Limited stops discussed as SBS feature for M60 on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2012_12_03_sbs_125th_workshop_summary",
+                "block_id": "p005_c0004",
+                "source_quote": "There was a lot of interest around the topic of limited stops. Many participants saw the benefits of limited stops and felt they should be geared towards subway connections."
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0004 discusses limited stops within the 'Select Bus Service and Amenities' section of the workshop summary. The treatment is explicitly discussed as part of the proposed M60 SBS on 125th Street.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_12_03_sbs_125th_workshop_summary",
+            "block_id": "p005_c0004",
+            "source_quote": "There was a lot of interest around the topic of limited stops. Many participants saw the benefits of limited stops and felt they should be geared towards subway connections."
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-extended-bus-stops-to-project",
+        "local_observation_id": "treatment_extended_bus_stops_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_125th-street-transportation-improvements",
+            "object_id": "treatment_extended-bus-stops-125th",
+            "description": "Extended bus stops discussed as part of M60 SBS proposal on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2012_12_03_sbs_125th_workshop_summary",
+                "block_id": "p005_c0004",
+                "source_quote": "Increasing the length of bus stops will help with bus bunching. Concern was expressed that the extended bus stops would displace vendors."
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0004 discusses extended bus stops within the 'Select Bus Service and Amenities' section of the workshop summary for the 125th Street Transportation Improvements Project. The treatment is explicitly discussed in the context of the proposed M60 SBS.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_12_03_sbs_125th_workshop_summary",
+            "block_id": "p005_c0004",
+            "source_quote": "Increasing the length of bus stops will help with bus bunching. Concern was expressed that the extended bus stops would displace vendors."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-06-18-230Z_2111393-9fe350d2_canonicalize_2026-06-10t23-07-32-203z-1976810-d29b08e7-ingest-2012-12-03-sbs-125th-workshop-summary-treatment-relations"
+}

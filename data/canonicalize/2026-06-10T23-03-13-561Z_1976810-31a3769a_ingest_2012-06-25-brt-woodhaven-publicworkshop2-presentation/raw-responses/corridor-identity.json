@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T23-03-13-561Z_1976810-31a3769a_ingest_2012-06-25-brt-woodhaven-publicworkshop2-presentation",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T02:43:57.422Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "corridor_woodhaven_cross_bay_blvds",
+        "decision": "new",
+        "rationale": "Observation base_record_id corridor_woodhaven-cross-bay-blvds matches an existing registry record with identical corridor name ('Woodhaven / Cross Bay Boulevards'), matching streets (Woodhaven Boulevard / Cross Bay Boulevard), same borough (Queens), and matching description (SBS corridor from Woodside to Rockaway Beach). The registry record already lists this observation's source (2012_06_25_brt_woodhaven_publicworkshop2_presentation) in its source_ids. Observation already resolves to its own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p001_c0001",
+            "source_quote": "Woodhaven / Cross Bay Boulevards"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-42-08-828Z_2111393-5cbb192d_canonicalize_2026-06-10t23-03-13-561z-1976810-31a3769a-ingest-2012-06-25-brt-woodhaven-publicworkshop2-presentation-corridor-identity"
+}

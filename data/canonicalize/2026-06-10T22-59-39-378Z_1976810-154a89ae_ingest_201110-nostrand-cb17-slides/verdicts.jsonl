@@ -1,0 +1,36 @@
+{"decision_id":"d1-bus-lanes-nostrand-rogers","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"d2-offset-bus-lane-curb","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"d3-bus-signal-priority","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"d4-pre-payment","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"d5-pre-payment-enforcement","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"d6-bus-bulb-sbs-station","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"d7-curbside-turn-lanes","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"d8-left-turn-bans","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"d9-sbs-stations-cb17","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"rel-b44-weekday-ridership","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"rel-b44-average-speed","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"rel-cb17-boardings-b44","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"rel-residents-quarter-mile","verdict":"pass","evidence_checked":["201110_nostrand_cb17_slides#p002_c0006"]}
+{"decision_id":"rel-households-no-car","verdict":"pass","evidence_checked":["201110_nostrand_cb17_slides#p002_c0006"]}
+{"decision_id":"rel-transit-commute","verdict":"pass","evidence_checked":["201110_nostrand_cb17_slides#p002_c0006"]}
+{"decision_id":"rel-sbs-faster-trips","verdict":"fail","failure_reason":"The metric payload explicitly scopes to 'Existing SBS routes (Fordham Rd, 1st and 2nd Aves)', not to the Nostrand/Rogers project. The evidence block states general SBS benefits from other routes cited as supporting context in the presentation. Co-occurrence in the same deck does not establish a has_metric relation between the Nostrand/Rogers project and metrics about other routes.","evidence_checked":["201110_nostrand_cb17_slides#p006_c0003"]}
+{"decision_id":"rel-sbs-customer-satisfaction","verdict":"fail","failure_reason":"Same as rel-sbs-faster-trips: the metric payload scopes to 'Existing SBS routes (Fordham Rd, 1st and 2nd Aves)'. The cited block shows general SBS success statistics, not a metric of the Nostrand/Rogers project. Co-occurrence in the deck does not establish a has_metric relation.","evidence_checked":["201110_nostrand_cb17_slides#p006_c0003"]}
+{"decision_id":"rel-sbs-ridership-increase","verdict":"fail","failure_reason":"Same as above: metric payload scopes to 'Existing SBS routes', not to the Nostrand/Rogers project. The evidence is from a generic SBS benefits slide, not a metric of this specific project.","evidence_checked":["201110_nostrand_cb17_slides#p006_c0003"]}
+{"decision_id":"rel-merchant-existing-situation","verdict":"pass","evidence_checked":["201110_nostrand_cb17_slides#p017_c0003"]}
+{"decision_id":"rel-merchant-front-delivery","verdict":"pass","evidence_checked":["201110_nostrand_cb17_slides#p017_c0003"]}
+{"decision_id":"rel-deliveries-midday","verdict":"pass","evidence_checked":["201110_nostrand_cb17_slides#p016_c0002"]}
+{"decision_id":"rel-pedestrians-interviewed","verdict":"pass","evidence_checked":["201110_nostrand_cb17_slides#p014_c0002"]}
+{"decision_id":"rel-15-public-meetings","verdict":"pass","evidence_checked":["201110_nostrand_cb17_slides#p009_c0002"]}
+{"decision_id":"rel-4-cac-2-open-houses","verdict":"pass","evidence_checked":["201110_nostrand_cb17_slides#p009_c0003"]}
+{"decision_id":"rel-traffic-flatbush-improves","verdict":"pass","evidence_checked":["201110_nostrand_cb17_slides#p013_c0004"]}
+{"decision_id":"rel-traffic-unchanged","verdict":"pass","evidence_checked":["201110_nostrand_cb17_slides#p013_c0002"]}
+{"decision_id":"rel-off-peak-traffic","verdict":"pass","evidence_checked":["201110_nostrand_cb17_slides#p013_c0003"]}
+{"decision_id":"rel-midday-traffic-slower","verdict":"pass","evidence_checked":["201110_nostrand_cb17_slides#p013_c0005"]}
+{"decision_id":"rel-start-of-service-late-2012","verdict":"pass","evidence_checked":["201110_nostrand_cb17_slides#p019_c0002"]}
+{"decision_id":"rel-start-of-construction","verdict":"pass","evidence_checked":["201110_nostrand_cb17_slides#p019_c0002"]}
+{"decision_id":"rel-final-design-complete","verdict":"pass","evidence_checked":["201110_nostrand_cb17_slides#p019_c0002"]}
+{"decision_id":"rel-cb-meetings-fall-2011","verdict":"pass","evidence_checked":["201110_nostrand_cb17_slides#p019_c0002"]}
+{"decision_id":"rel-cac-4-open-house-2","verdict":"pass","evidence_checked":["201110_nostrand_cb17_slides#p010_c0002"]}
+{"decision_id":"rel-cac-2-3-winter-2010","verdict":"pass","evidence_checked":["201110_nostrand_cb17_slides#p010_c0002"]}
+{"decision_id":"rel-public-open-house-1","verdict":"pass","evidence_checked":["201110_nostrand_cb17_slides#p010_c0002"]}
+{"decision_id":"rel-final-design-spring-2011","verdict":"pass","evidence_checked":["201110_nostrand_cb17_slides#p010_c0002"]}

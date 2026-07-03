@@ -1,0 +1,241 @@
+{
+  "batch_id": "codex-identity-batch108",
+  "created_at": "2026-06-23T04:32:04Z",
+  "scope": "global corridor/route identity cleanup; prepared aliases are route-only because the safest remaining high-confidence candidates were route records",
+  "prepared_count": 8,
+  "all_pass": true,
+  "expected_delta": {
+    "duplicate_global_identity": -8
+  },
+  "proposed_aliases": [
+    {
+      "kind": "route",
+      "alias_id": "route_bx41-local-2012-11-webster",
+      "target_id": "route_bx41-local-2012-02-brt-webster-cac1",
+      "reason": "Same global route: both records are Bx41 local service on Webster Avenue. The target is the broader Bx41 Local record with many source links; the alias is a one-source November 2012 Webster Avenue instance with the same route_id and local service variant.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "Bx41",
+          "service_variant": "local",
+          "route_type_normalized": "local"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "Bx41",
+          "service_variant": "local",
+          "route_type_normalized": "local"
+        }
+      },
+      "source_evidence_refs": [
+        "2012_11_sbs_webster_cac4_summary#p003_c0007",
+        "2012_02_brt_webster_cac1_summary#p003_c0003"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_bx55-limited-2012-11-webster",
+      "target_id": "route_bx55-limited-webster-2012",
+      "reason": "Same global route: both records identify Bx55 Limited service in the Webster Avenue/Bx41 SBS planning context. Route ID and limited-stop service variant match exactly.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "Bx55",
+          "service_variant": "limited_stop",
+          "route_type_normalized": "limited_stop"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "Bx55",
+          "service_variant": "limited_stop",
+          "route_type_normalized": "limited_stop"
+        }
+      },
+      "source_evidence_refs": [
+        "2012_11_sbs_webster_cac4_summary#p001_c0008",
+        "2012_11_sbs_webster_cac4#p029_c0003"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_bxm6-madison-ave-cb6-jun2025",
+      "target_id": "route_bxm6",
+      "reason": "Same global route: both records are BxM6 express bus service. The alias is a Madison Avenue CB6 June 2025 study-area mention; the target is the broader BxM6 Express Bus record.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "BxM6",
+          "service_variant": "express",
+          "route_type_normalized": "express"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "BxM6",
+          "service_variant": "express",
+          "route_type_normalized": "express"
+        }
+      },
+      "source_evidence_refs": [
+        "madison_ave_e23_st_e42_st_cb6_jun2025#p009_c0003",
+        "better_buses#p001_b0001"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_bxm7-madison-ave-cb6-jun2025",
+      "target_id": "route_bxm7",
+      "reason": "Same global route: both records are BxM7 express bus service. The alias is a Madison Avenue CB6 June 2025 study-area mention; the target is the broader BxM7 Express Bus record.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "BxM7",
+          "service_variant": "express",
+          "route_type_normalized": "express"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "BxM7",
+          "service_variant": "express",
+          "route_type_normalized": "express"
+        }
+      },
+      "source_evidence_refs": [
+        "madison_ave_e23_st_e42_st_cb6_jun2025#p009_c0003",
+        "better_buses#p001_b0001"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_q101-201110-qbb",
+      "target_id": "route_q101-qbb-study",
+      "reason": "Same global route: both records identify Q101 local service in Queensboro Bridge study evidence. Route ID and local service variant match exactly.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "Q101",
+          "service_variant": "local",
+          "route_type_normalized": "local"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "Q101",
+          "service_variant": "local",
+          "route_type_normalized": "local"
+        }
+      },
+      "source_evidence_refs": [
+        "201110_qbb_approach_summary#p007_c0002",
+        "201110_qbb_summary_recommendations#p008_c0001"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_qm10-201110-qbb",
+      "target_id": "route_qm10-qbb-study",
+      "reason": "Same global route: both records identify QM10 express service in Queensboro Bridge study evidence. Route ID and express service variant match exactly.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "QM10",
+          "service_variant": "express",
+          "route_type_normalized": "express"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "QM10",
+          "service_variant": "express",
+          "route_type_normalized": "express"
+        }
+      },
+      "source_evidence_refs": [
+        "201110_qbb_approach_summary#p008_c0003",
+        "201110_qbb_summary_recommendations#p010_c0005"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_qm12-201110-qbb",
+      "target_id": "route_qm12-qbb-study",
+      "reason": "Same global route: both records identify QM12 express service in Queensboro Bridge study evidence. Route ID and express service variant match exactly.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "QM12",
+          "service_variant": "express",
+          "route_type_normalized": "express"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "QM12",
+          "service_variant": "express",
+          "route_type_normalized": "express"
+        }
+      },
+      "source_evidence_refs": [
+        "201110_qbb_approach_summary#p008_c0003",
+        "201110_qbb_summary_recommendations#p010_c0005"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_qm18-201110-qbb",
+      "target_id": "route_qm18-qbb-study",
+      "reason": "Same global route: both records identify QM18 express service in Queensboro Bridge study evidence. Route ID and express service variant match exactly.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "QM18",
+          "service_variant": "express",
+          "route_type_normalized": "express"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "QM18",
+          "service_variant": "express",
+          "route_type_normalized": "express"
+        }
+      },
+      "source_evidence_refs": [
+        "201110_qbb_approach_summary#p008_c0003",
+        "201110_qbb_summary_recommendations#p010_c0005"
+      ]
+    }
+  ],
+  "guard_summary": {
+    "candidate_discovery": {
+      "route_group_command": "sqlite3 -header -column data/canonical.db \"select upper(coalesce(routes.route_id,'')) as route_id, coalesce(json_extract(records.payload,'$.service_variant'),'') as service_variant, coalesce(routes.route_type_normalized,'') as route_type_normalized, count(*) as n, group_concat(records.record_id, ' | ') as ids from records join routes on records.record_id=routes.record_id where records.record_kind='route' and coalesce(routes.route_id,'') != '' group by upper(routes.route_id), coalesce(json_extract(records.payload,'$.service_variant'),''), coalesce(routes.route_type_normalized,'') having n > 1 order by n desc, route_id limit 80;\"",
+      "corridor_group_command": "sqlite3 -header -column data/canonical.db \"select lower(coalesce(corridors.corridor_name, corridors.name, corridors.street, records.display_name,'')) as name_key, count(*) as n, group_concat(records.record_id, ' | ') as ids from records join corridors on records.record_id=corridors.record_id where records.record_kind='corridor' and coalesce(corridors.corridor_name, corridors.name, corridors.street, records.display_name,'') != '' group by lower(coalesce(corridors.corridor_name, corridors.name, corridors.street, records.display_name,'')) having n > 1 order by n desc, name_key limit 100;\"",
+      "result_summary": "Route duplicate groups provided the safest remaining candidates with exact route_id and service-variant agreement. Corridor duplicate groups were inspected but not selected because remaining same-name clusters had materially different or ambiguous limits/scope risk."
+    },
+    "record_existence_and_kind": {
+      "command": "sqlite3 -header -column data/canonical.db \"select r.record_id, r.record_kind, r.display_name, routes.route_id, json_extract(r.payload,'$.service_variant') as service_variant, routes.route_type_normalized, routes.route_name, routes.route_label, r.primary_source_id, (select count(*) from record_sources rs where rs.record_id=r.record_id) as source_count from records r join routes on r.record_id=routes.record_id where r.record_id in ('route_bx41-local-2012-11-webster','route_bx41-local-2012-02-brt-webster-cac1','route_bx55-limited-2012-11-webster','route_bx55-limited-webster-2012','route_bxm6-madison-ave-cb6-jun2025','route_bxm6','route_bxm7-madison-ave-cb6-jun2025','route_bxm7','route_q101-201110-qbb','route_q101-qbb-study','route_qm10-201110-qbb','route_qm10-qbb-study','route_qm12-201110-qbb','route_qm12-qbb-study','route_qm18-201110-qbb','route_qm18-qbb-study') order by r.record_id;\"",
+      "count_command": "sqlite3 -header -column data/canonical.db \"select count(*) as selected_record_count from records where record_id in ('route_bx41-local-2012-11-webster','route_bx41-local-2012-02-brt-webster-cac1','route_bx55-limited-2012-11-webster','route_bx55-limited-webster-2012','route_bxm6-madison-ave-cb6-jun2025','route_bxm6','route_bxm7-madison-ave-cb6-jun2025','route_bxm7','route_q101-201110-qbb','route_q101-qbb-study','route_qm10-201110-qbb','route_qm10-qbb-study','route_qm12-201110-qbb','route_qm12-qbb-study','route_qm18-201110-qbb','route_qm18-qbb-study') and record_kind='route';\"",
+      "result_summary": "16/16 selected alias and target records exist as record_kind=route. Route IDs and service variants match within each pair: Bx41/local, Bx55/limited_stop, BxM6/express, BxM7/express, Q101/local, QM10/express, QM12/express, and QM18/express."
+    },
+    "existing_alias_conflicts": {
+      "merges_json_command": "jq -r '.aliases.route as $r | [\"route_bx41-local-2012-11-webster\",\"route_bx55-limited-2012-11-webster\",\"route_bxm6-madison-ave-cb6-jun2025\",\"route_bxm7-madison-ave-cb6-jun2025\",\"route_q101-201110-qbb\",\"route_qm10-201110-qbb\",\"route_qm12-201110-qbb\",\"route_qm18-201110-qbb\"][] | select($r[.] != null) | . + \" -> \" + $r[.]' data/identity-overrides/merges.json",
+      "merges_json_result": "no output; none of the proposed aliases are already present in data/identity-overrides/merges.json",
+      "identity_aliases_command": "sqlite3 -header -column data/canonical.db \"select kind, alias, target from identity_aliases where kind='route' and alias in ('route_bx41-local-2012-11-webster','route_bx55-limited-2012-11-webster','route_bxm6-madison-ave-cb6-jun2025','route_bxm7-madison-ave-cb6-jun2025','route_q101-201110-qbb','route_qm10-201110-qbb','route_qm12-201110-qbb','route_qm18-201110-qbb');\"",
+      "identity_aliases_result": "no output; none of the proposed aliases are already present in canonical identity_aliases",
+      "target_alias_guard_command": "jq -r '.aliases.route as $r | [\"route_bx41-local-2012-02-brt-webster-cac1\",\"route_bx55-limited-webster-2012\",\"route_bxm6\",\"route_bxm7\",\"route_q101-qbb-study\",\"route_qm10-qbb-study\",\"route_qm12-qbb-study\",\"route_qm18-qbb-study\"][] | select($r[.] != null) | . + \" -> \" + $r[.]' data/identity-overrides/merges.json && sqlite3 -header -column data/canonical.db \"select kind, alias, target from identity_aliases where kind='route' and alias in ('route_bx41-local-2012-02-brt-webster-cac1','route_bx55-limited-webster-2012','route_bxm6','route_bxm7','route_q101-qbb-study','route_qm10-qbb-study','route_qm12-qbb-study','route_qm18-qbb-study');\"",
+      "target_alias_guard_result": "no output from both checks; selected targets are not themselves registered aliases"
+    },
+    "do_not_merge_conflicts": {
+      "db_command": "sqlite3 -header -column data/canonical.db \"with pairs(alias,target) as (values ('route_bx41-local-2012-11-webster','route_bx41-local-2012-02-brt-webster-cac1'),('route_bx55-limited-2012-11-webster','route_bx55-limited-webster-2012'),('route_bxm6-madison-ave-cb6-jun2025','route_bxm6'),('route_bxm7-madison-ave-cb6-jun2025','route_bxm7'),('route_q101-201110-qbb','route_q101-qbb-study'),('route_qm10-201110-qbb','route_qm10-qbb-study'),('route_qm12-201110-qbb','route_qm12-qbb-study'),('route_qm18-201110-qbb','route_qm18-qbb-study')) select d.* from do_not_merge d join pairs p on d.kind='route' and ((d.record_id_a=p.alias and d.record_id_b=p.target) or (d.record_id_a=p.target and d.record_id_b=p.alias));\"",
+      "db_result": "no output; no selected pair is present in canonical do_not_merge",
+      "json_command": "jq -r '.pairs.route[]? | select((.record_ids | index(\"route_bx41-local-2012-11-webster\") and index(\"route_bx41-local-2012-02-brt-webster-cac1\")) or (.record_ids | index(\"route_bx55-limited-2012-11-webster\") and index(\"route_bx55-limited-webster-2012\")) or (.record_ids | index(\"route_bxm6-madison-ave-cb6-jun2025\") and index(\"route_bxm6\")) or (.record_ids | index(\"route_bxm7-madison-ave-cb6-jun2025\") and index(\"route_bxm7\")) or (.record_ids | index(\"route_q101-201110-qbb\") and index(\"route_q101-qbb-study\")) or (.record_ids | index(\"route_qm10-201110-qbb\") and index(\"route_qm10-qbb-study\")) or (.record_ids | index(\"route_qm12-201110-qbb\") and index(\"route_qm12-qbb-study\")) or (.record_ids | index(\"route_qm18-201110-qbb\") and index(\"route_qm18-qbb-study\"))) | .record_ids | @tsv' data/identity-overrides/do-not-merge.json",
+      "json_result": "no output; no selected pair is present in data/identity-overrides/do-not-merge.json"
+    },
+    "prior_prep_conflicts_through_identity105": {
+      "command": "for f in data/review_notes/codex-identity-batch0*-prep.json data/review_notes/codex-identity-batch10[0-5]-prep.json; do jq -r --arg f \"$f\" '.proposed_aliases[]? | select(.kind==\"route\") | select(.alias_id as $a | [\"route_bx41-local-2012-11-webster\",\"route_bx55-limited-2012-11-webster\",\"route_bxm6-madison-ave-cb6-jun2025\",\"route_bxm7-madison-ave-cb6-jun2025\",\"route_q101-201110-qbb\",\"route_qm10-201110-qbb\",\"route_qm12-201110-qbb\",\"route_qm18-201110-qbb\"] | index($a)) | [$f,.alias_id,.target_id] | @tsv' \"$f\" 2>/dev/null; done",
+      "result": "no output; none of the proposed aliases appear in prior codex identity prep artifacts through batch105"
+    },
+    "source_evidence_spot_check": {
+      "command": "jq -r 'select(.record_id|IN(\"route_bx41-local-2012-11-webster\",\"route_bx41-local-2012-02-brt-webster-cac1\",\"route_bx55-limited-2012-11-webster\",\"route_bx55-limited-webster-2012\",\"route_bxm6-madison-ave-cb6-jun2025\",\"route_bxm6\",\"route_bxm7-madison-ave-cb6-jun2025\",\"route_bxm7\",\"route_q101-201110-qbb\",\"route_q101-qbb-study\",\"route_qm10-201110-qbb\",\"route_qm10-qbb-study\",\"route_qm12-201110-qbb\",\"route_qm12-qbb-study\",\"route_qm18-201110-qbb\",\"route_qm18-qbb-study\")) | [.record_id, (.payload.route_id // \"\"), (.payload.service_variant // \"\"), (.payload.route_type_normalized // \"\"), (.evidence_refs[0].evidence_id // \"\"), ((.evidence_refs[0].source_quote // .evidence_refs[0].role // .raw_text // \"\") | gsub(\"[\\n\\r\\t]\"; \" \") | .[0:180])] | @tsv' data/canonical/routes.jsonl",
+      "result_summary": "Selected records carry source evidence for the same route labels and compatible route types: Bx41 Local, Bx55 Limited, BxM6/BxM7 express, Q101 local, and QM10/QM12/QM18 express service."
+    },
+    "forbidden_command_compliance": {
+      "result": "No external/provider-backed commands or profiles/providers were used. No canonicalize, canonicalize-wave, canonicalize-review, campaign dedup, identity-review-run, write, ask, schema-propose, ontology-normalize-run, materialize, export-jsonl, or validate commands were run. Inspection used local deterministic commands only: pwd, git status, ls, sed/head, rg, jq, sqlite3, and date; the only write was this prep artifact."
+    }
+  }
+}

@@ -1,0 +1,738 @@
+{
+  "note_id": "codex-identity-batch077-prep",
+  "batch_id": "identity077",
+  "batch": "identity-batch077",
+  "created_at": "2026-06-23T00:57:52Z",
+  "lane": "codex-only identity cleanup",
+  "status": "prepared",
+  "prepared_count": 8,
+  "intended_alias_count": 8,
+  "baseline_context": {
+    "source": "user-supplied fresh baseline after identity076/relation044/next20 checkpoint, reproduced by deterministic local identity-key scan over data/canonical.db",
+    "duplicate_global_identity": 1476,
+    "unexpected_relation_endpoint_shape": 24
+  },
+  "scope": {
+    "record_kind": "entity",
+    "decision_kind": "duplicate_global_identity",
+    "selection_rule": "High-confidence same-person entity duplicates with exact canonical payload.entity_name matches, compatible title/organization/source context, current duplicate_global_identity validator rows, and no overlap with current identity overrides, identity_aliases, do-not-merge pairs, or Codex identity prep batches through 076. Ambiguous role-transition, initials-only, cross-agency, and same-name weak-context candidates were excluded."
+  },
+  "intended_mutation": {
+    "aliases": {
+      "entity": {
+        "entity_david-mack-meeting-doc-98206": "entity_193976-david-mack",
+        "entity_meeting-doc-135386-kim-trevisan": "entity_kim-trevisan-meeting-doc-140421",
+        "entity_meeting-doc-107531-michael-kemper": "entity_meeting-doc-105931-michael-kemper",
+        "entity_samuel-chu-oct2025": "entity_193976-samuel-chu",
+        "entity_xavier-carrera-meeting-doc-151756": "entity_meeting-doc-124206-xavier-carrera",
+        "entity_nicholas-roberts-meeting-doc-151756": "entity_nicholas-roberts-meeting-doc-160301",
+        "entity_selina-storz-meeting-doc-131696": "entity_selina-storz",
+        "entity_mta-cco-kearse": "entity_meeting-doc-190056-lamond-kearse"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "alias_id": "entity_david-mack-meeting-doc-98206",
+      "target_id": "entity_193976-david-mack",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify David Mack as a Bridges and Tunnels Committee chair. The alias is a one-source shard with David Mack / Chair evidence, while the target aggregates the same David Mack / D. Mack chair identity across many committee sources.",
+      "evidence": {
+        "shared_identity_keys": ["entity_david-mack"],
+        "canonical_alias": {
+          "record_id": "entity_david-mack-meeting-doc-98206",
+          "display_name": "David Mack",
+          "entity_name": "David Mack",
+          "entity_type": "person",
+          "title": "Chair",
+          "organization": "Bridges and Tunnels Committee",
+          "source_ids": ["meeting_doc_98206"],
+          "record_aliases": ["entity_david-mack"],
+          "evidence_refs": [
+            "meeting_doc_98206#p001_c0006",
+            "meeting_doc_98206#p004_c0005"
+          ],
+          "source_paths": ["raw/sources/meeting_doc_98206/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_193976-david-mack",
+          "display_name": "David Mack, Chair",
+          "entity_name": "David Mack",
+          "entity_type": "person",
+          "title": "Chair",
+          "role": "Bridges and Tunnels Committee Chair",
+          "organization": "Bridges and Tunnels Committee",
+          "source_id_count": 16,
+          "source_ids": [
+            "meeting_doc_104711",
+            "meeting_doc_107566",
+            "meeting_doc_111711",
+            "meeting_doc_113966",
+            "meeting_doc_115226",
+            "meeting_doc_121016",
+            "meeting_doc_124281",
+            "meeting_doc_127551",
+            "meeting_doc_131486",
+            "meeting_doc_138176",
+            "meeting_doc_140276",
+            "meeting_doc_163171",
+            "meeting_doc_192266",
+            "meeting_doc_193976",
+            "meeting_doc_201651",
+            "meeting_doc_208036"
+          ],
+          "record_aliases_sample": [
+            "entity_d-mack",
+            "entity_david-mack",
+            "entity_david-mack-chair",
+            "entity_david-mack-chair-bridges-and-tunnels-committee"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_104711#p001_c0006",
+            "meeting_doc_113966#p004_c0005",
+            "meeting_doc_193976#p016_c0005"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_104711/blocks.jsonl",
+            "raw/sources/meeting_doc_113966/blocks.jsonl",
+            "raw/sources/meeting_doc_193976/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_193976-david-mack and entity_david-mack-meeting-doc-98206 share identity key entity_david-mack.",
+          "records: entity_david-mack-meeting-doc-98206 | entity | David Mack | meeting_doc_98206 | source_stated | unreviewed",
+          "records: entity_193976-david-mack | entity | David Mack, Chair | meeting_doc_104711 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_076": true,
+        "target_not_in_prior_batches_001_076": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_identity_aliases_table": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true,
+        "current_duplicate_global_identity_validator_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-135386-kim-trevisan",
+      "target_id": "entity_kim-trevisan-meeting-doc-140421",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify Kim Trevisan as the MTA Metro-North / MNR project or transaction manager. The alias is a two-source shard, while the target aggregates the same Kim Trevisan identity across eight sources with matching MNR and project-manager context.",
+      "evidence": {
+        "shared_identity_keys": ["entity_kim-trevisan"],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-135386-kim-trevisan",
+          "display_name": "Kim Trevisan",
+          "entity_name": "Kim Trevisan",
+          "entity_type": "person",
+          "title": "Transaction Manager",
+          "role": "Project Manager",
+          "organization": "MTA Metro-North Railroad",
+          "source_ids": ["meeting_doc_135386", "meeting_doc_174086"],
+          "record_aliases": [
+            "entity_kim-trevisan",
+            "entity_kim-trevisan-meeting-doc-174086",
+            "entity_kim-trevisan-mnr-transaction-manager"
+          ],
+          "evidence_refs": [
+            "meeting_doc_135386#p009_c0004",
+            "meeting_doc_174086#p007_c0003"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_135386/blocks.jsonl",
+            "raw/sources/meeting_doc_174086/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_kim-trevisan-meeting-doc-140421",
+          "display_name": "Kim Trevisan",
+          "entity_name": "Kim Trevisan",
+          "entity_type": "person",
+          "title": "Transaction Manager",
+          "role": "Project Manager for Vizz Group lease",
+          "organization": "MTA Metro-North Railroad",
+          "source_id_count": 8,
+          "source_ids": [
+            "meeting_doc_140421",
+            "meeting_doc_167271",
+            "meeting_doc_173871",
+            "meeting_doc_174081",
+            "meeting_doc_190016",
+            "meeting_doc_194061",
+            "meeting_doc_194156",
+            "meeting_doc_197046"
+          ],
+          "record_aliases_sample": [
+            "entity_kim-trevisan",
+            "entity_kim-trevisan-174081",
+            "entity_meeting-doc-197046-kim-trevisan",
+            "entity_meeting173871-kim-trevisan"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_140421#p003_c0003",
+            "meeting_doc_173871#p001_c0004",
+            "meeting_doc_167271#p002_c0003"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_140421/blocks.jsonl",
+            "raw/sources/meeting_doc_173871/blocks.jsonl",
+            "raw/sources/meeting_doc_167271/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_kim-trevisan-meeting-doc-140421 and entity_meeting-doc-135386-kim-trevisan share identity key entity_kim-trevisan.",
+          "records: entity_meeting-doc-135386-kim-trevisan | entity | Kim Trevisan | meeting_doc_135386 | source_stated | unreviewed",
+          "records: entity_kim-trevisan-meeting-doc-140421 | entity | Kim Trevisan | meeting_doc_140421 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_076": true,
+        "target_not_in_prior_batches_001_076": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_identity_aliases_table": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true,
+        "current_duplicate_global_identity_validator_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-107531-michael-kemper",
+      "target_id": "entity_meeting-doc-105931-michael-kemper",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify Michael Kemper as Acting Chief, Transit, NYPD. The alias is a one-source shard, while the target aggregates the same NYPD Transit chief identity across multiple meeting documents.",
+      "evidence": {
+        "shared_identity_keys": [
+          "entity_michael-kemper",
+          "entity_michael-kemper-acting-chief-transit-nypd"
+        ],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-107531-michael-kemper",
+          "display_name": "Michael Kemper, Acting Chief, Transit, NYPD",
+          "entity_name": "Michael Kemper",
+          "entity_type": "person",
+          "title": "Acting Chief, Transit, NYPD",
+          "organization": "NYPD",
+          "source_ids": ["meeting_doc_107531"],
+          "record_aliases": [
+            "entity_michael-kemper",
+            "entity_michael-kemper-acting-chief-transit-nypd"
+          ],
+          "evidence_refs": ["meeting_doc_107531#p001_c0008"],
+          "source_paths": ["raw/sources/meeting_doc_107531/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-105931-michael-kemper",
+          "display_name": "Michael Kemper, Acting Chief, Transit, NYPD",
+          "entity_name": "Michael Kemper",
+          "entity_type": "person",
+          "title": "Acting Chief, Transit, NYPD",
+          "organization": "New York City Police Department",
+          "source_id_count": 9,
+          "source_ids": [
+            "meeting_doc_104781",
+            "meeting_doc_105931",
+            "meeting_doc_121696",
+            "meeting_doc_124306",
+            "meeting_doc_127476",
+            "meeting_doc_131546",
+            "meeting_doc_133236",
+            "meeting_doc_151651",
+            "meeting_doc_167826"
+          ],
+          "record_aliases_sample": [
+            "entity_chief-michael-kemper-nypd",
+            "entity_meeting-doc-104781-michael-kemper",
+            "entity_michael-kemper",
+            "entity_michael-kemper-acting-chief-transit-nypd"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_105931#p001_c0010",
+            "meeting_doc_104781#p001_c0008",
+            "meeting_doc_124306#p001_c0008"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_105931/blocks.jsonl",
+            "raw/sources/meeting_doc_104781/blocks.jsonl",
+            "raw/sources/meeting_doc_124306/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-105931-michael-kemper and entity_meeting-doc-107531-michael-kemper share identity key entity_michael-kemper.",
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-105931-michael-kemper and entity_meeting-doc-107531-michael-kemper share identity key entity_michael-kemper-acting-chief-transit-nypd.",
+          "records: entity_meeting-doc-107531-michael-kemper | entity | Michael Kemper, Acting Chief, Transit, NYPD | meeting_doc_107531 | source_stated | unreviewed",
+          "records: entity_meeting-doc-105931-michael-kemper | entity | Michael Kemper, Acting Chief, Transit, NYPD | meeting_doc_105931 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_076": true,
+        "target_not_in_prior_batches_001_076": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_identity_aliases_table": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true,
+        "current_duplicate_global_identity_validator_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_samuel-chu-oct2025",
+      "target_id": "entity_193976-samuel-chu",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify Samuel Chu as a committee co-chair. The alias is a one-source October 2025 shard, while the target aggregates the same Samuel Chu / Co-Chair identity across MTA committee sources.",
+      "evidence": {
+        "shared_identity_keys": [
+          "entity_samuel-chu",
+          "entity_samuel-chu-co-chair"
+        ],
+        "canonical_alias": {
+          "record_id": "entity_samuel-chu-oct2025",
+          "display_name": "Samuel Chu, Co-Chair",
+          "entity_name": "Samuel Chu",
+          "entity_type": "person",
+          "title": "Co-Chair",
+          "source_ids": ["meeting_doc_192201"],
+          "record_aliases": [
+            "entity_samuel-chu",
+            "entity_samuel-chu-co-chair"
+          ],
+          "evidence_refs": ["meeting_doc_192201#p002_c0005"],
+          "source_paths": ["raw/sources/meeting_doc_192201/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_193976-samuel-chu",
+          "display_name": "Hon. Samuel Chu, Co-Chair",
+          "entity_name": "Samuel Chu",
+          "entity_type": "person",
+          "title": "Co-Chair, Joint LIRR and Metro-North Committees",
+          "role": "Bridges and Tunnels Committee Co-Chair",
+          "source_id_count": 7,
+          "source_ids": [
+            "meeting_doc_140311",
+            "meeting_doc_151596",
+            "meeting_doc_192266",
+            "meeting_doc_193976",
+            "meeting_doc_201651",
+            "meeting_doc_205651",
+            "meeting_doc_208036"
+          ],
+          "record_aliases_sample": [
+            "entity_meeting-doc-140311-samuel-chu",
+            "entity_samuel-chu",
+            "entity_samuel-chu-acting-chair",
+            "entity_samuel-chu-co-chair"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_140311#p001_c0004",
+            "meeting_doc_201651#p016_c0005",
+            "meeting_doc_192266#p016_c0005"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_140311/blocks.jsonl",
+            "raw/sources/meeting_doc_201651/blocks.jsonl",
+            "raw/sources/meeting_doc_192266/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_193976-samuel-chu and entity_samuel-chu-oct2025 share identity key entity_samuel-chu.",
+          "validate: duplicate_global_identity | Global entity records entity_193976-samuel-chu and entity_samuel-chu-oct2025 share identity key entity_samuel-chu-co-chair.",
+          "records: entity_samuel-chu-oct2025 | entity | Samuel Chu, Co-Chair | meeting_doc_192201 | source_stated | unreviewed",
+          "records: entity_193976-samuel-chu | entity | Hon. Samuel Chu, Co-Chair | meeting_doc_140311 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_076": true,
+        "target_not_in_prior_batches_001_076": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_identity_aliases_table": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true,
+        "current_duplicate_global_identity_validator_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_xavier-carrera-meeting-doc-151756",
+      "target_id": "entity_meeting-doc-124206-xavier-carrera",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify Xavier Carrera as Project Manager. The alias is a one-source shard and carries the target id as a record alias; the target aggregates the same Xavier Carrera / MTA Real Estate project-manager identity across six sources.",
+      "evidence": {
+        "shared_identity_keys": [
+          "entity_meeting-doc-124206-xavier-carrera",
+          "entity_xavier-carrera"
+        ],
+        "canonical_alias": {
+          "record_id": "entity_xavier-carrera-meeting-doc-151756",
+          "display_name": "entity_xavier_carrera_meeting_doc_151756",
+          "entity_name": "Xavier Carrera",
+          "entity_type": "person",
+          "title": "Project Manager",
+          "source_ids": ["meeting_doc_151756"],
+          "record_aliases": [
+            "entity_meeting-doc-124206-xavier-carrera",
+            "entity_xavier-carrera"
+          ],
+          "evidence_refs": ["meeting_doc_151756#p009_c0004"],
+          "source_paths": ["raw/sources/meeting_doc_151756/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-124206-xavier-carrera",
+          "display_name": "Xavier Carrera, Project Manager",
+          "entity_name": "Xavier Carrera",
+          "entity_type": "person",
+          "title": "Project Manager",
+          "role": "Project Manager",
+          "organization": "MTA Real Estate",
+          "source_id_count": 6,
+          "source_ids": [
+            "meeting_doc_124206",
+            "meeting_doc_135391",
+            "meeting_doc_138346",
+            "meeting_doc_151751",
+            "meeting_doc_157711",
+            "meeting_doc_197046"
+          ],
+          "record_aliases_sample": [
+            "entity_meeting-doc-135391-xavier-carrera",
+            "entity_meeting-doc-197046-xavier-carrera",
+            "entity_xavier-carrera",
+            "entity_xavier-carrera-project-manager"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_124206#p001_c0003",
+            "meeting_doc_138346#p008_c0004",
+            "meeting_doc_151751#p009_c0004"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_124206/blocks.jsonl",
+            "raw/sources/meeting_doc_138346/blocks.jsonl",
+            "raw/sources/meeting_doc_151751/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-124206-xavier-carrera and entity_xavier-carrera-meeting-doc-151756 share identity key entity_meeting-doc-124206-xavier-carrera.",
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-124206-xavier-carrera and entity_xavier-carrera-meeting-doc-151756 share identity key entity_xavier-carrera.",
+          "records: entity_xavier-carrera-meeting-doc-151756 | entity | entity_xavier_carrera_meeting_doc_151756 | meeting_doc_151756 | source_stated | unreviewed",
+          "records: entity_meeting-doc-124206-xavier-carrera | entity | Xavier Carrera, Project Manager | meeting_doc_124206 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_076": true,
+        "target_not_in_prior_batches_001_076": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_identity_aliases_table": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true,
+        "current_duplicate_global_identity_validator_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_nicholas-roberts-meeting-doc-151756",
+      "target_id": "entity_nicholas-roberts-meeting-doc-160301",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify Nicholas Roberts as Project Manager. The alias is a one-source shard and carries the target id as a record alias; the target aggregates the same project-manager identity across five sources.",
+      "evidence": {
+        "shared_identity_keys": [
+          "entity_nicholas-roberts",
+          "entity_nicholas-roberts-meeting-doc-160301"
+        ],
+        "canonical_alias": {
+          "record_id": "entity_nicholas-roberts-meeting-doc-151756",
+          "display_name": "entity_nicholas_roberts_meeting_doc_151756",
+          "entity_name": "Nicholas Roberts",
+          "entity_type": "person",
+          "title": "Project Manager",
+          "source_ids": ["meeting_doc_151756"],
+          "record_aliases": [
+            "entity_nicholas-roberts",
+            "entity_nicholas-roberts-meeting-doc-160301"
+          ],
+          "evidence_refs": ["meeting_doc_151756#p014_c0004"],
+          "source_paths": ["raw/sources/meeting_doc_151756/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_nicholas-roberts-meeting-doc-160301",
+          "display_name": "Nicholas Roberts",
+          "entity_name": "Nicholas Roberts",
+          "entity_type": "person",
+          "title": "Project Manager",
+          "organization": "Metropolitan Transportation Authority",
+          "source_id_count": 5,
+          "source_ids": [
+            "meeting_doc_151836",
+            "meeting_doc_160181",
+            "meeting_doc_160301",
+            "meeting_doc_194041",
+            "meeting_doc_194156"
+          ],
+          "record_aliases_sample": [
+            "entity_meeting-doc-151836-nicholas-roberts",
+            "entity_nicholas-roberts",
+            "entity_nicholas-roberts-194156",
+            "entity_nicholas-roberts-meeting-doc-194041"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_160181#p001_c0003",
+            "meeting_doc_160301#p002_c0003",
+            "meeting_doc_151836#p001_c0004"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_160181/blocks.jsonl",
+            "raw/sources/meeting_doc_160301/blocks.jsonl",
+            "raw/sources/meeting_doc_151836/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_nicholas-roberts-meeting-doc-151756 and entity_nicholas-roberts-meeting-doc-160301 share identity key entity_nicholas-roberts.",
+          "validate: duplicate_global_identity | Global entity records entity_nicholas-roberts-meeting-doc-151756 and entity_nicholas-roberts-meeting-doc-160301 share identity key entity_nicholas-roberts-meeting-doc-160301.",
+          "records: entity_nicholas-roberts-meeting-doc-151756 | entity | entity_nicholas_roberts_meeting_doc_151756 | meeting_doc_151756 | source_stated | unreviewed",
+          "records: entity_nicholas-roberts-meeting-doc-160301 | entity | Nicholas Roberts | meeting_doc_160181 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_076": true,
+        "target_not_in_prior_batches_001_076": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_identity_aliases_table": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true,
+        "current_duplicate_global_identity_validator_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_selina-storz-meeting-doc-131696",
+      "target_id": "entity_selina-storz",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify Selina Storz as a project manager. The alias is a one-source LIRR-license shard, while the target aggregates the same Selina Storz / MTA Real Estate project-manager identity across five sources.",
+      "evidence": {
+        "shared_identity_keys": ["entity_selina-storz"],
+        "canonical_alias": {
+          "record_id": "entity_selina-storz-meeting-doc-131696",
+          "display_name": "Selina Storz - Project Manager",
+          "entity_name": "Selina Storz",
+          "entity_type": "person",
+          "title": "Project Manager for LIRR License",
+          "source_ids": ["meeting_doc_131696"],
+          "record_aliases": [
+            "entity_selina-storz",
+            "entity_selina-storz-project-manager"
+          ],
+          "evidence_refs": ["meeting_doc_131696#p009_c0003"],
+          "source_paths": ["raw/sources/meeting_doc_131696/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_selina-storz",
+          "display_name": "Selina Storz",
+          "entity_name": "Selina Storz",
+          "entity_type": "person",
+          "title": "Project Manager",
+          "role": "Project Manager",
+          "organization": "MTA Real Estate",
+          "source_id_count": 5,
+          "source_ids": [
+            "meeting_doc_133386",
+            "meeting_doc_143381",
+            "meeting_doc_151751",
+            "meeting_doc_155106",
+            "meeting_doc_157711"
+          ],
+          "record_aliases_sample": [
+            "entity_meeting-doc-155106-selina-storz",
+            "entity_meeting143381-selina-storz",
+            "entity_selina-storz-151751"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_133386#p005_c0004",
+            "meeting_doc_143381#p006_c0004",
+            "meeting_doc_155106#p003_c0004"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_133386/blocks.jsonl",
+            "raw/sources/meeting_doc_143381/blocks.jsonl",
+            "raw/sources/meeting_doc_155106/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_selina-storz and entity_selina-storz-meeting-doc-131696 share identity key entity_selina-storz.",
+          "records: entity_selina-storz-meeting-doc-131696 | entity | Selina Storz - Project Manager | meeting_doc_131696 | source_stated | unreviewed",
+          "records: entity_selina-storz | entity | Selina Storz | meeting_doc_133386 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_076": true,
+        "target_not_in_prior_batches_001_076": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_identity_aliases_table": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true,
+        "current_duplicate_global_identity_validator_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_mta-cco-kearse",
+      "target_id": "entity_meeting-doc-190056-lamond-kearse",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify Lamond Kearse as MTA Chief Compliance Officer. The alias is a three-source shard, while the target aggregates the same Lamond Kearse / Chief Compliance Officer identity across five sources, including Lamond W. Kearse variants.",
+      "evidence": {
+        "shared_identity_keys": [
+          "entity_lamond-kearse",
+          "entity_lamond-kearse-mta-chief-compliance-officer"
+        ],
+        "canonical_alias": {
+          "record_id": "entity_mta-cco-kearse",
+          "display_name": "Lamond Kearse - MTA Chief Compliance Officer",
+          "entity_name": "Lamond Kearse",
+          "entity_type": "person",
+          "title": "Chief Compliance Officer",
+          "organization": "Metropolitan Transportation Authority",
+          "source_ids": [
+            "meeting_doc_105876",
+            "meeting_doc_115221",
+            "meeting_doc_124286"
+          ],
+          "record_aliases": [
+            "entity_lamond-kearse",
+            "entity_lamond-kearse-mta-chief-compliance-officer",
+            "entity_meeting-doc-115221-lamond-kearse",
+            "entity_meeting-doc-124286-lamond-kearse"
+          ],
+          "evidence_refs": [
+            "meeting_doc_105876#p006_c0006",
+            "meeting_doc_115221#p005_c0009",
+            "meeting_doc_124286#p006_c0011"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_105876/blocks.jsonl",
+            "raw/sources/meeting_doc_115221/blocks.jsonl",
+            "raw/sources/meeting_doc_124286/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-190056-lamond-kearse",
+          "display_name": "Lamond Kearse, Chief Compliance Officer",
+          "entity_name": "Lamond Kearse",
+          "entity_type": "person",
+          "title": "Chief Compliance Officer",
+          "organization": "Metropolitan Transportation Authority",
+          "source_id_count": 5,
+          "source_ids": [
+            "meeting_doc_163066",
+            "meeting_doc_173836",
+            "meeting_doc_190056",
+            "meeting_doc_72531",
+            "meeting_doc_91561"
+          ],
+          "record_aliases_sample": [
+            "entity_chief-compliance-officer-lamond-kearse",
+            "entity_lamond-kearse",
+            "entity_lamond-kearse-cco",
+            "entity_lamond-w-kearse"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_163066#p008_c0004",
+            "meeting_doc_190056#p007_c0004",
+            "meeting_doc_91561#p005_c0008"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_163066/blocks.jsonl",
+            "raw/sources/meeting_doc_190056/blocks.jsonl",
+            "raw/sources/meeting_doc_91561/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-190056-lamond-kearse and entity_mta-cco-kearse share identity key entity_lamond-kearse-mta-chief-compliance-officer.",
+          "records: entity_mta-cco-kearse | entity | Lamond Kearse - MTA Chief Compliance Officer | meeting_doc_105876 | source_stated | unreviewed",
+          "records: entity_meeting-doc-190056-lamond-kearse | entity | Lamond Kearse, Chief Compliance Officer | meeting_doc_163066 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_076": true,
+        "target_not_in_prior_batches_001_076": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_identity_aliases_table": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true,
+        "current_duplicate_global_identity_validator_row_exists": true
+      },
+      "all_pass": true
+    }
+  ],
+  "review_only_notes": [
+    "Excluded candidates with only initials or surname-like labels, even when a deterministic identity key collided.",
+    "Excluded exact-name pairs where the apparent duplicate depended on broad agency affiliation or unclear role transitions rather than direct same-person evidence.",
+    "Kept this batch to person entities with direct source-backed name/title evidence and current materialized alias/target records."
+  ],
+  "aggregate_guards": {
+    "all_aliases_not_already_overridden": true,
+    "all_aliases_not_in_identity_aliases_table": true,
+    "all_aliases_and_targets_not_in_prior_batches_001_076": true,
+    "all_targets_not_alias_mapped": true,
+    "all_pairs_have_current_duplicate_global_identity_validator_rows": true,
+    "all_sources_exist": true,
+    "all_evidence_source_paths_exist": true
+  },
+  "verification": {
+    "deterministic_local_only": true,
+    "commands_used": [
+      "rg/read-only file inspection",
+      "jq read-only inspection of prior prep artifacts and overrides",
+      "sqlite read-only schema/table inspection of data/canonical.db",
+      "bun --eval read-only identity-key scan over data/canonical.db using identityKeysForRecord and identityDoNotMergeOverrideIssueSuppressed; reproduced duplicate_global_identity=1476",
+      "bun --eval read-only guard/evidence assembly for selected identity077 aliases"
+    ],
+    "prohibited_commands_avoided": [
+      "provider/external-LLM commands",
+      "canonicalize/campaign dedup/identity-review-run/write/ask/schema/ontology-normalize commands",
+      "materialize",
+      "export-jsonl",
+      "full validate",
+      "DB publish"
+    ]
+  },
+  "all_pass": true
+}

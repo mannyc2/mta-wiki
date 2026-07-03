@@ -1,0 +1,165 @@
+{
+  "run_id": "2026-06-10T22-56-13-237Z_1976810-594d84d9_ingest_2011-brt-34th-cb6-slides",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T01:22:48.012Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "relate-off-board-fare-collection-to-34th-sbs",
+        "local_observation_id": "treatment_off_board_fare_collection_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_off-board-fare-collection-2011_2",
+            "description": "Off-board fare collection listed as 2011 planned improvement in 34th Street SBS design presented to CB6",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p005_c0002",
+                "source_quote": "• 2011 planned improvements – Off-board fare collection – Bus lane camera enforcement • 2012 proposed design – Offset bus lanes – Bus bulbs and sidewalk extensions – Expanded loading zones"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p005_c0002 explicitly lists off-board fare collection under '34th Street SBS design' as a 2011 planned improvement.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "• 2011 planned improvements – Off-board fare collection – Bus lane camera enforcement • 2012 proposed design – Offset bus lanes – Bus bulbs and sidewalk extensions – Expanded loading zones"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-bus-lane-camera-enforcement-to-34th-sbs",
+        "local_observation_id": "treatment_bus_lane_camera_enforcement_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_bus-lane-camera-enforcement-2011_2",
+            "description": "Bus lane camera enforcement listed as 2011 planned improvement in 34th Street SBS design",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p005_c0002",
+                "source_quote": "• 2011 planned improvements – Off-board fare collection – Bus lane camera enforcement • 2012 proposed design – Offset bus lanes – Bus bulbs and sidewalk extensions – Expanded loading zones"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p005_c0002 explicitly lists bus lane camera enforcement under '34th Street SBS design' as a 2011 planned improvement.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "• 2011 planned improvements – Off-board fare collection – Bus lane camera enforcement • 2012 proposed design – Offset bus lanes – Bus bulbs and sidewalk extensions – Expanded loading zones"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-offset-bus-lanes-to-34th-sbs",
+        "local_observation_id": "treatment_offset_bus_lanes_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_offset-bus-lanes-2012",
+            "description": "Offset bus lanes listed as 2012 proposed design element in 34th Street SBS design",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p005_c0002",
+                "source_quote": "• 2011 planned improvements – Off-board fare collection – Bus lane camera enforcement • 2012 proposed design – Offset bus lanes – Bus bulbs and sidewalk extensions – Expanded loading zones"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p005_c0002 explicitly lists offset bus lanes under '2012 proposed design' for the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "• 2011 planned improvements – Off-board fare collection – Bus lane camera enforcement • 2012 proposed design – Offset bus lanes – Bus bulbs and sidewalk extensions – Expanded loading zones"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-bus-bulbs-to-34th-sbs",
+        "local_observation_id": "treatment_bus_bulbs_sidewalk_extensions_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_bus-bulbs-sidewalk-extensions-2012_2",
+            "description": "Bus bulbs and sidewalk extensions listed as 2012 proposed design element in 34th Street SBS design",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p005_c0002",
+                "source_quote": "• 2011 planned improvements – Off-board fare collection – Bus lane camera enforcement • 2012 proposed design – Offset bus lanes – Bus bulbs and sidewalk extensions – Expanded loading zones"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p005_c0002 explicitly lists bus bulbs and sidewalk extensions under '2012 proposed design' for the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "• 2011 planned improvements – Off-board fare collection – Bus lane camera enforcement • 2012 proposed design – Offset bus lanes – Bus bulbs and sidewalk extensions – Expanded loading zones"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-expanded-loading-zones-to-34th-sbs",
+        "local_observation_id": "treatment_expanded_loading_zones_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_expanded-loading-zones-2012",
+            "description": "Expanded loading zones listed as 2012 proposed design element, with quantified benefit on p010",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p005_c0002",
+                "source_quote": "• 2011 planned improvements – Off-board fare collection – Bus lane camera enforcement • 2012 proposed design – Offset bus lanes – Bus bulbs and sidewalk extensions – Expanded loading zones"
+              },
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p010_c0002",
+                "source_quote": "• Loading : increases daytime loading from 32 to 258 spaces with a loading zone on every block"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p005_c0002 lists expanded loading zones under '2012 proposed design' for 34th St SBS. Block p010_c0002 quantifies the loading expansion as a project benefit.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "• 2011 planned improvements – Off-board fare collection – Bus lane camera enforcement • 2012 proposed design – Offset bus lanes – Bus bulbs and sidewalk extensions – Expanded loading zones"
+          },
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p010_c0002",
+            "source_quote": "• Loading : increases daytime loading from 32 to 258 spaces with a loading zone on every block"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-20-15-545Z_2111393-2e1474b1_canonicalize_2026-06-10t22-56-13-237z-1976810-594d84d9-ingest-2011-brt-34th-cb6-slides-treatment-relations"
+}

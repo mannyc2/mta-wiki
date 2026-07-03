@@ -1,0 +1,51 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:37:15.650Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_15129684bb.md",
+  "cluster_id": "entity_cluster_15129684bb",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_15129684bb",
+    "kind": "entity",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "entity_meeting-doc-111791-siemens",
+          "entity_meeting-doc-113916-siemens"
+        ],
+        "reason": "Different legal entity names (Siemens Industry Inc. vs Siemens Mobility, Inc.) indicate distinct subsidiaries; per canon 'parent vs subsidiary never merge' (test 1: strong identity field entity_name differs)."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "entity_meeting-doc-111791-siemens",
+        "aliases": [
+          "Siemens"
+        ],
+        "reason": "'Siemens' is an acronym/abbreviation used in source labels, but not a legal name."
+      },
+      {
+        "record_id": "entity_meeting-doc-113916-siemens",
+        "aliases": [
+          "Siemens"
+        ],
+        "reason": "'Siemens' is an acronym/abbreviation used in source labels, but not a legal name."
+      }
+    ],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [
+      "When two entity records have explicit, distinct legal names (e.g., 'Siemens Industry Inc.' vs 'Siemens Mobility, Inc.') they are not the same canonical entity even if they share a common acronym or parent name; treat as separate subsidiaries."
+    ],
+    "confidence": "high",
+    "rationale": "The two records have different entity names and descriptions, and the relation context involves separate projects. The shared acronym 'Siemens' is insufficient to merge distinct legal entities. Applying test 1 (contradiction) of the identity merge canon: entity_name differs, indicating they are different subsidiaries of the same parent, which per the canon are never merged."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-37-01-065Z_1282984-561d02c8_identity-review-run_entity-cluster-15129684bb",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-37-01-066Z_2026-06-23T14-37-01-065Z_1282984-561d02c8_identity-review-run_entity-cluster-15129684bb.jsonl"
+}

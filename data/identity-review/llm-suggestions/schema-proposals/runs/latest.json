@@ -1,0 +1,145 @@
+{
+  "run_id": "2026-06-08T23-52-42-494Z_schema-proposal-run",
+  "generated_at": "2026-06-08T23:52:42.494Z",
+  "dry_run": false,
+  "profile_name": "deepseek-pro",
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "concurrency": 3,
+  "audit_manifest": "data/identity-review/schema-audit/latest.json",
+  "kind_count": 12,
+  "completed": 12,
+  "skipped": 0,
+  "failed": 0,
+  "invalid": 0,
+  "paths": {
+    "proposals_dir": "data/identity-review/llm-suggestions/schema-proposals",
+    "runs_dir": "data/identity-review/llm-suggestions/schema-proposals/runs",
+    "manifest": "data/identity-review/llm-suggestions/schema-proposals/runs/2026-06-08T23-52-42-494Z_schema-proposal-run.json",
+    "latest": "data/identity-review/llm-suggestions/schema-proposals/runs/latest.json"
+  },
+  "results": [
+    {
+      "observation_kind": "metric_claim",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/metric_claim.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-52-42-495Z_3609302-1073a6b1_schema-proposal-run_metric-claim",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-52-42-504Z_2026-06-08T23-52-42-495Z_3609302-1073a6b1_schema-proposal-run_metric-claim.jsonl"
+    },
+    {
+      "observation_kind": "claim",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/claim.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-52-42-504Z_3609302-eae08bbb_schema-proposal-run_claim",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-52-42-504Z_2026-06-08T23-52-42-504Z_3609302-eae08bbb_schema-proposal-run_claim.jsonl"
+    },
+    {
+      "observation_kind": "relation",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/relation.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-52-42-504Z_3609302-bd8e47fe_schema-proposal-run_relation",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-52-42-504Z_2026-06-08T23-52-42-504Z_3609302-bd8e47fe_schema-proposal-run_relation.jsonl"
+    },
+    {
+      "observation_kind": "route",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/route.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [
+        "borough: mixed-type field proposed as enum; split boolean/object/source-role usage before enforcement"
+      ],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-53-24-013Z_3609302-f1acd938_schema-proposal-run_route",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-53-24-013Z_2026-06-08T23-53-24-013Z_3609302-f1acd938_schema-proposal-run_route.jsonl"
+    },
+    {
+      "observation_kind": "event",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/event.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-53-51-777Z_3609302-861dcd28_schema-proposal-run_event",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-53-51-777Z_2026-06-08T23-53-51-777Z_3609302-861dcd28_schema-proposal-run_event.jsonl"
+    },
+    {
+      "observation_kind": "entity",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/entity.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-54-20-510Z_3609302-70dbffe7_schema-proposal-run_entity",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-54-20-511Z_2026-06-08T23-54-20-510Z_3609302-70dbffe7_schema-proposal-run_entity.jsonl"
+    },
+    {
+      "observation_kind": "table",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/table.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-54-34-895Z_3609302-b912c336_schema-proposal-run_table",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-54-34-895Z_2026-06-08T23-54-34-895Z_3609302-b912c336_schema-proposal-run_table.jsonl"
+    },
+    {
+      "observation_kind": "treatment_component",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/treatment_component.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-54-48-543Z_3609302-e5532ff7_schema-proposal-run_treatment-component",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-54-48-552Z_2026-06-08T23-54-48-543Z_3609302-e5532ff7_schema-proposal-run_treatment-component.jsonl"
+    },
+    {
+      "observation_kind": "project",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/project.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-55-26-133Z_3609302-a428e1da_schema-proposal-run_project",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-55-26-133Z_2026-06-08T23-55-26-133Z_3609302-a428e1da_schema-proposal-run_project.jsonl"
+    },
+    {
+      "observation_kind": "corridor",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/corridor.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-55-37-605Z_3609302-0102f466_schema-proposal-run_corridor",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-55-37-614Z_2026-06-08T23-55-37-605Z_3609302-0102f466_schema-proposal-run_corridor.jsonl"
+    },
+    {
+      "observation_kind": "source",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/source.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-55-44-857Z_3609302-9fab1067_schema-proposal-run_source",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-55-44-857Z_2026-06-08T23-55-44-857Z_3609302-9fab1067_schema-proposal-run_source.jsonl"
+    },
+    {
+      "observation_kind": "source_gap",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/source_gap.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-56-50-265Z_3609302-8cbe231b_schema-proposal-run_source-gap",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-56-50-265Z_2026-06-08T23-56-50-265Z_3609302-8cbe231b_schema-proposal-run_source-gap.jsonl"
+    }
+  ]
+}

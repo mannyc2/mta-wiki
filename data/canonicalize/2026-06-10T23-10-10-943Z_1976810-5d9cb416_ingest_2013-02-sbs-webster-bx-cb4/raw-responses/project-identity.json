@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T23-10-10-943Z_1976810-5d9cb416_ingest_2013-02-sbs-webster-bx-cb4",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T03:24:45.250Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "webster-ave-sbs-2013-cb4-identity",
+        "local_observation_id": "project_webster_ave_sbs_2013_02_cb4",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'project_12-webster-ave' already correctly identifies the canonical registry record for the Webster Avenue Select Bus Service project. The registry record lists 'project_webster-ave-sbs-2013-02-cb4' as an alias and '2013_02_sbs_webster_bx_cb4' as a source_id, confirming this observation resolves to the same real-world project. Evidence describes converting Bx41 LTD to Bx41 SBS on Webster Avenue, which matches the SBS project captured in the registry. Since the closest match is the observation's own base_record_id, no link to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p007_c0002",
+            "source_quote": "Bx41 LTD → Bx41 SBS ■ 4 miles of offset bus lanes with bus bulb stations ■ For the entire route: – Off-board fare collection – Low-floor buses – Station and bus branding – Transit signal priority – Pedestrian safety improvements"
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-23-58-658Z_2111393-489ded09_canonicalize_2026-06-10t23-10-10-943z-1976810-5d9cb416-ingest-2013-02-sbs-webster-bx-cb4-project-identity"
+}

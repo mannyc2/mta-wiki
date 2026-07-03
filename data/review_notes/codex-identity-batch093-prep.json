@@ -1,0 +1,215 @@
+{
+  "batch_id": "codex-identity-batch093",
+  "prepared_count": 8,
+  "all_pass": true,
+  "proposed_aliases": [
+    {
+      "kind": "corridor",
+      "alias_id": "corridor_14th-st-crosstown-phase2-candidate",
+      "target_id": "corridor_14th-st-crosstown-brt-phase2",
+      "reason": "Both records represent the same global corridor: display_name and corridor_name are exactly \"14th Street Crosstown Corridor\", both are Manhattan BRT Phase II candidate corridors, and both cite the same Phase II shortlist block. The target also carries the same corridor from the related future-corridors source; no limits conflict is present.",
+      "evidence": [
+        {
+          "record_id": "corridor_14th-st-crosstown-phase2-candidate",
+          "source_id": "brt_phase2_future_corridors_rpt",
+          "block_id": "p004_c0002",
+          "quote": "BRT Phase II Candidates ... 11 14th Street Crosstown Corridor"
+        },
+        {
+          "record_id": "corridor_14th-st-crosstown-brt-phase2",
+          "source_id": "brt_future_corridors",
+          "block_id": "p004_c0002",
+          "quote": "BRT Phase II Candidates ... 11 14th Street Crosstown Corridor"
+        }
+      ]
+    },
+    {
+      "kind": "corridor",
+      "alias_id": "corridor_flushing-jamaica-phase2-candidate",
+      "target_id": "corridor_flushing-jamaica-brt-phase2",
+      "reason": "Both records represent the same global corridor: display_name and corridor_name are exactly \"Flushing-Jamaica Corridor\", both are BRT Phase II candidate corridors, and both cite the same shortlist entry. The alias adds Queens borough context but no conflicting limits or scope.",
+      "evidence": [
+        {
+          "record_id": "corridor_flushing-jamaica-phase2-candidate",
+          "source_id": "brt_phase2_future_corridors_rpt",
+          "block_id": "p004_c0002",
+          "quote": "BRT Phase II Candidates ... 14 Flushing-Jamaica Corridor"
+        },
+        {
+          "record_id": "corridor_flushing-jamaica-brt-phase2",
+          "source_id": "brt_future_corridors",
+          "block_id": "p004_c0002",
+          "quote": "BRT Phase II Candidates ... 14 Flushing-Jamaica Corridor"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_qm25-fresh-pond-rd-may2019",
+      "target_id": "route_qm25-fresh-pond-rd",
+      "reason": "Both records are the same QM25 express route in Queens on the Fresh Pond Road corridor. They share route_id QM25, route_type_normalized express, service_variant express, and the source evidence describes the same QM24/25/34 express group to Midtown/Downtown via the LIE.",
+      "evidence": [
+        {
+          "record_id": "route_qm25-fresh-pond-rd-may2019",
+          "source_id": "fresh_pond_rd_may2019",
+          "block_id": "p006_c0002",
+          "quote": "QM24/25/34: Middle Village, Ridgewood & Glendale Express to Midtown/Downtown via LIE"
+        },
+        {
+          "record_id": "route_qm25-fresh-pond-rd",
+          "source_id": "fresh_pond_rd_tc_jun2019",
+          "block_id": "p006_c0002",
+          "quote": "QM24/25/34: Middle Village, Ridgewood & Glendale Express to Midtown/Downtown via LIE"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_qm34-fresh-pond-rd-may2019",
+      "target_id": "route_qm34-fresh-pond-rd",
+      "reason": "Both records are the same QM34 express route in Queens on the Fresh Pond Road corridor. They share route_id QM34, route_type_normalized express, service_variant express, and the source evidence describes the same QM24/25/34 express group to Midtown/Downtown via the LIE.",
+      "evidence": [
+        {
+          "record_id": "route_qm34-fresh-pond-rd-may2019",
+          "source_id": "fresh_pond_rd_may2019",
+          "block_id": "p006_c0002",
+          "quote": "QM24/25/34: Middle Village, Ridgewood & Glendale Express to Midtown/Downtown via LIE"
+        },
+        {
+          "record_id": "route_qm34-fresh-pond-rd",
+          "source_id": "fresh_pond_rd_tc_jun2019",
+          "block_id": "p006_c0002",
+          "quote": "QM24/25/34: Middle Village, Ridgewood & Glendale Express to Midtown/Downtown via LIE"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_sim11-lex-ave-60-52",
+      "target_id": "route_sim11-lex-ave-oct2025",
+      "reason": "Both records are the same SIM11 express bus route on the Lexington Avenue 60th Street to 52nd Street corridor. They share route_id SIM11, route_type_normalized express, service_variant express, and cite matching source text listing SIM11 among the eight MTA bus routes on the corridor.",
+      "evidence": [
+        {
+          "record_id": "route_sim11-lex-ave-60-52",
+          "source_id": "lexington_ave_60_st_52_st_sept2025",
+          "block_id": "p004_c0002",
+          "quote": "8 MTA bus routes travel on Lexington Avenue between 60th St and 52nd St ... SIM11"
+        },
+        {
+          "record_id": "route_sim11-lex-ave-oct2025",
+          "source_id": "lexington_ave_60_st_52_st_cb8_oct2025",
+          "block_id": "p004_c0002",
+          "quote": "8 MTA bus routes travel on Lexington Avenue between 60th St and 52nd St ... SIM11"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_sim11-lex-ave-60th-52nd",
+      "target_id": "route_sim11-lex-ave-oct2025",
+      "reason": "Both records are the same SIM11 express bus route on the Lexington Avenue 60th Street to 52nd Street corridor. They share route_id SIM11, route_type_normalized express, service_variant express, and cite matching source text listing SIM11 among the eight MTA bus routes on the corridor.",
+      "evidence": [
+        {
+          "record_id": "route_sim11-lex-ave-60th-52nd",
+          "source_id": "lexington_ave_60_st_52_st_oct2025",
+          "block_id": "p004_c0002",
+          "quote": "8 MTA bus routes travel on Lexington Avenue between 60th St and 52nd St ... SIM11"
+        },
+        {
+          "record_id": "route_sim11-lex-ave-oct2025",
+          "source_id": "lexington_ave_60_st_52_st_cb8_oct2025",
+          "block_id": "p004_c0002",
+          "quote": "8 MTA bus routes travel on Lexington Avenue between 60th St and 52nd St ... SIM11"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_sim6-lex-ave-60-52",
+      "target_id": "route_sim6-lex-ave-oct2025",
+      "reason": "Both records are the same SIM6 express bus route on the Lexington Avenue 60th Street to 52nd Street corridor. They share route_id SIM6, route_type_normalized express, service_variant express, and cite matching source text listing SIM6 among the eight MTA bus routes on the corridor.",
+      "evidence": [
+        {
+          "record_id": "route_sim6-lex-ave-60-52",
+          "source_id": "lexington_ave_60_st_52_st_sept2025",
+          "block_id": "p004_c0002",
+          "quote": "8 MTA bus routes travel on Lexington Avenue between 60th St and 52nd St ... SIM6"
+        },
+        {
+          "record_id": "route_sim6-lex-ave-oct2025",
+          "source_id": "lexington_ave_60_st_52_st_cb8_oct2025",
+          "block_id": "p004_c0002",
+          "quote": "8 MTA bus routes travel on Lexington Avenue between 60th St and 52nd St ... SIM6"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_sim6-lex-ave-60th-52nd",
+      "target_id": "route_sim6-lex-ave-oct2025",
+      "reason": "Both records are the same SIM6 express bus route on the Lexington Avenue 60th Street to 52nd Street corridor. They share route_id SIM6, route_type_normalized express, service_variant express, and cite matching source text listing SIM6 among the eight MTA bus routes on the corridor.",
+      "evidence": [
+        {
+          "record_id": "route_sim6-lex-ave-60th-52nd",
+          "source_id": "lexington_ave_60_st_52_st_oct2025",
+          "block_id": "p004_c0002",
+          "quote": "8 MTA bus routes travel on Lexington Avenue between 60th St and 52nd St ... SIM6"
+        },
+        {
+          "record_id": "route_sim6-lex-ave-oct2025",
+          "source_id": "lexington_ave_60_st_52_st_cb8_oct2025",
+          "block_id": "p004_c0002",
+          "quote": "8 MTA bus routes travel on Lexington Avenue between 60th St and 52nd St ... SIM6"
+        }
+      ]
+    }
+  ],
+  "guard_checks": {
+    "scope": {
+      "allowed_kinds": [
+        "corridor",
+        "route"
+      ],
+      "proposed_kinds": [
+        "corridor",
+        "route"
+      ],
+      "excluded_non_global_kinds": true,
+      "treatment_component_included": false
+    },
+    "commands": [
+      {
+        "cmd": "sqlite3 data/canonical.db '.tables'",
+        "result": "Confirmed local DB tables include records, corridors, routes, identity_aliases, do_not_merge, evidence_refs, and blocks_fts."
+      },
+      {
+        "cmd": "sqlite3 -header -column data/canonical.db \"select record_kind, count(*) from records where record_kind in ('corridor','route') group by record_kind; select kind, count(*) from identity_aliases where kind in ('corridor','route') group by kind; select kind, count(*) from do_not_merge where kind in ('corridor','route') group by kind;\"",
+        "result": "Found 280 corridor records, 427 route records, 36 corridor aliases, 39 route aliases, 5 corridor do-not-merge rows, and 34 route do-not-merge rows."
+      },
+      {
+        "cmd": "jq -r '.proposed_aliases[]? | select(.kind==\"corridor\" or .kind==\"route\") | [.kind,.alias_id,.target_id] | @tsv' data/review_notes/codex-identity-batch0*-prep.json | sort -u",
+        "result": "Prior Codex prep files through identity090 had corridor/route proposals only for the eight batch090 corridor pairs; none of the batch093 aliases appeared."
+      },
+      {
+        "cmd": "sqlite3 -header -column data/canonical.db \"with pairs(kind,alias,target) as (...) select p.kind,p.alias,p.target, a.target as existing_alias_target, dn.reason as db_do_not_merge_reason, ra.record_kind as alias_kind, rt.record_kind as target_kind from pairs p left join identity_aliases a on a.kind=p.kind and a.alias=p.alias left join do_not_merge dn on dn.kind=p.kind and ((dn.record_id_a=p.alias and dn.record_id_b=p.target) or (dn.record_id_a=p.target and dn.record_id_b=p.alias)) left join records ra on ra.record_id=p.alias left join records rt on rt.record_id=p.target;\"",
+        "result": "For all 8 proposed pairs, alias and target materialize as the same allowed kind; existing_alias_target and db_do_not_merge_reason were empty."
+      },
+      {
+        "cmd": "jq -r '.aliases.corridor // {}, .aliases.route // {} | to_entries[] | .key + \"\\t\" + (.value|tostring)' data/identity-overrides/merges.json | rg '<batch093 aliases>' || true",
+        "result": "No batch093 alias_id already appears in data/identity-overrides/merges.json."
+      },
+      {
+        "cmd": "jq -r '.proposed_aliases[]? | select((.alias_id|IN(<batch093 aliases>)) or (.target_id|IN(<batch093 targets>))) | [.kind,.alias_id,.target_id] | @tsv' data/review_notes/codex-identity-batch0*-prep.json",
+        "result": "No batch093 alias_id or target_id appeared in prior Codex identity prep proposals through identity090."
+      }
+    ],
+    "policy_checks": {
+      "no_external_provider_llm_calls": true,
+      "no_canonicalize_dedup_identity_review_write_ask_schema_ontology_commands": true,
+      "no_profile_or_provider_commands": true,
+      "no_materialize_export_jsonl_validate": true,
+      "no_route_variant_merges_without_same_variant_evidence": true,
+      "no_materially_different_corridor_limits_merged": true
+    }
+  }
+}

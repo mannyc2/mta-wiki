@@ -1,0 +1,334 @@
+{
+  "note_id": "codex-canonical-cleanup-2026-06-22-identity-alias-batch-049-prep",
+  "created_at": "2026-06-22T21:25:00Z",
+  "status": "ready_for_conductor_apply",
+  "lane": "identity_cleanup",
+  "batch": "identity-batch049",
+  "context": {
+    "current_checkpoint_from_conductor": {
+      "validation_issues": 1672,
+      "unexpected_relation_endpoint_shape": 77,
+      "duplicate_global_identity": 1595,
+      "identity_batches_materialized_validated": "043-047",
+      "identity_batch048": "applied_durably_by_conductor_but_pending_generated-output_checkpoint_behind_wave24"
+    },
+    "write_scope_used_for_this_task": [
+      "data/review_notes/codex-identity-batch049-prep.json"
+    ],
+    "paths_intentionally_not_edited": [
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json",
+      "data/canonical/",
+      "data/materialized/",
+      "wiki/"
+    ]
+  },
+  "intended_mutation": {
+    "path": "data/identity-overrides/merges.json",
+    "operation": "add_aliases",
+    "aliases": {
+      "entity": {
+        "entity_masabi-may2024": "entity_masabi-llc",
+        "entity_44471-mckinsey": "entity_mckinsey-meeting-doc-101141",
+        "entity_mckissack-wsp-jv-meeting-doc-160241": "entity_mckissack-wsp-jv",
+        "entity_c2k-partners-jan2026": "entity_meeting-doc-100351-c2k-partners",
+        "entity_meeting-doc-100351-kawasaki-rail-car": "entity_kawasaki-rail-car-inc",
+        "entity_meeting-doc-143166-e-hartsdale-food-mart": "entity_e-hartsdale-food-mart-meeting-doc-143376",
+        "entity_hudson-harbor-station-llc-meeting-doc-151756": "entity_meeting-doc-151746-hudson-harbor-station",
+        "entity_conduent-state-local-meeting-doc-42686": "entity_meeting-doc-160321-conduent",
+        "entity_ernst-young-174036": "entity_meeting-doc-171006-ernst-young",
+        "entity_meeting-doc-171021-laz-parking": "entity_meeting-doc-170991-laz-parking"
+      }
+    }
+  },
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "all_pass": true,
+    "canonical_records_present": true,
+    "target_records_present": true,
+    "aliases_not_already_merged": true,
+    "targets_not_aliases_in_merges_json": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 21,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 21,
+    "source_page_blocks_missing": [],
+    "confidence": "high"
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_masabi-may2024",
+      "target": "entity_masabi-llc",
+      "validator_duplicate_key": "entity_masabi-llc",
+      "reason": "Exact vendor identity. The alias is a dated Masabi entity record and the target is the richer active Masabi LLC canonical record.",
+      "evidence_refs": [
+        "meeting_doc_140456#p009_c0005",
+        "meeting_doc_140511#p001_c0003"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "target_not_alias_in_merges_json": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_masabi-llc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_44471-mckinsey",
+      "target": "entity_mckinsey-meeting-doc-101141",
+      "validator_duplicate_key": "entity_mckinsey-and-co",
+      "reason": "Exact company identity for McKinsey & Company. The target has the richer canonical payload tied to ridership/revenue projection work.",
+      "evidence_refs": [
+        "meeting_doc_44471#p005_c0005",
+        "meeting_doc_101141#p005_c0004"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "target_not_alias_in_merges_json": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_mckinsey-and-co"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_mckissack-wsp-jv-meeting-doc-160241",
+      "target": "entity_mckissack-wsp-jv",
+      "validator_duplicate_key": "entity_mckissack-wsp-jv",
+      "reason": "Exact joint-venture identity. The target is the richer active McKissack-WSP JV record.",
+      "evidence_refs": [
+        "meeting_doc_160241#p001_c0001",
+        "meeting_doc_160291#p001_c0007"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "target_not_alias_in_merges_json": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_mckissack-wsp-jv"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_c2k-partners-jan2026",
+      "target": "entity_meeting-doc-100351-c2k-partners",
+      "validator_duplicate_key": "entity_c2k-partners",
+      "reason": "Exact vendor/joint-venture identity for C2K Partners. The target carries the fuller meeting-document canonical description.",
+      "evidence_refs": [
+        "meeting_doc_197456#p010_c0003",
+        "meeting_doc_197456#p010_c0006",
+        "meeting_doc_100351#p005_c0005"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "target_not_alias_in_merges_json": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_c2k-partners"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-100351-kawasaki-rail-car",
+      "target": "entity_kawasaki-rail-car-inc",
+      "validator_duplicate_key": "entity_kawasaki-rail-car-inc",
+      "reason": "Exact supplier identity. The target is the clearer Kawasaki Rail Car Inc canonical company record.",
+      "evidence_refs": [
+        "meeting_doc_100351#p005_c0005",
+        "meeting_doc_165146#p026_c0005"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "target_not_alias_in_merges_json": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_kawasaki-rail-car-inc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-143166-e-hartsdale-food-mart",
+      "target": "entity_e-hartsdale-food-mart-meeting-doc-143376",
+      "validator_duplicate_key": "entity_e-hartsdale-food-mart-inc",
+      "reason": "Exact lessee/company identity for E. Hartsdale Food Mart Inc. The target has the fuller canonical name.",
+      "evidence_refs": [
+        "meeting_doc_143166#p001_c0008",
+        "meeting_doc_143376#p004_c0008"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "target_not_alias_in_merges_json": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_e-hartsdale-food-mart-inc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_hudson-harbor-station-llc-meeting-doc-151756",
+      "target": "entity_meeting-doc-151746-hudson-harbor-station",
+      "validator_duplicate_key": "entity_hudson-harbor-station-llc",
+      "reason": "Exact LLC identity. The target has the richer Hudson Harbor Station affiliate canonical payload.",
+      "evidence_refs": [
+        "meeting_doc_151756#p014_c0008",
+        "meeting_doc_151746#p001_c0001"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "target_not_alias_in_merges_json": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_hudson-harbor-station-llc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_conduent-state-local-meeting-doc-42686",
+      "target": "entity_meeting-doc-160321-conduent",
+      "validator_duplicate_key": "entity_conduent-state-and-local-solutions-inc",
+      "reason": "Exact company identity for Conduent State & Local Solutions Inc. The target has the fuller canonical name/description.",
+      "evidence_refs": [
+        "meeting_doc_42686#p024_c0011",
+        "meeting_doc_160321#p006_c0007"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "target_not_alias_in_merges_json": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_conduent-state-and-local-solutions-inc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_ernst-young-174036",
+      "target": "entity_meeting-doc-171006-ernst-young",
+      "validator_duplicate_key": "entity_ernst-and-young-llc",
+      "reason": "Exact company identity for Ernst & Young LLP/LLC naming in canonical records. The target retains the richer short-name payload.",
+      "evidence_refs": [
+        "meeting_doc_174036#p004_c0011",
+        "meeting_doc_171006#p005_c0004"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "target_not_alias_in_merges_json": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_ernst-and-young-llc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-171021-laz-parking",
+      "target": "entity_meeting-doc-170991-laz-parking",
+      "validator_duplicate_key": "entity_laz-parking-ny-nj-llc",
+      "reason": "Exact parking-operator identity for LAZ Parking NY/NJ LLC. The target carries the canonical acronym payload.",
+      "evidence_refs": [
+        "meeting_doc_171021#p001_c0003",
+        "meeting_doc_170991#p014_c0007"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "target_not_alias_in_merges_json": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_laz-parking-ny-nj-llc"
+        ]
+      },
+      "confidence": "high"
+    }
+  ],
+  "deferred_low_confidence_or_scope_review": [
+    "Skipped broad agency, association, program, committee, board, department, authority, and generic community labels.",
+    "Skipped corporate hierarchy cases where multiple legal entities or parent/subsidiary records could require owner judgment.",
+    "Skipped transit-agency labels and government bodies because this batch is limited to exact person/vendor/company/corridor-style identities.",
+    "Targets were chosen as non-alias active canonical records with richer payloads where the duplicate set exposed an obvious richer record."
+  ],
+  "commands_run_for_this_prep": [
+    "git status --short -- data/identity-overrides/merges.json data/identity-overrides/do-not-merge.json data/review_notes/codex-identity-batch048-prep.json data/review_notes/codex-identity-batch049-prep.json",
+    "jq '{entity_alias_count:(.aliases.entity|length), batch048_aliases:{\"entity_ahern-painting-contractors-44201\":.aliases.entity[\"entity_ahern-painting-contractors-44201\"],\"entity_daniel-decrecenzo\":.aliases.entity[\"entity_daniel-decrecenzo\"],\"entity_donald-look-svp-internal-affairs\":.aliases.entity[\"entity_donald-look-svp-internal-affairs\"],\"entity_164896-donna-mason\":.aliases.entity[\"entity_164896-donna-mason\"],\"entity_exp-urbahn-jv-208006\":.aliases.entity[\"entity_exp-urbahn-jv-208006\"],\"entity_holden-rosen-grupp-meeting-doc-201731\":.aliases.entity[\"entity_holden-rosen-grupp-meeting-doc-201731\"],\"entity_holden-rosen-grupp-meeting-doc-205666\":.aliases.entity[\"entity_holden-rosen-grupp-meeting-doc-205666\"],\"entity_jacob-luce-omb-194031\":.aliases.entity[\"entity_jacob-luce-omb-194031\"],\"entity_judlau-contracting-jan2026\":.aliases.entity[\"entity_judlau-contracting-jan2026\"],\"entity_lawrence-montreuil-meeting-doc-201541\":.aliases.entity[\"entity_lawrence-montreuil-meeting-doc-201541\"]}}' data/identity-overrides/merges.json",
+    "jq '{entity_do_not_merge_count:(.pairs.entity|length), last_entity_pairs:.pairs.entity[-8:]}' data/identity-overrides/do-not-merge.json",
+    "sqlite3 data/canonical.db \"select count(*) as identity_aliases from identity_aliases; select count(*) as do_not_merge from do_not_merge; pragma quick_check;\"",
+    "bun --eval '<deterministic duplicate_global_identity candidate mining over readCanonicalRecords, identityKeysForRecord, identityDoNotMergeOverrideIssueSuppressed, filtering aliases already in merges.json, broad labels, and do-not-merge suppressed pairs>'",
+    "sqlite3 data/canonical.db '<targeted candidate payload and evidence_refs query for selected batch049 aliases and targets>'",
+    "for ref in meeting_doc_140456#p009_c0005 meeting_doc_140511#p001_c0003 meeting_doc_44471#p005_c0005 meeting_doc_101141#p005_c0004 meeting_doc_160241#p001_c0001 meeting_doc_160291#p001_c0007 meeting_doc_197456#p010_c0003 meeting_doc_197456#p010_c0006 meeting_doc_100351#p005_c0005 meeting_doc_165146#p026_c0005 meeting_doc_143166#p001_c0008 meeting_doc_143376#p004_c0008 meeting_doc_151756#p014_c0008 meeting_doc_151746#p001_c0001 meeting_doc_42686#p024_c0011 meeting_doc_160321#p006_c0007 meeting_doc_174036#p004_c0011 meeting_doc_171006#p005_c0004 meeting_doc_171021#p001_c0003 meeting_doc_170991#p014_c0007; do src=${ref%%#*}; block=${ref#*#}; jq -r --arg block \"$block\" 'select(.block_id==$block) | [.block_id, (.text // .content // \"\")[:220]] | @tsv' \"raw/sources/$src/blocks.jsonl\"; done",
+    "jq -r 'select(.block_id==\"p009_c0005\") | .text' raw/sources/meeting_doc_140456/blocks.jsonl | rg -i 'Masabi'",
+    "jq -r 'select(.block_id==\"p005_c0005\") | .text' raw/sources/meeting_doc_44471/blocks.jsonl | rg -i 'McKinsey'",
+    "jq -r 'select(.block_id==\"p001_c0001\") | .text' raw/sources/meeting_doc_160241/blocks.jsonl | rg -i 'McKissack|WSP'",
+    "jq -r 'select(.block_id==\"p026_c0005\") | .text' raw/sources/meeting_doc_165146/blocks.jsonl | rg -i 'Kawasaki'",
+    "jq -r 'select(.block_id==\"p001_c0001\") | .text' raw/sources/meeting_doc_151746/blocks.jsonl | rg -i 'Hudson Harbor'",
+    "jq -r 'select(.block_id==\"p006_c0007\") | .text' raw/sources/meeting_doc_160321/blocks.jsonl | rg -i 'Conduent'",
+    "jq -r 'select(.block_id==\"p001_c0003\") | .text' raw/sources/meeting_doc_171021/blocks.jsonl | rg -i 'LAZ'",
+    "jq -r 'select(.block_id==\"p010_c0006\") | .text' raw/sources/meeting_doc_197456/blocks.jsonl | rg -i 'C2K'",
+    "bun --eval '<deterministic final exact guard script for all intended batch049 aliases: canonical record presence, aliases not already in merges, targets not aliases, do-not-merge hits, shared identity keys, raw blocks, and source-page blocks>'"
+  ],
+  "commands_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts export-jsonl --verify",
+    "bun packages/cli/src/cli.ts validate",
+    "canonicalize/dedup/identity-review/write/ask/schema/ontology-normalize provider-backed or post-ingest commands",
+    "full materialize/export/full validate"
+  ],
+  "conductor_apply_note": "This prep artifact intentionally does not edit data/identity-overrides/merges.json or generated outputs. Re-run the same deterministic guards immediately before conductor application, especially because batch048 is applied durably but pending generated-output checkpoint behind wave24."
+}

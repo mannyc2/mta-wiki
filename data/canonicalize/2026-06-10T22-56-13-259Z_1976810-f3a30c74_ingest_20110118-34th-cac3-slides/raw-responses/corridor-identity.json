@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T22-56-13-259Z_1976810-f3a30c74_ingest_20110118-34th-cac3-slides",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T01:25:25.102Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "corridor_34th_st_manhattan_20110118",
+        "decision": "new",
+        "rationale": "The observation resolves to its own base_record_id (corridor_34th-st-busway), which is already the closest matching canonical record: same street (34th Street), same borough (Manhattan), and the source 20110118_34th_cac3_slides is already listed in that record's source_ids with the matching alias \"corridor_34th-st-manhattan-20110118\". No different registry record is a closer match. Per the rules, when the closest match is the observation's own base_record_id, the decision is 'new' — the observation already resolves to that id.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac3_slides",
+            "block_id": "p004_c0002",
+            "source_quote": "A map of the 34th Street Transitway corridor in Manhattan, New York City. The corridor is shown as a red and white striped line running diagonally from the top left to the bottom right. Key landmarks and streets labeled include Twelfth Avenue/Javits Center, Eleventh Avenue, Tenth Avenue, Ninth Avenue, Eighth Avenue (with A, C, E bus lines), Seventh Avenue/Penn Station (with 1, 2, 3 bus lines), Sixth Avenue/Broadway/Herald Square (with B, D, F, M, N, Q, R bus lines), Madison/Fifth Avenue, Park Avenue (with 6 bus line), Third/Lexington Avenue, Second Avenue, First Avenue, and E 34th Street Ferry Terminal."
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-24-00-201Z_2111393-6d12be70_canonicalize_2026-06-10t22-56-13-259z-1976810-f3a30c74-ingest-20110118-34th-cac3-slides-corridor-identity"
+}

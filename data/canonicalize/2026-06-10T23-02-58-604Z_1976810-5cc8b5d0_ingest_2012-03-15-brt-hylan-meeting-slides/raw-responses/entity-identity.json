@@ -1,0 +1,59 @@
+{
+  "run_id": "2026-06-10T23-02-58-604Z_1976810-5cc8b5d0_ingest_2012-03-15-brt-hylan-meeting-slides",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:34:24.194Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "entity_mta_nyct_hylan_2012_03",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id entity_mta-nyct, which already exists in the registry as MTA New York City Transit (agency). The observation's own base_record_id is the closest match; per canonicalization rules, this is a 'new' decision.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_03_15_brt_hylan_meeting_slides",
+            "block_id": "p001_c0001",
+            "source_quote": "MTA New York City Transit"
+          },
+          {
+            "source_id": "2012_03_15_brt_hylan_meeting_slides",
+            "block_id": "p001_c0002",
+            "source_quote": "NEW YORK CITY DOT"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2",
+        "local_observation_id": "entity_nyc_dot_hylan_2012_03",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id entity_nyc-dot, which already exists in the registry as New York City Department of Transportation (agency). The observation's own base_record_id is the closest match; per canonicalization rules, this is a 'new' decision.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_03_15_brt_hylan_meeting_slides",
+            "block_id": "p001_c0002",
+            "source_quote": "NEW YORK CITY DOT"
+          }
+        ]
+      },
+      {
+        "decision_id": "d3",
+        "local_observation_id": "entity_melissa_farley_hylan_2012_03",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id entity_melissa-farley-nyct, which already exists in the registry as Melissa Farley (person). The registry card for entity_melissa-farley-nyct already lists this same source (2012_03_15_brt_hylan_meeting_slides). The observation's own base_record_id is the closest match; per canonicalization rules, this is a 'new' decision.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_03_15_brt_hylan_meeting_slides",
+            "block_id": "p025_c0004",
+            "source_quote": "Contact Melissa Farley at 646-252-2655 or Melissa.Farley@nyct.com"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-33-01-547Z_2111393-0fa63a0b_canonicalize_2026-06-10t23-02-58-604z-1976810-5cc8b5d0-ingest-2012-03-15-brt-hylan-meeting-slides-entity-identity"
+}

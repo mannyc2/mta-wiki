@@ -1,0 +1,41 @@
+{
+  "run_id": "2026-06-10T22-56-13-413Z_1976810-e589ba1d_ingest_201110-nostrand-cb15-slides",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T01:57:39.025Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "d1-entity-mta-nyct-201110",
+        "local_observation_id": "entity_mta_nyct_201110_cb15",
+        "decision": "new",
+        "rationale": "Observation already has base_record_id entity_mta-nyct which resolves to the existing registry record entity_mta-nyct. The closest match IS the observation's own base_record_id, so per the rules the decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb15_slides",
+            "block_id": "p002_c0008",
+            "source_quote": "_New York City Transit_ _NEW YORK CITY_"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2-entity-community-board-15-201110",
+        "local_observation_id": "entity_community_board_15_brooklyn_201110",
+        "decision": "new",
+        "rationale": "Observation already has base_record_id entity_community-board-15-brooklyn which resolves to the existing registry record entity_community-board-15-brooklyn. The closest match IS the observation's own base_record_id, so per the rules the decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb15_slides",
+            "block_id": "p001_c0001",
+            "source_quote": "Community Board 15"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-56-30-265Z_2111393-f5bfadbb_canonicalize_2026-06-10t22-56-13-413z-1976810-e589ba1d-ingest-201110-nostrand-cb15-slides-entity-identity"
+}

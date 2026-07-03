@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T02:02:37.579Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "nostrand-rogers-sbs-201110-cb8-resolved",
+        "local_observation_id": "project_nostrand_rogers_sbs_201110_cb8",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'project_nostrand-rogers-sbs' already exists in the registry and refers to the same Nostrand Ave / Rogers Ave Select Bus Service project. The source '201110_nostrand_cb8_slides' is already listed in the registry record's source_ids, and the record_alias 'project_nostrand-rogers-sbs-201110-cb8' is already registered. The observation label, borough, project_type, and description all match. No new linkage is needed — the observation is already correctly resolved to its base record.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb8_slides",
+            "block_id": "p001_c0001",
+            "source_quote": "Nostrand SBS Project Features"
+          },
+          {
+            "source_id": "201110_nostrand_cb8_slides",
+            "block_id": "p007_c0001",
+            "source_quote": "Design from Flushing Ave to Eastern Pkwy, and Empire Blvd to Farragut Rd"
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-01-59-972Z_2111393-d330a012_canonicalize_2026-06-10t22-59-52-566z-1976810-e040d399-ingest-201110-nostrand-cb8-slides-project-identity"
+}

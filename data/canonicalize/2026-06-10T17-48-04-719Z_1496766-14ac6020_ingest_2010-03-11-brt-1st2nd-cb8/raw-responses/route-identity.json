@@ -1,0 +1,46 @@
+{
+  "run_id": "2026-06-10T17-48-04-719Z_1496766-14ac6020_ingest_2010-03-11-brt-1st2nd-cb8",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-10T19:36:38.768Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "m15-sbs-2010-03-11-new",
+        "local_observation_id": "route_m15_sbs_2010_03_11",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_m15-sbs matches existing registry record route_m15-sbs. The registry record already includes source 2010_03_11_brt_1st2nd_cb8 in its source_ids and alias route_m15-sbs-2010-03-11. The closest match IS the observation's own base_record_id, so decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_03_11_brt_1st2nd_cb8",
+            "block_id": "p005_c0003",
+            "source_quote": "Features Current M15 M15 SBS (2010) M15 SBS (2012) Local service Yes Yes Yes Limited service Yes No No Simpler service pattern No Yes Off-board fare collection No Yes Regular bus fare Yes Yes Improved bus lanes No Yes Low-floor, three-door articulated buses No Yes Bus bulbs No No Yes Transit Signal Priority No No Yes (below Houston St)"
+          }
+        ]
+      },
+      {
+        "decision_id": "bx12-sbs-2010-03-11-new",
+        "local_observation_id": "route_bx12_sbs_2010_03_11",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_bx12-plus matches existing registry record route_bx12-plus. The registry record already includes source 2010_03_11_brt_1st2nd_cb8 in its source_ids and alias route_bx12-sbs-2010-03-11. The closest match IS the observation's own base_record_id, so decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_03_11_brt_1st2nd_cb8",
+            "block_id": "p010_c0002",
+            "source_quote": "Fordham Road Select Bus Service"
+          },
+          {
+            "source_id": "2010_03_11_brt_1st2nd_cb8",
+            "block_id": "p010_c0007",
+            "source_quote": "A photograph of a New York City Select Bus Service bus, model Bx12, stopped at a curbside bus lane. The bus is white with blue and light blue accents, featuring the 'selectbuservice' logo and the number '5744' on its side. The destination sign above the windshield displays 'Bx12' and 'ROY PLAZA CO-OP CITY'."
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-35-58-147Z_1642176-150f2284_canonicalize_2026-06-10t17-48-04-719z-1496766-14ac6020-ingest-2010-03-11-brt-1st2nd-cb8-route-identity"
+}

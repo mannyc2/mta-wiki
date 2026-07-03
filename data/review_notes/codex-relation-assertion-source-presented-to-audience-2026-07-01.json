@@ -1,0 +1,97 @@
+{
+  "note_id": "codex-relation-assertion-source-presented-to-audience-2026-07-01",
+  "date": "2026-07-01",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed profiles",
+    "Pioneer/OpenAI/DeepSeek/vLLM/chandra model calls"
+  ],
+  "bucket": "relation_assertion_status_unknown",
+  "implemented_change": {
+    "summary": "Classify source presentation/report audience relations as delivered when the audience is a board or committee.",
+    "code_paths": [
+      "packages/pipeline/src/records/assertion-qualifiers.ts",
+      "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+    ],
+    "rule": {
+      "relation_family": "claim_context",
+      "relation_kind": "presented_to",
+      "subject": "source",
+      "object": "entity with board/committee/community_board/governing_body audience signal",
+      "required_signals": [
+        "relation cites the source endpoint by source_id/source_ids",
+        "source or relation text has presentation/report/summary/committee/board signal",
+        "no proposal/draft/future/no-meeting/cancel/postpone/defer rejection text"
+      ]
+    }
+  },
+  "baseline": {
+    "validate_issues": 0,
+    "relation_assertion_unknown_total": 5012,
+    "claim_context_unknown": 419,
+    "claim_context_presented_to_unknown": 35,
+    "safe_candidate_count": 13
+  },
+  "after": {
+    "validate_issues": 0,
+    "relation_assertion_unknown_total": 4999,
+    "claim_context_unknown": 406,
+    "claim_context_presented_to_unknown": 22,
+    "delivered_claim_context_presented_to": 13
+  },
+  "delta": {
+    "relation_assertion_unknown_total": -13,
+    "claim_context_unknown": -13,
+    "claim_context_presented_to_unknown": -13,
+    "delivered_claim_context_presented_to": 13
+  },
+  "subagent_inputs": [
+    {
+      "thread_id": "019f1fa9-d151-7dc2-950e-a8678f266522",
+      "name": "Arendt",
+      "lane": "claim_context residual scout",
+      "finding": "Found 13 source-to-audience presented_to rows with board/committee audience signals and one proposed source-to-entity row to leave unknown.",
+      "used_for_this_change": true
+    }
+  ],
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+      "result": "passed: 79 tests, 426 expect calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "passed"
+    },
+    {
+      "command": "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+      "result": "passed: Materialized 93092/98102 submissions; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+      "result": "ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "passed: Issues 0"
+    }
+  ],
+  "intentionally_unresolved": [
+    "event->entity and entity->entity presented_to rows remain unknown.",
+    "Proposed/draft/future/no-meeting source presentation rows remain unknown.",
+    "claim_context.has_claim remains the larger claim-context residual and needs separate scoped rules.",
+    "Canonical JSONL was not hand-edited."
+  ],
+  "next_candidate_lanes": [
+    "Use the active metric scout to select the next exact-name/unit/period metric_context.has_metric rule.",
+    "Rebaseline top unknown assertion-status buckets after the metric scout returns.",
+    "Return to project/route duplicate identity buckets if a duplicate-record backlog reappears; current project/route duplicate validation pressure is zero."
+  ]
+}

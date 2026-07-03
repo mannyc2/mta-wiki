@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "entity_cluster_70609b70c4",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_70609b70c4.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_70609b70c4.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "entity_meeting-doc-140491-mercer",
+        "entity_mercer-health-benefits"
+      ],
+      "reason": "Contradiction test (test 1): strong identity field entity_type differs (organization vs vendor). The records denote distinct real-world entities despite sharing the base name 'Mercer'."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "entity_type is a strong identity field. The first record's payload_identity_fields has entity_type 'organization', the second has 'vendor'. Per Identity Merge Canon test 1, this contradiction forces do_not_merge regardless of name similarity or shared relation context. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

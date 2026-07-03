@@ -1,0 +1,235 @@
+{
+  "note_id": "codex-relation-rule-or-data-next10-prep",
+  "created_at_utc": "2026-06-22T22:18:02Z",
+  "lane": "validator/rule-data triage next10",
+  "constraints_observed": {
+    "wrote_exactly_one_artifact": "data/review_notes/codex-relation-rule-or-data-next10-prep.json",
+    "did_not_edit_code": true,
+    "did_not_edit_retired_json": true,
+    "did_not_edit_submissions": true,
+    "did_not_edit_log_manifest_generated_data_wiki_or_db": true,
+    "did_not_run_materialize_validate_export_or_provider_commands": true
+  },
+  "exclusion_method": {
+    "description": "Read canonical records and relationEndpointShapeIssue directly, then excluded relation records associated with applied relation cleanup batches017-032 and missing-target repairs without mutating canonical data.",
+    "retired_submission_filter": "retired.json entries whose reason/source_decision matched batch017 through batch032 or missing/target repair",
+    "retired_submission_count": 84,
+    "excluded_record_count": 80,
+    "additional_sources": [
+      "data/review_notes/codex-relation-cleanup-batch017-prep.json",
+      "data/review_notes/codex-relation-cleanup-batch019-prep.json",
+      "data/review_notes/codex-relation-cleanup-batch020-prep.json",
+      "data/review_notes/codex-relation-cleanup-batch021-prep.json",
+      "data/review_notes/codex-relation-cleanup-batch022-prep.json",
+      "data/review_notes/codex-relation-cleanup-batch023-prep.json",
+      "data/review_notes/codex-relation-cleanup-batch024-prep.json",
+      "data/review_notes/codex-relation-cleanup-batch025-prep.json",
+      "data/review_notes/codex-relation-cleanup-batch026-prep.json",
+      "data/review_notes/codex-relation-cleanup-batch027-prep.json",
+      "data/review_notes/codex-relation-cleanup-batch028-prep.json",
+      "data/review_notes/codex-relation-cleanup-batch029-prep.json",
+      "data/review_notes/codex-relation-cleanup-batch030-prep.json",
+      "data/review_notes/codex-relation-cleanup-batch031-prep.json",
+      "data/review_notes/codex-relation-cleanup-batch032-prep.json",
+      "data/submissions/2026-06-22_codex_relation_missing_target_repair001.jsonl"
+    ]
+  },
+  "remaining_bucket_counts_after_exclusions": {
+    "unexpected_relation_endpoint_shape_total": 47,
+    "top_buckets": [
+      {
+        "bucket": "implemented_by metric_claim->entity",
+        "count": 4
+      },
+      {
+        "bucket": "part_of_program project->event",
+        "count": 3
+      },
+      {
+        "bucket": "has_metric source->metric_claim",
+        "count": 2
+      },
+      {
+        "bucket": "has_timeline_event claim->event",
+        "count": 2
+      },
+      {
+        "bucket": "implemented_by route->entity",
+        "count": 2
+      },
+      {
+        "bucket": "part_of_program event->entity",
+        "count": 2
+      }
+    ]
+  },
+  "recommendation": {
+    "type": "data_cleanup_bucket",
+    "bucket": "implemented_by metric_claim->entity",
+    "confidence": "high",
+    "summary": "Clean up four relations that use implemented_by from a metric_claim to an entity. The evidence describes metric values, contract/requesting-department context, or a fuel-hedge event, not a project implemented by an entity.",
+    "why_not_validator_rule_change": "implemented_by is currently a narrow project -> entity relation. Widening it to metric_claim -> entity would make dollar amounts and other metrics appear to be implemented by agencies, conflating metric context with project responsibility. Three rows describe requesting departments for procurement amounts; one row points a fuel-hedge relation at a farebox-revenue metric, which is plainly a data-target error.",
+    "proposed_mechanism": [
+      "Retire all four malformed implemented_by metric_claim->entity relations.",
+      "For the three meeting_doc_91591 procurement rows, append validator-compatible related_to metric_claim->entity replacements if preserving requesting-department context is desired; related_to currently accepts metric_claim->entity.",
+      "For relation_meeting-doc-111896-fuel-hedge-mta, prefer retire-only unless a follow-up pass deliberately retargets the evidence to event_meeting-doc-111896-fuel-hedge-mar29 and an entity/event relation. Do not preserve the current farebox-revenue metric endpoint."
+    ],
+    "simulated_impact": {
+      "baseline_remaining_endpoint_shape_issues": 47,
+      "bucket_count": 4,
+      "remaining_after_bucket_cleanup": 43,
+      "relative_reduction": "4 of 47 endpoint-shape issues, about 8.5%"
+    }
+  },
+  "representative_records": [
+    {
+      "record_id": "relation_meeting-doc-111896-fuel-hedge-mta",
+      "submission_ids": [
+        "sub_8e454f6f34a6ec9a"
+      ],
+      "source_id": "meeting_doc_111896",
+      "display_name": "Fuel Hedge Program - MTA Finance",
+      "malformed_shape": "implemented_by metric_claim->entity",
+      "subject": {
+        "record_id": "metric_meeting-doc-111896-farebox-rev-ytd-mar2023",
+        "record_kind": "metric_claim",
+        "display_name": "Farebox Revenue YTD through March 2023"
+      },
+      "object": {
+        "record_id": "entity_mta-entity-update-2025",
+        "record_kind": "entity",
+        "display_name": "Metropolitan Transportation Authority (MTA)"
+      },
+      "evidence_refs": [
+        "meeting_doc_111896#p008_c0001"
+      ],
+      "evidence_command_excerpt": "raw_text: Monthly Fuel Hedge Program: Director Tannian reported that on March 29, 2023, MTA executed a fuel hedge of ultra-low sulfur diesel fuel on approximately 1.6 million gallons, at an average cost of $2.44/gallon.",
+      "cleanup_note": "Retire malformed row. The evidence supports a fuel-hedge event and MTA context, but the current subject is a farebox revenue metric from a different evidence block."
+    },
+    {
+      "record_id": "relation_meeting91591-nova-department-of-buses-v2",
+      "submission_ids": [
+        "sub_ea92e424842b3a19"
+      ],
+      "source_id": "meeting_doc_91591",
+      "display_name": "Nova AEB Procurement - Department of Buses",
+      "malformed_shape": "implemented_by metric_claim->entity",
+      "subject": {
+        "record_id": "metric_meeting91591-nova-total-amount",
+        "record_kind": "metric_claim",
+        "display_name": "Nova Bus AEB Total Amount - $8,275,562"
+      },
+      "object": {
+        "record_id": "entity_department-of-buses",
+        "record_kind": "entity",
+        "display_name": "Department of Buses"
+      },
+      "evidence_refs": [
+        "meeting_doc_91591#p007_c0003"
+      ],
+      "evidence_command_excerpt": "raw_text includes: Furnish and Deliver 5 Low-Floor 40-foot All-Electric Buses; Total Amount: $8,275,562; Requesting Department: NYC Transit Department of Buses, Frank Annicaro.",
+      "cleanup_note": "Replace with related_to metric_claim->entity if retaining requesting-department context; otherwise retire."
+    },
+    {
+      "record_id": "relation_meeting91591-sprague-department-of-buses",
+      "submission_ids": [
+        "sub_cca1467ba3eeb22f"
+      ],
+      "source_id": "meeting_doc_91591",
+      "display_name": "Sprague Extension - Department of Buses",
+      "malformed_shape": "implemented_by metric_claim->entity",
+      "subject": {
+        "record_id": "metric_meeting91591-sprague-total-amount",
+        "record_kind": "metric_claim",
+        "display_name": "Sprague Fuel Contract Extension - $209,923,366"
+      },
+      "object": {
+        "record_id": "entity_department-of-buses",
+        "record_kind": "entity",
+        "display_name": "Department of Buses"
+      },
+      "evidence_refs": [
+        "meeting_doc_91591#p011_c0003"
+      ],
+      "evidence_command_excerpt": "raw_text includes: Sprague Operating Resources, LLC; This Request: NYCT: $160,500,243 MTABC: $49,423,123; Requesting Department: NYC Transit Department of Buses, MTA Bus Company, Frank Annicaro.",
+      "cleanup_note": "Replace with related_to metric_claim->entity if retaining requesting-department context; otherwise retire."
+    },
+    {
+      "record_id": "relation_meeting91591-wsp-mta-procurement",
+      "submission_ids": [
+        "sub_37237b7e593ddd20"
+      ],
+      "source_id": "meeting_doc_91591",
+      "display_name": "WSP Extension - MTA Procurement",
+      "malformed_shape": "implemented_by metric_claim->entity",
+      "subject": {
+        "record_id": "metric_meeting91591-wsp-total-amount",
+        "record_kind": "metric_claim",
+        "display_name": "WSP Contract Extension - $20,000,000"
+      },
+      "object": {
+        "record_id": "entity_mta-procurement",
+        "record_kind": "entity",
+        "display_name": "MTA Procurement"
+      },
+      "evidence_refs": [
+        "meeting_doc_91591#p010_c0003"
+      ],
+      "evidence_command_excerpt": "raw_text includes: WSP USA Incorporated; Description: World-Wide Inspection and Testing; Solicitation Type: Modification; Requesting Department: MTA Procurement, Kuvershen Ayer.",
+      "cleanup_note": "Replace with related_to metric_claim->entity if retaining requesting-department context; otherwise retire."
+    }
+  ],
+  "command_evidence": {
+    "bucket_inventory_output": {
+      "retiredSubmissionCount": 84,
+      "excludedRecordCount": 80,
+      "total": 47,
+      "topBuckets": [
+        "implemented_by metric_claim->entity: 4",
+        "part_of_program project->event: 3",
+        "has_metric source->metric_claim: 2",
+        "has_timeline_event claim->event: 2",
+        "implemented_by route->entity: 2",
+        "part_of_program event->entity: 2"
+      ]
+    },
+    "relation_shape_probe": [
+      "related_to metric_claim->entity: ok",
+      "related_to entity->metric_claim: ok",
+      "supports metric_claim->entity: ok",
+      "supports entity->metric_claim: ok",
+      "implemented_by metric_claim->entity: Relation kind implemented_by expects project -> entity, got metric_claim -> entity."
+    ],
+    "source_block_checks": [
+      "rg -n '\"block_id\":\"p008_c0001\"' raw/sources/meeting_doc_111896/blocks.jsonl",
+      "rg -n '\"block_id\":\"p007_c0003\"|\"block_id\":\"p010_c0003\"|\"block_id\":\"p011_c0003\"' raw/sources/meeting_doc_91591/blocks.jsonl"
+    ]
+  },
+  "commands_run": [
+    "test ! -e data/review_notes/codex-relation-rule-or-data-next10-prep.json && echo ok || echo exists",
+    "rg --files data/review_notes data/submissions data/submission-overrides | sort | rg 'relation.*(017|018|019|020|021|022|023|024|025|026|027|028|029|030|031|032)|batch0(17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32)|missing.*target|target_repair|repair'",
+    "rg -n \"relation0(17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32)|batch0(17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32)|missing[_ -]target|target_repair|repair001|repair002\" LOG.md data/review_notes data/submissions data/submission-overrides/retired.json -g '*.md' -g '*.json' -g '*.jsonl'",
+    "git status --short -- data/review_notes data/submission-overrides/retired.json data/submissions packages/pipeline/src/records/relations.ts packages/pipeline/test/records/relations.test.ts",
+    "sed -n '1,60p' data/submission-overrides/retired.json",
+    "for f in data/review_notes/codex-relation-cleanup-batch0{17..32}-prep.json; do test -e \"$f\" && printf '%s\\t' \"$f\" && jq -r '[.batch // .note_id // input_filename, (.prepared|length // 0), .bucket.name? // .bucket? // .recommendation.bucket? // \"\"] | @tsv' \"$f\"; done",
+    "for f in data/submissions/2026-06-22_codex_relation_cleanup_batch0{17..32}.jsonl data/submissions/2026-06-22_codex_relation_missing_target_repair*.jsonl; do test -e \"$f\" && printf '%s\\t' \"$f\" && wc -l < \"$f\"; done",
+    "jq 'keys, (.prepared[0] // empty)' data/review_notes/codex-relation-cleanup-batch031-prep.json",
+    "jq 'keys, (.prepared[0] // empty)' data/review_notes/codex-relation-cleanup-batch030-prep.json",
+    "jq 'keys, (.prepared[0] // empty)' data/review_notes/codex-relation-cleanup-batch017-prep.json",
+    "jq -r '.retired[] | select((.reason + \" \" + (.source_decision // \"\")) | test(\"batch0(17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32)|missing[_ -]?target|target[_ -]?repair\"; \"i\")) | [.submission_id, .reason] | @tsv' data/submission-overrides/retired.json | wc -l",
+    "bun --eval '<readCanonicalRecords plus relationEndpointShapeIssue inventory excluding retired/prepared batches017-032 and missing-target repair ids>'",
+    "bun --eval '<relationEndpointShapeIssue probe for related_to/supports/has_claim/has_metric/implemented_by/includes metric_claim/entity directions>'",
+    "bun --eval '<canonical record inspection for the four implemented_by metric_claim->entity rows and endpoints>'",
+    "bun --eval '<canonical search for existing fuel hedge/procurement/project records related to the four examples>'",
+    "rg -n '\"block_id\":\"p008_c0001\"' raw/sources/meeting_doc_111896/blocks.jsonl; rg -n '\"block_id\":\"p007_c0003\"|\"block_id\":\"p010_c0003\"|\"block_id\":\"p011_c0003\"' raw/sources/meeting_doc_91591/blocks.jsonl",
+    "rg -n 'relation_meeting-doc-111896-fuel-hedge-mta|relation_meeting91591-nova-department-of-buses-v2|relation_meeting91591-sprague-department-of-buses|relation_meeting91591-wsp-mta-procurement|sub_8e454f6f34a6ec9a|sub_ea92e424842b3a19|sub_cca1467ba3eeb22f|sub_37237b7e593ddd20' data/submissions/*.jsonl data/submission-overrides/retired.json | head -n 40",
+    "date -u +%Y-%m-%dT%H:%M:%SZ"
+  ],
+  "forbidden_commands_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts export-jsonl",
+    "provider-backed ingest/write/ask commands",
+    "DB repair or publish commands"
+  ]
+}

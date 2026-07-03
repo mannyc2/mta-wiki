@@ -1,0 +1,4350 @@
+{
+  "schema_proposal_run_id": "2026-06-08T23-52-42-494Z_schema-proposal-run",
+  "proposed_at": "2026-06-08T23:54:20.510Z",
+  "observation_kind": "metric_claim",
+  "profile_name": "deepseek-pro",
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "audit_packet": {
+    "observation_kind": "metric_claim",
+    "submission_count": 902,
+    "accepted_count": 869,
+    "rejected_count": 33,
+    "declared_anchor_fields": [
+      "metric_name",
+      "raw_value_text",
+      "value",
+      "value_max",
+      "value_min"
+    ],
+    "enum_candidates": [
+      {
+        "field": "direction",
+        "occurrences": 79,
+        "accepted_occurrences": 77,
+        "rejected_occurrences": 2,
+        "canonical_occurrences": 77,
+        "coverage": 0.09,
+        "distinct_values": 10,
+        "accepted_distinct_values": 10,
+        "canonical_distinct_values": 10,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "decline",
+          "decrease",
+          "eastbound",
+          "improvement",
+          "increase",
+          "northbound",
+          "southbound",
+          "unknown",
+          "westbound",
+          "westbound (greatest gains)"
+        ],
+        "accepted_values": [
+          "decline",
+          "decrease",
+          "eastbound",
+          "improvement",
+          "increase",
+          "northbound",
+          "southbound",
+          "unknown",
+          "westbound",
+          "westbound (greatest gains)"
+        ],
+        "canonical_values_observed": [
+          "decline",
+          "decrease",
+          "eastbound",
+          "improvement",
+          "increase",
+          "northbound",
+          "southbound",
+          "unknown",
+          "westbound",
+          "westbound (greatest gains)"
+        ],
+        "value_counts": [
+          {
+            "value": "decrease",
+            "count": 20
+          },
+          {
+            "value": "northbound",
+            "count": 14
+          },
+          {
+            "value": "improvement",
+            "count": 12
+          },
+          {
+            "value": "increase",
+            "count": 10
+          },
+          {
+            "value": "westbound",
+            "count": 8
+          },
+          {
+            "value": "eastbound",
+            "count": 5
+          },
+          {
+            "value": "southbound",
+            "count": 4
+          },
+          {
+            "value": "decline",
+            "count": 3
+          },
+          {
+            "value": "unknown",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "decrease",
+            "count": 20
+          },
+          {
+            "value": "northbound",
+            "count": 14
+          },
+          {
+            "value": "improvement",
+            "count": 12
+          },
+          {
+            "value": "increase",
+            "count": 10
+          },
+          {
+            "value": "westbound",
+            "count": 8
+          },
+          {
+            "value": "eastbound",
+            "count": 5
+          },
+          {
+            "value": "southbound",
+            "count": 4
+          },
+          {
+            "value": "unknown",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "decrease",
+            "count": 20
+          },
+          {
+            "value": "northbound",
+            "count": 14
+          },
+          {
+            "value": "improvement",
+            "count": 12
+          },
+          {
+            "value": "increase",
+            "count": 10
+          },
+          {
+            "value": "westbound",
+            "count": 8
+          },
+          {
+            "value": "eastbound",
+            "count": 5
+          },
+          {
+            "value": "southbound",
+            "count": 4
+          },
+          {
+            "value": "unknown",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "value_max",
+        "occurrences": 66,
+        "accepted_occurrences": 60,
+        "rejected_occurrences": 6,
+        "canonical_occurrences": 60,
+        "coverage": 0.07,
+        "distinct_values": 2,
+        "accepted_distinct_values": 1,
+        "canonical_distinct_values": 1,
+        "value_kind": "mixed",
+        "accepted_value_kind": "mixed",
+        "canonical_value_kind": "mixed",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "2026-05-11T00:00:00.000",
+          "S79+"
+        ],
+        "accepted_values": [
+          "S79+"
+        ],
+        "canonical_values_observed": [
+          "S79+"
+        ],
+        "value_counts": [
+          {
+            "value": "2026-05-11T00:00:00.000",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "value_min",
+        "occurrences": 63,
+        "accepted_occurrences": 58,
+        "rejected_occurrences": 5,
+        "canonical_occurrences": 58,
+        "coverage": 0.07,
+        "distinct_values": 2,
+        "accepted_distinct_values": 1,
+        "canonical_distinct_values": 1,
+        "value_kind": "mixed",
+        "accepted_value_kind": "mixed",
+        "canonical_value_kind": "mixed",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "2019-10-07T00:00:00.000",
+          "B11"
+        ],
+        "accepted_values": [
+          "B11"
+        ],
+        "canonical_values_observed": [
+          "B11"
+        ],
+        "value_counts": [
+          {
+            "value": "2019-10-07T00:00:00.000",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "comparison",
+        "occurrences": 52,
+        "accepted_occurrences": 52,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 52,
+        "coverage": 0.06,
+        "distinct_values": 12,
+        "accepted_distinct_values": 12,
+        "canonical_distinct_values": 12,
+        "value_kind": "mixed",
+        "accepted_value_kind": "mixed",
+        "canonical_value_kind": "mixed",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "current_vs_pre_sbs",
+          "equivalent local routes",
+          "Fall_2012_to_Fall_2015",
+          "last_4_years",
+          "local buses",
+          "May 2019 vs May 2022",
+          "May_2014_to_May_2015",
+          "post_sbs",
+          "post_vs_pre_sbs",
+          "pre_sbs",
+          "subway riders 3.6%",
+          "year_over_year"
+        ],
+        "accepted_values": [
+          "current_vs_pre_sbs",
+          "equivalent local routes",
+          "Fall_2012_to_Fall_2015",
+          "last_4_years",
+          "local buses",
+          "May 2019 vs May 2022",
+          "May_2014_to_May_2015",
+          "post_sbs",
+          "post_vs_pre_sbs",
+          "pre_sbs",
+          "subway riders 3.6%",
+          "year_over_year"
+        ],
+        "canonical_values_observed": [
+          "current_vs_pre_sbs",
+          "equivalent local routes",
+          "Fall_2012_to_Fall_2015",
+          "last_4_years",
+          "local buses",
+          "May 2019 vs May 2022",
+          "May_2014_to_May_2015",
+          "post_sbs",
+          "post_vs_pre_sbs",
+          "pre_sbs",
+          "subway riders 3.6%",
+          "year_over_year"
+        ],
+        "value_counts": [
+          {
+            "value": "May 2019 vs May 2022",
+            "count": 13
+          },
+          {
+            "value": "post_vs_pre_sbs",
+            "count": 13
+          },
+          {
+            "value": "pre_sbs",
+            "count": 8
+          },
+          {
+            "value": "post_sbs",
+            "count": 5
+          },
+          {
+            "value": "May_2014_to_May_2015",
+            "count": 3
+          },
+          {
+            "value": "Fall_2012_to_Fall_2015",
+            "count": 2
+          },
+          {
+            "value": "year_over_year",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "May 2019 vs May 2022",
+            "count": 13
+          },
+          {
+            "value": "post_vs_pre_sbs",
+            "count": 13
+          },
+          {
+            "value": "pre_sbs",
+            "count": 8
+          },
+          {
+            "value": "post_sbs",
+            "count": 5
+          },
+          {
+            "value": "May_2014_to_May_2015",
+            "count": 3
+          },
+          {
+            "value": "Fall_2012_to_Fall_2015",
+            "count": 2
+          },
+          {
+            "value": "year_over_year",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "May 2019 vs May 2022",
+            "count": 13
+          },
+          {
+            "value": "post_vs_pre_sbs",
+            "count": 13
+          },
+          {
+            "value": "pre_sbs",
+            "count": 8
+          },
+          {
+            "value": "post_sbs",
+            "count": 5
+          },
+          {
+            "value": "May_2014_to_May_2015",
+            "count": 3
+          },
+          {
+            "value": "Fall_2012_to_Fall_2015",
+            "count": 2
+          },
+          {
+            "value": "year_over_year",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "route_label",
+        "occurrences": 43,
+        "accepted_occurrences": 43,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 43,
+        "coverage": 0.05,
+        "distinct_values": 8,
+        "accepted_distinct_values": 8,
+        "canonical_distinct_values": 8,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "B60",
+          "Bx18A/B",
+          "Fare-Free Avg",
+          "M116",
+          "Q4",
+          "S46/S96",
+          "System",
+          "Systemwide"
+        ],
+        "accepted_values": [
+          "B60",
+          "Bx18A/B",
+          "Fare-Free Avg",
+          "M116",
+          "Q4",
+          "S46/S96",
+          "System",
+          "Systemwide"
+        ],
+        "canonical_values_observed": [
+          "B60",
+          "Bx18A/B",
+          "Fare-Free Avg",
+          "M116",
+          "Q4",
+          "S46/S96",
+          "System",
+          "Systemwide"
+        ],
+        "value_counts": [
+          {
+            "value": "B60",
+            "count": 7
+          },
+          {
+            "value": "Bx18A/B",
+            "count": 7
+          },
+          {
+            "value": "M116",
+            "count": 7
+          },
+          {
+            "value": "Q4",
+            "count": 7
+          },
+          {
+            "value": "S46/S96",
+            "count": 7
+          },
+          {
+            "value": "System",
+            "count": 4
+          },
+          {
+            "value": "Fare-Free Avg",
+            "count": 2
+          },
+          {
+            "value": "Systemwide",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "B60",
+            "count": 7
+          },
+          {
+            "value": "Bx18A/B",
+            "count": 7
+          },
+          {
+            "value": "M116",
+            "count": 7
+          },
+          {
+            "value": "Q4",
+            "count": 7
+          },
+          {
+            "value": "S46/S96",
+            "count": 7
+          },
+          {
+            "value": "System",
+            "count": 4
+          },
+          {
+            "value": "Fare-Free Avg",
+            "count": 2
+          },
+          {
+            "value": "Systemwide",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "B60",
+            "count": 7
+          },
+          {
+            "value": "Bx18A/B",
+            "count": 7
+          },
+          {
+            "value": "M116",
+            "count": 7
+          },
+          {
+            "value": "Q4",
+            "count": 7
+          },
+          {
+            "value": "S46/S96",
+            "count": 7
+          },
+          {
+            "value": "System",
+            "count": 4
+          },
+          {
+            "value": "Fare-Free Avg",
+            "count": 2
+          },
+          {
+            "value": "Systemwide",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "time_period",
+        "occurrences": 31,
+        "accepted_occurrences": 31,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 31,
+        "coverage": 0.03,
+        "distinct_values": 9,
+        "accepted_distinct_values": 9,
+        "canonical_distinct_values": 9,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "AM Peak (6-10 AM)",
+          "Daily",
+          "Dec-July (2021-2022)",
+          "Dec-July average (2017-2018, 2018-2019, 2019-2020, 2020-2021)",
+          "Midday (10AM-3PM)",
+          "PM peak",
+          "PM Peak (3-7 PM)",
+          "Sep 2022 – May 2023",
+          "Sep 2023 – May 2024"
+        ],
+        "accepted_values": [
+          "AM Peak (6-10 AM)",
+          "Daily",
+          "Dec-July (2021-2022)",
+          "Dec-July average (2017-2018, 2018-2019, 2019-2020, 2020-2021)",
+          "Midday (10AM-3PM)",
+          "PM peak",
+          "PM Peak (3-7 PM)",
+          "Sep 2022 – May 2023",
+          "Sep 2023 – May 2024"
+        ],
+        "canonical_values_observed": [
+          "AM Peak (6-10 AM)",
+          "Daily",
+          "Dec-July (2021-2022)",
+          "Dec-July average (2017-2018, 2018-2019, 2019-2020, 2020-2021)",
+          "Midday (10AM-3PM)",
+          "PM peak",
+          "PM Peak (3-7 PM)",
+          "Sep 2022 – May 2023",
+          "Sep 2023 – May 2024"
+        ],
+        "value_counts": [
+          {
+            "value": "Daily",
+            "count": 6
+          },
+          {
+            "value": "Dec-July (2021-2022)",
+            "count": 5
+          },
+          {
+            "value": "Dec-July average (2017-2018, 2018-2019, 2019-2020, 2020-2021)",
+            "count": 5
+          },
+          {
+            "value": "Sep 2022 – May 2023",
+            "count": 5
+          },
+          {
+            "value": "PM Peak (3-7 PM)",
+            "count": 3
+          },
+          {
+            "value": "AM Peak (6-10 AM)",
+            "count": 2
+          },
+          {
+            "value": "Midday (10AM-3PM)",
+            "count": 2
+          },
+          {
+            "value": "PM peak",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "Daily",
+            "count": 6
+          },
+          {
+            "value": "Dec-July (2021-2022)",
+            "count": 5
+          },
+          {
+            "value": "Dec-July average (2017-2018, 2018-2019, 2019-2020, 2020-2021)",
+            "count": 5
+          },
+          {
+            "value": "Sep 2022 – May 2023",
+            "count": 5
+          },
+          {
+            "value": "PM Peak (3-7 PM)",
+            "count": 3
+          },
+          {
+            "value": "AM Peak (6-10 AM)",
+            "count": 2
+          },
+          {
+            "value": "Midday (10AM-3PM)",
+            "count": 2
+          },
+          {
+            "value": "PM peak",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "Daily",
+            "count": 6
+          },
+          {
+            "value": "Dec-July (2021-2022)",
+            "count": 5
+          },
+          {
+            "value": "Dec-July average (2017-2018, 2018-2019, 2019-2020, 2020-2021)",
+            "count": 5
+          },
+          {
+            "value": "Sep 2022 – May 2023",
+            "count": 5
+          },
+          {
+            "value": "PM Peak (3-7 PM)",
+            "count": 3
+          },
+          {
+            "value": "AM Peak (6-10 AM)",
+            "count": 2
+          },
+          {
+            "value": "Midday (10AM-3PM)",
+            "count": 2
+          },
+          {
+            "value": "PM peak",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "column",
+        "occurrences": 26,
+        "accepted_occurrences": 26,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 26,
+        "coverage": 0.03,
+        "distinct_values": 10,
+        "accepted_distinct_values": 10,
+        "canonical_distinct_values": 10,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Boro",
+          "Days",
+          "Direction",
+          "Hours",
+          "Lane_Color",
+          "Lane_Type",
+          "Lane_Type1",
+          "Lane_width",
+          "SBS_Route1",
+          "TrafDir"
+        ],
+        "accepted_values": [
+          "Boro",
+          "Days",
+          "Direction",
+          "Hours",
+          "Lane_Color",
+          "Lane_Type",
+          "Lane_Type1",
+          "Lane_width",
+          "SBS_Route1",
+          "TrafDir"
+        ],
+        "canonical_values_observed": [
+          "Boro",
+          "Days",
+          "Direction",
+          "Hours",
+          "Lane_Color",
+          "Lane_Type",
+          "Lane_Type1",
+          "Lane_width",
+          "SBS_Route1",
+          "TrafDir"
+        ],
+        "value_counts": [
+          {
+            "value": "Boro",
+            "count": 6
+          },
+          {
+            "value": "Direction",
+            "count": 4
+          },
+          {
+            "value": "SBS_Route1",
+            "count": 4
+          },
+          {
+            "value": "TrafDir",
+            "count": 3
+          },
+          {
+            "value": "Lane_Type",
+            "count": 2
+          },
+          {
+            "value": "Lane_Type1",
+            "count": 2
+          },
+          {
+            "value": "Lane_width",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "Boro",
+            "count": 6
+          },
+          {
+            "value": "Direction",
+            "count": 4
+          },
+          {
+            "value": "SBS_Route1",
+            "count": 4
+          },
+          {
+            "value": "TrafDir",
+            "count": 3
+          },
+          {
+            "value": "Lane_Type",
+            "count": 2
+          },
+          {
+            "value": "Lane_Type1",
+            "count": 2
+          },
+          {
+            "value": "Lane_width",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "Boro",
+            "count": 6
+          },
+          {
+            "value": "Direction",
+            "count": 4
+          },
+          {
+            "value": "SBS_Route1",
+            "count": 4
+          },
+          {
+            "value": "TrafDir",
+            "count": 3
+          },
+          {
+            "value": "Lane_Type",
+            "count": 2
+          },
+          {
+            "value": "Lane_Type1",
+            "count": 2
+          },
+          {
+            "value": "Lane_width",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "source_system",
+        "occurrences": 26,
+        "accepted_occurrences": 26,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 26,
+        "coverage": 0.03,
+        "distinct_values": 4,
+        "accepted_distinct_values": 4,
+        "canonical_distinct_values": 4,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Better Buses program",
+          "DOT stationary cameras",
+          "full bus lane automated enforcement program",
+          "MTA ABLE program"
+        ],
+        "accepted_values": [
+          "Better Buses program",
+          "DOT stationary cameras",
+          "full bus lane automated enforcement program",
+          "MTA ABLE program"
+        ],
+        "canonical_values_observed": [
+          "Better Buses program",
+          "DOT stationary cameras",
+          "full bus lane automated enforcement program",
+          "MTA ABLE program"
+        ],
+        "value_counts": [
+          {
+            "value": "DOT stationary cameras",
+            "count": 12
+          },
+          {
+            "value": "MTA ABLE program",
+            "count": 12
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "DOT stationary cameras",
+            "count": 12
+          },
+          {
+            "value": "MTA ABLE program",
+            "count": 12
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "DOT stationary cameras",
+            "count": 12
+          },
+          {
+            "value": "MTA ABLE program",
+            "count": 12
+          }
+        ]
+      },
+      {
+        "field": "demographic_group",
+        "occurrences": 24,
+        "accepted_occurrences": 24,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 24,
+        "coverage": 0.03,
+        "distinct_values": 4,
+        "accepted_distinct_values": 4,
+        "canonical_distinct_values": 4,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Tier 1",
+          "Tier 2",
+          "Tier 3",
+          "Total"
+        ],
+        "accepted_values": [
+          "Tier 1",
+          "Tier 2",
+          "Tier 3",
+          "Total"
+        ],
+        "canonical_values_observed": [
+          "Tier 1",
+          "Tier 2",
+          "Tier 3",
+          "Total"
+        ],
+        "value_counts": [
+          {
+            "value": "Tier 1",
+            "count": 6
+          },
+          {
+            "value": "Tier 2",
+            "count": 6
+          },
+          {
+            "value": "Tier 3",
+            "count": 6
+          },
+          {
+            "value": "Total",
+            "count": 6
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "Tier 1",
+            "count": 6
+          },
+          {
+            "value": "Tier 2",
+            "count": 6
+          },
+          {
+            "value": "Tier 3",
+            "count": 6
+          },
+          {
+            "value": "Total",
+            "count": 6
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "Tier 1",
+            "count": 6
+          },
+          {
+            "value": "Tier 2",
+            "count": 6
+          },
+          {
+            "value": "Tier 3",
+            "count": 6
+          },
+          {
+            "value": "Total",
+            "count": 6
+          }
+        ]
+      },
+      {
+        "field": "scenario",
+        "occurrences": 24,
+        "accepted_occurrences": 24,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 24,
+        "coverage": 0.03,
+        "distinct_values": 3,
+        "accepted_distinct_values": 3,
+        "canonical_distinct_values": 3,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "existing_network",
+          "increase",
+          "proposed_network"
+        ],
+        "accepted_values": [
+          "existing_network",
+          "increase",
+          "proposed_network"
+        ],
+        "canonical_values_observed": [
+          "existing_network",
+          "increase",
+          "proposed_network"
+        ],
+        "value_counts": [
+          {
+            "value": "existing_network",
+            "count": 8
+          },
+          {
+            "value": "increase",
+            "count": 8
+          },
+          {
+            "value": "proposed_network",
+            "count": 8
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "existing_network",
+            "count": 8
+          },
+          {
+            "value": "increase",
+            "count": 8
+          },
+          {
+            "value": "proposed_network",
+            "count": 8
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "existing_network",
+            "count": 8
+          },
+          {
+            "value": "increase",
+            "count": 8
+          },
+          {
+            "value": "proposed_network",
+            "count": 8
+          }
+        ]
+      },
+      {
+        "field": "mode",
+        "occurrences": 20,
+        "accepted_occurrences": 20,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 20,
+        "coverage": 0.02,
+        "distinct_values": 3,
+        "accepted_distinct_values": 3,
+        "canonical_distinct_values": 3,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "bus",
+          "paratransit",
+          "subway"
+        ],
+        "accepted_values": [
+          "bus",
+          "paratransit",
+          "subway"
+        ],
+        "canonical_values_observed": [
+          "bus",
+          "paratransit",
+          "subway"
+        ],
+        "value_counts": [
+          {
+            "value": "subway",
+            "count": 11
+          },
+          {
+            "value": "bus",
+            "count": 5
+          },
+          {
+            "value": "paratransit",
+            "count": 4
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "subway",
+            "count": 11
+          },
+          {
+            "value": "bus",
+            "count": 5
+          },
+          {
+            "value": "paratransit",
+            "count": 4
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "subway",
+            "count": 11
+          },
+          {
+            "value": "bus",
+            "count": 5
+          },
+          {
+            "value": "paratransit",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "field": "day_type",
+        "occurrences": 18,
+        "accepted_occurrences": 18,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 18,
+        "coverage": 0.02,
+        "distinct_values": 4,
+        "accepted_distinct_values": 4,
+        "canonical_distinct_values": 4,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "saturday",
+          "sunday",
+          "weekday",
+          "weekend"
+        ],
+        "accepted_values": [
+          "saturday",
+          "sunday",
+          "weekday",
+          "weekend"
+        ],
+        "canonical_values_observed": [
+          "saturday",
+          "sunday",
+          "weekday",
+          "weekend"
+        ],
+        "value_counts": [
+          {
+            "value": "weekday",
+            "count": 9
+          },
+          {
+            "value": "saturday",
+            "count": 5
+          },
+          {
+            "value": "sunday",
+            "count": 3
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "weekday",
+            "count": 9
+          },
+          {
+            "value": "saturday",
+            "count": 5
+          },
+          {
+            "value": "sunday",
+            "count": 3
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "weekday",
+            "count": 9
+          },
+          {
+            "value": "saturday",
+            "count": 5
+          },
+          {
+            "value": "sunday",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "field": "borough",
+        "occurrences": 16,
+        "accepted_occurrences": 16,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 16,
+        "coverage": 0.02,
+        "distinct_values": 6,
+        "accepted_distinct_values": 6,
+        "canonical_distinct_values": 6,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Bronx",
+          "Bronx/Manhattan",
+          "Brooklyn",
+          "Manhattan",
+          "Queens",
+          "Staten Island"
+        ],
+        "accepted_values": [
+          "Bronx",
+          "Bronx/Manhattan",
+          "Brooklyn",
+          "Manhattan",
+          "Queens",
+          "Staten Island"
+        ],
+        "canonical_values_observed": [
+          "Bronx",
+          "Bronx/Manhattan",
+          "Brooklyn",
+          "Manhattan",
+          "Queens",
+          "Staten Island"
+        ],
+        "value_counts": [
+          {
+            "value": "Bronx",
+            "count": 4
+          },
+          {
+            "value": "Manhattan",
+            "count": 3
+          },
+          {
+            "value": "Queens",
+            "count": 3
+          },
+          {
+            "value": "Staten Island",
+            "count": 3
+          },
+          {
+            "value": "Brooklyn",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "Bronx",
+            "count": 4
+          },
+          {
+            "value": "Manhattan",
+            "count": 3
+          },
+          {
+            "value": "Queens",
+            "count": 3
+          },
+          {
+            "value": "Staten Island",
+            "count": 3
+          },
+          {
+            "value": "Brooklyn",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "Bronx",
+            "count": 4
+          },
+          {
+            "value": "Manhattan",
+            "count": 3
+          },
+          {
+            "value": "Queens",
+            "count": 3
+          },
+          {
+            "value": "Staten Island",
+            "count": 3
+          },
+          {
+            "value": "Brooklyn",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "neighborhood",
+        "occurrences": 16,
+        "accepted_occurrences": 16,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 16,
+        "coverage": 0.02,
+        "distinct_values": 6,
+        "accepted_distinct_values": 6,
+        "canonical_distinct_values": 6,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Central Bronx",
+          "Co-op City",
+          "East Bronx",
+          "Harlem-125th",
+          "Highbridge",
+          "Soundview"
+        ],
+        "accepted_values": [
+          "Central Bronx",
+          "Co-op City",
+          "East Bronx",
+          "Harlem-125th",
+          "Highbridge",
+          "Soundview"
+        ],
+        "canonical_values_observed": [
+          "Central Bronx",
+          "Co-op City",
+          "East Bronx",
+          "Harlem-125th",
+          "Highbridge",
+          "Soundview"
+        ],
+        "value_counts": [
+          {
+            "value": "Central Bronx",
+            "count": 4
+          },
+          {
+            "value": "Co-op City",
+            "count": 4
+          },
+          {
+            "value": "East Bronx",
+            "count": 2
+          },
+          {
+            "value": "Harlem-125th",
+            "count": 2
+          },
+          {
+            "value": "Highbridge",
+            "count": 2
+          },
+          {
+            "value": "Soundview",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "Central Bronx",
+            "count": 4
+          },
+          {
+            "value": "Co-op City",
+            "count": 4
+          },
+          {
+            "value": "East Bronx",
+            "count": 2
+          },
+          {
+            "value": "Harlem-125th",
+            "count": 2
+          },
+          {
+            "value": "Highbridge",
+            "count": 2
+          },
+          {
+            "value": "Soundview",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "Central Bronx",
+            "count": 4
+          },
+          {
+            "value": "Co-op City",
+            "count": 4
+          },
+          {
+            "value": "East Bronx",
+            "count": 2
+          },
+          {
+            "value": "Harlem-125th",
+            "count": 2
+          },
+          {
+            "value": "Highbridge",
+            "count": 2
+          },
+          {
+            "value": "Soundview",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "units",
+        "occurrences": 13,
+        "accepted_occurrences": 13,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 13,
+        "coverage": 0.01,
+        "distinct_values": 7,
+        "accepted_distinct_values": 7,
+        "canonical_distinct_values": 7,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "dollars",
+          "miles",
+          "percent",
+          "riders",
+          "riders per day",
+          "routes",
+          "USD"
+        ],
+        "accepted_values": [
+          "dollars",
+          "miles",
+          "percent",
+          "riders",
+          "riders per day",
+          "routes",
+          "USD"
+        ],
+        "canonical_values_observed": [
+          "dollars",
+          "miles",
+          "percent",
+          "riders",
+          "riders per day",
+          "routes",
+          "USD"
+        ],
+        "value_counts": [
+          {
+            "value": "percent",
+            "count": 5
+          },
+          {
+            "value": "dollars",
+            "count": 3
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "percent",
+            "count": 5
+          },
+          {
+            "value": "dollars",
+            "count": 3
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "percent",
+            "count": 5
+          },
+          {
+            "value": "dollars",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "field": "label",
+        "occurrences": 12,
+        "accepted_occurrences": 12,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 12,
+        "coverage": 0.01,
+        "distinct_values": 3,
+        "accepted_distinct_values": 3,
+        "canonical_distinct_values": 3,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "post_busway",
+          "pre_busway",
+          "pre_busway_baseline"
+        ],
+        "accepted_values": [
+          "post_busway",
+          "pre_busway",
+          "pre_busway_baseline"
+        ],
+        "canonical_values_observed": [
+          "post_busway",
+          "pre_busway",
+          "pre_busway_baseline"
+        ],
+        "value_counts": [
+          {
+            "value": "post_busway",
+            "count": 5
+          },
+          {
+            "value": "pre_busway_baseline",
+            "count": 5
+          },
+          {
+            "value": "pre_busway",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "post_busway",
+            "count": 5
+          },
+          {
+            "value": "pre_busway_baseline",
+            "count": 5
+          },
+          {
+            "value": "pre_busway",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "post_busway",
+            "count": 5
+          },
+          {
+            "value": "pre_busway_baseline",
+            "count": 5
+          },
+          {
+            "value": "pre_busway",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "service_type",
+        "occurrences": 9,
+        "accepted_occurrences": 9,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 9,
+        "coverage": 0.01,
+        "distinct_values": 4,
+        "accepted_distinct_values": 4,
+        "canonical_distinct_values": 4,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "express",
+          "express bus",
+          "local",
+          "Select Bus Service"
+        ],
+        "accepted_values": [
+          "express",
+          "express bus",
+          "local",
+          "Select Bus Service"
+        ],
+        "canonical_values_observed": [
+          "express",
+          "express bus",
+          "local",
+          "Select Bus Service"
+        ],
+        "value_counts": [
+          {
+            "value": "express",
+            "count": 4
+          },
+          {
+            "value": "Select Bus Service",
+            "count": 3
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "express",
+            "count": 4
+          },
+          {
+            "value": "Select Bus Service",
+            "count": 3
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "express",
+            "count": 4
+          },
+          {
+            "value": "Select Bus Service",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "field": "value_unit",
+        "occurrences": 9,
+        "accepted_occurrences": 9,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 9,
+        "coverage": 0.01,
+        "distinct_values": 3,
+        "accepted_distinct_values": 3,
+        "canonical_distinct_values": 3,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "percent",
+          "riders per day",
+          "seconds"
+        ],
+        "accepted_values": [
+          "percent",
+          "riders per day",
+          "seconds"
+        ],
+        "canonical_values_observed": [
+          "percent",
+          "riders per day",
+          "seconds"
+        ],
+        "value_counts": [
+          {
+            "value": "percent",
+            "count": 7
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "percent",
+            "count": 7
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "percent",
+            "count": 7
+          }
+        ]
+      },
+      {
+        "field": "comparison_period",
+        "occurrences": 6,
+        "accepted_occurrences": 6,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 6,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "November 2024",
+          "October 2025"
+        ],
+        "accepted_values": [
+          "November 2024",
+          "October 2025"
+        ],
+        "canonical_values_observed": [
+          "November 2024",
+          "October 2025"
+        ],
+        "value_counts": [
+          {
+            "value": "November 2024",
+            "count": 3
+          },
+          {
+            "value": "October 2025",
+            "count": 3
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "November 2024",
+            "count": 3
+          },
+          {
+            "value": "October 2025",
+            "count": 3
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "November 2024",
+            "count": 3
+          },
+          {
+            "value": "October 2025",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "field": "existing_frequency_category",
+        "occurrences": 6,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 6,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "accepted_distinct_values": 0,
+        "canonical_distinct_values": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "empty",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "15-or-better",
+          "30-or-better"
+        ],
+        "accepted_values": [],
+        "canonical_values_observed": [],
+        "value_counts": [
+          {
+            "value": "15-or-better",
+            "count": 5
+          }
+        ],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "perception",
+        "occurrences": 6,
+        "accepted_occurrences": 4,
+        "rejected_occurrences": 2,
+        "canonical_occurrences": 4,
+        "coverage": 0.01,
+        "distinct_values": 3,
+        "accepted_distinct_values": 3,
+        "canonical_distinct_values": 3,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "faster",
+          "more_frequent",
+          "much_safer"
+        ],
+        "accepted_values": [
+          "faster",
+          "more_frequent",
+          "much_safer"
+        ],
+        "canonical_values_observed": [
+          "faster",
+          "more_frequent",
+          "much_safer"
+        ],
+        "value_counts": [
+          {
+            "value": "faster",
+            "count": 2
+          },
+          {
+            "value": "more_frequent",
+            "count": 2
+          },
+          {
+            "value": "much_safer",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "much_safer",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "much_safer",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "proposed_frequency_category",
+        "occurrences": 6,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 6,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "distinct_values": 3,
+        "accepted_distinct_values": 0,
+        "canonical_distinct_values": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "empty",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "15-or-better",
+          "8-or-better",
+          "8-or-better (at Hunts Point only)"
+        ],
+        "accepted_values": [],
+        "canonical_values_observed": [],
+        "value_counts": [
+          {
+            "value": "8-or-better",
+            "count": 4
+          }
+        ],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "frequency",
+        "occurrences": 5,
+        "accepted_occurrences": 5,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 5,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "daily",
+          "per_year"
+        ],
+        "accepted_values": [
+          "daily",
+          "per_year"
+        ],
+        "canonical_values_observed": [
+          "daily",
+          "per_year"
+        ],
+        "value_counts": [
+          {
+            "value": "per_year",
+            "count": 4
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "per_year",
+            "count": 4
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "per_year",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "field": "location",
+        "occurrences": 5,
+        "accepted_occurrences": 5,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 5,
+        "coverage": 0.01,
+        "distinct_values": 3,
+        "accepted_distinct_values": 3,
+        "canonical_distinct_values": 3,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Bronx",
+          "New York City",
+          "Washington Heights and Inwood"
+        ],
+        "accepted_values": [
+          "Bronx",
+          "New York City",
+          "Washington Heights and Inwood"
+        ],
+        "canonical_values_observed": [
+          "Bronx",
+          "New York City",
+          "Washington Heights and Inwood"
+        ],
+        "value_counts": [
+          {
+            "value": "Bronx",
+            "count": 3
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "Bronx",
+            "count": 3
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "Bronx",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "field": "subject",
+        "occurrences": 4,
+        "accepted_occurrences": 4,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 4,
+        "coverage": 0,
+        "distinct_values": 3,
+        "accepted_distinct_values": 3,
+        "canonical_distinct_values": 3,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Bx36 bus route",
+          "NYC busways generally",
+          "Tremont Avenue Busway"
+        ],
+        "accepted_values": [
+          "Bx36 bus route",
+          "NYC busways generally",
+          "Tremont Avenue Busway"
+        ],
+        "canonical_values_observed": [
+          "Bx36 bus route",
+          "NYC busways generally",
+          "Tremont Avenue Busway"
+        ],
+        "value_counts": [
+          {
+            "value": "NYC busways generally",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "NYC busways generally",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "NYC busways generally",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "code",
+        "occurrences": 3,
+        "accepted_occurrences": 3,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 3,
+        "coverage": 0,
+        "distinct_values": 3,
+        "accepted_distinct_values": 3,
+        "canonical_distinct_values": 3,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "A",
+          "T",
+          "W"
+        ],
+        "accepted_values": [
+          "A",
+          "T",
+          "W"
+        ],
+        "canonical_values_observed": [
+          "A",
+          "T",
+          "W"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "value_note",
+        "occurrences": 3,
+        "accepted_occurrences": 3,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 3,
+        "coverage": 0,
+        "distinct_values": 3,
+        "accepted_distinct_values": 3,
+        "canonical_distinct_values": 3,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "stated as 'more than 27,000'",
+          "stated as 'nearly 25,000'",
+          "stated as 'over 30,000'"
+        ],
+        "accepted_values": [
+          "stated as 'more than 27,000'",
+          "stated as 'nearly 25,000'",
+          "stated as 'over 30,000'"
+        ],
+        "canonical_values_observed": [
+          "stated as 'more than 27,000'",
+          "stated as 'nearly 25,000'",
+          "stated as 'over 30,000'"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "date",
+        "occurrences": 2,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "distinct_values": 2,
+        "accepted_distinct_values": 1,
+        "canonical_distinct_values": 1,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "June 11, 2025",
+          "November 2019"
+        ],
+        "accepted_values": [
+          "June 11, 2025"
+        ],
+        "canonical_values_observed": [
+          "June 11, 2025"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "days",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0,
+        "distinct_values": 1,
+        "accepted_distinct_values": 1,
+        "canonical_distinct_values": 1,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "all"
+        ],
+        "accepted_values": [
+          "all"
+        ],
+        "canonical_values_observed": [
+          "all"
+        ],
+        "value_counts": [
+          {
+            "value": "all",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "all",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "all",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "demographic",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "pedestrians",
+          "seniors (62+) and persons with disabilities"
+        ],
+        "accepted_values": [
+          "pedestrians",
+          "seniors (62+) and persons with disabilities"
+        ],
+        "canonical_values_observed": [
+          "pedestrians",
+          "seniors (62+) and persons with disabilities"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "provider",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "broker",
+          "primary_carrier"
+        ],
+        "accepted_values": [
+          "broker",
+          "primary_carrier"
+        ],
+        "canonical_values_observed": [
+          "broker",
+          "primary_carrier"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "temporal_context",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "post-Busway",
+          "pre-Busway"
+        ],
+        "accepted_values": [
+          "post-Busway",
+          "pre-Busway"
+        ],
+        "canonical_values_observed": [
+          "post-Busway",
+          "pre-Busway"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "value_direction",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0,
+        "distinct_values": 1,
+        "accepted_distinct_values": 1,
+        "canonical_distinct_values": 1,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "increase"
+        ],
+        "accepted_values": [
+          "increase"
+        ],
+        "canonical_values_observed": [
+          "increase"
+        ],
+        "value_counts": [
+          {
+            "value": "increase",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "increase",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "increase",
+            "count": 2
+          }
+        ]
+      }
+    ],
+    "additional_keys": [
+      {
+        "field": "baseline_year",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "borough_normalized",
+        "occurrences": 0,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 16,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0.02,
+        "value_kind": "empty",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": [
+          "bronx",
+          "manhattan",
+          "queens",
+          "staten_island",
+          "brooklyn",
+          "bronx_manhattan"
+        ]
+      },
+      {
+        "field": "category",
+        "occurrences": 19,
+        "accepted_occurrences": 17,
+        "rejected_occurrences": 2,
+        "canonical_occurrences": 17,
+        "coverage": 0.02,
+        "accepted_coverage": 0.02,
+        "canonical_coverage": 0.02,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "bus_frequency",
+          "bus_in_motion",
+          "bus_speed",
+          "stopped_at_bus_stops",
+          "very_satisfied",
+          "bus_main_transportation",
+          "car",
+          "concerned_about_customer_parking"
+        ],
+        "accepted_sample_values": [
+          "bus_in_motion",
+          "stopped_at_bus_stops",
+          "very_satisfied",
+          "bus_frequency",
+          "bus_main_transportation",
+          "bus_speed",
+          "car",
+          "concerned_about_customer_parking"
+        ],
+        "canonical_sample_values": [
+          "bus_in_motion",
+          "stopped_at_bus_stops",
+          "very_satisfied",
+          "bus_frequency",
+          "bus_main_transportation",
+          "bus_speed",
+          "car",
+          "concerned_about_customer_parking"
+        ]
+      },
+      {
+        "field": "change",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "change_mom_pct",
+        "occurrences": 1,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 0,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "number",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "empty",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "change_unit",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "percentage_points"
+        ],
+        "accepted_sample_values": [
+          "percentage_points"
+        ],
+        "canonical_sample_values": [
+          "percentage_points"
+        ]
+      },
+      {
+        "field": "change_yoy_pct",
+        "occurrences": 1,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 0,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "number",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "empty",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "context",
+        "occurrences": 71,
+        "accepted_occurrences": 69,
+        "rejected_occurrences": 2,
+        "canonical_occurrences": 69,
+        "coverage": 0.08,
+        "accepted_coverage": 0.08,
+        "canonical_coverage": 0.08,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Brooklyn",
+          "Brooklyn bus network",
+          "Brooklyn residents",
+          "February 2015, 6:00 am - 7:00 pm",
+          "February 2016, 6:00 am - 7:00 pm",
+          "Flatbush Avenue",
+          "Post-queue jump lane, pre-SBS July 2015",
+          "Pre-queue jump lane, Feb 2015"
+        ],
+        "accepted_sample_values": [
+          "Brooklyn",
+          "Brooklyn bus network",
+          "Brooklyn residents",
+          "February 2015, 6:00 am - 7:00 pm",
+          "February 2016, 6:00 am - 7:00 pm",
+          "Flatbush Avenue",
+          "Post-queue jump lane, pre-SBS July 2015",
+          "Pre-queue jump lane, Feb 2015"
+        ],
+        "canonical_sample_values": [
+          "Brooklyn",
+          "Brooklyn bus network",
+          "Brooklyn residents",
+          "February 2015, 6:00 am - 7:00 pm",
+          "February 2016, 6:00 am - 7:00 pm",
+          "Flatbush Avenue",
+          "Post-queue jump lane, pre-SBS July 2015",
+          "Pre-queue jump lane, Feb 2015"
+        ]
+      },
+      {
+        "field": "currency",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "USD"
+        ],
+        "accepted_sample_values": [
+          "USD"
+        ],
+        "canonical_sample_values": [
+          "USD"
+        ]
+      },
+      {
+        "field": "date_normalized",
+        "occurrences": 2,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "denominator",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "description",
+        "occurrences": 248,
+        "accepted_occurrences": 244,
+        "rejected_occurrences": 4,
+        "canonical_occurrences": 243,
+        "coverage": 0.27,
+        "accepted_coverage": 0.28,
+        "canonical_coverage": 0.28,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Bus speed in slowest segments of 116th Street study area",
+          "Grade A threshold on 4.0 GPA scale",
+          "Over 160 open datasets and several supporting resources",
+          "Received over 100 submissions from students, researchers, policymakers, developers, and everyday customers",
+          "14th St between 7th Ave & 8th Ave eastbound, Saturday PM (8-9 PM) post-implementation volume",
+          "14th St between 7th Ave & 8th Ave eastbound, Saturday PM (8-9 PM) pre-implementation volume",
+          "14th St between 7th Ave & 8th Ave eastbound, weekday AM (8-9 AM) post-implementation volume",
+          "14th St between 7th Ave & 8th Ave eastbound, weekday AM (8-9 AM) pre-implementation volume"
+        ],
+        "accepted_sample_values": [
+          "Grade A threshold on 4.0 GPA scale",
+          "14th St between 7th Ave & 8th Ave eastbound, Saturday PM (8-9 PM) post-implementation volume",
+          "14th St between 7th Ave & 8th Ave eastbound, Saturday PM (8-9 PM) pre-implementation volume",
+          "14th St between 7th Ave & 8th Ave eastbound, weekday AM (8-9 AM) post-implementation volume",
+          "14th St between 7th Ave & 8th Ave eastbound, weekday AM (8-9 AM) pre-implementation volume",
+          "14th St between 7th Ave & 8th Ave eastbound, weekday PM (5-6 PM) post-implementation volume",
+          "14th St between 7th Ave & 8th Ave eastbound, weekday PM (5-6 PM) pre-implementation volume",
+          "14th St between 7th Ave & 8th Ave westbound, Saturday PM (8-9 PM) post-implementation volume"
+        ],
+        "canonical_sample_values": [
+          "14th St between 7th Ave & 8th Ave eastbound, Saturday PM (8-9 PM) post-implementation volume",
+          "14th St between 7th Ave & 8th Ave eastbound, Saturday PM (8-9 PM) pre-implementation volume",
+          "14th St between 7th Ave & 8th Ave eastbound, weekday AM (8-9 AM) post-implementation volume",
+          "14th St between 7th Ave & 8th Ave eastbound, weekday AM (8-9 AM) pre-implementation volume",
+          "14th St between 7th Ave & 8th Ave eastbound, weekday PM (5-6 PM) post-implementation volume",
+          "14th St between 7th Ave & 8th Ave eastbound, weekday PM (5-6 PM) pre-implementation volume",
+          "14th St between 7th Ave & 8th Ave westbound, Saturday PM (8-9 PM) post-implementation volume",
+          "14th St between 7th Ave & 8th Ave westbound, Saturday PM (8-9 PM) pre-implementation volume"
+        ]
+      },
+      {
+        "field": "entity",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "New York City Transit"
+        ],
+        "accepted_sample_values": [
+          "New York City Transit"
+        ],
+        "canonical_sample_values": [
+          "New York City Transit"
+        ]
+      },
+      {
+        "field": "existing_stop_spacing_ft",
+        "occurrences": 10,
+        "accepted_occurrences": 10,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 10,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "fine_period_months",
+        "occurrences": 4,
+        "accepted_occurrences": 4,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 4,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "fine_tier",
+        "occurrences": 5,
+        "accepted_occurrences": 5,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 5,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "fifth and subsequent offenses",
+          "first offense",
+          "fourth offense",
+          "second offense",
+          "third offense"
+        ],
+        "accepted_sample_values": [
+          "fifth and subsequent offenses",
+          "first offense",
+          "fourth offense",
+          "second offense",
+          "third offense"
+        ],
+        "canonical_sample_values": [
+          "fifth and subsequent offenses",
+          "first offense",
+          "fourth offense",
+          "second offense",
+          "third offense"
+        ]
+      },
+      {
+        "field": "fiscal_year",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "FY2025"
+        ],
+        "accepted_sample_values": [
+          "FY2025"
+        ],
+        "canonical_sample_values": [
+          "FY2025"
+        ]
+      },
+      {
+        "field": "goal",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "95%"
+        ],
+        "accepted_sample_values": [
+          "95%"
+        ],
+        "canonical_sample_values": [
+          "95%"
+        ]
+      },
+      {
+        "field": "installed_since",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "location_normalized",
+        "occurrences": 5,
+        "accepted_occurrences": 5,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 5,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "meaning",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Bus lane traffic direction code T"
+        ],
+        "accepted_sample_values": [
+          "Bus lane traffic direction code T"
+        ],
+        "canonical_sample_values": [
+          "Bus lane traffic direction code T"
+        ]
+      },
+      {
+        "field": "note",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Table 1 total differs slightly from text total of 500,882"
+        ],
+        "accepted_sample_values": [
+          "Table 1 total differs slightly from text total of 500,882"
+        ],
+        "canonical_sample_values": [
+          "Table 1 total differs slightly from text total of 500,882"
+        ]
+      },
+      {
+        "field": "numerator",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "period",
+        "occurrences": 196,
+        "accepted_occurrences": 195,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 195,
+        "coverage": 0.22,
+        "accepted_coverage": 0.22,
+        "canonical_coverage": 0.22,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "school_months",
+          "2022-2023",
+          "May 2025",
+          "summer_months",
+          "November 2025",
+          "AM_peak",
+          "PM_peak",
+          "pre-pandemic"
+        ],
+        "accepted_sample_values": [
+          "school_months",
+          "2022-2023",
+          "May 2025",
+          "summer_months",
+          "November 2025",
+          "AM_peak",
+          "PM_peak",
+          "pre-pandemic"
+        ],
+        "canonical_sample_values": [
+          "school_months",
+          "2022-2023",
+          "May 2025",
+          "summer_months",
+          "November 2025",
+          "AM_peak",
+          "PM_peak",
+          "pre-pandemic"
+        ]
+      },
+      {
+        "field": "pilot_value",
+        "occurrences": 6,
+        "accepted_occurrences": 6,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 6,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "pre_pilot_value",
+        "occurrences": 6,
+        "accepted_occurrences": 6,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 6,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "proposed_rush_routes",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "proposed_stop_spacing_ft",
+        "occurrences": 10,
+        "accepted_occurrences": 10,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 10,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "route",
+        "occurrences": 43,
+        "accepted_occurrences": 37,
+        "rejected_occurrences": 6,
+        "canonical_occurrences": 37,
+        "coverage": 0.05,
+        "accepted_coverage": 0.04,
+        "canonical_coverage": 0.04,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "B44 SBS",
+          "B44 Limited",
+          "B1",
+          "B44",
+          "B49",
+          "B44 Local",
+          "Bx4",
+          "B44 Total"
+        ],
+        "accepted_sample_values": [
+          "B44 SBS",
+          "B44 Limited",
+          "B1",
+          "B44",
+          "B49",
+          "B44 Local",
+          "B44 Total",
+          "Bx1"
+        ],
+        "canonical_sample_values": [
+          "B44 SBS",
+          "B44 Limited",
+          "B1",
+          "B44",
+          "B49",
+          "B44 Local",
+          "B44 Total",
+          "Bx1"
+        ]
+      },
+      {
+        "field": "routes",
+        "occurrences": 1,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 0,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "array_string",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "empty",
+        "classification": "sparse",
+        "sample_values": [
+          "B44 SBS",
+          "M14 SBS"
+        ],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "scope",
+        "occurrences": 114,
+        "accepted_occurrences": 105,
+        "rejected_occurrences": 9,
+        "canonical_occurrences": 105,
+        "coverage": 0.13,
+        "accepted_coverage": 0.12,
+        "canonical_coverage": 0.12,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "CBD Overall",
+          "entire_route",
+          "systemwide",
+          "CBD Express buses",
+          "CBD Local buses",
+          "Citywide",
+          "citywide",
+          "fare-free average"
+        ],
+        "accepted_sample_values": [
+          "entire_route",
+          "systemwide",
+          "CBD Express buses",
+          "CBD Local buses",
+          "CBD Overall",
+          "citywide",
+          "fare-free average",
+          "Citywide"
+        ],
+        "canonical_sample_values": [
+          "entire_route",
+          "systemwide",
+          "CBD Express buses",
+          "CBD Local buses",
+          "CBD Overall",
+          "citywide",
+          "fare-free average",
+          "Citywide"
+        ]
+      },
+      {
+        "field": "stops_removed",
+        "occurrences": 10,
+        "accepted_occurrences": 10,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 10,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "target",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "target_description",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "1% below our goal of 95%"
+        ],
+        "accepted_sample_values": [
+          "1% below our goal of 95%"
+        ],
+        "canonical_sample_values": [
+          "1% below our goal of 95%"
+        ]
+      },
+      {
+        "field": "total_stops",
+        "occurrences": 10,
+        "accepted_occurrences": 10,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 10,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "unit",
+        "occurrences": 728,
+        "accepted_occurrences": 711,
+        "rejected_occurrences": 17,
+        "canonical_occurrences": 724,
+        "coverage": 0.81,
+        "accepted_coverage": 0.82,
+        "canonical_coverage": 0.83,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "percent",
+          "minutes",
+          "mph",
+          "vehicles",
+          "routes",
+          "dollars",
+          "miles",
+          "riders"
+        ],
+        "accepted_sample_values": [
+          "percent",
+          "minutes",
+          "mph",
+          "vehicles",
+          "routes",
+          "dollars",
+          "miles",
+          "riders"
+        ],
+        "canonical_sample_values": [
+          "percent",
+          "minutes",
+          "mph",
+          "vehicles",
+          "dollars",
+          "routes",
+          "miles",
+          "riders"
+        ]
+      },
+      {
+        "field": "unit_normalized",
+        "occurrences": 0,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 724,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0.83,
+        "value_kind": "empty",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "object",
+        "classification": "sparse",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "values",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "within_minutes",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "year",
+        "occurrences": 73,
+        "accepted_occurrences": 73,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 73,
+        "coverage": 0.08,
+        "accepted_coverage": 0.08,
+        "canonical_coverage": 0.08,
+        "value_kind": "mixed",
+        "accepted_value_kind": "mixed",
+        "canonical_value_kind": "mixed",
+        "classification": "numeric",
+        "sample_values": [
+          "2022"
+        ],
+        "accepted_sample_values": [
+          "2022"
+        ],
+        "canonical_sample_values": [
+          "2022"
+        ]
+      },
+      {
+        "field": "year_over_year_change",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "1.3% improvement"
+        ],
+        "accepted_sample_values": [
+          "1.3% improvement"
+        ],
+        "canonical_sample_values": [
+          "1.3% improvement"
+        ]
+      }
+    ]
+  },
+  "closure_policy": "deferred",
+  "closure_signals": [
+    {
+      "field": "direction",
+      "closure_readiness": "open",
+      "occurrences": 79,
+      "accepted_occurrences": 77,
+      "canonical_occurrences": 77,
+      "coverage": 0.09
+    },
+    {
+      "field": "value_max",
+      "closure_readiness": "open",
+      "occurrences": 66,
+      "accepted_occurrences": 60,
+      "canonical_occurrences": 60,
+      "coverage": 0.07
+    },
+    {
+      "field": "value_min",
+      "closure_readiness": "open",
+      "occurrences": 63,
+      "accepted_occurrences": 58,
+      "canonical_occurrences": 58,
+      "coverage": 0.07
+    },
+    {
+      "field": "comparison",
+      "closure_readiness": "open",
+      "occurrences": 52,
+      "accepted_occurrences": 52,
+      "canonical_occurrences": 52,
+      "coverage": 0.06
+    },
+    {
+      "field": "route_label",
+      "closure_readiness": "open",
+      "occurrences": 43,
+      "accepted_occurrences": 43,
+      "canonical_occurrences": 43,
+      "coverage": 0.05
+    },
+    {
+      "field": "time_period",
+      "closure_readiness": "open",
+      "occurrences": 31,
+      "accepted_occurrences": 31,
+      "canonical_occurrences": 31,
+      "coverage": 0.03
+    },
+    {
+      "field": "column",
+      "closure_readiness": "open",
+      "occurrences": 26,
+      "accepted_occurrences": 26,
+      "canonical_occurrences": 26,
+      "coverage": 0.03
+    },
+    {
+      "field": "source_system",
+      "closure_readiness": "open",
+      "occurrences": 26,
+      "accepted_occurrences": 26,
+      "canonical_occurrences": 26,
+      "coverage": 0.03
+    },
+    {
+      "field": "demographic_group",
+      "closure_readiness": "open",
+      "occurrences": 24,
+      "accepted_occurrences": 24,
+      "canonical_occurrences": 24,
+      "coverage": 0.03
+    },
+    {
+      "field": "scenario",
+      "closure_readiness": "open",
+      "occurrences": 24,
+      "accepted_occurrences": 24,
+      "canonical_occurrences": 24,
+      "coverage": 0.03
+    },
+    {
+      "field": "mode",
+      "closure_readiness": "open",
+      "occurrences": 20,
+      "accepted_occurrences": 20,
+      "canonical_occurrences": 20,
+      "coverage": 0.02
+    },
+    {
+      "field": "day_type",
+      "closure_readiness": "open",
+      "occurrences": 18,
+      "accepted_occurrences": 18,
+      "canonical_occurrences": 18,
+      "coverage": 0.02
+    },
+    {
+      "field": "borough",
+      "closure_readiness": "open",
+      "occurrences": 16,
+      "accepted_occurrences": 16,
+      "canonical_occurrences": 16,
+      "coverage": 0.02
+    },
+    {
+      "field": "neighborhood",
+      "closure_readiness": "open",
+      "occurrences": 16,
+      "accepted_occurrences": 16,
+      "canonical_occurrences": 16,
+      "coverage": 0.02
+    },
+    {
+      "field": "units",
+      "closure_readiness": "open",
+      "occurrences": 13,
+      "accepted_occurrences": 13,
+      "canonical_occurrences": 13,
+      "coverage": 0.01
+    },
+    {
+      "field": "label",
+      "closure_readiness": "open",
+      "occurrences": 12,
+      "accepted_occurrences": 12,
+      "canonical_occurrences": 12,
+      "coverage": 0.01
+    },
+    {
+      "field": "service_type",
+      "closure_readiness": "open",
+      "occurrences": 9,
+      "accepted_occurrences": 9,
+      "canonical_occurrences": 9,
+      "coverage": 0.01
+    },
+    {
+      "field": "value_unit",
+      "closure_readiness": "open",
+      "occurrences": 9,
+      "accepted_occurrences": 9,
+      "canonical_occurrences": 9,
+      "coverage": 0.01
+    },
+    {
+      "field": "comparison_period",
+      "closure_readiness": "open",
+      "occurrences": 6,
+      "accepted_occurrences": 6,
+      "canonical_occurrences": 6,
+      "coverage": 0.01
+    },
+    {
+      "field": "existing_frequency_category",
+      "closure_readiness": "open",
+      "occurrences": 6,
+      "accepted_occurrences": 0,
+      "canonical_occurrences": 0,
+      "coverage": 0.01
+    },
+    {
+      "field": "perception",
+      "closure_readiness": "open",
+      "occurrences": 6,
+      "accepted_occurrences": 4,
+      "canonical_occurrences": 4,
+      "coverage": 0.01
+    },
+    {
+      "field": "proposed_frequency_category",
+      "closure_readiness": "open",
+      "occurrences": 6,
+      "accepted_occurrences": 0,
+      "canonical_occurrences": 0,
+      "coverage": 0.01
+    },
+    {
+      "field": "frequency",
+      "closure_readiness": "open",
+      "occurrences": 5,
+      "accepted_occurrences": 5,
+      "canonical_occurrences": 5,
+      "coverage": 0.01
+    },
+    {
+      "field": "location",
+      "closure_readiness": "open",
+      "occurrences": 5,
+      "accepted_occurrences": 5,
+      "canonical_occurrences": 5,
+      "coverage": 0.01
+    },
+    {
+      "field": "subject",
+      "closure_readiness": "open",
+      "occurrences": 4,
+      "accepted_occurrences": 4,
+      "canonical_occurrences": 4,
+      "coverage": 0
+    },
+    {
+      "field": "code",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "accepted_occurrences": 3,
+      "canonical_occurrences": 3,
+      "coverage": 0
+    },
+    {
+      "field": "value_note",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "accepted_occurrences": 3,
+      "canonical_occurrences": 3,
+      "coverage": 0
+    },
+    {
+      "field": "date",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 1,
+      "canonical_occurrences": 1,
+      "coverage": 0
+    },
+    {
+      "field": "days",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0
+    },
+    {
+      "field": "demographic",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0
+    },
+    {
+      "field": "provider",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0
+    },
+    {
+      "field": "temporal_context",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0
+    },
+    {
+      "field": "value_direction",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0
+    }
+  ],
+  "valid": true,
+  "schema_issues": [],
+  "warnings": [],
+  "proposal": {
+    "observation_kind": "metric_claim",
+    "field_proposals": [
+      {
+        "field": "direction",
+        "decision": "enum",
+        "canonical_values": [
+          "decrease",
+          "eastbound",
+          "improvement",
+          "increase",
+          "northbound",
+          "southbound",
+          "unknown",
+          "westbound"
+        ],
+        "value_mapping": [
+          {
+            "from": "decline",
+            "to": "decrease"
+          },
+          {
+            "from": "decrease",
+            "to": "decrease"
+          },
+          {
+            "from": "eastbound",
+            "to": "eastbound"
+          },
+          {
+            "from": "improvement",
+            "to": "improvement"
+          },
+          {
+            "from": "increase",
+            "to": "increase"
+          },
+          {
+            "from": "northbound",
+            "to": "northbound"
+          },
+          {
+            "from": "southbound",
+            "to": "southbound"
+          },
+          {
+            "from": "westbound",
+            "to": "westbound"
+          },
+          {
+            "from": "westbound (greatest gains)",
+            "to": "westbound"
+          },
+          {
+            "from": "unknown",
+            "to": "unknown"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "direction_other"
+        },
+        "rationale": "Direction of change with geographic variants; merge decline->decrease and parenthetical suffix."
+      },
+      {
+        "field": "value_max",
+        "decision": "needs_more_data",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Only one accepted distinct value (S79+) among 60 accepted occurrences; mixed types (date vs alphanumeric) and very thin canonical set."
+      },
+      {
+        "field": "value_min",
+        "decision": "needs_more_data",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Only one accepted distinct value (B11) among 58 accepted occurrences; mixed types and thin sample."
+      },
+      {
+        "field": "comparison",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Describes comparison context with high variety (date ranges, route names, etc.) and embedded numeric values; not a controlled set."
+      },
+      {
+        "field": "route_label",
+        "decision": "relation_context",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Route identifiers; relation context linking to route entities."
+      },
+      {
+        "field": "time_period",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Natural-language descriptions of time periods; not standardized."
+      },
+      {
+        "field": "column",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Table column header labels; free text."
+      },
+      {
+        "field": "source_system",
+        "decision": "relation_context",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Names of source programs/systems; relation context."
+      },
+      {
+        "field": "demographic_group",
+        "decision": "enum",
+        "canonical_values": [
+          "tier_1",
+          "tier_2",
+          "tier_3",
+          "total"
+        ],
+        "value_mapping": [
+          {
+            "from": "Tier 1",
+            "to": "tier_1"
+          },
+          {
+            "from": "Tier 2",
+            "to": "tier_2"
+          },
+          {
+            "from": "Tier 3",
+            "to": "tier_3"
+          },
+          {
+            "from": "Total",
+            "to": "total"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "demographic_group_other"
+        },
+        "rationale": "Clear tiered categories with snake_case normalization."
+      },
+      {
+        "field": "scenario",
+        "decision": "enum",
+        "canonical_values": [
+          "existing_network",
+          "increase",
+          "proposed_network"
+        ],
+        "value_mapping": [
+          {
+            "from": "existing_network",
+            "to": "existing_network"
+          },
+          {
+            "from": "increase",
+            "to": "increase"
+          },
+          {
+            "from": "proposed_network",
+            "to": "proposed_network"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "scenario_other"
+        },
+        "rationale": "Three distinct scenario types; stable enough for enum."
+      },
+      {
+        "field": "mode",
+        "decision": "enum",
+        "canonical_values": [
+          "bus",
+          "paratransit",
+          "subway"
+        ],
+        "value_mapping": [
+          {
+            "from": "bus",
+            "to": "bus"
+          },
+          {
+            "from": "paratransit",
+            "to": "paratransit"
+          },
+          {
+            "from": "subway",
+            "to": "subway"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "mode_other"
+        },
+        "rationale": "Three clearly defined transport modes."
+      },
+      {
+        "field": "day_type",
+        "decision": "enum",
+        "canonical_values": [
+          "saturday",
+          "sunday",
+          "weekday",
+          "weekend"
+        ],
+        "value_mapping": [
+          {
+            "from": "saturday",
+            "to": "saturday"
+          },
+          {
+            "from": "sunday",
+            "to": "sunday"
+          },
+          {
+            "from": "weekday",
+            "to": "weekday"
+          },
+          {
+            "from": "weekend",
+            "to": "weekend"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "day_type_other"
+        },
+        "rationale": "Standard day categories."
+      },
+      {
+        "field": "borough",
+        "decision": "enum",
+        "canonical_values": [
+          "bronx",
+          "bronx_manhattan",
+          "brooklyn",
+          "manhattan",
+          "queens",
+          "staten_island"
+        ],
+        "value_mapping": [
+          {
+            "from": "Bronx",
+            "to": "bronx"
+          },
+          {
+            "from": "Bronx/Manhattan",
+            "to": "bronx_manhattan"
+          },
+          {
+            "from": "Brooklyn",
+            "to": "brooklyn"
+          },
+          {
+            "from": "Manhattan",
+            "to": "manhattan"
+          },
+          {
+            "from": "Queens",
+            "to": "queens"
+          },
+          {
+            "from": "Staten Island",
+            "to": "staten_island"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "borough_other"
+        },
+        "rationale": "Borough names with a combined Bronx/Manhattan; normalized to snake_case."
+      },
+      {
+        "field": "neighborhood",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Open-ended geographic names, not a controlled vocabulary."
+      },
+      {
+        "field": "units",
+        "decision": "enum",
+        "canonical_values": [
+          "usd",
+          "miles",
+          "percent",
+          "riders",
+          "riders_per_day",
+          "routes"
+        ],
+        "value_mapping": [
+          {
+            "from": "dollars",
+            "to": "usd"
+          },
+          {
+            "from": "USD",
+            "to": "usd"
+          },
+          {
+            "from": "miles",
+            "to": "miles"
+          },
+          {
+            "from": "percent",
+            "to": "percent"
+          },
+          {
+            "from": "riders",
+            "to": "riders"
+          },
+          {
+            "from": "riders per day",
+            "to": "riders_per_day"
+          },
+          {
+            "from": "routes",
+            "to": "routes"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "units_other"
+        },
+        "rationale": "Unit of measurement; obvious synonyms merged (dollars, USD -> usd)."
+      },
+      {
+        "field": "label",
+        "decision": "enum",
+        "canonical_values": [
+          "post_busway",
+          "pre_busway",
+          "pre_busway_baseline"
+        ],
+        "value_mapping": [
+          {
+            "from": "post_busway",
+            "to": "post_busway"
+          },
+          {
+            "from": "pre_busway",
+            "to": "pre_busway"
+          },
+          {
+            "from": "pre_busway_baseline",
+            "to": "pre_busway_baseline"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "label_other"
+        },
+        "rationale": "Temporal scenario label; limited set."
+      },
+      {
+        "field": "service_type",
+        "decision": "enum",
+        "canonical_values": [
+          "express",
+          "local",
+          "select_bus_service"
+        ],
+        "value_mapping": [
+          {
+            "from": "express",
+            "to": "express"
+          },
+          {
+            "from": "express bus",
+            "to": "express"
+          },
+          {
+            "from": "local",
+            "to": "local"
+          },
+          {
+            "from": "Select Bus Service",
+            "to": "select_bus_service"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "service_type_other"
+        },
+        "rationale": "Service types with synonym (express bus -> express) and SBS normalized."
+      },
+      {
+        "field": "value_unit",
+        "decision": "enum",
+        "canonical_values": [
+          "percent",
+          "riders_per_day",
+          "seconds"
+        ],
+        "value_mapping": [
+          {
+            "from": "percent",
+            "to": "percent"
+          },
+          {
+            "from": "riders per day",
+            "to": "riders_per_day"
+          },
+          {
+            "from": "seconds",
+            "to": "seconds"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "value_unit_other"
+        },
+        "rationale": "Unit of the 'value' field; small, stable set."
+      },
+      {
+        "field": "comparison_period",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Specific month/year labels (November 2024, October 2025); better as free text."
+      },
+      {
+        "field": "existing_frequency_category",
+        "decision": "drop",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "All occurrences rejected; no accepted data to model."
+      },
+      {
+        "field": "perception",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Open-ended subjective descriptor (faster, more_frequent, much_safer)."
+      },
+      {
+        "field": "proposed_frequency_category",
+        "decision": "drop",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "All occurrences rejected."
+      },
+      {
+        "field": "frequency",
+        "decision": "enum",
+        "canonical_values": [
+          "daily",
+          "per_year"
+        ],
+        "value_mapping": [
+          {
+            "from": "daily",
+            "to": "daily"
+          },
+          {
+            "from": "per_year",
+            "to": "per_year"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "frequency_other"
+        },
+        "rationale": "Two frequency granularities."
+      },
+      {
+        "field": "location",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Place names; open set."
+      },
+      {
+        "field": "subject",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Describes the subject of the metric claim; free text."
+      },
+      {
+        "field": "code",
+        "decision": "needs_more_data",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Only three single-letter values with minimal context; insufficient to model as enum."
+      },
+      {
+        "field": "value_note",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Free-text annotation about the value."
+      },
+      {
+        "field": "date",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Human-readable dates; not a controlled set."
+      },
+      {
+        "field": "days",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Single value 'all'; not enough to model as enum."
+      },
+      {
+        "field": "demographic",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Open-ended demographic categories."
+      },
+      {
+        "field": "provider",
+        "decision": "enum",
+        "canonical_values": [
+          "broker",
+          "primary_carrier"
+        ],
+        "value_mapping": [
+          {
+            "from": "broker",
+            "to": "broker"
+          },
+          {
+            "from": "primary_carrier",
+            "to": "primary_carrier"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "provider_other"
+        },
+        "rationale": "Two provider types; small, stable set."
+      },
+      {
+        "field": "temporal_context",
+        "decision": "enum",
+        "canonical_values": [
+          "pre_busway",
+          "post_busway"
+        ],
+        "value_mapping": [
+          {
+            "from": "pre-Busway",
+            "to": "pre_busway"
+          },
+          {
+            "from": "post-Busway",
+            "to": "post_busway"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "temporal_context_other"
+        },
+        "rationale": "Before/after busway; normalized to snake_case."
+      },
+      {
+        "field": "value_direction",
+        "decision": "needs_more_data",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Only one value 'increase' observed; may duplicate 'direction' field."
+      }
+    ],
+    "key_dispositions": [
+      {
+        "key": "baseline_year",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Only 1 occurrence; too sparse to promote."
+      },
+      {
+        "key": "borough_normalized",
+        "disposition": "alias",
+        "target": "borough",
+        "rationale": "Pre-normalized version of borough; covered by borough enum."
+      },
+      {
+        "key": "category",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Free-text category label, 19 occurrences."
+      },
+      {
+        "key": "change",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Only 1 accepted occurrence."
+      },
+      {
+        "key": "change_mom_pct",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Rejected and only 1 occurrence."
+      },
+      {
+        "key": "change_unit",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Sparse but clear unit for change."
+      },
+      {
+        "key": "change_yoy_pct",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Rejected."
+      },
+      {
+        "key": "context",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Free-text context, 71 occurrences."
+      },
+      {
+        "key": "currency",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Only one value 'USD'; redundant with units or implicit."
+      },
+      {
+        "key": "date_normalized",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Structured date object; promote as field."
+      },
+      {
+        "key": "denominator",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Numeric denominator for rate metrics; 2 occurrences."
+      },
+      {
+        "key": "description",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "High-coverage free-text description (248 occurrences)."
+      },
+      {
+        "key": "entity",
+        "disposition": "relation_context",
+        "target": "entity",
+        "rationale": "Name of transit agency; relation context."
+      },
+      {
+        "key": "existing_stop_spacing_ft",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Numeric, 10 occurrences."
+      },
+      {
+        "key": "fine_period_months",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Numeric, 4 occurrences."
+      },
+      {
+        "key": "fine_tier",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Free-text tier descriptions; 5 occurrences."
+      },
+      {
+        "key": "fiscal_year",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Sparse categorical field."
+      },
+      {
+        "key": "goal",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Target value text; sparse."
+      },
+      {
+        "key": "installed_since",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Only 1 occurrence."
+      },
+      {
+        "key": "location_normalized",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Structured location object; 5 occurrences."
+      },
+      {
+        "key": "meaning",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Sparse explanatory field."
+      },
+      {
+        "key": "note",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Sparse annotation."
+      },
+      {
+        "key": "numerator",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Only 1 occurrence."
+      },
+      {
+        "key": "period",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Free-text time period with 196 occurrences."
+      },
+      {
+        "key": "pilot_value",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Numeric pilot-phase value, 6 occurrences."
+      },
+      {
+        "key": "pre_pilot_value",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Numeric pre-pilot value, 6 occurrences."
+      },
+      {
+        "key": "proposed_rush_routes",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Only 1 occurrence."
+      },
+      {
+        "key": "proposed_stop_spacing_ft",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Numeric, 10 occurrences."
+      },
+      {
+        "key": "route",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Free-text route description with 43 occurrences."
+      },
+      {
+        "key": "routes",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Rejected array field."
+      },
+      {
+        "key": "scope",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Free-text scope of claim, 114 occurrences."
+      },
+      {
+        "key": "stops_removed",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Numeric, 10 occurrences."
+      },
+      {
+        "key": "target",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Only 1 occurrence."
+      },
+      {
+        "key": "target_description",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Sparse textual target description."
+      },
+      {
+        "key": "total_stops",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Numeric, 10 occurrences."
+      },
+      {
+        "key": "unit",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "High-coverage free-text unit field (728 occurrences)."
+      },
+      {
+        "key": "unit_normalized",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Canonical normalized unit object, present in 83% of submissions."
+      },
+      {
+        "key": "values",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Sparse structured object."
+      },
+      {
+        "key": "within_minutes",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Numeric threshold, 2 occurrences."
+      },
+      {
+        "key": "year",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Mixed year value, 73 occurrences; interpret as numeric."
+      },
+      {
+        "key": "year_over_year_change",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Sparse free-text description of YoY change."
+      }
+    ],
+    "notes": "Proposed enums only for fields with sufficient accepted distinct values and clear normalization mapping. Many contextual fields kept as free_text or relation_context. Several very sparse keys deferred to needs_more_data."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T23-52-42-495Z_3609302-1073a6b1_schema-proposal-run_metric-claim",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-52-42-504Z_2026-06-08T23-52-42-495Z_3609302-1073a6b1_schema-proposal-run_metric-claim.jsonl"
+}

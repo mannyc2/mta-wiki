@@ -1,0 +1,176 @@
+{
+  "id": "codex-residual-normalizer-burst-2026-06-30-b",
+  "created_at": "2026-06-30T08:59:57Z",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_used": false,
+  "summary": "Aggressive reset-window cleanup using parallel read-only Codex scouts and deterministic main-thread implementation. Implemented exact normalizer, route-scope, and retirement slices while keeping validation clean.",
+  "baseline": {
+    "validate_issues": 0,
+    "event_family_other": 321,
+    "source_gap_kind_other": 13,
+    "project_document_time_status_unresolved": 86,
+    "project_document_time_status_missing": 82,
+    "project_document_time_status_other": 4,
+    "project_family_unresolved": 16,
+    "project_family_missing": 6,
+    "project_family_other": 10,
+    "route_records": 321,
+    "route_type_normalized_missing": 1,
+    "route_scopes": {
+      "true_route": 300,
+      "split_candidate": 11,
+      "aggregate_list_context": 9,
+      "data_only_scope": 1
+    },
+    "relation_family_other_or_missing": 0,
+    "treatment_family_other_or_missing": 0,
+    "entity_unsuppressed_duplicate_identity_pairs": 0
+  },
+  "final_counts": {
+    "validate_issues": 0,
+    "canonical_records": 84042,
+    "wiki_pages": 7338,
+    "event_family_other": 315,
+    "source_gap_kind_other": 10,
+    "project_document_time_status_unresolved": 83,
+    "project_family_unresolved": 14,
+    "route_records": 320,
+    "route_type_normalized_missing": 0,
+    "route_scopes": {
+      "true_route": 301,
+      "split_candidate": 9,
+      "aggregate_list_context": 9,
+      "data_only_scope": 1
+    }
+  },
+  "implemented_slices": [
+    {
+      "bucket": "source_gap_kind",
+      "targets": ["gap_hexagon-data-note"],
+      "change": "Map exact data_provenance source gaps to methodology_or_comparability."
+    },
+    {
+      "bucket": "route_retirement",
+      "targets": ["route_34th-st-bus-priority"],
+      "submissions_retired": ["sub_c2c125c9df1f1ebb"],
+      "change": "Retire a project-shaped 34th Street Bus Priority submission masquerading as a route; the source-backed project record remains."
+    },
+    {
+      "bucket": "event_family",
+      "targets": [
+        "event_meeting-doc-127701-fare-increase-jan2025",
+        "event_meeting-doc-127701-fare-increase-mar2027"
+      ],
+      "change": "Map payload-proven fare/toll financial-plan assumptions to planning."
+    },
+    {
+      "bucket": "project_family_status",
+      "targets": [
+        "project_meeting-doc-140676-student-incentive",
+        "project_meeting-doc-140676-fare-gate-strategy"
+      ],
+      "change": "Classify Student MetroCard Incentive Program as fare_program and Long-term Fare Gate Strategy as planned."
+    },
+    {
+      "bucket": "source_gap_kind",
+      "targets": ["gap_coney-island-signal-cables"],
+      "change": "Map as-built drawings/signal-cable missing-information source gap to data_unavailable."
+    },
+    {
+      "bucket": "event_family",
+      "targets": [
+        "event_meeting-doc-124251-bridge-replacement-mt-vernon",
+        "event_meeting-doc-124251-mow-rail-tie-replacement",
+        "event_meeting-doc-124251-sogr-pleasantville-chappaqua"
+      ],
+      "change": "Map payload-proven Metro-North SOGR infrastructure-project records to implementation."
+    },
+    {
+      "bucket": "project_family_status",
+      "targets": ["project_meeting-doc-98231-mnr-laser-train"],
+      "change": "Map Metro-North laser-train adoption to accessibility_or_safety and pilot."
+    },
+    {
+      "bucket": "route_scope",
+      "targets": ["route_bx35", "route_m100-ace"],
+      "guarded_negative": "route_m101 remains split_candidate due route-specific SBS proposal evidence.",
+      "change": "Add exact local_sbs_context_spillover materializer guard for Bx35/M100 local route records with contextual SBS classifier spillover."
+    },
+    {
+      "bucket": "event_family",
+      "targets": ["event_170996-boldyn-cellular-announcement"],
+      "change": "Map Boldyn subway cellular-service announcement private event to milestone."
+    },
+    {
+      "bucket": "project_status",
+      "targets": ["project_grand-central-terminal-train-shed"],
+      "change": "Use merged Sector 1 construction evidence to set document_time_status under_construction."
+    },
+    {
+      "bucket": "source_gap_kind",
+      "targets": ["gap_time-did-not-permit-discussion-cb4"],
+      "change": "Map meeting time-constraint gap with missed curbside-activity discussion to data_not_collected."
+    }
+  ],
+  "scout_lanes": [
+    {
+      "bucket": "relations",
+      "outcome": "relation_family other/missing is already 0; no rule recommended."
+    },
+    {
+      "bucket": "treatments",
+      "outcome": "treatment_family other/missing is already 0; broad raw-kind records are already handled by guarded rules."
+    },
+    {
+      "bucket": "entities",
+      "outcome": "entity duplicate identity-key pressure has 0 unsuppressed pairs; existing do-not-merge overrides cover duplicate buckets."
+    },
+    {
+      "bucket": "routes",
+      "outcome": "implemented Bx35/M100 local-SBS spillover guard; aggregate bundles remain intentionally unresolved."
+    }
+  ],
+  "verification": {
+    "normalizers_test": {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "result": "pass",
+      "tests": 256,
+      "expects": 3744
+    },
+    "materialize_test": {
+      "command": "bun test packages/pipeline/test/materialize/materialize.test.ts",
+      "result": "pass",
+      "tests": 49,
+      "expects": 825
+    },
+    "typecheck": {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    "materialize": {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "pass",
+      "sqlite_fts_quick_check": "ok"
+    },
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass",
+      "issues": 0
+    }
+  },
+  "remaining_lanes": [
+    "event_family other residuals: 315, especially generic public/private/event venue tails that need exact proof before mapping",
+    "source_gap kind other residuals: 10; broad caveat/scope/partial-extraction/implementation_challenge records intentionally left unresolved",
+    "project document_time_status unresolved: 83",
+    "project_family unresolved: 14",
+    "route split candidates: 9, including intentional aggregate/local-limited/proposal cases",
+    "route aggregate/list records and broad bundle policy remain intentionally conservative"
+  ],
+  "next_recommended_subagent_fanout": [
+    "event public/private/event residual singleton scout",
+    "project exact-status/family residual scout",
+    "route split-candidate policy scout for remaining 9",
+    "source-gap remaining 10 no-broadening scout"
+  ]
+}

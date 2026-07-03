@@ -1,0 +1,145 @@
+{
+  "id": "project-identity-jci-phase2-retarget",
+  "date": "2026-07-01",
+  "mode": "codex_deterministic_post_ingest_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "pioneer",
+    "openai",
+    "deepseek",
+    "vllm",
+    "chandra"
+  ],
+  "bucket": {
+    "name": "non_other_project_duplicate_identity",
+    "example": "Jamaica Capacity Improvement parent versus Jamaica Capacity Improvement Project Phase 2",
+    "high_confidence_issue": "A source-backed Phase 2 project observation from meeting_doc_121326 explicitly targeted the broader parent Jamaica Capacity Improvement Project, donating Phase 2 objectives and source evidence to the parent record."
+  },
+  "before": {
+    "validation": {
+      "submissions": 98104,
+      "canonical_records": 84031,
+      "wiki_pages": 7334,
+      "issues": 0
+    },
+    "parent_record": {
+      "record_id": "project_jamaica-capacity-improvement",
+      "had_submission_id": "sub_de6bdd730c42d572",
+      "had_source_id": "meeting_doc_121326",
+      "had_phase2_objective_text": true
+    },
+    "phase2_record": {
+      "record_id": "project_jamaica-capacity-improvement-phase2",
+      "had_replacement_submission_id": false,
+      "had_source_id": false
+    },
+    "existing_guardrail": {
+      "do_not_merge": [
+        "project_jamaica-capacity-improvement",
+        "project_jamaica-capacity-improvement-phase2"
+      ],
+      "source_decision": "data/review_notes/codex-identity-dnm-batch197-prep.json#codex-identity-dnm-batch197-prep"
+    }
+  },
+  "changes": {
+    "retired_submission": {
+      "submission_id": "sub_de6bdd730c42d572",
+      "reason": "Retargeted away from the broad Jamaica Capacity Improvement parent because the label, local observation id, description, and cited evidence are for Jamaica Capacity Improvement Project Phase 2."
+    },
+    "replacement_submission": {
+      "submission_id": "sub_b94c93591fecf207",
+      "file": "data/submissions/2026-07-01_codex_project_identity_jci_phase2_retarget.jsonl",
+      "target_record_id": "project_jamaica-capacity-improvement-phase2",
+      "source_id": "meeting_doc_121326",
+      "preserved_evidence_ids": [
+        "meeting_doc_121326#p070_c0009",
+        "meeting_doc_121326#p072_c0008"
+      ]
+    },
+    "normalization": {
+      "project_name": "Jamaica Capacity Improvement Project Phase 2",
+      "project_family": "capital_or_infrastructure"
+    }
+  },
+  "after": {
+    "validation": {
+      "submissions": 98105,
+      "canonical_records": 84029,
+      "wiki_pages": 7334,
+      "issues": 0
+    },
+    "parent_record": {
+      "record_id": "project_jamaica-capacity-improvement",
+      "has_bad_submission": false,
+      "has_replacement_submission": false,
+      "has_source_id_meeting_doc_121326": false,
+      "has_phase2_objective_text": false,
+      "submission_count": 12
+    },
+    "phase2_record": {
+      "record_id": "project_jamaica-capacity-improvement-phase2",
+      "has_bad_submission": false,
+      "has_replacement_submission": true,
+      "has_source_id_meeting_doc_121326": true,
+      "has_phase2_objective_text": true,
+      "project_family": "capital_or_infrastructure",
+      "submission_count": 8
+    }
+  },
+  "commands": [
+    "bun -e 'JSON.parse(await Bun.file(\"data/submission-overrides/retired.json\").text()); console.log(\"retired json ok\")'",
+    "bun -e 'const text=await Bun.file(\"data/submissions/2026-07-01_codex_project_identity_jci_phase2_retarget.jsonl\").text(); for (const [i,line] of text.trim().split(/\\n/).entries()) JSON.parse(line); console.log(\"submission jsonl ok\", text.trim().split(/\\n/).length)'",
+    "bun test packages/pipeline/test/materialize/materialize.test.ts",
+    "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "sqlite3 data/canonical.db 'PRAGMA quick_check;'"
+  ],
+  "verification": {
+    "focused_tests": {
+      "materialize_test_pass": 56,
+      "expect_calls": 859
+    },
+    "materialize": {
+      "materialized_submissions": 93081,
+      "total_submissions": 98105,
+      "retired_submissions_skipped": 246,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "sqlite_quick_check": "ok",
+    "validate_issues": 0
+  },
+  "files_changed": [
+    "data/submission-overrides/retired.json",
+    "data/submissions/2026-07-01_codex_project_identity_jci_phase2_retarget.jsonl",
+    "data/review_notes/codex-project-identity-jci-phase2-retarget-2026-07-01.json",
+    "LOG.md",
+    "data/canonical.db",
+    "data/canonical/projects.jsonl",
+    "wiki/projects/project_jamaica-capacity-improvement.md",
+    "wiki/projects/project_jamaica-capacity-improvement-phase2.md"
+  ],
+  "unresolved": [
+    "The broad parent record still preserves historical project_family conflict values from other accepted evidence and was not rewritten in this slice.",
+    "Other Jamaica Capacity Improvement phase/program sibling records remain for separate review rather than broad merging."
+  ],
+  "next_lanes": [
+    {
+      "lane": "project_duplicate_identity",
+      "candidate": "project_meeting-doc-108036-cops-cameras-care -> project_cops-cameras-care-initiative",
+      "source": "Codex subagent 019f1fe0-465e-70a3-97ef-fec3ed43bf6f read-only audit",
+      "recommended_fix": "identity merge alias"
+    },
+    {
+      "lane": "route_identity_guardrail",
+      "candidate": "Sparse SBS route-index records and duplicate source-local route_34th_st_sbs ids",
+      "source": "Codex subagent 019f1fe0-60d5-72e2-8a62-7d2e7c99878c read-only audit",
+      "recommended_fix": "identity-review regression and ambiguous local endpoint guard"
+    }
+  ]
+}

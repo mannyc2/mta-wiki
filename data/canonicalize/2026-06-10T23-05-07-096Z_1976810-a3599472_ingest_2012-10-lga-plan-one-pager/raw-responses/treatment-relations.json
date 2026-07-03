@@ -1,0 +1,86 @@
+{
+  "run_id": "2026-06-10T23-05-07-096Z_1976810-a3599472_ingest_2012-10-lga-plan-one-pager",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T02:57:55.430Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "relate-lga-manhattan-bronx-to-project",
+        "local_observation_id": "treatment_lga_manhattan_bronx_improvements_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "treatment_lga-manhattan-bronx-improvements-2012",
+            "description": "Manhattan/Bronx SBS improvements are part of the LaGuardia Airport Access Alternatives Analysis project",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p001_c0016",
+                "source_quote": "Limited stops Dedicated bus lanes Transit signal priority Off-board fare payment Luggage racks"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p001_c0016 lists the improvement features for the Manhattan/Bronx SBS routes under the 'Proposed New Routes' section of the LaGuardia Airport Access Alternatives Analysis handout, confirming these treatments belong to project_lga-access-aa.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0016",
+            "source_quote": "Limited stops Dedicated bus lanes Transit signal priority Off-board fare payment Luggage racks"
+          },
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0007",
+            "source_quote": "Proposed New Routes"
+          },
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0003",
+            "source_quote": "LaGuardia Airport (LGA) is the only New York area airport not served by rapid transit. Local buses serving the airport are slowed by long passenger boarding times and by operating in mixed traffic on local streets. In May 2011 the LaGuardia Airport Access Alternatives Analysis began with the purpose of developing faster and more reliable transit service to LGA."
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-lga-queens-to-project",
+        "local_observation_id": "treatment_lga_queens_improvements_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "treatment_lga-queens-improvements-2012",
+            "description": "Queens SBS improvements are part of the LaGuardia Airport Access Alternatives Analysis project",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p001_c0024",
+                "source_quote": "Limited stops Highway operation Transit signal priority"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p001_c0024 lists the improvement features for the Queens SBS routes under the 'Proposed New Routes' section of the LaGuardia Airport Access Alternatives Analysis handout, confirming these treatments belong to project_lga-access-aa.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0024",
+            "source_quote": "Limited stops Highway operation Transit signal priority"
+          },
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0003",
+            "source_quote": "In May 2011 the LaGuardia Airport Access Alternatives Analysis began with the purpose of developing faster and more reliable transit service to LGA."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-56-09-413Z_2111393-1a90c56f_canonicalize_2026-06-10t23-05-07-096z-1976810-a3599472-ingest-2012-10-lga-plan-one-pager-treatment-relations"
+}

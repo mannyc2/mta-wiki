@@ -1,0 +1,41 @@
+{
+  "run_id": "2026-06-10T23-03-12-876Z_1976810-853fca30_ingest_2012-05-webster-cac2-summary",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T02:43:33.442Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "bx41-webster-cac2-new",
+        "local_observation_id": "route_bx41_2012_05_webster_cac2",
+        "decision": "new",
+        "rationale": "Observation already resolves to route_webster-ave-sbs (BX41+ SBS). The source mentions 'Bx41 bus service to East 138th Street needs to be restored' in the context of the Webster Avenue SBS planning—the Bx41 service discussed is the route being studied for SBS conversion. No contradictory service_variant in payload. Source 2012_05_webster_cac2_summary appears in the record's source_ids, and alias route_bx41-201205-webster-cac2 is already registered. Closest match is own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p002_c0006",
+            "source_quote": "Very important to serve public housing at East 138th Street and 3rd Avenue. Bx41 bus service to East 138th Street needs to be restored."
+          }
+        ]
+      },
+      {
+        "decision_id": "bx12-sbs-webster-cac2-new",
+        "local_observation_id": "route_bx12_sbs_2012_05_webster_cac2",
+        "decision": "new",
+        "rationale": "Observation already resolves to route_bx12-plus (BX12+ SBS). Payload carries service_variant:sbs and route_type:SBS matching the base record exactly. Source p001_c0007 explicitly cites 'the results of the Bx12 SBS on Fordham Road.' Source 2012_05_webster_cac2_summary appears in the record's source_ids, and alias route_bx12-sbs-2012-05-webster-cac2 is already registered. Closest match is own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p001_c0007",
+            "source_quote": "The presentation also described the features of Bus Rapid Transit (BRT) and Select Bus Service (SBS) and the results of the Bx12 SBS on Fordham Road."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-39-44-928Z_2111393-f15e7d09_canonicalize_2026-06-10t23-03-12-876z-1976810-853fca30-ingest-2012-05-webster-cac2-summary-route-identity"
+}

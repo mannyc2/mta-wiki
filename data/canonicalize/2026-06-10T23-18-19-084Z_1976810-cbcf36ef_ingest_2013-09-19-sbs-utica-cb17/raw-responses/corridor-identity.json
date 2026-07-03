@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T23-18-19-084Z_1976810-cbcf36ef_ingest_2013-09-19-sbs-utica-cb17",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T03:59:04.728Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "utica-av-new",
+        "local_observation_id": "corridor_utica_ave_st_johns_church_cb17",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id corridor_utica-av which has the same source_id (2013_09_19_sbs_utica_cb17) and alias (corridor_utica-ave-st-johns-church-cb17) in the registry. The observation's own base_record_id is the correct canonical record; no link to a different record needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19_sbs_utica_cb17",
+            "block_id": "p002_c0004",
+            "source_quote": "Focus on Utica Avenue from St. Johns Place to Church Avenue"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-58-07-623Z_2111393-2e78b53e_canonicalize_2026-06-10t23-18-19-084z-1976810-cbcf36ef-ingest-2013-09-19-sbs-utica-cb17-corridor-identity"
+}

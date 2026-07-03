@@ -1,0 +1,288 @@
+{
+  "note_id": "codex-identity-batch123-prep",
+  "batch_id": "identity123",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "scope": {
+    "description": "Codex-only deterministic identity cleanup prep for global corridor and route records only.",
+    "author": "codex",
+    "included_global_kinds": [
+      "corridor",
+      "route"
+    ],
+    "excluded_global_kinds": [
+      "entity",
+      "project",
+      "treatment_component",
+      "claim",
+      "metric_claim",
+      "event",
+      "source_gap"
+    ],
+    "selection_policy": "Only high-confidence same-route aliases were queued. Route aliases require exact route_id match, same or compatible service type/variant, and no local/SBS/LTD/express/subway conflict. Corridor candidates were inspected, but no fresh corridor alias survived the exact same geography/limits guard without introducing a target-chain concern."
+  },
+  "batch": "identity123",
+  "global_kinds": [
+    "corridor",
+    "route"
+  ],
+  "prepared_count": 3,
+  "aliases": [
+    {
+      "kind": "route",
+      "global_kind": "route",
+      "canonical_id": "route_b45-flatbush-ave-oct2025",
+      "target_id": "route_b45-flatbush-ave-oct2025",
+      "alias_id": "route_b45-flatbush-sept2025",
+      "canonical_name": "B45",
+      "alias_name": "B45",
+      "reason": "Same Brooklyn B45 local bus route in the Flatbush Avenue bus-priority context. Both records have route_id B45 and Brooklyn borough context; the alias is explicitly typed local, while the target has no conflicting service variant and carries the same B45/B63 terminal-swap evidence.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "route_b45-flatbush-ave-oct2025",
+          "record_kind": "route",
+          "route_id": "B45",
+          "display_name": "B45",
+          "borough_normalized": "brooklyn",
+          "source_ids": [
+            "flatbush_ave_bus_priority_cb6_oct2025",
+            "flatbush_ave_cb2_jun2024",
+            "flatbush_ave_cb8_jun2024"
+          ],
+          "evidence_refs": [
+            "flatbush_ave_bus_priority_cb6_oct2025#p013_c0001",
+            "flatbush_ave_bus_priority_cb6_oct2025#p013_c0002",
+            "flatbush_ave_bus_priority_cb6_oct2025#p013_c0003"
+          ],
+          "source_quote": "Potential Terminal Swap - B45 & B63; WB B45 would cross Flatbush Ave and continue along Atlantic Ave and terminate at Brooklyn Bridge Park."
+        },
+        "alias": {
+          "record_id": "route_b45-flatbush-sept2025",
+          "record_kind": "route",
+          "route_id": "B45",
+          "service_variant": "local",
+          "route_type_normalized": "local",
+          "display_name": "B45",
+          "borough_normalized": "brooklyn",
+          "source_ids": [
+            "flatbush_ave_bus_priority_cb8_oct2025",
+            "flatbush_ave_bus_priority_sept2025"
+          ],
+          "evidence_refs": [
+            "flatbush_ave_bus_priority_sept2025#p016_c0001",
+            "flatbush_ave_bus_priority_sept2025#p016_c0002",
+            "flatbush_ave_bus_priority_cb8_oct2025#p013_c0001"
+          ],
+          "source_quote": "Potential Terminal Swap - B45 & B63; WB B45 would cross Flatbush Ave and continue along Atlantic Ave and terminate at Brooklyn Bridge Park."
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact route_id match, same Brooklyn context, alias local typing is compatible with target blank typing, and no SBS/LTD/express/subway conflict. Alias was absent from data/identity-overrides/merges.json and visible identity prep through identity122; pair was absent from do-not-merge."
+    },
+    {
+      "kind": "route",
+      "global_kind": "route",
+      "canonical_id": "route_b69-flatbush-ave-apr2026",
+      "target_id": "route_b69-flatbush-ave-apr2026",
+      "alias_id": "route_b69-flatbush-ave-oct2025",
+      "canonical_name": "B69",
+      "alias_name": "B69",
+      "reason": "Same Brooklyn B69 local bus route in the Flatbush Avenue bus-priority context. Both records have route_id B69 and Brooklyn borough context; the target is typed local and includes the September 2025 and April 2026 B69 reroute/detour evidence, while the alias is an October 2025 B69 reroute duplicate with no conflicting variant.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "route_b69-flatbush-ave-apr2026",
+          "record_kind": "route",
+          "route_id": "B69",
+          "service_variant": "local",
+          "route_type_normalized": "local",
+          "display_name": "B69",
+          "borough_normalized": "brooklyn",
+          "source_ids": [
+            "flatbush_ave_bus_priority_cb8_oct2025",
+            "flatbush_ave_bus_priority_mtp_briefing_apr2026",
+            "flatbush_ave_bus_priority_sept2025",
+            "flatbush_ave_cb2_jun2025",
+            "flatbush_ave_cb6_jun2025",
+            "flatbush_ave_cb8_jun2024",
+            "flatbush_ave_cb8_jun2025"
+          ],
+          "evidence_refs": [
+            "flatbush_ave_bus_priority_mtp_briefing_apr2026#p015_c0001",
+            "flatbush_ave_bus_priority_mtp_briefing_apr2026#p015_c0003",
+            "flatbush_ave_bus_priority_sept2025#p017_c0001",
+            "flatbush_ave_bus_priority_sept2025#p017_c0002"
+          ],
+          "source_quote": "B69 Temporary Detour; B69 buses turn right onto Flatbush Av from Park Pl, traverse Grand Army Plaza, and continue along the regular route."
+        },
+        "alias": {
+          "record_id": "route_b69-flatbush-ave-oct2025",
+          "record_kind": "route",
+          "route_id": "B69",
+          "display_name": "B69",
+          "borough_normalized": "brooklyn",
+          "source_ids": [
+            "flatbush_ave_bus_priority_cb6_oct2025",
+            "flatbush_ave_cb2_jun2024"
+          ],
+          "evidence_refs": [
+            "flatbush_ave_bus_priority_cb6_oct2025#p014_c0001",
+            "flatbush_ave_bus_priority_cb6_oct2025#p014_c0002",
+            "flatbush_ave_bus_priority_cb6_oct2025#p014_c0003"
+          ],
+          "source_quote": "Potential Reroutes - B69; alternate routing prevents turning B69 from blocking B41 on Flatbush Ave."
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact route_id match, same Brooklyn context, target local typing is compatible with alias blank typing, and no SBS/LTD/express/subway conflict. Alias was absent from data/identity-overrides/merges.json and visible identity prep through identity122; pair was absent from do-not-merge."
+    },
+    {
+      "kind": "route",
+      "global_kind": "route",
+      "canonical_id": "route_meeting-doc-106021-hudson-line",
+      "target_id": "route_meeting-doc-106021-hudson-line",
+      "alias_id": "route_mnrr-hudson-line-2022",
+      "canonical_name": "Hudson Line",
+      "alias_name": "Hudson Line",
+      "reason": "Same Metro-North Hudson Line route. Both records have route_id Hudson Line and route_type_normalized commuter_rail; the target aggregates multiple Metro-North Hudson Line records, while the alias is a 2022 Hudson Line performance/ridership duplicate.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "route_meeting-doc-106021-hudson-line",
+          "record_kind": "route",
+          "route_id": "Hudson Line",
+          "route_type_normalized": "commuter_rail",
+          "display_name": "Hudson Line",
+          "operator": "MTA Metro-North Railroad",
+          "source_ids": [
+            "meeting_doc_106021",
+            "meeting_doc_160111",
+            "meeting_doc_170821",
+            "meeting_doc_171491",
+            "meeting_doc_186726",
+            "meeting_doc_196921",
+            "meeting_doc_199096",
+            "meeting_doc_201556"
+          ],
+          "evidence_refs": [
+            "meeting_doc_106021#p010_c0002",
+            "meeting_doc_160111#p008_c0002",
+            "meeting_doc_171491#p003_c0001",
+            "meeting_doc_171491#p003_c0003"
+          ],
+          "source_quote": "Hudson Line Ridership - Commutation; Hudson Line Ridership - Non-Commutation; Total Hudson Line."
+        },
+        "alias": {
+          "record_id": "route_mnrr-hudson-line-2022",
+          "record_kind": "route",
+          "route_id": "Hudson Line",
+          "route_type_normalized": "commuter_rail",
+          "display_name": "Hudson Line",
+          "source_ids": [
+            "meeting_doc_111726",
+            "meeting_doc_138236"
+          ],
+          "evidence_refs": [
+            "meeting_doc_111726#p027_c0002",
+            "meeting_doc_138236#p001_c0004"
+          ],
+          "source_quote": "The Hudson, Harlem, and New Haven Lines performed at 97.0%, 97.3%, and 96.8% respectively."
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact route_id match and exact commuter_rail type match. This proposal does not merge Hudson Line with Harlem Line, New Haven Line, subway routes, or bus variants. Alias was absent from data/identity-overrides/merges.json and visible identity prep through identity122; pair was absent from do-not-merge."
+    }
+  ],
+  "guard_summary": {
+    "global_kinds_limited_to": [
+      "corridor",
+      "route"
+    ],
+    "prepared_count": 3,
+    "applied_merge_shape_checked": "data/identity-overrides/merges.json stores alias_id -> target_id entries under aliases.<kind>.",
+    "visible_prior_identity_batches_checked": "Visible prep artifacts run through codex-identity-batch120-prep.json; no codex-identity-batch121-prep.json or codex-identity-batch122-prep.json was visible.",
+    "exclusion_checks": [
+      "Selected alias IDs had no hits as alias keys in data/identity-overrides/merges.json.",
+      "Selected alias IDs had no hits as alias_id in visible data/review_notes/codex-identity-batch*-prep.json through identity122.",
+      "Selected target/alias pairs had zero hits in data/identity-overrides/do-not-merge.json."
+    ],
+    "route_guards": [
+      "Exact route_id match required.",
+      "Blank service typing was allowed only when paired with compatible local bus typing and no contrary local/SBS/LTD/express/subway signal.",
+      "Commuter-rail route aliases required exact route_id and exact commuter_rail type.",
+      "No local/SBS/LTD/express/subway variant conflict was included."
+    ],
+    "corridor_guards": [
+      "Corridor candidates were inspected with exact street/name, limits, and borough matching.",
+      "Different limits, uncertain boroughs, broader geography, phase-specific false friends, and target-chain candidates were skipped.",
+      "No corridor alias is proposed in this batch."
+    ]
+  },
+  "command_evidence": {
+    "deterministic_only": true,
+    "commands_run": [
+      {
+        "command": "rg --files data | rg '(^data/identity-overrides/merges\\\\.json$|^data/review_notes/.*identity.*batch|^data/canonical/(corridor|route)\\\\.jsonl$|^LOG\\\\.md$)'",
+        "purpose": "Locate applied merge overrides, visible identity prep notes, and canonical corridor/route data."
+      },
+      {
+        "command": "sed -n '1,160p' LOG.md",
+        "purpose": "Skim the durable project log before preparing the batch."
+      },
+      {
+        "command": "jq 'keys, (to_entries[0:5])' data/identity-overrides/merges.json",
+        "purpose": "Confirm merges.json shape as aliases.<kind> alias_id -> target_id."
+      },
+      {
+        "command": "head -n 3 data/canonical/corridors.jsonl && head -n 3 data/canonical/routes.jsonl",
+        "purpose": "Inspect canonical corridor/route record shapes."
+      },
+      {
+        "command": "jq '.' data/review_notes/codex-identity-batch120-prep.json",
+        "purpose": "Inspect the latest visible identity prep artifact schema."
+      },
+      {
+        "command": "node read-only alias exclusion count over merges.json and data/review_notes/codex-identity-batch*-prep.json through identity122",
+        "purpose": "Build applied/prepared alias exclusion sets."
+      },
+      {
+        "command": "node read-only route candidate grouping over data/canonical/routes.jsonl",
+        "purpose": "Group route records by exact route_id, borough, and compatible service type; exclude aliases already applied or prepared."
+      },
+      {
+        "command": "node read-only corridor candidate grouping over data/canonical/corridors.jsonl",
+        "purpose": "Group corridor records by normalized corridor name/street, limits, and borough; no fresh high-confidence corridor alias was selected."
+      },
+      {
+        "command": "node read-only selected-record inspection over data/canonical/routes.jsonl and data/canonical/corridors.jsonl",
+        "purpose": "Inspect payloads, source_ids, record_aliases, and evidence_refs for selected candidates and skipped corridor candidates."
+      },
+      {
+        "command": "rg -n selected route and block ids under raw/sources/*/blocks.jsonl",
+        "purpose": "Confirm source-block text for B45, B69, and Hudson Line evidence references."
+      },
+      {
+        "command": "node read-only selected alias exclusion check against merges.json, visible prior identity prep through identity122, and do-not-merge.json",
+        "purpose": "Confirm selected aliases were not already applied/prepared and selected pairs were not do-not-merge pairs."
+      }
+    ],
+    "nonfatal_notes": [
+      "A couple of exploratory jq count/index expressions returned errors while inspecting object shape; they did not modify files and were replaced by read-only Node checks."
+    ]
+  },
+  "forbidden_commands_not_run": [
+    "canonicalize",
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema-propose",
+    "ontology-normalize-run",
+    "ingest --profile",
+    "write --profile",
+    "materialize",
+    "validate",
+    "export-jsonl",
+    "DB publish",
+    "DB repair"
+  ]
+}

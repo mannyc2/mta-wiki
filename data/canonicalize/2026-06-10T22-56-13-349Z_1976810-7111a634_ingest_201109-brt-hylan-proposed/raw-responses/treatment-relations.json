@@ -1,0 +1,537 @@
+{
+  "run_id": "2026-06-10T22-56-13-349Z_1976810-7111a634_ingest_201109-brt-hylan-proposed",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T01:43:24.154Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "relate-peak-bus-lane-steuben-midland",
+        "local_observation_id": "treatment_peak_period_bus_lane_steuben_to_midland",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "treatment_peak-period-bus-lane-steuben-to-midland",
+            "description": "Peak period bus lane on Hylan Boulevard between Steuben Street and Midland Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p001_c0005",
+                "source_quote": "▪ In effect 6am - 9am and 3pm - 7pm Monday thru Friday ▪ For S79 SBS and all local and express bus services ▪ Vehicles making next right turn permitted in bus lane"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_peak-period-bus-lane-steuben-to-midland",
+            "description": "Peak period bus lane proposed as part of Hylan Boulevard Transportation Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p001_c0005",
+                "source_quote": "▪ In effect 6am - 9am and 3pm - 7pm Monday thru Friday ▪ For S79 SBS and all local and express bus services ▪ Vehicles making next right turn permitted in bus lane"
+              }
+            ]
+          }
+        ],
+        "rationale": "Treatment described on p001_c0005 of the Hylan Boulevard BRT proposed source, located on Hylan Boulevard between Steuben Street and Midland Avenue within both the corridor and project scope.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_proposed",
+            "block_id": "p001_c0005",
+            "source_quote": "▪ In effect 6am - 9am and 3pm - 7pm Monday thru Friday ▪ For S79 SBS and all local and express bus services ▪ Vehicles making next right turn permitted in bus lane"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-tsp-hylan",
+        "local_observation_id": "treatment_tsp_hylan_blvd",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "treatment_tsp-hylan-blvd",
+            "description": "Transit Signal Priority along Hylan Boulevard study corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p001_c0003",
+                "source_quote": "Transit Signal Priority (TSP) extends green time or shortens red time for buses"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_tsp-hylan-blvd",
+            "description": "TSP proposed as part of Hylan Boulevard Transportation Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p001_c0003",
+                "source_quote": "Transit Signal Priority (TSP) extends green time or shortens red time for buses"
+              }
+            ]
+          }
+        ],
+        "rationale": "TSP treatment described on p001_c0003 of the Hylan Boulevard BRT proposed source, explicitly applying to Hylan Boulevard from Steuben Street to Richmond Avenue, the study corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_proposed",
+            "block_id": "p001_c0003",
+            "source_quote": "Transit Signal Priority (TSP) extends green time or shortens red time for buses"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-sbs-stations-steuben-midland",
+        "local_observation_id": "treatment_sbs_stations_steuben_to_midland",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "treatment_sbs-stations-steuben-to-midland",
+            "description": "Four SBS stations between Steuben Street and Midland Avenue on Hylan Boulevard",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p001_c0005",
+                "source_quote": "Select Bus Service stations at four locations between Steuben Street and Midland Avenue ▪ Faster fare collection, initially for S79 SBS"
+              },
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p004_c0004",
+                "source_quote": "SBS Stations: Indicated by black circles at Clove Rd, Old Town Rd, Seaview Ave, and Midland Ave"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_sbs-stations-steuben-to-midland",
+            "description": "SBS stations proposed as part of Hylan Boulevard Transportation Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p001_c0005",
+                "source_quote": "Select Bus Service stations at four locations between Steuben Street and Midland Avenue ▪ Faster fare collection, initially for S79 SBS"
+              },
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p004_c0004",
+                "source_quote": "SBS Stations: Indicated by black circles at Clove Rd, Old Town Rd, Seaview Ave, and Midland Ave"
+              }
+            ]
+          }
+        ],
+        "rationale": "SBS stations described across two blocks in the Hylan BRT proposed source, explicitly at Clove Rd, Old Town Rd, Seaview Ave, and Midland Ave on Hylan Boulevard, within the study corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_proposed",
+            "block_id": "p001_c0005",
+            "source_quote": "Select Bus Service stations at four locations between Steuben Street and Midland Avenue ▪ Faster fare collection, initially for S79 SBS"
+          },
+          {
+            "source_id": "201109_brt_hylan_proposed",
+            "block_id": "p004_c0004",
+            "source_quote": "SBS Stations: Indicated by black circles at Clove Rd, Old Town Rd, Seaview Ave, and Midland Ave"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-bus-lay-by-midland-tysens",
+        "local_observation_id": "treatment_bus_lay_by_midland_to_tysens",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "treatment_bus-lay-by-midland-to-tysens",
+            "description": "Bus lay-by on Hylan Boulevard between Midland Avenue and Tysens Lane",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p005_c0004",
+                "source_quote": "Bus lay-by improves bus loading and traffic flow (long term improvement)"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_bus-lay-by-midland-to-tysens",
+            "description": "Bus lay-by proposed as long-term improvement in Hylan Boulevard Transportation Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p005_c0004",
+                "source_quote": "Bus lay-by improves bus loading and traffic flow (long term improvement)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Bus lay-by described on p005_c0004 of the Hylan BRT proposed source, on Hylan Boulevard between Midland Avenue and Tysens Lane within the study corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_proposed",
+            "block_id": "p005_c0004",
+            "source_quote": "Bus lay-by improves bus loading and traffic flow (long term improvement)"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-signal-timing-improvements",
+        "local_observation_id": "treatment_signal_timing_improvements",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "treatment_signal-timing-improvements",
+            "description": "Traffic signal timing improvements on Hylan Boulevard between Midland Avenue and Tysens Lane",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p005_c0005",
+                "source_quote": "Traffic Signal Timing Improvements reduce delays"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_signal-timing-improvements",
+            "description": "Signal timing improvements proposed as part of Hylan Boulevard Transportation Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p005_c0005",
+                "source_quote": "Traffic Signal Timing Improvements reduce delays"
+              }
+            ]
+          }
+        ],
+        "rationale": "Signal timing improvements described on p005_c0005 of the Hylan BRT proposed source, on Hylan Boulevard between Midland Avenue and Tysens Lane within the study corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_proposed",
+            "block_id": "p005_c0005",
+            "source_quote": "Traffic Signal Timing Improvements reduce delays"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-pedestrian-refuge-island",
+        "local_observation_id": "treatment_pedestrian_refuge_island",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "treatment_pedestrian-refuge-island_2",
+            "description": "Pedestrian refuge island at Hylan Boulevard / Richmond Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p006_c0004",
+                "source_quote": "Pedestrian Refuge Island helps reduce crossing distances for pedestrians"
+              },
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p007_c0006",
+                "source_quote": "Pedestrian Refuge Island helps reduce crossing distances for pedestrians"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_pedestrian-refuge-island_2",
+            "description": "Pedestrian refuge island proposed as part of Hylan Boulevard Transportation Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p006_c0004",
+                "source_quote": "Pedestrian Refuge Island helps reduce crossing distances for pedestrians"
+              },
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p007_c0006",
+                "source_quote": "Pedestrian Refuge Island helps reduce crossing distances for pedestrians"
+              }
+            ]
+          }
+        ],
+        "rationale": "Pedestrian refuge island appears on two pages (p006, p007) of the Hylan BRT proposed source, at Hylan Boulevard between Tysens Lane and Richmond Avenue and at Richmond Avenue, within the study area.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_proposed",
+            "block_id": "p006_c0004",
+            "source_quote": "Pedestrian Refuge Island helps reduce crossing distances for pedestrians"
+          },
+          {
+            "source_id": "201109_brt_hylan_proposed",
+            "block_id": "p007_c0006",
+            "source_quote": "Pedestrian Refuge Island helps reduce crossing distances for pedestrians"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-sbs-stations-richmond",
+        "local_observation_id": "treatment_sbs_stations_richmond_ave",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "treatment_sbs-stations-richmond-ave",
+            "description": "Seven SBS stations on Richmond Avenue between Hylan Boulevard and SI Mall",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p007_c0008",
+                "source_quote": "Seven Select Bus Service stations between Hylan Boulevard and SI Mall"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_sbs-stations-richmond-ave",
+            "description": "SBS stations on Richmond Avenue proposed as part of Hylan Boulevard Transportation Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p007_c0008",
+                "source_quote": "Seven Select Bus Service stations between Hylan Boulevard and SI Mall"
+              }
+            ]
+          }
+        ],
+        "rationale": "SBS stations on Richmond Avenue described on p007_c0008 of the Hylan BRT proposed source, extending from Hylan Boulevard to SI Mall, part of the overall corridor improvement plan.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_proposed",
+            "block_id": "p007_c0008",
+            "source_quote": "Seven Select Bus Service stations between Hylan Boulevard and SI Mall"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-left-turn-lane-richmond",
+        "local_observation_id": "treatment_left_turn_lane_richmond_ave",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "treatment_left-turn-lane-richmond-ave",
+            "description": "Left turn lane on Richmond Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p007_c0005",
+                "source_quote": "Left turn lane helps reduce traffic congestion"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_left-turn-lane-richmond-ave",
+            "description": "Left turn lane on Richmond Avenue proposed as part of Hylan Boulevard Transportation Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p007_c0005",
+                "source_quote": "Left turn lane helps reduce traffic congestion"
+              }
+            ]
+          }
+        ],
+        "rationale": "Left turn lane on Richmond Avenue described on p007_c0005 of the Hylan BRT proposed source, within the study area that includes Richmond Avenue improvements.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_proposed",
+            "block_id": "p007_c0005",
+            "source_quote": "Left turn lane helps reduce traffic congestion"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-walkability-enhancements",
+        "local_observation_id": "treatment_walkability_enhancements",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "treatment_walkability-enhancements",
+            "description": "Walkability enhancements including resurfacing, pavement markings, pedestrian ramps, sidewalk reconstruction, and pedestrian refuges",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p001_c0007",
+                "source_quote": "▪ Resurface Hylan Boulevard and upgrade median where needed ▪ Replace worn pavement markings ▪ Reconstruct or install new pedestrian ramps ▪ Reconstruct damaged sidewalks ▪ Provide pedestrian refuges in median where feasible"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_walkability-enhancements",
+            "description": "Walkability enhancements proposed as part of Hylan Boulevard Transportation Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p001_c0007",
+                "source_quote": "▪ Resurface Hylan Boulevard and upgrade median where needed ▪ Replace worn pavement markings ▪ Reconstruct or install new pedestrian ramps ▪ Reconstruct damaged sidewalks ▪ Provide pedestrian refuges in median where feasible"
+              }
+            ]
+          }
+        ],
+        "rationale": "Walkability enhancements described on p001_c0007 of the Hylan BRT proposed source, spanning Hylan Boulevard from Steuben Street to Richmond Avenue and Richmond Avenue, covering the full study corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_proposed",
+            "block_id": "p001_c0007",
+            "source_quote": "▪ Resurface Hylan Boulevard and upgrade median where needed ▪ Replace worn pavement markings ▪ Reconstruct or install new pedestrian ramps ▪ Reconstruct damaged sidewalks ▪ Provide pedestrian refuges in median where feasible"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-landscaped-median",
+        "local_observation_id": "treatment_landscaped_median_hylan",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "treatment_landscaped-median-hylan",
+            "description": "Landscaped median on Hylan Boulevard between Tysens Lane and Richmond Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p006_c0005",
+                "source_quote": "If width permits, consider landscaped median to improve drainage and beautify the street"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_landscaped-median-hylan",
+            "description": "Landscaped median proposed as part of Hylan Boulevard Transportation Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p006_c0005",
+                "source_quote": "If width permits, consider landscaped median to improve drainage and beautify the street"
+              }
+            ]
+          }
+        ],
+        "rationale": "Landscaped median described on p006_c0005 of the Hylan BRT proposed source, on Hylan Boulevard between Tysens Lane and Richmond Avenue within the study corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_proposed",
+            "block_id": "p006_c0005",
+            "source_quote": "If width permits, consider landscaped median to improve drainage and beautify the street"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-bus-stop-spacing",
+        "local_observation_id": "treatment_bus_stop_spacing_hylan",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "treatment_bus-stop-spacing-hylan",
+            "description": "Adjusted bus stop spacing on Hylan Boulevard between Tysens Lane and Richmond Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p006_c0006",
+                "source_quote": "Adjust spacing of some bus stops to encourage crossing Hylan Boulevard at traffic light"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_bus-stop-spacing-hylan",
+            "description": "Bus stop spacing adjustment proposed as part of Hylan Boulevard Transportation Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p006_c0006",
+                "source_quote": "Adjust spacing of some bus stops to encourage crossing Hylan Boulevard at traffic light"
+              }
+            ]
+          }
+        ],
+        "rationale": "Bus stop spacing adjustment described on p006_c0006 of the Hylan BRT proposed source, on Hylan Boulevard between Tysens Lane and Richmond Avenue within the study corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_proposed",
+            "block_id": "p006_c0006",
+            "source_quote": "Adjust spacing of some bus stops to encourage crossing Hylan Boulevard at traffic light"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-horiz-alignment",
+        "local_observation_id": "treatment_horiz_alignment_hylan",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "treatment_horiz-alignment-hylan",
+            "description": "Horizontal alignment modification on Hylan Boulevard between Tysens Lane and Richmond Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p006_c0006",
+                "source_quote": "Modify horizontal alignment to improve use of all lanes (within existing right of way)"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_horiz-alignment-hylan",
+            "description": "Horizontal alignment modification proposed as part of Hylan Boulevard Transportation Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_hylan_proposed",
+                "block_id": "p006_c0006",
+                "source_quote": "Modify horizontal alignment to improve use of all lanes (within existing right of way)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Horizontal alignment modification described on p006_c0006 of the Hylan BRT proposed source, on Hylan Boulevard between Tysens Lane and Richmond Avenue within the study corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_proposed",
+            "block_id": "p006_c0006",
+            "source_quote": "Modify horizontal alignment to improve use of all lanes (within existing right of way)"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-40-08-697Z_2111393-88b25096_canonicalize_2026-06-10t22-56-13-349z-1976810-7111a634-ingest-201109-brt-hylan-proposed-treatment-relations"
+}

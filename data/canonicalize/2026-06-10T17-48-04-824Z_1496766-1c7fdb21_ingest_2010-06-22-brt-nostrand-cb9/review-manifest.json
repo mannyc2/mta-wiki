@@ -1,0 +1,16 @@
+{
+  "run_id": "2026-06-10T17-48-04-824Z_1496766-1c7fdb21_ingest_2010-06-22-brt-nostrand-cb9",
+  "generated_at": "2026-06-10T19:51:30.082Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "reviewed_decision_count": 6,
+  "pass_count": 6,
+  "fail_count": 0,
+  "unsure_count": 0,
+  "paths": {
+    "verdicts_jsonl": "data/canonicalize/2026-06-10T17-48-04-824Z_1496766-1c7fdb21_ingest_2010-06-22-brt-nostrand-cb9/verdicts.jsonl",
+    "manifest": "data/canonicalize/2026-06-10T17-48-04-824Z_1496766-1c7fdb21_ingest_2010-06-22-brt-nostrand-cb9/review-manifest.json"
+  }
+}

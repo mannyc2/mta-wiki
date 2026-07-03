@@ -1,0 +1,53 @@
+{
+  "run_id": "2026-06-10T22-56-13-371Z_1976810-f11382ba_ingest_201109-nostrand-cb9-slides",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T01:45:42.535Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "nostrand-ave-rogers-ave-sbs-201109",
+        "local_observation_id": "corridor_nostrand_ave_rogers_ave_sbs_201109",
+        "decision": "new",
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "corridor_nostrand-rogers-20111205",
+            "description": "Both records describe the same Nostrand Ave/Rogers Ave corridor from Williamsburg Bridge to Sheepshead Bay (9.3 miles), served by B44 bus route. Different source presentations (CB9 Sept 2011 vs CB3 Dec 2011) but identical real-world corridor.",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p002_c0001",
+                "source_quote": "Nostrand Ave/Rogers Ave Corridor"
+              },
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p002_c0002",
+                "source_quote": "9.3 miles from Williamsburg Bridge to Sheepshead Bay"
+              }
+            ]
+          }
+        ],
+        "rationale": "Observation already resolves to base_record_id corridor_nostrand-avenue: same source file is listed in that card's source_ids, same streets (Nostrand Avenue, Rogers Avenue), same limits (Williamsburg Bridge to Sheepshead Bay), same 9.3-mile length with B44 service. Per canonicalization rules, when the closest match is the observation's own base_record_id, decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p002_c0001",
+            "source_quote": "Nostrand Ave/Rogers Ave Corridor"
+          },
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p002_c0002",
+            "source_quote": "9.3 miles from Williamsburg Bridge to Sheepshead Bay"
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-44-43-789Z_2111393-409fc5e9_canonicalize_2026-06-10t22-56-13-371z-1976810-f11382ba-ingest-201109-nostrand-cb9-slides-corridor-identity"
+}

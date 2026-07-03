@@ -1,0 +1,127 @@
+{
+  "run_id": "2026-06-10T17-48-04-680Z_1496766-f5d09147_ingest_2010-02-25-brt-1st2nd-cb8",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-10T19:34:04.346Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-tsp-houston-south-ferry",
+        "local_observation_id": "treatment_tsp_houston_south_ferry",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-cb8-2010",
+            "object_id": "treatment_tsp-houston-south-ferry",
+            "description": "Transit signal priority is a feature of the First Ave/Second Ave SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p007_c0005",
+                "source_quote": "Transit signal priority between Houston Street and South Ferry"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 7 of the source is titled 'First Avenue/Second Avenue SBS' under 'First Ave/Second Ave SBS Features'. Block 5 is the 'Signal Priority' heading whose associated text block explicitly states this treatment is a feature of the SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p007_c0005",
+            "source_quote": "Transit signal priority between Houston Street and South Ferry"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-fare-prepayment-sbs",
+        "local_observation_id": "treatment_fare_prepayment_sbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-cb8-2010",
+            "object_id": "treatment_fare-prepayment-sbs",
+            "description": "Proof-of-payment fare system is a feature of the First Ave/Second Ave SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p007_c0007",
+                "source_quote": "Proof-of-payment fare system with fare pre-payment"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 7 of the source is titled 'First Avenue/Second Avenue SBS' under 'First Ave/Second Ave SBS Features'. Block 7 is the 'Fare Collection' heading whose associated text block explicitly states this fare system is a feature of the SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p007_c0007",
+            "source_quote": "Proof-of-payment fare system with fare pre-payment"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-lanes-houston-125th",
+        "local_observation_id": "treatment_bus_lanes_houston_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-cb8-2010",
+            "object_id": "treatment_bus-lanes-houston-125th",
+            "description": "Curbside or offset bus lanes are a feature of the First Ave/Second Ave SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p007_c0009",
+                "source_quote": "Curbside or offset bus lanes between Houston and 125th Streets"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 7 of the source is titled 'First Avenue/Second Avenue SBS' under 'First Ave/Second Ave SBS Features'. Block 9 is the 'Bus Lanes' heading whose associated text block explicitly states bus lanes are a feature of the SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p007_c0009",
+            "source_quote": "Curbside or offset bus lanes between Houston and 125th Streets"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-offboard-fare-sas-zone",
+        "local_observation_id": "treatment_offboard_fare_sas_zone",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-cb8-2010",
+            "object_id": "treatment_offboard-fare-sas-zone",
+            "description": "Off-board fare collection in SAS construction zone is a feature of the First Ave/Second Ave SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p035_c0004",
+                "source_quote": "Off-board fare collection machines to be installed at"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 35 of the source is titled 'First Avenue/Second Avenue SBS' under 'Second Avenue Subway construction'. Block 4 explicitly states off-board fare collection machines are to be installed at specified streets as part of the SBS project's construction-zone design.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p035_c0004",
+            "source_quote": "Off-board fare collection machines to be installed at"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-32-18-828Z_1637391-a77eb4e7_canonicalize_2026-06-10t17-48-04-680z-1496766-f5d09147-ingest-2010-02-25-brt-1st2nd-cb8-treatment-relations"
+}

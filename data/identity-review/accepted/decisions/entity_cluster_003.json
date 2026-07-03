@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "review_state": "accepted",
+  "accepted_at": "2026-06-08T21:21:36.731Z",
+  "reviewer": "codex-audit-2026-06-08",
+  "source": "audit_safe_to_promote",
+  "cluster_id": "entity_cluster_003",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_003.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_003.json",
+  "source_review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Flash",
+  "action_summary": {
+    "merge_group_count": 1,
+    "do_not_merge_count": 0,
+    "weak_alias_count": 2,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [
+    [
+      "entity_ny-state-legislature",
+      "entity_ny-state-legislature-open-data-plan"
+    ]
+  ],
+  "do_not_merge": [],
+  "weak_aliases": [
+    {
+      "record_id": "entity_ny-state-legislature",
+      "aliases": [
+        "entity_ny-state-legislature-2025",
+        "entity_ny_state_legislature",
+        "entity_ny_state_legislature_2025"
+      ],
+      "reason": "Local observation IDs and dataset-specific aliases useful for search but not merge authority."
+    },
+    {
+      "record_id": "entity_ny-state-legislature-open-data-plan",
+      "aliases": [
+        "entity_ny_state_legislature_open_data_plan"
+      ],
+      "reason": "Local observation ID useful for search but not merge authority."
+    }
+  ],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [
+    "When two entity records share the same entity_name, same display_name, same jurisdiction scope, and share an identity key, merge them even if entity_type has trivial formatting differences (e.g., underscore vs space)."
+  ],
+  "rationale": "Both records refer to the New York State Legislature, share the identity key entity_new-york-state-legislature, have identical entity_name and display_name, and the only difference is a trivial formatting variation between 'government_body' and 'government body' (already merged in record 1's _merged_field_values). The validator flagged this as a duplicate_global_identity with score 100. All evidence from three MTA documents references the same government body. No scope or jurisdictional differences exist."
+}

@@ -1,0 +1,598 @@
+{
+  "note_id": "codex-identity-batch116-prep",
+  "created_at": "2026-06-23T05:06:26Z",
+  "author": "codex",
+  "scope": {
+    "description": "Codex-only deterministic identity cleanup prep for global project records.",
+    "record_kinds": [
+      "project"
+    ],
+    "batch": "identity116",
+    "global_kind": "project",
+    "max_aliases_requested": 8
+  },
+  "batch": "identity116",
+  "global_kind": "project",
+  "prepared_count": 8,
+  "aliases": [
+    {
+      "canonical_id": "project_125th-st-sbs-2013",
+      "alias_id": "project_m60-sbs-125th-street-2013",
+      "canonical_name": "125th Street Select Bus Service",
+      "alias_name": "125th Street Select Bus Service",
+      "reason": "Both project records describe the same 2013 125th Street/M60 Select Bus Service project in Manhattan. The records share the project_name '125th Street Select Bus Service', planned/proposed document-time status, SBS project family, 125th Street corridor context, and M60/125th Street SBS evidence; differences are community-board source coverage and wording.",
+      "confidence": "high",
+      "source_or_validator_evidence": {
+        "canonical": {
+          "record_id": "project_125th-st-sbs-2013",
+          "project_name": "125th Street Select Bus Service",
+          "project_type": "Select Bus Service",
+          "status": "Proposed",
+          "borough": "Manhattan",
+          "routes_served": [
+            "M60",
+            "Bx15",
+            "M100",
+            "M101"
+          ],
+          "source_ids": [
+            "2013_03_sbs_125_st_cb11_slides",
+            "2013_04_09_sbs_125th_workshop_3"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "2013_04_09_sbs_125th_workshop_3",
+              "page_number": 1,
+              "block_id": "p001_c0019",
+              "source_quote": "+selectbusservice 125th Street"
+            },
+            {
+              "source_id": "2013_03_sbs_125_st_cb11_slides",
+              "page_number": 6,
+              "block_id": "p006_c0005",
+              "source_quote": "Select Bus Service on the M60"
+            }
+          ]
+        },
+        "alias": {
+          "record_id": "project_m60-sbs-125th-street-2013",
+          "project_name": "125th Street Select Bus Service",
+          "project_type": "Select Bus Service",
+          "status": "proposed",
+          "borough": "Manhattan",
+          "routes_served": [
+            "M60"
+          ],
+          "source_ids": [
+            "2013_03_07_sbs_125th_cb9",
+            "2013_06_04_sbs_125th_cb11",
+            "2013_06_05_sbs_125th_cb9",
+            "2013_06_12_sbs_125th_cb10"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "2013_03_07_sbs_125th_cb9",
+              "page_number": 1,
+              "block_id": "p001_c0001",
+              "source_quote": "M60 Select Bus Service on 125 th Street"
+            },
+            {
+              "source_id": "2013_03_07_sbs_125th_cb9",
+              "page_number": 6,
+              "block_id": "p006_c0005",
+              "source_quote": "Select Bus Service on the M60"
+            }
+          ]
+        }
+      },
+      "guard_notes": "Project-only. This does not merge route records or corridor records; 125th Street corridor-limit do-not-merge guards remain out of scope. Treat M60 wording as route context for the same SBS project, not as a separate route alias."
+    },
+    {
+      "canonical_id": "project_207th-st-sewer-replacement-33751",
+      "alias_id": "project_207th-st-sewer-replacement-feb2024",
+      "canonical_name": "207th Street Sewer Replacement",
+      "alias_name": "207th St Sewer Replacement",
+      "reason": "Both records identify the same 207th Street Yard sewer replacement project. The alias is a later progress snapshot with the same project name and same 207th Street Yard sewer-replacement scope; the 75% complete status is source-time progress, not a separate durable project.",
+      "confidence": "high",
+      "source_or_validator_evidence": {
+        "canonical": {
+          "record_id": "project_207th-st-sewer-replacement-33751",
+          "project_name": "207th Street Sewer Replacement",
+          "project_type": "Sandy recovery / sewer relocation",
+          "status": "under construction",
+          "location": "207th Street Yard",
+          "source_ids": [
+            "meeting_doc_33751",
+            "meeting_doc_79336",
+            "meeting_doc_98326"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_33751",
+              "page_number": 33,
+              "block_id": "p033_c0001",
+              "source_quote": "207th Street Sewer Replacement"
+            },
+            {
+              "source_id": "meeting_doc_98326",
+              "page_number": 26,
+              "block_id": "p026_c0003",
+              "source_quote": "207 th Street Yard sustained extensive water damage during Super Storm Sandy"
+            }
+          ]
+        },
+        "alias": {
+          "record_id": "project_207th-st-sewer-replacement-feb2024",
+          "project_name": "207th St Sewer Replacement",
+          "status": "75% complete",
+          "description": "Sewer replacement at 207th Street Yard",
+          "source_ids": [
+            "meeting_doc_133356"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_133356",
+              "page_number": 6,
+              "block_id": "p006_c0007"
+            }
+          ]
+        }
+      },
+      "guard_notes": "Same yard and sewer-replacement scope. Do not generalize this to other 207th Street Yard capital work or unrelated Sandy recovery projects."
+    },
+    {
+      "canonical_id": "project_atlantic-tunnel-lighting-133331",
+      "alias_id": "project_meeting-doc-115156-atlantic-tunnel-lighting",
+      "canonical_name": "Atlantic Tunnel Lighting",
+      "alias_name": "project_meeting_doc_115156_atlantic_tunnel_lighting",
+      "reason": "Both records identify the same Atlantic Tunnel Lighting infrastructure project. The canonical record aggregates later timetable-support mentions, while the alias is an earlier planned/support mention with the same project_name and infrastructure/tunnel-lighting scope.",
+      "confidence": "high",
+      "source_or_validator_evidence": {
+        "canonical": {
+          "record_id": "project_atlantic-tunnel-lighting-133331",
+          "project_name": "Atlantic Tunnel Lighting",
+          "project_type": "Tunnel Lighting",
+          "status": "planned",
+          "source_ids": [
+            "meeting_doc_133331",
+            "meeting_doc_138226",
+            "meeting_doc_155021",
+            "meeting_doc_164866",
+            "meeting_doc_170846"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_133331",
+              "page_number": 1,
+              "block_id": "p001_c0005",
+              "role": "supported_projects"
+            },
+            {
+              "source_id": "meeting_doc_138226",
+              "page_number": 1,
+              "block_id": "p001_c0006",
+              "role": "project_list"
+            }
+          ]
+        },
+        "alias": {
+          "record_id": "project_meeting-doc-115156-atlantic-tunnel-lighting",
+          "project_name": "Atlantic Tunnel Lighting",
+          "project_type": "infrastructure improvement",
+          "status": "planned",
+          "source_ids": [
+            "meeting_doc_115156",
+            "meeting_doc_124266"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_115156",
+              "page_number": 1,
+              "block_id": "p001_c0006",
+              "source_quote": "Atlantic Tunnel Lighting"
+            }
+          ]
+        }
+      },
+      "guard_notes": "Same named tunnel-lighting project. Do not merge with broader Atlantic Branch work, signal work, or other tunnel projects."
+    },
+    {
+      "canonical_id": "project_b44-sbs-implementation",
+      "alias_id": "project_b44-sbs-nostrand-avenue",
+      "canonical_name": "project_b44_sbs_implementation",
+      "alias_name": "B44 SBS on Nostrand Avenue",
+      "reason": "Both records describe the same B44 Select Bus Service implementation on the Nostrand/Rogers corridor. The canonical record names B44 Select Bus Service on Nostrand Avenue and notes implementation in November 2013; the alias is the post-implementation progress-report project record for B44 SBS on Nostrand Avenue with the same SBS implementation scope.",
+      "confidence": "high",
+      "source_or_validator_evidence": {
+        "canonical": {
+          "record_id": "project_b44-sbs-implementation",
+          "project_name": "B44 Select Bus Service on Nostrand Avenue",
+          "project_type": "select_bus_service_implementation",
+          "status": "completed",
+          "source_ids": [
+            "b44_sbs_progress_report_2016"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "b44_sbs_progress_report_2016",
+              "page_number": 5,
+              "block_id": "p005_c0004",
+              "role": "description"
+            },
+            {
+              "source_id": "b44_sbs_progress_report_2016",
+              "page_number": 22,
+              "block_id": "p022_c0004",
+              "role": "implementation_date"
+            }
+          ]
+        },
+        "alias": {
+          "record_id": "project_b44-sbs-nostrand-avenue",
+          "project_name": "B44 SBS on Nostrand Avenue",
+          "project_type": "Select Bus Service implementation",
+          "status": "post-implementation progress report",
+          "borough": "Brooklyn",
+          "source_ids": [
+            "brt_nostrand_progress_report_june2016"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_nostrand_progress_report_june2016",
+              "page_number": 1,
+              "block_id": "p001_c0002"
+            },
+            {
+              "source_id": "brt_nostrand_progress_report_june2016",
+              "page_number": 5,
+              "block_id": "p005_c0004"
+            }
+          ]
+        }
+      },
+      "guard_notes": "Project-only. This does not merge B44 route variants; local, limited, and SBS route identity guards remain separate."
+    },
+    {
+      "canonical_id": "project_fordham-rd-bus-priority-cb5-may2026",
+      "alias_id": "project_fordham-rd-bus-priority-cb6",
+      "canonical_name": "Fordham Road Bus Priority - Sedgwick Av to Bronx River Parkway",
+      "alias_name": "Fordham Road Bus Priority",
+      "reason": "Both records identify the same May 2026 Fordham Road Bus Priority project from Sedgwick Avenue to Bronx River Parkway. The alias is the CB6 audience-specific source; the canonical record is the CB5 source for the same project_name, corridor limits, Bronx borough, and bus-lane upgrade scope.",
+      "confidence": "high",
+      "source_or_validator_evidence": {
+        "canonical": {
+          "record_id": "project_fordham-rd-bus-priority-cb5-may2026",
+          "project_name": "Fordham Road Bus Priority",
+          "project_type": "bus priority / bus lane upgrade",
+          "status": "final proposal presented to Community Board 5",
+          "borough": "Bronx",
+          "source_ids": [
+            "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb5_may2026"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb5_may2026",
+              "page_number": 1,
+              "block_id": "p001_c0001",
+              "role": "title"
+            },
+            {
+              "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb5_may2026",
+              "page_number": 1,
+              "block_id": "p001_c0002",
+              "role": "subtitle"
+            },
+            {
+              "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb5_may2026",
+              "page_number": 6,
+              "block_id": "p006_c0002",
+              "role": "design_plan"
+            }
+          ]
+        },
+        "alias": {
+          "record_id": "project_fordham-rd-bus-priority-cb6",
+          "project_name": "Fordham Road Bus Priority",
+          "project_type": "bus priority",
+          "status": "proposed",
+          "borough": "Bronx",
+          "source_ids": [
+            "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026",
+              "page_number": 1,
+              "block_id": "p001_c0001",
+              "source_quote": "Fordham Road Bus Priority"
+            },
+            {
+              "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026",
+              "page_number": 1,
+              "block_id": "p001_c0002",
+              "source_quote": "Sedgwick Av to Bronx River Parkway"
+            },
+            {
+              "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026",
+              "page_number": 3,
+              "block_id": "p003_c0002",
+              "source_quote": "DOT will upgrade the current bus lanes to offset bus lanes and widened curbside bus lanes"
+            }
+          ]
+        }
+      },
+      "guard_notes": "Same May 2026 corridor limits and treatment scope. Do not merge with older Fordham/Inwood alternatives or broader Fordham Road corridor/program records solely by street name."
+    },
+    {
+      "canonical_id": "project_fordham-rd-bus-priority-cb5-may2026",
+      "alias_id": "project_fordham-road-bus-priority-cb7-may2026",
+      "canonical_name": "Fordham Road Bus Priority - Sedgwick Av to Bronx River Parkway",
+      "alias_name": "Fordham Road Bus Priority",
+      "reason": "Both records identify the same May 2026 Fordham Road Bus Priority project from Sedgwick Avenue to Bronx River Parkway. The alias is the CB7 audience-specific source; the canonical record is the CB5 source for the same project_name, Bronx borough, corridor limits, and bus-priority design plan.",
+      "confidence": "high",
+      "source_or_validator_evidence": {
+        "canonical": {
+          "record_id": "project_fordham-rd-bus-priority-cb5-may2026",
+          "project_name": "Fordham Road Bus Priority",
+          "project_type": "bus priority / bus lane upgrade",
+          "status": "final proposal presented to Community Board 5",
+          "borough": "Bronx",
+          "source_ids": [
+            "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb5_may2026"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb5_may2026",
+              "page_number": 1,
+              "block_id": "p001_c0001",
+              "role": "title"
+            },
+            {
+              "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb5_may2026",
+              "page_number": 1,
+              "block_id": "p001_c0002",
+              "role": "subtitle"
+            },
+            {
+              "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb5_may2026",
+              "page_number": 6,
+              "block_id": "p006_c0002",
+              "role": "design_plan"
+            }
+          ]
+        },
+        "alias": {
+          "record_id": "project_fordham-road-bus-priority-cb7-may2026",
+          "project_name": "Fordham Road Bus Priority",
+          "project_type": "bus priority",
+          "status": "proposed",
+          "borough": "Bronx",
+          "source_ids": [
+            "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb7_may2026"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb7_may2026",
+              "page_number": 1,
+              "block_id": "p001_c0001",
+              "role": "title"
+            },
+            {
+              "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb7_may2026",
+              "page_number": 1,
+              "block_id": "p001_c0002",
+              "role": "subtitle"
+            },
+            {
+              "source_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb7_may2026",
+              "page_number": 6,
+              "block_id": "p006_c0002",
+              "role": "design"
+            }
+          ]
+        }
+      },
+      "guard_notes": "Same May 2026 corridor limits and treatment scope. Do not merge with older Fordham/Inwood alternatives or broader Fordham Road corridor/program records solely by street name."
+    },
+    {
+      "canonical_id": "project_tremont-av-bus-priority",
+      "alias_id": "project_tremont-ave-bus-priority-2024",
+      "canonical_name": "Tremont Av Bus Priority Project",
+      "alias_name": "Tremont Av Bus Priority Project",
+      "reason": "Both records identify the same Tremont Av Bus Priority Project in the Bronx. The canonical record aggregates the same project title, University Av to Bronx River Pkwy limits, Bx36 context, and busway/offset-lane proposal scope across 2024-2025 source-time updates; the alias is a July 2024 draft-proposal snapshot for that same durable project.",
+      "confidence": "high",
+      "source_or_validator_evidence": {
+        "canonical": {
+          "record_id": "project_tremont-av-bus-priority",
+          "project_name": "Tremont Av Bus Priority Project",
+          "project_type": "busway",
+          "status": "Final Proposal presented",
+          "borough": "Bronx",
+          "routes_served": [
+            "Bx36"
+          ],
+          "source_ids": [
+            "tremont_ave_bus_priority_cab4_mar2025",
+            "tremont_ave_bus_priority_cb5_jun2024",
+            "tremont_ave_bus_priority_cb5_nov2024",
+            "tremont_ave_bus_priority_cb6_feb2025",
+            "tremont_ave_bus_priority_cb6_jun2024",
+            "tremont_ave_bus_priority_cb6_nov2024"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "tremont_ave_bus_priority_cab4_mar2025",
+              "page_number": 1,
+              "block_id": "p001_c0001",
+              "role": "project_title"
+            },
+            {
+              "source_id": "tremont_ave_bus_priority_cb6_feb2025",
+              "page_number": 4,
+              "block_id": "p004_c0002",
+              "role": "scope",
+              "source_quote": "University Av to Bronx River Pkwy"
+            }
+          ]
+        },
+        "alias": {
+          "record_id": "project_tremont-ave-bus-priority-2024",
+          "project_name": "Tremont Av Bus Priority Project",
+          "project_type": "bus priority",
+          "status": "draft proposal",
+          "borough": "Bronx",
+          "routes_served": [
+            "Bx36"
+          ],
+          "source_ids": [
+            "tremont_ave_bus_priority_cb6_jul2024"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "tremont_ave_bus_priority_cb6_jul2024",
+              "page_number": 1,
+              "block_id": "p001_c0001",
+              "source_quote": "Tremont Av Bus Priority Project"
+            },
+            {
+              "source_id": "tremont_ave_bus_priority_cb6_jul2024",
+              "page_number": 4,
+              "block_id": "p004_c0002",
+              "source_quote": "University Av to Bronx River Pkwy"
+            },
+            {
+              "source_id": "tremont_ave_bus_priority_cb6_jul2024",
+              "page_number": 13,
+              "block_id": "p013_c0003",
+              "source_quote": "Busway between Third Av and Southern Blvd in both directions"
+            }
+          ]
+        }
+      },
+      "guard_notes": "Same project and limits; draft/final proposal status is source-time lifecycle. Do not merge with Tremont Avenue Busway if a record is explicitly scoped only to the implemented busway rather than the broader bus-priority project."
+    },
+    {
+      "canonical_id": "project_meeting-doc-105911-68-street-key-station",
+      "alias_id": "project_meeting-doc-133246-68-street-key-station",
+      "canonical_name": "68 Street Key Station Construction",
+      "alias_name": "68 Street Key Station Construction",
+      "reason": "Both records describe the same 68 Street 6-line Key Station accessibility construction project in Manhattan. They share the same display name, under-construction document-time status, December 2024 completion timing, capital/infrastructure family, and accessibility construction scope for the final Key Station.",
+      "confidence": "high",
+      "source_or_validator_evidence": {
+        "canonical": {
+          "record_id": "project_meeting-doc-105911-68-street-key-station",
+          "project_name": "68 Street Key Station Accessibility Construction",
+          "project_type": "station construction",
+          "status": "under construction",
+          "borough": "Manhattan",
+          "location": "68 Street (6 line), Manhattan",
+          "completion_date": "December 2024",
+          "source_ids": [
+            "meeting_doc_105911"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_105911",
+              "page_number": 5,
+              "block_id": "p005_c0003"
+            },
+            {
+              "source_id": "meeting_doc_105911",
+              "page_number": 5,
+              "block_id": "p005_c0004"
+            }
+          ]
+        },
+        "alias": {
+          "record_id": "project_meeting-doc-133246-68-street-key-station",
+          "project_name": "68 Street Key Station",
+          "project_type": "station accessibility construction",
+          "status": "under construction",
+          "borough": "Manhattan",
+          "completion_target_year": "2024",
+          "source_ids": [
+            "meeting_doc_133246"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_133246",
+              "page_number": 5,
+              "block_id": "p005_c0003"
+            }
+          ]
+        }
+      },
+      "guard_notes": "Station-project merge is limited to this exact 68 Street Key Station accessibility construction record. Do not generalize to other 68 Street station work, other Key Station projects, or broader ADA station programs."
+    }
+  ],
+  "exclusions_and_guards": {
+    "excluded_existing_aliases": "Exact alias ids in this prep were checked against data/identity-overrides/merges.json and visible codex identity prep files through identity114; no visible identity115 prep file was present.",
+    "project_only_scope": "Only global record kind project is proposed. Entity, route, corridor, and treatment_component aliases were not proposed.",
+    "conservative_filters": [
+      "Excluded low-confidence candidates where a shared street, station, program, contract, or broad project label could hide different scope.",
+      "Excluded program-vs-project false friends, route/corridor identity issues, and phase-only/project-part candidates unless the durable project identity was exact.",
+      "Kept source-time status differences only when names, scope, location, and project family were compatible."
+    ],
+    "notable_exclusions": [
+      "Did not propose 2017 Street Improvement Project records across Woodhaven and 79th Street because same generic title appears on different corridors.",
+      "Did not propose Webster Avenue Bridge chain cleanup because one nearby Webster Avenue alias/target pair was already prepared in identity095 and the remaining chain deserves a separate conductor decision.",
+      "Did not propose Better Buses Restart/Jamaica Busway or similar parent-program/child-project pairs.",
+      "Did not propose route, corridor, entity, or treatment-component aliases found during inspection."
+    ]
+  },
+  "command_evidence": [
+    {
+      "cmd": "rg --files data | rg 'identity|review_notes|canonical|materialized'",
+      "purpose": "Inventory identity, review-note, and canonical artifacts without running generated-output commands."
+    },
+    {
+      "cmd": "ls -la data/review_notes data/identity-overrides 2>/dev/null",
+      "purpose": "Confirm visible review-note files and identity override files."
+    },
+    {
+      "cmd": "rg --files data/review_notes | rg 'codex-identity-batch(11[0-9]|0[0-9][0-9])-prep\\.json$' | sort",
+      "purpose": "Check visible prior identity batches; identity115 was not visible."
+    },
+    {
+      "cmd": "jq '.aliases | keys' data/identity-overrides/merges.json",
+      "purpose": "Confirm available merge override kinds and project alias namespace."
+    },
+    {
+      "cmd": "node - <<'NODE' ... read-only duplicate-name scan over data/canonical/projects.jsonl, merges.json, and review notes ... NODE",
+      "purpose": "Generate local deterministic candidate pairs after excluding existing merge aliases and prior prepared alias ids."
+    },
+    {
+      "cmd": "jq -r 'select(.record_id==...) | {record_id,display_name,source_ids,payload,evidence_refs:[...]}' data/canonical/projects.jsonl",
+      "purpose": "Inspect candidate project payloads and evidence refs."
+    },
+    {
+      "cmd": "rg -n '\"<candidate_alias_id>\"' data/identity-overrides/merges.json data/review_notes/codex-identity-batch*-prep.json data/identity-overrides/do-not-merge.json",
+      "purpose": "Exact-id guard check for proposed alias ids."
+    },
+    {
+      "cmd": "jq empty data/identity-overrides/merges.json data/canonical/projects.jsonl data/review_notes/codex-identity-batch114-prep.json",
+      "purpose": "Local JSON/JSONL readability check on key input artifacts."
+    }
+  ],
+  "local_validation": {
+    "input_json_parse_check": "jq empty succeeded for data/identity-overrides/merges.json, data/canonical/projects.jsonl, and data/review_notes/codex-identity-batch114-prep.json.",
+    "exact_alias_guard_check": "rg exact-id guard returned 0 matches for all eight proposed alias ids across merges.json, visible codex identity prep files, and do-not-merge.json.",
+    "output_shape": "JSON object with required identity116 project-only fields; prepared_count equals aliases.length.",
+    "visible_prior_batches": "Review notes showed codex identity prep files through identity114. No codex-identity-batch115-prep.json was visible during this prep."
+  },
+  "forbidden_commands_not_run": [
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema-propose",
+    "ontology-normalize-run",
+    "ingest/write with --profile/provider",
+    "materialize",
+    "validate",
+    "export-jsonl",
+    "DB publish/repair",
+    "provider-backed or external LLM commands"
+  ]
+}

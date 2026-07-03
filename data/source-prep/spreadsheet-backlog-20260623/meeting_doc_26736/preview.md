@@ -1,0 +1,52 @@
+# Spreadsheet source-prep preview: meeting_doc_26736
+
+- Status: ok
+- Run: spreadsheet-backlog-20260623
+- Source: raw/sources/meeting_doc_26736/source.xlsx
+- Title: November 2020 Mid-Year Forecast Actuals (1 of 2)
+
+## November
+
+- Sheet path: xl/worksheets/sheet1.xml
+- Rows: 37
+- Cells: 387
+
+| Row | Cells |
+| --- | --- |
+| 1 | A1=METROPOLITAN TRANSPORTATION AUTHORITY<br>B1=<br>C1=<br>D1=<br>E1=<br>F1=<br>G1=<br>H1=<br>I1=<br>J1= |
+| 2 | A2=MID-YEAR AND NOVEMBER FORECASTS vs. ACTUAL RESULTS (NON-REIMBURSABLE)<br>B2=<br>C2=<br>D2=<br>E2=<br>F2=<br>G2=<br>H2=<br>I2=<br>J2= |
+| 3 | A3=NOVEMBER 2020 YEAR-TO-DATE<br>B3=<br>C3=<br>D3=<br>E3=<br>F3=<br>G3=<br>H3=<br>I3=<br>J3= |
+| 4 | A4=($ in millions)<br>B4=<br>C4=<br>D4=<br>E4=<br>F4=<br>G4=<br>H4=<br>I4=<br>J4= |
+| 7 | F7=<br>G7=<br>H7=<br>I7=<br>J7= |
+| 8 | A8=34<br>C8=9<br>G8=25<br>M8=<br>N8=<br>O8=<br>P8=<br>Q8= |
+| 9 | A9=13<br>C9=November Forecast<br>D9=Actual<br>E9=1<br>G9=8<br>J9= |
+| 10 | A10=3<br>I10=3<br>L10=Hyperion Generated Impacts<br>M10=26<br>P10=<br>Q10= |
+| 11 | A11=28<br>M11=FF<br>N11=Act<br>O11=MYF<br>P11=FF<br>Q11=ACT |
+| 12 | A12=Total Revenue<br>B12=8015.3950371344254<br>C12=8166.2251316321344<br>D12=8403.2433036300008<br>E12=387.84826649557544<br>G12=4.8387916590351185<br>H12=237.01817199786638<br>J12=2.9024202514301116<br>L12=#REF!<br>M12=#REF!<br>N12=#REF!<br>O12=#REF!<br>P12=#REF!<br>Q12=#REF! |
+| 13 | A13=<br>F13=<br>G13=<br>H13=<br>L13=<br>M13=<br>N13=<br>O13=<br>P13=<br>Q13= |
+| 14 | A14=Total Expenses before Non-Cash Liability Adjs<br>B14=13236.622929340831<br>C14=13021.425583389426<br>D14=12258.602142360998<br>E14=978.02078697983234<br>G14=7.3887485667655612<br>H14=762.82344102842762<br>J14=5.858217567218686<br>L14=#REF!<br>M14=#REF!<br>N14=#REF!<br>O14=#REF!<br>P14=#REF!<br>Q14=#REF! |
+| 15 | A15=<br>B15=<br>C15=<br>D15=<br>F15=<br>G15=<br>H15=<br>L15=<br>M15=<br>N15=<br>O15=<br>P15=<br>Q15= |
+| 16 | A16=Depreciation<br>B16=2614.4074374355228<br>C16=2571.3607823176926<br>D16=2726.6685816699996<br>E16=-112.26114423447689<br>G16=-4.2939421999424106<br>H16=-155.30779935230703<br>J16=-6.039906979226795<br>L16=#REF!<br>M16=#REF!<br>N16=#REF!<br>O16=#REF!<br>P16=#REF!<br>Q16=#REF! |
+| 17 | A17=GASB 68 Pension Expenses<br>B17=34.860999999999997<br>C17=34.240970250000004<br>D17=22.263322249999998<br>E17=12.597677749999999<br>G17=36.136880037864657<br>H17=11.977648000000006<br>J17=34.98045736598251<br>L17=#REF!<br>M17=#REF!<br>N17=#REF!<br>O17=#REF!<br>P17=#REF!<br>Q17=#REF! |
+| 18 | A18=GASB 75 OPEB Expense Adj<br>B18=50.685000000000002<br>C18=30.225233300000006<br>D18=19.110222059999998<br>E18=31.574777940000004<br>G18=62.296099319325251<br>H18=11.115011240000008<br>J18=36.773946886292542<br>L18=<br>M18=<br>N18=<br>O18=<br>P18=<br>Q18= |
+| 19 | A19=Environmental Remediation<br>B19=5.3847788400000001<br>C19=5.453365530000001<br>D19=4.5847420899999998<br>E19=0.8000367500000003<br>G19=14.857374346687195<br>H19=0.86862344000000125<br>J19=15.92820864879749<br>L19=#REF!<br>M19=#REF!<br>N19=#REF!<br>O19=#REF!<br>P19=#REF!<br>Q19=#REF! |
+| 20 | A20=<br>B20=<br>C20=<br>D20=<br>E20=<br>F20=<br>G20=<br>H20=<br>I20=<br>J20=<br>L20=<br>M20=<br>N20=<br>O20=<br>P20=<br>Q20= |
+| 21 | A21=Total Expenses<br>B21=15941.961145616353<br>C21=15662.705934787118<br>D21=15031.229010430998<br>E21=910.73213518535522<br>G21=5.7127986128343071<br>H21=631.47692435612043<br>J21=4.0317230431658695<br>L21=#REF!<br>M21=#REF!<br>N21=#REF!<br>O21=#REF!<br>P21=#REF!<br>Q21=#REF! |
+| 22 | A22=<br>B22=<br>C22=<br>D22=<br>F22=<br>G22=<br>H22=<br>I22=<br>J22=<br>L22=<br>M22=<br>N22=<br>O22=<br>P22=<br>Q22= |
+| 23 | A23=Less: B&T Depreciation & GASB Adjustments<br>B23=152.34047727552246<br>C23=152.34047727552246<br>D23=160.48707467<br>F23=-8.1465973944775385<br>G23=-5.2976249649288096<br>H23=-8.1465973944775385<br>J23=-5.3476249649288095<br>L23=#REF!<br>M23=#REF!<br>N23=#REF!<br>O23=#REF!<br>P23=#REF!<br>Q23=#REF! |
+| 24 | A24=<br>B24=<br>C24=<br>D24=<br>F24=<br>G24=<br>H24=<br>I24=<br>J24=<br>L24=<br>M24=<br>N24=<br>O24=<br>P24=<br>Q24= |
+| 25 | A25=Adjusted Total Expenses<br>B25=15789.620668340831<br>C25=15510.365457511596<br>D25=14870.741935760998<br>F25=918.87873257983301<br>G25=5.8195111325393771<br>H25=639.62352175059823<br>J25=4.1238455889563301<br>L25=#REF!<br>M25=#REF!<br>N25=#REF!<br>O25=#REF!<br>P25=#REF!<br>Q25=#REF! |
+| 26 | A26=<br>B26=<br>C26=<br>D26=<br>F26=<br>G26=<br>H26=<br>I26=<br>J26=<br>L26=<br>M26=<br>N26=<br>O26=<br>P26=<br>Q26= |
+| 27 | A27=Net Surplus/(Deficit)<br>B27=-7774.2256312064055<br>C27=-7344.1403258794617<br>D27=-6467.4986321309971<br>E27=1306.7269990754085<br>G27=16.80845219915016<br>H27=876.6416937484646<br>J27=11.9366141556328<br>L27=#REF!<br>M27=#REF!<br>N27=#REF!<br>O27=#REF!<br>P27=#REF!<br>Q27=#REF! |
+| 28 | A28=<br>B28=<br>C28=<br>D28=<br>F28=<br>G28=<br>H28=<br>I28=<br>J28=<br>L28=<br>M28=<br>N28=<br>O28=<br>P28=<br>Q28= |
+| 29 | A29=Subsidies<br>B29=5740.6847494942713<br>C29=5615.7942344094399<br>D29=5976.3770778500002<br>F29=235.69232835572893<br>G29=4.105648344067184<br>H29=360.58284344056028<br>J29=6.4208699320066769<br>L29=#REF!<br>M29=#REF!<br>N29=#REF!<br>O29=#REF!<br>P29=#REF!<br>Q29=#REF! |
+| 30 | A30=<br>B30=<br>C30=<br>D30=<br>E30=<br>F30=<br>G30=<br>H30=<br>I30=<br>J30=<br>K30=<br>L30=<br>M30=<br>N30=<br>O30=<br>P30=<br>Q30= |
+| 31 | A31=Debt Service<br>B31=2517.155642615719<br>C31=2486.4518232777605<br>D31=2501.6514394494047<br>F31=15.504203166314255<br>G31=0.61594137858725972<br>H31=-15.199616171644266<br>J31=-0.61129743312731466<br>L31=#REF!<br>M31=#REF!<br>N31=#REF!<br>O31=#REF!<br>P31=#REF!<br>Q31=#REF! |
+| 32 | A32=<br>C32=<br>G32=<br>H32=<br>J32= |
+| 33 | A33=<br>B33=<br>C33=<br>D33=<br>G33=<br>H33=<br>J33= |
+| 34 | A34=NOTE:<br>B34=<br>D34=<br>G34=<br>H34=<br>J34= |
+| 35 | A35=- Results are preliminary and subject to audit review<br>B35=<br>C35=<br>D35=<br>E35=<br>F35=<br>G35=<br>H35=<br>I35=<br>J35= |
+| 36 | A36=- Totals may not add due to rounding |
+| 37 | A37=* Variance exceeds 100% |
+| 39 | A39= |
+| 40 | A40= |

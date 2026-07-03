@@ -1,0 +1,100 @@
+{
+  "run_id": "2026-06-10T23-09-19-253Z_1976810-6248d0ff_ingest_2013-01-webster-sbs-newsletter",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T03:20:47.069Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "bx41-sbs-2013-01-self",
+        "local_observation_id": "route_bx41_sbs_2013_01",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id route_webster-ave-sbs, which already exists in the registry as the canonical Bx41 SBS route. The source block p001_c0006 confirms 'Bx41 SBS replaces the Bx41 Limited'. No different registry record is a better match.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_01_webster_sbs_newsletter",
+            "block_id": "p001_c0006",
+            "source_quote": "▪ Bx41 SBS replaces the Bx41 Limited"
+          }
+        ]
+      },
+      {
+        "decision_id": "bx41-local-2013-01-self",
+        "local_observation_id": "route_bx41_local_2013_01",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id route_bx41-local-2012-10-webster, which already exists in the registry as a Bx41 Local route record (with alias route_bx41-local-2013-01). The source block confirms 'Bx41 local route remains the same'. No different registry record is a better match.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_01_webster_sbs_newsletter",
+            "block_id": "p001_c0006",
+            "source_quote": "▪ Bx41 local route remains the same"
+          }
+        ]
+      },
+      {
+        "decision_id": "bx55-2013-01-self",
+        "local_observation_id": "route_bx55_2013_01",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id route_bx55-2012, which already exists in the registry as the Bx55 (Limited) route. The source block p002_c0012 confirms the Bx55 identity and notes it will become Bx15 Limited. No different registry record is a better match.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_01_webster_sbs_newsletter",
+            "block_id": "p002_c0012",
+            "source_quote": "The Bx55 will become the Bx15 Limited, connecting Fordham Plaza in the Bronx with 125th Street in Manhattan."
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "replaced_by",
+            "subject_id": "route_bx55-2012",
+            "object_id": "route_bx15-ltd-webster-2012",
+            "description": "The Bx55 is being replaced by the Bx15 Limited on Third Avenue, per the January 2013 Webster SBS newsletter.",
+            "evidence_refs": [
+              {
+                "source_id": "2013_01_webster_sbs_newsletter",
+                "block_id": "p002_c0012",
+                "source_quote": "The Bx55 will become the Bx15 Limited, connecting Fordham Plaza in the Bronx with 125th Street in Manhattan."
+              },
+              {
+                "source_id": "2013_01_webster_sbs_newsletter",
+                "block_id": "p004_c0004",
+                "source_quote": "Bx15 LTD replaces the Bx55"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "bx15-ltd-2013-01-self",
+        "local_observation_id": "route_bx15_ltd_2013_01",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id route_bx15-ltd-webster-2012, which already exists in the registry as the Bx15 LTD route. The source confirms this is the Bx15 Limited replacing the Bx55 on Third Avenue. No different registry record is a better match.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_01_webster_sbs_newsletter",
+            "block_id": "p002_c0012",
+            "source_quote": "The Bx55 will become the Bx15 Limited, connecting Fordham Plaza in the Bronx with 125th Street in Manhattan."
+          }
+        ]
+      },
+      {
+        "decision_id": "bx15-local-2013-01-self",
+        "local_observation_id": "route_bx15_local_2013_01",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id route_bx15-ace, which already exists in the registry as the Bx15 Local route (with boroughs Bronx/Manhattan). The source map on page 4 depicts Bx15 Local on Third Avenue as a distinct service from Bx15 LTD. No different registry record is a better match.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_01_webster_sbs_newsletter",
+            "block_id": "p004_c0004",
+            "source_quote": "Third Av Routes: Bx15 LTD (red line) Bx15 Local (orange line)"
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-19-12-516Z_2111393-8be47bb3_canonicalize_2026-06-10t23-09-19-253z-1976810-6248d0ff-ingest-2013-01-webster-sbs-newsletter-route-identity"
+}

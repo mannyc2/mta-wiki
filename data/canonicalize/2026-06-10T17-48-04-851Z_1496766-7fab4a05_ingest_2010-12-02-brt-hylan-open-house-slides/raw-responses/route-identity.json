@@ -1,0 +1,54 @@
+{
+  "run_id": "2026-06-10T17-48-04-851Z_1496766-7fab4a05_ingest_2010-12-02-brt-hylan-open-house-slides",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-10T19:52:04.874Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "dec_s78_hylan_2010_new",
+        "local_observation_id": "route_s78_hylan_2010",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_s78-hylan-2010 already matches the existing registry record route_s78-hylan-2010. The observation resolves to its own canonical record; no link to a different record is needed. The S78 local route on Hylan Boulevard is distinct from any later SBS variant.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_12_02_brt_hylan_open_house_slides",
+            "block_id": "p004_c0004",
+            "source_quote": "16,000 trips/day on S78 and S79 local buses"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_s79_hylan_2010_new",
+        "local_observation_id": "route_s79_hylan_2010",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_s79-hylan-2010 already matches the existing registry record route_s79-hylan-2010. The S79 local route (2010) is a distinct service variant from the later S79+ SBS (route_able-s79-sbs); per do_not_merge_pairs precedent, local and SBS variants are not canonical identity merges.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_12_02_brt_hylan_open_house_slides",
+            "block_id": "p004_c0004",
+            "source_quote": "16,000 trips/day on S78 and S79 local buses"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_bx12_sbs_hylan_example_new",
+        "local_observation_id": "route_bx12_sbs_hylan_example",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_bx12-plus already matches the existing registry record route_bx12-plus. The registry record lists route_bx12-sbs-hylan-example as an alias and includes this source among its source_ids. The observation refers to the same Bx12 Select Bus Service on Fordham Road/Pelham Parkway used as an SBS example in the Hylan Boulevard presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_12_02_brt_hylan_open_house_slides",
+            "block_id": "p008_c0005",
+            "source_quote": "Experience on Fordham Road and Pelham Parkway (Bx12) – 20% travel time savings – 30% increase in ridership"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-48-37-113Z_1665696-f5e662f0_canonicalize_2026-06-10t17-48-04-851z-1496766-7fab4a05-ingest-2010-12-02-brt-hylan-open-house-slides-route-identity"
+}

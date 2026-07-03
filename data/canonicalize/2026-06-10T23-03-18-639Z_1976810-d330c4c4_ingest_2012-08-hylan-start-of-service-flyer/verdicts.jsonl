@@ -1,0 +1,15 @@
+{"decision_id":"relate-hylan-bus-lanes-to-s79-sbs","verdict":"pass","evidence_checked":["2012_08_hylan_start_of_service_flyer#p002_c0001","2012_08_hylan_start_of_service_flyer#p002_c0004","2012_08_hylan_start_of_service_flyer#p002_c0005","2012_08_hylan_start_of_service_flyer#p002_c0017","2012_08_hylan_start_of_service_flyer#p002_c0018"]}
+{"decision_id":"relate-richmond-platinum-bus-lanes-to-s79-sbs","verdict":"pass","evidence_checked":["2012_08_hylan_start_of_service_flyer#p002_c0001","2012_08_hylan_start_of_service_flyer#p002_c0004","2012_08_hylan_start_of_service_flyer#p002_c0005","2012_08_hylan_start_of_service_flyer#p002_c0019","2012_08_hylan_start_of_service_flyer#p002_c0020"]}
+{"decision_id":"relate-richmond-shirley-bus-lanes-to-s79-sbs","verdict":"pass","evidence_checked":["2012_08_hylan_start_of_service_flyer#p002_c0001","2012_08_hylan_start_of_service_flyer#p002_c0004","2012_08_hylan_start_of_service_flyer#p002_c0005","2012_08_hylan_start_of_service_flyer#p002_c0019","2012_08_hylan_start_of_service_flyer#p002_c0020"]}
+{"decision_id":"relate-tsp-to-s79-sbs","verdict":"pass","evidence_checked":["2012_08_hylan_start_of_service_flyer#p002_c0001","2012_08_hylan_start_of_service_flyer#p002_c0007"]}
+{"decision_id":"relate-signal-timing-to-s79-sbs","verdict":"pass","evidence_checked":["2012_08_hylan_start_of_service_flyer#p002_c0001","2012_08_hylan_start_of_service_flyer#p002_c0006"]}
+{"decision_id":"relate-pedestrian-refuge-to-s79-sbs","verdict":"pass","evidence_checked":["2012_08_hylan_start_of_service_flyer#p002_c0001","2012_08_hylan_start_of_service_flyer#p002_c0008"]}
+{"decision_id":"relate-sidewalks-to-s79-sbs","verdict":"pass","evidence_checked":["2012_08_hylan_start_of_service_flyer#p002_c0001","2012_08_hylan_start_of_service_flyer#p002_c0009"]}
+{"decision_id":"relate-left-turn-bays-to-s79-sbs","verdict":"pass","evidence_checked":["2012_08_hylan_start_of_service_flyer#p002_c0001","2012_08_hylan_start_of_service_flyer#p002_c0010"]}
+{"decision_id":"rel-s79-becomes-sbs","verdict":"pass","evidence_checked":["2012_08_hylan_start_of_service_flyer#p001_c0002","2012_08_hylan_start_of_service_flyer#p002_c0013"]}
+{"decision_id":"rel-s59-s78-local-stops","verdict":"pass","evidence_checked":["2012_08_hylan_start_of_service_flyer#p001_c0002","2012_08_hylan_start_of_service_flyer#p002_c0013"]}
+{"decision_id":"rel-sbs-fare-local","verdict":"pass","evidence_checked":["2012_08_hylan_start_of_service_flyer#p002_c0013"]}
+{"decision_id":"rel-express-bus-lanes","verdict":"pass","evidence_checked":["2012_08_hylan_start_of_service_flyer#p002_c0013"]}
+{"decision_id":"rel-sbs-rerouting","verdict":"pass","evidence_checked":["2012_08_hylan_start_of_service_flyer#p001_c0004","2012_08_hylan_start_of_service_flyer#p001_c0006"]}
+{"decision_id":"rel-bus-lane-fines","verdict":"pass","evidence_checked":["2012_08_hylan_start_of_service_flyer#p002_c0023"]}
+{"decision_id":"rel-bus-lane-enforcement","verdict":"pass","evidence_checked":["2012_08_hylan_start_of_service_flyer#p002_c0021","2012_08_hylan_start_of_service_flyer#p002_c0022"]}

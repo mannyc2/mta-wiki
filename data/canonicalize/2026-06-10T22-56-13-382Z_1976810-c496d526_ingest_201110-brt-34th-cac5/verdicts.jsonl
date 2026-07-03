@@ -1,0 +1,35 @@
+{"decision_id":"rel-offboardfare-34th-sbs","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"rel-buslanecamera-34th-sbs","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"rel-offsetbuslanes-34th-sbs","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"rel-busbulbs-34th-sbs","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"rel-loadingzones-34th-sbs","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"rel-rightturnbays-34th-sbs","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"rel-sinaltiming-34th-sbs","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"rel_001_metric_pedestrian_space","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"rel_002_metric_loading_spaces","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"rel_003_metric_boarding_time_m15","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"rel_004_metric_fare_evasion_m15","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"rel_005_metric_daily_riders_34th","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"rel_006_claim_traffic_delays","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p027_c0002"]}
+{"decision_id":"rel_007_claim_traffic_diverted","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p027_c0002"]}
+{"decision_id":"rel_008_claim_no_effect_beyond","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p027_c0002"]}
+{"decision_id":"rel_009_claim_fare_evasion_bx12_m15","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p035_c0002"]}
+{"decision_id":"rel_010_claim_design_standard","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p010_c0002"]}
+{"decision_id":"rel_011_claim_11th_ave_stop","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p011_c0002"]}
+{"decision_id":"rel_012_claim_dyer_ave_stop","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p011_c0002"]}
+{"decision_id":"rel_013_claim_9th_ave_left_turn","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p011_c0002"]}
+{"decision_id":"rel_014_claim_8th_ave_right_turn","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p011_c0002"]}
+{"decision_id":"rel_015_claim_33rd_st_reopen","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p011_c0002"]}
+{"decision_id":"rel_016_claim_1st_ave_left_turn","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p011_c0002"]}
+{"decision_id":"rel_017_claim_park_ave_stop","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p011_c0002"]}
+{"decision_id":"rel_018_claim_madison_fifth_turn","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p011_c0002"]}
+{"decision_id":"rel_019_claim_3rd_ave_loading","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p011_c0002"]}
+{"decision_id":"rel_020_claim_2nd_ave_ambulette","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p011_c0002"]}
+{"decision_id":"rel_021_claim_capacity_reductions","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p020_c0002"]}
+{"decision_id":"rel_022_claim_2nd_ave_lane","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p026_c0002"]}
+{"decision_id":"rel_023_claim_madison_bus_lane","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p026_c0002"]}
+{"decision_id":"rel_024_event_fare_pre_pay","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p030_c0002"]}
+{"decision_id":"rel_026_event_open_house_east","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p041_c0004"]}
+{"decision_id":"rel_027_event_open_house_west","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p041_c0006"]}
+{"decision_id":"rel_028_event_machine_install","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p038_c0002"]}
+{"decision_id":"rel_029_event_ea_release","verdict":"pass","evidence_checked":["201110_brt_34th_cac5#p040_c0002"]}

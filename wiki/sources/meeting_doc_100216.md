@@ -1,0 +1,90 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-100216"
+record_kind: "source"
+display_name: "MTA July Financial Plan - 2022 Mid-Year Forecast, Debt Service October 2022 Monthly"
+source_id: "meeting_doc_100216"
+source_ids:
+  - "meeting_doc_100216"
+local_observation_id: "source_meeting_doc_100216"
+local_observation_ids:
+  - "source_meeting_doc_100216"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T18:49:48.781Z"
+raw_text: "METROPOLITAN TRANSPORTATION AUTHORITY JULY FINANCIAL PLAN - 2022 Mid-Year Forecast, Debt Service October 2022 Monthly"
+submission_ids:
+  - "sub_ca9f368f64f2bcd4"
+payload:
+  authority_tier: "plan_document"
+  content_type: "financial report"
+  date_text: "October 2022"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2022-10"
+    precision: "month"
+    raw_text: "October 2022"
+  description: "Debt Service October 2022 Monthly and Year-To-Date"
+  published_date_normalized: "2022-10"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  source_type: "financial plan"
+  title: "METROPOLITAN TRANSPORTATION AUTHORITY JULY FINANCIAL PLAN - 2022 Mid-Year Forecast"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_100216#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "meeting_doc_100216"
+    source_path: "raw/sources/meeting_doc_100216/blocks.jsonl"
+    text_sha256: "sha256:398a21648fc0c29c5fb702dd6309e1222efb36db4e7795b4099ead8499ffc46c"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_100216#p001_c0002"
+    page_number: 1
+    role: "subtitle"
+    source_id: "meeting_doc_100216"
+    source_path: "raw/sources/meeting_doc_100216/blocks.jsonl"
+    text_sha256: "sha256:6ab1307fc584cd080525f02f6a2e6e24bf0d1ac3f805dacdc7aedabfe004d300"
+    text_source: "raw_text"
+---
+
+# October 2022 Debt Service
+
+source_id: meeting_doc_100216
+citation: cite block ids exactly as shown in square brackets
+document: 18 block(s)
+
+## Page 1
+
+### [p001_c0001] METROPOLITAN TRANSPORTATION AUTHORITY JULY FINANCIAL PLAN - 2022 Mid-Year Forecast
+### [p001_c0002] Debt Service October 2022 Monthly
+[p001_c0003] ($ in millions)
+[p001_c0004]
+
+```text
+Mid-Year Forecast Actual Variance % Var Explanation Dedicated Tax Fund: NYC Transit $10.6 $1.0 $9.6 Commuter Railroads 2.3 0.2 2.1 Dedicated Tax Fund Subtotal $12.9 $1.2 $11.7 90.7% Timing related to the early receipt of BAB subsidy. MTA Transportation Revenue: NYC Transit $81.1 $139.9 ($58.8) Commuter Railroads 56.3 100.9 (44.6) MTA Bus 1.9 0.1 1.8 SIRTOA 0.5 0.0 0.5 MTA Transportation Revenue Subtotal $139.7 $240.9 ($101.2) -72.4% Cash call of outstanding bonds and timing as debt service was prefunded to November 15th. Variance was partially offset by the early receipt of BAB subsidy. The prefunding timing variance will reverse in Nov. 2022. PMT Bonds: NYC Transit $9.5 $12.1 ($2.6) Commuter Railroads 11.6 13.3 (1.8) MTA Bus Company 1.1 0.4 0.7 SIRTOA 0.9 0.5 0.4 PMT Bond Subtotal $23.1 $26.4 ($3.3) -14.2% Timing of debt service deposits. 2 Broadway COPs: NYC Transit $0.4 $0.2 $0.2 Bridges & Tunnels 0.1 0.0 0.0 MTA HQ 0.0 0.0 0.0 Commuter Railroads 0.1 0.1 0.1 2 Broadway COPs Subtotal $0.5 $0.3 $0.3 52.1% TBTA General Resolution (2): NYC Transit $13.1 $19.7 ($6.5) Commuter Railroads 5.8 8.8 (2.9) Bridges & Tunnels 31.4 44.6 (13.2) TBTA General Resolution Subtotal $50.4 $73.0 ($22.6) -44.9% Timing of debt service deposits as debt service was prefunded to November 15th. Variance will reverse in November 2022. TBTA Subordinate (2): NYC Transit $4.8 $7.3 ($2.4) Commuter Railroads 2.5 3.8 (1.3) Bridges & Tunnels 1.3 1.9 (0.6) TBTA Subordinate Subtotal $8.6 $12.9 ($4.3) -50.0% Timing of debt service deposits as debt service was prefunded to November 15th. Variance will reverse in November 2022. TBTA 2nd Subordinate Subtotal $1.1 $0.0 $1.1 100.0% Timing of debt issuance. Debt Service from Lockbox Revenues: NYC Transit $0.6 $0.0 $0.6 Commuter Railroads 0.2 0.0 0.2 MTA Bus 0.0 0.0 0.0 SIRTOA 0.0 0.0 0.0 Debt Service from Lockbox Subtotal $0.8 $0.0 $0.8 100.0% Total Debt Service $237.1 $354.7 ($117.5) -49.6% Debt Service by Agency: NYC Transit $120.2 $180.1 ($59.9) Commuter Railroads 78.7 127.0 (48.3) MTA Bus 3.0 0.5 2.5 SIRTOA 1.4 0.5 0.9 Bridges & Tunnels 33.8 46.5 (12.7) MTAHQ 0.0 0.0 0.0 Total Debt Service $237.1 $354.7 ($117.5) -49.6%
+```
+### [p001_c0005] Notes:
+[p001_c0006] (1) Forecasted debt service is calculated based upon projected monthly deposits from available pledged revenues into debt service accounts. Actual payments to bondholders are made from the debt service accounts when due as required for each series of bonds and do not conform to this schedule.
+[p001_c0007] (2) Generally, the calendarization of monthly debt service deposits is calculated by dividing projected annual debt service by 12. Month to month variations ("timing differences") on the existing debt portfolio can occur based upon, among other things, (a) for all bonds, the date when income from the securities in which the debt service accounts are invested becomes available varies, (b) for variable rate financings, differences between (i) the budgeted interest rate and the actual interest rate, (ii) projected interest payment dates to bondholders and actual interest payment dates to bondholders, and (iii) projected monthly funding dates for accrued debt service and actual funding dates, (c) for transactions with swaps, the difference between when MTA/TBTA funds debt service and the receipt of the corresponding swap payment by the counterparty, and difference between rates received and rates paid and (d) for commercial paper, the interest payment date is the date of the maturity of the commercial paper and the dealers set the term of the commercial paper from 1 to 270 days, which is not foreseeable at the time the annual debt service budgets are prepared.
+[p001_c0008] (3) Debt service is allocated among Transit, Commuter, MTA Bus, and TBTA categories based on actual spending of bond proceeds for approved capital projects. Allocation of 2 Broadway COPs is based on occupancy.
+[p001_c0009] Totals may not add due to rounding.
+
+## Page 2
+
+### [p002_c0001] METROPOLITAN TRANSPORTATION AUTHORITY JULY FINANCIAL PLAN - 2022 Mid-Year Forecast
+### [p002_c0002] Debt Service October 2022 Year-To-Date
+[p002_c0003] ($ in millions)
+[p002_c0004]
+
+```text
+Mid-Year Forecast Actual Variance % Var Explanation Dedicated Tax Fund: NYC Transit $293.3 $288.9 $4.4 Commuter Railroads 56.1 47.3 8.8 Dedicated Tax Fund Subtotal $349.4 $336.2 $13.2 3.8% Timing related to the early receipt of BAB subsidy. MTA Transportation Revenue: NYC Transit $822.5 $864.7 ($42.2) Commuter Railroads 579.6 622.6 (43.0) MTA Bus 14.9 1.9 13.0 SIRTOA 3.9 0.3 3.6 MTA Transportation Revenue Subtotal $1,420.9 $1,489.5 ($68.6) -4.8% Cash call of outstanding bonds and timing as debt service was prefunded to November 15th. Variance was partially offset by the early receipt of BAB subsidy. The prefunding timing variance will reverse in Nov. 2022. PMT Bonds: NYC Transit $71.6 $67.3 $4.3 Commuter Railroads 104.8 96.2 8.6 MTA Bus Company 7.5 3.2 4.3 SIRTOA 6.7 3.6 3.1 PMT Bond Subtotal $190.6 $170.3 $20.3 10.7% Timing of debt issuance. 2 Broadway COPs: NYC Transit $3.6 $3.0 $0.7 Bridges & Tunnels 0.5 0.4 0.1 MTA HQ 0.0 0.0 0.0 Commuter Railroads 1.1 0.9 0.2 2 Broadway COPs Subtotal $5.3 $4.3 $1.0 18.5% TBTA General Resolution (2): NYC Transit $138.5 $144.0 ($5.4) Commuter Railroads 61.7 64.2 (2.4) Bridges & Tunnels 289.1 299.2 (10.1) TBTA General Resolution Subtotal $489.4 $507.4 ($18.0) -3.7% Prefunding of debt service to November 15th, will reverse in November 2022. TBTA Subordinate (2): NYC Transit $48.0 $50.4 ($2.4) Commuter Railroads 24.0 25.2 (1.2) Bridges & Tunnels 13.9 14.6 (0.6) TBTA Subordinate Subtotal $86.0 $90.2 ($4.3) -5.0% Prefunding of debt service to November 15th, will reverse in November 2022. TBTA 2nd Subordinate Subtotal $5.4 $0.0 $5.4 100.0% Timing of debt issuance. Debt Service from Lockbox Revenues: NYC Transit $3.7 $0.0 $3.7 Commuter Railroads 0.9 0.0 0.9 MTA Bus 0.1 0.0 0.1 SIRTOA 0.0 0.0 0.0 Debt Service from Lockbox Subtotal $4.7 $0.0 $4.7 100.0% Total Debt Service $2,551.7 $2,597.9 ($46.3) -1.8% Debt Service by Agency: NYC Transit $1,381.3 $1,418.3 ($37.0) Commuter Railroads 828.3 856.4 (28.1) MTA Bus 22.5 5.1 17.4 SIRTOA 10.6 3.8 6.8 Bridges & Tunnels 309.0 314.2 (5.3) MTAHQ 0.0 0.0 0.0 Total Debt Service $2,551.7 $2,597.9 ($46.3) -1.8%
+```
+### [p002_c0005] Notes:
+[p002_c0006] (1) Forecasted debt service is calculated based upon projected monthly deposits from available pledged revenues into debt service accounts. Actual payments to bondholders are made from the debt service accounts when due as required for each series of bonds and do not conform to this schedule.
+[p002_c0007] (2) Generally, the calendarization of monthly debt service deposits is calculated by dividing projected annual debt service by 12. Month to month variations ("timing differences") on the existing debt portfolio can occur based upon, among other things, (a) for all bonds, the date when income from the securities in which the debt service accounts are invested becomes available varies, (b) for variable rate financings, differences between (i) the budgeted interest rate and the actual interest rate, (ii) projected interest payment dates to bondholders and actual interest payment dates to bondholders, and (iii) projected monthly funding dates for accrued debt service and actual funding dates, (c) for transactions with swaps, the difference between when MTA/TBTA funds debt service and the receipt of the corresponding swap payment by the counterparty, and difference between rates received and rates paid and (d) for commercial paper, the interest payment date is the date of the maturity of the commercial paper and the dealers set the term of the commercial paper from 1 to 270 days, which is not foreseeable at the time the annual debt service budgets are prepared.
+[p002_c0008] (3) Debt service is allocated among Transit, Commuter, MTA Bus, and TBTA categories based on actual spending of bond proceeds for approved capital projects. Allocation of 2 Broadway COPs is based on occupancy.
+[p002_c0009] Totals may not add due to rounding.

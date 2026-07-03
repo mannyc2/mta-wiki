@@ -1,0 +1,519 @@
+{
+  "note_id": "codex-relation-rule-or-data-next4-prep-2026-06-22",
+  "created_at": "2026-06-22T00:00:00Z",
+  "author": "codex",
+  "scope": "validator/rule-data triage only; artifact-only prep; no generated-output commands; no provider-backed post-ingest commands; no canonical/submission/wiki/log edits",
+  "kind": "scoped_code_test_patch_recommendation",
+  "recommendation": {
+    "type": "validator_rule_gap",
+    "relation_kind": "has_metric",
+    "current_rejected_shape": "claim -> metric_claim",
+    "candidate_count": 8,
+    "confidence": "medium_high",
+    "summary": "Allow claim records to carry directly source-backed metric_claim records via has_metric. The eight remaining rows in this bucket are not arbitrary claim-to-metric links: each metric is a numeric companion to the same source-stated claim, and several rows are already cleanup replacements whose descriptions explicitly say the claim should carry the metric. This is narrower and cleaner than widening timeline, agency, route, or program relations, whose remaining buckets show mixed endpoint-identity and wrong-relation-kind problems.",
+    "current_validator_result": {
+      "command": "bun --eval direct call to relationEndpointShapeIssue(\"has_metric\", \"claim\", \"metric_claim\")",
+      "message": "Relation kind has_metric expects project|route|corridor|entity|event -> metric_claim, got claim -> metric_claim."
+    },
+    "current_validator_rule": {
+      "subject_kinds": [
+        "project",
+        "route",
+        "corridor",
+        "entity",
+        "event"
+      ],
+      "object_kinds": [
+        "metric_claim"
+      ],
+      "missing_subject_kind": "claim"
+    },
+    "simulated_impact": {
+      "current_unexpected_relation_endpoint_shape_total": 88,
+      "resolved_by_allowing_has_metric_claim_subject": 8,
+      "remaining_total_after_this_rule_only": 80,
+      "remaining_top_buckets_after_this_rule_only": {
+        "implemented_by treatment_component->entity": 6,
+        "has_timeline_event claim->event": 5,
+        "has_timeline_event treatment_component->event": 5,
+        "operated_by entity->entity": 4,
+        "published_by claim->entity": 4,
+        "implemented_by entity->entity": 4,
+        "has_timeline_event metric_claim->event": 4
+      }
+    },
+    "why_not_data_cleanup": [
+      "The subject endpoints are canonical claim records and the object endpoints are canonical metric_claim records from the same source, with source-backed evidence on the relation and/or both endpoints.",
+      "The metric values are subordinate to the claim wording: examples include a lease claim carrying annual base rent, a license claim carrying annual fee, and a financial-plan claim carrying projected-deficit values for 2023-2027.",
+      "Retiring and replacing these rows with source includes metric_claim would lose the stronger semantic tie between the numeric measurement and the claim it quantifies. That source-containment cleanup was appropriate for source -> metric_claim rows, but these rows already have a more specific carrier.",
+      "Retiring and replacing with project/entity subjects would require new identity choices outside this validator-only lane for several broad finance/procurement claims."
+    ],
+    "caveats": [
+      "Some older docs still describe has_metric query edges as durable project/route/corridor/entity -> metric_claim. This proposal is intentionally narrower: it only adds claim as a legal carrier for metric companions, not source, treatment_component, metric_claim, or arbitrary entity-to-entity shapes.",
+      "This patch will not fix relation evidence completeness where relation rows lack source_quote text, but the inspected candidates have canonical evidence refs and source-backed endpoint evidence."
+    ],
+    "exact_patch_plan": {
+      "files": [
+        "packages/pipeline/src/records/relations.ts",
+        "packages/pipeline/test/records/relations.test.ts"
+      ],
+      "relations_ts_change": "In RELATION_ENDPOINT_SHAPES.has_metric.subject, add \"claim\" to the existing subject list. Keep the object list as [\"metric_claim\"].",
+      "relations_test_change": "Add expect(relationEndpointShapeIssue(\"has_metric\", \"claim\", \"metric_claim\")).toBeUndefined(); to the accepted endpoint-shapes test. Update the negative has_metric expected-subject message to include claim if the test continues to assert the full expected-subject string.",
+      "non_goals": [
+        "Do not widen has_metric for source, treatment_component, or metric_claim subjects.",
+        "Do not widen has_timeline_event for claim, treatment_component, metric_claim, source->entity, project->entity, event->source, or other non-event objects.",
+        "Do not widen implemented_by, operated_by, part_of_program, serves_route, published_by, owned_by, related_route, operates_on_corridor, or has_treatment in this patch.",
+        "Do not edit generated canonical/materialized/wiki/source outputs or submission journals."
+      ]
+    }
+  },
+  "inventory_context": {
+    "method": "Targeted bun --eval over readCanonicalRecords() plus relationEndpointShapeIssue(); not full validate CLI.",
+    "checkpoint": {
+      "unexpected_relation_endpoint_shape_total": 88,
+      "by_relation_kind": {
+        "has_timeline_event": 19,
+        "implemented_by": 15,
+        "part_of_program": 12,
+        "serves_route": 10,
+        "has_metric": 8,
+        "operated_by": 6,
+        "published_by": 5,
+        "has_treatment": 4,
+        "owned_by": 3,
+        "has_claim": 2,
+        "related_route": 2,
+        "operates_on_corridor": 2
+      },
+      "top_shape_buckets": {
+        "has_metric claim->metric_claim": 8,
+        "implemented_by treatment_component->entity": 6,
+        "has_timeline_event claim->event": 5,
+        "has_timeline_event treatment_component->event": 5,
+        "operated_by entity->entity": 4,
+        "published_by claim->entity": 4,
+        "implemented_by entity->entity": 4,
+        "has_timeline_event metric_claim->event": 4
+      }
+    },
+    "other_bucket_triage": [
+      {
+        "bucket": "implemented_by treatment_component->entity",
+        "count": 6,
+        "classification": "data_cleanup_likely",
+        "reason": "Current rule intentionally treats implemented_by as project -> entity. Sample rows use treatment_component subjects such as Blue Lighting, Help Point Installations, Pelham Bay bus contraflow lane, and ABLE treatment. These look like implementation details needing a project subject or another relation kind, not a validator widening."
+      },
+      {
+        "bucket": "has_timeline_event claim->event",
+        "count": 5,
+        "classification": "data_cleanup_or_separate_review",
+        "reason": "Some rows may represent claim scheduling context, but batch020 precedent already treated similar claim timeline context as data cleanup. Do not widen claim subjects for has_timeline_event in the has_metric patch."
+      },
+      {
+        "bucket": "has_timeline_event treatment_component->event",
+        "count": 5,
+        "classification": "separate_rule_or_data_review",
+        "reason": "Rows such as Flatbush TSP installation and timetable construction activities may be coherent treatment timelines, but this is different from metric-owning claims and should not be bundled."
+      },
+      {
+        "bucket": "operated_by entity->entity / implemented_by entity->entity",
+        "count": 8,
+        "classification": "data_cleanup_likely",
+        "reason": "Samples include self-links and agency-to-agency operating/implementation assertions. They need relation-kind or endpoint replacement, not broadening project/route agency-role predicates to all entity pairs."
+      },
+      {
+        "bucket": "serves_route project->project and serves_route project->entity",
+        "count": 5,
+        "classification": "data_cleanup_likely",
+        "reason": "Samples show object endpoints materialized as project/entity records where the relation kind expects route. This is endpoint identity or relation-kind cleanup, not a validator gap."
+      },
+      {
+        "bucket": "published_by claim->entity",
+        "count": 4,
+        "classification": "separate_rule_or_data_review",
+        "reason": "Claim publication may be plausible in some cases, but current published_by admits source/project/entity subjects. These examples include media/study claims and should receive their own publisher semantics review."
+      }
+    ]
+  },
+  "candidate_rows": [
+    {
+      "record_id": "relation_batch014-monsey-license-has-metric-annual-fee",
+      "submission_ids": [
+        "sub_849055eddb6a2cc2"
+      ],
+      "source_id": "meeting_doc_167261",
+      "shape": "has_metric claim->metric_claim",
+      "subject": {
+        "id": "claim_meeting-doc-167261-monsey-license",
+        "kind": "claim",
+        "display_name": "License with Monsey Developers along Commerce Street in Spring Valley, NY"
+      },
+      "object": {
+        "id": "metric_monsey-license-annual-fee",
+        "kind": "metric_claim",
+        "display_name": "Monsey Developers License annual fee",
+        "metric_name": "license_fee",
+        "raw_value_text": "$3,000 per year with 5% annual increases",
+        "value": 3000,
+        "unit": "USD_per_year"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_167261#p001_c0003",
+          "source_text": "License with Monsey Developers and Builders Inc. for parking and other uses along Commerce Street in Spring Valley, NY ... $3,000 per year with 5% annual increases"
+        }
+      ],
+      "reason": "The annual-fee metric quantifies the license claim, and both endpoints cite the same source table block."
+    },
+    {
+      "record_id": "relation_batch014-raina-lease-has-metric-base-rent",
+      "submission_ids": [
+        "sub_022b0f01c3748c7b"
+      ],
+      "source_id": "meeting_doc_167261",
+      "shape": "has_metric claim->metric_claim",
+      "subject": {
+        "id": "claim_meeting-doc-167261-raina-lease",
+        "kind": "claim",
+        "display_name": "Lease with Raina II, LLC for NYCT Central Electronic Shop"
+      },
+      "object": {
+        "id": "metric_raina-lease-base-rent-annual",
+        "kind": "metric_claim",
+        "display_name": "Lease with Raina II, LLC base rent annual",
+        "metric_name": "base_rent",
+        "raw_value_text": "$203,370 annual ($16,947.50 monthly)/ $15psf",
+        "value": 203370,
+        "unit": "USD_per_year"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_167261#p001_c0003",
+          "source_text": "Lease with Raina II, LLC for parking and material storage in support of NYCT's Central Electronic Shop in Queens, NY ... Base rent: $203,370 annual ($16,947.50 monthly)/ $15psf"
+        }
+      ],
+      "reason": "The base-rent metric quantifies the lease claim, and both endpoints cite the same source table block."
+    },
+    {
+      "record_id": "relation_batch014-strengthen-expand-has-metric-capital-commitments",
+      "submission_ids": [
+        "sub_4ec4e7c061b86107"
+      ],
+      "source_id": "meeting_doc_198151",
+      "shape": "has_metric claim->metric_claim",
+      "subject": {
+        "id": "claim_strengthen-expand-network_3",
+        "kind": "claim",
+        "display_name": "Strengthen & Expand the Network"
+      },
+      "object": {
+        "id": "metric_158-billion-capital-commitments",
+        "kind": "metric_claim",
+        "display_name": "$15.8 Billion in Capital Commitments",
+        "metric_name": "capital_commitments",
+        "raw_value_text": "$15.8 Billion in Capital Commitments",
+        "value": 15.8,
+        "unit": "billion dollars"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_198151#p008_c0001",
+          "source_text": "Strengthen & Expand the Network"
+        },
+        {
+          "ref": "meeting_doc_198151#p008_c0002",
+          "source_text": "$15.8 Billion in Capital Commitments"
+        }
+      ],
+      "reason": "The capital-commitments metric is the numeric companion to the Strengthen & Expand claim heading."
+    },
+    {
+      "record_id": "relation_financial-plan-claim-has-metric-2023",
+      "submission_ids": [
+        "sub_e42bbd2e38aeaea2"
+      ],
+      "source_id": "meeting_doc_115571",
+      "shape": "has_metric claim->metric_claim",
+      "subject": {
+        "id": "claim_july-financial-plan-eliminates-deficits",
+        "kind": "claim",
+        "display_name": "July Financial Plan Eliminates Projected Deficits Through 2027"
+      },
+      "object": {
+        "id": "metric_projected-deficit-2023",
+        "kind": "metric_claim",
+        "display_name": "Projected deficit 2023: $0",
+        "metric_name": "projected_deficit",
+        "raw_value_text": "$0",
+        "value": 0,
+        "unit": "USD",
+        "year": "2023"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_115571#p002_c0002",
+          "source_text": "2023"
+        },
+        {
+          "ref": "meeting_doc_115571#p002_c0007",
+          "source_text": "$0"
+        },
+        {
+          "ref": "meeting_doc_115571#p002_c0012",
+          "source_text": "July Financial Plan Eliminates Projected Deficits Through 2027"
+        }
+      ],
+      "reason": "The 2023 $0 projected-deficit metric is one year-specific value under the financial-plan claim."
+    },
+    {
+      "record_id": "relation_financial-plan-claim-has-metric-2024",
+      "submission_ids": [
+        "sub_fe9047179ee74333"
+      ],
+      "source_id": "meeting_doc_115571",
+      "shape": "has_metric claim->metric_claim",
+      "subject": {
+        "id": "claim_july-financial-plan-eliminates-deficits",
+        "kind": "claim",
+        "display_name": "July Financial Plan Eliminates Projected Deficits Through 2027"
+      },
+      "object": {
+        "id": "metric_projected-deficit-2024_2",
+        "kind": "metric_claim",
+        "display_name": "Projected deficit 2024: $0",
+        "metric_name": "projected_deficit",
+        "raw_value_text": "$0",
+        "value": 0,
+        "unit": "USD",
+        "year": "2024"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_115571#p002_c0003",
+          "source_text": "2024"
+        },
+        {
+          "ref": "meeting_doc_115571#p002_c0008",
+          "source_text": "$0"
+        },
+        {
+          "ref": "meeting_doc_115571#p002_c0012",
+          "source_text": "July Financial Plan Eliminates Projected Deficits Through 2027"
+        }
+      ],
+      "reason": "The 2024 $0 projected-deficit metric is one year-specific value under the financial-plan claim."
+    },
+    {
+      "record_id": "relation_financial-plan-claim-has-metric-2025",
+      "submission_ids": [
+        "sub_398a9ce189b70b7b"
+      ],
+      "source_id": "meeting_doc_115571",
+      "shape": "has_metric claim->metric_claim",
+      "subject": {
+        "id": "claim_july-financial-plan-eliminates-deficits",
+        "kind": "claim",
+        "display_name": "July Financial Plan Eliminates Projected Deficits Through 2027"
+      },
+      "object": {
+        "id": "metric_projected-deficit-2025_2",
+        "kind": "metric_claim",
+        "display_name": "Projected deficit 2025: $0",
+        "metric_name": "projected_deficit",
+        "raw_value_text": "$0",
+        "value": 0,
+        "unit": "USD",
+        "year": "2025"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_115571#p002_c0004",
+          "source_text": "2025"
+        },
+        {
+          "ref": "meeting_doc_115571#p002_c0009",
+          "source_text": "$0"
+        },
+        {
+          "ref": "meeting_doc_115571#p002_c0012",
+          "source_text": "July Financial Plan Eliminates Projected Deficits Through 2027"
+        }
+      ],
+      "reason": "The 2025 $0 projected-deficit metric is one year-specific value under the financial-plan claim."
+    },
+    {
+      "record_id": "relation_financial-plan-claim-has-metric-2026",
+      "submission_ids": [
+        "sub_44f132d3639d6b60"
+      ],
+      "source_id": "meeting_doc_115571",
+      "shape": "has_metric claim->metric_claim",
+      "subject": {
+        "id": "claim_july-financial-plan-eliminates-deficits",
+        "kind": "claim",
+        "display_name": "July Financial Plan Eliminates Projected Deficits Through 2027"
+      },
+      "object": {
+        "id": "metric_projected-deficit-2026",
+        "kind": "metric_claim",
+        "display_name": "Projected deficit 2026: $0",
+        "metric_name": "projected_deficit",
+        "raw_value_text": "$0",
+        "value": 0,
+        "unit": "USD",
+        "year": "2026"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_115571#p002_c0005",
+          "source_text": "2026"
+        },
+        {
+          "ref": "meeting_doc_115571#p002_c0010",
+          "source_text": "$0"
+        },
+        {
+          "ref": "meeting_doc_115571#p002_c0012",
+          "source_text": "July Financial Plan Eliminates Projected Deficits Through 2027"
+        }
+      ],
+      "reason": "The 2026 $0 projected-deficit metric is one year-specific value under the financial-plan claim."
+    },
+    {
+      "record_id": "relation_financial-plan-claim-has-metric-2027",
+      "submission_ids": [
+        "sub_b45ba5e85fca5f2b"
+      ],
+      "source_id": "meeting_doc_115571",
+      "shape": "has_metric claim->metric_claim",
+      "subject": {
+        "id": "claim_july-financial-plan-eliminates-deficits",
+        "kind": "claim",
+        "display_name": "July Financial Plan Eliminates Projected Deficits Through 2027"
+      },
+      "object": {
+        "id": "metric_projected-deficit-2027",
+        "kind": "metric_claim",
+        "display_name": "Projected deficit 2027: $0",
+        "metric_name": "projected_deficit",
+        "raw_value_text": "$0",
+        "value": 0,
+        "unit": "USD",
+        "year": "2027"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_115571#p002_c0006",
+          "source_text": "2027"
+        },
+        {
+          "ref": "meeting_doc_115571#p002_c0011",
+          "source_text": "$0"
+        },
+        {
+          "ref": "meeting_doc_115571#p002_c0012",
+          "source_text": "July Financial Plan Eliminates Projected Deficits Through 2027"
+        }
+      ],
+      "reason": "The 2027 $0 projected-deficit metric is one year-specific value under the financial-plan claim."
+    }
+  ],
+  "commands_run": [
+    {
+      "command": "pwd && rg --files -g 'AGENTS.md' -g 'data/review_notes/**' -g 'packages/harness/src/**' -g 'data/**' | sed -n '1,200p'",
+      "outcome": "Confirmed repo root and review-note context; packages/harness path is stale in AGENTS.md for this workspace."
+    },
+    {
+      "command": "git status --short",
+      "outcome": "Confirmed broad dirty worktree from other lanes; no files were reverted or overwritten."
+    },
+    {
+      "command": "ls -la data/review_notes && rg -n 'unexpected_relation_endpoint_shape|has_timeline_event|implemented_by|has_metric|next4|rule-gap|retire' data/review_notes packages/harness/src data ...",
+      "outcome": "Located prior review artifacts; command also reported missing packages/harness/src and produced overly broad matches. No data mutated."
+    },
+    {
+      "command": "jq '.' data/review_notes/codex-relation-rule-or-data-next3-prep.json | sed -n '1,260p'",
+      "outcome": "Read previous prep recommending has_claim event -> claim and noting has_metric claim -> metric_claim as the next plausible rule-gap review."
+    },
+    {
+      "command": "jq '.summary // .counts // .issues_by_code // .issueCounts // .validation // .report // .' data/campaigns/validation-2026-06/wave-24/report.json | sed -n '1,260p'",
+      "outcome": "Inspected latest wave report shape; report is an ingest campaign report and does not contain the endpoint issue inventory."
+    },
+    {
+      "command": "rg -n 'unexpected_relation_endpoint_shape|has_timeline_event|implemented_by|has_metric|RelationKind|relation.*endpoint|endpoint.*shape' packages data/review_notes ...",
+      "outcome": "Found relation validator and tests plus previous relation cleanup/rule prep notes."
+    },
+    {
+      "command": "jq 'keys' data/campaigns/validation-2026-06/wave-24/report.json",
+      "outcome": "Confirmed wave report keys are campaign/run telemetry, not validation issue details."
+    },
+    {
+      "command": "sed -n '220,280p' packages/pipeline/src/records/relations.ts && sed -n '250,290p' packages/pipeline/src/validate.ts && sed -n '50,76p' packages/pipeline/test/records/relations.test.ts",
+      "outcome": "Confirmed current endpoint shapes: has_timeline_event includes source/event, has_claim includes event, and has_metric currently omits claim."
+    },
+    {
+      "command": "bun --eval '<targeted endpoint-shape inventory over readCanonicalRecords() plus relationEndpointShapeIssue()>'",
+      "outcome": "Matched checkpoint exactly: 88 unexpected endpoint-shape issues; relation-kind counts were has_timeline_event 19, implemented_by 15, part_of_program 12, serves_route 10, has_metric 8, etc."
+    },
+    {
+      "command": "bun --eval '<print rows for has_metric claim->metric_claim, has_timeline_event claim/treatment buckets, implemented_by treatment/entity buckets>'",
+      "outcome": "Inspected exact candidate rows and examples from competing buckets."
+    },
+    {
+      "command": "bun --eval '<print full relation, subject, and object canonical records for has_metric claim->metric_claim candidates>'",
+      "outcome": "Confirmed eight candidate rows have claim subjects and metric_claim objects; endpoint payloads contain the matching claim text and numeric metrics."
+    },
+    {
+      "command": "bun --eval '<inspect canonical record keys and evidence_refs for representative has_metric claim->metric_claim records>'",
+      "outcome": "Confirmed canonical relation and endpoint records carry evidence_refs even when payload evidence arrays are not visible."
+    },
+    {
+      "command": "rg -n 'p001_c0003|p002_c0012|p002_c0007|p002_c0002' raw/sources/meeting_doc_167261/blocks.jsonl raw/sources/meeting_doc_115571/blocks.jsonl raw/sources/meeting_doc_198151/blocks.jsonl | sed -n '1,80p'",
+      "outcome": "Retrieved source block text for Monsey/Raina lease/license and financial-plan examples."
+    },
+    {
+      "command": "jq '.recommendation, .inventory_context.top_buckets_after_exclusions, .commands_run' data/review_notes/codex-relation-rule-or-data-next2-prep.json data/review_notes/codex-relation-rule-or-data-next3-prep.json | sed -n '1,260p'",
+      "outcome": "Confirmed prior rule-gap sequence and that has_metric claim->metric_claim had been intentionally deferred for this separate review."
+    },
+    {
+      "command": "jq '.recommendation, .summary, .commands_run' data/review_notes/codex-relation-cleanup-batch022-prep.json | sed -n '1,260p'",
+      "outcome": "Confirmed source -> metric_claim was previously handled as data cleanup via includes, which differs from the claim-carrier bucket reviewed here."
+    },
+    {
+      "command": "rg -n 'claim.*metric|metric.*claim|has_metric.*claim|claim -> metric|claim->metric|metric_context' docs packages data/ontology-review data/review_notes ...",
+      "outcome": "Found docs and prompts emphasizing durable subject metric edges, plus prior note saying claim-owned metrics need separate review; no direct existing rule for claim subjects."
+    },
+    {
+      "command": "bun --eval 'import { relationEndpointShapeIssue } from \"./packages/pipeline/src/records/relations.ts\"; console.log(relationEndpointShapeIssue(\"has_metric\", \"claim\", \"metric_claim\")?.message); console.log(relationEndpointShapeIssue(\"has_metric\", \"project\", \"metric_claim\"));'",
+      "outcome": "Confirmed current validator rejects claim -> metric_claim and accepts project -> metric_claim."
+    },
+    {
+      "command": "sed -n '320,350p' packages/agents/src/canonicalize.ts && sed -n '540,605p' packages/db/src/kind-registry.ts && sed -n '235,255p' packages/pipeline/src/records/relations.ts",
+      "outcome": "Checked relation-linker and registry context; has_metric is metric_context and currently allows project/route/corridor/entity/event subjects only."
+    },
+    {
+      "command": "bun --eval '<simulate allowing has_metric claim->metric_claim by subtracting only that bucket from targeted inventory>'",
+      "outcome": "Simulated impact: current 88 issues, 8 resolved, 80 remaining."
+    },
+    {
+      "command": "bun --eval '<dump all has_metric claim->metric_claim rows with relation, endpoint evidence, and metric payloads>'",
+      "outcome": "Collected all eight exact candidate rows used in this artifact."
+    },
+    {
+      "command": "bun --eval '<sample up to three rows per remaining endpoint-shape bucket>'",
+      "outcome": "Confirmed competing buckets are mixed and mostly data-cleanup-looking, including self-links, wrong object kinds, and agency-role endpoint issues."
+    },
+    {
+      "command": "jq -c 'select(.block_id==\"p008_c0001\" or .block_id==\"p008_c0002\" or .block_id==\"p011_c0002\" or .block_id==\"p012_c0002\") | {ref:(.source_id+\"#\"+.block_id), page_number, kind:.block_kind, text:.raw_text}' raw/sources/meeting_doc_198151/blocks.jsonl",
+      "outcome": "Retrieved exact source blocks for the Strengthen & Expand / $15.8B example."
+    },
+    {
+      "command": "jq -c 'select(.block_id==\"p002_c0002\" ... or .block_id==\"p002_c0012\") | {ref:(.source_id+\"#\"+.block_id), page_number, kind:.block_kind, text:.raw_text}' raw/sources/meeting_doc_115571/blocks.jsonl",
+      "outcome": "Retrieved exact year/value/claim source blocks for financial-plan examples."
+    },
+    {
+      "command": "git status --short -- data/review_notes/codex-relation-rule-or-data-next4-prep.json",
+      "outcome": "Confirmed the target prep artifact did not already exist before writing."
+    }
+  ]
+}

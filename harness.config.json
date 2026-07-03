@@ -1,0 +1,51 @@
+{
+  "defaultProfile": "pioneer-deepseek-flash",
+  "canonicalizeReviewerProfile": "pioneer-deepseek-pro",
+  "transcriptsDir": "data/transcripts",
+  "sandbox": {
+    "bash": {
+      "backend": "docker",
+      "dockerImage": "bp-sandbox:latest",
+      "network": "none",
+      "readOnlyRoot": true,
+      "tmpfsSize": "512m",
+      "shell": "bash"
+    }
+  },
+  "profiles": {
+    "deepseek-flash": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "apiKeyEnv": "DEEPSEEK_API_KEY"
+    },
+    "deepseek-pro": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "apiKeyEnv": "DEEPSEEK_API_KEY",
+      "thinkingLevel": "xhigh"
+    },
+    "deepseek-pro-high": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "apiKeyEnv": "DEEPSEEK_API_KEY",
+      "thinkingLevel": "high"
+    },
+    "pioneer-deepseek-flash": {
+      "provider": "pioneer",
+      "model": "deepseek-ai/DeepSeek-V4-Flash",
+      "apiKeyEnv": "PIONEER_API_KEY"
+    },
+    "pioneer-deepseek-pro": {
+      "provider": "pioneer",
+      "model": "deepseek-ai/DeepSeek-V4-Pro",
+      "apiKeyEnv": "PIONEER_API_KEY",
+      "thinkingLevel": "high"
+    },
+    "embeddings": {
+      "provider": "embeddings",
+      "model": "embeddings",
+      "baseUrl": "http://localhost:8001/v1",
+      "apiKeyEnv": "EMBEDDINGS_API_KEY"
+    }
+  }
+}

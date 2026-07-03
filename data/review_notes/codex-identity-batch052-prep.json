@@ -1,0 +1,61 @@
+{
+  "note_id": "codex-canonical-cleanup-2026-06-22-identity-alias-batch-052-prep",
+  "created_at": "2026-06-22T20:55:00Z",
+  "author": "codex",
+  "scope": "Codex-only identity cleanup follow-up for batch051 target residual duplicate",
+  "status": "ready_for_conductor_apply",
+  "mutation_mechanism": "data/identity-overrides/merges.json aliases.entity entries only; no generated canonical JSONL hand-editing",
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_seon-design-usa",
+      "target": "entity_seon-design-usa-corp",
+      "validator_duplicate_key": "entity_seon-design-usa-corp",
+      "reason": "Exact company/vendor identity for Seon Design [USA] Corp. Both records identify the same Bus Camera Security System maintenance vendor; the target already carries the richer merged Seon vendor payload.",
+      "evidence_refs": [
+        "meeting_doc_131811#p035_c0003",
+        "meeting_doc_131566#p007_c0003",
+        "meeting_doc_133236#p005_c0008"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "target_not_alias_in_merges_json": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_seon-design-usa-corp"
+        ]
+      },
+      "confidence": "high"
+    }
+  ],
+  "aggregate_guard_results": {
+    "candidate_count": 1,
+    "all_pass": true,
+    "canonical_records_present": true,
+    "target_records_present": true,
+    "aliases_not_already_merged": true,
+    "targets_not_aliases_in_merges_json": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 3,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 3,
+    "source_page_blocks_missing": [],
+    "confidence": "high"
+  },
+  "commands_run_for_this_prep": [
+    "sqlite3 data/canonical.db selected entity_seon-design-usa/entity_seon-design-usa-corp payload/evidence/alias inspection",
+    "rg raw/sources/meeting_doc_131811 and related sources for Seon Design evidence",
+    "jq merges.json check for existing entity_seon-design-usa alias"
+  ],
+  "commands_not_run": [
+    "materialize",
+    "export-jsonl --verify",
+    "validate",
+    "provider-backed post-ingest commands"
+  ]
+}

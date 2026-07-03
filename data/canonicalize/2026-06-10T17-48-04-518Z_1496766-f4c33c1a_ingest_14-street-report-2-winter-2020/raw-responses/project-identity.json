@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T17-48-04-518Z_1496766-f4c33c1a_ingest_14-street-report-2-winter-2020",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-10T19:20:33.784Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d-14th-street-ttp-pilot-winter2020-new",
+        "local_observation_id": "project_14th_street_ttp_pilot_winter2020",
+        "decision": "new",
+        "rationale": "The observation's base_record_id (project_14th-street-transit-truck-priority-pilot) is already the closest matching canonical registry record. The observation and registry card share identical project_name ('14th Street Transit & Truck Priority Pilot Project'), project_type ('pilot'), status ('ongoing'), borough ('Manhattan'), implementing agency, and description. The observation's local_observation_id is already listed in the registry card's local_observation_ids, and its source_id is already in the registry card's source_ids. Per canonicalization rules, when the closest match is the observation's own base_record_id, the decision is 'new' — the observation already resolves to that canonical id.",
+        "evidence_refs": [
+          {
+            "source_id": "14_street_report_2_winter_2020",
+            "block_id": "p002_c0006",
+            "source_quote": "The 14th Street Transit & Truck Priority (TTP) Pilot Project was implemented by the New York City Department of Transportation (NYCDOT) in October 2019, aiming to improve operations of the M14 A and M14 D Select Bus Service (M14 A/D SBS). The TTP Pilot Project also aims to increase safety on this Vision Zero Priority Corridor while maintaining the street as an important truck route."
+          },
+          {
+            "source_id": "14_street_report_2_winter_2020",
+            "block_id": "p002_c0007",
+            "source_quote": "From 6 AM–10 PM, only buses, trucks, and emergency vehicles are allowed to drive on 14th Street from 3rd Avenue to 8th Avenue heading westbound, and 9th Avenue to 3rd Avenue heading eastbound. Other vehicles are allowed to drive on 14th Street for local trips, pick-up/drop-off, and garage access but must make the next available right turn off of 14th Street."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-399Z_1609877-4fae33cb_canonicalize_2026-06-10t17-48-04-518z-1496766-f4c33c1a-ingest-14-street-report-2-winter-2020-project-identity"
+}

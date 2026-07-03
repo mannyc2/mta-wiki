@@ -1,0 +1,41 @@
+{
+  "run_id": "2026-06-10T23-09-00-287Z_1976810-091c3bb9_ingest_201203-brt-34th-cac6",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T03:13:14.729Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "corridor-34th-st-busway-self-match",
+        "local_observation_id": "corridor_201203_brt_34th_cac6_34th_st",
+        "decision": "new",
+        "rationale": "The observation's base_record_id (corridor_34th-st-busway) already matches an existing registry record. The observation's source_id (201203_brt_34th_cac6) is already listed in that registry record's source_ids. The geographic description in the observation payload ('34th Street from FDR Drive to Route 9A') describes the broader corridor study area context, while the registry record's limits ('Ninth Avenue to Third Avenue') capture the busway treatment segment — both stem from the same source document about the same 34th Street transitway project. Since the closest match IS the observation's own base_record_id, the canonicalization rule requires a 'new' decision: the observation already resolves to that id and no different record needs to be linked.",
+        "evidence_refs": [
+          {
+            "source_id": "201203_brt_34th_cac6",
+            "block_id": "p007_c0002",
+            "page_number": 7,
+            "source_quote": "60 ft wide section: East of Third Ave West of Ninth Ave"
+          },
+          {
+            "source_id": "201203_brt_34th_cac6",
+            "block_id": "p008_c0002",
+            "page_number": 8,
+            "source_quote": "52 ft wide section: Third Ave to Ninth Ave"
+          },
+          {
+            "source_id": "201203_brt_34th_cac6",
+            "block_id": "p017_c0002",
+            "page_number": 17,
+            "source_quote": "Table 1 with Arnie: FDR Drive to Third Ave."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-11-34-022Z_2111393-2718206c_canonicalize_2026-06-10t23-09-00-287z-1976810-091c3bb9-ingest-201203-brt-34th-cac6-corridor-identity"
+}

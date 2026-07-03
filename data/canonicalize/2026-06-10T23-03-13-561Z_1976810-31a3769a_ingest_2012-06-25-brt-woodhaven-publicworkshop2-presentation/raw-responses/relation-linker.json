@@ -1,0 +1,238 @@
+{
+  "run_id": "2026-06-10T23-03-13-561Z_1976810-31a3769a_ingest_2012-06-25-brt-woodhaven-publicworkshop2-presentation",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T02:47:12.471Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "d_metric_bus_lanes_10percent_speed_improvement",
+        "local_observation_id": "metric_bus_lanes_10percent_speed_improvement",
+        "decision": "skip",
+        "rationale": "Evidence block p004_c0002 does not explicitly name Woodhaven/Cross Bay; text only states 'Bus lanes improve bus speeds by about 10%' without naming the corridor or project. Cannot infer from co-occurrence.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p004_c0002",
+            "source_quote": "Bus lanes improve bus speeds by about 10%. Plans include:"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_claim_bus_lanes_improve_speed_10percent",
+        "local_observation_id": "claim_bus_lanes_improve_speed_10percent",
+        "decision": "skip",
+        "rationale": "Evidence block p004_c0002 does not explicitly name Woodhaven/Cross Bay; cannot infer from co-occurrence alone.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p004_c0002",
+            "source_quote": "Bus lanes improve bus speeds by about 10%. Plans include:"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_claim_buses_slow_unreliable_rush_hours",
+        "local_observation_id": "claim_buses_slow_unreliable_rush_hours",
+        "decision": "skip",
+        "rationale": "Evidence block p003_c0004 lists workshop comments but does not explicitly name Woodhaven/Cross Bay; cannot infer from co-occurrence alone.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p003_c0004",
+            "source_quote": "• Buses very slow and unreliable in rush hours • Pedestrian crossings difficult and dangerous • Service in Rockaways should be extended • Rockaway Branch is important to consider"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_claim_pedestrian_crossings_difficult_dangerous",
+        "local_observation_id": "claim_pedestrian_crossings_difficult_dangerous",
+        "decision": "skip",
+        "rationale": "Evidence block p003_c0004 lists workshop comments but does not explicitly name Woodhaven/Cross Bay; cannot infer from co-occurrence alone.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p003_c0004",
+            "source_quote": "• Buses very slow and unreliable in rush hours • Pedestrian crossings difficult and dangerous • Service in Rockaways should be extended • Rockaway Branch is important to consider"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_claim_rockaway_service_extension_request",
+        "local_observation_id": "claim_rockaway_service_extension_request",
+        "decision": "skip",
+        "rationale": "Evidence block p003_c0004 lists workshop comments but does not explicitly name Woodhaven/Cross Bay; cannot infer from co-occurrence alone.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p003_c0004",
+            "source_quote": "• Buses very slow and unreliable in rush hours • Pedestrian crossings difficult and dangerous • Service in Rockaways should be extended • Rockaway Branch is important to consider"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_claim_rockaway_branch_important",
+        "local_observation_id": "claim_rockaway_branch_important",
+        "decision": "skip",
+        "rationale": "Evidence block p003_c0004 lists workshop comments but does not explicitly name Woodhaven/Cross Bay; cannot infer from co-occurrence alone.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p003_c0004",
+            "source_quote": "• Buses very slow and unreliable in rush hours • Pedestrian crossings difficult and dangerous • Service in Rockaways should be extended • Rockaway Branch is important to consider"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_claim_sbs_faster_bus_service",
+        "local_observation_id": "claim_sbs_faster_bus_service",
+        "decision": "skip",
+        "rationale": "Evidence block p007_c0004 lists SBS focus areas but does not explicitly name Woodhaven/Cross Bay; cannot infer from co-occurrence alone.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p007_c0004",
+            "source_quote": "• Faster bus service • Safer streets for pedestrians and drivers • Maintaining appropriate traffic flow for local and through drivers"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_claim_sbs_safer_streets",
+        "local_observation_id": "claim_sbs_safer_streets",
+        "decision": "skip",
+        "rationale": "Evidence block p007_c0004 lists SBS focus areas but does not explicitly name Woodhaven/Cross Bay; cannot infer from co-occurrence alone.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p007_c0004",
+            "source_quote": "• Faster bus service • Safer streets for pedestrians and drivers • Maintaining appropriate traffic flow for local and through drivers"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_claim_sbs_maintain_traffic_flow",
+        "local_observation_id": "claim_sbs_maintain_traffic_flow",
+        "decision": "skip",
+        "rationale": "Evidence block p007_c0004 lists SBS focus areas but does not explicitly name Woodhaven/Cross Bay; cannot infer from co-occurrence alone.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p007_c0004",
+            "source_quote": "• Faster bus service • Safer streets for pedestrians and drivers • Maintaining appropriate traffic flow for local and through drivers"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_claim_woodhaven_cross_bay_4_5_lanes_per_direction",
+        "local_observation_id": "claim_woodhaven_cross_bay_4_5_lanes_per_direction",
+        "decision": "relate",
+        "rationale": "Evidence block p008_c0002 explicitly names 'Woodhaven & Cross Bay', matching canonical corridor record corridor_woodhaven-cross-bay-blvds.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p008_c0002",
+            "source_quote": "Most of Woodhaven & Cross Bay have 4-5 lanes/direction. The highest volume is at Union Tpke, where just 3 lanes go over the bridge."
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_woodhaven-cross-bay-blvds",
+            "object_id": "claim_woodhaven-cross-bay-4-5-lanes-per-direction",
+            "description": "Claim about lane configuration on Woodhaven & Cross Bay Boulevards",
+            "evidence_refs": [
+              {
+                "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+                "block_id": "p008_c0002",
+                "source_quote": "Most of Woodhaven & Cross Bay have 4-5 lanes/direction. The highest volume is at Union Tpke, where just 3 lanes go over the bridge."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "d_event_first_public_workshop_april_23_2014",
+        "local_observation_id": "event_first_public_workshop_april_23_2014",
+        "decision": "skip",
+        "rationale": "Existing relation has_timeline_event project_woodhaven-cross-bay-sbs -> event_first-public-workshop-april-23-2014 already exists in registry. No new edge needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p003_c0001",
+            "source_quote": "First Public Workshop – April 23"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_event_second_public_workshop_june_25_2014",
+        "local_observation_id": "event_second_public_workshop_june_25_2014",
+        "decision": "skip",
+        "rationale": "Existing relation has_timeline_event project_woodhaven-cross-bay-sbs -> event_second-public-workshop-june-25-2014 already exists in registry.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p001_c0002",
+            "source_quote": "Public Workshop # 2 June 25, 2014"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_event_summer_2014_design_development",
+        "local_observation_id": "event_summer_2014_design_development",
+        "decision": "skip",
+        "rationale": "Existing relation has_timeline_event project_woodhaven-cross-bay-sbs -> event_summer-2014-design-development already exists in registry.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p009_c0005",
+            "source_quote": "MTA Bus and DOT develop designs based on today's input"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_event_fall_2014_community_meetings",
+        "local_observation_id": "event_fall_2014_community_meetings",
+        "decision": "skip",
+        "rationale": "Existing relation has_timeline_event project_woodhaven-cross-bay-sbs -> event_fall-2014-community-meetings already exists in registry.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p009_c0006",
+            "source_quote": "Fall 2014: Meetings to present draft plans and get community input"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_event_late_2014_preferred_design_selection",
+        "local_observation_id": "event_late_2014_preferred_design_selection",
+        "decision": "skip",
+        "rationale": "Existing relation has_timeline_event project_woodhaven-cross-bay-sbs -> event_late-2014-preferred-design-selection already exists in registry.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p009_c0008",
+            "source_quote": "Selection of Preferred Design"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_event_2015_preferred_design_details",
+        "local_observation_id": "event_2015_preferred_design_details",
+        "decision": "skip",
+        "rationale": "Existing relation has_timeline_event project_woodhaven-cross-bay-sbs -> event_2015-preferred-design-details already exists in registry.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p009_c0009",
+            "source_quote": "2015: Develop details for Preferred Design, plan capital project"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-42-08-828Z_2111393-abbb5ad7_canonicalize_2026-06-10t23-03-13-561z-1976810-31a3769a-ingest-2012-06-25-brt-woodhaven-publicworkshop2-presentation-relation-linker"
+}

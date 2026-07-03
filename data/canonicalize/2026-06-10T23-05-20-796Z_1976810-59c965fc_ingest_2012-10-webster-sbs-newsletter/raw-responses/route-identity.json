@@ -1,0 +1,89 @@
+{
+  "run_id": "2026-06-10T23-05-20-796Z_1976810-59c965fc_ingest_2012-10-webster-sbs-newsletter",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T03:06:07.886Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "dec-bx41-sbs-2012-10-webster",
+        "local_observation_id": "route_bx41_sbs_2012_10_webster",
+        "decision": "new",
+        "proposed_relations": [
+          {
+            "relation_kind": "replaces",
+            "subject_id": "route_webster-ave-sbs",
+            "object_id": "route_bx41-limited-2012-10-webster",
+            "description": "Bx41 SBS replaces the Bx41 Limited service per the Fall 2012 Webster Avenue SBS newsletter",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_webster_sbs_newsletter",
+                "block_id": "p001_c0006",
+                "source_quote": "Bx41 SBS replaces the Bx41 Limited"
+              }
+            ]
+          }
+        ],
+        "rationale": "Observation resolves to its own base_record_id route_webster-ave-sbs, which is the canonical Bx41 SBS record already including source 2012_10_webster_sbs_newsletter in its source_ids. Same record, no link target.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p001_c0005",
+            "source_quote": "SBS on the Bx41:"
+          },
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p001_c0006",
+            "source_quote": "Bx41 SBS replaces the Bx41 Limited"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-bx41-local-2012-10-webster",
+        "local_observation_id": "route_bx41_local_2012_10_webster",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id route_bx41-local-2012-10-webster, an existing registry record. Same route variant (local), same borough (Bronx), same source. No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p001_c0006",
+            "source_quote": "Bx41 local route remains the same"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-bx41-limited-2012-10-webster",
+        "local_observation_id": "route_bx41_limited_2012_10_webster",
+        "decision": "new",
+        "proposed_relations": [
+          {
+            "relation_kind": "replaced_by",
+            "subject_id": "route_bx41-limited-2012-10-webster",
+            "object_id": "route_webster-ave-sbs",
+            "description": "Bx41 Limited is replaced by Bx41 SBS per the Fall 2012 Webster Avenue SBS newsletter",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_webster_sbs_newsletter",
+                "block_id": "p001_c0006",
+                "source_quote": "Bx41 SBS replaces the Bx41 Limited"
+              }
+            ]
+          }
+        ],
+        "rationale": "Observation resolves to its own base_record_id route_bx41-limited-2012-10-webster, an existing registry record. Same route variant (limited_stop), same borough (Bronx), same source. No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p001_c0006",
+            "source_quote": "Bx41 SBS replaces the Bx41 Limited"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-03-23-221Z_2111393-42ea4590_canonicalize_2026-06-10t23-05-20-796z-1976810-59c965fc-ingest-2012-10-webster-sbs-newsletter-route-identity"
+}

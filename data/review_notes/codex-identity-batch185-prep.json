@@ -1,0 +1,118 @@
+{
+  "note_id": "codex-identity-batch185-prep",
+  "batch": "identity185",
+  "created_at": "2026-06-23T10:05:00Z",
+  "scope": {
+    "global_kind": "route/corridor",
+    "included_kinds": [
+      "route",
+      "corridor"
+    ],
+    "selection_note": "Codex-only post-ingest identity cleanup prep for ROUTE and CORRIDOR duplicate_global_identity rows only. Inputs were current data/canonical/routes.jsonl, data/canonical/corridors.jsonl, data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, and allowed in-process validateRepo duplicate_global_identity output.",
+    "write_limit": "Only this review note was written. No identity overrides, LOG.md, manifest, canonical JSONL, DB, wiki, submissions, or other files were edited.",
+    "validator_duplicate_counts_latest_allowed_run": {
+      "total_issues": 491,
+      "duplicate_global_identity": 491,
+      "route_and_corridor_duplicate_global_identity": 48
+    }
+  },
+  "prepared_count": 0,
+  "proposed_aliases": [],
+  "exclusions_and_guards": {
+    "input_files_read": [
+      "data/canonical/routes.jsonl",
+      "data/canonical/corridors.jsonl",
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json"
+    ],
+    "proposal_guards": [
+      "No proposed alias_id may already be present as a merge alias in current data/identity-overrides/merges.json.",
+      "No proposed alias_id may be a current merge target in current data/identity-overrides/merges.json.",
+      "No proposed target_id may be a current merge alias in current data/identity-overrides/merges.json.",
+      "No proposed pair may appear in current data/identity-overrides/do-not-merge.json.",
+      "No route variant proposal was included without source evidence proving lifecycle/same service.",
+      "No partial-overlap corridor proposal was included without source-backed same-corridor/project identity.",
+      "No stale-id proposal was included."
+    ],
+    "notable_exclusions": [
+      {
+        "candidate": "corridor_brt-b82-mar2018-kings-highway -> corridor_b82-southern-brooklyn",
+        "reason": "Excluded as a partial-overlap corridor. The alias is a Kings Highway segment; the target is the broader B82 Southern Brooklyn corridor across Kings Highway and Flatlands Avenue."
+      },
+      {
+        "candidate": "corridor_cropsey-ave-brooklyn-b82 -> corridor_bay-parkway-cropsey",
+        "reason": "Excluded as partial-overlap/broader-composite corridor. The alias is a Cropsey Avenue B82 segment, while the target combines Bay Parkway and Cropsey Avenue study areas."
+      },
+      {
+        "candidate": "corridor_cross-bay-blvd-sbs-spring2015 -> corridor_cross-bay-blvd-2015",
+        "reason": "Excluded as same-street but different/insufficiently matched limits. The target is Cross Bay Boulevard north of 165 Av; the alias includes broader Cross Bay Boulevard bus-lane/project evidence including 107 Av to N Conduit Av."
+      },
+      {
+        "candidate": "corridor_cross-bay-blvd-liberty-109av-2015 or corridor_cross-bay-boulevard-rockaway-to-165 -> corridor_cross-bay-blvd-2015",
+        "reason": "Excluded as source-specific corridor locations/segments rather than clearly identical corridor identities."
+      },
+      {
+        "candidate": "corridor_flatlands-ave-e103-to-pa-ave -> corridor_flatlands-ave-brooklyn-b82",
+        "reason": "Both plausible records are current merge targets, so neither can be used as alias under the requested guards."
+      },
+      {
+        "candidate": "corridor_webster-third-ave-brt-phase2 -> corridor_webster-ave-bronx",
+        "reason": "Both records are current merge targets, so neither side is eligible as alias under the requested guards."
+      },
+      {
+        "candidate": "corridor_utica-ave-brt-phase2, corridor_utica-ave-b46-2015-04-06, corridor_utica-ave-st-johns-carroll-2013, corridor_utica-ave-st-johns-pl-church-ave-2013",
+        "reason": "Excluded because the live rows mix broad Utica Avenue/B46 corridor identity with narrower St. Johns/Carroll/Church segments, and the safer broad records are already current merge targets."
+      },
+      {
+        "candidate": "corridor_woodhaven-blvd-dry-harbor-to-metropolitan or corridor_woodhaven-blvd-union-tpke-to-81st-rd -> corridor_woodhaven-boulevard",
+        "reason": "Excluded as partial Woodhaven Boulevard segments with different limits from the broader Woodhaven Boulevard target."
+      },
+      {
+        "candidate": "route_q52-q53-sbs-proposed-2015-05 <-> route_q52-sbs-queens",
+        "reason": "Excluded because both plausible directions would require using a current merge target as alias."
+      },
+      {
+        "candidate": "route_bronx-flushing-jamaica-sbs <-> route_q44-cb12-2011",
+        "reason": "Excluded because both records are current merge targets and the collision is also a local/limited/SBS route-variant lifecycle area."
+      },
+      {
+        "candidate": "route_23rd-st-sbs <-> route_m23-local-cb4-apr2016",
+        "reason": "Excluded because the safe lifecycle direction would use current merge target route_m23-local-cb4-apr2016 as alias; reverse direction would collapse the SBS record into the local target."
+      },
+      {
+        "candidate": "route_q53-lga-2012 -> route_q53-sbs-ace",
+        "reason": "Excluded because the alias is a one-source LaGuardia workshop participant-identified Q53 route idea, not source-backed as the same Woodhaven/Cross Bay Q53 SBS service identity."
+      },
+      {
+        "candidate": "remaining route collisions for B44, B46, B82, Bx41, Bx55, M14, M34/M34A",
+        "reason": "Excluded as already-prepared aliases, existing merge-target direction traps, do-not-merge-adjacent service variants, or route variants without enough source evidence to merge under the conservative route guard."
+      }
+    ],
+    "commands_run": [
+      "rg read-only inspection of repo files and selected records",
+      "jq read-only inspection of data/identity-overrides/merges.json and data/identity-overrides/do-not-merge.json",
+      "bun --eval read-only in-process validateRepo duplicate_global_identity extraction",
+      "bun --eval read-only canonical JSONL inspection for selected route/corridor records"
+    ],
+    "forbidden_commands_not_run": [
+      "canonicalize*",
+      "campaign dedup",
+      "identity-review",
+      "write",
+      "ask",
+      "schema",
+      "ontology-normalize",
+      "provider/profile-backed commands",
+      "materialize",
+      "validate CLI",
+      "export-jsonl"
+    ]
+  },
+  "blockers": [
+    "No high-confidence new route/corridor alias proposal survived the requested guards in batch185.",
+    "Many remaining live duplicate_global_identity rows are route service variants or lifecycle-adjacent records where existing do-not-merge semantics caution against collapsing local/limited/SBS variants without very specific source authority.",
+    "Many remaining corridor rows are same-street collisions with different limits or partial segment overlap, especially B82/Kings Highway/Flatlands/Cropsey, Cross Bay Boulevard, Utica Avenue, and Woodhaven Boulevard.",
+    "Several otherwise plausible duplicate rows require an alias_id that is already a current merge target, which the task explicitly excludes.",
+    "One later compact candidate-report validator attempt hit a transient SQLite database lock, but an earlier allowed in-process validateRepo run in this task already provided the current route/corridor duplicate_global_identity queue used for this prep."
+  ]
+}

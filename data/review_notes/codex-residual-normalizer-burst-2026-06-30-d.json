@@ -1,0 +1,176 @@
+{
+  "note_id": "codex-residual-normalizer-burst-2026-06-30-d",
+  "created_at": "2026-06-30T00:00:00Z",
+  "mode": "codex_only_deterministic_post_ingest_cleanup",
+  "provider_backed_llm_commands_used": false,
+  "banned_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider profiles"
+  ],
+  "subagents_used": [
+    {
+      "lane": "event_family_other",
+      "result": "Identified exact transit-operation, governance, fare, and restriction-start event tails; broad venue/programming events intentionally left unresolved."
+    },
+    {
+      "lane": "source_gap_kind_other",
+      "result": "Recommended only gap_covid-impact for an existing bucket; remaining scope/extraction/external-disruption gaps need taxonomy/policy or should remain residual."
+    },
+    {
+      "lane": "project_document_time_status",
+      "result": "Identified six one-record document_time_status reductions; no high-confidence project_family reductions."
+    },
+    {
+      "lane": "route_entity_pressure",
+      "result": "Confirmed route identity collisions and entity unsuppressed duplicate pairs remain zero; no exact route/entity cleanup recommended."
+    }
+  ],
+  "baseline": {
+    "validation_issues": 0,
+    "event_family_other": 309,
+    "source_gap_kind_other": 6,
+    "project_document_time_status_unresolved": 83,
+    "project_document_time_status_missing": 79,
+    "project_document_time_status_other": 4,
+    "project_family_unresolved": 11,
+    "project_family_missing": 3,
+    "project_family_other": 8,
+    "route_scopes": {
+      "true_route": 302,
+      "split_candidate": 8,
+      "aggregate_list_context": 9,
+      "data_only_scope": 1
+    },
+    "relation_family_other": 0,
+    "treatment_family_other": 0,
+    "entity_unsuppressed_duplicate_pairs": 0
+  },
+  "implemented_changes": [
+    {
+      "bucket": "event_family",
+      "targets": [
+        "event_166956-yankee-stadium-service-2025",
+        "event_2026-spruce-up-stations",
+        "event_39th-ave-two-way-conversion",
+        "event_86466-blue-ribbon-panel",
+        "event_ada-mobilization-summer2021-40156",
+        "event_annual-review-ptasp",
+        "event_asp-v6-2025-update",
+        "event_bellerose-platform-repairs",
+        "event_brt-b82-mar2018-parking-updates",
+        "event_ehail-pilot-extension-dec2021",
+        "event_escalator-11-planned-upgrade",
+        "event_lirr-pre-boarding-ticket-validation-program",
+        "event_lirr-third-track-in-service",
+        "event_march-timetable-feb2025",
+        "event_meeting-doc-114216-ipad-installation-complete",
+        "event_meeting-doc-115156-fra-atlantic-branch",
+        "event_meeting-doc-115156-gcm-regular-maintenance",
+        "event_meeting-doc-140621-ehail-phase2-start",
+        "event_meeting-doc-176496-audio-pilots-renewal",
+        "event_meeting-doc-205616-montauk-trackwork-weekend",
+        "event_meeting-doc-gcm-transfer",
+        "event_meeting160146-coast-guard-bridge-regs",
+        "event_meeting196966-holiday-lights-train",
+        "event_meeting196966-super-express-train",
+        "event_mnr-m8-obc-12-software-release-june-2021",
+        "event_nh-cp230-commissioning-scheduled",
+        "event_nysdfs-regulation-enactment-2017",
+        "event_obc-15-scheduled",
+        "event_planyc-released-2007",
+        "event_speed-limit-change-june-2015",
+        "event_st-patricks-day-extra-service-133331",
+        "event_tropical-storm-ophelia-sep29-2023",
+        "event_mnr-s-program-work-commence-oct2023",
+        "event_ulurp-certification-2025",
+        "event_cdot-fare-increase-jul2026",
+        "event_cdot-fare-increase-sep2025",
+        "event_ctdot-fare-increase-sep2025",
+        "event_meeting-doc-179556-fare-increase-sept-2025",
+        "event_meeting-doc-115216-ny-budget-2023-2024",
+        "event_meeting-doc-189776-resolution-date",
+        "event_executive-session-labor-agreements",
+        "event_sbto-start"
+      ],
+      "rule": "Map exact transit-service, capital-work, governance, fare, weather-disruption, and restriction-start tails with narrow payload predicates.",
+      "delta": {
+        "other": -42
+      }
+    },
+    {
+      "bucket": "source_gap_kind",
+      "targets": [
+        "gap_covid-impact"
+      ],
+      "rule": "Map COVID performance-impact contextual caveats to methodology_or_comparability only when the payload includes COVID/pandemic and performance-indicator/ridership-change proof.",
+      "delta": {
+        "other": -1,
+        "methodology_or_comparability": 1
+      }
+    },
+    {
+      "bucket": "project_document_time_status",
+      "targets": [
+        "project_2025-29-tbta-capital-plan",
+        "project_fordham-plaza-2012",
+        "project_lirr-queens-interlocking-signal",
+        "project_meeting-doc-102806-preteckt",
+        "project_meeting-doc-177271-new-rail-cars",
+        "project_meeting-doc-202101-toll-evasion"
+      ],
+      "rule": "Map exact one-record project status tails to planned or active using payload-proven names, types, statuses, and descriptions.",
+      "delta": {
+        "unresolved": -6,
+        "planned": 4,
+        "active": 2
+      }
+    }
+  ],
+  "final_counts": {
+    "validation_issues": 0,
+    "submissions": 98102,
+    "canonical_records": 84042,
+    "wiki_pages": 7338,
+    "event_family_other": 267,
+    "source_gap_kind_other": 5,
+    "project_document_time_status_unresolved": 77,
+    "project_document_time_status_missing": 76,
+    "project_document_time_status_other": 1,
+    "project_family_unresolved": 11,
+    "project_family_missing": 3,
+    "project_family_other": 8,
+    "route_scopes": {
+      "true_route": 302,
+      "split_candidate": 8,
+      "aggregate_list_context": 9,
+      "data_only_scope": 1
+    },
+    "relation_family_other": 0,
+    "treatment_family_other": 0,
+    "entity_unsuppressed_duplicate_pairs": 0
+  },
+  "verification": [
+    "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+    "bun run typecheck",
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate"
+  ],
+  "remaining_intentionally_unresolved": {
+    "source_gaps": "Five source-gap other rows remain: procurement moratorium external-disruption caveat, no-transit-content source scope, two partial-extraction records, and Lower Montauk study scope limitation.",
+    "routes": "Eight split candidates and ten aggregate/data-only route contexts remain supported by direct bundle/count/branch/variant evidence; route/entity duplicate pressure is zero unsuppressed.",
+    "projects": "No high-confidence project_family changes were identified. Project document_time_status still has 77 unresolved rows, mostly no-status records needing exact payload gates.",
+    "events": "267 event_family other rows remain, including broad Grand Central venue/programming tails and other long-tail records needing exact payload gates.",
+    "relations_and_treatments": "relation_family other and treatment_family other remain zero."
+  },
+  "next_lanes": [
+    "Continue event_family other with another exact-tail pass, prioritizing non-venue transit operations/governance/fare/service records.",
+    "Continue project document_time_status missing rows with one-record or small-cluster gates; do not force project_family residuals without a safe enum fit.",
+    "Leave remaining source-gap scope/extraction records unless taxonomy policy adds explicit scope/extraction buckets.",
+    "Do not spend route/entity cycles unless new duplicate pressure appears after later materialization."
+  ]
+}

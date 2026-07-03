@@ -1,0 +1,436 @@
+{
+  "note_id": "codex-identity-batch079-prep",
+  "batch_id": "identity079",
+  "batch": "identity-batch079",
+  "created_at": "2026-06-23T01:40:00Z",
+  "lane": "codex-only deterministic/manual identity cleanup",
+  "status": "prepared",
+  "prepared_count": 8,
+  "all_pass": true,
+  "baseline_context": {
+    "source": "user-supplied current checkpoint after identity078/relation048, cross-checked by read-only deterministic identity-key scan over current canonical JSONL and data/canonical.db",
+    "total_validate_backlog": 1473,
+    "unexpected_relation_endpoint_shape": 18,
+    "duplicate_global_identity": 1455
+  },
+  "scope": {
+    "record_kind": "entity",
+    "decision_kind": "duplicate_global_identity",
+    "selection_rule": "High-confidence same-person entity duplicates with shared identity keys, matching names, compatible board/member or staff role context, current duplicate_global_identity rows, and no live override/do-not-merge conflicts. Initials-only, person/agency collisions, broad committee/org duplicates, and role-contaminated candidates were excluded."
+  },
+  "intended_mutation_path": "aliases.entity",
+  "intended_mutation": {
+    "aliases": {
+      "entity": {
+        "entity_meeting-doc-199016-samuel-chu": "entity_193976-samuel-chu",
+        "entity_meeting-doc-199016-david-mack": "entity_193976-david-mack",
+        "entity_meeting-doc-199171-james-odonnell": "entity_193976-james-odonnell",
+        "entity_meeting-doc-199171-gerard-bringmann": "entity_gerard-bringmann",
+        "entity_meeting-doc-199171-john-sterritt": "entity_meeting-doc-196846-john-sterritt",
+        "entity_meeting-doc-205651-ed-king": "entity_meeting-doc-196846-edwin-king",
+        "entity_meeting-doc-205651-keiyon-ramsey": "entity_meeting-doc-196846-keiyon-ramsey",
+        "entity_meeting-doc-205556-jai-patel": "entity_jai-patel-201601"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "alias_id": "entity_meeting-doc-199016-samuel-chu",
+      "target_id": "entity_193976-samuel-chu",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify Samuel Chu as a Co-Chair/person. The alias is a one-source meeting shard; the target already aggregates the same Samuel Chu board/committee identity across eight sources.",
+      "evidence": {
+        "shared_identity_keys": ["entity_samuel-chu", "entity_samuel-chu-co-chair"],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-199016-samuel-chu",
+          "display_name": "Samuel Chu, Co-Chair",
+          "entity_name": "Samuel Chu",
+          "entity_type": "person",
+          "role": "Co-Chair, Bridges and Tunnels Committee",
+          "source_ids": ["meeting_doc_199016"],
+          "evidence_refs": ["meeting_doc_199016#p016_c0005"],
+          "source_paths": ["raw/sources/meeting_doc_199016/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_193976-samuel-chu",
+          "display_name": "Hon. Samuel Chu, Co-Chair",
+          "entity_name": "Samuel Chu",
+          "entity_type": "person",
+          "title": "Co-Chair, Joint LIRR and Metro-North Committees",
+          "role": "Bridges and Tunnels Committee Co-Chair",
+          "source_id_count": 8,
+          "source_ids_sample": ["meeting_doc_140311", "meeting_doc_151596", "meeting_doc_192201", "meeting_doc_192266", "meeting_doc_193976"],
+          "evidence_refs_sample": ["meeting_doc_140311#p001_c0004", "meeting_doc_151596#p001_c0007", "meeting_doc_192201#p002_c0005"],
+          "source_paths_sample": ["raw/sources/meeting_doc_140311/blocks.jsonl", "raw/sources/meeting_doc_151596/blocks.jsonl", "raw/sources/meeting_doc_192201/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_193976-samuel-chu and entity_meeting-doc-199016-samuel-chu share identity key entity_samuel-chu.",
+          "validate: duplicate_global_identity | Global entity records entity_193976-samuel-chu and entity_meeting-doc-199016-samuel-chu share identity key entity_samuel-chu-co-chair."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-199016-david-mack",
+      "target_id": "entity_193976-david-mack",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify David Mack in the Bridges and Tunnels Committee chair/co-chair context. The alias is a one-source Co-Chair shard; the target aggregates the same David Mack committee identity across seventeen sources.",
+      "evidence": {
+        "shared_identity_keys": ["entity_david-mack", "entity_david-mack-co-chair"],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-199016-david-mack",
+          "display_name": "David Mack, Co-Chair",
+          "entity_name": "David Mack",
+          "entity_type": "person",
+          "role": "Co-Chair, Bridges and Tunnels Committee",
+          "source_ids": ["meeting_doc_199016"],
+          "evidence_refs": ["meeting_doc_199016#p016_c0005"],
+          "source_paths": ["raw/sources/meeting_doc_199016/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_193976-david-mack",
+          "display_name": "David Mack, Chair",
+          "entity_name": "David Mack",
+          "entity_type": "person",
+          "title": "Chair",
+          "role": "Bridges and Tunnels Committee Chair",
+          "organization": "Bridges and Tunnels Committee",
+          "source_id_count": 17,
+          "source_ids_sample": ["meeting_doc_104711", "meeting_doc_107566", "meeting_doc_111711", "meeting_doc_113966", "meeting_doc_115226"],
+          "evidence_refs_sample": ["meeting_doc_104711#p001_c0006", "meeting_doc_107566#p001_c0006", "meeting_doc_121016#p001_c0006"],
+          "source_paths_sample": ["raw/sources/meeting_doc_104711/blocks.jsonl", "raw/sources/meeting_doc_107566/blocks.jsonl", "raw/sources/meeting_doc_121016/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_193976-david-mack and entity_meeting-doc-199016-david-mack share identity key entity_david-mack.",
+          "validate: duplicate_global_identity | Global entity records entity_193976-david-mack and entity_meeting-doc-199016-david-mack share identity key entity_david-mack-co-chair."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-199171-james-odonnell",
+      "target_id": "entity_193976-james-odonnell",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify James O'Donnell as the same board/committee person. The alias is a one-source Board Member shard; the target already carries James O'Donnell committee-member evidence.",
+      "evidence": {
+        "shared_identity_keys": ["entity_james-o-donnell"],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-199171-james-odonnell",
+          "display_name": "James O'Donnell, Board Member",
+          "entity_name": "James O'Donnell",
+          "entity_type": "person",
+          "title": "Board Member",
+          "organization": "Metropolitan Transportation Authority",
+          "source_ids": ["meeting_doc_199171"],
+          "evidence_refs": ["meeting_doc_199171#p001_c0004"],
+          "source_paths": ["raw/sources/meeting_doc_199171/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_193976-james-odonnell",
+          "display_name": "James O'Donnell",
+          "entity_name": "James O'Donnell",
+          "entity_type": "person",
+          "title": "Bridges and Tunnels Committee Member",
+          "role": "Bridges and Tunnels Committee Member",
+          "source_id_count": 2,
+          "source_ids_sample": ["meeting_doc_193976", "meeting_doc_201651"],
+          "evidence_refs_sample": ["meeting_doc_193976#p016_c0005", "meeting_doc_201651#p016_c0005"],
+          "source_paths_sample": ["raw/sources/meeting_doc_193976/blocks.jsonl", "raw/sources/meeting_doc_201651/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_193976-james-odonnell and entity_meeting-doc-199171-james-odonnell share identity key entity_james-o-donnell."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-199171-gerard-bringmann",
+      "target_id": "entity_gerard-bringmann",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify Gerard Bringmann as the same MTA board/commuter council person. The alias is a one-source Board Member shard; the target already aggregates Gerard Bringmann attendance/board-member context.",
+      "evidence": {
+        "shared_identity_keys": ["entity_gerard-bringmann"],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-199171-gerard-bringmann",
+          "display_name": "Gerard Bringmann, Board Member",
+          "entity_name": "Gerard Bringmann",
+          "entity_type": "person",
+          "title": "Board Member",
+          "organization": "Metropolitan Transportation Authority",
+          "source_ids": ["meeting_doc_199171"],
+          "evidence_refs": ["meeting_doc_199171#p001_c0004"],
+          "source_paths": ["raw/sources/meeting_doc_199171/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_gerard-bringmann",
+          "display_name": "Gerard Bringmann",
+          "entity_name": "Gerard Bringmann",
+          "entity_type": "person",
+          "title": "Commuter Council Chair and MTA Board Member",
+          "role": "Also in Attendance at TBTA Committee Meeting",
+          "source_id_count": 2,
+          "source_ids_sample": ["meeting_doc_189841", "meeting_doc_196846"],
+          "evidence_refs_sample": ["meeting_doc_189841#p027_c0008", "meeting_doc_196846#p002_c0006"],
+          "source_paths_sample": ["raw/sources/meeting_doc_189841/blocks.jsonl", "raw/sources/meeting_doc_196846/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_gerard-bringmann and entity_meeting-doc-199171-gerard-bringmann share identity key entity_gerard-bringmann."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-199171-john-sterritt",
+      "target_id": "entity_meeting-doc-196846-john-sterritt",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify John Sterritt in the MTA Bridges and Tunnels/TBTA context. The alias is a one-source MTA B&T shard; the target identifies the same John Sterritt with senior environmental, health, and safety title evidence.",
+      "evidence": {
+        "shared_identity_keys": ["entity_john-sterritt"],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-199171-john-sterritt",
+          "display_name": "John Sterritt, MTA B&T",
+          "entity_name": "John Sterritt",
+          "entity_type": "person",
+          "organization": "MTA Bridges and Tunnels",
+          "source_ids": ["meeting_doc_199171"],
+          "evidence_refs": ["meeting_doc_199171#p001_c0008"],
+          "source_paths": ["raw/sources/meeting_doc_199171/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-196846-john-sterritt",
+          "display_name": "entity_meeting_doc_196846_john_sterritt",
+          "entity_name": "John Sterritt",
+          "entity_type": "person",
+          "title": "Senior Vice President, Environmental, Health & Safety",
+          "role": "TBTA in-person attendee",
+          "source_id_count": 1,
+          "source_ids_sample": ["meeting_doc_196846"],
+          "evidence_refs_sample": ["meeting_doc_196846#p002_c0008"],
+          "source_paths_sample": ["raw/sources/meeting_doc_196846/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-196846-john-sterritt and entity_meeting-doc-199171-john-sterritt share identity key entity_john-sterritt."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-205651-ed-king",
+      "target_id": "entity_meeting-doc-196846-edwin-king",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify Edwin T. King as Executive Vice President. The alias is a one-source attendee shard; the target has the same name and title from another TBTA meeting source.",
+      "evidence": {
+        "shared_identity_keys": ["entity_edwin-t-king"],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-205651-ed-king",
+          "display_name": "Edwin T. King, Executive Vice President",
+          "entity_name": "Edwin T. King",
+          "entity_type": "person",
+          "title": "Executive Vice President",
+          "source_ids": ["meeting_doc_205651"],
+          "evidence_refs": ["meeting_doc_205651#p001_c0008"],
+          "source_paths": ["raw/sources/meeting_doc_205651/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-196846-edwin-king",
+          "display_name": "entity_meeting_doc_196846_edwin_king",
+          "entity_name": "Edwin T. King",
+          "entity_type": "person",
+          "title": "Executive Vice President",
+          "role": "TBTA in-person attendee",
+          "source_id_count": 1,
+          "source_ids_sample": ["meeting_doc_196846"],
+          "evidence_refs_sample": ["meeting_doc_196846#p002_c0008"],
+          "source_paths_sample": ["raw/sources/meeting_doc_196846/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-196846-edwin-king and entity_meeting-doc-205651-ed-king share identity key entity_edwin-t-king."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-205651-keiyon-ramsey",
+      "target_id": "entity_meeting-doc-196846-keiyon-ramsey",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify Keiyon Ramsey as MTA PD Assistant Chief for Resource Management Command Staff. The alias and target are one-source shards with the same person name, title, and MTA PD context.",
+      "evidence": {
+        "shared_identity_keys": ["entity_keiyon-ramsey"],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-205651-keiyon-ramsey",
+          "display_name": "Keiyon Ramsey, MTA PD Assistant Chief",
+          "entity_name": "Keiyon Ramsey",
+          "entity_type": "person",
+          "title": "MTA PD Assistant Chief, Resource Management Command Staff",
+          "source_ids": ["meeting_doc_205651"],
+          "evidence_refs": ["meeting_doc_205651#p001_c0008"],
+          "source_paths": ["raw/sources/meeting_doc_205651/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-196846-keiyon-ramsey",
+          "display_name": "entity_meeting_doc_196846_keiyon_ramsey",
+          "entity_name": "Keiyon Ramsey",
+          "entity_type": "person",
+          "title": "MTA PD Assistant Chief, Resource Management Command Staff",
+          "role": "TBTA in-person attendee",
+          "source_id_count": 1,
+          "source_ids_sample": ["meeting_doc_196846"],
+          "evidence_refs_sample": ["meeting_doc_196846#p002_c0008"],
+          "source_paths_sample": ["raw/sources/meeting_doc_196846/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-196846-keiyon-ramsey and entity_meeting-doc-205651-keiyon-ramsey share identity key entity_keiyon-ramsey."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-205556-jai-patel",
+      "target_id": "entity_jai-patel-201601",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify Jai Patel as Chief Financial Officer for MTA. The alias and target are one-source shards with the same person name, title, and MTA finance context.",
+      "evidence": {
+        "shared_identity_keys": ["entity_jai-patel"],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-205556-jai-patel",
+          "display_name": "entity_meeting_doc_205556_jai_patel",
+          "entity_name": "Jai Patel",
+          "entity_type": "person",
+          "title": "Chief Financial Officer MTA",
+          "source_ids": ["meeting_doc_205556"],
+          "evidence_refs": ["meeting_doc_205556#p001_c0010"],
+          "source_paths": ["raw/sources/meeting_doc_205556/blocks.jsonl"]
+        },
+        "canonical_target": {
+          "record_id": "entity_jai-patel-201601",
+          "display_name": "Jai Patel, Chief Financial Officer MTA",
+          "entity_name": "Jai Patel",
+          "entity_type": "person",
+          "title": "Chief Financial Officer MTA",
+          "source_id_count": 1,
+          "source_ids_sample": ["meeting_doc_201601"],
+          "evidence_refs_sample": ["meeting_doc_201601#p001_c0010"],
+          "source_paths_sample": ["raw/sources/meeting_doc_201601/blocks.jsonl"]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_jai-patel-201601 and entity_meeting-doc-205556-jai-patel share identity key entity_jai-patel."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    }
+  ],
+  "blockers": [],
+  "verification": {
+    "commands_run": [
+      "read-only deterministic duplicate_global_identity scan over current canonical JSONL using identityKeysForRecord and identityDoNotMergeOverrideIssueSuppressed",
+      "read-only guard checks against data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, canonical.db identity_aliases, materialized records, and evidence source paths"
+    ],
+    "provider_backed_commands_run": false,
+    "generated_output_commands_run": false,
+    "validator_duplicate_rows_seen": 1455
+  }
+}

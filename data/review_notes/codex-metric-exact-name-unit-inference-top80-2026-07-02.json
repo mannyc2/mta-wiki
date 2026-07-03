@@ -1,0 +1,80 @@
+{
+  "note_id": "codex-metric-exact-name-unit-inference-top80-2026-07-02",
+  "created_at": "2026-07-02",
+  "mode": "codex_only_deterministic",
+  "external_provider_llms_used": false,
+  "forbidden_commands_used": [],
+  "bucket": "metric_claim.payload.unit_normalized.unit_family missing",
+  "baseline": {
+    "metric_claim_records": 36534,
+    "missing_unit_family_before": 981,
+    "unit_family_other_before": 5
+  },
+  "implemented_changes": [
+    {
+      "change": "Extended exact-name, payload-gated missing-unit inference for count, safety, complaint, enforcement, workforce, money, percentage, scale, safety-rate, and ridership metric names.",
+      "files": [
+        "packages/pipeline/src/ontology/normalizers.ts",
+        "packages/pipeline/test/ontology/normalizers.test.ts"
+      ],
+      "guards": [
+        "Rules apply only when the record has a finite numeric value and no existing unit or unit_normalized.",
+        "Money metrics still require dollar/USD/currency evidence.",
+        "Percentage metrics still require percent evidence.",
+        "Complaint metrics still require count-shaped evidence rather than percent-only rows.",
+        "workforce_change requires employee/workforce wording to avoid percent-change rows.",
+        "Ambiguous train_derailments/train_collisions, crash_injuries, broad ridership, and Secondary Screening Score rows remain intentionally unresolved."
+      ]
+    }
+  ],
+  "after": {
+    "metric_claim_records": 36534,
+    "missing_unit_family_after": 586,
+    "unit_family_other_after": 5,
+    "missing_unit_family_delta": -395,
+    "target_missing_remaining": 0
+  },
+  "verification": {
+    "focused_tests": {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "result": "pass",
+      "tests": 278,
+      "expects": 4691
+    },
+    "typecheck": {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    "materialize": {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "pass",
+      "materialized_submissions": "93067/98115",
+      "retired_submissions_skipped": 265,
+      "pages": 7335,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass",
+      "issues": 0,
+      "submissions": 98115,
+      "canonical_records": 84027,
+      "wiki_pages": 7331
+    }
+  },
+  "remaining": {
+    "metric_unit_family_missing": 586,
+    "metric_unit_family_other": 5,
+    "top_remaining_missing_names": [
+      ["train_derailments", 6],
+      ["crash_injuries", 5],
+      ["locomotive quantity", 4],
+      ["audit_projects_completed", 3],
+      ["major_events", 3],
+      ["Secondary Screening Score", 3],
+      ["track_trespassing_incidents", 3],
+      ["train_collisions", 3]
+    ],
+    "next_lane": "Read-only Codex subagent Pauli (019f2062-a18c-7182-ad41-3459034caf3a) is auditing the remaining 586 rows for the next safe exact-name batch."
+  }
+}

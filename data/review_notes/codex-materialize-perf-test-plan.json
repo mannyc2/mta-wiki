@@ -1,0 +1,112 @@
+{
+  "note_id": "codex-materialize-perf-test-plan",
+  "created_at_utc": "2026-06-22T22:09:12Z",
+  "lane": "perf/tests",
+  "scope": {
+    "target_file_inspected": "packages/pipeline/src/materialize/materialize.ts",
+    "test_file_inspected": "packages/pipeline/test/materialize/materialize.test.ts",
+    "forbidden_commands_avoided": [
+      "materialize",
+      "validate",
+      "export-jsonl",
+      "provider-backed commands"
+    ],
+    "generated_data_or_wiki_touched": false
+  },
+  "decision": {
+    "type": "no_additional_test_patch_recommended",
+    "reason": "The current dirty diff already contains focused low-level tests for both requested behaviors. Adding another test would duplicate coverage and increase conflict risk in an actively edited file.",
+    "confidence": "high"
+  },
+  "materialize_diff_summary": {
+    "materializable_entries_fix": {
+      "implementation_lines": "packages/pipeline/src/materialize/materialize.ts:203-213",
+      "behavior": "Builds source-scoped local observation id sets once, then reuses them for relationEndpointIssues filtering instead of rebuilding the set by filtering accepted entries for each entry."
+    },
+    "relation_target_local_id_backfill": {
+      "implementation_lines": "packages/pipeline/src/materialize/materialize.ts:225-259 and packages/pipeline/src/materialize/materialize.ts:321-358",
+      "behavior": "Indexes local observation ids by resolved canonical record id and source, then backfills subject_local_observation_id/object_local_observation_id when relation payloads supply canonical subject_id/object_id directly."
+    },
+    "timing_instrumentation": {
+      "implementation_lines": "packages/pipeline/src/materialize/materialize.ts:220-223 and surrounding entriesToRecords stages",
+      "behavior": "Adds opt-in MTA_MATERIALIZE_TIMING stderr timings without changing default output."
+    }
+  },
+  "existing_focused_tests": [
+    {
+      "name": "does not materialize relations whose local endpoints exist only in another source",
+      "location": "packages/pipeline/test/materialize/materialize.test.ts:327",
+      "covers": "Same-source endpoint scoping is preserved by the precomputed local id index."
+    },
+    {
+      "name": "keeps same-source relation endpoint filtering bounded for large accepted batches",
+      "location": "packages/pipeline/test/materialize/materialize.test.ts:369",
+      "covers": "O(N^2) materializableEntries regression by running 6000 accepted relation entries with missing same-source endpoints and asserting completion under 1000 ms with zero records."
+    },
+    {
+      "name": "indexes repeated local observation ids without quadratic duplicate-set churn",
+      "location": "packages/pipeline/test/materialize/materialize.test.ts:397",
+      "covers": "O(N^2) duplicate local id set-churn regression by instrumenting Set iteration and ensuring repeated local ids do not repeatedly spread whole sets."
+    },
+    {
+      "name": "backfills relation local endpoint ids when canonical record ids are supplied directly",
+      "location": "packages/pipeline/test/materialize/materialize.test.ts:431",
+      "covers": "Relation payloads with canonical subject_id/object_id get source-local endpoint ids filled."
+    },
+    {
+      "name": "prefers same-source local endpoint ids when backfilling merged canonical relation targets",
+      "location": "packages/pipeline/test/materialize/materialize.test.ts:476",
+      "covers": "Backfill chooses the relation source's local ids for merged canonical targets, falling back only when same-source local ids are unavailable."
+    }
+  ],
+  "patch_plan_if_these_tests_were_absent": [
+    {
+      "step": 1,
+      "file": "packages/pipeline/test/materialize/materialize.test.ts",
+      "change": "Add a same-source endpoint filtering regression test with thousands of accepted relation entries whose endpoints are missing in the same source; assert entriesToRecords returns no records and stays under a conservative local threshold."
+    },
+    {
+      "step": 2,
+      "file": "packages/pipeline/test/materialize/materialize.test.ts",
+      "change": "Add a direct canonical relation endpoint test where project/entity records exist and the relation supplies subject_id/object_id only; assert the materialized relation retains canonical ids and backfills subject_local_observation_id/object_local_observation_id."
+    },
+    {
+      "step": 3,
+      "file": "packages/pipeline/test/materialize/materialize.test.ts",
+      "change": "Add a merged-target variant where source A and source B local ids resolve to the same canonical project/entity, then assert a source B relation gets source B local ids."
+    }
+  ],
+  "residual_risk": [
+    "The 1000 ms performance assertion is intentionally coarse and environment-sensitive; it catches catastrophic O(N^2) regressions but is not a benchmark.",
+    "The Set iterator instrumentation catches duplicate local id churn in localBuckets/uniqueLocal construction, but does not measure all possible Map/Set allocations.",
+    "The tests cover entriesToRecords behavior directly and do not run full materialization, which was intentionally avoided by assignment."
+  ],
+  "commands_run": [
+    "pwd && rg -n \"from ['\\\"]effect|Effect\\.\" package.json packages -g '*.ts' -g 'package.json' | head -n 20",
+    "git status --short -- packages/pipeline/src/materialize/materialize.ts packages/pipeline/test data/review_notes/codex-materialize-perf-test-plan.json",
+    "git diff -- packages/pipeline/src/materialize/materialize.ts",
+    "rg --files packages/pipeline/test packages/pipeline/src | rg 'materialize|entriesToRecords|relations'",
+    "rg -n \"entriesToRecords|materializableEntries|local_observation|subject_local|object_local|relation\" packages/pipeline/test/materialize/materialize.test.ts packages/pipeline/test/records/relations.test.ts",
+    "sed -n '1,260p' packages/pipeline/test/materialize/materialize.test.ts",
+    "sed -n '260,620p' packages/pipeline/test/materialize/materialize.test.ts",
+    "git diff -- packages/pipeline/test/materialize/materialize.test.ts packages/pipeline/test/records/relations.test.ts",
+    "test ! -e data/review_notes/codex-materialize-perf-test-plan.json && echo ok || echo exists",
+    "bun test packages/pipeline/test/materialize/materialize.test.ts",
+    "git diff --stat -- packages/pipeline/src/materialize/materialize.ts packages/pipeline/test/materialize/materialize.test.ts packages/pipeline/test/records/relations.test.ts",
+    "cat package.json",
+    "cat packages/pipeline/package.json 2>/dev/null || true",
+    "find packages/pipeline -maxdepth 2 -name 'tsconfig*.json' -print",
+    "bun run --cwd packages/pipeline typecheck",
+    "nl -ba packages/pipeline/test/materialize/materialize.test.ts | sed -n '320,545p'",
+    "nl -ba packages/pipeline/src/materialize/materialize.ts | sed -n '190,395p'",
+    "date -u +%Y-%m-%dT%H:%M:%SZ"
+  ],
+  "command_results": {
+    "bun_test_packages_pipeline_test_materialize_materialize_test_ts": "pass: 18 tests, 0 fail, 692 expect() calls, 703 ms",
+    "bun_run_cwd_packages_pipeline_typecheck": "pass: tsc -p tsconfig.json --noEmit",
+    "git_diff_stat_inspected": "packages/pipeline/src/materialize/materialize.ts plus focused materialize/relations tests were already modified in the dirty worktree before this note"
+  },
+  "changed_by_this_task": [
+    "data/review_notes/codex-materialize-perf-test-plan.json"
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "batch_id": "codex-identity-batch110",
+  "created_at": "2026-06-23T04:42:14Z",
+  "scope": {
+    "record_kind": "project",
+    "global_only": true,
+    "max_aliases": 8
+  },
+  "prepared_count": 8,
+  "all_pass": true,
+  "expected_delta": {
+    "duplicate_global_identity": -8
+  },
+  "proposed_aliases": [
+    {
+      "kind": "project",
+      "alias_id": "project_174396-2025-2029-capital-plan",
+      "target_id": "project_2025-2029-capital-plan",
+      "reason": "Both records identify the same MTA 2025-2029 Capital Plan. The alias is a funding/proposed source-time slice of the same capital plan, while the target is the broader four-source Capital Plan record.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "project_name": "2025-2029 Capital Plan",
+          "project_type": "capital plan",
+          "project_family": "capital_or_infrastructure",
+          "status": "proposed",
+          "document_time_status": "planned"
+        },
+        "target": {
+          "record_kind": "project",
+          "project_name": "2025-2029 Capital Plan",
+          "project_type": "capital plan",
+          "project_family": "capital_or_infrastructure",
+          "status": "development",
+          "document_time_status": "other"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_174396#p001_c0002",
+        "meeting_doc_151861#p005_c0015",
+        "meeting_doc_174391#p011_c0006"
+      ],
+      "source_evidence_summary": "Alias evidence names funding for the 2025-29 Capital Plan; target evidence names the 2025-2029 Capital Plan and proposed-plan process."
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_meeting-doc-152171-2025-2029-capital-plan",
+      "target_id": "project_2025-2029-capital-plan",
+      "reason": "Both records are the same MTA 2025-2029 Capital Plan. The alias is a source-specific heading-only project record, and the target is the broader capital-plan record with matching project name and type.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "project_name": "2025-2029 Capital Plan",
+          "project_type": "capital plan",
+          "project_family": "capital_or_infrastructure"
+        },
+        "target": {
+          "record_kind": "project",
+          "project_name": "2025-2029 Capital Plan",
+          "project_type": "capital plan",
+          "project_family": "capital_or_infrastructure"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_152171#p002_c0002",
+        "meeting_doc_151861#p005_c0015",
+        "meeting_doc_174391#p011_c0006"
+      ],
+      "source_evidence_summary": "Alias and target evidence both directly name the 2025-2029 Capital Plan."
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_meeting-doc-154976-2025-2029-capital-plan",
+      "target_id": "project_2025-2029-capital-plan",
+      "reason": "Both records identify the same MTA 2025-2029 Capital Plan. The alias describes an open-house/status update for the plan, not a separate project scope.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "project_name": "2025-2029 Capital Plan",
+          "project_type": "capital plan",
+          "project_family": "capital_or_infrastructure",
+          "status": "Open House ongoing",
+          "document_time_status": "active"
+        },
+        "target": {
+          "record_kind": "project",
+          "project_name": "2025-2029 Capital Plan",
+          "project_type": "capital plan",
+          "project_family": "capital_or_infrastructure",
+          "status": "development"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_154976#p024_c0003",
+        "meeting_doc_151861#p005_c0015",
+        "meeting_doc_174391#p011_c0006"
+      ],
+      "source_evidence_summary": "Alias evidence describes an MTA open house on the 2025-2029 Capital Plan; target evidence names the same plan."
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_meeting-doc-177271-capital-plan-2025-2029",
+      "target_id": "project_2025-2029-capital-plan",
+      "reason": "Both records identify the same MTA 2025-2029 Capital Plan. The alias carries later approval-secured status for the same plan; that is source-time lifecycle context, not a different project.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "project_name": "2025-2029 Capital Plan",
+          "display_name": "MTA 2025-2029 Capital Plan",
+          "project_type": "capital plan",
+          "project_family": "capital_or_infrastructure",
+          "status": "approval secured"
+        },
+        "target": {
+          "record_kind": "project",
+          "project_name": "2025-2029 Capital Plan",
+          "display_name": "2025-2029 Capital Plan",
+          "project_type": "capital plan",
+          "project_family": "capital_or_infrastructure"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_177271#p015_c0002",
+        "meeting_doc_177271#p015_c0004",
+        "meeting_doc_151861#p005_c0015",
+        "meeting_doc_174391#p011_c0006"
+      ],
+      "source_evidence_summary": "Alias evidence names the 2025-2029 Capital Plan and approval secured; target evidence names the same plan."
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_cops-cameras-care-nov2022",
+      "target_id": "project_cops-cameras-care-initiative",
+      "reason": "Both records are the same Cops, Cameras, Care safety initiative. The alias and target share project name, safety-initiative classification, ongoing/active status, and source evidence about the effort to curb subway violence.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "project_name": "Cops, Cameras, Care",
+          "project_type": "safety initiative",
+          "project_family": "accessibility_or_safety",
+          "status": "ongoing",
+          "document_time_status": "active"
+        },
+        "target": {
+          "record_kind": "project",
+          "project_name": "Cops, Cameras, Care",
+          "project_type": "safety initiative",
+          "project_family": "accessibility_or_safety",
+          "status": "ongoing",
+          "document_time_status": "active"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_100341#p025_c0008",
+        "meeting_doc_105921#p027_c0008"
+      ],
+      "source_evidence_summary": "Alias and target evidence both describe the Cops, Cameras, Care effort focused on subway crime and violence."
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_meeting-doc-115246-cops-cameras-care",
+      "target_id": "project_cops-cameras-care-initiative",
+      "reason": "Both records identify the same Cops, Cameras, Care initiative. The alias is a meeting-document mention of the same named safety initiative; missing project_type fields on the alias do not indicate a different scope.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "project_name": "Cops, Cameras, Care",
+          "status": "ongoing",
+          "document_time_status": "active"
+        },
+        "target": {
+          "record_kind": "project",
+          "project_name": "Cops, Cameras, Care",
+          "project_type": "safety initiative",
+          "project_family": "accessibility_or_safety",
+          "status": "ongoing",
+          "document_time_status": "active"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_115246#p003_c0007",
+        "meeting_doc_105921#p027_c0008"
+      ],
+      "source_evidence_summary": "Alias evidence names Cops, Cameras, Care as a safety initiative; target evidence describes the same effort."
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_open-stroller-pilot-nov2022",
+      "target_id": "project_open-stroller-pilot",
+      "reason": "Both records are the same Open Stroller Pilot. The alias is a November 2022 source-time update for the same pilot program that the target already aggregates across five sources.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "project_name": "Open Stroller Pilot",
+          "project_type": "pilot program",
+          "project_family": "pilot",
+          "status": "ongoing",
+          "document_time_status": "active"
+        },
+        "target": {
+          "record_kind": "project",
+          "project_name": "Open Stroller Pilot",
+          "project_type": "pilot program",
+          "project_family": "pilot",
+          "status": "ongoing - 6 months in, over halfway through",
+          "document_time_status": "active"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_100341#p007_c0004",
+        "meeting_doc_104791#p018_c0010"
+      ],
+      "source_evidence_summary": "Alias evidence reports customers using the open stroller spaces on pilot routes; target evidence describes the 6-month Open Stroller Pilot."
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_open-stroller-pilot-sep2022",
+      "target_id": "project_open-stroller-pilot",
+      "reason": "Both records are the same Open Stroller Pilot. The alias captures the September 2022 launch moment for the same six-month pilot; launch versus ongoing status is source-time lifecycle context.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "project",
+          "project_name": "Open Stroller Pilot",
+          "project_type": "pilot",
+          "project_family": "pilot",
+          "status": "launching",
+          "document_time_status": "other"
+        },
+        "target": {
+          "record_kind": "project",
+          "project_name": "Open Stroller Pilot",
+          "project_type": "pilot program",
+          "project_family": "pilot",
+          "status": "ongoing - 6 months in, over halfway through",
+          "document_time_status": "active"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_95176#p018_c0006",
+        "meeting_doc_104791#p018_c0010"
+      ],
+      "source_evidence_summary": "Alias evidence announces launch of the open stroller pilot on selected routes; target evidence tracks the same 6-month pilot while underway."
+    }
+  ],
+  "guard_summary": {
+    "candidate_discovery": {
+      "command": "sqlite3 -header -column data/canonical.db \"select lower(coalesce(projects.project_name, projects.name, records.display_name,'')) as name_key, count(*) as n, group_concat(records.record_id, ' | ') as ids from records join projects on records.record_id=projects.record_id where records.record_kind='project' and lower(coalesce(projects.project_name, projects.name, records.display_name,'')) in ('2025-2029 capital plan','cops, cameras, care','open stroller pilot') group by lower(coalesce(projects.project_name, projects.name, records.display_name,'')) order by name_key;\"",
+      "result_summary": "Selected exact-name project clusters: 2025-2029 Capital Plan has 5 records, Cops, Cameras, Care has 3 records, and Open Stroller Pilot has 3 records. The selected aliases are all source-specific/status-slice records into the broader same-name targets."
+    },
+    "record_existence_and_kind": {
+      "command": "sqlite3 -header -column data/canonical.db \"select r.record_id, r.record_kind, r.display_name, p.project_name, p.project_type, p.project_family, p.status, p.document_time_status, r.primary_source_id, (select count(*) from record_sources rs where rs.record_id=r.record_id) as source_count from records r join projects p on r.record_id=p.record_id where r.record_id in ('project_174396-2025-2029-capital-plan','project_meeting-doc-152171-2025-2029-capital-plan','project_meeting-doc-154976-2025-2029-capital-plan','project_meeting-doc-177271-capital-plan-2025-2029','project_cops-cameras-care-nov2022','project_meeting-doc-115246-cops-cameras-care','project_open-stroller-pilot-nov2022','project_open-stroller-pilot-sep2022','project_2025-2029-capital-plan','project_cops-cameras-care-initiative','project_open-stroller-pilot') order by r.record_id;\"",
+      "result_summary": "11/11 selected alias and target records exist as record_kind=project. Within each merge group, project_name matches exactly; project_type/project_family align where populated. Status differences are source-time lifecycle/status slices."
+    },
+    "existing_alias_conflicts": {
+      "merges_json_command": "jq -r '.aliases.project as $p | [\"project_174396-2025-2029-capital-plan\",\"project_meeting-doc-152171-2025-2029-capital-plan\",\"project_meeting-doc-154976-2025-2029-capital-plan\",\"project_meeting-doc-177271-capital-plan-2025-2029\",\"project_cops-cameras-care-nov2022\",\"project_meeting-doc-115246-cops-cameras-care\",\"project_open-stroller-pilot-nov2022\",\"project_open-stroller-pilot-sep2022\"][] | select($p[.] != null) | . + \" -> \" + $p[.]' data/identity-overrides/merges.json",
+      "merges_json_result": "no output; none of the proposed aliases are already present in data/identity-overrides/merges.json",
+      "identity_aliases_command": "sqlite3 -header -column data/canonical.db \"select kind, alias, target from identity_aliases where kind='project' and alias in ('project_174396-2025-2029-capital-plan','project_meeting-doc-152171-2025-2029-capital-plan','project_meeting-doc-154976-2025-2029-capital-plan','project_meeting-doc-177271-capital-plan-2025-2029','project_cops-cameras-care-nov2022','project_meeting-doc-115246-cops-cameras-care','project_open-stroller-pilot-nov2022','project_open-stroller-pilot-sep2022');\"",
+      "identity_aliases_result": "no output; none of the proposed aliases are already present in canonical identity_aliases",
+      "target_alias_guard_command": "jq -r '.aliases.project as $p | [\"project_2025-2029-capital-plan\",\"project_cops-cameras-care-initiative\",\"project_open-stroller-pilot\"][] | select($p[.] != null) | . + \" -> \" + $p[.]' data/identity-overrides/merges.json && sqlite3 -header -column data/canonical.db \"select kind, alias, target from identity_aliases where kind='project' and alias in ('project_2025-2029-capital-plan','project_cops-cameras-care-initiative','project_open-stroller-pilot');\"",
+      "target_alias_guard_result": "no output from both checks; selected targets are not themselves registered aliases"
+    },
+    "do_not_merge_conflicts": {
+      "db_command": "sqlite3 -header -column data/canonical.db \"with pairs(alias,target) as (values ('project_174396-2025-2029-capital-plan','project_2025-2029-capital-plan'),('project_meeting-doc-152171-2025-2029-capital-plan','project_2025-2029-capital-plan'),('project_meeting-doc-154976-2025-2029-capital-plan','project_2025-2029-capital-plan'),('project_meeting-doc-177271-capital-plan-2025-2029','project_2025-2029-capital-plan'),('project_cops-cameras-care-nov2022','project_cops-cameras-care-initiative'),('project_meeting-doc-115246-cops-cameras-care','project_cops-cameras-care-initiative'),('project_open-stroller-pilot-nov2022','project_open-stroller-pilot'),('project_open-stroller-pilot-sep2022','project_open-stroller-pilot')) select d.* from do_not_merge d join pairs p on d.kind='project' and ((d.record_id_a=p.alias and d.record_id_b=p.target) or (d.record_id_a=p.target and d.record_id_b=p.alias));\"",
+      "db_result": "no output; no selected pair is present in canonical do_not_merge",
+      "json_command": "jq -r '.pairs.project[]? | select((.record_ids | index(\"project_174396-2025-2029-capital-plan\") and index(\"project_2025-2029-capital-plan\")) or (.record_ids | index(\"project_meeting-doc-152171-2025-2029-capital-plan\") and index(\"project_2025-2029-capital-plan\")) or (.record_ids | index(\"project_meeting-doc-154976-2025-2029-capital-plan\") and index(\"project_2025-2029-capital-plan\")) or (.record_ids | index(\"project_meeting-doc-177271-capital-plan-2025-2029\") and index(\"project_2025-2029-capital-plan\")) or (.record_ids | index(\"project_cops-cameras-care-nov2022\") and index(\"project_cops-cameras-care-initiative\")) or (.record_ids | index(\"project_meeting-doc-115246-cops-cameras-care\") and index(\"project_cops-cameras-care-initiative\")) or (.record_ids | index(\"project_open-stroller-pilot-nov2022\") and index(\"project_open-stroller-pilot\")) or (.record_ids | index(\"project_open-stroller-pilot-sep2022\") and index(\"project_open-stroller-pilot\"))) | .record_ids | @tsv' data/identity-overrides/do-not-merge.json",
+      "json_result": "no output; no selected pair is present in data/identity-overrides/do-not-merge.json"
+    },
+    "prior_prep_conflicts_through_identity108": {
+      "command": "for f in data/review_notes/codex-identity-batch0*-prep.json data/review_notes/codex-identity-batch10[0-8]-prep.json; do jq -r --arg f \"$f\" '.proposed_aliases[]? | select(.kind==\"project\") | select(.alias_id as $a | [\"project_174396-2025-2029-capital-plan\",\"project_meeting-doc-152171-2025-2029-capital-plan\",\"project_meeting-doc-154976-2025-2029-capital-plan\",\"project_meeting-doc-177271-capital-plan-2025-2029\",\"project_cops-cameras-care-nov2022\",\"project_meeting-doc-115246-cops-cameras-care\",\"project_open-stroller-pilot-nov2022\",\"project_open-stroller-pilot-sep2022\"] | index($a)) | [$f,.alias_id,.target_id] | @tsv' \"$f\" 2>/dev/null; done",
+      "result": "no output; none of the proposed project aliases appear in prior codex identity prep artifacts through batch108"
+    },
+    "source_evidence_spot_check": {
+      "command": "sqlite3 -header -column data/canonical.db \"with refs(source_id,block_id) as (values ('meeting_doc_151861','p005_c0015'),('meeting_doc_174391','p011_c0006'),('meeting_doc_174396','p001_c0002'),('meeting_doc_152171','p002_c0002'),('meeting_doc_154976','p024_c0003'),('meeting_doc_177271','p015_c0002'),('meeting_doc_105921','p027_c0008'),('meeting_doc_100341','p025_c0008'),('meeting_doc_115246','p003_c0007'),('meeting_doc_104791','p018_c0010'),('meeting_doc_100341','p007_c0004'),('meeting_doc_95176','p018_c0006')) select b.source_id, b.block_id, substr(replace(replace(b.raw_text, char(10), ' '), char(13), ' '), 1, 220) as text from blocks_fts b join refs r on b.source_id=r.source_id and b.block_id=r.block_id order by b.source_id, b.block_id;\"",
+      "result_summary": "Block evidence directly names or describes the three selected project identities: 2025-2029 Capital Plan, Cops, Cameras, Care, and Open Stroller Pilot."
+    },
+    "forbidden_command_compliance": {
+      "result": "No external/provider-backed commands or profiles/providers were used. No canonicalize, canonicalize-wave, canonicalize-review, campaign dedup, identity-review-run, write, ask, schema-propose, ontology-normalize-run, materialize, export-jsonl, or validate commands were run. Inspection used local deterministic commands only: pwd, rg, sed, ls, sqlite3, jq, head, date, git status, and test; the only write was this prep artifact."
+    }
+  }
+}

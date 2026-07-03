@@ -1,0 +1,69 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:35:52.290Z",
+  "packet_path": "data/identity-review/packets/project_cluster_a35902fc28.md",
+  "cluster_id": "project_cluster_a35902fc28",
+  "kind": "project",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "project_cluster_a35902fc28",
+    "kind": "project",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "project_06-42nd-st",
+          "project_12-webster-ave"
+        ],
+        "reason": "Strong identity fields differ: different project_name (42nd St vs Webster Ave), different corridor/geographic scope (42nd St, 12th Ave to FDR Dr vs Webster Ave, 176th St to 174th St), and different routes_served (M42, SIM8 etc. vs Bx41 SBS, Bx41). Shared program membership (Better Buses Action Plan) is relation context, not merge authority, per identity merge canon test 1 (contradiction test)."
+      },
+      {
+        "record_ids": [
+          "project_06-42nd-st",
+          "project_17-fresh-pond-rd"
+        ],
+        "reason": "Strong identity fields differ: different project_name (42nd St vs Fresh Pond Rd), different corridor/geographic scope (42nd St, 12th Ave to FDR Dr vs Fresh Pond Rd, Metropolitan Ave to Putnam Ave), and different routes_served (M42, SIM8 etc. vs Q58, QM24 etc.). Shared program membership is not merge authority. Test 1 applies."
+      },
+      {
+        "record_ids": [
+          "project_06-42nd-st",
+          "project_21-malcolm-x-blvd"
+        ],
+        "reason": "Strong identity fields differ: different project_name (42nd St vs Malcolm X Blvd / Utica Ave), different geographic scope (42nd St vs Chauncey St to Atlantic Ave), different routes_served (M42 etc. vs B46 SBS, B46). Shared program membership is not merge authority. Test 1 applies."
+      },
+      {
+        "record_ids": [
+          "project_12-webster-ave",
+          "project_17-fresh-pond-rd"
+        ],
+        "reason": "Strong identity fields differ: different project_name (Webster Ave vs Fresh Pond Rd), different geographic scope (Webster Ave, 176th St to 174th St vs Fresh Pond Rd, Metropolitan Ave to Putnam Ave), different routes_served (Bx41 SBS, Bx41 vs Q58, QM24 etc.). Shared program membership is not merge authority. Test 1 applies."
+      },
+      {
+        "record_ids": [
+          "project_12-webster-ave",
+          "project_21-malcolm-x-blvd"
+        ],
+        "reason": "Strong identity fields differ: different project_name (Webster Ave vs Malcolm X Blvd / Utica Ave), different geographic scope (Webster Ave, 176th St to 174th St vs Chauncey St to Atlantic Ave), different routes_served (Bx41 SBS, Bx41 vs B46 SBS, B46). Shared program membership is not merge authority. Test 1 applies."
+      },
+      {
+        "record_ids": [
+          "project_17-fresh-pond-rd",
+          "project_21-malcolm-x-blvd"
+        ],
+        "reason": "Strong identity fields differ: different project_name (Fresh Pond Rd vs Malcolm X Blvd / Utica Ave), different geographic scope (Fresh Pond Rd, Metropolitan Ave to Putnam Ave vs Chauncey St to Atlantic Ave), different routes_served (Q58, QM24 etc. vs B46 SBS, B46). Shared program membership is not merge authority. Test 1 applies."
+      }
+    ],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "All four records are distinct projects with differing project names, geographic scopes, routes served, and descriptions. The only shared attribute is program membership (Better Buses Action Plan), which is relation context, not identity. Therefore, no merge is appropriate. The identity merge canon test 1 (contradiction) clearly applies, as strong identity fields differ across every pair."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-35-39-561Z_1282984-db772a4b_identity-review-run_project-cluster-a35902fc28",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-35-39-561Z_2026-06-23T14-35-39-561Z_1282984-db772a4b_identity-review-run_project-cluster-a35902fc28.jsonl"
+}

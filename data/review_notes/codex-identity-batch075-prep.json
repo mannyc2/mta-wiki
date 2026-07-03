@@ -1,0 +1,702 @@
+{
+  "note_id": "codex-identity-batch075-prep",
+  "batch_id": "identity075",
+  "batch": "identity-batch075",
+  "created_at": "2026-06-23T00:28:55Z",
+  "lane": "codex-only identity cleanup",
+  "status": "prepared",
+  "prepared_count": 8,
+  "intended_alias_count": 8,
+  "baseline_context": {
+    "source": "user-supplied fresh baseline after identity074/relation042/next18 checkpoint",
+    "duplicate_global_identity": 1496,
+    "unexpected_relation_endpoint_shape": 27
+  },
+  "scope": {
+    "record_kind": "entity",
+    "decision_kind": "duplicate_global_identity",
+    "selection_rule": "High-confidence person-entity duplicates with exact payload.entity_name matches, compatible title/organization/source context, current duplicate_global_identity validator rows, and no overlap with live identity overrides, identity_aliases, do-not-merge pairs, or Codex identity prep batches through 074."
+  },
+  "intended_mutation": {
+    "aliases": {
+      "entity": {
+        "entity_meeting-doc-121141-brad-jenkins": "entity_brad-jenkins-moe",
+        "entity_meeting-doc-44216-craig-cipriano": "entity_craig-cipriano-dec2021",
+        "entity_meeting-doc-164901-evan-eisland": "entity_evan-eisland-cgc",
+        "entity_meeting91596-haeda-mihaltses": "entity_meeting-doc-102806-haeda-mihaltses",
+        "entity_meeting-doc-131646-joanne-feld": "entity_meeting-doc-129041-joanne-feld",
+        "entity_meeting-doc-113986-jose-lasalle": "entity_jose-lasalle-nov2022",
+        "entity_meeting-doc-124206-joseph-odonnell": "entity_joseph-odonnell",
+        "entity_kuvershen-ayer-meeting-doc-98291": "entity_kuvershen-ayer"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "alias_id": "entity_meeting-doc-121141-brad-jenkins",
+      "target_id": "entity_brad-jenkins-moe",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Brad Jenkins'. The alias is a one-source Long Island Rail Road Chief Mechanical Officer mention, while the target aggregates the same Brad Jenkins / Maintenance of Equipment identity across four meeting documents.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-121141-brad-jenkins",
+          "display_name": "Brad Jenkins",
+          "entity_name": "Brad Jenkins",
+          "entity_type": "person",
+          "title": "Chief Mechanical Officer, Long Island Rail Road",
+          "source_ids": [
+            "meeting_doc_121141"
+          ],
+          "record_aliases": [
+            "entity_brad-jenkins"
+          ],
+          "evidence_refs": [
+            "meeting_doc_121141#p008_c0009",
+            "meeting_doc_121141#p008_c0010"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_121141/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_brad-jenkins-moe",
+          "display_name": "Brad Jenkins",
+          "entity_name": "Brad Jenkins",
+          "entity_type": "person",
+          "source_ids": [
+            "meeting_doc_128886",
+            "meeting_doc_133351",
+            "meeting_doc_135306",
+            "meeting_doc_135366"
+          ],
+          "record_aliases": [
+            "entity_brad-jenkins",
+            "entity_brad-jenkins-maintenance-of-equipment",
+            "entity_brad-jenkins-meeting-doc-135306",
+            "entity_brad-jenkins-meeting-doc-135366",
+            "entity_brad-jenkins-moe-meeting-doc-135366"
+          ],
+          "evidence_refs": [
+            "meeting_doc_128886#p001_c0004",
+            "meeting_doc_128886#p003_c0004",
+            "meeting_doc_128886#p005_c0004",
+            "meeting_doc_133351#p006_c0004"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_128886/blocks.jsonl",
+            "raw/sources/meeting_doc_133351/blocks.jsonl",
+            "raw/sources/meeting_doc_135306/blocks.jsonl",
+            "raw/sources/meeting_doc_135366/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_brad-jenkins-moe and entity_meeting-doc-121141-brad-jenkins share identity key entity_brad-jenkins.",
+          "records: entity_meeting-doc-121141-brad-jenkins | entity | Brad Jenkins | meeting_doc_121141 | source_stated | unreviewed",
+          "records: entity_brad-jenkins-moe | entity | Brad Jenkins | meeting_doc_128886 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_074": true,
+        "target_not_in_prior_batches_001_074": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-44216-craig-cipriano",
+      "target_id": "entity_craig-cipriano-dec2021",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Craig Cipriano'. The alias has MTA Bus Company / NYCT Department of Buses president-SVP context, and the target aggregates the same named NYCT president/interim president identity.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-44216-craig-cipriano",
+          "display_name": "Craig Cipriano",
+          "entity_name": "Craig Cipriano",
+          "entity_type": "person",
+          "title": "President, MTA Bus Company / Senior Vice President, NYCT Department of Buses",
+          "organization": "MTA Bus Company",
+          "source_ids": [
+            "meeting_doc_44216"
+          ],
+          "record_aliases": [
+            "entity_craig-cipriano"
+          ],
+          "evidence_refs": [
+            "meeting_doc_44216#p040_c0002"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_44216/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_craig-cipriano-dec2021",
+          "display_name": "Craig Cipriano, President NYCT",
+          "entity_name": "Craig Cipriano",
+          "entity_type": "person",
+          "title": "President, New York City Transit",
+          "organization": "MTA New York City Transit",
+          "source_ids": [
+            "meeting_doc_72581",
+            "meeting_doc_73021",
+            "meeting_doc_79491",
+            "meeting_doc_86011"
+          ],
+          "record_aliases": [
+            "entity_cipriano-nyct-president-jan2022",
+            "entity_craig-cipriano",
+            "entity_craig-cipriano-interim-nyct-pres-april2022",
+            "entity_craig-cipriano-interim-president-nyct",
+            "entity_craig-cipriano-interim-president-nycta",
+            "entity_craig-cipriano-president-nyct"
+          ],
+          "evidence_refs": [
+            "meeting_doc_72581#p003_c0006",
+            "meeting_doc_73021#p005_c0001",
+            "meeting_doc_86011#p005_c0001",
+            "meeting_doc_79491#p005_c0001"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_72581/blocks.jsonl",
+            "raw/sources/meeting_doc_73021/blocks.jsonl",
+            "raw/sources/meeting_doc_86011/blocks.jsonl",
+            "raw/sources/meeting_doc_79491/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_craig-cipriano-dec2021 and entity_meeting-doc-44216-craig-cipriano share identity key entity_craig-cipriano.",
+          "records: entity_meeting-doc-44216-craig-cipriano | entity | Craig Cipriano | meeting_doc_44216 | source_stated | unreviewed",
+          "records: entity_craig-cipriano-dec2021 | entity | Craig Cipriano, President NYCT | meeting_doc_72581 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_074": true,
+        "target_not_in_prior_batches_001_074": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-164901-evan-eisland",
+      "target_id": "entity_evan-eisland-cgc",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Evan Eisland'. The alias is a single executive vice president and general counsel mention, and the target aggregates the same MTA Construction & Development general counsel identity across ten source documents.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-164901-evan-eisland",
+          "display_name": "entity_meeting_doc_164901_evan_eisland",
+          "entity_name": "Evan Eisland",
+          "entity_type": "person",
+          "title": "Executive Vice President and General Counsel",
+          "source_ids": [
+            "meeting_doc_164901"
+          ],
+          "record_aliases": [
+            "entity_evan-eisland"
+          ],
+          "evidence_refs": [
+            "meeting_doc_164901#p029_c0003"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_164901/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_evan-eisland-cgc",
+          "display_name": "Evan Eisland",
+          "entity_name": "Evan Eisland",
+          "entity_type": "person",
+          "title": "General Counsel & Secretary",
+          "organization": "MTA Construction & Development",
+          "source_ids": [
+            "meeting_doc_128986",
+            "meeting_doc_131491",
+            "meeting_doc_133356",
+            "meeting_doc_135341",
+            "meeting_doc_157756",
+            "meeting_doc_170986",
+            "meeting_doc_177171",
+            "meeting_doc_186856",
+            "meeting_doc_196836",
+            "meeting_doc_198991"
+          ],
+          "record_aliases": [
+            "entity_cpc-evan-eisland-v2",
+            "entity_evan-eisland",
+            "entity_evan-eisland-evp-general-counsel-and-secretary-c-and-d",
+            "entity_evan-eisland-executive-vice-president-and-general-counsel",
+            "entity_evan-eisland-executive-vice-president-and-general-counsel-c-and-d",
+            "entity_evan-eisland-executive-vice-president-and-general-counsel-mta-c-and-d"
+          ],
+          "evidence_refs": [
+            "meeting_doc_128986#p003_c0007",
+            "meeting_doc_131491#p007_c0005",
+            "meeting_doc_133356#p018_c0003",
+            "meeting_doc_135341#p136_c0003"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_128986/blocks.jsonl",
+            "raw/sources/meeting_doc_131491/blocks.jsonl",
+            "raw/sources/meeting_doc_133356/blocks.jsonl",
+            "raw/sources/meeting_doc_135341/blocks.jsonl",
+            "raw/sources/meeting_doc_157756/blocks.jsonl",
+            "raw/sources/meeting_doc_170986/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_evan-eisland-cgc and entity_meeting-doc-164901-evan-eisland share identity key entity_evan-eisland.",
+          "records: entity_meeting-doc-164901-evan-eisland | entity | entity_meeting_doc_164901_evan_eisland | meeting_doc_164901 | source_stated | unreviewed",
+          "records: entity_evan-eisland-cgc | entity | Evan Eisland | meeting_doc_128986 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_074": true,
+        "target_not_in_prior_batches_001_074": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting91596-haeda-mihaltses",
+      "target_id": "entity_meeting-doc-102806-haeda-mihaltses",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Haeda Mihaltses' and the same committee-chair context. The alias is a single meeting_doc_91596 mention; the target aggregates the same chair/member identity across thirteen meeting documents.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting91596-haeda-mihaltses",
+          "display_name": "Hon. Haeda Mihaltses, Committee Chair",
+          "entity_name": "Haeda Mihaltses",
+          "entity_type": "person",
+          "title": "Committee Chair",
+          "organization": "MTA New York City Transit Authority Committee on Operations",
+          "source_ids": [
+            "meeting_doc_91596"
+          ],
+          "record_aliases": [
+            "entity_haeda-mihaltses",
+            "entity_hon-haeda-mihaltses-committee-chair"
+          ],
+          "evidence_refs": [
+            "meeting_doc_91596#p001_c0004",
+            "meeting_doc_91596#p001_c0007"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_91596/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-102806-haeda-mihaltses",
+          "display_name": "Hon. Haeda Mihaltses, Committee Chair",
+          "entity_name": "Haeda Mihaltses",
+          "entity_type": "person",
+          "title": "Committee Chair",
+          "organization": "MTA New York City Transit Authority Committee on Operations",
+          "source_ids": [
+            "meeting_doc_102806",
+            "meeting_doc_105931",
+            "meeting_doc_107531",
+            "meeting_doc_111971",
+            "meeting_doc_113946",
+            "meeting_doc_124306",
+            "meeting_doc_131546",
+            "meeting_doc_138396",
+            "meeting_doc_170981",
+            "meeting_doc_176421",
+            "meeting_doc_196876",
+            "meeting_doc_205541",
+            "meeting_doc_89816"
+          ],
+          "record_aliases": [
+            "entity_h-mihaltses-chair-transit-and-bus-committee",
+            "entity_haeda-mihaltses",
+            "entity_haeda-mihaltses-chair-jun2022",
+            "entity_haeda-mihaltses-committee-chair",
+            "entity_haeda-mihaltses-mta-board-member",
+            "entity_hon-haeda-mihaltses",
+            "entity_hon-haeda-mihaltses-committee-chair"
+          ],
+          "evidence_refs": [
+            "meeting_doc_105931#p001_c0004",
+            "meeting_doc_102806#p001_c0004",
+            "meeting_doc_107531#p001_c0004",
+            "meeting_doc_111971#p001_c0004"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_105931/blocks.jsonl",
+            "raw/sources/meeting_doc_102806/blocks.jsonl",
+            "raw/sources/meeting_doc_107531/blocks.jsonl",
+            "raw/sources/meeting_doc_111971/blocks.jsonl",
+            "raw/sources/meeting_doc_113946/blocks.jsonl",
+            "raw/sources/meeting_doc_124306/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-102806-haeda-mihaltses and entity_meeting91596-haeda-mihaltses share identity key entity_haeda-mihaltses.",
+          "records: entity_meeting91596-haeda-mihaltses | entity | Hon. Haeda Mihaltses, Committee Chair | meeting_doc_91596 | source_stated | unreviewed",
+          "records: entity_meeting-doc-102806-haeda-mihaltses | entity | Hon. Haeda Mihaltses, Committee Chair | meeting_doc_105931 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_074": true,
+        "target_not_in_prior_batches_001_074": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-131646-joanne-feld",
+      "target_id": "entity_meeting-doc-129041-joanne-feld",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Joanne S. Feld' and Deputy Director, Finance context. The target carries the same identity across two source documents.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-131646-joanne-feld",
+          "display_name": "Joanne S. Feld",
+          "entity_name": "Joanne S. Feld",
+          "entity_type": "person",
+          "title": "Deputy Director, Finance",
+          "source_ids": [
+            "meeting_doc_131646"
+          ],
+          "record_aliases": [
+            "entity_joanne-s-feld"
+          ],
+          "evidence_refs": [
+            "meeting_doc_131646#p004_c0008"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_131646/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-129041-joanne-feld",
+          "display_name": "Joanne S. Feld, Deputy Director, Finance",
+          "entity_name": "Joanne S. Feld",
+          "entity_type": "person",
+          "title": "Deputy Director, Finance",
+          "organization": "Metropolitan Transportation Authority",
+          "source_ids": [
+            "meeting_doc_129041",
+            "meeting_doc_146976"
+          ],
+          "record_aliases": [
+            "entity_joanne-feld-deputy-director-finance",
+            "entity_joanne-s-feld",
+            "entity_joanne-s-feld-deputy-director-finance"
+          ],
+          "evidence_refs": [
+            "meeting_doc_129041#p004_c0026",
+            "meeting_doc_146976#p005_c0005"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_129041/blocks.jsonl",
+            "raw/sources/meeting_doc_146976/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-129041-joanne-feld and entity_meeting-doc-131646-joanne-feld share identity key entity_joanne-s-feld.",
+          "records: entity_meeting-doc-131646-joanne-feld | entity | Joanne S. Feld | meeting_doc_131646 | source_stated | unreviewed",
+          "records: entity_meeting-doc-129041-joanne-feld | entity | Joanne S. Feld, Deputy Director, Finance | meeting_doc_129041 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_074": true,
+        "target_not_in_prior_batches_001_074": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-113986-jose-lasalle",
+      "target_id": "entity_jose-lasalle-nov2022",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Jose LaSalle'. The alias says he was appointed acting Weekend Service Czar, and the target aggregates the same Jose LaSalle / Weekend Czar identity across two NYCT source documents.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-113986-jose-lasalle",
+          "display_name": "entity_meeting_doc_113986_jose_lasalle",
+          "entity_name": "Jose LaSalle",
+          "entity_type": "person",
+          "title": "Weekend Service Czar",
+          "source_ids": [
+            "meeting_doc_113986"
+          ],
+          "record_aliases": [
+            "entity_jose-lasalle"
+          ],
+          "evidence_refs": [
+            "meeting_doc_113986#p028_c0004"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_113986/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_jose-lasalle-nov2022",
+          "display_name": "Jose LaSalle, Weekend Czar",
+          "entity_name": "Jose LaSalle",
+          "entity_type": "person",
+          "title": "Weekend Czar",
+          "organization": "New York City Transit",
+          "source_ids": [
+            "meeting_doc_100341",
+            "meeting_doc_111811"
+          ],
+          "record_aliases": [
+            "entity_jose-lasalle",
+            "entity_jose-lasalle-weekend-czar",
+            "entity_jose-lasalle-weekend-service-czar-nyct",
+            "entity_meeting-doc-111811-jose-lasalle"
+          ],
+          "evidence_refs": [
+            "meeting_doc_100341#p013_c0011",
+            "meeting_doc_111811#p005_c0007"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_100341/blocks.jsonl",
+            "raw/sources/meeting_doc_111811/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_jose-lasalle-nov2022 and entity_meeting-doc-113986-jose-lasalle share identity key entity_jose-lasalle.",
+          "records: entity_meeting-doc-113986-jose-lasalle | entity | entity_meeting_doc_113986_jose_lasalle | meeting_doc_113986 | source_stated | unreviewed",
+          "records: entity_jose-lasalle-nov2022 | entity | Jose LaSalle, Weekend Czar | meeting_doc_100341 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_074": true,
+        "target_not_in_prior_batches_001_074": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-124206-joseph-odonnell",
+      "target_id": "entity_joseph-odonnell",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Joseph O'Donnell' and Director of Public Affairs / MTA Construction & Development context. The target aggregates the same identity across three meeting documents.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-124206-joseph-odonnell",
+          "display_name": "Joseph O'Donnell, Director of Public Affairs MTA C&D",
+          "entity_name": "Joseph O'Donnell",
+          "entity_type": "person",
+          "title": "Director of Public Affairs",
+          "organization": "MTA Construction & Development",
+          "source_ids": [
+            "meeting_doc_124206"
+          ],
+          "record_aliases": [
+            "entity_joseph-o-donnell",
+            "entity_joseph-o-donnell-director-of-public-affairs-mta-c-and-d"
+          ],
+          "evidence_refs": [
+            "meeting_doc_124206#p004_c0011"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_124206/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_joseph-odonnell",
+          "display_name": "Joseph O'Donnell",
+          "entity_name": "Joseph O'Donnell",
+          "entity_type": "person",
+          "title": "Director of Public Affairs",
+          "organization": "MTA Construction & Development",
+          "source_ids": [
+            "meeting_doc_131536",
+            "meeting_doc_131696",
+            "meeting_doc_140406"
+          ],
+          "record_aliases": [
+            "entity_joseph-o-donnell",
+            "entity_joseph-odonnell-meeting-doc-131696",
+            "entity_joseph-odonnell-meeting-doc-140406"
+          ],
+          "evidence_refs": [
+            "meeting_doc_131536#p004_c0011",
+            "meeting_doc_131696#p007_c0011",
+            "meeting_doc_140406#p007_c0009"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_131536/blocks.jsonl",
+            "raw/sources/meeting_doc_131696/blocks.jsonl",
+            "raw/sources/meeting_doc_140406/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_joseph-odonnell and entity_meeting-doc-124206-joseph-odonnell share identity key entity_joseph-o-donnell.",
+          "records: entity_meeting-doc-124206-joseph-odonnell | entity | Joseph O'Donnell, Director of Public Affairs MTA C&D | meeting_doc_124206 | source_stated | unreviewed",
+          "records: entity_joseph-odonnell | entity | Joseph O'Donnell | meeting_doc_131536 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_074": true,
+        "target_not_in_prior_batches_001_074": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_kuvershen-ayer-meeting-doc-98291",
+      "target_id": "entity_kuvershen-ayer",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Kuvershen Ayer' and MTA Procurement Department head / chief procurement context. The alias is one source, while the target aggregates the same identity across five meeting documents.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_kuvershen-ayer-meeting-doc-98291",
+          "display_name": "Kuvershen Ayer",
+          "entity_name": "Kuvershen Ayer",
+          "entity_type": "person",
+          "title": "MTA Procurement Department Head",
+          "source_ids": [
+            "meeting_doc_98291"
+          ],
+          "record_aliases": [
+            "entity_kuvershen-ayer"
+          ],
+          "evidence_refs": [
+            "meeting_doc_98291#p004_c0001"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_98291/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_kuvershen-ayer",
+          "display_name": "Kuvershen Ayer",
+          "entity_name": "Kuvershen Ayer",
+          "entity_type": "person",
+          "title": "MTA Procurement Department Head",
+          "organization": "MTA Procurement Department",
+          "source_ids": [
+            "meeting_doc_100331",
+            "meeting_doc_102756",
+            "meeting_doc_105946",
+            "meeting_doc_107536",
+            "meeting_doc_95301"
+          ],
+          "record_aliases": [
+            "entity_kuvershen-ayer-cpo",
+            "entity_meeting-doc-100331-kuvershen-ayer",
+            "entity_meeting-doc-102756-kuvershen-ayer",
+            "entity_meeting-doc-107536-kuvershen-ayer",
+            "entity_meeting-doc-95301-kuvershen-ayer"
+          ],
+          "evidence_refs": [
+            "meeting_doc_102756#p003_c0001",
+            "meeting_doc_100331#p002_c0001",
+            "meeting_doc_105946#p004_c0001",
+            "meeting_doc_107536#p007_c0004"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_102756/blocks.jsonl",
+            "raw/sources/meeting_doc_100331/blocks.jsonl",
+            "raw/sources/meeting_doc_105946/blocks.jsonl",
+            "raw/sources/meeting_doc_107536/blocks.jsonl",
+            "raw/sources/meeting_doc_95301/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_kuvershen-ayer and entity_kuvershen-ayer-meeting-doc-98291 share identity key entity_kuvershen-ayer.",
+          "records: entity_kuvershen-ayer-meeting-doc-98291 | entity | Kuvershen Ayer | meeting_doc_98291 | source_stated | unreviewed",
+          "records: entity_kuvershen-ayer | entity | Kuvershen Ayer | meeting_doc_102756 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_074": true,
+        "target_not_in_prior_batches_001_074": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    }
+  ],
+  "aggregate_guard_results": {
+    "all_alias_ids_materialize_currently": true,
+    "all_target_ids_materialize_currently": true,
+    "all_aliases_not_already_overridden": true,
+    "all_aliases_not_in_identity_aliases_table": true,
+    "no_alias_or_target_repeats_prior_batches_001_074": true,
+    "no_do_not_merge_pairs": true,
+    "all_source_ids_exist": true,
+    "all_evidence_source_paths_exist": true
+  },
+  "commands_used_for_evidence": [
+    "jq '.' data/review_notes/codex-identity-batch074-prep.json",
+    "sqlite3 -readonly data/canonical.db '.tables'",
+    "sqlite3 -readonly data/canonical.db '.schema identity_aliases'",
+    "sed -n '260,460p' packages/db/src/identity.ts",
+    "sed -n '280,310p' packages/pipeline/src/validate.ts",
+    "bun --eval '<read-only duplicate_global_identity mining over data/canonical/entities.jsonl, identityKeysForRecord, data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, prior codex-identity-batch001-074 prep files, sqlite read-only identity_aliases/records, and source/evidence path existence guards>'",
+    "date -u +%Y-%m-%dT%H:%M:%SZ"
+  ],
+  "commands_intentionally_not_run": [
+    "provider/external-LLM commands",
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "commands with --profile/provider",
+    "materialize",
+    "export-jsonl",
+    "full validate",
+    "DB publish"
+  ],
+  "deferred_review_only_notes": [
+    "David Mack / David S. Mack clusters were left out despite apparent overlap because the exact-name and middle-initial variants should be reviewed together rather than as a small batch side effect.",
+    "Richard Davey was excluded because one candidate record carries mixed Catherine Rinaldi aliases, making it a better target for a focused record-quality review.",
+    "Rachel Cohen, Paul L. Friman, Rose Davis, David Keller, and Kevin Willens clusters were left for later batches because they are larger multi-source groups and would be better handled as focused clusters."
+  ],
+  "all_pass": true
+}

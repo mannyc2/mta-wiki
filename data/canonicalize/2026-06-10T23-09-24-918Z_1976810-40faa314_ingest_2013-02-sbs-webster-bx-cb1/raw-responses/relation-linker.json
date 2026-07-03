@@ -1,0 +1,599 @@
+{
+  "run_id": "2026-06-10T23-09-24-918Z_1976810-40faa314_ingest_2013-02-sbs-webster-bx-cb1",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T03:26:27.993Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "rel-metric-01-bx41-ridership",
+        "local_observation_id": "metric_bx41_daily_ridership_20000",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_bx41-daily-ridership-20000_2",
+            "description": "Bx41 route on Webster Avenue corridor carries over 20,000 daily riders",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p007_c0002",
+                "source_quote": "Based on the existing Bx41 route that carries over 20,000 daily riders"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence explicitly names the Bx41 route on the Webster Avenue corridor, linking this ridership metric to corridor_webster-ave-bronx.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p007_c0002",
+            "source_quote": "Based on the existing Bx41 route that carries over 20,000 daily riders"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-02-corridor-population",
+        "local_observation_id": "metric_corridor_population_200000",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_corridor-population-200000",
+            "description": "200,000 residents within a 10-minute walk of the Webster Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p007_c0002",
+                "source_quote": "Within a 10-minute walk of the corridor: – 200,000 residents"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence names the Webster Avenue corridor and states 200,000 residents live within a 10-minute walk.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p007_c0002",
+            "source_quote": "Within a 10-minute walk of the corridor: – 200,000 residents"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-03-households-no-car",
+        "local_observation_id": "metric_households_no_car_71pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_households-no-car-71pct",
+            "description": "71% of households within a 10-minute walk of the Webster Avenue corridor do not own a car",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p007_c0002",
+                "source_quote": "– 71% of households do not own a car"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence names the Webster Avenue corridor context; the metric describes households within its walk-shed.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p007_c0002",
+            "source_quote": "– 71% of households do not own a car"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-04-commute-transit",
+        "local_observation_id": "metric_commute_by_transit_61pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_commute-by-transit-61pct",
+            "description": "61% of residents within a 10-minute walk of the Webster Avenue corridor commute by transit",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p007_c0002",
+                "source_quote": "– 61% of residents commute by transit"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence names the Webster Avenue corridor context; the metric describes transit commute share within its walk-shed.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p007_c0002",
+            "source_quote": "– 61% of residents commute by transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "unc-metric-05-sbs-speed",
+        "local_observation_id": "metric_sbs_speed_15_20pct_faster",
+        "decision": "uncertain",
+        "rationale": "Evidence block p006_c0002 states 'Speed: 15-20% faster' under a general SBS Results heading but does not name any specific corridor, route, or project. Cannot determine a canonical subject.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p006_c0002",
+            "source_quote": "Speed: 15- 20% faster"
+          }
+        ]
+      },
+      {
+        "decision_id": "unc-metric-06-sbs-ridership",
+        "local_observation_id": "metric_sbs_ridership_increase_5_10pct",
+        "decision": "uncertain",
+        "rationale": "Evidence block p006_c0003 states 'Ridership: 5-10% increase in first year' under general SBS Results but does not name a specific corridor, route, or project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p006_c0003",
+            "source_quote": "Ridership: 5-10% increase in first year"
+          }
+        ]
+      },
+      {
+        "decision_id": "unc-metric-07-sbs-satisfaction",
+        "local_observation_id": "metric_sbs_customer_satisfaction_95pct",
+        "decision": "uncertain",
+        "rationale": "Evidence block p006_c0004 states 'Customer Satisfaction: over 95% satisfied or very satisfied' under general SBS Results but does not name a specific corridor, route, or project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p006_c0004",
+            "source_quote": "Customer Satisfaction: over 95% satisfied or very satisfied"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-08-traffic-injuries",
+        "local_observation_id": "metric_traffic_injuries_reduction_21pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_traffic-injuries-reduction-21pct",
+            "description": "21% reduction in traffic injuries on 1st and 2nd Avenues in sections with full SBS design treatments",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p006_c0005",
+                "source_quote": "Safety: 1 st and 2 nd Avenues saw a 21% reduction in traffic injuries in sections with full design treatments"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence explicitly names '1st and 2nd Avenues', which maps to the canonical First & Second Avenues corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p006_c0005",
+            "source_quote": "Safety: 1 st and 2 nd Avenues saw a 21% reduction in traffic injuries in sections with full design treatments"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-09-bx41-local-frequency",
+        "local_observation_id": "metric_bx41_local_frequency_10min",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_bx41-local-webster-2012",
+            "object_id": "metric_bx41-local-frequency-10min",
+            "description": "Bx41 Local service every ~10 minutes on Webster Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p028_c0002",
+                "source_quote": "Bx41 Local – No change to stop spacing – Service every ~10 minutes"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence explicitly names 'Bx41 Local' and states its service frequency; links to the canonical Bx41 Local route record.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p028_c0002",
+            "source_quote": "Bx41 Local – No change to stop spacing – Service every ~10 minutes"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-10-corridor-length",
+        "local_observation_id": "metric_corridor_length_5_3_miles",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_corridor-length-5-3-miles_3",
+            "description": "Webster Avenue corridor is 5.3 miles from The Hub to Williamsbridge",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p007_c0002",
+                "source_quote": "5.3 miles from The Hub to Williamsbridge"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence explicitly describes the Webster Avenue corridor length from The Hub to Williamsbridge.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p007_c0002",
+            "source_quote": "5.3 miles from The Hub to Williamsbridge"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-11-sbs-stop-spacing",
+        "local_observation_id": "metric_sbs_stop_spacing_half_mile",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_webster-ave-sbs",
+            "object_id": "metric_sbs-stop-spacing-half-mile",
+            "description": "Bx41 SBS has 1/2 mile stop spacing",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p028_c0002",
+                "source_quote": "Bx41 LTD → Bx41 SBS – 1/2 mile stop spacing"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence explicitly names the Bx41 SBS conversion and its stop spacing; links to the canonical Bx41 SBS route.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p028_c0002",
+            "source_quote": "Bx41 LTD → Bx41 SBS – 1/2 mile stop spacing"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-12-offset-bus-lanes",
+        "local_observation_id": "metric_offset_bus_lanes_4_miles",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_webster-ave-sbs",
+            "object_id": "metric_offset-bus-lanes-4-miles",
+            "description": "Bx41 SBS includes 4 miles of offset bus lanes with bus bulb stations",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p011_c0002",
+                "source_quote": "Bx41 LTD → Bx41 SBS ■ 4 miles of offset bus lanes with bus bulb stations"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence names the Bx41 SBS conversion and describes its 4 miles of offset bus lanes as part of the SBS design.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p011_c0002",
+            "source_quote": "Bx41 LTD → Bx41 SBS ■ 4 miles of offset bus lanes with bus bulb stations"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-13-fare-evasion",
+        "local_observation_id": "claim_fare_evasion_declined_bx12_m15",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_bx12-plus",
+            "object_id": "claim_fare-evasion-declined-bx12-m15_6",
+            "description": "Fare evasion declined on the Bx12 after pre-payment was introduced",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p012_c0007",
+                "source_quote": "Fare evasion declined on the Bx12 and M15 after pre-payment was introduced"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_m15-sbs",
+            "object_id": "claim_fare-evasion-declined-bx12-m15_6",
+            "description": "Fare evasion declined on the M15 after pre-payment was introduced",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p012_c0007",
+                "source_quote": "Fare evasion declined on the Bx12 and M15 after pre-payment was introduced"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence explicitly names the Bx12 and M15 routes; both get has_claim relations.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p012_c0007",
+            "source_quote": "Fare evasion declined on the Bx12 and M15 after pre-payment was introduced"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-14-clemente-plaza",
+        "local_observation_id": "claim_sbs_stations_reconstructed_roberto_clemente_plaza",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "claim_sbs-stations-reconstructed-roberto-clemente-plaza",
+            "description": "SBS bus stations at the Hub to be reconstructed as part of Roberto Clemente Plaza project",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p023_c0002",
+                "source_quote": "SBS bus stations at the Hub will be reconstructed as part of the Roberto Clemente Plaza project"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence refers to the Webster Avenue SBS project's Hub stations and a related reconstruction project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p023_c0002",
+            "source_quote": "SBS bus stations at the Hub will be reconstructed as part of the Roberto Clemente Plaza project"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-15-community-priorities",
+        "local_observation_id": "claim_community_top_priorities",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "claim_community-top-priorities_2",
+            "description": "Community top priorities for the Webster Avenue SBS project include Bx41 bus service, pedestrian safety, curb access/parking, and future development",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p009_c0003",
+                "source_quote": "1. Bx41 bus service 2. Pedestrian safety 3. Curb access and parking 4. Accommodating future development"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence presents community input gathered for the Webster Avenue SBS project under the 'Community Input' section.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p009_c0003",
+            "source_quote": "1. Bx41 bus service 2. Pedestrian safety 3. Curb access and parking 4. Accommodating future development"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-16-start-of-service",
+        "local_observation_id": "event_sbs_start_of_service_june_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "event_sbs-start-of-service-june-2013",
+            "description": "Start of Bx41 SBS service at the end of June 2013",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p032_c0007",
+                "source_quote": "Start of Service at the end of the month"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence under the '2013 Implementation / June' timeline section marks the start of Webster Avenue SBS service.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p032_c0007",
+            "source_quote": "Start of Service at the end of the month"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-17-cac1",
+        "local_observation_id": "event_cac_meeting_1_feb_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "event_cac-meeting-1-feb-2012_2",
+            "description": "Community Advisory Committee Meeting #1 for Webster Avenue SBS on February 6, 2012",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p008_c0002",
+                "source_quote": "Community Advisory Committee (CAC) meetings: 1. February 6, 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence lists CAC meetings as part of the Webster Avenue SBS community outreach process.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p008_c0002",
+            "source_quote": "Community Advisory Committee (CAC) meetings: 1. February 6, 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-18-cac2",
+        "local_observation_id": "event_cac_meeting_2_may_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "event_cac-meeting-2-may-2012_2",
+            "description": "Community Advisory Committee Meeting #2 for Webster Avenue SBS on May 2, 2012",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p008_c0002",
+                "source_quote": "Community Advisory Committee (CAC) meetings: 2. May 2, 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence lists CAC meetings as part of the Webster Avenue SBS community outreach process.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p008_c0002",
+            "source_quote": "Community Advisory Committee (CAC) meetings: 2. May 2, 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-19-cac3",
+        "local_observation_id": "event_cac_meeting_3_sep_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "event_cac-meeting-3-sep-2012",
+            "description": "Community Advisory Committee Meeting #3 for Webster Avenue SBS on September 27, 2012",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p008_c0002",
+                "source_quote": "Community Advisory Committee (CAC) meetings: 3. September 27, 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence lists CAC meetings as part of the Webster Avenue SBS community outreach process.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p008_c0002",
+            "source_quote": "Community Advisory Committee (CAC) meetings: 3. September 27, 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-20-cac4",
+        "local_observation_id": "event_cac_meeting_4_nov_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "event_cac-meeting-4-nov-2012",
+            "description": "Community Advisory Committee Meeting #4 for Webster Avenue SBS on November 29, 2012",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p008_c0002",
+                "source_quote": "Community Advisory Committee (CAC) meetings: 4. November 29, 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence lists CAC meetings as part of the Webster Avenue SBS community outreach process.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p008_c0002",
+            "source_quote": "Community Advisory Committee (CAC) meetings: 4. November 29, 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-21-open-house-1",
+        "local_observation_id": "event_public_open_house_1_may_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "event_public-open-house-1-may-2012_2",
+            "description": "Public Open House #1 for Webster Avenue SBS on May 16, 2012",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p008_c0002",
+                "source_quote": "Public open houses 1. May 16, 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence lists public open houses as part of the Webster Avenue SBS community outreach process.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p008_c0002",
+            "source_quote": "Public open houses 1. May 16, 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-22-open-house-2",
+        "local_observation_id": "event_public_open_house_2_jan_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "event_public-open-house-2-jan-2013_2",
+            "description": "Public Open House #2 for Webster Avenue SBS on January 8, 2013",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb1",
+                "block_id": "p008_c0002",
+                "source_quote": "Public open houses 2. January 8, 2013"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence lists public open houses as part of the Webster Avenue SBS community outreach process.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p008_c0002",
+            "source_quote": "Public open houses 2. January 8, 2013"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-20-31-701Z_2111393-25cf6b4a_canonicalize_2026-06-10t23-09-24-918z-1976810-40faa314-ingest-2013-02-sbs-webster-bx-cb1-relation-linker"
+}

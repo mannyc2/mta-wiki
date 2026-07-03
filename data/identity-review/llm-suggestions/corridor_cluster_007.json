@@ -1,0 +1,48 @@
+{
+  "review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "reviewed_at": "2026-06-08T21:09:33.052Z",
+  "packet_path": "data/identity-review/packets/corridor_cluster_007.md",
+  "cluster_id": "corridor_cluster_007",
+  "kind": "corridor",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "suggestion": {
+    "cluster_id": "corridor_cluster_007",
+    "kind": "corridor",
+    "merge_groups": [
+      [
+        "corridor_story-ave",
+        "corridor_story-avenue"
+      ]
+    ],
+    "do_not_merge": [],
+    "weak_aliases": [
+      {
+        "record_id": "corridor_story-ave",
+        "aliases": [
+          "corridor_story-ave-corridor",
+          "corridor_story_ave"
+        ],
+        "reason": "Variant naming conventions for the same corridor; useful for search."
+      },
+      {
+        "record_id": "corridor_story-avenue",
+        "aliases": [
+          "corridor_story-ave",
+          "corridor_story_avenue"
+        ],
+        "reason": "Variant naming conventions for the same corridor; useful for search."
+      }
+    ],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [
+      "Corridor records with identical street name, identical limits (from/to), and identical routes served from different source documents should be merged."
+    ],
+    "confidence": "high",
+    "rationale": "Both records describe Story Avenue corridor from Bronx River Avenue to White Plains Road serving Bx5 and Bx6 SBS. The first record uses 'limits' field while the second uses 'from'/'to' fields, but the values are identical. The second record explicitly lists corridor_story-ave as an alias and identity key, confirming they represent the same canonical corridor from two different source documents (2019 plan and 2021 addendum). The validator's duplicate_global_identity flag is correct."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T21-09-10-715Z_3449211-590fe35f_identity-review-run_corridor-cluster-007",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-09-10-715Z_2026-06-08T21-09-10-715Z_3449211-590fe35f_identity-review-run_corridor-cluster-007.jsonl"
+}

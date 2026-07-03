@@ -1,0 +1,159 @@
+{
+  "note_id": "codex-residual-normalizer-burst-2026-06-30-c",
+  "created_at": "2026-06-30T00:00:00Z",
+  "mode": "codex_only_deterministic_post_ingest_cleanup",
+  "provider_backed_llm_commands_used": false,
+  "banned_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider profiles"
+  ],
+  "baseline": {
+    "validation_issues": 0,
+    "event_family_other": 315,
+    "source_gap_kind_other": 10,
+    "project_family_unresolved": 14,
+    "project_family_missing": 4,
+    "project_family_other": 10,
+    "route_scopes": {
+      "true_route": 301,
+      "split_candidate": 9,
+      "aggregate_list_context": 9,
+      "data_only_scope": 1
+    },
+    "relation_family_other": 0,
+    "treatment_family_other": 0,
+    "entity_unsuppressed_duplicate_pairs": 0,
+    "entity_do_not_merge_pairs": 174
+  },
+  "implemented_changes": [
+    {
+      "bucket": "source_gap_kind",
+      "targets": ["gap_meeting-doc-133291-q29-running-time-only"],
+      "rule": "Map running-time-only route table exclusions with headway/capacity not shown to data_exclusion.",
+      "delta": { "other": -1, "data_exclusion": 1 }
+    },
+    {
+      "bucket": "event_family",
+      "targets": ["event_170996-bridges-tunnels-award"],
+      "rule": "Map private-event award ceremony payloads to milestone only when award_ceremony is explicit.",
+      "delta": { "other": -1, "milestone": 1 }
+    },
+    {
+      "bucket": "project_family",
+      "targets": ["project_fjord-trail"],
+      "rule": "Map Fjord Trail recreational-trail payloads with Breakneck Connector evidence to capital_or_infrastructure.",
+      "delta": { "project_family_other": -1, "capital_or_infrastructure": 1 }
+    },
+    {
+      "bucket": "route_scope",
+      "targets": ["route_m34a-sbs"],
+      "rule": "Use structured route fields, not stale display names, for renamed-route current-token lineage checks.",
+      "delta": { "split_candidate": -1, "true_route": 1 }
+    },
+    {
+      "bucket": "event_family",
+      "targets": ["event_guidelines-updated-1991", "event_guidelines-updated-2010"],
+      "rule": "Map exact Rapid Transit Loading Guidelines update records to milestone.",
+      "delta": { "other": -2, "milestone": 2 }
+    },
+    {
+      "bucket": "event_family",
+      "targets": ["event_articulated-bus-upgrade-2019-2020", "event_upgrade-articulated-buses-2019-2020"],
+      "rule": "Map B46 articulated-bus upgrade payloads to implementation without broad fleet-upgrade matching.",
+      "delta": { "other": -2, "implementation": 2 }
+    },
+    {
+      "bucket": "project_family",
+      "targets": ["project_maybrook-trailway-opening-2021"],
+      "rule": "Map Maybrook Trailway / Empire State Trail / Beacon Line payload to capital_or_infrastructure.",
+      "delta": { "project_family_other": -1, "capital_or_infrastructure": 1 }
+    },
+    {
+      "bucket": "source_gap_kind",
+      "targets": ["gap_bx6-fare-machine-riverside-drive", "gap_riverside-drive-fare-machine"],
+      "rule": "Map exact fare-machine installation/power implementation-challenge payloads to pending_analysis.",
+      "delta": { "other": -2, "pending_analysis": 2 }
+    },
+    {
+      "bucket": "event_family",
+      "targets": ["event_mets-willets-pt-permanent"],
+      "rule": "Map Mets-Willets Point permanent LIRR station stop with year-round service to launch.",
+      "delta": { "other": -1, "launch": 1 }
+    },
+    {
+      "bucket": "project_family",
+      "targets": ["project_meeting-doc-133136-ntsb-recommendations"],
+      "rule": "Map exact NTSB recommendations update with open-action/open-investigation proof to accessibility_or_safety.",
+      "delta": { "project_family_missing": -1, "accessibility_or_safety": 1 }
+    },
+    {
+      "bucket": "source_gap_kind",
+      "targets": ["gap_79th-st-incomplete-improvements"],
+      "rule": "Map exact 79th Street in-house/permanent-material timeline limitation to pending_analysis.",
+      "delta": { "other": -1, "pending_analysis": 1 }
+    },
+    {
+      "bucket": "entity_identity",
+      "targets": ["entity_community-board-1-bronx-2012-02"],
+      "rule": "Replace stale bare Community Board 1 alias with reviewed Bronx-scoped Community Board 1 alias.",
+      "delta": {
+        "entity_do_not_merge_pairs": -2,
+        "generic_community_board_1_key_carriers": -1,
+        "bronx_community_board_1_key_carriers": 1
+      }
+    }
+  ],
+  "final_counts": {
+    "validation_issues": 0,
+    "submissions": 98102,
+    "canonical_records": 84042,
+    "wiki_pages": 7338,
+    "event_family_other": 309,
+    "source_gap_kind_other": 6,
+    "project_family_unresolved": 11,
+    "project_family_missing": 3,
+    "project_family_other": 8,
+    "project_document_time_status_unresolved": 83,
+    "route_scopes": {
+      "true_route": 302,
+      "split_candidate": 8,
+      "aggregate_list_context": 9,
+      "data_only_scope": 1
+    },
+    "relation_family_other": 0,
+    "treatment_family_other": 0,
+    "entity_records": 1897,
+    "entity_duplicate_key_groups": 5,
+    "entity_duplicate_pairs": 7,
+    "entity_unsuppressed_duplicate_pairs": 0,
+    "entity_do_not_merge_pairs": 172
+  },
+  "verification": [
+    "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+    "bun test packages/db/test/identity.test.ts",
+    "bun test packages/pipeline/test/materialize/materialize.test.ts",
+    "bun run typecheck",
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate"
+  ],
+  "remaining_intentionally_unresolved": {
+    "routes": "Eight split candidates remain because scouts found direct branch/bundle/proposed-route evidence, not safe classifier spillover.",
+    "source_gaps": "Six other residuals remain: partial extraction, broad source scope, COVID/contextual caveat, and study-scope caveat shapes.",
+    "events": "309 other events remain, with generic venue/commercial/public-programming tails intentionally excluded from broad mapping.",
+    "projects": "Project-family unresolved remains 11; document-time-status unresolved remains 83.",
+    "relations_and_treatments": "relation_family other and treatment_family other are already zero.",
+    "entities": "Entity duplicate identity-key pressure has zero unsuppressed pairs after exact CB1 alias pruning."
+  },
+  "next_lanes": [
+    "Continue event_family other with exact payload-gated rules only, excluding venue/commercial programming tails.",
+    "Continue project_family missing/other and document_time_status missing/other with exact source-backed gates.",
+    "Treat remaining source_gap other rows as policy/scope/partial-extraction unless a precise normalized bucket already exists.",
+    "Do not spend more route cycles without a policy decision for true split/aggregate route records.",
+    "Use entity scouts only for exact alias leaks; unsuppressed entity duplicate pressure is already zero."
+  ]
+}

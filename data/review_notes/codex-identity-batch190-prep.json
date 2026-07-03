@@ -1,0 +1,475 @@
+{
+  "note_id": "codex-identity-batch190-prep",
+  "batch": "identity190",
+  "created_at": "2026-06-23T00:00:00Z",
+  "prepared_count": 12,
+  "scope": {
+    "selection_note": "Codex-only identity cleanup prep after identity187-189. Scope is entity aliases only. Candidates were selected from deterministic validateRepo duplicate_global_identity output plus current canonical DB and identity override inspection.",
+    "global_kind": "entity",
+    "allowed_global_kinds": [
+      "entity"
+    ],
+    "write_limit": "Only this review note was written. No merges.json, LOG.md, manifest, submissions, canonical outputs, DB, wiki, or materialized outputs were edited.",
+    "provider_backed_commands": "None run.",
+    "validator_baseline": {
+      "issue_count": 451,
+      "duplicate_global_identity": 451,
+      "duplicate_entity_issues": 387,
+      "method": "read-only validateRepo() via bun --eval"
+    },
+    "guards_applied": [
+      "alias present in canonical entity records",
+      "target present in canonical entity records",
+      "alias is not already an entity alias in data/identity-overrides/merges.json",
+      "target is not currently an entity alias",
+      "alias is not already a merge target trap",
+      "alias and target are distinct",
+      "pair is not directly or transitively suppressed by data/identity-overrides/do-not-merge.json",
+      "neither id appears in identity186-189 proposed aliases or deferred trap text"
+    ]
+  },
+  "proposed_aliases": [
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_mn-community-board-4",
+      "target_id": "entity_manhattan-community-board-4",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_manhattan-community-board-4 and entity_mn-community-board-4 share identity key entity_manhattan-community-board-four."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_mn-community-board-4",
+          "evidence_id": "brt_m23_cb6_jun2016#p013_c0003",
+          "quote": "Present final plan to Community Boards Four and Five"
+        },
+        {
+          "record_id": "entity_manhattan-community-board-4",
+          "evidence_id": "100503_brt_cb5_34th_street_transitway#p003_c0002",
+          "quote": "Manhattan CB4 Transportation Committee"
+        }
+      ],
+      "reason": "Both records identify Manhattan Community Board 4/Four. The alias is a one-source word-number variant, while the target is the richer Manhattan CB4 entity.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_or_deferred_identity186_189": true,
+        "no_do_not_merge_note": "No direct or resolved entity do-not-merge pair was found."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_cpc-miriam-harris-tod",
+      "target_id": "entity_miriam-harris-dec2025",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_cpc-miriam-harris-tod and entity_miriam-harris-dec2025 share identity key entity_miriam-harris."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_cpc-miriam-harris-tod",
+          "evidence_id": "meeting_doc_198991#p018_c0004",
+          "quote": "Ms. Miriam Harris, Senior Vice President of Transit Oriented Development"
+        },
+        {
+          "record_id": "entity_miriam-harris-dec2025",
+          "evidence_id": "meeting_doc_197006#p004_c0008",
+          "quote": "Miriam Harris, Senior Vice President of Transit-Oriented Development"
+        }
+      ],
+      "reason": "Both records identify the same Miriam Harris person record, with matching TOD role context.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_or_deferred_identity186_189": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-113891-shelley-prettyman",
+      "target_id": "entity_shelley-prettyman-mnr-acting-vp-jan2022",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_meeting-doc-113891-shelley-prettyman and entity_shelley-prettyman-mnr-acting-vp-jan2022 share identity key entity_shelley-prettyman."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-113891-shelley-prettyman",
+          "evidence_id": "meeting_doc_113891#p001_c0012",
+          "quote": "Shelley Prettyman - Vice President, System Safety"
+        },
+        {
+          "record_id": "entity_shelley-prettyman-mnr-acting-vp-jan2022",
+          "evidence_id": "meeting_doc_72581#p022_c0006",
+          "quote": "Shelley Prettyman Acting Vice President Office of System Safety"
+        }
+      ],
+      "reason": "Both records identify Shelley Prettyman in the same MNR/System Safety role family.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_or_deferred_identity186_189": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_stv-inc-may2026",
+      "target_id": "entity_stv-20100615",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_stv-20100615 and entity_stv-inc-may2026 share identity key entity_stv-inc."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_stv-inc-may2026",
+          "evidence_id": "meeting_doc_208146#p026_c0011",
+          "quote": "STV, Inc. (\"STV\")"
+        },
+        {
+          "record_id": "entity_stv-20100615",
+          "evidence_id": "20100615_34th_transitway_cac_mtg_summary#p002_c0002",
+          "quote": "Bill Redl of STV"
+        }
+      ],
+      "reason": "Both records identify STV/STV Inc. The target already carries STV Inc. aliases and multiple source mentions.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_or_deferred_identity186_189": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_sudhir-patel-174081",
+      "target_id": "entity_sudhir-patel-173881",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_sudhir-patel-173881 and entity_sudhir-patel-174081 share identity key entity_sudhir-patel."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_sudhir-patel-174081",
+          "evidence_id": "meeting_doc_174081#p014_c0012",
+          "quote": "Global Java, with Sudhir Patel and Radhika Patel as its principals"
+        },
+        {
+          "record_id": "entity_sudhir-patel-173881",
+          "evidence_id": "meeting_doc_173881#p001_c0012",
+          "quote": "Global Java, with Sudhir Patel and Radhika Patel as its principals"
+        }
+      ],
+      "reason": "Both records identify Sudhir Patel, principal of Global Java III Inc., with matching source text.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_or_deferred_identity186_189": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_the-saw-pit-port-chester-186731",
+      "target_id": "entity_saw-pit-port-chester-station-llc",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_saw-pit-port-chester-station-llc and entity_the-saw-pit-port-chester-186731 share identity key entity_the-saw-pit-at-port-chester-station-llc."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_the-saw-pit-port-chester-186731",
+          "evidence_id": "meeting_doc_186731#p001_c0008",
+          "quote": "LESSEE: The Saw Pit at Port Chester Station LLC"
+        },
+        {
+          "record_id": "entity_saw-pit-port-chester-station-llc",
+          "evidence_id": "meeting_doc_186831#p026_c0008",
+          "quote": "LESSEE: The Saw Pit at Port Chester Station LLC"
+        }
+      ],
+      "reason": "Both records identify the same Port Chester Station lessee legal entity.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_or_deferred_identity186_189": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-157771-town-oyster-bay",
+      "target_id": "entity_town-of-oyster-bay",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_meeting-doc-157771-town-oyster-bay and entity_town-of-oyster-bay share identity key entity_town-of-oyster-bay."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-157771-town-oyster-bay",
+          "evidence_id": "meeting_doc_157771#p034_c0007",
+          "quote": "LICENSEE: Town of Oyster Bay"
+        },
+        {
+          "record_id": "entity_town-of-oyster-bay",
+          "evidence_id": "meeting_doc_157711#p003_c0007",
+          "quote": "LICENSEE: Town of Oyster Bay"
+        }
+      ],
+      "reason": "Both records identify the Town of Oyster Bay municipality in LIRR/Hicksville Station license context.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_or_deferred_identity186_189": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_trackback-llc",
+      "target_id": "entity_meeting-doc-135386-trackback-llc",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_meeting-doc-135386-trackback-llc and entity_trackback-llc share identity key entity_trackback-llc."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_trackback-llc",
+          "evidence_id": "meeting_doc_135406#p001_c0003",
+          "quote": "Trackback LLC"
+        },
+        {
+          "record_id": "entity_meeting-doc-135386-trackback-llc",
+          "evidence_id": "meeting_doc_135386#p009_c0008",
+          "quote": "LESSEE: Trackback LLC (d/b/a Tracks Raw Bar & Grill)"
+        }
+      ],
+      "reason": "Both records identify Trackback LLC. The target preserves the fuller d/b/a context.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_or_deferred_identity186_189": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting176311-transportasian-erg",
+      "target_id": "entity_transportasian-erg-176471",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_meeting176311-transportasian-erg and entity_transportasian-erg-176471 share identity key entity_transportasian."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting176311-transportasian-erg",
+          "evidence_id": "meeting_doc_176311#p006_c0002",
+          "quote": "Join TransportAsian and The Make Us Visible Organization"
+        },
+        {
+          "record_id": "entity_transportasian-erg-176471",
+          "evidence_id": "meeting_doc_176471#p008_c0003",
+          "quote": "AAPL Heritage Month, May 20, 2025 - TransportAsian"
+        }
+      ],
+      "reason": "Both records identify TransportAsian, the employee resource group. The target has fuller ERG naming and aliases.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_or_deferred_identity186_189": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_twu-local-100-flatbush-2025",
+      "target_id": "entity_flatbush-twu-local-100",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_flatbush-twu-local-100 and entity_twu-local-100-flatbush-2025 share identity key entity_twu-local-100."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_twu-local-100-flatbush-2025",
+          "evidence_id": "flatbush_ave_cb8_jun2025#p015_c0003",
+          "quote": "TWU Local 100"
+        },
+        {
+          "record_id": "entity_flatbush-twu-local-100",
+          "evidence_id": "flatbush_ave_cb6_jun2025#p015_c0003",
+          "quote": "TWU Local 100"
+        }
+      ],
+      "reason": "Both records identify TWU Local 100; the alias is a Flatbush 2025 source-scoped duplicate of the richer TWU Local 100 entity.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_or_deferred_identity186_189": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_verrazzano-narrows-bridge-oct2025",
+      "target_id": "entity_verrazzano-narrows-bridge",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_verrazzano-narrows-bridge and entity_verrazzano-narrows-bridge-oct2025 share identity key entity_verrazzano-narrows-bridge."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_verrazzano-narrows-bridge-oct2025",
+          "evidence_id": "meeting_doc_192201#p003_c0015",
+          "quote": "E-ZPass at the Verrazzano-Narrows Bridge"
+        },
+        {
+          "record_id": "entity_verrazzano-narrows-bridge",
+          "evidence_id": "meeting_doc_186971#p008_c0002",
+          "quote": "Verrazzano-Narrows Bridge"
+        }
+      ],
+      "reason": "Both records identify the Verrazzano-Narrows Bridge facility/bridge.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_or_deferred_identity186_189": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_mta-small-business-development-program",
+      "target_id": "entity_small-business-development-program",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_mta-small-business-development-program and entity_small-business-development-program share identity key entity_mta-small-business-development-program."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_mta-small-business-development-program",
+          "evidence_id": "meeting_doc_79351#p056_c0002",
+          "quote": "MTA Small Business Development Program"
+        },
+        {
+          "record_id": "entity_small-business-development-program",
+          "evidence_id": "meeting_doc_173841#p005_c0011",
+          "quote": "Small Business Development Program (\"SBDP\")"
+        }
+      ],
+      "reason": "Both records identify the MTA Small Business Development Program/SBDP. The target carries the concise program name plus the MTA-specific alias.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_or_deferred_identity186_189": true
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "candidate": "entity_village-of-pleasantville-meeting-doc-151756 -> entity_meeting-doc-151746-village-pleasantville",
+      "reason": "Exact municipality duplicate evidence exists, but an earlier cleanup note explicitly deferred the reverse direction as medium confidence because one side had generated-looking display text. Keep out of batch190 rather than reusing a previously questioned item."
+    },
+    {
+      "candidate": "entity_smg-meeting-doc-201706 -> entity_smg-201531",
+      "reason": "Both records mention SMG as an MTA Real Estate third-party service provider, but the acronym-only surface is broad enough to warrant reviewer confirmation."
+    },
+    {
+      "candidate": "entity_meeting-doc-201746-trapeze-software -> entity_trapeze-software-201766",
+      "reason": "Likely same CTSS vendor surface, but Trapeze Software Group / Signature Rail may represent a joint vendor expression rather than a single entity identity."
+    },
+    {
+      "candidate": "entity_two-kids-and-a-dog -> entity_meeting-doc-199126-two-kids-and-a-dog",
+      "reason": "Likely same business, but the LLC legal entity and d/b/a/trade-name surface should be reviewed before merging."
+    },
+    {
+      "candidate": "initial-only person records such as F. Borelli or H. Mihaltses",
+      "reason": "Some are likely safe, but initial-only person identities were deferred to avoid name-collision risk."
+    },
+    {
+      "candidate": "remaining community board same-number rows",
+      "reason": "Deferred unless borough and board number are explicit on both sides. Cross-borough community-board duplicate keys remain a known validator trap."
+    },
+    {
+      "candidate": "committee, department, office, and parent-agency surfaces",
+      "reason": "Deferred where shared keys may represent affiliation, parent/child structure, changing committee membership, or broad department labels rather than same entity identity."
+    }
+  ],
+  "blockers": [],
+  "inspections": [
+    {
+      "command": "bun --eval import validateRepo from local TS module; count duplicate_global_identity issues",
+      "purpose": "Established the current deterministic validator baseline without provider-backed commands."
+    },
+    {
+      "command": "bun --eval readCanonicalRecords plus identity override/do-not-merge guard scan",
+      "purpose": "Filtered entity duplicate pairs by current canonical presence, merge aliases, merge-target traps, do-not-merge suppressions, and identity186-189 used/deferred ids."
+    },
+    {
+      "command": "rg selected ids across data/review_notes and identity override files",
+      "purpose": "Checked selected ids for prior review-note/override collisions; deferred the Pleasantville pair because an older cleanup note had already flagged it as medium-confidence."
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "note_id": "codex-relation-assertion-service-delivery-metrics-2026-07-01",
+  "date": "2026-07-01",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed profiles",
+    "Pioneer/OpenAI/DeepSeek/vLLM/chandra model calls"
+  ],
+  "bucket": "relation_assertion_status_unknown",
+  "implemented_change": {
+    "summary": "Classify a narrow set of observed service-delivery metric relations as delivered.",
+    "code_paths": [
+      "packages/pipeline/src/records/assertion-qualifiers.ts",
+      "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+    ],
+    "rule": {
+      "relation_family": "metric_context",
+      "relation_kind": "has_metric",
+      "metric_name_allowlist": [
+        "service_delivered",
+        "service_delivered_rate",
+        "service_delivery_rate"
+      ],
+      "required_signals": [
+        "percentage unit family",
+        "normalized percent unit",
+        "concrete numeric metric value",
+        "observed compact period anchor",
+        "no future/proposed/forecast/status rejection"
+      ]
+    }
+  },
+  "baseline": {
+    "validate_issues": 0,
+    "relation_assertion_unknown_total": 5290,
+    "metric_context_unknown": 2604,
+    "metric_context_has_metric_unknown": 2590,
+    "safe_candidate_count": 32
+  },
+  "after": {
+    "validate_issues": 0,
+    "relation_assertion_unknown_total": 5258,
+    "metric_context_unknown": 2572,
+    "metric_context_has_metric_unknown": 2558,
+    "delivered_metric_context_has_metric": 2535
+  },
+  "delta": {
+    "relation_assertion_unknown_total": -32,
+    "metric_context_unknown": -32,
+    "metric_context_has_metric_unknown": -32
+  },
+  "subagent_inputs": [
+    {
+      "thread_id": "019f1fa9-bb83-7a10-99f2-66c417f5ff00",
+      "name": "Pascal",
+      "lane": "metric_context.has_metric residual scout",
+      "finding": "Found a 231-row true-route travel_time/bus_travel_time minutes candidate for a possible follow-up rule.",
+      "used_for_this_change": false,
+      "status": "completed after the implemented service-delivery slice"
+    },
+    {
+      "thread_id": "019f1fa9-d151-7dc2-950e-a8678f266522",
+      "name": "Arendt",
+      "lane": "claim_context residual scout",
+      "finding": "Found a 13-row source-to-audience presented_to candidate for a possible follow-up rule.",
+      "used_for_this_change": false
+    },
+    {
+      "thread_id": "019f1faa-0d57-78a2-a171-47ca5e323e93",
+      "name": "Lagrange",
+      "lane": "agency/funding residual scout",
+      "finding": "Found a 15-row source presented_by candidate for a possible follow-up rule.",
+      "used_for_this_change": false
+    }
+  ],
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+      "result": "passed: 75 tests, 405 expect calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "passed"
+    },
+    {
+      "command": "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+      "result": "passed: Materialized 93092/98102 submissions; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+      "result": "ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "passed: Issues 0"
+    }
+  ],
+  "intentionally_unresolved": [
+    "Service-delivery change metrics remain unknown.",
+    "Wrong-unit, missing-anchor, future/proposed/forecast, and estimate rows remain unknown.",
+    "The rule does not generalize to all performance percentages, travel-time, speed, MDBF, safety, or satisfaction metrics.",
+    "Canonical JSONL was not hand-edited."
+  ],
+  "next_candidate_lanes": [
+    "Review and possibly implement the 13-row claim_context.presented_to source-audience candidate.",
+    "Review and possibly implement the 15-row agency_role.presented_by source-artifact candidate.",
+    "Continue exact metric-name/unit/period guardrails for metric_context.has_metric residuals.",
+    "Implement or review the 231-row true-route travel_time/bus_travel_time minutes candidate with future/proposal and aggregate-route guards.",
+    "Return to project/route duplicate identity buckets when the next measured backlog slice targets duplicate records instead of assertion-status unknowns."
+  ]
+}

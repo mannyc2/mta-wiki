@@ -1,0 +1,87 @@
+{
+  "run_id": "2026-06-10T23-12-22-690Z_1976810-a6473111_ingest_2013-04-09-sbs-125th-workshop-3",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T03:44:18.605Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "m60-125th-workshop-3",
+        "local_observation_id": "route_m60_2013_04_09_sbs_125th_workshop_3",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_125th-laguardia-sbs is already the correct canonical record for M60 SBS on 125th Street serving LaGuardia Airport. Registry record has this observation's source (2013_04_09_sbs_125th_workshop_3) in source_ids and route_m60-2013-04-09-sbs-125th-workshop-3 in record_aliases. No link to a different record needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p008_c0005",
+            "source_quote": "M60 SBS makes limited stops in Manhattan and Queens"
+          },
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p001_c0003",
+            "source_quote": "• Bx15 • M60 • M100 • M101"
+          }
+        ]
+      },
+      {
+        "decision_id": "bx15-125th-workshop-3",
+        "local_observation_id": "route_bx15_2013_04_09_sbs_125th_workshop_3",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_bx15-ace is already the correct canonical record for Bx15 local service on 125th Street. Registry record has this observation's source in source_ids and route_bx15-2013-04-09-sbs-125th-workshop-3 in record_aliases. Service variant is local (not limited/SBS), confirming canonical identity. No link to a different record needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p001_c0003",
+            "source_quote": "• Bx15 • M60 • M100 • M101"
+          },
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p008_c0006",
+            "source_quote": "Bx15, M100 and M101 make local stops along 125th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "m100-125th-workshop-3",
+        "local_observation_id": "route_m100_2013_04_09_sbs_125th_workshop_3",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_m100-ace is already the correct canonical record for M100 local service on 125th Street. Registry record has this observation's source in source_ids and route_m100-2013-04-09-sbs-125th-workshop-3 in record_aliases. No link to a different record needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p001_c0003",
+            "source_quote": "• Bx15 • M60 • M100 • M101"
+          },
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p008_c0006",
+            "source_quote": "Bx15, M100 and M101 make local stops along 125th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "m101-125th-workshop-3",
+        "local_observation_id": "route_m101_2013_04_09_sbs_125th_workshop_3",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_m101 is already the correct canonical record for M101 local service on 125th Street. Registry record has this observation's source in source_ids and route_m101-2013-04-09-sbs-125th-workshop-3 in record_aliases. No link to a different record needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p001_c0003",
+            "source_quote": "• Bx15 • M60 • M100 • M101"
+          },
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p008_c0006",
+            "source_quote": "Bx15, M100 and M101 make local stops along 125th Street"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-42-30-479Z_2111393-c4d826bc_canonicalize_2026-06-10t23-12-22-690z-1976810-a6473111-ingest-2013-04-09-sbs-125th-workshop-3-route-identity"
+}

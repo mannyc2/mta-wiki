@@ -1,0 +1,66 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:36:58.662Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_d021833ba0.md",
+  "cluster_id": "entity_cluster_d021833ba0",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_d021833ba0",
+    "kind": "entity",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "entity_community-board-1-bronx-2012-02",
+          "entity_community-board-1-manhattan-2013-06"
+        ],
+        "reason": "Contradiction test (test 1): borough differs (Bronx vs Manhattan), which is a strong identity field for community boards. Same name alone does not override geographic scope. Records are distinct community boards in different boroughs."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "entity_community-board-1-bronx-2012-02",
+        "aliases": [
+          "Community Board 1",
+          "entity_community-board-1"
+        ],
+        "reason": "Generic name used across boroughs; not specific to this record. Useful for search but not merge authority."
+      },
+      {
+        "record_id": "entity_community-board-1-manhattan-2013-06",
+        "aliases": [
+          "Community Board 1",
+          "entity_community-board-1"
+        ],
+        "reason": "Generic name used across boroughs; not specific to this record. Useful for search but not merge authority."
+      }
+    ],
+    "missing_fields": [
+      {
+        "record_id": "entity_community-board-1-bronx-2012-02",
+        "fields": [
+          "borough"
+        ]
+      },
+      {
+        "record_id": "entity_community-board-1-manhattan-2013-06",
+        "fields": [
+          "borough"
+        ]
+      }
+    ],
+    "ambiguous": [],
+    "suggested_rules": [
+      "For community boards, borough is a strong identity differentiator; records with same numeric designation but different borough should never merge. Consider adding explicit 'borough' field to payload_identity_fields."
+    ],
+    "confidence": "high",
+    "rationale": "Per test 1 (contradiction), borough differs between the Bronx and Manhattan community boards. No evidence supports them being the same canonical entity. The shared alias 'entity_community-board-1' is insufficient for merge."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-36-46-916Z_1282984-831f5705_identity-review-run_entity-cluster-d021833ba0",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-36-46-916Z_2026-06-23T14-36-46-916Z_1282984-831f5705_identity-review-run_entity-cluster-d021833ba0.jsonl"
+}

@@ -1,0 +1,366 @@
+{
+  "note_id": "codex-identity-batch221-nonentity-prep",
+  "batch": "identity221",
+  "created_at": "2026-06-23T14:14:37Z",
+  "author": "codex",
+  "scope": {
+    "operation": "prepare_identity_cleanup_artifact_only",
+    "after_checkpoint": "identity220-relation220",
+    "issue_type": "duplicate_global_identity",
+    "global_kinds": [
+      "corridor",
+      "project"
+    ],
+    "selection_note": "Prepared the current non-entity duplicate_global_identity backlog after identity220-relation220: Church Avenue corridor, East 167/168 corridor, and the remaining project duplicate if still present.",
+    "forbidden_commands_run": [],
+    "provider_backed_commands_run": false,
+    "generated_output_commands_run": false,
+    "write_limit": "Exactly one artifact was written: data/review_notes/codex-identity-batch221-nonentity-prep.json. No identity overrides, LOG, manifests, canonical JSONL, DB, wiki, materialized outputs, generated validation outputs, or exports were mutated."
+  },
+  "current_duplicate_snapshot": {
+    "source": "Existing data/identity-review/validation_issues.jsonl only; no validate/materialize/export was run.",
+    "non_entity_duplicate_global_identity_issues": [
+      {
+        "global_kind": "corridor",
+        "message": "Global corridor records corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate and corridor_church-av share identity key corridor_church-ave.",
+        "record_id": "corridor_church-av"
+      },
+      {
+        "global_kind": "corridor",
+        "message": "Global corridor records corridor_e-167th-e-168th-st and corridor_east-167-168-st share identity key corridor_e-167th-st-e-168th-st.",
+        "record_id": "corridor_east-167-168-st"
+      },
+      {
+        "global_kind": "project",
+        "message": "Global project records project_207th-st-sewer-replacement-33751 and project_207th-st-sewer-replacement-apr2022 share identity key project_207th-st-sewer-replacement.",
+        "record_id": "project_207th-st-sewer-replacement-apr2022"
+      }
+    ],
+    "counts_by_kind": {
+      "corridor": 2,
+      "project": 1
+    }
+  },
+  "prepared_count": 3,
+  "counts": {
+    "alias_merge": 2,
+    "do_not_merge": 0,
+    "skipped_review_only": 1
+  },
+  "decisions": [
+    {
+      "decision_id": "identity221-nonentity-001",
+      "decision_type": "skipped_review_only",
+      "global_kind": "corridor",
+      "candidate_pair": [
+        "corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate",
+        "corridor_church-av"
+      ],
+      "shared_identity_key": "corridor_church-ave",
+      "confidence": "low",
+      "reason": "Do not prepare a durable alias_merge or do_not_merge for this pair yet. The Bus Forward 2 record is an unbounded 2017 SBS candidate shell naming only 'Church Avenue', while corridor_church-av is the bounded 2019 Church Ave corridor from Flatbush Ave to Ocean Pkwy. That is not enough to prove same-object identity, but it also is not enough to prove a distinct corridor because the candidate lacks conflicting limits.",
+      "validator_evidence": [
+        {
+          "code": "duplicate_global_identity",
+          "message": "Global corridor records corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate and corridor_church-av share identity key corridor_church-ave.",
+          "source_file": "data/identity-review/validation_issues.jsonl"
+        }
+      ],
+      "canonical_evidence": [
+        {
+          "record_id": "corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate",
+          "display_name": "Church Avenue (SBS candidate G)",
+          "source_ids": [
+            "bus_forward_2"
+          ],
+          "payload_summary": {
+            "corridor_name": "Church Avenue",
+            "borough": "Brooklyn",
+            "description": "SBS candidate corridor identified for next phase of SBS program",
+            "limits": null,
+            "from": null,
+            "to": null
+          }
+        },
+        {
+          "record_id": "corridor_church-av",
+          "display_name": "Church Av",
+          "source_ids": [
+            "brooklyn_bus_network_draft_plan_without_route_profiles",
+            "church_ave_cb12_jun2019",
+            "church_ave_cb14_tc_may2019",
+            "church_ave_project_update_oct2019",
+            "church_ave_public_forum_jul2019"
+          ],
+          "payload_summary": {
+            "corridor_name": "Church Av",
+            "street": "Church Avenue",
+            "borough": "Brooklyn",
+            "limits": "Flatbush Ave to Ocean Pkwy",
+            "from": "Flatbush Ave",
+            "to": "Ocean Pkwy",
+            "corridor_length_mi": 0.9
+          }
+        }
+      ],
+      "source_evidence": [
+        {
+          "record_id": "corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate",
+          "evidence_ref": "bus_forward_2#p005_c0001",
+          "quote": "Brooklyn G Church Avenue",
+          "finding": "The SBS candidate table names Church Avenue but provides no limits."
+        },
+        {
+          "record_id": "corridor_church-av",
+          "evidence_ref": "church_ave_project_update_oct2019#p005_c0002",
+          "quote": "Church Ave (Flatbush Ave to Ocean Pkwy) identified as 2019 priority project",
+          "finding": "The later Church Ave project identifies a bounded Flatbush-to-Ocean-Pkwy corridor."
+        },
+        {
+          "record_id": "corridor_church-av",
+          "evidence_ref": "church_ave_project_update_oct2019#p006_c0002",
+          "quote": "Flatbush Ave to Ocean Pkwy (0.9 miles)",
+          "finding": "The target corridor has explicit limits and length."
+        }
+      ],
+      "guard_checks": {
+        "both_records_present_in_current_canonical_corridors_jsonl": true,
+        "same_global_kind": true,
+        "same_borough": true,
+        "candidate_has_explicit_limits": false,
+        "target_has_explicit_limits": true,
+        "direct_alias_already_exists_for_candidate_pair": false,
+        "direct_do_not_merge_already_exists_for_candidate_pair": false,
+        "safe_to_alias": false,
+        "safe_to_do_not_merge": false,
+        "review_note_context": "data/review_notes/codex-corridor-church-ave-duplicate-prep-20260623.json reached the same low-confidence review-only conclusion."
+      },
+      "blocker": "Needs source-backed limits for Bus Forward 2 SBS candidate G, or a durable corridor identity policy for sparse candidate shells versus later bounded project corridors."
+    },
+    {
+      "decision_id": "identity221-nonentity-002",
+      "decision_type": "alias_merge",
+      "global_kind": "corridor",
+      "alias_id": "corridor_e-167th-e-168th-st",
+      "target_id": "corridor_east-167-168-st",
+      "identity_keys": [
+        "corridor_e-167th-st-e-168th-st"
+      ],
+      "confidence": "high",
+      "reason": "Both records identify the same Bronx E 167th/E 168th Street bus-priority corridor. The alias is a one-source CB3 extraction naming E 167th/E 168th as a top Bronx corridor; the target already includes the same top-corridor evidence from CB4 plus stronger final-plan context with Jerome Avenue to Franklin Avenue limits, Bx35 service, 1.2-mile length, and ridership.",
+      "validator_evidence": [
+        {
+          "code": "duplicate_global_identity",
+          "message": "Global corridor records corridor_e-167th-e-168th-st and corridor_east-167-168-st share identity key corridor_e-167th-st-e-168th-st.",
+          "source_file": "data/identity-review/validation_issues.jsonl"
+        }
+      ],
+      "canonical_evidence": [
+        {
+          "record_id": "corridor_e-167th-e-168th-st",
+          "display_name": "E 167th St / E 168th St",
+          "source_ids": [
+            "bx_cb3_projects_feb112020"
+          ],
+          "payload_summary": {
+            "corridor_name": "E 167th St / E 168th St",
+            "street": "E 167th St / E 168th St",
+            "borough": "Bronx",
+            "description": "Bronx bus priority corridor identified by NYCDOT as a top corridor for bus lanes and other bus priority treatments"
+          }
+        },
+        {
+          "record_id": "corridor_east-167-168-st",
+          "display_name": "East 167 Street and East 168 Street Corridor",
+          "source_ids": [
+            "bronx_bus_network_final_plan_2019",
+            "bx_cb4_projects_feb052020"
+          ],
+          "payload_summary": {
+            "corridor_name": "East 167 Street and East 168 Street",
+            "limits": "Jerome Avenue to Franklin Avenue",
+            "corridor_length_mi": 1.2,
+            "routes_served": [
+              "Bx35"
+            ],
+            "daily_ridership": 27000,
+            "borough": "Bronx"
+          }
+        }
+      ],
+      "source_evidence": [
+        {
+          "record_id": "corridor_e-167th-e-168th-st",
+          "evidence_ref": "bx_cb3_projects_feb112020#p005_c0003",
+          "quote": "E 167 th /E 168 th St identified as top Bronx corridors",
+          "finding": "CB3 source names the E 167/E 168 corridor."
+        },
+        {
+          "record_id": "corridor_east-167-168-st",
+          "evidence_ref": "bx_cb4_projects_feb052020#p005_c0003",
+          "quote": "E 167 th /E 168 th St identified as top Bronx corridors",
+          "finding": "CB4 source repeats the same corridor identification."
+        },
+        {
+          "record_id": "corridor_east-167-168-st",
+          "evidence_ref": "bronx_bus_network_final_plan_2019#p033_c0004",
+          "quote": "Corridor length: 1.2 miles",
+          "finding": "Final-plan evidence supplies target corridor metrics and Bx35 context."
+        }
+      ],
+      "guard_checks": {
+        "both_records_present_in_current_canonical_corridors_jsonl": true,
+        "current_direct_alias_absent": true,
+        "current_direct_do_not_merge_pair_absent": true,
+        "same_global_kind": true,
+        "same_borough": "Bronx",
+        "same_named_corridor": "E 167th St / E 168th St",
+        "conflicting_limits_found": false,
+        "related_existing_alias_context": "data/identity-overrides/merges.json already maps corridor_e-167-168-st-bx-cb4 to corridor_east-167-168-st, but not the direct corridor_e-167th-e-168th-st alias."
+      },
+      "proposed_durable_mutation_row": {
+        "alias_id": "corridor_e-167th-e-168th-st",
+        "target_id": "corridor_east-167-168-st",
+        "reason": "Same Bronx E 167th/E 168th Street bus-priority corridor; target carries fuller final-plan and CB4 context.",
+        "source_decision": "data/review_notes/codex-identity-batch221-nonentity-prep.json#identity221-nonentity-002",
+        "reviewed_at": "2026-06-23T14:14:37Z"
+      }
+    },
+    {
+      "decision_id": "identity221-nonentity-003",
+      "decision_type": "alias_merge",
+      "global_kind": "project",
+      "alias_id": "project_207th-st-sewer-replacement-apr2022",
+      "target_id": "project_207th-st-sewer-replacement-33751",
+      "identity_keys": [
+        "project_207th-st-sewer-replacement"
+      ],
+      "confidence": "high",
+      "reason": "Both records identify the 207th Street Sewer Replacement project at 207th Street Yard. The alias is an April 2022 IEC status/update view of the same project, while the target already aggregates the project heading, scope, status, and later schedule evidence across multiple meeting sources. The status difference is document-time lifecycle evidence, not a separate project identity.",
+      "validator_evidence": [
+        {
+          "code": "duplicate_global_identity",
+          "message": "Global project records project_207th-st-sewer-replacement-33751 and project_207th-st-sewer-replacement-apr2022 share identity key project_207th-st-sewer-replacement.",
+          "source_file": "data/identity-review/validation_issues.jsonl"
+        }
+      ],
+      "canonical_evidence": [
+        {
+          "record_id": "project_207th-st-sewer-replacement-33751",
+          "display_name": "207th St Sewer Replacement",
+          "source_ids": [
+            "meeting_doc_133356",
+            "meeting_doc_33751",
+            "meeting_doc_79336",
+            "meeting_doc_98326"
+          ],
+          "payload_summary": {
+            "project_name": "207th St Sewer Replacement",
+            "status": "75% complete",
+            "project_type": "Sandy recovery / sewer relocation",
+            "location": "207th Street Yard",
+            "borough": "Manhattan"
+          }
+        },
+        {
+          "record_id": "project_207th-st-sewer-replacement-apr2022",
+          "display_name": "207th Street Sewer Replacement",
+          "source_ids": [
+            "meeting_doc_85841"
+          ],
+          "payload_summary": {
+            "project_name": "207th Street Sewer Replacement",
+            "project_type": "Infrastructure/Sewer",
+            "status": "Delayed",
+            "description": "Sewer relocation at 207th Street Yard. Original SC Feb 2024, revised to Jan 2025 (11-month delay). Third party utility delays and DOS moratorium. EAC $170M - over budget. Budget modification being prepared."
+          }
+        }
+      ],
+      "source_evidence": [
+        {
+          "record_id": "project_207th-st-sewer-replacement-33751",
+          "evidence_ref": "meeting_doc_33751#p033_c0001",
+          "quote": "207th Street Sewer Replacement",
+          "finding": "Target carries the same project title."
+        },
+        {
+          "record_id": "project_207th-st-sewer-replacement-33751",
+          "evidence_ref": "meeting_doc_98326#p026_c0003",
+          "quote": "This project will relocate NYC-owned sewers",
+          "finding": "Target evidence gives the 207th Street Yard sewer-relocation scope."
+        },
+        {
+          "record_id": "project_207th-st-sewer-replacement-33751",
+          "evidence_ref": "meeting_doc_98326#p027_c0003",
+          "quote": "Substantial Completion (SC) date is February 2024",
+          "finding": "Target evidence includes the original February 2024 SC lifecycle context."
+        },
+        {
+          "record_id": "project_207th-st-sewer-replacement-apr2022",
+          "evidence_ref": "meeting_doc_85841#p008_c0002",
+          "quote": "207 th St. Sewer Replacement",
+          "finding": "Alias evidence names the same project and describes later delay/budget status."
+        }
+      ],
+      "guard_checks": {
+        "both_records_present_in_current_canonical_projects_jsonl": true,
+        "current_direct_alias_absent": true,
+        "current_direct_do_not_merge_pair_absent": true,
+        "same_global_kind": true,
+        "same_project_name_normalized": "207th Street Sewer Replacement",
+        "same_location": "207th Street Yard",
+        "status_difference_is_lifecycle_context": true,
+        "conflicting_scope_found": false,
+        "related_existing_alias_context": "data/identity-overrides/merges.json already maps project_207th-st-sewer-replacement-feb2024 to project_207th-st-sewer-replacement-33751, but not the direct April 2022 record alias."
+      },
+      "proposed_durable_mutation_row": {
+        "alias_id": "project_207th-st-sewer-replacement-apr2022",
+        "target_id": "project_207th-st-sewer-replacement-33751",
+        "reason": "Same 207th Street Sewer Replacement project at 207th Street Yard; April 2022 record is a lifecycle/status update.",
+        "source_decision": "data/review_notes/codex-identity-batch221-nonentity-prep.json#identity221-nonentity-003",
+        "reviewed_at": "2026-06-23T14:14:37Z"
+      }
+    }
+  ],
+  "blockers": [
+    {
+      "record_pair": [
+        "corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate",
+        "corridor_church-av"
+      ],
+      "blocker": "No source-backed limits for the sparse Bus Forward 2 Church Avenue SBS candidate; cannot safely alias or do-not-merge."
+    }
+  ],
+  "commands_run": [
+    "pwd && git status --short && rg -n \"duplicate_global_identity|identity220|Church Ave|East 167|East 168|167/168|batch221|project duplicate\" data wiki packages docs LOG.md -S",
+    "find data -maxdepth 4 -type f \\( -path '*/identity*' -o -path '*/review_notes/*' -o -path '*/canonical/*' \\) | sort",
+    "jq '.' data/review_notes/codex-identity-batch220-prep.json | head -200",
+    "jq -c 'select((.issue // .kind // .code // .rule // \"\") | tostring | test(\"duplicate_global_identity\"))' data/identity-review/validation_issues.jsonl | jq -s 'map(select((.record_kind // .kind // .entity_kind // .global_kind // \"\") != \"entity\")) | .[0:80]'",
+    "jq -c 'select((tostring|test(\"Church|church|167|168|project_22-church|corridor_east-167|duplicate_global_identity\")))' data/identity-review/validation_issues.jsonl data/identity-review/records.jsonl data/identity-review/candidate_edges.jsonl data/identity-review/clusters.jsonl | head -200",
+    "jq -c 'select(.code==\"duplicate_global_identity\" and (.message|test(\"Global (corridor|project) records\")))' data/identity-review/validation_issues.jsonl",
+    "jq -c 'select(.record_id==\"corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate\" or .record_id==\"corridor_church-av\" or .record_id==\"corridor_e-167th-e-168th-st\" or .record_id==\"corridor_east-167-168-st\")' data/canonical/corridors.jsonl",
+    "jq -c 'select(.code==\"duplicate_global_identity\" and (.message|test(\"Global project records\")))' data/identity-review/validation_issues.jsonl | sed -E 's/^/ISSUE /' && jq -c 'select(.id|test(\"church|utica|22|2014|sbs|project\"; \"i\"))' data/canonical/projects.jsonl | head -120",
+    "rg -n \"corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate|corridor_church-av|corridor_e-167th-e-168th-st|corridor_east-167-168-st|project_\" data/identity-review/packets data/identity-review/llm-suggestions data/review_notes -S",
+    "head -3 data/canonical/corridors.jsonl | jq '.'",
+    "jq -c 'select(.record_id==\"project_207th-st-sewer-replacement-33751\" or .record_id==\"project_207th-st-sewer-replacement-apr2022\")' data/canonical/projects.jsonl",
+    "rg -n \"project_207th-st-sewer-replacement-33751|project_207th-st-sewer-replacement-apr2022|207th.*sewer|Sewer Replacement\" data/identity-review/packets data/identity-review/llm-suggestions data/review_notes wiki/projects data/canonical/projects.jsonl -S",
+    "jq -c 'select(.block_id==\"p005_c0001\")' raw/sources/bus_forward_2/blocks.jsonl && jq -c 'select(.block_id==\"p006_c0002\" or .block_id==\"p005_c0002\")' raw/sources/church_ave_project_update_oct2019/blocks.jsonl raw/sources/church_ave_cb12_jun2019/blocks.jsonl raw/sources/church_ave_public_forum_jul2019/blocks.jsonl",
+    "jq -c 'select(.block_id==\"p005_c0003\" or .block_id==\"p028_c0003\")' raw/sources/bx_cb3_projects_feb112020/blocks.jsonl raw/sources/bx_cb4_projects_feb052020/blocks.jsonl && jq -c 'select(.block_id==\"p033_c0004\")' raw/sources/bronx_bus_network_final_plan_2019/blocks.jsonl",
+    "jq -c 'select((.block_id==\"p033_c0001\") or (.block_id==\"p026_c0003\") or (.block_id==\"p027_c0003\") or (.block_id==\"p008_c0002\"))' raw/sources/meeting_doc_33751/blocks.jsonl raw/sources/meeting_doc_98326/blocks.jsonl raw/sources/meeting_doc_85841/blocks.jsonl",
+    "jq '.' data/review_notes/codex-corridor-church-ave-duplicate-prep-20260623.json",
+    "jq -c '.aliases? // .merges? // . | tostring | test(\"corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate|corridor_e-167th-e-168th-st|corridor_east-167-168-st|project_207th-st-sewer-replacement-33751|project_207th-st-sewer-replacement-apr2022\")' data/identity-overrides/merges.json && rg -n \"corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate|corridor_e-167th-e-168th-st|corridor_east-167-168-st|project_207th-st-sewer-replacement-33751|project_207th-st-sewer-replacement-apr2022\" data/identity-overrides/merges.json data/identity-overrides/do-not-merge.json",
+    "date -u +%Y-%m-%dT%H:%M:%SZ"
+  ],
+  "commands_not_run": [
+    "provider-backed commands",
+    "materialize",
+    "validate",
+    "export-jsonl",
+    "canonicalize",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "write",
+    "ask",
+    "schema/profile/provider commands"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "run_id": "2026-06-10T17-48-04-702Z_1496766-6882ad6d_ingest_2010-03-10-brt-1st2nd-cb3",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-10T19:35:59.820Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "entity-mta-nyct-presenter-2010-03",
+        "local_observation_id": "entity_mta_nyct_presenter_2010_03",
+        "decision": "new",
+        "rationale": "Observation matches its own base_record_id entity_mta-nyct, which already exists in the registry with entity_name 'MTA New York City Transit' and entity_type 'agency'. The observation already resolves to that canonical record — no different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_03_10_brt_1st2nd_cb3",
+            "block_id": "p002_c0009",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2010_03_10_brt_1st2nd_cb3",
+            "block_id": "p003_c0013",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-nyc-dot-presenter-2010-03",
+        "local_observation_id": "entity_nyc_dot_presenter_2010_03",
+        "decision": "new",
+        "rationale": "Observation matches its own base_record_id entity_nyc-dot, which already exists in the registry with entity_name 'New York City Department of Transportation' and entity_type 'agency'. The observation already resolves to that canonical record — no different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_03_10_brt_1st2nd_cb3",
+            "block_id": "p003_c0014",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2010_03_10_brt_1st2nd_cb3",
+            "block_id": "p006_c0007",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-manhattan-cb3-2010",
+        "local_observation_id": "entity_manhattan_cb3_2010",
+        "decision": "new",
+        "rationale": "Observation matches its own base_record_id entity_manhattan-cb3-2010, which already exists in the registry with entity_name 'Manhattan Community Board 3', entity_type 'community board', and description 'Community Board 3 Transportation Committee'. The observation already resolves to that canonical record — no different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_03_10_brt_1st2nd_cb3",
+            "block_id": "p001_c0002",
+            "source_quote": ""
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-35-35-832Z_1641434-aa7b0738_canonicalize_2026-06-10t17-48-04-702z-1496766-6882ad6d-ingest-2010-03-10-brt-1st2nd-cb3-entity-identity"
+}

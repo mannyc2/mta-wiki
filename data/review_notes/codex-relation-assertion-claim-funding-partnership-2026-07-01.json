@@ -1,0 +1,133 @@
+{
+  "campaign_id": "codex-relation-assertion-claim-funding-partnership-2026-07-01",
+  "date": "2026-07-01",
+  "mode": "codex_only_deterministic_cleanup",
+  "provider_backed_llm_commands_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider profiles"
+  ],
+  "canonical_jsonl_hand_edited": false,
+  "baseline_after_publication_document_slice": {
+    "validate": "Issues: 0",
+    "relation_assertion_unknown_total": 8706,
+    "claim_context_has_claim_unknown": 430,
+    "funding_award_unknown": 360,
+    "partnership_engagement_unknown": 361
+  },
+  "after": {
+    "validate": "Issues: 0",
+    "submissions": 98102,
+    "canonical_records": 84040,
+    "wiki_pages": 7334,
+    "relation_assertion_unknown_total": 8495,
+    "claim_context_has_claim_unknown": 361,
+    "funding_award_unknown": 335,
+    "partnership_engagement_unknown": 244
+  },
+  "movement_from_after_publication_document_slice": {
+    "relation_assertion_unknown_total": -211,
+    "claim_context_has_claim_unknown": -69,
+    "funding_award_unknown": -25,
+    "partnership_engagement_unknown": -117
+  },
+  "subagents_consumed_and_closed": [
+    {
+      "agent_id": "019f1b02-9a72-7001-a5e8-e600905d3843",
+      "lane": "claim_context.has_claim residual audit",
+      "result": "Recommended same-source evidence/provenance guarded route/corridor claim status inference for delivered, planned, and proposed claims."
+    },
+    {
+      "agent_id": "019f1b04-8457-70d3-9f22-6700f3269fc3",
+      "lane": "funding_award residual audit",
+      "result": "Recommended exact current/executed entity-to-entity funding-award delivered inference for transfers, payments, agreements, and contracted-by/with rows."
+    },
+    {
+      "agent_id": "019f1b02-9ecb-7c73-9503-9fb32228217c",
+      "lane": "partnership_engagement residual audit",
+      "result": "Recommended dated event/entity organizer and participant status inference plus formal entity/entity partnership artifact delivered inference."
+    }
+  ],
+  "implemented_changes": [
+    {
+      "area": "scoped claim relation assertion status",
+      "summary": "Classified non-source has_claim relations as delivered/planned/proposed only when relation and claim share current-source evidence and route/corridor text proves the lifecycle.",
+      "guards": [
+        "object must be claim",
+        "claim must include and evidence the relation source_id",
+        "relation must evidence its own source_id",
+        "delivered limited to route/corridor factual signals and rejects future/proposal/agenda/repair text",
+        "planned/proposed limited to route subjects and explicit will/proposed/would route-service patterns",
+        "entity subjects, provenance mismatches, mixed active/future claims, no-proposed/no-action text, and missing evidence remain held"
+      ]
+    },
+    {
+      "area": "funding-award assertion status",
+      "summary": "Marked exact executed/current entity-to-entity funding-award relations delivered for transfers, payments, entered agreements, contracted-with, and contracted-by rows.",
+      "guards": [
+        "subject/object must both be distinct entities",
+        "relation kind must be one of transfers_funds_to, makes_payment_to, entered_agreement_with, contracted_with, contracted_by",
+        "positive executed/current text required",
+        "approval/proposal/future/pending text rejected",
+        "source titles are positive-only for agreements-entered-into wording so month names do not trip modal guards"
+      ]
+    },
+    {
+      "area": "partnership engagement assertion status",
+      "summary": "Classified dated event/entity organizer and participant roles as delivered or planned, and formal entity/entity MOU/agreement/task-force artifacts as delivered.",
+      "guards": [
+        "organized_by/has_participant requires exactly one dated event endpoint and one entity endpoint",
+        "event family must be public_engagement, implementation, approval, milestone, incident, governance, or publication",
+        "work-plan sources and future event dates classify as planned rather than delivered",
+        "completed organizer/participant verbs required for delivered event roles",
+        "has_partner/collaborates_with entity pairs require executed MOU/agreement/task-force artifact phrases",
+        "generic working-together/collaboration text, missing dates, wrong event families, and wrong endpoint shapes remain held"
+      ]
+    }
+  ],
+  "files_changed": [
+    "packages/pipeline/src/records/assertion-qualifiers.ts",
+    "packages/pipeline/test/records/assertion-qualifiers.test.ts",
+    "data/canonical/relations.jsonl",
+    "data/canonical.db",
+    "LOG.md",
+    "data/review_notes/codex-relation-assertion-publication-document-links-2026-07-01.json",
+    "data/review_notes/codex-relation-assertion-claim-funding-partnership-2026-07-01.json"
+  ],
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+      "result": "pass: 48 tests, 254 expect calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "pass: Materialized 93092/98102 submissions; retired submissions skipped 243; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass: Issues 0; submissions 98102; canonical records 84040; wiki pages 7334"
+    }
+  ],
+  "remaining": {
+    "relation_assertion_unknown_total": 8495,
+    "top_unknown_buckets": [
+      "metric_context.has_metric: 5647",
+      "claim_context.has_claim: 361",
+      "timeline_context.has_timeline_event: 323",
+      "corridor_scope.operates_on_corridor: 269",
+      "treatment_context.has_treatment: 82",
+      "partnership_engagement.has_partner: 67",
+      "partnership_engagement.organized_by: 61"
+    ],
+    "next_action": "Continue with metric has_metric only if an actual/planned/proposed discriminator is available; otherwise audit remaining claim, timeline, corridor, treatment, and agency-role tails for smaller high-confidence deterministic slices."
+  }
+}

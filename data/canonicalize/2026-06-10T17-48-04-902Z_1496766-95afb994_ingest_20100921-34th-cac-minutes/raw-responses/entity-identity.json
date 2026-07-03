@@ -1,0 +1,220 @@
+{
+  "run_id": "2026-06-10T17-48-04-902Z_1496766-95afb994_ingest_20100921-34th-cac-minutes",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-10T19:31:03.857Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "id-nyc-dot-20100921",
+        "local_observation_id": "entity_nyc_dot_20100921_cac",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot already exists in registry with matching entity_name (New York City Department of Transportation), entity_type (agency), and acronym (DOT). Observation resolves to its own canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "20100921_34th_cac_minutes",
+            "block_id": "p001_c0007",
+            "source_quote": "Bruce Schaller, Deputy Commissioner of the New York City Department of Transportation (DOT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "id-nyct-20100921",
+        "local_observation_id": "entity_nyct_20100921_cac",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-nyct already exists in registry with matching entity_name (MTA New York City Transit), entity_type (agency), and acronym (MTA). Observation resolves to its own canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "20100921_34th_cac_minutes",
+            "block_id": "p001_c0009",
+            "source_quote": "Ted Orosz, the director of Long-Range Bus Planning for New York City Transit (NYCT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "id-hsh-20100921",
+        "local_observation_id": "entity_hsh_20100921_cac",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_hsh-20100921-cac already exists in registry with matching entity_name (Howard/Stein-Hudson Associates), entity_type (consulting firm), and acronym (HSH). Observation resolves to its own canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "20100921_34th_cac_minutes",
+            "block_id": "p001_c0007",
+            "source_quote": "Arnie Bloch of Howard/Stein-Hudson Associates (HSH)"
+          }
+        ]
+      },
+      {
+        "decision_id": "id-manhattan-bp-20100921",
+        "local_observation_id": "entity_manhattan_bp_office_20100921",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_manhattan-borough-president already exists in registry with matching entity_name (Manhattan Borough President), entity_type (government_office). The observation label 'Manhattan Borough President's Office' refers to the same entity; entity_manhattan-bp-office-20100921 is already an alias on the registry record.",
+        "evidence_refs": [
+          {
+            "source_id": "20100921_34th_cac_minutes",
+            "block_id": "p001_c0007",
+            "source_quote": "Kristen Ellis of the Manhattan Borough President's Office"
+          }
+        ]
+      },
+      {
+        "decision_id": "id-cac-20100921",
+        "local_observation_id": "entity_34th_st_cac_20100921",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_34th-st-cac-20100921 already exists in registry with matching entity_name (34th Street Transitway Community Advisory Committee), entity_type (advisory committee), and acronym (CAC). Observation resolves to its own canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "20100921_34th_cac_minutes",
+            "block_id": "p001_c0007",
+            "source_quote": "Arnie Bloch of Howard/Stein-Hudson Associates (HSH) opened the meeting by welcoming the Community Advisory Committee (CAC) Members."
+          }
+        ]
+      },
+      {
+        "decision_id": "id-arnie-bloch-20100921",
+        "local_observation_id": "entity_arnie_bloch_20100921",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_arnie-bloch-20100921 already exists in registry with matching entity_name (Arnie Bloch) and entity_type (person). Observation resolves to its own canonical record.",
+        "proposed_relations": [
+          {
+            "relation_kind": "works_at",
+            "subject_id": "entity_arnie-bloch-20100921",
+            "object_id": "entity_hsh-20100921-cac",
+            "description": "Arnie Bloch is affiliated with Howard/Stein-Hudson Associates (HSH)",
+            "evidence_refs": [
+              {
+                "source_id": "20100921_34th_cac_minutes",
+                "block_id": "p001_c0007",
+                "source_quote": "Arnie Bloch of Howard/Stein-Hudson Associates (HSH)"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20100921_34th_cac_minutes",
+            "block_id": "p001_c0007",
+            "source_quote": "Arnie Bloch of Howard/Stein-Hudson Associates (HSH)"
+          }
+        ]
+      },
+      {
+        "decision_id": "id-bruce-schaller-20100921",
+        "local_observation_id": "entity_bruce_schaller_20100921",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_bruce-schaller-20100921 already exists in registry with matching entity_name (Bruce Schaller) and entity_type (person). Observation resolves to its own canonical record.",
+        "proposed_relations": [
+          {
+            "relation_kind": "works_at",
+            "subject_id": "entity_bruce-schaller-20100921",
+            "object_id": "entity_nyc-dot",
+            "description": "Bruce Schaller is Deputy Commissioner at the New York City Department of Transportation (DOT)",
+            "evidence_refs": [
+              {
+                "source_id": "20100921_34th_cac_minutes",
+                "block_id": "p001_c0007",
+                "source_quote": "Bruce Schaller, Deputy Commissioner of the New York City Department of Transportation (DOT)"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20100921_34th_cac_minutes",
+            "block_id": "p001_c0007",
+            "source_quote": "Bruce Schaller, Deputy Commissioner of the New York City Department of Transportation (DOT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "id-kristen-ellis-20100921",
+        "local_observation_id": "entity_kristen_ellis_20100921",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_kristen-ellis-20100921 already exists in registry with matching entity_name (Kristen Ellis) and entity_type (person). Observation resolves to its own canonical record.",
+        "proposed_relations": [
+          {
+            "relation_kind": "works_at",
+            "subject_id": "entity_kristen-ellis-20100921",
+            "object_id": "entity_manhattan-borough-president",
+            "description": "Kristen Ellis works at the Manhattan Borough President's Office",
+            "evidence_refs": [
+              {
+                "source_id": "20100921_34th_cac_minutes",
+                "block_id": "p001_c0007",
+                "source_quote": "Kristen Ellis of the Manhattan Borough President's Office"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20100921_34th_cac_minutes",
+            "block_id": "p001_c0007",
+            "source_quote": "Kristen Ellis of the Manhattan Borough President's Office"
+          }
+        ]
+      },
+      {
+        "decision_id": "id-eric-beaton-20100921",
+        "local_observation_id": "entity_eric_beaton_20100921",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_eric-beaton-20100921 already exists in registry with matching entity_name (Eric Beaton) and entity_type (person). Observation resolves to its own canonical record.",
+        "proposed_relations": [
+          {
+            "relation_kind": "works_at",
+            "subject_id": "entity_eric-beaton-20100921",
+            "object_id": "entity_nyc-dot",
+            "description": "Eric Beaton is Project Manager of the 34th Street Transitway at NYC DOT",
+            "evidence_refs": [
+              {
+                "source_id": "20100921_34th_cac_minutes",
+                "block_id": "p001_c0009",
+                "source_quote": "Eric Beaton, Project Manager of the 34th Street Transitway at DOT"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20100921_34th_cac_minutes",
+            "block_id": "p001_c0009",
+            "source_quote": "Eric Beaton, Project Manager of the 34th Street Transitway at DOT"
+          }
+        ]
+      },
+      {
+        "decision_id": "id-ted-orosz-20100921",
+        "local_observation_id": "entity_ted_orosz_20100921",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_ted-orosz-20100921 already exists in registry with matching entity_name (Ted Orosz) and entity_type (person). Observation resolves to its own canonical record.",
+        "proposed_relations": [
+          {
+            "relation_kind": "works_at",
+            "subject_id": "entity_ted-orosz-20100921",
+            "object_id": "entity_mta-nyct",
+            "description": "Ted Orosz is Director of Long-Range Bus Planning at New York City Transit (NYCT)",
+            "evidence_refs": [
+              {
+                "source_id": "20100921_34th_cac_minutes",
+                "block_id": "p001_c0009",
+                "source_quote": "Ted Orosz, the director of Long-Range Bus Planning for New York City Transit (NYCT)"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20100921_34th_cac_minutes",
+            "block_id": "p001_c0009",
+            "source_quote": "Ted Orosz, the director of Long-Range Bus Planning for New York City Transit (NYCT)"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-30-06-081Z_1632336-57fd0fc7_canonicalize_2026-06-10t17-48-04-902z-1496766-95afb994-ingest-20100921-34th-cac-minutes-entity-identity"
+}

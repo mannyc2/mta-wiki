@@ -1,0 +1,94 @@
+{
+  "run_id": "2026-06-10T23-00-19-532Z_1976810-da84df67_ingest_201111-1st2nd-progress-report",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T02:11:19.171Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "m15-sbs-201111",
+        "local_observation_id": "route_m15_sbs_201111_progress",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_m15-sbs already exists as a registry record. The observation resolves to its own base_record_id (route_m15-sbs) — same route (M15+), SBS variant, Manhattan, First/Second Avenues. Per canonicalize rules, when the closest match is the observation's own base_record_id, the decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_1st2nd_progress_report",
+            "block_id": "p003_c0003",
+            "source_quote": "M15 Select Bus Service (SBS) along this route"
+          },
+          {
+            "source_id": "201111_1st2nd_progress_report",
+            "block_id": "p010_c0005",
+            "source_quote": "SBS service operates uniformly between East 126th Street in Harlem and South Ferry"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "replaced_by",
+            "subject_id": "route_m15-limited-2010-06-09",
+            "object_id": "route_m15-sbs",
+            "description": "M15 SBS replaced M15 Limited service on October 10, 2010 on First and Second Avenues",
+            "evidence_refs": [
+              {
+                "source_id": "201111_1st2nd_progress_report",
+                "block_id": "p009_c0003",
+                "source_quote": "On the M15 Limited that SBS replaced"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "m15-local-201111",
+        "local_observation_id": "route_m15_local_201111_progress",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_m15-local-2010-09-14 already exists as a registry record. The observation resolves to its own base_record_id — same route (M15), Local variant, Manhattan, First/Second Avenues.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_1st2nd_progress_report",
+            "block_id": "p015_c0010",
+            "source_quote": "M15 local ridership has been dropping as some riders transition to the SBS. M15 Local and Limited services had roughly equal ridership totals"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "coexists_with",
+            "subject_id": "route_m15-local-2010-09-14",
+            "object_id": "route_m15-sbs",
+            "description": "M15 Local continues to operate alongside M15 SBS on First and Second Avenues",
+            "evidence_refs": [
+              {
+                "source_id": "201111_1st2nd_progress_report",
+                "block_id": "p015_c0010",
+                "source_quote": "M15 local ridership has been dropping as some riders transition to the SBS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "m15-limited-201111",
+        "local_observation_id": "route_m15_limited_201111_progress",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_m15-limited-2010-06-09 already exists as a registry record. The observation resolves to its own base_record_id — same route (M15), Limited variant, Manhattan, First/Second Avenues.",
+        "evidence_refs": [
+          {
+            "source_id": "201111_1st2nd_progress_report",
+            "block_id": "p009_c0003",
+            "source_quote": "On the M15 Limited that SBS replaced"
+          },
+          {
+            "source_id": "201111_1st2nd_progress_report",
+            "block_id": "p015_c0010",
+            "source_quote": "M15 Local and Limited services had roughly equal ridership totals, but now 62% of all M15 riders choose the SBS."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-10-08-733Z_2111393-62d8d9df_canonicalize_2026-06-10t23-00-19-532z-1976810-da84df67-ingest-201111-1st2nd-progress-report-route-identity"
+}

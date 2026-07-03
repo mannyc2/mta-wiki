@@ -1,0 +1,3675 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_lower-montauk-final-report-jan2018"
+record_kind: "source"
+display_name: "Lower Montauk Branch Passenger Rail Study"
+source_id: "lower_montauk_final_report_jan2018"
+source_ids:
+  - "lower_montauk_final_report_jan2018"
+local_observation_id: "source_lower_montauk_final_report_jan2018"
+local_observation_ids:
+  - "source_lower_montauk_final_report_jan2018"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T18:50:06.485Z"
+raw_text: "Lower Montauk Branch Passenger Rail Study. Prepared for: New York City Department of Transportation. Prepared by: AECOM, USA, Inc. January 2018"
+submission_ids:
+  - "sub_f39f8cb9845eb547"
+payload:
+  authority_tier: "plan_document"
+  content_type: "report"
+  date_text: "January 2018"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2018-01"
+    precision: "month"
+    raw_text: "January 2018"
+  description: "Study examines feasibility of returning passenger service to the Lower Montauk Branch rail corridor in Queens, NY"
+  prepared_for: "New York City Department of Transportation"
+  published_date_normalized: "2018-01"
+  published_date_precision: "month"
+  publisher: "New York City Department of Transportation"
+  title: "Lower Montauk Branch Passenger Rail Study"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "lower_montauk_final_report_jan2018#p001_c0001"
+    page_number: 1
+    source_id: "lower_montauk_final_report_jan2018"
+    source_path: "raw/sources/lower_montauk_final_report_jan2018/blocks.jsonl"
+    text_sha256: "sha256:e32b22cff9d736f5c865d34fd8f3cfc83c127f9ef270ed57ae4350ebd953abb2"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "lower_montauk_final_report_jan2018#p001_c0002"
+    page_number: 1
+    source_id: "lower_montauk_final_report_jan2018"
+    source_path: "raw/sources/lower_montauk_final_report_jan2018/blocks.jsonl"
+    text_sha256: "sha256:74d518439516c9d8c3cda2566fe0a2443a1d2995a2ec6c4a14dc64986b7c1816"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "lower_montauk_final_report_jan2018#p001_c0003"
+    page_number: 1
+    source_id: "lower_montauk_final_report_jan2018"
+    source_path: "raw/sources/lower_montauk_final_report_jan2018/blocks.jsonl"
+    text_sha256: "sha256:93e65d5a884d755c484b87fc3d2f7d015bd58cb9ad67f19b6730870c58b87474"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0005"
+    evidence_id: "lower_montauk_final_report_jan2018#p001_c0005"
+    page_number: 1
+    source_id: "lower_montauk_final_report_jan2018"
+    source_path: "raw/sources/lower_montauk_final_report_jan2018/blocks.jsonl"
+    text_sha256: "sha256:552096e1395540906ada76c84c8dcd8ce7c13e9eca1c82c47818417727c5605b"
+    text_source: "raw_text"
+---
+
+# Lower Montauk Branch Rail Study
+
+source_id: lower_montauk_final_report_jan2018
+citation: cite block ids exactly as shown in square brackets
+document: 2304 block(s)
+
+## Page 1
+
+### [p001_c0001] Lower Montauk Branch Passenger Rail Study
+[p001_c0002] Prepared for:
+[p001_c0003] New York City Department of Transportation
+[p001_c0004] Prepared by:
+[p001_c0005] AECOM, USA, Inc. January 2018
+
+## Page 2
+
+### [p002_c0001] Executive Summary
+> [p002_c0002] A photograph of a New York City Transit Authority (NYCTA) M10000 series train, specifically car 1005, on a track. The train is silver and gold with 'UP' and '1005' markings. It is positioned on a track next to a paved area with a yellow line. The background shows a clear blue sky and some urban buildings in the distance.
+> [p002_c0003] The logo for the New York City Department of Transportation (NYCTA). It features the text 'NEW YORK CITY' above a stylized green 'DOT' logo. The 'D' and 'T' are represented by green circles with horizontal white lines, and the 'O' is a solid green circle.
+
+## Page 3
+
+### [p003_c0001] Lower Montauk Branch Rail Study
+### [p003_c0002] EXECUTIVE SUMMARY
+### [p003_c0003] Introduction
+[p003_c0004] This study, conducted by the engineering firm AECOM on behalf of New York City Department of Transportation (NYCDOT) and sponsored by New York City District 30 Council Member Elizabeth Crowley, examines the feasibility of returning passenger service to the Lower Montauk Branch rail corridor (“the Branch”). With the City of New York’s population having grown 4.4% and the Borough of Queens’ population having grown 4.6% since 2010, 1 city leaders and planners must begin to plan for the city’s next generation of residents and how they will travel to work, to school, and to the city’s vast cultural destinations. As outlined in OneNYC: The Plan for a Strong and Just City , the expansion of the city’s transit through network expansion and the introduction of new modes helps build an equitable and sustainable city that ensures, “New York City will continue to be the world’s most dynamic urban economy, where families, businesses, and neighborhoods thrive.” 2
+[p003_c0005] From Greenpoint, Williamsburg, and Bushwick in Brooklyn to Long Island City, Ridgewood, and Jamaica in Queens, many neighborhoods adjacent to the Branch have seen tremendous growth in recent years. At the same time, most of the areas along this former rail passenger line have yet to see significant new development and remains at a low-to-moderate density. Overall, it is important to consider infrastructure changes that would be needed to support growth if and when that time comes.
+[p003_c0006] It is also important to recognize that the Branch carries an active rail freight line that serves Long Island and provides support to many Queens-based industries along the line. These businesses are located in some of the few remaining industrial areas left in the city, and are a critical component to the city and region’s growth. As such, the Branch has been identified as an important component of the Cross Harbor Freight Program. 3
+[p003_c0007] This report has been developed with these competing interests for the Branch in mind. AECOM and NYC DOT have developed a passenger service concept that would maintain freight access while also developing a new, modern passenger rail service along the Branch. The ridership and other development findings, as well as capital costs to upgrade the Branch’s infrastructure, mostly reflect this shared corridor approach. This report adds substance to the vision of returning passenger service to the Branch. It is ultimately the job of policy makers, the MTA Long Island Rail Road (LIRR – which owns the Branch), neighborhood residents, business owners and other stakeholders to collectively determine how the Branch may be best utilized in the future. As it was not part of this study’s scope, any effort to reintroduce passenger service and eliminate freight from the Branch would require additional refinement and analysis beyond what is presented in this study.
+[p003_c0008] _1 http://www1.nyc.gov/site/planning/data-maps/nyc-population/current-future-populations.page_
+[p003_c0009] _2 https://onenyc.cityofnewyork.us/visions/growth/goal-6-growth/_
+[p003_c0010] _3 https://www.panynj.gov/port/cross-harbor.html_
+
+## Page 4
+
+### [p004_c0001] Lower Montauk Branch Rail Study
+### [p004_c0002] History
+[p004_c0003] The Branch is a two-track, nine-mile, non-electrified rail line running through the borough of Queens from Jamaica to the east, terminating in Long Island City in the west. Opened in the mid-19 th century, the Branch once served as one of the main rail line through Queens from Long Island City to Jamaica , providing passenger service to the neighborhoods of Maspeth, Ridgewood, Middle Village, Glendale and Richmond Hill.
+[p004_c0004] The frequency of the passenger service on the Branch rapidly declined after World War II and as a result ridership plummeted. Service to stations between Jamaica and Long Island City ceased in 1998, passenger service was discontinued altogether in 2012, and the line has subsequently been leased out to the New York and Atlantic (NY&A) Railway, which provides rail freight service to Long Island and to industrial customers along the Branch in Queens.
+### [p004_c0005] Transit Service Concept
+[p004_c0006] While the existing subway network serves Long Island City, Jamaica and Richmond Hill, many of the residential, commercial, and industrial areas within the 9-square-mile study area along the Branch currently lack rail transit service. Connecting those areas to the rest of the transit network would improve accessibility, support economic development, and potentially reduce pressure on existing rail transit lines in Queens. This study explores the potential feasibility of rail transit operating on the Branch's existing right-of-way (ROW), with relatively frequent service similar to what is provided on subway lines within the City.
+[p004_c0007] Starting with the original locations of the Branch's former passenger stations, a screening process analyzed surrounding land use densities, potential connections to other rail and bus transit, and other factors, and recommended 10 station locations: the two termini stations at Long Island City and Jamaica and eight intermediate stations located an average of one mile apart, as shown below.
+### [p004_c0008] Proposed Lower Montauk Branch Stations
+> [p004_c0009] The map illustrates the Lower Montauk Branch rail line, which runs from Long Island City in the west to Jamaica in the east. The line is depicted as a dark blue line with yellow circular markers representing station sites. The map shows the line passing through the boroughs of Queens and Brooklyn. Key locations and streets labeled along the route include Greenpoint Ave, Haberman, Grand Ave/Flushing Ave, Fresh Pond, Metro Mall, 80th Street, Glendale, Woodhaven Blvd, and Richmond Hill. The Penny Bridge is also indicated. A legend in the bottom right corner provides the following information: Greenpoint Ave: Proposed Station Penny Bridge: Former Station not considered for reactivation Yellow circle: Station Site
+
+## Page 5
+
+### [p005_c0001] Lower Montauk Branch Rail Study
+[p005_c0002] Several service concepts were examined, from less frequent, commuter rail-like service to frequent, 24/7 service similar to most of the City's subway lines. Commuter rail-like frequency was too sparse to attract significant ridership, while 24/7 subway-like frequency would preempt freight operations without a highly disruptive and expensive expansion of rail infrastructure, while providing only marginal benefit in ridership demand.
+[p005_c0003] Providing passenger service during daytime/evening hours was considered the most feasible option. A passenger service plan from 5:00am to 10:00pm, providing 6-minute peak and 15-minute off-peak headways, would capture the bulk of potential ridership while leaving open the overnight hours. The overnight hours could allow: (1) the service operator to conduct maintenance on the fleet and/or ROW, while also limiting operational expenses when ridership demand is low; (2) a significant enough window to maintain freight operations at current levels. Additionally, the proposed hours offer some flexibility as either passenger or freight demand rise or fall.
+### [p005_c0004] Proposed Service Span
+[p005_c0005]
+
+```text
+Weekdays Saturday Sunday Early AM (5:00AM-6:00AM) AM Peak (6:00AM-10:00AM) Midday (10:00AM-4:00PM) PM Peak (4:00PM-8:00PM) Early Evening (8:00PM-9:00PM) Evening (9:00PM-10:00PM) Overnight (10:00PM-5:00AM) Passenger Service (Headway) 20 minute 6 minute 15 minute 6 minute 10 minute 15 minute NO PASSNGR SERVICE 15 minutes- 5:00AM-10:00PM NO SERVICE OTHER TIMES 15 minute - 5:00AM-10:00PM NO SERVICE OTHER TIMES Freight Partially restricted freight service [1] Restricted freight service[1] Partially restricted freight service [1] Restricted freight service[1] Partially restricted freight service [1] Partially restricted freight service [1] Unrestricted service - 10:00PM-5:00AM Partially restricted service at other times Unrestricted service - 10:00PM-5:00AM Partially restricted service at other times
+```
+### [p005_c0006] Choice of Rail Equipment
+[p005_c0007] Under Federal Railway Administration (FRA) regulations, any passenger rail service jointly running with freight rail operating on the same or adjacent tracks must use rail equipment that meets FRA's crashworthiness standards in order to protect riders in the event of a collision. Non-complying passenger equipment would have to be separated from freight traffic, either temporally (operating at different times than freight service) or physically (operate on its own tracks separated by space or barriers). Given the space constraints of the Branch, with tight clearances and many close-up adjacent land uses, it was concluded that only FRA-compliant rail cars should be considered. In addition, the Branch is presently non-electrified, and use of electric transit vehicles would require new third-rail and other transmission-related equipment at considerable additional costs. After reviewing presently available rail equipment, this study recommended FRA-compliant, diesel-powered Diesel Multiple Unit (DMU) equipment, which is currently in use in numerous cities around the world.
+
+## Page 6
+
+### [p006_c0001] Lower Montauk Branch Rail Study
+### [p006_c0002] Projected Ridership and Revenue
+[p006_c0003] Estimated ridership for the Branch is 21,000 weekday and 13,000 weekend daily riders, based on a modeled build year of 2025 under current area growth. Per-station ridership is mixed, with some higher but most lower than the average City subway station.
+> [p006_c0004] Projected Daily Ridership (2025) Station Projected Daily Ridership (2025) Jamaica 2,100 Richmond Hill 5,200 Woodhaven Blvd 800 80 St 3,400 Metro Mall 3,700 Fresh Pond 1,800 Grand Av/Flushing Av 900 Haberman 200 Greenpoint Av 700 Long Island City 2,000
+[p006_c0005]
+
+```text
+Weekday 21,000 Weekend 13,000 Annual 5,820,000
+```
+[p006_c0006] Annual fare revenues are estimated at approximately $15 million (in 2017 dollars). This is an initial high-end estimate that assumes a subway-level fare ($2.75). The free transfer for Branch riders to or from MTA Subway or Bus, ridership shifts to the Branch from other transit lines and various fare discounts would result in a decline in the net increase in overall transit ridership and revenue, and would need to be addressed further in future feasibility studies.
+### [p006_c0007] Capital and Operating and Maintenance (O&M) Costs
+[p006_c0008] Passenger rail service would require substantial investments to bring existing rail infrastructure, signals and communication, and other systems to current design and safety standards, along with 10 new stations, a storage and maintenance facility, grade crossing elimination at three intersections, and a 15-car fleet. In total, the capital costs for these upgrades would total $1.1B (2017 dollars).
+### [p006_c0009] Projected Capital Costs for Transit Infrastructure (Millions 2017$)
+[p006_c0010]
+
+```text
+Transit Infrastructure $914 Fleet Costs $150 Maintenance Equipment $15 Yard/Maintenance Facility $32 Total Capital Costs $1,111
+```
+### [p006_c0011] Freight Considerations:
+[p006_c0012] Should freight service be maintained along the Branch for operation outside of passenger service hours, additional substantial investments would be necessary. This scenario would require additional running track in some areas and new freight rail yards, and would require an additional $1.0B in upgrades.
+[p006_c0013] These costs are further outlined in section 3.3.
+
+## Page 7
+
+### [p007_c0001] Lower Montauk Branch Rail Study
+### [p007_c0002] Recommended Rolling Stock: Diesel Multiple Unit (DMU)
+> [p007_c0003] A photograph of a Union Pearson Express (UP) Diesel Multiple Unit (DMU) train at a station platform. The train is silver with a yellow and orange stripe along the side. The number '1002' is visible on the front. The train is stopped at a platform with a glass-enclosed shelter. The background shows a clear sky and some greenery.
+[p007_c0004] _(Image: Union Pearson Express, Ontario, Canada; source: Nippon Sharyo USA)_
+[p007_c0005] Operations & Maintenance (O&M) costs are based on costs for similar transit operations across the country. Cost drivers include the number of rail cars needed to handle passenger loads, length of route, and total hours of service provided. As shown below, the projected annual O&M costs are approximately $55 million:
+[p007_c0006] _Projected Annual O&M Costs: 1- and 2-Car Trains: Lower Montauk Branch Stations (Millions 2017$)_
+[p007_c0007]
+
+```text
+Cost Driver Annual Operating Cost Average of Peers Highest of Peers ONE-CAR TRAINS Vehicle Hours $ 33.9 $ 37.4 Car Miles $ 12.6 $ 19.5 Directional Route Miles $ 1.5 $ 0.6 Total $ 48.0 $ 57.5 VARIABLE-CONSIST TRAINS Vehicle Hours $ 33.9 $ 37.4 Car Miles $ 19.1 $ 29.6 Directional Route Miles $ 1.5 $ 0.6 Total $ 54.6 $ 67.5
+```
+### [p007_c0008] Potential of Value Capture Financing to Support Required Capital Costs
+[p007_c0009] Value Capture financing directs a portion of the increase in property values attributable to a proposed transit service to fund a portion of the initial capital costs. This commonly involves the sale of bonds, which support project construction and are repaid with future revenues that would not have accrued had transit not been built. Some recent North American streetcar and light rail projects have used value capture to fund 10-50% of their capital costs.
+
+## Page 8
+
+### [p008_c0001] Lower Montauk Branch Rail Study
+[p008_c0002] An initial analysis of total assessed real estate value surrounding five key stations with strong development potential indicated that this mechanism could potentially support approximately $309 million in bonds, or about 14% of total projected capital costs required to maintain shared transit and freight rail service on the Branch:
+[p008_c0003] _Preliminary Estimate: Projected Bond Support from 5 Key Station Areas ($2017)_
+[p008_c0004]
+
+```text
+Station Area Projected Bond Support Grand Ave./Flushing Ave. $50,000,000 Fresh Pond/Metro Ave. $39,000,000 Metro Mall $59,000,000 80th Street $61,000,000 Woodhaven Blvd. $100,000,000 $309,000,000
+```
+[p008_c0005] This level of value capture would require changes in overall property values and higher development densities in certain areas, especially close to stations. Zoning changes and other potential incentives would generally be required to support such economic growth.
+[p008_c0006] Another option is the transfer of development rights 4 (often referred to as “air rights”), where unused buildable floor area from one zoning lot can be sold off and added to the development potential of an adjacent lot. This approach to development has previously been used to raise revenue for the MTA. In 2015, the MTA sold several small parcels and air rights to the developer of an adjacent property 5 . The sale allowed an additional 39 stories to the high rise building, while also generating an additional $56M for the Transit Authority.
+[p008_c0007] Such changes and land use controls and development densities were met with skepticism in public meetings about this study, and should be more fully studied and publicly vetted as part of any future studies of passenger service reactivation that would be financed through value capture means.
+### [p008_c0008] Summary of Findings:
+- [p008_c0009] • Initial analysis shows that it would be feasible to develop joint passenger-freight operations on the Branch, allowing for robust transit service while maintaining and upgrading freight operations if desired. • Approximately 21,000 riders per weekday and 5.8 million riders annually would use the service, assuming a $2.75 fare, a free transfer to MTA Bus or Subway, and relatively frequent service throughout the day. Fare revenues are estimated at $15 million annually, while annual operations and maintenance costs are estimated at $55 million. • Capital costs while maintaining freight service on the Branch are estimated at $2.2 billion, including substantial upgrades to rail infrastructure (track, signals, communications), new running track in key areas, new freight yard space to clear track for transit operations, transit vehicles, a storage and
+[p008_c0010] _4 http://www1.nyc.gov/site/planning/zoning/glossary.page#development_rights_
+[p008_c0011] _5 http://www.nydailynews.com/new-york/queens/mta-sells-56m-lot-developer-eyeing-queens-highrise-article-1.2162400_
+
+## Page 9
+
+### [p009_c0001] Lower Montauk Branch Rail Study
+[p009_c0002] maintenance yard for transit vehicles, and property acquisition. Eliminating freight service altogether on the Branch – an option not analyzed in this study – would reduce total capital costs to about $1.1 billion. Value Capture financing, using a portion of the increase in property values induced by this new transit service, could potentially fund $300 million in bonds, or roughly 27% of total projected capital costs for passenger-only rail operations on the Branch and 14% of such costs under the analyzed option of both passenger and freight rail operations.
+
+## Page 10
+
+### [p010_c0001] Lower Montauk Branch Rail Study
+### [p010_c0002] Corridor Background: Contents
+[p010_c0003] 1.1 Introduction ..... 1-6 1.1.1 Study Goals ..... 1-6 1.1.2 Study Objectives..... 1-7 1.2 Corridor Background ..... 1-9 1.2.1 Existing Land Use and Zoning..... 1-10 1.2.2 Population and Demographic Characteristics..... 1-13 1.2.3 Transit Access and Commuting Patterns ..... 1-14 1.2.4 Walk Score Analysis ..... 1-21 1.2.5 Job Location Analysis ..... 1-22 1.2.6 Ongoing and Planned Development Projects..... 1-25 1.3 Corridor Analysis Divided by Section ..... 1-32 1.3.1 Section 1: Long Island City Terminus to Penny Bridge Station ..... 1-36 1.3.1.1 Zoning and Land Use..... 1-36 1.3.1.2 Population and Jobs ..... 1-38 1.3.2 Section 2: Penny Bridge Station to Fresh Pond Junction ..... 1-40 1.3.2.1 Zoning and Land Use..... 1-40 1.3.2.2 Population and Jobs ..... 1-42 1.3.3 Section 3: Fresh Pond Junction to Atlas Park Mall..... 1-44 1.3.3.1 Zoning and Land Use..... 1-44 1.3.3.2 Population and Jobs ..... 1-46 1.3.4 Section 4: Atlas Park Mall to Park Lane S (eastern border of Forest Park) ..... 1-48 1.3.4.1 Zoning and Land Use..... 1-48 1.3.4.2 Population and Jobs ..... 1-50 1.3.5 Section 5: Park Lane S (eastern border of Forest Park) to Jamaica Terminus ..... 1-52 1.3.5.1 Zoning and Land Use..... 1-52 1.3.5.2 Population and Jobs ..... 1-54 1.4 Technical Characteristics of the Lower Montauk Branch ..... 1-58 1.4.1 Right-of-Way (ROW) Overview ..... 1-59 1.4.1.1 Right-of-Way Limitations ..... 1-60
+
+## Page 11
+
+### [p011_c0001] Lower Montauk Branch Rail Study
+[p011_c0002] 1.4.1.2 Restricted ROW – Adjacent Arterial Roadways ..... 1-60 1.4.1.3 Restricted ROW – Tracks on Retained Fill..... 1-61 1.4.1.4 Restricted ROW – Adjacent Buildings ..... 1-62 1.4.1.5 Restricted ROW – Adjacent Retaining Walls..... 1-63 1.4.1.6 Restricted ROW – Overgrade Bridges ..... 1-64 1.4.1.7 Restricted ROW – Tracks Adjacent to Yard Tracks..... 1-65 1.4.1.8 Restricted ROW – Tracks on a Bridge or Elevated Structure ..... 1-67 1.4.2 Rail Yards..... 1-68 1.4.3 Rail Spurs and Sidings..... 1-69 1.5 Regulation of Passenger Service on or Adjacent to Freight Tracks ..... 1-71 1.6 Existing Track & Switch Infrastructure and Suitability for Passenger Rail Service..... 1-72 1.6.1 Grade Crossing and Signal Infrastructure ..... 1-72 1.7 Operations ..... 1-74 1.7.1 Power ..... 1-74 1.7.2 Current Rail Freight Operations ..... 1-74 1.7.3 Level of Activity by Milepost ..... 1-75 1.7.4 Past LIRR Operations..... 1-76 1.7.5 Connections to Other Rights-of-Way ..... 1-77 1.7.6 Connections to Other Freight Services ..... 1-77 1.8 Rail Capital Projects and Grants..... 1-78 1.8.1 Weight Carrying Capacity Projects..... 1-78 1.8.1.1 Rehabilitation of Freight Track #5 on Hell Gate Bridge ..... 1-78 1.8.1.2 Upgrade Fresh Pond Yard and Bay Ridge Branch Interchange Track ..... 1-78 1.8.1.3 Rehabilitation of Railcar Float Bridge..... 1-78 1.8.2 Rehabilitation of Bushwick Branch in Queens and Brooklyn..... 1-78 1.8.3 Long Island Rail Road Upgrades to Selected Undergrade Railroad Bridges in Queens ... 1-78 1.8.4 Intermodal Improvements on Brooklyn Waterfront ..... 1-79 1.8.5 Bush Terminal Rehabilitation..... 1-79 1.8.6 Install Welded Rail - Lower Montauk Branch..... 1-79 1.8.7 Network Capacity Projects..... 1-79 1.8.7.1 Purchase 30 Railcar Capacity Barge ..... 1-79
+
+## Page 12
+
+### [p012_c0001] Lower Montauk Branch Rail Study
+[p012_c0002] 1.8.8 Purchase Low Emission Locomotives..... 1-79 1.8.9 Vertical Clearance Projects ..... 1-79 1.8.9.1 Yard Upgrades..... 1-79 1.8.10 Green Locomotive Fleet Replacement..... 1-79 1.9 Existing and Projected Rail Freight Operations on the Lower Montauk Branch ..... 1-80 1.9.1 Proposed Cross Harbor Rail Freight Tunnel ..... 1-80 1.9.2 Regional Projections of Rail Freight Operations ..... 1-81 1.9.3 Projected New York & Atlantic Railway Operations ..... 1-81 1.9.3.1 Major Rail Freight Customers and Freight-Oriented Sites..... 1-81 1.9.3.2 Projected Growth..... 1-83 1.10 Peer Cities Comparison of Joint Freight and Passenger Rail Services..... 1-84 1.10.1 Identification of Peer Cities..... 1-84 1.10.2 Peer City Selections..... 1-85 1.10.2.1 New Jersey Transit River LINE- Trenton and Camden, NJ..... 1-85 1.10.2.2 San Diego Trolley Blue Line- San Diego, CA ..... 1-87 1.10.3 Applicability of Peer Cities ..... 1-88
+
+## Page 13
+
+### [p013_c0001] Lower Montauk Branch Rail Study
+### [p013_c0002] Corridor Background: List of Figures
+[p013_c0003] Figure 1-1 Lower Montauk Branch and Adjacent Neighborhoods ..... 1-10 Figure 1-2 Non-Residential Land Use..... 1-11 Figure 1- 3 Industrial Business Zones in Project Area ..... 1-12 Figure 1-4 2015 Population Density (People per Square Mile)..... 1-13 Figure 1-5 Employment Density (Jobs per Square Mile)..... 1-14 Figure 1-6 Commutes from the Lower Montauk Branch Corridor by Percentage ..... 1-16 Figure 1-7 Rail Connections ..... 1-17 Figure 1-8 Local Bus Network ..... 1-18 Figure 1-9 Areas Beyond a Half-mile Walk to Subway..... 1-19 Figure 1-10 Areas Beyond a Half-mile Walk to Long Island Rail Road ..... 1-20 Figure 1-11 Home Location of LMB Workers..... 1-23 Figure 1-12 Maspeth Development Site at 57th Avenue ..... 1-26 Figure 1-13 Proposed Development Site at 57-46 56th Street..... 1-27 Figure 1-14 Samples of Richmond Hill Residential Development Sites ..... 1-28 Figure 1-15 Residential Units in New Residential Building Applications ..... 1-29 Figure 1-16 Location of New Building Permits in LM Branch Study Area (Jan. 2014 - April 2017)..... 1-30 Figure 1-17 Lower Montauk Branch Corridor Sections..... 1-33 Figure 1-18 Total Jobs per Tract..... 1-34 Figure 1-19 Total Population per Tract ..... 1-35 Figure 1-20 Section 1 Zoning..... 1-37 Figure 1-21 Section 1 Tracts..... 1-39 Figure 1-22 Section 2 Zoning..... 1-41 Figure 1-23 Section 2 Tracts..... 1-43 Figure 1-24 Section 3 Zoning..... 1-45 Figure 1-25 Section 3 Tracts..... 1-47 Figure 1-26 Section 4 Zoning..... 1-49 Figure 1-27 Section 4 Tracts..... 1-51 Figure 1-28 Section 5 Zoning..... 1-53 Figure 1-29 Section 5 Tracts..... 1-55 Figure 1-30 Population and Jobs Per Sq. Mile by Corridor Segment ..... 1-57 Figure 1-31 Physical Restrictions along the Lower Montauk Branch- western section..... 1-58 Figure 1-32 Physical Restrictions along the Lower Montauk Branch- eastern section..... 1-59 Figure 1-33 56th Road Adjacent to Railroad Tracks..... 1-61 Figure 1-34 the Lower Montauk Branch Elevated on Retained Fill ..... 1-62 Figure 1-35 Industrial Buildings Adjacent to Railroad Tracks ..... 1-63 Figure 1-36 Lower Montauk Tracks and ROW in a Trench ..... 1-64 Figure 1-37 Constrained ROW beneath the Metropolitan Avenue Overgrade Bridge..... 1-65 Figure 1-38 Oblique Aerial of Occupied Eastern Section of Fresh Pond Yard ..... 1-66 Figure 1-39 Field Photo of Occupied Western Section of Fresh Pond Yard..... 1-66 Figure 1-40 Through-Plate Girder Span over the Jackie Robinson Parkway..... 1-67
+
+## Page 14
+
+### [p014_c0001] Lower Montauk Branch Rail Study
+[p014_c0002] Figure 1-41 Elevated Viaduct Paralleling Babbage Street..... 1-68 Figure 1-42 Fresh Pond Yard ..... 1-69 Figure 1-43 Grade Crossing at 73 rd Street near 70 th Avenue ..... 1-73 Figure 1-44 Commuter and Freight Rail Network..... 1-75 Figure 1-45 Daily Ridership at Closure of the Branch ..... 1-76 Figure 1-46 NY&A Customers along the Lower Montauk Branch..... 1-83 Figure 1-47 NJ Transit River LINE ..... 1-85 Figure 1-48 San Diego Trolley Blue Line..... 1-87
+### [p014_c0003] Corridor Background: List of Tables
+[p014_c0004] Table 1-1 Summary Table: Commute Destinations of Corridor Residents ..... 1-15 Table 1-2 Walk Scores and Transit Scores from Walkscore.com..... 1-21 Table 1-3 Neighborhood Rankings by Number of Jobs Accessible within One Hour ..... 1-22 Table 1-4 Job Access ..... 1-24 Table 1-5 Comparison of Population and Jobs by Corridor Segment..... 1-56 Table 1-6 NY&A Customers on the Lower Montauk Branch..... 1-82 Table 1-7 Identification of Peer Cities..... 1-85
+
+## Page 15
+
+### [p015_c0001] Lower Montauk Branch Rail Study
+### [p015_c0002] Rail Transit Concept Development: Contents
+[p015_c0003] 2.1 Introduction ..... 2-1 2.2 Rail Transit Concept Development Assumptions..... 2-2 2.3 Mode Screening ..... 2-2 2.3.1 Electric Multiple Unit (EMU) Regional Rail Service ..... 2-3 2.3.2 Diesel Locomotive Service ..... 2-4 2.3.3 Electric Locomotive Service ..... 2-5 2.3.4 Dual Mode Locomotive Service ..... 2-6 2.3.5 Diesel Multiple Unit (DMU) Service ..... 2-7 2.3.6 Electric Light Rail/Modern Streetcar Service ..... 2-9 2.4 FRA Compliance Issues..... 2-11 2.5 Mode Selection Criteria ..... 2-12 2.6 Mode Selection Evaluation Results..... 2-14 2.6.1 Recommended Fleet Vehicles..... 2-15 2.6.2 Traction Power Technology ..... 2-15 2.7 Potential Station Location and Spacing ..... 2-16 2.7.1 Station Siting Methodology and Criteria..... 2-17 2.7.2 Analyses of Potential Station Locations ..... 2-19 2.7.2.1 Long Island City Station ..... 2-19 2.7.2.2 Greenpoint Avenue Station ..... 2-20 2.7.2.3 Penny Bridge Station..... 2-21 2.7.2.4 Haberman Station ..... 2-22 2.7.2.5 Grand Avenue/Flushing Avenue Station ..... 2-23 2.7.2.6 Fresh Pond/Metropolitan Avenue Station..... 2-24 2.7.2.7 Metro Mall Station..... 2-25 2.7.2.8 Glendale Station..... 2-26 2.7.2.9 80 th Street Station ..... 2-27 2.7.2.10 Woodhaven Boulevard Station ..... 2-28 2.7.2.11 Richmond Hill Station..... 2-29 2.7.2.12 Jamaica Station ..... 2-30 2.7.3 Recommended Station Locations ..... 2-31 2.7.4 Modifications to Existing Stations: Jamaica and Long Island City Stations ..... 2-32
+
+## Page 16
+
+### [p016_c0001] Lower Montauk Branch Rail Study
+[p016_c0002] 2.8 Station Design Requirements..... 2-34 2.8.1 Physical Characteristics of Existing and Former Stations..... 2-34 2.8.2 Concept Design of Potential Lower Montauk Stations ..... 2-35 2.8.3 Passenger Facilities ..... 2-35 2.8.4 Passenger Information Displays..... 2-35 2.8.5 Fare Collection Infrastructure ..... 2-36 2.8.6 ADA Compliance..... 2-36 2.8.7 Station Access ..... 2-36 2.8.8 Platforms ..... 2-37 2.8.9 Ticket Vending Machines (TVMs)..... 2-37 2.8.10 Features for the Visually/Hearing Impaired..... 2-37 2.8.11 National Fire Protection Agency (NFPA) Requirements ..... 2-37 2.8.12 Direct Intermodal Access ..... 2-38 2.9 Conceptual Station Design ..... 2-39 2.9.1 Facilities Design..... 2-39 2.9.2 Rail Operations Design ..... 2-40 2.9.3 Examples of Concept Stations..... 2-41 2.9.3.1 Haberman Station ..... 2-41 2.9.3.2 Woodhaven Boulevard Station ..... 2-42 2.9.3.3 Typical Station Cross -Section ..... 2-42 2.10 Special Considerations for Service Type and Operations ..... 2-44 2.10.1 Waste Management Facility Access Requirements ..... 2-44 2.10.2 Accommodation of Freight Service and Limited Service Windows ..... 2-44 2.10.3 Residences along the Right-of-Way ..... 2-45 2.10.4 Additional Infrastructure within Constrained ROW..... 2-45 2.10.4.1 Lack of Electric Infrastructure ..... 2-45 2.10.4.2 Lack of Signalization/Train Control Infrastructure ..... 2-45 2.10.4.3 Additional or Relocated Tracks ..... 2-46 2.10.4.4 Platform Type..... 2-46 2.10.5 Speed Restrictions..... 2-46 2.11 Selection of Proposed Rail Passenger Service Concept ..... 2-47 2.11.1 Service Options Considered ..... 2-47
+
+## Page 17
+
+### [p017_c0001] Lower Montauk Branch Rail Study
+[p017_c0002] 2.11.1.1 24-Hour Subway-Type Transit Service ..... 2-47 2.11.1.2 Joint Passenger-Freight Operation..... 2-47 2.11.1.3 Commuter Rail-Type Operation ..... 2-48 2.11.2 Recommended Concept for Evaluation ..... 2-48 2.11.3 Transit Service Concept Details..... 2-48 2.11.3.1 Assumed Operating Periods and Stopping Pattern ..... 2-48 2.11.3.2 Frequency by Time of Day and Week ..... 2-48 2.11.3.3 Projected Service Cycle Times..... 2-49 2.11.4 Required Fleet Size based on Peak Operations ..... 2-50 2.12 Required Rail Infrastructure Investment for Passenger Operations ..... 2-51 2.12.1 Establishing Required Capital Investments..... 2-51 2.12.2 Projected Capital Investments ..... 2-51 2.12.2.1 Base Capital Investments: Passenger Service Infrastructure..... 2-51 2.12.2.2 Base Capital Investments: Freight-Related Infrastructure..... 2-53 2.13 Maintenance and Storage Facilities ..... 2-58 2.13.1 Facility Design Requirements..... 2-58 2.13.2 Maintenance and Storage Facility Site Selection Criteria ..... 2-59 2.13.3 Land Use Controls and Permitting for Maintenance Facility ..... 2-60 2.13.4 Proposed Sites..... 2-61 2.13.5 Site Evaluation Criteria and Scoring..... 2-62 2.24 Bridges and At-Grade Crossings..... 2-65 2.24.1 Overview ..... 2-65 2.24.2 Bridges..... 2-66 2.24.2.1 Existing Bridges along Lower Montauk Branch..... 2-66 2.24.2.2 Existing Conditions of Bridges over the Lower Montauk Branch..... 2-69 2.24.2.3 Summary of Findings..... 2-71 2.24.2.4 Permitting Processes..... 2-72 2.24.3 Grade Crossings..... 2-72 2.24.3.1 Grade Crossing Elimination Criteria ..... 2-72 2.24.3.2 Existing Crossings on Lower Montauk Branch ..... 2-75 2.24.3.3 Projected Changes to Support Rail Passenger Service..... 2-88 2.25 Resiliency ..... 2-89
+
+## Page 18
+
+### [p018_c0001] Lower Montauk Branch Rail Study
+[p018_c0002] 2.25.1 Introduction ..... 2-89 2.25.2 Lower Montauk Branch Existing Conditions ..... 2-90 2.25.3 Newtown Creek Storm Surge Barrier Study..... 2-92 2.25.3.1 Study Background and Proposals..... 2-92 2.25.3.2 Potential Impacts on the Lower Montauk Branch ..... 2-93 2.25.4 New York/New Jersey Harbor & Tributaries Focus Area Feasibility Study ..... 2-94 2.25.4.1 Study Background and Proposals..... 2-94 2.25.4.2 Potential Impacts on the Lower Montauk Branch ..... 2-94 2.25.5 North Atlantic Coast Comprehensive Study ..... 2-94 2.25.5.1 Study Background and Proposals..... 2-94 2.25.5.2 Potential Impacts on the Lower Montauk Branch ..... 2-95 2.25.6 Conclusions ..... 2-95
+
+## Page 19
+
+### [p019_c0001] Lower Montauk Branch Rail Study
+### [p019_c0002] Rail Transit Concept Development: List of Figures
+[p019_c0003] Figure 2-1 Potential Stations..... 2-32 Figure 2-2 Examples of Canopies, Shelter Sheds, and Ticket Vending Machines in use on the LIRR network..... 2-39 Figure 2-3 Haberman Station Concept ..... 2-41 Figure 2-4 Woodhaven Boulevard Station Concept ..... 2-42 Figure 2-5 Typical Station Cross-Section with Overpass..... 2-43 Figure 2-6 Staging of Waste Management Rail Cars..... 2-44 Figure 2-7 Homes Adjacent to Lower Montauk Branch..... 2-45 Figure 2-8 Overview of Freight Infrastructure ..... 2-56 Figure 2-9 Freight Infrastructure at Fresh Pond Yard ..... 2-57 Figure 2-10 Typical Double-Ended Yard Layout ..... 2-59 Figure 2-11 Typical Sub-End Yard Layout..... 2-59 Figure 2-12 Possible Locations for Passenger Rail Yard ..... 2-62 Figure 2-13 Location of Bridges along Lower Montauk Branch..... 2-66 Figure 2-14 Dutch Kills Rail Bridge ..... 2-67 Figure 2-15 Rail-Over Bridges: Grand and Flushing Avenues ..... 2-68 Figure 2-16 Additional Rail-Over Viaducts on Lower Montauk Branch ..... 2-69 Figure 2-17 Initial Volume Screening for Grade Separated Crossings ..... 2-74 Figure 2-18 Flood Risks around Newtown Creek..... 2-89 Figure 2-19 Lower Montauk Branch adjacent to Newtown Creek ..... 2-90 Figure 2-20 Special Flood Hazard Area around Newtown Creek..... 2-91 Figure 2-21 Hurricane Sandy Flood Inundation ..... 2-93
+### [p019_c0004] Rail Transit Concept Development: List of Tables
+[p019_c0005] Table 2-1 Mode Selection Criteria ..... 2-13 Table 2-2 Mode Selection Evaluation ..... 2-14 Table 2-3 Potential Stations ..... 2-16 Table 2-4 Station Summary Table ..... 2-31 Table 2-5 Existing/Former Station Physical Characteristics..... 2-34 Table 2-6 Potential Station Physical Surroundings ..... 2-35 Table 2-7 Projected Joint Passenger and Freight Operating Schedules ..... 2-49 Table 2-8 Estimated Running Times and Cycle Length ..... 2-50 Table 2-9 Criteria for Ranking of Potential Yard Sites..... 2-62 Table 2-10 Preliminary Screening Results of Potential Yard Sites ..... 2-64 Table 2-11 Bridges Located Along the Lower Montauk Branch..... 2-65 Table 2-12 Bridge Conditions Rating System ..... 2-70 Table 2-13 Bridge Ratings and Data for Selected Road-Over Bridges ..... 2-71 Table 2-14 Light Rail Transit (LRT) Grade Separation Criteria..... 2-74 Table 2-15 At-Grade Crossings on Lower Montauk Line ..... 2-75
+
+## Page 20
+
+### [p020_c0001] Lower Montauk Branch Rail Study
+### [p020_c0002] Analysis of Rail Concept: Contents
+[p020_c0003] 3.1 Projected Ridership and Passenger Revenue ..... 3-1 3.1.1 Overview ..... 3-1 3.1.2 Proposed Transit Service..... 3-1 3.1.3 Proposed Stations ..... 3-1 3.1.4 Proposed Service Levels..... 3-2 3.1.5 Projecting Future Ridership and Revenue ..... 3-4 3.1.5.1 The BPM and RTFM Models..... 3-4 3.1.5.2 Projected Future Ridership ..... 3-6 3.1.5.3 Projected Passenger Revenue..... 3-10 3.1.6 Impact of Ridership on Required Train Capacity ..... 3-10 3.2 Projected Operations and Maintenance Costs of Rail Passenger Operations..... 3-12 3.2.1 Operating Plan ..... 3-12 3.2.2 Calculating Estimated O&M Costs ..... 3-12 3.2.2.1 O&M Cost Drivers ..... 3-13 3.2.2.2 O&M Unit Costs ..... 3-17 3.2.2.3 Cost per Train Hour ..... 3-18 3.2.2.4 Cost per Car Mile..... 3-18 3.2.2.5 Cost per Directional Route Mile..... 3-19 3.2.2.6 Total Projected O&M Costs of Lower Montauk Branch Service ..... 3-19 3.3 Projected Capital Costs of Joint Passenger-Freight Operations..... 3-21 3.3.1 Introduction ..... 3-21 3.3.2 Capital Plan ..... 3-21 3.3.3 Calculating the Capital Costs..... 3-21 3.3.4 Capital Cost Model ..... 3-21 3.3.5 Unit Cost Library..... 3-22 3.3.6 Contingency Costs..... 3-22 3.3.7 Non-Construction Costs ..... 3-23 3.3.8 Proposed Capital Elements ..... 3-23 3.3.8.1 Yard/Maintenance Facilities ..... 3-23 3.3.8.2 Rolling stock ..... 3-23 3.3.8.3 Maintenance Equipment ..... 3-24
+
+## Page 21
+
+### [p021_c0001] Lower Montauk Branch Rail Study
+[p021_c0002] 3.3.8.4 Property Acquisition ..... 3-24 3.3.8.5 Electrification ..... 3-24 3.3.8.6 Signaling System..... 3-25 3.3.8.7 Terminal Access Upgrades ..... 3-25 3.3.8.8 Professional Services..... 3-25 3.3.9 Elements Not Included in the Cost Estimate ..... 3-26 3.3.10 Estimated Capital Costs..... 3-26 3.4 Land Use, Zoning, and Development Potential..... 3-29 3.4.1 Introduction ..... 3-29 3.4.2 Development Conditions at Selected Station Areas ..... 3-30 3.4.2.1 Grand Avenue/Flushing Avenue Station ..... 3-30 3.4.2.2 Fresh Pond/Metropolitan Avenue Station..... 3-32 3.4.2.3 Metro Mall Station ..... 3-34 3.4.2.4 80th Street Station ..... 3-36 3.4.2.5 Woodhaven Boulevard Station ..... 3-38 3.4.3 Uniform Land Use Review Procedure (ULURP)..... 3-40 3.4.4 Conclusions ..... 3-40 3.5 Value Capture Financing: Description, Criteria, and Yield ..... 3-41 3.5.1 Study Overview and Approach..... 3-41 3.5.2 Description of Value Capture ..... 3-43 3.5.2.1 Overview ..... 3-43 3.5.2.2 Description of Value Capture Approaches ..... 3-45 3.5.2.3 Value Capture Criteria..... 3-47 3.5.3 Safeguarding Value Capture Funding Initiatives ..... 3-48 3.5.4 Hudson Yards Value Capture Approach ..... 3-49 3.5.5 Lessons Learned: Case Studies..... 3-49 3.5.6 Value Capture Conditions in the Lower Montauk Corridor ..... 3-57 3.5.7 Cross Harbor Freight Tunnel Implications for Development in Corridor ..... 3-60 3.5.8 Rail Transit Investment: Property Value Effect, TIF Examples, and a Preliminary Analysis of Revenue Yield..... 3-60 3.5.8.1 Economics of Value Generation: Transit and the Property Tax Base ..... 3-60 3.5.8.2 Examples of Tax Increment Financing (TIF) to Fund Transit Projects ..... 3-63
+
+## Page 22
+
+### [p022_c0001] Lower Montauk Branch Rail Study
+[p022_c0002] 3.5.8.3 Preliminary Estimate of Revenue Yield ..... 3-65 3.5.8.4 Available Debt Financing Capacity ..... 3-70 3.5.9 Conclusions ..... 3-72 3.6 Economic Development Potential ..... 3-74 3.6.1 Land Use Growth..... 3-74 3.6.1.1 Increased Property Value and Tax Revenues..... 3-74 3.6.2 Potential Job Growth ..... 3-75 3.6.2.1 Supporting Employment Areas in the Corridor ..... 3-75 3.6.2.2 Growth of Freight-Dependent Uses..... 3-75 3.6.3 Summary ..... 3-76 3.7 Potential Permitting and Coordinating Processes ..... 3-78
+### [p022_c0003] Analysis of Rail Concept: List of Figures
+[p022_c0004] Figure 3-1 Lower Montauk Branch Proposed Stations ..... 3-2 Figure 3-2 Comparison of Proposed LMB Service Headways vs. Selected Subway Lines (6:00 AM-10:00 PM)..... 3-3 Figure 3-3 The BPM, RTFM Study Area ..... 3-5 Figure 3-4 Structure of Travel Analysis Zones near Proposed Lower Montauk Alignment ..... 3-6 Figure 3-5 Projected Weekday Ridership on Lower Montauk Branch by Station (2025) ..... 3-7 Figure 3-6 Existing Subway Stations near Proposed Lower Montauk Metro Mall Station ..... 3-9 Figure 3-7 Average Passenger Load by Station: AM Peak Period ..... 3-11 Figure 3-8 Typical Development in an R6A Contextual District ..... 3-30 Figure 3-9 Grand Avenue/Flushing Avenue Station Aerial View ..... 3-31 Figure 3-10 Grand Avenue/Flushing Avenue Station and Adjacent Zoning Regulations..... 3-31 Figure 3-11 Commercial Overlay in a Residential Neighborhood ..... 3-32 Figure 3-12 Fresh Pond/Metropolitan Avenue Station Aerial View ..... 3-33 Figure 3-13 Fresh Pond/Metropolitan Avenue Station and Adjacent Zoning Regulations..... 3-33 Figure 3-14 M1-1 Manufacturing Zone Typical Building..... 3-34 Figure 3-15 Metro Mall Station Aerial View ..... 3-35 Figure 3-16 Metro Mall Station and Adjacent Zoning Regulations..... 3-35 Figure 3-17 Commercial Overlay Strip of Shops, Residential Above ..... 3-36 Figure 3-18 80th Street Station Aerial View ..... 3-37 Figure 3-19 80th Street Station and Adjacent Zoning Regulations..... 3-37 Figure 3-20 Semi-detached Residences ..... 3-38 Figure 3-21 Woodhaven Boulevard Station Aerial View..... 3-39 Figure 3-22 Woodhaven Boulevard Station and Adjacent Zoning Regulations..... 3-39
+
+## Page 23
+
+### [p023_c0001] Lower Montauk Branch Rail Study
+[p023_c0002] Figure 3-23 Funding & Financing Planning: Putting the Pieces Together..... 3-42 Figure 3-24 Illustrative Land/Property Value Capture Concept..... 3-45 Figure 3-25 Silver Line Ext. Funding and Financing Stack ..... 3-55 Figure 3-26 Transit Creates Value Concept..... 3-61 Figure 3-27: Industrial Areas in LIC and Greenpoint near Lower Montauk Branch ..... 3-75
+### [p023_c0003] Analysis of Rail Concept: List of Tables
+[p023_c0004] Table 3-1 AM Peak, Daily, Weekend, and Annual Ridership: Lower Montauk Branch (2025) ..... 3-7 Table 3-2 AM Peak-Period Difference in Ridership – Build vs. No Build ..... 3-8 Table 3-3 Annual Ridership at Subway Stations near Proposed Montauk Branch Stations ..... 3-9 Table 3-4 Proposed Concept for Rail Passenger Service under Joint Freight /Passenger Operation ..... 3-12 Table 3-5 Distance and Travel Time Between Proposed Stations ..... 3-13 Table 3-6 One-Car Train Weekday, Saturday, Sunday Cost Drivers..... 3-15 Table 3-7 Variable Length Train Weekday, Saturday, Sunday Cost Drivers..... 3-16 Table 3-8 Wage Adjustment Factors..... 3-18 Table 3-9 Operating Costs Per Train Hour (with New York City Area Wage Adjustment) ..... 3-18 Table 3-10 Cost Per Car Mile (with New York City Area Wage Adjustment) ..... 3-19 Table 3-11 Costs Per Directional Route Mile (with New York City Area Wage Adjustment)..... 3-19 Table 3-12 Summary of Projected O&M Costs for Average of Peers and Highest of Peers (Millions of 2016$) ..... 3-20 Table 3-13 Base Capital Costs – Transit Infrastructure ..... 3-27 Table 3-14 Base Capital Costs – Freight Infrastructure..... 3-27 Table 3-15 Total Capital Costs..... 3-28 Table 3-16 Seattle Streetcar Funding Sources ..... 3-56 Table 3-17 Station Profile Summary, Value Capture, and Growth Potential..... 3-57 Table 3-18 Property Effects from Legacy and New Rail Transit Systems in North America ..... 3-63 Table 3-19 Examples of Local Jurisdictions that have used TIF to Fund Transit Projects ..... 3-64 Table 3-20 Description of Data Categories and Assumptions..... 3-66 Table 3-21 Value Capture Rate and Growth Scenarios: Corridor and Stations ..... 3-67 Table 3-22 Value Capture Financing: Estimate of Incremental Revenues by Baseline, Modest and Five-Station TOD Growth Scenario ..... 3-69 Table 3-23 Five-year Property Tax Revenue Growth Rates ..... 3-70
+
+## Page 24
+
+### [p024_c0001] Lower Montauk Branch Rail Study
+### [p024_c0002] Conclusions: Contents
+[p024_c0003] 4.1 Feasibility of Re-Introducing Rail Passenger Service on Lower Montauk Branch..... 4-1 4.2 Next Steps ..... 4-1 4.3 Conclusions ..... 4-2
+
+## Page 25
+
+### [p025_c0001] Corridor Background
+> [p025_c0002] A photograph of a New York City MTA train, model 1005, on tracks. The train is silver and gold with a black top. It has 'UP' on the front and '1005' on the side. The train is on tracks with a yellow line on the ground. There is a fence and some buildings in the background.
+> [p025_c0003] The logo for the New York City Department of Transportation (NYC DOT). It features the text 'NEW YORK CITY' above a green graphic that looks like a stylized 'DOT' with horizontal lines.
+
+## Page 26
+
+### [p026_c0001] Lower Montauk Branch Rail Study
+### [p026_c0002] 1.1 Introduction
+[p026_c0003] The New York City Department of Transportation (NYCDOT) has conducted a study to determine the feasibility, create a conceptual plan, and identify a preferred option for possible reactivation of the Long Island Rail Road (LIRR) Lower Montauk Branch for passenger service. The Lower Montauk Branch (“the Branch”) runs 8.5 miles from Long Island City to Jamaica in Queens, New York. Previous passenger service on the Branch consisted of infrequent Long Island Rail Road service at 5 stations; it was discontinued in 1998 due to low ridership. The Branch currently only serves freight trains operated by the New York and Atlantic Railway. The Branch is a critical connection for freight movement between Queens, Brooklyn, Long Island, and the Northeast Corridor.
+[p026_c0004] A major consideration in this study is the movement of freight. The Lower Montauk Branch currently serves as part of the freight network and Long Island’s rail freight connection to points west. The Lower Montauk Branch Corridor (“the Corridor”) comprises a number of concentrated industrial areas, especially in the Corridor’s western half, some of which utilize this direct rail freight connection. While through-train volume on the Branch is low, there is near-continuous activity due to train movements and storage in the five rail yards serving the Branch and on the main line tracks as well. Rail freight has been given a renewed emphasis with the recent awards of federal grants for rail and freight upgrades, and in the continued Cross Harbor Freight Program studies that are discussed later in this chapter. The study of possible passenger service will incorporate the constraints of freight service on renewed passenger service on the Branch in its findings and preferred option.
+[p026_c0005] The Corridor background will help inform the final decision on passenger service reactivation. Between its termini, the Branch traverses the neighborhoods of Maspeth, Glendale, Ridgewood, Middle Village, and Richmond Hill. Many of these areas of Queens lack direct access to existing Long Island Rail Road and New York City Transit subway service. Some of the neighborhoods traversed by the Branch are sparsely populated, with low job densities that may not support additional rail service. Other areas have much higher densities, including both areas that already have some passenger rail service (e.g., Long Island City, Jamaica) and other that do not (e.g., Maspeth, Greenpoint). Therefore, any reactivation of passenger service will be responsive to the travel demands of these neighborhoods and determine an appropriate transit option.
+[p026_c0006] After reviewing the Corridor background, gathering technical information on the Branch’s physical characteristics and evaluating peer city case studies, the study will create a conceptual plan that includes operational plans, station siting, and ridership modeling, as well as initial capital and operating cost estimates. The final step is to recommend a preferred option that balances the Branch’s characteristics and limitations with the needs of the Corridor’s population.
+### [p026_c0007] 1.1.1 Study Goals
+[p026_c0008] The goal of the Lower Montauk Branch Rail Study is to determine the feasibility of passenger rail reactivation along the Lower Montauk Branch. These goals will be achieved through:
+[p026_c0009] _1-6_
+
+## Page 27
+
+### [p027_c0001] Lower Montauk Branch Rail Study
+- [p027_c0002] • Establishing the preferred passenger rail mode for the Corridor • Developing conceptual plans for the projected service, station locations and other facilities and rail infrastructure investments • Preparing preliminary projections of potential ridership and capital and operating costs, and • If deemed feasible, recommending options to move the concept forward
+### [p027_c0003] 1.1.2 Study Objectives
+[p027_c0004] The ability of a proposed rail service concept to meet study goals will be measured through the following study objectives:
+### [p027_c0005] Increase Transit Connectivity
+[p027_c0006] Assess the potential for new rail service in the Corridor to address the problem of transit deserts within the study area by improving connectivity for residents and working populations. This will be measured by whether the proposed transit service option will be:
+- [p027_c0007] • Increasing connections to existing rail, bus, and commuter rail services in the study area • Increasing transit accessibility and trips within the Lower Montauk study area • Increasing the number of jobs accessible to Corridor residents within a 45-minute transit trip • Connecting to established activity centers and areas targeted for growth • Complementing, rather than competing with, existing transit services
+### [p027_c0008] Increase Development Potential
+[p027_c0009] The potential to increase residential and commercial development opportunities along the Corridor would be identified through:
+- [p027_c0010] • Improving mobility and accessibility of areas presently not built to their full zoning potential • Providing support for zoning changes consistent with local development and community patterns that would allow higher density TOD-type growth adjacent to proposed station locations • Supporting existing or future commercial and/or industrial uses to generate increased economic activity by improving access for customers and/or employees
+### [p027_c0011] Maintain Existing and Future Rail Freight Service
+[p027_c0012] The ability to develop and operate rail passenger service in the Corridor while maintaining and growing rail freight operations in the Corridor is paramount. This can be measured through:
+- [p027_c0013] • Meeting or obtaining waivers from FRA safety requirements regarding lighter-weight passenger rail equipment operating on the same alignment as heavier rail freight equipment • Allowing for shared right-of-way maintenance and upgrade costs across all Corridor rail users • Including necessary Corridor infrastructure investments that would benefit both freight and passenger rail operations
+[p027_c0014] _1-7_
+
+## Page 28
+
+### [p028_c0001] Lower Montauk Branch Rail Study
+### [p028_c0002] Ensure Physical and Financial Feasibility
+[p028_c0003] These factors include the ability to overcome real-world constraints, from the physical limitations of the right-of-way to the ability to finance the construction and operation of this type of new; i.e.:
+- [p028_c0004] • Achieving sufficient Corridor ridership and revenues to partially offset operating expenses • Promoting development that increases economic and tax activity in the Corridor • Making possible potential alternative funding sources, including tax increment/ value capture financing supported by future development along the Corridor.
+[p028_c0005] _1-8_
+
+## Page 29
+
+### [p029_c0001] Lower Montauk Branch Rail Study
+### [p029_c0002] 1.2 Corridor Background
+[p029_c0003] The Corridor is defined by the census tracts with centers that lie within a half-mile of the rail's right-of-way. The Corridor background focuses on these census tracts to best understand the area that would be affected by the reactivation of passenger service on the Lower Montauk Branch. This section evaluates existing demographic characteristics, land use and zoning, commuting and job patterns, and planned development and redevelopment projects.
+[p029_c0004] The Corridor consists of 63 census tracts in Queens and four in Brooklyn. For a more accurate Corridor-wide average, the figures and metrics presented are weighted averages by population, rather than arithmetic averages. All demographic information comes from the U.S. Census Bureau American Community Survey, 5-Year Averages (2011-2015), except for population density, which comes from the New York State Department of Health, and employment statistics, which come from the Census Transportation Planning Package (2006-2010 5-Year Data).
+[p029_c0005] The Branch traverses the Queens neighborhoods of Long Island City, Sunnyside, Maspeth, Glendale, Ridgewood, Middle Village, Kew Gardens, Forest Hills, Richmond Hill, and Jamaica, as seen in Figure 1-1. The study will focus on the areas between the Long Island City and Jamaica termini, as Long Island City and Jamaica are already existing transit hubs which have physical and economic characteristics that are not consistent with the other neighborhoods. Sunnyside's neighborhood has little physical connection to the Branch due to the presence of an adjacent cemetery, and will not be discussed in depth. Similarly, the majority of the Kew Gardens and Forest Hills neighborhoods fall outside the Corridor, closer to other transit options, and will not be analyzed.
+[p029_c0006] Land use, zoning, population and job characteristics will be discussed Corridor-wide and by sections of the Lower Montauk Branch Corridor, as depicted in Figure 1-17.
+[p029_c0007] _1-9_
+
+## Page 30
+
+### [p030_c0001] Lower Montauk Branch Rail Study
+[p030_c0002] _Figure 1-1 Lower Montauk Branch and Adjacent Neighborhoods_
+> [p030_c0003] The map illustrates the Lower Montauk Branch rail line, shown as a thick blue line, extending from Long Island City in the northwest to Jamaica in the southeast. The line passes through several neighborhoods, which are labeled in white boxes: Long Island City, Sunnyside, Maspeth, Ridgewood, Middle Village, Glendale, Richmond Hill, Kew Gardens, and Jamaica. The map also shows the surrounding areas, including Manhattan to the west, Brooklyn to the south, and Queens to the east. Key landmarks and parks such as Turtle Bay, Murray Hill, East Village, Greenpoint, North Side, Bushwick, Cypress Hills, Rego Park, Forest Hills Gardens, Jamaica Estates, South Jamaica, and Ozone Park are marked. A legend in the bottom-left corner defines the symbols: a blue line for the Lower Montauk Branch, a white box for a Neighborhood Adjacent to Branch, and a white box with a blue border for the Current Station (Jamaica). A scale bar at the bottom right indicates distances of 0, 1, and 2 miles, and a north arrow is also present.
+### [p030_c0004] 1.2.1 Existing Land Use and Zoning
+[p030_c0005] The western section of the Corridor east of Long Island City in the Sunnyside and Maspeth neighborhoods along the Newtown Creek is heavily industrial. The area surrounding this portion of the Branch is mainly zoned for manufacturing uses, as defined by the New York City Zoning Resolution. The waterfront serves as a manufacturing center and utilizes the direct rail connections provided by the Branch for shipping and receiving goods. These manufacturing districts are zoned from M-1 to M-3, representing industrial activity from warehouses to heavy industry. Manufacturing is a dominant presence in Maspeth and includes a number of regular users of freight rail service.
+[p030_c0006] The Corridor's eastern section falls in the neighborhoods of Glendale, Ridgewood, Middle Village, and Richmond Hill. Although there is some manufacturing and dense residential development, these areas are dominated by parks and cemeteries and low- to moderate-density residential development. There is a section of Glendale informally known as the "Cemetery Belt" due to the number of cemeteries in the
+[p030_c0007] _1-10_
+
+## Page 31
+
+### [p031_c0001] Lower Montauk Branch Rail Study
+[p031_c0002] area. 1 The parks and cemeteries in the area somewhat separates these residential areas, further supporting their lower-density, residential character, which generally falls within R4 and R5B zoning districts. The Branch's right-of-way abuts cemeteries and industrial uses for a major segment of this section. At the far eastern end of the Corridor, the Branch crosses through Forest Park before ending at Jamaica Station. A recent upzoning in Richmond Hill allowed for higher-density residential development to come to the area.
+[p031_c0003] Specialized land use zones known as Industrial Business Zones were created in Maspeth and Greenpoint.
+[p031_c0004] Major portions of these zones fall within the Corridor boundaries. These zones (see
+[p031_c0005] Figure 1- 3), backed by the New York City Economic Development Corporation, provide focused commercial support services to industrial and manufacturing businesses. The zones promote competitive advantages in location with tax credits, zone-specified planning, and business assistance.
+[p031_c0006] The ability of the land uses in the adjacent neighborhoods of Maspeth, Glendale, Ridgewood, Middle Village, and Richmond Hill (see Figure 1-2) to support additional rail transit service will be analyzed as part of this study. These areas are centered on manufacturing and industry and greenspace, along with some residential districts with low to moderate densities. Recent zoning and land use initiatives have the possibility to attract both business and residential development. Upzoning, development, and redevelopment opportunities are discussed in Section 1.2.6.
+[p031_c0007] _Figure 1-2 Non-Residential Land Use_
+> [p031_c0008] The figure is a map of the Lower Montauk Branch Rail Study area, showing non-residential land use. The map covers a portion of the New York City metropolitan area, including parts of Manhattan, Long Island City, Queens, Brooklyn, and Jamaica. A thick dark blue line represents the rail corridor, running from Long Island City in the northwest to Jamaica in the southeast. The map is color-coded to show different land use types: Mixed Use (orange), Commercial (red), Industrial (purple), and Public Facility (blue). The map also shows various neighborhoods and landmarks, including Maspeth, Glendale, Ridgewood, Middle Village, Richmond Hill, Forest Park, and Jamaica Station. A legend in the bottom left corner identifies the land use categories. A scale bar in the bottom right corner indicates distances up to 2 miles, and a north arrow is also present. Legend Land Use Mixed Use Commercial Industrial Public Facility
+[p031_c0009] _1 "Glendale: A Quiet Enclave Residential Community with a Past"; Daily News_
+[p031_c0010] _1-11_
+
+## Page 32
+
+### [p032_c0001] Lower Montauk Branch Rail Study
+[p032_c0002] _Figure 1- 3 Industrial Business Zones in Project Area_
+> [p032_c0003] The figure consists of three maps. The top left map is titled 'Maspeth IBZ' and shows a detailed street grid with orange-shaded industrial business zones. The top right map is titled 'North Brooklyn IBZ' and similarly shows orange-shaded zones on a street grid. The bottom map is a regional map of the Lower Montauk Branch, showing the route from Long Island City to Jamaica. It includes labels for Manhattan, Long Island City, Brooklyn, Queens, and Jamaica. A blue line represents the 'Lower Montauk Branch' route. A blue box with the text 'Approximate Area of Industrial Business Zones' points to the Maspeth area. A legend in the bottom left corner identifies the blue line as the 'Lower Montauk Branch'. A scale bar and north arrow are in the bottom right.
+[p032_c0004] Source: NYCEDC: https://www.nycdc.com/industry/industrial/nyc-industrial-business-zones
+[p032_c0005] _1-12_
+
+## Page 33
+
+### [p033_c0001] Lower Montauk Branch Rail Study
+### [p033_c0002] 1.2.2 Population and Demographic Characteristics
+[p033_c0003] The Corridor currently contains approximately 62,000 households with a population of 179,000. Of the total population, 87,000 are employed and can be evaluated for journey to work and commuting characteristics. The median household income is $62,000, compared to $58,000 for Queens, and $54,000 for New York City. The homeownership rate (36%) and the percentage of households living in a single family home (19%) are lower than Queens' rate and slightly more than the City's rate. Median monthly housing costs are roughly $100 more than the rest of Queens ($1,500 to $1,400).
+[p033_c0004] The population dispersion in the Corridor is characterized by low density. Additionally, as depicted in Figure 1-2:
+- [p033_c0005] • Approximately 44% of the acreage in the Corridor is zoned for lower-density residential development, with an average population density of 20,000 people per square mile, around 500 fewer people per square mile than Queens and 7,000 fewer per square mile than New York City. This low population density is partially due to the manufacturing in the area, combined with the large open areas of parks and cemeteries and lower-density residential districts. • 43% of the land in the Corridor is zoned for industrial use or parks. Parts of Maspeth and Ridgewood are zoned as Industrial Business Zones, specialized zones that provide business support for industrial and manufacturing businesses, and are specifically protected from rezoning for residential use.
+[p033_c0006] _Figure 1-4 2015 Population Density (People per Square Mile)_
+> [p033_c0007] The map displays population density across the Lower Montauk Branch Rail Corridor, spanning parts of Manhattan, Long Island City, Queens, Brooklyn, and Jamaica. A thick blue line represents the rail corridor, starting near the Sullivan Tunnel in Manhattan and ending near Jamaica. The map is color-coded by population density per square mile, with a legend on the left. The legend shows nine density ranges, each represented by a colored box. The map itself is filled with these colored polygons, showing varying levels of density. Higher density areas are shown in darker shades of red and orange, while lower density areas are in lighter shades of yellow and light orange. The map also includes labels for various neighborhoods and landmarks, such as East Village, North Hills, Bayside, Maspeth, Glendale, and Jamaica. A scale bar at the bottom right indicates distances up to 2 miles, and a north arrow is also present. Legend People per Square Mile 8 - 10,888 Lightest Yellow 10,889 - 20,922 Light Orange 20,923 - 29,817 Medium Orange 29,818 - 39,252 Dark Orange 39,253 - 49,243 Red-Orange 49,244 - 60,507 Red 60,508 - 74,980 Dark Red 74,981 - 95,400 Dark Red-Orange 95,401 - 130,693 Dark Red 130,694 - 227,179 Darkest Red
+[p033_c0008] The employment profile in the Corridor is different than other job centers in the City, being primarily industrial rather than commercial. The percentage of acreage in the Corridor that is zoned for industrial
+[p033_c0009] _1-13_
+
+## Page 34
+
+### [p034_c0001] Lower Montauk Branch Rail Study
+[p034_c0002] use is double Queens' overall percentage and triple Brooklyn's percentage. Here the combination of industrial jobs and sparse population makes for moderate job density at 10,546 jobs per mile. For comparison, Queens' rate is 6,231 jobs per mile and New York City's is 14,152 jobs per mile. Employment density is shown in Figure 1-5.
+[p034_c0003] _Figure 1-5 Employment Density (Jobs per Square Mile)_
+> [p034_c0004] The map displays the Lower Montauk Branch Rail Study area, spanning parts of Manhattan, Brooklyn, Queens, and Jamaica. A thick dark blue line represents the rail line, starting from Long Island City in Manhattan and extending to Jamaica in Queens. The map is color-coded by employment density, with a legend on the left. The legend shows nine categories of jobs per square mile, represented by shades of purple. The map also includes labels for various neighborhoods and landmarks, such as Turley Bay, Sutton Place, East Village, and Jamaica Gardens. A scale bar at the bottom right indicates distances up to 2 miles, and a north arrow is also present. Legend Jobs per Square Mile 0 - 2,926 [Lightest Purple] 2,927 - 5,982 [Light Purple] 5,983 - 9,470 [Medium-Light Purple] 9,471 - 13,454 [Medium Purple] 13,455 - 18,513 [Medium-Dark Purple] 18,514 - 27,064 [Dark Purple] 27,065 - 43,023 [Very Dark Purple] 43,024 - 75,687 [Darkest Purple] 75,688 - 125,118 [Darkest Purple] 125,119 - 469,490 [Darkest Purple]
+### [p034_c0005] 1.2.3 Transit Access and Commuting Patterns
+[p034_c0006] While some subway and commuter rail lines serve part of the Corridor (seen in Figure 1-7), much of this area of Queens lacks direct rail access, with residents located further than a half-mile (roughly 15-minute) walk from the subway or Long Island Rail Road, as shown in Figure 1-9 and Figure 1-10. Express buses serve much of the corridor but suffer from slow and unreliable service due to traffic congestion. No Select Bus Service routes serve the corridor. The lack of a one-seat, fast, and reliable ride to the Manhattan Central Business District (CBD) is a potential mobility factor in these neighborhoods. Despite the lack of a direct connection to the Manhattan CBD, the Corridor utilizes public transit at rates comparable to the citywide average. Local bus service is the primary means of public transit, serving intra-neighborhood trips and connecting to subway and express bus service, as seen in Figure 1-8. These conditions are reflected in the following travel patterns:
+- [p034_c0007] • There are numerous local bus routes, many of which stop within a quarter-mile of former Lower Montauk Branch stations. The bus network helps an average of 56% of Corridor residents commute to work via public transit, slightly more than the Queens average (52%) and comparable to citywide rates (57%).
+[p034_c0008] _1-14_
+
+## Page 35
+
+### [p035_c0001] Lower Montauk Branch Rail Study
+- [p035_c0002] • An average of 27% of residents drive to work alone, 5% more than the Queens average but 5% less than New York City's average. • While public transit commutes may require a transfer to another service, the Corridor's relative geographic proximity to Manhattan is a benefit to commuters, with commute times comparable to or lower than the Queens and citywide averages. • The average commute time is 40 minutes, less than the Queens average and identical to the city's average. • Longer commutes are also less common in the Corridor than elsewhere: 41% of Corridor residents' commutes exceed 45 minutes, below the Queens average and equal to the city average. 24% of Corridor residents' commutes exceed 60 minutes, lower than the averages for Queens and New York City. 69% of Corridor residents begin their morning commute during the peak hours of 6:00 to 9:00 AM, compared to 61% for Queens as well as New York City. • Automobile ownership rates in the Corridor are higher than the citywide average, but comparable to the Queens averages: • An average of 41% of Corridor households do not own a car, slightly more than the Queens average but considerably less than the city's average of 55%. This is particularly noteworthy since the Corridor has less subway and rail access and a more suburban development pattern than much of New York City. • 59% of households in the Corridor own at least one car. This is the same rate as Queens, but 9% higher than the city average. • Corridor residents' workplaces are highly concentrated in Queens and Manhattan. As shown in the "Flow" column of , approximately 85,000 Corridor residents commute to work. Approximately 90% of these commuters work within New York City (see ). 41% work in Queens, owing to large employment hubs in Long Island City, Jamaica, and at JFK Airport. Most of the remainder, 35%, works in Manhattan. • Despite close proximity to Brooklyn and Nassau County, these locations accounted for only 13% and 6% of Corridor residents' workplaces, respectively. • Other workplace locations were relatively insignificant: The Bronx, Staten Island, New Jersey, Suffolk County, and all other locations combined accounted for roughly 2% of the total.
+[p035_c0003] _Table 1-1 Summary Table: Commute Destinations of Corridor Residents_
+[p035_c0004]
+
+```text
+Work State Work County Flow Percent of Total Flow NYS-NYC only Bronx 1,233 1% Brooklyn 10,649 13% Manhattan 29,705 35% Queens 35,205 41% Staten Island 250 0.3% Total NYC 77,042 90%
+```
+[p035_c0005] _1-15_
+
+## Page 36
+
+### [p036_c0001] Lower Montauk Branch Rail Study
+[p036_c0002]
+
+```text
+Work State Work County Flow Percent of Total Flow NYS (non-NYC) Nassau 5,144 6% Suffolk 1,060 1% Other 529 1% Total NYS (non-NYC) 6,733 8% NJ All NJ Counties 1,050 1% CT All CT Counties 84 0.1% PA All PA Counties 15 0% Other N/A 63 0.1% Total Flow 84,987
+```
+[p036_c0003] Source: Census Transportation Planning Package (2006-10 5-Year Data)
+[p036_c0004] _Figure 1-6 Commutes from the Lower Montauk Branch Corridor by Percentage_
+> [p036_c0005] Commutes from the Lower Montauk Branch Corridor by Percentage Destination Percentage Queens 41% Manhattan 35% Brooklyn 13% Nassau 6% NJ, CT, PA, Other 2% Bronx 1% Suffolk 1% Staten Island 0.3%
+[p036_c0006] _1-16_
+
+## Page 37
+
+### [p037_c0001] Lower Montauk Branch Rail Study
+[p037_c0002] _Figure 1-7 Rail Connections_
+> [p037_c0003] This map illustrates the proposed rail connections for the Lower Montauk Branch. The main rail line, highlighted in blue, runs from Long Island City in the northwest to Jamaica in the southeast. Key connections include: Manhattan: Connected via the 7 train (purple) and the G train (green). Long Island City: The northern terminus of the main line. Brooklyn: Connected via the L train (grey) and the M train (orange). Queens: Connected via the LIRR (grey) and the Z train (brown). Jamaica: The southern terminus of the main line. The map also shows the Port Wash. Branch, Main Line, and Atlantic Branch. Various neighborhoods and landmarks are labeled, including Murray Hill, Turtle Bay, Sutton Place, Long Island City, Sunnyside, Rego Park, Forest Hills, Kew Gardens, Jamaica Estates, Jamaica Center, South Jamaica, Richmond Hill, Glendale, Middle Village, Maspeth, East Village, North Side, Bushwick, Highland Park, Cypress Hills, and Ozone Park. A scale bar indicates distances up to 2 miles, and a north arrow is present in the bottom right corner.
+[p037_c0004] _1-17_
+
+## Page 38
+
+### [p038_c0001] Lower Montauk Branch Rail Study
+[p038_c0002] _Figure 1-8 Local Bus Network_
+> [p038_c0003] The map displays the Lower Montauk Branch (LMB) rail study area, which spans from Manhattan in the northwest to Jamaica in the southeast. A thick, dark blue line represents the proposed rail route, starting at a station in Long Island City and ending at a station in Jamaica. The map is overlaid with a dense network of red lines, representing bus routes within a 1/4 mile radius of the former LMB stops. A network of thinner grey lines represents all other bus routes in the area. Major geographical features include the East River to the west and the Long Island Sound to the east. Various neighborhoods and parks are labeled, such as Sunnyside Gardens, Rego Park, Forest Hills Gardens, and Briarwood. A scale bar at the bottom right indicates distances of 0, 1, and 2 miles, and a north arrow is also present.
+### [p038_c0004] Legend
+- [p038_c0005] — Bus routes within a 1/4 mile of former LMB stops — All bus routes
+[p038_c0006] _1-18_
+
+## Page 39
+
+### [p039_c0001] Lower Montauk Branch Rail Study
+[p039_c0002] _Figure 1-9 Areas Beyond a Half-mile Walk to Subway_
+> [p039_c0003] A map of the Lower Montauk Branch Rail Study area. A thick dark blue line represents the rail line, connecting two subway stations marked with white circles: Long Island City on the left and Jamaica on the right. The map shows the rail line passing through various neighborhoods in Queens, including Long Island City, Sunnyside, Woodside, Rego Park, Forest Hills, Kew Gardens, Forest Hills Gardens, Kew Gardens, Richmond Hill, Woodhaven, and Jamaica. Areas beyond a half-mile walk from the subway stations are shaded in purple. These areas include parts of Manhattan (Turtle Bay, Murray Hill, East Village, North Side, Bushwick, East Williamsburg, Ridgewood, Glendale, Cypress Hills, Highland Park, Ozone Park), Brooklyn (Greenpoint, Bayside, Middle Village, Maspeth), and Queens (Sunnyside Gardens, Woodside, Rego Park, Forest Hills, Kew Gardens, Forest Hills Gardens, Kew Gardens, Richmond Hill, Woodhaven, Ozone Park, Jamaica Estates, Jamaica Hills, Jamaica Center, South Jamaica). The map also shows major roads and water bodies like the East River and Jamaica Bay.
+### [p039_c0004] Legend
+[p039_c0005] Beyond a 1/2 mile walk
+[p039_c0006] _1-19_
+
+## Page 40
+
+### [p040_c0001] Lower Montauk Branch Rail Study
+[p040_c0002] _Figure 1-10 Areas Beyond a Half-mile Walk to Long Island Rail Road_
+> [p040_c0003] The map illustrates the Lower Montauk Branch Rail Study area, highlighting regions beyond a half-mile walk to the Long Island Rail Road. The map is color-coded: a dark blue line represents the rail line, and a light purple area indicates areas beyond a half-mile walk. The rail line starts at Long Island City and ends at Jamaica. Various neighborhoods and landmarks are labeled, including Manhattan (Murray Hill, Turtle Bay, Sutton Place), Queens (Long Island City, Sunnyside Gardens, Woodside, Sunnyside, Blissville, Greenpoint, Maspeth, Middle Village, Ridgewood, Glendale, Forest Hills, Kew Gardens Hills, Forest Hills Gardens, Kew Gardens, Brianwood, Jamaica Estates, Jamaica Hills, Jamaica Center, South Jamaica, Richmond Hill, Woodhaven, Ozone Park, Cypress Hills, Highland Park, Bushwick, East Williamsburg, North Side, East Village, and Brooklyn. The map also shows the coastline and water bodies like the East River and the Atlantic Ocean.
+### [p040_c0004] Legend
+[p040_c0005] Beyond a 1/2 mile walk
+[p040_c0006] _1-20_
+
+## Page 41
+
+### [p041_c0001] Lower Montauk Branch Rail Study
+### [p041_c0002] 1.2.4 Walk Score Analysis
+[p041_c0003] Walk Score and Transit Score (from the website Walkscore.com) summarize a location's access to important destinations by walking or using public transit, respectively. On a scale of 1 to 100, higher scores indicate easier access to jobs, stores, parks, and other destinations without relying on a car. Destinations within a 5-minute walk are weighted the most, and weight decreases with distance, up to a 30-minute walk. On average, New York City has a Walk Score of 89 and a Transit Score of 84.
+[p041_c0004] Table 1-2 summarizes the Walk Score and Transit Score of the five Corridor stations previously served by the Long Island Rail Road. The highest-scoring stations are Richmond Hill, which is adjacent to a J Train station, and Fresh Pond, which sits at the intersection of two neighborhood main streets. Haberman and Penny Bridge, located in waterfront industrial zones, scored poorly.
+[p041_c0005] _Table 1-2 Walk Scores and Transit Scores from Walkscore.com_
+[p041_c0006]
+
+```text
+Station Approximate Address Walk Score Transit Score Description Penny Bridge 37-99 Review Ave. 40 42 This location is Car-Dependent; most errands require a car. Haberman 56-50 49 St. 57 49 This location is Somewhat Walkable; some errands can be accomplished on foot. Fresh Pond 62-99 Metropolitan Ave. 90 75 This location is a "Walker's Paradise"; daily errands do not require a car. The M Train station at Fresh Pond Road is a 12-minute walk away. Glendale 72-99 Edsall Ave. 77 61 This location is Very Walkable; most errands can be accomplished on foot. 72-99 Edsall Avenue is a 21-minute walk from the M QNS BLVD-6th AVE/ Myrtle Local at the Middle Village - Metropolitan Ave. stop. Richmond Hill 118-99 Babbage St. 93 86 This location is a "Walker's Paradise"; daily errands do not require a car. The J Train station at 121st Street is a 4-minute walk away.
+```
+[p041_c0007] Source: Walkscore.com
+### [p041_c0008] Walk and Transit Scores Scale
+[p041_c0009] 90-100: Walker's/Rider's Paradise: Daily errands do not require a car
+[p041_c0010] 70-89: Very Walkable/Excellent Transit: Most errands can be accomplished on foot
+[p041_c0011] 50-69: Somewhat Walkable/Good Transit: Some errands can be accomplished on foot
+[p041_c0012] 25-49: Car-Dependent/Some Transit: Most errands require a car
+[p041_c0013] 0-24: Car-Dependent/Minimal Transit: Almost all errands require a car
+[p041_c0014] The scores indicate a clear divide between the Corridor's western and eastern sections. The western section (Penny Bridge, Haberman) is industrial, lightly populated, and isolated from residential
+[p041_c0015] _1-21_
+
+## Page 42
+
+### [p042_c0001] Lower Montauk Branch Rail Study
+[p042_c0002] neighborhoods by industrial zones and Newtown Creek. Transit in this area may provide access to industrial jobs, but will not accommodate new residential development.
+[p042_c0003] The eastern section (Fresh Pond, Glendale, Richmond Hill) scored higher due to their residential nature, with scattered industrial and retail activity. They currently lack subway access, but their high Walk Scores and Transit Scores highlight their existing amenities and their potential for new residential development, especially if rapid transit were added.
+### [p042_c0004] 1.2.5 Job Location Analysis
+[p042_c0005] The Lower Montauk Branch Corridor is a hub of light and heavy industry. In the census tracts within the Corridor zone, there are 95,760 jobs in the 9.08 square miles, a rate of 10,546 jobs per square mile. This rate is higher than three boroughs' averages (Queens, the Bronx, and Staten Island), showing the economic importance of this area. Major employers along the Corridor, including Waste Management and Fresh Direct, use the rail access afforded by the Lower Montauk Branch to their advantage.
+[p042_c0006] Rail freight is an important economic driver along the Corridor, serving some of the city's critical distributors. The New York & Atlantic Railway currently operates freight service on the branch and counts among its customers food suppliers (cooking oil, rice, fresh fruit, and vegetables), a major waste transfer facility, and suppliers of construction aggregates, lumber, and paper. Rail freight activity stands to grow with a proposed rail freight tunnel to New Jersey and recent federal grants awarded for rail freight upgrades.
+[p042_c0007] Trucks frequently cross the Branch at grade to serve adjacent industrial sites. Transit service along the Branch would greatly increase the frequency of trains, requiring additional grade crossing infrastructure at a number of locations.
+### [p042_c0008] NYU Study
+[p042_c0009] A 2015 study by New York University and the Rockefeller Foundation analyzed job access and mobility in New York City 2 . The focus of the study was to determine each New York City neighborhood's access to jobs within a 60-minute transit and/or walking trip. The findings (Table 1-3) showed that varying transit access levels impact employment levels, travel modes, and incomes. Of the 177 neighborhoods surveyed, three of the neighborhoods in the Corridor were ranked in the middle tier:
+[p042_c0010] _Table 1-3 Neighborhood Rankings by Number of Jobs Accessible within One Hour_
+[p042_c0011]
+
+```text
+Neighborhood and Rank Jobs Accessible Median Household Income Population Glendale (93) 2,781,184 $50,799 99,379 Maspeth (104) 2,571,530 $57,474 32,268 Middle Village (110) 2,354,409 $69,843 35,822
+```
+[p042_c0012] Source: NYU Rudin Center for Transportation
+[p042_c0013] The study divides 177 neighborhoods into three tiers of job access. Top-tier neighborhoods, such as Chelsea and Brooklyn Heights, have strong transit access and typically have high incomes. Bottom-tier
+[p042_c0014] _2 "Mobility, Economic Opportunity and New York City Neighborhoods"; NYU Rudin Center for Transportation_
+[p042_c0015] _1-22_
+
+## Page 43
+
+### [p043_c0001] Lower Montauk Branch Rail Study
+[p043_c0002] neighborhoods, such as Riverdale and Howard Beach, tend to compensate for poor transit access with higher incomes and higher car ownership rates.
+[p043_c0003] Glendale, Maspeth and Middle Village each fall within the middle tier of transit access, a middle ground with poor access to rapid transit and low- to middle-income residents who need transit improvements the most.
+[p043_c0004] While the study's neighborhood boundaries do not perfectly align with the Lower Montauk Corridor, the findings suggest that transit investment in the Corridor area can improve job access and economic outcomes for working- and middle-class residents. The study recommended the implementation of a smart bus, with dynamic routing and demand-responsive schedules, to connect Maspeth to Midtown East. 3
+### [p043_c0005] Origin / Destination Commute Flows
+[p043_c0006] Using the commute flow data contained within the US Census Bureau's Transportation Planning Package (CTPP), an analysis was conducted to identify the journey to work flows into and out of the Lower Montauk Branch Corridor. The population considered in this analysis is anyone who lives in NY, NJ, CT or PA, and has a workplace anywhere in the five boroughs of New York City. To perform this analysis, Census Tracts outside NYC were aggregated to the County level, and within NYC the Tracts were aggregated to generalized zones, with approximately 2 to 4 zones per borough. In Queens, each corridor analysis section was grouped individually, and the remainder of the borough was divided into 10 zones using highways as the dividing line between zones.
+[p043_c0007] Across the entire Corridor there are 95,181 workers. Of this number 11% live in a Census Tract along the Corridor, 69% live elsewhere in NYC, and 20% commute to work from outside NYC (as shown in Figure 1-11). The two zones that send the most workers to the Corridor are Eastern Queens (south of the Long Island Expressway and east of the Van Wyck Expressway) and Nassau County, NY, with 10,181 and 9,530 workers respectively. Together, these two flows represent 20% of all workers along the Corridor.
+[p043_c0008] _Figure 1-11 Home Location of LMB Workers_
+> [p043_c0009] Home Location Percentage NYC, outside LMB Corridor 69% Outside NYC 20% LMB Corridor 11%
+[p043_c0010] There are 70,282 residents of the Corridor who work in NYC. The two largest flows from the Corridor are to Manhattan zones. 14,465 residents of the Corridor work between 14 th and 59 th Street and 8,374 residents of the Corridor work south of 14 th Street. These two flows represent 21% and 12% of all residents of the Corridor who work in NYC, respectively.
+[p043_c0011] _3 Mobility, Economic Opportunity and New York City Neighborhoods; NYU Rudin Center for Transportation_
+[p043_c0012] _1-23_
+
+## Page 44
+
+### [p044_c0001] Lower Montauk Branch Rail Study
+[p044_c0002] A detailed accounting of flows into and out of each corridor analysis section can be found in Appendix J. Generally speaking, each individual section has similar trends to the aforementioned Corridor-wide trends. Maps illustrating the geographic distribution of these flows can be found in Appendix J.
+### [p044_c0003] Job Access Analysis
+[p044_c0004] A job access analysis was performed for the Lower Montauk Branch Corridor. The number of jobs (access to jobs) within a 45-minute transit travel time, highlighted by access to an existing subway, was evaluated for five potential station locations. Table 1-4 shows a job access evaluation summary.
+[p044_c0005] The assessment used the 2010 5-Year Census Transportation Planning Package (CTPP) flow data to identify employment accessibility using a geoprocessing methodology. First, the 45-minute travel sheds were developed based on 1/4-mile walking distance to the transit station. Second, the CTPP employment information within each travel shed was captured, summarized, and grouped by census tract. The travel sheds include walking and public transit, where applicable. In the study area, NYCT Subway and Buses were included (see note regarding bus routes below).
+[p044_c0006] Employment accessibility is relatively similar across the five station locations evaluated, with an average of approximately 1,520,000 jobs captured. The variance between the station location with the lowest number of jobs in its travel shed (Woodhaven/Metropolitan Avenue) and the highest (Grand Avenue/Flushing Avenue) was just 18%.
+[p044_c0007] It should be noted that the following bus routes are not included in the analysis due to limitations with the data. These are bus routes that operate as MTA Bus routes, rather than NYCT Bus routes:
+- [p044_c0008] • Grand Avenue/Flushing Avenue Station: Q39 • Fresh Pond/Metropolitan Avenue Station: Q38, Q39, Q67, QM24, QM25, QM34 • Richmond Hill Station: Q10, QM18
+[p044_c0009] Therefore, the travel sheds may be slightly different than with the excluded bus routes. Additionally, all buses serving the Woodhaven Boulevard Station are MTA Bus routes-and thus are not captured in the travel time analysis. The selected analysis location for the station was moved to Woodhaven Boulevard and Metropolitan Avenue. This location at Metropolitan Avenue, situated approximately 0.3 miles or a six-minute walk north, is served by NYCT bus routes and is closer to subway service.
+[p044_c0010] Travel shed maps can be found in Appendix C.
+[p044_c0011] _Table 1-4 Job Access_
+[p044_c0012]
+
+```text
+Station Jobs with 45-Minute Transit Travel Time Location/Cross-Street Access to Existing Subway Distance from LIC (feet) Distance from Previous Station (feet) Greenpoint Avenue 1,700,600 Greenpoint Avenue 0.9 miles (#7 Train) 6,300 6,300 (from LIC) Grand Avenue/Flushing Avenue 1,719,500 Maspeth Avenue 1.5 miles (L Train) 14,700 8,400 Fresh Pond/Metropolitan Avenue 1,672,900 Fresh Pond 0.3 miles (M Train) 20,600 5,900
+```
+[p044_c0013] _1-24_
+
+## Page 45
+
+### [p045_c0001] Lower Montauk Branch Rail Study
+[p045_c0002]
+
+```text
+Woodhaven/Metropolitan Avenue* 1,417,400 Metropolitan Avenue 1 Mile (J, Z Train) N/A* N/A* Richmond Hill 1,586,700 Hillside Avenue 0.06 miles (J, Z Train) 40,200 8,000
+```
+[p045_c0003] Source: Job data taken from 2010 5-Year American Community Survey
+[p045_c0004] * Due to data analysis limitations explained above, the travel time site analyzed is a location north of the Lower Montauk Branch (Woodhaven Boulevard and Metropolitan Avenue), not a potential station site (Woodhaven Boulevard at the Lower Montauk Branch).
+### [p045_c0005] 1.2.6 Ongoing and Planned Development Projects
+[p045_c0006] Neighborhoods along the Corridor are currently undergoing industrial and residential development, sometimes in conflict with each other. A site wedged between the Lower Montauk Branch and Newtown Creek in Maspeth, zoned for heavy or light industry with over 1 million square feet of buildable space, sold for $55 million in 2016 (Figure 1-12). This 362,000 square foot space is slated to be a FedEx Ground Distribution Center. A proposed project at 57-46 56 th Street in Maspeth would bring mixed-use development, including low-rise, low-income housing (Figure 1-13). 4 This development would require a rezoning, as it is located in an industrial business zone protected from residential development. 5
+[p045_c0007] A 2012 upzoning in Richmond Hill was intended to spur development in the area, and help to fill demand for housing near public transit. A development featuring five four-story mixed-use buildings has filed for permits on a formerly vacant lot on 101 st Avenue. 6
+[p045_c0008] A five-story mixed-use building on Atlantic Avenue, featuring 41 apartments and ground-floor retail on the site of a former car dealership, was approved in 2016. A block away on Atlantic Avenue, applications have been filed for two four-story buildings containing ground-floor retail and seven residential units. 7,8 These development sites are shown in Figure 1-14.
+[p045_c0009] These sites are located an average of 1.1 miles from the Jamaica Station and 7/10 miles from the potential Richmond Hill Station.
+[p045_c0010] _4 "Massive Maspeth development site along Newtown Creek sold for $55.8M"; QNS.com_
+[p045_c0011] _5 "Owner of sprawling Queens industrial site hopes to convert it to mixed-use"; Crain's New York Business_
+[p045_c0012] _6 "Richmond Hill rising: development coming"; Queens Chronicle_
+[p045_c0013] _7 "Five-Story, Mixed-Use Project Coming To 113-02 Atlantic Avenue, Richmond Hill, Queens"; New York YIMBY_
+[p045_c0014] _8 Two Four-Story, Seven-Unit Mixed-Use Buildings Filed At 114-01 Atlantic Avenue, Richmond Hill"; New York YIMBY_
+[p045_c0015] _1-25_
+
+## Page 46
+
+### [p046_c0001] Lower Montauk Branch Rail Study
+[p046_c0002] _Figure 1-12 Maspeth Development Site at 57th Avenue_
+> [p046_c0003] An aerial photograph of an industrial and commercial area. A red polygon outlines a development site located between 57th Avenue and 56th Road. To the west is Newtown Creek, and to the south is Maspeth Creek. A blue line representing the Lower Montauk Branch runs along 56th Road. Various businesses and landmarks are labeled, including Restaurant Depot, Hubert Corp., Ferguson, and Galasso Pl. Streets shown include 57th Ave, 56th Rd, 48th St, and 57th Ave.
+[p046_c0004] Source: QNS.com 4
+[p046_c0005] █ Lower Montauk Branch █ Development Site
+[p046_c0006] _1-26_
+
+## Page 47
+
+### [p047_c0001] Lower Montauk Branch Rail Study
+[p047_c0002] _Figure 1-13 Proposed Development Site at 57-46 56th Street_
+> [p047_c0003] An aerial photograph of a dense urban area in New York City. A thick blue line, representing the Lower Montauk Branch, runs diagonally from the top left towards the bottom right. A red triangle outlines a specific area where the blue line intersects with a street grid. This area is the proposed development site. The surrounding area is filled with numerous small, rectangular buildings, typical of a city block.
+[p047_c0004] Source: Crain's New York Business 4
+[p047_c0005] Lower Montauk Branch Development Site
+[p047_c0006] _1-27_
+
+## Page 48
+
+### [p048_c0001] Lower Montauk Branch Rail Study
+[p048_c0002] _Figure 1-14 Samples of Richmond Hill Residential Development Sites_
+> [p048_c0003] The figure is an aerial map of Richmond Hill, New York, showing a residential area with a grid of streets. A blue line representing the Lower Montauk Branch rail line runs diagonally from the top left towards the bottom right. Three red dots, representing development sites, are located in the residential area. The map includes labels for various streets such as Atlantic Ave, Liberty Ave, 101st Ave, 111 Street, Jamaica St, and Jamaica Ave. It also shows landmarks like the Jamaica Hospital Medical Center and the NY & W Central Station. The map is divided into sections labeled 'RICHMOND HILL' and 'SOUTH RICHMOND HILL'.
+[p048_c0004] Source: Google Maps
+> [p048_c0005] Legend: Lower Montauk Branch (represented by a blue line) Development Site (represented by a red dot)
+[p048_c0006] _1-28_
+
+## Page 49
+
+### [p049_c0001] Lower Montauk Branch Rail Study
+[p049_c0002] With the recovery of the real estate markets after the 2008-2010 recession, the amount of new development City-wide has increased substantially, including within Queens. The most explosive area in the last few years has been new residential development, peaking in 2015 with approval by the City of residential construction applications that totaled over 56,000 new residential applications, driven in part by developers rushing to apply prior to the end of the 421-a housing program (an affordable housing program replaced in early 2017 by Affordable New York). While the market paused a bit in 2015, it heated up again in the first quarter of 2017, with the total units in applications approved in the first quarter of 2017 higher than in the peak year of 2015. Figure 1-15 shows the distribution of these new housing units by borough.
+[p049_c0003] The Queens Office of the New York City Department of City Planning compiled the number of locations of new residential and non-residential building permits approved by the City's Department of Buildings within the Lower Montauk Branch Rail Study area (1/2 mile from the branch alignment). Data was compiled for 2014, 2015, and 2016, and January-April 2017.
+[p049_c0004] _Figure 1-15 Residential Units in New Residential Building Applications_
+> [p049_c0005] Borough Number of Units Staten Island 202 Bronx 1,124 Manhattan 1,486 Queens 1,434 Brooklyn 2,097
+[p049_c0006] Source: Commercial Observer, Residential Building Permits Hit 10-Year High in First Quarter of 2017 (MAY 11, 2017)
+[p049_c0007] As shown in Figure 1-16, there has been new building development along the entire length of the over 9-mile Lower Montauk Branch corridor, with two main concentrations:
+- [p049_c0008] • Long Island City, Queens and Greenpoint, Brooklyn, with predominantly residential developments, of which many are high-rise apartment buildings, but also mixed-use residential-commercial buildings with ground floor commercial (retail, business or personal service, etc.) • Richmond Hills, Kew Gardens and Jamaica, more oriented toward non-residential (retail, other commercial, light industrial or warehouse)
+[p049_c0009] _1-29_
+
+## Page 50
+
+### [p050_c0001] Lower Montauk Branch Rail Study
+[p050_c0002] The area along the Lower Montauk Branch where the growth has been most remarkable is Long Island City, where both residential and commercial growth have long been planned to take advantage of its extensive transit service, development properties, waterfront and proximity to Manhattan. While office and other large-scale commercial development have not met originally expectations, residential growth has exploded since 2010. A recent study showed that since 2010 Long Island City has added more new apartments than any other neighborhood in the country, with more to come: 5,000 new apartments, a school, retail, restaurants, and a waterfront park at Hunter's Point South just east of Long Island City Station, the Hayden, a 974-apartment rental development on Hunters Street to the north, and the 5 Pointz 1,115-unit rental development near the Hunterspoint LIRR and No. 7 Line stations. 9
+[p050_c0003] _Figure 1-16 Location of New Building Permits in LM Branch Study Area (Jan. 2014 - April 2017)_
+[p050_c0004] Lower Montauk Branch Rail Study Department of Buildings Permits
+> [p050_c0005] The map displays the Lower Montauk Branch rail line (orange line) through Queens and Kings counties. Key stations are marked with blue squares: Greenpoint Avenue, Grand Avenue/Flushing Avenue, Fresh Pond/Metropolitan Avenue, Woodhaven Boulevard, and Richmond Hill. Building permits are indicated by colored dots: green for residential permits issued between 2014-2016, and pink for non-residential permits issued. A high concentration of permits is visible in the Long Island City area near Greenpoint Avenue. The map also shows major roads and geographical features like the East River and the Long Island Rail Road. Legend: Proposed Station (Blue square) Lower Montauk Branch (Orange line) Residential Permits Issued 2017 (Dark blue dot) Residential Permits Issued 2014-2016 (Green dot) Non-Residential Permits Issued (Pink dot) Source of Data: New York City DCP New York City DOT Metropolitan Transportation Authority Long Island Rail Road Scale: 0 to 2 Miles Orientation: North arrow pointing up
+[p050_c0006] _9 Long Island City's Thousands of Incoming Apartments, Mapped 40+ Developments Poised to Usher in Queens's Next Generation of Rentals and Condos. Curbed June 28, 2017._
+[p050_c0007] _1-30_
+
+## Page 51
+
+### [p051_c0001] Lower Montauk Branch Rail Study
+[p051_c0002] Figure 1-16 also shows a considerable amount of residential development, especially during the 2014-2016 period in Greenpoint, just on the other side of the Newtown Creek from the Long Island City Station. The residential growth in these historically industrial waterfront areas was substantially supported by the City's Greenpoint-Williamsburg Waterfront Rezoning in 2005. There were subsequent further zoning refinement in 2006 and 2009 to continue to support residential development while protecting the existing character of adjacent existing residential areas and creating incentives for affordable housing and supporting local retail corridors. 10 Much of the new residential development in this area has understandably occurred directly on the waterfront and long the north-south roadways (McGuiness Boulevard, Manhattan Avenue) just over the Pulaski Bridge from the Long Island City Station area. The presence of a G Line subway stop on Greenpoint Avenue, approximately 12 blocks south of Newtown Creek, provides further incentive for this increased growth.
+[p051_c0003] Figure 1-16 also highlights the relatively limited amount of development that has occurred between the Branch's eastern and western ends. Much of this has to do with:
+- [p051_c0004] • Large tracks of parks and cemeteries that limit growth • Large industrial and warehouse areas (especially in the western half of the branch) that have shown limited growth but with some key exceptions (e.g., the substantial growth along Maspeth Avenue, especially just south of the Lower Montauk Branch) • Unlike most of the higher-growth areas of Long Island City and Richmond Hill/Jamaica that have good to excellent rail transit service, these lower-growth areas have less access to rail transit
+[p051_c0005] _10 http://www1.nyc.gov/assets/planning/download/pdf/plans/greenpoint-williamsburg-contextual/greenpointwill_con.pdf_
+[p051_c0006] _1-31_
+
+## Page 52
+
+### [p052_c0001] Lower Montauk Branch Rail Study
+### [p052_c0002] 1.3 Corridor Analysis Divided by Section
+[p052_c0003] To more closely evaluate the Lower Montauk Corridor, this section divides the Corridor into five segments and analyzes each by zoning, population, and job access. Each segment is defined by the census tracts whose centers lie within a half-mile of the Branch. The five segments are illustrated in Figure 1-17 and are listed below:
+- [p052_c0004] • Section 1: Long Island City Terminus to former Penny Bridge station 11 (approximate) • Section 2: Former Penny Bridge station (approximate) to Fresh Pond Junction • Section 3: Fresh Pond Junction to Atlas Park Mall • Section 4: Atlas Park Mall to Park Lane S (eastern border of Forest Park) • Section 5: Park Lane S (eastern border of Forest Park) to Jamaica Terminus
+[p052_c0005] The following maps illustrate potential station locations for new transit service:
+- [p052_c0006] • Long Island City (existing) • Greenpoint Avenue • Haberman • Grand Avenue/Flushing Avenue • Fresh Pond/Metropolitan Avenue • Metro Mall • 80 th Street • Woodhaven Boulevard • Richmond Hill • Jamaica (existing)
+[p052_c0007] Figure 1-18 and Figure 1-19 show overall job and population density, respectively. The sections below discuss conditions within each of the five Corridor sections noted above.
+[p052_c0008] _11 The Penny Bridge Station was located at Laurel Hill Boulevard and Review Avenue. The section border is just east of this._
+[p052_c0009] _1-32_
+
+## Page 53
+
+### [p053_c0001] Lower Montauk Branch Rail Study
+[p053_c0002] _Figure 1-17 Lower Montauk Branch Corridor Sections_
+> [p053_c0003] The map illustrates the Lower Montauk Branch Corridor, which is divided into five distinct sections. The corridor is defined by a red line representing a half-mile buffer around the dark blue line of the Lower Montauk Branch. Green lines indicate the boundaries between the sections. The map shows the branch running from Manhattan in the northwest, through Queens, and into Brooklyn. The sections are labeled as follows: Section 1 is in Manhattan; Section 2 is in Queens; Section 3 is in Brooklyn; Section 4 is in Queens; and Section 5 is in Brooklyn. A scale bar at the bottom indicates distances of 0, 1.5, and 3 miles. A north arrow is also present. Legend: Lower Montauk Branch Half-mile Buffer (Red line) Lower Montauk Branch (Dark blue line) Section Border (Green line) Map Labels: Manhattan, Queens, Brooklyn, Section 1, Section 2, Section 3, Section 4, Section 5. Scale: 0, 1.5, 3 Miles North Arrow: N
+[p053_c0004] The Lower Montauk Branch Corridor comprises approximately nine square miles and 64 census tracts, and contains 178,918 residents and 95,760 jobs.
+[p053_c0005] _1-33_
+
+## Page 54
+
+### [p054_c0001] Lower Montauk Branch Rail Study
+[p054_c0002] _Figure 1-18 Total Jobs per Tract_
+### [p054_c0003] Legend-Total Jobs per Tract
+- [p054_c0004] 0 - 285 286 - 530 531 - 890 891 - 1,675 1,676 - 76,420 Lower Montauk Branch Half-mile Buffer Lower Montauk Branch Lower Montauk Branch Station
+> [p054_c0005] The map displays the Lower Montauk Branch rail line and its half-mile buffer area. The rail line is shown as a dark blue line with white circular markers for stations. The buffer area is outlined in red. The map is color-coded by total jobs per tract, with darker shades of brown indicating higher job counts. Key locations labeled include Long Island City, Greenpoint Ave, Haberman, Grand Ave/Flushing Ave, Fresh Pond, Metro Mall, 80th Street, Woodhaven Blvd, Richmond Hill, and Jamaica. The map also shows the surrounding urban and suburban landscape.
+> [p054_c0006] A scale bar indicating distances of 0, 1.5, and 3 miles.
+> [p054_c0007] A north arrow pointing towards the top of the map.
+[p054_c0008] _1-34_
+
+## Page 55
+
+### [p055_c0001] Lower Montauk Branch Rail Study
+[p055_c0002] _Figure 1-19 Total Population per Tract_
+### [p055_c0003] Legend-Total Population per Tract
+- [p055_c0004] 0 - 3082 3,083 - 4,740 4,741 - 6,644 6,645 - 10,879 10,880 - 38,929 Lower Montauk Branch Half-mile Buffer Lower Montauk Branch Lower Montauk Branch Station
+> [p055_c0005] The map displays the Lower Montauk Branch rail line and its half-mile buffer area. The rail line is shown as a dark blue line with white circular markers for stations. The buffer area is outlined in red. The map is color-coded by population density: light yellow (0-3082), light orange (3,083-4,740), medium orange (4,741-6,644), dark orange (6,645-10,879), and dark brown (10,880-38,929). Key locations labeled include Long Island City, Greenpoint Ave, Haberman, Grand Ave/Flushing Ave, Fresh Pond, Metro Mall, 80th Street, Woodhaven Blvd, Richmond Hill, and Jamaica. A scale bar at the bottom indicates 0, 1.5, and 3 miles, and a north arrow is located to the right of the scale.
+[p055_c0006] _1-35_
+
+## Page 56
+
+### [p056_c0001] Lower Montauk Branch Rail Study
+### [p056_c0002] 1.3.1 Section 1: Long Island City Terminus to Penny Bridge Station
+### [p056_c0003] 1.3.1.1 Zoning and Land Use
+[p056_c0004] As depicted in Figure 1-20, Section 1 contains 1.9 square miles at the Corridor's western edge. Most of this section, including every parcel immediately adjacent to the Branch, is zoned for heavy or light industry. However, some dense residential development exists in Long Island City and northern Greenpoint. The area just outside the half-mile buffer includes a mix of light industry and residential development in Long Island City, Sunnyside, and Greenpoint, as well as the large, Amtrak-owned Sunnyside Yard.
+[p056_c0005] _1-36_
+
+## Page 57
+
+### [p057_c0001] Lower Montauk Branch Rail Study
+[p057_c0002] _Figure 1-20 Section 1 Zoning_
+> [p057_c0003] Legend: Lower Montauk Branch (Dark Blue line) Lower Montauk Branch Half-mile Buffer (Red line) Zoning - Parcels Within Half-Mile of Lower Montauk Centerline and adjacent Zoning Categories: Manufacturing: M1-1, M1-1D, M1-2, M1-2/R6, M1-2/R6A, M1-3, M1-4, M1-4/R6A, M1-4/R6B, M1-4/R7A, M1-5, M1-5/R7-3, M1-5/R7X, M1-5/R8A Commercial: M2-1, M3-1, M3-2, C4-3A, C4-4A, C4-5X, C6-2, C6-3, C6-4, C8-1, PARK Residential: R1-2, R2, R3-1, R3-2, R3A, R3X, R4, R4-1, R4A, R4B, R5, R5B, R5D, R6, R6A, R6B, R7-3, R7A, R7X, R8, R10 Map Labels: Long Island City, Greenpoint Ave, Maspeth Scale: 0 625 1,250 2,500 3,750 5,000 Feet Statistics: Census tracts: 7 Total square miles: 1.9 Total jobs: 36,175 Total population: 22,649 Census Tracts whose geographic centroids fall within 1/2 mile of the centerline of the Lower Montauk right-of-way, in the section. Figures are approximate
+[p057_c0004] _1-37_
+
+## Page 58
+
+### [p058_c0001] Lower Montauk Branch Rail Study
+### [p058_c0002] 1.3.1.2 Population and Jobs
+[p058_c0003] As depicted in Figure 1-21, Section 1 contains seven census tracts, 22,649 residents, and 36,175 jobs. Census tract 1 houses more residents and jobs than any other tract in the section, at 6,403 and 10,820, respectively. It wraps around Long Island City's East River and the Newtown Creek waterfront.
+[p058_c0004] _1-38_
+
+## Page 59
+
+### [p059_c0001] Lower Montauk Branch Rail Study
+[p059_c0002] _Figure 1-21 Section 1 Tracts_
+[p059_c0003]
+
+```text
+Census Tract Population Total Jobs 563 (Brooklyn) 4,519 1,090 579 (Brooklyn) 1,016 2,980 589 (Brooklyn) 1,786 1,685 593 (Brooklyn) 2,036 740 1 6,403 10,820 7 5,815 8,730 199 1,074 10,130 Total 22,649 36,175
+```
+> [p059_c0004] 0 550 1,100 2,200 3,300 4,400 Feet Lower Montauk Branch Lower Montauk Branch Half-mile Buffer Census Tract in this Section Census Tract outside this Section 599 Census Tract Number
+[p059_c0005] Census Tracts whose geographic centroids fall within 1/2 mile of the centerline of the Lower Montauk right-of-way, in the section. Figures are approximate
+[p059_c0006] _1-39_
+
+## Page 60
+
+### [p060_c0001] Lower Montauk Branch Rail Study
+### [p060_c0002] 1.3.2 Section 2: Penny Bridge Station to Fresh Pond Junction
+### [p060_c0003] 1.3.2.1 Zoning and Land Use
+[p060_c0004] Figure 1-22 shows Section 2, comprised of 2.4 square miles in Maspeth, Ridgewood, and Middle Village.
+[p060_c0005] This section is bisected by Flushing Avenue into two distinct segments. The western segment is mainly zoned for manufacturing, especially on the parcels directly adjacent to the Branch. Both light and heavy industrial activities are present in this section. The area east of Flushing Avenue is dominated by low-density residential zoning and several cemeteries, prevalent in this part of Queens.
+[p060_c0006] _1-40_
+
+## Page 61
+
+### [p061_c0001] Lower Montauk Branch Rail Study
+[p061_c0002] _Figure 1-22 Section 2 Zoning_
+> [p061_c0003] Legend: Lower Montauk Branch (Dark Blue Line) Lower Montauk Branch Half-mile Buffer (Red Line) Zoning - Parcels Within Half-Mile of Lower Montauk Centerline and adjacent Zoning Categories: Manufacturing: M1-1, M1-1D, M1-2, M1-2/R6, M1-2/R6A, M1-3, M1-4, M1-4/R6A, M1-4/R6B, M1-4/R7A, M1-5, M1-5/R7-3, M1-5/R7X, M1-5/R8A Commercial: M2-1, M3-1, M3-2, C4-3A, C4-4A, C4-5X, C6-2, C6-3, C6-4, C8-1, PARK Residential: R1-2, R2, R3-1, R3-2, R3A, R3X, R4, R4-1, R4A, R4B, R5, R5B, R5D, R6, R6A, R6B, R7-3, R7A, R7X, R8, R10 Map Labels: Maspeth, Haberman, Middle Village, Ridgewood, Fresh Pond, Grand Ave/Flushing Ave Scale: 0 625 1,250 2,500 3,750 5,000 Feet Census Statistics: Census tracts: 16 Total square miles: 2.4 Total jobs: 19,375 Total population: 42,043 Census Tracts whose geographic centroids fall within 1/2 mile of the centerline of the Lower Montauk right-of-way, in the section. Figures are approximate
+[p061_c0004] _1-41_
+
+## Page 62
+
+### [p062_c0001] Lower Montauk Branch Rail Study
+### [p062_c0002] 1.3.2.2 Population and Jobs
+[p062_c0003] As depicted in Figure 1-23, Section 2 contains 16 census tracts, 42,043 residents, and 19,375 jobs. Census Tract 613.01 is the most populous tract with a population of 6,281, and is located along the Ridgewood/Middle Village border. Census tract 219 houses the heavy industry along Newtown Creek and 5,005 jobs, more than any other tract in this section. These manufacturing sites are well served by the Lower Montauk Branch. Census Tracts 219 and 607.01 did not meet a minimum population threshold for this analysis, so their populations were not counted.
+[p062_c0004] _1-42_
+
+## Page 63
+
+### [p063_c0001] Lower Montauk Branch Rail Study
+[p063_c0002] _Figure 1-23 Section 2 Tracts_
+[p063_c0003] *Tracts 219 and 607.01 are located within the half-mile buffer, but did not meet a minimum population threshold and were not included in the population analysis.
+[p063_c0004]
+
+```text
+Census Tract Population Total Jobs 205 994 2,885 219 N/A* 5,005 521 1,744 240 525 1,840 190 531 2,785 1,990 535 1,328 2,850 585 4,476 355 587 3,421 425 591 5,210 210 593 4,192 395 595 4,435 1,180 599 1,376 270 601 1,955 125 603 2,006 350 607.01 N/A* 75 613.01 6,281 2,830 Total 42,043 19,375
+```
+[p063_c0005] Census Tracts whose geographic centroids fall within 1/2 mile of the centerline of the Lower Montauk right-of-way, in the section. Figures are approximate
+[p063_c0006] _1-43_
+
+## Page 64
+
+### [p064_c0001] Lower Montauk Branch Rail Study
+### [p064_c0002] 1.3.3 Section 3: Fresh Pond Junction to Atlas Park Mall
+### [p064_c0003] 1.3.3.1 Zoning and Land Use
+[p064_c0004] Section 3, as shown in Figure 1-24, contains 1.1 square miles in the neighborhoods of Ridgewood, Glendale, and Middle Village. The section is almost entirely residential, with some manufacturing zones at the Fresh Pond Junction and Yard, south of the Yard along the Bay Ridge Branch, and along the Lower Montauk Branch in Glendale. Several large cemeteries border the area to the north and south, isolating it from the neighborhoods beyond.
+[p064_c0005] _1-44_
+
+## Page 65
+
+### [p065_c0001] Lower Montauk Branch Rail Study
+[p065_c0002] _Figure 1-24 Section 3 Zoning_
+> [p065_c0003] Legend: Lower Montauk Branch (Dark Blue Line) Lower Montauk Branch Half-mile Buffer (Red Line) Zoning - Parcels Within Half-Mile of Lower Montauk Centerline and adjacent Zoning Categories: Manufacturing: M1-1, M1-1D, M1-2, M1-2/R6, M1-2/R6A, M1-3, M1-4, M1-4/R6A, M1-4/R6B, M1-4/R7A, M1-5, M1-5/R7-3, M1-5/R7X, M1-5/R8A Commercial: M2-1, M3-1, M3-2, C4-3A, C4-4A, C4-5X, C6-2, C6-3, C6-4, C8-1 Residential: PARK, R1-2, R2, R3-1, R3-2, R3A, R3X, R4, R4-1, R4A, R4B, R5, R5B, R5D, R6, R6A, R6B, R7-3, R7A, R7X, R8, R10 Map Labels: Maspeth, Middle Village, Metro Mall, 80th Street, Glendale, Ridgewood Scale: 0 625 1,250 2,500 3,750 5,000 Feet Summary Statistics: Census tracts: 14 Total square miles: 1.1 Total jobs: 5,095 Total population: 31,584 Census Tracts whose geographic centroids fall within 1/2 mile of the centerline of the Lower Montauk right-of-way, in the section. Figures are approximate
+[p065_c0004] _1-45_
+
+## Page 66
+
+### [p066_c0001] Lower Montauk Branch Rail Study
+### [p066_c0002] 1.3.3.2 Population and Jobs
+[p066_c0003] As illustrated by Figure 1-25, Section 3 consists of 14 census tracts containing 31,584 residents and 5,095 jobs. The most populous census tract is Census Tract 577, located in Glendale, with 3,797 residents. Employment in this section is low due to its residential character and concentration of cemeteries. Census tract 621 contains the most jobs of any tract, 810. Census Tract 613.02 did not meet a minimum population threshold for this analysis, so its population was not counted.
+[p066_c0004] _1-46_
+
+## Page 67
+
+### [p067_c0001] Lower Montauk Branch Rail Study
+[p067_c0002] _Figure 1-25 Section 3 Tracts_
+> [p067_c0003] The map displays a section of land with various census tracts outlined in green. A thick red line represents the Lower Montauk Branch Half-mile Buffer, and a thick dark blue line represents the Lower Montauk Branch. Tracts are labeled with their numbers: 577, 579, 581, 613.02*, 619, 621, 623, 625, 627, 629, 633.01, 635, and 657.02. Metro Mall and 80th Street are also labeled. A scale bar and a north arrow are included at the bottom left.
+[p067_c0004] *Tract 613.02 is located within the half-mile buffer, but did not meet a minimum population threshold and was not included in the population analysis.
+> [p067_c0005] 0 550 1,100 2,200 3,300 4,400 Feet
+> [p067_c0006] N
+> [p067_c0007] Lower Montauk Branch Lower Montauk Branch Half-mile Buffer Census Tract in this Section Census Tract outside this Section 599 Census Tract Number
+[p067_c0008]
+
+```text
+Census Tract Population Total Jobs 577 3,797 755 579 1,610 100 581 2,875 345 613.02 N/A* 45 619 2,738 390 621 2,589 810 623 2,049 435 625 2,586 185 627 2,917 500 629 3,086 605 633.01 1,450 275 633.02 1,490 105 635 2,636 320 657.02 1,761 225 Total 31,584 5,095
+```
+[p067_c0009] Census Tracts whose geographic centroids fall within 1/2 mile of the centerline of the Lower Montauk right-of-way, in the section. Figures are approximate
+[p067_c0010] _1-47_
+
+## Page 68
+
+### [p068_c0001] Lower Montauk Branch Rail Study
+### [p068_c0002] 1.3.4 Section 4: Atlas Park Mall to Park Lane S (eastern border of Forest Park)
+### [p068_c0003] 1.3.4.1 Zoning and Land Use
+[p068_c0004] Section 4, shown in Figure 1-26, is dominated by Forest Park, a 538-acre public park, and adjacent cemeteries. To the west of the park, this section also includes parts of Glendale and Forest Hills, zoned for light industry immediately adjacent to the Branch and lower-density residential areas beyond it. This section also includes Woodhaven Boulevard, a major north-south arterial through Queens and a proposed Select Bus Service route.
+[p068_c0005] _1-48_
+
+## Page 69
+
+### [p069_c0001] Lower Montauk Branch Rail Study
+[p069_c0002] _Figure 1-26 Section 4 Zoning_
+> [p069_c0003] The figure is a map of Section 4 Zoning, showing the Lower Montauk Branch and its half-mile buffer. The map is color-coded by zoning districts, which are categorized into three main groups: Manufacturing, Commercial, and Residential. Legend: Lower Montauk Branch (Dark Blue line) Lower Montauk Branch Half-mile Buffer (Red line) Zoning - Parcels Within Half-Mile of Lower Montauk Centerline and adjacent Manufacturing Zoning: M1-1 M1-1D M1-2 M1-2/R6 M1-2/R6A M1-3 M1-4 M1-4/R6A M1-4/R6B M1-4/R7A M1-5 M1-5/R7-3 M1-5/R7X M1-5/R8A Commercial Zoning: M2-1 M3-1 M3-2 C4-3A C4-4A C4-5X C6-2 C6-3 C6-4 C8-1 Residential Zoning: PARK R1-2 R2 R3-1 R3-2 R3A R3X R4 R4-1 R4A R4B R5 R5B R5D R6 R6A R6B R7-3 R7A R7X R8 R10 Map Labels: Forest Hills Woodhaven Blvd Glendale Richmond Hill Scale: 0 625 1,250 2,500 3,750 5,000 Feet North Arrow: N Census Tracts: 6 Total square miles: 1.5 Total jobs: 4,150 Total population: 10,500 Census Tracts whose geographic centroids fall within 1/2 mile of the centerline of the Lower Montauk right-of-way, in the section. Figures are approximate.
+[p069_c0004] _1-49_
+
+## Page 70
+
+### [p070_c0001] Lower Montauk Branch Rail Study
+### [p070_c0002] 1.3.4.2 Population and Jobs
+[p070_c0003] Figure 1-27 illustrates Section 4's six census tracts, with 10,500 residents and 4,150 jobs. Census tract 637 in Glendale has the most residents and jobs: 3,199 and 2,030, respectively. No other census tract in this section has more than 625 jobs.
+[p070_c0004] _1-50_
+
+## Page 71
+
+### [p071_c0001] Lower Montauk Branch Rail Study
+[p071_c0002] _Figure 1-27 Section 4 Tracts_
+[p071_c0003] 0 550 1,100 2,200 3,300 4,400 Feet
+- [p071_c0004] Lower Montauk Branch Lower Montauk Branch Half-mile Buffer Census Tract in this Section Census Tract outside this Section 599 Census Tract Number
+[p071_c0005]
+
+```text
+Census Tract Population Total Jobs 637 3,199 2,030 639 2,551 465 641.02 154 90 645 1,948 625 729 1,147 490 731 1,501 450 Total 10,500 4,150
+```
+[p071_c0006] _Census Tracts whose geographic centroids fall within 1/2 mile of the centerline of the Lower Montauk right-of-way, in the section. Figures are approximate_
+[p071_c0007] _1-51_
+
+## Page 72
+
+### [p072_c0001] Lower Montauk Branch Rail Study
+### [p072_c0002] 1.3.5 Section 5: Park Lane S (eastern border of Forest Park) to Jamaica Terminus
+### [p072_c0003] 1.3.5.1 Zoning and Land Use
+[p072_c0004] Section 5, as seen in Figure 1-28, has the most diverse land use in the Corridor. Its 2.1 square miles contain a mix of manufacturing, residential, and commercial land uses in Richmond Hill, Jamaica, and a small section of Kew Gardens. Light industrial uses lie immediately around the Branch and to its east; the Jamaica business district lies to the east of the branch with dense commercial development, and residential development fills the majority of this Corridor section. Residential districts are primarily lower-density, with additional medium-density zones along Atlantic Avenue, 101st Avenue, and Liberty Avenue.
+[p072_c0005] _1-52_
+
+## Page 73
+
+### [p073_c0001] Lower Montauk Branch Rail Study
+[p073_c0002] _Figure 1-28 Section 5 Zoning_
+> [p073_c0003] The figure is a map of Section 5 showing zoning and the Lower Montauk Branch. A legend on the left side categorizes the zoning into three main groups: Manufacturing: Includes zones M1-1, M1-1D, M1-2, M1-2/R6, M1-2/R6A, M1-3, M1-4, M1-4/R6A, M1-4/R6B, M1-4/R7A, M1-5, M1-5/R7-3, M1-5/R7X, and M1-5/R8A. Commercial: Includes zones M2-1, M3-1, M3-2, C4-3A, C4-4A, C4-5X, C6-2, C8-3, C6-4, and C8-1. Residential: Includes zones PARK, R1-2, R2, R3-1, R3-2, R3A, R3X, R4, R4-1, R4A, R4B, R5, R5B, R5D, R6, R6A, R6B, R7-3, R7A, R7X, R8, and R10. The map shows the Lower Montauk Branch (dark blue line) and its half-mile buffer (red line). Key locations labeled on the map include Kew Gardens, Richmond Hill, and Jamaica. A scale bar at the bottom indicates distances in feet (0, 625, 1,250, 2,500, 3,750, 5,000). A north arrow is also present. Census tracts: 24 Total square miles: 2.1 Total jobs: 30,965 Total population: 72,142 Census Tracts whose geographic centroids fall within 1/2 mile of the centerline of the Lower Montauk right-of-way, in the section. Figures are approximate
+[p073_c0004] _1-53_
+
+## Page 74
+
+### [p074_c0001] Lower Montauk Branch Rail Study
+### [p074_c0002] 1.3.5.2 Population and Jobs
+[p074_c0003] This section, seen in Figure 1-29, contains 24 census tracts, all of which contain at least 1,600 people, combining for a total population of 72,142. The most populous census tract is Census Tract 240, located in the Jamaica hub, with 6,087 residents. The Jamaica Center area also includes census tract 142.02, which contains the Jamaica Hospital Medical Center and 5,525 jobs, the most of any tract in the section.
+[p074_c0004] _1-54_
+
+## Page 75
+
+### [p075_c0001] Lower Montauk Branch Rail Study
+[p075_c0002] _Figure 1-29 Section 5 Tracts_
+> [p075_c0003] The map displays a section of Lower Montauk Branch with various census tracts outlined in green. A thick red line indicates a half-mile buffer around the branch. The branch itself is shown as a dark blue line. Two locations are marked with white dots and labeled: 'Richmond Hill' and 'Jamaica'. The census tracts are numbered as follows: 26, 120, 122, 124, 128, 130, 132, 134, 136, 140, 142.01, 142.02, 144, 148, 150, 152, 154, 156, 204, 206, 208, 212, 238, and 240. The map also shows the street grid and other geographical features.
+> [p075_c0004] 0 550 1,100 2,200 3,300 4,400 Feet
+> [p075_c0005] N
+> [p075_c0006] Lower Montauk Branch Lower Montauk Branch Half-mile Buffer Census Tract in this Section Census Tract outside this Section 599 Census Tract Number
+[p075_c0007] Census Tracts whose geographic centroids fall within 1/2 mile of the centerline of the Lower Montauk right-of-way, in the section. Figures are approximate
+[p075_c0008]
+
+```text
+Census Tract Population Total Jobs 26 2,467 290 120 2,467 925 122 3,632 690 124 3,118 850 128 2,245 595 130 1,645 605 132 2,329 1,110 134 5,920 580 136 2,063 505 140 3,733 550 142.01 4,452 725 142.02 2,749 5,525 144 2,033 1,305 148 2,200 155 150 2,895 150 152 2,808 315 154 2,524 645 156 3,104 605 204 2,195 1,190 206 1,855 575 208 2,554 4,735 212 2,362 1,895 238 4,705 1,965 240 6,087 4,480 Total 72,142 30,965
+```
+[p075_c0009] _1-55_
+
+## Page 76
+
+### [p076_c0001] Lower Montauk Branch Rail Study
+[p076_c0002] Table 1-5 and Figure 1-30 summarize and compare the population, jobs and population, and jobs densities (per square mile) for the five defined corridor sections. The sections were defined primarily by two goals:
+- [p076_c0003] • To capture specific segments of the Lower Montauk Branch itself, e.g.: – Section 1: from LIC to the Haberman area, including the Waste Management facility; – Section 5: the elevated viaduct section east of Forest Park to the merger with the LIRR Main Line at Jamaica Station). • To take into account major differences and concentrations of various land uses in the surrounding areas, including industrial to commercial concentrations (e.g., in southern Maspeth, along and immediately north and south of much of the Branch) and large groups of large parks and cemetery areas (much of Maspeth, Forest Park).
+[p076_c0004] Sections thus defined have considerable differences among them in terms of size of these sections (square miles, census tracts) and in both the total number and densities of population and jobs.
+- [p076_c0005] • Those already well transit-served Corridor sections (areas within Sections 1 LIC/Greenpoint) and 5 (Richmond Hill, Jamaica) understandably have the highest number and densities of jobs. • A solidly residential area like Section 3 (from the western end of Fresh Pond Yards into the Glendale and Middle Village neighborhoods) is smallest in size among the Sections but has the second highest number and density of residents on the corridor.
+[p076_c0006] These same differences were among the factors used in the selection of potential station location and in assessing possible future transit-supported growth and the potential use of tax increment financing techniques to help finance the type of passenger rail service under consideration.
+[p076_c0007] _Table 1-5 Comparison of Population and Jobs by Corridor Segment_
+[p076_c0008]
+
+```text
+Section Sq. Miles Census Tracts Population Jobs Number Per Sq. Mi. Number Per Sq. Mi. 1. LIC to Penny Bridge Station 1.9 7 22,649 11,921 36,175 19,039 2. Penny Bridge Station to Fresh Pond Junction 2.4 16 42,043 17,518 19,375 8,073 3. Fresh Pond Junction to Atlas Park Mall 1.1 14 31,584 28,713 5,095 4,632 4. Atlas Park Mall to Park Lane S (eastern border of Forest Park) 1.5 6 10,500 7,000 4,150 2,767 5. Park Lane S (eastern border of Forest Park) to Jamaica Terminus 2.1 24 72,142 34,353 30,965 14,745 Totals 9 67 178,918 19,880 95,760 10,640
+```
+[p076_c0009] _1-56_
+
+## Page 77
+
+### [p077_c0001] Lower Montauk Branch Rail Study
+[p077_c0002] _Figure 1-30 Population and Jobs Per Sq. Mile by Corridor Segment_
+> [p077_c0003] Corridor Segment Population/Sq. Mi. Jobs/Sq. Mi. 1. LIC to Penny Bridge Station 11,921 19,039 2. Penny Bridge Station to Fresh Pond Junction 17,518 8,073 3. Fresh Pond Junction to Atlas Park Mall 28,713 4,632 4. Atlas Park Mall to Park Lane S (eastern border of Forest Park) 7,000 2,767 5. Park Lane S (eastern border of Forest Park) to Jamaica Terminus 34,353 14,745
+[p077_c0004] _1-57_
+
+## Page 78
+
+### [p078_c0001] Lower Montauk Branch Rail Study
+### [p078_c0002] 1.4 Technical Characteristics of the Lower Montauk Branch
+[p078_c0003] This section will examine technical aspects of the Lower Montauk Branch, including an overview of the right-of-way (ROW), rail yards and sidings, current operations, and other connections and crossings. Evaluating the technical aspects of the Branch is important in determining both the physical and operational feasibility of reactivating passenger service. The Branch currently handles freight service exclusively, and any passenger service would simultaneously accommodate existing and future freight rail needs. Any feasibility study for passenger rail service must consider the following four elements:
+- [p078_c0004] • ROW conditions and availability • Parties that own, operate, and maintain the infrastructure • Trackbed conditions and geometry • Operations
+[p078_c0005] Physical characteristics maps of the Lower Montauk Branch can be found in Appendix A. Figure 1-31 and Figure 1-32 show an overview of the physical restrictions along the Branch.
+[p078_c0006] _Figure 1-31 Physical Restrictions along the Lower Montauk Branch- western section_
+> [p078_c0007] The map illustrates the western section of the Lower Montauk Branch, spanning from Long Island City Terminal in Brooklyn to Fresh Pond Yard in Queens. The track is shown as a dark blue line with various colored segments indicating rail crossings: brown for at-grade, purple for overhead, and red for undergrade. Key features include: Stations: Long Island City Terminal, Blissville Yard, Maspeth Yard, and Fresh Pond Yard. Mileposts: 0, 1, 2, 3, 4, and 5. Rail Yards: Long Island City Terminal, Blissville Yard, Maspeth Yard, and Fresh Pond Yard. Rail Crossings: Dutch Kills Creek: Single Track, Greenpoint Avenue: Single Track, Waste Management Crossing, and Railroad Avenue (Private Crossing). Geography: The map shows the boundary between Brooklyn and Queens, with green areas representing parks and water bodies. Legend: Lower Montauk Branch (dark blue line) Station (white circle) Milepost (circle with number) Rail Yard (teal rectangle) Rail Crossings: At-grade (brown square) Overhead (purple square) Undergrade (red square) At the bottom right, an arrow indicates the direction of the Lower Montauk Branch to Ridgewood, Richmond Hill, Jamaica.
+[p078_c0008] _1-58_
+
+## Page 79
+
+### [p079_c0001] Lower Montauk Branch Rail Study
+[p079_c0002] _Figure 1-32 Physical Restrictions along the Lower Montauk Branch- eastern section_
+> [p079_c0003] The map illustrates the eastern section of the Lower Montauk Branch of the Long Island Rail Road. The branch is shown as a dark blue line winding through a landscape with green areas representing parks and open space. Key locations include Queens to the west, the LIRR Main Line to the east (New Hyde Park, Brookhaven, Riverhead), and the Richmond Hill Lead and Morris Park Yard. The map is marked with mileposts 5, 6, 7, 8, and 9. A legend in the bottom right corner defines the symbols: a dark blue line for the Lower Montauk Branch, a white circle for a Station, a circled number for a Milepost, a teal rectangle for a Rail Yard, and colored squares for Rail Crossings: brown for At-grade, purple for Overhead, and red for Undergrade. The map shows various colored segments along the branch line, indicating the presence of these crossings.
+### [p079_c0004] 1.4.1 Right-of-Way (ROW) Overview
+[p079_c0005] The Lower Montauk Branch of the Long Island Rail Road runs 8.5 miles from Long Island City at its western end to Jamaica at its eastern end. In its western section, the Branch runs alongside Newtown Creek on the northern edge of the border between Queens and Brooklyn. The right-of-way varies by width and number of tracks. Most of the Branch is double-tracked on a right-of-way of approximately 50-60 feet, with the following exceptions:
+- [p079_c0006] • Rail Yards: Long Island City (13 tracks, 280 feet wide), Blissville (4 tracks, 100 feet wide), Maspeth (2-4 tracks, 130-150 feet wide), Fresh Pond (4-6 tracks, 200-220 feet wide), Morris Park (2 tracks, 75 feet wide) • Milepost 0.7 - Dutch Kills Bridge: single track • Milepost 1.2 - Greenpoint Avenue: single track
+[p079_c0007] Numerous right-of-way restrictions are found throughout the Lower Montauk Branch and the most common causes of these restrictions can be found below. While there are ROW restrictions throughout the Branch, the majority of these can be found west of Cooper Avenue in Glendale, past Milepost 5.
+[p079_c0008] _1-59_
+
+## Page 80
+
+### [p080_c0001] Lower Montauk Branch Rail Study
+### [p080_c0002] 1.4.1.1 Right-of-Way Limitations
+[p080_c0003] Along most of the Lower Montauk Branch the tracks run within physically restricted ROW widths from approximately 50 feet wide to 60 feet wide. These ROW restrictions are created as a result of the following seven general existing geographical and physical conditions:
+- [p080_c0004] • Arterial roadways set immediately adjacent to the ROW • Industrial buildings set immediately adjacent to both sides of the tracks • Retaining walls supporting the tracks above the surrounding terrain on one or both sides of the tracks • Retaining walls/steep embankments set on one or both sides of the tracks with the tracks in a trench • Overhead bridges (or decking) and their respective abutments set immediately adjacent to both sides of the tracks • Yard tracks set immediately adjacent to the Lower Montauk Branch tracks • Tracks set on a bridge or viaduct spanning over major arterial roadways, highways, a body of water, or over surrounding terrain below
+[p080_c0005] These ROW restrictions limit or eliminate the availability of unused space within the Lower Montauk Branch ROW. A brief description of these restricted ROW locations is provided below with site photos and approximate milepost limits. These descriptions generally proceed in order of increasing milepost from west to east; however, some of these ROW restrictions can be found scattered throughout the Lower Montauk Branch, as some of these conditions overlap.
+### [p080_c0006] 1.4.1.2 Restricted ROW – Adjacent Arterial Roadways
+[p080_c0007] Both 56 th Road and Rust Street in Queens parallel the Lower Montauk Branch on its northern side from roughly Milepost 1.9 (just east of the 43 rd Street at-grade crossing) to Milepost 3.2 (near Flushing Avenue). These streets are generally four-lane arterial roadways carrying heavy truck volumes for active industrial customers in the area. These roadways typically have parallel parking available. As the tracks abut immediately adjacent to these roadways and parking spaces, there is very limited unused space available within the 50'-60' Lower Montauk Branch ROW. Figure 1-33 is a photograph taken at the 49 th Street crossing and it shows 56 th Road at the right immediately to the north of the railroad tracks.
+[p080_c0008] _1-60_
+
+## Page 81
+
+### [p081_c0001] Lower Montauk Branch Rail Study
+[p081_c0002] _Figure 1-33 56th Road Adjacent to Railroad Tracks_
+> [p081_c0003] A photograph showing railroad tracks running parallel to a road. A blue flatbed truck with "FERRARA CORP." on its side is parked on the road. A "STOP" sign is visible on the left. In the background, there are buildings and a bridge.
+[p081_c0004] Source: Project Team Site Visit, 1/20/17
+### [p081_c0005] 1.4.1.3 Restricted ROW – Tracks on Retained Fill
+[p081_c0006] From roughly Milepost 3.0 to 3.2 the tracks are elevated above the surrounding terrain with a retaining wall on the northern side of the tracks and for short distances on both sides of the tracks. This can be seen in Figure 1-34 below. In these areas there is little or no unused space available on either side of the existing tracks within the Lower Montauk Branch ROW.
+[p081_c0007] _1-61_
+
+## Page 82
+
+### [p082_c0001] Lower Montauk Branch Rail Study
+[p082_c0002] _Figure 1-34 the Lower Montauk Branch Elevated on Retained Fill_
+> [p082_c0003] A Google Streetview photograph showing the Lower Montauk Branch elevated on retained fill. The tracks are supported by a concrete structure with graffiti. A silver SUV is parked at a crosswalk in the foreground. The sky is overcast.
+[p082_c0004] Source: Google Streetview
+### [p082_c0005] 1.4.1.4 Restricted ROW – Adjacent Buildings
+[p082_c0006] At numerous locations along the Lower Montauk Branch, buildings can be found immediately adjacent to the railroad ROW. These buildings are typically zoned industrial and the ROW is limited on either one or both sides, with the total ROW width typically found to be approximately 50 feet to 60 feet wide. As a result of these buildings being close to the tracks there is typically no or very little unused space available within the railroad ROW. Figure 1-35 that follows depicts what these adjacent buildings look like near Milepost 3.3 (just east of Flushing Avenue). Numerous long spans of industrial buildings can be found immediately adjacent to the tracks near Mileposts 0.5, 1.1, 1.7, 3.3, and 6.5.
+[p082_c0007] _1-62_
+
+## Page 83
+
+### [p083_c0001] Lower Montauk Branch Rail Study
+[p083_c0002] _Figure 1-35 Industrial Buildings Adjacent to Railroad Tracks_
+> [p083_c0003] A photograph showing two sets of railroad tracks running parallel to each other, flanked by industrial buildings. The buildings are covered in graffiti. A concrete bridge spans over the tracks in the distance, and a city skyline is visible in the background under an overcast sky.
+[p083_c0004] Source: Project Team Site Visit, 1/20/17
+### [p083_c0005] 1.4.1.5 Restricted ROW – Adjacent Retaining Walls
+[p083_c0006] From approximately Milepost 3.5 (at Andrews Avenue) to Milepost 3.9 (just east of Metropolitan Avenue) the existing tracks are found in a trench with retaining walls or steep embankments on one or both sides. This can be seen below in Figure 1-36. This typically limits the ROW width to being roughly 70 feet wide, with very limited unused space available within the ROW.
+[p083_c0007] _1-63_
+
+## Page 84
+
+### [p084_c0001] Lower Montauk Branch Rail Study
+[p084_c0002] _Figure 1-36 Lower Montauk Tracks and ROW in a Trench_
+> [p084_c0003] A photograph showing a set of railroad tracks in a trench. The tracks are covered with gravel and lead towards a concrete bridge structure in the distance. The left wall of the trench is covered in graffiti. Bare trees are visible on the right side of the tracks.
+[p084_c0004] Source: Project Team Site Visit, 1/20/17
+### [p084_c0005] 1.4.1.6 Restricted ROW – Overgrade Bridges
+[p084_c0006] There are four overgrade bridges from roughly Milepost 3.5 (Andrews Avenue) to Milepost 3.8 (Metropolitan Avenue). Additional overgrade bridges can be found along the Lower Montauk Branch. The Metropolitan Avenue structure is the longest overgrade bridge, being nearly 675 feet in length. In all of these locations the abutments of the overgrade bridge severely limit the available unused space within the railroad ROW, as can be seen in Figure 1-36 above.
+[p084_c0007] In Figure 1-37 that follows the highly constrained nature of the railroad ROW can be seen below the Metropolitan Avenue overgrade structure. It should be noted that on the left side of Figure 1-37 a small earthen berm can be seen to the left of the track. The Buckeye Pipeline is buried beneath this small earthen berm.
+[p084_c0008] _1-64_
+
+## Page 85
+
+### [p085_c0001] Lower Montauk Branch Rail Study
+[p085_c0002] _Figure 1-37 Constrained ROW beneath the Metropolitan Avenue Overgrade Bridge_
+[p085_c0003] Source: Project Team Site Visit, 1/20/17
+### [p085_c0004] 1.4.1.7 Restricted ROW – Tracks Adjacent to Yard Tracks
+[p085_c0005] As described later in this report, the five rail yards found on the Lower Montauk Branch are heavily utilized by the region's freight operators. In some instances the two mainline tracks of the Lower Montauk Branch proceed through or adjacent to the yards and are used as storage capacity for freight trains. As can be seen in the oblique aerial photo of Figure 1-38, the eastern end of Fresh Pond Yard has a high volume of rail traffic. This high utilization was also noted during field visits in November 2016 and January 2017. During the January 2017 field visits, photographs were also taken of the freight operator's closed-circuit security TV displays where stored or moving freight trains are observed in nearly all of the camera positions. Specific volumes of freight moves are described later in this report.
+[p085_c0006] _1-65_
+
+## Page 86
+
+### [p086_c0001] Lower Montauk Branch Rail Study
+[p086_c0002] _Figure 1-38 Oblique Aerial of Occupied Eastern Section of Fresh Pond Yard_
+> [p086_c0003] An oblique aerial photograph showing the eastern section of Fresh Pond Yard. The yard is densely packed with numerous freight cars, many of which are red and white. To the left of the yard, there are residential buildings and a large industrial building with a flat roof. To the right, there is a large green field and a bridge in the distance. The photograph is taken from a high angle, looking down at the yard.
+[p086_c0004] Source: GoogleEarth
+[p086_c0005] Below in Figure 1-39, a west-facing photograph was taken at Milepost 4.3, just west of the NYCT-MTA overgrade bridge carrying the NYCT “M” subway service. This photograph is of the western section of Fresh Pond Terminal and represents a typical sight in or adjacent to the five yards of the Lower Montauk Branch, with numerous freight cars in storage. In these locations there is no available unused space within the railroad ROW.
+[p086_c0006] _Figure 1-39 Field Photo of Occupied Western Section of Fresh Pond Yard_
+> [p086_c0007] A field photograph taken from a low angle, looking down a set of railroad tracks. The tracks are made of steel rails on wooden sleepers, set in a bed of gravel. On the right side of the tracks, there are several freight cars. One is a large, light-colored boxcar with the text "FWTX 620090" on its side. Next to it is a green boxcar with "CE EX" and "30" on its side. The background shows a cloudy sky and some trees. The photograph is taken from a west-facing perspective.
+[p086_c0008] Source: Project Team Site Visit, 1/20/17
+[p086_c0009] _1-66_
+
+## Page 87
+
+### [p087_c0001] Lower Montauk Branch Rail Study
+### [p087_c0002] 1.4.1.8 Restricted ROW – Tracks on a Bridge or Elevated Structure
+[p087_c0003] While the majority of the ROW restrictions are found west of Cooper Avenue, there are a few instances where the ROW narrows east of Cooper Avenue. These include locations where the tracks are set atop a bridge spanning over and above the surrounding terrain, over a major roadway/highway, and where the tracks are set atop an elevated structure.
+[p087_c0004] Through-plate girder bridges carrying the tracks over roadways/highways can be found at: Grand Avenue, Flushing Avenue, Cooper Avenue, Union Turnpike, and the Jackie Robinson Parkway. An example of this through-plate girder span can be found below in Figure 1-40, which is the span over the Jackie Robinson Parkway.
+[p087_c0005] _Figure 1-40 Through-Plate Girder Span over the Jackie Robinson Parkway_
+[p087_c0006] Source: Project Team Site Visit, 1/20/17
+[p087_c0007] In the easternmost section of the Lower Montauk Branch is a viaduct paralleling Babbage Street that spans nearly 2,300 feet, from 84 th Avenue to Jamaica Avenue. This viaduct can be seen in Figure 1-41, where there is no unused space available atop the viaduct.
+[p087_c0008] _1-67_
+
+## Page 88
+
+### [p088_c0001] Lower Montauk Branch Rail Study
+[p088_c0002] _Figure 1-41 Elevated Viaduct Paralleling Babbage Street_
+[p088_c0003] Source: Project Team Site Visit, 1/20/17
+[p088_c0004] In all of these bridge and viaduct instances there is no available unused space within the railroad ROW.
+### [p088_c0005] 1.4.2 Rail Yards
+[p088_c0006] The Branch has five rail yards serving its rolling stock. At the western terminus (Milepost 0) at Long Island City sits the Long Island City Terminal Yard, with 13 tracks. The Blissville Yard is located at Milepost 1, just west of the Dutch Kills Creek. The Maspeth Yard is situated near Milepost 2.5, between at-grade crossings at 49 th Street/56 th Road and Maspeth Avenue/Rust Street. At Milepost 4.4 is the Fresh Pond Yard, adjacent to Lutheran All Faith Cemetery in Middle Village. During a 2017 field visit, the railroad noted that this yard has nearly continuous movement of operations. A search using Google Maps shows the railyard is being utilized at near full capacity. This yard, seen in Figure 1-42, sees approximately 2,500 train movements annually, mostly for aggregate freight for construction. Morris Park Yard, easternmost yard, is located around Milepost 8. This is where the Branch meets the LIRR Main Line.
+[p088_c0007] _1-68_
+
+## Page 89
+
+### [p089_c0001] Lower Montauk Branch Rail Study
+[p089_c0002] _Figure 1-42 Fresh Pond Yard_
+> [p089_c0003] An aerial photograph showing the Lower Montauk Branch rail line. The rail tracks run diagonally from the top left towards the bottom right. To the left of the tracks is Joseph F. Mafeta Park, a green space with trees and paths. To the right of the tracks is a large industrial area with several buildings, including one labeled 'Avenson Furniture Outlet'. The surrounding area includes various industrial and commercial properties, some with parking lots. The image is a satellite view from Google Maps.
+[p089_c0004] Source: Google Maps
+### [p089_c0005] 1.4.3 Rail Spurs and Sidings
+[p089_c0006] Rail spurs and sidings are critical infrastructural components of the Lower Montauk Branch, allowing trains to directly serve the manufacturing and industrial uses surrounding the lines with more flexibility and less interruption to service on Tracks 1 and 2.
+[p089_c0007] Starting from the far west end of the Branch and proceeding eastward with increasing milepost numbers, the following locations of freight sidings/spurs have been identified:
+- [p089_c0008] • Near Milepost 0.5, just east of the Pulaski Bridge, a short freight siding can be found on the north side of the railroad ROW. This active siding serves Pax Foods Corporation. • Near Milepost 0.6, just east of the Long Island City terminus, a double-ended rail siding can be found on the south side of the railroad ROW. This active siding serves the Healthy Brand Oil Corporation, a food service company. • At Milepost 1.3, just east of Greenpoint Avenue, a two-track rail siding can be found on the north side of the railroad ROW. This active siding serves a packaging and extruder industrial customer, and in aerial photography this spur is noted as being served with tanker cars. • At Milepost 2.1 near Restaurant Depot (just east of 43 rd Street), a short siding is located on the south side of the railroad ROW. This is an unused siding. • At Milepost 2.3 several truncated freight spurs can be found on the south side of the railroad ROW. These are unused spurs connecting onto vacant property, with the easternmost truncated, disused spur connecting to the property of construction aggregate supplier Ferrara Brothers.
+[p089_c0009] _1-69_
+
+## Page 90
+
+### [p090_c0001] Lower Montauk Branch Rail Study
+- [p090_c0002] • Near Milepost 2.8 at Maspeth Yard, there is a spur proceeding south parallel to 49 th Street at the Galasso Trucking Facility. This is an active spur. • Just east of the Maspeth Yard at Milepost 2.9 is a spur that connects the Branch to a lumber and construction service facility. This is an active spur. • Near Milepost 3.3 just east of the Flushing Avenue Bridge, a short disused siding can be found along the north side of the railroad ROW.
+[p090_c0003] As many of these freight sidings and spurs actively serve active industrial customers, the right-of-way that the spurs/sidings themselves occupy would not be available for use for any form of reinstitution of passenger rail service without adversely affecting the industrial customer being served.
+[p090_c0004] _1-70_
+
+## Page 91
+
+### [p091_c0001] Lower Montauk Branch Rail Study
+### [p091_c0002] 1.5 Regulation of Passenger Service on or Adjacent to Freight Tracks
+[p091_c0003] The Federal Railroad Administration (FRA) is the federal agency that governs the creation and enforcement of track standards and conditions. These track standards are detailed in the Code of Federal Regulations (CFR) Title 49, Part 213, and apply to FRA-Compliant commuter railroads such as the Long Island Rail Road, freight railroads such as the New York & Atlantic Railway (NY&A), and intercity passenger rail such as Amtrak. While there are a few exceptions, most Light Rail Transit (LRT) and Heavy Rail Transit (HRT)/Metro/Subway operators, such as New York City Transit (NYCT), function as non-FRA-compliant transit operators, which means their track standards are not under the jurisdiction of CFR 49, Part 213; rather, they are controlled by the standards of the Federal Transit Administration (FTA) and the guidance of their own long-standing specifications, standards, and operating rules.
+[p091_c0004] These standards of governance encompass track, equipment, and rolling stock. FRA-compliant commuter railroads must operate FRA-compliant commuter rail vehicles that are designed and tested to withstand highly specified crash loading events. FRA-compliant commuter rail vehicles experience lower levels of damage and are better equipped than non-FRA-compliant vehicles to protect passengers in the event of a collision with a freight car or freight locomotive. Typically LRT and HRT/Metro/Subway transit agencies operate non-FRA-compliant rolling stock and this equipment is not permitted to commingle with freight cars or freight locomotives.
+[p091_c0005] In order to operate passenger service within the Lower Montauk right-of-way (ROW), there are three potential governance/framework options:
+- [p091_c0006] 1. Operating on the existing Lower Montauk freight tracks with FRA-compliant vehicles 2. Operating on the existing Lower Montauk freight tracks with non-FRA-compliant vehicles with temporal (time) separation from all freight trains, or 3. Operating non-FRA-compliant vehicles on transit-exclusive tracks adjacent to the Lower Montauk freight tracks, complying with specified minimum track center spacing requirements offset from the existing freight tracks
+[p091_c0007] While these are the potential three FRA-compliance options, this is only one component in the overall picture of understanding the feasibility of reactivating passenger service. The overall feasibility of any reintroduction of passenger rail service is heavily dependent upon numerous other physical, operating, and economic conditions. These conditions include:
+- [p091_c0008] • The track occupancy of the existing New York & Atlantic Railway freight trains, • Physical condition of the existing tracks, availability of space for construction of new non-FRA-compliant transit only tracks within the Lower Montauk ROW adjacent to the existing tracks, • Availability of space to accommodate passenger platforms • The potential requirement for structural modifications to provide for adequate space for new transit tracks • Accessibility to serve a substantial residential and/or commercial market adjacent to the ROW
+[p091_c0009] _1-71_
+
+## Page 92
+
+### [p092_c0001] Lower Montauk Branch Rail Study
+### [p092_c0002] 1.6 Existing Track & Switch Infrastructure and Suitability for Passenger Rail Service
+[p092_c0003] The conditions of the existing Lower Montauk Branch tracks have an FRA classification of Class 2 tracks. Per CFR 49, Part 213, the maximum allowable passenger speed on Class 2 tracks is 30 MPH, and the maximum allowable freight speed is 25 MPH. However, the New York & Atlantic Railway has an internally imposed speed restriction of 10 MPH throughout most of the Lower Montauk Branch, with the exception of a short segment operating at 15 MPH.
+[p092_c0004] Provided the existing tracks have an FRA track classification of Class 2, the existing Lower Montauk Branch possesses trackbed conditions that are suitable for passenger rail service with FRA-compliant rolling stock up to a maximum authorized speed (MAS) of 30 MPH. However, track geometry (curves and grades), station spacing, and at-grade crossings would also impose additional speed restrictions upon any operating rolling stock.
+[p092_c0005] If FRA-compliant passenger rail service was envisioned on the existing Lower Montauk Branch tracks and it was desired at speeds greater than 30 MPH, significant capital improvements in both trackbed and at-grade crossing conditions would be required.
+[p092_c0006] This same speed could also potentially be achieved on the existing tracks with non-FRA-compliant passenger rolling stock; however, any such operation would require temporal separation. Temporal separation is the act of separating the operation of different rolling stock types using time as a means of segregation in lieu of using physical separation. Under these conditions, freight trains would need to be moved off the existing tracks prior to introduction of non-FRA-compliant rolling stock beginning its passenger service. The non-FRA-compliant vehicles would then be switched off the existing tracks after their last passenger run and into their yard/storage facility prior to reintroduction of freight trains onto the existing tracks.
+### [p092_c0007] 1.6.1 Grade Crossing and Signal Infrastructure
+[p092_c0008] While the Lower Montauk Branch serves and is surrounded by mostly industrial land uses, the Branch still operates in an overall densely populated area. While in some places the tracks are elevated on viaducts or situated in embankments under streets, the development patterns here implicate the need for grade crossings of the railroad over city streets. These grade crossings are signal controlled at the intersection with city streets; at some points the track crosses the street at as narrow a path as 36 feet. The Lower Montauk Branch has the following grade crossings in its 8.5-mile long ROW in Queens:
+- [p092_c0009] • 11 th Street and 53 rd Avenue, Milepost 0.3 • Railroad Avenue near Greenpoint Avenue, Milepost 1.2 • Near 45-73 Railroad Avenue at the Waste Management Facility, Milepost 1.4; this road is closed from 9 AM and 3 PM daily to facilitate truck movement in and out of the facility • Near 38-20 Railroad Avenue at the Waste Management facility, Milepost 1.5; this road is closed from 9 AM and 3 PM daily to facilitate truck movement in and out of the facility
+[p092_c0010] _1-72_
+
+## Page 93
+
+### [p093_c0001] Lower Montauk Branch Rail Study
+- [p093_c0002] • Review Avenue and Laurel Hill Boulevard, Milepost 1.8 • 43 rd Street and 57 th Avenue, Milepost 2 • 49 th Street and 56 th Road, Milepost 2.4 • Maspeth Avenue and Rust Street, Milepost 2.8 • 73 rd Street near 70 th Avenue, Milepost 5.1 • 88 th Street and 76 th Avenue, Milepost 5.9
+[p093_c0003] _Figure 1-43 Grade Crossing at 73 rd Street near 70 th Avenue_
+[p093_c0004] Source: Project Team Site Visit, 11/18/16
+[p093_c0005] _1-73_
+
+## Page 94
+
+### [p094_c0001] Lower Montauk Branch Rail Study
+### [p094_c0002] 1.7 Operations
+[p094_c0003] The current operations on the Lower Montauk Branch are comprised exclusively of freight service, by the New York & Atlantic Railway, on tracks owned by the Long Island Rail Road. The 8.5-mile long Branch serves manufacturing uses along the heavily industrial Newtown Creek waterfront. The through service pattern was adopted in 1998, when the stations were closed due to low ridership; passenger service on the Branch was discontinued entirely in 2012.
+### [p094_c0004] 1.7.1 Power
+[p094_c0005] The rail cars utilizing the Lower Montauk Branch are pulled/pushed exclusively by diesel locomotives. There is no electric train operation infrastructure in place.
+### [p094_c0006] 1.7.2 Current Rail Freight Operations
+[p094_c0007] Freight service on the Lower Montauk Branch is operated by the New York & Atlantic Railway, which leases the tracks from the Long Island Rail Road. The Maspeth Yard sees 2,500 train movements per year, mostly aggregate freight used in construction. The railyards on the Branch are also used to store cars. A Waste Management transfer station near Milepost 1.3 is a major consumer, with continuous rail movement operations between 12 PM and 1 AM daily. Waste Management operations impact the railroad availability as far west as Milepost 0.7 at the Dutch Kills Bridge and as far east as Milepost 4. A proposed rail freight tunnel to New Jersey would have immense impacts on the Branch, increasing freight movement as the network is connected. A recent federal grant was awarded for freight rail operations upgrades. The New York & Atlantic Railway identified their primary customers as:
+- [p094_c0008] • Cooking oil suppliers • Rice suppliers • Fresh fruit and vegetable suppliers • Waste Management • Aggregate suppliers • Paper and lumber suppliers
+[p094_c0009] The waste and food industry has typically grown 3% annually. Construction, manufacturing, and industrial uses are more volatile and connected to economic circumstances. The former operations of passenger service, before its elimination in 1998, served these manufacturing sites, with stations serving manufacturing employees. The land uses surrounding the track today are almost exclusively industrial, with few residential areas.
+[p094_c0010] The Lower Montauk Branch is part of a greater network of rail freight and commuter operations serving Long Island and the New York Metropolitan Area, depicted in Figure 1-44:
+[p094_c0011] _1-74_
+
+## Page 95
+
+### [p095_c0001] Lower Montauk Branch Rail Study
+[p095_c0002] _Figure 1-44 Commuter and Freight Rail Network_
+> [p095_c0003] The map illustrates the Lower Montauk Branch rail network, showing the following features: Legend: Lower Montauk Branch (thick blue line) Commuter Rail (thin grey line) Freight Rail (red line) Commuter & Freight Rail (purple line) x → Freight Trains per Day Key Locations: Grand Central, Penn Station, Long Island City, Waste Mgmt. Transfer Station, Atlantic Terminal, Jamaica, Car Float to NJ. Trains per Day: Indicated by arrows with numbers: 4 near Long Island City, 2 near the Waste Mgmt. Transfer Station, and 6 near Jamaica. Geography: The map shows the branch extending from Manhattan (Manhattan, Brooklyn, Queens) through Nassau County, NY, and into Bergen and Hudson Counties, NJ.
+[p095_c0004] Source: NYCDOT
+### [p095_c0005] 1.7.3 Level of Activity by Milepost
+[p095_c0006] While the Lower Montauk Branch sees overall low freight through service daily, around two trains, there is a significant level of activity. This activity is from train movements, as trains on the Branch are rearranged and stored at the Branch's five rail yards. There are several areas along the Branch where freight cars are stored and/or shuttled with intense frequency during specific windows of the day due to the operational requirements of the specific customer being served by the New York & Atlantic Railway. Shuttling and storage takes place on a mixture of Track 1, Track 2, and inside the adjacent yard/storage tracks, with substantial occupation of Track 1 and 2 during large portions of the day.
+[p095_c0007] Starting from the far west end of the Branch and proceeding eastward with increasing milepost numbers, the following areas have been identified with intense train movement frequencies and/or long durations of train car occupancy of the tracks, serving the specific customers as noted:
+- [p095_c0008] • Milepost 0.5 – NY&A Long Island City Terminal Yard: Service of cooking oil customers with tanker cars • Milepost 1.0 – Blissville Yard: Storage of construction aggregate rail cars • Milepost 1.3 – Waste Management Center: This waste transfer site sees continuous movement in operations from 12 PM to 1 AM. Waste Management is a significant user of the facility, to the point that the heavy truck movement in and out of the facility necessitates the closing of the railroad grade crossings identified at Mileposts 1.4 and 1.5 from 9 AM to 3 PM. This means that trains cannot cross through this section of track; any future passenger reactivation would have to be
+[p095_c0009] _1-75_
+
+## Page 96
+
+### [p096_c0001] Lower Montauk Branch Rail Study
+[p096_c0002] truncated here to accommodate this lease agreement. The center also has implications on the rail operations to the east and west. Movements here impact train operations westward to Milepost 0.7 at the Dutch Kills Bridge, and eastward to Milepost 4 approaching the Fresh Pond Yard.
+- [p096_c0003] • Milepost 2.5 – Maspeth Yard: The Maspeth Yard sees 2,500 train movements annually. These movements mostly consist of aggregate freight, a major industry on the Branch. The yard is located adjacent to aggregate manufacturing processing facilities. • Milepost 4 – Fresh Pond Yard: The Fresh Pond Yard has continuous movement of operations due its location at the intersection of the Lower Montauk Branch, the Fremont Secondary, and the Bay Ridge Branch. This is a critical shipping facility for goods in and out of Long Island. The New York & Atlantic Railway, CSX, the Canadian Pacific Railway, and the Providence and Worcester Railroad maintain freight shipping operations here. • Milepost 6.1 and west – Woodhaven Boulevard: Woodhaven Boulevard, a major north-south thoroughfare, serves as an informal demarcation line between high levels of activities and lower operating volumes. With the manufacturing facilities and rail yards located west of Milepost 6.1, the demand for rail movements is high, with 24-hour continuous activity noted here.
+### [p096_c0004] 1.7.4 Past LIRR Operations
+[p096_c0005] The Long Island Rail Road began passenger service on the Lower Montauk Branch in 1854, with the eventual expansion of service to 6 stations west of Jamaica, with its terminus in Long Island City. Much of the line's ridership consisted of employees of the manufacturing sites adjacent to the Branch. Station facilities were minimal, consisting of small wooden or concrete strips of pavement and little else. Ridership declined precipitously as manufacturing declined in the mid-twentieth century, and by the 1990s, the stations on the Branch were serving single-digit daily ridership, as seen in Figure 1-45. In 1998, the LIRR, citing low ridership and the cost of bringing the stations into ADA compliance and converting to be compatible with new rolling stock, closed the five stations between Long Island City and Jamaica: Penny Bridge, Haberman, Fresh Pond, Ridgewood, and Richmond Hill.
+[p096_c0006] _Figure 1-45 Daily Ridership at Closure of the Branch_
+> [p096_c0007] Lower Montauk Branch Daily Westbound Ridership - 1997 Total daily riders: 11 Station Daily Riders (1997) Richmond Hill 1 Ridgewood 1 Fresh Pond 5 Haberman 3 Penny Bridge 1 Total 11
+[p096_c0008] Source: LIRR
+[p096_c0009] _1-76_
+
+## Page 97
+
+### [p097_c0001] Lower Montauk Branch Rail Study
+### [p097_c0002] 1.7.5 Connections to Other Rights-of-Way
+[p097_c0003] The Montauk Cutoff is a 1/3-mile spur from just east of the Dutch Kills Bridge to the Sunnyside Yards, which Amtrak and New Jersey Transit use for storage. The cutoff is decommissioned and is technically used as the Montauk Cutoff Storage Tracks. Upgrading it for regular use could require a lengthy construction process. A recent request for proposals was undertaken, with adaptive reuse proposals needing to preserve the right-of-way for future transit use. Any implemented projects may affect the ability for use by the Lower Montauk Branch.
+### [p097_c0004] 1.7.6 Connections to Other Freight Services
+[p097_c0005] The Lower Montauk Branch connects other freight branches along its route. The first connection is to the Bushwick Industrial Branch near Milepost 3.4. This branch is operated by the New York & Atlantic Railway. A second connection further west is to the CSX freight branch near the railyard in Glendale at the Fresh Pond Yard, with the Fremont Secondary at Milepost 4.4. The CSX runs freight service northbound from here to points north and east via the Hell Gate Bridge. The Fresh Pond Yard also provides connections to the Providence and Worcester Railroad. There is southbound service operated by the New York & Atlantic Railway on the Bay Ridge Branch to the Bay Ridge Yard and Bush Terminal in Brooklyn, connecting with the New York New Jersey Railroad.
+[p097_c0006] _1-77_
+
+## Page 98
+
+### [p098_c0001] Lower Montauk Branch Rail Study
+### [p098_c0002] 1.8 Rail Capital Projects and Grants
+[p098_c0003] The New York State Department of Transportation (NYSDOT) has supported the growth of freight through its Freight Rail Bureau. NYSDOT provides grant funding for capital projects dedicated to supporting freight rail growth in the State. The implementation of these projects has implications on the Lower Montauk Branch, as these projects improve and may increase freight service on connecting freight lines. This may make the reactivation and integration of passenger service more complex.
+[p098_c0004] All project descriptions below are courtesy of NYSDOT's Freight Rail Bureau.
+### [p098_c0005] 1.8.1 Weight Carrying Capacity Projects
+### [p098_c0006] 1.8.1.1 Rehabilitation of Freight Track #5 on Hell Gate Bridge
+[p098_c0007] This project upgraded the single freight track on the Hell Gate Bridge with continuously welded rail CWR and new ties, to carry industry-standard 286,000 pound gross weight railcars. This track is the only land connection to Queens, Brooklyn, and Long Island for rail freight shipments.
+### [p098_c0008] 1.8.1.2 Upgrade Fresh Pond Yard and Bay Ridge Branch Interchange Track
+[p098_c0009] This project upgraded the NY&A Fresh Pond Yard and the interchange track on the NY&A Bay Ridge Branch to carry industry-standard 286,000 pound gross weight railcars. The interchange track is used to exchange railcars between NY&A and CSX Transportation, Canadian Pacific Railway, or Providence & Worcester Railroad.
+### [p098_c0010] 1.8.1.3 Rehabilitation of Railcar Float Bridge
+[p098_c0011] This project replaced the leaking pontoons on NYNJ Rail's 51 st Street float bridge with new pontoons, to support movement of industry-standard 286,000 pound gross weight railcars. NYNJ Rail operates the only railcar barge operation linking the US mainland at Greenville, NJ, with Brooklyn, NY.
+### [p098_c0012] 1.8.2 Rehabilitation of Bushwick Branch in Queens and Brooklyn
+[p098_c0013] These projects rehabilitated NY&A freight trackage in two New York City boroughs. They improved the efficiency of rail freight service and upgraded tracks, to allow movement of industry-standard 286,000 pound gross weight railcars.
+### [p098_c0014] 1.8.3 Long Island Rail Road Upgrades to Selected Undergrade Railroad Bridges in Queens
+[p098_c0015] These projects evaluated LIRR undergrade railroad bridges in Queens to assess their capability to carry industry-standard 286,000 pound gross weight railcars by the NY&A. Selected bridges were upgraded in priority order to allow movement of 286k railcars. CMAQ funding contributed $15.9M.
+[p098_c0016] _1-78_
+
+## Page 99
+
+### [p099_c0001] Lower Montauk Branch Rail Study
+### [p099_c0002] 1.8.4 Intermodal Improvements on Brooklyn Waterfront
+[p099_c0003] This project upgraded track to support the movement of industry-standard 286,000 pound gross weight railcars by NYNJ Rail. It eliminates two highway/railroad at-grade crossings, and reconfigures track to improve efficiency and railroad network operation. Funding is from both Federal and State sources.
+### [p099_c0004] 1.8.5 Bush Terminal Rehabilitation
+[p099_c0005] This project upgraded the tracks in the 1st Avenue Yard, Bay Ridge, Brooklyn, to support the movement of industry-standard 286,000 pound gross weight railcars and reconfigure tracks to improve efficiency and railroad network operation.
+### [p099_c0006] 1.8.6 Install Welded Rail - Lower Montauk Branch
+[p099_c0007] This project supports movement of industry-standard 286,000 pound gross weight railcars by the NY&A.
+### [p099_c0008] 1.8.7 Network Capacity Projects
+### [p099_c0009] 1.8.7.1 Purchase 30 Railcar Capacity Barge
+[p099_c0010] This project acquired a new 30-railcar capacity barge to double the existing per-trip 15 railcar capacity of the NYNJ railroad car float operation between Greenville, NY, and Bay Ridge, Brooklyn, NY. This project was funded through CMAQ.
+### [p099_c0011] 1.8.8 Purchase Low Emission Locomotives
+[p099_c0012] This project acquired GenSet low emission locomotives for use by CSX in Bronx and Queens, so as to reduce air emissions. The primary fund source was CMAQ.
+### [p099_c0013] 1.8.9 Vertical Clearance Projects
+### [p099_c0014] 1.8.9.1 Yard Upgrades
+[p099_c0015] These projects improved vertical clearances to allow movement of TOFC Trailer-on Flatcar traffic in Oak Point Yard, to the Hunts Point Terminal Market and into Queens. It supports the movement of 286,000 railcars into Queens and improves efficiency and rail network capacity by reconfiguring track at the east and west entrances to the Yard.
+### [p099_c0016] 1.8.10 Green Locomotive Fleet Replacement
+[p099_c0017] Eight of New York & Atlantic's locomotives will be retrofitted with new technology. This new diesel retrofit technology will reduce particulate matter in its emissions. This reduced particulate matter will contribute to cleaner air and greater environmental benefits in the region.
+[p099_c0018] _1-79_
+
+## Page 100
+
+### [p100_c0001] Lower Montauk Branch Rail Study
+### [p100_c0002] 1.9 Existing and Projected Rail Freight Operations on the Lower Montauk Branch
+### [p100_c0003] 1.9.1 Proposed Cross Harbor Rail Freight Tunnel
+[p100_c0004] This expansive proposal would involve the construction of a rail freight tunnel across the New York Harbor, connecting the Bay Ridge Branch in Brooklyn to the Greenville Yard in Jersey City. This would provide a direct connection via rail, eliminating the need for an intermodal journey. The tunnel would be built to accommodate double-stacked railcars and allow for bidirectional service. This rail tunnel alternative was chosen from a long list of rail alternatives due to its beneficial, localized impacts:
+- [p100_c0005] • Lowest potential amount of localized impact that could not be mitigated • Relatively low costs • Simple design and construction • Low land acquisition requirements
+[p100_c0006] This alternative would have a transformative effect, allowing direct rail service across New York Harbor and a greater connection to rail services west of the Hudson. The regional movement of goods would be more efficient and there is a potential for drastic reduction in truck vehicle miles traveled. There was the lowest level of public opposition to this alternative, with limited adverse effects that could not be mitigated.
+[p100_c0007] This alternative was developed as part of the Tier 1 Environmental Impact Study (EIS) for the Cross Harbor Freight Program (CHFP). The Tier 1 EIS was completed by the Port Authority of NY & NJ and the Federal Highway Administration 2014, leading to a Record of Decision (ROD) by the FHWA in January 2016. In May 2017, Governor Andrew Cuomo and Congressman Jerrold Nadler announced the planned preparation of the Tier II EIS and advanced planning and engineering work, as well as evaluating an enhancement of the existing railcar float-barge operation.
+[p100_c0008] The Rail Tunnel alternative would require additional freight processing capabilities. The 2016 Tier 1 ROD emphasizes the use of the Maspeth Yard as the main location for the processing/transfer of intermodal and carload freight. A newly expanded Maspeth Yard would play a crucial role in this alternative, processing both types of freight and serving as a transfer point for goods utilizing the proposed Cross Harbor Rail Tunnel. With the new rail tunnel operating, 7.2-9.6 million tons of freight annually would be diverted and the Maspeth Yard would be the origin point for an average of 568-579 trucks daily. These factors would prioritize freight at Maspeth Yard from two different operational standpoints. Increased freight activity at this yard to process both intermodal and carload freight would highlight the importance of the yard to the region's freight operations, and as discussed below, may impact a possible passenger service on the Lower Montauk Branch. The Branch itself would have its tracks connecting to the yard improved, with increased vertical clearances to 22.5 feet as part of the project.
+[p100_c0009] _1-80_
+
+## Page 101
+
+### [p101_c0001] Lower Montauk Branch Rail Study
+[p101_c0002] The increased freight movements in and out of the Maspeth Yard would mean more train activity on the connecting Lower Montauk Branch west of Fresh Pond Yard. This could supersede any introduction of passenger service that would require joint use of the same trackage as the freight service.
+### [p101_c0003] 1.9.2 Regional Projections of Rail Freight Operations
+[p101_c0004] Effects of the rail tunnel are broad and wide-ranging. Local effects include an expansion in freight handling facilities, with requisite new buildings and support staff. Because these would be in existing areas, effects to surrounding land use would be limited and constrained to currently industrial areas. An overall growth in regional freight operations would be expected. There would be a higher demand for freight handling and greater expansion of rail freight service, taking away shipping volumes from trucking handlers. This rail tunnel would establish a new avenue for growth of the rail freight industry.
+[p101_c0005] The findings of the Tier I CHFP EIS indicate that the No-Build alternative could result in a future increase of 8 percent overall in freight volume movements. The exact distribution and effects upon the Lower Montauk Branch remains to be seen as the project progresses, the Tier II studies are completed, and a decision on the preferred alternative advanced. Nonetheless, the implications thus far indicate that additional freight volumes and train movement could occur within the Class 2 rail freight corridor. Land use conversions from freight to mixed-use commercial may be thwarted and grade-crossing challenge the ability to create transit village communities at station areas. However, this is somewhat speculative as the CHFP is moving forward and results of the study effort are not finalized.
+### [p101_c0006] 1.9.3 Projected New York & Atlantic Railway Operations
+### [p101_c0007] 1.9.3.1 Major Rail Freight Customers and Freight-Oriented Sites
+[p101_c0008] As mentioned previously, the New York & Atlantic Railway (NY&A) counts these customers among their client base:
+- [p101_c0009] • Cooking oil suppliers • Rice suppliers • Fresh fruit and vegetable suppliers • Waste Management • Aggregate suppliers • Paper and lumber suppliers
+[p101_c0010] These major freight-oriented sites create heavy usage periods on the Lower Montauk Branch.
+[p101_c0011] The Fresh Pond Yard sees near continuous movement of trains, and Maspeth Yard sees 2,500 movements a year. Near milepost 1.3 is a site of 12-14 hours of train movement daily. This leads into the Waste Management facility.
+[p101_c0012] _1-81_
+
+## Page 102
+
+### [p102_c0001] Lower Montauk Branch Rail Study
+[p102_c0002] Waste Management is a major customer, with near continuous movement of trains between 12 PM and 1 AM. The closure of the grade crossing near the facility shows the importance of this freight-oriented site. Additionally, aggregate suppliers near milepost 2.9 take advantage of the direct rail connections.
+[p102_c0003] A list and description of some key customers using the Lower Montauk Branch are shown in Table 1-6 and depicted in Figure 1-46. This customer list is provided on the New York & Atlantic Railway website.
+[p102_c0004] _Table 1-6 NY&A Customers on the Lower Montauk Branch_
+[p102_c0005]
+
+```text
+Customer Description Healthy Brand Oil Specializes in retail and wholesale sale of food grade cooking oil Waste Management Fills outbound containers of waste generated in Brooklyn and Queens Rosen Bakery Supplies local bakeries with bulk food products Long Island Rail Road Receipt of track material and equipment from NS and CSX Interstate Plywood Receives panel products for retail sale Ozone Park Lumber Receives bulk building products for wholesale and retail Triple Star Horse Feed (not shown on map) Receives feed for horses stables at the Belmont Park facility
+```
+[p102_c0006] Source: Anacostia.com/railroads/nya
+[p102_c0007] _1-82_
+
+## Page 103
+
+### [p103_c0001] Lower Montauk Branch Rail Study
+[p103_c0002] _Figure 1-46 NY&A Customers along the Lower Montauk Branch_
+> [p103_c0003] The map illustrates the Lower Montauk Branch rail line, depicted as a thick blue line, stretching from Long Island City in Manhattan to Jamaica in Queens. The line passes through several neighborhoods, including Long Island City, Greenpoint, Muskeget, Middle Village, Ridgewood, Bushwick, Highland Park, Woodhaven, and Richmond Hill. Six customers are marked with yellow squares along the branch: Healthy Brand Oil, City Lumber, Waste Management, Rosen Bakery, Interstate Plywood, and Ozone Park Lumber. The map also shows the Long Island Rail Road running parallel to the branch. A legend in the bottom left corner identifies the blue line as the Lower Montauk Branch and the yellow squares as customers. A scale bar at the bottom right indicates distances of 0, 1, and 2 miles, and a north arrow is also present.
+### [p103_c0004] 1.9.3.2 Projected Growth
+[p103_c0005] The New York & Atlantic Railway is expected to see approximately 3% annual growth from its food and waste customers. Construction and aggregate industries are growing with less predictable rates, tied to economic conditions. Waste Management has a long-term lease and will continue its utilization of the rail line and processing center. New York State legislation and other studies promoting rail freight could place increased importance on the corridor as part of a freight management system. Additional improved freight infrastructure could place more importance on the Lower Montauk Branch to meet increased freight demands.
+[p103_c0006] _1-83_
+
+## Page 104
+
+### [p104_c0001] Lower Montauk Branch Rail Study
+### [p104_c0002] 1.10 Peer Cities Comparison of Joint Freight and Passenger Rail Services
+[p104_c0003] Part of this study identifies peer cities with similar examples of introducing a passenger line along corridors currently utilized by freight operations. Design concepts, operations guidelines, and overall best practices will be drawn from these peer cities and applied to the Lower Montauk Branch. The section will examine the unique opportunities and challenges associated with reactivating a defunct passenger service and sharing resources with freight service that faced these cities and how they addressed these issues. Characteristics of these cities that could be applicable to the Lower Montauk Branch's setting and characteristics will be evaluated where appropriate. The two cities identified for further evaluation are Trenton/Camden, New Jersey, and San Diego, California.
+[p104_c0004] Peer cities comparison tables can be found in Appendix B.
+### [p104_c0005] 1.10.1 Identification of Peer Cities
+[p104_c0006] This report looked at several cities across the country with experience in activating passenger rail service while sharing track with freight, in order to identify best practices. The process evaluated how a city's experience would or would not help guide the Lower Montauk Branch reactivation by analyzing background and structure of the planning and service. Baseline analysis criteria included route length, operating environment, and passenger access. Some cases were not comparable due to fundamental differences in these areas, including land uses and service areas, route design, and access. This evaluation, using the Lower Montauk Branch as a reference, is summarized in Table 1-7.
+[p104_c0007] Among locales and services evaluated, New Jersey Transit's River LINE in Camden and Trenton, and the Blue Line Trolley in San Diego, California, were determined to be applicable peer cities. These lines share similar settings with the Lower Montauk Branch, with residential and industrial land use and service patterns that connect to other transit modes. Because of these shared characteristics, further evaluation is recommended.
+[p104_c0008] _1-84_
+
+## Page 105
+
+### [p105_c0001] Lower Montauk Branch Rail Study
+[p105_c0002] _Table 1-7 Identification of Peer Cities_
+[p105_c0003]
+
+```text
+Criteria Location Length (miles) Operating Environment Applicable Peer City? Rail Service Lower Montauk Branch Queens, NY 8.5 Urban N/A NJ Transit River LINE Trenton/Camden, NJ 34 Urban/Suburban Yes - similar rail history and operating environment in urban and industrial area Sprinter San Diego, CA 22 Suburban No - operates exclusively in suburban environment Capital MetroRail Austin, TX 32 Suburban No - operates exclusively in suburban environment Lynx Blue Line Charlotte, NC 9.6 Urban/Suburban No - serves park-and-ride commuters through CBD with frequent stops TRAX Blue Line Salt Lake City, UT 19.3 Urban/Suburban No - serves park-and-ride commuters through CBD with frequent stops San Diego Trolley Blue Line San Diego, CA 15.4 Urban Yes- frequent service, similar operating environment in urban and industrial area San Diego Trolley Orange Line San Diego, CA 18 Urban/Suburban No - similar to SD Trolley Blue line, but operates in a more suburban environment Metra North Central Service Chicago, IL 55.7 Urban/Suburban No - longer route with infrequent service, serves suburban park-and-ride commuters MBTA Old Colony Lines (Middleborough/Lakeville and Kingston/Plymouth) Boston, MA 60 Urban/Suburban No - longer route, serves suburban park-and-ride commuters
+```
+### [p105_c0004] 1.10.2 Peer City Selections
+### [p105_c0005] 1.10.2.1 New Jersey Transit River LINE - Trenton and Camden, NJ
+[p105_c0006] _Figure 1-47 NJ Transit River LINE_
+[p105_c0007] Source: NJ Transit 12
+[p105_c0008] The New Jersey Transit River LINE, shown in Figure 1-47, opened in 2004, and runs between the State Capital in Trenton along the Delaware River 34 miles south to the City of Camden, a city across the river from Philadelphia. The rail runs on the original tracks of the Camden and Amboy Railroad, originally constructed in 1830. Passenger service on the line ceased operations in 1963, as many of the factories along the corridor closed and population dwindled. The line was considered for reactivation in the 1990s
+[p105_c0009] _12 Accessible Light Rail; NJ Transit_
+[p105_c0010] _1-85_
+
+## Page 106
+
+### [p106_c0001] Lower Montauk Branch Rail Study
+[p106_c0002] as an economic boost for a distressed region. The goals of the rail line were to connect the communities of South Jersey with transit to Philadelphia, and provide rail service to Camden and surrounding Burlington and Mercer Counties as a means of economic development 13 .
+[p106_c0003] Operation of the River LINE shows similarities to the Lower Montauk Branch. While longer in length, with 21 stations located an average of 1.6 miles apart, the River LINE shows the success of planning a reactivated passenger line in an urban and industrial area. Weekday ridership averaged 8,954 riders in 2015, with peak headways of 15 minutes. The River LINE has between 1-3 tracks on its right-of-way, which is owned entirely by New Jersey Transit after purchase in 1999 from Conrail. The Line's rolling stock consists of diesel multiple units (DMUs). Connections to other transit services at its northern terminus in Trenton and the Walter Rand Transportation Center in Camden mirror LIRR and subway connections on either end of the Lower Montauk Branch 14,15 .
+[p106_c0004] A crucial element of the River LINE for this study is its association with freight service. New Jersey Transit has exclusive operating rights on the line from around 5:30 AM, with the last train departing around 10 PM. In the interstitial morning hours, Conrail exclusively utilizes the tracks for freight operations. This pattern of operation is known as temporal separation, and it is a necessary measure due to Federal Railroad Administration (FRA) safety regulations; the River LINE DMU vehicles are not structurally safe to operate concurrently on the same tracks as Conrail's freight cars, and would be destroyed in the event of a crash. This FRA non-compliance dictates that the River LINE and Conrail run services in exclusive service windows, and can be a suitable template for the Lower Montauk Branch's operations in relation to the freight service on the New York and Atlantic Railway. The River LINE shows the overall possibility of reactivating a defunct passenger line on active freight tracks, and serving effectively despite the restrictions of temporal separation.
+[p106_c0005] _13 Trolley Urged for a Limping Old Freight Line; The New York Times_
+[p106_c0006] _14 New Jersey Transit Facts at a Glance, 2015; NJ Transit_
+[p106_c0007] _15 Earlier River Line Creates New Commuter Connections; NJ Transit_
+[p106_c0008] _1-86_
+
+## Page 107
+
+### [p107_c0001] Lower Montauk Branch Rail Study
+### [p107_c0002] 1.10.2.2 San Diego Trolley Blue Line- San Diego, CA
+[p107_c0003] _Figure 1-48 San Diego Trolley Blue Line_
+> [p107_c0004] A photograph of a red San Diego Trolley Blue Line train, model 4029, traveling on tracks. The train is a modern, articulated vehicle with large windows and the MTS logo. It is positioned on a street with a modern canopy structure above it. In the background, there are palm trees, a traffic light, and several high-rise buildings under a clear blue sky.
+[p107_c0005] Source: MTS 16
+[p107_c0006] The San Diego Trolley's Blue Line began operation in 1981 on the tracks of the San Diego and Arizona Eastern Railway. The trolley, seen in Figure 1-48, runs from America Plaza to San Ysidro at the US/Mexico border, a total of 15.4 miles. The original freight tracks date back to 1906 on the San Diego and Arizona Railway. The railway had a treacherous operating and financial history, with logistical setbacks due to geographical hazards, and fiscal issues due to unstable ownership. The railway was transferred to the San Diego and Arizona Eastern Railway in 1933, ending passenger service and converting to freight only in 1951. The Metropolitan Transit System (MTS) of San Diego created San Diego Trolley Incorporated to oversee operations on the new passenger trolley line in 1981 after purchasing rights to the line in 1979. This conversion was done to serve growing ridership on the region's bus lines and to help mitigate traffic and congestion issues. The Blue Line's success has spurred the building of two other full-service trolley lines in the San Diego area 17 .
+[p107_c0007] The Blue Line catered to the population growth in the San Diego area in the 1980s. Though the growth slowed in the 1990s it has increased again in the last decade, with office development and dense residential uses growing around trolley stations, complementing the previously existing industrial usages around the line. In 2015, the Blue Line served an average of 52,166 daily riders at 18 stations along its 15.4-mile long route. The Blue Line uses light rail transit vehicles, with tracks at grade and an average of 7.5-minute long peak headways. The two termini of the Blue Line are major hubs: the northern terminus at America Plaza is a transfer point for the other trolley services at the city's tallest building at One America Plaza, which opened in concert with the station; its southern terminus at San Ysidro is a major
+[p107_c0008] _16 Photos; MTS_
+[p107_c0009] _17 About MTS-History; San Diego Metropolitan Transit System_
+[p107_c0010] _1-87_
+
+## Page 108
+
+### [p108_c0001] Lower Montauk Branch Rail Study
+[p108_c0002] intermodal and international connection for commuters and visitors from Mexico, providing a direct link from the border to downtown 18 .
+[p108_c0003] Freight service is still active on the Blue Line's right-of-way. The MTS contracts with the San Diego and Imperial Valley Railroad and the Pacific Imperial Railroad to utilize the tracks during non-operating hours. Currently, the trolley operates from around 4:45 AM until 1:45 AM on weekdays, and the freight service operates in the roughly 4-hour off-service window. This temporal separation is employed due to the FRA non-compliance of the Blue Line light rail vehicles. The separation does not impact the efficacy of passenger or freight service in the area, accommodating both in sufficient time frames. This is an appropriate guideline for the Lower Montauk Branch, which may employ temporal separation in its sharing of the tracks with the New York and Atlantic Railway for its freight operations 19 .
+### [p108_c0004] 1.10.3      Applicability of Peer Cities
+[p108_c0005] The peer cities of Trenton/Camden with the NJ Transit River LINE and San Diego's Trolley Blue Line provide good examples of passenger rail service sharing tracks with freight service, using temporal separation due to FRA non-compliance. These services show the possibility of using existing resources and infrastructure, in a cost-effective manner, to improve passenger transit options and increase economic opportunities. For the Lower Montauk Branch, freight service is a major factor to consider in its reactivation. Yet it should not be a hindrance, as these peer cities have shown the ability to accommodate both passenger and freight services in serving dense residential and industrial areas. A Lower Montauk Branch reactivation of passenger service would incorporate these best practices.
+[p108_c0006] _18 Community Impact and Performance Report; MTS_
+[p108_c0007] _19 About MTS; MTS_
+[p108_c0008] _1-88_
+
+## Page 109
+
+### [p109_c0001] Rail Concept Development
+> [p109_c0002] A photograph of a New York City Subway A620 train, specifically car 1005, on a track. The train is silver and gold with 'UP' and '1005' markings. It is positioned on a track next to a paved area with a yellow line. The background shows a clear blue sky and some urban buildings in the distance.
+> [p109_c0003] The logo for the New York City Department of Transportation (NYC DOT). It features the text 'NEW YORK CITY' above a stylized green 'DOT' graphic. The 'D' and 'T' are represented by green circles and a green square, respectively, with white horizontal lines inside them.
+
+## Page 110
+
+### [p110_c0001] Lower Montauk Branch Rail Study
+### [p110_c0002] 2.1 Introduction
+[p110_c0003] This section covers the concept development of reactivation of rail passenger service on the Lower Montauk Branch. This consists of:
+- [p110_c0004] • Mode Screening: rail modes are evaluated for their use and operational flexibility on the Lower Montauk Branch • Conceptual Operation Plan: a service plan is developed for passenger operations • Station and Yard Siting: potential station sites are analyzed in terms of serving growth areas, general accessibility and connections with the transit network, and conceptual station plans are evaluated with regard to accessibility, facilities, and rail operations; yard siting studies reflect site location and size requirements • Bridges and Grade Crossings: a generally qualitative assessment of the bridges and grade crossings on the Lower Montauk Branch and whether changes in these elements might be required in connection with the reintroduction of rail passenger service • Resiliency Overview: the Lower Montauk Branch is evaluated based on recent flood risk assessment and what those studies say about the area's vulnerability to storms with potential impacts to the Branch
+[p110_c0005] As discussed in Section 1, the Lower Montauk Branch is currently a non-electrified rail segment used exclusively for freight service. Passenger service on the Branch to stations between Long Island City and Jamaica ended in 1998 and all service on the Branch ended in 2012. This two-track branch has a large number of grade crossings and overhead and undergrade crossings, and some brief stretches of single track. A variety of infrastructure investment and other steps would be necessary to make the re-introduction of passenger service to the corridor possible.
+[p110_c0006] For the purposes of this study, it is assumed that a reactivated Lower Montauk Branch would be largely separated from other rail transit services, although reasonable transfer connections to the No. 7 and the M and J/Z subway lines and to the Long Island Rail Road (LIRR) at its Long Island City and Jamaica Stations would likely be possible. However, it is assumed that direct transfers would not be available to the proposed Brooklyn-Queens Connector (BQX) streetcar as presently envisioned. There wouldn't be shared track or right-of-way, other than with the existing freight service operated by the New York & Atlantic Railway (NY&A), the complications of which will be discussed below.
+[p110_c0007] _2-1_
+
+## Page 111
+
+### [p111_c0001] Lower Montauk Branch Rail Study
+### [p111_c0002] 2.2 Rail Transit Concept Development Assumptions
+[p111_c0003] The following planning assumptions formed the baseline parameters used to define and review alternative scenarios for the resumption of rail passenger service on the Lower Montauk Branch:
+- [p111_c0004] • Service will operate between Jamaica and Long Island City via the existing Lower Montauk Branch alignment; • Service will be provided by a rail vehicle; • As a specific mode of rail service (e.g., regional “commuter” rail, heavy rail, light rail, etc.) and the associated configuration of train consists (e.g., locomotive-hauled, multiple unit, etc.) was not initially assumed; • The propulsion method (e.g., electrification via catenary or third rail, diesel-electric locomotive, diesel or electric multiple units, dual mode locomotives, etc.) has been narrowed to an initial recommendation of diesel-powered equipment, and more specifically DMU train sets, which appear to have some distinct advantages; • The existing freight operations along the Lower Montauk Branch will be maintained, although some adjustments to that freight service to make passenger rail service possible in the same corridor will be considered; • The proposed service plan concepts will assume an average distance between stations along its roughly 9-mile length that would be similar to many of the City’s current local subway lines and in-City LIRR stations. It is assumed that all new stations would be fully accessible as per the requirements of the Americans with Disabilities Act (ADA), but would not include any parking.
+### [p111_c0005] 2.3 Mode Screening
+[p111_c0006] A mode screening analysis was performed to determine what rail mode would be best suited to the corridor. These rail-based modal choices include:
+- [p111_c0007] • Streetcar/light rail • Diesel multiple unit (DMU) • Electrified commuter/regional rail
+[p111_c0008] Each mode has its own advantages and disadvantages. The intent of this screening process is to select a mode that would maximize operational and passenger benefits while minimizing associated trade-offs or potential adverse impacts. The LIRR currently operates both electric multiple unit (EMU) trains and diesel and dual-mode (diesel/electric) locomotives pulling passenger coaches. The dual-mode diesel locomotives allow them to connect to Penn Station. The modal screening will account for the characteristics of the Lower Montauk Branch, potential operation and service patterns, and other demands.
+[p111_c0009] _2-2_
+
+## Page 112
+
+### [p112_c0001] Lower Montauk Branch Rail Study
+### [p112_c0002] 2.3.1 Electric Multiple Unit (EMU) Regional Rail Service
+[p112_c0003] _Source: Bombardier_
+[p112_c0004] Much of the LIRR's current service is provided with electric multiple unit (EMU) regional railcars, including service to Penn Station. Electric power is provided to motors in each railcar via a third rail. The immediate issue with EMU service in this study is that the Lower Montauk Branch is not presently electrified and the high cost and other complications involved in installing that infrastructure.
+[p112_c0005] Accommodating EMU regional railcars would most likely require the construction of a third rail, as used in current LIRR operations. The installation of electric overhead catenary wires, as used by MTA Metro-North commuter rail operations, is less likely, as it would involve EMU railcars and infrastructure different from the LIRR operating in the same corridor. This is a potentially expensive and intrusive undertaking. Much of the Lower Montauk Branch's right-of-way (ROW) is spatially constrained by adjacent arterial streets and buildings, retaining walls, and bridges. There is little unused ROW space available in the ROW to construct and house the necessary electrical infrastructure.
+[p112_c0006] Although not relevant for possible Lower Montauk operations, current Long Island Rail Road EMU railcars are designed to travel at speeds as high as 100 MPH. 1
+### [p112_c0007] Advantages of EMU Regional Rail Service
+- [p112_c0008] • No vehicle-based emissions • Compatible with existing MTA Long Island Rail Road equipment • Compatible with concurrent freight operation
+### [p112_c0009] Disadvantages of EMU Regional Rail Service
+- [p112_c0010] • Requires electrification infrastructure
+[p112_c0011] _1 Design Data for Electric Multiple Units, M-7 Long Island Rail Road; Bombardier Transportation_
+[p112_c0012] _2-3_
+
+## Page 113
+
+### [p113_c0001] Lower Montauk Branch Rail Study
+### [p113_c0002] 2.3.2 Diesel Locomotive Service
+> [p113_c0003] A photograph of a blue and yellow diesel locomotive pulling a train along a track. The locomotive is moving towards the viewer on a set of tracks. The background features a line of trees with autumn foliage, some utility poles with power lines, and a clear blue sky. The tracks are set in a rural or semi-rural area.
+[p113_c0004] _Source: Wikimedia Commons /Author: Lexcie_
+[p113_c0005] Diesel locomotive service uses a locomotive in either the “push” or “pull” mode of operation, providing power to a set of passenger rail cars. Certain passenger cars are equipped with a control cab and are placed at the front of the trainset in “push” mode so that the train operator can control the trainset from that location. Diesel locomotives can operate large, high-capacity trainsets. These trainsets operate on the LIRR between non-electrified portions of its network (e.g., Oyster Bay and Montauk Branches and portions of Port Jefferson and Ronkonkoma Branches), mostly operating to Jamaica or Hunterspoint/Long Island City.
+[p113_c0006] Diesel locomotive operation on the Lower Montauk Branch would have the advantage of not requiring any electric infrastructure to be installed, and the running way of the Lower Montauk Branch could be reactivated without the need for the additional infrastructure associated with electrification. However, they would likely be more expensive to operate on a per passenger basis than other modes under consideration.
+[p113_c0007] However, a major factor in diesel locomotive service is the noise pollution associated with its operation, which is difficult when operating through densely populated residential neighborhoods. While the NY&A currently operates diesel service on the Lower Montauk Branch, it does not operate with the potential frequency of reactivated passenger service on the Lower Montauk Branch. Nonetheless, the existing NY&A diesel operations along the Lower Montauk Branch have produced complaints from the community. The potential for noise impacts would be an issue for the community and may require noise mitigation techniques, such as sound barrier walls or other similar infrastructure. Diesel locomotives on current Long Island Rail Road operations have maximum speeds of 100 MPH when operating as diesels; however, diesel trains in any scenario envisioning the reactivation of passenger service along the Lower Montauk Branch would not operate anywhere nearly as fast. 2
+[p113_c0008] _2 EMD DE30AC/DM30AC Sell Sheet; Electro-Motive Diesel_
+[p113_c0009] _2-4_
+
+## Page 114
+
+### [p114_c0001] Lower Montauk Branch Rail Study
+### [p114_c0002] Advantages of Diesel Locomotive Service
+- [p114_c0003] • No electrification infrastructure needed • Compatible with existing MTA Long Island Rail Road equipment • Compatible with concurrent freight operation
+### [p114_c0004] Disadvantages of Diesel Locomotive Service
+- [p114_c0005] • Produces noise and emissions along the Lower Montauk Branch
+### [p114_c0006] 2.3.3 Electric Locomotive Service
+> [p114_c0007] A photograph of a white and blue electric locomotive pulling a train of passenger cars across a bridge. The locomotive is white with a blue and yellow stripe. The train is moving from left to right. The bridge is a steel truss bridge over a body of water with several sailboats in the background. The sky is blue with some clouds.
+[p114_c0008] _Source: Bombardier_
+[p114_c0009] The MTA Long Island Rail Road currently does not operate electric locomotive-hauled trainsets. With this type of motive power scheme, electric power is provided to an electric locomotive that operates in a manner similar to diesel locomotives, and may also operate in either the “push” or “pull” mode of operation, providing power to a set of passenger rail cars. These locomotives generally generate considerably less noise than diesel locomotives.
+[p114_c0010] The immediate issue with electric locomotive service in this study is – as with potential EMU service – the basic fact that the Lower Montauk Branch is not electrified, and there is no electric train operation infrastructure in place.
+[p114_c0011] As with preparing the ROW to accommodate EMU operations, accommodating electric locomotive-hauled trainsets would require the construction of a third rail or overhead catenary to provide power. Again, this is a potentially expensive and intrusive undertaking; much of the Lower Montauk Branch’s ROW is constrained due to restrictions such as adjacent arterial streets and buildings, retaining walls, and bridges. There is little to no unused space available in the ROW, and thus minor availability to construct and house the necessary electrical infrastructure.
+[p114_c0012] _2-5_
+
+## Page 115
+
+### [p115_c0001] Lower Montauk Branch Rail Study
+### [p115_c0002] Advantages of Electric Locomotive Service
+- [p115_c0003] • No vehicle-based emissions • Compatible with concurrent freight operation
+### [p115_c0004] Disadvantages of Electric Locomotive Service
+- [p115_c0005] • Requires electrification infrastructure • Not currently used by the MTA Long Island Rail Road
+### [p115_c0006] 2.3.4 Dual Mode Locomotive Service
+[p115_c0007] _Source: Joseph Perrino_
+[p115_c0008] Dual-mode locomotives are also operated by the LIRR. These locomotives operate in a manner similar to diesel locomotives, and may also operate in either the “push” or “pull” mode of operation, providing power to a set of passenger rail cars. However, they can also operate as electric locomotives, drawing electrical power for the locomotive from, in this instance, a third rail.
+[p115_c0009] Whether the Lower Montauk Branch were to be electrified or remain non-electrified, dual-mode locomotives would allow for through service to be operated from both electrified and non-electrified branches of the LIRR onto the Lower Montauk Branch, without requiring passengers to transfer.
+[p115_c0010] However, for the purposes of this study, it is assumed that a reactivated Lower Montauk Branch would be largely separated from other rail and transit services. Therefore, the potential benefits associated with a dual mode locomotive service as described here would be less of a positive and differentiating factor.
+[p115_c0011] _2-6_
+
+## Page 116
+
+### [p116_c0001] Lower Montauk Branch Rail Study
+### [p116_c0002] Advantages of Dual-Mode Locomotive Service
+- [p116_c0003] • No electrification infrastructure needed, but could operate as an electric locomotive on other LIRR branches where infrastructure already exists • Compatible with existing MTA Long Island Rail Road equipment • Compatible with concurrent freight operation
+### [p116_c0004] Disadvantages of Dual-Mode Locomotive Service
+- [p116_c0005] • Produces noise and emissions along the Lower Montauk Branch (when operating as a diesel locomotive)
+### [p116_c0006] 2.3.5 Diesel Multiple Unit (DMU) Service
+[p116_c0007] Source: Wikimedia Commons /Author: Michlaovic (top photo)
+[p116_c0008] Source: Wikimedia Commons /Author: David (bottom photo)
+[p116_c0009] _2-7_
+
+## Page 117
+
+### [p117_c0001] Lower Montauk Branch Rail Study
+[p117_c0002] Diesel Multiple Units (DMU) are trains that run on diesel power but do not use a traditional locomotive to pull or push the trainset. Each railcar has an engine that is capable of locomotive power. DMUs have the advantage of using diesel, but often without the same level of noise pollution as a diesel locomotive, and they do not require electric infrastructure such as overhead catenaries or a third rail. DMUs can be provided as either more traditional “heavy” rail (e.g., regional rail) trainsets, or as “light” rail trainsets that are able to be used along a variety of running way types. However, none of the lighter DMU vehicle fleet options meet the crashworthiness standards of the Federal Railway Administration (FRA), as discussed further in Section 2.4.
+[p117_c0003] DMU trains are flexible in terms of the number of service patterns in which they can operate. DMUs in the U.S. are operated on a range of services: in the Bay Area, DMU trains are used on the Sonoma-Marin Area Rail Transit (SMART) service, while in Portland (Oregon), the WES Commuter Rail service is operated by Tri-Met with DMUs. In New Jersey, the NJ Transit River LINE is operated as a light rail service but with relatively long runs between some stations. Its DMU equipment is diesel-to-electric, with diesel generators producing electricity for traction power. It operates over an approximately 34-mile route at maximum speeds of 75 MPH. 3 However, given the need to stop at stations, right-of-way constraints, the presence of grade crossings and other factors, the average travel speed for riders along the Lower Montauk Branch would likely be much lower.
+### [p117_c0004] Advantages of Diesel Multiple Unit Service
+- [p117_c0005] • No electrification infrastructure needed • “Heavy” DMUs compliant with FRA crashworthiness are commercially available and would therefore support concurrent freight operation • “Light” DMUs can operate over a variety of running way types
+### [p117_c0006] Disadvantages of Diesel Multiple Unit Service
+- [p117_c0007] • Produces noise and diesel emissions along the Lower Montauk Branch • Use of a “Light” DMU would preclude concurrent freight operation • Not currently used by the MTA Long Island Rail Road
+[p117_c0008] _3 Stadler GTW Articulated Railcars, Switzerland; Railway-technology.com_
+[p117_c0009] _2-8_
+
+## Page 118
+
+### [p118_c0001] Lower Montauk Branch Rail Study
+### [p118_c0002] 2.3.6 Electric Light Rail/Modern Streetcar Service
+> [p118_c0003] A photograph of a modern light rail vehicle (LRV) at a station platform. The train is yellow and black with the number '161A' visible on its front. It is stopped at a platform with a yellow tactile paving strip. In the background, another train is partially visible, and a digital sign above the platform reads 'Newtown East GRAND OPEN'.
+[p118_c0004] _Source: Bombardier_
+[p118_c0005] Light Rail Vehicles (LRVs) are most commonly electric rail vehicles that do not have the power and weight of EMU-type electrified rail service, which can be considered “heavy” rail. Light rail service can vary based on route distance and stop frequency, and can be adapted to operate along a variety of running way types in both urban and suburban environments. This makes light rail an attractive option in that it is flexible in terms of the extent of different operating patterns it can provide.
+[p118_c0006] Electric light rail is used in the New York City metropolitan region on NJ Transit’s Hudson-Bergen Light Rail Line in New Jersey. This operation can be categorized as an urban light rail. There are many longer light rail routes that serve as commuter links between suburbs and urban cores, such as the systems in San Diego and Salt Lake City. Light rail speeds on the Hudson-Bergen Light Rail Line can reach up to 60 MPH. 4
+[p118_c0007] A variant of light rail are streetcars, which operate in dense urban cores (not necessarily on a dedicated right-of-way) and have frequent stops. Such systems are found in Boston and Philadelphia, and recent “modern” streetcar systems are located in such cities as Kansas City or Portland. Maximum speeds on streetcars are lower, at approximately 55 MPH. 5 As was mentioned previously, given the need to stop at stations, right-of-way constraints, the presence of grade crossings and other factors, the average travel speed for riders along the Lower Montauk Branch would likely be much lower. These vehicles can draw their power from either overhead catenary lines or a ground-level third rail source.
+[p118_c0008] The electric component adds a layer of difficulty – the need to install electric infrastructure in a constrained ROW. This may deter this option, due to its higher cost and various implementation issues and a physically crowded corridor such as the Lower Montauk Branch.
+[p118_c0009] _4 What Planners of Brooklyn-Queens Streetcar Line Can Learn in New Jersey; New York Times_
+[p118_c0010] _5 LRV Technical Data; Kinkisharyo International_
+[p118_c0011] _2-9_
+
+## Page 119
+
+### [p119_c0001] Lower Montauk Branch Rail Study
+### [p119_c0002] Advantages of Electric Light Rail/Modern Streetcar Service
+- [p119_c0003] • No vehicle-based emissions • Can operate over a variety of running way types
+### [p119_c0004] Disadvantages of Electric Light Rail/Modern Streetcar Service
+- [p119_c0005] • Requires electrification infrastructure • Precludes concurrent freight operation • Not currently used by the MTA Long Island Rail Road or any other MTA transit operation
+[p119_c0006] _2-10_
+
+## Page 120
+
+### [p120_c0001] Lower Montauk Branch Rail Study
+### [p120_c0002] 2.4 FRA Compliance Issues
+[p120_c0003] Because the Lower Montauk Branch is presently utilized by FRA-regulated freight services, any passenger service operation on that branch would be regulated under FRA standards regarding rail crash safety ratings. Any passenger railcar proposed to operate concurrently on the same or adjacent tracks with freight traffic must be FRA-compliant for crash safety. If FRA compliance cannot be attained, passenger service must be separated from freight operations. This can be done in one of two ways:
+- [p120_c0004] (1) separate physically, where non-complying passenger railcars and freight cars do not interact on the same tracks or on tracks within a certain distance from each other; and (2) temporal separation, when passenger trains and freight trains do not operate at the same time, with each having exclusive use of the rail segments during specific times of day.
+[p120_c0005] Typically, the heavier regional rail modes – EMUs, diesel/electric/dual mode locomotives, and the “heavy rail” DMUs – are FRA-compliant, while the “light rail” modes – electric light rail transit, modern streetcars, and “light rail” DMUs – are not FRA-compliant.
+[p120_c0006] For the Lower Montauk Branch, separate trackage would be difficult and very expensive to implement given the ROW constraints along the Lower Montauk Branch, leaving only temporal separation for passenger rail operation with non-complying equipment. This is a major consideration for passenger service in general and especially for the subway-level transit operations being considered under this study. The NY&A presently has exclusive use of the Lower Montauk Branch for storage and movement of freight trains, and any new passenger service proposals must accommodate its operations.
+[p120_c0007] _2-11_
+
+## Page 121
+
+### [p121_c0001] Lower Montauk Branch Rail Study
+### [p121_c0002] 2.5 Mode Selection Criteria
+[p121_c0003] The various passenger rail modes described previously for potential use along the Lower Montauk Branch will be evaluated using several criteria, based on the extent to which each potential mode satisfies each of the proposed criteria in terms of supporting the reactivation of the Lower Montauk Branch for passenger service.
+[p121_c0004] Each mode has distinct advantages and disadvantages and may satisfy the proposed criteria to varying degrees depending upon the different factors for each of the criteria (e.g., frequency, station spacing, etc.). The previously mentioned FRA compliance issues will be a particularly important area when choosing rail modes due to the presence of NY&A freight service on the same branch.
+[p121_c0005] The accompanying table (Table 2-1) describes each of the proposed criteria that will be utilized in mode selection, and how each criterion will be “scored” in a subsequent section.
+[p121_c0006] _2-12_
+
+## Page 122
+
+### [p122_c0001] Lower Montauk Branch Rail Study
+[p122_c0002] _Table 2-1 Mode Selection Criteria_
+[p122_c0003]
+
+```text
+Criteria Characteristics Score Evaluation Frequency/Service Pattern To what extent is the proposed mode compatible with allowing relatively frequent service? High Score = More Compatible Station Spacing/Speed To what extent is the proposed mode compatible with allowing reasonable travel times, although there may be relatively closely spaced stations? High Score = More Compatible Existing Infrastructure Compatibility To what extent is the proposed mode compatible with the existing MTA Long Island Rail Road service and maintenance facilities? High Score = More Compatible Consist Flexibility To what extent does the proposed mode allow the “tailoring” of train consists to the potential level of demand? High Score = More Consist Flexibility Environment To what extent are noise and/or emissions pollution an issue for the proposed mode in terms of impacting the adjoining community and its stakeholders? High Score = Less of an Issue Right-of-Way Readiness & Other “Special Circumstances” To what extent does the proposed mode require significant investment in modifying the right-of-way to accommodate additional required infrastructure? High Score = Less Investment Required FRA Compliance Does the proposed mode utilize railcars that are already FRA-compliant, or does the proposed mode likely require either physical or temporal separation? High Score = More Compliant Approximate Capital Cost To what extent does the proposed mode require significant capital investments? High Score = Lower Capital Cost Approximate Operating Cost To what extent does the proposed mode require significant ongoing operating (e.g., crew, fuel) investments? High Score = Lower Operating Cost
+```
+[p122_c0004] _2-13_
+
+## Page 123
+
+### [p123_c0001] Lower Montauk Branch Rail Study
+### [p123_c0002] 2.6 Mode Selection Evaluation Results
+[p123_c0003] The various potential modes of service can, therefore, be evaluated for each of the criteria described previously, as shown in the accompanying table (Table 2-2). For each potential mode, the impact of each criterion is scored as per the scoring system described here. The mode (or modes) with the highest total score should be further analyzed for implementation. The scoring system will assign points to each criteria rating, as follows:
+- [p123_c0004] ● 5 points – high score ◐ 3 points – medium score ○ 1 point – low score
+[p123_c0005] _Table 2-2 Mode Selection Evaluation_
+[p123_c0006]
+
+```text
+Criteria Electric Multiple Unit Regional Service Diesel Locomotive Electric Locomotive Dual Mode Locomotive Diesel Multiple Unit Regional Service Diesel Multiple Unit Light Rail Service Electric Light Rail/Modern Streetcar Frequency/Service Pattern ● ○ ◐ ○ ○ ● ● Station Spacing/Speed ◐ ○ ◐ ○ ◐ ● ● Existing Infrastructure Compatibility ● ● ◐ ● ◐ ○ ○ Consist Flexibility ● ◐ ● ◐ ● ● ● Environment ● ○ ● ○ ◐ ◐ ● Right-of-Way Readiness ○ ● ○ ● ● ● ○ FRA Compliance ● ● ● ● ● ○ ○ Approximate Capital Cost ○ ● ○ ◐ ● ● ○ Approximate Operating Cost ○ ○ ○ ○ ◐ ◐ ● Total Modal Score 31 27 27 25 33 33 29
+```
+[p123_c0007] _2-14_
+
+## Page 124
+
+### [p124_c0001] Lower Montauk Branch Rail Study
+### [p124_c0002] 2.6.1 Recommended Fleet Vehicles
+[p124_c0003] Using the scoring system described previously, both of the diesel multiple unit (DMU) variations – as either a regional rail service or as a light rail service – scored highest, with both of these modes scoring 33 points out of a possible 45 points. The results of this mode screening indicate that the diesel multiple unit (DMU) variations should be further analyzed as the assumed passenger rail mode for this rail corridor. The fact that DMU trainsets are commercially available, operations tested in similar type settings, and FRA-compliant are all important factors in this recommendation.
+### [p124_c0004] 2.6.2 Traction Power Technology
+[p124_c0005] DMU technology is preferred, as DMU vehicles would not require electrification. Electrification would be an expensive undertaking, requiring additional infrastructure.
+[p124_c0006] _2-15_
+
+## Page 125
+
+### [p125_c0001] Lower Montauk Branch Rail Study
+### [p125_c0002] 2.7 Potential Station Location and Spacing
+[p125_c0003] Table 2-3 presents the initial list of potential station locations (including former and existing stations) on the reactivated Lower Montauk Branch, along with each station’s distance from the Branch’s start at Long Island City and the distance between stations.
+[p125_c0004] _Table 2-3 Potential Stations_
+[p125_c0005]
+
+```text
+Station Approximate Distance from Long Island City Station (feet)/(miles) - Milepost Approximate Distance from Previous Station (feet) Approximate Distance from Previous Station (miles) Long Island City (existing) N/A/0.0 N/A N/A Greenpoint Avenue 6,300/1.2 6,300 1.2 Penny Bridge 9,300/1.8 3,000 0.6 Haberman 12,800/2.4 6,500 1.2 Grand Avenue/Flushing Avenue 16,500/3.1 3,700 0.7 Fresh Pond/Metropolitan Avenue 20,600/3.9 4,100 0.8 Metro Mall 23,000/4.4 2,400 0.5 Glendale 26,900/5.1 3,900 0.7 80 th Street 29,500/5.6 6,500 1.2 Woodhaven Boulevard 32,600/6.2 3,100 0.6 Richmond Hill 40,500/7.7 7,900 1.5 Jamaica (existing) 47,500/9.0 7,000 1.3
+```
+[p125_c0006] Station spacing is an important consideration in modal choice. Due to their differing acceleration-deceleration characteristics, streetcars and light rail vehicles may operate with closer station spacing than more conventional commuter rail services, while still maintaining a relatively faster travel time for the same distance. As shown in Table 2-3, this initial list of Lower Montauk Branch stations would provide an average distance between stations of approximately one mile. By comparison, along the LIRR’s Main Line approximately 1.5 miles north of the Lower Montauk Branch, the Forest Hills and Kew Gardens stations are also approximately one mile apart, while many other stations on the Main Line in the Nassau County suburbs are approximately 1-2 miles apart. Few LIRR trains stop at every station, while those on the Lower Montauk branch would likely stop at all stations. On the Queens Boulevard
+[p125_c0007] _2-16_
+
+## Page 126
+
+### [p126_c0001] Lower Montauk Branch Rail Study
+[p126_c0002] Subway lines, located just north of the LIRR Main Line, there are stations at approximately half-mile intervals, but they include a mix of local and express stations for many lines.
+### [p126_c0003] 2.7.1 Station Siting Methodology and Criteria
+[p126_c0004] To support this study, station sites that would serve new ridership and promote residential, commercial, or industrial growth were identified. These station sites were originally proposed by observing the existing transit network, population and employment densities, and key employment centers along the corridor.
+[p126_c0005] To determine the best sites, 10 potential station sites, including the former stations on the Lower Montauk Branch, were analyzed, as were the two existing stations at Long Island City and Jamaica. The stations were analyzed using the following metrics:
+- [p126_c0006] 1. Accessibility – which was scored separately in terms of both accessibility to population and accessibility to employment 2. Future Growth Potential – which was also scored separately in terms of both growth potential in the Residential/Commercial sector and growth potential in the Industrial/Manufacturing sector 3. Transit Network Connectivity – which was given a single score in terms of connections to bus, train, and ferry services
+[p126_c0007] The areas were scored using a “Harvey Balls” system, with these point values assigned to each:
+- [p126_c0008] ● 5 points – high score ● 3 points – medium score ○ 1 point – low score
+[p126_c0009] Therefore, in terms of these initial three criteria, a maximum score of 25 points and a minimum score of 5 points was possible.
+[p126_c0010] In addition, a walk score and transit score analysis was performed using the “Walk Score” website, using the station sites’ approximate addresses. Walk scores and transit scores showed the approximate overall accessibility and mobility in each area.
+### [p126_c0011] Walk and Transit Scores Scale:
+[p126_c0012] 90-100: Walker’s/Rider’s Paradise - Daily errands do not require a car
+[p126_c0013] 70-89: Very Walkable/Excellent Transit - Most errands can be accomplished on foot
+[p126_c0014] 50-69: Somewhat Walkable/Good Transit - Some errands can be accomplished on foot
+[p126_c0015] _2-17_
+
+## Page 127
+
+### [p127_c0001] Lower Montauk Branch Rail Study
+[p127_c0002] 25-49: Car-Dependent/Some Transit - Most errands require a car
+[p127_c0003] 0-24: Car-Dependent/Minimal Transit - Almost all errands require a car
+[p127_c0004] Using the walk score analysis, an additional point was either added to the total or a point was deducted from the total for each potential station site, with points awarded or deducted based on the scores, as follows:
+- [p127_c0005] • Walk/Transit Score Average above 70: +1 point • Walk/Transit Score Average below 70: -1 point
+[p127_c0006] Finally, an additional point was awarded if the station was previously a station in 1998 (when intermediate stations between Long Island City and Jamaica were last served), or is currently a station (i.e., Long Island City and Jamaica) on the Branch. This shows that there was once at least some level of transit demand in the area and there is precedent for the station. Therefore:
+- [p127_c0007] • Was a former (or is a current) station on the Lower Montauk Branch: 1 point
+[p127_c0008] Stations hitting a threshold of 13.5 points were determined to be potentially feasible station sites. This threshold was determined using half of the potential maximum total points a station could score – which was 27 points – given the scoring system described here. The following sections provide data on the two terminal stations (Long Island City and Jamaica) and the tentatively located station sites for stations between those two termini along the branch's approximately 9-mile length.
+[p127_c0009] _2-18_
+
+## Page 128
+
+### [p128_c0001] Lower Montauk Branch Rail Study
+### [p128_c0002] 2.7.2 Analyses of Potential Station Locations
+### [p128_c0003] 2.7.2.1 Long Island City Station
+[p128_c0004]
+
+```text
+Approximate Address Walk Score Transit Score Description 414 Borden Avenue 92 88 This location is a Walker's Paradise, so daily errands do not require a car.
+```
+[p128_c0005] Walk/Transit Score Average: 90 1 point
+[p128_c0006]
+
+```text
+Accessibility Future Growth Potential Transit Network Connectivity Population Employment Residential/ Commercial Industrial/ Manufacturing B32, B62, Q67, Q103 LIIRR, East River Ferry 7
+```
+[p128_c0007] Current Station: 1 point
+### [p128_c0008] Long Island City Station Total: 25 points
+[p128_c0009] This station currently serves existing major employment centers and could support continued residential and commercial growth in Long Island City. It is well served by different transit modes, with connections to local buses, the Long Island Rail Road, East River Ferry, and the 7 subway line.
+[p128_c0010] The Long Island City Station is an anchor of burgeoning residential and commercial development in the neighborhood adjacent to the East River. This station is accessible to other transit modes, creating a multimodal corridor that gives the area a very high transit score. The area is also accessible on foot and has an excellent walk score. Reviving passenger service on the Lower Montauk Branch to Long Island City would provide another transit option to promote more residential and commercial growth. As the area has proven to support new transit services such as the East River Ferry, it may also sustain a new rail line, particularly as the area continues to grow. The existing station infrastructure could also potentially provide a base for new rolling stock and operations.
+[p128_c0011] _2-19_
+
+## Page 129
+
+### [p129_c0001] Lower Montauk Branch Rail Study
+### [p129_c0002] 2.7.2.2 Greenpoint Avenue Station
+[p129_c0003]
+
+```text
+Approximate Address Walk Score Transit Score Description 37-97 Railroad Avenue 48 59 This location is a Car-Dependent neighborhood, so most errands require a car.
+```
+[p129_c0004] Walk/Transit Score Average: 53.5 -1 point
+[p129_c0005] Former Station: No
+[p129_c0006]
+
+```text
+Accessibility Future Growth Potential Transit Network Connectivity Population Employment Residential/ Commercial Industrial/ Manufacturing B24
+```
+### [p129_c0007] Greenpoint Avenue Station Total: 14 points
+[p129_c0008] This station would serve one of the corridor’s densest employment concentrations, with potential to support future job growth. It is supported by a major pedestrian crossing over Newtown Creek (Greenpoint Avenue Bridge) and a local bus route connection.
+[p129_c0009] The Greenpoint Avenue Bridge and its connectivity with multiple transit modes in two boroughs is an important factor in this station siting. While there are many dense job centers along the Lower Montauk Branch and Newtown Creek, Greenpoint Avenue offers a rare pedestrian connection to Brooklyn as well as a bus connection (B24) which allows for some additional accessibility to this area. This connectivity makes it unique among areas adjacent to the Newtown Creek, where pedestrian access is limited due to the Creek itself and the abundance of cemeteries and industrial sites in the area. Despite the bridge and bus access, the site has a low walk score and transit score, due to the scarcity of other pedestrian and transit facilities. The overall access to this station is somewhat lacking.
+[p129_c0010] _2-20_
+
+## Page 130
+
+### [p130_c0001] Lower Montauk Branch Rail Study
+### [p130_c0002] 2.7.2.3 Penny Bridge Station
+[p130_c0003]
+
+```text
+Approximate Address Walk Score Transit Score Description 37-99 Review Avenue 40 42 This location is a Car-Dependent neighborhood, so most errands require a car.
+```
+[p130_c0004] Walk/Transit Score Average: 41 -1 point
+[p130_c0005] Former Station: Yes 1 point
+[p130_c0006]
+
+```text
+Accessibility Future Growth Potential Transit Network Connectivity Population Employment Residential/ Commercial Industrial/ Manufacturing -
+```
+[p130_c0007] Penny Bridge Station Total: 9 points
+[p130_c0008] This station would be located to serve existing employment centers and could support continued industrial growth along the Newtown Creek. Accessibility may be improved with the pedestrian and bicycle improvements planned for the new Kosciusko Bridge nearby.
+[p130_c0009] This station site would be adjacent to the Brooklyn-Queens Expressway and the Kosciusko Bridge, in a fully industrial and heavy manufacturing zone. There is little population or commercial development to support this station, though it would serve the industrial uses on the Newtown Creek. Access is a significant issue, as both the walk score and transit score reflect mobility difficulties in this area. However, the new Kosciusko Bridge, partially opened in 2017, will have pedestrian and bicycle facilities that are not present on the current bridge. These facilities may improve access to the areas around the bridge's landing, including potentially the Penny Bridge Station.
+[p130_c0010] _2-21_
+
+## Page 131
+
+### [p131_c0001] Lower Montauk Branch Rail Study
+### [p131_c0002] 2.7.2.4 Haberman Station
+[p131_c0003]
+
+```text
+Approximate Address Walk Score Transit Score Description 56-50 49 Street 57 49 This location is Somewhat Walkable, so some errands can be accomplished on foot.
+```
+[p131_c0004] Walk/Transit Score Average: 53 -1 point
+[p131_c0005] Former Station: Yes 1 point
+[p131_c0006]
+
+```text
+Accessibility Future Growth Potential Transit Network Connectivity Population Employment Residential/ Commercial Industrial/ Manufacturing B57, Q39, Q59
+```
+[p131_c0007] Haberman Station Total: 15 points
+[p131_c0008] This station would be located to serve existing major employment centers and could support continued industrial growth along the Newtown Creek. Connections exist to local bus service.
+[p131_c0009] The Haberman station combines access to jobs with transit connections to three bus lines. The station would be sited at a hub of industrial activity. This station was active until 1998 and originally served factory workers. It is a low-density population area with a small population base and little capacity for residential growth. The walk and transit scores indicate car dependence and low overall accessibility.
+[p131_c0010] _2-22_
+
+## Page 132
+
+### [p132_c0001] Lower Montauk Branch Rail Study
+### [p132_c0002] 2.7.2.5 Grand Avenue/Flushing Avenue Station
+[p132_c0003]
+
+```text
+Approximate Address Walk Score Transit Score Description 5977 Rust Street 81 69 This location is Very Walkable so most errands can be accomplished on foot.
+```
+[p132_c0004] Walk/Transit Score Average: 75 1 point
+[p132_c0005] Former Station: No
+[p132_c0006]
+
+```text
+Accessibility Future Growth Potential Transit Network Connectivity Population Employment Residential/ Commercial Industrial/ Manufacturing B57, Q39, Q59
+```
+[p132_c0007] Grand Avenue/Flushing Avenue Station Total: 22 points
+[p132_c0008] This station could support additional industrial uses as well as growth in nearby residential areas to the north and south. It is well served with local bus connections, with bus stops adjacent to the station for optimum access.
+[p132_c0009] This area is an intersection of residential development and industry. There are dense residential areas and manufacturing centers on either side of the station within a quarter-mile. The station site is bookended by two major north-south thoroughfares, Grand Avenue and Flushing Avenue. The walk score represents a very walkable neighborhood. The station could help drive population and employment expansion, as better transit access would make the area more attractive.
+[p132_c0010] _2-23_
+
+## Page 133
+
+### [p133_c0001] Lower Montauk Branch Rail Study
+### [p133_c0002] 2.7.2.6 Fresh Pond/Metropolitan Avenue Station
+[p133_c0003]
+
+```text
+Approximate Address Walk Score Transit Score Description 62-99 Metropolitan Avenue 90 75 This location is a Walker's Paradise, so daily errands do not require a car. 62-99 Metropolitan Avenue is a 12-minute walk from the M QNS BLVD-6th AVE/Myrtle Local at the Fresh Pond Road stop.
+```
+[p133_c0004] Walk/Transit Score Average: 82.5 1 point
+[p133_c0005] Former Station: Yes 1 point
+[p133_c0006]
+
+```text
+Accessibility Future Growth Potential Transit Network Connectivity Population Employment Residential/ Commercial Industrial/ Manufacturing Q38, Q39, Q54, Q58, Q67, QM24, QM25, QM34
+```
+[p133_c0007] Fresh Pond/Metropolitan Avenue Station Total: 27 points
+[p133_c0008] The station would serve both job sites and residential areas within the Fresh Pond section of Middle Village. It is well connected to bus routes and potential areas for residential and commercial growth.
+[p133_c0009] This is an ideal station site, as it grades high in accessibility, future growth potential, and transit network connectivity. It is located at the intersection of Metropolitan Avenue and Fresh Pond Road, major thoroughfares in Middle Village, which allows direct access to seven bus routes and is near an eighth route. There is dense residential and commercial development adjacent to the station and a section of manufacturing next to the adjoining Fresh Pond Yard. The multiple uses in this area would make an ideal station site and mobility is very high due to the excellent walking environment. This site was also a former station on the Lower Montauk Branch until 1998.
+[p133_c0010] _2-24_
+
+## Page 134
+
+### [p134_c0001] Lower Montauk Branch Rail Study
+### [p134_c0002] 2.7.2.7 Metro Mall Station
+[p134_c0003]
+
+```text
+Approximate Address Walk Score Transit Score Description 66-25 Traffic Avenue 84 75 This location is Very Walkable, so most errands can be accomplished on foot. 66-25 Traffic Avenue is a six-minute walk from the M QNS BLVD-6th AVE/Myrtle Local at the Middle Village - Metropolitan Avenue stop.
+```
+[p134_c0004] Walk/Transit Score Average: 79.5 1 point
+[p134_c0005] Former Station: No
+[p134_c0006]
+
+```text
+Accessibility Future Growth Potential Transit Network Connectivity Population Employment Residential/ Commercial Industrial/ Manufacturing
+```
+### [p134_c0007] Metro Mall Station Total: 20 points
+[p134_c0008] This station would have a good connection to the Metropolitan Avenue M subway station, Christ the King High School, Metro Mall, and nearby residential areas, with residential, commercial, and industrial growth potential.
+[p134_c0009] This station would serve several neighborhood centers and a large population of residents, employees, and students. The current demographics show the need for this station, rather than the station driving residential and industrial growth. The nearby residents enjoy a walkable neighborhood, with a high walk score. The quarter-mile around the station has somewhat limited growth potential due to the physical constraints of the footprints of both the Fresh Pond Yard and Junction as well as the All Faiths Cemetery. This station provides a connection to the M subway line at Metropolitan Avenue, allowing access to a rapid transit line. However, without certain station amenities and investments it could be a long walk between the potential Lower Montauk Branch station and the M subway station. Besides the M subway line, bus transit service in the area is available on Metropolitan Avenue. A major consideration of this station is the access: a pedestrian walkway directly from the M station and connecting to the street would significantly improve access. The potential high population and employment access is dependent on this improvement.
+[p134_c0010] _2-25_
+
+## Page 135
+
+### [p135_c0001] Lower Montauk Branch Rail Study
+### [p135_c0002] 2.7.2.8 Glendale Station
+[p135_c0003]
+
+```text
+Approximate Address Walk Score Transit Score Description 72-99 Edsall Avenue 77 61 This location is Very Walkable, so most errands can be accomplished on foot. It is a 21-minute walk from the M QNS BLVD-6th AVE/Myrtle Local at the Middle Village-Metropolitan Avenue stop.
+```
+[p135_c0004] Walk/Transit Score Average: 69 -1 point
+[p135_c0005] Former Station: Yes 1 point
+[p135_c0006]
+
+```text
+Accessibility Future Growth Potential Transit Network Connectivity Population Employment Residential/ Commercial Industrial/ Manufacturing -
+```
+### [p135_c0007] Glendale Station Total: 13
+[p135_c0008] This station could support additional residential growth in the medium-density nearby areas and commercial development in the small adjoining commercial corridor. Access is an issue, with few connections to the transit network available.
+[p135_c0009] This station is sited in a predominantly low- to mid-density residential area in Glendale. The residential portion of the area is walkable, with a good walking score; however, transit is lacking, with scarce transit options within a quarter-mile of the proposed station. Development may be hindered by the All Faiths Cemetery in the northwest portion of the station area, the Mt. Lebanon Cemetery to the south, and the St. John Cemetery to the northeast. There are modest commercial and industrial facilities in the area.
+[p135_c0010] _2-26_
+
+## Page 136
+
+### [p136_c0001] Lower Montauk Branch Rail Study
+### [p136_c0002] 2.7.2.9 80 th Street Station
+[p136_c0003]
+
+```text
+Approximate Address Walk Score Transit Score Description 77-22 80th Street 87 65 This location is Very Walkable, so most errands can be accomplished on foot.
+```
+[p136_c0004] Walk/Transit Score Average: 76 1 point
+[p136_c0005] Former Station: No
+[p136_c0006]
+
+```text
+Accessibility Future Growth Potential Transit Network Connectivity Population Employment Residential/ Commercial Industrial/ Manufacturing Q29, Q47
+```
+### [p136_c0007] 80th Street Station Total: 22 points
+[p136_c0008] This station, with good local bus access, would serve The Shops at Atlas Park and moderate-density population and employment areas, with a potential for moderate-density growth.
+[p136_c0009] This station would be sited at 80th Street, a major north-south thoroughfare through Glendale. There are residential and industrial areas near the station, including the sprawling Shops at Atlas Park. There is high growth potential that may be partially hindered by geographic barriers such as nearby cemeteries. Growth would therefore be denser and build on existing sites rather than expansive. The residential area is walkable and has superb mobility by foot, with an excellent walk score. With two bus routes serving the station, there is a moderate level of transit access, as seen in the average transit score.
+[p136_c0010] _2-27_
+
+## Page 137
+
+### [p137_c0001] Lower Montauk Branch Rail Study
+### [p137_c0002] 2.7.2.10 Woodhaven Boulevard Station
+[p137_c0003]
+
+```text
+Approximate Address Walk Score Transit Score Description 7602 Woodhaven Boulevard 87 68 This location is Very Walkable, so most errands can be accomplished on foot.
+```
+[p137_c0004] Walk/Transit Score Average: 77.5 1 point
+[p137_c0005] Former Station: No
+[p137_c0006]
+
+```text
+Accessibility Future Growth Potential Transit Network Connectivity Population Employment Residential/ Commercial Industrial/ Manufacturing Q11, Q21, Q23, Q52, Q53, BM5, QM12, QM15, QM42
+```
+[p137_c0007] Woodhaven Boulevard Station Total: 20 points
+[p137_c0008] This station would serve residential and employment areas, commercial centers, and could link with any future use of the Rockaway Beach Branch.
+[p137_c0009] This station would be located adjacent to Woodhaven Boulevard, a major north-south thoroughfare in Queens. This provides access to many adjoining areas and the buses utilizing it. There is a major employment hub on Woodhaven Boulevard in the form of shopping centers. A school complex is located within a quarter-mile of the potential station, a potential user of the Branch. Several bus routes would be located within walking distance of the potential station. Walking is a viable option in the area, with a high walk score. Forest Park limits development potential to the east.
+[p137_c0010] _2-28_
+
+## Page 138
+
+### [p138_c0001] Lower Montauk Branch Rail Study
+### [p138_c0002] 2.7.2.11 Richmond Hill Station
+[p138_c0003]
+
+```text
+Approximate Address Walk Score Transit Score Description 118-99 Babbage Street 93 86 This location is a Walker's Paradise, so daily errands do not require a car. 118-99 Babbage Street is a four-minute walk from the J Nassau Street Local at the 121 Street stop.
+```
+[p138_c0004] Walk/Transit Score Average: 89.5 1 point
+[p138_c0005] Former Station: Yes 1 point
+[p138_c0006]
+
+```text
+Accessibility Future Growth Potential Transit Network Connectivity Population Employment Residential/Commercial Industrial/Manufacturing Q10,QM18,Q55,Q56
+```
+[p138_c0007] Richmond Hill Station Total: 19 points
+[p138_c0008] This station would serve employment centers and the surrounding population with good potential for station area residential and commercial growth. It could provide a connection to the J/Z subway line with a possible direct transfer between platforms and local bus routes.
+[p138_c0009] The potential Richmond Hill station would be located at the intersection of three major streets: Lefferts Boulevard, Jamaica Avenue, and Hillside Avenue. This serves as access to population and employment centers between Forest Park and Jamaica. The compact development provides a walkable environment with a very high walk score. There is great transit presence in the area, with the J/Z subway line and the possibility of a direct connection should the Lower Montauk Branch be reactivated. The population potentially served by the reactivation may already be using the J/Z train, so population access may be less significant. More transit access could help spur commercial and residential development.
+[p138_c0010] _2-29_
+
+## Page 139
+
+### [p139_c0001] Lower Montauk Branch Rail Study
+### [p139_c0002] 2.7.2.12 Jamaica Station
+[p139_c0003]
+
+```text
+Approximate Address Walk Score Transit Score Description 93-02 Sutphin Boulevard 97 100 This location is a Walker's Paradise, so daily errands do not require a car. 93-02 Sutphin Boulevard is a one-minute walk from the E 8 Avenue Local and the J/Z Nassau Street Local at the Sutphin Blvd-Archer Av-JFK Airport stop.
+```
+[p139_c0004] Walk/Transit Score Average: 98.5 1 point
+[p139_c0005] Current Station: 1 point
+[p139_c0006]
+
+```text
+Accessibility Future Growth Potential Transit Network Connectivity Population Employment Residential/Commercial Industrial/Manufacturing Q6, Q8, Q9, Q20A, Q20B, Q24, Q25, Q30, Q31, Q34, Q40, Q41, Q43, Q44B/SB, Q54, Q55, Q60, Q65, NA, LIRR, AirTrain JFK
+```
+### [p139_c0007] Jamaica Station Total: 25 points
+[p139_c0008] This station currently serves employment centers and the surrounding population with potential for additional station area residential and commercial growth. This is a major transit hub, with existing connections to the E and J/Z subway lines, local buses, the Long Island Rail Road, and AirTrain JFK.
+[p139_c0009] This station is at the core of the commercial, residential, and civic hub of Jamaica. There is dense residential development in this corridor and a commercial strip on Sutphin Boulevard. The station itself serves nearly all MTA Long Island Rail Road branches and AirTrain JFK, as well as local buses. The station is accessible for residents and employers from a wide range of areas, seen in the perfect rating in the transit score. Walking is also a viable option in this neighborhood, with a near perfect resiliency score. The existing station infrastructure could also provide a base for new rolling stock and operations.
+[p139_c0010] _2-30_
+
+## Page 140
+
+### [p140_c0001] Lower Montauk Branch Rail Study
+### [p140_c0002] 2.7.3 Recommended Station Locations
+[p140_c0003] The Station Summary Table shows each station’s point total and if it met the threshold.
+[p140_c0004] _Table 2-4 Station Summary Table_
+[p140_c0005]
+
+```text
+Station Total Points Meets Threshold -Recommended for Reactivation? Long Island City 25 N/A - current station Greenpoint Avenue 14 Yes Penny Bridge 9 No Haberman 15 Yes Grand Avenue/Flushing Avenue 22 Yes Fresh Pond/Metropolitan Avenue 27 Yes Metro Mall 20 Yes Glendale 13 No 80 th Street 22 Yes Woodhaven Boulevard 20 Yes Richmond Hill 19 Yes Jamaica 25 N/A - current station
+```
+[p140_c0006] The eight stations recommended for reactivation on the Lower Montauk Branch meet the point threshold of 13.5 points , as explained in Section 2.7.1 above. This score represents half of the potential maximum total of 27 points, and potential stations exceeding that threshold show the capability of supporting potential ridership demand. This demand was determined by evaluating the population, employment, transit connections, and potential growth of the station site and its vicinity. Given this threshold value, two of the initial potential stations – Penny Bridge and Glendale – would not be recommended for reactivation.
+[p140_c0007] The remaining potential stations recommended for reactivation would generally be located at dense population or employment centers, with a number at more modest density but with the potential to grow. The stations would be expected to develop and drive growth in the residential, commercial, or industrial sectors. Four of the ten would have a direct connection to the greater rail transit network to better integrate and allow for easier commuting and traveling. In most instances, the proposed station may have a transformative impact on an area that did not have direct access to rail service.
+[p140_c0008] _2-31_
+
+## Page 141
+
+### [p141_c0001] Lower Montauk Branch Rail Study
+[p141_c0002] _Figure 2-1 Potential Stations_
+> [p141_c0003] The map illustrates the Lower Montauk Branch rail line, shown as a dark blue line, stretching from Long Island City in Queens to Jamaica in Brooklyn. The line passes through several neighborhoods and landmarks, including Greenpoint Ave, Haberman, Grand Ave/Flushing Ave, Fresh Pond, Metro Mall, Glendale, Woodhaven Blvd, 80th Street, and Richmond Hill. The map also shows the Penny Bridge, which is a former station that will not be reactivated. A legend in the top right corner defines the symbols: a dark blue line for the Lower Montauk Branch, a white box with a black border for an Existing Station (Long Island City), a white box with a grey border for a Potential Station (Greenpoint Ave), a red box with a black border for a Former Station (Penny Bridge), and a small circle for a Station Site. The map is divided into Queens (top) and Brooklyn (bottom) by the East River.
+[p141_c0004] Individual maps of potential stations can be found in Appendix D.
+### [p141_c0005] 2.7.4 Modifications to Existing Stations: Jamaica and Long Island City Stations
+[p141_c0006] Lower Montauk Branch passenger service requires two tracks and a platform to operate efficiently. For the other eight proposed station locations, the station would be built along a stand-alone segment of track, with no other existing rail infrastructure. Potential station setting and concept for those stations are discussed in the next section. In contrast, adding a Lower Montauk Branch station in the middle of the complex existing station, yard and track work found at the Branch's terminal stations at the existing Long Island City and Jamaica Stations poses more substantial complexities.
+[p141_c0007] Long Island City: The capacity of the existing LIRR Long Island City station and yard as well as the connection to LIRR Hunterspoint Station would maintain full capacity while adding these two tracks and platforms for Lower Montauk Branch service. In order to assure the best connection to the Vernon Boulevard-Jackson Avenue No. 7 subway station, the new platform would be located as close as possible on the north side of the site, near Borden Avenue and Vernon Boulevard.
+[p141_c0008] A potential alignment here would be to use the land adjacent to the yard on the north side to build a single track from the existing main tracks to a new platform located in the yard, along Borden Avenue. The two existing north yard tracks would be relocated to the south side of the yard in order to make space available for the Lower Montauk Branch platform and two passenger tracks.
+[p141_c0009] _2-32_
+
+## Page 142
+
+### [p142_c0001] Lower Montauk Branch Rail Study
+[p142_c0002] The main advantages of this alignment are the maintaining of the connection to Hunterspoint Station and the limited impacts on the existing yard. The main challenge lies in the overall operation of the site, which would become more complex with the addition of the Lower Montauk Branch between the existing LIRR operation in the yard and the Hunterspoint tracks. Each operation would have to share a section of track used extensively by the Lower Montauk Branch; single track to access to the platform is a potential operational constraint for the Lower Montauk Branch. An operational analysis would further assess this proposal and its feasibility.
+[p142_c0003] Jamaica Station: As with the proposed Long Island City Station, the Lower Montauk Branch station at Jamaica Station would require two tracks and a platform sufficient to meet service demands. Construction is currently underway at Jamaica Station to add a new platform and reconfigure tracks for a LIRR Brooklyn scooter service between Atlantic Terminal and Jamaica Station, which is being completed in connection with the East Side Access (ESA) project. When fully implemented, the combined train operations at Jamaica Station, with the additions of ESA and the Brooklyn scooter service, will leave no capacity for a Lower Montauk Branch terminus at the existing platforms. Therefore, it is necessary to add two tracks and one platform to accommodate this new service.
+[p142_c0004] The new platform would need to provide a reasonably direct connection to E, J and Z subway lines and LIRR service at Jamaica as well as to the JFK AirTrain. The new tracks should not reduce the capacity for revenue and non-revenue operations at the station and the yards around it.
+[p142_c0005] Jamaica Station is an elevated station, presenting several major physical constraints: it is surrounded on the west by Van Wyck Expressway, on the east by Sutphin Boulevard and on the south by 94 th Avenue, the station building and the AirTrain terminal. Also, 143 rd Street crosses the site underneath the tracks. There is little usable space surrounding the station available for expansion. The location of the Lower Montauk Branch tracks makes the new platform on the south side of the site a reasonable proposal.
+[p142_c0006] A preliminary site analysis eliminates an underground option because of the complex and difficult construction involved. A surface proposal, south of the future Brooklyn scooter platform, would be the most practical. The platform and new tracks would occupy space currently used by tracks that lead to the storage tracks west of the station building, necessitating a major modification of the lead tracks and a shortening of the storage tracks. Major groundwork for the construction of a viaduct over the Brooklyn scooter track would be needed to allow a connection between the Lower Montauk Branch tracks and the new platform without interfering with the Brooklyn scooter track.
+[p142_c0007] Further analysis is needed to assess the complete scope of work in this proposal and its impact on the existing rail infrastructure.
+[p142_c0008] _2-33_
+
+## Page 143
+
+### [p143_c0001] Lower Montauk Branch Rail Study
+### [p143_c0002] 2.8 Station Design Requirements
+[p143_c0003] The 10 stations meeting the point threshold would need to meet specific design and siting requirements to be built or reactivated. The asphalt strip that comprised the former stations on the Lower Montauk Branch would not be acceptable. Current LIRR stations provide a good template for meeting design requirements; however, the combination of the Lower Montauk Branch’s ROW characteristics and the fact that some stations would be built from scratch in new sites may prove challenging. Specific station issues will be discussed in the conceptual station design section. Specific station building codes would be regulated by the operating agency that would take over the Lower Montauk Branch; this has yet to be determined. The New York State Building Code of 2016 is an applicable baseline guide to the reconstruction of stations.
+### [p143_c0004] 2.8.1 Physical Characteristics of Existing and Former Stations
+[p143_c0005] One issue that the former Lower Montauk Branch stations faced was a lack of station amenities. The stations had little to no passenger facilities, with many stations being a simple strip of asphalt along the tracks serving as a waiting area. Besides the subpar passenger experience, these stations did not meet the requirements of the Americans with Disabilities Act (ADA). Because of the station layouts, passenger coaches with so-called trapdoor stairs were able to pick up and discharge passengers. Stations built now must comply with ADA accessibility standards that provide accessibility to individuals using wheelchairs. A survey of the previous stations and potential stations (Table 2-5) shows each station’s physical characteristics and the opportunities and challenges of constructing each. Stations along the Lower Montauk Branch share many layout and design traits, but there are some differences in the stations’ footprints.
+[p143_c0006] _Table 2-5 Existing/Former Station Physical Characteristics_
+[p143_c0007]
+
+```text
+Station Platform Type Accessible? Station Type Long Island City High-level Yes Street level, physically separated Penny Bridge Asphalt strip No At grade Haberman Asphalt strip No At grade Fresh Pond/Metropolitan Avenue Asphalt strip No Open trench below grade Glendale Asphalt strip No At grade Richmond Hill High-level No Elevated Jamaica High-level Yes Elevated
+```
+[p143_c0008] _2-34_
+
+## Page 144
+
+### [p144_c0001] Lower Montauk Branch Rail Study
+### [p144_c0002] 2.8.2 Concept Design of Potential Lower Montauk Stations
+[p144_c0003] There are some obstacles for the construction of new stations stemming from some of the physical surroundings of the potential station sites. New stations would need much more robust infrastructure and facilities than previously existed on the Lower Montauk Branch. This higher level of station facilities stems from a need to meet ADA requirements and could potentially help attract riders, as riders may expect station amenities such as shelters, climate-controlled areas, information boards and improved access as seen in most LIRR stations. Yet, as seen below in Table 2-6, there are some ROW characteristics that may make construction a complex undertaking.
+[p144_c0004] _Table 2-6 Potential Station Physical Surroundings_
+[p144_c0005]
+
+```text
+Station Physical Surroundings Greenpoint Avenue At grade crossing, buildings adjacent to ROW, bridge overhead Grand Avenue/Flushing Avenue Tracks on retained fill, arterial roadway adjacent to ROW, vertical circulation needs Metro Mall Open trench below grade, adjacent retaining walls, subway overhead, vertical circulation needs 80th Street Road overhead, buildings adjacent to ROW Woodhaven Boulevard Building adjacent to ROW, road overhead
+```
+### [p144_c0006] 2.8.3 Passenger Facilities
+[p144_c0007] The reactivation of passenger service would require more extensive station infrastructure than previous stations. Current LIRR stations in similar sites feature covered areas and canopies with modern lighting for passengers waiting for trains. Another common feature is a climate-controlled enclosed waiting area on the platform to guard against long waits in inclement weather. This specific feature may be dependent on the service plan, i.e., longer headways similar to commuter service may encourage this feature, while frequent peak- and off-peak service similar to a subway may not require this. The outdoor stations of the LIRR commuter rail and New York City Subway could serve as design templates and frameworks for passenger facility features.
+### [p144_c0008] 2.8.4 Passenger Information Displays
+[p144_c0009] Passenger information has become a major factor in attracting and keeping riders informed of schedules, planned changes, and service updates. Real-time travel alerts at stations would make travel on the Lower Montauk Branch more attractive in helping remove some of the guesswork about train status and any service disruptions. These can be displayed on dynamic electronic passenger information displays and announced via public address systems.
+[p144_c0010] These displays can be controlled from a central facility that is linked to the Branch's signal system, providing frequent service updates that are delivered quickly and effectively. These passenger
+[p144_c0011] _2-35_
+
+## Page 145
+
+### [p145_c0001] Lower Montauk Branch Rail Study
+[p145_c0002] information systems would greatly enhance the rider experience and encourage usage of the Lower Montauk Branch.
+### [p145_c0003] 2.8.5 Fare Collection Infrastructure
+[p145_c0004] As the reactivation of the Lower Montauk Branch is examining various modes, different fare collection methods may be considered.
+[p145_c0005] If the rail mode and service pattern is a commuter-oriented, distance-based fare such as that on the LIRR, there would not be the need for any fare infrastructure at stations other than ticket vending machines (TVMs); in this mode, tickets would be collected and inspected by conductors on board the train. A similar level of fare collection infrastructure would be needed if some type of “proof-of-payment” system (similar to that used on the NJ Transit Hudson-Bergen Line) were implemented.
+[p145_c0006] If the service pattern was more like the subway and fares were uniform across the Lower Montauk Branch, then fares could be collected with access-controlled stations featuring turnstiles or other payment-dependent access points.
+[p145_c0007] Areas on and around platforms would need to have sufficient space for these gates and turnstiles. This may be problematic at station sties with constrained or limited footprints due to ROW characteristics, and may be a factor to consider.
+[p145_c0008] Another consideration is the possibility of fare integration with other bus and subway service. Current LIRR services operate on different fare systems than New York City Transit Subways and Buses, with LIRR using distance-based fares and subways and buses using a flat fare. This is a matter more strictly related to fare policy rather than the fare collection infrastructure that may be required. However, if there is fare integration and the introduction of a free transfer between systems, stations would need a means of controlling access and validating free transfers. The base assumption for the proposed Lower Montauk service is that its riders would have free transfers to MTA subway and bus lines and vice versa, as do current MTA subway passengers. This is discussed further in Section 3.
+### [p145_c0009] 2.8.6 ADA Compliance
+[p145_c0010] All new and reactivated stations on the Lower Montauk Branch would need to meet ADA requirements for access to people with disabilities. This covers a range of physical characteristics of stations, and may affect the station siting process in discouraging sites where these features may be too difficult to implement, specifically features dealing with access to the station.
+### [p145_c0011] 2.8.7 Station Access
+[p145_c0012] Access to stations must be barrier-free and have ease of circulation. Steps and other impediments should not obstruct paths to the station, including from streets, parking lots and other public rights-of-way. Slopes may not exceed one inch of rise for every 12 inches of length. Station sites that are constrained physically may not have adequate space for the construction of compliant ramps and barrier-free entries, and may be problematic. Stations with vertical circulation (i.e., stairs, escalators)
+[p145_c0013] _2-36_
+
+## Page 146
+
+### [p146_c0001] Lower Montauk Branch Rail Study
+[p146_c0002] may need to provide elevators to ensure access for individuals using wheelchairs. This may be a significant expense and construction undertaking that may affect feasibility of the station site.
+[p146_c0003] As noted below, direct intermodal access, where available, may increase station access to individuals with disabilities, as accessible buses and stops could provide a mass transit link to the Lower Montauk Branch. The bus stops may be constructed with integral connections to the train stations.
+### [p146_c0004] 2.8.8 Platforms
+[p146_c0005] The United States Department of Transportation (USDOT) requires full-length, level boarding platforms for new and reconstructed stations that are accessible to passengers with disabilities. Raised platforms may not have a greater horizontal gap than three inches, and a vertical gap greater than 5/8 of an inch between car and platform. Platform edges must have tactile warning edges that run the length of the platform and provide sufficient sensation and color contrast to the rest of the platform.
+[p146_c0006] Depending on the rail mode selected, the platform type may be low-, medium-, or high-level. Former stations on the Lower Montauk Branch were asphalt strips that served dropdown steps on coaches and were not ADA compliant; reactivated service would need to have platforms that were effectively at the same height of the chosen vehicle's floor. A low-level platform would need to be accessible, potentially limiting it to low-floor light rail vehicles compatible with these platforms.
+### [p146_c0007] 2.8.9 Ticket Vending Machines (TVMs)
+[p146_c0008] Ticket vending machines (TVMs) are located on platforms or adjacent areas of LIRR stations, where passengers buy tickets before boarding to present to the conductor. Similar MetroCard machines are available at subway stations. As several potential fare structure types for the Lower Montauk Branch would likely require some type of ticket vending system, TVMs are an essential feature of stations and must be accessible from wheelchairs. They cannot be raised or suspended on a wall or platform. It is also expected that the use of smartphone apps and other advances in ticketing and proof-of-payment will likely expand and evolve in the near future.
+### [p146_c0009] 2.8.10 Features for the Visually/Hearing Impaired
+[p146_c0010] In addition to the tactile platform warning strips, tactile signage containing train and station information must be installed for the visually impaired. For the hearing impaired, variable message boards must be present to complement any audible announcements. These are standard features at many LIRR and NYCT stations.
+### [p146_c0011] 2.8.11 National Fire Protection Agency (NFPA) Requirements
+[p146_c0012] Stations must meet National Fire Protection Agency (NFPA) requirements for access, egress, communication systems, as enumerated in NFPA 130, "Standard for Fixed Guideway Transit and Passenger Rail." Exterior stations such as the ones on the Lower Montauk Branch have less stringent fire safety requirements than interior or underground stations. Access and egress point must not be impeded and should allow for access to the street and points away from the station in the event of an
+[p146_c0013] _2-37_
+
+## Page 147
+
+### [p147_c0001] Lower Montauk Branch Rail Study
+[p147_c0002] evacuation. Clearing widths must be a minimum of 44 inches along platforms as a means of egress. Stations with vertical circulation potentially using elevators would need stairs to augment access for emergency exit purposes. For these stations, escalators or elevators must not account for more than half of egress capacity. Another scenario to consider is the presence of fare gates. If the train service runs like LIRR, there are no fare gates and fares are collected on board the trains; if it is operated as the subway is, fare control would be implemented. Fare gates serve as a barrier, but must be designed to release freely so as not to impede progress as a means of egress. They must operate independent of a power failure, or in the case of a fire alarm or manual activation of a fire switch. Sprinkler protection would not be required in these open stations. Emergency communication systems must be provided, and must be connected to an emergency power system.
+### [p147_c0003] 2.8.12 Direct Intermodal Access
+[p147_c0004] While the transit connections in the station profiles represent bus, subway, and ferry services located within approximately a quarter-mile of the proposed station, direct intermodal access with a bus stop located immediately adjacent to the station would improve the utility of any potential station by making it more accessible via other transit modes. There will likely be only drop-off space but no passenger parking at Lower Montauk Branch stations due to space constraints, and access to stations will be made primarily via kiss-and-ride, on foot, or by public transit. Because of the low- to medium-densities around the stations, many trips would be made via connecting transit modes or kiss-and-rider drop-off. The likely crucial role the local transit will play in station access means that bus route alignment and stops to directly serve stations would greatly benefit riders and increase usage. Bus route alignments in many instances are relatively flexible to adapt to service demand, especially when a major investment such as the Lower Montauk service is involved, and a good bus-rail service connection would drive demand for each mode. A consideration in the station siting process is how a station's immediate environs could accommodate a bus stop or if the station's footprint could be expanded beyond the platform infrastructure to improve access.
+[p147_c0005] The possibility of fare integration and free transfers would be a critical factor to encourage potential Lower Montauk Branch riders, and a double-fare requirement would likely reduce ridership substantially. The combination of adjacent stops and free transfers would foster higher ridership and support greater transit connectivity. Station sites that could be expanded to include on-site intermodal connections would be attractive to potential riders and a boon for a reactivated passenger service on the Lower Montauk Branch.
+[p147_c0006] _2-38_
+
+## Page 148
+
+### [p148_c0001] Lower Montauk Branch Rail Study
+### [p148_c0002] 2.9 Conceptual Station Design
+[p148_c0003] The stations on the Lower Montauk Branch will be designed incorporating rail safety, passenger facilities, and accessibility. This section depicts the stations as 200 feet in length; 400 feet was considered as well.
+[p148_c0004] Station plan views can be found in Appendix E.
+### [p148_c0005] 2.9.1 Facilities Design
+[p148_c0006] Stations must conform to ADA accessibility guidelines, with ramp and/or elevator access to the station and each platform. This was a challenge at some stations on the Lower Montauk Branch due to constrained spaces and limited station footprints. Access to the station was defined by the station's siting at a grade crossing. The grade crossing serves as a pedestrian crossing to access both platforms via ramps and staircases. No pedestrian overpass with elevators is required in this configuration. At sites with no adjacent grade crossings or other means to cross the tracks, this may also necessitate an overpass above the tracks, with elevator service connecting them and accessible from the platforms, where necessary. Additional issues include vertical circulation and access, where staircases leading to the tracks used previously would not be adequate for current use.
+[p148_c0007] _Figure 2-2 Examples of Canopies, Shelter Sheds, and Ticket Vending Machines in use on the LIRR network_
+> [p148_c0008] The image is a composite of three photographs. The leftmost photo shows a long, covered platform with a yellow and black striped safety strip along the edge, supported by concrete pillars. The middle photo shows a smaller, more enclosed shelter structure with a white frame and a dark roof, situated on a platform. The rightmost photo is a close-up of a ticket vending machine for the Long Island Rail Road, featuring a digital screen, a coin slot, and a receipt area.
+[p148_c0009] A station building would offer the following functionalities: an enclosed and air conditioned area for passengers to wait for their train, information area, restrooms, and possibly a ticket office and/or a vendor space. These functionalities can also be provided separately and directly on the platforms with heated shelter sheds, information kiosks, separate restrooms, and Ticket Vending Machines. Whether or not constructing a station building, and with which functionalities, will depend on the future owner and operator's strategy in terms of amenities, available space along the corridor (only Woodhaven Boulevard Station could accommodate a station building within the right-of-way), architectural line, and
+[p148_c0010] _2-39_
+
+## Page 149
+
+### [p149_c0001] Lower Montauk Branch Rail Study
+[p149_c0002] operation cost. However, at this preliminary study level the options are still open and cannot be further developed.
+[p149_c0003] The varied conditions of the Lower Montauk Branch show how much rehabilitation and upgrades would be necessary to reactivate passenger service. The proposed passenger service cannot be a simple restart of the service that was terminated in 1998, with threadbare station facilities. While the ROW is maintained, the station sites are not ideal for modern stations. As previously stated, former stations were simple, unadorned spaces often without more than asphalt strips for passengers.
+### [p149_c0004] 2.9.2 Rail Operations Design
+[p149_c0005] From a train operations standpoint, the layout of tracks and stations is dependent on the type of rail vehicle selected and the conditions of passenger and freight concurrent operations.
+[p149_c0006] Operation with freight service on the Lower Montauk Branch requires planning. Passenger service would be best accommodated with FRA-compliant vehicles for straightforward sharing of tracks. With passenger vehicles not meeting FRA compliance standards and operating concurrently, a temporal or physical separation between freight and passenger is required. The temporal separation would require the freight and passenger to operate on independent timetables. A physical separation would require freight and passenger to operate on separate tracks with a minimum safety distance between the tracks. If this minimum distance cannot be guaranteed, because of a limited right-of-way for example, a safety wall may be required. This wall would prevent major harm in the event of a collision between heavier freight trains and lighter passenger vehicles. Even though less space-consuming than the standard separation, it would still require additional horizontal clearance within the ROW by extending the track center from 12-15 feet to 20 feet with a three-foot wide wall, requiring significant investment in realigning tracks. Another option for separation of freight and passenger service is the use of a gauntlet track, a parallel track to serve a station off of the shared mainline track. The gauntlet track is used by passenger trains to pull in to the station, allowing freight to stay on the center and maintain adequate horizontal clearance. This may also require substantial financial commitment. FRA-compliant vehicles are preferred for their flexible operating conditions.
+[p149_c0007] The platform level must be flush to the train door level for ADA compliance. For DMU rail vehicles, the platforms would likely be high-level, with a 4'2" vertical clearance from the top of the rail to the platform, as opposed to the 9" to 1'3/4" clearance of a low-level platform. Maximum horizontal clearance between the track's centerline and the platform edge (in a normal two-track layout without a gauntlet track) would be 5'-7".
+[p149_c0008] Two potential stations, Haberman and Woodhaven Boulevard, are shown below as examples of 200-foot-long, high-level platforms. Concept plans for all station can be found in Appendix E. High-level platforms would be compatible with the likely mode choice, Diesel Multiple Units. These stations show the end of the station site spectrum, from a simple grade crossing with separate access to each platform (Haberman) to a pedestrian bridge over the tracks to connect the platforms to the street (Woodhaven Blvd.). For stations at existing grade crossings, the grade crossings would serve as pedestrian crossings
+[p149_c0009] _2-40_
+
+## Page 150
+
+### [p150_c0001] Lower Montauk Branch Rail Study
+[p150_c0002] to access both platforms via ramps and staircases. No pedestrian overpass with elevators would be required in this configuration.
+### [p150_c0003] 2.9.3 Examples of Concept Stations
+### [p150_c0004] 2.9.3.1 Haberman Station
+[p150_c0005] The Haberman station (Figure 2-3) would have ramp access from grade level at the eastern end of each platform. This is at the front of eastbound trains and at the back of westbound trains. Because there is access to each platform from the street, there is no need for a crossover.
+[p150_c0006] _Figure 2-3 Haberman Station Concept_
+> [p150_c0007] The figure is an aerial photograph of the Haberman Station area, overlaid with a conceptual rail line design. The rail line consists of two main tracks running horizontally across the center of the image, highlighted in yellow. Below these tracks are two platforms, one for eastbound and one for westbound trains, highlighted in red. A pink line indicates the 'Existing Right-Of-Way (unverified)' which follows the rail line. A legend in the bottom left corner defines the symbols: yellow and red lines for 'Main Tracks (existing, removed, created)', a pink line for 'Existing Right-Of-Way (unverified)', a red line with a vertical bar for 'Stairway, Ramp', a red line with a horizontal bar for 'Overpass with elevators', a red rectangle for 'Platforms', and a red line with a vertical bar for 'Pathway to/from platforms'. The map also shows '56TH ROAD' running vertically, '48TH ST' and '49TH ST' running horizontally, and an 'AT-GRADE CROSSING' at the intersection of 56th Road and the rail line. A small inset map in the bottom right shows the station's location relative to the 'Mozzetta Creek' and 'Long Island' area, with a scale bar from 0 to 100 feet and a north arrow.
+[p150_c0008] _HABERMAN - 200 FT HIGH LEVEL PLATFORM_
+[p150_c0009] _2-41_
+
+## Page 151
+
+### [p151_c0001] Lower Montauk Branch Rail Study
+### [p151_c0002] 2.9.3.2 Woodhaven Boulevard Station
+[p151_c0003] The Woodhaven Boulevard station site (Figure 2-4) is more complex than the Haberman Station, as the location is not a simple grade crossing but rather a site with a major access road crossover and multi-point access required. The Lower Montauk Branch is crossed by the Woodhaven Boulevard overpass, with a dead-end Woodhaven Boulevard underpass providing street level access. The lack of a through street necessitates an overpass connecting platforms, similar to the present pedestrian overpass. The platform connection would be the same as the pedestrian bridge, but would require elevator access to meet ADA requirements. Further studies will determine whether the existing overpass might be reused to cross the tracks; however new staircases and elevators would be required to connect to the platforms in any case.
+[p151_c0004] _Figure 2-4 Woodhaven Boulevard Station Concept_
+> [p151_c0005] The image is an aerial map showing the proposed Woodhaven Boulevard Station. It features the Lower Montauk Branch tracks running horizontally across the center, with yellow and green lines indicating existing and new tracks. Woodhaven Boulevard runs vertically on the left, with a dead-end underpass. A pink line indicates the existing right-of-way, which is to be removed. A red line shows the proposed overpass with elevators. A white line indicates the platform, and a red line shows the pathway to the platform. A label points to an 'EXISTING RAMP AND OVERPASS TO BE REPLACED BY OVERPASS WITH ELEVATORS'. A legend at the bottom left defines the symbols: Main Tracks (existing, removed, created), Existing Right-Of-Way (unverified), Stairway, Ramp, Overpass with elevators, Platforms, and Pathway to/from platforms. A scale bar at the bottom right shows 0, 50, and 100 feet, and a north arrow points towards the top right.
+[p151_c0006] _WOODHAVEN BOULEVARD - 200 FT HIGH LEVEL PLATFORM_
+### [p151_c0007] 2.9.3.3 Typical Station Cross-Section
+[p151_c0008] The stations on the Lower Montauk Branch share similar characteristics and would have similar station layouts and cross-sections. One notable exception is the Richmond Hill station, which has an elevated platform above street level. The stations would have shelters covering the platforms and lighting. Where a crossover is required to access each platform, there would be a pedestrian overpass with elevator banks on either side. The stations would thus be fully accessible and compliant with ADA standards. A typical station cross-section is depicted in Figure 2-5.
+[p151_c0009] _2-42_
+
+## Page 152
+
+### [p152_c0001] Lower Montauk Branch Rail Study
+[p152_c0002] _Figure 2-5 Typical Station Cross-Section with Overpass_
+> [p152_c0003] This technical cross-section diagram illustrates a station structure with an overpass. The diagram includes the following elements and elevations: TOP OF ELEV. SHAFT ROOF: EL. 44'-10" T.O. ELEV. SHAFT: EL. 40'-7" T.O. OVERPASS ROOF: EL. 37'-10" PEDESTRIAN OVERPASS: EL. 42'-10" STAIR: Located on the right side of the structure. ADA RAMP - 3: Located on the left side, leading to the platform level. PLATFORM LEVEL: EL. 44'-10" T.O. RAILS: Located below the platform level. GRADE: EL. 4'-00" Vertical dimensions are indicated as follows: From the platform level to the pedestrian overpass: 12'-0" From the platform level to the top of the overpass roof: 22'-3" From the platform level to the T.O. rails: 4'-2" The diagram also shows a train car positioned between two platforms, with the platform level indicated by horizontal lines and the T.O. rails indicated by a dashed line.
+[p152_c0004] _2-43_
+
+## Page 153
+
+### [p153_c0001] Lower Montauk Branch Rail Study
+### [p153_c0002] 2.10 Special Considerations for Service Type and Operations
+### [p153_c0003] 2.10.1 Waste Management Facility Access Requirements
+[p153_c0004] The Waste Management Facility (approximately 1.3 miles east of the Long Island City LIRR station) is a major rail freight customer on the Lower Montauk Branch, with continuous train movements in various sections from 12:00 PM to 1:00 AM, primarily focused on the western third of the corridor.
+[p153_c0005] Under current agreements, Waste Management has exclusive access to designated branch segments between 9:00 AM and 3:00 PM (see Figure 2-6 Staging of Waste Management Rail Cars of Waste Management train formation on branch tracks).
+[p153_c0006] Much of this closure period is required to allow for a continuous flow of the City's municipal waste trucks to use the at-grade crossings adjacent to the Waste Management site to bring waste to the facility and then to depart. There are also other periods during the day and in the evening when rail cars (almost entirely the Waste Management cars) are assembled into a train set to be taken out of the City. Collectively these place further demands on available track space and time for other rail operations.
+[p153_c0007] If left unaltered, there would be at least a six-hour midday gap in train service, which would pose a difficult hurdle for any rail operation.
+[p153_c0008] _Figure 2-6 Staging of Waste Management Rail Cars_
+> [p153_c0009] A photograph showing a long line of green waste management rail cars stacked on a train car, forming a train set on a railway track. The cars are marked with 'USW' and 'C-4'. The track is in the foreground, and the cars extend into the distance under a clear blue sky.
+[p153_c0010] Source: Project Team Site Visit, 1/20/17
+### [p153_c0011] 2.10.2 Accommodation of Freight Service and Limited Service Windows
+[p153_c0012] The Lower Montauk Branch currently serves freight service operated by NY&A, operating as part of a greater freight network in the New York City Metropolitan Area, with connections to CSX, the Canadian Pacific Railway, and the Providence and Worcester Railroad. While the Lower Montauk Branch only sees approximately two through freight trains daily, the tracks are used frequently throughout the day for train storage and movement in and out of train yards. Maspeth Yard, as an example, sees approximately 2,500 train movements annually; and this only one of several areas of high train activity. Freight operations are presently relatively limited, with few high-volumes customers other than Waste Management and shipments of aggregate, sand, rebar and other building materials.
+[p153_c0013] There are a variety of plans to expand rail freight services, some dramatically (especially if the Cross-Harbor rail tunnel to New Jersey were developed). Any temporal constraints placed on these operations, or disruptions to rail freight service either during the construction or operation of passenger service on the Lower Montauk Branch, could have transportation, environmental, and economic consequences that need to be carefully considered.
+[p153_c0014] _2-44_
+
+## Page 154
+
+### [p154_c0001] Lower Montauk Branch Rail Study
+### [p154_c0002] 2.10.3 Residences along the Right-of-Way
+[p154_c0003] As previously mentioned, noise and emissions are major areas of concern because of their potential impacts on the residences along the right-of-way. While the western section surrounding the Lower Montauk Branch is dominated by industrial uses, the eastern section has many areas dominated by low- and medium-density residential development (see Figure 2-7 for aerial photo of homes in Middle Village, Queens, directly adjacent to rail ROW west of 88th Street grade crossing). Like many urban rail lines, the Lower Montauk Branch's ROW directly abuts residences in a number of adjacent neighborhoods, some located as little as 20 feet from the trackbed.
+[p154_c0004] _Figure 2-7 Homes Adjacent to Lower Montauk Branch_
+[p154_c0005] Source: Google Maps
+[p154_c0006] This may create an acute need for noise and emission control, especially if diesel-powered trains are involved, in order to garner community and stakeholder support. Such support may not be forthcoming without measures for noise and emission reduction in connection with future passenger operations. The ROW limits of the branch may complicate the use of sound barriers to mitigate potential noise impacts. The combination of diesel-related operations, especially noise and air pollution, must be considered in the rail mode selection process.
+### [p154_c0007] 2.10.4 Additional Infrastructure within Constrained ROW
+[p154_c0008] Implementing passenger rail service within the Lower Montauk Branch's 8.5-mile ROW would be complicated by the following physical constraints and limitations, which would hinder the development of necessary rail infrastructure in connection with that service.
+### [p154_c0009] 2.10.4.1 Lack of Electric Infrastructure
+[p154_c0010] As previously noted, the entirety of the Lower Montauk Branch lacks the traction power infrastructure needed to support any electric rail vehicles, and installing it would require significant capital investment and additional ROW.
+### [p154_c0011] 2.10.4.2 Lack of Signalization/Train Control Infrastructure
+[p154_c0012] The Lower Montauk Branch is currently considered "secondary track" by the LIRR, as it does not carry passenger service and is not considered as part of the LIRR main tracks. The lack of passenger service, coupled with speed restrictions on freight train movements (10 MPH), allows for a limited signalization system to be maintained along the branch. More advanced signalization, communication and train control systems would be required along the Lower Montauk Branch before passenger rail service could
+[p154_c0013] _2-45_
+
+## Page 155
+
+### [p155_c0001] Lower Montauk Branch Rail Study
+[p155_c0002] be reactivated, whatever rail mode was selected. This would include Positive Train Control, or “PTC” systems, required by the Rail Safety Improvement Act of 2008 on passenger and freight lines to improve operation safety. The system also improves operation by increasing capacity and communication between the trains and the operation center.
+### [p155_c0003] 2.10.4.3 Additional or Relocated Tracks
+[p155_c0004] Building potentially needed additional tracks and/or relocating existing tracks (to provide greater separation) may be expensive and physically infeasible due to these ROW constraints. For example, additional tracks would potentially be needed when operating non-FRA-compliant vehicles in the same corridor with freight, and additional tracks or yard space associated with rail freight could likely be required as well. The inability or high costs of adding or changing tracks within a confined area would greatly reduce the possible modes considered (e.g., ones requiring physical separation) or services provided (ones involving expansion of both freight and passenger rail infrastructure). Even with temporal separation, the additional space needed for passenger stations would also require some track realignment and possible property takings adjacent to the ROW.
+### [p155_c0005] 2.10.4.4 Platform Type
+[p155_c0006] Different modes require different platform types for safe and efficient boarding of the rail vehicle. The Americans with Disability Act (ADA) requires that stations be accessible to all users, including individuals with disabilities. Many of the former LIRR stations on the Lower Montauk Branch were simple asphalt strips that served low-level railcars. The fact that these were not ADA compliant and the high costs of correcting that problem, and the corridor’s low ridership, made it uneconomical for the LIRR to continue its Lower Montauk passenger service.
+### [p155_c0007] 2.10.5 Speed Restrictions
+[p155_c0008] Current operating procedures on the Lower Montauk Branch tracks for the NY&A are classified as Class 2 operations by the FRA, which limits passenger trains to 30 MPH and a maximum freight speed of 25 MPH. The NY&A has self-imposed a speed restriction of 10 MPH throughout a majority of the Lower Montauk Branch, with a short segment at a 15 MPH restriction. This is due to the track geometry of curves and grades and the nine at-grade crossings along the Lower Montauk Branch.
+[p155_c0009] It is assumed that reactivated passenger service trains would operate from a base speed limit of approximately 30-40 MPH range, depending on the area in which the train is operating and the close proximity of adjacent properties. As noted, NY&A operates at lower speeds than the required speed limit, due in part to the limited signal system and the existing conditions of the tracks, although a comprehensive upgrade of all tracks, switches, and other infrastructure would likely be mandated prior to the start of rail passenger service. Actual speed limits would be affected by the acceleration or deceleration of the train sets and the spacing of stations. Given overall corridor conditions, rail modes capable of much higher speeds would likely not be a viable choice given the limits placed on the ability to achieve their potential speeds along the branch. Further, a rail mode with smaller acceleration and deceleration ranges may be better suited to this rail line than one with capability for higher speeds.
+[p155_c0010] _2-46_
+
+## Page 156
+
+### [p156_c0001] Lower Montauk Branch Rail Study
+### [p156_c0002] 2.11 Selection of Proposed Rail Passenger Service Concept
+[p156_c0003] Based on the planning goals of the study and feedback from the initial public stakeholder meeting in January 2017, it is assumed that the reactivated passenger service on the Lower Montauk Branch would operate bidirectionally whenever service is available throughout the day on weekdays, as well as on weekends. The service could be utilized for travel along the corridor itself and to connect with other transit services to access off-corridor destinations. Overall, it would provide approximately the same level of service as the City's surrounding and connecting local transit system.
+[p156_c0004] In the subsequent section, each of the proposed station areas will be summarized in terms of their potential transit network connections and surrounding land uses. As previously detailed, a preliminary station siting study indicates that the Lower Montauk Branch would provide service to the following stops including the existing Long Island City and Jamaica Stations:
+- [p156_c0005] • Long Island City • Greenpoint Avenue • Haberman • Grand Avenue/Flushing Avenue • Fresh Pond/Metropolitan Avenue • Metro Mall • 80th Street • Woodhaven Boulevard • Richmond Hill • Jamaica
+### [p156_c0006] 2.11.1.1 Service Options Considered
+[p156_c0007] As was mentioned previously, it is assumed that the reactivated Lower Montauk Branch service will operate bi-directionally whenever service is available throughout the day on weekdays, as well as on weekends. The proposed service plan is comprised of specific elements, as presented in this section of the report. Although 24-hour service was initially considered, to test market strength the study team instead utilized a service plan that allowed for the exclusive overnight use of the Lower Montauk Branch by the freight operator (i.e., NY&A) and for a 17-hour span of service by passenger service, at varying frequencies. The options that were considered are discussed below.
+### [p156_c0008] 2.11.1.2 24-Hour Subway-Type Transit Service
+[p156_c0009] This service pattern would be similar to NYCT subway operations, with 6-minute peak-hour headways and 24-hour service. This option would have substantial mobility gains for residents, providing a consistent frequent service option. Implementing this type of service would require significant infrastructure investment (see details for required investments in Section 2.12), in order to allow concurrent freight operations.
+### [p156_c0010] 2.11.1.3 Joint Passenger-Freight Operation
+[p156_c0011] Joint rail passenger-freight operations would shorten passenger service to specific windows of the day, leaving some hours without passenger service operating. During peak commuting periods, freight activity would be limited to support the more frequent transit service in those periods. There would also be less frequent transit service during other (off-peak weekday) operating hours. While overall service would be less than under the 24-hour subway-like option, there would still be improved mobility
+[p156_c0012] _2-47_
+
+## Page 157
+
+### [p157_c0001] Lower Montauk Branch Rail Study
+[p157_c0002] enjoyed by residents. A substantial infrastructure investment would be required to allow for freight operations and reduce rail congestion by shifting some freight service away from the Lower Montauk Branch.
+### [p157_c0003] 2.11.1.4 Commuter Rail-Type Operation
+[p157_c0004] This option would be similar to the joint passenger-freight operations, but with operations more similar to current LIRR operations. This means higher base fares and no free transfers included. Investment levels would be similar to the joint passenger-freight operations, but would yield lower mobility gains for residents, due to the higher fares. Higher fares may discourage use and keep passengers on cheaper transit options.
+### [p157_c0005] 2.11.2 Recommended Concept for Evaluation
+[p157_c0006] The recommended concept is the joint passenger-freight operation service plan. This plan would divide passenger and freight services into separate windows of the day. The level of investment required would be significant but lower than other options. The service trade-off would better allow joint operation of freight and passenger service.
+### [p157_c0007] 2.11.3 Transit Service Concept Details
+### [p157_c0008] 2.11.3.1 Assumed Operating Periods and Stopping Pattern
+[p157_c0009] Peak-hour passenger service, from 6 AM to 10 AM and 4 PM to 8 PM, would have the highest frequencies, similar to some NYCT subway lines. Passenger service would have less midday service with no late night service between 10 PM and 5 AM. Some off-peak operations may require single tracking in limited segments on the Branch's western portion. Freight service would have an exclusive operating window overnight from 10 PM to 5 AM, with main track operations limited to one track during peak hours. In the shoulder-peak hours around the peaks, there would be limited service.
+[p157_c0010] It is ultimately the job of policy makers, the MTA Long Island Rail Road (LIRR – which owns the Branch), neighborhood residents, business owners and other stakeholders to collectively determine how the Branch may be best utilized in the future. As it was not part of this study's scope, any effort to reintroduce passenger service and eliminate freight from the Branch would require additional refinement and analysis beyond what is presented in this study.
+[p157_c0011] As mentioned previously, the reactivated Lower Montauk Branch service would stop at all proposed potential stations between Long Island City and Jamaica. At this time, no "skip stop" or other express-type services are assumed.
+### [p157_c0012] 2.11.3.2 Frequency by Time of Day and Week
+[p157_c0013] Passenger service frequency would vary by time and day and on the weekends. AM and PM peak headways would be six minutes, with the 8-9 PM period having 10 minute headways, and midday (10 AM-4 PM and evening hours (9-10 PM) having 15-minute headways. Early morning hours would have
+[p157_c0014] _2-48_
+
+## Page 158
+
+### [p158_c0001] Lower Montauk Branch Rail Study
+[p158_c0002] the lowest frequency, with 20-minute headways. On weekends, passenger service would operate from 5 AM to 10 PM only, with trains an average of every 15 minutes throughout the day.
+[p158_c0003] Freight service would be restricted while passenger service is running. This includes restrictions on the Main Line tracks west of Fresh Pond Yards and one-track operations during peak periods. Overnight hours every day would have unrestricted freight operations. These schedules are shown in Table 2-7 below.
+[p158_c0004] _Table 2-7 Projected Joint Passenger and Freight Operating Schedules_
+[p158_c0005]
+
+```text
+Service Type Weekdays Saturday Sunday Early AM (5:00AM-6:00AM) AM Peak (6:00AM-10:00AM) Midday (10:00AM-4:00PM) PM Peak (4:00PM-8:00PM) Early Evening (8:00PM-9:00PM) Evening (9:00PM-10:00PM) Overnight (10:00PM-5:00AM) Passenger every 20 minutes every 6 minutes every 15 minutes every 6 minutes every 10 minutes every 15 minutes No passenger service every 15 minutes from 5:00AM-10:00PM No passenger service at other times every 15 minutes from 5:00AM-10:00PM No passenger service at other times Freight Partially restricted freight service Restricted freight service Partially restricted freight service Restricted freight service Partially restricted freight service Partially restricted freight service Unrestricted freight service Unrestricted freight service from 10:00PM-5:00AM Partially restricted freight service at other times Unrestricted freight service from 10:00PM-5:00AM Partially restricted freight service at other times
+```
+### [p158_c0006] 2.11.3.3 Projected Service Cycle Times
+[p158_c0007] The cycle time (i.e., the round trip running time, plus any layover/recovery time at each terminal) for the proposed Lower Montauk Branch service is estimated to be approximately 68 minutes. This was estimated as follows:
+- [p158_c0008] ○ Establish distance between stations ○ Assume different average travel speeds between stations based on distance to next station (somewhat higher speeds for longer distances), calculate running times ○ Assume approximately 45-second dwell times at each station (based on surveys at LIRR local stations and scheduled times for several local subway schedules) and calculate total start-to-start time for station pairs ○ Assume 6-minute turnaround at each terminal station, and calculate total round trip cycle time (65.6 minutes)
+[p158_c0009] These results are summarized in Table 2-8.
+[p158_c0010] _2-49_
+
+## Page 159
+
+### [p159_c0001] Lower Montauk Branch Rail Study
+[p159_c0002] _Table 2-8 Estimated Running Times and Cycle Length_
+[p159_c0003]
+
+```text
+LMB Rail Service - LIC - Jamaica + 8 stations Total Cycle Time Min. Jamaica - LIC running time 26.8 LIC - Jamaica running time 26.8 Turnaround Each End 6.0 Total 65.6
+```
+[p159_c0004]
+
+```text
+LMB Rail Service - LIC - Jamaica + 8 stations 9 Miles Avg. Station Dwell min. 0.75 Schedule Time min 27.5 AM Peak Dwell Total min. 6 Running Time min 21.5 0.36 hr. Avg. Speed mph 25.1
+```
+### [p159_c0005] 2.11.4 Required Fleet Size based on Peak Operations
+[p159_c0006] With these cycle time assumptions, the proposed service would need approximately 15 “trainsets.” However, as the exact mode of rail service is presently undetermined, the exact number and capacity of cars making up each of the 15 trainsets has also not yet been determined. This was determined as follows:
+- [p159_c0007] ○ 12 trainsets needed to provide peak-period service of every 6 minutes ○ 3 additional trainsets required to maintain a 20% industry standard spares ratio for this type of operation
+[p159_c0008] _2-50_
+
+## Page 160
+
+### [p160_c0001] Lower Montauk Branch Rail Study
+### [p160_c0002] 2.12 Required Rail Infrastructure Investment for Passenger Operations
+### [p160_c0003] 2.12.1 Establishing Required Capital Investments
+[p160_c0004] The Lower Montauk Branch is presently run as a freight-only operation by the New York and Atlantic Railroad (NY&A), which leases the branch from the LIRR. Dealing with the potential conflict of passenger service with these freight operations would require substantial expenditures to make joint operations possible. Actions to upgrade this “dark territory” rail segment (with no signal system, minimal communications systems) would prepare this branch to meet the challenges of operating frequent passenger rail service. Improvements at a number of the 11 at-grade rail crossings along this branch would likely be needed to meet the standards of a 21st Century passenger rail operation.
+[p160_c0005] The proposed operation is assumed to involve passenger service organized around Diesel Multiple Units (DMU) train sets, which would not require electrification as DMU trains run on diesel power but do not use a traditional locomotive to pull or push the trainset. The DMU train sets assumed for this operation would also meet the crashworthiness standards of the Federal Railroad Administration (FRA) for operating on the same or adjacent tracks as freight cars. Using this equipment would avoid the substantial costs of physically separating the passenger and freight operations and increase the opportunity of joint operations in the same rail corridor.
+### [p160_c0006] 2.12.2 Projected Capital Investments
+[p160_c0007] Estimated quantities for each included item (e.g., number and type of station, feet of track, etc.) have been developed for use in the cost model based on a high-level concept design of the overall network. The capital costs to reintroduce passenger rail on the Lower Montauk Branch includes the elements discussed below.
+### [p160_c0008] 2.12.2.1 Base Capital Investments: Passenger Service Infrastructure
+[p160_c0009] Infrastructure improvements below have been generated to support passenger rail in keeping with track classification, safety, operations, and speed requirements of an efficient transit service. These line items below have been assigned quantities in the capital cost model to build up to construction costs. These are costs required to improve the existing corridor for passenger service, assuming that existing freight operations would not impede any passenger operations. Separate infrastructure costs were developed below to sustain freight operations and omit the assumption that freight operations would have no impact to passenger service.
+- [p160_c0010] • Replacement of Dutch Kills Bridge (single-track bridge in poor condition, needing a second track). • Complete replacement of existing two main tracks to be used by the passenger service. Existing track conditions are sufficient for slow speeds, such as the ones the freight operates at, but they are not sufficient to meet requirements for high-volume and medium-speed passenger operation. This upgrades the FRA track classification for faster transit (and freight) operations.
+[p160_c0011] _2-51_
+
+## Page 161
+
+### [p161_c0001] Lower Montauk Branch Rail Study
+- [p161_c0002] • Additional track in all single-track territory, to bring a greater flexibility and reliability to the passenger service operation. • LIC Terminal Improvements (Reconstruction of Track C1 to make connection of service to LIC station). • Additional track crossovers at each station to bring greater flexibility and reliability to passenger service operation. • 11 at-grade crossing improvements to provide safe management of grade crossings for passenger rail service. • The grade separation between tracks and roadway at two locations: Waste Management access point and Maspeth Avenue. • New passenger stations along the corridor, which would include the following amenities: shelters, platforms, sidewalks, paths, plazas, landscape, site and station furniture, site lighting, signage, public art work, bike facilities, permanent fencing, overpass structure, escalators, elevators, fare vending machines, communication devices, and security systems (relatively modest stations to accommodate trains up to 100-ft. long, with reasonable passenger amenities. Full ADA compliance is assumed and no station parking is provided). • Train Control /Signaling: the current signaling system on the two existing tracks along the corridor is not suited for frequent passenger service. A new, more advanced system would be required to introduce a reliable and frequent passenger service in proximity with freight operation. This system is known as Positive Train Control (PTC). • Site/Civil Work and Utility Relocations where additional tracks, stations, and new civil structures will be built. • Track rehabilitation: The concrete safety wall as described in the Conceptual Development Report is needed in the case of the operation of an FRA non-compliant passenger vehicle. It is assumed in this estimate that the vehicles are FRA-compliant; therefore, this estimate does not include a physical (including a safety wall) or temporal separation from the freight. • Security systems: the existing corridor is already equipped with fences and a robust camera system. In addition to the existing features, the estimate includes new fencing and security systems at the train stations, which are embedded in the station costs. • Fare equipment software costs are embedded in the station costs. Fare enforcement is an operations cost, not a capital cost. • Pedestrian overpass and elevators: these costs are included in the stations costs. • Arts-in-Transit Costs are included in the station costs.
+[p161_c0003] _2-52_
+
+## Page 162
+
+### [p162_c0001] Lower Montauk Branch Rail Study
+### [p162_c0002] 2.12.2.2 Base Capital Investments: Freight-Related Infrastructure
+[p162_c0003] In its current operation, NY&A has a limited amount of yard space and must use the main tracks for storage and staging. Therefore, based on discussions with NY&A, a reasonable set of very high-level assumptions have been made on the type and scale of improvements that would be needed to:
+- [p162_c0004] • allow freight operations to continue and have some room to grow, and • provide operational space to permit joint passenger operations.
+[p162_c0005] Some of these improvements would develop yard and siding capacity off the Lower Montauk Branch, which NY&A noted would make it more possible for freight and transit operations to run jointly. While such improvements are likely not included in any existing freight improvement growth plan, they were included here, as passenger service would require the Branch's main line tracks to be cleared for long stretches to provide the reasonable frequency and reliability that are attractive to customers. It is a reasonable assumption that while some of these improvements are indeed off the Lower Montauk Branch, the capacity they provide the NY&A's freight operations would be directly felt along the Lower Montauk Branch. These infrastructure items are delineated below.
+- [p162_c0006] • Construct a third main track, north of Track 1, between milepost 5 (MP5) and the Dutch Kills Bridge. ○ 4.3 miles of new track, includes new aerial guideway and at-grade segments, demolition, and communications costs. ○ Includes a percentage of the replacement cost of four existing bridges above the tracks at: Andrews Avenue, 60 th Street, Eliot Avenue, and Metropolitan Avenue. These have specific replacement costs in the cost model per the 2016 NYCDOT Annual Bridge and Tunnel Condition Report. It is important to note that these four bridges would be replaced under a separate project and its separate cost allocations. At the conceptual level of this project, it is assumed that only 25% of those costs would be needed to alter their designs and construction, and therein only 25% of those costs would be attributable to this project's freight needs. The primary construction change would involve shifting the abutments of these bridges further to the east to accommodate a new third track. The key assumption here is that the construction required to reintroduce passenger service for this Lower Montauk project would dovetail in a parallel design/construction schedule with the separate replacement project for these four bridges, and would not come after that separate construction project was already complete or already had commenced construction. ○ Includes PTC signal installation on the new third track (explained further below). • Addition of crossovers between the two existing tracks and the new third main track. ○ 28 new junctions
+[p162_c0007] _2-53_
+
+## Page 163
+
+### [p163_c0001] Lower Montauk Branch Rail Study
+- [p163_c0002] • Construction of a forth main track in the immediate vicinity of the Waste Management track limits. ○ 1,800 linear feet of new track, and 1,800 feet of new access roadway required once the new fourth track is built • Improve track classification to increase maximum allowable speed along the Bushwick Branch. ○ 9,000 linear feet of track upgrades, improvement of 8 at-grade crossings, and 9,000 linear feet of PTC signaling upgrades • Reconfiguring and consolidation of the East and West (Downstairs) Yards at Fresh Pond Yard. This eliminates the pinch point of the yard and widens out this pinch point to effectively connect the East and West yards. ○ 311 linear feet of new aerial structure (replacement of existing span) ○ 7 new interlockings ○ 5,250 linear feet of new yard track (7 tracks, each extended by 750 linear feet) ○ Demolition of the existing retaining walls and structures, remediation, and construction of a new 1,000- foot long retaining wall • Increase capacity of Irons Yard (Upstairs Yard) ○ 2,000 linear feet of new track, signaling upgrades, and construction of new retaining walls • Double tracking from Irons Yard through the East New York Tunnel ○ 12,700 linear feet of new track from the north face of the portal to Rockaway Avenue • Expansion of yard capacity by construction of a new yard south of the East New York Tunnel (towards Bay Ridge) ○ 3 tracks at 1,200 linear feet each. Bound on the east by Rockaway Avenue and bound on the west by 94 th Street. • Grade separation of the 88 th Street grade crossing • Bridges: ○ The cost includes the construction of 3,300 linear feet of aerial structure (bridges), including the reconstruction of several of the existing bridges between Dutch Kill Bridge and Fresh Pond Yard, which would need to accommodate an additional third main track. The rail bridges (as examples: Grand Avenue and Flushing Avenue) on the section of the
+[p163_c0003] _2-54_
+
+## Page 164
+
+### [p164_c0001] Lower Montauk Branch Rail Study
+[p164_c0002] corridor where a third track will be built are assumed to be entirely rebuilt, including their abutments. This conservative assumption covers the risk that the existing abutments, and the existing decks, will need to be replaced to support the third track.
+- [p164_c0003] ○ The bridges on the other sections of the branch with no development of additional tracks can likely support transit service as they can already support the heavier existing freight operation. ○ Three grade separations are necessary at the Waste Management facility, Maspeth Avenue, and 80th Street. ● This also includes the retrofitting of existing freight locomotives to run within PTC territory (per PTC installation described above).
+[p164_c0004] Several on-and off-corridor freight improvements were discussed with NY&A and have been included in the capital cost estimate. The three most expensive and substantial of these investments include:
+- [p164_c0005] 1. The addition of a new third track within the Lower Montauk Branch from Fresh Pond Yard to the Dutch Kills. This would require some bridge expansion projects, reconstruction, and ROW acquisition. 2. Major reconfiguration and expansion of the Fresh Pond Yard. 3. Creation of a new Rockaway Avenue Yard and improvements to the Bay Ridge Branch between this new yard and the north portal (one block north of Bushwick Avenue) of the existing freight tunnel.
+[p164_c0006] The primary justification for these improvements is the new third track west of Fresh Pond Yard to allow bidirectional passenger service while providing some track capacity for simultaneous freight movements. The new and expanded yard space would enable the NY&A the ability to move freight car storage off the mainline, which would enable passenger rail service to operate on the tracks that would be cleared. These improvements are delineated below in Figure 2-8, while the improvements to Fresh Pond Yard are shown in Figure 2-9.
+[p164_c0007] _2-55_
+
+## Page 165
+
+### [p165_c0001] Lower Montauk Branch Rail Study
+[p165_c0002] _Figure 2-8 Overview of Freight Infrastructure_
+### [p165_c0003] Lower Montauk Branch Rail Study Overview of Freight Infrastructure
+> [p165_c0004] The map illustrates the proposed rail infrastructure for the Lower Montauk Branch. Key features include: Track Improvements: Third Track: Dutch Kills to Milepost 5 Fourth Track: Vicinity of the Waste Management leased track limits Double Track: North Portal Face to Rockaway Avenue Grade Separations: Grade Separation: 88th Street Yards and Facilities: New Yard: Between Rockaway Avenue and East 94th Street Existing Tunnel Branches and Lines: Northeast Corridor (Amtrak) Dutch Kills Bushwick Branch Freshpond Atlantic Branch (LIRR) Bay Ridge Branch (to Bay Ridge Yard and Bush Terminal) Main Line (LIRR) Other Infrastructure: Freemont Secondary Queens Blvd Flushing Ave Broadway Interstates 278 and 495 Legend: ■ Rail Crossing — Railroad Access — Track/Yard Improvement — Amtrak — Lower Montauk Branch — New York & Atlantic (NY&A) — LIRR Network — CSX Transportation Source of Data: New York City DOT, Metropolitan Transportation Authority, Long Island Rail Road
+[p165_c0005] _2-56_
+
+## Page 166
+
+### [p166_c0001] Lower Montauk Branch Rail Study
+[p166_c0002] _Figure 2-9 Freight Infrastructure at Fresh Pond Yard_
+[p166_c0003] Lower Montauk Branch Rail Study Freight Infrastructure at Fresh Pond Yard
+> [p166_c0004] Connect Downstairs Yard (East to West) 7 Tracks, 750 tf each Irons Yard: Increase Capacity (2,000 tf)
+- [p166_c0005] Lower Montauk Branch Railroad Access New York and Atlantic (NY&A) CSX Transportation
+[p166_c0006] Source of Data: New York City DOT Metropolitan Transportation Authority, Long Island Rail Road, FEMA
+[p166_c0007] _2-57_
+
+## Page 167
+
+### [p167_c0001] Lower Montauk Branch Rail Study
+### [p167_c0002] 2.13 Maintenance and Storage Facilities
+[p167_c0003] The proposed concept for reactivation of passenger service on the Lower Montauk Branch would require a new multi-purpose facility to accommodate fleet storage and maintenance requirements. The ideal site should have adequate space for midday and overnight storage, fueling, vehicle washing, inspection, and other maintenance tasks. Adverse effects due to the facility's construction or operation on the built and natural environment along the corridor should be minimized. This is a preliminary high-level examination of this system requirement, providing a baseline for future study.
+### [p167_c0004] 2.13.1 Facility Design Requirements
+[p167_c0005] The proposed facility should be located near the end of the branch both to minimize deadhead moves – where vehicles are moving without passengers – to and from terminals at the beginning and end of service and to limit conflicts with freight operations. Other design considerations include the following:
+- [p167_c0006] • Comply with the existing zoning for this type of facility. • Be directly connected to the Lower Montauk main line (the two tracks that run the length of the branch). • Accommodate up to 30 passenger cars (90-foot diesel multiple unit (DMU) vehicle). The initial operating assumptions would require 15 train sets, each involving only one DMU vehicle. However, the 30-car yard requirement covers the potential of a shift to two-car trains if warranted by future ridership. • Provide one through-track to allow trains to switch between yard and main-line tracks without interfering with the operations on the main tracks of the corridor, allowing switching between yard tracks. • Provide space for maintenance (locomotives and cars servicing, fuel tank, storage, etc.) and employee facilities (employee offices, parking (for up to 100 spaces). • Consider existing and proposed development patterns along the corridor in terms of their sensitivity to this type of facility's operation. • Minimizing the footprint of the proposed site to the extent possible.
+[p167_c0007] Two design concepts were developed based on the considerations above:
+[p167_c0008] Double-ended yard: this configuration, shown in concept in Figure 2-10, offers a better operating flexibility as it allows the trains to enter or leave the yard at both ends of the facility. However, the minimum footprint needed to accommodate the facility buildings and storage track requirements is approximately 6.25 acres, which is larger than the space requirements for the stub-ended yard design (summarized below).
+[p167_c0009] _2-58_
+
+## Page 168
+
+### [p168_c0001] Lower Montauk Branch Rail Study
+[p168_c0002] _Figure 2-10 Typical Double-Ended Yard Layout_
+[p168_c0003] Stub-ended yard: this configuration, shown in concept in Figure 2-11, is less flexible operationally than the double-ended layout, as trains can only enter and exit the yard at one end. A key trade-off is that the minimum footprint needed to accommodate the facility buildings and storage track requirements is approximately 5 acres, roughly 20% smaller than a double-ended facility layout summarized above.
+[p168_c0004] _Figure 2-11 Typical Sub-End Yard Layout_
+### [p168_c0005] 2.13.2 Maintenance and Storage Facility Site Selection Criteria
+[p168_c0006] The proposed candidate sites will be evaluated on how well each location meets the following criteria:
+- [p168_c0007] • Be located along or adjacent to the Lower Montauk Branch through-running tracks • Be located along a track tangent of at least 2000 linear feet. The proposed double-ended yard supports a storage capacity of 30 cars on 5 yard tracks. A mainline tangent length of approximately 2000 feet allows for proper track spacing and geometry for No. 8 switches in the yard. • Be approximately six acres (for a double-ended yard) or five acres (for a stub-ended yard). • Be located near a terminal to optimize operations and limit non-revenue train movements from/to the yard at the beginning and the end of service. • Not be located near significant residential communities or other sensitive areas such as schools, hospitals, etc. • Minimize environmental impacts and flood risks, including those associated with the presence of wetlands and adjacent surface waterbodies and being located in a floodplain. • Minimize risks from storm surges and associated flooding to promote resilient infrastructure and facilities. • Minimize displacements of existing structures and active uses. • Consist of relatively flat to moderate terrain. • Connect to main line tracks without significant obstacles. • Be located near existing yards or rail infrastructures to minimize the impacts.
+[p168_c0008] _2-59_
+
+## Page 169
+
+### [p169_c0001] Lower Montauk Branch Rail Study
+### [p169_c0002] 2.13.3 Land Use Controls and Permitting for Maintenance Facility
+[p169_c0003] The proposed facility and other elements of the overall proposed rail operations must be consistent with applicable land use controls and other environmental review and permitting regulations. The proposed facility would likely require a number of permits or certifications. The following are some that would likely be of potential importance for a facility to be located along the Lower Montauk Branch:
+- [p169_c0004] • The existing zoning on the involved parcels, as specified in the New York City Zoning Resolution, includes a range of residential, commercial, and residential zoning districts with specific uses that are permitting within those districts. For example, railroad stations are generally permitted in M1, M2, or M3 manufacturing zones, while fuel storage facilities are generally limited to M3 districts. • The many parks and cemeteries along the Branch's right-of-way are often very close to existing or proposed facilities, and any impacts on those uses or proposals to use a portion of existing parks or cemeteries are strictly governed by both New York City and State regulations. • NYC Building Code controls include a wide range of code requirements, including those associated with development in a Special Flood Hazard Zone (SFHA), which are particularly relevant here. • New York City, New York State, and federal regulations protecting important historic and archaeological resources are an issue where such resources have already been identified, or are considered eligible for qualifying as protected resources. • The full environmental review of the entire project under New York City and State as well as federal environmental regulations would encompass all of these issues, as well as the full range of social, economic, and environmental impacts associated with a given proposal. These would include the potential health effects due to the presence of hazardous materials in the areas in which new buildings or infrastructure would be constructed. This is particularly true within long-standing railroad corridors like the Lower Montauk Branch, with many adjacent parcels with an equally long history of heavy industrial uses. • A variety of permits, certifications, or other approvals would likely be required in connection with the proposed development. Development on locations along the Newtown Creek or the Dutch Kills, and any mapped wetland areas along them, would trigger extensive permitting requirements by the New York State Department of Environmental Conservation (NYSDEC), the US Army Corps of Engineers (ACOE), and the US Coast Guard. For the proposed yard facility, the presence of fuel storage and a fueling station within the facility would require a permit from NYSDEC under its Bulk Storage of Petroleum and Chemicals regulations (6 NYCRR Part 612).
+[p169_c0005] A review of the zoning at each of the proposed sites indicated that a rail yard and maintenance facility of the type being proposed would fall within the allowable uses in the various M zones currently mapped along the branch, though there may be the need for a variance or other approvals for fueling facilities. The wide range of other potentially required permits and other approvals would generally play a role in the yard's development at any of these sites, and would therefore not be a differentiator in a site's selection. However, the extent to which a site would be in a mapped wetland or within a SFHA is
+[p169_c0006] _2-60_
+
+## Page 170
+
+### [p170_c0001] Lower Montauk Branch Rail Study
+[p170_c0002] considered in the screening of potential sites. (These two factors generally go together in this type of coastal area.)
+### [p170_c0003] 2.13.4 Proposed Sites
+[p170_c0004] Six sites were identified as exhibiting some of the characteristics to accommodate the proposed facility:
+- [p170_c0005] 1. Borden Avenue: located on the north side of the branch. The site is bounded by the Pulaski Bridge to the west; Borden Avenue to the north; and Dutch Kills to the east. 2. Dutch Kills: located on the south side of the branch. The site is bounded by Dutch Kills to the west; Greenpoint Avenue to the east; and Newtown Creek to the south. 3. 43 rd Street: located on the south side of the branch. The site is bounded by the Brooklyn Queens Expressway to the west; 49 th Street to the east; and Newtown Creek to the south. 4. Maspeth: located on the south side of the branch. The site is bounded by 49 th Street to the west; Maspeth Avenue to the east; and industrial/manufacturing uses to the south. 5. Grand/Flushing: located on the south side of the branch. The site is centered between Grand Avenue and Flushing Avenue, extending west of Grand Avenue and east of Flushing Avenue 6. Lefferts Boulevard: located on the south side of the branch. The site is bounded by Lefferts Boulevard to the west; the LIRR Morris Park yard to the east; and 89 th Avenue to the south.
+[p170_c0006] Figure 2-12 shows the approximate location of these facilities along the Lower Montauk Branch. The majority of these initially identified candidate yard sites are in the western half of the branch, which is mostly surrounded by existing and former rail tracks, siding and existing and former manufacturing or rail sites. In contrast, the eastern half has a more well established adjacent residential and commercial areas, parks, cemeteries, and other uses that create a land use context within which a facility of this type and size is unlikely to be located. Aerial views of each potential yard site can be found in Appendix G.
+[p170_c0007] _2-61_
+
+## Page 171
+
+### [p171_c0001] Lower Montauk Branch Rail Study
+[p171_c0002] _Figure 2-12 Possible Locations for Passenger Rail Yard_
+### [p171_c0003] 2.13.5 Site Evaluation Criteria and Scoring
+[p171_c0004] Table 2-9 shows further details on the previously discussed criteria that were used to evaluate how well the potential yard sites would meet the facility design requirements. The methods used to assign a score are based on how well each site would meet the identified criteria.
+[p171_c0005] _Table 2-9 Criteria for Ranking of Potential Yard Sites_
+[p171_c0006]
+
+```text
+Metric Description Scoring Distance from closest LMB terminal Proposed site is located in close proximity to a LMB terminal, allowing for more efficient operations. Distance to the closest terminal is: 1 = Longer distance: greater than 10,000 ft. 2 = Medium distance: b/w 5,000 ft. and 10,000 ft. 3 = Shorter distance: less than 5,000 ft. Site Suitability Proposed site is situated in a location suitable for construction of the proposed facility. Suitability is determined based on how well each site meets the following characteristics: Characteristics : 5 = More suitable/exhibits more characteristics 1 = Less suitable/exhibits less characteristics
+```
+[p171_c0007] _2-62_
+
+## Page 172
+
+### [p172_c0001] Lower Montauk Branch Rail Study
+[p172_c0002]
+
+```text
+1) Along tangent track 2) No grade crossings 3) No proposed stations proximate to site 4) Site fits in the hard physical constraints (e.g., rail line, waterbodies, etc.) 5) No topography issues Displacement of existing/proposed structures or uses The ability of the proposed site to minimize displacement of existing structures and uses. Level of development/likely displacement: 0 = Developed: substantial displacement of building and uses 3 = Moderate development/displacement uses only 5 = No displacement of buildings and uses Proximity to compatible Land Uses Proposed site avoids residential or commercial uses. Site is: 1 = Primarily Residential 2 = Manufacturing/Residential 3 = Manufacturing Proximity to Environmental Constraints Proposed site avoids wetlands and Special Flood Hazard Areas (SFHA). Site contains environmental constraints 0 = Presence 1 = Limited or no presence Design Constraints Proposed site can be built as double-ended facility, improving operational flexibility. The site can be built as: 0 = Stub-ended only 1 = Stub- or double-ended
+```
+[p172_c0003] It should be emphasized that this screening process represents a very preliminary, high-level look at possible yard locations associated with a Lower Montauk rail passenger operation. It used initial footprint estimates of two yard design concepts to represent the likely space and locational needs of such a facility. The scoring presented in Table 2-10 is an equally high-level ordinal ranking of how well these sites might meet these initial screening criteria. To better evaluate the potential sites, a much more thorough review would be required. This initial look highlights a number of preliminary locations, but there are other more complex issues that would require addressing in the future.
+[p172_c0004] _2-63_
+
+## Page 173
+
+### [p173_c0001] Lower Montauk Branch Rail Study
+[p173_c0002] Table 2-10 presents the preliminary results of the application of these screening criteria and associated scoring to each of the sites.
+[p173_c0003] _Table 2-10 Preliminary Screening Results of Potential Yard Sites_
+[p173_c0004]
+
+```text
+Criteria Borden Avenue Dutch Kills 43 rd Street Maspeth Grand - Flushing Lefferts Boulevard Site Suitability: topography, land area, tangent track, etc. (0 = less suitable; 4 = more suitable) 4 1 2 0 1 0 Displacement of existing/proposed structures and uses (0 = Developed: substantial displacement 3 = Moderate development/displacement 5 = Limited development/displacement) 0 3 0 3 0 0 Proximity to compatible Land Uses (0 = Res.; 1 = Mfrg./Res.; 2 = Mfrg.) 2 2 2 2 1 0 Proximity to Environmental Constraints (0 = presence; 1 = limited presence) 0 0 0 1 1 1 Design Constraints (stub-ended = 0; 1 = double-ended) 0 0 1 1 1 0 Distance (feet) from closest LMB terminal (longer = 1; medium = 2; shorter = 3) 3 3 1 1 1 2 Score 9 9 6 8 5 3
+```
+[p173_c0005] As shown in Table 2-10, each site has a possible score of from 0 to 16. Most fall into the middle of the possible range of scores, with all having both positive and negative attributes. The Borden Avenue site, for example, benefits from its proximity to the Long Island City Terminal and has good potential site characteristics for a yard (adjacent tangent track, no topography problems, no grade crossing, etc.). However, it's within a SFHA and wetland area, can only hold a stub-end yard, and would displace a number of active businesses. By comparison, the Dutch Kills site has a different blend of positive and negative attributes than the Borden Avenue site, but an identical overall score. Similar tradeoffs occur among the other sites. The Lefferts Boulevard site scored the lowest, due to a combination of poor site suitability and a heavy displacement factor. Some sites seem to be more likely candidates and some might be quickly dropped from further consideration. However, narrowing down the sites further and selecting a recommended site would take a considerably more detailed look at this issue if this concept advanced to future planning and design stages.
+[p173_c0006] What these results do show, even at this very early planning stage, is that:
+- [p173_c0007] (1) Several potential sites exist, though each carries one or more significant drawbacks, including physical and topographical constraints, business displacement, and flood hazard. (2) Further analysis is necessary to ensure that at least one site is economically and politically feasible to build and operate.
+[p173_c0008] This is understandable given the Lower Montauk Branch's longstanding presence in this area.
+[p173_c0009] _2-64_
+
+## Page 174
+
+### [p174_c0001] Lower Montauk Branch Rail Study
+### [p174_c0002] 2.24 Bridges and At-Grade Crossings
+### [p174_c0003] 2.24.1 Overview
+[p174_c0004] The existing railroad and roadway bridges along the Lower Montauk Branch were identified in the Existing Conditions section. Table 2-11 presents the bridges along the Lower Montauk Branch and whether they are (1) a railroad bridge over a roadway or water body (Rail-Over), or (2) a bridge carrying a roadway over the railroad (Roadway-Over). The locations of these bridges are shown in Figure 2-13.
+[p174_c0005] _Table 2-11 Bridges Located Along the Lower Montauk Branch_
+[p174_c0006]
+
+```text
+Railroad Over Roadway Over West of Fresh Pond Yards Pulaski Bridge [2] X Dutch Kills [3] X Greenpoint Ave. [2] X Grand Ave. X Flushing Ave[2] X Andrews Ave. [1] X 60th Street X Eliot Ave./60th St. Ln X Metropolitan Ave./Fresh Pond Rd. X East of Fresh Pond Yards Cooper Ave. X 80th St. [2] X Woodhaven Blvd. [2] X Union Turnpike X Jacky Robinson Pkwy. X Internal Park Road (No Name) X Park Lane South X 84th Ave. X Bessemer St./Babbage Pl. Viaduct X 89th Ave. X
+```
+[p174_c0007] Recommended Inspection sites
+[p174_c0008] X
+[p174_c0009] [1] Other overbuild stuctures located adjacent to the roadway bridge
+[p174_c0010] [2] Recently built, rebuilt
+[p174_c0011] [3] Bridge over the Dutch Kills - requires full replacement
+[p174_c0012] _2-65_
+
+## Page 175
+
+### [p175_c0001] Lower Montauk Branch Rail Study
+### [p175_c0002] 2.24.2 Bridges
+[p175_c0003] _Figure 2-13 Location of Bridges along Lower Montauk Branch_
+> [p175_c0004] A map of the Lower Montauk Branch area in Queens, New York, showing the proposed rail line and the locations of bridges selected for conditions review. The rail line is represented by a dashed yellow line with blue circular markers at each bridge location. The bridges are labeled with their names in blue boxes: Pulaski Bridge, Dutch Kills, Greenpoint Ave., Grand Ave., Flushing Ave., Andrews Ave., Metropolitan Ave., Woodhaven Blvd., Union Turnpike, Jackie Robinson Pkwy., Bessemer/Babbage Viaduct, Cooper Ave., 80th Ave., Internal Park Rd., Park Lane South, and 84th Ave. Other bridges are labeled in red boxes: 60th St., Eliot Ave., and 66th Ave. The map also shows major highways (278, 465, 678) and parks (Flushing Meadows-Corona Park, Kissena Park, Highland Park). A legend at the bottom indicates that red boxes represent 'Bridges Selected for Conditions Review'. A scale bar at the bottom right indicates approximately 1 mile.
+[p175_c0005] At this design concept review phase, these bridges were given an initial high-level review to determine whether these structures had identified structural or other conditions problems that would potentially warrant renovation to address these issues. Renovation or replacement of other bridges would then be reflected in the costs of the proposed reactivation of passenger rail service on the Lower Montauk Branch.
+### [p175_c0006] 2.24.2.1 Existing Bridges along Lower Montauk Branch
+[p175_c0007] Among the nine rail-over bridges listed in Table 2-11 the Dutch Kills Bridge (see Figure 2-14) is of particular concern. This 120-year old moveable (swing) bridge originally carried three tracks that have since been reduced to one. The last attempt to open the bridge failed 30 years ago, and since then the bridge has been locked in the fixed position. Projected costs for reactivation of passenger service assumes the need for a new three-track moveable replacement bridge over the Dutch Kills. The current locked position of the bridge has limited shipping on the Dutch Kills for over 30 years. However, recently reconstructed nearby bridges over the Dutch Kills (e.g., the Borden Avenue Bridge in 2009) were reconstructed to maintain moveable bridge function, even though limited shipping has meant infrequent opening of these bridges. It is, therefore, assumed that the US Coast Guard would similarly require any new rail bridge over the Dutch Kills to re-establish its movable bridge function.
+[p175_c0008] Visual inspection of a pair of rail-over bridges over Grand and Flushing Avenue (see Figure 2-15) and literature search indicate that the rail bridge over Flushing Avenue has been constructed or reconstructed in recent years. In contrast, the abutments and span of the bridge over Grand Avenue, while possibly in acceptable conditions, have likely not been reconstructed or upgraded in recent years. However, the recommended joint passenger-rail service option would require adding a third main line
+[p175_c0009] _2-66_
+
+## Page 176
+
+### [p176_c0001] Lower Montauk Branch Rail Study
+[p176_c0002] track in this section. This requirement would call for both the Grand Avenue and Flushing Avenue bridges to be substantially altered or completely replaced to create the necessary additional track space.
+[p176_c0003] _Figure 2-14 Dutch Kills Rail Bridge_
+> [p176_c0004] An aerial photograph of the Dutch Kills area. The image shows Newtown Creek flowing through the center. A bridge, labeled 'Dutch Kills Bridge' in a blue box with a white arrow, spans the creek. Below it, another bridge labeled 'Lower Montauk Cutoff' crosses the creek. The surrounding area includes industrial buildings, a large pile of scrap metal, and various other structures. A north arrow is located in the bottom right corner. The text 'DKN Re' is visible on the right side of the image.
+[p176_c0005] _2-67_
+
+## Page 177
+
+### [p177_c0001] Lower Montauk Branch Rail Study
+[p177_c0002] _Figure 2-15 Rail-Over Bridges: Grand and Flushing Avenues_
+[p177_c0003] _Rail Bridges over Flushing Avenue_
+[p177_c0004] _Rail Bridge over Grand Avenue_
+[p177_c0005] A determination of whether reactivation of Lower Montauk passenger service would require more extensive repairs to the other rail-over bridges noted, i.e., more than would normally be expected under current freight-only operation, is beyond the scope of this study. This would be addressed as part of future planning and engineering studies. These range from the roughly 100-foot viaduct over the Jackie Robinson Parkway within Forest Park to the 2,400-foot viaduct running above and parallel to Babbage and Bessemer Streets in Kew Gardens (see Figure 2-16).
+[p177_c0006] _2-68_
+
+## Page 178
+
+### [p178_c0001] Lower Montauk Branch Rail Study
+[p178_c0002] _Figure 2-16 Additional Rail-Over Viaducts on Lower Montauk Branch_
+> [p178_c0003] A photograph showing a long, multi-span concrete viaduct with a series of arches. The viaduct is supported by concrete pillars and spans over a street with parked cars and trees. The sky is clear with some light clouds.
+[p178_c0004] _Lower Montauk Branch Bessemer Street Viaduct_
+> [p178_c0005] A photograph of a concrete viaduct with a metal railing, spanning over a road. The road has a white "Interchange" marking. The viaduct is supported by concrete pillars and is surrounded by trees with autumn foliage.
+[p178_c0006] _Lower Montauk Branch Jackie Robinson Parkway Viaduct_
+### [p178_c0007] 2.24.2.2 Existing Conditions of Bridges over the Lower Montauk Branch
+[p178_c0008] Initial information about the current conditions of the four over-rail roadway bridges noted for a conditions review was obtained from NYCDOT. This information was included in the Department's 2016 Bridges and Tunnels Annual Condition Report, which is based on the New York State-required biennial inspection of roadway bridges across the State. During these regularly scheduled inspections, each bridge element is investigated and its overall structural condition is numerically rated according to the system indicated in Table 2-12.
+[p178_c0009] _2-69_
+
+## Page 179
+
+### [p179_c0001] Lower Montauk Branch Rail Study
+[p179_c0002] _Table 2-12 Bridge Conditions Rating System_
+[p179_c0003]
+
+```text
+Numerical Rating Description 1 Potentially Hazardous 2 Used to shade between a rating of 1 and 3 3 Serious deterioration, or not functioning as originally designed 4 Used to shade between a rating of 3 and 5 5 Minor deterioration, and is functioning as originally designed 6 Used to shade between a rating of 5 and 7 7 New condition 8 Not Applicable 9 Unknown (due to inaccessibility, e.g., footings or piles)
+```
+[p179_c0004] A weighted average rating reflecting ratings for each bridge element is calculated for the entire bridge. These ratings and the associated details from each bridge inspection provide NYCDOT with information on the existing condition of each bridge. (Note that the State’s rating system is being converted to a nationwide federal rating system, and due to that conversion process any rating information from inspections performed in 2016 won’t be reported until NYCDOT’s 2017 annual report.)
+[p179_c0005] Table 2-13 presents the most current ratings for the four roadway-over bridges selected for review. Three of the four are rated as “functioning as originally designed” or higher, under NYCDOT’s rating scale as shown in Table 2-12. No additional repairs for those bridges would likely be needed in connection with continued rail operations. The rating for the fourth bridge – Metropolitan Avenue – indicates this bridge is in “serious deterioration and/or not functioning as originally designed.” In response to these problems, this bridge is already in the first phase a comprehensive multi-phase reconstruction process by NYCDOT that will (1) upgrade the conditions of the entire bridge, (2) partially reconfigure the Metropolitan Avenue/Fresh Pond Road intersection above it, and (3) in two phases raise the bridge’s clearance above the Lower Montauk Branch tracks (currently 15’-9”) to 20’-6”, which would more closely match the current federal standard of 22’-0”. A more complete reconstruction is projected at a future date.
+[p179_c0006] _2-70_
+
+## Page 180
+
+### [p180_c0001] Lower Montauk Branch Rail Study
+[p180_c0002] _Table 2-13 Bridge Ratings and Data for Selected Road-Over Bridges_
+[p180_c0003]
+
+```text
+BIN Feature Carried Feature Crossed Railroad Crossed Bridge Type Spans Rating Source Inspection Date Condition Rating Verbal Rating Deck Area (sq. ft) 2247530 Andrews Avenue LIRR Montauk Division L O 1 S 9/29/2015 6.688 VG 1,783 2247540 60th Street LIRR Montauk Division L O 2 S 9/29/2015 5.208 G 5,340 2247550 Eliot Avenue LIRR Montauk Division L O 2 S 9/24/2015 5.627 G 9,550 1247560 Metropolitan Avenue LIRR – NY & Atl. LN O 2 S 8/26/2016 3.603 F 20,900
+```
+### [p180_c0004] 2.24.2.3 Summary of Findings
+### [p180_c0005] Roadway Bridges
+[p180_c0006] There are 10 bridges carrying roadways over the Lower Montauk Branch. Recent bridge biennial inspections show them to be in relatively good condition, and it is assumed they would not require any rehabilitation in connection with the reintroduction of rail passenger service. However, four of these bridges — Andrews Avenue, 60th Street, Eliot Avenue/60th Lane and Metropolitan Avenue— are projected to require partial or complete reconstruction to allow the proposed joint passenger-freight operations on the Lower Montauk Branch. Those longer-term reconstruction plans for the bridge could potentially be amended to include the changes necessary to support passenger rail operation.
+### [p180_c0007] Railroad Bridges
+[p180_c0008] The Lower Montauk Branch includes nine railroad-over bridges – three located west of Fresh Pond Yard and six east of the yard. Of the three western bridges, the Dutch Kills swing bridge is in poor condition and limited to one-track operation, and would require complete replacement by a new likely moveable bridge to support rail passenger service. The Grand Avenue railroad-over bridge may need some repair, while the rail bridge over Flushing Avenue appears to have been completely reconstructed in recent years. However, reintroduction of passenger rail service would likely require an additional main line track west of Fresh Pond Yards, which would require both the Grand and Flushing Avenue bridges to be partially or completely reconstructed to provide space for this new track. Determining whether re-activation of Lower Montauk passenger service would require more extensive repairs to the other rail-over bridges noted in Table 1 is beyond the scope of this preliminary assessment.
+[p180_c0009] _2-71_
+
+## Page 181
+
+### [p181_c0001] Lower Montauk Branch Rail Study
+[p181_c0002] Photos of the roadway-over bridges can be found in Appendix H.
+### [p181_c0003] 2.24.2.4 Permitting Processes
+[p181_c0004] The permitting process for the over-water Dutch Kills Bridge would require multiple agencies' approvals and permits. The US Coast Guard (USCG) would need to provide a Bridge Permit for a bridge over the navigable waters of the Newtown Creek and a Conformity Determination to the Clean Air Act. The US Army Corps of Engineers (USACE) would need to certify an authorization of work with specific conditions to the project. Any modifications to the original design or construction conditions would require the Corps' reauthorization and recertification. The New York State Department of Environmental Conservation (DEC) would require noise, air, and water quality monitoring in accordance with the State Environmental Quality Review Act (SEQRA), with a finding statement prepared in accordance with the National Environmental Policy Act. A public hearing process is required as part of the preparation of the Draft Environmental Impact Statement (DEIS), with public comments incorporated into the Final Environmental Impact Statement (FEIS).
+### [p181_c0005] 2.24.3 Grade Crossings
+### [p181_c0006] 2.24.3.1 Grade Crossing Elimination Criteria
+[p181_c0007] The Federal Highway Administration (FHWA) has helped put together a set of guidelines to identify when an at-grade rail crossing should be considered for potential grade separation. A key factor in the review process is the feasibility of grade separation, particularly from a financial perspective. As one FHWA report on guidance put it, "The decision to grade separate a highway-rail crossing is primarily a matter of economics." 6 In addition, however, some thresholds regarding traffic and train volumes, safety, and train speed were identified for initial screening prior to determining feasibility.
+[p181_c0008] The 2002 report "Guidance on Traffic Control Devices at Highway-Rail Grade Crossings" from the Federal Highway Administration provides the most detailed set of criteria on screening for the potential need for grade separated crossings. The basis for their volume thresholds was adapted from a 1992 ITE report, "Grade Crossing for Light Rail Transit", outlining grade separation guidelines for light rail transit, but this report does not appear to be publicly available. A limitation of their criteria is that they are focused on highways, and the urban streets crossing the Lower Montauk line are set in a different context which would warrant a deeper study. However, they do provide a possible basis for a high-level review of at-grade crossings. Their criteria are as follows 7 :
+- [p181_c0009] 1. Highway-rail grade crossings should be considered for grade separation or otherwise eliminated across the railroad right-of-way whenever one or more of the following conditions exist: a. The highway is a part of the designated Interstate Highway System; b. The highway is otherwise designed to have full controlled access; c. The posted highway speed equals or exceeds 113 km/h (70 mph); d. AADT exceeds 100,000 in urban areas or 50,000 in rural areas;
+[p181_c0010] _6 Guidance on Traffic Control Devices at Highway-Rail Grade Crossings, Federal Highway Administration, November 2002_
+[p181_c0011] _7 Ibid._
+[p181_c0012] _2-72_
+
+## Page 182
+
+### [p182_c0001] Lower Montauk Branch Rail Study
+- [p182_c0002] e. Maximum authorized train speed exceeds 177 km/h (110 mph); f. An average of 150 or more trains per day or 300 Million Gross Tons (MGT) per year; g. An average of 75 or more passenger trains per day in urban areas or 30 or more passenger trains per day in rural areas; h. Crossing exposure (the product of the number of trains per day and AADT) exceeds 1,000,000 in urban areas or 250,000 in rural areas; or i. Passenger train crossing exposure (the product of the number of passenger trains per day and AADT) exceeds 800,000 in urban areas or 200,000 in rural areas. j. The expected accident frequency (EAF) for active devices with gates, as calculated by the USDOT Accident Prediction Formula including 5-year accident history, exceeds 0.5; k. Vehicle delay exceeds 40 vehicle hours per day. 2. Highway-rail grade crossings should be considered for grade separation across the railroad right-of-way whenever the cost of grade separation can be economically justified based on fully allocated life cycle costs and one or more of the following conditions existing: a. The highway is a part of the designated National Highway System; b. The highway is otherwise designed to have partial controlled access; c. The posted highway speed exceeds 88 km/h (55 mph); d. AADT exceeds 50,000 in urban areas or 25,000 in rural areas; e. Maximum authorized train speed exceeds 161 km/h (100 mph); f. An average of 75 or more trains per day or 150 MGT per year; g. An average of 50 or more passenger trains per day in urban areas or 12 or more passenger trains per day in rural areas; h. Crossing exposure (the product of the number of trains per day and AADT) exceeds 500,000 in urban areas or 125,000 in rural areas; or i. Passenger train crossing exposure (the product of the number of passenger trains per day and AADT) exceeds 400,000 in urban areas or 100,000 in rural areas; j. The expected accident frequency (EAF) for active devices with gates, as calculated by the USDOT Accident Prediction Formula including 5-year accident history, exceeds 0.2; k. Vehicle delay exceeding 30 vehicle hours per day; l. An engineering study indicates that the absence of a grade separation structure would result in the highway facility performing at a level of service below its intended minimum design level 10% or more of the time. 3. Whenever a new grade separation is constructed, whether replacing an existing highway-rail grade crossing or otherwise, consideration should be given to the possibility of closing one or more adjacent grade crossings. 4. Utilize for Light Rail Transit (LRT) grade separation:
+[p182_c0003] _2-73_
+
+## Page 183
+
+### [p183_c0001] Lower Montauk Branch Rail Study
+[p183_c0002] _Table 2-14 Light Rail Transit (LRT) Grade Separation Criteria_
+[p183_c0003]
+
+```text
+Trains per Hour Peak-Hour Volume (vehicles per lane) 40 900 30 1000 20 1100 10 1180 5 1200
+```
+[p183_c0004] Source: Guidance on Traffic Control Devices at Highway-Rail Grade Crossings, Federal Highway Administration, November 2002
+[p183_c0005] These same criteria were also used in the Federal Highway Administration’s Railroad-Highway Grade Crossing Handbook, published in 2007. Another source for much of this work was a report from the Texas Transportation Institute titled “Grade Separations – When Do We Separate.”
+[p183_c0006] The Los Angeles Metropolitan Transportation Authority used these reports for their screening of possible grade separations, which was adopted in 2003. Figure 2-17 provides a graphic representation of when they believe grade separation may be warranted. 8
+[p183_c0007] _Figure 2-17 Initial Volume Screening for Grade Separated Crossings_
+> [p183_c0008] The graph plots Peak Hour LRT Trains/Hour (per direction) on the Y-axis (0 to 40) against Peak Hour Volume per Lane on the X-axis (0 to 1200). The area is divided into three regions: AT GRADE OPERATION SHOULD BE FEASIBLE (Green): Located in the bottom-left, bounded by the X-axis, the Y-axis, and a diagonal line from (0, 40) to (800, 0). This region is labeled 'THRESHOLD 1 & 2'. POSSIBLE AT GRADE OPERATION (Yellow): Located in the middle, bounded by the X-axis, the Y-axis, and a horizontal line at 30 trains/hour. This region is labeled 'THRESHOLD 3'. GRADE SEPARATION USUALLY REQUIRED (Red): Located in the top-right, bounded by the Y-axis, the horizontal line at 30 trains/hour, and a diagonal line from (1000, 30) to (1200, 0). This region is labeled 'THRESHOLD 3' and includes the note '(ENGINEERING STUDY REQUIRED TO DEFINE POSSIBLE AT GRADE OPERATION)'. Additional notes within the graph area include: '(ENGINEERING STUDY REQUIRED TO DEFINE AT GRADE OPERATION)' in the yellow region and '(ENGINEERING STUDY REQUIRED TO DEFINE POSSIBLE AT GRADE OPERATION)' in the red region. NOTES: ROADWAY VOLUME IS PEAK HOUR, HIGHEST PER LANE FLOW RATE ADAPTED FROM INSTITUTE OF TRANSPORTATION ENGINEERS INFORMATIONAL REPORT, LIGHT RAIL TRANSIT GRADE SEPARATION GUIDELINES, 1992, THRESHOLD 1 AND THRESHOLD 2 COMBINED.
+[p183_c0009] Source: MTA Grade Crossing Policy for Light Rail Transit, Los Angeles MTA, December 2003
+[p183_c0010] _8 MTA Grade Crossing Policy for Light Rail Transit, Los Angeles MTA, December 2003_
+[p183_c0011] _2-74_
+
+## Page 184
+
+### [p184_c0001] Lower Montauk Branch Rail Study
+### [p184_c0002] 2.24.3.2 Existing Crossings on Lower Montauk Branch
+[p184_c0003] Most of the criteria above do not apply to the at-grade crossings along the Lower Montauk line. The two most relevant criteria are traffic volumes and the frequency of trains per day. As currently planned, transit service could result in approximately 120 trains per weekday, exceeding the 75 per day from the FHWA guidance. However, trains along Lower Montauk would be traveling at a much lower rate of speed than listed by the FHWA. Traffic volumes at several of the crossings are also likely well below the FHWA thresholds, though data is unavailable for most crossings, so this cannot be confirmed. However, Google Map and field inspections show that most are local streets with limited access, and therefore likely have very low levels of traffic.
+[p184_c0004] Based on the criteria above, most at-grade crossings along the Lower Montauk line do not warrant consideration for grade separation. However, there are a few exceptions that may merit consideration of grade separation. Table 2-15 provides a brief overview of and recommendations for the at-grade crossings along the Lower Montauk Branch. A discussion of the crossings follows. Along with images from Google Maps, reference is made to the 1984 Alternatives Analysis/Draft Environmental Impact Statement for the Queens Subway Options Study when the Lower Montauk line was considered for transit use. While the surrounding context has changed since its publication, this study does provide a useful precedent for review of these at-grade crossings. Recommendations are referenced from this study for those crossings that are included in both documents.
+[p184_c0005] _Table 2-15 At-Grade Crossings on Lower Montauk Line_
+[p184_c0006]
+
+```text
+At-Grade Crossing Separation Needed? Reason Traffic Data 11 th St. No Low traffic Hourly max: 197 Waste Management Crossing Likely Heavy truck traffic NA Railroad Ave. (private crossing) No Low traffic NA Laurel Hill Blvd. No Low traffic NA 43 St. No Low traffic NA 49 St. No Low traffic NA Maspeth Ave. [1] Yes High traffic volumes 976 73 St. No Low traffic NA 88 St. Possibly High traffic volumes NA [1] An Intersection Control Analysis performed in 2017 for NYCDOT for this location indicated that traffic volumes and other factors warranted that this presently Stop Sign-controlled intersection be signalized.
+```
+### [p184_c0007] 11th Street Crossing
+[p184_c0008] The 11 th Street crossing is located almost directly underneath the Pulaski Bridge. It connects to some of the industrial properties along Newtown Creek, though these properties can also be reached via 2 nd Street as well. Traffic counts collected in December 2015 showed an hourly max of 197 vehicles. This is well short of the traffic volumes to consider a grade-separated crossing. As seen in the Google Street
+[p184_c0009] _2-75_
+
+## Page 185
+
+### [p185_c0001] Lower Montauk Branch Rail Study
+[p185_c0002] View photo below, this crossing is already equipped with crossing arms and flashing lights. The Queens Subway Options Study did not provide a specific recommendation for the 11 th Street crossing.
+> [p185_c0003] An aerial satellite view from Google Earth showing the intersection of Borden Avenue and 11th Street in Queens. The image includes labels for 'Borden Avenue', '11th St', 'Queens Midtown Tunnel (railroad)', 'Long Island Expy (railroad)', and 'Long Island Expy'. A blue rectangular box with the word 'Crossing' in white text has an arrow pointing to the intersection. Other nearby streets like 5th Ave, 6th Ave, 7th Ave, 8th Ave, 9th Ave, 10th Ave, 12th Ave, 13th Ave, 14th Ave, 15th Ave, 16th Ave, 17th Ave, 18th Ave, 19th Ave, 20th Ave, 21st Ave, 22nd Ave, 23rd Ave, 24th Ave, 25th Ave, 26th Ave, 27th Ave, 28th Ave, 29th Ave, 30th Ave, 31st Ave, 32nd Ave, 33rd Ave, 34th Ave, 35th Ave, 36th Ave, 37th Ave, 38th Ave, 39th Ave, 40th Ave, 41st Ave, 42nd Ave, 43rd Ave, 44th Ave, 45th Ave, 46th Ave, 47th Ave, 48th Ave, 49th Ave, 50th Ave, 51st Ave, 52nd Ave, 53rd Ave, 54th Ave, 55th Ave, 56th Ave, 57th Ave, 58th Ave, 59th Ave, 60th Ave, 61st Ave, 62nd Ave, 63rd Ave, 64th Ave, 65th Ave, 66th Ave, 67th Ave, 68th Ave, 69th Ave, 70th Ave, 71st Ave, 72nd Ave, 73rd Ave, 74th Ave, 75th Ave, 76th Ave, 77th Ave, 78th Ave, 79th Ave, 80th Ave, 81st Ave, 82nd Ave, 83rd Ave, 84th Ave, 85th Ave, 86th Ave, 87th Ave, 88th Ave, 89th Ave, 90th Ave, 91st Ave, 92nd Ave, 93rd Ave, 94th Ave, 95th Ave, 96th Ave, 97th Ave, 98th Ave, 99th Ave, 100th Ave, 101st Ave, 102nd Ave, 103rd Ave, 104th Ave, 105th Ave, 106th Ave, 107th Ave, 108th Ave, 109th Ave, 110th Ave, 111th Ave, 112th Ave, 113th Ave, 114th Ave, 115th Ave, 116th Ave, 117th Ave, 118th Ave, 119th Ave, 120th Ave, 121st Ave, 122nd Ave, 123rd Ave, 124th Ave, 125th Ave, 126th Ave, 127th Ave, 128th Ave, 129th Ave, 130th Ave, 131st Ave, 132nd Ave, 133rd Ave, 134th Ave, 135th Ave, 136th Ave, 137th Ave, 138th Ave, 139th Ave, 140th Ave, 141st Ave, 142nd Ave, 143rd Ave, 144th Ave, 145th Ave, 146th Ave, 147th Ave, 148th Ave, 149th Ave, 150th Ave, 151st Ave, 152nd Ave, 153rd Ave, 154th Ave, 155th Ave, 156th Ave, 157th Ave, 158th Ave, 159th Ave, 160th Ave, 161st Ave, 162nd Ave, 163rd Ave, 164th Ave, 165th Ave, 166th Ave, 167th Ave, 168th Ave, 169th Ave, 170th Ave, 171st Ave, 172nd Ave, 173rd Ave, 174th Ave, 175th Ave, 176th Ave, 177th Ave, 178th Ave, 179th Ave, 180th Ave, 181st Ave, 182nd Ave, 183rd Ave, 184th Ave, 185th Ave, 186th Ave, 187th Ave, 188th Ave, 189th Ave, 190th Ave, 191st Ave, 192nd Ave, 193rd Ave, 194th Ave, 195th Ave, 196th Ave, 197th Ave, 198th Ave, 199th Ave, 200th Ave, 201st Ave, 202nd Ave, 203rd Ave, 204th Ave, 205th Ave, 206th Ave, 207th Ave, 208th Ave, 209th Ave, 210th Ave, 211st Ave, 212nd Ave, 213rd Ave, 214th Ave, 215th Ave, 216th Ave, 217th Ave, 218th Ave, 219th Ave, 220th Ave, 221st Ave, 222nd Ave, 223rd Ave, 224th Ave, 225th Ave, 226th Ave, 227th Ave, 228th Ave, 229th Ave, 230th Ave, 231st Ave, 232nd Ave, 233rd Ave, 234th Ave, 235th Ave, 236th Ave, 237th Ave, 238th Ave, 239th Ave, 240th Ave, 241st Ave, 242nd Ave, 243rd Ave, 244th Ave, 245th Ave, 246th Ave, 247th Ave, 248th Ave, 249th Ave, 250th Ave, 251st Ave, 252nd Ave, 253rd Ave, 254th Ave, 255th Ave, 256th Ave, 257th Ave, 258th Ave, 259th Ave, 260th Ave, 261st Ave, 262nd Ave, 263rd Ave, 264th Ave, 265th Ave, 266th Ave, 267th Ave, 268th Ave, 269th Ave, 270th Ave, 271st Ave, 272nd Ave, 273rd Ave, 274th Ave, 275th Ave, 276th Ave, 277th Ave, 278th Ave, 279th Ave, 280th Ave, 281st Ave, 282nd Ave, 283rd Ave, 284th Ave, 285th Ave, 286th Ave, 287th Ave, 288th Ave, 289th Ave, 290th Ave, 291st Ave, 292nd Ave, 293rd Ave, 294th Ave, 295th Ave, 296th Ave, 297th Ave, 298th Ave, 299th Ave, 300th Ave, 301st Ave, 302nd Ave, 303rd Ave, 304th Ave, 305th Ave, 306th Ave, 307th Ave, 308th Ave, 309th Ave, 310th Ave, 311st Ave, 312nd Ave, 313rd Ave, 314th Ave, 315th Ave, 316th Ave, 317th Ave, 318th Ave, 319th Ave, 320th Ave, 321st Ave, 322nd Ave, 323rd Ave, 324th Ave, 325th Ave, 326th Ave, 327th Ave, 328th Ave, 329th Ave, 330th Ave, 331st Ave, 332nd Ave, 333rd Ave, 334th Ave, 335th Ave, 336th Ave, 337th Ave, 338th Ave, 339th Ave, 340th Ave, 341st Ave, 342nd Ave, 343rd Ave, 344th Ave, 345th Ave, 346th Ave, 347th Ave, 348th Ave, 349th Ave, 350th Ave, 351st Ave, 352nd Ave, 353rd Ave, 354th Ave, 355th Ave, 356th Ave, 357th Ave, 358th Ave, 359th Ave, 360th Ave, 361st Ave, 362nd Ave, 363rd Ave, 364th Ave, 365th Ave, 366th Ave, 367th Ave, 368th Ave, 369th Ave, 370th Ave, 371st Ave, 372nd Ave, 373rd Ave, 374th Ave, 375th Ave, 376th Ave, 377th Ave, 378th Ave, 379th Ave, 380th Ave, 381st Ave, 382nd Ave, 383rd Ave, 384th Ave, 385th Ave, 386th Ave, 387th Ave, 388th Ave, 389th Ave, 390th Ave, 391st Ave, 392nd Ave, 393rd Ave, 394th Ave, 395th Ave, 396th Ave, 397th Ave, 398th Ave, 399th Ave, 400th Ave, 401st Ave, 402nd Ave, 403rd Ave, 404th Ave, 405th Ave, 406th Ave, 407th Ave, 408th Ave, 409th Ave, 410th Ave, 411st Ave, 412nd Ave, 413rd Ave, 414th Ave, 415th Ave, 416th Ave, 417th Ave, 418th Ave, 419th Ave, 420th Ave, 421st Ave, 422nd Ave, 423rd Ave, 424th Ave, 425th Ave, 426th Ave, 427th Ave, 428th Ave, 429th Ave, 430th Ave, 431st Ave, 432nd Ave, 433rd Ave, 434th Ave, 435th Ave, 436th Ave, 437th Ave, 438th Ave, 439th Ave, 440th Ave, 441st Ave, 442nd Ave, 443rd Ave, 444th Ave, 445th Ave, 446th Ave, 447th Ave, 448th Ave, 449th Ave, 450th Ave, 451st Ave, 452nd Ave, 453rd Ave, 454th Ave, 455th Ave, 456th Ave, 457th Ave, 458th Ave, 459th Ave, 460th Ave, 461st Ave, 462nd Ave, 463rd Ave, 464th Ave, 465th Ave, 466th Ave, 467th Ave, 468th Ave, 469th Ave, 470th Ave, 471st Ave, 472nd Ave, 473rd Ave, 474th Ave, 475th Ave, 476th Ave, 477th Ave, 478th Ave, 479th Ave, 480th Ave, 481st Ave, 482nd Ave, 483rd Ave, 484th Ave, 485th Ave, 486th Ave, 487th Ave, 488th Ave, 489th Ave, 490th Ave, 491st Ave, 492nd Ave, 493rd Ave, 494th Ave, 495th Ave, 496th Ave, 497th Ave, 498th Ave, 499th Ave, 500th Ave, 501st Ave, 502nd Ave, 503rd Ave, 504th Ave, 505th Ave, 506th Ave, 507th Ave, 508th Ave, 509th Ave, 510th Ave, 511st Ave, 512nd Ave, 513rd Ave, 514th Ave, 515th Ave, 516th Ave, 517th Ave, 518th Ave, 519th Ave, 520th Ave, 521st Ave, 522nd Ave, 523rd Ave, 524th Ave, 525th Ave, 526th Ave, 527th Ave, 528th Ave, 529th Ave, 530th Ave, 531st Ave, 532nd Ave, 533rd Ave, 534th Ave, 535th Ave, 536th Ave, 537th Ave, 538th Ave, 539th Ave, 540th Ave, 541st Ave, 542nd Ave, 543rd Ave, 544th Ave, 545th Ave, 546th Ave, 547th Ave, 548th Ave, 549th Ave, 550th Ave, 551st Ave, 552nd Ave, 553rd Ave, 554th Ave, 555th Ave, 556th Ave, 557th Ave, 558th Ave, 559th Ave, 560th Ave, 561st Ave, 562nd Ave, 563rd Ave, 564th Ave, 565th Ave, 566th Ave, 567th Ave, 568th Ave, 569th Ave, 570th Ave, 571st Ave, 572nd Ave, 573rd Ave, 574th Ave, 575th Ave, 576th Ave, 577th Ave, 578th Ave, 579th Ave, 580th Ave, 581st Ave, 582nd Ave, 583rd Ave, 584th Ave, 585th Ave, 586th Ave, 587th Ave, 588th Ave, 589th Ave, 590th Ave, 591st Ave, 592nd Ave, 593rd Ave, 594th Ave, 595th Ave, 596th Ave, 597th Ave, 598th Ave, 599th Ave, 600th Ave, 601st Ave, 602nd Ave, 603rd Ave, 604th Ave, 605th Ave, 606th Ave, 607th Ave, 608th Ave, 609th Ave, 610th Ave, 611st Ave, 612nd Ave, 613rd Ave, 614th Ave, 615th Ave, 616th Ave, 617th Ave, 618th Ave, 619th Ave, 620th Ave, 621st Ave, 622nd Ave, 623rd Ave, 624th Ave, 625th Ave, 626th Ave, 627th Ave, 628th Ave, 629th Ave, 630th Ave, 631st Ave, 632nd Ave, 633rd Ave, 634th Ave, 635th Ave, 636th Ave, 637th Ave, 638th Ave, 639th Ave, 640th Ave, 641st Ave, 642nd Ave, 643rd Ave, 644th Ave, 645th Ave, 646th Ave, 647th Ave, 648th Ave, 649th Ave, 650th Ave, 651st Ave, 652nd Ave, 653rd Ave, 654th Ave, 655th Ave, 656th Ave, 657th Ave, 658th Ave, 659th Ave, 660th Ave, 661st Ave, 662nd Ave, 663rd Ave, 664th Ave, 665th Ave, 666th Ave, 667th Ave, 668th Ave, 669th Ave, 670th Ave, 671st Ave, 672nd Ave, 673rd Ave, 674th Ave, 675th Ave, 676th Ave, 677th Ave, 678th Ave, 679th Ave, 680th Ave, 681st Ave, 682nd Ave, 683rd Ave, 684th Ave, 685th Ave, 686th Ave, 687th Ave, 688th Ave, 689th Ave, 690th Ave, 691st Ave, 692nd Ave, 693rd Ave, 694th Ave, 695th Ave, 696th Ave, 697th Ave, 698th Ave, 699th Ave, 700th Ave, 701st Ave, 702nd Ave, 703rd Ave, 704th Ave, 705th Ave, 706th Ave, 707th Ave, 708th Ave, 709th Ave, 710th Ave, 711st Ave, 712nd Ave, 713rd Ave, 714th Ave, 715th Ave, 716th Ave, 717th Ave, 718th Ave, 719th Ave, 720th Ave, 721st Ave, 722nd Ave, 723rd Ave, 724th Ave, 725th Ave, 726th Ave, 727th Ave, 728th Ave, 729th Ave, 730th Ave, 731st Ave, 732nd Ave, 733rd Ave, 734th Ave, 735th Ave, 736th Ave, 737th Ave, 738th Ave, 739th Ave, 740th Ave, 741st Ave, 742nd Ave, 743rd Ave, 744th Ave, 745th Ave, 746th Ave, 747th Ave, 748th Ave, 749th Ave, 750th Ave, 751st Ave, 752nd Ave, 753rd Ave, 754th Ave, 755th Ave, 756th Ave, 757th Ave, 758th Ave, 759th Ave, 760th Ave, 761st Ave, 762nd Ave, 763rd Ave, 764th Ave, 765th Ave, 766th Ave, 767th Ave, 768th Ave, 769th Ave, 770th Ave, 771st Ave, 772nd Ave, 773rd Ave, 774th Ave, 775th Ave, 776th Ave, 777th Ave, 778th Ave, 779th Ave, 780th Ave, 781st Ave, 782nd Ave, 783rd Ave, 784th Ave, 785th Ave, 786th Ave, 787th Ave, 788th Ave, 789th Ave, 790th Ave, 791st Ave, 792nd Ave, 793rd Ave, 794th Ave, 795th Ave, 796th Ave, 797th Ave, 798th Ave, 799th Ave, 800th Ave, 801st Ave, 802nd Ave, 803rd Ave, 804th Ave, 805th Ave, 806th Ave, 807th Ave, 808th Ave, 809th Ave, 810th Ave, 811st Ave, 812nd Ave, 813rd Ave, 814th Ave, 815th Ave, 816th Ave, 817th Ave, 818th Ave, 819th Ave, 820th Ave, 821st Ave, 822nd Ave, 823rd Ave, 824th Ave, 825th Ave, 826th Ave, 827th Ave, 828th Ave, 829th Ave, 830th Ave, 831st Ave, 832nd Ave, 833rd Ave, 834th Ave, 835th Ave, 836th Ave, 837th Ave, 838th Ave, 839th Ave, 840th Ave, 841st Ave, 842nd Ave, 843rd Ave, 844th Ave, 845th Ave, 846th Ave, 847th Ave, 848th Ave, 849th Ave, 850th Ave, 851st Ave, 852nd Ave, 853rd Ave, 854th Ave, 855th Ave, 856th Ave, 857th Ave, 858th Ave, 859th Ave, 860th Ave, 861st Ave, 862nd Ave, 863rd Ave, 864th Ave, 865th Ave, 866th Ave, 867th Ave, 868th Ave, 869th Ave, 870th Ave, 871st Ave, 872nd Ave, 873rd Ave, 874th Ave, 875th Ave, 876th Ave, 877th Ave, 878th Ave, 879th Ave, 880th Ave, 881st Ave, 882nd Ave, 883rd Ave, 884th Ave, 885th Ave, 886th Ave, 887th Ave, 888th Ave, 889th Ave, 890th Ave, 891st Ave, 892nd Ave, 893rd Ave, 894th Ave, 895th Ave, 896th Ave, 897th Ave, 898th Ave, 899th Ave, 900th Ave, 901st Ave, 902nd Ave, 903rd Ave, 904th Ave, 905th Ave, 906th Ave, 907th Ave, 908th Ave, 909th Ave, 910th Ave, 911st Ave, 912nd Ave, 913rd Ave, 914th Ave, 915th Ave, 916th Ave, 917th Ave, 918th Ave, 919th Ave, 920th Ave, 921st Ave, 922nd Ave, 923rd Ave, 924th Ave, 925th Ave, 926th Ave, 927th Ave, 928th Ave, 929th Ave, 930th Ave, 931st Ave, 932nd Ave, 933rd Ave, 934th Ave, 935th Ave, 936th Ave, 937th Ave, 938th Ave, 939th Ave, 940th Ave, 941st Ave, 942nd Ave, 943rd Ave, 944th Ave, 945th Ave, 946th Ave, 947th Ave, 948th Ave, 949th Ave, 950th Ave, 951st Ave, 952nd Ave, 953rd Ave, 954th Ave, 955th Ave, 956th Ave, 957th Ave, 958th Ave, 959th Ave, 960th Ave, 961st Ave, 962nd Ave, 963rd Ave, 964th Ave, 965th Ave, 966th Ave, 967th Ave, 968th Ave, 969th Ave, 970th Ave, 971st Ave, 972nd Ave, 973rd Ave, 974th Ave, 975th Ave, 976th Ave, 977th Ave, 978th Ave, 979th Ave, 980th Ave, 981st Ave, 982nd Ave, 983rd Ave, 984th Ave, 985th Ave, 986th Ave, 987th Ave, 988th Ave, 989th Ave, 990th Ave, 991st Ave, 992nd Ave, 993rd Ave, 994th Ave, 995th Ave, 996th Ave, 997th Ave, 998th Ave, 999th Ave, 1000th Ave.
+[p185_c0004] _Source: Google Earth_
+> [p185_c0005] A street-level view looking south along 11th Street. In the foreground, a white van is partially visible on the left. The street is paved with '11th St' painted in white. To the right, there are railroad tracks with a 'TRACKS' sign. A crossing with flashing lights is visible further down the street. The background shows urban buildings and some graffiti.
+[p185_c0006] _Source: Google Street View_
+[p185_c0007] _2-76_
+
+## Page 186
+
+### [p186_c0001] Lower Montauk Branch Rail Study
+> [p186_c0002] A Google Street View image showing a rail crossing area. In the foreground, there are railroad tracks and a yellow taxi. To the left, a large red steel bridge structure is visible. In the background, there are several buildings, including a white commercial building with a sign that partially reads "MONTAUK". A railroad crossing sign is visible on the right side of the image.
+[p186_c0003] _Source: Google Street View_
+### [p186_c0004] Waste Management Crossing
+[p186_c0005] The Waste Management crossing is on private land south of Greenpoint Avenue and east of First Calvary Cemetery. Given the limited access and private nature of this location, there are no Google Street View images of this crossing. Waste Management currently has a 25-year lease that allows them to effectively block out the tracks so they can use them from roughly 9:00 AM to 3:00 PM daily. Given the impediment that this track closure would have on passenger rail operation, a grade-separate crossing is proposed to allow trucks access to the Waste Management site while still providing all-day transit service. The grade-separate crossing would need further analysis given the sharp curves and at this site.
+> [p186_c0006] A Google Earth satellite image showing an industrial area. Two blue boxes with white arrows point to specific locations: "Crossing" points to a street intersection, and "Waste Management" points to a large industrial building. The image shows various industrial structures, parking lots, and roads. A scale bar in the bottom right corner indicates 300 ft. The text "Google Earth" is visible in the bottom left corner.
+[p186_c0007] _Source: Google Earth_
+[p186_c0008] _2-77_
+
+## Page 187
+
+### [p187_c0001] Lower Montauk Branch Rail Study
+### [p187_c0002] Railroad Avenue Crossing
+[p187_c0003] The Railroad Avenue crossing is also on private property, approximately 900 feet southeast of the Waste Management crossing. It provides access to a handful of properties along Newtown Creek. While no traffic counts are available, traffic is believed to be light at this crossing, with no grade separation warranted. It would also be very difficult to grade-separate given the short distances involved. It is believed that this crossing is referenced in the Queens Subway Options Study as the Marlyn Warehousing crossing, so named for a former warehousing operation just southeast of this crossing, on the north side of Newtown Creek. That study recommended closing this crossing and providing access via an access road on the south side of the tracks from Greenpoint Ave. This would be difficult given that the new road would need to pass through private property, with that space further constrained by new tail tracks at the Waste Management site. If the crossing is kept open, then additional safety treatments should be implemented, or the proposed Waste Management underpass could be used by Railroad Avenue traffic.
+> [p187_c0004] An aerial photograph from Google Earth showing an industrial area along Newtown Creek. A blue box with the word "Crossing" and a white arrow points to a specific location where a road intersects with the creek. The area is filled with various industrial buildings, some with large flat roofs. A yellow line, likely a road, runs along the top of the image. The creek is visible on the left side. The Google Earth logo and a 300-foot scale bar are at the bottom.
+[p187_c0005] Source: Google Earth
+### [p187_c0006] Laurel Hill Boulevard Crossing
+[p187_c0007] The Laurel Hill Boulevard crossing is across the south corner of First Calvary Cemetery, about 1,200 feet east of the Railroad Avenue crossing. This crossing provides the only access to a thin strip of land along Newtown Creek. A grade-separated crossing is not needed here, given the likely very low volume of vehicles crossing the tracks. However, traffic counts are unavailable to provide specific crossing
+[p187_c0008] _2-78_
+
+## Page 188
+
+### [p188_c0001] Lower Montauk Branch Rail Study
+[p188_c0002] numbers. Given its limited use, eliminating this crossing may also be an option if an access road could be connected to the property, though lack of space could make this difficult. Closing the crossing was recommended in the Queens Subway Options Study, assuming property access via an access road.
+> [p188_c0003] An aerial satellite view from Google Earth showing an industrial area. A blue box with the word 'Crossing' and a white arrow points to a road crossing over a body of water. The surrounding area includes industrial buildings, parking lots, and a bridge. Labels on the map include 'New York Ave', 'Laurel Hill Blvd', 'Kingsway Bridge', and 'Moses Ave'. A scale bar at the bottom right indicates 400 ft.
+[p188_c0004] _Source: Google Earth_
+> [p188_c0005] A street-level view from Google Street View looking south on Laurel Hill Blvd. The road is paved and has 'Laurel Hill Blvd' painted on it. There are utility poles, power lines, and some industrial buildings in the background. A traffic cone is visible on the sidewalk.
+[p188_c0006] _Source: Google Street View_
+[p188_c0007] _2-79_
+
+## Page 189
+
+### [p189_c0001] Lower Montauk Branch Rail Study
+### [p189_c0002] 43 rd Street Crossing
+[p189_c0003] The 43 rd Street crossing is located just east of the Brooklyn-Queens Expressway. It provides the only access to the Restaurant Depot, a wholesale store on the south side of the tracks. Given that this store is the only reason for vehicles to use this crossing, it is assumed that traffic counts are low and that a grade-separated crossing is not needed at this point. However, there is a new FedEx Sorting Facility under construction next to the Restaurant Depot, and the 43 rd Street crossing is the only access point. New additional volume from this may require further evaluation. There are currently flashing lights and crossing arms in place for safe crossing.
+> [p189_c0004] Google Earth 500 ft
+[p189_c0005] _Source: Google Earth_
+[p189_c0006] _2-80_
+
+## Page 190
+
+### [p190_c0001] Lower Montauk Branch Rail Study
+> [p190_c0002] A Google Street View image looking south along 43rd Street. The street is paved and has "43rd St" painted in white. To the left, there are some wooden crates and a building. To the right, there is a white SUV parked and a "DO NOT STOP ON TRACKS" sign on a utility pole. In the distance, there are more buildings and trees. The caption "View South Along 43rd Street" is overlaid at the bottom.
+[p190_c0003] Source: Google Street View
+> [p190_c0004] A Google Street View image looking north along 43rd Street. The street is paved and has "43rd St" painted in white. To the left, there are some wooden crates and a building. To the right, there is a white SUV parked and a "DO NOT STOP ON TRACKS" sign on a utility pole. In the distance, there are more buildings and trees. The caption "View North Along 43rd Street" is overlaid at the bottom.
+[p190_c0005] Source: Google Street View
+### [p190_c0006] 49 th Street Crossing
+[p190_c0007] The 49 th Street crossing is at a “T” intersection with 56 th Road, providing access to industrial land near Maspeth Creek. If an at-grade crossing were maintained, vehicles waiting to cross the tracks heading south could cause traffic backups on 56 th Road, as there is no room to wait for trains to pass on the north side of the crossing on 49 th Street. Given these constraints, it may be worth closing this crossing, as also recommended by the Queens Subway Options Study. Roadway access to the properties here would be maintained via Maspeth Ave and other streets further south. Another alternative would be dedicated turn bays to alleviate queue congestion. Traffic counts were not available for this location.
+[p190_c0008] _2-81_
+
+## Page 191
+
+### [p191_c0001] Lower Montauk Branch Rail Study
+> [p191_c0002] Google Earth
+[p191_c0003] _Source: Google Earth_
+> [p191_c0004] View South Along 49 th Street
+[p191_c0005] _Source: Google Street View_
+[p191_c0006] _2-82_
+
+## Page 192
+
+### [p192_c0001] Lower Montauk Branch Rail Study
+> [p192_c0002] A Google Street View image showing a view north along 49th Street. The foreground is a paved road with a manhole cover. To the left, there are rail tracks and a fence. In the background, there are several industrial buildings, including a large red brick building and a smaller white building. A railroad crossing sign is visible on the right side of the street. The sky is overcast with grey clouds.
+[p192_c0003] Source: Google Street View
+### [p192_c0004] Maspeth Avenue Crossing
+[p192_c0005] The Maspeth Avenue crossing provides a key connection in the roadway network, providing the primary access to a large number of industrial properties such as aggregate producers and lumber suppliers on Newtown and Maspeth Creeks. In 2014, NYCDOT designated Maspeth Avenue as a Truck Route, which substantially increased the volume of trucks on that road. Traffic volumes here are significantly higher here than the other Lower Montauk Branch crossings as a result of this industrial use. This crossing is further complicated by the intersection of Maspeth Avenue and Rust Street immediately to the east of the tracks, as well as additional yard tracks on the west side that increase the length of the crossing. As such, grade separation is currently planned for this crossing if rail passenger service were implemented. Any grade separation would need further study due to the relative physical constraints of the intersection; both a rail viaduct and a road overpass may be considered. Grade separation at Maspeth Avenue was also recommended by the Queens Subway Options Study.
+[p192_c0006] _2-83_
+
+## Page 193
+
+### [p193_c0001] Lower Montauk Branch Rail Study
+> [p193_c0002] An aerial satellite view from Google Earth showing an industrial and commercial area. A yellow line indicates a rail line running diagonally from the top-left towards the bottom-right. A blue box with the word "Crossing" has an arrow pointing to a street intersection on the rail line. The street is labeled "Maspeth-Ave". Other streets visible include "58th Ave", "56th Ave", "57th Ave", "57th Rd", "58th Rd", "Maurice Ave", "56th St", "57th St", "58th St", "59th St", "55th Ave", and "54th Ave". A scale bar in the bottom right corner indicates "100 ft".
+[p193_c0003] _Source: Google Earth_
+> [p193_c0004] A street view image from Google Street View looking southwest along Maspeth Avenue. The road has white crosswalk markings and a "NO TURNS" sign on the left. A "Maspeth Ave" sign is painted on the road surface. To the right, there are railroad tracks with a "R" crossing sign and a "20" speed limit sign. A large billboard on the left reads "INSURANCE FOR 2016!". The sky is blue with wispy clouds. The caption "View Southwest Along Maspeth Avenue" is overlaid at the bottom center of the image.
+[p193_c0005] _Source: Google Street View_
+[p193_c0006] _2-84_
+
+## Page 194
+
+### [p194_c0001] Lower Montauk Branch Rail Study
+[p194_c0002] _Source: Google Street View_
+### [p194_c0003] 73 rd Street Crossing
+[p194_c0004] The 73 rd Street crossing is near the southeast corner of the All Faiths Cemetery. It only provides access to a couple of small businesses located between the cemetery and the tracks. Though traffic counts are unavailable, it is assumed that the volumes are minimal. If access can be provided to these properties north of the tracks, the crossing could potentially be eliminated. This was also the recommendation of the Queens Subway Options Study.
+[p194_c0005] _Source: Google Earth_
+[p194_c0006] _2-85_
+
+## Page 195
+
+### [p195_c0001] Lower Montauk Branch Rail Study
+> [p195_c0002] A Google Street View image showing a street intersection. The street is labeled 'Edsall Ave' in large white letters on the pavement. A green street sign for '73rd' is visible on the left. A train is visible on the tracks in the background, and a 'TAKE CARE' sign is posted near the crossing. The sky is blue with some clouds.
+[p195_c0003] Source: Google Street View
+### [p195_c0004] 88 th Street Crossing
+[p195_c0005] 88 th Street is a north-south arterial connection between two important commercial corridors: Cooper Avenue on the north and Myrtle Avenue on the south. While there are currently no traffic volume data available at the crossing location to aid in screening, spot observations suggest that volumes may be moderately high. A “T” intersection with 76 th Avenue immediately north of the crossing also complicates traffic movements. 88 th Street does provide more important connectivity within the local street network than many of the other at-grade crossings, serving both residential and industrial areas. The Queens Subway Options Study recommended grade separation at this location as well. A special consideration in this area is the presence of PS/IS 113 just south of the crossing on 78 th Avenue. School pedestrian traffic is a constant volume in the area, and any impacts to crossings here would require analysis of this factor.
+[p195_c0006] _2-86_
+
+## Page 196
+
+### [p196_c0001] Lower Montauk Branch Rail Study
+> [p196_c0002] An aerial satellite view from Google Earth showing the Lower Montauk Branch Rail Study area. The image shows a dense urban neighborhood with numerous small, multi-story residential buildings. A railway line runs horizontally across the middle of the frame. A white arrow points from a blue box labeled "Crossing" to the intersection of 88th Street and the railway tracks. Street names are visible: 88th Street, 76th Avenue, 89th Street, 90th Street, 91st Street, 92nd Street, 93rd Street, 94th Street, 95th Street, 96th Street, 97th Street, 98th Street, 99th Street, 100th Street, 101st Street, 102nd Street, 103rd Street, 104th Street, 105th Street, 106th Street, 107th Street, 108th Street, 109th Street, 110th Street, 111th Street, 112th Street, 113th Street, 114th Street, 115th Street, 116th Street, 117th Street, 118th Street, 119th Street, 120th Street, 121st Street, 122nd Street, 123rd Street, 124th Street, 125th Street, 126th Street, 127th Street, 128th Street, 129th Street, 130th Street, 131st Street, 132nd Street, 133rd Street, 134th Street, 135th Street, 136th Street, 137th Street, 138th Street, 139th Street, 140th Street, 141st Street, 142nd Street, 143rd Street, 144th Street, 145th Street, 146th Street, 147th Street, 148th Street, 149th Street, 150th Street, 151st Street, 152nd Street, 153rd Street, 154th Street, 155th Street, 156th Street, 157th Street, 158th Street, 159th Street, 160th Street, 161st Street, 162nd Street, 163rd Street, 164th Street, 165th Street, 166th Street, 167th Street, 168th Street, 169th Street, 170th Street, 171st Street, 172nd Street, 173rd Street, 174th Street, 175th Street, 176th Street, 177th Street, 178th Street, 179th Street, 180th Street, 181st Street, 182nd Street, 183rd Street, 184th Street, 185th Street, 186th Street, 187th Street, 188th Street, 189th Street, 190th Street, 191st Street, 192nd Street, 193rd Street, 194th Street, 195th Street, 196th Street, 197th Street, 198th Street, 199th Street, 200th Street, 201st Street, 202nd Street, 203rd Street, 204th Street, 205th Street, 206th Street, 207th Street, 208th Street, 209th Street, 210th Street, 211st Street, 212nd Street, 213rd Street, 214th Street, 215th Street, 216th Street, 217th Street, 218th Street, 219th Street, 220th Street, 221st Street, 222nd Street, 223rd Street, 224th Street, 225th Street, 226th Street, 227th Street, 228th Street, 229th Street, 230th Street, 231st Street, 232nd Street, 233rd Street, 234th Street, 235th Street, 236th Street, 237th Street, 238th Street, 239th Street, 240th Street, 241st Street, 242nd Street, 243rd Street, 244th Street, 245th Street, 246th Street, 247th Street, 248th Street, 249th Street, 250th Street, 251st Street, 252nd Street, 253rd Street, 254th Street, 255th Street, 256th Street, 257th Street, 258th Street, 259th Street, 260th Street, 261st Street, 262nd Street, 263rd Street, 264th Street, 265th Street, 266th Street, 267th Street, 268th Street, 269th Street, 270th Street, 271st Street, 272nd Street, 273rd Street, 274th Street, 275th Street, 276th Street, 277th Street, 278th Street, 279th Street, 280th Street, 281st Street, 282nd Street, 283rd Street, 284th Street, 285th Street, 286th Street, 287th Street, 288th Street, 289th Street, 290th Street, 291st Street, 292nd Street, 293rd Street, 294th Street, 295th Street, 296th Street, 297th Street, 298th Street, 299th Street, 300th Street, 301st Street, 302nd Street, 303rd Street, 304th Street, 305th Street, 306th Street, 307th Street, 308th Street, 309th Street, 310th Street, 311st Street, 312nd Street, 313rd Street, 314th Street, 315th Street, 316th Street, 317th Street, 318th Street, 319th Street, 320th Street, 321st Street, 322nd Street, 323rd Street, 324th Street, 325th Street, 326th Street, 327th Street, 328th Street, 329th Street, 330th Street, 331st Street, 332nd Street, 333rd Street, 334th Street, 335th Street, 336th Street, 337th Street, 338th Street, 339th Street, 340th Street, 341st Street, 342nd Street, 343rd Street, 344th Street, 345th Street, 346th Street, 347th Street, 348th Street, 349th Street, 350th Street, 351st Street, 352nd Street, 353rd Street, 354th Street, 355th Street, 356th Street, 357th Street, 358th Street, 359th Street, 360th Street, 361st Street, 362nd Street, 363rd Street, 364th Street, 365th Street, 366th Street, 367th Street, 368th Street, 369th Street, 370th Street, 371st Street, 372nd Street, 373rd Street, 374th Street, 375th Street, 376th Street, 377th Street, 378th Street, 379th Street, 380th Street, 381st Street, 382nd Street, 383rd Street, 384th Street, 385th Street, 386th Street, 387th Street, 388th Street, 389th Street, 390th Street, 391st Street, 392nd Street, 393rd Street, 394th Street, 395th Street, 396th Street, 397th Street, 398th Street, 399th Street, 400th Street, 401st Street, 402nd Street, 403rd Street, 404th Street, 405th Street, 406th Street, 407th Street, 408th Street, 409th Street, 410th Street, 411st Street, 412nd Street, 413rd Street, 414th Street, 415th Street, 416th Street, 417th Street, 418th Street, 419th Street, 420th Street, 421st Street, 422nd Street, 423rd Street, 424th Street, 425th Street, 426th Street, 427th Street, 428th Street, 429th Street, 430th Street, 431st Street, 432nd Street, 433rd Street, 434th Street, 435th Street, 436th Street, 437th Street, 438th Street, 439th Street, 440th Street, 441st Street, 442nd Street, 443rd Street, 444th Street, 445th Street, 446th Street, 447th Street, 448th Street, 449th Street, 450th Street, 451st Street, 452nd Street, 453rd Street, 454th Street, 455th Street, 456th Street, 457th Street, 458th Street, 459th Street, 460th Street, 461st Street, 462nd Street, 463rd Street, 464th Street, 465th Street, 466th Street, 467th Street, 468th Street, 469th Street, 470th Street, 471st Street, 472nd Street, 473rd Street, 474th Street, 475th Street, 476th Street, 477th Street, 478th Street, 479th Street, 480th Street, 481st Street, 482nd Street, 483rd Street, 484th Street, 485th Street, 486th Street, 487th Street, 488th Street, 489th Street, 490th Street, 491st Street, 492nd Street, 493rd Street, 494th Street, 495th Street, 496th Street, 497th Street, 498th Street, 499th Street, 500th Street, 501st Street, 502nd Street, 503rd Street, 504th Street, 505th Street, 506th Street, 507th Street, 508th Street, 509th Street, 510th Street, 511st Street, 512nd Street, 513rd Street, 514th Street, 515th Street, 516th Street, 517th Street, 518th Street, 519th Street, 520th Street, 521st Street, 522nd Street, 523rd Street, 524th Street, 525th Street, 526th Street, 527th Street, 528th Street, 529th Street, 530th Street, 531st Street, 532nd Street, 533rd Street, 534th Street, 535th Street, 536th Street, 537th Street, 538th Street, 539th Street, 540th Street, 541st Street, 542nd Street, 543rd Street, 544th Street, 545th Street, 546th Street, 547th Street, 548th Street, 549th Street, 550th Street, 551st Street, 552nd Street, 553rd Street, 554th Street, 555th Street, 556th Street, 557th Street, 558th Street, 559th Street, 560th Street, 561st Street, 562nd Street, 563rd Street, 564th Street, 565th Street, 566th Street, 567th Street, 568th Street, 569th Street, 570th Street, 571st Street, 572nd Street, 573rd Street, 574th Street, 575th Street, 576th Street, 577th Street, 578th Street, 579th Street, 580th Street, 581st Street, 582nd Street, 583rd Street, 584th Street, 585th Street, 586th Street, 587th Street, 588th Street, 589th Street, 590th Street, 591st Street, 592nd Street, 593rd Street, 594th Street, 595th Street, 596th Street, 597th Street, 598th Street, 599th Street, 600th Street, 601st Street, 602nd Street, 603rd Street, 604th Street, 605th Street, 606th Street, 607th Street, 608th Street, 609th Street, 610th Street, 611st Street, 612nd Street, 613rd Street, 614th Street, 615th Street, 616th Street, 617th Street, 618th Street, 619th Street, 620th Street, 621st Street, 622nd Street, 623rd Street, 624th Street, 625th Street, 626th Street, 627th Street, 628th Street, 629th Street, 630th Street, 631st Street, 632nd Street, 633rd Street, 634th Street, 635th Street, 636th Street, 637th Street, 638th Street, 639th Street, 640th Street, 641st Street, 642nd Street, 643rd Street, 644th Street, 645th Street, 646th Street, 647th Street, 648th Street, 649th Street, 650th Street, 651st Street, 652nd Street, 653rd Street, 654th Street, 655th Street, 656th Street, 657th Street, 658th Street, 659th Street, 660th Street, 661st Street, 662nd Street, 663rd Street, 664th Street, 665th Street, 666th Street, 667th Street, 668th Street, 669th Street, 670th Street, 671st Street, 672nd Street, 673rd Street, 674th Street, 675th Street, 676th Street, 677th Street, 678th Street, 679th Street, 680th Street, 681st Street, 682nd Street, 683rd Street, 684th Street, 685th Street, 686th Street, 687th Street, 688th Street, 689th Street, 690th Street, 691st Street, 692nd Street, 693rd Street, 694th Street, 695th Street, 696th Street, 697th Street, 698th Street, 699th Street, 700th Street, 701st Street, 702nd Street, 703rd Street, 704th Street, 705th Street, 706th Street, 707th Street, 708th Street, 709th Street, 710th Street, 711st Street, 712nd Street, 713rd Street, 714th Street, 715th Street, 716th Street, 717th Street, 718th Street, 719th Street, 720th Street, 721st Street, 722nd Street, 723rd Street, 724th Street, 725th Street, 726th Street, 727th Street, 728th Street, 729th Street, 730th Street, 731st Street, 732nd Street, 733rd Street, 734th Street, 735th Street, 736th Street, 737th Street, 738th Street, 739th Street, 740th Street, 741st Street, 742nd Street, 743rd Street, 744th Street, 745th Street, 746th Street, 747th Street, 748th Street, 749th Street, 750th Street, 751st Street, 752nd Street, 753rd Street, 754th Street, 755th Street, 756th Street, 757th Street, 758th Street, 759th Street, 760th Street, 761st Street, 762nd Street, 763rd Street, 764th Street, 765th Street, 766th Street, 767th Street, 768th Street, 769th Street, 770th Street, 771st Street, 772nd Street, 773rd Street, 774th Street, 775th Street, 776th Street, 777th Street, 778th Street, 779th Street, 780th Street, 781st Street, 782nd Street, 783rd Street, 784th Street, 785th Street, 786th Street, 787th Street, 788th Street, 789th Street, 790th Street, 791st Street, 792nd Street, 793rd Street, 794th Street, 795th Street, 796th Street, 797th Street, 798th Street, 799th Street, 800th Street, 801st Street, 802nd Street, 803rd Street, 804th Street, 805th Street, 806th Street, 807th Street, 808th Street, 809th Street, 810th Street, 811st Street, 812nd Street, 813rd Street, 814th Street, 815th Street, 816th Street, 817th Street, 818th Street, 819th Street, 820th Street, 821st Street, 822nd Street, 823rd Street, 824th Street, 825th Street, 826th Street, 827th Street, 828th Street, 829th Street, 830th Street, 831st Street, 832nd Street, 833rd Street, 834th Street, 835th Street, 836th Street, 837th Street, 838th Street, 839th Street, 840th Street, 841st Street, 842nd Street, 843rd Street, 844th Street, 845th Street, 846th Street, 847th Street, 848th Street, 849th Street, 850th Street, 851st Street, 852nd Street, 853rd Street, 854th Street, 855th Street, 856th Street, 857th Street, 858th Street, 859th Street, 860th Street, 861st Street, 862nd Street, 863rd Street, 864th Street, 865th Street, 866th Street, 867th Street, 868th Street, 869th Street, 870th Street, 871st Street, 872nd Street, 873rd Street, 874th Street, 875th Street, 876th Street, 877th Street, 878th Street, 879th Street, 880th Street, 881st Street, 882nd Street, 883rd Street, 884th Street, 885th Street, 886th Street, 887th Street, 888th Street, 889th Street, 890th Street, 891st Street, 892nd Street, 893rd Street, 894th Street, 895th Street, 896th Street, 897th Street, 898th Street, 899th Street, 900th Street, 901st Street, 902nd Street, 903rd Street, 904th Street, 905th Street, 906th Street, 907th Street, 908th Street, 909th Street, 910th Street, 911st Street, 912nd Street, 913rd Street, 914th Street, 915th Street, 916th Street, 917th Street, 918th Street, 919th Street, 920th Street, 921st Street, 922nd Street, 923rd Street, 924th Street, 925th Street, 926th Street, 927th Street, 928th Street, 929th Street, 930th Street, 931st Street, 932nd Street, 933rd Street, 934th Street, 935th Street, 936th Street, 937th Street, 938th Street, 939th Street, 940th Street, 941st Street, 942nd Street, 943rd Street, 944th Street, 945th Street, 946th Street, 947th Street, 948th Street, 949th Street, 950th Street, 951st Street, 952nd Street, 953rd Street, 954th Street, 955th Street, 956th Street, 957th Street, 958th Street, 959th Street, 960th Street, 961st Street, 962nd Street, 963rd Street, 964th Street, 965th Street, 966th Street, 967th Street, 968th Street, 969th Street, 970th Street, 971st Street, 972nd Street, 973rd Street, 974th Street, 975th Street, 976th Street, 977th Street, 978th Street, 979th Street, 980th Street, 981st Street, 982nd Street, 983rd Street, 984th Street, 985th Street, 986th Street, 987th Street, 988th Street, 989th Street, 990th Street, 991st Street, 992nd Street, 993rd Street, 994th Street, 995th Street, 996th Street, 997th Street, 998th Street, 999th Street, 1000th Street. The image is labeled "Google Earth" in the bottom left corner and "400 ft" in the bottom right corner.
+[p196_c0003] _Source: Google Earth_
+> [p196_c0004] A street-level view from Google Street View looking north along 88th Street. The street is paved with white markings for "88th St" and "S 1100". A silver car is in the left lane, and a blue car is in the right lane. A red and white striped crossing guard pole is on the right side of the street. A green street sign for "76th St" and "88th St" is visible. A "DO NOT STOP ON TRACKS" sign is also present. The sky is blue with white clouds. The image is labeled "View North Along 88th Street" and "Google" in the bottom center.
+[p196_c0005] _Source: Google Street View_
+[p196_c0006] _2-87_
+
+## Page 197
+
+### [p197_c0001] Lower Montauk Branch Rail Study
+> [p197_c0002] A Google Street View image showing a view south along 88th Street. The street is a multi-lane road with several cars. A large 'X' is painted on the road surface with '88th St' written vertically. To the right, there are train tracks and a 'DO NOT STOP ON TRACKS' sign. The sky is blue with scattered clouds.
+[p197_c0003] _Source: Google Street View_
+### [p197_c0004] 2.24.3.3 Projected Changes to Support Rail Passenger Service
+[p197_c0005] A preliminary review of at-grade crossings along the Lower Montauk Branch assessing the potential need for grade separation in connection with the reintroduction of passenger rail service indicated that grade separation would likely be warranted at three locations:
+- [p197_c0006] • Waste Management Crossing, based on the requirement for high volumes of municipal waste trucks to access the truck-to-rail facility on the south side of the tracks • Maspeth Avenue, due to the high volume of traffic at this location, including many heavy-duty trucks • 88 th Street, due to the relatively high volume of traffic at this location
+[p197_c0007] The costs of implementing the changes at each of these locations are included in the overall capital cost estimate for the Lower Montauk Branch passenger service.
+[p197_c0008] _2-88_
+
+## Page 198
+
+### [p198_c0001] Lower Montauk Branch Rail Study
+### [p198_c0002] 2.25 Resiliency
+### [p198_c0003] 2.25.1 Introduction
+[p198_c0004] Superstorm Sandy in 2012 showed the importance that resiliency plays in the planning and operation of existing and proposed projects in New York City. Its miles of coastlines and coastal areas pose critical challenges relating to climate change and increased storm surges and associated flooding. This is particularly true for too many transportation facilities, which historically were located near shorelines. This report examines existing resiliency studies concerning the study area, and how future climate catastrophes may impact the Lower Montauk Branch and the surrounding areas.
+[p198_c0005] Newtown Creek is a tributary of the East River, approximately 3.5 miles in length. Figure 2-18 shows the Queens neighborhoods of Long Island City and Maspeth adjacent to the Newtown Creek that are identified as at-risk areas for flooding. As shown in the map of this area, the areas round Newtown Creek are at moderate (orange) and high (pink) risks for flooding. The highlighted areas along the creek's northern side indicate approximately where the westernmost portion of the Lower Montauk Branch is located and would be potentially exposed to flooding.
+[p198_c0006] _Figure 2-18 Flood Risks around Newtown Creek_
+> [p198_c0007] A map showing flood risk areas around Newtown Creek in Queens, New York. The map highlights areas of moderate (orange) and high (pink) flood risk. Key landmarks include Hunterspoint Avenue, Queens Blvd, SUNNYSIDE, Long Island Expy, Newtown Creek, GREENPOINT, McCarren Park, and I-278. A north arrow is located in the bottom right corner. The map shows the creek flowing through the neighborhoods, with flood risk areas primarily along its northern side and in the surrounding residential areas.
+[p198_c0008] Source: floodhelpny.org
+[p198_c0009] _2-89_
+
+## Page 199
+
+### [p199_c0001] Lower Montauk Branch Rail Study
+### [p199_c0002] 2.25.2 Lower Montauk Branch Existing Conditions
+[p199_c0003] The Lower Montauk Branch runs adjacent to the north bank of Newtown Creek on the Brooklyn-Queens border for a majority of the Creek's length, and would therefore be vulnerable to sea level rise and storm-related surges and flooding resulting from an overflow of Newtown Creek's waters. The westernmost 2.5 miles of the Branch's 8.5-mile length run alongside the Newtown Creek, as seen in Figure 2-19. Potential stations (moving east from Long Island City) in this section include: (1) the existing terminus at Long Island City, approximately 500 feet from Newtown Creek, (2) Greenpoint Avenue, approximately 250 feet from Newtown Creek, (3) the former station at Penny Bridge, approximately 125 feet from the Newtown Creek, and , to a lesser extent (4) the former station at Haberman , approximately 800 feet from Newtown Creek.
+[p199_c0004] _Figure 2-19 Lower Montauk Branch adjacent to Newtown Creek_
+> [p199_c0005] A map showing the Lower Montauk Branch rail line running along the north bank of Newtown Creek. The map covers the border between Brooklyn and Queens. The East River is to the west. The rail line is marked with four numbered circles: 1. Long Island City, 2. Greenpoint Avenue, 3. Penny Bridge, and 4. Haberman. The map also shows the locations of Long Island City, Greenpoint, Maspeth, and East Williamsburg. A legend in the top right corner lists the four stations. A north arrow is located in the bottom right corner.
+[p199_c0006] The majority of the Lower Montauk Branch east of 49 th Street in Maspeth (see Figure 2-20) is located inland and is not in a flood risk zone.
+[p199_c0007] Studies that have examined the flooding and surge potential of the Newtown Creek, and potential impacts on the Lower Montauk Branch, are discussed below. These studies generally analyze similar conditions and have overlapping goals, with varying positive impacts to the Lower Montauk Branch discussed. The studies' main themes are protecting against storm surges and floodwaters, with an asset like the Lower Montauk Branch to benefit under these protections of these overall areas of Queens and Brooklyn. All of the studies have been commissioned since Hurricane Sandy hit in 2012. There are many agencies involved, from the US Army Corps of Engineers to New York City's Economic Development Corporation and Office of Recovery and Resiliency.
+[p199_c0008] _2-90_
+
+## Page 200
+
+### [p200_c0001] Lower Montauk Branch Rail Study
+[p200_c0002] Figure 2-20 shows the western section of Lower Montauk Branch and its station in the context of the FEMA flood hazard areas. The areas around the Newtown Creek are classified as a Zone AE in a Special Flood Hazard Area. Zone AE areas have a high risk of flooding, with a 1% chance of flooding on an annual basis. Flood elevations here are predicted above mean sea level. Structures built in Zone AE must be constructed above Base Flood Elevation.
+[p200_c0003] _Figure 2-20 Special Flood Hazard Area around Newtown Creek_
+> [p200_c0004] The map illustrates the western section of the Lower Montauk Branch, which is depicted as a red line. A green square indicates the 'Proposed Station' location. The map highlights 'Special Flood Hazard Areas (SFHA)' with blue diagonal hatching, specifically 'Zone AE' areas. These areas are concentrated around the Newtown Creek and extend west of the Kosciusko Bridge and Greenpoint Ave. Bridge. Key landmarks include the Brooklyn-Queens Expressway (Queens Blvd), Van Dam St, and various bridges: Greenpoint Ave. Bridge, Kosciusko Bridge, Penny Bridge, and Haberman Bridge. The map also shows local streets such as Clay St, Greenpoint Ave, Lommer St, and 35th St through 58th St. A legend in the top right corner defines the symbols for the Proposed Station, Lower Montauk Branch, and Zone AE. A north arrow is located in the bottom right corner.
+[p200_c0005] Source: New York City Department of Transportation, Metropolitan Transportation Authority, Long Island Rail Road, FEMA. Background Image: Microsoft Bing Maps, accessed June 2017
+[p200_c0006] The Lower Montauk Branch currently sits in a vulnerable area, as the Newtown Creek is prone to storm surges and flooding during major weather events. As shown in Figure 2-20, the Branch is particularly vulnerable from the areas beneath and west of the Kosciusko Bridge (carrying the Brooklyn-Queens Expressway over the Creek), and particularly to the areas west of the Greenpoint Avenue Bridge. As seen from the devastation caused by Hurricane Sandy, protecting valuable infrastructure against flood and storm surge damage must be planned for in all projects. A reactivation of full-time passenger service would need to consider the vulnerability and resiliency of the following elements of the Lower Montauk Branch:
+- [p200_c0007] • Trains • Rails and tracks • Storage and maintenance facilities • Stations • Other structural elements (e.g., bridges)
+[p200_c0008] In addition to the location adjacent to the Newtown Creek, the Lower Montauk Branch is especially vulnerable due to its low elevation and lack of barrier protections. In some locations, the rail right-of-
+[p200_c0009] _2-91_
+
+## Page 201
+
+### [p201_c0001] Lower Montauk Branch Rail Study
+[p201_c0002] way is as little as 100 feet from the water's edge, and it crosses over the Dutch Kills, a tributary of the Creek.
+### [p201_c0003] 2.25.3 Newtown Creek Storm Surge Barrier Study
+### [p201_c0004] 2.25.3.1 Study Background and Proposals
+[p201_c0005] Hurricane Sandy had immense impacts on New York City when it hit in 2012. Particularly hard hit were coastal areas, including those areas surrounding the Newtown Creek along the Brooklyn-Queens border. Flooding in these areas was substantial, causing damage to public and private infrastructure, residences, and businesses. The main damage came from storm surges from the East River that pushed the waters of the Newtown Creek. With future climate change in mind, New York City established the Office of Recovery and Resiliency and commissioned a report that investigated how storm surge barriers could mitigate the harmful impacts of storm surges on coastal areas. Newtown Creek (along with the Gowanus Canal) was identified as an area on the Brooklyn-Queens waterfront by the New York City Economic Development Corporation that would benefit from strengthened coastal defenses, protected building infrastructure, and more resilient neighborhoods.
+[p201_c0006] The vulnerable neighborhoods in a Newtown Creek storm surge include Greenpoint, East Williamsburg, and Bushwick in Brooklyn; and Long Island City and Maspeth in Queens. These historically industrial neighborhoods have seen an increase in residents, with 2,700 buildings housing 12,400 residents and 1,800 businesses. Long Island City has grown into a commercial and residential hub, with large residential housing developments along the East River.
+[p201_c0007] With storm frequency and sea level rise expected to increase, the Newtown Creek area is in a potential area of danger of flood and water damage due to stronger and more frequent storm surges. These surges were seen in Hurricane Sandy originating at the East River, and inundated the area. In addition to the storm surges, coastal flooding at more recurrent intervals is possible. Updated flood maps show much of the study area in the path of 3-foot waves from storm surges. Predicted heights of floodwaters have increased 1-3 feet. An increase in frequency and intensity of precipitation may cause more flooding by overwhelming sewage and storm drain systems.
+[p201_c0008] Mitigation of these flooding impacts is multifaceted. General coastal protection initiatives in the area include:
+- [p201_c0009] • Increasing coastal edge elevations • Minimizing upland wave zones • Protecting against storm surge • And improving coastal design and governance.
+[p201_c0010] The US Army Corps of Engineers is examining the installation of storm surge barriers along Newtown Creek. The barrier and levee system would be usable and navigable during non-storm times, before being closed during inclement weather activities. Raising individual properties' bulkheads to mitigate flooding impacts is a viable short-term alternative to this storm surge barrier system. Another
+[p201_c0011] _2-92_
+
+## Page 202
+
+### [p202_c0001] Lower Montauk Branch Rail Study
+[p202_c0002] consideration of this project is Newtown Creek's status as a Superfund site. Because of the toxic elements within and still leaching into Newtown Creek, projects affecting the Creek must be coordinated with the Environmental Protection Agency, the New York City Department of Environmental Protection and the New York State Department of Environmental Conservation to ensure water quality and prevent contamination.
+### [p202_c0003] 2.25.3.2 Potential Impacts on the Lower Montauk Branch
+[p202_c0004] Hurricane Sandy had devastating effects on other rail lines that were inundated with floodwater. As seen below in Figure 2-21, the storm's surge height was significant. Much of the existing Long Island City station area and the surrounding yard was at the center of the impact area that experienced 3-6-foot above ground storm inundation. Because of the Lower Montauk Branch's location adjacent to the Newtown Creek (including a Long Island City station in this same area), any storm event would have significant impacts on the rail's right-of-way, infrastructure, and equipment. The rail line is perhaps more vulnerable than some of the residential and commercial areas as identified in the study because of its elevation and proximity to the water. Additionally, much of the associated infrastructure elements are low-lying and have little or no elevation as protection from a storm surge. The Lower Montauk Branch would, therefore, require the storm protections proposed in the Newtown Creek Storm Surge Protection Study, as these coastal barrier systems would protect against storm surges and flooding. A reactivation of passenger service on the Lower Montauk Branch, and continuation of rail freight operations in the flood-prone areas in the western portion of the Branch, both depend on this type of protective actions.
+[p202_c0005] _Figure 2-21 Hurricane Sandy Flood Inundation_
+> [p202_c0006] The map illustrates the flood inundation levels in Long Island City and surrounding areas following Hurricane Sandy. The map uses a color scale to represent inundation in feet above ground level. Three stations are marked with black circles and labeled with arrows: Long Island City Station, Greenpoint Ave. Station, and Penny Bridge Station. The map shows a high concentration of inundation in the western portion of the Lower Montauk Branch, particularly around the stations. The legend indicates four levels of inundation: Less than 3 feet (light blue), 3-6 feet (medium blue), 6-10 feet (dark blue), and More than 10 feet (dark purple). The map also shows the Newtown Creek and surrounding urban areas. Inundation (feet above ground) Less than 3 Light Blue 3-6 Medium Blue 6-10 Dark Blue More than 10 Dark Purple
+[p202_c0007] Source: NYCEDC
+[p202_c0008] _2-93_
+
+## Page 203
+
+### [p203_c0001] Lower Montauk Branch Rail Study
+### [p203_c0002] 2.25.4 New York/New Jersey Harbor & Tributaries Focus Area Feasibility Study
+### [p203_c0003] 2.25.4.1 Study Background and Proposals
+[p203_c0004] This study, undertaken by the US Army Corps of Engineers, is evaluating the coastal storm risk management in rivers and tributaries in the New York and New Jersey area. The examination consists of the areas suffering coastal and tidal area damage from hurricanes and severe weather events, and considers the use of seawalls, dikes, dams, and other structures to mitigate these impacts. Where this study differs is in defining the scope and study area as a comprehensive, broad area, rather than a narrowly defined geography. The geography of this study includes all of New York City, the Hudson River to Troy, NY; the lower Passaic, Hackensack, Rahway, and Raritan Rivers; and the Upper and Lower Bays of New York Harbor, Newark, Jamaica, Raritan, and Sandy Hook Bays; the Kill Van Kull, Arthur Kill, and East River tidal straits; and western Long Island Sound.
+[p203_c0005] These areas will be evaluated for coastal flooding risks and will assess a coastal risk management system as part of a broader water network and large-scale resiliency system.
+### [p203_c0006] 2.25.4.2 Potential Impacts on the Lower Montauk Branch
+[p203_c0007] As part of the One New York Plan, the City is aiming to secure commitment to include the Newtown Creek as a focus area in the study. This would help incorporate Newtown Creek into the larger overall regional plan of coastal management. This would increase efforts to study and install storm surge barriers and protection systems. These systems would help protect the Lower Montauk Branch from the harmful impacts of flood from surges of the nearby Newtown Creek. The Lower Montauk Branch has the potential to be a critical piece of passenger infrastructure, in addition to its key role in regional freight. Therefore, Newtown Creek's inclusion in this federal study would have significant benefits to the rail line.
+### [p203_c0008] 2.25.5 North Atlantic Coast Comprehensive Study
+### [p203_c0009] 2.25.5.1 Study Background and Proposals
+[p203_c0010] This comprehensive study by the US Army Corps of Engineers conducted after Hurricane Sandy outlines a response for resilient living in the dynamic coastal environments comprising the North Atlantic Coast. This includes a multidisciplinary approach to preparedness, resiliency, and floodplain management. The study provides a risk management framework for evaluating the individual and shared needs of vulnerable communities and provides support in developing resiliency plans for coastal communities. This broad study covers a wide range of resiliency and coastal planning issues to adapt better to increasing climate risks. The section dedicated to New York shows the need for extensive risk management planning because of the high populations in vulnerable areas, and the impacts of Hurricane Sandy in devastating these neighborhoods' homes, businesses, and infrastructure.
+[p203_c0011] _2-94_
+
+## Page 204
+
+### [p204_c0001] Lower Montauk Branch Rail Study
+### [p204_c0002] 2.25.5.2 Potential Impacts on the Lower Montauk Branch
+[p204_c0003] The Brooklyn and Queens western waterfront was identified as a “Relative Higher Risk” section within the risk areas of New York and New Jersey. Part of the risk rating reflects the complex mix of land uses and infrastructure and associated issues of dense city development. This area includes a growing mix of commercial and residential zones after a long industrial past. The study identified critical infrastructure in the area, including the Queens-Midtown Tunnel, the Sunnyside Rail Yard, and the Newtown Creek Wastewater Treatment Plant. The Lower Montauk Branch is subject to the same flooding risks as this important infrastructure. The study emphasizes the exposure of such transportation assets as the Sunnyside Rail Yards and its large layover and maintenance yards – the same type of exposure that a reactivated Lower Montauk Branch brings would face.
+### [p204_c0004] 2.25.6 Conclusions
+[p204_c0005] Resiliency is an important consideration when planning projects in the wake of natural events such as Hurricane Sandy, which resulted in loss of life and extensive damage to property and infrastructure, especially rail transit systems. The Lower Montauk Branch is located in a vulnerable area that suffered significant flooding during Hurricane Sandy as a result of storm surges off of Newtown Creek. Reactivation of passenger service would require major investment, which must be considered in the framework of resiliency. The reactivated passenger service would result in both new and substantially upgraded existing infrastructure that would not exist with the current freight-only service.
+[p204_c0006] The potential catastrophe for flooding in rail yards was seen in Hurricane Sandy when New Jersey Transit stored many of its railcars in low-lying yards in Hoboken and the Meadowlands, ruining millions of dollars’ worth of equipment. Revenue equipment on the Lower Montauk Branch would need to be moved out of those low-lying areas during major storm events. A potential and most likely flood storage area is the elevated viaduct on the eastern end of the Branch on Bessemer Street, which would keep potential equipment away from potential floodwaters. In addition to the rolling stock, fixed infrastructure such as signals, maintenance equipment, and stations would need to be hardened to protect against floodwater. Future resiliency plans should address these issues in greater detail. Rebuilding with resilient infrastructure as well as protecting these assets is a major consideration in the planning process. The resiliency proposals outlined in the studies discussed above would provide the type of adaptive protection needed for the Lower Montauk Branch, and particularly the protection against storm surges and flood waters. Therefore, no specific additional investment for coastal flooding protection and its associated costs are assumed in the capital cost estimates for passenger service on the Lower Montauk Branch, given the planning and design processes already underway by New York City and others to protect these same areas along Newtown Creek.
+[p204_c0007] _2-95_
+
+## Page 205
+
+### [p205_c0001] Analysis of Rail Concept
+> [p205_c0002] A photograph of a modern commuter train, specifically a New York City Transit Authority (NYCTA) AEMO train, on a set of tracks. The train is silver and gold with a black top. It is labeled 'UP' on the front and '1005' on the side. The train is positioned on a set of tracks next to a paved area with a yellow line. In the background, there is a chain-link fence, a street lamp, and a city skyline under a clear blue sky.
+> [p205_c0003] The logo for the New York City Department of Transportation (NYC DOT). It features the text 'NEW YORK CITY' above a stylized green 'DOT' logo. The 'D' and 'T' are represented by green circles and a green square, respectively, with white horizontal lines inside them.
+
+## Page 206
+
+### [p206_c0001] Lower Montauk Branch Rail Study
+### [p206_c0002] 3.1 Projected Ridership and Passenger Revenue
+### [p206_c0003] 3.1.1 Overview
+[p206_c0004] This section presents the results of transportation demand modeling, performed to estimate the potential ridership projected to use the re-established passenger rail service on the Lower Montauk Branch in Queens, New York. The modeling procedures are briefly summarized, along with the frequency of service and travel times assumed as the principal drivers of the ridership demand process. The transit service elements of the proposed passenger rail network are presented in greater detail in the Lower Montauk Branch Concept Development Report. The ridership projections were developed utilizing the Regional Transit Forecasting Model (RTFM), developed for the Metropolitan Transportation Authority (MTA) and utilized for ridership projections for many of its transit operations, including New York City Transit (NYCT), the Long Island Rail Road (LIRR), and Metro-North Railroad (MNR). The transportation demand modeling assessed the following operating scenarios:
+- [p206_c0005] 1. Unlimited 24/7 subway-like transit service, with rail infrastructure expanded accordingly to allow for continued freight operations; 2. Joint freight-passenger service with similar subway-like service in the AM and PM peak period, but with service changes in midday and off-peak periods; and no operations between 10 PM-5 AM to provide uninterrupted time-space separation for freight operations during overnight periods; and 3. Joint operations scenario, but with LIRR City Ticket type fare with no free transfers.
+### [p206_c0006] 3.1.2 Proposed Transit Service
+[p206_c0007] As discussed in Section 2, ridership estimates were initially prepared for the three potential service options: 24/7 subway-like transit operations; joint passenger-freight service; and joint commuter-like operations. The recommended service, used as a base for further ridership and revenue, is the joint passenger-freight service.
+### [p206_c0008] 3.1.3 Proposed Stations
+[p206_c0009] The ridership estimates presented below are based on the provision of regular passenger rail service along the Lower Montauk Branch between Long Island City and Jamaica in Queens, assuming joint passenger-freight operations with some limitations on both passenger and freight service. Figure 3-1 shows the proposed station locations along the Lower Montauk Branch.
+[p206_c0010] _3-1_
+
+## Page 207
+
+### [p207_c0001] Lower Montauk Branch Rail Study
+[p207_c0002] _Figure 3-1 Lower Montauk Branch Proposed Stations_
+> [p207_c0003] The map illustrates the Lower Montauk Branch rail line, shown as a dark blue line, stretching from Long Island City in the northwest to Jamaica in the southeast. The line passes through Queens and Brooklyn. Key locations and stations are labeled: Long Island City, Greenpoint Ave, Penny Bridge, Haberman, Grand Ave/Flushing Ave, Fresh Pond, Metro Mall, Glendale, Woodhaven Blvd, 80th Street, Richmond Hill, and Jamaica. A legend in the top right corner defines the symbols: a dark blue line for the Lower Montauk Branch, a white box with a black border for an Existing Station (Long Island City), a white box with a green border for a Potential Station (Greenpoint Ave), a white box with a red border for a Former Station-Will not be Reactivated (Penny Bridge), and a small white circle for a Station Site. The map also shows the surrounding water bodies and landmasses.
+[p207_c0004] The proposed rail operation would have 10 stations along a two-track right-of-way running approximately 9 miles between two existing LIRR stations – Long Island City on the west and Jamaica on the east. Both of these stations have LIRR service as well as connections to subway services – the #7 line at Long Island City and the E, J, and Z and the AirTrain to JFK Airport at Jamaica Station. The LIRR ceased rail passenger service to its five stations between Long Island City and Jamaica in 1998, and the remaining passenger services between Long Island City and Jamaica were ended in 2012.
+[p207_c0005] The Lower Montauk Branch is presently run as a freight-only operation by the New York and Atlantic (NY&A) Railroad, which leases the branch from the LIRR. As discussed in the Concept Development discussion in Section 2, the potential conflicts between freight and passenger operations under joint operations would require substantial investment in new infrastructure to make such operations possible. Some service limitations at various times of the day would also be placed on both passenger and freight operations. The ridership estimates presented in this section assume this type of joint operation.
+### [p207_c0006] 3.1.4 Proposed Service Levels
+[p207_c0007] The ridership and revenue projections presented below are representative of joint freight-passenger service with similar transit type service in the two peaks. The projected headways (time between trains) in both directions by time of day and week are as follows:
+[p207_c0008] _3-2_
+
+## Page 208
+
+### [p208_c0001] Lower Montauk Branch Rail Study
+### [p208_c0002] Weekday
+- [p208_c0003] • Early AM (5:00 AM – 6:00 AM) – 20 minutes • AM Peak (6:00 AM – 10:00 AM) – 6 minutes • Midday (10:00 AM – 4:00 PM) – 15 minutes • PM Peak (4:00 PM – 8:00 PM) – 6 minutes • Evening (7:00 PM – 10:00 PM) – 10 minutes • Late Night (10:00 PM – 5:00:AM) – no service (Freight only)
+### [p208_c0004] Weekend
+- [p208_c0005] • Saturday (5:00 AM - 10:00 PM): 15 minutes • Sunday (5:00 AM - 10:00 PM): 15 minutes
+[p208_c0006] This scenario would represent relatively frequent service for a relatively low-density area. Figure 3-2 shows how the proposed Lower Montauk Branch service headways would compare with subway lines with stations within the Lower Montauk Corridor. Similar services levels on the MTA’s Staten Island Railway are also shown for comparative purposes. The actual service level in terms of the passenger capacity of each train would be much higher on the subway lines, which hold more passengers per car and have 8-to-10-car train sets.
+[p208_c0007] _Figure 3-2 Comparison of Proposed LMB Service Headways vs. Selected Subway Lines (6:00 AM-10:00 PM)_
+> [p208_c0008] Service Weekday Evening PM Peak Midday AM Peak Proposed LMB Service 10 6 15 6 MTA Staten Island RR 30 9 30 9 M Train 10 8 10 9 J/Z Train 10 5 10 5 E Train 7 5 7 5
+[p208_c0009] The proposed Lower Montauk Branch transit service would utilize Diesel Multiple Units (DMU) train sets, which would initially have one self-propelled diesel powered rail car. A DMU train set can have either one or multiple DMU vehicles depending on the level of passenger demand. If higher passenger volumes are achieved, additional vehicles could be added as needed.
+[p208_c0010] Most importantly, the DMU vehicles assumed for this operation would also meet the crashworthiness standards of the Federal Railroad Administration (FRA) for operating on the same or adjacent tracks as freight cars. Using such equipment would avoid (1) the substantial costs of physically separating the
+[p208_c0011] _3-3_
+
+## Page 209
+
+### [p209_c0001] Lower Montauk Branch Rail Study
+[p209_c0002] passenger and freight operations, or (2) the service limitations posed by full temporal separation of the two operations.
+### [p209_c0003] 3.1.5 Projecting Future Ridership and Revenue
+### [p209_c0004] 3.1.5.1 The BPM and RTFM Models
+[p209_c0005] The MTA's RTFM model can project changes in transit ridership (bus, subway, commuter rail, etc.) due to new services or changes to existing operations. The model depends on the Best Practices Model (BPM), a regional travel demand model developed by the New York Region's Metropolitan Planning Organization (MPO), the New York Metropolitan Transportation Council (NYMTC). The BPM model is used by the region's transportation and planning agencies to analyze existing and future levels and patterns of travel. For transit studies such as the Lower Montauk Branch Rail Study:
+- [p209_c0006] • The BPM model provides an estimate of person trips made between 4,629 travel analysis zones (TAZs) within NYMTC's 28 county region (see Figure 3-3) covering portions of New York, New Jersey, and Connecticut. Queens, for example, has 669 TAZs. The organization of these TAZ areas along the proposed Lower Montauk ROW is shown in Figure 3-4. • The RTFM model, which utilizes this same TAZ structure, takes the BPM's estimate of person trips by trip purpose (work, personal business, school, etc.) among the TAZs, and: ○ Projects the mode (auto, bus, subway, etc.) that travelers will use to make these trips, including the mode used to get to and from the stations, and ○ Assigns the trips to specific transit routes (e.g., a subway or commuter rail station, a bus route, etc.)
+[p209_c0007] Both the BPM and RTFM models are calibrated against measured values of existing travel (e.g., highway, bridge and tunnel volumes, subway line ridership, etc.) to ensure the model can accurately estimate travel demand levels and patterns. The RTFM mode split model was calibrated to daily observed trips by mode of travel and only AM Peak Period (6:00 AM – 10:00 AM) ridership is estimated. Ridership in the other times of the day and week are based on measured ratios of AM Peak ridership to ridership in other travel periods. This process results in estimates of total ridership throughout the day and on weekends as well as overall annual volumes. The RTFM model results can also be used to define where riders on the proposed Lower Montauk service would be traveling to or from (i.e., how many departing travels are destined to areas within Queens, Brooklyn, Midtown, etc., and vice versa). Further details regarding the RTFM and related aspects of the ridership analyses are included in Appendix I.
+[p209_c0008] _3-4_
+
+## Page 210
+
+### [p210_c0001] Lower Montauk Branch Rail Study
+[p210_c0002] _Figure 3-3 The BPM, RTFM Study Area_
+> [p210_c0003] The map displays the Lower Montauk Branch Rail Study Area, which includes parts of several New York State counties. The counties are color-coded and numbered as follows: 11 (Orange) and 12 (Dutchess) are green; 13 (Fairfield) and 27 (New Haven) are orange; and the remaining counties (1-10, 14-20, 21-28) are purple. The map shows the geographic distribution of these counties, with Orange and Dutchess in the north, Fairfield and New Haven to the east, and the others covering the rest of the region. BPM Study Area 1. Manhattan 11. Orange 21. Middlesex 2. Queens 12. Dutchess 22. Monmouth 3. Bronx 13. Fairfield 23. Ocean 4. Brooklyn 14. Bergen 24. Hunterdon 5. Staten Island 15. Passaic 25. Warren 6. Nassau 16. Hudson 26. Sussex 7. Suffolk 17. Essex 27. New Haven 8. Westchester 18. Union 28. Mercer 9. Rockland 19. Morris 10. Putnam 20. Somerset
+[p210_c0004] _3-5_
+
+## Page 211
+
+### [p211_c0001] Lower Montauk Branch Rail Study
+[p211_c0002] _Figure 3-4 Structure of Travel Analysis Zones near Proposed Lower Montauk Alignment_
+> [p211_c0003] The map displays a grid of Travel Analysis Zones (TAZ) with various numbers. A red line represents the proposed Lower Montauk Branch alignment, which traverses several zones. Two specific areas are highlighted with yellow boxes: 'Long Island City' in the upper left and 'Jamaica Station' in the upper right. A legend at the bottom left identifies the grey-shaded areas as 'Travel Analysis Zones (TAZ)' and the red line as 'TAZs which Lower Montauk Branch Passes'. A scale bar indicates a distance of 1 mile, and a north arrow points upwards.
+### [p211_c0004] 3.1.5.2 Projected Future Ridership
+[p211_c0005] Figure 3-5 presents the projected ridership on the proposed Lower Montauk transit service in 2025 by station, while Table 3-1 presents projected totals for the AM Peak (6:00 AM – 10:00 AM), total weekday, weekend, and annual ridership. The year 2025 was chosen as a reasonable planning horizon year of the proposed service.
+[p211_c0006] _3-6_
+
+## Page 212
+
+### [p212_c0001] Lower Montauk Branch Rail Study
+[p212_c0002] _Figure 3-5 Projected Weekday Ridership on Lower Montauk Branch by Station (2025)_
+> [p212_c0003] Projected Daily Ridership (2025) Station Ridership Jamaica 2,100 Richmond Hill 5,200 Woodhaven Blvd 800 80 St 3,400 Metro Mall 3,700 Fresh Pond 1,800 Grand Av/Flushing Av 900 Haberman 200 Greenpoint Av 700 Long Island City 2,000
+[p212_c0004] _Table 3-1 AM Peak, Daily, Weekend, and Annual Ridership: Lower Montauk Branch (2025)_
+[p212_c0005]
+
+```text
+Weekday Weekend [2] Annual [3] AM Peak Daily [1] (Sat + Sun) Total Long Island City 830 2,040 1,300 569,200 Greenpoint Avenue 280 690 400 192,500 Haberman 60 150 100 41,900 Grand Ave/Flushing Ave 370 910 600 253,900 Fresh Pond 750 1,840 1,100 513,400 Metro Mall 1,520 3,730 2,300 1,040,700 80th Street 1,370 3,360 2,100 937,400 Woodhaven Boulevard 330 810 500 226,000 Richmond Hill 2,140 5,250 3,300 1,464,800 Jamaica 840 2,060 1,300 574,700 Total Lower Montauk 8,490 20,840 13,000 5,814,500
+```
+[p212_c0006] [1] AM Peak to Daily Ridership factor of 2.45 based on model time of day factors from subway counts
+[p212_c0007] [2] Weekday to Weekend Factor of 0/62 from Fare Revenue Data
+[p212_c0008] [3] Weekday to annual factor of 279 from Fare Revenue Data
+[p212_c0009] The annual ridership of approximately 5.8 million passengers represents a preliminary estimate of travelers' response to the relatively robust subway-style service for most of the day. As discussed in
+[p212_c0010] _3-7_
+
+## Page 213
+
+### [p213_c0001] Lower Montauk Branch Rail Study
+[p213_c0002] Section 1, most of the neighborhoods along the Lower Montauk Branch have limited access to rail transit. However, there are good connections to subway and commuter rail service at the Branch's western and eastern termini. A convenient connection could be constructed between the proposed Richmond Hill station and the existing 121 st Street station served by the J/Z lines. Modeled ridership shows that a good portion of the Richmond Hill boardings are transfers from J/Z lines. While Woodhaven Blvd. has many retail jobs and bus transfer opportunities, limited connecting transit access to/from the station is likely affecting ridership at that station. A somewhat less convenient subway connection could possibly be made in the mid-branch area near the Fresh Pond Yard. Two M train stations are located approximately ¼ mile (4-5 minutes) to the north (Middle Village Station) and south (Fresh Pond Station), as shown in Figure 3-6. The connection would likely be made to the existing Middle Village Station, as it would avoid crossing the rail corridor and also better connect the Lower Montauk station with the Metro Mall, a major trip generator.
+[p213_c0003] It is likely that a new east-west rail service within the Glendale-Middle Village neighborhoods in central Queens would attract some riders from the surrounding neighborhoods, including some users of the existing M train stations. For example, travelers headed to Midtown Manhattan, especially East Midtown, could take the Lower Montauk service to Long Island City and transfer to the very frequent westbound 7 Subway Line to Manhattan. Table 3-2 shows the AM Peak-Period difference in ridership with (Build) and without the Lower Montauk Branch (No Build). Lower Montauk Branch service mainly attracts bus and other subway riders. Overall system-wide reduction in ridership suggests that the Lower Montauk Branch is reducing the amount of transferring by providing a more direct/better service for some trips.
+[p213_c0004] _Table 3-2 AM Peak-Period Difference in Ridership – Build vs. No Build_
+[p213_c0005]
+
+```text
+Mode AM Peak Difference Ferry -135 Commuter Rail 1,006 Subway (without Lower Montauk Branch) -5,375 Bus -9,178 Lower Montauk Branch 8,496 Total -5,186
+```
+[p213_c0006] Table 3-3 shows the current ridership at existing subway stations near the proposed Lower Montauk Branch stations:
+[p213_c0007] _3-8_
+
+## Page 214
+
+### [p214_c0001] Lower Montauk Branch Rail Study
+[p214_c0002] _Table 3-3 Annual Ridership at Subway Stations near Proposed Montauk Branch Stations_
+[p214_c0003]
+
+```text
+Subway Lines Annual Ridership 2012-16 Growth 2012 2016 2025 Metro Mall Station (Proposed LMB) 1,303,000 Middle Village M 1,190,000 1,365,000 14.7% Fresh Pond M 1,590,000 1,831,000 15.2% Forest Ave. M 1,135,000 1,316,000 15.9% Richmond Hill Station (Proposed LMB) 1,837,000 121st Street J/Z 664,000 794,000 19.6% Long Island City Station (Proposed LMB) 713,900 Hunters Point #7 1,704,000 1,994,000 17.0% Vernon-Jackson #7 3,357,000 4,877,000 45.3% NYCT Subway System 1,654,582,000 1,756,815,000 6.2%
+```
+[p214_c0004] _Figure 3-6 Existing Subway Stations near Proposed Lower Montauk Metro Mall Station_
+> [p214_c0005] The map illustrates the Lower Montauk Branch rail line and its proximity to existing subway stations. The proposed Metro Mall station is highlighted with a yellow circle. Existing M Train stations are marked with blue squares containing an 'M'. The map includes street names such as Fresh Pond Rd, Metropolitan Ave, and various 7th and 8th streets. Landmarks like All Faiths Cemetery and Ridgewood are also shown. A legend at the bottom left identifies the symbols for existing and potential stations. A north arrow and a scale bar indicating approximately 1,000 feet are located at the bottom right.
+[p214_c0006] _3-9_
+
+## Page 215
+
+### [p215_c0001] Lower Montauk Branch Rail Study
+[p215_c0002] The data in Table 3-3 show that 2025 ridership at some of the Lower Montauk station would be in the same range as some of the existing subway stations along the same corridor.
+### [p215_c0003] 3.1.5.3 Projected Passenger Revenue
+[p215_c0004] The ridership analyses assumed that the proposed Lower Montauk service would operate like an MTA NYCT rail transit operation, with the same $2.75 regular fare and free transfer to and from MTA subway and bus lines. The organization(s) that would develop, operate, and set fares for this service have not been determined. If the Lower Montauk service riders were charged Commuter Rail fares, the ridership would be significantly lower (about 40%) compared to subway fare operation. However, given the subway-type of service being considered, it is reasonable to assume this fare level (in current dollars) and transfer policy.
+[p215_c0005] The projected Lower Montauk Branch riders would otherwise be walking, driving, taking one or more buses to connect to an existing subway line, or taking an express bus service, depending on the trip. The net fare revenue realized by their switching to this new service would depend on many factors. If all projected passengers paid full fares with no discounts (weekly/monthly cards, senior or student fares), loss of revenue from riders shifting from existing subway lines and other transfers, the total annual revenue would be approximately $20 million ($2016). It was conservatively assumed that the type of revenue reducing factors noted above would result in net passenger revenues of approximately $15 million.
+### [p215_c0006] 3.1.6 Impact of Ridership on Required Train Capacity
+[p215_c0007] The projected service to be initially provided on the Lower Montauk Branch would use single-car train sets – one DMU vehicle with a capacity of approximately 90 passengers (80 seats plus an additional 10 standees). The exact capacity would depend on how the vehicle's interior was configured, including such factors as the provision of storage areas for bicycles (which would reduce seats). As ridership increases, additional cars could be added to the fleet to meet needs in peak periods.
+[p215_c0008] Figure 3-7 shows the average passenger load on train as it departs from a station, based on the projected ridership and the estimated train car capacity of 90 passengers. Passenger loads are based on how many passengers got on and off the train at a given station (on/off volumes are projected as part of the RTFM ridership analyses). For example, 21 passengers get on the average train preparing to depart from Jamaica Station, and none get off. As the train heads west, more people get on than off and its occupancy grows, until eventually all remaining passengers get off at Long Island City.
+[p215_c0009] These figures represent average loads during the 4-hour AM peak period. Passenger volumes would be considerably higher in the peak hour within that 4-hour period (e.g., 7:45 – 8:45). If these ridership levels were realized, 2-car consists would be required in the two weekday peak periods (AM and PM) and possibly during other periods of the day and week. This would increase the required capital costs for rolling stock as well as costs to operate and maintain the fleet.
+[p215_c0010] _3-10_
+
+## Page 216
+
+### [p216_c0001] Lower Montauk Branch Rail Study
+[p216_c0002] _Figure 3-7 Average Passenger Load by Station: AM Peak Period_
+> [p216_c0003] Station Average Passenger Load Long Island City 0 Greenpoint Ave 75 Haberman 95 Grand Ave/ Flushing Ave 110 Fresh Pond 114 Metro Mall 115 80th Street 102 Woodhaven Blvd 82 Richmond Hill 74 Jamaica 21
+[p216_c0004] _3-11_
+
+## Page 217
+
+### [p217_c0001] Lower Montauk Branch Rail Study
+### [p217_c0002] 3.2 Projected Operations and Maintenance Costs of Rail Passenger Operations
+### [p217_c0003] 3.2.1 Operating Plan
+[p217_c0004] The estimated operations and maintenance (O&M) plan is based in the creation of regular subway-like passenger rail service along the Lower Montauk Branch between Long Island City and Jamaica in Queens, with lower service frequencies in off-peak periods and no late night service (10:00 PM – 5:00 AM) on weekdays and weekends. The projected trains per hour by time of day and week are shown in Table 3-4.
+[p217_c0005] _Table 3-4 Proposed Concept for Rail Passenger Service under Joint Freight /Passenger Operation_
+[p217_c0006]
+
+```text
+Day of the Week Weekdays Saturday and Sunday Time of Day 5:00 AM 6:00 AM 6:00 AM 10:00 AM 10:00 AM 4:00 PM 4:00 PM 8:00 PM 8:00 PM 10:00 PM 10:00 PM 5:00 AM 5:00 AM 10:00 PM 10:00 PM 5:00 AM Trains per Hour 3 10 4 10 6 No Service 4 No Service
+```
+### [p217_c0007] 3.2.2 Calculating Estimated O&M Costs
+[p217_c0008] The three main cost drivers are vehicle hours, which include operator and operations-related costs; car miles, consisting of maintenance cost and wages; and directional route miles, costs not pertaining to non-maintenance.
+[p217_c0009] Table 3-5 indicates the distance between stations, the cumulative one-way travel time between Long Island City and Jamaica, and the time between stations in minutes. This data shows:
+- [p217_c0010] • An average station spacing of approximately one mile (from 0.5 miles between Fresh Pond to Metro Mall to 1.5 miles between Woodhaven Boulevard and the Richmond Hill stations) • An overall running time between the two end terminals of just under 27 minutes • From 2.0-4.1-minute travel times between stations (including an average dwell time – the time from arrival to departure– of approximately 45 seconds)
+[p217_c0011] _3-12_
+
+## Page 218
+
+### [p218_c0001] Lower Montauk Branch Rail Study
+[p218_c0002] _Table 3-5 Distance and Travel Time Between Proposed Stations_
+[p218_c0003]
+
+```text
+Stations Approximate Distance Between Stations Arrival Time (Min. from Departure) Travel Time Between Stations Long Island City Greenpoint Ave. 1.20 2.8 2.8 Haberman 1.20 6.3 3.5 Grand Ave./Flushing Ave. 0.70 8.7 2.4 Fresh Pond/Metro. Ave. 0.80 11.4 2.7 Metro Mall 0.50 13.4 2.0 80th Street 1.20 16.9 3.5 Woodhaven Blvd. 0.60 19.1 2.2 Richmond Hill 1.50 23.2 4.1 Jamaica 1.30 26.8 3.6
+```
+[p218_c0004] Source: Concept Operating Plan memo
+[p218_c0005] The initial O&M cost estimates assume that one-car Diesel Multiple Units (DMU) would be operating along the branch, with a passenger capacity of approximately 90-100 passengers (seating + standees). DMU trains run on diesel power, but do not use a traditional locomotive to pull or push the trainset. Each railcar is self-propelled, allowing train consists to be expanded as needed to accommodate any additional passenger demand. DMUs are often quieter than diesel locomotives and do not require electric infrastructure such as overhead catenaries or a third rail. DMUs can operate as either more traditional “heavy” rail (e.g., regional rail) trainsets, or as “light” rail trainsets that are able to be used along a variety of running way types (e.g. dedicated or shared rights-of-way). Presently none of the lighter DMU vehicle fleet options meet the FRA’s crashworthiness standards, and the proposed operation is assumed to utilize the heavier, FRA-compliant DMU train sets.
+### [p218_c0006] 3.2.2.1 O&M Cost Drivers
+[p218_c0007] Planning-level estimates of O&M costs for transit operations are based on two key elements:
+- [p218_c0008] • Planned service profile: primarily the type of operation (rail transit), the size/length of the network involved (a primarily two-track alignment running roughly 9 miles), the fleet involved (DMU train sets) and the frequency of service throughout weekdays and weekends/holidays (see Section 2.1). • Peer O&M cost data: Costs of similar transit systems that can be used to derive unit O&M costs that can be applied to projected cost drivers to project preliminary O&M costs estimates.
+[p218_c0009] The USDOT, Federal Transit Administration (FTA) National Transit Database (NTD) incorporates financial, system, and operational data provided by transit operations nationwide. Statistics can be extracted from
+[p218_c0010] _3-13_
+
+## Page 219
+
+### [p219_c0001] Lower Montauk Branch Rail Study
+[p219_c0002] this database for specific types of operations, in particular settings and areas of the country. Based on analyses of O&M costs using these types of data, cost drivers have been derived that can be used to provide reasonable planning estimates of O&M costs based on the proposed network and its service plan:
+- [p219_c0003] • Annual Train Hours: based on average vehicle speed, headway, and duration of service on weekdays, Saturdays, and Sundays. • Car Miles: based on multiplying the projected train hours by the assumed average speed, then multiplying by the number of cars in the train consist. The assumed average speed for the service was 15 miles per hour. • Directional Route Miles: The sum of the eastbound and westbound terminal to terminal distance or 17 miles (double the approximately 8.5 miles between the Long Island City and Jamaica stations).
+[p219_c0004] Table 3-6 and Table 3-7 summarize the derivation of annual values for train hours and car miles. The sequence of steps included:
+- [p219_c0005] • Derive average speed: from cycle time in Table 2 and line length • Derive required trains: for weekdays by time of day, Saturdays, and Sundays: based on cycle time, headway (rounding up to whole numbers) • Derive train hours: for weekdays by time of day, Saturdays, and Sundays: based on hours by time period and required trains • Derive car miles: for weekdays by time of day, Saturdays, and Sundays, based on train hours, average speed, and average consist size
+[p219_c0006] Annualized values assumed 255 weekday, 52 Saturday, and 58 Sunday schedules per year.
+[p219_c0007] _3-14_
+
+## Page 220
+
+### [p220_c0001] Lower Montauk Branch Rail Study
+[p220_c0002] _Table 3-6 One-Car Train Weekday, Saturday, Sunday Cost Drivers_
+[p220_c0003]
+
+```text
+Train Hours 53,220 Car Miles 798,300 Directional Route Miles 17
+```
+### [p220_c0004] Average Speed:
+[p220_c0005]
+
+```text
+Measure Value Unit Cycle Time 1.13 hours Cycle Miles 17.00 miles Average MPH 15.00 MPH
+```
+### [p220_c0006] Required Trains: Weekday
+[p220_c0007]
+
+```text
+Measure Early AM AM Peak Mid-Day PM Peak Evening Overnight Unit Cycle Time 1.13 1.13 1.13 1.13 1.13 1.13 hours Headway 0.33 0.10 0.25 0.10 0.17 NA Hours Required Trains 4.00 12.00 5.00 12.00 7.00 - trains
+```
+### [p220_c0008] Required Trains: Saturday
+[p220_c0009]
+
+```text
+Measure Base Overnight Unit Cycle Time 1.13 1.13 hours Headway 0.17 0.33 Hours Required Trains 7.00 4.00 trains
+```
+### [p220_c0010] Required Trains: Sunday
+[p220_c0011]
+
+```text
+Measure Base Overnight Unit Cycle Time 1.13 1.13 hours Headway 0.17 0.33 Hours Required Trains 7.00 4.00 trains
+```
+### [p220_c0012] Train Hours: Weekday
+[p220_c0013]
+
+```text
+Measure Early AM AM Peak Mid-Day PM Peak Evening Overnight Total Unit Hours 1.00 4.00 6.00 4.00 2.00 7.00 hours Required Train 4.00 12.00 5.00 12.00 7.00 - trains Daily Train Hours 4.00 48.00 30.00 48.00 14.00 - 144.00 train hours Annual Train Hours x 255 36,720.00 train hours
+```
+### [p220_c0014] Train Hours: Saturday
+[p220_c0015]
+
+```text
+Measure Base Overnight Total Unit Hours 18.00 6.00 hours Required Train 7.00 4.00 trains Daily Train Hours 126.00 24.00 150.00 train hours Annual Train Hours x 52 7,800.00 train hours
+```
+### [p220_c0016] Train Hours: Sunday
+[p220_c0017]
+
+```text
+Measure Base Overnight Total Unit Hours 18.00 6.00 hours Required Train 7.00 4.00 trains Daily Train Hours 126.00 24.00 150.00 train hours Annual Train Hours x 56 8,700.00 train hours
+```
+### [p220_c0018] Car Miles: Weekday
+[p220_c0019]
+
+```text
+Measure Early AM AM Peak Mid-Day PM Peak Evening Overnight Total Unit Train hours 4.00 48.00 30.00 48.00 14.00 - 144 hours Average MPH 15.00 15.00 15.00 15.00 15.00 15.00 MPH Daily train miles 60.00 720.00 450.00 720.00 210.00 - 2,160 miles Average Consist 1.00 1.00 1.00 1.00 1.00 1.00 miles Daily Car Miles 60.00 720.00 450.00 720.00 210.00 - 2,160 miles Annual Car Miles x 255 550,800 miles
+```
+### [p220_c0020] Car Miles: Saturday
+[p220_c0021]
+
+```text
+Measure Base Overnight Total Unit Train hours 126.00 24.00 150.00 hours Average MPH 15.00 15.00 MPH Daily train miles 1,890.00 360.00 2,250.00 miles Average Consist 1.00 1.00 miles Daily Car Miles 1,890.00 360.00 2,250.00 miles Annual Car Miles x 52 117,000.00 miles
+```
+### [p220_c0022] Car Miles: Sunday
+[p220_c0023]
+
+```text
+Measure Base Overnight Total Unit Train hours 126.00 24.00 150.00 train hours Average MPH 15.00 15.00 MPH Daily train miles 1,890.00 360.00 2,250.00 miles Average Consist 1.00 1.00 miles Daily Car Miles 1,890.00 360.00 2,250.00 miles Annual Car Miles x 56 130,500.00 miles
+```
+[p220_c0024] _3-15_
+
+## Page 221
+
+### [p221_c0001] Lower Montauk Branch Rail Study
+[p221_c0002] _Table 3-7 Variable Length Train Weekday, Saturday, Sunday Cost Drivers_
+[p221_c0003]
+
+```text
+Train Hours 53,220 Car Miles 1,211,400 Directional Route Miles 17
+```
+### [p221_c0004] Average Speed:
+[p221_c0005]
+
+```text
+Measure Value Unit Cycle Time 1.13 hours Cycle Miles 17.00 miles Average MPH 15.00 MPH
+```
+### [p221_c0006] Required Trains: Weekday
+[p221_c0007]
+
+```text
+Measure Early AM AM Peak Mid-Day PM Peak Evening Overnight Unit Cycle Time 1.13 1.13 1.13 1.13 1.13 1.13 hours Headway 0.33 0.10 0.25 0.10 0.17 NA Hours Required Trains 4.00 12.00 6.00 12.00 7.00 - trains
+```
+### [p221_c0008] Required Trains: Saturday
+[p221_c0009]
+
+```text
+Measure Base Overnight Unit Cycle Time 1.13 1.13 hours Headway 0.17 0.33 Hours Required Trains 7.00 4.00 trains
+```
+### [p221_c0010] Required Trains: Sunday
+[p221_c0011]
+
+```text
+Measure Base Overnight Unit Cycle Time 1.13 1.13 hours Headway 0.17 0.33 Hours Required Trains 7.00 4.00 trains
+```
+### [p221_c0012] Train Hours: Weekday
+[p221_c0013]
+
+```text
+Measure Early AM AM Peak Mid-Day PM Peak Evening Overnight Total Unit Hours 1.00 4.00 6.00 4.00 2.00 7.00 hours Required Train 4.00 12.00 6.00 12.00 7.00 - trains Daily Train Hours 4.00 48.00 30.00 48.00 14.00 - 144.00 train hours Annual Train Hours x 255 36,720.00 train hours
+```
+### [p221_c0014] Train Hours: Saturday
+[p221_c0015]
+
+```text
+Measure Base Overnight Total Unit Hours 18.00 6.00 hours Required Train 7.00 4.00 trains Daily Train Hours 126.00 24.00 150.00 train hours Annual Train Hours x 52 7,600.00 train hours
+```
+### [p221_c0016] Train Hours: Sunday
+[p221_c0017]
+
+```text
+Measure Base Overnight Total Unit Hours 18.00 6.00 hours Required Train 7.00 4.00 trains Daily Train Hours 126.00 24.00 150.00 train hours Annual Train Hours x 58 8,700.00 train hours
+```
+### [p221_c0018] Car Miles: Weekday
+[p221_c0019]
+
+```text
+Measure Early AM AM Peak Mid-Day PM Peak Evening Overnight Total Units Train hours 4.00 48.00 30.00 48.00 14.00 - 144 train hours Average MPH 15.00 15.00 15.00 15.00 15.00 15.00 MPH Daily train miles 60.00 720.00 450.00 720.00 210.00 - 2,160 miles Average Consist 1.00 2.00 1.17 2.00 1.50 - miles Daily Car Miles 60.00 1,440.00 525.00 1,440.00 315.00 - 3,780 miles Annual Car Miles x 255 953,900 miles
+```
+### [p221_c0020] Car Miles: Saturday
+[p221_c0021]
+
+```text
+Measure Base Overnight Total Unit Train hours 126.00 24.00 150.00 hours Average MPH 15.00 15.00 MPH Daily train miles 1,890.00 360.00 2,250.00 miles Average Consist 1.00 1.00 miles Daily Car Miles 1,890.00 360.00 2,250.00 miles Annual Car Miles x 52 117,000.00 miles
+```
+### [p221_c0022] Car Miles: Sunday
+[p221_c0023]
+
+```text
+Measure Base Overnight Total Unit Train hours 126.00 24.00 150.00 hours Average MPH 15.00 15.00 MPH Daily train miles 1,890.00 360.00 2,250.00 miles Average Consist 1.00 1.00 miles Daily Car Miles 1,890.00 360.00 2,250.00 miles Annual Car Miles x 58 130,500.00 miles
+```
+[p221_c0024] _3-16_
+
+## Page 222
+
+### [p222_c0001] Lower Montauk Branch Rail Study
+### [p222_c0002] 3.2.2.2 O&M Unit Costs
+[p222_c0003] O&M unit costs for the proposed Lower Montauk Branch service were derived by applying NTD cost data from peer agencies with similar DMU-based transit service. These peer agencies and associated passenger rail services are:
+- [p222_c0004] • Tri-County Metropolitan Transportation District of Oregon (TriMet) Westside Express Service Commuter Rail (WES) • New Jersey Transit River LINE • Capital Metropolitan Transportation Authority (Cap Metro) MetroRail • North County Transit District (NCTD) Sprinter
+[p222_c0005] Reported O&M costs for these agencies were allocated to one of the three “cost bucket” cost drivers identified previously and associated with either the quantity of service delivered (train hours, car miles) or physical characteristics/length of the branch:
+- [p222_c0006] • Train hours: drive vehicle operations costs, including operator and other operations-related wages, salary, and fringe. • Car miles: drive primarily vehicle maintenance costs, including maintenance-related wages, salary, fringes, services, materials and supplies. Fuel and traction power expenses are also allocated to car miles. • Directional route miles: drive non-vehicle maintenance costs, including non-vehicle maintenance-related wages, salaries, fringes, materials, and supplies.
+[p222_c0007] General Administrative costs were allocated based on the relative size of vehicle operations, vehicle maintenance, and non-vehicle maintenance costs.
+[p222_c0008] To account for local wages, labor, and fringe costs for these peer services were adjusted to reflect local labor costs in New York City. Peer agency wages, salaries, and fringes were factored by the ratio of bus operator wages/revenue hour for MTA Bus versus bus operator wages/revenue hour for representative bus systems in the four peer agency cities noted above. (MTA Bus operations were assumed, due to the single line/one operator per vehicle similarities with the proposed Lower Montauk operations.) Comparable rail operator wages were not available for all of the peers. All costs are expressed in current 2016 dollars.
+[p222_c0009] Table 3-8 summarizes the wage-adjustment factors applied to the O&M costs for the peer services.
+[p222_c0010] _3-17_
+
+## Page 223
+
+### [p223_c0001] Lower Montauk Branch Rail Study
+[p223_c0002] _Table 3-8 Wage Adjustment Factors_
+[p223_c0003]
+
+```text
+Locale – Service Vehicle Operators' Salaries/ Wages (millions) Vehicle revenue Hours (millions) Average Hourly Wage Wage- Adjustment Factor New York - MTA Bus $151.13 3.16 $47.85 1.00 Portland - TriMet Bus $57.80 1.75 $32.98 1.45 New Jersey - NJT Bus $172.72 5.12 $33.70 1.42 Austin - Cap Metro MetroBus $17.79 0.67 $26.58 1.80 Oceanside - NCTD BREEZE Bus $10.37 0.35 $29.22 1.64
+```
+### [p223_c0004] 3.2.2.3 Cost per Train Hour
+[p223_c0005] Table 3-9 summarizes the total O&M costs (adjusted to the prevailing wages for New York City) related to train hours, train hours provided, and average O&M cost per train hour for the peer agencies.
+[p223_c0006] _Table 3-9 Operating Costs Per Train Hour (with New York City Area Wage Adjustment)_
+[p223_c0007]
+
+```text
+Agency Train Hours O&M Costs (millions) Train Hours O&M Cost per Train Hour TriMet $3.80 5,409 $702 NJ Transit $37.65 41,237 $913 Cap Metro $5.58 11,976 $466 NCTD $10.96 23,542 $466 Average $637
+```
+### [p223_c0008] 3.2.2.4 Cost per Car Mile
+[p223_c0009] Table 3-10 summarizes the total O&M costs (adjusted to the prevailing wages for New York City) related to car miles, car miles provided, and average O&M cost per car mile for the peer agencies.
+[p223_c0010] _3-18_
+
+## Page 224
+
+### [p224_c0001] Lower Montauk Branch Rail Study
+[p224_c0002] _Table 3-10 Cost Per Car Mile (with New York City Area Wage Adjustment)_
+[p224_c0003]
+
+```text
+Agency Car Miles O&M Costs (millions) Car Miles O&M Cost per Car Mile TriMet $3.96 162,199 $24.41 NJ Transit $10.31 1,299,746 $7.93 Cap Metro $5.52 287,997 19.18 NCTD $8.02 687,068 $11.68 Average $15.80
+```
+### [p224_c0004] 3.2.2.5 Cost per Directional Route Mile
+[p224_c0005] Table 3-11 summarizes the total O&M costs (adjusted to the prevailing wages for New York City) related to directional route miles, system directional route miles, and average O&M cost per directional route mile for the peer agencies.
+[p224_c0006] _Table 3-11 Costs Per Directional Route Mile (with New York City Area Wage Adjustment)_
+[p224_c0007]
+
+```text
+Agency Directional Route Miles O&M Costs (millions) Directional Route Miles O&M Cost per Directional Route Mile TriMet $1.03 29 $35,452 NJ Transit $3.95 70 $56,402 Cap Metro $12.70 64 $198,440 NCTD $3.15 44 $71,568 Average $90,466
+```
+[p224_c0008] There are significant differences in the unit costs by cost driver among the four peers. Because these are all purchased transportation operations with contractors resistant to sharing proprietary information, there is no way to investigate the cause of the differences.
+### [p224_c0009] 3.2.2.6 Total Projected O&M Costs of Lower Montauk Branch Service
+[p224_c0010] Table 3-12 summarizes the projected annual O&M cost in 2016 dollars for the Lower Montauk Branch service with two train length assumptions, using the cost drivers derived previously. O&M costs are projected using the NTD-reported experience of each of the four hybrid rail peers, with wages adjusted to New York City. These figures show projected costs for the average of the four peers, and the high value, which is based on the experience of TriMet in Portland, OR, once again with wages adjusted for
+[p224_c0011] _3-19_
+
+## Page 225
+
+### [p225_c0001] Lower Montauk Branch Rail Study
+[p225_c0002] New York City. Costs are also broken out using one-car train assumptions for all operating periods and variable-consist trains reflecting the projected need for 2-car trains during the peak period and portions of other time periods.
+[p225_c0003] _Table 3-12 Summary of Projected O&M Costs for Average of Peers and Highest of Peers (Millions of 2016$)_
+[p225_c0004]
+
+```text
+Cost Driver Annual Operating Cost Average of Peers Highest of Peers ONE-CAR TRAINS Vehicle Hours $ 33.9 $ 37.4 Car Miles $ 12.6 $ 19.5 Directional Route Miles $ 1.5 $ 0.6 Total $ 48.0 $ 57.5
+```
+[p225_c0005]
+
+```text
+VARIABLE-CONSIST TRAINS Vehicle Hours $ 33.9 $ 37.4 Car Miles $ 19.1 $ 29.6 Directional Route Miles $ 1.5 $ 0.6 Total $ 54.6 $ 67.5
+```
+[p225_c0006] The ridership projections by station presented earlier in this section showed that periods of peak ridership would likely need two-car consists to handle the number of passengers per train. Given this fact, the variable-consist estimate using the Average of Peers cost rate has been used to project annual O&M costs of $54.6 million for the proposed transit operations under the joint passenger-freight scenario.
+[p225_c0007] _3-20_
+
+## Page 226
+
+### [p226_c0001] Lower Montauk Branch Rail Study
+### [p226_c0002] 3.3 Projected Capital Costs of Joint Passenger-Freight Operations
+### [p226_c0003] 3.3.1 Introduction
+[p226_c0004] The elements of the proposed passenger rail network are summarized below. The capital cost estimate was developed utilizing a capital cost estimation model developed for the MTA LIRR to prepare concept planning level capital cost estimates for planning studies or during initial project development phases for the Rail Road.
+[p226_c0005] Infrastructure costs initially begin with costs necessary to bring the tracks and corridor up to a level of serviceability in order to sustain safe, efficient passenger service. These include track upgrades, introduction of a modern signal system, and the construction of stations, to name a few. Secondly, based on discussions with the New York and Atlantic Railway (NY&A), a reasonable set of high-level assumptions have been made on the type and scale of improvements that would be needed to allow freight operations to continue and have some ability to grow along with joint passenger operations.
+### [p226_c0006] 3.3.2 Capital Plan
+[p226_c0007] The estimated capital costs are based on the creation of regular subway-like passenger rail service along the Lower Montauk Branch between Long Island City and Jamaica in Queens.
+### [p226_c0008] 3.3.3 Calculating the Capital Costs
+[p226_c0009] Capital cost estimates have been calculated using a planning-level capital cost model developed for the LIRR to provide capital cost projections for projects at a high level of planning.
+### [p226_c0010] 3.3.4 Capital Cost Model
+[p226_c0011] In situations like the Lower Montauk Branch Rail Study, projects have broadly defined scopes, a sketch level design of project elements and overall concept, but with sufficient project inputs (e.g., number and type of station, feet of new track, etc.) that are needed to use this model to develop a cost estimate. Cost estimates are estimated in “Base Year Dollars” (in this instance, 2016) and escalated to a future design or opening day level as needed.
+[p226_c0012] The model is based on the Federal Transit Administration (FTA) Microsoft Excel Standard Cost Category (SCC) Workbook format for New Starts Capital Projects (Revision 17, June 2015), modified for the “top-down” parametric estimating approach. The cost estimate process follows the FTA SCC Work Breakdown Structure (WBS) Line Items to determine total project cost in 2016 dollars. The FTA SCC is a spreadsheet format of summing costs up to a total, broken down by construction categories, a subtotal of construction costs, programmatic costs (such as engineering, etc.) and contingencies. It is a standard tool used in all major capital investment projects for which a federal grant is sought. For this estimating effort, the FTA SCC WBS was modified to show only those SCC line items that are applicable and delete or “hide” those that do not apply. The main SCC line items to apply to this study are:
+- [p226_c0013] • Guideway and Track elements
+[p226_c0014] _3-21_
+
+## Page 227
+
+### [p227_c0001] Lower Montauk Branch Rail Study
+- [p227_c0002] • Stations • Support Facilities: yards, shops, administrative buildings • Sitework and special conditions • Systems (Train Control and Signals, Traction Power, Communications) • Right-of-way, Land, existing improvements • Vehicles • Professional Services
+[p227_c0003] Costs were developed for the project based on high-level concept designs as presented in the Concept Development Report and equally high-level quantity take-offs (e.g., feet of track to be prepared) and unit prices. The unit prices were developed based on existing projects in the New York area, and take into account the specific rates of the region. The resultant capital cost estimate for the Lower Montauk Branch is comparable with the FTA database format, which provides a thorough checklist of every expected cost category for this type of rail transit project.
+### [p227_c0004] 3.3.5 Unit Cost Library
+[p227_c0005] The model includes a Capital Cost Library, a compilation of all SCC construction and non-construction items contained within the cost estimate. Each SCC Line Item includes a unique Unit of Measure on the Line Item Quantity. The Unit Costs (e.g., costs per foot of new track) presented in the Library are in 2016 dollars for the Metropolitan New York Region. The quantity take-offs for the Lower Montauk project are then used along with these unit costs to multiply against one another and calculate estimated capital costs. These unit costs include all construction materials and agency and contractor labor. Because the estimates are based on As-Built projects, it is reasonable to assume that they include any cost impact to the project, from general condition, mark-up, and flagging cost, to productivity lost due to track outage.
+[p227_c0006] For this model's conceptual cost estimate, the full FTA cost breakdown has been rolled-up to a higher level to reflect the very initial concept level of design. Guideway and track elements are broken down per type of guideway (at-grade, aerial, retained cut, etc.) and per track element (track, interlocking, etc.) while stations are kept as a lump sum cost based on their size, as it is difficult at this stage of planning to detail the scope of work associated with each of them.
+### [p227_c0007] 3.3.6 Contingency Costs
+[p227_c0008] The capital cost estimates include two types of contingencies:
+- [p227_c0009] • Allocated contingency costs are specific percentage figures assigned to each of the different line items of capital construction. They reflect the national experience with the range of factors that can make cost estimating more or less difficult (i.e., more prone to escalation). These include contingencies for both the design and construction processes, which together can increase the initial cost estimate by 15% to 40% depending on the level of uncertainty typically found when dealing with different cost elements
+[p227_c0010] _3-22_
+
+## Page 228
+
+### [p228_c0001] Lower Montauk Branch Rail Study
+- [p228_c0002] • Unallocated contingency, which is applied at the end of the estimate to the overall project costs. A 10% value is used for this project.
+### [p228_c0003] 3.3.7 Non-Construction Costs
+[p228_c0004] These costs cover all aspects of so-called “soft costs” or programmatic costs, which can represent a significant component of overall costs for these types of large transportation projects. These include:
+- [p228_c0005] • Project Development Costs • Engineering and Design • Force Account • Construction Administration and Management • Professional Liability and other Insurance • Permits, Agency Review, etc. • Surveying, Testing, Investigation, and Inspection • Start-Up Costs
+[p228_c0006] Together, these items account for roughly 23% of the overall estimated costs for the Lower Montauk Branch Rail project.
+### [p228_c0007] 3.3.8 Proposed Capital Elements
+### [p228_c0008] 3.3.8.1 Yard/Maintenance Facilities
+[p228_c0009] The proposed service plan would require approximately 15 DMU rail cars to meet peak service demands. Using unit cost factors in the capital cost model, assuming a yard sufficient to handle 30 cars (to provide for long-term expansion), site clearance and environmental remediation, a combined storage yard and maintenance facility would cost approximately $15-$20 million. At $20 million, this would include fueling facilities, fuel storage tanks, and all necessary utilities. While no site has been selected, an additional $10 million has been allocated in the cost estimate for property acquisition for the yard and maintenance facility. An additional $1 million each has been approximated for small maintenance facilities and storage tracks at both the Long Island City and Jamaica Stations. This brings this cost to a total of $32 million.
+### [p228_c0010] 3.3.8.2 Rolling stock
+[p228_c0011] Based on an initial review of the purchase costs of DMU vehicles for other systems, the DMU vehicles of the type proposed here would cost approximately $10 million each, or $150 million for the 15 DMU vehicles noted above to meet peak service needs. It is assumed that these vehicles are FRA-compliant; therefore no temporal or physical separation with freight (such as the construction of a safety wall) is required. This includes a 20% factor for spare rolling stock.
+[p228_c0012] _3-23_
+
+## Page 229
+
+### [p229_c0001] Lower Montauk Branch Rail Study
+### [p229_c0002] 3.3.8.3 Maintenance Equipment
+[p229_c0003] In a high level concept study, it is not possible to pinpoint maintenance equipment types and fleet size that would be necessary to service the proposed passenger operation. Standard practice assumes roughly 10% of the total fleet cost equates to the cost for maintenance equipment, which may include but not be limited to the following: snow blowers, ballast tamping machines, ballast car, a track geometry car, flat-bed cars, light cranes, and heavy duty vehicles/trucks with HiRail capability. For this study it was assumed that the maintenance equipment would be 10% of the total rolling stock cost, or $15 million total.
+### [p229_c0004] 3.3.8.4 Property Acquisition
+[p229_c0005] Property acquisition would be required primarily for the following locations:
+- [p229_c0006] • Addition of a third main track from Dutch Kills Bridge on the west to Milepost 5 on the east • Addition of a fourth track in the immediate vicinity of the Waste Management facility • Vicinity of the consolidation of the East and West “Downstairs” Yards at the Fresh Pond Facility
+[p229_c0007] The methodology utilized included generating a ribbon shaped area required for the new third track (and other respective shapes of area) in GIS.
+[p229_c0008] In instances where greater than 5% of the parcel’s area would need to be acquired, it was assumed that the entire parcel would need to be purchased as the existing property use, on average, would likely become non-functional. The total acreage of the parcel was multiplied against the market value.
+[p229_c0009] In instances where less than 5% of the parcel’s area would need to be acquired, it was assumed that only the required percentage would be purchased as the existing property use, on average, would likely remain functional. The acreage of these shapes was then multiplied against the percentage of the total parcel that each shape represents. For example, if within a specific parcel a shape was half the area of the total parcel, then the acreage of the shape was multiplied against 50%. Once that acreage was determined, that was then multiplied against the market value of the total parcel to determine approximate land acquisition for that specific area. The costs of acquiring these areas were then summed to determine property acquisition cost for the project, and finally an additional 30% contingency was then applied.
+[p229_c0010] The property acquisition cost would be approximately $39 million, excluding property acquisition for the yard, which is accounted for in the yard and maintenance facility costs. An additional $9 million is approximated for ROW acquisition at the Long Island City station, bringing the total for ROW/property acquisition to $48 million.
+### [p229_c0011] 3.3.8.5 Electrification
+[p229_c0012] If electrification were to be considered, based on the amount of track and the unit costs for all required elements, the additional capital costs would be approximately $51 million. It is assumed that a third-rail system of power delivery rather than catenary would be used for consistency with the LIRR passenger
+[p229_c0013] _3-24_
+
+## Page 230
+
+### [p230_c0001] Lower Montauk Branch Rail Study
+[p230_c0002] network into which the Lower Montauk Branch connects. The cost for the electrification of the corridor is provided in this memo as a separate estimate.
+### [p230_c0003] 3.3.8.6 Signaling System
+[p230_c0004] The current signaling system on the two existing tracks along the corridor is not suited for frequent passenger service. A new, more advanced system would be required to introduce reliable and frequent passenger service that operates in conjunction with freight service on all existing and new tracks along the corridor. This system is known as Positive Train Control (PTC). PTC is primarily designed to prevent collisions between trains, speed-related derailments, incursion into a work zone on the tracks, and operation over a switch in the wrong position. The PTC system will be composed of wayside elements as well as equipment within the passenger and freight locomotives.
+[p230_c0005] Control and signaling updates will also include new interlocking control points and new traffic signals and crossing protection devices at all remaining at-grade crossings of the branch.
+### [p230_c0006] 3.3.8.7 Terminal Access Upgrades
+[p230_c0007] As discussed previously, the current terminals at Long Island City and Jamaica would need access upgrades in order to accommodate new passenger service on the Lower Montauk Branch. Each site features significant access issues. At the Long Island City Station, the new platforms would need to connect as closely as possible to the Vernon Boulevard-Jackson Avenue No. 7 subway station, and new tracks would require a connection to the Hunterspoint Avenue Station, while not adversely impacting the existing yard. An operability analysis would be required as part of the Lower Montauk Branch activation to determine the feasibility of shared operations at this site. A preliminary cost evaluation estimates the cost of a terminus at Long Island City at $90 million.
+[p230_c0008] Access to the Jamaica Station is complicated by the additional capacity need by the upcoming East Side Access project and Brooklyn scoot service from Jamaica to Atlantic Terminal. The Lower Montauk Branch's platform would need to provide a connection to the other train service and the AirTrain to JFK. Further complicating this are the physical constraints of the Jamaica Station site. A new viaduct would need to be constructed to connect the new access tracks without interfering with the Brooklyn scoot service. A preliminary cost evaluation based on this proposal estimates the cost of a terminus at Jamaica at $260 million.
+### [p230_c0009] 3.3.8.8 Professional Services
+[p230_c0010] The estimate includes cost for professional services related to the construction of the new infrastructure elements, the acquisition of the new fleet and maintenance equipment, and property acquisition. The main items are project development, engineering design, LIRR force account management during the construction time, project management, legal and permits fees, etc.
+[p230_c0011] The cost of professional services would be approximately $187.5 million (transit) and $191 million (freight).
+[p230_c0012] _3-25_
+
+## Page 231
+
+### [p231_c0001] Lower Montauk Branch Rail Study
+### [p231_c0002] 3.3.9 Elements Not Included in the Cost Estimate
+[p231_c0003] The present estimate does not include:
+- [p231_c0004] • Tower/Central Control and Communications Center (not known if this service would have its own center or tie into an existing one) • Cost of Capital • Parking lots or parking structures (none are assumed) • The Bessemer Street Viaduct east of Forest Park, where Richmond Hill Station is located, currently structurally supports and sustains live loading from heavy freight locomotives and their respective freight cars. As such, it is deemed reasonable to assume that structural upgrades/modifications to this viaduct would be minimal to support passenger train operations, which impart more frequent but significantly lighter loading. This project did not conduct any structural investigation of this viaduct, and such an analysis would likely be required should passenger service be reintroduced. As a result, no structural upgrades/modifications have been identified in the capital cost estimate in this project for this viaduct. • A total of four over-grade bridges are found east of Fresh Pond Yard. Those include: 80th Street, Woodhaven Blvd., an internal Forest Park road (with no name), and Park Lane South. It is assumed that these bridges would not be impacted by a new passenger rail service, and therefore these are not included in the capital cost estimate.
+### [p231_c0005] 3.3.10 Estimated Capital Costs
+[p231_c0006] Table 3-13 provides a summary of the base capital cost estimate to handle the proposed rail passenger service. It presents the base cost estimate per main item, for the new infrastructure, and professional services.
+[p231_c0007] _3-26_
+
+## Page 232
+
+### [p232_c0001] Lower Montauk Branch Rail Study
+[p232_c0002] _Table 3-13 Base Capital Costs – Transit Infrastructure_
+[p232_c0003]
+
+```text
+Item Description 2016 $ with Allocated Contingency GUIDEWAY & TRACK ELEMENTS $300,500,000 STATIONS, STOPS, TERMINALS, INTERMODAL (excluding yard) $244,900,000 SITework & SPECIAL CONDITIONS $41,000,000 SYSTEMS $81,400,000 Sub-TOTAL Construction Cost (excluding yard) $667,700,000 PROFESSIONAL SERVICES $187,500,000 Sub-TOTAL Project Cost (excluding vehicles and excluding yard) $855,200,000 UNALLOCATED CONTINGENCY $57,400,000 FLEET COSTS $150,000,000 MAINTENANCE EQUIPMENT $15,000,000 YARD/ MAINTENANCE EQUIPMENT $32,000,000 TOTAL TRANSIT COST (Rounded up to the nearest 1 Million) $1,111,000,000
+```
+[p232_c0004] Table 3-14 provides a summary of the freight infrastructure cost estimate to maintain and provide some growth for freight operations with joint passenger operations.
+[p232_c0005] _Table 3-14 Base Capital Costs – Freight Infrastructure_
+[p232_c0006]
+
+```text
+Item Description 2016 $ with Allocated Contingency GUIDEWAY & TRACK ELEMENTS $450,000,000 SUPPORT FACILITIES: YARDS, SHOPS, ADMIN. BLDGS $38,000,000 SITework & SPECIAL CONDITIONS $102,200,000 SYSTEMS $117,000,000 Sub-TOTAL Construction Cost $707,000,000 VEHICLES (Freight Locomotive Retrofits for PTC) $12,500,000 PROFESSIONAL SERVICES $190,700,000 Sub-TOTAL Non-Construction Cost (Excluding $39M for ROW/Property) $203,200,000 BRIDGE REPLACEMENT (25% of the 2016 NYCDOT cost estimate) $42,270,000 Sub-TOTAL Project Cost $952,470,000
+```
+[p232_c0007] _3-27_
+
+## Page 233
+
+### [p233_c0001] Lower Montauk Branch Rail Study
+[p233_c0002]
+
+```text
+UNALLOCATED CONTINGENCY $55,300,000 TOTAL FREIGHT COST (Rounded up to the nearest 1 million) $1,008,000,000
+```
+[p233_c0003] In summary, we present the total capital cost estimates for the introduction of DMU-based passenger rail service on the Lower Montauk Branch, including fleet costs, maintenance equipment, a yard/maintenance facility and property acquisition. Detailed transit and freight infrastructure costs can be found in Appendix F.
+[p233_c0004] It is ultimately the job of policy makers, the MTA Long Island Rail Road (LIRR – which owns the Branch), neighborhood residents, business owners and other stakeholders to collectively determine how the Branch may be best utilized in the future. To that extent, transit and freight capital costs have been separated here.
+[p233_c0005] _Table 3-15 Total Capital Costs_
+[p233_c0006]
+
+```text
+Capital Costs (Millions $2016) Base Capital Costs –Transit Infrastructure $914 Base Capital Costs – Freight Infrastructure $1,008 Fleet Costs $150 Maintenance Equipment $15 Yard/Maintenance Facility $32 ROW/Property Acquisition $48 Total Capital Costs $2,167 Electrification $51 Total Capital Cost with Electrification $2,218
+```
+[p233_c0007] _3-28_
+
+## Page 234
+
+### [p234_c0001] Lower Montauk Branch Rail Study
+### [p234_c0002] 3.4 Land Use, Zoning, and Development Potential
+### [p234_c0003] 3.4.1 Introduction
+[p234_c0004] This study evaluates five potential stations for value capture financing under several growth scenarios. The potential growth of the areas surrounding these stations guides the existing zoning and land use in these station districts. Lower-density districts (especially residential areas) have limited growth potential without a change in rezoning for more dense activity. Spatial limitations are also factors in the development scenarios. These stations have varying types of surroundings and potential for rezoning and accommodating new economic development. The five station areas chosen as part of the value capture analyses, with greatest potential for new development near transit, are:
+- [p234_c0005] • Grand Avenue/Flushing Avenue • Fresh Pond/Metropolitan Avenue • Metro Mall • 80 th Street • Woodhaven Boulevard
+[p234_c0006] Each of the proposed stations along the Lower Montauk Branch was ranked as having a low, moderate, or high potential for added development due to the accessibility gains from the station. Those with low potential were not considered for value capture financing review, while calculations of that financing potential were performed for those at moderate or high levels of development potential. The development ranking of each station is noted in each of the following station-specific sections.
+[p234_c0007] Higher-density districts closer to stations would be a guiding principal to any zoning changes. Access to population and jobs was an important aspect of the evaluation as part of the station siting analysis process. The following zoning evaluations and measures would potentially increase population and job density near stations, specifically in the 1/4-mile and 1/2-mile zones around the station sites, where public transit would be most accessible and attractive to users. The station sites discussed below have redevelopment potential based on the ability to attract more residents and commercial spaces, based on the applicable land use controls. A pertinent part of the zoning regulations is the Floor-Area Ratio (FAR); FAR is a measure of the usable area of a space to the total area of the space, with higher FAR values permitting higher-density development. Higher FAR values in this corridor as a result of rezoning could increase usable space and capacity for residents or businesses. Lower density residences can consist of detached houses, whereas areas with moderate-density typically contain detached and semi-detached multi-story houses and apartment homes. Contextual development would help direct development here; as an example, expansion of commercial overlays that are currently mapped on the ground floors of buildings with residential districts, rather than upzoning, would help add development at a similar scale in sync with the area, rather than drastically altering what stands currently. Moderate gains in development would imply incremental changes to the regulations. Further discussion on these calculations can be found below in the Value Capture section.
+[p234_c0008] _3-29_
+
+## Page 235
+
+### [p235_c0001] Lower Montauk Branch Rail Study
+### [p235_c0002] 3.4.2 Development Conditions at Selected Station Areas
+### [p235_c0003] 3.4.2.1 Grand Avenue/Flushing Avenue Station
+[p235_c0004] This station area is considered to have moderate redevelopment potential due to the mix of existing uses and the street network's layout. Warehouse and light industrial uses and associated manufacturing zoning dominate in the southern/western portions of the station market area, and in some areas north of Rust Avenue, while areas to the northeast and east of the station are primarily low-to-moderate-density residential neighborhoods. The 1.0 FAR in the M1 districts zoned in most of the warehouse/industrial areas would limit the bulk and mix of new uses to structures like one- and two-story warehouses, and would need to be revisited to support any transit-related development potential, especially closer to the station area. A higher FAR would allow for higher buildings and more usable space. Somewhat more varied commercial uses, gradually blending with higher density residential development to the north, could potentially occur in the north/northeast portions of the station market area. C4 type zoning with higher FAR could be mapped along key arterials to support this type of contextual new development.
+[p235_c0005] The residential neighborhoods located to the northeast, east, and southeast and east of Flushing Avenue are full of detached and semi-detached houses and zoned to maintain this low-density residential pattern. The low-density residence districts, R4-1 and R4B, located through these areas, typically support two-story row house development as part of a block of rowhouses. Creating R5 or even some R6-type zones along or near selected high-density roads and closer to the station might be considered (see Figure 3-8 for a typical development in an R6A contextual district). In addition, commercial overlays (C2-3) that sit as ground-level retail in residential districts are currently mapped on 59 th Street between the manufacturing and residential districts, and on Flushing Avenue (C1-3). Rather than increasing the commercial FAR within these residential districts, more commercial development could initially be fostered by increasing the extent of the overlay. Extending the overlay would keep the neighborhood's current context and character by keeping existing FAR and building size; the drawbacks are that potential businesses requiring greater amounts of space or increased density may be shut out. Commercial districts could be extended to closer to the station to promote development without altering residential density, and higher-density mixed-use zoning could be considered in response to the area's market response to improved transit access.
+[p235_c0006] _Figure 3-8 Typical Development in an R6A Contextual District_
+> [p235_c0007] A photograph of a modern, multi-story residential building with a grid-like facade of windows and balconies, some of which are covered with red awnings. The building is situated on a city street with a blue car parked in front and a 'No Parking' sign visible. The sky is clear and blue.
+[p235_c0008] Figure 3-9 shows an aerial view of the approximate location and surrounding context of a potential Grand Avenue/Flushing Avenue station, while Figure 3-10 shows the existing zoning near this station location.
+[p235_c0009] _3-30_
+
+## Page 236
+
+### [p236_c0001] Lower Montauk Branch Rail Study
+[p236_c0002] _Figure 3-9 Grand Avenue/Flushing Avenue Station Aerial View_
+> [p236_c0003] An aerial photograph showing the intersection of Grand Avenue and Flushing Avenue. A red dot marks the station location. The area is densely populated with residential and commercial buildings. Major roads like 56th Rd, 57th Rd, and 58th Rd are visible. To the north is the Maspeth Natural Area and the 495 highway. To the south is the Metropolitan Avenue and All Faiths Cemetery. A scale bar indicates approximately 1,000 feet.
+[p236_c0004] Source: Google Maps
+[p236_c0005] _Figure 3-10 Grand Avenue/Flushing Avenue Station and Adjacent Zoning Regulations_
+> [p236_c0006] A zoning map showing the surrounding areas of the station. The station is marked with a red dot. Various zoning districts are labeled, including M1-1D, M1-1D, M3-1, M3-1, M1, R4B, R4, R5B, R4-1, and R5B. The map also shows street names like 56th Ave, 57th Ave, 58th Ave, and 59th Ave. Parks like the Lincoln Center and Park Avenue Playground are indicated.
+[p236_c0007] Source: NYC Planning
+[p236_c0008] _3-31_
+
+## Page 237
+
+### [p237_c0001] Lower Montauk Branch Rail Study
+### [p237_c0002] 3.4.2.2 Fresh Pond/Metropolitan Avenue Station
+[p237_c0003] This station lies near the intersection of two major commercial avenues, Fresh Pond Road and Metropolitan Avenue. Mount Olivet Cemetery serves as a natural border in the northeast. There are varying zoning uses here. The area is zoned as low density residential (R4) with a maximum FAR of 0.75 and a C2-3 commercial overlay with a maximum FAR of 1.0. The area directly south of the station is zoned R5, allowing for slightly higher density with an FAR of 1.25, such as three- or four-story attached houses and apartment houses. The commercial overlay is zoned for local retail needs, such as grocery stores and restaurants. Much of this is lower-density commercial development, such as C2-2, with lower parking requirements. As such, larger-scale retail options would not be permissible here. In the area immediately surrounding the rail's ROW, there is a light manufacturing district, M1-1. The M1-1 district has a maximum FAR of 1.0 and requires parking to be provided.
+[p237_c0004] The general zoning regulations here are for lower levels of development and manufacturing activity, but the presence of a transit station could support increased growth and associated upzoning for both commercial and residential uses. The varying land use and availability may be suited to do so, as this is an area with diverse uses and fewer physical barriers than other stations. A possible change could be to rezone the R4-1 zones on Fresh Pond Road to R5 for contextual growth. Additionally, extending the C2 commercial overlays (as seen in Figure 3-11) away from the station could create a more robust commercial district. Eliot Avenue is another major thoroughfare (in addition to Fresh Pond Road and Metropolitan Avenue) that can help anchor this station area. Current C2-4 commercial overlays on Eliot Avenue could be expanded and connected to the commercial district on Fresh Pond Road to create a commercial hub. This mixed-use center could have a close connection with the improved rail service here.
+[p237_c0005] Figure 3-12 shows an aerial view of the approximate location and surrounding context of a potential Fresh Pond/Metropolitan Avenue station, while Figure 3-13 shows the existing zoning near this station location.
+[p237_c0006] _Figure 3-11 Commercial Overlay in a Residential Neighborhood_
+[p237_c0007] Source: NYC Planning
+[p237_c0008] _3-32_
+
+## Page 238
+
+### [p238_c0001] Lower Montauk Branch Rail Study
+[p238_c0002] _Figure 3-12 Fresh Pond/Metropolitan Avenue Station Aerial View_
+> [p238_c0003] An aerial satellite-style map of the Fresh Pond area in New York City. The map shows a dense urban grid with streets like Metropolitan Avenue, Fresh Pond Road, Eliot Avenue, and Juniper Boulevard. A red dot is placed at the intersection of Metropolitan Avenue and Fresh Pond Road, labeled 'FRESH POND'. Nearby landmarks include Grover Cleveland High School, Grover Cleveland Playground, Metropolitan Avenue, Fresh Pond Road, Eliot Avenue, Joseph F. Mafera Park, and Metropolitan Avenue. A scale bar in the bottom right corner indicates approximately 1,000 feet.
+[p238_c0004] Source: Google Maps
+[p238_c0005] _Figure 3-13 Fresh Pond/Metropolitan Avenue Station and Adjacent Zoning Regulations_
+> [p238_c0006] A map of the Fresh Pond/Metropolitan Avenue area showing zoning regulations. The map displays various zoning districts such as R4, R4B, R4-1, R5B, M1, and M1-1. A red dot is placed at the intersection of Metropolitan Avenue and Fresh Pond Road, marking the station location. Surrounding streets include Metropolitan Avenue, Fresh Pond Road, Eliot Avenue, Juniper Boulevard, and others. A scale bar in the bottom right corner indicates approximately 1,000 feet.
+[p238_c0007] Source: NYC Planning
+[p238_c0008] _3-33_
+
+## Page 239
+
+### [p239_c0001] Lower Montauk Branch Rail Study
+### [p239_c0002] 3.4.2.3 Metro Mall Station
+[p239_c0003] This is one of the most physically constricted station areas on the rail line, with the All Faiths Cemetery to the east and north and the Fresh Pond Yard and Joseph F. Mafera Park adjacent. Pedestrian access to Metropolitan Ave and the M Train would require new pedestrian walkways through Metro Mall's parking lot, a private neighborhood of two-story rowhouses to the west of Metro Mall, or abutting the M Train right-of-way if sufficient space exists. Metropolitan Avenue is approximately a quarter-mile from the station and All Faiths Cemetery straddles it on both sides, limiting development potential north of the station to Metro Mall and the small neighborhood to its west.
+[p239_c0004] The areas surrounding the rail line are manufacturing zones, M1-1 and M1-2, for light industry. The majority of the nearby residential areas here are zoned R5B, with detached and semi-detached three-story row houses typical. These row houses are complemented by small apartment houses. R5B districts are characterized as low-to moderate-density general residence districts, with maximum FAR of 1.35. The major commercial development, Metro Mall, is an anchor for the area, but expansion to take advantage of additional transit access (the site is already served by the M train) could potentially support redevelopment of this large site and its associated parking area, supported by more commercial or mixed-use residential zoning. Manufacturing could also see changes from M1-1 zones (such as those seen in Figure 3-14) to M1-2 zones, allowing an increase in FAR from 1.0 to 2.0. Although the surrounding physical environment is certainly a limiting factor here, with little space for expansion and growth, some nearby areas, including portions of nearby Metropolitan Avenue, could take advantage of the combined transit connection of the M train and proposed Lower Montauk service. Even with the number of constraints, redevelopment potential through incremental changes shows promise at the Metro Mall site and possibly at smaller sites nearby.
+[p239_c0005] Figure 3-15 shows an aerial view of the approximate location and surrounding context of a potential Metro Mall station, while Figure 3-16 shows the existing zoning near this station location.
+[p239_c0006] _Figure 3-14 M1-1 Manufacturing Zone Typical Building_
+> [p239_c0007] A photograph of a typical M1-1 manufacturing zone building. The building is a long, single-story structure with a light-colored facade and several windows. A street with parked cars and utility poles is visible in the foreground. The sky is clear and blue.
+[p239_c0008] _3-34_
+
+## Page 240
+
+### [p240_c0001] Lower Montauk Branch Rail Study
+[p240_c0002] _Figure 3-15 Metro Mall Station Aerial View_
+> [p240_c0003] An aerial satellite-style map of the Metro Mall Station area in Ridgewood, New York. A red dot marks the station's location at the intersection of Metropolitan Ave and Fresh Pond Road. To the north is All Faiths Cemetery, and to the east is Joseph F. Mafera Park. The map shows a dense urban grid with streets like Metropolitan Ave, Fresh Pond Road, Central Ave, and Cooper Ave. A scale bar in the bottom right corner indicates approximately 1,000 feet.
+[p240_c0004] Source: Google Maps
+[p240_c0005] _Figure 3-16 Metro Mall Station and Adjacent Zoning Regulations_
+> [p240_c0006] A detailed zoning map of the area around Metro Mall Station. A red dot indicates the station's location. The map is divided into various zoning districts, including R4-1, R6B, M1-1, R4B, M1-2, R5B, and PARK. The map also shows street names like Metropolitan Ave, Fresh Pond Road, Central Ave, and Cooper Ave. The PARK district is highlighted in green.
+[p240_c0007] Source: NYC Planning
+[p240_c0008] _3-35_
+
+## Page 241
+
+### [p241_c0001] Lower Montauk Branch Rail Study
+### [p241_c0002] 3.4.2.4 80th Street Station
+[p241_c0003] This station is located along the southern border of an expansive M1 manufacturing zone that includes the Shops at Atlas Park, a large retail center. This M1 district, with a maximum FAR of 1.0, supports light industry and manufacturing. The areas between Cooper Avenue and the railroad are dominated by a mixture of commercial and light manufacturing/warehouse type uses. The residential areas surrounding the station to the south down to Myrtle Avenue and to the northwest are zoned R4-1, R4B, and R4. The R4-1 and R4 districts, with a maximum FAR of 0.75, are characterized by detached and semi-detached houses in low-density settings. The R4B district, located here directly adjacent to the rail ROW and station site, has slightly higher density with an FAR of 0.9. This is in line with other residential areas currently surrounding the rail line.
+[p241_c0004] The locations of Forest Park and Mount Lebanon Cemetery 1/4 mile to the south, St. John Cemetery 1/6-mile to the northeast, and All Faiths Cemetery 1/2-mile to the northwest limit the supply of developable land. The Shops at Atlas Park anchors the commercial presence in the area, with shopping, dining, and entertainment options. There are few other retail outlets in this station area. Commercial overlays do exist in the southern area along Myrtle Avenue and to the north on Metropolitan Avenue; outside of these corridors, the area is largely residential. This area could benefit from an expansion of the C2-3 commercial overlays on Cooper Avenue (as seen in Figure 3-17) to help play on the commercial strengths of the Shops at Atlas Park and the added accessibility of the rail station. From a residential standpoint, the expansion of an R4-1 district on 80 th Street towards the station site might be an attractive living option due to its proximity to transit.
+[p241_c0005] This station area is considered to have moderate development potential, which is reflected in the calculations of the initial high-level value capture financing capacity that would potentially result from development within this station area.
+[p241_c0006] Figure 3-18 shows an aerial view of the approximate location and surrounding context of a potential 80th Street station, while Figure 3-19 shows the existing zoning near this station location.
+[p241_c0007] _Figure 3-17 Commercial Overlay Strip of Shops, Residential Above_
+> [p241_c0008] A street-level photograph showing a sidewalk lined with trees and shops. Two people are walking away from the camera. The shops have awnings and signs, including one for 'Qa...' and another for 'd...'.
+[p241_c0009] Source: NYC Planning
+[p241_c0010] _3-36_
+
+## Page 242
+
+### [p242_c0001] Lower Montauk Branch Rail Study
+[p242_c0002] _Figure 3-18 80th Street Station Aerial View_
+> [p242_c0003] An aerial satellite view of the 80th Street Station area in Brooklyn. A red dot marks the station's location at the intersection of 80th Street and Cooper Avenue. The map shows a dense urban grid with streets like Metropolitan Ave, Cooper Ave, Central Ave, Myrtle Ave, and Jackie Robinson Pkwy. Landmarks such as 'The Shops at Atlas Park', 'The Home Depot', and 'Trader Joe's' are labeled. A scale bar in the bottom right corner indicates approximately 1,000 feet.
+[p242_c0004] Source: Google Maps
+[p242_c0005] _Figure 3-19 80th Street Station and Adjacent Zoning Regulations_
+> [p242_c0006] A zoning map of the 80th Street Station area. A red dot marks the station's location. The map is divided into various zoning districts, including R4, R4-1, R4A, R4B, R3-2, M1-1, and R5. Streets shown include Metropolitan Ave, Cooper Ave, 80th St, 77th Rd, 76th Rd, 75th Rd, 74th Rd, 73rd Rd, 72nd Rd, 71st Rd, 70th Rd, 69th Rd, 68th Rd, 67th Rd, 66th Rd, 65th Rd, 64th Rd, 63rd Rd, 62nd Rd, 61st Rd, 60th Rd, 59th Rd, 58th Rd, 57th Rd, 56th Rd, 55th Rd, 54th Rd, 53rd Rd, 52nd Rd, 51st Rd, 50th Rd, 49th Rd, 48th Rd, 47th Rd, 46th Rd, 45th Rd, 44th Rd, 43rd Rd, 42nd Rd, 41st Rd, 40th Rd, 39th Rd, 38th Rd, 37th Rd, 36th Rd, 35th Rd, 34th Rd, 33rd Rd, 32nd Rd, 31st Rd, 30th Rd, 29th Rd, 28th Rd, 27th Rd, 26th Rd, 25th Rd, 24th Rd, 23rd Rd, 22nd Rd, 21st Rd, 20th Rd, 19th Rd, 18th Rd, 17th Rd, 16th Rd, 15th Rd, 14th Rd, 13th Rd, 12th Rd, 11th Rd, 10th Rd, 9th Rd, 8th Rd, 7th Rd, 6th Rd, 5th Rd, 4th Rd, 3rd Rd, 2nd Rd, 1st Rd, and 0th Rd. Landmarks such as 'St. Johns Cemetery' and 'Middletown Cemetery' are also indicated.
+[p242_c0007] Source: NYC Planning
+[p242_c0008] _3-37_
+
+## Page 243
+
+### [p243_c0001] Lower Montauk Branch Rail Study
+### [p243_c0002] 3.4.2.5 Woodhaven Boulevard Station
+[p243_c0003] The Woodhaven Boulevard station area is a mixed zoning district. The station is just over half a mile east of the 80 th Street station, and shares some of its characteristics. The station site is in an M1-1 manufacturing zone, surrounded by R4A, R4-1 (seen in Figure 3-20), and R4-B residential districts (with an FAR of 0.75-0.9), and bounded by Forest Park 1/3-mile to the southeast and southwest. The overall residential landscape can be seen in Figure 3-20 Woodhaven Boulevard itself shows this mix, with a large commercial shopping center to its east, and a residential district on the west side characterized by two-story detached and semi-detached houses.
+[p243_c0004] The existing major retail presences on Woodhaven Boulevard and Union Turnpike could support more commercial growth. The area directly east of Woodhaven Boulevard is zoned M1-1 and has several large surface parking lots serving these industrial and commercial uses. A mixed manufacturing district-commercial overlay may spur commercial development. In the northern part of the area there are C1-3 and C2-2 commercial overlay strips 1/4-mile north of the station on Metropolitan Avenue, with similar C1-3 and C2-3 commercial overlays mapped along Myrtle Avenue 1/3-mile to the south. Myrtle Avenue's commercial corridor could grow by expanding these commercial overlays. Woodhaven Boulevard is a key thoroughfare in Queens, and could accommodate expanded commercial and mixed-use residential/commercial growth with the proper zoning controls in these existing commercial areas. One of the challenges of growth is the location of parklands in the area that isolate some districts; focused smaller-scale changes in this area could have significant impacts.
+[p243_c0005] This station area is considered to have high development potential, which is reflected in the calculations of the initial high-level value capture financing capacity that would potentially result from development within this station area. This rating reflects the presence of moderate-scale commercial development and the potential for further development and redevelopment, as well as the combined accessibility of two major arterials – Woodhaven Boulevard and Metropolitan Avenue.
+[p243_c0006] _Figure 3-20 Semi-detached Residences_
+[p243_c0007] Figure 3-21 shows an aerial view of the approximate location and surrounding context of a potential Woodhaven Boulevard station, while Figure 3-22 shows the existing zoning near this station location.
+> [p243_c0008] A photograph of a two-story semi-detached house with a light-colored exterior and a red roof. The house has a small front yard with a green bush and a sidewalk. A tree is visible on the left side of the house.
+[p243_c0009] Source: NYC Planning
+[p243_c0010] _3-38_
+
+## Page 244
+
+### [p244_c0001] Lower Montauk Branch Rail Study
+[p244_c0002] _Figure 3-21 Woodhaven Boulevard Station Aerial View_
+> [p244_c0003] An aerial satellite map of the Woodhaven Boulevard Station area in Brooklyn. A red dot marks the station location at the intersection of Woodhaven Blvd and Union Tpke. Nearby landmarks include 'The Shops at Atlas Park' and 'The Home Depot'. Major streets shown include Metropolitan Ave, Woodhaven Blvd, Union Tpke, Jackie Robinson Pkwy, Myrtle Ave, and Forest Park. A scale bar in the bottom right corner indicates approximately 1,000 feet.
+[p244_c0004] Source: Google Maps
+[p244_c0005] _Figure 3-22 Woodhaven Boulevard Station and Adjacent Zoning Regulations_
+> [p244_c0006] A detailed zoning map of the Woodhaven Boulevard Station area. A red dot marks the station location. The map shows various zoning districts including R3-2, R4B, R4A, R4-1, M1-1, and R5. Major streets shown include Woodhaven Blvd, Union Tpke, Myrtle Ave, and Jackie Robinson Pkwy. The map illustrates the surrounding land use and regulatory framework for the station area.
+[p244_c0007] Source: NYC Planning
+[p244_c0008] _3-39_
+
+## Page 245
+
+### [p245_c0001] Lower Montauk Branch Rail Study
+### [p245_c0002] 3.4.3 Uniform Land Use Review Procedure (ULURP)
+[p245_c0003] The redesignation or altering of zoning boundaries along the Lower Montauk Branch would prompt the City's Uniform Land Use Review Procedure (ULURP). The ULURP process is required for public review of any actions affecting city land use. In ULURP, the public is given 60 days to comment on a developer's land use proposal and the community board reviews it. The application is then given to the Borough President to recommend a resolution to the City Planning Commission, with 30 days given to render a decision. The Commission then must vote on the proposal within 60 days. The City Council has a mandatory review period following the Commission to discuss zoning map and zoning text proposals, with 50 days to vote on the proposal. The Mayor can choose to veto the proposal, which may be overruled by a 2/3 vote in City Council, or elect to accept the decision of the Council.
+### [p245_c0004] 3.4.4 Conclusions
+[p245_c0005] The five proposed station areas along the Lower Montauk Branch are located in a wide variety of residential, commercial, and manufacturing districts in Maspeth, Middle Village, and Glendale, Queens. There are varying levels of redevelopment opportunities and potential for necessary rezoning to support such growth. The reactivation of passenger service could stimulate upzoning in some areas and the associated increase in density, with the potential to bring more economic activity into these areas. This must be done contextually with the existing zoning districts and available development space. The development potential of these locations and the equally high-level initial estimates of possible value, capture financing to support development of the proposed rail service. These must be viewed as very preliminary looks at this issue, intended to provide an initial order-of-magnitude estimate of this potential source of financing.
+[p245_c0006] _3-40_
+
+## Page 246
+
+### [p246_c0001] Lower Montauk Branch Rail Study
+### [p246_c0002] 3.5 Value Capture Financing: Description, Criteria, and Yield
+### [p246_c0003] 3.5.1 Study Overview and Approach
+[p246_c0004] Viewed through the lens of the Corridor's characteristics, the following perspective describes the unique elements on the Lower Montauk Branch and Corridor that affect economic development and future growth potential within the corridor:
+- [p246_c0005] • Industrial and transport uses in the western portion near existing activity centers are ripe for conversion to mixed-use growth of the scale and type already underway as infill projects; whereas the parks, cemeteries in the eastern portion constrain available land and development capacity • Low population density due to land use mix, large open areas • Moderate job density, except Long Island City, and Jamaica, and Richmond Hill areas with higher concentrations of density and very good growth potential • Modest opportunity for future transit-oriented development with existing market conditions and zoning at: legacy Lower Montauk Branch station areas (e.g., Haberman, Penny Bridge, Glendale) and those stations located near activity centers, plus proposed new stations Atlas Park, Woodhaven, etc. (The details of this statement are described in the report below). • Being adjacent to five rail yards challenges access to station areas and also limits economic development • At-grade, overhead and under-grade rail crossings requires special investment in pedestrian infrastructure for ease of access and fostering economic development • Narrow right-of-way with many adjacent buildings and roadways presents access challenges and hinders the availability of land for economic development
+[p246_c0006] Shown in Figure 3-23 are the “pieces” that converge to shape a financing plan: Based on experiences drawn from other projects of similar type and scale, the interrelationships between all project elements provide for a unity and a clearer roadmap to successful implementation, and subsequently to provide answers about how best to shape a funding/financing strategy plan (Figure 3-23) for the project:
+- [p246_c0007] • Shares of federal and non-federal, state, local and private sector funding contributions • Innovative/traditional project delivery • The structure (vehicle enabling implementation) of delivery addressing both capital and operating costs
+[p246_c0008] Across these elements, assessments are performed with regard to the timing, yield, viability, and benefits of each funding level to ascertain how, when, and the extent in applying funding levers to project delivery. The project delivery method is the process by which a project is comprehensively designed and constructed for an owner including project scope definition, organization of designers, constructors and various consultants, sequencing of design and construction operations, execution of design and construction, and close-out and start-up. Project delivery methods include design-build (D/B)
+[p246_c0009] _3-41_
+
+## Page 247
+
+### [p247_c0001] Lower Montauk Branch Rail Study
+[p247_c0002] and public-private partnership (P3), in addition to traditional design-bid-build, and alternate methods such as design-build-operate and maintain (DBOM). The 34-mile, $2.2 billion ($2000) NJ Transit Hudson-Bergen Light Rail Line is an example of DBOM. The operator is Twenty-First Century Rail (AECOM and Kinkisharyo).
+[p247_c0003] In addition to the corridor issues and conditions noted above, a key subject to the advancement of most new rail transit infrastructure projects is the sources of project funding for capital and operation expenses that are sustainable and stable. As the project progresses, it is essential in today's constrained fiscal environment, that a wide variety of funding and financing sources would be evaluated. The intent is not to compile a "laundry list" of programs or business models that could theoretically apply, but to assemble the most promising ideas in strategies that are creative, flexible, and realistic. To create materially different strategies with several options, an approach would consider both funding and financing sources.
+[p247_c0004] _Figure 3-23 Funding & Financing Planning: Putting the Pieces Together_
+> [p247_c0005] The diagram illustrates the process of funding and financing planning. On the left, three boxes represent different planning considerations: 'Federal vs. Non-Federal State/Local and Private Sector', 'Innovative vs. Traditional Project Delivery', and 'Structure of Delivery: Capital & Operations'. Dashed lines connect these boxes to a central purple circle. Inside the circle is a bulleted list of four key factors: 'Timing', 'Yield', 'Viability', and 'Benefits'. To the right of the circle, four interlocking puzzle pieces in green, blue, orange, and pink are shown, with a large green dollar sign ($) superimposed over them, symbolizing the integration of various funding and financing sources into a cohesive strategy.
+[p247_c0006] Source: 2016 FRA Rail Program Delivery: Building a Funding & Financing Strategy Plan for Mega/Complex Project, https://www.fra.dot.gov/eLib/Details/L18577
+[p247_c0007] The distinction between funding and financing is critical. Funding applies to both the capital and operating phases of a project and includes grants, donations, developer contributions, user fees, annual appropriations, and other sources that are typically not repaid. Financing, which applies to the capital phase, is money provided or loaned by banks, lending institutions, public finance or private sector bonding, or funds by investors with the expectation of repayment with interest or return on investment. Additionally, most financing mechanisms can be used to generate upfront capital for transportation projects by leveraging an anticipated revenue stream.
+[p247_c0008] To support the current feasibility study for the project and its future phases, a value capture financing (VCF) approach is being considered as a potential funding source to contribute to the capital investment
+[p247_c0009] _3-42_
+
+## Page 248
+
+### [p248_c0001] Lower Montauk Branch Rail Study
+[p248_c0002] requirements of the new system. The assumption is that frequent and improved high-capacity transit service generates growth in land values and creates a positive fiscal dividend. When completed the new system has the potential to provide greater connectivity/access, improvements in travel time, and enhancement to the economic development opportunity of the corridor area.
+[p248_c0003] In the past month, the intensity of discourse on the topic of VCF has increased in the New York region. This funding approach is highlighted in recent regional discussions as a promising potential contributor to financing a number of new projects in the region such as the Moynihan-New York Penn Station Redevelopment; Port Authority Bus Terminal Redevelopment; NJ-NY Gateway Rail and Station Project; and the Brooklyn-Queens Connector (BQX) streetcar.
+[p248_c0004] The proposed $2.5-billion, 16-mile Brooklyn-Queens Connector streetcar project, or BQX as it is known, is also considering the use of value capturing financing (VCF) approach as one of several sources of revenue to fund the implementation of the new transit system. The new financing mechanism assumes that the city captures a portion of the rising property values that would be spurred by the creation of the new streetcar. These values would be funneled to pay for debt services. That is, increased tax revenues would be used to pay back the public bonds leveraged to pay for portions of the total capital cost.
+[p248_c0005] The following caveat is worth noting pertaining to this report's scope. There are three scenarios (low, medium, high) that frame a high-level estimate of potential revenue yield and future value that could be generated by nearby development for the project, that could be captured as a potential funding source through a Tax Increment Financing (TIF) or Payment In-lieu of Taxes (PILOT) mechanism. However, at this juncture forecasting potential development can be challenging and speculative. More detailed analysis would require identifying all the parcels that would potentially be affected by the opening of new rail services, categorizing the parcels by potential development type, evaluate as-of-right development's maximum zoning production, and evaluate the existence of physical, natural, or other barriers limiting the potential for new construction or redevelopment. Estimating the potential for value capture requires comparing the likely development patterns that would occur without the subject Project with those that would likely occur if the rail service were implemented.
+[p248_c0006] This remainder of this report is organized as follows: the value capture financing approach; literature survey of the lessons learned from other systems; a high-level analysis of value capture potential along the corridor; the potential revenue yield, scenarios, and assumptions of value capture that can be utilized to implement a portion of the financing strategy; key findings and a conclusion with regard to the information described in this draft report.
+### [p248_c0007] 3.5.2 Description of Value Capture
+### [p248_c0008] 3.5.2.1 Overview
+[p248_c0009] Value Capture that is location-based refers to a range of strategies, approaches and mechanisms for providing funding to infrastructure projects (such as transit projects) from the value induced by the project. Public or private transportation increases the market value of surrounding real estate. Value capture (also commonly referred to as "allocates", "distributes", or "assigns") is the public recovery of a
+[p248_c0010] _3-43_
+
+## Page 249
+
+### [p249_c0001] Lower Montauk Branch Rail Study
+[p249_c0002] portion or all of increased property value and other value created as a result of public infrastructure investment to defray public expense of infrastructure. The Value Capture revenues could be used to supplement traditional public and/or private finance sources used to fund capital investments as part of the overall funding plan. In general, as documented by Reconnecting America (Capturing the Value of Transit, November 2013) successfully applied Value Capture mechanisms have shown, in examples throughout North America, to have the capacity to support 10 percent to 50 percent of capital costs.
+[p249_c0003] Common examples of value capture methods and mechanisms that are applicable to the Lower Montauk Branch are impact fees, joint development, sale or leasing of air rights, land value taxation, station naming rights, negotiated exactions, parking fees, sales tax, and special assessment districts (SADs), tax increment financing (TIF), and payments in lieu of taxes (PILOT). These approaches are described below.
+[p249_c0004] Value Capture Financing (VCF) is both a funding method and a decision-making tool for public infrastructure. As a funding method, successful value capture programs link project beneficiaries with funding methods to establish more equitable and sustainable funding arrangements. As a decision-making tool, value capture programs engage interdisciplinary teams to create city-shaping solutions that stimulate economic development, promote jobs growth, and increase the supply and diversity of housing.
+[p249_c0005] Figure 3-24 represents an indicative example of how value from multiple properties can be captured from the incremental tax benefits of real estate development opportunities. There are several dynamics at work within a VCF framework over the life span of a project, recognizing that VCF is not a new tax or increase in tax. Operationally, for the taxable value base year, the taxable value is multiplied by the millage rate to determine the taxes collected, whereas for the tax increment revenue is above the base year accruing from organic or new development growth.
+[p249_c0006] Subject to market constraints and site conditions, new transportation capacity and access create opportunity for increased real estate development that becomes capitalized in real estate values in the short-term whole; over the longer-term, land use adjustments and built form changes occur. Developers respond to transit agency investment in infrastructure by evaluating market opportunity for value creation created by new transportation capacity (or anticipation of such capacity). There is value creation through transit-influenced development. Transit Oriented Development (TOD) is a subset of transit-influenced real estate development. A portion of the transit value premium (captured value) may be recovered through one or more value capture mechanisms. Some portion of aggregate value creation may be considered market premium, reflecting consumers' willingness to pay higher prices for real estate assets (residential units, office and retail space, etc.) in close proximity to transit access and related amenities than for otherwise identical properties not similarly served by transit. Value associated with the transit service/utility, as well as that of other amenities common to high-quality TOD, becomes capitalized into the market price of real property.
+[p249_c0007] _3-44_
+
+## Page 250
+
+### [p250_c0001] Lower Montauk Branch Rail Study
+[p250_c0002] _Figure 3-24 Illustrative Land/Property Value Capture Concept_
+### [p250_c0003] 3.5.2.2 Description of Value Capture Approaches
+[p250_c0004] In general, location-based value-capture mechanisms do an effective job of translating benefits derived from a project to financing mechanisms. The burden is widely disbursed, appearing not as an increased cost but as foregone tax revenue growth for a period of time. It can be argued that this foregone growth in tax revenue is not a “loss” to the local government, since it would not have occurred absent the project. At the conclusion of the payback period, the local government receives a significant increase in tax base from prior levels.
+[p250_c0005] As noted earlier, there are several types of value capture mechanisms that capture, over time, increases in value from multiple properties. The potential Value Capture approaches that could be used individually or in combination as components of a comprehensive financing plan are summarized below.
+[p250_c0006] Tax Increment Financing (TIF): TIF involves the creation of a special designated area or district to raise revenue for public improvements by capturing a portion of the additional increase in assessed property value generated by private-sector development. The tax increment is collected for a fixed period (usually between 15 and 30 years) and can be used to secure a bond, allowing the issuer to access the value up front. TIF is an existing value capture mechanism in New York. Use is limited in New York, in part because it may only be applied in blighted areas. TIF could also be applied corridor-wide, and would require new state legislation. This is discussed further in the case study discussion addressing the 7 Subway Line/Hudson Yards project.
+[p250_c0007] Payments in Lieu of Taxes (PILOTS): As a close variant of TIF, PILOTS are an alternative mechanism used in New York where certain commercial properties apply to receive full exemptions on property tax obligations for up to 19 years in exchange for agreeing to make payments to the project. The agreement
+[p250_c0008] _3-45_
+
+## Page 251
+
+### [p251_c0001] Lower Montauk Branch Rail Study
+[p251_c0002] is structured to provide incentives in the form of tax discounts of up to 40 percent compared to non-exempt status. Projects must be located in a Uniform Tax Exemption Policy area and are subject to specific size and zoning requirements. PILOTs are preferred over TIF in New York, in part because the tool is not limited to blighted areas. Under PILOTs, the city must own the land to remove it from the tax rolls, following which an owner/developer pays a discounted or negotiated payment to the agency instead of formulaic property taxes. In the years 2002-2013, the city administration increasingly used PILOTs in its economic development projects planned through the New York City Department of City Planning (DCP) and the Economic Development Corporation (EDC). PILOT payments are set, administered and received by the Industrial Development Corporation (IDA), a public benefit corporation housed within the EDC and charged with administering public programs designed to incentivize private enterprise in the city. This is discussed further in the case study discussion addressing the 7 Subway Line/Hudson Yards project.
+[p251_c0003] Special Assessment Districts (SADs): SADs are designated geographical areas in which an additional property tax is applied to parcels of land that receive a special benefit from one or more public improvements funded by the special tax. Special assessments are typically applied for a 20- to 30-year period and generate a consistent revenue stream to finance the issuance of bonds backed by the assessment revenue. SADs are used in New York for utility and infrastructure projects, and localized private or public capital expenses.
+[p251_c0004] Joint Development: Joint development is a mutually beneficial partnership with a private developer created to develop certain assets. The private entity contributes payments, assets, or equity that draws down the overall total cost burdened to the owner. If the City or partner agencies own land with significant development potential, the land could be monetized through a lease structure for office, retail, commercial, entertainment, and residential developers in return for annual lease payments, creating a revenue stream that can be bonded against to support a portion of the capital costs of the Lower Montauk Branch. In exchange, developers can develop the land with a low risk of losing their capital investment.
+[p251_c0005] Transit Bonus: A transit bonus in the form of additional floor area ratio (FAR) may be granted to property owners and developers in exchange for funding transit improvements such as stations, elevators, stairways, and other mutually beneficial infrastructure. If legislated, this may be applicable to fund new station access or entrances planned in conjunction with the project if the lots near the project stations could fall within a new special zoning provision for transit bonuses.
+[p251_c0006] Air Rights Transfer: Real estate rights could also be transferred to contiguous lots or across several block zones, which will monetize commercial development. This is sometimes referred to as “air rights.” The transfer can be a direct sale of excess transferrable development rights (TDR) from a host site to the recipient site or a transfer of air rights to another site to enhance the redevelopment potential of the other site. For example, the Hudson Yards/7 Subway Line Extension in New York City used air rights transfers to fund $200 million (8 percent) of the project’s $2.1 billion in project costs.
+[p251_c0007] Station Commercial and Retail Transactions: Optimizing station commercial and retail opportunities at potential new stations may result in improvements in the number and value of the station retail offerings or in new retail and commercial square footage. There could be new opportunities near
+[p251_c0008] _3-46_
+
+## Page 252
+
+### [p252_c0001] Lower Montauk Branch Rail Study
+[p252_c0002] stations for advance purchases, new commercial buildings from overbuild and air rights leases, and new commercial buildings or assemblages.
+[p252_c0003] Right-of-Way Leases: Another potential Value Capture approach is adding a high-voltage transmission line and/or fiber optic data communication cable within the right-of-way in return for annual lease payments that could be bonded against to support a portion the capital costs of the project.
+### [p252_c0004] 3.5.2.3 Value Capture Criteria
+[p252_c0005] A key component to a comprehensive financial plan is the structure of a range of potentially applicable financing and funding sources aligned with the use of the funds (e.g., stations, platforms, tracks, equipment, trains, bicycle facilities, right-of-way purchase, appurtenances, etc.). With regard to the use of VCF, a clear prerequisite to implementing a value capture strategy to enhance borrowing capacity and to raise funds by the project sponsor is that there is actually value to be captured. Thus, as seen in practice elsewhere, value capture opportunities and strategies vary significantly due to context and the conditions necessary for creation, retention, and enhancement of value along a value-chain, including some of the following factors:
+- [p252_c0006] • Real estate market conditions, vitality and synergies within and between markets. This is evident at proposed stations located at Long Island City (LIC); Grand Avenue/Flushing Avenue; Fresh Pond Avenue; 80 th Street; and Jamaica. The best TOD markets exist at these locations. Of the group, the stations that exhibit strong growth and multimodal hub connectivity are LIC and Jamaica and they represent the most economic development and TOD potential that could be enhanced by additional station connectivity. These areas are also experiencing strong growth due to existing subway, LIRR, and ferry service access. • Available sites supported by infrastructure/utilities with few physical constraints to hinder new development, infill or redevelopment. In varying degrees, the same stations identified in the prior criteria apply here as well. • Accommodative zoning/regulations that support compact, high-density (floor area ratios at a minimum of 5) mixed-land uses, and development project entitlements. Only LIC and Jamaica have zoning and policies that support greater FAR and dense, mixed-use development. • Statutory authority that enables the use of value-capture mechanisms. New legislation needs for tax increment financing (TIF). Payment In Lieu of Taxes (PILOTs) has already been implemented in NYC. Other VCF mechanisms are legislated and used in the region on a case-by-case basis for mostly station renewals and large-high density projects. • Articulation of a compelling business cases of value capture to public and private partners and to the financial markets on which they depend. • Development of project- and context-specific financial strategies that are feasible and incentivize and reinforce value creation. This will progress as the project evolves into the next phase. • Institutional capacity on the part of transit agencies, local governments, developers, and other partners, working together to maximize value creation to enable value capture. This will progress as the project evolves into the next phase, and partnerships with governance structures are formed.
+[p252_c0007] _3-47_
+
+## Page 253
+
+### [p253_c0001] Lower Montauk Branch Rail Study
+- [p253_c0002] • Stable and predictable capital cost estimates. While never certain to remain static, rising project costs increase financial risk and overall budget requirement for the project. Where there is variability and fluctuations in capital costs, the implementation of VCF may be susceptible to modifications as well. This factor will progress as the project evolves into the next phase, and detailed best-value analysis is undertaken.
+### [p253_c0003] 3.5.3 Safeguarding Value Capture Funding Initiatives
+[p253_c0004] One difference between location-based value capture financing mechanisms and most general public revenue-based transportation funding is in the potential for revenue stream volatility. Value capture mechanisms that are tied to specific real estate markets can fluctuate with the rhythms of those markets, and the demand for product before they are completed.
+[p253_c0005] Mechanisms that are tied to new development will yield revenue streams that rise and fall with booms in construction. Similarly, value capture mechanisms that are tied to payroll are subject to business cycle fluctuations. Sales tax receipts and public sector budgets will also rise and fall with the cycles of the overall economy, but these fluctuations are often not as large as those in individual economic sectors. In New York City's context only the property value levels are the relevant in value-capture because the reliance creates the revenue stream.
+[p253_c0006] All told, value-capture funding mechanisms can harbor uncertain capacity to fund infrastructure. Predicting the value created by infrastructure to the real estate market is inherently challenging. Balancing the revenue expectation with capital needs can be problematic because different types of development generate higher incremental value (office) than others (residential). Property also has more value if it is built-out to its maximum, driving fiscal related decisions to higher density development. Additionally, property and commercial income tax offsets are put in place to induce development, resulting in a near-term fiscal reduction.
+[p253_c0007] In summary, the potential safeguards to offset the uncertainty of revenue flow and other risks could include deploying a combination of the following:
+- [p253_c0008] • Use of federal grants or financing mechanisms such as TIFIA for credit, loans, and gap-financing while project revenues ramp up • Developer funding the improvements and is repaid through TIF revenues • Developer agreements regarding PILOT schedule that could provide early, upfront revenues ahead of actual construction • Private sector joint development arrangements that address construction of project facilities initiated by the development partner; thereby the private sector assumes the risk and early financing of that portion of the overall project • Pay-as-you-go funding of improvements from current incremental tax revenues without bond issuance • Augmenting TIF with other value capture tools such as special assessment district levy • Using City general fund revenues for gap-financing
+[p253_c0009] _3-48_
+
+## Page 254
+
+### [p254_c0001] Lower Montauk Branch Rail Study
+- [p254_c0002] • Other forms of State or local funding that serve as an upfront infusion of capital into the project's overall budget
+### [p254_c0003] 3.5.4 Hudson Yards Value Capture Approach
+[p254_c0004] As described in greater detail in the case study below, the Hudson Yards project is one of the country's largest real estate development projects and the largest TIF project that was made possible by value-capturing financing. It offers an opportunity to examine the effects of large-scale implementation of the financing mechanism, and also lessons for the implementation of its use.
+[p254_c0005] With regard to the Hudson Yards project, New York State law limited TIF to capturing only property tax revenue, and the City determined TIF would not provide enough revenue to fund the $3 billion project. Revenues would come from a combination of PILOTs, payments in lieu of sales taxes, payments in lieu of mortgage recording taxes, District Improvement Fund payments, and proceeds from the sale of newly-created development rights over the rail yards. The City also agreed to forward property tax revenue generated in the district and not covered by PILOTs in the form of annual tax equivalency payments (TEP). PILOTs were expected to account for approximately 85 percent of the project's revenue. Hudson Yards Infrastructure Corporation (HYIC) eventually issued $3 billion in PILOT-backed bonds, $2 billion in 2007, followed by another $1 billion in 2012.
+[p254_c0006] Typically, the City uses general obligation bonds to finance capital projects. For Hudson Yards, the City decided to bypass use of general obligation funds, which meant the bonds were not backed by the full faith and credit of the city. Additionally, the Council and Mayor agreed to use PILOT financing and to use the city's general revenues to pay for the upfront costs until the project's development-reliant revenues were sufficient to pay the infrastructure cost.
+[p254_c0007] As another option, if TIF bonds were backed by a City covenant to budget and appropriate, then general fund revenues would be responsible if the TIF district or corridor-wide revenues fall short.
+[p254_c0008] Overall, as described in the case study literature, there are a variety of value capture approaches. For example, the City may raise capital for the project through the creation of a non-profit entity with the authority to issue tax-exempt bonds. The repayment of such debt could be secured by capturing a percentage of the increase in values of existing and new development along the subject corridor through enhanced real estate property valuation. The City may also consider additional revenue streams, such as advertising, naming rights, real estate sale, monetization of infrastructure asset type (utility leasing or data communication leasing within the right-of-way), and others to offset any remaining costs.
+### [p254_c0009] 3.5.5 Lessons Learned: Case Studies
+[p254_c0010] This section describes several notable transit projects in North America that demonstrate attributes of successful value capture financing. These case studies provide insight into strategies and challenges associated with funding of subway, streetcar, light rail, and commuter rail projects. The two peer city systems that were described in a previous report: NJ Transit River LINE (a diesel tram-train light rail system in southern New Jersey) and the San Diego Trolley Blue Line, did not utilize value capture
+[p254_c0011] _3-49_
+
+## Page 255
+
+### [p255_c0001] Lower Montauk Branch Rail Study
+[p255_c0002] approaches. These peer cities were selected for their utilization of freight right-of-way not because of their respective land use, financial approach, or station designs.
+### [p255_c0003] 7 Subway Line / Hudson Yards (New York City, NY)
+[p255_c0004] The 7 Subway Line/Hudson Yards Project located in Manhattan's Midtown West area is a relevant example for several compelling reasons: First, it is the most recent, large-scale successful application of value capture financing approach in New York, if not the U.S because of scale and complexity. A similar VCF approach is contemplated for use on the BQX Project and Lower Montauk Branch Rail Study. Second, the financing mechanism has created expertise within the City, with associated bond markets becoming receptive to this relatively new funding approach.
+[p255_c0005] The Hudson Yards development project was constructed on 28-acres over a working rail yard, two platforms bridge over 30 active train tracks, three rail tunnels and the new Gateway Tunnel linking New Jersey and New York. The new 1.5-mile, $2.5 billion ($2015) 7 Subway Line extension opened at Hudson Yards in September 2015.
+[p255_c0006] The area has zoned capacity for roughly 26 million square feet of new office space, 20,000 residential units with almost 5,000 affordable, 2 million square feet of retail and 3 million square feet of hotel space, the re-envisioned rail yards area are projected to have been transformed into a vibrant, transit-oriented mixed-use district that will command high rents or sales values and generate commensurate property taxes within a decade or two.
+[p255_c0007] The Metropolitan Transportation Authority (MTA) was responsible for construction and operation of the 7 Subway Line Extension. There is no federal involvement in project delivery or funding.
+[p255_c0008] The following discussion of the 7 Subway Line/Hudson Yards financing mechanism notes the distinction between payment in lieu of taxes (PILOT) and tax-increment financing (TIF) as two distinct financing models. Both of them allow the city to sell bonds repaid with future tax revenues.
+[p255_c0009] In January 2005, New York City revealed the details of a plan to transform Manhattan's Far West Side. The plan authorized the extension of the 7 Subway Line and the construction of new office space, housing, streets, and parks.
+[p255_c0010] Shortly thereafter, the City Council approved a plan to transform the industrial blocks and rail yards of the Far West Side into a high-density, mixed-use neighborhood. The Far West Side was rezoned to accommodate 25 million square feet of office space, tens of thousands of residential units, new hotel and retail properties, and acres of new open space.
+[p255_c0011] The theory behind the plan is that the rezoning of the Far West Side and the extension of the 7 Subway Line would vastly increase the development potential of land within the neighborhood.
+[p255_c0012] The lynchpin of the Hudson Yards Redevelopment Project was the 7 Subway Line Extension- an extension of the New York City Subway's IRT Flushing Line. The extension stretched 1 mile southwest from its previous terminus at Times Square, at Seventh Avenue and 41st Street, to a new station at 34th Street and Eleventh Avenue. A second station at 10th Avenue and 41st Street was dropped from the plans in October 2007.
+[p255_c0013] _3-50_
+
+## Page 256
+
+### [p256_c0001] Lower Montauk Branch Rail Study
+[p256_c0002] To fund the infrastructure upgrades, the plan called for value capture financing, a strategy that uses the expected taxes and fees from new developments in the area to back the public bonds issued by New York City to pay for the infrastructure improvements. Recognizing that in the early years of the project revenues would not be sufficient to make interest payments on the bonds issued to fund the redevelopment, the City committed to make up the difference.
+[p256_c0003] The City intended to finance these public improvements outside of New York City's capital budget. A newly created local development corporation called the Hudson Yards Infrastructure Corporation issued bonds backed by revenues that the new development is expected to generate. The largest anticipated revenue source for bond repayment is commercial payments in lieu of taxes ("PILOTs") made by private developers who build within the development zone.
+[p256_c0004] PILOT-backed bonds are a unique and seldom used mode of financing. New York City had never issued PILOT-backed bonds before the Hudson Yards project, and they are a rare structure in the municipal debt markets. Yet, PILOT financing has a close analog: tax increment financing ("TIF").
+[p256_c0005] New York authorized the use of TIF in 1984 with the passage of the Municipal Redevelopment Law ("TIF statute"). Under New York's TIF statute, two criteria must be met before a municipality can implement a TIF project. First, TIF can only be used to redevelop "blighted areas." Second, TIF can only be used when "the redevelopment of such areas cannot be accomplished by private enterprise alone." Most states' TIF statutes contain similar requirements.
+[p256_c0006] To carry out the redevelopment plan, the TIF statute authorizes the municipality to issue bonds payable from and secured by real property taxes ("TIF bonds"). The municipality can only issue TIF bonds for certain public purposes like the acquisition of land, demolition and removal of structures, and the construction of streets, walkways, public utilities, parks, and playgrounds. The statute stipulates that TIF bonds may not be secured by the "faith and credit" of the local government, and cannot count toward the issuing municipality's constitutional debt limitation.
+[p256_c0007] The notion that TIF is a self-financing redevelopment mechanism is not entirely accurate. In reality, TIF projects can impose costs on taxpayers. If the anticipated tax revenue does not materialize, the underlying municipality may likely need to raise taxes or draw from its general fund to service and repay the TIF debt. Moreover, an increased demand for City services often accompanies the redevelopment; thus, taxpayers outside the TIF district may need to pay higher taxes to cover the cost of these services. Finally, there is always some possibility that the development would have occurred without the use of TIF. If this is the case, then the tax increment also would have occurred—meaning that the original taxing authorities unnecessarily subsidized the redevelopment.
+[p256_c0008] There are only two reported uses of TIF in all of New York. The town of Victor in Ontario County issued approximately eight million dollars in TIF bonds in 1994 to help finance the renovation and expansion of a local shopping mall, while the Town of Greenburgh in Westchester County issued roughly $770,000 in TIF debt between 1990 and 1993 to fund road improvements. New York's heavy reliance on tax abatements may explain its low use of TIF. Tax abatement programs attempt to attract private development by exempting developers from paying real property taxes for a certain number of years.
+[p256_c0009] _3-51_
+
+## Page 257
+
+### [p257_c0001] Lower Montauk Branch Rail Study
+[p257_c0002] Because TIF depends on new property tax revenue, it essentially precludes the use of tax abatement programs as incentives to attract private development. If developers are given tax breaks, there will be less incremental tax revenue to collect.
+[p257_c0003] For many of the above reasons regarding TIF use, to finance the 7 Subway Line Extension plus the infrastructure to support the overbuild portion of the Hudson Yards, the Hudson Yards Infrastructure Corporation (HYIC), a non-profit local development, corporation was created. The HYIC issued thirty-year bonds backed by revenue expected to be generated by the development. Payments in lieu of taxes (PILOTs) from new commercial buildings and residential property taxes together provide eighty-five percent of the revenues. Payments received from the sale of development rights over the Eastern Rail Yard portion of the overall Hudson Yards program and contributions to the District Improvement Fund (in exchange for development bonuses) contribute approximately 10 to 12 percent. The remaining money stems from the sale of publicly-owned land and payments in lieu of sales taxes on construction materials.
+[p257_c0004] PILOTs made by private developers represent the primary source of expected revenue for the Far West Side development. PILOTs contributed over 45 percent of total revenue, and more than half of the total revenue is expected to come from PILOTs after 2025.
+[p257_c0005] Under the Hudson Yards/Far West Side plan, private developers planning to develop in the Hudson Yards have the option of entering into PILOT agreements with the City's Industrial Development Agency (IDA). Under these agreements, the IDA will purchase the land from the developers. This removes the land from the property tax rolls, because the IDA is a tax-exempt entity. The developers will make payments in lieu of regular property taxes to the IDA for the duration of the agreement.
+[p257_c0006] These payments are generally less than the amount of real property taxes that would otherwise be due. The IDA funnels these payments into a special fund overseen by the HYIC. The HYIC then uses the special fund to make interest and principal payments on the project bonds. At the end of the contract period, the IDA would return the land to the developers and the developers thereafter will pay taxes to the City, rather than making payments to the IDA.
+[p257_c0007] Although similar, TIF and PILOT financing are not identical. Under TIF, private developers own the project land, whereas under the West Side plan, the IDA will own the land until the PILOT agreements expire. Moreover, with TIF, all incremental tax revenue from the TIF district flows into a special fund maintained by a redevelopment agency. In contrast, with the West Side's PILOT financing, only payments made under PILOT agreements will go into a special fund. All taxes collected on non-PILOT properties will continue to go to the City's general fund.
+[p257_c0008] The City did not count the PILOT-backed debt toward the City's constitutional debt limit. As explained above, the PILOT bonds are issued by the HYIC, a local development corporation created pursuant to Section 1411 of New York's Not-for-Profit Corporation Law. Section 1411 authorizes not-for-profit local development corporations like the HYIC to borrow money and issue bonds. These bonds are not considered debt of the underlying municipality. The Hudson Yards plan, however, provided an interest payment on the HYIC debt that originated from the City's general fund.
+[p257_c0009] _3-52_
+
+## Page 258
+
+### [p258_c0001] Lower Montauk Branch Rail Study
+[p258_c0002] An alternative modification of PILOT would be for the City to use the pay-as-you-go approach. Under this approach, private developers obtain their own funding and front the costs. The City would then repay the developers out of the incremental tax revenue generated if and when the development occurs. The developer, rather than the City, bears the risk if the development will not generate enough revenue to cover the project costs.
+[p258_c0003] Another variant of VCF implementation is that a surcharge on existing tax revenues or the capture of incremental property tax value does not create a corporate entity, such as HYIC. Rather the operational approach is similar to financing a Business Improvement District (BID), wherein as part of the budget process, the City administration requests the City Council to appropriate the sum of property tax surcharges or tax increase payments to the entity operating the new transit system. Moreover, because new development need not be incentivized by discounting property taxes, PILOT agreements are not required with NYC IDA participation.
+### [p258_c0004] Key Lessons Learned:
+[p258_c0005] While there are remarkable differences between Hudson Yards (HY) and Lower Montauk Rail Corridor, such as major infrastructure investment is much less compared to HY; unlike HY, the financing district is not as ripe or robust and lacks zoning and market potential for high density properties that generate high-value and pay significant property taxes, the following notes are relevant findings:
+- [p258_c0006] • Strong executive leadership and vision regarding the project and associated funding plan • City-financed with no federal involvement in funding the project • Regulatory changes in land use/zoning and density bonuses incentives, coupled with infrastructure can generate large increases in the value of land • Private development has been made possible by the rezoning of the area, beginning in 2005, from mostly industrial to mixed use • Innovative and unique application of VCF designed to use expected taxes and fees from new development to back public bonds issued to pay for land acquisition and infrastructure improvements. To do so, the HYIC was authorized to issue up to $3 billion in bonds in the project's early stages, with offerings made of $2 billion in 2007 and $1 billion in 2012 upon approval by the City Council • Recognizing that in early stages of development, project revenues would not be sufficient to cover the interest payments on bonds issued, the City committed to make up the difference with annual Interest Support Payments (ISP) • The major portion of HYIC revenues was initially intended to come from the Value Capture PILOT mechanism and mortgage recording fees used to secure the bonds issued. The sale of development rights in excess of permissible zoning density have become the leading source of revenue. The Density Improvement Bonus (DIB) generated $260.5 million by selling air rights, primarily to developers of new office buildings
+[p258_c0007] _3-53_
+
+## Page 259
+
+### [p259_c0001] Lower Montauk Branch Rail Study
+### [p259_c0002] Washington, DC Area, Dulles Metrorail Silver Line
+[p259_c0003] This project is an example of using Special Assessment District (SAD) financing along with traditional and innovative financing sources with federal funding participation. Washington Metro is the second busiest heavy rail system in the U.S.
+[p259_c0004] The Dulles Corridor Metrorail Project is a new 23-mile extension of the current Metrorail system, branching from the Orange Line's East Falls Church Station in Arlington, Virginia, to the Washington Dulles International Airport and west to eastern Loudoun County. The project will add 11 stations, and it includes the construction of a new rail yard on Dulles Airport property and procurement of 128 railcars. The project is being constructed in two phases. Phase 1 runs 12 miles from East Falls Church to Wiehle Avenue in Reston. This phase includes five stations to the Silver Line, including four in Tysons Corner. Phase 2 will continue 11 miles from Wiehle Avenue to eastern Loudoun County. This phase will add six stations, including stops in Reston, Herndon, Dulles Airport, and in Ashburn.
+[p259_c0005] The total project costs for Phase I was $2,906 million and Phase II is estimated to cost $2,778 million. As indicated in Figure 3-25, each Phase used a mix of federal, state, and local sources. Phase I received a $975 million FTA New Starts grant. In addition to the New Starts grant, Phase I also received $252 million from the Commonwealth of Virginia and $400 million from Fairfax County. The largest source of funds for Phase I was $1,354 million in toll revenue from the Dulles Toll Road. Phase II relied on federal sources as well in the form of $1,876 million in three TIFIA loans. The TIFIA loans include $1,278 million that will be repaid by the Metropolitan Washington Airports Authority (MWAA), $403.3 million that will be repaid by Fairfax County, and $195.1 million from Loudon. While the TIFIA loans are included in the chart below as Federal funds, for all intents and purposes, they are local in nature because they will be repaid from local sources. The Commonwealth of Virginia contributed $323 million, Fairfax County $111.6 million, and Loudon County, $77.9 million. The contributions from Fairfax and Loudon County are in addition to the TIFIA loans. Phase II also received $233 million in MWAA aviation funds and $156 million in Dulles Toll Road funds. When the repayment of the TIFIA loans are summed, the local share for Phase II increases to 88.4 percent of the total project costs.
+[p259_c0006] Value capture elements funded portions of both phases of the project. Fairfax County established a special tax district on commercial and industrial properties in 2004 to fund the county's portion of Phase 1 of the project. The district consists of most of the Tysons Corner Urban Center and an area around the Phase 1 stations, and the tax rate is $0.22 per $100 of value. In 2009, the county established a special tax district consisting of the area around its Phase 2 stations to pay for that portion of the project; the tax rate started at $0.05 per $100 and increased five cents each year to $0.20 per $100 in FY 2014. Loudoun County also implemented a Metrorail Service District to pay for its portion of Phase 2 of the project. The district consists of properties around the Phase 2 stations in Loudoun County. The levy within the district is $0.20 per $100 of value.
+[p259_c0007] _3-54_
+
+## Page 260
+
+### [p260_c0001] Lower Montauk Branch Rail Study
+[p260_c0002] _Figure 3-25 Silver Line Ext. Funding and Financing Stack_
+> [p260_c0003] WMATA Silverline Extension Virginia Funding Breakdown Phase Funding Source Amount ($) Percentage Phase 1 Federal 900.0 31.0% State 252.0 8.7% Local 400.0 60.4% Phase 1 Total 2,954.0 100.0% Phase 2 Local Loans 1,278.0 67.5% Local 156.0 20.8% State 323.0 11.6% Phase 2 Total 2,779.0 100.0% Local Total 233.0 88.4%
+### [p260_c0004] Key Lessons Learned:
+- [p260_c0005] • Strong multi-agency, multi-jurisdictional leadership • Federal project delivery path opens many sources of eligible grant and financing support (e.g., FTA New Starts; TIFIA) • Innovative value capture element with support from property owners • Multiple funding sources, with dedicated and stable revenue stream from toll road • Several TIFIA financing components secured by local jurisdictions
+### [p260_c0006] Seattle, WA, Lake Union Streetcar
+[p260_c0007] The VCF element for The South Lake Union (SLU) project was local businesses and property owners along the alignment agreeing to establish a special property tax levy through the formation of a Local Improvement District (LID) that funded approximately 47 percent of the $53.5 million project.
+[p260_c0008] In 2008, the Seattle City Council approved a regional streetcar network, including four additional lines in Downtown Seattle; a second streetcar line, the First Hill Streetcar, opened to revenue service in early
+[p260_c0009] _3-55_
+
+## Page 261
+
+### [p261_c0001] Lower Montauk Branch Rail Study
+[p261_c0002] 2015. The Broadway Streetcar project extended the streetcar service north through the Broadway business district on Capitol Hill. The project opened in 2016.
+[p261_c0003] The project is a modern streetcar line connecting the South Lake Union area to Downtown Seattle. The project scope included three vehicles, 11 stops, and construction of a maintenance facility. The SLU Streetcar connects Downtown Seattle to important regional activity centers, including a 12-acre waterfront park, Denny Triangle, and South Lake Union, and provides direct connections to other transit services including King County Metro buses, Sound Transit regional buses and light rail, and the Seattle Monorail.
+[p261_c0004] The SLU Streetcar was backed by the strong political and financial support of businesses and property owners, including the co-founder of Microsoft, Paul Allen. As indicated in Table 3-16, a Value Capture approach called Local Improvement District (LID) formed the centerpiece of an innovative funding package. It was approved by voters in 2005. Ninety-eight percent of property owners in the area agreed to finance the project through the improvement district. The LID funded over half of the streetcar costs, providing $25.7 million in project funding. LID fees were based on property value, parcel type, and proximity to the streetcar line. Properties had the choice to either pay the fee up front, or over an 18-year period at 4.4% interest. Property tax rates ranged from 8 percent for parcels located directly near the alignment to 1 percent for parcels located along the outer boundary of the LID.
+[p261_c0005] _Table 3-16 Seattle Streetcar Funding Sources_
+[p261_c0006]
+
+```text
+Funding Source Amount ($million) Federal Section 5307 and STP Funds $8.2 Federal Appropriations $4.8 State State Appropriations $3 Local Local Improvement District $25 Interfund Loan $5 Surplus Property Proceeds (LTGO Bonds) $3.5 Property Exchange Proceeds $1.8 King Co Metro Fund Exchange Proceeds Seattle $1.6 Public Utilities $.7
+```
+[p261_c0007] The streetcar has had a positive effect on the South Lake Union neighborhood. Since the project was approved in 2005, 4.5 million square feet of office space and 7,000 residential units were built within four blocks of the streetcar. Employers in the neighborhood recognize the value of quality streetcar service and have contributed to ongoing operating costs with multiple rounds of funding.
+### [p261_c0008] Key Lessons Learned:
+- [p261_c0009] • Strong city leadership, and support of property owners and businesses along the alignment • Framework vision plan addressing economic development, land use, traffic, mobility, and sustainability provided implementation roadmap
+[p261_c0010] _3-56_
+
+## Page 262
+
+### [p262_c0001] Lower Montauk Branch Rail Study
+- [p262_c0002] • Value capture LID funded nearly half of the project’s capital cost • Multiple funding sources, with real estate sales leveraged • Connected to several activity centers; vibrant and robust real estate market within the project area • Close to the adjacent downtown with a corridor dependent on mid- to high-rise development with strong office focus
+### [p262_c0003] 3.5.6 Value Capture Conditions in the Lower Montauk Corridor
+[p262_c0004] It is important to understand the market context and proposed new station characteristics that drive transit mobility benefits that then could spur economic development along the corridor and value that could be captured. Summarized in Table 3-17 is a preliminary profile of proposed station characteristics, value capture conditions and development growth potential within the proposed station area for the Lower Montauk Branch. Several of the diverse mix of stations are legacy stations from the past service, while other stations are already mature, multimodal hubs of robust transit oriented development (e.g., Long Island City and Jamaica). The information described in the table is subject to refinement, as the growth potential is reviewed by NYC Department of City Planning and other agencies.
+[p262_c0005] Station Selection Criteria were addressed previously, based of 10 station sites and several metrics including accessibility to population and employment; future growth potential; transit network connectivity; and overall pedestrian walk accessibility/mobility and the extent of car-dependency. These proposed stations were evaluated and scores assigned. Table 3-17 reflects the overall composite score per station, along with value capture condition and growth potential.
+[p262_c0006] Several of the potential stations that are recommended for reactivation would be located at dense population or employment centers and continue to develop and drive growth in the residential, commercial, or industrial sectors. These stations would have connections to the greater transit network to better integrate and allow for easier commuting and traveling. In some cases, the station may have a transformative impact on an area that did not have direct access to rail service.
+[p262_c0007] _Table 3-17 Station Profile Summary, Value Capture, and Growth Potential_
+[p262_c0008]
+
+```text
+Station Profile Characteristics Value Capture Conditions Future Growth Potential Long Island City (Current Station) Station Siting Points: 25 Station is very walkable and well-served by different transit modes, with connections to local buses, the LIRR, East River Ferry and the 7 subway line. Station is part of a multimodal corridor that is transit rich. The existing station infrastructure could potentially provide a base for new rolling stock and operations. Very favorable real estate market and value created by new transit connections. The challenges are the allocation of the value, boundaries of the district, and demonstrating strong nexus between project and value capture (same logic applies to Jamaica). Other applicable VCF mechanisms are joint development; special assessment district. This station hub serves existing major employment centers and could support continued residential and commercial growth in LIC. It anchors a burgeoning residential and commercial development at the waterfront area. Reviving passenger service on the corridor to LIC would provide transit option to promote more residential and commercial growth, with ease and frequency of connections to destinations. Greenpoint Avenue Station Siting Points: 14 Fair real estate market and low value creation potential by new transit This station would serve one of the corridor’s densest employment
+```
+[p262_c0009] _3-57_
+
+## Page 263
+
+### [p263_c0001] Lower Montauk Branch Rail Study
+[p263_c0002]
+
+```text
+Station Profile Characteristics Value Capture Conditions Future Growth Potential It is supported by a unique, major pedestrian crossing over Newtown Creek (Greenpoint Avenue Bridge) and a local bus route connection, providing connectivity to adjacent industrial areas and bus connections to transit modes beyond. The potential connectivity knits together areas adjacent to the Newtown Creek, where pedestrian access is limited due to the Creek, cemeteries, and industrial sites in the area. connection because of lack of available sites, low infill potential, and physical constraints. Other VCF mechanisms that could be warranted are joint development; special assessment district. concentrations, with potential to support future job growth. While there are many dense job centers along the Lower Montauk Branch and Newtown Creek, despite the bridge and bus access, the site has a low walk score and transit score due to the scarcity of other pedestrian and transit facilities. The overall access to this station is somewhat lacking. Penny Bridge Station Siting Points: 9 This station site would be adjacent to the Brooklyn-Queens Expressway and the Kosciuszko Bridge, in a fully industrial and heavy manufacturing zone tightly constrained by First Cavalry Cemetery to the north and Newtown Creek to the south. Pedestrian accessibility may be improved with the pedestrian and bicycle improvements planned for the new Kosciuszko Bridge (reopening at the end of 2017). Fair real estate market and low value creation potential. Potential for other VCF mechanism is tested such as joint development with existing employment centers. This station would serve existing employment centers and could support continued industrial growth along the Newtown Creek. There is little population or commercial development to support the station, though it could serve the industrial uses on the Newtown Creek. Haberman Station Siting Points: 15 This station was active until 1998 and originally served factory workers. Station area connections exist to three local bus services. The walk and transit access conditions indicate car dependence and low overall accessibility. Fair real estate market and low value creation potential by new transit connection because of lack of available land, low infill potential and little capacity for growth. The proposed station would be located to serve existing major employment centers, a hub of industrial activity, and could support continued industrial growth along the Newtown Creek, and combines access to jobs with very good transit connections. It is a low-density population area with a small population base and little capacity for residential growth. Grand Avenue/Flushing Avenue Station Siting Points: 22 The station site flanked by north-south thoroughfares, with several attributes: good walkability and bus connections; The station could help drive population and employment expansion, as better transit access would make the area more attractive. Good real estate market and value created by new transit connections, with modest growth with changes in zoning. The feasibility of VCF needs to be tested based on the allocation of the value created, boundaries of the district, and demonstration of a strong nexus between project and value. Other applicable VCF mechanisms are joint development and special assessment district. This station could support additional industrial uses and growth in nearby residential areas (north and south). There are dense residential areas and manufacturing centers flanking the station within a quarter mile. Zoning M3-1 with 2.98 FAR. Fresh Pond/Metropolitan Avenue Station Siting Points: 27 This site was a former station on the Lower Montauk Branch until 1998. The station site has many attributes: multiple-land uses, good accessibility and walkability, future growth potential, and transit network connectivity to seven bus routes. Very favorable real estate market and value creation by new transit connections. The challenges to VCF are the allocation of the value, boundaries in the district, and how to demonstrate a strong nexus between project and value. Other applicable VCF mechanisms are joint development and special assessment district. Potential station serves job sites and residential areas, with good potential areas for residential and commercial growth. A dense residential and commercial development is present next to the station and a section of manufacturing next to the adjoining Fresh Pond Yard. Zoning R6B and C2-4 with 2 FAR. Metro Mall Station Siting Points: 20 The proposed station has good connection to subway station, Christ the King High School, Metro Mall, and nearby residential areas. This walkable area in the station area provides a connection to the M subway line at Metropolitan Avenue that is a distance and requires pedestrian walk Fair real estate market and low value creation potential by new transit connection because of physical constraints and lack of available land. Other applicable VCF mechanisms are joint development and special assessment district. The ¼-mile around the station has limited growth potential due to the physical constraints and size of Fresh Pond Yard, Junction, and the All Faiths Cemetery. Also, the existing subway access may pose a challenge in demonstrating a strong nexus between
+```
+[p263_c0003] _3-58_
+
+## Page 264
+
+### [p264_c0001] Lower Montauk Branch Rail Study
+[p264_c0002]
+
+```text
+Station Profile Characteristics Value Capture Conditions Future Growth Potential amenities potential Lower Montauk Branch station and the M subway station. project and value. Glendale Station Siting Points: 13 This station is sited in a predominantly low- to mid-density residential area in Glendale Proposed station access is constrained, with few connections and options to the transit network available within ¼ mile. Fair real estate market and low value creation potential by new transit connection because of physical constraints and lack of available land. Other applicable VCF mechanisms are joint development and special assessment district. This station could support additional residential growth in the medium-density nearby areas and commercial development in the small adjoining commercial corridor. Development may be hindered by locations of the All Faiths Cemetery, the Mt. Lebanon Cemetery, and the St. John Cemetery. There are modest commercial and industrial facilities in the area. 80 th Street Station Siting Points: 22 Very good walkability and mobility with two bus stops, with moderate level of transit access. Primarily low- to moderate-density residential area with some commercial. Station access via overpass with stairs down to track-level. Very favorable real estate market and value created by new transit connections. The challenge to VCF is the allocation of the value, boundaries of the district, and demonstrates strong nexus between project and value. Other applicable VCF mechanisms are joint development with new or existing property owners; special assessment district with local property owners. This station, with good local bus access, would serve The Shops at Atlas Park, with a potential for moderate-density growth. Proposed station at a major north-south thoroughfare, with residential and industrial areas near and sprawling retail and shops, excellent mobility by foot. Woodhaven Boulevard Station Siting Points: 20 This station would be located adjacent to Woodhaven Boulevard, a major north-south thoroughfare in Queens. This provides access to many adjoining areas and the buses utilizing it. Good real estate market and favorable value creation potential by new transit connection because of job hub and infill potential. Other applicable VCF mechanisms to test include joint development arrangement with businesses; special assessment district with surrounding properties. This station would serve residential and employment areas, commercial centers, and could link with any future use of the Rockaway Beach Branch. There is a major employment hub on Woodhaven Boulevard in the form of a shopping center. A school complex is located within a quarter mile of the potential station, a potential user of the Branch. Walking is a viable option in the area. Some development may be hindered due to Forest Park to the east. Richmond Hill Station Siting Points: 19 The potential Richmond Hill station would be located at the intersection of three major streets: Lefferts Boulevard, Jamaica Avenue, and Hillside Avenue. It could provide a connection to the J/Z subway line with a possible direct transfer between platforms and local bus routes. There is great transit presence in the area, with the J/Z subway line and the possibility of a direct connection should the Lower Montauk Branch be reactivated. Good real estate market and favorable value creation opportunities with potential driven by existing built environment and infill potential, with some available sites for redevelopment. Also, existing subway access may pose a challenge in demonstrating strong nexus between project and value. This station would serve employment centers and surrounding population with good potential for station area residential and commercial growth. Proposed station serves as access to population and employment centers between Forest Park and Jamaica. The compact development provides a walkable environment. More transit access could help spur commercial and residential development. Jamaica (Current Station) Station Siting Points: 25 A major activity center and transit hub, with existing connections to the E and J/Z subway lines, local buses, the LIRR, and AirTrain JFK. The existing station infrastructure could also provide a base for new rolling stock and operations. This station is at the core of the commercial, residential, and civic hub of Jamaica. Very favorable real estate market and value created by new transit connections. The challenge is the allocation of the value between the taxing jurisdictions, pinpoint the exact benefit created by the project, boundaries of the district, and demonstrate strong nexus between project and value capture. Other applicable VCF mechanisms are joint development and special assessment district. The proposed station serves existing employment centers, surrounding population has potential for additional station area residential and commercial growth. There is dense residential development in this corridor and a commercial strip on Sutphin Boulevard.
+```
+[p264_c0003] _3-59_
+
+## Page 265
+
+### [p265_c0001] Lower Montauk Branch Rail Study
+### [p265_c0002] Station Profile Characteristics
+### [p265_c0003] Value Capture Conditions
+### [p265_c0004] Future Growth Potential
+[p265_c0005] Note: Eight stations recommended for reactivation are based on meeting threshold of 13.5 points as described in the Lower Montauk Rail Project, Station Siting Report. Additional information from NYC DCP when available will refine growth potential description in the tables and information contained in the report. Refer also to the Land Use/Zoning Report.
+### [p265_c0006] 3.5.7 Cross Harbor Freight Tunnel Implications for Development in Corridor
+[p265_c0007] As discussed in Chapter 1, the proposed Cross Harbor Freight Project (CHFP) has gone through an initial Tier 1 round of planning and environmental studies, with more detailed Tier 2 studies projected to start in 2018. Completion of a new rail freight tunnel connecting rail yards in Jersey City, NJ and Sunset Park in Brooklyn could dramatically increase freight activity on the Lower Montauk Branch, which would be expanded and upgraded within and west of Fresh Pond Yards. The exact effects upon the land uses along the Branch remain to be seen. However, potential land use conversions from freight-related activities to more mixed-use commercial and other development near proposed rail stations would likely be altered if the full CHFP were to be implemented – a future in which the very concept of joint passenger and freight service on the Lower Montauk would most likely be substantially more expensive if not infeasible.
+### [p265_c0008] 3.5.8 Rail Transit Investment: Property Value Effect, TIF Examples, and a Preliminary Analysis of Revenue Yield
+[p265_c0009] This section builds upon the prior section discussions about value capture mechanisms and the conditions that are favorable for value capture financing to flourish in a regional setting. This section describes the phenomenon of “transit premium” effect on property value, identifies several examples in North America that have leveraged this dynamic for TIF, and lastly calculates a potential preliminary revenue yield applicable to the existing and potential future condition scenario found within the Lower Montauk Rail Corridor. The results are preliminary but informative of the potential extent and magnitude of the preliminary revenue estimates.
+### [p265_c0010] 3.5.8.1 Economics of Value Generation: Transit and the Property Tax Base
+[p265_c0011] In general all types of mass transit service can increase the development potential of real estate in proximity to high-capacity transit lines and stations, and thereby have potential to increase property values as seen in Figure 3-26. This “transit premium” phenomenon as it is called can range from a few percent increases to over 150 percent above the existing baseline property value over time.
+[p265_c0012] _3-60_
+
+## Page 266
+
+### [p266_c0001] Lower Montauk Branch Rail Study
+[p266_c0002] _Figure 3-26 Transit Creates Value Concept_
+> [p266_c0003] The graph illustrates the concept of 'Transit Creates Value'. The vertical axis is labeled 'Value (Dollars)' and the horizontal axis is labeled 'Time (Years)'. Two lines represent property value over time. The lower line, in red, is labeled 'Value Without Transit'. The upper line, in blue, is labeled 'Value With Transit'. The blue line starts at the same point as the red line at the 'Transit Project Announced' mark. After this point, the blue line rises more steeply, creating a shaded area between the two lines. This shaded area is divided into two sections: 'Pre-Transit/Speculation' (the area between the lines before the 'Commencement of Service' mark) and 'Post-Transit Value/Creation' (the area between the lines after the 'Commencement of Service' mark). The 'Commencement of Service' mark is indicated by a vertical arrow pointing down to the blue line.
+[p266_c0004] As described previously, the extent of this cause-effect relationship is affected by many factors and conditions. Accurately anticipating the impacts of capitalization of transit investments on property values requires understanding the local development markets and the nature of the relationship between public mass transit and land values. The scale and character of development is influenced by the frequency and capacity of the rail service provided, as well as the ability of the surrounding area to plan for and provide the other necessary factors to support mixed-use, high-density development around stations. Connecting infrastructure, available parcels of sufficient size to accommodate the new developments, and appropriate zoning are all examples of these necessary and complementary elements of station area development. There are also many other factors that need to be in place to have a full "development package". These additional factors included the presence of good schools, low crime rates, willing institutional and local government partners, supporting infrastructure such as sidewalks and parking (as applicable).
+[p266_c0005] "Location, location, location" near public transportation stations has become the real-estate mantra according to a 2013 study released by the American Public Transportation Association (APTA) and the National Association of Realtors (NAR). Data in the study revealed that during the last recession, property values performed 42 (41.6) percent better on average if they were located near public transportation with high-frequency service: "While residential property values declined substantially between 2006 to 2011, properties close to public transit showed significantly stronger resiliency." (APTA/NAR, 2013)
+[p266_c0006] The following are a few examples from the cited study:
+- [p266_c0007] • In Boston, residential property in the rapid transit area outperformed other properties in the region by 129 percent; • In the Chicago public transit area home values performed 30 percent better than the region; • In Queens, New York there was a 13 percent increase in value within the three station areas in the neighborhoods of Forest Hills and Rego Park; and,
+[p266_c0008] _3-61_
+
+## Page 267
+
+### [p267_c0001] Lower Montauk Branch Rail Study
+- [p267_c0002] • In San Francisco, 37 percent; Minneapolis-St Paul, 48 percent; and in Phoenix 37 percent. 1
+[p267_c0003] New York City in many ways is North America's premier TOD and transit system. New York City has grown dramatically and its growth has been served by high performance modes like mass transit, walking and cycling, not by travel by roads and bridges. New York City added more than 500,000 jobs between 2010 and 2015—more jobs than the City added in the prior 30 years (1980 to 2010). The New York City subway system carries nearly 2.5 times the annual ridership of the other nine largest metro systems in the nation combined. The City's extensive mass transit investments historically and recently generate noticeable appreciation in property values than would otherwise occur without it. 2
+[p267_c0004] The correlation between ease of access to Manhattan and economic benefits was demonstrated during the ARC project planning and design. 3 Fairly recently, the Regional Plan Association published a landmark report in 2010 on the relationship between property values and transit investment that subsequently coined the term "The ARC Effect". 4 The report findings indicated that the significantly improved commutes that Access to the Region's Core (ARC) project would make possible would also boost home values (by up to $18 Billion) in proximity to the new one-seat-ride NJ Transit train stations, increase municipal tax bases and reduce the pressure to raise property tax rates in the region.
+[p267_c0005] Table 3-18 summarizes the empirical findings over time with regard to transit investment and property values in five example cities. These cities noted are typically used to benchmark real estate and transit performance in the U.S.
+[p267_c0006] _1 The 2013 study looked at five regions, which illustrate the types of high-frequency public transit systems throughout the U.S. High-frequency public transportation includes subway (heavy rail), light rail and bus rapid transit. This sample forecasts the nationwide average (42 percent) variance among properties located near high-frequency public transportation and those that are located farther away from public transit. http://www.apta.com/resources/statistics/Documents/NewRealEstateMantra.pdf_
+[p267_c0007] _2 Second Avenue Subway example of real estate effects is described here: https://www.nytimes.com/2017/07/07/realestate/second-avenue-subway-brings-new-development.html ; general recent article on property development around transit hubs in New York City is described here: https://www.nytimes.com/2017/05/23/business/transit-rail-property-development.html_
+[p267_c0008] _3 http://www.nytimes.com/2010/10/24/realestate/24nizo.html_
+[p267_c0009] _4 http://library.rpa.org/pdf/RPA-The-ARC-Effect.pdf_
+[p267_c0010] _3-62_
+
+## Page 268
+
+### [p268_c0001] Lower Montauk Branch Rail Study
+[p268_c0002] _Table 3-18 Property Effects from Legacy and New Rail Transit Systems in North America_
+[p268_c0003]
+
+```text
+Location Transit Project Property Value Effects Jersey City, NJ Hudson-Bergen Light Rail Transit System (opened in 2000) by NJ Transit 18.4% escalation over ten year period within ¼ mile of station (Kim and Lahr, 2014) 5 Denver, CO Regional Transportation District (RTD), funded by FasTracks program of billion dollar investment in 122 new miles of light and commuter rails and 57 rail transit stations 20-40% increase or more (depending on station and multimodal conditions) above baseline property values on average at LRT stations. 6 Other examples: Denver Union Station mega-TOD with TIF, TIFIA/RRIF funding. Denver has also implemented several mixed-income residential TOD projects. Minneapolis-St. Paul, MN Metro Transit, Blue Line (Hiawatha, opened 2004), Green Line LRT (opened June 2014) Residential and commercial property values increased 10-80% for Blue Line above baseline plus catalyzed new development. 7 Portland, Oregon Many LRT segments operated by TriMet. Eastside Max (opened 1986) Today an extensive network of streetcar, LRT and commuter rail service along with multimodal walking and bicycling. Boost in property values range from 10-70% over average ten year period. Within 2 years after 1986 start of Eastside, properties within 1600ft of transit were 10.6% greater in value than homes outside of the area. Boston, MA MBTA rail system Average range from 20-40% over a 10 year period examining data on pricing. 8
+```
+[p268_c0004] Source: AECOM, July 2017
+### [p268_c0005] 3.5.8.2 Examples of Tax Increment Financing (TIF) to Fund Transit Projects
+[p268_c0006] Tax increment financing may take several forms along a spectrum of unique funding structures. For example, the “TIF bond” could be structured either as a conventional municipal tax increment revenue bond financing or as a federal Transportation Infrastructure Finance and Innovation Act (TIFIA) loan or a combination thereof. 9
+[p268_c0007] Tax increment bonds utilize the increased property tax revenues from multiple properties that result from the transit investment. Building a new rail transit line can increase surrounding land values and
+[p268_c0008] _5 Kim, K., & Lahr, M. L. (2014). The impact of Hudson-Bergen Light Rail on residential property appreciation. Papers in Regional Science , 93(S1), S79-S97. The study controlled for growth in the area of focus beyond the ¼ mile radius of stations._
+[p268_c0009] _6 http://blog.usajrealty.com/posts/rtd-light-rail-transit-oriented-development-connect-to-denvers-growth_
+[p268_c0010] _7 https://www.nctr.usf.edu/wp-content/uploads/2013/03/16.1_cao_ko.pdf ; http://finance-commerce.com/2016/04/maar-study-light-rail-boosts-home-prices/_
+[p268_c0011] _8 http://realestate.boston.com/buying/2016/05/03/map-how-much-costs-mbta-stops/ ; Greenbush Commuter Rail line examined here: http://digitalcommons.colby.edu/cgi/viewcontent.cgi?article=1040&context=jerec_
+[p268_c0012] _9 Transportation Infrastructure Finance and Innovation Act (TIFIA) is a federal government program that provides transportation projects with low-interest, flexible loans, loan guarantees, and standby lines of credit. These loans and loan guarantees can save millions of dollars in financing charges over a standard public bond offering. Moreover, project sponsors have the option to defer repayment, which can allow a project to successfully scale up and begin generating tax revenues or other revenues before repayment to the Federal Government comes due._
+[p268_c0013] _3-63_
+
+## Page 269
+
+### [p269_c0001] Lower Montauk Branch Rail Study
+[p269_c0002] serve as a catalyst for new real estate development. The increase in property taxes is dedicated to making payments to bondholders. Typically, how a TIF is organized is that tax increment funds are set aside from properties within a defined geographic zone around the project alignment or station areas for as long as necessary to close out project debts (typically 20 or 30 years).
+[p269_c0003] HOW “TIF” WORKS >> Property taxes are typically expressed as a certain number of dollars per $100 of assessed value. For instance, at $2 per $100 of assessed value, a $375,000 business property would owe $7,500 in property taxes each year. If the assessed value of the same property rose to $500,000, after the rail transit project was completed, the property tax liability would rise by $2,500 to $10,000 in total. The $2,500 increase in property tax revenue could be dedicated to covering construction costs or making debt service payments.
+[p269_c0004] As mentioned previously in this report, TIF can be an important source of revenue, but would likely not be the only source for project financing for this type of project. Putting the financing package together involves governance, strategy, financial fidelity, and real estate/land use planning issues.
+[p269_c0005] In canvassing the most suitable examples applicable to the Lower Montauk Branch, the majority of cities use tax increment financing for placed-based, station area or multimodal hubs with integrated TOD projects. There are a few prior examples in the use of TIF for corridor-wide infrastructure projects; however the cases are growing with several corridor-based projects contemplated or underway. Table 3-19 summarizes seven example projects that have used TIF to fund transit investments.
+[p269_c0006] _Table 3-19 Examples of Local Jurisdictions that have used TIF to Fund Transit Projects_
+[p269_c0007]
+
+```text
+Location TIF Mechanism Houston, TX. In 2013 Houston announced a plan to build a BRT line on Post Oak Boulevard in Uptown, connecting Uptown to two public transit centers to the north and south of the area. The plan calls for separated bus lanes in the median of Post Oak Boulevard, a new public transit center to the south of the neighborhood, and new infrastructure connecting the project to the Northwest Transit Center. The total cost of the public transit center improvements and BRT is projected at $177 million, with 46% of the cost paid for by Uptown Tax Increment Reinvestment Zones (TIRZ) revenues. Similar to using a TIF, they use TIRZ with specific criteria for transportation investment including sidewalks and utilities. The TIRZ was created in 1999 to improve mobility in the Uptown area. TIRZs collect revenues (property tax revenues are capped at a certain amount) any revenue collected over that amount is directed into a tax increment fund. London’s Crossrail Ltd. 80% complete and scheduled to open in 2018. A new railway line (Elizabeth Line) running from Reading and Heathrow in the west, through 26 miles of new tunnels under London to Shenfield and Abbey Wood in the east. Crossrail uses several types of corridor-wide value capture mechanisms in its funding package. A 2% additional Business Rate Supplement is charged to large business properties in London –expected to finance £4.1 billion for the project. A community infrastructure levy (CIL) was also introduced to finance the project. At estimated at £600 million (~$790 million USD) yield. This is a special charge paid by developers of specific new projects in London. The charge is based on square footage on a sliding scale, or approx. 1% of the final value. Revenue will also be generated using a TIF structure in the Royal Docks Enterprise Zone area along the project corridor that passes through the mega redevelopment area Chicago, IL. Within the CTA/METRA transit system, TIF dollars have been slated to finance the LaSalle Street Intermodal station to connect Financial Plaza and Congress Parkway. In addition, the City of Chicago Capital Improvement Program funded three public transportation projects with TIF revenue located in the Central Loop. TIF Funded Project Examples and TIF revenue proceeds: Randolph/Washington Station —$13,500,000 Dearborn Subway — Lake/Wells Mezzanine & Lake: Platform and connections —$1,200,000 Misc. Transit Projects — Central Loop at $24,000,000 Chicago, IL. Chicago Transit Authority, Red-Purple Line Modernization Project. Largest project in CTA history organized TIF districts within a half-mile on each side of “L” tracks, and within a half-mile of the center of the Union Station building. The districts could be in
+```
+[p269_c0008] _3-64_
+
+## Page 270
+
+### [p270_c0001] Lower Montauk Branch Rail Study
+[p270_c0002]
+
+```text
+Location TIF Mechanism in several phases. 24/7 service, 33 stations, 22 miles, 240,000 average weekday riders. Phase 1 $2.1B total cost. $1,082 million from Federal Grant; $625 million from Transit TIF Funds; $428M from FTA Funds. June 2016, Illinois General Assembly approved the new TIF financial tool. place for up to 35 years and would remove a portion of increased property tax revenues within their boundaries to pay for the projects. Chicago Public Schools keeps its entire share of the base tax revenue as well as its entire share of the incremental tax revenue growth. All other taxing bodies keep their entire share of the base tax revenue, and 20% of their share of the incremental tax revenue growth. Remaining incremental tax revenue may only be used for transit infrastructure. Denver, CO. Union Station Metropolitan District TIF. Denver Union Station is mega-TOD and multi-modal hub of Denver's FasTracks rail system, and modest Amtrak rail service. Construction on the station began in December 2012 and opened in 2015. Nearly 40% of the cost of a half billion dollar transit and public realm program was funded through developer payments and the pioneering use of federal transportation loans (both TIFIA and RRIF) supported by tax increment and special assessment revenues. In 2004 0.4% sales tax increase passed to help fund the project; 2008, the city council created a TIF district (Metropolitan District) for the station and surrounding 20 acres. The additional revenues from growth in the TIF district are used to pay off federal TIFIA/RRIF loans. Portland, OR. The Airport MAX is a 5.5-mile light rail extension to Portland's existing Red Line, connecting Downtown Portland to the Portland International Airport (PDX). The extension opened in 2001 as the first train-to-plane transit service on the West Coast. The project was built through a unique public-private partnership, which delivered the project under budget and within just five years. Design-Build $125.8 million, total project cost (2000). Local Funding Sources: City of Portland bonds backed by TIF revenues at $23.8 million; TriMet General Funds (Payroll and self-employment taxes) at $45.5 million; Port of Portland Airport Passenger Facility Charge Revenues at $28.3 million. Private Funding Sources: Bechtel at $28.2 million Bechtel Enterprises received an 85-year, rent-free lease to develop 120-acre mixed-use commercial site near the airport in return for funding 23 percent of project costs and delivering the project through a design-build contract. San Francisco, CA. Transbay Transit Center will be a new terminal in San Francisco. Phase 1 of the project consists of a new terminal and bus storage facility. Phase 2 extends Caltrain's commuter train line 1.3 miles from its current terminal to the Transbay Transit Center. Phase 3 will build a new neighborhood on 40 acres around the public transit center. Construction of the public transit center and bus storage facility began in 2011, and completion of the project is expected in 2017. The project is expected to cost $4 billion and the public transit hub will connect services from 11 different regional public transportation systems. . Value capture revenues will be generated by the redevelopment around the public transit center. Three million square feet of new office and commercial space, 100,000 square feet of retail, and 2,600 homes will be developed in the area. The TIF district around the project is expected to generate $1.4 billion over 45 years.
+```
+### [p270_c0003] 3.5.8.3 Preliminary Estimate of Revenue Yield
+[p270_c0004] A preliminary estimate of potential revenue yield -- the money proceeds from debt supported bond financing that could be used to partially fund the project's capital costs -- was calculated based on (1) the Lower Montauk Branch Corridor's existing property tax base, and (2) a projection of potential growth in future real estate value around key station areas. The future property value scenarios were derived based on a conservative estimate of future transit-supported conditions in these areas, assumed to be supported by new mixed-use rezoning and the redevelopment and infill potential to accommodate this future growth. The assignment of growth factors was bracketed by typical average growth rates and threshold levels as described below.
+[p270_c0005] Property and land data for the overall corridor and station areas were collated, and numerical values calculated as described for each category in Table 3-20 below. Property base data was collated corridor wide and at five stations (Grand Avenue/Flushing Avenue; Fresh Pond/Metropolitan Avenue; Metro Mall; 80th Street; and Woodhaven Boulevard). Stations with existing subway service at or near the station (Jamaica, Richmond Hill, Long Island City) or with relatively limited opportunity for station-area growth (Haberman) were not included as likely value-capture sites.
+[p270_c0006] _3-65_
+
+## Page 271
+
+### [p271_c0001] Lower Montauk Branch Rail Study
+[p271_c0002] _Table 3-20 Description of Data Categories and Assumptions_
+[p271_c0003]
+
+```text
+Data Category Description and Assumptions Size in Acres Total land area corridor-wide and within a station area. 5,552 acres is the size of the corridor within a ½ mile area of the alignment. Non-developable Acres Acreage calculation that deducts land uses such as cemeteries; parks; churches; institutions that typically are exempt from taxation and off-limits to as-of-right zoning and other restrictions apply. Non-developable Acres Percent Ratio of total acreage to non-developable acres. Property Productivity Index Calculated as the ratio of land value to market value. This is an indication of infill and redevelopment potential, recognizing that other factors such as availability of infrastructure, utilities, and supportive zoning are important and also enablers of redevelopment. Market Value The starting point for calculating the taxable value of a property is its market value, which is the cash price for a property in a competitive and open market. The NYC Department of Finance determines market value for properties using three approaches: (1) the comparable sales or market data (2) income, and (3) the cost or summation. All properties are reassessed each year. The new market value of a property is multiplied by the class-specific assessment ratio to determine the new assessed value. Taxable Value Total taxable value is equivalent to assessed value, the base for determining taxpayer liability. The estimated annual growth rate for taxable assessed value is 4.2 percent from FYs 2016-2020 by NYC Comptroller. This value was used to assign growth factors which are conservative. Incremental Tax Base Captured An estimate of value-capture percentage. This percentage allocation can vary significantly depending on General Fund circumstances, project cost, policy and statutory pass-through for revenue agreements to utilities, schools, fire districts, etc. A conservative growth scenario incremental tax base capture rate of one percent (1%), two (2%), and four (4%) estimate was calculated to illustrate potential yields. Annual Tax Increment Available Calculation derived from the percent of taxable property value that could reasonably be captured and used for bond financing. Assumed a % capture rate as noted above. Debt Supported Financing This category is an indication of financing capacity. The calculation assumed 20 year financing at 5% interest rate. No estimate of fees or financing charges. Debt is issued by the City, or on behalf of the City through a number of public benefit corporations or authorities. In general, (on a citywide basis) the amount of outstanding City debt counted against the City's debt limit is well under the City's statutory debt-incurring power. Refer to discussion below. Growth Scenarios 20 year growth scenario of market value based on estimate of land productivity, infill, and trends. Woodhaven and Metro Mall station areas assigned 4% per annum growth rate per assumption of supportive land use/zoning and redevelopment potential. Refer also, to the land use/zoning report. All others assigned a 3% growth rate above baseline market value. The corridor average assumed a growth rate of 2% per annum. City trends in property rates and rationale for growth factors noted below.
+```
+[p271_c0004] The potential TIF-supported bond financing would clearly vary based on the percent share of added property value that can be captured. A calculation of debt bond financing capacity at varying “theoretical” value capture rates is shown in Table 3-21.
+[p271_c0005] For example, at the low-end at one percent (1%) value capture rate or VCR (how much of the increase in tax revenue would be captured to support bonds to help finance a portion of the project), the results of the analysis of property tax base and potential bond financing capacity indicate the following:
+- [p271_c0006] • 2017 Baseline (without development of Lower Montauk Rail Project) at approximately $354 million. • Under the projected Growth Scenario (with development of the LMRP) $525 million debt supported bond financing capacity.
+[p271_c0007] _3-66_
+
+## Page 272
+
+### [p272_c0001] Lower Montauk Branch Rail Study
+- [p272_c0002] • These figures represent a 20% and 29% financing share from value capture if implemented on a corridor-wide basis. • 2017 Five Station baseline aggregate total at $39 million (baseline, without LMRP) and a Five Station Growth Scenario at $78 million (with LMRP) in debt supported bond financing capacity. This represents a 2% to 4% financing share from value capture if implemented only on a five-station basis.
+[p272_c0003] At a theoretical conservative mid-point of 2% VCR of the incremental tax base (of the Five Station group) would result in potential debt supported bond financing of approximately $155 million, or a 8.5% share of projected capital costs. At a theoretical conservative mid-point of 2% VCR of the incremental tax base (of the Five Station group) would result in potential debt supported bond financing of approximately $155 million, or a 8.5% share of projected capital costs.
+[p272_c0004] _Table 3-21 Value Capture Rate and Growth Scenarios: Corridor and Stations_
+[p272_c0005]
+
+```text
+Incremental Tax Base Captured Debt Supported Bond Financing Estimate Corridor Level Debt Supported Bond Financing Estimate at Five Stations 2017 Baseline 2017 with LM Rail Project 2017 Baseline 2017 with LM Rail Project 1% $354,000,000 $525,000,000 $39,000,000 $78,000,000 2% $707,000,000 $1,050,000,000 $85,000,000 $155,000,000 4% $1,413,000,000 $2,099,000,000 $156,000,000 $310,000,000
+```
+[p272_c0006] Source:
+[p272_c0007] AECOM, 2017. Refer to Capital Cost report for details of the $1.8 billion ($2016).
+[p272_c0008] A modest four (4%) VCR indicates that debt supported bond financing from the selected TOD market stations would contribute a notable share of the approximately $1.8 billion capital cost of the project (see Lower Montauk Rail Study: Capital Costs for further details). Refer to Table 3-22 for detailed tabulation of calculations regarding the four (4%) VCR.
+[p272_c0009] While it is well-below the average, the Corridor’s relatively low density, the substantial station capture area radius of ½ mile, and the large adjacent areas of limited potential growth (parks, cemeteries) would warrant a more modest transit-increment growth level. As shown in Table 3-21, even with 3%-4% in annual property growth in these station areas and a 4% VCR, the potential debt financing capacity for the Lower Montauk Corridor would still cover less than 17% of total capital costs, whereas 4% VCR corridor level far exceeds the budget requirement of estimated $1.8 billion total project cost. The total project cost includes both freight and rail transit infrastructure improvements needed to construct the LMB alternative. About 60% of the total project cost is attributable to new freight related infrastructure. A 2% VCR corridor wide could potentially contribute to 58% of total project cost. Corridor wide even a baseline estimate with a 4% VCR contributes approximately 78% of total project cost.
+[p272_c0010] Another option is the transfer of development rights 10 (often referred to as “air rights”), where unused buildable floor area from one zoning lot can be sold off and added to the development potential of an adjacent lot. This approach to development has previously been used to raise revenue for the MTA. In
+[p272_c0011] _10 http://www1.nyc.gov/site/planning/zoning/glossary.page#development_rights_
+[p272_c0012] _3-67_
+
+## Page 273
+
+### [p273_c0001] Lower Montauk Branch Rail Study
+[p273_c0002] 2015, the MTA sold several small parcels and air rights to the developer of an adjacent property 11 . The sale allowed an additional 39 stories to the high rise building, while also generating an additional $56M for the Transit Authority.
+[p273_c0003] To put this analysis in context, New York has become a trillion-dollar city, according to city tax assessor's data. The City's new tax rolls indicate rising values for both residential and commercial properties at $1.2 trillion in 2017, an 8.74% increase from last year (2016) and 10.2% from 2015. The estimated annual growth rate for taxable assessed value is 4.2% from FYs 2016-2020. On the basis of this trend curve, the indexing of growth and capture rate is reasonable. In addition, in FY 2016, the City's general revenues were almost $55 billion. Real estate taxes were the greatest single source of general revenues, totaling over $23 billion, followed by personal income tax, totaling almost $12 billion. However, it's also understood that the growth in real estate value in the past few years has been among the highest in recent decades.
+[p273_c0004] _11 http://www.nydailynews.com/new-york/queens/mta-sells-56m-lot-developer-eyeing-queens-highrise-article-1.2162400_
+[p273_c0005] _3-68_
+
+## Page 274
+
+### [p274_c0001] Lower Montauk Branch Rail Study
+[p274_c0002] _Table 3-22 Value Capture Financing: Estimate of Incremental Revenues by Baseline, Modest and Five-Station TOD Growth Scenario_
+[p274_c0003] _Value Capture Financing: Estimate of Incremental Revenues by Baseline, Modest and Five Station TOD Growth Scenario_
+[p274_c0004]
+
+```text
+Information and Values Total, Lower Montauk Corridor Five Station Share of Total Grand Ave./Flushing Ave. Fresh Pond/Metro Ave. Metro Mall 80th Street Woodhaven Blvd. Size in Acres 5,552 18% 124.4 191.4 288.2 145.4 233.6 Nondevelopable Acres 1,869 25% 1.3 96.9 177.4 48.9 142.8 Nondevelopable Acres Percent 33.7% n/a 1.1% 50.6% 61.5% 33.6% 61.1% 2017 Baseline Information Corridor Baseline 2017 Five Station Share of Total ***** Five Station 20-year Baseline Scenario without projection of TOD redevelopment ***** Market Value $6,295,551,654 $694,643,513 $124,150,708 $96,091,424 $120,299,943 $150,134,241 $203,967,197 Taxable Value $2,832,998,244 $312,589,581 $55,867,819 $43,241,141 $54,134,974 $67,560,408 $91,785,239 Incremental tax base captured 4.00% 4.00% 4.00% 4.00% 4.00% 4.00% 4.00% Annual tax increment available $113,319,930 $12,503,583 $2,234,713 $1,729,646 $2,165,399 $2,702,416 $3,671,410 Debt supported financing $1,412,216,801 $155,822,284 $27,849,460 $21,555,208 $26,985,657 $33,678,081 $45,753,878 Property Productivity Index 3.51 3.51 2.73 2.76 3.38 2.07 Growth Scenarios Corridorwide and at each of the Five Station Areas: Growth Scenarios Corridor 20-yr Modest Growth 2% Annual Five Station Aggregated Total ***** Five Station 20-year Annual Growth Scenario with projection of TOD redevelopment ***** 3% per year 3% per year 4% per year 3% per year 4% per year Grand Ave./Flushing Ave. Fresh Pond/Metro Ave. Metro Mall 80th Street Woodhaven Blvd. Market Value $9,354,858,587 $1,379,450,163 $224,229,989 $173,551,800 $263,591,989 $271,159,139 $446,917,246 Taxable Value $4,209,686,364 $620,752,573 $100,903,495 $78,098,310 $118,616,395 $122,021,613 $201,112,761 Incremental tax base captured 4.00% 4.00% 4.00% 4.00% 4.00% 4.00% 4.00% Annual tax increment available $168,387,455 $24,830,103 $4,036,140 $3,123,932 $4,744,656 $4,880,865 $8,044,510 Debt supported financing $2,098,479,878 $309,437,966 $50,299,223 $38,931,103 $59,128,899 $60,826,360 $100,252,381
+```
+[p274_c0005] Source: NYC Pluto GIS database (accessed July 2017); AECOM
+[p274_c0006] $2017 current dollars
+[p274_c0007] Nondevelopable uses are parks, open space, civic, cemeteries
+[p274_c0008] Incremental base capture 4.0%
+[p274_c0009] Corridorwide modest growth scenario at 2% rate
+[p274_c0010] TOD growth scenarios defined by growth expectation and projected value by station area
+[p274_c0011] _3-69_
+
+## Page 275
+
+### [p275_c0001] Lower Montauk Branch Rail Study
+[p275_c0002] As shown in Table 3-23, the growth rate projections assume tax revenue growth will continue to slow in FY 2017 to 1.7 percent before accelerating in FY 2018 as collections from non-property taxes begin to improve. The projected slowdown in tax revenue growth in FY 2017 is attributed mainly to an anticipated decline in revenues from the real-estate-related taxes which comprises of the real property transfer tax (RPTT) and the mortgage recording tax (MRT), and a decline in tax audit revenues. The projected decline in audit revenues is a reflection of unusually large payments from sales tax audits in FY 2016.
+[p275_c0003] _Table 3-23 Five-year Property Tax Revenue Growth Rates_
+[p275_c0004]
+
+```text
+Agency Estimate 2017 2018 2019 2020 5-Yr AAG Mayor 4.5% 5.7% 5.9% 4.7% 5.4% Comptroller 4.5% 5.9% 6.2% 5.3% 5.8%
+```
+### [p275_c0005] 3.5.8.4 Available Debt Financing Capacity
+[p275_c0006] New York City's general debt limit, as provided in the New York State Constitution, is 10 percent of the five-year rolling average of the full value of taxable real property. New York City's outstanding debt as a percentage of full value of real property in FY 2015 was 9.1 percent and is projected to slow to approximately 3 percent between FY 2017 and FY 2026 (NYC Office of Management & Budget, 2017). At times New York City debt is more than twice the 4.4% average of comparable other cities. The next two largest cities by population, Los Angeles and Chicago, have current ratios that are lower than New York City's, 3.7 and 7.6 percent, respectively.
+[p275_c0007] The City's FY 2017 general debt-incurring power of $90.24 billion is projected to increase to $97.26 billion in FY 2018, $103.47 billion in FY 2019 and $110.30 billion by FY 2020. The City funded capital program relies almost exclusively on the issuance of bonds. The City's annual borrowing excluding NYC Municipal Finance Authority (NYW) Bonds debt grew from $1.08 billion in FY 1982 to $4.40 billion in FY 2016, with the highest annual borrowing of $7.75 billion occurring in FY 2009. The FY 2016 borrowing was below the prior ten-year average of $5.7 billion. OMB expects the City's borrowing to average $7.62 billion annually between FYs 2017 through 2020, with a peak estimated borrowing of $8.48 billion in FY 2020.
+[p275_c0008] Excluding NYW bonds, the City has issued five types of tax-exempt debt to finance or refinance its capital program with General Obligation (GO) bonds accounting for 45.5 percent of the total. The next largest category of debt is the New York City Transitional Finance Authority (TFA) fixed rate debt that is used for TFA Building Aid Revenue Bonds (BARBs).
+[p275_c0009] _3-70_
+
+## Page 276
+
+### [p276_c0001] Lower Montauk Branch Rail Study
+[p276_c0002] Certain entities aside from the City issue debt to finance capital programs within the City. This can take the form of a Special Purpose Vehicle (SPV). While the City may be obligated to pay a certain portion of these debts, they are not counted towards the City's statutory debt limit. For example, the City is responsible, subject to appropriation, for the interest on the previously discussed Hudson Yards Infrastructure Corporation (HYIC) debt (but not its related principal of $3 billion) to the extent that revenues from the Hudson Yards district are insufficient to pay interest.
+[p276_c0003] Further, a number of independent authorities issue bonds to finance infrastructure projects in the City and throughout the metropolitan area. The two largest issuers are the New York City Municipal Water Finance Authority (NYW) already mentioned above and the New York State Metropolitan Transportation Authority (MTA). Both of these entities have no statutory claim on the City's revenues. Thus, the debt of NYW and MTA is not an obligation of the City.
+[p276_c0004] Debt issued to fund the MTA's capital program is secured by several sources:
+- [p276_c0005] • Revenues from system operations; • Surplus MTA Bridges and Tunnels revenue; • State and local government funding; and • Certain taxes imposed in the metropolitan commuter transportation mobility tax district, which includes the counties of New York, Bronx, Kings, Queens, Richmond, Rockland, Nassau, Suffolk, Orange, Putnam, Dutchess, and Westchester.
+[p276_c0006] As of June 30, 2016, the MTA had $37.62 billion of debt outstanding, an increase of $1.57 billion, or 4.4 percent, from June 30, 2015. Outstanding MTA debt has increased in all but one of the last fifteen years. MTA debt has grown by 165 percent or $23.4 billion since FY 2000. This growth rate is more than 53 percent higher than the growth in gross NYC indebtedness over the same period.
+[p276_c0007] With regard to Value Capture tools described in this report, the cornerstone of successful value capture being implementation is the clear identification of the broader economic opportunity associated with (a) the transit project being considered, and (b) embracing a value capture strategy that optimizes benefits both for public and private partners.
+[p276_c0008] As the case study literature demonstrates, coordination among funding partners and stakeholders early in the project planning process yields positive results. Additionally, early legwork that set the stage for value capture through legislation and rulemaking would be essential to ensure that the project could readily access value capture tools when needed.
+[p276_c0009] Lastly, there are certain limitations to the authority that the City has with regard to its financing tools, taxation, and economic development. The City ascribes to the Dillon's Rule, which dictates that municipalities only have the powers explicitly given to them by the state. 12 The Real Property Tax is the City's largest revenue producer, accounting for 40% of total tax revenues and 24% of revenues from all sources in FY 2016. New York City has imposed the Real Property Tax (RPT) in its current format since 1983 under the NYS Real Property Tax Law, as amended by Chapter 1057 of the Laws of 1981 (referred
+[p276_c0010] _12 Most states, including New York, have modified Dillon's Rule by providing home-rule powers to local governments. Home rule authority does not extend to autonomy over the power to tax, with few exceptions. The only tax-related action that NYC, a home rule jurisdiction, is permitted to take without NYS legislative and gubernatorial approval is the setting of its annual Real Property Tax Rates (with limitation by the state constitution)._
+[p276_c0011] _3-71_
+
+## Page 277
+
+### [p277_c0001] Lower Montauk Branch Rail Study
+[p277_c0002] to as S.7000A). Thus, as discussed above, unless structured as a SPV or other entity, the City may need to go to Albany for legislative authorization with regard to utilization of TIF financing mechanism securitized by portions of the property tax revenues within a geographic district of Queens.
+### [p277_c0003] 3.5.9 Conclusions
+[p277_c0004] Value capture financing (VCF) has the capacity to contribute to financing the overall cost of the Lower Montauk Project. At a minimum, baseline growth estimate of value capture rate (VCR) could contribute to fund the project's total cost.
+[p277_c0005] This mechanism, with a conservative and reasonable growth rate and VCF capture rate, could generate notable funds, and a modest portion of the overall projected total costs. The potential to allocate future value-capture is not realistic at multimodal hubs experiencing high-growth such as Long Island City and Jamaica. Due to the convergence of modes and their locations, it would be challenging to parse out future revenues to dedicate to the Lower Montauk Branch.
+[p277_c0006] If the project were developed by the City, the initial capital investment would likely be eligible for financing by a bond issue of the New York City Transitional Finance Authority, a public benefit corporation established to fund a portion of the City's capital program, or special purpose vehicle (SPV) set up like what was done for the Hudson Yards Project.
+[p277_c0007] The transit service provided by the Lower Montauk Branch could potentially catalyze new development and redevelopment around the proposed stations, giving a value capture mechanism the potential to generate local revenue to help fund a portion of the project. Defining the scale, extent and timing of these value capture attributes are beyond the scope of this feasibility study. The timing and extent of future development is subject to a variety of factors, particularly the as-of-right zoning for higher - density, business cycles, the preferences of potential tenants, and the supply of competitive projects. In addition, whether or not taxing jurisdictions (e.g., School District) participates in any value capture district will also have an impact on the amount of revenue that could be generated and passed-through to the project.
+[p277_c0008] The station selection process used as part of the Lower Montauk Branch Rail Study developed selection criteria that included, among other factors, each location's potential to promote growth in the surrounding residential, commercial, and industrial sectors. Beside optimal station location siting, station design, architecture, and configuration to maximize benefit are important components to meet legal design standards, rider amenity needs, and to fit within the broader station area context, thereby contributing to value-creation along the value-chain. The proposed project concept used for this study assumed relatively modest track-side stations, typical of lower-volume commuter rail stations on the LIRR. It is possible that some stations could potentially be incorporating into a larger building or development, which could help enhance use of the service and offset some of the station's costs.
+[p277_c0009] This phase of the project is a feasibility study that has been organized to test concepts given the physical, right-of-way, operational and station siting characteristics. If warranted, the next steps in the project's evolution would be to further advance concepts in the corridor, including the following elements:
+[p277_c0010] _3-72_
+
+## Page 278
+
+### [p278_c0001] Lower Montauk Branch Rail Study
+- [p278_c0002] • Environmental Review; • Detailed rail planning and engineering studies; • Projecting future growth scenarios based on corridor-wide and station area parcel-level data, and the related; and • Funding and financing assessments of the federal, state and local sources and project specific uses of capital proceeds.
+[p278_c0003] As described in the above case studies, building large-scale transit projects typically requires agencies and project sponsors to combine multiple types of funding and financing (e.g., grants, loans, or contributions) from various sources (federal, state, and local, private developers). No two projects are ever developed the same way. While the amount and mix of funding is different project-to-project, one aspect that is certain is that no project can rely on a single source of funding.
+[p278_c0004] _3-73_
+
+## Page 279
+
+### [p279_c0001] Lower Montauk Branch Rail Study
+### [p279_c0002] 3.6 Economic Development Potential
+### [p279_c0003] 3.6.1 Land Use Growth
+[p279_c0004] Section 2.3 defined in some detail the overall land use, employment and population characteristics of the communities and development areas along the Lower Montauk Branch's roughly 9 miles. The roughly 180,000 residents and 95,000 jobs located within the land use study area's roughly 9 square miles area, from major commercial and industrial concentrations and unprecedented levels of residential growth in Long Island City to the moderate- to higher-density residential and commercial development within Richmond Hill and Kew Gardens. Some of these areas have already had considerable growth, typically occurring in corridor segments already supported by subway and/or other rail transit services (e.g., Long Island City, Jamaica, Richmond Hill). A review of recent building permit activity compiled by the Department of City Planning showed a relatively active real estate market along the corridor, but mostly concentrated in the Long Island City/Greenpoint areas at the branch's western end and Richmond Hill/Kew Gardens and Jamaica at the eastern end.
+[p279_c0005] Plans to provide new rail transit connections in an area must be matched with an understanding of the land use goals for that area - the type, mix and density of land use growth that would justify and support such plans. When these plans involve frequent subway-like service with connections to the broader network, this understanding is essential for the long-term success of both the transit investment and the communities they would serve. Residents of areas long dominated by low-density residential often question whether their communities would be improved by the growth patterns normally linked with new rail transit service, while other members of those communities want the economic, accessibility and sustainability benefits that such plans can provide. The planning for such transit investments must understand these land use market forces, and place stations in areas where the area's transit-supported growth potential can be realized in areas that make sense. This is effectively the same issues of how land use and zoning controls are established, and why those often need to be adjusted to help maximize the overall benefit of the growth that transit access would bring.
+### [p279_c0006] 3.6.1.1 Increased Property Value and Tax Revenues
+[p279_c0007] The increase in real estate values and the associated tax revenues is a critical match-up to the substantial public investment. The analysis of possible value capture-type financing around key proposed stations showed how projected growth could support a portion of the new system's required capital investment. This would occur though both increases in development density, primarily in areas in closer proximity to the station, as well as improvement in the market value of existing land uses within the station's catchment area, which together can generate substantial additional financial and fiscal value. The corridor has a substantial amount of heavy commercial and industrial uses, and new transit access could provide accessibility to a larger workforce that would have employment of related property and tax benefits as well.
+[p279_c0008] _3-74_
+
+## Page 280
+
+### [p280_c0001] Lower Montauk Branch Rail Study
+### [p280_c0002] 3.6.2 Potential Job Growth
+### [p280_c0003] 3.6.2.1 Supporting Employment Areas in the Corridor
+[p280_c0004] The distribution of the study area’s employment along the approximately 9 square mile project area corridor show that over 90% of the jobs are located in Long Island City, Greenpoint and Maspeth areas on the west and Richmond Hill, Kew Gardens and Jamaica areas on the east. Portions of these heavier employment areas, especially Long Island City and Jamaica, are already served by rail transit. However, some important employment areas like most of the important Maspeth and North Brooklyn Industrial Business Zones (IBZs) along both sides of the Newtown Creek lack any connection to rail transit service. Providing increased transit access to these major employment areas was an important factor in proposing Lower Montauk Branch stations at Greenpoint Avenue, Haberman, Grand Avenue/Flushing Avenue and Fresh Pond Road (see Figure 3-27 for location of proposed Greenpoint Station within industrial areas on both sides of Newtown Creek). This would bring many of these employment
+[p280_c0005] _Figure 3-27: Industrial Areas in LIC and Greenpoint near Lower Montauk Branch_
+> [p280_c0006] The image is an aerial photograph of an urban industrial area. A yellow dashed line, representing the Lower Montauk Branch, runs through the center of the image. A red circle, representing the Proposed Greenpoint Ave. Station, is located on this line. The map is labeled with several areas: 'Long Island City' in the upper left, 'Sunnyside' in the upper right, 'Greenpoint' in the lower left, and 'Norman Ave' in the lower left. The 'Newtown Creek' is labeled in the center-right. The area is densely packed with industrial buildings and infrastructure.
+[p280_c0007] Lower Montauk Branch ————— Proposed Greenpoint Ave. Station ●
+[p280_c0008] concentrations within these areas within reasonable walking distance of these stations, increasing the potential for higher density industrial employment. Adding improved transit access to the existing rare mixture of highway and rail freight access and the range of further support for areas within the IBZs will help support “...high-performing business districts by creating competitive advantages over locating in
+[p280_c0009] areas outside of New York City.” 13 In this manner, the provision of rail transit would help maintain and further grow employment in these important areas.
+### [p280_c0010] 3.6.2.2 Growth of Freight-Dependent Uses
+[p280_c0011] Section 2 of this report highlighted the location some of New York and Atlantic (NY&A) Railway’s key existing rail freight customers along the Lower Montauk Branch, as well as the projected growth in rail freight activity region-wide as well as within New York City, in which NY&A plays an important role. Discussions with NY&A staff confirm that while losing some of its customers along the branch due to a variety of industrial and transportation forces, they expect modest annual growth in the volume of traffic it handles. Maintenance and growth of its service will primarily occur by supporting its core
+[p280_c0012] _13 https://www.nycedc.com/industry/industrial/nyc-industrial-business-zones ._
+[p280_c0013] _3-75_
+
+## Page 281
+
+### [p281_c0001] Lower Montauk Branch Rail Study
+[p281_c0002] businesses of construction and building materials, vegetable oil and other food-related products and continued support of Waste Management's truck-to-rail facility in Maspeth.
+[p281_c0003] The review of potential undeveloped sites directly along the branch of sufficient size to support rail freight-based commercial/industrial operations showed a number of sites with some potential but on their own would be relatively limited due to their size. However, development of the concept plan to bring passenger service to the Lower Montauk Branch demonstrated that significant investment in both passenger and freight rail infrastructure would be required. The added freight yard space and overall improved track, signals and other systems would potentially make it possible to cost effectively support more intermodal freight operations, further enhancing the corridor's industrial base.
+### [p281_c0004] 3.6.3 Summary
+[p281_c0005] Re-introducing rail passenger service to the Lower Montauk Branch would provide substantial opportunity for more sustainable land use and employment growth. This roughly nine-mile long corridor incorporates a broad and unique mixture of land uses, in many ways reflecting the historical West-to-East development and evolution of Queens since the late 1800s, when Queens became part of New York City. The Queensboro Bridge connecting Queens to Manhattan in 1909, already established industrial areas along Newtown Creek (served by what was then the main line of the LIRR and is now the Lower Montauk Branch) grew more rapidly. In 1915 the passenger rail connection from Penn Station to a Hunterspoint Station and completion of the Steinway tunnels brought the first subways from Manhattan to Queens. 14 Over the subsequent decades, further highway and passenger rail connections to Queens and beyond, shaping and defining the rapid growth in employment and (especially) population.
+[p281_c0006] The consideration of rail passenger service on the Lower Montauk Branch would be another in a long line of transportation investments that have dramatically shaped land use in the study area. While subway service and ridership have thrived throughout Queens during most of the past 60-70 years, both passenger and freight service along the Lower Montauk have declined substantially over that same period. The reintroduction of passenger service could substantially support growth in areas not presently served by rail transit, especially in the underserved major employment centers in the corridor's western half, with the potential to support sustainable growth in the low- to moderate-density residential areas primarily in the corridor's central portion. The investment in rail freight infrastructure needed to allow joint passenger-freight rail operations would also provide a boost to the branch's freight capabilities, which could provide more efficient service and support freight-dependent industrial growth.
+[p281_c0007] Section 2.3 defined in some detail the overall land use, employment and population characteristics of the communities and development areas along the Lower Montauk Branch's roughly 9 miles. The roughly 180,000 residents and 95,000 jobs located within the land use study area's roughly 9 square miles area, from major commercial and industrial concentrations and unprecedented levels of residential growth in Long Island City to the moderate- to higher-density residential and commercial
+[p281_c0008] _14 Elizabeth Mamer, Exploring Urban Change Using Historical Maps: The Industrialization of Long Island City (LIC) , New York. Masters Thesis, USC (2015)_
+[p281_c0009] _3-76_
+
+## Page 282
+
+### [p282_c0001] Lower Montauk Branch Rail Study
+[p282_c0002] development within Richmond Hill and Kew Gardens. Some of these areas have already had considerable growth, typically occurring in corridor segments already supported by subway and/or other rail transit services (e.g., Long Island City, Jamaica, Richmond Hill). A review of recent building permit activity compiled by the Department of City Planning showed a relatively active real estate market along the corridor, but mostly concentrated in the Long Island City/Greenpoint areas at the branch's western end and Richmond Hill/Kew Gardens and Jamaica at the eastern end.
+[p282_c0003] Plans to provide new rail transit connections in an area must be matched with an understanding of the land use goals for that area - the type, mix and density of land use growth that would justify and support such plans. When these plans involve frequent subway-like service with connections to the broader network, this understanding is essential for the long-term success of both the transit investment and the communities they would serve. Residents of areas long dominated by low-density residential often question whether their communities would be improved by the growth patterns normally linked with new rail transit service, while other members of those communities want the economic, accessibility and sustainability benefits that such plans can provide. The planning for such transit investments must understand these land use market forces, and place stations in areas where the area's transit-supported growth potential can be realized in areas that make sense. This is effectively the same issues of how land use and zoning controls are established, and why those often need to be adjusted to help maximize the overall benefit of the growth that transit access would bring.
+[p282_c0004] _3-77_
+
+## Page 283
+
+### [p283_c0001] Lower Montauk Branch Rail Study
+### [p283_c0002] 3.7 Potential Permitting and Coordinating Processes
+[p283_c0003] The review, approval, and permitting processes to reactivate passenger service on the Lower Montauk Branch, implement the supporting policies and develop the necessary infrastructure would require coordination and cooperation among various City, State and federal agencies. Likely sources of funding for this project are noted below along with the various agencies that would grant this funding and regulate various aspects of the project's design and operation.
+### [p283_c0004] Funding and Permitting Agencies
+### [p283_c0005] Rail:
+- [p283_c0006] • United States Department of Transportation (USDOT), Federal Transit Administration (FTA) - likely capital funding assistance for proposed passenger operation and operating cost assistance, with associated regulations and guidelines for design and operations. • USDOT Federal Railroad Administration (FRA) - likely capital funding source for freight-related infrastructure improvements; regulations over rail operations and safety, track, signals and communications, fleet design specifications and maintenance
+### [p283_c0007] Environment:
+- [p283_c0008] • National Environmental Policy Act (NEPA) and applicable FTA/FRA implementing regulations • New York State Environmental Quality Review Act (SEQRA) and Department of Environmental Conservation (DEC) implementing regulations and guidelines • New York City Environmental Quality Review (CEQR) and NYC Department of Environmental Protection regulations and guidelines • NYSDEC and US Army Corps of Engineers (ACOE) permitting regulations for wetlands, stream protection (working with NYCEDC)
+### [p283_c0009] Land Use and Related New York City Approvals:
+- [p283_c0010] • Uniform Land Use Review Procedure (ULURP) – review process for wide range of City approvals, involving extensive review of applications by local Community Boards, NYC Planning Commission and NY City Council
+### [p283_c0011] Bridges and Navigable Waterways:
+- [p283_c0012] • US Coast Guard- bridge permits, vertical clearance over navigable waterways; piers and other in-water construction within navigable waterways (Newtown Creek, Dutch Kills)
+### [p283_c0013] Coordinating Agencies and Rail Operators
+### [p283_c0014] Passenger Rail Operations:
+- [p283_c0015] • MTA Long Island Rail Road- for connections with system, maintenance, fleet, facilities; owners of Lower Montauk Branch • MTA New York City Transit- for connectivity with subways and buses
+[p283_c0016] _3-78_
+
+## Page 284
+
+### [p284_c0001] Lower Montauk Branch Rail Study
+### [p284_c0002] Freight Rail Operators:
+- [p284_c0003] • New York & Atlantic Railway- leases the Lower Montauk Branch from LIRR; currently operates freight service • CSX, CP, Providence and Worcester – Class 1 railroads connect with Lower Montauk Branch at Fresh Pond Yards and brings rail cars to and from the rail networks to the North • Port Authority of New York and New Jersey- Operator of New York New Jersey Rail – rail freight car float operation from 65 th St. Yards (Sunset Park, Brooklyn) and Greenville Yards (Jersey City, NJ)
+[p284_c0004] _3-79_
+
+## Page 285
+
+### [p285_c0001] Lower Montauk Branch Rail Study
+### [p285_c0002] Freight Rail Operators:
+- [p285_c0003] • New York & Atlantic Railway- leases the Lower Montauk Branch from LIRR; currently operates freight service • CSX, CP, Providence and Worcester – Class 1 railroads connect with Lower Montauk Branch at Fresh Pond Yards and brings rail cars to and from the rail networks to the North • Port Authority of New York and New Jersey- Operator of New York New Jersey Rail – rail freight car float operation from 65 th St. Yards (Sunset Park, Brooklyn) and Greenville Yards (Jersey City, NJ)
+[p285_c0004] _3-80_
+
+## Page 286
+
+### [p286_c0001] Conclusions
+> [p286_c0002] A photograph of a New York City Transit Authority (NYCTA) train, specifically a model 1005, on its tracks. The train is silver and gold with "UP" and "1005" markings. It is positioned on a track next to a paved area with a yellow line. The background shows a clear blue sky and some urban buildings in the distance.
+> [p286_c0003] The logo for the New York City Department of Transportation (NYC DOT). It features the text "NEW YORK CITY" above a stylized green "DOT" graphic consisting of two circles and a vertical bar, each with horizontal white lines.
+
+## Page 287
+
+### [p287_c0001] Lower Montauk Branch Rail Study
+### [p287_c0002] 4.1 Feasibility of Re-Introducing Rail Passenger Service on Lower Montauk Branch
+[p287_c0003] The Lower Montauk Branch Rail Study provides a preliminary review of the potential feasibility of reactivating passenger service on the Lower Montauk Branch. The study looked at all the involved planning, engineering the operational factors associated with such a plan, with the understanding that considerable and more detailed additional analyses would be required. This study showed that there is a potential ridership base and workable operating plan for passenger service. Freight operations would be accommodated through careful choice of the passenger rail mode and service scheduling to allow for joint passenger-freight operation. Significant capital investments to support both passenger and freight service in the same rail corridor would be required. This joint service would support the existing residential, commercial and industrial landscape of the corridor while allowing for change in use and density in response to the expansion of transit accessibility and mobility.
+[p287_c0004] The basic framework of the report's recommendations, such as the rail mode, service plan, and station siting, is a potential baseline for further study and provides preliminary qualitative and quantitative aspects of a possible reactivation plan.
+### [p287_c0005] 4.2 Next Steps
+[p287_c0006] Many factors in a reactivation were outside the scope of this study, or could not be evaluated in detail:
+- [p287_c0007] • Many of the bridges along the Lower Montauk Branch would need structural analysis and in some cases reconstruction. A full bridge engineering evaluation would be required to determine bridge conditions. • The zoning changes proposed as part of the station site redevelopments would require more in-depth analysis and study. • Potential changes in the region's freight network demand and capacity may be drastically altered with the Cross Harbor Freight Plan. • Station designs are difficult to plan for without final construction scopes. • Value capture analysis is speculative at this point without analysis of land use regulations and development potential of the specific parcels considered for evaluation and a finalization of the scale, extent, and timing of these value capture attributes. • The existing rail structures at the Long Island City and Jamaica Stations, which would serve as termini for the reactivated passenger service, would need further analysis as to the access modifications need to serve the Lower Montauk Branch. • Capital costs are base estimates that may increase based on varying construction and labor conditions. • A governance and operations plan would need to be developed. • Funding and permitting processes would need to be finalized and would require coordination with the appropriate agencies.
+[p287_c0008] _4-1_
+
+## Page 288
+
+### [p288_c0001] Lower Montauk Branch Rail Study
+[p288_c0002] The next steps for the reactivation for reactivation of the Lower Montauk Branch for passenger service would require addressing these (and other) outstanding issues. There are significant issues that need to be reconciled before moving this project forward.
+[p288_c0003] The necessary steps to fully study reactivation of the Lower Montauk Branch for passenger service would likely be prepared as part of an Environmental Impact Statement (EIS) prepared for the Federal Transit Administration (FTA). Coordination with other regulating agencies, described as part of the permitting and coordinating process, would be required to finalize plans to ensure compliance and standards. The US Coast Guard and the US Army Corps of Engineers would need to be involved in the planning work on the structures near the Newtown Creek. This process would require a robust public engagement effort, crucial due to the residential characteristics of the corridor.
+### [p288_c0004] 4.3 Conclusions
+[p288_c0005] The Lower Montauk Branch once served a bustling commuting population. As the landscape changed, service was reduced before being eliminated completely. The Lower Montauk Branch Rail Study aimed to analyze the preliminary feasibility of reactivating this line for passenger service. Like any rail project, the Lower Montauk Branch requires significant study and investment to properly evaluate its feasibility. The high-level analysis performed on the various aspects of the corridor and rail operations is only an initial step in the process. This study would serve as a foundation for any further reactivation studies, which would fully and quantitatively analyze passenger service possibilities on the Lower Montauk Branch.
+[p288_c0006] _4-2_
+
+## Page 289
+
+### [p289_c0001] Lower Montauk Branch Passenger Rail Study
+[p289_c0002] Front Cover Image: By Reaperexpress - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=49177818
+[p289_c0003] Back Cover Images: User Photo, Site Visit 1/20/17
+[p289_c0004] Section Divider Images: By Craig James White - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=36629954
+> [p289_c0005] The logo for the New York City Department of Transportation (NYC DOT). It features the words "NEW YORK CITY" in a bold, black, sans-serif font at the top. Below the text is a green graphic consisting of two overlapping circles, each containing three horizontal white lines, and a vertical bar to the right of the circles, also containing three horizontal white lines.
+> [p289_c0006] A photograph of a railway yard. In the foreground, two sets of train tracks curve towards the right. The tracks are made of steel rails on wooden sleepers, set in a bed of gravel. To the left of the tracks, a red locomotive is partially visible. Behind the tracks, there is a long, green, corrugated metal fence. In the background, a city skyline with several skyscrapers is visible under a bright, overcast sky. There are utility poles with wires running across the top of the frame. Two "STOP" signs are visible on the left and right sides of the tracks.

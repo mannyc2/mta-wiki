@@ -1,0 +1,374 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch035-prep",
+  "created_at": "2026-06-23T03:05:00Z",
+  "author": "codex",
+  "scope": "relation endpoint-shape cleanup prep only; durable retire+replace mechanism planned but not applied",
+  "batch": "batch035",
+  "run_id_for_replacements": "2026-06-23_codex_relation_cleanup_batch035",
+  "submitted_at_for_dry_run": "2026-06-23T03:05:00Z",
+  "durable_mechanism_planned_not_applied": {
+    "retirements_target": "data/submission-overrides/retired.json",
+    "replacement_journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch035.jsonl",
+    "applied": false
+  },
+  "bucket": {
+    "name": "has_timeline_event claim-to-event policy meeting rows",
+    "original_relation_kind": "has_timeline_event",
+    "original_endpoint_shape": "claim -> event",
+    "replacement_relation_kind": "has_claim",
+    "replacement_endpoint_shape": "event -> claim",
+    "prepared_count": 2,
+    "why_coherent": "After excluding retired submissions, prior relation cleanup batches017-034, and missing-target repair work, this bucket has two same-source rows where policy claims are incorrectly used as timeline subjects for a Corporate Governance Committee meeting event. Claims are not durable timeline owners. The source evidence supports the meeting event carrying or reviewing the LIRR and MNR policy claims, so has_claim event -> claim preserves the relationship in a validator-compatible shape."
+  },
+  "checkpoint_context": {
+    "method": "Read-only inventory over canonical JSONL with current endpoint-shape rules; excluded retired submissions, prior codex relation cleanup prep originals through batch034, and missing-target repair work. Did not run CLI validate, materialize, export-jsonl, DB repair/publish, or provider-backed commands.",
+    "remaining_endpoint_shape_inventory_after_exclusions": {
+      "total": 40,
+      "selected_bucket": "has_timeline_event claim->event",
+      "selected_bucket_count": 2,
+      "prepared_count": 2,
+      "count_tied_or_higher_buckets": [
+        {
+          "bucket": "has_metric source->metric_claim",
+          "count": 2,
+          "status": "deferred in this cleanup pass because source-carrier has_metric rows may be better handled as a rule/modeling decision or redundant source provenance rather than a clear retire+replace data error"
+        },
+        {
+          "bucket": "implemented_by route->entity",
+          "count": 2
+        },
+        {
+          "bucket": "part_of_program event->entity",
+          "count": 2
+        }
+      ],
+      "other_top_buckets": [
+        {
+          "bucket": "has_claim claim->claim",
+          "count": 1
+        },
+        {
+          "bucket": "has_claim treatment_component->claim",
+          "count": 1
+        },
+        {
+          "bucket": "has_timeline_event entity->metric_claim",
+          "count": 1
+        }
+      ]
+    },
+    "endpoint_shape_probe": {
+      "has_claim event->claim": "accepted",
+      "supports event->claim": "accepted",
+      "related_to event->claim": "accepted",
+      "has_timeline_event claim->event": "Relation kind has_timeline_event expects project|route|corridor|entity|source|event -> event, got claim -> event."
+    }
+  },
+  "exclusions_and_guards": {
+    "excluded_batches": [
+      "batch017",
+      "batch019",
+      "batch020",
+      "batch021",
+      "batch022",
+      "batch023",
+      "batch024",
+      "batch025",
+      "batch026",
+      "batch027",
+      "batch028",
+      "batch029",
+      "batch030",
+      "batch031",
+      "batch032",
+      "batch033",
+      "batch034"
+    ],
+    "missing_target_repair_excluded": true,
+    "retired_json_not_edited": true,
+    "submission_journals_not_edited": true,
+    "generated_outputs_not_edited": true,
+    "db_not_edited": true,
+    "log_not_edited": true,
+    "manifest_merges_retired_not_edited": true,
+    "wiki_source_pages_not_edited": true,
+    "original_submission_guard": {
+      "retired_hits": [],
+      "prior_relation_batch_submission_hits": [],
+      "prior_relation_batch_record_hits": []
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": [],
+      "prior_review_note_submission_id_hits": [],
+      "prior_review_note_local_observation_id_hits": []
+    }
+  },
+  "local_validation": {
+    "tooling": "createSubmissionEntry dry run for replacement tool_args plus relationEndpointIssues; relationEndpointShapeIssue checked against canonical endpoint kinds for each replacement.",
+    "summary": {
+      "prepared_count": 2,
+      "retire_replace_count": 2,
+      "retire_only_count": 0,
+      "accepted_replacement_count": 2,
+      "issue_count": 0,
+      "warning_count": 0,
+      "endpoint_shape_issue_count_after_replacement": 0
+    }
+  },
+  "command_evidence": [
+    {
+      "command": "test -f data/review_notes/codex-relation-cleanup-batch035-prep.json; echo $?",
+      "result": "1 before writing; artifact did not already exist."
+    },
+    {
+      "command": "endpoint-shape inventory script excluding retired submissions, cleanup batches017-034, and missing-target repair submissions",
+      "result": "Remaining unexpected_relation_endpoint_shape total was 40; selected exact bucket has_timeline_event claim->event had count 2."
+    },
+    {
+      "command": "canonical JSONL inspection for relation_meeting-doc-79466-event-policy-lirr and relation_meeting-doc-79466-event-policy-mnr plus their claim/event endpoints",
+      "result": "Confirmed both rows are current canonical has_timeline_event relations with claim subjects and the same committee-meeting event object."
+    },
+    {
+      "command": "source block inspection for meeting_doc_79466#p001_c0002/#p001_c0003/#p002_c0003/#p002_c0005",
+      "result": "Confirmed the source identifies policies for Board approval, the Corporate Governance Committee Meeting date, and the LIRR/MNR policy table-of-contents entries."
+    },
+    {
+      "command": "createSubmissionEntry dry run for two has_claim event->claim replacements",
+      "result": "Both replacement entries accepted with no issues, no warnings, no relationEndpointIssues, and no endpoint-shape issue."
+    },
+    {
+      "command": "collision guard script over retired.json, data/submissions, and prior prep artifacts through batch034",
+      "result": "No original retired/prior hits and no replacement submission id or local observation id collisions."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts export-jsonl",
+    "provider-backed ingest/write/ask commands",
+    "database repair or publish commands"
+  ],
+  "prepared": [
+    {
+      "retire": {
+        "submission_id": "sub_e688683abfd90042",
+        "original_record_id": "relation_meeting-doc-79466-event-policy-lirr",
+        "original_local_observation_id": "relation_meeting_doc_79466_event_policy_lirr",
+        "malformed_shape": "has_timeline_event claim -> event",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_id": "claim_meeting-doc-79466-lirr-purpose",
+        "original_subject_local_observation_id": "claim_meeting_doc_79466_lirr_purpose",
+        "original_subject_name": "LIRR Alcohol and Drug Free Workplace Policy",
+        "original_object_id": "event_meeting-doc-79466-cgc-meeting",
+        "original_object_local_observation_id": "event_meeting_doc_79466_cgc_meeting",
+        "original_object_name": "Corporate Governance Committee Meeting 03/28/2022",
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_79466",
+            "evidence_id": "meeting_doc_79466#p001_c0002",
+            "source_path": "raw/sources/meeting_doc_79466/blocks.jsonl",
+            "page_number": 1,
+            "block_id": "p001_c0002",
+            "text_sha256": "sha256:ccd82f2d3613364104362b91edc07aeb710b5e8159e171bb58d84a26baa2d70c",
+            "text_source": "raw_text",
+            "source_quote": "POLICIES FOR BOARD APPROVAL PURSUANT TO NYS PUBLIC AUTHORITIES LAW"
+          },
+          {
+            "source_id": "meeting_doc_79466",
+            "evidence_id": "meeting_doc_79466#p001_c0003",
+            "source_path": "raw/sources/meeting_doc_79466/blocks.jsonl",
+            "page_number": 1,
+            "block_id": "p001_c0003",
+            "text_sha256": "sha256:fa85e7620602f0de58cf855a075b011879d1da19389c277d153b8e1f795741cf",
+            "text_source": "raw_text",
+            "source_quote": "Corporate Governance Committee Meeting 03/28/2022"
+          },
+          {
+            "source_id": "meeting_doc_79466",
+            "evidence_id": "meeting_doc_79466#p002_c0003",
+            "source_path": "raw/sources/meeting_doc_79466/blocks.jsonl",
+            "page_number": 2,
+            "block_id": "p002_c0003",
+            "text_sha256": "sha256:a9e6f70e7b49f439e09d1f2dfa71b3b5c62cde47bc28d6623b33148078de6edf",
+            "text_source": "raw_text",
+            "source_quote": "Policy LIRR MED-005 Alcohol Substance Abuse - Page 3"
+          }
+        ],
+        "reason": "The original relation uses a policy claim as the subject of has_timeline_event. The source supports the committee meeting event carrying/reviewing the LIRR policy claim for Board approval, not the claim owning a timeline event."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_db31f71c2cb5bca1",
+        "proposed_relation_kind": "has_claim",
+        "proposed_endpoint_shape": "event -> claim",
+        "tool_args": {
+          "source_id": "meeting_doc_79466",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch035_cgc_meeting_has_claim_lirr_policy",
+          "label": "Corporate Governance Committee meeting has LIRR alcohol policy claim",
+          "raw_text": "Corporate Governance Committee Meeting 03/28/2022; Policy LIRR MED-005 Alcohol Substance Abuse - Page 3.",
+          "payload": {
+            "relation_kind": "has_claim",
+            "subject_id": "event_meeting-doc-79466-cgc-meeting",
+            "object_id": "claim_meeting-doc-79466-lirr-purpose",
+            "description": "Replacement for malformed has_timeline_event claim -> event relation; source shows the Corporate Governance Committee meeting carried the LIRR MED-005 alcohol/substance abuse policy item for Board approval.",
+            "relation_family": "claim_context"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_79466",
+              "evidence_id": "meeting_doc_79466#p001_c0002",
+              "source_path": "raw/sources/meeting_doc_79466/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0002",
+              "text_sha256": "sha256:ccd82f2d3613364104362b91edc07aeb710b5e8159e171bb58d84a26baa2d70c",
+              "text_source": "raw_text",
+              "role": "meeting_claim_context",
+              "source_quote": "POLICIES FOR BOARD APPROVAL PURSUANT TO NYS PUBLIC AUTHORITIES LAW"
+            },
+            {
+              "source_id": "meeting_doc_79466",
+              "evidence_id": "meeting_doc_79466#p001_c0003",
+              "source_path": "raw/sources/meeting_doc_79466/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0003",
+              "text_sha256": "sha256:fa85e7620602f0de58cf855a075b011879d1da19389c277d153b8e1f795741cf",
+              "text_source": "raw_text",
+              "role": "meeting_claim_context",
+              "source_quote": "Corporate Governance Committee Meeting 03/28/2022"
+            },
+            {
+              "source_id": "meeting_doc_79466",
+              "evidence_id": "meeting_doc_79466#p002_c0003",
+              "source_path": "raw/sources/meeting_doc_79466/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0003",
+              "text_sha256": "sha256:a9e6f70e7b49f439e09d1f2dfa71b3b5c62cde47bc28d6623b33148078de6edf",
+              "text_source": "raw_text",
+              "role": "meeting_claim_context",
+              "source_quote": "Policy LIRR MED-005 Alcohol Substance Abuse - Page 3"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue_after_replacement": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_e38ca2e1f6405d00",
+        "original_record_id": "relation_meeting-doc-79466-event-policy-mnr",
+        "original_local_observation_id": "relation_meeting_doc_79466_event_policy_mnr",
+        "malformed_shape": "has_timeline_event claim -> event",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_id": "claim_meeting-doc-79466-mnr-purpose",
+        "original_subject_local_observation_id": "claim_meeting_doc_79466_mnr_purpose",
+        "original_subject_name": "MNR Alcohol and Drug Free Workplace Policy",
+        "original_object_id": "event_meeting-doc-79466-cgc-meeting",
+        "original_object_local_observation_id": "event_meeting_doc_79466_cgc_meeting",
+        "original_object_name": "Corporate Governance Committee Meeting 03/28/2022",
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_79466",
+            "evidence_id": "meeting_doc_79466#p001_c0002",
+            "source_path": "raw/sources/meeting_doc_79466/blocks.jsonl",
+            "page_number": 1,
+            "block_id": "p001_c0002",
+            "text_sha256": "sha256:ccd82f2d3613364104362b91edc07aeb710b5e8159e171bb58d84a26baa2d70c",
+            "text_source": "raw_text",
+            "source_quote": "POLICIES FOR BOARD APPROVAL PURSUANT TO NYS PUBLIC AUTHORITIES LAW"
+          },
+          {
+            "source_id": "meeting_doc_79466",
+            "evidence_id": "meeting_doc_79466#p001_c0003",
+            "source_path": "raw/sources/meeting_doc_79466/blocks.jsonl",
+            "page_number": 1,
+            "block_id": "p001_c0003",
+            "text_sha256": "sha256:fa85e7620602f0de58cf855a075b011879d1da19389c277d153b8e1f795741cf",
+            "text_source": "raw_text",
+            "source_quote": "Corporate Governance Committee Meeting 03/28/2022"
+          },
+          {
+            "source_id": "meeting_doc_79466",
+            "evidence_id": "meeting_doc_79466#p002_c0005",
+            "source_path": "raw/sources/meeting_doc_79466/blocks.jsonl",
+            "page_number": 2,
+            "block_id": "p002_c0005",
+            "text_sha256": "sha256:fa291dc3f405560b3f382374ea0fc9ca43d39515e51982954f3a6c291ed4516b",
+            "text_source": "raw_text",
+            "source_quote": "Policy MNR21-012 Alcohol and Substance Abuse - Page 39"
+          }
+        ],
+        "reason": "The original relation uses a policy claim as the subject of has_timeline_event. The source supports the committee meeting event carrying/reviewing the MNR policy claim for Board approval, not the claim owning a timeline event."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_e173997f8dece204",
+        "proposed_relation_kind": "has_claim",
+        "proposed_endpoint_shape": "event -> claim",
+        "tool_args": {
+          "source_id": "meeting_doc_79466",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch035_cgc_meeting_has_claim_mnr_policy",
+          "label": "Corporate Governance Committee meeting has MNR alcohol policy claim",
+          "raw_text": "Corporate Governance Committee Meeting 03/28/2022; Policy MNR21-012 Alcohol and Substance Abuse - Page 39.",
+          "payload": {
+            "relation_kind": "has_claim",
+            "subject_id": "event_meeting-doc-79466-cgc-meeting",
+            "object_id": "claim_meeting-doc-79466-mnr-purpose",
+            "description": "Replacement for malformed has_timeline_event claim -> event relation; source shows the Corporate Governance Committee meeting carried the MNR21-012 alcohol/substance abuse policy item for Board approval.",
+            "relation_family": "claim_context"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_79466",
+              "evidence_id": "meeting_doc_79466#p001_c0002",
+              "source_path": "raw/sources/meeting_doc_79466/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0002",
+              "text_sha256": "sha256:ccd82f2d3613364104362b91edc07aeb710b5e8159e171bb58d84a26baa2d70c",
+              "text_source": "raw_text",
+              "role": "meeting_claim_context",
+              "source_quote": "POLICIES FOR BOARD APPROVAL PURSUANT TO NYS PUBLIC AUTHORITIES LAW"
+            },
+            {
+              "source_id": "meeting_doc_79466",
+              "evidence_id": "meeting_doc_79466#p001_c0003",
+              "source_path": "raw/sources/meeting_doc_79466/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0003",
+              "text_sha256": "sha256:fa85e7620602f0de58cf855a075b011879d1da19389c277d153b8e1f795741cf",
+              "text_source": "raw_text",
+              "role": "meeting_claim_context",
+              "source_quote": "Corporate Governance Committee Meeting 03/28/2022"
+            },
+            {
+              "source_id": "meeting_doc_79466",
+              "evidence_id": "meeting_doc_79466#p002_c0005",
+              "source_path": "raw/sources/meeting_doc_79466/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0005",
+              "text_sha256": "sha256:fa291dc3f405560b3f382374ea0fc9ca43d39515e51982954f3a6c291ed4516b",
+              "text_source": "raw_text",
+              "role": "meeting_claim_context",
+              "source_quote": "Policy MNR21-012 Alcohol and Substance Abuse - Page 39"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue_after_replacement": null
+        },
+        "confidence": "high"
+      }
+    }
+  ]
+}

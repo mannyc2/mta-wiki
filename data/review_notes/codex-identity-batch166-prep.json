@@ -1,0 +1,612 @@
+{
+  "note_id": "codex-identity-batch166-prep",
+  "batch": "identity166",
+  "created_at": "2026-06-23T08:26:48Z",
+  "prepared_count": 10,
+  "proposed_aliases": [
+    {
+      "global_kind": "project",
+      "alias_id": "project_207th-st-yard-flood-mitigation-33751",
+      "target_id": "project_207th-st-yard",
+      "canonical_id": "project_207th-st-yard",
+      "confidence": "high",
+      "validator_duplicate_key": "project_207th-st-yard-flood-mitigation-and-sewer-replacement",
+      "validator_evidence": "validateRepo duplicate_global_identity backlog: project records project_207th-st-yard and project_207th-st-yard-flood-mitigation-33751 share identity key project_207th-st-yard-flood-mitigation-and-sewer-replacement.",
+      "reason": "The alias is a one-source 207th Street Yard Flood Mitigation and Sewer Replacement record; the target is the multi-source 207th Street Yard record whose canonical aliases and merged project_name/description values already include the same flood mitigation and sewer replacement project. This is not a same-name/different-location collision: both records identify 207th Street Yard and the Sandy/flood mitigation scope.",
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "207th Street Yard Flood Mitigation & Sewer Replacement",
+          "project_name": "207th Street Yard Flood Mitigation and Sewer Replacement",
+          "project_type": "Sandy recovery / flood mitigation",
+          "status": "under construction, approximately 52% complete",
+          "source_ids": [
+            "meeting_doc_33751"
+          ],
+          "evidence_refs": [
+            "meeting_doc_33751#p014_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "207th Street Yard",
+          "project_name": "207th St Yard",
+          "project_type": "infrastructure rehabilitation",
+          "status": "92% complete - Substantial Completion January 2024",
+          "source_ids_sample": [
+            "meeting_doc_111791",
+            "meeting_doc_133356",
+            "meeting_doc_163236",
+            "meeting_doc_164901"
+          ],
+          "record_alias_match": "project_207th-st-yard-flood-mitigation-and-sewer-replacement",
+          "merged_project_names_include": [
+            "207th Street Yard Flood Mitigation & Sewer Replacement",
+            "207th Street Yard and Shop Flood Mitigation"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "project_207th-st-yard-flood-mitigation-33751",
+          "evidence_id": "meeting_doc_33751#p014_c0003",
+          "quote": "207 St Yard for NYCT"
+        },
+        {
+          "record_id": "project_207th-st-yard",
+          "evidence_id": "meeting_doc_111791#p007_c0001",
+          "quote": "207th St Yard : Overall, the project is 92% complete"
+        },
+        {
+          "record_id": "project_207th-st-yard",
+          "evidence_id": "meeting_doc_133356#p006_c0007",
+          "quote": "207th St Yard. The project is 97% complete"
+        }
+      ]
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_able-expansion-q44-sbs-sep2022",
+      "target_id": "project_able-camera-expansion-2022",
+      "canonical_id": "project_able-camera-expansion-2022",
+      "confidence": "high",
+      "validator_duplicate_key": "project_automated-bus-lane-enforcement-expansion",
+      "validator_evidence": "validateRepo duplicate_global_identity backlog: project records project_able-camera-expansion-2022 and project_able-expansion-q44-sbs-sep2022 share identity key project_automated-bus-lane-enforcement-expansion.",
+      "reason": "Both records describe the same 2022 ABLE expansion: 300 additional equipped buses/cameras across nine routes, with initial implementation on Q44 SBS. The alias is a single September Q44 SBS announcement; the target is the fuller camera-expansion record from the same expansion scope.",
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "Automated Bus Lane Enforcement (ABLE) Expansion",
+          "project_name": "Automated Bus Lane Enforcement Expansion",
+          "project_type": "enforcement expansion",
+          "status": "announced",
+          "source_ids": [
+            "meeting_doc_95176"
+          ],
+          "evidence_refs": [
+            "meeting_doc_95176#p015_c0010"
+          ]
+        },
+        "target": {
+          "display_name": "Automated Bus Lane Enforcement (ABLE) Camera Expansion",
+          "project_name": "Automated Bus Lane Enforcement Expansion",
+          "project_type": "enforcement program",
+          "status": "ongoing",
+          "description": "Expansion of ABLE cameras: 300 new cameras installed by end of 2022 on 9 routes in outer boroughs; goal of 1,000 cameras by end of 2023 covering 85% of bus lanes. First cameras implemented on Q44-SBS and S79-SBS routes.",
+          "source_ids": [
+            "meeting_doc_98311"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "project_able-expansion-q44-sbs-sep2022",
+          "evidence_id": "meeting_doc_95176#p015_c0010",
+          "quote": "first of 300 additional equipped buses covering nine routes"
+        },
+        {
+          "record_id": "project_able-camera-expansion-2022",
+          "evidence_id": "meeting_doc_98311#p015_c0011",
+          "quote": "The expansion of Automated Bus Lane Enforcement cameras will cover 300 additional buses on nine routes"
+        },
+        {
+          "record_id": "project_able-camera-expansion-2022",
+          "evidence_id": "meeting_doc_98311#p005_c0003",
+          "quote": "MTA and NYC DOT have agreed to expand the ABLE program"
+        }
+      ]
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_psa-amt5-2025",
+      "target_id": "project_annual-2021-penn-station-access",
+      "canonical_id": "project_annual-2021-penn-station-access",
+      "confidence": "high",
+      "validator_duplicate_key": "project_penn-station-access",
+      "validator_evidence": "validateRepo duplicate_global_identity backlog: project records project_annual-2021-penn-station-access and project_psa-amt5-2025 share identity key project_penn-station-access.",
+      "reason": "Both records identify Penn Station Access. The alias is a one-source 2025 capital-program budget entry for Penn Station Access; the target is the multi-source Penn Station Access project record describing the Metro-North Penn Station expansion and Bronx station scope.",
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "Penn Station Access",
+          "project_name": "Penn Station Access",
+          "project_type": "network expansion",
+          "description": "Penn Station Access project with $2,948.7 million budget in the 2020-2024 Capital Program",
+          "source_ids": [
+            "meeting_doc_190291"
+          ],
+          "evidence_refs": [
+            "meeting_doc_190291#p088_c0001",
+            "meeting_doc_190291#p088_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "Penn Station Access",
+          "project_name": "Penn Station Access",
+          "project_type": "rail expansion",
+          "status": "ongoing",
+          "description": "Project to bring Metro-North into Penn Station and construct four new rail stations in the Bronx. Design Build and PMC contracts awarded on December 29, 2021. Total project budget $12.867 billion.",
+          "source_ids_sample": [
+            "annual_report_narrative_2021",
+            "meeting_doc_104701",
+            "meeting_doc_104741",
+            "meeting_doc_107896"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "project_psa-amt5-2025",
+          "evidence_id": "meeting_doc_190291#p088_c0001",
+          "quote": "Major Projects and Expansion Penn Station Access"
+        },
+        {
+          "record_id": "project_psa-amt5-2025",
+          "evidence_id": "meeting_doc_190291#p088_c0003",
+          "quote": "overall budget of $2,948.7 million remains unchanged"
+        },
+        {
+          "record_id": "project_annual-2021-penn-station-access",
+          "evidence_id": "meeting_doc_104701#p011_c0005",
+          "quote": "Metro-North Penn Station Access (MNPSA) will provide Metro-North Railroad New Haven Line customers with service into and out of Penn Station"
+        }
+      ]
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_ms21001-modification-1-gcm-om",
+      "target_id": "project_gcm-om-contract-ms21001",
+      "canonical_id": "project_gcm-om-contract-ms21001",
+      "confidence": "high",
+      "validator_duplicate_key": "project_operation-and-maintenance-of-infrastructure-and-related-structures-supporting-lirr-access-into-g",
+      "validator_evidence": "validateRepo duplicate_global_identity backlog: project records project_gcm-om-contract-ms21001 and project_ms21001-modification-1-gcm-om share identity key project_operation-and-maintenance-of-infrastructure-and-related-structures-supporting-lirr-access-into-g.",
+      "reason": "The alias is modification #1 under Contract MS21001 for Grand Central Madison operation and maintenance; the target is the base MS21001 operation and maintenance contract with the same long contract description and vendor context. Treating the modification as an alias preserves the contract identity and avoids creating a separate project identity for a contract action.",
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "Contract MS21001 Modification #1 - GCM Operation and Maintenance",
+          "project_name": "Operation and Maintenance of Infrastructure and Related Structures Supporting LIRR Access Into Grand Central Madison Terminal Passenger Facilities",
+          "project_type": "contract modification",
+          "status": "proposed for ratification",
+          "source_ids": [
+            "meeting_doc_199076"
+          ],
+          "evidence_refs": [
+            "meeting_doc_199076#p005_c0006",
+            "meeting_doc_199076#p006_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "Grand Central Madison Operation and Maintenance Contract",
+          "project_name": "Operation and Maintenance of Infrastructure and Related Structures Supporting LIRR Access Into Grand Central Madison Terminal Passenger Facilities",
+          "project_type": "contract award",
+          "status": "recommended for Board approval",
+          "source_ids": [
+            "meeting_doc_140521"
+          ],
+          "evidence_refs": [
+            "meeting_doc_140521#p001_c0005",
+            "meeting_doc_140521#p001_c0007"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "project_ms21001-modification-1-gcm-om",
+          "evidence_id": "meeting_doc_199076#p005_c0006",
+          "quote": "Contract # MS21001.1"
+        },
+        {
+          "record_id": "project_ms21001-modification-1-gcm-om",
+          "evidence_id": "meeting_doc_199076#p006_c0003",
+          "quote": "Operation and Maintenance of Infrastructure and Related Structures Supporting LIRR Access Into Grand Central Madison Terminal Passenger Facilities"
+        },
+        {
+          "record_id": "project_gcm-om-contract-ms21001",
+          "evidence_id": "meeting_doc_140521#p001_c0005",
+          "quote": "Contract Number MS21001"
+        }
+      ]
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-124201-lirr-ptc",
+      "target_id": "project_lirr-mnr-ptc",
+      "canonical_id": "project_lirr-mnr-ptc",
+      "confidence": "high",
+      "validator_duplicate_key": [
+        "project_lirr-mnr-ptc",
+        "project_lirr-mnr-ptc-implementation"
+      ],
+      "validator_evidence": "validateRepo duplicate_global_identity backlog: project records project_lirr-mnr-ptc and project_meeting-doc-124201-lirr-ptc share identity keys project_lirr-mnr-ptc and project_lirr-mnr-ptc-implementation.",
+      "reason": "The alias is a LIRR PTC implementation/update record that also carries LIRR/MNR PTC update evidence; the target is the standing LIRR/MNR PTC implementation record for project implementation and close-out after full Positive Train Control functionality. The shared keys and source text indicate the alias belongs in the existing PTC implementation cluster rather than remaining a separate project page.",
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "LIRR PTC Implementation",
+          "project_name": "LIRR PTC Implementation",
+          "project_type": "technology implementation",
+          "status": "All trains are operating with full PTC functionality on entire LIRR territory",
+          "source_ids": [
+            "meeting_doc_124201",
+            "meeting_doc_98251"
+          ],
+          "evidence_refs": [
+            "meeting_doc_124201#p002_c0004",
+            "meeting_doc_98251#p003_c0019"
+          ]
+        },
+        "target": {
+          "display_name": "LIRR/MNR PTC Implementation",
+          "project_name": "LIRR/MNR PTC Implementation",
+          "project_type": "implementation",
+          "status": "implementation and close-out",
+          "source_ids_sample": [
+            "meeting_doc_100311",
+            "meeting_doc_102691",
+            "meeting_doc_104756",
+            "meeting_doc_128871"
+          ],
+          "evidence_refs": [
+            "meeting_doc_100311#p005_c0005",
+            "meeting_doc_100311#p005_c0006"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "project_meeting-doc-124201-lirr-ptc",
+          "evidence_id": "meeting_doc_124201#p002_c0004",
+          "quote": "All trains are operating with full PTC functionality on entire LIRR territory"
+        },
+        {
+          "record_id": "project_meeting-doc-124201-lirr-ptc",
+          "evidence_id": "meeting_doc_98251#p003_c0019",
+          "quote": "LIRR/MNR PTC Project Update"
+        },
+        {
+          "record_id": "project_lirr-mnr-ptc",
+          "evidence_id": "meeting_doc_100311#p005_c0006",
+          "quote": "status of project implementation and close-out following full Positive Train Control functionality"
+        }
+      ]
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-station-booth-service-changes",
+      "target_id": "project_station-booth-service-reduction",
+      "canonical_id": "project_station-booth-service-reduction",
+      "confidence": "high",
+      "validator_duplicate_key": "project_reduction-or-elimination-of-station-booth-service-throughout-the-subway-system-including-elimina",
+      "validator_evidence": "validateRepo duplicate_global_identity backlog: project records project_meeting-doc-station-booth-service-changes and project_station-booth-service-reduction share identity key project_reduction-or-elimination-of-station-booth-service-throughout-the-subway-system-including-elimina.",
+      "reason": "Both records use the same long project name for the proposed reduction or elimination of station booth service, including lunch relief, and both describe station agents working outside booths. The alias is a later authorization/action item; the target is the existing reduction proposal record.",
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "Reduction or Elimination of Station Booth Service",
+          "project_name": "Reduction or Elimination of Station Booth Service Throughout the Subway System, including Elimination of Station Booth Lunch Relief",
+          "project_type": "service_change",
+          "status": "proposed",
+          "source_ids": [
+            "meeting_doc_105956"
+          ],
+          "evidence_refs": [
+            "meeting_doc_105956#p001_c0004",
+            "meeting_doc_105956#p002_c0007"
+          ]
+        },
+        "target": {
+          "display_name": "Proposed Reduction or Elimination of Station Booth Service",
+          "project_name": "Reduction or Elimination of Station Booth Service Throughout the Subway System, including Elimination of Station Booth Lunch Relief",
+          "project_type": "operational_change",
+          "status": "proposed",
+          "source_ids": [
+            "meeting_doc_102841"
+          ],
+          "evidence_refs": [
+            "meeting_doc_102841#p001_c0007",
+            "meeting_doc_102841#p001_c0008"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "project_meeting-doc-station-booth-service-changes",
+          "evidence_id": "meeting_doc_105956#p001_c0004",
+          "quote": "Reduction or Elimination of Station Booth Service Throughout the Subway System"
+        },
+        {
+          "record_id": "project_station-booth-service-reduction",
+          "evidence_id": "meeting_doc_102841#p001_c0007",
+          "quote": "reduction or elimination of station booth service throughout the subway system"
+        }
+      ]
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_mta-new-bus-program-2020-2024",
+      "target_id": "project_mta-new-bus-program",
+      "canonical_id": "project_mta-new-bus-program",
+      "confidence": "high",
+      "validator_duplicate_key": "project_mta-new-bus-program",
+      "validator_evidence": "validateRepo duplicate_global_identity backlog: project records project_mta-new-bus-program and project_mta-new-bus-program-2020-2024 share identity key project_mta-new-bus-program.",
+      "reason": "Both records identify the MTA New Bus Program. The alias is a one-source 2020-2024 capital-program view of the same bus procurement program; the target is the broader MTA New Bus Program record covering multiple bus contracts and fleet types.",
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "MTA New Bus Program (2020-2024)",
+          "project_name": "MTA New Bus Program",
+          "project_type": "Rolling Stock",
+          "status": "In Construction",
+          "source_ids": [
+            "meeting_doc_113971"
+          ],
+          "evidence_refs": [
+            "meeting_doc_113971#p006_c0001"
+          ]
+        },
+        "target": {
+          "display_name": "MTA New Bus Program",
+          "project_name": "MTA New Bus Program",
+          "project_type": "bus procurement",
+          "status": "Active - multiple contracts",
+          "description": "New bus procurement program covering clean-diesel, hybrid, battery-electric, articulated, and express buses across NYCT/DOB and MTA Bus Company.",
+          "source_ids_sample": [
+            "meeting_doc_111791",
+            "meeting_doc_176356"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "project_mta-new-bus-program-2020-2024",
+          "evidence_id": "meeting_doc_113971#p006_c0001",
+          "quote": "MTA New Bus Program (2020-2024 Capital Program Contracts: nearly 700 buses across 6 fleet types"
+        },
+        {
+          "record_id": "project_mta-new-bus-program",
+          "evidence_id": "meeting_doc_176356#p018_c0001",
+          "quote": "MTA New Bus Program"
+        },
+        {
+          "record_id": "project_mta-new-bus-program",
+          "evidence_id": "meeting_doc_111791#p065_c0003",
+          "quote": "The IEC is monitoring 17 bus contracts"
+        }
+      ]
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_rockaway-resiliency-bundle-jan2023",
+      "target_id": "project_rockaway-resiliency",
+      "canonical_id": "project_rockaway-resiliency",
+      "confidence": "high",
+      "validator_duplicate_key": [
+        "project_rockaway-resiliency",
+        "project_rockaway-resiliency-project"
+      ],
+      "validator_evidence": "validateRepo duplicate_global_identity backlog: project records project_rockaway-resiliency and project_rockaway-resiliency-bundle-jan2023 share identity keys project_rockaway-resiliency and project_rockaway-resiliency-project.",
+      "reason": "Both records identify the Rockaway Resiliency project for A train/Rockaway Shuttle resiliency work across Jamaica Bay into the Rockaways. The alias is a design-build/bundle award record; the target is the multi-source Rockaway Resiliency Project record including completion and service-restoration context.",
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "Rockaway Resiliency Bundle",
+          "project_name": "Rockaway Resiliency Bundle",
+          "project_type": "Design-Build",
+          "status": "Awarded",
+          "description": "Rehabilitation and flood resiliency work along New York City Transit's Rockaway Line in Queens. Contract awarded to Schiavone Construction Co. LLC for $392,685,186.",
+          "source_ids": [
+            "meeting_doc_104701",
+            "meeting_doc_170921",
+            "meeting_doc_174391"
+          ]
+        },
+        "target": {
+          "display_name": "Rockaway Resiliency Project",
+          "project_name": "Rockaway Resiliency project",
+          "project_type": "resiliency",
+          "status": "active",
+          "source_ids": [
+            "meeting_doc_167241",
+            "meeting_doc_174141",
+            "meeting_doc_180421"
+          ],
+          "merged_project_names_include": [
+            "Rockaway Resiliency Project",
+            "Rockaway Project"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "project_rockaway-resiliency-bundle-jan2023",
+          "evidence_id": "meeting_doc_170921#p009_c0009",
+          "quote": "Rockaway Resiliency project to fortify the segment of A train and Rockaway Shuttle"
+        },
+        {
+          "record_id": "project_rockaway-resiliency",
+          "evidence_id": "meeting_doc_174141#p022_c0002",
+          "quote": "Rockaway Resiliency Project"
+        },
+        {
+          "record_id": "project_rockaway-resiliency",
+          "evidence_id": "meeting_doc_174141#p022_c0003",
+          "quote": "full service to the Rockaway Peninsula following 17 weeks of capital improvements"
+        }
+      ]
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_tremont-av-bus-priority-improvements",
+      "target_id": "project_tremont-avenue-bus-priority-bronx",
+      "canonical_id": "project_tremont-avenue-bus-priority-bronx",
+      "confidence": "high",
+      "validator_duplicate_key": "project_tremont-av-bus-priority-improvements",
+      "validator_evidence": "validateRepo duplicate_global_identity backlog: project records project_tremont-av-bus-priority-improvements and project_tremont-avenue-bus-priority-bronx share identity key project_tremont-av-bus-priority-improvements.",
+      "reason": "Both records are the Tremont Avenue/Tremont Av bus-priority improvements project in the Bronx, serving Bx36 riders. The alias is a CB6 February 2024 study-area record; the target is the existing multi-source Tremont Avenue Bus Priority Project record and already carries the exact alias id as a canonical alias.",
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "Tremont Av Bus Priority Improvements",
+          "project_name": "Tremont Av Bus Priority Improvements",
+          "project_type": "bus_priority",
+          "status": "planning",
+          "description": "Bus priority improvement project on Tremont Avenue from University Avenue to Bronx River Parkway",
+          "source_ids": [
+            "tremont_ave_bus_priority_cb6_feb2024"
+          ]
+        },
+        "target": {
+          "display_name": "Tremont Avenue Bus Priority Project, the Bronx",
+          "project_name": "Tremont Avenue Bus Priority Project",
+          "project_type": "bus priority",
+          "status": "proposed",
+          "description": "Proposing bus priority improvements on Tremont Avenue in the Bronx to improve travel speed and reliability for nearly 34,000 daily bus riders on the Bronx's 5th busiest bus route.",
+          "source_ids": [
+            "better_buses",
+            "tremont_ave_bus_priority_cab1_dec2022",
+            "tremont_ave_bus_priority_cb5_mar2024"
+          ],
+          "record_alias_match": "project_tremont-av-bus-priority-improvements"
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "project_tremont-av-bus-priority-improvements",
+          "evidence_id": "tremont_ave_bus_priority_cb6_feb2024#p001_c0001",
+          "quote": "Tremont Av Bus Priority Improvements"
+        },
+        {
+          "record_id": "project_tremont-av-bus-priority-improvements",
+          "evidence_id": "tremont_ave_bus_priority_cb6_feb2024#p004_c0002",
+          "quote": "Study area: University Av to Bronx River Pkwy"
+        },
+        {
+          "record_id": "project_tremont-avenue-bus-priority-bronx",
+          "evidence_id": "better_buses#p001_b0001",
+          "quote": "proposing bus priority improvements on Tremont Avenue in the Bronx"
+        }
+      ]
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_bx6-select-bus-service",
+      "target_id": "project_bx6-sbs-brt-bx6-cb12-may2022",
+      "canonical_id": "project_bx6-sbs-brt-bx6-cb12-may2022",
+      "confidence": "high",
+      "validator_duplicate_key": "project_bx6-sbs-project",
+      "validator_evidence": "validateRepo duplicate_global_identity backlog: project records project_bx6-sbs-brt-bx6-cb12-may2022 and project_bx6-select-bus-service share identity key project_bx6-sbs-project.",
+      "reason": "Both records are Bx6 Select Bus Service project/update records from May 2022 community-board presentations. The alias is a CB2 Economic Development Committee update; the target is the already-merged CB12/CB4 Bx6 SBS project record with launch date and capital-improvement context.",
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "Bx6 Select Bus Service Project",
+          "project_name": "Bx6 Select Bus Service Project",
+          "project_type": "Select Bus Service",
+          "status": "post-launch capital improvements",
+          "description": "Bx6 SBS project in the South Bronx including bus lanes, fare machines, boarding islands, and the 161st Street Bus Only Tunnel (eastbound)",
+          "source_ids": [
+            "brt_bx6_cb2_edc_may2022"
+          ],
+          "evidence_refs": [
+            "brt_bx6_cb2_edc_may2022#p001_c0001"
+          ]
+        },
+        "target": {
+          "display_name": "Bx6 Select Bus Service",
+          "project_name": "Bx6 Select Bus Service",
+          "project_type": "Select Bus Service",
+          "status": "launched and operating; capital improvements proposed",
+          "description": "Select Bus Service launched September 3, 2017 on the Bx6 corridor in the Bronx",
+          "source_ids": [
+            "brt_bx6_cb12_may2022",
+            "brt_bx6_cb4_may2022"
+          ],
+          "record_alias_match": "project_bx6-sbs-project"
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "project_bx6-select-bus-service",
+          "evidence_id": "brt_bx6_cb2_edc_may2022#p001_c0001",
+          "quote": "Bx6 Select Bus Service Project Update"
+        },
+        {
+          "record_id": "project_bx6-sbs-brt-bx6-cb12-may2022",
+          "evidence_id": "brt_bx6_cb12_may2022#p004_c0001",
+          "quote": "Bx6 Select Bus Service"
+        },
+        {
+          "record_id": "project_bx6-sbs-brt-bx6-cb12-may2022",
+          "evidence_id": "brt_bx6_cb12_may2022#p004_c0002",
+          "quote": "Launched on September 3, 2017"
+        }
+      ]
+    }
+  ],
+  "exclusions_and_guards": [
+    "Only current project record_ids present in data/canonical/projects.jsonl were considered.",
+    "Read current data/identity-overrides/merges.json; no proposed alias_id is already a project merge alias and no proposed target_id is a project merge alias.",
+    "Read current data/identity-overrides/do-not-merge.json; the only current project do-not-merge pair is project_better-buses-restart-2021 / project_jamaica-busway, and no proposed pair hits it.",
+    "Each proposed alias_id differs from its target_id and shares at least one current project global identity key with the target.",
+    "Excluded project_01-lexington-ave / project_lexington-ave-60th-52nd-offset-bus-lane because the records risk a corridor-segment trap: 96th-60th vs 60th-52nd Lexington Avenue scopes.",
+    "Excluded the 2017 Street Improvement Project cluster because project_2017-sip-woodhaven-blvd-cb5-sept2024, project_2017-street-improvement-79th, and project_79th-st-2017-improvement-cb7-apr2025 are same-generic-name but different street/location records.",
+    "Excluded 2020-2024 Capital Program Amendment #2/#5 records and Penn Reconstruction amendment/design records where the duplicate key could collapse amendment, design-service, and parent-program scopes without additional review.",
+    "Excluded CBDTP / TransCore / Congestion Relief Zone bond-resolution parent-child collisions except for no proposal; those records need policy on whether financing and contract actions should remain data-only child records.",
+    "Excluded B46/Utica, Bx12/Fordham, Hylan Boulevard, Jamaica Capacity Improvement phase records, East Side Access support, and similar phase/stage/parent-child collisions.",
+    "Excluded security-initiatives duplicates across LIRR and NYCT because they are same-name/different-agency records."
+  ],
+  "command_evidence": [
+    {
+      "command": "sed -n '1,220p' data/identity-overrides/merges.json",
+      "purpose": "Read current merge aliases before proposing any project alias."
+    },
+    {
+      "command": "sed -n '1,220p' data/identity-overrides/do-not-merge.json",
+      "purpose": "Read current do-not-merge guards before proposing any project alias."
+    },
+    {
+      "command": "node - <<'NODE' ... duplicate project identity keys from record_id plus record_aliases in data/canonical/projects.jsonl ... NODE",
+      "purpose": "Read-only local reconstruction of the current validateRepo duplicate_global_identity backlog for project records without running materialize, validate, export, or provider-backed commands."
+    },
+    {
+      "command": "node - <<'NODE' ... inspect selected project records, payload fields, source_ids, evidence_refs, and raw block text ... NODE",
+      "purpose": "Checked canonical and source evidence for candidate pairs and screened out phase/stage, same-name/different-location, and parent-program/child-project traps."
+    },
+    {
+      "command": "node - <<'NODE' ... guard check proposals against current projects.jsonl, merges.json, and do-not-merge.json ... NODE",
+      "purpose": "Confirmed all proposed ids exist, no alias is already merged, no target is a merge alias, alias != target, and no do-not-merge guard is hit."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "purpose": "Captured UTC created_at for this prep artifact."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed commands",
+    "bun run validate",
+    "bun packages/cli/src/cli.ts validate",
+    "validateRepo execution",
+    "materialize",
+    "export",
+    "ingest",
+    "write",
+    "ask",
+    "identity-review-run",
+    "ontology-review",
+    "ontology-normalize-run",
+    "edits to data/identity-overrides/merges.json",
+    "edits to data/identity-overrides/do-not-merge.json",
+    "edits to LOG.md",
+    "edits to manifests, canonical JSONL, canonical DB, wiki, submissions, or retired.json"
+  ]
+}

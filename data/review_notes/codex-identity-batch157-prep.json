@@ -1,0 +1,672 @@
+{
+  "note_id": "codex-identity-batch157-prep",
+  "batch": "identity157",
+  "created_at": "2026-06-23T07:51:28Z",
+  "scope": {
+    "global_kind": "entity",
+    "selection_note": "Codex-only deterministic prep from current entity canonical JSONL, current entity merges, current entity do-not-merge guards, and live validateRepo duplicate_global_identity messages after identity153-156 were applied. Proposals avoid stale ids, already-merged aliases, alias records that are current merge targets, target records that are current merge aliases, alias==target pairs, do-not-merge pairs, target chains, and broad community-board/committee labels unless identity evidence is unambiguous."
+  },
+  "prepared_count": 12,
+  "proposed_aliases": [
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_cubic-omny",
+      "target_id": "entity_cubic-transportation-systems",
+      "canonical_id": "entity_cubic-transportation-systems",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_cubic",
+      "reason": "Both current records identify Cubic as the OMNY/fare-payment vendor. The alias is a one-source Cubic/OMNY record; the target is the richer Cubic Transportation Systems Inc. record with many OMNY and fare-payment source aliases.",
+      "validator_evidence": {
+        "duplicate_issues": [
+          "Global entity records entity_cubic-omny and entity_cubic-transportation-systems share identity key entity_cubic."
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "alias_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_is_current_entity_merge_alias": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Cubic Corporation",
+          "payload_fields": {
+            "entity_name": "Cubic",
+            "entity_type": "company",
+            "description": "Cubic provides OMNY data and device monitoring data for the MTA Data Lake"
+          },
+          "evidence_refs": [
+            "meeting_doc_202096#p004_c0002"
+          ]
+        },
+        "target": {
+          "display_name": "Cubic Transportation Systems Inc.",
+          "payload_fields": {
+            "entity_name": "Cubic Transportation Systems Inc.",
+            "entity_type": "company",
+            "description": "New Fare Payment System - One Metro New York (OMNY) contractor, San Diego, California",
+            "acronym": "Cubic",
+            "organization": "Cubic Transportation Systems"
+          },
+          "evidence_refs": [
+            "meeting_doc_102806#p005_c0005",
+            "meeting_doc_100346#p009_c0003",
+            "meeting_doc_100346#p009_c0006"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_deloitte-external-auditor",
+      "target_id": "entity_bt-deloitte",
+      "canonical_id": "entity_bt-deloitte",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_deloitte",
+      "reason": "Both current records identify Deloitte/Deloitte & Touche as MTA's external auditor. The alias is a one-source Deloitte external-auditor mention; the target is the fuller Deloitte & Touche LLP audit-firm record.",
+      "validator_evidence": {
+        "duplicate_issues": [
+          "Global entity records entity_bt-deloitte and entity_deloitte-external-auditor share identity key entity_deloitte."
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "alias_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_is_current_entity_merge_alias": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Deloitte",
+          "payload_fields": {
+            "entity_name": "Deloitte",
+            "entity_type": "agency",
+            "description": "External auditor for MTA, providing audit services including financial statement audits."
+          },
+          "evidence_refs": [
+            "meeting_doc_26816#p003_c0005"
+          ]
+        },
+        "target": {
+          "display_name": "Deloitte & Touche LLP",
+          "payload_fields": {
+            "entity_name": "Deloitte & Touche LLP",
+            "entity_type": "audit firm",
+            "description": "External auditor for the MTA, presenting audit approach, review of financial statements, and PCAOB comments to the Audit Committee.",
+            "acronym": "Deloitte"
+          },
+          "evidence_refs": [
+            "meeting_doc_105891#p055_c0001",
+            "meeting_doc_111701#p004_c0006",
+            "meeting_doc_111701#p004_c0005"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_dot-queens-borough-commissioner-2017",
+      "target_id": "entity_dot-queens-boro-commissioner-office",
+      "canonical_id": "entity_dot-queens-boro-commissioner-office",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_dot-queens-borough-commissioner-s-office",
+      "reason": "Both records identify the NYC DOT Queens Borough Commissioner's Office, with the same parent organization and office identity. The alias is a 2017 implementation-update mention; the target is the compact office record with the same office name.",
+      "validator_evidence": {
+        "duplicate_issues": [
+          "Global entity records entity_dot-queens-boro-commissioner-office and entity_dot-queens-borough-commissioner-2017 share identity key entity_dot-queens-borough-commissioner-s-office."
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "alias_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_is_current_entity_merge_alias": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "entity_dot_queens_borough_commissioner_2017",
+          "payload_fields": {
+            "entity_name": "DOT Queens Borough Commissioner's Office",
+            "entity_type": "office",
+            "parent_organization": "New York City Department of Transportation (NYC DOT)"
+          },
+          "evidence_refs": [
+            "brt_woodhaven_implementation_update_2017#p003_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "DOT Queens Borough Commissioner's Office",
+          "payload_fields": {
+            "entity_name": "DOT Queens Borough Commissioner's Office",
+            "entity_type": "office",
+            "parent_organization": "New York City Department of Transportation (NYC DOT)"
+          },
+          "evidence_refs": [
+            "brt_woodhaven_crossbay_blvd_sept_flyer#p001_c0014"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_mckissack-iec-april2021-cpoc",
+      "target_id": "entity_mckissack-iec",
+      "canonical_id": "entity_mckissack-iec",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_mckissack",
+      "reason": "Both records identify McKissack in the same MTA Independent Engineering Consultant role. The alias is an April 2021 CPOC source-local McKissack IEC record; the target already consolidates McKissack IEC evidence and role wording.",
+      "validator_evidence": {
+        "duplicate_issues": [
+          "Global entity records entity_mckissack-iec and entity_mckissack-iec-april2021-cpoc share identity key entity_mckissack.",
+          "Global entity records entity_mckissack-iec and entity_mckissack-iec-april2021-cpoc share identity key entity_mckissack-mta-independent-engineering-consultant."
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "alias_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_is_current_entity_merge_alias": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "McKissack (MTA Independent Engineering Consultant)",
+          "payload_fields": {
+            "entity_name": "McKissack",
+            "entity_type": "consultant",
+            "description": "MTA Independent Engineering Consultant"
+          },
+          "evidence_refs": [
+            "meeting_doc_37061#p014_c0006",
+            "meeting_doc_37061#p014_c0005"
+          ]
+        },
+        "target": {
+          "display_name": "McKissack (MTA Independent Engineering Consultant)",
+          "payload_fields": {
+            "entity_name": "McKissack",
+            "entity_type": "consultant",
+            "role": "MTA Independent Engineering Consultant",
+            "description": "MTA Independent Engineering Consultant",
+            "organization": "MTA Independent Engineering Consultant"
+          },
+          "evidence_refs": [
+            "meeting_doc_105871#p017_c0004",
+            "meeting_doc_105871#p017_c0005",
+            "meeting_doc_26826#p022_c0003"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_mckissack-iec-dec2022",
+      "target_id": "entity_mckissack-iec",
+      "canonical_id": "entity_mckissack-iec",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_mckissack",
+      "reason": "Both records identify McKissack as the MTA Independent Engineering Consultant. The alias is a December 2022 source-local McKissack IEC record; the target is the fuller canonical McKissack IEC record.",
+      "validator_evidence": {
+        "duplicate_issues": [
+          "Global entity records entity_mckissack-iec and entity_mckissack-iec-dec2022 share identity key entity_mckissack."
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "alias_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_is_current_entity_merge_alias": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "entity_mckissack_iec_dec2022",
+          "payload_fields": {
+            "entity_name": "McKissack",
+            "entity_type": "consultant",
+            "description": "MTA Independent Engineering Consultant (IEC), provides independent project review"
+          },
+          "evidence_refs": [
+            "meeting_doc_102776#p018_c0005",
+            "meeting_doc_102776#p043_c0006"
+          ]
+        },
+        "target": {
+          "display_name": "McKissack (MTA Independent Engineering Consultant)",
+          "payload_fields": {
+            "entity_name": "McKissack",
+            "entity_type": "consultant",
+            "role": "MTA Independent Engineering Consultant",
+            "description": "MTA Independent Engineering Consultant",
+            "organization": "MTA Independent Engineering Consultant"
+          },
+          "evidence_refs": [
+            "meeting_doc_105871#p017_c0004",
+            "meeting_doc_105871#p017_c0005",
+            "meeting_doc_26826#p022_c0003"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-104771-ctdot",
+      "target_id": "entity_cdot-meeting-doc-104741",
+      "canonical_id": "entity_cdot-meeting-doc-104741",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_connecticut-department-of-transportation",
+      "reason": "Both records identify the Connecticut Department of Transportation, with CDOT/CTDOT acronyms represented as source variants. The alias is a CTDOT/CDOT source-local agency record; the target is the fuller Connecticut DOT agency record.",
+      "validator_evidence": {
+        "duplicate_issues": [
+          "Global entity records entity_cdot-meeting-doc-104741 and entity_meeting-doc-104771-ctdot share identity key entity_connecticut-department-of-transportation.",
+          "Global entity records entity_cdot-meeting-doc-104741 and entity_meeting-doc-104771-ctdot share identity key entity_connecticut-department-of-transportation-ctdot."
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "alias_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_is_current_entity_merge_alias": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "CTDOT / CDOT",
+          "payload_fields": {
+            "entity_name": "Connecticut Department of Transportation (CTDOT)",
+            "entity_type": "agency",
+            "acronym": "CTDOT"
+          },
+          "evidence_refs": [
+            "meeting_doc_104771#p011_c0002",
+            "meeting_doc_111786#p011_c0002",
+            "meeting_doc_124251#p001_c0010"
+          ]
+        },
+        "target": {
+          "display_name": "Connecticut Department of Transportation (CDOT)",
+          "payload_fields": {
+            "entity_name": "Connecticut Department of Transportation",
+            "entity_type": "agency",
+            "description": "Responsible for approximately 33% of Metro-North's Sperry Rail contract costs",
+            "acronym": "CDOT"
+          },
+          "evidence_refs": [
+            "meeting_doc_100301#p005_c0003",
+            "meeting_doc_100301#p007_c0003",
+            "meeting_doc_100331#p006_c0006"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-106151-catherine-sheridan",
+      "target_id": "entity_catherine-sheridan-115226",
+      "canonical_id": "entity_catherine-sheridan-115226",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_catherine-sheridan",
+      "reason": "Both records identify Catherine/Catherine T. Sheridan in TBTA/MTA Bridges and Tunnels leadership roles. The alias has the same person name and interim-president/president context; the target is the richer Catherine T. Sheridan record.",
+      "validator_evidence": {
+        "duplicate_issues": [
+          "Global entity records entity_catherine-sheridan-115226 and entity_meeting-doc-106151-catherine-sheridan share identity key entity_catherine-sheridan.",
+          "Global entity records entity_catherine-sheridan-115226 and entity_meeting-doc-106151-catherine-sheridan share identity key entity_catherine-sheridan-oct2025.",
+          "Global entity records entity_catherine-sheridan-115226 and entity_meeting-doc-106151-catherine-sheridan share identity key entity_catherine-sheridan-president-b-and-t.",
+          "Global entity records entity_catherine-sheridan-115226 and entity_meeting-doc-106151-catherine-sheridan share identity key entity_catherine-t-sheridan.",
+          "Global entity records entity_catherine-sheridan-115226 and entity_meeting-doc-106151-catherine-sheridan share identity key entity_catherine-t-sheridan-p-e.",
+          "Global entity records entity_catherine-sheridan-115226 and entity_meeting-doc-106151-catherine-sheridan share identity key entity_catherine-t-sheridan-p-e-president."
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "alias_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_is_current_entity_merge_alias": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Interim President Catherine Sheridan",
+          "payload_fields": {
+            "entity_name": "Catherine Sheridan",
+            "entity_type": "person",
+            "title": "Interim President",
+            "role": "President of MTA Bridges and Tunnels",
+            "description": "President of MTA Bridges and Tunnels/TBTA",
+            "organization": "MTA Bridges and Tunnels"
+          },
+          "evidence_refs": [
+            "meeting_doc_106151#p011_c0004",
+            "meeting_doc_106151#p011_c0007",
+            "meeting_doc_121016#p004_c0007"
+          ]
+        },
+        "target": {
+          "display_name": "Catherine T. Sheridan, P.E., Interim President",
+          "payload_fields": {
+            "entity_name": "Catherine T. Sheridan",
+            "entity_type": "person",
+            "title": "Interim President",
+            "role": "President of TBTA",
+            "description": "President of TBTA/MTA Bridges and Tunnels",
+            "acronym": "P.E.",
+            "organization": "MTA Bridges and Tunnels / TBTA"
+          },
+          "evidence_refs": [
+            "meeting_doc_113966#p004_c0007",
+            "meeting_doc_115226#p004_c0007",
+            "meeting_doc_111711#p004_c0008"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-111711-ncba",
+      "target_id": "entity_meeting-doc-109161-ncba",
+      "canonical_id": "entity_meeting-doc-109161-ncba",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_nassau-county-bridge-authority",
+      "reason": "Both records identify the Nassau County Bridge Authority (NCBA) and describe the same Atlantic Beach Bridge authority. The alias is a meeting_doc_111711 NCBA record; the target is a matching NCBA record with the same agency name and acronym.",
+      "validator_evidence": {
+        "duplicate_issues": [
+          "Global entity records entity_meeting-doc-109161-ncba and entity_meeting-doc-111711-ncba share identity key entity_nassau-county-bridge-authority."
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "alias_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_is_current_entity_merge_alias": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Nassau County Bridge Authority",
+          "payload_fields": {
+            "entity_name": "Nassau County Bridge Authority",
+            "entity_type": "agency",
+            "description": "Authority operating the Atlantic Beach Bridge connecting Lawrence and Atlantic Beach, New York",
+            "acronym": "NCBA"
+          },
+          "evidence_refs": [
+            "meeting_doc_111711#p008_c0007",
+            "meeting_doc_111711#p008_c0008"
+          ]
+        },
+        "target": {
+          "display_name": "Nassau County Bridge Authority (NCBA)",
+          "payload_fields": {
+            "entity_name": "Nassau County Bridge Authority",
+            "entity_type": "agency",
+            "description": "Toll authority that operates the Atlantic Beach Bridge in Nassau County, New York.",
+            "acronym": "NCBA"
+          },
+          "evidence_refs": [
+            "meeting_doc_109161#p055_c0007"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_jp-morgan-bookrunner",
+      "target_id": "entity_jp-morgan",
+      "canonical_id": "entity_jp-morgan",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_j-p-morgan",
+      "reason": "Both records identify J.P. Morgan. The alias is a transaction-role mention of J.P. Morgan as book-running senior manager; the target is the broader J.P. Morgan investment-bank entity.",
+      "validator_evidence": {
+        "duplicate_issues": [
+          "Global entity records entity_jp-morgan and entity_jp-morgan-bookrunner share identity key entity_j-p-morgan."
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "alias_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_is_current_entity_merge_alias": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "J.P. Morgan",
+          "payload_fields": {
+            "entity_name": "J.P. Morgan",
+            "entity_type": "company",
+            "role": "book-running senior manager for TBTA bond transaction"
+          },
+          "evidence_refs": [
+            "meeting_doc_146976#p003_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "entity_jp_morgan",
+          "payload_fields": {
+            "entity_name": "J.P. Morgan",
+            "entity_type": "investment bank",
+            "description": "Global investment bank headquartered in New York with active public and corporate finance practices"
+          },
+          "evidence_refs": [
+            "meeting_doc_147061#p002_c0003"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_j-lieber-committee-chair",
+      "target_id": "entity_janno-lieber-2025",
+      "canonical_id": "entity_janno-lieber-2025",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_j-lieber",
+      "reason": "Both records identify Janno Lieber by the J. Lieber abbreviated name and MTA chair/committee-chair context. The alias is an abbreviated committee-chair mention; the target is the consolidated Janno Lieber person record.",
+      "validator_evidence": {
+        "duplicate_issues": [
+          "Global entity records entity_j-lieber-committee-chair and entity_janno-lieber-2025 share identity key entity_j-lieber."
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "alias_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_is_current_entity_merge_alias": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "J. Lieber",
+          "payload_fields": {
+            "entity_name": "J. Lieber",
+            "entity_type": "person",
+            "role": "MTA Corporate Governance Committee Chair"
+          },
+          "evidence_refs": [
+            "meeting_doc_100286#p001_c0006",
+            "meeting_doc_124251#p007_c0011"
+          ]
+        },
+        "target": {
+          "display_name": "Janno Lieber, MTA Chair & CEO",
+          "payload_fields": {
+            "entity_name": "Janno Lieber",
+            "entity_type": "person",
+            "title": "MTA Chair and CEO",
+            "role": "MTA Chair & CEO",
+            "description": "MTA Chair and CEO who announced transit improvement summit on June 16, 2022.",
+            "organization": "Metropolitan Transportation Authority"
+          },
+          "evidence_refs": [
+            "nyct_key_performance_metrics_june2025#p002_c0001",
+            "flatbush_ave_brooklyn_bus_priority_kick_off_june2022#p004_c0002",
+            "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026#p002_c0002"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_star-systems-meeting-doc-138326",
+      "target_id": "entity_star-systems-america",
+      "canonical_id": "entity_star-systems-america",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_star-systems-america-llc",
+      "reason": "Both records identify Star Systems America, LLC as a vendor. The alias is a one-source meeting-doc record with the exact company name; the target is the richer vendor record with toll-equipment context.",
+      "validator_evidence": {
+        "duplicate_issues": [
+          "Global entity records entity_star-systems-america and entity_star-systems-meeting-doc-138326 share identity key entity_star-systems-america-llc."
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "alias_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_is_current_entity_merge_alias": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "entity_star_systems_meeting_doc_138326",
+          "payload_fields": {
+            "entity_name": "Star Systems America, LLC",
+            "entity_type": "vendor"
+          },
+          "evidence_refs": [
+            "meeting_doc_138326#p001_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "Star Systems America, LLC",
+          "payload_fields": {
+            "entity_name": "Star Systems America, LLC",
+            "entity_type": "vendor",
+            "description": "Electronic transponder and toll equipment vendor"
+          },
+          "evidence_refs": [
+            "meeting_doc_138176#p049_c0007",
+            "meeting_doc_138176#p050_c0003",
+            "meeting_doc_140621#p009_c0006"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-143366-tdx-construction",
+      "target_id": "entity_tdx-construction-corp",
+      "canonical_id": "entity_tdx-construction-corp",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_tdx-construction-corporation",
+      "reason": "Both records identify TDX Construction Corporation as a vendor. The alias is a one-source exact-name record; the target is the fuller TDX Construction Corporation vendor record with Small Business Mentoring Program context.",
+      "validator_evidence": {
+        "duplicate_issues": [
+          "Global entity records entity_meeting-doc-143366-tdx-construction and entity_tdx-construction-corp share identity key entity_tdx-construction-corporation."
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "alias_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_is_current_entity_merge_alias": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "entity_meeting_doc_143366_tdx_construction",
+          "payload_fields": {
+            "entity_name": "TDX Construction Corporation",
+            "entity_type": "vendor"
+          },
+          "evidence_refs": [
+            "meeting_doc_143366#p006_c0004"
+          ]
+        },
+        "target": {
+          "display_name": "TDX Construction Corporation",
+          "payload_fields": {
+            "entity_name": "TDX Construction Corporation",
+            "entity_type": "vendor",
+            "description": "Vendor for Small Business Mentoring Program management",
+            "acronym": "TDX"
+          },
+          "evidence_refs": [
+            "meeting_doc_143356#p001_c0003",
+            "meeting_doc_160291#p002_c0009",
+            "meeting_doc_146976#p003_c0008"
+          ]
+        }
+      }
+    }
+  ],
+  "exclusions_and_guards": [
+    "Excluded aliases already present in current data/identity-overrides/merges.json entity aliases.",
+    "Excluded candidate aliases that are current merge targets, including entity_blanca-lopez-166966, entity_david-keller-meeting-doc-68311, and entity_meeting-doc-105931-craig-cipriano.",
+    "Excluded candidate targets that are current merge aliases to avoid target chains.",
+    "Excluded alias==target pairs and any pair present in current data/identity-overrides/do-not-merge.json.",
+    "Excluded stale aliases or targets missing from current data/canonical/entities.jsonl.",
+    "Excluded broad community-board and generic community-advisory-committee collisions unless borough/name evidence was unambiguous.",
+    "Excluded entity_grand-central-madison station-to-operating-company collisions because the current records distinguish a station/facility from the MTA Grand Central Madison Operating Company."
+  ],
+  "command_evidence": [
+    {
+      "command": "bun --print 'import { validateRepo } from \"./packages/pipeline/src/validate.ts\"; const r=validateRepo(); const d=r.issues.filter(i=>i.code===\"duplicate_global_identity\"); console.log(JSON.stringify({duplicate_global_identity:d.length}, null, 2));'",
+      "result": "Confirmed live validateRepo duplicate_global_identity backlog is 689."
+    },
+    {
+      "command": "bun --print 'import { validateRepo } from \"./packages/pipeline/src/validate.ts\"; const d=validateRepo().issues.filter(i=>i.code===\"duplicate_global_identity\" && i.message.includes(\"Global entity records\")); console.log(JSON.stringify({entity_duplicate_global_identity:d.length}, null, 2));'",
+      "result": "Confirmed current entity duplicate_global_identity issue count is 531."
+    },
+    {
+      "command": "jq -r '.aliases.entity | to_entries[] | [.key,.value] | @tsv' data/identity-overrides/merges.json",
+      "result": "Read current entity alias overrides for already-merged, alias-is-target, and target-chain guards."
+    },
+    {
+      "command": "jq '.pairs.entity' data/identity-overrides/do-not-merge.json",
+      "result": "Read current entity do-not-merge pairs for pair-level guard checks."
+    },
+    {
+      "command": "bun --print deterministic guard/evidence script over data/canonical/entities.jsonl, merges.json, do-not-merge.json, and validateRepo()",
+      "result": "Verified all 12 proposed aliases have current canonical alias/target records, no existing entity merge alias, no alias-as-current-merge-target, no target-as-current-merge-alias, no do-not-merge hit, and alias_id != target_id."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed commands",
+    "materialize",
+    "export-jsonl",
+    "full CLI validate",
+    "write",
+    "ask",
+    "schema",
+    "ontology",
+    "identity-review",
+    "canonicalize",
+    "campaign dedup"
+  ]
+}

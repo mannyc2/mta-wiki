@@ -1,0 +1,3083 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-190286"
+record_kind: "source"
+display_name: "MTA Board Action Items - October 2025"
+source_id: "meeting_doc_190286"
+source_ids:
+  - "meeting_doc_190286"
+local_observation_id: "source_mta_board_book_oct2025"
+local_observation_ids:
+  - "source_mta_board_book_oct2025"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T20:46:12.247Z"
+submission_ids:
+  - "sub_9d1633203bae9946"
+  - "sub_9d9cb4d8573d3e04"
+payload:
+  _merged_field_values:
+    description:
+      - "MTA Board Meeting agenda and action items for October 29, 2025 including Capital Program Amendment #5, Fair Fares resolution, procurement approvals, fare proposals, CRZ bond resolution, WIM program, and WZSE program"
+      - "MTA Board Meeting agenda and action items for October 29, 2025"
+  authority_tier: "board_material"
+  content_type: "board book"
+  date_text: "October 2025"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2025-10"
+    precision: "month"
+    raw_text: "October 2025"
+  description: "MTA Board Meeting agenda and action items for October 29, 2025 including Capital Program Amendment #5, Fair Fares resolution, procurement approvals, fare proposals, CRZ bond resolution, WIM program, and WZSE program"
+  document_date: "October 29, 2025"
+  document_date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2025-10-29"
+    precision: "day"
+    raw_text: "October 29, 2025"
+  published_date_normalized: "2025-10-29"
+  published_date_precision: "day"
+  publisher: "Metropolitan Transportation Authority (MTA)"
+  title: "MTA Board Action Items"
+evidence_refs:
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_190286#p001_c0003"
+    page_number: 1
+    source_id: "meeting_doc_190286"
+    source_path: "raw/sources/meeting_doc_190286/blocks.jsonl"
+    text_sha256: "sha256:38568523e759468fc82bee81f92948c3fefea3add8821ca01ff97f8073a6b619"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_190286#p001_c0004"
+    page_number: 1
+    source_id: "meeting_doc_190286"
+    source_path: "raw/sources/meeting_doc_190286/blocks.jsonl"
+    text_sha256: "sha256:5f9cd9ce531d6511df2421ee46214de32e778d30511a3e4407e407cd96421065"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0001"
+    evidence_id: "meeting_doc_190286#p002_c0001"
+    page_number: 2
+    source_id: "meeting_doc_190286"
+    source_path: "raw/sources/meeting_doc_190286/blocks.jsonl"
+    text_sha256: "sha256:85b7dcf94375faba943f42f7ba6a367231b59e7b26f54889f2b16d7a31184f79"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_190286#p001_c0003"
+    page_number: 1
+    source_id: "meeting_doc_190286"
+    source_path: "raw/sources/meeting_doc_190286/blocks.jsonl"
+    text_sha256: "sha256:38568523e759468fc82bee81f92948c3fefea3add8821ca01ff97f8073a6b619"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_190286#p001_c0004"
+    page_number: 1
+    source_id: "meeting_doc_190286"
+    source_path: "raw/sources/meeting_doc_190286/blocks.jsonl"
+    text_sha256: "sha256:5f9cd9ce531d6511df2421ee46214de32e778d30511a3e4407e407cd96421065"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0001"
+    evidence_id: "meeting_doc_190286#p002_c0001"
+    page_number: 2
+    source_id: "meeting_doc_190286"
+    source_path: "raw/sources/meeting_doc_190286/blocks.jsonl"
+    text_sha256: "sha256:85b7dcf94375faba943f42f7ba6a367231b59e7b26f54889f2b16d7a31184f79"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0002"
+    evidence_id: "meeting_doc_190286#p002_c0002"
+    page_number: 2
+    source_id: "meeting_doc_190286"
+    source_path: "raw/sources/meeting_doc_190286/blocks.jsonl"
+    text_sha256: "sha256:506cba243c7dfb691687553a7e612d57757e1a6c463ee4ec9e952132870d9b25"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0003"
+    evidence_id: "meeting_doc_190286#p002_c0003"
+    page_number: 2
+    source_id: "meeting_doc_190286"
+    source_path: "raw/sources/meeting_doc_190286/blocks.jsonl"
+    text_sha256: "sha256:74b31c85c23b150b8fa7410b1a058e228330c95d8041a79f57f2f30fa8ab1d77"
+    text_source: "raw_text"
+---
+
+# Board Book
+
+source_id: meeting_doc_190286
+citation: cite block ids exactly as shown in square brackets
+document: 2067 block(s)
+
+## Page 1
+
+### [p001_c0001] OS19014_16MTA_board_action_MTA Board Action covers 1/9/19 3:46 PM Page 9
+> [p001_c0002] The logo for the Metropolitan Transportation Authority (MTA) is located at the top left. It consists of a white circle containing the letters "MTA" in blue, followed by the text "Metropolitan Transportation Authority" in a white sans-serif font.
+### [p001_c0003] October 2025
+### [p001_c0004] MTA Board Action Items
+> [p001_c0005] A large, stylized graphic of the MTA logo is centered on the page. It features the letters "MTA" in a bold, white, sans-serif font, set against a dark blue circular background. The circle is slightly offset to the left, creating a sense of depth.
+
+## Page 2
+
+### [p002_c0001] MTA Board Meeting
+[p002_c0002] 2 Broadway 20th Floor Boardroom New York, NY 10004
+[p002_c0003] Wednesday, 10/29/2025 9:00 AM - 12:00 PM ET
+### [p002_c0004] 1. PUBLIC COMMENT PERIOD
+### [p002_c0005] 2. SPECIAL PRESENTATIONS
+### [p002_c0006] 3. FAIR FARES RESOLUTION
+[p002_c0007] Fair Fares Board Resolution - Page 4
+### [p002_c0008] 4. CAPITAL PLAN AMENDMENTS
+### [p002_c0009] a. Capital Plan Amendment Staff Summary
+[p002_c0010] Capital Plan Amendment Staff Summary - Page 6
+### [p002_c0011] b. Capital Plan Amendment #5 - Materials Distributed in Exhibit Book
+### [p002_c0012] 5. APPROVAL OF MINUTES
+[p002_c0013] September 2025 - Regular Board Meeting Minutes - Page 8
+### [p002_c0014] 6. AUDIT COMMITTEE
+### [p002_c0015] a. Actions
+### [p002_c0016] i. Consolidated Financial Statements 2025 Q2 - Materials Distributed In Exhibit Book
+### [p002_c0017] ii. Appointment of MTA Independent Auditor - Materials Distributed In Exhibit Book
+### [p002_c0018] 7. CORPORATE GOVERNANCE COMMITTEE
+### [p002_c0019] a. Actions
+### [p002_c0020] i. Committee Charters
+[p002_c0021] Committee Charters - Page 17
+### [p002_c0022] ii. MTA Policies
+[p002_c0023] Staff Summary Alcohol and Drug Free Workplace Policy Directive - Page 18
+### [p002_c0024] 8. COMMITTEE ON CAPITAL PROGRAM
+### [p002_c0025] a. C&D Procurements
+[p002_c0026] C&D Procurements - Page 19
+### [p002_c0027] 9. COMMITTEE ON METRO-NORTH RAILROAD & LONG ISLAND RAILROAD - No Items
+### [p002_c0028] 10. COMMITTEE ON NYCT & BUS
+### [p002_c0029] a. Procurement
+[p002_c0030] NYCT Procurements - Page 33
+### [p002_c0031] 11. COMMITTEE ON MTA BRIDGES & TUNNELS OPERATIONS
+### [p002_c0032] a. Actions
+[p002_c0033] Weigh -in- Motion Program on RFK Bridge - Page 42
+[p002_c0034] Work Zone Speed Enforcement - Page 46
+### [p002_c0035] 12. COMMITTEE ON FINANCE
+### [p002_c0036] a. Actions
+[p002_c0037] Congestion Relief Zone Toll Revenue Obligation Resolution - Page 50
+### [p002_c0038] b. Procurement
+### [p002_c0039] i. Non Competitive
+[p002_c0040] MTAHQ Non-Competitive Procurement - Page 177
+### [p002_c0041] ii. Competitive
+[p002_c0042] MTAHQ Competitive Procurement - Page 180
+### [p002_c0043] c. Real Estate
+
+## Page 3
+
+### [p003_c0001] Real Estate Action Items - Page 184
+
+## Page 4
+
+### [p004_c0001] RESOLUTION
+[p004_c0002] WHEREAS , New York City's transit system is the lifeblood for millions of residents, providing critical connections to jobs, education, healthcare, and other essential services; and
+[p004_c0003] WHEREAS , nearly 40% of the MTA's operating budget comes from fare and toll revenue and every fare counts to keep the system running frequently and reliably for everyone; and
+[p004_c0004] WHEREAS , the MTA's low fares are key to keeping New York affordable for the majority of New Yorkers; and
+[p004_c0005] WHEREAS , Fair Fares NYC, funded and administered by the City of New York, further amplifies the affordability of transit by offering half-priced fares for the very lowest-income New Yorkers; and
+[p004_c0006] WHEREAS , there are thousands of low- and moderate-income New Yorkers who could benefit from lower transit fares so as to not have to balance the cost of fares against rising housing, food, and utility expenses; and
+[p004_c0007] WHEREAS , under current eligibility guidelines, Fair Fares NYC is limited to New Yorkers living at or below 150% of the Federal poverty level, excluding many working families who earn above this threshold but still struggle with the high cost of living; and
+[p004_c0008] WHEREAS , a full-time New Yorker earning the local minimum wage of $16.50 per hour makes nearly $10,000 more than the current income threshold 1 making them ineligible; and
+[p004_c0009] WHEREAS , expanding eligibility to 200% of the Federal Poverty Level would allow an estimated 650,000 additional New Yorkers to qualify for the program 2 by increasing the income threshold to $31,000 for an individual and $64,300 for a family of four 3 ; and
+[p004_c0010] WHEREAS , strengthening Fair Fares NYC is not only a matter of equity and economic opportunity, but also of fiscal responsibility, since providing affordable access to
+[p004_c0011] _1 PCAC, What Expanding Fair Fares Means to Riders , 2025, https://pcac.org/report/fairfares25/_
+[p004_c0012] _2 Ibid_
+[p004_c0013] _3 U.S. Department of Health and Human Services, Office of the Assistant Secretary for Planning and Evaluation, 2025 Poverty Guidelines: 48 Contiguous , 2025 States https://aspe.hhs.gov/sites/default/files/documents/dd73d4f00d8a819d10b2fdb70d254f7b/detailed-guidelines-2025.pdf_
+[p004_c0014] _1_
+[p004_c0015] _Master Page # 4 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 5
+
+[p005_c0001] the transit system reduces fare evasion and guarantees more reliable revenue for the MTA; and
+[p005_c0002] WHEREAS , equitable access to transit must consider geographic disparities in service and affordability, particularly for residents of outer-borough neighborhoods and subway deserts who often have longer commutes to employment hubs; and
+[p005_c0003] WHEREAS , access to the Fair Fares NYC program extends to New Yorkers facing barriers such as limited English proficiency, digital access, or disability, ensuring that the most marginalized residents can fully benefit from affordable transit options;
+[p005_c0004] WHEREAS , the Board has considered all of the above.
+[p005_c0005] NOW, THEREFORE , upon motion duly made and seconded, the following resolution is adopted by the Board:
+[p005_c0006] RESOLVED , that the MTA Board calls on the City of New York to expand eligibility for the Fair Fares program to at least 200% of the Federal Poverty Level and invest in more community outreach to ensure eligible residents are informed about the program; and
+[p005_c0007] FURTHER RESOLVED , that the MTA Board urges the City to advance automatic or simplified enrollment mechanisms through coordination with existing public benefit systems; and
+[p005_c0008] FURTHER RESOLVED , that annual public reporting be expanded to assess the program's success, including data related to income, geography, demographics, and transit usage.
+[p005_c0009] October 29, 2025 New York, New York
+[p005_c0010] _2_
+[p005_c0011] _Master Page # 5 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 6
+
+### [p006_c0001] Staff Summary
+[p006_c0002]
+
+```text
+Subject MTA 2020-2024 Capital Program Amendment #5 Department MTA C&D Department Head Name Steven Loehr, Deputy Chief Development Officer Department Head Signature Project Manager/Division Head Stephen A. Berrang, Senior VP, C&D Program Oversight Project Manager/Division Head Signature
+```
+[p006_c0003]
+
+```text
+Date October 29, 2025 Department MTA HQ Financial Services Department Head Name Olga Chernat, Deputy Chief, Financial Services Department Head Signature Project Manager/Division Head Tiana Grimes, Director, Capital Funding Management Project Manager/Division Head Signature
+```
+[p006_c0004]
+
+```text
+Board Action Order To Date Approval Info Other 1 Board
+```
+[p006_c0005]
+
+```text
+Internal Approvals Order Approval Order Approval 5 Chair and CEO 4 Chief of Staff 3 Chief Development Officer 2 Chief Financial Officer 1 Legal
+```
+### [p006_c0006] Purpose:
+[p006_c0007] To obtain MTA Board approval of the proposed amendment to the MTA 2020-2024 Capital Program that decreases the total funding to $55.432 billion and to authorize the MTA to submit the $52.182 billion Capital Program Review Board (CPRB) portion of it to the CPRB for its review and approval, in accordance with the Public Authorities Law §1269-b.
+### [p006_c0008] Discussion:
+[p006_c0009] Proposed MTA 2020-2024 Capital Program Amendment: this Amendment #5 to the 2020-2024 Capital Program decreases the current capital program by $131 million, with respect to CPRB approved December 2024 letter amendment #4, from $55.563 billion to $55.432 billion. (The proposed change is a $10 million reduction from our last printed amendment approved at $55.442 billion in August 2023.) The CPRB portion of the program decreases from $52.237 billion to $52.182 billion. This amendment addresses the following: (a) increases and decreases to MTA agency budget envelopes by agency and category (b) elements with increases of 10% or more requiring CPRB approval. The proposed Capital Program amendment includes the following:
+[p006_c0010] NYCT Program: $33.945 billion. The NYCT Program decreases by $19 million to reflect adjustments resulting from refined project scopes and cost estimates, bid results, and schedule changes. A no cost change was the addition of two additional ADA locations supported by savings within the element. There are several increases in investment categories, namely a $117 million increase in the Buses category, reflecting increased costs for battery electric buses and the associated infrastructure; a $126 million increase in the Line Equipment category, owing to the addition of three Superstorm Sandy resiliency projects; a new platform barrier project to enhance safety; and a $153 million increase in the Shops and Yards category, primarily due to added resiliency scope at the Westchester Yard. These are offset by strategic project reductions, namely a $258 million reduction to program reserves to support additional needs for projects, and an overall $315 million decrease to the Signals and Communication category, a result of the favorable revised estimate for the Fulton line CBTC, offset by small increases to: ongoing installations, design and support, and increases to various projects in the communications element based on bid results..
+[p006_c0011] Long Island Rail Road: $3.443 billion. The overall LIRR Program decrease of $4 million represents the LIRR's contribution to MTA Interagency capital program administrative and insurance costs. Notable increases at the category level include an $81 million increase in Track, driven by the prioritization of the Queens Interlocking upgrade supporting service to Grand Central Madison and Elmont-UBS Arena as well as additional needs at the West Side Yard Flood Wall – critical to both LIRR and Amtrak; and a $15 million Rolling Stock increase, whereby the purchase of Dual-Mode Locomotives was advanced and those of Work Locomotives and Coaches were moved to the 2025-2029 Capital Program. A $59 million decrease in Communications and Signals is driven by the re-sequencing of the Hunt to Post signal project to the 2025-2029 Capital Program; a $38 million decrease in Shops and Yards is the result of administrative re-balancing.
+[p006_c0012] Metro-North Railroad: $3.404 billion. The Metro-North Railroad Program decreases by $4 million to support MTA Interagency capital program needs. The Stations category increases by $20 million, namely, to reflect ongoing work on the GCT Fire Standpipe Phase II project and construction on the Three Bronx Stations project. This is offset by the $24 million decrease in the Communications and Signals category, which is largely due to the reprogramming of the Positive Train Stop Release project to the 2025-2029 Capital Program. The Miscellaneous category increases by $33 million due to the increase in the Systemwide Security Initiatives project,
+[p006_c0013] _Master Page # 6 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 7
+
+### [p007_c0001] Metropolitan Transportation Authority
+### [p007_c0002] Staff Summary
+[p007_c0003] Page 2 of 2
+[p007_c0004] MTA Bus Company (MTAB): $839 million. There is nearly no change to the MTA Bus Program envelope. Increases to various bus purchase projects are offset by decreases in Depot and technology projects and in program services and reserves.
+[p007_c0005] MTA Interagency: $196 million. The Interagency program increases by $29 million to reflect the budget transfers from other agencies. Namely, MTA's Mentoring Program increases by $20.1 million pursuant to a new MTA Board-approved contract to support the MTA's Small Business Development Program. The MTA Construction and Development category increases by $68 million, mainly due to a reallocation of reserves to a new project in the Planning and Program Support category to address C&D administrative costs and another $5 million project to address Owner Controlled Insurance Program (OCIP) safety requirements.
+[p007_c0006] Major Projects and Expansion: $10.355 billion. The Major Projects and Expansion program increases by $64 million. The net increase includes the impacts of additions to the Capital Program approved in the 2024 Letter Amendment (amendment #4) as well as a $56.7 million decrease to the Penn Reconstruction project, now that Amtrak is taking the lead on future redevelopment of the station.
+[p007_c0007] CPRB 10% Element Issues. This amendment also identifies capital program elements that require CPRB approval to advance work in elements where the budget has increased greater than 10% from the last CPRB approved level. These elements are identified in the body of the book. CPRB approval is required to advance work in these elements.
+[p007_c0008] Bridges and Tunnels: $3.250 billion. The overall Bridges and Tunnels program decreases by $77 million primarily reflecting the completion with a 15% savings in the Central Business District Tolling project. After programmatic rebalancing, one new public safety project was added, i.e. the installation of a safety fence on the Throgs Neck Bridge. This amendment also formally reflects several updated project budgets for projects awarded in previous years based on their awarded values.
+### [p007_c0009] Impacts on Funding:
+[p007_c0010] The proposed amendment decreases the 2020–2024 funding envelope by $131 million from $55.563 billion, as last approved in the December 2024 letter amendment to $55.432 billion. The proposed change reflects a $10 million reduction from the last printed amendment, Amendment #3.
+[p007_c0011] The main change in this amendment is the recognition of $1.644 billion in previously announced and anticipated federal funding for the Penn Station Access (PSA) project, following the December 2024 execution of a funding agreement with the FRA and a revised memorandum of understanding with Amtrak, along with a corresponding $1.350 billion net reduction in MTA Bonds and PAYGO which was serving as a temporary funding source until the federal grant for the PSA project was finalized. Amtrak's contribution to the PSA project was also reduced by $365 million as part of the agreement for the FRA grant.
+[p007_c0012] The net overall reduction in the funding envelope is driven by savings from lower costs of installing the Congestion Pricing infrastructure.
+[p007_c0013] Funding changes since Amendment #3 are summarized as follows:
+- [p007_c0014] • Federal: Increase of $1.678 billion, primarily reflecting $1.644 billion from final recognition of the FRA grant for Penn Station Access (PSA) which was previously announced but not executed until December 2024, with the remainder from various competitive grant programs. • MTA Bonds & PAYGO: $1.350 billion net decrease which was serving as a temporary funding source for the PSA project until the federal grant was executed, and therefore largely offset by FRA funding for PSA and other discretionary grants • State of New York: Net increase of $58 million, reflecting additional support for the Interboro Express and Second Avenue Subway West Expansion projects offset by adjustments related to Penn Reconstruction. • City of New York: Increase of $45 million for subway system and MTA Bus Company projects. • Other Contributions: $365 million reduction in Amtrak's PSA contribution as expected pending the execution of the FRA grant. • Bridges and Tunnels Dedicated: $76 million reduction, reflecting Congestion Pricing infrastructure project savings and interagency reallocations.
+### [p007_c0015] Alternatives:
+[p007_c0016] The amendment is critical to the rightsizing of MTA agency budgets. It will advance the MTA's mandate to renew, enhance and expand its network to meet the mobility needs of the region. Pursuant to the Public Authorities Law, program element increases exceeding 10% will require CPRB approval. Without CPRB approval of the changes, certain projects may not advance as planned, including critical safety and resiliency ones and the two added ADA station locations.
+### [p007_c0017] Recommendations:
+- [p007_c0018] 1. That the MTA Board approve this proposed 2020-2024 Capital Program amendment #5 in the amount of $55.432 billion with the changes outlined above and detailed in the Capital Program book. 2. That the MTA Board authorize the MTA to submit the $52.182 billion CPRB portion to the CPRB for its review and approval.
+[p007_c0019] _Master Page # 7 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 8
+
+### [p008_c0001] Joint Minutes of the Metropolitan Transportation Authority, the New York City Transit Authority, the Manhattan and Bronx Surface Transit Operating Authority, the Staten Island Rapid Transit Operating Authority, the Metropolitan Suburban Bus Authority, the Triborough Bridge and Tunnel Authority, the Long Island Rail Road Company, Metro-North Commuter Railroad Company, MTA Construction and Development Company, the MTA Bus Company, Grand Central Madison Operating Company, and the First Mutual Transportation Assurance Company
+### [p008_c0002] Regular Board Meeting Minutes September 30, 2025 9:00 a.m. 130 Livingston Street Brooklyn, NY
+### [p008_c0003] The following Board Members were present (*attended remotely):
+[p008_c0004] Hon. Janno Lieber, Chair & CEO Hon. Andrew Albert Hon. Samuel Chu Hon. Michael Fleischer Hon. Daniel Garodnick Hon. Marc Herbst Hon. David Jones Hon. Christopher Leathers Hon. Blanca Lopez Hon. David Mack Hon. Haeda B. Mihaltses Hon. Melva M. Miller Hon. James O'Donnell Hon. Dr. John-Ross Rizzo Hon. Lisa Sorin Hon. Midori Valdivia Hon. Edward Valente Hon. Neal Zuckerman
+### [p008_c0005] The following alternate non-voting members were present:
+[p008_c0006] Hon. Gerard Bringmann Hon. Randolph Glucksman
+### [p008_c0007] The following Board Members were not present:
+[p008_c0008] Hon. John Samuelsen
+[p008_c0009] Paige Graves, General Counsel, -, John McCarthy, Chief External Relations & Policy, Lisette Camilo, Chief Administrative Officer, Jai Patel, Chief Financial Officer, Justin Vonashek, President Metro-North Railroad, Rob Free, President LIRR, Jamie Torres-Springer, President MTA C&D, Shanifah Ricara, Senior Advisor for Communications and Policy/Chief Customer Officer, Juliette Michaelson, Chief of Staff and Strategic Planning, Catherine Sheridan, President Bridges & Tunnels, Demetrius Crichlow, President New York City Transit, Monica Murray, Auditor General, Anita L Miller, Chief Labor Relations and Jessie Lazarus, Deputy Chief Commercial Ventures also attended the meeting.
+[p008_c0010] Chair Lieber called to order the September 2025 Board meeting.
+[p008_c0011] _Master Page # 8 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 9
+
+[p009_c0001] A safety announcement was made.
+### [p009_c0002] 1. PUBLIC SPEAKERS' SESSION
+[p009_c0003] The MTA Moderator announced that the following public speakers will speak either live virtually or in-person. The MTA Moderator reminded public speakers of the rules of conduct and the two-minute speaking limit. The Moderator reminded speakers of the warning beep when 30 seconds remain to conclude their remarks. The moderator advised that the public comment will be recorded, published to the MTA website, and available for MTA Board Members' review.
+[p009_c0004] The following public speakers commented (*live virtual comments):
+[p009_c0005] Adam Schmidt, Citizens Budget Commission
+[p009_c0006] Gian Carlo Pedulla, ADA Task Force
+[p009_c0007] Jason Anthony, LIRR ADA Task Force
+[p009_c0008] Christopher Greif, ADA Accessibility
+[p009_c0009] Jean Ryan, Disabled in Action
+[p009_c0010] Jack Nierenberg, Passengers United
+[p009_c0011] Aleta Dupree, Team Folds*
+[p009_c0012] Gary Prophet, private citizen
+[p009_c0013] Veronica Trotta, private citizen
+[p009_c0014] Evan Yankey, BCID
+[p009_c0015] Michael Ring, DIA
+[p009_c0016] Miriam Fisher, private citizen*
+[p009_c0017] Lisa Daglian, PCAC
+[p009_c0018] Kirsten John Foy, The Arc of Justice
+[p009_c0019] Jason Busolt, SMART
+[p009_c0020] Anthony Fotiadis, SMART GC2
+[p009_c0021] Michael Cohen, private citizen
+[p009_c0022] Jessie Figueroa, District 1 Veterans of Foreign Wars*
+[p009_c0023] Omar Vera, private citizen
+[p009_c0024] Briony Smith, The New York Alliance Against Racist and Political Repression
+[p009_c0025] Cicely Robinson, NYAARPR
+[p009_c0026] Eric Romann, Jobs to Move America
+[p009_c0027] Jamie Kowalski, The New York Alliance Against Racist and Political Repression
+[p009_c0028] Lauren Schandel, Jobs to Move America
+[p009_c0029] Damarc Barlatier, FAF
+[p009_c0030] Christian Joseph, private citizen
+[p009_c0031] Daniel Koh, The New York Alliance Against Racist and Political Repression
+[p009_c0032] Chueqa Yang, Jobs to Move America
+[p009_c0033] Anna Humphrey, CID
+[p009_c0034] Matt McMillan, TWO Local 100*
+[p009_c0035] Shivani Ishwar, The New York Alliance Against Racist and Political Repression*
+[p009_c0036] Phil Valenti, President, TWO Local 106 TSO*
+[p009_c0037] Wendy Smith, Save the Ferry
+[p009_c0038] Antje Ellermann, private citizen
+[p009_c0039] _Master Page # 9 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 10
+
+[p010_c0001] Charlton D'Souza, Passengers United David Kupferberg, Passengers United Eric McClure, Streets PAC David Paul Gerber, private citizen Michelle Phillips, private citizen Yuki Endo, Passengers United/ ADA Accessible Transportation Naomi Herson-Ringskog, Save the ferry
+[p010_c0002] Chair Lieber thanked everyone who joined the meeting today, especially the public speakers.
+[p010_c0003] General Counsel Paige Graves confirmed a quorum for the record.
+### [p010_c0004] 1. EXECUTIVE SESSION
+[p010_c0005] The Chair stated that there were labor matters to be discussed in executive session. Upon motion duly made and seconded the Board voted to convene an Executive Session, in accordance with the Public Officers Law, Section 105(1)(e), to discuss labor matters.
+### [p010_c0006] 2. PUBLIC SESSION RESUMES
+[p010_c0007] Chair Lieber stated that while in executive session the Board discussed and approved the following:
+- [p010_c0008] A. Collective Bargaining Agreement between Metro-North Railroad and the National Conference of Fireman and Oilers (NCFO); and B. Collective Bargaining Agreement between Metro-North Railroad and the Sheet Metal, Air, Rail and Transportation Workers (SMART)
+### [p010_c0009] 3. CHAIR'S REMARKS
+[p010_c0010] The Chair thanked everyone who joined the meeting, members of the public, staff and journalists. The Chair stated that MTA has been celebrating important milestones since we last met at the Special August meeting where the Board approved the Second Avenue Subway Phase 2 contract.
+[p010_c0011] The Chair stated that this summer was the safest underground on record, with overall transit crime from June to August down almost 10% from the same time last year. Year-to-date crime is down 11% from pre-COVID. It was also a strong summer on the service front. Reliability was high despite those couple of difficult days we had with the West 4th St power outage. Subway on-time performance (OTP) over the last three months was on par with the May record of 85% overall.
+[p010_c0012] The Chair asked that we remember where we were a few short years ago, before COVID, when we were in the 60s and 70s on on-time performance -- and now we're in the mid-80s. The commuter railroads are performing at a really high level as always -- 97% on average -- well above their goals.
+[p010_c0013] _Master Page # 10 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 11
+
+[p011_c0001] Chair Lieber reminded everybody that MTA has made significant progress on something we hear a lot about - let it be acknowledged that we just set a record on elevator availability. That means that we had over 98% elevator availability in the month of September. It's not just about new elevators; it's about making sure that we maintain and replace the elevators which are aging out. There are some in the system that have been there 30+ years, and they need to be replaced and we're getting it done. So, tip of the hat to C&D and to Transit for what they're doing to make sure that we have elevator availability at a high level.
+[p011_c0002] The Chair complimented the Transit group on Phase 2 of the Queens Bus Network Redesign, which launched a couple of weeks ago and is showing increased speeds, especially on the new Rush routes -- 7% faster than their predecessors. Kudos to the Transit team.
+[p011_c0003] Chair Lieber gave special thanks to the MTA workforce that volunteered to go out as ambassadors and hand out brochures and talk to people and make sure that everybody understood the redesign. This is a huge success. The Queens bus system had not been redesigned in like 50 years, and we did it. The public is appreciating it, and we received very positive feedback, and most importantly, the public was aware of all the changes timely thanks to all that effort.
+[p011_c0004] Chair Lieber continued by stating, with all this progress, it's not surprising that ridership also shot up in the last period. The Long Island Rail Road broke the 300,000 mark twice in the last week, boosted by the 20,000 golf fans heading to the Ryder Cup. Not to be outdone, Subways had two weeks of 4 million riders throughout the week. That had never been done since COVID. Four million riders a day, all week long. Another post-pandemic first, so everything's moving in the right direction.
+[p011_c0005] The Chair continued with Paratransit records. The busiest single day ever -- September 10 -- with 47,000 paratransit trips. Paratransit by itself has become a major transit system alone, and I think they did 954,000 total trips in August -- an historic high.
+[p011_c0006] Chair Lieber explained that these records happen when you improve service and improve safety -- New Yorkers vote with their feet. Gains show in the numbers, and they're starting to inform the way we're perceived by the public. The MTA are innovators -- the American Public Transportation Association gave the MTA an award attesting to that. They gave the MTA their innovation award for the first-in-the-nation congestion pricing program.
+[p011_c0007] Chair Lieber informed the Board that the MTA has also gotten some validation on the controversial labor issues. It was a tough few weeks with a couple of LIRR unions threatening to strike. The strike was averted when the unions asked President Trump to appoint a Presidential Emergency Board. Importantly, we got a lot of support from the public and from elected officials who said to us "please hold firm on the issue of pattern-based bargaining." We have 80 separate unions at the MTA. The State and the City have hundreds more unions. We want to make a deal that gives these folks raises and we'll give them even bigger raises, but that has to include improvements on these crazy work rules that are so outdated and abusive, and the public really wants to see progress on that front.
+[p011_c0008] Chair Lieber stated that people are getting really excited about the new Metro-North super express service that is going to start running soon between the City and Poughkeepsie. Governor Hochul challenged us in her State of the State address in January to make this happen this year. She said that the best way to drive economic growth, especially for Hudson Valley areas that are a little further out, is to make jobs much more accessible. And we listened, we're delivering sub-90-minute trips months ahead of what had been the
+[p011_c0009] _Master Page # 11 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 12
+
+[p012_c0001] planned schedule for initiating that service. The Chair offered congrats to MNR President Vonashek and team.
+[p012_c0002] The Chair continued that this is the pattern that MTA is trying to establish – we get ideas, we get assignments, and then we really start to deliver. MTA delivered on platform barriers, now approaching 100 stations this year and the riders are telling us that they feel much safer.
+[p012_c0003] Also, there is better lighting throughout the system. NYCT President Crichlow and team did a great job on getting it installed throughout the subway system. We're going to make sure we take advantage of all the opportunities to create a more welcoming and safer-feeling environment. And before those improvements, we also got security cameras done in every subway car in the whole system. Governor Hochul challenged us, she gave us the money to do it, and then we got it done in a single year. So, lots to celebrate in terms of the responsiveness and professionalism of this MTA.
+[p012_c0004] Chair Lieber moved to the proposed 4% fare increase. The proposed increase demonstrates another bedrock principle of today's MTA, which is we're going to be transparent, and we're going to be responsive to what our customers give us in the feedback. Today you're going to hear from Jessie Lazarus, Deputy Chief of Commercial Ventures about adjustments to the fare proposals that were unveiled back in July, but they're specifically designed to respond to the key elements of commentary that we heard through the much more aggressive outreach program that we initiated. The proposal is designed to preserve the affordability of the system. Transit is one of the few things that makes New York affordable. And I respect those that oppose the fare increase, but we're talking about something that is 15% the cost of owning an automobile. In New York, I think the gap between transit and auto ownership is even larger and because of that, New Yorkers spend a lot less of their household income on transportation than people in the rest of the country. MTA is determined to keep it that way while also making sure that we can fund our operation and give our workforce wage increases.
+[p012_c0005] Chair Lieber continued by stating, over the past 10 years, MTA fare increases have dramatically lagged inflation and they're even less than MTA wage increases. MTA takes these changes seriously – we don't do fare increases casually -- and it showed in the substantial outreach that we initiated. We actually went out and met the riders where they are – at bus stops, at subway stations, and at commuter rail stations. It was an unprecedented success. We got four times as many comments – which somebody suggested that was proof of people's hostility to the fare increase – no. What it showed was that we were going out and talking to people in a way that had never been done before. And I credit the team that did that.
+[p012_c0006] Moving on, the Chair provided remarks on Chris Pangilinan. With Chris' work we have transformed Paratransit at the MTA. Chris then went on to be head of Operations Planning, and then he took on for a while being the acting head of Buses. This is one of the great professionals, and we just have to celebrate when first class people hit a milestone in their careers at the MTA. The Chair thanked Chris for everything he has done.
+[p012_c0007] The Chair concluded his remarks and called on Jessie Lazarus, Deputy Chief Commercial Ventures, to discuss the fare and toll proposal.
+### [p012_c0008] 4. FARE AND CROSSING CHARGE PROPOSAL
+[p012_c0009] _Master Page # 12 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 13
+
+[p013_c0001] Deputy Chief Commercial Ventures, Jessie Lazarus, presented the proposed fare and crossing charge increases. The presentation included an overview of the public comment process, and updates to the proposal. For details of Ms. Lazarus's presentation and related documents refer to the video recording of the meeting, produced by the MTA and maintained in MTA records.
+### [p013_c0002] A. Action Item
+[p013_c0003] Upon motion duly made and seconded, the Board approved the following actions as set forth in the Fare and Crossing Charge Increases resolutions and staff summaries:
+- [p013_c0004] 1. 2026 Fare Increases 2. 2026 Fare Pilots 3. 2026 Crossing Charge Increases (Environmental and "Just and reasonable" Determination)
+[p013_c0005] Board Members Jones and Garodnick abstained from the vote.
+[p013_c0006] The details of the Board members' comments and questions with respect to these action items are included in the video recording of the meeting produced by the MTA and maintained in MTA records.
+### [p013_c0007] 5. APPROVAL OF MINUTES
+[p013_c0008] Upon motion duly made and seconded, the Board approved the Joint Minutes of the MTA and MTA Agencies Regular Board meeting held on July 30, 2025, and the MTA Special Board meeting held on August 18, 2025, as distributed.
+[p013_c0009] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records for the details.
+### [p013_c0010] 6. TRIBOROUGH BRIDGE AND TUNNEL AUTHORITY COMMITTEE
+[p013_c0011] There were no items to report for Board approval for the Triborough Bridge and Tunnel Authority Committee.
+### [p013_c0012] 7. JOINT LONG ISLAND RAIL ROAD/METRO-NORTH RAILROAD COMMITTEE
+[p013_c0013] There were no items to report for Board approval for the Joint Railroad Committee.
+### [p013_c0014] 8. DIVERSITY COMMITTEE
+[p013_c0015] There were no items to report for Board approval for the Diversity Committee.
+### [p013_c0016] 9. NEW YORK CITY TRANSIT COMMITTEE
+[p013_c0017] Upon motion duly made and seconded, the Board approved the following:
+[p013_c0018] _Master Page # 13 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 14
+
+### [p014_c0001] A. Ratification Items
+- [p014_c0002] 1. Ratification of a modification awarded under an Immediate Operating Need for Automated Camera Enforcement, which include options to extend for up to six years beyond their expiration dates with Hayden AI Inc.; 2. Ratification of a modification awarded under an Immediate Operating Need for Automated Camera Enforcement, which include options to extend for up to six years beyond their expiration dates with Seon [USA] Corp.; and 3. Ratification of an Immediate Operating Need for RideCo US Inc. Contract for Paratransit technology solution.
+[p014_c0003] Refer to the video recording, the staff summary, and documentation filed with the records of this meeting, produced by the MTA and maintained in MTA records for the details of this item.
+### [p014_c0004] 10. CAPITAL PROGRAM COMMITTEE
+[p014_c0005] Upon a motion duly made and seconded, the Board voted to approve the following six actions for a combined total of 141 million dollars:
+- [p014_c0006] 1. Adoption of a resolution declaring competitive bidding impractical or inappropriate for all MTA Design-Build contracts and that it is in the public interest to issue Requests for Proposals for such contracts; 1-3. Award of a publicly advertised and competitively solicited contract with Forte Construction Corp. (Contract A37811) for Design-Build services for ADA Upgrades – Package 7 to provide ADA upgrades at two New York City Transit stations and award of a long-term elevator maintenance contract to Mid-American Elevator Co., Inc. (Contract 60000000037020); 4. Ratification of a modification to a contract with Infinity Contracting Services Corp. (Contract C33495) to restore Track Pit No. 8 at the 207 th Street Overhaul Shop to a state of good repair; 5. Ratification of a modification to a contract with Atkins-HNTB JV (Contract PS21002) for additional design services for CBTC implementation and for enhanced cellular coverage on New York City Transit’s Fulton Street and Liberty Avenue lines and to extend the period of performance by nine months to December 31, 2025; and, 6. Ratification of a modification to a contract with Siemens Mobility, Inc. (Contract S48013-1) to add the development of hardware and software for 5G-based Data Communication System train equipment, support for the installation and testing of the new 5G-based equipment on two R160-class and two R179-class subway trains, and ordering long lead components of the new equipment for installation on the full R160 and R179 fleets.
+[p014_c0007] Refer to the video recording, the staff summary, and documentation filed with the records of this meeting, produced by the MTA and maintained in MTA records for the details of this item.
+### [p014_c0008] 11. COMMITTEE ON FINANCE
+[p014_c0009] Upon motion duly made and seconded, the Board voted to approve the following procurement items:
+### [p014_c0010] A. Procurement
+### [p014_c0011] Competitive procurements
+[p014_c0012] _Master Page # 14 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 15
+
+- [p015_c0001] 1. Two contract awards to Aetna Life Insurance Company for the NYCT Medical Benefits Program. The benefits cover approximately 150,000 active and retired employees of NYC Transit, MTA Bus Company, and Staten Island Rapid Operating Authority and their dependents. 2. Contract award to IBM Corporation to provide day-to-day maintenance and technical support services for MTA's existing UKG Workforce Central system and for the new upgraded Kronos Pro Workforce Management system. 3. Modify a contract awarded to Cubic Transportation Systems for the procurement of OMNY extended-use and limited-use media in order to procure additional One Metro New York ("OMNY") media.
+[p015_c0002] Board Member Mihaltses voted against Competitive procurement item number 3.
+[p015_c0003] Upon motion duly made and seconded, the Board voted to approve the following real estate items:
+### [p015_c0004] B. Real Estate
+### [p015_c0005] 1. Administrative Action Items
+- [p015_c0006] i. Modification to the existing policy to award telecommunication and utility franchise licenses along any MTA Agency right-of-way. ii. Report on Eminent Domain Procedure Law Determination and Findings related to the acquisition of property interests in Westchester and the Bronx for the Penn Station Access Project.
+### [p015_c0007] 2. Transactional Items
+- [p015_c0008] i. On behalf of MTA New York City Transit for authorization to acquire property interests by negotiated settlement or eminent domain for the Nostrand Avenue ADA Project in Brooklyn ii. On behalf of MTA New York City Transit a lease extension with 29-76 Realty Co., LLC for office space at 29-76 Northern Blvd in Queens. iii. For MTA Metro-North Railroad and include a lease with The Saw Pit at Port Chester Station, LLC for a restaurant in the Port Station Building. iv. For MTA Metro-North a license agreement with Gateway Goods Holding LLC For a Time Horton's concession in the White Plains Station. v. For MTA Long Island Rail Road an easement with AIRED Station Road Logistics Center II for two subsurface utility connections along the Main Line in Yaphank, NY. vi. On behalf of MTA Long Island Rail Road and a license with Eagle Scaffolding Services, Inc. for property to be used for storage and parking on the Babylon Branch in Amityville.
+[p015_c0009] _Master Page # 15 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 16
+
+[p016_c0001] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records for the staff summary and details.
+### [p016_c0002] 12. ADJOURNMENT
+[p016_c0003] Upon motion duly made and seconded, the Board voted to adjourn the meeting at 11:57am.
+[p016_c0004] Paige Graves General Counsel and Corporate Secretary MTA
+[p016_c0005] Eamonn Foley Vice President, General Counsel and Corporate Secretary Metro-North Commuter Railroad Company
+[p016_c0006] David Farber General Counsel and Corporate Secretary NYCT and MTA Bus
+[p016_c0007] Haley Stein Vice President, General Counsel and Corporate Secretary Long Island Rail Road Company
+[p016_c0008] Paul L. Friman General Counsel and Corporate Secretary Triborough Bridge & Tunnel Authority
+[p016_c0009] Evan Eisland General Counsel and Corporate Secretary MTA C&D
+[p016_c0010] _Master Page # 16 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 17
+
+### [p017_c0001] Staff Summary
+### [p017_c0002] Page 1 of 1
+[p017_c0003]
+
+```text
+Subject Revision to Board Committee Charters Department Corporate Compliance Department Head Name Lamond W. Kearse Department Head Signature Project Manager Name Lamond W. Kearse
+```
+[p017_c0004]
+
+```text
+Date October 27, 2025 Vendor Name N/A Contract Number N/A Contract Manager Name N/A Table of Contents Ref # N/A
+```
+[p017_c0005]
+
+```text
+Board Action Order To Date Approval Info Other 1 Governance 10/27/25 X 2 Board 10/29/25 X
+```
+[p017_c0006]
+
+```text
+Internal Approvals Order Approval Approval 1 Chief Compliance Officer 2 General Counsel
+```
+### [p017_c0007] Purpose:
+[p017_c0008] To seek board approval of proposed revisions to the MTA Diversity Committee Charter.
+### [p017_c0009] Discussion:
+[p017_c0010] We are recommending a revision to the Diversity Committee Charter incorporating a new section requiring the Chief Accessibility Officer to provide the Diversity Committee with reports regarding achievement of diversity as it relates to accessibility in the workplace.
+### [p017_c0011] Recommendation:
+[p017_c0012] It is recommended that the Board adopt the revision to the Diversity Committee Charter.
+[p017_c0013] _Master Page # 17 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 18
+
+### [p018_c0001] Staff Summary
+### [p018_c0002] Page 1 of 1
+[p018_c0003]
+
+```text
+Subject Alcohol and Drug Free Workplace Policy Directive Department Safety and Security Department Head Name Carl Hamann Department Head Signature Project Manager Name John Mallios
+```
+[p018_c0004]
+
+```text
+Date October 27, 2025 Vendor Name N/A Contract Number N/A Contract Manager Name N/A Table of Contents Ref # N/A
+```
+[p018_c0005]
+
+```text
+Board Action Order To Date Approval Info Other 1 Governance 10/27/25 X 2 Board 10/29/25 X
+```
+[p018_c0006]
+
+```text
+Internal Approvals Order Approval Approval 1 Chief Compliance Officer 2 Chief Financial Officer 3 Chief Administrative Officer 4 Chief Labor and Employee Relations 5 General Counsel 6 Chief of Staff & Strategic Initiatives
+```
+### [p018_c0007] Purpose:
+[p018_c0008] To obtain Board approval of the MTA’s All Agency Alcohol and Drug Free Workplace Policy Directive.
+### [p018_c0009] Discussion:
+[p018_c0010] The drug and alcohol policies of MTA and its constituent Agencies are governed by a variety of laws and regulations. While some of these laws and regulations differ as to the specific requirements necessary for compliance, each has as an underlying principle of helping to prevent accidents, injuries, and fatalities resulting from the misuse of alcohol and prohibited drugs by employees.
+[p018_c0011] The proposed All Agency Alcohol and Drug Free Workplace Policy Directive is to ensure awareness and compliance by MTA employees.
+### [p018_c0012] Recommendation:
+[p018_c0013] It is recommended that the Board approve the Policy Directive contained in the exhibit book.
+[p018_c0014] _Master Page # 18 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 19
+
+### [p019_c0001] Construction & Development
+### [p019_c0002] Contracts Department
+[p019_c0003] Evan Eisland, Executive Vice President and General Counsel
+### [p019_c0004] PROCUREMENT PACKAGE OCTOBER 2025
+[p019_c0005] _Master Page # 19 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 20
+
+### [p020_c0001] Construction & Development
+### [p020_c0002] PROCUREMENTS
+[p020_c0003] The Procurement Agenda this month includes 6 actions for a proposed expenditure of $ 124.2M.
+[p020_c0004] _Master Page # 20 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 21
+
+### [p021_c0001] Staff Summary
+### [p021_c0002] Page 1 of 1
+[p021_c0003]
+
+```text
+Subject Request Authorization for Several Procurement Actions Contracts Department Evan Eisland, Executive Vice President and General Counsel Board Action Order To Date Approval Info Other 1 Capital Program Committee 10/27/25 X 2 Board 10/29/25 X
+```
+[p021_c0004]
+
+```text
+Date: October 22, 2025 Internal Approvals Approval Approval X Deputy Chief Development Officer, Delivery X President X Deputy Chief Development Officer, Development X Executive Vice President & General Counsel
+```
+### [p021_c0005] Purpose
+[p021_c0006] To obtain the approval of the Board to award several procurement actions and to inform the Capital Program Committee of these procurement actions.
+### [p021_c0007] Discussion
+[p021_c0008] MTA Construction & Development proposes to award Competitive Procurements in the following categories:
+[p021_c0009]
+
+```text
+Schedules Requiring Two-Thirds Vote # of Actions $ Amount C. Competitive Requests For Proposals (Award of Purchase and Public Work Contracts) 1 $ 101,500,000 SUBTOTAL 1 $ 101,500,000 Schedules Requiring Majority Vote # of Actions $ Amount I. Modifications to Purchase and Public Work Contracts 3 $ 15,318,257 SUBTOTAL 3 $ 15,318,257
+```
+[p021_c0010] MTA Construction & Development proposes to ratify awards in the following category:
+[p021_c0011]
+
+```text
+Schedules Requiring Majority Vote # of Actions $ Amount K. Ratification of Completed Procurement Actions 2 $ 7,412,768 SUBTOTAL 2 $ 7,412,768 TOTAL 6 $ 124,231,025
+```
+### [p021_c0012] Budget Impact
+[p021_c0013] The approval of these procurement actions will obligate capital and operating funds in the amounts listed. Funds are available in the capital program and operating budgets for this purpose.
+### [p021_c0014] Recommendation
+[p021_c0015] That the procurement actions be approved as proposed. (The items are included in the resolution of approval at the beginning of the Procurement Section.)
+[p021_c0016] _Master Page # 21 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 22
+
+### [p022_c0001] MTA Construction & Development
+### [p022_c0002] MTA Construction & Development
+### [p022_c0003] BOARD RESOLUTION
+[p022_c0004] WHEREAS , in accordance with Sections 559, 2879, 1209 and 1265-a of the Public Authorities Law and the All Agency General Contract Procurement Guidelines, the Board authorizes the award of certain non-competitive purchase and public works contracts, and the solicitation and award of request for proposals in regard to purchase and public work contracts; and
+[p022_c0005] WHEREAS , in accordance with the All Agency Service Contract Procurement Guidelines and the All Agency General Contract Procurement Guidelines, the Board authorizes the award of certain non-competitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts; and
+[p022_c0006] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Guidelines for Procurement of Services, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p022_c0007] NOW, the Board resolves as follows:
+- [p022_c0008] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract. 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals and authorizes the solicitation of such proposals. 3. As to each request for proposals (for purchase and public work contracts set forth in Schedule C for which a recommendation is made to award the contract), the Board authorizes the execution of said contract. 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein, and ratifies each action for which ratification is requested. 5. The Board authorizes the execution of each of the following for which Board authorization is required: i) the miscellaneous procurement contracts set forth in Schedule E; ii) the personal service contracts set forth in Schedule F; iii) the miscellaneous service contracts set forth in Schedule G; iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; v) the contract modifications to purchase and public work contracts set forth in Schedule I; vi) the modifications to miscellaneous procurement contracts set forth in Schedule J. 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p022_c0009] _Master Page # 22 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 23
+
+### [p023_c0001] OCTOBER 2025
+### [p023_c0002] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p023_c0003] Procurements Requiring Two-Thirds Vote:
+### [p023_c0004] Schedule C. Competitive Requests for Proposals (Award of Purchase and Public Work Contracts) (Staff Summaries required for all items greater than $1M.)
+- [p023_c0005] 1. Forte Construction Corp. Contract No. A46042 $101,500,000 Staff Summary Attached
+[p023_c0006] MTA Construction & Development requests Board approval to award a publicly advertised and competitively solicited contract for Design-Build services to rehabilitate three New York City Transit stations.
+### [p023_c0007] Procurements Requiring Majority Vote:
+### [p023_c0008] Schedule I. Modifications to Purchase and Public Work Contracts
+[p023_c0009] (Staff Summaries required for individual change orders greater than $1M. Approval required for change orders greater than 10% of the original contract amount or duration.)
+- [p023_c0010] 2. RailWorks Transit LLC Contract M44146 $6,700,000 Staff Summary Attached
+[p023_c0011] MTA Construction and Development requests Board approval of a modification that will resolve Contractor claims of delay and for added work.
+- [p023_c0012] 3. Ducci Electrical Contractors, Inc. Contract MN96193 $1,386,193 Staff Summary Attached
+[p023_c0013] MTA Construction and Development requests Board approval of a modification that will resolve Contractor claims of delay, resolve all open change orders and provide for Final Completion of the Contract.
+- [p023_c0014] 4. Forte Construction Corp. Contract No. VS300 $7,232,064 Staff Summary Attached
+[p023_c0015] MTA Construction and Development requests Board approval of a modification to upgrade the smoke extraction system at Grand Central Madison and remove the temporary partition doors between Grand Central Madison and Grand Central Terminal at the Dining Concourse and the Biltmore Room.
+[p023_c0016] _Master Page # 23 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 24
+
+### [p024_c0001] Staff Summary
+### [p024_c0002] Schedule C: Competitive Requests for Proposals (Award of Purchase and Public Works Contracts)
+[p024_c0003] Page 1 of 2
+[p024_c0004]
+
+```text
+Item Number 1 Department, Department Head Name: Delivery, William Montanile, Senior Vice President, Stations Board Reviews Order To Date Approval Info Other 1 Capital Program Committee 10/27/25 X 2 Board 10/29/25 X Internal Approvals Order Approval Order Approval X Deputy Chief, Development X Executive Vice President & General Counsel X Deputy Chief, Delivery X President
+```
+[p024_c0005]
+
+```text
+SUMMARY INFORMATION Vendor Name Contract Number Forte Construction Corp. A46042 Description Design-Build Services for Station Renewals – Package 1 Total Amount 1. Design-Build Contract: $101,500,000 2. Stipend Payments: $450,000 Contract Term (including Options, if any) 780 Calendar Days Option(s) included in Total Amount? Yes No Renewal? Yes No Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Funding Source Operating Capital Federal Other:
+```
+### [p024_c0006] ACTION REQUESTED
+[p024_c0007] MTA Construction & Development (“C&D”) requests Board approval to award to Forte Construction Corp. (“Forte”) a publicly advertised and competitively solicited contract (the “Contract”) for Design-Build services to rehabilitate three New York City Transit (“NYCT”) stations. The Contract is in the amount of $101,500,000 and for a duration of 780 Calendar Days. In accordance with MTA policy regarding the use of Design-Build contracts, to enhance competition and defray proposal costs, the solicitation included a stipend of $150,000 to be paid to each of the three unsuccessful proposers for a total of $450,000.
+### [p024_c0008] DISCUSSION
+[p024_c0009] The Contract provides for repairs to structural steel and concrete, cleaning and or replacement of damaged wall tiles, leak mitigation, painting, ventilator repairs, electrical upgrades, restoration of architectural finishes, and repair of other deteriorated components at the 7th Avenue (F, G) station, the East 149th Street (6) station and the Jamaica - 179th Street (F) station. The Contract also includes track replacement work at the East 149th Street station and Jamaica - 179th Street station. This is one of a series of contracts that are being developed in order to maintain a state of good repair in stations throughout the system.
+[p024_c0010] A two-step procurement process was utilized for this Contract. In Step 1, a Request for Qualifications was advertised, resulting in the submission of four Statements of Qualifications which were then evaluated against pre-established Threshold Criteria (addressing completeness, timeliness, capacity, responsibility, and financial capability) and Substantive Evaluation Criteria (addressing team, key personnel and organization, understanding of the work, prior Design-Build experience, past performance and diversity compliance). Based on these criteria, all four firms were selected to receive a Request for Proposals (“RFP”) in Step 2:
+- [p024_c0011] • Forte • Citnalta Construction Corp (“Citnalta”) • Gramercy PJS JV (“GPJS”) • Judlau Contracting, Inc (“Judlau”)
+[p024_c0012] _Master Page # 24 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 25
+
+[p025_c0001] In response to the RFP, all four firms submitted technical and price proposals. The selection committee, consisting of representatives from C&D Delivery, Development, Contracts, and NYCT Department of Subways – Maintenance of Way, reviewed the technical proposals and attended the oral presentations of each of the four teams. The selection committee evaluated the technical proposals using the following pre-established selection criteria: design and construction, schedule, management plan, experience, record of performance, safety and quality, and other relevant matters. The selection committee next opened the price proposals which were as follows: Citnalta $150,773,000, Forte $98,700,000, GPJS $166,750,000 and Judlau $118,712,757.
+[p025_c0002] After reviewing the price proposals, the selection committee invited Judlau to participate in negotiations and tentatively recommended that Forte be considered for negotiations, pending submission and evaluation of alternate Key Personnel as the personnel originally proposed were also assigned for Contract A37811: Design-Build Services for ADA Upgrades Package 7, for which Forte has been selected for award. Following the review of Forte's revised key personnel qualifications and experience, the selection committee invited Forte to participate in negotiations as well. Citnalta and GPJS were not invited to participate in negotiations because their price proposals were outside of the competitive range. Negotiations with Forte and Judlau included detailed discussions of the proposers' overall cost as well as proposed schedule and approach to design and construction. During the negotiations, Forte reported a subcontractor-related scope error that affected its initial pricing and Judlau indicated that an increase in price was warranted based on its reassessment of project scope and risk. Following negotiations, the proposers were given the opportunity to submit a Best and Final Offer ("BAFO"). The BAFO submitted by the proposers were as follows: Forte 101,500,000; and Judlau $128,600,253.
+[p025_c0003] The selection committee unanimously recommends Forte for the award of the Contract. In addition to providing the lowest competitive price, the selection committee determined that Forte's proposal provided the best value to the MTA, when considering the quality of its technical proposal. Forte also demonstrated a strong understanding of all components of the scope of work as established in its technical approach, and its key personnel have successfully completed Design-Build projects of similar scope and magnitude. Forte's BAFO of $101,500,000 is deemed to be fair and reasonable.
+### [p025_c0004] DBE/MBE/WBE/SDVOB INFORMATION
+[p025_c0005] Pursuant to the United States Department of Transportation ("U.S. DOT") Interim Final Rule ("IFR") issued on October 3, 2025, implementing changes to its Disadvantaged Business Enterprise ("DBE") Program regulations, MTA is updating its DBE program. Specifically, in accordance with the IFR, Unified Certification Programs ("UCP") are required to be updated and each U.S. DOT federal financial recipient is required to re-certify all firms that apply for DBE status, re-assess the federal financial recipient's overall DBE goal based on the re-certified pool of DBEs, and, based on the re-assessment of its overall DBE goal, set any contract-specific goals. Until completion of these steps, the MTA will pause enforcement of the DBE participation provisions in the Contract and the DBE participation goal for the Contract is 0%
+### [p025_c0006] IMPACT ON FUNDING
+[p025_c0007] Funding for the Contract and stipends for the three unsuccessful proposers are included in the NYCT portion of the MTA's 2020-24 Capital Program.
+### [p025_c0008] ALTERNATIVES
+[p025_c0009] None recommended. MTA lacks available in-house technical personnel to perform the scope of work associated with this Contract.
+[p025_c0010] _Master Page # 25 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 26
+
+### [p026_c0001] Staff Summary
+### [p026_c0002] Schedule I: Modifications to Purchase and Public Work Contracts
+[p026_c0003] Page 1 of 2
+[p026_c0004] Item Number: 2
+[p026_c0005]
+
+```text
+Vendor Name (& Location) RailWorks Transit LLC, 83 Central Avenue (East Farmingdale NY) Description Mainline Track Replacement, 63 rd Street Line – IND, Jamaica and Myrtle Avenue Lines – BMT in the Boroughs of Manhattan, Queens and Brooklyn Contract Term (including Options, if any) December 28, 2021 – September 14, 2024 Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Dept/Div & Dept/Div Head Name: Delivery, Mark Roche, Deputy Chief Development Officer
+```
+[p026_c0006]
+
+```text
+Contract Number AWO/Modification # M44146 51 Original Amount: $ 92,739,500 Prior Modifications: $ 15,001,718 Prior Budgetary Increases: $ 6,100,000 Current Amount: $ 107,741,218 This Request: $ 6,700,000 % of This Request to Current Amount: 6.2% % of Modifications (including This Request) to Original Amount: 23.4%
+```
+### [p026_c0007] Discussion:
+[p026_c0008] This Contract provides for mainline track replacement on New York City Transit's 63 rd Street (F, M) Line in Manhattan & Queens, Jamaica (J, Z) Line in Queens and Myrtle Avenue (M) Line in Brooklyn and includes associated drainage, traction power and signal infrastructure rehabilitation and/or replacement. The work on this Contract is complete. MTA Construction and Development ("C&D") requests Board approval of a modification to compensate RailWorks Transit LLC ("RailWorks") for MTA-caused delays and added work and the release by RailWorks of any and all remaining claims asserted or unasserted by RailWorks, except for one claim that remains in dispute.
+[p026_c0009] This Contract included track replacement in the 63 rd Street Tunnel between Queens and Manhattan and required diverting F and M train service that utilizes this tunnel. MTA planned these diversions on the assumption that, during the work in the 63 rd Street Tunnel, the F and M trains would be routed via the Queens Boulevard Line West ("QBL West") through the 53 rd Street Tunnel, and that QBL West would be operating on a newly installed Communications-Based Train Control ("CBTC") signal system, delivered under a separate MTA contract. With CBTC implemented, QBL West can support a higher frequency of trains through the 53 rd Street tunnel than using the legacy signal system. However, the CBTC system on QBL West was not commissioned by the time this Contract's work began in the 63 rd Street tunnel. As a result, NYCT had to revise its service plan to reflect the lower frequency of QBL West trains through the 53 rd Street tunnel under the legacy signal system. This change in the service plan affected NYCT's ability to support the planned diversions and number of work trains specified in this Contract.
+[p026_c0010] RailWorks claimed that as a result of the changes in diversions and work trains, it performed work out of planned sequence, over a longer period time, and with fewer work trains than provided for in the Contract. RailWorks asserted claims in the amount of $14,844,189.56, for the added work, acceleration costs, and compensable delay. The claim for added work was in the amount of $10,406,163.20, acceleration in the amount of $384,373.19 and the Impact Costs in the amount of $4,053,653.18.
+[p026_c0011] C&D reviewed RailWorks' claims and determined that RailWorks reasonably incurred higher labor costs due to the changes in the diversions and unavailability of work trains specified in the Contract. These changes resulted in a greater number of shifts required to perform track demolition and track construction. C&D did not agree with RailWorks that all other planned activities were likewise affected because they were not as reliant on work trains. As to the time impacts, C&D performed a time impact analysis to assess the effects of the changes on the Contract Milestones, including an assessment of Compensable Delay for the extended durations caused solely by the MTA. Finally, C&D assessed the limited acceleration
+[p026_c0012] _Master Page # 26 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 27
+
+### [p027_c0001] The logo for MTA Construction & Development, featuring a blue circle with the letters "MTA" in white, followed by the text "Construction & Development" in blue.
+[p027_c0002] claim presented by RailWorks and determined it to be meritorious because without this acceleration the track work would have taken longer.
+[p027_c0003] As a result of C&D's analyses and negotiations with RailWorks, the parties agreed to settle RailWorks' claims for $6,700,000 which is considered fair and reasonable. This modification provides for a release by RailWorks of all claims that it has had or may have had as of the date of execution of the modification and resolves all outstanding commercial issues in this Contract except for a claim associated with the repair of damaged track rebar.
+[p027_c0004] _Master Page # 27 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 28
+
+### [p028_c0001] Staff Summary
+### [p028_c0002] Schedule I: Modifications to Purchase and Public Work Contracts
+[p028_c0003] Page 1 of 1
+[p028_c0004]
+
+```text
+Item Number: 3 Vendor Name (& Location) Ducci Electrical Contractors, Inc. (Farmington, CT) Description Construction of the City Water Substation – Mt. Kisco, NY Contract Term (including Options, if any) November 20, 2018 – April 30, 2025 Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Dept/Div & Dept/Div Head Name: Delivery, Mark Roche, Deputy Chief Development Officer
+```
+[p028_c0005]
+
+```text
+Contract Number AWO/Modification # MN96193 81 Original Amount: $ 12,898,891.84 Prior Modifications: $ 964,005 Prior Budgetary Increases: $ 0 Current Amount: $ 13,862,896.84 This Request: $ 1,386,193 % of This Request to Current Amount: 12.6% % of Modifications (including This Request) to Original Amount: 20.9%
+```
+### [p028_c0006] Discussion:
+[p028_c0007] This Contract provides for the construction of a substation between Chappaqua and Mount Kisco stations on Metro North Railroad's ("MNR") Harlem Line at the "City Water" site. MTA Construction and Development ("C&D") requests Board approval of a modification to resolve all remaining claims asserted by Ducci Electrical Contractors, Inc. ("Ducci") for compensable and excusable delays and to resolve all outstanding change orders, providing for Final Completion of the Contract. All Contract work has been satisfactorily completed by the Contractor.
+[p028_c0008] From the outset of this Contract Ducci experienced delays associated with the impact of the high water table at the substation site, necessitating both redesign and added dewatering efforts. However, in negotiations concerning compensation for delay and added costs, Ducci insisted on including claims associated with other factors, principally a generator fire, which MTA believes were the responsibility of Ducci. In total, Ducci asserted damages with respect to these delay claims and other disputed change orders totaling $6,506,185.69. Thereafter, Ducci filed suit in New York State Supreme Court – Ducci Electrical Contractors, Inc. v. The Metro-North Commuter Railroad Company, et al ; Index No. 651220/2023 (NY County Sup. Ct.) seeking no less than $3,891,913.00, exclusive of retainage, associated with the principal delay claim, with the potential of amending or filing a new suit for the remainder of the monies sought.
+[p028_c0009] After lengthy negotiations, which included Ducci dropping its claim for the generator fire, it was agreed, subject to the approval of this Board, that MTA would pay Ducci $1,150,000 in settlement of all outstanding claims for delay and disputed change orders; $220,000 in settlement of a separate subcontractor claim related to the need to use cold weather concrete as a result of delays and $16,193 for three outstanding change orders that had arisen late in the project and which are not in dispute, for a total of $1,386,193. The agreement also provides for release of retainage earned by Ducci of $357,727.15 which had been withheld pending resolution of these claims and provides for Ducci to receive a Certificate of Final Completion.
+[p028_c0010] Given the delay for which MTA is responsible, the significant cost of defending this matter in court, and the possibility of litigation resulting in a much higher liability, the total sum of $1,386,193, exclusive of retainage, is considered fair and reasonable.
+[p028_c0011] _Master Page # 28 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 29
+
+### [p029_c0001] Staff Summary
+### [p029_c0002] Schedule I: Modifications to Purchase and Public Work Contracts
+[p029_c0003] Page 1 of 1
+[p029_c0004] Item Number: 4
+[p029_c0005]
+
+```text
+Vendor Name (& Location) Forte Construction Corp. (Islandia, NY) Description Grand Central Madison Miscellaneous Remaining Work Contract Term (including Options, if any) 380 Days Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Dept/Div & Dept/Div Head Name: Delivery, Mark Roche, Deputy Chief Development Officer
+```
+[p029_c0006]
+
+```text
+Contract Number AWO/Modification # VS300 12 Original Amount: $ 17,151,700 Prior Modifications: $ 14,492 Prior Budgetary Increases: $ 0 Current Amount: $ 17,166,192 This Request: $ 7,232,064 % of This Request to Current Amount: 39% % of Modifications (including This Request) to Original Amount: 38.5%
+```
+### [p029_c0007] Discussion:
+[p029_c0008] Contract VS300 provides for the wrap-up of miscellaneous work within Grand Central Madison Station (“GCM”) required to resolve the outstanding needs of the user groups including MTA Real Estate. MTA Construction and Development (“C&D”) requests Board approval of a modification to the Contract to upgrade the smoke extraction system at the GCM Concourse and remove the temporary partition doors between GCM and Grand Central Terminal (“GCT”) at the Dining Concourse and the Biltmore Room.
+[p029_c0009] During final fire-life-safety testing of the multi-zone smoke extraction system for the GCM Concourse prior to its public opening, smoke migration was observed at the open access points with GCT. As an interim measure, to open the Concourse to the public, the smoke extraction system was modified to operate as a single-zone system and temporary partition doors were installed, separating GCM from GCT. While this configuration effectively controls smoke migration, the partitions are visually unappealing and restrict passenger flow between GCM and GCT. More significantly, the single-zone system does not satisfy code compliance requirements for the use of the retail space within GCM, requiring doors to remain always shut and not allowing for the storage of combustible materials or the use of cooking/heating appliances. C&D pursued an error and omission claim against the designer of GCM and the settlement of that claim accounted for this issue.
+[p029_c0010] MTA has since commissioned a consultant to analyze the system and design a solution. This modification will implement that solution, which includes (i) targeted mechanical and electrical upgrades to the fans and dampers, (ii) revisions to the smoke extraction system instrumentation, programming, and controls to re-establish multi-zone operation and resolve the code compliance issues, and (iii) removal of the temporary partitions at the Dining Concourse and Biltmore interfaces and replacement with new architectural smoke-control measures that do not obstruct passenger flow.
+[p029_c0011] Forte submitted a proposal of $11,278,244.87. Negotiations yielded a final cost for the work of $6,692,264. In addition, C&D performed a time impact analysis and determined that the work would delay the substantial completion of the Contract by 175 days. An agreement on Impact Costs was reached at $3,085 per day, for a total of $539,800, which brings the total cost of the Modification, including Impact Costs, to $7,232,064, which is considered to be fair and reasonable. This modification will also extend the Substantial Completion date by 175 days, from January 7, 2026 to July 1, 2026.
+[p029_c0012] _Master Page # 29 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 30
+
+### [p030_c0001] Construction & Development
+[p030_c0002] OCTOBER 2025
+### [p030_c0003] LIST OF RATIFICATIONS FOR BOARD APPROVAL
+### [p030_c0004] Procurements Requiring Majority Vote:
+### [p030_c0005] Schedule K. Ratification of Completed Procurement Actions (Involving Schedule E – J) (Staff Summaries required for all items requiring Board approval)
+[p030_c0006] 5-6. Siemens Mobility, Inc. $7,412,768 Staff Summary Attached Contract No. S48004-1
+[p030_c0007] MTA Construction and Development requests ratification of two modifications, one to provide continued CBTC maintenance support for the wayside and carborne systems provided by Siemens through March 31, 2026 and the second to begin software and system design work on critical enhancements to the Automatic Train Supervision system for New York City Transit's B Division.
+[p030_c0008] _Master Page # 30 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 31
+
+### [p031_c0001] Staff Summary
+### [p031_c0002] Schedule K: Ratification of Completed Procurement Actions
+[p031_c0003] Page 1 of 2
+[p031_c0004] Item Number: 5-6
+[p031_c0005]
+
+```text
+Vendor Name (& Location) Siemens Industry, Inc. (New York, NY) Description CBTC Queens Boulevard Line (QBL) West, Phase 1 Contract Term (including Options, if any) 67 months Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Dept/Div & Dept/Div Head Name: Delivery, Mark Roche, Deputy Chief Development Officer
+```
+[p031_c0006]
+
+```text
+Contract Number AWO/Modification # S-48004-1 43 & 44 Original Amount: $ 156,172,932 Prior Modifications: $ 43,482,845 Prior Budgetary Increases: $ 37,798,262 Current Amount: $ 199,655,777 Modification No. 43 $ 4,162,768 Modification No. 44 $ 3,250,000 This Request: $ 7,412,768 % of This Request to Current Amount: 3.7% % of Modifications (including This Request) to Original Amount: 32.6%
+```
+### [p031_c0007] DISCUSSION:
+[p031_c0008] Contract S-48004-1 (the "Contract") provides for Siemens Mobility, Inc. ("Siemens") to furnish and install trackside Communication-Based Train Control ("CBTC") equipment and compatible carbone CBTC equipment for the Queens Boulevard West Line. The Contract also requires Siemens to provide an Automatic Train Supervision system for New York City Transit's B-Division ("ATS-B"). MTA Construction and Development ("C&D") requests Board ratification of two modifications, one to provide continued CBTC maintenance support for the wayside and carbone systems provided by Siemens through March 31, 2026 and the second to begin software and system design work on critical ATS-B enhancements.
+### [p031_c0009] CBTC Maintenance
+[p031_c0010] Substantial Completion of this Contract was declared on March 31, 2025. However, New York City Transit ("NYCT") will require support to maintain the new CBTC system until April 2026, at which time NYCT will either perform the maintenance work with in-house forces or have entered into a long-term maintenance agreement. Adding maintenance support by Siemens to this Contract is the most cost-effective and efficient approach to ensure safe and reliable CBTC operation of the Siemens-supplied equipment. On May 22, 2025, the President of MTA C&D authorized Siemens to commence this work to ensure continued support for the system for rail operations.
+[p031_c0011] Siemens submitted a proposal of $8,579,106.96 for one year of maintenance support. Negotiations resulted in a total cost of $4,162,768, which has been determined to be fair and reasonable.
+### [p031_c0012] ATS-B Enhancements
+[p031_c0013] As noted above, this Contract requires Siemens to develop the ATS-B system, which delivers train control and supervision capabilities to support CBTC operations across NYCT's B-Division. MTA is in the process of procuring a successor contract that will significantly enhance the capabilities of the ATS-B system implemented under this contract, providing for: (1) direct communication between ATS-B and on-board CBTC equipment, removing the need for intermediary wayside equipment; (2) a web-based "Thin Client" interface for ATS-B, accessible via secure wireless devices, eliminating the need to install dedicated ATS-B workstations at stations and communications rooms; (3) a local ATS-B program to replace local control panels in train control rooms, enabling standardized local back-up control across the B-Division; (4) an ATS-B "jump server" that allows future CBTC contractors to test their systems on a replica of the ATS-B without affecting live operations; and (5) a virtual ATS-B application for use at MTA's new virtual test facility.
+[p031_c0014] _Master Page # 31 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 32
+
+### [p032_c0001] The logo for MTA Construction & Development, featuring a blue circle with the white letters "MTA" and the text "Construction & Development" in blue to its right.
+[p032_c0002] CBTC on the ongoing Crosstown Line project is being implemented to take advantage of the enhanced capabilities of the ATS-B to be provided by the successor contract. As a first step to implementing those enhancements, Siemens must design changes to the hardware and software of the current ATS-B, including revisions to system design documentation, system architecture documentation, and software specifications. Those design changes are being added to the Contract through this modification in order to expedite full implementation of the ATS-B enhancements to facilitate integration and testing of the Crosstown Line CBTC system with the enhanced ATS-B system. To minimize schedule impacts on the Crosstown project and accelerate delivery of these enhancements, the President of C&D authorized Siemens on June 4, 2025, to begin work on this modification.
+[p032_c0003] Siemens submitted a proposal for $3,740,248.17. Negotiations resulted in an agreed-upon cost of $3,250,000, which has been determined to be fair and reasonable.
+[p032_c0004] _Master Page # 32 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 33
+
+### [p033_c0001] New York City Transit Procurements
+[p033_c0002] Louis Montanti , MTA Deputy Chief Procurement Officer – Procurement Operations
+[p033_c0003] _Master Page # 33 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 34
+
+### [p034_c0001] PROCUREMENTS
+[p034_c0002] The Procurement Agenda this month includes 2 actions for a proposed estimated expenditure of $393.3M.
+[p034_c0003] _Master Page # 34 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 35
+
+[p035_c0001]
+
+```text
+Subject Request for Authorization to Award Various Procurements Department MTA Procurement Department Head Name Lisette Camilo Department Head Signature Project Manager Name Rose Davis Board Action Order To Date Approval Info Other 1 Committee 10/27/25 2 Board 10/29/25
+```
+[p035_c0002]
+
+```text
+October 24, 2025 Department Department Head Name Department Head Signature Internal Approvals Approval Approval President NYCT Pres. MTA Bus/SVP DOB SVP Operations Support Subways Law Diversity/Civil Rights
+```
+[p035_c0003]
+
+```text
+Internal Approvals (cont.) Order Approval Order Approval Order Approval Order Approval
+```
+### [p035_c0004] PURPOSE
+[p035_c0005] To obtain approval of the Board to award various contracts and purchase orders, and to inform the NYC Transit Committee of these procurement actions.
+### [p035_c0006] DISCUSSION
+[p035_c0007] NYC Transit proposes to award Noncompetitive Procurements in the following categories:
+[p035_c0008]
+
+```text
+Procurements Requiring Two-Thirds Vote: # of Actions $ Amount Schedule A: Noncompetitive Purchases and Public Work Contracts 1 $ 7.1M Schedules Requiring Majority Vote: Schedule I: Modification to Purchase and Public Work Contracts 1 $ 386.2M SUBTOTAL 2 $ 393.3M
+```
+[p035_c0009] NYC Transit proposes to award Competitive Procurements in the following categories: None
+[p035_c0010] NYC Transit proposes to award Ratifications in the following categories: None
+[p035_c0011] TOTAL 2 $ 393.3 M
+[p035_c0012] COMPETITIVE BIDDING REQUIREMENTS: The procurement actions in Schedules A, B, C, and D are subject to the competitive bidding requirements of PAL 1209 or 1265-a relating to contracts for the purchase of goods or public work. Procurement actions in the remaining Schedules are not subject to these requirements.
+[p035_c0013] BUDGET IMPACT: The purchases/contracts will result in obligating funds in the amounts listed. Funds are available in the current operating/capital budgets for this purpose.
+[p035_c0014] RECOMMENDATION: That the purchases/contracts be approved as proposed. (Items are included in the resolution of approval at the beginning of the Procurement Section.)
+[p035_c0015] _Master Page # 35 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 36
+
+### [p036_c0001] BOARD RESOLUTION
+[p036_c0002] WHEREAS , in accordance with Sections 1265-a and 1209 of the Public Authorities Law and the All-Agency General Contract Procurement Guidelines, the Board authorizes the award of certain noncompetitive purchase and public work contracts, and the solicitation and award of requests for proposals regarding purchase and public work contracts; and
+[p036_c0003] WHEREAS , in accordance with the All-Agency Service Contract Procurement Guidelines and General Contract Procurement Guidelines the Board authorizes the award of certain noncompetitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts, and
+[p036_c0004] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Service Contract Procurement Guidelines, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p036_c0005] NOW, the Board resolves as follows:
+[p036_c0006] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract.
+[p036_c0007] 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals, and authorizes the solicitation of such proposals.
+[p036_c0008] 3. As to each request for proposals (for purchase and public work contracts) set forth in Schedule C for which a recommendation is made to award the contract, the Board authorizes the execution of said contract.
+[p036_c0009] 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein and ratifies each action for which ratification is requested.
+[p036_c0010] 5. The Board authorizes the execution of each of the following for which Board authorization is required: (i) the miscellaneous procurement contracts set forth in Schedule E; (ii) the personal service contracts set forth in Schedule F; (iii) the miscellaneous service contracts set forth in Schedule G; (iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; (v) the contract modifications to purchase and public work contracts set forth in Schedule I; and (vi) the modifications to miscellaneous procurement contracts set forth in Schedule J.
+[p036_c0011] 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p036_c0012] _Master Page # 36 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 37
+
+### [p037_c0001] OCTOBER 2025
+### [p037_c0002] LIST OF NONCOMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p037_c0003] Procurements Requiring Two-Thirds Vote:
+### [p037_c0004] A. Noncompetitive Purchases and Public Work Contracts
+[p037_c0005] (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p037_c0006] 1. Aftermarket Parts Company LLC dba NFI Parts $7,105,837 (est.) Staff Summary Attached One year Contract# SSE 520290
+[p037_c0007] Award of a one-year estimated quantity contract for sole-source replacement parts.
+### [p037_c0008] Procurements Requiring Majority Vote:
+### [p037_c0009] I. Modifications to Purchase and Public Work Contracts
+[p037_c0010] (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p037_c0011] 2. Motive Power, Inc. (a Wabtec company) $386,179,926 Staff Summary Attached 10 years Contract# R34255.21
+[p037_c0012] Contract for the purchase of 25 diesel-battery hybrid locomotives; Modification to purchase 25 Diesel-Battery Hybrid Locomotives; in order to exercise the option for the purchase of an additional 45 Locomotives and related non-car items.
+[p037_c0013] _Master Page # 37 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 38
+
+### [p038_c0001] Schedule A: Noncompetitive Purchases and Public Work Contracts New York City Transit
+### [p038_c0002] Item Number:
+[p038_c0003]
+
+```text
+Vendor Name (Location) The Aftermarket Parts Company, LLC dba NFI Parts (Delaware, Ohio) Description Parts Pricing Agreement for Sole-Source Replacement Parts Contract Term (including Options, if any) One Year (November 1, 2025–October 31, 2026) Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Sole-Source
+```
+[p038_c0004]
+
+```text
+Contract Number SSE 520290 Renewal? Yes No Total Amount: $7,105,837 (Est) Funding Source Operating Capital Federal Other: Requesting Dept. Department of Buses, Frank Farrell
+```
+### [p038_c0005] Discussion:
+[p038_c0006] As a result of a multi-agency Joint Procurement, NYC Transit, on behalf of itself and MTA Bus Company (“MTABC”) (collectively “the Agencies”) requests Board approval to award a one-year estimated quantity contract for sole-source replacement parts to The Aftermarket Parts Company, LLC dba NFI Parts (“NFI”) in the estimated value of $7,105,837. The contract covers the furnishing of various replacement parts identified as obtainable only from or through NFI, which are required for the Agencies to operate and maintain their respective fleets of buses that currently include NYC Transit’s New Flyer, Orion, and MCI bus fleets; and MTABC’s New Flyer and MCI bus fleets. NFI is also the sole distributor and reseller for Orion Bus Industries (Orion) and Motor Coach Industries (“MCI”).
+[p038_c0007] This is the first time a price agreement will be awarded to NFI. Utilizing a joint procurement approach for this contract combines the buying power of NYC Transit and MTABC to achieve the most favorable pricing for the Agencies and better supply chain management from NFI. Additional benefits are the process efficiencies that will reduce Procurement’s lead time needed to award individual procurements, as well as a reduction in the number and frequency of individual purchases of various items identified as obtainable only from NFI for the following reasons: sole prequalified item on the Qualified Products List and not available from any distributors or other sources; publicly advertised within a 12-month period without an acceptable alternate supplier; or proprietary to NFI. A list of NFI sole-source items, as well as the Agencies’ intention to purchase these items without competitive bidding, is available for download from the MTA website at any time by any prospective vendor. Furthermore, in accordance with the MTA All-Agency Procurement Guideline requirements, the Agencies publicly advertised their intent to procure the items under this agreement on a sole-source basis in the New York State Contract Reporter and Daily News . No other firms expressed interest in participating in this procurement.
+[p038_c0008] Under this new contract, NYC Transit and MTABC will continue to support their Scheduled Maintenance, Life Cycle Maintenance, and Shop Overhaul programs with parts that are replaced at prescribed intervals to ensure safety, maintain high bus reliability and availability, as well as improve customer service. Additionally, the contract includes parts required to perform unscheduled maintenance and repairs on buses to ensure safe, reliable, and maintainable operation. This will also result in an increase in the number of automated purchase orders.
+[p038_c0009] This new contract will cover a total of 1,097 items with an estimated value of $7,105,837. New Flyer has agreed to hold firm fixed pricing for one year as there is market stability for these items. The MTA Cost Price Analysis Unit performed a detailed analysis using comparative and historical data of previous purchases and determined the pricing to be fair and reasonable. Any sole-source items that are not included in the 1,097 items on this new contract will be purchased utilizing informal procurement procedures.
+[p038_c0010] The chart below summarizes the estimated amounts anticipated to be expended with each Agency over the one-year term of the contract.
+[p038_c0011]
+
+```text
+NYC Transit MTABC TOTAL $5,031,291 $2,074,546 $7,105,837
+```
+[p038_c0012] The total dollars outlined above are based on historical data and projected/forecasted usage.
+[p038_c0013] NFI is the sole responsible source for the parts that will be provided under this contract. No other vendor can access the proprietary designs, specifications, and drawings and, therefore, cannot readily provide these parts. The Controller’s Office found that there was reasonable assurance that NFI is financially qualified to perform this contract.
+[p038_c0014] _Master Page # 38 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 39
+
+### [p039_c0001] Schedule A: Noncompetitive Purchases and Public Work Contracts New York City Transit
+[p039_c0002] This contract has been evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state, and local laws and regulations. Cybersecurity requirements have been included in the contract terms and conditions.
+[p039_c0003] NFI has certified that pursuant to EO 16 it is not doing business in Russia.
+[p039_c0004] This contract is subject to review and approval of the Office of the New York State Comptroller (“OSC”), and an award will not be made prior to OSC approval.
+[p039_c0005] A review of NFI’s overall performance, inclusive of quality of material, customer responsiveness, and delivery has been deemed to be satisfactory by the Agencies.
+### [p039_c0006] M/W/DBE Information
+[p039_c0007] MTA Department of Diversity and Civil Rights has assigned zero goals for this pricing agreement.
+### [p039_c0008] Impact on Funding
+[p039_c0009] This procurement is to be funded by each Agency’s Operating Budget.
+[p039_c0010] _Master Page # 39 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 40
+
+### [p040_c0001] Schedule I: Modifications to Purchase and Public Work Contracts New York City Transit
+[p040_c0002]
+
+```text
+Item Vendor Name (Location) MotivePower, Inc. (a Wabtec Company) Pittsburgh, Pennsylvania Contract Number R34255 Description Purchase of 25 Diesel-Battery Hybrid Locomotives with an Option to Purchase an additional 45 Locomotives AWO/Mod. #: 21 Contract Term (including Options, if any) August 2020–August 2030 Original Amount: $ 233,000,000 Option(s) included in Total Amount? Yes No n/a Prior Modifications $ (59,965) Procurement Type Competitive Noncompetitive Prior Budgetary Increases: $ 0 Solicitation Type RFP Bid Other: Modification Current Amount: $ 232,940,035 Funding Source Operating Capital Federal Other: This request: $ 386,179,926 Requesting Department: Department of Subways, William Amarosa Jr % of This Request to Current Amount: 65.78% % of Modifications (including This Request) to Original Amount: 65.79%
+```
+### [p040_c0003] Discussion:
+[p040_c0004] NYC Transit is requesting Board approval to exercise the Option of the contract with MotivePower, Inc., a Wabtec company (“MPI”) for the purchase of 45 additional diesel-battery hybrid locomotives (hereafter the “Option Locomotives”), including related non-car items such as spare parts, special tools, diagnostic test equipment, technical documentation and training for the Department of Subways at a total price of $386,179,926.
+[p040_c0005] In July 2020, the Board authorized the award of Contract R34255 to MPI for the purchase of 25 diesel-battery hybrid locomotives, including related non-car items at a total price of $233 million. The contract included an option to purchase an additional 45 diesel-battery hybrid locomotives and related non-car items in the amount of $286.7 million. This action is to exercise the Option for 45 additional diesel-battery hybrid locomotives. Delivery of the Option Locomotives is anticipated to begin May 27, 2027, and be completed by September 20, 2029.
+[p040_c0006] The Option Locomotives, like the locomotives in the base contract, are required to conduct critical in-house track maintenance and work in support of the Capital Plan as they transport flatcars bearing materials to, and debris from, worksites and provide support for work performed within the transit system by outside contractors. In addition to flatcars, the locomotives transport various other work cars (e.g., crane cars, pump trains and vacuum trains) throughout the transit system. These R34255 Option Locomotives will replace R37, R41, R43, R52 and R77 locomotives (all built between 1966 and 1983 and are beyond their useful lives of 35 years) in the NYC Transit fleet. These Option Locomotives are configured to optimize battery usage to minimize diesel emissions, whilst also providing the tractive effort required for any job in the NYC transit operating environment.
+[p040_c0007] The pricing for the Option Locomotives is subject to an adjustment formula resulting from changes in labor and material cost indices, currency exchange rates and other agreed-upon factors included in the base contract. The option pricing was considered fair and reasonable at the time of the award of the contract in 2020. Therefore, because the Option pricing has been escalated according to the contractual adjustment formula and reflects currency changes already included in the base contract, the Option price is considered fair and reasonable. Based on the formula, the escalated price was $389,028,960.
+[p040_c0008] Negotiations for this Option were necessary and centered on a reduction of bonding requirements as well as an extension to the warranty. The reduction in bonding requirements resulted in a savings of $2,849,034 for a final price of $386,179,926. Additionally, Procurement obtained a 12-month extension to the warranty, increasing the warranty period from 24 months to 36 months, for the 25 base locomotives. Based on the aforementioned negotiations and changes, the pricing is considered to be fair and reasonable
+[p040_c0009] Throughout the course of this Contract, change orders were issued that have no significant effect on the cost of the Option Locomotives.
+[p040_c0010] MPI has the experience, technical capability, resources, and facilities to perform the work required. The Controller’s Office found that there was reasonable assurance that MPI can perform the work under this option.
+[p040_c0011] MPI has certified that pursuant to EO 16, it is not doing business in Russia.
+[p040_c0012] _Master Page # 40 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 41
+
+### [p041_c0001] Schedule D: Ratification of Completed Procurement Actions
+### [p041_c0002] The logo for the Metropolitan Transportation Authority (MTA) New York City Transit. It features the letters "MTA" in a bold, sans-serif font inside a dark circle, followed by the words "New York City Transit" in a bold, sans-serif font.
+[p041_c0003] The change order has been evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state and local law and regulations that should be added to the contract terms and conditions. The Authority is working with the vendor to include the applicable cybersecurity requirements in the contract for the Work, which shall be memorialized into a subsequent change order.
+### [p041_c0004] M/W/DBE Information
+[p041_c0005] The MTA Department of Diversity and Civil Rights (DDCR) established a zero percent M/WBE and zero SDVOB goals on this contract as, historically, there has been limited M/WBE attainment due to the lack of subcontracting availability. MPI has not completed any MTA contracts with goals, therefore, no assessment of MPI's performance can be determined at this time.
+### [p041_c0006] Impact on Funding
+[p041_c0007] This option will be capitaly funded with local funds. This option is funded under the approved 2025-2029 Capital Program. A WAR certificate will be secured prior to award.
+### [p041_c0008] Recommendation
+[p041_c0009] It is recommended that the Board approve the exercise of the Option to purchase an additional 45 diesel-battery hybrid locomotives, including related non-car items from MPI at a total price of $386,179,926.
+[p041_c0010] _Master Page # 41 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 42
+
+### [p042_c0001] Staff Summary
+[p042_c0002]
+
+```text
+Subject Date Weigh-in-Motion Program on RFK Bridge October 29, 2025 Department Vendor Name Tolling Management N/A Department Head Name Contract Number Stephen Knapp N/A Department Head Signature Contract Manager Name SKM N/A Project Manager Table of Contents Ref # David Gmach N/A
+```
+[p042_c0003]
+
+```text
+Board Action Internal Approvals 2 Board 10/29/25 VP 3 President 1 B&T Comm 10/27/25 ALCC 2 Chief Operating Officer SP 1 VP Tolling Operations
+```
+### [p042_c0004] I. PURPOSE:
+[p042_c0005] To obtain the Board's approval of the annexed Resolution which will authorize the President of the Triborough Bridge and Tunnel Authority (TBTA) or designee to take all such steps as may be necessary and desirable for TBTA to design, pursuant to law, a Weigh-in-Motion (WIM) Program on the Robert F. Kennedy (RFK) Bridge.
+### [p042_c0006] II. DISCUSSION:
+[p042_c0007] New York State amended Section 385-a of the Vehicle and Traffic Law (VTL) in 2025 to allow TBTA to install and operate a Weigh-in-Motion demonstration program on the RFK Bridge.
+[p042_c0008] WIM technology has been shown to deter overweight trucks that can cause structural damage on bridges and structures, enhancing bridge structural integrity, and reducing costly maintenance and repairs. WIM technology has been utilized by New York City Department of Transportation on a section of I-278 in Brooklyn, since 2023, and has successfully deterred overweight vehicle traffic. In their 2024 annual report on WIM, the New York City Department of Transportation stated that "NYC DOT's first-in-the-nation WIM automated enforcement program has proven to be effective at reducing overweight trucks, with 60
+[p042_c0009] _Master Page # 42 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 43
+
+[p043_c0001] percent fewer overweight trucks detected on BQE Central during its first year in operation.” The amendments to the VTL law allow 15 designated bridges and roadway structures in the New York metropolitan area to use the WIM technology.
+[p043_c0002] The WIM program on the RFK Bridge will use technology, including roadway sensors and automated cameras, to identify overweight trucks that exceed maximum allowable gross vehicle weights and/or maximum allowable axle weights. The roadway sensors are placed in the roadway to weigh passing vehicles and the cameras capture identifying information about the overweight vehicles. The data collected from the RFK Bridge program will inform the potential for implementing this technology on all TBTA bridges and tunnels.
+[p043_c0003] Pursuant to the legislation, trucks that exceed the maximum allowable gross weight by more than 10% and/or the maximum axle weights by more than 20% will be subject to a violation. The maximum fine under the law is $1,200. The New York City Department of Finance Parking Violations Bureau will conduct appeals and adjudications.
+[p043_c0004] Two public hearings were conducted in which members of the public were invited to comment on the proposed program. Information was also posted on the MTA website offering the public the opportunity to submit written comments online, and by email and mail. Transcripts of the hearing testimony and copies of written and recorded statements have been distributed to Board members for their consideration.
+[p043_c0005] If approved, the program is anticipated to commence in the fourth quarter of 2026.
+### [p043_c0006] III. IMPACT ON FUNDING:
+[p043_c0007] Adoption of this Resolution and implementation of the WIM Program is anticipated to raise revenues in 2026 and subsequent years through the collection of fines. TBTA will receive 80% of the fines collected. After paying operating costs, 100% of the remaining funds are to be allocated to MTA B&T capital projects.
+### [p043_c0008] IV. RECOMMENDATION:
+[p043_c0009] It is recommended that the Board adopt and approve the attached Resolution authorizing the President or designee to take all such steps that may be necessary and desirable for TBTA to establish, pursuant to law, a Weigh-in-Motion Program.
+[p043_c0010] _Master Page # 43 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 44
+
+### [p044_c0001] RESOLUTION
+[p044_c0002] WHEREAS , SECTION 385-a of the Vehicle and Traffic Law was amended to establish a demonstration weigh-in-motion (WIM) program to impose vehicle owner liability for failure of an operator to comply with gross vehicle weight and/or axle weight restrictions on the Robert F Kennedy (RFK) Bridge and requires the approval of a majority of the members of the entire Triborough Bridge and Tunnel Authority (Authority) Board prior to implementation of the WIM program; and
+[p044_c0003] WHEREAS , following a public hearing and approval of the WIM program by the Board, the President of the Authority is authorized to establish a WIM demonstration program on the RFK Bridge; and
+[p044_c0004] WHEREAS , advertisements of public hearing on the proposed WIM program were published by the Authority in print media outlets, including the New York Daily News , the Daily Challenge , the Jewish Press , the Bronx Times , El Diario , Haiti Libre , Weekly Bangalee , the New Amsterdam News , the Staten Island Advance , the Straus Manhattan , the Riverdale Press , the Chinese World Journal , the Russkaya Reklama , the Harlem Community News , the Queens Chronicle , the Rockaway Wave , NJ.COM (Newark Star-Ledger) and Korea Daily New York ; and the Authority also provided notice of the hearings in two press releases, on the Metropolitan Transportation Authority (MTA) website, and via Instagram Stories, Facebook, Threads, BlueSky, and LinkedIn; and the Authority also sent 284,253 emails to private and commercial MTA E-ZPass customers; and
+[p044_c0005] WHEREAS , two hybrid public hearings were conducted by the Authority, at the times set forth in the aforesaid notices of public hearings, at which all persons who wished to comment on the proposed WIM Program were permitted to speak and written comments for inclusion in the record of the proceeding were invited and accepted until October 10, 2025, at New York City Transit Authority, New York, NY on October 6, 2025 and October 7, 2025; and
+[p044_c0006] WHEREAS , the Board has considered the testimony of the public at the hybrid public hearings and the written comments that were submitted; and
+[p044_c0007] WHEREAS , the Board has considered the recent amendments to WIM pursuant to Section 385-a of the Vehicle and Traffic Law, current practices of the New York City Department of Transportation in implementing a WIM Program on I-278 in Brooklyn in 2023 that has reduced overweight truck traffic Queens-bound by 60 percent in the first year of WIM enforcement, as well as safety impacts; and considers that WIM will reduce non-compliance with weight restrictions on the RFK Bridge; and
+[p044_c0008] WHEREAS , the Board has considered all of the above.
+[p044_c0009] NOW, THEREFORE , upon motion duly made and seconded, the following resolution is adopted by the Board:
+[p044_c0010] RESOLVED , that in accordance with Section 385-a of the Vehicle and Traffic Law, the Board of the Triborough Bridge and Tunnel Authority (Authority) hereby authorizes the implementation of a demonstration program imposing owner liability for failure of an operator to comply with maximum allowable gross weights and/or maximum allowable axle weights, also known as the Weigh-in-Motion Program (WIM), and the President of the Authority and designees are hereby authorized and directed to take such steps as may be necessary or desirable to implement such WIM program.
+[p044_c0011] _Master Page # 44 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 45
+
+[p045_c0001] October 27, 2025
+[p045_c0002] New York, New York
+[p045_c0003] _Master Page # 45 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 46
+
+### [p046_c0001] Staff Summary
+[p046_c0002]
+
+```text
+Subject Date Work Zone Speed Enforcement Program October 29, 2025 Department Vendor Name Tolling Management N/A Department Head Name Contract Number Stephen Knapp N/A Department Head Signature Contract Manager Name SKM N/A Project Manager Table of Contents Ref # David Gmach N/A
+```
+[p046_c0003]
+
+```text
+Board Action Internal Approvals 2 Board 10/29/25 VP 3 President 1 B&T Comm 10/27/25 ALCC 2 Chief Operating Officer SR 1 VP Tolling Operations
+```
+### [p046_c0004] I. PURPOSE:
+[p046_c0005] To obtain the Board's approval of the annexed Resolution in accordance with amended Section 1180-e (2-a) of the Vehicle and Traffic Law, which requires the Triborough Bridge and Tunnel Authority (TBTA) hold a public hearing and receive board approval to authorize the TBTA President or designee to take all such steps that may be necessary and desirable for TBTA to establish, pursuant to law, a Work Zone Speed Enforcement (WZSE) Program.
+### [p046_c0006] II. DISCUSSION:
+[p046_c0007] New York State enacted WZSE in 2021. After the New York State Thruway Authority and the New York State Department of Transportation implemented WZSE, the law was expanded to include TBTA in 2025.
+[p046_c0008] WZSE has been shown to deter speeding in maintenance and construction zones, enhancing worker and traveler safety. For example, NYSDOT's first annual report found the percentage of vehicles traveling in WZSE enforced work zones that exceeded the posted speed limit by 10 mph declined after the program was in place for several months. In 2024, Connecticut's pilot study on automated WZSE found that four out of five
+[p046_c0009] _Master Page # 46 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 47
+
+[p047_c0001] locations analyzed had significant reductions in drivers speed when compared to the period prior to enforcement. In particular, speeding was reduced at two work zones on I-95 by 17 to 18 percent. TBTA's proposed WZSE program will use technology, including radar and automated cameras, to identify vehicles driving ten miles per hour or more above the posted speed limit in an active work zone. The radar and cameras will only operate in work zones when workers are present. The WZSE equipment can be placed in an active work zone at any one of TBTA's bridge and tunnel facilities.
+[p047_c0002] Pursuant to the enabling legislation, the information collected through the WZSE system will be reviewed by a qualified technician, who will certify that the information collected is accurate. Vehicle registrants will receive a notice of liability with fine amounts ranging from $50 to $100. The New York City Department of Finance Parking Violations Bureau will conduct appeals and adjudications.
+[p047_c0003] Two public hearings were conducted in which members of the public were invited to comment on the proposed program. Information was also posted on the Metropolitan Transportation Authority (MTA) website offering the public the opportunity to submit written comments online, and by email and mail. Transcripts of the hearing testimony and copies of written and recorded statements have been distributed to Board members for their consideration.
+[p047_c0004] If approved, the program is anticipated to commence in the second quarter of 2026.
+### [p047_c0005] III. IMPACT ON FUNDING:
+[p047_c0006] Adoption of this Resolution and implementation of the WZSE program is anticipated to raise revenues in 2026 and subsequent years through collection of fines. TBTA will receive 80% of the fines collected. After paying operating costs, 60% of the remaining funds are to be allocated to work zone safety projects. As the Program continues, the expectation is that the Program will successfully enhance safety and deter drivers from speeding.
+### [p047_c0007] IV. RECOMMENDATION:
+[p047_c0008] It is recommended that the Board adopt and approve the attached Resolution authorizing the President or designee to take all such steps that may be necessary and desirable for TBTA to establish, pursuant to law, a Work Zone Speed Enforcement (WZSE) Program.
+[p047_c0009] _Master Page # 47 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 48
+
+### [p048_c0001] RESOLUTION
+[p048_c0002] WHEREAS , Section 1180-e of the Vehicle and Traffic Law authorizes the Triborough Bridge and Tunnel Authority (the Authority) to establish a demonstration program imposing registered vehicle owner liability for failure of the vehicle operator to comply with certain posted maximum speed limits in highway construction or maintenance work areas on Authority facilities pursuant to a Work Zone Speed Enforcement program (WZSE); and
+[p048_c0003] WHEREAS , following a public hearing and approval of the WZSE program by the Board, the President of the Authority, in consultation with the chief of the metropolitan transportation authority police department or the Chief of the Authority peace officers, shall determine the location of the highway construction or maintenance work areas located on Authority facilities in which to install and operate photo speed violation monitoring systems; and
+[p048_c0004] WHEREAS , advertisements of public hearing on the proposed WZSE program were published by the Authority in print media outlets, including the New York Daily News , the Daily Challenge , the Jewish Press , the Bronx Times , El Diario , Haiti Libre , Weekly Bangalee , the New Amsterdam News , the Staten Island Advance , the Straus Manhattan , the Riverdale Press , the Chinese World Journal , the Russkaya Reklama , the Harlem Community News , the Queens Chronicle , the Rockaway Wave , NJ.COM (Newark Star-Ledger) , and Korea Daily New York ; the Authority also provided notice of the hearings in two press releases, on the MTA website, and via Instagram Stories, Facebook, Threads, BlueSky, and LinkedIn; and the Authority also sent 284,253 emails to private and commercial MTA E-ZPass customers; and
+[p048_c0005] WHEREAS , two hybrid public hearings were conducted by the Authority, at the times set forth in the aforesaid notices of public hearings, at which all persons who wished to comment on the proposed WZSE program were permitted to speak and written comments for inclusion in the record of the proceeding were invited and accepted until October 10, 2025, at New York City Transit Authority, New York, NY on October 6, 2025 and October 7, 2025; and
+[p048_c0006] WHEREAS , the Board has considered the testimony of the public at the hybrid public hearings and the written comments that were submitted; and
+[p048_c0007] WHEREAS , the Board has considered the recent amendments to WZSE pursuant to Section 1180-e(2-a) of the Vehicle and Traffic Law, current practices of other state agencies as well as safety impacts; and considers that WZSE will improve safety in Authority work zones; and
+[p048_c0008] WHEREAS , the Board has considered all of the above.
+[p048_c0009] NOW, THEREFORE , upon motion duly made and seconded, the following resolution is adopted by the Board of the Authority:
+[p048_c0010] RESOLVED , that in accordance with Section 1180-e(2-a) of the Vehicle and Traffic Law, the Board of Triborough Bridge and Tunnel Authority (Authority) hereby authorizes the design and implementation of a demonstration program imposing owner liability for failure of an operator to comply with certain posted maximum speed limits in highway construction or maintenance work areas on up to nine Authority facilities, also known as the Work Zone Speed Enforcement Program (WZSE), and the President of the Authority and designees are hereby authorized and directed to take such steps as may be necessary or desirable to establish such WZSE program.
+[p048_c0011] _Master Page # 48 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 49
+
+[p049_c0001] October 27, 2025
+[p049_c0002] New York, New York
+[p049_c0003] _Master Page # 49 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 50
+
+### [p050_c0001] Staff Summary
+### [p050_c0002] Page 1 of 2
+[p050_c0003]
+
+```text
+Subject TBTA Congestion Relief Zone Toll Revenue Obligation Resolution for Submission to the Capital Program Review Board Department Finance Department Head Name Jaibala Patel, Chief Financial Officer Department Head Signature Project Manager/Division Head Olga Chernat, Deputy Chief, Financial Services
+```
+[p050_c0004]
+
+```text
+Date October 29, 2025 Vendor Name Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p050_c0005]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance 10/27 2 Board 10/29
+```
+[p050_c0006]
+
+```text
+Internal Approvals Order Approval Order Approval 3 Chair and CEO 2 Chief of Staff 1 Legal
+```
+### [p050_c0007] Purpose:
+[p050_c0008] To obtain Finance Committee and TBTA Board approval of the annexed resolution authorizing the submission of the proposed Congestion Relief Zone Toll Revenue Obligation Resolution and Standard Resolution Provisions (collectively, the “ CRZ Bond Resolution ”) to the Metropolitan Transportation Authority Capital Program Review Board (“ CPRB ”) for approval. Upon approval by the CPRB, a complete and final set of CRZ Bond Resolution documents, including any changes made during the CPRB review process, will be resubmitted to the Finance Committee and the TBTA Board for formal adoption.
+[p050_c0009] Approval of the CRZ Bond Resolution by the CPRB and then adoption by the TBTA Board is required for TBTA to issue notes and bonds secured by Congestion Relief Zone (“ CRZ ”) revenues to fund $15 billion for transit and commuter rail capital projects authorized by the MTA Reform and Traffic Mobility Act (the “ Traffic Mobility Act ”). MTA C&D has begun committing to significant projects to be funded with the $15 billion, with over $4 billion committed to date, including contracts for Second Avenue Subway Phase 2, rolling stock for both LIRR and MNR, ADA accessibility upgrades at multiple stations, and critical transit and commuter rail state-of-good-repair and improvement projects. In addition to these funding needs, $1.4 billion in short-term debt will need to be refinanced or repaid, including notes issued under other MTA credits and short-term loan secured by CRZ revenues. This short-term debt was issued to fund a portion of the $15 billion for capital projects, as well as for the construction and installation costs of the CRZ system.
+### [p050_c0010] Discussion and Background:
+[p050_c0011] The Central Business District Tolling Program (herein referred to as the “ CRZ Tolling Program ”) was established pursuant to the Traffic Mobility Act, as part of the State budget for Fiscal Year 2019-2020. The Traffic Mobility Act required that TBTA, among other things, establish and operate the CRZ Tolling Program, and establish and charge variable tolls for vehicles entering the CRZ. In addition, the Traffic Mobility Act requires the CRZ Tolling Program to generate net annual revenues over time to fund $15 billion for MTA’s transit and
+[p050_c0012] _Master Page # 50 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 51
+
+### [p051_c0001] Staff Summary
+### [p051_c0002] Metropolitan Transportation Authority
+### [p051_c0003] Page 2 of 3
+[p051_c0004] commuter rail system capital projects. The TBTA Board adopted the initial CRZ toll structure and rates on March 27, 2024 and adopted a phase-in approach to the CRZ toll rate schedule on November 18, 2024. The CRZ Tolling Program went into effect and tolling commenced on January 5, 2025.
+[p051_c0005] After payment of certain costs of operating and administering the CRZ Tolling Program (including costs for measures to monitor for and/or mitigate certain potential CRZ Tolling Program impacts identified during the environmental review), the tolls, fees and other charges generated under the CRZ Tolling Program (the “ CRZ Net Revenues ”) are deposited into the MTA capital lockbox fund and are permitted, among other statutory purposes, to be pledged by TBTA to secure and be applied to the payment of bonds, notes or other obligations of TBTA issued to finance: (i) the costs of the CRZ Tolling Program, (ii) $15 billion in MTA transit and commuter rail capital projects included in the 2020-2024 MTA capital plan, and (iii) the excess, if any, for successor capital plans.
+[p051_c0006] TBTA expects to issue bonds and notes secured by CRZ Revenues over several years to match MTA’s capital funding needs. MTA Finance staff will seek Board approval for such issuances annually, as part of the regular debt authorization process.
+[p051_c0007] MTA Finance staff, working with external Bond Counsel and its Financial Advisor, have drafted the annexed CRZ Bond Resolution, which is the fundamental legal document for the establishment of a new note and bond credit secured by the pledge of the CRZ Net Revenues.
+[p051_c0008] In order to finance transit and commuter rail projects in an approved MTA Capital Program, TBTA is required by Section 553(20) of the Public Authorities Law to submit such documentation to the CPRB for review and approval prior to the additional formal adoption thereafter by the TBTA Board.
+### [p051_c0009] CRZ Bond Resolution Highlights:
+- [p051_c0010] • Senior and subordinate lien pledge of CRZ Net Revenues. • A flow of funds priority that funds operating expenses of the CRZ Tolling Program first, followed by senior debt service, then subordinate debt service. Excess CRZ revenues will be available for PAYGO capital, subject to funding any required reserve fund deposits, including a reserve maintenance fund for repairs and replacement of the CRZ infrastructure. • Authorizes bonds and notes to be issued for CRZ infrastructure and transit and commuter projects in CPRB-approved capital plans, subject to an “additional bonds test” which will limit the amount of debt based on the level of CRZ Net Revenues. The additional bonds test specific coverage requirements will be finalized upon the first issuance of long-term bonds, with such determination to be delegated to staff based upon rating agency review and market conditions, including investor requirements; provided however, the additional bonds test will, at a minimum, require overall debt service coverage (CRZ Net Revenues divided by maximum annual aggregate debt service) to be no less than 105%. • A rate covenant which will, among other things, require TBTA to generate CRZ revenues to be sufficient to pay annual CRZ operating expenses and annual debt service on bonds issued under the CRZ Bond Resolution. The CRZ Bond Resolution does not require TBTA to modify the CRZ toll schedule during the six-year phase-in period (3 years at $9 followed by 3 years at $12), as well as for a minimum of 3 years thereafter when the CRZ toll rate for passenger vehicles is scheduled to be $15. The covenant is
+[p051_c0011] _Master Page # 51 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 52
+
+### [p052_c0001] Staff Summary
+### [p052_c0002] Metropolitan Transportation Authority
+### [p052_c0003] Page 3 of 3
+[p052_c0004] subject to the requirements of the Value Pricing Pilot Program agreement with the Federal Highway Administration. TBTA will not take action which would materially adversely affect the achievement of the congestion relief objectives.
+### [p052_c0005] Recommendation:
+[p052_c0006] It is recommended that the TBTA Board approve the annexed CRZ Bond Resolution and authorize submission of the CRZ Bond Resolution to the CPRB for review and approval. Upon approval by the CPRB, MTA Finance staff will seek final TBTA Board adoption of the CRZ Bond Resolution (inclusive of any changes made during the CPRB review process), and any additional documents, authorizations or delegations needed for the issuance of notes and/or bonds secured by CRZ revenues. This approval will allow MTA to continue to move forward on its planned commitments and spending for the $15 billion of transit and commuter rail projects to be funded through the CRZ Tolling Program.
+[p052_c0007] _Master Page # 52 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 53
+
+### [p053_c0001] DRAFT 10/22/25
+### [p053_c0002] TRIBOROUGH BRIDGE AND TUNNEL AUTHORITY
+### [p053_c0003] CONGESTION RELIEF ZONE TOLL REVENUE OBLIGATION RESOLUTION
+[p053_c0004] Adopted _____, _____ As [Deemed] Approved By The Metropolitan Transportation Authority Capital Program Review Board As of _____, _____
+[p053_c0005] _4906-1183-2920.15_
+[p053_c0006] _Master Page # 53 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 54
+
+### [p054_c0001] TABLE OF CONTENTS
+[p054_c0002] Page ARTICLE I STANDARD RESOLUTION PROVISIONS; DEFINITIONS ..... 1 Section 101 Standard Resolution Provisions ..... 1 Section 102 Definitions..... 1 ARTICLE II AUTHORIZATION AND ISSUANCE OF OBLIGATIONS ..... 1 Section 201 Authorization of Senior Lien Obligations..... 1 Section 202 General Provisions for Issuance of Senior Lien Obligations..... 2 Section 203 Authorization of the Issuance of Subordinate Lien Obligations..... 2 Section 204 General Provisions for Issuance of Subordinate Lien Obligations ..... 3 Section 205 Special Provisions for Issuance of Additional Senior Lien Obligations..... 3 Section 206 Special Provisions for Issuance of Additional Subordinate Lien Obligations..... 5 Section 207 Special Provisions for Issuance of Refunding Senior Lien Obligations and Subordinate Lien Obligations ..... 6 ARTICLE III FORM OF OBLIGATIONS ..... 8 Section 301 Form of Senior Lien Obligations ..... 8 Section 302 Form of Subordinate Lien Obligations ..... 9 ARTICLE IV REDEMPTION AT DEMAND OF THE STATE OR THE CITY..... 9 Section 401 Redemption at Demand of the State or the City ..... 9 ARTICLE V PLEDGE; MAINTENANCE AND ESTABLISHMENT OF FUNDS AND ACCOUNTS AND APPLICATION THEREOF ..... 9 Section 501 The Pledge Effected by the Resolution..... 9 Section 502 Establishment of Funds, Accounts and Subaccounts ..... 11 Section 503 CRZ Pledged Net Tolls Revenue Fund ..... 12 Section 504 Senior Lien Obligations Proceeds Fund and Application Thereof ..... 14 Section 505 Subordinate Lien Obligations Proceeds Fund and Application Thereof ..... 15 Section 506 Senior Lien Debt Service Fund - Senior Lien Debt Service Account..... 17 Section 507 Senior Lien Debt Service Fund - Senior Lien Debt Service Reserve Account ..... 18 Section 508 Subordinate Lien Debt Service Fund - Subordinate Lien Debt Service Account ..... 19 Section 509 Subordinate Lien Debt Service Fund - Subordinate Lien Debt Service Reserve Account ..... 21 Section 510 Reserve Maintenance Fund..... 23 Section 511 Rebate Fund ..... 24 Section 512 Excess Revenues Fund..... 25 ARTICLE VI PARTICULAR COVENANTS OF THE ISSUER ..... 25 Section 601 Power to Operate the CRZ Tolling Program and Collect CRZ Tolls..... 25 Section 602 Tolls, Fees and Charges ..... 26 Section 603 Power to Issue Senior Lien Obligations and Effect Pledge ..... 28
+[p054_c0003] _i_
+[p054_c0004] _4906-1183-2920.15_
+[p054_c0005] _Master Page # 54 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 55
+
+### [p055_c0001] Table of Contents (continued)
+[p055_c0002] Section 604 Power to Issue Subordinate Lien Obligations and Effect Pledge ..... 28 Section 605 Creation of Liens, Issuance of Subordinated Indebtedness, Subordinated Contract Obligations and Other Debt ..... 29 Section 606 Agreement of the State; Limited Waiver by Owners ..... 30 Section 607 Operation and Maintenance ..... 30 Section 608 Retention of CRZ Tolling Collection System, CRZ Tolling Customer Service Center and CRZ Tolling Infrastructure ..... 30 Section 609 Further Assurances ..... 30 Section 610 Compliance with Laws, Agreements, Rules and Regulations ..... 30 Section 611 Records and Accounts ..... 31 ARTICLE VII EVENTS OF DEFAULT AND REMEDIES ..... 31 Section 701 Senior Lien Obligations Event of Default ..... 31 Section 702 Powers of the Senior Lien Trustee; No Right to Accelerate ..... 31 Section 703 Priority of Payments After Default on Senior Lien Indebtedness..... 32 Section 704 Subordinate Lien Obligations Event of Default..... 34 Section 705 Powers of Subordinate Lien Trustee in Respect of a Subordinate Lien Obligations Event of Default; No Right to Accelerate ..... 34 Section 706 Priority of Payments After Default on Subordinate Lien Indebtedness..... 35 ARTICLE VIII SUPPLEMENTAL RESOLUTIONS ..... 37 Section 801 General Provisions ..... 37 Section 802 Supplemental Resolutions Effective Upon Filing with the Senior Lien Trustee and Subordinate Lien Trustee ..... 37 ARTICLE IX AMENDMENTS..... 41 Section 901 Mailing ..... 41 Section 902 Powers of Amendment..... 41 Section 903 Consent of Senior Lien Owners and Subordinate Lien Owners ..... 43 Section 904 Modifications by Unanimous Consent..... 45 Section 905 Notation on Senior Lien Obligations and/or Subordinate Lien Obligations ..... 45 ARTICLE X MISCELLANEOUS; REMEDIES..... 45 Section 1001 Authority to Deliver this Resolution..... 45 Section 1002 Appointment of Receiver Abrogated ..... 46 Section 1003 Effective Date ..... 46
+[p055_c0003] _ii_
+[p055_c0004] _4906-1183-2920.15_
+[p055_c0005] _Master Page # 55 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 56
+
+### [p056_c0001] Table of Contents (continued)
+[p056_c0002] Schedule A – Master Glossary of Terms
+[p056_c0003] Annex A – Standard Resolution Provisions Applicable to Obligations and Parity Debt
+[p056_c0004] Exhibit One – Form of Senior Lien Obligations
+[p056_c0005] Exhibit Two – Form of Subordinate Lien Obligations
+[p056_c0006] _iii_
+[p056_c0007] _4906-1183-2920.15_
+[p056_c0008] _Master Page # 56 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 57
+
+### [p057_c0001] CONGESTION RELIEF ZONE TOLL REVENUE OBLIGATION RESOLUTION
+[p057_c0002] BE IT RESOLVED by the Members of the Triborough Bridge and Tunnel Authority as follows:
+### [p057_c0003] ARTICLE I STANDARD RESOLUTION PROVISIONS; DEFINITIONS
+[p057_c0004] Section 101 Standard Resolution Provisions. Except as otherwise specifically provided herein or by Supplemental Resolution, the Standard Resolution Provisions appended hereto as Annex A (the “Standard Resolution Provisions”) constitute an integral part of the Resolution and have the same force and effect as if set forth in the forepart of the Resolution.
+[p057_c0005] Section 102 Definitions. Except as the context shall otherwise require, capitalized terms used but not otherwise defined herein shall have the respective meanings set forth in Schedule A–Master Glossary of Terms . In the event any such term is defined in the Standard Resolution Provisions, the definition contained in the Master Glossary of Terms shall control. In addition, to the extent that the State, by law and consistent with their agreements set forth herein, changes any funds and accounts referred to herein, such definitions shall be deemed to include any successor provisions. The following terms shall, for all purposes of the Resolution, have the following meanings:
+### [p057_c0006] ARTICLE II AUTHORIZATION AND ISSUANCE OF OBLIGATIONS
+### [p057_c0007] Section 201 Authorization of Senior Lien Obligations.
+[p057_c0008] 1. The Resolution hereby authorizes Senior Lien Obligations of the Issuer designated as “Congestion Relief Zone Senior Lien Toll Revenue Obligations”, which Senior Lien Obligations, if and when authorized by the Issuer pursuant to one or more Supplemental Resolutions, may be issued in one or more Series or subseries, and each of such Series or subseries may have different characteristics or terms than other Series or subseries not contrary to the Resolution as then in effect, including priority of payment. Senior Lien Obligations may be issued as Tax-Exempt Obligations, as Taxable Obligations, as obligations which convert on a particular date or dates from Taxable Obligations to Tax-Exempt Obligations, or as Taxable Obligations which are mandatorily exchangeable on a particular date or dates for Tax-Exempt Obligations, or otherwise as determined by Supplemental Resolution and not contrary to the Resolution as then in effect. The Senior Lien Obligations shall be special obligations of the Issuer payable solely from the Senior Lien Obligations Trust Estate pledged to the payment thereof pursuant to subsection 1 of Section 501. The aggregate principal amount of the Senior Lien Obligations which may be executed, authenticated and delivered under the Resolution is not limited except as provided in the Resolution or as may from time to time be limited by law.
+[p057_c0009] 2. The Senior Lien Obligations may, if and when authorized by the Issuer pursuant to one or more Supplemental Resolutions, be issued in one or more Series or subseries, and the designations thereof, in addition to the name “Congestion Relief Zone Senior Lien Toll Revenue Bonds”, shall include such further or different designations in such title for the Senior Lien Obligations of any particular Series or subseries as the Issuer may determine. Each Senior Lien
+[p057_c0010] _1_
+[p057_c0011] _4906-1183-2920.15_
+[p057_c0012] _Master Page # 57 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 58
+
+[p058_c0001] Obligation shall bear upon its face the designation so determined for the Series or subseries to which it belongs.
+[p058_c0002] 3. Nothing in the Resolution shall be deemed to prevent the consolidation into a single Series or subseries for purposes of issuance and sale of Senior Lien Obligations otherwise permitted by the Resolution to be issued at the same time in two or more separate Series or subseries. In the event that separate Series or subseries are combined for purposes of issuance and sale, they may be issued under a single Supplemental Resolution notwithstanding any other provision of the Resolution. Nothing in the Resolution (except to the extent required by Supplemental Resolution) shall be deemed to prevent the separation into separate Series or subseries for purposes of issuance and sale of Senior Lien Obligations otherwise permitted by the Resolution to be issued in one Series or subseries.
+[p058_c0003] 4. Senior Lien Obligations may be issued for any Senior Lien Authorized Purpose.
+[p058_c0004] Section 202 General Provisions for Issuance of Senior Lien Obligations. Senior Lien Obligations may be issued pursuant to a Supplemental Resolution upon (a) satisfaction of the provisions of Section A-201 of Annex A , except that the Opinion of Bond Counsel required by Section A-201.2(a)(iii) of Annex A shall be to the effect that the Senior Lien Obligations are valid, binding, special obligations of the Issuer, enforceable in accordance with their terms and the terms of the Resolution and entitled to the benefits of the Issuer Act and the Resolution, as amended to the date of such Opinion of Bond Counsel, and (b) satisfaction of the provisions of Section 205 or Section 207, as applicable.
+### [p058_c0005] Section 203 Authorization of the Issuance of Subordinate Lien Obligations.
+[p058_c0006] 1. The Resolution hereby authorizes Subordinate Lien Obligations of the Issuer designated as “Congestion Relief Zone Subordinate Lien Toll Revenue Obligations”, which Subordinate Lien Obligations, if and when authorized by the Issuer pursuant to one or more Supplemental Resolutions, may be issued in one or more Series or subseries, and each of such Series or subseries may have different characteristics or terms than other Series or subseries not contrary to the Resolution as then in effect, including priority of payment. Subordinate Lien Obligations may be issued as Tax-Exempt Obligations, as Taxable Obligations, as obligations which convert on a particular date or dates from Taxable Obligations to Tax-Exempt Obligations, or as Taxable Obligations which are mandatorily exchangeable on a particular date or dates for Tax-Exempt Subordinate Lien Obligations, or otherwise as determined by Supplemental Resolution and not contrary to the Resolution as then in effect. The Subordinate Lien Obligations shall be special obligations of the Issuer payable solely from the Subordinate Lien Obligations Trust Estate pledged to the payment thereof pursuant to subsection 5 of Section 501. The aggregate principal amount of the Subordinate Lien Obligations which may be executed, authenticated and delivered under the Resolution is not limited except as provided in the Resolution or as may from time to time be limited by law.
+[p058_c0007] 2. The Subordinate Lien Obligations may, if and when authorized by the Issuer pursuant to one or more Supplemental Resolutions, be issued in one or more Series or subseries, and the designations thereof, in addition to the name “Congestion Relief Zone Subordinate Lien Toll Revenue Bonds”, shall include such further or different designations in such title for the
+[p058_c0008] _2_
+[p058_c0009] _4906-1183-2920.15_
+[p058_c0010] _Master Page # 58 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 59
+
+[p059_c0001] Subordinate Lien Obligations of any particular Series or subseries as the Issuer may determine. Each Subordinate Lien Obligation shall bear upon its face the designation so determined for the Series or subseries to which it belongs.
+[p059_c0002] 3. Nothing in the Resolution shall be deemed to prevent the consolidation into a single Series or subseries for purposes of issuance and sale of Subordinate Lien Obligations otherwise permitted by the Resolution to be issued at the same time in two or more separate Series or subseries. In the event that separate Series or subseries are combined for purposes of issuance and sale, they may be issued under a single Supplemental Resolution notwithstanding any other provision of the Resolution. Nothing in the Resolution (except to the extent required by Supplemental Resolution) shall be deemed to prevent the separation into separate Series or subseries for purposes of issuance and sale of Subordinate Lien Obligations otherwise permitted by the Resolution to be issued in one Series or subseries.
+[p059_c0003] 4. Subordinate Lien Obligations may be issued for any Subordinate Lien Authorized Purpose.
+### [p059_c0004] Section 204 General Provisions for Issuance of Subordinate Lien Obligations.
+[p059_c0005] Subordinate Lien Obligations may be issued pursuant to a Supplemental Resolution upon (a) satisfaction of the provisions of Section A-201 of Annex A , except that the Opinion of Bond Counsel required by Section A-201.2(a)(iii) of Annex A shall be to the effect that the Subordinate Lien Obligations are valid, binding and special obligations of the Issuer, enforceable in accordance with their terms and the terms of the Resolution and entitled to the benefits of the Issuer Act and the Resolution, as amended to the date of such Opinion of Bond Counsel, and (b) satisfaction of the provisions of Section 206 or Section 207 as applicable.
+### [p059_c0006] Section 205 Special Provisions for Issuance of Additional Senior Lien Obligations.
+[p059_c0007] 1. Senior Lien Obligations of one or more Series or subseries may at any time, or from time to time, be authenticated and delivered by the Senior Lien Trustee for an Authorized Purpose only upon receipt by the Senior Lien Trustee, in addition to the documents required by Section A-201 of Annex A of a certificate of an Authorized Officer setting forth:
+[p059_c0008] (a) the amount of the CRZ Pledged Net Toll Revenues for any period of 12 consecutive calendar months out of the 18 complete calendar months (a “ Twelve-Month Period ”) next preceding the date of authentication and delivery of the Senior Lien Obligations of such Series; provided that, in such certificate if, during any time of the Twelve-Month Period or on the date of authentication and delivery of the Senior Lien Obligations of such Series, the toll rate for any classification of vehicles (including changes in toll rates based on time of day) has been adjusted (higher or lower), then solely for the purposes of such certificate, the CRZ Pledged Net Toll Revenues for the Twelve-Month Period shall be increased or decreased, as appropriate, by an amount equal to the differences in such toll rates for such classifications that had different toll rates multiplied by the number of toll transactions for such respective classifications and times of day during the full Twelve-Month Period or for the part of the Twelve-Month Period the new rates were not yet in effect, as appropriate; and provided further that the adjustments made
+[p059_c0009] _3_
+[p059_c0010] _4906-1183-2920.15_
+[p059_c0011] _Master Page # 59 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 60
+
+[p060_c0001] hereof shall be calculated by the Issuer in consultation with the Independent Traffic Consultant;
+[p060_c0002] (b) For the then current and each future Debt Service Year:
+- [p060_c0003] (i) the greatest amount of annual Calculated Debt Service during such year on all Outstanding Senior Lien Indebtedness on a parity lien with the Senior Lien Obligations being issued (“ Maximum Parity Annual Senior Lien Debt Service ”), (ii) if there is or will be more than one Senior Lien outstanding, the greatest amount of annual Calculated Debt Service during such year on all Outstanding Senior Lien Indebtedness (“ Maximum Total Annual Senior Lien Debt Service ”), and (iii) the greatest amount of annual Calculated Debt Service during such year on all Outstanding Senior Lien Indebtedness and Subordinate Lien Indebtedness (“ Maximum Annual Aggregate Debt Service ”)
+[p060_c0004] For the calculations in (i) through (iii) above, the Issuer shall include any proposed Obligations and any proposed Refunding Obligations but exclude any Indebtedness to be refunded with the proceeds of such Refunding Obligations.
+[p060_c0005] (c) that the amount of CRZ Pledged Net Toll Revenues in the Twelve-Month Period as set forth in clause (a) above (the “ Twelve-Month Period CRZ Pledged Net Toll Revenues ”) is:
+- [p060_c0006] (i) not less than the Applicable Senior Lien Coverage Factor multiplied by the amount of Maximum Parity Annual Senior Lien Debt Service; and (ii) If there is or will be more than one senior lien Outstanding, not less than the Applicable Senior Lien Coverage Factor multiplied by the amount of Maximum Total Annual Senior Lien Debt Service; and (iii) not less than the Applicable Aggregate Coverage Factor multiplied by the amount of Maximum Annual Aggregate Debt Service.
+[p060_c0007] 2. The Senior Lien Obligations of each Series delivered pursuant to this Section 205 shall be authenticated and delivered by the Senior Lien Trustee only upon receipt by such Trustee (in addition to the items required by Section 202) of a certificate of an Authorized Officer to the effect that the Issuer then is, and upon the authentication and delivery of the Senior Lien Obligations of such Series shall be, in compliance with all applicable provisions of the Issuer Act relating to the issuance, sale and delivery of such Senior Lien Obligations.
+[p060_c0008] 3. Notwithstanding anything to the contrary herein, an Applicable Senior Lien Coverage Factor, that is lower than the Applicable Senior Lien Coverage Factor that has been established for the issuance of Outstanding Senior Lien Obligations, may be established pursuant
+[p060_c0009] _4_
+[p060_c0010] _4906-1183-2920.15_
+[p060_c0011] _Master Page # 60 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 61
+
+[p061_c0001] to a Supplemental Resolution adopted in connection with the issuance of such Series of Additional Senior Lien Obligations that are to be secured and payable on a basis that is junior and subordinate to the pledge and lien of the Senior Lien Obligations Trust Estate for Outstanding Senior Lien Obligations and on a basis that is senior to the pledge and lien of the Subordinate Lien Obligations Trust Estate for Subordinate Lien Obligations; provided, however, that any such lower Applicable Senior Lien Coverage Factor that is established as part of the issuance test for such Series of Additional Senior Lien Obligations under this Section 205 shall (i) not reduce the Applicable Senior Lien Coverage Factor established for the Outstanding Senior Lien Obligations that are senior to such subordinate Additional Senior Lien Obligations and (ii) still require Twelve-Month Period CRZ Pledged Net Toll Revenues to be not less than the Applicable Aggregate Coverage Factor multiplied by the amount of Maximum Annual Aggregate Debt Service (which includes Subordinate Lien Obligations).
+### [p061_c0002] Section 206 Special Provisions for Issuance of Additional Subordinate Lien Obligations.
+[p061_c0003] 1. Subordinate Lien Obligations of one or more Series or subseries may at any time, or from time to time, be authenticated and delivered by the Subordinate Lien Trustee for an Authorized Purpose only upon receipt by the Subordinate Lien Trustee, in addition to the documents required by Section A-201 of Annex A of a certificate of an Authorized Officer setting forth:
+[p061_c0004] (a) the amount of the CRZ Pledged Net Toll Revenues for the Twelve-Month Period next preceding the date of authentication and delivery of the Subordinate Lien Obligations of such Series; provided that, in such certificate if, during any time of the Twelve-Month Period or on the date of authentication and delivery of the Subordinate Lien Obligations of such Series, the toll rate for any classification of vehicles (including changes in toll rates based on time of day) has been adjusted (higher or lower), then solely for the purposes of such certificate, the CRZ Pledged Net Toll Revenues for the Twelve-Month Period shall be increased or decreased, as appropriate, by an amount equal to the differences in such toll rates for such classifications that had different toll rates multiplied by the number of toll transactions for such respective classifications and times of day during the full Twelve-Month Period or for the part of the Twelve-Month Period the new rates were not yet in effect, as appropriate; and provided further that the adjustments made hereof shall be calculated by the Issuer in consultation with the Independent Traffic Consultant;
+[p061_c0005] (b) For the then current and each future Debt Service Year:
+[p061_c0006] (i) If there is or will be more than one subordinate lien Outstanding, the greatest amount of annual Calculated Debt Service during such year on all Outstanding Senior Lien Obligations and all Outstanding Subordinate Lien Indebtedness on a parity lien with the Subordinate Lien Obligations being issued ( “Maximum Annual Senior and Parity Subordinate Lien Debt Service” );
+[p061_c0007] _5_
+[p061_c0008] _4906-1183-2920.15_
+[p061_c0009] _Master Page # 61 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 62
+
+- [p062_c0001] (ii) the greatest amount of annual Calculated Debt Service during such year on all Outstanding Senior Lien Indebtedness and Subordinate Lien Indebtedness (“ Maximum Annual Aggregate Debt Service ”)
+[p062_c0002] For the calculations in (i) through (ii) above, the Issuer shall include any proposed Obligations and any proposed Refunding Obligations but exclude any Indebtedness to be refunded with the proceeds of such Refunding Obligations.
+[p062_c0003] (c) that the amount of CRZ Pledged Net Toll Revenues in the Twelve-Month Period as set forth in clause (a) above is:
+- [p062_c0004] (i) not less than the Applicable Subordinate Lien Coverage Factor multiplied by the amount of Maximum Annual Senior and Parity Subordinate Lien Debt Service; and (ii) not less than the Applicable Aggregate Coverage Factor multiplied by the amount of Maximum Annual Aggregate Debt Service.
+[p062_c0005] 2. The Subordinate Lien Obligations of each Series delivered pursuant to this Section 206 shall be authenticated and delivered by the Subordinate Lien Trustee only upon receipt by such Trustee (in addition to the items required by Section 203) of a certificate of an Authorized Officer to the effect that the Issuer then is, and upon the authentication and delivery of the Subordinate Lien Obligations of such Series shall be, in compliance with all applicable provisions of the Issuer Act relating to the issuance, sale and delivery of such Subordinate Lien Obligations.
+### [p062_c0006] Section 207 Special Provisions for Issuance of Refunding Senior Lien Obligations and Subordinate Lien Obligations.
+[p062_c0007] 1. Refunding Senior Lien Obligations and Refunding Subordinate Lien Obligations may be issued hereunder to refund Senior Lien Indebtedness and/or Subordinate Lien Indebtedness only if the Authorized Purposes of the Refunding Senior Lien Obligations and Refunding Subordinate Lien Obligations to be issued permit the refunding of indebtedness for the same Authorized Purposes for which the Senior Lien Indebtedness and/or the Subordinate Lien Indebtedness to be refunded were issued.
+[p062_c0008] 2. Refunding Senior Lien Obligations to refund Senior Lien Indebtedness and Subordinate Lien Indebtedness may be issued upon compliance with the provisions of Section 205 hereof. Refunding Subordinate Lien Obligations to refund Senior Lien Indebtedness and Subordinate Lien Indebtedness may be issued upon compliance with the provisions of Section 206 hereof. This Section 207 offers an alternative means of issuing such Refunding Senior Lien Obligations and Refunding Subordinate Lien Obligations in order to refund Outstanding Senior Lien Indebtedness and Outstanding Subordinate Lien Indebtedness.
+[p062_c0009] 3. In addition to refunding’s permitted under Sections 205 and 206, one or more Series of Refunding Senior Lien Obligations and Refunding Subordinate Lien Obligations (in each case in an aggregate principal amount which will provide funds, together with other money available therefor, to accomplish such refunding) may be authenticated and delivered upon original issuance to refund (including by redemption, payment at maturity or in connection with exchanges or
+[p062_c0010] _6_
+[p062_c0011] _4906-1183-2920.15_
+[p062_c0012] _Master Page # 62 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 63
+
+[p063_c0001] tenders) all or any portion of any Outstanding Senior Lien Indebtedness or any Outstanding Subordinate Lien Indebtedness, provided that, in addition to the requirements of Section 202 and Section 204, as applicable, the Refunding Senior Lien Obligations of each such Series shall be authenticated and delivered by the Senior Lien Trustee and the Refunding Subordinate Lien Obligations of each such Series shall be authenticated and delivered by the Subordinate Lien Trustee only upon receipt by the Applicable Trustee of the following:
+[p063_c0002] (a) If the Senior Lien Indebtedness or the Subordinate Lien Indebtedness to be refunded is to be redeemed, instructions to the Applicable Trustee, satisfactory to it, to give due notice of redemption of all the Senior Lien Indebtedness or Subordinate Lien Indebtedness to be refunded on the redemption date or dates specified in such instructions;
+[p063_c0003] (b) If the Senior Lien Indebtedness or the Subordinate Lien Indebtedness to be refunded is to be deemed paid within the meaning of the appropriate defeasance provisions of the Annexes hereto or similar provisions with respect to Senior Lien Indebtedness or Subordinate Lien Indebtedness, irrevocable instructions to the Applicable Trustee, satisfactory to it, to provide notice in the manner provided in appropriate defeasance provisions of the Annexes hereto or similar provisions with respect to the payment of such Senior Lien Indebtedness or Subordinate Lien Indebtedness;
+[p063_c0004] (c) If the Senior Lien Indebtedness or the Subordinate Lien Indebtedness to be refunded is to be deemed paid within the meaning of the appropriate defeasance provisions of the Annexes hereto or similar provisions with respect to Senior Lien Indebtedness or Subordinate Lien Indebtedness, either (i) money and/or (ii) Defeasance Securities as shall be necessary to comply with the provisions of the Annexes hereto or defeasance securities as shall be necessary to comply with any such similar provisions, which money and Defeasance Securities (or defeasance securities) shall be held in trust and used only as provided in said Annexes or similar provisions.
+[p063_c0005] (d) If the proceeds of such Series of Refunding Senior Lien Obligations or Refunding Subordinate Lien Obligations are to be utilized by the Issuer to purchase (in connection with a tender for or redemption of Senior Lien Indebtedness or Subordinate Lien Indebtedness, or otherwise) Senior Lien Indebtedness or Subordinate Lien Indebtedness to be delivered to the Applicable Trustee in satisfaction of a Sinking Fund Installment in accordance with the Annexes hereto or any similar provision, a certificate of an Authorized Officer specifying the matters required thereby.
+[p063_c0006] (e) A certificate of an Authorized Officer setting forth:
+[p063_c0007] (i) the maximum annual Calculated Debt Service for the then current and each future Debt Service Year on all Outstanding Senior Lien Indebtedness prior to the proposed refunding (“ Pre-Refunding Maximum Annual Senior Lien Debt Service ”);
+[p063_c0008] (ii) the maximum annual Calculated Debt Service for the then current and each future Debt Service Year on all Outstanding Senior Lien Indebtedness and Subordinate Lien Indebtedness prior to the
+[p063_c0009] _7_
+[p063_c0010] _4906-1183-2920.15_
+[p063_c0011] _Master Page # 63 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 64
+
+[p064_c0001] proposed refunding (“ Pre-Refunding Maximum Annual Aggregate Debt Service ”);
+- [p064_c0002] (iii) the maximum annual Calculated Debt Service for the then current and each future Debt Service Year on all Outstanding Senior Lien Indebtedness after the proposed refunding (“ Post-Refunding Maximum Annual Senior Lien Debt Service ”); (iv) the maximum annual Calculated Debt Service for the then current and each future Debt Service Year on all Outstanding Senior Lien Indebtedness and Subordinate Lien Indebtedness after the proposed refunding (“ Post-Refunding Maximum Annual Aggregate Debt Service ”); (v) that if Refunding Senior Lien Indebtedness is being issued, (1) Post-Refunding Maximum Annual Senior Lien Debt Service is no greater than Pre-Refunding Maximum Annual Senior Lien Debt Service for the Debt Service Years set forth in clause (ii) above, and (2) Post-Refunding Maximum Annual Aggregate Debt Service is no greater than Pre-Refunding Maximum Annual Aggregate Debt Service for the Debt Service Years set forth in clause (ii) above; and (vi) that if Refunding Subordinate Lien Indebtedness is being issued, Post-Refunding Maximum Annual Aggregate Debt Service is no greater than Pre-Refunding Maximum Annual Aggregate Debt Service for the Debt Service Years set forth in clause (ii) above;
+[p064_c0003] provided, however, if there are multiple liens of Senior Lien Indebtedness and/or Subordinate Lien Indebtedness Outstanding, the certificate shall also set forth that post-refunding Maximum Annual Debt Service for each lien will be less than pre-refunding Maximum Annual Debt Service of such lien.
+[p064_c0004] 4. The proceeds, including accrued interest, of the Refunding Senior Lien Obligations and Refunding Subordinate Lien Obligations of each such Series shall be applied simultaneously with the delivery of such Obligations.
+### [p064_c0005] ARTICLE III FORM OF OBLIGATIONS
+[p064_c0006] Section 301 Form of Senior Lien Obligations. Subject to the provisions of the Resolution and except as otherwise provided pursuant to a Supplemental Resolution, each Series of Senior Lien Obligations shall be issued as fully registered securities in substantially the form provided in Exhibit One appended hereto. Any Authorized Officer executing and delivering any such Senior Lien Obligations may make such changes in the form thereof as deemed necessary or convenient by such Authorized Officer, including changes to conform with (i) the terms of sale, (ii) the provisions of the related Supplemental Resolution, (iii) the requirements of the related Securities Depository, provider of a Credit Facility or Rating Agency, (iv) industry practice or (v) federal, State or City regulatory requirements, and the execution (whether manual or by
+[p064_c0007] _8_
+[p064_c0008] _4906-1183-2920.15_
+[p064_c0009] _Master Page # 64 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 65
+
+[p065_c0001] facsimile) and delivery of any such obligations shall be conclusive evidence of the approval of all terms thereof by such Authorized Officer.
+[p065_c0002] Section 302 Form of Subordinate Lien Obligations. Subject to the provisions of the Resolution and except as otherwise provided pursuant to a Supplemental Resolution, each Series of Subordinate Lien Obligations shall be issued as fully registered securities in substantially the form provided in Exhibit Two appended hereto. Any Authorized Officer executing and delivering any such Subordinate Lien Obligations may make such changes in the form thereof as deemed necessary or convenient by such Authorized Officer, including changes to conform with (i) the terms of sale, (ii) the provisions of the related Supplemental Resolution, (iii) the requirements of the related Securities Depository, provider of a Subordinate Lien Obligation Credit Facility or Rating Agency, (iv) industry practice or (v) federal, State or City regulatory requirements, and the execution (whether manual or by facsimile) and delivery of any such obligations shall be conclusive evidence of the approval of all terms thereof by such Authorized Officer.
+### [p065_c0003] ARTICLE IV REDEMPTION AT DEMAND OF THE STATE OR THE CITY
+[p065_c0004] Section 401 Redemption at Demand of the State or the City. Except as otherwise provided pursuant to a Supplemental Resolution, either the State or the City may, upon furnishing sufficient funds therefor, require the Issuer to redeem all or any portion of the Obligations as provided in the Issuer Act as in effect on the date any such Obligations were issued.
+### [p065_c0005] ARTICLE V PLEDGE; MAINTENANCE AND ESTABLISHMENT OF FUNDS AND ACCOUNTS AND APPLICATION THEREOF
+### [p065_c0006] Section 501 The Pledge Effected by the Resolution.
+[p065_c0007] 1. There are hereby pledged for the payment of the principal and Redemption Price of, and interest on, and Sinking Fund Installments for, the Senior Lien Obligations and, on a parity basis, the Senior Lien Parity Debt, in accordance with their terms and the provisions of the Resolution, subject only to the provisions of the Resolution permitting the application thereof for the purposes and on the terms and conditions set forth in the Resolution, all right, title and interest of the Issuer in the Senior Lien Obligations Trust Estate.
+[p065_c0008] 2. The pledge created by subsection 1 of this Section 501 shall in all respects secure on a Pari passu basis all of the Senior Lien Obligations and Senior Lien Parity Debt, except as otherwise permitted by or provided for in this Resolution and/or set forth in a Supplemental Resolution relating to the issuance of a Series of Senior Lien Obligations and/or Senior Lien Parity Debt that shall be secured on a basis that is junior and subordinate to the Senior Lien Obligations and Senior Lien Parity Debt and senior to Subordinate Lien Obligations and Subordinate Lien Parity Debt. Except as provided in the preceding sentence, nothing contained in the Resolution shall be deemed to confer on the Owners of any Senior Lien Obligations or Senior Lien Parity Debt any rights in the Senior Lien Obligations Trust Estate superior to the Owners of any other Senior Lien Obligations and the holders of any other Senior Lien Parity Debt. The Senior Lien
+[p065_c0009] _9_
+[p065_c0010] _4906-1183-2920.15_
+[p065_c0011] _Master Page # 65 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 66
+
+[p066_c0001] Obligations and Senior Lien Parity Debt are payable solely from Senior Lien Obligations Trust Estate.
+[p066_c0002] 3. The pledge created by subsection 1 of this Section 501 shall be valid and binding from and after the date of issuance and delivery of the first Senior Lien Obligations, and the Senior Lien Obligations Trust Estate shall immediately be subject to the lien of such pledge without any physical delivery thereof or further act, and the lien of such pledge shall be valid and binding as against all parties having claims of any kind in tort, contract or otherwise against the Issuer irrespective of whether such parties have notice thereof.
+[p066_c0003] 4. Subject to the provisions of subsections 1 and 10 of this Section 501, the Senior Lien Obligations Trust Estate is and shall be free and clear of any pledge, lien, charge or encumbrance thereon or with respect thereto prior to, or of equal rank with, the pledge created by the Resolution, and all corporate action on the part of the Issuer to that end has been duly and validly taken.
+[p066_c0004] 5. The Subordinate Lien Obligations and Subordinate Lien Parity Debt constitute Subordinate Lien Indebtedness and the rights of Subordinate Lien Obligations Owners and holders of Subordinate Lien Parity Debt to payment of principal of and interest on the Subordinate Lien Obligations and Subordinate Lien Parity Debt are subordinated to the rights of Owners of Senior Lien Obligations and Senior Lien Parity Debt to the extent and in the manner provided in this Article V. There are hereby pledged for the payment of the principal and Redemption Price of, and interest on, and Subordinate Lien Sinking Fund Installments for, the Subordinate Lien Obligations and, on a parity basis, the Subordinate Lien Parity Debt, in accordance with their terms and the provisions of the Resolution, subject only to the provisions of the Resolution permitting the application thereof for the purposes and on the terms and conditions set forth in the Resolution, all right, title and interest of the Issuer in the Subordinate Lien Obligations Trust Estate.
+[p066_c0005] 6. The Subordinate Lien Obligations and Subordinate Lien Parity Debt are payable solely from the Subordinate Lien Obligations Trust Estate which Subordinate Lien Obligations Trust Estate is subject, subordinate and junior to the Senior Lien Obligations Trust Estate with respect to payments to be made on account of Senior Lien Obligations and Senior Lien Parity Debt as set forth in paragraph 2 above.
+[p066_c0006] 7. The pledge created by the second sentence of subsection 5 of this Section 501 shall in all respects secure on a pari passu basis all of the Subordinate Lien Obligations and Subordinate Lien Parity Debt and, except as expressly so provided, nothing contained in the Resolution shall be deemed to confer on any Subordinate Lien Obligations Owners and the holders of any Subordinate Lien Parity Debt any rights in the Subordinate Lien Obligations Trust Estate superior or inferior to the Owners of any other Subordinate Lien Obligations and the holders of any other Subordinate Lien Parity Debt.
+[p066_c0007] 8. The pledge created by the second sentence of subsection 5 of this Section 501 shall be valid and binding from and after the date of issuance and delivery of the first Subordinate Lien Obligations, and the Subordinate Lien Obligations Trust Estate shall immediately be subject to the lien of such pledge without any physical delivery thereof or further act, and the lien of such pledge
+[p066_c0008] _10_
+[p066_c0009] _4906-1183-2920.15_
+[p066_c0010] _Master Page # 66 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 67
+
+[p067_c0001] shall be valid and binding as against all parties having claims of any kind in tort, contract or otherwise against the Issuer irrespective of whether such parties have notice thereof.
+[p067_c0002] 9. Subject to the provisions of subsections 1 and 10 of this Section 501, the Subordinate Lien Obligations Trust Estate is and shall be free and clear of any pledge, lien, charge or encumbrance thereon or with respect thereto prior to, or of equal rank with, the pledge created by the Resolution, and all corporate action on the part of the Issuer to that end has been duly and validly taken.
+[p067_c0003] 10. Nothing contained in this Section 501 shall be construed as limiting any authority granted to the Issuer elsewhere in the Resolution to issue or incur Senior Lien Obligation Anticipation Notes or Subordinate Lien Obligation Anticipation Notes or shall be deemed a limitation upon the authority of the Issuer to issue any other bonds, notes or other obligations under the Issuer Act secured by any income and funds other than the income and funds that are part of the Senior Lien Obligations Trust Estate or the Subordinate Lien Obligations Trust Estate, including Subordinated Indebtedness or Subordinated Contract Obligations. Subordinated Indebtedness or Subordinated Contract Obligations issued hereunder shall also be payable from amounts as shall from time to time be available for transfer to the Issuer that are authorized by law or by any resolution or agreement of a Related Entity permitting such transfer, in each case as determined and set forth in the Supplemental Resolution authorizing the issuance of such Subordinated Indebtedness or Subordinated Contract Obligations.
+[p067_c0004] 11. In accordance with Section A-203 of Annex A in connection with Senior Lien Obligation Anticipation Notes and Subordinate Lien Obligation Anticipation Notes, the proceeds and other amounts from Senior Lien Obligation Anticipation Notes renewals and Subordinate Lien Obligation Anticipation Notes renewals, respectively, and bonds or other obligations issued to refinance such Senior Lien Obligation Anticipation Notes and Subordinate Lien Obligation Anticipation Notes, respectively, may be pledged for the payment of the principal, premium, and interest on such Senior Lien Obligation Anticipation Notes and Subordinate Lien Obligation Anticipation Notes, respectively, and any such pledge of proceeds and other amounts related to such renewals and refinancing bonds or other obligations shall have priority over any other pledge created by the Resolution, including this Section 501.
+### [p067_c0005] Section 502 Establishment of Funds, Accounts and Subaccounts.
+- [p067_c0006] 1. The following Funds and Accounts are hereby established: (a) CRZ Pledged Net Tolls Revenue Fund, which shall be held and administered by the Issuer; (b) Senior Lien Obligations Proceeds Fund, in which there shall be established a Senior Lien Obligations Proceeds Account for each Series of Senior Lien Obligations issued hereunder, which shall be held and administered by the Issuer; (c) Subordinate Lien Obligations Proceeds Fund, in which there shall be established a Subordinate Lien Obligations Proceeds Account for each
+[p067_c0007] _11_
+[p067_c0008] _4906-1183-2920.15_
+[p067_c0009] _Master Page # 67 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 68
+
+- [p068_c0001] Series of Subordinate Lien Obligations issued hereunder, which shall be held and administered by the Issuer; (d) Senior Lien Debt Service Fund, in which there shall be established a Senior Lien Debt Service Account and a Senior Lien Debt Service Reserve Account, which shall be held and administered by the Senior Lien Trustee; (e) Subordinate Lien Debt Service Fund, in which there shall be established a Subordinate Lien Debt Service Account and a Subordinate Lien Debt Service Reserve Account, which shall be held and administered by the Subordinate Lien Trustee; (f) Reserve Maintenance Fund, which shall be held and administered by the Issuer; (g) Rebate Fund, which shall be held and administered by the Applicable Trustee; and (h) Excess Revenues Fund, which shall be held and administered by the Issuer.
+[p068_c0002] 2. The Issuer may establish a separate subaccount in the Senior Lien Debt Service Reserve Account or the Subordinate Lien Debt Service Reserve Account pursuant to a Supplemental Resolution in connection with the authorization and issuance of any one or more Series of Obligations and any Parity Debt for which a Debt Service Reserve Requirement has been established. Unless otherwise provided in the Supplemental Resolution authorizing such Obligations, any such subaccounts shall not secure Obligations other than the Obligations and any Parity Debt for which it is established pursuant to this Section 502.
+[p068_c0003] 3. Amounts held at any time by the Issuer, the Senior Lien Trustee or the Subordinate Lien Trustee in any of the Funds or Accounts established pursuant to this Section shall be held in trust as provided herein. Additional Funds, Accounts or Subaccounts may be established by the Issuer in its discretion pursuant to this Section upon the delivery of a certificate to the Senior Lien Trustee or Subordinate Lien Trustee, as applicable, or by Supplemental Resolution.
+[p068_c0004] 4. Except as otherwise specifically provided herein or in a Supplemental Resolution, in computing the amount in any Fund, Account or Subaccount, Authorized Investments or Permitted Debt Service Reserve Fund Investments, as applicable, purchased as an investment of moneys therein shall be valued at the current book value thereof or at the redemption price thereof, if then redeemable at the option of the holder, in either event inclusive of accrued interest.
+[p068_c0005] 5. Except as otherwise provided herein or in a Supplemental Resolution, all investment income earned on amounts on deposit in the Funds, Accounts or Subaccounts established under the Resolution shall remain on deposit in such Funds, Accounts or Subaccounts and applied in accordance with the provisions applicable to such Funds, Accounts or Subaccounts.
+### [p068_c0006] Section 503 CRZ Pledged Net Tolls Revenue Fund.
+[p068_c0007] _12_
+[p068_c0008] _4906-1183-2920.15_
+[p068_c0009] _Master Page # 68 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 69
+
+[p069_c0001] 1. Amounts deposited in the CRZ Pledged Net Tolls Revenue Fund shall consist of CRZ Pledged Net Toll Revenues. The Issuer shall provide for the deposit of all CRZ Pledged Net Toll Revenues into the CRZ Pledged Net Tolls Revenue Fund on or before the 25th day of the month following the month of receipt.
+[p069_c0002] 2. Amounts in the CRZ Pledged Net Tolls Revenue Fund shall be paid out, accumulated, transferred or withdrawn from time to time (but no less frequently than on or before the 25 th day of each calendar month) (each, a “ Deposit Day ”) for the following purposes and, as of any time, in the following order of priority:
+[p069_c0003] (a) to the Senior Lien Debt Service Account the amount, if any, required so that the amount on deposit in said Account shall, after taking into consideration any investment earnings credited to such Account and any other amounts deposited by the Issuer from other legally available sources (including amounts transferred or to be transferred from the Senior Lien Obligations Capitalized Interest Subaccount), equal the Senior Lien Debt Service Account Requirement;
+[p069_c0004] (b) to the Senior Lien Debt Service Reserve Account the amount, if any, necessary to restore the amount on deposit therein to the related Debt Service Reserve Requirement in accordance with the applicable Supplemental Resolution;
+[p069_c0005] (c) to the Subordinate Lien Debt Service Account, the amount, if any, required so that the amount on deposit in said Account shall, after taking into consideration any investment earnings credited to such Account and any other amounts deposited by the Issuer from other legally available sources (including amounts transferred or to be transferred from the Subordinate Lien Obligations Capitalized Interest Subaccount), equal the Subordinate Lien Debt Service Account Requirement;
+[p069_c0006] (d) to the Subordinate Lien Debt Service Reserve Account the amount, if any, necessary to restore the amount on deposit therein to the related Debt Service Reserve Requirement in accordance with the applicable Supplemental Resolution;
+[p069_c0007] (e) to another Person in accordance with any Supplemental Resolution or other authorizing document creating Obligation Anticipation Notes, Subordinated Indebtedness or Subordinated Contract Obligations the amount, if any, required for payment of or accrual for payment of principal of and interest on any Obligation Anticipation Notes, Subordinated Indebtedness or for payment of amounts due under any Subordinated Contract Obligation, including, in connection with any Credit Facility, any other amount as a Parity Reimbursement Obligation that is intended to be on parity therewith as permitted by Section A-202(4) and further including, in connection with any Qualified Swap, any other amount as a Parity Swap Obligation that is intended to be on parity therewith as permitted by Section A-202(6), excluding therefrom the amounts set forth in the last sentence of Section A-202(6);
+[p069_c0008] (f) to the Reserve Maintenance Fund, an amount, if any, after taking into account any transfers from amounts on deposit in the Excess Revenues Fund or other legally available sources (including monies in the Capital Lockbox Fund), necessary to
+[p069_c0009] _13_
+[p069_c0010] _4906-1183-2920.15_
+[p069_c0011] _Master Page # 69 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 70
+
+[p070_c0001] cause amounts on deposit therein on the day prior to the beginning of the next calendar year to be equal to the Reserve Maintenance Fund Requirement for such next calendar year;
+[p070_c0002] (g) To the Rebate Fund, the amount, if any, as shall be required to pay, or accrue for, any Rebate Requirement; and
+[p070_c0003] (h) after the transfers made in clauses (a) through (g) above, transfer all remaining moneys to the Excess Revenues Fund, which moneys shall be released from the lien of the Resolution.
+[p070_c0004] 3. Amounts in the CRZ Pledged Net Tolls Revenue Fund may in the discretion of the Issuer be invested in Authorized Investments as provided herein. Earnings on money and investments in the CRZ Pledged Net Tolls Revenue Fund shall be deposited in the Rebate Fund to the extent directed in writing by an Authorized Officer and, in the absence of such a direction, shall remain on deposit in the CRZ Pledged Net Tolls Revenue Fund. The Issuer may sell any such Authorized Investments at any time and the proceeds of such sale and of all payments of principal or interest received at maturity or upon redemption or otherwise of such Authorized Investments shall be deposited in the CRZ Pledged Net Tolls Revenue Fund.
+### [p070_c0005] Section 504 Senior Lien Obligations Proceeds Fund and Application Thereof.
+[p070_c0006] 1. There shall be established within the Senior Lien Obligations Proceeds Fund a separate account (the “ Senior Lien Obligations Proceeds Account ”) for each Series of Senior Lien Obligations and, within each such Account, if necessary, a separate Senior Lien Obligations COI Subaccount and a separate Senior Lien Obligations Capitalized Interest Subaccount. Additional Subaccounts may be established by certificate of an Authorized Officer within each such Senior Lien Obligations Proceeds Account.
+[p070_c0007] 2. The Issuer shall pay into the Senior Lien Obligations Proceeds Fund and each Senior Lien Obligations Proceeds Account, if any, and each Senior Lien Obligations COI Subaccount, if any, such amounts as shall be provided for by Supplemental Resolution or in the resolution authorizing Obligation Anticipation Notes. The portion of any such amount determined by Supplemental Resolution to be used for the payment of Costs of Issuance shall be paid into and disbursed from the related Senior Lien Obligations COI Subaccount. Excess amounts in any Senior Lien Obligations COI Subaccount remaining more than five (5) months after the date of issuance of the respective issue of Senior Lien Obligations shall be transferred to the Senior Lien Debt Service Account and allocated to the next payment of interest on the respective issue of Senior Lien Obligations unless the Issuer, in consultation with bond counsel, determines that such amounts may be transferred to the related Senior Lien Obligations Proceeds Account and applied for an Authorized Purpose set forth in the Supplemental Resolution with respect to such Senior Lien Obligations.
+[p070_c0008] 3. The Trustee shall deposit into the Senior Lien Obligations Capitalized Interest Subaccount the amounts required to be so deposited pursuant to the provisions of the Supplemental Resolution or in the resolution authorizing Obligation Anticipation Notes to pay the capitalized cost of interest on Obligations or Obligation Anticipation Notes. Excess amounts in any Senior
+[p070_c0009] _14_
+[p070_c0010] _4906-1183-2920.15_
+[p070_c0011] _Master Page # 70 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 71
+
+[p071_c0001] Lien Obligations Capitalized Interest Subaccount shall be transferred by the Issuer to the Senior Lien Debt Service Account and applied to the payment of interest on the related Senior Lien Obligations.
+[p071_c0002] 4. The Trustee shall pay from the Senior Lien Obligations Capitalized Interest Subaccount to the Paying Agent, on or before the date or dates on which interest on Senior Lien Obligations becomes due, an amount equal to the interest due and payable on such Senior Lien Obligations or, if there shall not be credited to the Senior Lien Obligations Capitalized Interest Subaccount monies in an amount equal to the interest next due and payable, all monies then on deposit in the Senior Lien Obligations Capitalized Interest Subaccount.
+[p071_c0003] 5. Unless otherwise provided for in a Supplemental Resolution or in the resolution authorizing Senior Lien Obligation Anticipation Notes, amounts in each Senior Lien Obligations Proceeds Account and each Subaccount therein shall be applied for a Senior Lien Authorized Purpose in the manner and upon such conditions, if any, as the Issuer may provide in such Supplemental Resolution or in the resolution authorizing Senior Lien Obligation Anticipation Notes; provided, however, that, subject to any priority for Senior Lien Obligation Anticipation Notes, if on any Interest Payment Date or Principal Payment Date the amounts in the Senior Lien Debt Service Account shall be less than Debt Service payable on such date, the Issuer shall apply amounts from the Senior Lien Obligations Proceeds Fund to the extent necessary to make up the deficiency; provided, further, however that if the amounts to be applied to make up any such deficiency are proceeds of Tax-Exempt Senior Lien Obligations, such amounts shall not be so applied unless there shall be filed with the Senior Lien Trustee and the Issuer an Opinion of Bond Counsel to the effect that such action will not adversely affect the exclusion of interest on any Series of Tax-Exempt Senior Lien Obligations.
+[p071_c0004] 6. Amounts in each Senior Lien Obligations Proceeds Account and each Subaccount therein shall, at the direction of the Issuer, be invested in Authorized Investments. The Issuer may direct the Trustee to sell any such Authorized Investments at any time and the proceeds of such sale and of all payments of principal or interest received at maturity or upon redemption or otherwise of such Authorized Investments shall be deposited either in the Rebate Fund or the Account or Subaccount from which the investment was made, as determined by the Issuer.
+### [p071_c0005] Section 505 Subordinate Lien Obligations Proceeds Fund and Application Thereof
+[p071_c0006] 1. There shall be established within the Subordinate Lien Obligations Proceeds Fund a separate account (the “ Subordinate Lien Obligations Proceeds Account ”) for each Series of Subordinate Lien Obligations and, within each such Account, if necessary, a separate Subordinate Lien Obligations COI Subaccount and a separate Subordinate Lien Obligations Capitalized Interest Subaccount. Additional Subaccounts may be established by certificate of an Authorized Officer within each such Subordinate Lien Obligations Proceeds Account.
+[p071_c0007] 2. The Issuer shall pay into the Subordinate Lien Obligations Proceeds Fund and each Subordinate Lien Obligations Proceeds Account, if any, and each Subordinate Lien Obligations COI Subaccount, if any, such amounts as shall be provided for by Supplemental Resolution or in the resolution authorizing Obligation Anticipation Notes. The portion of any such amount determined by Supplemental Resolution to be used for the payment of Costs of Issuance shall be
+[p071_c0008] _15_
+[p071_c0009] _4906-1183-2920.15_
+[p071_c0010] _Master Page # 71 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 72
+
+[p072_c0001] paid into and disbursed from the related Subordinate Lien Obligations COI Subaccount. Excess amounts in any Subordinate Lien Obligations COI Subaccount remaining more than five (5) months after the date of issuance of the respective issue of Subordinate Lien Obligations shall be transferred to the Subordinate Lien Debt Service Account and allocated to the next payment of interest on the respective issue of Subordinate Lien Obligations unless the Issuer, in consultation with bond counsel, determines that such amounts may be transferred to the related Subordinate Lien Obligations Proceeds Account and applied for an Authorized Purpose set forth in the Supplemental Resolution with respect to such Subordinate Lien Obligations.
+[p072_c0002] 3. The Trustee shall deposit into the Subordinate Lien Obligations Capitalized Interest Subaccount the amounts required to be so deposited pursuant to the provisions of the Supplemental Resolution or in the resolution authorizing Obligation Anticipation Notes to pay the capitalized cost of interest on Obligations or Obligation Anticipation Notes. Excess amounts in any Subordinate Lien Obligations Capitalized Interest Subaccount shall be transferred by the Issuer to the Subordinate Lien Debt Service Account and applied to the payment of interest on the related Subordinate Lien Obligations.
+[p072_c0003] 4. The Trustee shall pay from the Subordinate Lien Obligations Capitalized Interest Subaccount to the Paying Agent, on or before the date or dates on which interest on Subordinate Lien Obligations becomes due, an amount equal to the interest due and payable on such Subordinate Lien Obligations or, if there shall not be credited to the Subordinate Lien Obligations Capitalized Interest Subaccount monies in an amount equal to the interest next due and payable, all monies then on deposit in the Subordinate Lien Obligations Capitalized Interest Subaccount.
+[p072_c0004] 5. Unless otherwise provided for in a Supplemental Resolution or in the resolution authorizing Subordinate Lien Obligation Anticipation Notes, amounts in each Subordinate Lien Obligations Proceeds Account and each Subaccount therein shall be applied for a Subordinate Lien Authorized Purpose in the manner and upon such conditions, if any, as the Issuer may provide in such Supplemental Resolution or in the resolution authorizing Subordinate Lien Obligation Anticipation Notes; provided, however, that, subject to any priority for Subordinate Lien Obligation Anticipation Notes, if on any Interest Payment Date or Principal Payment Date the amounts in the Subordinate Lien Debt Service Account shall be less than Debt Service payable on such date, the Issuer shall apply amounts from the Subordinate Lien Obligations Proceeds Fund to the extent necessary to make up the deficiency; provided, further, however that if the amounts to be applied to make up any such deficiency are proceeds of Tax-Exempt Subordinate Lien Obligations, such amounts shall not be so applied unless there shall be filed with the Subordinate Lien Trustee and the Issuer an Opinion of Bond Counsel to the effect that such action will not adversely affect the exclusion of interest on any Series of Tax-Exempt Subordinate Lien Obligations.
+[p072_c0005] 6. Amounts in each Subordinate Lien Obligations Proceeds Account and each Subaccount therein shall, at the direction of the Issuer, be invested in Authorized Investments. The Issuer may direct the Trustee to sell any such Authorized Investments at any time and the proceeds of such sale and of all payments of principal or interest received at maturity or upon redemption or otherwise of such Authorized Investments shall be deposited in the Rebate Fund or the Account or Subaccount from which the investment was made, as determined by the Issuer.
+[p072_c0006] _16_
+[p072_c0007] _4906-1183-2920.15_
+[p072_c0008] _Master Page # 72 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 73
+
+### [p073_c0001] Section 506 Senior Lien Debt Service Fund - Senior Lien Debt Service Account.
+[p073_c0002] 1. The Senior Lien Trustee shall deposit, upon receipt thereof, all amounts transferred to the Senior Lien Trustee for deposit in the Senior Lien Debt Service Account in accordance with the provisions of the Resolution or any Supplemental Resolution.
+[p073_c0003] 2. The Senior Lien Trustee shall pay out of the Senior Lien Debt Service Account to the respective Paying Agents (i) on or before each Interest Payment Date for any of the Senior Lien Obligations and any related Senior Lien Parity Debt, the amount required for the interest payable on such date; (ii) on or before each Principal Payment Date, the amount required for the Principal Installment (including the portion thereof payable in respect of Senior Lien Parity Debt) payable on such due date; and (iii) on or before any redemption date for the Senior Lien Obligations or Senior Lien Parity Debt which occurs on any date other than an Interest Payment Date, the amount required for the payment of interest on the Senior Lien Obligations or Senior Lien Parity Debt then to be redeemed. Such amounts shall be applied by the Paying Agents to such payments on and after the due dates thereof.
+[p073_c0004] 3. If, on the Business Day preceding the date on which interest on or principal of Senior Lien Obligations or Senior Lien Parity Debt is due and payable, the amount in the applicable subaccount of the Senior Lien Debt Service Account is less than the amount required to be in such Account pursuant to paragraph (2) of this Section 506, the Senior Lien Trustee shall, subject to the provisions of paragraph (2) of Section 507, transfer amounts from the applicable subaccount of the Senior Lien Debt Service Reserve Account to the Senior Lien Debt Service Account to the extent necessary to cure such deficiency.
+[p073_c0005] 4. If on any date the sum of the amounts on deposit in the Senior Lien Debt Service Account exceeds the Senior Lien Debt Service Account Requirement calculated as of such date, unless needed to satisfy the Rebate Requirement and the Senior Lien Trustee is directed by an Authorized Officer of the Issuer to transfer such moneys to the Rebate Fund, the Senior Lien Trustee shall, upon direction of the Issuer, first apply any or all of such excess to cure or reduce any deficiency then existing in any Fund or Account or subaccount under the Resolution relating to the Senior Lien Obligations or the Senior Lien Parity Debt (including the Senior Lien Debt Service Reserve Account) and then, shall transfer or apply any such excess amounts as needed to cure any deficiencies in any Fund or Account in the order of priority set forth in Section 503.2 (a)-(g) and then transfer any and all of the remaining amount of such excess to the Excess Revenues Fund.
+[p073_c0006] 5. In the event of the refunding (including in connection with any payment at maturity, redemption, purchase, tender or exchange) of any Senior Lien Obligations, the Senior Lien Trustee shall, upon the direction of the Issuer, (a) withdraw from the Senior Lien Debt Service Account all or any portion of the amounts accumulated therein with respect to the Debt Service on the Obligations being refunded and deposit such amounts, free and clear of any lien, pledge or claim of the Resolution, with itself as Trustee or with an escrow agent to be held in trust solely for the purchase, exchange or payment of the principal or Redemption Price, if applicable, of and interest on the Obligations being refunded, (b) apply such amounts to pay the Costs of Issuance of the Refunding Senior Lien Obligations, or (c) deposit or transfer to the Senior Lien Trustee to deposit such amounts in any Fund or Account established hereunder; provided, however, that no such
+[p073_c0007] _17_
+[p073_c0008] _4906-1183-2920.15_
+[p073_c0009] _Master Page # 73 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 74
+
+[p074_c0001] withdrawal or deposit shall be made unless (i) upon such refunding, the Obligations being refunded shall be deemed to have been paid within the meaning and with the effect provided in Section A-801 of Annex A , and (ii) at the time of and giving effect to such withdrawal and refunding, there shall exist no deficiency in any Fund or Account established under the Resolution.
+[p074_c0002] 6. Amounts in the Senior Lien Debt Service Account shall, at the direction of the Issuer, be invested in Authorized Investments. The Issuer may direct the Senior Lien Trustee to sell any such Authorized Investments at any time and the proceeds of such sale and of all payments of principal or interest received at maturity or upon redemption or otherwise of such Authorized Investments shall be deposited in the Senior Lien Debt Service Account. Earnings on money and investments in the Senior Lien Debt Service Account shall be retained in the Senior Lien Debt Service Account if the amount then on deposit in the Senior Lien Debt Service Account is less than the Senior Lien Debt Service Account Requirement; otherwise such earnings shall be treated according to Section 506.4.
+### [p074_c0003] Section 507 Senior Lien Debt Service Fund - Senior Lien Debt Service Reserve Account.
+[p074_c0004] 1. The Senior Lien Trustee shall deposit, upon receipt thereof, all amounts required to be deposited in the Senior Lien Debt Service Reserve Account (or the appropriate subaccount therein) pursuant to the provisions of the Resolution or any Supplemental Resolution authorizing the issuance of any Series of Senior Lien Obligations or Senior Lien Parity Debt. Moneys in the Senior Lien Debt Service Reserve Account shall be used solely to make up deficiencies in the Senior Lien Debt Service Account (or any subaccount established therein).
+[p074_c0005] 2. Upon the issuance of each Series of Senior Lien Obligations for which a Debt Service Reserve Requirement has been established, unless otherwise provided in the Supplemental Resolution authorizing such Senior Lien Obligations, the Issuer shall establish a separate subaccount in the Debt Service Reserve Account for such Series and shall deposit into such separate subaccount that portion of the Debt Service Reserve Requirement, if any, attributable to such Series. Each such subaccount established in the Debt Service Reserve Account shall be solely for the benefit of the Owners of the Senior Lien Obligations of the Series and Senior Lien Parity Debt for which such subaccount was established and the Owners of the Senior Lien Obligations of such Series and Senior Lien Parity Debt shall have no rights to, or claim on, any amounts on deposit in the Debt Service Reserve Account other than the amounts on deposit in such subaccount.
+[p074_c0006] 3. If, on the Business Day preceding the date on which interest on or principal of Senior Lien Obligations or Senior Lien Parity Debt is due and payable, the amount in the applicable subaccount of the Senior Lien Debt Service Account is less than the amount required to be in such Account pursuant to paragraph (2) of Section 506, the Senior Lien Trustee shall, subject to the provisions of paragraph (2) of this Section 507, transfer amounts from the applicable subaccount of the Senior Lien Debt Service Reserve Account to the Senior Lien Debt Service Account to the extent necessary to cure such deficiency.
+[p074_c0007] 4. Investments in the Senior Lien Debt Service Reserve Account shall be valued by the Issuer as provided in paragraph (4) of Section 502 following the payment of principal of and interest on Senior Lien Obligations and Senior Lien Parity Debt from the Senior Lien Debt Service
+[p074_c0008] _18_
+[p074_c0009] _4906-1183-2920.15_
+[p074_c0010] _Master Page # 74 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 75
+
+[p075_c0001] Account on the scheduled principal payment dates of each Debt Service Year, or, if such date does not fall on a Business Day, on the first Business Day thereafter. Immediately after each such valuation by the Issuer, at the direction of the Issuer, the Senior Lien Trustee shall transfer any amounts in excess of the Debt Service Reserve Requirement in the Senior Lien Debt Service Reserve Account (or any subaccount established therein) to the Senior Lien Debt Service Account. A failure of the Issuer to perform such valuation in accordance with this paragraph shall not be deemed a Senior Lien Obligations Event of Default under the Resolution.
+[p075_c0002] 5. In the event of the refunding (including in connection with any payment at maturity, redemption, purchase, tender or exchange) of any Senior Lien Obligations, the Senior Lien Trustee may withdraw from the related subaccount in the Senior Lien Debt Service Reserve Account all or any portion of the amounts accumulated therein with respect to the Debt Service on the Senior Lien Obligations being refunded and (a) deposit such amounts, free and clear of any lien, pledge or claim of the Resolution, with itself or an escrow agent to be held in trust solely for the purchase, exchange or payment of the principal or Redemption Price, if applicable, of and interest on the Senior Lien Obligations being refunded, (b) apply such amounts to pay the Costs of Issuance of the Refunding Senior Lien Obligations, or (c) deposit such amounts in any Fund or Account established hereunder; provided, however, that no such withdrawal or deposit shall be made unless (i) upon such refunding, the Senior Lien Obligations being refunded shall be deemed to have been paid within the meaning and with the effect provided in Section A-801 of Annex A and (ii) at the time of and giving effect to such withdrawal and refunding, the amount remaining in the related subaccount in the Senior Lien Debt Service Reserve Account after such withdrawal shall not be less than the Senior Lien Debt Service Reserve Account Requirement.
+[p075_c0003] 6. Amounts in the Senior Lien Debt Service Reserve Account shall, at the direction of the Issuer, be invested in Permitted Debt Service Reserve Account Investments. The Issuer may direct the Senior Lien Trustee to sell any such Permitted Debt Service Reserve Account Investments at any time and the proceeds of such sale and of all payments of principal or interest received at maturity or upon redemption or otherwise of such Permitted Debt Service Reserve Account Investments shall be deposited in the Senior Lien Debt Service Reserve Account. Unless needed to satisfy the Rebate Requirement and the Senior Lien Trustee is directed by an Authorized Officer of the Issuer to transfer such moneys to the Rebate Fund, earnings on money and investments in the Senior Lien Debt Service Reserve Account shall be retained in the Senior Lien Debt Service Reserve Account if the amount then on deposit in the Senior Lien Debt Service Reserve Account is less than the Debt Service Reserve Account Requirement; otherwise such earnings shall be treated according to Section 507.4.
+[p075_c0004] 7. Regardless of the provisions of Section 502 hereof, unless otherwise provided by Supplemental Resolution, in the event that at any time the amount on deposit in any subaccount in the Senior Lien Debt Service Reserve Account shall be less than the Debt Service Reserve Requirement as a result of any withdrawal from said subaccount, the Issuer shall restore the amount on deposit in said subaccount to the Debt Service Reserve Requirement in twenty-four (24) substantially equal monthly installments commencing on the later of (a) the start of the next calendar year and (b) 180 days of such withdrawal.
+### [p075_c0005] Section 508 Subordinate Lien Debt Service Fund - Subordinate Lien Debt Service Account.
+[p075_c0006] _19_
+[p075_c0007] _4906-1183-2920.15_
+[p075_c0008] _Master Page # 75 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 76
+
+[p076_c0001] 1. The Subordinate Lien Trustee shall deposit, upon receipt thereof, all amounts transferred to the Subordinate Lien Trustee for deposit in the Subordinate Lien Debt Service Account in accordance with the provisions of the Resolution or any Supplemental Resolution.
+[p076_c0002] 2. The Subordinate Lien Trustee shall pay out of the Subordinate Lien Debt Service Account to the respective Paying Agents (i) on or before each Interest Payment Date for any of the Subordinate Lien Obligations and any related Subordinate Lien Parity Debt, the amount required for the interest payable on such date; (ii) on or before each Subordinate Lien Principal Payment Date, the amount required for the Subordinate Lien Principal Installment (including the portion thereof payable in respect of Subordinate Lien Parity Debt) payable on such due date; and (iii) on or before any redemption date for the Subordinate Lien Obligations or Subordinate Lien Parity Debt which occurs on any Interest Payment Date, the amount required for the payment of interest on the Subordinate Lien Obligations or Subordinate Lien Parity Debt then to be redeemed. Such amounts shall be applied by the Paying Agents to such payments on and after the due dates thereof.
+[p076_c0003] 3. If, on the Business Day preceding the date on which interest on or principal of Subordinate Lien Obligations or Subordinate Lien Parity Debt is due and payable, the amount in the applicable subaccount of the Subordinate Lien Debt Service Account is less than the amount required to be in such Account pursuant to paragraph (2) of this Section 508, the Subordinate Lien Trustee shall, subject to the provisions of paragraph (2) of Section 509, transfer amounts from the applicable subaccount of the Subordinate Lien Debt Service Reserve Account to the Subordinate Lien Debt Service Account to the extent necessary to cure such deficiency.
+[p076_c0004] 4. If on any date the sum of the amounts on deposit in the Subordinate Lien Debt Service Account exceeds the Subordinate Lien Debt Service Account Requirement calculated as of such date, unless needed to satisfy the Rebate Requirement and the Subordinate Lien Trustee is directed by an Authorized Officer of the Issuer to transfer such moneys to the Rebate Fund, the Subordinate Lien Trustee shall, upon direction of the Issuer, first apply any or all of such excess to cure or reduce any deficiency then existing in any Fund or Account or subaccount under the Resolution relating to the Subordinate Lien Obligations or the Subordinate Lien Parity Debt (including the Subordinate Lien Debt Service Reserve Account) and then, shall transfer or apply any such excess amounts as needed to cure any deficiencies in any Fund or Account in the order of priority set forth in Section 503.2 and then transfer any and all of the remaining amount of such excess to the Excess Revenues Fund.
+[p076_c0005] 5. In the event of the refunding (including in connection with any payment at maturity, redemption, purchase, tender or exchange) of any Subordinate Lien Obligations, the Subordinate Lien Trustee shall, upon the direction of the Issuer, (a) withdraw from the Subordinate Lien Debt Service Account all or any portion of the amounts accumulated therein with respect to the Debt Service on the Subordinate Lien Obligations being refunded and deposit such amounts, free and clear of any lien, pledge or claim of this Resolution, with itself as Subordinate Lien Trustee or with an escrow agent to be held in trust solely for the purchase, exchange or payment of the principal or Redemption Price, if applicable, of and interest on the Subordinate Lien Obligations being refunded, (b) apply such amounts to pay the Costs of Issuance of the Refunding Subordinate Lien Obligations, or (c) deposit or transfer to the Subordinate Lien Trustee to deposit such amounts in any Fund or Account established hereunder; provided, however, that no such withdrawal or deposit shall be made unless (i) upon such refunding, the Subordinate Lien Obligations being refunded
+[p076_c0006] _20_
+[p076_c0007] _4906-1183-2920.15_
+[p076_c0008] _Master Page # 76 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 77
+
+[p077_c0001] shall be deemed to have been paid within the meaning and with the effect provided in Section A-801 of Annex A , and (ii) at the time of and giving effect to such withdrawal and refunding, there shall exist no deficiency in any Fund or Account established under the Resolution.
+[p077_c0002] 6. The Issuer shall have the right to covenant with Persons to whom Subordinate Lien Obligations and Subordinate Lien Parity Debt run and with the Subordinate Lien Owners or holders from time to time of Subordinate Lien Obligations and Subordinate Lien Parity Debt in order to add to the conditions, limitations and restrictions under which any Additional Senior Lien Obligations or Refunding Subordinate Lien Obligations may be issued, or Subordinate Lien Parity Debt may be incurred; provided, however, that the Supplemental Resolution or indenture or other agreement providing for the issuance of such Subordinate Lien Obligations and Subordinate Lien Parity Debt or the incurrence of such Subordinate Lien Obligations and Subordinate Lien Parity Debt shall not permit the holders of such obligations to declare the same, nor to instruct such holders' trustee to declare the same, to be immediately due and payable.
+[p077_c0003] 7. Amounts in the Subordinate Lien Debt Service Account shall, at the direction of the Issuer, be invested in Authorized Investments. The Issuer may direct the Subordinate Lien Trustee to sell any such Authorized Investments at any time and the proceeds of such sale and of all payments of principal or interest received at maturity or upon redemption or otherwise of such Authorized Investments shall be deposited in the Subordinate Debt Service Account. Earnings on money and investments in the Subordinate Lien Debt Service Account shall be retained in the Subordinate Lien Debt Service Account if the amount then on deposit in the Subordinate Lien Debt Service Account is less than the Subordinate Lien Debt Service Account Requirement; otherwise such earnings shall be treated according to Section 508.4.
+### [p077_c0004] Section 509 Subordinate Lien Debt Service Fund - Subordinate Lien Debt Service Reserve Account.
+[p077_c0005] 1. The Subordinate Lien Trustee shall deposit, upon receipt thereof, all amounts required to be deposited in the Subordinate Lien Debt Service Reserve Account (or the appropriate subaccount therein) pursuant to the provisions of the Resolution or any Supplemental Resolution authorizing the issuance of any Series of Subordinate Lien Obligations or Subordinate Lien Parity Debt. Moneys in the Subordinate Lien Debt Service Reserve Account shall be used solely to make up deficiencies in the Subordinate Lien Debt Service Account (or any subaccount established therein).
+[p077_c0006] 2. Upon the issuance of each Series of Subordinate Lien Obligations for which a Debt Service Reserve Requirement has been established, unless otherwise provided in the Supplemental Resolution authorizing such Subordinate Lien Obligations, the Issuer shall establish a separate subaccount in the Debt Service Reserve Account for such Series and shall deposit into such separate subaccount that portion of the Debt Service Reserve Requirement, if any, attributable to such Series. Each such subaccount established in the Debt Service Reserve Account shall be solely for the benefit of the Owners of the Subordinate Lien Obligations of the Series and Subordinate Lien Parity Debt for which such subaccount was established and the Owners of the Subordinate Lien Obligations of such Series and Subordinate Lien Parity Debt shall have no rights to, or claim on, any amounts on deposit in the Subordinate Lien Debt Service Reserve Account other than the amounts on deposit in such subaccount.
+[p077_c0007] _21_
+[p077_c0008] _4906-1183-2920.15_
+[p077_c0009] _Master Page # 77 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 78
+
+[p078_c0001] 3. If, on the Business Day preceding the date on which interest on or principal of Subordinate Lien Obligations or Subordinate Lien Parity Debt is due and payable, the amount in the applicable subaccount of the Subordinate Lien Debt Service Account is less than the amount required to be in such Account pursuant to paragraph (2) of Section 508, the Subordinate Lien Trustee shall, subject to the provisions of paragraph (2) of this Section 509, transfer amounts from the applicable subaccount Subordinate Lien Debt Service Reserve Account to the Subordinate Lien Debt Service Account to the extent necessary to cure such deficiency.
+[p078_c0002] 4. Investments in the Subordinate Lien Debt Service Reserve Account shall be valued by the Issuer as provided in paragraph (4) of Section 502 following the payment of principal of and interest on Subordinate Lien Obligations and Subordinate Lien Parity Debt from the Subordinate Lien Debt Service Account on the scheduled principal payment dates of each Debt Service Year, or, if such date does not fall on a Business Day, on the first Business Day thereafter. Immediately after each such valuation by the Issuer, at the direction of the Issuer, the Subordinate Lien Trustee shall transfer any amounts in excess of the Debt Service Reserve Requirement in the Subordinate Lien Debt Service Reserve Account (or any subaccount established therein) to the Subordinate Lien Debt Service Account. A failure of the Issuer to perform such valuation in accordance with this paragraph shall not be deemed a Subordinate Lien Obligations Event of Default under the Resolution.
+[p078_c0003] 5. In the event of the refunding (including in connection with any payment at maturity, redemption, purchase, tender or exchange) of any Subordinate Lien Obligations, the Subordinate Lien Trustee may withdraw from the related subaccount in the Subordinate Lien Debt Service Reserve Account all or any portion of the amounts accumulated therein with respect to the Debt Service on the Subordinate Lien Obligations being refunded and (a) deposit such amounts, free and clear of any lien, pledge or claim of the Resolution, with itself or an escrow agent to be held in trust solely for the purchase, exchange or payment of the principal or Redemption Price, if applicable, of and interest on the Subordinate Lien Obligations being refunded, (b) apply such amounts to pay the Costs of Issuance of the Refunding Subordinate Lien Obligations, or (c) deposit such amounts in any Fund or Account established hereunder; provided, however, that no such withdrawal or deposit shall be made unless (i) upon such refunding, the Subordinate Lien Obligations being refunded shall be deemed to have been paid within the meaning and with the effect provided in Section A-801 of Annex A and (ii) at the time of and giving effect to such withdrawal and refunding, the amount remaining in the related subaccount in the Subordinate Lien Debt Service Reserve Account after such withdrawal shall not be less than the Debt Service Reserve Account Requirement.
+[p078_c0004] 6. Amounts in the Subordinate Lien Debt Service Reserve Account shall, at the direction of the Issuer, be invested in Permitted Debt Service Reserve Account Investments. The Issuer may direct the Subordinate Lien Trustee to sell any such Permitted Debt Service Reserve Account Investments at any time and the proceeds of such sale and of all payments of principal or interest received at maturity or upon redemption or otherwise of such Permitted Debt Service Reserve Account Investments shall be deposited in the Subordinate Lien Debt Service Reserve Account. Unless needed to satisfy the Rebate Requirement and the Subordinate Lien Trustee is directed by an Authorized Officer of the Issuer to transfer such moneys to the Rebate Fund, earnings on money and investments in the Subordinate Lien Debt Service Reserve Account shall be retained in the Subordinate Lien Debt Service Reserve Account if the amount then on deposit
+[p078_c0005] _22_
+[p078_c0006] _4906-1183-2920.15_
+[p078_c0007] _Master Page # 78 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 79
+
+[p079_c0001] in the Subordinate Lien Debt Service Reserve Account is less than the Debt Service Reserve Account Requirement; otherwise such earnings shall be treated according to Section 509.4.
+[p079_c0002] 7. Regardless of the provisions of Section 502 hereof, unless otherwise provided by Supplemental Resolution, in the event that at any time the amount on deposit in any subaccount in the Subordinate Lien Debt Service Reserve Account, shall be less than the Debt Service Reserve Requirement as a result of any withdrawal from said subaccount, the Issuer shall restore the amount on deposit in said subaccount to the Debt Service Reserve Requirement in twenty-four (24) substantially equal monthly installments commencing on the later of (a) the start of the next calendar year and (b) 180 days of such withdrawal.
+### [p079_c0003] Section 510 Reserve Maintenance Fund.
+[p079_c0004] 1. Except as hereinafter provided in this Section 510, moneys held for the credit of the Reserve Maintenance Fund shall be used only for the purpose of paying the cost of the following: (i) unusual or extraordinary maintenance or repairs, maintenance or repairs not recurring annually, and renewals and replacements, including major items of equipment, in each case necessary for the operation of the CRZ Tolling Program, (ii) repairs or replacements to the CRZ Tolling Infrastructure resulting from an emergency caused by some extraordinary occurrence, so characterized by a certificate signed by the Issuer, approved by the Independent Engineer and filed with the Trustee stating that insurance proceeds, if any, available therefor are either not intended to be spent for such purposes or are insufficient to meet such emergency, (iii) premiums on insurance required by or in connection with the maintenance, repairs, renewals, replacements and improvements required by the foregoing clauses (i) and (ii) related to the CRZ Tolling Infrastructure, and (iv) engineering expenses incurred under the provisions of this Section.
+[p079_c0005] 2. It is the intention of the Issuer that there shall be on deposit in the Reserve Maintenance Fund on the last day of each calendar year an amount at least equal to the Reserve Maintenance Fund Requirement for the next calendar year. If on any date the sum of the amounts on deposit in the Senior Lien Debt Service Account is insufficient for the payment of interest and principal then due on Senior Lien Obligations, the Issuer shall direct the Trustee to transfer the amount of the shortfall from the Reserve Maintenance Fund to satisfy such insufficiency. In the event that, as of the last day of the calendar year, the amount on deposit in the Reserve Maintenance Fund is less than the Reserve Maintenance Fund Requirement for the next calendar year, the Issuer shall direct the Trustee to transfer the amount of the shortfall from the Excess Revenues Fund to satisfy such transfer.
+[p079_c0006] 3. Unless as otherwise provided in a Supplemental Resolution, upon the receipt of a written statement of the Issuer that the amount on deposit in the Reserve Maintenance Fund is in excess of the Reserve Maintenance Fund Requirement, together with a certificate executed by the Independent Engineer confirming the Issuer's statement, the Issuer may transfer the amount of such excess from the Reserve Maintenance and apply such amount as needed to cure any deficiencies in any Fund or Account in the order of priority set forth in Section 503.2 and then transfer any and all of the remaining amount of such excess to the Excess Revenues Fund.
+[p079_c0007] 4. Amounts in the Reserve Maintenance Fund shall be invested in Authorized Investments. The Issuer may sell any such Authorized Investments at any time and the proceeds
+[p079_c0008] _23_
+[p079_c0009] _4906-1183-2920.15_
+[p079_c0010] _Master Page # 79 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 80
+
+[p080_c0001] of such sale and of all payments of principal or interest received at maturity or upon redemption or otherwise of such Authorized Investments shall be deposited in the Reserve Maintenance Fund. Unless needed to satisfy the Rebate Requirement, earnings on money and investments in the Reserve Maintenance Fund shall be retained in the Reserve Maintenance Fund if the amount then on deposit in the Reserve Maintenance Fund is less than the Reserve Maintenance Fund Requirement.
+### [p080_c0002] Section 511 Rebate Fund.
+[p080_c0003] 1. The Rebate Fund shall be maintained by the Applicable Trustee as a fund separate from any other fund established and maintained under the Resolution. Within the Rebate Fund, the Applicable Trustee shall maintain such accounts or subaccounts as shall be required by the Issuer in order to comply with the terms and requirements of the Tax Certificate. All money at any time deposited in the Rebate Fund shall be held by the Applicable Trustee in trust, to the extent required to satisfy the Rebate Requirement, for payment to the Treasury Department of the United States of America. The Issuer or the Owner of any Obligations or Parity Debt shall not have any rights in or claim to such money. All amounts deposited into or on deposit in the Rebate Fund shall be governed by this Section 511 and the Tax Certificate (which is incorporated herein by reference). Amounts in the Rebate Fund are not pledged to Owners and the Rebate Fund and amounts on deposit therein are not part of the Obligations Trust Estate.
+[p080_c0004] 2. The Applicable Trustee shall be deemed conclusively to have complied with this Section 511 and the Tax Certificate if it follows the directions of an Authorized Officer, including supplying all necessary written information in the manner provided in the Tax Certificate, and shall have no liability or responsibility for compliance (except as specifically set forth herein or in the Tax Certificate) or to enforce compliance by the Issuer with the terms of the Tax Certificate.
+[p080_c0005] 3. Upon the written direction of the Issuer, the Applicable Trustee shall deposit in the Rebate Fund moneys received from the Issuer or transferred from Funds and Accounts under the Resolutions at such times and in such amounts that will be sufficient to meet the Rebate Requirement. The Issuer may authorize the Applicable Trustee to transfer to the Rebate Fund moneys from the Funds and Accounts hereunder to the extent not needed in such Fund and Account for the purposes of such Fund or Account. In the event that the amount on deposit in the Rebate Fund exceeds the Rebate Requirement, the Applicable Trustee, upon the receipt of written instructions from the Authority after consultation with Bond Counsel, shall withdraw such excess amount and deposit it in any Fund or Account in accordance with such instructions.
+[p080_c0006] 4. Computations of the Rebate Requirement shall be furnished by or on behalf of the Issuer in accordance with the Tax Certificate. The Applicable Trustee shall have no obligation to calculate the Rebate Requirement or to rebate any amounts required to be rebated pursuant to this Section 511, other than from moneys held in the Funds and Accounts and subaccounts created under the Resolution as provided herein or from amounts provided to it by the Issuer.
+[p080_c0007] 5. The Applicable Trustee shall invest all amounts held in the Rebate Fund as provided in written directions of the Issuer. In issuing such directions, the Issuer shall comply with the restrictions and instructions set forth in the Tax Certificate. Moneys from the Rebate Fund may only be applied as provided in this Section 511.
+[p080_c0008] _24_
+[p080_c0009] _4906-1183-2920.15_
+[p080_c0010] _Master Page # 80 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 81
+
+[p081_c0001] 6. Upon receipt of written instructions and certification of the Rebate Requirement from an Authorized Officer, the Applicable Trustee shall pay the amount of such Rebate Requirement to the Treasury Department of the United States of America, out of amounts in the Rebate Fund, as so directed. Notwithstanding any other provisions of the Resolution, the obligation to remit the Rebate Requirement to the Treasury Department of the United States of America and to comply with all other requirements of this Section 511 and the Tax Certificate shall survive the defeasance or payment in full of the Obligations and Parity Debt.
+### [p081_c0002] Section 512 Excess Revenues Fund.
+[p081_c0003] 1. Subject to the use of moneys in the Excess Revenues Fund for the purposes set forth herein, moneys in the Excess Revenues Fund are not part of any Obligations Trust Estate and shall be used by the Issuer first to pay fees and expenses of the CRZ Tolling Program that are not Operating Expenses or paid from other available moneys of the Issuer, and second for any lawful purpose, including for the transfer to the Issuer for any lawful purpose.
+[p081_c0004] 2. Amounts in the Excess Revenues Fund shall be invested in Authorized Investments. The Issuer may sell any such Authorized Investments at any time and the proceeds of such sale and of all payments of principal or interest received at maturity or upon redemption or otherwise of such Authorized Investments shall be deposited in the Excess Revenues Fund.
+### [p081_c0005] ARTICLE VI PARTICULAR COVENANTS OF THE ISSUER
+[p081_c0006] The Issuer covenants and agrees as follows:
+### [p081_c0007] Section 601 Power to Operate the CRZ Tolling Program and Collect CRZ Tolls
+[p081_c0008] 1. The Issuer has, and will have so long as any Obligations are Outstanding, good right and lawful power to operate the CRZ Tolling Program, to construct, reconstruct, improve, maintain, operate, finance, rehabilitate and repair the CRZ Tolling Infrastructure, and, to fix and collect tolls, fees, rents and other charges as provided in the Resolution, or to cause the foregoing to be done.
+[p081_c0009] 2. The Issuer covenants and agrees that at no time will it subject its exclusive right to establish, charge and collect CRZ Tolls for the use of the Congestion Relief Zone to the approval or consent of any other individual or entity, governmental or otherwise, except as required by the CRZ Tolling Program Act, the CRZ Tolling Program Laws, and the CRZ Tolling Program Documents.
+[p081_c0010] 3. The Issuer covenants and agrees that, by no later than the end of the third week of each month, it shall determine (a) the amount of CRZ Toll Revenues attributable to the prior month, (b) its Operating Expenses for the prior month, and (c) the amount of CRZ Pledged Net Toll Revenues applicable to the prior month, which shall be the difference between clauses (a) and (b). On or before each Deposit Day, the Issuer shall deposit an amount equal to the CRZ Pledged Net Toll Revenues in accordance with the provisions of subsection 1 of Section 503.
+[p081_c0011] _25_
+[p081_c0012] _4906-1183-2920.15_
+[p081_c0013] _Master Page # 81 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 82
+
+[p082_c0001] 4. Subject to the CRZ Tolling Program Documents, the Issuer may at any time convert to methods of toll collection other than those presently utilized.
+### [p082_c0002] Section 602 Tolls, Fees and Charges.
+[p082_c0003] 1. The Issuer covenants (the “ CRZ Toll Rate Covenant ”) that:
+[p082_c0004] (a) During the CRZ Program Phase-In Period, it shall at all times, except as hereinafter provided, establish, levy, maintain and collect, or cause to be established, levied, maintained and collected, such tolls, fares and other charges in connection with the CRZ Tolling Program that are sufficient to produce CRZ Pledged Net Toll Revenues in an amount not less than the CRZ Pledged Net Toll Revenues projected to be generated by the CRZ Initial Toll Rate Schedule, all as estimated by TBTA and evidenced by a certificate delivered by TBTA to the Applicable Trustees prior to any changes to the CRZ Initial Toll Rate Schedule; and
+[p082_c0005] (b) After the CRZ Program Phase-In Period, it shall at all times, except as hereinafter provided, establish, levy, maintain and collect, or cause to be established, levied, maintained and collected, such tolls, fares and other charges in connection with the CRZ Tolling Program at rates as shall be sufficient to produce CRZ Toll Revenues in each year in an amount that will at least be equal to the greater of: (1) the Senior Lien Minimum Revenue Requirement and, (2) the Aggregate Minimum Revenue Requirement, each as defined below.
+[p082_c0006] “Aggregate Minimum Revenue Requirement” shall mean, for each calendar year, the sum of (i) Operating Expenses, (ii) Calculated Debt Service on all Senior Lien Indebtedness, (iii) Calculated Debt Service on all Subordinate Lien Indebtedness, (iv) amounts needed to satisfy the Reserve Maintenance Fund Requirement, (v) amounts needed to satisfy any Debt Service Reserve Requirement, and (vi) Credit Facility fees and expenses, and other fees and expenses payable under this Resolution not otherwise treated as Operating Expenses.
+[p082_c0007] “CRZ Initial Toll Rate Schedule” shall mean the schedule of CRZ Tolls and CRZ Tolling Credits, CRZ Tolling Discounts and CRZ Tolling Exemptions approved by the Issuer on March 27, 2024, together with the phase-in feature approved by the Issuer on November 18, 2024.
+[p082_c0008] “CRZ Program Phase-In Period” shall mean the period from January 5, 2025 through December 31, 2033.
+[p082_c0009] “CRZ Toll Rate Schedule” shall mean the Initial CRZ Toll Rate Schedule and any subsequent toll rate schedule for the CRZ Tolling Program adopted by Issuer, in each case as amended from time to time.
+[p082_c0010] “Required Rate Study Coverage Level” shall mean, for a calendar year, the greater of: (1) the sum of (i) Operating Expenses and (ii) 150% of Calculated Debt Service on all Senior Lien Indebtedness, and (2) the sum of (i) Operating Expenses and (ii) 110%
+[p082_c0011] _26_
+[p082_c0012] _4906-1183-2920.15_
+[p082_c0013] _Master Page # 82 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 83
+
+[p083_c0001] of Calculated Debt Service on all Senior Lien Indebtedness and Subordinate Lien Indebtedness.
+[p083_c0002] “Senior Lien Minimum Revenue Requirement” shall mean, for each calendar year, the sum of (i) Operating Expenses and, (ii) 125% of Calculated Debt Service on all Senior Lien Indebtedness.
+[p083_c0003] 2. Commencing on April 1, 2034 and by April 1 st of each year thereafter, the Issuer shall prepare and file with the Senior Lien Trustee a report providing actual results for the immediately preceding calendar year and projected results for the current calendar year of:
+- [p083_c0004] (a) CRZ Toll Revenues; (b) Operating Expenses; (c) Calculated Debt Service on Senior Lien Indebtedness; and (d) Calculated Debt Service on Subordinate Lien Indebtedness.
+[p083_c0005] 3. Commencing on April 1, 2034 and by April 1 st of each year thereafter, If the amounts set forth in the report provided to the Senior Lien Trustee in paragraph (2) above were below or are projected to be below the Required Rate Study Coverage Level, the Issuer shall engage an Independent Traffic Consultant to conduct a study and, within 60 days of such engagement (or such longer time period if 60 days is not achievable), the Independent Traffic Consultant shall provide a report as to whether the Issuer will be projected to be in compliance with the CRZ Toll Rate Covenant for the current calendar year and following four calendar years. If the Traffic Consultant’s report shows the Issuer is not projected to be in compliance with the CRZ Toll Rate Covenant for the current and each of the following two calendar years, (i) the Independent Traffic Consultant will provide recommendations as to the actions required with respect to the operation of the CRZ Tolling Program and/or the structure of the CRZ Toll Rate Schedule in order to generate CRZ Toll Revenues in an amount that will enable the Issuer to comply with the CRZ Toll Rate Covenant in the current and the following two calendar years, and (ii) the Issuer shall diligently proceed to implement, or undertake such actions as shall be reasonably necessary to implement the Independent Traffic Consultant’s recommendations. For purposes of clause (ii) of this paragraph, diligent pursuit shall be defined as subject to any requirements or limitations of the CRZ Tolling Program Laws and the CRZ Tolling Program Documents.
+[p083_c0006] 4. Failure to comply with the CRZ Toll Rate Covenant will not constitute an Obligations Event of Default if the Issuer has implemented the Independent Traffic Consultant’s recommendations within 90 days of receipt of such recommendations, and if not yet implemented, is diligently pursuing the implementation of the Independent Traffic Consultant’s recommendations.
+[p083_c0007] 5. Following the CRZ Program Phase-In Period, the Issuer may (i) permit toll free or discounted crossings with respect to any user or vehicle class eligible for a CRZ Tolling Credit, CRZ Tolling Discount or CRZ Tolling Exemption, or (ii) make any modification to the CRZ Tolling Program (including the Congestion Relief Zone) or to the CRZ Toll Rate Schedule;
+[p083_c0008] _27_
+[p083_c0009] _4906-1183-2920.15_
+[p083_c0010] _Master Page # 83 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 84
+
+[p084_c0001] provided, however, that prior to the implementation of any additional CRZ Tolling Credit, CRZ Tolling Discount or CRZ Tolling Exemption or any modification to the CRZ Tolling Program or the CRZ Toll Schedule, the Issuer shall deliver to the Senior Lien Trustee and the Subordinate Lien Trustee a certificate of an Independent Traffic Consultant that the projected CRZ Toll Revenues (taking into consideration the adjustments or modifications described in clauses (i) and (ii) of this paragraph 5) for each of the two subsequent calendar years will be sufficient to meet the CRZ Toll Rate Covenant.
+[p084_c0002] 6. Any changes or modifications to the CRZ Toll Rate Schedule otherwise required by this Section 602 shall be subject to (i) the Issuer determining in its reasonable judgement (and as supported by a report of an Independent Traffic Consultant) that such modifications or changes to the CRZ Toll Rate Schedule shall not materially adversely impact the ability of the CRZ Tolling Program to achieve congestion relief objectives set forth in the CRZ Tolling Program Documents, and (ii) Section 610.
+### [p084_c0003] Section 603 Power to Issue Senior Lien Obligations and Effect Pledge.
+[p084_c0004] 1. The Issuer is duly authorized under all applicable laws to issue the Senior Lien Obligations, adopt the Resolution and pledge the Senior Lien Obligations Trust Estate to secure the Senior Lien Indebtedness in the manner and to the extent provided in the Resolution. The Senior Lien Obligations Trust Estate is and shall be free and clear of any pledge, lien, charge or encumbrance thereon or with respect thereto prior to, or of equal rank with, the pledge created by the Resolution (subject to Section 502), and all corporate action on the part of the Issuer to that end has been and will be duly and validly taken. The Senior Lien Obligations and the provisions of the Resolution are and shall be the legally valid and binding special obligations of the Issuer enforceable in accordance with their terms and the terms of the Resolution. The Issuer shall at all times, to the extent permitted by law, defend, preserve and protect the pledge of the Senior Lien Obligations Trust Estate and all the rights of the Owners of Senior Lien Obligations and the holders of Senior Lien Parity Debt under the Resolution against all claims and demands of all Persons whomsoever.
+[p084_c0005] 2. Until the pledge created in subsection 1 of Section 501 of the Resolution shall be discharged and satisfied as provided in Section A-801 of Annex A , the Issuer shall not issue any bonds or other evidences of indebtedness, other than the Senior Lien Obligations and Senior Lien Parity Debt, secured by an equal or prior pledge of the Senior Lien Obligations Trust Estate, nor create or cause to be created any equal or prior pledge of, or lien, charge or encumbrance on, any of the CRZ Pledged Net Toll Revenues comprising the Senior Lien Obligations Trust Estate; provided, however , that nothing contained in the Resolution shall prevent the Issuer from at any time incurring any (i) Senior Lien Obligations in accordance with this Resolution, Senior Lien Parity Debt in accordance with Sections A-202 of Annex A or issuing Senior Lien Obligation Anticipation Notes secured as provided in Section A-203 of Annex A , or (ii) Subordinate Lien Obligations in accordance with Section 202 hereof, Subordinate Lien Parity Debt in accordance with A-202 of Annex A , or Subordinate Lien Obligation Anticipation Notes secured as provided in Section A-203 of Annex A .
+### [p084_c0006] Section 604 Power to Issue Subordinate Lien Obligations and Effect Pledge.
+[p084_c0007] _28_
+[p084_c0008] _4906-1183-2920.15_
+[p084_c0009] _Master Page # 84 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 85
+
+[p085_c0001] 1. The Issuer is duly authorized under all applicable laws to issue the Subordinate Lien Obligations, adopt the Resolution and pledge the Subordinate Lien Obligations Trust Estate to secure the Subordinate Lien Indebtedness in the manner and to the extent provided in the Resolution. The Subordinate Lien Obligations Trust Estate, except to the extent provided in Section 501 and Section 603, is and shall be free and clear of any pledge, lien, charge or encumbrance thereon or with respect thereto prior to, or of equal rank with, the pledge created by the Resolution, and all corporate action on the part of the Issuer to that end has been and will be duly and validly taken. The Subordinate Lien Obligations and the provisions of the Resolution are and shall be the legally valid and binding special obligations of the Issuer enforceable in accordance with their terms and the terms of the Resolution. The Issuer shall at all times, to the extent permitted by law, defend, preserve and protect the pledge of the Subordinate Lien Obligations Trust Estate and all the rights of the Owners of the Subordinate Lien Obligations and the holders of Subordinate Lien Parity Debt under the Resolution against all claims and demands of all Persons whomsoever. Notwithstanding the foregoing, nothing shall prohibit the Issuer from creating the pledge and issuing Senior Lien Obligations and Senior Lien Parity Debt as permitted by Section 501.2, which Senior Lien Obligations and Senior Lien Parity Debt shall be secured on a superior basis to Subordinated Lien Obligations and Subordinate Lien Parity Debt.
+[p085_c0002] 2. Until the pledge created in subsection 5 of Section 501 of the Resolution shall be discharged and satisfied as provided in Section A-801 of Annex A , other than the Senior Lien Obligations and the Senior Lien Parity Debt, the Issuer shall not issue any bonds or other evidences of indebtedness, other than the Subordinate Lien Obligations and Subordinate Lien Parity Debt secured by an equal or prior pledge of the Subordinate Lien Obligations Trust Estate, nor create or cause to be created any equal or prior pledge of, or lien, charge or encumbrance on, any of the CRZ Pledged Net Toll Revenues comprising the Subordinate Lien Obligations Trust Estate; provided, however, that nothing contained in the Resolution shall prevent the Issuer from at any time incurring any Subordinate Lien Obligations in accordance with this Resolution, Subordinate Lien Parity Debt in accordance with Section A-202 of Annex A , or Subordinate Lien Obligation Anticipation Notes secured as provided in Section A-203 of Annex A .
+[p085_c0003] Section 605 Creation of Liens, Issuance of Subordinated Indebtedness, Subordinated Contract Obligations and Other Debt. The Issuer shall not issue any bonds or other evidences of indebtedness, other than the Obligations and Parity Debt as provided herein, secured by a pledge of the applicable Obligations Trust Estate, respectively, and shall not create or cause to be created any lien or charge on the Obligations Trust Estate, except to the extent provided in Section 501; provided, however, that the Issuer may, at any time, or from time to time, incur Subordinated Indebtedness or enter into Subordinated Contract Obligations payable out of and which may be secured by a pledge of, such amounts as may from time to time be available for the purpose of the payment thereof in accordance with paragraph (d) of subsection 2 of Section 503 and such pledge shall be, and shall be expressed to be, subordinate in all respects to the pledge created by the Resolution as security for payment of the Obligations and Parity Debt; and provided further that nothing contained in the Resolution shall prevent the Issuer from issuing other bonds, notes, or other obligations or evidences of indebtedness under another and separate resolution payable from, among other sources, money withdrawn by the Issuer from the Excess Revenue Fund pursuant to Section 512.
+[p085_c0004] _29_
+[p085_c0005] _4906-1183-2920.15_
+[p085_c0006] _Master Page # 85 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 86
+
+[p086_c0001] Section 606 Agreement of the State; Limited Waiver by Owners. The Issuer does hereby incorporate herein the pledges, covenants and agreements of the State with the Owners of the Senior Lien Obligations and the holders of the Senior Lien Parity Debt and the Owners of the Subordinate Lien Obligations and the holders of the Subordinate Lien Parity Debt set forth in Sections 563(1)(a) and 566-a of the Issuer Act as though set forth in full herein.
+[p086_c0002] Section 607 Operation and Maintenance. The Issuer shall at all times operate or cause to be operated the CRZ Tolling Collection System, the CRZ Tolling Customer Service Center and the CRZ Tolling Infrastructure properly and in a sound and economical manner and shall maintain, preserve, reconstruct and keep the same or cause the same to be maintained, preserved, reconstructed and kept, in good repair, working order and condition, and shall from time to time make, or cause to be made, all necessary and proper repairs, replacements and renewals so that at all times the operation thereof may be properly and advantageously conducted; provided, however, that nothing herein contained shall be construed to prevent the Issuer from ceasing to operate or maintain, or from disposing of, all or any part of the CRZ Tolling Collection System, the CRZ Tolling Customer Service Center and the CRZ Tolling Infrastructure if, in the judgment of the Issuer, it is advisable to dispose of or not to operate and maintain the same and the operation thereof shall not be essential to the maintenance and continued operation of the CRZ Tolling Program and such cessation or disposition will not materially impair the Issuer's ability to meet the requirements of the CRZ Toll Rate Covenant.
+[p086_c0003] Section 608 Retention of CRZ Tolling Collection System, CRZ Tolling Customer Service Center and CRZ Tolling Infrastructure. Subject to the provisions of the City MOU and Section 607, the Issuer covenants and agrees that it will not sell, exchange or otherwise dispose of all or any material part of the CRZ Tolling Collection System, the CRZ Tolling Customer Service Center or the CRZ Tolling Infrastructure or any other assets necessary to operate the CRZ Tolling Program in the manner and at the levels of activity required to enable it to perform its covenants contained herein, including, without limitation, the CRZ Toll Rate Covenant.
+[p086_c0004] Section 609 Further Assurances. At any time and all times the Issuer shall, so far as it may be authorized by law, pass, make, do, execute, acknowledge and deliver, all and every such further resolutions, acts, deeds, conveyances, assignments, transfers and assurances as may be necessary or desirable for the better assuring, conveying, granting, assigning and confirming all and singular the rights, of the CRZ Pledged Net Toll Revenues, all Funds, Accounts and other moneys and securities hereby pledged or assigned, or intended so to be, or which the Issuer may hereafter become bound to pledge or assign.
+[p086_c0005] Section 610 Compliance with Laws, Agreements, Rules and Regulations. The Issuer will comply with all valid and material requirements, including, without limitation, the CRZ Tolling Program Documents, the CRZ Tolling Program Laws and any rules, regulations, orders and directives of any governmental, legislative, executive, administrative or judicial body applicable to CRZ Tolling Program, unless the same are being contested in good faith. The requirements and covenants of the Issuer set forth in Article VI shall be subject to the Issuer determining its ongoing compliance with all applicable laws and agreements, including the CRZ Tolling Program Laws and the CRZ Tolling Program Documents.
+[p086_c0006] _30_
+[p086_c0007] _4906-1183-2920.15_
+[p086_c0008] _Master Page # 86 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 87
+
+[p087_c0001] Section 611 Records and Accounts. The Issuer shall keep the funds, accounts, subaccounts, money and investments of the CRZ Tolling Program under trust as herein provided and shall keep accurate records and accounts of all items of costs and of all expenditures relating to the CRZ Tolling Program and of the CRZ Pledged Net Toll Revenues collected and the application of such CRZ Pledged Net Toll Revenues. Such records and accounts shall be open to the inspection of each of the Trustees to the extent necessary to fulfill its duties and obligations.
+### [p087_c0002] ARTICLE VII EVENTS OF DEFAULT AND REMEDIES
+[p087_c0003] Section 701 Senior Lien Obligations Event of Default. Each of the following events is defined as and shall constitute a “Senior Lien Obligations Event of Default” in respect of Senior Lien Obligations and Senior Lien Parity Debt under the Resolution:
+[p087_c0004] 1. There shall occur a default in the due and punctual payment of the principal or Redemption Price of, or interest on, any Senior Lien Indebtedness Outstanding under the Resolution or the agreement under which any Senior Lien Parity Debt was issued when and as the same shall become due and payable, whether at maturity or by call for redemption, or otherwise and such default shall continue for a period of 30 days.
+[p087_c0005] 2. There shall occur a failure to observe, or a refusal to comply with, the terms of the Resolution, the agreement under which any Senior Lien Parity Debt was issued or any Senior Lien Indebtedness Outstanding under the Resolution or the agreement under which any Senior Lien Parity Debt was issued, other than a failure or refusal constituting an event specified in subsection 1 of this Section 701; provided, however, that such failure or refusal shall have continued for a period of 30 days after written notice, specifying such failure and requesting that it be remedied, is given to the Issuer by the Senior Lien Trustee under the Resolution or the agreement under which any Senior Lien Parity Debt was issued under which the failure or refusal occurred, unless the Senior Lien Trustee shall agree in writing to an extension of such time prior to its expiration, and provided further that if the failure stated in the notice cannot be remedied within the applicable period, the Senior Lien Trustee shall not unreasonably withhold its consent to an extension of such time if corrective action has been instituted by the Issuer within such period and is being diligently pursued.
+### [p087_c0006] Section 702 Powers of the Senior Lien Trustee; No Right to Accelerate.
+[p087_c0007] 1. In the event that any Senior Lien Obligations Event of Default specified in Section 701 shall occur and be continuing, the Senior Lien Trustee may, and, upon written request of the Senior Lien Indebtedness Owners of a majority in aggregate principal amount of the Senior Lien Indebtedness then Outstanding under the Resolution, shall, in its name:
+[p087_c0008] (a) by suit, action or proceeding in accordance with the civil practice law and rules enforce all rights of the Senior Lien Indebtedness Owners;
+[p087_c0009] (b) bring suit upon the Senior Lien Indebtedness Outstanding under the Resolution or under the agreement under which the Senior Lien Parity Debt was issued against the Issuer;
+[p087_c0010] _31_
+[p087_c0011] _4906-1183-2920.15_
+[p087_c0012] _Master Page # 87 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 88
+
+[p088_c0001] (c) by action or suit, require the Issuer to account as if it were the trustee of an express trust for the Senior Lien Indebtedness Owners; or
+[p088_c0002] (d) by action or suit, enjoin any acts or things which may be unlawful or in violation of the rights of the Senior Lien Indebtedness Owners;
+[p088_c0003] provided, however , that under no circumstances may the Senior Lien Trustee or any Senior Lien Parity Debt Owner or Senior Lien Owners declare the principal amount of all the Senior Lien Indebtedness then Outstanding under the Resolution or the agreement under which the Senior Lien Parity Debt was issued, and the interest accrued thereon, to be immediately due and payable.
+[p088_c0004] 2. Subject to the provisions of Section 701 and 1002 and the foregoing provisions of this Section 702, the remedies conferred upon or reserved to the Senior Lien Trustee in respect of any Senior Lien Obligations Event of Default are not intended to be exclusive of any other available remedy or remedies, but each and every such remedy shall be cumulative and shall be in addition to every other remedy given under the Resolution or any agreement providing for the issuance of Senior Lien Parity Debt or now or hereafter existing at law or in equity or by statute. No delay or omission to exercise any right or power accruing upon any Senior Lien Obligations Event of Default shall impair any such right or power or shall be construed to be a waiver thereof, but any such right and power may be exercised from time to time and as often as may be deemed expedient. In order to entitle the Senior Lien Trustee to exercise any remedy reserved to it in this Article, it shall not be necessary to give any notice, other than notice as may be expressly required herein.
+[p088_c0005] 3. The Senior Lien Trustee shall, in addition to the foregoing powers, have and possess all of the powers necessary or appropriate for the exercise of any functions specifically set forth herein or incidental to the general representation of the Senior Lien Indebtedness Owners in the enforcement and protection of their rights.
+[p088_c0006] 4. The Issuer covenants that if a Senior Lien Obligations Event of Default shall have happened and shall not have been remedied, the books of record and account of the Issuer and all other records relating to the Senior Lien Obligations Trust Estate shall at all times be subject to the inspection and use of the Senior Lien Trustee and of its agents and attorneys and, upon demand of the Senior Lien Trustee, the Issuer will account, as if it were the trustee of an express trust, for the Senior Lien Obligations Trust Estate for such period as shall be stated in such demand.
+### [p088_c0007] Section 703 Priority of Payments After Default on Senior Lien Indebtedness.
+[p088_c0008] 1. In the event that the funds held by the Fiduciaries shall be insufficient for the payment of interest and principal or Redemption Price then due on the Senior Lien Obligations Outstanding under the Resolution and for payments then due with respect to Senior Lien Parity Debt, such funds (excluding funds held for the payment or redemption of particular Senior Lien Parity Debt and for the payment or redemption of particular Senior Lien Obligations Outstanding under the Resolution which have theretofore become due at maturity or by call for redemption and funds which at the time of their deposit into any Fund or Account under the Resolution have been designated to be applied solely to the payment of the principal of and premium, if any, and interest on any series of Senior Lien Obligation Anticipation Notes Outstanding under the Resolution
+[p088_c0009] _32_
+[p088_c0010] _4906-1183-2920.15_
+[p088_c0011] _Master Page # 88 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 89
+
+[p089_c0001] under which such Senior Lien Obligation Anticipation Notes are Outstanding) and any other money received or collected by the Fiduciaries, or the Senior Lien Trustee, after making provision for the payment of any expenses necessary in the opinion of the Senior Lien Trustee to preserve the continuity of the amounts to be received under the Resolution or otherwise to protect the interest of the Senior Lien Owners, and for the payment of the charges and expenses and liabilities incurred and advances made by the Fiduciaries in the performance of their duties under the Resolution, shall be applied as follows, subject to the provisions governing the application of any separate subaccount in the Senior Lien Debt Service Reserve Account for a particular Series of Senior Lien Obligations and Senior Lien Parity Debt:
+[p089_c0002] (a) Unless the principal of all of the Senior Lien Obligations Outstanding under the Resolution shall have become due and payable,
+[p089_c0003] First: To the payment to the Persons entitled thereto of all installments of interest then due with respect to Senior Lien Obligations Outstanding under the Resolution and the interest components of Senior Lien Parity Debt in the order of the maturity of such installments and interest components, and, if the amount available shall not be sufficient to pay in full any installments and interest components due on the same date, then to the payment thereof ratably, according to the amounts due on such installments and interest components, to the Persons entitled thereto, without any discrimination or preference, except as to the difference in the respective rates of interest specified in such Senior Lien Obligations and Senior Lien Parity Debt; and
+[p089_c0004] Second: To the payment to the Persons entitled thereto of the unpaid principal or Redemption Price of any Senior Lien Obligations Outstanding under the Resolution and the principal component of Senior Lien Parity Debt which shall have become due, whether at maturity or by call for redemption, in the order of their due dates and, if the amount available shall not be sufficient to pay in full all the Senior Lien Obligations Outstanding under the Resolution and Senior Lien Parity Debt due on any date, then to the payment thereof ratably, according to the amounts of principal and Redemption Price and principal component due on such date, to the Persons entitled thereto, without any discrimination or preference.
+[p089_c0005] (b) If the principal of all of the Senior Lien Obligations Outstanding under the Resolution and the principal component of Senior Lien Parity Debt shall have become due and payable, to the payment of the principal and interest then due and unpaid upon the Senior Lien Obligations Outstanding under the Resolution and Senior Lien Parity Debt without preference or priority of principal or principal component over interest or interest component or of interest or interest component over principal or principal component, or of any installment of interest or interest component over any other installment of interest or interest component, or of any such Senior Lien Obligation or Senior Lien Parity Debt over any other such Senior Lien Obligation or Senior Lien Parity Debt, ratably, according to the amounts due respectively for principal and interest, to the Persons entitled thereto, without any discrimination or preference except as to any difference in the respective rates of interest specified in such Senior Lien Obligations and Senior Lien Parity Debt.
+[p089_c0006] _33_
+[p089_c0007] _4906-1183-2920.15_
+[p089_c0008] _Master Page # 89 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 90
+
+[p090_c0001] 2. The provisions of this Section 703 are in all respects subject to the provisions of Section A-602 of Annex A .
+[p090_c0002] Section 704 Subordinate Lien Obligations Event of Default. Each of the following events is defined as and shall constitute a “Subordinate Lien Obligations Event of Default” in respect of Subordinate Lien Obligations and Subordinate Lien Parity Debt under the Resolution:
+[p090_c0003] 1. There shall occur a default in the due and punctual payment of the principal or Redemption Price of, or interest on, any Subordinate Lien Indebtedness Outstanding under the Resolution or the agreement under which any Subordinate Lien Parity Debt was issued when and as the same shall become due and payable, whether at maturity or by call for redemption, or otherwise and such default shall continue for a period of 30 days.
+[p090_c0004] 2. There shall occur a failure to observe, or a refusal to comply with, the terms of the Resolution, the agreement under which any Subordinate Lien Parity Debt was issued or any Subordinate Lien Indebtedness Outstanding under the Resolution or the agreement under which any Subordinate Lien Parity Debt was issued, other than a failure or refusal constituting an event specified in subsection 1 of this Section 704, to make such deposit; provided, however, that such failure or refusal shall have continued for a period of 60 days after written notice, specifying such failure and requesting that it be remedied, is given to the Issuer by the Subordinate Lien Trustee under the Resolution or the agreement under which any Subordinate Lien Parity Debt was issued under which the failure or refusal occurred, unless the Subordinate Lien Trustee shall agree in writing to an extension of such time prior to its expiration, and provided further that if the failure stated in the notice cannot be remedied within the applicable period, the Subordinate Lien Trustee shall not unreasonably withhold its consent to an extension of such time if corrective action has been instituted by the Issuer within such period and is being diligently pursued.
+### [p090_c0005] Section 705 Powers of Subordinate Lien Trustee in Respect of a Subordinate Lien Obligations Event of Default; No Right to Accelerate.
+[p090_c0006] 1. In the event that any Subordinate Lien Obligations Event of Default specified in Section 704 shall occur and be continuing, the Subordinate Lien Trustee may, and, upon written request of the Subordinate Lien Indebtedness Owners of a majority in aggregate principal amount of the Subordinate Lien Indebtedness then Outstanding under the Resolution, shall, in its name:
+- [p090_c0007] (a) by suit, action or proceeding in accordance with the civil practice law and rules enforce all rights of the Subordinate Lien Owners; (b) bring suit upon the Subordinate Lien Indebtedness Outstanding under the Resolution or under the agreement under which the Subordinate Lien Parity Debt was issued against the Issuer; (c) by action or suit, require the Issuer to account as if it were the trustee of an express trust for the Subordinate Lien Indebtedness Owners; or (d) by action or suit, enjoin any acts or things which may be unlawful or in violation of the rights of the Subordinate Lien Indebtedness Owners;
+[p090_c0008] _34_
+[p090_c0009] _4906-1183-2920.15_
+[p090_c0010] _Master Page # 90 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 91
+
+[p091_c0001] provided, however , that under no circumstances may the Subordinate Lien Trustee or any Subordinate Lien Parity Debt Owner or Subordinate Lien Owners declare the principal amount of all the Subordinate Lien Indebtedness then Outstanding under the Resolution or the agreement under which the Subordinate Lien Parity Debt was issued, and the interest accrued thereon, to be immediately due and payable.
+[p091_c0002] 2. Subject to the provisions of Sections 704 and Section 1002 and the foregoing provisions of this Section 705, the remedies conferred upon or reserved to the Subordinate Lien Trustee in respect of any Subordinate Lien Obligations Event of Default are not intended to be exclusive of any other available remedy or remedies, but each and every such remedy shall be cumulative and shall be in addition to every other such remedy given under the Resolution or any agreement under which Subordinate Lien Parity Debt was issued or now or hereafter existing at law or in equity or by statute. No delay or omission to exercise any right or power accruing upon any Subordinate Lien Obligations Event of Default shall impair any such right or power or shall be construed to be a waiver thereof, but any such right and power may be exercised from time to time and as often as may be deemed expedient. In order to entitle the Subordinate Lien Trustee to exercise any remedy reserved to it in this Article, it shall not be necessary to give any notice, other than notice as may be expressly required herein.
+[p091_c0003] 3. The Subordinate Lien Trustee shall in addition to the foregoing powers, have and possess all of the powers necessary or appropriate for the exercise of any functions specifically set forth herein or incidental to the general representation of Subordinate Lien Indebtedness Owners in the enforcement and protection of their rights.
+[p091_c0004] 4. The Issuer covenants that if a Subordinate Lien Obligations Event of Default shall have happened and shall not have been remedied, the books of record and account of the Issuer and all other records relating to the Subordinate Lien Obligations Trust Estate shall at all times be subject to the inspection and use of the Subordinate Lien Trustee and of its agents and attorneys and, upon demand of the Subordinate Lien Trustee, the Issuer will account, as if it were the trustee of an express trust, for the Subordinate Lien Obligations Trust Estate for such period as shall be stated in such demand.
+### [p091_c0005] Section 706 Priority of Payments After Default on Subordinate Lien Indebtedness.
+[p091_c0006] 1. In the event that the funds held by the Fiduciaries shall be insufficient for the payment of interest and principal or Subordinate Lien Redemption Price then due on the Subordinate Lien Obligations Outstanding under the Resolution and for payments then due with respect to Subordinate Lien Parity Debt, such funds (excluding funds held for the payment or redemption of particular Subordinate Lien Parity Debt and for the payment or redemption of particular Subordinate Lien Obligations Outstanding under the Resolution which have theretofore become due at maturity or by call for redemption and funds which at the time of their deposit into any Fund or Account under the Resolution have been designated to be applied solely to the payment of the principal of and premium, if any and interest on any series of Subordinate Lien Obligation Anticipation Notes Outstanding under the Resolution under which such Subordinate Lien Obligation Anticipation Notes are Outstanding) and any other money received or collected by the Fiduciaries, or the Subordinate Lien Trustee, after making provision for the payment of any expenses necessary in the opinion of the Subordinate Lien Trustee to preserve the continuity of the
+[p091_c0007] _35_
+[p091_c0008] _4906-1183-2920.15_
+[p091_c0009] _Master Page # 91 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 92
+
+[p092_c0001] amounts to be received under the Resolution or otherwise to protect the interest of the Subordinate Lien Owners, and for the payment of the charges and expenses and liabilities incurred and advances made by the Fiduciaries in the performance of their duties under the Resolution, shall be applied as follows, subject to the provisions governing the application of any separate subaccount in the Subordinate Lien Debt Service Reserve Account for a particular Series of Subordinate Lien Obligations and Subordinate Lien Parity Debt:
+[p092_c0002] (a) Unless the principal of all of the Subordinate Lien Obligations Outstanding under the Resolution shall have become due and payable,
+[p092_c0003] First: To the payment to the Persons entitled thereto of all installments of interest then due with respect to Subordinate Lien Obligations Outstanding under the Resolution and the interest components of Subordinate Lien Parity Debt in the order of the maturity of such installments and interest components, and, if the amount available shall not be sufficient to pay in full any installments and interest components due on the same date, then to the payment thereof ratably, according to the amounts due on such installments and interest components, to the Persons entitled thereto, without any discrimination or preference, except as to the difference in the respective rates of interest specified in such Subordinate Lien Obligations and Subordinate Lien Parity Debt; and
+[p092_c0004] Second: To the payment to the Persons entitled thereto of the unpaid principal or Redemption Price of any Subordinate Lien Obligations Outstanding under the Resolution and the principal component of Subordinate Lien Parity Debt which shall have become due, whether at maturity or by call for redemption, in the order of their due dates and, if the amount available shall not be sufficient to pay in full all the Subordinate Lien Obligations Outstanding under the Resolution and Subordinate Lien Parity Debt due on any date, then to the payment thereof ratably, according to the amounts of principal and Subordinate Lien Redemption Price and principal component due on such date, to the Persons entitled thereto, without any discrimination or preference.
+[p092_c0005] (b) If the principal of all of the Subordinate Lien Obligations Outstanding under the Resolution and the principal component of Subordinate Lien Parity Debt shall have become due and payable, to the payment of the principal and interest then due and unpaid upon the Subordinate Lien Obligations Outstanding under the Resolution and Subordinate Lien Parity Debt without preference or priority of principal or principal component over interest or interest component or of interest or interest component over principal or principal component, or of any installment of interest or interest component over any other installment of interest or interest component, or of any such Subordinate Lien Obligations and Subordinate Lien Parity Debt over any other such Subordinate Lien Obligations and Subordinate Lien Parity Debt, ratably, according to the amounts due respectively for principal and interest, to the Persons entitled thereto, without any discrimination or preference except as to any difference in the respective rates of interest specified in such Subordinate Lien Obligations and Subordinate Lien Parity Debt.
+[p092_c0006] _36_
+[p092_c0007] _4906-1183-2920.15_
+[p092_c0008] _Master Page # 92 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 93
+
+[p093_c0001] 2. Such rights set forth in this Section 706 shall be subordinate, and subject in all respects, (i) to the prior pledge of the Senior Lien Obligations Trust Estate securing Senior Lien Obligations and Senior Lien Parity Debt created pursuant to subsections 1 and 2 of Section 501, and (ii) to the priority of payments after default in Section 703.
+[p093_c0002] 3. The provisions of this Section 706 are in all respects subject to the provisions of Section A-602 of Annex A .
+### [p093_c0003] ARTICLE VIII SUPPLEMENTAL RESOLUTIONS
+### [p093_c0004] Section 801 General Provisions.
+[p093_c0005] 1. The Resolution shall not be modified or amended in any respect except as provided in and in accordance with and subject to the provisions of this Article VIII and in Article IX. Nothing contained in this Article VIII or in Article IX shall affect or limit the right or obligation of the Issuer to execute and deliver to any Fiduciary any instrument which elsewhere in the Resolution it is provided shall be delivered to said Fiduciary.
+[p093_c0006] 2. Modifications or amendments effected in accordance with this Article VIII are generally modifications or amendments that do not materially and adversely affect the respective Owners of Senior Lien Obligations or Subordinate Lien Obligations under the Resolution.
+[p093_c0007] 3. Any Supplemental Resolution referred to and permitted or authorized by this Article VIII may be adopted by the Issuer without the consent of any of the Senior Lien Owners or Subordinate Lien Owners, but shall become effective only on the conditions, to the extent and at the time provided in this Article VIII. The copy of every Supplemental Resolution when filed with the Trustee shall be accompanied by a Counsel's Opinion stating that such Supplemental Resolution has been duly and lawfully adopted in accordance with the provisions of the Resolution, is authorized or permitted by the Resolution, and is valid and binding upon the Issuer and enforceable in accordance with its terms; provided, however, that the concurrent delivery of an Opinion of Bond Counsel required by Section A-201.2(a) of Annex A shall satisfy this requirement.
+[p093_c0008] 4. No Supplemental Resolution shall change or modify any of the rights or obligations of any Fiduciary without its written consent.
+[p093_c0009] Section 802 Supplemental Resolutions Effective Upon Filing with the Senior Lien Trustee and Subordinate Lien Trustee. For any one or more of the following purposes and at any time or from time to time, a Supplemental Resolution may be adopted, without the consent of or notice to any Senior Lien Owner or Subordinate Lien Owner which, upon the filing with the Senior Lien Trustee or the Subordinate Lien Trustee, as applicable, of a copy thereof certified by an Authorized Officer, or, if adopted prior to the appointment of a Senior Lien Trustee or a Subordinate Lien Trustee pursuant to Section A-701 of Annex A , upon its adoption, shall be fully effective in accordance with its terms:
+[p093_c0010] 1. To add to the covenants and agreements of the Issuer in the Resolution, other covenants and agreements to be observed by the Issuer which are not contrary to or inconsistent with the Resolution as theretofore in effect;
+[p093_c0011] _37_
+[p093_c0012] _4906-1183-2920.15_
+[p093_c0013] _Master Page # 93 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 94
+
+[p094_c0001] 2. To surrender any right, power or privilege reserved to or conferred upon the Issuer by the Resolution;
+[p094_c0002] 3. To confirm, as further assurance, any pledge under, and the subjection to any lien or pledge created or to be created by, the Resolution of any additional security other than that granted or pledged under the Resolution;
+[p094_c0003] 4. To add to the Resolution any provisions required to preserve the exclusion from gross income for Federal income tax purposes of interest received on Tax-Exempt Obligations then Outstanding or to be issued or the exemption of interest received on any Obligations from State income taxation or the right to receive subsidies relating to Taxable Obligations then Outstanding or to be issued;
+[p094_c0004] 5. To modify, amend or supplement the Resolution in such manner as to permit the qualification hereof under the Trust Indenture Act of 1939, as amended, or any similar Federal statute hereafter in effect or to permit the qualification of the Obligations for sale under the securities laws of any of the states of the United States of America, and, if the Issuer so determines, to add hereto such other terms, conditions and provisions as may be required by said Trust Indenture Act of 1939 or similar Federal statute;
+[p094_c0005] 6. At any time prior to the first authentication and delivery of any Senior Lien Obligations under the Resolution with respect to modifications or amendments that effect only Senior Lien Obligations, at any time prior to the first authentication and delivery of any Subordinate Lien Obligations under the Resolution with respect to modifications or amendments that effect only Subordinate Lien Obligations, and at any time prior to the first authentication and delivery of any Obligations under the Resolution with respect to modifications or amendments that effect all Obligations, or at any other time when no Obligations are Outstanding under the Resolution, to modify the provisions of the Resolution in such manner as the Issuer deems necessary or appropriate;
+[p094_c0006] 7. To cure any ambiguity, supply any omission, or cure or correct any defect or inconsistent provision in the Resolution;
+[p094_c0007] 8. To insert such provisions clarifying matters or questions arising under the Resolution as are necessary or desirable and are not contrary to or inconsistent with the Resolution as theretofore in effect, including, in the event the Issuer Act or the MTA Act is amended or other legislation is enacted to so provide, the substitution of an alternate or different legal name for the current name of the Issuer or any other Related Entity in the Resolution or the forms of Obligations;
+[p094_c0008] 9. To make any other modification or amendment of the Resolution which the Issuer shall in its sole discretion determine will not have a material adverse effect on the interests of the Owners of Outstanding Obligations;
+[p094_c0009] 10. To authorize Obligations of a Series and, in connection therewith, (a) specify and determine the matters and things referred to in the provisions of the Resolution authorizing issuance of Obligations, and also any other matters and things relative to such Obligations which are not contrary to or inconsistent with the Resolution as theretofore in effect, including the delivery of additional security in connection with such Obligations in accordance with the
+[p094_c0010] _38_
+[p094_c0011] _4906-1183-2920.15_
+[p094_c0012] _Master Page # 94 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 95
+
+[p095_c0001] provisions of clause (v) of the definitions of Senior Lien Obligations Trust Estate and Subordinate Lien Obligations Trust Estate, (b) in the case of Variable Interest Rate Obligations or Put Obligations, as applicable, set forth provisions specifying the manner in which interest on Variable Interest Rate Obligations or Put Obligations, as applicable, is to be calculated for the purposes of various definitions and provisions of the Resolution, provisions providing for changes in interest rates, interest rate periods or interest payment dates for any Variable Interest Rate Obligation of a Series or Put Obligations, as applicable, provisions regarding an Owner's right or obligation to tender Put Obligations for redemption or purchase in lieu of redemption, and provisions governing the manner in which Variable Interest Rate Obligations or Put Obligations, as applicable, which the Owner thereof has the right to, or has exercised a right to, tender for redemption or purchase in lieu of redemption shall be treated for purposes of various definitions and provisions of the Resolution, (c) set forth provisions governing the administration of any Qualified Swap, Credit Facility, or any other credit enhancement, which may comprise amounts payable from amounts as shall from time to time be available for transfer to the Issuer that are authorized by law and/or by any resolution or agreement of a Related Entity permitting such transfer, and provisions providing for the issuance of Reimbursement Obligations or the conversion of other Obligations to Reimbursement Obligations (and in connection with such conversion to change the interest rates, sinking fund provisions or maturity date on such Obligations) to secure or reimburse the provider of such Credit Facility, (d) in the case of either Taxable Obligations or Tax-Exempt Obligations, set forth defeasance provisions with respect thereto (including the manner of attaining such defeasance and the effect thereof), (e) (1) to determine the Applicable Senior Lien Coverage Factor for Senior Lien Obligations or the Applicable Subordinate Lien Coverage Factor and Applicable Aggregate Coverage Factor for Subordinate Lien Obligations, prior to the first issuance of Senior Lien Obligations or Subordinate Lien Obligations, respectively, (2) to determine the Applicable Senior Lien Coverage Factor for any Additional Senior Lien Obligations to be issued that are not secured on a parity with Outstanding Senior Lien Obligations, and in each case to specify and determine (or provide procedures for an Authorized Officer to specify or determine) the matters and things required or permitted by Article V of the Resolution in connection therewith, including to establish the lien and priority of payment for such Additional Senior Lien Obligations in accordance with Section 501 hereof, (f) to establish the Debt Service Reserve Requirement, if any, for a Series of Obligations or Parity Debt with such terms and provisions as shall be set forth in the Supplemental Resolution, including, without limitation, a determination as to whether the Debt Service Reserve Requirement applies solely to such Series or to other designated or described Series of Obligations or Parity Debt, and (g) to make such additional changes herein or determinations it deems necessary, desirable or convenient, in each case not materially adverse to the rights of the Owners of Obligations previously issued, as are necessary or appropriate; or to amend, modify or rescind any such authorization, specification or determination at any time prior to the first issuance and delivery of such Obligations.
+[p095_c0002] 11. To authorize Obligation Anticipation Notes in accordance with Section A-203 of Annex A and, in connection therewith, specify and determine the matters and things referred to in Section A-203 of Annex A , and also any other matters and things relative to such Obligation Anticipation Notes, as applicable, which are not contrary to or inconsistent with the Resolution as theretofore in effect;
+[p095_c0003] 12. To (a) establish for any one or more Series of Obligations a separate debt service reserve account which shall be permitted to be applied solely to the payment of specified
+[p095_c0004] _39_
+[p095_c0005] _4906-1183-2920.15_
+[p095_c0006] _Master Page # 95 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 96
+
+[p096_c0001] Obligations additionally secured by amounts on deposit therein, provided that (i) the specified Obligations shall have no claim or lien on nor be payable from any amounts in any other such debt service reserve account, (ii) the specified Obligations shall be excluded from the calculation of any applicable debt service reserve account requirement for any other Outstanding Obligations, and (iii) the amount required to be on deposit in such debt service reserve accounts shall be specified in the Supplemental Resolutions authorizing the specified Obligations, but in no event shall such amount, after giving effect to any surety bond, insurance policy, letter of credit or similar obligation deposited in any such separate debt service reserve fund pursuant to the Resolution, be in excess of the amount that would otherwise be the debt service reserve account requirement for such specified Obligations assuming that such Obligations were the only Obligations Outstanding under the Resolution; and (b) make such other amendments, changes or modifications to the Resolution as may be deemed necessary or desirable by the Issuer to insure that such debt service reserve account function in the manner contemplated in this subsection;
+[p096_c0002] 13. To authorize Parity Debt and, in connection therewith, specify and determine (or provide procedures for an Authorized Officer to specify or determine) the matters and things referred to in paragraphs (4) and (6) of Section A-202 of Annex A , and also any other matters and things relative to such Parity Debt which are not contrary to or inconsistent with the Resolution as then in effect, or to amend, modify or rescind any such authorization, specification or determination at any time prior to the first issuance or entering into of such Parity Debt, and at any time to rescind or limit any authorization for any such Parity Debt theretofore authorized but not issued or entered into; in connection with the authorization of Parity Swap Obligations and Parity Reimbursement Obligations, any such Supplemental Resolution may include provisions for the availability, transferability, use or application of the Funds, Accounts and subaccounts established pursuant to Section 502 of the Resolution for the benefit of such Parity Swap Obligations and Reimbursement Obligations; and may grant to the Owners of such Parity Debt the same rights granted to Owners of Obligations in Article IX;
+[p096_c0003] 14. To authorize the receipt of any payment from the Issuer or a Related Entity for Debt Service on Obligations, and in connection therewith, specify and determine (or provide procedures for an Authorized Officer to specify or determine) the matters and things required or permitted by Article V of the Resolution in connection therewith, including to enter into any agreement with the Applicable Trustee or any other party in accordance therewith;
+[p096_c0004] 15. To modify any of the provisions of the Resolution in any respect whatsoever, provided that, (i) such modification shall be, and be expressed to be, effective only after all Obligations affected thereby and Outstanding at the date of the adoption of such Supplemental Resolution shall cease to be Outstanding and (ii) such Supplemental Resolution shall be specifically referred to in the text of all applicable Obligations, delivered on original issuance after the date of the adoption of such Supplemental Resolution and of the Obligations issued in exchange therefor or in place thereof;
+[p096_c0005] 16. To modify, amend or supplement the Resolution in any manner, not already provided for in or pursuant to the Supplemental Resolution authorizing the related Series of Obligations in order to provide for a Credit Facility, Qualified Swap, or other similar arrangement with respect to any Series of Obligations, under the Resolution, so long as the Issuer determines
+[p096_c0006] _40_
+[p096_c0007] _4906-1183-2920.15_
+[p096_c0008] _Master Page # 96 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 97
+
+[p097_c0001] that such Supplemental Resolution does not materially adversely affect the right, security and interest of the Owners of Outstanding Obligations;
+[p097_c0002] 17. To amend or modify any Supplemental Resolution authorizing Obligations of a Series to reflect the substitution of a new Credit Facility for the Credit Facility then in effect;
+[p097_c0003] 18. To close the Resolution against, or provide limitations and restrictions in addition to the limitations and restrictions contained in the Resolution on, the issuance and delivery of the Obligations, or the issuance or entering into of other evidences of indebtedness; and
+[p097_c0004] 19. To modify, amend or supplement the Resolution as requested by the CPRB to provide for approvals and consents necessary to implement the provisions of the Resolution that provide for the financing of transit and commuter projects, provided such modifications, amendments or supplements do not materially adversely affect the right, security and interest of the Owners of Outstanding Obligations.
+[p097_c0005] In making any determination under paragraph (9) or (17) of this Section 802, the Issuer may conclusively rely upon (i) an Opinion of Counsel, (ii) opinions of other experts or professionals, or (iii) the Receipt of a Rating Confirmation in connection with the proposed modification or amendment.
+### [p097_c0006] ARTICLE IX AMENDMENTS
+[p097_c0007] Section 901 Mailing. Any provision in this Article IX for the mailing of a notice or other paper to Senior Lien Owners and/or Subordinate Lien Owners shall be fully complied with if it is mailed postage prepaid to (i) each such Owner of any affected Senior Lien Obligation and/or affected Subordinate Lien Obligation then Outstanding at such Owner's address, if any, appearing upon the registry books of the Issuer, and (ii) to the affected Senior Lien Trustees and/or Subordinate Lien Trustees, as applicable; or, in each case, to such parties by facsimile or other means to the extent permitted by applicable law and arrangements.
+### [p097_c0008] Section 902 Powers of Amendment.
+[p097_c0009] 1. Any modification or amendment of the Resolution of the rights and obligations of the Issuer and of the Senior Lien Owners, in any particular, may be made by a Supplemental Resolution, with the written consent given as provided in Section 903, (i) of the Senior Lien Owners of a majority in principal amount of the Senior Lien Obligations Outstanding at the time such consent is given, and (ii) in case less than all of the Senior Lien Obligations then Outstanding are affected by the modification or amendment, of the Senior Lien Owners of a majority in principal amount of the Senior Lien Obligations so affected and Outstanding at the time such consent is given; provided, however, that if such modification or amendment will, by its terms, not take effect so long as particular Senior Lien Obligations remain Outstanding, the consent of the Owners of such Senior Lien Obligations shall not be required and such Senior Lien Obligations shall not be deemed to be Outstanding for the purpose of any calculation of Outstanding Senior Lien Obligations under this Section. No such modification or amendment shall (a) permit a change in the terms of redemption or maturity of the principal of any Outstanding Senior Lien Obligation
+[p097_c0010] _41_
+[p097_c0011] _4906-1183-2920.15_
+[p097_c0012] _Master Page # 97 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 98
+
+[p098_c0001] or of any installment of interest thereon or a reduction in the principal amount or the Redemption Price thereof or in the rate of interest thereon without the consent of the Senior Lien Owner of such Obligation, (b) reduce the percentages or otherwise affect the classes of Senior Lien Obligations the consent of the Senior Lien Owners of which is required to waive a Senior Lien Event of Default or otherwise effect any such modification or amendment, (c) create a preference or priority of any Senior Lien Obligation or Senior Lien Obligations over any other Senior Lien Obligation or Senior Lien Obligations, without the consent of the Owners of all such Senior Lien Obligations, except as permitted by Section 501(2), (d) create a lien prior to or on parity with the lien of the Resolution securing Senior Lien Obligations, without the consent of the Senior Lien Owners of all of the Senior Lien Obligations then Outstanding, or (e) change or modify any of the rights or obligations of any Fiduciary without its written assent thereto. For the purposes of this Section 902(1), a Senior Lien Obligation shall be deemed to be affected by a modification or amendment of the Resolution if the same materially and adversely affects the rights of the Senior Lien Owner of such Obligation. The Senior Lien Trustee may in its discretion determine whether or not in accordance with the foregoing powers of amendment particular Senior Lien Obligations would be affected by any modification or amendment of the Resolution and any such determination shall be binding and conclusive on the Issuer and all Senior Lien Owners. The Senior Lien Trustee may request and receive an opinion of counsel, including a Counsel's Opinion, as conclusive evidence as to whether particular Senior Lien Obligations would be so affected by any such modification or amendment of the Resolution and the Senior Lien Trustee shall have no duty or obligation to take any action hereunder unless and until it has received such opinion. Notwithstanding anything in this Section 902 or the Resolution to the contrary, the consent of Senior Lien Owners of any Series of additional Senior Lien Obligations to be issued hereunder to any modification or amendment of the Resolution, which modification or amendment, as well as such consent, is disclosed in the official statement or other offering document prepared in connection with the primary offering of such Series of additional Senior Lien Obligations, shall be deemed given and irrevocable and no other evidence of such consent shall be required.
+[p098_c0002] 2. Any modification or amendment of the Resolution of the rights and obligations of the Issuer and of the Subordinate Lien Owners, in any particular, may be made by a Supplemental Resolution, with the written consent given as provided in Section 903, (i) of the Subordinate Lien Owners of a majority in principal amount of the Subordinate Lien Obligations Outstanding at the time such consent is given, and (ii) in case less than all of the Subordinate Lien Obligations then Outstanding are affected by the modification or amendment, of the Subordinate Lien Owners of a majority in principal amount of the Subordinate Lien Obligations so affected and Outstanding at the time such consent is given; provided, however, that if such modification or amendment will, by its terms, not take effect so long as particular Subordinate Lien Obligations remain Outstanding, the consent of the Owners of such Subordinate Lien Obligations shall not be required and such Subordinate Lien Obligations shall not be deemed to be Outstanding for the purpose of any calculation of Outstanding Subordinate Lien Obligations under this Section. No such modification or amendment shall (a) permit a change in the terms of redemption or maturity of the principal of any Outstanding Subordinate Lien Obligation or of any installment of interest thereon or a reduction in the principal amount or the Redemption Price thereof or in the rate of interest thereon without the consent of the Subordinate Lien Owner of such Subordinate Lien Obligation, (b) reduce the percentages or otherwise affect the classes of Subordinate Lien Obligations the consent of the Subordinate Lien Owners of which is required to waive a Subordinate Lien Event of Default or otherwise effect any such modification or amendment, (c) create a preference or priority of any
+[p098_c0003] _42_
+[p098_c0004] _4906-1183-2920.15_
+[p098_c0005] _Master Page # 98 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 99
+
+[p099_c0001] Subordinate Lien Obligation or Subordinate Lien Obligations over any other Subordinate Lien Obligation or Subordinate Lien Obligations, without the consent of the Subordinate Lien Owners of all such Subordinate Lien Obligations, (d) create a lien prior to or on parity with the lien of the Resolution securing Subordinate Lien Obligations, without the consent of the Subordinate Lien Owners of all of the Subordinate Lien Obligations then Outstanding, except as permitted by Section 501(5) or (e) change or modify any of the rights or obligations of any Fiduciary without its written assent thereto. For the purposes of this Section 902(2), a Subordinate Lien Obligation shall be deemed to be affected by a modification or amendment of the Resolution if the same materially and adversely affects the rights of the Subordinate Lien Owner of such Subordinate Lien Obligation. The Subordinate Lien Trustee may in its discretion determine whether or not in accordance with the foregoing powers of amendment particular Subordinate Lien Obligations would be affected by any modification or amendment of the Resolution and any such determination shall be binding and conclusive on the Issuer and all Subordinate Lien Owners. The Subordinate Lien Trustee may request and receive an opinion of counsel, including a Counsel's Opinion, as conclusive evidence as to whether particular Subordinate Lien Obligations would be so affected by any such modification or amendment of the Resolution and the Subordinate Lien Trustee shall have no duty or obligation to take any action hereunder unless and until it has received such opinion. Notwithstanding anything in this Section 902 or the Resolution to the contrary, the consent of Subordinate Lien Owners of any Series of additional Subordinate Lien Obligations to be issued hereunder to any modification or amendment of the Resolution, which modification or amendment, as well as such consent, is disclosed in the official statement or other offering document prepared in connection with the primary offering of such Series of additional Subordinate Lien Obligations, shall be deemed given and irrevocable and no other evidence of such consent shall be required.
+[p099_c0002] 3. In the event any modification or amendment materially and adversely affects the rights of both the Senior Lien Owners and the Subordinate Lien Owners, the consent of both the Senior Lien Owners and the Subordinate Lien Owners as provided in this Article IX shall be required.
+[p099_c0003] 4. The consent of both the Senior Lien Owners and the Subordinate Lien Owners shall not be required with respect to any amendment, restatement or modification of the Resolution to permit the issuance of a Series of Senior Lien Obligations and/or Senior Lien Parity Debt that shall be secured on a basis that is junior and subordinate to Outstanding Senior Lien Obligations and Senior Lien Parity Debt and senior to Subordinate Lien Obligations and Subordinate Lien Parity Debt, which may include, without limitation, the Applicable Senior Lien Coverage Factor.
+### [p099_c0004] Section 903    Consent of Senior Lien Owners and Subordinate Lien Owners.
+[p099_c0005] 1. The Issuer at any time may adopt a Supplemental Resolution making a modification or amendment permitted by the provisions of Section 902 hereof to take effect when and as provided in this Section. A copy of such Supplemental Resolution (or brief summary thereof or reference thereto in form approved by the Senior Lien Trustee or Subordinate Lien Trustee, as applicable) together with a request to the Senior Lien Owners or Subordinate Lien Owners, as applicable, for their consent thereto in form satisfactory to the Senior Lien Trustee or Subordinate Lien Trustee, as applicable, shall be mailed by the Issuer to the Senior Lien Owners or Subordinate Lien Owners, as applicable (but failure to mail such copy and request shall not affect the validity
+[p099_c0006] _43_
+[p099_c0007] _4906-1183-2920.15_
+[p099_c0008] _Master Page # 99 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 100
+
+[p100_c0001] of the Supplemental Resolution when consented to as in this Section provided). Such Supplemental Resolution shall not be effective unless and until (i) there shall have been filed with the Senior Lien Trustee or Subordinate Lien Trustee, as applicable (a) the written consents of the Senior Lien Owners or Subordinate Lien Owners of the percentages of Outstanding Senior Lien Obligations or Subordinate Lien Obligations specified in Section 902 and (b) a Counsel's Opinion stating that such Supplemental Resolution has been duly and lawfully adopted and filed by the Issuer in accordance with the provisions of the Resolution, is authorized or permitted by the Resolution, and is valid and binding upon the Issuer and enforceable in accordance with its terms, and (ii) a notice shall have been mailed to Senior Lien Owners or Subordinate Lien Owners, as applicable, as hereinafter in this Section 903 provided. Any such consent, including any consent of a Fiduciary in accordance with Section 902, shall be irrevocable and binding upon the Senior Lien Owner or Subordinate Lien Owner and Fiduciary giving such consent and, anything in Section A-802 of Annex A to the contrary notwithstanding, upon any subsequent Senior Lien Owner of such Senior Lien Obligations and of any Senior Lien Obligations issued in exchange therefor or, anything in Section A-802 of Annex A to the contrary notwithstanding, upon any subsequent Subordinate Lien Owner of such Subordinate Lien Obligations and of any Subordinate Lien Obligations issued in exchange therefor (whether or not such subsequent Senior Lien Owner or subsequent Subordinate Lien Owner thereof has notice thereof). At any time after the Senior Lien Owners of the required percentages of Senior Lien Obligations and/or the Subordinate Lien Owners of the required percentages of Subordinate Lien Obligations shall have filed their consents to the Supplemental Resolution, the Senior Lien Trustee and/or the Subordinate Lien Trustee shall make and file with the Issuer and the other Trustee a written statement that the Senior Lien Owners of such required percentages of Senior Lien Obligations and/or the Subordinate Lien Owners of such required percentages of Subordinate Lien Obligations have filed such consents. Such written statement shall be conclusive that such consents have been so filed. At any time thereafter, notice, stating in substance that the Supplemental Resolution (which may be referred to as a Supplemental Resolution adopted by the Issuer on a stated date, a copy of which is on file with the Senior Lien Trustee and the Subordinate Lien Trustee, as applicable) has been consented to by the Senior Lien Owners of such required percentages of Senior Lien Obligations and/or the Subordinate Lien Owners of such required percentages of Subordinate Lien Obligations and will be effective as provided in this Section 903, may be given to Senior Lien Owners and/or Subordinate Lien Owners by the Issuer by mailing such notice to such Owners (but failure to mail such notice shall not prevent such Supplemental Resolution from becoming effective and binding as in this Section 903 provided). The Issuer shall file with the Senior Lien Trustee and the Subordinate Lien Trustee, as applicable, proof of the mailing of such notice. A record, consisting of the papers required or permitted by this Section 903 to be filed with the Senior Lien Trustee and the Subordinate Lien Trustee, shall be proof of the matters therein stated. Such Supplemental Resolution making such amendment or modification shall be deemed conclusively binding upon the Issuer, the Fiduciaries and all Senior Lien Owners and/or Subordinate Lien Owners at the expiration of 40 days after the filing with the Senior Lien Trustee and the Subordinate Lien Trustee, as applicable, of the proof of the mailing of such last-mentioned notice, except in the event of a final decree of a court of competent jurisdiction setting aside such Supplemental Resolution in a legal action or equitable proceeding for such purpose commenced within such 40-day period; provided, however, that any Fiduciary and the Issuer during such 40-day period and any such further period during which any such action or proceeding may be pending shall be entitled in their absolute discretion to take such
+[p100_c0002] _44_
+[p100_c0003] _4906-1183-2920.15_
+[p100_c0004] _Master Page # 100 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 101
+
+[p101_c0001] action, or to refrain from taking such action, with respect to such Supplemental Resolution as they may deem expedient.
+[p101_c0002] Section 904 Modifications by Unanimous Consent. The terms and provisions of the Resolution and the rights and obligations of the Issuer and of the Senior Lien Owners and the Subordinate Lien Owners may be modified or amended in any respect upon the adoption and filing by the Issuer of a Supplemental Resolution and the consent of the Senior Lien Owners and/or the Subordinate Lien Owners of all of the Senior Lien Obligations and/or Subordinate Lien Obligations then Outstanding, such consent to be given as provided in Section 903 except that no notice to affected Senior Lien Owners and/or Subordinate Lien Owners shall be required; provided, however, that no such modification or amendment shall change or modify any of the rights or obligations of any Fiduciary without the filing with the Senior Lien Trustee and/or Subordinate Lien Trustee, as applicable, of the written consent thereto of such Fiduciary in addition to the consent of the Senior Lien Owners and/or Subordinate Lien Owners.
+[p101_c0003] Section 905 Notation on Senior Lien Obligations and/or Subordinate Lien Obligations. Senior Lien Obligations and/or Subordinate Lien Obligations issued and delivered after the effective date of any action taken as in Article VIII or this Article IX provided may, and, if the Senior Lien Trustee and/or Subordinate Lien Trustee so determines, shall, bear a notation by endorsement or otherwise in form approved by the Issuer and the applicable Senior Lien Trustee or Subordinate Lien Trustee as to such action, and in that case upon demand of the applicable Senior Lien Owner and/or the Subordinate Lien Owner at such effective date and presentation of its Senior Lien Obligation or Subordinate Lien Obligation for the purpose at the corporate trust office of the applicable Senior Lien Trustee or Subordinate Lien Trustee, suitable notation shall be made on such Senior Lien Obligation or on such Subordinate Lien Obligation, by the applicable Senior Lien Trustee or Subordinate Lien Trustee as to any such action. If the Issuer or the applicable Senior Lien Trustee or Subordinate Lien Trustee shall so determine, new Senior Lien Obligations or Subordinate Lien Obligations, so modified as in the opinion of the applicable Senior Lien Trustee or Subordinate Lien Trustee and the Issuer to conform to such action shall be prepared, authenticated and delivered. Upon demand of the Senior Lien Owner or Subordinate Lien Owner and the surrender of such Senior Lien Obligations or Subordinate Lien Obligations, there shall be authenticated and exchanged therefor, new Senior Lien Obligations or Subordinate Lien Obligations, having the same terms, other than the noted modification, as the Senior Lien Obligations or Subordinate Lien Obligations surrendered.
+### [p101_c0004] ARTICLE X MISCELLANEOUS; REMEDIES
+[p101_c0005] Section 1001 Authority to Deliver this Resolution. An Authorized Officer of the Issuer is hereby authorized and directed to deliver this Resolution with such changes, insertions, and omissions as may be approved by such Authorized Officer and as may be required and approved by the CPRB or by such Authorized Officer prior to the issuance of the initial Series of Obligations authenticated and delivered hereunder; such delivery being conclusive evidence of such approvals; and provided, however, that such changes, insertions, and omissions shall be necessary to effectuate the intent of this Resolution.
+[p101_c0006] _45_
+[p101_c0007] _4906-1183-2920.15_
+[p101_c0008] _Master Page # 101 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 102
+
+[p102_c0001] Section 1002 Appointment of Receiver Abrogated. The right of the Trustee to the appointment of a receiver as provided in Section 567 of the Issuer Act is hereby abrogated.
+[p102_c0002] Section 1003 Effective Date. The effectiveness of the provisions of this Resolution relating to the authority of the Issuer to finance the TBTA Transit and Commuter Project are subject to the receipt of the approval (or deemed approval) of the CPRB pursuant to the Issuer Act. This Resolution shall become effective upon its delivery to the Senior Lien Trustee or the Subordinate Lien Trustee.
+[p102_c0003] _46_
+[p102_c0004] _4906-1183-2920.15_
+[p102_c0005] _Master Page # 102 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 103
+
+### [p103_c0001] SCHEDULE A MASTER GLOSSARY OF TERMS
+[p103_c0002] _4906-1183-2920.15_
+[p103_c0003] _Master Page # 103 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 104
+
+### [p104_c0001] DRAFT 10/22/2025
+### [p104_c0002] MASTER GLOSSARY OF TERMS
+[p104_c0003] Account or Accounts shall mean each account or all of the accounts established in Article V of the Resolution.
+[p104_c0004] Accreted Value shall mean with respect to any Capital Appreciation Obligations (i) as of any Valuation Date, the amount set forth for such date in the Supplemental Resolution authorizing such Capital Appreciation Obligations and (ii) as of any date other than a Valuation Date, the sum of (a) the Accreted Value on the preceding Valuation Date and (b) the product of (1) a fraction, the numerator of which is the number of days having elapsed from the preceding Valuation Date and the denominator of which is the number of days from such preceding Valuation Date to the next succeeding Valuation Date and (2) the difference between the Accreted Values for such Valuation Dates. For purposes of this definition, the number of days having elapsed from the preceding Valuation Date and the number of days from the preceding Valuation Date to the next succeeding Valuation Date shall be calculated on the basis of a 360-day year of twelve (12) 30-day months, unless otherwise provided pursuant to a Supplemental Resolution.
+[p104_c0005] Additional Senior Lien Obligations shall mean all Senior Lien Obligations authenticated and delivered pursuant to Section 205.
+[p104_c0006] Additional Subordinate Lien Obligations shall mean all Subordinate Lien Obligations authenticated and delivered pursuant to Section 206.
+[p104_c0007] Aggregate Minimum Revenue Requirement shall have the meaning set forth in Section 602.
+[p104_c0008] Amortized Value , when used with respect to Authorized Investments purchased at a premium above or a discount below par, shall mean the value of such Authorized Investments computed by using an industry standard constant yield method selected by an Authorized Officer of the Issuer.
+[p104_c0009] Applicable Aggregate Coverage Factor shall mean the number determined and set forth in the Supplemental Resolution authorizing the issuance of the first parity Series of Subordinate Lien Obligations for the purpose of establishing the new money additional bonds tests in Sections 205 and 206, as the same may be amended in accordance with Articles VIII and IX hereof, but in no event less than 105%.
+[p104_c0010] Applicable Debt Service Payment Date shall mean a Debt Service Payment Date on which an Applicable Trustee is required to make a payment of Debt Service from the Senior Lien Debt Service Account or the Subordinate Lien Debt Service Account, as the context requires.
+[p104_c0011] Applicable Senior Lien Coverage Factor shall mean, for each lien of Senior Lien Indebtedness established (if there is more than one), the number determined and set forth in the Supplemental Resolution authorizing the issuance of the first Series of parity Senior Lien Obligations for the purpose of establishing the new money additional bonds tests in Sections 205 and 206, as the same may be amended in accordance with Articles VIII and IX hereof.
+[p104_c0012] _4928-0652-0920.14_
+[p104_c0013] _Master Page # 104 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 105
+
+[p105_c0001] Applicable Subordinate Lien Coverage Factor shall mean, for each lien of Subordinate Lien Indebtedness established (if there is more than one), the number determined and set forth in the Supplemental Resolution authorizing the issuance of the first Series of parity Subordinate Lien Obligations for the purpose of establishing the new money additional bonds tests in Sections 205 and 206, as the same may be amended in accordance with Articles VIII and IX hereof.
+[p105_c0002] Applicable Trustee shall mean the Senior Lien Trustee or the Subordinate Lien Trustee, as the context requires.
+[p105_c0003] Appreciated Value shall mean with respect to any Deferred Income Obligations (i) as of any Valuation Date, the amount set forth for such date in the Supplemental Resolution authorizing such Deferred Income Obligations, (ii) as of any date prior to the Interest Commencement Date other than a Valuation Date, the sum of (a) the Appreciated Value on the preceding Valuation Date and (b) the product of (1) a fraction, the numerator of which is the number of days having elapsed from the preceding Valuation Date and the denominator of which is the number of days from such preceding Valuation Date to the next succeeding Valuation Date and (2) the difference between the Appreciated Values for such Valuation Dates, and (iii) as of any date on and after the Interest Commencement Date, the Appreciated Value on the Interest Commencement Date. For purposes of this definition, the number of days having elapsed from the preceding Valuation Date and the number of days from the preceding Valuation Date to the next succeeding Valuation Date shall be calculated on the basis of a 360-day year of twelve (12) 30-day months, unless otherwise provided pursuant to a Supplemental Resolution.
+[p105_c0004] Authorized Investments shall mean and include any of the following, to the extent the same are legal for investment of the Issuer's funds:
+- [p105_c0005] (i) obligations of the State or the United States government; (ii) obligations the timely payment of the principal and interest on which are unconditionally guaranteed by the State or the United States government; (iii) certificates of deposit of banks or trust companies in the State, secured, if the Issuer shall so require, by obligations of the United States or of the State of a market value equal at all times to the amount of the deposit; (iv) banker's acceptances with a maturity of 90 days or less which are eligible for purchase by the federal reserve banks and whose rating at the time of purchase is in the highest Rating Category of each of the Rating Agencies that then rates such banker's acceptances; (v) obligations of any bank or corporation created under the laws of either the United States or any state of the United States maturing within 270 days, provided that such obligations are rated in the highest Rating Category of each of the Rating Agencies that then rates such obligations; (vi) notes, bonds, debentures, mortgages and other evidences of indebtedness, issued or guaranteed at the time of the investment by the United States Postal Service, the Federal National Mortgage Association, the Federal Home Loan Mortgage
+[p105_c0006] _2_
+[p105_c0007] _4928-0652-0920.14_
+[p105_c0008] _Master Page # 105 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 106
+
+[p106_c0001] Corporation, the Student Loan Marketing Association, the Federal Farm Credit System, or any other United States government sponsored agency, provided that at the time of the investment such agency or its obligations are rated and the agency receives, or its obligations receive, ratings in the highest Rating Category of each of the Rating Agencies that then rates such agency or its obligations;
+- [p106_c0002] (vii) (A) general obligation bonds and notes of any state other than the State, provided that such bonds and notes are rated in the highest Rating Category of each of the Rating Agencies that then rates such bonds and notes, and (B) bonds and notes of any county, town, city, village, fire district or school district of the State, provided that such bonds and notes are rated in either of the 2 highest Rating Categories of each of the Rating Agencies that then rates such bonds and notes; (viii) mutual funds registered with the United States Securities and Exchange Commission, whose investments are limited to obligations of the State described in clause (i) above, obligations the principal and interest of which are guaranteed by the State as described in clause (ii) above, and those securities described in clause (vii) above, and that are rated in the highest Rating Category of each of the Rating Agencies that then rates such funds; (ix) repurchase agreements with any dealer or bank, which agreement is secured by any one or more of the securities described in clauses (i), (ii) or (vi) above, which securities shall (A) at all times have a market value of not less than the full amount held or invested pursuant to the agreement and (B) be delivered to a Bank as defined in clause (i) or (ii) of the definition thereof, as custodian, that is independent from the dealer or bank with whom the repurchase agreement is executed; and (x) any other investment in which the Issuer is authorized from time to time to invest under applicable law with respect to which an Authorized Officer has, on or before the date thereof, delivered to the Trustee (A) a certificate to the Trustee designating the additional investment as an Authorized Investment and (B) Rating Confirmation.
+[p106_c0003] In addition to the foregoing, in the case of any money held in reserve (other than the Debt Service Reserve Accounts) and sinking funds “Authorized Investments” shall include any other securities in which the trustee or trustees of any public retirement system or pension fund has the power to invest the money thereof pursuant to Article four-a of the Retirement and Social Security Law of the State, each such reserve and sinking fund being treated as a separate fund for the purposes of Article four-a of the Retirement and Social Security Law of the State.
+[p106_c0004] Any investment in any of the foregoing obligations may be made in the form of an entry made on the records of the issuer of the particular obligations or of a recognized securities depository.
+[p106_c0005] Authorized Officer shall mean (i) the Chairman and the Vice Chairman, (ii) the Executive Director, the Comptroller, the Chief Financial Officer, the Secretary and any Assistant Secretary
+[p106_c0006] _3_
+[p106_c0007] _4928-0652-0920.14_
+[p106_c0008] _Master Page # 106 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 107
+
+[p107_c0001] of the Issuer, (iii) the Chief Financial Officer, the Deputy Chief, Financial Services, the Director of Finance, and the Director of Budget and Financial Management of the MTA, and (iv) any other Person authorized by the Issuer to perform the act or sign the document in question.
+[p107_c0002] Authorized Purpose shall mean a Senior Lien Authorized Purpose or a Subordinate Lien Authorized Purpose, as applicable to Senior Lien Obligations and Subordinate Lien Obligations, respectively.
+[p107_c0003] Balloon Obligations shall mean Obligations which have been identified in a Certificate of Determination as a Balloon Obligation. Such Certificate of Determination shall set forth the expected refinancing, including the expected ultimate final maturity and amortization schedule of the refinancing or refinancings of such Balloon Obligation (including successor Balloon Obligations) and the Estimated Average Interest Rate for purposes of determining Calculated Debt Service of such Balloon Obligation.
+[p107_c0004] Bank shall mean any (i) bank or trust company organized under the laws of any state of the United States of America, (ii) national banking association, (iii) savings bank or savings and loan association chartered or organized under the laws of any state of the United States of America, or (iv) federal branch or agency pursuant to the International Banking Act of 1978 or any successor provisions of law, or domestic branch or agency of a foreign bank which branch or agency is duly licensed or authorized to do business under the laws of any state or territory of the United States of America.
+[p107_c0005] Business Day shall mean any day of the year other than (i) Saturday or Sunday, (ii) any day on which Banks located in New York, New York or the city in which the Principal Office of the Trustee is located are required or authorized by law to remain closed, or (iii) any day on which the New York Stock Exchange is closed.
+[p107_c0006] Calculated Debt Service for any period shall mean, as of any date of calculation and with respect to any Series of Obligations or any Parity Debt, the sum of Debt Service for such period determined by the Issuer based on the following adjustments:
+[p107_c0007] (1) Interest on Variable Interest Rate Obligations shall be based on the Estimated Average Interest Rate applicable thereto.
+[p107_c0008] (2) Interest on any Obligation or Parity Debt in respect of which the Issuer has entered into a Qualified Swap shall be based on:
+[p107_c0009] (a) the fixed rate or rates of the Qualified Swap if the Issuer has entered into what is generally referred to as a “floating-to-fixed” Qualified Swap (where the Issuer pays a fixed rate and receives a floating rate); or
+[p107_c0010] (b) the lower of (i) the Estimated Average Interest Rate and (ii) the effective capped rate of any Obligation or Parity Debt if the Issuer has entered into a Qualified Swap that is generally referred to as an “interest rate cap” (where the Issuer receives a payment if a variable rate exceeds a certain amount); or
+[p107_c0011] _4_
+[p107_c0012] _4928-0652-0920.14_
+[p107_c0013] _Master Page # 107 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 108
+
+[p108_c0001] (c) the Estimated Average Interest Rate of the Qualified Swap if the Issuer has entered into either what is generally referred to as a “fixed-to-floating” Qualified Swap (where the Issuer pays a variable rate and receives a fixed rate) or a “floating-to-floating” Qualified Swap (where the Issuer pays a variable rate and receives a different variable rate).
+[p108_c0002] (3) With respect to Put Obligations and Balloon Obligations of a Series (i) Principal Installments shall be deemed to amortize over a 30-year period from their date of issuance based on substantially level debt service as estimated by the Issuer, and (ii) interest shall be based on the actual interest rate or the Estimated Average Interest Rate, as applicable, or for both (i) and (ii) above, as otherwise set forth in a Supplemental Resolution or Certificate of Determination with respect to the issuance of such Obligations.
+[p108_c0003] (4) If the Issuer has irrevocably deposited Authorized Investments or money with the Trustee (or otherwise in trust) for the payment of any portion of Debt Service, the expected future cash flow from such Authorized Investments and money shall be deducted from Debt Service.
+[p108_c0004] (5) If the Issuer has, at any time, irrevocably called for redemption one or more Series of Obligations, including pursuant to a covenant to apply any portion of the Obligations Trust Estate to redeem Obligations or Parity Debt (which particular Obligations or Parity Debt need not be specifically identified in advance, except as to interest rate and maturity), the Issuer shall take into account such redemption for purposes of determining Calculated Debt Service.
+[p108_c0005] (6) With respect to Parity Reimbursement Obligations, accelerated payments of principal shall only be taken into account if, at the time of calculation, such amounts are payable due to a draw under a credit or liquidity facility.
+[p108_c0006] Capital Appreciation Obligations shall mean any Obligations denominated as such and issued as to which interest is payable only at the maturity or prior redemption of such Obligations. Except as otherwise provided by Supplemental Resolution, for the purposes of (i) receiving payment of the Redemption Price if a Capital Appreciation Obligation is redeemed prior to maturity, (ii) computing the principal amount of Obligations held by the registered owner of a Capital Appreciation Obligation in giving to the Issuer or the Trustee any notice, consent, request, or demand pursuant to the Resolution for any purpose whatsoever or (iii) computing Debt Service, the principal amount of a Capital Appreciation Obligation shall be deemed to be its Accreted Value (which in the case of clause (ii) may be the Accreted Value as of the immediately preceding Valuation Date).
+[p108_c0007] Capital Costs shall mean (i) the costs of (A) the Issuer or any other Related Entity for all or any part of the TBTA Transit and Commuter Project, and (B) the Issuer or any other entity for all or any part of the CRZ Tolling Program, in each case including costs of acquisition of real or personal property or any interests therein, legal, administrative, engineering, planning, design, studies, insurance, financing costs (including Costs of Issuance), and initial working capital required for the commencement of operation of any such project and any capital contributions, whether or not represented by equity or debt securities or other evidences of indebtedness made
+[p108_c0008] _5_
+[p108_c0009] _4928-0652-0920.14_
+[p108_c0010] _Master Page # 108 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 109
+
+[p109_c0001] by the Issuer or any other Related Entity or other entity to any Person participating in a TBTA Transit and Commuter Project or the CRZ Tolling Program, as the context requires, for the purpose of funding any costs described in this clause (i)(A) or (i)(B); (ii) amounts paid into any Fund or Account upon the issuance of any Obligations; and (iii) payment when due (whether at the maturity of principal or on the due date of interest or upon redemption or when otherwise due, including by purchase or through tender or exchange) on any indebtedness or obligation of the Issuer or any other Related Entity or other entity which was issued or incurred to finance costs that could at the time of such payment be funded directly hereunder, including Senior Lien Obligations, Senior Lien Obligation Anticipation Notes, Senior Lien Parity Debt, Subordinate Lien Obligations, Subordinate Lien Obligation Anticipation Notes, Subordinate Lien Parity Debt, Subordinated Contract Obligations, including obligation anticipation notes issued on a subordinated basis, and Subordinated Indebtedness, any termination or other payments for financial, fuel or other hedging arrangements, or any such indebtedness or obligation issued or incurred by the Issuer or any Related Entity or other entity in connection with the TBTA Transit and Commuter Project or the CRZ Tolling Program, as applicable.
+[p109_c0002] Capital Lockbox Fund shall mean the fund established pursuant to Section 553-j of the Issuer Act and entitled the “Metropolitan Transportation Authority Capital Lockbox Fund,” or any successor fund or account provided by law. The Capital Lockbox Fund shall consist of as many separate and distinct accounts as shall be established by law or by the Issuer or the MTA.
+[p109_c0003] Central Business District shall mean the area described in Section 1704(2) of the New York Vehicle and Traffic Law.
+[p109_c0004] Certificate of Determination shall mean a certificate of an Authorized Officer of the Issuer fixing terms, conditions and other details of Obligations, Parity Debt, Credit Facilities, Subordinated Indebtedness or Subordinated Contract Obligations in accordance with the delegation of power to do so under a Supplemental Resolution.
+[p109_c0005] City shall mean The City of New York.
+[p109_c0006] City MOU shall mean the Memorandum of Understanding, dated June 11, 2019, between the Issuer and the New York City Department of Transportation entered into in accordance with Section 1704(2-a) of the New York Vehicle and Traffic Law, as amended or supplemented from time to time.
+[p109_c0007] Congestion Relief Zone or CRZ shall mean the area described in Section 1704(2) of the New York Vehicle and Traffic Law and referred to therein as the Central Business District.
+[p109_c0008] Costs of Issuance shall mean the costs of the authorization, sale and issuance of a Series of Obligations, Obligation Anticipation Notes, Subordinated Indebtedness, Parity Debt, Subordinated Contract Obligations or other obligations authorized under the Resolution, including with respect to any party to a transaction State bond issuance charges, document printing and reproduction costs, filing and recording fees, costs of credit ratings, fees and charges of the Trustee and other Fiduciaries and agents, legal fees and charges, professional consultants’ fees, underwriting fees, fees and charges for execution, transportation and safekeeping of Obligations, premiums, fees and charges in order to obtain, renew, extend or terminate Credit Facilities and
+[p109_c0009] _6_
+[p109_c0010] _4928-0652-0920.14_
+[p109_c0011] _Master Page # 109 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 110
+
+[p110_c0001] Qualified Swaps and other financial arrangements, costs and expenses of refunding such Obligations, Obligation Anticipation Notes, Subordinated Indebtedness, Parity Debt, Subordinated Contract Obligations or other obligations authorized under this Resolution, and other costs, charges and fees, including those of the Issuer and any other Related Entities, in connection with the foregoing.
+[p110_c0002] Counsel's Opinion or Opinion of Counsel or Opinion shall mean an opinion signed by an attorney or firm of attorneys of recognized standing (who may be counsel to the Issuer) selected by the Issuer.
+[p110_c0003] CPRB shall mean the Metropolitan Transportation Authority Capital Program Review Board created pursuant to Section 1269-a of the MTA Act.
+[p110_c0004] Credit Facility shall mean any letter of credit, standby bond purchase agreement, line of credit, policy of bond insurance, surety bond, guarantee or similar instrument, or any agreement relating to the reimbursement of any payment thereunder (or any combination of the foregoing), which is obtained by the Issuer and is issued by a financial institution, insurance provider or other Person and which provides security or liquidity in respect of any Outstanding Obligations, Parity Debt or Obligation Anticipation Notes.
+[p110_c0005] CRZ Initial Toll Rate Schedule shall have the meaning set forth in Section 602.
+[p110_c0006] CRZ Pledged Net Toll Revenues shall mean, for any period, an amount equal to CRZ Toll Revenues for such period less Operating Expenses for such period, whether or not such Operating Expenses have been or are expected to be paid from CRZ Toll Revenues, all as determined by the Issuer in accordance with its accounting policies and procedures consistent with the CRZ Tolling Program Laws.
+[p110_c0007] CRZ Pledged Net Tolls Revenue Fund shall mean the fund by that name established in Section 502.
+[p110_c0008] CRZ Program Phase-In Period shall have the meaning set forth in Section 602.
+[p110_c0009] CRZ Toll Rate Covenant shall have the meaning set forth in Section 602.
+[p110_c0010] CRZ Toll Rate Schedule shall have the meaning set forth in Section 602.
+[p110_c0011] CRZ Toll Revenues shall mean all CRZ Tolls as received by the Issuer directly or indirectly, and determined by the Issuer by no later than the twenty-first (21 st ) day of the month following each such transaction, to be from and/or generated by or pursuant to the CRZ Tolling Program, and the proceeds of use and occupancy insurance on the CRZ Tolling Program and of any other insurance which insures against loss of CRZ Toll Revenues payable to or for the account of the Issuer; but excluding (i) any income or receipts attributable directly or indirectly to amounts released from, or otherwise not subject to, the pledge and lien of the Resolution, or (ii) any federal or state grant money the receipt of which is conditioned upon its expenditure for a particular purpose or which is otherwise not legally available for application pursuant to Section 503.
+[p110_c0012] _7_
+[p110_c0013] _4928-0652-0920.14_
+[p110_c0014] _Master Page # 110 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 111
+
+[p111_c0001] CRZ Tolling Collection System shall mean the electronic system of collecting tolls or other charges using electronic data and/or images that the Issuer has planned, designed, installed and constructed pursuant to the City MOU, and that the Issuer operates as part of the CRZ Tolling Program.
+[p111_c0002] CRZ Tolling Credits, CRZ Tolling Discounts or CRZ Tolling Exemptions shall mean any credits, discounts and/or exemptions relating to CRZ Tolls authorized by Section 1704 of the New York Vehicle and Traffic Law and approved by the Issuer, as modified from time-to-time.
+[p111_c0003] CRZ Tolling Customer Service Center shall mean the customer contact and back-office system and operation services for the collection of CRZ Toll Revenues and enforcement of Congestion Relief Zone toll violations that the Issuer has planned, designed, implemented and operates as part of the CRZ Tolling Program.
+[p111_c0004] CRZ Tolling Program Documents shall mean the CRZ Toll Rate Schedule, the VPPP Agreement, the City MOU and the Environmental Documents.
+[p111_c0005] CRZ Tolling Infrastructure shall mean the devices and structures, including but not limited to gantries, clear signage delineating entry into the CRZ and toll amounts, and power and communication lines that the Issuer has planned, designed, financed and constructed, that are necessary for the operation and maintenance of the CRZ Tolling Program, as may be altered or changed from time to time.
+[p111_c0006] CRZ Tolling Program shall have the meaning set forth in CRZ Tolling Program Act and includes the CRZ Tolling Infrastructure, the CRZ Tolling Collection System and the CRZ Tolling Customer Service Center.
+[p111_c0007] CRZ Tolling Program Act shall mean, individually and collectively, each of the following as amended from time to time: (a) the Traffic Mobility Act, Article 44-C of Title 8 of the Vehicle and Traffic Law, Chapter 71 of the Consolidated Laws of the State of New York (Article 44-C—CBD Tolling Program (§ 1701 to § 1706) N.Y. Veh. & Traf. Law), and (b) Section 553(12-a) of the Issuer Act.
+[p111_c0008] CRZ Tolling Program Laws shall mean, individually and collectively, each of the following as amended from time to time: (a) the CRZ Tolling Program Act, (b) Sections 553(9)(s), 553-j and 553-k of the Issuer Act, and (d) all federal laws and requirements applicable to the CRZ Tolling Program.
+[p111_c0009] CRZ Tolls or CRZ Toll shall mean all tolls, fees and other revenues derived from the CRZ Tolling Program imposed in accordance with Section 553(12-a) of the Issuer Act, including, without limitation, fines and penalties and interest thereon collected as a result of a failure to pay any such amount.
+[p111_c0010] CRZ Toll Rate Schedule shall have the meaning set forth in Section 602.
+[p111_c0011] Debt Service for any period shall mean, as of any date of calculation and with respect to any Series of Obligations or any Parity Debt Outstanding, the sum of (i) interest on the Obligations of such Series and the interest components of Parity Debt accruing during such period and (ii) that
+[p111_c0012] _8_
+[p111_c0013] _4928-0652-0920.14_
+[p111_c0014] _Master Page # 111 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 112
+
+[p112_c0001] portion of each Principal Installment for such Obligations and Parity Debt that would accrue during such period if such Principal Installment were deemed to accrue daily in equal amounts from the preceding Principal Installment payment date on Outstanding Obligations and Parity Debt; provided, however, that , unless otherwise set forth in a Supplemental Resolution, no Principal Installment shall be deemed to begin accruing until the later of one year prior to such Principal Installment's due date and the date of issuance or incurrence of the related Obligation or Parity Debt.
+[p112_c0002] Debt Service Payment Date shall mean, with respect to any portion of Debt Service, the date on which the Debt Service shall be payable.
+[p112_c0003] Debt Service Reserve Requirement shall mean, with respect to a particular Series of Obligations, the amount, if any, set forth in the Supplemental Resolution authorizing such Series of Obligations.
+[p112_c0004] Debt Service Year shall mean, unless otherwise provided in a Supplemental Resolution, the twelve-month period commencing on January 1 of each calendar year and ending on December 31 st of such calendar year, except that the first Debt Service Year shall begin on the respective date of issuance of each such first Series of Senior Lien Obligations or Subordinate Lien Obligations under the Resolution.
+[p112_c0005] Defeasance Security shall mean
+[p112_c0006] (a) an Authorized Investment as specified in clause (i) of the definition thereof (other than an obligation of the State), which is not redeemable at the option of the issuer thereof,
+[p112_c0007] (b) an Authorized Investment as specified in clause (i) (which is an obligation of the State), (ii), (iii), (vi) or (vii) of the definition thereof, which is not redeemable at the option of the issuer thereof and which shall be rated at the time of the investment in the highest long-term Rating Category by each Rating Agency,
+[p112_c0008] (c) any depository receipt issued by a Bank as custodian with respect to any Defeasance Security which is specified in clause (a) above and held by such Bank for the account of the holder of such depository receipt, or with respect to any specific payment of principal or interest on any such Defeasance Security which is so specified and held, provided that (except as required by law) such custodian is not authorized to make any deduction from the amount payable to the holder of such depository receipt from any amount received by the custodian in respect of the Defeasance Security or the specific payment of principal or interest evidenced by such depository receipt,
+[p112_c0009] (d) any certificate of deposit specified in clause (iii) of the definition of Authorized Investments, including certificates of deposit issued by the Trustee or by a Paying Agent, secured by obligations specified in clause (a) above of a market value equal at all times to the amount of the deposit, which shall be rated at the time of the investment in the highest long-term Rating Category by each Rating Agency, or
+[p112_c0010] _9_
+[p112_c0011] _4928-0652-0920.14_
+[p112_c0012] _Master Page # 112 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 113
+
+[p113_c0001] (e) any other Authorized Investment designated in a Supplemental Resolution as a Defeasance Security for purposes of defeasing the Obligations authorized by such Supplemental Resolution, which is not redeemable at the option of the issuer thereof and which shall be rated at the time of the investment in the highest long-term Rating Category by each Rating Agency.
+[p113_c0002] Deferred Income Obligation shall mean any Obligation (A) as to which interest accruing thereon prior to the Interest Commencement Date of such Obligation is (i) compounded on each Valuation Date for such Deferred Income Obligation and (ii) payable only at the maturity or prior redemption of such Obligations and (B) as to which interest accruing after the Interest Commencement Date is payable on the first interest payment date succeeding the Interest Commencement Date and periodically thereafter on the dates specified in or determined by Supplemental Resolution. Except as otherwise provided by Supplemental Resolution, for the purposes of (i) receiving payment of the Redemption Price if a Deferred Income Obligation is redeemed prior to maturity, (ii) computing the principal amount of Obligations held by the registered owner of a Deferred Income Obligation in giving to the Issuer or the Trustee any notice, consent, request, or demand pursuant to the Resolution for any purpose whatsoever or (iii) computing Debt Service, the principal amount of a Deferred Income Obligation shall be deemed to be its Appreciated Value (which in the case of clause (ii) may be the Appreciated Value as of the immediately preceding Valuation Date).
+[p113_c0003] Deposit Day shall have the meaning set forth in Section 503.
+[p113_c0004] DTC shall mean The Depository Trust Company.
+[p113_c0005] Environmental Documents shall mean, individually and collectively, each of the following: (i) the Central Business District (CBD) Tolling Program Final Environmental Assessment, dated August April 2023, (ii) the Finding of No Significant Impact for the Central Business District (CBD) Tolling Program, dated June 2023, adopted by the Federal Highway Administration, as Federal Lead Agency, together with Central Business District (CBD) Tolling Program Reevaluation dated June 2024 and Central Business District (CBD) Tolling Program Reevaluation 2 dated November 2024, and any subsequent reevaluation or other document prepared pursuant to the National Environmental Policy Act, (iii) the Master Agreement for Mitigation Work between Issuer and the City dated March 14, 2025, together with any appended side letters or riders, and (iv) any other agreements with regional, state or municipal agencies and/or authorities as desirable and necessary to carry out environmental mitigation required by items (i) and (ii).
+[p113_c0006] Estimated Average Interest Rate shall mean, as to any Variable Interest Rate Obligations or Qualified Swap and as of any date of calculation, the average interest rate or rates anticipated to be borne by such Obligations or Qualified Swap, or by the combination of such arrangements, over the period or periods for which such rate or rates are anticipated to be in effect, all as estimated by an Authorized Officer.
+[p113_c0007] Excess Revenues Fund shall mean the Fund by that name established in Section 502.
+[p113_c0008] _10_
+[p113_c0009] _4928-0652-0920.14_
+[p113_c0010] _Master Page # 113 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 114
+
+[p114_c0001] Fiduciary or Fiduciaries shall mean any Trustee, any Registrar, any Paying Agent, any tender agent or any or all of them, as may be appropriate, or any Person appointed to act as a Fiduciary as provided in the Resolution.
+[p114_c0002] Fund or Funds shall mean each fund or all of the funds established in or pursuant to Article V of the Resolution.
+[p114_c0003] Indebtedness shall mean Senior Lien Indebtedness and Subordinate Lien Indebtedness.
+[p114_c0004] Independent Engineer shall mean an engineer or engineering firm or corporation of national reputation retained by the Issuer to perform the acts and carry out the duties provided for such engineer in the Resolution.
+[p114_c0005] Independent Traffic Consultant shall mean a firm or firms of national recognition with expertise and experience regarding the operation, management and financing of, and the collection of revenues from, areas of traffic congestion, retained by the Issuer to perform the acts and carry out the duties provided for such consultant in the Resolution.
+[p114_c0006] Interest Commencement Date shall mean, with respect to any particular Deferred Income Obligation, the date determined by Supplemental Resolution after which interest accruing on such Obligation shall be payable on the first interest payment date succeeding such Interest Commencement Date and periodically thereafter on the dates determined pursuant to such Supplemental Resolution.
+[p114_c0007] Issuer shall mean TBTA.
+[p114_c0008] Issuer Act shall mean the Triborough Bridge and Tunnel Authority Act, being Title 3 of Article 3 of the New York Public Authorities Law, as from time to time amended.
+[p114_c0009] LIRR shall mean The Long Island Rail Road Company and any successor thereto.
+[p114_c0010] MaBSTOA shall mean the Manhattan and Bronx Surface Transit Operating Authority and any successor thereto.
+[p114_c0011] Maximum Annual Aggregate Debt Service shall have the meaning set forth in Section 205.
+[p114_c0012] Maximum Annual Debt Service shall mean the maximum annual Calculated Debt Service for the then current and each future Debt Service Year on all Outstanding Senior Lien Indebtedness and Subordinate Lien Indebtedness.
+[p114_c0013] Maximum Annual Senior and Parity Subordinate Lien Debt Service shall have the meaning set forth in Section 206.
+[p114_c0014] Maximum Parity Annual Senior Lien Debt Service shall have the meaning set forth in Section 205.
+[p114_c0015] _11_
+[p114_c0016] _4928-0652-0920.14_
+[p114_c0017] _Master Page # 114 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 115
+
+[p115_c0001] Maximum Total Annual Senior Lien Debt Service shall have the meaning set forth in Section 205.
+[p115_c0002] MNCRC shall mean the Metro-North Commuter Railroad Company and any successor thereto.
+[p115_c0003] MTA shall mean the Metropolitan Transportation Authority, the corporation organized and existing under the MTA Act, and any successor thereto.
+[p115_c0004] MTA Act shall mean the Metropolitan Transportation Authority Act, being Title 11 of Article 5 of the New York Public Authorities Law, as from time to time amended.
+[p115_c0005] MTA Bus shall mean MTA Bus Company and any successor thereto.
+[p115_c0006] NYCDOT shall mean the New York City Department of Transportation.
+[p115_c0007] Obligation Anticipation Notes shall mean Senior Lien Obligation Anticipation Notes or Subordinate Lien Obligation Anticipation Notes, as the context may require.
+[p115_c0008] Obligations shall mean Senior Lien Obligations or Subordinate Lien Obligations, as the context may require.
+[p115_c0009] Obligations Event of Default shall mean a Senior Lien Obligations Event of Default and/or a Subordinate Lien Obligations Event of Default, as applicable.
+[p115_c0010] Obligations Trust Estate shall mean the Senior Lien Obligations Trust Estate or the Subordinate Lien Obligations Trust Estate, as the context may require.
+[p115_c0011] Operating Expenses shall mean (i) the Issuer's expenses for the payment of (a) operating, administration of, and maintaining the CRZ Tolling Program, including, without limitation, the CRZ Tolling Infrastructure (other than expenses paid or payable from the Reserve Maintenance Fund), the CRZ Tolling Collection System and the CRZ Tolling Customer Service Center, or (b) expenses for the payment to the City that are payable pursuant to the City MOU properly allocable to such CRZ Tolling Program, (ii) expenses, liabilities and compensation required to be paid under this Resolution not otherwise paid from the proceeds of any Obligations, amounts on deposit in the Excess Revenues Fund or other available monies of the Issuer and (iii) for the payment of environmental monitoring and mitigation costs in connection with the CRZ Tolling Program, for a total amount not to exceed $150,000,000 of out-of-pocket costs (excluding the value of discounts constituting mitigation). Notwithstanding the foregoing, Operating Expenses shall exclude (x) any costs and expenses attributable to the TBTA Transit and Commuter Project, (y) any costs or expenses for new construction or for reconstruction other than restoration of any part of the CRZ Tolling Program to the condition of serviceability thereof when new, and (z) any provision for depreciation, amortization or similar charges.
+[p115_c0012] Opinion of Bond Counsel shall mean an opinion signed by Nixon Peabody LLP, D. Seaton and Associates, P.A., P.C., Orrick, Herrington & Sutcliffe LLP, and Bryant Rabbino LLP, or any other attorney or firm of attorneys of nationally recognized standing in the field of law relating to the issuance of obligations by state and municipal entities, selected by the Issuer.
+[p115_c0013] _12_
+[p115_c0014] _4928-0652-0920.14_
+[p115_c0015] _Master Page # 115 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 116
+
+[p116_c0001] Outstanding , when used with reference to Obligations or Obligations of a Series, shall mean, as of any date, Obligations or Obligations of such Series theretofore or thereupon to be delivered under the Resolution except:
+- [p116_c0002] (i) Any Obligations canceled at or prior to such date; (ii) Obligations the principal and Redemption Price, if any, of and interest on which have been paid in accordance with the terms thereof; (iii) Obligations in lieu of or in substitution for which other Obligations shall have been delivered pursuant to Section 905, Article A-III of Annex A, or Section A-406 of Annex A ; (iv) Obligations deemed to have been paid as provided in subsection 2 of Section A-801 of Annex A ; (v) Put Obligations tendered or deemed tendered in accordance with the provisions of the Supplemental Resolution authorizing such Obligations on the applicable tender date, if the Purchase Price thereof and interest thereon shall have been paid or amounts are available and set aside for such payment as provided in such Supplemental Resolution, except to the extent such tendered Put Obligations thereafter may be resold pursuant to the terms thereof and of such Supplemental Resolution; and (vi) For the purpose of any consent to be given or other action to be taken by or upon the direction of Owners of a specified portion of Obligations Outstanding, Obligations excluded pursuant to Section A-811 of Annex A.
+[p116_c0003] The principal component of any Parity Debt shall be deemed to be Outstanding in a principal amount equal to the principal amount of the obligation then owed by the Issuer thereunder in lieu of the related Obligation, regardless of the authorized amount of the principal component of such Parity Debt or the related Obligation and provided that, unless otherwise required pursuant to the related Supplemental Resolution, the principal component of such Parity Debt shall not by itself increase the Outstanding principal amount of Obligations.
+[p116_c0004] Owner , or any similar terms, shall mean the registered owner of any Senior Lien Obligation or Subordinate Lien Obligation, in each case as shown on the books for the registration and transfer of such Obligations maintained in accordance with Section A-305 of Annex A .
+[p116_c0005] Parity Debt shall mean, as applicable, Senior Lien Parity Debt and/or Subordinate Lien Parity Debt.
+[p116_c0006] Parity Reimbursement Obligation has the meaning provided in subsection 4 of Section A-202 of Annex A with respect to Senior Lien Obligations or Subordinate Lien Obligations, as the context may require.
+[p116_c0007] _13_
+[p116_c0008] _4928-0652-0920.14_
+[p116_c0009] _Master Page # 116 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 117
+
+[p117_c0001] Parity Swap Obligation has the meaning provided in subsection 6 of Section A-202 of Annex A with respect to Senior Lien Obligations or Subordinate Lien Obligations, as the context may require.
+[p117_c0002] Paying Agent shall mean any paying agent for the Obligations of any Series and its successor or successors and any other Person which may at any time be substituted in its place pursuant to the Resolution.
+[p117_c0003] Permitted Debt Service Reserve Account Investments means and includes any of the following, if and to the extent the same are at the time legal for the investment of the Issuer's funds:
+[p117_c0004] (i) direct and general obligations of, or obligations the timely payment of principal and interest on which are unconditionally guaranteed by, the United States of America;
+[p117_c0005] (ii) obligations issued or guaranteed by any of the following:
+- [p117_c0006] (a) United States post office; (b) Federal National Mortgage Association; Federal Home Loan Mortgage Corporation; (c) Student Loan Marketing Association; (d) Export-Import Bank of the United States; (e) Federal Financing Bank; (f) Government National Mortgage Association; (g) Farmers Home Administration; (h) Federal Housing Administration; (i) Private Export Funding Corp; and (j) Federal Farm Credit Bank; or
+[p117_c0007] any indebtedness issued or guaranteed by any instrumentality or agency of the United States; provided, however, that any such Permitted Debt Service Reserve Account Investments purchased shall mature within two years of the date of such purchase.
+[p117_c0008] Person shall mean any individual, corporation, firm, partnership, joint venture, association, joint-stock company, trust, unincorporated association, limited liability company or other legal entity or group of entities, including any public benefit corporation, public instrumentality, quasi-governmental or governmental entity or any agency or subdivision thereof.
+[p117_c0009] Post-Refunding Annual Aggregate Debt Service shall have the meaning set forth in Section 207.
+[p117_c0010] Post-Refunding Annual Senior Lien Debt Service shall have the meaning set forth in Section 207.
+[p117_c0011] Pre-Refunding Annual Aggregate Debt Service shall have the meaning set forth in Section 207.
+[p117_c0012] _14_
+[p117_c0013] _4928-0652-0920.14_
+[p117_c0014] _Master Page # 117 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 118
+
+[p118_c0001] Pre-Refunding Annual Senior Lien Debt Service shall have the meaning set forth in Section 207.
+[p118_c0002] Principal Office of the Trustee shall mean the designated corporate trust office of the Trustee.
+[p118_c0003] Principal Installments shall mean, as of any date of calculation and with respect to any Series of Senior Lien Obligations or any Senior Lien Parity Debt or Subordinate Lien Obligations or Subordinate Lien Parity Debt, as applicable, (a) the principal amount of Outstanding Obligations of such Series, due on the dates and in the amounts specified by Supplemental Resolution, reduced by the principal amount of such Obligations which would be retired by reason of the payment when due and application in accordance with the Resolution of Sinking Fund Installments payable before such dates, plus the unsatisfied balance (determined as provided in Section A-502 of Annex A ) of any Sinking Fund Installments due on any certain future date for Obligations of such Series, together with such redemption premiums, if any, applicable on any such future date, and (b) with respect to any Parity Debt, the amount due thereunder on the dates and in the amounts established in accordance with Section A-202 of Annex A as a principal component of such Parity Debt payable on a parity with the Obligations.
+[p118_c0004] Principal Payment Date shall mean the dates specified as such in the applicable Supplemental Resolution.
+[p118_c0005] Purchase Price shall mean, with respect to any Obligation, 100% of the principal amount thereof plus accrued interest, if any, plus in the case of an Obligation subject to mandatory tender for purchase on a date when such Obligation is also subject to optional redemption at a premium, an amount equal to the premium that would be payable on such Obligation if redeemed on such date.
+[p118_c0006] Put Obligations shall mean Obligations which by their terms may be tendered at the option of the Owner thereof, or are subject to a mandatory tender other than at the election of the Issuer or a Related Entity, for payment or purchase prior to the stated maturity or redemption date thereof.
+[p118_c0007] Qualified Swap shall mean, to the extent from time to time permitted by law, with respect to Obligations, any financial arrangement (i) which is entered into by the Issuer with an entity that is a Qualified Swap Provider at the time the arrangement is entered into, (ii) which is a cap, floor or collar; forward rate; future rate; swap (such swap may be based on an amount equal either to the principal amount of such Obligations of the Issuer as may be designated or a notional principal amount relating to all or a portion of the principal amount of such Obligations); asset, index, price or market-linked transaction or agreement; other exchange or rate protection transaction agreement; other similar transaction (however designated); or any combination thereof; or any option with respect thereto, in each case executed by the Issuer for the purpose of moderating interest rate fluctuations, reducing debt service costs or creating either fixed interest rate Obligations or Variable Interest Rate Obligations on a synthetic basis or otherwise, and (iii) which has been designated in writing to the Trustee by an Authorized Officer as a Qualified Swap with respect to such Obligations.
+[p118_c0008] _15_
+[p118_c0009] _4928-0652-0920.14_
+[p118_c0010] _Master Page # 118 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 119
+
+[p119_c0001] Qualified Swap Provider shall mean an entity whose senior long term obligations, other senior unsecured long term obligations, financial program rating, counterparty rating, or claims paying ability, or whose payment obligations under an interest rate exchange agreement are guaranteed by an entity whose senior long term debt obligations, other senior unsecured long term obligations, financial program rating, counterparty rating, or claims paying ability, are rated either at least as high as (i) the third highest Rating Category of each Rating Agency then maintaining a rating for the Qualified Swap Provider or (ii) any such lower Rating Categories which each such Rating Agency indicates in writing to the Issuer and the Trustee will not, by itself, result in a reduction or withdrawal of its rating on the Outstanding Obligations subject to such Qualified Swap that is in effect prior to entering into such Qualified Swap.
+[p119_c0002] Rating Agency shall mean each nationally recognized statistical rating organization then maintaining a rating on the Obligations at the request of the Issuer.
+[p119_c0003] Rating Category shall mean one of the generic rating categories of any Rating Agency without regard to any refinement or gradation of such rating by a numerical modifier or otherwise.
+[p119_c0004] Rating Confirmation shall mean evidence that no rating then in effect from a Rating Agency will be withdrawn or reduced solely as the result of an action to be taken hereunder; provided, however, that no action requiring Rating Confirmation shall be undertaken unless at least one Rating Agency at that time maintains a rating on Obligations.
+[p119_c0005] Rebate Fund shall mean the fund by that name established in Section 502.
+[p119_c0006] Rebate Requirement shall have the meaning set forth in the Tax Certificate with respect to a Series of Obligations that are Tax Exempt Obligations.
+[p119_c0007] Record Date , except as otherwise provided by Supplemental Resolution or a certificate of an Authorized Officer, shall mean the date that is fifteen (15) days immediately preceding a payment date or other date on which an action is to be taken.
+[p119_c0008] Redemption Price shall mean, with respect to any Obligation, 100% of the principal amount thereof plus the applicable premium, if any, payable upon the redemption thereof pursuant to the Resolution.
+[p119_c0009] Refunding Obligations shall mean Refunding Senior Lien Obligations and/or Refunding Subordinate Lien Obligations.
+[p119_c0010] Refunding Senior Lien Obligations shall mean all Senior Lien Obligations authenticated and delivered on original issuance pursuant to Section 207.
+[p119_c0011] Refunding Subordinate Lien Obligations shall mean all Subordinate Lien Obligations authenticated and delivered upon original issuance pursuant to Section 207.
+[p119_c0012] Registrar shall mean any registrar for the Obligations of any Series and its successor or successors and any other Person which may at any time be substituted in its place pursuant to the Resolution.
+[p119_c0013] _16_
+[p119_c0014] _4928-0652-0920.14_
+[p119_c0015] _Master Page # 119 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 120
+
+[p120_c0001] Reimbursement Obligation has the meaning provided in subsection 4 of Section A-202 of Annex A.
+[p120_c0002] Related Entity shall mean any of the MTA, TBTA, MaBSTOA, the Transit Authority, MNCRC, LIRR, SIRTOA, MTA Bus and any affiliate or subsidiary of any of the foregoing now or hereafter established and designated as a Related Entity by an Authorized Officer.
+[p120_c0003] Required Rate Study Coverage Level shall have the meaning set forth in Section 602.
+[p120_c0004] Reserve Maintenance Fund shall mean the fund by that name established in Section 502.
+[p120_c0005] Reserve Maintenance Fund Requirement shall mean, for each calendar year the amount recommended as the Reserve Maintenance Fund Requirement for such calendar year by the Independent Engineer, determined in accordance with industry practices.
+[p120_c0006] Resolution shall mean this Congestion Relief Zone Toll Revenue Obligation Resolution (including the Master Glossary of Terms and Standard Resolution Provisions appended hereto as Annex A ), as amended from time to time.
+[p120_c0007] Responsible Officer shall mean any officer assigned to the corporate trust office of the Trustee, or any other officer of the Trustee customarily performing functions similar to those performed by any of such officers and who has direct responsibility for the administration of the Resolution, and also, with respect to a particular matter, any other officer, to whom such matter is referred because of such officer's knowledge of and familiarity with the particular subject.
+[p120_c0008] Securities Depository shall mean a recognized securities depository selected by the Issuer to maintain a book-entry system in respect to all or any portion of a Series of Obligations (including, as appropriate, any nominee thereof), and shall include any substitute for or successor to the Securities Depository initially acting as Securities Depository.
+[p120_c0009] Senior Lien Authorized Purpose shall mean to pay or to provide for the payment of all or part of the Capital Costs set forth in the definition thereof or as otherwise provided in a Supplemental Resolution.
+[p120_c0010] Senior Lien Debt Service Account shall mean the Account by that name established in Section 502.
+[p120_c0011] Senior Lien Debt Service Account Requirement shall mean, as of any date, an amount equal to the sum of the amounts of accrued and unpaid Debt Service with respect to all Outstanding Senior Lien Obligations and Senior Lien Parity Debt, calculating the accrued Debt Service with respect to Outstanding Senior Lien Obligations at an amount equal to the sum of (i) as estimated by an Authorized Officer, the interest on the Senior Lien Obligations and interest components of Senior Lien Parity Debt accrued and unpaid and to accrue to the end of the then current calendar month, and (ii) the Principal Installments due and unpaid and that portion of the Principal Installment for such Senior Lien Obligations and Senior Lien Parity Debt next due which would have accrued (if deemed to accrue in the manner set forth in the definition of Debt Service) to the end of such calendar month. For purposes of calculating required deposits relating to the Senior Lien Debt Service Account, accrued Debt Service on Senior Lien Indebtedness shall not include
+[p120_c0012] _17_
+[p120_c0013] _4928-0652-0920.14_
+[p120_c0014] _Master Page # 120 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 121
+
+[p121_c0001] amounts that have been deposited with the Senior Lien Trustee from sources other than CRZ Toll Revenues, nor any amounts that, as certified by an Authorized Officer, have been set aside hereunder or otherwise in trust for the payment thereof; provided, however, that the amount calculated pursuant to clause (i) above for any Series of Senior Lien Obligations shall never exceed the interest due and payable on such next succeeding Interest Payment Date (including additional interest pursuant to any related Senior Lien Parity Debt ) and the amount calculated pursuant to clause (ii) shall never exceed the Principal Installment due on the next succeeding Principal Payment Date; and provided further that , with respect to each Series of Senior Lien Obligations, commencing five Business Days prior to each Debt Service Payment Date, the Senior Lien Debt Service Account Requirement shall be no less than the interest and Principal Installments, if any, payable on such Debt Service Payment Date with respect to such Series. For purposes of computing the Senior Lien Debt Service Account Requirement, the Senior Lien Obligations of a Series and any Senior Lien Parity Debt payable on each different Debt Service Payment Date shall be treated as a separate Series, and if Senior Lien Obligations of any Series or any Senior Lien Parity Debt have different Interest and/or Principal Payment Dates, such computation shall be done separately in respect of each such Interest and/or Principal Payment Date.
+[p121_c0002] Senior Lien Debt Service Fund shall mean the Fund by that name established in Section 502.
+[p121_c0003] Senior Lien Debt Service Reserve Account shall mean the Account by that name established in Section 502.
+[p121_c0004] Senior Lien Indebtedness shall mean Senior Lien Obligations and Senior Lien Parity Debt.
+[p121_c0005] Senior Lien Minimum Revenue Requirement shall have the meaning set forth in Section 602.
+[p121_c0006] Senior Lien Obligation Anticipation Notes shall mean any such notes issued and delivered pursuant to Section A-203 of Annex A that are, or are anticipated by the Issuer to be paid, from the proceeds of the Senior Lien Obligations in anticipation of which such notes are being issued, except that, as provided in Section A-203 of Annex A , all or any portion of such notes may be payable from amounts available to pay Subordinated Indebtedness or any other money available therefor and not pledged under this Resolution.
+[p121_c0007] Senior Lien Obligations shall mean any bonds, notes, commercial paper or other form of indebtedness of the Issuer payable from the Senior Lien Debt Service Account, authorized by Section 201 and delivered pursuant to Section 202 or authorized pursuant to Section A-203 of Annex A , but excluding , for purposes of making any monthly deposits to the Senior Lien Debt Service Account, Senior Lien Obligation Anticipation Notes to the extent payable from, and expected by an Authorized Officer to be paid from, the proceeds of Senior Lien Obligations or other Senior Lien Obligation Anticipation Notes.
+[p121_c0008] Senior Lien Obligations COI Subaccount shall mean the applicable Subaccount by that name established in the Senior Lien Obligations Proceeds Fund for a Series of Senior Lien Obligations pursuant to Section 504.
+[p121_c0009] _18_
+[p121_c0010] _4928-0652-0920.14_
+[p121_c0011] _Master Page # 121 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 122
+
+[p122_c0001] Senior Lien Obligations Event of Default shall mean the events defined as such in Section 701.
+[p122_c0002] Senior Lien Obligations Proceeds Account shall have the meaning given such term in Section 504.
+[p122_c0003] Senior Lien Obligations Proceeds Fund shall mean the fund by that name established in Section 502.
+[p122_c0004] Senior Lien Obligations Trust Estate shall mean, collectively, but subject to the terms and provisions of Section 501 and the proviso contained in Section 603 hereof, all right, title and interest of the Issuer in:
+- [p122_c0005] (i) the proceeds of the sale of the Senior Lien Obligations; (ii) the CRZ Pledged Net Tolls Revenue Fund, any money on deposit therein and any money received and held by the Issuer which is required to be deposited therein; (iii) the Senior Lien Obligations Proceeds Fund, the Senior Lien Debt Service Fund, and the Reserve Maintenance Fund, including the Accounts and Subaccounts therein, any money on deposit therein and any money received and held by the Issuer which is required to be deposited therein; provided, however, that , Funds, Accounts and Subaccounts created in connection with the issuance of Variable Interest Rate Obligations, Put Obligations or Senior Lien Parity Debt and any money received and held by the Issuer which is required to be deposited therein are specifically excepted from the Senior Lien Obligations Trust Estate to the extent excepted by Supplemental Resolution; and (iv) all funds, moneys and securities and any and all other rights and interests in property, whether tangible or intangible, from time to time hereafter by delivery or by writing of any kind conveyed, mortgaged, pledged, assigned or transferred as and for additional security hereunder for the Senior Lien Obligations by the Issuer, or by anyone on its behalf, or with its written consent, to the Senior Lien Trustee, which is hereby authorized to receive any and all such property at any and all times, and to hold and apply the same subject to the terms hereof.
+[p122_c0006] Senior Lien Owner shall mean an Owner of Senior Lien Obligations issued under the Resolution.
+[p122_c0007] Senior Lien Parity Debt shall mean any Parity Reimbursement Obligation, any Parity Swap Obligation or any other contract, agreement or other obligation of the Issuer designated as constituting “Senior Lien Parity Debt” in a certificate of an Authorized Officer delivered to the Senior Lien Trustee; provided, however, that any such Parity Reimbursement Obligation, Parity Swap Obligation or other contract, agreement or other obligation shall not constitute Senior Lien Parity Debt under this definition solely to the extent of any obligations to pay termination or other fees, expenses, indemnification or other similar payments to the counterparty to such arrangement; provided further that Parity Reimbursement Obligations under this definition may include
+[p122_c0008] _19_
+[p122_c0009] _4928-0652-0920.14_
+[p122_c0010] _Master Page # 122 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 123
+
+[p123_c0001] accelerated principal amortization provisions to the extent permitted by subsection 4 of Section A-202 of Annex A .
+[p123_c0002] Series shall mean all of the Obligations delivered on original issuance pursuant to a single Supplemental Resolution and denominated therein a single series, and any Obligations thereafter delivered in lieu of or in substitution therefor pursuant to Section 905, Article A-III of Annex A , or Section A-406 of Annex A , regardless of variations in maturity, interest rate, or other provisions.
+[p123_c0003] Sinking Fund Installment shall mean, as of a particular date, any Sinking Fund Installment established pursuant to paragraph (m) of subsection 1 of Section A-201 of Annex A .
+[p123_c0004] SIRTOA shall mean the Staten Island Rapid Transit Operating Authority and any successor thereto.
+[p123_c0005] State shall mean the State of New York.
+[p123_c0006] Subaccount or Subaccounts shall mean each subaccount or all of the subaccounts established in Article V, as the case may be.
+[p123_c0007] Subordinate Lien Authorized Purpose shall mean to pay or to provide for the payment of all or part of the Capital Costs set forth in clause (i)(A) in the definition thereof, and if provided for in a Supplemental Resolution, Capital Costs set forth in (i)(B) in the definition thereof, or as otherwise provided in a Supplemental Resolution.
+[p123_c0008] Subordinate Lien Debt Service Account shall mean the Account by that name established in Section 502.
+[p123_c0009] Subordinate Lien Debt Service Account Requirement shall mean, as of any date, an amount equal to the sum of the amounts of accrued and unpaid Debt Service with respect to all Outstanding Subordinate Lien Obligations and Subordinate Lien Parity Debt, calculating the accrued Debt Service with respect to Outstanding Subordinate Lien Obligations at an amount equal to the sum of (i) as estimated by an Authorized Officer, the interest on the Subordinate Lien Obligations and interest components of Subordinate Lien Parity Debt accrued and unpaid and to accrue to the end of the then current calendar month, and (ii) Subordinate Lien Obligation Principal Installments due and unpaid and that portion of the Subordinate Lien Obligation Principal Installment for such Subordinate Lien Obligations and Subordinate Lien Parity Debt next due which would have accrued (if deemed to accrue in the manner set forth in the definition of Debt Service) to the end of such calendar month. For purposes of calculating required deposits relating to the Subordinate Lien Debt Service Account, accrued Debt Service on Subordinate Lien Indebtedness shall not include amounts that have been deposited with the Subordinate Lien Trustee from sources other than CRZ Toll Revenues, nor any amounts that, as certified by an Authorized Officer, have been set aside hereunder or otherwise in trust for the payment thereof; provided, however, that the amount calculated pursuant to clause (i) above for any Series of Subordinate Lien Obligations shall never exceed the interest due and payable on such next succeeding Interest Payment Date (including additional interest pursuant to any related Subordinate Lien Parity Debt) and the amount calculated pursuant to clause (ii) shall never exceed the Principal Installment due on the next succeeding Principal Payment Date; and provided further that , with respect to each Series of Subordinate Lien Obligations, commencing five Business Days prior to each Debt
+[p123_c0010] _20_
+[p123_c0011] _4928-0652-0920.14_
+[p123_c0012] _Master Page # 123 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 124
+
+[p124_c0001] Service Payment Date, the Subordinate Lien Debt Service Account Requirement shall be no less than the interest and Principal Installments, if any, payable on such Debt Service Payment Date with respect to such Series. For purposes of computing the Subordinate Lien Debt Service Account Requirement, the Subordinate Lien Obligations of a Series and any Subordinate Lien Parity Debt payable on each different Debt Service Payment Date shall be treated as a separate Series, and if Subordinate Lien Obligations of any Series or any Subordinate Lien Parity Debt have different Interest and/or Principal Payment Dates, such computation shall be done separately in respect of each such Interest and/or Principal Payment Date.
+[p124_c0002] Subordinate Lien Debt Service Fund shall mean the Fund by that name established in Section 502.
+[p124_c0003] Subordinate Lien Debt Service Reserve Account shall mean the Account by that name established in Section 502.
+[p124_c0004] Subordinate Lien Indebtedness shall mean Subordinate Lien Obligations and Subordinate Lien Parity Debt.
+[p124_c0005] Subordinate Lien Obligation Anticipation Notes shall mean any such notes issued and delivered pursuant to Section A-203 of Annex A that are, or are anticipated by the Issuer to be paid, from the proceeds of the Subordinate Lien Obligations in anticipation of which such notes are being issued, except that, as provided in Section A-203 of Annex A , all or any portion of such notes may be payable from amounts available to pay Subordinated Indebtedness that is further subordinated to the payment of Subordinate Lien Obligations or any other money available therefor and not pledged under this Resolution.
+[p124_c0006] Subordinate Lien Obligations shall mean any bonds, notes, commercial paper or other forms of indebtedness of the Issuer, payable from the Subordinate Lien Debt Service Account, authorized by Section 203 and delivered pursuant to Section 204 or authorized pursuant to Section A-203 of Annex A , but excluding , for purposes of making any monthly deposits to the Subordinate Lien Debt Service Account, Subordinate Lien Obligation Anticipation Notes to the extent payable from, and expected by an Authorized Officer to be paid from, the proceeds of Subordinate Lien Obligations or other Subordinate Lien Obligation Anticipation Notes.
+[p124_c0007] Subordinate Lien Obligations COI Subaccount shall mean the applicable Subaccount by that name established in the Subordinate Lien Obligations Proceeds Fund for a Series of Subordinate Lien Obligations pursuant to Section 505.
+[p124_c0008] Subordinate Lien Obligations Event of Default shall mean the events defined as such in Section 704.
+[p124_c0009] Subordinate Lien Obligations Proceeds Account shall mean the Account by that name established in 505.
+[p124_c0010] Subordinate Lien Obligations Proceeds Fund shall mean the Fund by that name established in 502.
+[p124_c0011] _21_
+[p124_c0012] _4928-0652-0920.14_
+[p124_c0013] _Master Page # 124 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 125
+
+[p125_c0001] Subordinate Lien Obligations Trust Estate shall mean, collectively, but subject to the terms and provisions of subordination set forth in Article V and the proviso contained in Section 605 hereof, all right, title and interest of the Issuer in:
+- [p125_c0002] (i) the proceeds of the sale of the Subordinate Lien Obligations; (ii) the CRZ Pledged Net Tolls Revenue Fund, any money on deposit therein and any money received and held by the Issuer which is required to be deposited therein; (iii) the Subordinate Lien Obligations Proceeds Fund and the Subordinate Lien Debt Service Fund, including the Accounts and Subaccounts therein, any money on deposit therein and any money received and held by the Issuer which is required to be deposited therein, provided, however, that , Variable Interest Rate Subordinate Lien Obligations, Subordinate Lien Put Obligations or Subordinate Lien Parity Debt and any money received and held by the Issuer which is required to be deposited therein are specifically excepted from the Subordinate Lien Obligations Trust Estate to the extent excepted by the Supplemental Resolution; and (iv) all funds, moneys and securities and any and all other rights and interests in property, whether tangible or intangible, from time to time hereafter by delivery or by writing of any kind conveyed, mortgaged, pledged, assigned or transferred as and for additional security hereunder for the Subordinate Lien Obligations by the Issuer, or by anyone on its behalf, or with its written consent, to the Subordinate Lien Trustee, which is hereby authorized to receive any and all such property at any and all times, and to hold and apply the same subject to the terms hereof.
+[p125_c0003] Subordinate Lien Owner shall mean an Owner of Subordinate Lien Obligations issued under the Resolution.
+[p125_c0004] Subordinate Lien Parity Debt shall mean any Parity Reimbursement Obligations, any Parity Swap Obligations or any other contract, agreement or other Subordinate Lien Obligations of the Issuer designated as constituting “Subordinate Lien Parity Debt” in a certificate of an Authorized Officer delivered to the Subordinate Lien Trustee; provided, however, that any such Parity Reimbursement Obligation, Parity Swap Obligation or other contract, agreement or other Subordinate Lien Obligations shall not constitute Subordinate Lien Parity Debt under this definition solely to the extent of any obligation to pay termination or other fees, expenses, indemnification or other similar payments to the counterparty to such arrangement; provided further that such Parity Reimbursement Obligations under this definition may include accelerated principal amortization provisions to the extent permitted by subsection 4 of Section A-202 of Annex A .
+[p125_c0005] Subordinate Lien Trustee shall mean the Senior Lien Trustee or, if so provided in the Supplemental Resolution creating any Subordinate Lien Obligations or Subordinate Lien Parity
+[p125_c0006] _22_
+[p125_c0007] _4928-0652-0920.14_
+[p125_c0008] _Master Page # 125 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 126
+
+[p126_c0001] Debt, the entity meeting the requirements of subdivision 3 of Section A-710 of Annex A and designated as Subordinate Lien Trustee in a Supplemental Resolution.
+[p126_c0002] Subordinated Contract Obligation shall mean, (i) with respect to Senior Lien Obligations, any payment obligation (other than a payment obligation constituting Senior Lien Indebtedness) arising under (a) any Credit Facility which has been designated as constituting a “Subordinated Contract Obligation” in a certificate of an Authorized Officer delivered to the Applicable Trustees, (b) any Qualified Swap or portion thereof which has been designated as constituting a “Subordinated Contract Obligation” in a certificate of an Authorized Officer delivered to the Applicable Trustees, and (c) any other contract, agreement or other obligation of the Issuer designated as constituting a “Subordinated Contract Obligation” in a certificate of an Authorized Officer delivered to the Applicable Trustees, and (ii) with respect to Subordinate Lien Obligations, any payment obligation (other than a payment obligation constituting Subordinate Lien Indebtedness) arising under (a) any Credit Facility which has been designated as constituting a “Subordinated Contract Obligation” in a certificate of an Authorized Officer delivered to the Applicable Trustees, (b) any Qualified Swap or portion thereof which has been designated as constituting a “Subordinated Contract Obligation” in a certificate of an Authorized Officer delivered to the Applicable Trustees, and (c) any other contract, agreement or other obligation of the Issuer designated as constituting a “Subordinated Contract Obligation” in a certificate of an Authorized Officer delivered to the Applicable Trustees. The Issuer may incur multiple levels of Subordinated Contract Obligations, and the priority of payment with respect to each such level of subordination shall be determined by the Issuer in connection with the incurrence thereof. Any Subordinated Contract Obligation described in clause (i) or (ii) above shall be payable and secured in a manner permitted by Article V of the Resolution, and any lien on and pledge of any portion of the Senior Lien Obligations Trust Estate and the Subordinate Lien Obligations Trust Estate securing Subordinated Contract Obligations shall be junior and inferior to the lien on and pledge herein created of each of the Senior Lien Obligations Trust Estate for the payment of the Senior Lien Obligations and Senior Lien Parity Debt and the Subordinate Lien Obligations Trust Estate for the payment of Subordinate Lien Obligations and Subordinate Lien Parity Debt in the order of priority of payment determined therefor by the Issuer.
+[p126_c0003] Subordinated Indebtedness shall mean, (i) with respect to Senior Lien Obligations, any bond, note or other indebtedness authorized by Supplemental Resolution or other resolution of the Issuer and designated as constituting “Subordinated Indebtedness” in a certificate of an Authorized Officer delivered to the Applicable Trustees, and (ii) with respect to Subordinate Lien Obligations, any bond, note or other indebtedness authorized by Supplemental Resolution or other resolution of the Issuer and designated as constituting “Subordinated Indebtedness” in a certificate of an Authorized Officer delivered to the Applicable Trustees. The Issuer may incur multiple levels of Subordinated Indebtedness, and the priority of payment with respect to each such level of subordination shall be determined by the Issuer in connection with the incurrence thereof. Any Subordinated Indebtedness in clause (i) or (ii) above shall be payable and secured in a manner permitted by Article V of the Resolution, and any lien on and pledge of any portion of the Senior Lien Obligations Trust Estate and the Subordinate Lien Obligations Trust Estate securing Subordinated Indebtedness shall be junior and inferior to the lien on and pledge herein created of each of the Senior Lien Obligations Trust Estate for the payment of the Senior Lien Obligations and Senior Lien Parity Debt and the Subordinate Lien Obligations Trust Estate for the payment of
+[p126_c0004] _23_
+[p126_c0005] _4928-0652-0920.14_
+[p126_c0006] _Master Page # 126 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 127
+
+[p127_c0001] Subordinate Lien Obligations and Subordinate Lien Parity Debt in the order of priority of payment determined therefor by the Issuer.
+[p127_c0002] Supplemental Resolution shall mean any resolution supplemental to or amendatory of the Resolution adopted by the Issuer in accordance with the Resolution and, except as the context may otherwise require, including any related Certificate of Determination.
+[p127_c0003] TA Act shall mean the New York City Transit Authority Act being Title 9 of Article 5 of the New York Public Authorities law, as amended from time to time.
+[p127_c0004] Tax Certificate shall mean that certain tax certificate relating to arbitrage and the provisions of Sections 141-150 of the Internal Revenue Code of 1986 or other similar document with respect to each Series of Obligations or Parity Debt and dated as of the date of issuance of such Obligations or Parity Debt.
+[p127_c0005] Taxable Obligations shall mean any Obligations which are not Tax-Exempt Obligations.
+[p127_c0006] Tax-Exempt Obligations shall mean any Obligations the interest on which is intended by the Issuer to be generally excluded from gross income for federal income tax purposes and which are designated as Tax-Exempt Obligations in the Supplemental Resolution authorizing such obligations.
+[p127_c0007] TBTA shall mean the Triborough Bridge and Tunnel Authority, a body corporate and politic constituting a public benefit corporation, organized and existing under and by, virtue of the laws of the State of New York.
+[p127_c0008] TBTA Act shall mean the Triborough Bridge and Tunnel Authority Act, being Title 3 of Article 3 of the New York Public Authorities Law, as amended from time to time.
+[p127_c0009] TBTA Transit and Commuter Project shall mean any Transportation District Project that may be financed with obligations issued by the Issuer in accordance with the provisions of Section 553-j of the Issuer Act for the benefit of any transit system or commuter system.
+[p127_c0010] Transit Authority shall mean the New York City Transit Authority, the corporation organized and existing under the TA Act, and any successor thereto.
+[p127_c0011] Transportation District shall mean the Metropolitan Commuter Transportation District created by Section 1262 of the MTA Act.
+[p127_c0012] Transportation District Project shall mean any project, program or facility that the Issuer or any other Related Entity (in either case, by itself or with any other Person) is authorized from time to time by law to plan, design, acquire, establish, construct, effectuate, operate, maintain, renovate, improve, extend, rehabilitate or repair within, or for the benefit of, the Transportation District.
+[p127_c0013] Trustee shall mean the Applicable Trustee.
+[p127_c0014] Twelve-Month Period shall have the meaning set forth in Section 205.
+[p127_c0015] _24_
+[p127_c0016] _4928-0652-0920.14_
+[p127_c0017] _Master Page # 127 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 128
+
+[p128_c0001] Twelve-Month Period CRZ Pledged Net Toll Revenues shall have the meaning set forth in Section 205.
+[p128_c0002] Valuation Date shall mean (i) with respect to any Capital Appreciation Obligations the date or dates set forth in the Supplemental Resolution authorizing such Obligations on which specific Accreted Values are assigned to the Capital Appreciation Obligations and (ii) with respect to any Deferred Income Obligations, the date or dates on or prior to the Interest Commencement Date set forth in the Supplemental Resolution authorizing such Obligations on which specific Appreciated Values are assigned to the Deferred Income Obligations.
+[p128_c0003] Variable Interest Rate shall mean a variable interest rate to be borne by any Obligation. The method of computing such variable interest rate shall be specified in the Supplemental Resolution authorizing such Series of Obligations.
+[p128_c0004] Variable Interest Rate Obligations shall mean Obligations which bear a Variable Interest Rate.
+[p128_c0005] VPPP Agreement shall mean the Agreement, dated November 21, 2024, by and among Federal Highway Administration, United States Department of Transportation, New York State Department of Transportation, the Issuer and the New York City Department of Transportation, as the same may be amended from time to time.
+[p128_c0006] _25_
+[p128_c0007] _4928-0652-0920.14_
+[p128_c0008] _Master Page # 128 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 129
+
+### [p129_c0001] ANNEX A STANDARD RESOLUTION PROVISIONS
+[p129_c0002] _4906-1183-2920.15_
+[p129_c0003] _Master Page # 129 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 130
+
+### [p130_c0001] DRAFT 10/22/2025
+### [p130_c0002] STANDARD RESOLUTION PROVISIONS
+[p130_c0003] _4926-9546-3778.3_
+[p130_c0004] _Master Page # 130 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 131
+
+### [p131_c0001] TABLE OF CONTENTS STANDARD RESOLUTION PROVISIONS
+[p131_c0002] Page
+### [p131_c0003] ARTICLE A-I DEFINITIONS AND STATUTORY AUTHORITY
+[p131_c0004] Section A-101. Definitions..... 1 Section A-102. Rules of Construction ..... 1 Section A-103. Authority for the Resolution ..... 2 Section A-104. Resolution to Constitute Contract..... 2
+### [p131_c0005] ARTICLE A-II GENERAL PROVISIONS FOR ISSUANCE OR INCURRENCE OF OBLIGATIONS, PARITY DEBT AND OBLIGATION ANTICIPATION NOTES
+[p131_c0006] Section A-201. General Provisions for Issuance of Obligations..... 3 Section A-202. Credit Facilities; Qualified Swaps and Other Similar Arrangements; Parity Debt ..... 6 Section A-203. Obligation Anticipation Notes ..... 8
+### [p131_c0007] ARTICLE A-III GENERAL TERMS AND PROVISIONS OF OBLIGATIONS
+[p131_c0008] Section A-301. Medium of Payment; Form and Date..... 9 Section A-302. Legends ..... 9 Section A-303. Execution and Authentication..... 9 Section A-304. Interchangeability of Obligations ..... 10 Section A-305. Negotiability, Transfer and Registry..... 10 Section A-306. Transfer of Obligations ..... 10 Section A-307. Regulations With Respect to Exchanges and Transfers ..... 11 Section A-308. Obligations Mutilated, Destroyed, Stolen or Lost ..... 11 Section A-309. Book-Entry-Only System..... 11
+### [p131_c0009] ARTICLE A-IV REDEMPTION AND TENDER OF OBLIGATIONS
+[p131_c0010] Section A-401. Privilege of Redemption and Redemption Price..... 13 Section A-402. Redemption at the Election of the Issuer; Tender to Related Entities ..... 13 Section A-403. Redemption Otherwise Than at the Issuer's Election..... 14 Section A-404. Selection of Obligations to Be Redeemed ..... 14 Section A-405. Notice of Redemption ..... 14 Section A-406. Payment of Redeemed Obligations..... 15
+### [p131_c0011] ARTICLE A-V INVESTMENT OF FUNDS; SINKING FUND INSTALLMENTS; CANCELLATION AND DISPOSITION OF OBLIGATIONS
+[p131_c0012] Section A-501. Investment of Funds..... 16 Section A-502. Satisfaction of Sinking Fund Installments ..... 16 Section A-503. Cancellation and Disposition of Obligations ..... 17
+### [p131_c0013] ARTICLE A-VI PARTICULAR COVENANTS OF THE ISSUER
+[p131_c0014] Section A-601. Payment of Obligations and Parity Debt ..... 19 Section A-602. Extension of Payment of Obligations ..... 19
+[p131_c0015] _i_
+[p131_c0016] _4926-9546-3778.3_
+[p131_c0017] _Master Page # 131 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 132
+
+### [p132_c0001] Table of Contents (continued)
+[p132_c0002] Page Section A-603. Offices for Servicing Obligations ..... 19 Section A-604. Further Assurance ..... 19 Section A-605. Accounts and Reports ..... 20 Section A-606. General ..... 20
+### [p132_c0003] ARTICLE A-VII CONCERNING THE TRUSTEE, PAYING AGENTS AND THE REGISTRAR
+[p132_c0004] Section A-701. Trustee; Appointment and Acceptance of Duties ..... 21 Section A-702. Duties, Liabilities and Rights of the Trustee ..... 21 Section A-703. Paying Agents and Registrars; Appointment and Acceptance of Duties..... 23 Section A-704. Responsibilities of Fiduciaries..... 23 Section A-705. Evidence on Which Fiduciaries May Act ..... 23 Section A-706. Compensation ..... 24 Section A-707. Certain Permitted Acts..... 24 Section A-708. Resignation of Trustee ..... 24 Section A-709. Removal of Trustee..... 25 Section A-710. Appointment of Successor Trustee ..... 25 Section A-711. Transfer of Rights and Property to Successor Trustee..... 26 Section A-712. Merger or Consolidation..... 26 Section A-713. Resignation or Removal of Paying Agent or Registrar and Appointment of Successor ..... 26 Section A-714. Adoption of Authentication ..... 27 Section A-715. Continuing Disclosure Agreements ..... 27
+### [p132_c0005] ARTICLE A-VIII MISCELLANEOUS
+[p132_c0006] Section A-801. Defeasance ..... 28 Section A-802. Evidence of Signatures of Owners of Obligations and Ownership of Obligations..... 29 Section A-803. Money Held for Particular Obligations..... 30 Section A-804. General Regulations as to Money and Funds ..... 30 Section A-805. Preservation and Inspection of Documents..... 31 Section A-806. Parties Interest Herein..... 31 Section A-807. No Recourse on the Obligations ..... 31 Section A-808. Successors and Assigns..... 31 Section A-809. Business Days ..... 31 Section A-810. Severability of Invalid Provisions..... 31 Section A-811. Exclusion of Obligations..... 32 Section A-812. Governing Law ..... 32
+[p132_c0007] _ii_
+[p132_c0008] _4926-9546-3778.3_
+[p132_c0009] _Master Page # 132 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 133
+
+### [p133_c0001] STANDARD RESOLUTION PROVISIONS
+### [p133_c0002] ARTICLE A-I
+### [p133_c0003] DEFINITIONS AND STATUTORY AUTHORITY
+[p133_c0004] Section A-101. Definitions. Capitalized terms used but not otherwise defined in this Annex A shall have the meanings set forth in the Master Glossary of Terms (except as the context may otherwise require).
+### [p133_c0005] Section A-102. Rules of Construction.
+[p133_c0006] 1. Words of one gender shall be deemed and construed to include correlative words of any other gender. Except where the context otherwise requires, words importing the singular number shall include the plural number and vice versa, and words importing persons shall include firms, associations and corporations.
+[p133_c0007] 2. Except as otherwise specified herein, all references in the Resolution (including this Annex A) to Articles, Sections, and other subdivisions are to the corresponding Articles, Sections or subdivisions of the Resolution (including this Annex A), and the words herein, hereof, hereunder and other words of similar import refer to the Resolution as a whole (including this Annex A) and not to any particular Article, Section or subdivision of the Resolution or of this Annex A. References in the Resolution to Articles or Sections with “A-” preceding the number of an Article or Section are to such Article or Section of this Annex A.
+[p133_c0008] 3. This Annex A constitutes an integral part of the Resolution and, except to the extent provided in the next 2 sentences, has the same force and effect as if set forth in the forepart of the Resolution. To the extent expressly provided in the Resolution (not including this Annex A), the Issuer may negate, amend or modify any provision of this Annex A. In the event of any conflict between this Annex A and the forepart of the Resolution, the forepart of the Resolution shall control.
+[p133_c0009] 4. The headings or titles of the several Articles and Sections hereof, and any table of contents appended to copies hereof (including any table of contents in the Resolution), shall be solely for convenience of reference and shall not limit or otherwise affect the meaning, construction or effect of the Resolution (including this Annex A) or describe the scope or intent of any provisions hereof.
+[p133_c0010] 5. All accounting terms not otherwise defined herein have the meanings assigned to them in accordance with applicable generally accepted accounting principles as in effect from time to time.
+[p133_c0011] 6. All references herein to resolutions, contracts or other agreements shall be deemed to include any amendments to such documents that are approved in accordance with the terms thereof and hereof.
+[p133_c0012] 7. Every “request,” “order,” “demand,” “application,” “appointment,” “notice,” “statement,” “certificate,” “consent,” or similar action hereunder by any party shall, unless the
+[p133_c0013] _A-1_
+[p133_c0014] _4926-9546-3778.3_
+[p133_c0015] _Master Page # 133 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 134
+
+[p134_c0001] form thereof is specifically provided, be in writing signed by a duly authorized representative of such party with a duly authorized signature, which may be delivered and “signed” pursuant to facsimile or other electronic-mail transmission in accordance with applicable law and practice.
+[p134_c0002] 8. The word “or” is not exclusive.
+[p134_c0003] 9. The word “including” means including without limitation.
+[p134_c0004] 10. All references herein to “Obligations”, “Refunding Obligations”, “Obligation Anticipation Notes” and “Parity Debt”, shall refer to either Senior Lien Obligations or Second Lien Obligations, Refunding Senior Lien Obligations or Refunding Subordinate Lien Obligations, Senior Lien Obligation Anticipation Notes or Subordinate Lien Obligation Anticipation Notes, and Senior Lien Parity Debt or Subordinate Lien Parity Debt, respectively, in each case as required by the context.
+[p134_c0005] Section A-103. Authority for the Resolution. The Resolution is adopted pursuant to the Issuer Act.
+[p134_c0006] Section A-104. Resolution to Constitute Contract. In consideration of the purchase and acceptance of any and all of the Obligations and Parity Debt authorized to be issued hereunder by those who are Owners of the Obligations and Parity Debt from time to time, the Resolution shall be deemed to be and shall constitute a contract between the Issuer and the Owners from time to time of the Obligations and Parity Debt; and the pledge made in the Resolution and the covenants and agreements therein set forth to be performed on behalf of the Issuer shall be for the equal benefit, protection and security of the Owners of any and all of the Obligations and Parity Debt with the same characteristics and terms, all of which, regardless of the time or times of their authentication, issuance and delivery, or maturity, shall be of equal rank without preference, priority or distinction of any of the Obligations or Parity Debt over any other Obligations or Parity Debt, except as expressly provided in or permitted by the Resolution.
+[p134_c0007] _A-2_
+[p134_c0008] _4926-9546-3778.3_
+[p134_c0009] _Master Page # 134 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 135
+
+### [p135_c0001] ARTICLE A-II
+### [p135_c0002] GENERAL PROVISIONS FOR ISSUANCE OR INCURRENCE OF OBLIGATIONS, PARITY DEBT AND OBLIGATION ANTICIPATION NOTES
+[p135_c0003] Section A-201. General Provisions for Issuance of Obligations. 1. Obligations may be issued pursuant to a Supplemental Resolution in such principal amount or amounts for each Series or subseries as may be specified in such Supplemental Resolution. Obligations of any Series or subseries shall be authorized by a Supplemental Resolution which shall specify, among other things, the following matters (or the manner of determining such matters):
+[p135_c0004] (a) The authorized principal amount, designation and Series of such Obligations;
+[p135_c0005] (b) The purpose or purposes for which such Obligations are being issued, which shall be an Authorized Purpose;
+[p135_c0006] (c) The dates and the maturity dates of the Obligations of such Series;
+[p135_c0007] (d) If the Obligations of such Series are interest bearing Obligations, the interest rates of the Obligations of such Series and the interest payment dates therefor;
+[p135_c0008] (e) If Obligations of such Series are Capital Appreciation Obligations, the Valuation Dates for such Obligations and the Accreted Value on each such Valuation Date;
+[p135_c0009] (f) If Obligations of such Series are Deferred Income Obligations, the Interest Commencement Date for such Obligations, the Valuation Dates prior to the Interest Commencement Date for such Obligations and the Appreciated Value on each such Valuation Date;
+[p135_c0010] (g) If Obligations of such Series are Capital Appreciation Obligations or Deferred Income Obligations, the manner in which and the period during which principal and interest shall be deemed to accrue on such Obligations;
+[p135_c0011] (h) If Obligations of such Series are Variable Interest Rate Obligations, the maximum interest rate, if any, or the method of calculating such maximum rate for such Obligations, and the provisions, if any, as to the calculation or change of Variable Interest Rates;
+[p135_c0012] (i) If Obligations of such Series are Put Obligations, provisions regarding tender for purchase or redemption thereof and payment of the purchase or Redemption Price thereof;
+[p135_c0013] (j) The denominations of and the manner of dating, numbering and lettering, the Obligations of such Series;
+[p135_c0014] (k) The Paying Agents, if any, and the places of payment of the principal and Redemption Price, if any, of, and interest on, the Obligations of such Series;
+[p135_c0015] _A-3_
+[p135_c0016] _4926-9546-3778.3_
+[p135_c0017] _Master Page # 135 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 136
+
+[p136_c0001] (l) The Redemption Prices, if any, and the redemption terms, if any, for the Obligations of such Series, provided that Obligations of any maturity for which Sinking Fund Installments shall be established pursuant to paragraph (m) of this subsection 1 shall in any event be redeemable, or payable at maturity, by application of the Sinking Fund Installments for such Obligations on the due dates of such Sinking Fund Installments;
+[p136_c0002] (m) The amount and due date of each Sinking Fund Installment, if any, for Obligations of like maturity of such Series;
+[p136_c0003] (n) Provisions necessary to authorize, in compliance with all applicable law, Obligations of such Series to be issued in the form of Obligations issued and held in book-entry form on the books of the Issuer or any Fiduciary appointed for that purpose by the Issuer and, in connection therewith, make such additional changes in the Resolution, not adverse to the rights of the Owners of the Obligations, as are necessary or appropriate to accomplish or recognize such book-entry form Obligations and specify and determine the matters and things relative to the issuance of such book-entry form Obligations as are appropriate or necessary;
+[p136_c0004] (o) To the extent applicable, the provisions relating to (a) any Credit Facility, Qualified Swap or other financial arrangement entered into in connection with the issuance of the Obligations of such Series, including the delivery of additional security in connection with such Obligations in accordance with the provisions of the definitions of Senior Lien Obligations Trust Estate and Subordinate Lien Obligations Trust Estate, and (b) the obligations payable thereunder;
+[p136_c0005] (p) The amount, if any, to be deposited in the Obligations Proceeds Fund or any Account therein;
+[p136_c0006] (q) If so determined by the Issuer, provisions for the application of any money available therefor to the purchase, exchange or redemption of Obligations of such Series and for the order of purchase, exchange or redemption of such Obligations;
+[p136_c0007] (r) If so determined by the Issuer, provisions for the sale of the Obligations of such Series, including the requirements for issuing Additional Obligations that are different from other Obligations of the same lien level;
+[p136_c0008] (s) The forms of the Obligations of such Series and of the Trustee's certificate of authentication if other than as provided in Article III; and
+[p136_c0009] (t) Such other matters, not contrary to or inconsistent with the Resolution, as the Issuer may deem advisable or necessary in connection with the authorization, issuance, sale, or delivery of such Series of Obligations.
+[p136_c0010] An Authorized Officer to whom a Supplemental Resolution has delegated the power to determine any of the foregoing shall execute a Certificate of Determination evidencing such determinations or other actions taken pursuant to the delegation under such Supplemental Resolution, and such Certificate of Determination shall be conclusive evidence of the determinations or actions of such Authorized Officer as to the matters stated therein. The matters
+[p136_c0011] _A-4_
+[p136_c0012] _4926-9546-3778.3_
+[p136_c0013] _Master Page # 136 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 137
+
+[p137_c0001] set forth in any such Certificate of Determination shall have the same effect as if set forth in the related Supplemental Resolution.
+[p137_c0002] 2. The Obligations may be sold in one or more Series or subseries (each of which shall contain a designation distinguishing it from other Series or subseries), and shall be delivered by the Issuer under the Resolution but only upon receipt by the Trustee of:
+[p137_c0003] (a) An Opinion of Bond Counsel in customary form to the effect that (i) the Issuer has the right and power under the Issuer Act to adopt the Resolution, and the Resolution has been duly and lawfully adopted by the Issuer, is in full force and effect, and is valid and binding upon the Issuer, and enforceable in accordance with its terms, and no other authorization for the Resolution is required as of the date thereof; (ii) the Resolution creates the valid pledge which it purports to create of the applicable Obligations Trust Estate in the manner and to the extent provided in Section 501; and (iii) the Obligations are valid and binding obligations of the Issuer, enforceable in accordance with their terms and the terms of the Resolution and entitled to the benefits of the Issuer Act as amended to the date of such Opinion of Bond Counsel, and (iv) such Obligations have been duly and validly authorized and issued in accordance with law and the Resolution;
+[p137_c0004] (b) A copy of the Supplemental Resolution authorizing such Obligations, certified by an Authorized Officer;
+[p137_c0005] (c) A written order of the Issuer as to the delivery of the Obligations, signed by an Authorized Officer;
+[p137_c0006] (d) A certificate of an Authorized Officer to the effect that, upon the delivery of the Obligations of such Series (i) no event which constitutes a default under the Resolution or any of the Obligations shall have occurred and be continuing or, if such an event is continuing, upon issuance of the Obligations such default shall be cured, and (ii) no such event would result from the authentication and delivery of the Obligations of such Series;
+[p137_c0007] (e) If any Obligations are Variable Interest Rate Obligations or a Qualified Swap is being entered into that will result in a variable interest rate obligation of the Issuer, a determination by an Authorized Officer of the Estimated Average Interest Rate;
+[p137_c0008] (f) If any Obligations of such Series are Put Obligations, a determination by an Authorized Officer of the method or methods to be employed to provide for the purchase or redemption of all Put Obligations of such Series if the Owners thereof elected to tender for purchase or redemption the entire aggregate Outstanding principal amount of the Put Obligations of such Series; and
+[p137_c0009] (g) Such further documents and money as are required by the provisions of Article II, Article VIII or this Article A-II.
+[p137_c0010] 3. If Obligations are to be listed on a domestic or foreign stock exchange, the Authorized Officers are hereby authorized to take all such actions as they deem necessary or appropriate to comply with the listing requirements of such exchange, including the appointment
+[p137_c0011] _A-5_
+[p137_c0012] _4926-9546-3778.3_
+[p137_c0013] _Master Page # 137 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 138
+
+[p138_c0001] of a member of such exchange as listing agent, the publication where required by such exchange of all redemption notices, the appointment of a special clearing agent and paying agent, and the execution of an undertaking letter with such exchange.
+[p138_c0002] 4. The Obligations shall not be a debt of the State or the City and neither the State nor the City shall be liable thereon, nor shall Obligations be payable out of any funds other than those of the Issuer as provided in the Resolution.
+[p138_c0003] Section A-202. Credit Facilities; Qualified Swaps and Other Similar Arrangements; Parity Debt. 1. The Issuer may include such provisions in a Supplemental Resolution authorizing the issuance of a Series of Obligations secured by a Credit Facility as the Issuer deems appropriate, and no such provisions shall be deemed to constitute an amendment to the Resolution requiring action under Article VIII or Article IX, including:
+[p138_c0004] (a) So long as the Credit Facility is in full force and effect and payment on the Credit Facility is not in default, then (i) the issuer of the Credit Facility shall be deemed to be the sole Owner of the Outstanding Obligations the payment of which such Credit Facility secures or (ii) in the alternative or with respect to particular matters, the approval, consent or action of the issuer of the Credit Facility shall be required in addition to the approval, consent or action of the applicable percentage of the Owners of the Outstanding Obligations, in either case when the approval, consent or action of the Owners for such Obligations is required or may be exercised under the Resolution including Section 903 of the Resolution and following an Obligations Event of Default hereunder; provided, however, that no issuer of a Credit Facility shall be deemed to be the sole Owner of Outstanding Obligations pursuant to this provision in the event that the Credit Facility or Credit Facilities securing such Obligations provide only liquidity support.
+[p138_c0005] (b) In the event that the principal, Sinking Fund Installments, if any, and Redemption Price, if applicable, and interest due on any Outstanding Obligations (or Purchase Price of any Outstanding Obligations to the extent the issuer of the Credit Facility has not been reimbursed) shall be paid under the provisions of the Credit Facility, all covenants, agreements and other obligations of the Issuer to the Owners of such Obligations shall continue to exist and such issuer of the Credit Facility shall be subrogated to the rights of such Owners in accordance with the terms of such Credit Facility.
+[p138_c0006] 2. In addition, such Supplemental Resolution may establish such provisions as are necessary (i) to comply with the provisions of each such Credit Facility, (ii) to provide relevant information to the issuer of the Credit Facility, (iii) to provide a mechanism for paying Principal Installments and interest on Obligations secured by the Credit Facility, and (iv) to make provision for any events of default or for additional or improved security required by the issuer of a Credit Facility.
+[p138_c0007] 3. The Issuer may enter into such agreements with the issuer of such Credit Facility providing for, inter alia : (i) the payment of fees and expenses to such issuer for the issuance of such Credit Facility, (ii) the terms and conditions of such Credit Facility and the Obligations affected thereby, and (iii) the security, if any, to be provided for the issuance of such Credit Facility.
+[p138_c0008] _A-6_
+[p138_c0009] _4926-9546-3778.3_
+[p138_c0010] _Master Page # 138 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 139
+
+[p139_c0001] 4. The Issuer may secure such Credit Facility by an agreement providing for the purchase of the Obligations secured thereby with such adjustments to the rate of interest, method of determining interest, maturity, or redemption provisions as specified by the Issuer in the applicable Supplemental Resolution. The Issuer may also in an agreement with the issuer of such Credit Facility agree to directly reimburse such issuer for amounts paid under the terms of such Credit Facility (together with interest thereon, the “Reimbursement Obligation” ); provided, however, that no amounts shall be payable by the Issuer under a Reimbursement Obligation for purposes of the Resolution, until amounts are paid under such Credit Facility by the issuer thereof. As determined by Supplemental Resolution, any such Reimbursement Obligation, which may include interest calculated at a rate higher than the interest rate on the related Obligation and accelerated principal amortization, (i) may be secured by a pledge of, and a lien on, the applicable Obligations Trust Estate on a parity with the lien created by Section 501 of the Resolution to secure the Obligations (a “Parity Reimbursement Obligation” ), but only to the extent that (prior to any acceleration of all Obligations, if permitted) any principal amortization requirements are either (A) commensurate with the amortization requirements for such related Obligations, without acceleration or (B) accelerated to no greater extent than to require repayment in equal principal installments over 5 or more years, or (ii) may constitute a Subordinated Contract Obligation, as determined by the Issuer. Parity Reimbursement Obligations shall not include any payments (other than interest calculated at a higher rate pursuant to a Credit Facility) (i) of any fees or expenses, (ii) pursuant to any indemnification provisions or (iii) pursuant to term-loan or other principal amortization requirements in reimbursement of any such advance that are more accelerated than permitted by clauses (A) and (B) of the preceding sentence, and any such payments of the items specified in clauses (i), (ii) or (iii) shall constitute Subordinated Contract Obligations.
+[p139_c0002] 5. Any such Credit Facility shall be for the benefit of and secure such Obligations or portion thereof as specified in any applicable Supplemental Resolution.
+[p139_c0003] 6. In connection with the issuance of any Obligations or at any time thereafter so long as Obligations remain Outstanding, the Issuer may, to the extent permitted pursuant to law, from time to time enter into Qualified Swaps. The Issuer’s obligation to pay any amount under any Qualified Swap may be secured by a pledge of, and a lien on, the applicable Obligations Trust Estate on a parity with the lien created by Section 501 of the Resolution to secure the Obligations (a “Parity Swap Obligation” ), or may constitute a Subordinated Contract Obligation, as determined by the Issuer. Parity Swap Obligations shall not include any payments of any termination or other fees, expenses, indemnification or other obligations to a counterparty to a Qualified Swap, which payments shall be Subordinated Contract Obligations.
+[p139_c0004] 7. Parity Debt shall not be a debt of the State or the City and neither the State nor the City shall be liable thereon, nor shall Parity Debt be payable out of any funds other than those of the Issuer pledged therefor pursuant to the Resolution.
+[p139_c0005] 8. Except to the extent that an Authorized Officer directs that such amounts be deposited in any other Fund or Account pledged to the payment of Obligations, any amounts paid to the Issuer under a Qualified Swap shall be deposited in the applicable Debt Service Fund.
+[p139_c0006] 9. To the extent applicable and not readily apparent with respect any Parity Debt, either the terms of such Parity Debt shall specify (or an Authorized Officer shall specify in writing)
+[p139_c0007] _A-7_
+[p139_c0008] _4926-9546-3778.3_
+[p139_c0009] _Master Page # 139 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 140
+
+[p140_c0001] the interest and principal components of, or the scheduled payments corresponding to principal and interest under, such Parity Debt or the manner of determining the foregoing.
+[p140_c0002] Section A-203. Obligation Anticipation Notes. Whenever the Issuer shall have, by Supplemental Resolution, authorized the issuance of a Series of Obligations, the Issuer may by resolution authorize the issuance of Obligation Anticipation Notes in anticipation of the issuance of such authorized Series of Obligations, in a principal amount not exceeding the principal amount of the Obligations of such Series so authorized. The principal of and premium, if any, and interest on such Obligation Anticipation Notes and any renewals of such Obligation Anticipation Notes shall be payable only from any or all of the following items designated by the Issuer at or prior to issuance of any such series of Obligation Anticipation Notes (i) the proceeds of any renewals of such Obligation Anticipation Notes issued to repay such Obligation Anticipation Notes, (ii) the proceeds of the sale of the Series of Obligations in anticipation of which such Obligation Anticipation Notes are issued, (iii) amounts available to pay Subordinated Indebtedness, or (iv) any other money available therefor and not pledged under the Resolution. Such proceeds and other amounts set forth in clauses (i), (ii), (iii) and (iv) may be pledged for the payment of the principal of and premium, if any, and interest on such Obligation Anticipation Notes, and any such pledge of the items set forth in clauses (i) and (ii) shall have priority over any other pledge created by the Resolution, including Section 501. The proceeds of the sale of Obligation Anticipation Notes other than renewals thereof shall be applied to the purposes for which the Obligations in anticipation of which such Obligation Anticipation Notes are authorized and shall be deposited in the appropriate Fund or Account established by the Resolution for such purposes or, if so provided in the resolution authorizing renewals of Obligation Anticipation Notes issued to pay outstanding Obligation Anticipation Notes, applied directly to such payment. Investment earnings from any amounts on deposit in any Fund or Account under the Resolution representing the proceeds of any Obligation Anticipation Notes shall be applied in the manner set forth in the resolution authorizing such Obligation Anticipation Notes.
+[p140_c0003] _A-8_
+[p140_c0004] _4926-9546-3778.3_
+[p140_c0005] _Master Page # 140 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 141
+
+### [p141_c0001] ARTICLE A-III
+### [p141_c0002] GENERAL TERMS AND PROVISIONS OF OBLIGATIONS
+[p141_c0003] Except as otherwise provided by Supplemental Resolution, the Obligations shall be subject to the terms and provisions of these Standard Resolution Provisions.
+### [p141_c0004] Section A-301. Medium of Payment; Form and Date.
+[p141_c0005] 1. The Obligations and Parity Debt shall be payable, with respect to interest, principal and Redemption Price, in any coin or currency of the United States of America which at the time of payment is legal tender for the payment of public and private debts (or to the extent permitted by law, in any other coin or currency authorized pursuant to a Supplemental Resolution for related Obligations and Parity Debt).
+[p141_c0006] 2. Obligations shall be issued in the form of fully registered Obligations without coupons. Obligations, the certificate of authentication, if any, and the form of assignment shall be in substantially the forms provided for in Exhibit One and Exhibit Two, as applicable, with such appropriate variations, omissions, substitutions and insertions as are permitted or required hereby or thereby or are required by law, and may have such letters, numbers or other marks of identification and such legends and endorsements placed thereon as may be required to comply with any applicable laws or rules or regulations, or as may, consistent herewith, be determined by the officers executing such Obligations, as evidenced by their execution of the Obligations. Any portion of the text of any Obligation may be set forth on the reverse thereof, with an appropriate reference thereto on the face of such Obligation, or as multiple pages (with or without such a reference). Obligations may be typewritten, printed, engraved, lithographed or otherwise produced.
+[p141_c0007] 3. Obligations shall be dated, and shall bear or not bear interest, as provided in the Supplemental Resolution authorizing such Obligations.
+[p141_c0008] Section A-302. Legends. Obligations may contain or have endorsed thereon such provisions, specifications and descriptive words not inconsistent with the provisions of the Resolution as may be necessary or desirable to comply with custom, the rules of any securities exchange or commission or brokerage board, or otherwise, as may be determined by the Issuer.
+### [p141_c0009] Section A-303. Execution and Authentication.
+[p141_c0010] 1. The Obligations shall be executed in the name of the Issuer by the manual or facsimile signature of an Authorized Officer or in such other manner as may be required by law or specified in a Supplemental Resolution. In case any of the officers who shall have signed any of the Obligations shall cease to be such officer before the Obligations so signed shall have been actually delivered, such Obligations may, nevertheless, be delivered as herein provided, and may be issued as if the Persons who signed such Obligations had not ceased to hold such offices. Any Obligation may be signed on behalf of the Issuer by such Persons as at the actual time of the execution of such Obligation shall be duly authorized or hold the proper office in the Issuer, although at the date of the Obligations such Persons may not have been so authorized or have held such office.
+[p141_c0011] _A-9_
+[p141_c0012] _4926-9546-3778.3_
+[p141_c0013] _Master Page # 141 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 142
+
+[p142_c0001] 2. Obligations of each Series shall bear thereon a certificate of authentication, executed manually by the Trustee. Only such Obligations as shall bear thereon such certificate of authentication shall be entitled to any right or benefit under the Resolution and no Obligation shall be valid or obligatory for any purpose until such certificate of authentication shall have been duly executed by the Trustee. Such certificate of the Trustee upon any Obligation executed on behalf of the Issuer shall be conclusive evidence that the Obligation so authenticated has been duly authenticated and delivered under the Resolution and that the Owner thereof is entitled to the benefits of the Resolution.
+[p142_c0002] Section A-304. Interchangeability of Obligations. Obligations, upon surrender thereof at the office of the Registrar with a written instrument of transfer satisfactory to the Registrar, duly executed by the Owner or his duly authorized attorney, may, at the option of such Owner, be exchanged for an equal aggregate principal amount of Obligations of the same Series, maturity and interest rate of any other authorized denomination.
+[p142_c0003] Section A-305. Negotiability, Transfer and Registry. All the Obligations issued under the Resolution shall be negotiable, subject to the provisions for registration and registration of transfer contained in the Resolution and in the Obligations. So long as any of the Obligations shall remain Outstanding, the Issuer shall maintain and keep, at the office of the Registrar, books for the registration and registration of transfer of Obligations; and, upon presentation thereof for such purpose at said office and under such reasonable regulations as it or the Registrar may prescribe, the Issuer shall register or cause to be registered therein, and permit to be transferred thereon, the registration of any Obligation entitled to registration or registration of transfer. So long as any of the Obligations remain Outstanding, the Issuer shall make all necessary provision to permit the exchange of Obligations at the office of the Registrar.
+### [p142_c0004] Section A-306. Transfer of Obligations.
+[p142_c0005] 1. The transfer of each Obligation shall be registerable only upon the books of the Issuer, which shall be kept by the Registrar, by the Owner thereof in person or by his attorney authorized in writing, upon surrender thereof together with a written instrument of transfer satisfactory to the Registrar executed by the Owner or his authorized attorney. Upon the registration of transfer of any such Obligation, the Issuer shall issue in the name of the transferee a new Obligation of the same aggregate principal amount, Series, maturity and interest rate as the surrendered Obligation.
+[p142_c0006] 2. The Issuer and each Fiduciary may deem and treat the Person in whose name any Outstanding Obligation shall be registered upon the books of the Issuer as the absolute owner of such Obligation, whether such Obligation shall be overdue or not, for the purpose of receiving payment of or on account of, the principal and Redemption Price, if any, of and interest on such Obligation and for all other purposes, and all such payments so made to any such registered owner or upon his order shall be valid and effectual to satisfy and discharge the liability upon such Obligation to the extent of the sum or sums so paid, and neither the Issuer nor any Fiduciary shall be affected by any notice to the contrary. The Issuer agrees to indemnify and save each Fiduciary harmless from and against any and all loss, cost, charge, expense, judgment or liability incurred by it, unless acting in bad faith or with negligence under the Resolution, in so treating such registered owner.
+[p142_c0007] _A-10_
+[p142_c0008] _4926-9546-3778.3_
+[p142_c0009] _Master Page # 142 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 143
+
+[p143_c0001] Section A-307. Regulations With Respect to Exchanges and Transfers. In all cases in which the privilege of exchanging Obligations or registering the transfer of Obligations is exercised, the Issuer shall execute and the Registrar shall deliver Obligations in accordance with the provisions of the Resolution. All Obligations surrendered in any such exchanges or registrations of transfer shall forthwith be canceled by the Registrar. For every such exchange or registration of transfer of Obligations, whether temporary or definitive, the Issuer or the Registrar may make a charge sufficient to reimburse it for any tax, fee or other governmental charge required to be paid with respect to such exchange or transfer.
+[p143_c0002] Section A-308. Obligations Mutilated, Destroyed, Stolen or Lost. In case any Obligation shall become mutilated or be destroyed, stolen or lost, the Issuer shall execute, and thereupon the Trustee and Registrar shall deliver, a new Obligation of like tenor, Series, maturity, interest rate and principal amount as the Obligation so mutilated, destroyed, stolen or lost, in exchange and substitution for such mutilated Obligation, upon surrender and cancellation of such mutilated Obligation, or in lieu of and substitution for the Obligation destroyed, stolen or lost, upon filing with the Trustee and Registrar evidence satisfactory to the Issuer and the Trustee and Registrar that such Obligation has been destroyed, stolen or lost and proof of ownership thereof, and upon furnishing the Issuer and the Trustee and Registrar with indemnity satisfactory to them and complying with such other reasonable regulations as the Issuer and the Trustee and Registrar may prescribe and paying such expenses as the Issuer and Trustee and Registrar may incur. All Obligations so surrendered to the Registrar shall be canceled by it. If any such Obligation shall have matured, or if such Obligation shall have been called for redemption or a redemption date pertaining thereto shall have passed, instead of issuing a new Obligation the Issuer may cause the same to be paid without surrender thereof upon indemnity satisfactory to the Issuer and the Trustee. Any such new Obligations issued pursuant to this Section in substitution for Obligations alleged to be destroyed, stolen or lost shall constitute original additional contractual obligations on the part of the Issuer, whether or not the Obligations so alleged to be destroyed, stolen or lost be at any time enforceable by anyone, and shall be equally secured by and entitled to equal and proportionate benefits with all other Obligations issued under the Resolution, in any money or securities held by the Issuer or the Fiduciary for the benefit of the Owners of Obligations.
+[p143_c0003] Section A-309. Book-Entry-Only System. The Issuer may employ a book-entry-only system of registration with respect to any Obligations and may utilize the procedures regarding such registration set forth in this Section A-309, as such procedures may be modified or superseded pursuant to the Supplemental Resolution authorizing such Obligations. Any provisions of the Resolution inconsistent with book-entry-only Obligations shall not be applicable to such book-entry-only Obligations.
+[p143_c0004] Any Authorized Officer is hereby authorized to take all actions required for each Series of Obligations to be eligible under the rules and regulations of The Depository Trust Company (“DTC”) for investment and trading as uncertificated securities. DTC is hereby appointed as the initial Securities Depository for the Obligations, with Cede & Co., a nominee thereof, being the initial registered owner of the Obligations. In the event that any Securities Depository resigns or is removed, any Authorized Officer may select a substitute Securities Depository. The Issuer and any Fiduciary, and any agent of the Issuer or any Fiduciary, may treat any Securities Depository in whose name any Obligations is registered as the owner of such Obligation for all purposes under the Resolution. For so long as the Securities Depository is the registered owner of the Obligations,
+[p143_c0005] _A-11_
+[p143_c0006] _4926-9546-3778.3_
+[p143_c0007] _Master Page # 143 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 144
+
+[p144_c0001] procedures with respect to the transmission of notices and the transfer of ownership of, redemption of and payment of principal or Redemption Price, if any, of and interest on such Obligations so held shall be in accordance with arrangements among the Trustee, the Issuer and the Securities Depository.
+[p144_c0002] So long as the Obligations are registered in the name of the Securities Depository, the Issuer and the Trustee shall have no responsibility or obligation to any Securities Depository participant, indirect participant or beneficial owner of the Obligations. Without limiting the immediately preceding sentence, the Issuer and the Trustee shall have no responsibility or obligation with respect to (i) the accuracy of the records of any Securities Depository or any Securities Depository participant or indirect participant with respect to any beneficial ownership interest in the Obligations, (ii) the delivery to any Securities Depository participant, indirect participant, beneficial owner or any other person, other than the Securities Depository, of any notice with respect to the Obligations, including any notice of redemption or tender, or (iii) the payment to any Securities Depository participant, indirect participant, beneficial owner or any other person, other than the Securities Depository, of any amount with respect to the principal of or Redemption Price or interest on the Obligations.
+[p144_c0003] The Issuer, in its sole discretion and without the consent of any other person, may terminate the services of any Securities Depository with respect to any Series of Obligations. Notice of such termination shall be given by the Issuer to the Trustee prior to or simultaneously with such termination. In the event the book-entry only system is discontinued with respect to the Obligations, principal and Redemption Price of and interest on the Obligations shall be paid as provided in the Resolution.
+[p144_c0004] Consistent with DTC book-entry provisions, one or more typewritten certificates shall be prepared for each maturity of the Obligations of a Series and registered in the name of the Securities Depository. There shall be no physical distribution of bond or other certificates to beneficial owners of such Obligations. In the event that the Obligations do not qualify to be held by the Securities Depository or that either the Issuer determines to discontinue the book-entry only system or DTC determines to discontinue providing its service with respect to the Obligations and there is no successor Securities Depository, the bond or other certificates shall be delivered in the form required by the Resolution.
+[p144_c0005] Unless otherwise directed by an Authorized Officer, "CUSIP" identification numbers will be imprinted on the Obligations, but such numbers shall not constitute a part of the contract evidenced by the Obligations and any error or omission with respect thereto shall not constitute cause for refusal of any purchaser to accept delivery of and pay for the Obligations. As a convenience to the Owners of the Obligations, the Issuer and the Trustee may use such CUSIP numbers in any notices to the Owners of the Obligations, including any notices of redemption of the Obligations. Failure on the part of the Issuer or the Trustee to use such CUSIP numbers in any notice to Owners of the Obligations shall not constitute an Obligations Event of Default or any similar violation of the Issuer's contract with such Owners. The Issuer will promptly notify the Trustee of any change in the CUSIP numbers.
+[p144_c0006] _A-12_
+[p144_c0007] _4926-9546-3778.3_
+[p144_c0008] _Master Page # 144 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 145
+
+### [p145_c0001] ARTICLE A-IV
+### [p145_c0002] REDEMPTION AND TENDER OF OBLIGATIONS
+[p145_c0003] Section A-401. Privilege of Redemption and Redemption Price. Except as otherwise provided in the Resolution or a Supplemental Resolution, Obligations subject to redemption pursuant to a Supplemental Resolution shall be subject to redemption only in accordance with this Article A-IV.
+[p145_c0004] Obligations subject to redemption prior to maturity pursuant to a Supplemental Resolution shall be redeemable, upon written notice as provided in this Article A-IV, at such times, at such Redemption Prices and upon such terms as may be specified in the Supplemental Resolution authorizing such Obligations.
+[p145_c0005] Section A-402. Redemption at the Election of the Issuer; Tender to Related Entities. In the case of any redemption of Obligations at the election of the Issuer, the Issuer shall give written notice to the Trustee of its election so to redeem, of the redemption date, of the Series, of the principal amounts of the Obligations of each maturity and interest rate of such Series to be redeemed (which Series, maturities, interest rates and principal amounts thereof to be redeemed shall be determined by the Issuer in its sole discretion, subject to any limitations with respect thereto contained in any Supplemental Resolution). Such notice shall be given at least 45 days prior to the redemption date or such shorter period as may be provided in the Supplemental Resolution or as shall be acceptable to the Trustee. In the event notice of redemption shall have been given as in Section A-405 provided but subject to the second paragraph of Section A-405, the Issuer shall on or prior to the redemption date cause to be paid out to the appropriate Paying Agent or Paying Agents out of money available therefor an amount in cash which, in addition to other money, if any, available therefor held by such Paying Agent or Paying Agents, will be sufficient to redeem on the redemption date at the Redemption Price thereof, all of the Obligations to be redeemed.
+[p145_c0006] The Issuer may, in its sole discretion, purchase or grant to any Related Entity the option to purchase, at any time and from time to time, any Obligations which are redeemable at the election of the Issuer at a purchase price equal to the redemption price therefor. To exercise any such option, the Issuer or the Related Entity shall give the Trustee a written request exercising such option within the time periods specified in the related Supplemental Resolution as though such written request were a written request of the related Issuer for redemption, and the Trustee shall thereupon give the Owners of the Obligations to be purchased notice of such purchase in the manner specified in the related Supplemental Resolution as though such purchase were a redemption. On the date fixed for purchase pursuant to any exercise of such an option, the Issuer or the Related Entity shall pay the purchase price of the Obligations then being purchased to the Trustee in immediately available funds, and the Trustee shall pay the same to the sellers of such Obligations against delivery thereof. Following such purchase, the Trustee shall cause such Obligations to be registered in the name of the Issuer or the Related Entity or its nominee and shall deliver them to the Issuer, the Related Entity or its nominee. Except to the extent otherwise directed by an Authorized Officer, no purchase of Obligations pursuant to such an option shall operate to extinguish the indebtedness of the Issuer evidenced thereby. Any such option to purchase by a Related Entity either shall be conditioned on the provision of sufficient money
+[p145_c0007] _A-13_
+[p145_c0008] _4926-9546-3778.3_
+[p145_c0009] _Master Page # 145 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 146
+
+[p146_c0001] therefor by the Related Entity or shall be an obligation of the Issuer in the event that the Related Entity does not provide sufficient money therefor.
+[p146_c0002] Section A-403. Redemption Otherwise Than at the Issuer's Election. Whenever by the terms of the Resolution Obligations are required to be redeemed otherwise than at the election of the Issuer, the Trustee shall select the Obligations to be redeemed, give the notice of redemption and pay out of money available therefor the Redemption Price to the appropriate Paying Agents in accordance with the terms of this Article A-IV. The Trustee shall have no liability in making such selection.
+[p146_c0003] Section A-404. Selection of Obligations to Be Redeemed. In the event of redemption of less than all the Outstanding Obligations of like tenor, Series, maturity and interest rate, the Trustee shall select, as directed by the Issuer (as to the timing of such selection, manner of such selection or otherwise) or otherwise in such manner as the Trustee in its discretion shall deem appropriate and fair, the numbers of the Obligations to be redeemed and portions of any thereof to be redeemed in part. Obligations of denominations equal or less than the minimum authorized denomination thereof may be redeemed only as a whole. Obligations of denominations of more than the minimum authorized denomination thereof may be redeemed either as a whole or in part (which, if redeemed in part, must assure that the portion of the Obligation which is not redeemed is an authorized denomination). For the purposes of this Section A-404, Obligations, or portions thereof, which have theretofore been selected for redemption shall not be deemed Outstanding.
+[p146_c0004] Section A-405. Notice of Redemption. When the Trustee shall receive notice from the Issuer of its election to redeem Obligations pursuant to Section A-402, and when redemption of Obligations is required by the Resolution pursuant to Section A-403, the Trustee shall give notice, in the name of the Issuer, of the redemption of such Obligations, which notice shall specify the Series (including CUSIP numbers), maturities and, if any maturity shall include Obligations bearing different interest rates and all Obligations of such maturity are not being redeemed, the interest rate of the Obligations to be redeemed, the redemption date and the place or places where amounts due upon such redemption will be payable and, if less than all of the Obligations of any like tenor, Series, maturity and interest rate are to be redeemed, the letters and numbers or other distinguishing marks of such Obligations so to be redeemed, and, in the case of Obligations to be redeemed in part only, such notice shall also specify the respective portions of the principal amount thereof to be redeemed, and, if applicable, that such notice is conditional and the conditions that must be satisfied. Such notice shall further state that on such date there shall become due and payable upon each Obligation to be redeemed the Redemption Price thereof, or the Redemption Price of the specified portions of the principal thereof in the case of Obligations to be redeemed in part only, together with interest accrued to the redemption date, and that from and after such date interest thereon shall cease to accrue and be payable. Such notice shall be given not less than 20 days nor more than 45 days, or for such other period as may be specified in a Supplemental Resolution authorizing a particular Series, before the redemption date, to the Owners of any Obligations or portions of Obligations which are to be redeemed. Failure so to give any such notice to any particular Owner shall not affect the validity of the proceedings for the redemption of Obligations not owned by such Owner and failure of any Owner to receive such notice shall not affect the validity of the proposed redemption of Obligations. The Issuer may provide notices of redemption at such additional times as it may determine necessary or appropriate.
+[p146_c0005] _A-14_
+[p146_c0006] _4926-9546-3778.3_
+[p146_c0007] _Master Page # 146 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 147
+
+[p147_c0001] Any notice of optional redemption given pursuant to this Section may state that it is conditional upon receipt by the Trustee of money sufficient to pay the Redemption Price of such Obligations or upon the satisfaction of any other condition, or that it may be rescinded upon the occurrence of any other event, and any conditional notice so given may be rescinded at any time before payment of such Redemption Price if any such condition so specified is not satisfied or if any such other event occurs. Notice of such rescission shall be given by the Trustee to affected Owners of Obligations as promptly as practicable upon the failure of such condition or the occurrence of such other event.
+[p147_c0002] Unless otherwise provided by Supplemental Resolution, notices of redemption shall be sent by first class mail, postage prepaid.
+[p147_c0003] Notice of redemption of any Series of Obligations shall also be sent by the Trustee to such additional Persons as may be specified in the Supplemental Resolution authorizing such Series.
+[p147_c0004] Section A-406. Payment of Redeemed Obligations. Notice having been given in the manner provided in Section A-405, the Obligations or portions thereof so called for redemption shall, subject to the second paragraph of Section A-405, become due and payable on the redemption date so designated at the Redemption Price, plus interest accrued and unpaid to the redemption date, and, upon presentation and surrender thereof at the office specified in such notice, such Obligations, or portions thereof, shall be paid at the Redemption Price plus interest accrued and unpaid to the redemption date. If there shall be called for redemption less than all of an Obligation, the Issuer shall execute and cause to be delivered, upon the surrender of such Obligation, without charge to the owner thereof, for the unredeemed balance of the principal amount of the Obligation so surrendered, at the option of the owner thereof, Obligations of like tenor, Series, maturity and interest rate in any of the authorized denominations. If, on the redemption date, money for the redemption of all the Obligations or portions thereof of any like tenor, Series, maturity and interest rate to be redeemed, together with interest to the redemption date, shall be held by the Paying Agents so as to be available therefor on said date and if notice of redemption shall have been given as aforesaid, then, from and after the redemption date interest on the Obligations or portions thereof of such Series, maturity and interest rate so called for redemption shall cease to accrue. If said money shall not be so available on the redemption date, such Obligations or portions thereof shall continue to bear interest until paid at the same rate as they would have borne had they not been called for redemption.
+[p147_c0005] _A-15_
+[p147_c0006] _4926-9546-3778.3_
+[p147_c0007] _Master Page # 147 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 148
+
+### [p148_c0001] ARTICLE A-V
+### [p148_c0002] INVESTMENT OF FUNDS; SINKING FUND INSTALLMENTS; CANCELLATION AND DISPOSITION OF OBLIGATIONS
+### [p148_c0003] Section A-501. Investment of Funds.
+[p148_c0004] 1. Subject to the provisions of Section A-804, amounts in the Funds and Accounts established by Section 502 of the Resolution may be invested only in Authorized Investments and only when and as specifically directed in writing by an Authorized Officer.
+[p148_c0005] 2. The Trustee or the Issuer shall sell any Authorized Investments held in any Fund, Account or subaccount to the extent required for payments from such Fund, Account or subaccount. Except as otherwise provided in the Resolution, the proceeds of such sales, and of all payments at maturity or upon redemption of such investments, shall be held in the applicable Fund, Account or subaccount to the extent required to meet the requirements of such Fund, Account or subaccount. Except as provided by Supplemental Resolution, in computing the amount of such Funds, Accounts and subaccounts, investments shall be valued at the current book value thereof or at the redemption price thereof, if then redeemable at the option of the holder, in either event inclusive of accrued interest. Accrued interest received upon the sale of any Authorized Investment to the extent such amount exceeds any accrued interest paid on the purchase of such Authorized Investment shall be treated as interest earned on such Authorized Investment for purposes of this Section.
+[p148_c0006] 3. Nothing in the Resolution shall prevent any Authorized Investments acquired as investments of or security for any Fund, Account or subaccount held under the Resolution from being held in book-entry form.
+[p148_c0007] 4. In making any investment in any Authorized Investments with money in any Fund or Account established under the Resolution, the Trustee or the Issuer may combine such money with money in any other Fund or Account held by it, but solely for purposes of making such investment in such Authorized Investments.
+### [p148_c0008] Section A-502. Satisfaction of Sinking Fund Installments.
+[p148_c0009] 1. Any amount accumulated in the applicable Debt Service Fund in respect of and up to the unsatisfied balance of each Sinking Fund Installment shall be applied by the Trustee to either (a) or (b) below as directed by the Issuer (together with amounts accumulated in the applicable Debt Service Fund with respect to interest on the Series of Obligations for which such Sinking Fund Installment was established) if so directed by an Authorized Officer prior to the 45th day preceding the due date of such Sinking Fund Installment as follows:
+[p148_c0010] (a) to the purchase of Obligations for which such Sinking Fund Installment was established, at prices (including any brokerage and other charges) not exceeding the principal amount of such Obligations plus unpaid interest accrued to the date of purchase, such purchases to be made in such manner as the Issuer shall direct; or
+[p148_c0011] _A-16_
+[p148_c0012] _4926-9546-3778.3_
+[p148_c0013] _Master Page # 148 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 149
+
+[p149_c0001] (b) to the redemption of Obligations for which such Sinking Fund Installment was established, if then redeemable by their terms at the prices referred to in clause (a) of this subsection 1 of this Section A-502.
+[p149_c0002] All Obligations so purchased or redeemed shall be canceled by the Trustee prior to the 45th day preceding the due date of such Sinking Fund Installment.
+[p149_c0003] 2. Upon the purchase or redemption of any Obligation pursuant to subsection 1 of this Section, an amount equal to the principal amount of the Obligations so purchased or redeemed shall be credited toward the next Sinking Fund Installment thereafter to become due with respect to the Obligations of such maturity and the amount of any excess of the amounts so credited over the amount of such Sinking Fund Installment shall be credited by the Trustee against future Sinking Fund Installments for such Series as specified by an Authorized Officer. Prior to the purchase or redemption of such Obligations, the Issuer shall deliver to the Paying Agent and to the Trustee a certificate of an Authorized Officer specifying (i) the principal amount, Series, maturity, interest rate and numbers of the Obligations so to be purchased or redeemed, (ii) the date and Series of the Sinking Fund Installment in satisfaction of which such Obligations are so to be purchased or redeemed, (iii) the aggregate principal amount of the Obligations so to be purchased or redeemed, and (iv) the unsatisfied balance of each such Sinking Fund Installment after giving effect to the delivery of such Obligations.
+[p149_c0004] 3. In satisfaction, in whole or in part, of any Sinking Fund Installment, the Issuer may deliver to the Trustee at least 45 days prior to the date of such Sinking Fund Installment, for cancellation, Obligations acquired by purchase at any price or redemption from moneys other than moneys on deposit in the Debt Service Fund, except Obligations acquired by purchase or redemption pursuant to the provisions of subsection 1 of this Section, of the maturity and interest rate entitled to such Sinking Fund Installment. All Obligations so delivered to the Trustee in satisfaction of a Sinking Fund Installment shall reduce the amount thereof by the amount of the aggregate principal amount of such Obligations. Concurrently with such delivery of such Obligations the Issuer shall deliver to the Paying Agent and to the Trustee a certificate of an Authorized Officer, specifying (i) the principal amount, Series, maturity, interest rate and numbers of the Obligations so delivered, (ii) the date and Series of the Sinking Fund Installment in satisfaction of which such Obligations are so delivered, (iii) the aggregate principal amount of the Obligations so delivered, and (iv) the unsatisfied balance of each such Sinking Fund Installment after giving effect to the delivery of such Obligations.
+[p149_c0005] 4. The Trustee shall, upon receipt of the notice and in the manner required by the Resolution, call for redemption, on the date of each Sinking Fund Installment falling due prior to maturity, such principal amount of Obligations of the Series, interest rate and maturity entitled to such Sinking Fund Installment as is required to exhaust the unsatisfied balance of such Sinking Fund Installment.
+[p149_c0006] Section A-503. Cancellation and Disposition of Obligations. All Obligations that have been paid (whether at maturity or by acceleration, call for redemption, purchase by the Issuer and presentation for cancellation, or otherwise) or delivered to the Trustee for cancellation shall be canceled and not reissued, except as otherwise provided in a Supplemental Resolution with respect to Put Obligations. Unless otherwise directed by the Issuer, the Trustee shall treat canceled
+[p149_c0007] _A-17_
+[p149_c0008] _4926-9546-3778.3_
+[p149_c0009] _Master Page # 149 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 150
+
+[p150_c0001] Obligations in accordance with its document retention policies. Notwithstanding any other provision of the Resolution, the Issuer may in its sole discretion purchase any obligations of the Issuer or any Related Entity for investment purposes and any such obligations shall remain outstanding unless and until presented for cancellation.
+[p150_c0002] _A-18_
+[p150_c0003] _4926-9546-3778.3_
+[p150_c0004] _Master Page # 150 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 151
+
+### [p151_c0001] ARTICLE A-VI
+### [p151_c0002] PARTICULAR COVENANTS OF THE ISSUER
+[p151_c0003] The Issuer covenants and agrees with the Trustee and the Owners of Obligations as follows:
+[p151_c0004] Section A-601. Payment of Obligations and Parity Debt. The Issuer shall duly and punctually pay or cause to be paid from the applicable Obligations Trust Estate as provided in the Resolution the principal or Redemption Price, if any, of every Obligation and the interest thereon and all Parity Debt, at the dates and places, and in the manner provided in the Obligations and Parity Debt, according to the true intent and meaning thereof.
+[p151_c0005] Section A-602. Extension of Payment of Obligations. The Issuer shall not directly or indirectly extend or assent to the extension of the maturity of any of the Obligations or the time of payments of any claims for interest by the purchase or funding of such Obligations or claims for interest or by any other arrangement and in case the maturity of any of the Obligations or the time for payment of such claims for interest shall be extended, such Obligations or claims for interest shall not be entitled, in case of any Obligations Event of Default, to the benefit of the Resolution or to any payment out of the applicable Obligations Trust Estate, except subject to the prior payment of the principal of all Obligations Outstanding the maturity of which has not been extended and of such portion of the accrued interest on the Obligations as shall not be represented by such extended claims for interest. Nothing herein shall be deemed to limit the right of the Issuer (i) to issue refunding obligations as provided in the Resolution and such issuance shall not be deemed to constitute an extension of maturity of the Obligations, (ii) to issue Put Obligations and neither such issuance nor the operation of the provisions of such Put Obligations shall be deemed to constitute an extension of maturity of the Obligations, (iii) to apply any amount in any Fund held under the Resolution for such purpose to the purchase or redemption of Obligations or (iv) to issue securities having a maturity date, including any extension of maturity contemplated at the time of issuance, of no more than 270 days from the issue date.
+[p151_c0006] Section A-603. Offices for Servicing Obligations. Except as otherwise provided in the Resolution, the Issuer shall at all times maintain one or more offices or agencies in the City and State of New York where Obligations may be presented for payment, registration, transfer or exchange, and where notices, demands and other documents may be served upon the Issuer in respect of the Obligations or of the Resolution. The Issuer may appoint the Trustee or any other Fiduciary as its agent to maintain such office or agency for the payment, redemption, registration, transfer or exchange of Obligations and for the service upon the Issuer of such notices, demands and other documents. The Issuer may also maintain one or more offices or agencies outside of the City or State for the same purposes.
+[p151_c0007] Section A-604. Further Assurance. To the extent permitted by law, the Issuer from time to time shall make, do, execute, adopt, acknowledge and deliver, and take all and every such further acts, deeds, conveyances, assignments, resolutions, transfers and assurances as may be necessary or desirable for the better assuring, conveying, granting, assigning and confirming all and singular the rights and interests in the Obligations Trust Estate or assigned, or intended so to be, or which the Issuer may become bound to pledge or assign.
+[p151_c0008] _A-19_
+[p151_c0009] _4926-9546-3778.3_
+[p151_c0010] _Master Page # 151 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 152
+
+### [p152_c0001] Section A-605. Accounts and Reports.
+[p152_c0002] 1. The Issuer shall keep proper books of record and account of its operations. Such books of account are to be audited at least annually by independent certified public accountants experienced in governmental accounting selected by the Issuer. A copy of each audit report, annual balance sheet and income and expense statement shall be filed with the Trustee and sent to any Owner filing with the Issuer a written request therefor.
+[p152_c0003] 2. The Issuer shall annually, within 6 months after the close of each fiscal year or at such other time required under applicable law or a subsequent contract with all or certain Owners (or, if not available by such date, when and if available), file with the Trustee, and otherwise as provided by law, a copy of an annual report for such year, accompanied by the opinion of the accountants specified in subsection 1 of this Section.
+### [p152_c0004] Section A-606. General.
+[p152_c0005] 1. The Issuer shall do and perform or cause to be done and performed all acts and things required to be done or performed by or on behalf of the Issuer under the provisions of the Resolution and, to the extent material to the interests of Owners, the Issuer Act.
+[p152_c0006] 2. Upon the date of authentication and delivery of any of the Obligations, all conditions, acts and things required by law and the Resolution to exist, to have happened and to have been performed precedent to and in connection with the issuance of such Obligations (and any related Parity Debt then being incurred) shall exist, shall have happened and shall have been performed and the issuance of such Obligations (and any related Parity Debt then being incurred), together with all other indebtedness of the Issuer, shall be within every debt and other limit prescribed by the laws of the State, as applicable.
+[p152_c0007] _A-20_
+[p152_c0008] _4926-9546-3778.3_
+[p152_c0009] _Master Page # 152 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 153
+
+### [p153_c0001] ARTICLE A-VII
+### [p153_c0002] CONCERNING THE TRUSTEE, PAYING AGENTS AND THE REGISTRAR
+[p153_c0003] Section A-701. Trustee; Appointment and Acceptance of Duties. The Trustee shall be appointed in the Supplemental Resolution authorizing the issuance of the first Series of Obligations under the Resolution. The Trustee shall signify its acceptance of the duties and obligations imposed upon it by the Resolution by executing and delivering to the Issuer a written acceptance thereof.
+### [p153_c0004] Section A-702. Duties, Liabilities and Rights of the Trustee.
+[p153_c0005] (a) Prior to the occurrence of an Obligations Event of Default of which a Responsible Officer of the Trustee has written notice or actual knowledge, and after the curing or waiver of any Obligations Event of Default which may have occurred:
+[p153_c0006] (1) the Trustee undertakes to perform such duties and only such duties as are specifically set forth in the Resolution, and no implied covenants or obligations shall be read into the Resolution against the Trustee; and
+[p153_c0007] (2) in the absence of bad faith on its part, the Trustee may conclusively rely, as to the truth of the statements and the correctness of the opinions expressed therein, upon certificates or opinions furnished to the Trustee and conforming to the requirements of the Resolution; but in the case of any such certificates or opinions which by any provision hereof are specifically required to be furnished to the Trustee, the Trustee is under a duty to examine same to determine whether or not they conform to the requirements of the Resolution.
+[p153_c0008] (b) In case an Obligations Event of Default of which a Responsible Officer of the Trustee has written notice or actual knowledge has occurred and is continuing, the Trustee shall exercise such of the rights and powers vested in it by the Resolution and use the same degree of care and skill in their exercise as a prudent Person would exercise or use in the conduct of such Person's own affairs.
+[p153_c0009] (c) No provision of the Resolution shall be construed to relieve the Trustee from liability for its own negligent action, its own negligent failure to act, or its own willful misconduct, except that:
+[p153_c0010] (1) this subsection (c) shall not be construed to limit the effect of subsection (a) of this Section A-702;
+[p153_c0011] (2) the Trustee is not and shall not be liable for any error of judgment made in good faith by a Responsible Officer of the Trustee, unless it is proven that the Trustee was negligent in ascertaining the pertinent facts;
+[p153_c0012] (3) the Trustee is not and shall not be liable with respect to any action taken or omitted to be taken by it in good faith (i) in accordance with the direction of the Owners of the applicable percentage of Obligations then Outstanding relating to the time, method
+[p153_c0013] _A-21_
+[p153_c0014] _4926-9546-3778.3_
+[p153_c0015] _Master Page # 153 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 154
+
+[p154_c0001] and place of conducting any proceeding for any remedy available to the Trustee, or (ii) which it believes to be authorized or within its rights or powers under the Resolution;
+[p154_c0002] (4) no provision of the Resolution shall require the Trustee to expend or risk its own funds or otherwise incur any personal or financial liability in the performance of any of its duties hereunder, or in the exercise of any of its rights or powers, for which it has not received a satisfactory indemnity;
+[p154_c0003] (5) the Trustee may rely on any document believed by it to be genuine and to have been signed or presented by the proper Person and shall not be bound to make any investigation into the facts or matters stated in any resolution, certificate, statement, instrument, opinion, report, notice, request, direction, consent, order, bond, debenture, note, other evidence of indebtedness or other paper or document, but the Trustee, in its discretion, may make such further inquiry or investigation into such facts or matters as it may see fit;
+[p154_c0004] (6) the Trustee shall not be charged with knowledge of an Obligations Event of Default unless a Responsible Officer of the Trustee shall have received written notice from an Owner or the Issuer or have actual knowledge; provided that the Trustee shall be deemed to have actual knowledge of any failure to pay principal or Redemption Price of or interest on Obligations when due;
+[p154_c0005] (7) the Trustee shall not be under any obligation to take any action that is discretionary hereunder;
+[p154_c0006] (8) neither the Trustee nor any of its directors, officers, employees or agents shall be personally liable for any action taken, suffered or omitted by the Trustee in good faith and believed by it to be authorized or within the discretion or rights or powers conferred upon the Trustee by the Resolution;
+[p154_c0007] (9) the Trustee may execute any of the trusts or powers hereunder or perform any duties hereunder either directly or by or through agents, attorneys, custodians, or nominees and the Trustee shall not be responsible for any misconduct or negligence on the part of any agent, attorney, custodians or nominees appointed with due care by it hereunder; and
+[p154_c0008] (10) the Trustee may request that the Issuer deliver a certificate of an Authorized Officer setting forth the names of individuals and/or titles of officers authorized at such time to take specified actions pursuant hereto, which certificate may be signed by any Person authorized to sign such a certificate, including any Person specified as so authorized in any such certificate previously delivered and not superseded.
+[p154_c0009] (d) Whether or not expressly so provided, every provision of the Resolution relating to the conduct or affecting the liability of or affording protection to the Trustee is subject to the provisions of this Section A-702.
+[p154_c0010] _A-22_
+[p154_c0011] _4926-9546-3778.3_
+[p154_c0012] _Master Page # 154 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 155
+
+[p155_c0001] (e) In the event that the Trustee is also acting as Paying Agent or Registrar hereunder, the rights and protections afforded to the Trustee pursuant to this Article A-VII shall also be afforded to the Paying Agent and Registrar.
+### [p155_c0002] Section A-703. Paying Agents and Registrars; Appointment and Acceptance of Duties.
+[p155_c0003] 1. The Trustee is hereby appointed the Registrar and a Paying Agent with respect to the Obligations. The Issuer may at any time or from time to time appoint one or more other Paying Agents and Registrars in the manner and subject to the conditions set forth in Section A-713 for the appointment of a successor Paying Agent or Registrar. The Issuer may be appointed a Paying Agent or Registrar.
+[p155_c0004] 2. Each Paying Agent and Registrar other than the Trustee shall signify its acceptance of the duties and obligations imposed upon it by the Resolution by executing and delivering to the Issuer and to the Trustee a written acceptance thereof.
+[p155_c0005] Section A-704. Responsibilities of Fiduciaries. The recitals of fact contained in the Resolution and in the Obligations shall be taken as the statements of the Issuer and no Fiduciary assumes any responsibility for the correctness of the same. No Fiduciary makes any representations as to the validity or sufficiency of the Resolution or of any Obligations issued thereunder or in respect of the security afforded by the Resolution, and no Fiduciary shall incur any liability in respect thereof. No Fiduciary shall be under any responsibility or duty with respect to the issuance of the Obligations for value or the application of the proceeds thereof or the application of any money paid to the Issuer. No Fiduciary shall be under any responsibility or duty with respect to the application of any money paid to any other Fiduciary. No Fiduciary shall be liable in connection with the performance of its duties under the Resolution, or for any losses, fees, taxes or other charges incurred upon the purchase or sale or redemption of any securities purchased for or held in any Fund under the Resolution, including any losses incurred by reason of having to sell securities prior to their maturity date, except in each case for its own willful misconduct, negligent action or negligent failure to act.
+### [p155_c0006] Section A-705. Evidence on Which Fiduciaries May Act.
+[p155_c0007] 1. Each Fiduciary shall be protected in acting or refraining from acting upon any notice, resolution, request, consent, order, certificate, report, opinion, bond, or other paper or document believed by it to be genuine, and to have been signed or presented by the proper party or parties. Each Fiduciary may consult with counsel of its selection, who may or may not be counsel to the Issuer, and the opinion of such counsel shall be full and complete authorization and protection in respect of any action taken, omitted to be taken or suffered by it under the Resolution in good faith and in accordance therewith.
+[p155_c0008] 2. Whenever any Fiduciary shall deem it necessary or desirable that a matter be proved or established prior to taking or suffering any action under the Resolution, such matter (unless other evidence in respect thereof be therein specifically prescribed) may be deemed to be conclusively proved and established by a certificate of an Authorized Officer, and such certificate shall be full warrant for any action taken or suffered in good faith under the provisions of the
+[p155_c0009] _A-23_
+[p155_c0010] _4926-9546-3778.3_
+[p155_c0011] _Master Page # 155 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 156
+
+[p156_c0001] Resolution; but in its discretion the Fiduciary may in lieu thereof accept other evidence of such fact or matter or may require such further or additional evidence as to it may seem reasonable.
+[p156_c0002] 3. Except as otherwise expressly provided in the Resolution, any request, order, notice or other direction required or permitted to be furnished pursuant to any provision thereof by the Issuer to any Fiduciary shall be sufficiently executed if executed in the name of the Issuer by an Authorized Officer.
+[p156_c0003] Section A-706. Compensation. The Issuer shall pay to each Fiduciary from time to time such compensation as shall be agreed to in writing between the Fiduciary and the Issuer for all services rendered under the Resolution (which compensation shall not be limited by any provision of law in regard to the compensation of a trustee of an express trust), and also all reasonable expenses, charges, counsel fees and other disbursements, including those of its attorneys, agents, and employees, incurred in and about the performance of their powers and duties under the Resolution. To the extent permitted by law, the Issuer further agrees to indemnify and save each Fiduciary and its officers, directors, agents, and employees harmless against any and all liabilities, losses, damages, claims or expenses which it may incur in the acceptance, exercise and performance of its powers and duties hereunder and which are not due to its willful misconduct, negligence or bad faith. The obligations of this Section A-706 shall survive the discharge of the Resolution and shall be payable from legally available sources of the Issuer. No obligation of the Issuer to make any payment to any Fiduciary shall have the benefit of any lien on or pledge or assignment of any Obligations Trust Estate.
+[p156_c0004] A Fiduciary shall notify the Issuer promptly of any claim for which it may seek indemnity. The Issuer shall defend the claim and the Trustee shall cooperate in the defense. The Fiduciary may have separate counsel and the Issuer shall pay the reasonable fees and expenses of such counsel.
+[p156_c0005] Section A-707. Certain Permitted Acts. Any Fiduciary may become the owner of any Obligations or any other obligations of the Issuer, with the same rights it would have if it were not a Fiduciary. To the extent permitted by law and pursuant to the Resolution, any Fiduciary may act as depository for, and permit any of its officers or directors to act as a member of, or in any other capacity with respect to, any committee formed to protect the rights of Owners of Obligations or the holders of any other obligations of the Issuer or to effect or aid in any reorganization growing out of the enforcement of the Obligations or any other obligations of the Issuer or the Resolution, whether or not any such committee shall represent the Owners of a majority in principal amount of the Obligations then Outstanding.
+[p156_c0006] Section A-708. Resignation of Trustee. The Trustee may at any time resign and be discharged of the duties and obligations created by the Resolution by giving not less than 60 days' written notice to the Issuer and mailing notice thereof to the Owners of the Obligations, specifying the date when such resignation shall take effect, at least 45 days prior to the effective date, provided that such resignation shall take effect upon the later of (i) the day specified in such notice and (ii) the day a successor shall have been appointed by the Issuer or the Owners of Obligations as provided in Section A-710 and shall have qualified therefor.
+[p156_c0007] _A-24_
+[p156_c0008] _4926-9546-3778.3_
+[p156_c0009] _Master Page # 156 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 157
+
+[p157_c0001] Section A-709. Removal of Trustee. The Trustee may be removed at any time by an instrument or concurrent instruments in writing, filed with the Trustee, and signed by the Owners of a majority in principal amount of the Obligations then Outstanding or their attorneys-in-fact duly authorized, excluding any Obligations held by or for the account of the Issuer or any Related Entity. In addition, so long as no Obligations Event of Default shall have occurred and be continuing hereunder and the Trustee is not pursuing any right or remedy available to it pursuant to the Resolution, the Trustee may be removed by the Issuer at any time for failure to provide reasonably acceptable services, failure to charge reasonably acceptable fees or any other reasonable cause, all as determined by a certificate of an Authorized Officer filed with the Trustee. Any such removal shall not be effective until a successor shall have been appointed by the Issuer or the Owners of Obligations as provided in Section A-710 and shall have qualified therefor.
+### [p157_c0002] Section A-710. Appointment of Successor Trustee.
+[p157_c0003] 1. In case at any time the Trustee shall resign or shall be removed or shall become incapable of acting, or shall be adjudged a bankrupt or insolvent, or if a receiver, liquidator or conservator of the Trustee, or of its property, shall be appointed, or if any public officer shall take charge or control of the Trustee, or of its property or affairs, a successor may be appointed by the Owners of a majority in principal amount of the Obligations then Outstanding, excluding any Obligations held by or for the account of the Issuer, by an instrument or concurrent instruments in writing signed and acknowledged by such Owners of Obligations or by their attorneys-in-fact duly authorized and delivered to such successor Trustee, notification thereof being given to the Issuer and the predecessor Trustee; provided, nevertheless, that unless a successor Trustee shall have been appointed by the Owners of Obligations as aforesaid, the Issuer by a duly executed written instrument signed by an Authorized Officer of the Issuer shall forthwith appoint a Trustee to fill such vacancy until a successor Trustee shall be appointed by the Owners of Obligations as authorized in this Section A-710. The Issuer shall mail notice of any such appointment made by it to all Owners within 20 days after such appointment. Any successor Trustee appointed by the Issuer shall, immediately and without further act, be superseded by a Trustee appointed by the Owners of Obligations.
+[p157_c0004] 2. If in a proper case no appointment of a successor Trustee shall be made pursuant to the foregoing provisions of this Section within 45 days after the Trustee shall have given to the Issuer written notice as provided in Section A-708 or after a vacancy in the office of the Trustee shall have occurred by reason of its inability to act, the Trustee or the Owner of any Obligation may, at the expense of the Issuer, apply to any court of competent jurisdiction to appoint a successor Trustee. Said court may thereupon, after such notice, if any, as such court may deem proper and prescribe, appoint a successor Trustee.
+[p157_c0005] 3. Any Trustee appointed under the provisions of this Section A-710 in succession to the Trustee shall be a Bank that is organized under the laws of the State, or, if organized under the laws of another state, authorized to do business in the State of New York, or is a national banking association organized under the laws of the United States of America, doing business and having a corporate trust office in The City of New York, and which at the time of selection meets all thresholds for being well capitalized or adequately capitalized under the prompt corrective action framework applicable to insured depository institutions under Section 38 of the Federal Deposit Insurance Act as in effect from time to time or all thresholds for substantially equivalent categories
+[p157_c0006] _A-25_
+[p157_c0007] _4926-9546-3778.3_
+[p157_c0008] _Master Page # 157 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 158
+
+[p158_c0001] in any successor legislation, if there be such a Bank willing and able to accept the office on reasonable and customary terms and authorized by law to perform all the duties imposed upon it by the Resolution.
+[p158_c0002] Section A-711. Transfer of Rights and Property to Successor Trustee. Any successor Trustee appointed under the resolution shall execute, acknowledge and deliver to its predecessor Trustee, and also to the Issuer, an instrument accepting such appointment, and thereupon such successor Trustee, without any further act, deed or conveyance, shall become fully vested with all money, estates, properties, rights, powers, duties and obligations of such predecessor Trustee, with like effect as if originally named as Trustee; but the Trustee ceasing to act shall nevertheless, on the written request of the Issuer, or of the successor Trustee, and, upon the payment of all of its charges hereunder, execute, acknowledge and deliver such instruments of conveyance and further assurance and do such other things as may reasonably be required for more fully and certainly vesting and confirming in such successor Trustee all the right, title and interest of the predecessor Trustee in and to any property held by it under the Resolution, and shall pay over, assign and deliver to the successor Trustee any money or other property subject to the trusts and conditions herein set forth. Should any deed, conveyance or instrument in writing from the Issuer be required by such successor Trustee for more fully and certainly vesting in and confirming to such successor Trustee any such estates, rights, powers and duties, any and all such deeds, conveyances and instruments in writing shall, on request, and so far as may be authorized by law, be executed, acknowledged and delivered by the Issuer. Any successor Trustee shall promptly notify the Registrar and the Paying Agents of its appointment as Trustee.
+[p158_c0003] Section A-712. Merger or Consolidation. Any Person into which any Fiduciary may be merged or converted or with which it may be consolidated or any company resulting from any merger, conversion or consolidation to which it shall be a party or any company to which any Fiduciary may sell or transfer all or substantially all of its municipal corporate trust business, provided such Person shall be a Bank that is organized under the laws of the State, or, if organized under the laws of another state, authorized to do business in the State of New York, or is a national banking association organized under the laws of the United States of America, doing business and having a corporate trust office in The City of New York, and which at the time of selection meets all thresholds for being well capitalized or adequately capitalized under the prompt corrective action framework applicable to insured depository institutions under Section 38 of the Federal Deposit Insurance Act as in effect from time to time or all thresholds for substantially equivalent categories in any successor legislation, if there be such a Bank willing and able to accept the office on reasonable and customary terms and authorized by law to perform all the duties imposed upon it by the Resolution, and shall be the successor to such Fiduciary without the execution or filing of any paper or the performance of any further act.
+[p158_c0004] Section A-713. Resignation or Removal of Paying Agent or Registrar and Appointment of Successor. 1. Any Paying Agent or Registrar may at any time resign and be discharged of the duties and obligations created by the Resolution by giving at least 60 days' written notice to the Issuer, the Trustee, and the other Paying Agents or Registrar, as the case may be. Any Paying Agent or Registrar may be removed at any time by an instrument filed with such Paying Agent or Registrar and the Trustee and signed by the Issuer. Any successor Paying Agent or Registrar shall be appointed by the Issuer, with the approval of the Trustee, and (subject to the requirements of Section A-603) shall be a Bank that is organized under the laws of the State, or, if
+[p158_c0005] _A-26_
+[p158_c0006] _4926-9546-3778.3_
+[p158_c0007] _Master Page # 158 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 159
+
+[p159_c0001] organized under the laws of another state, authorized to do business in the State of New York, or is a national banking association organized under the laws of the United States of America, doing business and having a corporate trust office in The City of New York, and which at the time of selection meets all thresholds for being well capitalized or adequately capitalized under the prompt corrective action framework applicable to insured depository institutions under Section 38 of the Federal Deposit Insurance Act as in effect from time to time or all thresholds for substantially equivalent categories in any successor legislation, if there be such a Bank willing and able to accept the office on reasonable and customary terms and authorized by law to perform all the duties imposed upon it by the Resolution.
+[p159_c0002] 2. In the event of the resignation or removal of any Paying Agent, such Paying Agent shall pay over, assign and deliver any money held by it as Paying Agent to its successor, or if there be no successor, to the Trustee. In the event that for any reason there shall be a vacancy in the office of any Paying Agent, the Trustee shall act as such Paying Agent.
+[p159_c0003] 3. In the event of the resignation or removal of any Registrar, such Registrar shall transfer and deliver all records, certificates and documents held by it as Registrar to its successor, or if there be no successor, to the Trustee. In the event that for any reason there shall be a vacancy in the office of any Registrar, the Trustee shall act as such Registrar.
+[p159_c0004] Section A-714. Adoption of Authentication. In case any of the Obligations contemplated to be issued under the Resolution shall have been authenticated but not delivered, any successor Trustee may adopt the certificate of authentication of any predecessor Trustee so authenticating such Obligations and deliver the Obligations so authenticated; and in case any of such Obligations shall not have been authenticated, any successor Trustee may authenticate such Obligations in the name of the predecessor Trustee, or in the name of the successor Trustee, and in all such cases such certificate shall have the full force which it is anywhere in said Obligations or in the Resolution provided that the certificate of the Trustee shall have.
+[p159_c0005] Section A-715. Continuing Disclosure Agreements. The Trustee shall be entitled to the same rights and the same degree of indemnification in its execution and performance of each continuing disclosure agreement entered into pursuant to Rule 15c2-12 promulgated under the Securities Exchange Act of 1934 as amended, as it is under the Resolution.
+[p159_c0006] _A-27_
+[p159_c0007] _4926-9546-3778.3_
+[p159_c0008] _Master Page # 159 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 160
+
+### [p160_c0001] ARTICLE A-VIII
+### [p160_c0002] MISCELLANEOUS
+[p160_c0003] Section A-801. Defeasance. 1. If the Issuer shall pay or cause to be paid to the Owners of all Obligations then Outstanding the principal and interest and Redemption Price, if any, to become due thereon, at the times and in the manner stipulated therein and in the Resolution, then, at the option of the Issuer, expressed in an instrument in writing signed by an Authorized Officer and delivered to the Trustee, the covenants, agreements and other obligations of the Issuer to the Owners of Obligations shall be discharged and satisfied. In such event, the Trustee shall, upon the request of the Issuer, execute and deliver to the Issuer all such instruments as may be desirable to evidence such discharge and satisfaction and the Fiduciaries shall pay over or deliver to the Issuer all money, securities and funds held by them pursuant to the Resolution which are not required for the payment or redemption of Obligations not theretofore surrendered for such payment or redemption.
+[p160_c0004] 2. Outstanding Obligations or any portions thereof for the payment or redemption of which money shall have been set aside and shall be held in trust by the Paying Agents shall at the respective maturity or redemption dates thereof be deemed to have been paid within the meaning and with the effect expressed in subsection 1 of this Section A-801. Outstanding Obligations or any portions thereof shall, prior to the maturity or redemption date thereof, be deemed to have been paid within the meaning and with the effect expressed in subsection 1 of this Section either (A) with respect to the defeasance of Taxable Obligations, Tax-Exempt Obligations or otherwise, as provided in the Supplemental Resolution authorizing their issuance or (B) if (a) in case any of said Obligations are to be redeemed on any date prior to their maturity, the Issuer shall have given to the Trustee in form satisfactory to it irrevocable instructions to mail as provided in Article A-IV notice of redemption on said date of such Obligations, (b) there shall have been irrevocably deposited with the Trustee either money in an amount which shall be sufficient, or Defeasance Securities the principal of and the interest on which when due will provide money which, together with the money, if any, deposited with the Trustee at the same time, shall be sufficient, without further investment or reinvestment of either the principal amount thereof or the interest earnings thereon, to pay when due, the principal or Redemption Price, if applicable, and interest due and to become due on such Obligations or such portions thereof on and prior to the redemption date or maturity date thereof, as the case may be, and (c) in the event such Obligations are not by their terms maturing or are not subject to redemption within the next succeeding 60 days, the Issuer shall have given the Trustee in form satisfactory to it irrevocable instructions to mail, as soon as practicable, a notice to the Owners of such Obligations that the deposit required by (b) above has been made with the Trustee and that said Obligations are deemed to have been paid in accordance with this Section and stating such maturity or redemption date upon which money is to be available for the payment of the principal or Redemption Price, if applicable, on such Obligations. Neither Defeasance Securities nor money deposited with the Trustee pursuant to this Section nor principal or interest payments on any such Defeasance Securities shall be withdrawn or used for any purpose other than, and shall be held in trust for, the payment of the principal or Redemption Price, if applicable, and interest on said Obligations; provided, however, that any money on deposit with the Trustee, (i) to the extent such money will not be required at any time for such purpose, shall be paid over to the Issuer as received by the Trustee, free and clear of any trust, lien or pledge securing said Obligations or otherwise existing under the Resolution, and (ii) to the extent such
+[p160_c0005] _A-28_
+[p160_c0006] _4926-9546-3778.3_
+[p160_c0007] _Master Page # 160 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 161
+
+[p161_c0001] money will be required for such purpose at a later date, shall, to the extent practicable, be reinvested in Defeasance Securities maturing at times and in amounts sufficient, together with any money available to the Trustee for such purpose, to pay when due the principal or Redemption Price, if applicable, and interest to become due on said Obligations on and prior to such redemption date or maturity date thereof, as the case may be. Notwithstanding any other provision hereof, the Issuer may at the time of defeasance elect to retain the right to redeem or require the tender of any obligations deemed paid pursuant to subsection 2 of this Section A-801. The Trustee shall, at the direction of the Issuer, select the Obligations or portions thereof that are deemed to have been paid in advance of the redemption of such Obligations.
+[p161_c0002] 3. Anything in the Resolution to the contrary notwithstanding, any money held by a Fiduciary in trust for the payment and discharge of the principal or Redemption Price of or interest on any of the Obligations which remains unclaimed for 2 years after the date when such principal, Redemption Price or interest, respectively, has become due and payable, either at stated maturity dates or by call for earlier redemption, if such money was held by the Fiduciary at such date, or for 2 years after the date of deposit of such money if deposited with the Fiduciary after the date when such principal, Redemption Price, or interest, respectively, became due and payable, shall, at the written request of the Issuer, be repaid by the Fiduciary to the Issuer, as its absolute property and free from trust, and the Fiduciary shall thereupon be released and discharged with respect thereto and the Owners of Obligations shall look only to the Issuer for the payment of such principal, Redemption Price, or interest, respectively. Notwithstanding the foregoing or anything in the Resolution to the contrary, any money held by a Fiduciary in trust for the payment and discharge of any Obligations which remains unclaimed after such money was to be applied to the payment of such Obligations in accordance with the Resolution may be applied in accordance with the provisions of the Abandoned Property Law of the State, being Chapter 1 of the Consolidated Laws of the State or any successor provision thereto, and upon such application, the Fiduciary shall thereupon be released and discharged with respect thereto and the Owners of Obligations shall look only to the Issuer or the Comptroller of the State for the payment of such Obligations. Before being required to make any such payment to the Issuer or to apply such money in accordance with the Abandoned Property Law of the State, the Fiduciary shall, at the expense of the Issuer, cause to be mailed to the Owners entitled to receive such money a notice that said money remains unclaimed and that, after a date named in said notice, which date shall be not less than 30 days after the date of the mailing, the balance of such money then unclaimed will be returned to the Issuer or applied in accordance with the Abandoned Property Law of the State, as the case may be.
+[p161_c0003] Section A-802. Evidence of Signatures of Owners of Obligations and Ownership of Obligations. 1. Any request, consent, revocation of consent or other instrument which the Resolution may require or permit to be signed and executed by the Owners of Obligations may be in one or more instruments of similar tenor, and shall be signed or executed by such Owners of Obligations in Person or by their attorneys-in-fact appointed in writing or by such electronic or other means as may be recognized pursuant to applicable law. Proof of (i) the execution of any such instrument, or of an instrument appointing any such attorney, or (ii) the holding by any Person of the Obligations shall be sufficient for any purpose of the Resolution (except as otherwise therein expressly provided) if made in the following manner, or in any other manner satisfactory to the Trustee, which may nevertheless in its discretion require further or other proof in cases where it deems the same desirable:
+[p161_c0004] _A-29_
+[p161_c0005] _4926-9546-3778.3_
+[p161_c0006] _Master Page # 161 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 162
+
+[p162_c0001] (a) The fact and date of the execution by any Owner or his attorney-in-fact of such instrument may be proved by the certificate of a signature guarantor, or of any notary public or other officer authorized to take acknowledgments of deeds, that the Person signing such request or other instrument acknowledged to him the execution thereof, or by an affidavit of a witness of such execution, duly sworn to before such notary public or other officer. Where such execution is by an officer of a corporation or association or a member of a partnership, on behalf of such corporation, association or partnership such certificate or affidavit shall also constitute sufficient proof of his authority;
+[p162_c0002] (b) The ownership of Obligations and the amount, numbers and other identification, and date of holding the same shall be proved by the registry books.
+[p162_c0003] 2. Any request or consent by the Owner of any Obligation shall bind all future Owners of such Obligation in respect of anything done or suffered to be done by the Issuer or any Fiduciary in accordance therewith.
+[p162_c0004] Section A-803. Money Held for Particular Obligations. The amounts held by any Fiduciary for the payment of the interest, principal or Redemption Price due on any date with respect to particular Obligations shall, on and after such date and pending such payment, be set aside on its books and held in trust by it for the Owners of Obligations entitled thereto.
+[p162_c0005] Section A-804. General Regulations as to Money and Funds. 1. Each of the Funds and Accounts established by the Resolution shall be a trust fund for the purposes thereof.
+[p162_c0006] 2. All amounts of the Issuer held or set aside under the Resolution shall, until paid over to the Fiduciaries or otherwise invested or applied as provided in the Resolution, be deposited by the Issuer in its name, on demand or time deposit, in such Banks as shall be selected by the Issuer. Any amounts held by any Fiduciary under the Resolution shall be deposited in such Banks as the Issuer may select. Any such deposit may be made in the commercial banking department of any Fiduciary which may honor checks on such deposit with the same force and effect as if it were not such Fiduciary, and without any duty to inquire into whether any withdrawals of such funds are in accordance with or might violate any of the provisions of the Resolution. Such deposits shall be continuously secured by the obligations of the United States of America or of the State, which obligations shall have a market value (exclusive of accrued interest) at all times at least equal to the amount of such deposits, which obligations shall be segregated in trust for the account of the Issuer, or shall be otherwise held as the Issuer and the depository may agree. Securities deposited with the Federal Reserve Bank to secure all trust accounts of a depository shall be deemed to comply with the foregoing requirement.
+[p162_c0007] 3. Unless otherwise specified in a Supplemental Resolution authorizing the issuance of Obligations, all money held by any Fiduciary, as such, may be deposited by such Fiduciary in its banking department on demand or, if and to the extent directed by the Issuer and acceptable to such Fiduciary, on time deposit, and all such deposits shall be continuously secured by the obligations of the United States of America or of the State which obligations shall have a market value (exclusive of accrued interest) at all times at least equal to the amount of such deposits. Securities deposited with the Federal Reserve Bank to secure all trust accounts of the Fiduciary shall be deemed to comply with the foregoing requirement. Such Fiduciary shall allow and credit
+[p162_c0008] _A-30_
+[p162_c0009] _4926-9546-3778.3_
+[p162_c0010] _Master Page # 162 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 163
+
+[p163_c0001] on such money such interest, if any, as it customarily allows upon similar funds of similar size and under similar conditions or as required by law.
+[p163_c0002] Section A-805. Preservation and Inspection of Documents. All documents received by a Fiduciary under the provisions of the Resolution shall be retained in its possession and shall be subject at all reasonable times to the inspection of the Issuer, any other Fiduciary, and any Owners of at least 5% aggregate principal amount of Obligations and their agents and their representatives, any of whom may make copies thereof.
+[p163_c0003] Section A-806. Parties Interest Herein. Nothing in the Resolution expressed or implied is intended or shall be construed to confer upon, or to give to any Person, other than the Issuer, the Fiduciaries, the Owners of Obligations and the holders of Parity Debt, any right, remedy or claim under or by reason of the Resolution or any covenant, condition or stipulation thereof, and all the covenants, stipulations, promises and agreements in the Resolution contained by and on behalf of the Issuer shall be for the sole and exclusive benefit of the Issuer, the Fiduciaries, the Owners of Obligations and the holders of Parity Debt.
+[p163_c0004] Section A-807. No Recourse on the Obligations. No recourse shall be had for the payment of the principal or Redemption Price of or interest on the Obligations or Parity Debt or for any claim based thereon or on the Resolution against any member, officer, or employee of the Issuer or any Person executing the Obligations.
+[p163_c0005] Section A-808. Successors and Assigns. Whenever in the Resolution the Issuer is named or referred to, it shall be deemed to include its successors and assigns and all the covenants and agreements in the Resolution contained by or on behalf of the Issuer shall bind and ensure to the benefit of its successors and assigns whether so expressed or not.
+[p163_c0006] Section A-809. Business Days. Except as otherwise provided pursuant to a Supplemental Resolution, if the date for making any payment or the last date for performance of any act or the exercising of any right, as provided in the Resolution, is not a Business Day, such payment may be made or act performed or right exercised on the next succeeding Business Day with the same force and effect as if made or done on the nominal date provided in the Resolution and no interest shall accrue during the intervening period with respect to any payment so deferred.
+[p163_c0007] Section A-810. Severability of Invalid Provisions. If any term or provision of this Annex A or the Resolution shall be invalid, inoperative or unenforceable as applied in any particular case in any jurisdiction or jurisdictions or in all jurisdictions, or in all cases because it conflicts with any other provision or provisions hereof or any constitution or statute or rule of public policy, or for any other reason, such circumstances shall not have the effect of rendering the provision in question inoperative or unenforceable in any other case or circumstance, or of rendering any other provision or provisions herein contained invalid, inoperative, or unenforceable to any extent whatever, and such term and provision shall be valid and enforced to the fullest extent permitted by law.
+[p163_c0008] The invalidity of any one or more phrases, sentences, clauses or Sections of the Resolution shall not affect the remaining portions of the Resolution, or any part hereof, including any part of this Annex A.
+[p163_c0009] _A-31_
+[p163_c0010] _4926-9546-3778.3_
+[p163_c0011] _Master Page # 163 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 164
+
+[p164_c0001] Section A-811. Exclusion of Obligations. Obligations owned or held by or for the account of the Issuer or any Related Entity shall not be deemed Outstanding for the purpose of any consent to be given or other action to be taken by or upon the direction of Owners of a specified portion of Obligations Outstanding, and the Issuer or any Related Entity shall not be entitled with respect to such Obligations to give any such consent or to take, or direct the taking of, any such action. At the time of any such consent or action, the Issuer shall furnish to the Trustee a certificate of an Authorized Officer, upon which the Trustee may conclusively rely, describing all Obligations so to be excluded.
+[p164_c0002] Section A-812. Governing Law. The Resolution, including this Annex A, shall be governed by and interpreted in accordance with internal laws of the State, without regard to conflict of law principles thereof.
+[p164_c0003] _A-32_
+[p164_c0004] _4926-9546-3778.3_
+[p164_c0005] _Master Page # 164 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 165
+
+### [p165_c0001] EXHIBIT ONE
+### [p165_c0002] FORM OF SENIOR LIEN OBLIGATIONS
+[p165_c0003] THE BONDS SHALL NOT BE A DEBT OF THE STATE OF NEW YORK OR THE CITY OF NEW YORK AND NEITHER THE STATE NOR THE CITY SHALL BE LIABLE THEREON.
+[p165_c0004] Unless this certificate is presented by an authorized representative of The Depository Trust Company, a New York corporation ("DTC"), to the issuer or its agent for registration of transfer, exchange or payment, and any certificate issued is registered in the name of Cede & Co. or such other name as requested by an authorized representative of DTC (and any payment is made to Cede & Co. or to such other entity as is requested by an authorized representative of DTC), ANY TRANSFER, PLEDGE OR OTHER USE HEREOF FOR VALUE OR OTHERWISE BY OR TO ANY PERSON IS WRONGFUL inasmuch as the registered owner hereof, Cede & Co., has an interest herein.
+[p165_c0005] As provided in the Resolution referred to herein, until the termination of the system of book-entry-only transfers through DTC and notwithstanding any other provision of the Resolution to the contrary, a portion of the principal amount of this Bond may be paid or redeemed without surrender hereof to the Paying Agent. DTC or a nominee, transferee or assignee of DTC of this Bond may not rely upon the principal amount indicated hereon as the principal amount hereof outstanding and unpaid. The principal amount hereof outstanding and unpaid shall for all purposes be the amount determined in the manner provided in the Resolution.
+### [p165_c0006] TRIBOROUGH BRIDGE AND TUNNEL AUTHORITY CONGESTION RELIEF ZONE SENIOR LIEN TOLL REVENUE BOND, SERIES _____
+[p165_c0007] No. _____
+[p165_c0008] $
+[p165_c0009] Interest Rate
+[p165_c0010] Maturity Date
+[p165_c0011] Dated Date
+[p165_c0012] CUSIP
+[p165_c0013] Registered Owner: Cede & Co.
+[p165_c0014] Principal Amount: _____ Dollars
+[p165_c0015] TRIBOROUGH BRIDGE AND TUNNEL AUTHORITY (herein called "TBTA"), a body corporate and politic constituting a public benefit corporation, organized and existing under and by virtue of the laws of the State of New York, acknowledges itself indebted to, and for value
+[p165_c0016] _1 - 1_
+[p165_c0017] _4937-1812-4148.4_
+[p165_c0018] _Master Page # 165 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 166
+
+[p166_c0001] received hereby promises to pay to the Registered Owner stated above, or registered assigns, on the Maturity Date set forth above, but solely from the Senior Lien Obligations Trust Estate defined below, upon presentation and surrender of this Bond at the office or agency of TBTA designated for such payment in the Borough of Manhattan, City and State of New York, or, at the option of the Registered Owner hereof, at any other office or agency of TBTA designated by TBTA for such payment, the Principal Amount set forth above in any coin or currency of the United States of America which at the time of payment is legal tender for the payment of public and private debts, and to pay to the Registered Owner hereof interest on such Principal Amount, such payment to be made by [TRUSTEE], as Paying Agent, from the Dated Date set forth above or such later date to which interest has been paid, at the Interest Rate per annum set forth above, payable on _____ and semi-annually thereafter on the _____ day of _____ and _____ in each year, until TBTA's obligation with respect to the payment of such Principal Amount shall be discharged. Interest on the Series _____ Bonds (as hereinafter defined) shall be computed on the basis of a 360-day year consisting of twelve 30-day months. Interest will be paid by check mailed on the interest payment date by the Paying Agent to the Registered Owner at his address as it appears on the registration records or, at the option of any Owner of at least one million dollars ($1,000,000) in principal amount of the Series _____ Bonds, by wire transfer in immediately available funds on each interest payment date to such Owner, provided such Owner has notified the Senior Lien Trustee (as hereinafter defined) in writing of such Owner's wire transfer address (which shall be in the continental United States) at least 15 days prior to the relevant payment date. In the event that any payment date is not a business day, payment will be made on the next business day with the same force and effect as if made on the nominal date provided in the Resolution and no interest shall accrue during the intervening period with respect to any payment so deferred.
+[p166_c0002] This Bond is one of a duly authorized issue of obligations of TBTA designated as its "Congestion Relief Zone Senior Lien Toll Revenue Bonds" (herein called the "Bonds") issued under and pursuant to the Triborough Bridge and Tunnel Authority Act, being Title 3 of Article 3 of the New York Public Authorities Law, Chapter 43-A of the Consolidated Laws of the State of New York, as amended (herein called the "TBTA Act"), and under and pursuant to a resolution of TBTA adopted on _____, 20____, entitled "Congestion Relief Zone Toll Revenue Obligation Resolution" (the "General Resolution"), as supplemented by the Multiple Credit and Series 20____ Supplemental Resolution Authorizing Obligations, Obligation Anticipation Notes and Refunding Obligations, adopted by the Board of TBTA on _____ and the certificate of determination relating to the Bonds (together, the "Supplemental Resolution"). The Supplemental Resolution and the General Resolution are collectively referred to herein as the "Resolution". This Bond is one of a series of Bonds designated as "Congestion Relief Zone Senior Lien Toll Revenue Bonds, Series _____" (herein called the "Series _____ Bonds"), issued in the aggregate principal amount of $_____ under said Resolution. All capitalized terms used but not otherwise defined have the respective meanings ascribed by the Resolution.
+[p166_c0003] Copies of the Resolution are on file at the office of TBTA and at the principal corporate trust office of [TRUSTEE], _____, _____, as Senior Lien Trustee under the Resolution, or its successor as Senior Lien Trustee (herein called the "Senior Lien Trustee"), in the Borough of Manhattan, City and State of New York, and reference to the Resolution and any and all supplements thereto and modifications and amendments thereof and to the TBTA Act is hereby made for a complete description of the pledge and covenants securing the Series _____ Bonds, the
+[p166_c0004] _1 - 2_
+[p166_c0005] _4937-1812-4148.4_
+[p166_c0006] _Master Page # 166 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 167
+
+[p167_c0001] nature, extent and manner of enforcement of, and limitations with respect to, such pledge, the rights and remedies of the registered owners of the Series _____ Bonds with respect thereto, and the terms and conditions upon which the Bonds are issued and may be issued thereunder.
+[p167_c0002] This Series _____ Bond is a special obligation of TBTA, secured by a pledge, subject only to the provisions of the Resolution referred to below permitting the application thereof for the purposes and on the terms and conditions set forth in the Resolution, of all right, title and interest of TBTA in the Senior Lien Obligations Trust Estate (as defined in the Resolution).
+[p167_c0003] To the extent provided in the Resolution, Bonds may be issued from time to time pursuant to Supplemental Resolutions in one or more series, in various principal amounts, may mature at different times, may bear interest at different rates and may otherwise vary as provided in the Resolution. The aggregate principal amount of Bonds which may be issued under the Resolution is not limited except as provided in the Resolution and the TBTA Act, and all Bonds issued and to be issued under the Resolution are and shall be equally secured by the pledge and covenants made therein, except as otherwise expressly provided or permitted in the Resolution.
+[p167_c0004] To the extent and in the manner permitted by the terms of the Resolution, the Series _____ Bonds are subject to redemption as provided in the Resolution. The Series _____ Bonds may be subject to conditional redemption to the extent and in the manner permitted by the terms of the Resolution. Any redemption notice or other notices required by the Resolution shall be sent only to the Securities Depository nominee, initially Cede & Co., as nominee of DTC, so long as the Series _____ Bonds are held in book-entry-only form.
+[p167_c0005] The events specified in the Resolution as such shall constitute Senior Lien Obligations Events of Default and the Senior Lien Trustee and the Senior Lien Owners shall have the rights and remedies provided by the Resolution. Neither the Senior Lien Trustee or any Senior Lien Parity Debt Owner or Senior Lien Owners shall have the right declare the principal amount of all the Senior Lien Indebtedness then Outstanding under the Resolution or the agreement under which the Senior Lien Parity Debt was issued, and the interest accrued thereon, to be immediately due and payable.
+[p167_c0006] To the extent provided in the Resolution, Senior Lien Parity Debt, secured on a parity with the Bonds with respect to all right, title and interest of TBTA in the Senior Lien Obligations Trust Estate may be issued or entered into by TBTA. The aggregate principal amount of Parity Debt which may be issued or entered into under the Resolution is not limited except as provided in the Resolution and the TBTA Act.
+[p167_c0007] To the extent provided in the Resolution, a Series of Senior Lien Obligations and/or Senior Lien Parity Debt may be issued or entered into by TBTA that is secured on a basis that is junior and subordinate to Senior Lien Obligations and Senior Lien Parity Debt and senior to Subordinate Lien Obligations and Subordinate Lien Parity Debt.
+[p167_c0008] To the extent and in the manner permitted by the terms of the Resolution, modification or amendment of the Resolution and of the rights and obligations of TBTA and of the Senior Lien Owners of the Bonds may be made by a Supplemental Resolution, in certain instances without the
+[p167_c0009] _1 - 3_
+[p167_c0010] _4937-1812-4148.4_
+[p167_c0011] _Master Page # 167 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 168
+
+[p168_c0001] written consent of the Senior Lien Owners, of the Bonds. Reference is made to the Resolution for the terms and provisions thereof relating to amendments and supplements.
+[p168_c0002] The Series _____ Bonds are issued by means of a book-entry-only system, with no physical distribution of bond certificates to be made except as provided in the Resolution. Transfers of ownership shall be effected on the records of the Securities Depository and its participants pursuant to rules and procedures established by the Securities Depository and its participants. TBTA and the Senior Lien Trustee will recognize the Securities Depository Nominee, while the Registered Senior Lien Owner of this Bond, as the owner of this Bond for all purposes, including payments of principal of and Redemption Price and interest on this Bond, notices and voting. In the event the Series _____ Bonds are no longer held in book-entry-only form, the Series _____ Bonds would be issuable in the form of fully registered Bonds without coupons in the denomination of $5,000 or any integral multiple thereof.
+[p168_c0003] The TBTA Act provides that neither the members of TBTA nor any person executing the Bonds shall be liable personally on the Bonds or be subject to any personal liability or accountability by reason of the issuance thereof.
+[p168_c0004] It is hereby certified and recited that all conditions, acts and things required by law and the Resolution to exist, to have happened and to have been performed precedent to and in the issuance of this Bond, exist, have happened and have been performed and that the issue of the Series _____ Bonds, together with all other indebtedness of TBTA, is within every debt and other limit prescribed by the laws of the State of New York.
+[p168_c0005] This Bond shall not be entitled to any benefit under the Resolution or be valid or become obligatory for any purpose until this Bond shall have been authenticated by the execution by the Senior Lien Trustee of the Senior Lien Trustee's Certificate of Authentication hereon.
+[p168_c0006] IN WITNESS WHEREOF, TRIBOROUGH BRIDGE AND TUNNEL AUTHORITY has caused this Bond to be signed in its name and on its behalf by the manual or facsimile signature of its Authorized Officer as of the Dated Date.
+[p168_c0007] TRIBOROUGH BRIDGE AND TUNNEL AUTHORITY
+[p168_c0008] By: _____ [Authorized Officer]
+[p168_c0009] _1 - 4_
+[p168_c0010] _4937-1812-4148.4_
+[p168_c0011] _Master Page # 168 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 169
+
+### [p169_c0001] SENIOR LIEN TRUSTEE'S CERTIFICATE OF AUTHENTICATION
+[p169_c0002] This Bond is one of the Bonds described in the within-mentioned Resolution.
+[p169_c0003] Date of Authentication: _____
+[p169_c0004] [TRUSTEE], as Senior Lien Trustee
+[p169_c0005] By: _____ Authorized Signatory
+[p169_c0006] _1 - 5_
+[p169_c0007] _4937-1812-4148.4_
+[p169_c0008] _Master Page # 169 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 170
+
+### [p170_c0001] [Form of Assignment]
+### [p170_c0002] ASSIGNMENT
+[p170_c0003] FOR VALUE RECEIVED the undersigned hereby sells, assigns and transfers unto
+[p170_c0004] [PLEASE INSERT SOCIAL SECURITY NUMBER OR OTHER IDENTIFYING NUMBER OF ASSIGNEE]
+[p170_c0005] [PLEASE PRINT OR TYPEWRITE NAME AND. ADDRESS OF TRANSFeree]
+[p170_c0006] the within Bond and all rights thereunder, and hereby irrevocably constitutes and appoints _____ attorney to transfer the within Bond on the books kept for registration thereof with full power of substitution in the premises.
+[p170_c0007] Date: _____
+[p170_c0008] In the Presence of:
+[p170_c0009] NOTICE: The signature must be guaranteed by an “eligible guarantor Institution” meeting the requirements of membership or participation in the Security Transfer Agent Medallion Program (“STAMP”) or such other “signature guarantee program” as may be determined by the Senior Lien Trustee in addition to, or in substitution for, STAMP, all in accordance with the Securities Exchange Act of 1934, as amended.
+[p170_c0010] NOTE: The signature to this assignment must correspond with the name as written on the face of the within Bond in every particular, without alteration or enlargement or any change whatsoever.
+[p170_c0011] Signature Guaranteed:
+[p170_c0012] _____ _____
+[p170_c0013] _1 - 7_
+[p170_c0014] _4937-1812-4148.4_
+[p170_c0015] _Master Page # 170 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 171
+
+### [p171_c0001] EXHIBIT TWO
+### [p171_c0002] FORM OF SUBORDINATE LIEN OBLIGATIONS
+[p171_c0003] THE BONDS SHALL NOT BE A DEBT OF THE STATE OF NEW YORK OR THE CITY OF NEW YORK AND NEITHER THE STATE NOR THE CITY SHALL BE LIABLE THEREON.
+[p171_c0004] Unless this certificate is presented by an authorized representative of The Depository Trust Company, a New York corporation ("DTC"), to the issuer or its agent for registration of transfer, exchange or payment, and any certificate issued is registered in the name of Cede & Co. or such other name as requested by an authorized representative of DTC (and any payment is made to Cede & Co. or to such other entity as is requested by an authorized representative of DTC), ANY TRANSFER, PLEDGE OR OTHER USE HEREOF FOR VALUE OR OTHERWISE BY OR TO ANY PERSON IS WRONGFUL inasmuch as the registered owner hereof, Cede & Co., has an interest herein.
+[p171_c0005] As provided in the Resolution referred to herein, until the termination of the system of book-entry-only transfers through DTC and notwithstanding any other provision of the Resolution to the contrary, a portion of the principal amount of this Bond may be paid or redeemed without surrender hereof to the Paying Agent. DTC or a nominee, transferee or assignee of DTC of this Bond may not rely upon the principal amount indicated hereon as the principal amount hereof outstanding and unpaid. The principal amount hereof outstanding and unpaid shall for all purposes be the amount determined in the manner provided in the Resolution.
+### [p171_c0006] TRIBOROUGH BRIDGE AND TUNNEL AUTHORITY CONGESTION RELIEF ZONE SUBORDINATE LIEN TOLL REVENUE BOND, SERIES _____
+[p171_c0007] No. _____ $
+[p171_c0008] Interest Rate
+[p171_c0009] Maturity Date
+[p171_c0010] Dated Date
+[p171_c0011] CUSIP
+[p171_c0012] Registered Owner: Cede & Co.
+[p171_c0013] Principal Amount: _____ Dollars
+[p171_c0014] TRIBOROUGH BRIDGE AND TUNNEL AUTHORITY (herein called "TBTA"), a body corporate and politic constituting a public benefit corporation, organized and existing under and by virtue of the laws of the State of New York, acknowledges itself indebted to, and for value received hereby promises to pay to the Registered Owner stated above, or registered assigns, on the Maturity Date set forth above, but solely from the Subordinate Lien Obligations Trust Estate
+[p171_c0015] _2 - 1_
+[p171_c0016] _4937-1812-4148.4_
+[p171_c0017] _Master Page # 171 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 172
+
+[p172_c0001] defined below, upon presentation and surrender of this Bond at the office or agency of TBTA designated for such payment in the Borough of Manhattan, City and State of New York, or, at the option of the Registered Owner hereof, at any other office or agency of TBTA designated by TBTA for such payment, the Principal Amount set forth above in any coin or currency of the United States of America which at the time of payment is legal tender for the payment of public and private debts, and to pay to the Registered Owner hereof interest on such Principal Amount, such payment to be made by [TRUSTEE], as Paying Agent, from the Dated Date set forth above or such later date to which interest has been paid, at the Interest Rate per annum set forth above, payable on _____ and semi-annually thereafter on the _____ day of _____ and _____ in each year, until TBTA's obligation with respect to the payment of such Principal Amount shall be discharged. Interest on the Series _____ Bonds (as hereinafter defined) shall be computed on the basis of a 360-day year consisting of twelve 30-day months. Interest will be paid by check mailed on the interest payment date by the Paying Agent to the Registered Owner at his address as it appears on the registration records or, at the option of any Owner of at least one million dollars ($1,000,000) in principal amount of the Series _____ Bonds, by wire transfer in immediately available funds on each interest payment date to such Subordinate Lien Owner, provided such Subordinate Lien Owner has notified the Subordinate Lien Trustee (as hereinafter defined) in writing of such Subordinate Lien Owner's wire transfer address (which shall be in the continental United States) at least 15 days prior to the relevant payment date. In the event that any payment date is not a business day, payment will be made on the next business day with the same force and effect as if made on the nominal date provided in the Resolution and no interest shall accrue during the intervening period with respect to any payment so deferred.
+[p172_c0002] This Bond is one of a duly authorized issue of obligations of TBTA designated as its "Congestion Relief Zone Subordinate Lien Toll Revenue Bonds" (herein called the "Bonds") issued under and pursuant to the Triborough Bridge and Tunnel Authority Act, being Title 3 of Article 3 of the New York Public Authorities Law, Chapter 43-A of the Consolidated Laws of the State of New York, as amended (herein called the "TBTA Act"), and under and pursuant to a resolution of TBTA adopted on _____, 20____, entitled "Congestion Relief Zone Toll Revenue Obligation Resolution" (the "General Resolution"), as supplemented by the Multiple Credit and Series 20__ Supplemental Resolution Authorizing Obligations, Obligation Anticipation Notes and Refunding Obligations, adopted by the Board of TBTA on _____ and the certificate of determination relating to the Bonds (together, the "Supplemental Resolution"). The Supplemental Resolution and the General Resolution are collectively referred to herein as the "Resolution". This Bond is one of a series of Bonds designated as "Congestion Relief Zone Subordinate Lien Toll Revenue Bonds, Series _____" (herein called the "Series _____ Bonds"), issued in the aggregate principal amount of $_____ under said Resolution. All capitalized terms used but not otherwise defined have the respective meanings ascribed by the Resolution.
+[p172_c0003] Copies of the Resolution are on file at the office of TBTA and at the principal corporate trust office of [TRUSTEE], _____, _____, as Subordinate Lien Trustee under the Resolution, or its successor as Trustee (herein called the "Subordinate Lien Trustee"), in the Borough of Manhattan, City and State of New York, and reference to the Resolution and any and all supplements thereto and modifications and amendments thereof and to the TBTA Act is hereby made for a complete description of the pledge and covenants securing the Series _____ Bonds, the nature, extent and manner of enforcement of, and limitations with respect to, such pledge, the rights and remedies of the registered owners of the Series _____ Bonds with respect thereto, and
+[p172_c0004] _2 - 2_
+[p172_c0005] _4937-1812-4148.4_
+[p172_c0006] _Master Page # 172 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 173
+
+[p173_c0001] the terms and conditions upon which Subordinate Lien Bonds are issued and Subordinate Lien Bonds may be issued thereunder.
+[p173_c0002] This Series ____ Bond is a special obligation of TBTA, secured by a pledge, subject only to the provisions of the Resolution referred to below permitting the application thereof for the purposes and on the terms and conditions set forth in the Resolution, of all right, title and interest of TBTA in the Subordinate Lien Obligations Trust Estate (as defined in the Resolution). Any lien on and pledge of any portion of the Subordinate Lien Obligations Trust Estate securing Subordinate Lien Obligations is, and is hereby expressly declared to be, junior and inferior to the lien on and pledge of the Senior Lien Obligations Trust Estate created in the Resolution for the payment of the Senior Lien Obligations and Senior Lien Parity Debt.
+[p173_c0003] To the extent provided in the Resolution, Bonds may be issued from time to time pursuant to Supplemental Resolutions in one or more series, or subseries, in various principal amounts, may mature at different times, may bear interest at different rates and may otherwise vary as provided in the Resolution. The aggregate principal amount of Subordinate Lien Bonds which may be issued under the Resolution is not limited except as provided in the Resolution and the TBTA Act, and all Subordinate Lien Bonds issued and to be issued under the Resolution are and shall be equally secured by the pledge and covenants made therein, except as otherwise expressly provided or permitted in the Resolution.
+[p173_c0004] To the extent and in the manner permitted by the terms of the Resolution, the Series ____ Bonds are subject to redemption as provided in the Resolution. The Series ____ Bonds may be subject to conditional redemption to the extent and in the manner permitted by the terms of the Resolution. Any redemption notice or other notices required by the Resolution shall be sent only to the Securities Depository Nominee, initially Cede & Co., as nominee of DTC, so long as the Series ____ Bonds are held in book-entry-only form.
+[p173_c0005] The events specified in the Resolution as such shall constitute a Subordinate Lien Obligations Events of Default and the Subordinate Lien Trustee and the Subordinate Lien Owners shall have the rights and remedies provided by the Resolution. Neither the Subordinate Lien Trustee or any Subordinate Lien Parity Debt Owner or Subordinate Lien Owners shall have the right declare the principal amount of all the Subordinate Lien Indebtedness then Outstanding under the Resolution or the agreement under which the Subordinate Lien Parity Debt was issued, and the interest accrued thereon, to be immediately due and payable.
+[p173_c0006] To the extent provided in the Resolution, Subordinate Lien Parity Debt, secured on a parity with the Bonds with respect to all right, title and interest of TBTA in the Subordinate Lien Obligations Trust Estate may be issued or entered into by TBTA. The aggregate principal amount of Subordinate Lien Parity Debt which may be issued or entered into under the Resolution is not limited except as provided in the Resolution and the TBTA Act.
+[p173_c0007] To the extent and in the manner permitted by the terms of the Resolution, modification or amendment of the Resolution and of the rights and obligations of TBTA and of the Subordinate Lien Owners of the Bonds may be made by a Supplemental Resolution, in certain instances without the written consent of the Subordinate Lien Owners, of the Bonds. Reference is made to the Resolution for the terms and provisions thereof relating to amendments and supplements.
+[p173_c0008] _2 - 3_
+[p173_c0009] _4937-1812-4148.4_
+[p173_c0010] _Master Page # 173 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 174
+
+[p174_c0001] The Series _____ Bonds are issued by means of a book-entry-only system, with no physical distribution of bond certificates to be made except as provided in the Resolution. Transfers of ownership shall be effected on the records of the Securities Depository and its participants pursuant to rules and procedures established by the Securities Depository and its participants. TBTA and the Subordinate Lien Trustee will recognize the Securities Depository nominee, while the Registered Owner of this Bond, as the owner of this Bond for all purposes, including payments of principal of and Redemption Price and interest on this Bond, notices and voting. In the event the Series _____ Bonds are no longer held in book-entry-only form, the Series _____ Bonds would be issuable in the form of fully registered Bonds without coupons in the denomination of $5,000 or any integral multiple thereof.
+[p174_c0002] The TBTA Act provides that neither the members of TBTA nor any person executing the Bonds shall be liable personally on the Bonds or be subject to any personal liability or accountability by reason of the issuance thereof.
+[p174_c0003] It is hereby certified and recited that all conditions, acts and things required by law and the Resolution to exist, to have happened and to have been performed precedent to and in the issuance of this Bond, exist, have happened and have been performed and that the issue of the Series _____ Bonds, together with all other indebtedness of TBTA, is within every debt and other limit prescribed by the laws of the State of New York.
+[p174_c0004] This Bond shall not be entitled to any benefit under the Resolution or be valid or become obligatory for any purpose until this Bond shall have been authenticated by the execution by the Subordinate Lien Trustee of the Subordinate Lien Trustee's Certificate of Authentication hereon.
+[p174_c0005] IN WITNESS WHEREOF, TRIBOROUGH BRIDGE AND TUNNEL AUTHORITY has caused this Bond to be signed in its name and on its behalf by the manual or facsimile signature of its Authorized Officer as of the Dated Date.
+[p174_c0006] TRIBOROUGH BRIDGE AND TUNNEL AUTHORITY
+[p174_c0007] By: _____ [Authorized Officer]
+[p174_c0008] _2 - 4_
+[p174_c0009] _4937-1812-4148.4_
+[p174_c0010] _Master Page # 174 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 175
+
+### [p175_c0001] SUBORDINATE LIEN TRUSTEE'S CERTIFICATE OF AUTHENTICATION
+[p175_c0002] This Bond is one of the Bonds described in the within mentioned Resolution.
+[p175_c0003] Date of Authentication: _____
+[p175_c0004] [TRUSTEE], as Subordinate Lien Trustee
+[p175_c0005] By: _____ Authorized Signatory
+[p175_c0006] _2 - 5_
+[p175_c0007] _4937-1812-4148.4_
+[p175_c0008] _Master Page # 175 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 176
+
+### [p176_c0001] [Form of Assignment]
+### [p176_c0002] ASSIGNMENT
+[p176_c0003] FOR VALUE RECEIVED the undersigned hereby sells, assigns and transfers unto
+[p176_c0004] [PLEASE INSERT SOCIAL SECURITY NUMBER OR OTHER IDENTIFYING NUMBER OF ASSIGNEE]
+[p176_c0005] [PLEASE PRINT OR TYPEWRITE NAME AND. ADDRESS OF TRANSFeree]
+[p176_c0006] the within Bond and all rights thereunder, and hereby irrevocably constitutes and appoints _____ attorney to transfer the within Bond on the books kept for registration thereof with full power of substitution in the premises.
+[p176_c0007] Date: _____
+[p176_c0008] In the Presence of:
+[p176_c0009] NOTICE: The signature must be guaranteed by an “eligible guarantor Institution” meeting the requirements of membership or participation in the Security Transfer Agent Medallion Program (“STAMP”) or such other “signature guarantee program” as may be determined by the Subordinate Lien Trustee in addition to, or in substitution for, STAMP, all in accordance with the Securities Exchange Act of 1934, as amended.
+[p176_c0010] NOTE: The signature to this assignment must correspond with the name as written on the face of the within Bond in every particular, without alteration or enlargement or any change whatsoever.
+[p176_c0011] Signature Guaranteed:
+[p176_c0012] _____ _____
+[p176_c0013] _2 - 6_
+[p176_c0014] _4937-1812-4148.4_
+[p176_c0015] _Master Page # 176 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 177
+
+### [p177_c0001] Metropolitan Transportation Authority
+### [p177_c0002] OCTOBER 2025
+### [p177_c0003] LIST OF NONCOMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p177_c0004] Procurements Requiring Majority Vote:
+### [p177_c0005] G. Miscellaneous Service Contracts
+[p177_c0006] (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p177_c0007] 1. Kyndryl Inc. $85,725,828 Staff Summary Attached 4½ years + two 1-year renewal Options Contract # 900000000005028
+[p177_c0008] Contract award for (1) zCloud Implementation and Data Center Maintenance and Managed Services, and (2) continuance of maintenance and managed support for a number of MTA data center operating environments that house critical applications.
+[p177_c0009] _Master Page # 177 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 178
+
+### [p178_c0001] Schedule G: Miscellaneous Service Contracts
+[p178_c0002] Item Number: 1
+[p178_c0003]
+
+```text
+Vendor Name (Location) Kyndryl, Inc. (New York, New York) Description zCloud Implementation and Data Center Maintenance and Managed Services Contract Term (including Options, if any): 4.5 Years + two 1-year Options Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Immediate Operating Need
+```
+[p178_c0004]
+
+```text
+Contract Number 900000000005028 Renewal? Yes No Total Estimated Amount: $85,725,828 (estimated) Funding Source Operating Capital Federal Other: Requesting Department: MTA IT
+```
+### [p178_c0005] Background:
+[p178_c0006] MTA Headquarters is seeking Board approval to award a noncompetitive miscellaneous service contract to Kyndryl Inc. ("Kyndryl") in an estimated amount of $85,725,828 to upgrade MTA's mainframe environment to Kyndryl's zCloud platform and to continue maintenance and managed support for a number of MTA data center operating environments that house critical applications. An Immediate Operating Need ("ION") was issued for the upgrade and migration to Kyndryl's zCloud platform. This new contract is for 4½ years (September 2025–February 2030), reserving two, 1-year renewal options (March 2030–February 2032). The Board is also requested to authorize the MTA Deputy Chief Procurement Officer to approve the exercise of the two 1-year options, pending availability of funding.
+[p178_c0007] Since 2010, IBM (awarded via a competitive RFP process), and later Kyndryl, following its 2021 spin-off from IBM, has provided ongoing support for several of MTA's data center environments: Mainframe, PeopleSoft, and iSeries (AS400) platforms, which host multiple essential applications necessary to operate a broad range of critical functions across all the agencies within the MTA.
+### [p178_c0008] zCloud
+[p178_c0009] MTA's mainframe infrastructure is reaching the end of its useful life, and timely migration to Kyndryl's zCloud platform is now crucial in order to maintain functionality of critical systems and ensure compliance with MTA's operational standards and cybersecurity requirements. An ION, approved in September 2025 by the MTA Deputy CTO, Infrastructure and Operations and the acting MTA Chief Procurement Officer, authorized urgent procurement actions to address the critical need to begin the migration of MTA's applications from obsolete mainframe equipment into Kyndryl's new zCloud platform as soon as possible. The value of the ION is $1.1 million and is included in the total estimated contract amount. The development and implementation services to migrate the following applications from on-premises mainframe to the new zCloud will occur over a six-month period (September 2025–February 2026):
+- [p178_c0010] • TALON: Manages NYC Transit's supply chain and material logistics functions • Metro-North Crew Management System: Handles all day-to-day crew scheduling, payroll verification, and reporting for train and engine personnel • Capital Projects Information Control System ("CPICS"): Validates employee job charges and forwards force account charges for capital reimbursement • Automated Fare Collection: Manages the front and back-office systems for MetroCard fare collection, debit/credit processing, refunds and reporting
+[p178_c0011] After the implementation of zCloud, this contract will have Kyndryl continue to provide full managed services of MTA's data center operations over a four-year term (March 2026–February 2030).
+### [p178_c0012] PeopleSoft Environment
+[p178_c0013] PeopleSoft applications for payroll, finance, and HR, serving over 75,000 employees and retirees.
+### [p178_c0014] iSeries (IBM's midrange computing platform)
+[p178_c0015] NYC Transit's Automatic Timekeeping System that manages payroll for approximately 20,000 hourly and supervisory employees.
+### [p178_c0016] Basis for Noncompetitive Award
+[p178_c0017] In August 2025, a noncompetitive public advertisement was posted in the NYS Contract Reporter , the Daily News , and on the MTA website, citing the MTA's intention to award this contract to Kyndryl for a solution to upgrade its on-premise mainframe to Kyndryl's zCloud, maintenance, and managed services of three environments: (1) zCloud (2) PeopleSoft, and (3) IBM iSeries. No vendors responded resulting from this advertisement.
+[p178_c0018] _Master Page # 178 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 179
+
+### [p179_c0001] Schedule G: Miscellaneous Service Contracts
+### [p179_c0002] Metropolitan Transportation Authority
+[p179_c0003] This new contract enables the MTA to continue secure data center operations that include: the modernization of aging mainframe infrastructure by migrating critical applications to the secure and scalable zCloud platform, and ongoing managed services across all three platforms.
+[p179_c0004] Kyndryl possesses a deep understanding of these three environments to help ensure error-free operations of multiple critical systems. Kyndryl has in-depth knowledge to perform proper network support services and disaster recovery services required by the MTA. To maintain continuity and performance levels, it is necessary to retain Kyndryl as the services provider to maintain and operate MTA's three data center environments.
+[p179_c0005] If Kyndryl is not awarded this contract, the MTA will face serious challenges in transferring operational knowledge while managing aging, failure-prone systems. Engaging a new vendor would also introduce a steep learning curve, longer implementation timelines, and require heightened oversight to ensure service quality. In addition, onboarding a new provider would necessitate rebuilding critical support infrastructure, including network connectivity, security protocols, and PCI compliance frameworks followed by extensive testing before transitioning to live operations. MTA IT conducted an in-house estimate for the cost of purchasing on-premises hardware (in lieu of zCloud) that showed a cost of over $109 million, including the outer years for maintenance and support, which is double the cost of contracting with Kyndryl. As part of MTA's due diligence, other vendors like IBM and Ensono were evaluated. However, alternatives either lacked scale or required significant changes to existing systems. Additional discussions were also held with IT advisory firms which validated the selection of Kyndryl zCloud and implementation at other public agencies (including the NYC Office of Technology and Innovation and Hawaii's Enterprise Technology Service agencies) and confirmed zCloud's cost savings and improved efficiency.
+[p179_c0006] This noncompetitive award to Kyndryl will maintain all infrastructure, systems, applications, monitor system health, capacity and performance standards and provide on-going system management, security and compliance, backup and recovery on three data center environments: zCloud, Peoplesoft and iSeries. Kyndryl's solution offers the best fit for MTA's needs, balancing speed, cost-efficiency, and operational reliability, which are critical to MTA operations. Pursuing a new competitive solicitation at this time would significantly increase the risk of service disruption by extending reliance on obsolete equipment.
+### [p179_c0007] Cost Discussions and Negotiations
+[p179_c0008] Kyndryl's pricing includes capacity tailored to support the baseline application workload. During this contract term, the IT Department will follow a structured roadmap to transition and decommission legacy applications off the zCloud platforms. As applications become decommissioned, a reduction in costs will result. Key milestones include decommissioning AFC sub-components (2027–2029), the TALON system (2028–2029), and CDMS in 2027. It is anticipated that these decommissions will yield an estimated $11 million reduction in costs beginning in 2026. A cost assessment for transitioning PeopleSoft applications to Oracle Cloud is planned for 2026, after which further cost reductions may result. In addition, as a usage-based solution, Kyndryl will allow the MTA to realize savings in 2026 as customers spend down outstanding MetroCard balances, and into 2027 as refund processing concludes.
+[p179_c0009] The total contract value is estimated at $85.7 million, which covers the base 4½ year period totaling $56,482,528 and the two optional years totaling $29,243,300. Procurement negotiated a reduction from the initial proposal cost of $66,903,623 to $56,482,528 for the 54-month base term, or $10.4 million (a 15.6 percent decrease). Payment for the zCloud implementation costs is milestone-based to ensure performance. In accordance with the ION, a Notice to Proceed will be issued to Kyndryl to start migration to zCloud in September 2025. MTA's cost for the optional years is estimated at $29.2 million based on MTA's application decommissioning roadmap. MTA's pricing for managed services is partially consumption-based and can be scaled up or down depending on MTA capacity demand.
+[p179_c0010] MTA Procurement, MTA IT Department, Cost-Price Analysis Unit, and MTA's technology advisory firms have deemed all pricing and terms to be fair and reasonable.
+[p179_c0011] This contract is being evaluated to determine the appropriate scope of cybersecurity requirements, including any requirements under federal, state, and local law regulations. Any applicable cybersecurity requirements, to the extent required, will be included in the contract terms and conditions.
+[p179_c0012] Kyndryl has certified that pursuant to EO 16, it is not doing business in Russia.
+### [p179_c0013] D/M/WBE Information
+[p179_c0014] The MTA Department of Diversity and Civil Rights (DDCR) established zero percent MBE, WBE, and SDVOB goals on this contract.
+### [p179_c0015] Impact on Funding
+[p179_c0016] The total cost of this contract is funded by the MTA IT Operating Budget.
+[p179_c0017] _Master Page # 179 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 180
+
+### [p180_c0001] Metropolitan Transportation Authority
+### [p180_c0002] OCTOBER 2025
+### [p180_c0003] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p180_c0004] Procurements Requiring Majority Vote:
+### [p180_c0005] F. Personal Service Contracts
+[p180_c0006] (Staff Summaries required for items estimated to be greater than $1,000,000.)
+[p180_c0007]
+
+```text
+1. Metropolitan Life Insurance (0100) $200,440,000 Staff Summary Attached 2. Dentcare Delivery Systems, Inc. (0200) $2,015,000 ↓ 3. Metropolitan Life Insurance (15525) $7,400,000 ↓
+```
+[p180_c0008] Contract #s 194900-0100 / 194900-0200 / 15525
+[p180_c0009] Five years + two 1-year options
+[p180_c0010] Contract awards to provide dental benefits to the MTA on behalf of its affiliate agencies, comprised of some represented and non-represented employees and retirees, plus additional $7.4 million in funding for the continued provision of Preferred Provider Organization dental benefits for the remainder of year 2025.
+[p180_c0011] _Master Page # 180 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 181
+
+### [p181_c0001] Staff Summary
+### [p181_c0002] Page 1 of 3
+[p181_c0003]
+
+```text
+Item Number: 1–3 Department, Department Head Name: Deputy Chief Benefit Admin Officer, Stephen Scholl Internal Approvals Order Approval Order Approval 1 Procurement 2 Legal 3 DDCR 4 CFO
+```
+[p181_c0004]
+
+```text
+SUMMARY INFORMATION Vendor Name Metropolitan Life Insurance Company Dentcare Delivery Systems, Inc. Contract No. 194900-0100 / 15525 194900-0200 Description: MTA All Agencies Dental Benefits Plans Total Amount: 194900-0100 (PPO): $200,440,000 194900-0200 (DHMO): $2,015,000 15525 (PPO): $7,400,000 Contract Term (including Options, if any) January 1, 2026–December 31, 2030 Option(s) included in Total Amount? Yes No N/A Renewal? Yes No Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Funding Source Operating Capital Federal Other:
+```
+### [p181_c0005] Purpose
+[p181_c0006] Board approval is sought to award competitively negotiated personal service contracts to Metropolitan Life Insurance Company (“MetLife”) and Dentcare Delivery Systems, Inc. (“Dentcare”) to provide dental benefits services to the MTA on behalf of its affiliate agencies, comprised of non-represented employees and retirees, and some represented employees and retirees that negotiated these benefits. The period of performance is five years (January 1, 2026–December 31, 2030), which includes two, 1-year options. The Board is also requested to authorize the MTA Assistant Deputy Chief Procurement Officer to approve the exercise of Options 1 and 2. Board approval is also sought to add additional $7.4 million in funding to contract 15525 for the continued provision of Preferred Provider Organization (“PPO”) dental benefits for the remainder of year 2025. This funding will be added to the original competitively negotiated personal service contract with MetLife. The 2025 estimates were adjusted upward in order to reflect an increase in enrollment particularly for the PPO Managerial Plan.
+[p181_c0007] The total contract price, inclusive of options and additional funding of $7.4 million for contract 15525, is an amount not-to-exceed $209,855,000 (the PPO is valued at $200,440,000 and will be awarded to MetLife; and the Dental Health Maintenance Organization [“DHMO”] is valued at $2,015,000 and will be awarded to Dentcare), based on the projected enrollment.
+### [p181_c0008] Discussion
+[p181_c0009] The MTA currently offers 14 different plans to a population of approximately 33,000 active employees and retirees. There are 13 PPO plans and one DHMO. With the exception of the PPO Managerial Plan for non-represented enrollees, all plans are collectively bargained. MetLife currently insures 13 PPO plans, covering 31,908 enrollees. One plan, with 1,077 enrollees, is a DHMO currently insured with Dentcare Delivery Systems, Inc. MTA project management has found the performance of both providers satisfactory. To award a successor contract, a replacement Request for Proposal (“RFP”) was issued where MTA’s goal was to have providers match the required plan designs, provide a best-in-class dental benefit service vendor that would deliver optimal member experience, empower members to make ideal dental choices, and improve the overall health of the covered population of the MTA. The MTA subsidizes the full cost of the dental plans for its employees, retirees, and their eligible dependents. Participants are responsible only for the payment of applicable deductibles, copayments, non-participating provider charges, and for any services that are not covered by the insurance program.
+[p181_c0010] A two-step RFP was publicly advertised, and letters advising potential proposers of its availability were issued to eight firms. Step 1, the initial prequalification, was undertaken to identify firms eligible to meet the MTA’s minimum requirements for a contract award of dental benefits in both, or either, fully insured and/or self-insured plans. At its conclusion, proposals were received from five firms: Cigna Health and Life Insurance Company; Delta Dental of New York, Inc.; EmblemHealth Plan, Inc. (“Emblem”); Dentcare Delivery Systems, Inc. (“Dentcare”); and Metropolitan Life Insurance Company (“MetLife”). All proposers were notified of their prequalification and subsequently received the detailed RFP package in Step 2.
+[p181_c0011] _Master Page # 181 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 182
+
+### [p182_c0001] Staff Summary
+### [p182_c0002] Page 2 of 3
+[p182_c0003] The prequalification requirements for the plans included (1) certifications and licenses required to underwrite or administer the dental plans; (2) currently offering dental PPO and/or DHMO plans with a minimum of five employer groups, each with 20,000 or more eligible employees and retirees, and overall current plan membership of over one million participants; and (3) maintain a national network of providers, with a robust network in the following areas: Tri-state area (New York, New Jersey, and Connecticut), Pennsylvania, Florida, and North and South Carolina.
+[p182_c0004] The pre-qualified firms were then asked to submit proposals for Step 2 of the RFP, which allowed proposals for both fully and self-insured options for PPO and fully insured for DHMO plans. Three proposals were received for the PPO plans: Dentcare, Emblem, and MetLife proposed for the fully insured PPO plans; Emblem and MetLife proposed for the self-insured PPO option. Dentcare did not submit for the self-insured option. For the DHMO plan, only one proposal was received from Dentcare.
+[p182_c0005] The evaluation criteria for Step 2 were (1) cost to the MTA based on proposer's submission and discount analysis; (2) ability to replicate the requested plan designs; (3) network access and provider disruption; (4) resources including portal capabilities, account team, call center, and relevant experience; (5) responsiveness to the RFP, and the Proposer's demonstration of a clear understanding of the objectives and constraints of the undertaking as described by the RFP documents; and (6) Proposer's diversity practices.
+[p182_c0006] The MTA engaged Mercer Health & Benefits LLC ("Mercer"), a benefits consulting firm, to assist with the RFP process. Mercer played a key role in the preparation of solicitation documents, performing financial modeling and pricing analyses, and delivering additional support services. A Selection Committee ("SC") was convened with representatives from Labor Relations and Benefits, and Human Resources. Based on the technical evaluation criteria, the SC recommended that all Step 2 proposers move forward in the RFP process. The Proposers were invited to give oral presentations, proceed with negotiations, and subsequently submit their best and final offers ("BAFOs"). During the RFP process, MTA reevaluated the consolidated Managerial Plan for the non-represented population and created an additional 15th plan design that more closely aligns with dental benefits benchmarks for New York City metropolitan employer plans and governmental agencies. All proposers provided revised cost proposals in accordance with the adjusted plan design requirements.
+[p182_c0007] Following negotiations and BAFO reviews, the SC recommended that fully insured PPO plans be awarded to MetLife and the DHMO plan be awarded to Dentcare. MetLife submitted the highest-ranked proposal for the PPO plan with all evaluation criteria taken into consideration and therefore determined to offer the best value for the MTA. The recommended firms' proposals met geographic coverage, matched plan designs as required by MTA, had high member access, and limited member disruption. Both MetLife and Dentcare are incumbent suppliers, so no additional MTA resources will be needed to implement the plans.
+[p182_c0008] The cost estimates were developed by Mercer. For the fully insured proposals, Mercer used the latest enrollment numbers as of June 2025 by plan and rates provided by each vendor to develop costs. For the self-insured proposal, Mercer used the latest enrollment numbers as of June 2025 by plan, historical claim experience, vendor administration fees, and expected network discounts to develop costs.
+### [p182_c0009] Contract 194900-0100
+[p182_c0010] MetLife's five-year fully insured PPO BAFO cost is projected to be $200,440,000. The fully insured PPO option was selected because the projected total cost from all proposers was between 5.3 percent and 8.2 percent lower when compared to the self-insured program cost estimate. MetLife's initial cost proposal in the amount of $219,440,000 was negotiated to $200,440,000 resulting in cost savings of $19,000,000 over the term of the contract. The negotiated savings include $3,900,000 over five years that is attributed to the consolidated Managerial Plan design adjustments. In addition, under the PPO contract, MTA would receive a dividend payment equal to 50 percent of any surplus created if incurred claims are less than 87 percent of earned premium for that plan year. If the MTA's incurred claims are 87 percent of earned premium or higher, no dividend would be payable. Although MetLife's BAFO is 5.6 percent higher than the lowest cost proposer, it was determined to offer the best value to MTA due to significant member disruption and much smaller network of dentists offered by the lower cost option.
+[p182_c0011] The new award will provide budgetary savings for 2026 in the amount of $1.4 million compared to the 2025 plan cost.
+### [p182_c0012] Contract 194900-0200
+[p182_c0013] The five-year fully insured DHMO cost with Dentcare is projected to be $2,015,000. Dentcare's BAFO costs are $2,015,000 for the five-year period, which is $25,000 or 1.2 percent lower than the initial offer of $2,040,000. Compared to market DHMO pricing, Dentcare's proposed costs are found to be competitive. The Selection Committee selected Dentcare's proposal based on having reasonable cost, access and the ability to match the current plan designs without any member disruption.
+[p182_c0014] Based on the above, MetLife's and Dentcare's final price proposals are deemed to be fair and reasonable.
+[p182_c0015] _Master Page # 182 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 183
+
+### [p183_c0001] Schedule H: Modifications to Personal Service & Miscellaneous Service Contracts
+### [p183_c0002] Metropolitan Transportation Authority
+[p183_c0003] In connection with a previous contract awarded to MetLife, MetLife was found to be responsible notwithstanding significant adverse information (“SAI”) pursuant to the All-Agency Responsibility Guidelines, and such responsibility finding was approved by the MTA Interim Executive Director in consultation with the MTA General Counsel in March 2017. No new SAI has been found relating to MetLife and MetLife has been found to be responsible.
+[p183_c0004] Negotiation of commercial terms and conditions has been substantially completed except for a few remaining items that the parties are currently working to finalize. However, there does not appear to be any remaining terms and conditions to be negotiated that would impact MetLife’s or Dentcare’s current price.
+[p183_c0005] The contract resulting from this procurement is currently being evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state, and local law and regulations. The MTA will be working with MetLife and Dentcare to include applicable cybersecurity requirements prior to issuance of the notice of award.
+### [p183_c0006] M/W/DBE Information
+[p183_c0007] The MTA Department of Diversity and Civil Rights (DDCR) has established zero percent MWBE/SDVOB goals on this contract because the participant data and benefit contract provisions are considered highly sensitive and confidential in nature. Subcontracting to third parties would increase the risk of exposure of confidential information. MetLife and Dentcare have not completed any MTA contracts with MWDBE goals, therefore, no assessment of either firm’s MWDBE performance can be determined at this time.
+### [p183_c0008] Impact on Funding
+[p183_c0009] This contract is funded by the various agencies’ operating budgets.
+### [p183_c0010] Alternatives
+[p183_c0011] Do not approve award of the contract. This alternative is not recommended because these are benefits that MTA provides its employees.
+[p183_c0012] _Master Page # 183 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 184
+
+### [p184_c0001] OCTOBER 2025 MTA REAL ESTATE FINANCE COMMITTEE AGENDA ITEMS
+### [p184_c0002] 1. TRANSACTIONAL ACTION ITEMS
+### [p184_c0003] Metropolitan Transportation Authority
+- [p184_c0004] a. Lease renewal with 1-10 Bush Terminal Owner LLC, for MTA and New York City Transit Museum archives at 882 Third Avenue, Brooklyn, NY
+### [p184_c0005] MTA Long Island Rail Road
+- [p184_c0006] b. Lease renewal (Part 1) with Marsah Properties LLC, for the Office of Health Services at 300 Old Country Road, Mineola, NY c. Lease renewal (Part 2) with Dasso LLC, for the Office of Health Services at 300 Old Country Road, Mineola, NY
+### [p184_c0007] MTA Metro-North Railroad
+- [p184_c0008] d. Disposition of property to the Tarrytown Municipal Housing Authority located adjacent to the Tarrytown Station
+### [p184_c0009] 2. INFORMATION ITEMS
+- [p184_c0010] a. Report on agreements entered into directly by the Real Estate Department pursuant to board policy
+[p184_c0011]
+
+```text
+Legal Name Popular Name Abbreviation New York City Transit Authority MTA New York City Transit NYC Transit The Long Island Rail Road Company MTA Long Island Rail Road LIRR Metro-North Commuter Railroad Company MTA Metro-North Railroad MNR Triborough Bridge and Tunnel Authority MTA Bridges and Tunnels MTA B&T MTA Construction and Development Company MTA Construction and Development MTA C&D MTA Bus Company MTA Bus Company MTA Bus MTA Grand Central Madison Operating Company Grand Central Madison GCMC
+```
+[p184_c0012] Staten Island Rapid Transit Operating Authority is a subsidiary of the Metropolitan Transportation Authority. Its popular name is MTA Staten Island Railway (abbreviated as SIR).
+[p184_c0013] Manhattan and Bronx Surface Transit Operating Authority is a subsidiary of the New York City Transit Authority (abbreviated as MaBSTOA).
+[p184_c0014] _Master Page # 184 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 185
+
+### [p185_c0001] METROPOLITAN TRANSPORTATION AUTHORITY
+[p185_c0002] _Master Page # 185 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 186
+
+### [p186_c0001] Staff Summary
+### [p186_c0002] Metropolitan Transportation Authority
+### [p186_c0003] Page 1 of 2
+[p186_c0004]
+
+```text
+Subject LEASE RENEWAL WITH 1-10 BUSH TERMINAL OWNER LP, FOR THE MTA/NEW YORK CITY TRANSIT MUSEUM ARCHIVES AT 882 THIRD AVENUE, BROOKLYN, NY Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name ANDREW GREENBERG
+```
+[p186_c0005]
+
+```text
+Date OCTOBER 29, 2025 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p186_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 10/27/25 X 2 Board 10/29/25 X
+```
+[p186_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 3 Chief Administrative Officer 2 Chief Financial Officer
+```
+[p186_c0008]
+
+```text
+AGENCY: Metropolitan Transportation Authority ("MTA") and MTA New York City Transit ("NYCT") LESSOR: 1-10 Bush Terminal Owner LP LOCATION: 882 Third Avenue (Building #10), Brooklyn, NY PREMISES: The entire fourth (4th) floor, consisting of approximately 27,433 rentable square feet. USE: Warehouse storage for museum artifacts, exhibitions, and executive general and administrative offices ACTION REQUESTED: Authorization to enter into a second amendment to lease in support of the MTA/NYCT Transit Museum Archives continued occupancy at the Location TERM: Ten (10) years from 6/8/25 thru 6/7/35 with a one-time right to terminate effective at the end of year 5. REAL ESTATE TAXES: NYCT pays its proportionate share of increases in real estate taxes over a base fiscal tax year commencing on July 1, 2025, and ending on June 30, 2026 OPERATING EXPENSES: Fixed 3% annual increases over the 10-year term with a one-time $1 per square foot increase commencing year 6. UTILITIES: Submetered electric with a 3% administrative surcharge LESSOR WORK: 1) Lessor to install a building maintenance alarm system to alert NYCT in the event of failures to the HVAC system or when temperatures exceed environmentally safe limits. 2) Lessor will install trap primers, hose bibs and point of use recirculation for plumbing purposes inside the maintenance closet. RENT COMMENCEMENT: June 8, 2025 BASE RENT: $875,000.00 per annum / $72,916.67 per month. $31.90 per square foot
+```
+[p186_c0009] _Master Page # 186 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 187
+
+### [p187_c0001] Staff Summary
+> [p187_c0002] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle with the white letters "MTA" inside, followed by the text "Metropolitan Transportation Authority" in a black, sans-serif font.
+### [p187_c0003] FINANCE COMMITTEE MEETING
+### [p187_c0004] LEASE AMENDMENT AGREEMENT WITH 1-10 BUSH TERMINAL OWNER LP, FOR THE MTA/NEW YORK CITY TRANSIT MUSEUM ARCHIVES AT 882 THIRD AVENUE, BROOKLYN, NY (Cont'd.)
+[p187_c0005] Page 2 of 2
+### [p187_c0006] COMMENTS:
+[p187_c0007] The MTA Museum Archives and Curating Warehouse relocated from 2 Broadway to 882 Third Avenue, Brooklyn, NY in 2014 to facilitate the MTA Headquarters relocation from 347 Madison Avenue. The current lease expired on June 7, 2025, and has continued pursuant to the lease holdover provisions. Protracted lease negotiations have resulted in a retroactive rent commencement date to align with the original lease expiration. The Location houses historical archives for both the MTA and the New York City Transit Museum and was originally chosen for its cost effectiveness, size, and suitability as a museum quality archival facility. The building was fortified after Hurricane Sandy with specialized HVAC, humidification, sprinklers, and backup generators.
+[p187_c0008] The proposed rent is $31.90 per square foot for year one of the lease. Based on an analysis conducted by MTA Real Estate, the rent is within range of comparable locations. Third-party inspections performed by an engineering firm contracted by MTA Real Estate confirmed conditions of the infrastructure lifespan can support a 10-year renewal of the lease.
+[p187_c0009] Based on the foregoing, MTA Real Estate requests authorization to enter into a lease amendment agreement on behalf of the MTA/New York City Transit Museum Archives with 1-10 Bush Terminal Owner LP under the above-described terms and conditions.
+[p187_c0010] _Master Page # 187 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 188
+
+### [p188_c0001] MTA LONG ISLAND RAIL ROAD
+[p188_c0002] _Master Page # 188 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 189
+
+### [p189_c0001] Staff Summary
+### [p189_c0002] Metropolitan Transportation Authority
+### [p189_c0003] Page 1 of 2
+[p189_c0004]
+
+```text
+Subject LEASE RENEWAL WITH MARSAH PROPERTIES LLC, FOR THE OFFICE OF HEALTH SERVICES AT 300 OLD COUNTRY ROAD, MINEOLA, NY Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name ANDREW GREENBERG
+```
+[p189_c0005]
+
+```text
+Date OCTOBER 29, 2025 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p189_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 LIRR Committee 10/27/25 X 2 Finance Committee 10/27/25 X 3 Board 10/29/25 X
+```
+[p189_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 3 Chief Administrative Officer 2 Chief Financial Officer
+```
+[p189_c0008] AGENCY: MTA Long Island Rail Road (“LIRR”) LESSOR: Marsah Properties LLC LOCATION: 300 Old Country Road, Mineola, NY. Condominium Unit # 71 PREMISES: Approx 6,200 square feet on the lower level USE: LIRR’s Office of Occupational Safety (“OHS”) physical testing and general offices ACTION REQUESTED: Authorization to enter into a lease renewal agreement in support of OHS medical and administrative office requirements TERM: Five (5) years REAL ESTATE TAXES: Tenant is responsible for 100% real estate taxes and will be renewing its tax exemption status with the municipality OPERATING EXPENSES: 3% annual rent increases UTILITIES: Tenant pays directly to the utility RENT COMMENCEMENT: September 1, 2025 BASE RENT: $166,860.00 per annum - $13,905.00 per month - $26.91 per square foot
+### [p189_c0009] COMMENTS:
+[p189_c0010] OHS currently occupies in holdover capacity 2 condominium units #71 and # 151 at the Location which are required for OHS operations and the potential renewals of which are the subject of this and a related staff summary this month. Separately at this Location, LIRR’s Employee Assistance Program (“EAP”) occupies a unit #103 which will be addressed in a future Staff Summary for renewal.
+[p189_c0011] The lease with Marsah Properties LLC (successor to Old Country Commons, LLC) for OHS expired on May 30, 2018 and was renewed (via option exercise) through May 30, 2024. The lease was extended on August 31, 2024 and August 31, 2025 and last through November 30, 2025, via a separate agreement pursuant to the lease holdover provisions. The
+[p189_c0012] _Master Page # 189 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 190
+
+### [p190_c0001] Staff Summary
+### [p190_c0002] Metropolitan Transportation Authority
+### [p190_c0003] FINANCE COMMITTEE MEETING
+### [p190_c0004] LEASE RENEWAL WITH MARSAH PROPERTIES LLC, FOR THE OFFICE OF HEALTH SERVICES AT 300 OLD COUNTRY ROAD, MINEOLA, NY (Cont'd.)
+[p190_c0005] Page 2 of 2
+[p190_c0006] current base rent for this unit is $25.16 per sq. ft., and this proposed 5-year lease renewal will commence at $26.91 per sq. ft. with 3% continued annual increases.
+[p190_c0007] CBRE, MTA's real estate broker, had been working on a project for relocation of three individually owned condominium units at 300 Old Country Road, housing the subject OHS physical testing and general offices, a separate EAP office and a separate medical clinic, totaling approximately 11,000 sq. ft. to approximately 11,924 sq. ft. at 200 Old Country Road. The base annual rent would have been $31.75 per sq. ft.; however, the owner ultimately rejected the transaction.
+[p190_c0008] Subsequently, CBRE identified three alternative locations with base rent ranging from $26 per sq. ft. in an industrial type building in Bethpage, to $40 per square foot in comparable office type property with landlords that would consider this type of medical occupancy. All would require a completely new installation at tenant's cost and expense, which CBRE estimated would cost more than approximately $300 per square foot due to the specialty nature of the medical uses, and the total costs to relocate to any of those locations would significantly exceed those to remain in place. Therefore, LIRR has decided to realize operating budget savings by remaining in-place and will look to make some minor interior modifications.
+[p190_c0009] Based on the foregoing, MTA Real Estate requests authorization to enter into a lease renewal agreement on behalf of LIRR with Marsah Properties LLC under the above-described terms and conditions.
+[p190_c0010] _Master Page # 190 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 191
+
+### [p191_c0001] Staff Summary
+### [p191_c0002] Metropolitan Transportation Authority
+### [p191_c0003] Page 1 of 2
+[p191_c0004]
+
+```text
+Subject LEASE AGREEMENT WITH COUNTRY ROAD MINEOLA LLC FOR LIRR EMPLOYEE ASSISTANCE PROGRAM AND OFFICE OF HEALTH SERVICES AT 200 OLD COUNTRY ROAD, MINEOLA, NY Date SEPTEMBER 25, 2024 Department REAL ESTATE Vendor Name Department Head Name DAVID FLORIO Contract Number Department Head Signature Contract Manager Name Project Manager Name ANDREW D GREENBERG Table of Contents Ref. #
+```
+[p191_c0005]
+
+```text
+Board Action Internal Approvals Order To Date Approval Info Other Order Approval Order Approval 1 Finance Committee 09/23/24 X 1 Legal 2 Board 09/25/24 X 3 Chief Administrative Officer 2 Chief Financial Officer
+```
+[p191_c0006] AGENCY: MTA Long Island Rail Road ("LIRR") LESSOR: Country Road Mineola LLC LOCATION: 200 Old Country Road, Mineola, New York PREMISES: Portion of the Lower level- approximately 346 rentable sq. ft. Portion of the 2nd Floor - approximately 9,022 rentable sq. ft. Portion of the 4th Floor - approximately 2,556 rentable sq. ft. Total Premises: Approximately 11,924 rentable sq. ft. USE: Premises to be used for the LIRR Office of Health Services ("OHS") and Employee Assistance Program ("EAP") medical and administrative office requirements. ACTION REQUESTED: Authorization to enter into a lease agreement in support of the LIRR EAP and OHS operational needs TERM: Ten (10) years from possession date RENEWAL OPTIONS: Two five (5) year renewal options at a rent calculated at 3% greater than the escalated rent at lease expiration for the first option and at 95% of the fair market value for the second option period. BASE RENT: Partial 2nd and 4th floor spaces - $31.75 per sq ft. - $367,601.50 per annum Portion of Lower Level - $14.50 per sq. ft. - $5,017 per annum Tenant receives 3 months' free rent concession (months 2-4). REAL ESTATE TAXES: The LIRR pays its proportionate share of increases in the building's real estate taxes over a 2025 base tax year with no increases until the first anniversary following rent commencement OPERATING EXPENSES: 3.0% increases in base rent per year
+[p191_c0007] _Master Page # 191 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 192
+
+### [p192_c0001] Staff Summary
+> [p192_c0002] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a circular emblem with the letters "MTA" inside, followed by the text "Metropolitan Transportation Authority" in a sans-serif font.
+### [p192_c0003] FINANCE COMMITTEE MEETING LEASE WITH COUNTRY ROAD MINEOLA LLC FOR LIRR EAP AND OHS MEDICAL AND ADMINISTRATIVE OFFICES 200 OLD COUNTRY ROAD, MINEOLA NY (Cont'd)
+[p192_c0004] Page 2 of 2
+[p192_c0005]
+
+```text
+UTILITIES: Electricity is on a rent inclusion basis at $3.65 per sq. ft. per annum. Lessor provides heat and air conditioning to the LIRR's air-handlers LESSOR WORK: Lessor will be required to provide turn-key alterations and improvements per LIRR-approved plans and specifications at Lessor's cost and expense ("Lessor's Work"). The LIRR will be required to reimburse Lessor for the cost of IT, data, and telecom installation as additional rent over initial 5 years of the Term with a maximum cost not to exceed $350,000 POSSESSION: Upon delivery of the Premises with Lessor's Work substantially complete. MAINTENANCE AND REPAIRS: Lessor is responsible for all exterior and structural repairs except if caused by the LIRR's negligence. The LIRR is responsible for interior, non-structural repairs to the Premises. CLEANING: Lessor shall provide daily cleaning per a specification, at its cost and expense. PARKING: Lessor will provide approximately 55 complimentary automobile parking spaces in the building parking lot. SECURITY DEPOSIT: None.
+```
+### [p192_c0006] COMMENTS:
+[p192_c0007] The LIRR is seeking approximately 11,924 square feet of new space for its OHS medical facilities and EAP program at 200 Old Country Road, Mineola ("200 OCR"). Currently, the OHS and EAP offices occupy a combined area of approximately 11,000 square feet in three condominium units at 300 Old Country Road, Mineola ("300 OCR"). After 15 years at 300 OCR, the space no longer meets the operational needs of OHS and EAP and requires repairs. In addition, the individual condominium owners are demanding 5-year lease renewals, and two of the three condominium owners are requiring payments of any future condominium assessment with no limits.
+[p192_c0008] CBRE, the MTA's real estate broker, identified 200 OCR as the only viable option. 200 OCR already has built medical and administrative offices, it is closer to the LIRR's Mineola Station, and the Lessor, an institutional quality real estate investment trust, will provide alterations and improvements at its cost and expense on a "turnkey" basis.
+[p192_c0009] The annual cost per square foot at 200 OCR is less than renewing at 300 OCR, considering all factors. It is important to note that the space at 200 OCR is approximately 1,000 square feet greater than at 300 OCR allowing for expansion, accommodating new hires, and consolidating space from the LIRR Hillside Facility, with the total cost to relocate due to the additional square footage only marginally greater. Additionally, if needed, the 200 OCR Lessor has proposed up to approximately 11,000 square feet of swing space at a cost of just $3.65 per square foot for electricity (one optional swing space, if needed, for approx. 5,461 sq. ft would be at a rental rate of $36.93 per square foot until 12/31/24 and then reduced to $3.65 per square foot for electricity).
+[p192_c0010] Based on the foregoing, MTA Real Estate requests authorization for the LIRR to enter into a lease agreement with Country Road Mineola LLC for use of the Premises by LIRR OHS and EAP under the above-described terms and conditions.
+[p192_c0011] _Master Page # 192 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 193
+
+### [p193_c0001] Staff Summary
+### [p193_c0002] Metropolitan Transportation Authority
+### [p193_c0003] Page 1 of 2
+[p193_c0004]
+
+```text
+Subject LEASE RENEWAL WITH DASO, LLC, FOR THE OFFICE OF HEALTH SERVICES AT 300 OLD COUNTRY ROAD, MINEOLA, NY Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name ANDREW GREENBERG
+```
+[p193_c0005]
+
+```text
+Date OCTOBER 29, 2025 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p193_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 LIRR Committee 10/27/25 X 2 Finance Committee 10/27/25 X 3 Board 10/29/25 X
+```
+[p193_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 3 Chief Administrative Officer 2 Chief Financial Officer
+```
+[p193_c0008] AGENCY: MTA Long Island Rail Road (“LIRR”) LESSOR: DASO, LLC LOCATION: 300 Old Country Road, Mineola, NY., Condominium Unit # 151 PREMISES: 3,000 square feet on first floor USE: LIRR’s Office of Occupational Safety (“OHS”) medical unit and administrative medical offices ACTION REQUESTED: Authorization to enter into a lease renewal agreement in support of the OHS medical and administrative office requirements TERM: Five (5) years REAL ESTATE TAXES: Tenant is responsible for 100% of real estate taxes and will be renewing its tax exemption status with the municipality OPERATING EXPENSES: 3% annual rent increases UTILITIES: Tenant pays directly to the utility company RENT COMMENCEMENT: September 1, 2025 BASE RENT: $109,345.32 per annum - $9,112.91 per month - $36.45 per square foot
+### [p193_c0009] COMMENTS:
+[p193_c0010] OHS currently occupies in holdover capacity 2 units #71 and #151 at the Location which are required for OHS operations and the renewals of which are the subject of this and a related staff summary this month. Separately at this Location, LIRR’s Employee Assistance Program (“EAP”) occupies a unit #103 which will be addressed in a future staff summary for renewal.
+[p193_c0011] The lease with DASO, LLC for LIRR medical offices expired May 19, 2024, and with renewal options extended until August 18, 2024. LIRR has remained in occupancy undisturbed as a holdover occupant pursuant with the lease holdover provisions. The current base rent for this unit is $35.39 per sq. ft., and this proposed 5-year lease renewal will commence at $36.45 per sq. ft. with 3% continued annual increases. Additionally, LIRR will indemnify Lessor for 50% of any third-party brokerage commission claims paid by Lessor up to a maximum amount of $10,000.
+[p193_c0012] _Master Page # 193 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 194
+
+### [p194_c0001] Staff Summary
+### [p194_c0002] Metropolitan Transportation Authority
+### [p194_c0003] FINANCE COMMITTEE MEETING LEASE RENEWAL WITH DASSO, LLC, FOR THE OFFICE OF HEALTH SERVICES AT 300 OLD COUNTRY ROAD, MINEOLA, NY (Cont'd.)
+[p194_c0004] Page 2 of 2
+[p194_c0005] CBRE, MTA's real estate broker, had been working on a project for relocation of three individually owned condominium units at 300 Old Country Road housing the OHS medical unit, separate physical testing and general offices, and a separate EAP office, totaling approximately 11,000 sq. ft. to approximately 11,924 sq. ft. at 200 Old Country Road. The base annual rent would have been $31.75 per sq. ft. however, the owner ultimately decided to reject the transaction.
+[p194_c0006] Subsequently, CBRE identified three alternative locations with base rent ranging from $26 per sq. ft. in an industrial type building in Bethpage, to $40 per square foot in comparable office type property with landlords that would consider this type of medical occupancy. All locations would require a completely new installation at tenant's cost and expense, which CBRE estimated would cost more than approximately $300 per square foot due to the specialty nature of the medical uses. Consequently, the total costs to relocate to any of those locations would significantly exceed costs to remain in place. Therefore, LIRR has decided to realize operating budget savings by remaining in-place and will look to make some minor interior modifications.
+[p194_c0007] Based on the foregoing, MTA Real Estate requests authorization to enter into a lease renewal agreement on behalf of the LIRR with DASO, LLC under the above-described terms and conditions.
+[p194_c0008] _Master Page # 194 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 195
+
+### [p195_c0001] Staff Summary
+### [p195_c0002] Metropolitan Transportation Authority
+### [p195_c0003] Page 1 of 2
+[p195_c0004]
+
+```text
+Subject LEASE AGREEMENT WITH COUNTRY ROAD MINEOLA LLC FOR LIRR EMPLOYEE ASSISTANCE PROGRAM AND OFFICE OF HEALTH SERVICES AT 200 OLD COUNTRY ROAD, MINEOLA, NY Date SEPTEMBER 25, 2024 Department REAL ESTATE Vendor Name Department Head Name DAVID FLORIO Contract Number Department Head Signature Contract Manager Name Project Manager Name ANDREW D GREENBERG Table of Contents Ref. #
+```
+[p195_c0005]
+
+```text
+Board Action Internal Approvals Order To Date Approval Info Other Order Approval Order Approval 1 Finance Committee 09/23/24 X 1 Legal 2 Board 09/25/24 X 3 Chief Administrative Officer 2 Chief Financial Officer
+```
+[p195_c0006] AGENCY: MTA Long Island Rail Road ("LIRR") LESSOR: Country Road Mineola LLC LOCATION: 200 Old Country Road, Mineola, New York PREMISES: Portion of the Lower level- approximately 346 rentable sq. ft. Portion of the 2nd Floor - approximately 9,022 rentable sq. ft. Portion of the 4th Floor - approximately 2,556 rentable sq. ft. Total Premises: Approximately 11,924 rentable sq. ft. USE: Premises to be used for the LIRR Office of Health Services ("OHS") and Employee Assistance Program ("EAP") medical and administrative office requirements. ACTION REQUESTED: Authorization to enter into a lease agreement in support of the LIRR EAP and OHS operational needs TERM: Ten (10) years from possession date RENEWAL OPTIONS: Two five (5) year renewal options at a rent calculated at 3% greater than the escalated rent at lease expiration for the first option and at 95% of the fair market value for the second option period. BASE RENT: Partial 2nd and 4th floor spaces - $31.75 per sq ft. - $367,601.50 per annum Portion of Lower Level - $14.50 per sq. ft. - $5,017 per annum Tenant receives 3 months' free rent concession (months 2-4). REAL ESTATE TAXES: The LIRR pays its proportionate share of increases in the building's real estate taxes over a 2025 base tax year with no increases until the first anniversary following rent commencement OPERATING EXPENSES: 3.0% increases in base rent per year
+[p195_c0007] _Master Page # 195 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 196
+
+### [p196_c0001] Staff Summary
+### [p196_c0002] FINANCE COMMITTEE MEETING LEASE WITH COUNTRY ROAD MINEOLA LLC FOR LIRR EAP AND OHS MEDICAL AND ADMINISTRATIVE OFFICES 200 OLD COUNTRY ROAD, MINEOLA NY (Cont'd)
+[p196_c0003] Page 2 of 2
+[p196_c0004]
+
+```text
+UTILITIES: Electricity is on a rent inclusion basis at $3.65 per sq. ft. per annum. Lessor provides heat and air conditioning to the LIRR's air-handlers LESSOR WORK: Lessor will be required to provide turn-key alterations and improvements per LIRR-approved plans and specifications at Lessor's cost and expense ("Lessor's Work"). The LIRR will be required to reimburse Lessor for the cost of IT, data, and telecom installation as additional rent over initial 5 years of the Term with a maximum cost not to exceed $350,000 POSSESSION: Upon delivery of the Premises with Lessor's Work substantially complete. MAINTENANCE AND REPAIRS: Lessor is responsible for all exterior and structural repairs except if caused by the LIRR's negligence. The LIRR is responsible for interior, non-structural repairs to the Premises. CLEANING: Lessor shall provide daily cleaning per a specification, at its cost and expense. PARKING: Lessor will provide approximately 55 complimentary automobile parking spaces in the building parking lot. SECURITY DEPOSIT: None.
+```
+### [p196_c0005] COMMENTS:
+[p196_c0006] The LIRR is seeking approximately 11,924 square feet of new space for its OHS medical facilities and EAP program at 200 Old Country Road, Mineola ("200 OCR"). Currently, the OHS and EAP offices occupy a combined area of approximately 11,000 square feet in three condominium units at 300 Old Country Road, Mineola ("300 OCR"). After 15 years at 300 OCR, the space no longer meets the operational needs of OHS and EAP and requires repairs. In addition, the individual condominium owners are demanding 5-year lease renewals, and two of the three condominium owners are requiring payments of any future condominium assessment with no limits.
+[p196_c0007] CBRE, the MTA's real estate broker, identified 200 OCR as the only viable option. 200 OCR already has built medical and administrative offices, it is closer to the LIRR's Mineola Station, and the Lessor, an institutional quality real estate investment trust, will provide alterations and improvements at its cost and expense on a "turnkey" basis.
+[p196_c0008] The annual cost per square foot at 200 OCR is less than renewing at 300 OCR, considering all factors. It is important to note that the space at 200 OCR is approximately 1,000 square feet greater than at 300 OCR allowing for expansion, accommodating new hires, and consolidating space from the LIRR Hillside Facility, with the total cost to relocate due to the additional square footage only marginally greater. Additionally, if needed, the 200 OCR Lessor has proposed up to approximately 11,000 square feet of swing space at a cost of just $3.65 per square foot for electricity (one optional swing space, if needed, for approx. 5,461 sq. ft would be at a rental rate of $36.93 per square foot until 12/31/24 and then reduced to $3.65 per square foot for electricity).
+[p196_c0009] Based on the foregoing, MTA Real Estate requests authorization for the LIRR to enter into a lease agreement with Country Road Mineola LLC for use of the Premises by LIRR OHS and EAP under the above-described terms and conditions.
+[p196_c0010] _Master Page # 196 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 197
+
+### [p197_c0001] MTA METRO-NORTH RAILROAD
+[p197_c0002] _Master Page # 197 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 198
+
+### [p198_c0001] Staff Summary
+### [p198_c0002] Metropolitan Transportation Authority
+### [p198_c0003] Page 1 of 2
+[p198_c0004]
+
+```text
+Subject DISPOSITION OF PROPERTY TO THE TARRYTOWN MUNICIPAL HOUSING AUTHORITY Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name JASON ORTIZ
+```
+[p198_c0005]
+
+```text
+Date OCTOBER 29, 2025 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p198_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 MNR Committee 10/27/25 X 2 Finance Committee 10/27/25 X 3 Board 10/29/25 X
+```
+[p198_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Administrative Officer 3 Chief Financial Officer
+```
+[p198_c0008] AGENCY: MTA Metro-North Railroad ("MNR") GRANTEE: Tarrytown Municipal Housing Authority ("TMHA") LOCATION: Along the Hudson Line, at One Depot Plaza, Tarrytown, NY PREMISES: Portion of Section 1.70, Block 29, Lot 35 containing approximately 2,584 square feet USE: Vehicle parking by tenants of TMHA's adjacent apartment complex ACTION REQUESTED: Authorization to dispose of the Premises to TMHA for less than fair market value. COMPENSATION: None
+### [p198_c0009] COMMENTS:
+[p198_c0010] The MTA Real Estate Department received a request from TMHA to either purchase or enter into an easement agreement for the Premises, which has been utilized as a parking lot by TMHA for approximately thirty (30) years without a formal agreement with MNR. MNR reviewed TMHA's request and had no objections to proceeding with either a disposition or an easement agreement for the Premises.
+[p198_c0011] Following discussions with TMHA in March 2024, TMHA requested to move forward with a permanent, exclusive-use easement in support of their re-development and financing (the "Project").
+[p198_c0012] In May 2024, the MTA Board approved the conveyance of a permanent, exclusive-use easement to TMHA (see attached staff summary for reference). Subsequently, TMHA disclosed that upon acquiring the easement, TMHA intended to transfer their rights under the easement to a third party that was not a government or other public entity for less than fair market value, which was not permissible under the Public Authorities Law (PAL) Section 2897 referenced in the May 2024 staff summary. Additionally, TMHA further revised their request to now acquire fee simple interest instead of a permanent easement. This will provide TMHA with the ability to then convey subordinate property interest to other parties in support of TMHA's Project. These revised terms required further notification to New York State officials pursuant to the PAL.
+[p198_c0013] _Master Page # 198 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 199
+
+### [p199_c0001] Staff Summary
+### [p199_c0002] Metropolitan Transportation Authority
+### [p199_c0003] FINANCE COMMITTEE MEETING
+### [p199_c0004] DISPOSITION OF PROPERTY TO THE TARRYTOWN MUNICIPAL HOUSING AUTHORITY (Cont'd)
+[p199_c0005] Page 2 of 2
+[p199_c0006] Upon recommendation by the Office of the New York State Attorney General, a written notice to effectuate a transfer the Premises for less than its fair market value to other than a governmental entity, which disposal would not be consistent with the authority's mission, purpose or governing statutes, was prepared and approved by MTA legal counsel pursuant to PAL § 2897(7)(a)(iii) and was forwarded on June 26, 2025 to the Governor, the Speaker of the Assembly, and the Temporary President of the Senate notifying them of the transfer. No action was taken by the Governor, Speaker, or Temporary President within the 60-day review period, and as such, MTA may proceed with the transfer.
+[p199_c0007] An appraisal of the Premises was updated based on the revised request in August 2024, which determined the fair market value of the fee simple interest to be $190,000.
+[p199_c0008] Based on the foregoing, MTA Real Estate requests authorization to proceed with the disposition of the Premises to TMHA to support a future non-profit affordable housing re-development for the benefit of Tarrytown residents pursuant to PAL § 2897(7)(a)(iii) for less than fair market value under the above-described terms and conditions.
+[p199_c0009] _Master Page # 199 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 200
+
+### [p200_c0001] Staff Summary
+### [p200_c0002] Metropolitan Transportation Authority
+### [p200_c0003] Page 1 of 2
+[p200_c0004]
+
+```text
+Subject PERMANENT EASEMENT WITH THE TARRYTOWN MUNICIPAL HOUSING AUTHORITY FOR VEHICLE PARKING ADJACENT TO MNR'S TARRYTOWN STATION, TARRYTOWN, NY Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name JASON ORTIZ
+```
+[p200_c0005]
+
+```text
+Date MAY 22, 2024 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p200_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 05/20/24 X 2 Board 05/22/24 X
+```
+[p200_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Administrative Officer 3 Chief Financial Officer
+```
+[p200_c0008] AGENCY: MTA Metro-North Railroad ("MNR") GRANTEE: Tarrytown Municipal Housing Authority ("TMHA") LOCATION: Along the Hudson Line, at Two Depot Plaza, Tarrytown, Westchester County, NY. EASEMENT AREA: Portion of Section 1.70, Block 29, Lot 35 containing approximately 2,584 square feet USE: TMHA shall use the property for vehicle parking by tenants of TMHA's adjacent apartment complex ACTION REQUESTED: Authorization to enter into an easement agreement with TMHA TERM: Perpetual COMPENSATION: $1; payment waived
+### [p200_c0009] COMMENTS:
+[p200_c0010] TMHA is requesting to enter into a permanent easement for a portion of MNR's property described above. The Easement Area will be used for vehicle parking by the tenants of TMHA's adjacent apartment complex. TMHA is seeking to legitimize their ongoing use of the Easement Area since neither party could locate or verify any documented rights of use of the Easement Area to TMHA's lender as part of a refinancing in support of a renovation project.
+[p200_c0011] MNR has reviewed TMHA's request and has no objections to proceeding with the easement agreement.
+[p200_c0012] MTA Real Estate Department's Real Property Disposition Guidelines allow for the disposition of property using the lease/sale negotiation method under those circumstances permitted by Public Authorities Law Section 2897, which include, where the transferee is a government or other public entity, and the terms and conditions of the transfer require that the ownership and use of the asset will remain with the government or any other public entity. MTA Legal will draft the easement agreement, approve as to form and TMHA will provide appropriate insurance coverage and indemnification for the above use.
+[p200_c0013] _Master Page # 200 of 201 - MTA Board Meeting 10/29/2025_
+
+## Page 201
+
+### [p201_c0001] Staff Summary
+### [p201_c0002] Metropolitan Transportation Authority
+### [p201_c0003] FINANCE COMMITTEE MEETING
+### [p201_c0004] PERMANENT EASEMENT WITH THE TARRYTOWN MUNICIPAL HOUSING AUTHORITY FOR VEHICLE PARKING ADJACENT TO METRO-NORTH'S TARRYTOWN STATION, TARRYTOWN, NEW YORK
+[p201_c0005] (Cont'd)
+[p201_c0006] Page 2 of 2
+[p201_c0007] An appraisal of the Easement Area was commissioned and completed on November 30, 2023, with the easement valued at $120,000. Pursuant to Section 2897(6)(d) of the Public Authorities Law, an Explanatory Statement for the disposal by negotiation of real property owned by MNR was submitted to the appropriate New York State officials on February 8, 2024.
+[p201_c0008] Based on the foregoing, MTA Real Estate requests authorization to enter into an easement agreement on behalf of MNR with TMHA under the above-described terms and conditions.
+[p201_c0009] FOR REFERENCE PURPOSES ONLY
+[p201_c0010] _Master Page # 201 of 201 - MTA Board Meeting 10/29/2025_

@@ -1,0 +1,224 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-124171"
+record_kind: "source"
+display_name: "Minutes of the Regular Meeting Joint LIRR and Metro-North Committees September 18, 2023"
+source_id: "meeting_doc_124171"
+source_ids:
+  - "meeting_doc_124171"
+local_observation_id: "source_meeting_doc_124171"
+local_observation_ids:
+  - "source_meeting_doc_124171"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T12:50:01.223Z"
+submission_ids:
+  - "sub_a58200d76ae3739e"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting minutes"
+  date: "September 18, 2023"
+  date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2023-09-18"
+    precision: "day"
+    raw_text: "September 18, 2023"
+  date_text: "Monday, September 18, 2023"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2023-09-18"
+    precision: "day"
+    raw_text: "Monday, September 18, 2023"
+  published_date_normalized: "2023-09-18"
+  published_date_precision: "day"
+  publisher: "MTA"
+  title: "Minutes of the Regular Meeting Joint Long Island Rail Road and Metro-North Committees Monday, September 18, 2023"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_124171#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_124171"
+    source_path: "raw/sources/meeting_doc_124171/blocks.jsonl"
+    text_sha256: "sha256:908913c83ea101f3c769b958a4d0dbad156bf54fa616f1a6efbc6b4f504e66e3"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_124171#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_124171"
+    source_path: "raw/sources/meeting_doc_124171/blocks.jsonl"
+    text_sha256: "sha256:46620b851e01b018723702b510b8817bfc63846c75c5788f215654a7bcad6a3f"
+    text_source: "raw_text"
+---
+
+# Minutes
+
+source_id: meeting_doc_124171
+citation: cite block ids exactly as shown in square brackets
+document: 123 block(s)
+
+## Page 1
+
+### [p001_c0001] Minutes of the Regular Meeting Joint Long Island Rail Road and Metro-North Committees Monday, September 18, 2023
+[p001_c0002] Meeting held at 2 Broadway – 20 th Floor New York, New York 10004 9:30 a.m.
+[p001_c0003] The following Committee members were present in person:
+[p001_c0004] Hon. Samuel Chu, Co-Chair Hon. Blanca López, Co-Chair Hon. Gerard Bringmann Hon. Randolph Glucksman Hon. David Mack Hon. Vincent Tessitore, Jr. Hon. Midori Valdivia Hon. Neal Zuckerman
+[p001_c0005] The following Committee members were absent:
+[p001_c0006] Hon. Norman Brown Hon. Michael Fleischer
+### [p001_c0007] Representing Long Island Rail Road:
+[p001_c0008] Catherine Rinaldi – Interim President Rob Free – Senior Vice President, Operations Christopher Gough – Deputy Chief Safety Officer, Corporate Safety Paul Dietlin – Vice President, Maintenance of Way Haley Stein – Vice President, General Counsel & Secretary
+### [p001_c0009] Representing Metro-North:
+[p001_c0010] Catherine Rinaldi – President Joseph Lagana – Chief Transportation Officer, Transportation Shelley Prettyman – Vice President, System Safety Michael Loney – Chief Engineer, Maintenance of Way
+[p001_c0011] The members of the Long Island Rail Road (“LIRR”) Committee met jointly with the members of the Metro-North Committee.
+### [p001_c0012] 1. OPENING MEETING:
+[p001_c0013] Co-Chair Chu called the joint meeting to order.
+
+## Page 2
+
+### [p002_c0001] 2 | Joint LIRR and Metro-North Committees Meeting Minutes September 18, 2023
+### [p002_c0002] 2. PUBLIC COMMENTS:
+[p002_c0003] The following public speakers commented:
+[p002_c0004] David Kupferberg, Passengers United Vice President of Bus Advocacy (in person) spoke of the inadequacy of bus service for customers after the LIRR August 3 derailment.
+[p002_c0005] Kara Gurl, PCAC Planning and Advocacy Manager (in person) discussed increased ridership for both railroads, continued issues after LIRR September schedule changes, request for return of timed connections on LIRR, and positive feedback for the new peak CityTicket and Far Rockaway Ticket.
+[p002_c0006] Murray Bodin (in person) spoke about Metro-North safety issues at crossings at Roaring Brook and Valhalla.
+[p002_c0007] Aleta Dupree, Team Folds (in person) discussed experiencing the railroads and overall good conditions.
+[p002_c0008] Jason Anthony (in person) criticized the lack of MTAPD presence at Penn Station.
+[p002_c0009] Matthew Buchys-Hyland (via video) spoke of the need for a separate LIRR president.
+[p002_c0010] Ian Matthews (via audio) spoke appreciatively of the service improvements on Metro-North.
+[p002_c0011] Andrew Pollack, Passengers United (via audio) complained of LIRR's reduced off-peak trains at Mineola Station and inadequate PM peak trains between Atlantic Terminal and Hempstead.
+[p002_c0012] Michael Ortiz (via audio) criticized LIRR for its lack of adequate communication regarding the recent derailment.
+[p002_c0013] Charlton D'Souza, Passengers United President (via video) criticized LIRR for the lack of adequate communication with LIRR riders regarding the recent derailment.
+[p002_c0014] Christopher D. Greif (in person) thanked both railroads for their accessibility and complained of combo ticket issues.
+[p002_c0015] John Michno, Passengers United (via video) criticized service cuts by LIRR at Mineola Station.
+[p002_c0016] The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of the public comments.
+
+## Page 3
+
+### [p003_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 3 September 18, 2023
+### [p003_c0002] 3. APPROVAL OF MINUTES:
+[p003_c0003] Upon motion duly made and seconded, the Committee approved the minutes of the July 17, 2023 Joint LIRR/Metro-North Committee meeting.
+### [p003_c0004] 4. METRO-NORTH AND LIRR 2023 WORK PLANS:
+[p003_c0005] There were no changes to the LIRR or Metro-North Work Plans. The 2023 Metro-North and LIRR Work Plans are filed with the records of this meeting.
+### [p003_c0006] 5. PRESIDENT'S REPORT:
+[p003_c0007] President Rinaldi said that the annual summer seasonal ridership decline was certainly in effect, as it has been in pre-COVID years. The ridership decline was approximately proportional to pre-COVID summer ridership. Nonetheless, LIRR weekday daily ridership still surpassed the 200,000 mark most days, even during the dog days of summer, and both railroads saw significant ridership growth compared to the June- August months of 2022. Summer non-commutation ridership grew at a faster pace than commutation on both railroads, with both Metro-North and LIRR non-commutation totals at an impressive 96% of pre-COVID levels. This was also a very good year for LIRR summer tours, with sales to-date increasing 22% over last year.
+[p003_c0008] President Rinaldi reported that ridership climbed once again beginning in late-August with the LIRR recording its highest Saturday since the pandemic on August 19, and there were some top-ten Sundays in August as well. The second highest LIRR post-COVID weekday occurred on September 5, the day after Labor Day.
+[p003_c0009] President Rinaldi stated that similar to LIRR, June is typically one of the top ridership months of the year on Metro-North, which also experienced a typical dip in total ridership of 6% in July and a gentle return of 3% in August. However, it's worth noting that ridership levels increased in August 2023 to the 68% of 2019 similar to that in June, which may be attributed to weekend Yankees-Red Sox series in both June and August, one of which coincided with a post-COVID Saturday record of 124,000 riders on August 19. Ridership totals from the first half of September indicate that the climb is likely to continue.
+[p003_c0010] As Novak Djokovic and Coco Gauff brought down the house at the National Tennis Center, LIRR service was a major player off the court with robust service to Mets-Willets Point throughout the U.S. Open. From August 22 through September 10, almost 227,000 tickets to and from Mets-Willets Point were sold. Mixed-in with these totals were nine Mets home games, but the majority were tennis fans.
+[p003_c0011] President Rinaldi noted that the splendid summer was blemished, however, by the derailment of a Hempstead-bound passenger train on August 3 and the partial derailment of an LIRR work train east of Queens Village on September 7. There were no injuries from the September derailment. While LIRR was forced to run the PM rush that evening with some delays and cancelled combos, full service was restored by the following morning. The cause of that September incident remains under investigation.
+
+## Page 4
+
+### [p004_c0001] 4 | Joint LIRR and Metro-North Committees Meeting Minutes September 18, 2023
+[p004_c0002] President Rinaldi reported that the August 3 LIRR derailment just east of Jamaica also remains under investigation, though initial findings indicate the cause to have been a wiring issue in a single switch. This led LIRR's Control Center to incorrectly believe that the switch was in proper alignment for a straight train move when it was, in fact, not properly aligned. LIRR cooperated with the Federal Railroad Administration's (FRA) independent review of this incident and has since implemented enhanced inspection procedures, assessed all 1,045 switches across the entire system, and determined that this wiring and switch configuration was unique to this one switch. Thankfully, the 55 customers onboard escaped severe injury, and all 8 cars of train 722 were rerailed and removed by the following afternoon. Following the rerailing of the cars, LIRR employees undertook an around-the-clock effort over the weekend to repair 1,600 feet of track damage, 900 feet of third rail damage and 362 concrete ties in time to provide a normal AM rush on Monday morning, August 7. President Rinaldi expressed her appreciation for all the employees who responded to that incident and restored the infrastructure that weekend.
+[p004_c0003] President Rinaldi reiterated that safety is the number-one priority and she treats every such incident with the utmost seriousness. President Rinaldi asked our world-class workforce to reaffirm its commitment to safe train service and safe practices within the communities we serve, each and every day. Everything we do begins and ends with safety and it all starts with the running rails themselves, which is scrutinized beyond what is required federally. We look at every inch of every rail and even inside them to ensure structural and spatial integrity. Paul Dietlin, LIRR Vice President - Maintenance of Way and Michael Loney, Metro-North Chief Engineer, Maintenance of Way will speak later today to discuss the various methods of rail inspections utilized by the railroads.
+[p004_c0004] President Rinaldi stated that as she previewed back in June, LIRR released its new timetables on September 5. This is the latest round of changes reflecting the railroad's analysis of ridership data and customer feedback since the start of full service to Grand Central Madison ("GCM"). The new schedules better reflect where our customers are actually going and feature more direct service to Brooklyn and more express service between Jamaica and Manhattan during the AM peak; more morning Huntington and Ronkonkoma Branch express service; and a further balancing of service between Penn Station and GCM. Of course, we are still providing an unprecedented level of overall service and since we are still settling into the new schedule, it's still a little too early to conclude its net effectiveness. We are monitoring that closely.
+[p004_c0005] Among the many other changes, President Rinaldi singled-out the efforts of our expert team of schedulers for bringing the most comprehensive spate of scheduling changes to the Oyster Bay Branch in a very long time, which was announced on August 22 at Glen Street Station. The improvements made in collaboration with local elected officials along the branch are designed to reduce crowding and shorten travel times. President Rinaldi was pleased with the community feedback and will continue to monitor the service on the branch very closely.
+[p004_c0006] Over to Metro-North, the Port Jervis and Pascack Valley Lines introduced their fall schedules on September 3, with minimal adjustments. With Harlem Line trackwork moving to a location between Pleasantville and Mount Kisco, some minimal off-peak schedule adjustments were made this past weekend. Metro-North's popular Leaf Peeper trains will return on October 7 and are expected to operate through early November. On October 29, with Lower Hudson Line trackwork wrapping up, service will be restored to the half-hourly weekend inbound toward Grand Central Terminal in the morning and outbound toward Poughkeepsie in the afternoon.
+
+## Page 5
+
+### [p005_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 5 September 18, 2023
+[p005_c0002] President Rinaldi stated that there will also be schedule adjustments on the Connecticut portion of the New Haven Line, following discussions with Connecticut over the summer. These proposed adjustments focus on Fridays when ridership is lighter. New York State rail fares increased on Sunday, August 20, and Connecticut State rail fares are slated to increase on Wednesday, November 1, with new monthly tickets available for sale on Wednesday, October 25. Connecticut Department of Transportation will hold hearings on these proposed service changes and fare increases during the first week of October in New Haven and Hartford, so there may be adjustments to the proposed schedules and fares. There is no change in service for New York State stations on the New Haven Line. Based on the outcome of the Connecticut public hearings, we'll provide more specific information on the New Haven Line schedule change next month.
+[p005_c0003] President Rinaldi noted that as the new fares went into effect last month, a couple of very exciting "firsts" accompanied their introduction. The brand new $7.00 peak CityTicket and a new Far Rockaway Ticket, which brings the benefits of the CityTicket program to Far Rockaway Station customers, whose typical LIRR commutes start in Queens, then travel through Nassau County before crossing into Queens once again. For that reason, Far Rockaway customers were initially excluded from CityTicket, but thanks to some great work by our IT team in creating the new Far Rockaway ticket, we are proud to say that it is indeed no longer the case.
+[p005_c0004] President Rinaldi announced that this fall on the Babylon Branch, LIRR will be installing the steel superstructures for new elevators and canopies at four stations: Massapequa Park, Amityville, Copiague, and Lindenhurst as part of the ADA improvements bundle she mentioned a few months ago. To accommodate the work, LIRR will be single-tracking on weekends between Amityville and Babylon and running hourly Babylon local service while skipping the stop at which the weekend work is taking place, beginning with September 23 and 24 for Copiague, then Lindenhurst on October 7 and 8, and Amityville October 14 and 15. We thank affected customers in advance for their patience and are confident that they will be richly rewarded with new accessible options at these stations.
+[p005_c0005] President Rinaldi stated that she is proud of the Railroads' efforts to maximize the accessibility of their large systems, she is equally proud of the Railroads' position as a leader in sustainable transportation. On that front, President Rinaldi will be joining elected and civic partners in sustainability at a rally and press event tomorrow at Farmingdale State College to support and promote the 11th anniversary of Car Free Day Long Island, which takes place Friday, September 22. Each year, organizers arrange a "healthy" competition among colleges and area companies to get as many people as possible to pledge to be car free on that day. Thus far, almost 3,300 Long Islanders have taken the pledge, roughly 600 more than last year. She loves it because to use LIRR and Metro-North is to help improve air quality and reduce our collective carbon footprint.
+[p005_c0006] President Rinaldi stated that it's a great time to acknowledge and promote the substantial investments the Railroads have made in recent years to expand services and service options, making it easier and much more attractive to use public transportation for both work and play. A second Manhattan terminal, 41% more LIRR service, more convenient ticketing, a more user-friendly app and customer experience, and increased regional connectivity with Metro-North are all great reasons to ditch the car keys and come ride on the railroads for a greener planet. For those who want to take the same car-free pledge, the best way to do it is online at carfreedayli.com .
+
+## Page 6
+
+### [p006_c0001] 6 | Joint LIRR and Metro-North Committees Meeting Minutes September 18, 2023
+[p006_c0002] What's better than a beautiful, retro-themed locomotive engine wrap? President Rinaldi stated that train fans lined up on the Hudson Line about three weeks ago to look for this new wrap. It's the latest way of celebrating Metro-North's Fortieth Anniversary. The wrapped train embarked on its maiden voyage from Croton-Harmon Station on August 14. The second in a series of five Metro-North heritage wraps pays tribute to the yellow, blue and white motif the predecessor railroad, Conrail, sported on its FL9 locomotives from 1976 to 1982. President Rinaldi stated that you just may spot the vinyl-wrapped engine 201 out-and-about on the northern Hudson and Harlem lines as well as the Danbury and Waterbury branches in Connecticut. These heritage wraps hold deep symbolism, showcasing profound appreciation of our roots while paying homage to the predecessor railroads that paved the way. Additional heritage train wraps of New York Central, Penn Central, and a unique employee tribute wrap will be coming soon.
+[p006_c0003] President Rinaldi stated that this month's meeting occurs at the start of Rail Safety Week across the U.S., Canada and Mexico. Both the LIRR and Metro-North will be doing their part all week long to educate as many people as possible on how to prevent rail tragedies and make good decisions when they're on or near our system. More details to follow in the safety reports later in this meeting.
+[p006_c0004] President Rinaldi advised the committee of a major personnel change at LIRR, which has a new Chief Mechanical Officer, Brad Jenkins. Brad first came to the railroad eleven years ago as a Master Mechanic. His leadership and vision led him to increasingly responsible positions within the Maintenance of Equipment Department, most recently General Manager-Fleet Support. As an assembler and field supervisor for Bombardier in a former life, Brad knows rolling stock and every piece therein, and the railroad couldn't be happier to have him at the helm of our fleet maintenance operations. President Rinaldi congratulated and gave best wishes to Brad.
+### [p006_c0005] 6. SPECIAL ANNOUNCEMENT:
+[p006_c0006] President Rinaldi stated that about 18 months ago, Chair Lieber asked her to assume the leadership of LIRR on an interim basis in addition to her responsibilities at Metro-North. She was thrilled to take on this prestigious assignment as the former General Counsel of LIRR and as someone who grew up on Long Island taking LIRR. It was an offer that she could not and did not want to refuse. This was a critical time for LIRR with final East Side Access readying efforts in high gear. In collaboration with the project team at Construction and Development, the awesome LIRR team worked hard to get the project over the finish line and deliver a historic service increase to our customers. A second historic expansion project came online last fall with the completion of the Third Track Project. The Third Track provides the railroad with much needed resiliency and flexibility along the mainline, unlocking the potential for a reverse commute that has long been sought by the Long Island business community. In addition to these significant milestones for the railroad, President Rinaldi was pleased to announce to the Committee that LIRR teams have successfully identified the hundred million dollars in efficiency savings that Chair Lieber challenged the railroad to achieve last year. The hard work of delivering on those initiatives begins now, but President Rinaldi stated that she is confident that the railroad teams will meet those commitments while continuing to provide the safe and reliable service that customers expect and deserve. The effort was collaborative, and President Rinaldi called out the hard and creative work of the railroad teams, led by Senior Vice President Justin Vonashek at Metro-North and Senior
+
+## Page 7
+
+### [p007_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 7 September 18, 2023
+[p007_c0002] Vice President Rob Free at LIRR, along with the invaluable support of Nate Gilbertson and Brad Blevins of Metro-North's Operations Support and Organizational Resiliency, who coordinated the work at both railroads.
+[p007_c0003] Over the past 18 months, there have been significant improvements that span both railroads. This includes the launch of the upgraded TrainTime app last year, the expansion of CityTicket to peak trains last month, and the first-ever combo ticket allowing seamless travel between our two railroads.
+[p007_c0004] With these important accomplishments under our belt, President Rinaldi announced that it is a good time to begin transitioning out of her role as Interim President of LIRR. President Rinaldi stated that Chair Lieber has asked Rob Free, Senior Vice President of LIRR Operations to assume the position of Acting LIRR President. Senior Vice President Free has served the railroad with extraordinary dedication for many years, starting as a cleaner and working his way up through positions of increasing responsibility in the Transportation Department leading to his promotion into his position as Senior Vice President of Operations. Senior Vice President Free has an unsurpassed knowledge of the railroad, its operations, its infrastructure and its people. President Rinaldi is thrilled that he will have this opportunity to lead this organization that he has served so faithfully for all these years. In the weeks leading up to the October Board meeting, President Rinaldi and Senior Vice President Free will work together to transition responsibilities from her, as Interim President to Senior Vice President Free as Acting President. President Rinaldi stated that she will continue as Metro-North President, a position she has held for more than six years, counting the months she served as Acting President before assuming the Presidency on a permanent basis. Metro-North has not missed a beat since President Rinaldi has assumed the role as interim LIRR President, providing incredibly reliable service and picking up several awards from APTA. President Rinaldi thanked Metro-North Senior Vice President Justin Vonashek for his excellent work to keep the railroad moving, improving and innovating over the past 18 months. President Rinaldi also called out the great work of Yvonne Hill-Donald, Chief Administrative Officer at the Office of the President who supported her at both railroads at this critical time, including her invaluable contributions to the overall LIRR readiness effort.
+[p007_c0005] President Rinaldi emphasized that the innovating and improving will not stop once she moves back to Metro-North full time. Recognizing the value of having a view of operations across the railroads, Chair Lieber has asked that in addition to running Metro-North, President Rinaldi continue to provide strategic advice on cross-railroad matters. There are so many commonalities between the railroads and opportunities for the sharing of best practices and procedures. President Rinaldi expressed her excitement to assume this new role and build on what was already achieved. President Rinaldi looks forward to working with Senior Vice President Free in his new capacity as well as with this Committee. President Rinaldi thanked Chair Lieber and the Governor for this opportunity.
+[p007_c0006] Co-Chair Chu commended and thanked President Rinaldi for her tireless work in overseeing the railroad in its recovery in a post-COVID world, her professionalism, care, diligence, and sacrifices she had to make while facing the challenges of the MTA and LIRR. Co-Chair Chu is glad that President Rinaldi will continue to stay on board to help with the efficiency measures
+
+## Page 8
+
+### [p008_c0001] 8 | Joint LIRR and Metro-North Committees Meeting Minutes September 18, 2023
+[p008_c0002] of the railroads. Co-Chair Chu stated that Senior Vice President Free is also tireless and never stops thinking about the railroad. Co-Chair Chu is hopeful for the future of the railroad.
+[p008_c0003] Co-Chair López thanked President Rinaldi and stated that this is a bittersweet moment. Co-Chair López stated that President Rinaldi has a great team that supports the railroad. Co-Chair López congratulated Senior Vice President Free and looks forward to working with him in the future.
+[p008_c0004] Board Member Mack congratulated Senior Vice President Free.
+[p008_c0005] Board Member Valdivia thanked President Rinaldi for her incredible leadership at Metro-North and continuing her role there. Board Member Valdivia stated that it was impressive for President Rinaldi to step into the role of interim president of LIRR and leading two of the largest commuter rail systems. Board Member Valdivia commended President Rinaldi for the teams that she had put together at both railroads. Board Member Valdivia congratulated Senior Vice President Free and stated her appreciation to both President Rinaldi and Senior Vice President Free for their diligence and continued support for her concerns about the Brooklyn shuttle and GCM.
+[p008_c0006] Board Member Zuckerman thanked President Rinaldi for her diligence as the roll out of GCM had not been properly acknowledged as a Leviathan-like task, which she had executed flawlessly. Board Member Zuckerman expressed that there needs to be a continuation of scale efficiencies between the two railroads and requested that LIRR and Metro-North work together rather than separately.
+[p008_c0007] Board Member Glucksman congratulated Senior Vice President Free and stated that he liked to see people moving up in the railroad from the inside.
+[p008_c0008] President Rinaldi accepted applause from the Committee and thanked the teams from both railroads for all they do to support the region.
+[p008_c0009] Senior Vice President Free thanked Chair Lieber for this opportunity and stated that he will try his hardest to make the best of the railroad and the MTA as a whole. Senior Vice President Free stated he will work together with President Rinaldi to make the MTA the best it can be. Senior Vice President Free thanked President Rinaldi who has been a rock for LIRR.
+[p008_c0010] The complete presentation is filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of the presentations.
+### [p008_c0011] 7. OPERATING REPORTS:
+[p008_c0012] LIRR Senior Vice President Free reported that LIRR's on-time performance ("OTP") for July was 93.2%, August was 92.3% and year-to-date ("YTD") OTP as of August was 93.9%, just
+
+## Page 9
+
+### [p009_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 9 September 18, 2023
+[p009_c0002] below goal of 94%. For the YTD as of August, six branches operated at or above goal. There were 23 incidents which resulted in 10 or more late trains in the month of July. The most significant category was associated with trespassers. The most impactful incident was a pedestrian being struck by a train in the vicinity of Hillside during AM commission hour. There was also a trespasser on the tracks in the vicinity of Jamaica during the AM commission hour. There was a pedestrian struck by a train in the vicinity of New Hyde Park, and a trespasser on the tracks attempting to commit suicide in the vicinity of Brentwood during the PM commission hour. All these trespasser events negatively impacted OTP by 0.7% and represented 11% of all delays for the month of July. For the month of August, there were 25 major events which resulted in 10 or more late trains. The most significant was the train derailment east of Jamaica on August 3 which delayed trains over the course of two days. This event negatively impacted OTP by 0.5% and represented 7% of all late trains for the month of August.
+[p009_c0003] Senior Vice President Free reported the largest category of delays which impacted OTP is “train operations” representing 33% of all delays on LIRR. The largest category within “train operations” is “loading” delays. These “loading” delays are largely driven by summer service events at UBS, Barclays, Forest Hills, Citi Field, and Madison Square Garden. For summer events, on Friday nights, ridership is at 83% of pre-COVID ridership. Historical traveling patterns have changed, and while previously, people would travel on Friday afternoons or evenings and return on Sunday, it appears that people are traveling on Thursdays and returning on Mondays, Tuesdays, or even Wednesdays. Delays are spread out over several days rather than being concentrated on two days. In 2023, there has been a ridership increase of approximately 106,000 customers that attend events at Forest Hills, UBS, and Citi Field, which is about a 34% increase over 2022. While the number of events has stayed the same, there appears to be a higher percentage of “total gate,” which means more people are taking the railroad to these events. For example, there was a Dave Matthews concert at Forest Hills on Friday evening June 9. Forest Hills has a capacity of 13,000 people, and the railroad accommodated over 6,000 customers to this event, which represents over 45% of the “total gate,” which is astronomical. While this is good news, these numbers present some operational constraints. UBS, Forest Hills and Citi Field are main track stations, which are stations with normal customers and train operations. These events have increased the preponderance to cause delays. In particular, Forest Hills is located on the busiest stretch of the railroad. These events are occurring on weekdays and during PM peak hours. LIRR teams are working tirelessly to address and mitigate any potential delays to the extent possible. Non-commutation ridership for the month of August was 97% of pre-COVID ridership and YTD is 93%. For weekends, ridership has surpassed pre-COVID, which shows that people are returning to utilize our service.
+[p009_c0004] Senior Vice President Free stated that “infrastructure maintenance” is the next category of delays that impacted OTP, which represents about 16% of total delays on LIRR. Within this category, 21% are associated with switch failures. LIRR Engineering has identified one location, Harold Interlocking, which is the busiest interlocking in North America. LIRR Engineering has done a wonderful job of mitigating these delays by repairing certain infrastructure, replacing switch mechanisms, and even attaching a GoPro camera within the track to view a train operating over a switch to look at the interaction between the train and switch itself.
+
+## Page 10
+
+### [p010_c0001] 10 | Joint LIRR and Metro-North Committees Meeting Minutes September 18, 2023
+[p010_c0002] Senior Vice President Free stated that the final category is “external factors,” which are delays caused by entities not associated with the railroad. For example, Amtrak represents about 11% of all “external factor” delays, and LIRR is working with Amtrak to discuss and address certain infrastructure incidents. Bridge strikes are another “external factor” that have caused delays. A bridge strike is when an oversized vehicle attempts to operate underneath one of the railroad’s undergrade bridges which necessitates either a shutdown or a speed restriction over that bridge. LIRR has attached a camera on a certain bridge in Forest Hills to help us identify whether the bridge has been struck or something minor that does not require a speed restriction.
+[p010_c0003] Senior Vice President Free reported that LIRR has operated 48,000 more trains compared to the same time last year and 33,000 more trains than in 2019. OTP in 2019 was 92.9% while this year it is 93.9%. LIRR is working tirelessly to improve reliability and operations. Senior Vice President Free thanked all the groups, including engineering, mechanical, transportation, stations and service planning for constantly reviewing and improving the railroad.
+[p010_c0004] Senior Vice President Free reported that the mean distance between failures (“MDBF”) for the month of June was 177,871 miles, and July was 143,951 miles. YTD MDBF as of July was 174,201 miles, both above the goal of 170,000 miles. There is an anticipated 86 million car miles on our equipment, which is a 14 million mile increase compared to last year, and a 6 million mile increase compared to 2019. Senior Vice President Free stated that the mechanical team is doing an excellent job of keeping the rolling stock operating reliably.
+[p010_c0005] Senior Vice President Free stated that for service delivery, LIRR completed 99.5% of its trips for the month of July and August and YTD was 99.6%. For upcoming work that will impact service, there will be ADA work on the Babylon Branch. On the weekends of October 7-8 and 14-15, Patchogue siding extension work will take place and buses will replace trains between Babylon and Montauk. On the weekend of September 30-October 1, concrete tie work will take place in the vicinity of Hicksville. Schedules on the Ronkonkoma, Port Jefferson, and Oyster Bay branches will be impacted. On the weekends of October 14-15 and 21-22, a DOT Van Wyck widening project will be taking place and will impact schedules of numerous branches. Updated schedule information can be found at the web site or the TrainTime app.
+[p010_c0006] In response to a question from Board Member Zuckerman regarding ridership at GCM, Senior Vice President Free stated that ridership has increased, especially after Labor Day. The shift is leaning towards more people using GCM with a ratio of 63:37, with 63% for Penn Station and 37% for GCM. Board Member Zuckerman stated that the information should be made available on a regular basis to be able to track the progress. Co-chair Chu stated that 37% is not far off from the original projections.
+[p010_c0007] Metro-North Chief Transportation Officer Lagana reported that Metro-North’s service delivery rate for June was 99.9%. Systemwide OTP for August was 98.3%, above goal of 94%. YTD OTP was also above goal at 97.7%. There were 2 major incidents that negatively impacted OTP in August. One was a trespasser strike at Woodlawn, which caused delays coming and going to Grand Central Terminal with a total of 26 trains delayed. On August 23, there was a dog on a track that halted trains on the Harlem Line with 11 trains delayed.
+
+## Page 11
+
+### [p011_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 11 September 18, 2023
+[p011_c0002] The mean distance between failures (“MDBF”) for the month of July was over 222,550 miles, above goal of 175,000, and YTD MDBF as of July was 366,721 miles, also above the goal of 175,000.
+[p011_c0003] Chief Transportation Officer Lagana stated that as the summer comes to an end, Metro-North has begun preparations for the slip-slide season through performance testing of the laser train, as well as the creation of new data analytics, dashboard and enhanced low adhesion protocols. Chief Transportation Officer Lagana reported that Metro-North completed a major track improvement project on the New Canaan Branch. Train service resumed on September 2, after months of hard work during the summer heat wave that, upon its completion, eliminated a significant speed restriction that impacted New Haven Line customers.
+[p011_c0004] The complete LIRR and Metro-North reports are filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of the presentations.
+### [p011_c0005] 8. SAFETY REPORT:
+[p011_c0006] LIRR Deputy Chief Safety Officer Gough said that LIRR’s safety report is on page 18 of the Key Performance Metrics report. The customer injury rate for the 12-month reporting period ending July 2023 compared to the prior twelve months ending July 2022 decreased from 2.46 to 2.27 per one million customers. The employee lost time injury rate increased from 4.06 to 4.60 per 200,000 working hours. This week is “Rail Safety” week and LIRR has a unifying theme of “Stop Track Tragedies.” “Rail Safety” week is a period led by Operational Lifesaver to concentrate efforts in educating and empowering the public to make safe decisions around trains and tracks. Members of LIRR Corporate Safety team along with the MTA Police Department will be supporting this initiative by hosting Operational Lifesaver events at several stations this week. LIRR also will be supporting suicide awareness for Suicide Awareness month. LIRR will partner with the Response Crisis Center at Stony Brook Station this Friday and partnered with the American Foundation of Suicide Prevention on their community walks. LIRR has scheduled its community walk for October 22 at 10 a.m. rain or shine at Jones Beach Field 5 in Wantagh.
+[p011_c0007] Metro-North Vice President Prettyman stated that Metro-North’s safety report is found on page 28 of the Key Performance Metrics book. The customer injury rate for the 12-month reporting period ending July 2023 compared to the prior twelve months ending July 2022 increased from 2.05 to 2.19 per one million customers. The reportable employee lost time injury rate decreased from 2.13 to 2.09 per 200,000 hours worked. This is Metro-North’s sixth year of participation in “Rail Safety” week. Metro-North is holding customer outreach at stations, grade crossings and community events with a different focus each week to promote safe behaviors around the railroad tracks. Station outreach events will be held at twelve stations across the territory starting today. Grade crossing outreach will be conducted at Hudson Avenue in Peekskill, Jay Street in Katonah and Danbury Station. Friday is Red Out for Rail Safety Day when employees are encouraged to wear red to promote the importance of safety. Metro-North staff will cover community events in Larchmont and Peekskill on Saturday. Vice President Prettyman thanked the MTA Police
+
+## Page 12
+
+### [p012_c0001] 12 | Joint LIRR and Metro-North Committees Meeting Minutes September 18, 2023
+[p012_c0002] Department, Federal Railroad Administration, Connecticut Department of Transportation, and Connecticut Operation Lifesaver for their support of Metro-North's outreach events this week.
+[p012_c0003] Co-Chair López requested a copy of the information for the upcoming events for Metro-North.
+[p012_c0004] The full safety reports are filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of the presentations.
+### [p012_c0005] 9. MTAPD REPORT:
+[p012_c0006] MTAPD Chief of Police John Mueller reported that for the month of August 2023, there were 26 felonies in the major crime categories, with 14 of those in LIRR region and 12 in the Metro-North region. Larceny continues to be a problem with 58% being unattended property. Larcenies make up about 50% of all major crimes on the railroads.
+[p012_c0007] Board Member Mack complimented Chief Mueller and his staff in Nassau County for their attentiveness and comradeship, getting along with the local departments.
+[p012_c0008] The MTAPD report is filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of Chief Mueller's presentation.
+[p012_c0009] In the interest of time, Co-Chair Chu adjourned until next month the special presentation on Metro-North and LIRR Track Inspection Programs.
+### [p012_c0010] 10. INFORMATION ITEMS:
+[p012_c0011] President Rinaldi noted the following four LIRR information items: (i) 2024 Preliminary Budget (Public Comment); (ii) 2023 Mid-Year Forecast; (iii) Diversity/EEO Report - 2nd Quarter 2022; and (iv) Fall Trackwork Programs.
+[p012_c0012] President Rinaldi noted the following three Metro-North information items: (i) 2024 Preliminary Budget (Public Comment); (ii) 2023 Mid-Year Forecast; and (iii) Diversity/EEO Report - 2nd Quarter 2023.
+[p012_c0013] The details of the information items are contained in reports filed with the records of this meeting.
+
+## Page 13
+
+### [p013_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 13 September 18, 2023
+### [p013_c0002] 11. FINANCE:
+[p013_c0003] President Rinaldi reported that the finance report for both railroads is contained in the meeting material.
+### [p013_c0004] 12. PROCUREMENT:
+[p013_c0005] MTA Acting Assistant Deputy Chief Procurement Officer Omar Messado reported on one procurement item for Metro-North. Metro-North Railroad (“MNR”) is seeking Board approval to award a contract modification to a previously competitive, solicited, negotiated, and Board-approved miscellaneous contract in the not-to-exceed amount of $8,684,603 to the firm Arrow Rail Link Service, Inc. (“Arrow”). The modification exercises an available option for the final three-years at rates previously established in the base contract. The modification also secures funding for continued bus services. Since the contract was awarded in July 2016, Arrow has been providing a fixed-route scheduled feeder bus service that operates between MNR’s Spuyten Duyvil and Riverdale stations, as well as the surrounding neighborhoods located in geographically challenging areas in the northwest Bronx. Riders are charged a fee of $2.90 per ride. Arrow operates and maintains MNR-owned buses on weekdays during peak and off-peak times from 6:00 a.m. to midnight. With the anticipation of increased ridership over the next few years, the service is seen as an essential mobility resource for the neighborhoods, which otherwise are not easily accessible by public transportation. This contract will be funded by MNR’s operating budget.
+[p013_c0006] Upon motion duly made and seconded, the Committee recommended approval of the procurement item.
+[p013_c0007] The details of this procurement are contained in reports filed with the records of this meeting.
+[p013_c0008] In response to a question from Co-Chair López regarding the Right of Way (ROW) Task Force, Metro-North Chief Engineer Loney stated that the Track Inspection group will identify locations that require cleanup. The Right of Way Task Force works together with the Stations group to determine locations that require remediation. In circumstances with needles, the railroad will reach out to the Office of System Safety to assist with cleanup. In instances where there are encampments, the ROW Task Force will work with the Structures group to remediate the area and install proper fencing.
+### [p013_c0009] 13. ADJOURNMENT:
+[p013_c0010] Upon motion duly made and seconded, the Committee unanimously voted to adjourn the meeting.
+
+## Page 14
+
+### [p014_c0001] 14 | Joint LIRR and Metro-North Committees Meeting Minutes September 18, 2023
+[p014_c0002] Respectfully submitted,
+[p014_c0003] A blue ink handwritten signature of Haley Stein, featuring a stylized 'H' and 'S'.
+[p014_c0004] _Haley Stein Vice President, General Counsel & Secretary The Long Island Rail Road Company_
+[p014_c0005] A blue ink handwritten signature of Susan Sarch, written in a cursive style.
+[p014_c0006] _Susan Sarch Vice President, General Counsel & Secretary Metro-North Commuter Railroad Company_

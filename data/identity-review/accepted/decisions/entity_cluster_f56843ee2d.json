@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "entity_cluster_f56843ee2d",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_f56843ee2d.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_f56843ee2d.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 1,
+    "do_not_merge_count": 0,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [
+    [
+      "entity_norman-brown-115226",
+      "entity_safety-committee-member-brown-jan2022"
+    ]
+  ],
+  "do_not_merge": [],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "Both records are persons with entity_type 'person'. The only difference in entity_name is abbreviation of first name ('Norman Brown' vs 'N. Brown'), which is a source-local naming variant. They share the identity key 'entity_n-brown', and the date-suffixed record (entity_safety-committee-member-brown-jan2022) is a lifecycle record of the same person. Under Identity Merge Canon test 2, strong identity fields agree and the name difference is explained by abbreviation; therefore merge. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

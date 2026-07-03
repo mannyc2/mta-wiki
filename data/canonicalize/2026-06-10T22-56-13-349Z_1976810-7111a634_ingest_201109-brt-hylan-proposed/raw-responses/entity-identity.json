@@ -1,0 +1,54 @@
+{
+  "run_id": "2026-06-10T22-56-13-349Z_1976810-7111a634_ingest_201109-brt-hylan-proposed",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T01:40:42.238Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1-mta-nyct-hylan-2011",
+        "local_observation_id": "entity_mta_nyct_hylan_2011",
+        "decision": "new",
+        "rationale": "The observation's base_record_id entity_mta-nyct is the same as the existing registry record entity_mta-nyct (MTA New York City Transit, agency). Same entity name, entity type, and acronym. No better or different matching registry record exists. The observation already resolves to this canonical id.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_proposed",
+            "block_id": "p001_c0011",
+            "source_quote": "MTA New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2-nyc-dot-hylan-2011",
+        "local_observation_id": "entity_nyc_dot_hylan_2011",
+        "decision": "new",
+        "rationale": "The observation's base_record_id entity_nyc-dot is the same as the existing registry record entity_nyc-dot (New York City Department of Transportation, agency). Same entity name, entity type, and acronym. No better or different matching registry record exists. The observation already resolves to this canonical id.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_proposed",
+            "block_id": "p003_c0006",
+            "source_quote": "NEW YORK CITY DOT"
+          }
+        ]
+      },
+      {
+        "decision_id": "d3-nyc-doit-hylan-2011",
+        "local_observation_id": "entity_nyc_doit_hylan_2011",
+        "decision": "new",
+        "rationale": "The observation's base_record_id entity_nyc-doit-hylan-2011 exactly matches the existing registry record entity_nyc-doit-hylan-2011 (New York City Department of Information Technology and Telecommunications, agency). Same entity name, entity type, short name NYC DOIT, and acronym DOIT. The observation already resolves to this canonical id.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_proposed",
+            "block_id": "p001_c0013",
+            "source_quote": "NEW YORK CITY DOIT"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-40-08-688Z_2111393-6201806a_canonicalize_2026-06-10t22-56-13-349z-1976810-7111a634-ingest-201109-brt-hylan-proposed-entity-identity"
+}

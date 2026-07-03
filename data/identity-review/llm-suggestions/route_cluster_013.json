@@ -1,0 +1,49 @@
+{
+  "review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "reviewed_at": "2026-06-08T21:10:47.254Z",
+  "packet_path": "data/identity-review/packets/route_cluster_013.md",
+  "cluster_id": "route_cluster_013",
+  "kind": "route",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "suggestion": {
+    "cluster_id": "route_cluster_013",
+    "kind": "route",
+    "merge_groups": [
+      [
+        "route_able-s79-sbs",
+        "route_s79-plus"
+      ]
+    ],
+    "do_not_merge": [],
+    "weak_aliases": [
+      {
+        "record_id": "route_s79-plus",
+        "aliases": [
+          "S79+",
+          "route_s79"
+        ],
+        "reason": "The ACE dataset dictionary encodes SBS (Select Bus Service) routes with a '+' suffix as a data-convention shorthand; 'S79+' is the internal code for 'S79-SBS'."
+      }
+    ],
+    "missing_fields": [
+      {
+        "record_id": "route_s79-plus",
+        "fields": [
+          "borough",
+          "streets",
+          "program"
+        ]
+      }
+    ],
+    "ambiguous": [],
+    "suggested_rules": [
+      "In ACE dataset dictionaries, a '+' suffix (e.g., S79+) is the dataset's internal coded representation of an SBS variant (e.g., S79-SBS). These should be merged when the base route matches and the '+' variant corresponds to the SBS variant of the same physical route."
+    ],
+    "confidence": "high",
+    "rationale": "The ACE routes dataset dictionary uses '+' as a coding convention for SBS (Select Bus Service) routes. The top values ('M14+', 'M34+', 'M86+', 'B44+', 'BX12+', 'Q44+', 'B46+', 'BX41+', 'S79+') correspond one-to-one with SBS routes listed in the bus lane camera report ('M14-SBS', 'M34-SBS', 'M86-SBS', 'B44-SBS', 'BX12-SBS', 'Q44-SBS', 'B46-SBS', 'BX41-SBS', 'S79-SBS'). The ACE Program field confirms this dataset covers ACE camera enforcement routes. 'S79+' is unambiguously the ACE dataset's internal code for the S79-SBS route. 'route_able-s79-sbs' documents the same physical route (borough: Staten Island, streets: Hylan Blvd/Richmond Av) under the S79-SBS designation. They should be merged as the same canonical identity."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T21-10-22-570Z_3449211-dc2116ef_identity-review-run_route-cluster-013",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-10-22-570Z_2026-06-08T21-10-22-570Z_3449211-dc2116ef_identity-review-run_route-cluster-013.jsonl"
+}

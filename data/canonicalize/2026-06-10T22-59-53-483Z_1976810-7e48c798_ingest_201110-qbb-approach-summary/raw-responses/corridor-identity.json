@@ -1,0 +1,43 @@
+{
+  "run_id": "2026-06-10T22-59-53-483Z_1976810-7e48c798_ingest_201110-qbb-approach-summary",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T02:02:53.097Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "qbb-identity-1",
+        "local_observation_id": "corridor_queensboro_bridge_201110",
+        "decision": "new",
+        "rationale": "The observation's base_record_id (corridor_queensboro-bridge-201110) already exists in the registry with identical payload — same corridor_name ('Queensboro Bridge'), same street ('Queensboro Bridge'), same boroughs (Queens, Manhattan), and same description referencing 16,000 bus trips a day. The observation resolves to its own existing registry record; per rules, when the closest match is the observation's own base_record_id, the decision is 'new' (already resolved).",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p004_c0003",
+            "source_quote": "The Queensboro Bridge (QBB) is a major bus corridor – 16,000 bus trips a day, including about 8,000 local riders – 110 buses during PM rush hour or one bus every 30 seconds"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "corridor_queensboro-bridge-qbb",
+            "description": "Both records describe the same real-world corridor: the Queensboro Bridge as a major bus corridor connecting Queens and Manhattan. They share the same corridor_name ('Queensboro Bridge'), same street ('Queensboro Bridge'), same boroughs (Manhattan and Queens), and consistent descriptions of a major bus corridor connecting the two boroughs. They differ only in source documents (201110_qbb_approach_summary vs 201110_qbb_summary_recommendations) and minor description phrasing.",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p004_c0003",
+                "source_quote": "The Queensboro Bridge (QBB) is a major bus corridor – 16,000 bus trips a day"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-02-00-995Z_2111393-652886f4_canonicalize_2026-06-10t22-59-53-483z-1976810-7e48c798-ingest-201110-qbb-approach-summary-corridor-identity"
+}

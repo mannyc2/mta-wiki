@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "route_cluster_9f24976591",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_9f24976591.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_9f24976591.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "quarantined",
+  "quarantine": {
+    "blocker": "do_not_merge route_q52-q53-sbs-proposed-2015-05 <> route_q52-sbs-queens: reason does not cite a strong identity field | do_not_merge route_q52-q53-sbs-proposed-2015-05 <> route_q53-sbs-ace: reason does not cite a strong identity field | do_not_merge route_q52-sbs-queens <> route_q53-sbs-ace: cited distinction not supported by the records: both records have service_variant sbs"
+  },
+  "original_merge_groups": [],
+  "original_do_not_merge": [
+    {
+      "record_ids": [
+        "route_q52-q53-sbs-proposed-2015-05",
+        "route_q52-sbs-queens"
+      ],
+      "reason": "Contradiction test (test 1): route_id differs ('Q52/Q53' vs 'Q52 SBS'). The proposed record bundles two bases; it cannot merge into a single base route record."
+    },
+    {
+      "record_ids": [
+        "route_q52-q53-sbs-proposed-2015-05",
+        "route_q53-sbs-ace"
+      ],
+      "reason": "Contradiction test (test 1): route_id differs ('Q52/Q53' vs 'Q53-SBS'). The proposed record bundles two bases; it cannot merge into a single base route record."
+    },
+    {
+      "record_ids": [
+        "route_q52-sbs-queens",
+        "route_q53-sbs-ace"
+      ],
+      "reason": "Contradiction test (test 1): route_id differs ('Q52 SBS' vs 'Q53-SBS') and base route id differs (Q52 vs Q53). Different routes with same SBS variant but distinct base identifiers."
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-68326"
+record_kind: "source"
+display_name: "Schedule C: Competitive Requests for Proposals - Penn Station Access Design Build"
+source_id: "meeting_doc_68326"
+source_ids:
+  - "meeting_doc_68326"
+local_observation_id: "source_meeting_doc_68326"
+local_observation_ids:
+  - "source_meeting_doc_68326"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-22T19:57:42.447Z"
+raw_text: "Schedule C: Competitive Requests for Proposals (Award of Purchase/Public Work Contracts) Item No. 1 - MTA Construction & Development - Penn Station Access Project Design-Build Services Staff Summary"
+submission_ids:
+  - "sub_39733be208b3badb"
+payload:
+  authority_tier: "board_material"
+  content_type: "staff_summary"
+  description: "Staff summary requesting Board approval to award Design-Build Services contract for the Metro-North Railroad Penn Station Access Project to Halmar International, LLC/RailWorks, Joint Venture"
+  publisher: "MTA Construction & Development"
+  title: "Schedule C: Competitive Requests for Proposals (Award of Purchase/Public Work Contracts) Item No. 1"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_68326#p001_c0001"
+    page_number: 1
+    role: "document_header"
+    source_id: "meeting_doc_68326"
+    source_path: "raw/sources/meeting_doc_68326/blocks.jsonl"
+    text_sha256: "sha256:03ab183dbad39f8904f49222b8629d559212d8913dd27e7f4fe7181ada78993e"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_68326#p001_c0002"
+    page_number: 1
+    role: "publisher"
+    source_id: "meeting_doc_68326"
+    source_path: "raw/sources/meeting_doc_68326/blocks.jsonl"
+    text_sha256: "sha256:a9b2c6401020b9b1a1bbf9307c86b05935b760bddb1b096cf3b10fbac6eb783c"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0010"
+    evidence_id: "meeting_doc_68326#p001_c0010"
+    page_number: 1
+    role: "purpose"
+    source_id: "meeting_doc_68326"
+    source_path: "raw/sources/meeting_doc_68326/blocks.jsonl"
+    text_sha256: "sha256:d056970b03468b100d53faa81af6afa3bd9c7411c024efb8d6c0e138ef29b6d3"
+    text_source: "raw_text"
+---
+
+# Penn Station Access Design Build Staff Summary
+
+source_id: meeting_doc_68326
+citation: cite block ids exactly as shown in square brackets
+document: 38 block(s)
+
+## Page 1
+
+### [p001_c0001] Schedule C: Competitive Requests for Proposals (Award of Purchase/Public Work Contracts) Item No. 1
+### [p001_c0002] MTA Construction & Development
+### [p001_c0003] Page 1 of 3
+[p001_c0004]
+
+```text
+Dept & Dept Head Name: Penn Station Access Project/Thomas J. McGuinness, Program CEO
+```
+[p001_c0005]
+
+```text
+Contracts Department: Ian Goldrich, SVP and Deputy General Counsel
+```
+[p001_c0006]
+
+```text
+Board Reviews To Date Approval Info Other 1 Board 12/15/2021 X
+```
+[p001_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval Deputy Chief, Development President Deputy Chief, Delivery Executive Vice President & General Counsel
+```
+[p001_c0008]
+
+```text
+SUMMARY INFORMATION Vendor Name Halmar International, LLC/RailWorks, Joint Venture Contract Number CBX001 Description Design-Build Services for the Metro-North Railroad Penn Station Access Project Total Amount 1. CBX001 Base: $1,717,063,000 2. Option: $ 133,580,000 3. Stipend Payments: $ 3,000,000 Contract Term 63 Months Option(s) included in Total Amount? Yes No N/A Renewal? Yes No Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Funding Source Operating Capital Federal State
+```
+### [p001_c0009] Purpose/Recommendation
+[p001_c0010] MTA Construction and Development (C&D) requests Board approval to award a publicly advertised and competitively solicited contract for Design-Build Services for the Metro-North Railroad Penn Station Access Project (the "Project") to Halmar International, LLC/RailWorks, Joint Venture (a joint venture consisting of Halmar International, LLC and RailWorks Transit Inc.) in the amount of $1,850,643,000 and a duration of sixty-three (63) months. As set forth in greater detail below, the total amount includes base Contract Work and allowances in the amount of $1,717,063,000, and an option to construct certain improvements at Metro-North's New Rochelle Yard in the amount of $133,580,000. In addition, C&D is requesting approval to enter into a Design-Build Phase and Cost Share Agreement for the Project with Amtrak; and to add the Project to the OCIP Bridge Program approved by the Board in June 2021 and to extend the term of the OCIP Bridge Program from four years to six years to cover the full duration of the Project. In accordance with MTA policy regarding the use of design-build, and to enhance competition and defray proposal costs, this solicitation includes a stipend of $1,500,000 to be paid to each of the two unsuccessful proposers for a total amount of $3,000,000.
+### [p001_c0011] Discussion
+[p001_c0012] Contract CBX001 (the "Contract") will provide Metro-North customers with service into and out of Penn Station via the existing Amtrak Hell Gate Line. The design-builder will design and construct additional passenger tracks, traction power substations, overhead contact systems, new interlockings, updated communication systems, and new signal systems within Amtrak's right of way. These additional tracks will not only provide a new service option for Metro-North customers, they will enhance Metro-North's network resiliency, support faster recovery efforts and facilitate Metro-North's ability to maintain acceptable levels of service when faced with planned and unplanned service disruptions, severe weather events and other emergency situations. The Contract also includes the design and
+
+## Page 2
+
+### [p002_c0001] Schedule C: Competitive Requests for Proposals (Award of Purchase/Public Work Contracts) Item No. 1
+### [p002_c0002] Construction & Development
+### [p002_c0003] Page 2 of 3
+[p002_c0004] construction of four new ADA accessible Metro-North stations along the Hell Gate Line in the East Bronx. These stations will bring increased regional accessibility to the eastern Bronx communities by offering rail service to and from Manhattan and the New York and Connecticut suburbs and will provide area residents with better access to jobs, shopping and entertainment.
+[p002_c0005] A two-step procurement process was conducted for the Contract. In Step 1, a Request for Qualifications was advertised resulting in the submission of three Statements of Qualification that were evaluated against pre-established selection criteria addressing relevant experience, past performance, general responsibility, financial resources, and safety record. All three (3) respondent were selected to receive the Request for Proposal (“RFP”) in Step 2. The three selected respondents were:
+- [p002_c0006] • Halmar International, LLC/RailWorks, Joint Venture (“HRJV”) • Skanska ECCO III Penn Station Connectors, Joint Venture (“SEJV”), a joint venture consisting of Skanska USA Civil Northeast, Inc. and ECCO III Enterprises, Inc. • Tutor Perini/O&G, Joint Venture (“TPO&GJV”), a joint venture consisting of Tutor Perini Corporation and O&G Industries, Inc.
+[p002_c0007] A Draft RFP was provided to each of the respondents and then a series of one-on-one meetings were held with each of the respondents. Thereafter, on September 20, 2021, the final RFP documents, modified to include, among other things, input provided by the respondents during the one-on-one meetings, was released. Each of the three firms submitted a technical and price proposal on October 25, 2021 and November 2, 2021 respectively.
+[p002_c0008] The Selection Committee, consisting of representatives from C&D, Amtrak and Metro-North, first reviewed the technical proposal and heard oral presentations from each of the respondents. The Selection Committee evaluated the technical proposals using the pre-established selection criteria which assessed each firms’ design, overall project schedule and construction impact mitigation approach, management approach, financial strength, experience, record of performance, safety and quality, and diversity practices. The Selection Committee determined that each firm’s technical proposal was responsive and acceptable.
+[p002_c0009] The Selection Committee next opened the cost proposals, which totaled as follows: HRJV – $2,179,715,000; SEJV – $2,317,500,000; and TPO&GJV – $2,227,700,000. Thereafter, a subset of the Selection Committee met with each of the proposers individually to discuss ways to reduce costs, and thereafter C&D issued a formal request for revised cost proposals to all three proposers. Revised cost proposals were received from all three proposers and were provided to the Selection Committee. Thereafter, a subset of the Selection Committee met with each of the proposers individually to discuss further ideas to reduce costs, and thereafter C&D issued a formal request for Best and Final Offers (“BAFOs”) to all three proposers. BAFOs were received from all three proposers and totaled as follows:
+- [p002_c0010] • HRJV                $ 1,818,643,000 • SEJV                $ 2,063,000,000 • TPO&GJV         $ 1,927,700,000
+[p002_c0011] Upon review of the BAFOs, the Selection Committee unanimously recommended HRJV for award of the Contract. The Selection Committee determined that HRJV’s proposal offered the best overall value considering that they were the highest rated technically and offered the lowest cost. However, in order to contend with budgetary constraints, the Selection Committee requested that HRJV identify work that could be shifted to an option and commenced at a later date without jeopardizing the Project’s 63-month construction schedule. Thereafter, the parties agreed that the construction of improvements to Metro-North’s New Rochelle Yard would become an option that C&D may exercise on or before January 1, 2023 without any extension of the Project’s 63-month construction schedule.
+[p002_c0012] The negotiated cost of $1,818,643,000 (base contract of $1,717,063,000 and option for New Rochelle Yard of $133,580,000) is considered to be fair and reasonable. The award value of the base contract includes $32,000,000 in allowances, to be authorized in C&D’s sole discretion, for items including removal/disposal of unanticipated hazardous materials, relocations and required improvements of currently unidentified utilities and to address certain anticipated but not yet determined requirements of various city and state agencies.
+[p002_c0013] C&D also requests authorization to add the Project to the OCIP Bridge Program approved by the Board in June 2021 and to extend the term of the OCIP Bridge Program from four years to six years to cover the full duration of the Project.
+[p002_c0014] In addition, C&D requests Board authorization to enter into a Design-Build Phase and Cost Share Agreement for the Project with Amtrak, which sets forth the terms and conditions for constructing the Project on Amtrak’s right-of-way. Pursuant to the agreement, Amtrak will pay for Project delay costs up to $50,000,000, if it does not provide agreed upon numbers of track outages and levels of force account personnel to support the Project. Amtrak will be contractually responsible for providing 30 weekend track outages per year, until the installation of a new Leggett Interlocking, expected in the second quarter of 2024. This new interlocking will allow for extended track outages of 45 continuous days. Amtrak has also agreed to fund a percentage of the total Project costs to reflect the benefit
+
+## Page 3
+
+### [p003_c0001] Schedule C: Competitive Requests for Proposals (Award of Purchase/Public Work Contracts) Item No. 1
+### [p003_c0002] Construction & Development
+### [p003_c0003] Page 3 of 3
+[p003_c0004] it derives from certain elements of the Project which based on the current budget equals approximately $500,000,000. If there are change orders to these elements, Amtrak will pay a proportional share. In addition, Amtrak has agreed to work with MTA to seek the maximum federal contribution allowed under the Northeast Corridor Federal-State Partnership for Intercity Passenger Rail Grants Program, to be funded through the Infrastructure Investment and Jobs Act or other new federal grant programs, to fund the costs of the Project and the East River Tunnel Rehabilitation program.
+[p003_c0005] Finally, C&D seeks authorization for the Chairman, the President, or the Executive Vice President and General Counsel of C&D, to take such other and further actions, and to execute such other agreements and instruments, as may be necessary or desirable to effectuate the purposes and intent of the foregoing, and the design and construction of the Project.
+[p003_c0006] In connection with previous contracts awarded to RailWorks Transit Inc. ("RailWorks"), RailWorks was found to be responsible notwithstanding Significant Adverse Information ("SAI") pursuant to all All-Agency Responsibility Guidelines, and such responsibility findings were approved by the MTA Chairman and Chief Executive Officer in consultation with the MTA General Counsel in February 2016. No new SAI has been found relating to RailWorks, and RailWorks has been found to be responsible.
+### [p003_c0007] DBE/MBE/WBE/SDVOB Information
+[p003_c0008] The MTA Department of Diversity and Civil Rights ("DDCR") has established a 22.5% DBE goal for the Design/Build Contract. Although this is a design-build contract with some undefined scope, HRJV is projecting to meet the required DBE goal requirements. HRJV has not completed any MTA contracts with D/M/WBE goals, therefore no assessment of their D/M/WBE performance can be determined at this time. Halmar and RailWorks individually have achieved their assigned D/M/WBE goals on previously completed MTA Contracts.
+### [p003_c0009] Impact on Funding
+[p003_c0010] Funding for this Contract will require a plan amendment to the MTA's 2020-2024 Capital Program and this Contract will not be awarded unless and until that amendment is approved. The proposed plan amendment is being presented to the Board simultaneously with this action. A portion of the funding for this Contract will include a contribution from Amtrak towards those assets that Amtrak agrees provides a benefit to its system and service. In addition, it is anticipated that this Contract will be funded, in part, with Federal funds.
+### [p003_c0011] Alternatives
+[p003_c0012] None recommended. Currently, C&D and Metro-North lack available in-house technical personnel to perform the scope of work associated with the Contract. Without this Contract award, the Project will not progress and this this critical improvement will fail to be accomplished.

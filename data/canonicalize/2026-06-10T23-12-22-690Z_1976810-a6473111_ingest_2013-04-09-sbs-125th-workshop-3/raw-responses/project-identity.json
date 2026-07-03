@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T23-12-22-690Z_1976810-a6473111_ingest_2013-04-09-sbs-125th-workshop-3",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T03:44:44.741Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d001",
+        "local_observation_id": "project_125th_st_sbs_2013",
+        "decision": "new",
+        "rationale": "The observation resolves to base_record_id 'project_125th-st-sbs-2013' which already exists in the registry with identical payload: project_name '125th Street Select Bus Service', project_type 'Select Bus Service', status 'Proposed', borough 'Manhattan', and matching description about offset bus lanes from Morningside Avenue to Second Avenue. The source_id '2013_04_09_sbs_125th_workshop_3' is already listed in the registry record's source_ids. Per rules, when the closest match IS the observation's own base_record_id, the decision is 'new' — the observation already resolves to the correct canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p001_c0019",
+            "source_quote": "+selectbusservice 125th Street"
+          },
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p007_c0001",
+            "source_quote": "Implementation in 2013"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-42-30-479Z_2111393-735675bd_canonicalize_2026-06-10t23-12-22-690z-1976810-a6473111-ingest-2013-04-09-sbs-125th-workshop-3-project-identity"
+}

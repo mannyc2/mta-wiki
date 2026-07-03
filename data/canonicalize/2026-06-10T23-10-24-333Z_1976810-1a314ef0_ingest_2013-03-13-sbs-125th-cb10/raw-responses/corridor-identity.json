@@ -1,0 +1,53 @@
+{
+  "run_id": "2026-06-10T23-10-24-333Z_1976810-1a314ef0_ingest_2013-03-13-sbs-125th-cb10",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T03:34:23.961Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "canon-125th-street-manhattan-2013-03-cb10",
+        "local_observation_id": "corridor_125th_street_manhattan_2013_03",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id corridor_125th-street-manhattan, which has identical corridor name (125th Street), borough (Manhattan), and limits (Amsterdam Avenue to Second Avenue). Per instructions: since the closest match IS the observation's own base_record_id, decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_13_sbs_125th_cb10",
+            "block_id": "p003_c0004",
+            "source_quote": "Bus Routes on 125 th St: Bx15, M60, M100, M101"
+          },
+          {
+            "source_id": "2013_03_13_sbs_125th_cb10",
+            "block_id": "p016_c0004",
+            "source_quote": "All intersections from Morningside Avenue to Second Avenue were analyzed at AM and PM peak on a typical day"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "corridor_125th-st-manhattan",
+            "description": "Both records represent the same real-world 125th Street corridor in Manhattan used by the M60 SBS route. The minor difference in western endpoint (Amsterdam Avenue vs Morningside Avenue) is a natural variation in study area boundaries across different source documents, not a meaningful geographic distinction.",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_13_sbs_125th_cb10",
+                "block_id": "p016_c0004",
+                "source_quote": "All intersections from Morningside Avenue to Second Avenue were analyzed at AM and PM peak on a typical day"
+              },
+              {
+                "source_id": "2013_03_13_sbs_125th_cb10",
+                "block_id": "p003_c0004",
+                "source_quote": "Bus Routes on 125 th St: Bx15, M60, M100, M101"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-29-07-361Z_2111393-7f11b2d9_canonicalize_2026-06-10t23-10-24-333z-1976810-1a314ef0-ingest-2013-03-13-sbs-125th-cb10-corridor-identity"
+}

@@ -1,0 +1,229 @@
+{
+  "note_id": "codex-identity-batch072-prep",
+  "batch": "identity-batch072",
+  "created_at": "2026-06-22T23:47:57Z",
+  "lane": "codex-only identity cleanup",
+  "status": "prepared",
+  "scope": {
+    "record_kind": "entity",
+    "decision_count": 10,
+    "selection_rule": "High-confidence source-stated duplicate person entities, exact matching entity_name values, disjoint from prior Codex identity prep/apply batches through 071 and current identity override/guard records."
+  },
+  "intended_mutation": {
+    "aliases": {
+      "entity": {
+        "entity_193976-randolph-glucksman": "entity_randolph-glucksman-115226",
+        "entity_hugo-pizarro": "entity_nyct-eeo-hugo-pizarro",
+        "entity_meeting-doc-164901-mark-roche": "entity_mark-roche-feb2024",
+        "entity_meeting-doc-190056-monica-murray": "entity_monica-murray-auditor-general",
+        "entity_robert-paley-meeting-doc-151756": "entity_robert-paley",
+        "entity_robert-paley-meeting-doc-160301": "entity_robert-paley",
+        "entity_sunil-nair-chief-officer-bus-tech": "entity_sunil-nair-2023",
+        "entity_rosalyn-green-ddcr": "entity_meeting-doc-121026-rosalyn-green",
+        "entity_rosalyn-green-166966": "entity_meeting-doc-121026-rosalyn-green",
+        "entity_miriam-g-harris-meeting-doc-194041": "entity_miriam-g-harris-194156"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "alias": "entity_193976-randolph-glucksman",
+      "target": "entity_randolph-glucksman-115226",
+      "reason": "Both records are person entities with source-stated entity_name 'Randolph Glucksman'. The target already aggregates multiple meeting sources for the same named individual.",
+      "evidence_refs": [
+        "meeting_doc_193976#p016_c0005",
+        "meeting_doc_115226#p001_c0010",
+        "meeting_doc_196846#p002_c0005",
+        "meeting_doc_201651#p016_c0005"
+      ],
+      "confidence": "high"
+    },
+    {
+      "alias": "entity_hugo-pizarro",
+      "target": "entity_nyct-eeo-hugo-pizarro",
+      "reason": "Both records are person entities with source-stated entity_name 'Hugo Pizarro'. The target carries the fuller role context while preserving the same personal identity.",
+      "evidence_refs": [
+        "meeting_doc_129066#p002_c0004",
+        "meeting_doc_121051#p004_c0005",
+        "meeting_doc_121056#p004_c0005"
+      ],
+      "confidence": "high"
+    },
+    {
+      "alias": "entity_meeting-doc-164901-mark-roche",
+      "target": "entity_mark-roche-feb2024",
+      "reason": "Both records are person entities with source-stated entity_name 'Mark Roche'. The target has broader recurring source coverage for the same named MTA C&D staff identity.",
+      "evidence_refs": [
+        "meeting_doc_164901#p007_c0003",
+        "meeting_doc_133356#p025_c0005",
+        "meeting_doc_157756#p005_c0011",
+        "meeting_doc_174071#p002_c0004"
+      ],
+      "confidence": "high"
+    },
+    {
+      "alias": "entity_meeting-doc-190056-monica-murray",
+      "target": "entity_monica-murray-auditor-general",
+      "reason": "Both records are person entities with source-stated entity_name 'Monica Murray' and auditor-general context. The target consolidates the repeated role context across multiple sources.",
+      "evidence_refs": [
+        "meeting_doc_190056#p010_c0010",
+        "meeting_doc_163066#p009_c0007",
+        "meeting_doc_173836#p007_c0008",
+        "meeting_doc_196826#p003_c0007"
+      ],
+      "confidence": "high"
+    },
+    {
+      "alias": "entity_robert-paley-meeting-doc-151756",
+      "target": "entity_robert-paley",
+      "reason": "Both records are person entities with source-stated entity_name 'Robert Paley'. The target already has broader multi-source coverage for the same named person.",
+      "evidence_refs": [
+        "meeting_doc_151756#p014_c0004",
+        "meeting_doc_105851#p001_c0004",
+        "meeting_doc_160181#p001_c0003",
+        "meeting_doc_157716#p004_c0004"
+      ],
+      "confidence": "high"
+    },
+    {
+      "alias": "entity_robert-paley-meeting-doc-160301",
+      "target": "entity_robert-paley",
+      "reason": "Both records are person entities with source-stated entity_name 'Robert Paley'. This is a second unmerged single-source Robert Paley record pointing to the same broader target.",
+      "evidence_refs": [
+        "meeting_doc_160301#p002_c0003",
+        "meeting_doc_105851#p001_c0004",
+        "meeting_doc_160181#p001_c0003",
+        "meeting_doc_157716#p004_c0004"
+      ],
+      "confidence": "high"
+    },
+    {
+      "alias": "entity_sunil-nair-chief-officer-bus-tech",
+      "target": "entity_sunil-nair-2023",
+      "reason": "Both records are person entities with source-stated entity_name 'Sunil Nair'. The alias adds role/title wording but refers to the same named person represented by the target.",
+      "evidence_refs": [
+        "meeting_doc_202096#p015_c0009",
+        "meeting_doc_128931#p002_c0001",
+        "meeting_doc_128931#p004_c0011",
+        "meeting_doc_140351#p004_c0009"
+      ],
+      "confidence": "high"
+    },
+    {
+      "alias": "entity_rosalyn-green-ddcr",
+      "target": "entity_meeting-doc-121026-rosalyn-green",
+      "reason": "Both records are person entities with source-stated entity_name 'Rosalyn Green' and diversity/deputy-chief context. The target has broader source coverage for the same named individual.",
+      "evidence_refs": [
+        "meeting_doc_109186#p004_c0016",
+        "meeting_doc_128991#p003_c0010",
+        "meeting_doc_121026#p003_c0008",
+        "meeting_doc_160081#p038_c0005",
+        "meeting_doc_151596#p038_c0007"
+      ],
+      "confidence": "high"
+    },
+    {
+      "alias": "entity_rosalyn-green-166966",
+      "target": "entity_meeting-doc-121026-rosalyn-green",
+      "reason": "Both records are person entities with source-stated entity_name 'Rosalyn Green'. The alias is another single-source Dr. Rosalyn Green record and matches the same target identity.",
+      "evidence_refs": [
+        "meeting_doc_166966#p043_c0006",
+        "meeting_doc_166966#p043_c0007",
+        "meeting_doc_121026#p003_c0008",
+        "meeting_doc_160081#p038_c0005",
+        "meeting_doc_151596#p038_c0007"
+      ],
+      "confidence": "high"
+    },
+    {
+      "alias": "entity_miriam-g-harris-meeting-doc-194041",
+      "target": "entity_miriam-g-harris-194156",
+      "reason": "Both records are person entities with source-stated entity_name 'Miriam G. Harris'. The names are exact matches, including middle initial.",
+      "evidence_refs": [
+        "meeting_doc_194041#p001_c0004",
+        "meeting_doc_194156#p003_c0004"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "canonical_records_present": true,
+    "db_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "aliases_disjoint_from_current_merges_records": true,
+    "targets_disjoint_from_current_merges_records": true,
+    "targets_not_alias_mapped_in_merges_json": true,
+    "targets_not_alias_mapped_in_identity_aliases_table": true,
+    "no_overlap_with_prior_prep_through_batch071": true,
+    "prior_prep_files_considered_through_batch071": 25,
+    "prior_prep_unique_records_excluded_through_batch071": 411,
+    "current_merges_entity_alias_count": 474,
+    "current_identity_aliases_entity_count": 474,
+    "current_do_not_merge_entity_pair_count": 20,
+    "do_not_merge_guard_hits": 0,
+    "source_paths_checked": 46,
+    "source_paths_missing": [],
+    "all_pass": true
+  },
+  "commands_used_for_evidence": [
+    "pwd && rg --files data/review_notes data/identity-overrides data/canonical 2>/dev/null | sed -n '1,220p'",
+    "git status --short",
+    "ls -la data/review_notes data/identity-overrides",
+    "jq 'keys, {note_id,batch,created_at,intended_mutation,decision_count:(.decisions|length), aggregate_guard_results, commands_used_for_evidence, commands_intentionally_not_run}' data/review_notes/codex-identity-batch071-prep.json",
+    "jq '.aliases.entity | type, length, to_entries[0:5]' data/identity-overrides/merges.json",
+    "jq '.pairs.entity | type, length, .[0:5]' data/identity-overrides/do-not-merge.json",
+    "sqlite3 data/canonical.db '.tables' && sqlite3 data/canonical.db 'pragma table_info(records); pragma table_info(identity_aliases); pragma table_info(do_not_merge); pragma table_info(evidence_refs);'",
+    "sed -n '1,3p' data/canonical/entities.jsonl",
+    "sed -n '1,120p' LOG.md",
+    "bun -e '<read-only candidate scan over data/canonical/entities.jsonl, data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, prior data/review_notes/codex-identity-batch*-prep.json through batch071, and data/canonical.db identity_aliases/records>'",
+    "bun -e '<read-only exact-name person candidate listing and merged-status review for selected candidate names>'",
+    "bun -e '<read-only aggregate guard verification for selected 10 aliases against canonical JSONL, canonical.db records, identity_aliases, current merges, do-not-merge, prior prep through batch071, and evidence source paths>'",
+    "date -u +%Y-%m-%dT%H:%M:%SZ"
+  ],
+  "commands_intentionally_not_run": [
+    "canonicalize",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "materialize",
+    "export-jsonl",
+    "full validate",
+    "DB repair/publish",
+    "any command with --profile",
+    "any provider-backed command"
+  ],
+  "deferred_low_confidence_examples": [
+    {
+      "records": [
+        "entity_meeting-doc-205556-jai-patel",
+        "entity_jai-patel-201601"
+      ],
+      "reason": "Exact Jai Patel match, but another Jai Patel record is already present in current merge records; deferred to avoid forming a parallel identity island."
+    },
+    {
+      "records": [
+        "entity_lamond-kearse-167301",
+        "entity_mta-cco-kearse"
+      ],
+      "reason": "Exact Lamond Kearse match, but another Lamond Kearse record is already present in current merge records; deferred for a follow-up cluster-aware pass."
+    },
+    {
+      "records": [
+        "entity_patrick-warren-mtahq",
+        "entity_meeting-doc-113956-patrick-warren"
+      ],
+      "reason": "Exact Patrick Warren match, but another Patrick Warren record is already present in current merge records; deferred for cluster-aware target selection."
+    },
+    {
+      "records": [
+        "entity_raymond-smyth-174081",
+        "entity_meeting-doc-129076-raymond-smyth"
+      ],
+      "reason": "Exact Raymond Smyth match, but another Raymond Smyth record is already present in current merge records; deferred to avoid a split canonical target."
+    }
+  ]
+}

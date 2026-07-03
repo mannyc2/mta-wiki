@@ -1,0 +1,34 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:38:06.088Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_b57a862fda.md",
+  "cluster_id": "entity_cluster_b57a862fda",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_b57a862fda",
+    "kind": "entity",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "entity_meeting-doc-100361-nypd-transit-bureau",
+          "entity_nypd"
+        ],
+        "reason": "Strong identity field entity_type differs: entity_meeting-doc-100361-nypd-transit-bureau has entity_type 'agency bureau' while entity_nypd has entity_type 'government agency'. Per Identity Merge Canon Decision Test 1, differing entity_type forces do_not_merge. A bureau is a sub-unit of the larger agency, not the same object."
+      }
+    ],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "The two records share the base name 'NYPD' and many aliases, but the payload identity fields show a clear contradiction in entity_type: one is a bureau (NYPD's Transit Bureau) and the other is the parent government agency (NYPD itself). Per the identity merge canon test 1, any strong identity field difference forces do_not_merge. Additionally, the relation context shows a 'part_of_agency' relation from the Transit Bureau to NYPD, confirming they are distinct but related entities. No merge possible."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-37-59-237Z_1282984-a4193aea_identity-review-run_entity-cluster-b57a862fda",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-37-59-238Z_2026-06-23T14-37-59-237Z_1282984-a4193aea_identity-review-run_entity-cluster-b57a862fda.jsonl"
+}

@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-06-10T22-56-13-413Z_1976810-e589ba1d_ingest_201110-nostrand-cb15-slides",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T01:57:26.344Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "nostrand-cb15-201110-link",
+        "local_observation_id": "corridor_nostrand_ave_rogers_ave_201110_cb15",
+        "decision": "new",
+        "rationale": "The observation's base_record_id is already corridor_nostrand-avenue, which is the correct canonical record for the Nostrand Avenue/Rogers Avenue corridor from Williamsburg Bridge to Sheepshead Bay (9.3 miles). The observation exactly matches the existing registry record corridor_nostrand-avenue — same streets (Nostrand Ave, Rogers Ave), same limits (Williamsburg Bridge to Sheepshead Bay), same 9.3 mile length served by B44 bus route. The presentation source (201110_nostrand_cb15_slides) is already linked to this registry record via the alias corridor_nostrand-ave-rogers-ave-201110-cb15. Since the observation maps to its own base_record_id with no better match to a different record, the decision is 'new'.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb15_slides",
+            "block_id": "p002_c0001",
+            "source_quote": "Nostrand Ave/Rogers Ave Corridor"
+          },
+          {
+            "source_id": "201110_nostrand_cb15_slides",
+            "block_id": "p002_c0002",
+            "source_quote": "9.3 miles from Williamsburg Bridge to Sheepshead Bay"
+          },
+          {
+            "source_id": "201110_nostrand_cb15_slides",
+            "block_id": "p002_c0003",
+            "source_quote": "Currently served by B44 bus route"
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-56-30-274Z_2111393-f092a76b_canonicalize_2026-06-10t22-56-13-413z-1976810-e589ba1d-ingest-201110-nostrand-cb15-slides-corridor-identity"
+}

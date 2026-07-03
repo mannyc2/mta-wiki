@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-06-24T03:00:00.000Z",
+  "summary": {
+    "total_candidates": 0,
+    "missing_source_id": 0,
+    "source_mismatch": 0,
+    "single_evidence_likely_truncated": 0,
+    "by_kind": {}
+  },
+  "candidates": []
+}

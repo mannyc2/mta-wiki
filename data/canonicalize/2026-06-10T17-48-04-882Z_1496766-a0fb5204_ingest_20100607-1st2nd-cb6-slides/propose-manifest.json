@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T17-48-04-882Z_1496766-a0fb5204_ingest_20100607-1st2nd-cb6-slides",
+  "generated_at": "2026-06-10T19:33:49.361Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 44,
+  "validated_decision_count": 33,
+  "quarantined_decision_count": 11,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T17-48-04-882Z_1496766-a0fb5204_ingest_20100607-1st2nd-cb6-slides",
+    "manifest": "data/canonicalize/2026-06-10T17-48-04-882Z_1496766-a0fb5204_ingest_20100607-1st2nd-cb6-slides/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T17-48-04-882Z_1496766-a0fb5204_ingest_20100607-1st2nd-cb6-slides/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T17-48-04-882Z_1496766-a0fb5204_ingest_20100607-1st2nd-cb6-slides/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T17-48-04-882Z_1496766-a0fb5204_ingest_20100607-1st2nd-cb6-slides/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 2,
+      "validated_decision_count": 2,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-48-04-882Z_1496766-a0fb5204_ingest_20100607-1st2nd-cb6-slides/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T19-30-01-424Z_1632245-2547a719_canonicalize_2026-06-10t17-48-04-882z-1496766-a0fb5204-ingest-20100607-1st2nd-cb6-slides-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 3,
+      "validated_decision_count": 3,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-48-04-882Z_1496766-a0fb5204_ingest_20100607-1st2nd-cb6-slides/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T19-30-01-425Z_1632245-ee934396_canonicalize_2026-06-10t17-48-04-882z-1496766-a0fb5204-ingest-20100607-1st2nd-cb6-slides-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-48-04-882Z_1496766-a0fb5204_ingest_20100607-1st2nd-cb6-slides/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T19-30-01-425Z_1632245-8ade1fb6_canonicalize_2026-06-10t17-48-04-882z-1496766-a0fb5204-ingest-20100607-1st2nd-cb6-slides-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-48-04-882Z_1496766-a0fb5204_ingest_20100607-1st2nd-cb6-slides/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T19-30-01-425Z_1632245-2a1c74eb_canonicalize_2026-06-10t17-48-04-882z-1496766-a0fb5204-ingest-20100607-1st2nd-cb6-slides-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 20,
+      "validated_decision_count": 9,
+      "quarantined_decision_count": 11,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-48-04-882Z_1496766-a0fb5204_ingest_20100607-1st2nd-cb6-slides/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T19-30-01-425Z_1632245-d4aba989_canonicalize_2026-06-10t17-48-04-882z-1496766-a0fb5204-ingest-20100607-1st2nd-cb6-slides-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 17,
+      "validated_decision_count": 17,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-48-04-882Z_1496766-a0fb5204_ingest_20100607-1st2nd-cb6-slides/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T19-30-01-425Z_1632245-0d33c40e_canonicalize_2026-06-10t17-48-04-882z-1496766-a0fb5204-ingest-20100607-1st2nd-cb6-slides-relation-linker"
+    }
+  ]
+}

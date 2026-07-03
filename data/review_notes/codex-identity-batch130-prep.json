@@ -1,0 +1,219 @@
+{
+  "note_id": "codex-identity-batch130-prep",
+  "batch_id": "identity130",
+  "batch": "identity130",
+  "created_at": "2026-06-23T06:23:00Z",
+  "author": "Codex deterministic subagent",
+  "scope": {
+    "mode": "Codex-only deterministic local inspection",
+    "global_kind": "entity",
+    "proposal_kind": "entity",
+    "selection_rule": "Exact durable company/organization/person-like entity duplicates only; broad committees, departments, authorities, program categories, ambiguous initials, facilities, municipalities, and parent/subsidiary agency cases were skipped."
+  },
+  "global_kind": "entity",
+  "prepared_count": 10,
+  "proposed_aliases": [
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_halmar-international-railworks-jv",
+      "target_id": "entity_halmar-international-railworks-jv",
+      "alias_id": "entity_halmar-railworks-jv-cpc-may2022",
+      "canonical_name": "Halmar International LLC / Railworks Joint Venture",
+      "alias_name": "Halmar International LLC/RailWorks Joint Venture",
+      "confidence": "high",
+      "reason": "Same durable contractor identity. Both records name Halmar International LLC/RailWorks Joint Venture or a punctuation-only variant, both use contractor typing, and both describe the Penn Station Access design-build contractor / HRJV.",
+      "evidence_refs": [
+        "meeting_doc_190226#p009_c0003",
+        "meeting_doc_87691#p025_c0003",
+        "meeting_doc_87691#p026_c0003"
+      ],
+      "guard_notes": "Alias is absent from data/identity-overrides/merges.json entity aliases, absent from visible prior codex identity prep notes, and not present in do-not-merge. This is not a broad agency, department, committee, or program label."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_meeting-doc-140491-jpmorgan",
+      "target_id": "entity_meeting-doc-140491-jpmorgan",
+      "alias_id": "entity_meeting-doc-174021-jpmorgan-chase",
+      "canonical_name": "JPMorgan Chase",
+      "alias_name": "JPMorgan Chase",
+      "confidence": "high",
+      "reason": "Same durable financial institution identity. The alias record is typed as trustee and cites 'Trustee JPMorgan Chase'; the target record has the same display name plus JPMorgan Chase / JPMorgan Chase Bank N.A. aliases across multiple source records.",
+      "evidence_refs": [
+        "meeting_doc_140491#p009_c0004",
+        "meeting_doc_174021#p009_c0004",
+        "meeting_doc_201516#p002_c0002"
+      ],
+      "guard_notes": "Alias is absent from merges.json entity aliases, absent from visible prior prep notes, and not in do-not-merge. Trustee role is contextual, not a separate entity identity."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_meeting-doc-155106-kew-gardens-flea-market",
+      "target_id": "entity_meeting-doc-155106-kew-gardens-flea-market",
+      "alias_id": "entity_meeting178481-kew-gardens-flea-market",
+      "canonical_name": "Kew Gardens Flea and Craft Market, Inc.",
+      "alias_name": "Kew Gardens Flea and Craft Market, Inc.",
+      "confidence": "high",
+      "reason": "Same durable not-for-profit/organization identity. Both records carry the exact corporate name and source evidence identifies it as the permittee/operator for Kew Gardens flea market activity.",
+      "evidence_refs": [
+        "meeting_doc_155106#p003_c0008",
+        "meeting_doc_178481#p003_c0002"
+      ],
+      "guard_notes": "Alias is absent from merges.json entity aliases, absent from visible prior prep notes, and not in do-not-merge. Organization vs not-for-profit organization typing is compatible."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_louis-berger-group-ps21008",
+      "target_id": "entity_louis-berger-group-ps21008",
+      "alias_id": "entity_meeting91591-louis-berger-group",
+      "canonical_name": "Louis Berger Group, Inc.",
+      "alias_name": "Louis Berger Group Inc.",
+      "confidence": "high",
+      "reason": "Same durable company identity. Names differ only by comma punctuation, both records use the Louis Berger Group Inc. identity, and the target has stronger source-backed context including the LBG abbreviation and WSP acquisition note.",
+      "evidence_refs": [
+        "meeting_doc_68331#p002_c0012",
+        "meeting_doc_68331#p002_c0015",
+        "meeting_doc_91591#p010_c0010",
+        "meeting_doc_95616#p003_c0010"
+      ],
+      "guard_notes": "Alias is absent from merges.json entity aliases, absent from visible prior prep notes, and not in do-not-merge. Acquisition by WSP is context only; the merge is for the same Louis Berger entity."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_mj-engineering-pc",
+      "target_id": "entity_mj-engineering-pc",
+      "alias_id": "entity_meeting-doc-206081-mj-engineering",
+      "canonical_name": "M & J Engineering PC",
+      "alias_name": "M & J Engineering PC",
+      "confidence": "high",
+      "reason": "Same durable engineering firm identity. Both records use the exact display name and the shared alias entity_m-and-j-engineering-pc; target evidence explicitly expands the firm as M & J Engineering PC with M&J abbreviation context.",
+      "evidence_refs": [
+        "meeting_doc_205636#p006_c0006",
+        "meeting_doc_205636#p005_c0007",
+        "meeting_doc_206081#p016_c0004"
+      ],
+      "guard_notes": "Alias is absent from merges.json entity aliases, absent from visible prior prep notes, and not in do-not-merge. Company and certified minority-owned business descriptions are compatible identity-level descriptions."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_pro-traxx-meeting-doc-138251",
+      "target_id": "entity_pro-traxx-meeting-doc-138251",
+      "alias_id": "entity_pro-traxx-138331",
+      "canonical_name": "Pro-Traxx Ultrasonic Rail Testing, Inc.",
+      "alias_name": "Pro-Traxx Ultrasonic Rail Testing, Inc.",
+      "confidence": "high",
+      "reason": "Same durable rail-testing vendor identity. Both records have the exact corporate name and shared normalized alias entity_pro-traxx-ultrasonic-rail-testing-inc; target evidence names Pro-Traxx as a vendor/proposer.",
+      "evidence_refs": [
+        "meeting_doc_138251#p006_c0009",
+        "meeting_doc_138251#p007_c0004",
+        "meeting_doc_138331#p001_c0009"
+      ],
+      "guard_notes": "Alias is absent from merges.json entity aliases, absent from visible prior prep notes, and not in do-not-merge. Company/vendor typing is compatible."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_queens-ballpark-company-llc",
+      "target_id": "entity_queens-ballpark-company-llc",
+      "alias_id": "entity_queens-ballpark-company-meeting-doc-133406",
+      "canonical_name": "Queens Ballpark Company LLC",
+      "alias_name": "Queens Ballpark Company LLC",
+      "confidence": "high",
+      "reason": "Same durable company identity. Both records use the exact company name; target evidence identifies Queens Ballpark Company LLC as licensor and carries the stronger two-source cluster.",
+      "evidence_refs": [
+        "meeting_doc_133386#p002_c0008",
+        "meeting_doc_133406#p001_c0010",
+        "meeting_doc_199126#p002_c0002"
+      ],
+      "guard_notes": "Alias is absent from merges.json entity aliases, absent from visible prior prep notes, and not in do-not-merge. No agency or committee ambiguity."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_rlf-ii-bassett-llc",
+      "target_id": "entity_rlf-ii-bassett-llc",
+      "alias_id": "entity_rlf-bassett-ii-llc",
+      "canonical_name": "RLF II Bassett, LLC",
+      "alias_name": "RLF II BASSETT LLC",
+      "confidence": "high",
+      "reason": "Same durable LLC identity. Display names differ only by capitalization and comma punctuation; both records also use the normalized alias entity_rlf-ii-bassett-llc and source evidence identifies the same RLF II Bassett LLC grantor/licensor entity.",
+      "evidence_refs": [
+        "meeting_doc_131676#p005_c0008",
+        "meeting_doc_131696#p001_c0009",
+        "meeting_doc_194041#p001_c0008",
+        "meeting_doc_194156#p003_c0008"
+      ],
+      "guard_notes": "Alias is absent from merges.json entity aliases, absent from visible prior prep notes, and not in do-not-merge. The alias record id word order appears slug-derived; the source-backed display name matches the target identity."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_meeting-doc-113916-siemens",
+      "target_id": "entity_meeting-doc-113916-siemens",
+      "alias_id": "entity_siemens-mobility-meeting-doc-42686",
+      "canonical_name": "Siemens Mobility, Inc.",
+      "alias_name": "Siemens Mobility Inc.",
+      "confidence": "high",
+      "reason": "Same durable rail equipment/vendor company identity. Names differ only by comma punctuation; both records carry Siemens Mobility Inc. aliases and compatible company/vendor descriptions tied to rail systems work.",
+      "evidence_refs": [
+        "meeting_doc_115141#p015_c0009",
+        "meeting_doc_113916#p006_c0003",
+        "meeting_doc_42686#p041_c0005"
+      ],
+      "guard_notes": "Alias is absent from merges.json entity aliases, absent from visible prior prep notes, and not in do-not-merge. Vendor role is contextual and compatible with the target company record."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_vizz-group-llc-138346",
+      "target_id": "entity_vizz-group-llc-138346",
+      "alias_id": "entity_vizz-group-llc-174081",
+      "canonical_name": "Vizz Group LLC",
+      "alias_name": "Vizz Group LLC",
+      "confidence": "high",
+      "reason": "Same durable tenant/company identity. Both records use the exact LLC name and shared normalized alias entity_vizz-group-llc; target evidence identifies Vizz Group LLC as lessee/tenant and has a broader three-source cluster.",
+      "evidence_refs": [
+        "meeting_doc_138346#p003_c0011",
+        "meeting_doc_173871#p001_c0008",
+        "meeting_doc_174081#p018_c0008",
+        "meeting_doc_174081#p019_c0009"
+      ],
+      "guard_notes": "Alias is absent from merges.json entity aliases, absent from visible prior prep notes, and not in do-not-merge. Company/corporation typing is compatible."
+    }
+  ],
+  "commands_run": [
+    "pwd && rg --files data packages wiki raw | rg '(^data/identity-overrides/merges\\\\.json$|^data/review_notes/|canonical|identity|entities|entity|do-not-merge|do_not_merge)'",
+    "git status --short",
+    "sed -n '1,220p' data/identity-overrides/merges.json",
+    "jq '.aliases.entity | keys | length, .aliases.entity | to_entries[0:20]' data/identity-overrides/merges.json (failed expression; read-only)",
+    "jq 'keys, .[\"entity\"]? // empty' data/identity-overrides/do-not-merge.json",
+    "head -n 3 data/canonical/entities.jsonl",
+    "ls -l data/review_notes || true && test -f data/review_notes/codex-identity-batch130-prep.json && sed -n '1,220p' data/review_notes/codex-identity-batch130-prep.json || true",
+    "jq '(.aliases.entity | keys | length) as $n | {entity_alias_count:$n, sample:(.aliases.entity | to_entries[0:5])}' data/identity-overrides/merges.json",
+    "jq '.pairs | length, .pairs[0:20]' data/identity-overrides/do-not-merge.json",
+    "sed -n '1,220p' data/review_notes/codex-identity-batch129-prep.json",
+    "jq exact-name duplicate grouping over data/canonical/entities.jsonl",
+    "jq entity merge alias/target temp extracts and do-not-merge probe (read-only; one expression shape failed against nested object)",
+    "rg prior identity prep aliases in data/review_notes/codex-identity-batch*.json",
+    "jq filtered exact-name duplicate grouping excluding broad committee/department/authority/program labels",
+    "sed -n '1,120p' data/identity-overrides/do-not-merge.json",
+    "for selected alias ids, jq '.aliases.entity[$id] // empty' data/identity-overrides/merges.json",
+    "rg selected alias ids across data/review_notes/codex-identity-batch*.json data/identity-overrides/do-not-merge.json data/identity-overrides/merges.json",
+    "jq selected record evidence extract from data/canonical/entities.jsonl"
+  ],
+  "commands_not_run": [
+    "No provider-backed commands",
+    "No agent harness commands",
+    "No canonicalize, campaign dedup, identity-review, write, ask, schema, or ontology-normalize commands",
+    "No commands with --profile or provider settings",
+    "No materialize",
+    "No export-jsonl",
+    "No full validate",
+    "No edits to canonical JSONL, wiki pages, DB, LOG.md, manifest, retired submissions, submissions, or merges.json"
+  ]
+}

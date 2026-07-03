@@ -1,0 +1,22 @@
+{
+  "name": "@mta-wiki/db",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@mta-wiki/core": "workspace:*",
+    "drizzle-orm": "1.0.0-beta.22",
+    "typebox": "1.1.38"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  }
+}

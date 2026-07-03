@@ -1,0 +1,349 @@
+{
+  "run_id": "2026-06-10T22-56-13-303Z_1976810-9799dcb4_ingest_20110517-jamaica-open-house-posters",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T01:41:17.918Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "skip-archer-ave",
+        "local_observation_id": "treatment_bus_lanes_archer_ave",
+        "decision": "skip",
+        "rationale": "Cited blocks (p005_c0002, p005_c0004, p005_c0005) merely list street segments and figure descriptions. None explicitly states this treatment is attached to corridor_archer-ave-busway or project_jamaica-bus-improvement-study.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p005_c0002",
+            "source_quote": "Archer Avenue: Sutphin Boulevard to Parsons Boulevard"
+          },
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p005_c0004",
+            "source_quote": "Archer Avenue: Parsons Boulevard to Merrick Boulevard"
+          },
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p005_c0005",
+            "source_quote": "Offset bus lane proposed (currently curbside bus lane)"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-jamaica-ave",
+        "local_observation_id": "treatment_bus_lanes_jamaica_ave",
+        "decision": "skip",
+        "rationale": "Cited blocks (p006_c0002, p006_c0004, p006_c0005) merely list street segments and a figure description. None explicitly states attachment to corridor_jamaica-ave-busway or project_jamaica-bus-improvement-study.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p006_c0002",
+            "source_quote": "Jamaica Avenue: Sutphin Boulevard to Parsons Boulevard"
+          },
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p006_c0004",
+            "source_quote": "Jamaica Avenue: Parsons Boulevard to 168 th Street"
+          },
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p006_c0005",
+            "source_quote": "Offset bus lane proposed (currently curbside bus lane)"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-merrick-blvd",
+        "local_observation_id": "treatment_bus_lanes_merrick_blvd",
+        "decision": "skip",
+        "rationale": "Cited block (p007_c0002) merely lists a street segment heading. Does not explicitly state attachment to corridor_merrick-blvd-bus-lanes or project_jamaica-bus-improvement-study.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p007_c0002",
+            "source_quote": "Merrick Boulevard: Archer Avenue to Hillside Avenue"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-165th-st",
+        "local_observation_id": "treatment_bus_lanes_165th_st",
+        "decision": "skip",
+        "rationale": "Cited block (p007_c0004) merely lists a street segment heading. Does not explicitly state attachment to corridor_165th-st-bus-lanes or project_jamaica-bus-improvement-study.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p007_c0004",
+            "source_quote": "165 th Street: 89 th Avenue to Hillside Avenue"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-bus-lane-features",
+        "local_observation_id": "treatment_bus_lane_features_general",
+        "decision": "skip",
+        "rationale": "Cited block (p004_c0004) merely lists bus lane features (red markings, overhead signage, hours, loading windows). Does not explicitly state attachment to any project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p004_c0004",
+            "source_quote": "Combination of offset and curbside bus lanes, improved with red lane markings and overhead signage"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-bus-stop-reconfig",
+        "local_observation_id": "treatment_bus_stop_reconfigurations",
+        "decision": "skip",
+        "rationale": "Cited blocks (p009_c0006, p009_c0004) merely describe the treatment and existing problem. Neither explicitly states attachment to a project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p009_c0006",
+            "source_quote": "Lengthen, separate, and reverse bus stop locations"
+          },
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p009_c0004",
+            "source_quote": "Location of bus stops leads to turning conflicts"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-parking-reg",
+        "local_observation_id": "treatment_parking_regulation_changes",
+        "decision": "skip",
+        "rationale": "Cited block (p009_c0009) lists proposed parking regulation changes. Does not explicitly state attachment to a project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p009_c0009",
+            "source_quote": "Legalize existing daytime truck loading Provide additional truck loading space Extend one-way westbound operation on 91st Avenue"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-intersection-hillside",
+        "local_observation_id": "treatment_intersection_hillside_homelawn_169th",
+        "decision": "skip",
+        "rationale": "Cited blocks (p009_c0011, p009_c0016, p009_c0017) are figure descriptions. None explicitly states attachment to a project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p009_c0011",
+            "source_quote": "Home Lawn St. becomes primary north/south roadway"
+          },
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p009_c0016",
+            "source_quote": "Provision for more pedestrian space"
+          },
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p009_c0017",
+            "source_quote": "Provision for more pedestrian space"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-rec1",
+        "local_observation_id": "treatment_rec1_eb_lane_extend",
+        "decision": "skip",
+        "rationale": "Cited block (p008_c0004) is a list of recommendations. The recommendation text describes the treatment but does not explicitly state attachment to a project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p008_c0004",
+            "source_quote": "1 Extend existing EB lane east to Sutphin Blvd and west to Merrick Blvd"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-rec2",
+        "local_observation_id": "treatment_rec2_wb_bus_lane",
+        "decision": "skip",
+        "rationale": "Cited block (p008_c0004) is a list of recommendations. The recommendation text describes the treatment but does not explicitly state attachment to a project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p008_c0004",
+            "source_quote": "2 Implement WB bus lane - curbside between Parsons Blvd & 150th St offset between Parsons Blvd & 160th St with flexible delineators"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-rec3",
+        "local_observation_id": "treatment_rec3_redistribute_road_width",
+        "decision": "skip",
+        "rationale": "Cited block (p008_c0004) is a list of recommendations. The recommendation text describes the treatment but does not explicitly state attachment to a project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p008_c0004",
+            "source_quote": "3 Redistribute road width between 160th Street & Guy R. Brewer Blvd"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-rec4",
+        "local_observation_id": "treatment_rec4_extend_wb_curbside",
+        "decision": "skip",
+        "rationale": "Cited block (p008_c0004) is a list of recommendations. The recommendation text describes the treatment but does not explicitly state attachment to a project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p008_c0004",
+            "source_quote": "4 Extend existing WB curbside bus lane west to Sutphin Blvd, offset between Parsons Blvd & Guy R. Brewer Blvd"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-rec5",
+        "local_observation_id": "treatment_rec5_eb_curbside_marking",
+        "decision": "skip",
+        "rationale": "Cited block (p008_c0004) is a list of recommendations. The recommendation text describes the treatment but does not explicitly state attachment to a project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p008_c0004",
+            "source_quote": "5 Maintain existing EB curbside bus lane with highly visible paint and improved pavement markings"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-rec6",
+        "local_observation_id": "treatment_rec6_nb_interior_lane",
+        "decision": "skip",
+        "rationale": "Cited block (p008_c0004) is a list of recommendations. The recommendation text describes the treatment but does not explicitly state attachment to a project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p008_c0004",
+            "source_quote": "6 Implement NB interior bus lane between Hillside Av & 88th Av"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-rec7",
+        "local_observation_id": "treatment_rec7_sb_bus_lane",
+        "decision": "skip",
+        "rationale": "Cited block (p008_c0004) is a list of recommendations. The recommendation text describes the treatment but does not explicitly state attachment to a project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p008_c0004",
+            "source_quote": "7 Implement SB bus lane between Hillside Av & Archer Av"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-rec9",
+        "local_observation_id": "treatment_facilitating_transfers_tunnel",
+        "decision": "skip",
+        "rationale": "Cited block (p008_c0006) is a list of recommendations. The recommendation text describes the treatment but does not explicitly state attachment to a project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p008_c0006",
+            "source_quote": "9 Install shelter, passenger amenities in tunnel"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-rec10",
+        "local_observation_id": "treatment_facilitating_transfers_canopy",
+        "decision": "skip",
+        "rationale": "Cited block (p008_c0006) is a list of recommendations. The recommendation text describes the treatment but does not explicitly state attachment to a project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p008_c0006",
+            "source_quote": "10 Install cantilevered canopy & additional amenities"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-rec11",
+        "local_observation_id": "treatment_facilitating_transfers_info_panels",
+        "decision": "skip",
+        "rationale": "Cited block (p008_c0006) is a list of recommendations. The recommendation text describes the treatment but does not explicitly state attachment to a project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p008_c0006",
+            "source_quote": "11 Install shelter and information panels"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-rec12",
+        "local_observation_id": "treatment_bus_stop_routing_q20",
+        "decision": "skip",
+        "rationale": "Cited block (p008_c0008) is a list of recommendations. The recommendation text describes the treatment but does not explicitly state attachment to a project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p008_c0008",
+            "source_quote": "12 Lengthen & separate Q20A/Q20B, Q20C, Q20D bus stop"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-rec13",
+        "local_observation_id": "treatment_bus_stop_relocate_layover",
+        "decision": "skip",
+        "rationale": "Cited block (p008_c0008) is a list of recommendations. The recommendation text describes the treatment but does not explicitly state attachment to a project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p008_c0008",
+            "source_quote": "13 Relocate bus stops & layover areas"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-rec14",
+        "local_observation_id": "treatment_bus_stop_relocate_li_bus",
+        "decision": "skip",
+        "rationale": "Cited block (p008_c0008) is a list of recommendations. The recommendation text describes the treatment but does not explicitly state attachment to a project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p008_c0008",
+            "source_quote": "14 Relocate WB Long Island Bus stop"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-rec15",
+        "local_observation_id": "treatment_bus_stop_modify_near_intersection",
+        "decision": "skip",
+        "rationale": "Cited block (p008_c0008) is a list of recommendations. The recommendation text describes the treatment but does not explicitly state attachment to a project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p008_c0008",
+            "source_quote": "15 Modify bus stops near intersection"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-rec16",
+        "local_observation_id": "treatment_bus_stop_extend_nb_q20_q43_q44",
+        "decision": "skip",
+        "rationale": "Cited block (p008_c0008) is a list of recommendations. The recommendation text describes the treatment but does not explicitly state attachment to a project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p008_c0008",
+            "source_quote": "16 Extend NB Q20A/B, Q43, Q44 bus stop"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-30-12-890Z_2111393-6a7ad651_canonicalize_2026-06-10t22-56-13-303z-1976810-9799dcb4-ingest-20110517-jamaica-open-house-posters-treatment-relations"
+}

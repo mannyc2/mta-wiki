@@ -1,0 +1,140 @@
+{
+  "run_id": "2026-06-10T22-56-13-021Z_1976810-4f20fb57_ingest_20100615-34th-transitway-cac-mtg-summary",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T01:06:42.099Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-tr-01",
+        "local_observation_id": "treatment_off_board_fare_collection_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "treatment_off-board-fare-collection-34th-st_4",
+            "description": "Off-board fare collection as a Transitway treatment component",
+            "evidence_refs": [
+              {
+                "source_id": "20100615_34th_transitway_cac_mtg_summary",
+                "block_id": "p003_c0012",
+                "source_quote": "Fare collection improvements will likely go in ahead of the Transitway, in 2011"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source block p003_c0012 explicitly states fare collection improvements will go in ahead of the Transitway, tying the treatment directly to the 34th Street Transitway project.",
+        "evidence_refs": [
+          {
+            "source_id": "20100615_34th_transitway_cac_mtg_summary",
+            "block_id": "p003_c0012",
+            "source_quote": "Fare collection improvements will likely go in ahead of the Transitway, in 2011"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-tr-02",
+        "local_observation_id": "treatment_bus_lane_camera_enforcement_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "treatment_bus-lane-camera-enforcement-34th-st",
+            "description": "Bus lane camera enforcement as a Transitway treatment component",
+            "evidence_refs": [
+              {
+                "source_id": "20100615_34th_transitway_cac_mtg_summary",
+                "block_id": "p003_c0002",
+                "source_quote": "The project is meant to have a more self-enforcing bus lane design. DOT is pushing for a bill in Albany for bus lane camera enforcement"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source block p003_c0002 explicitly states 'The project' (the 34th Street Transitway) is pursuing bus lane camera enforcement via legislation in Albany.",
+        "evidence_refs": [
+          {
+            "source_id": "20100615_34th_transitway_cac_mtg_summary",
+            "block_id": "p003_c0002",
+            "source_quote": "The project is meant to have a more self-enforcing bus lane design. DOT is pushing for a bill in Albany for bus lane camera enforcement"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-tr-03",
+        "local_observation_id": "treatment_dedicated_bus_lane_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "treatment_dedicated-bus-lane-34th-st",
+            "description": "Self-enforcing bus lane design as a Transitway treatment component",
+            "evidence_refs": [
+              {
+                "source_id": "20100615_34th_transitway_cac_mtg_summary",
+                "block_id": "p003_c0002",
+                "source_quote": "The project is meant to have a more self-enforcing bus lane design"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source block p003_c0002 explicitly states 'The project' (the Transitway) is meant to have a self-enforcing bus lane design.",
+        "evidence_refs": [
+          {
+            "source_id": "20100615_34th_transitway_cac_mtg_summary",
+            "block_id": "p003_c0002",
+            "source_quote": "The project is meant to have a more self-enforcing bus lane design"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-tr-04",
+        "local_observation_id": "treatment_pedestrian_improvements_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "treatment_pedestrian-improvements-34th-st",
+            "description": "Pedestrian space improvements as a Transitway treatment component",
+            "evidence_refs": [
+              {
+                "source_id": "20100615_34th_transitway_cac_mtg_summary",
+                "block_id": "p002_c0011",
+                "source_quote": "Improving pedestrian space is a major priority for the project"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source block p002_c0011 explicitly states improving pedestrian space is a major priority 'for the project' (the 34th Street Transitway).",
+        "evidence_refs": [
+          {
+            "source_id": "20100615_34th_transitway_cac_mtg_summary",
+            "block_id": "p002_c0011",
+            "source_quote": "Improving pedestrian space is a major priority for the project"
+          }
+        ]
+      },
+      {
+        "decision_id": "sk-tr-05",
+        "local_observation_id": "treatment_low_floor_buses_34th_st",
+        "decision": "skip",
+        "rationale": "Source block p003_c0012 merely states 'low floor buses are out on the streets now' as a factual observation about current conditions. The surrounding context shows the commenter suggesting low-floor buses as an independent alternative to the Transitway; the answer does not attach low-floor buses to the Transitway project itself. No explicit attachment to any project or corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20100615_34th_transitway_cac_mtg_summary",
+            "block_id": "p003_c0012",
+            "source_quote": "low floor buses are out on the streets now"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-46-257Z_2111393-7876d472_canonicalize_2026-06-10t22-56-13-021z-1976810-4f20fb57-ingest-20100615-34th-transitway-cac-mtg-summary-treatment-relations"
+}

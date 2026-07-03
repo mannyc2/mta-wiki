@@ -1,0 +1,648 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_brt-phase2-outreach-rpt"
+record_kind: "source"
+display_name: "Bus Rapid Transit Phase II: Public Input"
+source_id: "brt_phase2_outreach_rpt"
+source_ids:
+  - "brt_phase2_outreach_rpt"
+local_observation_id: "source_brt_phase2_outreach"
+local_observation_ids:
+  - "source_brt_phase2_outreach"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T18:12:33.323Z"
+raw_text: "Bus Rapid Transit Phase II: Public Input report published June 2010 by NYC DOT and MTA NYCT documenting public workshops and online survey for BRT Phase II."
+submission_ids:
+  - "sub_7866caf893f717a2"
+payload:
+  authority_tier: "plan_document"
+  content_type: "report"
+  date: "2010-06"
+  date_normalized:
+    confidence: "submitted_iso"
+    normalized_date: "2010-06"
+    precision: "month"
+    raw_text: "2010-06"
+  date_text: "June 2010"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2010-06"
+    precision: "month"
+    raw_text: "June 2010"
+  description: "Report documenting public workshops and online survey results for BRT Phase II expansion in New York City"
+  published_date_normalized: "2010-06"
+  published_date_precision: "month"
+  publisher: "New York City Department of Transportation (DOT) and MTA New York City Transit (NYCT)"
+  title: "Bus Rapid Transit Phase II: Public Input"
+evidence_refs:
+  -
+    block_id: "p003_c0003"
+    evidence_id: "brt_phase2_outreach_rpt#p003_c0003"
+    page_number: 3
+    source_id: "brt_phase2_outreach_rpt"
+    source_path: "raw/sources/brt_phase2_outreach_rpt/blocks.jsonl"
+    source_quote: "June 2010"
+    text_sha256: "sha256:44f5e54dccd7f3bd5ef0a92a03a7e5ee73a1ef2fc0aea414e8efd64b920e878a"
+    text_source: "raw_text"
+  -
+    block_id: "p004_c0004"
+    evidence_id: "brt_phase2_outreach_rpt#p004_c0004"
+    page_number: 4
+    source_id: "brt_phase2_outreach_rpt"
+    source_path: "raw/sources/brt_phase2_outreach_rpt/blocks.jsonl"
+    source_quote: "New York City Department of Transportation (DOT) and MTA New York City Transit (NYCT) began exploring opportunities for the expansion of Bus Rapid Transit (BRT) in New York City"
+    text_sha256: "sha256:6089c770a90308c6a025128c944450f05b67e0e5e3ac8d54608ee178d432f028"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0001"
+    evidence_id: "brt_phase2_outreach_rpt#p003_c0001"
+    page_number: 3
+    source_id: "brt_phase2_outreach_rpt"
+    source_path: "raw/sources/brt_phase2_outreach_rpt/blocks.jsonl"
+    source_quote: "TABLE OF CONTENTS"
+    text_sha256: "sha256:dee18caa47ed61ec83d207ff2dbfdbb1ecb6ea215dd82aa0f146e8528f7c734d"
+    text_source: "raw_text"
+---
+
+# Bus Rapid Transit Phase II: Public Input
+
+source_id: brt_phase2_outreach_rpt
+citation: cite block ids exactly as shown in square brackets
+document: 358 block(s)
+
+## Page 1
+
+### [p001_c0001] BUS RAPID TRANSIT PHASE II: Public Input
+> [p001_c0002] A group of people are gathered around a table, examining a large map of the New York City area. The map shows various transit routes and landmarks. The group appears to be engaged in a public input session for the Bus Rapid Transit Phase II project. The man in the light green shirt and tie is pointing at the map, while the others listen and take notes. The map is titled "45 of Limited Transit Needs (Underdeveloped Area) - District Top - Subway, Commuter Rail". The map shows various transit routes and landmarks, including the Queensboro Bridge, the East River, and various subway lines. The group is seated around the table, and there are laptops and papers on the table. The background shows a room with chairs and other people.
+[p001_c0003] _NEW YORK CITY DOIT_
+[p001_c0004] _MTA_
+[p001_c0005] _New York City Transit_
+
+## Page 2
+
+> [p002_c0001] A completely blank white page with no visible content, text, or markings.
+
+## Page 3
+
+### [p003_c0001] TABLE OF CONTENTS
+[p003_c0002] EXECUTIVE SUMMARY i CHAPTER 1 | WORKSHOP PURPOSE AND STRUCTURE 1 CHAPTER 2 | WORKSHOP FINDINGS 9 CHAPTER 3 | ONLINE BRT SURVEY FINDINGS 26 APPENDIX A | LIST OF ORGANIZATIONS & ELECTED OFFICIALS REPRESENTED AT THE WORKSHOPS 42
+[p003_c0003] _June 2010_
+
+## Page 4
+
+### [p004_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p004_c0002] EXECUTIVE SUMMARY
+### [p004_c0003] EXECUTIVE SUMMARY
+[p004_c0004] In the fall of 2008, the New York City Department of Transportation (DOT) and MTA New York City Transit (NYCT) began exploring opportunities for the expansion of Bus Rapid Transit (BRT) in New York City. Public input is a critical component of this effort, and so in the spring of 2009 DOT and NYCT sought to engage New Yorkers in a dialogue on the future of BRT. This effort included seven public workshops across the city and an online survey, the goals of which were to:
+- [p004_c0005] • Educate the public about BRT and current BRT projects; • Solicit feedback on unmet transit needs that may be appropriate for BRT; and, • Solicit feedback on BRT's package of features.
+[p004_c0006] Over 325 people participated in the workshops, including representatives from 47 community and business groups, and staff members from the offices of 23 local elected officials. In addition, over 600 people completed the online survey. The workshop and survey participants provided DOT and NYCT with a wealth of feedback on local transit needs and community issues, which will help guide the two agencies as they move forward with planning for additional BRT routes. From all the public comments, one central theme emerged: NYCT and DOT should do more to meet the transit needs of New Yorkers through improvements to the city's bus system.
+### [p004_c0007] Outreach Approach
+[p004_c0008] The outreach effort was designed to maximize opportunities for residents and stakeholder groups to voice their ideas and opinions. The workshops used a series of interactive exercises to stimulate a conversation on BRT. Participants were divided into groups of eight to ten people and assigned to tables with a facilitator. The facilitators
+[p004_c0009] guided each group through a discussion of potential BRT corridors and of BRT features, such as off-board fare payment, real-time bus arrival information, transit signal priority, and bus lanes and busways. Each participant filled out a questionnaire over the course of the workshop and note takers captured comments at each table. The online survey followed a similar format and also provided the opportunity for open-ended responses.
+### [p004_c0010] Summary of Public Comments
+[p004_c0011] Overall, the workshops and survey indicated that the public is supportive of BRT expansion and other bus improvements and feels that these initiatives will improve transit service in New York City. 98% of workshop attendees and 97% of survey respondents expressed support for BRT expansion. Participants provided a range of viewpoints and ideas, from which several key themes came forward:
+### [p004_c0012] TRANSIT NEEDS
+- [p004_c0013] • Overall, participants saw most of the transit need corridors identified by DOT and NYCT as good candidates for BRT. Participants frequently recommended extensions to these corridors, as well as suggested their own. The maps on pages 12-20 in chapter II present the transit corridors that participants identified as having the greatest need for faster service. • Many participants encouraged DOT and NYCT to implement improvements to bus service quickly, particularly those that do not involve complex construction or high capital costs.
+[p004_c0014] _i_
+
+## Page 5
+
+### [p005_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p005_c0002] BRT FEATURES
+- [p005_c0003] • Overall, participants stated that BRT features, such as off-board fare payment and transit signal priority, would speed up bus travel and make riding the bus more convenient and less stressful. Many participants expressed a desire for quick implementation of specific BRT features, such as real-time bus arrival information displays at bus stops. • Of the features designed to improve bus speed and reliability, frequent service was viewed as the most desirable feature among participants. Of the features designed to improve comfort and convenience, real-time bus arrival information was by far the most popular feature. • In regards to subway-like station spacing, participants were concerned about the accessibility of BRT and bus service for the elderly and disabled riders. • Most participants supported the concept of traffic signal priority for buses, but stated that DOT should carefully analyze and monitor impacts on traffic and pedestrians. TSP systems should ensure that pedestrians have enough time to safely cross streets. • Most participants supported the concept of off-board fare payment, but stated that NYCT and DOT should have adequate enforcement in place to prevent fare evasion and that security concerns at some stations would need to be addressed.
+### [p005_c0004] BUS LANES AND BUSWAYS
+- [p005_c0005] • Overall, participants voiced support for the implementation of bus lanes and busways when broadly defined, stating that these features would speed bus service by allowing buses to avoid traffic congestion. Many participants stated that for bus lanes to be effective, DOT and NYCT will need to institute more robust enforcement measures against illegal parking.
+- [p005_c0006] • Concerns about specific treatments and corridors fell into two general categories: (1) that illegally parked vehicles would inhibit the effectiveness of bus lanes, and (2) that bus lanes and busways would eliminate parking spaces and increase traffic for motorists. Participants also raised questions about pedestrian, bicyclist, and driver safety and impacts on local businesses. • No treatment was the clear favorite among participants, although curbside lanes were the least popular treatment, due to concerns over their effectiveness and impacts on parking and commercial deliveries. • When considering a bus lane or busway, participants stated that DOT and NYCT need to carefully analyze potential traffic, pedestrian safety, parking availability, and delivery impacts. A successful bus lane or busway design must be tailored to the needs of the specific corridor.
+### [p005_c0007] PLANNING PROCESS
+- [p005_c0008] • Participants stated that continued community involvement throughout the planning of individual BRT corridors and other bus improvement projects will make the project better and is essential for successful project implementation.
+[p005_c0009] _ii_
+
+## Page 6
+
+### [p006_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p006_c0002] CHAPTER 1 | WORKSHOP PURPOSE AND STRUCTURE
+### [p006_c0003] 1. WORKSHOP PURPOSE AND STRUCTURE
+### [p006_c0004] The Purpose
+[p006_c0005] In April of 2009, the New York City Department of Transportation (DOT) and MTA New York City Transit (NYCT) released “Introduction to Bus Rapid Transit Phase II,” a report on the future of Bus Rapid Transit (BRT) in New York City. The report identifies 31 unmet transit needs across the city that may be candidates for BRT and discusses potential improvements to the package of BRT features to be implemented on future routes (New York City piloted its first BRT route, the Bx12 Select Bus Service on Fordham Road in the Bronx, starting in the summer of 2008). The Phase II report is part of a larger planning effort by DOT and NYCT to develop a comprehensive BRT system across the city.
+[p006_c0006] Public engagement is a critical part of this process, as feedback from residents and community stakeholders helps DOT and NYCT to better understand the transit needs of local neighborhoods and address local concerns, such as parking availability and traffic congestion. In conjunction with the release of the Phase II report, DOT and NYCT held seven public workshops between May 28, 2009 and June 18, 2009 on the future of BRT in New York City. The goals of the workshops, held across the five boroughs, were to:
+- [p006_c0007] • Educate the public about BRT • Solicit feedback on unmet transit service needs that may be appropriate for BRT • Solicit feedback on BRT features
+[p006_c0008] Over 325 people participated in the workshops, the majority of them regular bus riders. In addition to the workshops, DOT and NYCT posted an online BRT survey, completed by over 650 respondents, which followed a similar format to the workshops. This report presents a summary of the results of the workshops and the online survey and will help to inform the work of DOT and NYCT as the two agencies move forward with planning for a Phase II BRT program.
+[p006_c0009] _Downtown Brooklyn BRT Workshop_
+[p006_c0010] _1_
+
+## Page 7
+
+### [p007_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p007_c0002] Workshop Structure
+[p007_c0003] The workshops used interactive exercises and visual aids to stimulate an in-depth conversation on BRT and to provide participants with ample opportunity to voice their ideas and opinions. In contrast to a public hearing, participants were randomly divided into groups of eight to ten and assigned to tables with a facilitator and a note taker. The facilitators, a mix of NYCDOT and NYCT staff and consultant staff, guided each group through a series of discussion units; the facilitator's role was to ask questions, guide the discussion, and, most importantly, to listen. The note taker recorded participant comments and kept track of the time spent on each discussion unit. In addition, each participant filled out a questionnaire over the course of the workshop. The workshop took about 90 minutes and was divided into four parts:
+[p007_c0004] (1) INTRODUCTION: the participants introduced themselves and where shown a brief video, the purpose of which was to give each participant a baseline understanding of BRT and the Bx12 Select Bus Service project. The facilitator laid out the goals of the workshop and answered questions about the video.
+[p007_c0005] _Sample Workshop Map_
+[p007_c0006] (2) SERVICE NEED CORRIDORS – MAP EXERCISE: the purpose of this unit was to solicit participant feedback on transit needs that might be appropriate for BRT. A large map of the borough in which the workshop was taking place was placed on each table, (see sample above); these maps showed the service need corridors identified by DOT/NYCT in the Phase II report (for example, Utica Avenue in Brooklyn and the North Shore in Staten Island). Each participant used stickers to indicate where they lived and places they frequently traveled to (place of employment, local shopping, etc.). The facilitator then asked participants for their thoughts on each of the DOT/NYCT-identified service need corridors. Participants used markers to modify these corridors and to add corridors of their own. At the end of the discussion, each participant was asked to identify the three service need corridors they believed were most important. This feedback was recorded on the borough maps and in each participant's questionnaire.
+[p007_c0007] _2_
+
+## Page 8
+
+### [p008_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p008_c0002] CHAPTER 1 | WORKSHOP PURPOSE AND STRUCTURE
+> [p008_c0003] The diagram is a circular game board titled "BRT FEATURES" at the top and bottom. In the center is a green circle with the text "BUS RAPID TRANSIT". The board is divided into two main sections: "SPEED & RELIABILITY" on the left and "COMFORT & CONVENIENCE" on the right. Each section contains several features with associated images and travel time savings. Feature Travel Time Savings (Minutes) Image Bus Lanes / Busways 3.5 - 5 Bus in a busway Traffic Signal Priority for Buses 1.5 - 3 Bus at a traffic signal Subway-like Station Spacing 2.5 - 3.5 Subway station platform Off-Board Fare Payment All Door Boarding 3.5 - 5 Person paying at a fare machine Frequent Service (Bx12) 3.5 - 5 Bx12 bus stop sign Real-Time Bus Arrival Information - Bus arrival information screen BRT Vehicles Low Floors More Doors - BRT bus Enhanced Stations - Bus stop shelter
+[p008_c0004] 3) BRT FEATURES – FEATURES GAME BOARD: the purpose of this unit was to solicit participant feedback on the package of features which make up a BRT service. A “BRT Features Game Board,” shown left, was placed on each table. The game board illustrates BRT’s five speed and reliability features and three comfort and convenience features. For the speed and reliability features, the game board also indicates the estimated travel time savings the feature achieves (based on a 30 minute bus trip). The facilitator asked participants for their opinions of each feature and what that feature meant to them (i.e. how frequent is frequent service?) Participants then used stickers to indicate on the game board whether they liked or disliked each feature or felt it was not important. After further discussion of the results, participants recorded their responses in their questionnaires.
+[p008_c0005] _BRT Features Exercise_
+[p008_c0006] _3_
+
+## Page 9
+
+### [p009_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+> [p009_c0002] A 3D rendering of a busway design. A white bus with 'SBS10' on its destination sign is stopped at a bus stop. The bus stop is a small, modern structure with a glass roof and a shelter. People are waiting at the stop. The busway is a dedicated lane with a red surface, marked with yellow double lines. Other vehicles, including a red car and a white van, are visible on the adjacent street.
+[p009_c0003] _Sample busway rendering_
+> [p009_c0004] A 3D rendering of an off-set bus lane design. A white bus with 'SBS10' on its destination sign is in a dedicated lane that is shifted to the side of the main road. The lane is marked with a red surface and a white line. Other vehicles, including a white car and a yellow taxi, are visible on the main road. The scene includes a bus stop and various street signs.
+[p009_c0005] _Sample off-set bus lane rendering_
+> [p009_c0006] A 3D rendering of a curbside bus lane design. A white bus with 'SBS10' on its destination sign is in a dedicated lane that runs along the curb. The lane is marked with a red surface and a white line. Other vehicles, including a black car and a red car, are visible on the main road. The scene includes a bus stop and various street signs.
+[p009_c0007] _Sample curbside bus lane rendering_
+[p009_c0008] 4) BUS LANES AND BUSWAYS - PHOTO BASED RENDERINGS: the purpose of this unit was to solicit participant feedback on a range of BRT bus lane and busway designs. Participants were shown a series of three photo-based renderings demonstrating different bus lane and busway treatments (samples shown above and at left) and were asked for their opinion on each. The note taker recorded the advantages and disadvantages identified by the group directly on the renderings. At the end of the discussion, participants used stickers to indicate whether they liked or disliked a given design. This feedback was also recorded in each participant's questionnaire.
+[p009_c0009] During the course of the workshops, staff from DOT and NYCT were also present to answer questions about non-BRT related issues.
+[p009_c0010] _4_
+
+## Page 10
+
+### [p010_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p010_c0002] CHAPTER 1 | WORKSHOP PURPOSE AND STRUCTURE
+### [p010_c0003] Attendance
+[p010_c0004] A total of 324 participants attended the seven workshops held across the five boroughs. Manhattan had the highest turnout with 97 participants, while Jamaica had the lowest turnout with 27 participants.
+[p010_c0005]
+
+```text
+Workshop Date Location Total Participants Bronx May 28, 2009 The Hub 29 Queens I June 2, 2009 Jackson Heights 52 Queens II June 3, 2009 Downtown Jamaica 27 Brooklyn I June 9, 2009 Downtown Brooklyn 40 Brooklyn II June 10, 2009 Brooklyn College/Flatbush 40 Staten Island June 16, 2009 New Dorp 39 Manhattan June 18, 2009 Garment District 97
+```
+[p010_c0006] In addition to community members, workshop attendees included representatives of civic organizations, elected officials, and business groups, including:
+- [p010_c0007] • staff representatives of 23 elected officials from the city, state, and federal level; • members and staff from 12 community boards; • representatives and staff from 25 community, civic, and advocacy organizations; • representatives from five business improvement districts; and • staff members from five government agencies at the city, state, and regional level.
+[p010_c0008] Appendix A includes a detailed list of the organizations and elected officials represented at the workshops.
+[p010_c0009] _5_
+
+## Page 11
+
+### [p011_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p011_c0002] Outreach Effectiveness
+[p011_c0003] Participants were asked in their questionnaires how they learned about the workshops. Signs posted on NYCT buses were the most effective approach to attracting participants. The “Other” category likely includes representatives of elected officials and community board members who were contacted directly by DOT and NYCT staff and outreach by community groups to their members.
+[p011_c0004]
+
+```text
+Outreach Method Number of Participants Percentage Sign Posted On NYCT Bus 97 35% DOT Email Announcement 52 19% DOT Text Message 4 1% DOT Website 25 9% NPR Radio 4 1% Other 99 35%
+```
+[p011_c0005] _6_
+
+## Page 12
+
+### [p012_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p012_c0002] CHAPTER 1 | WORKSHOP PURPOSE AND STRUCTURE
+### [p012_c0003] Participant Transportation Use
+[p012_c0004] Participants were asked which mode of transportation they used most frequently for travel within their borough of residence. About a third of respondents reported relying primarily on the local bus system for intra-borough travel.
+[p012_c0005]
+
+```text
+Most Frequent Mode of Transportation for Intra-Boro Travel Number of Participants Percentage Local Bus 119 31% Subway 94 25% Express Bus 13 3% Car 29 8% Walk 40 11% Bike 19 5% Staten Island Railroad 4 1% Combination: Car and Subway 1 0% Combination: Bus and Subway 25 7% Combination: Bus and Train 5 1% Combination: Bus and Express Bus 1 0% Combination: Bike, Car and Bus 1 0% Combination: Bike, Car and Walk 19 5% Combination: Not Specified 3 1% No Response 5 1%
+```
+[p012_c0006] *Note that a small portion of participants checked more than one mode.
+[p012_c0007] _7_
+
+## Page 13
+
+### [p013_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+[p013_c0002] Participants were also asked how often they ride the bus. About three-quarters of workshop participants reported using the bus at least once a week. Overall, frequent bus riders were well represented at the seven workshops.
+[p013_c0003]
+
+```text
+Bus Use Frequency Number of Participants Percentage Less than once per week 30 15% One to three days per week 52 27% Four to seven days per week 95 48% No response 19 10%
+```
+### [p013_c0004] Participants' Awareness of BRT
+[p013_c0005] At the beginning of the workshop, participants were asked to provide a one-sentence description of BRT in their questionnaires. A few respondents stated that they were not familiar with the concept and had come to the workshop to learn more, but a significant number exhibited a familiarity with BRT. Many of the responses captured what participants saw as BRT's primary features and benefits. Descriptions at multiple workshops likened BRT to a more cost-effective light rail system. The following is a sampling of the responses. BRT:
+- [p013_c0006] • “ ... is a smart, modern way to move large numbers of people rapidly above ground for a reasonable investment; the most cost-effective solution to urban transport.” • “ ... consists of exclusive bus lanes, off-board fare collection, enclosed stations and bus service that feels like a metro.” • “ ... is a dedicated bus lane route that facilitates accelerated bus traffic without interference from automobile traffic.” • “ ... is the greatest hope for efficient transportation for those that do not have access to a subway.” • “ ... is a bus with priority operation in dedicated traffic corridors, minimal dwell time with onboard fare inspection of prepaid tickets, minimal stops, increased ridership and decreased trip time.” • “ ... is a light rail system without expensive infrastructure.”
+[p013_c0007] _8_
+
+## Page 14
+
+### [p014_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p014_c0002] CHAPTER 2 | WORKSHOP FINDINGS
+### [p014_c0003] II. WORKSHOP FINDINGS
+### [p014_c0004] Key Findings
+[p014_c0005] Through the course of the seven workshops, several key themes emerged:
+### [p014_c0006] OVERALL FEEDBACK ON BRT
+- [p014_c0007] • Participants were overwhelmingly supportive of implementing BRT in New York City: 74% of participants who completed the questionnaire indicated that they would support the expansion of BRT. 24% said they would support BRT expansion, but had some concerns. 2% of participants stated that they did not support any expansion of BRT. • Many participants expressed a desire for quick implementation of BRT or of specific BRT features, such as real-time bus arrival information displays at bus stops.
+### [p014_c0008] SERVICE NEEDS
+- [p014_c0009] • Participants responded positively to the service need corridors identified by DOT and NYCT. • Participants were frequently interested in BRT services that took them all the way to their destination—not just services that connected them to the nearest subway—and expressed a desire for inter-borough BRT routes. • Participants often added service need corridors of their own or extended the DOT/NYCT-identified service need corridors. Participant-identified needs were most often focused on underserved areas, such as Hunts Point in the Bronx and Red Hook in Brooklyn. • Participants tended to focus most on corridors near their residence.
+### [p014_c0010] BRT FEATURES
+- [p014_c0011] • The eight BRT features received mostly positive feedback. Many participants stated that these features would speed up bus travel and make riding the bus more convenient and less stressful. • In the speed and reliability category, frequent service was the most popular feature. Running ways, off-board fare payment, traffic signal priority (TSP), and subway-style stations spacing also received positive feedback, but also raised a number of concerns and questions. • In the comfort and convenience category, real-time bus arrival information was by far the most popular feature. BRT vehicles were also popular, especially the low-floor feature. Enhanced stations were often seen as less important.
+### [p014_c0012] BUS LANES AND BUSWAYS
+- [p014_c0013] • Participants voiced support for the implementation of bus lanes and busways when broadly defined. Many participants stated that bus lanes and busways would speed up bus service by helping buses to avoid traffic. When it came to specific treatments, however, a number of participants raised concerns. • Concerns fell into two general categories: (1) concerns that illegally parked cars and trucks would inhibit the effectiveness of bus lanes and busways, and (2) concerns that bus lanes and busways would eliminate parking spaces and increase traffic for motorists. • Participants also raised questions about pedestrian, bicyclist, and driver safety and impacts on local businesses.
+[p014_c0014] _9_
+
+## Page 15
+
+### [p015_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p015_c0002] Participant Feedback on Service Needs
+### [p015_c0003] OBJECTIVES AND APPROACH
+[p015_c0004] The workshop map exercise was designed to: (1) solicit feedback from participants on the DOT/NYCT-identified corridors identified in “Introduction to BRT Phase II,” and (2) allow participants to suggest other potential corridors for consideration. Participant feedback was captured in three ways: questionnaire responses, marked-up borough maps, and comments recorded by the note takers. This analysis focuses on participant comments and ideas that were mentioned the most frequently and that generated the most interest from participants.
+### [p015_c0005] OVERALL COMMENTS
+[p015_c0006] Several trends were apparent across the seven workshops:
+- [p015_c0007] • Participants responded positively to the DOT/NYCT-identified corridors and saw most of them as good candidates for BRT or improved bus services. • Participants frequently extended or modified the DOT/NYCT-identified corridors; sometimes participants connected two or more corridors. • Participants from the Bronx, Brooklyn, Queens, and Staten Island expressed an interest in better transit connections to other boroughs; often these participants stated a desire for inter-borough connections that did not require traveling through Manhattan. • Participants tended to focus most on corridors near their residence.
+[p015_c0008] _10_
+
+## Page 16
+
+### [p016_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p016_c0002] CHAPTER 2 | WORKSHOP FINDINGS
+### [p016_c0003] The Bronx
+### [p016_c0004] OVERALL FEEDBACK
+- [p016_c0005] • Bronx participants indicated that DOT/NYCT should place the highest priority on areas underserved by the subway system, such as the Webster Avenue/Third Avenue corridor, Hunts Point and Melrose. • Bronx participants expressed a desire for improved east-west connections, as most subway service in the Bronx runs north-south. Suggested routes included Gun Hill Road and 161st Street. • Bronx participants also noted the importance of creating a transit link to Queens that did not require travel through Manhattan. This was suggested as part of a number of potential corridors.
+### [p016_c0006] PRIORITY CORRIDORS
+### [p016_c0007] • Webster Avenue/Third Avenue Corridor
+- [p016_c0008] - Almost all participants wanted to see the corridor extended north-south and connected to east-west service in the northern Bronx, potentially on Gun Hill Road. - This corridor received the highest overall ranking, although some participants questioned the need for BRT given the high frequency of existing bus services.
+### [p016_c0009] • Hunts Point Peninsula
+- [p016_c0010] - All five participant tables identified Hunts Point (particularly the western section) as a high priority for BRT, both for employees who worked in the area and residents. - Participants expressed a need for improved transit within Hunts Point, as well as better connections to other areas in the Bronx and beyond. - Suggestions included converting the Bx6 route to BRT.
+### [p016_c0011] • Soundview Corridor
+- [p016_c0012] - Several participant tables identified the area's current transit options as unreliable and insufficient, and noted that it is difficult for pedestrians in the area to access subway stops and other parts of the Bronx. - Participants wanted better connectivity within Soundview, as well as to other parts of the Bronx. - Four out of five participant tables wanted to extend the Soundview corridor east-west, potentially along 161st Street.
+[p016_c0013] _11_
+
+## Page 17
+
+### [p017_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p017_c0002] Bronx Service Needs
+> [p017_c0003] The map illustrates the Bronx Service Needs with various corridors and routes. A legend in the top left corner lists seven numbered corridors: 1. Third Avenue/Webster Avenue Corridor 2. Soundview Corridor 3. Bruckner Expressway – express bus corridor 4. Major Deegan Expressway – express bus corridor 5. Hunts Point Corridor 6. South Bronx East-West Corridor 7. North Bronx East-West Corridor The map also includes a legend for 'Participant Identified Corridors' and 'DOT/NYCT Identified Corridors'. Participant Identified Corridors Underserved Area (represented by a blue double-headed arrow) Service Need (represented by a blue double-headed arrow) DOT/NYCT Identified Corridors Underserved Area (represented by a red double-headed arrow) Service Need (represented by a red double-headed arrow) Phase I BRT Route (represented by a green line) The map shows several areas highlighted in red (Underserved Area) and blue (Service Need). A green line indicates the Phase I BRT Route, which includes a segment labeled 'Bx12 SBS'. A north arrow is located in the bottom left corner of the map area.
+[p017_c0004] _12_
+
+## Page 18
+
+### [p018_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p018_c0002] CHAPTER 2 | WORKSHOP FINDINGS
+### [p018_c0003] Brooklyn
+### [p018_c0004] OVERALL FEEDBACK
+- [p018_c0005] • Participants at both Brooklyn workshops frequently suggested extending the DOT/NYCT-identified corridors to Queens, including to JFK and Long Island City.
+### [p018_c0006] PRIORITY CORRIDORS
+### [p018_c0007] • Utica Avenue Corridor
+- [p018_c0008] - At the Flatbush workshop, participants ranked this corridor as one of the two most important needs; the corridor also ranked high at the Downtown Brooklyn workshop. - Participants from southeast Brooklyn expressed a desire for a faster and less crowded transit connection to Downtown Brooklyn and Manhattan. - A number of participants suggested extending the corridor south on Flatbush Avenue to the Rockaways; other participants suggested extensions to Downtown Brooklyn (instead of the Williamsburg Bridge bus plaza) and Manhattan. - Participants also suggested other potential corridors to better serve southeast Brooklyn, including Flatbush Avenue, identified as the most congested transit corridor in Brooklyn, and Remsen Avenue, identified as a route to better serve Canarsie.
+### [p018_c0009] • Red Hook
+- [p018_c0010] - Four out of five participant tables at the Downtown Brooklyn workshop identified Red Hook as an underserved area that is difficult to get to without a car; the area was also frequently raised at the Flatbush workshop.
+- [p018_c0011] - The most common suggestion was for a BRT route between Red Hook and Downtown Brooklyn. Participants also suggested routes from Red Hook to Long Island City, Greenpoint, and the Williamsburg East River waterfront. - Red Hook was also frequently added as an extension to other corridors, including the Bushwick to Downtown Brooklyn Corridor and the Williamsburg East River Waterfront Corridor.
+### [p018_c0012] • Southern Brooklyn East-West Corridor
+- [p018_c0013] - At the Flatbush workshop, participants ranked this corridor as one of the two most important needs. - Participants stated that trips along this corridor were long and slow and that many parts of the corridor were underserved by transit. Some participants noted that a trip across southern Brooklyn can take up to 2 hours. - Some participants suggested extensions to the Gateway Mall and south to Brighton Beach.
+### [p018_c0014] • Williamsburg East River Waterfront Corridor/ Bushwick to Downtown Brooklyn
+- [p018_c0015] - These two corridors were frequently combined, and both received significant interest at the Downtown Brooklyn workshop. - Participants felt that the Williamsburg East River waterfront was isolated from transit and that both areas were underserved and growing.
+[p018_c0016] _13_
+
+## Page 19
+
+### [p019_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p019_c0002] Brooklyn Service Needs
+> [p019_c0003] 1 & 2. Utica Avenue/ Southeast Brooklyn Corridor 3. Southern Brooklyn East-West Corridor 4. Central Brooklyn East-West Corridor 5. Bushwick to Downtown Brooklyn Corridor 6. Williamsburg East River Waterfront 7. Gowanus Expressway – express bus corridor 8. Flatbush Avenue Corridor 9. Red Hook Corridor 10. Queens Connections Participant Identified Corridors Underserved Area Service Need Extension DOT/NYCT Identified Corridors Underserved Area Service Need Phase I BRT Route B44 SBS 1/2
+[p019_c0004] _14_
+
+## Page 20
+
+### [p020_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p020_c0002] CHAPTER 2 | WORKSHOP FINDINGS
+### [p020_c0003] Manhattan
+### [p020_c0004] OVERALL TRENDS
+- [p020_c0005] • Manhattan participants voiced overwhelming support for better east-west crosstown service, especially across Central Park. All 10 tables identified existing crosstown bus routes as possibilities for BRT, particularly 125th Street, 86th Street, 59th Street and 23rd Street.
+### [p020_c0006] PRIORITY CORRIDORS
+### [p020_c0007] • Upper West Side/Upper East Side Crosstown Corridor
+- [p020_c0008] - Participants ranked this corridor as the highest priority. - 86th Street received the greatest attention; participants stated that the M86 is very slow and over-crowded. - 96th Street, 72nd Street, and 66th Street were also mentioned.
+### [p020_c0009] • Midtown Crosstown Corridor
+- [p020_c0010] - Participants ranked this corridor as a high priority. - Participants also expressed a need for L-shaped routes that would connect the Upper West Side to the east side of Midtown and the Upper East Side to the west side of Midtown.
+### [p020_c0011] • 125th Street Crosstown Corridor
+- [p020_c0012] - Participants ranked this corridor as a high priority.
+### [p020_c0013] • West Side Corridor
+- [p020_c0014] - Participants identified the far west side as a high growth area that lacks easy access to the subway system. - Some participants suggested extending service north to Washington Heights with a potential connection to the existing Bx12 SBS.
+[p020_c0015] _15_
+
+## Page 21
+
+### [p021_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p021_c0002] Manhattan Service Needs
+> [p021_c0003] 1. 125th Street Corridor 2. Upper West Side-Upper East Side Corridor 3. 14th Street Corridor 4. West Side Corridor 5. 57th Street Corridor 6. 23rd Street Corridor Participant Identified Corridors ➔ Service Need ➔ "L" Shaped Routes DOT/NYCT Identified Corridors ➔ Service Need ● Phase I BRT Route Bx12 SBS M15 SBS M34 SBS
+[p021_c0004] _16_
+
+## Page 22
+
+### [p022_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p022_c0002] CHAPTER 2 | WORKSHOP FINDINGS
+### [p022_c0003] Queens
+### [p022_c0004] OVERALL FEEDBACK
+- [p022_c0005] • Participants at both Queens workshops identified a need for east-west service across northern Queens; some identified corridors extending all the way from Manhattan to the Nassau County border. • Queens participants also expressed a desire for better connections to the airports, particularly LaGuardia. The LaGuardia Airport/East Elmhurst Corridor was frequently extended both east-west and north-south. • A number of Queens participants expressed a need for better connections to Downtown Brooklyn via a number of routes. • A number of Queens participants noted that congestion in Downtown Jamaica and Downtown Flushing slows down bus service.
+### [p022_c0006] PRIORITY CORRIDORS
+### [p022_c0007] • Northern Queens-LIC-Manhattan Corridor:
+- [p022_c0008] - This report has combined the DOT/NYCT Queens-Manhattan corridor with the participant-identified northern Queens east-west corridor. - Almost all tables at the Jackson Heights workshop suggested extending the Queens-Manhattan corridor east via Northern Boulevard to connect with Downtown Flushing. - Some participants suggested further extensions, including east to Nassau County and south to Jamaica along the proposed Jamaica to Flushing Corridor. - Participants saw this corridor as filling a need for improved intra-Queens transit and as relieving congestion on the 7 train and the Long Island Expressway.
+### [p022_c0009] • LaGuardia Airport/East Elmhurst Corridor:
+- [p022_c0010] - This corridor was a high priority at almost all tables at the Jackson Heights workshop and was frequently discussed at the Jamaica workshop. - Participants stated that the corridor would provide improved airport access for Queens residents. - Some participants suggested extending the corridor north-south along Woodhaven Boulevard to Jamaica, while others suggested extending the corridor east-west to Long Island City and the Bronx.
+### [p022_c0011] • Jamaica Avenue/Hillside Avenue Corridor:
+- [p022_c0012] - This Corridor received the highest ranking at the Jamaica workshop, and also ranked high at the Jackson Heights workshop. - Jamaica was seen by participants as a key transfer point, which provided access to other parts of Queens, as well as Brooklyn and Manhattan. - Some participants believed that this corridor already had adequate service and that adding more buses would create additional congestion in Downtown Jamaica.
+[p022_c0013] _17_
+
+## Page 23
+
+### [p023_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p023_c0002] Queens Service Needs
+> [p023_c0003] 1. LaGuardia/East Elmhurst Corridor 2. Middle Village Corridor 3. Utopia/Fresh Meadows Corridor 4. Hillside Avenue/Jamaica Avenue Corridor 5. Southeast Queens Corridor 6. Flushing to Jamaica Corridor 7. Queens-Manhattan Connections 8. Long Island Expressway – express bus corridor 9. Long Island City East River Waterfront Corridor 10. Northern Boulevard Extensions 11. Woodhaven Boulevard Extension Participant Identified Corridors - Extension (Blue dashed line) DOT/NYCT Identified Corridors - Underserved Area (Red double-headed arrow) - Service Need (Red double-headed arrow) - Study Area (Green shaded area)
+[p023_c0004] _18_
+
+## Page 24
+
+### [p024_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p024_c0002] CHAPTER 2 | WORKSHOP FINDINGS
+### [p024_c0003] Staten Island
+### [p024_c0004] OVERALL TRENDS
+- [p024_c0005] • Many participants stated that Staten Islanders rely on their cars for local travel; some questioned the utility of BRT on Staten Island and suggested other traffic improvements, such as the turning lane/traffic signal changes on Hylan Boulevard, would have greater benefits for residents. • Rather than focus on local trips, participants emphasized the need for better inter-borough transit connections. Many participants saw BRT as having greater potential for commuters, rather than an option for local errands and intra-island travel. • Suggestions were made at three tables for a transit hub at Grasmere with connections to the North Shore corridor and the Staten Island Railroad.
+### [p024_c0006] PRIORITY CORRIDORS
+- [p024_c0007] • Hylan Boulevard - This corridor received attention at all tables, but some participants felt that a BRT route was unnecessary because of recent improvements to traffic signal timing. - Participants suggested extensions to Bayonne and to Richmond Avenue.
+### [p024_c0008] • North Shore Corridor
+- [p024_c0009] - A number of participants were interested in stimulating economic development in this area with a BRT route. Participants identified Richmond Terrace and Snug Harbor as growth areas for development and tourism. - Participants suggested extensions south to the Teleport or Fresh Kills, as well as connections to NJ Transit's Hudson Bergen Light Rail (HBLR) in Bayonne.
+### [p024_c0010] • Bayonne Connection
+- [p024_c0011] - Participants suggested better connections to Bayonne and to HBLR at all five tables.
+[p024_c0012] _19_
+
+## Page 25
+
+### [p025_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p025_c0002] Staten Island Service Needs
+> [p025_c0003] 1. North Shore Corridor 2. West Shore Corridor 3. Staten Island Expressway – express bus corridor 4. Bayonne Extensions Participant Identified Corridors - Extension (dashed blue line with arrow) DOT/NYCT Identified Corridors - Underserved Area (pink shaded area) - Service Need (red line with arrow) - Phase I BRT Route (green line with dots) S79 SBS
+[p025_c0004] _20_
+
+## Page 26
+
+### [p026_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p026_c0002] CHAPTER 2 | WORKSHOP FINDINGS
+### [p026_c0003] Participant Feedback on BRT Features
+[p026_c0004] The BRT features game board exercise, described in section I, was designed to educate participants about the features that make up BRT and to solicit participant feedback on those features. Participant feedback was captured in three ways: questionnaire responses, sticker votes on the game boards, and comments recorded by the note-takers.
+### [p026_c0005] SPEED AND RELIABILITY FEATURES
+[p026_c0006] All speed and reliability features—frequent service, subway-style station spacing, transit signal priority, off-board fare payment, and bus lanes and busways—received mostly positive feedback. The most common positive comments raised across all the workshops included:
+- [p026_c0007] • Frequent Service: participants consistently identified this as their most popular feature. Participants expressed a desire for buses that arrived every 5 to 10 minutes. • Off-Board Fare Payment: participants stated that all-door boarding would speed up the boarding
+[p026_c0008] process and reduce lines. Also, bus drivers would not have to collect fares, which would increase their safety. The most common concerns raised across all the workshops included: concerns about the potential for fare evasion and about potential problems caused by broken machines and confused customers.
+- [p026_c0009] • Bus Lanes and Busways: participants fell into two general groups: (1) those who were primarily concerned that the bus lane options would not be effective due to enforcement problems, and (2) those who were primarily concerned over the traffic, parking, and safety impacts of all three treatments.
+[p026_c0010]
+
+```text
+Feature Feedback Comments Frequent service Overwhelmingly supported Participants expressed a desire for bus service that operated on a 5-10 minute frequency. Subway-style station spacing Generally supported Many participants felt this feature would speed up service, but support hinged on preservation of local service, particularly for elderly and disabled riders. Transit Signal Priority Generally supported Some participants expressed concerns over pedestrian and driver safety. Others stated that this feature would reduce bus delays. Off-board fare payment Generally supported Many participants felt this feature would speed up the boarding process. Some participants expressed concerns over fare evasion, safety, and machine reliability. Bus lanes and busways Generally supported Some participants stated that this feature would speed buses through traffic. Other participants expressed concerns over traffic, parking, safety, and effectiveness.
+```
+[p026_c0011] _21_
+
+## Page 27
+
+### [p027_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p027_c0002] COMFORT AND CONVENIENCE FEATURES
+[p027_c0003] The BRT features game board exercise, described in section I, was designed to educate participants about the features that make up BRT and to solicit participant feedback on those features. Participant feedback was captured in three ways: questionnaire responses, sticker votes on the game boards, and comments recorded by the note-takers.
+- [p027_c0004] • Real-time bus arrival information was by far the most popular feature among all workshop participants. Participants felt this feature would help bus riders to better plan their trip. It would also give riders the flexibility to choose a different mode, such as the subway or walking, if the next bus was several minutes away. • BRT vehicles were also popular, and a number of participants stated that low-floor buses and near-level boarding would both speed buses and aid the elderly and disabled riders. • Enhanced stations were a distant third; many participants felt that funds available for improving bus service would be better spent on other features or more service.
+[p027_c0005]
+
+```text
+Feature Feedback Comments Real time bus arrival information Most popular This was overwhelmingly the most popular feature among participants. BRT vehicles Second most popular Participants expressed support for low-floor vehicles and near-level boarding. Enhanced stations Generally not important Most participants indicated this was less important and that funds should be targeted elsewhere.
+```
+### [p027_c0006] Participant Feedback on Bus Lane and Busway Designs
+[p027_c0007] The bus lanes and busways exercise, described in section I, was designed to educate participants about different BRT running ways design options and to solicit participant feedback on those options. Participants were presented with three options:
+[p027_c0008] (1) a sample curbside lane design; (2) a sample offset bus lane design, and (3) a sample busway. Participant feedback was captured in three ways: questionnaire responses, sticker votes on the photo-based renderings of the three bus lane and busway options, and comments recorded by the note-takers.
+[p027_c0009] _22_
+
+## Page 28
+
+### [p028_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p028_c0002] CHAPTER 2 | WORKSHOP FINDINGS
+### [p028_c0003] OVERALL COMMENTS
+- [p028_c0004] • Participants voiced support for the implementation of bus lanes and busways when broadly defined. Many participants stated that bus lanes and busways would speed up bus service by helping buses to avoid traffic. When it came to specific treatments, however, a number of participants raised concerns. • No treatment was the clear favorite among participants, although curbside lanes were most often the least popular treatment. Participants at the Manhattan workshop were more likely than participants at the other workshops to support busways. • Participants raised a number of concerns regarding all three configurations, including impacts on traffic and parking availability, effectiveness of bus lanes without consistent enforcement, and pedestrian and driver safety. • Given the complexity of the designs and the short time period available for this exercise, some participants had difficulty grasping how each of the treatments would work. Some of the designs were seen as unfamiliar and potentially confusing in the New York environment.
+[p028_c0005]
+
+```text
+ROW Approach Feedback Comments Curbside Lane Roughly equal number of positive and negative responses • Familiar to most people • Concerns over impacts on trucks and deliveries • Concerns over loss of parking spaces and impacts on retailers • Concerns that vehicles would block the lane and that the design is difficult to enforce • Right turn conflicts Off-Set Lane Positive on balance, but with a significant number of negative responses • Retains parking spaces and delivery access for trucks • Reduces road capacity • Difficult to enforce • Parallel parking conflicts • Pedestrian safety concerns • Right turn conflicts Busway Positive on balance, but with a significant number of negative responses; Manhattan participants were more likely to favor • Easier to enforce • Will move buses the fastest • Parking and delivery impacts • Pedestrian safety • Unsafe/confusing • Dislike of one-way conversion option
+```
+[p028_c0006] _23_
+
+## Page 29
+
+### [p029_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p029_c0002] Overall Reaction to BRT and the Workshops
+### [p029_c0003] SUPPORT FOR BRT
+[p029_c0004] At the end of the workshop, participants were asked in the questionnaire whether or not they would support additional BRT routes across New York City. Participants expressed overwhelming support for expanding BRT.
+[p029_c0005] and the opportunity to have their voices heard. A few participants expressed concern that there was insufficient time allotted to cover a complex subject and that some participants tended to monopolize the discussion.
+### [p029_c0006] FEEDBACK ON THE WORKSHOPS
+[p029_c0007] Response to the workshop from participants was very positive, with many indicating “nothing” under the “what did you not like?” question. Participants liked the visual materials, the interactive nature of the workshops,
+[p029_c0008]
+
+```text
+Answer Responses Percentage Support BRT expansion 185 74% Do not support BRT expansion 5 2% Support BRT expansion with Concerns 59 24%
+```
+[p029_c0009] _24_
+
+## Page 30
+
+### [p030_c0001] BUS RAPID TRANSIT PHASE II: PUBLIC INPUT
+### [p030_c0002] CHAPTER 2 | WORKSHOP FINDINGS
+[p030_c0003] _25_
+
+## Page 31
+
+### [p031_c0001] INTRODUCTION TO BUS RAPID TRANSIT PHASE II
+### [p031_c0002] CHAPTER 3 | ONLINE BRT SURVEY FINDINGS
+### [p031_c0003] III. RESULT OF THE ONLINE BRT SURVEY
+### [p031_c0004] Background
+[p031_c0005] From June to July 2009, the New York City Department of Transportation (DOT) and MTA New York City Transit (NYCT) conducted an online survey for the BRT Phase II project. The survey, implemented using SurveyMonkey, a commercial provider, was a self-selected sample and similar in structure and content to the city-wide BRT Phase II workshops (conducted in May and June of 2009). A link to the survey was provided on NYCDOT's website. As of July 15, 2009, 652 users had completed the survey. The survey began with questions on borough of residence, most frequently used mode of transportation, and weekly number of bus rides. BRT specific questions were asked about comfort, speed, and reliability features, preferred bus lane
+[p031_c0006] configurations, and the rankings of potential BRT corridors in each borough. Opportunity for open-ended comments was provided periodically throughout the survey.
+### [p031_c0007] RESPONDENT CHARACTERISTICS
+[p031_c0008] While the questions about borough and neighborhood were optional, about 95% of respondents named one of the five boroughs as their place of residence. In addition, 89% of respondents voluntarily provided their zip code, allowing response rates to be partially tracked by geographic area. (see map at left)
+[p031_c0009] The survey asked respondents which mode they used most frequently for travel within their borough of residence. In contrast to the workshops, the most common response was the subway. Among survey respondents, Bronx residents were most likely to get around by local bus, Brooklyn residents by bicycle, Manhattan residents by subway, and Queens and Staten Island residents by car. Given the available data on mode share in New York City, it is likely that bus riders and cyclists were over-represented in the BRT Survey, while drivers were under-represented.
+> [p031_c0010] The figure is a choropleth map of New York City's zip codes. A legend in the top-left corner titled "Respondents per zip code" shows five color categories: light yellow for 1-3, yellow for 4-6, orange for 7-10, red-orange for 11-13, and red for 14-24. The map shows that the highest density of respondents (red) is concentrated in the central and southern parts of the city, particularly in Manhattan and the Bronx. Lower densities (light yellow) are found in the outer boroughs like Staten Island and parts of Queens and Brooklyn.
+[p031_c0011] _Survey Respondents by zip code._
+[p031_c0012] _26_
+
+## Page 32
+
+### [p032_c0001] INTRODUCTION TO BUS RAPID TRANSIT PHASE II | CHAPTER 3 | ONLINE BRT SURVEY FINDINGS
+### [p032_c0002] Survey Response Rates by Borough
+[p032_c0003]
+
+```text
+Boroughs % of Survey Respondants Bronx 5% Brooklyn 32% Manhattan 40% Queens 16% Staten Is. 2% Total 95%
+```
+### [p032_c0004] Primary Mode for Intra-Boro Trips
+[p032_c0005]
+
+```text
+Intra-boro transportation Bicycle Car Express Bus Local Bus Subway Walking Other Bronx 7% 13% 13% 32% 23% 13% 0% Brooklyn 29% 7% 2% 15% 27% 20% 0% Manhattan 13% 0% 1% 18% 55% 13% 1% Queens 10% 24% 5% 23% 22% 16% 0% Staten Island 0% 56% 6% 31% 0% 6% 0% Overall 17% 9% 3% 18% 37% 16% 1%
+```
+[p032_c0006] _27_
+
+## Page 33
+
+### [p033_c0001] INTRODUCTION TO BUS RAPID TRANSIT PHASE II
+### [p033_c0002] BUS USAGE
+[p033_c0003] Respondents were then asked how frequently they ride the bus. Overall bus ridership trends by borough tended to reflect the modal splits in the prior question. Bronx and Staten Island respondents rode the bus the most frequently, with over half of respondents from these boroughs riding four to seven days per week. All other boroughs were weighted towards the low end of the range, with 57% of Brooklyn respondents riding the bus less than once per week.
+[p033_c0004]
+
+```text
+Bus Usage Trips by Borough Borough <1 day per week 1-3 days per week 4-7 days per week Bronx 32% 16% 52% Brooklyn 57% 29% 15% Manhattan 38% 35% 27% Queens 44% 21% 35% Staten Is. 25% 19% 56% Total 44% 30% 26%
+```
+[p033_c0005] _28_
+
+## Page 34
+
+### [p034_c0001] INTRODUCTION TO BUS RAPID TRANSIT PHASE II CHAPTER 3 | ONLINE BRT SURVEY FINDINGS
+### [p034_c0002] BRT Features
+[p034_c0003] The BRT features section asked respondents questions about three categories of BRT features: speed and reliability, comfort and convenience, and bus lane configuration. Methodologies varied slightly for each section, with respondents asked to choose “like,” “dislike,” or “not important” for the speed and reliability features, to choose their “most important” comfort and convenience feature, and to respond with either “like” or “dislike” and open ended comments to each of three possible bus lane configurations.
+[p034_c0004]
+
+```text
+BRT Features Borough Speed & reliability feature: Most Popular Convenience feature: Preferred Option Bus lane configuration: Most Popular Bronx TSP Real time bus arrival information Off-set bus lane Brooklyn Frequent service Real time bus arrival information Busway Manhattan Frequent service Real time bus arrival information Off-set bus lane Queens Frequent service/busways Real time bus arrival information Off-set bus lane Staten Island Frequent service Real time bus arrival information Off-set bus lane/ Busway (Tie) Overall Frequent service Real time bus arrival information Off-set bus lane
+```
+[p034_c0005] _29_
+
+## Page 35
+
+### [p035_c0001] INTRODUCTION TO BUS RAPID TRANSIT PHASE II
+### [p035_c0002] SPEED AND RELIABILITY
+[p035_c0003] In the “Speed and Reliability” section, “frequent service” had the most positive responses (95% approval), while “subway-like spacing” had the most negative response (14% of respondents disapproved).
+### [p035_c0004] COMFORT AND CONVENIENCE
+[p035_c0005] In the “Comfort and Convenience” section, respondents overwhelmingly preferred real-time bus information (59%), to BRT vehicles (27%) and enhanced stations (14%). This order of preference was maintained throughout all boroughs.
+### [p035_c0006] BUS LANES AND BUSWAY
+[p035_c0007] Curbside bus lanes received positive marks for their apparent ease of implementation and pedestrian safety (in that passengers don’t have to cross the street to board the bus). The overwhelming majority of comments, however, expressed concerns that a lack of proper enforcement or physical separation of the lanes would lead to frequent violations by moving and idling vehicles. As a result, many respondents were skeptical that the lanes would demonstrate significant gains in speed or service. Many comments also demonstrated concern over the competition between cyclists and buses for space under this configuration. Others expressed concerns over the lack of adequate space for parking or deliveries, or cited safety concerns over moving vehicles adjacent to crowded pedestrian areas. The curbside configuration received the most strongly negative response, with 40% of respondents responding against it. Among pedestrians and cyclists, the number of negative responses rose to above 50%.
+[p035_c0008] The offset bus lane fared better than the curbside arrangement, with many positive comments praising the maintenance of curbside parking/delivery area. Many also felt that this arrangement would be safer for pedestrians than curbside lanes. Respondents were again skeptical that the lane would remain clear of double parked cars and delivery vehicles without adequate enforcement, and that cars getting into and out of the adjacent spaces would block the lane or risk being “clipped” by an oncoming bus. Again, due to the high proportion of cyclists taking the survey, concerns for encroachment on bike lanes and general cycling safety were voiced.
+[p035_c0009] The busway option received the most strongly positive comments. Many comments referred to this as “the best option,” evoking comparisons to systems in Curitiba, Melbourne, Boston, and Berlin. Cycling safety complaints dropped off, although there were several complaints about the absence of a bike lane in the photo simulation. Comments about parking or delivery enforcement also dropped dramatically. The negative comments were dominated by dislike for having to cross the street to catch the bus, and the safety concerns when jaywalking or running to catch the bus. Some respondents also expressed skepticism at the ability for this configuration to be widely implemented in New York, especially in Manhattan and Staten Island.
+[p035_c0010] _30_
+
+## Page 36
+
+### [p036_c0001] INTRODUCTION TO BUS RAPID TRANSIT PHASE II CHAPTER 3 | ONLINE BRT SURVEY FINDINGS
+### [p036_c0002] Service Needs
+[p036_c0003] In evaluating the service needs corridor section, choices ranked first by respondents were given three points, choices ranked second were awarded two points, and choices ranked third were awarded one point. Results by borough are presented in the following pages. In some
+[p036_c0004] cases, relative rankings of corridors changed among those respondents residing in a given borough versus citywide response rates. In these cases, deviations are noted. Respondents were also given space to provide comments or propose additional corridors not considered in the survey.
+### [p036_c0005] The Bronx
+[p036_c0006] In the Bronx, the Webster Avenue/Third Avenue Corridor received the highest score, followed by the Soundview Corridor. The Grand Concourse came up frequently as an alternative corridor in the comments. Several respondents also underscored the need for greater inter-borough connectivity.
+[p036_c0007]
+
+```text
+The Bronx Transit Service Needs Bronx Ranking by all Respondents Ranking by Borough Residents A. Webster Ave. /Third Ave. Corridor: underserved area 1 1 B. Soundview Corridor: underserved area 2 2 C. Bruckner Expressway Corridor: high volume express bus corridor 4 4 D. Major Deegan Expressway Corridor: high volume express bus corridor 3 3
+```
+[p036_c0008] _31_
+
+## Page 37
+
+### [p037_c0001] INTRODUCTION TO BUS RAPID TRANSIT PHASE II
+### [p037_c0002] Bronx Service Needs
+> [p037_c0003] This map illustrates the Bronx's service needs and Phase I Bus Rapid Transit (BRT) routes. The map features a grid of streets and several shaded regions. A legend in the bottom right corner defines the symbols: a pink shaded area for 'Underserved Area', a red double-headed arrow for 'Service Need', and a green line with a dot for 'Phase I BRT Route'. The map shows two main underserved areas, labeled 'A' and 'B', which are highlighted in pink. Red double-headed arrows indicate service needs, with one set of arrows pointing from area 'A' towards the northwest and another set pointing from area 'B' towards the east. A green line with a dot, representing the Phase I BRT Route, is shown as a winding path that passes through the center of the map, near a label 'Bx12 SBS'. Four points are marked with letters: 'A' is in the central underserved area, 'B' is in the eastern underserved area, 'C' is in the southern part of the map, and 'D' is in the western part of the map. A north arrow is located in the bottom left corner.
+[p037_c0004] _32_
+
+## Page 38
+
+### [p038_c0001] INTRODUCTION TO BUS RAPID TRANSIT PHASE II CHAPTER 3 | ONLINE BRT SURVEY FINDINGS
+### [p038_c0002] Brooklyn
+[p038_c0003] In Brooklyn, the Utica Avenue Corridor/Eastern Brooklyn North-South Corridor ranked the highest, with the Central Brooklyn East-West Corridor and the Gowanus Expressway Corridor tied for second. Among Brooklyn residents, the Central Brooklyn East-West Corridor was preferred to the Gowanus Expressway Corridor. Comments emphasized the need for inter-borough connections. Alternative routes and neighborhoods that frequently appeared included: Flatbush Avenue, service to Red Hook, and connecting Williamsburg to other Brooklyn neighborhoods. Specifically, there were a number of comments that focused either on connecting Williamsburg to Park Slope, or stated that the waterfront corridor would be more useful if it connected to either Long Island City or other parts of Brooklyn.
+[p038_c0004]
+
+```text
+Brooklyn Transit Service Needs Brooklyn Ranking by all Respondents Ranking by Borough Residents A. Utica Avenue Corridor/Eastern Brooklyn North-South Corridor: underserved area 1 1 B. Southern Brooklyn East-West Corridor: difficult trip 5 5 C. Central Brooklyn East-West Corridor: difficult trip 2 2 D. Bushwick to Downtown Brooklyn Corridor: difficult trip 4 4 E. Williamsburg East River Waterfront Corridor: growth area 6 6 F. Gowanus Expressway Corridor: high volume express bus corridor 2 3
+```
+[p038_c0005] _33_
+
+## Page 39
+
+### [p039_c0001] INTRODUCTION TO BUS RAPID TRANSIT PHASE II
+### [p039_c0002] Brooklyn Service Needs
+> [p039_c0003] This map illustrates the proposed bus rapid transit (BRT) routes in Brooklyn, highlighting service needs and underserved areas. The map features a grid of streets and water bodies. A green line represents the Phase I BRT route, which runs vertically through the center of the map. Red arrows indicate service needs, pointing towards various areas. A red shaded area is labeled 'Underserved Area'. The map includes a legend in the bottom right corner, a north arrow in the bottom left, and labels for specific locations: A, B, C, D, E, F, and B44 SBS. Legend: Underserved Area (Red shaded area) Service Need (Red arrow) Phase I BRT Route (Green line) Map Labels: A: Located in the central-eastern part of the map, with a red arrow pointing south. B: Located in the southern part of the map, with a red arrow pointing west. C: Located in the central part of the map, with a red arrow pointing east. D: Located in the northern part of the map, with a red arrow pointing west. E: Located in the northernmost part of the map, with a red arrow pointing north. F: Located in the western part of the map, with a red arrow pointing west. B44 SBS: Located in the central part of the map, near the Phase I BRT route.
+[p039_c0004] _34_
+
+## Page 40
+
+### [p040_c0001] INTRODUCTION TO BUS RAPID TRANSIT PHASE II CHAPTER 3 | ONLINE BRT SURVEY FINDINGS
+### [p040_c0002] Manhattan
+[p040_c0003] In Manhattan, the 14th Street Crosstown Corridor was ranked the highest among all respondents, followed by the Upper West Side/Upper East Side Crosstown corridor. Manhattan residents, however, preferred the Upper West Side/Upper East Side route to the 14th Street route. Many comments focused on developing a Midtown cross-town route, such as 57th, 42nd, or 34th Street. An additional group focused on other crosstown corridors—frequently 23rd Street or Houston Street. A large portion of the comments suggested corridors already under consideration or development for BRT Phase I, such as the First Avenue/Second Avenue corridor, the Fifth/Madison Corridor, and the 34th Street Transitway. There was an additional trend towards requesting various “diagonal” routes throughout Manhattan as well, such as Lower East Side to the West Village, the Upper East Side to the West Village, and Washington Heights or Inwood to the Upper East Side. A large number of respondents again stated a desire to see more inter-borough BRT routes.
+[p040_c0004]
+
+```text
+Manhattan Transit Service Needs Manhattan Ranking by all Respondents Ranking by Borough Residents A. 125th Street Crosstown Corridor: difficult trip 3 3 B. Upper West Side/Upper East Side Crosstown Corridor: difficult trip 2 1 C. 14th Street Crosstown Corridor: difficult trip 1 2 D. West Side Corridor: subway crowding 4 4
+```
+[p040_c0005] _35_
+
+## Page 41
+
+### [p041_c0001] INTRODUCTION TO BUS RAPID TRANSIT PHASE II
+### [p041_c0002] Manhattan Service Needs
+> [p041_c0003] A map of Manhattan, New York, illustrating service needs and Phase I Bus Rapid Transit (BRT) routes. The map features a grid of streets and water bodies. A legend in the bottom right corner defines the symbols: a red double-headed arrow for 'Service Need' and a green line with circular markers for 'Phase I BRT Route'. Four red double-headed arrows, labeled A, B, C, and D, indicate service needs along the East River corridor. A green line with circular markers, representing the Phase I BRT route, follows the East River and connects to the Bx12 SBS at the northern end. The Bx12 SBS is labeled in a white box. The M15 SBS and M34 SBS are also labeled in white boxes, indicating existing service areas. A north arrow is located in the bottom left corner.
+[p041_c0004] _36_
+
+## Page 42
+
+### [p042_c0001] INTRODUCTION TO BUS RAPID TRANSIT PHASE II | CHAPTER 3 | ONLINE BRT SURVEY FINDINGS
+### [p042_c0002] Queens
+[p042_c0003] Overall responses for the Queens corridors ranked the LaGuardia Airport/East Elmhurst Corridor first, followed by the Long Island Expressway corridor. Among residents, however, the Queens-Manhattan Connections Corridor was tied for first with the Long Island Expressway Corridor, followed by the LaGuardia corridor. Comments largely focused on connections to LaGuardia and JFK airports, connections to Manhattan and other boroughs, and BRT on Queens Boulevard and Northern Boulevard.
+[p042_c0004]
+
+```text
+Queens Transit Service Needs Queens Ranking by all Respondents Ranking by Borough Residents A. LaGuardia Airport/East Elmhurst Corridor: underserved area 1 3 B. Middle Village Corridor: underserved area 8 5 C. Utopia Parkway/Fresh Meadows Corridor: underserved area 6 7 D. Jamaica Avenues/Hillside Avenue Corridor: underserved area 5 8 E. Southeast Queens Corridor: underserved area 6 6 F. Jamaica to Flushing Corridor: difficult trip 3 4 G. Queens-Manhattan Connections Corridor: subway crowding 4 1 H. Long Island Expressway Corridor: high volume express bus corridor 2 1 I. Long Island City East River Waterfront Corridor: growth area 9 9
+```
+[p042_c0005] _37_
+
+## Page 43
+
+### [p043_c0001] INTRODUCTION TO BUS RAPID TRANSIT PHASE II
+### [p043_c0002] Queens Service Needs
+> [p043_c0003] This map illustrates the service needs and underserved areas in Queens for Phase II of the Bus Rapid Transit project. The map features a grid of streets and water bodies. A green-shaded area in the southeast is labeled 'Jamaica Study'. Red double-headed arrows indicate 'Service Need' and are labeled with letters A through I. These arrows connect various points across the map, often passing through or near areas shaded in light red, which represent 'Underserved Area'. A legend in the bottom right corner defines these symbols: a light red rectangle for 'Underserved Area', a red double-headed arrow for 'Service Need', and a green rectangle for 'Study Area'.
+[p043_c0004] _38_
+
+## Page 44
+
+### [p044_c0001] INTRODUCTION TO BUS RAPID TRANSIT PHASE II CHAPTER 3 | ONLINE BRT SURVEY FINDINGS
+### [p044_c0002] Staten Island
+[p044_c0003] In Staten Island, the Staten Island Expressway Corridor ranked first, followed by the North Shore Corridor. Comments for Staten Island were limited to a few areas: connections to New Jersey and Brooklyn, and the use of Victory Boulevard as a potential BRT corridor.
+[p044_c0004]
+
+```text
+Staten Island Transit Service Needs Staten Island Ranking by all Respondents Ranking by Borough Residents A. North Shore Corridor: growth area 2 2 B. West Shore Corridor: growth area 3 3 C. The Staten Island Expressway Corridor: high volume express bus corridor 1 1
+```
+[p044_c0005] _39_
+
+## Page 45
+
+### [p045_c0001] INTRODUCTION TO BUS RAPID TRANSIT PHASE II
+### [p045_c0002] Staten Island Service Needs
+> [p045_c0003] A map of Staten Island, New York, illustrating service needs and Phase I Bus Rapid Transit (BRT) routes. The map features a yellow background with a grid of streets and green areas representing parks. Two orange-shaded regions, labeled 'A' and 'B', indicate underserved areas. A red line with arrows, labeled 'C', represents a service need. A green line with dots represents the Phase I BRT route. A blue line labeled 'S79 SBS' is also shown. A legend in the bottom right corner defines the symbols: a pink double-headed arrow for 'Underserved Area', a red double-headed arrow for 'Service Need', and a green line with a dot for 'Phase I BRT Route'. A north arrow is located in the bottom left corner. Legend: Underserved Area Service Need Phase I BRT Route
+[p045_c0004] _40_
+
+## Page 46
+
+### [p046_c0001] INTRODUCTION TO BUS RAPID TRANSIT PHASE II CHAPTER 3 | ONLINE BRT SURVEY FINDINGS
+### [p046_c0002] Overall Support
+[p046_c0003] Overall, support for expanding BRT in new York City was strong: 97% of respondents expressed some level of support for additional BRT routes. 74% of respondents supported additional BRT routes without qualification, while 23% of respondents supported more BRT routes but had some concerns. Of the respondents that supported BRT with reservations, there were several patterns that emerged. The largest concern dealt with a segment of the surveyed population that strongly felt that BRT is inferior to light rail and that investment should be readjusted accordingly. Others support BRT, but only if busways or “strong BRT” is implemented rather than “BRT-lite.” Others doubted that the system would be effective without stepping up NYPD enforcement of bus lane violators. Many expressed concern for other modes, either for parking and traffic issues, or for bicycle lanes and pedestrian safety. A smaller group of respondents worried that BRT would come at the expense of local service.
+### [p046_c0004] Additional Comments
+[p046_c0005] Additional comments largely echoed the concerns voiced earlier in the survey, including a preference for light rail or subway expansion, a concern for bicycle safety and infrastructure, and a desire to see “true BRT” rather than small changes branded as BRT. The largest single group of commentators—about one third of all comments made—expressed their support for BRT expansion. A small subset of these expressed the belief that even some of the improvements in the overall BRT/SBS package would make a major difference on bus transit in New York City.
+[p046_c0006] _41_
+
+## Page 47
+
+### [p047_c0001] INTRODUCTION TO BUS RAPID TRANSIT PHASE II
+### [p047_c0002] Appendix A: List of Organizations & Elected Officials Represented at the Workshops
+### [p047_c0003] ELECTED OFFICIALS REPRESENTED
+[p047_c0004] Office of State Assemblyman Jonathan Bing Office of State Assemblyman Matthew Titone Office of State Assemblyman Micah Kellner Office of State Assemblyman Michael Benedetto Office of State Assemblyman Sheldon Silver Office of State Assemblywoman Helen Weinstein Office of State Assemblywoman Janele Hyer-Spencer Office of Congressman Michael McMahon Office of City Councilmember Daniel Garodnick Office of City Councilman James Oddo Office of City Councilman Kenneth Mitchell Office of City Councilmember Elizabeth Crowley Office of City Councilmember James Vacca Office of Manhattan Borough President Scott Stringer Office of State Senator Diane Savino Office of State Senator Hiram Monserrate Office of State Senator Jeff Klein Office of State Senator José Serrano Office of State Senator Shirley Huntley Office of State Senator John Sampson Office of State Senator Liz Krueger Office of the Bronx Borough President Ruben Diaz Jr. Office of the Queens Borough President Helen C. Marshall Office of the Staten Island Borough President James P. Molinaro
+### [p047_c0005] COMMUNITY BOARDS REPRESENTED
+[p047_c0006] Bronx Community Board 1 Bronx Community Board 7 Brooklyn Community Board 17 Manhattan Community Board 4 Manhattan Community Board 6 Manhattan Community Board 8 Queens Community Board 3 Queens Community Board 5 Queens Community Board 8 Queens Community Board 12 Queens Community Board 13 Staten Island Community Board 3 Transportation Committee
+### [p047_c0007] COMMUNITY, ADVOCACY, AND LABOR ORGANIZATIONS REPRESENTED
+[p047_c0008] Bail Out the People Movement Catholic Charities Centro Hispano Cuzcaltán COMMUTE Coalition DC37/Local 1359 Disabled Riders Coalition East 79th Street Neighborhood Association Fund for Public Health Hudson Guild Jackson Heights Beautification Group Kew Gardens Hills Civic Association
+[p047_c0009] _42_
+
+## Page 48
+
+### [p048_c0001] INTRODUCTION TO BUS RAPID TRANSIT PHASE II APPENDIX A: LIST OF ORGANIZATIONS & ELECTED OFFICIALS REPRESENTED AT THE WORKSHOPS
+[p048_c0002] Metropolitan Council of Low Vision Individuals New York City Transit Riders Council New York Public Interest Research Group Nos Quedamos Park Slope Civic Council Permanent Citizens Advisory Committee to the MTA Pratt Center for Community Development Queens Community House Queens Village Republican Club Straphangers Campaign Sustainable South Bronx The Institute for Transportation and Development Policy The Point CDC Transit Workers Union Transportation Alternatives Tri-State Transportation Campaign West Harlem Morningside Heights Sanitation Coalition Youth Ministries for Peace & Justice
+### [p048_c0003] BUSINESS GROUPS REPRESENTED
+[p048_c0004] 34th Street Partnership Downtown Alliance Downtown Brooklyn Partnership Nostrand Avenue Merchants Association Sunnyside Chamber of Commerce
+### [p048_c0005] GOVERNMENT AGENCIES REPRESENTED
+[p048_c0006] NYC Department of City Planning Transportation Division NYC Department of Education New York State Department of Transportation Port Authority of New York and New Jersey Staten Island Economic Development Corporation
+### [p048_c0007] NEWS ORGANIZATIONS IN ATTENDANCE
+[p048_c0008] Brooklyn Paper Manhattan Media Queens Chronicle The Independent
+### [p048_c0009] OTHER
+[p048_c0010] Green Map System HRA IS 364 LaGuardia Community College
+[p048_c0011] _43_
+
+## Page 49
+
+> [p049_c0001] A completely blank white image with no visible content.
+
+## Page 50
+
+> [p050_c0001] The logo for the Metropolitan Transportation Authority (MTA) New York City Transit. It features a blue circle on the left containing the white letters "MTA". To the right of the circle, the words "New York City Transit" are written in a bold, blue, sans-serif font.
+> [p050_c0002] The logo for the New York City Department of Transportation (NYC DOT). It consists of a white rectangular box with a black border. Inside the box, the words "NEW YORK CITY" are written in a black, sans-serif font at the top. Below the text is a stylized green graphic that resembles a simplified representation of a train or a stylized "D" and "T".
+[p050_c0003] _Printed on paper containing 30% post-consumer material._

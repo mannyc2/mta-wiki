@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "corridor_cluster_fb44e6b89a",
+  "kind": "corridor",
+  "packet_path": "data/identity-review/packets/corridor_cluster_fb44e6b89a.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_fb44e6b89a.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "corridor_buslane-brochure-161st-street",
+        "corridor_bx6-south-bronx"
+      ],
+      "reason": "Contradiction test: strong identity fields differ. corridor_buslane-brochure-161st-street has corridor_name '161st Street' with no limits, just a single street example, while corridor_bx6-south-bronx has corridor_name 'South Bronx Crosstown', a defined limits (Riverside Drive West to Hunts Point), and a street list including several streets (161st Street as one component). A specific street segment example is distinct from a multi-street corridor; per corridor identity rule, scope and limits differ, so they are not the same canonical identity."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [
+    "When one record describes a single street as an example (no defined limits, no route context) and another describes a multi-street corridor with explicit limits and route references, they are distinct identities even if they share a street name in the same borough. The example street is at most a subsegment of the corridor and should be related via subsegment_of, not merged."
+  ],
+  "rationale": "The two records share a street name (161st Street) and borough (Bronx) but differ in all other strong identity fields: corridor_name, street list, and limits. The first is a bare street example from a bus lane brochure; the second is a fully-scoped crosstown corridor serving the Bx6 route. Per the identity merge canon, contradictory strong identity fields force do_not_merge; sharing one street name alone is insufficient for merge. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

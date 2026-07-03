@@ -1,0 +1,61 @@
+{
+  "run_id": "2026-06-10T22-56-13-371Z_1976810-f11382ba_ingest_201109-nostrand-cb9-slides",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T01:46:48.087Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision": "new",
+        "decision_id": "b44-sbs-20110927-presentation-new",
+        "evidence_refs": [
+          {
+            "block_id": "p001_c0004",
+            "source_id": "201109_nostrand_cb9_slides",
+            "source_quote": "Nostrand Avenue / Rogers Avenue Select Bus Service"
+          },
+          {
+            "block_id": "p002_c0003",
+            "source_id": "201109_nostrand_cb9_slides",
+            "source_quote": "Currently served by B44 bus route"
+          }
+        ],
+        "local_observation_id": "route_b44_sbs_20110927_presentation",
+        "proposed_relations": [
+          {
+            "description": "B44 SBS and B44 Local are complementary service variants on the same Nostrand/Rogers Avenues corridor, discussed together in the same CB9 presentation",
+            "evidence_refs": [
+              {
+                "block_id": "p010_c0003",
+                "source_id": "201109_nostrand_cb9_slides",
+                "source_quote": "Northbound B44 SBS on Rogers Ave, B44 local remains on New York Ave"
+              }
+            ],
+            "object_id": "route_b44-local",
+            "relation_kind": "shared_corridor",
+            "subject_id": "route_b44-sbs"
+          }
+        ],
+        "rationale": "Observation already resolves to base_record_id route_b44-sbs; alias route_b44-sbs-20110927-presentation is listed in that registry card and source 201109_nostrand_cb9_slides appears in its source_ids. Service variant 'sbs' matches payload route_type 'select_bus_service'."
+      },
+      {
+        "decision": "new",
+        "decision_id": "b44-local-20110927-presentation-new",
+        "evidence_refs": [
+          {
+            "block_id": "p010_c0003",
+            "source_id": "201109_nostrand_cb9_slides",
+            "source_quote": "Northbound B44 SBS on Rogers Ave, B44 local remains on New York Ave"
+          }
+        ],
+        "local_observation_id": "route_b44_local_20110927_presentation",
+        "rationale": "Observation already resolves to base_record_id route_b44-local; alias route_b44-local-20110927-presentation is listed in that registry card and source 201109_nostrand_cb9_slides appears in its source_ids. Service variant 'local' matches payload route_type 'local_bus'. do_not_merge_pairs confirms route_b44-local and route_b44-sbs are distinct variants."
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-44-43-788Z_2111393-07197e84_canonicalize_2026-06-10t22-56-13-371z-1976810-f11382ba-ingest-201109-nostrand-cb9-slides-route-identity"
+}

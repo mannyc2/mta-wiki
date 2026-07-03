@@ -1,0 +1,264 @@
+{
+  "run_id": "2026-06-10T23-12-22-690Z_1976810-a6473111_ingest_2013-04-09-sbs-125th-workshop-3",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T03:44:43.947Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-offset-bus-lanes-125th",
+        "local_observation_id": "treatment_offset_bus_lanes_125th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_125th-st-sbs-2013",
+            "object_id": "treatment_offset-bus-lanes-125th-st",
+            "evidence_refs": [
+              {
+                "source_id": "2013_04_09_sbs_125th_workshop_3",
+                "block_id": "p002_c0002",
+                "source_quote": "Offset bus lanes"
+              },
+              {
+                "source_id": "2013_04_09_sbs_125th_workshop_3",
+                "block_id": "p002_c0003",
+                "source_quote": "Replace one general travel lane in each direction and maintain curb access"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source is the 3rd public workshop for 125th Street SBS; offset bus lanes presented as a core SBS feature on the corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p002_c0002",
+            "source_quote": "Offset bus lanes"
+          },
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p002_c0003",
+            "source_quote": "Replace one general travel lane in each direction and maintain curb access"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-offboard-fare-125th",
+        "local_observation_id": "treatment_off_board_fare_collection_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_125th-st-sbs-2013",
+            "object_id": "treatment_off-board-fare-collection-125th",
+            "evidence_refs": [
+              {
+                "source_id": "2013_04_09_sbs_125th_workshop_3",
+                "block_id": "p002_c0006",
+                "source_quote": "Off-board fare collection"
+              },
+              {
+                "source_id": "2013_04_09_sbs_125th_workshop_3",
+                "block_id": "p002_c0007",
+                "source_quote": "Reduces wait time at stations"
+              }
+            ]
+          }
+        ],
+        "rationale": "Off-board fare collection is listed as a Select Bus Service feature in the 125th Street SBS workshop #3 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p002_c0006",
+            "source_quote": "Off-board fare collection"
+          },
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p002_c0007",
+            "source_quote": "Reduces wait time at stations"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-lane-enforcement-125th",
+        "local_observation_id": "treatment_bus_lane_enforcement_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_125th-st-sbs-2013",
+            "object_id": "treatment_bus-lane-enforcement-125th",
+            "evidence_refs": [
+              {
+                "source_id": "2013_04_09_sbs_125th_workshop_3",
+                "block_id": "p002_c0008",
+                "source_quote": "Bus lane enforcement"
+              },
+              {
+                "source_id": "2013_04_09_sbs_125th_workshop_3",
+                "block_id": "p002_c0009",
+                "source_quote": "Reduces bus lane blockages and increases bus speeds"
+              }
+            ]
+          }
+        ],
+        "rationale": "Bus lane enforcement is listed as a SBS feature for the 125th Street corridor in workshop #3.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p002_c0008",
+            "source_quote": "Bus lane enforcement"
+          },
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p002_c0009",
+            "source_quote": "Reduces bus lane blockages and increases bus speeds"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-tsp-125th",
+        "local_observation_id": "treatment_transit_signal_priority_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_125th-st-sbs-2013",
+            "object_id": "treatment_transit-signal-priority-125th_2",
+            "evidence_refs": [
+              {
+                "source_id": "2013_04_09_sbs_125th_workshop_3",
+                "block_id": "p002_c0014",
+                "source_quote": "Transit signal priority"
+              },
+              {
+                "source_id": "2013_04_09_sbs_125th_workshop_3",
+                "block_id": "p002_c0015",
+                "source_quote": "Reduces stop time at intersections"
+              }
+            ]
+          }
+        ],
+        "rationale": "Transit signal priority is shown as a Select Bus Service feature for 125th Street in the workshop #3 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p002_c0014",
+            "source_quote": "Transit signal priority"
+          },
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p002_c0015",
+            "source_quote": "Reduces stop time at intersections"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-left-turn-bans-125th",
+        "local_observation_id": "treatment_left_turn_bans_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_125th-st-sbs-2013",
+            "object_id": "treatment_left-turn-bans-125th",
+            "evidence_refs": [
+              {
+                "source_id": "2013_04_09_sbs_125th_workshop_3",
+                "block_id": "p013_c0008",
+                "source_quote": "Banning left turns reduces turning conflicts and keeps through traffic moving more smoothly"
+              }
+            ]
+          }
+        ],
+        "rationale": "Left-turn bans are proposed as a traffic improvement on 125th Street in the SBS workshop #3 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p013_c0008",
+            "source_quote": "Banning left turns reduces turning conflicts and keeps through traffic moving more smoothly"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-right-turn-bays-125th",
+        "local_observation_id": "treatment_right_turn_bays_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_125th-st-sbs-2013",
+            "object_id": "treatment_right-turn-bays-125th_2",
+            "evidence_refs": [
+              {
+                "source_id": "2013_04_09_sbs_125th_workshop_3",
+                "block_id": "p007_c0002",
+                "source_quote": "Right-turn Bays: reduce blockages at intersections"
+              }
+            ]
+          }
+        ],
+        "rationale": "Right-turn bays are shown in the 125th Street proposed cross-section design (page 7) and on the segment maps (pages 15-16). They reduce intersection blockages on the corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p015_c0003",
+            "source_quote": "Right-Turn Bay (Peak Hours)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-curb-regs-125th",
+        "local_observation_id": "treatment_curb_regulation_updates_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_125th-st-sbs-2013",
+            "object_id": "treatment_curb-regulation-updates-125th",
+            "evidence_refs": [
+              {
+                "source_id": "2013_04_09_sbs_125th_workshop_3",
+                "block_id": "p010_c0002",
+                "source_quote": "More consistent parking regulations along 125th Street"
+              },
+              {
+                "source_id": "2013_04_09_sbs_125th_workshop_3",
+                "block_id": "p010_c0003",
+                "source_quote": "Unmetered parking becomes 1 hour metered parking"
+              },
+              {
+                "source_id": "2013_04_09_sbs_125th_workshop_3",
+                "block_id": "p010_c0004",
+                "source_quote": "Commercial loading zone between Third Av and Second Av replaced by curbside bus lane"
+              }
+            ]
+          }
+        ],
+        "rationale": "Curb regulation updates are presented as part of the proposed 125th Street SBS design at workshop #3.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p010_c0002",
+            "source_quote": "More consistent parking regulations along 125th Street"
+          },
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p010_c0003",
+            "source_quote": "Unmetered parking becomes 1 hour metered parking"
+          },
+          {
+            "source_id": "2013_04_09_sbs_125th_workshop_3",
+            "block_id": "p010_c0004",
+            "source_quote": "Commercial loading zone between Third Av and Second Av replaced by curbside bus lane"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-42-30-479Z_2111393-eba1fc9a_canonicalize_2026-06-10t23-12-22-690z-1976810-a6473111-ingest-2013-04-09-sbs-125th-workshop-3-treatment-relations"
+}

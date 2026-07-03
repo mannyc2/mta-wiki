@@ -1,0 +1,54 @@
+{
+  "run_id": "2026-06-10T23-12-02-636Z_1976810-607b0367_ingest_2013-03-sbs-webster-bx-cb6",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T03:41:11.199Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "canon-001",
+        "local_observation_id": "entity_cb6_bronx_2013_03",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_bronx-cb6-2012-11-webster, which matches the existing registry card for Community Board 6 (Bronx) (record_id entity_bronx-cb6-2012-11-webster with record_alias entity_cb6-bronx-2013-03). No identity change was proposed; record already canonical.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb6",
+            "block_id": "p001_c0003",
+            "source_quote": "Presentation to Community Board 6 | March 7, 2013"
+          }
+        ]
+      },
+      {
+        "decision_id": "canon-002",
+        "local_observation_id": "entity_nyc_dot_webster_2013_03",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_nyc-dot, which matches the existing registry card for New York City Department of Transportation (entity_nyc-dot). No identity change was proposed; record already canonical.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb6",
+            "block_id": "p003_c0004",
+            "source_quote": "The New York City Department of Transportation (NYC DOT) logo"
+          }
+        ]
+      },
+      {
+        "decision_id": "canon-003",
+        "local_observation_id": "entity_nyct_webster_2013_03",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_mta-nyct, which matches the existing registry card for MTA New York City Transit (entity_mta-nyct). No identity change was proposed; record already canonical.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb6",
+            "block_id": "p001_c0001",
+            "source_quote": "New York City Transit"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-40-13-435Z_2111393-0cbcacb8_canonicalize_2026-06-10t23-12-02-636z-1976810-607b0367-ingest-2013-03-sbs-webster-bx-cb6-entity-identity"
+}

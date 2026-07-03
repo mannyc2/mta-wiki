@@ -1,0 +1,97 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:34:23.924Z",
+  "packet_path": "data/identity-review/packets/route_cluster_88f99f53c6.md",
+  "cluster_id": "route_cluster_88f99f53c6",
+  "kind": "route",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "route_cluster_88f99f53c6",
+    "kind": "route",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "route_m101",
+          "route_sim11-lex-ave-oct2025"
+        ],
+        "reason": "Contradiction test: route_id differs (M101 vs SIM11) and service_variant differs (local vs express). These are distinct routes per identity merge canon."
+      },
+      {
+        "record_ids": [
+          "route_m101",
+          "route_sim22-42nd-st"
+        ],
+        "reason": "Contradiction test: route_id differs (M101 vs SIM22) and service_variant differs (local vs express). Distinct routes."
+      },
+      {
+        "record_ids": [
+          "route_m101",
+          "route_sim26-42nd-st"
+        ],
+        "reason": "Contradiction test: route_id differs (M101 vs SIM26) and service_variant differs (local vs express). Distinct routes."
+      },
+      {
+        "record_ids": [
+          "route_m101",
+          "route_sim6-lex-ave-oct2025"
+        ],
+        "reason": "Contradiction test: route_id differs (M101 vs SIM6) and service_variant differs (local vs express). Distinct routes."
+      },
+      {
+        "record_ids": [
+          "route_sim11-lex-ave-oct2025",
+          "route_sim22-42nd-st"
+        ],
+        "reason": "Contradiction test: route_id differs (SIM11 vs SIM22). Different routes despite both being express."
+      },
+      {
+        "record_ids": [
+          "route_sim11-lex-ave-oct2025",
+          "route_sim26-42nd-st"
+        ],
+        "reason": "Contradiction test: route_id differs (SIM11 vs SIM26). Different routes."
+      },
+      {
+        "record_ids": [
+          "route_sim11-lex-ave-oct2025",
+          "route_sim6-lex-ave-oct2025"
+        ],
+        "reason": "Contradiction test: route_id differs (SIM11 vs SIM6). Different routes."
+      },
+      {
+        "record_ids": [
+          "route_sim22-42nd-st",
+          "route_sim26-42nd-st"
+        ],
+        "reason": "Contradiction test: route_id differs (SIM22 vs SIM26). Different routes."
+      },
+      {
+        "record_ids": [
+          "route_sim22-42nd-st",
+          "route_sim6-lex-ave-oct2025"
+        ],
+        "reason": "Contradiction test: route_id differs (SIM22 vs SIM6). Different routes."
+      },
+      {
+        "record_ids": [
+          "route_sim26-42nd-st",
+          "route_sim6-lex-ave-oct2025"
+        ],
+        "reason": "Contradiction test: route_id differs (SIM26 vs SIM6). Different routes."
+      }
+    ],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "All records have distinct route_id fields (M101 vs SIM11/22/26/6) and, where applicable, different service_variant (local vs express), satisfying the contradiction test of the identity merge canon. No record shares the same base route id plus variant; therefore no merges are possible."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-34-08-511Z_1282984-4ba7e4fd_identity-review-run_route-cluster-88f99f53c6",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-34-08-511Z_2026-06-23T14-34-08-511Z_1282984-4ba7e4fd_identity-review-run_route-cluster-88f99f53c6.jsonl"
+}

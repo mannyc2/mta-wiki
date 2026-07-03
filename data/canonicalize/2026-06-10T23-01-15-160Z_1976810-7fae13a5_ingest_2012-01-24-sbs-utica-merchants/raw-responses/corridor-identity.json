@@ -1,0 +1,43 @@
+{
+  "run_id": "2026-06-10T23-01-15-160Z_1976810-7fae13a5_ingest_2012-01-24-sbs-utica-merchants",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T02:21:54.373Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "utica-carroll-church-new",
+        "local_observation_id": "corridor_utica_ave_carroll_to_church",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'corridor_utica-ave-carroll-to-church' already exists in the registry as an exact match — same source (2012_01_24_sbs_utica_merchants), same corridor (Utica Avenue), same limits (Carroll St. to Church Ave.), same borough (Brooklyn). The observation already resolves to its own canonical record, so no link to a different record is needed. A same_as relation is proposed to the broader corridor_utica-av record which represents the identical real-world corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p008_c0003",
+            "source_quote": "A map of the Utica Ave. Corridor Study Area in New York City. The map shows a grid of streets with a red double-headed arrow indicating the corridor from Carroll St. to Church Ave. along Utica Ave. The study area is labeled \"Study Area: Carroll St. to Church Ave.\" in a box at the top left."
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "corridor_utica-ave-carroll-to-church",
+            "object_id": "corridor_utica-av",
+            "description": "Both records represent the identical Utica Avenue corridor from Carroll St. to Church Ave. in Brooklyn. corridor_utica-ave-carroll-to-church is the study-area-specific record sourced from the 2012-01-24 merchants presentation; corridor_utica-av is the broader aggregated record that already carries aliases corridor_utica-ave-carroll-st-to-church-ave and corridor_utica-ave-carroll-church-2012. Same street, same limits, same borough.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p008_c0003",
+                "source_quote": "A map of the Utica Ave. Corridor Study Area in New York City. The map shows a grid of streets with a red double-headed arrow indicating the corridor from Carroll St. to Church Ave. along Utica Ave. The study area is labeled \"Study Area: Carroll St. to Church Ave.\" in a box at the top left."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-19-43-118Z_2111393-ac8d1c7b_canonicalize_2026-06-10t23-01-15-160z-1976810-7fae13a5-ingest-2012-01-24-sbs-utica-merchants-corridor-identity"
+}

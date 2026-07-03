@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T23-04-27-481Z_1976810-2b41002c_ingest_2012-09-webster-sbs-cac3",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T02:53:21.391Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "corridor_webster_ave_bronx",
+        "decision": "new",
+        "rationale": "The observation's base_record_id is corridor_webster-ave-bronx. The closest registry match is corridor_webster-ave-bronx, which is the observation's own base_record_id. Per the rules, when the closest match IS the observation's own base_record_id, the decision is new — the observation already resolves to that id. The registry record corridor_webster-ave-bronx already captures this Webster Avenue corridor with matching limits (from The Hub to Williamsbridge) and borough (Bronx).",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_webster_sbs_cac3",
+            "block_id": "p007_c0002",
+            "source_quote": "Webster Avenue corridor based on the existing Bx41 route"
+          },
+          {
+            "source_id": "2012_09_webster_sbs_cac3",
+            "block_id": "p007_c0003",
+            "source_quote": "Webster Avenue corridor based on the existing Bx41 route, 5.3 miles from The Hub to Williamsbridge"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-52-59-133Z_2111393-caf82a26_canonicalize_2026-06-10t23-04-27-481z-1976810-2b41002c-ingest-2012-09-webster-sbs-cac3-corridor-identity"
+}

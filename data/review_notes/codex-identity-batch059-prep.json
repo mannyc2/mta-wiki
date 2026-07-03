@@ -1,0 +1,388 @@
+{
+  "note_id": "codex-canonical-cleanup-2026-06-22-identity-alias-batch-059-prep",
+  "created_at": "2026-06-22T21:42:24Z",
+  "author": "codex",
+  "status": "ready_for_conductor_apply",
+  "lane": "identity_prep_only",
+  "batch": "identity-batch059",
+  "scope": "Codex-only identity alias preparation after identity058; no generated output, validation CLI, materialization, export, DB repair, publish, or provider-backed commands run",
+  "context": {
+    "starting_point": "unresolved duplicate_global_identity backlog after current identity overrides and prior prep artifacts through identity058",
+    "candidate_mining_summary": {
+      "current_entity_records_scanned_from_jsonl": 2598,
+      "current_alias_overrides_considered": 349,
+      "db_identity_alias_rows_considered": 329,
+      "prior_prep_aliases_considered_through_batch058": 90,
+      "candidate_pairs_after_alias_and_do_not_merge_filters": 684,
+      "selected_high_confidence_candidates": 10,
+      "selection_policy": "Exact named person identities only; broad agencies, subsidiaries, programs, committees, hierarchy records, aliases already mapped in merges.json or canonical DB identity_aliases, and aliases already reserved by prior prep artifacts through batch058 were excluded. One exact-name Richard Davey candidate was deferred because its merged payload carried unrelated name contamination."
+    },
+    "write_scope_used_for_this_task": [
+      "data/review_notes/codex-identity-batch059-prep.json"
+    ],
+    "paths_intentionally_not_edited": [
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json",
+      "data/submission-overrides/retired.json",
+      "data/canonical/",
+      "data/canonical.db",
+      "data/materialized/",
+      "data/submissions/",
+      "wiki/",
+      "LOG.md"
+    ],
+    "db_read_note": "Canonical records were read from data/canonical JSONL; identity_aliases were checked through a read-only SQLite handle."
+  },
+  "intended_mutation": {
+    "path": "data/identity-overrides/merges.json",
+    "operation": "add_aliases",
+    "aliases": {
+      "entity": {
+        "entity_meeting-doc-178486-david-florio": "entity_david-florio",
+        "entity_meeting-doc-79341-david-florio": "entity_david-florio",
+        "entity_jaibala-patel-meeting-doc-146856": "entity_jaibala-patel-dcfo-mta",
+        "entity_meeting-doc-194131-jaibala-patel": "entity_jaibala-patel-dcfo-mta",
+        "entity_meeting-doc-jaibala-patel": "entity_jaibala-patel-dcfo-mta",
+        "entity_meeting-doc-138396-frank-annicaro": "entity_frank-annicaro",
+        "entity_jamie-torres-springer": "entity_jamie-torres-springer-cdo",
+        "entity_jamie-torres-springer-201601": "entity_jamie-torres-springer-cdo",
+        "entity_jamie-torres-springer-meeting-doc-176306": "entity_jamie-torres-springer-cdo",
+        "entity_meeting-doc-131491-jamie-torres-springer": "entity_jamie-torres-springer-cdo"
+      }
+    }
+  },
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "all_pass": true,
+    "canonical_records_present": true,
+    "target_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "aliases_not_in_prior_prep_artifacts": true,
+    "targets_not_aliases_in_merges_json": true,
+    "targets_not_aliases_in_identity_aliases_table": true,
+    "targets_not_aliases_in_prior_prep_artifacts": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 20,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 20,
+    "source_page_blocks_missing": [],
+    "confidence": "high"
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-178486-david-florio",
+      "target": "entity_david-florio",
+      "validator_duplicate_key": "entity_david-florio",
+      "reason": "Exact person identity for David Florio. The alias identifies David Florio as Department Head in MTA Real Estate, matching the target's richer David Florio MTA Real Estate department-head record.",
+      "evidence_refs": [
+        "meeting_doc_178486#p003_c0004",
+        "meeting_doc_129066#p005_c0004"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_david-florio"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-79341-david-florio",
+      "target": "entity_david-florio",
+      "validator_duplicate_key": "entity_david-florio",
+      "reason": "Exact person identity for David Florio. The alias names David Florio as Director of Real Estate Transactions and Operations at MTA, which is title history for the same person represented by the target.",
+      "evidence_refs": [
+        "meeting_doc_79341#p005_c0006",
+        "meeting_doc_129066#p005_c0004"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_david-florio"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_jaibala-patel-meeting-doc-146856",
+      "target": "entity_jaibala-patel-dcfo-mta",
+      "validator_duplicate_key": "entity_jaibala-patel",
+      "reason": "Exact person identity for Jaibala Patel. The alias identifies Jaibala Patel as Deputy Chief Financial Officer, MTA, matching the target's richer Jaibala Patel MTA finance leadership record.",
+      "evidence_refs": [
+        "meeting_doc_146856#p001_c0004",
+        "meeting_doc_100366#p001_c0004"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_jaibala-patel",
+          "entity_jaibala-patel-deputy-chief-financial-officer-mta"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-194131-jaibala-patel",
+      "target": "entity_jaibala-patel-dcfo-mta",
+      "validator_duplicate_key": "entity_jaibala-patel",
+      "reason": "Exact person identity for Jaibala Patel. The alias names Jaibala Patel as Department Head, Finance, matching the target's same person and finance leadership identity.",
+      "evidence_refs": [
+        "meeting_doc_194131#p001_c0002",
+        "meeting_doc_100366#p001_c0004"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_jaibala-patel"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-jaibala-patel",
+      "target": "entity_jaibala-patel-dcfo-mta",
+      "validator_duplicate_key": "entity_jaibala-patel",
+      "reason": "Exact person identity for Jaibala Patel. The alias identifies Jaibala Patel as Deputy Chief Financial Officer, MTA, matching the target's richer multi-source Jaibala Patel finance record.",
+      "evidence_refs": [
+        "meeting_doc_105926#p001_c0004",
+        "meeting_doc_100366#p001_c0004"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_jaibala-patel",
+          "entity_jaibala-patel-deputy-chief-financial-officer-mta"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-138396-frank-annicaro",
+      "target": "entity_frank-annicaro",
+      "validator_duplicate_key": "entity_frank-annicaro",
+      "reason": "Exact person identity for Frank Annicaro. The alias identifies Frank Annicaro as Senior Vice President, Buses, matching the target's richer NYCT buses leadership record.",
+      "evidence_refs": [
+        "meeting_doc_138396#p001_c0011",
+        "meeting_doc_105931#p001_c0010"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_frank-annicaro",
+          "entity_frank-annicaro-senior-vice-president-buses"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_jamie-torres-springer",
+      "target": "entity_jamie-torres-springer-cdo",
+      "validator_duplicate_key": "entity_jamie-torres-springer",
+      "reason": "Exact person identity for Jamie Torres-Springer. The alias identifies Jamie Torres-Springer as President, MTA C&D, matching the target's richer Chief Development Officer and President MTA C&D record.",
+      "evidence_refs": [
+        "meeting_doc_73021#p005_c0001",
+        "meeting_doc_113991#p013_c0009"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_jamie-torres-springer",
+          "entity_jamie-torres-springer-president-mta-c-and-d"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_jamie-torres-springer-201601",
+      "target": "entity_jamie-torres-springer-cdo",
+      "validator_duplicate_key": "entity_jamie-torres-springer",
+      "reason": "Exact person identity for Jamie Torres-Springer. The alias names Jamie Torres-Springer as President MTA Construction & Development, matching the target's same person and MTA C&D president identity.",
+      "evidence_refs": [
+        "meeting_doc_201601#p001_c0010",
+        "meeting_doc_113991#p013_c0009"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_jamie-torres-springer",
+          "entity_jamie-torres-springer-president-mta-c-and-d"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_jamie-torres-springer-meeting-doc-176306",
+      "target": "entity_jamie-torres-springer-cdo",
+      "validator_duplicate_key": "entity_jamie-torres-springer",
+      "reason": "Exact person identity for Jamie Torres-Springer. The alias identifies Jamie Torres-Springer as President, Capital & Development, matching the target's same MTA C&D leadership person identity.",
+      "evidence_refs": [
+        "meeting_doc_176306#p008_c0003",
+        "meeting_doc_113991#p013_c0009"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_jamie-torres-springer"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-131491-jamie-torres-springer",
+      "target": "entity_jamie-torres-springer-cdo",
+      "validator_duplicate_key": "entity_jamie-torres-springer",
+      "reason": "Exact person identity for Jamie Torres-Springer. The alias names Jamie Torres-Springer as MTA C&D President, matching the target's same person and MTA C&D president role family.",
+      "evidence_refs": [
+        "meeting_doc_131491#p005_c0008",
+        "meeting_doc_113991#p013_c0009"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_jamie-torres-springer",
+          "entity_jamie-torres-springer-mta-c-and-d-president"
+        ]
+      },
+      "confidence": "high"
+    }
+  ],
+  "deferred_low_confidence_examples": [
+    {
+      "candidate": "entity_lirr-meeting-doc-131666 -> entity_annual-report-2021-lirr",
+      "reason": "Broad/subsidiary agency identity; intentionally deferred under high-confidence person-only selection policy."
+    },
+    {
+      "candidate": "entity_meeting-doc-richard-davey -> entity_richard-davey-nyct-president",
+      "reason": "Exact-name/evidence match, but alias payload includes unrelated merged-field contamination; deferred for a more focused review."
+    }
+  ],
+  "commands_used_for_evidence": [
+    "test ! -e data/review_notes/codex-identity-batch059-prep.json && echo missing || echo exists",
+    "jq '.intended_mutation.aliases.entity, .aggregate_guard_results' data/review_notes/codex-identity-batch058-prep.json",
+    "bun --eval '<read-only duplicate_global_identity mining over readCanonicalRecordsFromJsonl(), identityKeysForRecord(), current merges.json, read-only identity_aliases, prior prep aliases through batch058, and do-not-merge guards>'",
+    "bun --eval '<read-only final guard script for canonical record presence, alias/target guard checks, prior prep exclusion, shared identity keys, raw source blocks, and source-page blocks>'",
+    "bun --eval '<read-only selected record payload/evidence summary from data/canonical JSONL>'"
+  ],
+  "commands_intentionally_not_run": [
+    "materialize",
+    "validate CLI",
+    "export-jsonl",
+    "DB repair/publish",
+    "provider-backed post-ingest commands",
+    "identity-review-run",
+    "identity-review-apply"
+  ],
+  "conductor_apply_note": "This prep artifact intentionally does not edit data/identity-overrides/merges.json or generated outputs. Re-run deterministic guards immediately before conductor application because concurrent work may update canonical DB rows, durable identity overrides, or prior prep state."
+}

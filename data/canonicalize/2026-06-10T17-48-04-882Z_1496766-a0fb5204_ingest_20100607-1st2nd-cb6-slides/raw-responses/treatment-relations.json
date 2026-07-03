@@ -1,0 +1,715 @@
+{
+  "run_id": "2026-06-10T17-48-04-882Z_1496766-a0fb5204_ingest_20100607-1st2nd-cb6-slides",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-10T19:32:51.715Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-001-offset-bus-lanes",
+        "local_observation_id": "treatment_offset_bus_lanes_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_offset-bus-lanes-2010",
+            "description": "Offset Bus Lanes on First Avenue and Second Avenue from South Ferry to 125th Street, part of the 2010 M15 Select Bus Service implementation",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p012_c0006",
+                "source_quote": "Offset Bus Lane Curbside Bus Lane"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p012_c0011",
+                "source_quote": "The map illustrates the 2010 Implementation Plan for the first avenue/second avenue corridor. It shows the route from South Ferry to 125 St/2 Av. The map includes bus lanes (offset and curbside) and bike lanes (protected, buffered, and curbside)."
+              }
+            ]
+          }
+        ],
+        "rationale": "The CB6 presentation explicitly lists offset bus lanes as part of the 2010 Implementation Plan for the First Avenue/Second Avenue Select Bus Service, with the map showing offset bus lanes along both avenues from South Ferry to 125th Street.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p012_c0006",
+            "source_quote": "Offset Bus Lane Curbside Bus Lane"
+          },
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p012_c0011",
+            "source_quote": "The map illustrates the 2010 Implementation Plan for the first avenue/second avenue corridor."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-002-curbside-bus-lanes",
+        "local_observation_id": "treatment_curbside_bus_lanes_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_curbside-bus-lanes-2010",
+            "description": "Curbside Bus Lanes on First Avenue and Second Avenue as part of the 2010 M15 Select Bus Service",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p012_c0006",
+                "source_quote": "Offset Bus Lane Curbside Bus Lane"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p014_c0005",
+                "source_quote": "Curbside Bus Lane ONLY BUS This photograph shows a street-level view of a curbside bus lane in New York City."
+              }
+            ]
+          }
+        ],
+        "rationale": "The source lists Curbside Bus Lane under Bus Lanes in the 2010 Implementation Plan (p12) and shows a photograph of a curbside bus lane in the CB6 Bus Lanes section (p14).",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p012_c0006",
+            "source_quote": "Offset Bus Lane Curbside Bus Lane"
+          },
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p014_c0005",
+            "source_quote": "Curbside Bus Lane ONLY BUS"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-003-protected-bike-paths",
+        "local_observation_id": "treatment_protected_bike_paths_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_protected-bike-paths-2010",
+            "description": "Protected Bike Paths on First Avenue and Second Avenue as part of the 2010 M15 Select Bus Service",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p012_c0008",
+                "source_quote": "Protected Bike Path Buffered Bike Lane Curbside Bike Lane"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p012_c0011",
+                "source_quote": "The map illustrates the 2010 Implementation Plan for the first avenue/second avenue corridor. It shows the route from South Ferry to 125 St/2 Av. The map includes bus lanes (offset and curbside) and bike lanes (protected, buffered, and curbside)."
+              }
+            ]
+          }
+        ],
+        "rationale": "Protected Bike Path is listed under Bike Lanes in the 2010 Implementation Plan (p12) and the map shows protected bike paths along both avenues.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p012_c0008",
+            "source_quote": "Protected Bike Path Buffered Bike Lane Curbside Bike Lane"
+          },
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p012_c0011",
+            "source_quote": "The map illustrates the 2010 Implementation Plan for the first avenue/second avenue corridor. It shows the route from South Ferry to 125 St/2 Av."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-004-buffered-bike-lanes",
+        "local_observation_id": "treatment_buffered_bike_lanes_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_buffered-bike-lanes-2010",
+            "description": "Buffered Bike Lanes on First Avenue and Second Avenue as part of the 2010 M15 Select Bus Service",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p012_c0008",
+                "source_quote": "Protected Bike Path Buffered Bike Lane Curbside Bike Lane"
+              }
+            ]
+          }
+        ],
+        "rationale": "Buffered Bike Lane is listed under Bike Lanes in the 2010 Implementation Plan on page 12 of the CB6 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p012_c0008",
+            "source_quote": "Protected Bike Path Buffered Bike Lane Curbside Bike Lane"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-005-curbside-bike-lanes",
+        "local_observation_id": "treatment_curbside_bike_lanes_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_curbside-bike-lanes-2010",
+            "description": "Curbside Bike Lanes on First Avenue and Second Avenue as part of the 2010 M15 Select Bus Service",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p012_c0008",
+                "source_quote": "Protected Bike Path Buffered Bike Lane Curbside Bike Lane"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p015_c0005",
+                "source_quote": "Curbside Bike Lane A photograph showing a curbside bike lane on a city street."
+              }
+            ]
+          }
+        ],
+        "rationale": "Curbside Bike Lane is listed under Bike Lanes in the 2010 Implementation Plan (p12) and shown in the CB6 Bike Lanes photo (p15).",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p012_c0008",
+            "source_quote": "Protected Bike Path Buffered Bike Lane Curbside Bike Lane"
+          },
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p015_c0005",
+            "source_quote": "Curbside Bike Lane"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-006-sbs-stations",
+        "local_observation_id": "treatment_sbs_stations_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_sbs-stations-2010",
+            "description": "SBS Stations at multiple locations on First Avenue and Second Avenue as part of the 2010 M15 Select Bus Service",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p012_c0009",
+                "source_quote": "SBS Station"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p012_c0011",
+                "source_quote": "The map illustrates the 2010 Implementation Plan for the first avenue/second avenue corridor. SBS stations are marked with circles."
+              }
+            ]
+          }
+        ],
+        "rationale": "SBS Station is listed in the 2010 Implementation Plan (p12) and the map shows SBS stations marked along the corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p012_c0009",
+            "source_quote": "SBS Station"
+          },
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p012_c0011",
+            "source_quote": "The map illustrates the 2010 Implementation Plan for the first avenue/second avenue corridor."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-007-off-board-fare-payment",
+        "local_observation_id": "treatment_off_board_fare_payment",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_off-board-fare-payment_3",
+            "description": "Off-board fare payment at all stations as part of the October 2010 M15 Select Bus Service launch",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p020_c0007",
+                "source_quote": "Off-board fare payment at all stations"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p018_c0015",
+                "source_quote": "Fare Machines"
+              }
+            ]
+          }
+        ],
+        "rationale": "The October 2010 summary on page 20 explicitly states 'Off-board fare payment at all stations' as a feature of M15 Select Bus Service, and page 18 lists 'Fare Machines' in the September construction sequencing.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p020_c0007",
+            "source_quote": "Off-board fare payment at all stations"
+          },
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p018_c0015",
+            "source_quote": "Fare Machines"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-008-low-floor-buses",
+        "local_observation_id": "treatment_new_low_floor_buses",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_new-low-floor-buses",
+            "description": "New low-floor, three-door buses for M15 Select Bus Service launching October 2010",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p020_c0008",
+                "source_quote": "New low-floor, three-door buses"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 20 of the CB6 presentation explicitly states 'New low-floor, three-door buses' as part of the M15 Select Bus Service launching October 2010.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p020_c0008",
+            "source_quote": "New low-floor, three-door buses"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-009-pedestrian-safety-islands",
+        "local_observation_id": "treatment_pedestrian_safety_islands",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_pedestrian-safety-islands",
+            "description": "Over 50 new pedestrian safety islands along First and Second Avenues as part of M15 Select Bus Service",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p020_c0010",
+                "source_quote": "Over 50 new pedestrian safety islands"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 20 of the CB6 presentation explicitly states 'Over 50 new pedestrian safety islands' as part of the M15 Select Bus Service launching October 2010.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p020_c0010",
+            "source_quote": "Over 50 new pedestrian safety islands"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-010-left-turn-restrictions",
+        "local_observation_id": "treatment_left_turn_restrictions",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_left-turn-restrictions_2",
+            "description": "Left turn restrictions at four intersections on the First/Second Avenue SBS corridor",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p011_c0005",
+                "source_quote": "From 23rd Street EB to 1st Avenue NB"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p011_c0006",
+                "source_quote": "From 34th Street EB to 1st Avenue NB"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p011_c0007",
+                "source_quote": "From 34th Street WB to 2nd Avenue SB"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p011_c0008",
+                "source_quote": "From 14th Street WB to 2nd Avenue SB"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 11 of the CB6 presentation is fully dedicated to 'Left Turn Restrictions' and lists four specific intersection restrictions as part of the First/Second Avenue Select Bus Service changes in street operations.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p011_c0005",
+            "source_quote": "From 23rd Street EB to 1st Avenue NB"
+          },
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p011_c0006",
+            "source_quote": "From 34th Street EB to 1st Avenue NB"
+          },
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p011_c0007",
+            "source_quote": "From 34th Street WB to 2nd Avenue SB"
+          },
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p011_c0008",
+            "source_quote": "From 14th Street WB to 2nd Avenue SB"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-011-stuyvesant-town-island-extension",
+        "local_observation_id": "treatment_stuyvesant_town_island_extension",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_stuyvesant-town-island-extension",
+            "description": "Island extension at Stuyvesant Town area, East 14th Street for additional passenger waiting space at the 14th Street SBS station",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p010_c0006",
+                "source_quote": "Island extension to provide additional passenger waiting space for 14th Street SBS station"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 10 of the CB6 presentation under 'Stuyvesant Town Street Design' explicitly describes the island extension for the 14th Street SBS station.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p010_c0006",
+            "source_quote": "Island extension to provide additional passenger waiting space for 14th Street SBS station"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-012-stuyvesant-town-slip-lane-closures",
+        "local_observation_id": "treatment_stuyvesant_town_slip_lane_closures",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_stuyvesant-town-slip-lane-closures",
+            "description": "Slip lane closures at 15th, 18th, and 19th Streets in Stuyvesant Town to minimize conflicts with buses",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p010_c0007",
+                "source_quote": "Slip lane closures at 15th, 18th, and 19th Streets to minimize conflicts with buses"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 10 of the CB6 presentation under 'Stuyvesant Town Street Design' explicitly describes slip lane closures to minimize bus conflicts.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p010_c0007",
+            "source_quote": "Slip lane closures at 15th, 18th, and 19th Streets to minimize conflicts with buses"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-013-bike-lanes-houston-to-34th",
+        "local_observation_id": "treatment_bike_lanes_houston_to_34th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_bike-lanes-houston-to-34th",
+            "description": "2010 bike lanes on both First and Second Avenues from Houston Street to 34th Street",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p013_c0007",
+                "source_quote": "Houston St to 34th St on both Avenues"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 13 of the CB6 presentation, under '2010 bike lanes', explicitly states the segment 'Houston St to 34th St on both Avenues'.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p013_c0007",
+            "source_quote": "Houston St to 34th St on both Avenues"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-014-bike-lanes-72nd-to-125th",
+        "local_observation_id": "treatment_bike_lanes_72nd_to_125th_first_ave",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_bike-lanes-72nd-to-125th-first-ave",
+            "description": "2010 bike lanes on First Avenue from 72nd Street to 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p013_c0008",
+                "source_quote": "72nd St to 125th St on First Avenue"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 13 of the CB6 presentation, under '2010 bike lanes', explicitly states the segment '72nd St to 125th St on First Avenue'.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p013_c0008",
+            "source_quote": "72nd St to 125th St on First Avenue"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-015-sbs-station-28th-st-nb",
+        "local_observation_id": "treatment_sbs_station_28th_st_nb",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_sbs-station-28th-st-nb",
+            "description": "SBS Station at First Avenue/28th Street northbound, between 28th and 29th Streets, added in response to ridership analysis",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p004_c0006",
+                "source_quote": "SBS north of local between 28th and 29th Streets"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p004_c0007",
+                "source_quote": "Added in response to analysis of current ridership"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 4 of the CB6 presentation is dedicated to 'First Avenue/28th Street (Northbound)' station location, describing the SBS station placement and rationale.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p004_c0006",
+            "source_quote": "SBS north of local between 28th and 29th Streets"
+          },
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p004_c0007",
+            "source_quote": "Added in response to analysis of current ridership"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-016-sbs-station-42nd-st-nb",
+        "local_observation_id": "treatment_sbs_station_42nd_st_nb",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_sbs-station-42nd-st-nb",
+            "description": "SBS Station at First Avenue/42nd Street northbound, between 43rd and 44th Streets, relocated for UN security concerns",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p005_c0005",
+                "source_quote": "SBS north of local between 43rd and 44th Streets"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p005_c0006",
+                "source_quote": "Relocated to address United Nations security concerns"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 5 of the CB6 presentation is dedicated to 'First Avenue/42nd Street (Northbound)' station, describing the SBS station placement and relocation rationale.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p005_c0005",
+            "source_quote": "SBS north of local between 43rd and 44th Streets"
+          },
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p005_c0006",
+            "source_quote": "Relocated to address United Nations security concerns"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-017-sbs-station-50th-st-nb",
+        "local_observation_id": "treatment_sbs_station_50th_st_nb",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_sbs-station-50th-st-nb",
+            "description": "SBS Station at First Avenue/50th Street northbound, between Mitchell Pl and 50th Street, added at community request",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p006_c0006",
+                "source_quote": "SBS south of local between Mitchell Pl and 50th Street Added at community request"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 6 of the CB6 presentation is dedicated to 'First Avenue/50th Street (Northbound)', describing the SBS station placement south of local and added at community request.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p006_c0006",
+            "source_quote": "SBS south of local between Mitchell Pl and 50th Street Added at community request"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-018-sbs-station-57th-st-nb",
+        "local_observation_id": "treatment_sbs_station_57th_st_nb",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_sbs-station-57th-st-nb",
+            "description": "SBS Station at 57th Street/First Avenue northbound, between 57th and 58th Streets, relocated to reduce street tree impacts",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p007_c0006",
+                "source_quote": "SBS north of local between 57th and 58th Streets"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p007_c0007",
+                "source_quote": "Relocated through discussion with community and elected officials to reduce street tree impacts"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 7 of the CB6 presentation is dedicated to '57th Street/First Avenue (Northbound)', describing the SBS station placement and rationale for relocation.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p007_c0006",
+            "source_quote": "SBS north of local between 57th and 58th Streets"
+          },
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p007_c0007",
+            "source_quote": "Relocated through discussion with community and elected officials to reduce street tree impacts"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-019-sbs-station-50th-st-sb",
+        "local_observation_id": "treatment_sbs_station_50th_st_sb",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_sbs-station-50th-st-sb",
+            "description": "SBS Station at Second Avenue/50th Street southbound, between 50th and 49th Streets, added at community request",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p008_c0006",
+                "source_quote": "SBS south of local between 50th and 49th Streets"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p008_c0007",
+                "source_quote": "Added at community request"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 8 of the CB6 presentation is dedicated to 'Second Avenue/50th Street (Southbound)', describing the SBS station placement and that it was added at community request.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p008_c0006",
+            "source_quote": "SBS south of local between 50th and 49th Streets"
+          },
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p008_c0007",
+            "source_quote": "Added at community request"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-020-sbs-station-28th-st-sb",
+        "local_observation_id": "treatment_sbs_station_28th_st_sb",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_sbs-station-28th-st-sb",
+            "description": "SBS Station at Second Avenue/28th Street southbound, between 28th and 27th Streets, added in response to ridership analysis",
+            "evidence_refs": [
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p009_c0006",
+                "source_quote": "SBS south of local between 28th and 27th Streets"
+              },
+              {
+                "source_id": "20100607_1st2nd_cb6_slides",
+                "block_id": "p009_c0007",
+                "source_quote": "Added in response to analysis of current ridership"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 9 of the CB6 presentation is dedicated to 'Second Avenue/28th Street (Southbound)', describing the SBS station placement and rationale.",
+        "evidence_refs": [
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p009_c0006",
+            "source_quote": "SBS south of local between 28th and 27th Streets"
+          },
+          {
+            "source_id": "20100607_1st2nd_cb6_slides",
+            "block_id": "p009_c0007",
+            "source_quote": "Added in response to analysis of current ridership"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-30-01-425Z_1632245-d4aba989_canonicalize_2026-06-10t17-48-04-882z-1496766-a0fb5204-ingest-20100607-1st2nd-cb6-slides-treatment-relations"
+}

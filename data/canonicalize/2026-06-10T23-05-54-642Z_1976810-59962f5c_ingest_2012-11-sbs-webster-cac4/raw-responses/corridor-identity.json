@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T23-05-54-642Z_1976810-59962f5c_ingest_2012-11-sbs-webster-cac4",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T03:06:44.329Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "webster-ave-bronx-new",
+        "local_observation_id": "corridor_webster_ave_bronx",
+        "decision": "new",
+        "rationale": "The observation already maps to its own base_record_id corridor_webster-ave-bronx, which is the closest matching existing registry record (same corridor_name 'Webster Avenue', same street, same limits 'from The Hub to Williamsbridge', same borough Bronx, and the source 2012_11_sbs_webster_cac4 already appears in that record's source_ids). Per canonicalization rules, when the closest match IS the observation's own base_record_id, the decision is 'new' — the observation enriches an already-captured entity.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p005_c0002",
+            "source_quote": "Webster Avenue"
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-04-53-326Z_2111393-f54b4823_canonicalize_2026-06-10t23-05-54-642z-1976810-59962f5c-ingest-2012-11-sbs-webster-cac4-corridor-identity"
+}

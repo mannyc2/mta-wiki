@@ -1,0 +1,745 @@
+{
+  "note_id": "codex-identity-batch161-prep",
+  "batch": "identity161",
+  "created_at": "2026-06-23T08:06:47Z",
+  "scope": {
+    "global_kind": "entity",
+    "selection_note": "Codex-only deterministic prep from current data/canonical/entities.jsonl, current data/identity-overrides/merges.json, current data/identity-overrides/do-not-merge.json, and a read-only validateRepo duplicate_global_identity inspection. Proposals are entity-only and avoid stale ids, already-merged aliases, alias records that are current merge targets, target records that are current merge aliases, alias==target pairs, do-not-merge pairs, target chains, prior Codex identity prep aliases, broad affiliation-only duplicate keys, and broad community-board/committee labels unless name evidence is unambiguous."
+  },
+  "prepared_count": 12,
+  "proposed_aliases": [
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_d-mack-cgc-oct2025",
+      "target_id": "entity_193976-david-mack",
+      "canonical_id": "entity_193976-david-mack",
+      "confidence": "high",
+      "reason": "The alias is a one-source abbreviated D. Mack person record. The target is the richer current David Mack person cluster and already carries D. Mack/David Mack chair aliases.",
+      "validator_duplicate_key": "entity_d-mack",
+      "source_evidence": {
+        "alias": {
+          "display_name": "D. Mack",
+          "entity_name": "D. Mack",
+          "entity_type": "person",
+          "source_ids": [
+            "meeting_doc_189751"
+          ],
+          "evidence_refs": [
+            "meeting_doc_189751#p001_c0010"
+          ]
+        },
+        "target": {
+          "display_name": "David Mack, Chair",
+          "entity_name": "David Mack",
+          "entity_type": "person",
+          "title": "Chair",
+          "organization": "Bridges and Tunnels Committee",
+          "source_ids_sample": [
+            "meeting_doc_104711",
+            "meeting_doc_107566",
+            "meeting_doc_111711",
+            "meeting_doc_113966"
+          ],
+          "source_count": 18,
+          "evidence_refs": [
+            "meeting_doc_104711#p001_c0006",
+            "meeting_doc_107566#p001_c0006",
+            "meeting_doc_121016#p001_c0006"
+          ],
+          "source_quotes_sample": [
+            "D. Mack, Chair"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_193976-david-mack and entity_d-mack-cgc-oct2025 share identity key entity_d-mack.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_j-lieber-corp-gov-chair",
+      "target_id": "entity_janno-lieber-2025",
+      "canonical_id": "entity_janno-lieber-2025",
+      "confidence": "high",
+      "reason": "The alias is a one-source J. Lieber person record for a committee chair. The target is the richer current Janno Lieber person cluster and already carries J. Lieber chair aliases.",
+      "validator_duplicate_key": "entity_j-lieber",
+      "source_evidence": {
+        "alias": {
+          "display_name": "J. Lieber",
+          "entity_name": "J. Lieber",
+          "entity_type": "person",
+          "title": "Chair of the Corporate Governance Committee",
+          "source_ids": [
+            "meeting_doc_64096"
+          ],
+          "evidence_refs": [
+            "meeting_doc_64096#p001_c0006"
+          ],
+          "source_quotes_sample": [
+            "J. Lieber, Chair"
+          ]
+        },
+        "target": {
+          "display_name": "Janno Lieber, MTA Chair & CEO",
+          "entity_name": "Janno Lieber",
+          "entity_type": "person",
+          "title": "MTA Chair and CEO",
+          "organization": "Metropolitan Transportation Authority",
+          "source_ids_sample": [
+            "meeting_doc_100286",
+            "meeting_doc_101141",
+            "meeting_doc_106031",
+            "meeting_doc_124251"
+          ],
+          "source_count": 82,
+          "evidence_refs": [
+            "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026#p002_c0002",
+            "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb7_may2026#p002_c0002"
+          ],
+          "source_quotes_sample": [
+            "MTA Chairman Janno Lieber"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_j-lieber-corp-gov-chair and entity_janno-lieber-2025 share identity key entity_j-lieber.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_lirr-2024-nov-finplan",
+      "target_id": "entity_annual-report-2021-lirr",
+      "canonical_id": "entity_annual-report-2021-lirr",
+      "confidence": "high",
+      "reason": "Both current records identify the Long Island Rail Road/LIRR agency. The alias is a single financial-plan entity record; the target is the durable multi-source MTA Long Island Rail Road cluster.",
+      "validator_duplicate_key": "entity_long-island-rail-rd",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Long Island Rail Road",
+          "entity_name": "Long Island Rail Road",
+          "entity_type": "agency",
+          "acronym": "LIRR",
+          "source_ids": [
+            "meeting_doc_127706"
+          ],
+          "evidence_refs": [
+            "meeting_doc_127706#p006_c0010",
+            "meeting_doc_127706#p226_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "MTA Long Island Rail Road",
+          "entity_name": "The Long Island Rail Road Company",
+          "entity_type": "public benefit corporation subsidiary",
+          "acronym": "LIRR",
+          "organization": "Metropolitan Transportation Authority",
+          "source_ids_sample": [
+            "annual_report_narrative_2021",
+            "lower_montauk_final_report_jan2018",
+            "meeting_doc_100221",
+            "meeting_doc_100231"
+          ],
+          "source_count": 631,
+          "evidence_refs": [
+            "annual_report_narrative_2021#p015_c0001",
+            "annual_report_narrative_2021#p093_c0006",
+            "meeting_doc_104766#p001_c0001"
+          ],
+          "source_quotes_sample": [
+            "Long Island Rail Road"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_annual-report-2021-lirr and entity_lirr-2024-nov-finplan share identity key entity_long-island-rail-rd.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_lirr-meeting-doc-140406",
+      "target_id": "entity_annual-report-2021-lirr",
+      "canonical_id": "entity_annual-report-2021-lirr",
+      "confidence": "high",
+      "reason": "Both current records identify MTA Long Island Rail Road (LIRR). The alias is a narrow two-source agency record; the target is the durable multi-source LIRR cluster.",
+      "validator_duplicate_key": "entity_mta-long-island-rail-rd",
+      "source_evidence": {
+        "alias": {
+          "display_name": "MTA Long Island Rail Road (LIRR)",
+          "entity_name": "MTA Long Island Rail Road",
+          "entity_type": "agency",
+          "acronym": "LIRR",
+          "source_ids": [
+            "meeting_doc_140406",
+            "meeting_doc_180056"
+          ],
+          "evidence_refs": [
+            "meeting_doc_140406#p011_c0008",
+            "meeting_doc_140406#p002_c0001",
+            "meeting_doc_180056#p004_c0002"
+          ]
+        },
+        "target": {
+          "display_name": "MTA Long Island Rail Road",
+          "entity_name": "The Long Island Rail Road Company",
+          "entity_type": "public benefit corporation subsidiary",
+          "acronym": "LIRR",
+          "organization": "Metropolitan Transportation Authority",
+          "source_ids_sample": [
+            "annual_report_narrative_2021",
+            "lower_montauk_final_report_jan2018",
+            "meeting_doc_100221",
+            "meeting_doc_100231"
+          ],
+          "source_count": 631,
+          "evidence_refs": [
+            "annual_report_narrative_2021#p015_c0001",
+            "annual_report_narrative_2021#p093_c0006",
+            "meeting_doc_104766#p001_c0001"
+          ],
+          "source_quotes_sample": [
+            "Long Island Rail Road"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_annual-report-2021-lirr and entity_lirr-meeting-doc-140406 share identity key entity_mta-long-island-rail-rd.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-102656-sir",
+      "target_id": "entity_meeting-doc-100241-staten-island-railway",
+      "canonical_id": "entity_meeting-doc-100241-staten-island-railway",
+      "confidence": "high",
+      "reason": "Both current records identify Staten Island Railway/SIR. The alias is a one-source SIR agency record; the target is the durable multi-source Staten Island Railway cluster.",
+      "validator_duplicate_key": "entity_sir",
+      "source_evidence": {
+        "alias": {
+          "display_name": "entity_meeting_doc_102656_sir",
+          "entity_name": "SIR",
+          "entity_type": "agency",
+          "acronym": "SIR",
+          "source_ids": [
+            "meeting_doc_102656"
+          ],
+          "evidence_refs": [
+            "meeting_doc_102656#p003_c0002"
+          ]
+        },
+        "target": {
+          "display_name": "Staten Island Railway",
+          "entity_name": "SIRTOA",
+          "entity_type": "agency",
+          "acronym": "SIR",
+          "organization": "Metropolitan Transportation Authority",
+          "source_ids_sample": [
+            "meeting_doc_100216",
+            "meeting_doc_100221",
+            "meeting_doc_100231",
+            "meeting_doc_100241"
+          ],
+          "source_count": 192,
+          "evidence_refs": [
+            "meeting_doc_100216#p001_c0004",
+            "meeting_doc_100366#p016_c0001",
+            "meeting_doc_102831#p020_c0001"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_meeting-doc-100241-staten-island-railway and entity_meeting-doc-102656-sir share identity key entity_sir.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-102826-nypd-transit-bureau",
+      "target_id": "entity_meeting-doc-100361-nypd-transit-bureau",
+      "canonical_id": "entity_meeting-doc-100361-nypd-transit-bureau",
+      "confidence": "high",
+      "reason": "Both current records identify NYPD Transit Bureau/NYPD's Transit Bureau as the bureau submitting monthly transit crime reports. The alias is a one-source duplicate of the richer current bureau cluster.",
+      "validator_duplicate_key": "entity_nypd-s-transit-bureau",
+      "source_evidence": {
+        "alias": {
+          "display_name": "NYPD's Transit Bureau",
+          "entity_name": "NYPD's Transit Bureau",
+          "entity_type": "bureau",
+          "organization": "New York City Police Department",
+          "source_ids": [
+            "meeting_doc_102826"
+          ],
+          "evidence_refs": [
+            "meeting_doc_102826#p001_c0003"
+          ],
+          "source_quotes_sample": [
+            "The report is submitted by NYPD's Transit Bureau on a monthly basis for the month prior to the reporting period."
+          ]
+        },
+        "target": {
+          "display_name": "NYPD Transit Bureau",
+          "entity_name": "NYPD Transit Bureau",
+          "entity_type": "bureau",
+          "organization": "New York City Police Department",
+          "source_ids_sample": [
+            "meeting_doc_100361",
+            "meeting_doc_107526",
+            "meeting_doc_107546",
+            "meeting_doc_111811"
+          ],
+          "source_count": 45,
+          "evidence_refs": [
+            "meeting_doc_100361#p001_c0003",
+            "meeting_doc_107526#p001_c0003",
+            "meeting_doc_107546#p005_c0010"
+          ],
+          "source_quotes_sample": [
+            "The report is submitted by NYPD's Transit Bureau on a monthly basis for the month ending prior to the reporting period.",
+            "Our partnership with the NYPD Transit Bureau is showing measurable results"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_meeting-doc-100361-nypd-transit-bureau and entity_meeting-doc-102826-nypd-transit-bureau share identity key entity_nypd-s-transit-bureau.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-104786-nypd-transit-bureau",
+      "target_id": "entity_meeting-doc-100361-nypd-transit-bureau",
+      "canonical_id": "entity_meeting-doc-100361-nypd-transit-bureau",
+      "confidence": "high",
+      "reason": "Both current records identify NYPD Transit Bureau/NYPD's Transit Bureau in the monthly crime-report context. The alias is a one-source duplicate of the richer current bureau cluster.",
+      "validator_duplicate_key": "entity_nypd-s-transit-bureau",
+      "source_evidence": {
+        "alias": {
+          "display_name": "NYPD's Transit Bureau",
+          "entity_name": "NYPD's Transit Bureau",
+          "entity_type": "agency bureau",
+          "organization": "New York City Police Department",
+          "source_ids": [
+            "meeting_doc_104786"
+          ],
+          "evidence_refs": [
+            "meeting_doc_104786#p001_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "NYPD Transit Bureau",
+          "entity_name": "NYPD Transit Bureau",
+          "entity_type": "bureau",
+          "organization": "New York City Police Department",
+          "source_ids_sample": [
+            "meeting_doc_100361",
+            "meeting_doc_107526",
+            "meeting_doc_107546",
+            "meeting_doc_111811"
+          ],
+          "source_count": 45,
+          "evidence_refs": [
+            "meeting_doc_100361#p001_c0003",
+            "meeting_doc_107526#p001_c0003",
+            "meeting_doc_107546#p005_c0010"
+          ],
+          "source_quotes_sample": [
+            "The report is submitted by NYPD's Transit Bureau on a monthly basis for the month ending prior to the reporting period.",
+            "Our partnership with the NYPD Transit Bureau is showing measurable results"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_meeting-doc-100361-nypd-transit-bureau and entity_meeting-doc-104786-nypd-transit-bureau share identity key entity_nypd-s-transit-bureau.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-121021-iec-michael-baker",
+      "target_id": "entity_meeting-doc-111791-michael-baker",
+      "canonical_id": "entity_meeting-doc-111791-michael-baker",
+      "confidence": "high",
+      "reason": "Both current records identify Michael Baker International as the Independent Engineering Consultant (IEC). The alias is an IEC-role phrasing of the same consultant already represented by the richer target cluster.",
+      "validator_duplicate_key": "entity_independent-engineering-consultant-iec-michael-baker-international",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Independent Engineering Consultant (IEC) - Michael Baker International",
+          "entity_name": "Independent Engineering Consultant",
+          "entity_type": "consultant",
+          "acronym": "IEC",
+          "organization": "Michael Baker International",
+          "source_ids": [
+            "meeting_doc_121021",
+            "meeting_doc_155071"
+          ],
+          "evidence_refs": [
+            "meeting_doc_121021#p017_c0002",
+            "meeting_doc_121021#p018_c0003",
+            "meeting_doc_155071#p016_c0003"
+          ],
+          "source_quotes_sample": [
+            "Michael Baker INTERNATIONAL"
+          ]
+        },
+        "target": {
+          "display_name": "Michael Baker International",
+          "entity_name": "Michael Baker International",
+          "entity_type": "consultant",
+          "source_ids_sample": [
+            "meeting_doc_111791",
+            "meeting_doc_113971",
+            "meeting_doc_115231",
+            "meeting_doc_121021"
+          ],
+          "source_count": 18,
+          "evidence_refs": [
+            "meeting_doc_113971#p017_c0005",
+            "meeting_doc_121021#p017_c0003",
+            "meeting_doc_111791#p014_c0003"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_meeting-doc-111791-michael-baker and entity_meeting-doc-121021-iec-michael-baker share identity key entity_independent-engineering-consultant-iec-michael-baker-international.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-129081-nyc-dpr",
+      "target_id": "entity_meeting-doc-129051-nyc-parks",
+      "canonical_id": "entity_meeting-doc-129051-nyc-parks",
+      "confidence": "high",
+      "reason": "Both current records identify New York City Department of Parks and Recreation. The alias is a single-source agency record; the target is the richer NYC Parks/Parks and Recreation cluster.",
+      "validator_duplicate_key": "entity_new-york-city-department-of-parks-and-recreation",
+      "source_evidence": {
+        "alias": {
+          "display_name": "New York City Department of Parks and Recreation",
+          "entity_name": "New York City Department of Parks and Recreation",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_129081"
+          ],
+          "evidence_refs": [
+            "meeting_doc_129081#p052_c0008"
+          ]
+        },
+        "target": {
+          "display_name": "New York City Department of Parks and Recreation",
+          "entity_name": "New York City Department of Parks and Recreation",
+          "entity_type": "municipal department",
+          "acronym": "Parks",
+          "source_ids_sample": [
+            "meeting_doc_129041",
+            "meeting_doc_129051",
+            "meeting_doc_131646",
+            "meeting_doc_138311"
+          ],
+          "source_count": 8,
+          "evidence_refs": [
+            "meeting_doc_129051#p001_c0003",
+            "meeting_doc_131646#p004_c0002",
+            "meeting_doc_138311#p002_c0011"
+          ],
+          "source_quotes_sample": [
+            "New York City Department of Parks and Recreation (\"Parks\")"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_meeting-doc-129051-nyc-parks and entity_meeting-doc-129081-nyc-dpr share identity key entity_new-york-city-department-of-parks-and-recreation.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-133246-mopd",
+      "target_id": "entity_meeting-doc-105911-mopd",
+      "canonical_id": "entity_meeting-doc-105911-mopd",
+      "confidence": "high",
+      "reason": "Both current records identify the Mayor's Office for People with Disabilities (MOPD). The alias repeats the same office and ADA-reporting context as the target.",
+      "validator_duplicate_key": "entity_mayor-s-office-for-people-with-disabilities-mopd",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Mayor's Office for People with Disabilities (MOPD)",
+          "entity_name": "Mayor's Office for People with Disabilities (MOPD)",
+          "entity_type": "government office",
+          "acronym": "MOPD",
+          "source_ids": [
+            "meeting_doc_133246"
+          ],
+          "evidence_refs": [
+            "meeting_doc_133246#p007_c0004"
+          ],
+          "source_quotes_sample": [
+            "Annual reports are sent to the Mayor's Office for People with Disabilities (MOPD) and the New York State Governor's Office on the status of ADA compliance within NYCT."
+          ]
+        },
+        "target": {
+          "display_name": "Mayor's Office for People with Disabilities (MOPD)",
+          "entity_name": "Mayor's Office for People with Disabilities",
+          "entity_type": "government office",
+          "acronym": "MOPD",
+          "source_ids": [
+            "meeting_doc_105911"
+          ],
+          "evidence_refs": [
+            "meeting_doc_105911#p007_c0004"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_meeting-doc-105911-mopd and entity_meeting-doc-133246-mopd share identity key entity_mayor-s-office-for-people-with-disabilities-mopd.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_abo-meeting-doc-164911",
+      "target_id": "entity_meeting-doc-135351-ny-sia-ibo",
+      "canonical_id": "entity_meeting-doc-135351-ny-sia-ibo",
+      "confidence": "high",
+      "reason": "Both current records identify the Independent Authorities Budget Office/ABO. The target is the richer New York State Independent Authorities Budget Office cluster and already carries the same ABO identity key.",
+      "validator_duplicate_key": "entity_independent-authorities-budget-office",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Independent Authorities Budget Office (ABO)",
+          "entity_name": "Independent Authorities Budget Office",
+          "entity_type": "agency",
+          "acronym": "ABO",
+          "source_ids": [
+            "meeting_doc_164911"
+          ],
+          "evidence_refs": [
+            "meeting_doc_164911#p001_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "New York State Independent Authorities Budget Office",
+          "entity_name": "New York State Independent Authorities Budget Office",
+          "entity_type": "government_agency",
+          "acronym": "ABO",
+          "source_ids": [
+            "meeting_doc_135351",
+            "meeting_doc_164976",
+            "meeting_doc_167306"
+          ],
+          "evidence_refs": [
+            "meeting_doc_135351#p001_c0010",
+            "meeting_doc_164976#p001_c0008",
+            "meeting_doc_164976#p001_c0013"
+          ],
+          "source_quotes_sample": [
+            "Independent Authorities Budget Office (\"ABO\")"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_abo-meeting-doc-164911 and entity_meeting-doc-135351-ny-sia-ibo share identity key entity_independent-authorities-budget-office.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-138426-ewt-erg",
+      "target_id": "entity_ewt-erg",
+      "canonical_id": "entity_ewt-erg",
+      "confidence": "high",
+      "reason": "Both current records identify Empowering Women in Transportation (EWT), an MTA employee resource group. The alias is a two-source EWT ERG record; the target is the richer EWT ERG cluster.",
+      "validator_duplicate_key": "entity_empowering-women-in-transportation-ewt",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Empowering Women in Transportation (EWT)",
+          "entity_name": "Empowering Women in Transportation (EWT)",
+          "entity_type": "employee resource group",
+          "acronym": "EWT",
+          "organization": "MTA",
+          "source_ids": [
+            "meeting_doc_138426",
+            "meeting_doc_170931"
+          ],
+          "evidence_refs": [
+            "meeting_doc_138426#p006_c0007",
+            "meeting_doc_138426#p006_c0008",
+            "meeting_doc_170931#p006_c0006"
+          ],
+          "source_quotes_sample": [
+            "Empowering Women in Transportation (EWT)"
+          ]
+        },
+        "target": {
+          "display_name": "Empowering Women in Transportation",
+          "entity_name": "Empowering Women in Transportation",
+          "entity_type": "Employee Resource Group",
+          "acronym": "EWT",
+          "organization": "MTA",
+          "source_ids": [
+            "meeting_doc_160101",
+            "meeting_doc_160126",
+            "meeting_doc_166916",
+            "meeting_doc_95171"
+          ],
+          "evidence_refs": [
+            "meeting_doc_160126#p005_c0003",
+            "meeting_doc_160101#p005_c0003",
+            "meeting_doc_166916#p005_c0004"
+          ],
+          "source_quotes_sample": [
+            "Empowering Women in Transportation (EWT)"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_ewt-erg and entity_meeting-doc-138426-ewt-erg share identity key entity_empowering-women-in-transportation-ewt.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "alias_is_current_entity_merge_target": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    }
+  ],
+  "exclusions_and_guards": [
+    "Only current canonical entity record ids were considered as alias_id and target_id values.",
+    "Checked current data/identity-overrides/merges.json; no proposed alias_id is already merged, no proposed target_id is a current merge alias, and no proposed alias_id is already an existing merge target.",
+    "Checked current data/identity-overrides/do-not-merge.json; no proposed pair is covered by a do-not-merge guard.",
+    "Checked previous Codex identity prep artifacts; no proposed alias_id repeats a prior entity proposal.",
+    "Excluded stale ids absent from current data/canonical/entities.jsonl.",
+    "Excluded validator collisions driven by broad affiliation keys such as entity_mta, person-agency collisions, office/person collisions, authority/subsidiary traps, and generic role labels.",
+    "Excluded broad community-board and committee labels unless borough/name evidence was unambiguous; this batch intentionally proposes no community-board aliases."
+  ],
+  "command_evidence": [
+    {
+      "command": "bun -e 'import { validateRepo } from \"./packages/pipeline/src/validate.ts\"; const r=validateRepo(); ...'",
+      "purpose": "Read-only validateRepo inspection; confirmed 644 duplicate_global_identity issues total and 512 entity duplicate messages in the current checkout."
+    },
+    {
+      "command": "jq -c --arg id \"$id\" 'select(.record_id==$id) | {record_id,record_aliases,display_name,source_ids,payload,evidence_refs}' data/canonical/entities.jsonl",
+      "purpose": "Inspected current canonical entity records, identity fields, source ids, and evidence refs for each candidate alias and target."
+    },
+    {
+      "command": "jq '.aliases.entity' data/identity-overrides/merges.json",
+      "purpose": "Read current entity merge alias map to exclude already-merged aliases, target-chain risks, and stale candidates."
+    },
+    {
+      "command": "jq '.pairs.entity' data/identity-overrides/do-not-merge.json",
+      "purpose": "Read current entity do-not-merge guards before preparing proposals."
+    },
+    {
+      "command": "jq -r '.proposed_aliases[]? | select(.global_kind==\"entity\") | .alias_id' data/review_notes/codex-identity-batch*-prep.json",
+      "purpose": "Checked prior Codex identity prep artifacts to avoid repeating stale or already-prepared entity aliases."
+    },
+    {
+      "command": "bun -e '... guard selected pairs against current canonical ids, merges.json, do-not-merge.json ...'",
+      "purpose": "Confirmed all 12 selected pairs have current alias/target ids, are not already merged, do not create target chains, are not do-not-merge hits, and are not alias==target pairs."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed commands",
+    "materialize",
+    "export-jsonl",
+    "full CLI validate",
+    "write",
+    "ask",
+    "schema",
+    "ontology",
+    "identity-review",
+    "canonicalize",
+    "campaign dedup"
+  ]
+}

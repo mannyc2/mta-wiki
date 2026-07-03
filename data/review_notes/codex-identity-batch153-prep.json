@@ -1,0 +1,655 @@
+{
+  "note_id": "codex-identity-batch153-prep",
+  "batch": "identity153",
+  "created_at": "2026-06-23T00:00:00Z",
+  "scope": {
+    "global_kind": "entity",
+    "selection_note": "Codex-only deterministic prep from current data/canonical/entities.jsonl, current identity overrides, current do-not-merge guards, and read-only validateRepo duplicate_global_identity evidence. Community-board, generic committee, broad agency, existing merge aliases, target chains, stale missing ids, alias==target, and do-not-merge pairs were excluded."
+  },
+  "prepared_count": 12,
+  "proposed_aliases": [
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-138396-michael-kemper",
+      "target_id": "entity_meeting-doc-105931-michael-kemper",
+      "canonical_id": "entity_meeting-doc-105931-michael-kemper",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_michael-kemper",
+      "reason": "Both current records identify the same person, Michael Kemper of NYPD Transit. The alias is a smaller two-source cluster; the target is the richer current cluster with Chief/Acting Chief Transit NYPD evidence across ten sources.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Michael Kemper, Chief of Transit, NYPD",
+          "entity_name": "Michael Kemper",
+          "entity_type": "person",
+          "source_ids": [
+            "meeting_doc_135451",
+            "meeting_doc_138396"
+          ],
+          "evidence_refs": [
+            "meeting_doc_135451#p001_c0008",
+            "meeting_doc_138396#p001_c0011"
+          ]
+        },
+        "target": {
+          "display_name": "Michael Kemper, Acting Chief, Transit, NYPD",
+          "entity_name": "Michael Kemper",
+          "entity_type": "person",
+          "source_ids_sample": [
+            "meeting_doc_104781",
+            "meeting_doc_105931",
+            "meeting_doc_107531",
+            "meeting_doc_121696"
+          ],
+          "evidence_refs": [
+            "meeting_doc_105931#p001_c0010",
+            "meeting_doc_104781#p001_c0008",
+            "meeting_doc_107531#p001_c0008",
+            "meeting_doc_121696#p005_c0004"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_meeting-doc-105931-michael-kemper and entity_meeting-doc-138396-michael-kemper share identity key entity_michael-kemper.",
+        "additional_duplicate_keys": [
+          "entity_michael-kemper-chief-of-transit-nypd"
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-160141-sean-fahey",
+      "target_id": "entity_meeting-doc-113891-sean-fahey",
+      "canonical_id": "entity_meeting-doc-113891-sean-fahey",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_sean-fahey",
+      "reason": "Both records identify the same person, Sean Fahey. The alias is a single meeting-document occurrence; the target is a broader five-source Sean Fahey cluster with MTA Metro-North service-design context.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "entity_meeting_doc_160141_sean_fahey",
+          "entity_name": "Sean Fahey",
+          "entity_type": "person",
+          "source_ids": [
+            "meeting_doc_160141"
+          ],
+          "evidence_refs": [
+            "meeting_doc_160141#p001_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "Sean Fahey",
+          "entity_name": "Sean Fahey",
+          "entity_type": "person",
+          "source_ids_sample": [
+            "meeting_doc_113891",
+            "meeting_doc_166956",
+            "meeting_doc_170821",
+            "meeting_doc_186726"
+          ],
+          "evidence_refs": [
+            "meeting_doc_113891#p005_c0003",
+            "meeting_doc_166956#p001_c0002",
+            "meeting_doc_170821#p001_c0006",
+            "meeting_doc_186726#p001_c0002"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_meeting-doc-113891-sean-fahey and entity_meeting-doc-160141-sean-fahey share identity key entity_sean-fahey.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-160311-sean-fahey",
+      "target_id": "entity_meeting-doc-113891-sean-fahey",
+      "canonical_id": "entity_meeting-doc-113891-sean-fahey",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_sean-fahey",
+      "reason": "Both current records identify Sean Fahey. The alias is a three-source Sean Fahey cluster; the target is the richer current Sean Fahey record and is not itself an alias in current merges.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Sean Fahey",
+          "entity_name": "Sean Fahey",
+          "entity_type": "person",
+          "source_ids": [
+            "meeting_doc_160311",
+            "meeting_doc_164896",
+            "meeting_doc_194101"
+          ],
+          "evidence_refs": [
+            "meeting_doc_160311#p009_c0004",
+            "meeting_doc_164896#p001_c0003",
+            "meeting_doc_194101#p001_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "Sean Fahey",
+          "entity_name": "Sean Fahey",
+          "entity_type": "person",
+          "source_ids_sample": [
+            "meeting_doc_113891",
+            "meeting_doc_166956",
+            "meeting_doc_170821",
+            "meeting_doc_186726"
+          ],
+          "evidence_refs": [
+            "meeting_doc_113891#p005_c0003",
+            "meeting_doc_166956#p001_c0002",
+            "meeting_doc_170821#p001_c0006",
+            "meeting_doc_186726#p001_c0002"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_meeting-doc-113891-sean-fahey and entity_meeting-doc-160311-sean-fahey share identity key entity_sean-fahey.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-164901-cubic-transportation",
+      "target_id": "entity_cubic-transportation-systems",
+      "canonical_id": "entity_cubic-transportation-systems",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_cubic-transportation-systems",
+      "reason": "Both records identify Cubic Transportation Systems. The alias is a one-source contractor occurrence; the target is the richer Cubic Transportation Systems Inc. company record with OMNY contractor evidence across many sources.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "entity_meeting_doc_164901_cubic_transportation",
+          "entity_name": "Cubic Transportation Systems",
+          "entity_type": "contractor",
+          "source_ids": [
+            "meeting_doc_164901"
+          ],
+          "evidence_refs": [
+            "meeting_doc_164901#p033_c0012",
+            "meeting_doc_164901#p036_c0005"
+          ]
+        },
+        "target": {
+          "display_name": "Cubic Transportation Systems Inc.",
+          "entity_name": "Cubic Transportation Systems Inc.",
+          "entity_type": "company",
+          "source_ids_sample": [
+            "meeting_doc_100346",
+            "meeting_doc_102806",
+            "meeting_doc_114016",
+            "meeting_doc_114166"
+          ],
+          "evidence_refs": [
+            "meeting_doc_102806#p005_c0005",
+            "meeting_doc_100346#p009_c0003",
+            "meeting_doc_100346#p009_c0006",
+            "meeting_doc_114016#p004_c0003"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_cubic-transportation-systems and entity_meeting-doc-164901-cubic-transportation share identity key entity_cubic-transportation-systems.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-164901-lizzy-berryman",
+      "target_id": "entity_lizzy-berryman-feb2024",
+      "canonical_id": "entity_lizzy-berryman-feb2024",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_lizzy-berryman",
+      "reason": "Both records identify the same person, Lizzy Berryman. The target carries the useful MTA C&D Contracts role context while the alias is a single-source name occurrence.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "entity_meeting_doc_164901_lizzy_berryman",
+          "entity_name": "Lizzy Berryman",
+          "entity_type": "person",
+          "source_ids": [
+            "meeting_doc_164901"
+          ],
+          "evidence_refs": [
+            "meeting_doc_164901#p009_c0002"
+          ]
+        },
+        "target": {
+          "display_name": "Lizzy Berryman, MTA C&D Contracts",
+          "entity_name": "Lizzy Berryman",
+          "entity_type": "person",
+          "source_ids": [
+            "meeting_doc_133356"
+          ],
+          "evidence_refs": [
+            "meeting_doc_133356#p007_c0010"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_lizzy-berryman-feb2024 and entity_meeting-doc-164901-lizzy-berryman share identity key entity_lizzy-berryman.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-138431-sarah-wyss",
+      "target_id": "entity_meeting-doc-186641-sarah-wyss",
+      "canonical_id": "entity_meeting-doc-186641-sarah-wyss",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_sarah-wyss",
+      "reason": "Both records identify Sarah Wyss. The alias is a one-source Interim Chief, Operations Planning mention; the target is the larger Sarah Wyss cluster and already contains the same interim/acting operations-planning alias context.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Sarah Wyss, Interim Chief, Operations Planning",
+          "entity_name": "Sarah Wyss",
+          "entity_type": "person",
+          "source_ids": [
+            "meeting_doc_138431"
+          ],
+          "evidence_refs": [
+            "meeting_doc_138431#p001_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "Sarah Wyss",
+          "entity_name": "Sarah Wyss",
+          "entity_type": "person",
+          "source_ids_sample": [
+            "meeting_doc_128931",
+            "meeting_doc_133291",
+            "meeting_doc_138456",
+            "q70_fare_free_service_increases_2025"
+          ],
+          "evidence_refs": [
+            "q70_fare_free_service_increases_2025#p001_c0003",
+            "meeting_doc_128931#p002_c0001",
+            "meeting_doc_128931#p005_c0008",
+            "meeting_doc_133291#p001_c0003"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_meeting-doc-138431-sarah-wyss and entity_meeting-doc-186641-sarah-wyss share identity key entity_sarah-wyss.",
+        "additional_duplicate_keys": [
+          "entity_sarah-wyss-interim-chief-operations-planning"
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_jim-mcgovern-mta-controller",
+      "target_id": "entity_meeting-doc-190056-jim-mcgovern",
+      "canonical_id": "entity_meeting-doc-190056-jim-mcgovern",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_jim-mcgovern",
+      "reason": "Both current records identify Jim McGovern. The target preserves the more specific MTA Deputy Comptroller role context; the alias is a single Jim McGovern occurrence.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Jim McGovern",
+          "entity_name": "Jim McGovern",
+          "entity_type": "person",
+          "source_ids": [
+            "meeting_doc_91561"
+          ],
+          "evidence_refs": [
+            "meeting_doc_91561#p003_c0025"
+          ]
+        },
+        "target": {
+          "display_name": "Jim McGovern, MTA Deputy Comptroller",
+          "entity_name": "Jim McGovern",
+          "entity_type": "person",
+          "source_ids": [
+            "meeting_doc_190056"
+          ],
+          "evidence_refs": [
+            "meeting_doc_190056#p005_c0003"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_jim-mcgovern-mta-controller and entity_meeting-doc-190056-jim-mcgovern share identity key entity_jim-mcgovern.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-205541-rachel-cohen",
+      "target_id": "entity_meeting-doc-138391-rachel-cohen",
+      "canonical_id": "entity_meeting-doc-138391-rachel-cohen",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_rachel-cohen",
+      "reason": "Both current records identify Rachel Cohen in NYCT paratransit leadership. The alias is a one-source Vice President, Paratransit occurrence; the target is the richer current Rachel Cohen paratransit cluster.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Rachel Cohen, Vice President, Paratransit, NYCT",
+          "entity_name": "Rachel Cohen",
+          "entity_type": "person",
+          "source_ids": [
+            "meeting_doc_205541"
+          ],
+          "evidence_refs": [
+            "meeting_doc_205541#p005_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "Rachel Cohen, Acting Vice President of Paratransit",
+          "entity_name": "Rachel Cohen",
+          "entity_type": "person",
+          "source_ids_sample": [
+            "meeting_doc_138391",
+            "meeting_doc_140461",
+            "meeting_doc_151651",
+            "meeting_doc_154986"
+          ],
+          "evidence_refs": [
+            "meeting_doc_138391#p018_c0008",
+            "meeting_doc_140461#p004_c0002",
+            "meeting_doc_151651#p001_c0010",
+            "meeting_doc_154986#p006_c0003"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_meeting-doc-138391-rachel-cohen and entity_meeting-doc-205541-rachel-cohen share identity key entity_rachel-cohen.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-208011-paige-graves",
+      "target_id": "entity_paige-graves-legal",
+      "canonical_id": "entity_paige-graves-legal",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_paige-graves",
+      "reason": "Both records identify Paige Graves. The alias is a single-source name occurrence; the target is the broader Paige Graves legal/general-counsel cluster with eight source ids.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Paige Graves",
+          "entity_name": "Paige Graves",
+          "entity_type": "person",
+          "source_ids": [
+            "meeting_doc_208011"
+          ],
+          "evidence_refs": [
+            "meeting_doc_208011#p006_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "Paige Graves",
+          "entity_name": "Paige Graves",
+          "entity_type": "person",
+          "source_ids_sample": [
+            "meeting_doc_100286",
+            "meeting_doc_127956",
+            "meeting_doc_128986",
+            "meeting_doc_177171"
+          ],
+          "evidence_refs": [
+            "meeting_doc_100286#p173_c0004",
+            "meeting_doc_128986#p003_c0007",
+            "meeting_doc_127956#p005_c0001",
+            "meeting_doc_177171#p013_c0004"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_meeting-doc-208011-paige-graves and entity_paige-graves-legal share identity key entity_paige-graves.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-196846-paul-friman",
+      "target_id": "entity_paul-friman",
+      "canonical_id": "entity_paul-friman",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_paul-l-friman",
+      "reason": "Both current records identify Paul L. Friman. The alias is a one-source Paul L. Friman occurrence; the target is a broader Paul L. Friman general counsel/corporate secretary cluster.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "entity_meeting_doc_196846_paul_friman",
+          "entity_name": "Paul L. Friman",
+          "entity_type": "person",
+          "source_ids": [
+            "meeting_doc_196846"
+          ],
+          "evidence_refs": [
+            "meeting_doc_196846#p002_c0008",
+            "meeting_doc_196846#p004_c0006"
+          ]
+        },
+        "target": {
+          "display_name": "Paul L. Friman, Acting General Counsel and Corporate Secretary",
+          "entity_name": "Paul L. Friman",
+          "entity_type": "person",
+          "source_ids_sample": [
+            "meeting_doc_100256",
+            "meeting_doc_104711",
+            "meeting_doc_107566",
+            "meeting_doc_111711"
+          ],
+          "evidence_refs": [
+            "meeting_doc_104711#p004_c0007",
+            "meeting_doc_100256#p004_c0007",
+            "meeting_doc_107566#p004_c0008",
+            "meeting_doc_115396#p003_c0002"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_meeting-doc-196846-paul-friman and entity_paul-friman share identity key entity_paul-l-friman.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_neology-meeting-doc-138326",
+      "target_id": "entity_neology-inc",
+      "canonical_id": "entity_neology-inc",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_neology-inc",
+      "reason": "Both records identify Neology, Inc. as a vendor. The alias is a one-source occurrence; the target is the richer current vendor record with electronic transponder/toll equipment context.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "entity_neology_meeting_doc_138326",
+          "entity_name": "Neology, Inc.",
+          "entity_type": "vendor",
+          "source_ids": [
+            "meeting_doc_138326"
+          ],
+          "evidence_refs": [
+            "meeting_doc_138326#p001_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "Neology, Inc.",
+          "entity_name": "Neology, Inc.",
+          "entity_type": "vendor",
+          "source_ids": [
+            "meeting_doc_138176",
+            "meeting_doc_140621"
+          ],
+          "evidence_refs": [
+            "meeting_doc_138176#p049_c0007",
+            "meeting_doc_138176#p050_c0003",
+            "meeting_doc_140621#p009_c0006",
+            "meeting_doc_140621#p009_c0008"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_neology-inc and entity_neology-meeting-doc-138326 share identity key entity_neology-inc.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-177271-nytimes",
+      "target_id": "entity_new-york-times",
+      "canonical_id": "entity_new-york-times",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_the-new-york-times",
+      "reason": "Both current records identify the same news organization, The New York Times. The alias is a one-source occurrence; the target is the current two-source New York Times organization record.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "The New York Times",
+          "entity_name": "The New York Times",
+          "entity_type": "news organization",
+          "source_ids": [
+            "meeting_doc_177271"
+          ],
+          "evidence_refs": [
+            "meeting_doc_177271#p012_c0002"
+          ]
+        },
+        "target": {
+          "display_name": "The New York Times",
+          "entity_name": "The New York Times",
+          "entity_type": "news organization",
+          "source_ids": [
+            "meeting_doc_174391",
+            "meeting_doc_65171"
+          ],
+          "evidence_refs": [
+            "meeting_doc_174391#p013_c0002",
+            "meeting_doc_65171#p005_c0001"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global entity records entity_meeting-doc-177271-nytimes and entity_new-york-times share identity key entity_the-new-york-times.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_entity_merges": false,
+          "target_is_current_entity_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    }
+  ],
+  "exclusions_and_guards": {
+    "excluded_existing_entity_merge_aliases": true,
+    "excluded_target_chains": true,
+    "excluded_alias_equals_target": true,
+    "excluded_do_not_merge_pairs": true,
+    "excluded_stale_aliases_or_targets_missing_from_current_canonical_entities_jsonl": true,
+    "excluded_broad_community_board_or_committee_labels_without_unambiguous_borough_name_evidence": true,
+    "excluded_broad_agency_or_department_collisions": true,
+    "excluded_recently_applied_identity149_to_identity152_aliases_when already present in current merges": true,
+    "all_proposals_have_current_validateRepo_duplicate_global_identity_rows": true
+  },
+  "command_evidence": [
+    {
+      "command": "bun --eval \"import { validateRepo } from './packages/pipeline/src/validate.ts'; ... count duplicate_global_identity and print entity rows\"",
+      "purpose": "Read-only validator evidence without CLI validate/materialize/export; confirmed current backlog and entity duplicate rows.",
+      "output_excerpt": {
+        "duplicate_global_identity": 730,
+        "entity_duplicate_global_identity": 545,
+        "total_issues": 730
+      }
+    },
+    {
+      "command": "bun --eval \"read current entities.jsonl, merges.json, do-not-merge.json, run validateRepo, filter exact entity-name candidate pairs\"",
+      "purpose": "Mined candidates using current canonical entity records and current guard files; filtered existing merge aliases, do-not-merge hits, target chains, stale ids, broad community-board/committee labels, and broad agency collisions."
+    },
+    {
+      "command": "bun --eval \"print selected current canonical entity records with display_name, payload entity fields, source_ids, and evidence_refs\"",
+      "purpose": "Collected source evidence for the selected aliases and targets from current data/canonical/entities.jsonl."
+    },
+    {
+      "command": "bun --eval \"print validateRepo duplicate_global_identity rows for selected alias/target pairs\"",
+      "purpose": "Confirmed each selected proposal has a current validator duplicate row and captured validator_duplicate_key values."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed commands",
+    "materialize",
+    "export-jsonl",
+    "full CLI validate",
+    "write",
+    "ask",
+    "schema",
+    "ontology",
+    "identity-review",
+    "canonicalize",
+    "campaign dedup"
+  ]
+}

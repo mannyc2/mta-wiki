@@ -1,0 +1,183 @@
+{
+  "run_id": "2026-06-10T23-03-16-016Z_1976810-ee489d3c_ingest_2012-06-nostrand-sbs-cac5-slides",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T02:48:59.385Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d01-nostrand-rogers-sbs-2012-06-new",
+        "local_observation_id": "project_nostrand_ave_rogers_ave_sbs_2012_06",
+        "decision": "new",
+        "rationale": "Observation's base_record_id project_nostrand-ave-rogers-ave-sbs-2012-06 already exists in the registry as a canonical record with matching payload (same project_name, project_type, status, boroughs, and description). The observation resolves to its own existing registry record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p001_c0004",
+            "source_quote": "Nostrand Avenue / Rogers Avenue Select Bus Service Community Advisory Committee Meeting"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p003_c0001",
+            "source_quote": "SBS Service"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p003_c0006",
+            "source_quote": "SBS will use new three-door, low-floor, articulated buses"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_project",
+            "subject_id": "project_nostrand-ave-rogers-ave-sbs-2012-06",
+            "object_id": "project_nostrand-rogers-sbs",
+            "description": "Both records refer to the same Nostrand Avenue / Rogers Avenue Select Bus Service project; the 2012 record captures a later in-design/construction stage, while project_nostrand-rogers-sbs captures earlier planning stages (2009–2011). Evidence from the same CAC presentation describes the B44 Limited-to-SBS conversion.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p003_c0002",
+                "source_quote": "B44 Limited becomes SBS, with fewer stops"
+              }
+            ]
+          },
+          {
+            "relation_kind": "same_project",
+            "subject_id": "project_nostrand-ave-rogers-ave-sbs-2012-06",
+            "object_id": "project_2013-11-b44-nostrand-sbs",
+            "description": "Both records refer to the same B44 Nostrand/Rogers SBS project. The 2012 record covers design/construction, while the 2013 record covers the November 2013 launch.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p003_c0002",
+                "source_quote": "B44 Limited becomes SBS, with fewer stops"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "d02-northern-nostrand-reconstruction-new",
+        "local_observation_id": "project_northern_nostrand_reconstruction_hwk1129",
+        "decision": "new",
+        "rationale": "Observation's base_record_id project_northern-nostrand-reconstruction-hwk1129 already exists in the registry with matching payload (DDC HWK 1129, same scope Flushing to Atlantic, same description).",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p011_c0001",
+            "source_quote": "Northern Nostrand Reconstruction"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p011_c0002",
+            "source_quote": "DDC Project HWK 1129 will fully reconstruct Nostrand Ave from Flushing to Atlantic. The entire street and sidewalks will be rebuilt."
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p011_c0004",
+            "source_quote": "• SBS bus bulb stations at DeKalb Ave and Fulton St • Bus lane • All new roadway and sidewalks"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_project",
+            "subject_id": "project_northern-nostrand-reconstruction-hwk1129",
+            "object_id": "project_hwk1129-nostrand-reconstruction",
+            "description": "Both records describe DDC Project HWK 1129: full reconstruction of Nostrand Ave from Flushing to Atlantic, including SBS stations and bus lane. Same scope, same DDC project number.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p011_c0002",
+                "source_quote": "DDC Project HWK 1129 will fully reconstruct Nostrand Ave from Flushing to Atlantic. The entire street and sidewalks will be rebuilt."
+              }
+            ]
+          },
+          {
+            "relation_kind": "same_project",
+            "subject_id": "project_northern-nostrand-reconstruction-hwk1129",
+            "object_id": "project_2013-11-nostrand-reconstruction",
+            "description": "Both records describe the Nostrand Avenue Street Reconstruction from Flushing to Atlantic Avenues, including SBS stations at DeKalb Avenue and Fulton Street, and bus lanes. Same scope and corridor.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p011_c0002",
+                "source_quote": "DDC Project HWK 1129 will fully reconstruct Nostrand Ave from Flushing to Atlantic."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "d03-nostrand-rogers-sbs-construction-new",
+        "local_observation_id": "project_nostrand_rogers_sbs_construction_hwk1130",
+        "decision": "new",
+        "rationale": "Observation's base_record_id project_nostrand-rogers-sbs-construction-hwk1130 already exists in the registry with matching payload (DDC HWK 1130, same scope south of Atlantic Ave, same SBS features).",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p012_c0001",
+            "source_quote": "Nostrand/Rogers SBS Construction"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p012_c0002",
+            "source_quote": "DDC Project HWK 1130 will build SBS features on Rogers, Bedford, and Nostrand Aves south of Atlantic Ave"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p012_c0004",
+            "source_quote": "• SBS bus bulb stations • Bus lanes and street resurfacing • Sidewalk repairs"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_project",
+            "subject_id": "project_nostrand-rogers-sbs-construction-hwk1130",
+            "object_id": "project_hwk1130-bus-stations-lanes-bedford-rogers",
+            "description": "Both records describe DDC Project HWK 1130: building SBS bus stations and lanes on Bedford, Rogers, and Nostrand Avenues south of Atlantic Ave. Same scope, same DDC project number.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p012_c0002",
+                "source_quote": "DDC Project HWK 1130 will build SBS features on Rogers, Bedford, and Nostrand Aves south of Atlantic Ave"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "d04-williamsburg-bridge-plaza-new",
+        "local_observation_id": "project_williamsburg_bridge_plaza_construction",
+        "decision": "new",
+        "rationale": "Observation's base_record_id project_williamsburg-bridge-plaza-construction already exists in the registry with matching payload (same project_name, project_type, status, description, and boroughs).",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p014_c0001",
+            "source_quote": "Williamsburg Bridge Plaza Construction"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p014_c0002",
+            "source_quote": "Future DDC project will build enhancements to pedestrian and bus facilities at and around the bus terminal."
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p014_c0004",
+            "source_quote": "• Safer pedestrian crossings • More greenery • Central waiting area \"plaza\""
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p014_c0005",
+            "source_quote": "Design will be in 2012-2013, with construction expected in 2014-2015."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-46-00-323Z_2111393-fbab970a_canonicalize_2026-06-10t23-03-16-016z-1976810-ee489d3c-ingest-2012-06-nostrand-sbs-cac5-slides-project-identity"
+}

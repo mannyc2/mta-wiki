@@ -1,0 +1,349 @@
+{
+  "run_id": "2026-06-10T23-06-42-606Z_1976810-0ee807d5_ingest_2012-11-sbs-webster-cac4-summary",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T03:11:26.201Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "rel-metric-bx55-riders-webster",
+        "local_observation_id": "metric_bx55_riders_north_fordham_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx-2012",
+            "object_id": "relation_has-metric-route-bx55-lga-2012-metric-bx55-riders-north-fordham-2012_b2e7e385e9",
+            "description": "Metric about Bx55 ridership north of East Fordham Rd, discussed in context of Webster Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p002_c0012",
+                "source_quote": "Riders would have to transfer to the Bx41 on Webster Avenue. The number of current Third Avenue bus riders who continue north of East Fordham Road on the Bx55 is not a large number, fewer than 300 riders a day."
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "relation_has-metric-route-bx55-lga-2012-metric-bx55-riders-north-fordham-2012_b2e7e385e9",
+            "description": "Metric about Bx55 ridership supporting service planning for the Webster Avenue SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p002_c0012",
+                "source_quote": "Riders would have to transfer to the Bx41 on Webster Avenue. The number of current Third Avenue bus riders who continue north of East Fordham Road on the Bx55 is not a large number, fewer than 300 riders a day."
+              }
+            ]
+          }
+        ],
+        "rationale": "p002_c0012 explicitly names Webster Avenue and discusses Bx55 ridership in the context of the Webster Avenue SBS project planning, justifying both corridor and project linkages.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p002_c0012",
+            "source_quote": "Riders would have to transfer to the Bx41 on Webster Avenue. The number of current Third Avenue bus riders who continue north of East Fordham Road on the Bx55 is not a large number, fewer than 300 riders a day."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-bx15-riders-webster",
+        "local_observation_id": "claim_bx15_riders_north_fordham_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_webster-ave-bronx-2012",
+            "object_id": "relation_has-claim-route-bx55-lga-2012-claim-bx15-riders-north-fordham-2012_f150deea6e",
+            "description": "Claim about Bx55 ridership north of Fordham Rd, discussed in Webster Avenue corridor context",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p002_c0012",
+                "source_quote": "Riders would have to transfer to the Bx41 on Webster Avenue. The number of current Third Avenue bus riders who continue north of East Fordham Road on the Bx55 is not a large number, fewer than 300 riders a day."
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "relation_has-claim-route-bx55-lga-2012-claim-bx15-riders-north-fordham-2012_f150deea6e",
+            "description": "Claim about Bx55/Bx15 ridership discussed at Webster Avenue SBS CAC meeting",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p002_c0012",
+                "source_quote": "Riders would have to transfer to the Bx41 on Webster Avenue. The number of current Third Avenue bus riders who continue north of East Fordham Road on the Bx55 is not a large number, fewer than 300 riders a day."
+              }
+            ]
+          }
+        ],
+        "rationale": "p002_c0012 explicitly names Webster Avenue in the context of Bx55/Bx15 ridership discussion at the Webster Avenue SBS CAC meeting, supporting both corridor and project linkages.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p002_c0012",
+            "source_quote": "Riders would have to transfer to the Bx41 on Webster Avenue. The number of current Third Avenue bus riders who continue north of East Fordham Road on the Bx55 is not a large number, fewer than 300 riders a day."
+          }
+        ]
+      },
+      {
+        "decision_id": "unc-claim-bx41-stop-spacing",
+        "local_observation_id": "claim_bx41_stop_e183_spacing_2012",
+        "decision": "uncertain",
+        "rationale": "The cited evidence block p002_c0014 discusses moving a stop to East 183rd Street for more even spacing, but does not explicitly name Bx41 or Webster Avenue. The claim's route payload says Bx41 SBS but the cited text alone does not name any canonical subject.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p002_c0014",
+            "source_quote": "Moving the stop to East 183rd Street would create more even spacing between stops and create a more direct walking route to St. Barnabas Hospital."
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-claim-bx34-ridership",
+        "local_observation_id": "claim_bx34_good_ridership_2012",
+        "decision": "skip",
+        "rationale": "Already linked via has_claim to route_bx34. Cited text p003_c0014 only names Bx34. No additional canonical subjects are explicitly named in the evidence block.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p003_c0013",
+            "source_quote": "How is the ridership for the Bx34?"
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p003_c0014",
+            "source_quote": "For a route of its length and purpose, the Bx34 has good ridership numbers."
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-claim-vandalism-bx12",
+        "local_observation_id": "claim_vandalism_less_than_expected_bx12_sbs_2012",
+        "decision": "skip",
+        "rationale": "Already linked via has_claim to route_bx12-plus. Cited text p003_c0010 only names Bx12 SBS. No additional canonical subjects are explicitly named in the evidence block.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p003_c0009",
+            "source_quote": "Have there been reported instances of vandalism of SBS fare collection machines?"
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p003_c0010",
+            "source_quote": "There has been some, but vandalism was less than expected since off-board fare collection machines were implemented on the Bx12 SBS."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-lga-sbs-service",
+        "local_observation_id": "claim_laguardia_sbs_service_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_webster-ave-bronx-2012",
+            "object_id": "claim_laguardia-sbs-service-2012",
+            "description": "Claim about proposed SBS service between Webster Avenue and LaGuardia Airport",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p001_c0008",
+                "source_quote": "He also presented the details of how a proposed SBS service would work between Webster Avenue and LaGuardia Airport, a recommendation which came from the LaGuardia Alternatives Analysis Study. Service from Fordham Plaza would continue south of The Hub to East 138th Street."
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "claim_laguardia-sbs-service-2012",
+            "description": "Claim about proposed SBS to LaGuardia Airport presented at the Webster Avenue SBS CAC meeting",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p001_c0008",
+                "source_quote": "He also presented the details of how a proposed SBS service would work between Webster Avenue and LaGuardia Airport, a recommendation which came from the LaGuardia Alternatives Analysis Study. Service from Fordham Plaza would continue south of The Hub to East 138th Street."
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_sbs-to-laguardia-2012",
+            "object_id": "claim_laguardia-sbs-service-2012",
+            "description": "Claim describing the proposed SBS service route between Webster Avenue and LaGuardia Airport",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p001_c0008",
+                "source_quote": "He also presented the details of how a proposed SBS service would work between Webster Avenue and LaGuardia Airport, a recommendation which came from the LaGuardia Alternatives Analysis Study. Service from Fordham Plaza would continue south of The Hub to East 138th Street."
+              }
+            ]
+          }
+        ],
+        "rationale": "p001_c0008 explicitly names Webster Avenue, LaGuardia Airport, and describes the proposed SBS service between them. This supports linkages to the Webster Avenue corridor, the SBS project, and the SBS-to-LaGuardia route.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p001_c0008",
+            "source_quote": "He also presented the details of how a proposed SBS service would work between Webster Avenue and LaGuardia Airport, a recommendation which came from the LaGuardia Alternatives Analysis Study. Service from Fordham Plaza would continue south of The Hub to East 138th Street."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-bx15-transfer-bx41",
+        "local_observation_id": "claim_bx15_transfer_bx41_fordham_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_webster-ave-sbs",
+            "object_id": "claim_bx15-transfer-bx41-fordham-2012",
+            "description": "Claim that riders will transfer to Bx41 SBS on Webster Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p002_c0012",
+                "source_quote": "Riders would have to transfer to the Bx41 on Webster Avenue."
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_webster-ave-bronx-2012",
+            "object_id": "claim_bx15-transfer-bx41-fordham-2012",
+            "description": "Claim about transfer to Bx41 on Webster Avenue discussed at the Webster Avenue corridor meeting",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p002_c0012",
+                "source_quote": "Riders would have to transfer to the Bx41 on Webster Avenue."
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "claim_bx15-transfer-bx41-fordham-2012",
+            "description": "Claim about Bx15-to-Bx41 transfer discussed at the Webster Avenue SBS CAC meeting",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p002_c0012",
+                "source_quote": "Riders would have to transfer to the Bx41 on Webster Avenue."
+              }
+            ]
+          }
+        ],
+        "rationale": "p002_c0012 explicitly names Bx41 and Webster Avenue, describing the transfer scenario that is the subject of this claim.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p002_c0012",
+            "source_quote": "Riders would have to transfer to the Bx41 on Webster Avenue."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-bx41-stop-two-fare",
+        "local_observation_id": "claim_bx41_stop_two_fare_bx36_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_bx36",
+            "object_id": "claim_bx41-stop-two-fare-bx36-2012",
+            "description": "Claim about two-fare situation for Bx36 connection at proposed Bx41 SBS stop location",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p003_c0003",
+                "source_quote": "Moving the stop to East 183rd Street would create a two-fare situation for many riders who want to connect to the Bx36 to St. Barnabas Hospital. The walk from Webster Avenue would be difficult for seniors."
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_webster-ave-bronx-2012",
+            "object_id": "claim_bx41-stop-two-fare-bx36-2012",
+            "description": "Claim about Bx36 connection and Webster Avenue walk difficulty discussed at Webster Avenue corridor meeting",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p003_c0003",
+                "source_quote": "Moving the stop to East 183rd Street would create a two-fare situation for many riders who want to connect to the Bx36 to St. Barnabas Hospital. The walk from Webster Avenue would be difficult for seniors."
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "claim_bx41-stop-two-fare-bx36-2012",
+            "description": "Claim about Bx36 connection concern raised at Webster Avenue SBS CAC meeting",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p003_c0003",
+                "source_quote": "Moving the stop to East 183rd Street would create a two-fare situation for many riders who want to connect to the Bx36 to St. Barnabas Hospital. The walk from Webster Avenue would be difficult for seniors."
+              }
+            ]
+          }
+        ],
+        "rationale": "p003_c0003 explicitly names Bx36 and Webster Avenue, describing concerns about a two-fare situation for Bx36 riders and the difficult walk from Webster Avenue.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p003_c0003",
+            "source_quote": "Moving the stop to East 183rd Street would create a two-fare situation for many riders who want to connect to the Bx36 to St. Barnabas Hospital. The walk from Webster Avenue would be difficult for seniors."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-cac4-webster-corridor",
+        "local_observation_id": "event_webster_sbs_cac4_2012_11_29",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "corridor_webster-ave-bronx-2012",
+            "object_id": "event_webster-sbs-cac4-2012-11-29",
+            "description": "CAC Meeting #4 for Webster Avenue SBS project held on November 29, 2012",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p001_c0003",
+                "source_quote": "Webster Avenue Select Bus Service Community Advisory Committee Meeting #4 Summary"
+              }
+            ]
+          }
+        ],
+        "rationale": "p001_c0003 explicitly names Webster Avenue in the meeting title. The event is already linked to project_12-webster-ave; this adds the corridor linkage.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p001_c0003",
+            "source_quote": "Webster Avenue Select Bus Service Community Advisory Committee Meeting #4 Summary"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-event-open-house",
+        "local_observation_id": "event_webster_sbs_public_open_house_2013_01",
+        "decision": "skip",
+        "rationale": "Already linked via has_timeline_event to project_12-webster-ave. The cited block p001_c0009 refers to 'the project' and 'a Public Open House in early January' but does not explicitly name Webster Avenue or any additional canonical subject.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p001_c0009",
+            "source_quote": "Mr. Beaton presented the next steps for the project, which include a Public Open House in early January."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-05-57-225Z_2111393-b841f8ab_canonicalize_2026-06-10t23-06-42-606z-1976810-0ee807d5-ingest-2012-11-sbs-webster-cac4-summary-relation-linker"
+}

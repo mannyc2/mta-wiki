@@ -1,0 +1,808 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-208006"
+record_kind: "source"
+display_name: "Capital Program Committee Meeting - May 2026"
+source_id: "meeting_doc_208006"
+source_ids:
+  - "meeting_doc_208006"
+local_observation_id: "source_meeting_doc_208006"
+local_observation_ids:
+  - "source_meeting_doc_208006"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T22:42:54.740Z"
+submission_ids:
+  - "sub_899c77e2d7b0c226"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting minutes and presentation materials"
+  date_text: "May 2026"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2026-05"
+    precision: "month"
+    raw_text: "May 2026"
+  description: "Capital Program Committee Meeting materials including minutes from April 27, 2026, President's Update, Second Avenue Subway Phase 2 update, 125th Street Subway Extension feasibility study, Interborough Express update, IEC report, procurement actions, and capital program status reports."
+  published_date_normalized: "2026-05"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "Capital Program Committee Meeting"
+evidence_refs:
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_208006#p001_c0003"
+    page_number: 1
+    role: "title_and_date"
+    source_id: "meeting_doc_208006"
+    source_path: "raw/sources/meeting_doc_208006/blocks.jsonl"
+    text_sha256: "sha256:80dba0324d80f52b33f3d19d63a02c2d720e350d8fe7f9a14b7effb1f982c93c"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0001"
+    evidence_id: "meeting_doc_208006#p002_c0001"
+    page_number: 2
+    role: "meeting_details"
+    source_id: "meeting_doc_208006"
+    source_path: "raw/sources/meeting_doc_208006/blocks.jsonl"
+    text_sha256: "sha256:80dba0324d80f52b33f3d19d63a02c2d720e350d8fe7f9a14b7effb1f982c93c"
+    text_source: "raw_text"
+---
+
+# Capital Program Committee
+
+source_id: meeting_doc_208006
+citation: cite block ids exactly as shown in square brackets
+document: 453 block(s)
+
+## Page 1
+
+> [p001_c0001] The logo for the Metropolitan Transportation Authority (MTA) is located in the top left corner. It consists of a black circle with the letters "MTA" in white, bold, sans-serif font.
+[p001_c0002] Metropolitan Transportation Authority
+### [p001_c0003] Capital Program Committee Meeting
+[p001_c0004] May 2026
+### [p001_c0005] Committee Members
+[p001_c0006] Janno Lieber, Chair Dan Garodnick, Vice Chair Andrew Albert Gerard Bringmann Samuel Chu* Randy Glucksman Marc Herbst David Jones Christopher Leathers Blanca Lopez* David Mack* Haeda Mihaltses* John Ross Rizzo John Samuelsen Ed Valente Neal Zuckerman
+
+## Page 2
+
+### [p002_c0001] Capital Program Committee Meeting
+[p002_c0002] Wednesday, 5/20/2026
+[p002_c0003] 12:00 - 1:00 PM ET
+### [p002_c0004] 1. SUMMARY OF ACTIONS
+[p002_c0005] C&D CPC Summary of Actions - Page 3
+### [p002_c0006] 2. APPROVAL OF MINUTES- APRIL 27, 2026
+[p002_c0007] CPC Committee Minutes - Page 4
+### [p002_c0008] 3. PUBLIC COMMENTS PERIOD
+### [p002_c0009] 4. 2025-2026 COMMITTEE WORK PLAN
+[p002_c0010] CPC Committee Work Plan - Page 13
+### [p002_c0011] 5. PRESIDENT'S UPDATE
+### [p002_c0012] 6. AGENCY INITIATIVES UPDATE
+### [p002_c0013] 7. C&D SAFETY REPORT
+[p002_c0014] C&D CPC Safety Report - Page 14
+### [p002_c0015] 8. CAPITAL PROGRAM STATUS REPORT
+[p002_c0016] CPC Commitments and Completions Report - Page 16
+### [p002_c0017] 9. C&D PROCUREMENTS
+[p002_c0018] C&D Procurements - Page 33
+### [p002_c0019] 10. ACTION
+[p002_c0020] Mets Willets Staff Summary - Page 44
+
+## Page 3
+
+### [p003_c0001] CONSTRUCTION & DEVELOPMENT COMMITTEE ACTIONS SUMMARY for MAY 2026
+[p003_c0002]
+
+```text
+Responsible Department Vendor Name Total Amount Summary of Action Contracts RCC/GCCOM A Joint Venture LLC $36,589,000 Approval to award a publicly advertised and competitively solicited contract for design-build services for the replacement of three bridges on Long Island Rail Road's Montauk Branch. Contracts In House Group, Inc. $75,000 Ratification of a modification for the replacement of additional sidewalk and the construction of additional retaining wall. Contracts Turner & Townsend, Inc. $2,406,313 Ratification of a modification to continue to support the development of processes, policies, procedures and manuals for the delivery of the MTA's Capital Program through February 26, 2027. Contracts S&P Construction Management, Inc. $582,550 Ratification of a modification for various civil, mechanical and electrical work at the RFK Fleet Garage and to extend the Substantial Completion date by 12 months to April 22, 2027. Contracts/TOD Queens Future, LLC $1,810,621 Approval to enter into a Design Agreement for state of good repair inspection and design services for the Mets-Willets Point Station.
+```
+[p003_c0003] _Master Page # 3 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 4
+
+### [p004_c0001] MINUTES OF MEETING MTA CAPITAL PROGRAM COMMITTEE April 27, 2026 New York, New York 12:00 PM
+### [p004_c0002] CPC Members present:
+[p004_c0003] Hon. Janno Lieber, Chair & CEO Hon. Andrew Albert Hon. Gerard Bringmann Hon. Samuel Chu Hon. Randolph Glucksman Hon. Marc Herbst Hon. David Jones Hon. Christopher Leathers Hon. Blanca Lopez Hon. Haeda B. Mihaltses Hon. Melva M. Miller Hon. Dr. John-Ross Rizzo
+### [p004_c0004] CPC Members not present:
+[p004_c0005] Hon. Michael Fleischer Hon. Daniel Garodnick Hon. David Mack Hon. James O'Donnell Hon. John Samuelsen Hon. Lisa Sorin Hon. Edward Valente Hon. Neal Zuckerman
+### [p004_c0006] MTA staff present:
+[p004_c0007] Kana Ervin Sean Fitzpatrick Charles Gans Ian Goldrich Mark Roche Elisa Van Der Linde Matthew Zettwoch
+### [p004_c0008] IEC Present:
+[p004_c0009] Sirish Peyyete
+[p004_c0010] * * *
+[p004_c0011] Chairman Lieber called the April 27, 2026, Capital Program Committee Meeting to order at 12:05 PM.
+### [p004_c0012] Public Comments Period
+[p004_c0013] There were six public speakers during the hybrid public comment period: Jason Anthony, Christopher Greif, Alita Dupree, Ryan Ng, *Lisa Daglian, *Cheri Petrarca.
+[p004_c0014] *Provided comment virtually.
+[p004_c0015] _Master Page # 4 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 5
+
+### [p005_c0001] CPC Work Plan
+[p005_c0002] There were no changes to the work plan.
+### [p005_c0003] Meeting Minutes
+[p005_c0004] Upon a motion duly made and seconded, the Committee approved the minutes of the meeting held on March 23, 2026.
+[p005_c0005] Details of the following presentations, and Committee Members' comments and questions with respect thereto, are included in the video recording of the meeting produced by the MTA and maintained in the MTA's records.
+### [p005_c0006] President's Report
+[p005_c0007] Mark Roche, Deputy Chief Development Officer, Delivery, presented on behalf of Jamie Torres-Springer and provided an overview of recent accomplishments and ongoing priorities across MTA Construction & Development (C&D). Mr. Roche began by highlighting recent project milestones featured in the agency's weekly weekend construction newsletter, including progress at the 81 Street-Museum of Natural History station. He emphasized the continued success of C&D's Small Business Mentorship Program, noting that approximately 50 small contractors are currently engaged across 100 active projects. Several projects under this initiative were completed in the past month, and Mr. Roche underscored the agency's long-term goal of cultivating these firms into the MTA's next generation of primary contractors.
+[p005_c0008] Mr. Roche also reported significant progress on the agency's elevator replacement and accessibility efforts, noting that more than 100 elevator projects are underway systemwide and that 50 elevator installations are expected to be completed this year. He highlighted an internal performance improvement that is not often publicly discussed: reducing elevator replacement outages from more than 200 days per unit to fewer than 150 days today. Additional accessibility milestones included the recent opening of new elevators, including one at Parkchester Station. He further described innovative delivery methods on Metro-North Railroad, where the temporary closure of a single track across three Bronx stations enabled simultaneous replacement of three platforms within six months without interrupting service. Following a recent switch from the south to north platforms, the project remains on schedule for completion early next year.
+[p005_c0009] Mr. Roche reported a significant milestone on the Park Avenue Viaduct project, announcing substantial completion of all original project work south of 125th Street, including track, signal, and systems installations. Work north of 125th Street remains focused on bridge construction and is expected to conclude later this year, with full project completion anticipated in 2027. He reiterated that the project remains four years ahead of its original schedule. Mr. Roche also noted that implementation of the Congestion Pricing Program is enabling accelerated advancement of numerous capital investments, including CBTC on the the Fulton and Liberty Lines, which will improve service for approximately 1.3 million riders. He additionally highlighted a less-publicized but significant infrastructure investment: dehumidification work on the cables of the Verrazzano-Narrows Bridge, which is expected to extend the life of the bridge's suspension cables by 50 years and avoid billions of dollars in future replacement costs.
+[p005_c0010] Mr. Roche concluded with remarks on the historic importance of Second Avenue Subway Phase 2, expressing pride in the realization of the long-awaited expansion and stating that recent obstacles had begun to clear, leaving the project firmly on track. He also highlighted a recent
+[p005_c0011] _Master Page # 5 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 6
+
+[p006_c0001] workforce development event held for the project, where more than 1,000 job seekers attended a jobs fair connected to the project's local hiring commitments, including a requirement that 20 percent of the workforce be drawn from the local community.
+### [p006_c0002] Second Avenue Subway Phase 2 Update
+[p006_c0003] Matthew Zettwoch, Vice President and Program Executive, Second Avenue Subway Phase 2, provided an overview of the project confirming this transformative investment remains on schedule and within budget. Mr. Zettwoch emphasized the significance of the project for East Harlem and the broader transit network, noting that upon completion, the combined ridership of Phases 1 and 2 is expected to exceed 300,000 daily customers, while also improving transfer opportunities for nearly one million riders on the Lexington Avenue Line and approximately 100,000 daily users of the 125th Street corridor. He stressed that delivery of the project is being driven by an integrated, agency-wide effort involving MTA C&D, New York City Transit, Metro-North, and city agencies, with dedicated real estate and community outreach teams working closely with local residents and businesses to coordinate construction impacts and maintain transparent communication.
+[p006_c0004] Mr. Zettwoch explained that Phase 2 has been deliberately structured into four major contracts, down from ten in Phase 1, to improve accountability, simplify coordination, and reduce interface risks. Contract 1, focused on utility relocation, is well underway and proceeding on schedule and within budget. He reported that crews are working three shifts per day, six days per week to relocate major gas, power, water, sewer, and telecommunications infrastructure, much of it more than a century old. With substantial progress made in clearing utilities, teams have moved into building stabilization work to prepare for excavation of the future 106th Street station.
+[p006_c0005] On Contract 2, the project's largest design-build package, the contractor has fully mobilized and is actively preparing for the launch of tunnel boring machines in early 2027. Current activities include installation of support-of-excavation piles at future entrances, conducting environmental remediation within the unused tunnel structures, and demolishing existing buildings to create the tunnel boring machine launch area. Mr. Zettwoch highlighted several innovations being employed to reduce cost and complexity, including collaboration with labor unions to optimize tunnel crew requirements, deployment of low-vibration rock-breaking technology, and the use of real-time digital mapping and aerial site monitoring to oversee active construction zones across the project footprint.
+[p006_c0006] Mr. Zettwoch described Contract 3 as the project's "lynchpin" and most publicly visible phase, excavating a five-block, 60-foot-deep open trench along Second Avenue between 105th and 110th Streets to connect the existing Phase 1 tail tracks with the unused northern tunnel segment constructed in the 1970s. He noted that this section presents particularly difficult geotechnical conditions, including high groundwater levels and unstable soil, and requires simultaneous maintenance of traffic, pedestrian access, and structural support for adjacent residential and commercial buildings. Once complete, Contract 3 will restore all utilities and surface infrastructure.
+[p006_c0007] Turning to Contract 4, Mr. Zettwoch reported that design efforts are advancing quickly for the final package, which will encompass station interiors, systems installation, service buildings, and right-of-way improvements. The project team is employing extensive BIM 3D modeling to integrate work across Contracts 2 and 3 while optimizing station layouts, reducing unnecessary space, and identifying opportunities for value engineering and transit-oriented design improvements. He noted that the procurement strategy is being structured to maximize competition, encourage innovative construction approaches, and carefully balance risk allocation to minimize cost premiums. The goal, he said, is to deliver three stations that will represent a new standard in transit design and customer experience.
+[p006_c0008] _Master Page # 6 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 7
+
+[p007_c0001] Mr. Zettwoch concluded by emphasizing the project's robust community engagement efforts, including partnerships with local leaders, proactive communication with residents and businesses, local hiring initiatives, and operation of a dedicated community service center to provide transparent access to project information. Looking ahead, he stated that the next phase of work will focus on scaling project teams, meeting key milestones with accountability, and continuing to apply lessons learned from Phase 1 and ongoing cost-control efforts.
+[p007_c0002] Following the presentation, Committee Member Mihaltses inquired about the location of the project's command office, and Mr. Zettwoch explained that it is located at 159 East 125th Street, adjacent to the future station site. He noted that the office is distinct from the project's community center and serves as a central hub for project staff, enabling teams to coordinate operations while directly overlooking active construction areas.
+[p007_c0003] Ms. Lopez asked for clarification regarding the timeline for hiring local residents who attend project job fairs, specifically how long prospective applicants might expect to wait before being hired. Mr. Zettwoch explained that timelines vary depending on the employer and the type of opportunity, with some contractors able to hire within days or weeks, while others - including agencies such as the MTA, NYPD, and FDNY, all of whom participated in the recent job fair - may require longer onboarding processes.
+[p007_c0004] Chair Lieber emphasized that while job opportunities are already emerging, the pace of hiring is tied closely to the project's phased construction schedule. He noted that while Contract 1 is already generating substantial work and Contracts 2 and 3 are now mobilizing, many construction positions will become available gradually as project activities intensify. He also highlighted that the MTA is using these job fairs not only to connect individuals with project-specific opportunities but also to recruit for broader employment across the agency. Chair Lieber stressed the importance of apprenticeship pathways, noting that temporary project jobs can serve as valuable entry points into union careers. He explained that the MTA is working with construction unions to ensure that workers hired into entry-level positions are considered for apprenticeships that can lead to long-term employment and career advancement.
+[p007_c0005] Mr. Herbst raised concerns about managing expectations around local hiring, particularly given the complexities of union labor systems. He observed that while commitments to local hiring are important, unionized construction positions typically require participation in apprenticeship programs that can take years to complete, making immediate placement difficult. He cautioned against creating false expectations for community members attending job fairs and asked how the agency is addressing these challenges. Mr. Zettwoch acknowledged these constraints, noting that while union trade positions require formal apprenticeship progression, some non-union roles, such as community outreach staff responsible for distributing information and engaging residents, can be filled more readily by local hires.
+[p007_c0006] Chair Lieber reiterated that while not all positions require apprenticeships, long-term workforce development depends on expanding apprenticeship opportunities. He emphasized the importance of helping local residents gain access to these pathways so they can continue working in the trades beyond the life of the Second Avenue Subway project.
+[p007_c0007] Mr. Chu added that unions often view apprenticeship placements as lifetime commitments rather than temporary project-specific arrangements. He noted that unions invest significant resources in training apprentices over many years and therefore must be confident that sustained construction activity will support long-term employment. He argued that robust, predictable infrastructure investment, including long-range needs assessments and well-funded multi-year capital plans, provides the stability necessary to encourage unions to expand apprenticeship intake. He stressed that continued commitment from the MTA, the Governor,
+[p007_c0008] _Master Page # 7 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 8
+
+[p008_c0001] and the Legislature to infrastructure development is essential to creating the conditions that allow for meaningful local workforce development.
+[p008_c0002] Ms. Miller emphasized the importance of prioritizing workforce development for local residents and businesses impacted by the project. She underscored the need to set realistic expectations for attendees at project job fairs, noting that turnout alone is not a meaningful measure of success unless accompanied by clear pathways to employment. She expressed interest in understanding which feeder organizations and workforce development partners are helping prepare candidates, particularly by ensuring that job seekers have the necessary documentation and readiness for contractor hiring requirements. She also emphasized that since contractors, not the MTA directly, are making many of the hiring decisions, and union members are often prioritized for available work, transparency about those realities is critical. She praised the inclusion of multiple agencies and organizations at the job fair, noting that broadening opportunities beyond construction jobs provides a more honest and supportive approach for participants.
+[p008_c0003] Chair Lieber highlighted the agency's broader efforts to build internal leadership capacity within MTA Construction & Development. He noted that one of the agency's strategic priorities has been to cultivate in-house expertise capable of managing major capital projects rather than relying solely on outside firms. He recognized Mr. Zettwoch as a prime example of this effort. Mr. Roche reinforced these remarks, noting that Mr. Zettwoch's leadership has been shaped by experience across at least ten major projects, including the Long Island Rail Road Third Track project, where local hiring requirements were also successfully implemented.
+[p008_c0004] Sean Fitzpatrick, Deputy Chief of Staff for MTA C&D, then presented an update on the agency's early planning for the proposed 125th Street Subway Extension, emphasizing the importance of sustaining institutional knowledge, workforce capacity, and project delivery momentum developed through current major capital initiatives. Mr. Fitzpatrick noted that a key component of MTA C&D's "better, faster, cheaper" approach is the ability to build organizational "muscle memory" by moving seamlessly from one major project to the next, applying lessons learned and retaining experienced teams. He cited the transition from Second Avenue Subway Phase 1 to Phase 2 as a model for this approach and explained that the agency is now preparing to carry that expertise forward into what could become the next transformative expansion project in Upper Manhattan.
+[p008_c0005] Mr. Fitzpatrick described the 125th Street Subway project as a proposed extension of the Q train westward from its planned Phase 2 terminus in East Harlem to Broadway on Manhattan's West Side. He noted that the project has the potential to be a significant improvement not only for residents and commuters along 125th Street, particularly in West Harlem, but also for the broader regional transit network. By creating a new crosstown transit connection, the extension would improve mobility across Upper Manhattan and substantially reduce travel times for riders traveling from neighborhoods throughout Harlem and the Bronx. He highlighted that the project would provide improved connections to multiple existing subway lines, including the 1, 2, 3, A, B, C, and D trains, greatly enhancing network connectivity and resilience. Based on current estimates, the project could serve more than 150,000 daily riders, which Mr. Fitzpatrick noted exceeds more than twice the ridership of the entire MARTA system in Atlanta.
+[p008_c0006] Mr. Fitzpatrick explained that the project has gained momentum under Governor Hochul's leadership through a deliberate planning process. In 2023, the MTA released its 20-year needs assessment, which evaluated approximately two dozen potential transit expansion projects across the region. Through that comparative analysis, the 125th Street Subway Extension emerged as one of the most impactful and cost-effective opportunities to expand the transit system and improve rider access. In recognition of its potential, Governor Hochul included funding for the project in her 2024 State of the State agenda, enabling the MTA to undertake a
+[p008_c0007] _Master Page # 8 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 9
+
+[p009_c0001] formal feasibility study. Mr. Fitzpatrick reported that this study was completed in the previous year and has provided the agency with a clearer understanding of the project's potential scope and benefits.
+[p009_c0002] Elisa Van Der Linde, Director of Alternative Analysis and Environmental Review, presented the findings of the recently completed feasibility study for the proposed 125th Street Subway Extension. She reported that the study concluded that it is feasible to construct a tunnel and future stations along 125th Street and emphasized that the analysis extended well beyond a conceptual desktop planning exercise. The project team conducted field investigations, including geotechnical testing and soil analysis, to confirm that construction could proceed under existing site conditions. Ms. Van Der Linde explained that a key focus of the study was identifying opportunities to synchronize the proposed project with Second Avenue Subway Phase 2 in order to achieve significant cost and schedule efficiencies. She described this as a rare, "once-in-a-lifetime" opportunity, noting that the two tunnel boring machines being launched as part of the current project at 120th Street and Second Avenue will travel north and then veer west at the future 125th Street station, constructing a new station at Lexington Avenue and terminating near Malcolm X Boulevard. By extending those same tunnel boring machines westward along 125th Street toward Broadway, the MTA could begin excavation for the next phase of expansion while deferring station construction until a later date. Ms. Van Der Linde stated that this synchronized approach would allow the agency to repurpose existing TBMs and equipment, retain experienced construction crews from Phase 2, reduce remobilization expenses, and avoid future cost escalation, potentially saving taxpayers hundreds of millions of dollars.
+[p009_c0003] Ms. Van Der Linde emphasized that realizing these efficiencies will require immediate action. She reported that, with support from Governor Hochul, the MTA has already begun the environmental review process and expects to complete it by mid- to late next year. Once funding is secured, the agency will also proceed with preliminary tunnel design work, which will further refine engineering details and project cost estimates. This information, she explained, will allow the Governor and state leadership to make an informed decision in the coming years about whether to move forward with construction while the TBMs remain available. She also noted that community engagement will be a central part of the planning process, including consultation with local stakeholders, elected officials, and residents, and committed to returning to the board with additional updates as the project advances.
+[p009_c0004] Following the presentation, Chair Lieber expressed enthusiasm for the project and underscored the urgency of completing the planning work in time to inform a funding decision. He noted that if the MTA intends to capitalize on the opportunity to continue using the existing tunnel boring machines, a decision regarding resources and project advancement will need to be made within the next several years.
+[p009_c0005] Mr. Albert asked whether pursuing the 125th Street extension would delay future southern expansion of the Second Avenue Subway. Chair Lieber responded that the MTA's 20-year needs assessment evaluated multiple potential expansion projects, including the long-discussed southern extension of the Second Avenue line, using criteria such as transportation benefits and cost-effectiveness. Based on that analysis, the 125th Street project currently ranks more favorably. He acknowledged that many stakeholders remain strongly interested in southward expansion and noted that future needs assessments may revisit and potentially revise project priorities as circumstances evolve.
+[p009_c0006] Mr. Fitzpatrick added that, similar to provisions incorporated during construction of Second Avenue Subway Phase 1 to facilitate a future southern extension, the current proposal seeks to create a comparable infrastructure provision for westward expansion. He explained that this
+[p009_c0007] _Master Page # 9 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 10
+
+[p010_c0001] planning effort is intended to place both future expansion opportunities on equal footing and preserve flexibility for long-term system growth.
+[p010_c0002] Mr. Leathers raised questions regarding how local groundwater conditions and soil quality could affect tunnel design during the environmental review process. Ms. Van Der Linde responded that while the feasibility study included preliminary geotechnical investigations, the next phase of work will involve more detailed analysis to optimize tunnel alignment and assess potential impacts related to constructability, environmental conditions, and the local water table.
+[p010_c0003] Mr. Zettwoch further addressed the technical considerations, noting that the tunnel boring machines being deployed for Second Avenue Subway Phase 2 are dual-mode and specifically designed to operate in both hard rock and soft ground conditions, making them well suited to the anticipated subsurface environment along 125th Street. He added that once a TBM has been successfully mobilized and proven effective, it is highly advantageous to keep it operating continuously rather than demobilizing and restarting at a later date. Comparing the machine to a reliable vehicle, he emphasized that maintaining momentum with the existing equipment represents a critical opportunity to advance the project efficiently and cost-effectively.
+### [p010_c0004] Interborough Express Update
+[p010_c0005] Charles Gans, Senior Vice President and Project Executive for the Interborough Express (IBX), presented an update on the transformative new transit connection that will link Brooklyn and Queens along an existing 14-mile freight rail corridor between Sunset Park and Jackson Heights. The project will add passenger rail service while preserving freight operations. The current plan includes 18 stations and connections to 17 subway lines, more than 50 bus routes, and the Long Island Rail Road. Projected ridership is estimated at approximately 160,000 daily riders, with an anticipated end-to-end travel time of 32 minutes.
+[p010_c0006] Mr. Gans highlighted how the project will improve transit accessibility and economic opportunities for neighborhoods along the corridor. For example, the proposed Remsen Avenue station in Canarsie/East Flatbush, Brooklyn, will expand opportunity by putting 1 million jobs and 19 colleges within a 30-minute commute. Local businesses will also benefit from a significantly enlarged customer base, with the number of residents able to reach the station area within 30 minutes increasing from 700,000 to 3.2 million. A similar analysis for the Myrtle Avenue station in Ridgewood, Queens demonstrated substantial gains, including tripled geographic accessibility and an increase in jobs accessible within 30 minutes from 400,000 to 1.4 million, as well as significant expansions in access to healthcare, higher education, and childcare services. Mr. Gans emphasized that while IBX is often described as a Brooklyn-Queens connector, its value extends beyond the boroughs by improving access to major employment centers such as Midtown Manhattan through enhanced network connectivity.
+[p010_c0007] Next Mr. Gans also reviewed the project's timeline. Following release of the IBX feasibility study in 2022 and the selection of light rail as the preferred mode in 2023, the design request for proposals was issued in 2024. In 2025, the project was included in the MTA's Capital Plan, though he noted that the project is not yet fully funded. Also in 2025, design development and the formal environmental review process began. The environmental review commenced with publication of the scope for the environmental impact statement, and the team anticipates releasing a draft environmental impact statement later this year.
+[p010_c0008] Turning to project design, Mr. Gans explained that a two-year design development effort is now underway, organized around three major workstreams. The first involves corridor due diligence and data collection, including surveying, geotechnical investigations, and structural inspections. Progress on this work is well advanced, with over half of the geotechnical investigations and
+[p010_c0009] _Master Page # 10 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 11
+
+[p011_c0001] surveying completed, and 75 percent of structural inspections finished. The second workstream focuses on civil design, including bridge rehabilitation, retaining wall upgrades, and corridor preparation needed to accommodate the future light rail infrastructure within what is currently a freight-only right-of-way. The third workstream encompasses systems design, including stations, operations and maintenance facilities, storage yards, traction power, train control, and communications systems, as well as preparation for future construction procurement packages.
+[p011_c0002] Mr. Gans reported that design development has already resulted in several significant project refinements based on public feedback. The originally proposed street-running segment has been eliminated, addressing community concerns and improving overall project efficiency. In East New York, the Atlantic Avenue station has been relocated closer to Broadway Junction to improve transfer opportunities. Additionally, the proposed Sutter Avenue station has been removed from the plan in order to reduce travel times, given its redundant connections to the L line and its close proximity to the nearby Livonia Avenue station. He noted that station design efforts have prioritized passenger experience, neighborhood integration, accessibility, and intermodal connections.
+[p011_c0003] Public engagement remains a major component of project development. Mr. Gans announced the launch of a series of six public workshops, beginning the following evening and continuing through the end of May, to gather community feedback on station design concepts. These workshops are part of a broader outreach strategy that will also include formal hearings on the draft environmental impact statement and additional opportunities for public review once updated design concepts are available. Since the release of the feasibility study, the project team has conducted approximately 70 outreach events.
+[p011_c0004] Following the presentation, Chair Lieber emphasized the significance of the project and the urgency with which the MTA is advancing planning and design activities. At the same time, he acknowledged the principal challenge facing the project: securing sufficient funding for construction. Chair Lieber noted that projects of this scale and significance have historically depended on substantial federal funding but cautioned that such support may be difficult to obtain in the current environment. As a result, the MTA is actively exploring multiple funding strategies to support the project's next phase. He explained that the initial phase of civil construction, estimated at approximately $3 billion, would focus on essential bridge, retaining wall, and right-of-way improvements needed to prepare the corridor for track, systems, and station installation. He indicated that assembling the resources necessary to begin this discrete phase of work is a top priority and assured the Board that additional updates would be provided as funding strategies develop.
+### [p011_c0005] IEC Report
+[p011_c0006] Sirish Peyyetti, Program Director of the IEC, presented the IEC's review of Second Avenue Subway Phase 2 and the early planning stages of the Interborough Express. The IEC reported that the four contracts comprising Second Avenue Subway Phase 2 currently carry a combined budget of $6.968 billion and remain on track for a forecasted revenue service date of September 2032, supported by approximately ten months of program contingency. Since the IEC's previous update in September 2025, the program has advanced further into execution, particularly on Contract 1, where the project team has implemented an acceleration plan to address earlier field conditions and access challenges. The IEC indicated that this recovery strategy appears achievable and will continue to be closely monitored. Contract 1 remains within budget.
+[p011_c0007] The IEC further reported that Contract 2 has progressed into active design and early construction and continues to represent a key driver of the overall program schedule. In the IEC's assessment, Contract 2 remains on budget. Contract 3 has now formally entered
+[p011_c0008] _Master Page # 11 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 12
+
+[p012_c0001] execution, with notice to proceed issued effective April 27, 2026, at an approximate value of $1.015 billion. The next critical phase will involve project startup and coordination with adjacent contract work. The IEC identified several major delivery risks ahead, including tunnel boring machine operations, tunneling execution, and coordination among contract interfaces. These risks were described as well understood by the project team, which is actively addressing them through early planning, cross-contract coordination, and application of lessons learned from prior phases.
+[p012_c0002] The IEC also provided its first formal overview of the Interborough Express (IBX) light rail project, noting its significance as a major transit expansion intended to improve service access for underserved communities in Brooklyn and Queens. As project design and development advance over the coming year, the IEC will begin monitoring potential risks, reviewing cost and schedule performance, and reporting to the Board on the status of early design work and preparatory activities.
+### [p012_c0003] Procurement Actions
+[p012_c0004] Ian Goldrich, Senior Vice President and Deputy General Counsel, C&D, presented three procurement actions to the Capital Program Committee.
+[p012_c0005] Upon a motion duly made and seconded, the Capital Program Committee voted to bring the following procurement actions before the full MTA Board and recommended the following:
+- [p012_c0006] 1. Award of a publicly advertised and competitively solicited contract with EXP-Urbahn Joint Venture (Contract No. D81760) for design and engineering services to support the development of three Design-Build contracts for accessibility improvements and miscellaneous rehabilitation work on New York City Transit's Queens Boulevard, Grand Concourse and Nostrand Avenue Lines; 2. Ratification of a modification to a contract with East Harlem Community Collaborators JV (Contract No. 16457-0100) to provide continued community outreach services in support of Second Avenue Subway Phase 2; and, 3. Ratification of a modification to a contract with Hitachi Rail GTS USA Inc. (Contract No. S48013-2) to implement several software upgrades to the carbone CBTC equipment for the R211 fleet so that it complies with MTA's updated CBTC Interoperability Interface Specification.
+[p012_c0007] Refer to the staff summaries and documentation filed with the records of this meeting for the details of these items, and refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for Board members' and C&D representatives' comments.
+### [p012_c0008] Adjournment
+[p012_c0009] Upon motion duly made and seconded, Chairman Lieber adjourned the April 27, 2026, Capital Program Committee Meeting at 01:10 PM.
+[p012_c0010] Respectfully submitted, Lizzy Berryman MTA C&D, Contracts
+[p012_c0011] _Master Page # 12 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 13
+
+### [p013_c0001] Metropolitan Transportation Authority
+### [p013_c0002] 2025-2026 Capital Program Committee Work Plan
+### [p013_c0003] I. Recurring Agenda Items
+[p013_c0004] Approval of the Minutes Committee Work Plan Commitments/Completions and Funding Report
+### [p013_c0005] II. Specific Agenda Items
+### [p013_c0006] May 2026
+[p013_c0007] President's Update Agency Initiatives
+### [p013_c0008] June 2026
+[p013_c0009] President's Update Rolling Stock Diversity Quarterly Traffic Light Report
+### [p013_c0010] July 2026
+[p013_c0011] President's Update Signals
+### [p013_c0012] September 2026
+[p013_c0013] President's Update Agency Initiatives Quarterly Traffic Light Report
+### [p013_c0014] October 2026
+[p013_c0015] President's Update Stations
+### [p013_c0016] November 2026
+[p013_c0017] President's Update Railroads
+### [p013_c0018] December 2026
+[p013_c0019] President's Update Bridges & Tunnels Quarterly Traffic Light Report
+### [p013_c0020] January 2027
+[p013_c0021] President's Update Infrastructure
+### [p013_c0022] February 2027
+[p013_c0023] President's Update Agency Initiatives
+### [p013_c0024] March 2027
+[p013_c0025] President's Update Systems & OMNY Quarterly Traffic Light Report
+### [p013_c0026] April 2027
+[p013_c0027] President's Update Expansion
+[p013_c0028] _Master Page # 13 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 14
+
+### [p014_c0001] MTA Construction & Development
+### [p014_c0002] SAFETY SUMMARY
+> [p014_c0003] Month Other Recordable Lost Time May 2025 15 3 1 Jun 13 5 5 Jul 18 8 9 Aug 16 8 5 Sep 13 10 8 Oct 10 4 12 Nov 8 5 8 Dec 12 3 8 Jan 2026 12 8 3 Feb 11 1 6 Mar 10 11 13 Apr 13 10 6
+[p014_c0004] Lost Time - A work-related incident (injury or illness) to an employee that results in a loss of productive work time, and the employee is unable to perform regular job duties.
+[p014_c0005] Recordable - An injury or illness that results in restricted work or transfer to another job, medical treatment beyond first aid, or a loss of consciousness.
+[p014_c0006] Other: A combination of minor first-aid, medical events, and incidents notification-only.
+### [p014_c0007] SAFETY NARRATIVE
+### [p014_c0008] APRIL UPDATE:
+### [p014_c0009] CONTRACTOR WORKER INCIDENTS:
+- [p014_c0010] • A total of 29 safety incidents were reported in April 2026, including: - Six (6) lost time incidents. - Ten (10) recordable incidents. • The reported lost time incidents in April 2026 decreased by seven (7) incidents when compared to March 2026. • The top lost-time and recordable incident types for April 2026 were Struck by/Against (56%), Strain and Sprain (13%), Caught Between (6%). Slip, Trip, and Fall (25%).
+### [p014_c0011] SERIOUS INCIDENTS:
+- [p014_c0012] • No Serious Incidents
+### [p014_c0013] C&D EMPLOYEE INCIDENTS:
+- [p014_c0014] • No Reported Incidents
+### [p014_c0015] YEAR-TO-DATE TRENDS:
+- [p014_c0016] • LOST TIME INCIDENT TRENDS: A total of 28 Lost Time incidents were reported year-to-date through April 30, 2026. The injury types associated with lost-time incidents YTD are Struck by/Against (43%), Sprain/Strain (36%), Slip, Trip, and Fall (14%), and Caught in Between (7%). The number of reported lost time incidents decreased by seven (7) from the previous month. • RECORDABLE INCIDENT TRENDS: A total of 30 recordable incidents were reported year-to-date through April 30, 2026. The injury types associated with recordable incidents YTD are Struck By/Against (60%), Caught Between (10%), Sprain/Strain (20%), Slip, Trip, and Fall (10%). There was a decrease of one (1) recordable incident compared to the previous month.
+### [p014_c0017] INSPECTIONS & AUDITS: Active Capital Projects for APRIL - 181 Projects with 347 Sub-Projects
+- [p014_c0018] • April INSPECTIONS: - INTERNAL – 456 - EXTERNAL – 814 (77 Third-Party Safety Consultants; 737 OCIP Visits) • YTD TOTAL INSPECTIONS: - INTERNAL – 1542 - EXTERNAL – 3082 (280 Third-Party Safety Consultants; 2802 OCIP Visits)
+[p014_c0019] _C&D SAFETY SUMMARY_
+[p014_c0020] _Page 1 of 2_
+[p014_c0021] _Master Page # 14 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 15
+
+### [p015_c0001] Construction & Development
+### [p015_c0002] SAFETY SUMMARY
+- [p015_c0003] • APRIL TOP NEGATIVE OBSERVATIONS – Negative Findings identified through various inspections include General Safety/Housekeeping, Fire Protection/Prevention, Fall Protection, Maintenance and Protection of Traffic (MPT), Motor Vehicle/Heavy Equipment, and Industrial Hygiene. • APRIL TOP POSITIVE OBSERVATIONS - Positive Findings identified through various inspections include Supervision/Organization, Tools (Hand & Power), Stairs/Ladders, Electrical, Scaffolds/Aerial Work Platforms, and Track Safety. • INVESTIGATIONS (SERIOUS INJURY): • None reported this month
+### [p015_c0004] MTA C&D STRATEGIC INITIATIVES:
+### [p015_c0005] • Emergency Notification Procedure and Process Enhancement
+[p015_c0006] The C&D Emergency Management division is updating the Emergency Notification Procedure and associated processes to strengthen the reliability, accuracy, and efficiency of incident communications across the Agency. In coordination with Everbridge, efforts are underway to develop further and refine the notification platform to ensure timely and reliable reporting of incidents and operational updates. This initiative focuses on simplifying and streamlining the PCEO's reporting process, improving situational awareness, enhancing communication during emergencies, and ensuring stakeholders consistently receive accurate, actionable information.
+### [p015_c0007] • Security Coordination and Proactive Support
+[p015_c0008] The C&D Security division continues to work closely with its counterparts across the Operating Agencies to strengthen awareness, coordination, and response efforts related to security incidents and emerging concerns. Through ongoing collaboration and information sharing, the division is focused on identifying trends, addressing vulnerabilities, and improving overall security communication throughout the Agency. In addition to reactive support, Security is advancing proactive initiatives to provide greater operational support to the Business Units by enhancing engagement, increasing visibility into project and field activities, and promoting preventive measures that contribute to a more secure working environment across our capital programs.
+### [p015_c0009] • Safety Oversight and Proactive Inspection
+[p015_c0010] Safety Oversight initiatives continue to progress with a sustained focus on reducing incidents and reinforcing safe work practices across all active projects and work locations. Through proactive inspections, field observations, and continuous monitoring, Safety personnel are working to identify gaps, address non-compliant conditions, and verify that contractors and project teams maintain safe working environments in line with Agency and contractual safety requirements. These ongoing efforts support continuous improvement and help ensure that gaps are identified and mitigated before incidents occur, thereby contributing to safer, more efficient project delivery.
+### [p015_c0011] • Interagency Safety Collaboration
+[p015_c0012] We are actively strengthening our relationships with external agencies, transportation partners, and industry stakeholders to enhance safety performance through collaboration, knowledge sharing, and exchanging best practices. We encourage ongoing improvement by sharing operational experiences, lessons learned, oversight methods, and innovative safety strategies to foster stronger safety cultures across organizations. Additionally, we continue to support partner agencies, including the Port Authority, in developing and implementing a Safety Management System (SMS) by guiding program structure, governance, risk management, and organizational integration.
+[p015_c0013] _C&D SAFETY SUMMARY_
+[p015_c0014] _Page 2 of 2_
+[p015_c0015] _Master Page # 15 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 16
+
+### [p016_c0001] MTA Capital Program Commitments & Completions
+[p016_c0002] through April 30, 2026
+[p016_c0003] _Metropolitan Transportation Authority_
+[p016_c0004] _Master Page # 16 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 17
+
+### [p017_c0001] MTA Metropolitan Transportation Authority
+### [p017_c0002] Capital Projects – Construction Commitments – April 2026
+### [p017_c0003] MTA-wide 2026 Construction Commitments
+> [p017_c0004] Period Actual/Forecast ($ in millions) 2026 Annual Goal ($ in millions) 1Q $3,004 $1,632 2Q $3,120 $3,995 3Q $1,028 $1,539 4Q $5,394 $5,403 YTD $4,429 $3,181
+[p017_c0005] Annual Goals: Dollar and time-based programmatic milestones for the commitment of contracts established at the start of each year.
+[p017_c0006] Actuals: The value of the goals and any additional commitments as they are achieved during the year.
+[p017_c0007] Forecasts: The updated estimates by quarter for remaining goals as well as any unplanned commitments that might occur during the year.
+### [p017_c0008] Construction Commitments Summary
+[p017_c0009] In 2026, the MTA plans to make $12,545 billion worth of new construction commitments. Through April, the MTA has committed approximately $3.2 billion versus a goal of $4.4 billion. Commitments made to date included roughly, $1.1 billion for SAS2 Contract 3, $889 million as part of the GCT Trainshed Sector 2 project, $127 million worth of Structure and Station work on Staten Island, $115 million of track work for the LIRR, $528 million of track work advanced by the NYCT Department of Subways and $61 million for Metro-North's Cyclical Track Program. The $1.2 billion shortfall is largely attributable to project delays, with several projects now expected to be awarded later in the year, as well as non-major projects that slipped out of the current year. The MTA expects to achieve approximately 100% of its $12,545 billion plan by year-end.
+[p017_c0010] The MTA is tracking 35 major commitments in 2026. Any first quarter delays to major commitments are reported on the following pages. Any additional delays to major commitments will be reported in the future quarters.
+[p017_c0011] _Master Page # 17 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 18
+
+### [p018_c0001] MTA Metropolitan Transportation Authority
+### [p018_c0002] NYCT/MTA Bus Capital Projects – Commitments – April 2026 – Budget Analysis and Schedule Variances
+### [p018_c0003] NYCT and MTA Bus Budget Analysis
+[p018_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2026 Annual Goal $1,696 $1,480 $482 $4,358 $1,882 2026 Actual/Forecast $485 $2,615 $528 $4,290 $887
+```
+> [p018_c0005] 2026 Actual/Forecast vs 2026 Annual Goal ($ in millions) Period 2026 Annual Goal 2026 Actual/Forecast 1Q $1,696 $485 2Q $1,480 $2,615 3Q $482 $528 4Q $4,358 $4,290 YTD $1,882 $887
+### [p018_c0006] Schedule Variances
+[p018_c0007]
+
+```text
+Project Commitment Goal Actual(A) 5 NYCT/MTA Bus Amber Commitments Amber delays are within 2 months of goal. Line Structure Structural Repairs and Painting, 9th Ave Portal to Stillwell Construction Mar-26 $ 375.12 Jun-26 $ 375.12 Change in award date due ongoing bidder qualification process Column Repairs: Rockaway, New Lots, and Liberty Construction Mar-26 $ 147.87 Jun-26 $ 147.87 Change in award date reflects revised bid opening date due to bidder questions. SIR Stations and Structures (2020-24) Construction Mar-26 $ 127.06 Apr-26 (A) $ 128.41 Change in award date due to extended bidder qualification process. Project awarded 4/3/26.
+```
+[p018_c0008]
+
+```text
+Project Commitment Goal Actual(A) Signals & Communication ATS-B Complement & Siemens 5G DCS Radio Production Phase Construction Mar-26 $ 193.90 May-26 $ 187.07 Contract approved by March Board but Notice to Proceed cannot be executed until 30 days after Board approval due to statutory restriction for sole source awards Buses Purchase 100 Standard Buses Construction Mar-26 $ 97.64 Apr-26 (A) $ 106.27 Change in award date due to ongoing finalization of contract terms and conditions.
+```
+[p018_c0009] _Master Page # 18 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 19
+
+### [p019_c0001] MTA Metropolitan Transportation Authority
+### [p019_c0002] LIRR Capital Projects – Commitments – April 2026 – Budget Analysis and Schedule Variances
+### [p019_c0003] LIRR Budget Analysis
+[p019_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2026 Annual Goal $193 $633 $84 $294 $486 2026 Actual/Forecast $142 $197 $571 $262 $155
+```
+> [p019_c0005] LIRR Budget Analysis Data Period 2026 Annual Goal ($ in millions) 2026 Actual/Forecast ($ in millions) 1Q $193 $142 2Q $633 $197 3Q $84 $571 4Q $294 $262 YTD $486 $155
+### [p019_c0006] Schedule Variances
+[p019_c0007] There are no major schedule slippages to report for the Long Island Rail Road.
+[p019_c0008] _Master Page # 19 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 20
+
+### [p020_c0001] MTA Metropolitan Transportation Authority
+### [p020_c0002] MNR Capital Projects – Commitments – April 2026 – Budget Analysis and Schedule Variances
+### [p020_c0003] MNR Budget Analysis
+[p020_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2026 Annual Goal $161 $48 $382 $1 $203 2026 Actual/Forecast $110 $28 $349 $110 $119
+```
+> [p020_c0005] MNR Budget Analysis Data Period 2026 Annual Goal ($ in millions) 2026 Actual/Forecast ($ in millions) 1Q $161 $110 2Q $48 $28 3Q $382 $349 4Q $1 $110 YTD $203 $119
+### [p020_c0006] Schedule Variances
+[p020_c0007] There are no major schedule slippages to report for Metro-North Railroad.
+[p020_c0008] _Master Page # 20 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 21
+
+### [p021_c0001] MTA Metropolitan Transportation Authority
+### [p021_c0002] MTA Major Projects & Expansion – Commitments – April 2026 – Budget Analysis and Schedule Variances
+### [p021_c0003] MTA Major Projects & Expansion Budget Analysis
+[p021_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2026 Annual Goal $954 $904 $0 $533 $1,858 2026 Actual/Forecast $895 $1,124 $1 $534 $2,018
+```
+> [p021_c0005] MTA Major Projects & Expansion Budget Analysis (in millions) Period 2026 Annual Goal 2026 Actual/Forecast 1Q $954 $895 2Q $904 $1,124 3Q $0 $1 4Q $533 $534 YTD $1,858 $2,018
+### [p021_c0006] Schedule Variances
+[p021_c0007] There are no major schedule slippages to report for Major Projects & Expansion.
+[p021_c0008] _Master Page # 21 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 22
+
+### [p022_c0001] MTA Metropolitan Transportation Authority
+### [p022_c0002] B&T Capital Projects – Commitments – April 2026 – Budget Analysis and Schedule Variances
+### [p022_c0003] B&T Budget Analysis
+[p022_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2026 Annual Goal $0 $54 $80 $208 $0 2026 Actual/Forecast $0 $31 $91 $208 $0
+```
+> [p022_c0005] B&T Budget Analysis Data Quarter 2026 Annual Goal ($ in millions) 2026 Actual/Forecast ($ in millions) 1Q $0 $0 2Q $54 $31 3Q $80 $91 4Q $208 $208 YTD $0 $0
+### [p022_c0006] Schedule Variances
+[p022_c0007] There are no major schedule slippages to report for the MTA Bridges & Tunnels.
+[p022_c0008] _Master Page # 22 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 23
+
+### [p023_c0001] MTA Metropolitan Transportation Authority
+### [p023_c0002] Capital Projects – Construction Completions – April 2026
+[p023_c0003]
+
+```text
+Forecast MTA-wide 2026 Major Completions Post 2026 Jan-26 Feb-26 Mar-26 Apr-26 May-26 Jun-26 Jul-26 Aug-26 Sep-26 Oct-26 Nov-26 Dec-26 2026 Total 36 0 1 1 3 3 2 1 4 7 1 12 1 Jan-26 Feb-26 Mar-26 1 1 1 1 Apr-26 1 May-26 2 1 1 Jun-26 2 Jul-26 1 1 1 Aug-26 Sep-26 3 Oct-26 5 1 Nov-26 1 Dec-26 1 1
+```
+[p023_c0004] BLUE = Actual/Forecast earlier than Goal
+[p023_c0005] GREEN = Actual/Forecast matches Goal
+[p023_c0006] AMBER = Actual/Forecast within 2 months of Goal
+[p023_c0007] RED = Actual/Forecast beyond 2 months of Goal
+### [p023_c0008] Construction Completions Summary
+[p023_c0009] In 2026, the MTA expects to complete 80% of its $7,135 billion worth of projects for a target completion goal of $5,708 billion. Through April, the MTA completed $484 million of its YTD goal of $1.3 billion. The YTD variance of ~$800 million is mostly due to NYCT projects that are largely made up of NYCT Track Work, Purchase 25 Hybrid Locomotives, and ADA and Renewal: Borough Hall. All these projects are expected to be completed later in 2026. The year-end shortfall is impacted by NYCT's Paint/Structure Repair: King's Highway – West 8 th St. project that slipped into 2027.
+[p023_c0010] In 2026, the MTA is tracking 36 major completions. Of these, 8 "major" NYCT project completion dates have slipped, and 1 "major" MNR project completion date has slipped. The delays are explained on the following pages. All other major completions remain on target.
+### [p023_c0011] Budget Analysis
+[p023_c0012]
+
+```text
+2026 Total Planned Completions $7,135 80% 2026 Target Completions Goal $5,708 99% Current Annual Forecast $7,080
+```
+> [p023_c0013] The bar chart shows two categories on the y-axis: 'YTD Goal' and 'YTD Actual/Forecast'. The x-axis represents the amount in millions of dollars, ranging from $0 to $4,000. The 'YTD Goal' bar is blue and reaches $1,265 million. The 'YTD Actual/Forecast' bar is red and reaches $484 million. Category Value ($ in millions) YTD Goal $1,265 YTD Actual/Forecast $484
+[p023_c0014] _Master Page # 23 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 24
+
+### [p024_c0001] MTA Metropolitan Transportation Authority
+### [p024_c0002] NYCT/MTA Bus Capital Projects – Completions – April 2026 – Budget Analysis and Schedule Variances
+### [p024_c0003] NYCT and MTA Bus Budget Analysis
+[p024_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2026 Annual Goal $814 $1,338 $898 $2,132 $1,130 2026 Actual/Forecast $314 $1,406 $1,061 $2,321 $388 2026 Goal (Rolling Stock) $258 $0 $0 $0 $258 2026 Actual/Forecast (Rolling Stock) $0 $258 $0 $0 $0
+```
+> [p024_c0005] 2026 Annual Goal and Actual/Forecast Data Period 2026 Annual Goal ($ in millions) 2026 Actual/Forecast ($ in millions) 1Q $814 $314 2Q $1,338 $1,406 3Q $898 $1,061 4Q $2,132 $2,321 YTD $1,130 $388
+### [p024_c0006] Schedule Variances
+[p024_c0007]
+
+```text
+Project Completion Goal Act/Forec.
+```
+### [p024_c0008] 2 NYCT/MTA Bus Amber Completions
+[p024_c0009] Amber delays are within 2 months of goal.
+### [p024_c0010] Depots
+[p024_c0011]
+
+```text
+HVAC/CNG, Phase 2: Spring Creek Construction Mar-26 May-26 $ 34.4 $ 34.4
+```
+[p024_c0012] Change in schedule is due to ongoing fire alarm work to integrate existing devices with the new system.
+### [p024_c0013] Line Structure
+[p024_c0014]
+
+```text
+LSCRP: Lexington & Jerome Construction Oct-26 Dec-26 $ 82.1 $ 81.6
+```
+[p024_c0015] Change in schedule due to an increase in repair locations and coordination of track access to complete the additional work.
+[p024_c0016] _Master Page # 24 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 25
+
+### [p025_c0001] Metropolitan Transportation Authority
+### [p025_c0002] NYCT/MTA Bus Capital Projects – Completions – April 2026 – Budget Analysis and Schedule Variances
+[p025_c0003]
+
+```text
+Schedule Variances Project Completion Goal Actual(A) Project Completion Goal Actual(A) 6 NYCT/MTA Bus Red Completions (2 new this month) Red delays are delayed more than 2 months of goal. Stations ADA Borough Hall and Renewal (New) Construction Mar-26 $ 161.0 Jul-26 $ 161.0 Line Structure The change in schedule is due to impacts stemming from a gas line connection which delayed street level work. Paint/Structure Repair - King's Hwy - West 8th St / Culver Construction Dec-26 $ 98.5 Jul-27 $ 98.5 Change in schedule due to pending Surety takeover agreement and Notice to Proceed to the completion contractor. Sandy Mitigation: Substation Hardening (New) Construction Jul-26 $ 130.1 Oct-26 $ 153.8 Rehabilitate Forsyth St. Fan Plant Construction May-26 $ 87.6 Aug-26 $ 87.7 Change in schedule due to unplanned utility relocation in the easement area at Pierrepont substation. Change in schedule due to equipment supply constraints impacting installation and testing of specialized systems. New Revenue Vehicles Purchase 25 Hybrid Locomotives Purchase Mar-26 $ 257.8 Jun-26 $ 253.8 Change in schedule due to equipment supply constraints impacting installation and testing of specialized systems. The delay is partly attributable to prior fleet defect issues which required corrective actions from the vendor. Corrective actions have extended into 2026. Sandy Sandy Mitigation: Upgrade Emergency Booth Comm System (EBCS) Construction Jul-26 $ 84.9 Dec-26 $ 85.0 Change in schedule due to additional work orders and limited availability of in-house workforce for station surveys.
+```
+[p025_c0004] _Master Page # 25 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 26
+
+### [p026_c0001] MTA Metropolitan Transportation Authority
+### [p026_c0002] LIRR Capital Projects – Completions – April 2026 – Budget Analysis and Schedule Variances
+### [p026_c0003] LIRR Budget Analysis
+[p026_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2026 Annual Goal $ $107 $3 $910 $39 2026 Actual/Forecast $3 $108 $51 $875 $31
+```
+[p026_c0005]
+
+```text
+2026 Goal (Rolling Stock) $0 $0 $0 $0 $0 2026 Actual/Forecast (Rolling Stock) $0 $0 $0 $0 $0
+```
+> [p026_c0006] 2026 Annual Goal and Actual/Forecast Data Period 2026 Annual Goal ($ in millions) 2026 Actual/Forecast ($ in millions) 1Q $0 $3 2Q $107 $108 3Q $3 $51 4Q $910 $875 YTD $39 $31
+### [p026_c0007] Schedule Variances
+[p026_c0008] There are no major schedule slippages to report for the Long Island Rail Road.
+[p026_c0009] _Master Page # 26 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 27
+
+### [p027_c0001] MTA Metropolitan Transportation Authority
+### [p027_c0002] MNR Capital Projects – Completions – April 2026 – Budget Analysis and Schedule Variances
+### [p027_c0003] MNR Budget Analysis
+[p027_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2026 Annual Goal $76 $77 $37 $397 $81 2026 Actual/Forecast $48 $10 $40 $492 $50
+```
+[p027_c0005]
+
+```text
+2026 Goal (Rolling Stock) $0 $0 $0 $0 $0 2026 Actual/Forecast (Rolling Stock) $0 $0 $0 $0 $0
+```
+> [p027_c0006] ■ 2026 Annual Goal ■ 2026 Actual/Forecast 2026 Budget Analysis Data (in millions) Period 2026 Annual Goal 2026 Actual/Forecast 1Q $76 $48 2Q $77 $10 3Q $37 $40 4Q $397 $492 YTD $81 $50
+### [p027_c0007] Schedule Variances
+[p027_c0008]
+
+```text
+Project Completion Goal Act./Forec.
+```
+### [p027_c0009] 1 Metro-North Red Completions (1 new this month)
+[p027_c0010] Red delays are delayed more than 2 months of goal.
+[p027_c0011] Stations
+[p027_c0012]
+
+```text
+New Fare Payment Equipment (New) Construction May-26 Oct-26 $ 72.0 $ 72.0
+```
+[p027_c0013] A recent additional work order to the contract has impacted the delivery schedule, including a temporary pause for the development of functionality.
+[p027_c0014] _Master Page # 27 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 28
+
+### [p028_c0001] MTA Metropolitan Transportation Authority
+### [p028_c0002] MTA Major Projects & Expansion – Completions – April 2026 – Budget Analysis and Schedule Variances
+> [p028_c0003] MTA Major Projects & Expansion Budget Analysis Summary Chart Data 1Q 2Q 3Q 4Q YTD 2026 Annual Goal $15 $0 $0 $0 $15 2026 Actual/Forecast $0 $16 $2 $5 $15 ■ 2026 Annual Goal ■ 2026 Actual/Forecast
+### [p028_c0004] Schedule Variances
+[p028_c0005] There are no major schedule slippages to report for Major Projects & Expansion.
+[p028_c0006] _Master Page # 28 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 29
+
+### [p029_c0001] Metropolitan Transportation Authority
+### [p029_c0002] B&T Capital Projects – Completions – April 2026 – Budget Analysis and Schedule Variances
+### [p029_c0003] B&T Budget Analysis
+[p029_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2026 Annual Goal $0 $10 $203 $47 $0 2026 Actual/Forecast $0 $10 $203 $48 $0
+```
+> [p029_c0005] ■ 2026 Annual Goal ■ 2026 Actual/Forecast B&T Budget Analysis Data (in millions) Period 2026 Annual Goal 2026 Actual/Forecast 1Q $0 $0 2Q $10 $10 3Q $203 $203 4Q $0 $48 YTD $0 $0
+### [p029_c0006] Schedule Variances
+[p029_c0007] There are no major schedule slippages to report for MTA Bridges and Tunnels.
+[p029_c0008] _Master Page # 29 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 30
+
+### [p030_c0001] Status of MTA Capital Program Funding
+[p030_c0002] _Metropolitan Transportation Authority_
+[p030_c0003] _Master Page # 30 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 31
+
+### [p031_c0001] Capital Funding (April 2026) $ in millions
+> [p031_c0002] Capital Program Secured ($ in millions) Remainder ($ in millions) 2025-2029 $2,087 ~$10,000 2020-2024 $32,070 ~$10,000 2015-2019 $31,323 ~$10,000 1982-2014 $10,415 ~$10,000
+[p031_c0003] Federal funds are recognized as "Secured" after they are available to MTA pursuant to an executed grant agreement or a full funding grant agreement. Bond proceeds and State funding are recognized at the time of their receipt. City funds are recognized as "Secured" after they are available to MTA pursuant to an executed letter agreement. Amounts listed under "Secured" may not have been fully received by MTA as of the date of this report.
+[p031_c0004] _Master Page # 31 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 32
+
+### [p032_c0001] Capital Funding Detail (April 2026)
+[p032_c0002] $ in millions
+[p032_c0003]
+
+```text
+Funding Plan Secured Remainder Current Thru March April Secured to date 2015-2019 Program Federal Formula $4,706 $4,706 $ - $4,706 $ - Federal Flex & Other (Incl HSR/Security/Core Capacity) 649 628 - 628 20 Federal New Start 1,400 1,400 - 1,400 - State Assistance 9,118 8,248 - 8,248 871 City Capital Funds 2,092 2,066 - 2,066 27 City Non-Tax Levy Revenue Sources 600 - - - 600 MTA Bonds & PAYGO 11,203 11,203 - 11,203 - Asset Sales/Leases 906 326 - 326 581 Other 267 70 - 70 197 B&T Bonds & PAYGO/Asset Sale 2,677 2,677 - 2,677 - Total 33,619 31,323 - 31,323 2,295 7%
+```
+[p032_c0004]
+
+```text
+Funding Plan Secured Remainder Current Thru March April Secured to date 2020-2024 Program Capital from Central Business District Tolling* $15,000 $1,799 $ - $1,799 $13,201 Capital from New Revenue Sources* 10,000 7,251 - 7,251 2,749 MTA Bonds and PAYGO 6,041 1,540 - 1,540 4,501 Other Contribution 177 3 - 3 175 Federal Formula 9,984 10,615 29 10,644 (660) a State of New York 3,159 1,561 - 1,561 1,598 City of New York 3,052 3,031 - 3,031 21 Federal New Start (SAS Ph2) 2,005 2,005 - 2,005 - Federal Flexible & Other 2,761 2,675 - 2,675 86 B&T Bonds & CBDT Infrastructure 3,253 1,560 - 1,560 1,692 Total 55,432 32,041 29 32,070 23,362 42%
+```
+[p032_c0005]
+
+```text
+Funding Plan Secured Remainder Current Thru March April Secured to date 2025-2029 Program MTA Capital Lockbox^ $31,500 $ - $ - - $31,500 Federal Formula, Flexible and Competitive Grants and Loans $14,000 1,905 2 1,907 12,093 b MTA Bonds and PAYGO $9,700 - - - 9,700 State of New York $4,200 100 - 100 4,100 City of New York $3,000 80 - 80 2,920 Additional MTA Self-Funding $3,000 - - - 3,000 B&T Bond & PAYGO $3,000 - - - 3,000 Total 68,400 2,085 2 2,087 66,313 97%
+```
+[p032_c0006] _a) Receipt of $29m in federal funds for NYCT Flatbush Bus Depot project in the 2020-2024 Capital Program. b) Receipt of $2m in federal funds for MTA Bus company project support in the 2025-2029 Capital Program. Note: Federal funds are recognized as "Secured" after they are available to MTA pursuant to an executed grant agreement or a full funding grant agreement. Bond proceeds and State funding are recognized at the time of their receipt. City funds are recognized as "Secured" after they are available to MTA pursuant to an executed letter agreement. Amounts listed under "Secured" may not have been fully received by MTA as of the date of this report. * Proceeds from bonds and notes payable from the 2020-2024 MTA Capital Lockbox are recognized at the time of receipt. Capital Lockbox amounts applied directly to fund projects will be recognized annually, beginning in December 2025, except for CRZ amounts which will be recognized beginning December 2026. ^ Proceeds from bonds and notes payable from the 2025-2029 MTA Capital Lockbox are recognized at the time of receipt. Capital Lockbox amounts applied directly to fund projects will be recognized annually, beginning in December 2025._
+[p032_c0007] _Master Page # 32 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 33
+
+### [p033_c0001] Construction & Development
+### [p033_c0002] Contracts Department
+[p033_c0003] Evan Eisland, Executive Vice President and General Counsel
+[p033_c0004] PROCUREMENT PACKAGE MAY 2026
+[p033_c0005] _Master Page # 33 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 34
+
+### [p034_c0001] Construction & Development
+### [p034_c0002] PROCUREMENTS
+[p034_c0003] The Procurement Agenda this month includes 4 actions for a proposed expenditure of $ 39.7 M.
+[p034_c0004] _Master Page # 34 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 35
+
+### [p035_c0001] Staff Summary
+### [p035_c0002] Page 1 of 1
+[p035_c0003]
+
+```text
+Subject Request Authorization for Several Procurement Actions Contracts Department Evan Eisland, Executive Vice President and General Counsel Board Action Order To Date Approval Info Other 1 Capital Program Committee 5/20/26 X 2 Board 5/20/26 X
+```
+[p035_c0004]
+
+```text
+Date: May 15, 2026 Internal Approvals Approval Approval X Deputy Chief Development Officer, Delivery X President X Deputy Chief Development Officer, Development X Executive Vice President & General Counsel
+```
+### [p035_c0005] Purpose
+[p035_c0006] To obtain the approval of the Board to award several procurement actions and to inform the Capital Program Committee of these procurement actions.
+### [p035_c0007] Discussion
+[p035_c0008] MTA Construction & Development proposes to award Competitive Procurements in the following categories:
+[p035_c0009]
+
+```text
+Schedules Requiring Two-Thirds Vote # of Actions $ Amount C. Competitive Requests for Proposals (Award of Purchase and Public Work Contracts) 1 $ 36,589,000 SUBTOTAL 1 $ 36,589,000
+```
+[p035_c0010] MTA Construction & Development proposes to ratify awards in the following category:
+[p035_c0011]
+
+```text
+Schedules Requiring Majority Vote # of Actions $ Amount K. Ratification of Completed Procurement Actions 3 $ 3,063,863 SUBTOTAL 3 $ 3,063,863 TOTAL 4 $ 39,652,863
+```
+### [p035_c0012] Budget Impact
+[p035_c0013] The approval of these procurement actions will obligate capital and operating funds in the amounts listed. Funds are available in the capital program and operating budgets for this purpose.
+### [p035_c0014] Recommendation
+[p035_c0015] That the procurement actions be approved as proposed. (The items are included in the resolution of approval at the beginning of the Procurement Section.)
+[p035_c0016] _Master Page # 35 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 36
+
+### [p036_c0001] MTA Construction & Development
+### [p036_c0002] BOARD RESOLUTION
+[p036_c0003] WHEREAS , in accordance with Sections 559, 2879, 1209 and 1265-a of the Public Authorities Law and the All Agency General Contract Procurement Guidelines, the Board authorizes the award of certain non-competitive purchase and public works contracts, and the solicitation and award of request for proposals in regard to purchase and public work contracts; and
+[p036_c0004] WHEREAS , in accordance with the All Agency Service Contract Procurement Guidelines and the All Agency General Contract Procurement Guidelines, the Board authorizes the award of certain non-competitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts; and
+[p036_c0005] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Guidelines for Procurement of Services, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p036_c0006] NOW, the Board resolves as follows:
+- [p036_c0007] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract. 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals and authorizes the solicitation of such proposals. 3. As to each request for proposals (for purchase and public work contracts set forth in Schedule C for which a recommendation is made to award the contract), the Board authorizes the execution of said contract. 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein, and ratifies each action for which ratification is requested. 5. The Board authorizes the execution of each of the following for which Board authorization is required: i) the miscellaneous procurement contracts set forth in Schedule E; ii) the personal service contracts set forth in Schedule F; iii) the miscellaneous service contracts set forth in Schedule G; iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; v) the contract modifications to purchase and public work contracts set forth in Schedule I; vi) the modifications to miscellaneous procurement contracts set forth in Schedule J. 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p036_c0008] _Master Page # 36 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 37
+
+### [p037_c0001] Construction & Development
+[p037_c0002] MAY 2026
+### [p037_c0003] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p037_c0004] Procurements Requiring Two-Thirds Vote:
+### [p037_c0005] Schedule C. Competitive Requests for Proposals (Award of Purchase and Public Work Contracts) (Staff Summaries required for all items requiring Board approval.)
+- [p037_c0006] 1. RCC/GCCOM A Joint Venture LCC $36,589,000 Staff Summary Attached Contract No. 6532
+[p037_c0007] MTA Construction and Development requests Board approval to award a publicly advertised and competitively solicited contract for design-build services for the replacement of three bridges on Long Island Rail Road's Montauk Branch.
+[p037_c0008] _Master Page # 37 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 38
+
+### [p038_c0001] Staff Summary
+### [p038_c0002] Schedule C: Competitive Requests for Proposals (Award of Purchase and Public Works Contracts)
+### [p038_c0003] Page 1 of 2
+[p038_c0004]
+
+```text
+Item Number 1 Department, Department Head Name: Delivery, LIRR, Daniel Romeo, Vice President Board Reviews Order To Date Approval Info Other 1 Capital Program Committee 5/20/26 X 2 Board 5/20/26 X Internal Approvals Order Approval Order Approval X Deputy Chief, Development X Executive Vice President & General Counsel X Deputy Chief, Delivery X President
+```
+[p038_c0005]
+
+```text
+SUMMARY INFORMATION Vendor Name Contract Number RCC/GCCOM A Joint Venture LCC 6532 Description Design-Build Services for Replacement of East End Bridges Total Amount 1. Design Build Contract $36,589,000 2. Stipend $300,000 Contract Term (including Options, if any) 721 Calendar Days Option(s) included in Total Amount? Yes No N/A Renewal? Yes No Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Funding Source Operating Capital Federal Other:
+```
+### [p038_c0006] ACTION REQUESTED
+[p038_c0007] MTA Construction & Development (“C&D”) requests Board approval to award a publicly advertised and competitively solicited contract for design-build services for the replacement of three bridges on the Long Island Rail Road (“LIRR”) Montauk Branch (the “Contract”) to RCC/GCCOM A Joint Venture LLC (“RGJV”), a joint venture between Railroad Construction Company, Inc. and GCCOM Construction Company, Inc. The Contract is in the amount of $36,589,000 and for a duration of 721 Calendar Days. In accordance with MTA policy regarding the use of design-build contracts, and to enhance competition and defray proposal costs, this solicitation includes a stipend of $100,000 to be paid to each of the three unsuccessful proposers for a total amount of $300,000.
+### [p038_c0008] DISCUSSION
+[p038_c0009] This Contract is to replace three existing roadway bridges over LIRR’s Montauk Branch, the River Avenue and Sagg Road bridges in the town of Southampton and the Cranberry Hole Road bridge in the town of East Hampton, New York. The three bridges are all over 100 years old with significant deterioration. The River Avenue and Cranberry Hole Road bridges are currently closed to vehicular traffic and the Sagg Road bridge is currently restricted to loads under five tons. The work consists of demolishing the existing roadway bridges and designing and constructing new roadway bridges. Additionally, the work includes roadway approach work to accommodate the new bridge structures and construction of a drainage system at each of the three locations.
+[p038_c0010] A two-step procurement process was conducted for this Contract. In Step 1, a Request for Qualifications was advertised resulting in the submission of nine Statements of Qualifications, which were then evaluated against pre-established Threshold Criteria (addressing completeness, timeliness, capacity, responsibility, and financial capability) and Substantive Evaluation Criteria (addressing team, key personnel and organization, project approach, prior experience, past performance and diversity compliance). Based on these criteria, the following four firms were selected to receive a Request for Proposal (“RFP”) in Step 2:
+[p038_c0011] _Master Page # 38 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 39
+
+### [p039_c0001] MTA Construction & Development
+- [p039_c0002] • RGJV, • Civetta-Northeast JV (“Civetta-Northeast”), a Joint Venture between John Civetta & Sons, Inc. and Northeast Structural Steel, Inc., • H&L Contracting LLC (“H&L”), and • Posillico Civil, Inc. (“Posillico”).
+[p039_c0003] In response to the RFP, Civetta-Northeast, H&L, Posillico, and RGJV all submitted technical and price proposals. The selection committee, consisting of representatives from C&D Delivery, Development, and Contracts, reviewed the technical proposals and attended the oral presentations of each of the four teams. The selection committee evaluated the technical proposals using the following preestablished selection criteria: design and construction, schedule, management plan, experience, record of performance, safety and quality, diversity practices, and other relevant matters. After evaluating technical proposals, the selection committee opened the price proposals which were as follows: Civetta-Northeast: $43,417,500; H&L: $49,996,000; Posillico: $40,118,819; and RGJV: $36,589,000.
+[p039_c0004] After reviewing the price proposals, the selection committee invited Posillico and RGJV for negotiations. Civetta-Northeast and H&L were not invited as their proposals were outside of the competitive range. Following negotiations, Posillico submitted a Best and Final Offer (“BAFO”) in the amount of $39,923,619, while RGJV confirmed its initial Price Proposal of $36,589,000.
+[p039_c0005] The selection committee unanimously recommended RGJV for award of the Contract. In addition to providing the lowest price, the selection committee determined that RGJV’s proposal offered the best value to the MTA in light of the quality of its technical proposal. RGJV’s proposal included adjusted roadway profiles that reduced utility relocation work. Additionally, its proposal reduced Railroad-supplied services needed for the project, including a proposed track barrier implementation plan that will reduce flagging needs and a technical approach to demolish and install the bridges without the need for track outages. RGJV’s BAFO of $36,589,000 is deemed to be fair and reasonable.
+[p039_c0006] In connection with the review of RGJV and its joint venture partners’, Railroad Construction Company, Inc. and GCCOM Construction Company, Inc., responsibility pursuant to the All-Agency Responsibility Guidelines, no significant adverse information was discovered and RGJV and its joint venture partners are determined to be responsible vendors.
+### [p039_c0007] DBE/MBE/WBE/SDVOB/Local Hiring Information
+[p039_c0008] The MTA Department of Diversity and Civil Rights has established an MBE goal of 15%, WBE goal of 15%, and SDVOB goal of 6% for the Contract. RGJV is committed to meeting the goals requirements. RGJV has not recently completed any MTA contracts with goals; therefore, no assessment of the performance is available at this time.
+### [p039_c0009] IMPACT ON FUNDING
+[p039_c0010] Funding for the Contract and the stipend for the unsuccessful proposer is included in the MTA’s 2020-2024 Capital Programs.
+### [p039_c0011] ALTERNATIVES
+[p039_c0012] None recommended. MTA lacks available in-house technical personnel to perform the scope of work associated with this Contract.
+[p039_c0013] _Master Page # 39 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 40
+
+### [p040_c0001] Construction & Development
+[p040_c0002] MAY 2026
+### [p040_c0003] LIST OF RATIFICATIONS FOR BOARD APPROVAL
+### [p040_c0004] Procurements Requiring Majority Vote:
+### [p040_c0005] Schedule K. Ratification of Completed Procurement Actions (Involving Schedule E – J)
+[p040_c0006] (Staff Summaries required for all items requiring Board approval)
+- [p040_c0007] 2. In House Group, Inc. $75,000 Staff Summary Attached Contract No. 1000197600
+[p040_c0008] MTA Construction and Development requests Board ratification of a modification for the replacement of additional sidewalk and the construction of additional retaining wall.
+- [p040_c0009] 3. Turner & Townsend, Inc. $2,406,313 Staff Summary Attached Contract No. CS00017C
+[p040_c0010] MTA Construction and Development requests Board ratification of a modification to continue to support the development of processes, policies, procedures and manuals for the delivery of the MTA's Capital Program through February 26, 2027.
+- [p040_c0011] 4. S&P Construction Management, Inc. $582,550 Staff Summary Attached Contract No. RKC-2302
+[p040_c0012] MTA Construction and Development requests Board ratification of a modification for various civil, mechanical and electrical work at the RFK Fleet Garage and to extend the Substantial Completion date by 12 months to April 22, 2027.
+[p040_c0013] _Master Page # 40 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 41
+
+### [p041_c0001] Staff Summary
+### [p041_c0002] Schedule K: Ratification of Completed Procurement Action
+[p041_c0003] Page 1 of 1
+[p041_c0004] Item Number: 2
+[p041_c0005]
+
+```text
+Vendor Name (& Location) In House Group, Inc. Description Installation of Bike Racks at 14 Metro North Stations and Sidewalk Reconstruction at Hastings-On-Hudson Station Contract Term (including Options, if any) April 3, 2025 to February 3, 2026 Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Dept/Div & Dept/Div Head Name: Delivery, Mark Roche, Deputy Chief Development Officer
+```
+[p041_c0006]
+
+```text
+Contract Number AWO/Modification # 1000197600 01 Original Amount: $ 679,075 Prior Modifications: $ 0 Prior Budgetary Increases: $ 0 Current Amount: $ 679,075 This Request: $ 75,000 % of This Request to Current Amount: 11% % of Modifications (including This Request) to Original Amount: 11%
+```
+### [p041_c0007] DISCUSSION:
+[p041_c0008] This Contract, awarded under the MTA's Small Business Mentoring Program, provides for the installation of bicycle racks and related work at 14 Metro-North Stations on the Harlem, Hudson, Pascack Valley, and Port Jervis Lines. MTA Construction and Development ("C&D") requests that the Board approve Modification No. 01 for the replacement of additional sidewalk and construction of additional retaining wall.
+[p041_c0009] At the Hastings-on-the-Hudson Station, in addition to the installation of bicycle racks, the work includes sidewalk and retaining wall reconstruction. Due to recurring flooding events that occurred in late August 2021, additional sections of the retaining wall collapsed, causing the subgrade to washout, compromising additional areas of the sidewalk. Field surveys confirmed that both the north and south ends of the project area exhibited deterioration and loss of subgrade support that extends beyond the Contract limits.
+[p041_c0010] To address this deterioration, C&D's project management recommended replacing approximately 22 linear feet of additional sidewalk and 12 linear feet of additional retaining wall. To mitigate any further delays and eliminate additional costs for remedialization to the area, authorization was obtained from the President of C&D, to allow the contractor to commence work up to a not-to-exceed amount of $33,000.
+[p041_c0011] The Contractor submitted a cost proposal in the amount of $194,143.40. Negotiations resulted in agreement on a lump sum price of $75,000, which is considered fair and reasonable. This modification is being presented to the Board pursuant to Article 8 of the All-Agency General Contract Procurement Guidelines because it increases the total contract price by more than ten percent of the original value.
+[p041_c0012] _Master Page # 41 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 42
+
+### [p042_c0001] Staff Summary
+### [p042_c0002] Schedule K: Ratification of Completed Procurement Actions
+[p042_c0003] Page 1 of 1
+[p042_c0004] Item Number: 3
+[p042_c0005]
+
+```text
+Vendor Name (& Location) Turner & Townsend, Inc. Description MTA C&D Delivery Program and Project Controls Consultant Contract Term (including Options, if any) January 22, 2024, to April 28, 2026 Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Dept/Div & Dept/Div Head Name: Delivery, Mark Roche, Deputy Chief Development Officer
+```
+[p042_c0006]
+
+```text
+Contract Number CS00017C AWO/Modification # 4 Original Amount: $ 5,415,670 Prior Modifications: $ 462,745 Prior Budgetary Increases: $ 0 Current Amount: $ 5,878,415 This Request: $ 2,406,313 % of This Request to Current Amount: 40.9% % of Modifications (including This Request) to Original Amount: 48.8%
+```
+### [p042_c0007] Discussion:
+[p042_c0008] This Contract, which was awarded to Turner & Townsend, Inc. ("T&T") on January 22, 2024, provides for the development of processes, policies, procedures and manuals in support of the delivery of the MTA's Capital Program. MTA Construction and Development ("C&D") requests Board ratification of a modification, in the not-to-exceed amount of $2,406,313, to supplement and continue providing these services through February 26, 2027.
+[p042_c0009] Pursuant to this Modification, T&T will provide technical training on the new Project Controls manual, provide support in implementing the manual, and develop additional standards and procedures for project management activities to be incorporated into the manual. These efforts will support C&D's objective to standardize processes, improve project controls, and enhance interdepartmental coordination.
+[p042_c0010] T&T submitted its cost proposal in the amount of $2,558,079. Negotiations yielded a final price of $2,406,313, which is considered fair and reasonable. To prevent any interruptions in service, authorization was obtained from the President of C&D in the not-to-exceed amount of $500,000 for the Consultant to commence the work under this Contract extension while this modification is being processed.
+[p042_c0011] _Master Page # 42 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 43
+
+### [p043_c0001] Staff Summary
+### [p043_c0002] Schedule K: Ratification of Completed Procurement Action
+[p043_c0003] Page 1 of 1
+[p043_c0004] Item Number: 4
+[p043_c0005]
+
+```text
+Vendor Name (& Location) S&P Construction Management, Inc. Description RFK Fleet Garage Exit Corridor Repairs, Randall's Island Contract Term (including Options, if any) January 24, 2025 – April 26, 2026 Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Dept/Div & Dept/Div Head Name: Delivery, Mark Roche, Deputy Chief Development Officer
+```
+[p043_c0006]
+
+```text
+Contract Number AWO/Modification # RKC-2302 01 Original Amount: $ 2,725,000 Prior Modifications: $ 0 Prior Budgetary Increases: $ 0 Current Amount: $ 2,275,000 This Request: $ 582,550 % of This Request to Current Amount: 21% % of Modifications (including This Request) to Original Amount: 21%
+```
+### [p043_c0007] DISCUSSION:
+[p043_c0008] The Contract, awarded under the MTA's Small Business Mentoring Program, provides for the rehabilitation and repair of exit corridors and miscellaneous spaces in MTA Bridges and Tunnels' RFK Fleet Garage at Randall's Island. MTA Construction and Development ("C&D") requests Board ratification of a modification for various civil, mechanical and electrical work at the RFK Fleet Garage and to extend the Substantial Completion date by 12 months to April 22, 2027.
+[p043_c0009] Post-award surveys conducted by the Contractor identified differing site conditions and other discrepancies between the Contract drawings and actual field conditions. A joint survey with C&D's project management and the contractor confirmed these issues and C&D issue revised Contract drawings to provide for, among other things: (1) new sloped base slabs with additional floor drains and a new sump pump to maintain proper drainage; and (2) replacement of the fuel canopy roof due to excessive deterioration of the existing roof and underpinning to support the new canopy roof. Additionally, certain elements of the work were deleted from the scope of the project because, in light of the differing site conditions, they were not feasible to include. In particular, a new door and stair was removed from the scope of the Contract as was the installation of a steel canopy structure over the north corridor and three drywells. These changes appear to be the result of in-house design errors or omissions. C&D's Delivery Service Office is evaluating the cause of these issues in order to prevent similar issues from recurring.
+[p043_c0010] This modification will address both the added work and the deleted work and also compensate the contractor for 12 months of delay caused by the need to redesign the elements of work affected by the site conditions.
+[p043_c0011] The Contractor submitted cost proposals totaling $324,447.49 for the additional work and $328,543.35 for impact costs totaling $652,990.84. Negotiations resulted in agreement on a lump sum price of $582,550, comprised of $273,461 for the additional work and $309,089 for impact costs associated with the delay, which is considered fair and reasonable. This modification also includes an extension of the date of Substantial Completion by 12 months from April 26, 2026 to April 22, 2027. This modification is being presented to the Board pursuant to Article 8 of the All-Agency General Contract Procurement Guidelines because it increases the total contract price by more than ten percent of the original value.
+[p043_c0012] _Master Page # 43 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 44
+
+### [p044_c0001] Staff Summary
+### [p044_c0002] Page 1 of 2
+[p044_c0003]
+
+```text
+Subject METS-WILLETS POINT STATION STATE OF GOOD REPAIR DESIGN SERVICES Department CONSTRUCTION & DEVELOPMENT Department Head Name JAMIE TORRES-SPRINGER Department Head Signature Project Manager Name WILLIAM MONTANILE
+```
+[p044_c0004]
+
+```text
+Date MAY 20, 2026 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p044_c0005]
+
+```text
+Board Action Order To Date Approval Info Other 1 Capital Program Committee 3/20/26 X 2 Board 3/20/26 X 3 Finance 3/20/26 X
+```
+[p044_c0006]
+
+```text
+Internal Approvals Order Approval Order Approval X Legal X Chief Development Officer X Chief Financial Officer
+```
+[p044_c0007] AGENCY: Metropolitan Transportation Authority (“MTA”), MTA Construction and Development (“C&D”) AWARDEE/GRANTEE: Queens Future, LLC (“Queens Future” or the “Developer”) LOCATION: Mets-Willets Point Station on the IRT Flushing Line (“Station”) ACTION REQUESTED: Approval to enter into a Design Agreement for State of Good Repair Inspection and Design Services AMOUNT: $1,810,621
+### [p044_c0008] COMMENTS:
+[p044_c0009] In December 2025, Queens Future, a joint venture consisting of Hard Rock Casino and Steve Cohen, owner of the New York Mets, was awarded one of three downstate gaming licenses by the New York State Gaming Commission. The proposed project will include a casino gaming facility, hotel, live music venue, public park, food hall and multiple garages. The majority of the project will be located on the parking lots located north of Roosevelt Avenue and some facilities, including a parking garage and recreational fields will be located on the parking lots south of Roosevelt Avenue. In connection with that gaming license, Queens Future has committed to pay for and construct improvements to make the Mets-Willets Point Subway Station fully ADA-accessible along with other Station improvements, including a major renovation to the Station mezzanine level and the replacement of windscreens, lighting, and painting of the mezzanine, platforms and canopies and to complete those improvements prior to the issuance of a temporary or other certificate of occupancy for any portion of the project, including the opening of gaming operations. The Developer and its consultants are currently working with MTA on advancing the design of the station improvements.
+[p044_c0010] In 2023, MTA retained the engineering firm STV, Inc. (“STV”) to inspect the Station and to generate an inspection report. A state of good repair report for the Station was subsequently prepared from that information. This report summarizes architectural and structural deficiencies at the Station and include STV’s recommendations to remedy the various
+[p044_c0011] _Master Page # 44 of 45 - Capital Program Committee Meeting 5/20/2026_
+
+## Page 45
+
+### [p045_c0001] Staff Summary
+### [p045_c0002] Metropolitan Transportation Authority
+### [p045_c0003] Page 2 of 2
+### [p045_c0004] CAPITAL PROGRAM COMMITTEE MEETING
+### [p045_c0005] Mets-Willets Point Station State of Good Repair Design Services
+[p045_c0006] deficiencies observed. In order to advance the work to remedy these deficiencies, further detailed inspections and a design are required.
+[p045_c0007] Queens Future has also retained STV as the designer for its project and for the Station improvements that it is obligated to perform as a condition of its gaming license. Given the timing of that project, and the need to look at the entire station comprehensively in developing a design that will address both the work that Queens Future is obligated to perform and the state of good repair work that MTA needs performed, Queens Future has agreed to include the detailed inspection and design services for the MTA's state of good repair work in its contract with STV for its project. Procuring these design services under a single contract will allow for them to be analyzed in a coordinated, expeditious and cost-efficient manner.
+[p045_c0008] C&D requested that Queens Future provide a proposal for STV to perform MTA's state of good repair inspection and design services. The deliverables will include an updated inspection report, conceptual design, 60% design and 100% design documents. In response, Queens Future provided a proposal for STV to provide those services in the amount of $1,862,647. Negotiations resulted in a negotiated price of $1,810,621 and confirmed STV's technical approach and deliverables. MTA C&D has determined this amount to be fair and reasonable.
+### [p045_c0009] RECOMMENDATION:
+[p045_c0010] Based on the foregoing, C&D recommends and requests that the Board approve entering into a Design Agreement with Queens Future which will allow for STV to provide the design services for MTA's state of good repair work at the Station.
+[p045_c0011] _Master Page # 45 of 45 - Capital Program Committee Meeting 5/20/2026_

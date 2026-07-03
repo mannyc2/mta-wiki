@@ -1,0 +1,317 @@
+{
+  "note_id": "codex-identity-batch155-prep",
+  "batch": "identity155",
+  "created_at": "2026-06-23T07:40:07Z",
+  "scope": {
+    "global_kind": "route/corridor",
+    "included_kinds": [
+      "route",
+      "corridor"
+    ],
+    "selection_note": "Codex-only deterministic prep from current route/corridor canonical JSONL, current merges, current do-not-merge guards, and live validateRepo duplicate_global_identity messages after identity149-152 were applied. Proposals avoid stale ids, already-applied route/corridor aliases from identity147/151, identity144 route/corridor aliases, existing merge aliases, alias records that are already merge targets, target records that are merge aliases, do-not-merge pairs, and corridor segment/superset traps."
+  },
+  "prepared_count": 5,
+  "proposed_aliases": [
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_south-bronx-crosstown",
+      "target_id": "corridor_bx6-south-bronx",
+      "canonical_id": "corridor_bx6-south-bronx",
+      "confidence": "high",
+      "validator_duplicate_key": "corridor_bx6-south-bronx",
+      "reason": "Both current records identify the Bx6 South Bronx Crosstown corridor. The alias is a two-source South Bronx Crosstown record with Hunts Point to Riverside Drive limits; the target is the consolidated Bx6 South Bronx corridor with matching Hunts Point/Riverside Drive scope and richer Bx6 SBS planning evidence.",
+      "validator_evidence": {
+        "duplicate_issues": [
+          "Global corridor records corridor_bx6-south-bronx and corridor_south-bronx-crosstown share identity key corridor_bx6-south-bronx.",
+          "Global corridor records corridor_bx6-south-bronx and corridor_south-bronx-crosstown share identity key corridor_bx6-south-bronx-crosstown."
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_corridor_merges": false,
+          "alias_is_current_corridor_merge_target": false,
+          "target_is_current_corridor_merge_alias": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false,
+          "repeated_in_identity144_147_151": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "South Bronx Crosstown",
+          "payload_fields": {
+            "corridor_name": "South Bronx Crosstown",
+            "borough": "Bronx",
+            "from": "Hunts Point",
+            "to": "Riverside Drive"
+          },
+          "evidence_refs": [
+            "2015_11_20_brt_south_bronx_crosstown_kickoff#p001_c0001",
+            "2015_11_20_brt_south_bronx_crosstown_kickoff#p006_c0002",
+            "brt_bx6_cb3_feb2017#p003_c0002"
+          ]
+        },
+        "target": {
+          "display_name": "Bx6 South Bronx Crosstown corridor",
+          "payload_fields": {
+            "corridor_name": "Bx6 South Bronx Crosstown",
+            "limits": "Riverside Drive West to Hunts Point",
+            "from": "Riverside Drive West",
+            "to": "Hunts Point",
+            "corridor_length_mi": 4.8
+          },
+          "evidence_refs": [
+            "ace_able_pdf_brt_bx6_river_terrace_houses_sept2016#p007_c0001",
+            "brt_bx6_cb12_apr2017#p003_c0001",
+            "brt_bx6_cb12_apr2017#p003_c0002"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_bronx-flushing-jamaica",
+      "target_id": "corridor_flushing-jamaica",
+      "canonical_id": "corridor_flushing-jamaica",
+      "confidence": "high",
+      "validator_duplicate_key": "corridor_bronx-flushing-jamaica-corridor",
+      "reason": "Both records describe the same Bronx-Flushing-Jamaica / Flushing-Jamaica BRT corridor concept. The alias is a one-source record for the Bronx-Flushing-Jamaica corridor from the initial BRT/Phase II context; the target already carries the Bronx-Flushing-Jamaica corridor alias and merged source wording while consolidating the Flushing-Jamaica corridor evidence.",
+      "validator_evidence": {
+        "duplicate_issues": [
+          "Global corridor records corridor_bronx-flushing-jamaica and corridor_flushing-jamaica share identity key corridor_bronx-flushing-jamaica-corridor."
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_corridor_merges": false,
+          "alias_is_current_corridor_merge_target": false,
+          "target_is_current_corridor_merge_alias": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false,
+          "repeated_in_identity144_147_151": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Bronx-Flushing-Jamaica Corridor",
+          "payload_fields": {
+            "corridor_name": "Bronx-Flushing-Jamaica corridor",
+            "boroughs": [
+              "Bronx",
+              "Queens"
+            ]
+          },
+          "evidence_refs": [
+            "2015_06_15_brt_flushing_jamaica_cb8_presentation#p005_c0002",
+            "2015_06_15_brt_flushing_jamaica_cb8_presentation#p005_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "Flushing-Jamaica Corridor",
+          "payload_fields": {
+            "corridor_name": "Flushing-Jamaica Corridor",
+            "borough": "Queens",
+            "boroughs": [
+              "Bronx",
+              "Queens"
+            ]
+          },
+          "evidence_refs": [
+            "2014_06_11_brt_flushingjamaica_cac1_presentation#p016_c0003",
+            "2014_06_11_brt_flushingjamaica_cac1_presentation#p017_c0004",
+            "2014_06_11_brt_flushingjamaica_cac1_presentation#p007_c0003"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_q20a-q20b-jamaica-cac2",
+      "target_id": "route_q20-2014-10-07-flushing-jamaica",
+      "canonical_id": "route_q20-2014-10-07-flushing-jamaica",
+      "confidence": "high",
+      "validator_duplicate_key": "route_q20a",
+      "reason": "Both current records identify the paired Q20A/B local service on Main Street between Jamaica and College Point. The alias is a source-local Q20A/Q20B route mention from Jamaica CAC/Flushing-Jamaica sources; the target is the richer Q20AB Local record with matching route label, local service variant, and Flushing-Jamaica evidence.",
+      "validator_evidence": {
+        "duplicate_issues": [
+          "Global route records route_q20-2014-10-07-flushing-jamaica and route_q20a-q20b-jamaica-cac2 share identity key route_q20a."
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_route_merges": false,
+          "alias_is_current_route_merge_target": false,
+          "target_is_current_route_merge_alias": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false,
+          "repeated_in_identity144_147_151": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Q20A/B on Main St",
+          "payload_fields": {
+            "route_id": "Q20A/Q20B",
+            "route_label": "Q20A/Q20B",
+            "borough": "Queens",
+            "route_type": "local",
+            "service_variant": "local"
+          },
+          "evidence_refs": [
+            "201104_jamaica_cac2_slides#p028_c0006",
+            "2015_06_15_brt_flushing_jamaica_cb8_presentation#p006_c0006"
+          ]
+        },
+        "target": {
+          "display_name": "Q20AB Local",
+          "payload_fields": {
+            "route_id": "Q20",
+            "route_label": "Q20A/B",
+            "route_name": "Q20AB Local",
+            "borough": "Queens",
+            "route_type": "local",
+            "service_variant": "local"
+          },
+          "evidence_refs": [
+            "2014_10_07_brt_flushingjamaica_pw1_presentation#p014_c0003",
+            "2015_07_07_brt_flushing_jamaica_cb7_presentation#p010_c0003",
+            "2014_brt_flushingjamaica_workshopsummary#p002_c0010"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_q44-jamaica-cac2",
+      "target_id": "route_q44-cb12-2011",
+      "canonical_id": "route_q44-cb12-2011",
+      "confidence": "high",
+      "validator_duplicate_key": "route_q44",
+      "reason": "Both current records are pre-SBS source-local Q44 route mentions in the Jamaica/Flushing-Jamaica context. The alias is a bare Q44 bus-stop route mention from Jamaica CAC2; the target is the richer pre-SBS Q44 record with the same Q44 identity plus local/limited pre-conversion source evidence. This direction avoids merging either record into the separate Q44 SBS record.",
+      "validator_evidence": {
+        "duplicate_key_note": "The live validator emits route_q44 duplicate messages for both records against the first prior Q44 collision in validation order; the shared current key is route_q44.",
+        "related_live_duplicate_issues": [
+          "Global route records route_bronx-flushing-jamaica-sbs and route_q44-cb12-2011 share identity key route_q44.",
+          "Global route records route_bronx-flushing-jamaica-sbs and route_q44-jamaica-cac2 share identity key route_q44."
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_route_merges": false,
+          "alias_is_current_route_merge_target": false,
+          "target_is_current_route_merge_alias": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false,
+          "repeated_in_identity144_147_151": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Q44",
+          "payload_fields": {
+            "route_id": "Q44",
+            "route_label": "Q44",
+            "borough": "Queens"
+          },
+          "evidence_refs": [
+            "201104_jamaica_cac2_slides#p028_c0006"
+          ]
+        },
+        "target": {
+          "display_name": "Q44 local bus route",
+          "payload_fields": {
+            "route_id": "Q44",
+            "route_name": "Q44",
+            "borough": "Queens",
+            "service_variant": "local",
+            "description": "Existing Q44 Limited service that will be replaced by Q44 SBS"
+          },
+          "evidence_refs": [
+            "201106_jamaica_cb12_slides#p026_c0006",
+            "2014_06_11_brt_flushingjamaica_cac1_presentation#p016_c0004",
+            "2015_06_15_brt_flushing_jamaica_cb8_presentation#p009_c0002"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_b6-apr2017",
+      "target_id": "route_b6-2015-sbk-corridor",
+      "canonical_id": "route_b6-2015-sbk-corridor",
+      "confidence": "high",
+      "validator_duplicate_key": "route_b6",
+      "reason": "Both current records identify the B6 local bus route in the Southern Brooklyn / Bay Parkway-Cropsey / B82 planning context. The alias is a single-source B6 local re-route mention from April 2017; the target is the consolidated B6 Local and Limited record already carrying the same South Brooklyn corridor context and multiple B6 local/limited evidence refs.",
+      "validator_evidence": {
+        "duplicate_issues": [
+          "Global route records route_b6-2015-sbk-corridor and route_b6-apr2017 share identity key route_b6."
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_route_merges": false,
+          "alias_is_current_route_merge_target": false,
+          "target_is_current_route_merge_alias": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false,
+          "repeated_in_identity144_147_151": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "B6",
+          "payload_fields": {
+            "route_id": "B6",
+            "route_type": "Local",
+            "borough": "Brooklyn",
+            "service_variant": "local"
+          },
+          "evidence_refs": [
+            "brt_south_brooklyn_b82_cb11_apr2017#p012_c0002"
+          ]
+        },
+        "target": {
+          "display_name": "B6 Local and Limited",
+          "payload_fields": {
+            "route_id": "B6",
+            "route_type": "Local and Limited",
+            "borough": "Brooklyn",
+            "description": "East-west bus route in south Brooklyn serving the South Brooklyn Crosstown corridor"
+          },
+          "evidence_refs": [
+            "2015_06_17_brt_southbrooklyn_kickoff_boards#p002_c0005",
+            "bay_pkwy_cropsey_ave_cb12_jun2025#p004_c0002",
+            "bay_pkwy_cropsey_ave_cb11_jun2025#p004_c0002"
+          ]
+        }
+      }
+    }
+  ],
+  "exclusions_and_guards": [
+    "Did not propose corridor_125th-street-manhattan -> corridor_125th-st-manhattan or the reverse; the current do-not-merge guard preserves differing 125th Street limits.",
+    "Did not repeat identity144 route/corridor aliases or route/corridor aliases already applied in identity147/151.",
+    "Skipped aliases missing from current canonical route/corridor JSONL, including aliases already removed by current merges.",
+    "Skipped aliases that are already current merge aliases and aliases that are already current merge targets, to avoid stale ids and target chains.",
+    "Skipped targets that are current merge aliases, alias==target pairs, and current do-not-merge hits.",
+    "Skipped corridor segment/superset traps, including Church Avenue, Lexington Avenue, Cross Bay Boulevard, Bay Parkway/Cropsey, Utica Avenue, Woodhaven Boulevard, Third Avenue, Main Street, and Livingston Street candidates where limits or bundled scope were not clearly identical.",
+    "Skipped route base-number collisions with variant conflicts or lifecycle relationships, including M60 local vs M60 SBS, B103 LTD vs B103E, B44/B46/B82 local-limited-SBS conflicts, Q52/Q53 LTD vs SBS, M23 local vs M23 SBS, and M34 local vs SBS/A variants."
+  ],
+  "command_evidence": [
+    {
+      "command": "bun --eval 'import { validateRepo } from \"./packages/pipeline/src/validate.ts\"; ... print duplicate_global_identity route/corridor messages'",
+      "result": "Read-only validator inspection reported 730 duplicate_global_identity issues total and 73 route/corridor duplicate_global_identity messages."
+    },
+    {
+      "command": "jq inspection of data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, data/canonical/routes.jsonl, and data/canonical/corridors.jsonl",
+      "result": "Confirmed current canonical presence, payload fields, record_aliases, source_ids, and evidence_refs for selected route/corridor records."
+    },
+    {
+      "command": "jq -r '.proposed_aliases[]? | [.global_kind,.alias_id,.target_id] | @tsv' data/review_notes/codex-identity-batch{144,147,151}-prep.json",
+      "result": "Checked the recent/stale route-corridor prep aliases to avoid repeats from identity144, identity147, and identity151."
+    },
+    {
+      "command": "bun --eval '<final guard script over selected pairs>'",
+      "result": "All five selected aliases and targets are present in current canonical JSONL; none are already merge aliases; no alias is an existing merge target; no target is an existing merge alias; no alias equals target; no do-not-merge hit; no exact repeat in identity144/147/151."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "No provider-backed commands were run.",
+    "No materialize, export-jsonl, full CLI validate, write, ask, schema, ontology, identity-review, canonicalize, campaign, or dedup commands were run.",
+    "No edits were made to data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, LOG.md, manifest files, canonical JSONL, wiki pages, DB files, submissions, or generated outputs."
+  ]
+}

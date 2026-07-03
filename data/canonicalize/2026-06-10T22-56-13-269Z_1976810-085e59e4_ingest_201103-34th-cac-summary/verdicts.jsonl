@@ -1,0 +1,13 @@
+{"decision_id":"rel-metric-curb-extension-width","verdict":"pass","evidence_checked":["201103_34th_cac_summary#p007_c0001"]}
+{"decision_id":"rel-metric-curb-extension-length","verdict":"pass","evidence_checked":["201103_34th_cac_summary#p007_c0001"]}
+{"decision_id":"rel-metric-sbs-bus-frequency","verdict":"pass","evidence_checked":["201103_34th_cac_summary#p007_c0001"]}
+{"decision_id":"rel-claim-traffic-volume-accommodated","verdict":"pass","evidence_checked":["201103_34th_cac_summary#p003_c0001"]}
+{"decision_id":"rel-claim-bus-lane-rules-same","verdict":"pass","evidence_checked":["201103_34th_cac_summary#p003_c0004"]}
+{"decision_id":"rel-claim-median-busway-infeasible","verdict":"pass","evidence_checked":["201103_34th_cac_summary#p004_c0006"]}
+{"decision_id":"rel-claim-curb-cuts-maintained","verdict":"pass","evidence_checked":["201103_34th_cac_summary#p002_c0005"]}
+{"decision_id":"rel-claim-sbs-bus-frequency","verdict":"pass","evidence_checked":["201103_34th_cac_summary#p007_c0001"]}
+{"decision_id":"rel-event-cac-meeting-4","verdict":"pass","evidence_checked":["201103_34th_cac_summary#p001_c0001"]}
+{"decision_id":"rel-event-public-meetings-mar30-31","verdict":"pass","evidence_checked":["201103_34th_cac_summary#p001_c0006"]}
+{"decision_id":"rel-event-traffic-analysis-fall2011","verdict":"pass","evidence_checked":["201103_34th_cac_summary#p001_c0006"]}
+{"decision_id":"rel-event-draft-ea-release","verdict":"pass","evidence_checked":["201103_34th_cac_summary#p001_c0006"]}
+{"decision_id":"rel-event-cac-meeting-late-spring-2012","verdict":"pass","evidence_checked":["201103_34th_cac_summary#p001_c0006"]}

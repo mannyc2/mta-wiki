@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-09T11-16-27-255Z_chandra-ocr-queue",
+  "generated_at": "2026-06-09T11:16:27.255Z",
+  "dry_run": false,
+  "force": false,
+  "limit": 1,
+  "summary": {
+    "discovered_pdf_sources": 2547,
+    "considered": 1,
+    "queued": 1,
+    "partial": 0,
+    "complete": 0,
+    "skipped": 0
+  },
+  "entries": [
+    {
+      "source_id": "080421_brt_cb5_34th_street_fullboardpresentation",
+      "source_dir": "/mnt/models/dev/mta-wiki/raw/sources/080421_brt_cb5_34th_street_fullboardpresentation",
+      "pdf_path": "/mnt/models/dev/mta-wiki/raw/sources/080421_brt_cb5_34th_street_fullboardpresentation/source.pdf",
+      "chandra_dir": "/mnt/models/dev/mta-wiki/raw/sources/080421_brt_cb5_34th_street_fullboardpresentation/chandra",
+      "status": "queued",
+      "completed_pages": [],
+      "failed_pages": [],
+      "missing_pages": []
+    }
+  ],
+  "manifest_path": "/mnt/models/dev/mta-wiki/data/chandra-ocr/2026-06-09T11-16-27-255Z_chandra-ocr-queue.json"
+}

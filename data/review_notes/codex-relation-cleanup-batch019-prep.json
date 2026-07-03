@@ -1,0 +1,401 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-22-batch019-prep",
+  "created_at": "2026-06-22T21:05:00Z",
+  "author": "codex",
+  "scope": "Relation lane prep only; conductor must serialize apply and generated-output checkpoint.",
+  "bucket": "operated_by entity->entity / MTA Bridges and Tunnels facility operator direction",
+  "current_checkpoint_context": {
+    "reported_by_user": "relation batches013-018 materialized/validated; 77 unexpected_relation_endpoint_shape remain",
+    "deterministic_issue_snapshot": {
+      "unexpected_relation_endpoint_shape": 77,
+      "selected_bucket_count": 9,
+      "selected_bucket_shape": "operated_by entity -> entity"
+    }
+  },
+  "exclusions": {
+    "retired_json": "data/submission-overrides/retired.json",
+    "already_applied_relation_batches": [
+      "data/submissions/2026-06-22_codex_relation_cleanup_batch013.jsonl",
+      "data/submissions/2026-06-22_codex_relation_cleanup_batch014.jsonl",
+      "data/submissions/2026-06-22_codex_relation_cleanup_batch015.jsonl",
+      "data/submissions/2026-06-22_codex_relation_cleanup_batch016.jsonl",
+      "data/submissions/2026-06-22_codex_relation_cleanup_batch017.jsonl",
+      "data/submissions/2026-06-22_codex_relation_cleanup_batch018.jsonl"
+    ],
+    "excluded_retired_submission_hits": [],
+    "excluded_existing_batch013_018_submission_hits": []
+  },
+  "run_id": "2026-06-22_codex_relation_cleanup_batch019",
+  "submitted_at": "2026-06-22T21:05:00Z",
+  "dry_run_summary": {
+    "createSubmissionEntry": "all nine replacement entries generated deterministically",
+    "relationEndpointIssues": "all nine returned []",
+    "validation_state": "all nine accepted",
+    "validation_issues": "all nine []",
+    "validation_warnings": "all nine []",
+    "relationEndpointShapeIssue": "all nine null for operates entity -> entity",
+    "replacement_submission_id_collisions": 0,
+    "replacement_local_observation_id_collisions": 0,
+    "same_source_endpoint_guard": "entity_mta_bt_186971 and all nine facility local_observation_ids are accepted observations for meeting_doc_186971"
+  },
+  "source_evidence": {
+    "source_id": "meeting_doc_186971",
+    "block_id": "p008_c0002",
+    "evidence_id": "meeting_doc_186971#p008_c0002",
+    "source_path": "raw/sources/meeting_doc_186971/blocks.jsonl",
+    "page_number": 8,
+    "text_sha256": "sha256:c8b40b36bfe31210e4c0663388a705622baf38029ac04cd1f174797e8ca440de",
+    "text_source": "raw_text",
+    "block_summary": "Facility Revenue Collection Rate August 2025 table lists the nine B&T bridge/tunnel facilities and their collection rates."
+  },
+  "prepared": [
+    {
+      "retired_submission_id": "sub_e3dacb50a35c909a",
+      "retired_record_id": "relation_operated-bronx-whitestone",
+      "retired_local_observation_id": "relation_operated_bronx_whitestone",
+      "original_shape": "operated_by entity -> entity",
+      "replacement_submission_id": "sub_1a28dccd19755d77",
+      "reason": "Original relation models Bronx-Whitestone Bridge as operated_by MTA Bridges and Tunnels. The source-backed label and table context support reversing direction to MTA Bridges and Tunnels operates Bronx-Whitestone Bridge.",
+      "confidence": "high",
+      "replacement_input": {
+        "source_id": "meeting_doc_186971",
+        "observation_kind": "relation",
+        "local_observation_id": "relation_batch019_mta_bt_operates_bronx_whitestone_bridge",
+        "label": "MTA Bridges and Tunnels operates Bronx-Whitestone Bridge",
+        "raw_text": "Bronx-Whitestone Bridge 91.1%",
+        "payload": {
+          "relation_kind": "operates",
+          "subject_local_observation_id": "entity_mta_bt_186971",
+          "object_local_observation_id": "entity_bronx_whitestone_bridge_186971",
+          "description": "Replacement for malformed operated_by entity -> entity relation; source lists Bronx-Whitestone Bridge as an MTA Bridges and Tunnels facility in the August 2025 revenue collection table."
+        },
+        "evidence_refs": [
+          {
+            "source_id": "meeting_doc_186971",
+            "evidence_id": "meeting_doc_186971#p008_c0002",
+            "source_path": "raw/sources/meeting_doc_186971/blocks.jsonl",
+            "page_number": 8,
+            "block_id": "p008_c0002",
+            "text_sha256": "sha256:c8b40b36bfe31210e4c0663388a705622baf38029ac04cd1f174797e8ca440de",
+            "text_source": "raw_text",
+            "role": "operator_table"
+          }
+        ]
+      }
+    },
+    {
+      "retired_submission_id": "sub_e89670dffd7d2c1f",
+      "retired_record_id": "relation_operated-carey-tunnel",
+      "retired_local_observation_id": "relation_operated_carey_tunnel",
+      "original_shape": "operated_by entity -> entity",
+      "replacement_submission_id": "sub_664e4a9cf30176ea",
+      "reason": "Original relation models Hugh L. Carey Tunnel as operated_by MTA Bridges and Tunnels. The source-backed label and table context support reversing direction to MTA Bridges and Tunnels operates Hugh L. Carey Tunnel.",
+      "confidence": "high",
+      "replacement_input": {
+        "source_id": "meeting_doc_186971",
+        "observation_kind": "relation",
+        "local_observation_id": "relation_batch019_mta_bt_operates_hugh_l_carey_tunnel",
+        "label": "MTA Bridges and Tunnels operates Hugh L. Carey Tunnel",
+        "raw_text": "Hugh L. Carey Tunnel 94.3%",
+        "payload": {
+          "relation_kind": "operates",
+          "subject_local_observation_id": "entity_mta_bt_186971",
+          "object_local_observation_id": "entity_hugh_l_carey_tunnel_186971",
+          "description": "Replacement for malformed operated_by entity -> entity relation; source lists Hugh L. Carey Tunnel as an MTA Bridges and Tunnels facility in the August 2025 revenue collection table."
+        },
+        "evidence_refs": [
+          {
+            "source_id": "meeting_doc_186971",
+            "evidence_id": "meeting_doc_186971#p008_c0002",
+            "source_path": "raw/sources/meeting_doc_186971/blocks.jsonl",
+            "page_number": 8,
+            "block_id": "p008_c0002",
+            "text_sha256": "sha256:c8b40b36bfe31210e4c0663388a705622baf38029ac04cd1f174797e8ca440de",
+            "text_source": "raw_text",
+            "role": "operator_table"
+          }
+        ]
+      }
+    },
+    {
+      "retired_submission_id": "sub_7016900affdbe84b",
+      "retired_record_id": "relation_operated-cross-bay",
+      "retired_local_observation_id": "relation_operated_cross_bay",
+      "original_shape": "operated_by entity -> entity",
+      "replacement_submission_id": "sub_9855930905b48a5e",
+      "reason": "Original relation models Cross Bay Bridge as operated_by MTA Bridges and Tunnels. The source-backed label and table context support reversing direction to MTA Bridges and Tunnels operates Cross Bay Bridge.",
+      "confidence": "high",
+      "replacement_input": {
+        "source_id": "meeting_doc_186971",
+        "observation_kind": "relation",
+        "local_observation_id": "relation_batch019_mta_bt_operates_cross_bay_bridge",
+        "label": "MTA Bridges and Tunnels operates Cross Bay Bridge",
+        "raw_text": "Cross Bay Bridge 91.6%",
+        "payload": {
+          "relation_kind": "operates",
+          "subject_local_observation_id": "entity_mta_bt_186971",
+          "object_local_observation_id": "entity_cross_bay_bridge_186971",
+          "description": "Replacement for malformed operated_by entity -> entity relation; source lists Cross Bay Bridge as an MTA Bridges and Tunnels facility in the August 2025 revenue collection table."
+        },
+        "evidence_refs": [
+          {
+            "source_id": "meeting_doc_186971",
+            "evidence_id": "meeting_doc_186971#p008_c0002",
+            "source_path": "raw/sources/meeting_doc_186971/blocks.jsonl",
+            "page_number": 8,
+            "block_id": "p008_c0002",
+            "text_sha256": "sha256:c8b40b36bfe31210e4c0663388a705622baf38029ac04cd1f174797e8ca440de",
+            "text_source": "raw_text",
+            "role": "operator_table"
+          }
+        ]
+      }
+    },
+    {
+      "retired_submission_id": "sub_db7fc16a63375073",
+      "retired_record_id": "relation_operated-henry-hudson",
+      "retired_local_observation_id": "relation_operated_henry_hudson",
+      "original_shape": "operated_by entity -> entity",
+      "replacement_submission_id": "sub_74c19a3ccbe52293",
+      "reason": "Original relation models Henry Hudson Bridge as operated_by MTA Bridges and Tunnels. The source-backed label and table context support reversing direction to MTA Bridges and Tunnels operates Henry Hudson Bridge.",
+      "confidence": "high",
+      "replacement_input": {
+        "source_id": "meeting_doc_186971",
+        "observation_kind": "relation",
+        "local_observation_id": "relation_batch019_mta_bt_operates_henry_hudson_bridge",
+        "label": "MTA Bridges and Tunnels operates Henry Hudson Bridge",
+        "raw_text": "Henry Hudson Bridge 92.9%",
+        "payload": {
+          "relation_kind": "operates",
+          "subject_local_observation_id": "entity_mta_bt_186971",
+          "object_local_observation_id": "entity_henry_hudson_bridge_186971",
+          "description": "Replacement for malformed operated_by entity -> entity relation; source lists Henry Hudson Bridge as an MTA Bridges and Tunnels facility in the August 2025 revenue collection table."
+        },
+        "evidence_refs": [
+          {
+            "source_id": "meeting_doc_186971",
+            "evidence_id": "meeting_doc_186971#p008_c0002",
+            "source_path": "raw/sources/meeting_doc_186971/blocks.jsonl",
+            "page_number": 8,
+            "block_id": "p008_c0002",
+            "text_sha256": "sha256:c8b40b36bfe31210e4c0663388a705622baf38029ac04cd1f174797e8ca440de",
+            "text_source": "raw_text",
+            "role": "operator_table"
+          }
+        ]
+      }
+    },
+    {
+      "retired_submission_id": "sub_e0a876b760de7c90",
+      "retired_record_id": "relation_operated-marine-parkway",
+      "retired_local_observation_id": "relation_operated_marine_parkway",
+      "original_shape": "operated_by entity -> entity",
+      "replacement_submission_id": "sub_ef07125cfb7cc89c",
+      "reason": "Original relation models Marine Parkway Bridge as operated_by MTA Bridges and Tunnels. The source-backed label and table context support reversing direction to MTA Bridges and Tunnels operates Marine Parkway Bridge.",
+      "confidence": "high",
+      "replacement_input": {
+        "source_id": "meeting_doc_186971",
+        "observation_kind": "relation",
+        "local_observation_id": "relation_batch019_mta_bt_operates_marine_parkway_bridge",
+        "label": "MTA Bridges and Tunnels operates Marine Parkway Bridge",
+        "raw_text": "Marine Parkway Bridge 94.0%",
+        "payload": {
+          "relation_kind": "operates",
+          "subject_local_observation_id": "entity_mta_bt_186971",
+          "object_local_observation_id": "entity_marine_parkway_bridge_186971",
+          "description": "Replacement for malformed operated_by entity -> entity relation; source lists Marine Parkway Bridge as an MTA Bridges and Tunnels facility in the August 2025 revenue collection table."
+        },
+        "evidence_refs": [
+          {
+            "source_id": "meeting_doc_186971",
+            "evidence_id": "meeting_doc_186971#p008_c0002",
+            "source_path": "raw/sources/meeting_doc_186971/blocks.jsonl",
+            "page_number": 8,
+            "block_id": "p008_c0002",
+            "text_sha256": "sha256:c8b40b36bfe31210e4c0663388a705622baf38029ac04cd1f174797e8ca440de",
+            "text_source": "raw_text",
+            "role": "operator_table"
+          }
+        ]
+      }
+    },
+    {
+      "retired_submission_id": "sub_8c46f2c816d59acb",
+      "retired_record_id": "relation_operated-queens-midtown",
+      "retired_local_observation_id": "relation_operated_queens_midtown",
+      "original_shape": "operated_by entity -> entity",
+      "replacement_submission_id": "sub_227c91ea0e9a4e21",
+      "reason": "Original relation models Queens Midtown Tunnel as operated_by MTA Bridges and Tunnels. The source-backed label and table context support reversing direction to MTA Bridges and Tunnels operates Queens Midtown Tunnel.",
+      "confidence": "high",
+      "replacement_input": {
+        "source_id": "meeting_doc_186971",
+        "observation_kind": "relation",
+        "local_observation_id": "relation_batch019_mta_bt_operates_queens_midtown_tunnel",
+        "label": "MTA Bridges and Tunnels operates Queens Midtown Tunnel",
+        "raw_text": "Queens Midtown Tunnel 95.3%",
+        "payload": {
+          "relation_kind": "operates",
+          "subject_local_observation_id": "entity_mta_bt_186971",
+          "object_local_observation_id": "entity_queens_midtown_tunnel_186971",
+          "description": "Replacement for malformed operated_by entity -> entity relation; source lists Queens Midtown Tunnel as an MTA Bridges and Tunnels facility in the August 2025 revenue collection table."
+        },
+        "evidence_refs": [
+          {
+            "source_id": "meeting_doc_186971",
+            "evidence_id": "meeting_doc_186971#p008_c0002",
+            "source_path": "raw/sources/meeting_doc_186971/blocks.jsonl",
+            "page_number": 8,
+            "block_id": "p008_c0002",
+            "text_sha256": "sha256:c8b40b36bfe31210e4c0663388a705622baf38029ac04cd1f174797e8ca440de",
+            "text_source": "raw_text",
+            "role": "operator_table"
+          }
+        ]
+      }
+    },
+    {
+      "retired_submission_id": "sub_30d5c582a9cdb298",
+      "retired_record_id": "relation_operated-rfk",
+      "retired_local_observation_id": "relation_operated_rfk",
+      "original_shape": "operated_by entity -> entity",
+      "replacement_submission_id": "sub_9557e79f7a122ff3",
+      "reason": "Original relation models Robert F. Kennedy Bridge as operated_by MTA Bridges and Tunnels. The source-backed label and table context support reversing direction to MTA Bridges and Tunnels operates Robert F. Kennedy Bridge.",
+      "confidence": "high",
+      "replacement_input": {
+        "source_id": "meeting_doc_186971",
+        "observation_kind": "relation",
+        "local_observation_id": "relation_batch019_mta_bt_operates_rfk_bridge",
+        "label": "MTA Bridges and Tunnels operates Robert F. Kennedy Bridge",
+        "raw_text": "Robert F. Kennedy Bridge 91.7%",
+        "payload": {
+          "relation_kind": "operates",
+          "subject_local_observation_id": "entity_mta_bt_186971",
+          "object_local_observation_id": "entity_rfk_bridge_186971",
+          "description": "Replacement for malformed operated_by entity -> entity relation; source lists Robert F. Kennedy Bridge as an MTA Bridges and Tunnels facility in the August 2025 revenue collection table."
+        },
+        "evidence_refs": [
+          {
+            "source_id": "meeting_doc_186971",
+            "evidence_id": "meeting_doc_186971#p008_c0002",
+            "source_path": "raw/sources/meeting_doc_186971/blocks.jsonl",
+            "page_number": 8,
+            "block_id": "p008_c0002",
+            "text_sha256": "sha256:c8b40b36bfe31210e4c0663388a705622baf38029ac04cd1f174797e8ca440de",
+            "text_source": "raw_text",
+            "role": "operator_table"
+          }
+        ]
+      }
+    },
+    {
+      "retired_submission_id": "sub_a908bb1e54abe963",
+      "retired_record_id": "relation_operated-throgs-neck",
+      "retired_local_observation_id": "relation_operated_throgs_neck",
+      "original_shape": "operated_by entity -> entity",
+      "replacement_submission_id": "sub_48d5d4fd05c48339",
+      "reason": "Original relation models Throgs Neck Bridge as operated_by MTA Bridges and Tunnels. The source-backed label and table context support reversing direction to MTA Bridges and Tunnels operates Throgs Neck Bridge.",
+      "confidence": "high",
+      "replacement_input": {
+        "source_id": "meeting_doc_186971",
+        "observation_kind": "relation",
+        "local_observation_id": "relation_batch019_mta_bt_operates_throgs_neck_bridge",
+        "label": "MTA Bridges and Tunnels operates Throgs Neck Bridge",
+        "raw_text": "Throgs Neck Bridge 91.9%",
+        "payload": {
+          "relation_kind": "operates",
+          "subject_local_observation_id": "entity_mta_bt_186971",
+          "object_local_observation_id": "entity_throgs_neck_bridge_186971",
+          "description": "Replacement for malformed operated_by entity -> entity relation; source lists Throgs Neck Bridge as an MTA Bridges and Tunnels facility in the August 2025 revenue collection table."
+        },
+        "evidence_refs": [
+          {
+            "source_id": "meeting_doc_186971",
+            "evidence_id": "meeting_doc_186971#p008_c0002",
+            "source_path": "raw/sources/meeting_doc_186971/blocks.jsonl",
+            "page_number": 8,
+            "block_id": "p008_c0002",
+            "text_sha256": "sha256:c8b40b36bfe31210e4c0663388a705622baf38029ac04cd1f174797e8ca440de",
+            "text_source": "raw_text",
+            "role": "operator_table"
+          }
+        ]
+      }
+    },
+    {
+      "retired_submission_id": "sub_f9db6ab4364cfbea",
+      "retired_record_id": "relation_operated-verrazzano",
+      "retired_local_observation_id": "relation_operated_verrazzano",
+      "original_shape": "operated_by entity -> entity",
+      "replacement_submission_id": "sub_78f3b1e2ba669e72",
+      "reason": "Original relation models Verrazzano-Narrows Bridge as operated_by MTA Bridges and Tunnels. The source-backed label and table context support reversing direction to MTA Bridges and Tunnels operates Verrazzano-Narrows Bridge.",
+      "confidence": "high",
+      "replacement_input": {
+        "source_id": "meeting_doc_186971",
+        "observation_kind": "relation",
+        "local_observation_id": "relation_batch019_mta_bt_operates_verrazzano_narrows_bridge",
+        "label": "MTA Bridges and Tunnels operates Verrazzano-Narrows Bridge",
+        "raw_text": "Verrazzano-Narrows Bridge 91.6%",
+        "payload": {
+          "relation_kind": "operates",
+          "subject_local_observation_id": "entity_mta_bt_186971",
+          "object_local_observation_id": "entity_verrazzano_narrows_bridge_186971",
+          "description": "Replacement for malformed operated_by entity -> entity relation; source lists Verrazzano-Narrows Bridge as an MTA Bridges and Tunnels facility in the August 2025 revenue collection table."
+        },
+        "evidence_refs": [
+          {
+            "source_id": "meeting_doc_186971",
+            "evidence_id": "meeting_doc_186971#p008_c0002",
+            "source_path": "raw/sources/meeting_doc_186971/blocks.jsonl",
+            "page_number": 8,
+            "block_id": "p008_c0002",
+            "text_sha256": "sha256:c8b40b36bfe31210e4c0663388a705622baf38029ac04cd1f174797e8ca440de",
+            "text_source": "raw_text",
+            "role": "operator_table"
+          }
+        ]
+      }
+    }
+  ],
+  "blockers": [],
+  "deferred_buckets": [
+    "The broader operated_by entity->entity bucket also contains agency/service hierarchy cases such as NYCT/MTA Bus, Access-A-Ride/Paratransit, and MNR/MTA; those are not exact facility-operator direction fixes and are deferred.",
+    "Metric/event and source/publication buckets remain for separate semantic review."
+  ],
+  "commands_run": [
+    "git status --short scoped to review notes/submission overrides/submissions/pipeline relation files",
+    "rg relation endpoint and previous cleanup artifacts",
+    "sed read-only inspection of packages/pipeline/src/records/relations.ts and submissions.ts",
+    "bun --eval current canonical relation endpoint-shape bucket inventory using relationEndpointShapeIssue",
+    "rg original submission ids in data/submissions",
+    "jq raw source block inspection for meeting_doc_186971#p008_c0002",
+    "bun --eval original submission/retired guard checks and createSubmissionEntry plus relationEndpointIssues dry run"
+  ],
+  "commands_not_run": [
+    "materialize",
+    "export-jsonl --verify",
+    "full validate CLI",
+    "canonicalize",
+    "campaign dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "provider/profile commands"
+  ],
+  "conductor_apply_plan": {
+    "retire_submission_ids": [
+      "sub_e3dacb50a35c909a",
+      "sub_e89670dffd7d2c1f",
+      "sub_7016900affdbe84b",
+      "sub_db7fc16a63375073",
+      "sub_e0a876b760de7c90",
+      "sub_8c46f2c816d59acb",
+      "sub_30d5c582a9cdb298",
+      "sub_a908bb1e54abe963",
+      "sub_f9db6ab4364cfbea"
+    ],
+    "append_replacements_to": "data/submissions/2026-06-22_codex_relation_cleanup_batch019.jsonl",
+    "mutation_mechanism": "retire malformed operated_by entity->entity submissions in data/submission-overrides/retired.json and append accepted same-source operates replacements; do not edit generated canonical JSONL, canonical.db, wiki pages, or source pages"
+  }
+}

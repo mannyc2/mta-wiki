@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T23-27-39-880Z_1976810-bb6050fc_ingest_2014-12-01-brt-thirdave-cb6-presentation",
+  "generated_at": "2026-06-11T04:05:21.023Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 23,
+  "validated_decision_count": 0,
+  "quarantined_decision_count": 6,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T23-27-39-880Z_1976810-bb6050fc_ingest_2014-12-01-brt-thirdave-cb6-presentation",
+    "manifest": "data/canonicalize/2026-06-10T23-27-39-880Z_1976810-bb6050fc_ingest_2014-12-01-brt-thirdave-cb6-presentation/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T23-27-39-880Z_1976810-bb6050fc_ingest_2014-12-01-brt-thirdave-cb6-presentation/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-27-39-880Z_1976810-bb6050fc_ingest_2014-12-01-brt-thirdave-cb6-presentation/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T23-27-39-880Z_1976810-bb6050fc_ingest_2014-12-01-brt-thirdave-cb6-presentation/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-27-39-880Z_1976810-bb6050fc_ingest_2014-12-01-brt-thirdave-cb6-presentation/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-18-314Z_2111393-3e6ff887_canonicalize_2026-06-10t23-27-39-880z-1976810-bb6050fc-ingest-2014-12-01-brt-thirdave-cb6-presentation-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-27-39-880Z_1976810-bb6050fc_ingest_2014-12-01-brt-thirdave-cb6-presentation/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-18-314Z_2111393-5021b76d_canonicalize_2026-06-10t23-27-39-880z-1976810-bb6050fc-ingest-2014-12-01-brt-thirdave-cb6-presentation-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-27-39-880Z_1976810-bb6050fc_ingest_2014-12-01-brt-thirdave-cb6-presentation/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-18-315Z_2111393-aa6e319a_canonicalize_2026-06-10t23-27-39-880z-1976810-bb6050fc-ingest-2014-12-01-brt-thirdave-cb6-presentation-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-27-39-880Z_1976810-bb6050fc_ingest_2014-12-01-brt-thirdave-cb6-presentation/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-18-315Z_2111393-12a180c5_canonicalize_2026-06-10t23-27-39-880z-1976810-bb6050fc-ingest-2014-12-01-brt-thirdave-cb6-presentation-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-27-39-880Z_1976810-bb6050fc_ingest_2014-12-01-brt-thirdave-cb6-presentation/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-18-315Z_2111393-6a3d5771_canonicalize_2026-06-10t23-27-39-880z-1976810-bb6050fc-ingest-2014-12-01-brt-thirdave-cb6-presentation-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-27-39-880Z_1976810-bb6050fc_ingest_2014-12-01-brt-thirdave-cb6-presentation/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-18-315Z_2111393-9480677c_canonicalize_2026-06-10t23-27-39-880z-1976810-bb6050fc-ingest-2014-12-01-brt-thirdave-cb6-presentation-relation-linker"
+    }
+  ]
+}

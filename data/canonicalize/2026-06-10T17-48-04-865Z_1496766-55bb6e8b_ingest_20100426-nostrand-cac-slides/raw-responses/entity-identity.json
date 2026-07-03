@@ -1,0 +1,41 @@
+{
+  "run_id": "2026-06-10T17-48-04-865Z_1496766-55bb6e8b_ingest_20100426-nostrand-cac-slides",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-10T19:28:50.592Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "mta-nyct-presenter-2010-04-26-new",
+        "local_observation_id": "entity_mta_nyct_presenter_2010_04_26",
+        "decision": "new",
+        "rationale": "The observation 'MTA New York City Transit' (entity_type: agency) matches the existing registry record entity_mta-nyct, which has the same entity_name 'MTA New York City Transit' and entity_type 'agency'. The observation's base_record_id is already entity_mta-nyct, and the registry record's aliases include entity_mta-nyct-presenter-2010-04-26, confirming this observation is already correctly resolved. Since the closest match is the observation's own base_record_id (not a different record), the decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "20100426_nostrand_cac_slides",
+            "block_id": "p003_c0002",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "nyc-dot-presenter-2010-04-26-new",
+        "local_observation_id": "entity_nyc_dot_presenter_2010_04_26",
+        "decision": "new",
+        "rationale": "The observation 'New York City Department of Transportation' (entity_type: agency, acronym: NYC DOT) matches the existing registry record entity_nyc-dot, which has the same entity_name 'New York City Department of Transportation' and entity_type 'agency'. The observation's base_record_id is already entity_nyc-dot, and the registry record's aliases include entity_nyc-dot-presenter-2010-04-26, confirming this observation is already correctly resolved. Since the closest match is the observation's own base_record_id (not a different record), the decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "20100426_nostrand_cac_slides",
+            "block_id": "p006_c0011",
+            "source_quote": ""
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-28-05-017Z_1629944-ecb0d2a4_canonicalize_2026-06-10t17-48-04-865z-1496766-55bb6e8b-ingest-20100426-nostrand-cac-slides-entity-identity"
+}

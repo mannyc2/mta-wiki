@@ -1,0 +1,331 @@
+{
+  "batch_id": "codex-identity-batch115",
+  "created_at": "2026-06-23T05:04:44Z",
+  "scope": {
+    "kind": "entity",
+    "note": "Codex-only durable identity override prep; no provider-backed commands used."
+  },
+  "prepared_count": 10,
+  "all_pass": true,
+  "expected_delta": {
+    "duplicate_global_identity": -10
+  },
+  "proposed_aliases": [
+    {
+      "kind": "entity",
+      "alias_id": "entity_mta-bt-biennial-bridge-2023",
+      "target_id": "entity_mta-bridges-and-tunnels",
+      "reason": "Same global agency identity. The alias uses the ampersand form 'MTA Bridges & Tunnels' and the target uses 'MTA Bridges and Tunnels'; both are agency records for MTA Bridges and Tunnels.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Bridges & Tunnels",
+          "entity_name": "MTA Bridges & Tunnels",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_113971"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Bridges and Tunnels",
+          "entity_name": "MTA Bridges and Tunnels",
+          "entity_type": "agency",
+          "acronym": "B&T",
+          "primary_source_id": "201103_34th_cac_summary"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_113971#p003_c0002",
+        "meeting_doc_113971#p130_c0007",
+        "201103_34th_cac_summary#p003_c0001",
+        "annual_report_narrative_2021#p021_c0001"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_mta-bt-meeting-doc-131666",
+      "target_id": "entity_mta-bridges-and-tunnels",
+      "reason": "Same global agency identity. The alias display/acronym identify MTA Bridges and Tunnels while its expanded legal entity name is Triborough Bridge and Tunnel Authority, the same MTA Bridges and Tunnels/TBTA identity already represented by the target.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Bridges and Tunnels",
+          "entity_name": "Triborough Bridge and Tunnel Authority",
+          "entity_type": "subsidiary",
+          "acronym": "MTA Bridges and Tunnels",
+          "primary_source_id": "meeting_doc_131666"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Bridges and Tunnels",
+          "entity_name": "MTA Bridges and Tunnels",
+          "entity_type": "agency",
+          "acronym": "B&T"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_131666#p003_c0012",
+        "201103_34th_cac_summary#p003_c0001",
+        "meeting_doc_100216#p001_c0004"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-171381-tbt",
+      "target_id": "entity_mta-bridges-and-tunnels",
+      "reason": "Same global agency identity. The alias is the Triborough Bridge and Tunnel Authority record with acronym evidence 'MTA B&T', matching the MTA Bridges and Tunnels agency target.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "Triborough Bridge and Tunnel Authority",
+          "entity_name": "Triborough Bridge and Tunnel Authority",
+          "entity_type": "agency",
+          "acronym": "MTA B&T",
+          "primary_source_id": "meeting_doc_171381"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Bridges and Tunnels",
+          "entity_name": "MTA Bridges and Tunnels",
+          "entity_type": "agency",
+          "acronym": "B&T"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_171381#p003_c0001",
+        "meeting_doc_171381#p041_c0001",
+        "201103_34th_cac_summary#p003_c0001"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_mta-tbta",
+      "target_id": "entity_mta-bridges-and-tunnels",
+      "reason": "Same global agency identity. The alias is Triborough Bridge and Tunnel Authority with acronym TBTA; the target is the same MTA Bridges and Tunnels agency identity under its current/common name.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "Triborough Bridge and Tunnel Authority",
+          "entity_name": "Triborough Bridge and Tunnel Authority",
+          "entity_type": "agency",
+          "acronym": "TBTA",
+          "primary_source_id": "meeting_doc_100276"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Bridges and Tunnels",
+          "entity_name": "MTA Bridges and Tunnels",
+          "entity_type": "agency",
+          "acronym": "B&T"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_100276#p021_c0007",
+        "201103_34th_cac_summary#p003_c0001",
+        "meeting_doc_100216#p001_c0004"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-tbta",
+      "target_id": "entity_mta-bridges-and-tunnels",
+      "reason": "Same global agency identity. The alias expands TBTA as Triborough Bridge and Tunnel Authority and carries broad TBTA evidence; the target represents the same MTA Bridges and Tunnels agency identity.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "Triborough Bridge and Tunnel Authority (TBTA)",
+          "entity_name": "Triborough Bridge and Tunnel Authority",
+          "entity_type": "agency",
+          "acronym": "TBTA",
+          "primary_source_id": "meeting_doc_100216"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Bridges and Tunnels",
+          "entity_name": "MTA Bridges and Tunnels",
+          "entity_type": "agency",
+          "acronym": "B&T"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_100216#p001_c0004",
+        "meeting_doc_100216#p001_c0007",
+        "201103_34th_cac_summary#p003_c0001"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_mta-audit-committee",
+      "target_id": "entity_audit-committee-charter",
+      "reason": "Exact same committee identity. Both records are entity records named 'MTA Audit Committee' with committee entity type; the target has broader recurring committee evidence.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Audit Committee",
+          "entity_name": "MTA Audit Committee",
+          "entity_type": "committee",
+          "primary_source_id": "meeting_doc_72531"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Audit Committee",
+          "entity_name": "MTA Audit Committee",
+          "entity_type": "committee",
+          "primary_source_id": "meeting_doc_128986"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_72531#p001_c0003",
+        "meeting_doc_72531#p001_c0006",
+        "meeting_doc_128986#p078_c0003",
+        "meeting_doc_131481#p001_c0003"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-201726-procurement-dept",
+      "target_id": "entity_mta-procurement-department",
+      "reason": "Exact same department identity. Both records are entity records named 'MTA Procurement Department' with department entity type; the alias is a one-source meeting-doc duplicate of the broader target.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Procurement Department",
+          "entity_name": "MTA Procurement Department",
+          "entity_type": "department",
+          "primary_source_id": "meeting_doc_201726"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Procurement Department",
+          "entity_name": "MTA Procurement Department",
+          "entity_type": "department",
+          "primary_source_id": "meeting_doc_105946"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_201726#p004_c0013",
+        "meeting_doc_105946#p004_c0001",
+        "meeting_doc_105946#p007_c0011",
+        "meeting_doc_102801#p004_c0001"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_mtapd-meeting-doc-205666",
+      "target_id": "entity_annual-report-2021-mtapd",
+      "reason": "Exact same police department identity. Both records are named 'MTA Police Department', have police department type, and carry MTAPD acronym evidence; the target aggregates substantially broader source evidence.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Police Department",
+          "entity_name": "MTA Police Department",
+          "entity_type": "police department",
+          "acronym": "MTAPD",
+          "primary_source_id": "meeting_doc_205666"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Police Department",
+          "entity_name": "MTA Police Department",
+          "entity_type": "police department",
+          "acronym": "MTAPD",
+          "primary_source_id": "annual_report_narrative_2021"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_205666#p005_c0003",
+        "annual_report_narrative_2021#p047_c0003",
+        "meeting_doc_105786#p002_c0029"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_joint-lirr-mnr-committee",
+      "target_id": "entity_joint-lirr-metronorth-committee",
+      "reason": "Same joint railroad committee identity. Both records expand to 'Joint Long Island Rail Road and Metro-North Railroad Committee' with committee entity type; display-name differences are only abbreviation style.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "Joint LIRR and Metro-North Railroad Committee",
+          "entity_name": "Joint Long Island Rail Road and Metro-North Railroad Committee",
+          "entity_type": "committee",
+          "primary_source_id": "meeting_doc_189841"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "Joint LIRR and Metro-North Committee",
+          "entity_name": "Joint Long Island Rail Road and Metro-North Railroad Committee",
+          "entity_type": "committee",
+          "primary_source_id": "meeting_doc_100291"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_189841#p032_c0005",
+        "meeting_doc_189841#p032_c0006",
+        "meeting_doc_100291#p030_c0005",
+        "meeting_doc_100291#p030_c0006"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_joint-lirr-mnrr-committee-170831",
+      "target_id": "entity_joint-lirr-mnr-committee-108051",
+      "reason": "Exact same joint railroad committee identity. Both records are named 'Joint Long Island Rail Road & Metro-North Railroad Committee' with committee entity type; the target has broader repeated committee evidence.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "Joint Long Island Rail Road & Metro-North Railroad Committee",
+          "entity_name": "Joint Long Island Rail Road & Metro-North Railroad Committee",
+          "entity_type": "committee",
+          "primary_source_id": "meeting_doc_170831"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "Joint Long Island Rail Road & Metro-North Railroad Committee",
+          "entity_name": "Joint Long Island Rail Road & Metro-North Railroad Committee",
+          "entity_type": "committee",
+          "primary_source_id": "meeting_doc_108051"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_170831#p003_c0001",
+        "meeting_doc_170831#p034_c0005",
+        "meeting_doc_108051#p001_c0001",
+        "meeting_doc_108051#p015_c0002"
+      ]
+    }
+  ],
+  "guard_summary": {
+    "candidate_discovery": {
+      "exact_duplicate_name_command": "sqlite3 -header -column data/canonical.db \"select lower(trim(coalesce(e.entity_name,e.name,r.display_name))) as name_key, count(*) n, group_concat(r.record_id, ' | ') ids, group_concat(coalesce(e.entity_type,''), ' | ') types from records r join entities e on e.record_id=r.record_id left join identity_aliases ia on ia.kind='entity' and ia.alias=r.record_id where r.record_kind='entity' and ia.alias is null and coalesce(e.entity_name,e.name,r.display_name,'') != '' group by lower(trim(coalesce(e.entity_name,e.name,r.display_name))) having n > 1 order by n desc, name_key limit 120;\"",
+      "normalized_duplicate_name_command": "sqlite3 -header -column data/canonical.db \"select lower(replace(replace(replace(replace(replace(replace(trim(coalesce(e.entity_name,e.name,r.display_name)),'.',''),',',''),'&','and'),'  ',' '),'nyc','new york city'),'dept','department')) as norm_key, count(*) n, group_concat(r.record_id, ' | ') ids, group_concat(coalesce(e.entity_name,e.name,r.display_name), ' | ') names, group_concat(coalesce(e.entity_type,''), ' | ') types from records r join entities e on e.record_id=r.record_id left join identity_aliases ia on ia.kind='entity' and ia.alias=r.record_id where r.record_kind='entity' and ia.alias is null and coalesce(e.entity_name,e.name,r.display_name,'') != '' group by norm_key having n > 1 order by n desc, norm_key limit 160;\"",
+      "result_summary": "Selected entity-only candidates from exact or punctuation/abbreviation-normalized duplicate clusters. Skipped ambiguous same-label community board records spanning boroughs and skipped person/agency affiliation cases."
+    },
+    "record_existence_and_kind": {
+      "detail_command": "sqlite3 -header -column data/canonical.db \"select r.record_id, r.record_kind, r.display_name, coalesce(e.entity_name,e.name,'') as entity_name, coalesce(e.entity_type,'') as entity_type, coalesce(e.acronym,'') as acronym, r.primary_source_id from records r join entities e on e.record_id=r.record_id where r.record_id in ('entity_mta-bt-biennial-bridge-2023','entity_mta-bridges-and-tunnels','entity_mta-bt-meeting-doc-131666','entity_meeting-doc-171381-tbt','entity_mta-tbta','entity_meeting-doc-tbta','entity_audit-committee-charter','entity_mta-audit-committee','entity_meeting-doc-201726-procurement-dept','entity_mta-procurement-department','entity_mtapd-meeting-doc-205666','entity_annual-report-2021-mtapd','entity_joint-lirr-metronorth-committee','entity_joint-lirr-mnr-committee','entity_joint-lirr-mnr-committee-108051','entity_joint-lirr-mnrr-committee-170831') order by r.record_id;\"",
+      "result_summary": "16/16 alias and target records exist as record_kind='entity'. Names, entity_type, acronym, and primary_source_id matched the validator evidence in proposed_aliases."
+    },
+    "existing_alias_conflicts": {
+      "merges_json_command": "ids='entity_mta-bt-biennial-bridge-2023 entity_mta-bt-meeting-doc-131666 entity_meeting-doc-171381-tbt entity_mta-tbta entity_meeting-doc-tbta entity_mta-audit-committee entity_meeting-doc-201726-procurement-dept entity_mtapd-meeting-doc-205666 entity_joint-lirr-mnr-committee entity_joint-lirr-mnrr-committee-170831 entity_mta-bridges-and-tunnels entity_audit-committee-charter entity_mta-procurement-department entity_annual-report-2021-mtapd entity_joint-lirr-metronorth-committee entity_joint-lirr-mnr-committee-108051'; for id in $ids; do printf '%s\\t' \"$id\"; jq -r --arg id \"$id\" '(.aliases.entity[$id] // \"NO_MERGE_ALIAS\")' data/identity-overrides/merges.json; done",
+      "merges_json_result": "All 16 selected alias and target ids returned NO_MERGE_ALIAS.",
+      "identity_aliases_command": "sqlite3 -header -column data/canonical.db \"select kind, alias, target from identity_aliases where kind='entity' and alias in ('entity_mta-bt-biennial-bridge-2023','entity_mta-bt-meeting-doc-131666','entity_meeting-doc-171381-tbt','entity_mta-tbta','entity_meeting-doc-tbta','entity_mta-audit-committee','entity_meeting-doc-201726-procurement-dept','entity_mtapd-meeting-doc-205666','entity_joint-lirr-mnr-committee','entity_joint-lirr-mnrr-committee-170831','entity_mta-bridges-and-tunnels','entity_audit-committee-charter','entity_mta-procurement-department','entity_annual-report-2021-mtapd','entity_joint-lirr-metronorth-committee','entity_joint-lirr-mnr-committee-108051');\"",
+      "identity_aliases_result": "no output; none of the selected alias or target ids are already canonical identity aliases"
+    },
+    "do_not_merge_conflicts": {
+      "db_command": "sqlite3 -header -column data/canonical.db \"with pairs(kind,alias,target) as (values ('entity','entity_mta-bt-biennial-bridge-2023','entity_mta-bridges-and-tunnels'),('entity','entity_mta-bt-meeting-doc-131666','entity_mta-bridges-and-tunnels'),('entity','entity_meeting-doc-171381-tbt','entity_mta-bridges-and-tunnels'),('entity','entity_mta-tbta','entity_mta-bridges-and-tunnels'),('entity','entity_meeting-doc-tbta','entity_mta-bridges-and-tunnels'),('entity','entity_mta-audit-committee','entity_audit-committee-charter'),('entity','entity_meeting-doc-201726-procurement-dept','entity_mta-procurement-department'),('entity','entity_mtapd-meeting-doc-205666','entity_annual-report-2021-mtapd'),('entity','entity_joint-lirr-mnr-committee','entity_joint-lirr-metronorth-committee'),('entity','entity_joint-lirr-mnrr-committee-170831','entity_joint-lirr-mnr-committee-108051')) select d.* from do_not_merge d join pairs p on d.kind=p.kind and ((d.record_id_a=p.alias and d.record_id_b=p.target) or (d.record_id_a=p.target and d.record_id_b=p.alias));\"",
+      "db_result": "no output; no selected pair is present in canonical do_not_merge",
+      "json_command": "jq -r '.pairs.entity[]? | select((.record_ids|index(\"entity_mta-bt-biennial-bridge-2023\") and index(\"entity_mta-bridges-and-tunnels\")) or (.record_ids|index(\"entity_mta-bt-meeting-doc-131666\") and index(\"entity_mta-bridges-and-tunnels\")) or (.record_ids|index(\"entity_meeting-doc-171381-tbt\") and index(\"entity_mta-bridges-and-tunnels\")) or (.record_ids|index(\"entity_mta-tbta\") and index(\"entity_mta-bridges-and-tunnels\")) or (.record_ids|index(\"entity_meeting-doc-tbta\") and index(\"entity_mta-bridges-and-tunnels\")) or (.record_ids|index(\"entity_mta-audit-committee\") and index(\"entity_audit-committee-charter\")) or (.record_ids|index(\"entity_meeting-doc-201726-procurement-dept\") and index(\"entity_mta-procurement-department\")) or (.record_ids|index(\"entity_mtapd-meeting-doc-205666\") and index(\"entity_annual-report-2021-mtapd\")) or (.record_ids|index(\"entity_joint-lirr-mnr-committee\") and index(\"entity_joint-lirr-metronorth-committee\")) or (.record_ids|index(\"entity_joint-lirr-mnrr-committee-170831\") and index(\"entity_joint-lirr-mnr-committee-108051\"))) | .record_ids | @tsv' data/identity-overrides/do-not-merge.json",
+      "json_result": "no output; no selected pair is present in data/identity-overrides/do-not-merge.json"
+    },
+    "prior_prep_conflicts_through_identity114": {
+      "command": "for f in data/review_notes/codex-identity-batch0*-prep.json data/review_notes/codex-identity-batch10[0-9]-prep.json data/review_notes/codex-identity-batch11[0-4]-prep.json; do jq -r --arg f \"$f\" '.proposed_aliases[]? | select(.kind==\"entity\") | select(.alias_id as $a | [\"entity_mta-bt-biennial-bridge-2023\",\"entity_mta-bt-meeting-doc-131666\",\"entity_meeting-doc-171381-tbt\",\"entity_mta-tbta\",\"entity_meeting-doc-tbta\",\"entity_mta-audit-committee\",\"entity_meeting-doc-201726-procurement-dept\",\"entity_mtapd-meeting-doc-205666\",\"entity_joint-lirr-mnr-committee\",\"entity_joint-lirr-mnrr-committee-170831\"] | index($a)) | [$f,.alias_id,.target_id] | @tsv' \"$f\" 2>/dev/null; done",
+      "result": "no output; none of the proposed aliases appear in prior codex identity prep artifacts through batch114"
+    },
+    "source_evidence_spot_check": {
+      "command": "jq -r 'select(.record_id|IN(\"entity_mta-bt-biennial-bridge-2023\",\"entity_mta-bridges-and-tunnels\",\"entity_mta-bt-meeting-doc-131666\",\"entity_meeting-doc-171381-tbt\",\"entity_mta-tbta\",\"entity_meeting-doc-tbta\",\"entity_audit-committee-charter\",\"entity_mta-audit-committee\",\"entity_meeting-doc-201726-procurement-dept\",\"entity_mta-procurement-department\",\"entity_mtapd-meeting-doc-205666\",\"entity_annual-report-2021-mtapd\",\"entity_joint-lirr-metronorth-committee\",\"entity_joint-lirr-mnr-committee\",\"entity_joint-lirr-mnr-committee-108051\",\"entity_joint-lirr-mnrr-committee-170831\")) | [.record_id,.display_name,(.payload.entity_name//.payload.name//\"\"),(.payload.entity_type//\"\"),(.payload.acronym//\"\"),(.source_ids|join(\",\")),(.evidence_refs|map(.evidence_id)|.[0:4]|join(\" | \"))] | @tsv' data/canonical/entities.jsonl",
+      "result_summary": "Spot checks confirm same-name or abbreviation-equivalent entity records with compatible entity types and source evidence for all 10 proposed aliases."
+    },
+    "forbidden_command_compliance": {
+      "result": "No external/provider-backed commands or profiles/providers were used. No canonicalize, canonicalize-wave, canonicalize-review, campaign dedup, identity-review-run, write, ask, schema-propose, ontology-normalize-run, materialize, export-jsonl, or validate commands were run. Inspection used local deterministic commands only: pwd, rg, ls, sed, head, tail, jq, sqlite3, git status, and date. The only file write was this prep artifact."
+    }
+  }
+}

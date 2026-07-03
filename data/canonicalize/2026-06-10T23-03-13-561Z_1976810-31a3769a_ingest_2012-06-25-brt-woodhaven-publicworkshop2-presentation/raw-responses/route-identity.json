@@ -1,0 +1,61 @@
+{
+  "run_id": "2026-06-10T23-03-13-561Z_1976810-31a3769a_ingest_2012-06-25-brt-woodhaven-publicworkshop2-presentation",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T02:46:33.453Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision": "new",
+        "decision_id": "dec_q52_sbs_workshop2_new",
+        "evidence_refs": [
+          {
+            "block_id": "p007_c0005",
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "source_quote": "SBS Corridor"
+          },
+          {
+            "block_id": "p007_c0006",
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "source_quote": "A map of the SBS Corridor in Queens, New York. The route is highlighted with a dashed blue line, starting from Woodside (near LIRR) and ending at Rockaway Beach."
+          },
+          {
+            "block_id": "p008_c0008",
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "source_quote": "Study local, limited, and express bus services"
+          }
+        ],
+        "local_observation_id": "route_q52_sbs_woodhaven_workshop2",
+        "rationale": "Observation already resolves to its base_record_id route_q52-sbs-queens (record lists submission sub_db0b947ae691c141 and alias route_q52-sbs-woodhaven-workshop2). No different registry record represents the same Q52 SBS route — route_q52-ltd-woodhaven-2014 is a distinct LTD variant. Self-resolution is new."
+      },
+      {
+        "decision": "new",
+        "decision_id": "dec_q53_sbs_workshop2_new",
+        "evidence_refs": [
+          {
+            "block_id": "p007_c0005",
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "source_quote": "SBS Corridor"
+          },
+          {
+            "block_id": "p007_c0006",
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "source_quote": "A map of the SBS Corridor in Queens, New York. The route is highlighted with a dashed blue line, starting from Woodside (near LIRR) and ending at Rockaway Beach."
+          },
+          {
+            "block_id": "p008_c0008",
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "source_quote": "Study local, limited, and express bus services"
+          }
+        ],
+        "local_observation_id": "route_q53_sbs_woodhaven_workshop2",
+        "rationale": "Observation already resolves to its base_record_id route_q53-sbs-ace (record lists submission sub_218e6796cdfbbbf7 and alias route_q53-sbs-woodhaven-workshop2). No different registry record represents the same Q53 SBS route — route_q53-ltd-woodhaven-2014 is a distinct LTD variant. Self-resolution is new."
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-42-08-819Z_2111393-df464cd6_canonicalize_2026-06-10t23-03-13-561z-1976810-31a3769a-ingest-2012-06-25-brt-woodhaven-publicworkshop2-presentation-route-identity"
+}

@@ -1,0 +1,177 @@
+{
+  "run_id": "codex-reset-window-continuation-2026-06-30",
+  "date": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "provider_backed_llm_commands_used": false,
+  "forbidden_commands_used": [],
+  "baseline": {
+    "validation_issues": 0,
+    "canonical_records": 84043,
+    "wiki_pages": 7339,
+    "events_event_family_other": 372,
+    "projects_project_family_missing": 6,
+    "projects_project_family_other": 13,
+    "projects_document_time_status_missing": 110,
+    "projects_document_time_status_other": 4,
+    "source_gaps_gap_kind_normalized_other": 31,
+    "source_gaps_risk_or_contingency": 0,
+    "relation_family_other": 0,
+    "treatment_family_other": 0,
+    "routes_route_type_normalized_missing": 1
+  },
+  "after": {
+    "validation_issues": 0,
+    "canonical_records": 84043,
+    "wiki_pages": 7339,
+    "events_event_family_other": 362,
+    "events_event_family_incident": 37,
+    "events_event_family_pause": 108,
+    "projects_project_family_missing": 6,
+    "projects_project_family_other": 13,
+    "projects_document_time_status_missing": 103,
+    "projects_document_time_status_other": 4,
+    "source_gaps_gap_kind_normalized_other": 16,
+    "source_gaps_risk_or_contingency": 16,
+    "relation_family_other": 0,
+    "treatment_family_other": 0,
+    "routes_route_type_normalized_missing": 1
+  },
+  "implemented_slices": [
+    {
+      "bucket": "projects.document_time_status",
+      "change": "Added exact payload-gated lifecycle status rules for Park Avenue Viaduct job fair, Governor Hochul transparency initiative, MTA Open Data Update, platform barriers, track trespassing initiatives, Station Accessibility ADA, and MTA Accessibility Expansion.",
+      "count_delta": {
+        "missing": -7,
+        "other": 0
+      }
+    },
+    {
+      "bucket": "source_gaps.gap_kind_normalized",
+      "change": "Added runner-owned risk_or_contingency source-gap normalization for raw risk, *_risk, contingent financing/program, funding gap/uncertainty, staffing shortage, structural imbalance, and program underperformance kinds.",
+      "count_delta": {
+        "other": -15,
+        "risk_or_contingency": 16
+      },
+      "notes": "The final risk_or_contingency count is 16 because one equivalent raw-kind record beyond the scout's sample also matched the exact raw-kind rule."
+    },
+    {
+      "bucket": "events.event_family",
+      "change": "Added payload-proven incident/pause rules for physical harm/failure tails and late-train infrastructure/operational issue records.",
+      "count_delta": {
+        "other": -10,
+        "incident": 8,
+        "pause": 2
+      }
+    }
+  ],
+  "subagents": [
+    {
+      "agent_id": "019f1746-1e24-7041-99d2-d602e5d76c91",
+      "lane": "events.event_family other scout",
+      "status": "completed_closed",
+      "result": "Recommended the 10-record physical incident and late-train issue slice; implemented."
+    },
+    {
+      "agent_id": "019f1746-3a93-7d92-8fe5-a7d75d67f498",
+      "lane": "project status/family scout",
+      "status": "completed_closed",
+      "result": "Recommended a separate 10-record exact-name project-status batch for later; current turn implemented the prior 7-record high-confidence project-status batch."
+    },
+    {
+      "agent_id": "019f1746-5a68-78e3-b5d1-ebf78373d382",
+      "lane": "source-gap risk/contingency scout",
+      "status": "completed_closed",
+      "result": "Recommended risk_or_contingency as a safe runner-owned normalized value; implemented."
+    },
+    {
+      "agent_id": "019f1749-2342-7ab3-9488-f9efd9d4a237",
+      "lane": "relation-family scout",
+      "status": "completed_closed",
+      "result": "Confirmed relation_family other is already 0; proposed optional endpoint-aware affects_route raw-kind cleanup."
+    },
+    {
+      "agent_id": "019f174d-51e0-73d2-96c1-3ba8d7e198c9",
+      "lane": "treatment-family scout",
+      "status": "completed_closed",
+      "result": "Confirmed treatment_family other and missing are both 0; proposed only a one-record semantic refinement."
+    },
+    {
+      "agent_id": "019f174d-7bba-70f3-b0d5-265af1813906",
+      "lane": "identity/dedupe scout",
+      "status": "completed_closed",
+      "result": "Confirmed duplicate identity-review pressure is fully suppressed with 0 unsuppressed pairs; proposed optional one-alias entity prune."
+    },
+    {
+      "agent_id": "019f1751-f80a-7eb2-a0ef-cc45883c3d36",
+      "lane": "remaining source-gap other scout",
+      "status": "completed_closed",
+      "result": "Confirmed remaining source-gap other count is 16 and no 5+ high-confidence raw-kind rule remains."
+    }
+  ],
+  "verification": {
+    "focused_ontology_tests": {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "tests_passed": 256,
+      "expects": 3622
+    },
+    "typecheck": {
+      "command": "bun run typecheck",
+      "passed": true
+    },
+    "materialize": {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "completed": true,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "issues": 0
+    }
+  },
+  "remaining_lanes": [
+    {
+      "bucket": "events.event_family",
+      "remaining_other": 362,
+      "next_action": "Continue payload-gated event tail slices; this remains the largest measurable count bucket."
+    },
+    {
+      "bucket": "projects.document_time_status",
+      "remaining_missing": 103,
+      "remaining_other": 4,
+      "next_action": "Implement the scout's exact-name 10-record capital/scheduled-trackwork batch if preserving exact-name guards is acceptable."
+    },
+    {
+      "bucket": "source_gaps.gap_kind_normalized",
+      "remaining_other": 16,
+      "next_action": "Treat as policy floor unless a new extraction-limit or implementation-caveat taxonomy value is approved; only a 1-record site-visit suspension micro-rule remains obvious."
+    },
+    {
+      "bucket": "identity duplicate keys",
+      "duplicate_entity_identity_keys": 5,
+      "unsuppressed_pairs": 0,
+      "next_action": "Optional one-alias MTA Corporate Compliance prune; not urgent because identity-review pressure is already zero."
+    },
+    {
+      "bucket": "relations and treatments",
+      "relation_family_other": 0,
+      "treatment_family_other": 0,
+      "next_action": "No backlog reducer needed; only optional semantic refinements remain."
+    }
+  ],
+  "files_changed_by_this_slice": [
+    "packages/pipeline/src/ontology/normalizers.ts",
+    "packages/pipeline/test/ontology/normalizers.test.ts",
+    "data/canonical/events.jsonl",
+    "data/canonical/projects.jsonl",
+    "data/canonical/source_gaps.jsonl",
+    "data/canonical.db",
+    "wiki/",
+    "LOG.md",
+    "data/review_notes/codex-reset-window-continuation-2026-06-30.json"
+  ],
+  "notes": [
+    "The worktree was already very dirty from the broader campaign; unrelated dirty files were not reverted.",
+    "Canonical JSONL was updated through deterministic materialization, not hand-edited.",
+    "All subagents were read-only scouts and were closed after completion."
+  ]
+}

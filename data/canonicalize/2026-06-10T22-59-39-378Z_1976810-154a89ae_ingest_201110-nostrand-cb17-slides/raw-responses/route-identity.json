@@ -1,0 +1,61 @@
+{
+  "run_id": "2026-06-10T22-59-39-378Z_1976810-154a89ae_ingest_201110-nostrand-cb17-slides",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T02:03:17.871Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "b44-sbs-cb17-new",
+        "local_observation_id": "route_b44_sbs_201110_cb17",
+        "decision": "new",
+        "rationale": "Observation's base_record_id route_b44-sbs already exists in the registry (display_name: 'Nostrand Avenue-Rogers Avenue Select Bus Service (B44)'). The source 201110_nostrand_cb17_slides is already in its source_ids and alias route_b44-sbs-201110-cb17 is listed. do_not_merge confirms route_b44-sbs is distinct from route_b44-local and route_b44-limited. No different registry record represents the same real-world B44 SBS variant.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p002_c0003",
+            "source_quote": "Currently served by B44 bus route"
+          },
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p011_c0003",
+            "source_quote": "Southbound B44 SBS on Nostrand Ave • Northbound B44 SBS on Rogers Ave, B44 local remains on New York Ave"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "shared_base_route",
+            "subject_id": "route_b44-sbs",
+            "object_id": "route_b44-local",
+            "description": "B44 SBS and B44 Local are distinct service variants sharing the B44 base route corridor; source explicitly distinguishes their street alignments.",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb17_slides",
+                "block_id": "p011_c0003",
+                "source_quote": "Southbound B44 SBS on Nostrand Ave • Northbound B44 SBS on Rogers Ave, B44 local remains on New York Ave"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "b44-local-cb17-new",
+        "local_observation_id": "route_b44_local_201110_cb17",
+        "decision": "new",
+        "rationale": "Observation's base_record_id route_b44-local already exists in the registry (display_name: 'Proposed B44 Local - Nostrand/Rogers Avenues'). The source 201110_nostrand_cb17_slides is already in its source_ids and alias route_b44-local-201110-cb17 is listed. do_not_merge confirms route_b44-local is distinct from route_b44-sbs and route_b44-limited. No different registry record represents the same real-world B44 Local variant.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p011_c0003",
+            "source_quote": "Southbound B44 SBS on Nostrand Ave • Northbound B44 SBS on Rogers Ave, B44 local remains on New York Ave"
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-01-46-065Z_2111393-37a68168_canonicalize_2026-06-10t22-59-39-378z-1976810-154a89ae-ingest-201110-nostrand-cb17-slides-route-identity"
+}

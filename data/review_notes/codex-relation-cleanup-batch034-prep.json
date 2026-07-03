@@ -1,0 +1,352 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch034-prep",
+  "created_at": "2026-06-23T02:45:00Z",
+  "author": "codex",
+  "scope": "relation endpoint-shape cleanup prep only; durable retire+replace mechanism planned but not applied",
+  "batch": "batch034",
+  "run_id_for_replacements": "2026-06-23_codex_relation_cleanup_batch034",
+  "submitted_at_for_dry_run": "2026-06-23T02:45:00Z",
+  "durable_mechanism_planned_not_applied": {
+    "retirements_target": "data/submission-overrides/retired.json",
+    "replacement_journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch034.jsonl",
+    "applied": false
+  },
+  "bucket": {
+    "name": "part_of_program project-to-event rows",
+    "original_relation_kind": "part_of_program",
+    "original_endpoint_shape": "project -> event",
+    "replacement_relation_kinds": [
+      "part_of_program",
+      "retire_only"
+    ],
+    "replacement_endpoint_shapes": [
+      "project -> project",
+      "none"
+    ],
+    "prepared_count": 3,
+    "why_coherent": "After excluding retired submissions, prior relation cleanup batches017-033, and missing-target repair work, the next largest exact endpoint-shape bucket is three part_of_program rows from project subjects to event objects. Current endpoint-shape rules allow part_of_program from project or route subjects to project or entity objects, not events. Two rows have source text that clearly names the program/project object and can be retargeted to existing canonical project records. One Grade Crossing row is already covered by a valid has_timeline_event project -> event relation, so the malformed duplicate is prepared as retire-only."
+  },
+  "checkpoint_context": {
+    "method": "Read-only inventory over canonical JSONL with current endpoint-shape rules; excluded retired submissions, prior codex relation cleanup prep originals through batch033, and missing-target repair work. Did not run CLI validate, materialize, export-jsonl, DB repair/publish, or provider-backed commands.",
+    "remaining_endpoint_shape_inventory_after_exclusions": {
+      "total": 43,
+      "selected_bucket": "part_of_program project->event",
+      "selected_bucket_count": 3,
+      "prepared_count": 3,
+      "other_top_buckets": [
+        {
+          "bucket": "has_metric source->metric_claim",
+          "count": 2
+        },
+        {
+          "bucket": "has_timeline_event claim->event",
+          "count": 2
+        },
+        {
+          "bucket": "implemented_by route->entity",
+          "count": 2
+        },
+        {
+          "bucket": "part_of_program event->entity",
+          "count": 2
+        }
+      ]
+    },
+    "endpoint_shape_probe": {
+      "part_of_program project->project": "accepted",
+      "part_of_program project->event": "Relation kind part_of_program expects project|route -> project|entity, got project -> event.",
+      "has_timeline_event project->event": "accepted",
+      "related_to project->event": "accepted"
+    }
+  },
+  "exclusions_and_guards": {
+    "excluded_batches": [
+      "batch017",
+      "batch019",
+      "batch020",
+      "batch021",
+      "batch022",
+      "batch023",
+      "batch024",
+      "batch025",
+      "batch026",
+      "batch027",
+      "batch028",
+      "batch029",
+      "batch030",
+      "batch031",
+      "batch032",
+      "batch033"
+    ],
+    "missing_target_repair_excluded": true,
+    "retired_json_not_edited": true,
+    "submission_journals_not_edited": true,
+    "generated_outputs_not_edited": true,
+    "db_not_edited": true,
+    "log_not_edited": true,
+    "manifest_merges_retired_not_edited": true,
+    "wiki_source_pages_not_edited": true,
+    "original_submission_guard": {
+      "retired_hits": [],
+      "prior_relation_batch_submission_hits": [],
+      "prior_relation_batch_record_hits": []
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": [],
+      "prior_review_note_submission_id_hits": [],
+      "prior_review_note_local_observation_id_hits": []
+    }
+  },
+  "local_validation": {
+    "tooling": "createSubmissionEntry dry run for replacement tool_args plus relationEndpointIssues; relationEndpointShapeIssue checked against canonical endpoint kinds for each replacement. Retire-only candidate checked by source evidence and existing valid relation inspection.",
+    "summary": {
+      "prepared_count": 3,
+      "retire_replace_count": 2,
+      "retire_only_count": 1,
+      "accepted_replacement_count": 2,
+      "issue_count": 0,
+      "warning_count": 0,
+      "endpoint_shape_issue_count_after_replacement": 0
+    }
+  },
+  "command_evidence": [
+    {
+      "command": "test -f data/review_notes/codex-relation-cleanup-batch034-prep.json; echo $?",
+      "result": "1 before writing; artifact did not already exist."
+    },
+    {
+      "command": "endpoint-shape inventory script excluding retired submissions, cleanup batches017-033, and missing-target repair submissions",
+      "result": "Remaining unexpected_relation_endpoint_shape total was 43; selected exact bucket part_of_program project->event had count 3."
+    },
+    {
+      "command": "canonical JSONL inspection for relation_gcm-east-side-access, relation_gcsip-part-of-grade-xing-improvement-program, and relation_westbury-garage-main-line-expansion",
+      "result": "Confirmed all three are current canonical part_of_program rows with project subjects and event objects, and captured original submission ids/local ids/evidence refs."
+    },
+    {
+      "command": "source block inspection for meeting_doc_101026#p045_c0006, meeting_doc_91576#p002_c0025/#p006_c0015, and meeting_doc_26886#p033_c0005/#p033_c0007",
+      "result": "Confirmed East Side Access and LIRR Main Line Expansion project targets are source-backed; confirmed Grade Crossing row duplicates an existing valid project->event timeline relation."
+    },
+    {
+      "command": "createSubmissionEntry dry run for two part_of_program project->project replacements",
+      "result": "Both replacement entries accepted with no relationEndpointIssues and no endpoint-shape issue."
+    },
+    {
+      "command": "collision guard script over retired.json, data/submissions, and prior prep artifacts through batch033",
+      "result": "No original retired/prior hits and no replacement submission id or local observation id collisions."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts export-jsonl",
+    "provider-backed ingest/write/ask commands",
+    "database repair or publish commands"
+  ],
+  "prepared": [
+    {
+      "retire": {
+        "submission_id": "sub_de8832d429b2f79f",
+        "original_record_id": "relation_gcm-east-side-access",
+        "original_local_observation_id": "relation_gcm_east_side_access",
+        "malformed_shape": "part_of_program project -> event",
+        "original_relation_kind": "part_of_program",
+        "original_subject_id": "project_grand-central-madison",
+        "original_subject_local_observation_id": "project_grand_central_madison",
+        "original_subject_name": "Grand Central Madison",
+        "original_object_id": "event_board-meeting-nov-2022",
+        "original_object_local_observation_id": "event_board_meeting_nov_2022",
+        "original_object_name": "MTA Board Meeting November 30, 2022",
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_101026",
+            "evidence_id": "meeting_doc_101026#p045_c0006",
+            "source_path": "raw/sources/meeting_doc_101026/blocks.jsonl",
+            "page_number": 45,
+            "block_id": "p045_c0006",
+            "text_sha256": "sha256:72324df4b23ddd971e3630d6a6492e85bc6a26eca24547448802fbe9fca2fb83",
+            "text_source": "raw_text",
+            "source_quote": "East Side Access project"
+          }
+        ],
+        "reason": "The original relation points part_of_program at a board meeting event, but the cited source text identifies East Side Access as the program/project context for Grand Central Madison terminal work."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_7add3b9c712813fe",
+        "proposed_relation_kind": "part_of_program",
+        "proposed_endpoint_shape": "project -> project",
+        "tool_args": {
+          "source_id": "meeting_doc_101026",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch034_gcm_part_of_east_side_access",
+          "label": "Grand Central Madison part of East Side Access",
+          "raw_text": "Contract VM014 provides engineering and fabrication for elevators and escalators for the East Side Access project and maintenance at the new Grand Central Madison Terminal.",
+          "payload": {
+            "relation_kind": "part_of_program",
+            "subject_id": "project_grand-central-madison",
+            "object_id": "project_annual-2021-east-side-access",
+            "description": "Replacement for malformed part_of_program project -> event relation; source identifies Grand Central Madison terminal vertical circulation work as part of the East Side Access project.",
+            "relation_family": "program_project_scope"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_101026",
+              "evidence_id": "meeting_doc_101026#p045_c0006",
+              "source_path": "raw/sources/meeting_doc_101026/blocks.jsonl",
+              "page_number": 45,
+              "block_id": "p045_c0006",
+              "text_sha256": "sha256:72324df4b23ddd971e3630d6a6492e85bc6a26eca24547448802fbe9fca2fb83",
+              "text_source": "raw_text",
+              "role": "program_scope",
+              "source_quote": "East Side Access project"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue_after_replacement": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_9ca03c5fcc235759",
+        "original_record_id": "relation_gcsip-part-of-grade-xing-improvement-program",
+        "original_local_observation_id": "relation_gcsip_part_of_grade_xing_improvement_program",
+        "malformed_shape": "part_of_program project -> event",
+        "original_relation_kind": "part_of_program",
+        "original_subject_id": "project_meeting-doc-115236-grade-crossing-safety",
+        "original_subject_local_observation_id": "project_grade_crossing_safety_improvement_program_jul2022",
+        "original_subject_name": "Grade Crossing Safety Improvement Program",
+        "original_object_id": "event_safety-committee-meeting-july2022",
+        "original_object_local_observation_id": "event_safety_committee_meeting_july2022",
+        "original_object_name": "Safety Committee Meeting July 2022",
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_91576",
+            "evidence_id": "meeting_doc_91576#p006_c0015",
+            "source_path": "raw/sources/meeting_doc_91576/blocks.jsonl",
+            "page_number": 6,
+            "block_id": "p006_c0015",
+            "text_sha256": "sha256:c0f6adc8cb4ea5e9e1bfffd5040a324de5bb671193070d3021db6642744adf20",
+            "text_source": "raw_text",
+            "source_quote": "July 2022"
+          },
+          {
+            "source_id": "meeting_doc_91576",
+            "evidence_id": "meeting_doc_91576#p002_c0025",
+            "source_path": "raw/sources/meeting_doc_91576/blocks.jsonl",
+            "page_number": 2,
+            "block_id": "p002_c0025",
+            "text_sha256": "sha256:2cfe84c0099837cc6ed6aa3e794563649867da0bb37ce3263d48bcb37f6d6001",
+            "text_source": "raw_text",
+            "source_quote": "Grade Crossing Improvement Projects"
+          }
+        ],
+        "reason": "Retire-only. The original relation uses part_of_program for project -> event agenda context. The same project/event association is already represented by current canonical relation_safety-committee-meeting-presented-gcsip as has_timeline_event project -> event with accepted endpoint shape, so adding a replacement would duplicate an existing valid relation."
+      },
+      "replacement": null,
+      "existing_valid_relation_guard": {
+        "record_id": "relation_safety-committee-meeting-presented-gcsip",
+        "submission_id": "sub_ce9e146a1c6f8702",
+        "relation_kind": "has_timeline_event",
+        "endpoint_shape": "project -> event",
+        "endpoint_shape_issue": null,
+        "evidence_refs": [
+          "meeting_doc_91576#p002_c0025",
+          "meeting_doc_91576#p006_c0015"
+        ]
+      },
+      "local_validation": {
+        "state": "not_applicable_retire_only",
+        "issues": [],
+        "warnings": [],
+        "relationEndpointIssues": [],
+        "endpoint_shape_issue_after_replacement": null
+      },
+      "confidence": "high"
+    },
+    {
+      "retire": {
+        "submission_id": "sub_1f27f7e3f34b0d93",
+        "original_record_id": "relation_westbury-garage-main-line-expansion",
+        "original_local_observation_id": "relation_westbury_garage_main_line_expansion",
+        "malformed_shape": "part_of_program project -> event",
+        "original_relation_kind": "part_of_program",
+        "original_subject_id": "project_lirr-westbury-parking-garage",
+        "original_subject_local_observation_id": "project_lirr_westbury_parking_garage",
+        "original_subject_name": "Westbury Parking Garage",
+        "original_object_id": "event_westbury-garage-opening-march2021",
+        "original_object_local_observation_id": "event_westbury_garage_opening_march2021",
+        "original_object_name": "Westbury Parking Garage Expected Opening March 2021",
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_26886",
+            "evidence_id": "meeting_doc_26886#p033_c0005",
+            "source_path": "raw/sources/meeting_doc_26886/blocks.jsonl",
+            "page_number": 33,
+            "block_id": "p033_c0005",
+            "text_sha256": "sha256:0a2759c8f46129b1792095b6938efaac6a24bbfa747a23dc4b412e0f1c7c44bb",
+            "text_source": "raw_text",
+            "source_quote": "Westbury Parking Garage"
+          },
+          {
+            "source_id": "meeting_doc_26886",
+            "evidence_id": "meeting_doc_26886#p033_c0007",
+            "source_path": "raw/sources/meeting_doc_26886/blocks.jsonl",
+            "page_number": 33,
+            "block_id": "p033_c0007",
+            "text_sha256": "sha256:983723f0634fcbaf6039b7be2d8a092e43da148cedae23fe5484193829205d2d",
+            "text_source": "raw_text",
+            "source_quote": "As part of LIRR's Main Line Expansion project"
+          }
+        ],
+        "reason": "The original relation points part_of_program at an opening event, but the cited source text identifies LIRR's Main Line Expansion project as the program/project context for the Westbury Parking Garage."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_c0d3f93e373093fd",
+        "proposed_relation_kind": "part_of_program",
+        "proposed_endpoint_shape": "project -> project",
+        "tool_args": {
+          "source_id": "meeting_doc_26886",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch034_westbury_garage_part_of_main_line_expansion",
+          "label": "Westbury Parking Garage part of LIRR Main Line Expansion",
+          "raw_text": "As part of LIRR's Main Line Expansion project, a 667 space parking garage was constructed on the north side of the Westbury station.",
+          "payload": {
+            "relation_kind": "part_of_program",
+            "subject_id": "project_lirr-westbury-parking-garage",
+            "object_id": "project_lirr-main-line-expansion-jan2023",
+            "description": "Replacement for malformed part_of_program project -> event relation; source states the Westbury Parking Garage was constructed as part of LIRR's Main Line Expansion project.",
+            "relation_family": "program_project_scope"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_26886",
+              "evidence_id": "meeting_doc_26886#p033_c0007",
+              "source_path": "raw/sources/meeting_doc_26886/blocks.jsonl",
+              "page_number": 33,
+              "block_id": "p033_c0007",
+              "text_sha256": "sha256:983723f0634fcbaf6039b7be2d8a092e43da148cedae23fe5484193829205d2d",
+              "text_source": "raw_text",
+              "role": "program_scope",
+              "source_quote": "As part of LIRR's Main Line Expansion project, a 667 space parking garage was constructed on the north side of the Westbury station."
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue_after_replacement": null
+        },
+        "confidence": "high"
+      }
+    }
+  ]
+}

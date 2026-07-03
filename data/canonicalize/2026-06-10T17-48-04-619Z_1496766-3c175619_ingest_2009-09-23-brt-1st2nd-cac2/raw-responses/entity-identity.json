@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T17-48-04-619Z_1496766-3c175619_ingest_2009-09-23-brt-1st2nd-cac2",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-10T19:27:14.725Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "nyct-agency-match-self",
+        "local_observation_id": "entity_nyct_cac_meeting_2009",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-nyct is the closest canonical match: same entity_name ('New York City Transit' vs 'MTA New York City Transit'), same entity_type ('agency'), same acronym ('NYCT'). The registry record already captures this entity. Per rules, when the closest match IS the observation's own base_record_id, the decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_09_23_brt_1st2nd_cac2",
+            "block_id": "p001_c0003",
+            "source_quote": "New York City Transit"
+          },
+          {
+            "source_id": "2009_09_23_brt_1st2nd_cac2",
+            "block_id": "p002_c0012",
+            "source_quote": "New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "nyc-dot-agency-match-self",
+        "local_observation_id": "entity_nyc_dot_cac_meeting_2009",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot is the closest canonical match: same entity_name ('New York City Department of Transportation'), same entity_type ('agency'), same acronym ('NYC DOT' / 'DOT'). The registry record already captures this entity. Closest match IS own base_record_id → new.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_09_23_brt_1st2nd_cac2",
+            "block_id": "p003_c0005",
+            "source_quote": "NEW YORK CITY DOT"
+          },
+          {
+            "source_id": "2009_09_23_brt_1st2nd_cac2",
+            "block_id": "p011_c0006",
+            "source_quote": "NEW YORK CITY DOT"
+          },
+          {
+            "source_id": "2009_09_23_brt_1st2nd_cac2",
+            "block_id": "p020_c0005",
+            "source_quote": "NEW YORK CITY DOT"
+          }
+        ]
+      },
+      {
+        "decision_id": "first-second-ave-cac-match-self",
+        "local_observation_id": "entity_first_second_ave_sbs_cac",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_first-second-ave-sbs-cac is the closest canonical match: same entity_name ('First Avenue/Second Avenue SBS Community Advisory Committee'), same entity_type ('committee'), identical description about composition and role. The registry record already captures this entity. Closest match IS own base_record_id → new.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_09_23_brt_1st2nd_cac2",
+            "block_id": "p005_c0002",
+            "source_quote": "About the First Ave/Second Ave CAC"
+          },
+          {
+            "source_id": "2009_09_23_brt_1st2nd_cac2",
+            "block_id": "p005_c0004",
+            "source_quote": "▪ Elected Officials ▪ Community Boards ▪ Major Institutions ▪ Community Organizations ▪ Business Representatives"
+          },
+          {
+            "source_id": "2009_09_23_brt_1st2nd_cac2",
+            "block_id": "p005_c0006",
+            "source_quote": "To provide opportunities for input as project design and implementation progresses"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-26-20-365Z_1626237-721942b7_canonicalize_2026-06-10t17-48-04-619z-1496766-3c175619-ingest-2009-09-23-brt-1st2nd-cac2-entity-identity"
+}

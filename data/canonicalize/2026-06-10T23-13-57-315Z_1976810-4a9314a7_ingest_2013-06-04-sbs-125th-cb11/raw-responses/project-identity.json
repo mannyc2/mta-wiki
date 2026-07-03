@@ -1,0 +1,68 @@
+{
+  "run_id": "2026-06-10T23-13-57-315Z_1976810-4a9314a7_ingest_2013-06-04-sbs-125th-cb11",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T03:56:12.790Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d_project_m60_sbs_125th_street_2013_new",
+        "local_observation_id": "project_m60_sbs_125th_street_2013",
+        "decision": "new",
+        "proposed_relations": [
+          {
+            "relation_kind": "potential_same_project",
+            "subject_id": "project_m60-sbs-125th-street-2013",
+            "object_id": "project_125th-st-sbs-2013",
+            "description": "Both records describe the same M60 Select Bus Service project on 125th Street in Manhattan (both 'Select Bus Service', 'proposed', Manhattan). They share aliases project_125th-st-sbs and project_m60-sbs-on-125th-st. The source document for this observation (2013_06_04_sbs_125th_cb11, p006) references the full public outreach timeline starting in September 2012, directly linking the March/April 2013 presentations (source_ids of project_125th-st-sbs-2013) with the June 2013 presentations (source_ids of project_m60-sbs-125th-street-2013) as phases of the same project.",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_04_sbs_125th_cb11",
+                "block_id": "p006_c0006",
+                "source_quote": "Summer 2012 Consultation with CB9, CB10 and CB11"
+              },
+              {
+                "source_id": "2013_06_04_sbs_125th_cb11",
+                "block_id": "p006_c0007",
+                "source_quote": "September 2012 Public Workshop"
+              },
+              {
+                "source_id": "2013_06_04_sbs_125th_cb11",
+                "block_id": "p006_c0011",
+                "source_quote": "Spring 2013 Community Meetings with CB9, CB10, CB11"
+              }
+            ]
+          }
+        ],
+        "rationale": "The observation's base_record_id (project_m60-sbs-125th-street-2013) IS an existing registry record that already includes this observation's source_id (2013_06_04_sbs_125th_cb11). The observation resolves to its own base_record_id. Per rules, when the closest match is the observation's own base_record_id, decision is 'new' — never link to own base_record_id. Proposed relation: project_m60-sbs-125th-street-2013 and project_125th-st-sbs-2013 appear to represent the same real-world M60 SBS project for 125th Street, sharing aliases and describing the same corridor/scope, just documented from different presentation dates within the same outreach timeline.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_04_sbs_125th_cb11",
+            "block_id": "p001_c0001",
+            "source_quote": "M60 Select Bus Service on 125 th Street"
+          },
+          {
+            "source_id": "2013_06_04_sbs_125th_cb11",
+            "block_id": "p005_c0003",
+            "source_quote": "Select Bus Service on the M60"
+          },
+          {
+            "source_id": "2013_06_04_sbs_125th_cb11",
+            "block_id": "p005_c0006",
+            "source_quote": "Off-board fare payment"
+          },
+          {
+            "source_id": "2013_06_04_sbs_125th_cb11",
+            "block_id": "p017_c0007",
+            "source_quote": "Move toward implementation"
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-43-05-309Z_2111393-ac9637e7_canonicalize_2026-06-10t23-13-57-315z-1976810-4a9314a7-ingest-2013-06-04-sbs-125th-cb11-project-identity"
+}

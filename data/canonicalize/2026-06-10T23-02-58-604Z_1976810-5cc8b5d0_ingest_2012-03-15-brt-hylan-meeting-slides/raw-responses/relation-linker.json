@@ -1,0 +1,200 @@
+{
+  "run_id": "2026-06-10T23-02-58-604Z_1976810-5cc8b5d0_ingest_2012-03-15-brt-hylan-meeting-slides",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T02:39:44.276Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "assistant_text",
+  "parsed_response": {
+    "submission": {
+      "id": "sub_relation-linker_hylan_final",
+      "batch_triples": [
+        {
+          "observation_ids": [
+            "metric_victory_blvd_tsp_bus_travel_time_savings_10pct"
+          ],
+          "subject_record_id": "corridor_victory-boulevard",
+          "relation": "has_metric",
+          "evidence_refs": [
+            {
+              "source_id": "2012_03_15_brt_hylan_meeting_slides",
+              "block_id": "p016_c0005",
+              "quoted_text": "Victory Boulevard TSP experience: 10% bus travel time savings, 5% traffic travel time savings"
+            }
+          ]
+        },
+        {
+          "observation_ids": [
+            "metric_victory_blvd_tsp_traffic_travel_time_savings_5pct"
+          ],
+          "subject_record_id": "corridor_victory-boulevard",
+          "relation": "has_metric",
+          "evidence_refs": [
+            {
+              "source_id": "2012_03_15_brt_hylan_meeting_slides",
+              "block_id": "p016_c0005",
+              "quoted_text": "Victory Boulevard TSP experience: 10% bus travel time savings, 5% traffic travel time savings"
+            }
+          ]
+        },
+        {
+          "observation_ids": [
+            "metric_20pct_faster_bus_trips_hylan_plan"
+          ],
+          "subject_record_id": "project_hylan-blvd-transportation-improvement-study",
+          "relation": "has_metric",
+          "evidence_refs": [
+            {
+              "source_id": "2012_03_15_brt_hylan_meeting_slides",
+              "block_id": "p023_c0004",
+              "quoted_text": "20% faster bus trips"
+            }
+          ]
+        },
+        {
+          "observation_ids": [
+            "claim_more_predictable_bus_arrivals_hylan"
+          ],
+          "subject_record_id": "project_hylan-blvd-transportation-improvement-study",
+          "relation": "has_claim",
+          "evidence_refs": [
+            {
+              "source_id": "2012_03_15_brt_hylan_meeting_slides",
+              "block_id": "p023_c0004",
+              "quoted_text": "More predictable bus arrivals"
+            }
+          ]
+        },
+        {
+          "observation_ids": [
+            "claim_less_delays_traffic_signals_hylan"
+          ],
+          "subject_record_id": "project_hylan-blvd-transportation-improvement-study",
+          "relation": "has_claim",
+          "evidence_refs": [
+            {
+              "source_id": "2012_03_15_brt_hylan_meeting_slides",
+              "block_id": "p023_c0004",
+              "quoted_text": "Less delays at traffic signals"
+            }
+          ]
+        },
+        {
+          "observation_ids": [
+            "claim_add_bus_lanes_select_areas_hylan"
+          ],
+          "subject_record_id": "project_hylan-blvd-transportation-improvement-study",
+          "relation": "has_claim",
+          "evidence_refs": [
+            {
+              "source_id": "2012_03_15_brt_hylan_meeting_slides",
+              "block_id": "p007_c0004",
+              "quoted_text": "Add bus lanes in select areas to reduce delays"
+            }
+          ]
+        },
+        {
+          "observation_ids": [
+            "claim_realtime_info_verrazano_bridge_hylan"
+          ],
+          "subject_record_id": "project_hylan-blvd-transportation-improvement-study",
+          "relation": "has_claim",
+          "evidence_refs": [
+            {
+              "source_id": "2012_03_15_brt_hylan_meeting_slides",
+              "block_id": "p007_c0004",
+              "quoted_text": "Real-time Information for best route to Verrazano-Narrows Bridge"
+            }
+          ]
+        },
+        {
+          "observation_ids": [
+            "claim_pedestrian_safety_enhancements_hylan"
+          ],
+          "subject_record_id": "project_hylan-blvd-transportation-improvement-study",
+          "relation": "has_claim",
+          "evidence_refs": [
+            {
+              "source_id": "2012_03_15_brt_hylan_meeting_slides",
+              "block_id": "p007_c0004",
+              "quoted_text": "Implement pedestrian safety enhancements throughout corridor"
+            }
+          ]
+        },
+        {
+          "observation_ids": [
+            "event_hylan_public_meeting_2012_03_14"
+          ],
+          "subject_record_id": "project_hylan-blvd-transportation-improvement-study",
+          "relation": "has_timeline_event",
+          "evidence_refs": [
+            {
+              "source_id": "2012_03_15_brt_hylan_meeting_slides",
+              "block_id": "p001_c0004",
+              "quoted_text": "Hylan Boulevard Corridor Transportation Improvement Study Public Meeting March 14, 2012"
+            }
+          ]
+        },
+        {
+          "observation_ids": [
+            "event_finalize_plan_spring_2012"
+          ],
+          "subject_record_id": "project_hylan-blvd-transportation-improvement-study",
+          "relation": "has_timeline_event",
+          "evidence_refs": [
+            {
+              "source_id": "2012_03_15_brt_hylan_meeting_slides",
+              "block_id": "p024_c0004",
+              "quoted_text": "Finalize recommended plan – Spring 2012"
+            }
+          ]
+        },
+        {
+          "observation_ids": [
+            "event_implement_street_changes_summer_2012"
+          ],
+          "subject_record_id": "project_hylan-blvd-transportation-improvement-study",
+          "relation": "has_timeline_event",
+          "evidence_refs": [
+            {
+              "source_id": "2012_03_15_brt_hylan_meeting_slides",
+              "block_id": "p024_c0004",
+              "quoted_text": "Implement street changes – Summer 2012"
+            }
+          ]
+        },
+        {
+          "observation_ids": [
+            "event_implement_bus_service_changes_sep_2012"
+          ],
+          "subject_record_id": "project_hylan-blvd-transportation-improvement-study",
+          "relation": "has_timeline_event",
+          "evidence_refs": [
+            {
+              "source_id": "2012_03_15_brt_hylan_meeting_slides",
+              "block_id": "p024_c0004",
+              "quoted_text": "Implement bus service changes – September 2012"
+            }
+          ]
+        },
+        {
+          "observation_ids": [
+            "event_long_term_improvements_2013"
+          ],
+          "subject_record_id": "project_hylan-blvd-transportation-improvement-study",
+          "relation": "has_timeline_event",
+          "evidence_refs": [
+            {
+              "source_id": "2012_03_15_brt_hylan_meeting_slides",
+              "block_id": "p024_c0004",
+              "quoted_text": "Continue development of long-term improvements – 2013"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "raw_response": "Now I'll analyze each of the 13 observations and determine their relationship to the existing registry of canonical subjects.\n\nLet me first understand what subjects from the registry are relevant. The source is `2012_03_15_brt_hylan_meeting_slides`, and the existing relations involving the Hylan Boulevard study are visible in the registry.\n\nLet me look at the key subjects in the registry related to the Hylan Boulevard study:\n\n- `corridor_hylan-boulevard-brt`: Hylan Boulevard corridor\n- `corridor_richmond-ave-hylan-2011`: Richmond Avenue corridor\n- `project_hylan-blvd-transportation-improvement-study`: The project\n- Various routes like `route_hylan-sbs-proposed-2011`, `route_s78-hylan-2010`, etc.\n\nNow let me look at existing relations already established for the Hylan project:\n- `has_claim project_hylan-blvd-transportation-improvement-study -> claim_hcs-through-traffic-only` (existing)\n\nNow let me look at the observations and match them to the registry. All 13 observations come from the same source `2012_03_15_brt_hylan_meeting_slides`.\n\nLet me now carefully analyze each observation and make relations:\n\n**Observation 1**: `metric_victory_blvd_tsp_bus_travel_time_savings_10pct` - Victory Boulevard TSP: 10% bus travel time savings. Victory Boulevard is on Staten Island (it's a Staten Island corridor). The evidence comes from the Hylan Blvd meeting slides. Let me check if this relates to the Hylan project or to Victory Boulevard corridor. Looking at the evidence: \"Victory Boulevard TSP experience: 10% bus travel time savings, 5% traffic travel time savings\" — this seems to reference Victory Boulevard TSP results being presented at the Hylan Blvd meeting as an example/analogue. The registry has `corridor_victory-boulevard` which is a different corridor in Staten Island. The metric is about Victory Blvd TSP, not Hylan Blvd TSP. Not the Hylan project. Skip relation to Hylan corridor/project.\n\nWait, let me reconsider. The metric claims are presented within the PDF about the Hylan Blvd study as examples of TSP benefits. The metric specifically mentions \"Victory Boulevard TSP experience.\" This was presented at the Hylan Boulevard meeting as an example of what TSP can achieve. The question is whether to relate this metric to the Hylan corridor. The metric itself is about Victory Boulevard, not Hylan Boulevard, so I should not relate this to the Hylan corridor. These are presented as reference/examples rather than results on the Hylan corridor itself.\n\nLooking more carefully at the observations:\n- Observations 1-2 are about Victory Blvd TSP (not Hylan-specific)\n- Observations 3-5 are about the Hylan plan benefits- Observations 6-8 are about proposed improvements on Hylan\n- Observation 9 is the public meeting event\n- Observations 10-13 are about the timeline/next steps\n\nLet me identify the correct relationships to the registry subjects:\n\n**Metric/Claim observations** (1-8): These are all metric_claims and claims from the Hylan Blvd meeting slides. I need to relate them to the project and corridor.\n\nFor metric claims about Victory Blvd TSP (obs 1-2): These are reference/examples cited in the slides, not about the Hylan corridor itself. They should be related to the Victory Blvd corridor if it exists in the registry — but looking at the registry, `corridor_victory-boulevard` exists. So obs 1-2 can be related to `corridor_victory-boulevard`.\n\nFor observations 3-5 (20% faster bus trips, more predictable bus arrivals, less delays at traffic signals): These are directly from the Hylan Blvd plan slides. The project `project_hylan-blvd-transportation-improvement-study` exists, and there's an existing claim `claim_hcs-through-traffic-only` already linked to it. I should relate these claims to the project.\n\nWait, but I should think about this more carefully. The existing relations show `project_hylan-blvd-transportation-improvement-study -> claim_hcs-through-traffic-only`. So existing pattern is: project -> has_claim -> claim.\n\nLet me think about which subject to use (project vs corridor):\n- The project `project_hylan-blvd-transportation-improvement-study` is about the transportation improvement study overall\n- The corridor `corridor_hylan-boulevard-brt` is the physical Hylan Blvd corridor\n\nFor claims about benefits of the recommended plan (obs 3-5), it seems these should relate to the project.For the proposed improvements (obs 6-8), these are also from the project presentation.\n\nFor the events (obs 9-13), these are timeline events from the project.\n\nNow let me look more carefully at the evidence quotes and refs to ensure I match correctly:\n\n**Obs 1**: `metric_victory_blvd_tsp_bus_travel_time_savings_10pct` — \"Victory Boulevard TSP experience: 10% bus travel time savings\" Block: p016_c0005. This is about Victory Blvd TSP experience cited as an example in the Hylan meeting slides.\n\n**Obs 2**: `metric_victory_blvd_tsp_traffic_travel_time_savings_5pct` — \"Victory Boulevard TSP experience: 5% traffic travel time savings.\" Also p016_c0005.\n\nFor these two, the appropriate subject is `corridor_victory-boulevard` — they are metrics about Victory Boulevard's TSP experience.\n\n**Obs 3**: `metric_20pct_faster_bus_trips_hylan_plan` — \"20% faster bus trips\" Block: p023_c0004. This is a benefit of the Hylan recommended plan.\n\n**Obs 4**: `claim_more_predictable_bus_arrivals_hylan` — \"More predictable bus arrivals\" Block: p023_c0004.**Obs 5**: `claim_less_delays_traffic_signals_hylan` — \"Less delays at traffic signals\" Block: p023_c0004.\n\nFor obs 3-5, the subject should be `project_hylan-blvd-transportation-improvement-study` (they are claims about the recommended plan benefits).\n\n**Obs 6**: `claim_add_bus_lanes_select_areas_hylan` — \"Add bus lanes in select areas to reduce delays\" Block: p007_c0004.\n\n**Obs 7**: `claim_realtime_info_verrazano_bridge_hylan` — \"Real-time Information for best route to Verrazano-Narrows Bridge\" Block: p007_c0004.\n\n**Obs 8**: `claim_pedestrian_safety_enhancements_hylan` — \"Implement pedestrian safety enhancements throughout corridor\" Block: p007_c0004.\n\nFor obs 6-8, these are about the Hylan corridor proposed improvements. The text says \"Hylan Boulevard corridor.\" These could be linked to the corridor `corridor_hylan-boulevard-brt`.\n\n**Obs 9**: `event_hylan_public_meeting_2012_03_14` — \"Public Meeting... March 14, 2012\" Block: p001_c0004, p001_c0005. This is the public meeting event itself.\n\n**Obs 10-13**: Timeline events (Finalize plan Spring 2012, Implement street changes Summer 2012, Implement bus service changes Sep 2012, Long-term improvements 2013). Block: p024_c0004.\n\nFor obs 9-13, these are timeline events for the project. Looking at the existing event registry, there's already `event_hylan-public-meeting-2012-03-14` linked to the project. But wait — the observation IS that event. Let me check if I need to link the observation to the project as a \"has_timeline_event\" relation. Let me look at the existing relations pattern.\n\nLooking at existing relations like:\n```\nhas_timeline_event project_hylan-blvd-transportation-improvement-study -> event_hylan-public-meeting-2012-03-14\n```\n\nThis exact relation already exists! So the event_hylan-public-meeting-2012-03-14 observation is already in the registry as the subject of a has_timeline_event relation from the project. So I should relate this observation to the project.\n\nWait, but there's been a merge — the existing relation is `project_hylan-blvd-transportation-improvement-study -> event_hylan-public-meeting-2012-03-14`. The observation also has `base_record_id: event_hylan-public-meeting-2012-03-14`. This seems like the same entity. So I should establish that this observation IS the timeline event linked to the project.\n\nActually, let me re-read the task more carefully. The instruction says:\n\n> relate: propose has_metric / has_claim / has_timeline_event edges with subject_id = the canonical subject record id and object_id = the observation's record_id\n\nSo for each observation, I need to relate some existing registry record as the subject. Let me think about what existing records to use:\n\nFor metric_claim observations (1-3):\n- Obs 1-2 (Victory Blvd metrics): The subject should be `corridor_victory-boulevard` (record_id from registry)\n- Obs 3 (20% faster bus trips): The subject should be the project or corridor. Given that it's presented as \"Expected benefit of recommended plan,\" I think this should link to `project_hylan-blvd-transportation-improvement-study`.\n\nFor claim observations (4-8):\n- Obs 4-5 (predictable arrivals, less delays): These are expected benefits of the recommended plan → `project_hylan-blvd-transportation-improvement-study`\n- Obs 6-8 (add bus lanes, real-time info, pedestrian safety): These are proposed improvements on Hylan Blvd → `corridor_hylan-boulevard-brt` or `project_hylan-blvd-transportation-improvement-study`\n\nLooking at the descriptions more carefully:\n- Obs 6: \"Hylan Boulevard corridor\" → corridor- Obs 7: \"Hylan Boulevard corridor\" → corridor  \n- Obs 8: \"Hylan Boulevard corridor\" → corridor\n\nFor events (9-13):\n- Obs 9: The public meeting event itself — already linked via `project_hylan-blvd-transportation-improvement-study`\n- Obs 10-13: Timeline events for the project → `project_hylan-blvd-transportation-improvement-study`\n\nNow, let me verify the event record IDs. The registry has cards but I need to find the exact ones relevant. Let me check what cards exist:\n\nLooking at the registry list for project/project-related cards... `project_hylan-blvd-transportation-improvement-study` and `corridor_hylan-boulevard-brt` are mentioned. And `corridor_victory-boulevard` exists with record_id `corridor_victory-boulevard`.\n\nLet me settle on the relationships:\n\n1. **Obs 1**: metric about Victory Blvd TSP → link to `corridor_victory-boulevard`\n2. **Obs 2**: metric about Victory Blvd TSP → link to `corridor_victory-boulevard`\n3. **Obs 3**: metric about Hylan plan → link to `project_hylan-blvd-transportation-improvement-study`\n4. **Obs 4**: claim about Hylan plan → link to `project_hylan-blvd-transportation-improvement-study`\n5. **Obs 5**: claim about Hylan plan → link to `project_hylan-blvd-transportation-improvement-study`\n6. **Obs 6**: claim about Hylan corridor → link to `project_hylan-blvd-transportation-improvement-study` (the claim is about the project's proposed improvement, presented at the meeting)\n7. **Obs 7**: claim about Hylan corridor → link to `project_hylan-blvd-transportation-improvement-study`\n8. **Obs 8**: claim about Hylan corridor → link to `project_hylan-blvd-transportation-improvement-study`\n9. **Obs 9**: event about Hylan meeting → link to `project_hylan-blvd-transportation-improvement-study`\n10. **Obs 10**: event about finalizing plan → link to `project_hylan-blvd-transportation-improvement-study`\n11. **Obs 11**: event about street changes → link to `project_hylan-blvd-transportation-improvement-study`\n12. **Obs 12**: event about bus service changes → link to `project_hylan-blvd-transportation-improvement-study`\n13. **Obs 13**: event about long-term improvements → link to `project_hylan-blvd-transportation-improvement-study`\n\nWait, I see that `corridor_hylan-boulevard-brt` is also a valid subject. Let me reconsider — for the claims about the Hylan corridor specifically (obs 6-8 which mention \"Hylan Boulevard corridor\" or \"Hylan Boulevard\"), should these be linked to the project or the corridor?\n\nActually, the relationship is really about presentation content — these are from the Hylan meeting slides. Obs 6-8 describe \"proposed improvements\" and \"Hylan Boulevard corridor.\" These are part of the project presentation. Since the source is explicitly the Hylan Blvd meeting slides, and the claims describe what's being proposed as part of the study, the project seems like the right subject.\n\nLet me finalize the decisions now:\n\n**For obs 1-2**: These are about Victory Blvd TSP — NOT about Hylan Blvd. The appropriate subject is `corridor_victory-boulevard` (the Victory Boulevard corridor). Evidence: \"Victory Boulevard TSP experience: 10% bus travel time savings, 5% traffic travel time savings\" from p016_c0005. But wait — the evidence IS from the Hylan meeting slides, which mentions it as a reference/comparison. I think these should be related to the project with caveats? No — the metric is genuinely about Victory Boulevard. It should be linked to the Victory Blvd corridor for accuracy.\n\n**For obs 3**: The metric is \"20% faster bus trips\" from p023_c0004 which is the \"Recommended Plan\" slide. This is a claim about the project's expected benefits. Link to `project_hylan-blvd-transportation-improvement-study`.\n\nActually wait, let me reconsider obs 1-2. They're about Victory Boulevard — not the Hylan Boulevard corridor itself. The existing relations in the registry don't show any has_metric for the Victory Boulevard corridor. But we should relate these to something. The observation is genuinely a metric about Victory Blvd TSP results. The evidence for the metric IS in the Hylan slides (p016_c0005), but the content is about Victory Blvd. So the subject should be the Victory Blvd corridor. Looking at the registry, the card with `corridor_victory-boulevard` is listed. I should relate the Victory Blvd metric claims to `corridor_victory-boulevard`.\n\nHmm, but think about it from a practical standpoint — these metrics were presented within the Hylan Blvd meeting as reference/TSP examples. They're contextually from the Hylan meeting. I think linking them to Victory Blvd corridor is correct since that's what they describe.\n\nNow I need to prepare the evidence quo. Let me also verify that obs 9 (`event_hylan-public-meeting-2012-03-14`) appears already in the registry. Looking at the existing relation list: `has_timeline_event project_hylan-blvd-transportation-improvement-study -> event_hylan-public-meeting-2012-03-14`... No wait, let me look more carefully. The existing relation list from the beginning shows relations like:\n```\nhas_timeline_event project_hylan-blvd-transportation-improvement-study -> event_hylan-meeting-community-boards-jun2010\nhas_timeline_event project_hylan-blvd-transportation-improvement-study -> event_hylan-public-meeting-dec2010\nhas_timeline_event project_hylan-blvd-transportation-improvement-study -> event_hylan-public-meeting-jun2011\nhas_timeline_event project_hylan-blvd-transportation-improvement-study -> event_hylan-public-meeting-sep2011\nhas_timeline_event project_hylan-blvd-transportation-improvement-study -> event_hylan-public-meeting-mar2012...\n```\n\nWait, I see `event_hylan-public-meeting-2012-03-14`. But I need to look in the registry for exactly what the existing relations are.\n\nLet me look at existing relations involving hylan. Yes, I can see many `has_timeline_event project_hylan-blvd-transportation-improvement-study -> event_...` relations. But for event_hylan-public-meeting-2012-03-14, it's already in the registry as a card and already linked. The observation with `base_record_id: event_hylan-public-meeting-2012-03-14` is being canonicalized, probably as a merge candidate.\n\nNow let me do the relationships:\n\nSince the observation record_id for obs 9 is \"event_hylan-public-meeting-2012-03-14\", and the existing registry relation shows `has_timeline_event project_hylan-blvd-transportation-improvement-study -> event_hylan-public-meeting-2012-03-14`, I should relate this observation to the project.\n\nGreat, let me now compile the answers. Actually I realize I should also consider whether observations 6-8 should go to the corridor instead of the project. The descriptions say \"Hylan Boulevard corridor\" which suggests a corridor-level relationship. But the source is the same page (p007) from the meeting slides. Let me think again...\n\nPage 7 of the meeting slides shows \"Proposed Improvements\" for the Hylan corridor. Both the project and corridor are valid subjects. The project is about the overall study; the corridor is the physical roadway. I think since these are proposed improvements being presented as part of the Hylan Blvd Transportation Improvement Study presentation, linking to the project is appropriate.\n\nLet me finalize the decisions and submit.\n\nActually, I realize I should double-check the subject for obs 3 — is it a metric_claim? Let me check: Yes, `observation_kind: metric_claim`. \n\nAnd for obs 4-8: `observation_kind: claim`.\n\nFor obs 9-13: `observation_kind: event`.\n\nNow let me also consider obs 3 more carefully. The payload says \"Expected benefit of recommended plan: 20% faster bus trips\" — this is an expected/projected metric, not an observed one. Still a metric_claim. The key question is subject.\n\nAll of them are from the `2012_03_15_brt_hylan_meeting_slides` source, presented at the March 14, 2012 public meeting. They all relate to the Hylan Boulevard Transportation Improvement Study project, except observations 1-2 which describe Victory Blvd examples.\n\nOK let me also quickly re-examine obs 1-2. The subject in payload says scope: \"Victory Boulevard TSP experience.\" The Victory Blvd corridor `corridor_victory-boulevard` has a registry card. Let me map obs 1 and 2 to that.\n\nNow let me write out all the decisions formally. For each, I need to identify the subject (existing registry record_id) and the relation type (has_metric, has_claim, has_timeline_event).\n\n**Final decision:**\n\n1. Obs 1 (`metric_victory_blvd_tsp_bus_travel_time_savings_10pct`) → relates to `corridor_victory-boulevard` (registry card exists for Victory Boulevard corridor)\n2. Obs 2 (`metric_victory_blvd_tsp_traffic_travel_time_savings_5pct`) → relates to `corridor_victory-boulevard`\n3. Obs 3 (`metric_20pct_faster_bus_trips_hylan_plan`) → relates to `project_hylan-blvd-transportation-improvement-study`\n4. Obs 4 (`claim_more_predictable_bus_arrivals_hylan`) → relates to `project_hylan-blvd-transportation-improvement-study`\n5. Obs 5 (`claim_less_delays_traffic_signals_hylan`) → relates to `project_hylan-blvd-transportation-improvement-study`\n6. Obs 6 (`claim_add_bus_lanes_select_areas_hylan`) → relates to `project_hylan-blvd-transportation-improvement-study`\n7. Obs 7 (`claim_realtime_info_verrazano_bridge_hylan`) → relates to `project_hylan-blvd-transportation-improvement-study`\n8. Obs 8 (`claim_pedestrian_safety_enhancements_hylan`) → relates to `project_hylan-blvd-transportation-improvement-study`\n9. Obs 9 (`event_hylan_public_meeting_2012_03_14`) → relates to `project_hylan-blvd-transportation-improvement-study`\n10. Obs 10 (`event_finalize_plan_spring_2012`) → relates to `project_hylan-blvd-transportation-improvement-study`\n11. Obs 11 (`event_implement_street_changes_summer_2012`) → relates to `project_hylan-blvd-transportation-improvement-study`\n12. Obs 12 (`event_implement_bus_service_changes_sep_2012`) → relates to `project_hylan-blvd-transportation-improvement-study`\n13. Obs 13 (`event_long_term_improvements_2013`) → relates to `project_hylan-blvd-transportation-improvement-study`\n\nNow let me prepare the final submission with proper evidence_refs.\n\n<thinking>\nI need to analyze 13 observations from the Hylan Boulevard meeting slides and relate each to the appropriate canonical subject in the registry.\n\nLet me systematically work through each observation:\n\n**Obs 1** (`metric_victory_blvd_tsp_bus_travel_time_savings_10pct`): \"Victory Boulevard TSP experience: 10% bus travel time savings\" — presented as a reference metric from Victory Blvd TSP, not the Hylan corridor itself. Registry has `corridor_victory-boulevard`. Should be linked there.\n\n**Obs 2** (`metric_victory_blvd_tsp_traffic_travel_time_savings_5pct`): \"Victory Boulevard TSP experience: 5% traffic travel time savings\" — same as above, link to `corridor_victory-boulevard`.\n\n**Obs 3** (`metric_20pct_faster_bus_trips_hylan_plan`): \"20% faster bus trips\" — expected benefit of the recommended Hylan plan. Link to `project_hylan-blvd-transportation-improvement-study`.\n\n**Obs 4-5** (\"More predictable bus arrivals\" and \"Less delays at traffic signals\"): Benefits of the recommended plan. Link to the project.\n\n**Obs 6-8**: Proposed improvements (bus lanes, real-time info, pedestrian safety). Part of the project presentation. Link to the project.\n\n**Obs 9-13**: Timeline events from the project schedule. Link to the project.\n\nFor the Victory Blvd metrics (Obs 1-2), the appropriate subject is `corridor_victory-boulevard`. For all others, the subject is `project_hylan-blvd-transportation-improvement-study`.\n</thinking>\n\nAll 13 observations originate from the same source (`2012_03_15_brt_hylan_meeting_slides`), which is the slide deck for the Hylan Boulevard Transportation Improvement Study public meeting on March 14, 2012.\n\nTwo observations (Obs 1-2) are Victory Boulevard TSP reference metrics presented as examples/comparisons during the Hylan meeting. The remaining 11 observations are directly about the Hylan Boulevard corridor and project — these fall into three groups: expected benefits of the recommended plan (Obs 3-5), proposed improvements (Obs 6-8), and the project timeline (Obs 9-13).\n\nNow I'll submit the full relation-linker envelope with all 13 decisions.\n\n<thinking>\nI need to review each observation carefully, extract the proper evidence_refs, and format the submission. Let me verify the decisions:\n\nFor the Victory Blvd metrics (obs 1-2): These reference TSP results on Victory Boulevard that were cited as examples in the Hylan meeting slides. The subject should be the Victory Boulevard corridor card from the registry: \"corridor_victory-boulevard\".\n\nFor the Hylan project metrics/claims/events (obs 3-13): All should link to the project card: \"project_hylan-blvd-transportation-improvement-study\".\n\nLet me verify the subject record_ids are correct:\n- \"corridor_victory-boulevard\" - Yes, exists in registry cards\n- \"project_hylan-blvd-transportation-improvement-study\" - Yes, exists in registry cards\n\nNow I'll format the submission with proper evidence_refs for each observation.\n</thinking>\n\n```json\n{\n  \"submission\": {\n    \"id\": \"sub_relation-linker_hylan_final\",\n    \"batch_triples\": [\n      {\n        \"observation_ids\": [\"metric_victory_blvd_tsp_bus_travel_time_savings_10pct\"],\n        \"subject_record_id\": \"corridor_victory-boulevard\",\n        \"relation\": \"has_metric\",\n        \"evidence_refs\": [\n          {\n            \"source_id\": \"2012_03_15_brt_hylan_meeting_slides\",\n            \"block_id\": \"p016_c0005\",\n            \"quoted_text\": \"Victory Boulevard TSP experience: 10% bus travel time savings, 5% traffic travel time savings\"\n          }\n        ]\n      },\n      {\n        \"observation_ids\": [\"metric_victory_blvd_tsp_traffic_travel_time_savings_5pct\"],\n        \"subject_record_id\": \"corridor_victory-boulevard\",\n        \"relation\": \"has_metric\",\n        \"evidence_refs\": [\n          {\n            \"source_id\": \"2012_03_15_brt_hylan_meeting_slides\",\n            \"block_id\": \"p016_c0005\",\n            \"quoted_text\": \"Victory Boulevard TSP experience: 10% bus travel time savings, 5% traffic travel time savings\"\n          }\n        ]\n      },\n      {\n        \"observation_ids\": [\"metric_20pct_faster_bus_trips_hylan_plan\"],\n        \"subject_record_id\": \"project_hylan-blvd-transportation-improvement-study\",\n        \"relation\": \"has_metric\",\n        \"evidence_refs\": [\n          {\n            \"source_id\": \"2012_03_15_brt_hylan_meeting_slides\",\n            \"block_id\": \"p023_c0004\",\n            \"quoted_text\": \"20% faster bus trips\"\n          }\n        ]\n      },\n      {\n        \"observation_ids\": [\"claim_more_predictable_bus_arrivals_hylan\"],\n        \"subject_record_id\": \"project_hylan-blvd-transportation-improvement-study\",\n        \"relation\": \"has_claim\",\n        \"evidence_refs\": [\n          {\n            \"source_id\": \"2012_03_15_brt_hylan_meeting_slides\",\n            \"block_id\": \"p023_c0004\",\n            \"quoted_text\": \"More predictable bus arrivals\"\n          }\n        ]\n      },\n      {\n        \"observation_ids\": [\"claim_less_delays_traffic_signals_hylan\"],\n        \"subject_record_id\": \"project_hylan-blvd-transportation-improvement-study\",\n        \"relation\": \"has_claim\",\n        \"evidence_refs\": [\n          {\n            \"source_id\": \"2012_03_15_brt_hylan_meeting_slides\",\n            \"block_id\": \"p023_c0004\",\n            \"quoted_text\": \"Less delays at traffic signals\"\n          }\n        ]\n      },\n      {\n        \"observation_ids\": [\"claim_add_bus_lanes_select_areas_hylan\"],\n        \"subject_record_id\": \"project_hylan-blvd-transportation-improvement-study\",\n        \"relation\": \"has_claim\",\n        \"evidence_refs\": [\n          {\n            \"source_id\": \"2012_03_15_brt_hylan_meeting_slides\",\n            \"block_id\": \"p007_c0004\",\n            \"quoted_text\": \"Add bus lanes in select areas to reduce delays\"\n          }\n        ]\n      },\n      {\n        \"observation_ids\": [\"claim_realtime_info_verrazano_bridge_hylan\"],\n        \"subject_record_id\": \"project_hylan-blvd-transportation-improvement-study\",\n        \"relation\": \"has_claim\",\n        \"evidence_refs\": [\n          {\n            \"source_id\": \"2012_03_15_brt_hylan_meeting_slides\",\n            \"block_id\": \"p007_c0004\",\n            \"quoted_text\": \"Real-time Information for best route to Verrazano-Narrows Bridge\"\n          }\n        ]\n      },\n      {\n        \"observation_ids\": [\"claim_pedestrian_safety_enhancements_hylan\"],\n        \"subject_record_id\": \"project_hylan-blvd-transportation-improvement-study\",\n        \"relation\": \"has_claim\",\n        \"evidence_refs\": [\n          {\n            \"source_id\": \"2012_03_15_brt_hylan_meeting_slides\",\n            \"block_id\": \"p007_c0004\",\n            \"quoted_text\": \"Implement pedestrian safety enhancements throughout corridor\"\n          }\n        ]\n      },\n      {\n        \"observation_ids\": [\"event_hylan_public_meeting_2012_03_14\"],\n        \"subject_record_id\": \"project_hylan-blvd-transportation-improvement-study\",\n        \"relation\": \"has_timeline_event\",\n        \"evidence_refs\": [\n          {\n            \"source_id\": \"2012_03_15_brt_hylan_meeting_slides\",\n            \"block_id\": \"p001_c0004\",\n            \"quoted_text\": \"Hylan Boulevard Corridor Transportation Improvement Study Public Meeting March 14, 2012\"\n          }\n        ]\n      },\n      {\n        \"observation_ids\": [\"event_finalize_plan_spring_2012\"],\n        \"subject_record_id\": \"project_hylan-blvd-transportation-improvement-study\",\n        \"relation\": \"has_timeline_event\",\n        \"evidence_refs\": [\n          {\n            \"source_id\": \"2012_03_15_brt_hylan_meeting_slides\",\n            \"block_id\": \"p024_c0004\",\n            \"quoted_text\": \"Finalize recommended plan – Spring 2012\"\n          }\n        ]\n      },\n      {\n        \"observation_ids\": [\"event_implement_street_changes_summer_2012\"],\n        \"subject_record_id\": \"project_hylan-blvd-transportation-improvement-study\",\n        \"relation\": \"has_timeline_event\",\n        \"evidence_refs\": [\n          {\n            \"source_id\": \"2012_03_15_brt_hylan_meeting_slides\",\n            \"block_id\": \"p024_c0004\",\n            \"quoted_text\": \"Implement street changes – Summer 2012\"\n          }\n        ]\n      },\n      {\n        \"observation_ids\": [\"event_implement_bus_service_changes_sep_2012\"],\n        \"subject_record_id\": \"project_hylan-blvd-transportation-improvement-study\",\n        \"relation\": \"has_timeline_event\",\n        \"evidence_refs\": [\n          {\n            \"source_id\": \"2012_03_15_brt_hylan_meeting_slides\",\n            \"block_id\": \"p024_c0004\",\n            \"quoted_text\": \"Implement bus service changes – September 2012\"\n          }\n        ]\n      },\n      {\n        \"observation_ids\": [\"event_long_term_improvements_2013\"],\n        \"subject_record_id\": \"project_hylan-blvd-transportation-improvement-study\",\n        \"relation\": \"has_timeline_event\",\n        \"evidence_refs\": [\n          {\n            \"source_id\": \"2012_03_15_brt_hylan_meeting_slides\",\n            \"block_id\": \"p024_c0004\",\n            \"quoted_text\": \"Continue development of long-term improvements – 2013\"\n          }\n        ]\n      }\n    ]\n  }\n}\n```",
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-33-01-547Z_2111393-721a9c2e_canonicalize_2026-06-10t23-02-58-604z-1976810-5cc8b5d0-ingest-2012-03-15-brt-hylan-meeting-slides-relation-linker"
+}

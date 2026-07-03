@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T23-18-20-015Z_1976810-160410d7_ingest_2013-09-24-sbs-utica-cb9",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T04:02:25.010Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "project_utica_ave_bus_priority_safety_study_2013_09_24",
+        "decision": "new",
+        "rationale": "The observation's base_record_id is project_utica-ave-bus-priority-safety-study, which already matches the existing registry record with that ID and includes source_id 2013_09_24_sbs_utica_cb9 among its source_ids. The observation already resolves to its own canonical record. No link to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_24_sbs_utica_cb9",
+            "block_id": "p002_c0004",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2013_09_24_sbs_utica_cb9",
+            "block_id": "p001_c0002",
+            "source_quote": ""
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T04-00-53-148Z_2111393-cd274026_canonicalize_2026-06-10t23-18-20-015z-1976810-160410d7-ingest-2013-09-24-sbs-utica-cb9-project-identity"
+}

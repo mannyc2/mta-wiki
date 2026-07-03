@@ -1,0 +1,296 @@
+{
+  "note_id": "codex-identity-batch193-prep",
+  "batch": 193,
+  "created_at": "2026-06-23T00:00:00Z",
+  "scope": {
+    "global_kind": "entity",
+    "operation": "prepare_alias_cleanup_only",
+    "selection_note": "Codex-only entity alias cleanup after identity190. No provider-backed commands were run. Current merges, do-not-merge pairs, canonical entity records, deterministic identity keys, and identity186-192 review-note ids were inspected read-only."
+  },
+  "prepared_count": 10,
+  "proposed_aliases": [
+    {
+      "alias_id": "entity_brooklyn-cb2-flatbush-ave-oct2025",
+      "target_id": "entity_dekalb-lafayette-cb2-brooklyn",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity: entity_brooklyn-cb2-flatbush-ave-oct2025 and entity_dekalb-lafayette-cb2-brooklyn share identity key entity_brooklyn-community-board-2."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Brooklyn Community Board 2', entity_type 'community board', source_id flatbush_ave_bus_priority_cb6_oct2025, evidence flatbush_ave_bus_priority_cb6_oct2025#p006_c0007.",
+        "Target canonical record: display_name 'Brooklyn Community Board 2', entity_type 'community board', source_ids dekalb_lafayette_cb2_dec2024 and flatbush_ave_cb2_jun2024, evidence dekalb_lafayette_cb2_dec2024#p001_c0002 and flatbush_ave_cb2_jun2024#p001_c0002."
+      ],
+      "reason": "Both records identify Brooklyn Community Board 2; the alias is a one-source Flatbush/CB6-context mention and the target is the richer Brooklyn CB2 entity already spanning two sources.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_192": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_community-board-2-brooklyn-flatbush-ave",
+      "target_id": "entity_dekalb-lafayette-cb2-brooklyn",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity: entity_community-board-2-brooklyn-flatbush-ave and entity_dekalb-lafayette-cb2-brooklyn share identity key entity_brooklyn-community-board-2."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Brooklyn Community Board 2', entity_type 'community board', source_id flatbush_ave_cb2_jun2025, evidence flatbush_ave_cb2_jun2025#p001_c0002.",
+        "Target canonical record: display_name 'Brooklyn Community Board 2', entity_type 'community board', source_ids dekalb_lafayette_cb2_dec2024 and flatbush_ave_cb2_jun2024, evidence dekalb_lafayette_cb2_dec2024#p001_c0002 and flatbush_ave_cb2_jun2024#p001_c0002."
+      ],
+      "reason": "Both records identify Brooklyn Community Board 2; the alias is a one-source Flatbush Avenue audience record and the target has the same borough/board identity with broader source support.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_192": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_mta-diversity-civil-rights-meeting-doc-102736",
+      "target_id": "entity_meeting-doc-ddcr",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity: entity_mta-diversity-civil-rights-meeting-doc-102736 and entity_meeting-doc-ddcr share identity keys entity_department-of-diversity-and-civil-rights and entity_mta-department-of-diversity-and-civil-rights."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'MTA Department of Diversity and Civil Rights', entity_type 'department', source_id meeting_doc_102736, evidence meeting_doc_102736#p012_c0001 and meeting_doc_102736#p012_c0002.",
+        "Target canonical record: display_name 'MTA Department of Diversity and Civil Rights', entity_type 'department', source_id meeting_doc_102781 with 72 source_ids, evidence meeting_doc_102781#p003_c0015 and meeting_doc_102781#p013_c0001."
+      ],
+      "reason": "Both records identify the same MTA Department of Diversity and Civil Rights department; the target is the established multi-source DDCR entity.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_192": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_mta-diversity-civil-rights-3q2022",
+      "target_id": "entity_meeting-doc-ddcr",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity: entity_mta-diversity-civil-rights-3q2022 and entity_meeting-doc-ddcr share identity keys entity_metropolitan-transportation-authority-department-of-diversity-and-civil-rights and entity_mta-department-of-diversity-and-civil-rights."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'MTA Department of Diversity and Civil Rights', entity_type 'department', source_ids meeting_doc_102731, meeting_doc_109316, meeting_doc_109371, and meeting_doc_113936; evidence meeting_doc_102731#p012_c0001 and meeting_doc_109316#p012_c0001.",
+        "Target canonical record: display_name 'MTA Department of Diversity and Civil Rights', entity_type 'department', source_id meeting_doc_102781 with 72 source_ids, evidence meeting_doc_102781#p003_c0015 and meeting_doc_102781#p013_c0001."
+      ],
+      "reason": "Both records identify the same MTA DDCR department; the alias is a 3Q2022-scoped duplicate and the target is the durable multi-source entity.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_192": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_mta-gcmoc-128986",
+      "target_id": "entity_meeting-doc-gcmcoc",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity: entity_mta-gcmoc-128986 and entity_meeting-doc-gcmcoc share identity key entity_mta-grand-central-madison-concourse-operating-company."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'MTA Grand Central Madison Concourse Operating Company', entity_type 'agency', source_id meeting_doc_128986, evidence meeting_doc_128986#p115_c0007.",
+        "Target canonical record: display_name 'MTA Grand Central Madison Concourse Operating Company', entity_type 'agency', source_ids meeting_doc_102796, meeting_doc_107596, meeting_doc_107791, meeting_doc_135376, meeting_doc_135386, meeting_doc_194411, meeting_doc_201701, and meeting_doc_59206; evidence meeting_doc_102796#p047_c0005 and meeting_doc_107596#p001_c0009."
+      ],
+      "reason": "Both records identify the same MTA Grand Central Madison Concourse Operating Company; the target has broader source support.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_192": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_meeting-doc-193996-mta-procurement",
+      "target_id": "entity_mta-procurement-department",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity: entity_meeting-doc-193996-mta-procurement and entity_mta-procurement-department share identity key entity_mta-procurement-department."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'MTA Procurement Department', entity_type 'department', source_id meeting_doc_193996, evidence meeting_doc_193996#p003_c0001 and meeting_doc_193996#p003_c0005.",
+        "Target canonical record: display_name 'MTA Procurement Department', entity_type 'department', source_id meeting_doc_105946 with 20 source_ids, evidence meeting_doc_105946#p004_c0001 and meeting_doc_105946#p007_c0011."
+      ],
+      "reason": "Both records identify the same MTA Procurement Department; the alias is a one-source meeting-doc duplicate of an existing multi-source department record.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_192": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_nyct-bus-committee-oct2022",
+      "target_id": "entity_nyct-bus-committee",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity: entity_nyct-bus-committee-oct2022 and entity_nyct-bus-committee share identity key entity_new-york-city-transit-and-bus-committee."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'New York City Transit & Bus Committee', entity_type 'committee', source_id meeting_doc_98311, evidence meeting_doc_98311#p003_c0001.",
+        "Target canonical record: display_name 'New York City Transit & Bus Committee', entity_type 'committee', source_ids meeting_doc_102836, meeting_doc_111811, meeting_doc_115256, and meeting_doc_121046; evidence meeting_doc_102836#p003_c0001 and meeting_doc_115256#p003_c0001."
+      ],
+      "reason": "Both records identify the same New York City Transit & Bus Committee; the alias is an October 2022 source-scoped duplicate of the reusable committee entity.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_192": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_wcdpwt-dec2023",
+      "target_id": "entity_meeting-doc-128906-wcdpwt",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity: entity_wcdpwt-dec2023 and entity_meeting-doc-128906-wcdpwt share identity key entity_westchester-county-department-of-public-works-and-transportation."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Westchester County Department of Public Works & Transportation', entity_type 'agency', source_id meeting_doc_129196, evidence meeting_doc_129196#p057_c0009.",
+        "Target canonical record: display_name 'Westchester County Department of Public Works & Transportation', entity_type 'agency', source_ids meeting_doc_128906, meeting_doc_164896, and meeting_doc_201596; evidence meeting_doc_128906#p001_c0009 and meeting_doc_128906#p001_c0011."
+      ],
+      "reason": "Both records identify Westchester County Department of Public Works & Transportation; the target has matching name/type and more source support.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_192": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_nyc-dof-dec2024-kpm",
+      "target_id": "entity_nyc-dept-finance-2024",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity: entity_nyc-dof-dec2024-kpm and entity_nyc-dept-finance-2024 share identity key entity_new-york-city-department-of-finance."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'New York City Department of Finance', entity_type 'agency', source_id meeting_doc_160446, evidence meeting_doc_160446#p011_c0009.",
+        "Target canonical record: display_name 'New York City Department of Finance', entity_type 'city_agency', source_ids bus_lane_camera_report_2024, meeting_doc_189776, and mta_automated_camera_enforcement; evidence bus_lane_camera_report_2024#p003_c0002 and bus_lane_camera_report_2024#p015_c0004."
+      ],
+      "reason": "Both records identify the New York City Department of Finance; the agency/city_agency type difference is descriptive, not a separate identity.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_192": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_meeting-doc-199126-two-kids-and-a-dog",
+      "target_id": "entity_two-kids-and-a-dog",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity: entity_meeting-doc-199126-two-kids-and-a-dog and entity_two-kids-and-a-dog share identity key entity_two-kids-and-a-dog."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Two Kids and a Dog', entity_type 'business', source_id meeting_doc_199126, evidence meeting_doc_199126#p002_c0002.",
+        "Target canonical record: display_name 'Two Kids and a Dog, LLC', entity_type 'business', source_id meeting_doc_205676, evidence meeting_doc_205676#p002_c0002 with source quote 'Two Kids and a Dog, LLC. d/b/a Two Kids and a Dog'."
+      ],
+      "reason": "Both records identify the same business; the target preserves the legal LLC name and the d/b/a that exactly matches the alias display name.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_192": true
+      },
+      "confidence": "high"
+    }
+  ],
+  "deferred": [
+    {
+      "alias_id": "entity_manhattan-community-board-12-broadway-mar2025",
+      "target_id": "entity_manhattan-community-board-12",
+      "global_kind": "entity",
+      "reason": "Deferred despite matching display names because the target record is source-backed by brt_bx6_cb12_apr2017 and brt_bx6_south_bronx_sept2016 evidence, which suggests a Bronx CB12 context rather than Manhattan CB12.",
+      "confidence": "low"
+    },
+    {
+      "alias_id": "entity_brooklyn-cb11-bay-pkwy-cropsey-jun2025",
+      "target_id": "entity_community-board-11-brooklyn",
+      "global_kind": "entity",
+      "reason": "Plausible Brooklyn CB11 alias, but this alias/target pair appears in older identity082 review-note context, so it was excluded from this safe post-190 batch.",
+      "confidence": "medium"
+    },
+    {
+      "alias_id": "entity_safety-committee-member-albert-jan2022",
+      "target_id": "entity_193976-andrew-albert",
+      "global_kind": "entity",
+      "reason": "Shared key and display name are only the initialed form 'A. Albert'; deferred because initial-only people can be same-name traps without stronger source context.",
+      "confidence": "low"
+    }
+  ],
+  "blockers": [],
+  "deterministic_inspection": {
+    "commands": [
+      "rg/jq inspection of data/review_notes/codex-identity-batch186-prep.json through codex-identity-batch192-prep.json for touched entity ids and traps",
+      "jq inspection of data/identity-overrides/merges.json and data/identity-overrides/do-not-merge.json",
+      "bun --eval read-only duplicate identity mining over readCanonicalRecords() and identityKeysForRecord() for canonical entity records",
+      "bun --eval final guard/evidence check for selected alias/target pairs"
+    ],
+    "guard_summary": {
+      "all_aliases_present": true,
+      "all_targets_present": true,
+      "all_aliases_not_already_merged": true,
+      "all_targets_not_aliases": true,
+      "all_aliases_not_merge_targets": true,
+      "all_pairs_non_cyclic": true,
+      "all_pairs_absent_from_do_not_merge": true,
+      "all_pairs_absent_from_identity186_192_touched_ids": true,
+      "provider_backed_commands_run": false
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T23-26-53-165Z_1976810-1e664e40_ingest_2014-11-brt-utica-workshopsummary",
+  "generated_at": "2026-06-11T04:05:17.794Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 27,
+  "validated_decision_count": 0,
+  "quarantined_decision_count": 6,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T23-26-53-165Z_1976810-1e664e40_ingest_2014-11-brt-utica-workshopsummary",
+    "manifest": "data/canonicalize/2026-06-10T23-26-53-165Z_1976810-1e664e40_ingest_2014-11-brt-utica-workshopsummary/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T23-26-53-165Z_1976810-1e664e40_ingest_2014-11-brt-utica-workshopsummary/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-26-53-165Z_1976810-1e664e40_ingest_2014-11-brt-utica-workshopsummary/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T23-26-53-165Z_1976810-1e664e40_ingest_2014-11-brt-utica-workshopsummary/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-26-53-165Z_1976810-1e664e40_ingest_2014-11-brt-utica-workshopsummary/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-14-527Z_2111393-44031898_canonicalize_2026-06-10t23-26-53-165z-1976810-1e664e40-ingest-2014-11-brt-utica-workshopsummary-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-26-53-165Z_1976810-1e664e40_ingest_2014-11-brt-utica-workshopsummary/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-14-527Z_2111393-0dc28154_canonicalize_2026-06-10t23-26-53-165z-1976810-1e664e40-ingest-2014-11-brt-utica-workshopsummary-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-26-53-165Z_1976810-1e664e40_ingest_2014-11-brt-utica-workshopsummary/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-14-527Z_2111393-ef6364e3_canonicalize_2026-06-10t23-26-53-165z-1976810-1e664e40-ingest-2014-11-brt-utica-workshopsummary-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-26-53-165Z_1976810-1e664e40_ingest_2014-11-brt-utica-workshopsummary/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-14-527Z_2111393-1f3c1726_canonicalize_2026-06-10t23-26-53-165z-1976810-1e664e40-ingest-2014-11-brt-utica-workshopsummary-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-26-53-165Z_1976810-1e664e40_ingest_2014-11-brt-utica-workshopsummary/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-14-527Z_2111393-3b175c48_canonicalize_2026-06-10t23-26-53-165z-1976810-1e664e40-ingest-2014-11-brt-utica-workshopsummary-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-26-53-165Z_1976810-1e664e40_ingest_2014-11-brt-utica-workshopsummary/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-14-527Z_2111393-f9c0bebe_canonicalize_2026-06-10t23-26-53-165z-1976810-1e664e40-ingest-2014-11-brt-utica-workshopsummary-relation-linker"
+    }
+  ]
+}

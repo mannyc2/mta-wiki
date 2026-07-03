@@ -1,0 +1,120 @@
+{
+  "run_id": "2026-06-10T23-01-11-643Z_1976810-73612f01_ingest_20111205-nostrand-cb3-slides",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:15:38.773Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "d-entity-mta-nyct-20111205-cb3",
+        "local_observation_id": "entity_mta_nyct_20111205_cb3",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_mta-nyct matches the existing canonical registry record entity_mta-nyct (MTA NYCT Reference). Same entity_name 'MTA New York City Transit' and entity_type 'agency'. The observation merely confirms this entity's role as presenter in this source; it resolves to its own base record.",
+        "evidence_refs": [
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p001_c0002",
+            "source_quote": "The logo for the Metropolitan Transportation Authority (MTA) and New York City transit, featuring the MTA logo and the text 'New York City transit'."
+          },
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p002_c0008",
+            "source_quote": "_New York City Transit_"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "collaborates_with",
+            "subject_id": "entity_mta-nyct",
+            "object_id": "entity_nyc-dot",
+            "description": "MTA NYCT and NYC DOT jointly presented the Nostrand Avenue / Rogers Avenue Select Bus Service project to Community Board 3 on December 5, 2011.",
+            "evidence_refs": [
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p001_c0001",
+                "source_quote": "Overlaid on the image are logos for the MTA and New York City DOT, and text identifying the location as Nostrand Avenue / Rogers Avenue Select Bus Service and the date as December 5, 2011."
+              }
+            ]
+          },
+          {
+            "relation_kind": "presents_to",
+            "subject_id": "entity_mta-nyct",
+            "object_id": "entity_brooklyn-cb3-20111205",
+            "description": "MTA NYCT presented the Nostrand/Rogers SBS project to Brooklyn Community Board 3.",
+            "evidence_refs": [
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p001_c0004",
+                "source_quote": "Nostrand Avenue / Rogers Avenue Select Bus Service Presentation to Community Board 3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "d-entity-nyc-dot-20111205-cb3",
+        "local_observation_id": "entity_nyc_dot_20111205_cb3",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_nyc-dot matches the existing canonical registry record entity_nyc-dot (NYC DOT as Publisher). Same entity_name 'New York City Department of Transportation' and entity_type 'agency'. Resolves to its own base record.",
+        "evidence_refs": [
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p001_c0003",
+            "source_quote": "The logo for the New York City Department of Transportation (NYC DOT), featuring the text 'NEW YORK CITY' and 'DOT' with horizontal lines."
+          },
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p002_c0009",
+            "source_quote": "_NEW YORK CITY_"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "presents_to",
+            "subject_id": "entity_nyc-dot",
+            "object_id": "entity_brooklyn-cb3-20111205",
+            "description": "NYC DOT co-presented the Nostrand/Rogers SBS project to Brooklyn Community Board 3.",
+            "evidence_refs": [
+              {
+                "source_id": "20111205_nostrand_cb3_slides",
+                "block_id": "p001_c0004",
+                "source_quote": "Nostrand Avenue / Rogers Avenue Select Bus Service Presentation to Community Board 3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "d-entity-brooklyn-cb3-20111205",
+        "local_observation_id": "entity_brooklyn_cb3_20111205",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_brooklyn-cb3-20111205 matches the existing canonical registry record entity_brooklyn-cb3-20111205 (Community Board 3 (Brooklyn)). Same entity_name 'Community Board 3', entity_type 'community board', and source_ids [20111205_nostrand_cb3_slides]. Resolves to its own base record.",
+        "evidence_refs": [
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p001_c0004",
+            "source_quote": "Nostrand Avenue / Rogers Avenue Select Bus Service Presentation to Community Board 3"
+          }
+        ]
+      },
+      {
+        "decision_id": "d-entity-cb8-20111205",
+        "local_observation_id": "entity_cb8_20111205",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_cb8-20111205 matches the existing canonical registry record entity_cb8-20111205 (Community Board 8). Same entity_name 'Community Board 8', entity_type 'community board', and source_ids [20111205_nostrand_cb3_slides]. Resolves to its own base record.",
+        "evidence_refs": [
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p002_c0004",
+            "source_quote": "• 42,000 weekday riders – 7th busiest bus route in city • 11,000 people board in CB 8 • Buses travel at an average speed of 7-8 mph"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-13-36-860Z_2111393-125eb2ac_canonicalize_2026-06-10t23-01-11-643z-1976810-73612f01-ingest-20111205-nostrand-cb3-slides-entity-identity"
+}

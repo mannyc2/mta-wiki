@@ -1,0 +1,41 @@
+{
+  "run_id": "2026-06-10T22-56-13-398Z_1976810-3e780c0a_ingest_201110-brt-34th-open-house-slides",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T01:53:20.559Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "d001",
+        "local_observation_id": "entity_nyct_201110_open_house",
+        "decision": "new",
+        "rationale": "The observation resolves to entity_mta-nyct (MTA New York City Transit). The base_record_id entity_mta-nyct is already the correct registry record with matching entity_name 'MTA New York City Transit' and entity_type 'agency'. The source quote 'New York City Transit' from the Open House slides matches this canonical agency record. Since the closest match is the observation's own base_record_id, decision is new (already resolved to the correct canonical record).",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_open_house_slides",
+            "block_id": "p001_c0003",
+            "source_quote": "New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "d002",
+        "local_observation_id": "entity_nyc_dot_201110_open_house",
+        "decision": "new",
+        "rationale": "The observation resolves to entity_nyc-dot (New York City Department of Transportation). The base_record_id entity_nyc-dot is already the correct registry record with matching entity_name 'New York City Department of Transportation' and entity_type 'agency'. The source quote 'NEW YORK CITY DOT' from the Open House slides matches this canonical agency record. Since the closest match is the observation's own base_record_id, decision is new (already resolved to the correct canonical record).",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_open_house_slides",
+            "block_id": "p002_c0004",
+            "source_quote": "NEW YORK CITY DOT"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-49-55-163Z_2111393-b3cd6926_canonicalize_2026-06-10t22-56-13-398z-1976810-3e780c0a-ingest-201110-brt-34th-open-house-slides-entity-identity"
+}

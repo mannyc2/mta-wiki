@@ -1,0 +1,12 @@
+{
+  "run_id": "2026-06-10T23-26-36-432Z_1976810-da166ffa_ingest_2014-11-06-brt-woodhaven-pw3-boards",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T04:05:13.705Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "assistant_text",
+  "parse_error": "JSON Parse error: Unexpected EOF",
+  "raw_response": "",
+  "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-11-855Z_2111393-333dc6b4_canonicalize_2026-06-10t23-26-36-432z-1976810-da166ffa-ingest-2014-11-06-brt-woodhaven-pw3-boards-corridor-identity"
+}

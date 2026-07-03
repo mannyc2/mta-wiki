@@ -1,0 +1,848 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-198991"
+record_kind: "source"
+display_name: "Capital Program Committee Meeting Book - February 2026"
+source_id: "meeting_doc_198991"
+source_ids:
+  - "meeting_doc_198991"
+local_observation_id: "source_cpc_meeting_2026_02"
+local_observation_ids:
+  - "source_cpc_meeting_2026_02"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T21:26:35.342Z"
+raw_text: "Capital Program Committee Meeting, February 2026, MTA Board and Committee Joint Meeting, January 28, 2026"
+submission_ids:
+  - "sub_3d8429e94b03dba5"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting book"
+  date_text: "February 2026"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2026-02"
+    precision: "month"
+    raw_text: "February 2026"
+  description: "MTA Capital Program Committee meeting book for February 23, 2026, including Board meeting minutes from January 28, 2026, project status reports, safety reports, procurement actions, and committee work plan"
+  document_date: "February 2026"
+  document_date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2026-02"
+    precision: "month"
+    raw_text: "February 2026"
+  published_date_normalized: "2026-02"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "Capital Program Committee Meeting"
+evidence_refs:
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_198991#p001_c0004"
+    page_number: 1
+    role: "document_date"
+    source_id: "meeting_doc_198991"
+    source_path: "raw/sources/meeting_doc_198991/blocks.jsonl"
+    text_sha256: "sha256:fc437294ca9e51d4f75277fe74dc3b0aa18e23f3e70f3339279a2109738eb968"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_198991#p001_c0002"
+    page_number: 1
+    role: "publisher"
+    source_id: "meeting_doc_198991"
+    source_path: "raw/sources/meeting_doc_198991/blocks.jsonl"
+    text_sha256: "sha256:ec4da331c09e2061578a1964b23a90bdb7edf5115e31a65c01ad04c21487f1e4"
+    text_source: "raw_text"
+---
+
+# Capital Program Committee Book
+
+source_id: meeting_doc_198991
+citation: cite block ids exactly as shown in square brackets
+document: 530 block(s)
+
+## Page 1
+
+> [p001_c0001] The logo for the Metropolitan Transportation Authority (MTA) is located in the top left corner. It consists of a black circle with the letters "MTA" in white, bold, sans-serif font.
+[p001_c0002] Metropolitan Transportation Authority
+### [p001_c0003] Capital Program Committee Meeting
+[p001_c0004] February 2026
+### [p001_c0005] Committee Members
+[p001_c0006] Janno Lieber, Chair Dan Garodnick, Vice Chair Andrew Albert Gerard Bringmann Samuel Chu* Randy Glucksman Marc Herbst David Jones Christopher Leathers Blanca Lopez* David Mack* Haeda Mihaltses* John Ross Rizzo John Samuelsen Ed Valente Neal Zuckerman
+
+## Page 2
+
+### [p002_c0001] Capital Program Committee Meeting
+[p002_c0002] Monday, 2/23/2026
+[p002_c0003] 12:45 - 1:45 PM ET
+### [p002_c0004] 1. SUMMARY OF ACTIONS
+[p002_c0005] CD February 2026 CPC Summary of Actions - Page 3
+### [p002_c0006] 2. PUBLIC COMMENTS PERIOD
+### [p002_c0007] 3. APPROVAL OF MINUTES
+[p002_c0008] 2026 January Joint Committee and Board Meeting Minutes - Page 4
+### [p002_c0009] 4. 2025-2026 COMMITTEE WORK PLAN
+[p002_c0010] CPC Committee Work Plan - Page 22
+### [p002_c0011] 5. PRESIDENT'S UPDATE
+### [p002_c0012] 6. AGENCY INITIATIVES - Committee Presentation
+### [p002_c0013] 7. C&D SAFETY REPORT
+[p002_c0014] CPC Safety Report - Page 23
+### [p002_c0015] 8. CAPITAL PROGRAM STATUS REPORT
+[p002_c0016] C&D Commitments, Completions, and Funding Report - Page 25
+### [p002_c0017] 9. C&D PROCUREMENTS
+[p002_c0018] CD February 2026 Board Package - Page 40
+
+## Page 3
+
+### [p003_c0001] CONSTRUCTION & DEVELOPMENT COMMITTEE ACTIONS SUMMARY for FEBRUARY 2026
+[p003_c0002]
+
+```text
+Responsible Department Vendor Name Total Amount Summary of Action Contracts Various $50,000,000 Approval to award six publicly advertised and competitively solicited indefinite quantity contracts to provide independent safety assessor services to support new technology and relay-based train control and signaling projects. Contracts FPM Engineering & Geology, PC $3,049,893 Approval to award a publicly advertised and competitively solicited contract to provide as-needed hydrology services.
+```
+[p003_c0003] _Master Page # 3 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 4
+
+### [p004_c0001] Joint Minutes of the Metropolitan Transportation Authority, the New York City Transit Authority, the Manhattan and Bronx Surface Transit Operating Authority, the Staten Island Rapid Transit Operating Authority, the Metropolitan Suburban Bus Authority, the Triborough Bridge and Tunnel Authority, the Long Island Rail Road Company, Metro-North Commuter Railroad Company, MTA Construction and Development Company, the MTA Bus Company, Grand Central Madison Operating Company, and the First Mutual Transportation Assurance Company
+### [p004_c0002] Joint Meeting of the Triborough Bridges & Tunnel Authority, the Long Island Rail Road, Metro-North, Capital Program and New York City Transit, Audit and Finance Committees and the MTA
+[p004_c0003] Board Meeting Minutes January 28, 2026 9:00 a.m. 2 Broadway New York, New York
+### [p004_c0004] The following Board Members were present (*attended remotely):
+[p004_c0005] Hon. Janno Lieber, Chair & CEO Hon. Andrew Albert Hon. Samuel Chu Hon. Michael Fleischer Hon. Daniel Garodnick Hon. Marc Herbst Hon. David Jones Hon. Christopher Leathers Hon. Blanca Lopez Hon. David Mack* Hon. Haeda B. Mihaltses Hon. James O'Donnell Hon. Dr. John-Ross Rizzo Hon. Lisa Sorin Hon. Midori Valdivia Hon. Edward Valente
+### [p004_c0006] The following alternate non-voting members were present:
+[p004_c0007] Hon. Gerard Bringmann Hon. Randolph Glucksman*
+### [p004_c0008] The following Board Members were not present:
+[p004_c0009] Hon. Melva M. Miller Hon. John Samuelsen Hon. Neal Zuckerman
+[p004_c0010] Paige Graves, General Counsel, John McCarthy, Chief External Relations & Policy, Lisette Camilo, Chief Administrative Officer, Jai Patel, Chief Financial Officer, Justin Vonashek, President Metro-North Railroad, Robert Free, President LIRR, Jamie Torres-Springer, President MTA C&D, Shanifah Rieara, Senior Advisor for Communications and Policy/Chief Customer Officer, Juliette Michaelson, Chief of Staff and Strategic Planning, Catherine Sheridan, President Bridges & Tunnels, Demetrius Crichlow, President New York City Transit, Monica Murray, Auditor General, Thomas Taffe, Chief MTA PD, and Michael Kemper, Chief Security Office MTA HQ also attended the meeting.
+[p004_c0011] _Master Page # 4 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 5
+
+[p005_c0001] Chair Lieber called to order the January joint meeting of the MTA Board and Committees (TBTA, Joint Railroad, New York City Transit, Capital Program, Audit and Finance Committees).
+[p005_c0002] A safety announcement was made.
+### [p005_c0003] 1. PUBLIC SPEAKERS' SESSION
+[p005_c0004] The MTA moderator announced that the following public speakers will speak either live virtually or in-person. The moderator reminded public speakers of the rules of conduct and the two-minute speaking limit. The moderator reminded speakers of the warning beep when 30 seconds remain to conclude their remarks. The moderator advised that the public comment will be recorded, published to the MTA website, and available for MTA Board Members' review.
+[p005_c0005] The following public speakers commented (*live virtual comments):
+[p005_c0006] Jason Anthony, LIRR ADA task force
+[p005_c0007] Iris Kelly, DIA
+[p005_c0008] Jessica Murray, NY Disability Rights Archive
+[p005_c0009] Miriam Fisher, private citizen*
+[p005_c0010] Norbert Giesse, Cures*
+[p005_c0011] Brian Fritsch, PCAC
+[p005_c0012] Joe Rappaport, Brooklyn Center for Independence for the Disabled
+[p005_c0013] Micha Bergdale, Candidate for Congress
+[p005_c0014] Jesse Figueroa, District 1 Veterans of Foreign Wars Department of New York*
+[p005_c0015] Haydee Villanueva, private citizen*
+[p005_c0016] Yuki Endo, Passengers United*
+[p005_c0017] David Kupferberg, Passengers United
+[p005_c0018] Kara Gurl, PCAC
+[p005_c0019] Charlton D'Souza, Passengers United*
+[p005_c0020] Rhiannon Murphy, private citizen
+[p005_c0021] Andy Pollack, Passengers United*
+[p005_c0022] Michael Ring, Disabled in Action
+[p005_c0023] Christopher Grief, ADA Accessibility Transportation
+### [p005_c0024] 2. EXECUTIVE SESSION
+[p005_c0025] The Chair stated that there were labor items to be discussed in executive session. Upon motion duly made and seconded the Board voted to convene an Executive Session, in accordance with the Public Officers Law, Section 105(1)(e), to discuss labor matters.
+[p005_c0026] Upon motion duly made and seconded, the Board voted to reconvene in public session.
+### [p005_c0027] 3. PUBLIC SESSION RESUME
+[p005_c0028] Chair Lieber announced that in Executive Session the Board approved the following labor matters:
+[p005_c0029] _Master Page # 5 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 6
+
+- [p006_c0001] a. Collective bargaining agreement between New York City Transit and the Doctors Council (SEIU); and b. Collective bargaining agreement between NYCT, MaBSTOA, SIRTOA, MTA HQ, MTA Bus Company and the Untied Transit Leadership Organization (UTLO).
+### [p006_c0002] 4. CHAIR'S UPDATE
+[p006_c0003] MTA Chair and CEO Janno Lieber provided his update for January 2026 meeting. The Chair began by recognizing the extraordinary performance by our operating agencies during the storm and especially the MTA workforce, who really showed up when we needed it.
+[p006_c0004] The Chair announced, MTA was basically the only major transit agency on the Eastern Seaboard that kept operating. Transportation to the north and south of us seemed unable to maintain service. The Chair stated that a little later in the meeting, there would be a video highlighting MTA operations during winter storm Fern.
+[p006_c0005] Chair Lieber stated that the MTA is starting 2026 in very good shape and had a record-setting 2025. Chair Lieber stated that he will review some of those accomplishments again because there are new ones to be recognized. The Chair mentioned the MTA Annual Report is available and has been distributed. Chair Lieber stated that there is one headline that remains in focus: almost two billion trips taken on New York City Transit, subway, bus and paratransit all together. It's up 7% from 2024 and almost 80% from where we were in 2021 when this version of the MTA came together with this Board.
+[p006_c0006] In addition, the Chair stated 2025 was also the safest year on the subways in a generation. Overall subway crime down 14% compared to 2019. Obviously, credit to our partnership with the NYPD and with Governor Hochul, who is continuing her investments -- as she laid out in the State of the State -- to make sure there is money for extra cops on the New York City subway system. He continued that Governor Hochul also doubled down on her commitment to SCOUT, the very successful mental health outreach program that's directed at people who are experiencing serious mental illness in the public space. The Chair stated that we're having success moving them into treatment and to more stable situations so hopefully they can begin to recover. And we're very proud of that and appreciative of the Governor's continued investment in the SCOUT program.
+[p006_c0007] MTA had the highest customer satisfaction with the subway to date as shown in the fall Customers Count survey -- now at 62%, which is a 13% increase over a year ago in the fall 2024 report. Satisfaction with safety, is up 6 points, now to 63% -- the highest level it has ever been since MTA began doing these surveys back in 2022. And not to soft-pedal, Metro-North and LIRR customer satisfaction remains well above 80%, which is not surprising given the performance they had with on-time performance in the high 90s. The Chair noted the full results of Customers Count will be available online as part of MTAs continuing commitment to Open Data.
+[p006_c0008] Chair Lieber states that later today, we'll be heading back to court -- to watch our lawyers do the oral arguments in the congestion pricing case in front of Judge Liman. The Chair stated that a few weeks back he was with Governor Hochul and Mayor Mamdani celebrating the first full year of congestion pricing. Congestion pricing has delivered and continues to deliver on all of the stated goals -- less traffic; faster travel, especially in and out of the crossings to Manhattan, whether you're on a bus or driving; safer streets; better air quality; and -- soon enough -- better transit because congestion pricing and the $15 billion the
+[p006_c0009] _Master Page # 6 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 7
+
+[p007_c0001] program is in the process of contributing to our Capital Program was a huge piece of the record commitment levels that the team at MTA Construction and Development have been able to accomplish.
+[p007_c0002] The Chair continued to say MTA is going to do the hard stuff, and one of the hard things is to deal with fare evasion. New fare gate prototypes are getting a lot of attention, especially on TikTok. There are three different models, all being paid for by the companies who are competing for this contract. There are three different models being tested across nine stations. That number of stations is going to double in the weeks to come. More than 2 million people have used them so far and we're learning a lot about what works, and also about some aspects of it that over time we will have to adjust. Features of both the design and the software and otherwise that we're going to have to customize for optimizing how they work in New York. Ultimately new faregates will be installed in 150 stations as part of our 2025-2029 Capital Program. The selected stations will account for over 70% of MTA ridership.
+[p007_c0003] The Chair continued by saying that unlike the past three years, MTA does not have a big financial ask on the table with the Legislature. Therefore in 2026 MTA will focus not only on traditional metrics like OTP and service delivery, but will focus on increasing productivity and efficiency in operations to the benefit of the public. Metro-North has been leading the way with their super express trains from New Haven and from Poughkeepsie, which has made a big impression on customers who come from the northern end of the system. The Chair further stated, he would like to see if we can use the best modern scheduling software – which is out there, some of which we have access to because of existing contracts – to optimize our schedules.
+[p007_c0004] On the capital side, the Chair continued, MTA is going to keep advancing Second Avenue Subway Phase 2. The Second Avenue Subway project is subjected to the same explained stoppage of funding from Washington and we're very much hoping that reason prevails. MTA has answered the federal government's questions about the DBE program. MTA has started the process of recertifying all these minority- and women-owned companies so they can participate in this revised and changed version of the DBE program. There's no reason for the Second Avenue Subway funding to be stopped, and the Construction and Development team have done a great job of showing the FTA that this project is moving forward.
+[p007_c0005] The Chair stated that in the meantime, – MTA will take a serious look into the possibility of keeping the tunnel boring machine moving when it reaches the end of its path in this phase of the Second Avenue Subway. MTA will look to see if it may be continued west, perhaps all the way to Broadway to lay the core groundwork for the next phase of Second Avenue Subway.
+[p007_c0006] MTA is not committing financially to a project however MTA will explore it and the opportunity to explain what MTA is calling the Q West project, Q to the west – across 125 th Street.
+[p007_c0007] The Chair continued by stating that the Governor, in her State of the State address, also introduced the idea of creating a much better Jamaica Station. With the growth of the AirTrain volumes, which are significant, and all the extra transfers that are taking place
+[p007_c0008] at Jamaica with the new Grand Central Madison service, LIRR riders really deserve a more modern station. The station is the fourth largest train station, in terms of volume, in the United States. A study will be conducted jointly with the Port Authority. Another State of the State proposal of the Governor's with huge implications for this agency is the push to bring down auto insurance rates by getting [rid of] some of the elements of our law that unintentionally permit fraud and that permit a lot of irrationality in the auto crash
+[p007_c0009] _Master Page # 7 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 8
+
+[p008_c0001] litigation process. This is important to the MTA as the owners and operators of almost 6,000-strong bus fleet. The MTA, no secret, is a deep pocket, and the result is that we frequently get sued and hit with huge payouts, even when we're only found 1% responsible for a crash. – Although the Governor's proposal is purposed at reducing auto insurance rates for New Yorkers, it would also change a major exposure for the MTA.
+[p008_c0002] The Chair concluded his prepared remarks and asked that the storm response video be played. The video was played.
+[p008_c0003] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records for details of the presentation.
+### [p008_c0004] 5. NEW YORK CITY TRANSIT COMMITTEE
+### [p008_c0005] A. President's Update
+[p008_c0006] Bernard Jackson, Chief Operating Officer, NYCT, delivered the President's Report.
+[p008_c0007] Chief Jackson thanked Chair Lieber and the NYCT team for their incredible work continuing operations during the storm, noting that the MTA was the only transportation agency in the region that ran throughout the weekend. He emphasized that New Yorkers rely on the system even during the worst weather. Noting preparation had been key, he discussed several preparation measures that were taken during the days preceding the storm. He reported that approximately 4,400 subway trips, 2,300 bus trips, and 3,250 paratransit trips had been provided during the storm. He commended Frank Farrell for his efforts as the recently appointed Executive Vice President of Buses. He also commended the team's successful and efficient clean-up efforts after the storm.
+[p008_c0008] Chief Operating Officer Jackson reported that December was another strong month for Subways, with 82.8% weekday on-time performance. He indicated that those favorable metrics were achieved despite some unusual challenges, including a crane striking the Broadway Bridge on December 17 th .
+[p008_c0009] He reported that Buses on-time performance was slightly down from November, but was up when compared to December 2024. He noted the decline was mainly due to a few weather events. He noted bus speeds continued to increase, up 1.2% year-over-year.
+[p008_c0010] Chief Operating Officer Jackson reported favorable metrics for Paratransit, including 95.4% of weekday trips meeting the thirty minute on-time performance threshold. He noted there were 968,000 trips in December, an increase of 2% from November.
+[p008_c0011] Refer to the video recording, the staff summary, and documentation filed with the records of this meeting, produced by the MTA and maintained in MTA records for the details of the presentation.
+### [p008_c0012] 6. JOINT LONG ISLAND RAIL ROAD/METRO-NORTH RAILROAD COMMITTEE
+### [p008_c0013] A. Long Island Rail Road President's Update
+[p008_c0014] LIRR President Rob Free ("President Free") began by reporting on the recent winter storm that impacted the area leaving as much as 15 inches of snow. LIRR operated safe service throughout the storm because of the preparations and planning of the team before the storm, including modifying train schedules.
+[p008_c0015] _Master Page # 8 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 9
+
+[p009_c0001] President Free expressed his appreciation for the 1,800 dedicated employees who reported to work to ensure the LIRR kept moving. President Free stated that on Sunday in the middle of the blizzard, LIRR operated over 620 trains with 95% of trips completed on 11 out of 12 branches, while on Monday, LIRR operated over 730 trains on all 12 branches. On Tuesday, LIRR returned to full schedule with over 930 trains operating with 97% of trips completed. President Free thanked the employees for their herculean effort.
+[p009_c0002] President Free stated that December ridership remained strong with 7.2 million riders, which is 94% of December 2019. Commutation ridership increased 11.5% over December 2024. Monthly ticket ridership increased 12% over December 2024. The year-to-date (“YTD”) on-time performance (“OTP”) was 94.9% compared to 2024.
+[p009_c0003] President Free stated that the customer injury rate for the month of November is 33% down compared to the same time last year and there was a 14% decrease for employee injury rate as compared to November of last year.
+[p009_c0004] President Free provided an update on the Queens Interlocking modernization project. Queens Interlocking is a major junction point that operates 333 trains daily and joins the Hempstead Branch to the Main Line. Upcoming work will require service modifications for three weekends. President Free reminded everyone to check the website or the TrainTime app for the most updated schedule information.
+[p009_c0005] President Free described some recent ADA station improvement events, including work done at Valley Stream and Laurelton stations. President Free thanked Board Members Miller, Leathers, and Herbst as well as elected officials for attending the events and for their continued support.
+[p009_c0006] President Free highlighted the work at the LIRR for 2025. LIRR operated a total of 321,198 trains, a record. The ridership reached 81,946,669, representing 6.5 million more customers over the prior year, which represents 8.5% growth from 2024 ridership, and 90% of 2019 ridership. Ridership hit the 90% mark beginning in July and 98% of 2019 ridership in September. There were 118 state of good repair projects. Further, over 95% of scheduled outages were taken, stressing the importance of state of good repair at the LIRR. President Free underscored that even with all the added ridership, service and maintenance, LIRR achieved a 96.17% total OTP in 2025. Additionally, this was achieved with efficiencies of $71M in fiscal savings. LIRR achieved a fare not-collected rate of 2.9%. President Free thanked the employees at the LIRR for their work.
+[p009_c0007] Chair Lieber acknowledged and thanked Board Member Leathers who represents the workforce of the LIRR.
+[p009_c0008] Board Member Chu commented that he has seen remarkable improvements in just a year.
+[p009_c0009] Board Member Mack complemented Bridges and Tunnels, the workers, and President Sheridan for an excellent job.
+[p009_c0010] In response to a question from Chair Lieber regarding NICE Bus, Board Member Mack stated that he will discuss with Nassau County Executive.
+### [p009_c0011] B. Metro-North Railroad President’s Update
+[p009_c0012] Metro-North President Justin Vonashek (“President Vonashek”) began by briefing the Board on winter storm Fern which dropped two feet of snow with some drifts of over three feet. Preparations began early in the week with coordinated efforts across the railroad. Metro-North tested and confirmed over 400 pieces of snow fighting equipment to ensure they were in working order. The service delivered rate on Sunday and Monday was over 99%. Sunday saw roughly 30% of normal Sunday ridership and Monday was 23%. 1300
+[p009_c0013] _Master Page # 9 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 10
+
+[p010_c0001] employees were on site throughout the storm. Trains were kept in service, with no major delays or disruptions. President Vonashek thanked Metro-North's employees for their tireless work, stated the work is not yet done, and thanked customers for their patience.
+[p010_c0002] President Vonashek referred to this month's materials for details of the 2025 year-end review.
+[p010_c0003] President Vonashek stated that for the 12-month period ending in November 2025, Metro-North's safety performance remained strong. The reportable customer injury rate was 1.52 per million customers. The reportable employee lost time injury rate was 1.73 per 200,000 working hours. There were no reportable grade crossing incidents in 2025.
+[p010_c0004] President Vonashek reported that ridership performance for the month of January remained strong. There was a normal dip in ridership after the holidays, and the winter storm impacted ridership. Despite this, last week's ridership was over 220,000, which was 6.8% higher compared to the same week in 2025. Looking back at 2025, Metro-North delivered 74.4 million rides, up 6% from 2024, compared with less than 1% of annual growth from 2010 to 2019. 2025 reached 82.5% of 2019 ridership, with average weekday ridership rising to 237,000 between Labor Day and Christmas. Leaf Peeper trains reached 109% of October 2019 and Shopper Specials set weekend records this past December. CityTicket expansion increased Bronx ridership to 116% of 2019 ridership. Ridership to and from Bronx stations are at 107% throughout the territory with some Bronx stations pushing 150%. Waterbury Branch ridership reached 147% of 2019 levels.
+[p010_c0005] For the sixth consecutive year, OTP was above 97.8%. So far in 2026, aside from the extreme weather conditions, OTP is about 98%. High OTP is in part the result of extensive planning, innovative approaches to project work, advanced data analytics, scheduling tools, and improved coordination.
+[p010_c0006] President Vonashek recapped the implementation of the Super Express Train on the Hudson and New Haven Lines, which operate at 90 minutes or less, saving riders up to 25 minutes per trip. In addition, six Poughkeepsie express line trains operate at 90 minutes or less, saving riders up to 14 minutes per day, and 3 full days per year.
+[p010_c0007] President Vonashek recounted the ways in which Metro-North invested in its workforce, including new initiatives such as employee engagement days, and quarterly labor and management meetings.
+[p010_c0008] President Vonashek stated that 2025 was a big year for customer engagement, including ramped up social media efforts. Everyone loved conductor Steve's rendition of Take me out to the ball game to promote Yankee game service and the Veteran Locomotive post won the year for most posts on Instagram with over one million impressions. Over 2,600 people attended our New Haven Open House. After a several year hiatus, the customer newsletter Milepost was relaunched.
+[p010_c0009] For both railroads, President Vonashek reported on the new fare and ticketing changes that took effect on January 4. Based on the recent data, by extending fare validity, introducing the day pass and free ticket redemption, customers on both railroads have saved almost $3.1 million dollars. There were 273,000 reduced-fare ticket sales since January 4. Compared to expected growth, reduced-fare mobile ticket sales in the morning peak grew 5 times faster on Metro-North and 8 times faster on LIRR, saving riders $2.4 million dollars so far. 220,000 day pass tickets have been sold since January 4, saving riders $450,000. Almost 2.5% of Metro-North customers, and over 3.5% of LIRR customers redeemed an eleventh free ride, saving just under $200,000. The new one-way activation rules are changing customer behavior with more tickets purchased, activated and ready. Same day activations rate for one-way tickets is up nearly 10%. Less than 1% of rides have resulted in a surcharge.
+[p010_c0010] President Vonashek announced that four employees at Metro-North are being honored by Progressive Railroading Magazine with 2026 Women of Influence in Rail Awards. Director of Capital Strategy and Program Development, Robyn Hollander, for Sustainability, Director – Stations and Operation, Elizabeth
+[p010_c0011] _Master Page # 10 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 11
+
+[p011_c0001] Hotetz, for Leadership, Manager – Research and Analysis, Raquel Perez Watson, for Innovation, and Assistant Deputy Director of GIS, Xiaojing Wei, for Technology.
+[p011_c0002] President Vonashek recognized two outstanding individuals for their service to Metro-North. Executive Director Communication Signal & Positive Train Control, Tony Chieffo, will be retiring after 24 years of dedicated service. Block Operator Eric Beerwald will be retiring after an extraordinary 58 years of service.
+[p011_c0003] President Vonashek noted that as part of Amtrak’s Portal North Bridge Track Cutover project, New Jersey Transit will implement temporary schedule adjustments on the Port Jervis and Pascack Valley lines from February 15 to March 14. President Vonashek advised customers to check the NJT website for up to date schedules.
+[p011_c0004] In response to a question from Chair Lieber regarding service restoration on the West of Hudson yesterday, President Vonashek stated that service has been restored.
+[p011_c0005] President Vonashek stated that yesterday Governor Hochul announced that Amtrak was restoring service to Albany this spring and will not authorize service by Metro-North in the Hudson Valley north of Poughkeepsie at this time. President Vonashek stated that Governor Hochul correctly noted the excitement about the announcement of Metro-North service to Albany. He stated that Metro-North is ready and able to provide its safe, reliable, and very affordable service to Albany in the near future to meet that demand.
+[p011_c0006] Board Member López complimented Metro-North’s team for the hard work in keeping the stations and platforms clear and safe during the storm.
+[p011_c0007] Board Member Leathers saluted the labor force for the tremendous year in 2025 and thanked the agency heads for recognizing the employees in December with events that were well attended and appreciated.
+[p011_c0008] Chair Lieber stated that it was Governor Hochul’s pressure on Amtrak saying that it needed to provide full service in the Hudson Valley, and in response to Amtrak saying it couldn’t and was going to cut service, and that Metro-North could, that seems to have yielded a reversal of Amtrak’s decision that it could not provide the service to Albany that the Hudson Valley expected. Chair Lieber appreciates that Governor Hochul’s initiative played out and stated that Governor Hochul has instructed Metro-North, perhaps due to its lower fares compared to Amtrak, to continue to plan for the possibility of some version of this service north of Poughkeepsie for a future date.
+[p011_c0009] Board Member Valente stated that Metro-North employees were excited when they were called upon to fill the gap in service to Albany and a lot of time and training went into the preparations. Customers were also very excited about an affordable option. Board Member Valente stated he sees no reason service cannot be run in tandem with Amtrak and that Metro-North could work towards the goal of running service to Albany.
+[p011_c0010] In response to a question from Board Member Albert regarding Amtrak’s original explanation that work on the East River Tunnels was the reason they had to suspend some Albany runs, Chair Lieber stated that while he has no specific knowledge as to Amtrak’s motivations, when the time came close to when Metro-North would begin its service, Amtrak somehow found a way to provide the service that they previously had said was impossible to provide.
+### [p011_c0011] 7. TRIBOROUGH BRIDGE AND TUNNEL AUTHORITY COMMITTEE
+[p011_c0012] President Sheridan stated that Winter Storm Fern brought steady snow and sleet across the region, followed by a prolonged period of below-freezing temperatures. TBTA’s bridges and tunnels were consistently plowed, deiced, safe, and most importantly, open throughout the duration of the storm. President Sheridan presented a video of echelon formation snowplowing. Thanking MTAPD and TBTA’s frontline employees and teams working behind the scenes for a job well done during sustained, challenging conditions, President
+[p011_c0013] _Master Page # 11 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 12
+
+[p012_c0001] Sheridan attributed the successful emergency response to best practices, preparedness, training, and dedication. For 23 continuous hours, TBTA employees plowed 11,000 miles of roadway and spread 2,800 tons of deicer, and continued refreeze prevention. TBTA crews also assisted DOT by clearing a mile of the six-mile HOV lane on the Gowanus Expressway -- removing the snowbanks covering the movable barrier wall and applying deicer -- enabling that HOV lane to reopen. President Sheridan also thanked TBTA's customers, who heeded TBTA's advanced messaging by staying off the roads, allowing TBTA to efficiently and safely manage snow operations with minimal collisions.
+[p012_c0002] Turning to 2025 performance, President Sheridan began by noting the start of tolling in the congestion relief zone that kicked off the year. Under the leadership of Governor Hochul and Chair Lieber, this was a huge achievement for New York and the MTA. The results are baddressed,t the predictions: reduced congestion and the promise of steady revenue to fund critical mass transit projects, plus improved safety within the zone. TBTA delivered another year of record-breaking toll revenue and support to MTA mass transit. Preliminary year-end data shows TBTA's toll facilities collected a record $3.3 billion in revenue, and traffic levels reached 339 million vehicle crossings. Total support to MTA mass transit, including from the CRZ, is $2.2 billion. Even with consistently high traffic volumes, averaging over 930,000 daily crossings, collisions continued their downward trend. Compared to 2024, total collisions-per-million-crossings declined by 12%, and injury-related collisions decreased by 17%, demonstrating the effectiveness of ongoing safety initiatives. TBTA's MTA C&D partners contributed to these lasting reductions with projects such as roadway widening at the Verrazzano-Narrows Bridge and roadway realignment at the Bronx-Whitestone Bridge.
+[p012_c0003] TBTA facility management started an initiative in 2025 to bring work in-house. In-house cost savings efforts by TBTA's Intelligent Transportation Systems and Central Maintenance Divisions resulted in savings of more than $5 million.
+[p012_c0004] Enforcement against ghost plates and persistent toll violators remained strong, with the ongoing smooth transition of the MTA PD supplementing TBTA's patrols.
+[p012_c0005] In 2025, TBTA proudly marked four milestone anniversaries at the Hugh L. Carey and Queens Midtown tunnels, the Cross Bay Veterans Memorial Bridge, and the launch of E-ZPass. And January 11, 2026 marked the 65th anniversary of the opening of the Throgs Neck Bridge, portrayed in an exhibit on display at Grand Central Terminal.
+[p012_c0006] President Sheridan stated there are no procurements.
+[p012_c0007] There were no action items or procurement items to report for the TBTA Committee.
+### [p012_c0008] 8. COMMITTEE ON FINANCE
+[p012_c0009] For details of the presentation given by Jai Patel, Chief Financial Officer, please refer to the video recording of the meeting produced by the MTA and maintained in MTA records available on the MTA website.
+[p012_c0010] Ms. Patel gave a brief overview of operating results for 2025, stating that 2025 closed out largely as planned with favorable timing of revenues and continued discipline on controllable costs. Ms. Patel further stated that the results were preliminary and subject to final audit.
+[p012_c0011] Ms. Patel gave a brief overview of capital markets activity by stating that it continues to support both affordability and delivery of the capital program. She further stated that each year a year-end report is presented to summarize these activities and to provide a forward look ahead. That report will be delivered at February 2026 Finance Committee.
+[p012_c0012] Ms. Patel concluded her presentation by providing a year-end update on the Congestion Relief Zone Program.
+[p012_c0013] _Master Page # 12 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 13
+
+[p013_c0001] Ms. Patel and Chair Lieber addressed questions from Board Member Chu concerning the Congestion Relief Zone Program and insurance, and from Board Member Mihaltes concerning final year-end expenses for the Congestion Relief Zone Program and operating revenue related to fare evasion.
+### [p013_c0002] 9. AUDIT COMMITTEE
+### [p013_c0003] A. Independent Auditor's Report
+[p013_c0004] To see a summary of the meeting and the actions taken by the Audit Committee, please refer to the video recording of the meeting produced by the MTA and maintained in MTA records available on the MTA website.
+[p013_c0005] MTA Chair Lieber introduced MTA Auditor General Monica Murray who provided a year-end status update for 2025 and the proposed 2026 Audit Plan. Her presentation is abbreviated from the materials in the committee book. For 2025, the focus of the presentation was on the operations and contracts groups. For 2025, MTA Audit completed 80 operational, financial and technology audits and identified $11.5 million in potential savings and cost efficiencies. The contract group completed 830 contract reviews covering $165 million in audited costs of which $11.9 million were identified as questioned costs for which we typically see a 90% recovery rate. These contract audits are a mix of pre-awards, overhead reviews, contract close outs, contract claims and Engineering Audit Officer (EAO) audits. The EAO reviews cover city funded capital projects. Monica noted that there are also auditors dedicated to reviewing the accuracy of retiree pension payment calculations and on-board auditors who ride the commuter rails (logging over 6,000 rides last year) to ensure proper fare collection and conductor compliance. There is also a group responsible for reviewing Hurricane Sandy funded projects for adherence to federal guidelines in partnership with the MTA Inspector General.
+[p013_c0006] In developing the 2026 Audit Plan, the approach prioritized areas based on financial exposure, the nature of MTA operations, control activities, prior audit results, and input received from management, agency presidents, the Chair, and the Board. Over the course of three months, 98 formal interviews were conducted and there were also many internal discussions. In total, 179 suggestions were received. We track major milestones, solicit feedback, and remain responsive to the public and Board concerns. The plan is flexible to respond to emerging needs and to pivot to include new matters when needed. Approximately 87 audits across all agencies are planned for 2026 and include safety, service and delivery, procurement, HR, finance and IT reviews. The plan intends to address the following issues - are job functions performed as intended; how are facilities functioning; is agency equipment properly maintained; are third-party contracts adhered to; are internal standards being met; is the MTA receiving the expected revenue; and, are policies being followed. Additionally, there will be reviews involving the congestion relief zone and OMNY program, overtime, and employee time and attendance spots checks. The plan also includes bus depot reviews, B&T facilities reviews, station reviews and agency safety reviews.
+[p013_c0007] Kostas Makrakis, Lead Client Services Managing Director (Deloitte) presented the results of their review of the MTA's interim Consolidated Financial Statements for the nine-month period ended September 30, 2025. Deloitte provided their comments to management which were addressed and they are currently in the process of completing the remaining review procedures to issue a review report in the coming weeks. A review of interim financial information consists primarily of analytical procedures and inquiries of those responsible for financial and accounting matters. A review is substantially less in scope than an audit. The objective of an audit is to express an opinion on financial information and accordingly Deloitte does not express such an opinion. Based on the review procedures performed, at this time, Deloitte is not aware of any material modifications that should be made to the interim consolidated financial statements for them to be in accordance with accounting principles generally accepted in the United States.
+[p013_c0008] _Master Page # 13 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 14
+
+[p014_c0001] There are additional materials in the Audit Committee book regarding information on internal controls and audit recommendations.
+### [p014_c0002] 10. CAPITAL PROGRAM COMMITTEE
+### [p014_c0003] A. President's Report
+[p014_c0004] Mr. Jamie Torres-Springer, President of MTA Construction & Development ("C&D"), began by noting that while there was no major snowstorm update from C&D, the organization coordinated closely with operating partners during recent severe weather, temporarily standing down contractors where needed to ensure safe and effective operations. Mr. Torres-Springer emphasized that supporting operating partners during critical events remains a priority.
+[p014_c0005] Mr. Torres-Springer highlighted recent line structure repair work, including significant steel repairs in the Eighth Avenue Line tunnel on the Upper West Side, underscoring that weekend service outages are used to bring crews into tunnels to address structural defects essential to maintaining system safety and integrity.
+[p014_c0006] Mr. Torres-Springer then reflected on the progress made since this time last year, noting that in early 2025 the Capital Plan had not yet been approved, and Congestion Relief Pricing was still unproven. The two central questions facing the agency, whether the investment was truly needed and whether the MTA could deliver, have now been decisively answered. The Governor and State Legislature fully funded the 2025-2029 Capital Plan, and Congestion Relief Pricing has proven successful. Furthermore, C&D has met critical milestones and demonstrated its capacity to execute work at scale.
+[p014_c0007] For example, Mr. Torres-Springer reported that in 2025, C&D achieved a record $15.8 billion in contract awards, more than double the agency's five-year average since 2020 and a significant increase compared to prior decades. He noted that this pace of delivery aligns with expectations set by the State as part of its commitment to the Capital Program. He attributed this performance to sustained focus on value engineering, innovation, alternative delivery models, expansion of in-house capacity, adoption of advanced project management technologies, and establishing the MTA as a tough but fair "owner of choice" for contractors. Of the total 2025 commitments, $5 billion consisted of projects made possible through Congestion Relief revenues.
+[p014_c0008] Mr. Torres-Springer highlighted several major CBTC and ADA projects awarded with Congestion Relief funding, including CBTC signal modernization on the Fulton and Liberty Lines on the A and C in Brooklyn and Queens. This project covers 42.7 track miles and provides full underground cellular service through a partnership with Boldyn. He noted that recently awarded signal projects are approximately 33 percent cheaper per mile than earlier CBTC projects. He also identified the Sixth Avenue Line on the B, D, F, and M trains as the next CBTC project to advance. Additional Congestion Pricing funded awards included ADA accessibility packages across seven stations, with 16 more stations planned, delivered $22 million below estimates.
+[p014_c0009] Next, Mr. Torres-Springer reported progress on Second Avenue Subway Phase 2, including award of the tunneling contract with approximately $700 million in labor savings and $1.3 billion in total identified savings to date, while stressing the need for restored predictability in federal funding to maintain schedule and budget certainty.
+[p014_c0010] _Master Page # 14 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 15
+
+[p015_c0001] Turning to early commitments under the 2025-2029 Capital Program, Mr. Torres-Springer reported that procurement of R268 subway cars is approximately 90 percent launched and is 4 percent cheaper in inflation adjusted dollars than the prior plan. He also announced the formal kickoff of design and engineering for the Interborough Express project, noting anticipated collaboration with the City to advance the project.
+[p015_c0002] Mr. Torres-Springer reported $6.7 billion in project completions in 2025, reflecting steady growth in delivery of projects awarded in prior years. He highlighted the completion of 39 subway elevator replacements and two railroad elevator replacements in 2025, eliminating the backlog of elevators beyond their useful life and positioning the system for improved elevator reliability. He noted that efficiency improvements reduced average elevator replacement duration by two months. In addition, 10 stations were made accessible in 2025, seven subway stations and three Long Island Rail Road stations, with recent completions at Parkchester on the 6 Line and Laurelton on the LIRR Far Rockaway Branch.
+[p015_c0003] Mr. Torres-Springer also reported on substantial completion of the OMNY fare payment system in 2025, achieving 98 percent adoption following the sunset of the MetroCard. He further highlighted completion of a major upgrade to the Grand Central subway complex, including new staircases, escalators, elevators, turnstiles, and circulation improvements, delivered with more than $46 million in savings.
+[p015_c0004] Additional accomplishments included accelerated reconstruction of the Grand Central Train Shed through public-private partnerships, with Phase One completed $20 million under budget and $75 million in private contributions secured for subsequent phases; completion of Phase One of the Park Avenue Viaduct ahead of schedule and under budget; and continued progress on major systemwide state of good repair initiatives. Mr. Torres-Springer concluded by emphasizing that 2025 marked a pivotal year for C&D, demonstrating both the necessity of sustained capital investment and the agency's ability to deliver projects more efficiently, affordably, and at unprecedented scale.
+[p015_c0005] Board Member Lopez thanked President Torres-Springer and his staff for his presentation and for their help in bringing the West Chester Bee-Line Bus System onto the OMNY system. She then requested reports on Metro North projects located in Westchester County in the 2025-2029 plan. Mr. Torres-Springer assured her he could share more information and gave examples of where the $8 billion dollars of investment is going in the 2025-2029 plan.
+[p015_c0006] Next, Board Member Valdivia congratulated C&D on the $15.8 billion dollars of commitments and requested a break-out of Capital expenditures for 2025. Mr. Torres-Springer said he would provide.
+### [p015_c0007] B. Infrastructure Report
+[p015_c0008] Next, Mr. Jamie Torres-Springer, presented the work of C&D's Infrastructure business unit. He outlined the scope of the unit's responsibilities, which include approximately 61 route miles of elevated structures, 155 route miles of subway tunnels, 253 substations, 254 pump rooms, and 75 transit facilities spread across hundreds of acres. While much of this infrastructure is not visible to riders, he emphasized that these assets underpin some of the agency's largest and most complex capital projects.
+[p015_c0009] Mr. Torres-Springer explained that the infrastructure program is organized into three primary areas: power; back-of-house facilities, such as shops and yards; and line structures, including both underground tunnels and elevated subway segments. The total portfolio is nearly $20 billion, with approximately $5 billion currently in construction and another $7 billion in design or procurement. He described the 2025-2029 Capital Program as a generational investment, allowing the MTA to address long-deferred needs at a scale not previously possible.
+[p015_c0010] _Master Page # 15 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 16
+
+[p016_c0001] Mr. Torres-Springer reported that the current Capital Plan will bring approximately 70 substations, about one-third of the system total, into a state of good repair through full overhauls or targeted component replacements. He noted that power infrastructure is a critical but often overlooked driver of service reliability, enabling fewer outages and supporting closer train spacing once CBTC is installed. As an example of recent progress, he highlighted the completion of the new 28th Street Substation on the Eighth Avenue Line, which was delivered on budget at the end of last year. The substation provides additional power for A and C service, supports expanded service levels announced in November, and enables ongoing CBTC installation on the line.
+[p016_c0002] Turning to shops and yards, Mr. Torres-Springer noted that all subway cars are tested and maintained at these facilities before entering service, making them essential to system reliability. He reported substantial progress in recent years toward addressing state of good repair needs, including major flood protection and resiliency projects at Coney Island Yard and 207th Street Yard. He acknowledged that significant work remains, including rebuilding critical facilities such as Livonia and Westchester Yards, and stated that C&D is engaged in broader planning with New York City Transit to assess the future of the entire shops and yards network, with additional discussion to be brought to the Board at a future meeting. As a recent completion, he highlighted the rail car acceptance and testing facility, which was delivered early and under budget and will support the large influx of new rolling stock anticipated in the 2025-2029 plan.
+[p016_c0003] Mr. Torres-Springer also provided an update on the Jamaica Bus Depot replacement project, which will replace an 85-year-old facility with a modern depot capable of housing 272 buses, supporting full electrification and high-voltage infrastructure, and delivering reliable service to the surrounding community.
+[p016_c0004] Regarding line structures, Mr. Torres-Springer reported that the current Capital Program will significantly reduce the backlog of repairs on elevated subway infrastructure, with nearly half of the system's 60 miles of elevated structures to be repaired and repainted during this plan. He described a new, more efficient painting approach, adapted from practices used by Bridges and Tunnels, that extends coating life to 25-30 years, delivering major cost savings while also improving neighborhood aesthetics. He stated that these projects are progressing well.
+[p016_c0005] Mr. Torres-Springer also provided an update on the Rockaways line structure reconstruction. He recalled that at the previous presentation, the agency had just begun a 17-week service shutdown to facilitate major reconstruction. He reported that the shutdown was completed successfully in May of last year, with service restored as promised. During the outage, crews reconstructed approximately 1,300 feet of the Hammels Wye, installed 3,000 feet of protective shielding, and rebuilt 1,600 feet of track. He noted that while the major reconstruction work is complete and service fully restored, additional resiliency improvements are ongoing to better protect A Line service against extreme weather in the Rockaways.
+[p016_c0006] Finally, Mr. Torres-Springer recognized Deirdre Harvey, Steve Berrang, and Bobby Samuel all retiring this month from decades of committed work at the MTA.
+### [p016_c0007] C. IEC Infrastructure Report
+[p016_c0008] Mr. Sirish Peyyetti, Program Director of the Independent Engineering Consultant ("IEC"), provided detailed updates on MTA Construction & Development's Infrastructure business unit.
+[p016_c0009] Mr. Peyyetti first reported on the Rockaway Line resiliency and viaduct rehabilitation project. The IEC noted that the project remains within budget, with an estimated completion cost of $584 million. He
+[p016_c0010] _Master Page # 16 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 17
+
+[p017_c0001] explained that a long-term General Order executed in early 2025 enabled concentrated structural rehabilitation work along the corridor, including wire duct repairs, Hammels Wye rehabilitation, and electrical and mechanical upgrades to the South Channel Bridge. Separately, signal system improvements at Beach 105th Street Station required a redesign, resulting in a forecast delay of approximately 10 months; however, the IEC noted that day-to-day service operations have not been affected. Remaining project risks are being actively managed through focused procurement efforts, prioritization of submittals, and continued interagency coordination.
+[p017_c0002] Next, Mr. Peyyetei provided an update on the Jamaica Bus Depot replacement project, a design-build effort to deliver a new, modern bus parking and maintenance facility at the existing site. He recalled that the IEC had previously reported schedule impacts related to Department of Buildings permit challenges. The project team has since recovered 21 days through strategic weekend work and the use of additional equipment. With the building envelopes nearing completion, the IEC agreed that further mitigation opportunities may be achievable during upcoming phases of construction. The IEC concurred with the forecast substantial completion date of October 2027 and reported that the current $649 million budget is expected to be sufficient to complete the project, even after accounting for cost exposures related to high-tension electrical upgrades and soft cost overruns associated with the extended duration. Schedule impacts related to commercial property acquisition have been successfully mitigated, though testing and commissioning activities remain a schedule risk, as is typical for projects of this scale.
+[p017_c0003] Mr. Peyyetei then presented the IEC's first report on the painting and structural steel repairs project on elevated structures. The project includes paint removal, abrasive blasting, repainting, and necessary steel repairs along the Jamaica Line between the Williamsburg Bridge and Delancey Street, as well as the Canarsie Line. The IEC reported that the project is forecast to be completed within budget, with an estimated completion cost of $217 million. However, substantial completion has been revised from March 2026 to September 2026 due to contractor productivity issues. The project team is developing mitigation strategies, and unidentified structural defects were identified as the primary remaining risk.
+[p017_c0004] The final project discussed was line structure component repairs. This design-bid-build project addresses critical defects on the Seventh and Eighth Avenue Lines through targeted steel and concrete repairs to columns, beams, and tunnel walls. The work affects five Manhattan stations and includes stormwater mitigation, demolition of abandoned structures, and repairs to girders and abutments. Mr. Peyyetei reported that the project remains within budget and on schedule, with substantial completion forecast for January 2028. General Order work has progressed steadily through late 2025, with consistent production achieved. All planned outages to date have been executed successfully, and remaining outages are fully sequenced. Schedule risk remains due to reliance on weekend and piggyback outages and the potential for unforeseen site conditions that could add scope or affect sequencing.
+[p017_c0005] Turning to the IEC's broader oversight responsibilities, Mr. Peyyetei explained that the quarterly Traffic Light Report and associated variance reports summarize the budget and schedule status of projects and identify key issues and mitigations. For this reporting period, the IEC analyzed 46 infrastructure projects, all of which were included in the prior traffic light report presented at the December Capital Program Committee meeting. Five projects, representing approximately 11 percent of those reviewed, triggered schedule variances attributable to factors such as unforeseen site conditions, contractor performance issues, inspection challenges, or design errors. He emphasized that none of the projects experienced cost variances. The IEC reviewed the issues and mitigations associated with the five projects and worked with C&D to prepare detailed variance reports.
+[p017_c0006] After the report, Chair Lieber asked Mr. Torres-Springer how C&D is dealing with delay in the Jamaica Bus Depot project. Mr. Torres-Springer explained that some delay was caused by lack of permits and
+[p017_c0007] _Master Page # 17 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 18
+
+[p018_c0001] C&D is working with the new mayoral administration to improve those timelines. Additionally, they are working with Skanska to improve issues that caused delays and will report back on that in the future.
+[p018_c0002] Next Chair Lieber asked Mr. Torres-Springer to explain the delay in the painting line structures project. Mr. Torres-Springer responded that the project is mostly on target, but the schedule had slipped a few months due to working in a busy area- they are continuing to try and make up the time.
+### [p018_c0003] D. Transit Oriented Development Report
+[p018_c0004] Ms. Miriam Harris, Senior Vice President of Transit Oriented Development (“TOD”), presented highlights of the unit’s activities over the past year. She described the TOD Group as a small but impactful unit within Construction & Development’s planning function, with a mission to facilitate housing near transit, advance systemwide accessibility, and create value for reinvestment in the MTA system. In 2025, the TOD Group enabled 1,738 housing units adjacent to transit through development on MTA-owned or controlled property and through real estate transactions supporting private development near stations. She highlighted the Beacon Station project on Metro-North’s Hudson Line, made viable through the Governor’s EO30 initiative which created the Redevelopment of Underutilized Sites for Housing (RUSH) program.
+[p018_c0005] Ms. Harris reported that the TOD Group also advanced projects through proactive engagement in municipal land use actions, including completion of the MTA’s first Uniform Land Use Review Procedure (ULURP) as lead applicant for the 125th Street and Lexington Avenue site to support higher-density housing above a future Second Avenue Subway entrance. She noted collaboration with the City of New York on the Atlantic Avenue Mixed-Use Plan, which incorporated MTA sites to enable a 100 percent affordable housing project on a former transit parcel and the upzoning of an adjacent MTA parcel planned for a multifamily housing RFP in 2026. She further reported that 2025 marked a significant milestone for accessibility initiatives, including the opening of the first zoning transit bonus elevator in Queens and the execution of more easements and transit improvement bonus agreements in a single year than in all prior years since the Zoning for Accessibility program began in 2021. She cited the Lennox Hill Hospital redevelopment as a key project that will deliver an elevator and wider sidewalks at a critical hospital location.
+[p018_c0006] Ms. Harris stated that in 2025 the TOD Group generated over $300 million in value for the MTA through private provision of transit facilities, property rights for future transit improvements, and public-private real estate transactions yielding one-time payments or long-term ground lease revenues. She provided examples of integrating new MTA facilities into redevelopment projects, including the Monitor Point project, which will relocate MTA facilities to enable waterfront housing redevelopment and is currently in ULURP. She also discussed partnerships on Park Avenue associated with the Midtown East rezoning, noting the successful negotiation of $75 million in private contributions to fund restoration of the century-old Metro-North train shed roof.
+[p018_c0007] Ms. Harris concluded by noting that 2025 was a productive year that positioned the TOD Group for continued progress in 2026 and beyond, with ongoing efforts to unlock housing near transit, advance accessibility through private investment, and deliver capital assets for MTA operating agencies.
+### [p018_c0008] 10. Board Business
+### [p018_c0009] A. CAPITAL PROGRAM COMMITTEE ACTIONS
+### [p018_c0010] Procurement Actions
+[p018_c0011] _Master Page # 18 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 19
+
+[p019_c0001] Evan Eisland, Executive Vice President and General Counsel, C&D, presented four procurement actions to the Capital Program Committee.
+[p019_c0002] Upon a motion duly made and seconded, the Capital Program Committee voted to bring the following procurement actions before the full MTA Board and recommended the following:
+- [p019_c0003] 1. Award of a modification to a contract with Judlau Contracting, Inc. (Contract No. A46026) for the demolition of two decommissioned circuit breaker houses; 2. Award of a modification to a contract with Mitsubishi Electric Power Products, Inc. (Contract No. S48017) to perform software upgrades to the Communications Based Train Control system so that it complies with MTA's updated Interoperability Interface Specification; 3. Ratification of a modification to a contract with RK Contracting Inc. (Contract No. 6513) compensating the contractor for added work necessitated by unanticipated site conditions and extending the Contract's Substantial Completion date by 161 calendar days, from October 21, 2024 to March 31, 2025; and 4. Ratification of a modification to a contract with Hitachi Rail GTS USA Inc. (Contract No. S48013-2) to resolve the contractor's claim for delay caused by delays in the production of new R211 subway cars.
+[p019_c0004] Refer to the staff summaries and documentation filed with the records of this meeting for the details of these items, and refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for Board members' and C&D representatives' comments.
+### [p019_c0005] B. FINANCE
+[p019_c0006] Upon motion duly made and seconded, the Board voted to approve the following:
+### [p019_c0007] Procurement
+- [p019_c0008] a. One MTA Headquarters item in the estimated amount of $5.7 million. The action was found in the January 2026 Finance Committee Book.
+[p019_c0009] Approval to award eight competitively negotiated all-agency personal services contracts to provide a full range of market research services on an as-needed basis for a period of 60 months (March 1, 2026–February 28, 2031). The combined total amount is not-to-exceed $5.7 million.
+[p019_c0010] Zero-dollar contracts to be awarded to the following firms, selected based on their diverse expertise and availability to support varying market research study requirements: Eureka Facts LLC (an MBE); IPSOS Public Affairs LLC; M. Davis and Company, Inc. (an MBE); National Opinion Research Center; Resource System Group, Inc.; Target Research Group, Inc.; The MassINC Polling Group, Inc.; and Widener-Burrows & Associates, Inc. (a WBE).
+[p019_c0011] Tasks to be solicited through a competitive mini-RFP process, to which awards will be based on best value to the MTA. While rates are pre-negotiated, lower rates may be proposed when tasks are solicited.
+[p019_c0012] The firms will be eligible to provide services including questionnaire and sampling design, data tabulation of survey results, analysis, and report writing. Projects planned over the next five years include ongoing tracking surveys of customer satisfaction; in-system intercept surveys; and customers' evaluations of MTA customer-facing applications and websites.
+[p019_c0013] _Master Page # 19 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 20
+
+### [p020_c0001] C. NYCT PROCUREMENT
+[p020_c0002] Upon a motion duly made and seconded, the Board voted to approve the following:
+[p020_c0003] Two information items for NYC Transit, as follows:
+[p020_c0004] The first item was a request for Board approval of a modification to extend the contract with Plasser American Corporation for Ultrasonic Internal Rail Flaw Inspections for three years and to add funding to maintain uninterrupted service while new ultrasonic systems are installed on NYC Transit-owned and operated Track Geometry Cars.
+[p020_c0005] The second item was a request that the Board approve the exercise of Option 2 of the contract for Post-Award Consulting Services with C2K Partners in support of the purchase of 435 additional subway cars under the previously Board-approved Option 2 Subway Car Contract.
+[p020_c0006] There were no information items for Long Island RailRoad, Metro-North Railroad or Bridges and Tunnels this month.
+[p020_c0007] Refer to the staff summary and documentation filed with the records of this meeting for the details of these items, and refer to the video recording of the meeting, produced by the MTA and maintained in MTA records.
+### [p020_c0008] D. Real Estate Actions
+[p020_c0009] David Florio presented January 2026 real estate report.
+[p020_c0010] Upon motion duly made and seconded, the Board voted to approve the following:
+[p020_c0011] Four items were for MTA Metro-North Railroad that included:
+[p020_c0012] The grant of a permanent easement to the New York City Department of Environmental Protection within the BN Yard in connection with the Tibbets Brook Daylighting Project in the Bronx.
+[p020_c0013] The following three action items were acquisitions of easements to support Penn Station Access. Two were from ConEd for the Oak and Van Nest substations in the Bronx; and the last was from Y Properties Holdings that will support the project's drainage needs near the Morris Park area in the Bronx
+[p020_c0014] The next two items were for the MTA New York City Transit and included: A lease with Hungry Angels Subs for a convenience store at 6309-6311 18th Avenue in Brooklyn and
+[p020_c0015] A license with TB Grant Housing Development Fund Corporation for a landscaped walkway at 581 Grant Avenue in Brooklyn.
+[p020_c0016] There was one information item which was the report on agreements entered into directly by the Real Estate Department pursuant to board policy.
+[p020_c0017] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records for details on the approved real estate items.
+### [p020_c0018] E. Audit Committee Action Items
+[p020_c0019] Upon motion duly made and seconded, the Board voted to approve the following:
+[p020_c0020] _Master Page # 20 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 21
+
+- [p021_c0001] (i) 2026 Audit Plan, (ii) Third Quarter 2025 MTA Consolidated Interim Financial Statements
+[p021_c0002] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records for details on the approved items.
+### [p021_c0003] 12. APPROVAL OF MINUTES
+[p021_c0004] Upon motion duly made and seconded, the Board approved the minutes of MTA Regular Board meeting held on December 18, 2025, and the minutes of each Committee meeting held on December 16, 2025 as distributed.
+[p021_c0005] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records for the details.
+### [p021_c0006] 13. ADJOURNMENT
+[p021_c0007] Upon motion duly made and seconded, the Board voted to adjourn the meeting at 11:48 a.m.
+[p021_c0008] Paige Graves General Counsel and Corporate Secretary MTA
+[p021_c0009] Eamonn Foley Vice President, General Counsel and Corporate Secretary Metro-North Commuter Railroad Company
+[p021_c0010] David Farber General Counsel and Corporate Secretary NYCT and MTA Bus
+[p021_c0011] Haley Stein Vice President, General Counsel and Corporate Secretary Long Island Rail Road Company
+[p021_c0012] Paul L. Friman General Counsel and Corporate Secretary Triborough Bridge & Tunnel Authority
+[p021_c0013] Evan Eisland General Counsel and Corporate Secretary MTA C&D
+[p021_c0014] _Master Page # 21 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 22
+
+### [p022_c0001] Metropolitan Transportation Authority
+### [p022_c0002] 2025-2026 Capital Program Committee Work Plan
+### [p022_c0003] I. Recurring Agenda Items
+[p022_c0004] Approval of the Minutes Committee Work Plan Commitments/Completions and Funding Report
+### [p022_c0005] II. Specific Agenda Items
+### [p022_c0006] March 2026
+[p022_c0007] President's Update Signals Quarterly Traffic Light Report
+### [p022_c0008] April 2026
+[p022_c0009] President's Update OMNY
+### [p022_c0010] May 2026
+[p022_c0011] President's Update Systems
+### [p022_c0012] June 2026
+[p022_c0013] President's Update Rolling Stock Diversity Quarterly Traffic Light Report
+### [p022_c0014] July 2026
+[p022_c0015] President's Update Signals
+### [p022_c0016] September 2026
+[p022_c0017] President's Update Expansion Quarterly Traffic Light Report
+### [p022_c0018] October 2026
+[p022_c0019] President's Update Stations
+### [p022_c0020] November 2026
+[p022_c0021] President's Update Railroads
+### [p022_c0022] December 2026
+[p022_c0023] President's Update Bridges & Tunnels Quarterly Traffic Light Report
+### [p022_c0024] January 2027
+[p022_c0025] President's Update Infrastructure
+### [p022_c0026] February 2027
+[p022_c0027] President's Update Agency Initiatives
+[p022_c0028] _Master Page # 22 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 23
+
+### [p023_c0001] MTA Construction & Development
+### [p023_c0002] SAFETY SUMMARY
+> [p023_c0003] Month Other Recordable Lost Time Feb 2025 15 7 9 Mar 11 2 2 Apr 9 5 6 May 15 1 3 Jun 13 5 5 Jul 18 8 9 Aug 16 8 5 Sep 13 10 7 Oct 10 4 13 Nov 8 5 8 Dec 12 4 7 Jan 2026 13 7 3
+[p023_c0004] Lost Time – A work-related incident (injury or illness) to an employee that results in a loss of productive work time, and the employee is unable to perform regular job duties. Recordable – An injury or illness that results in restricted work or transfer to another job, medical treatment beyond first aid, or a loss of consciousness. Other: A combination of minor first-aid, medical events, and incidents notification-only.
+### [p023_c0005] SAFETY NARRATIVE
+### [p023_c0006] JANUARY UPDATE:
+### [p023_c0007] CONTRACTOR WORKER INCIDENTS:
+- [p023_c0008] A total of 23 safety incidents were reported in January 2025, including: Three (3) lost time incidents. Seven (7) recordable incidents. The reported lost time incidents in January 2025 decreased by four (4) incidents when compared to December 2025. The top lost-time and recordable incident types for January 2025 were Struck by/Against (80%), Strain and Sprain (10%), and Caught Between (10%).
+### [p023_c0009] SERIOUS INCIDENTS:
+- [p023_c0010] No Serious Incidents
+### [p023_c0011] C&D EMPLOYEE INCIDENTS:
+- [p023_c0012] No Reported Incidents
+### [p023_c0013] YEAR-TO-DATE TRENDS:
+- [p023_c0014] LOST TIME INCIDENT TRENDS: A total of 75 Lost Time incidents were reported in the rolling 12 months through January 31, 2026. 3 Lost Time incidents have been reported YTD (through January 31, 2026). The injury types associated with lost time incidents YTD are Struck by/Against (100%). The number of reported lost time incidents decreased by four (4) from the previous month. RECORDABLE INCIDENT TRENDS: A total of 68 recordable incidents were reported in the rolling 12 months through January 31, 2026. The injury types associated with recordable incidents YTD are Struck By/Against (72%), Caught Between (14%) and Sprain/Strain (14%). There was an increase of three (3) recordable incidents compared to the previous month.
+### [p023_c0015] INSPECTIONS & AUDITS: Active Capital Projects for JANUARY - 183 Projects with 345 Sub-Projects
+- [p023_c0016] JANUARY INSPECTIONS: INTERNAL – 296 EXTERNAL – 798 (64 Third-Party Safety Consultants; 734 OCIP Visits) YTD TOTAL INSPECTIONS: INTERNAL – 296 EXTERNAL – 798 (64 Third-Party Safety Consultants; 734 OCIP Visits)
+[p023_c0017] _C&D SAFETY SUMMARY Page 1 of 2_
+[p023_c0018] _Master Page # 23 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 24
+
+### [p024_c0001] Construction & Development
+### [p024_c0002] SAFETY SUMMARY
+- [p024_c0003] • JANUARY NEGATIVE OBSERVATIONS – Negative Findings identified through various inspections include General Safety/Housekeeping, Fire Protection/Prevention, Fall Protection, Maintenance and Protection of Traffic (MPT), Supervision/Organization, Stairs/Ladders, Motor Vehicle/Heavy Equipment, Industrial Hygiene, Electrical, and Scaffolds/Aerial Work Platforms. • JANUARY POSITIVE OBSERVATIONS - Positive Findings identified through various inspections include Supervision/Organization, General Safety/Housekeeping, Fire Protection/Prevention, Maintenance and Protection of Traffic (MPT), Electrical, Stairs/Ladders, Tools (Hand & Power), Industrial Hygiene, Fall Protection, and Track Safety. • INVESTIGATIONS (SERIOUS INJURY): • None reported this month
+### [p024_c0004] MTA C&D STRATEGIC INITIATIVES:
+### [p024_c0005] • Occupational Health and Safety (OHS) Policy and Management System Rollout
+[p024_c0006] The updated Occupational Health and Safety (OHS) Policy and the OHS Management System (OHSMS) manual have been finalized and are ready for distribution. Over the next two months, OHS will hold sessions with senior leadership to review the manual, outline expectations, and define roles and responsibilities for implementation and ongoing oversight. These sessions will emphasize leadership accountability and the integration of safety into project planning. Following these meetings, virtual training sessions via Microsoft Teams will be scheduled to ensure all staff understand the system requirements and are equipped to implement and maintain the OHSMS effectively. The rollout aims to standardize safety practices across all projects and strengthen compliance with regulatory and internal standards.
+### [p024_c0007] • Deployment of Mobile Safety Inspection Application
+[p024_c0008] C&D Safety has begun rolling out its mobile safety inspection application for Project Management Consultants (PMC). The tool captures real-time inspection data, providing immediate visibility into field conditions and generating actionable insights. The application supports proactive risk identification and trend analysis, enabling teams to address hazards before they escalate. As PMC and Construction Management (CM) teams are onboarded, C&D Safety is delivering targeted training and technical support to ensure seamless integration into daily operations. This initiative enhances transparency, improves reporting accuracy, and strengthens alignment with C&D safety standards.
+### [p024_c0009] • Enhanced Safety Reporting and Oversight
+[p024_c0010] The monthly safety reporting process has been streamlined to deliver reports directly to Business Unit Leaders. This approach improves accountability and facilitates timely discussions about project-specific risks, inspection findings, and site-level observations. Safety Oversight will continue to engage with leadership quarterly to review broader performance trends, identify systemic issues, and develop strategies for continuous improvement. These enhancements aim to create a more data-driven safety culture and ensure leadership remains actively involved in risk management.
+### [p024_c0011] • Audit Process Improvements
+[p024_c0012] Following additional auditor training, the initial safety audit was completed, and key lessons learned have been incorporated to refine the audit methodology. These improvements strengthen alignment with the Safety Management System and enhance the consistency of audit outcomes. Additional audits are scheduled for the remainder of the quarter to reinforce accountability, validate corrective actions, and ensure uniform safety performance across all projects.
+### [p024_c0013] • Temporary Tie Bumper Directive – Contractor/Project Outreach
+[p024_c0014] Safety Oversight, in collaboration with Corporate Quality, has issued a revised Temporary Tie Bumper procedure and directive. This update provides clearer guidance and additional support to ensure consistent application in the field. The directive reinforces safety and quality expectations during ongoing operations and addresses previously identified gaps in implementation.
+[p024_c0015] _C&D SAFETY SUMMARY Page 2 of 2_
+[p024_c0016] _Master Page # 24 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 25
+
+### [p025_c0001] MTA Capital Program Commitments & Completions
+[p025_c0002] through January 31, 2026
+[p025_c0003] _Metropolitan Transportation Authority_
+[p025_c0004] _Master Page # 25 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 26
+
+### [p026_c0001] Metropolitan Transportation Authority
+### [p026_c0002] Capital Projects – Construction Commitments – January 2026
+### [p026_c0003] MTA-wide 2026 Construction Commitments
+> [p026_c0004] Category 1Q 2Q 3Q 4Q YTD 2026 Annual Goal $3,004 $3,120 $1,028 $5,394 $206 Current Annual Forecast $3,004 $3,120 $1,028 $5,394 $206 Actual/Forecast $3,004 $3,120 $1,028 $5,394 $206
+[p026_c0005] Annual Goals: Dollar and time-based programmatic milestones for the commitment of contracts established at the start of each year.
+[p026_c0006] Actuals: The value of the goals and any additional unplanned commitments as they are achieved during the year.
+[p026_c0007] Forecasts: The updated estimates by quarter for remaining goals as well as any unplanned commitments that might occur during the year.
+### [p026_c0008] Construction Commitments Summary
+[p026_c0009] In 2026, the MTA plans to make $12.545 billion worth of new construction commitments. Through January, the MTA has committed $206 million of its annual commitment goal, the majority of which came from NYCT's Mainline Track Replacement and Switches projects.
+[p026_c0010] The MTA will be tracking 37 "major" commitments across all agencies and business units, including: 19 "major" commitments at NYCT, 6 at LIRR, 4 at MNR, 3 at Major Projects and Expansion, and 5 at B&T. Collectively, these major commitments total nearly $10.463 billion (83% of the overall commitment goal's value). At the end of each quarter in 2026, any delays will be reported on the following pages.
+[p026_c0011] _Master Page # 26 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 27
+
+### [p027_c0001] NYCT/MTA Bus Capital Projects – Commitments – January 2026 – Budget Analysis and Schedule Variances
+### [p027_c0002] NYCT and MTA Bus Budget Analysis
+[p027_c0003]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2026 Annual Goal $1,696 $1,480 $482 $4,358 $206 2026 Actual/Forecast $1,696 $1,480 $482 $4,358 $206
+```
+> [p027_c0004] Bar Chart Data ($ in millions) Period 2026 Annual Goal (Blue) 2026 Actual/Forecast (Red) 1Q $1,696 $1,696 2Q $1,480 $1,480 3Q $482 $482 4Q $4,358 $4,358 YTD (3Q) $206 $206 YTD (4Q) $206 $206
+### [p027_c0005] Schedule Variances
+[p027_c0006] There are no major schedule slippages to report for NYCT and MTA Bus.
+[p027_c0007] _Master Page # 27 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 28
+
+### [p028_c0001] LIRR Capital Projects – Commitments – January 2026 – Budget Analysis and Schedule Variances
+### [p028_c0002] LIRR Budget Analysis
+[p028_c0003]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2026 Annual Goal $193 $633 $84 $294 $0 2026 Actual/Forecast $193 $633 $84 $294 $0
+```
+> [p028_c0004] LIRR Budget Analysis Data Quarter 2026 Annual Goal ($ in millions) 2026 Actual/Forecast ($ in millions) 1Q $193 $193 2Q $633 $633 3Q $84 $84 4Q $294 $294 YTD $0 $0
+### [p028_c0005] Schedule Variances
+[p028_c0006] There are no major schedule slippages to report for the Long Island Rail Road.
+[p028_c0007] _Master Page # 28 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 29
+
+### [p029_c0001] MTA Metropolitan Transportation Authority
+### [p029_c0002] MNR Capital Projects – Commitments – January 2026 – Budget Analysis and Schedule Variances
+### [p029_c0003] MNR Budget Analysis
+[p029_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2026 Annual Goal $161 $48 $382 $1 $0 2026 Actual/Forecast $161 $48 $382 $1 $0
+```
+> [p029_c0005] MNR Budget Analysis Data Quarter 2026 Annual Goal ($ in millions) 2026 Actual/Forecast ($ in millions) 1Q $161 $161 2Q $48 $48 3Q $382 $382 4Q $1 $1 YTD $0 $0
+### [p029_c0006] Schedule Variances
+[p029_c0007] There are no major schedule slippages to report for Metro-North Railroad.
+[p029_c0008] _Master Page # 29 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 30
+
+### [p030_c0001] MTA Major Projects & Expansion – Commitments – January 2026 – Budget Analysis and Schedule Variances
+### [p030_c0002] MTA Major Projects & Expansion Budget Analysis
+[p030_c0003]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2026 Annual Goal $954 $904 $0 $533 $0 2026 Actual/Forecast $954 $904 $0 $533 $0
+```
+> [p030_c0004] MTA Major Projects & Expansion Budget Analysis Data Quarter 2026 Annual Goal ($ in millions) 2026 Actual/Forecast ($ in millions) 1Q $954 $954 2Q $904 $904 3Q $0 $0 4Q $533 $533 YTD $0 $0
+### [p030_c0005] Schedule Variances
+[p030_c0006] There are no major schedule slippages to report for Major Projects & Expansion.
+[p030_c0007] _Master Page # 30 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 31
+
+### [p031_c0001] B&T Capital Projects – Commitments – January 2026 – Budget Analysis and Schedule Variances
+### [p031_c0002] B&T Budget Analysis
+[p031_c0003]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2026 Annual Goal $0 $54 $80 $208 $0 2026 Actual/Forecast $0 $54 $80 $208 $0
+```
+> [p031_c0004] B&T Budget Analysis Data Period 2026 Annual Goal ($ in millions) 2026 Actual/Forecast ($ in millions) 1Q $0 $0 2Q $54 $54 3Q $80 $80 4Q $208 $208 YTD $0 $0
+### [p031_c0005] Schedule Variances
+[p031_c0006] There are no major schedule slippages to report for the MTA Bridges & Tunnels.
+[p031_c0007] _Master Page # 31 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 32
+
+### [p032_c0001] Capital Projects – Construction Completions – January 2026
+[p032_c0002]
+
+```text
+Goal MTA-wide 2026 Major Completions Post 2026 Jan-26 Feb-26 Mar-26 Apr-26 May-26 Jun-26 Jul-26 Aug-26 Sep-26 Oct-26 Nov-26 Dec-26 2026 Total 36 0 Jan-26 0 Feb-26 0 Mar-26 4 4 Apr-26 1 1 May-26 4 4 Jun-26 2 2 Jul-26 3 3 Aug-26 0 Sep-26 3 3 Oct-26 6 6 Nov-26 1 1 Dec-26 12 12
+```
+[p032_c0003] BLUE = Actual/Forecast earlier than Goal
+[p032_c0004] GREEN = Actual/Forecast matches Goal
+[p032_c0005] AMBER = Actual/Forecast within 2 months of Goal
+[p032_c0006] RED = Actual/Forecast beyond 2 months of Goal
+### [p032_c0007] Construction Completions Summary
+[p032_c0008] In 2026, the MTA expects to complete 80% of its $7,135 billion worth of projects for a target completion goal of $5,708 billion. Through January, the MTA has completed $26 million of its annual goal, which is largely made up of MNR's 2020-24 Maintenance of Way Equipment and LIRR's Locust Manor Platform Support Column Renewal projects.
+[p032_c0009] In 2026, the MTA will be tracking 36 "major" completions, which include 22 for NYCT, 7 for LIRR, 4 for MNR, 1 for MTA Bus, and 2 for B&T. Currently all of these are on time. Collectively these major completions total $4,923 billion (approximately 70% of the annual completion plan's value).
+### [p032_c0010] Budget Analysis
+[p032_c0011]
+
+```text
+2026 Total Planned Completions $7,135 80% 2026 Target Completions Goal $5,708 100% Current Annual Forecast $7,135 100%
+```
+> [p032_c0012] YTD Actual/Forecast ($ in millions) Category Value ($ in millions) YTD Goal $26 YTD Actual/Forecast $26
+[p032_c0013] _Master Page # 32 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 33
+
+### [p033_c0001] MTA Metropolitan Transportation Authority
+### [p033_c0002] NYCT/MTA Bus Capital Projects – Completions – January 2026 – Budget Analysis and Schedule Variances
+### [p033_c0003] NYCT and MTA Bus Budget Analysis
+[p033_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2026 Annual Goal $814 $1,338 $898 $2,132 $0 2026 Actual/Forecast $814 $1,338 $898 $2,132 $0
+```
+[p033_c0005]
+
+```text
+2026 Goal (Rolling Stock) $258 $0 $0 $0 $0 2026 Actual/Forecast (Rolling Stock) $258 $0 $0 $0 $0
+```
+> [p033_c0006] 2026 Annual Goal and Actual/Forecast Data Period 2026 Annual Goal ($ in millions) 2026 Actual/Forecast ($ in millions) 1Q $814 $814 2Q $1,338 $1,338 3Q $898 $898 4Q $2,132 $2,132 YTD $0 $0
+### [p033_c0007] Schedule Variances
+[p033_c0008] There are no major schedule slippages to report for NYCT and MTA Bus.
+[p033_c0009] _Master Page # 33 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 34
+
+### [p034_c0001] Metropolitan Transportation Authority
+### [p034_c0002] LIRR Capital Projects – Completions – January 2026 – Budget Analysis and Schedule Variances
+### [p034_c0003] LIRR Budget Analysis
+[p034_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2026 Annual Goal $1 $107 $3 $910 2026 Actual/Forecast $1 $107 $3 $910
+```
+[p034_c0005]
+
+```text
+2026 Goal (Rolling Stock) $0 $0 $0 $0 2026 Actual/Forecast (Rolling Stock) $0 $0 $0 $0
+```
+> [p034_c0006] The bar chart displays the 2026 Annual Goal (blue bars) and 2026 Actual/Forecast (red bars) in millions of dollars for four quarters. The Y-axis ranges from $0 to $1,000 million. The data points are: 1Q (Goal: $1, Actual: $1), 2Q (Goal: $107, Actual: $107), 3Q (Goal: $3, Actual: $3), and 4Q (Goal: $910, Actual: $910). The YTD (Year-to-Date) total for both goal and actual is $910 million. Chart Data ($ in millions) Quarter 2026 Annual Goal 2026 Actual/Forecast 1Q $1 $1 2Q $107 $107 3Q $3 $3 4Q $910 $910 YTD $910 $910
+### [p034_c0007] Schedule Variances
+[p034_c0008] There are no major schedule slippages to report for the Long Island Rail Road.
+[p034_c0009] _Master Page # 34 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 35
+
+### [p035_c0001] MNR Capital Projects – Completions – January 2026 – Budget Analysis and Schedule Variances
+### [p035_c0002] MNR Budget Analysis
+[p035_c0003]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2026 Annual Goal $76 $77 $37 $397 $26 2026 Actual/Forecast $76 $77 $37 $397 $26
+```
+[p035_c0004]
+
+```text
+2026 Goal (Rolling Stock) $0 $0 $0 $0 $0 2026 Actual/Forecast (Rolling Stock) $0 $0 $0 $0 $0
+```
+> [p035_c0005] MNR Budget Analysis Data (in millions) Period 2026 Annual Goal 2026 Actual/Forecast 1Q $76 $76 2Q $77 $77 3Q $37 $37 4Q $397 $397 YTD $26 $26
+### [p035_c0006] Schedule Variances
+[p035_c0007] There are no major schedule slippages to report for Metro-North Railroad.
+[p035_c0008] _Master Page # 35 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 36
+
+### [p036_c0001] MTA Major Projects & Expansion – Completions – January 2026 – Budget Analysis and Schedule Variances
+### [p036_c0002] MTA Major Projects & Expansion Budget Analysis
+[p036_c0003]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2026 Annual Goal $15 $0 $0 $0 $0 2026 Actual/Forecast $15 $0 $0 $0 $0
+```
+> [p036_c0004] ■ 2026 Annual Goal ■ 2026 Actual/Forecast Chart Data ($ in millions) Quarter 2026 Annual Goal 2026 Actual/Forecast 1Q $15 $0 2Q $0 $0 3Q $0 $0 4Q $0 $0 YTD $0 $0
+### [p036_c0005] Schedule Variances
+[p036_c0006] There are no major schedule slippages to report for Major Projects & Expansion.
+[p036_c0007] _Master Page # 36 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 37
+
+### [p037_c0001] Metropolitan Transportation Authority
+### [p037_c0002] B&T Capital Projects – Completions – January 2026 – Budget Analysis and Schedule Variances
+### [p037_c0003] B&T Budget Analysis
+[p037_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2026 Annual Goal $0 $10 $203 $47 $0 2026 Actual/Forecast $0 $0 $10 $47 $0
+```
+> [p037_c0005] B&T Budget Analysis Data Quarter 2026 Annual Goal ($ in millions) 2026 Actual/Forecast ($ in millions) 1Q $0 $0 2Q $10 $0 3Q $203 $10 4Q $0 $47 YTD $0 $0
+### [p037_c0006] Schedule Variances
+[p037_c0007] There are no major schedule slippages to report for MTA Bridges and Tunnels.
+[p037_c0008] _Master Page # 37 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 38
+
+### [p038_c0001] Master Page # 38 of 49 - Capital Program Committee Meeting 2/23/2026
+[p038_c0002]
+
+```text
+2015-2019 Program Funding Plan Secured Current January Remainder Federal Formula $4,706 $- $- Federal Flex & Other (Incl HSR/Security/Core Capacity) 649 - 20 Federal New Start 1,400 - - State Assistance 9,118 - 871 City Capital Funds 2,092 - 27 City Non-Tax Levy Revenue Sources 600 - 600 MTA Bonds & PAYGO 11,203 - - Asset Sales/Leases 906 - 581 Other 267 - 197 B&T Bonds & PAYGO/Asset Sale 2,677 - - Total 33,619 - 2,295
+```
+[p038_c0003]
+
+```text
+2020-2024 Program Funding Plan Secured Current January Remainder Capital from Central Business District Tolling* $15,000 $- $14,001 Capital from New Revenue Sources* 10,000 - 2,749 MTA Bonds and PAYGO 6,041 - 4,501 Other Contribution 177 - 177 Federal Formula 9,984 - (632) State of New York 3,159 - 1,598 City of New York 3,052 - 21 Federal New Start (SAS Ph2) 2,005 - - Federal Flexible & Other 2,761 - 141 B&T Bonds & CBDT Infrastructure 3,253 - 1,692 Total 55,432 - 24,249
+```
+[p038_c0004]
+
+```text
+2025-2029 Program Funding Plan Secured Current January Remainder MTA Capital Lockbox^ $31,500 $- $31,500 Federal Formula, Flexible and Competitive Grants and Loans $14,000 - 12,102 MTA Bonds and PAYGO $9,700 - 9,700 State of New York $4,200 - 4,100 City of New York $3,000 5 2,920 a Additional MTA Self-Funding $3,000 - 3,000 B&T Bond & PAYGO $3,000 - 3,000 Total 68,400 5 66,322
+```
+[p038_c0005] a) Receipt of $5 million in NYC Revolving Funds for NYCT's 2025-2029 projects.
+[p038_c0006] Note: Federal funds are recognized as "Secured" after they are available to MTA pursuant to an executed grant agreement or a full funding grant agreement. Bond proceeds and State funding are recognized at the time of their receipt. City funds are recognized as "Secured" after they are available to MTA pursuant to an executed letter agreement. Amounts listed under "Secured" may not have been fully received by MTA as of the date of this report. * Proceeds from bonds and notes payable from the 2020-2024 MTA Capital Lockbox are recognized at the time of receipt. Capital Lockbox amounts applied directly to fund
+
+## Page 39
+
+### [p039_c0001] Capital Funding (January 2026) $ in millions
+> [p039_c0002] Capital Program Secured ($ in millions) Remainder ($ in millions) 2025-2029 $2,078 ~$1,000 2020-2024 $31,183 ~$1,000 2015-2019 $31,323 ~$1,000 1982-2014 $110,415 ~$1,000
+[p039_c0003] Federal funds are recognized as "Secured" after they are available to MTA pursuant to an executed grant agreement or a full funding grant agreement. Bond proceeds and State funding are recognized at the time of their receipt. City funds are recognized as "Secured" after they are available to MTA pursuant to an executed letter agreement. Amounts listed under "Secured" may not have been fully received by MTA as of the date of this report.
+[p039_c0004] _Master Page # 39 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 40
+
+### [p040_c0001] Construction & Development
+### [p040_c0002] Contracts Department
+[p040_c0003] Evan Eisland, Executive Vice President and General Counsel
+### [p040_c0004] PROCUREMENT PACKAGE FEBRUARY 2026
+[p040_c0005] _Master Page # 40 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 41
+
+### [p041_c0001] Construction & Development
+### [p041_c0002] PROCUREMENTS
+[p041_c0003] The Procurement Agenda this month includes 7 actions for a proposed expenditure of $ 53M.
+[p041_c0004] _Master Page # 41 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 42
+
+### [p042_c0001] Staff Summary
+### [p042_c0002] Page 1 of 1
+[p042_c0003]
+
+```text
+Subject Request Authorization for Several Procurement Actions Contracts Department Evan Eisland, Executive Vice President and General Counsel Board Action Order To Date Approval Info Other 1 Capital Program Committee 2/23/26 X 2 Board 2/25/26 X
+```
+[p042_c0004]
+
+```text
+Date: February 19, 2026 Internal Approvals Approval Approval X Deputy Chief Development Officer, Delivery X President X Deputy Chief Development Officer, Development X Executive Vice President & General Counsel
+```
+### [p042_c0005] Purpose
+[p042_c0006] To obtain the approval of the Board to award several procurement actions and to inform the Capital Program Committee of these procurement actions.
+### [p042_c0007] Discussion
+[p042_c0008] MTA Construction & Development proposes to award Competitive Procurements in the following categories:
+[p042_c0009]
+
+```text
+Schedules Requiring Majority Vote # of Actions $ Amount F. Personal Service Contracts 7 $ 53,049,893 SUBTOTAL 7 $ 53,049,893 TOTAL 7 $ 53,049,893
+```
+### [p042_c0010] Budget Impact
+[p042_c0011] The approval of these procurement actions will obligate capital and operating funds in the amounts listed. Funds are available in the capital program and operating budgets for this purpose.
+### [p042_c0012] Recommendation
+[p042_c0013] That the procurement actions be approved as proposed. (The items are included in the resolution of approval at the beginning of the Procurement Section.)
+[p042_c0014] _Master Page # 42 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 43
+
+### [p043_c0001] MTA Construction & Development
+### [p043_c0002] BOARD RESOLUTION
+[p043_c0003] WHEREAS , in accordance with Sections 559, 2879, 1209 and 1265-a of the Public Authorities Law and the All Agency General Contract Procurement Guidelines, the Board authorizes the award of certain non-competitive purchase and public works contracts, and the solicitation and award of request for proposals in regard to purchase and public work contracts; and
+[p043_c0004] WHEREAS , in accordance with the All Agency Service Contract Procurement Guidelines and the All Agency General Contract Procurement Guidelines, the Board authorizes the award of certain non-competitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts; and
+[p043_c0005] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Guidelines for Procurement of Services, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p043_c0006] NOW, the Board resolves as follows:
+- [p043_c0007] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract. 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals and authorizes the solicitation of such proposals. 3. As to each request for proposals (for purchase and public work contracts set forth in Schedule C for which a recommendation is made to award the contract), the Board authorizes the execution of said contract. 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein, and ratifies each action for which ratification is requested. 5. The Board authorizes the execution of each of the following for which Board authorization is required: i) the miscellaneous procurement contracts set forth in Schedule E; ii) the personal service contracts set forth in Schedule F; iii) the miscellaneous service contracts set forth in Schedule G; iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; v) the contract modifications to purchase and public work contracts set forth in Schedule I; vi) the modifications to miscellaneous procurement contracts set forth in Schedule J. 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p043_c0008] _Master Page # 43 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 44
+
+### [p044_c0001] Construction & Development
+[p044_c0002] FEBRUARY 2026
+### [p044_c0003] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p044_c0004] Procurements Requiring Majority Vote:
+### [p044_c0005] Schedule F. Personal Service Contracts
+[p044_c0006] (Staff Summaries required for all items greater than $1M.)
+[p044_c0007] 1-6. Various Contracts Nos. D81465 – D81470 $50,000,000 Staff Summary Attached (aggregate)
+- [p044_c0008] a. Battelle Memorial Institute b. Egis BLN, USA c. TUV Rheinland of North America, Inc.
+[p044_c0009] MTA Construction and Development requests Board approval to award six publicly advertised and competitively solicited indefinite quantity contracts to provide independent safety assessor services to support new technology and relay-based train control and signaling projects.
+[p044_c0010] 7. FPM Engineering & Geology, PC $3,049,893 Staff Summary Attached Contract No. D81725
+[p044_c0011] MTA Construction and Development requests Board approval to award a publicly advertised and competitively solicited contract to provide as-needed hydrology services.
+[p044_c0012] _Master Page # 44 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 45
+
+### [p045_c0001] Staff Summary
+### [p045_c0002] Schedule F: Personal Service Contract
+### [p045_c0003] Page 1 of 3
+[p045_c0004]
+
+```text
+Item Number 1-6 Department, Department Head Name: Delivery, Gregoire Sulmont, Senior Vice President, Signals and Train Control Board Reviews Order To Date Approval Info Other 1 Capital Program Committee 02/23/26 X 2 Board 02/25/26 X Internal Approvals Order Approval Order Approval X Deputy Chief, Development X Executive Vice President & General Counsel X Deputy Chief, Delivery X President
+```
+[p045_c0005]
+
+```text
+SUMMARY INFORMATION Vendor Name Contract Number Various D81465 – D81470 Description Indefinite Quantity Personnel Services for Independent Safety Assessor Support of New Technology and Relay-Based Train Control & Signaling Projects Total Amount $50,000,000 (aggregate budget) Contract Term (including Options, if any) 60 Months Option(s) included in Total Amount? Yes No Renewal? Yes No Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Funding Source Operating Capital Federal Other:
+```
+### [p045_c0006] ACTION/RECOMMENDATION
+[p045_c0007] MTA Construction and Development (“C&D”) requests Board approval to award one federally funded and one state funded indefinite quantity contract to each of Battelle Memorial Institute (“Battelle”), Egis BLN, USA (“Egis”) and TUV Rheinland of North America, Inc. (“TUV”) to provide independent safety assessor services (the “Contracts”). The Contracts are zero dollar based, with no minimum guarantee of any assignment, and will establish a pool of pre-qualified teams that will be able to compete for task orders. The Contracts are for a period of 60 months and will have a total aggregate budget of $50,000,000.
+### [p045_c0008] DISCUSSION
+[p045_c0009] Consistent with rail safety standards established by the Federal Railroad Administration, MTA and New York City Transit (“NYCT”) require third-party independent safety assessors to verify that all safety related requirements are met in its signal modernization program. An independent safety assessor conducts independent reviews to ensure that safety related requirements are being met in each phase of the work, including design, development, integration and installation, testing and commissioning of signaling and train control systems.
+[p045_c0010] A Request for Proposals (“RFP”) for the Contracts was publicly advertised resulting in the submission of proposals from five firms:
+- [p045_c0011] • Battelle; • Egis; • TUV • EXP Services P.C. (“EXP”); and • Ricardo LLC (“Ricardo”).
+[p045_c0012] The proposing firms were first considered for award of the federally funded contracts. Selection for the federally funded contracts was determined via a one-step qualifications-based procurement process required by the Brooks Act for federally
+[p045_c0013] _Master Page # 45 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 46
+
+### [p046_c0001] MTA Construction & Development
+[p046_c0002] funded engineering services contracts. Under the Brooks Act, contracts are negotiated with the firm(s) that are determined to be the most technically qualified by the selection committee based on pre-established selection criteria. Price proposals are not opened and are not considered in the ranking of the proposers based on technical merit. The proposals were evaluated and scored by a selection committee, consisting of representatives from NYCT Department of Subways and Office of System Safety and C&D Development, Delivery and Contracts, utilizing the following selection criteria: Experience and Availability of Project Team/Key Personnel, Management Approach, Technical Work Proposed and Plan of Approach, and Qualifications of Firms and Experience in Relevant Areas.
+[p046_c0003] After reviewing technical proposals, the selection committee voted to shortlist four of the five firms for oral presentations. EXP was not shortlisted for oral presentations because its proposal relied too heavily on subcontractors rather than in-house technical expertise. After oral presentations, Ricardo was also eliminated from further consideration because it did not adequately demonstrate its understanding of, or ability to meet, established safety protocols for substantiating safety findings that were required by the Contract. Battelle, Egis and TUV demonstrated significant experience with the work to be performed under these Contracts and highlighted prior experience and management skills to support all phases of the work. As up to three federal awards were planned under this RFP, after oral presentations, the selection committee unanimously recommended all three remaining firms for negotiations.
+[p046_c0004] Negotiations were conducted with the three shortlisted firms. The RFP contained a list of titles for service providers for the tasks to be administered under the Contracts. In addition to their technical proposals for performing the work, the proposers were asked to provide average labor rates for the life of the Contract for each title listed and negotiations focused on the labor rates for certain titles. In addition, overhead rates were reviewed and adjusted pursuant to MTA Audit recommendations. After negotiations concluded, Best and Final Offers ("BAFO") were received from all three firms establishing average labor rates and overhead for tasks performed under the Contracts. The BAFOs were determined to be fair and reasonable. The selection committee reviewed the BAFOs and unanimously voted to recommend Battelle, Egis and TUV for award.
+[p046_c0005] The proposing firms were then considered for award of the state funded contracts. Having already examined technical merit under the Federal Process, and with the additional consideration of state requirements for Diversity Practices, the selection committee, for the reasons discussed above, recommended Battelle, Egis, and TUV for negotiations.
+[p046_c0006] Negotiations were conducted with Battelle, Egis, and TUV, utilizing the same titles and labor rates as in the federal contract negotiations. The overhead rates, which are handled differently under federal and state contracts, were reviewed and adjusted pursuant to MTA Audit recommendations. After negotiations concluded, BAFOs were submitted by all three firms for the state contract series reflecting similar rate reductions achieved for the federally funded contracts. The BAFOs were determined to be fair and reasonable. The selection committee reviewed the BAFOs and unanimously voted to recommend Battelle, Egis and TUV for award.
+[p046_c0007] In connection with the review of Battelle, Egis, and TUV's responsibility pursuant to the All-Agency Responsibility Guidelines, no significant adverse information was discovered and Battelle, Egis, and TUV are determined to be responsible vendors.
+[p046_c0008] Battelle and Egis were found to be financially qualified to perform the work, A financial analysis were also performed on TUV, and based on the criteria used, we are of the opinion that TUV Rheinland of North America, Inc. is not financially qualified to perform this contract. However, since the proposer will not be paid until services are provided and invoices are reviewed by the MTA C&D Program Director for accuracy, a business decision to award the contract is recommended.
+### [p046_c0009] M/W/DBE INFORMATION
+[p046_c0010] Pursuant to the United States Department of Transportation ("U.S. DOT") Interim Final Rule ("IFR") issued on October 3, 2025, implementing changes to its Disadvantaged Business Enterprise ("DBE") Program regulations, MTA is updating its DBE program. Specifically, in accordance with the IFR, Unified Certification Programs ("UCP") are required to be updated and each U.S. DOT federal financial recipient is required to re-certify all firms that apply for DBE status, re-assess the federal financial recipient's overall DBE goal based on the re-certified pool of DBEs, and, based on the re-assessment of its overall DBE goal, set any contract-specific goals. Until completion of these steps, the MTA will pause enforcement of the DBE participation provisions in the federally funded contracts and the DBE participation goal for the federally funded contracts is 0%.
+[p046_c0011] _Master Page # 46 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 47
+
+### [p047_c0001] The logo for MTA Construction & Development, featuring a blue circle with the white letters "MTA" and the text "Construction & Development" in blue to its right.
+[p047_c0002] For the State Contracts, DDCR has established a 7% Minority-owned Business Enterprise, 4% Women-owned Business Enterprise, and 2% Service-Disabled Veteran Owned Business goals. Battelle, Egis and TUV are committed to meeting the goals requirements. Battelle, Egis and TUV have achieved their DBE/MBE/WBE/SDVOB goals on recently completed MTA contracts.
+### [p047_c0003] IMPACT ON FUNDING
+[p047_c0004] Funding for the Contracts is included in the 2025-2029 Capital Program. These Contracts are all “zero-dollar” based, and therefore, funds will be provided on a task-order basis by the project requiring the services.
+### [p047_c0005] ALTERNATIVES
+[p047_c0006] None recommended. MTA lacks available in-house technical personnel to perform the scope of work associated with these Contracts.
+[p047_c0007] _Master Page # 47 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 48
+
+### [p048_c0001] Staff Summary
+### [p048_c0002] Schedule F: Personal Service Contracts
+[p048_c0003] Page 1 of 2
+[p048_c0004]
+
+```text
+Item Number 7 Department, Department Head Name: Delivery, Mark Roche, Deputy Chief Development Officer Board Reviews Order To Date Approval Info Other 1 Capital Program Committee 02/23/26 X 2 Board 02/25/26 X Internal Approvals Order Approval Order Approval X Deputy Chief, Development X Executive Vice President & General Counsel X Deputy Chief, Delivery X President
+```
+[p048_c0005]
+
+```text
+SUMMARY INFORMATION Vendor Name Contract Number FPM Engineering & Geology, PC D81725 Description As Needed Hydrology Services Total Amount $3,049,893 Contract Term (including Options, if any) 60 months Option(s) included in Total Amount? Yes No Renewal? Yes No Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Funding Source Operating Capital Federal Other:
+```
+### [p048_c0006] ACTION/RECOMMENDATION
+[p048_c0007] MTA Construction and Development (“C&D”) requests Board approval to award a publicly advertised and competitively solicited contract for as-needed hydrology services (the “Contract”) to FPM Engineering & Geology, PC (“FPM”) in the not-to-exceed amount of $3,049,893 and for a duration of 60-months.
+### [p048_c0008] DISCUSSION
+[p048_c0009] Under the Contract, FPM will provide hydrology services in connection with MTA capital projects on an as-needed basis. FPM will be assigned various work orders to analyze hydrological information (including materials and reports related to groundwater and/or leaks in MTA infrastructure) and make recommendations to resolve water-related issues, including leak mitigation and feasible water sources for new well installations. Additionally, FPM will prepare applications for permits and environmental assessments; and provide assistance with claims or disputes related to hydrological conditions.
+[p048_c0010] A Request for Proposals (“RFP”) was publicly advertised and eight firms submitted proposals in response to the RFP:
+- [p048_c0011] • FPM • Dewberry Engineers Inc (“Dewberry”) • Koysman Engineering PLLC (“Koysman”) • POZ Engineering & Environmental Consulting, PC (“POZ”) • Stantec Consulting Services, Inc (“Stantec”) • STV Incorporated (“STV”) • VHB Engineering, Surveying, Landscape Architecture and Geology, PC (“VHB”) • WSP USA Inc (“WSP”)
+[p048_c0012] The selection committee consisting of representatives from C&D Delivery, Development, and Contracts, evaluated the proposals utilizing the following pre-established selection criteria: experience of project team/key personnel and availability of resources and current workload of proposer and proposed subconsultants; qualification of firm(s) and experience in relevant areas; plan of approach; management approach; quality assurance plan; and diversity practices; proposed pricing for the work; and other relevant matters. After reviewing technical proposals, the selection committee determined that Koysman, POZ and VHB had not demonstrated the requisite technical qualifications or experience and removed them from
+[p048_c0013] _Master Page # 48 of 49 - Capital Program Committee Meeting 2/23/2026_
+
+## Page 49
+
+[p049_c0001] further consideration. The selection committee shortlisted all five remaining firms for oral presentations. At the oral presentations, Dewberry, Stantec, STV, and WSP demonstrated strength in a number of areas, however, their teams did not demonstrate as strong a command of all of the areas of expertise anticipated to be called upon during the term of this Contract as did the FPM team.
+[p049_c0002] FPM proposed a highly qualified team and a strong plan of approach, including the ability to promptly ramp up to support urgent projects with short notice as well as manage multiple on-call projects concurrently. As the incumbent, FPM and its proposed team have extensive experience performing similar work on projects of comparable scope, magnitude, and complexity to those anticipated under this Contract. In addition to its experience successfully completing assignments, FPM has extensive experience performing hydrological studies within New York State and for transit infrastructure.
+[p049_c0003] The selection committee then reviewed the price proposals which, for this as-needed contract, were based on the rates provided by the proposers for the positions required and the estimated hours provided in the RFP. The price proposals were as follows:
+[p049_c0004]
+
+```text
+FPM $3,045,165 WSP $3,233,094 STV $3,400,123 Stantec $3,466,404 Dewberry $3,715,721
+```
+[p049_c0005] Because FPM was found to be both the highest technically ranked and offered the most competitive price, the Selection Committee determined to negotiate with FPM. Negotiations focused on proposed hourly rates and other direct costs. Rates for certain titles (scheduler and estimator) increased to better reflect the expertise needed for this Contract. Overhead rates were reviewed and adjusted pursuant to MTA Audit recommendations. After the negotiations concluded, FPM submitted a Best and Final Offer ("BAFO") in the not-to-exceed amount of $3,049,892.49. The BAFO was determined to be fair and reasonable. The selection committee reviewed the BAFO and unanimously voted to recommend FPM for award.
+[p049_c0006] In connection with the review of FPM's responsibility pursuant to the All-Agency Responsibility Guidelines, no significant adverse information was discovered and FPM is determined to be a responsible vendor.
+### [p049_c0007] M/W/DBE INFORMATION
+[p049_c0008] Due to the highly specialized nature of the work and limited subcontracting opportunities, the MTA Department of Diversity and Civil Rights has established 0% Minority-owned Business Enterprise, 0% Women-owned Business Enterprise and 0% Service-Disabled Veteran Owned Business goals for this Contract. FPM has not recently completed any MTA contract with goals; therefore, no assessment of its MBE/WBE/SDVOB performance can be determined at this time.
+### [p049_c0009] IMPACT ON FUNDING
+[p049_c0010] Funding for the Contract is included in the MTA's 2025-2029 Capital Program.
+### [p049_c0011] ALTERNATIVES
+[p049_c0012] None recommended. Currently, MTA lacks available in-house technical personnel to perform the scope of work associated with this Contract.
+[p049_c0013] _Master Page # 49 of 49 - Capital Program Committee Meeting 2/23/2026_

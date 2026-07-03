@@ -1,0 +1,152 @@
+{
+  "id": "route-local-id-collision-guardrail",
+  "date": "2026-07-01",
+  "mode": "codex_deterministic_post_ingest_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "pioneer",
+    "openai",
+    "deepseek",
+    "vllm",
+    "chandra"
+  ],
+  "subagent_source": {
+    "agent_id": "019f1fe0-60d5-72e2-8a62-7d2e7c99878c",
+    "lane": "read_only_sparse_sbs_route_index_audit",
+    "finding": "brt_route_index reused source-local route_34th_st_sbs for both M14/14th Street SBS and 34th Street SBS, allowing local endpoint resolution to choose the wrong route."
+  },
+  "bucket": {
+    "name": "route_identity_endpoint_guardrail",
+    "candidate": "brt_route_index route_34th_st_sbs source-local id collision",
+    "before_ambiguous_accepted_relations": [
+      "relation_14th_st_launch",
+      "relation_14th_st_project",
+      "relation_34th_st_capital_event",
+      "relation_34th_st_offboard_fare_event"
+    ],
+    "before_false_endpoint_examples": [
+      {
+        "relation": "relation_14th_st_launch",
+        "old_subject_id": "route_34th-st-sbs",
+        "intended_subject_id": "route_m14-ad-sbs"
+      },
+      {
+        "relation": "relation_14th_st_project",
+        "old_subject_id": "route_34th-st-sbs",
+        "intended_subject_id": "route_m14-ad-sbs"
+      }
+    ]
+  },
+  "changes": {
+    "code_guardrail": {
+      "file": "packages/pipeline/src/materialize/materialize.ts",
+      "summary": "Materialization now treats a source-local observation id as ambiguous when it maps to multiple distinct record identities in the same source. Relations that provide only that ambiguous local endpoint are filtered before canonicalization; relations with explicit canonical subject_id/object_id continue to materialize."
+    },
+    "regression_test": {
+      "file": "packages/pipeline/test/materialize/materialize.test.ts",
+      "test": "does not materialize local-endpoint relations when a source local id identifies multiple records"
+    },
+    "replacement_submissions": {
+      "file": "data/submissions/2026-07-01_codex_route_local_id_collision_explicit_relations.jsonl",
+      "count": 4,
+      "submissions": [
+        {
+          "submission_id": "sub_a75f5c10f9a8ab31",
+          "relation": "relation_14th_st_launch_explicit_endpoint",
+          "subject_id": "route_m14-ad-sbs",
+          "object": "event_14th_st_sbs_start"
+        },
+        {
+          "submission_id": "sub_0008b69c8fa947ba",
+          "relation": "relation_14th_st_project_explicit_endpoint",
+          "subject_id": "route_m14-ad-sbs",
+          "object": "project_14th_st_transit_truck_priority"
+        },
+        {
+          "submission_id": "sub_cb2d7b0192c48b31",
+          "relation": "relation_34th_st_capital_event_explicit_endpoint",
+          "subject_id": "route_34th-st-sbs",
+          "object": "event_34th_st_sbs_capital_start"
+        },
+        {
+          "submission_id": "sub_8a957afa1e7d01dc",
+          "relation": "relation_34th_st_offboard_fare_event_explicit_endpoint",
+          "subject_id": "route_34th-st-sbs",
+          "object": "event_34th_st_sbs_offboard_fare_start"
+        }
+      ]
+    }
+  },
+  "after": {
+    "validation": {
+      "submissions": 98109,
+      "canonical_records": 84028,
+      "wiki_pages": 7333,
+      "issues": 0
+    },
+    "materialize": {
+      "materialized_submissions": 93081,
+      "total_submissions": 98109,
+      "retired_submissions_skipped": 246,
+      "canonical_records": 84028,
+      "pages_reported_by_materialize": 7337,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "old_ambiguous_relations_present": false,
+    "explicit_replacements_present": true,
+    "replacement_endpoint_proof": {
+      "relation_14th_st_launch_explicit_endpoint": {
+        "subject_id": "route_m14-ad-sbs",
+        "object_id": "event_14th-st-sbs-start"
+      },
+      "relation_14th_st_project_explicit_endpoint": {
+        "subject_id": "route_m14-ad-sbs",
+        "object_id": "project_14th-street-transit-truck-priority-pilot"
+      },
+      "relation_34th_st_capital_event_explicit_endpoint": {
+        "subject_id": "route_34th-st-sbs",
+        "object_id": "event_34th-st-sbs-capital-start"
+      },
+      "relation_34th_st_offboard_fare_event_explicit_endpoint": {
+        "subject_id": "route_34th-st-sbs",
+        "object_id": "event_34th-st-sbs-offboard-fare-start"
+      }
+    }
+  },
+  "commands": [
+    "bun test packages/pipeline/test/materialize/materialize.test.ts",
+    "bun run typecheck",
+    "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "sqlite3 data/canonical.db 'PRAGMA quick_check;'"
+  ],
+  "verification": {
+    "focused_tests": {
+      "materialize_test_pass": 57,
+      "expect_calls": 867
+    },
+    "typecheck": "passed",
+    "validate_issues": 0,
+    "sqlite_quick_check": "ok"
+  },
+  "unresolved": [
+    "The sparse SBS route-index records remain true_route records with weak identity fields; no route_id inference was added for Fordham/Pelham, Hylan, Woodhaven/Cross Bay, or 34th Street.",
+    "A separate identity-review regression for variant-only SBS advisory groups remains a next lane if noisy route candidate clusters recur."
+  ],
+  "next_lanes": [
+    {
+      "lane": "route_identity_review_regression",
+      "candidate": "ensure sparse SBS records without route_id do not create variant-only duplicate groups"
+    },
+    {
+      "lane": "high_denorm_route_hotspots",
+      "candidate": "Q52/Q53, Utica, Webster, Bx12+, B44, M34, 125th-LaGuardia SBS"
+    }
+  ]
+}

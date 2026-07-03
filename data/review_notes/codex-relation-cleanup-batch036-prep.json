@@ -1,0 +1,269 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch036-prep",
+  "created_at": "2026-06-23T03:25:00Z",
+  "author": "codex",
+  "scope": "relation endpoint-shape cleanup prep only; durable retire+replace mechanism planned but not applied",
+  "batch": "batch036",
+  "source_recommendation": "data/review_notes/codex-relation-rule-or-data-next12-prep.json",
+  "run_id_for_replacements": "2026-06-23_codex_relation_cleanup_batch036",
+  "submitted_at_for_dry_run": "2026-06-23T03:25:00Z",
+  "durable_mechanism_planned_not_applied": {
+    "retirements_target": "data/submission-overrides/retired.json",
+    "replacement_journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch036.jsonl",
+    "applied": false
+  },
+  "bucket": {
+    "name": "has_metric source-to-metric-claim BudgetWatch rows",
+    "original_relation_kind": "has_metric",
+    "original_endpoint_shape": "source -> metric_claim",
+    "replacement_relation_kind": "includes",
+    "replacement_endpoint_shape": "source -> metric_claim",
+    "prepared_count": 2,
+    "why_coherent": "The next12 recommendation identifies the two remaining has_metric source->metric_claim rows. Current endpoint-shape rules intentionally reserve has_metric for project, route, corridor, entity, event, or claim subjects, while these rows express that the BudgetWatch source document contains reported metric claims. The batch022 precedent used includes source->metric_claim to preserve source-document containment without widening has_metric."
+  },
+  "checkpoint_context": {
+    "method": "Used the concrete next12 recommendation, then performed read-only canonical/source/evidence checks and excluded retired submissions, prior relation cleanup prep originals through batch035, and missing-target repair work. Did not run CLI validate, materialize, export-jsonl, DB repair/publish, or provider-backed commands.",
+    "next12_recommendation": {
+      "bucket": "has_metric source->metric_claim",
+      "representative_record_ids": [
+        "relation_budgetwatch-has-metric-oper-rev",
+        "relation_budgetwatch-has-metric-overtime"
+      ],
+      "retire_original_submissions": [
+        "sub_1e3da7df51269b6f",
+        "sub_3bd1215592595d96"
+      ],
+      "recommended_replacement": "includes source->metric_claim using source_local_observation_id source_budgetwatch_april2022 and the same metric object local ids/evidence refs"
+    },
+    "endpoint_shape_probe": {
+      "has_metric source->metric_claim": "Relation kind has_metric expects project|route|corridor|entity|event|claim -> metric_claim, got source -> metric_claim.",
+      "includes source->metric_claim": "accepted",
+      "related_to source->metric_claim": "accepted"
+    }
+  },
+  "exclusions_and_guards": {
+    "excluded_batches": [
+      "batch017",
+      "batch018",
+      "batch019",
+      "batch020",
+      "batch021",
+      "batch022",
+      "batch023",
+      "batch024",
+      "batch025",
+      "batch026",
+      "batch027",
+      "batch028",
+      "batch029",
+      "batch030",
+      "batch031",
+      "batch032",
+      "batch033",
+      "batch034",
+      "batch035"
+    ],
+    "missing_target_repair_excluded": true,
+    "retired_json_not_edited": true,
+    "submission_journals_not_edited": true,
+    "generated_outputs_not_edited": true,
+    "db_not_edited": true,
+    "log_not_edited": true,
+    "manifest_merges_retired_not_edited": true,
+    "wiki_source_pages_not_edited": true,
+    "original_submission_guard": {
+      "retired_hits": [],
+      "prior_relation_batch_submission_hits": [],
+      "prior_relation_batch_record_hits": []
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": [],
+      "prior_review_note_submission_id_hits": [],
+      "prior_review_note_local_observation_id_hits": []
+    }
+  },
+  "local_validation": {
+    "tooling": "createSubmissionEntry dry run for replacement tool_args plus relationEndpointIssues using known local ids source_budgetwatch_april2022, metric_operating_revenue_ytd_mar2022, and metric_total_overtime_ytd_mar2022; relationEndpointShapeIssue checked for includes source->metric_claim.",
+    "summary": {
+      "prepared_count": 2,
+      "retire_replace_count": 2,
+      "retire_only_count": 0,
+      "accepted_replacement_count": 2,
+      "issue_count": 0,
+      "warning_count": 0,
+      "endpoint_shape_issue_count_after_replacement": 0
+    }
+  },
+  "command_evidence": [
+    {
+      "command": "test -f data/review_notes/codex-relation-cleanup-batch036-prep.json; echo $?",
+      "result": "1 before writing; artifact did not already exist."
+    },
+    {
+      "command": "sed -n '1,260p' data/review_notes/codex-relation-rule-or-data-next12-prep.json",
+      "result": "Confirmed next12 recommends retiring sub_1e3da7df51269b6f and sub_3bd1215592595d96 and replacing with includes source->metric_claim using source_budgetwatch_april2022 and the same metric object local ids/evidence refs."
+    },
+    {
+      "command": "canonical JSONL inspection for relation_budgetwatch-has-metric-oper-rev, relation_budgetwatch-has-metric-overtime, source_meeting-doc-85751, metric_operating-revenue-ytd-mar2022, and metric_total-overtime-ytd-mar2022",
+      "result": "Confirmed both originals are current canonical has_metric source->metric_claim rows and confirmed endpoint local observation ids."
+    },
+    {
+      "command": "rg -n '\"block_id\":\"p001_c0004\"|\"block_id\":\"p003_c0004\"' raw/sources/meeting_doc_85751/blocks.jsonl",
+      "result": "Confirmed p001_c0004 contains the operating revenue table row and p003_c0004 contains the total overtime table row."
+    },
+    {
+      "command": "createSubmissionEntry dry run for two includes source->metric_claim replacements",
+      "result": "Both replacement entries accepted with no issues, no warnings, no relationEndpointIssues, and no endpoint-shape issue."
+    },
+    {
+      "command": "collision guard script over retired.json, data/submissions, and prior prep artifacts through batch035",
+      "result": "No original retired/prior hits and no replacement submission id or local observation id collisions."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts export-jsonl",
+    "provider-backed ingest/write/ask commands",
+    "database repair or publish commands"
+  ],
+  "prepared": [
+    {
+      "retire": {
+        "submission_id": "sub_1e3da7df51269b6f",
+        "original_record_id": "relation_budgetwatch-has-metric-oper-rev",
+        "original_local_observation_id": "relation_budgetwatch_has_metric_oper_rev",
+        "malformed_shape": "has_metric source -> metric_claim",
+        "original_relation_kind": "has_metric",
+        "original_subject_id": "source_meeting-doc-85751",
+        "original_subject_local_observation_id": "source_budgetwatch_april2022",
+        "original_subject_name": "BudgetWatch April 2022 Flash Report",
+        "original_object_id": "metric_operating-revenue-ytd-mar2022",
+        "original_object_local_observation_id": "metric_operating_revenue_ytd_mar2022",
+        "original_object_name": "Operating Revenue YTD March 2022",
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_85751",
+            "evidence_id": "meeting_doc_85751#p001_c0004",
+            "source_path": "raw/sources/meeting_doc_85751/blocks.jsonl",
+            "page_number": 1,
+            "block_id": "p001_c0004",
+            "text_sha256": "sha256:427a6c6951c87acc24216a50b39a19a4dec7ba40be829649404a84136f938fa6",
+            "text_source": "raw_text",
+            "source_quote": "Operating Revenue 1 $1,480.9 $1,679.9 ($199.0) -11.8%"
+          }
+        ],
+        "reason": "The original relation uses has_metric with a source subject. The cited source table supports source-document containment of the operating revenue metric claim, not domain ownership/context under has_metric."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_2fdf9cd6cb93553b",
+        "proposed_relation_kind": "includes",
+        "proposed_endpoint_shape": "source -> metric_claim",
+        "tool_args": {
+          "source_id": "meeting_doc_85751",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch036_budgetwatch_includes_operating_revenue_metric",
+          "label": "BudgetWatch includes operating revenue metric",
+          "raw_text": "Operating Revenue $1,480.9 $1,679.9 ($199.0) -11.8%.",
+          "payload": {
+            "relation_kind": "includes",
+            "subject_local_observation_id": "source_budgetwatch_april2022",
+            "object_local_observation_id": "metric_operating_revenue_ytd_mar2022",
+            "description": "Replacement for malformed has_metric source -> metric_claim relation; the BudgetWatch source document includes the operating revenue metric claim.",
+            "relation_family": "other"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_85751",
+              "evidence_id": "meeting_doc_85751#p001_c0004",
+              "source_path": "raw/sources/meeting_doc_85751/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0004",
+              "text_sha256": "sha256:427a6c6951c87acc24216a50b39a19a4dec7ba40be829649404a84136f938fa6",
+              "text_source": "raw_text",
+              "role": "source_metric_containment",
+              "source_quote": "Operating Revenue 1 $1,480.9 $1,679.9 ($199.0) -11.8%"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue_after_replacement": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_3bd1215592595d96",
+        "original_record_id": "relation_budgetwatch-has-metric-overtime",
+        "original_local_observation_id": "relation_budgetwatch_has_metric_overtime",
+        "malformed_shape": "has_metric source -> metric_claim",
+        "original_relation_kind": "has_metric",
+        "original_subject_id": "source_meeting-doc-85751",
+        "original_subject_local_observation_id": "source_budgetwatch_april2022",
+        "original_subject_name": "BudgetWatch April 2022 Flash Report",
+        "original_object_id": "metric_total-overtime-ytd-mar2022",
+        "original_object_local_observation_id": "metric_total_overtime_ytd_mar2022",
+        "original_object_name": "Total MTA Overtime YTD March 2022",
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_85751",
+            "evidence_id": "meeting_doc_85751#p003_c0004",
+            "source_path": "raw/sources/meeting_doc_85751/blocks.jsonl",
+            "page_number": 3,
+            "block_id": "p003_c0004",
+            "text_sha256": "sha256:7b7e9a0c643421e86ef14fae798f9719c64c600d7cd52345e6694cd966fe82be",
+            "text_source": "raw_text",
+            "source_quote": "Total $274.6 $214.9 ($59.8) -27.8%"
+          }
+        ],
+        "reason": "The original relation uses has_metric with a source subject. The cited source table supports source-document containment of the total overtime metric claim, not domain ownership/context under has_metric."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_e67708cfa9781ab1",
+        "proposed_relation_kind": "includes",
+        "proposed_endpoint_shape": "source -> metric_claim",
+        "tool_args": {
+          "source_id": "meeting_doc_85751",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch036_budgetwatch_includes_overtime_metric",
+          "label": "BudgetWatch includes overtime metric",
+          "raw_text": "Total $274.6 $214.9 ($59.8) -27.8%.",
+          "payload": {
+            "relation_kind": "includes",
+            "subject_local_observation_id": "source_budgetwatch_april2022",
+            "object_local_observation_id": "metric_total_overtime_ytd_mar2022",
+            "description": "Replacement for malformed has_metric source -> metric_claim relation; the BudgetWatch source document includes the total overtime metric claim.",
+            "relation_family": "other"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_85751",
+              "evidence_id": "meeting_doc_85751#p003_c0004",
+              "source_path": "raw/sources/meeting_doc_85751/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0004",
+              "text_sha256": "sha256:7b7e9a0c643421e86ef14fae798f9719c64c600d7cd52345e6694cd966fe82be",
+              "text_source": "raw_text",
+              "role": "source_metric_containment",
+              "source_quote": "Total $274.6 $214.9 ($59.8) -27.8%"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue_after_replacement": null
+        },
+        "confidence": "high"
+      }
+    }
+  ]
+}

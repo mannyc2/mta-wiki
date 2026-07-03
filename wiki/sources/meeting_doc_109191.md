@@ -1,0 +1,673 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-109191"
+record_kind: "source"
+display_name: "Safety Committee Meeting April 2023"
+source_id: "meeting_doc_109191"
+source_ids:
+  - "meeting_doc_109191"
+local_observation_id: "source_meeting_doc_109191"
+local_observation_ids:
+  - "source_meeting_doc_109191"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T20:14:50.326Z"
+submission_ids:
+  - "sub_14b8c8315c66e879"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting book"
+  date: "2023-04-24"
+  date_normalized:
+    confidence: "submitted_iso"
+    normalized_date: "2023-04-24"
+    precision: "day"
+    raw_text: "2023-04-24"
+  date_text: "Monday, 4/24/2023"
+  date_text_normalized:
+    confidence: "unparsed"
+    precision: "unknown"
+    raw_text: "Monday, 4/24/2023"
+  description: "Safety/Security Committee Meeting book including minutes from February 21, 2023 meeting, work plan, safety metrics, security metrics, agency safety program updates, and CCTV program update"
+  published_date_normalized: "2023-04-24"
+  published_date_precision: "day"
+  publisher: "Metropolitan Transportation Authority"
+  title: "Safety Committee Meeting April 2023"
+evidence_refs:
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_109191#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_109191"
+    source_path: "raw/sources/meeting_doc_109191/blocks.jsonl"
+    text_sha256: "sha256:ec4da331c09e2061578a1964b23a90bdb7edf5115e31a65c01ad04c21487f1e4"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0001"
+    evidence_id: "meeting_doc_109191#p002_c0001"
+    page_number: 2
+    source_id: "meeting_doc_109191"
+    source_path: "raw/sources/meeting_doc_109191/blocks.jsonl"
+    text_sha256: "sha256:0b4bd4da6f43fba94de12bc56da96f3c0c3ab4dddd48a979171b89a94a7fb79c"
+    text_source: "raw_text"
+---
+
+# Safety Committee Book
+
+source_id: meeting_doc_109191
+citation: cite block ids exactly as shown in square brackets
+document: 436 block(s)
+
+## Page 1
+
+> [p001_c0001] The logo for the Metropolitan Transportation Authority (MTA) is a black circle containing the white letters "MTA" in a bold, sans-serif font.
+[p001_c0002] Metropolitan Transportation Authority
+### [p001_c0003] Safety Committee Meeting April 2023
+### [p001_c0004] Committee Members
+[p001_c0005] J. Lieber, Chair
+[p001_c0006] A. Albert
+[p001_c0007] G. Bringmann
+[p001_c0008] N. Brown
+[p001_c0009] S. Chu
+[p001_c0010] M. Fleischer
+[p001_c0011] B. Lopez
+[p001_c0012] D. Mack
+[p001_c0013] H. Mihaltses
+[p001_c0014] F. Miranda
+[p001_c0015] J. Samuelsen
+[p001_c0016] L. Sorin
+[p001_c0017] V. Tessitore
+[p001_c0018] N. Zuckerman
+
+## Page 2
+
+### [p002_c0001] Safety/Security Committee Meeting
+[p002_c0002] 2 Broadway, 20th Floor Board Room
+[p002_c0003] New York, NY 10004
+[p002_c0004] Monday, 4/24/2023
+[p002_c0005] 8:30 - 9:00 AM ET
+### [p002_c0006] 1. Public Comments
+### [p002_c0007] 2. Approval of Minutes -
+[p002_c0008] Safety Committee Minutes 2.21 - Page 3
+### [p002_c0009] 3. Safety/Security Committee Work Plan
+[p002_c0010] Safety Cmte Work Plan 2023 - Page 6
+### [p002_c0011] 4. Safety/Security Metrics
+[p002_c0012] 2023 Safety Cmte KPM - Page 8
+### [p002_c0013] 5. Committee Presentation
+### [p002_c0014] Agency Safety Program Update
+[p002_c0015] MNR System Safety Overview - Page 32
+### [p002_c0016] CCTV Program Update
+[p002_c0017] CCTV Program - Page 40
+[p002_c0018] Date of Next Meeting: July 2023
+
+## Page 3
+
+### [p003_c0001] Metropolitan Transportation Authority Minutes of the Safety Committee Meeting 2 Broadway, 20 th Floor New York, NY 10004
+[p003_c0002] Tuesday, February 21, 2023 8:30 AM
+[p003_c0003] The following Board Members were present (*Attended remotely):
+[p003_c0004] Hon. Janno Lieber, Chair Hon. Andrew Albert Hon. Gerard Bringmann Hon. Norman Brown Hon. Blanca Lopez Hon. David Mack Hon. Vincent Tessitore
+[p003_c0005] The following Board Members were absent:
+[p003_c0006] Hon. John Samuelsen Hon. Samuel Chu Hon. Michael Fleischer Hon. Frankie Miranda Hon. Neal Zuckerman
+[p003_c0007] The following agency safety & security officers were present in person or by video conference:
+[p003_c0008] Patrick Warren, Metropolitan Transportation Authority, Headquarters (“MTAHQ”) Carl Hamann, Metropolitan Transportation Authority, Headquarters (“MTAHQ”) Robert Diehl, MTA New York City Transit (“NYCT”) Loretta Ebbighausen, MTA Long Island Rail Road (“LIRR”) Shelly Prettyman, Metro-North Railroad (“MNR”) Eric Osnes, MTA Bridges and Tunnels (“B&T”) Donald Look, MTA Bridges and Tunnels (“B&T”) Mike Metz, Metro-North Railroad (“MNR”) Bob Murphy, MTA Long Island Rail Road (“LIRR”) Thomas Taffe, MTA Police Department (“MTAPD”)
+[p003_c0009] Chair Lieber chaired the February meeting and called the meeting to order.
+[p003_c0010] Chair Lieber asked Mr. Warren if there were any public speakers.
+### [p003_c0011] PUBLIC SPEAKERS’S SESSION
+[p003_c0012] The following public speakers commented:
+[p003_c0013] Murray Bodin Joseph Morales, Care Initiative
+[p003_c0014] _Master Page # 3 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 4
+
+[p004_c0001] Andy Quito, Subway Surfing Jason Anthony, Amazon Charlton D’Souza, Passengers United
+[p004_c0002] Refer to the video recording of the meeting produced by the MTA and maintained in MTA records, for the content of speakers’ statements.
+### [p004_c0003] APPROVAL OF MINUTES
+[p004_c0004] Upon motion duly made and seconded, the minutes of the November 2022 Safety Committee were approved with noted grammatical errors.
+### [p004_c0005] SAFETY COMMITTEE WORK PLAN
+[p004_c0006] Chair Lieber asked Mr. Warren to present the 2023 Work Plan for approval. Mr. Warren stated the new 2023 Work Plan is in the book for approval.
+[p004_c0007] Board Member Albert asked about the frequency of the Safety Committee meeting. Chair Lieber responded to Board Member Albert’s question that he was open to the discussion.
+[p004_c0008] Board Member Bringmann asked about the development of a policy for motorized vehicles on the MTA system being added to the plan. Mr. Warren and Chair Lieber acknowledged that the policy would be incorporated into the 2023 Work Plan.
+[p004_c0009] The Chair made a motion for approval, a motion was made and seconded. The 2023 Work plan was approved.
+[p004_c0010] Chair Lieber turned the meeting over to Mr. Warren to go through the Safety & Security Committee meeting agenda.
+### [p004_c0011] SAFETY POLICY:
+[p004_c0012] Mr. Warren stated that the safety statistics can be viewed in the Committee Book on pages 9 through 21. Mr. Warren also spoke to some of the efforts throughout the system to reduce slips, trips, and falls.
+[p004_c0013] Mr. Warren discussed the federal requirement of agency safety plans. He also discussed the requirement of the NYCT Joint Labor/Management Safety Committee. He asked that the MTA Safety Committee recommend and endorse the NYCT safety plan for approval to the full board. Chair Lieber acknowledged the work that had gone into the plan, and he recommended the plan for approval.
+[p004_c0014] Mr. Warren then went on to discuss security topics of his presentation. He also presented some of the crime statistics across the system.
+### [p004_c0015] MTAPD OPERATIONS UPDATE:
+[p004_c0016] Mr. Warren introduced the MTAPD’s Chief of Operations Management, Tom Taffe to provide an update on MTAPD operations.
+[p004_c0017] _Master Page # 4 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 5
+
+[p005_c0001] Chief Taffe discussed some of the MTAPD initiatives currently underway to improve crime numbers in the system. The Chief discussed train patrol, stakeholder outreach, hub operations, end of line operations and various training programs being deployed across the department.
+[p005_c0002] Board Member Mack asked what has been done regarding increasing staff in the MTAPD. Chief Taffe responded to Board Member Mack's question regarding MTAPD's hiring plan and how they are dealing with attrition. Chair Lieber acknowledged the efforts of the MTAPD across the system.
+[p005_c0003] Chair Lieber summarized some of the safety & security topics that were covered and encouraged any questions or discussions.
+[p005_c0004] Board Member Lopez asked about subway surfing. Mr. Warren commented on some the efforts of the NYPD to combat subway surfing. Mr. Diehl echoed Mr. Warren's comments.
+[p005_c0005] Board Member Albert also asked about Subway surfing specifically on the J line and certain stations along the line. Chair Lieber and Mr. Diehl responded to Board Member Albert's question.
+### [p005_c0006] ADJOURNMENT
+[p005_c0007] Chair Lieber asked for a motion to adjourn the meeting. A motion was made and seconded and the meeting was adjourned.
+[p005_c0008] _Master Page # 5 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 6
+
+### [p006_c0001] 2023 Safety/Security Committee Work Plan
+### [p006_c0002] I. RECURRING AGENDA ITEMS
+### [p006_c0003] Topic
+[p006_c0004] Public Comments Approval of Minutes Committee Work Plan
+### [p006_c0005] Responsibility
+[p006_c0006] Committee Chair & Members Committee Chair & Members Committee Chair & Members
+### [p006_c0007] II. SPECIFIC AGENDA ITEMS
+### [p006_c0008] Responsibility
+### [p006_c0009] February 2023
+- [p006_c0010] - Approval of 2023 Work Plan - NYCT Agency Safety Plan - MTAPD Operations Update
+[p006_c0011] MTA Chief Safety & Security MTA Chief Safety & Security MTA Police Department
+### [p006_c0012] April 2023
+- [p006_c0013] - Agency Safety Program Update - CCTV Camera Program Update
+[p006_c0014] MTA Chief Safety & Security MTA Office of Security Operations
+### [p006_c0015] July 2023
+- [p006_c0016] - Grade Crossing Enhancement Projects - Security Grant Program Update
+[p006_c0017] MTA Office of Safety Management MTA Office of Security Operations
+### [p006_c0018] November 2023
+- [p006_c0019] - Drug & Alcohol Program Update - NTSB Recommendations Update - Worker Assault - Fare Evasion
+[p006_c0020] MTA Corporate Health Officer MTA Chief Safety & Security MTA Chief Safety & Security MTA Chief Safety & Security
+### [p006_c0021] Detailed Summary
+### [p006_c0022] I. RECURRING AGENDA ITEMS
+### [p006_c0023] Approval of Minutes
+[p006_c0024] The Committee Chair will request a motion to approve the minutes of the prior meeting of the Safety Committee.
+### [p006_c0025] Committee Work Plan
+[p006_c0026] The Work Plan will list, by meeting, the topics scheduled for review. The Committee will be advised if any changes have been made to the plan.
+### [p006_c0027] II. SPECIFIC AGENDA ITEMS
+[p006_c0028] _Master Page # 6 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 7
+
+### [p007_c0001] February 2023
+### [p007_c0002] Approval of the 2023 workplan
+[p007_c0003] The committee will receive a discussion on the 2023 workplan and be asked to approve.
+### [p007_c0004] NYCT ASP
+[p007_c0005] The committee will be briefed on the NYCT Agency Safety Plan.
+### [p007_c0006] MTAPD Operations Update
+[p007_c0007] The committee will be briefed on MTAPD operations.
+### [p007_c0008] April 2023
+### [p007_c0009] Agency Safety Program Update
+[p007_c0010] The committee will receive a briefing on Agency safety programs.
+### [p007_c0011] CCTV Cameras Update
+[p007_c0012] The committee will receive an update on CCTV Cameras.
+### [p007_c0013] July 2023
+### [p007_c0014] Grade Crossing Enhancement Projects
+[p007_c0015] The committee will be briefed on the railroad Grade Crossing Enhancement Projects.
+### [p007_c0016] Security Grant Program Update
+[p007_c0017] The Committee will receive an update on the Security Grant Program.
+### [p007_c0018] November 2023
+### [p007_c0019] Drug & Alcohol Program Statistics
+[p007_c0020] The committee will receive an update on Drug & Alcohol Statistics.
+### [p007_c0021] NTSB Recommendations Update
+[p007_c0022] The committee will receive an update on the status of Recommendations issued to the MTA by the NTSB.
+### [p007_c0023] Worker Assaults
+[p007_c0024] The committee will receive an update on MTA worker assaults.
+### [p007_c0025] Fare Evasion
+[p007_c0026] The committee will receive a briefing on fare evasion across the system.
+[p007_c0027] _Master Page # 7 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 8
+
+### [p008_c0001] Metropolitan Transportation Authority
+[p008_c0002] MTA Safety Committee
+### [p008_c0003] Key Safety Metrics
+[p008_c0004] April 24, 2023
+[p008_c0005] _Master Page # 8 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 9
+
+### [p009_c0001] MTA Long Island Rail Road
+### [p009_c0002] Long Island Rail Road
+[p009_c0003] During the first quarter 2023 the Corporate Safety Department Operations Division performed 347 inspections in yards, facilities, and along the right of way; conducted 1,257 employee observations for safety and operating rules compliance; investigated two on track safety incidents; conducted six training programs for new employees and one management education core curriculum class; and lead three Confidential Close Call Reporting Labor Management Partnership Peer Review Team Meetings.
+[p009_c0004] The Investigations and Analysis Division conducted seven rail investigations; closed seven recommendations; and issued its 2022 Rail Accident Summary Report and one safety bulletin.
+[p009_c0005] The Occupational Safety Division conducted 19 assessments and two new job task hazard analyses (JTHA), finalizing an additional five JTHAs to support employee safety.
+[p009_c0006] The Environmental Safety Division performed 60 inspections of tanks, hazardous material storage facilities and treatment systems while supporting document reviews for 85 construction projects and performing 20 site safety inspections.
+[p009_c0007] The Capital Project Safety Compliance Division supported 39 construction projects through document review and performing 33 site safety inspections.
+[p009_c0008] The Office of the Fire Marshal trained 371 emergency responders; conducted 167 code compliance inspections of LIRR employee and tenant occupied spaces; supported 113 capital projects performing document reviews and site inspections for conformance to code requirements; and responded to 175 emergency call outs.
+[p009_c0009] The Community Education and Outreach Program conducted 91 classroom training programs reaching 7,195 participants and 41 special events reaching 12,478 individuals including Operation LifeSaver events at grade crossings.
+[p009_c0010] The entire department provided daily support to megaprojects including Third Track Expansion, Penn Station Construction, and getting ready for Grand Central Madison Service including the opening of the new Mid-Day Storage Yard and Grand Central Madison.
+[p009_c0011] _Master Page # 9 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 10
+
+### [p010_c0001] Long Island Rail Road
+### [p010_c0002] Performance Metrics
+### [p010_c0003] Customer Accident Rate
+[p010_c0004] The number of reportable customer accidents per one million customers (12-month rolling average).
+> [p010_c0005] Estimated Customer Accident Rate Data Month Rate (per 1M customers) Feb-20 2.5 Apr-20 2.5 Jun-20 2.5 Aug-20 2.6 Oct-20 3.1 Dec-20 3.4 Feb-21 4.8 Apr-21 5.0 Jun-21 4.5 Aug-21 4.2 Oct-21 3.5 Dec-21 2.7 Feb-22 3.0 Apr-22 2.8 Jun-22 2.6 Aug-22 2.4 Oct-22 2.4 Dec-22 2.5 Feb-23 2.0
+### [p010_c0006] Employee Lost Time Accident Rate
+[p010_c0007] The number of reportable employee lost time accidents per 200,000 hours worked (12-month rolling average).
+> [p010_c0008] Estimated Employee Lost Time Accident Rate Data Month Rate (per 200,000 hours) Feb-20 3.5 Apr-20 3.5 Jun-20 3.4 Aug-20 3.3 Oct-20 3.3 Dec-20 3.4 Feb-21 3.5 Apr-21 3.6 Jun-21 4.0 Aug-21 3.9 Oct-21 4.0 Dec-21 4.0 Feb-22 4.1 Apr-22 4.1 Jun-22 3.9 Aug-22 4.1 Oct-22 4.4 Dec-22 4.4 Feb-23 4.1
+### [p010_c0009] Train Derailments and Collisions
+[p010_c0010] The number of mainline train derailments and mainline train collisions.
+[p010_c0011]
+
+```text
+2020 2021 2022 2023 YTD Train Derailments 1 1 1 0 Train Collisions 1 2 0 0
+```
+[p010_c0012] _Master Page # 10 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 11
+
+### [p011_c0001] Long Island Rail Road
+### [p011_c0002] Prevention Metrics (Leading Indicators)
+### [p011_c0003] Training for First Responders and Employees, and Customer & Community Outreach
+[p011_c0004] The number of first responders trained to assist in crisis events, unique LIRR employees who completed certain federally mandated qualification refresher courses, and customer and community members who attended in-person or virtual safety outreach events.
+[p011_c0005]
+
+```text
+2021 2022 2023 YTD Target Actual First Responders 568 1,561 879 83 Employees 3,866 4,764 5,026 929 Customers and Community Members 36,058 59,213 44,900 10,479
+```
+### [p011_c0006] Grade Crossing Safety Metrics
+### [p011_c0007] Grade Crossing Incidents and Broken Gates
+[p011_c0008] Grade crossing incidents occur when railroad on-track equipment and vehicles or pedestrians collide. Broken gates happen when a vehicle breaks a grade crossing gate.
+> [p011_c0009] Grade Crossing Incidents and Broken Gates Data Month Grade Crossing Incidents Broken Gates Feb-20 0 10 Apr-20 8 0 Jun-20 0 6 Aug-20 0 1 Oct-20 3 0 Dec-20 0 11 Feb-21 8 0 Apr-21 0 7 Jun-21 0 5 Aug-21 5 0 Oct-21 0 11 Dec-21 0 6 Feb-22 7 0 Apr-22 0 3 Jun-22 3 0 Aug-22 0 17 Oct-22 11 0 Dec-22 0 5 Feb-23 7 0
+### [p011_c0010] Summons, Warnings, and MTA Police Details
+[p011_c0011] The number of summonses and warnings issued to motorists for going around a grade crossing and/or for behavior that puts motorists at risk, and the number of MTA Police details deployed specifically to monitor behavior at grade crossings.
+> [p011_c0012] Summons, Warnings, and MTA Police Details Data Month Summons Warnings MTA Police Details Feb-20 210 50 40 Apr-20 100 20 10 Jun-20 150 30 20 Aug-20 200 40 30 Oct-20 380 150 110 Dec-20 250 150 90 Feb-21 100 100 40 Apr-21 300 150 80 Jun-21 200 100 60 Aug-21 150 100 30 Oct-21 100 100 40 Dec-21 100 100 30 Feb-22 100 100 10 Apr-22 100 100 30 Jun-22 100 100 30 Aug-22 200 150 60 Oct-22 380 150 100 Dec-22 250 150 80 Feb-23 150 100 40
+[p011_c0013] _Master Page # 11 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 12
+
+### [p012_c0001] Metro-North Railroad
+### [p012_c0002] Metro-North Railroad
+[p012_c0003] Metro-North's ongoing efforts to address incident and injury trends include multiple programs and initiatives directed by the Field Safety Operations & Investigations division of the Office of System Safety (OSS). Key examples include:
+- [p012_c0004] • Incident Investigations (Customer, Employee, Property) • Operational Incident Investigations • Roadway Worker Protection Audit Group • Field Audits, Inspections, and Yard & Right of Way Cleanups
+### [p012_c0005] Incident Investigations
+[p012_c0006] Each customer or employee incident and injury is documented and investigated. Field Safety Managers and Accident Investigators, assigned by district, conduct investigations in partnership with operations. Depending on the incident, investigations may include interviews, site/equipment inspections, and procedural reviews. Root causes and contributing factors are identified, and corrective actions are identified and documented for follow-up.
+[p012_c0007] OSS also identifies patterns across cases and holds rotating meetings with the operating departments to review those cases in depth. Key incidents and trends are shared with Operations Training for incorporation into course materials as well.
+### [p012_c0008] Operational Incident Investigations
+[p012_c0009] OSS leads investigation of operational incidents through a committee process. OSS Investigators report on scene to initiate the investigation with operations leads, document the site, and conduct interviews. Depending on the incident, the investigation will also include reviews of audio, video, and relevant documentation, as well as equipment and infrastructure inspections.
+[p012_c0010] An interdepartmental committee is convened to review evidence, determine root causes and contributing factors, and establish corrective actions. Corrective actions tracked through closeout. Findings and trends are reviewed in multiple forums, including Safety Focus events, and are also shared with Operations Training.
+### [p012_c0011] Roadway Worker Protection Audit Group
+[p012_c0012] The Roadway Worker Protection Audit Group, led by OSS, conducts audits on and about the tracks for compliance with Roadway Worker Protection rules and MNR Safety Rules. Each Audit Group includes managers from operating departments, Operating Rules, Operations Training, and OSS. The audits include interactive discussions with employees on site.
+### [p012_c0013] Field Audits, Inspections, and Yard & Right of Way Cleanups
+[p012_c0014] The Field Safety & Investigations team conducts ongoing proactive audits and inspections of stations, yards, shops, and locations along the right of way. The team collaborates with operations to perform periodic cleanups of these locations as well.
+[p012_c0015] _Master Page # 12 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 13
+
+### [p013_c0001] Metro-North Railroad
+### [p013_c0002] Performance Metrics
+### [p013_c0003] Customer Accident Rate
+[p013_c0004] The number of reportable customer accidents per one million customers (12-month rolling average).
+> [p013_c0005] Customer Accident Rate Data (Estimated) Month Rate Feb-20 1.05 Apr-20 1.00 Jun-20 1.02 Aug-20 1.00 Oct-20 1.15 Dec-20 1.40 Feb-21 2.05 Apr-21 2.50 Jun-21 2.35 Aug-21 2.15 Oct-21 2.00 Dec-21 2.00 Feb-22 1.85 Apr-22 2.05 Jun-22 2.00 Aug-22 2.10 Oct-22 2.35 Dec-22 2.30 Feb-23 2.15
+### [p013_c0006] Employee Lost Time Accident Rate
+[p013_c0007] The number of reportable employee lost time accidents per 200,000 hours worked (12-month rolling average).
+> [p013_c0008] Employee Lost Time Accident Rate Data (Estimated) Month Rate Feb-20 1.95 Apr-20 1.80 Jun-20 1.90 Aug-20 1.90 Oct-20 2.00 Dec-20 1.90 Feb-21 2.05 Apr-21 1.85 Jun-21 1.95 Aug-21 1.90 Oct-21 1.85 Dec-21 2.00 Feb-22 2.00 Apr-22 2.05 Jun-22 2.15 Aug-22 2.10 Oct-22 2.20 Dec-22 2.15 Feb-23 2.20
+### [p013_c0009] Train Derailments and Collisions
+[p013_c0010] The number of mainline train derailments and mainline train collisions.
+[p013_c0011]
+
+```text
+2020 2021 2022 2023 YTD Train Derailments 0 0 2 0 Train Collisions 0 0 0 0
+```
+[p013_c0012] _Master Page # 13 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 14
+
+### [p014_c0001] Metro-North Railroad
+### [p014_c0002] Prevention Metrics (Leading Indicators)
+### [p014_c0003] Training for First Responders and Employees, and Customer & Community Outreach
+[p014_c0004] The number of first responders trained to assist in crisis events, unique Metro-North employees who completed certain federally mandated qualification refresher courses, and customer and community members who attended in-person or virtual safety outreach events.
+[p014_c0005]
+
+```text
+2021 2022 2023 YTD Target Actual First Responders 1,656 1,868 1,500 261 Employees 2,787 3,080 2,800 435 Customers and Community Members 17,605 52,606 35,000 1,695
+```
+### [p014_c0006] Grade Crossing Safety Metrics
+### [p014_c0007] Grade Crossing Incidents and Broken Gates
+[p014_c0008] Grade crossing incidents occur when railroad on-track equipment and vehicles or pedestrians collide. Broken gates happen when a vehicle breaks a grade crossing gate.
+> [p014_c0009] Grade Crossing Incidents and Broken Gates Data Month Grade Crossing Incidents Broken Gates Feb-20 0 1 Apr-20 0 2 Jun-20 0 2 Aug-20 0 3 Oct-20 0 2 Dec-20 0 4 Feb-21 0 0 Apr-21 0 2 Jun-21 0 1 Aug-21 0 3 Oct-21 0 1 Dec-21 0 2 Feb-22 0 3 Apr-22 0 1 Jun-22 2 0 Aug-22 0 2 Oct-22 1 0 Dec-22 0 3 Feb-23 3 2
+### [p014_c0010] Summons, Warnings, and MTA Police Details
+[p014_c0011] The number of summonses and warnings issued to motorists for going around a grade crossing and/or for behavior that puts motorists at risk, and the number of MTA Police details deployed specifically to monitor behavior at grade crossings.
+> [p014_c0012] Summons, Warnings, and MTA Police Details Data Month Summons Warnings MTA Police Details Feb-20 80 80 45 Apr-20 80 80 25 Jun-20 40 40 10 Aug-20 80 80 15 Oct-20 40 40 10 Dec-20 40 40 15 Feb-21 40 40 10 Apr-21 100 100 45 Jun-21 100 100 35 Aug-21 100 100 45 Oct-21 100 100 25 Dec-21 100 100 35 Feb-22 100 100 25 Apr-22 100 100 45 Jun-22 100 100 35 Aug-22 100 100 15 Oct-22 100 100 90 Dec-22 100 100 15 Feb-23 100 100 45
+[p014_c0013] _Master Page # 14 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 15
+
+> [p015_c0001] The logo for New York City Transit, featuring the MTA logo (a blue circle with the letters 'MTA' in white) followed by the text 'New York City Transit' in a blue sans-serif font.
+### [p015_c0002] New York City Transit
+[p015_c0003] Subway Customer Accident Rates decreased when comparing the most recent 12-month period to the previous one. It is worth noting that Slip/Trip/Fall accidents have had more than a 20% decrease since December 2022.
+[p015_c0004] Bus Collisions and Collision Injuries increased on a Rolling 12-Month period. The office of system Safety is currently working with the Department of Buses to rate the severity of each collision, so we have a better understanding of how best to reduce them. Customer Accidents increased slightly when comparing the most recent 12-month period to the previous one.
+[p015_c0005] Employee Lost Time Accidents decreased when comparing the most recent 12-month period to the previous one. It is worth noting that we have seen a decrease in Lost Time Accidents since September 2022.
+[p015_c0006] Subway Fires have increased on a Rolling 12-Month basis when comparing to March 2022 vs 2023. The Office of System Safety is continuing to work with the Department of Subways Maintenance of Way to analyze these fires and ensure cleaning crews are deployed to where there is a high frequency of debris fires.
+[p015_c0007] _Master Page # 15 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 16
+
+### [p016_c0001] New York City Transit
+### [p016_c0002] Performance Metrics
+### [p016_c0003] Subway and Bus Customer Accident Rate
+[p016_c0004] The number of subway and bus customer accidents per million customers (12-month rolling average).
+> [p016_c0005] Month Subway Bus Feb-20 2.8 1.4 Apr-20 2.9 1.5 Jun-20 3.1 1.5 Aug-20 3.4 1.5 Oct-20 3.8 1.6 Dec-20 4.4 1.7 Feb-21 5.6 1.9 Apr-21 5.8 1.9 Jun-21 5.2 1.9 Aug-21 4.8 1.9 Oct-21 4.5 1.9 Dec-21 4.1 1.8 Feb-22 3.9 1.8 Apr-22 3.7 1.8 Jun-22 3.5 1.9 Aug-22 3.4 2.0 Oct-22 3.4 2.0 Dec-22 3.2 2.1 Feb-23 2.9 2.1
+### [p016_c0006] Subway and Bus Employee Lost Time Injury Rate
+[p016_c0007] The number of employee lost time accidents per 100 employees (12-month rolling average).
+> [p016_c0008] Month Subway Bus Feb-20 4.0 6.0 Apr-20 4.6 6.8 Jun-20 4.7 6.9 Aug-20 4.8 7.0 Oct-20 4.9 7.0 Dec-20 4.9 7.1 Feb-21 4.9 7.2 Apr-21 4.2 6.7 Jun-21 4.3 7.0 Aug-21 4.3 7.2 Oct-21 4.3 7.3 Dec-21 4.3 7.2 Feb-22 4.4 7.3 Apr-22 4.5 7.1 Jun-22 4.5 6.9 Aug-22 4.5 6.7 Oct-22 4.5 6.6 Dec-22 4.3 6.4 Feb-23 4.0 5.9
+### [p016_c0009] Bus Collision Rate
+[p016_c0010] The number of bus collisions per million miles.
+> [p016_c0011] Month Bus Collision Rate Feb-20 48 Apr-20 22 Jun-20 35 Aug-20 42 Oct-20 45 Dec-20 47 Feb-21 35 Apr-21 48 Jun-21 53 Aug-21 52 Oct-21 60 Dec-21 65 Feb-22 55 Apr-22 53 Jun-22 62 Aug-22 55 Oct-22 62 Dec-22 65 Feb-23 52
+[p016_c0012] _Master Page # 16 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 17
+
+### [p017_c0001] New York City Transit
+### [p017_c0002] Subway Fires
+[p017_c0003] The number of fires in the subway system including along the right-of-way, in stations, and on trains.
+> [p017_c0004] Subway Fires Data (Estimated) Month Fires Feb-20 85 Apr-20 75 Jun-20 60 Aug-20 80 Oct-20 70 Dec-20 90 Feb-21 100 Apr-21 85 Jun-21 110 Aug-21 60 Oct-21 80 Dec-21 80 Feb-22 150 Apr-22 120 Jun-22 95 Aug-22 105 Oct-22 100 Dec-22 110 Feb-23 90
+### [p017_c0005] Subway Derailments and Collisions
+[p017_c0006] The number of subway derailments and collisions on the mainline right-of-way and in rail yards.
+[p017_c0007]
+
+```text
+Year 2020 2021 2022 2023 YTD Mainline Collisions 0 0 0 0 Yard Collisions 2 3 3 1 Mainline Derailments 5 0 1 0 Yard Derailments 4 10 6 0
+```
+### [p017_c0008] Prevention Metrics (Leading Indicators)
+[p017_c0009] Joint track safety audits review critical on-track safety items such as flagging, third rail, and lighting. Continuous welded rail installations significantly reduced the number of rail joints to lessen the occurrence of broken rails. Friction pad installations reduces broken rail incidents and rail defects. Audible Pedestrian Turn Warning Systems produce an audible voice alert to pedestrians when a bus is making a left- or right-hand turn. Vision Zero Employee Training provides pedestrian safety training to all bus operators.
+[p017_c0010]
+
+```text
+2022 2023 YTD Target Actual Joint Track Safety Audits Completed 311 340 32 Continuous Welded Rail Installed (Feet) 23,228 10,758 6,421 Friction Pads Installed 28,122 22,000 8,207 Audible Pedestrian Turn Warning Systems Installed 610 800 77 Vision Zero Employee Trainings Conducted 4,977 4500 940
+```
+[p017_c0011] _Master Page # 17 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 18
+
+### [p018_c0001] Bridges and Tunnels
+### [p018_c0002] MTA Bridges and Tunnels
+[p018_c0003] Recent trends pertaining to customer collision rates need to be appreciated in comparison to where we have come from. When comparing current rates to pre COVID operational periods, we have observed a considerable drop in the number of incidents while maintaining volumes consistent with 2019 average annual daily traffic (AADT) counts of over 900.000 crossings daily. These trends are attributed to a combination of law enforcement, real-time communication to our customers on roadway conditions, and the implementation of engineering controls that enhance travel efficiencies and reduce the frequency of roadway collisions.
+[p018_c0004] Through regular safety monitoring and working closely with our colleagues in Construction and Development controls have been implemented to address conditions that once served as primary contributors to the collision count.
+[p018_c0005] With respect to injury on duty year to date trends are slightly better than what we experienced during the same period 2022.
+[p018_c0006] _Master Page # 18 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 19
+
+### [p019_c0001] Bridges and Tunnels
+### [p019_c0002] Performance Metrics
+### [p019_c0003] Customer Collision Rate
+[p019_c0004] The number of customer vehicle collisions per one million vehicles.
+> [p019_c0005] Month Rate Feb-20 4.2 Apr-20 4.1 Jun-20 2.0 Aug-20 3.8 Oct-20 4.0 Dec-20 4.7 Feb-21 4.7 Apr-21 3.5 Jun-21 3.4 Aug-21 4.3 Oct-21 5.2 Dec-21 4.1 Feb-22 3.8 Apr-22 4.4 Jun-22 4.6 Aug-22 4.0 Oct-22 4.1 Dec-22 4.0 Feb-23 3.7
+### [p019_c0006] Employee Lost Time Injury Rate
+[p019_c0007] The number of employee lost time accidents per 200,000 hours worked.
+> [p019_c0008] Month Rate Feb-20 2.5 Apr-20 10.0 Jun-20 0.0 Aug-20 12.0 Oct-20 3.5 Dec-20 10.5 Feb-21 6.5 Apr-21 4.5 Jun-21 7.5 Aug-21 3.5 Oct-21 6.0 Dec-21 2.5 Feb-22 7.5 Apr-22 5.5 Jun-22 7.8 Aug-22 0.0 Oct-22 9.5 Dec-22 7.5 Feb-23 4.0
+### [p019_c0009] Prevention Metrics (Leading Indicators)
+[p019_c0010] Workforce development provides safety and skills training to all operations, maintenance, and staff personnel. Safety task force inspections are conducted at each facility to improve customer and worker safety. Fire code audits include reviews of fire prevention activities and firefighting and suppression equipment, as required by the NY Uniform Fire Prevention Code. FDNY liaison visits include FDNY facilities tours to become familiar with fire equipment available in structures and buildings.
+[p019_c0011]
+
+```text
+2021 2022 2023 YTD Target Actual Workforce Development 0 486 180 22 Safety Task Force Audits 14 14 14 3 Fire Code Audits 14 14 14 3 FDNY Liaison Visits 34 29 25 7
+```
+[p019_c0012] _Master Page # 19 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 20
+
+### [p020_c0001] Construction & Development
+### [p020_c0002] MTA Construction & Development
+[p020_c0003] C&D Safety continues to monitor reported contractor incidents, including those classified as lost time and recordable for all capital projects, to identify trends related to work-related occurrences. C&D covers all capital construction across all MTA agencies, including MNR, LIRR, NYCT, B&T, and C&D-integrated mega projects (ESA, 2nd Ave Phase two, Penn Access, Penn Gateway, Harold Interlocking, 3rd Track).
+[p020_c0004] The reported Contractor incident information for the 1st Qtr. 2023 includes the following: Slip Trips and Falls accounted for the highest number of reported lost time incidents, with a total of 4 occurrences which equates to 29% overall — Struck By/Against accounted for the highest number of reported recordable incidents, with a total of 6 occurrences, which also equates to 33% overall. The reported Lost Time incidents, YTD, currently at 22% of the total Lost Time Incidents reported in 2022. the Reported Recordable incidents YTD is presently at 31% of the total Recordable Incidents reported in 2022.
+[p020_c0005] Overall total inspections for the 1st Qtr. 2023 totaled 2,320. These inspections consisted of internal inspections/audits, totaling 667, and external inspections performed by Third-Party Safety Consultants and OCIP, totaling 1,653. The safety inspections included general positive and negative observations, including Housekeeping, Site Security & Public Protection, Fall Protection, Stairs and Ladders, and PPE for negative observations. Positive observations included Tools (Hand & Power), Vehicle & Equipment Safety, Supervision/ Organization, and Electrical. C&D Safety Oversight is drafting advisories on these identified items for additional outreach and awareness.
+[p020_c0006] _Master Page # 20 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 21
+
+### [p021_c0001] Construction & Development
+### [p021_c0002] Performance Metrics
+### [p021_c0003] Contractor Lost Time and Recordable Incidents
+[p021_c0004] Lost time incidents measure the number of contractor safety-related incidents leading to lost time. Recordable incidents measure the number of safety-related incidents recorded that do not result in contractor lost time.
+> [p021_c0005] Estimated Data for Contractor Lost Time and Recordable Incidents Month Lost Time Incident Recordable Incident Feb-20 14 0 Apr-20 18 1 Jun-20 10 5 Aug-20 19 5 Oct-20 16 14 Dec-20 3 7 Feb-21 9 5 Apr-21 6 7 Jun-21 4 3 Aug-21 3 3 Oct-21 10 12 Dec-21 4 5 Feb-22 1 4 Apr-22 6 2 Jun-22 7 9 Aug-22 6 5 Oct-22 6 6 Dec-22 6 5 Feb-23 6 6
+### [p021_c0006] Serious Incidents
+[p021_c0007] The number of serious safety-related incidents.
+[p021_c0008]
+
+```text
+2022 2023 YTD Struck by / Against 4 0 Slips, Trips, Falls 5 0 Electrical Shock 1 0 Laceration 2 0
+```
+### [p021_c0009] Prevention Metrics (Leading Indicators)
+### [p021_c0010] Inspections and Audits
+[p021_c0011] The number of inspections and audits performed at construction sites. Inspections are conducted in-house (internal) and by third-party safety consultants and Owner Controlled Insurance Program teams (external).
+[p021_c0012]
+
+```text
+2022 2023 YTD Inspections and Audits - Internal 2,173 376 Inspections and Audits - External 6,264 1014
+```
+[p021_c0013] _Master Page # 21 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 22
+
+### [p022_c0001] Metropolitan Transportation Authority
+[p022_c0002] MTA Safety Committee
+### [p022_c0003] Key Security Metrics
+[p022_c0004] April 24, 2023
+[p022_c0005] _Master Page # 22 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 23
+
+### [p023_c0001] The logo for the MTA Long Island Rail Road, featuring the MTA logo in a blue circle followed by the text "Long Island Rail Road" in a blue sans-serif font.
+### [p023_c0002] Long Island Rail Road
+[p023_c0003] LIRR Office of Security proactively monitors locations based upon information developed through coordination with MTAPD, LIRR employee, Community complaints/concerns, Quality of Life issues, current trends, as well as information pulled from other sources. OOS is actively involved in the MTA's counter terrorism efforts providing real time surveillance and information as well as providing valuable forensic data during the investigative process.
+[p023_c0004] Currently, major focus is on Terminal and Station public waiting areas utilizing LIRR Security Command Center access to cameras and access control technologies, which are supported by the use of analytics, which assist in the identification of problematic areas where individuals may remain and vandalize areas or present possible threats to customers.
+[p023_c0005] Assist with identification of homeless individuals in need of assistance, using information developed, as outlined previously, Office of Security personnel monitor LIRR locations which have been identified as being prone to homelessness. When Office of Security personnel observes possible undomiciled conditions, LIRR works with MTA PD to address and correct the condition. The LIRR Security Command Center observed a total of Eighteen apparently undomiciled individuals, dispatching police to render aide for the 1 st Quarter of 2023.
+[p023_c0006] LIRR utilization of various security systems and applications has drastically reduced MTA PD Officers to unnecessary and accidental alarms at LIRR assets, such as Station Buildings, freeing up MTA PD Officers to address more serious conditions.
+[p023_c0007] Based on trending patterns the LIRR Security Staff conducts security assessments at LIRR properties, such as station buildings, facilities, and yards. Security Personnel use all available information, as previously outlined, applying their intrinsic knowledge of the LIRR and current threat-based trends to determine if current security mitigations are sufficient to address all known security needs. The assessments support the recommended mitigations to address these vulnerabilities.
+[p023_c0008] LIRR continually researches security technologies to address both physical security devices and security applications to ensure LIRR security systems remain current and viable, keeping in mind the fiscal responsibilities to the agency.
+[p023_c0009] LIRR Office of Security is finalizing procurements to add additional camera coverage at 37 stations and the upgrade of 19 additional stations for the installation of Cameras, Burglary Systems and Fire Systems to further protect MTA LIRR Customers, Employees and physical assets.
+[p023_c0010] _Master Page # 23 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 24
+
+### [p024_c0001] Long Island Rail Road
+### [p024_c0002] Major Crimes Against Customers
+[p024_c0003] The rate of all major crimes (murder, rape, robbery, felony assault, grand larceny) against customers, per million customers
+> [p024_c0004] This combined bar and line chart displays two metrics over time from February 2020 to February 2023. The left Y-axis represents Ridership in millions, ranging from 0 to 8. The right Y-axis represents the Major Crime Rate per million customers, ranging from 0 to 16. Ridership is shown as grey bars, and the Major Crime Rate is shown as a blue line. A significant peak in the crime rate is visible in April 2020, reaching approximately 15 per million customers, coinciding with a sharp decline in ridership. Ridership remains relatively stable between 3 and 5 million throughout the period. Month Ridership (in millions) Major Crime Rate (per million customers) Feb-20 6.8 0.5 Apr-20 3.2 15.0 Jun-20 1.0 0.5 Aug-20 1.8 1.5 Oct-20 2.2 1.0 Dec-20 1.8 1.0 Feb-21 1.8 1.2 Apr-21 2.2 1.2 Jun-21 3.2 0.5 Aug-21 3.5 0.8 Oct-21 3.8 0.8 Dec-21 3.5 0.8 Feb-22 3.2 0.8 Apr-22 4.5 0.8 Jun-22 4.8 1.0 Aug-22 4.5 0.8 Oct-22 4.8 0.8 Dec-22 4.5 1.0 Feb-23 4.2 0.8
+### [p024_c0005] Assaults and Harassments Against Employees
+[p024_c0006] The number of assaults and harassments against LIRR employees and MTAPD employees, per NYS criminal law
+> [p024_c0007] This stacked bar chart shows the number of assaults and harassments against employees from February 2020 to February 2023. The Y-axis represents the count, ranging from 0 to 9. Blue bars represent Harassments, and green bars represent Assaults. Harassments are the primary incident type, with a notable peak in August 2022. Assaults are less frequent, appearing in several months throughout the period. Month Harassments Assaults Feb-20 1 0 Apr-20 6 0 Jun-20 2 0 Aug-20 7 0 Oct-20 5 0 Dec-20 3 0 Feb-21 2 2 Apr-21 3 0 Jun-21 1 0 Aug-21 5 0 Oct-21 1 0 Dec-21 6 1 Feb-22 3 0 Apr-22 4 2 Jun-22 5 0 Aug-22 8 1 Oct-22 2 0 Dec-22 6 1 Feb-23 3 1
+### [p024_c0008] Summonses and Arrests
+[p024_c0009] The number of criminal summonses issued for fare evasion, the number of criminal summonses issued for other infractions, and the number of arrests made by the MTA Police Department
+> [p024_c0010] This stacked bar chart displays three types of enforcement actions from February 2020 to February 2023. The Y-axis represents the count, ranging from 0 to 250. The categories are: Other Criminal Summons (orange), Criminal Fare Evasion Summons (green), and Arrests (blue). Arrests are the most frequent action, with a significant peak in October 2022. Criminal fare evasion summonses are also most frequent in October 2022, while other criminal summonses are most frequent in February 2020. Month Arrests Criminal Fare Evasion Summons Other Criminal Summons Feb-20 40 10 150 Apr-20 30 5 10 Jun-20 30 10 10 Aug-20 20 10 10 Oct-20 50 10 20 Dec-20 30 10 20 Feb-21 30 10 20 Apr-21 40 10 10 Jun-21 80 10 40 Aug-21 100 10 80 Oct-21 80 10 40 Dec-21 70 10 40 Feb-22 60 10 40 Apr-22 70 10 40 Jun-22 70 10 40 Aug-22 60 10 40 Oct-22 20 100 180 Dec-22 40 100 20 Feb-23 60 10 80
+[p024_c0011] _Master Page # 24 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 25
+
+### [p025_c0001] Metro-North Railroad
+### [p025_c0002] Metro-North Railroad
+[p025_c0003] The Metro-North Railroad (MNR) Security Department (Security) continues to support MNR Operations as well as the MTA Police Department. As the dependency on video surveillance continues to rise, MNR Security expand its video surveillance footprint. On a regular basis, video camera locations are added to MNR Security video network which now exceeds 15,000 cameras. Support of MNR Operations and MTAPD is enhanced through use of a state-of-the-art video management system which allows for immediate video distribution to specific individuals using cloud-based technology. MNR Security's unique and advanced ability to manage and protect video ensures all requested video is secured, archived, and rapidly distributed.
+[p025_c0004] MNR Security takes great pride in managing the Workplace Violence Prevention Plan (WVPP). Since 2016, MNR Security has investigated every instance of Workplace Violence (WPV) that has been reported by MNR employees. The total number of WPV cases investigated from 2016 until the end of 2022 is 529. The total number of substantiated WPV cases in that same time frame is 348. On average, MNR Security investigates 76 cases per year and has substantiated an average of 50 WPV cases per year. MNR Security has identified that WPV incidents onboard the trains involving train crews and passengers are the most prevalent place for WPV to occur. In conjunction with MNR Transportation, MNR Training and the MTAPD, a training program was established to address de-escalation techniques for frontline employees to help address successful techniques for reducing a WPV situation.
+[p025_c0005] MNR Security along with MNR Transportation has had weekly meetings with MTAPD since 2022 to address specific and general concerns for onboard WPV incidents. The establishment of a dedicated MTAPD Train Patrol has greatly enhanced the ability to directly address and prevent specific and frequent WPV and other onboard incidents like fare evasion, panhandling and harassment.
+[p025_c0006] _Master Page # 25 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 26
+
+### [p026_c0001] Metro-North Railroad
+### [p026_c0002] Major Crimes Against Customers
+[p026_c0003] The rate of all major crimes (murder, rape, robbery, felony assault, grand larceny) against customers, per million customers
+> [p026_c0004] This chart displays two metrics over time from February 2020 to February 2023. The left Y-axis represents Ridership in millions, ranging from 0 to 7. The right Y-axis represents the Violent Crime Rate, ranging from 0 to 10. Ridership is shown as grey bars, and the Violent Crime Rate is shown as a blue line. Month Ridership (in millions) Violent Crime Rate Feb-20 6.5 0.5 Apr-20 2.8 0.5 Jun-20 0.5 0.2 Aug-20 1.5 7.0 Oct-20 1.8 0.2 Dec-20 1.5 0.5 Feb-21 1.5 3.0 Apr-21 2.0 2.5 Jun-21 2.5 1.5 Aug-21 2.8 0.8 Oct-21 3.0 1.5 Dec-21 3.5 1.5 Feb-22 2.5 0.5 Apr-22 4.0 1.0 Jun-22 4.5 1.0 Aug-22 4.2 0.2 Oct-22 4.8 1.0 Dec-22 4.5 1.0 Feb-23 4.0 0.5
+### [p026_c0005] Assaults and Harassments Against Employees
+[p026_c0006] The number of assaults and harassments against Metro-North employees and MTAPD Employees, per NYS criminal law
+> [p026_c0007] This stacked bar chart shows the number of Harassments (blue) and Assaults (green) from February 2020 to February 2023. The Y-axis ranges from 0 to 6. Month Harassments Assaults Feb-20 1.0 1.0 Apr-20 3.0 0.0 Jun-20 2.0 1.0 Aug-20 1.0 1.0 Oct-20 1.0 1.0 Dec-20 2.0 1.0 Feb-21 2.0 1.0 Apr-21 2.0 1.0 Jun-21 3.0 1.0 Aug-21 1.0 1.0 Oct-21 2.0 1.0 Dec-21 1.0 1.0 Feb-22 2.0 0.0 Apr-22 2.0 4.0 Jun-22 1.0 2.0 Aug-22 1.0 2.0 Oct-22 3.0 1.0 Dec-22 1.0 1.0 Feb-23 2.0 3.0
+### [p026_c0008] Summonses and Arrests
+[p026_c0009] The number of criminal summonses issued for fare evasion, the number of criminal summonses issued for other infractions, and the number of arrests made by the MTA Police Department
+> [p026_c0010] This stacked bar chart shows the number of Arrests (orange), Criminal Fare Evasion Summons (green), and Other Criminal Summons (blue) from February 2020 to February 2023. The Y-axis ranges from 0 to 200. Month Arrests Criminal Fare Evasion Summons Other Criminal Summons Feb-20 30 10 90 Apr-20 20 0 50 Jun-20 20 0 40 Aug-20 15 0 25 Oct-20 25 0 35 Dec-20 20 0 30 Feb-21 25 0 35 Apr-21 40 0 40 Jun-21 20 0 25 Aug-21 25 0 30 Oct-21 35 0 40 Dec-21 40 0 50 Feb-22 30 0 35 Apr-22 35 0 30 Jun-22 25 0 20 Aug-22 20 0 15 Oct-22 35 0 25 Dec-22 30 0 20 Feb-23 45 0 20
+[p026_c0011] _Master Page # 26 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 27
+
+> [p027_c0001] The logo for the Metropolitan Transportation Authority (MTA) New York City Transit. It features a blue circle with the white letters "MTA" inside, followed by the text "New York City Transit" in a blue sans-serif font.
+### [p027_c0002] New York City Transit
+[p027_c0003] Felony crimes continues to trend down. In February 2023, monthly major felony crimes are down 6% compared to the same month last year. Crime is also down 64% compared to February 2020 and down 14% compared to February 2019.
+[p027_c0004] Violent crimes per million riders and major felony crimes per million customers have dropped 21% and 13% respectively compared to 2022 averages.
+[p027_c0005] NYPD summonses and arrests continues to trend upward in 2023. Fare evasion summonses are up 24% in the subway for the month of February compared to last year, and arrests are up 37%.
+[p027_c0006] NYCT continues to partner with NYPD and MTAPD on multiple initiatives geared towards crime reduction, enhanced customer and employee safety, and improved customer experience.
+[p027_c0007] Cops, Cameras, Care effort remains the main focus to curb subway crime and violence. This effort includes surging officers into the transit system to boost the presence of uniformed officers on platforms and trains, renew efforts to aid people experiencing serious mental health issues, and continuing the rollout of cameras in the transit system.
+[p027_c0008] MTAPD continues to focus their efforts in the subway system at 4 major hubs: Penn Station, Grand Central Terminal, Atlantic / Barclays, and Sutphin / Archer. These officers are focused on improving safety and security at these locations for our customers and employees. We are seeing increases in paid ridership and a reduction in QoL incidents. This initiative also frees up resources for NYPD to redeploy some of their officers to other priority stations in the system.
+[p027_c0009] Improving overall safety and security in the entire transit system is a top priority. MTA/NYCT continues to work with the NYPD to provide detailed information about transit locations that experience violent and quality-of-life crimes. The NYPD has increased the presence and visibility of uniformed train patrols in the subways, putting more officers both on platforms and in trains. These officers have been instructed to focus on areas of higher crime as well as quality-of-life infractions such as fare evasion, smoking, and unsafe riding as well as being available on platforms of arriving trains to address issues riders experience while on the trains. Camera coverage expansion in stations and subway cars is progressing. Video from cameras in the system continues to be an important tool in identifying suspects, solving crimes, and deterring future crime.
+[p027_c0010] _Master Page # 27 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 28
+
+### [p028_c0001] New York City Transit
+### [p028_c0002] Major Crimes Against Subway Customers
+[p028_c0003] The rate of all major felonies (burglary, murder, rape, robbery, felony assault, grand larceny) against subway customers
+> [p028_c0004] Estimated Data for Major Crimes Against Subway Customers Month Total Major Crimes Major Crime Rate (per million customers) Feb-20 265 2.5 Apr-20 175 10.5 Jun-20 120 7.5 Aug-20 110 6.5 Oct-20 115 6.0 Dec-20 110 6.5 Feb-21 115 6.5 Apr-21 110 6.0 Jun-21 170 7.0 Aug-21 115 5.0 Oct-21 185 6.0 Dec-21 235 7.0 Feb-22 195 7.5 Aug-22 180 6.0 Oct-22 200 6.0 Dec-22 205 6.0 Feb-23 170 5.0
+### [p028_c0005] Assaults and Harassments Against Subway Employees
+[p028_c0006] The number of assaults and harassments again subway employees. Under NYS penal law, assault requires physical injury. Harassment involves actions that annoy or alarm with no resulting physical injury.
+> [p028_c0007] Estimated Data for Assaults and Harassments Against Subway Employees Month Assaults (Subway) Harassments (Subway) Feb-20 5 55 Apr-20 5 45 Jun-20 5 65 Aug-20 5 55 Oct-20 5 85 Dec-20 5 60 Feb-21 5 65 Apr-21 5 60 Jun-21 10 40 Aug-21 5 60 Oct-21 5 60 Dec-21 5 70 Feb-22 5 60 Apr-22 5 75 Jun-22 5 40 Aug-22 5 50 Oct-22 5 35 Dec-22 10 50 Feb-23 5 40
+### [p028_c0008] Assaults and Harassments Against Bus Employees
+[p028_c0009] The number of assaults and harassments again bus employees. Under NYS penal law, assault requires physical injury. Harassment involves actions that annoy or alarm with no resulting physical injury.
+> [p028_c0010] Estimated Data for Assaults and Harassments Against Bus Employees Month Assaults (Bus) Harassments (Bus) Feb-20 5 95 Apr-20 5 95 Jun-20 5 135 Aug-20 5 165 Oct-20 5 170 Dec-20 5 145 Feb-21 5 135 Apr-21 5 135 Jun-21 5 145 Aug-21 5 165 Oct-21 5 180 Dec-21 5 160 Feb-22 5 95 Apr-22 5 135 Jun-22 5 160 Aug-22 5 135 Oct-22 5 140 Dec-22 5 145 Feb-23 5 135
+[p028_c0011] _Master Page # 28 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 29
+
+### [p029_c0001] New York City Transit
+### [p029_c0002] NYPD Summonses and Arrests
+[p029_c0003] The number of summonses issues for fare evasion (Transit Adjudication Bureau + criminal); the number of summonses issues for other infractions; the number of arrests made by NYPD
+> [p029_c0004] Month Fare Evasion Summons All Other Summons Arrests Feb-20 6800 3000 500 Apr-20 4200 2000 400 Jun-20 400 200 100 Aug-20 300 100 100 Oct-20 800 300 200 Dec-20 3000 1000 500 Feb-21 5500 1500 600 Apr-21 7500 1800 600 Jun-21 5500 1500 600 Aug-21 4500 1000 500 Oct-21 5500 1500 600 Dec-21 4500 1000 500 Feb-22 5500 1500 600 Apr-22 6500 2000 800 Jun-22 8500 2500 1000 Aug-22 7000 2000 800 Oct-22 8000 2500 1000 Dec-22 8500 2500 1000 Feb-23 10500 3500 1000
+### [p029_c0005] Track Intrusion Incidents
+[p029_c0006] The number of incidents in which a non-authorized person is on or about subway tracks, hindering subway operations
+> [p029_c0007] Month Incidents Feb-20 98 Apr-20 62 Jun-20 78 Aug-20 105 Oct-20 82 Dec-20 105 Feb-21 108 Apr-21 115 Jun-21 88 Aug-21 85 Oct-21 108 Dec-21 170 Feb-22 140 Apr-22 138 Jun-22 100 Aug-22 85 Oct-22 118 Dec-22 115 Feb-23 112
+[p029_c0008] _Master Page # 29 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 30
+
+### [p030_c0001] Bridges and Tunnels
+### [p030_c0002] MTA Bridges and Tunnels
+[p030_c0003] At Bridges and Tunnels, we continue to place strong emphasis on revenue protection & recovery coupled with a focus upon safety & security as our key factors in our delivery of service. Through enhanced efforts to interdict identified persistent toll violators, for the first quarter of 2023 we have seen an increase of 56.4% over 1Q2022 with an increase of 25.4% in February of the same years. Summons issuance for safety and revenue related violations for 1Q2023 has also increased 93.3% over 1Q2022 and increased 8.7% when comparing only February for each year.
+[p030_c0004] Intra- and inter-agency toll enforcement efforts continue at B&T and we thank our regional partners for participating along with us. Enforcement of covered/obstructed/altered license plates and other safety-related violations not only creates a direct, positive effect on B&T's ability to collect tolls owed to us by our customers but enhances safety & security throughout the region for other types of enforcement efforts such as red light cameras and school-zone speed cameras. Finally, persistent toll violator enforcement brings more than simply the toll revenue that is owed to the MTA as it ultimately creates an even playing field for those using our facilities and paying their fair share for each and every crossing.
+[p030_c0005] _Master Page # 30 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 31
+
+### [p031_c0001] Bridges and Tunnels
+### [p031_c0002] Bridges and Tunnels Summonses
+[p031_c0003] All summonses issued by B&T Officers for violations including covered/obstructed plates, moving violations, etc.
+> [p031_c0004] Month Summons Feb-20 2050 Apr-20 850 Jun-20 100 Aug-20 200 Oct-20 200 Dec-20 400 Feb-21 1000 Apr-21 1700 Jun-21 1050 Aug-21 350 Oct-21 800 Dec-21 750 Feb-22 1100 Apr-22 850 Jun-22 650 Aug-22 880 Oct-22 880 Dec-22 1250 Feb-23 1800
+### [p031_c0005] Bridges and Tunnels License Plate Interdictions
+[p031_c0006] Vehicles remanded for tow due to non-payment of tolls.
+> [p031_c0007] Month Interdictions Feb-20 135 Apr-20 30 Jun-20 0 Aug-20 0 Oct-20 0 Dec-20 30 Feb-21 100 Apr-21 60 Jun-21 110 Aug-21 40 Oct-21 100 Dec-21 120 Feb-22 175 Apr-22 150 Jun-22 100 Aug-22 118 Oct-22 170 Dec-22 145 Feb-23 155
+[p031_c0008] _Master Page # 31 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 32
+
+### [p032_c0001] Metro-North Railroad (MNR) System Safety Overview
+[p032_c0002] Shelley Prettyman Vice President, System Safety April 2023
+> [p032_c0003] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+[p032_c0004] _Master Page # 32 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 33
+
+### [p033_c0001] MNR Office of System Safety (OSS) Divisions
+- [p033_c0002] ■ Field Safety Operations and Investigations ■ Emergency Management and Fire Safety ■ Risk Reduction ■ Safety Analytics and Education ■ Drug and Alcohol Testing
+> [p033_c0003] A group of four MTA personnel, including two in high-visibility vests and two in uniform, are standing in front of a white fire truck. They are holding small green pamphlets or brochures. The background shows a street with a railroad crossing and a red stop sign.
+> [p033_c0004] A person wearing a grey t-shirt with 'FIRE' printed on the back and a high-visibility vest is standing inside a modern, brightly lit tunnel. The tunnel walls are made of reflective panels, and there are other people visible in the distance.
+> [p033_c0005] The MTA logo, which consists of the letters 'MTA' in a bold, sans-serif font inside a dark grey circle.
+[p033_c0006] _Master Page # 33 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 34
+
+### [p034_c0001] MNR OSS Divisions
+- [p034_c0002] ■ Emergency Management and Fire Safety ■ Emergency management planning and preparedness ■ EMS and Fire Response – GCT Fire Brigade, Fire Marshals ■ Systemwide Fire Prevention Program ■ Fire/Life Safety Code Compliance ■ First responder coordination and training
+- [p034_c0003] ■ Risk Reduction ■ Hazard Analysis ■ Industrial Hygiene ■ Environmental Compliance ■ Safety Engineering
+> [p034_c0004] A photograph showing two fire trucks with their emergency lights on, parked in a subway station. A sign in the background reads "TO MAIN CONCOURSE • METRO-NORTH • SUBWAY".
+> [p034_c0005] A photograph showing three workers in high-visibility safety vests and hard hats standing in a subway maintenance area, looking at equipment.
+> [p034_c0006] The MTA logo, consisting of the letters "MTA" in a bold, sans-serif font inside a dark circle.
+[p034_c0007] _Master Page # 34 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 35
+
+### [p035_c0001] MNR OSS Divisions
+- [p035_c0002] ■ Safety Analytics and Initiatives ■ Safety data collection and analysis ■ Internal and external reporting ■ TRACKS safety education and outreach programs ■ Federal and Company Drug & Alcohol Testing ■ Pre-employment, post-accident/incident, and random testing ■ Follow-up program ■ Contractor oversight
+[p035_c0003] _Master Page # 35 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 36
+
+### [p036_c0001] Field Safety Operations & Investigations
+- [p036_c0002] ■ Incident Investigations (Customer, Employee, Property) ■ Operational Incident Investigations ■ Roadway Worker Protection Audit Group ■ Field Audits, Inspections, Yard & ROW Cleanups ■ District Safety Committees ■ Grade Crossing Safety
+[p036_c0003] _Master Page # 36 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 37
+
+### [p037_c0001] Incident Investigations
+- [p037_c0002] ■ Each incident and injury documented and investigated ■ Field Safety Managers assigned by District ■ Investigations conducted in partnership with operations ■ Interviews, site/equipment inspections, procedural reviews, tool/equipment reviews ■ Immediate remediations as appropriate ■ OSS staff review status daily to closeout ■ Root causes, contributing factors, corrective actions identified and documented for follow-up ■ Rotating biweekly meetings with departments review key cases in depth ■ Key incidents and trends shared with Operations Training
+[p037_c0003]
+
+```text
+Initial Report of Incident (IR-1) rev 12/2023 Metro-North Railroad Division of System Safety Incident Type (Check One Only) Employee Injury Employee Illness Transportation Strike by Train Assault Employee Death Property Damage Other Motor Vehicle Accident Injuries/Involved Person Name: Title: Department: Employee No.: Complete only for Non-Employee Injury/Incident Date: Time: Out person directly or plan to take a train? Yes No Location of Incident (Check One Only) New Haven Yard New Haven Line New Haven Station Laundry Station White Plains Branch West of Hudson Specific Location of Incident (Please be as descriptive as possible) Employee No. Location: On Duty Off Duty District (Check One Only) Union New Haven District New Haven Stamford NY/NJ Incident Description (Please provide as much information as available at the time of submission) Date/Time of Incident Medical Treatment (Check One Only) Date: No injury reported at this time Time: Referred Medical Illustration Date/Time of Notification *Please ensure that the most recent INCIDENT REPORTING FORM is used. Date: Name of Medical Facility and Means of Transport Time: Name of Medical Facility and Means of Transport Name: Responsible Not Responsible Name/Mobile: Ambulance Company Vehicle Personal Vehicle Name: Title: Department: Employee No. (Include area code): This form must be submitted within 24 hours of the incident. If the incident occurs on a weekend or holiday, it must be submitted no later than end of shift, after the occurrence. Check here for revised IR-1 EMAIL: MSR1@mta.ny.gov
+```
+[p037_c0004] _Master Page # 37 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 38
+
+### [p038_c0001] Operational Incident Investigations
+- [p038_c0002] ■ OSS leads investigation of operational incidents through a committee process ■ OSS Investigators report on scene to initiate the investigation with operations leads ■ Documentation of the site ■ Interviews, audio and video reviews, documentation/procedure reviews ■ Equipment and infrastructure inspections ■ Interdepartmental committee convened to review evidence, determine root causes and contributing factors, and establish corrective actions ■ Corrective actions tracked through closeout ■ Findings and trends reviewed/communicated in multiple forums and shared with Operations Training
+> [p038_c0003] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+[p038_c0004] _Master Page # 38 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 39
+
+### [p039_c0001] Programs and Initiatives
+- [p039_c0002] ■ Roadway Worker Protection Audit Group ■ Group includes managers from operating departments, Operating Rules, Operations Training, and OSS ■ Conduct audits on and about the tracks for compliance with Roadway Worker Protection rules and MNR Safety Rules ■ Interactive discussions held with employees on site ■ Field Audits, Inspections, Yard & Right of Way Cleanups ■ Regular proactive audits/inspections of stations, yards, shops, locations along ROW ■ Periodic cleanups of yards and ROW locations in collaboration with operations ■ District Safety Committees ■ Grade Crossing Safety Improvement Program
+> [p039_c0003] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+[p039_c0004] _Master Page # 39 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 40
+
+### [p040_c0001] Electronic Security Program at the MTA
+> [p040_c0002] A close-up photograph of a security camera mounted on a wall. The camera is a dome-style model with a black lens and a grey body. A small white label on the side of the camera reads "CAM #12" and "MTA 2012". The background is a blurred indoor setting with shelves and a red object.
+[p040_c0003] April 2023
+> [p040_c0004] The MTA logo, which consists of the letters "MTA" in a bold, sans-serif font inside a dark grey circle.
+[p040_c0005] _Master Page # 40 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 41
+
+### [p041_c0001] Electronic Security Program – NYCT
+- [p041_c0002] ■ Electronic Security System Landscape: ■ 100% of Stations cover by Cameras ■ 5392 cameras streaming to NYCT Security Command Center ■ Existing Rolling Stock retrofit with Cameras (218 existing cars + 10 R211) ■ 68.5% NYCT buses equipped with Cameras (4965 buses) ■ Additional enhancement ■ 8 stations equipped with Fare Evasion Video Analytics Detection ■ Pending 3 stations Video Analytics to mitigate: ■ track intrusion, crowding, erratic behaviors
+> [p041_c0003] The figure shows a mobile application interface titled "Current Occupancy Counts" with a subtitle "Current occupancy (24 hrs)". It displays four camera feeds with their respective occupancy counts: CAM03 (Hudson) (11,14,18) with a count of 15, CAM22 (GC Flushing) (4,17) with a count of 26, CAM04 (Union) (11,12,21) with a count of 33, and CAM27 (GC Flushing) (4,18) with a count of 40. Each feed includes a small thumbnail image of the station platform.
+[p041_c0004] _Master Page # 41 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 42
+
+### [p042_c0001] Electronic Security Program – NYCT Subway
+- [p042_c0002] ■ Subway Rolling Stock Cameras Deployment ■ Install existing train cars with Cameras ■ 2 cameras per train car ■ Installation currently underway ■ Cameras Equipped R211 Fleet ■ Typical layout of a 5 cars consist: ■ 8 passenger cameras ■ 2 interior 'cab' cameras ■ 1 forward facing camera ■ Mimic train operator's field of vision
+> [p042_c0003] A photograph showing the interior of a subway car. Several passengers are visible, some sitting and some standing. A green circular light is illuminated on the door panel. The car has a modern design with metallic handrails and large windows.
+> [p042_c0004] A photograph showing the interior of a subway car, focusing on the ceiling and handrails. The ceiling is white, and the handrails are metallic. The floor is a dark blue color. The car has a modern design with large windows.
+> [p042_c0005] A close-up photograph of a security camera mounted on the ceiling of a subway car. The camera is white and has a lens that is pointed towards the front of the car. The background shows the interior of the car, including the ceiling and handrails.
+> [p042_c0006] The MTA logo, which consists of the letters 'MTA' in a bold, sans-serif font, enclosed within a dark grey circle.
+[p042_c0007] _Master Page # 42 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 43
+
+### [p043_c0001] Electronic Security Program – NYCT cont.
+- [p043_c0002] ■ Current Installations: ■ LIDS Upgrade and Expansion – Portal Intrusion Detection ■ 13 locations ■ Intrusion detection sensors (LIDS), Cameras, Access Control ■ West 4th St – Installation of Full Station Electronic Security Systems (ESS) ■ Access control, Platform/Mezz Cameras, Portal LIDS ■ Passenger Identification Detection (PID) Cameras Expansion at 104+ stations with Streaming Ability ■ Major Projects in Design/Planning: ■ Intrusion Detection design for 11 station complexes ■ Spanning across 93 entries into non-public areas ■ Full Station Electronic Security System design for 3 stations ■ Passenger Identification Detection (PID) Camera design for 153+ stations
+> [p043_c0003] A security camera is mounted on a wall in a subway station. In the background, a person is standing near a turnstile, and a train is visible on the tracks. An "EXIT" sign is partially visible above the turnstile.
+> [p043_c0004] A view of a subway station platform. A train is stopped at the platform. A sign on the wall says "HP". The platform is illuminated by overhead lights.
+> [p043_c0005] The MTA logo, which consists of the letters "MTA" in a bold, sans-serif font inside a dark circle.
+[p043_c0006] _Master Page # 43 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 44
+
+### [p044_c0001] Electronic Security Program – B&T
+- [p044_c0002] ■ Electronic Security System Landscape: ■ 2159 total security cameras equipped at all facilities (7 bridges, 2 tunnels) ■ 40% of security cameras require upgrade ■ 2 Facilities (Robert F Kennedy & Bronx Whitestone Bridges) fully equipped with video analytics ■ Current Project Pending Award: AW-73 (HLCT & QMT) ■ Refresh/upgrade of all access control and video hardware, 100% roadway video coverage, intrusion detection ■ Closing tunnel roadway video gaps, reducing ability to intrude undetected, retiring EOL systems ■ Roadway and Security Video Analytics
+> [p044_c0003] A photograph showing a yellow taxi driving through a modern, brightly lit tunnel. The tunnel has white walls with blue horizontal stripes and a series of bright lights along the ceiling. Other vehicles are visible in the distance.
+> [p044_c0004] A composite image consisting of two parts. On the left, there is a close-up of a security camera mounted on a pole, with a fence and some greenery in the background. On the right, there is a wide view of a bridge over a river, with a city skyline visible in the distance.
+> [p044_c0005] The MTA logo, which consists of the letters 'MTA' in a bold, sans-serif font inside a dark circle.
+[p044_c0006] _Master Page # 44 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 45
+
+### [p045_c0001] Electronic Security Program - LRR
+- [p045_c0002] ■ Electronic Security System Landscape: ■ 100% rolling stock equipped with Cameras ■ 75% stations equipped with Cameras (94 stations) ■ 16 stations equipped with Video Analytics ■ Current Installations: ■ 37 station waiting rooms new Camera installation with Video Analytics support ■ 50 grade crossings Camera installation with Video Analytics support ■ Penn Station Renovation ■ Security enhancement (100 cameras installation) ■ Projects Pending: ■ 19 stations with planned security enhancement ■ Jamaica station security enhancement (Camera system expansion)
+> [p045_c0003] A photograph showing a person in a blue jacket looking at a train car. The train car has a 'New York City Transit Authority' logo and some text on it. The person is looking at the train car, which appears to be a modern, clean vehicle.
+> [p045_c0004] A photograph of a train car interior. There is a large screen displaying a map of New York City. The screen is labeled 'TRACKS 203-204 AND 303-304'. The interior of the train car is modern and clean.
+> [p045_c0005] A photograph of a train station platform. There is a large screen displaying a map of New York City. The platform is modern and clean, with people walking around.
+> [p045_c0006] The MTA logo, which consists of the letters 'MTA' in a stylized font inside a circle.
+[p045_c0007] _Master Page # 45 of 46 - Safety/Security Committee Meeting 4/24/2023_
+
+## Page 46
+
+### [p046_c0001] Electronic Security Program - MNR
+- [p046_c0002] ■ Electronic Security System Landscape: ■ 98% rolling stock equipped with Cameras ■ 44% stations equipped with Cameras (55 stations) ■ Current Project in Progress: ■ Grand Central Terminal Security System 'State of Good Repair' Design ■ Refresh all security systems to updated technologies ■ Create a roadmap for future improvements and expansion ■ Future train Cameras data offload capability
+[p046_c0003] _Master Page # 46 of 46 - Safety/Security Committee Meeting 4/24/2023_

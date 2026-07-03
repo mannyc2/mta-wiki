@@ -1,0 +1,115 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:35:28.252Z",
+  "packet_path": "data/identity-review/packets/corridor_cluster_ea099a9e1f.md",
+  "cluster_id": "corridor_cluster_ea099a9e1f",
+  "kind": "corridor",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "corridor_cluster_ea099a9e1f",
+    "kind": "corridor",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "corridor_broadway-manhattan-upper",
+          "corridor_broadway-queens"
+        ],
+        "reason": "Different boroughs (Manhattan vs Queens) per contradictory strong identity field 'borough', per Decision Test 1 and corridor rule: same street name with differing borough never merges."
+      },
+      {
+        "record_ids": [
+          "corridor_broadway-manhattan-upper",
+          "corridor_bus-fwd-2-broadway-bronx-local"
+        ],
+        "reason": "Different boroughs (Manhattan vs Bronx) per contradictory strong identity field 'borough', per Decision Test 1 and corridor rule."
+      },
+      {
+        "record_ids": [
+          "corridor_broadway-manhattan-upper",
+          "corridor_woodhaven-cross-bay-blvds"
+        ],
+        "reason": "Different street name (Broadway vs Woodhaven/Cross Bay Boulevards) and different limits/borough scope; strong identity fields 'street' and 'borough' contradict, per Decision Test 1 and corridor rule."
+      },
+      {
+        "record_ids": [
+          "corridor_broadway-queens",
+          "corridor_bus-fwd-2-broadway-bronx-local"
+        ],
+        "reason": "Different boroughs (Queens vs Bronx) per contradictory strong identity field 'borough', per Decision Test 1 and corridor rule."
+      },
+      {
+        "record_ids": [
+          "corridor_broadway-queens",
+          "corridor_woodhaven-cross-bay-blvds"
+        ],
+        "reason": "Different street name (Broadway vs Woodhaven/Cross Bay Boulevards) and different limits; strong identity fields 'street' and 'limits' contradict, per Decision Test 1 and corridor rule."
+      },
+      {
+        "record_ids": [
+          "corridor_bus-fwd-2-broadway-bronx-local",
+          "corridor_woodhaven-cross-bay-blvds"
+        ],
+        "reason": "Different boroughs (Bronx vs Queens) and different street name; per Decision Test 1 and corridor rule: same street name with differing borough never merges."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "corridor_broadway-manhattan-upper",
+        "aliases": [
+          "corridor_broadway",
+          "corridor_broadway-157th-st-to-220th-st",
+          "corridor_broadway-157th-st-to-220th-st-manhattan",
+          "corridor_broadway-157th-220th-manhattan-mar2025"
+        ],
+        "reason": "Source-local naming variants; useful for search, not merge authority."
+      },
+      {
+        "record_id": "corridor_broadway-queens",
+        "aliases": [
+          "corridor_broadway",
+          "corridor_broadway-69th-st-to-roosevelt-ave-queens",
+          "corridor_broadway-bqe-to-roosevelt-ave-2026",
+          "corridor_broadway-bqe-to-roosevelt-ave-queens",
+          "corridor_broadway-queens-apr2019"
+        ],
+        "reason": "Source-local naming variants; useful for search, not merge authority."
+      },
+      {
+        "record_id": "corridor_bus-fwd-2-broadway-bronx-local",
+        "aliases": [
+          "corridor_broadway",
+          "corridor_broadway-bronx-225-230",
+          "corridor_broadway-bronx-225-st-to-230-st",
+          "corridor_broadway-bronx-w-225th-st-to-w-231st-st"
+        ],
+        "reason": "Source-local naming variants; useful for search, not merge authority."
+      },
+      {
+        "record_id": "corridor_woodhaven-cross-bay-blvds",
+        "aliases": [
+          "corridor_broadway-and-cross-bay-blvd",
+          "corridor_broadway-and-cross-bay-blvd-sbs-corridor",
+          "corridor_broadway-cross-bay-queens-map",
+          "corridor_cross-bay-blvd",
+          "corridor_cross-bay-blvd-dw4",
+          "corridor_cross-bay-blvd-q52-q53-sbs-corridor",
+          "corridor_cross-bay-blvd-sbs-may2016",
+          "corridor_woodhaven-and-cross-bay-boulevards"
+        ],
+        "reason": "Source-local naming variants; 'Broadway' is one of the streets in this corridor but does not make it the same as the Broadway segment corridors."
+      }
+    ],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "All candidate edges involve corridors sharing the base street name 'Broadway' but differing in boroughs (Manhattan, Queens, Bronx) and/or street identity (Broadway vs Woodhaven/Cross Bay). The Identity Merge Canon explicitly forbids merging when boroughs differ, and also when limits or street names differ. No pair passes the Same-Object test (Test 2). All pairs are resolved as do_not_merge under Decision Test 1 (Contradiction test) and the per-kind corridor rule. No ambiguity exists."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-35-13-869Z_1282984-b8e73fa8_identity-review-run_corridor-cluster-ea099a9e1f",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-35-13-870Z_2026-06-23T14-35-13-869Z_1282984-b8e73fa8_identity-review-run_corridor-cluster-ea099a9e1f.jsonl"
+}

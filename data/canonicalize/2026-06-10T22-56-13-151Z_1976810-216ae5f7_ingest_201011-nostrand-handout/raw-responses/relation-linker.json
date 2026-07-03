@@ -1,0 +1,261 @@
+{
+  "run_id": "2026-06-10T22-56-13-151Z_1976810-216ae5f7_ingest_201011-nostrand-handout",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T01:07:01.009Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "rel-001-sbs-faster-trips",
+        "local_observation_id": "metric_sbs_faster_trips_15_20_pct_201011",
+        "decision": "uncertain",
+        "rationale": "The evidence quote '15% to 20% faster trips' alone does not explicitly name the subject route. The scope mentions Bx12 SBS and M15 SBS but that metadata is not part of the cited evidence block. Cannot determine which specific route/corridor to relate from the cited text alone.",
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p003_c0007",
+            "source_quote": "15% to 20% faster trips"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-002-sbs-bus-stop-time",
+        "local_observation_id": "metric_sbs_bus_stop_time_reduction_33_pct_201011",
+        "decision": "uncertain",
+        "rationale": "The evidence quote '33% reduction in time spent at bus stops' alone does not explicitly name the subject route. The scope mentions Bx12 SBS and M15 SBS but the cited evidence block does not name a specific subject.",
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p003_c0007",
+            "source_quote": "33% reduction in time spent at bus stops"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-003-sbs-travel-time",
+        "local_observation_id": "metric_sbs_travel_time_reduction_10_pct_201011",
+        "decision": "uncertain",
+        "rationale": "The evidence quote '10% reduction in all other travel time' alone does not explicitly name the subject route. The scope mentions Bx12 SBS and M15 SBS but not in cited evidence text.",
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p003_c0007",
+            "source_quote": "10% reduction in all other travel time"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-004-sbs-customer-sat",
+        "local_observation_id": "metric_sbs_customer_satisfaction_90_pct_201011",
+        "decision": "uncertain",
+        "rationale": "The evidence quote 'Over 90% customer satisfaction' alone does not explicitly name the subject route. Metadata cites Bx12 SBS and M15 SBS scope but not in cited evidence.",
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p003_c0007",
+            "source_quote": "Over 90% customer satisfaction"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-005-sbs-ridership",
+        "local_observation_id": "metric_sbs_ridership_increase_10_pct_201011",
+        "decision": "uncertain",
+        "rationale": "The evidence quote '10% ridership increase on the entire route, including SBS and local' does not explicitly name the subject route. Cannot determine specific route from cited text alone.",
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p003_c0007",
+            "source_quote": "10% ridership increase on the entire route, including SBS and local"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-006-b44-ridership",
+        "local_observation_id": "metric_b44_daily_ridership_44000_201011",
+        "decision": "skip",
+        "rationale": "Already linked via existing relation: has_metric route_b44-sbs -> metric_b44-daily-ridership-44000-201011.",
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p001_c0004",
+            "source_quote": "the 44,000 daily riders on the B44 route"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-007-similar-results",
+        "local_observation_id": "claim_similar_results_expected_nostrand_201011",
+        "decision": "relate",
+        "rationale": "The cited text explicitly names Nostrand and Rogers Avenues as the target for achieving similar SBS results. The subject project is project_nostrand-rogers-sbs.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "claim_similar-results-expected-nostrand-201011",
+            "description": "DOT and NYCT hope to achieve similar SBS results on Nostrand and Rogers Avenues",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p003_c0008",
+                "source_quote": "DOT and NYCT hope to achieve similar results on Nostrand and Rogers Avenues."
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p003_c0008",
+            "source_quote": "DOT and NYCT hope to achieve similar results on Nostrand and Rogers Avenues."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-008-merchant-survey-claim",
+        "local_observation_id": "claim_merchant_survey_loading_parking_201011",
+        "decision": "relate",
+        "rationale": "The cited text explicitly names Nostrand, Rogers, and Bedford Avenues regarding the merchant survey. The subject project is project_nostrand-rogers-sbs.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "claim_merchant-survey-loading-parking-201011",
+            "description": "Merchant survey along Nostrand, Rogers, and Bedford Avenues about loading and parking needs",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p002_c0011",
+                "source_quote": "Over 1,500 businesses along Nostrand, Rogers, and Bedford Avenues are being asked to complete a survey about their loading and parking needs by the end of July 2011. This information will guide DOT in improving curb regulations in order to discourage double-parking."
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p002_c0011",
+            "source_quote": "Over 1,500 businesses along Nostrand, Rogers, and Bedford Avenues are being asked to complete a survey about their loading and parking needs by the end of July 2011. This information will guide DOT in improving curb regulations in order to discourage double-parking."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-009-final-design-event",
+        "local_observation_id": "event_nostrand_sbs_final_design_201011",
+        "decision": "relate",
+        "rationale": "The cited text describes the Final Design phase on the Nostrand/Rogers SBS project timeline. The subject project is project_nostrand-rogers-sbs.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_nostrand-sbs-final-design-201011",
+            "description": "Final Design phase of Nostrand/Rogers SBS from Summer 2011 to Fall 2011",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p003_c0004",
+                "source_quote": "Final Design: A teal arrow spans from Summer 2011 to Fall 2011."
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p003_c0004",
+            "source_quote": "Final Design: A teal arrow spans from Summer 2011 to Fall 2011."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-010-construction-event",
+        "local_observation_id": "event_nostrand_sbs_construction_201011",
+        "decision": "relate",
+        "rationale": "The cited text describes the Construction phase on the Nostrand/Rogers SBS project timeline. The subject project is project_nostrand-rogers-sbs.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_nostrand-sbs-construction-201011",
+            "description": "Construction phase of Nostrand/Rogers SBS from Spring 2012 to Fall 2012",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p003_c0004",
+                "source_quote": "Construction: A green arrow spans from Spring 2012 to Fall 2012."
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p003_c0004",
+            "source_quote": "Construction: A green arrow spans from Spring 2012 to Fall 2012."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-011-service-start-event",
+        "local_observation_id": "event_nostrand_sbs_service_start_201011",
+        "decision": "relate",
+        "rationale": "The cited text describes the Start of SBS Service on the Nostrand/Rogers SBS project timeline. The subject project is project_nostrand-rogers-sbs.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_nostrand-sbs-service-start-201011",
+            "description": "Start of SBS Service on Nostrand/Rogers from Winter 2012-2013 onwards",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p003_c0004",
+                "source_quote": "Start of SBS Service: A blue arrow spans from Winter 2012-2013 onwards."
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p003_c0004",
+            "source_quote": "Start of SBS Service: A blue arrow spans from Winter 2012-2013 onwards."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-012-merchant-survey-event",
+        "local_observation_id": "event_merchant_survey_deadline_201011",
+        "decision": "relate",
+        "rationale": "The cited text names Nostrand, Rogers, and Bedford Avenues as the subject of the merchant survey. The subject project is project_nostrand-rogers-sbs.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_merchant-survey-deadline-201011",
+            "description": "Merchant survey deadline for the Nostrand/Rogers SBS project at end of July 2011",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p002_c0011",
+                "source_quote": "Over 1,500 businesses along Nostrand, Rogers, and Bedford Avenues are being asked to complete a survey about their loading and parking needs by the end of July 2011."
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p002_c0011",
+            "source_quote": "Over 1,500 businesses along Nostrand, Rogers, and Bedford Avenues are being asked to complete a survey about their loading and parking needs by the end of July 2011."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-47-190Z_2111393-d5e75d3d_canonicalize_2026-06-10t22-56-13-151z-1976810-216ae5f7-ingest-201011-nostrand-handout-relation-linker"
+}

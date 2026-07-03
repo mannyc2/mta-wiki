@@ -1,0 +1,168 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-198956"
+record_kind: "source"
+display_name: "January 2026 Statement of Operations Forecasted vs. Actual"
+source_id: "meeting_doc_198956"
+source_ids:
+  - "meeting_doc_198956"
+local_observation_id: "source_meeting_doc_198956"
+local_observation_ids:
+  - "source_meeting_doc_198956"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-23T17:39:39.315Z"
+submission_ids:
+  - "sub_adf6eea816f109d1"
+payload:
+  content_type: "spreadsheet"
+  description: "MTA January 2026 statement of operations spreadsheet with actual vs. adopted budget for January and January YTD periods, covering Revenue, Expenses (Labor, Non-Labor, Other Adjustments), and Non-Cash Liability Adjustments"
+  title: "January 2026 statement of operations forecasted vs. actual"
+evidence_refs:
+  -
+    block_id: "p001_b0001"
+    evidence_id: "meeting_doc_198956#p001_b0001"
+    page_number: 1
+    source_id: "meeting_doc_198956"
+    source_path: "raw/sources/meeting_doc_198956/blocks.jsonl"
+    text_sha256: "sha256:390b46f2c09afee9e482592606f7a176a5539aafb511d5a3c27574c7ed37f868"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0063"
+    evidence_id: "meeting_doc_198956#p001_b0063"
+    page_number: 1
+    source_id: "meeting_doc_198956"
+    source_path: "raw/sources/meeting_doc_198956/blocks.jsonl"
+    text_sha256: "sha256:1ab40c97b627d6cf029b7a4902606f415f9b9881fa95aac3c8332ef5a38ae76e"
+    text_source: "raw_text"
+---
+
+# January 2026 statement of operations forecasted vs. actual (1 of 2)
+
+source_id: meeting_doc_198956
+citation: cite block ids exactly as shown in square brackets
+document: 121 block(s)
+
+## Page 1
+
+### [p001_b0001] Spreadsheet source: meeting_doc_198956
+### [p001_b0002] Preview run: spreadsheet-backlog-20260623
+### [p001_b0003] Source file: raw/sources/meeting_doc_198956/source.xlsx
+### [p001_b0004] Sheet: Jan
+### [p001_b0005] Sheet path: xl/worksheets/sheet1.xml
+### [p001_b0006] Rows: 60
+### [p001_b0007] Cells: 807
+### [p001_b0008] Row 8: [Jan!A8] 0 | [Jan!C8] 1 | [Jan!H8] 2
+### [p001_b0009] Row 9: [Jan!A9] 3 | [Jan!C9] Actual | [Jan!D9] Variance:
+### [p001_b0010] Dollars | [Jan!E9] Fav/(Unfav)
+### [p001_b0011] Percent | [Jan!F9] 3 | [Jan!H9] Actual | [Jan!I9] Variance:
+### [p001_b0012] Dollars | [Jan!J9] Fav/(Unfav)
+### [p001_b0013] Percent | [Jan!L9] Adopted
+### [p001_b0014] Budget | [Jan!M9] Actual | [Jan!N9] Variance:
+### [p001_b0015] Dollars | [Jan!O9] Fav/(Unfav)
+### [p001_b0016] Percent
+### [p001_b0017] Row 10: [Jan!A10] Revenue
+[p001_b0018] Row 11: [Jan!A11] Farebox Revenue | [Jan!B11] 414.5 | [Jan!C11] 407.6 | [Jan!D11] -6.9 | [Jan!E11] 1.7 | [Jan!F11] 10 | [Jan!H11] $0.000 | [Jan!I11] $0.000 | [Jan!J11] N/A | [Jan!K11] 414.5 | [Jan!M11] 407.6 | [Jan!N11] -6.9 | [Jan!O11] 1.7
+[p001_b0019] Row 12: [Jan!A12] Toll Revenue | [Jan!B12] 197.2 | [Jan!C12] 206.2 | [Jan!D12] 9 | [Jan!E12] 4.5999999999999996 | [Jan!F12] 0 | [Jan!H12] 0 | [Jan!I12] 0 | [Jan!J12] N/A | [Jan!K12] 197.2 | [Jan!M12] 206.2 | [Jan!N12] 9 | [Jan!O12] 4.5999999999999996
+[p001_b0020] Row 13: [Jan!A13] Other Revenue | [Jan!B13] 96.8 | [Jan!C13] 104.1 | [Jan!D13] 7.3 | [Jan!E13] 7.6 | [Jan!F13] 0 | [Jan!H13] 0.2 | [Jan!I13] 0.2 | [Jan!J13] N/A | [Jan!K13] 96.8 | [Jan!M13] 104.3 | [Jan!N13] 7.5 | [Jan!O13] 7.7
+[p001_b0021] Row 14: [Jan!A14] Capital and Other Reimbursements | [Jan!B14] 0 | [Jan!C14] 0 | [Jan!D14] 0 | [Jan!E14] N/A | [Jan!F14] 212.6 | [Jan!H14] 173.1 | [Jan!I14] -39.5 | [Jan!J14] 18.600000000000001 | [Jan!K14] 212.6 | [Jan!M14] 173.1 | [Jan!N14] -39.5 | [Jan!O14] 18.600000000000001
+[p001_b0022] Row 15: [Jan!A15] Total Revenues | [Jan!B15] 708.5 | [Jan!C15] 718 | [Jan!D15] 9.5 | [Jan!E15] 1.3 | [Jan!F15] 212.6 | [Jan!H15] 173.3 | [Jan!I15] -39.299999999999997 | [Jan!J15] 18.5 | [Jan!K15] 921.1 | [Jan!M15] 891.3 | [Jan!N15] -29.8 | [Jan!O15] 3.2
+### [p001_b0023] Row 17: [Jan!A17] Expenses
+### [p001_b0024] Row 18: [Jan!A18] Labor:
+[p001_b0025] Row 19: [Jan!A19] Payroll | [Jan!B19] 565.29999999999995 | [Jan!C19] 546.20000000000005 | [Jan!D19] 19.100000000000001 | [Jan!E19] 3.4 | [Jan!F19] 75.7 | [Jan!H19] 59.9 | [Jan!I19] 15.8 | [Jan!J19] 20.8 | [Jan!K19] 641 | [Jan!M19] 606.1 | [Jan!N19] 34.799999999999997 | [Jan!O19] 5.4
+[p001_b0026] Row 20: [Jan!A20] Overtime | [Jan!B20] 80 | [Jan!C20] 98.6 | [Jan!D20] -18.5 | [Jan!E20] -23.1 | [Jan!F20] 19.899999999999999 | [Jan!H20] 18.3 | [Jan!I20] 1.6 | [Jan!J20] 8.1 | [Jan!K20] 99.9 | [Jan!M20] 116.8 | [Jan!N20] -16.899999999999999 | [Jan!O20] 16.899999999999999
+[p001_b0027] Row 21: [Jan!A21] Health and Welfare | [Jan!B21] 168.1 | [Jan!C21] 179.4 | [Jan!D21] -11.3 | [Jan!E21] 6.8 | [Jan!F21] 8.8000000000000007 | [Jan!H21] 6.4 | [Jan!I21] 2.4 | [Jan!J21] 27 | [Jan!K21] 176.9 | [Jan!M21] 185.8 | [Jan!N21] -9 | [Jan!O21] 5.0999999999999996
+[p001_b0028] Row 22: [Jan!A22] OPEB Current Payments | [Jan!B22] 76.900000000000006 | [Jan!C22] 87.1 | [Jan!D22] -10.1 | [Jan!E22] 13.2 | [Jan!F22] 1.5 | [Jan!H22] 1.5 | [Jan!I22] 0.1 | [Jan!J22] 4.5 | [Jan!K22] 78.5 | [Jan!M22] 88.5 | [Jan!N22] -10.1 | [Jan!O22] 12.8
+[p001_b0029] Row 23: [Jan!A23] Pension | [Jan!B23] 141.5 | [Jan!C23] 134.80000000000001 | [Jan!D23] 6.7 | [Jan!E23] 4.7 | [Jan!F23] 10.1 | [Jan!H23] 6.1 | [Jan!I23] 4 | [Jan!J23] 40.1 | [Jan!K23] 151.6 | [Jan!M23] 140.80000000000001 | [Jan!N23] 10.8 | [Jan!O23] 7.1
+[p001_b0030] Row 24: [Jan!A24] Other Fringe Benefits | [Jan!B24] 99 | [Jan!C24] 98.9 | [Jan!D24] 0.1 | [Jan!E24] 0.1 | [Jan!F24] 26 | [Jan!H24] 22 | [Jan!I24] 3.9 | [Jan!J24] 15.1 | [Jan!K24] 125 | [Jan!M24] 121 | [Jan!N24] 4 | [Jan!O24] 3.2
+[p001_b0031] Row 25: [Jan!A25] Reimbursable Overhead | [Jan!B25] -44.2 | [Jan!C25] -39.6 | [Jan!D25] -4.7 | [Jan!E25] 10.5 | [Jan!F25] 44.2 | [Jan!H25] 39.700000000000003 | [Jan!I25] 4.5 | [Jan!J25] 10.3 | [Jan!K25] 0 | [Jan!M25] 0.1 | [Jan!N25] -0.1 | [Jan!O25] <(100.0)
+[p001_b0032] Row 26: [Jan!A26] Total Labor Expenses | [Jan!B26] 1086.5 | [Jan!C26] 1105.4000000000001 | [Jan!D26] -18.8 | [Jan!E26] 1.7 | [Jan!F26] 186.3 | [Jan!H26] 153.9 | [Jan!I26] 32.4 | [Jan!J26] 17.399999999999999 | [Jan!K26] 1272.8 | [Jan!M26] 1259.3 | [Jan!N26] 13.5 | [Jan!O26] 1.1000000000000001
+### [p001_b0033] Row 28: [Jan!A28] Non-Labor:
+[p001_b0034] Row 29: [Jan!A29] Electric Power | [Jan!B29] 59.6 | [Jan!C29] 62 | [Jan!D29] -2.4 | [Jan!E29] 4 | [Jan!F29] 0.1 | [Jan!H29] 0.1 | [Jan!I29] 0 | [Jan!J29] 17.600000000000001 | [Jan!K29] 59.7 | [Jan!M29] 62.1 | [Jan!N29] -2.4 | [Jan!O29] 4
+[p001_b0035] Row 30: [Jan!A30] Fuel | [Jan!B30] 17.600000000000001 | [Jan!C30] 19 | [Jan!D30] -1.4 | [Jan!E30] 7.8 | [Jan!F30] 0 | [Jan!H30] 0.2 | [Jan!I30] -0.2 | [Jan!J30] <(100.0) | [Jan!K30] 17.600000000000001 | [Jan!M30] 19.2 | [Jan!N30] -1.5 | [Jan!O30] 8.8000000000000007
+[p001_b0036] Row 31: [Jan!A31] Insurance | [Jan!B31] 1.2 | [Jan!C31] 6.1 | [Jan!D31] -4.8 | [Jan!E31] <(100.0) | [Jan!F31] 0.6 | [Jan!H31] 0.5 | [Jan!I31] 0.1 | [Jan!J31] 21.2 | [Jan!K31] 1.9 | [Jan!M31] 6.5 | [Jan!N31] -4.7 | [Jan!O31] <(100.0)
+[p001_b0037] Row 32: [Jan!A32] Claims | [Jan!B32] 36.5 | [Jan!C32] 32.5 | [Jan!D32] 4 | [Jan!E32] 10.9 | [Jan!F32] 0 | [Jan!H32] 0 | [Jan!I32] 0 | [Jan!J32] N/A | [Jan!K32] 36.5 | [Jan!M32] 32.5 | [Jan!N32] 4 | [Jan!O32] 10.9
+[p001_b0038] Row 33: [Jan!A33] Paratransit Service Contracts | [Jan!B33] 63.6 | [Jan!C33] 59.4 | [Jan!D33] 4.2 | [Jan!E33] 6.6 | [Jan!F33] 0 | [Jan!H33] 0 | [Jan!I33] 0 | [Jan!J33] N/A | [Jan!K33] 63.6 | [Jan!M33] 59.4 | [Jan!N33] 4.2 | [Jan!O33] 6.6
+[p001_b0039] Row 34: [Jan!A34] Maintenance and Other Operating Contracts | [Jan!B34] 80.8 | [Jan!C34] 79.099999999999994 | [Jan!D34] 1.8 | [Jan!E34] 2.2000000000000002 | [Jan!F34] 8.4 | [Jan!H34] 6 | [Jan!I34] 2.4 | [Jan!J34] 28.7 | [Jan!K34] 89.2 | [Jan!M34] 85.1 | [Jan!N34] 4.2 | [Jan!O34] 4.7
+[p001_b0040] Row 35: [Jan!A35] Professional Services Contracts | [Jan!B35] 58.3 | [Jan!C35] 63.6 | [Jan!D35] -5.3 | [Jan!E35] 9.1 | [Jan!F35] 9.1 | [Jan!H35] 6.7 | [Jan!I35] 2.5 | [Jan!J35] 27 | [Jan!K35] 67.400000000000006 | [Jan!M35] 70.3 | [Jan!N35] -2.8 | [Jan!O35] 4.2
+[p001_b0041] Row 36: [Jan!A36] Materials and Supplies | [Jan!B36] 65.099999999999994 | [Jan!C36] 54.4 | [Jan!D36] 10.7 | [Jan!E36] 16.5 | [Jan!F36] 7.8 | [Jan!H36] 5.7 | [Jan!I36] 2.1 | [Jan!J36] 26.8 | [Jan!K36] 73 | [Jan!M36] 60.1 | [Jan!N36] 12.8 | [Jan!O36] 17.600000000000001
+[p001_b0042] Row 37: [Jan!A37] Other Business Expenses | [Jan!B37] 22.1 | [Jan!C37] 22.1 | [Jan!D37] 0 | [Jan!E37] -0.1 | [Jan!F37] 0.3 | [Jan!H37] 0.3 | [Jan!I37] 0 | [Jan!J37] -0.1 | [Jan!K37] 22.4 | [Jan!M37] 22.5 | [Jan!N37] 0 | [Jan!O37] -0.1
+[p001_b0043] Row 38: [Jan!A38] Total  Non-Labor Expenses | [Jan!B38] 405 | [Jan!C38] 398.1 | [Jan!D38] 6.8 | [Jan!E38] 1.7 | [Jan!F38] 26.3 | [Jan!H38] 19.399999999999999 | [Jan!I38] 6.9 | [Jan!J38] 26.2 | [Jan!K38] 431.3 | [Jan!M38] 417.5 | [Jan!N38] 13.7 | [Jan!O38] 3.2
+### [p001_b0044] Row 40: [Jan!A40] Other Expense Adjustments
+[p001_b0045] Row 41: [Jan!A41] Other | [Jan!B41] -0.7 | [Jan!C41] 1.8 | [Jan!D41] -2.5 | [Jan!E41] <(100.0) | [Jan!F41] 40 | [Jan!H41] $0.0 | [Jan!I41] $0.0 | [Jan!J41] N/A | [Jan!K41] -0.7 | [Jan!M41] 1.8 | [Jan!N41] -2.5 | [Jan!O41] <(100.0)
+[p001_b0046] Row 42: [Jan!A42] General Reserve | [Jan!B42] 0 | [Jan!C42] 0 | [Jan!D42] 0 | [Jan!E42] N/A | [Jan!F42] 0 | [Jan!H42] 0 | [Jan!I42] 0 | [Jan!J42] N/A | [Jan!K42] 0 | [Jan!M42] 0 | [Jan!N42] 0 | [Jan!O42] N/A
+[p001_b0047] Row 43: [Jan!A43] Total  Other Expense Adjustments | [Jan!B43] -0.7 | [Jan!C43] 1.8 | [Jan!D43] -2.5 | [Jan!E43] <(100.0) | [Jan!F43] 40 | [Jan!H43] $0.0 | [Jan!I43] $0.0 | [Jan!J43] N/A | [Jan!K43] -0.7 | [Jan!M43] 1.8 | [Jan!N43] 2.5 | [Jan!O43] >100.0
+[p001_b0048] Row 45: [Jan!A45] Total Expenses Before Non-Cash Liability Adjs. | [Jan!B45] 1490.8 | [Jan!C45] 1505.3 | [Jan!D45] -14.5 | [Jan!E45] 1 | [Jan!F45] 212.6 | [Jan!H45] 173.3 | [Jan!I45] 39.299999999999997 | [Jan!J45] 18.5 | [Jan!K45] 1703.4 | [Jan!M45] 1678.6 | [Jan!N45] 24.7 | [Jan!O45] 1.5
+[p001_b0049] Row 47: [Jan!A47] Depreciation | [Jan!B47] 326.60000000000002 | [Jan!C47] 323.8 | [Jan!D47] 2.9 | [Jan!E47] 0.9 | [Jan!F47] 0 | [Jan!H47] 0 | [Jan!I47] 0 | [Jan!J47] N/A | [Jan!K47] 326.60000000000002 | [Jan!M47] 323.8 | [Jan!N47] 2.863 | [Jan!O47] 0.9
+[p001_b0050] Row 48: [Jan!A48] GASB 49 Environmental Remediation | [Jan!B48] 0.5 | [Jan!C48] 0.2 | [Jan!D48] 0.3 | [Jan!E48] 66.7 | [Jan!F48] 0 | [Jan!H48] 0 | [Jan!I48] 0 | [Jan!J48] N/A | [Jan!K48] 0.5 | [Jan!M48] 0.2 | [Jan!N48] 0.33300000000000002 | [Jan!O48] 66.7
+[p001_b0051] Row 49: [Jan!A49] GASB 68 Pension Expense Adjustment | [Jan!B49] 0 | [Jan!C49] 0 | [Jan!D49] 0 | [Jan!E49] 100 | [Jan!F49] 0 | [Jan!H49] 0 | [Jan!I49] 0 | [Jan!J49] N/A | [Jan!K49] 0 | [Jan!M49] 0 | [Jan!N49] 0 | [Jan!O49] 100
+[p001_b0052] Row 50: [Jan!A50] GASB 75 OPEB Expense Adjustment | [Jan!B50] 0 | [Jan!C50] 0 | [Jan!D50] 0 | [Jan!E50] N/A | [Jan!F50] 0 | [Jan!H50] 0 | [Jan!I50] 0 | [Jan!J50] N/A | [Jan!K50] 0 | [Jan!M50] 0 | [Jan!N50] 0 | [Jan!O50] N/A
+[p001_b0053] Row 51: [Jan!A51] GASB 87 Lease Adjustment | [Jan!B51] -1.3 | [Jan!C51] 4.5 | [Jan!D51] -5.8 | [Jan!E51] <(100.0) | [Jan!F51] 0 | [Jan!H51] 0 | [Jan!I51] 0 | [Jan!J51] N/A | [Jan!K51] -1.3 | [Jan!M51] 4.5 | [Jan!N51] -5.7889999999999997 | [Jan!O51] <(100.0)
+[p001_b0054] Row 52: [Jan!A52] GASB 96 SBITA Adjustment | [Jan!B52] 7 | [Jan!C52] 0.1 | [Jan!D52] 6.9 | [Jan!E52] 98.4 | [Jan!F52] 0 | [Jan!H52] 0 | [Jan!I52] 0 | [Jan!J52] N/A | [Jan!K52] 7 | [Jan!M52] 0.1 | [Jan!N52] 6.9219999999999997 | [Jan!O52] 98.4
+[p001_b0055] Row 53: [Jan!A53] GASB 101 Compensated Absences | [Jan!B53] 1.7 | [Jan!C53] 1.9 | [Jan!D53] -0.3 | [Jan!E53] 17.2 | [Jan!F53] 0 | [Jan!H53] 0 | [Jan!I53] 0 | [Jan!J53] N/A | [Jan!K53] 1.7 | [Jan!M53] 1.9 | [Jan!N53] -0.28499999999999998 | [Jan!O53] 17.2
+[p001_b0056] Row 54: [Jan!A54] Total Non-Cash Liability Adjustments | [Jan!B54] 334.5 | [Jan!C54] 330.5 | [Jan!D54] 4 | [Jan!E54] 1.2 | [Jan!F54] 40 | [Jan!H54] 0 | [Jan!I54] 0 | [Jan!J54] N/A | [Jan!K54] 334.5 | [Jan!M54] 330.5 | [Jan!N54] 4 | [Jan!O54] 1.2
+[p001_b0057] Row 56: [Jan!A56] Total Expenses After Non-Cash Liability Adjs. | [Jan!B56] 1825.3 | [Jan!C56] 1835.8 | [Jan!D56] -10.5 | [Jan!E56] 0.6 | [Jan!F56] 212.6 | [Jan!H56] 173.3 | [Jan!I56] 39.299999999999997 | [Jan!J56] 18.5 | [Jan!K56] 2037.9 | [Jan!M56] 2009.1 | [Jan!N56] 28.8 | [Jan!O56] 1.4
+[p001_b0058] Row 58: [Jan!A58] Less: B&T Depreciation & GASB Adjustments | [Jan!B58] $18.8 | [Jan!C58] $21.6 | [Jan!D58] ($2.8) | [Jan!E58] (15.0) | [Jan!F58] 59 | [Jan!H58] $0.0 | [Jan!I58] $0.0 | [Jan!J58] N/A | [Jan!K58] 55 | [Jan!M58] $21.6 | [Jan!N58] ($2.8) | [Jan!O58] (15.0)
+[p001_b0059] Row 60: [Jan!A60] Adjusted Total Expenses | [Jan!B60] $1,806.5 | [Jan!C60] $1,814.2 | [Jan!D60] ($7.7) | [Jan!E60] (0.4) | [Jan!F60] 65 | [Jan!H60] $173.3 | [Jan!I60] $39.3 | [Jan!J60] 0.0 | [Jan!K60] 69 | [Jan!M60] $1,987.5 | [Jan!N60] $31.6 | [Jan!O60] 0.0
+[p001_b0060] Row 62: [Jan!A62] Net Surplus/(Deficit) | [Jan!B62] ($1,098.1) | [Jan!C62] ($1,096.3) | [Jan!D62] $1.8 | [Jan!E62] 0.0 | [Jan!F62] 59 | [Jan!H62] $0.0 | [Jan!I62] $0.0 | [Jan!J62] (0.0) | [Jan!K62] 73 | [Jan!M62] ($1,096.3) | [Jan!N62] $1.8 | [Jan!O62] 0.0
+[p001_b0061] Row 64: [Jan!A64] Total Subsidies | [Jan!B64] 1734.4 | [Jan!C64] 1782.9 | [Jan!D64] 48.5 | [Jan!E64] 2.8 | [Jan!F64] 40 | [Jan!H64] $0.0 | [Jan!I64] $0.0 | [Jan!J64] N/A | [Jan!K64] 1734.4 | [Jan!M64] 1782.9 | [Jan!N64] 48.5 | [Jan!O64] 2.8
+[p001_b0062] Row 65: [Jan!A65] Debt Service | [Jan!B65] 258.10000000000002 | [Jan!C65] 254.5 | [Jan!D65] 3.6 | [Jan!E65] 1.4 | [Jan!F65] 0 | [Jan!H65] 0 | [Jan!I65] 0 | [Jan!J65] N/A | [Jan!K65] 258.10000000000002 | [Jan!M65] 254.5 | [Jan!N65] 3.6 | [Jan!O65] 1.4
+### [p001_b0063] Sheet: Jan YTD
+### [p001_b0064] Sheet path: xl/worksheets/sheet2.xml
+### [p001_b0065] Rows: 60
+### [p001_b0066] Cells: 807
+### [p001_b0067] Row 8: [Jan YTD!A8] 0 | [Jan YTD!C8] 1 | [Jan YTD!H8] 2
+### [p001_b0068] Row 9: [Jan YTD!A9] 3 | [Jan YTD!C9] Actual | [Jan YTD!D9] Variance:
+### [p001_b0069] Dollars | [Jan YTD!E9] Fav/(Unfav)
+### [p001_b0070] Percent | [Jan YTD!F9] 3 | [Jan YTD!H9] Actual | [Jan YTD!I9] Variance:
+### [p001_b0071] Dollars | [Jan YTD!J9] Fav/(Unfav)
+### [p001_b0072] Percent | [Jan YTD!L9] Adopted
+### [p001_b0073] Budget | [Jan YTD!M9] Actual | [Jan YTD!N9] Variance:
+### [p001_b0074] Dollars | [Jan YTD!O9] Fav/(Unfav)
+### [p001_b0075] Percent
+### [p001_b0076] Row 10: [Jan YTD!A10] Revenue
+[p001_b0077] Row 11: [Jan YTD!A11] Farebox Revenue | [Jan YTD!B11] 414.5 | [Jan YTD!C11] 407.6 | [Jan YTD!D11] -6.9 | [Jan YTD!E11] 1.7 | [Jan YTD!F11] 10 | [Jan YTD!H11] $0.000 | [Jan YTD!I11] $0.000 | [Jan YTD!J11] N/A | [Jan YTD!K11] 414.5 | [Jan YTD!M11] 407.6 | [Jan YTD!N11] -6.9 | [Jan YTD!O11] 1.7
+[p001_b0078] Row 12: [Jan YTD!A12] Toll Revenue | [Jan YTD!B12] 197.2 | [Jan YTD!C12] 206.2 | [Jan YTD!D12] 9 | [Jan YTD!E12] 4.5999999999999996 | [Jan YTD!F12] 0 | [Jan YTD!H12] 0 | [Jan YTD!I12] 0 | [Jan YTD!J12] N/A | [Jan YTD!K12] 197.2 | [Jan YTD!M12] 206.2 | [Jan YTD!N12] 9 | [Jan YTD!O12] 4.5999999999999996
+[p001_b0079] Row 13: [Jan YTD!A13] Other Revenue | [Jan YTD!B13] 96.8 | [Jan YTD!C13] 104.1 | [Jan YTD!D13] 7.3 | [Jan YTD!E13] 7.6 | [Jan YTD!F13] 0 | [Jan YTD!H13] 0.2 | [Jan YTD!I13] 0.2 | [Jan YTD!J13] N/A | [Jan YTD!K13] 96.8 | [Jan YTD!M13] 104.3 | [Jan YTD!N13] 7.5 | [Jan YTD!O13] 7.7
+[p001_b0080] Row 14: [Jan YTD!A14] Capital and Other Reimbursements | [Jan YTD!B14] 0 | [Jan YTD!C14] 0 | [Jan YTD!D14] 0 | [Jan YTD!E14] N/A | [Jan YTD!F14] 212.6 | [Jan YTD!H14] 173.1 | [Jan YTD!I14] -39.5 | [Jan YTD!J14] 18.600000000000001 | [Jan YTD!K14] 212.6 | [Jan YTD!M14] 173.1 | [Jan YTD!N14] -39.5 | [Jan YTD!O14] 18.600000000000001
+[p001_b0081] Row 15: [Jan YTD!A15] Total Revenues | [Jan YTD!B15] 708.5 | [Jan YTD!C15] 718 | [Jan YTD!D15] 9.5 | [Jan YTD!E15] 1.3 | [Jan YTD!F15] 212.6 | [Jan YTD!H15] 173.3 | [Jan YTD!I15] -39.299999999999997 | [Jan YTD!J15] 18.5 | [Jan YTD!K15] 921.1 | [Jan YTD!M15] 891.3 | [Jan YTD!N15] -29.8 | [Jan YTD!O15] 3.2
+### [p001_b0082] Row 17: [Jan YTD!A17] Expenses
+### [p001_b0083] Row 18: [Jan YTD!A18] Labor:
+[p001_b0084] Row 19: [Jan YTD!A19] Payroll | [Jan YTD!B19] 565.29999999999995 | [Jan YTD!C19] 546.20000000000005 | [Jan YTD!D19] 19.100000000000001 | [Jan YTD!E19] 3.4 | [Jan YTD!F19] 75.7 | [Jan YTD!H19] 59.9 | [Jan YTD!I19] 15.8 | [Jan YTD!J19] 20.8 | [Jan YTD!K19] 641 | [Jan YTD!M19] 606.1 | [Jan YTD!N19] 34.799999999999997 | [Jan YTD!O19] 5.4
+[p001_b0085] Row 20: [Jan YTD!A20] Overtime | [Jan YTD!B20] 80 | [Jan YTD!C20] 98.6 | [Jan YTD!D20] -18.5 | [Jan YTD!E20] -23.1 | [Jan YTD!F20] 19.899999999999999 | [Jan YTD!H20] 18.3 | [Jan YTD!I20] 1.6 | [Jan YTD!J20] 8.1 | [Jan YTD!K20] 99.9 | [Jan YTD!M20] 116.8 | [Jan YTD!N20] -16.899999999999999 | [Jan YTD!O20] 16.899999999999999
+[p001_b0086] Row 21: [Jan YTD!A21] Health and Welfare | [Jan YTD!B21] 168.1 | [Jan YTD!C21] 179.4 | [Jan YTD!D21] -11.3 | [Jan YTD!E21] 6.8 | [Jan YTD!F21] 8.8000000000000007 | [Jan YTD!H21] 6.4 | [Jan YTD!I21] 2.4 | [Jan YTD!J21] 27 | [Jan YTD!K21] 176.9 | [Jan YTD!M21] 185.8 | [Jan YTD!N21] -9 | [Jan YTD!O21] 5.0999999999999996
+[p001_b0087] Row 22: [Jan YTD!A22] OPEB Current Payments | [Jan YTD!B22] 76.900000000000006 | [Jan YTD!C22] 87.1 | [Jan YTD!D22] -10.1 | [Jan YTD!E22] 13.2 | [Jan YTD!F22] 1.5 | [Jan YTD!H22] 1.5 | [Jan YTD!I22] 0.1 | [Jan YTD!J22] 4.5 | [Jan YTD!K22] 78.5 | [Jan YTD!M22] 88.5 | [Jan YTD!N22] -10.1 | [Jan YTD!O22] 12.8
+[p001_b0088] Row 23: [Jan YTD!A23] Pension | [Jan YTD!B23] 141.5 | [Jan YTD!C23] 134.80000000000001 | [Jan YTD!D23] 6.7 | [Jan YTD!E23] 4.7 | [Jan YTD!F23] 10.1 | [Jan YTD!H23] 6.1 | [Jan YTD!I23] 4 | [Jan YTD!J23] 40.1 | [Jan YTD!K23] 151.6 | [Jan YTD!M23] 140.80000000000001 | [Jan YTD!N23] 10.8 | [Jan YTD!O23] 7.1
+[p001_b0089] Row 24: [Jan YTD!A24] Other Fringe Benefits | [Jan YTD!B24] 99 | [Jan YTD!C24] 98.9 | [Jan YTD!D24] 0.1 | [Jan YTD!E24] 0.1 | [Jan YTD!F24] 26 | [Jan YTD!H24] 22 | [Jan YTD!I24] 3.9 | [Jan YTD!J24] 15.1 | [Jan YTD!K24] 125 | [Jan YTD!M24] 121 | [Jan YTD!N24] 4 | [Jan YTD!O24] 3.2
+[p001_b0090] Row 25: [Jan YTD!A25] Reimbursable Overhead | [Jan YTD!B25] -44.2 | [Jan YTD!C25] -39.6 | [Jan YTD!D25] -4.7 | [Jan YTD!E25] 10.5 | [Jan YTD!F25] 44.2 | [Jan YTD!H25] 39.700000000000003 | [Jan YTD!I25] 4.5 | [Jan YTD!J25] 10.3 | [Jan YTD!K25] 0 | [Jan YTD!M25] 0.1 | [Jan YTD!N25] -0.1 | [Jan YTD!O25] <(100.0)
+[p001_b0091] Row 26: [Jan YTD!A26] Total Labor Expenses | [Jan YTD!B26] 1086.5 | [Jan YTD!C26] 1105.4000000000001 | [Jan YTD!D26] -18.8 | [Jan YTD!E26] 1.7 | [Jan YTD!F26] 186.3 | [Jan YTD!H26] 153.9 | [Jan YTD!I26] 32.4 | [Jan YTD!J26] 17.399999999999999 | [Jan YTD!K26] 1272.8 | [Jan YTD!M26] 1259.3 | [Jan YTD!N26] 13.5 | [Jan YTD!O26] 1.1000000000000001
+### [p001_b0092] Row 28: [Jan YTD!A28] Non-Labor:
+[p001_b0093] Row 29: [Jan YTD!A29] Electric Power | [Jan YTD!B29] 59.6 | [Jan YTD!C29] 62 | [Jan YTD!D29] -2.4 | [Jan YTD!E29] 4 | [Jan YTD!F29] 0.1 | [Jan YTD!H29] 0.1 | [Jan YTD!I29] 0 | [Jan YTD!J29] 17.600000000000001 | [Jan YTD!K29] 59.7 | [Jan YTD!M29] 62.1 | [Jan YTD!N29] -2.4 | [Jan YTD!O29] 4
+[p001_b0094] Row 30: [Jan YTD!A30] Fuel | [Jan YTD!B30] 17.600000000000001 | [Jan YTD!C30] 19 | [Jan YTD!D30] -1.4 | [Jan YTD!E30] 7.8 | [Jan YTD!F30] 0 | [Jan YTD!H30] 0.2 | [Jan YTD!I30] -0.2 | [Jan YTD!J30] <(100.0) | [Jan YTD!K30] 17.600000000000001 | [Jan YTD!M30] 19.2 | [Jan YTD!N30] -1.5 | [Jan YTD!O30] 8.8000000000000007
+[p001_b0095] Row 31: [Jan YTD!A31] Insurance | [Jan YTD!B31] 1.2 | [Jan YTD!C31] 6.1 | [Jan YTD!D31] -4.8 | [Jan YTD!E31] <(100.0) | [Jan YTD!F31] 0.6 | [Jan YTD!H31] 0.5 | [Jan YTD!I31] 0.1 | [Jan YTD!J31] 21.2 | [Jan YTD!K31] 1.9 | [Jan YTD!M31] 6.5 | [Jan YTD!N31] -4.7 | [Jan YTD!O31] <(100.0)
+[p001_b0096] Row 32: [Jan YTD!A32] Claims | [Jan YTD!B32] 36.5 | [Jan YTD!C32] 32.5 | [Jan YTD!D32] 4 | [Jan YTD!E32] 10.9 | [Jan YTD!F32] 0 | [Jan YTD!H32] 0 | [Jan YTD!I32] 0 | [Jan YTD!J32] N/A | [Jan YTD!K32] 36.5 | [Jan YTD!M32] 32.5 | [Jan YTD!N32] 4 | [Jan YTD!O32] 10.9
+[p001_b0097] Row 33: [Jan YTD!A33] Paratransit Service Contracts | [Jan YTD!B33] 63.6 | [Jan YTD!C33] 59.4 | [Jan YTD!D33] 4.2 | [Jan YTD!E33] 6.6 | [Jan YTD!F33] 0 | [Jan YTD!H33] 0 | [Jan YTD!I33] 0 | [Jan YTD!J33] N/A | [Jan YTD!K33] 63.6 | [Jan YTD!M33] 59.4 | [Jan YTD!N33] 4.2 | [Jan YTD!O33] 6.6
+[p001_b0098] Row 34: [Jan YTD!A34] Maintenance and Other Operating Contracts | [Jan YTD!B34] 80.8 | [Jan YTD!C34] 79.099999999999994 | [Jan YTD!D34] 1.8 | [Jan YTD!E34] 2.2000000000000002 | [Jan YTD!F34] 8.4 | [Jan YTD!H34] 6 | [Jan YTD!I34] 2.4 | [Jan YTD!J34] 28.7 | [Jan YTD!K34] 89.2 | [Jan YTD!M34] 85.1 | [Jan YTD!N34] 4.2 | [Jan YTD!O34] 4.7
+[p001_b0099] Row 35: [Jan YTD!A35] Professional Services Contracts | [Jan YTD!B35] 58.3 | [Jan YTD!C35] 63.6 | [Jan YTD!D35] -5.3 | [Jan YTD!E35] 9.1 | [Jan YTD!F35] 9.1 | [Jan YTD!H35] 6.7 | [Jan YTD!I35] 2.5 | [Jan YTD!J35] 27 | [Jan YTD!K35] 67.400000000000006 | [Jan YTD!M35] 70.3 | [Jan YTD!N35] -2.8 | [Jan YTD!O35] 4.2
+[p001_b0100] Row 36: [Jan YTD!A36] Materials and Supplies | [Jan YTD!B36] 65.099999999999994 | [Jan YTD!C36] 54.4 | [Jan YTD!D36] 10.7 | [Jan YTD!E36] 16.5 | [Jan YTD!F36] 7.8 | [Jan YTD!H36] 5.7 | [Jan YTD!I36] 2.1 | [Jan YTD!J36] 26.8 | [Jan YTD!K36] 73 | [Jan YTD!M36] 60.1 | [Jan YTD!N36] 12.8 | [Jan YTD!O36] 17.600000000000001
+[p001_b0101] Row 37: [Jan YTD!A37] Other Business Expenses | [Jan YTD!B37] 22.1 | [Jan YTD!C37] 22.1 | [Jan YTD!D37] 0 | [Jan YTD!E37] -0.1 | [Jan YTD!F37] 0.3 | [Jan YTD!H37] 0.3 | [Jan YTD!I37] 0 | [Jan YTD!J37] -0.1 | [Jan YTD!K37] 22.4 | [Jan YTD!M37] 22.5 | [Jan YTD!N37] 0 | [Jan YTD!O37] -0.1
+[p001_b0102] Row 38: [Jan YTD!A38] Total  Non-Labor Expenses | [Jan YTD!B38] 405 | [Jan YTD!C38] 398.1 | [Jan YTD!D38] 6.8 | [Jan YTD!E38] 1.7 | [Jan YTD!F38] 26.3 | [Jan YTD!H38] 19.399999999999999 | [Jan YTD!I38] 6.9 | [Jan YTD!J38] 26.2 | [Jan YTD!K38] 431.3 | [Jan YTD!M38] 417.5 | [Jan YTD!N38] 13.7 | [Jan YTD!O38] 3.2
+### [p001_b0103] Row 40: [Jan YTD!A40] Other Expense Adjustments
+[p001_b0104] Row 41: [Jan YTD!A41] Other | [Jan YTD!B41] -0.7 | [Jan YTD!C41] 1.8 | [Jan YTD!D41] -2.5 | [Jan YTD!E41] <(100.0) | [Jan YTD!F41] 40 | [Jan YTD!H41] $0.0 | [Jan YTD!I41] $0.0 | [Jan YTD!J41] N/A | [Jan YTD!K41] -0.7 | [Jan YTD!M41] 1.8 | [Jan YTD!N41] -2.5 | [Jan YTD!O41] <(100.0)
+[p001_b0105] Row 42: [Jan YTD!A42] General Reserve | [Jan YTD!B42] 0 | [Jan YTD!C42] 0 | [Jan YTD!D42] 0 | [Jan YTD!E42] N/A | [Jan YTD!F42] 0 | [Jan YTD!H42] 0 | [Jan YTD!I42] 0 | [Jan YTD!J42] N/A | [Jan YTD!K42] 0 | [Jan YTD!M42] 0 | [Jan YTD!N42] 0 | [Jan YTD!O42] N/A
+[p001_b0106] Row 43: [Jan YTD!A43] Total  Other Expense Adjustments | [Jan YTD!B43] -0.7 | [Jan YTD!C43] 1.8 | [Jan YTD!D43] -2.5 | [Jan YTD!E43] <(100.0) | [Jan YTD!F43] 40 | [Jan YTD!H43] $0.0 | [Jan YTD!I43] $0.0 | [Jan YTD!J43] N/A | [Jan YTD!K43] -0.7 | [Jan YTD!M43] 1.8 | [Jan YTD!N43] 2.5 | [Jan YTD!O43] >100.0
+[p001_b0107] Row 45: [Jan YTD!A45] Total Expenses Before Non-Cash Liability Adjs. | [Jan YTD!B45] 1490.8 | [Jan YTD!C45] 1505.3 | [Jan YTD!D45] -14.5 | [Jan YTD!E45] 1 | [Jan YTD!F45] 212.6 | [Jan YTD!H45] 173.3 | [Jan YTD!I45] 39.299999999999997 | [Jan YTD!J45] 18.5 | [Jan YTD!K45] 1703.4 | [Jan YTD!M45] 1678.6 | [Jan YTD!N45] 24.7 | [Jan YTD!O45] 1.5
+[p001_b0108] Row 47: [Jan YTD!A47] Depreciation | [Jan YTD!B47] 326.60000000000002 | [Jan YTD!C47] 323.8 | [Jan YTD!D47] 2.9 | [Jan YTD!E47] 0.9 | [Jan YTD!F47] 0 | [Jan YTD!H47] 0 | [Jan YTD!I47] 0 | [Jan YTD!J47] N/A | [Jan YTD!K47] 326.60000000000002 | [Jan YTD!M47] 323.8 | [Jan YTD!N47] 2.863 | [Jan YTD!O47] 0.9
+[p001_b0109] Row 48: [Jan YTD!A48] GASB 49 Environmental Remediation | [Jan YTD!B48] 0.5 | [Jan YTD!C48] 0.2 | [Jan YTD!D48] 0.3 | [Jan YTD!E48] 66.7 | [Jan YTD!F48] 0 | [Jan YTD!H48] 0 | [Jan YTD!I48] 0 | [Jan YTD!J48] N/A | [Jan YTD!K48] 0.5 | [Jan YTD!M48] 0.2 | [Jan YTD!N48] 0.33300000000000002 | [Jan YTD!O48] 66.7
+[p001_b0110] Row 49: [Jan YTD!A49] GASB 68 Pension Expense Adjustment | [Jan YTD!B49] 0 | [Jan YTD!C49] 0 | [Jan YTD!D49] 0 | [Jan YTD!E49] 100 | [Jan YTD!F49] 0 | [Jan YTD!H49] 0 | [Jan YTD!I49] 0 | [Jan YTD!J49] N/A | [Jan YTD!K49] 0 | [Jan YTD!M49] 0 | [Jan YTD!N49] 0 | [Jan YTD!O49] 100
+[p001_b0111] Row 50: [Jan YTD!A50] GASB 75 OPEB Expense Adjustment | [Jan YTD!B50] 0 | [Jan YTD!C50] 0 | [Jan YTD!D50] 0 | [Jan YTD!E50] N/A | [Jan YTD!F50] 0 | [Jan YTD!H50] 0 | [Jan YTD!I50] 0 | [Jan YTD!J50] N/A | [Jan YTD!K50] 0 | [Jan YTD!M50] 0 | [Jan YTD!N50] 0 | [Jan YTD!O50] N/A
+[p001_b0112] Row 51: [Jan YTD!A51] GASB 87 Lease Adjustment | [Jan YTD!B51] -1.3 | [Jan YTD!C51] 4.5 | [Jan YTD!D51] -5.8 | [Jan YTD!E51] <(100.0) | [Jan YTD!F51] 0 | [Jan YTD!H51] 0 | [Jan YTD!I51] 0 | [Jan YTD!J51] N/A | [Jan YTD!K51] -1.3 | [Jan YTD!M51] 4.5 | [Jan YTD!N51] -5.7889999999999997 | [Jan YTD!O51] <(100.0)
+[p001_b0113] Row 52: [Jan YTD!A52] GASB 96 SBITA Adjustment | [Jan YTD!B52] 7 | [Jan YTD!C52] 0.1 | [Jan YTD!D52] 6.9 | [Jan YTD!E52] 98.4 | [Jan YTD!F52] 0 | [Jan YTD!H52] 0 | [Jan YTD!I52] 0 | [Jan YTD!J52] N/A | [Jan YTD!K52] 7 | [Jan YTD!M52] 0.1 | [Jan YTD!N52] 6.9219999999999997 | [Jan YTD!O52] 98.4
+[p001_b0114] Row 53: [Jan YTD!A53] GASB 101 Compensated Absences | [Jan YTD!B53] 1.7 | [Jan YTD!C53] 1.9 | [Jan YTD!D53] -0.3 | [Jan YTD!E53] 17.2 | [Jan YTD!F53] 0 | [Jan YTD!H53] 0 | [Jan YTD!I53] 0 | [Jan YTD!J53] N/A | [Jan YTD!K53] 1.7 | [Jan YTD!M53] 1.9 | [Jan YTD!N53] -0.28499999999999998 | [Jan YTD!O53] 17.2
+[p001_b0115] Row 54: [Jan YTD!A54] Total Non-Cash Liability Adjustments | [Jan YTD!B54] 334.5 | [Jan YTD!C54] 330.5 | [Jan YTD!D54] 4 | [Jan YTD!E54] 1.2 | [Jan YTD!F54] 40 | [Jan YTD!H54] 0 | [Jan YTD!I54] 0 | [Jan YTD!J54] N/A | [Jan YTD!K54] 334.5 | [Jan YTD!M54] 330.5 | [Jan YTD!N54] 4 | [Jan YTD!O54] 1.2
+[p001_b0116] Row 56: [Jan YTD!A56] Total Expenses After Non-Cash Liability Adjs. | [Jan YTD!B56] 1825.3 | [Jan YTD!C56] 1835.8 | [Jan YTD!D56] -10.5 | [Jan YTD!E56] 0.6 | [Jan YTD!F56] 212.6 | [Jan YTD!H56] 173.3 | [Jan YTD!I56] 39.299999999999997 | [Jan YTD!J56] 18.5 | [Jan YTD!K56] 2037.9 | [Jan YTD!M56] 2009.1 | [Jan YTD!N56] 28.8 | [Jan YTD!O56] 1.4
+[p001_b0117] Row 58: [Jan YTD!A58] Less: B&T Depreciation & GASB Adjustments | [Jan YTD!B58] $18.8 | [Jan YTD!C58] $21.6 | [Jan YTD!D58] ($2.8) | [Jan YTD!E58] (15.0) | [Jan YTD!F58] 59 | [Jan YTD!H58] $0.0 | [Jan YTD!I58] $0.0 | [Jan YTD!J58] N/A | [Jan YTD!K58] 55 | [Jan YTD!M58] $21.6 | [Jan YTD!N58] ($2.8) | [Jan YTD!O58] (15.0)
+[p001_b0118] Row 60: [Jan YTD!A60] Adjusted Total Expenses | [Jan YTD!B60] $1,806.5 | [Jan YTD!C60] $1,814.2 | [Jan YTD!D60] ($7.7) | [Jan YTD!E60] (0.4) | [Jan YTD!F60] 65 | [Jan YTD!H60] $173.3 | [Jan YTD!I60] $39.3 | [Jan YTD!J60] 0.0 | [Jan YTD!K60] 69 | [Jan YTD!M60] $1,987.5 | [Jan YTD!N60] $31.6 | [Jan YTD!O60] 0.0
+[p001_b0119] Row 62: [Jan YTD!A62] Net Surplus/(Deficit) | [Jan YTD!B62] ($1,098.1) | [Jan YTD!C62] ($1,096.3) | [Jan YTD!D62] $1.8 | [Jan YTD!E62] 0.0 | [Jan YTD!F62] 59 | [Jan YTD!H62] $0.0 | [Jan YTD!I62] $0.0 | [Jan YTD!J62] (0.0) | [Jan YTD!K62] 73 | [Jan YTD!M62] ($1,096.3) | [Jan YTD!N62] $1.8 | [Jan YTD!O62] 0.0
+[p001_b0120] Row 64: [Jan YTD!A64] Total Subsidies | [Jan YTD!B64] 1734.4 | [Jan YTD!C64] 1782.9 | [Jan YTD!D64] 48.5 | [Jan YTD!E64] 2.8 | [Jan YTD!F64] 40 | [Jan YTD!H64] $0.0 | [Jan YTD!I64] $0.0 | [Jan YTD!J64] N/A | [Jan YTD!K64] 1734.4 | [Jan YTD!M64] 1782.9 | [Jan YTD!N64] 48.5 | [Jan YTD!O64] 2.8
+[p001_b0121] Row 65: [Jan YTD!A65] Debt Service | [Jan YTD!B65] 258.10000000000002 | [Jan YTD!C65] 254.5 | [Jan YTD!D65] 3.6 | [Jan YTD!E65] 1.4 | [Jan YTD!F65] 0 | [Jan YTD!H65] 0 | [Jan YTD!I65] 0 | [Jan YTD!J65] N/A | [Jan YTD!K65] 258.10000000000002 | [Jan YTD!M65] 254.5 | [Jan YTD!N65] 3.6 | [Jan YTD!O65] 1.4

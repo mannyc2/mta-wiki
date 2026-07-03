@@ -1,0 +1,225 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_ace-able-pdf-brt-bx6-river-terrace-houses-sept2016"
+record_kind: "source"
+display_name: "Bx6 South Bronx Crosstown Select Bus Service - River Terrace Residents Briefing"
+source_id: "ace_able_pdf_brt_bx6_river_terrace_houses_sept2016"
+source_ids:
+  - "ace_able_pdf_brt_bx6_river_terrace_houses_sept2016"
+local_observation_id: "source_ace_able_brt_bx6_river_terrace_sept2016"
+local_observation_ids:
+  - "source_ace_able_brt_bx6_river_terrace_sept2016"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T18:01:15.255Z"
+submission_ids:
+  - "sub_4441adeddb1f4abb"
+payload:
+  authority_tier: "plan_document"
+  content_type: "presentation"
+  date_text: "September 6, 2016"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2016-09-06"
+    precision: "day"
+    raw_text: "September 6, 2016"
+  description: "Presentation to River Terrace Houses residents about proposed Bx6 Select Bus Service"
+  published_date_normalized: "2016-09-06"
+  published_date_precision: "day"
+  title: "Bx6 South Bronx Crosstown Select Bus Service"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "ace_able_pdf_brt_bx6_river_terrace_houses_sept2016#p001_c0001"
+    page_number: 1
+    role: "title_and_date"
+    source_id: "ace_able_pdf_brt_bx6_river_terrace_houses_sept2016"
+    source_path: "raw/sources/ace_able_pdf_brt_bx6_river_terrace_houses_sept2016/blocks.jsonl"
+    text_sha256: "sha256:b2735f17a00c3743e821b4fed547836156f1968fb7573ebb09df64e4cd17cde8"
+    text_source: "raw_text"
+---
+
+# September 6, 2016: Presentation to River Terrace Houses (pdf)
+
+source_id: ace_able_pdf_brt_bx6_river_terrace_houses_sept2016
+citation: cite block ids exactly as shown in square brackets
+document: 116 block(s)
+
+## Page 1
+
+### [p001_c0001] Bx6 South Bronx Crosstown Select Bus Service
+[p001_c0002] River Terrace Residents Briefing | September 6, 2016
+[p001_c0003] +selectbusservice
+
+## Page 2
+
+### [p002_c0001] Agenda
+- [p002_c0002] • Select Bus Service overview • Bx6 corridor overview • Proposed SBS stops • Proposed street design and signal changes • Next steps • Questions and discussion
+[p002_c0003] _+selectbusservice_
+[p002_c0004] _2_
+
+## Page 3
+
+### [p003_c0001] Select Bus Service in New York City
+[p003_c0002] Select Bus Service (SBS) is New York City's brand name for Bus Rapid Transit: an improved bus service that offers fast, frequent, and reliable service on high-ridership bus routes.
+[p003_c0003] SBS has brought:
+- [p003_c0004] • 10-25% faster bus speeds • About 10% increase in ridership • More reliable service • Customer satisfaction of 95% • Safer streets / reduction in crashes
+[p003_c0005] There are 10 Select Bus Service routes in operation serving all 5 boroughs.
+> [p003_c0006] A map of New York City showing the routes for Select Bus Service (SBS). The map covers all five boroughs: Staten Island, Brooklyn, Queens, The Bronx, and Westchester County. The routes are highlighted in blue and labeled with their respective route numbers and key streets. The routes are as follows: Bx41 : Webster Av (The Bronx) Bx12 : Fordham Rd (The Bronx) M60 : 125th St / Astoria Blvd (Queens) M86 : 86th St (Queens) M34/M34A : 34th St (Queens) M15 : 1st Av / 2nd Av (Queens) B44 : Nostrand Av / Rogers Av (Brooklyn) B46 : Utica Av (launching 7/3/16) (Brooklyn) S79 : Hylan Blvd (Staten Island) Q44 : Main St / Cross Bronx Service Rd (Queens) The map also shows the surrounding counties: Westchester County, Nassau County, and Queens County. A north arrow is located in the bottom right corner.
+[p003_c0007] _+selectbuservice_
+[p003_c0008] _3_
+
+## Page 4
+
+### [p004_c0001] Select Bus Service Features
+[p004_c0002] _Dedicated Bus Lanes_
+> [p004_c0003] A blue and white bus is driving in a dedicated bus lane on a city street. The lane is marked with white dashed lines and the word "ONLY" in red on the pavement. Other vehicles are visible in the adjacent lanes.
+[p004_c0004] _Signal Priority for Buses_
+> [p004_c0005] A blue bus is stopped at a traffic light. The destination sign on the front of the bus reads "M15 VIA 1 AV". A yellow taxi is visible in the background.
+- [p004_c0006] • Faster bus rides • Reduced traffic conflicts between buses and traffic • More reliable bus service • Buses spend less time stopped at red lights
+[p004_c0007] _Off-Board Fare Collection_
+> [p004_c0008] A person is standing at a blue "Get Ticket Here" machine on a sidewalk next to a bus. Other people are walking in the background.
+[p004_c0009] _All-Door Boarding_
+> [p004_c0010] A group of people is boarding a bus at a stop. One person is wearing a black bag with "INNOVATIONS" written on it. The bus is stopped at the curb.
+- [p004_c0011] • Quicker bus boarding • Buses spend less time waiting at bus stops
+[p004_c0012] _+selectbusservice_
+[p004_c0013] _4_
+
+## Page 5
+
+### [p005_c0001] Select Bus Service Features
+> [p005_c0002] Improved Station Amenities A circular image showing a modern bus stop. It features a glass-enclosed shelter, a wooden bench, and a person sitting on it. There are trees and a street in the background.
+> [p005_c0003] Real-Time Passenger Information A circular image showing a digital display at a bus stop. The display shows bus arrival information for SBS Avenue U, LCL Avenue U, and LCL Knapp Street. The date is FRIDAY, MAR 21 and the time is 07:11 AM. A person is looking at the display.
+- [p005_c0004] • More attractive, appealing bus stops • Better trip information for riders to know when the bus is coming • More comfortable wait for the bus
+> [p005_c0005] Pedestrian Safety Improvements A circular image showing an aerial view of a street intersection. It features a pedestrian crossing with a white bus and a car. The street has a clear pedestrian crossing and a bus stop.
+- [p005_c0006] • Better visibility for pedestrians, bus operators, and drivers • Clearer, shorter pedestrian crossings
+[p005_c0007] _+selectbusservice_
+[p005_c0008] _5_
+
+## Page 6
+
+### [p006_c0001] Existing Bx6 local bus route
+> [p006_c0002] The map illustrates the existing Bx6 local bus route, highlighted in dark blue. The route begins at Washington Heights, near Riverside Drive and Broadway, and proceeds through several stops: Yankee Stadium, a Metro-North station, Westchester Avenue, and Hunts Point. The route ends at the Hunts Point Cooperative Market. Three inset photographs provide context for key locations: Yankee Stadium, a large building in Washington Heights, and the Hunts Point Cooperative Market. The map also shows other transit options: the SBS route (light blue), the Subway route (green), and Metro-North stations (black squares). A legend in the top right corner defines these symbols. A scale bar at the bottom indicates distances up to 1 mile. Legend: Bx6 SBS route Subway route Subway station Metro-North Metro-North station Map Labels: Washington Heights Yankee Stadium Hunts Point Hunts Point Cooperative Market Stations: 1, 2, 4, 5, 6 Streets: W 155 ST, W 125 ST, E 161 ST, E 163 ST, WESTCHESTER AV, MAJOR DEEGAN EXWY, BRUCKNER EXWY, HUNTS POINT AV, HALLECK ST, SHERIDA Rivers: HARLEM RIVER, RIVERSIDE DRW Inset Photos: Yankee Stadium Large building in Washington Heights Hunts Point Cooperative Market Scale: 0 to 1 Miles
+[p006_c0003] _+selectbusservice_
+[p006_c0004] _6_
+
+## Page 7
+
+### [p007_c0001] Bx6 Background
+[p007_c0002] The Bx6 South Bronx corridor was identified as a potential candidate for Select Bus Service in the 2009 Bus Rapid Transit Phase II Study.
+- [p007_c0003] • Serves nearly 25,000 daily riders • Connects to 1 , C , 4 , B , D , 2 , 5 , 6 subway lines, Metro-North, and 20 bus routes, including Bx41 SBS • 76% of households within a quarter-mile of the route do not own a vehicle
+> [p007_c0004] Residents' Mode to Work Mode Percentage Public Transit 67% Walk 10% Drive 15% Work from home 5% Other 3% Source: 2010-2014 ACS 5-Year Estimates 1/4 mile from Bx6 corridor
+[p007_c0005] _+selectbuservice_
+[p007_c0006] _7_
+
+## Page 8
+
+### [p008_c0001] Community Engagement
+- [p008_c0002] • Bronx Kickoff Meeting (November 2015) • Bronx/Manhattan On-street Outreach (November 2015 – June 2016) – During AM peak at six locations – Received 578 individual comments and distributed over 1,300 Bx6 SBS information cards in English and Spanish • Online Feedback Portal (launched November 2015) – Received 51 location-specific comments • Bronx Elected Officials Briefing (April 2016) • Bronx Community Board Meetings (May 2016) • Manhattan Community Board Meetings (June 2016) • Small Stakeholder Meetings (June 2016 and ongoing)
+> [p008_c0003] A photograph showing a woman and a man standing on a sidewalk. The woman, on the left, is wearing a blue dress, sunglasses, and a black jacket, and she is holding a small white card. The man, on the right, is wearing a dark blue polo shirt, khaki shorts, and glasses, and he is holding a clipboard. They appear to be engaged in a conversation. In the background, there is a bus stop shelter, a brick building, and some trees.
+[p008_c0004] _+selectbuservice_
+[p008_c0005] _8_
+
+## Page 9
+
+### [p009_c0001] Community Engagement
+- [p009_c0002] • Online Feedback Portal • We appreciate your input!
+[p009_c0003] The screenshot shows the NYC BRT online feedback portal. At the top, there is a navigation bar with links for Content, Structure, GTTranslate, and Help, along with a user profile 'Hello Jackhipper' and a 'Log out' button. Below this, a dark header displays 'SOUTH BRONX CROSTOWN SBS'. The main area is split into two panels. The left panel shows a map of the South Bronx with the Crosstown SBS route highlighted in black. A yellow tooltip on the map says 'Click the marker icon and place it on the map to add a comment.' The right panel, titled 'RECENT COMMENTS', lists several user-submitted feedback items. Each comment includes a user icon, a title, a detailed text description, a star rating, and the date of submission. User Title Text Rating Date Other This corridor should be considered for elevated light rail transit instead of buses. This corridor should be considered for elevated light rail transit instead of buses. The transit demands are so High that buses cannot cope. 5 (1 vote) 09/09/2016 - 13:59 Crowded Bus The b6x bus 90% of the time is super crowded. The b6x bus 90% of the time is super crowded. It's a struggle for people with walkers or wheelchairs to get on or off the bus. The bus has that staircase in the back which is a hazard. The aisle is narrow and you can barely squeeze by to get to the back of the bus. Nobody wants to stand on the stairs. In case there is a sudden stop, you could easily fall. The bus stops are usually crowded with no form of a line. I think the b6x bus during peak times could use the long extended bus and it should also have select bus service. 5.3 (3 votes) 02/15/2016 - 13:39 Long Distance to Cross E 163rd St is TOO WIDE. Cars travel TOO FAST. E 163rd St is TOO WIDE. Cars travel TOO FAST. 4 (3 votes) 02/06/2016 - 04:44 Long Distance to Cross E 163rd St is too wide. E 163rd St is too wide. 5 (1 vote) 02/05/2016 - 02:44 Blocking the Bus Blocking the Bus Blocking the Bus 5 (1 vote) 02/05/2016 - 09:44
+[p009_c0004] nyc.gov/brt
+[p009_c0005] _+selectbusservice_
+[p009_c0006] _9_
+
+## Page 10
+
+### [p010_c0001] Bus Delays
+- [p010_c0002] • 56 minutes on average to travel from Hunts Point to Riverside Drive (4.8 miles) • Over 25% of trip spent boarding passengers • Bus is moving less than half of the time
+> [p010_c0003] Bx6 Westbound 4-7 PM Weekdays Delay Cause Percentage In Motion 41% Bus Stops 27% Red Lights 23% "Crawl" Speed (<2.5 mph) 8%
+[p010_c0004] Source: IVN data, October 2015
+[p010_c0005] _+selectbusservice_
+[p010_c0006] _10_
+
+## Page 11
+
+### [p011_c0001] Safety
+> [p011_c0002] A map of Manhattan showing the 33rd Avenue bus route. The route is marked with a red line and several red circular icons representing bus stops. Two specific intersections are highlighted with black callout boxes: '157th St & Broadway' and '155th St & St Nicholas Pl & Harlem River Dr'. The map also shows the Harlem River Park area to the east of the route.
+- [p011_c0003] • Vision Zero: multiagency effort to reduce traffic fatalities • 2 Priority Intersections along route in Manhattan
+> [p011_c0004] The Vision Zero logo, featuring the words 'VISION' and 'ZERO' in large blue letters. The letter 'O' in 'VISION' contains a white silhouette of a person walking, and the letter 'O' in 'ZERO' contains a white silhouette of a car. Below the logo is the website URL 'nyc.gov/visionzero' in blue text.
+[p011_c0005] _+selectbuservice_
+[p011_c0006] _11_
+
+## Page 12
+
+### [p012_c0001] Existing Ridership
+> [p012_c0002] 3,700 total eastbound boardings in Manhattan Legend: Proposed Bx6 SBS and Local Route Subway route Metro-North Metro-North station Bx41 SBS Total Ons / Total Offs Eastbound Direction Stop Total Ons / Total Offs Riverside Dr W Terminal 267 / 0 W 157 St 1,282 / 56 Amsterdam Av 678 / 46 River Av 3,569 / 1,096 Sherman Av 993 / 571 Melrose Av 548 / 752 3 Av 697 / 1,383 Prospect Av 257 / 818 Intervale Av 680 / 415 Inset Map Legend: Proposed Bx6 SBS and Local Subway route Total Ons / Total Offs Westbound Eastbound Direction Stop Total Ons / Total Offs Hunts Point Av / E 163 St 2,227 / 1,771 Seneca Av 1,070 / 23 Hunts Point Av / Spofford Av 456 / 3 Spofford Av / Halleck St 450 / 4 Food Center Dr Terminal 889 / 0 Food Center Dr / Halleck St 456 / 2 Viele Av 54 / 183 Ryawa Av 52 / 88 Farragut St 75 / 133 Hunts Point Market 182 / 251
+[p012_c0003] _+selectbuservice_
+[p012_c0004] _12_
+
+## Page 13
+
+### [p013_c0001] Proposed Service Plan
+> [p013_c0002] graph TD; A[Existing Bx6] --> B[Bx6 SBS]; A --> C[Bx6 local]; B --- D[Stops only at SBS stops]; C --- E[Stops at every stop] The diagram illustrates the proposed service plan for Existing Bx6. It starts with a grey box labeled "Existing Bx6". Two blue arrows point from this box to two separate boxes below: a dark blue box labeled "Bx6 SBS" and a light blue box labeled "Bx6 local". Below the "Bx6 SBS" box, the text "Stops only at SBS stops" is displayed. Below the "Bx6 local" box, the text "Stops at every stop" is displayed.
+[p013_c0003] _+selectbusservice_
+[p013_c0004] _13_
+
+## Page 14
+
+### [p014_c0001] Proposed SBS Stops – Western Section
+> [p014_c0002] The map illustrates the proposed SBS route in the Western Section, starting from the bridge area and extending west towards Riverside Dr W. The route is primarily a thick dark blue line representing the 'Proposed Bx6 SBS and Local' route. It follows the path of the subway line, which is shown as a thin blue line. Key stops are marked with blue circles, some with a white cross inside, indicating a combined SBS and Local stop. Other stops are marked with a white circle. The route passes through Washington Heights, Amsterdam Av, and River Av. Major streets shown include Broadway, W 150 St, W 156 St, W 157 St, W 155 St, St Nicholas Av, Edgcombe Av, Ogden Av, Jerome Av, E 161 St, and Gerard Av. Subway stations are marked with white circles, and Metro-North stations are marked with black squares. A scale bar at the bottom indicates distances up to 1,000 feet. A legend in the top right corner defines the symbols used for the route, stops, subway, and Metro-North infrastructure. Legend: Proposed Bx6 SBS and Local Bx6 Local eastbound only Proposed Bx6 SBS and Local stop Proposed Bx6 Local only stop Proposed future Bx6 Local stop Proposed stop elimination Subway route Subway station Metro-North Metro-North station Connecting bus route Start of bridge or underpass Map Labels: Riverside Dr W (pending fare machine installation challenges) Washington Heights Amsterdam Av Macombs Dam Bridge Yankee Stadium Grand Concourse Underpass St. Nicholas Av Edgcombe Av Ogden Av Jerome Av E 161 St Gerard Av Subway stations: 1, 4 Metro-North stations: M2, M3, M4/5, M100/101, M101, M3, M2 Bus routes: A, C, B, D
+[p014_c0003] _+selectbussservice_
+[p014_c0004] _14_
+
+## Page 15
+
+### [p015_c0001] Riverside Drive West Challenges Being Addressed
+- [p015_c0002] • Developing alternative method for fare machine installation on bridge structure • Exploring options for powering fare machines, as there are no nearby 24-hour DOT-owned street lights
+> [p015_c0003] A photograph of a tall, multi-story brick apartment building with many windows and balconies. In the foreground, there is a paved area with tram tracks, a bus stop shelter, and a street lamp. A bus stop sign is visible on the left side of the frame.
+[p015_c0004] _+selectbuservice_
+[p015_c0005] _15_
+
+## Page 16
+
+### [p016_c0001] Proposed SBS Stops – Central Section
+> [p016_c0002] This map illustrates the proposed Bus Service (SBS) stops and routes in the Central Section of New York City. The map features a grid of streets and highlights several key locations and proposed stops. Legend: Proposed Bx6 SBS and Local (thick dark blue line) Proposed Bx6 SBS and Local stop (white circle with a plus sign) Proposed Bx6 Local only stop (blue circle) Subway route (green line) Subway station (white circle) Metro-North (grey line with cross-ticks) Metro-North station (black square) Bx41 SBS (light blue line) Bx41 SBS stop (white circle with a plus sign) Connecting bus route (thin grey line) Start of bridge or underpass (bracket symbol) Map Labels: Streets: Sherman Av, Melrose Av, Elton Av, 3 Av, Prospect Av, Intervale Av, Southern Blvd/Bruckner Blvd, Simpson St, Westchester Av, Trinity Av, Tinton Av, E 163 St, E 161 St, Park Av, Morris Av. Intersections: Bx1/2, Bx32, Bx41/Bx41SBS, Bx15, Bx21, Bx17, Bx4/4A, Bx19, Bx5, Bx6. Other: GRAND CONCOURSE UNDERPASS, Melrose, B, D, 2, 5, 6. Scale: 0 250 500 750 1,000 Feet
+[p016_c0003] _+selectbuservice_
+[p016_c0004] _16_
+
+## Page 17
+
+### [p017_c0001] Proposed SBS Stops – Eastern Section
+> [p017_c0002] A photograph of a white and blue MTA Bx6 bus at a bus stop. The bus's destination sign reads "Bx6 RIVERSIDE". The bus number "297" is visible on the side. Several people are waiting at the stop. In the background, there are street signs for "CRAMES ST", "E 163 ST", and "Riverside Dr". A "NO STANDING" sign is also visible. The bus is at a stop marked with a "BX6" sign.
+> [p017_c0003] A map of the proposed Bx6 SBS and Local stops in the Eastern Section. The map shows the proposed route in dark blue, with stops marked by a circle with a cross. The route starts at Seneca Av, goes south to Coster St, then east to Spofford Av/Halleck St, then south to Hunts Point Av/Spofford Av, then east to Halleck St, then south to Food Center Dr/Halleck St, then east to Food Center Dr Terminal, then south to Hunts Point Market, then west to Ryawa Av, then north to Viele Av, then west to Bx46, then south to Farragut St, and finally east to Food Center Dr. The map also shows the subway route in green and connecting bus routes in grey. A legend in the top right corner identifies the symbols: a dark blue line for "Proposed Bx6 SBS and Local", a circle with a cross for "Proposed Bx6 SBS and Local stop", a blue dot for "Proposed Bx6 Local only stop", a green line for "Subway route", and a grey line for "Connecting bus route". A scale bar at the bottom left shows distances from 0 to 1,000 feet. The map also labels various streets and landmarks, including Hunts Point, Hunte Point Produce Market, and Oak Point Av.
+[p017_c0004] _+selectbuservice_
+[p017_c0005] _17_
+
+## Page 18
+
+### [p018_c0001] Proposed SBS Stops
+> [p018_c0002] The map illustrates the proposed Bx6 SBS and Local Route, which runs from Riverside Drive West Terminal in the west to Farragut St in the east. The route is marked with a thick blue line and numbered stops 1 through 6. Key stops include Amsterdam Av, River Av, Sherman Av, Melrose Av, Prospect Av, Intervale Av, Southern Blvd/Bruckner Blvd, Seneca Av, Spofford Av/Halleck St, Hunts Point Av/Spofford Av, Food Center Dr Terminal, Hunts Point Market, Viele Av, Ryawa Av, and Farragut St. The map also shows major highways like the Macombs Dam Bridge, Harlem River, Westchester Av, and the Bruckner Exwy. A legend in the top right corner defines the symbols: a thick blue line for the proposed route, a blue circle with a white cross for a proposed stop, a small white circle for a subway station, and a blue bracket for the start of a bridge or underpass. Two blue callout boxes highlight fare payment options: 'Bx6 local fares paid on bus' for stops 1-5 and 'Bx6 SBS fares paid on street at fare machines' for stops 6-8. An inset photograph shows a person using a fare machine at a bus stop. Bx6 local fares paid on bus Bx6 SBS fares paid on street at fare machines Legend: Proposed Bx6 SBS and Local Route Proposed Bx6 SBS and Local Stop Subway Station Start of Bridge or Underpass
+> [p018_c0003] A photograph of a person in a purple jacket and blue beanie using a fare machine at a bus stop. The machine has a screen that says 'Please Enter Your Receipt and Amount' and buttons for 'RECEIPT', 'PUSH TO START', and 'METRO CARD'. The person is inserting a card into the machine.
+[p018_c0004] _+selectbuservice_
+[p018_c0005] _18_
+
+## Page 19
+
+### [p019_c0001] Proposed Street Design and Signal Changes
+- [p019_c0002] • No bus lanes proposed for 155 th St • Potential signal timing adjustments to improve traffic flow across Macombs Dam Bridge
+> [p019_c0003] A photograph showing a multi-lane street with heavy traffic. In the foreground, there are cars and a yellow bus. The street has traffic lights and a "ONLY" marking on the pavement. In the background, a bridge spans a body of water, and a city skyline is visible under a clear sky.
+> [p019_c0004] A map of the area around Washington Heights and Yankee Stadium. A thick blue line represents a proposed bus route. The route starts at a red circle with the number "1" near Washington Heights, follows W 155 St, and then turns east. It passes through a blue circle with the letter "A" and another blue circle with the letter "C". The route continues east, crossing the Harlem River, and ends at a green circle with the number "4" near Yankee Stadium. Other streets shown include Riverside Dr W, Broadway, and Harl. A black arrow points from the photograph on the left to the "1" marker on the map.
+[p019_c0005] _+selectbusservice_
+[p019_c0006] _19_
+
+## Page 20
+
+### [p020_c0001] Next steps
+- [p020_c0002] • Summer 2016 – Community outreach • on-street outreach • stakeholder meetings – Draft street design – Traffic analysis • Fall 2016 – Finalize street design – Finalize service plan – Continued community outreach • community boards • on-street outreach • stakeholder meetings • elected official briefings • Spring/Summer 2017 – Launch Bx6 SBS service
+> [p020_c0003] A photograph of a white bus with the number 7642 and a destination sign reading 'Bx6 Southern'. Several people, including children in winter clothing, are standing near the bus, suggesting a community outreach or service event. The bus is parked on a sidewalk next to a building under construction with green and yellow protective sheeting. The scene is outdoors during the day, with bright sunlight.
+[p020_c0004] _+selectbuservice_
+[p020_c0005] _20_
+
+## Page 21
+
+### [p021_c0001] Questions and Discussion
+[p021_c0002] Thank You!
+> [p021_c0003] A white and blue New York City bus (Bx6) is stopped at a bus stop. The bus has a 'SLEEPY'S The only Mattress Professionals' advertisement on its side. The bus stop sign indicates 'Bx6' and 'Hunts Point'. A pedestrian crossing signal shows a red hand. The background shows city buildings and trees.
+[p021_c0004] _+selectbuservice_
+[p021_c0005] _21_

@@ -1,0 +1,46 @@
+{
+  "run_id": "2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T02:02:35.528Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "b44-sbs-cb8-new",
+        "local_observation_id": "route_b44_sbs_201110_cb8",
+        "decision": "new",
+        "rationale": "The observation's base_record_id route_b44-sbs is the closest matching registry record (same route variant SBS, same borough Brooklyn, same source 201110_nostrand_cb8_slides already listed on that registry card, and alias route_b44-sbs-201110-cb8 already present). The observation already resolves to its own canonical record. Per identity-packet rule: when the closest match IS the observation's own base_record_id, the decision is new — never link to your own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb8_slides",
+            "block_id": "p010_c0003",
+            "source_quote": "Southbound B44 SBS on Nostrand Ave • Northbound B44 SBS on Rogers Ave, B44 local remains on New York Ave"
+          }
+        ]
+      },
+      {
+        "decision_id": "b44-local-cb8-new",
+        "local_observation_id": "route_b44_local_201110_cb8",
+        "decision": "new",
+        "rationale": "The observation's base_record_id route_b44-local is the closest matching registry record (same route variant local, same borough Brooklyn, source 201110_nostrand_cb8_slides already listed on that registry card, and alias route_b44-local-201110-cb8 already present). The observation already resolves to its own canonical record. Per identity-packet rule: when the closest match IS the observation's own base_record_id, the decision is new — never link to your own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb8_slides",
+            "block_id": "p002_c0003",
+            "source_quote": "Currently served by B44 bus route"
+          },
+          {
+            "source_id": "201110_nostrand_cb8_slides",
+            "block_id": "p010_c0003",
+            "source_quote": "B44 local remains on New York Ave"
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-01-59-964Z_2111393-b0434770_canonicalize_2026-06-10t22-59-52-566z-1976810-e040d399-ingest-201110-nostrand-cb8-slides-route-identity"
+}

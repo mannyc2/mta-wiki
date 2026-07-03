@@ -1,0 +1,412 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch044-prep",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "batch_id": "relation044",
+  "batch": "batch044",
+  "scope": "Codex-only relation endpoint-shape cleanup prep; no durable retirements or replacement submissions applied",
+  "input_artifact": "data/review_notes/codex-relation-rule-or-data-next19-prep.json",
+  "bucket": {
+    "name": "part_of_program project-to-claim row pointing at source claim instead of program endpoint",
+    "original_relation_kind": "part_of_program",
+    "original_endpoint_shape": "project -> claim",
+    "replacement_relation_kind": "part_of_program",
+    "replacement_endpoint_shape": "project -> project",
+    "prepared_original_count": 1,
+    "cleanup_direction": "data cleanup only; keep part_of_program endpoint rule as project|route -> project|entity",
+    "rationale": "The original relation says Hudson Line resilience is a Next Up Planning project, but points the relation object at the broader page-6 cost-containment claim. Page 20 provides a better program-like endpoint, Next Up: Planning, and the same page lists Hudson Line resilience under that heading."
+  },
+  "checkpoint_context": {
+    "reported_checkpoint": {
+      "unexpected_relation_endpoint_shape": 26,
+      "context": "Fresh baseline after relation043/identity075 checkpoint supplied in task."
+    },
+    "input_next19_observed_count_before_relation043": 27,
+    "selected_bucket_count": 1,
+    "expected_endpoint_shape_issue_delta": -1,
+    "endpoint_shape_issue_count_after_replacement_estimate": 25,
+    "endpoint_shape_probe": {
+      "part_of_program project->claim": "Relation kind part_of_program expects project|route -> project|entity, got project -> claim.",
+      "part_of_program project->project": "accepted by current endpoint-shape rules"
+    }
+  },
+  "durable_mechanism_prepared_not_applied": {
+    "retire_originals_via": "data/submission-overrides/retired.json",
+    "replacement_journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch044.jsonl",
+    "mutation_status": "not_applied_by_this_prep",
+    "only_file_written_by_this_task": "data/review_notes/codex-relation-cleanup-batch044-prep.json"
+  },
+  "exclusions_and_guards": {
+    "excluded_prior_relation_batches": [
+      "batch017",
+      "batch018",
+      "batch019",
+      "batch020",
+      "batch021",
+      "batch022",
+      "batch023",
+      "batch024",
+      "batch025",
+      "batch026",
+      "batch027",
+      "batch028",
+      "batch029",
+      "batch030",
+      "batch031",
+      "batch032",
+      "batch033",
+      "batch034",
+      "batch035",
+      "batch036",
+      "batch037",
+      "batch038",
+      "batch039",
+      "batch040",
+      "batch041",
+      "batch042",
+      "batch043"
+    ],
+    "missing_target_repairs_excluded": true,
+    "schema_or_ontology_invention_candidates_excluded": true,
+    "guarded_files_not_edited": [
+      "data/submission-overrides/retired.json",
+      "data/submissions/*.jsonl",
+      "data/canonical/*.jsonl",
+      "data/canonical.db",
+      "wiki/*",
+      "LOG.md",
+      "manifest files",
+      "identity overrides",
+      "code"
+    ],
+    "original_submission_guard": {
+      "selected_original_submission_id": "sub_9c7f87794ca04b4a",
+      "selected_original_record_id": "relation_hudson-line-next-up-planning",
+      "retired_hits_for_selected_originals": [],
+      "canonical_original_present": true,
+      "prior_prep_note": "Batch031 deferred this row until adjacent Hudson Line page-20 evidence was reviewed; next19 selected it for data cleanup after that review."
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": [],
+      "canonical_record_collision_hits_for_new_batch044_locals": []
+    },
+    "known_endpoint_local_ids_confirmed": [
+      "project_hudson_line_resilience",
+      "project_batch044_next_up_planning"
+    ],
+    "replacement_endpoint_shape_guard": {
+      "subject_local_observation_id": "project_hudson_line_resilience",
+      "subject_kind": "project",
+      "object_local_observation_id": "project_batch044_next_up_planning",
+      "object_kind": "project",
+      "relation_kind": "part_of_program",
+      "endpoint_shape_issue_after_replacement": null
+    },
+    "retire_only_fallback": {
+      "available": true,
+      "not_selected_reason": "Replacement is safe: the Next Up: Planning endpoint is directly source-backed by page 20 and the replacement project->project relation satisfies current endpoint rules."
+    }
+  },
+  "local_validation": {
+    "clean": true,
+    "tooling": "Read-only jq/rg inspection plus bun --eval createSubmissionEntry dry-run using direct source imports; no appendSubmission or generated-output commands run.",
+    "summary": {
+      "prepared_count": 1,
+      "retire_replace_count": 1,
+      "retire_only_count": 0,
+      "replacement_submission_count": 2,
+      "accepted_replacement_count": 2,
+      "issue_count": 0,
+      "warning_count": 0,
+      "relation_endpoint_issue_count": 0,
+      "endpoint_shape_issue_count_after_replacement": 0,
+      "endpoint_shape_issue_count_after_replacement_estimate": 25
+    }
+  },
+  "prepared_count": 1,
+  "retire_replace_count": 1,
+  "retire_only_count": 0,
+  "accepted_replacement_count": 2,
+  "issue_count": 0,
+  "endpoint_shape_issue_count_after_replacement_estimate": 25,
+  "all_pass": true,
+  "decisions": [
+    {
+      "action": "retire_and_replace",
+      "retire": {
+        "submission_id": "sub_9c7f87794ca04b4a",
+        "run_id": "2026-06-21T16-51-34-926Z_2907661-a5d4e1b0_ingest_meeting-doc-165406",
+        "original_record_id": "relation_hudson-line-next-up-planning",
+        "original_local_observation_id": "relation_hudson_line_next_up_planning",
+        "malformed_shape": "part_of_program project -> claim",
+        "original_relation_kind": "part_of_program",
+        "original_subject_id": "project_hudson-line-resilience",
+        "original_subject_kind": "project",
+        "original_subject_local_observation_id": "project_hudson_line_resilience",
+        "original_subject_name": "Hudson Line Resilience",
+        "original_object_id": "claim_cost-containment-strategy-4-pillars",
+        "original_object_kind": "claim",
+        "original_object_local_observation_id": "claim_cost_containment_strategy_4_pillars",
+        "original_object_name": "MTA C&D Cost Containment Strategy",
+        "source_ids": [
+          "meeting_doc_165406"
+        ],
+        "current_args": {
+          "source_id": "meeting_doc_165406",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_hudson_line_next_up_planning",
+          "label": "Hudson Line resilience is a Next Up Planning project",
+          "payload": {
+            "relation_kind": "part_of_program",
+            "subject_local_observation_id": "project_hudson_line_resilience",
+            "object_local_observation_id": "claim_cost_containment_strategy_4_pillars",
+            "description": "Hudson Line resilience is a Next Up: Planning project under the MTA C&D Cost Containment Strategy",
+            "relation_family": "program_project_scope"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_165406",
+              "evidence_id": "meeting_doc_165406#p020_c0002",
+              "source_path": "raw/sources/meeting_doc_165406/blocks.jsonl",
+              "page_number": 20,
+              "block_id": "p020_c0002",
+              "text_sha256": "sha256:a140c9f3bb678fce4e170dddcabc4bb3d0ee32103eafa8716c2d9d4e1a26811d",
+              "text_source": "raw_text"
+            }
+          ]
+        },
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_9c7f87794ca04b4a",
+          "reason": "Codex relation cleanup batch044 replaces malformed part_of_program project -> claim relation relation_hudson-line-next-up-planning with a source-backed Next Up: Planning project/program endpoint and a validator-compatible project -> project relation.",
+          "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-23.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch044",
+          "reviewed_at": "2026-06-23T00:00:00Z"
+        },
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_165406",
+            "evidence_id": "meeting_doc_165406#p020_c0002",
+            "source_path": "raw/sources/meeting_doc_165406/blocks.jsonl",
+            "page_number": 20,
+            "block_id": "p020_c0002",
+            "text_sha256": "sha256:a140c9f3bb678fce4e170dddcabc4bb3d0ee32103eafa8716c2d9d4e1a26811d",
+            "text_source": "raw_text",
+            "source_quote": "Next Up: Planning"
+          },
+          {
+            "source_id": "meeting_doc_165406",
+            "evidence_id": "meeting_doc_165406#p020_c0003",
+            "source_path": "raw/sources/meeting_doc_165406/blocks.jsonl",
+            "page_number": 20,
+            "block_id": "p020_c0003",
+            "text_sha256": "sha256:caf2cbb13a9fefbb14ef0f82764bbb7781252d02b2842900dda8af92eb9390a0",
+            "text_source": "raw_text",
+            "source_quote": "Integrate strategy about what to build & address multiple needs at the same time"
+          },
+          {
+            "source_id": "meeting_doc_165406",
+            "evidence_id": "meeting_doc_165406#p020_c0005",
+            "source_path": "raw/sources/meeting_doc_165406/blocks.jsonl",
+            "page_number": 20,
+            "block_id": "p020_c0005",
+            "text_sha256": "sha256:49d437e670379e8bbd8e9dad5368c94bf5c08d6250b67b486ef77684d30032f5",
+            "text_source": "raw_text",
+            "source_quote": "20 miles of integrated Hudson Line resilience & state of good repair"
+          },
+          {
+            "source_id": "meeting_doc_165406",
+            "evidence_id": "meeting_doc_165406#p006_c0002",
+            "source_path": "raw/sources/meeting_doc_165406/blocks.jsonl",
+            "page_number": 6,
+            "block_id": "p006_c0002",
+            "text_sha256": "sha256:c975f5e597d70edc4061458f54b5ee94757415b762dbaa26682c79f6d753cd46",
+            "text_source": "raw_text",
+            "source_quote": "Cost Containment Strategy: MTA C&D",
+            "role": "current_malformed_claim_context"
+          }
+        ],
+        "reason": "The current object is a claim about the overall MTA C&D Cost Containment Strategy, while the source-backed program context for this row is the page-20 Next Up: Planning heading. Claims should not be widened as part_of_program containers; a small project/program endpoint preserves the source hierarchy and validates as project -> project.",
+        "expected_endpoint_shape_delta": -1,
+        "confidence": "high"
+      },
+      "replacement": {
+        "run_id": "2026-06-23_codex_relation_cleanup_batch044",
+        "journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch044.jsonl",
+        "id_generation": {
+          "method": "createSubmissionEntry(runId, rawToolArgs, '2026-06-23T00:00:00.000Z') with relationEndpointIssues added to the relation entry; stable hashes are over normalized tool_args.",
+          "conductor_required": false
+        },
+        "replacement_entries": [
+          {
+            "role": "project/program endpoint replacement",
+            "deterministic_submission_id": "sub_9cb80eadd9792f05",
+            "tool_args_sha256": "sha256:9cb80eadd9792f05a660b49e7f033657b23b9e72efee3f11c4c994718c9786f9",
+            "proposed_endpoint_kind": "project",
+            "entry": {
+              "submission_id": "sub_9cb80eadd9792f05",
+              "run_id": "2026-06-23_codex_relation_cleanup_batch044",
+              "submitted_at": "2026-06-23T00:00:00.000Z",
+              "tool_args_sha256": "sha256:9cb80eadd9792f05a660b49e7f033657b23b9e72efee3f11c4c994718c9786f9",
+              "schema_version": 2,
+              "tool_args": {
+                "source_id": "meeting_doc_165406",
+                "observation_kind": "project",
+                "local_observation_id": "project_batch044_next_up_planning",
+                "create_new": true,
+                "label": "Next Up: Planning",
+                "raw_text": "Next Up: Planning; Integrate strategy about what to build & address multiple needs at the same time",
+                "payload": {
+                  "project_name": "Next Up: Planning",
+                  "project_type": "capital planning strategy",
+                  "status": "planned",
+                  "description": "MTA C&D planning approach to integrate strategy about what to build and address multiple needs at the same time.",
+                  "document_time_status": "planned",
+                  "project_family": "capital_or_infrastructure"
+                },
+                "evidence_refs": [
+                  {
+                    "source_id": "meeting_doc_165406",
+                    "evidence_id": "meeting_doc_165406#p020_c0002",
+                    "source_path": "raw/sources/meeting_doc_165406/blocks.jsonl",
+                    "page_number": 20,
+                    "block_id": "p020_c0002",
+                    "text_sha256": "sha256:a140c9f3bb678fce4e170dddcabc4bb3d0ee32103eafa8716c2d9d4e1a26811d",
+                    "text_source": "raw_text",
+                    "role": "program_heading",
+                    "source_quote": "Next Up: Planning"
+                  },
+                  {
+                    "source_id": "meeting_doc_165406",
+                    "evidence_id": "meeting_doc_165406#p020_c0003",
+                    "source_path": "raw/sources/meeting_doc_165406/blocks.jsonl",
+                    "page_number": 20,
+                    "block_id": "p020_c0003",
+                    "text_sha256": "sha256:caf2cbb13a9fefbb14ef0f82764bbb7781252d02b2842900dda8af92eb9390a0",
+                    "text_source": "raw_text",
+                    "role": "program_description",
+                    "source_quote": "Integrate strategy about what to build & address multiple needs at the same time"
+                  }
+                ]
+              },
+              "validation": {
+                "state": "accepted",
+                "issues": []
+              }
+            },
+            "local_validation": {
+              "state": "accepted",
+              "issues": [],
+              "warnings": [],
+              "relationEndpointIssues": [],
+              "collision": false
+            }
+          },
+          {
+            "role": "corrected relation replacement",
+            "deterministic_submission_id": "sub_6690c9ce1df2f14a",
+            "tool_args_sha256": "sha256:6690c9ce1df2f14a039c464da7e65e07232b03bc9d472095a7841f95b004895c",
+            "proposed_relation_kind": "part_of_program",
+            "proposed_endpoint_shape": "project -> project",
+            "entry": {
+              "submission_id": "sub_6690c9ce1df2f14a",
+              "run_id": "2026-06-23_codex_relation_cleanup_batch044",
+              "submitted_at": "2026-06-23T00:00:00.000Z",
+              "tool_args_sha256": "sha256:6690c9ce1df2f14a039c464da7e65e07232b03bc9d472095a7841f95b004895c",
+              "schema_version": 2,
+              "tool_args": {
+                "source_id": "meeting_doc_165406",
+                "observation_kind": "relation",
+                "local_observation_id": "relation_batch044_hudson_line_resilience_part_of_next_up_planning",
+                "label": "Hudson Line resilience is part of Next Up: Planning",
+                "raw_text": "Next Up: Planning; 20 miles of integrated Hudson Line resilience & state of good repair",
+                "payload": {
+                  "relation_kind": "part_of_program",
+                  "subject_local_observation_id": "project_hudson_line_resilience",
+                  "object_local_observation_id": "project_batch044_next_up_planning",
+                  "description": "Replacement for malformed part_of_program project-to-claim row; the page presents Hudson Line resilience under the Next Up: Planning heading.",
+                  "relation_family": "program_project_scope"
+                },
+                "evidence_refs": [
+                  {
+                    "source_id": "meeting_doc_165406",
+                    "evidence_id": "meeting_doc_165406#p020_c0002",
+                    "source_path": "raw/sources/meeting_doc_165406/blocks.jsonl",
+                    "page_number": 20,
+                    "block_id": "p020_c0002",
+                    "text_sha256": "sha256:a140c9f3bb678fce4e170dddcabc4bb3d0ee32103eafa8716c2d9d4e1a26811d",
+                    "text_source": "raw_text",
+                    "role": "program_heading",
+                    "source_quote": "Next Up: Planning"
+                  },
+                  {
+                    "source_id": "meeting_doc_165406",
+                    "evidence_id": "meeting_doc_165406#p020_c0005",
+                    "source_path": "raw/sources/meeting_doc_165406/blocks.jsonl",
+                    "page_number": 20,
+                    "block_id": "p020_c0005",
+                    "text_sha256": "sha256:49d437e670379e8bbd8e9dad5368c94bf5c08d6250b67b486ef77684d30032f5",
+                    "text_source": "raw_text",
+                    "role": "program_project_item",
+                    "source_quote": "20 miles of integrated Hudson Line resilience & state of good repair"
+                  }
+                ]
+              },
+              "validation": {
+                "state": "accepted",
+                "issues": []
+              }
+            },
+            "local_validation": {
+              "state": "accepted",
+              "issues": [],
+              "warnings": [],
+              "relationEndpointIssues": [],
+              "endpoint_shape_issue_after_replacement": null,
+              "known_local_observation_ids_confirmed": [
+                "project_hudson_line_resilience",
+                "project_batch044_next_up_planning"
+              ],
+              "collision": false
+            }
+          }
+        ],
+        "confidence": "high"
+      }
+    }
+  ],
+  "command_evidence": [
+    {
+      "command": "jq '.' data/review_notes/codex-relation-rule-or-data-next19-prep.json",
+      "output_excerpt": "Selected part_of_program project->claim row sub_9c7f87794ca04b4a; recommended data cleanup with Next Up: Planning project/program endpoint or retire-only fallback."
+    },
+    {
+      "command": "rg -n 'sub_9c7f87794ca04b4a|project_batch044_next_up_planning|relation_batch044_hudson_line_resilience_part_of_next_up_planning' data/submissions data/canonical data/review_notes data/submission-overrides/retired.json -S",
+      "output_excerpt": "Original accepted submission and canonical relation are present; replacement batch044 submission ids and local observation ids have no existing hits; original has no retired.json hit."
+    },
+    {
+      "command": "jq -c 'select(.block_id==\"p020_c0002\" or .block_id==\"p020_c0003\" or .block_id==\"p020_c0005\" or .block_id==\"p006_c0002\")' raw/sources/meeting_doc_165406/blocks.jsonl",
+      "output_excerpt": "Confirmed page 20 blocks for Next Up: Planning, planning description, and Hudson Line resilience item; page 6 block confirms the current malformed claim context."
+    },
+    {
+      "command": "bun --eval '<read-only createSubmissionEntry dry-run for project_batch044_next_up_planning and relation_batch044_hudson_line_resilience_part_of_next_up_planning>'",
+      "output_excerpt": "Generated accepted replacement submissions sub_9cb80eadd9792f05 and sub_6690c9ce1df2f14a with issues=[], warnings=[], relationEndpointIssues=[]."
+    },
+    {
+      "command": "rg -n 'project_batch044_next_up_planning|relation_batch044_hudson_line_resilience_part_of_next_up_planning|sub_9cb80eadd9792f05|sub_6690c9ce1df2f14a' data/submissions data/canonical data/submission-overrides/retired.json -S || true",
+      "output_excerpt": "No existing replacement submission id, replacement local id, canonical record, or retired override collision."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed ingest/write/ask commands",
+    "canonicalize/campaign dedup/identity-review/schema/ontology-normalize commands",
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts export-jsonl",
+    "database publish commands",
+    "any command with --profile or provider-backed execution"
+  ],
+  "files_written": [
+    "data/review_notes/codex-relation-cleanup-batch044-prep.json"
+  ],
+  "blockers": []
+}

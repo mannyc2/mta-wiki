@@ -1,0 +1,41 @@
+{
+  "run_id": "2026-06-10T23-09-19-079Z_1976810-866cada1_ingest_201205-brt-webster-cac",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T03:18:55.458Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "mta-nyct-201205-webster-new",
+        "local_observation_id": "entity_mta_nyct_201205_webster",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_mta-nyct is the closest match — same entity_name ('MTA New York City Transit'), same entity_type ('agency'). The observation already resolves to its own base_record_id; no different existing record is a better match.",
+        "evidence_refs": [
+          {
+            "source_id": "201205_brt_webster_cac",
+            "block_id": "p001_c0001",
+            "source_quote": "MTA New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "nyc-dot-201205-webster-new",
+        "local_observation_id": "entity_nyc_dot_201205_webster",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_nyc-dot is the closest match — same entity_name ('New York City Department of Transportation'), same entity_type ('agency'). The observation already resolves to its own base_record_id; no different existing record is a better match.",
+        "evidence_refs": [
+          {
+            "source_id": "201205_brt_webster_cac",
+            "block_id": "p002_c0005",
+            "source_quote": "New York City Department of Transportation (NYC DOT)"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-18-19-870Z_2111393-63f2498c_canonicalize_2026-06-10t23-09-19-079z-1976810-866cada1-ingest-201205-brt-webster-cac-entity-identity"
+}

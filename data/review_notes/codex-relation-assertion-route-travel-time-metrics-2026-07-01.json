@@ -1,0 +1,121 @@
+{
+  "note_id": "codex-relation-assertion-route-travel-time-metrics-2026-07-01",
+  "date": "2026-07-01",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed profiles",
+    "Pioneer/OpenAI/DeepSeek/vLLM/chandra model calls"
+  ],
+  "bucket": "relation_assertion_status_unknown",
+  "implemented_change": {
+    "summary": "Classify observed true-route travel-time metric relations as delivered.",
+    "code_paths": [
+      "packages/pipeline/src/records/assertion-qualifiers.ts",
+      "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+    ],
+    "rule": {
+      "relation_family": "metric_context",
+      "relation_kind": "has_metric",
+      "subject": "route with route_record_scope true_route",
+      "object": "metric_claim",
+      "metric_name_allowlist": [
+        "travel_time",
+        "bus_travel_time"
+      ],
+      "required_signals": [
+        "duration unit family",
+        "normalized minutes unit",
+        "concrete metric value",
+        "period/time_period/date/year/comparison_period anchor",
+        "same-source relation and metric evidence",
+        "no future/planning/proposal/estimate tokens in metric or relation text"
+      ]
+    }
+  },
+  "baseline": {
+    "validate_issues": 0,
+    "relation_assertion_unknown_total": 5258,
+    "metric_context_unknown": 2572,
+    "metric_context_has_metric_unknown": 2558,
+    "delivered_metric_context_has_metric": 2535,
+    "safe_candidate_count": 231
+  },
+  "after": {
+    "validate_issues": 0,
+    "relation_assertion_unknown_total": 5027,
+    "metric_context_unknown": 2341,
+    "metric_context_has_metric_unknown": 2327,
+    "delivered_metric_context_has_metric": 2766
+  },
+  "delta": {
+    "relation_assertion_unknown_total": -231,
+    "metric_context_unknown": -231,
+    "metric_context_has_metric_unknown": -231,
+    "delivered_metric_context_has_metric": 231
+  },
+  "subagent_inputs": [
+    {
+      "thread_id": "019f1fa9-bb83-7a10-99f2-66c417f5ff00",
+      "name": "Pascal",
+      "lane": "metric_context.has_metric residual scout",
+      "finding": "Found 231 true-route travel_time/bus_travel_time minutes rows with same-source evidence and future/proposal guards.",
+      "used_for_this_change": true
+    },
+    {
+      "thread_id": "019f1fa9-d151-7dc2-950e-a8678f266522",
+      "name": "Arendt",
+      "lane": "claim_context residual scout",
+      "finding": "Found a 13-row source-to-audience presented_to candidate for a possible follow-up rule.",
+      "used_for_this_change": false
+    },
+    {
+      "thread_id": "019f1faa-0d57-78a2-a171-47ca5e323e93",
+      "name": "Lagrange",
+      "lane": "agency/funding residual scout",
+      "finding": "Found a 15-row source presented_by candidate for a possible follow-up rule.",
+      "used_for_this_change": false
+    }
+  ],
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+      "result": "passed: 77 tests, 413 expect calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "passed"
+    },
+    {
+      "command": "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+      "result": "passed: Materialized 93092/98102 submissions; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+      "result": "ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "passed: Issues 0"
+    }
+  ],
+  "intentionally_unresolved": [
+    "Travel-time rows on aggregate/list/split-candidate routes remain unknown.",
+    "Future/planned/proposed/estimate travel-time rows remain unknown.",
+    "Wrong-unit, missing-value, missing-anchor, and missing-evidence rows remain unknown.",
+    "The rule does not generalize to speed, reliability, headway, wait-time, satisfaction, safety, or cost metrics.",
+    "Canonical JSONL was not hand-edited."
+  ],
+  "next_candidate_lanes": [
+    "Review and possibly implement the 13-row claim_context.presented_to source-audience candidate.",
+    "Review and possibly implement the 15-row agency_role.presented_by source-artifact candidate.",
+    "Continue exact metric-name/unit/period guardrails for metric_context.has_metric residuals.",
+    "Return to project/route duplicate identity buckets if a duplicate-record backlog reappears; current project/route duplicate validation pressure is zero."
+  ]
+}

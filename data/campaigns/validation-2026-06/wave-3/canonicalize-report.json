@@ -1,0 +1,936 @@
+{
+  "campaign_id": "validation-2026-06",
+  "wave": 3,
+  "generated_at": "2026-06-11T06:02:06.464Z",
+  "profile": "pioneer-deepseek-pro",
+  "dry_run": false,
+  "runs_total": 100,
+  "applied": [
+    "2026-06-10T22-56-13-021Z_1976810-4f20fb57_ingest_20100615-34th-transitway-cac-mtg-summary",
+    "2026-06-10T22-56-13-128Z_1976810-aed74808_ingest_20101027-nostrand-cac-slides",
+    "2026-06-10T22-56-13-151Z_1976810-216ae5f7_ingest_201011-nostrand-handout",
+    "2026-06-10T22-56-13-157Z_1976810-9e0fff70_ingest_2011-03-07-brt-nostrand-cb3",
+    "2026-06-10T22-56-13-173Z_1976810-bc7f43c2_ingest_2011-04-27-brt-1st2nd-cac6",
+    "2026-06-10T22-56-13-190Z_1976810-e4e24de9_ingest_2011-05-02-brt-1st2nd-cb6",
+    "2026-06-10T22-56-13-202Z_1976810-516f2e3c_ingest_2011-09-15-sbs-utica-cb8-9-17",
+    "2026-06-10T22-56-13-211Z_1976810-4d6654f7_ingest_2011-34th-sbs-comments-on-proposed-design",
+    "2026-06-10T22-56-13-237Z_1976810-594d84d9_ingest_2011-brt-34th-cb6-slides",
+    "2026-06-10T22-56-13-249Z_1976810-1c537fb6_ingest_20110118-34th-cac-mtg-minutes",
+    "2026-06-10T22-56-13-259Z_1976810-f3a30c74_ingest_20110118-34th-cac3-slides",
+    "2026-06-10T22-56-13-269Z_1976810-085e59e4_ingest_201103-34th-cac-summary",
+    "2026-06-10T22-56-13-279Z_1976810-d212e19e_ingest_20110314-34th-cac4-slides",
+    "2026-06-10T22-56-13-288Z_1976810-67a230b7_ingest_201104-jamaica-cac2-slides",
+    "2026-06-10T22-56-13-303Z_1976810-9799dcb4_ingest_20110517-jamaica-open-house-posters",
+    "2026-06-10T22-56-13-315Z_1976810-4b04cae8_ingest_201106-hylan-slides",
+    "2026-06-10T22-56-13-329Z_1976810-4a6d2e40_ingest_201106-jamaica-cb12-slides",
+    "2026-06-10T22-56-13-345Z_1976810-5bb38f51_ingest_201109-brt-hylan-introductory-info",
+    "2026-06-10T22-56-13-349Z_1976810-7111a634_ingest_201109-brt-hylan-proposed",
+    "2026-06-10T22-56-13-356Z_1976810-01d96a6f_ingest_201109-brt-nostrand-cac4",
+    "2026-06-10T22-56-13-371Z_1976810-f11382ba_ingest_201109-nostrand-cb9-slides",
+    "2026-06-10T22-56-13-382Z_1976810-c496d526_ingest_201110-brt-34th-cac5",
+    "2026-06-10T22-56-13-398Z_1976810-3e780c0a_ingest_201110-brt-34th-open-house-slides",
+    "2026-06-10T22-56-13-413Z_1976810-e589ba1d_ingest_201110-nostrand-cb15-slides",
+    "2026-06-10T22-59-39-378Z_1976810-154a89ae_ingest_201110-nostrand-cb17-slides",
+    "2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides",
+    "2026-06-10T22-59-53-483Z_1976810-7e48c798_ingest_201110-qbb-approach-summary",
+    "2026-06-10T23-00-12-469Z_1976810-c1d669fe_ingest_201110-qbb-summary-recommendations",
+    "2026-06-10T23-00-19-532Z_1976810-da84df67_ingest_201111-1st2nd-progress-report",
+    "2026-06-10T23-00-43-892Z_1976810-2089e199_ingest_201111-nostrand-cb1-slides",
+    "2026-06-10T23-00-44-712Z_1976810-19f7742b_ingest_20111130-nostrand-cb14-slides",
+    "2026-06-10T23-01-11-643Z_1976810-73612f01_ingest_20111205-nostrand-cb3-slides",
+    "2026-06-10T23-01-15-160Z_1976810-7fae13a5_ingest_2012-01-24-sbs-utica-merchants",
+    "2026-06-10T23-02-39-444Z_1976810-c9c547a6_ingest_2012-02-06-brt-webster-cac1",
+    "2026-06-10T23-02-39-805Z_1976810-c647d6ee_ingest_2012-02-brt-webster-cac1-summary",
+    "2026-06-10T23-02-58-604Z_1976810-5cc8b5d0_ingest_2012-03-15-brt-hylan-meeting-slides",
+    "2026-06-10T23-03-01-256Z_1976810-14f50da6_ingest_2012-04-20-brt-lga-workshop-summary",
+    "2026-06-10T23-03-11-313Z_1976810-8253a411_ingest_2012-04-26-sbs-utica",
+    "2026-06-10T23-03-12-876Z_1976810-853fca30_ingest_2012-05-webster-cac2-summary",
+    "2026-06-10T23-03-13-561Z_1976810-31a3769a_ingest_2012-06-25-brt-woodhaven-publicworkshop2-presentation",
+    "2026-06-10T23-03-16-016Z_1976810-ee489d3c_ingest_2012-06-nostrand-sbs-cac5-slides",
+    "2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer",
+    "2026-06-10T23-03-20-805Z_1976810-5b1cc97e_ingest_2012-09-19-125th-st-sbs-public-workshop-summary",
+    "2026-06-10T23-04-26-979Z_1976810-e6c5f788_ingest_2012-09-sbs-125th-workshop-1",
+    "2026-06-10T23-04-27-481Z_1976810-2b41002c_ingest_2012-09-webster-sbs-cac3",
+    "2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop",
+    "2026-06-10T23-04-42-552Z_1976810-b13e57f4_ingest_2012-10-brt-webster-cac3-meeting-summary",
+    "2026-06-10T23-05-07-096Z_1976810-a3599472_ingest_2012-10-lga-plan-one-pager",
+    "2026-06-10T23-05-20-796Z_1976810-59c965fc_ingest_2012-10-webster-sbs-newsletter",
+    "2026-06-10T23-05-54-642Z_1976810-59962f5c_ingest_2012-11-sbs-webster-cac4",
+    "2026-06-10T23-06-42-606Z_1976810-0ee807d5_ingest_2012-11-sbs-webster-cac4-summary",
+    "2026-06-10T23-07-32-203Z_1976810-d29b08e7_ingest_2012-12-03-sbs-125th-workshop-summary",
+    "2026-06-10T23-07-52-320Z_1976810-0f952584_ingest_2012-12-sbs-125th-workshop-2",
+    "2026-06-10T23-08-59-359Z_1976810-a7558b5c_ingest_2012-sbs-hylan-winter-newsletter",
+    "2026-06-10T23-09-00-287Z_1976810-091c3bb9_ingest_201203-brt-34th-cac6",
+    "2026-06-10T23-09-19-079Z_1976810-866cada1_ingest_201205-brt-webster-cac",
+    "2026-06-10T23-09-19-253Z_1976810-6248d0ff_ingest_2013-01-webster-sbs-newsletter",
+    "2026-06-10T23-09-24-918Z_1976810-40faa314_ingest_2013-02-sbs-webster-bx-cb1",
+    "2026-06-10T23-09-55-146Z_1976810-34e7c013_ingest_2013-02-sbs-webster-bx-cb3",
+    "2026-06-10T23-10-10-943Z_1976810-5d9cb416_ingest_2013-02-sbs-webster-bx-cb4",
+    "2026-06-10T23-10-15-955Z_1976810-e66a6186_ingest_2013-03-07-sbs-125th-cb9",
+    "2026-06-10T23-10-24-333Z_1976810-1a314ef0_ingest_2013-03-13-sbs-125th-cb10",
+    "2026-06-10T23-10-25-438Z_1976810-853a327c_ingest_2013-03-sbs-125-st-cb11-slides",
+    "2026-06-10T23-11-38-845Z_1976810-e9238494_ingest_2013-03-sbs-webster-bx-cb5",
+    "2026-06-10T23-12-02-636Z_1976810-607b0367_ingest_2013-03-sbs-webster-bx-cb6",
+    "2026-06-10T23-12-19-370Z_1976810-cd557040_ingest_2013-03-sbs-webster-bx-cb7",
+    "2026-06-10T23-12-22-690Z_1976810-a6473111_ingest_2013-04-09-sbs-125th-workshop-3",
+    "2026-06-10T23-13-57-315Z_1976810-4a9314a7_ingest_2013-06-04-sbs-125th-cb11",
+    "2026-06-10T23-14-02-584Z_1976810-848ebcf8_ingest_2013-06-05-sbs-125th-cb9",
+    "2026-06-10T23-14-25-320Z_1976810-10f0b3f3_ingest_2013-06-06-sbs-125th-cb1",
+    "2026-06-10T23-14-44-412Z_1976810-fb5a9f08_ingest_2013-06-12-sbs-125th-cb10",
+    "2026-06-10T23-15-07-535Z_1976810-1e49fd8b_ingest_2013-09-12-sbs-utica-cb8",
+    "2026-06-10T23-18-19-084Z_1976810-cbcf36ef_ingest_2013-09-19-sbs-utica-cb17",
+    "2026-06-10T23-18-20-015Z_1976810-160410d7_ingest_2013-09-24-sbs-utica-cb9",
+    "2026-06-10T23-18-29-209Z_1976810-645b6970_ingest_2013-10-second-ave-bicycle-upgrade-mn-cb6",
+    "2026-06-10T23-19-37-423Z_1976810-adb7c7f2_ingest_2013-11-sbs-nostrand-flyer",
+    "2026-06-10T23-20-32-317Z_1976810-a49f1275_ingest_2014-03-01-brt-webster-sbs-newsletter",
+    "2026-06-10T23-21-17-529Z_1976810-f9a937c8_ingest_2014-03-05-brt-webster-cb4",
+    "2026-06-10T23-21-24-350Z_1976810-7a6bd3c7_ingest_2014-03-06-brt-webster-cb6",
+    "2026-06-10T23-22-02-245Z_1976810-f22ce844_ingest_2014-03-11-brt-webster-cb3",
+    "2026-06-10T23-22-02-987Z_1976810-56dd1bed_ingest_2014-03-20-brt-webste-cb5",
+    "2026-06-10T23-22-28-668Z_1976810-5a80532f_ingest_2014-04-10-brt-webster-cb7",
+    "2026-06-10T23-23-40-593Z_1976810-2bb4bd6e_ingest_2014-05-05-brt-thirdave-cb6-presentation",
+    "2026-06-10T23-23-41-458Z_1976810-89260abd_ingest_2014-06-11-brt-flushingjamaica-cac1-presentation",
+    "2026-06-10T23-24-14-120Z_1976810-18d7c534_ingest_2014-06-25-brt-woodhaven-publicworkshop2-summary",
+    "2026-06-10T23-24-18-555Z_1976810-1571fc06_ingest_2014-08-25-brt-websteravenue-progressreport",
+    "2026-06-10T23-24-22-820Z_1976810-fb3ec43a_ingest_2014-09-16-brt-uticaavenue-cac1-presentation",
+    "2026-06-10T23-24-26-843Z_1976810-b4a4f1b5_ingest_2014-10-01-brt-86thstreet-cb8-presentation",
+    "2026-06-10T23-24-33-165Z_1976810-d1bddb9d_ingest_2014-10-07-brt-flushingjamaica-pw1-presentation",
+    "2026-06-10T23-24-53-943Z_1976810-8fa4739b_ingest_2014-10-14-brt-86thstreet-cb7-presentation",
+    "2026-06-10T23-25-02-919Z_1976810-aa09c937_ingest_2014-10-22-brt-woodhaven-cac2-discussionmaterials",
+    "2026-06-10T23-25-20-740Z_1976810-809a36e3_ingest_2014-10-22-brt-woodhaven-cac2-presentation",
+    "2026-06-10T23-26-35-030Z_1976810-390ad93f_ingest_2014-11-05-brt-woodhavenblvd-pw3-workshopsummary",
+    "2026-06-10T23-26-36-432Z_1976810-da166ffa_ingest_2014-11-06-brt-woodhaven-pw3-boards",
+    "2026-06-10T23-26-53-165Z_1976810-1e664e40_ingest_2014-11-brt-utica-workshopsummary",
+    "2026-06-10T23-27-20-397Z_1976810-28d62fce_ingest_2014-11-brt-uticaave-cb8",
+    "2026-06-10T23-27-22-827Z_1976810-443d0e70_ingest_2014-11-brt-uticaave-pw1",
+    "2026-06-10T23-27-39-880Z_1976810-bb6050fc_ingest_2014-12-01-brt-thirdave-cb6-presentation",
+    "2026-06-10T23-27-48-461Z_1976810-5cd19f10_ingest_2014-125th-st-curb-regulations"
+  ],
+  "quarantined": [
+    {
+      "run_id": "2026-06-10T23-14-48-864Z_1976810-6f1c3aa1_ingest_2013-06-sbs-webster-newsletter",
+      "reason": "No canonicalize packets matched for run 2026-06-10T23-14-48-864Z_1976810-6f1c3aa1_ingest_2013-06-sbs-webster-newsletter."
+    }
+  ],
+  "skipped_already_applied": [],
+  "run_status": [
+    {
+      "run_id": "2026-06-10T22-56-13-021Z_1976810-4f20fb57_ingest_20100615-34th-transitway-cac-mtg-summary",
+      "status": "applied",
+      "wall_clock_ms": 365824,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-128Z_1976810-aed74808_ingest_20101027-nostrand-cac-slides",
+      "status": "applied",
+      "wall_clock_ms": 394430,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 1
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-151Z_1976810-216ae5f7_ingest_201011-nostrand-handout",
+      "status": "applied",
+      "wall_clock_ms": 1424026,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 13
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-157Z_1976810-9e0fff70_ingest_2011-03-07-brt-nostrand-cb3",
+      "status": "applied",
+      "wall_clock_ms": 489947,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 18
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-173Z_1976810-bc7f43c2_ingest_2011-04-27-brt-1st2nd-cac6",
+      "status": "applied",
+      "wall_clock_ms": 874192,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 33
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-190Z_1976810-e4e24de9_ingest_2011-05-02-brt-1st2nd-cb6",
+      "status": "applied",
+      "wall_clock_ms": 546006,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 18
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-202Z_1976810-516f2e3c_ingest_2011-09-15-sbs-utica-cb8-9-17",
+      "status": "applied",
+      "wall_clock_ms": 632037,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 9
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-211Z_1976810-4d6654f7_ingest_2011-34th-sbs-comments-on-proposed-design",
+      "status": "applied",
+      "wall_clock_ms": 475316,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 13
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-237Z_1976810-594d84d9_ingest_2011-brt-34th-cb6-slides",
+      "status": "applied",
+      "wall_clock_ms": 451641,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 10
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-249Z_1976810-1c537fb6_ingest_20110118-34th-cac-mtg-minutes",
+      "status": "applied",
+      "wall_clock_ms": 503474,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 9
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-259Z_1976810-f3a30c74_ingest_20110118-34th-cac3-slides",
+      "status": "applied",
+      "wall_clock_ms": 440616,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 9
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-269Z_1976810-085e59e4_ingest_201103-34th-cac-summary",
+      "status": "applied",
+      "wall_clock_ms": 565064,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 8
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-279Z_1976810-d212e19e_ingest_20110314-34th-cac4-slides",
+      "status": "applied",
+      "wall_clock_ms": 738200,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 17
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-288Z_1976810-67a230b7_ingest_201104-jamaica-cac2-slides",
+      "status": "applied",
+      "wall_clock_ms": 448049,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 9
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-303Z_1976810-9799dcb4_ingest_20110517-jamaica-open-house-posters",
+      "status": "applied",
+      "wall_clock_ms": 1060284,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 3
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-315Z_1976810-4b04cae8_ingest_201106-hylan-slides",
+      "status": "applied",
+      "wall_clock_ms": 395005,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 9
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-329Z_1976810-4a6d2e40_ingest_201106-jamaica-cb12-slides",
+      "status": "applied",
+      "wall_clock_ms": 605389,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 14
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-345Z_1976810-5bb38f51_ingest_201109-brt-hylan-introductory-info",
+      "status": "applied",
+      "wall_clock_ms": 397875,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 10
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-349Z_1976810-7111a634_ingest_201109-brt-hylan-proposed",
+      "status": "applied",
+      "wall_clock_ms": 654727,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 3
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-356Z_1976810-01d96a6f_ingest_201109-brt-nostrand-cac4",
+      "status": "applied",
+      "wall_clock_ms": 1245846,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 10
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-371Z_1976810-f11382ba_ingest_201109-nostrand-cb9-slides",
+      "status": "applied",
+      "wall_clock_ms": 774616,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 3
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-382Z_1976810-c496d526_ingest_201110-brt-34th-cac5",
+      "status": "applied",
+      "wall_clock_ms": 983736,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 19
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-398Z_1976810-3e780c0a_ingest_201110-brt-34th-open-house-slides",
+      "status": "applied",
+      "wall_clock_ms": 779523,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 28
+    },
+    {
+      "run_id": "2026-06-10T22-56-13-413Z_1976810-e589ba1d_ingest_201110-nostrand-cb15-slides",
+      "status": "applied",
+      "wall_clock_ms": 398167,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T22-59-39-378Z_1976810-154a89ae_ingest_201110-nostrand-cb17-slides",
+      "status": "applied",
+      "wall_clock_ms": 675387,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 17
+    },
+    {
+      "run_id": "2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides",
+      "status": "applied",
+      "wall_clock_ms": 556789,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T22-59-53-483Z_1976810-7e48c798_ingest_201110-qbb-approach-summary",
+      "status": "applied",
+      "wall_clock_ms": 1236365,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 25
+    },
+    {
+      "run_id": "2026-06-10T23-00-12-469Z_1976810-c1d669fe_ingest_201110-qbb-summary-recommendations",
+      "status": "applied",
+      "wall_clock_ms": 665720,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 3
+    },
+    {
+      "run_id": "2026-06-10T23-00-19-532Z_1976810-da84df67_ingest_201111-1st2nd-progress-report",
+      "status": "applied",
+      "wall_clock_ms": 642846,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-00-43-892Z_1976810-2089e199_ingest_201111-nostrand-cb1-slides",
+      "status": "applied",
+      "wall_clock_ms": 653564,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 10
+    },
+    {
+      "run_id": "2026-06-10T23-00-44-712Z_1976810-19f7742b_ingest_20111130-nostrand-cb14-slides",
+      "status": "applied",
+      "wall_clock_ms": 110604,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-01-11-643Z_1976810-73612f01_ingest_20111205-nostrand-cb3-slides",
+      "status": "applied",
+      "wall_clock_ms": 1430142,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-01-15-160Z_1976810-7fae13a5_ingest_2012-01-24-sbs-utica-merchants",
+      "status": "applied",
+      "wall_clock_ms": 1414505,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 10
+    },
+    {
+      "run_id": "2026-06-10T23-02-39-444Z_1976810-c9c547a6_ingest_2012-02-06-brt-webster-cac1",
+      "status": "applied",
+      "wall_clock_ms": 762085,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 15
+    },
+    {
+      "run_id": "2026-06-10T23-02-39-805Z_1976810-c647d6ee_ingest_2012-02-brt-webster-cac1-summary",
+      "status": "applied",
+      "wall_clock_ms": 869561,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 10
+    },
+    {
+      "run_id": "2026-06-10T23-02-58-604Z_1976810-5cc8b5d0_ingest_2012-03-15-brt-hylan-meeting-slides",
+      "status": "applied",
+      "wall_clock_ms": 472165,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-03-01-256Z_1976810-14f50da6_ingest_2012-04-20-brt-lga-workshop-summary",
+      "status": "applied",
+      "wall_clock_ms": 826701,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 8
+    },
+    {
+      "run_id": "2026-06-10T23-03-11-313Z_1976810-8253a411_ingest_2012-04-26-sbs-utica",
+      "status": "applied",
+      "wall_clock_ms": 805990,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 20
+    },
+    {
+      "run_id": "2026-06-10T23-03-12-876Z_1976810-853fca30_ingest_2012-05-webster-cac2-summary",
+      "status": "applied",
+      "wall_clock_ms": 444330,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-03-13-561Z_1976810-31a3769a_ingest_2012-06-25-brt-woodhaven-publicworkshop2-presentation",
+      "status": "applied",
+      "wall_clock_ms": 436520,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 1
+    },
+    {
+      "run_id": "2026-06-10T23-03-16-016Z_1976810-ee489d3c_ingest_2012-06-nostrand-sbs-cac5-slides",
+      "status": "applied",
+      "wall_clock_ms": 487925,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 4
+    },
+    {
+      "run_id": "2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer",
+      "status": "applied",
+      "wall_clock_ms": 556737,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 8
+    },
+    {
+      "run_id": "2026-06-10T23-03-20-805Z_1976810-5b1cc97e_ingest_2012-09-19-125th-st-sbs-public-workshop-summary",
+      "status": "applied",
+      "wall_clock_ms": 541825,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 4
+    },
+    {
+      "run_id": "2026-06-10T23-04-26-979Z_1976810-e6c5f788_ingest_2012-09-sbs-125th-workshop-1",
+      "status": "applied",
+      "wall_clock_ms": 490012,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-04-27-481Z_1976810-2b41002c_ingest_2012-09-webster-sbs-cac3",
+      "status": "applied",
+      "wall_clock_ms": 783699,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 20
+    },
+    {
+      "run_id": "2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop",
+      "status": "applied",
+      "wall_clock_ms": 690421,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 3
+    },
+    {
+      "run_id": "2026-06-10T23-04-42-552Z_1976810-b13e57f4_ingest_2012-10-brt-webster-cac3-meeting-summary",
+      "status": "applied",
+      "wall_clock_ms": 529376,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 4
+    },
+    {
+      "run_id": "2026-06-10T23-05-07-096Z_1976810-a3599472_ingest_2012-10-lga-plan-one-pager",
+      "status": "applied",
+      "wall_clock_ms": 678295,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 5
+    },
+    {
+      "run_id": "2026-06-10T23-05-20-796Z_1976810-59c965fc_ingest_2012-10-webster-sbs-newsletter",
+      "status": "applied",
+      "wall_clock_ms": 559799,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 6
+    },
+    {
+      "run_id": "2026-06-10T23-05-54-642Z_1976810-59962f5c_ingest_2012-11-sbs-webster-cac4",
+      "status": "applied",
+      "wall_clock_ms": 392986,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 12
+    },
+    {
+      "run_id": "2026-06-10T23-06-42-606Z_1976810-0ee807d5_ingest_2012-11-sbs-webster-cac4-summary",
+      "status": "applied",
+      "wall_clock_ms": 864405,
+      "alias_additions": 1,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 4
+    },
+    {
+      "run_id": "2026-06-10T23-07-32-203Z_1976810-d29b08e7_ingest_2012-12-03-sbs-125th-workshop-summary",
+      "status": "applied",
+      "wall_clock_ms": 345946,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 2
+    },
+    {
+      "run_id": "2026-06-10T23-07-52-320Z_1976810-0f952584_ingest_2012-12-sbs-125th-workshop-2",
+      "status": "applied",
+      "wall_clock_ms": 683931,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 7
+    },
+    {
+      "run_id": "2026-06-10T23-08-59-359Z_1976810-a7558b5c_ingest_2012-sbs-hylan-winter-newsletter",
+      "status": "applied",
+      "wall_clock_ms": 514717,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 4
+    },
+    {
+      "run_id": "2026-06-10T23-09-00-287Z_1976810-091c3bb9_ingest_201203-brt-34th-cac6",
+      "status": "applied",
+      "wall_clock_ms": 766498,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 9
+    },
+    {
+      "run_id": "2026-06-10T23-09-19-079Z_1976810-866cada1_ingest_201205-brt-webster-cac",
+      "status": "applied",
+      "wall_clock_ms": 407886,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-09-19-253Z_1976810-6248d0ff_ingest_2013-01-webster-sbs-newsletter",
+      "status": "applied",
+      "wall_clock_ms": 421574,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 4
+    },
+    {
+      "run_id": "2026-06-10T23-09-24-918Z_1976810-40faa314_ingest_2013-02-sbs-webster-bx-cb1",
+      "status": "applied",
+      "wall_clock_ms": 585179,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 12
+    },
+    {
+      "run_id": "2026-06-10T23-09-55-146Z_1976810-34e7c013_ingest_2013-02-sbs-webster-bx-cb3",
+      "status": "applied",
+      "wall_clock_ms": 774971,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 9
+    },
+    {
+      "run_id": "2026-06-10T23-10-10-943Z_1976810-5d9cb416_ingest_2013-02-sbs-webster-bx-cb4",
+      "status": "applied",
+      "wall_clock_ms": 591362,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 23
+    },
+    {
+      "run_id": "2026-06-10T23-10-15-955Z_1976810-e66a6186_ingest_2013-03-07-sbs-125th-cb9",
+      "status": "applied",
+      "wall_clock_ms": 1149948,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 4
+    },
+    {
+      "run_id": "2026-06-10T23-10-24-333Z_1976810-1a314ef0_ingest_2013-03-13-sbs-125th-cb10",
+      "status": "applied",
+      "wall_clock_ms": 756111,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 5
+    },
+    {
+      "run_id": "2026-06-10T23-10-25-438Z_1976810-853a327c_ingest_2013-03-sbs-125-st-cb11-slides",
+      "status": "applied",
+      "wall_clock_ms": 523242,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-11-38-845Z_1976810-e9238494_ingest_2013-03-sbs-webster-bx-cb5",
+      "status": "applied",
+      "wall_clock_ms": 523152,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-12-02-636Z_1976810-607b0367_ingest_2013-03-sbs-webster-bx-cb6",
+      "status": "applied",
+      "wall_clock_ms": 792008,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-12-19-370Z_1976810-cd557040_ingest_2013-03-sbs-webster-bx-cb7",
+      "status": "applied",
+      "wall_clock_ms": 579758,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 12
+    },
+    {
+      "run_id": "2026-06-10T23-12-22-690Z_1976810-a6473111_ingest_2013-04-09-sbs-125th-workshop-3",
+      "status": "applied",
+      "wall_clock_ms": 1006694,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-13-57-315Z_1976810-4a9314a7_ingest_2013-06-04-sbs-125th-cb11",
+      "status": "applied",
+      "wall_clock_ms": 923715,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 3
+    },
+    {
+      "run_id": "2026-06-10T23-14-02-584Z_1976810-848ebcf8_ingest_2013-06-05-sbs-125th-cb9",
+      "status": "applied",
+      "wall_clock_ms": 779269,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 27
+    },
+    {
+      "run_id": "2026-06-10T23-14-25-320Z_1976810-10f0b3f3_ingest_2013-06-06-sbs-125th-cb1",
+      "status": "applied",
+      "wall_clock_ms": 275261,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-14-44-412Z_1976810-fb5a9f08_ingest_2013-06-12-sbs-125th-cb10",
+      "status": "applied",
+      "wall_clock_ms": 605112,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-14-48-864Z_1976810-6f1c3aa1_ingest_2013-06-sbs-webster-newsletter",
+      "status": "quarantined",
+      "reason": "No canonicalize packets matched for run 2026-06-10T23-14-48-864Z_1976810-6f1c3aa1_ingest_2013-06-sbs-webster-newsletter.",
+      "wall_clock_ms": 176
+    },
+    {
+      "run_id": "2026-06-10T23-15-07-535Z_1976810-1e49fd8b_ingest_2013-09-12-sbs-utica-cb8",
+      "status": "applied",
+      "wall_clock_ms": 542573,
+      "alias_additions": 1,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-18-19-084Z_1976810-cbcf36ef_ingest_2013-09-19-sbs-utica-cb17",
+      "status": "applied",
+      "wall_clock_ms": 474707,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-18-20-015Z_1976810-160410d7_ingest_2013-09-24-sbs-utica-cb9",
+      "status": "applied",
+      "wall_clock_ms": 505854,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-18-29-209Z_1976810-645b6970_ingest_2013-10-second-ave-bicycle-upgrade-mn-cb6",
+      "status": "no_decisions",
+      "wall_clock_ms": 72997,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-19-37-423Z_1976810-adb7c7f2_ingest_2013-11-sbs-nostrand-flyer",
+      "status": "no_decisions",
+      "wall_clock_ms": 72609,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-20-32-317Z_1976810-a49f1275_ingest_2014-03-01-brt-webster-sbs-newsletter",
+      "status": "no_decisions",
+      "wall_clock_ms": 72633,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-21-17-529Z_1976810-f9a937c8_ingest_2014-03-05-brt-webster-cb4",
+      "status": "no_decisions",
+      "wall_clock_ms": 72580,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-21-24-350Z_1976810-7a6bd3c7_ingest_2014-03-06-brt-webster-cb6",
+      "status": "no_decisions",
+      "wall_clock_ms": 73889,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-22-02-245Z_1976810-f22ce844_ingest_2014-03-11-brt-webster-cb3",
+      "status": "no_decisions",
+      "wall_clock_ms": 72919,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-22-02-987Z_1976810-56dd1bed_ingest_2014-03-20-brt-webste-cb5",
+      "status": "no_decisions",
+      "wall_clock_ms": 73108,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-22-28-668Z_1976810-5a80532f_ingest_2014-04-10-brt-webster-cb7",
+      "status": "no_decisions",
+      "wall_clock_ms": 72916,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-23-40-593Z_1976810-2bb4bd6e_ingest_2014-05-05-brt-thirdave-cb6-presentation",
+      "status": "no_decisions",
+      "wall_clock_ms": 73596,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-23-41-458Z_1976810-89260abd_ingest_2014-06-11-brt-flushingjamaica-cac1-presentation",
+      "status": "no_decisions",
+      "wall_clock_ms": 72719,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-24-14-120Z_1976810-18d7c534_ingest_2014-06-25-brt-woodhaven-publicworkshop2-summary",
+      "status": "no_decisions",
+      "wall_clock_ms": 73150,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-24-18-555Z_1976810-1571fc06_ingest_2014-08-25-brt-websteravenue-progressreport",
+      "status": "no_decisions",
+      "wall_clock_ms": 72267,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-24-22-820Z_1976810-fb3ec43a_ingest_2014-09-16-brt-uticaavenue-cac1-presentation",
+      "status": "no_decisions",
+      "wall_clock_ms": 72414,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-24-26-843Z_1976810-b4a4f1b5_ingest_2014-10-01-brt-86thstreet-cb8-presentation",
+      "status": "no_decisions",
+      "wall_clock_ms": 73142,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-24-33-165Z_1976810-d1bddb9d_ingest_2014-10-07-brt-flushingjamaica-pw1-presentation",
+      "status": "no_decisions",
+      "wall_clock_ms": 72835,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-24-53-943Z_1976810-8fa4739b_ingest_2014-10-14-brt-86thstreet-cb7-presentation",
+      "status": "no_decisions",
+      "wall_clock_ms": 72948,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-25-02-919Z_1976810-aa09c937_ingest_2014-10-22-brt-woodhaven-cac2-discussionmaterials",
+      "status": "no_decisions",
+      "wall_clock_ms": 72999,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-25-20-740Z_1976810-809a36e3_ingest_2014-10-22-brt-woodhaven-cac2-presentation",
+      "status": "no_decisions",
+      "wall_clock_ms": 73516,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-26-35-030Z_1976810-390ad93f_ingest_2014-11-05-brt-woodhavenblvd-pw3-workshopsummary",
+      "status": "no_decisions",
+      "wall_clock_ms": 74360,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-26-36-432Z_1976810-da166ffa_ingest_2014-11-06-brt-woodhaven-pw3-boards",
+      "status": "no_decisions",
+      "wall_clock_ms": 73904,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-26-53-165Z_1976810-1e664e40_ingest_2014-11-brt-utica-workshopsummary",
+      "status": "no_decisions",
+      "wall_clock_ms": 73966,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-27-20-397Z_1976810-28d62fce_ingest_2014-11-brt-uticaave-cb8",
+      "status": "no_decisions",
+      "wall_clock_ms": 74069,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-27-22-827Z_1976810-443d0e70_ingest_2014-11-brt-uticaave-pw1",
+      "status": "no_decisions",
+      "wall_clock_ms": 74113,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-27-39-880Z_1976810-bb6050fc_ingest_2014-12-01-brt-thirdave-cb6-presentation",
+      "status": "no_decisions",
+      "wall_clock_ms": 73359,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    },
+    {
+      "run_id": "2026-06-10T23-27-48-461Z_1976810-5cd19f10_ingest_2014-125th-st-curb-regulations",
+      "status": "no_decisions",
+      "wall_clock_ms": 72334,
+      "alias_additions": 0,
+      "do_not_merge_additions": 0,
+      "relation_submissions": 0
+    }
+  ],
+  "telemetry": {
+    "run_concurrency": 4,
+    "packet_concurrency": 6,
+    "timeout_min": 30,
+    "wall_clock_s": 17901,
+    "rate_limit": [
+      {
+        "provider": "pioneer",
+        "rate_per_minute": 170,
+        "requests": 2474,
+        "requests_per_minute_observed": 8.3,
+        "rate_limited_429": 0,
+        "circuit_breaker_trips": 0,
+        "wait_ms_p50": 0,
+        "wait_ms_p95": 0,
+        "wait_ms_max": 1,
+        "last_rate_limit_headers": {}
+      }
+    ]
+  }
+}

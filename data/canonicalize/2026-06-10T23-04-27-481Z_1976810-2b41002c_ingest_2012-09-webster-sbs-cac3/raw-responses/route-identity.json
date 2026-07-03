@@ -1,0 +1,41 @@
+{
+  "run_id": "2026-06-10T23-04-27-481Z_1976810-2b41002c_ingest_2012-09-webster-sbs-cac3",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T02:54:54.094Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "bx41-sbs-new",
+        "local_observation_id": "route_bx41_sbs_2012_09_webster",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id route_webster-ave-sbs, which is an existing registry record for the Bx41 SBS route on Webster Avenue. The source evidence (p018_c0002) confirms 'Bx41 LTD → Bx41 SBS' with 1/2 mile stop spacing. No different registry record matches better than the existing base_record_id. Per canonicalization rules, when the closest match IS the observation's own base_record_id, the decision is 'new'.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_webster_sbs_cac3",
+            "block_id": "p018_c0002",
+            "source_quote": "Bx41 LTD → Bx41 SBS - ½ mile stop spacing - Service will run frequently all day"
+          }
+        ]
+      },
+      {
+        "decision_id": "bx41-local-new",
+        "local_observation_id": "route_bx41_local_2012_09_webster",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id route_bx41-local-2012-09-webster, which is an existing registry record for Bx41 Local service. The source evidence (p018_c0002) confirms 'Bx41 Local - No change to stop spacing - Service every ~10 minutes'. No different registry record matches better than the existing base_record_id. Per canonicalization rules, when the closest match IS the observation's own base_record_id, the decision is 'new'.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_webster_sbs_cac3",
+            "block_id": "p018_c0002",
+            "source_quote": "Bx41 Local - No change to stop spacing - Service every ~10 minutes"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-52-59-124Z_2111393-3c0d2b13_canonicalize_2026-06-10t23-04-27-481z-1976810-2b41002c-ingest-2012-09-webster-sbs-cac3-route-identity"
+}

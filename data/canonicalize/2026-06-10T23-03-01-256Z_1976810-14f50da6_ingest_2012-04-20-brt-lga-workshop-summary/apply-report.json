@@ -1,0 +1,21 @@
+{
+  "run_id": "2026-06-10T23-03-01-256Z_1976810-14f50da6_ingest_2012-04-20-brt-lga-workshop-summary",
+  "generated_at": "2026-06-11T04:50:09.075Z",
+  "dry_run": false,
+  "wrote": true,
+  "decision_count": 46,
+  "reviewed_count": 8,
+  "alias_additions": [],
+  "aliases_already_present": [],
+  "do_not_merge_additions": [],
+  "relation_submissions": 8,
+  "quarantined": 0,
+  "conflicts": [],
+  "paths": {
+    "merges": "data/identity-overrides/merges.json",
+    "do_not_merge": "data/identity-overrides/do-not-merge.json",
+    "relation_submissions_jsonl": "data/submissions/2026-06-10T23-03-01-256Z_1976810-14f50da6_ingest_2012-04-20-brt-lga-workshop-summary_canonicalize.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-03-01-256Z_1976810-14f50da6_ingest_2012-04-20-brt-lga-workshop-summary/apply-quarantine.jsonl",
+    "apply_report": "data/canonicalize/2026-06-10T23-03-01-256Z_1976810-14f50da6_ingest_2012-04-20-brt-lga-workshop-summary/apply-report.json"
+  }
+}

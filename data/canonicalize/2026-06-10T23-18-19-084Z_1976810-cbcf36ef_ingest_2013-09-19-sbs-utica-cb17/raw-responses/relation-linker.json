@@ -1,0 +1,560 @@
+{
+  "run_id": "2026-06-10T23-18-19-084Z_1976810-cbcf36ef_ingest_2013-09-19-sbs-utica-cb17",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T04:01:47.855Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "d01",
+        "local_observation_id": "metricb46_weekday_ridership_49000",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "routeb46-local-limited-20110915",
+            "object_id": "metricb46-weekday-ridership-49000_3",
+            "description": "B46 weekday ridership of over 49,000 passengers",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19sbs_utica_cb17",
+                "block_id": "p003_c0002",
+                "source_quote": "Over 49,000 bus passengers per weekday"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_utica-av",
+            "object_id": "metricb46-weekday-ridership-49000_3",
+            "description": "B46 weekday ridership on the Utica Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19sbs_utica_cb17",
+                "block_id": "p003_c0002",
+                "source_quote": "Over 49,000 bus passengers per weekday"
+              }
+            ]
+          }
+        ],
+        "rationale": "The B46 weekday ridership metric comes from the CB17 presentation on September 19, 2013, explicitly citing the B46 along the Utica Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19sbs_utica_cb17",
+            "block_id": "p003_c0002",
+            "source_quote": "Over 49,000 bus passengers per weekday"
+          }
+        ]
+      },
+      {
+        "decision_id": "d02",
+        "local_observation_id": "metricb46_avg_speed_6_8_mph",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "routeb46-local-limited-20110915",
+            "object_id": "metricb46-avg-speed-6-8-mph",
+            "description": "B46 average speed of 6.8 mph on the route",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19sbs_utica_cb17",
+                "block_id": "p003_c0002",
+                "source_quote": "Average speed of 6.8 mph, below Bklyn avg."
+              }
+            ]
+          }
+        ],
+        "rationale": "The B46 speed metric explicitly names B46 and is on the Utica Avenue corridor, warranting a relation to both the route and corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19sbs_utica_cb17",
+            "block_id": "p003_c0002",
+            "source_quote": "Average speed of 6.8 mph, below Bklyn avg."
+          }
+        ]
+      },
+      {
+        "decision_id": "d03",
+        "local_observation_id": "metric_vehices_exceeding_speed_limit",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_utica-av",
+            "object_id": "metric_vehices-exceeding-speed-limit",
+            "description": "63% of vehicles exceeding the speed limit on Utica Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19sbs_utica_cb17",
+                "block_id": "p004_c0003",
+                "source_quote": "63% of vehicles exceed speed limit (30 mph)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Speeding data comes from the CB17 presentation on Utica Avenue corridor safety study, relating to the existing corridor record.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19sbs_utica_cb17",
+            "block_id": "p004_c0003",
+            "source_quote": "63% of vehicles exceed speed limit (30 mph)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d04",
+        "local_observation_id": "metric_crashes_2006_2010_total",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_utica-av",
+            "object_id": "metric_crashes-2006-2010-total",
+            "description": "766 total crashes on Utica Avenue corridor from 2006-2010",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19sbs_utica_cb17",
+                "block_id": "p004_c0003",
+                "source_quote": "766 total crashes"
+              }
+            ]
+          }
+        ],
+        "rationale": "Crash data explicitly from the CB17 presentation on the Utica Avenue corridor safety study.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19sbs_utica_cb17",
+            "block_id": "p004_c0003",
+            "source_quote": "766 total crashes"
+          }
+        ]
+      },
+      {
+        "decision_id": "d05",
+        "local_observation_id": "metric_severe_injuries_41",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_utica-av",
+            "object_id": "metric_severe-injuries-41",
+            "description": "41 severe injuries on Utica Avenue corridor from 2006-2010",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19sbs_utica_cb17",
+                "block_id": "p004_c0003",
+                "source_quote": "41 severe injuries"
+              }
+            ]
+          }
+        ],
+        "rationale": "Severe injuries explicitly cited in the CB17 presentation on Utica Avenue corridor safety.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19sbs_utica_cb17",
+            "block_id": "p004_c0003",
+            "source_quote": "41 severe injuries"
+          }
+        ]
+      },
+      {
+        "decision_id": "d06",
+        "local_observation_id": "metric_fatalities_2",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_utica-av",
+            "object_id": "metric_fatalities-2",
+            "description": "2 fatalities on Utica Avenue corridor from 2006-2010",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19sbs_utica_cb17",
+                "block_id": "p004_c0003",
+                "source_quote": "2 fatalities"
+              }
+            ]
+          }
+        ],
+        "rationale": "Fatality data explicitly cited in the CB17 presentation on Utica Avenue corridor safety.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19sbs_utica_cb17",
+            "block_id": "p004_c0003",
+            "source_quote": "2 fatalities"
+          }
+        ]
+      },
+      {
+        "decision_id": "d07",
+        "local_observation_id": "metric_parking_net_gain_19",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "metric_parking-net-gain-19",
+            "description": "Net gain of 19 peak period parking spaces proposed in the Utica Avenue Bus Priority and Safety Study",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19sbs_utica_cb17",
+                "block_id": "p009_c0004",
+                "source_quote": "Net gain: 19 peak period parking spaces"
+              }
+            ]
+          }
+        ],
+        "rationale": "The parking net gain metric is directly from the CB17 presentation presenting the project's proposal.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19sbs_utica_cb17",
+            "block_id": "p009_c0004",
+            "source_quote": "Net gain: 19 peak period parking spaces"
+          }
+        ]
+      },
+      {
+        "decision_id": "d08",
+        "local_observation_id": "metric_parking_near_eastern_pkwy_plus_19",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "metric_parking-near-eastern-pkwy-plus-19",
+            "description": "+19 parking spaces near Eastern Parkway per proposed plan",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19sbs_utica_cb17",
+                "block_id": "p019_c0010",
+                "source_quote": "+19 parking spaces near Eastern Parkway"
+              }
+            ]
+          }
+        ],
+        "rationale": "East Parkking parking metric sourced from the CB17 presentation on the study's proposed plan.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19sbs_utica_cb17",
+            "block_id": "p019_c0010",
+            "source_quote": "+19 parking spaces near Eastern Parkway"
+          }
+        ]
+      },
+      {
+        "decision_id": "d09",
+        "local_observation_id": "metric_parking_south_corridor_minus_22",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "metric_parking-south-corridor-minus-22",
+            "description": "-22 parking spaces along southern part of corridor per proposed plan",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19sbs_utica_cb17",
+                "block_id": "p019_c0010",
+                "source_quote": "-22 parking spaces along southern part of corridor (~1 per block face)"
+              }
+            ]
+          }
+        ],
+        "rationale": "South corridor parking reduction cited from the CB17 presentation on the study's proposal.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19sbs_utica_cb17",
+            "block_id": "p019_c0010",
+            "source_quote": "-22 parking spaces along southern part of corridor (~1 per block face)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d10",
+        "local_observation_id": "metric_traffic_improved_interssections_10",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "metric_traffic-improved-intersections-10",
+            "description": "10 intersections improve in PM peak as part of the study's traffic analysis",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19sbs_utica_cb17",
+                "block_id": "p018_c0003",
+                "source_quote": "In PM peak, 10 intersections improve, 7 neutral, 1 declines slightly (LOS B to LOS C)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Traffic analysis from the CB17 presentation presenting the project's study findings.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19sbs_utica_cb17",
+            "block_id": "p018_c0003",
+            "source_quote": "In PM peak, 10 intersections improve, 7 neutral, 1 declines slightly (LOS B to LOS C)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d11",
+        "local_observation_id": "metric_traffic_neutral_intersections_7",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "metric_traffic-neutral-intersections-7",
+            "description": "7 neutral intersections in PM peak per project traffic analysis",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19sbs_utica_cb17",
+                "block_id": "p018_c0003",
+                "source_quote": "In PM peak, 10 intersections improve, 7 neutral, 1 declines slightly (LOS B to LOS C)"
+              }
+            ]
+          }
+        ],
+        "rationale": "This metric is from the same traffic analysis presented in the CB17 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19sbs_utica_cb17",
+            "block_id": "p018_c0003",
+            "source_quote": "In PM peak, 10 intersections improve, 7 neutral, 1 declines slightly (LOS B to LOS C)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d12",
+        "local_observation_id": "metric_traffic_declined_intersection_1",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "metric_traffic-declined-intersection-1",
+            "description": "1 intersection declines slightly (LOS B to LOS C) per project traffic analysis",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19sbs_utica_cb17",
+                "block_id": "p018_c0003",
+                "source_quote": "1 declines slightly (LOS B to LOS C)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Declining intersection data from the same traffic analysis in the CB17 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19sbs_utica_cb17",
+            "block_id": "p018_c0003",
+            "source_quote": "1 declines slightly (LOS B to LOS C)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d13",
+        "local_observation_id": "claim_b46_second_busiest_bus_route_nyc",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_b46-local-limited-20110915",
+            "object_id": "claim_b46-second-busiest-bus-route-nyc",
+            "description": "B46 is the second busiest bus route in NYC",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19sbs_utica_cb17",
+                "block_id": "p003_c0002",
+                "source_quote": "B46: second busiest bus route in NYC"
+              }
+            ]
+          }
+        ],
+        "rationale": "The claim specifically names the B46 bus route as the subject being described.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19sbs_utica_cb17",
+            "block_id": "p003_c0002",
+            "source_quote": "B46: second busiest bus route in NYC"
+          }
+        ]
+      },
+      {
+        "decision_id": "d14",
+        "local_observation_id": "claim_sets_groundwork_for_future_sbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_utica-ave-bus-priority-safety-tsudy",
+            "object_id": "claim_sets-groundwork-for-uture-sbs_2",
+            "description": "The study sets groundwork for potential future Select Bus Service",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19sbs_utica_cb17",
+                "block_id": "p019_c0004",
+                "source_quote": "Sets groundwork for potential future Select Bus Service"
+              }
+            ]
+          }
+        ],
+        "rationale": "This claim describes the purpose of the study project itself as stated in the CB17 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19sbs_utica_cb17",
+            "block_id": "p019_c0004",
+            "source_quote": "Sets groundwork for potential future Select Bus Service"
+          }
+        ]
+      },
+      {
+        "decision_id": "d15",
+        "local_observation_id": "claim_limited_subway_access_b46",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_utica-av",
+            "object_id": "claim_limited-subway-access-b46",
+            "description": "Limited subway access in the Utica Avenue area contributes to high B46 ridership",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19sbs_utica_cb17",
+                "block_id": "p003_c0002",
+                "source_quote": "Limited subway access"
+              }
+            ]
+          }
+        ],
+        "rationale": "The claim describes characteristics of the Utica Avenue corridor area that explain high bus ridership.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19sbs_utica_cb17",
+            "block_id": "p003_c0002",
+            "source_quote": "Limited subway access"
+          }
+        ]
+      },
+      {
+        "decision_id": "d16",
+        "local_observation_id": "claim_utica_high_injury_rate_brooklyn",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_utica-av",
+            "object_id": "claim_utica-high-injury-rate-brooklyn_5",
+            "description": "Utica Avenue has among the highest motor vehicle crash injury rate in Brooklyn",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19sbs_utica_cb17",
+                "block_id": "p004_c0003",
+                "source_quote": "Utica has among the highest rate of injury from motor vehicle crashes in Brooklyn"
+              }
+            ]
+          }
+        ],
+        "rationale": "The claim explicitly describes a characteristic of the Utica Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19sbs_utica_cb17",
+            "block_id": "p004_c0003",
+            "source_quote": "Utica has among the highest rate of injury from motor vehicle crashes in Brooklyn"
+          }
+        ]
+      },
+      {
+        "decision_id": "d17",
+        "local_observation_id": "claim_merchant_parking_request_expansion",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "claim_merchant-parking-request-expansion",
+            "description": "Merchants requested expanded parking as part of the project community outreach",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19sbs_utica_cb17",
+                "block_id": "p005_c0003",
+                "source_quote": "Request for expanded parking on Utica Ave. bet. Eastern Parkway and Carroll St."
+              }
+            ]
+          }
+        ],
+        "rationale": "The merchant request emerged as part of the project's community engagement process.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19sbs_utica_cb17",
+            "block_id": "p005_c0003",
+            "source_quote": "Request for expanded parking on Utica Ave. bet. Eastern Parkway and Carroll St."
+          }
+        ]
+      },
+      {
+        "decision_id": "d18",
+        "local_observation_id": "event_cb17_presentation_sep_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "event_cb17-presentation-sep-2013",
+            "description": "September 19, 2013 presentation to CB 17 as part of the Utica Avenue Bus Priority and Safety Study",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19sbs_utica_cb17",
+                "block_id": "p001_c0004",
+                "source_quote": "Brooklyn CB 17 September 19, 2013"
+              }
+            ]
+          }
+        ],
+        "rationale": "The CB 17 presentation is a timeline milestone for the Utica Avenue Bus Priority and Safety Study project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19sbs_utica_cb17",
+            "block_id": "p001_c0004",
+            "source_quote": "Brooklyn CB 17 September 19, 2013"
+          }
+        ]
+      },
+      {
+        "decision_id": "d19",
+        "local_observation_id": "event_proposed_implementation_spring_2014",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "event_proposed-implementation-spring-2014",
+            "description": "Implementation proposed for Spring 2014.",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19sbs_utica_cb17",
+                "block_id": "p020_c0003",
+                "source_quote": "proposed for Spring 2014"
+              }
+            ]
+          }
+        ],
+        "rationale": "The proposed implementation date is a timeline milestone for the bus priority and safety study project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19sbs_utica_cb17",
+            "block_id": "p020_c0003",
+            "source_quote": "proposed for Spring 2014"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-58-07-623Z_2111393-7e29b87a_canonicalize_2026-06-10t23-18-19-084z-1976810-cbcf36ef-ingest-2013-09-19-sbs-utica-cb17-relation-linker"
+}

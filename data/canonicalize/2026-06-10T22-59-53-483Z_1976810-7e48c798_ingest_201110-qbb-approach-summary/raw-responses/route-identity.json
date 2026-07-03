@@ -1,0 +1,288 @@
+{
+  "run_id": "2026-06-10T22-59-53-483Z_1976810-7e48c798_ingest_201110-qbb-approach-summary",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T02:04:28.712Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d_q60",
+        "local_observation_id": "route_q60_201110_qbb",
+        "decision": "new",
+        "rationale": "Observation already resolved to base_record_id route_q60-ace, which exists in the registry with matching payload (route_id Q60, local, Queens) and includes this source (201110_qbb_approach_summary). No different target needed.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p007_c0002",
+            "source_quote": "Average Weekday Route Daily Q60 (Eastbound) 1,430 Q60 (Westbound)* 1,280 Q60 (Total) 2,710 Q101 (Eastbound) 450 Q101 (Westbound)* 400 Q101 (Total) 850 Q32 (Eastbound) 2,290 Q32 (Westbound) 2,050 Q32 (Total) 4,340 Total 7,900"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_q101",
+        "local_observation_id": "route_q101_201110_qbb",
+        "decision": "new",
+        "rationale": "Observation already resolved to base_record_id route_q101-201110-qbb, which exists in the registry with matching payload (route_id Q101, local, Queens) from the same source.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p007_c0002",
+            "source_quote": "Average Weekday Route Daily Q60 (Eastbound) 1,430 Q60 (Westbound)* 1,280 Q60 (Total) 2,710 Q101 (Eastbound) 450 Q101 (Westbound)* 400 Q101 (Total) 850 Q32 (Eastbound) 2,290 Q32 (Westbound) 2,050 Q32 (Total) 4,340 Total 7,900"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_q32",
+        "local_observation_id": "route_q32_201110_qbb",
+        "decision": "new",
+        "rationale": "Observation already resolved to base_record_id route_q32-201110-qbb, which exists in the registry with matching payload (route_id Q32, local, Queens) from the same source.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p007_c0002",
+            "source_quote": "Average Weekday Route Daily Q60 (Eastbound) 1,430 Q60 (Westbound)* 1,280 Q60 (Total) 2,710 Q101 (Eastbound) 450 Q101 (Westbound)* 400 Q101 (Total) 850 Q32 (Eastbound) 2,290 Q32 (Westbound) 2,050 Q32 (Total) 4,340 Total 7,900"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_qm1",
+        "local_observation_id": "route_qm1_201110_qbb",
+        "decision": "new",
+        "rationale": "Observation already resolved to base_record_id route_qm1-201110-qbb, which exists in the registry with matching payload (route_id QM1, express, Queens) from the same source.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p008_c0003",
+            "source_quote": "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_qm1a",
+        "local_observation_id": "route_qm1a_201110_qbb",
+        "decision": "new",
+        "rationale": "Observation already resolved to base_record_id route_qm1a-201110-qbb, which exists in the registry with matching payload (route_id QM1A, express, Queens) from the same source.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p008_c0003",
+            "source_quote": "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_qm2",
+        "local_observation_id": "route_qm2_201110_qbb",
+        "decision": "new",
+        "rationale": "Observation already resolved to base_record_id route_qm2-201110-qbb, which exists in the registry with matching payload (route_id QM2, express, Queens) from the same source.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p008_c0003",
+            "source_quote": "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_qm2a",
+        "local_observation_id": "route_qm2a_201110_qbb",
+        "decision": "new",
+        "rationale": "Observation already resolved to base_record_id route_qm2a-201110-qbb, which exists in the registry with matching payload (route_id QM2A, express, Queens) from the same source.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p008_c0003",
+            "source_quote": "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_qm3",
+        "local_observation_id": "route_qm3_201110_qbb",
+        "decision": "new",
+        "rationale": "Observation already resolved to base_record_id route_qm3-201110-qbb, which exists in the registry with matching payload (route_id QM3, express, Queens) from the same source.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p008_c0003",
+            "source_quote": "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_qm4",
+        "local_observation_id": "route_qm4_201110_qbb",
+        "decision": "new",
+        "rationale": "Observation already resolved to base_record_id route_qm4-201110-qbb, which exists in the registry with matching payload (route_id QM4, express, Queens) from the same source.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p008_c0003",
+            "source_quote": "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_qm10",
+        "local_observation_id": "route_qm10_201110_qbb",
+        "decision": "new",
+        "rationale": "Observation already resolved to base_record_id route_qm10-201110-qbb, which exists in the registry with matching payload (route_id QM10, express, Queens) from the same source.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p008_c0003",
+            "source_quote": "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_qm12",
+        "local_observation_id": "route_qm12_201110_qbb",
+        "decision": "new",
+        "rationale": "Observation already resolved to base_record_id route_qm12-201110-qbb, which exists in the registry with matching payload (route_id QM12, express, Queens) from the same source.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p008_c0003",
+            "source_quote": "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_qm15",
+        "local_observation_id": "route_qm15_201110_qbb",
+        "decision": "new",
+        "rationale": "Observation already resolved to base_record_id route_qm15-201110-qbb, which exists in the registry with matching payload (route_id QM15, express, Queens) from the same source.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p008_c0003",
+            "source_quote": "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_qm16",
+        "local_observation_id": "route_qm16_201110_qbb",
+        "decision": "new",
+        "rationale": "Observation already resolved to base_record_id route_qm16-201110-qbb, which exists in the registry with matching payload (route_id QM16, express, Queens) from the same source.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p008_c0003",
+            "source_quote": "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_qm17",
+        "local_observation_id": "route_qm17_201110_qbb",
+        "decision": "new",
+        "rationale": "Observation already resolved to base_record_id route_qm17-201110-qbb, which exists in the registry with matching payload (route_id QM17, express, Queens) from the same source.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p008_c0003",
+            "source_quote": "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_qm18",
+        "local_observation_id": "route_qm18_201110_qbb",
+        "decision": "new",
+        "rationale": "Observation already resolved to base_record_id route_qm18-201110-qbb, which exists in the registry with matching payload (route_id QM18, express, Queens) from the same source.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p008_c0003",
+            "source_quote": "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_qm21",
+        "local_observation_id": "route_qm21_201110_qbb",
+        "decision": "new",
+        "rationale": "Observation already resolved to base_record_id route_qm21-201110-qbb, which exists in the registry with matching payload (route_id QM21, express, Queens) from the same source.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p008_c0003",
+            "source_quote": "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_qm24",
+        "local_observation_id": "route_qm24_201110_qbb",
+        "decision": "new",
+        "rationale": "Observation already resolved to base_record_id route_qm24-201110-qbb, which exists in the registry with matching payload (route_id QM24, express, Queens) from the same source.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p008_c0003",
+            "source_quote": "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_x51",
+        "local_observation_id": "route_x51_201110_qbb",
+        "decision": "new",
+        "rationale": "Observation already resolved to base_record_id route_x51-201110-qbb, which exists in the registry with matching payload (route_id X51, express, Queens) from the same source.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p008_c0003",
+            "source_quote": "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_x63",
+        "local_observation_id": "route_x63_201110_qbb",
+        "decision": "new",
+        "rationale": "Observation already resolved to base_record_id route_x63-201110-qbb, which exists in the registry with matching payload (route_id X63, express, Queens) from the same source.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p008_c0003",
+            "source_quote": "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_x64",
+        "local_observation_id": "route_x64_201110_qbb",
+        "decision": "new",
+        "rationale": "Observation already resolved to base_record_id route_x64-201110-qbb, which exists in the registry with matching payload (route_id X64, express, Queens) from the same source.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p008_c0003",
+            "source_quote": "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_x68",
+        "local_observation_id": "route_x68_201110_qbb",
+        "decision": "new",
+        "rationale": "Observation already resolved to base_record_id route_x68-201110-qbb, which exists in the registry with matching payload (route_id X68, express, Queens) from the same source.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p008_c0003",
+            "source_quote": "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-02-00-994Z_2111393-efe1d1a0_canonicalize_2026-06-10t22-59-53-483z-1976810-7e48c798-ingest-201110-qbb-approach-summary-route-identity"
+}

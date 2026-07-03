@@ -1,0 +1,609 @@
+{
+  "run_id": "2026-06-10T22-56-13-237Z_1976810-594d84d9_ingest_2011-brt-34th-cb6-slides",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T01:24:18.974Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "dec-001",
+        "local_observation_id": "metric_18000_sq_ft_pedestrian_space",
+        "decision": "relate",
+        "rationale": "The raw_text 'adds 18,000 sq. ft. of new pedestrian space' appears in the 34th Street SBS CB6 presentation on p010_c0002, describing a pedestrian benefit of the 34th Street Select Bus Service project. The payload scope is '34th Street SBS'.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_18000-sq-ft-pedestrian-space",
+            "description": "34th Street SBS adds 18,000 sq. ft. of new pedestrian space",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p010_c0002",
+                "source_quote": "adds 18,000 sq. ft. of new pedestrian space"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p010_c0002",
+            "source_quote": "adds 18,000 sq. ft. of new pedestrian space"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-002",
+        "local_observation_id": "metric_loading_daytime_32_existing",
+        "decision": "relate",
+        "rationale": "The raw_text 'increases daytime loading from 32 to 258 spaces' names a metric about loading spaces on the 34th Street SBS project. The payload scope is '34th Street existing daytime loading'.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_loading-daytime-32-existing",
+            "description": "Existing daytime loading spaces on 34th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p010_c0002",
+                "source_quote": "increases daytime loading from 32 to 258 spaces"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p010_c0002",
+            "source_quote": "increases daytime loading from 32 to 258 spaces"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-003",
+        "local_observation_id": "metric_loading_daytime_258_proposed",
+        "decision": "relate",
+        "rationale": "The raw_text 'increases daytime loading from 32 to 258 spaces' describes the proposed loading increase for the 34th Street SBS project. Payload scope is '34th Street SBS proposed daytime loading'.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_loading-daytime-258-proposed",
+            "description": "Proposed daytime loading spaces on 34th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p010_c0002",
+                "source_quote": "increases daytime loading from 32 to 258 spaces"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p010_c0002",
+            "source_quote": "increases daytime loading from 32 to 258 spaces"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-004",
+        "local_observation_id": "metric_faster_boarding_36_percent_m15",
+        "decision": "relate",
+        "rationale": "Raw text 'Faster Boarding – 36% less time spent at stops (M15 SBS)' explicitly names M15 SBS. This is a metric for the M15 SBS route shown as a supporting example.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-sbs",
+            "object_id": "metric_faster-boarding-36-percent-m15",
+            "description": "M15 SBS 36% faster boarding",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p030_c0002",
+                "source_quote": "Faster Boarding – 36% less time spent at stops (M15 SBS)"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p030_c0002",
+            "source_quote": "Faster Boarding – 36% less time spent at stops (M15 SBS)"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-005",
+        "local_observation_id": "metric_fare_evasion_reduced_37_percent_m15",
+        "decision": "relate",
+        "rationale": "Raw text 'Fare Evasion Reduced – 37% less fare evasion (M15 SBS)' explicitly names M15 SBS.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-sbs",
+            "object_id": "metric_fare-evasion-reduced-37-percent-m15",
+            "description": "M15 SBS 37% less fare evasion",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p030_c0002",
+                "source_quote": "Fare Evasion Reduced – 37% less fare evasion (M15 SBS)"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p030_c0002",
+            "source_quote": "Fare Evasion Reduced – 37% less fare evasion (M15 SBS)"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-006",
+        "local_observation_id": "metric_100_dollar_fine_no_receipt",
+        "decision": "relate",
+        "rationale": "The '$100 fine for passengers without a receipt' is presented on p028 in the context of the 34th Street SBS fare pre-payment system. The payload description ties it to SBS enforcement.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_100-dollar-fine-no-receipt",
+            "description": "$100 fine for SBS fare evasion on 34th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p028_c0002",
+                "source_quote": "$100 fine for passengers without a receipt"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p028_c0002",
+            "source_quote": "$100 fine for passengers without a receipt"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-007",
+        "local_observation_id": "metric_over_33000_daily_riders",
+        "decision": "relate",
+        "rationale": "Raw text 'over 33,000 daily riders' is a ridership metric for the 34th Street SBS corridor. Payload scope is '34th Street SBS'.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_over-33000-daily-riders",
+            "description": "34th Street SBS has over 33,000 daily riders",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p010_c0002",
+                "source_quote": "over 33,000 daily riders"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p010_c0002",
+            "source_quote": "over 33,000 daily riders"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-008",
+        "local_observation_id": "claim_bus_service_improvement_reliability_speed",
+        "decision": "relate",
+        "rationale": "Claim 'Bus Service: improves bus reliability and increase bus speeds for over 33,000 daily riders' describes a project benefit of the 34th Street SBS. Payload subject is '34th Street SBS'.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_bus-service-improvement-reliability-speed",
+            "description": "34th Street SBS improves bus reliability and speeds",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p010_c0002",
+                "source_quote": "Bus Service: improves bus reliability and increase bus speeds for over 33,000 daily riders"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p010_c0002",
+            "source_quote": "Bus Service: improves bus reliability and increase bus speeds for over 33,000 daily riders"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-009",
+        "local_observation_id": "claim_pedestrian_space_18000_sq_ft",
+        "decision": "relate",
+        "rationale": "Claim 'Pedestrians: adds 18,000 sq. ft. of new pedestrian space, reducing crowding and improving safety' is a project benefit of 34th Street SBS. Payload subject is '34th Street SBS'.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_pedestrian-space-18000-sq-ft",
+            "description": "34th Street SBS adds pedestrian space",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p010_c0002",
+                "source_quote": "Pedestrians: adds 18,000 sq. ft. of new pedestrian space, reducing crowding and improving safety"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p010_c0002",
+            "source_quote": "Pedestrians: adds 18,000 sq. ft. of new pedestrian space, reducing crowding and improving safety"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-010",
+        "local_observation_id": "claim_loading_increase_32_to_258",
+        "decision": "relate",
+        "rationale": "Claim 'Loading: increases daytime loading from 32 to 258 spaces with a loading zone on every block' is a project benefit of 34th Street SBS. Payload subject is '34th Street SBS'.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_loading-increase-32-to-258",
+            "description": "34th Street SBS increases loading spaces",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p010_c0002",
+                "source_quote": "Loading: increases daytime loading from 32 to 258 spaces with a loading zone on every block"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p010_c0002",
+            "source_quote": "Loading: increases daytime loading from 32 to 258 spaces with a loading zone on every block"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-011",
+        "local_observation_id": "claim_traffic_delays_roughly_same",
+        "decision": "relate",
+        "rationale": "Claim 'Overall, traffic delays will remain roughly the same' is a traffic analysis conclusion for the 34th Street SBS project. Payload subject is '34th Street SBS traffic analysis'.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_traffic-delays-roughly-same",
+            "description": "34th Street SBS traffic analysis: delays remain roughly the same",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p021_c0002",
+                "source_quote": "Overall, traffic delays will remain roughly the same"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p021_c0002",
+            "source_quote": "Overall, traffic delays will remain roughly the same"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-012",
+        "local_observation_id": "claim_some_traffic_diverted_to_35th",
+        "decision": "relate",
+        "rationale": "Claim 'Some traffic diverted to 35th Street, number of vehicles is small' is a traffic analysis conclusion for the 34th Street SBS project.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_some-traffic-diverted-to-35th",
+            "description": "Traffic analysis: some traffic diverted to 35th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p021_c0002",
+                "source_quote": "Some traffic diverted to 35th Street, number of vehicles is small"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p021_c0002",
+            "source_quote": "Some traffic diverted to 35th Street, number of vehicles is small"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-013",
+        "local_observation_id": "claim_no_effect_beyond_project_area",
+        "decision": "relate",
+        "rationale": "Claim 'MTM shows no effect on traffic beyond the project area' is a traffic analysis conclusion for the 34th Street SBS project.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_no-effect-beyond-project-area_2",
+            "description": "Traffic analysis: no effect beyond project area",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p021_c0002",
+                "source_quote": "MTM shows no effect on traffic beyond the project area"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p021_c0002",
+            "source_quote": "MTM shows no effect on traffic beyond the project area"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-014",
+        "local_observation_id": "claim_maintains_2_way_traffic",
+        "decision": "relate",
+        "rationale": "Claim 'Traffic: maintains 2-way traffic from river to river' describes a design feature of 34th Street SBS. Payload subject is '34th Street SBS design'.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_maintains-2-way-traffic",
+            "description": "34th Street SBS maintains two-way traffic river to river",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p010_c0002",
+                "source_quote": "Traffic: maintains 2-way traffic from river to river"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p010_c0002",
+            "source_quote": "Traffic: maintains 2-way traffic from river to river"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-015",
+        "local_observation_id": "claim_fare_evasion_declined_bx12_m15",
+        "decision": "relate",
+        "rationale": "Raw text 'Fare evasion on Bx12 SBS and M15 SBS declined after pre-payment introduced' explicitly names Bx12 SBS and M15 SBS as the subjects experiencing fare evasion decline.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_m15-sbs",
+            "object_id": "claim_fare-evasion-declined-bx12-m15_4",
+            "description": "Fare evasion declined on M15 SBS after pre-payment",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p028_c0002",
+                "source_quote": "Fare evasion on Bx12 SBS and M15 SBS declined after pre-payment introduced"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_bx12-plus",
+            "object_id": "claim_fare-evasion-declined-bx12-m15_4",
+            "description": "Fare evasion declined on Bx12 SBS after pre-payment",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p028_c0002",
+                "source_quote": "Fare evasion on Bx12 SBS and M15 SBS declined after pre-payment introduced"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p028_c0002",
+            "source_quote": "Fare evasion on Bx12 SBS and M15 SBS declined after pre-payment introduced"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-016",
+        "local_observation_id": "event_fare_prepayment_launch_2011_11_13",
+        "decision": "relate",
+        "rationale": "Event description 'Fare pre-payment launches on M34 and M34A SBS, with pre-payment introduced at all stops' explicitly names M34 and M34A SBS routes. The event is a milestone for the 34th Street SBS project.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_fare-prepayment-launch-2011-11-13",
+            "description": "Fare pre-payment launch for 34th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p023_c0002",
+                "source_quote": "Start date: Sunday November 13, 2011"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "route_m34-sbs",
+            "object_id": "event_fare-prepayment-launch-2011-11-13",
+            "description": "Fare pre-payment launched on M34 SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p023_c0002",
+                "source_quote": "Start date: Sunday November 13, 2011"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "route_m34a-sbs",
+            "object_id": "event_fare-prepayment-launch-2011-11-13",
+            "description": "Fare pre-payment launched on M34A SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p023_c0002",
+                "source_quote": "Start date: Sunday November 13, 2011"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p023_c0002",
+            "source_quote": "Start date: Sunday November 13, 2011"
+          },
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p003_c0003",
+            "source_quote": "Start date: Sunday November 13, 2011"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-017",
+        "local_observation_id": "event_environmental_review_winter_2012",
+        "decision": "relate",
+        "rationale": "Event 'Complete environmental review for 34th Street SBS' names the 34th Street SBS project as the subject of this milestone.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_environmental-review-winter-2012",
+            "description": "Environmental review milestone for 34th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p003_c0005",
+                "source_quote": "Winter: complete environmental review"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p003_c0005",
+            "source_quote": "Winter: complete environmental review"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-018",
+        "local_observation_id": "event_implementation_goal_summer_fall_2012",
+        "decision": "relate",
+        "rationale": "Event 'Goal for implementation of 34th Street SBS' names the 34th Street SBS project as the subject of this milestone.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_implementation-goal-summer-fall-2012",
+            "description": "Implementation goal for 34th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p003_c0005",
+                "source_quote": "Summer/fall: goal for implementation"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p003_c0005",
+            "source_quote": "Summer/fall: goal for implementation"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-019",
+        "local_observation_id": "event_presentation_cb6_2011_11_07",
+        "decision": "relate",
+        "rationale": "Event 'Presentation of revised design, traffic analysis, and fare pre-payment update to Manhattan Community Board 6' names both the 34th Street SBS project and Manhattan Community Board 6 as subjects.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_presentation-cb6-2011-11-07",
+            "description": "Presentation of 34th Street SBS to Manhattan CB6",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p001_c0001",
+                "source_quote": "34th Street SBS Presentation to Manhattan Community Board 6, November 7, 2011"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "entity_manhattan-community-board-6",
+            "object_id": "event_presentation-cb6-2011-11-07",
+            "description": "CB6 received 34th Street SBS presentation",
+            "evidence_refs": [
+              {
+                "source_id": "2011_brt_34th_cb6_slides",
+                "block_id": "p001_c0001",
+                "source_quote": "34th Street SBS Presentation to Manhattan Community Board 6, November 7, 2011"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p001_c0001",
+            "source_quote": "34th Street SBS Presentation to Manhattan Community Board 6, November 7, 2011"
+          },
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p001_c0002",
+            "source_quote": "34th Street SBS Presentation to Manhattan Community Board 6, November 7, 2011"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-20-15-545Z_2111393-0300d4d0_canonicalize_2026-06-10t22-56-13-237z-1976810-594d84d9-ingest-2011-brt-34th-cb6-slides-relation-linker"
+}

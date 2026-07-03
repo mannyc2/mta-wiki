@@ -1,0 +1,41 @@
+{
+  "run_id": "2026-06-10T23-02-39-805Z_1976810-c647d6ee_ingest_2012-02-brt-webster-cac1-summary",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T02:22:23.958Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "bx12-sbs-to-bx12-plus",
+        "local_observation_id": "route_bx12_sbs_2012_02_brt_webster_cac1",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id route_bx12-plus. Registry record route_bx12-plus (BX12-SBS) matches on route_id Bx12, route_type SBS/Select Bus Service, borough Bronx. Evidence source 2012_02_brt_webster_cac1_summary is already in the route_bx12-plus source_ids. No other registry record represents the same Bx12 SBS route.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p001_c0009",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "bx41-local-to-route_bx41-local-2012-02-brt-webster-cac1",
+        "local_observation_id": "route_bx41_local_2012_02_brt_webster_cac1",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id route_bx41-local-2012-02-brt-webster-cac1. Registry record exists with same ID; match on route_id Bx41, route_type local, borough Bronx. Evidence source 2012_02_brt_webster_cac1_summary is already in the registry card's source_ids. Observation correctly identified.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p003_c0003",
+            "source_quote": ""
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-21-36-992Z_2111393-fe1806aa_canonicalize_2026-06-10t23-02-39-805z-1976810-c647d6ee-ingest-2012-02-brt-webster-cac1-summary-route-identity"
+}

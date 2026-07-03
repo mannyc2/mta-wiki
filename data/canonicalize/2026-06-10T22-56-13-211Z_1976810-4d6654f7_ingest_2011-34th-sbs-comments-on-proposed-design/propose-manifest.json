@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T22-56-13-211Z_1976810-4d6654f7_ingest_2011-34th-sbs-comments-on-proposed-design",
+  "generated_at": "2026-06-11T01:21:53.491Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 42,
+  "validated_decision_count": 35,
+  "quarantined_decision_count": 7,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T22-56-13-211Z_1976810-4d6654f7_ingest_2011-34th-sbs-comments-on-proposed-design",
+    "manifest": "data/canonicalize/2026-06-10T22-56-13-211Z_1976810-4d6654f7_ingest_2011-34th-sbs-comments-on-proposed-design/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T22-56-13-211Z_1976810-4d6654f7_ingest_2011-34th-sbs-comments-on-proposed-design/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T22-56-13-211Z_1976810-4d6654f7_ingest_2011-34th-sbs-comments-on-proposed-design/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T22-56-13-211Z_1976810-4d6654f7_ingest_2011-34th-sbs-comments-on-proposed-design/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 3,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 2,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-211Z_1976810-4d6654f7_ingest_2011-34th-sbs-comments-on-proposed-design/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-17-12-642Z_2111393-65f48787_canonicalize_2026-06-10t22-56-13-211z-1976810-4d6654f7-ingest-2011-34th-sbs-comments-on-proposed-design-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 10,
+      "validated_decision_count": 9,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-211Z_1976810-4d6654f7_ingest_2011-34th-sbs-comments-on-proposed-design/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-17-12-651Z_2111393-e8dd22d0_canonicalize_2026-06-10t22-56-13-211z-1976810-4d6654f7-ingest-2011-34th-sbs-comments-on-proposed-design-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-211Z_1976810-4d6654f7_ingest_2011-34th-sbs-comments-on-proposed-design/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-17-12-651Z_2111393-0b513008_canonicalize_2026-06-10t22-56-13-211z-1976810-4d6654f7-ingest-2011-34th-sbs-comments-on-proposed-design-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-211Z_1976810-4d6654f7_ingest_2011-34th-sbs-comments-on-proposed-design/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-17-12-651Z_2111393-1bfb5256_canonicalize_2026-06-10t22-56-13-211z-1976810-4d6654f7-ingest-2011-34th-sbs-comments-on-proposed-design-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 6,
+      "validated_decision_count": 6,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-211Z_1976810-4d6654f7_ingest_2011-34th-sbs-comments-on-proposed-design/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-17-12-651Z_2111393-9d55825e_canonicalize_2026-06-10t22-56-13-211z-1976810-4d6654f7-ingest-2011-34th-sbs-comments-on-proposed-design-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 21,
+      "validated_decision_count": 17,
+      "quarantined_decision_count": 4,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-211Z_1976810-4d6654f7_ingest_2011-34th-sbs-comments-on-proposed-design/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-17-12-651Z_2111393-63b1c3d8_canonicalize_2026-06-10t22-56-13-211z-1976810-4d6654f7-ingest-2011-34th-sbs-comments-on-proposed-design-relation-linker"
+    }
+  ]
+}

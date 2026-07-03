@@ -1,0 +1,84 @@
+{
+  "run_id": "2026-06-10T23-02-39-444Z_1976810-c9c547a6_ingest_2012-02-06-brt-webster-cac1",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T02:23:00.479Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d-webster-sbs-self-match",
+        "local_observation_id": "project_webster_ave_sbs_cac1",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'project_12-webster-ave' already exists in the registry with matching display_name 'Webster Avenue Select Bus Service', matching source_id '2012_02_06_brt_webster_cac1', and alias 'project_webster-ave-sbs-cac1'. The observation already resolves to its own canonical record — no different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p001_c0002",
+            "source_quote": "Webster Avenue Select Bus Service"
+          },
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p013_c0003",
+            "source_quote": "Based on the existing Bx41 route"
+          }
+        ]
+      },
+      {
+        "decision_id": "d-brt-phase-i-self-match",
+        "local_observation_id": "project_brt_phase_i_corridors",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'project_brt-phase-i-corridors' already exists in the registry with matching display_name 'BRT Phase I Corridors', matching source_id '2012_02_06_brt_webster_cac1', and identical description. The observation already resolves to its own canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p008_c0001",
+            "source_quote": "BRT Phase I Corridors"
+          },
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p008_c0002",
+            "source_quote": "June 2008 Fordham Rd (Bx12)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d-brt-phase-ii-self-match",
+        "local_observation_id": "project_brt_phase_ii_study",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'project_brt-phase-ii-study' already exists in the registry with matching display_name 'BRT Phase II Study', matching source_id '2012_02_06_brt_webster_cac1', and identical description. The observation already resolves to its own canonical record. Added a proposed 'recommended' relation to capture that the Phase II Study identified Webster Ave as the highest-priority Phase II corridor.",
+        "proposed_relations": [
+          {
+            "relation_kind": "recommended",
+            "subject_id": "project_brt-phase-ii-study",
+            "object_id": "project_12-webster-ave",
+            "description": "BRT Phase II Study ranked Webster Ave Corridor highest among all potential new BRT routes in the Bronx community workshop and selected it as the highest priority Phase II corridor for the city.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p012_c0002",
+                "source_quote": "Webster Ave Corridor: - received the highest overall ranking of potential new BRT routes in the Bronx community workshop - selected as the highest priority Phase II corridor for the city"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p012_c0001",
+            "source_quote": "BRT Phase II Study"
+          },
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p012_c0002",
+            "source_quote": "Recommendations based on a series of community workshops in 2009 and technical analysis"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-21-29-152Z_2111393-cd3cb377_canonicalize_2026-06-10t23-02-39-444z-1976810-c9c547a6-ingest-2012-02-06-brt-webster-cac1-project-identity"
+}

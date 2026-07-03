@@ -1,0 +1,315 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-22-endpoint-shape-batch020-prep",
+  "created_at": "2026-06-22T00:00:00.000Z",
+  "author": "codex",
+  "scope": "relation endpoint-shape cleanup prep only; no durable retire/apply writes",
+  "batch": "batch020",
+  "run_id_for_replacements": "2026-06-22_codex_relation_cleanup_batch020",
+  "submitted_at_for_dry_run": "2026-06-22T00:00:00.000Z",
+  "source_id": "meeting_doc_135366",
+  "bucket": {
+    "name": "meeting_doc_135366 contract timeline-context claim-to-event relations",
+    "original_relation_kind": "has_timeline_event",
+    "original_endpoint_shape": "claim -> event",
+    "replacement_relation_kind": "supports",
+    "replacement_endpoint_shape": "event -> claim",
+    "why_coherent": "All four originals come from the same accepted source journal and use a claim as the subject of a has_timeline_event relation to procurement approval or issuance events. Current relation endpoint rules require has_timeline_event subjects to be project, route, corridor, or entity, so the claim subject creates an endpoint-shape issue. The replacement uses the already accepted supports relation kind for contextual dependency/reference links and points the source-backed event toward the related contract-term claim."
+  },
+  "exclusions_and_guards": {
+    "excluded_batches": [
+      "batch013",
+      "batch014",
+      "batch015",
+      "batch016",
+      "batch017",
+      "batch018",
+      "batch019"
+    ],
+    "retired_json_not_edited": true,
+    "submission_journals_not_edited": true,
+    "generated_outputs_not_edited": true,
+    "original_submission_guard": {
+      "retired_hits": [],
+      "batch013_019_hits": [],
+      "batch013_019_submission_count_checked": 37
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": []
+    },
+    "known_local_observation_ids_for_source": 48
+  },
+  "relationEndpointIssues_dry_run_acceptance": {
+    "tooling": "createSubmissionEntry plus relationEndpointIssues using accepted local observation ids for meeting_doc_135366",
+    "summary": {
+      "prepared_count": 4,
+      "accepted_count": 4,
+      "issue_count": 0,
+      "endpoint_shape_issue_count": 0
+    }
+  },
+  "prepared": [
+    {
+      "retire": {
+        "submission_id": "sub_86f5c96117b0a103",
+        "original_record_id": "relation_subcommittee-approvals-m7",
+        "original_local_observation_id": "relation_subcommittee_approvals_m7",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_kind": "claim",
+        "original_subject_id": "claim_m7-propulsion-contract-term",
+        "original_subject_local_observation_id": "claim_m7_propulsion_contract_term",
+        "original_object_kind": "event",
+        "original_object_id": "event_subcommittee-approvals-feb26-2024",
+        "original_object_local_observation_id": "event_subcommittee_approvals_feb26_2024",
+        "reason": "The original has_timeline_event relation uses a claim subject, which is outside the current allowed subject kinds for has_timeline_event."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_7f0c6d7e52e4e219",
+        "input": {
+          "source_id": "meeting_doc_135366",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch020_subcommittee_approvals_support_m7_term",
+          "label": "Subcommittee approvals support M7 contract-term claim",
+          "raw_text": "this item was approved by both the MTA Joint Railroads subcommittee and MTA Board Finance subcommittee during meetings held on February 26, 2024",
+          "payload": {
+            "relation_kind": "supports",
+            "subject_local_observation_id": "event_subcommittee_approvals_feb26_2024",
+            "object_local_observation_id": "claim_m7_propulsion_contract_term",
+            "description": "Replacement for malformed has_timeline_event claim->event relation; the subcommittee approval event provides timeline context for the M7 contract-term claim."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_135366",
+              "evidence_id": "meeting_doc_135366#p001_c0007",
+              "source_path": "raw/sources/meeting_doc_135366/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0007",
+              "text_sha256": "sha256:11dc084085715380704df0c8e145c98af554f8fdce372718443b836e6b11e416",
+              "text_source": "raw_text",
+              "source_quote": "this item was approved by both the MTA Joint Railroads subcommittee and MTA Board Finance subcommittee during meetings held on February 26, 2024"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_c1f48c3e4bc60c39",
+        "original_record_id": "relation_subcommittee-approvals-replacement",
+        "original_local_observation_id": "relation_subcommittee_approvals_replacement",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_kind": "claim",
+        "original_subject_id": "claim_replacement-parts-contract-term",
+        "original_subject_local_observation_id": "claim_replacement_parts_contract_term",
+        "original_object_kind": "event",
+        "original_object_id": "event_subcommittee-approvals-feb26-2024",
+        "original_object_local_observation_id": "event_subcommittee_approvals_feb26_2024",
+        "reason": "The original has_timeline_event relation uses a claim subject, which is outside the current allowed subject kinds for has_timeline_event."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_e9c9ecf915ccb1d0",
+        "input": {
+          "source_id": "meeting_doc_135366",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch020_subcommittee_approvals_support_replacement_parts_term",
+          "label": "Subcommittee approvals support replacement-parts contract-term claim",
+          "raw_text": "this item was approved by both the MTA Joint Railroads subcommittee and MTA Board Finance subcommittee during meetings held on February 26, 2024",
+          "payload": {
+            "relation_kind": "supports",
+            "subject_local_observation_id": "event_subcommittee_approvals_feb26_2024",
+            "object_local_observation_id": "claim_replacement_parts_contract_term",
+            "description": "Replacement for malformed has_timeline_event claim->event relation; the subcommittee approval event provides timeline context for the replacement-parts contract-term claim."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_135366",
+              "evidence_id": "meeting_doc_135366#p003_c0007",
+              "source_path": "raw/sources/meeting_doc_135366/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0007",
+              "text_sha256": "sha256:f7be2e44a6dac54809405eb421c7ce85b9084819204c3216da9fdf58936878f7",
+              "text_source": "raw_text",
+              "source_quote": "this item was approved by both the MTA Joint Railroads subcommittee and MTA Board Finance subcommittee during meetings held on February 26, 2024"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_3fab7a286d7bf864",
+        "original_record_id": "relation_m7-contract-issuance-event",
+        "original_local_observation_id": "relation_m7_contract_issuance_event",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_kind": "claim",
+        "original_subject_id": "claim_m7-propulsion-contract-term",
+        "original_subject_local_observation_id": "claim_m7_propulsion_contract_term",
+        "original_object_kind": "event",
+        "original_object_id": "event_m7-propulsion-contract-issued-mar8-2024",
+        "original_object_local_observation_id": "event_m7_propulsion_contract_issued_mar8_2024",
+        "reason": "The original has_timeline_event relation uses a claim subject, which is outside the current allowed subject kinds for has_timeline_event."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_f51cff7dfa0b158d",
+        "input": {
+          "source_id": "meeting_doc_135366",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch020_m7_issuance_supports_contract_term",
+          "label": "M7 contract issuance supports contract-term claim",
+          "raw_text": "a purchase agreement for the M7 Propulsion System Equipment Upgrade Overhaul and Bench Test Equipment was issued on March 8, 2024",
+          "payload": {
+            "relation_kind": "supports",
+            "subject_local_observation_id": "event_m7_propulsion_contract_issued_mar8_2024",
+            "object_local_observation_id": "claim_m7_propulsion_contract_term",
+            "description": "Replacement for malformed has_timeline_event claim->event relation; the contract issuance event provides timeline context for the M7 contract-term claim."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_135366",
+              "evidence_id": "meeting_doc_135366#p001_c0007",
+              "source_path": "raw/sources/meeting_doc_135366/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0007",
+              "text_sha256": "sha256:11dc084085715380704df0c8e145c98af554f8fdce372718443b836e6b11e416",
+              "text_source": "raw_text",
+              "source_quote": "a purchase agreement for the M7 Propulsion System Equipment Upgrade Overhaul and Bench Test Equipment was issued on March 8, 2024"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_8b1dc41f5fa93999",
+        "original_record_id": "relation_replacement-parts-issuance-event",
+        "original_local_observation_id": "relation_replacement_parts_issuance_event",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_kind": "claim",
+        "original_subject_id": "claim_replacement-parts-contract-term",
+        "original_subject_local_observation_id": "claim_replacement_parts_contract_term",
+        "original_object_kind": "event",
+        "original_object_id": "event_replacement-parts-contract-issued-mar14-2024",
+        "original_object_local_observation_id": "event_replacement_parts_contract_issued_mar14_2024",
+        "reason": "The original has_timeline_event relation uses a claim subject, which is outside the current allowed subject kinds for has_timeline_event."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_4fe0517f03656c0f",
+        "input": {
+          "source_id": "meeting_doc_135366",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch020_replacement_parts_issuance_supports_contract_term",
+          "label": "Replacement-parts contract issuance supports contract-term claim",
+          "raw_text": "a purchase agreement for replacement parts was issued on March 14, 2024",
+          "payload": {
+            "relation_kind": "supports",
+            "subject_local_observation_id": "event_replacement_parts_contract_issued_mar14_2024",
+            "object_local_observation_id": "claim_replacement_parts_contract_term",
+            "description": "Replacement for malformed has_timeline_event claim->event relation; the contract issuance event provides timeline context for the replacement-parts contract-term claim."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_135366",
+              "evidence_id": "meeting_doc_135366#p003_c0007",
+              "source_path": "raw/sources/meeting_doc_135366/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0007",
+              "text_sha256": "sha256:f7be2e44a6dac54809405eb421c7ce85b9084819204c3216da9fdf58936878f7",
+              "text_source": "raw_text",
+              "source_quote": "a purchase agreement for replacement parts was issued on March 14, 2024"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    }
+  ],
+  "source_evidence_blocks_checked": [
+    {
+      "source_id": "meeting_doc_135366",
+      "block_id": "p001_c0007",
+      "page_number": 1,
+      "text_sha256": "sha256:11dc084085715380704df0c8e145c98af554f8fdce372718443b836e6b11e416",
+      "evidence_summary": "States both subcommittee approvals on February 26, 2024 and issuance of the M7 Propulsion System purchase agreement on March 8, 2024."
+    },
+    {
+      "source_id": "meeting_doc_135366",
+      "block_id": "p003_c0007",
+      "page_number": 3,
+      "text_sha256": "sha256:f7be2e44a6dac54809405eb421c7ce85b9084819204c3216da9fdf58936878f7",
+      "evidence_summary": "States both subcommittee approvals on February 26, 2024 and issuance of the replacement-parts purchase agreement on March 14, 2024."
+    }
+  ],
+  "conductor_application_plan": {
+    "only_after_conflict_free_checkpoint": true,
+    "retire_submission_ids": [
+      "sub_86f5c96117b0a103",
+      "sub_c1f48c3e4bc60c39",
+      "sub_3fab7a286d7bf864",
+      "sub_8b1dc41f5fa93999"
+    ],
+    "append_replacement_entries_to": "data/submissions/2026-06-22_codex_relation_cleanup_batch020.jsonl",
+    "replacement_submission_ids": [
+      "sub_7f0c6d7e52e4e219",
+      "sub_e9c9ecf915ccb1d0",
+      "sub_f51cff7dfa0b158d",
+      "sub_4fe0517f03656c0f"
+    ]
+  },
+  "blockers": [],
+  "commands_run": [
+    "sed -n '210,290p' packages/pipeline/src/records/relations.ts",
+    "rg -n '<target submissions and locals>' data/submissions raw/sources/meeting_doc_135366 -S",
+    "git status --short -- data/review_notes/codex-relation-cleanup-batch020-prep.json data/submission-overrides/retired.json data/submissions/2026-06-22_codex_relation_cleanup_batch020.jsonl data/canonical/relations.jsonl packages/pipeline/src/records/relations.ts",
+    "rg -n 'export function relationEndpointIssues|createSubmissionEntry' packages/pipeline/src -S",
+    "rg -n '\"relation_kind\":\"supports\"' data/submissions -S -m 20",
+    "rg -n '<meeting_doc_135366 target local ids>' data/submissions/2026-06-20T15-20-13-416Z_1885472-61567fa7_ingest_meeting-doc-135366.jsonl -S",
+    "bun --eval '<dry-run createSubmissionEntry plus relationEndpointIssues for four replacements>'",
+    "bun --eval '<guard originals against retired.json and batches013-019>'",
+    "rg -n '<replacement ids and local ids>' data -S",
+    "head -n 1 data/canonical/relations.jsonl | jq '{keys: keys, sample: .}'",
+    "rg -n '<original ids and submissions>' data/canonical/relations.jsonl data/materialized -S",
+    "jq -c 'select(.block_id==\"p001_c0007\" or .block_id==\"p003_c0007\") | {block_id,page_number,raw_text_sha256,raw_text}' raw/sources/meeting_doc_135366/blocks.jsonl"
+  ],
+  "commands_intentionally_not_run": [
+    "materialize",
+    "export-jsonl --verify",
+    "full validate CLI",
+    "provider-backed commands",
+    "canonicalize",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize"
+  ]
+}

@@ -1,0 +1,645 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-102831"
+record_kind: "source"
+display_name: "NYCT, SIR, and MTA Bus Financial & Ridership Report, November 2022"
+source_id: "meeting_doc_102831"
+source_ids:
+  - "meeting_doc_102831"
+local_observation_id: "source_meeting_doc_102831"
+local_observation_ids:
+  - "source_meeting_doc_102831"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T19:31:29.540Z"
+submission_ids:
+  - "sub_f14c20c089339a06"
+payload:
+  authority_tier: "plan_document"
+  content_type: "financial report"
+  date_text: "November 2022"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2022-11"
+    precision: "month"
+    raw_text: "November 2022"
+  description: "Financial and ridership report for NYCT, Staten Island Railway, and MTA Bus Company for November 2022, including mid-year forecast vs actual results."
+  published_date_normalized: "2022-11"
+  published_date_precision: "month"
+  publisher: "MTA"
+  title: "New York City Transit Financial and Ridership Reports – November 2022"
+evidence_refs:
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_102831#p001_c0003"
+    page_number: 1
+    source_id: "meeting_doc_102831"
+    source_path: "raw/sources/meeting_doc_102831/blocks.jsonl"
+    text_sha256: "sha256:155f88f79420449e719b8fad341c662aa8f01fab4080afae878d7237f3ed9bf5"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_102831#p001_c0004"
+    page_number: 1
+    source_id: "meeting_doc_102831"
+    source_path: "raw/sources/meeting_doc_102831/blocks.jsonl"
+    text_sha256: "sha256:fb75abcea4e7e7a46f1e513d42c9914f9724aa11992bfb9cbe994057c0a6fb8e"
+    text_source: "raw_text"
+---
+
+# NYCT, SIR, and MTA Bus Financial & Ridership Report, November 2022
+
+source_id: meeting_doc_102831
+citation: cite block ids exactly as shown in square brackets
+document: 250 block(s)
+
+## Page 1
+
+> [p001_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a blue circle.
+[p001_c0002] New York City Transit
+[p001_c0003] Financial and Ridership Reports – November 2022
+[p001_c0004] Jaibala Patel , Deputy Chief Financial Officer, MTA
+
+## Page 2
+
+### [p002_c0001] Financial Report Highlights
+### [p002_c0002] Year-to-Date Forecast Performance Summary
+- [p002_c0003] • Total revenues of $4,139 million were $97.0 million (2.3%) lower than the Forecast. This was primarily due to unfavorable timing of $193.4 million of capital and other reimbursements, partly offset by farebox revenue, which was favorable by $113.0 million. • Total ridership was 1,245.0 million, which exceeded the Forecast by 4.7 million (0.4%). • Total expenses of $11,247 million including non-cash liabilities were $301.8 million (2.6%) lower than the Forecast. The primary drivers of this favorable variance were labor costs lower by $196.4 million (2.6%) due to the existence of vacant positions and the timing of $136.1 million (6.4%) non-labor expense. • At the end of November, total headcount was 46,093, which was 2,385 lower than the Forecast of 48,479. Non-Reimbursable positions were lower by 1,275, and Reimbursable positions were lower by 1,111. • November YTD Non-Reimbursable operating results were favorable to the Forecast by $204.9 million (2.8%). Non-Reimbursable revenues through November were $96.4 million (3.1%) favorable to Forecast primarily due to higher Farebox Revenue than projected. Total Non-Reimbursable expenses including non-cash liabilities were favorable $108.4 million (1.0%), primarily due to lower non-labor costs, offset by higher overtime and depreciation than projected.
+### [p002_c0004] Year-to-Date Non-Reimbursable Revenues & Expenses vs Forecast
+[p002_c0005] ($ in Millions)
+[p002_c0006]
+
+```text
+NYCT Forecast Actual Variance Total revenue $3,064.393 $3,160.843 $96.449 Farebox revenue $2,578.641 $2,691.685 $113.044 Other revenue $485.752 $469.157 ($16.595) Total Expense $8,454.837 $8,315.765 $139.072 Labor Expenses $6,427.860 $6,411.757 $16.102 Non-Labor Expenses $2,026.977 $1,904.007 $122.970 Non-Cash Liabilities $1,922.731 $1,953.396 ($30.665) Net Surplus/(Deficit) - Accrued ($7,313.175) ($7,108.318) $204.856
+```
+
+## Page 3
+
+### [p003_c0001] Revenues
+- [p003_c0002] • Farebox Revenues were $113.0 million (4.4%) favorable to the Forecast mainly due to a higher average fare than projected. Ridership through November was 1,245 million, which was 28.0% greater than 2021 and 0.4% higher than the Forecast. • Other Operating Revenues were $16.6 million (3.4%) unfavorable due to lower paratransit reimbursements, lower metro surcharge and advertising & advertising/retail/rental income.
+### [p003_c0003] Expenses
+[p003_c0004] Labor Expenses: $16.1 million (0.3%) favorable
+- [p003_c0005] • Payroll was $131.9 million (4.0%) favorable primarily due to the existence of 2,385 vacancies. • Overtime was $219.2 million (48.9%) unfavorable due primarily to vacancy / absentee coverage needs and additional maintenance requirements. • Health & Welfare and OPEB Current Payments were $164.2 million (10.5%) favorable due primarily to claims underruns and favorable prescription rebate credits. • Pension was $11.3 million (1.4%) favorable based on actual experience to date. • Other Fringe Benefits and Reimbursable overhead were unfavorable by $72.0 million (27.5%) due to less than anticipated reimbursable labor expenses.
+[p003_c0006] Non-Labor Expenses: $123.0 million (6.1%) favorable
+- [p003_c0007] • Electric Power was favorable by $34.0 million (9.5%) due to lower consumption than projected and favorable timing. • Paratransit Contracts were $12.8 million (3.3%) favorable reflecting fewer trips and favorable timing of support costs. • Professional Service Contracts were $39.0 million (22.8%) favorable due to timing of professional contract payments and Bond Service charges. • Maintenance and Other Operating Contracts were $7.8 million (2.6%) favorable due to the timing of building expense charges, safety equipment charges and car disposal • Materials and Supplies were $47.6 million (15.4%) favorable due to the timing of vehicle materials usage along with lower track and switch material usage. • Other Business Expenses were $17.2 million (19.6%) unfavorable resulting from higher credit card transaction processing fees than projected.
+[p003_c0008] Depreciation and Other: $30.7 million (1.6%), unfavorable due to depreciation of assets.
+
+## Page 4
+
+### [p004_c0001] Staffing Levels
+- [p004_c0002] • Total headcount at the end of November was 46,093, which was 2,385 lower than the Forecast. • The largest number of vacancies were in Subways Maintenance (1,296 positions) and Subways Operations (320 positions). There were significant vacancies in Construction and Development (302 positions), and other Administrative functions (232 positions).
+### [p004_c0003] Overtime
+- [p004_c0004] • Total overtime was $219.1 million unfavorable. Non-reimbursable was $219.2 million (48.8%) unfavorable while reimbursable was $0.095 million (0.1%) favorable. • Unfavorable non-reimbursable overtime was primarily driven by vacancy/absentee coverage and additional maintenance requirements. Favorable reimbursable results were due to the timing of capital project activity.
+### [p004_c0005] Financial Metrics
+- [p004_c0006] • The year-to-date November Farebox Operating Ratio was 33.3%, which is above the Forecast by 1.9 percentage points mainly due to higher farebox revenue than projected. • The year-to-date November Cost per Passenger was $6.68, which is lower than the Forecast by $0.14 per passenger mainly due to higher ridership. • The year-to-date November Revenue per Passenger was $2.22, which was higher than the Forecast by $0.08 per passenger.
+
+## Page 5
+
+### [p005_c0001] MTA NEW YORK CITY TRANSIT
+[p005_c0002] Nov - 2022 Mid-Year
+[p005_c0003] Accrual Statement of Operations By Category
+[p005_c0004] Month - Nov 2022 ($ in Millions)
+[p005_c0005] 12/07/2022 08:31 AM
+[p005_c0006]
+
+```text
+Nonreimbursable Reimbursable Total Favorable (Unfavorable) Forecast Mid_Year Favorable (Unfavorable) Forecast Mid_Year Favorable (Unfavorable) Forecast Mid_Year Actual Variance Percent Actual Variance Percent Revenue Farebox Revenue: Subway $204,943 $15,113 $189,830 $0,000 $0,000 $0,000 $0,000 $189,830 $204,943 Bus $49,957 $2,507 $49,957 $0,000 $0,000 $0,000 $0,000 $49,957 $51,794 Paratransit $1,165 (0,102) $1,767 $0,000 $0,000 $0,000 $0,000 $1,767 $1,665 Fare Liability $4,363 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $4,363 $4,363 Farebox Revenue $262,786 $17,919 $244,896 $0,000 $0,000 $0,000 $0,000 $244,896 $262,786 Fare Reimbursement $5,173 28.8 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $7,953 Paratransit Reimbursement $20,978 (0,030) $21,008 $0,000 $0,000 $0,000 $0,000 $21,008 $20,978 Other Operating Revenue $14,689 (1,324) $16,013 $0,000 $0,000 $0,000 $0,000 $16,013 $14,689 Other Revenue $45,194 $0,425 $45,194 $0,000 $0,000 $0,000 $0,000 $45,194 $45,619 Capital and Other Reimbursements $0,000 - $97,407 $96,448 (0,959) $97,407 $96,448 $97,407 $96,448 Total Revenue $306,404 $18,345 $286,060 $96,448 (0,959) $97,407 $96,448 $286,060 $302,852 Expenses Labor Payroll $312,432 $11,959 $294,291 $34,202 $3,875 $38,177 $34,202 $369,468 $369,734 Overtime $61,686 (19,903) $41,783 $19,903 (3,241) $9,166 $19,903 $50,979 $51,723 Total Salaries & Wages $374,118 (8,044) $366,074 $46,739 $0,534 $47,373 $46,739 $413,447 $420,857 Health and Welfare $66,906 $28,561 $95,467 $1,617 $0,485 $2,102 $1,617 $97,569 $98,522 OPEB Current Payment $19,697 $29,659 $49,355 $1,074 $0,163 $1,236 $1,074 $50,592 $50,770 Pensions $72,954 $1,181 $74,135 $2,939 $0,471 $3,410 $2,939 $77,545 $77,883 Other Fringe Benefits $48,225 $1,059 $49,284 $14,628 (0,966) $14,628 $14,628 $53,912 $53,912 Total Fringe Benefits $207,790 $60,460 $268,240 $21,124 $0,253 $21,377 $21,124 $238,617 $238,904 Contribution to GASB Fund $0,000 - $0,000 $0,000 - $0,000 $0,000 $0,000 $0,000 Reimbursable Overhead (21,155) $2,039 (19,116) $21,155 (2,039) $19,116 $21,155 $0,000 $0,000 Labor $560,743 $64,455 $615,198 $89,018 (1,152) $87,866 $89,018 $703,064 $749,761 Non-Labor : Electric Power $33,633 $2,113 $35,747 $0,030 (0,010) $0,020 $0,030 $35,767 $33,664 Fuel $12,822 $1,020 $13,842 $0,017 $0,016 $0,017 $0,016 $13,858 $12,822 Insurance $6,070 $0,650 $6,720 $0,000 $0,000 $0,000 $0,000 $6,720 $6,070 Claims $17,757 $0,000 $17,757 $0,000 - $0,000 $0,000 $17,757 $0,000 Paratransit Service Contracts $39,611 (2,451) $37,160 $0,000 $0,000 $0,000 $0,000 $37,160 $39,611 Maintenance and Other Operating Contracts $34,986 (7,094) $27,692 $2,316 $0,936 $3,252 $2,316 $31,143 $37,301 Professional Service Contracts $15,992 $0,000 $15,992 $1,732 $1,098 $1,732 $1,098 $21,125 $17,000 Materials & Supplies $25,958 $3,793 $27,751 $4,231 $0,133 $4,365 $4,231 $34,116 $30,189 Other Business Expenses $10,726 (2,243) $8,483 $0,129 $0,026 $0,156 $0,129 $8,638 $10,855 Non-Labor $192,965 $11,780 $204,745 $74,330 $2,111 $74,541 $74,330 $214,285 $200,395 Other Expense Adjustments: Other $0,000 - $0,000 $0,000 - $0,000 $0,000 $0,000 $0,000 Other Expense Adjustments $0,000 - $0,000 $0,000 - $0,000 $0,000 $0,000 $0,000 Total Expenses before Depreciation and OPEB $819,943 $66,235 $753,708 $96,448 $0,959 $97,407 $96,448 $917,350 $850,156 Depreciation $173,269 (5,464) $178,733 $0,000 - $0,000 $0,000 $173,269 $178,733 GASB 75 OPEB Expense Adjustment $0,000 $0,000 $0,000 $0,000 - $0,000 $0,000 $0,000 $0,000 GASB 68 Pension Adjustment $0,000 $0,000 $0,000 $0,000 - $0,000 $0,000 $0,000 $0,000 Environmental Remediation $0,000 - $0,000 $0,000 - $0,000 $0,000 $0,000 $0,000 Total Expenses $993,212 $60,770 $932,441 $96,448 $0,959 $97,407 $96,448 $1,090,618 $1,028,889 OPERATING SURPLUS/DEFICIT (705,152) (626,037) (705,152) $0,000 - $0,000 $0,000 (705,152) (626,037)
+```
+[p005_c0007] Note: Totals may not add due to rounding
+[p005_c0008] Note: Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results.
+[p005_c0009] _TRANSIT - RPTING Mid_Year_FinalFY22_
+
+## Page 6
+
+### [p006_c0001] MTA NEW YORK CITY TRANSIT
+[p006_c0002] Nov. - 2022 Mid. Year
+[p006_c0003] Accrual Statement of Operations By Category
+[p006_c0004] Year-To-Date - Nov 2022
+[p006_c0005] ($ in Millions)
+[p006_c0006] 12/07/2022 08:31 AM
+[p006_c0007]
+
+```text
+Revenue Nonreimbursable Reimbursable Total Favorable (Unfavorable) Favorable (Unfavorable) Favorable (Unfavorable) Favorable (Unfavorable) Favorable (Unfavorable) Favorable (Unfavorable) Forecast Mid. Year Actual Variance Percent Forecast Mid. Year Actual Variance Percent Forecast Mid. Year Actual Variance Percent Revenue Parobox Revenue: Subway $1,973,433 $2,068,478 $95,045 4.8 $0,000 $0,000 $0,000 - $1,973,433 $2,068,478 $95,045 4.8 Bus $539,381 $536,373 $19,012 3.5 $0,000 $0,000 $0,000 - $539,381 $536,373 $19,012 3.5 Paratransit $17,636 $16,622 (1,013) (5.7) $0,000 $0,000 $0,000 - $17,636 $16,622 (1,013) (5.7) Fare Liability $46,212 $46,212 $0,000 0.0 $0,000 $0,000 $0,000 - $46,212 $46,212 $0,000 0.0 Parobox Revenue $2,576,841 $2,691,688 $133,044 4.4 $0,000 $0,000 $0,000 - $2,576,841 $2,691,688 $113,044 4.4 Fare Reimbursement $77,843 $76,059 (1,774) (2.3) $0,000 $0,000 $0,000 - $77,843 $76,059 (1,774) (2.3) Paratransit Reimbursement $230,993 $223,403 (3,591) (2.4) $0,000 $0,000 $0,000 - $230,993 $223,403 (3,591) (2.4) Other Operating Revenue $176,916 $167,666 (9,230) (5.2) $0,000 $0,000 $0,000 - $176,916 $167,666 (9,230) (5.2) Other Revenue $485,752 $465,157 (16,595) (3.4) $0,000 $0,000 $0,000 - $485,752 $465,157 (16,595) (3.4) Capital and Other Reimbursements $0,000 $0,000 - - $977,991 $977,991 (193,403) (16.5) $1,171,394 $977,991 (193,403) (16.5) Total Revenue $3,064,353 $3,160,843 $96,449 3.1 $1,171,394 $977,991 (193,403) (16.5) $4,235,787 $4,138,834 (96,953) (2.5) Expenses Salaries Payroll $3,323,621 $3,201,769 $131,852 4.0 $465,826 $353,013 $102,812 22.6 $3,789,446 $3,554,782 $234,664 6.2 Outside $469,950 $568,158 (219,208) (48.8) $115,680 $115,596 $0,095 0.1 $568,158 $783,744 (219,113) (38.8) Total Salaries & Wages $3,793,571 $3,769,927 (87,356) (2.3) $571,506 $468,609 $102,907 18.0 $4,354,077 $4,338,526 (15,551) 0.4 Health and Welfare $1,028,552 $908,876 $119,676 11.6 $22,764 $18,768 $3,996 17.6 $1,051,316 $927,644 $123,672 11.8 OPEB Current Payment $532,642 $488,119 $44,523 8.4 $13,423 $12,423 $1,000 7.7 $546,095 $500,542 $45,553 8.3 Pensions $821,803 $810,532 $11,271 1.4 $35,397 $34,064 $1,333 3.8 $857,200 $844,596 $12,604 1.5 Other Fringe Benefits $509,118 $537,267 (28,149) (5.5) $180,664 $153,520 $27,143 15.0 $689,781 $690,787 (1,006) (0.1) Total Fringe Benefits $2,892,115 $2,744,794 $147,321 5.1 $282,277 $218,775 $63,502 13.3 $3,144,392 $2,963,569 $180,823 5.8 Contribution to GASB Fund $0,000 $0,000 - - $0,000 $0,000 - - $0,000 $0,000 - - Reimbursable Overhead (246,826) (202,963) (43,863) (17.8) $246,826 $202,963 $43,863 17.8 $0,000 $0,000 $0,000 - Labor $6,427,860 $6,411,757 $16,102 0.3 $1,070,609 $890,337 $180,272 16.8 $7,498,469 $7,302,095 $196,374 2.6 Non-Labor : Electric Power $357,355 $323,308 $34,048 9.5 $0,231 $0,296 (0,065) (26.4) $357,586 $323,604 $33,982 9.5 Fuel $153,241 $154,974 (1,733) (1.1) $0,182 $0,002 $0,180 98.9 $153,423 $154,976 (1,553) (1.0) Insurance $67,424 $66,863 $0,561 0.8 $0,000 $0,000 $0,000 - $67,424 $66,863 $0,561 0.8 Claims $195,325 $195,325 $0,000 0.0 $0,000 $0,000 $0,000 - $195,325 $195,325 $0,000 0.0 Paratransit Service Contracts $386,512 $373,682 $12,830 3.3 $0,000 $0,000 $0,000 - $386,512 $373,682 $12,830 3.3 Maintenance and Other Operating Contracts $300,000 $292,185 $7,815 2.6 $35,789 $34,782 $1,006 2.8 $335,789 $326,967 $8,822 2.6 Professional Service Contracts $170,975 $131,980 $39,025 22.8 $17,589 $11,569 $6,021 34.2 $188,564 $143,519 $45,045 23.9 Materials & Supplies $308,534 $260,930 $47,604 15.4 $47,645 $40,355 $7,290 15.3 $356,180 $301,285 $54,895 15.4 Other Business Expenses $87,611 $104,792 (17,181) (19.6) (0,651) $0,649 (1,300) (199.7) $96,960 $106,441 (19,481) (21.3) Non-Labor $2,026,977 $1,904,007 $122,970 6.1 $100,785 $87,654 $13,131 13.0 $2,127,762 $1,991,661 $136,101 6.4 Other Expense Adjustments: Other $0,000 $0,000 - - $0,000 $0,000 - - $0,000 $0,000 - - Other Expense Adjustments $0,000 $0,000 - - $0,000 $0,000 - - $0,000 $0,000 - - Total Expenses before Depreciation and OPEB $8,454,837 $8,315,765 $139,072 1.6 $1,171,394 $977,991 $193,403 16.5 $9,626,231 $9,293,756 $332,475 3.5 Depreciation $1,922,731 $1,953,396 (30,665) (1.6) $0,000 $0,000 - - $1,922,731 $1,953,396 (30,665) (1.6) GASB 75 OPEB Expense Adjustment $0,000 $0,000 $0,000 - $0,000 $0,000 - - $0,000 $0,000 $0,000 - GASB 68 Pension Adjustment $0,000 $0,000 $0,000 - $0,000 $0,000 - - $0,000 $0,000 $0,000 - Environmental Remediation $0,000 $0,000 - - $0,000 $0,000 - - $0,000 $0,000 - - Total Expenses $10,377,568 $10,269,161 $108,407 1.0 $1,171,394 $977,991 $193,403 16.5 $11,548,582 $11,247,152 $301,810 2.6 OPERATING SURPLUS/DEFICIT (7,313,175) (7,108,318) $204,856 2.8 $0,000 $0,000 $0,000 - (7,313,175) (7,108,318) $204,856 2.8
+```
+[p006_c0008] Note: Totals may not add due to rounding
+[p006_c0009] Note: Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results.
+[p006_c0010] _TRANSIT - RPTNG Mid. Year. Final FY22_
+
+## Page 7
+
+[p007_c0001] _Table 3_
+### [p007_c0002] MTA NEW YORK CITY TRANSIT JULY FINANCIAL PLAN 2022 EXPLANATION OF VARIANCES BETWEEN THE MID YEAR FORECAST AND ACTUAL ACCRUAL BASIS NOV 2022 ($ in millions)
+[p007_c0003]
+
+```text
+Generic Revenue or Expense Category Nonreimb or Reimb MONTH YEAR TO DATE Favorable (Unfavorable) Variance Reason for Variance Favorable (Unfavorable) Variance Reason for Variance $ % $ % Farebox Revenue NR 17.9 7.3 Primarily due to higher average fare 113.0 4.4 Primarily due to higher average fare Other Operating Revenue NR 0.4 1.0 Minor variance (16.6) (3.4) Mainly due to unfavorable student fares and paratransit reimbursements Payroll NR 11.9 3.7 Primarily due to vacancies 131.9 4.0 Primarily due to vacancies Overtime NR (19.9) (47.6) Mainly due to vacancy / availability back-fill coverage (219.2) (48.8) Mainly vacancy / availability back-fill coverage and adverse weather response Health & Welfare (including OPEB current payment) NR 58.2 40.2 Claims underruns and favorable timing of prescription rebate credits 164.2 10.5 Claims underruns and favorable timing of prescription rebate credits Pension NR 1.2 1.6 Favorable NYCERS pension expense 11.3 1.4 Favorable NYCERS pension expense Other Fringe Benefits NR 1.1 2.1 Mainly due to timing offset by less than anticipated reimbursable labor expense (28.1) (5.5) Mainly due to less than anticipated reimbursable labor expense Reimbursable Overhead NR 2.0 10.7 Mainly due to timing of the charges offset by less than anticipated capital labor expense (43.9) (17.8) Mainly due to less than anticipated capital labor expense Electric Power NR 2.1 5.9 Mainly due to lower consumption and timing 34.0 9.5 Mainly due to lower consumption and timing Fuel NR 1.0 7.4 Mainly reflecting lower consumption (1.7) (1.1) Mainly reflecting higher prices Insurance NR 0.7 9.7 Minor variance 0.6 0.8 Minor variance Claims NR 0.0 0.0 Minor variance 0.0 0.0 Minor variance Paratransit Service Contracts NR (2.5) (6.6) Reflecting timing of charges 12.8 3.3 Reflecting fewer trips and favorable timing of support costs Maintenance and Other Operating Contracts NR (7.1) (25.4) Reflecting unfavorable timing of charges 7.8 2.6 Mainly favorable timing of building expense charges, safety equipment charges and car disposal Professional Service Contracts NR 16.0 58.4 Reflects favorable timing of Professional Contract payments, MTA bond services and MTA real estate expenses. 39.0 22.8 Reflects favorable timing of Professional Contract payments, MTA bond services and MTA real estate expenses. Materials & Supplies NR 3.8 12.7 Favorable timing of vehicle materials along with lower track and switch material expense 47.6 15.4 Favorable timing of vehicle materials along with lower track and switch material expense Other Business NR (2.2) (26.4) Mainly higher credit card transaction processing fees (17.2) (19.6) Mainly higher credit card transaction processing fees
+```
+
+## Page 8
+
+### [p008_c0001] MTA NEW YORK CITY TRANSIT July Financial Plan - 2022 Mid-Year Cash Receipts and Expenditures Nov FY22 ($ in Millions)
+[p008_c0002] 12/09/2022 02:33 PM
+[p008_c0003]
+
+```text
+Month Year-To-Date Forecast Mid-Year Actual Variance Favorable (Unfavorable) Variance Forecast Mid-Year Actual Favorable (Unfavorable) Variance Percent Receipts Farebox Revenue $244,866 $254,488 $9,622 3.9 $2,578,641 $2,689,772 4.3 Fare Reimbursement $6,313 $6,313 $0,000 0.0 $63,939 $63,939 46.9 Paratransit Reimbursement $21,008 $22,015 $1,007 4.8 $224,511 $225,892 (8.619) Other Operating Revenue $3,777 $1,939 (1,838) (48.7) $506,181 $498,230 (7.951) Other Revenue $31,098 $30,267 ($804,631) (2.7) $804,631 $818,061 1.7 Capital and Other Reimbursements $137,407 $183,072 $45,665 33.2 $1,341,250 $974,929 (27.3) Total Revenue $413,371 $461,827 $48,456 13.2 $4,724,522 $4,462,762 (5.1) Expenditures Labor : Payroll $328,862 $301,112 $27,750 8.4 $3,794,305 $3,545,129 6.6 Overtime $50,979 $74,123 (23,144) (45.4) $564,631 $783,744 (38.8) Total Salaries & Wages $379,842 $375,235 $4,607 1.2 $4,358,936 $4,328,873 0.7 Health and Welfare $97,569 $62,097 $35,472 36.4 $1,046,539 $915,405 12.5 OPEB Current Payment $50,592 $20,770 $29,821 98.9 $546,095 $500,542 8.3 Pensions $77,545 $76,385 $1,160 1.5 $882,137 $851,489 $10.648 Other Fringe Benefits $45,010 $43,131 $1,879 4.2 $515,733 $518,598 (2.865) Total Fringe Benefits $270,715 $202,383 $68,332 25.2 $2,970,504 $2,786,034 6.2 Contribution to GASB Fund $0,000 $0,000 $0,000 - $0,000 $0,000 - Reimbursement Overhead $0,000 $0,000 $0,000 - $0,000 $0,000 - Labor $650,556 $577,618 $72,938 11.2 $7,329,440 $7,141,907 2.9 Non-Labor : Electric Power $35,767 $34,050 $1,717 4.8 $368,508 $332,333 9.8 Fuel $13,858 $13,833 $0,025 0.2 $153,422 $153,101 0.2 Insurance $0,000 $0,000 $0,000 100.0 $38,751 $38,741 0.0 Claims $17,757 $12,222 $5,535 31.2 $135,185 $108,281 26.904 Paratransit Service Contracts $37,160 $38,342 (1,182) (3.2) $384,512 $368,358 $16,154 Maintenance and Other Operating Contracts $31,143 $37,155 (6,012) (19.3) $335,788 $316,753 $19,035 Professional Service Contracts $29,125 $11,313 $17,812 61.2 $182,564 $141,982 $40,582 Materials & Supplies $33,574 $28,895 $6,679 19.9 $355,222 $304,451 $50,771 Other Business Expenses $8,638 $11,515 (2,877) (33.3) $86,960 $106,095 (19.136) Non-Labor $207,024 $185,325 $21,699 10.5 $2,040,913 $1,970,095 6.4 Other Expense Adjustments: Other $0,000 $0,000 - - $0,000 $0,000 - Other Expense Adjustments $0,000 $0,000 - - $0,000 $0,000 - Total Expenditures before Depreciation and OPEB $857,580 $762,943 $94,637 11.0 $9,370,353 $8,985,002 4.1 Depreciation $0,000 $0,000 $0,000 100.0 $0,000 $0,000 100.0 GASB 75 OPEB Expense Adjustment $0,000 $0,000 $0,000 0.0 $0,000 $0,000 0.0 GASB 68 Pension Adjustment $0,000 $0,000 $0,000 - $0,000 $0,000 - Environmental Remediation $0,000 $0,000 $0,000 - $0,000 $0,000 - Total Expenditures $857,580 $762,943 $94,637 11.0 $9,370,353 $8,985,002 4.1 Net Surplus/(Deficit) (444,209) (295,116) $149,093 33.6 (4,645,832) (4,502,240) 3.1
+```
+[p008_c0004] Note: Totals may not add due to rounding
+[p008_c0005] _Mid-Year_FinalFY22_
+
+## Page 9
+
+[p009_c0001] _Table 5_
+### [p009_c0002] MTA NEW YORK CITY TRANSIT JULY FINANCIAL PLAN 2022 EXPLANATION OF VARIANCES BETWEEN THE MID YEAR FORECAST AND ACTUAL CASH BASIS Nov FY22 ($ in millions)
+[p009_c0003]
+
+```text
+Operating Receipts or Disbursements MONTH YEAR TO DATE Favorable (Unfavorable) Variance Reason for Variance Favorable (Unfavorable) Variance Reason for Variance $ % $ % Farebox Receipts 9.6 3.9 Primarily due to higher average fare 111.1 4.3 Primarily due to higher average fare Other Operating Receipts (0.8) (2.7) Minor variance 13.4 1.7 Favorable timing of the Prepaid Fare Reimbursement offset by lower paratransit reimbursements, lower metro surcharge and advertising & advertising/retail/rental income. Capital and Other Reimbursements 45.7 33.2 Favorable timing of reimbursements (366.3) (27.3) Unfavorable timing of reimbursements Payroll 27.8 8.4 Primarily due to vacancies 249.2 6.6 Primarily due to vacancies Overtime (23.1) (45.4) Vacancy / availability backfill coverage (219.1) (38.8) Vacancy / availability backfill coverage and adverse weather response Health & Welfare/OPEB Current 65.3 44.1 Favorable timing of payments, prescription rebate credits, and vacancies 176.7 11.1 Favorable timing of payments, prescription rebate credits, and vacancies Pension 1.2 1.5 Mainly based on actual experience to date 10.6 1.2 Mainly based on actual experience to date Other Fringe Benefits 1.9 4.2 Mainly favorable timing of payments (2.9) (0.6) Mainly unfavorable timing of payments Electric Power 1.7 4.8 Mainly favorable timing of payments 36.2 9.8 Mainly favorable timing of payments Fuel 0.0 0.2 Minor variance 0.3 0.2 Minor variance Claims 5.5 31.2 Favorable timing of payments 26.9 19.9 Favorable timing of payments Paratransit Service Contracts (1.2) (3.2) Mainly unfavorable timing of the payments offset by fewer trips 16.2 4.2 Mainly fewer trips Maintenance and Other Operating Contracts (6.0) (19.3) Unfavorable timing of payments 19.0 5.7 Favorable timing of payments Professional Service Contracts 17.8 61.2 Favorable timing of payments 40.6 22.2 Mainly favorable timing of payments Materials & Supplies 6.7 19.9 Favorable timing of payments 50.8 14.3 Favorable timing of payments Other Business (2.9) (33.3) Mainly higher credit card transaction processing fees (19.1) (22.0) Mainly higher credit card transaction processing fees
+```
+
+## Page 10
+
+### [p010_c0001] MTA NEW YORK CITY TRANSIT July Financial Plan - 2022 Mid_Year Cash Conversion (Cash Flow Adjustments) Nov FY22 ($ in Millions)
+[p010_c0002] 12/08/2022 02:34 PM
+[p010_c0003]
+
+```text
+Forecast Mid_Year Month Year-To-Date Actual Variance Favorable (Unfavorable) Forecast Mid_Year Actual Variance Favorable (Unfavorable) Percent Revenue Farebox Revenue $0.000 (8.298) (8.298) - $0.000 (1.913) (1.913) - - Fare Reimbursement $0.140 (1.640) (1.779) - (13.904) $17.870 $31.774 228.5 - Paratransit Reimbursement $0.000 $1.037 $1.037 - $3.517 $0.489 (3.028) (86.1) - Other Operating Revenue (12.235) (12.750) (0.515) (4.2) $229.265 $330.544 $1.279 0.4 - Other Revenue (12.095) (13.352) (1.257) (10.4) $318.879 $348.904 $30.025 9.4 - Capital and Other Reimbursements $40.000 $86.624 $46.624 116.6 $169.856 (3.062) (172.918) (101.8) - Total Revenue $27.905 $64.975 $37.070 132.8 $488.734 $343.928 (144.806) (29.6) - Expenses Labor : Payroll $33.606 $45.622 $12.016 35.8 (4.859) $9.653 $14.512 298.7 - Overtime $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 (100.0) - Total Salaries & Wages $33.606 $45.622 $12.016 35.8 (4.859) $9.653 $14.512 298.7 - Health and Welfare $0.000 $6.425 $6.425 - $4.777 $12.239 $7.462 156.2 - OPEB Current Payment $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - - Pensions $0.000 (0.492) (0.492) - (4.938) (6.993) (1.955) (39.6) - Other Fringe Benefits $18.902 $20.588 $1.686 8.9 $174.048 $172.189 (1.859) (1.1) - Total Fringe Benefits $18.902 $26.521 $7.619 40.3 $173.888 $177.535 $3.648 2.1 - Contribution to GASB Fund $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - - Reimbursable Overhead $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - - Labor $52.508 $72.143 $19.635 37.4 $169.029 $187.188 $18.159 10.7 - Non-Labor : Electric Power $0.000 (0.386) (0.386) - (10.922) (8.729) $2.193 20.1 - Fuel $0.000 (1.011) (1.011) - $0.000 $1.875 $1.874 - - Insurance $6.720 $6.070 (0.650) (9.7) $28.673 $28.122 (0.551) (1.9) - Claims $0.000 $5.535 $5.535 - $60.140 $87.044 $26.904 44.7 - Paratransit Service Contracts $0.000 $1.269 $1.269 - $2.000 $5.324 $3.324 166.2 - Maintenance and Other Operating Contracts $0.000 $0.146 $0.146 - $0.000 $10.214 $10.214 - - Professional Service Contracts $0.000 $0.812 $0.812 - $0.000 $1.537 (4.463) (74.4) - Materials & Supplies $0.542 $3.284 $2.733 508.2 $0.958 (3.166) (4.124) (430.6) - Other Business Expenses $0.000 (0.660) (0.660) - $0.000 (0.654) (0.654) - - Non-Labor $7.282 $15.070 $7.808 107.5 $86.849 $121.566 $34.718 40.0 - Other Expense Adjustments: Other $0.000 $0.000 $0.000 - $0.000 $0.000 - - - Other Expense Adjustments $0.000 $0.000 $0.000 - $0.000 $0.000 - - - Total Expenses before Depreciation and OPEB $59.769 $87.213 $27.443 45.9 $255.877 $308.754 $52.877 20.7 - Depreciation $173.269 $178.733 $5.464 3.2 $1,922.731 $1,953.396 $30.665 1.6 - GASB 75 OPEB Expense Adjustment $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - - GASB 68 Pension Adjustment $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - - Environmental Remediation $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - - Total Expenditures $233.038 $265.946 $32.908 14.1 $2,178.609 $2,262.150 $83.542 3.8 - Total Cash Conversion Adjustments $260.943 $330.921 $69.978 26.8 $2,667.343 $2,606.078 (61.265) (2.3) -
+```
+[p010_c0004] Note: Totals may not add due to rounding
+[p010_c0005] Note: Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current month's actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results.
+[p010_c0006] _Mid_Year_FinalFY22_
+
+## Page 11
+
+### [p011_c0001] MTA NEW YORK CITY TRANSIT JULY FINANCIAL PLAN 2022 TOTAL POSITIONS BY FUNCTION AND DEPARTMENT NON-REIMBURSABLE AND FULL-TIME POSITIONS/FULL-TIME EQUIVALENTS November 2022
+[p011_c0002]
+
+```text
+Mid-Year Forecast Actual Variance Fav./(Unfav) Explanation Administration: Office of the President 14 12 2 Law 245 195 50 Mainly PTE vacancies. Office of the EVP 18 8 10 Human Resources 122 88 34 EEO 11 3 8 Office of Management and Budget 32 16 16 Strategy & Customer Experience 166 136 30 Non-Departmental (10) - (10) Labor Relations 89 64 25 Office of People & Business Transformation 13 19 (6) Materiel 151 102 49 Controller 109 87 22 Total Administration 962 730 232 Operations: Subways Service Delivery 8,236 7,983 253 Mainly Supv, and RVO vacancies. Subways Operations Support/Admin 441 400 41 Subways Stations 2,317 2,291 26 SubTotal Subways 10,994 10,674 320 Buses 11,082 11,078 4 Paratransit 190 161 29 Operations Planning 359 282 77 Mainly Mgr, and Hourly vacancies. Revenue Control 542 495 47 Non-Departmental (46) - (46) Total Operations 23,120 22,691 430 Maintenance: Subways Operations Support/Admin 117 103 13 Subways Engineering 346 289 57 Mainly PTE vacancies. Subways Car Equipment 5,030 4,691 339 Mainly Supv, and Hourly vacancies. Subways Infrastructure 1,874 1,720 154 Mainly Hourly vacancies. Subways Elevators & Escalators 486 444 42 Subways Stations 3,511 3,209 302 Mainly Supv, and Hourly vacancies. Subways Track 3,200 3,057 143 Mainly PDM, and TEM vacancies. Subways Power 644 633 11 Subways Signals 1,708 1,686 22 Subways Electronic Maintenance 1,580 1,367 212 Mainly PTE and hourly vacancies. Subtotal Subways 18,495 17,199 1,296 Buses 3,419 3,284 135 Mainly PTE and hourly vacancies. Supply Logistics 523 491 32 System Safety 84 71 13 OHS 80 66 14 Non-Departmental (113) - (113) Total Maintenance 22,488 21,111 1,377 Engineering Construction & Development 1,174 871 303 Mainly PTE vacancies. Matrixed C & D Support 91 92 (1) Total Engineering/Capital 1,265 963 302 Public Safety Security 644 599 45 Total Public Safety 644 599 45 Total Positions 48,479 46,093 2,385 NON_REIMB 43,794 42,519 1,275 REIMBURSABLE 4,685 3,574 1,111 Total Full-Time 48,319 45,974 2,345 Total Full-Time Equivalents 160 119 40
+```
+[p011_c0003] _J:\BUSINESS\2022Bud\Headcount Reporting 2022\11. Nov\NYCT Total Positions 1122 Nov Total Pos by Dept_
+
+## Page 12
+
+### [p012_c0001] MTA NEW YORK TRANSIT JULY FINANCIAL PLAN 2022 TOTAL POSITIONS by FUNCTION and OCCUPATION FULL-TIME POSITIONS and FULL-TIME EQUIVALENTS November 2022
+[p012_c0002]
+
+```text
+FUNCTION/OCCUPATION Mid-Year Forecast Actual Variance Fav./(Unfav) Explanation Administration: Managers/Supervisors 320 216 104 Professional, Technical, Clerical 618 494 124 Operational Hourlies 24 20 4 Total Administration 962 730 232 Operations: Managers/Supervisors 2,909 2,666 243 Professional, Technical, Clerical 475 381 94 Operational Hourlies 19,736 19,644 93 Total Operations 23,120 22,691 430 Maintenance: Managers/Supervisors 4,116 3,747 369 Professional, Technical, Clerical 1,014 765 249 Operational Hourlies 17,358 16,599 759 Total Maintenance 22,488 21,111 1,377 Engineering/Capital: Managers/Supervisors 330 322 8 Professional, Technical, Clerical 933 639 294 Operational Hourlies 2 2 - Total Engineering/Capital 1,265 963 302 Public Safety: Managers/Supervisors 277 246 31 Professional, Technical, Clerical 33 27 6 Operational Hourlies 334 326 8 Total Public Safety 644 599 45 Total Positions: Managers/Supervisors 7,952 7,197 755 Professional, Technical, Clerical 3,072 2,306 767 Operational Hourlies 37,454 36,591 864 Total Positions 48,479 46,093 2,385
+```
+[p012_c0003] _J:\BUSINESS\2022Bud\Headcount Reporting 2022\11. Nov\NYCT Total Positions 1122 Nov Total Positions by OG_
+
+## Page 13
+
+### [p013_c0001] Farebox Revenue Report Highlights
+### [p013_c0002] Month of November
+[p013_c0003] NYCT farebox revenue totaled $262.8 million in November 2022, which was $17.9 million (7.3%) above the Forecast.
+- [p013_c0004] • Subway farebox revenue was $15.1 million greater than the Forecast, mainly due to higher average fare than projected. • NYCT Bus farebox revenue was $2.9 million over the Forecast, reflecting additional revenue due to a higher average fare than projected partially offset by less than projected ridership. • Paratransit farebox revenue was $0.1 million less than Forecast.
+### [p013_c0005] Year-to-Date
+[p013_c0006] NYCT farebox revenue totaled $2,691.7 million, which was $113 million (4.4%) above the Forecast.
+- [p013_c0007] • Subway farebox revenue was $95 million over Forecast mainly due to a higher than projected average fare. • NYCT Bus farebox revenue was $19 million more than the Forecast primarily due to a higher than projected average fare. • Paratransit farebox revenue was $1.0 million less than Forecast.
+
+## Page 14
+
+### [p014_c0001] November Charts
+[p014_c0002]
+
+```text
+November 2022 Farebox Revenue - ($ in millions) November November Year-to-Date Forecast Prelim Actual Favorable(Unfavorable) Forecast Prelim Actual Favorable(Unfavorable) Amount Percent Amount Percent Subway 189.8 204.9 15.1 8.0% 1,973.4 2,068.5 95.0 4.8% NYCT Bus 48.9 51.8 2.9 5.9% 539.4 558.4 19.0 3.5% Paratransit 1.8 1.7 (0.1) (5.7%) 17.6 16.6 (1.0) (5.7%) Subtotal 240.5 258.4 17.9 7.5% 2,530.4 2,643.5 113.0 4.5% Fare Media Liability 4.4 4.4 0.0 0.0% 48.2 48.2 0.0 0.0% Total - NYCT 244.9 262.8 17.9 7.3% 2,578.6 2,691.7 113.0 4.4%
+```
+[p014_c0003] Note: Total may not add due to rounding
+[p014_c0004]
+
+```text
+November 2022 Ridership vs. Forecast - (in millions) November November Year-to-Date Forecast Prelim Actual More(Less) Forecast Prelim Actual More(Less) Amount Percent Amount Percent Subway 89.4 90.9 1.5 1.6% 915.9 921.2 5.3 0.6% NYCT Bus 29.3 29.0 (0.3) (0.9%) 316.0 315.5 (0.5) (0.2%) Paratransit 0.9 0.8 0.0 (2.6%) 8.4 8.3 (0.1) (0.8%) Total - NYCT 119.6 120.7 1.2 1.0% 1,240.3 1,245.0 4.7 0.4%
+```
+[p014_c0005] Note: Total may not add due to rounding
+
+## Page 15
+
+### [p015_c0001] MTA NEW YORK CITY TRANSIT July Financial Plan - 2022 Mid_Year Ridership (Utilization) Actual to Budget Nov FY22 (# in Millions)
+[p015_c0002] 12/08/2022 11:39 AM
+[p015_c0003]
+
+```text
+Month Year-To-Date Forecast Mid_Year Actual Variance Favorable (Unfavorable) Forecast Mid_Year Actual Variance Favorable (Unfavorable) Percent Percent Ridership Ridership - Subway 89,432 90,888 1,455 1.6 915,903 921,183 5,280 0.6 Ridership - Bus 29,271 29,003 (0,268) 0.9 316,036 315,518 (0,518) (0.2) Subtotal 118,703 119,891 1,188 1.0 1,231,938 1,236,701 4,762 0.4 Ridership - Paratransit 0.852 0.829 (0.022) (2.6) 8.393 8.328 (0.065) (0.8) Total Ridership 119,555 120,720 1,165 1.0 1,240,332 1,245,029 4,697 0.4 FareBox Revenue Subway $189,830 $204,943 $15,113 8.0 $1,973,433 $2,068,478 $95,045 4.8 Bus $48,887 $51,794 $2,907 5.9 $539,361 $558,373 $19,012 3.5 Subtotal $238,717 $256,737 $18,021 7.5 $2,512,794 $2,626,851 $114,058 4.5 Paratransit $1.767 $1.665 (0.102) (5.7) $17.636 $16.622 (1.013) (5.7) Farebox Revenue (excl. Fare Media Liab.) $240,483 $258,403 $17,919 7.5 $2,530,429 $2,643,473 $113,044 4.5 Fare Liability $4.383 $4.383 $0.000 0.0 $48,212 $48,212 $0.000 0.0 Total Farebox Revenue $244,866 $262,786 $17,919 7.3 $2,578,641 $2,691,685 $113,044 4.4
+```
+[p015_c0004] Note: Totals may not add due to rounding
+[p015_c0005] _Mid_Year_FinalFY22_
+
+## Page 16
+
+### [p016_c0001] MTA NEW YORK CITY TRANSIT MID-YEAR FORECAST AND NOVEMBER FORECAST vs. ACTUAL RESULTS (NON-REIMBURSABLE) NOVEMBER 2022 YEAR-TO-DATE ($ in millions)
+[p016_c0002]
+
+```text
+November 2022 Year-to-Date Favorable/(Unfavorable) Variance Mid-Year Forecast November Forecast Actual Results Mid-Year Forecast November Forecast $ $ $ $ $ % Total Revenue 3,064.4 3,163.5 3,160.8 96.4 (2.7) (0.1) Total Expenses before Depreciation, OPEB and Environmental Remediation 8,454.8 8,467.4 8,315.8 139.1 151.7 1.8 Depreciation 1,922.7 1,943.3 1,953.4 (30.7) (10.1) (0.5) GASB 75 OPEB Expense Adjustment 0.0 0.0 0.0 0.0 0.0 0.0 GASB 68 Pension Adjustment 0.0 0.0 0.0 0.0 0.0 0.0 Total Expenses 10,377.6 10,410.7 10,269.2 108.4 141.5 1.4 Net Surplus/(Deficit) (7,313.2) (7,247.2) (7,108.3) 204.9 138.8 (1.9)
+```
+[p016_c0003] Note: Totals may not add due to rounding
+
+## Page 17
+
+### [p017_c0001] MTA NEW YORK CITY TRANSIT EXPLANATION OF VARIANCES BETWEEN NOVEMBER FORECAST AND ACTUAL RESULTS NOVEMBER 2022 YEAR-TO-DATE ($ in millions)
+[p017_c0002]
+
+```text
+November 2022 Year-to-Date Favorable (Unfavorable) Variance Reason for Variance $ % Total Revenue (Nonreimbursable) (2.7) Primarily lower advertising and advertising/retail/rental income of $3.7 million (0.8 percent) (0.1) Total Expenses (Nonreimbursable) 141.5 Operating expenses were favorable by $151.7 million (1.8 percent), including: Payroll underruns of $3.5 million (0.1 percent) Overtime overruns by $0.4 million (0.1 percent) Health & welfare/OPEB current underruns of $26.0 million (1.8 percent) Other fringe benefits were favorable by $18.9 million (3.4 percent) Power lower by $15.0 million (4.4 percent) Fuel lower by $3.9 million (2.5 percent) Paratransit service contracts overruns by $3.8 million (1.0 percent) Maintenance and operating contracts under by $30.9 million, (9.6 percent) Professional Services were lower by $3.2 million (2.3 percent) Materials & supplies under by $33.2 million, (11.3 percent) Other business expenses over by $1.5 million (1.5 percent) Non-operating expense adjustments were over by $10.1 million: Depreciation expense over by $10.1 million 1.4
+```
+[p017_c0003] NOTE: Regarding Mid-Year Forecast vs. Actual Results, variance explanations are provided in the monthly report to the Finance Committee.
+
+## Page 18
+
+### [p018_c0001] MTA NEW YORK CITY TRANSIT MID-YEAR FORECAST AND NOVEMBER FORECAST vs. ACTUAL RESULTS (NON-REIMBURSABLE) OCTOBER 2022 YEAR-TO-DATE ($ in millions)
+[p018_c0002]
+
+```text
+October 2022 Year-to-Date Favorable/(Unfavorable) Variance Mid-Year Forecast November Forecast Actual Results Mid-Year Forecast November Forecast $ $ $ $ $ % Total Revenue 2,776.3 2,857.0 2,854.4 78.1 (2.5) (0.1) Total Expenses before Depreciation, OPEB and Environmental Remediation 7,634.9 7,642.7 7,562.1 72.8 80.6 1.1 Depreciation 1,749.5 1,770.0 1,774.7 (25.2) (4.7) (0.3) GASB 75 OPEB Expense Adjustment 0.0 0.0 0.0 0.0 0.0 0.0 GASB 68 Pension Adjustment 0.0 0.0 0.0 0.0 0.0 0.0 Total Expenses 9,384.4 9,412.6 9,336.7 47.6 75.9 0.8 Net Surplus/(Deficit) (6,608.0) (6,555.7) (6,482.3) 125.7 73.4 (1.1)
+```
+[p018_c0003] Note: Totals may not add due to rounding
+
+## Page 19
+
+### [p019_c0001] MTA NEW YORK CITY TRANSIT EXPLANATION OF VARIANCES BETWEEN NOVEMBER FORECAST AND ACTUAL RESULTS OCTOBER 2022 YEAR-TO-DATE ($ in millions)
+[p019_c0002]
+
+```text
+October 2022 Year-to-Date Favorable (Unfavorable) Variance Reason for Variance $ % Total Revenue (Nonreimbursable) (2.5) (0.1) Primarily Buses underrun of $5.1 million offset by favorable Subways farebox revenue of $2.9 million (0.1 percent) Total Expenses (Nonreimbursable) 75.9 0.8 Operating expenses were favorable $80.6 million (1.1 percent), including: Payroll underruns of $3.6 million (0.1 percent) Overtime overrun by $0.7 million (0.1 percent) Health & welfare/OPEB current over by $19.8 million (1.5 percent) Other fringe benefits favorable by $13.7 million (2.7 percent) Power lower by $19.3 million (6.2 percent) Fuel overrun by $3.3 million (2.4 percent) Paratransit service contracts over by $1.3 million (0.4 percent) Maintenance and operating contracts under by $34.8 million, (11.9 percent) Professional Services overrun by $10.5 million (9.5 percent) Materials & supplies under by $31.2 million, (11.7 percent) Other business expenses over by $0.7 million (0.7 percent) Non-operating expense adjustments were over by $4.7 million: Depreciation expense were over $4.7 million
+```
+[p019_c0003] NOTE: Regarding Mid-Year Forecast vs. Actual Results, variance explanations are provided in the monthly report to the Finance Committee.
+
+## Page 20
+
+### [p020_c0001] STATEN ISLAND RAILWAY
+[p020_c0002] Financial and Ridership Reports – November 2022
+[p020_c0003] Jaibala Patel , Deputy Chief Financial Officer, MTA
+
+## Page 21
+
+### [p021_c0001] Financial Report Highlights
+### [p021_c0002] Year-to-Date Forecast Performance Summary
+- [p021_c0003] • Total revenues of $6.220 million were $6.287 million (50.2%) lower than the Mid-Year Forecast. This was primarily due to unfavorable timing of $5.079 million of capital and other reimbursements and unfavorable farebox/other revenue of $1.199 million. • Total ridership was 1.836 million, 25.7% lower than Forecast. • Total expenses of $76.241 million including non-cash liabilities were $8.615 million (10.2%) lower than the Forecast. The primary drivers of this favorable variance were labor costs lower by $5.401 million (9.5%) due to the existence of vacant positions and the timing of $4.171 million (24.6%) in non-labor expenses. • At the end of November, total headcount was 345, which was 52 lower than the Forecast of 397. Non-reimbursable positions were lower by 15, and reimbursable positions were lower by 37. • November YTD non-reimbursable operating results were favorable to the Forecast by $2.337 million or 3.2%. Non-reimbursable revenues through November were $1.199 million or (20.9%) unfavorable to the Forecast primarily due to lower than projected Farebox Revenue. Total non-reimbursable expenses including non-cash liabilities were favorable by $3.536 million (4.5%), primarily due to lower non-labor costs.
+### [p021_c0004] Year-to-Date Non-Reimbursable Revenues & Expenses vs Forecast
+[p021_c0005] ($ in Millions)
+[p021_c0006]
+
+```text
+SIR Forecast Actual Variance Total revenue $5.733 $4.535 ($1.199) Farebox revenue $3.873 $2.902 ($0.972) Other revenue $1.860 $1.633 ($0.227) Total Expense $67.020 $62.527 $4.492 Labor Expenses $50.076 $49.815 $0.261 Non-Labor Expenses $16.944 $12.713 $4.231 Non-Cash Liabilities $11.071 $12.028 ($0.957) Net Surplus/(Deficit) - Accrued ($72.358) ($70.020) $2.337
+```
+
+## Page 22
+
+### [p022_c0001] Revenues
+- [p022_c0002] • Farebox Revenues were $0.972 million (25.1%) unfavorable to the Forecast due to lower ridership than projected. Ridership through November was 1.836 million. This was 25.7% less than the Forecast. • Other Operating Revenues were $0.227 million (12.2%) unfavorable due to lower student fare reimbursements.
+### [p022_c0003] Expenses
+### [p022_c0004] Labor Expenses: $0.261 million (0.5%) favorable
+- [p022_c0005] • Payroll was $0.278 million (1.1%), favorable primarily due the existence of 52 vacancies. • Overtime was $0.865 million (20.9%) unfavorable primarily due to absentee coverage. • Health & Welfare and OPEB Current Payments were $1.665 million (16.4%) favorable primarily due to claims underruns and favorable prescription rebate credits. • Other Fringe Benefits was $0.803 million (21.9%) unfavorable due to lower reimbursable charged than expected.
+### [p022_c0006] Non-Labor Expenses: $4.231 million (25.0%) favorable
+- [p022_c0007] • Maintenance and other operating contracts were $2.358 million (59.8%) favorable due to the timing of roof maintenance, bridge inspection and CCTV projects. • Electric power was $0.988 million (19.2%) favorable due to lower consumption than projected. • Other business expenses were $0.763 million (78.5%) favorable due to delays in facility maintenance projects. • Professional Services were $0.457 million (19.6%) favorable due to the timing of roof maintenance, bridge inspection and CCTV projects. • Claims were $0.371 million (47.3%) favorable due to timing. • Materials and Supplies were $0.487 million (24.9%) unfavorable due to timing of revenue maintenance projects. • Insurance was $0.301 million (21.4%) unfavorable due to timing of expenses.
+### [p022_c0008] Depreciation and Other: $0.957 million (8.6%), unfavorable due to depreciation of assets.
+
+## Page 23
+
+### [p023_c0001] Staffing Levels
+- [p023_c0002] • Total headcount at the end of November was 345, which was 52 lower than the Mid-Year Forecast. • The largest number of vacancies were in maintenance (27 positions). • 77% of the vacancies were in the operational hourlies category.
+### [p023_c0003] Overtime
+- [p023_c0004] • Total overtime was $0.218 million unfavorable. Non-reimbursable was $0.865 million unfavorable and reimbursable was $0.647 million favorable. • Unfavorable non-reimbursable overtime was primarily due to absentee coverage.
+### [p023_c0005] Financial Metrics
+- [p023_c0006] • The year-to-date November Farebox Operating Ratio was 5.9%, which is lower than the Forecast by 1.6 percentage points mainly due to lower farebox revenue. • The year-to-date November Cost per Passenger was $34.06, which is higher than the Forecast by $6.94 per passenger mainly due to lower ridership • The year-to-date November Revenue per Passenger was $2.00, which was lower than Forecast by $0.02 per passenger.
+
+## Page 24
+
+### [p024_c0001] MTA STATEN ISLAND RAILWAY Nov - 2022 Mid-Year Accrual Statement by Category Month - Nov 2022 ($ in Millions)
+[p024_c0002] 12/10/2022 01:59 PM
+[p024_c0003]
+
+```text
+Nonreimbursable Var Percent Reimbursable Favorable Forecast Mid-Year Actual Total Forecast Mid-Year Actual Favorable (Unfavorable) Variance Percent Forecast Mid-Year Actual Variance (Unfavorable) Percent Variance Actual Favorable (Unfavorable) Variance Percent Revenue Farebox Revenue: Farebox Revenue $0.398 $0.291 ($0.107) (26.8) $0.000 $0.000 - - $0.398 $0.291 (0.107) (26.8) Other Revenue $0.161 $0.184 $0.023 14.0 $0.000 $0.000 - - $0.161 $0.184 $0.023 14.0 Capital and Other Reimbursements $0.000 $0.000 - - $0.208 $0.208 (0.803) (79.4) $1.011 $0.208 (0.803) (79.4) Total Revenue $0.559 $0.475 (0.084) (15.0) $0.208 $0.208 (0.803) (79.4) $1.570 $0.682 (0.887) (56.5) Expenses Labor: Payroll $2.600 $2.729 (0.128) (4.9) $0.102 $0.102 $0.439 81.1 $3.141 $2.831 $0.310 9.9 Overtime $0.228 $0.520 (0.291) (127.6) $0.023 $0.023 $0.122 84.4 $0.373 $0.543 (0.170) (45.6) Total Salaries & Wages $2.829 $3.249 (0.420) (14.8) $0.125 $0.125 $0.560 81.8 $3.514 $3.373 $0.140 4.0 Health and Welfare $0.752 $0.457 $0.296 39.3 $0.000 $0.000 $0.000 - $0.752 $0.457 $0.296 39.3 OPEB Current Payment $0.372 $0.249 $0.023 8.5 $0.000 $0.000 $0.000 - $0.272 $0.249 $0.023 8.4 Pension $0.573 $0.672 $0.001 0.2 $0.000 $0.000 $0.000 - $0.673 $0.672 $0.001 0.2 Other Fringe Benefits $0.384 $0.450 (0.166) (58.4) $0.082 $0.082 $0.244 74.7 $0.610 $0.533 $0.078 12.8 Total Fringe Benefits $1.892 $1.828 $0.154 7.8 $0.083 $0.083 $0.244 74.7 $2.308 $1.910 $0.398 17.2 Contribution to GASB Fund $0.000 $0.000 - - $0.000 $0.000 - - $0.000 $0.000 - - Reimbursable Overhead $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - Labor $4.811 $5.077 (0.266) (5.5) $0.207 $0.207 $0.804 79.5 $5.822 $5.284 $0.538 9.2 Non-Labor: Electric Power $0.513 $0.464 $0.049 9.5 $0.000 $0.000 $0.000 - $0.513 $0.464 $0.049 9.5 Fuel $0.040 $0.009 $0.031 77.1 $0.000 $0.000 $0.000 - $0.040 $0.009 $0.031 77.1 Insurance $0.130 $0.202 (0.072) (55.2) $0.000 $0.000 $0.000 - $0.130 $0.202 (0.072) (55.2) Claims $0.099 $0.038 $0.062 62.2 $0.000 $0.000 $0.000 - $0.099 $0.038 $0.062 62.2 Paratransit Service Contracts $0.000 $0.000 - - $0.000 $0.000 $0.000 - $0.000 $0.000 - - Maintenance and Other Operating Contracts $0.467 $0.379 $0.085 181.1 $0.000 $0.000 $0.000 - $0.467 $0.379 $0.085 181.1 Professional Service Contracts $0.302 $0.138 $0.164 54.3 $0.000 $0.000 $0.000 - $0.302 $0.138 $0.164 54.3 Materials & Supplies $0.218 $0.345 (0.127) (58.3) $0.001 $0.001 (0.001) - $0.218 $0.346 (0.128) (58.6) Other Business Expenses $0.142 $0.016 $0.127 88.9 $0.000 $0.000 $0.000 - $0.142 $0.016 $0.127 88.9 Non-Labor $1.911 $0.832 $1.079 56.4 $0.001 $0.001 (0.001) - $1.911 $0.833 $1.078 56.4 Other Expense Adjustments: Other $0.000 $0.000 - - $0.000 $0.000 - - $0.000 $0.000 - - Other Expense Adjustments $0.000 $0.000 - - $0.000 $0.000 - - $0.000 $0.000 - - Total Expenses before Depreciation and OPEB $6.722 $5.909 $0.813 12.1 $0.208 $0.208 $0.803 79.4 $7.733 $6.117 $1.616 20.9 Depreciation $0.329 $1.092 (0.164) (17.6) $0.000 $0.000 - - $0.329 $1.092 (0.164) (17.6) GASB 75 OPEB Expense Adjustment $0.000 $0.000 $0.000 - $0.000 $0.000 - - $0.000 $0.000 $0.000 - GASB 88 Pension Adjustment $0.000 $0.000 $0.000 - $0.000 $0.000 - - $0.000 $0.000 $0.000 - Environmental Remediation $0.000 $0.000 - - $0.000 $0.000 - - $0.000 $0.000 - - Total Expenses $7.651 $7.001 $0.649 8.5 $0.208 $0.208 $0.803 79.4 $8.662 $7.209 $1.453 16.8 OPERATING SURPLUS/DEFICIT (7.092) (6.527) $0.565 8.0 $0.000 $0.000 $0.000 - (7.092) (6.527) $0.565 8.0
+```
+[p024_c0004] Note: Totals may not add due to rounding
+[p024_c0005] Note: Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results.
+[p024_c0006] _TRANSIT - RPTNG Mid-Year, Final FY22_
+
+## Page 25
+
+### [p025_c0001] MTA STATEN ISLAND RAILWAY Nov - 2022 Mid-Year Accrual Statement By Category Year-To-Date - Nov 2022 ($ in Millions)
+[p025_c0002] 12/10/2022 01:59 PM
+[p025_c0003]
+
+```text
+Nonreimbursable Var Percent Reimbursable Total Forecast Mid_Year Actual Favorable (Unfavorable) Variance Percent Forecast Mid_Year Actual Forecast Mid_Year Actual Favorable (Unfavorable) Variance Percent Revenue Farebox Revenue: Farebox Revenue $3,873 $2,902 (0.972) (25.1) $0.000 - $3,873 $2,902 Other Revenue $1,860 $1,633 (0.227) (12.2) $0.000 - $1,860 $1,633 Capital and Other Reimbursements $0.000 $0.000 - - $1,685 (5.079) $6,764 $1,685 Total Revenue $5,733 $4,535 (1.199) (20.9) $1,685 (5.079) $12,498 $6,220 Expenses Labor : Payroll $25,949 $25,672 $0.278 1.1 $0.623 $2.927 $29,499 $26,294 Overtime $2,967 $3,832 (0.865) (29.2) $0.335 $0.647 $3,950 $4,168 Total Salaries & Wages $28,917 $29,504 (0.588) (2.0) $0.958 $3.575 $33,449 $30,462 Health and Welfare $7,478 $5,570 $1,908 25.5 $0.000 $0.000 $7,478 $5,570 OPEB Current Payment $2,577 $2,919 (0.243) (8.1) $0.002 (0.002) $2,677 $2,921 Pension $7,327 $7,318 $0.009 0.1 $0.000 $0.000 $7,327 $7,318 Other Fringe Benefits $3,576 $4,480 (0.803) (21.9) $0.666 $1.566 $5,908 $5,145 Total Fringe Benefits $21,157 $20,287 $0.871 4.1 $0.667 $1.564 $23,389 $20,954 Contribution to GASB Fund $0.000 $0.000 - - $0.000 - $0.000 $0.000 Reimbursable Overhead $0.002 $0.024 (0.022) - $0.000 $0.000 $0.002 $0.024 Labor $50,076 $49,815 $0.261 0.5 $1,625 $5.139 $56,840 $51,440 Non-Labor : Electric Power $5,145 $4,157 $0.988 19.2 $0.000 $0.000 $5,145 $4,157 Fuel $0.405 $0.322 $0.083 20.6 $0.000 $0.000 $0.405 $0.322 Insurance $1,407 $1,708 (0.301) (21.4) $0.000 - $1,407 $1,708 Claims $0.783 $0.413 $0.371 47.3 $0.000 - $0.783 $0.413 Paratransit Service Contracts $0.000 $0.000 - - $0.000 - $0.000 $0.000 Maintenance and Other Operating Contracts $3,945 $1,597 $2,358 59.8 $0.000 - $3,945 $1,597 Professional Service Contracts $2,328 $1,871 $0.457 19.6 $0.004 (0.004) $2,328 $1,876 Materials & Supplies $1,858 $2,445 (0.487) (24.9) $0.056 (0.056) $1,958 $2,501 Other Business Expenses $0.973 $0.210 $0.763 78.5 $0.000 - $0.973 $0.210 Non-Labor $16,944 $12,713 $4,231 25.0 $0.060 (0.060) $16,944 $12,773 Other Expense Adjustments: Other $0.000 $0.000 - - $0.000 - $0.000 $0.000 Other Expense Adjustments $0.000 $0.000 - - $0.000 - $0.000 $0.000 Total Expenses before Depreciation and OPEB $67,020 $62,527 $4,492 6.7 $1,685 $5.079 $73,784 $64,213 Depreciation $11,071 $12,028 (0.957) (8.6) $0.000 - $11,071 $12,028 GASB 75 OPEB Expense Adjustment $0.000 $0.000 $0.000 - $0.000 - $0.000 $0.000 GASB 68 Pension Adjustment $0.000 $0.000 $0.000 - $0.000 - $0.000 $0.000 Environmental Remediation $0.000 $0.000 - - $0.000 - $0.000 $0.000 Total Expenses $78,091 $74,555 $3,536 4.5 $1,685 $5.079 $84,855 $76,241 OPERATING SURPLUS/DEFICIT (72,358) (70,020) $2,337 3.2 $0.000 $0.000 (72,358) (70,020)
+```
+[p025_c0004] Note: Totals may not add due to rounding
+[p025_c0005] Note: Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results.
+[p025_c0006] _TRANSIT - RPTNG Mid_Year_FinalFY22_
+
+## Page 26
+
+[p026_c0001] _Table 3_
+### [p026_c0002] MTA STATEN ISLAND RAILWAY JULY FINANCIAL PLAN - 2022 MID YEAR EXPLANATION OF VARIANCES BETWEEN MID YEAR FORECAST AND THE ACTUAL RESULTS - ACCRUAL Nov 2022 ($ in millions)
+[p026_c0003]
+
+```text
+Generic Revenue or Expense Category Non Reimb. or Reimb. MONTH YEAR-TO-DATE Favorable/ (Unfavorable) Reason for Variance Favorable/ (Unfavorable) Reason for Variance $ % $ % Farebox Revenue Non Reimb. (0.107) (26.8) Unfavorable due to lower than anticipated ridership (0.972) (25.1) Unfavorable due to lower than anticipated ridership Other Revenue Non Reimb. 0.023 14.0 Favorable due to advertising revenues (0.227) (12.2) Unfavorable due to underruns in school fare reimbursement Payroll Non Reimb. (0.128) (4.9) Unfavorable due to general wage increase payments 0.278 1.1 Favorable due to vacancies Overtime Non Reimb. (0.291) (127.6) Unfavorable primarily due to vacancies (0.865) (29.2) Unfavorable primarily due to vacancy coverage backfill Health and Welfare (including OPEB current) Non Reimb. 0.319 31.2 Favorable due to timing of expenses accruals 1.665 16.4 Favorable due to timing and prescription rebates Pension Non Reimb. 0.001 0.2 Minor variance 0.009 0.1 Minor variance Other Fringe Benefits Non Reimb. (0.166) (58.4) Unfavorable due to less than anticipated reimbursable labor expense (0.803) (21.9) Unfavorable due to less than anticipated reimbursable labor expense Electric Power Non Reimb. 0.049 9.5 Favorable due to timing of expenses 0.988 19.2 Favorable due to lower consumption Fuel Non Reimb. 0.031 77.1 Favorable due to lower consumption 0.083 20.6 Favorable due to lower consumption Insurance Non Reimb. (0.072) (55.2) Favorable due to timing of expenses (0.301) (21.4) Unfavorable due to timing of expenses Claims Non Reimb. 0.062 62.2 Favorable due to timing of expenses 0.371 47.3 Favorable due to timing of expenses Maintenance & Other Operating Contracts Non Reimb. 0.845 181.1 Favorable due to credit payment for laser train lease 2.358 59.8 Favorable mostly due to the timing of revenue maintenance projects Professional Service Contracts Non Reimb. 0.164 54.3 Favorable mostly due to the timing of maintenance projects 0.457 19.6 Favorable mostly due to the timing of maintenance projects Materials and Supplies Non Reimb. (0.127) (58.3) Unfavorable mostly due to the timing of maintenance projects (0.487) (24.9) Unfavorable mostly due to the timing of revenue maintenance projects Other Business Expenses Non Reimb. 0.127 88.9 Favorable mostly due to the timing of maintenance projects 0.763 78.5 Favorable due to timing of expnses Payroll Reimb. 0.439 81.1 Favorable due to project requirements 2.927 82.5 Favorable due to project requirements Overtime Reimb. 0.122 84.4 Favorable due to project requirements 0.647 65.9 Favorable due to project requirements
+```
+
+## Page 27
+
+### [p027_c0001] MTA STATEN ISLAND RAILWAY July Financial Plan - 2022 Mid-Year Cash Receipts and Expenditures Nov FY22 ($ in Millions)
+[p027_c0002] 12/08/2022 07:05 AM
+[p027_c0003]
+
+```text
+Month Year-To-Date Forecast Mid_Year Actual Favorable (Unfavorable) Variance Forecast Mid_Year Actual Favorable (Unfavorable) Variance Percent Percent Receipts Farebox Revenue $0.398 $0.282 (0.115) $3.815 $2.781 (1.034) Other Revenue $0.047 $0.093 $0.046 $6.734 $5.629 (1.105) Capital and Other Reimbursements $1.011 (2.369) (3.380) $6.526 (1.833) (8.358) Total Revenue $1.456 (1.993) (3.450) $17.074 $6.577 (10.497) Expenditures Labor : Payroll $2.681 $0.543 $2.139 $27.570 $22.723 $4.847 Overtime $0.373 $2.072 (1.699) $3.950 $5.697 (1.747) Total Salaries & Wages $3.054 $2.614 $0.440 $31.520 $28.420 $3.100 14.4 9.8 Health and Welfare $0.752 $0.198 $0.555 $7.734 $5.467 $2.268 OPEB Current Payment $0.272 $0.672 (0.400) $2.048 $1.684 $0.364 Pensions $0.673 $0.209 $0.464 $7.327 $6.856 $0.471 Other Fringe Benefits $0.000 $0.000 $0.431 $3.693 $2.001 $1.692 Total Fringe Benefits $2.129 $1.079 $1.050 $20.802 $16.007 $4.795 49.3 23.1 Contribution to GASB Fund $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Reimbursable Overhead $0.000 $0.442 (0.442) $0.000 $0.442 (0.442) Labor $5.183 $4.135 $1.048 $52.322 $44.869 $7.453 20.2 14.2 Non-Labor : Electric Power $0.513 $0.009 $0.504 $5.112 $3.623 $1.490 Fuel $0.040 $0.026 $0.014 $0.459 $0.391 $0.068 Insurance $0.130 $0.000 $0.130 $1.183 $1.016 $0.167 Claims $0.061 $0.000 $0.061 $0.408 $0.215 $0.193 Paratransit Service Contracts $0.000 $0.255 (0.255) $0.000 $0.255 (0.255) Maintenance and Other Operating Contracts $0.467 $0.113 $0.354 $4.230 $2.075 $2.155 Professional Service Contracts $0.302 $0.544 (0.242) $2.579 $2.204 $0.376 Materials & Supplies $0.218 $0.025 $0.193 $1.929 $4.570 (2.641) Other Business Expenses $0.142 $0.000 $0.142 $1.067 $0.282 $0.784 Non-Labor $1.873 $0.972 $0.902 $16.967 $14.631 $2.335 48.1 13.8 Other Expense Adjustments: Other $0.000 $0.000 - $0.000 $0.000 - Other Expense Adjustments $0.000 $0.000 - $0.000 $0.000 - Total Expenditures before Depreciation and OPEB $7.056 $5.107 $1.949 $69.289 $59.500 $9.789 27.6 14.1 Depreciation $0.000 $0.000 $0.000 (0.002) $0.000 (0.002) GASB 75 OPEB Expense Adjustment $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 GASB 68 Pension Adjustment $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Environmental Remediation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $7.056 $5.107 $1.949 $69.287 $59.500 $9.787 27.6 14.1 Net Surplus/(Deficit) (5.599) (7.100) (1.501) (52.213) (52.923) (0.710) (26.8) (1.4)
+```
+[p027_c0004] Note: Totals may not add due to rounding
+[p027_c0005] _Mid_Year_FinalFY22_
+
+## Page 28
+
+[p028_c0001] _Table 5_
+### [p028_c0002] MTA STATEN ISLAND RAILWAY JULY FINANCIAL PLAN - 2022 MID YEAR EXPLANATION OF VARIANCES BETWEEN MID YEAR FORECAST AND ACTUAL RESULTS - CASH BASIS Nov 2022 ($ in millions)
+[p028_c0003]
+
+```text
+Operating Receipts or Disbursements MONTH YEAR TO DATE Favorable/ (Unfavorable) Variance Reason for Variance Favorable/ (Unfavorable) Variance Reason for Variance $ % $ % Farebox Receipts (0.115) (29.0) Primarily due to unfavorable ridership (1.034) (27.1) Primarily due to unfavorable ridership Other Revenue 0.046 97.1 Primarily due to overruns in fare reimbursement (1.105) (16.4) Primarily due to underruns in fare reimbursement Capital and Other Reimbursements (3.380) (334.3) Timing of reimbursements (8.358) (128.1) Timing of reimbursements Payroll 2.139 79.8 Favorable due to vacancies 4.847 17.6 Favorable due to vacancies Overtime (1.699) (455.9) Timing of payments (1.747) (44.2) Timing of payments Health and Welfare (including OPEB current payment) 0.155 (81.1) Timing of payments 2.632 (4.6) Timing of payments Other Fringe Benefits 0.431 100.0 Shortfall in reimbursable expenses and timing of payments 1.692 45.8 Shortfall in reimbursable expenses and timing of payments Electric Power 0.504 98.3 Favorable mainly due to timing 1.490 29.1 Favorable mainly due to timing Maintenance Contracts 0.354 75.8 Favorable timing of maintenance work postponed due to COVID-19 2.155 50.9 Favorable timing of maintenance work postponed due to COVID-19 Professional Services Contracts (0.242) (79.9) Timing of contract payments 0.376 14.6 Timing of contract payments Materials & Supplies 0.193 88.7 Timing of payments (2.641) (136.9) Timing of payments
+```
+
+## Page 29
+
+### [p029_c0001] MTA STATEN ISLAND RAILWAY July Financial Plan - 2022 Mid Year Cash Conversion (Cash Flow Adjustments) Nov FY22 ($ in Millions)
+[p029_c0002] 12/08/2022 07:03 AM
+[p029_c0003]
+
+```text
+Month Year-To-Date Forecast Mid Year Actual Favorable (Unfavorable) Variance Forecast Mid Year Actual Favorable (Unfavorable) Variance Percent Percent Revenue Forebox Revenue $0.000 (0.009) (0.009) - (0.120) (0.062) (106.2) Other Revenue (0.114) (0.090) $0.023 20.5 $3.996 (0.878) (18.0) Capital and Other Reimbursements $0.000 (2.577) (2.577) (0.239) (3.518) (3.279) - Total Revenue (0.114) (2.676) (2.562) $4.577 $0.357 (4.219) (92.2) Expenses Labor: Payroll $0.460 $2.288 $1.828 $1.929 $3.571 $1.642 85.1 Overtime $0.000 (1.529) (1.529) $0.000 (1.529) (1.529) - Total Salaries & Wages $0.460 $0.759 $0.299 $1.929 $2.042 $0.113 5.9 Health and Welfare $0.000 $0.259 $0.259 (0.256) $0.103 $0.360 140.3 OPEB Current Payment $0.000 (0.423) (0.423) $0.628 $1.237 $0.608 96.8 Pensions $0.000 $0.463 $0.463 $0.000 $0.463 $0.463 - Other Fringe Benefits $0.180 $0.533 $0.353 $2.215 $3.144 $0.929 42.0 Total Fringe Benefits $0.180 $0.831 $0.652 $2.387 $4.347 $2.360 91.2 Contribution to GASB Fund $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 - Reimbursement Overhead $0.000 (0.442) (0.442) $0.003 (0.418) (0.421) - Labor $0.640 $1.149 $0.509 $4.519 $6.571 $2.052 45.4 Non-Labor: Electric Power $0.000 $0.455 $0.455 $0.033 $0.534 $0.502 - Fuel $0.000 (0.017) (0.017) (0.054) (0.070) (0.016) (29.2) Insurance $0.000 $0.202 $0.202 $0.223 $0.692 $0.469 209.7 Claims $0.038 $0.038 (0.001) $0.376 $0.198 (0.178) (47.4) Paratransit Service Contracts $0.000 (0.255) (0.255) $0.000 (0.255) (0.255) - Maintenance and Other Operating Contracts $0.000 (0.491) (0.491) (0.285) (0.488) (0.203) (71.3) Professional Service Contracts $0.000 (0.406) (0.406) (0.251) (0.328) (0.077) (30.7) Materials & Supplies $0.000 $0.321 $0.321 $0.029 (2.069) (2.098) - Other Business Expenses $0.000 $0.016 $0.016 (0.094) (0.073) $0.021 22.6 Non-Labor $0.038 (0.138) (0.176) (0.023) (1.859) (1.835) - Other Expense Adjustments: Other $0.000 $0.000 - $0.000 $0.000 - - Other Expense Adjustments $0.000 $0.000 - $0.000 $0.000 - - Total Expenses before Depreciation and OPEB $0.678 $1.011 $0.333 $4.496 $4.712 $0.216 4.8 Depreciation $0.929 $1.082 $0.163 $11.073 $12.028 $0.955 8.6 GASB 75 OPEB Expense Adjustment $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 - GASB 68 Pension Adjustment $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 - Environmental Remediation $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 - Total Expenditures $1.607 $2.103 $0.496 $15.569 $16.741 $1.171 7.5 Total Cash Conversion Adjustments $1.493 (0.573) (2.066) $20.146 $17.098 (3.048) (15.1)
+```
+[p029_c0004] Note: Totals may not add due to rounding
+[p029_c0005] Note: Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current month's actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results.
+[p029_c0006] _Mid_Year_Final FY22_
+
+## Page 30
+
+### [p030_c0001] MTA STATEN ISLAND RAILWAY JULY FINANCIAL PLAN - 2022 MID YEAR TOTAL FULL-TIME POSITIONS and FULL-TIME EQUIVALENTS NOV 2022
+[p030_c0002]
+
+```text
+Function/Departments Forecast Mid Year Actual Favorable/ (Unfavorable) Variance Administration Executive 6 4 2 General Office 15 10 5 Purchasing/Stores 4 3 1 Total Administration 25 17 8 Operations Transportation 152 134 18 Total Operations 152 134 18 Maintenance Mechanical 54 51 3 Electronics/Electrical 21 17 4 Power/Signals 32 27 5 Maintenance of Way 89 73 16 Infrastructure 18 19 (1) Total Maintenance 214 187 27 Engineering/Capital Capital Project Support 6 7 (1) Total Engineering Capital 6 7 (1) Total Positions 397 345 52 Non-Reimbursable 344 329 15 Reimbursable 53 16 37 Total Full-Time 397 345 52 Total Full-Time-Equivalents 0 0 0
+```
+[p030_c0003] FinalFY22
+
+## Page 31
+
+### [p031_c0001] MTA STATEN ISLAND RAILWAY JULY FINANCIAL PLAN - 2022 MID YEAR TOTAL FULL-TIME POSITIONS and FULL-TIME EQUIVALENTS by FUNCTION and OCCUPATION NOV 2022
+[p031_c0002]
+
+```text
+Function/Occupation Forecast Mid Year Actual Favorable/ (Unfavorable) Variance Administration Managers/Supervisors 13 9 4 Professional, Technical, Clerical 8 6 2 Operational Hourlies 4 2 2 Total Administration 25 17 8 Operations Managers/Supervisors 26 22 4 Professional, Technical, Clerical 6 5 1 Operational Hourlies 120 107 13 Total Operations 152 134 18 Maintenance Managers/Supervisors 25 24 1 Professional, Technical, Clerical 7 6 1 Operational Hourlies 182 157 25 Total Maintenance 214 187 27 Engineering/Capital Managers/Supervisors 4 4 0 Professional, Technical, Clerical 2 3 (1) Operational Hourlies 0 0 0 Total Engineering/Capital 6 7 (1) Total Positions Managers/Supervisors 68 59 9 Professional, Technical, Clerical 23 20 3 Operational Hourlies 306 266 40 Total Positions 397 345 52
+```
+
+## Page 32
+
+### [p032_c0001] Farebox Revenue Report Highlights
+### [p032_c0002] Month of November
+[p032_c0003] SIR farebox revenue totaled $0.291 million in November 2022, which was $0.107 million (26.8%) below the Forecast.
+### [p032_c0004] Year-to-Date
+[p032_c0005] SIR farebox revenue totaled $2.902 million, which was $0.972 million (25.1%) below the Forecast.
+
+## Page 33
+
+### [p033_c0001] MTA STATEN ISLAND RAILWAY July Financial Plan - 2022 Mid_Year Ridership (Utilization) Actual to Budget Nov FY22 (# in Millions)
+[p033_c0002] 12/08/2022 12:28 PM
+[p033_c0003]
+
+```text
+Month Year-To-Date Forecast Mid_Year Actual Variance Favorable (Unfavorable) Forecast Mid_Year Actual Variance Favorable (Unfavorable) Percent Percent Ridership Ridership - Subway 0.266 0.190 (0.076) (28.6) 2.471 1.836 (0.635) (25.7) Total Ridership 0.266 0.190 (0.076) (28.6) 2.471 1.836 (0.635) (25.7) FareBox Revenue FareBox Revenue $0.398 $0.291 (0.107) (26.8) $3.873 $2.902 (0.972) (25.1) Total Farebox Revenue $0.398 $0.291 (0.107) (26.8) $3.873 $2.902 (0.972) (25.1)
+```
+[p033_c0004] Note: Totals may not add due to rounding
+[p033_c0005] _Mid_Year_FinalFY22_
+
+## Page 34
+
+### [p034_c0001] MTA STATEN ISLAND RAILWAY MID-YEAR FORECAST AND NOVEMBER FORECAST vs. ACTUAL RESULTS (NON-REIMBURSABLE) OCTOBER 2022 YEAR-TO-DATE ($ in millions)
+[p034_c0002]
+
+```text
+October 2022 Year-to-Date Favorable/(Unfavorable) Variance Mid-Year Forecast November Forecast Actual Results Mid-Year Forecast November Forecast $ $ $ $ $ % % Total Revenue 5.2 4.3 4.1 (1.1) (0.3) (21.5) (6.5) Total Expenses before Depreciation, OPEB and Environmental Remediation 60.3 56.9 56.6 3.7 0.3 6.1 0.5 Depreciation 10.1 10.9 10.9 (0.8) (0.1) (7.8) (0.8) GASB 68 Pension Adjustment 0.0 0.0 0.0 0.0 0.0 0.0 0.0 GASB 75 OPEB Expense Adj 0.0 0.0 0.0 0.0 0.0 0.0 0.0 Environmental Remediation 0.0 0.0 0.0 0.0 0.0 0.0 0.0 Total Expenses 70.4 67.7 67.6 2.9 0.2 4.1 0.3 Net Surplus/(Deficit) (65.3) (63.4) (63.5) 1.8 (0.1) 2.7 (0.2)
+```
+[p034_c0003] Note: Totals may not add due to rounding
+
+## Page 35
+
+### [p035_c0001] MTA STATEN ISLAND RAILWAY EXPLANATION OF VARIANCES BETWEEN NOVEMBER FORECAST AND ACTUAL RESULTS OCTOBER 2022 YEAR-TO-DATE ($ in millions)
+[p035_c0002]
+
+```text
+October 2022 Year-to-Date Favorable (Unfavorable) Variance Reason for Variance $ % Total Revenue (Nonreimbursable) (0.3) (6.5) Farebox revenue was unfavorable by ($0.195) million due to lower ridership and by unfavorable other revenue (school fare reimbursement and advertising) of ($0.089) million. Total Expenses (Nonreimbursable) 0.3 0.5 Operating expenses were favorable to the Estimate by $0.261 million (0.5%), including the following: Payroll & Overtime expenses were unfavorable by ($0.348) million--mainly vacancies and less backfill on overtime Health & welfare/OPEB current expenses were favorable by $1.036 million--mostly timing. OPEB current under by ($0.369) due to timing of expenses Maintenance contracts underran by $0.272 million--timing of projects. Materials & supplies unfavorable by ($0.253) million--timing of requirements Other business expenses favorable by $0.081 million, timing of requirements
+```
+[p035_c0003] NOTE: Regarding Mid-Year Forecast vs. Actual Results, variance explanations are provided in the monthly report to the Finance Committee.
+
+## Page 36
+
+### [p036_c0001] MTA STATEN ISLAND RAILWAY MID-YEAR FORECAST AND NOVEMBER FORECAST vs. ACTUAL RESULTS (NON-REIMBURSABLE) NOVEMBER 2022 YEAR-TO-DATE ($ in millions)
+[p036_c0002]
+
+```text
+November 2022 Year-to-Date Favorable/(Unfavorable) Variance Mid-Year Forecast November Forecast Actual Results Mid-Year Forecast November Forecast $ $ $ $ $ % % Total Revenue 5.7 4.9 4.5 (1.2) (0.4) (20.9) (8.0) Total Expenses before Depreciation, OPEB and Environmental Remediation 67.0 63.5 62.5 4.5 1.0 6.7 1.6 Depreciation 11.1 11.9 12.0 (1.0) (0.2) (8.6) (1.5) OPEB Account 0.0 0.0 0.0 0.0 0.0 0.0 0.0 GASB 68 Pension Adjustment 0.0 0.0 0.0 0.0 0.0 0.0 0.0 Total Expenses 78.1 75.4 74.6 3.5 0.8 4.5 1.1 Net Surplus/(Deficit) (72.4) (70.4) (70.0) 2.3 0.4 3.2 0.6
+```
+[p036_c0003] Note: Totals may not add due to rounding
+
+## Page 37
+
+### [p037_c0001] MTA STATEN ISLAND RAILWAY EXPLANATION OF VARIANCES BETWEEN NOVEMBER FORECAST AND ACTUAL RESULTS NOVEMBER 2022 YEAR-TO-DATE ($ in millions)
+[p037_c0002]
+
+```text
+November 2022 Year-to-Date Favorable (Unfavorable) Variance Reason for Variance $ % Total Revenue (Nonreimbursable) (0.4) (8.0) Farebox revenue was unfavorable by ($0.248) million due to lower ridership and unfavorable other revenue (school fare reimbursement and advertising) of ($0.147) million. Total Expenses (Nonreimbursable) 1.0 1.6 Operating expenses were favorable to the Estimate by $0.990 million (1.6%), including the following: Payroll & Overtime expenses were unfavorable by ($0.728) million--mainly vacancies and less backfill on overtime Health & welfare/OPEB current expenses were favorable by $1.282 million--mostly timing. OPEB current under by ($0.372) due to timing of expenses Maintenance contracts underran by $0.960 million--timing of projects. Materials & supplies unfavorable by ($0.412) million--timing of requirements Professional service contract under by $0.466 due to timing of expenses Other business expenses favorable by $0.158 million, timing of requirements
+```
+[p037_c0003] NOTE: Regarding Mid-Year Forecast vs. Actual Results, variance explanations are provided in the monthly report to the Finance Committee.
+
+## Page 38
+
+> [p038_c0001] The MTA logo consists of a blue circle with the letters "MTA" in white, bold, sans-serif font.
+[p038_c0002] Bus Company
+### [p038_c0003] Financial and Ridership Reports – November 2022
+[p038_c0004] Jaibala Patel , Deputy Chief Financial Officer, MTA
+
+## Page 39
+
+### [p039_c0001] Financial Report Highlights
+### [p039_c0002] Year-to-Date Budget Performance Summary
+- [p039_c0003] • Total revenues of $167.5 million were $9.0 million (5.6%) favorable to the Mid-Year Forecast. This was primarily due to higher ridership and higher average fare than projected. • Total ridership of 76.0 million was 5.0 million (7.0%) greater than Forecast. • Total expenses of $813.7 million including non-cash liabilities were $216.6 million (21.0%) lower than the Forecast. The primary drivers of this favorable variance were lower labor costs of $30.9 million (5.0%) due to the existence of vacant positions, the timing of non-labor expenses of $70.1 million (28.1%) and the timing of favorable non-cash GASB adjustments of $107.4 million. • At the end of November, total headcount was 3,790, which was 224 lower than the Forecast of 4,014. Non-reimbursable positions were 221 lower, and Reimbursable positions were 3 lower than the forecast. • November YTD Non-reimbursable operating results were favorable to the Forecast by $225.5 million (25.9%). Non-reimbursable revenues through November were $9.6 million (6.3%) favorable to the Forecast due to higher than projected Farebox Revenue. Total Non-reimbursable expenses including non-cash liabilities were favorable by $215.9 million (21.1%), primarily due to the favorable timing of non-cash GASB adjustments, labor, and non-labor expenses.
+### [p039_c0004] Year-to-Date Non-reimbursable Revenues & Expenses vs Forecast
+[p039_c0005] ($ in Millions)
+[p039_c0006]
+
+```text
+MTA Bus Forecast Actual Variance Total revenue $152.03 $161.67 $9.64 Farebox revenue $134.23 $148.80 $14.56 Other revenue $17.79 $12.88 ($4.92) Total Expense $865.55 $765.18 $100.36 Labor Expenses $616.86 $585.62 $31.24 Non-Labor Expenses $248.69 $179.56 $69.13 Non-cash Liabilities $158.24 $42.73 $115.51 Net Surplus/(Deficit) - Accrued ($871.75) ($646.23) $225.52
+```
+
+## Page 40
+
+### [p040_c0001] Revenues
+- [p040_c0002] • Farebox Revenues were $14.6 million (10.8%) favorable to the Forecast due to higher ridership and higher average fare than projected. Ridership through November was 76.0 million. This was 7.0 % higher than Forecast. • Other Operating Revenues were $4.9 million (27.6%) unfavorable due to the timing of student fare reimbursement and other contractual services partially offset by recoveries from other insurance.
+### [p040_c0003] Expenses
+### [p040_c0004] Labor Expenses: $31.2 million (5.1%) favorable
+- [p040_c0005] • Payroll was $12.2 million (4.2%) favorable primarily due to the existence of 224 vacancies. • Overtime was $5.4 million (6.0%) favorable primarily due to lower unscheduled overtime and COVID-19 response requirements. • Health & Welfare and OPEB Current Payments were $5.7 million (4.9%) favorable primarily due to the timing of payments. • Other Fringe Benefits were $6.1 million (8.8%) favorable due to lower payroll related expenses and the timing of interagency billing partially offset by higher worker's compensation.
+### [p040_c0006] Non-Labor Expenses: $69.1 million (27.8%) favorable
+- [p040_c0007] • Insurance is $1.6 million (24.1%) favorable due to timing of payments. • Claims were $23.8 million (34.0%) favorable primarily due to timing of payments. • Maintenance and Other Operating Contracts were $11.7 million (31.5%) favorable due to the timing of expenses. • Professional Service Contracts were $14.8 million (38.3%) favorable due to the timing of payments. • Materials and Supplies were $16.6 million (31.7%) favorable due to the lower material usage.
+### [p040_c0008] Depreciation and Other: $6.4 million (12.7%) favorable due to timing of asset replacement.
+
+## Page 41
+
+### [p041_c0001] Staffing Levels
+- [p041_c0002] • Total headcount at the end of November was 3,790, which was 224 lower than the Mid-Year Forecast. • The largest number of vacancies were in maintenance (213 positions). • 57% percent of the vacancies are in the operational hourlies category.
+### [p041_c0003] Overtime
+- [p041_c0004] • Total overtime was $5.3 million favorable. Non-reimbursable was $5.4 million favorable and reimbursable was $0.1 million unfavorable. • Favorable non-reimbursable overtime was primarily due to the COVID-19 response.
+### [p041_c0005] Financial Metrics
+- [p041_c0006] • The year-to-date November Farebox Operating Ratio was 19.4%, which is higher than the Forecast by 3.9 percentage points due to higher farebox revenue and lower operating expenses. • The year-to-date November Cost per Passenger was $10.07, which is lower than the forecast by $2.12 due to higher ridership and lower operating expenses. • The year-to-date November Revenue per passenger was $1.96, which was higher than the Forecast by $0.07 per passenger.
+
+## Page 42
+
+### [p042_c0001] Farebox Revenue Report Highlights
+### [p042_c0002] Month of November
+[p042_c0003] MTABC farebox revenue totaled $14.0 million in November 2022, which was $1.5 million (12.2%) above Forecast mainly due to higher total ridership of 7.2 million (8.5%) and higher average fare.
+### [p042_c0004] Year-to-Date
+[p042_c0005] MTABC farebox revenue totaled $148.8 million, which was $14.6 million (10.9%) above the Forecast, mainly due to higher total ridership of 76.0 million (7.0 %) and higher average fare.
+
+## Page 43
+
+[p043_c0001] _TABLE 1_
+### [p043_c0002] MTA BUS COMPANY July Financial Plan - 2022 Mid Year Forecast ACCRUAL STATEMENT of OPERATIONS by CATEGORY November 2022 ($ in millions)
+[p043_c0003]
+
+```text
+Revenue Nonreimbursable Reimbursable Total Favorable (Unfavorable) Favorable (Unfavorable) Favorable (Unfavorable) Mid Year Forecast Actual Variance Percent Mid Year Forecast Actual Variance Percent Mid Year Forecast Actual Variance Percent Farebox Revenue $12,476 $14,003 $1,527 12.2 $0.000 $0.000 $0.000 - $12,476 $14,003 $1,527 12.2 Other Operating Income 1,952 0,433 (1,519) (77.8) - - - - 1,952 0,433 (1,519) (77.8) Capital and Other Reimbursements - - - - 0.605 0.605 (0.022) (3.5) 0.627 0.605 (0.022) (3.5) Total Revenue $14,428 $14,436 $0.008 0.1 $0.627 $0.605 ($0.022) (0.1) $15,055 $15,041 ($0.014) (0.1) Expenses Labor: Payroll $27,019 $26,046 $0.973 3.6 $0.304 $0.327 ($0.023) (7.6) $27,323 $26,373 $0.950 3.5 Overtime 8,589 7,843 0.746 8.7 - - - - 8,589 7,843 0.746 8.7 Health and Welfare 8,739 6,880 1,859 21.3 0.201 - 0.201 100.0 8,940 6,880 2,060 23.0 OPEB Current Payment 3,231 3,505 (0.274) (8.5) - - - - 3,231 3,505 (0.274) (8.5) Pensions 5,197 5,015 0.182 3.5 - - - - 5,197 5,015 0.182 3.5 Other Fringe Benefits 6,975 10,762 (3,787) (54.3) - - - - 6,975 10,762 (3,787) (54.3) GASB Account - - - - - - - - - - - - Reimbursable Overhead 0.044 (0.278) 0.322 * (0.044) 0.278 (0.322) * - - - - Total Labor Expenses $59,794 $59,773 $0.021 0.0 $0.461 $0.605 ($0.144) (31.2) $60,255 $60,378 ($0.123) (0.2) Non-Labor: Electric Power $0.183 $0.225 ($0.042) (23.0) $0.000 $0.000 $0.000 - $0.183 $0.225 ($0.042) (23.0) Fuel 3,609 3,584 0.025 0.7 - - - - 3,609 3,584 0.025 0.7 Insurance 0.719 0.450 0.269 37.4 - - - - 0.719 0.450 0.269 37.4 Claims 7,882 0.009 7,873 98.9 - - - - 7,882 0.009 7,873 98.9 Maintenance and Other Operating Contracts 4,318 2,207 2,111 48.9 0.036 - 0.036 100.0 4,354 2,207 2,147 49.3 Professional Service Contracts 4,701 1,570 3,131 66.6 - - - - 4,701 1,570 3,131 66.6 Materials & Supplies 6,160 3,385 2,775 45.0 0.130 - 0.130 100.0 6,290 3,385 2,905 46.2 Other Business Expense 0.464 0.489 (0.025) (5.4) - - - - 0.464 0.489 (0.025) (5.4) Total Non-Labor Expenses $28,036 $11,919 $16,117 57.5 $0.166 $0.000 $0.166 100.0 $28,202 $11,919 $16,283 57.7 Total Expenses before Non-Cash Liability Adjs. $87,830 $71,692 $16,138 18.4 $0.627 $0.605 $0.022 3.5 $88,457 $72,297 $16,160 18.3 Depreciation $5,212 $4,296 $0.916 17.6 $0.000 $0.000 $0.000 - $5,212 $4,296 $0.916 17.6 GASB 75 OPEB Expense Adjustment 11,364 - 11,364 100.0 - - - - 11,364 - 11,364 100.0 GASB 68 Pension Adjustment 6,477 - 6,477 100.0 - - - - 6,477 - 6,477 100.0 Environmental Remediation 0.011 - 0.011 100.0 - - - - 0.011 - 0.011 100.0 Total Expenses $110,694 $75,988 $34,906 31.5 $0.627 $0.605 $0.022 3.5 $111,521 $76,593 $34,928 31.3 Net Surplus/(Deficit) ($96,466) ($61,552) $34,914 36.2 $0.000 $0.000 $0.000 - ($96,466) ($61,552) $34,914 36.2
+```
+[p043_c0004] NOTE: Totals may not add due to rounding
+[p043_c0005] Note: Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current months' actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results
+[p043_c0006] * Variance exceeds 100%.
+
+## Page 44
+
+[p044_c0001] _TABLE 2_
+### [p044_c0002] MTA BUS COMPANY July Financial Plan - 2022 Mid Year Forecast ACCRUAL STATEMENT of OPERATIONS by CATEGORY November 2022 Year-To-Date ($ in millions)
+[p044_c0003]
+
+```text
+Nonreimbursable Reimbursable Total Favorable (Unfavorable) Favorable (Unfavorable) Favorable (Unfavorable) Mid Year Forecast Actual Variance Percent Mid Year Forecast Actual Variance Percent Mid Year Forecast Actual Variance Percent Revenue Farebox Revenue $134,234 $148,798 $14,564 10.8 $0.000 $0.000 $0.000 - $134,234 $148,798 $14,564 10.8 Other Operating Income 17,794 12,875 (4,919) (27.6) - - - - 17,794 12,875 (4,919) (27.6) Capital and Other Reimbursements - - - - 5,841 (0.692) (0.692) (10.6) 5,841 (0.692) (0.692) (10.6) Total Revenue $152,028 $161,673 $9,645 6.3 $5,841 ($0.692) (10.6) 5.6 $158,561 $167,514 $8,953 5.6 Expenses Labor: Payroll $287,082 $274,894 $12,188 4.2 $2,827 $0.334 10.6 4.3 $289,243 $277,721 $12,522 4.3 Overtime 89,511 84,098 $5,413 6.0 0.199 (0.093) (67.7) 5.9 89,617 84,297 5,320 5.9 Health and Welfare 86,330 82,731 $3,599 4.2 1,212 1,212 100.0 100.0 87,542 82,731 4,811 5.5 OPEB Current Payment 29,834 27,747 $2,087 7.0 - - - - 29,834 27,747 2,087 7.0 Pensions 56,364 56,165 $0.199 0.4 - - - - 56,364 56,165 0.199 0.4 Other Fringe Benefits 68,715 62,657 $6,058 8.8 0.141 (0.066) (88.000) 8.7 68,790 62,798 5,992 8.7 GASB Account - - - - - - - - - - - - Reimbursable Overhead (0.980) (2,675) 1,695 * 2,675 (1,695) * * - (0.000) 0.000 - Total Labor Expenses $616,856 $585,617 $31,239 5.1 $5,841 ($0.307) (5.6) 5.0 $622,390 $591,458 $30,932 5.0 Non-Labor: Electric Power $1,947 $2,066 ($0,119) (6.1) - - - - $1,947 $2,066 ($0,119) (6.1) Fuel 37,483 36,636 0,847 2.3 - - - - 37,483 36,636 0,847 2.3 Insurance 6,580 4,991 1,589 24.1 - - - - 6,580 4,991 1,589 24.1 Claims 69,962 46,160 23,792 34.0 - - - - 69,962 46,160 23,792 34.0 Maintenance and Other Operating Contracts 37,089 25,415 11,674 31.5 0,215 0,215 100.0 100.0 37,304 25,415 11,889 31.9 Professional Service Contracts 38,678 23,879 14,799 38.3 - - - - 38,678 23,879 14,799 38.3 Materials & Supplies 52,381 35,763 16,618 31.7 0,785 0,785 100.0 100.0 53,166 35,763 17,403 32.7 Other Business Expense 4,579 4,654 (0,075) (1.6) - - - - 4,579 4,654 (0,075) (1.6) Total Non-Labor Expenses $248,689 $179,564 $69,125 27.8 $0.000 $1.000 100.0 28.1 $249,689 $179,564 $70,125 28.1 Total Expenses before Non-Cash Liability Adjs. $865,545 $765,181 $100,364 11.6 $5,841 $0.693 10.6 11.6 $872,079 $771,022 $101,057 11.6 Depreciation $50,846 $44,400 $6,446 12.7 - - - - $50,846 $44,400 $6,446 12.7 GASB 75 OPEB Expense Adjustment 68,409 - 68,409 100.0 - - - - 68,409 - 68,409 100.0 GASB 68 Pension Adjustment 38,993 - 38,993 100.0 - - - - 38,993 - 38,993 100.0 Environmental Remediation (0.011) (1,674) 1,663 * - - - - (0.011) (1,674) 1,663 * Total Expenses $1,023,782 $807,907 $215,875 21.1 $5,841 $0.694 10.6 21.0 $1,030,316 $813,748 $216,568 21.0 Net Surplus/(Deficit) ($871,754) ($646,234) $225,520 25.9 $0.000 $0.00 100.0 25.9 ($871,755) ($646,234) $225,521 25.9
+```
+[p044_c0004] NOTE: Totals may not add due to rounding
+[p044_c0005] Note: Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current month's actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results
+
+## Page 45
+
+### [p045_c0001] TABLE 3
+### [p045_c0002] MTA BUS COMPANY July Financial Plan - 2022 Mid Year Forecast EXPLANATION OF VARIANCES BETWEEN MID YEAR FORECAST AND ACTUAL RESULTS - ACCRUAL ($ in millions)
+[p045_c0003]
+
+```text
+General Revenue Adjustment Category November 2022 Year-To-Date November 2022 Favorable (Unfavorable) Variance Reason for Variance Favorable (Unfavorable) Variance Reason for Variance Favorable (Unfavorable) Variance $ % $ % General Revenue Farebox Revenue NR $ 1,527 12.2 Mainly due to higher ridership and higher average fare $ 14,654 10.8 Mainly due to higher ridership and higher average fare Other Operating Revenue NR $ (1,519) (77.8) Primarily due to timing of student reimbursement, lower advertising revenue, Other Contract Services and recoveries from Other Insurance $ (4,919) (27.6) Primarily due to timing of student reimbursement, lower advertising revenue, and Other Contract Services partially offset by recoveries from Other Insurance Capital and Other Reimbursements R $ (0,022) - (a) $ (0,022) (0.0) - Total Revenue Variance $ (0,014) (0.1) $ (5,035) -0.8 Payroll NR $ 0,973 3.6 Primarily due to vacancies $ 12,188 4.2 Primarily due to vacancies Overtime NR $ 0,746 8.7 Primarily lower unscheduled overtime, COVID-19 related cleaning, and programmatic maintenance partially offset by lower availability and higher vacancies coverage $ 5,413 6.0 Primarily lower unscheduled overtime, COVID-19 related cleaning, and programmatic maintenance partially offset by lower availability and higher vacancies coverage Health and Welfare (including OPEB) NR $ 1,595 13.2 Primarily due to lower dental expenses and timing of medical and hospitalization offset by higher prescription drugs expenses, life insurance cost, OPEB expenses, and timing of H&W reimbursable expenses $ 5,686 4.9 Primarily due to the timing of OPEB expenses, lower dental expenses and timing of medical and hospitalization offset by higher prescription drugs expenses, life insurance cost and timing of H&W reimbursable expenses Pension NR $ 0,182 3.5 Lower expenses $ 0,199 0.4 Lower expenses Other Fringe Benefits NR $ (3,787) (54.3) Due to higher worker's compensation offset by lower payroll related expenses, and timing of interagency billing $ 6,658 8.8 Due to lower payroll related expenses, and timing of interagency billing partially offset by higher worker's compensation Reimbursable Overhead NR $ 0,322 - Higher reimbursable overhead $ 1,695 - Higher reimbursable overhead Electric Power NR $ (0,042) (23.0) (a) $ (0,119) (0.1) Higher rates Fuel NR $ 0,025 0.7 (a) $ 0,947 2.3 Primarily due to lower usage for diesel fuel usage and the CNG tax credit, partially offset by higher fuel prices Insurance NR $ 0,269 37.4 Timing of expenses $ 1,589 24.1 Timing of expenses Claims NR $ 0,787 99.9 Timing of expenses $ 23,792 34.0 Timing of expenses Maintenance and Other Operating Contracts NR $ 2,111 48.9 Mainly due to the timing of expenses for facility maintenance, bus technology, Shop Program, COVID-19 expenses, and vehicle purchases partially offset by higher vehicle rentals and ads, security and surveillance equipment, bus trailer, vehicles and replacing $ 11,674 31.5 Mainly due to the timing of expenses for facility maintenance, bus technology, Shop Program, COVID-19 expenses, and vehicle purchases partially offset by higher vehicle rentals and ads, security and surveillance equipment, bus trailer, vehicles and replacing Professional Service Contracts NR $ 3,131 66.6 Timing of interagency billing, bus technology, and service contracts $ 14,799 38.3 Timing of interagency billing, bus technology, and service contracts Materials & Supplies NR $ 2,775 45.0 Mainly due to lower usage of general maintenance material as well as and COVID-19 related expenses partially offset by higher grasses and oil lubrication expenses and tool purchases $ 16,818 31.7 Mainly due to lower usage of general maintenance material as well as and COVID-19 related expenses partially offset by higher grasses and oil lubrication expense and tool purchases Other Business Expense NR $ (0,025) (5.4) (a) $ (0,075) (1.6) (a) Depreciation NR $ 0,916 17.6 Timing of asset replacement $ 6,446 12.7 Timing of asset replacement Other Post-Employment Benefits NR $ 11,364 100.0 Due to the timing expenses $ 68,409 100.0 Due to the timing expenses GASB 68 Pension Adjustment NR $ 6,477 100.0 Due to the timing expenses $ 38,993 100.0 Due to the timing expenses Environmental Remediation NR $ 0,011 100.0 Timing of charges $ 1,663 - - Payroll R $ (0,023) (7.6) Timing of charges $ 0,334 10.6 Timing of charges Overtime R $ - - (a) $ (0,059) - (a) Health and Welfare R $ 0,261 100.0 - $ 1,272 100.0 - Pension R $ - - Timing of charges $ - - Timing of charges Other Fringe Benefits R $ - - - $ (0,089) (86.0) - Reimbursable Overhead R $ (0,322) - - $ (1,695) - - Maintenance and Other Operating Contracts R $ 0,036 100.0 Timing of charges $ 0,215 100.0 Timing of charges Materials & Supplies R $ 0,130 100.0 Timing of charges $ 0,785 100.0 Timing of charges Total Expense Variance $ 34,928 31.3 $ 216,568 21.0 Net Variance $ 34,914 36.2 $ 225,521 26.9
+```
+[p045_c0004] _(a) - Variance less than 25%. * Variance exceeds 100%._
+
+## Page 46
+
+### [p046_c0001] TABLE 4
+### [p046_c0002] MTA BUS COMPANY July Financial Plan - 2022 Mid Year Forecast CASH RECEIPTS AND EXPENDITURES ($ in millions)
+[p046_c0003]
+
+```text
+November 2022 Year-To-Date Mid Year Forecast Actual Variance Favorable (Unfavorable) Mid Year Forecast Actual Variance Favorable (Unfavorable) Percent Percent Receipts Farebox Revenue $12,476 $14,772 $2,296 18.4 $135,288 $148,514 $13,225 9.8 Other Operating Revenue 2,129 0,290 (1,839) (86.4) 90,259 60,242 (30,017) (33.3) Capital and Other Reimbursements 0,646 0,308 (0,338) (52.4) 6,347 5,176 (1,171) (18.5) Total Receipts $15,251 $15,369 $0,118 0.8 $231,894 $213,931 ($17,962) (7.7) Expenditures Labor: Payroll $24,921 $32,601 ($7,681) (30.8) $280,313 $272,465 $7,848 2.8 Overtime 8,589 7,843 0,745 8.7 89,618 $84,296 5,321 5.9 Health and Welfare 7,968 19,374 (11,406) * 88,693 87,488 1,205 1.4 OPEB Current Payment 3,480 3,135 0,344 9.9 31,264 27,379 3,885 12.4 Pensions 5,344 5,015 0,329 6.2 57,140 55,165 1,975 3.5 Other Fringe Benefits 5,259 5,934 (0,675) (12.8) 56,280 56,193 0,088 0.2 GASB Account - - - - - - - - Reimbursable Overhead - - - - - - - - Total Labor Expenditures $55,561 $73,903 ($18,342) (33.0) $603,308 $582,986 $20,322 3.4 Non-Labor: Electric Power $0,154 $0,225 ($0,071) (45.9) $1,979 2,276 ($0,296) (15.0) Fuel 3,185 3,816 (0,630) (19.8) 37,921 39,523 (1,602) (4.2) Fuel 1,045 - 1,045 100.0 6,269 - 6,269 100.0 Insurance 4,361 1,643 2,718 62.3 33,517 24,633 8,884 26.5 Claims 4,517 2,692 1,826 40.4 42,229 28,780 13,449 31.8 Maintenance and Other Operating Contracts 9,228 1,990 7,237 78.4 68,765 21,237 47,528 69.1 Professional Service Contracts 7,240 2,414 4,826 66.7 57,842 32,932 24,910 43.1 Materials & Supplies 0,558 (0,057) 0,615 * 4,995 3,845 1,150 23.0 Other Business Expenses Total Non-Labor Expenditures $30,287 $12,722 $17,565 58.0 $253,517 $153,225 $100,291 39.6 Total Expenditures $85,848 $86,625 ($0,777) (0.9) $856,825 $736,212 $120,613 14.1 Operating Cash Surplus/(Deficit) ($70,596) ($71,256) ($0,659) (0.9) ($624,931) ($522,280) $102,651 16.4
+```
+[p046_c0004] NOTE: Totals may not add due to rounding
+
+## Page 47
+
+### [p047_c0001] TABLE 5
+### [p047_c0002] MTA BUS COMPANY July Financial Plan - 2022 Mid Year Forecast EXPLANATION OF VARIANCES BETWEEN MID YEAR FORECAST AND ACTUAL RESULTS - CASH ($ in millions)
+[p047_c0003]
+
+```text
+Operating Receipts or Disbursements November 2022 Year-To-Date Favorable (Unfavorable) Variance Reason for Variance Favorable (Unfavorable) Variance Reason for Variance $ % $ % Operating Receipts Farebox Revenue $ 2,296 18.4 Mainly due to higher ridership and higher average fare $ 13,225 9.8 Mainly due to higher ridership and higher average fare Other Operating Revenue (1,839) (86.4) Primarily due to timing of student reimbursement, lower advertising revenue, Other Contract Services and recoveries from Other Insurance (30,017) (33.3) Primarily due to timing of student reimbursement, lower advertising revenue, Other Contract Services and recoveries from Other Insurance Capital and Other Reimbursements (0,338) (52.4) Mainly due to timing of reimbursement (1,171) (18.5) Mainly due to timing of reimbursement Total Receipts $ 0.118 0.8 $ (17,962) (7.7) Payroll $ (7,681) (30.8) Primarily due to timing of RWA payments and partially offset by vacancies $ 7,848 2.8 Primarily due to vacancies partially offset by RWA timing of payments Overtime 0.745 8.7 Primarily lower unscheduled overtime, COVID-19 related cleaning, and programmatic maintenance partially offset by lower availability and higher vacancies coverage 5,321 5.9 Primarily lower unscheduled overtime, COVID-19 related cleaning, and programmatic maintenance partially offset by lower availability and higher vacancies coverage Health and Welfare (including OPEB) (11,061) (96.6) Primarily due to the timing of medical & hospitalization payment and OPEB 5,090 4.2 Primarily due to lower dental expenses, rebate in prescription drugs expenses, timing of medical and hospitalization partially offset by higher life insurance expenses and timing of H&W reimbursable expenses Pension 0.329 6.2 Timing of expenses 1,975 3.5 Timing of expenses Other Fringe Benefits (0.675) (12.8) Primarily due to timing of RWA payments and partially offset by vacancies 0.088 0.2 (a) Electric Power (0.071) (45.9) (a) (0.296) (15.0) Higher expenses Fuel (0.630) (19.8) (a) (1.602) (4.2) Primarily due to higher fuel price partially offset by the receipt of the CNG excise tax refund Insurance 1.045 100.0 Timing of payments 6,269 100.0 Timing of payments Claims 2.718 62.3 Timing of expenses 8,884 26.5 Timing of expenses Maintenance and Other Operating Contracts 1,826 40.4 Mainly due to the timing of expenses for facility maintenance, bus technology, Shop Program, COVID-19 expenses, and vehicle purchases partially offset by higher vehicle rentals and tols, security and surveillance equipment, bus transfer services and recycling 13,449 31.8 Mainly due to the timing of expenses for facility maintenance, bus technology, Shop Program, COVID-19 expenses, and vehicle purchases partially offset by higher vehicle rentals and tols, security and surveillance equipment, bus transfer services and recycling Professional Service Contracts 7,237 78.4 Timing of interagency billing, bus technology, and service contracts 47,528 69.1 Timing of interagency billing, bus technology, and service contracts Materials & Supplies 4,826 66.7 Mainly due to lower usage of general maintenance material as well as timing of radio equipment maintenance/repairs, construction material, and COVID-19 related expenses partially offset by higher grease and oil lubrication expense and tool purchases 24,910 43.1 Mainly due to lower usage of general maintenance material as well as timing of radio equipment maintenance/repairs, construction material, and COVID-19 related expenses partially offset by higher grease and oil lubrication expense and tool purchases Other Business Expenditure 0.615 * Timing of expenses 1,150 23.0 Timing of expenses Total Expenditures $ (0.778) (0.9) $ 120,612 14.1 Net Cash Variance $ (0.659) (0.9) $ 102,651 16.4
+```
+[p047_c0004] _(a) - Variance less than 5%_
+
+## Page 48
+
+### [p048_c0001] TABLE 6
+### [p048_c0002] MTA BUS COMPANY July Financial Plan - 2022 Mid Year Forecast CASH CONVERSION (CASH FLOW ADJUSTMENTS) ($ in millions)
+[p048_c0003]
+
+```text
+November 2022 Year-To-Date Mid Year Forecast Actual Variance Favorable (Unfavorable) Mid Year Forecast Actual Variance Favorable (Unfavorable) Percent Percent Receipts Farebox Revenue $0.000 $0.769 $0.769 * $1.054 ($0.284) ($1.339) * Other Operating Revenue 0.177 (0.143) (0.320) * 72.465 47.367 (25.098) (34.6) Capital and Other Reimbursements 0.019 (0.297) (0.316) * (0.186) (0.666) (0.479) * Total Receipts $0.196 $0.328 $0.132 67.2 $73.333 $46.417 ($26.916) (36.7) Expenditures Labor: Payroll $2.402 ($6.228) ($8.631) * $9.930 $5.256 ($4.674) (47.1) Overtime 0.000 (0.000) (0.001) * (0.001) 0.001 0.001 * Health and Welfare 0.972 (12.494) (13.466) * (1.151) (4.757) (3.606) * OPEB Current Payment (0.249) 0.370 0.618 * (1.430) 0.368 1.798 * Pensions (0.147) (0.000) 0.147 100.0 (0.776) 1.000 1.776 * Other Fringe Benefits 1.716 4.828 3.112 * 12.510 6.605 (5.904) (47.2) GASB Account - - - - - - - - Reimbursable Overhead - - - - - (0.000) (0.000) - Total Labor Expenditures $4.694 ($13.525) ($18.219) * $19.082 $8.472 ($10.610) (55.6) Non-Labor: Electric Power $0.029 $0.000 ($0.029) (98.7) ($0.032) ($0.210) ($0.177) * Fuel 0.424 (0.232) (0.655) * (0.458) (2.887) (2.449) * Insurance (0.326) 0.450 0.776 * 0.311 4.991 4.680 * Claims 3.521 (1.634) (5.155) * 36.435 21.527 (14.908) (40.9) Maintenance and Other Operating Contracts (0.163) (0.485) (0.321) * (4.925) (3.365) 1.560 31.7 Professional Service Contracts (4.527) (0.420) 4.106 90.7 (30.087) 2.642 32.729 * Materials & Supplies (0.950) 0.971 1.921 * (4.676) 2.831 7.507 * Other Business Expenditures (0.094) 0.546 0.640 * (0.416) 0.809 1.225 * Total Non-Labor Expenditures ($2.085) ($0.803) $1.282 61.5 ($3.828) $26.339 $30.166 * Total Cash Conversion Adjustments before Non-Cash Liability Adjs. $2.806 ($14.000) ($16.805) * $88.587 $81.228 ($7.359) (8.3) Depreciation Adjustment GASB 75 OPEB Expense Adjustment $5.212 $4.296 ($0.916) (17.6) $50.846 $44.400 ($6.446) (12.7) GASB 68 Pension Adjustment 11.364 - (11.364) (100.0) 68.409 - (68.409) (100.0) Environmental Remediation 6.477 - (6.477) (100.0) 38.993 - (38.993) (100.0) Total Expenses/Expenditures 0.011 - (0.011) * (0.011) (1.674) (1.663) * Total Cash Conversion Adjustments $25.870 ($9.704) ($35.573) * $246.824 $123.954 ($122.870) (49.8) Total Cash Conversion Adjustments $25.870 ($9.704) ($35.573) * $246.824 $123.954 ($122.870) (49.8)
+```
+[p048_c0004] NOTE: Totals may not add due to rounding
+
+## Page 49
+
+### [p049_c0001] MTA BUS COMPANY July Financial Plan - 2022 Mid Year Forecast Ridership (Utilization) November 2022 (In millions)
+[p049_c0002]
+
+```text
+Month Year-To-Date Mid Year Forecast Actual Favorable/ (Unfavorable) Variance Percentage Mid Year Forecast Actual Favorable/ (Unfavorable) Variance Percentage Farebox Revenue Fixed Route $12,476 $14,003 $1,527 12.2% $134,234 $148,798 $14,565 10.9% Total Farebox Revenue $12,476 $14,003 $1,527 12.2% $134,234 $148,798 $14,565 10.9% Ridership Fixed Route 6,668 7,236 0,568 8.5% 71,006 75,959 4,953 7.0% Total Ridership 6,668 7,236 0,568 8.5% 71,006 75,959 4,953 7.0%
+```
+
+## Page 50
+
+### [p050_c0001] MTA BUS COMPANY JULY FINANCIAL PLAN - 2022 MID - YEAR FORECAT TOTAL POSITIONS BY FUNCTION AND DEPARTMENT NON-REIMBURSABLE / REIMBURSABLE AND FULL-TIME EQUIVALENTS NOVEMBER 2022
+[p050_c0002]
+
+```text
+FUNCTION/DEPARTMENT Mid - Year Forecast Actual Favorable (Unfavorable) Variance Explanation of Variances Administration Office of the EVP 3 3 - Human Resources 16 8 8 Office of Management and Budget 15 10 5 Material 15 9 6 Controller 18 16 2 Office of the President 4 - 4 System Safety Administration - - - Law 20 13 7 Labor Relations - - - Strategic Office 19 14 5 Non-Departmental 3 - 3 Total Administration 113 73 40 Vacancies Operations Buses 2,335 2,355 (20) Office of the Executive VP 5 1 4 Safety & Training 66 98 (32) Road Operations 133 126 7 Transportation Support 31 33 (2) Operations Planning 34 26 8 Revenue Control 6 6 - Total Operations 2,610 2,645 (35) Mainly Bus Operator in Training Maintenance Buses 724 690 34 Maintenance Support/CMF 339 196 143 Facilities 85 64 21 Supply Logistics 104 89 15 Total Maintenance 1,252 1,039 213 Vacancies Hourlies Capital Program Management 26 22 4 Total Engineering/Capital 26 22 4 Vacancies mainly Managers Security 13 11 2 Total Public Safety 13 11 2 Total Positions 4,014 3,790 224 Non-Reimbursable 3,976 3,755 221 Reimbursable 38 35 3 Total Full-Time 3,996 3,775 221 Total Full-Time Equivalents 18 15 3
+```
+
+## Page 51
+
+### [p051_c0001] MTA BUS COMPANY JULY FINANCIAL PLAN - 2022 MID - YEAR FORECAST TOTAL FULL - TIME AND FTE'S BY FUNCTION AND OCCUPATION NOVEMBER 2022
+[p051_c0002]
+
+```text
+FUNCTION/OCCUPATIONAL GROUP Mid-Year Forecast Actual Favorable (Unfavorable) Variance Explanation of Variances Administration Managers/Supervisors Professional, Technical, Clerical Operational Hourlies 47 63 3 26 47 - 21 16 3 Total Administration 113 73 40 Vacancies Operations Managers/Supervisors Professional, Technical, Clerical Operational Hourlies 318 45 2,247 313 35 2,297 5 10 (50) Total Operations 2,610 2,645 (35) Mainly Bus Operator in Training Maintenance Managers/Supervisors Professional, Technical, Clerical Operational Hourlies 248 38 966 218 30 791 30 8 175 Total Maintenance 1,252 1,039 213 Hourly Vacancies Engineering/Capital Managers/Supervisors Professional, Technical, Clerical Operational Hourlies 15 11 - 12 10 - 3 1 - Total Engineering/Capital 26 22 4 Vacancies mainly Managers Public Safety Managers/Supervisors Professional, Technical, Clerical Operational Hourlies 8 5 - 6 5 - 2 - - Total Public Safety 13 11 2 Total Baseline Positions Managers/Supervisors Professional, Technical, Clerical Operational Hourlies 636 162 3,216 575 127 3,088 61 35 128 Total Baseline Positions 4,014 3,790 224
+```
+
+## Page 52
+
+### [p052_c0001] MTA BUS COMPANY MID-YEAR FORECAST AND NOVEMBER FORECAST vs. ACTUAL RESULTS (NON-REIMBURSABLE) NOVEMBER 2022 YEAR-TO-DATE ($ in millions)
+[p052_c0002]
+
+```text
+November Year-to-Date Favorable(Unfavorable) Variance Mid-Year Forecast November Forecast Actual Mid-Year Forecast November Forecast $ $ $ $ $ % Total Revenue 152.0 169.6 161.7 9.6 6.3 (7.9) (4.7) Total Expenses before Non-Cash Liability Adjs 865.5 852.5 765.2 100.4 11.6 87.3 10.2 Depreciation 50.8 49.4 44.4 6.4 12.7 5.0 10.1 GASB75 OPEB Obligation 68.4 53.3 - 68.4 100.0 53.3 100.0 GASB 68 Pension Expense Adjustment 39.0 30.4 - 39.0 100.0 30.4 100.0 Environmental Remediation (0.0) (0.6) (1.7) 1.7 0.0 1.1 0.0 Total Expenses 1,023.8 985.1 807.9 215.9 21.1 177.2 18.0 Net Surplus/(Deficit) (871.8) (815.5) (646.2) 225.5 25.9 169.3 20.8
+```
+[p052_c0003] Note: Totals may not add due to rounding
+
+## Page 53
+
+### [p053_c0001] MTA BUS COMPANY EXPLANATION OF VARIANCES BETWEEN NOVEMBER FORECAST AND ACTUAL RESULTS NON-REIMBURSABLE NOVEMBER 2022 YEAR-TO-DATE ($ in millions)
+[p053_c0002]
+
+```text
+Favorable/(Unfavorable) Variance Explanation Variance Percent Total Revenue ($7.9) (4.7) Timing of Student fare as well as lower advertising revenue and recoveries from Other Insurance, partially offset by higher ridership and higher average fare. Total Expenses $177.2 18.0 Lower labor due to vacancies, lower non-labor due to lower usage of general maintenance material and construction material. Lower COVID-19 expenses, Shop Program, Bus Technology, and interagency billings and timing of GABS 75 OPEB Expenses Adjustment and GASB 68 Pension Adjustment.
+```
+[p053_c0003] NOTE: Mid-Year Forecast vs. Actual Variance explanations are provided in the monthly report to the Finance Committee
+[p053_c0004] (a) - Variance less than 5%
+
+## Page 54
+
+### [p054_c0001] MTA BUS COMPANY MID-YEAR FORECAST AND NOVEMBER FORECAST vs. ACTUAL RESULTS (NON-REIMBURSABLE) OCTOBER 2022 YEAR-TO-DATE ($ in millions)
+[p054_c0002]
+
+```text
+October Year-to-Date Favorable(Unfavorable) Variance Mid-Year Forecast November Forecast Actual Mid-Year Forecast November Forecast $ $ $ $ $ % Total Revenue 137.6 155.3 147.2 9.6 7.0 (8.0) (5.2) Total Expenses before Non-Cash Liability Adjs 777.7 740.1 696.9 80.8 10.4 43.2 5.8 Depreciation 45.6 42.6 40.1 5.5 12.1 2.5 5.9 GASB75 OPEB Obligation 57.0 26.7 - 57.0 100.0 26.7 100.0 GASB 68 Pension Expense Adjustment 32.5 15.2 - 32.5 100.0 15.2 100.0 Environmental Remediation (0.0) (1.1) (1.7) 1.7 0.0 0.6 0.0 Total Expenses 912.9 823.5 735.4 177.5 19.4 88.1 10.7 Net Surplus/(Deficit) (775.3) (668.2) (588.1) 187.2 24.1 80.1 12.0
+```
+[p054_c0003] Note: Totals may not add due to rounding
+
+## Page 55
+
+### [p055_c0001] MTA BUS COMPANY EXPLANATION OF VARIANCES BETWEEN NOVEMBER FORECAST AND ACTUAL RESULTS NON-REIMBURSABLE OCTOBER 2022 YEAR-TO-DATE ($ in millions)
+[p055_c0002]
+
+```text
+Favorable/(Unfavorable) Variance Explanation Variance Percent Total Revenue ($8.0) (5.2) Timing of Student fare as well as lower advertising revenue and recoveries from Other Insurance, partially offset by higher ridership and higher average fare. Total Expenses $88.1 10.7 Lower labor expenses due to vacancies, lower non-labor due to lower usage of general maintenance material and construction material. Lower COVID-19 expenses, Shop Program, Bus Technology, and interagency billings and timing of GABS 75 OPEB Expenses Adjustment and GASB 68 Pension Adjustment.
+```
+[p055_c0003] NOTE: Mid-Year Forecast vs. Actual Variance explanations are provided in the monthly report to the Finance Committee
+[p055_c0004] (a) - Variance less than 5%

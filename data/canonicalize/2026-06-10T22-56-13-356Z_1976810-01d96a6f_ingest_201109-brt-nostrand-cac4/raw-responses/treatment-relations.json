@@ -1,0 +1,165 @@
+{
+  "run_id": "2026-06-10T22-56-13-356Z_1976810-01d96a6f_ingest_201109-brt-nostrand-cac4",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T01:45:54.054Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-bus-lanes-nostrand-to-project",
+        "local_observation_id": "treatment_bus_lanes_nostrand",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_bus-lanes-nostrand",
+            "description": "Dedicated bus lanes are a treatment of the Nostrand SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_nostrand_cac4",
+                "block_id": "p006_c0003",
+                "source_quote": "Parking in midday, nights, and weekends; Travel Lane in AM and PM peak periods Dedicated Bus Lane & Right Turn Lane: Offset bus lane allows buses to move quickly and preserves parking Travel Lane Parking along the curb except at bus stops"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p006_c0003 appears under 'Nostrand SBS Project Features' heading on page 6, explicitly stating the dedicated bus lanes are a feature of the Nostrand SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_nostrand_cac4",
+            "block_id": "p006_c0003",
+            "source_quote": "Parking in midday, nights, and weekends; Travel Lane in AM and PM peak periods Dedicated Bus Lane & Right Turn Lane: Offset bus lane allows buses to move quickly and preserves parking Travel Lane Parking along the curb except at bus stops"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-bulbs-to-project",
+        "local_observation_id": "treatment_bus_bulbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_bus-bulbs_3",
+            "description": "Bus bulbs at SBS stations are a treatment of the Nostrand SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_nostrand_cac4",
+                "block_id": "p007_c0006",
+                "source_quote": "Bus Bulb: Sidewalks at SBS stations will extend out to the bus lane. Buses will not need to pull in and out of traffic. Higher curbs on the SBS platform will allow for easier boarding."
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p007_c0006 is under 'Nostrand SBS Project Features' and 'Empire Blvd SBS Station' headings on page 7, explicitly identifying bus bulbs as a station feature of the Nostrand SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_nostrand_cac4",
+            "block_id": "p007_c0006",
+            "source_quote": "Bus Bulb: Sidewalks at SBS stations will extend out to the bus lane. Buses will not need to pull in and out of traffic. Higher curbs on the SBS platform will allow for easier boarding."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-signal-priority-to-project",
+        "local_observation_id": "treatment_bus_signal_priority",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_bus-signal-priority",
+            "description": "Bus signal priority is an SBS feature of the Nostrand SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_nostrand_cac4",
+                "block_id": "p004_c0003",
+                "source_quote": "Bus Signal Priority"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p004_c0003 appears under 'SBS Features' heading on page 4 of the Nostrand SBS CAC4 presentation, listing bus signal priority alongside other SBS project features. The presentation context is explicitly the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_nostrand_cac4",
+            "block_id": "p004_c0003",
+            "source_quote": "Bus Signal Priority"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-off-board-fare-to-project",
+        "local_observation_id": "treatment_off_board_fare_payment",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_off-board-fare-payment_4",
+            "description": "Off-board fare payment is a treatment of the Nostrand SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_nostrand_cac4",
+                "block_id": "p004_c0007",
+                "source_quote": "Pre-Payment"
+              },
+              {
+                "source_id": "201109_brt_nostrand_cac4",
+                "block_id": "p007_c0005",
+                "source_quote": "Fare Collection Machines"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p004_c0007 lists 'Pre-Payment' under 'SBS Features' on page 4, and block p007_c0005 lists 'Fare Collection Machines' under 'Empire Blvd SBS Station' within 'Nostrand SBS Project Features' on page 7. Both explicitly tie off-board fare payment to the Nostrand SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_nostrand_cac4",
+            "block_id": "p004_c0007",
+            "source_quote": "Pre-Payment"
+          },
+          {
+            "source_id": "201109_brt_nostrand_cac4",
+            "block_id": "p007_c0005",
+            "source_quote": "Fare Collection Machines"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-sbs-stations-to-project",
+        "local_observation_id": "treatment_sbs_stations_and_shelters",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_sbs-stations-and-shelters",
+            "description": "SBS stations with shelters, fare machines, and bus bulbs are treatments of the Nostrand SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_nostrand_cac4",
+                "block_id": "p007_c0001",
+                "source_quote": "Nostrand SBS Project Features"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p007_c0001 is the section header 'Nostrand SBS Project Features' on page 7, under which the Empire Blvd SBS Station features (New Shelter, Fare Collection Machines, Bus Bulb) are listed, explicitly identifying SBS stations as project treatments.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_nostrand_cac4",
+            "block_id": "p007_c0001",
+            "source_quote": "Nostrand SBS Project Features"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-43-19-855Z_2111393-bb5d20c4_canonicalize_2026-06-10t22-56-13-356z-1976810-01d96a6f-ingest-201109-brt-nostrand-cac4-treatment-relations"
+}

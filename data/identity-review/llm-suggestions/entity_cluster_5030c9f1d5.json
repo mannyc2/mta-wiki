@@ -1,0 +1,46 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:34:11.398Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_5030c9f1d5.md",
+  "cluster_id": "entity_cluster_5030c9f1d5",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_5030c9f1d5",
+    "kind": "entity",
+    "merge_groups": [
+      [
+        "entity_mta-real-estate-tod",
+        "entity_mta-transit-oriented-development"
+      ]
+    ],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "entity_mta-real-estate-tod",
+          "entity_mta-tod-meeting-doc-160301"
+        ],
+        "reason": "Test 1 contradiction: entity_type differs (department vs program). Strong identity field conflict forces do_not_merge regardless of name/alias overlap."
+      },
+      {
+        "record_ids": [
+          "entity_mta-tod-meeting-doc-160301",
+          "entity_mta-transit-oriented-development"
+        ],
+        "reason": "Test 1 contradiction: entity_type differs (program vs department). Strong identity field conflict forces do_not_merge."
+      }
+    ],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "entity_mta-real-estate-tod and entity_mta-transit-oriented-development share entity_type 'department', same acronym TOD, and near-identical descriptions; their name difference (with/without 'MTA') is a source-local abbreviation, satisfying test 2. entity_mta-tod-meeting-doc-160301 has entity_type 'program', a strong identity field that contradicts the other two records, so test 1 forces do_not_merge for both pairs. The payload identity fields are decisive; no ambiguous context is needed."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-33-48-216Z_1282984-6d5d8f44_identity-review-run_entity-cluster-5030c9f1d5",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-33-48-216Z_2026-06-23T14-33-48-216Z_1282984-6d5d8f44_identity-review-run_entity-cluster-5030c9f1d5.jsonl"
+}

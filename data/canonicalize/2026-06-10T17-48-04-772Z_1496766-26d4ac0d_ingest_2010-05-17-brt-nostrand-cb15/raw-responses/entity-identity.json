@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T17-48-04-772Z_1496766-26d4ac0d_ingest_2010-05-17-brt-nostrand-cb15",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-10T19:40:10.074Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "cb15-brooklyn-new",
+        "local_observation_id": "entity_community_board_15_brooklyn",
+        "decision": "new",
+        "rationale": "Observation's base_record_id (entity_community-board-15-brooklyn) already matches an existing registry record with identical entity_name, entity_type, source_id, and description. The observation resolves to its own canonical record — no different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_17_brt_nostrand_cb15",
+            "block_id": "p001_c0002",
+            "source_quote": "Community Board 15 - Nostrand Ave / Rogers Ave Select Bus Service Community Board 15"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-39-53-264Z_1650285-8475c60b_canonicalize_2026-06-10t17-48-04-772z-1496766-26d4ac0d-ingest-2010-05-17-brt-nostrand-cb15-entity-identity"
+}

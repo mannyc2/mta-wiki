@@ -1,0 +1,1572 @@
+{
+  "campaign_id": "validation-2026-06",
+  "wave": 22,
+  "generated_at": "2026-06-22T18:38:15.447Z",
+  "sources_selected": [
+    "meeting_doc_178481",
+    "meeting_doc_179626",
+    "meeting_doc_179676",
+    "meeting_doc_179691",
+    "meeting_doc_186701",
+    "meeting_doc_186736",
+    "meeting_doc_186841",
+    "meeting_doc_186956",
+    "meeting_doc_186961",
+    "meeting_doc_186971",
+    "meeting_doc_187096",
+    "meeting_doc_189756",
+    "meeting_doc_189786",
+    "meeting_doc_189811",
+    "meeting_doc_189891",
+    "meeting_doc_189911",
+    "meeting_doc_189941",
+    "meeting_doc_189981",
+    "meeting_doc_193926",
+    "meeting_doc_193931",
+    "meeting_doc_193966",
+    "meeting_doc_196826",
+    "meeting_doc_197456",
+    "meeting_doc_197596",
+    "meeting_doc_199001",
+    "meeting_doc_30186",
+    "meeting_doc_37056",
+    "meeting_doc_37071",
+    "meeting_doc_37076",
+    "meeting_doc_37081",
+    "meeting_doc_39661",
+    "meeting_doc_39936",
+    "meeting_doc_40141",
+    "meeting_doc_44266",
+    "meeting_doc_44276",
+    "meeting_doc_44346",
+    "meeting_doc_44471",
+    "meeting_doc_44476",
+    "meeting_doc_52706",
+    "meeting_doc_52711",
+    "meeting_doc_52716",
+    "meeting_doc_52726",
+    "meeting_doc_52816",
+    "meeting_doc_52921",
+    "meeting_doc_52976",
+    "meeting_doc_53026",
+    "meeting_doc_53031",
+    "meeting_doc_53036",
+    "meeting_doc_53041",
+    "meeting_doc_58606",
+    "meeting_doc_58621",
+    "meeting_doc_58636",
+    "meeting_doc_58796",
+    "meeting_doc_58801",
+    "meeting_doc_59166",
+    "meeting_doc_59206",
+    "meeting_doc_59341",
+    "meeting_doc_59346",
+    "meeting_doc_63996",
+    "meeting_doc_64001",
+    "meeting_doc_64006",
+    "meeting_doc_64011",
+    "meeting_doc_64016",
+    "meeting_doc_64066",
+    "meeting_doc_64076",
+    "meeting_doc_64096",
+    "meeting_doc_64111",
+    "meeting_doc_64116",
+    "meeting_doc_65086",
+    "meeting_doc_65171",
+    "meeting_doc_65181",
+    "meeting_doc_65186",
+    "meeting_doc_68111",
+    "meeting_doc_68116",
+    "meeting_doc_68121",
+    "meeting_doc_68126",
+    "meeting_doc_68191",
+    "meeting_doc_68196",
+    "meeting_doc_68201",
+    "meeting_doc_68221",
+    "meeting_doc_68226",
+    "meeting_doc_68231",
+    "meeting_doc_68236",
+    "meeting_doc_68251",
+    "meeting_doc_68306",
+    "meeting_doc_68311",
+    "meeting_doc_68326",
+    "meeting_doc_68331",
+    "meeting_doc_68336",
+    "meeting_doc_68641",
+    "meeting_doc_68646",
+    "meeting_doc_68651",
+    "meeting_doc_71956",
+    "meeting_doc_71961",
+    "meeting_doc_71966",
+    "meeting_doc_71976",
+    "meeting_doc_72001",
+    "meeting_doc_72006",
+    "meeting_doc_72526",
+    "meeting_doc_72531",
+    "meeting_doc_72536",
+    "meeting_doc_72541",
+    "meeting_doc_72546",
+    "meeting_doc_72551",
+    "meeting_doc_72576",
+    "meeting_doc_72581",
+    "meeting_doc_72936",
+    "meeting_doc_73021",
+    "meeting_doc_76476",
+    "meeting_doc_76481",
+    "meeting_doc_76486",
+    "meeting_doc_76706",
+    "meeting_doc_76731",
+    "meeting_doc_76736",
+    "meeting_doc_76746",
+    "meeting_doc_76751",
+    "meeting_doc_76796",
+    "meeting_doc_76841",
+    "meeting_doc_76891",
+    "meeting_doc_77271",
+    "meeting_doc_77276",
+    "meeting_doc_77281",
+    "meeting_doc_77286",
+    "meeting_doc_77291",
+    "meeting_doc_79026",
+    "meeting_doc_79031",
+    "meeting_doc_79036",
+    "meeting_doc_79041",
+    "meeting_doc_79046",
+    "meeting_doc_79321",
+    "meeting_doc_79326",
+    "meeting_doc_79331",
+    "meeting_doc_79336",
+    "meeting_doc_79341",
+    "meeting_doc_79351",
+    "meeting_doc_79356",
+    "meeting_doc_79461",
+    "meeting_doc_79466",
+    "meeting_doc_79491",
+    "meeting_doc_79496",
+    "meeting_doc_79786",
+    "meeting_doc_79791",
+    "meeting_doc_79796",
+    "meeting_doc_85476",
+    "meeting_doc_85486",
+    "meeting_doc_85491",
+    "meeting_doc_85496",
+    "meeting_doc_85751",
+    "meeting_doc_85791",
+    "meeting_doc_85796",
+    "meeting_doc_85801",
+    "meeting_doc_85806",
+    "meeting_doc_85811",
+    "meeting_doc_85816",
+    "meeting_doc_86011",
+    "meeting_doc_86466",
+    "meeting_doc_86471",
+    "meeting_doc_87421",
+    "meeting_doc_87426",
+    "meeting_doc_87436",
+    "meeting_doc_87451",
+    "meeting_doc_87646",
+    "meeting_doc_87681",
+    "meeting_doc_87686",
+    "meeting_doc_87691",
+    "meeting_doc_87696",
+    "meeting_doc_87716",
+    "meeting_doc_87721",
+    "meeting_doc_87836",
+    "meeting_doc_87951",
+    "meeting_doc_87956",
+    "meeting_doc_87961",
+    "meeting_doc_89551",
+    "meeting_doc_89556",
+    "meeting_doc_89561",
+    "meeting_doc_89571",
+    "meeting_doc_89776",
+    "meeting_doc_89781",
+    "meeting_doc_89791",
+    "meeting_doc_89796",
+    "meeting_doc_89806",
+    "meeting_doc_89811",
+    "meeting_doc_89816",
+    "meeting_doc_89896",
+    "meeting_doc_91296",
+    "meeting_doc_91301",
+    "meeting_doc_91306",
+    "meeting_doc_91311",
+    "meeting_doc_91316",
+    "meeting_doc_91561",
+    "meeting_doc_91566",
+    "meeting_doc_91571",
+    "meeting_doc_91576",
+    "meeting_doc_91581",
+    "meeting_doc_91586",
+    "meeting_doc_91591",
+    "meeting_doc_91596",
+    "meeting_doc_91601",
+    "meeting_doc_91606",
+    "meeting_doc_91616",
+    "meeting_doc_91636",
+    "meeting_doc_91641",
+    "meeting_doc_91706",
+    "meeting_doc_91711",
+    "meeting_doc_91716",
+    "meeting_doc_91721",
+    "meeting_doc_91741",
+    "meeting_doc_91776",
+    "meeting_doc_91781",
+    "meeting_doc_91791",
+    "meeting_doc_91801",
+    "meeting_doc_92011",
+    "meeting_doc_92016",
+    "meeting_doc_92021",
+    "meeting_doc_94866",
+    "meeting_doc_94871",
+    "meeting_doc_94876",
+    "meeting_doc_94991",
+    "meeting_doc_94996",
+    "meeting_doc_95001",
+    "meeting_doc_95066",
+    "meeting_doc_95156",
+    "meeting_doc_95161",
+    "meeting_doc_95166",
+    "meeting_doc_95171",
+    "meeting_doc_95176",
+    "meeting_doc_95181",
+    "meeting_doc_95186",
+    "meeting_doc_95191",
+    "meeting_doc_95196",
+    "meeting_doc_95201",
+    "meeting_doc_95206",
+    "meeting_doc_95216",
+    "meeting_doc_95221",
+    "meeting_doc_95226",
+    "meeting_doc_95231",
+    "meeting_doc_95236",
+    "meeting_doc_95241",
+    "meeting_doc_95246",
+    "meeting_doc_95251",
+    "meeting_doc_95256",
+    "meeting_doc_95286",
+    "meeting_doc_95291",
+    "meeting_doc_95296",
+    "meeting_doc_95301",
+    "meeting_doc_95306",
+    "meeting_doc_95311",
+    "meeting_doc_95316",
+    "meeting_doc_95321",
+    "meeting_doc_95336",
+    "meeting_doc_95361",
+    "meeting_doc_95491",
+    "meeting_doc_95496",
+    "meeting_doc_95536",
+    "meeting_doc_95616",
+    "meeting_doc_98011",
+    "meeting_doc_98016",
+    "meeting_doc_98021",
+    "meeting_doc_98116",
+    "meeting_doc_98206",
+    "meeting_doc_98211",
+    "meeting_doc_98226",
+    "meeting_doc_98231",
+    "meeting_doc_98236",
+    "meeting_doc_98241",
+    "meeting_doc_98246",
+    "meeting_doc_98251",
+    "meeting_doc_98256",
+    "meeting_doc_98261",
+    "meeting_doc_98266",
+    "meeting_doc_98276",
+    "meeting_doc_98291",
+    "meeting_doc_98296",
+    "meeting_doc_98301",
+    "meeting_doc_98306",
+    "meeting_doc_98311",
+    "meeting_doc_98316",
+    "meeting_doc_98321",
+    "meeting_doc_98326",
+    "meeting_doc_98451",
+    "meeting_doc_98551",
+    "meeting_doc_98651",
+    "meeting_doc_98656",
+    "meeting_doc_98661",
+    "nostrandave_map",
+    "nyct_itsp_solicitation_notice_2026",
+    "rockaway_beach_blvd_jun2019",
+    "routes_woodhaven_corridor_map_lg",
+    "south_brooklyn_whh_fraser_square",
+    "tremont_ave_bus_priority_cab1_dec2022",
+    "tremont_ave_bus_priority_cab4_mar2025",
+    "tremont_ave_bus_priority_cb5_jun2024",
+    "tremont_ave_bus_priority_cb5_mar2024",
+    "tremont_ave_bus_priority_cb5_nov2024",
+    "tremont_ave_bus_priority_cb6_feb2024",
+    "tremont_ave_bus_priority_cb6_feb2025",
+    "tremont_ave_bus_priority_cb6_jul2024",
+    "tremont_ave_bus_priority_cb6_jun2024",
+    "tremont_ave_bus_priority_cb6_nov2024",
+    "tremont_ave_busway_es",
+    "utica_ave_b46_sbs_open_house",
+    "victory_blvd_bay_st_little_clove_rd_may2025",
+    "victory_blvd_bay_st_wild_ave_winter2025",
+    "victory_blvd_wild_ave_willowbrook_ave_cb2_jun2025",
+    "webster_ave_e174_st_e176_st_may2019",
+    "webster_cross_bronx_cb5_may2019",
+    "webster_cross_bronx_cb6_may2019"
+  ],
+  "ingested": [],
+  "skipped_already_done": [],
+  "quarantined": [
+    {
+      "source_id": "meeting_doc_178481",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_179626",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_179676",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_179691",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_186701",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_186736",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_186841",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_186956",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_186961",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_186971",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_187096",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_189756",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_189786",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_189811",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_189891",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_189911",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_189941",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_189981",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_193926",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_193931",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_193966",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_196826",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_197456",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_197596",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_199001",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_30186",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_37056",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_37071",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_37076",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_37081",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_39661",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_39936",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_40141",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_44266",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_44276",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_44346",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_44471",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_44476",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_52706",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_52711",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_52716",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_52726",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_52816",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_52921",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_52976",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_53026",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_53031",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_53036",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_53041",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_58606",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_58621",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_58636",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_58796",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_58801",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_59166",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_59206",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_59341",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_59346",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_63996",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_64001",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_64006",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_64011",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_64016",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_64066",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_64076",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_64096",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_64111",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_64116",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_65086",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_65171",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_65181",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_65186",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_68111",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_68116",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_68121",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_68126",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_68191",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_68196",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_68201",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_68221",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_68226",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_68231",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_68236",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_68251",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_68306",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_68311",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_68326",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_68331",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_68336",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_68641",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_68646",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_68651",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_71956",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_71961",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_71966",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_71976",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_72001",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_72006",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_72526",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_72531",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_72536",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_72541",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_72546",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_72551",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_72576",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_72581",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_72936",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_73021",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_76476",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_76481",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_76486",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_76706",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_76731",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_76736",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_76746",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_76751",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_76796",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_76841",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_76891",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_77271",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_77276",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_77281",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_77286",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_77291",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_79026",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_79031",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_79036",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_79041",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_79046",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_79321",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_79326",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_79331",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_79336",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_79341",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_79351",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_79356",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_79461",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_79466",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_79491",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_79496",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_79786",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_79791",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_79796",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_85476",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_85486",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_85491",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_85496",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_85751",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_85791",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_85796",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_85801",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_85806",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_85811",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_85816",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_86011",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_86466",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_86471",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_87421",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_87426",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_87436",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_87451",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_87646",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_87681",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_87686",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_87691",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_87696",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_87716",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_87721",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_87836",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_87951",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_87956",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_87961",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_89551",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_89556",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_89561",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_89571",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_89776",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_89781",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_89791",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_89796",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_89806",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_89811",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_89816",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_89896",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91296",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91301",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91306",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91311",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91316",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91561",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91566",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91571",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91576",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91581",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91586",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91591",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91596",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91601",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91606",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91616",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91636",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91641",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91706",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91711",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91716",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91721",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91741",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91776",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91781",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91791",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_91801",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_92011",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_92016",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_92021",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_94866",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_94871",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_94876",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_94991",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_94996",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95001",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95066",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95156",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95161",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95166",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95171",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95176",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95181",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95186",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95191",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95196",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95201",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95206",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95216",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95221",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95226",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95231",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95236",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95241",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95246",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95251",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95256",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95286",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95291",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95296",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95301",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95306",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95311",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95316",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95321",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95336",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95361",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95491",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95496",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95536",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_95616",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98011",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98016",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98021",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98116",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98206",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98211",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98226",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98231",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98236",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98241",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98246",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98251",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98256",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98261",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98266",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98276",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98291",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98296",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98301",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98306",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98311",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98316",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98321",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98326",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98451",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98551",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98651",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98656",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_98661",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "nostrandave_map",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "nyct_itsp_solicitation_notice_2026",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "rockaway_beach_blvd_jun2019",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "routes_woodhaven_corridor_map_lg",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "south_brooklyn_whh_fraser_square",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cab1_dec2022",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cab4_mar2025",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cb5_jun2024",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cb5_mar2024",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cb5_nov2024",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cb6_feb2024",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cb6_feb2025",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cb6_jul2024",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cb6_jun2024",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "tremont_ave_bus_priority_cb6_nov2024",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "tremont_ave_busway_es",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "utica_ave_b46_sbs_open_house",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "victory_blvd_bay_st_little_clove_rd_may2025",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "victory_blvd_bay_st_wild_ave_winter2025",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "victory_blvd_wild_ave_willowbrook_ave_cb2_jun2025",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "webster_ave_e174_st_e176_st_may2019",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "webster_cross_bronx_cb5_may2019",
+      "reason": "402 status code (no body)"
+    },
+    {
+      "source_id": "webster_cross_bronx_cb6_may2019",
+      "reason": "402 status code (no body)"
+    }
+  ],
+  "run_ids": [],
+  "telemetry": {
+    "concurrency": 40,
+    "timeout_min": 30,
+    "wall_clock_s": 226,
+    "rate_limit": [
+      {
+        "provider": "pioneer",
+        "rate_per_minute": 170,
+        "requests": 0,
+        "requests_per_minute_observed": 0,
+        "rate_limited_429": 0,
+        "circuit_breaker_trips": 0,
+        "wait_ms_p50": 0,
+        "wait_ms_p95": 13962,
+        "wait_ms_max": 14014,
+        "last_rate_limit_headers": {}
+      }
+    ],
+    "materialize": {
+      "completed_ingests": 0,
+      "runs": 1,
+      "total_seconds": 49,
+      "every_k": 100000
+    }
+  }
+}

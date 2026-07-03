@@ -1,0 +1,540 @@
+{
+  "run_id": "2026-06-10T23-03-01-256Z_1976810-14f50da6_ingest_2012-04-20-brt-lga-workshop-summary",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T02:46:00.704Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "rel-001-skip-rider-pref-60min-1seat",
+        "local_observation_id": "metric_rider_pref_60min_1seat_16",
+        "decision": "skip",
+        "rationale": "Evidence block p005_c0006 is a table of preference votes that does not name the LGA AA project, route, or event explicitly. Cannot propose relation from co-occurrence alone.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0006",
+            "source_quote": "Preference Number of votes 60 Min., 1 Seat Ride 16"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-002-skip-rider-pref-45min-1transfer",
+        "local_observation_id": "metric_rider_pref_45min_1transfer_3",
+        "decision": "skip",
+        "rationale": "Evidence block p005_c0006 does not name the project, route, or event.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0006",
+            "source_quote": "45 Min., with 1 Transfer 3"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-003-skip-rider-pref-express-bus",
+        "local_observation_id": "metric_rider_pref_express_bus_16",
+        "decision": "skip",
+        "rationale": "Evidence block p005_c0006 does not name the project, route, or event.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0006",
+            "source_quote": "Express Bus 16"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-004-skip-rider-pref-limited-stops",
+        "local_observation_id": "metric_rider_pref_limited_stops_3",
+        "decision": "skip",
+        "rationale": "Evidence block p005_c0006 does not name the project, route, or event.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0006",
+            "source_quote": "Limited Stops 3"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-005-skip-rider-pref-highway",
+        "local_observation_id": "metric_rider_pref_highway_15",
+        "decision": "skip",
+        "rationale": "Evidence block p005_c0006 does not name the project, route, or event.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0006",
+            "source_quote": "Highway 15"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-006-skip-rider-pref-local-streets",
+        "local_observation_id": "metric_rider_pref_local_streets_2",
+        "decision": "skip",
+        "rationale": "Evidence block p005_c0006 does not name the project, route, or event.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0006",
+            "source_quote": "Local Streets 2"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-007-skip-rider-pref-luggage-racks",
+        "local_observation_id": "metric_rider_pref_luggage_racks_9",
+        "decision": "skip",
+        "rationale": "Evidence block p005_c0006 does not name the project, route, or event.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0006",
+            "source_quote": "Luggage Racks 9"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-008-skip-rider-pref-passage-capacity",
+        "local_observation_id": "metric_rider_pref_passage_capacity_6",
+        "decision": "skip",
+        "rationale": "Evidence block p005_c0006 does not name the project, route, or event.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0006",
+            "source_quote": "Passage Capacity 6"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-009-skip-rider-pref-45min-mixed-traffic",
+        "local_observation_id": "metric_rider_pref_45min_mixed_traffic_1",
+        "decision": "skip",
+        "rationale": "Evidence block p005_c0006 does not name the project, route, or event.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0006",
+            "source_quote": "45 minute ride in mixed traffic 1"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-010-skip-rider-pref-35min-dedicated-lane",
+        "local_observation_id": "metric_rider_pref_35min_dedicated_lane_16",
+        "decision": "skip",
+        "rationale": "Evidence block p005_c0006 does not name the project, route, or event.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0006",
+            "source_quote": "35 minute ride in dedicated lane 16"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-011-skip-rider-pref-nopref-60min-1seat",
+        "local_observation_id": "metric_rider_pref_nopref_60min_1seat_0",
+        "decision": "skip",
+        "rationale": "Evidence block p005_c0006 does not name the project, route, or event.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0006",
+            "source_quote": "No Preference or Equally Support 0"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-012-skip-rider-pref-nopref-express-limited",
+        "local_observation_id": "metric_rider_pref_nopref_express_limited_1",
+        "decision": "skip",
+        "rationale": "Evidence block p005_c0006 does not name the project, route, or event.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0006",
+            "source_quote": "No Preference or Equally Support 1"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-013-skip-rider-pref-nopref-highway-local",
+        "local_observation_id": "metric_rider_pref_nopref_highway_local_2",
+        "decision": "skip",
+        "rationale": "Evidence block p005_c0006 does not name the project, route, or event.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0006",
+            "source_quote": "No Preference or Equally Support 2"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-014-skip-rider-pref-nopref-luggage-passage",
+        "local_observation_id": "metric_rider_pref_nopref_luggage_passage_3",
+        "decision": "skip",
+        "rationale": "Evidence block p005_c0006 does not name the project, route, or event.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0006",
+            "source_quote": "No Preference or Equally Support 3"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-015-skip-rider-pref-nopref-45mix-35ded",
+        "local_observation_id": "metric_rider_pref_nopref_45mix_35ded_2",
+        "decision": "skip",
+        "rationale": "Evidence block p005_c0006 does not name the project, route, or event.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p005_c0006",
+            "source_quote": "No Preference or Equally Support 2"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-016-skip-survey-18-returned",
+        "local_observation_id": "metric_survey_18_returned",
+        "decision": "skip",
+        "rationale": "Evidence block p006_c0008 mentions 'the workshop' but does not explicitly name the LaGuardia Airport Access Alternatives Analysis project. Cannot propose relation from co-occurrence alone.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p006_c0008",
+            "source_quote": "A total of 18 surveys were returned at the completion of the workshop."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-017-link-23-participants",
+        "local_observation_id": "metric_workshop_23_participants",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "metric_workshop-23-participants",
+            "description": "23 participants attended the second public meeting of the LaGuardia Airport Access Alternatives Analysis",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_20_brt_lga_workshop_summary",
+                "block_id": "p001_c0005",
+                "source_quote": "The second public meeting for the LaGuardia Airport Access Alternatives Analysis was held on Wednesday, November 2, 2011. The meeting was held in the workshop format with 23 participants spread over four small groups."
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "event_lga-aa-public-meeting-2-20111102",
+            "object_id": "metric_workshop-23-participants",
+            "description": "The Public Meeting #2 had 23 participants",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_20_brt_lga_workshop_summary",
+                "block_id": "p001_c0005",
+                "source_quote": "The second public meeting for the LaGuardia Airport Access Alternatives Analysis was held on Wednesday, November 2, 2011. The meeting was held in the workshop format with 23 participants spread over four small groups."
+              }
+            ]
+          }
+        ],
+        "rationale": "p001_c0005 explicitly names both 'LaGuardia Airport Access Alternatives Analysis' (the project) and 'second public meeting... November 2, 2011' (the event), making this the clearest metric linkage in the packet.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p001_c0005",
+            "source_quote": "The second public meeting for the LaGuardia Airport Access Alternatives Analysis was held on Wednesday, November 2, 2011. The meeting was held in the workshop format with 23 participants spread over four small groups."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-018-link-brt-locally-preferred",
+        "local_observation_id": "claim_brt_locally_preferred_mode",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "claim_brt-locally-preferred-mode",
+            "description": "BRT was selected as the locally preferred mode for the LaGuardia Airport Access Alternatives Analysis",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_20_brt_lga_workshop_summary",
+                "block_id": "p001_c0013",
+                "source_quote": "After examining several different transportation modes, the decision was made to move forward with Bus Rapid Transit (BRT) as the locally preferred mode since it fulfilled the three primary goals of the study:"
+              }
+            ]
+          }
+        ],
+        "rationale": "p001_c0013 describes the decision to select BRT as locally preferred mode for the LGA AA study, with the three goals (LaGuardia Airport access, neighborhood transit, cost-effective options) listed in p001_c0014.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p001_c0013",
+            "source_quote": "After examining several different transportation modes, the decision was made to move forward with Bus Rapid Transit (BRT) as the locally preferred mode since it fulfilled the three primary goals of the study:"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-019-link-seven-percent-arrive-by-bus",
+        "local_observation_id": "claim_seven_percent_arrive_by_bus",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "claim_seven-percent-arrive-by-bus",
+            "description": "Only 7% of LaGuardia passengers arrive by bus, presented as part of the LGA AA study introduction",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_20_brt_lga_workshop_summary",
+                "block_id": "p001_c0012",
+                "source_quote": "While many of these trips could be made by public transportation, only seven percent of passengers are arriving at LaGuardia by bus."
+              }
+            ]
+          }
+        ],
+        "rationale": "p001_c0012 is the project introduction for the LGA AA, presenting data on how passengers access LaGuardia Airport.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p001_c0012",
+            "source_quote": "While many of these trips could be made by public transportation, only seven percent of passengers are arriving at LaGuardia by bus."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-020-link-majority-from-manhattan",
+        "local_observation_id": "claim_majority_from_manhattan",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "claim_majority-from-manhattan",
+            "description": "Majority of NYC LaGuardia passengers come from Manhattan, part of the LGA AA project introduction",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_20_brt_lga_workshop_summary",
+                "block_id": "p001_c0012",
+                "source_quote": "A majority of passengers (whose trip begins in New York City) are coming from Manhattan, followed by Brooklyn and Queens."
+              }
+            ]
+          }
+        ],
+        "rationale": "p001_c0012 presents passenger origin data during the LGA AA project introduction.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p001_c0012",
+            "source_quote": "A majority of passengers (whose trip begins in New York City) are coming from Manhattan, followed by Brooklyn and Queens."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-021-link-majority-arrive-hired-car",
+        "local_observation_id": "claim_majority_arrive_hired_car",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "claim_majority-arrive-hired-car",
+            "description": "Majority of LaGuardia travelers arrive by hired car or personal car, part of the LGA AA project introduction",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_20_brt_lga_workshop_summary",
+                "block_id": "p001_c0012",
+                "source_quote": "A majority of travelers arrive by hired car (such as taxi or black car) or van service, followed by personal cars."
+              }
+            ]
+          }
+        ],
+        "rationale": "p001_c0012 presents passenger access mode data during the LGA AA project introduction.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p001_c0012",
+            "source_quote": "A majority of travelers arrive by hired car (such as taxi or black car) or van service, followed by personal cars."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-022-link-survey-majority-support-brt",
+        "local_observation_id": "claim_survey_majority_support_brt",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "claim_survey-majority-support-brt",
+            "description": "Majority of workshop participants supported BRT as a solution to access LaGuardia Airport",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_20_brt_lga_workshop_summary",
+                "block_id": "p006_c0010",
+                "source_quote": "Asked how they now felt about BRT as a solution to access LaGuardia Airport, a majority of the participants either supported it or supported with concerns."
+              }
+            ]
+          }
+        ],
+        "rationale": "p006_c0010 reports the workshop survey result about BRT support for LaGuardia access, directly tied to the LGA AA project mission.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p006_c0010",
+            "source_quote": "Asked how they now felt about BRT as a solution to access LaGuardia Airport, a majority of the participants either supported it or supported with concerns."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-023-link-survey-preferred-route-74th",
+        "local_observation_id": "claim_survey_preferred_route_74th_roosevelt",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "claim_survey-preferred-route-74th-roosevelt",
+            "description": "Route between airport and 74th St/Roosevelt Ave drew most interest, part of LGA AA workshop survey",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_20_brt_lga_workshop_summary",
+                "block_id": "p006_c0009",
+                "source_quote": "When asked which neighborhood could benefit the most from a new BRT service, the route between the airport and the 74 th Street/Roosevelt Avenue station through Jackson Heights drew the most interest."
+              }
+            ]
+          }
+        ],
+        "rationale": "p006_c0009 reports BRT route preferences from the LGA AA workshop survey, explicitly mentioning 'a new BRT service' to 'the airport'.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p006_c0009",
+            "source_quote": "When asked which neighborhood could benefit the most from a new BRT service, the route between the airport and the 74 th Street/Roosevelt Avenue station through Jackson Heights drew the most interest."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-024-link-survey-preferred-features",
+        "local_observation_id": "claim_survey_preferred_features",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "claim_survey-preferred-features",
+            "description": "Workshop participants preferred Real Time Bus Information, Enhanced Stations, Offset Bus Lanes, and Off-Board Fare Collection",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_20_brt_lga_workshop_summary",
+                "block_id": "p006_c0009",
+                "source_quote": "In looking at the features and amenities that a BRT system could offer, the participants preferred Real Time Bus Information, Enhanced Stations, Off-set Bus Lanes and Off-Board Fair Collection. They did not prefer Curbside Bus Lanes."
+              }
+            ]
+          }
+        ],
+        "rationale": "p006_c0009 reports BRT feature preferences from the LGA AA workshop survey, explicitly referencing 'a BRT system'.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p006_c0009",
+            "source_quote": "In looking at the features and amenities that a BRT system could offer, the participants preferred Real Time Bus Information, Enhanced Stations, Off-set Bus Lanes and Off-Board Fair Collection. They did not prefer Curbside Bus Lanes."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-025-skip-q72-travel-time-already-linked",
+        "local_observation_id": "claim_q72_25min_am_45min_pm",
+        "decision": "skip",
+        "rationale": "Already linked to route_q72-serves-lga-2011 via existing relation has_claim route_q72-serves-lga-2011 -> claim_q72-25min-am-45min-pm.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p003_c0008",
+            "source_quote": "Q72 Commuter: It is quick during the morning hours – 25 minutes from Queens Boulevard to the LGA. But Junction Boulevard is very congested in the afternoon. It can take 45 minutes to get from LGA back to Queens Boulevard during the afternoon hours."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-026-skip-q72-bus-bunching-already-linked",
+        "local_observation_id": "claim_q72_bus_bunching_45min_wait",
+        "decision": "skip",
+        "rationale": "Already linked to route_q72-serves-lga-2011 via existing relation has_claim route_q72-serves-lga-2011 -> claim_q72-bus-bunching-45min-wait.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p003_c0008",
+            "source_quote": "Plus, bus bunching in the afternoon often results in a wait as long as 45 minutes for the bus to pick passengers up at the terminal."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-027-link-m60-bus-bunching-crowded",
+        "local_observation_id": "claim_m60_bus_bunching_crowded",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_125th-laguardia-sbs",
+            "object_id": "claim_m60-bus-bunching-crowded",
+            "description": "M60 bus bunching and crowding report from LGA AA workshop participant",
+            "evidence_refs": [
+              {
+                "source_id": "2012_04_20_brt_lga_workshop_summary",
+                "block_id": "p003_c0008",
+                "source_quote": "The M60 often has bus bunching, with very long gaps between buses. Conditions on board are very crowded."
+              }
+            ]
+          }
+        ],
+        "rationale": "p003_c0008 explicitly names the M60 route and describes its service quality issues: bus bunching and crowded conditions.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p003_c0008",
+            "source_quote": "The M60 often has bus bunching, with very long gaps between buses. Conditions on board are very crowded."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-028-skip-event-meeting-2-already-linked",
+        "local_observation_id": "event_lga_aa_public_meeting_2_20111102",
+        "decision": "skip",
+        "rationale": "Already linked to project_lga-access-aa via existing relation has_timeline_event project_lga-access-aa -> event_lga-aa-public-meeting-2-20111102.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p001_c0005",
+            "source_quote": "The second public meeting for the LaGuardia Airport Access Alternatives Analysis was held on Wednesday, November 2, 2011."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-029-skip-event-meeting-1-already-linked",
+        "local_observation_id": "event_lga_aa_public_meeting_1_20110622",
+        "decision": "skip",
+        "rationale": "Already linked to project_lga-access-aa via existing relation has_timeline_event project_lga-access-aa -> event_lga-aa-public-meeting-1-20110622.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_20_brt_lga_workshop_summary",
+            "block_id": "p001_c0011",
+            "source_quote": "Each facilitator presented a brief series of informational slides that introduced and reinforced some of the material presented in the first Public Meeting that took place on June 22, 2011."
+          }
+        ]
+      }
+    ],
+    "packet_id": "relation-linker"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-34-57-470Z_2111393-f75b4bad_canonicalize_2026-06-10t23-03-01-256z-1976810-14f50da6-ingest-2012-04-20-brt-lga-workshop-summary-relation-linker"
+}

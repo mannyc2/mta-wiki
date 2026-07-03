@@ -1,0 +1,111 @@
+{
+  "run_id": "2026-06-10T23-12-02-636Z_1976810-607b0367_ingest_2013-03-sbs-webster-bx-cb6",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T03:42:48.016Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "d001",
+        "local_observation_id": "route_bx41_sbs_2013_03",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_webster-ave-sbs' matches existing registry record 'route_webster-ave-sbs' (BX41 SBS Webster Avenue). Record ID is the same as the canonical registry entry.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb6",
+            "block_id": "p011_c0002",
+            "source_quote": "Bx41 LTD → Bx41 SBS | Service will run frequently all day | 1/2 mile stop spacing"
+          },
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb6",
+            "block_id": "p040_c0002",
+            "source_quote": "Bx41 SBS"
+          }
+        ]
+      },
+      {
+        "decision_id": "d002",
+        "local_observation_id": "route_bx41_local_2013_03",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_bx41-local-2012-10-webster' matches existing registry record 'route_bx41-local-2012-10-webster'. The observation already resolves to its canonical ID.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb6",
+            "block_id": "p040_c0002",
+            "source_quote": "Bx41 Local - No change to stop spacing - Service every ~10 minutes"
+          }
+        ]
+      },
+      {
+        "decision_id": "d003",
+        "local_observation_id": "route_bx15_local_2013_03",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_bx15-ace' matches existing registry record 'route_bx15-ace' (Bx15 Local). The observation already resolves to its canonical ID.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb6",
+            "block_id": "p041_c0002",
+            "source_quote": "Bx15 Local - Local stops: The Hub ↔ Fordham Plaza"
+          }
+        ]
+      },
+      {
+        "decision_id": "d004",
+        "local_observation_id": "route_bx15_ltd_2013_03",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_bx15-ltd-webster-2012' matches existing registry record 'route_bx15-ltd-webster-2012' (Bx15 LTD). The observation already resolves to its canonical ID.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb6",
+            "block_id": "p041_c0002",
+            "source_quote": "Bx15 LTD - Local stops: Harlem 125th St ↔ The Hub - Limited stops: The Hub ↔ Fordham Plaza"
+          }
+        ]
+      },
+      {
+        "decision_id": "d005",
+        "local_observation_id": "route_bx41_ltd_2013_03",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_bx41-limited-2012' matches existing registry record 'route_bx41-limited-2012' (Bx41 Limited). The observation already resolves to its canonical ID.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb6",
+            "block_id": "p038_c0002",
+            "source_quote": "Existing bus services: Bx41 LTD, Bx41 Local, Bx55 (Limited) north of Fordham Plaza"
+          }
+        ]
+      },
+      {
+        "decision_id": "d006",
+        "local_observation_id": "route_bx55_limited_2013_03",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_bx55-2012' matches existing registry record 'route_bx55-2012' (Bx55 Limited). The observation already resolves to its canonical ID.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb6",
+            "block_id": "p038_c0004",
+            "source_quote": "Third Avenue: Bx55 (Limited)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d007",
+        "local_observation_id": "route_sbs_laguardia_2013_03",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_sbs-to-laguardia-2012' matches existing registry record 'route_sbs-to-laguardia-2012' (SBS to LaGuardia Airport). The observation already resolves to its canonical ID.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb6",
+            "block_id": "p039_c0002",
+            "source_quote": "Proposed bus services - Webster Avenue: Bx41 SBS, Bx41 Local, SBS to LaGuardia Airport"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-40-13-434Z_2111393-fdaff7ee_canonicalize_2026-06-10t23-12-02-636z-1976810-607b0367-ingest-2013-03-sbs-webster-bx-cb6-route-identity"
+}

@@ -1,0 +1,2427 @@
+{
+  "schema_proposal_run_id": "2026-06-08T23-52-42-494Z_schema-proposal-run",
+  "proposed_at": "2026-06-08T23:56:50.264Z",
+  "observation_kind": "project",
+  "profile_name": "deepseek-pro",
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "audit_packet": {
+    "observation_kind": "project",
+    "submission_count": 109,
+    "accepted_count": 106,
+    "rejected_count": 3,
+    "declared_anchor_fields": [
+      "description",
+      "name",
+      "project_name",
+      "project_type",
+      "status"
+    ],
+    "enum_candidates": [
+      {
+        "field": "borough",
+        "occurrences": 19,
+        "accepted_occurrences": 19,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 19,
+        "coverage": 0.17,
+        "distinct_values": 5,
+        "accepted_distinct_values": 5,
+        "canonical_distinct_values": 5,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Bronx",
+          "Brooklyn",
+          "Manhattan",
+          "Queens",
+          "Staten Island"
+        ],
+        "accepted_values": [
+          "Bronx",
+          "Brooklyn",
+          "Manhattan",
+          "Queens",
+          "Staten Island"
+        ],
+        "canonical_values_observed": [
+          "Bronx",
+          "Brooklyn",
+          "Manhattan",
+          "Queens",
+          "Staten Island"
+        ],
+        "value_counts": [
+          {
+            "value": "Manhattan",
+            "count": 7
+          },
+          {
+            "value": "Brooklyn",
+            "count": 6
+          },
+          {
+            "value": "Queens",
+            "count": 3
+          },
+          {
+            "value": "Bronx",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "Manhattan",
+            "count": 7
+          },
+          {
+            "value": "Brooklyn",
+            "count": 6
+          },
+          {
+            "value": "Queens",
+            "count": 3
+          },
+          {
+            "value": "Bronx",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "Manhattan",
+            "count": 7
+          },
+          {
+            "value": "Brooklyn",
+            "count": 6
+          },
+          {
+            "value": "Queens",
+            "count": 3
+          },
+          {
+            "value": "Bronx",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "operator",
+        "occurrences": 5,
+        "accepted_occurrences": 5,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 5,
+        "coverage": 0.05,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "MTA",
+          "NYC DOT"
+        ],
+        "accepted_values": [
+          "MTA",
+          "NYC DOT"
+        ],
+        "canonical_values_observed": [
+          "MTA",
+          "NYC DOT"
+        ],
+        "value_counts": [
+          {
+            "value": "NYC DOT",
+            "count": 3
+          },
+          {
+            "value": "MTA",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "NYC DOT",
+            "count": 3
+          },
+          {
+            "value": "MTA",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "NYC DOT",
+            "count": 3
+          },
+          {
+            "value": "MTA",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "duration",
+        "occurrences": 4,
+        "accepted_occurrences": 3,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 3,
+        "coverage": 0.04,
+        "distinct_values": 3,
+        "accepted_distinct_values": 3,
+        "canonical_distinct_values": 3,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "18-month pilot",
+          "one year",
+          "one-year pilot"
+        ],
+        "accepted_values": [
+          "18-month pilot",
+          "one year",
+          "one-year pilot"
+        ],
+        "canonical_values_observed": [
+          "18-month pilot",
+          "one year",
+          "one-year pilot"
+        ],
+        "value_counts": [
+          {
+            "value": "one year",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "publisher",
+        "occurrences": 4,
+        "accepted_occurrences": 3,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 3,
+        "coverage": 0.04,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "NYC Comptroller Brad Lander",
+          "People Oriented Cities"
+        ],
+        "accepted_values": [
+          "NYC Comptroller Brad Lander",
+          "People Oriented Cities"
+        ],
+        "canonical_values_observed": [
+          "NYC Comptroller Brad Lander",
+          "People Oriented Cities"
+        ],
+        "value_counts": [
+          {
+            "value": "NYC Comptroller Brad Lander",
+            "count": 3
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "NYC Comptroller Brad Lander",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "NYC Comptroller Brad Lander",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "boroughs",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.02,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Brooklyn",
+          "Queens"
+        ],
+        "accepted_values": [
+          "Brooklyn",
+          "Queens"
+        ],
+        "canonical_values_observed": [
+          "Brooklyn",
+          "Queens"
+        ],
+        "value_counts": [
+          {
+            "value": "Brooklyn",
+            "count": 2
+          },
+          {
+            "value": "Queens",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "Brooklyn",
+            "count": 2
+          },
+          {
+            "value": "Queens",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "Brooklyn",
+            "count": 2
+          },
+          {
+            "value": "Queens",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "completion_date",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.02,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "November 25, 2025",
+          "summer 2017"
+        ],
+        "accepted_values": [
+          "November 25, 2025",
+          "summer 2017"
+        ],
+        "canonical_values_observed": [
+          "November 25, 2025",
+          "summer 2017"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "launch_date",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.02,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "2021-04-26",
+          "July 13, 2015"
+        ],
+        "accepted_values": [
+          "2021-04-26",
+          "July 13, 2015"
+        ],
+        "canonical_values_observed": [
+          "2021-04-26",
+          "July 13, 2015"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "start_date",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.02,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "June 2016",
+          "June 2024"
+        ],
+        "accepted_values": [
+          "June 2016",
+          "June 2024"
+        ],
+        "canonical_values_observed": [
+          "June 2016",
+          "June 2024"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "start_date_text",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.02,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "October 24, 2021",
+          "October 3, 2019"
+        ],
+        "accepted_values": [
+          "October 24, 2021",
+          "October 3, 2019"
+        ],
+        "canonical_values_observed": [
+          "October 24, 2021",
+          "October 3, 2019"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      }
+    ],
+    "additional_keys": [
+      {
+        "field": "_merged_field_values",
+        "occurrences": 0,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 10,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0.11,
+        "value_kind": "empty",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "object",
+        "classification": "sparse",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "agency",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "NYC DOT"
+        ],
+        "accepted_sample_values": [
+          "NYC DOT"
+        ],
+        "canonical_sample_values": [
+          "NYC DOT"
+        ]
+      },
+      {
+        "field": "authorizing_legislation",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Chapter 489 of the Laws of 2021"
+        ],
+        "accepted_sample_values": [
+          "Chapter 489 of the Laws of 2021"
+        ],
+        "canonical_sample_values": [
+          "Chapter 489 of the Laws of 2021"
+        ]
+      },
+      {
+        "field": "benefits",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "increased reliability, reduced delays, shorter travel times; 2.5 times more riders benefit than those with longer trips"
+        ],
+        "accepted_sample_values": [
+          "increased reliability, reduced delays, shorter travel times; 2.5 times more riders benefit than those with longer trips"
+        ],
+        "canonical_sample_values": [
+          "increased reliability, reduced delays, shorter travel times; 2.5 times more riders benefit than those with longer trips"
+        ]
+      },
+      {
+        "field": "borough_normalized",
+        "occurrences": 0,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 19,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0.22,
+        "value_kind": "empty",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": [
+          "manhattan",
+          "brooklyn",
+          "queens",
+          "bronx",
+          "staten_island"
+        ]
+      },
+      {
+        "field": "boroughs_normalized",
+        "occurrences": 0,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0.02,
+        "value_kind": "empty",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": [
+          "brooklyn",
+          "queens"
+        ]
+      },
+      {
+        "field": "bus_capacity",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "buses_equipped",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "capacity_per_month",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "community_meetings",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "nearly 300 outreach events since 2019"
+        ],
+        "accepted_sample_values": [
+          "nearly 300 outreach events since 2019"
+        ],
+        "canonical_sample_values": [
+          "nearly 300 outreach events since 2019"
+        ]
+      },
+      {
+        "field": "completion_date_normalized",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.02,
+        "accepted_coverage": 0.02,
+        "canonical_coverage": 0.02,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "completion_target_year",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "corridor",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "79th Street"
+        ],
+        "accepted_sample_values": [
+          "79th Street"
+        ],
+        "canonical_sample_values": [
+          "79th Street"
+        ]
+      },
+      {
+        "field": "corridor_length_miles",
+        "occurrences": 21,
+        "accepted_occurrences": 21,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 21,
+        "coverage": 0.19,
+        "accepted_coverage": 0.2,
+        "canonical_coverage": 0.24,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "corridors",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Archer Avenue",
+          "Jamaica Avenue"
+        ],
+        "accepted_sample_values": [
+          "Archer Avenue",
+          "Jamaica Avenue"
+        ],
+        "canonical_sample_values": [
+          "Archer Avenue",
+          "Jamaica Avenue"
+        ]
+      },
+      {
+        "field": "coverage_miles",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "csc_planned_additional",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "csc_target_total",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "csc_total_open",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "daily_customers_benefitted",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "daily_ridership",
+        "occurrences": 24,
+        "accepted_occurrences": 24,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 24,
+        "coverage": 0.22,
+        "accepted_coverage": 0.23,
+        "canonical_coverage": 0.27,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "document_time_status",
+        "occurrences": 0,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 87,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0.99,
+        "value_kind": "empty",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": [
+          "planned",
+          "implemented",
+          "active",
+          "study",
+          "under_construction",
+          "approved",
+          "pilot",
+          "abandoned"
+        ]
+      },
+      {
+        "field": "expected_completion",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "summer of 2026"
+        ],
+        "accepted_sample_values": [
+          "summer of 2026"
+        ],
+        "canonical_sample_values": [
+          "summer of 2026"
+        ]
+      },
+      {
+        "field": "expected_timeline",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "later in 2025"
+        ],
+        "accepted_sample_values": [
+          "later in 2025"
+        ],
+        "canonical_sample_values": [
+          "later in 2025"
+        ]
+      },
+      {
+        "field": "express_routes_existing",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "express_routes_proposed",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "goals",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Improve safety along a Vision Zero Priority corridor",
+          "Increase speeds and reliability for M14 A/D Select Bus Service"
+        ],
+        "accepted_sample_values": [
+          "Improve safety along a Vision Zero Priority corridor",
+          "Increase speeds and reliability for M14 A/D Select Bus Service"
+        ],
+        "canonical_sample_values": [
+          "Improve safety along a Vision Zero Priority corridor",
+          "Increase speeds and reliability for M14 A/D Select Bus Service"
+        ]
+      },
+      {
+        "field": "implementation_target",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "spring 2012"
+        ],
+        "accepted_sample_values": [
+          "spring 2012"
+        ],
+        "canonical_sample_values": [
+          "spring 2012"
+        ]
+      },
+      {
+        "field": "implementing_agency",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "NYCDOT"
+        ],
+        "accepted_sample_values": [
+          "NYCDOT"
+        ],
+        "canonical_sample_values": [
+          "NYCDOT"
+        ]
+      },
+      {
+        "field": "launch_date_normalized",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.02,
+        "accepted_coverage": 0.02,
+        "canonical_coverage": 0.02,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "launch_date_text",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "October 24, 2021"
+        ],
+        "accepted_sample_values": [
+          "October 24, 2021"
+        ],
+        "canonical_sample_values": [
+          "October 24, 2021"
+        ]
+      },
+      {
+        "field": "launch_date_text_normalized",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "lead_agency",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "NYC Department of Transportation"
+        ],
+        "accepted_sample_values": [
+          "NYC Department of Transportation"
+        ],
+        "canonical_sample_values": [
+          "NYC Department of Transportation"
+        ]
+      },
+      {
+        "field": "local_hiring_goal",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "20% of NY State workforce from Southeast Queens"
+        ],
+        "accepted_sample_values": [
+          "20% of NY State workforce from Southeast Queens"
+        ],
+        "canonical_sample_values": [
+          "20% of NY State workforce from Southeast Queens"
+        ]
+      },
+      {
+        "field": "local_routes_existing",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "local_routes_proposed",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "location",
+        "occurrences": 5,
+        "accepted_occurrences": 5,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 5,
+        "coverage": 0.05,
+        "accepted_coverage": 0.05,
+        "canonical_coverage": 0.06,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "14th Street, Manhattan",
+          "Bronx, New York City",
+          "Church Avenue Station, Brooklyn",
+          "Queens",
+          "Sunset Park, Brooklyn"
+        ],
+        "accepted_sample_values": [
+          "14th Street, Manhattan",
+          "Bronx, New York City",
+          "Church Avenue Station, Brooklyn",
+          "Queens",
+          "Sunset Park, Brooklyn"
+        ],
+        "canonical_sample_values": [
+          "14th Street, Manhattan",
+          "Bronx, New York City",
+          "Church Avenue Station, Brooklyn",
+          "Queens",
+          "Sunset Park, Brooklyn"
+        ]
+      },
+      {
+        "field": "location_normalized",
+        "occurrences": 5,
+        "accepted_occurrences": 5,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 5,
+        "coverage": 0.05,
+        "accepted_coverage": 0.05,
+        "canonical_coverage": 0.06,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "new_location",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "90th Avenue"
+        ],
+        "accepted_sample_values": [
+          "90th Avenue"
+        ],
+        "canonical_sample_values": [
+          "90th Avenue"
+        ]
+      },
+      {
+        "field": "new_location_normalized",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "noise_mitigation",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "sound-reducing walls along 107th Avenue and 165th Street"
+        ],
+        "accepted_sample_values": [
+          "sound-reducing walls along 107th Avenue and 165th Street"
+        ],
+        "canonical_sample_values": [
+          "sound-reducing walls along 107th Avenue and 165th Street"
+        ]
+      },
+      {
+        "field": "old_location",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Merrick Boulevard"
+        ],
+        "accepted_sample_values": [
+          "Merrick Boulevard"
+        ],
+        "canonical_sample_values": [
+          "Merrick Boulevard"
+        ]
+      },
+      {
+        "field": "old_location_normalized",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "partner_agency",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "NYC Department of Design and Construction"
+        ],
+        "accepted_sample_values": [
+          "NYC Department of Design and Construction"
+        ],
+        "canonical_sample_values": [
+          "NYC Department of Design and Construction"
+        ]
+      },
+      {
+        "field": "partners",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "MTA",
+          "NYPD"
+        ],
+        "accepted_sample_values": [
+          "MTA",
+          "NYPD"
+        ],
+        "canonical_sample_values": [
+          "MTA",
+          "NYPD"
+        ]
+      },
+      {
+        "field": "phase",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Draft Plan"
+        ],
+        "accepted_sample_values": [
+          "Draft Plan"
+        ],
+        "canonical_sample_values": [
+          "Draft Plan"
+        ]
+      },
+      {
+        "field": "phase_1_start_date",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "June 29, 2025"
+        ],
+        "accepted_sample_values": [
+          "June 29, 2025"
+        ],
+        "canonical_sample_values": [
+          "June 29, 2025"
+        ]
+      },
+      {
+        "field": "phase_1_start_date_normalized",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "phase_2_start_date",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "August 31, 2025"
+        ],
+        "accepted_sample_values": [
+          "August 31, 2025"
+        ],
+        "canonical_sample_values": [
+          "August 31, 2025"
+        ]
+      },
+      {
+        "field": "phase_2_start_date_normalized",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "program",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Better Buses Restart"
+        ],
+        "accepted_sample_values": [
+          "Better Buses Restart"
+        ],
+        "canonical_sample_values": [
+          "Better Buses Restart"
+        ]
+      },
+      {
+        "field": "project_family",
+        "occurrences": 0,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 70,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0.8,
+        "value_kind": "empty",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": [
+          "bus_lane",
+          "busway",
+          "planning_or_report",
+          "accessibility_or_safety",
+          "capital_or_infrastructure",
+          "enforcement_program",
+          "sbs_or_brt",
+          "bus_network_redesign"
+        ]
+      },
+      {
+        "field": "public_comments_received",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "more than 18,000"
+        ],
+        "accepted_sample_values": [
+          "more than 18,000"
+        ],
+        "canonical_sample_values": [
+          "more than 18,000"
+        ]
+      },
+      {
+        "field": "publication_date",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "December 2022"
+        ],
+        "accepted_sample_values": [
+          "December 2022"
+        ],
+        "canonical_sample_values": [
+          "December 2022"
+        ]
+      },
+      {
+        "field": "publication_date_normalized",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "routes_covered",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "routes_served",
+        "occurrences": 24,
+        "accepted_occurrences": 24,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 24,
+        "coverage": 0.22,
+        "accepted_coverage": 0.23,
+        "canonical_coverage": 0.27,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "free_text",
+        "sample_values": [
+          "B103",
+          "B83",
+          "BM2",
+          "BM3",
+          "BM4",
+          "Q20A",
+          "Q20B",
+          "Q44 SBS"
+        ],
+        "accepted_sample_values": [
+          "B103",
+          "B83",
+          "BM2",
+          "BM3",
+          "BM4",
+          "Q20A",
+          "Q20B",
+          "Q44 SBS"
+        ],
+        "canonical_sample_values": [
+          "B103",
+          "B83",
+          "BM2",
+          "BM3",
+          "BM4",
+          "Q20A",
+          "Q20B",
+          "Q44 SBS"
+        ]
+      },
+      {
+        "field": "rush_routes_proposed",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "start_date_normalized",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.02,
+        "accepted_coverage": 0.02,
+        "canonical_coverage": 0.02,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "start_date_text_normalized",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.02,
+        "accepted_coverage": 0.02,
+        "canonical_coverage": 0.02,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "start_year",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "subway_lines",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "B",
+          "Q"
+        ],
+        "accepted_sample_values": [
+          "B",
+          "Q"
+        ],
+        "canonical_sample_values": [
+          "B",
+          "Q"
+        ]
+      },
+      {
+        "field": "sustainability_features",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "green roof, LEED certification standards, stormwater detention tanks (3,600 feet of storm drain and fuel piping, 30,000 cubic feet of stormwater detention tanks)"
+        ],
+        "accepted_sample_values": [
+          "green roof, LEED certification standards, stormwater detention tanks (3,600 feet of storm drain and fuel piping, 30,000 cubic feet of stormwater detention tanks)"
+        ],
+        "canonical_sample_values": [
+          "green roof, LEED certification standards, stormwater detention tanks (3,600 feet of storm drain and fuel piping, 30,000 cubic feet of stormwater detention tanks)"
+        ]
+      },
+      {
+        "field": "total_routes_existing",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "total_routes_proposed",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "year",
+        "occurrences": 3,
+        "accepted_occurrences": 3,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 3,
+        "coverage": 0.03,
+        "accepted_coverage": 0.03,
+        "canonical_coverage": 0.03,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "years_of_planning",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      }
+    ]
+  },
+  "closure_policy": "deferred",
+  "closure_signals": [
+    {
+      "field": "borough",
+      "closure_readiness": "open",
+      "occurrences": 19,
+      "accepted_occurrences": 19,
+      "canonical_occurrences": 19,
+      "coverage": 0.17
+    },
+    {
+      "field": "operator",
+      "closure_readiness": "open",
+      "occurrences": 5,
+      "accepted_occurrences": 5,
+      "canonical_occurrences": 5,
+      "coverage": 0.05
+    },
+    {
+      "field": "duration",
+      "closure_readiness": "open",
+      "occurrences": 4,
+      "accepted_occurrences": 3,
+      "canonical_occurrences": 3,
+      "coverage": 0.04
+    },
+    {
+      "field": "publisher",
+      "closure_readiness": "open",
+      "occurrences": 4,
+      "accepted_occurrences": 3,
+      "canonical_occurrences": 3,
+      "coverage": 0.04
+    },
+    {
+      "field": "boroughs",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0.02
+    },
+    {
+      "field": "completion_date",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0.02
+    },
+    {
+      "field": "launch_date",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0.02
+    },
+    {
+      "field": "start_date",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0.02
+    },
+    {
+      "field": "start_date_text",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0.02
+    }
+  ],
+  "valid": true,
+  "schema_issues": [],
+  "warnings": [],
+  "proposal": {
+    "observation_kind": "project",
+    "field_proposals": [
+      {
+        "field": "borough",
+        "decision": "enum",
+        "canonical_values": [
+          "bronx",
+          "brooklyn",
+          "manhattan",
+          "queens",
+          "staten_island"
+        ],
+        "value_mapping": [
+          {
+            "from": "Bronx",
+            "to": "bronx"
+          },
+          {
+            "from": "Brooklyn",
+            "to": "brooklyn"
+          },
+          {
+            "from": "Manhattan",
+            "to": "manhattan"
+          },
+          {
+            "from": "Queens",
+            "to": "queens"
+          },
+          {
+            "from": "Staten Island",
+            "to": "staten_island"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "borough_other"
+        },
+        "rationale": "Well-known fixed set of NYC boroughs, normalize case."
+      },
+      {
+        "field": "operator",
+        "decision": "relation_context",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Operator is an agency name, better modeled as a relation context, not a closed enumeration."
+      },
+      {
+        "field": "duration",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Duration values are free-text descriptions with inconsistent formats; insufficient for enum."
+      },
+      {
+        "field": "publisher",
+        "decision": "relation_context",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Publisher is an organizational entity, relation context."
+      },
+      {
+        "field": "boroughs",
+        "decision": "enum",
+        "canonical_values": [
+          "bronx",
+          "brooklyn",
+          "manhattan",
+          "queens",
+          "staten_island"
+        ],
+        "value_mapping": [
+          {
+            "from": "Brooklyn",
+            "to": "brooklyn"
+          },
+          {
+            "from": "Queens",
+            "to": "queens"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "boroughs_other"
+        },
+        "rationale": "Array of boroughs; same well-known set."
+      },
+      {
+        "field": "completion_date",
+        "decision": "needs_more_data",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Only two distinct date strings, too sparse to normalize or structure."
+      },
+      {
+        "field": "launch_date",
+        "decision": "needs_more_data",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Only two distinct date strings, too sparse."
+      },
+      {
+        "field": "start_date",
+        "decision": "needs_more_data",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Only two distinct date strings, too sparse."
+      },
+      {
+        "field": "start_date_text",
+        "decision": "needs_more_data",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Only two distinct date strings, too sparse."
+      }
+    ],
+    "key_dispositions": [
+      {
+        "key": "_merged_field_values",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Technical merge field, not meaningful as a payload field."
+      },
+      {
+        "key": "agency",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Agency name; relation context."
+      },
+      {
+        "key": "authorizing_legislation",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence of a legislative reference; too sparse to model."
+      },
+      {
+        "key": "benefits",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Descriptive prose, not structured."
+      },
+      {
+        "key": "borough_normalized",
+        "disposition": "alias",
+        "target": "borough",
+        "rationale": "Already normalized version of borough; alias to borough enum."
+      },
+      {
+        "key": "boroughs_normalized",
+        "disposition": "alias",
+        "target": "boroughs",
+        "rationale": "Already normalized version of boroughs; alias to boroughs enum."
+      },
+      {
+        "key": "bus_capacity",
+        "disposition": "promote_field",
+        "target": "bus_capacity",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "buses_equipped",
+        "disposition": "promote_field",
+        "target": "buses_equipped",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "capacity_per_month",
+        "disposition": "promote_field",
+        "target": "capacity_per_month",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "community_meetings",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Descriptive text, sparse."
+      },
+      {
+        "key": "completion_date_normalized",
+        "disposition": "promote_field",
+        "target": "completion_date_normalized",
+        "rationale": "Structured date object."
+      },
+      {
+        "key": "completion_target_year",
+        "disposition": "promote_field",
+        "target": "completion_target_year",
+        "rationale": "Numeric year target."
+      },
+      {
+        "key": "corridor",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Sparse free-text street name, not structured."
+      },
+      {
+        "key": "corridor_length_miles",
+        "disposition": "promote_field",
+        "target": "corridor_length_miles",
+        "rationale": "Numeric metric with good coverage."
+      },
+      {
+        "key": "corridors",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Sparse array of street names, not a stable enum."
+      },
+      {
+        "key": "coverage_miles",
+        "disposition": "promote_field",
+        "target": "coverage_miles",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "csc_planned_additional",
+        "disposition": "promote_field",
+        "target": "csc_planned_additional",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "csc_target_total",
+        "disposition": "promote_field",
+        "target": "csc_target_total",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "csc_total_open",
+        "disposition": "promote_field",
+        "target": "csc_total_open",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "daily_customers_benefitted",
+        "disposition": "promote_field",
+        "target": "daily_customers_benefitted",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "daily_ridership",
+        "disposition": "promote_field",
+        "target": "daily_ridership",
+        "rationale": "Numeric metric with good coverage."
+      },
+      {
+        "key": "document_time_status",
+        "disposition": "promote_enum",
+        "target": "document_time_status",
+        "rationale": "Consistently used set of project status values (planned, implemented, active, etc.); promote to enum."
+      },
+      {
+        "key": "expected_completion",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Vague free-text date, sparse."
+      },
+      {
+        "key": "expected_timeline",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Vague free-text, sparse."
+      },
+      {
+        "key": "express_routes_existing",
+        "disposition": "promote_field",
+        "target": "express_routes_existing",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "express_routes_proposed",
+        "disposition": "promote_field",
+        "target": "express_routes_proposed",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "goals",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Descriptive project goals, not structured."
+      },
+      {
+        "key": "implementation_target",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Vague free-text, sparse."
+      },
+      {
+        "key": "implementing_agency",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Agency name; relation context."
+      },
+      {
+        "key": "launch_date_normalized",
+        "disposition": "promote_field",
+        "target": "launch_date_normalized",
+        "rationale": "Structured date object."
+      },
+      {
+        "key": "launch_date_text",
+        "disposition": "promote_field",
+        "target": "launch_date_text",
+        "rationale": "Date string, promote as field."
+      },
+      {
+        "key": "launch_date_text_normalized",
+        "disposition": "promote_field",
+        "target": "launch_date_text_normalized",
+        "rationale": "Structured date object."
+      },
+      {
+        "key": "lead_agency",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Agency name; relation context."
+      },
+      {
+        "key": "local_hiring_goal",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Descriptive text, sparse."
+      },
+      {
+        "key": "local_routes_existing",
+        "disposition": "promote_field",
+        "target": "local_routes_existing",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "local_routes_proposed",
+        "disposition": "promote_field",
+        "target": "local_routes_proposed",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "location",
+        "disposition": "promote_field",
+        "target": "location",
+        "rationale": "Free-text location description, useful as a field."
+      },
+      {
+        "key": "location_normalized",
+        "disposition": "promote_field",
+        "target": "location_normalized",
+        "rationale": "Structured location object."
+      },
+      {
+        "key": "new_location",
+        "disposition": "promote_field",
+        "target": "new_location",
+        "rationale": "Text location, sparse but promote."
+      },
+      {
+        "key": "new_location_normalized",
+        "disposition": "promote_field",
+        "target": "new_location_normalized",
+        "rationale": "Structured location object."
+      },
+      {
+        "key": "noise_mitigation",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Descriptive text, sparse."
+      },
+      {
+        "key": "old_location",
+        "disposition": "promote_field",
+        "target": "old_location",
+        "rationale": "Text location."
+      },
+      {
+        "key": "old_location_normalized",
+        "disposition": "promote_field",
+        "target": "old_location_normalized",
+        "rationale": "Structured location object."
+      },
+      {
+        "key": "partner_agency",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Partner agency name; relation context."
+      },
+      {
+        "key": "partners",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "List of partner agencies; relation context."
+      },
+      {
+        "key": "phase",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Single occurrence of a phase name; too sparse."
+      },
+      {
+        "key": "phase_1_start_date",
+        "disposition": "promote_field",
+        "target": "phase_1_start_date",
+        "rationale": "Date string."
+      },
+      {
+        "key": "phase_1_start_date_normalized",
+        "disposition": "promote_field",
+        "target": "phase_1_start_date_normalized",
+        "rationale": "Structured date object."
+      },
+      {
+        "key": "phase_2_start_date",
+        "disposition": "promote_field",
+        "target": "phase_2_start_date",
+        "rationale": "Date string."
+      },
+      {
+        "key": "phase_2_start_date_normalized",
+        "disposition": "promote_field",
+        "target": "phase_2_start_date_normalized",
+        "rationale": "Structured date object."
+      },
+      {
+        "key": "program",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Program name; relation context."
+      },
+      {
+        "key": "project_family",
+        "disposition": "promote_enum",
+        "target": "project_family",
+        "rationale": "Frequently used with consistent set of categories (bus_lane, busway, etc.); promotes to enum."
+      },
+      {
+        "key": "public_comments_received",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Descriptive text, sparse."
+      },
+      {
+        "key": "publication_date",
+        "disposition": "promote_field",
+        "target": "publication_date",
+        "rationale": "Date string."
+      },
+      {
+        "key": "publication_date_normalized",
+        "disposition": "promote_field",
+        "target": "publication_date_normalized",
+        "rationale": "Structured date object."
+      },
+      {
+        "key": "routes_covered",
+        "disposition": "promote_field",
+        "target": "routes_covered",
+        "rationale": "Numeric count."
+      },
+      {
+        "key": "routes_served",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "List of route identifiers; relation context."
+      },
+      {
+        "key": "rush_routes_proposed",
+        "disposition": "promote_field",
+        "target": "rush_routes_proposed",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "start_date_normalized",
+        "disposition": "promote_field",
+        "target": "start_date_normalized",
+        "rationale": "Structured date object."
+      },
+      {
+        "key": "start_date_text_normalized",
+        "disposition": "promote_field",
+        "target": "start_date_text_normalized",
+        "rationale": "Structured date object."
+      },
+      {
+        "key": "start_year",
+        "disposition": "promote_field",
+        "target": "start_year",
+        "rationale": "Numeric year."
+      },
+      {
+        "key": "subway_lines",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "List of subway line identifiers; relation context."
+      },
+      {
+        "key": "sustainability_features",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Descriptive text, sparse."
+      },
+      {
+        "key": "total_routes_existing",
+        "disposition": "promote_field",
+        "target": "total_routes_existing",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "total_routes_proposed",
+        "disposition": "promote_field",
+        "target": "total_routes_proposed",
+        "rationale": "Numeric metric."
+      },
+      {
+        "key": "year",
+        "disposition": "promote_field",
+        "target": "year",
+        "rationale": "Numeric year."
+      },
+      {
+        "key": "years_of_planning",
+        "disposition": "promote_field",
+        "target": "years_of_planning",
+        "rationale": "Numeric metric."
+      }
+    ],
+    "notes": "Key enums proposed for borough, boroughs, document_time_status, and project_family. Operator, publisher, agencies, and route lists kept as relation context."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T23-55-26-133Z_3609302-a428e1da_schema-proposal-run_project",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-55-26-133Z_2026-06-08T23-55-26-133Z_3609302-a428e1da_schema-proposal-run_project.jsonl"
+}

@@ -1,0 +1,54 @@
+{
+  "run_id": "2026-06-10T23-09-19-253Z_1976810-6248d0ff_ingest_2013-01-webster-sbs-newsletter",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T03:20:58.930Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "dec-nyc-dot-2013-webster-new",
+        "local_observation_id": "entity_nyc_dot_2013_01_webster",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_nyc-dot matches the existing registry record with identical entity_name 'New York City Department of Transportation', entity_type 'agency', and acronym 'DOT'. The source [p001_c0004] confirms the same entity. No link to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_01_webster_sbs_newsletter",
+            "block_id": "p001_c0004",
+            "source_quote": "Select Bus Service (SBS) is coming to Webster Avenue through a partnership between the New York City Department of Transportation (DOT) and MTA New York City Transit (NYCT)."
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-mta-nyct-2013-webster-new",
+        "local_observation_id": "entity_mta_nyct_2013_01_webster",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_mta-nyct matches the existing registry record with identical entity_name 'MTA New York City Transit', entity_type 'agency'. The source [p001_c0004] confirms the same entity. No link to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_01_webster_sbs_newsletter",
+            "block_id": "p001_c0004",
+            "source_quote": "Select Bus Service (SBS) is coming to Webster Avenue through a partnership between the New York City Department of Transportation (DOT) and MTA New York City Transit (NYCT)."
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-patrick-jordan-2013-webster-new",
+        "local_observation_id": "entity_patrick_jordan_2013_01_webster",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_patrick-jordan-webster-sbs matches the existing registry record with identical entity_name 'Patrick Jordan' and entity_type 'person'. The registry record already includes the alias entity_patrick-jordan-2013-01-webster from a prior run on this same source. Source [p004_c0006] confirms Patrick Jordan as Webster Avenue SBS Outreach Representative. No link to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_01_webster_sbs_newsletter",
+            "block_id": "p004_c0006",
+            "source_quote": "Contact Patrick Jordan , the Webster Avenue SBS Outreach Representative, at 212-799-8803 or WebsterSBS@Zetlin.com ."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-19-12-516Z_2111393-081a5bff_canonicalize_2026-06-10t23-09-19-253z-1976810-6248d0ff-ingest-2013-01-webster-sbs-newsletter-entity-identity"
+}

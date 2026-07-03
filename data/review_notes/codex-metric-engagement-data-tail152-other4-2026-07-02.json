@@ -1,0 +1,126 @@
+{
+  "id": "codex-metric-engagement-data-tail152-other4-2026-07-02",
+  "created_at": "2026-07-02T00:00:00Z",
+  "mode": "codex_only_deterministic",
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed model calls"
+  ],
+  "baseline": {
+    "metric_claim_rows": 36534,
+    "before_missing_unit_family": 182,
+    "before_unit_family_other": 5,
+    "before_finite_no_unit_rows": 174,
+    "before_range_no_unit_rows": 5,
+    "route_records": 319,
+    "project_records": 1859,
+    "identity_review_validation_issues": 0,
+    "identity_review_candidate_edges": 0
+  },
+  "implemented_slice": {
+    "bucket": "metric_claim missing unit_normalized.unit_family plus metric unit_family other",
+    "source_audit": "Hegel read-only exact object/count/data/engagement audit",
+    "missing_unit_family_delta": 30,
+    "unit_family_other_delta": 1,
+    "after_missing_unit_family": 152,
+    "after_unit_family_other": 4,
+    "after_finite_no_unit_rows": 146,
+    "after_range_no_unit_rows": 3,
+    "method": "Added exact metric_name rules for audited engagement, data, count, count-rate, and population rows, plus one contextual unit override for tracks_program_outreach with unit individuals. No broad regex or global individuals/year alias was added.",
+    "normalized_target_count": 30,
+    "other_target_count": 1
+  },
+  "normalized_targets": {
+    "engagement": [
+      "attendees at Open Data events",
+      "customer_comments_collected",
+      "customer_community_outreach",
+      "customer_feedback_count",
+      "in_person_grade_crossing_outreach_contacts",
+      "outreach_customers_reached",
+      "public_comment_count",
+      "speaking engagements in 2024",
+      "submissions to Open Data Challenge",
+      "survey_respondent_count"
+    ],
+    "data": [
+      "new datasets published",
+      "new datasets published in 2024",
+      "records in largest dataset (Bus Hourly Ridership)",
+      "supported open datasets",
+      "total open datasets portfolio"
+    ],
+    "count": [
+      "audible_pedestrian_turn_warning_systems_installed",
+      "customer_stations_count",
+      "customers_benefited",
+      "data stewards identified",
+      "first_responders_trained",
+      "management_interviews_conducted",
+      "vision_zero_employee_trainings"
+    ],
+    "count_rate": [
+      "daily_users"
+    ],
+    "population": [
+      "users_served",
+      "tracks_program_outreach unit individuals"
+    ]
+  },
+  "guardrails": [
+    "Exact metric_name membership only for the missing-unit slice.",
+    "Inference remains inert when payload.unit or payload.unit_normalized already exists, except the single contextual tracks_program_outreach unit-normalized other correction.",
+    "Rules require finite numeric payload.value or finite value_min/value_max range.",
+    "Generic unit individuals remains unit_family other for unrelated metric names.",
+    "No date/year policy was introduced; unit year rows remain deferred.",
+    "No 2027 $M cost-per-rider scale policy was introduced."
+  ],
+  "tests": {
+    "focused": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+    "focused_result": "pass: 278 tests, 4842 expect() calls",
+    "typecheck": "bun run typecheck",
+    "typecheck_result": "pass"
+  },
+  "materialization": {
+    "command": "bun packages/cli/src/cli.ts materialize",
+    "result": "Materialized 93067/98115 submissions; retired submissions skipped: 265; SQLite FTS quick_check: ok"
+  },
+  "validation": {
+    "command": "bun packages/cli/src/cli.ts validate",
+    "result": "Issues: 0; submissions: 98115; canonical records: 84027; wiki pages: 7331"
+  },
+  "remaining_tail_examples": [
+    ["crash_injuries", 5],
+    ["Secondary Screening Score", 3],
+    ["major_felony_change", 2],
+    ["ridership", 2],
+    ["safety_incidents_by_hazard_type", 2],
+    ["total_arrests_change", 2],
+    ["total_major_felonies_change", 2],
+    ["vacancies", 2]
+  ],
+  "remaining_unit_family_other": [
+    "cost_per_daily_rider with unit 2027 $M",
+    "substantial_completion_date with unit year",
+    "target_completion_year with unit year",
+    "forecasted_revenue_service_date with unit year"
+  ],
+  "next_lanes": [
+    "Audit admin/enforcement/safety count singletons such as audit_* and crash/fatality rows as separate bounded slices.",
+    "Keep score/rating, broad ridership, change-count, traffic-volume, vacancy/FTE, raw-only derailment/fire, and date/year policy rows deferred until a deterministic policy is accepted.",
+    "Continue re-running route/project duplicate gates after materialization; current route/project duplicate backlog remains closed."
+  ],
+  "files_changed": [
+    "packages/pipeline/src/ontology/normalizers.ts",
+    "packages/pipeline/test/ontology/normalizers.test.ts",
+    "data/canonical/metric_claims.jsonl",
+    "data/canonical.db",
+    "LOG.md",
+    "data/review_notes/codex-metric-engagement-data-tail152-other4-2026-07-02.json"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T23-09-19-253Z_1976810-6248d0ff_ingest_2013-01-webster-sbs-newsletter",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T03:20:55.699Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "webster-sbs-2013-01-existing",
+        "local_observation_id": "project_webster_ave_sbs_2013_01",
+        "decision": "new",
+        "rationale": "Observation base_record_id project_12-webster-ave matches an existing registry record with display_name 'Webster Avenue Select Bus Service'. The source_id 2013_01_webster_sbs_newsletter is already listed in the registry record's source_ids, and the alias project_webster-ave-sbs-2013-01 is already present. The observation resolves to its own registry record with no different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_01_webster_sbs_newsletter",
+            "block_id": "p001_c0004",
+            "source_quote": "Select Bus Service (SBS) coming to Webster Avenue"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-19-12-517Z_2111393-dc03ff6b_canonicalize_2026-06-10t23-09-19-253z-1976810-6248d0ff-ingest-2013-01-webster-sbs-newsletter-project-identity"
+}

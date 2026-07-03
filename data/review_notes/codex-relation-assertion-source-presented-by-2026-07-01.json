@@ -1,0 +1,103 @@
+{
+  "note_id": "codex-relation-assertion-source-presented-by-2026-07-01",
+  "date": "2026-07-01",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed profiles",
+    "Pioneer/OpenAI/DeepSeek/vLLM/chandra model calls"
+  ],
+  "bucket": "relation_assertion_status_unknown",
+  "implemented_change": {
+    "summary": "Classify source-artifact presented_by agency-role relations as delivered.",
+    "code_paths": [
+      "packages/pipeline/src/records/assertion-qualifiers.ts",
+      "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+    ],
+    "rule": {
+      "relation_family": "agency_role",
+      "relation_kind": "presented_by",
+      "subject": "source",
+      "object": "entity",
+      "required_signals": [
+        "relation cites the source endpoint by source_id/source_ids",
+        "no future/planned/proposed/uncertain temporal tokens in relation-owned text"
+      ]
+    }
+  },
+  "baseline": {
+    "validate_issues": 0,
+    "relation_assertion_unknown_total": 5027,
+    "agency_role_unknown": 411,
+    "agency_role_presented_by_unknown": 41,
+    "safe_candidate_count": 15
+  },
+  "after": {
+    "validate_issues": 0,
+    "relation_assertion_unknown_total": 5012,
+    "agency_role_unknown": 396,
+    "agency_role_presented_by_unknown": 26,
+    "delivered_agency_role_presented_by": 15
+  },
+  "delta": {
+    "relation_assertion_unknown_total": -15,
+    "agency_role_unknown": -15,
+    "agency_role_presented_by_unknown": -15,
+    "delivered_agency_role_presented_by": 15
+  },
+  "subagent_inputs": [
+    {
+      "thread_id": "019f1faa-0d57-78a2-a171-47ca5e323e93",
+      "name": "Lagrange",
+      "lane": "agency/funding residual scout",
+      "finding": "Found 15 source presented_by rows with entity objects and matching source provenance.",
+      "used_for_this_change": true
+    },
+    {
+      "thread_id": "019f1fa9-d151-7dc2-950e-a8678f266522",
+      "name": "Arendt",
+      "lane": "claim_context residual scout",
+      "finding": "Found a 13-row source-to-audience presented_to candidate for a possible follow-up rule.",
+      "used_for_this_change": false
+    }
+  ],
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+      "result": "passed: 77 tests, 418 expect calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "passed"
+    },
+    {
+      "command": "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+      "result": "passed: Materialized 93092/98102 submissions; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+      "result": "ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "passed: Issues 0"
+    }
+  ],
+  "intentionally_unresolved": [
+    "event->entity, entity->entity, and claim->entity presented_by rows remain unknown.",
+    "Future/planned/proposed/uncertain presented_by rows remain unknown.",
+    "The rule does not apply to adjacent relation kinds such as presents without separate audit.",
+    "Canonical JSONL was not hand-edited."
+  ],
+  "next_candidate_lanes": [
+    "Review and possibly implement the 13-row claim_context.presented_to source-audience candidate.",
+    "Continue exact metric-name/unit/period guardrails for metric_context.has_metric residuals.",
+    "Rebaseline current assertion-status unknown top buckets before the next implementation slice."
+  ]
+}

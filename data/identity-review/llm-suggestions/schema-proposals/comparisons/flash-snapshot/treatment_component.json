@@ -1,0 +1,628 @@
+{
+  "schema_proposal_run_id": "2026-06-08T23-05-26-749Z_schema-proposal-run",
+  "proposed_at": "2026-06-08T23:08:24.946Z",
+  "observation_kind": "treatment_component",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "audit_packet": {
+    "observation_kind": "treatment_component",
+    "submission_count": 149,
+    "accepted_count": 145,
+    "rejected_count": 4,
+    "declared_anchor_fields": [
+      "component_kind",
+      "component_type",
+      "description",
+      "locations",
+      "treatment_kind",
+      "treatment_type"
+    ],
+    "enum_candidates": [
+      {
+        "field": "location_text",
+        "occurrences": 5,
+        "coverage": 0.03,
+        "distinct_values": 4,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "13th Street and 5th Avenue",
+          "Along 14th Street",
+          "Six locations along 14th Street",
+          "Union Square area"
+        ],
+        "value_counts": [
+          {
+            "value": "Along 14th Street",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "date_text",
+        "occurrences": 4,
+        "coverage": 0.03,
+        "distinct_values": 4,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "December 2021",
+          "June 2021",
+          "October 2021",
+          "proposed as of June 2022"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "time_of_day",
+        "occurrences": 4,
+        "coverage": 0.03,
+        "distinct_values": 4,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "10pm-6am",
+          "6am-10pm",
+          "6am-10pm daily",
+          "all times"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "corridor",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Archer Avenue",
+          "Jamaica Avenue"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "direction",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "both directions",
+          "eastbound only"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "local_access",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "allowed with next-right-turn requirement",
+          "none"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "pickup_dropoff",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "allowed throughout except westbound between 147th Pl and Sutphin Blvd",
+          "permitted in westbound direction"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "street",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Johnson Street",
+          "Smith Street / Jay Street"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "through_trips_allowed",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "buses and emergency vehicles",
+          "buses, trucks, emergency vehicles"
+        ],
+        "value_counts": []
+      }
+    ],
+    "additional_keys": [
+      {
+        "field": "access_points",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "north",
+          "south"
+        ]
+      },
+      {
+        "field": "allowed_vehicles",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Access-A-Ride vans",
+          "bicycles",
+          "buses",
+          "emergency vehicles",
+          "trucks with over six wheels"
+        ]
+      },
+      {
+        "field": "date_text_normalized",
+        "occurrences": 4,
+        "coverage": 0.03,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "days",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "7 days/week"
+        ]
+      },
+      {
+        "field": "end_date",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "2024-08-31"
+        ]
+      },
+      {
+        "field": "end_date_normalized",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "enforcement_authority",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "NYPD"
+        ]
+      },
+      {
+        "field": "enforcement_methods",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "automated cameras",
+          "traffic agents"
+        ]
+      },
+      {
+        "field": "features",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "free_text",
+        "sample_values": [
+          "dedicated bus lanes",
+          "left-turn lanes",
+          "limited stops",
+          "low-floor three-door articulated buses",
+          "new bus shelters",
+          "off-board fare payment",
+          "pedestrian refuge islands",
+          "transit signal priority"
+        ]
+      },
+      {
+        "field": "hours",
+        "occurrences": 4,
+        "coverage": 0.03,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "24/7",
+          "6 AM – 10 PM / 7 days a week",
+          "6 AM – 8 PM"
+        ]
+      },
+      {
+        "field": "left_turns",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "restricted except eastbound left at 153rd St"
+        ]
+      },
+      {
+        "field": "limits",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "150th St to 160th St",
+          "Sutphin Blvd to 168th St"
+        ]
+      },
+      {
+        "field": "locations_normalized",
+        "occurrences": 31,
+        "coverage": 0.21,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "normalized_location",
+        "occurrences": 5,
+        "coverage": 0.03,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "parking_loading",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "no parking nor loading eastbound between 150th St and 160th St"
+        ]
+      },
+      {
+        "field": "passenger_vehicles_allowed",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "boolean",
+        "classification": "boolean",
+        "sample_values": []
+      },
+      {
+        "field": "restricted_to",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "bicycles",
+          "buses",
+          "trucks"
+        ]
+      },
+      {
+        "field": "restricted_vehicles",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "for-hire vehicles",
+          "passenger vehicles"
+        ]
+      },
+      {
+        "field": "start_date",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "2023-09-24"
+        ]
+      },
+      {
+        "field": "start_date_normalized",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "trucks_allowed",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "boolean",
+        "classification": "boolean",
+        "sample_values": []
+      }
+    ]
+  },
+  "closure_policy": "deferred",
+  "closure_signals": [
+    {
+      "field": "location_text",
+      "closure_readiness": "open",
+      "occurrences": 5,
+      "coverage": 0.03
+    },
+    {
+      "field": "date_text",
+      "closure_readiness": "open",
+      "occurrences": 4,
+      "coverage": 0.03
+    },
+    {
+      "field": "time_of_day",
+      "closure_readiness": "open",
+      "occurrences": 4,
+      "coverage": 0.03
+    },
+    {
+      "field": "corridor",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "direction",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "local_access",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "pickup_dropoff",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "street",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "through_trips_allowed",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.01
+    }
+  ],
+  "valid": true,
+  "schema_issues": [],
+  "warnings": [],
+  "proposal": {
+    "observation_kind": "treatment_component",
+    "field_proposals": [
+      {
+        "field": "location_text",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Corpus values are unique free-text location descriptions; insufficient pattern for enum."
+      },
+      {
+        "field": "date_text",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Values are varied date strings; low coverage and no consistent format for enum."
+      },
+      {
+        "field": "time_of_day",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Corpus includes time ranges and 'all times'; mapping to normalized values would require inventing canonical values not present."
+      },
+      {
+        "field": "corridor",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Only two distinct street names; not enough to establish enum or mapping."
+      },
+      {
+        "field": "direction",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Two descriptive values ('both directions', 'eastbound only'); cannot map to canonical without inventing values."
+      },
+      {
+        "field": "local_access",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "One value is a description; 'none' could be boolean but corpus lacks variant coverage."
+      },
+      {
+        "field": "pickup_dropoff",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Values are full sentences describing restrictions; not enum."
+      },
+      {
+        "field": "street",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Two street names; insufficient for enum."
+      },
+      {
+        "field": "through_trips_allowed",
+        "decision": "drop",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Low coverage; superseded by 'allowed_vehicles' in additional_keys which captures similar information as an array."
+      }
+    ],
+    "key_dispositions": [
+      {
+        "key": "access_points",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence with two values; not enough to determine schema role."
+      },
+      {
+        "key": "allowed_vehicles",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence; values are diverse vehicle types."
+      },
+      {
+        "key": "date_text_normalized",
+        "disposition": "promote_field",
+        "target": "date_text",
+        "rationale": "Structured normalized version of date_text; useful as parsed date object."
+      },
+      {
+        "key": "days",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Only one value ('7 days/week'); insufficient."
+      },
+      {
+        "key": "end_date",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Single date string; useful as raw end date."
+      },
+      {
+        "key": "end_date_normalized",
+        "disposition": "promote_field",
+        "target": "end_date",
+        "rationale": "Structured normalized version of end_date."
+      },
+      {
+        "key": "enforcement_authority",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence ('NYPD'); cannot generalize."
+      },
+      {
+        "key": "enforcement_methods",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence with list; sparse."
+      },
+      {
+        "key": "features",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Free-text array of treatment features; valuable descriptive field."
+      },
+      {
+        "key": "hours",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Sparse times; may overlap with time_of_day enum candidate."
+      },
+      {
+        "key": "left_turns",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single descriptive value."
+      },
+      {
+        "key": "limits",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Free-text location boundaries (e.g., '150th St to 160th St'); descriptive but not enumarable."
+      },
+      {
+        "key": "locations_normalized",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Structured location object with 21% coverage; primary location field."
+      },
+      {
+        "key": "normalized_location",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Structured location object; duplicates locations_normalized but retains for flexibility."
+      },
+      {
+        "key": "parking_loading",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single descriptive value."
+      },
+      {
+        "key": "passenger_vehicles_allowed",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Boolean with single occurrence."
+      },
+      {
+        "key": "restricted_to",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence; list of vehicle types."
+      },
+      {
+        "key": "restricted_vehicles",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence; list of vehicle types."
+      },
+      {
+        "key": "start_date",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Single date string; useful as raw start date."
+      },
+      {
+        "key": "start_date_normalized",
+        "disposition": "promote_field",
+        "target": "start_date",
+        "rationale": "Structured normalized version of start_date."
+      },
+      {
+        "key": "trucks_allowed",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Boolean with single occurrence."
+      }
+    ],
+    "notes": "Most enum_candidates are free-text due to low coverage and varied values. Several additional_keys are sparse and deferred pending more data. Structured normalized fields (dates, locations) are promoted. Time-related fields (time_of_day, hours) may merge later with more data."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T23-07-20-159Z_3564593-37cbdc01_schema-proposal-run_treatment-component",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-07-20-160Z_2026-06-08T23-07-20-159Z_3564593-37cbdc01_schema-proposal-run_treatment-component.jsonl"
+}

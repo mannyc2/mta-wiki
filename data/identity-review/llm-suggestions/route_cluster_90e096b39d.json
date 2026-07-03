@@ -1,0 +1,34 @@
+{
+  "review_run_id": "2026-06-23T14-38-47-609Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:39:03.436Z",
+  "packet_path": "data/identity-review/packets/route_cluster_90e096b39d.md",
+  "cluster_id": "route_cluster_90e096b39d",
+  "kind": "route",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "route_cluster_90e096b39d",
+    "kind": "route",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "route_bx12-local-2015-webster-map",
+          "route_bx12-plus"
+        ],
+        "reason": "Different service variants (local vs sbs). Under the Route per-kind rule of the Identity Merge Canon, different variants never merge. The payload identity fields confirm service_variant 'local' for the first record and 'sbs' for the second, which are strong identity fields that differ."
+      }
+    ],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "The two records are different service variants (local and SBS) of base route Bx12. The Identity Merge Canon explicitly states that different route service variants never merge. The decisive strong identity field is service_variant, which differs between the two records. No ambiguity: the variant is clearly specified in each record's payload_identity_fields."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-38-55-833Z_1287237-a1a3c0d7_identity-review-run_route-cluster-90e096b39d",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-38-55-841Z_2026-06-23T14-38-55-833Z_1287237-a1a3c0d7_identity-review-run_route-cluster-90e096b39d.jsonl"
+}

@@ -1,0 +1,344 @@
+{
+  "batch_id": "codex-identity-batch097",
+  "created_at": "2026-06-23T03:57:00Z",
+  "prepared_count": 10,
+  "all_pass": true,
+  "scope": {
+    "record_kind": "entity",
+    "global_only": true
+  },
+  "expected_delta": {
+    "duplicate_global_identity": -10
+  },
+  "proposed_aliases": [
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-131486-transcore-2",
+      "target_id": "entity_meeting-doc-131486-transcore",
+      "reason": "Both records identify the same global vendor, TransCore LP. They share the exact entity_name/display_name, vendor entity_type, and the same primary source meeting_doc_131486; the alias is a duplicate shorter observation of the target's broader TransCore record.",
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-131486-transcore-2",
+          "source_id": "meeting_doc_131486",
+          "block_id": "p004_c0002",
+          "page_number": 4,
+          "raw_text": "TransCore, LP"
+        },
+        {
+          "record_id": "entity_meeting-doc-131486-transcore",
+          "source_id": "meeting_doc_131486",
+          "block_id": "p055_c0003",
+          "page_number": 55,
+          "raw_text": "TransCore, LP (Nashville, Tennessee)"
+        }
+      ],
+      "validator_evidence": {
+        "exact_duplicate_group": "TransCore LP",
+        "fields_match": [
+          "record_kind=entity",
+          "entity_name=TransCore LP",
+          "display_name=TransCore LP"
+        ]
+      }
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-131681-transcore-lp",
+      "target_id": "entity_meeting-doc-131486-transcore",
+      "reason": "Both records identify the same global vendor/company, TransCore LP. The alias and target have the exact same entity_name/display_name, compatible company/vendor typing, and source evidence for the same named firm.",
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-131681-transcore-lp",
+          "source_id": "meeting_doc_131681",
+          "block_id": "p001_c0003",
+          "page_number": 1
+        },
+        {
+          "record_id": "entity_meeting-doc-131486-transcore",
+          "source_id": "meeting_doc_131486",
+          "block_id": "p055_c0003",
+          "page_number": 55,
+          "raw_text": "TransCore, LP (Nashville, Tennessee)"
+        }
+      ],
+      "validator_evidence": {
+        "exact_duplicate_group": "TransCore LP",
+        "fields_match": [
+          "record_kind=entity",
+          "entity_name=TransCore LP",
+          "display_name=TransCore LP"
+        ]
+      }
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_transcore-lp",
+      "target_id": "entity_meeting-doc-131486-transcore",
+      "reason": "Both records identify the same global company, TransCore LP. The alias and target share the exact entity_name/display_name and both source snippets identify TransCore LP in Nashville, Tennessee.",
+      "source_evidence": [
+        {
+          "record_id": "entity_transcore-lp",
+          "source_id": "meeting_doc_131811",
+          "block_id": "p041_c0003",
+          "page_number": 41,
+          "raw_text": "TransCore LP (Nashville, Tennessee)"
+        },
+        {
+          "record_id": "entity_meeting-doc-131486-transcore",
+          "source_id": "meeting_doc_131486",
+          "block_id": "p055_c0003",
+          "page_number": 55,
+          "raw_text": "TransCore, LP (Nashville, Tennessee)"
+        }
+      ],
+      "validator_evidence": {
+        "exact_duplicate_group": "TransCore LP",
+        "fields_match": [
+          "record_kind=entity",
+          "entity_name=TransCore LP",
+          "display_name=TransCore LP"
+        ]
+      }
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_siemens-mobility-inc",
+      "target_id": "entity_meeting-doc-113916-siemens",
+      "reason": "Both records identify the same global company, Siemens Mobility, Inc. The target is already the broader Siemens Mobility record with many source refs, and the alias has the exact same entity_name/display_name and compatible company typing.",
+      "source_evidence": [
+        {
+          "record_id": "entity_siemens-mobility-inc",
+          "source_id": "meeting_doc_165146",
+          "block_id": "p019_c0004",
+          "page_number": 19
+        },
+        {
+          "record_id": "entity_meeting-doc-113916-siemens",
+          "source_id": "meeting_doc_164881",
+          "block_id": "p007_c0002",
+          "page_number": 7,
+          "quote": "Siemens Mobility, Inc. (Sacramento, California)"
+        }
+      ],
+      "validator_evidence": {
+        "exact_duplicate_group": "Siemens Mobility, Inc.",
+        "fields_match": [
+          "record_kind=entity",
+          "entity_name=Siemens Mobility, Inc.",
+          "display_name=Siemens Mobility, Inc."
+        ]
+      }
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-114016-siemens-mobility",
+      "target_id": "entity_meeting-doc-113916-siemens",
+      "reason": "Both records identify the same global company/vendor, Siemens Mobility, Inc. The alias source quote names Siemens Mobility, Inc. and the target carries the same exact entity_name/display_name with broader corroborating Siemens Mobility evidence.",
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-114016-siemens-mobility",
+          "source_id": "meeting_doc_114016",
+          "block_id": "p028_c0006",
+          "page_number": 28,
+          "quote": "Siemens Mobility, Inc. (\"Siemens\")"
+        },
+        {
+          "record_id": "entity_meeting-doc-113916-siemens",
+          "source_id": "meeting_doc_164881",
+          "block_id": "p007_c0002",
+          "page_number": 7,
+          "quote": "Siemens Mobility, Inc. (Sacramento, California)"
+        }
+      ],
+      "validator_evidence": {
+        "exact_duplicate_group": "Siemens Mobility, Inc.",
+        "fields_match": [
+          "record_kind=entity",
+          "entity_name=Siemens Mobility, Inc.",
+          "display_name=Siemens Mobility, Inc."
+        ]
+      }
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_siemens-mobility-meeting-jun2023",
+      "target_id": "entity_meeting-doc-113916-siemens",
+      "reason": "Both records identify the same global company/vendor, Siemens Mobility, Inc. The alias source quote names Siemens Mobility, Inc. as the locomotive vendor, matching the target's exact entity_name/display_name and vendor/company evidence.",
+      "source_evidence": [
+        {
+          "record_id": "entity_siemens-mobility-meeting-jun2023",
+          "source_id": "meeting_doc_115141",
+          "block_id": "p015_c0009",
+          "page_number": 15,
+          "quote": "Siemens Mobility, Inc. for the design, manufacturing, testing, and delivery of six dual-mode diesel locomotives"
+        },
+        {
+          "record_id": "entity_meeting-doc-113916-siemens",
+          "source_id": "meeting_doc_164881",
+          "block_id": "p007_c0002",
+          "page_number": 7,
+          "quote": "Siemens Mobility, Inc. (Sacramento, California)"
+        }
+      ],
+      "validator_evidence": {
+        "exact_duplicate_group": "Siemens Mobility, Inc.",
+        "fields_match": [
+          "record_kind=entity",
+          "entity_name=Siemens Mobility, Inc.",
+          "display_name=Siemens Mobility, Inc."
+        ]
+      }
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-201726-mta-it-dept",
+      "target_id": "entity_mta-it",
+      "reason": "Both records identify the same global MTA IT department. The alias display name is MTA IT Department, its entity_name is MTA IT, and the target has the same entity_name with department/agency-department typing.",
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-201726-mta-it-dept",
+          "source_id": "meeting_doc_201726",
+          "block_id": "p002_c0003",
+          "page_number": 2
+        },
+        {
+          "record_id": "entity_mta-it",
+          "source_id": "meeting_doc_201751",
+          "block_id": "p002_c0004",
+          "page_number": 2,
+          "raw_text": "Requesting Department: MTA IT, Ram Seshan"
+        }
+      ],
+      "validator_evidence": {
+        "exact_duplicate_group": "MTA IT",
+        "fields_match": [
+          "record_kind=entity",
+          "entity_name=MTA IT",
+          "entity_type=department/agency department"
+        ]
+      }
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_mta-it-201766",
+      "target_id": "entity_mta-it",
+      "reason": "Both records identify the same global MTA IT department. The alias and target share entity_name MTA IT and compatible department typing.",
+      "source_evidence": [
+        {
+          "record_id": "entity_mta-it-201766",
+          "source_id": "meeting_doc_201766",
+          "block_id": "p002_c0006",
+          "page_number": 2
+        },
+        {
+          "record_id": "entity_mta-it",
+          "source_id": "meeting_doc_201751",
+          "block_id": "p002_c0004",
+          "page_number": 2,
+          "raw_text": "Requesting Department: MTA IT, Ram Seshan"
+        }
+      ],
+      "validator_evidence": {
+        "exact_duplicate_group": "MTA IT",
+        "fields_match": [
+          "record_kind=entity",
+          "entity_name=MTA IT",
+          "entity_type=department/agency department"
+        ]
+      }
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-199116-mta-it",
+      "target_id": "entity_mta-it",
+      "reason": "Both records identify the same global MTA IT department. The alias and target share entity_name/display_name MTA IT and compatible department typing.",
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-199116-mta-it",
+          "source_id": "meeting_doc_199116",
+          "block_id": "p006_c0003",
+          "page_number": 6
+        },
+        {
+          "record_id": "entity_mta-it",
+          "source_id": "meeting_doc_201751",
+          "block_id": "p002_c0004",
+          "page_number": 2,
+          "raw_text": "Requesting Department: MTA IT, Ram Seshan"
+        }
+      ],
+      "validator_evidence": {
+        "exact_duplicate_group": "MTA IT",
+        "fields_match": [
+          "record_kind=entity",
+          "entity_name=MTA IT",
+          "display_name=MTA IT"
+        ]
+      }
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-189981-mta-it",
+      "target_id": "entity_mta-it",
+      "reason": "Both records identify the same global MTA IT department. The alias display name is MTA IT Department, its raw_text/entity_name is MTA IT, and the target has the same entity_name with compatible department typing.",
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-189981-mta-it",
+          "source_id": "meeting_doc_189981",
+          "block_id": "p006_c0005",
+          "page_number": 6,
+          "raw_text": "MTA IT"
+        },
+        {
+          "record_id": "entity_mta-it",
+          "source_id": "meeting_doc_201751",
+          "block_id": "p002_c0004",
+          "page_number": 2,
+          "raw_text": "Requesting Department: MTA IT, Ram Seshan"
+        }
+      ],
+      "validator_evidence": {
+        "exact_duplicate_group": "MTA IT",
+        "fields_match": [
+          "record_kind=entity",
+          "entity_name=MTA IT",
+          "entity_type=department/agency department"
+        ]
+      }
+    }
+  ],
+  "guard_summary": {
+    "record_existence_and_kind": {
+      "command": "sqlite3 -header -column data/canonical.db \"with c(id) as (...) select c.id, r.record_kind, r.display_name, e.entity_name, e.entity_type, r.primary_source_id from c left join records r on r.record_id=c.id left join entities e on e.record_id=c.id;\"",
+      "result": "All 13 checked records (10 aliases plus 3 targets) exist with record_kind=entity."
+    },
+    "existing_alias_conflicts": {
+      "commands": [
+        "jq -r --arg id \"$id\" '.aliases.entity[$id] // empty' data/identity-overrides/merges.json",
+        "sqlite3 -header -column data/canonical.db \"with c(id) as (...) select c.id as alias_id, ia.target as existing_identity_alias from c left join identity_aliases ia on ia.kind='entity' and ia.alias=c.id where ia.alias is not null;\""
+      ],
+      "result": "No rows or jq output for the 10 proposed alias_ids."
+    },
+    "do_not_merge_conflicts": {
+      "commands": [
+        "sqlite3 -header -column data/canonical.db \"with pairs(alias,target) as (...) select p.alias,p.target,d.reason from pairs p join do_not_merge d on d.kind='entity' and ((d.record_id_a=p.alias and d.record_id_b=p.target) or (d.record_id_a=p.target and d.record_id_b=p.alias));\"",
+        "jq -r '.pairs.entity[]? | .record_ids | @tsv' data/identity-overrides/do-not-merge.json | rg '<candidate ids>'"
+      ],
+      "result": "No SQLite rows and no do-not-merge JSON hits for the proposed alias-target pairs."
+    },
+    "prior_prep_conflicts": {
+      "command": "for id in <10 proposed alias_ids>; do rg -l \"\\\"alias_id\\\": \\\"$id\\\"|\\\"alias_id\\\":\\\"$id\\\"\" data/review_notes/codex-identity-batch0*-prep.json; done",
+      "result": "No prior prep artifact through codex-identity-batch096 contains any proposed alias_id."
+    },
+    "source_validator_evidence": {
+      "commands": [
+        "sqlite3 -header -column data/canonical.db \"select lower(coalesce(e.entity_name, e.name, r.display_name)) as n, count(*) c, group_concat(r.record_id, ' | ') ids from records r join entities e on e.record_id=r.record_id where r.record_kind='entity' group by n having c>1 order by c desc, n limit 80;\"",
+        "sqlite3 -json data/canonical.db \"with ids(id) as (...) select r.record_id, r.display_name, e.entity_name, e.entity_type, r.raw_text, er.source_id, er.block_id, er.page_number, json_extract(er.ref_json,'$.source_quote') quote from ids join records r on r.record_id=ids.id join entities e on e.record_id=r.record_id left join evidence_refs er on er.record_id=r.record_id order by r.record_id, er.ordinal;\""
+      ],
+      "result": "Candidate clusters were selected from exact duplicate entity_name groups and checked against source/evidence refs for TransCore LP, Siemens Mobility, Inc., and MTA IT."
+    },
+    "forbidden_command_compliance": {
+      "result": "This prep used only local deterministic inspection and one apply_patch write. No provider/profile commands and none of canonicalize, canonicalize-wave, canonicalize-review, campaign dedup, identity-review-run, write, ask, schema-propose, ontology-normalize-run, materialize, export-jsonl, or validate were run."
+    }
+  }
+}

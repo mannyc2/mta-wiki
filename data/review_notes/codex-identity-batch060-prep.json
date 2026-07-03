@@ -1,0 +1,389 @@
+{
+  "note_id": "codex-canonical-cleanup-2026-06-22-identity-alias-batch-060-prep",
+  "created_at": "2026-06-22T21:46:48Z",
+  "author": "codex",
+  "status": "ready_for_conductor_apply",
+  "lane": "identity_prep_only",
+  "batch": "identity-batch060",
+  "scope": "Codex-only identity alias preparation after identity059; no generated output, validation CLI, materialization, export, DB repair, publish, or provider-backed commands run",
+  "context": {
+    "starting_point": "unresolved duplicate_global_identity backlog after current identity overrides and prior prep artifacts through identity059",
+    "candidate_mining_summary": {
+      "current_entity_records_scanned_from_jsonl": 2598,
+      "current_alias_overrides_considered": 359,
+      "db_identity_alias_rows_considered": 329,
+      "prior_prep_aliases_considered_through_batch059": 100,
+      "candidate_pairs_after_alias_and_do_not_merge_filters": 653,
+      "selected_high_confidence_candidates": 10,
+      "selection_policy": "Exact named person identities only; broad agencies, subsidiaries, programs, committees, hierarchy records, aliases already mapped in merges.json or canonical DB identity_aliases, and aliases already reserved by prior prep artifacts through batch059 were excluded. Known contaminated Richard Davey and broad LIRR candidates remained deferred."
+    },
+    "write_scope_used_for_this_task": [
+      "data/review_notes/codex-identity-batch060-prep.json"
+    ],
+    "paths_intentionally_not_edited": [
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json",
+      "data/submission-overrides/retired.json",
+      "data/canonical/",
+      "data/canonical.db",
+      "data/materialized/",
+      "data/submissions/",
+      "wiki/",
+      "LOG.md"
+    ],
+    "db_read_note": "Canonical records were read from data/canonical JSONL; identity_aliases were checked through a read-only SQLite handle."
+  },
+  "intended_mutation": {
+    "path": "data/identity-overrides/merges.json",
+    "operation": "add_aliases",
+    "aliases": {
+      "entity": {
+        "entity_meeting-doc-201516-jamie-torres-springer": "entity_jamie-torres-springer-cdo",
+        "entity_meeting-doc-102706-steven-weiss": "entity_steven-weiss-financial-liaison",
+        "entity_steven-weiss-mnr-fin-liaison": "entity_steven-weiss-financial-liaison",
+        "entity_meeting128861-rob-free": "entity_meeting-doc-113891-rob-free",
+        "entity_meeting196966-rob-free": "entity_meeting-doc-113891-rob-free",
+        "entity_rob-free-201601": "entity_meeting-doc-113891-rob-free",
+        "entity_justin-vonashek-201601": "entity_meeting-doc-113891-justin-vonashek",
+        "entity_meeting-doc-189856-justin-vonashek": "entity_meeting-doc-113891-justin-vonashek",
+        "entity_meeting-doc-205556-justin-vonashek": "entity_meeting-doc-113891-justin-vonashek",
+        "entity_meeting196966-justin-vonashek": "entity_meeting-doc-113891-justin-vonashek"
+      }
+    }
+  },
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "all_pass": true,
+    "canonical_records_present": true,
+    "target_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "aliases_not_in_prior_prep_artifacts": true,
+    "targets_not_aliases_in_merges_json": true,
+    "targets_not_aliases_in_identity_aliases_table": true,
+    "targets_not_aliases_in_prior_prep_artifacts": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 20,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 20,
+    "source_page_blocks_missing": [],
+    "confidence": "high"
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-201516-jamie-torres-springer",
+      "target": "entity_jamie-torres-springer-cdo",
+      "validator_duplicate_key": "entity_jamie-torres-springer",
+      "reason": "Exact person identity for Jamie Torres-Springer. The alias identifies Jamie Torres-Springer as President, MTA Construction & Development, matching the target's richer Chief Development Officer and President MTA C&D record.",
+      "evidence_refs": [
+        "meeting_doc_201516#p013_c0013",
+        "meeting_doc_113991#p013_c0009"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_jamie-torres-springer",
+          "entity_jamie-torres-springer-cdo"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-102706-steven-weiss",
+      "target": "entity_steven-weiss-financial-liaison",
+      "validator_duplicate_key": "entity_steven-weiss",
+      "reason": "Exact person identity for Steven Weiss. The alias identifies Steven Weiss as a financial liaison for Metro-North Railroad, matching the target's richer Steven Weiss financial-liaison record.",
+      "evidence_refs": [
+        "meeting_doc_102706#p001_c0004",
+        "meeting_doc_100301#p001_c0004"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_steven-weiss"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_steven-weiss-mnr-fin-liaison",
+      "target": "entity_steven-weiss-financial-liaison",
+      "validator_duplicate_key": "entity_steven-weiss",
+      "reason": "Exact person identity for Steven Weiss. The alias names Steven Weiss as Financial Liaison for MTA Metro-North Railroad, matching the target's same person and financial-liaison identity.",
+      "evidence_refs": [
+        "meeting_doc_135301#p001_c0004",
+        "meeting_doc_100301#p001_c0004"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_steven-weiss",
+          "entity_steven-weiss-financial-liaison"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting128861-rob-free",
+      "target": "entity_meeting-doc-113891-rob-free",
+      "validator_duplicate_key": "entity_rob-free",
+      "reason": "Exact person identity for Rob Free. The alias identifies Rob Free as Acting President of Long Island Rail Road, matching the target's richer Rob Free LIRR senior-operations / acting-president record.",
+      "evidence_refs": [
+        "meeting_doc_128861#p001_c0010",
+        "meeting_doc_113891#p001_c0010"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_rob-free"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting196966-rob-free",
+      "target": "entity_meeting-doc-113891-rob-free",
+      "validator_duplicate_key": "entity_rob-free",
+      "reason": "Exact person identity for Rob Free. The alias names Rob Free as President of Long Island Rail Road, matching the target's same Rob Free LIRR president/acting-president role history.",
+      "evidence_refs": [
+        "meeting_doc_196966#p001_c0010",
+        "meeting_doc_113891#p001_c0010"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_rob-free"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_rob-free-201601",
+      "target": "entity_meeting-doc-113891-rob-free",
+      "validator_duplicate_key": "entity_rob-free",
+      "reason": "Exact person identity for Rob Free. The alias identifies Rob Free as President LIRR, matching the target's same person and Long Island Rail Road president identity.",
+      "evidence_refs": [
+        "meeting_doc_201601#p001_c0010",
+        "meeting_doc_113891#p001_c0010"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_rob-free"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_justin-vonashek-201601",
+      "target": "entity_meeting-doc-113891-justin-vonashek",
+      "validator_duplicate_key": "entity_justin-vonashek",
+      "reason": "Exact person identity for Justin Vonashek. The alias identifies Justin Vonashek as President Metro-North Railroad, matching the target's richer Justin Vonashek Metro-North operations/president record.",
+      "evidence_refs": [
+        "meeting_doc_201601#p001_c0010",
+        "meeting_doc_113891#p001_c0012"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_justin-vonashek",
+          "entity_justin-vonashek-president-metro-north-railroad"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-189856-justin-vonashek",
+      "target": "entity_meeting-doc-113891-justin-vonashek",
+      "validator_duplicate_key": "entity_justin-vonashek",
+      "reason": "Exact person identity for Justin Vonashek. The alias names Justin Vonashek as Executive Vice President & Chief Operating Officer at Metro-North Railroad, matching the target's same person and role chronology.",
+      "evidence_refs": [
+        "meeting_doc_189856#p001_c0010",
+        "meeting_doc_113891#p001_c0012"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_justin-vonashek"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-205556-justin-vonashek",
+      "target": "entity_meeting-doc-113891-justin-vonashek",
+      "validator_duplicate_key": "entity_justin-vonashek",
+      "reason": "Exact person identity for Justin Vonashek. The alias identifies Justin Vonashek as President Metro-North Railroad, matching the target's same person and Metro-North president role.",
+      "evidence_refs": [
+        "meeting_doc_205556#p005_c0007",
+        "meeting_doc_113891#p001_c0012"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_justin-vonashek"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting196966-justin-vonashek",
+      "target": "entity_meeting-doc-113891-justin-vonashek",
+      "validator_duplicate_key": "entity_justin-vonashek",
+      "reason": "Exact person identity for Justin Vonashek. The alias names Justin Vonashek as President of Metro-North Railroad, matching the target's same person and president identity.",
+      "evidence_refs": [
+        "meeting_doc_196966#p001_c0008",
+        "meeting_doc_113891#p001_c0012"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_justin-vonashek"
+        ]
+      },
+      "confidence": "high"
+    }
+  ],
+  "deferred_low_confidence_examples": [
+    {
+      "candidate": "entity_lirr-meeting-doc-131666 -> entity_annual-report-2021-lirr",
+      "reason": "Broad/subsidiary agency identity; intentionally deferred under high-confidence person-only selection policy."
+    },
+    {
+      "candidate": "entity_meeting-doc-richard-davey -> entity_richard-davey-nyct-president",
+      "reason": "Exact-name/evidence match, but alias payload includes unrelated merged-field contamination; deferred for a more focused review."
+    },
+    {
+      "candidate": "Robert Free variants",
+      "reason": "Possibly related to Rob Free, but exact-string grouping separates Rob/Robert records; deferred to avoid nickname/target-churn risk in this batch."
+    }
+  ],
+  "commands_used_for_evidence": [
+    "test ! -e data/review_notes/codex-identity-batch060-prep.json && echo missing || echo exists",
+    "jq '.intended_mutation.aliases.entity, .aggregate_guard_results' data/review_notes/codex-identity-batch059-prep.json",
+    "bun --eval '<read-only duplicate_global_identity mining over readCanonicalRecordsFromJsonl(), identityKeysForRecord(), current merges.json, read-only identity_aliases, prior prep aliases through batch059, and do-not-merge guards>'",
+    "bun --eval '<read-only final guard script for canonical record presence, alias/target guard checks, prior prep exclusion, shared identity keys, raw source blocks, and source-page blocks>'",
+    "bun --eval '<read-only selected record payload/evidence summary from data/canonical JSONL>'"
+  ],
+  "commands_intentionally_not_run": [
+    "materialize",
+    "validate CLI",
+    "export-jsonl",
+    "DB repair/publish",
+    "provider-backed post-ingest commands",
+    "identity-review-run",
+    "identity-review-apply"
+  ],
+  "conductor_apply_note": "This prep artifact intentionally does not edit data/identity-overrides/merges.json or generated outputs. Re-run deterministic guards immediately before conductor application because concurrent work may update canonical DB rows, durable identity overrides, or prior prep state."
+}

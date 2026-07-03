@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T23-11-38-845Z_1976810-e9238494_ingest_2013-03-sbs-webster-bx-cb5",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T03:35:42.978Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "project_webster_ave_sbs_2013_03_cb5",
+        "decision": "new",
+        "rationale": "The observation's base_record_id (project_12-webster-ave) is its own record, and the canonical registry entry project_12-webster-ave already includes source_id 2013_03_sbs_webster_bx_cb5 in its source_ids list and has the matching alias project_webster-ave-sbs-2013-03-cb5. The observation already resolves to this canonical record. No different existing registry record is a closer match — the Webster Avenue Select Bus Service is uniquely captured by project_12-webster-ave. Per the rules, when the closest match IS the observation's own base_record_id, the decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb5",
+            "block_id": "p001_c0002",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb5",
+            "block_id": "p011_c0002",
+            "source_quote": ""
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-34-56-657Z_2111393-b0df2888_canonicalize_2026-06-10t23-11-38-845z-1976810-e9238494-ingest-2013-03-sbs-webster-bx-cb5-project-identity"
+}

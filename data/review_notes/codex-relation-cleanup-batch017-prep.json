@@ -1,0 +1,179 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-22-batch017-prep",
+  "created_at": "2026-06-22T20:30:00Z",
+  "author": "codex",
+  "scope": "Relation lane prep only; conductor must apply after batch016 and must serialize generated-output checkpoint.",
+  "bucket": "operated_by entity->entity / West-of-Hudson operator direction",
+  "exclusions": {
+    "retired_json": "data/submission-overrides/retired.json",
+    "already_prepared_relation_batches": [
+      "data/submissions/2026-06-22_codex_relation_cleanup_batch013.jsonl",
+      "data/submissions/2026-06-22_codex_relation_cleanup_batch014.jsonl",
+      "data/submissions/2026-06-22_codex_relation_cleanup_batch015.jsonl",
+      "data/submissions/2026-06-22_codex_relation_cleanup_batch016.jsonl"
+    ]
+  },
+  "run_id": "2026-06-22_codex_relation_cleanup_batch017",
+  "submitted_at": "2026-06-22T20:30:00Z",
+  "dry_run_summary": {
+    "createSubmissionEntry": "all four replacement entries generated deterministically",
+    "relationEndpointIssues": "all four returned []",
+    "validation_state": "all four accepted",
+    "validation_issues": "all four []",
+    "validation_warnings": "all four []",
+    "relationEndpointShapeIssue": "all four null for operates entity -> entity"
+  },
+  "prepared": [
+    {
+      "retired_submission_id": "sub_07401127e414fd4f",
+      "retired_record_id": "relation_meeting-doc-124166-nj-transit-operates-woh",
+      "retired_local_observation_id": "relation_meeting_doc_124166_nj_transit_operates_woh",
+      "original_shape": "operated_by entity -> entity",
+      "replacement_submission_id": "sub_99b7ea5e50a139a6",
+      "reason": "Original relation used operated_by with Metro-North entity as subject and NJ Transit entity as object. The cited blocks literally state NJ Transit operates West of Hudson trains, so reverse the endpoints and use operates.",
+      "confidence": "high",
+      "replacement_input": {
+        "source_id": "meeting_doc_124166",
+        "observation_kind": "relation",
+        "local_observation_id": "relation_batch017_njtransit_operates_mnr_woh_124166",
+        "label": "NJ Transit operates West of Hudson trains for Metro-North",
+        "payload": {
+          "relation_kind": "operates",
+          "subject_local_observation_id": "entity_meeting_doc_124166_nj_transit",
+          "object_local_observation_id": "entity_meeting_doc_124166_metro_north",
+          "description": "Replacement for malformed operated_by entity -> entity relation; source states NJ Transit operates West of Hudson trains in Metro-North context."
+        },
+        "evidence_refs": [
+          {
+            "source_id": "meeting_doc_124166",
+            "block_id": "p012_c0003",
+            "evidence_id": "meeting_doc_124166#p012_c0003",
+            "source_path": "raw/sources/meeting_doc_124166/blocks.jsonl",
+            "page_number": 12,
+            "text_sha256": "sha256:32e7ba5f9346e20d3be7a3df1a2eb3ca334c9197aefc9662481d8c1f1fe5df57",
+            "text_source": "raw_text",
+            "source_quote": "NJ Transit operates West of Hudson trains."
+          },
+          {
+            "source_id": "meeting_doc_124166",
+            "block_id": "p013_c0003",
+            "evidence_id": "meeting_doc_124166#p013_c0003",
+            "source_path": "raw/sources/meeting_doc_124166/blocks.jsonl",
+            "page_number": 13,
+            "text_sha256": "sha256:b01962082512e060865634a944e57b635090bbfa57119789743763416290891c",
+            "text_source": "raw_text",
+            "source_quote": "NJ Transit operates West of Hudson trains."
+          }
+        ]
+      }
+    },
+    {
+      "retired_submission_id": "sub_1341ac6d8b803a0e",
+      "retired_record_id": "relation_mnr-operated-by-njtransit-west-hudson",
+      "retired_local_observation_id": "relation_mnr_operated_by_njtransit_west_hudson",
+      "original_shape": "operated_by entity -> entity",
+      "replacement_submission_id": "sub_0ce23b362028270f",
+      "reason": "Original relation modeled Metro-North as operated_by NJ Transit, but the evidence sentence names NJ Transit as the operator. Reversing to NJ Transit operates Metro-North/West-of-Hudson context preserves the source-backed agency role.",
+      "confidence": "high",
+      "replacement_input": {
+        "source_id": "meeting_doc_115341",
+        "observation_kind": "relation",
+        "local_observation_id": "relation_batch017_njtransit_operates_mnr_woh_115341",
+        "label": "NJ Transit operates West of Hudson trains for Metro-North Railroad",
+        "payload": {
+          "relation_kind": "operates",
+          "subject_local_observation_id": "entity_nj_transit_115341",
+          "object_local_observation_id": "entity_metro_north_railroad_115341",
+          "description": "Replacement for malformed operated_by entity -> entity relation; source states NJ Transit operates West of Hudson trains for Metro-North Railroad."
+        },
+        "evidence_refs": [
+          {
+            "source_id": "meeting_doc_115341",
+            "block_id": "p014_c0003",
+            "evidence_id": "meeting_doc_115341#p014_c0003",
+            "source_path": "raw/sources/meeting_doc_115341/blocks.jsonl",
+            "page_number": 14,
+            "text_sha256": "sha256:32e7ba5f9346e20d3be7a3df1a2eb3ca334c9197aefc9662481d8c1f1fe5df57",
+            "text_source": "raw_text",
+            "role": "description"
+          }
+        ]
+      }
+    },
+    {
+      "retired_submission_id": "sub_747bec455952ba70",
+      "retired_record_id": "relation_njtransit-operates-woh",
+      "retired_local_observation_id": "relation_njtransit_operates_woh",
+      "original_shape": "operated_by entity -> entity",
+      "replacement_submission_id": "sub_f4647f95a1ee278d",
+      "reason": "Original relation direction/kind conflicts with endpoint rules. The same cited performance text supports NJ Transit as operator in a Metro-North West-of-Hudson context.",
+      "confidence": "high",
+      "replacement_input": {
+        "source_id": "meeting_doc_133296",
+        "observation_kind": "relation",
+        "local_observation_id": "relation_batch017_njtransit_operates_mnr_woh_133296",
+        "label": "NJ Transit operates West of Hudson Metro-North trains",
+        "payload": {
+          "relation_kind": "operates",
+          "subject_local_observation_id": "entity_meeting_doc_133296_nj_transit",
+          "object_local_observation_id": "entity_meeting_doc_133296_metro_north",
+          "description": "Replacement for malformed operated_by entity -> entity relation; source states NJ Transit operates West of Hudson trains for Metro-North Railroad."
+        },
+        "evidence_refs": [
+          {
+            "source_id": "meeting_doc_133296",
+            "block_id": "p012_c0003",
+            "evidence_id": "meeting_doc_133296#p012_c0003",
+            "source_path": "raw/sources/meeting_doc_133296/blocks.jsonl",
+            "page_number": 12,
+            "text_sha256": "sha256:32e7ba5f9346e20d3be7a3df1a2eb3ca334c9197aefc9662481d8c1f1fe5df57",
+            "text_source": "raw_text",
+            "role": "operator"
+          },
+          {
+            "source_id": "meeting_doc_133296",
+            "block_id": "p013_c0003",
+            "evidence_id": "meeting_doc_133296#p013_c0003",
+            "source_path": "raw/sources/meeting_doc_133296/blocks.jsonl",
+            "page_number": 13,
+            "text_sha256": "sha256:b01962082512e060865634a944e57b635090bbfa57119789743763416290891c",
+            "text_source": "raw_text",
+            "role": "operator"
+          }
+        ]
+      }
+    },
+    {
+      "retired_submission_id": "sub_c8aa507817429065",
+      "retired_record_id": "relation_meeting-doc-199051-nj-transit-west-hudson",
+      "retired_local_observation_id": "relation_meeting_doc_199051_nj_transit_west_hudson",
+      "original_shape": "operated_by entity -> entity",
+      "replacement_submission_id": "sub_d15ed02f2797ddea",
+      "reason": "Original relation used operated_by with an entity subject. The cited text directly supports NJ Transit as the operating entity for West-of-Hudson trains in the Metro-North record context.",
+      "confidence": "high",
+      "replacement_input": {
+        "source_id": "meeting_doc_199051",
+        "observation_kind": "relation",
+        "local_observation_id": "relation_batch017_njtransit_operates_mnr_woh_199051",
+        "label": "NJ Transit operates West of Hudson trains",
+        "payload": {
+          "relation_kind": "operates",
+          "subject_local_observation_id": "entity_meeting_doc_199051_nj_transit",
+          "object_local_observation_id": "entity_meeting_doc_199051_metro_north_railroad",
+          "description": "Replacement for malformed operated_by entity -> entity relation; source states NJ Transit operates West of Hudson trains."
+        },
+        "evidence_refs": [
+          {
+            "source_id": "meeting_doc_199051",
+            "block_id": "p010_c0003",
+            "evidence_id": "meeting_doc_199051#p010_c0003",
+            "source_path": "raw/sources/meeting_doc_199051/blocks.jsonl",
+            "page_number": 10,
+            "text_sha256": "sha256:32e7ba5f9346e20d3be7a3df1a2eb3ca334c9197aefc9662481d8c1f1fe5df57",
+            "text_source": "raw_text"
+          }
+        ]
+      }
+    }
+  ]
+}

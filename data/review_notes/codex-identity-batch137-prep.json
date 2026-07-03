@@ -1,0 +1,163 @@
+{
+  "batch_id": "identity137",
+  "global_kind": "project",
+  "prepared_count": 9,
+  "proposed_aliases": [
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-205546-bus-simulators",
+      "target_id": "project_nyct-bus-simulators",
+      "confidence": "high",
+      "reason": "Both records describe the same four new bus operator simulators deployed for operator training and retraining at Zerega and Spring Creek. The alias source says the new state-of-the-art bus simulators came online at Zerega and Spring Creek and that four simulators were deployed; the target source says there will be four simulators, one at Spring Creek Depot and three at Zerega.",
+      "evidence_refs": [
+        "meeting_doc_205546#p006_c0003",
+        "meeting_doc_205546#p011_c0011",
+        "meeting_doc_199156#p008_c0009",
+        "meeting_doc_199156#p008_c0010"
+      ],
+      "guard_notes": "Project guard satisfied: same equipment count, purpose, and facility locations. This is not a generic training program merge. Alias is absent from project merges and the pair is absent from project do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_emergency-alarm-systems-nyct-dec2023",
+      "target_id": "project_emergency-alarm-systems-nyct",
+      "confidence": "high",
+      "reason": "Both records have the same project title and contract scope for Design-Build Services for Emergency Alarm Systems at NYCT Stations and Substations. Both evidence sets describe installation at 31 subway stations and 14 substations, plus the same pilot upgrade at five subway stations and one substation.",
+      "evidence_refs": [
+        "meeting_doc_129196#p036_c0005",
+        "meeting_doc_129196#p036_c0009",
+        "meeting_doc_129101#p106_c0005",
+        "meeting_doc_129101#p106_c0009"
+      ],
+      "guard_notes": "Project guard satisfied: exact same contract number/title, locations, quantities, and pilot scope. Status wording differs by board-document time only. Alias is absent from project merges and the pair is absent from project do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_main-street-sidewalk-widening-flushing-2014",
+      "target_id": "project_main-st-sidewalk-widening",
+      "confidence": "high",
+      "reason": "Both records describe the DDC Main Street sidewalk widening in Downtown Flushing between 38th Avenue and 41st Avenue. The alias source says DDC had begun detailed design for widening sidewalks on Main Street between 38th and 41st; the target source repeats the same location and capital-project scope.",
+      "evidence_refs": [
+        "2014_brt_flushingjamaica_workshopsummary#p003_c0005",
+        "2015_09_22_brt_flushing_jamaica_cb7_presentation#p018_c0002",
+        "2015_09_22_brt_flushing_jamaica_cb7_presentation#p018_c0004"
+      ],
+      "guard_notes": "Project guard satisfied: same DDC capital sidewalk-widening project and same Main Street 38th Av to 41st Av limits. Status difference is design/planned timing, not a separate durable project. Alias is absent from project merges and the pair is absent from project do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-26826-r211",
+      "target_id": "project_r211-vehicle-procurement",
+      "confidence": "high",
+      "reason": "Both records describe the R211 vehicle procurement awarded to Kawasaki in February 2018, including the 535-car base order and the same R211A/R211S/R211T subclasses. The evidence repeats the same procurement details across the two records.",
+      "evidence_refs": [
+        "meeting_doc_26826#p015_c0002",
+        "meeting_doc_26826#p023_c0002",
+        "meeting_doc_42401#p010_c0003",
+        "meeting_doc_42401#p018_c0003"
+      ],
+      "guard_notes": "Project guard satisfied: same railcar procurement, vendor, base order size, and vehicle subclasses. This does not merge later option orders or unrelated rolling-stock records. Alias is absent from project merges and the pair is absent from project do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-ronkonkoma-double-track",
+      "target_id": "project_ronkonkoma-double-track",
+      "confidence": "high",
+      "reason": "Both records identify the Ronkonkoma Double Track system expansion. The alias evidence states the Double Track investment was completed on time in 2018; the target evidence names Ronkonkoma Double Track alongside Main Line Third Track system expansions in the same LIRR readiness context.",
+      "evidence_refs": [
+        "meeting_doc_102686#p004_c0005",
+        "meeting_doc_102686#p009_c0005",
+        "meeting_doc_100291#p004_c0012",
+        "meeting_doc_100291#p005_c0001"
+      ],
+      "guard_notes": "Project guard satisfied: same named LIRR Double Track expansion. The merge is limited to the Ronkonkoma Double Track project and does not merge broader East Side Access readiness, Main Line Third Track, or storage-yard projects mentioned nearby. Alias is absent from project merges and the pair is absent from project do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_rail-grinding-services-joint",
+      "target_id": "project_joint-agency-rail-grinding-services",
+      "confidence": "high",
+      "reason": "Both records describe the same joint-agency rail grinding services procurement for LIRR, Metro-North, and NYC Transit, awarded to Loram Maintenance of Way, Inc. The evidence repeats the same description, agencies, vendor, estimated amount, and two-year base plus three one-year options.",
+      "evidence_refs": [
+        "meeting_doc_115331#p032_c0007",
+        "meeting_doc_115331#p033_c0004",
+        "meeting_doc_115331#p033_c0006",
+        "meeting_doc_115191#p005_c0007",
+        "meeting_doc_115191#p006_c0004",
+        "meeting_doc_115191#p006_c0006"
+      ],
+      "guard_notes": "Project guard satisfied: same procurement package, vendor, agencies, contract term, and work description. This does not merge general rail-maintenance programs. Alias is absent from project merges and the pair is absent from project do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-201516-rrnfps",
+      "target_id": "project_rr-nfps-meeting-doc-170976",
+      "confidence": "high",
+      "reason": "Both records describe the Railroad New Fare Payment System (RRNFPS) for LIRR and Metro-North. The target evidence defines the system as replacement fare collection with TVMs, TOMs, back-office software, mobile ticketing, and OSVDs; the alias evidence uses the same RRNFPS title and later status reporting for the same railroad fare-payment project.",
+      "evidence_refs": [
+        "meeting_doc_201516#p041_c0005",
+        "meeting_doc_201516#p041_c0007",
+        "meeting_doc_201516#p042_c0007",
+        "meeting_doc_170976#p010_c0003",
+        "meeting_doc_170976#p012_c0003",
+        "meeting_doc_170976#p012_c0004"
+      ],
+      "guard_notes": "Project guard satisfied: same RRNFPS project and same LIRR/MNR fare-collection replacement scope. Status/completion-date differences are document-time updates. This does not merge OMNY as a whole. Alias is absent from project merges and the pair is absent from project do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-113891-norwalk-bridge",
+      "target_id": "project_norwalk-river-rail-bridge-replacement",
+      "confidence": "high",
+      "reason": "Both records describe replacement of the Norwalk River Railroad Bridge / Walk Bridge with a new vertical lift railroad bridge. The evidence on both sides describes the 127-year-old bridge, the May 12 groundbreaking, and a new bridge with independent two-track decks, higher clearance, maintainability, and faster speeds.",
+      "evidence_refs": [
+        "meeting_doc_113891#p004_c0005",
+        "meeting_doc_113891#p005_c0001",
+        "meeting_doc_111761#p005_c0011",
+        "meeting_doc_111761#p006_c0002",
+        "meeting_doc_111761#p006_c0004"
+      ],
+      "guard_notes": "Project guard satisfied: same named bridge replacement, same physical asset, and same replacement design details. This does not merge unrelated Norwalk service or Connecticut rail program records. Alias is absent from project merges and the pair is absent from project do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_lirr-third-track-meeting-doc-104741",
+      "target_id": "project_meeting-doc-main-line-third-track",
+      "confidence": "high",
+      "reason": "Both records describe the LIRR Main Line Third Track project. The target evidence states the third and final section between Carle Place and Hicksville opened on October 3, on time and $100 million under budget; alias evidence describes completion of the third and final segment between Floral Park and Hicksville and other sources in that record carry the same Main Line Third Track identity.",
+      "evidence_refs": [
+        "meeting_doc_104741#p005_c0005",
+        "meeting_doc_100306#p004_c0003",
+        "meeting_doc_102686#p009_c0005"
+      ],
+      "guard_notes": "Project guard satisfied: same LIRR Main Line Third Track expansion and completion event. Endpoint wording differs because some evidence describes the final opened segment and some describes the larger project corridor; do not use this merge to collapse Grand Central Madison, Ronkonkoma Double Track, or other readiness projects. Alias is absent from project merges and the pair is absent from project do-not-merge. Durable merge direction is alias_id -> target_id."
+    }
+  ],
+  "commands_run": [
+    "pwd && rg --files data packages raw wiki docs | rg '(^data/review_notes/|merges\\\\.json$|do-not|identity|canonical|materialized|submissions|raw/sources|wiki/sources)'",
+    "git status --short",
+    "sed -n '1,180p' LOG.md",
+    "jq 'keys' data/identity-overrides/merges.json && jq 'keys' data/identity-overrides/do-not-merge.json",
+    "ls data/review_notes | tail -80",
+    "head -5 data/canonical/projects.jsonl",
+    "sqlite3 data/canonical.db '.tables'",
+    "jq '.' data/review_notes/codex-identity-batch135-prep.json | sed -n '1,220p'",
+    "sqlite3 data/canonical.db pragma table_info inspections for records, projects, identity_aliases, do_not_merge, evidence_refs, blocks_fts, and record_sources",
+    "sed -n '1,80p' data/identity-overrides/merges.json && sed -n '1,80p' data/identity-overrides/do-not-merge.json",
+    "sqlite3 read-only duplicate project-name grouping queries against data/canonical.db",
+    "sqlite3 read-only project detail and evidence_ref queries against data/canonical.db",
+    "bun -e read-only checks against data/identity-overrides/merges.json and data/identity-overrides/do-not-merge.json",
+    "sqlite3 read-only block text inspections from blocks_fts",
+    "rg -n evidence text inspections in raw/sources/*/blocks.jsonl for selected project pairs",
+    "test -e data/review_notes/codex-identity-batch137-prep.json; echo $?",
+    "git status --short data/review_notes/codex-identity-batch137-prep.json"
+  ],
+  "commands_not_run": [
+    "no provider-backed commands or agent harness commands",
+    "no canonicalize*, campaign dedup, identity-review, write, ask, schema, ontology-normalize, or --profile/provider commands",
+    "no materialize",
+    "no export-jsonl",
+    "no full validate",
+    "no edits to canonical JSONL, wiki pages, DB, LOG.md, manifest, retired submissions, submissions, or merges.json"
+  ]
+}

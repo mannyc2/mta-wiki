@@ -1,0 +1,470 @@
+{
+  "note_id": "codex-identity-batch195-prep",
+  "batch": "identity195",
+  "created_at": "2026-06-23T10:45:54Z",
+  "prepared_count": 0,
+  "scope": {
+    "selection_note": "Codex-only identity cleanup prep after identity190. Restricted to route and corridor aliases only. identity192 already found no safe new route/corridor aliases; this pass rechecked the current live validation surface and kept the same conservative posture.",
+    "allowed_global_kinds": [
+      "route",
+      "corridor"
+    ],
+    "prepared_global_kinds": [],
+    "candidate_limit": {
+      "requested": "up to 6 very high-confidence route/corridor aliases if possible",
+      "prepared_count": 0,
+      "pass": true,
+      "note": "No current route or corridor duplicate row cleared the SBS/local/limited/express variant, route-bundle, branch/direction, corridor-extent, merge-target-chain, or borough/scope guards."
+    },
+    "write_limit": "Exactly one artifact was written: data/review_notes/codex-identity-batch195-prep.json. No merges.json, LOG.md, manifest, submissions, canonical JSONL, canonical DB, materialized outputs, wiki files, or provider-backed commands were edited or used.",
+    "provider_backed_commands_run": false
+  },
+  "deterministic_inspection": {
+    "validate_repo_duplicate_global_identity": {
+      "method": "Read-only validateRepo() via bun --eval over current canonical JSONL plus current identity overrides.",
+      "canonical_record_count": 78315,
+      "total_issue_count": 439,
+      "duplicate_global_identity_count": 439,
+      "route_or_corridor_duplicate_count": 46,
+      "route_or_corridor_messages_sample": [
+        "Global corridor records corridor_125th-st-crosstown-brt-phase2 and corridor_125th-st-manhattan share identity key corridor_125th-st-crosstown-corridor.",
+        "Global corridor records corridor_broadway-manhattan-upper and corridor_bus-fwd-2-broadway-bronx-local share identity key corridor_broadway.",
+        "Global route records route_23rd-st-sbs and route_m23-local-cb4-apr2016 share identity key route_m23.",
+        "Global route records route_b44-brt-phase2 and route_b44-sbs share identity key route_b44.",
+        "Global route records route_m34-local-2011 and route_m34-sbs share identity key route_m34."
+      ]
+    },
+    "override_state": {
+      "merge_alias_counts": {
+        "corridor": 94,
+        "entity": 973,
+        "project": 349,
+        "route": 146
+      },
+      "do_not_merge_counts": {
+        "corridor": 5,
+        "entity": 20,
+        "project": 1,
+        "route": 34
+      },
+      "candidate_surface_records_missing_from_canonical": [],
+      "merge_target_chain_collapse": {
+        "proposed_aliases_using_existing_merge_targets": 0,
+        "acyclic_collapse_proof_required": false,
+        "note": "No aliases are proposed, so no existing merge target is reused. Many live route/corridor duplicate records are already merge targets, which increases chain-collapse risk and supports deferral rather than a new alias."
+      }
+    },
+    "prior_prep_guard": {
+      "not_repeated": [
+        {
+          "alias_id": "route_m14-brt-phase2",
+          "target_id": "route_m14-ad-sbs",
+          "prior_artifact": "data/review_notes/codex-identity-batch179-prep.json",
+          "reason": "Still appears in live route duplicate rows, but it was already prepared earlier and is not repeated here."
+        },
+        {
+          "alias_id": "route_b44-brt-phase2",
+          "target_id": "route_b44-sbs",
+          "prior_artifact": "data/review_notes/codex-identity-batch182-prep.json",
+          "reason": "Still appears in live route duplicate rows, but it was already prepared earlier and is not repeated here."
+        }
+      ],
+      "prior_unsafe_guard_reconfirmed": [
+        {
+          "record_ids": [
+            "route_23rd-st-sbs",
+            "route_m23-local-cb4-apr2016"
+          ],
+          "prior_artifact": "data/review_notes/codex-identity-batch185-prep.json",
+          "reason": "Previously excluded because the safe lifecycle direction would require collapsing a current merge target and the reverse would collapse an SBS record into a local target. Current canonical payloads still distinguish M23-SBS from M23 local."
+        }
+      ]
+    }
+  },
+  "proposed_aliases": [],
+  "deferred": [
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_23rd-st-sbs",
+        "route_m23-local-cb4-apr2016"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global route records route_23rd-st-sbs and route_m23-local-cb4-apr2016 share identity key route_m23."
+      ],
+      "source_or_payload_evidence": [
+        "route_23rd-st-sbs payload route_type_normalized=select_bus_service and service_variant=sbs.",
+        "route_m23-local-cb4-apr2016 payload route_type_normalized=local and service_variant=local."
+      ],
+      "reason": "Deferred for SBS/local lifecycle and merge-target-chain risk. Shared M23 number is not enough to collapse local and SBS route records in this batch.",
+      "failed_guards": [
+        "sbs_vs_local_variant",
+        "merge_target_chain_risk"
+      ]
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_m34-local-2011",
+        "route_m34-sbs",
+        "route_m34a-sbs"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: route_m34-local-2011 collides with route_m34-sbs and route_m34a-sbs on route_m34."
+      ],
+      "source_or_payload_evidence": [
+        "route_m34-local-2011 is local service.",
+        "route_m34-sbs and route_m34a-sbs are SBS records, and M34A is a distinct route label."
+      ],
+      "reason": "Deferred for local/SBS and route-label mismatch. M34 local, M34 SBS, and M34A SBS should not be collapsed from a shared base route key.",
+      "failed_guards": [
+        "local_vs_sbs_variant",
+        "route_label_mismatch"
+      ]
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_b44-brt-phase2",
+        "route_b44-limited",
+        "route_b44-sbs"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: route_b44-brt-phase2 collides with route_b44-limited and route_b44-sbs on route_b44."
+      ],
+      "source_or_payload_evidence": [
+        "route_b44-limited is a limited-stop predecessor record.",
+        "route_b44-sbs is the SBS record.",
+        "route_b44-brt-phase2 -> route_b44-sbs was already prepared in identity182 and is not repeated."
+      ],
+      "reason": "Deferred to avoid duplicating a prior prep and to avoid collapsing generic Phase II, limited, and SBS variants without a fresh acyclic chain plan.",
+      "failed_guards": [
+        "already_prepared",
+        "limited_vs_sbs_variant",
+        "generic_phase2_route_scope"
+      ]
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_b103-ltd-proposed-draft",
+        "route_b103e-express-cb18-jun2017",
+        "route_b82-limited-brt-south-brooklyn-2017",
+        "route_b82-local",
+        "route_b82e-express-cb18-jun2017"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity reports shared base route keys for B103 and B82 records."
+      ],
+      "source_or_payload_evidence": [
+        "The colliding records explicitly include limited, local, and express variants."
+      ],
+      "reason": "Deferred for service variant mismatch. Shared base route number is not sufficient for local, limited, express, or proposed-draft route identity.",
+      "failed_guards": [
+        "limited_vs_local_vs_express_variant",
+        "draft_or_proposed_context"
+      ]
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_b46-local-limited-20110915",
+        "route_utica-ave-sbs",
+        "route_bx41-limited-2012",
+        "route_bx41-local-2012-02-brt-webster-cac1",
+        "route_webster-ave-sbs"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity reports B46 and Bx41 route-key collisions across bundled, limited, local, and SBS records."
+      ],
+      "source_or_payload_evidence": [
+        "B46 candidate includes a local-and-limited bundled record and a B46+ SBS record.",
+        "Bx41 candidates include limited, local, and BX41+ SBS records."
+      ],
+      "reason": "Deferred for route-variant and route-bundle risk. Current evidence does not justify collapsing bundled local/limited records into SBS or local/limited records into each other.",
+      "failed_guards": [
+        "route_bundle_risk",
+        "limited_vs_local_vs_sbs_variant"
+      ]
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_bx40-bx42-tremont-cb5-2024",
+        "route_bx42-tremont-cab1"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global route records route_bx40-bx42-tremont-cb5-2024 and route_bx42-tremont-cab1 share identity key route_bx42."
+      ],
+      "source_or_payload_evidence": [
+        "route_bx40-bx42-tremont-cb5-2024 is a Bx40/42 bundled record.",
+        "route_bx42-tremont-cab1 is a single Bx42 record."
+      ],
+      "reason": "Deferred for route-bundle guard. Do not collapse a Bx40/Bx42 bundle into a single Bx42 route.",
+      "failed_guards": [
+        "route_bundle_vs_single_route"
+      ]
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_bronx-flushing-jamaica-sbs",
+        "route_q44-cb12-2011",
+        "route_q52-q53-sbs-proposed-2015-05",
+        "route_q52-sbs-queens",
+        "route_q53-lga-2012",
+        "route_q53-sbs-ace",
+        "route_bx55-2012",
+        "route_bx55-lga-2012"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity reports Q44, Q52, Q53, and Bx55 route-key collisions."
+      ],
+      "source_or_payload_evidence": [
+        "Q44 collision crosses local/pre-SBS and Q44+ SBS contexts.",
+        "Q52/Q53 collision crosses bundled proposed SBS and single-route SBS records.",
+        "Q53 and Bx55 LGA records are participant-identified LaGuardia access ideas, not implemented service clusters."
+      ],
+      "reason": "Deferred for SBS/pre-SBS, bundle/single-route, and participant-idea context mismatch.",
+      "failed_guards": [
+        "sbs_vs_pre_sbs_variant",
+        "route_bundle_vs_single_route",
+        "participant_idea_vs_canonical_service"
+      ]
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_m14-ad-sbs",
+        "route_m14-brt-phase2"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global route records route_m14-ad-sbs and route_m14-brt-phase2 share identity key route_m14."
+      ],
+      "source_or_payload_evidence": [
+        "route_m14-brt-phase2 is a generic Phase II M14 route mention.",
+        "route_m14-ad-sbs is M14 A/D SBS.",
+        "route_m14-brt-phase2 -> route_m14-ad-sbs was already prepared in identity179 and is not repeated."
+      ],
+      "reason": "Deferred because the plausible alias was already prepared earlier; no duplicate proposal is made in batch195.",
+      "failed_guards": [
+        "already_prepared"
+      ]
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_broadway-manhattan-upper",
+        "corridor_bus-fwd-2-broadway-bronx-local"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global corridor records corridor_broadway-manhattan-upper and corridor_bus-fwd-2-broadway-bronx-local share identity key corridor_broadway."
+      ],
+      "source_or_payload_evidence": [
+        "corridor_broadway-manhattan-upper borough=Manhattan, limits=157th Street to 220th Street.",
+        "corridor_bus-fwd-2-broadway-bronx-local borough=Bronx, from W 225th St to W 231st St."
+      ],
+      "reason": "Deferred for borough mismatch and distinct corridor limits.",
+      "failed_guards": [
+        "borough_mismatch",
+        "corridor_extent_mismatch"
+      ]
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_125th-st-crosstown-brt-phase2",
+        "corridor_125th-st-manhattan",
+        "corridor_14th-st-crosstown-brt-phase2",
+        "corridor_14th-street-ttp"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity reports 125th Street and 14th Street crosstown corridor collisions."
+      ],
+      "source_or_payload_evidence": [
+        "Phase II crosstown records are broad candidate corridors.",
+        "125th Street target has Morningside Avenue to Second Avenue limits.",
+        "14th Street TTP target has direction-specific 3rd/8th/9th Avenue operating limits."
+      ],
+      "reason": "Deferred for broad-candidate versus specific operational corridor extent mismatch.",
+      "failed_guards": [
+        "corridor_extent_mismatch",
+        "direction_or_operating_rule_mismatch"
+      ]
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_bus-fwd-2-church-av-brooklyn-local",
+        "corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate",
+        "corridor_church-av",
+        "corridor_bay-parkway-cropsey",
+        "corridor_cropsey-ave-brooklyn-b82"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity reports Church Avenue and Cropsey Avenue corridor collisions."
+      ],
+      "source_or_payload_evidence": [
+        "Church Avenue records differ between Coney Island-to-Flatbush, Flatbush-to-Ocean Parkway, and an unlabeled SBS candidate.",
+        "Bay Parkway/Cropsey is a two-street study area, while the Cropsey candidate is a Cropsey-only B82 segment."
+      ],
+      "reason": "Deferred for corridor extent and multi-corridor bundle mismatch.",
+      "failed_guards": [
+        "corridor_extent_mismatch",
+        "multi_corridor_bundle_risk"
+      ]
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_cross-bay-blvd-2015",
+        "corridor_cross-bay-blvd-liberty-109av-2015",
+        "corridor_cross-bay-blvd-sbs-spring2015",
+        "corridor_cross-bay-boulevard-rockaway-to-165",
+        "corridor_woodhaven-cross-bay-blvds"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity reports multiple Cross Bay Boulevard collisions."
+      ],
+      "source_or_payload_evidence": [
+        "Cross Bay records include north of 165 Av, Liberty/109 Av, Rockaway Boulevard to 165 Avenue, and broader Woodhaven/Cross Bay corridor contexts."
+      ],
+      "reason": "Deferred for whole-corridor versus subsegment and distinct-limit mismatch.",
+      "failed_guards": [
+        "corridor_extent_mismatch",
+        "whole_corridor_vs_subsegment"
+      ]
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_b82-southern-brooklyn",
+        "corridor_brt-b82-mar2018-kings-highway",
+        "corridor_kings-highway-brooklyn",
+        "corridor_kings-hwy-brooklyn-b82-cb11",
+        "corridor_flatlands-ave-brooklyn-b82",
+        "corridor_flatlands-avenue-brooklyn-oct2018"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity reports B82 Southern Brooklyn, Kings Highway, and Flatlands Avenue collisions."
+      ],
+      "source_or_payload_evidence": [
+        "B82 Southern Brooklyn is a larger Kings Highway/Flatlands corridor.",
+        "Kings Highway records cite distinct Bay Parkway/Ocean/E 23/Ave K/McDonald/spot-location limits.",
+        "Flatlands records cite E 103 St to Pennsylvania Ave versus Ave I to Ralph Ave."
+      ],
+      "reason": "Deferred for larger B82 corridor versus distinct street subsegments.",
+      "failed_guards": [
+        "whole_corridor_vs_subsegment",
+        "corridor_extent_mismatch"
+      ]
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_lexington-ave-2015-01-06",
+        "corridor_lexington-ave-96th-to-60th",
+        "corridor_lexington-avenue",
+        "corridor_third-ave-36th-to-55th",
+        "corridor_third-ave-55th-to-57th",
+        "corridor_woodhaven-blvd-brt-phase2",
+        "corridor_woodhaven-blvd-dry-harbor-to-metropolitan",
+        "corridor_woodhaven-blvd-union-tpke-to-81st-rd",
+        "corridor_woodhaven-boulevard"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity reports Lexington Avenue, Third Avenue, and Woodhaven Boulevard street-name collisions."
+      ],
+      "source_or_payload_evidence": [
+        "Lexington records differ between at 125th Street, 96th-to-60th, and 60th-to-52nd contexts.",
+        "Third Avenue records have adjacent but distinct limits: 36th to 55th and 55th to 57th.",
+        "Woodhaven records include broad Phase II, Dry Harbor-to-Metropolitan, Union Turnpike-to-81st Road, and Queens Boulevard-to-107th Avenue contexts."
+      ],
+      "reason": "Deferred because shared street names are not same corridor identities without matching extents.",
+      "failed_guards": [
+        "street_name_only_collision",
+        "corridor_extent_mismatch"
+      ]
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_meeting-doc-109341-montauk-branch-amityville-babylon",
+        "corridor_meeting-doc-109341-montauk-branch-babylon-sayville"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global corridor records corridor_meeting-doc-109341-montauk-branch-amityville-babylon and corridor_meeting-doc-109341-montauk-branch-babylon-sayville share identity key corridor_montauk-branch."
+      ],
+      "source_or_payload_evidence": [
+        "One corridor is Amityville to Babylon.",
+        "The other corridor is Babylon to Sayville."
+      ],
+      "reason": "Deferred for same branch but different bounded work segments.",
+      "failed_guards": [
+        "branch_segment_mismatch",
+        "corridor_extent_mismatch"
+      ]
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_utica-ave-b46-2015-04-06",
+        "corridor_utica-ave-brt-phase2",
+        "corridor_utica-ave-st-johns-carroll-2013",
+        "corridor_utica-ave-st-johns-pl-church-ave-2013"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity reports multiple Utica Avenue corridor key collisions."
+      ],
+      "source_or_payload_evidence": [
+        "Records mix a broad BRT/B46 corridor, a Phase II candidate, and narrower Carroll/St. Johns-to-Church contexts."
+      ],
+      "reason": "Deferred for broad corridor versus narrower bus-priority segment mismatch.",
+      "failed_guards": [
+        "whole_corridor_vs_subsegment",
+        "corridor_extent_mismatch"
+      ]
+    }
+  ],
+  "blockers": [
+    "No new route/corridor alias cleared all requested guards after identity192's zero-count route/corridor pass.",
+    "Remaining live route duplicate rows are dominated by SBS/local/limited/express variants, route bundles, participant-idea route mentions, or prior-prepared aliases.",
+    "Remaining live corridor duplicate rows are dominated by street-name collisions with explicit extent, borough, branch-segment, or whole-corridor/subsegment mismatches.",
+    "Several tempting records are already merge targets in current overrides, so any proposal would require an explicit acyclic same-scope cluster-collapse proof; no such cluster was decisive in this pass."
+  ],
+  "inspections": [
+    {
+      "command": "jq '.' data/review_notes/codex-identity-batch190-prep.json; jq '.' data/review_notes/codex-identity-batch191-prep.json; jq '.' data/review_notes/codex-identity-batch192-prep.json",
+      "purpose": "Reviewed recent identity prep artifacts and confirmed identity192 already produced a zero-count route/corridor pass."
+    },
+    {
+      "command": "bun --eval 'import { validateRepo } from \"./packages/agents/src/index.ts\"; ...'",
+      "purpose": "Read-only live validation scan for duplicate_global_identity issues restricted to Global route/corridor records."
+    },
+    {
+      "command": "bun --eval 'import { readCanonicalRecords } from \"./packages/agents/src/index.ts\"; ...'",
+      "purpose": "Collected current route/corridor payload summaries plus merge and do-not-merge override counts for guard review."
+    },
+    {
+      "command": "rg selected ids across data/review_notes/codex-identity-batch*.json",
+      "purpose": "Checked likely candidates against prior Codex prep and deferred artifacts to avoid re-proposing already prepared aliases."
+    }
+  ],
+  "conductor_apply_note": "Do not apply any route or corridor aliases from this artifact. Re-run validation after other identity work; if these pairs remain, they are better candidates for do-not-merge review, identity-key refinement, or a separate explicit chain-collapse review than for a Codex-only merge batch."
+}

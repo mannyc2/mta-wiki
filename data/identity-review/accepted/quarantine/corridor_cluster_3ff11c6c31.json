@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "corridor_cluster_3ff11c6c31",
+  "kind": "corridor",
+  "packet_path": "data/identity-review/packets/corridor_cluster_3ff11c6c31.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_3ff11c6c31.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "quarantined",
+  "quarantine": {
+    "blocker": "merge corridor_e-167th-e-168th-st + corridor_east-167-168-st: record corridor_e-167th-e-168th-st is not in the current canonical corpus"
+  },
+  "original_merge_groups": [
+    [
+      "corridor_e-167th-e-168th-st",
+      "corridor_east-167-168-st"
+    ]
+  ],
+  "original_do_not_merge": []
+}

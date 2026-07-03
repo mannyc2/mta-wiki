@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "project_cluster_15471d97c3",
+  "kind": "project",
+  "packet_path": "data/identity-review/packets/project_cluster_15471d97c3.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/project_cluster_15471d97c3.json",
+  "source_review_run_id": "2026-06-23T14-42-00-000Z_manual-identity-review",
+  "model": "manual/manual",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "unscored"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "project_grand-central-artery-initiative",
+        "project_interborough-express-2020-2024"
+      ],
+      "reason": "Do not merge: the records share only a program/funding context. Program membership is relation context, not project identity, and the project names/scopes differ."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "[auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

@@ -1,0 +1,81 @@
+{
+  "run_id": "2026-06-10T17-48-04-772Z_1496766-26d4ac0d_ingest_2010-05-17-brt-nostrand-cb15",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-10T19:40:48.175Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "b44-sbs-2010-proposed-self-match",
+        "local_observation_id": "route_b44_sbs_2010_proposed",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_b44-sbs' already matches the existing canonical registry record 'route_b44-sbs', which covers B44 Select Bus Service on the Nostrand/Rogers corridor with payload route_type=select_bus_service, borough=Brooklyn. The record alias 'route_b44-sbs-2010-proposed' and source '2010_05_17_brt_nostrand_cb15' already subsume this observation. Per canonicalization rules, when the closest match is the observation's own base_record_id, the decision is 'new' — no cross-record link is required.",
+        "proposed_relations": [
+          {
+            "relation_kind": "predecessor_of",
+            "subject_id": "route_b44-limited",
+            "object_id": "route_b44-sbs",
+            "description": "B44 Limited service is explicitly stated to become B44 SBS on the Nostrand/Rogers corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_17_brt_nostrand_cb15",
+                "block_id": "p012_c0002",
+                "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_17_brt_nostrand_cb15",
+            "block_id": "p012_c0002",
+            "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+          }
+        ]
+      },
+      {
+        "decision_id": "b44-local-2010-self-match",
+        "local_observation_id": "route_b44_local_2010",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_b44-local' already matches the existing canonical registry record 'route_b44-local', which covers B44 Local service with payload route_type=local_bus, borough=Brooklyn. The record alias 'route_b44-local-2010' and source '2010_05_17_brt_nostrand_cb15' already subsume this observation. Per canonicalization rules, when the closest match is the observation's own base_record_id, the decision is 'new' — no cross-record link is required.",
+        "proposed_relations": [
+          {
+            "relation_kind": "coexists_with",
+            "subject_id": "route_b44-local",
+            "object_id": "route_b44-sbs",
+            "description": "B44 Local continues alongside B44 SBS on the Nostrand/Rogers corridor as a distinct service variant; Local Buses Serve the Full Route at All Times",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_17_brt_nostrand_cb15",
+                "block_id": "p012_c0002",
+                "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+              },
+              {
+                "source_id": "2010_05_17_brt_nostrand_cb15",
+                "block_id": "p012_c0006",
+                "source_quote": "• Local Buses Serve the Full Route at All Times"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_17_brt_nostrand_cb15",
+            "block_id": "p012_c0002",
+            "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+          },
+          {
+            "source_id": "2010_05_17_brt_nostrand_cb15",
+            "block_id": "p012_c0006",
+            "source_quote": "• Local Buses Serve the Full Route at All Times"
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-39-53-264Z_1650285-19ec3775_canonicalize_2026-06-10t17-48-04-772z-1496766-26d4ac0d-ingest-2010-05-17-brt-nostrand-cb15-route-identity"
+}

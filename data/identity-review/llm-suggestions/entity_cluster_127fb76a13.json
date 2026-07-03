@@ -1,0 +1,34 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:35:42.126Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_127fb76a13.md",
+  "cluster_id": "entity_cluster_127fb76a13",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_127fb76a13",
+    "kind": "entity",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "entity_ny-sdod-lga-aa",
+          "entity_ny-state-dot"
+        ],
+        "reason": "Person/title vs agency: entity_ny-sdod-lga-aa represents the New York State Department of Transportation as a government agency, while entity_ny-state-dot represents the Commissioner of Transportation (a person/title) based on evidence (nameplate with 'Commissioner of Transportation'). Under Identity Merge Canon, person/title vs agency never merge (test 1, contradiction). The shared identity key is overridden by the actual object type."
+      }
+    ],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "The two records denote different real-world objects: one is the NYSDOT agency, the other is a commissioner (person). Despite sharing an identity key, the evidence clearly shows they are not the same canonical entity. The canon explicitly forbids merging person/title with agency."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-35-28-252Z_1282984-902c7b1e_identity-review-run_entity-cluster-127fb76a13",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-35-28-252Z_2026-06-23T14-35-28-252Z_1282984-902c7b1e_identity-review-run_entity-cluster-127fb76a13.jsonl"
+}

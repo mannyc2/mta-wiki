@@ -1,0 +1,1165 @@
+{
+  "kind": "spreadsheet_preview",
+  "status": "ok",
+  "source_id": "meeting_doc_196971",
+  "run_id": "spreadsheet-backlog-20260623",
+  "generated_at": "2026-06-23T12:36:08.176Z",
+  "source_path": "raw/sources/meeting_doc_196971/source.xlsx",
+  "source_sha256": "sha256:0abfe8395f426201ebb8acc64eb0ba78d9887e48c045dcd065870ad887ac231d",
+  "sheets": [
+    {
+      "name": "FareboxRecoveryandOperatin",
+      "sheet_id": "1",
+      "path": "xl/worksheets/sheet1.xml",
+      "row_count": 33,
+      "cell_count": 128,
+      "rows": [
+        {
+          "row_number": 6,
+          "cells": [
+            {
+              "ref": "A6",
+              "column": "A",
+              "row": 6,
+              "style": "1",
+              "text": ""
+            },
+            {
+              "ref": "B6",
+              "column": "B",
+              "row": 6,
+              "style": "2",
+              "text": ""
+            },
+            {
+              "ref": "C6",
+              "column": "C",
+              "row": 6,
+              "style": "2",
+              "text": ""
+            },
+            {
+              "ref": "D6",
+              "column": "D",
+              "row": 6,
+              "style": "2",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 7,
+          "cells": [
+            {
+              "ref": "A7",
+              "column": "A",
+              "row": 7,
+              "style": "1",
+              "text": ""
+            },
+            {
+              "ref": "B7",
+              "column": "B",
+              "row": 7,
+              "style": "2",
+              "text": ""
+            },
+            {
+              "ref": "C7",
+              "column": "C",
+              "row": 7,
+              "style": "2",
+              "text": ""
+            },
+            {
+              "ref": "D7",
+              "column": "D",
+              "row": 7,
+              "style": "2",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 8,
+          "cells": [
+            {
+              "ref": "A8",
+              "column": "A",
+              "row": 8,
+              "type": "s",
+              "style": "3",
+              "raw_value": "0",
+              "text": "FAREBOX RECOVERY RATIOS"
+            },
+            {
+              "ref": "B8",
+              "column": "B",
+              "row": 8,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "C8",
+              "column": "C",
+              "row": 8,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "D8",
+              "column": "D",
+              "row": 8,
+              "style": "4",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 9,
+          "cells": [
+            {
+              "ref": "A9",
+              "column": "A",
+              "row": 9,
+              "style": "1",
+              "text": ""
+            },
+            {
+              "ref": "B9",
+              "column": "B",
+              "row": 9,
+              "style": "2",
+              "text": ""
+            },
+            {
+              "ref": "C9",
+              "column": "C",
+              "row": 9,
+              "style": "2",
+              "text": ""
+            },
+            {
+              "ref": "D9",
+              "column": "D",
+              "row": 9,
+              "style": "2",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 10,
+          "cells": [
+            {
+              "ref": "A10",
+              "column": "A",
+              "row": 10,
+              "style": "5",
+              "raw_value": "1",
+              "text": "1"
+            },
+            {
+              "ref": "C10",
+              "column": "C",
+              "row": 10,
+              "type": "s",
+              "style": "6",
+              "raw_value": "1",
+              "text": "2025"
+            },
+            {
+              "ref": "D10",
+              "column": "D",
+              "row": 10,
+              "type": "s",
+              "style": "6",
+              "raw_value": "1",
+              "text": "2025"
+            }
+          ]
+        },
+        {
+          "row_number": 11,
+          "cells": [
+            {
+              "ref": "A11",
+              "column": "A",
+              "row": 11,
+              "style": "7",
+              "raw_value": "2",
+              "text": "2"
+            },
+            {
+              "ref": "C11",
+              "column": "C",
+              "row": 11,
+              "type": "s",
+              "style": "9",
+              "raw_value": "3",
+              "text": "November_x000D_\r\nForecast"
+            },
+            {
+              "ref": "D11",
+              "column": "D",
+              "row": 11,
+              "type": "s",
+              "style": "9",
+              "raw_value": "4",
+              "text": "Preliminary_x000D_\r\nActual"
+            }
+          ]
+        },
+        {
+          "row_number": 12,
+          "cells": [
+            {
+              "ref": "A12",
+              "column": "A",
+              "row": 12,
+              "style": "10",
+              "text": ""
+            },
+            {
+              "ref": "B12",
+              "column": "B",
+              "row": 12,
+              "style": "11",
+              "text": ""
+            },
+            {
+              "ref": "C12",
+              "column": "C",
+              "row": 12,
+              "style": "11",
+              "text": ""
+            },
+            {
+              "ref": "D12",
+              "column": "D",
+              "row": 12,
+              "style": "11",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 13,
+          "cells": [
+            {
+              "ref": "A13",
+              "column": "A",
+              "row": 13,
+              "type": "s",
+              "style": "12",
+              "raw_value": "5",
+              "text": "New York City Transit"
+            },
+            {
+              "ref": "B13",
+              "column": "B",
+              "row": 13,
+              "style": "13",
+              "raw_value": "0.25600000000000001",
+              "text": "0.25600000000000001"
+            },
+            {
+              "ref": "C13",
+              "column": "C",
+              "row": 13,
+              "style": "13",
+              "raw_value": "0.24600000000000002",
+              "text": "0.24600000000000002"
+            },
+            {
+              "ref": "D13",
+              "column": "D",
+              "row": 13,
+              "style": "13",
+              "raw_value": "0.25600000000000001",
+              "text": "0.25600000000000001"
+            }
+          ]
+        },
+        {
+          "row_number": 14,
+          "cells": [
+            {
+              "ref": "A14",
+              "column": "A",
+              "row": 14,
+              "type": "s",
+              "style": "12",
+              "raw_value": "6",
+              "text": "Staten Island Railway"
+            },
+            {
+              "ref": "B14",
+              "column": "B",
+              "row": 14,
+              "style": "13",
+              "raw_value": "0.05",
+              "text": "0.05"
+            },
+            {
+              "ref": "C14",
+              "column": "C",
+              "row": 14,
+              "style": "13",
+              "raw_value": "3.9E-2",
+              "text": "3.9E-2"
+            },
+            {
+              "ref": "D14",
+              "column": "D",
+              "row": 14,
+              "style": "13",
+              "raw_value": "3.9E-2",
+              "text": "3.9E-2"
+            }
+          ]
+        },
+        {
+          "row_number": 15,
+          "cells": [
+            {
+              "ref": "A15",
+              "column": "A",
+              "row": 15,
+              "type": "s",
+              "style": "12",
+              "raw_value": "7",
+              "text": "Long Island Rail Road"
+            },
+            {
+              "ref": "B15",
+              "column": "B",
+              "row": 15,
+              "style": "13",
+              "raw_value": "0.185",
+              "text": "0.185"
+            },
+            {
+              "ref": "C15",
+              "column": "C",
+              "row": 15,
+              "style": "13",
+              "raw_value": "0.19",
+              "text": "0.19"
+            },
+            {
+              "ref": "D15",
+              "column": "D",
+              "row": 15,
+              "style": "13",
+              "raw_value": "0.19600000000000001",
+              "text": "0.19600000000000001"
+            }
+          ]
+        },
+        {
+          "row_number": 16,
+          "cells": [
+            {
+              "ref": "A16",
+              "column": "A",
+              "row": 16,
+              "type": "s",
+              "style": "12",
+              "raw_value": "8",
+              "text": "Metro-North Railroad"
+            },
+            {
+              "ref": "B16",
+              "column": "B",
+              "row": 16,
+              "style": "13",
+              "raw_value": "0.27300000000000002",
+              "text": "0.27300000000000002"
+            },
+            {
+              "ref": "C16",
+              "column": "C",
+              "row": 16,
+              "style": "13",
+              "raw_value": "0.27899999999999997",
+              "text": "0.27899999999999997"
+            },
+            {
+              "ref": "D16",
+              "column": "D",
+              "row": 16,
+              "style": "13",
+              "raw_value": "0.29499999999999998",
+              "text": "0.29499999999999998"
+            }
+          ]
+        },
+        {
+          "row_number": 17,
+          "cells": [
+            {
+              "ref": "A17",
+              "column": "A",
+              "row": 17,
+              "type": "s",
+              "style": "12",
+              "raw_value": "9",
+              "text": "MTA Bus Company"
+            },
+            {
+              "ref": "B17",
+              "column": "B",
+              "row": 17,
+              "style": "13",
+              "raw_value": "0.16500000000000001",
+              "text": "0.16500000000000001"
+            },
+            {
+              "ref": "C17",
+              "column": "C",
+              "row": 17,
+              "style": "13",
+              "raw_value": "0.16",
+              "text": "0.16"
+            },
+            {
+              "ref": "D17",
+              "column": "D",
+              "row": 17,
+              "style": "13",
+              "raw_value": "0.17100000000000001",
+              "text": "0.17100000000000001"
+            }
+          ]
+        },
+        {
+          "row_number": 18,
+          "cells": [
+            {
+              "ref": "A18",
+              "column": "A",
+              "row": 18,
+              "style": "14",
+              "text": ""
+            },
+            {
+              "ref": "B18",
+              "column": "B",
+              "row": 18,
+              "style": "15",
+              "text": ""
+            },
+            {
+              "ref": "C18",
+              "column": "C",
+              "row": 18,
+              "style": "15",
+              "text": ""
+            },
+            {
+              "ref": "D18",
+              "column": "D",
+              "row": 18,
+              "style": "15",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 19,
+          "cells": [
+            {
+              "ref": "A19",
+              "column": "A",
+              "row": 19,
+              "style": "16",
+              "text": ""
+            },
+            {
+              "ref": "B19",
+              "column": "B",
+              "row": 19,
+              "style": "17",
+              "text": ""
+            },
+            {
+              "ref": "C19",
+              "column": "C",
+              "row": 19,
+              "style": "17",
+              "text": ""
+            },
+            {
+              "ref": "D19",
+              "column": "D",
+              "row": 19,
+              "style": "17",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 20,
+          "cells": [
+            {
+              "ref": "A20",
+              "column": "A",
+              "row": 20,
+              "type": "s",
+              "style": "18",
+              "raw_value": "10",
+              "text": "MTA Total Agency Average"
+            },
+            {
+              "ref": "B20",
+              "column": "B",
+              "row": 20,
+              "style": "19",
+              "raw_value": "0.24",
+              "text": "0.24"
+            },
+            {
+              "ref": "C20",
+              "column": "C",
+              "row": 20,
+              "style": "19",
+              "raw_value": "0.23499999999999999",
+              "text": "0.23499999999999999"
+            },
+            {
+              "ref": "D20",
+              "column": "D",
+              "row": 20,
+              "style": "19",
+              "raw_value": "0.24399999999999999",
+              "text": "0.24399999999999999"
+            }
+          ]
+        },
+        {
+          "row_number": 21,
+          "cells": [
+            {
+              "ref": "A21",
+              "column": "A",
+              "row": 21,
+              "style": "1",
+              "text": ""
+            },
+            {
+              "ref": "B21",
+              "column": "B",
+              "row": 21,
+              "style": "20",
+              "text": ""
+            },
+            {
+              "ref": "C21",
+              "column": "C",
+              "row": 21,
+              "style": "20",
+              "text": ""
+            },
+            {
+              "ref": "D21",
+              "column": "D",
+              "row": 21,
+              "style": "20",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 22,
+          "cells": [
+            {
+              "ref": "A22",
+              "column": "A",
+              "row": 22,
+              "style": "1",
+              "text": ""
+            },
+            {
+              "ref": "B22",
+              "column": "B",
+              "row": 22,
+              "style": "20",
+              "text": ""
+            },
+            {
+              "ref": "C22",
+              "column": "C",
+              "row": 22,
+              "style": "20",
+              "text": ""
+            },
+            {
+              "ref": "D22",
+              "column": "D",
+              "row": 22,
+              "style": "20",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 23,
+          "cells": [
+            {
+              "ref": "A23",
+              "column": "A",
+              "row": 23,
+              "type": "s",
+              "style": "21",
+              "raw_value": "11",
+              "text": "FAREBOX OPERATING RATIOS"
+            },
+            {
+              "ref": "B23",
+              "column": "B",
+              "row": 23,
+              "style": "22",
+              "text": ""
+            },
+            {
+              "ref": "C23",
+              "column": "C",
+              "row": 23,
+              "style": "22",
+              "text": ""
+            },
+            {
+              "ref": "D23",
+              "column": "D",
+              "row": 23,
+              "style": "23",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 24,
+          "cells": [
+            {
+              "ref": "A24",
+              "column": "A",
+              "row": 24,
+              "style": "1",
+              "text": ""
+            },
+            {
+              "ref": "B24",
+              "column": "B",
+              "row": 24,
+              "style": "20",
+              "text": ""
+            },
+            {
+              "ref": "C24",
+              "column": "C",
+              "row": 24,
+              "style": "20",
+              "text": ""
+            },
+            {
+              "ref": "D24",
+              "column": "D",
+              "row": 24,
+              "style": "20",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 25,
+          "cells": [
+            {
+              "ref": "A25",
+              "column": "A",
+              "row": 25,
+              "style": "5",
+              "raw_value": "1",
+              "text": "1"
+            },
+            {
+              "ref": "C25",
+              "column": "C",
+              "row": 25,
+              "type": "s",
+              "style": "6",
+              "raw_value": "1",
+              "text": "2025"
+            },
+            {
+              "ref": "D25",
+              "column": "D",
+              "row": 25,
+              "type": "s",
+              "style": "6",
+              "raw_value": "1",
+              "text": "2025"
+            }
+          ]
+        },
+        {
+          "row_number": 26,
+          "cells": [
+            {
+              "ref": "A26",
+              "column": "A",
+              "row": 26,
+              "style": "7",
+              "raw_value": "2",
+              "text": "2"
+            },
+            {
+              "ref": "C26",
+              "column": "C",
+              "row": 26,
+              "type": "s",
+              "style": "9",
+              "raw_value": "3",
+              "text": "November_x000D_\r\nForecast"
+            },
+            {
+              "ref": "D26",
+              "column": "D",
+              "row": 26,
+              "type": "s",
+              "style": "9",
+              "raw_value": "12",
+              "text": "Preliminary _x000D_\r\nActual"
+            }
+          ]
+        },
+        {
+          "row_number": 27,
+          "cells": [
+            {
+              "ref": "A27",
+              "column": "A",
+              "row": 27,
+              "style": "10",
+              "text": ""
+            },
+            {
+              "ref": "B27",
+              "column": "B",
+              "row": 27,
+              "style": "11",
+              "text": ""
+            },
+            {
+              "ref": "C27",
+              "column": "C",
+              "row": 27,
+              "style": "11",
+              "text": ""
+            },
+            {
+              "ref": "D27",
+              "column": "D",
+              "row": 27,
+              "style": "11",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 28,
+          "cells": [
+            {
+              "ref": "A28",
+              "column": "A",
+              "row": 28,
+              "type": "s",
+              "style": "12",
+              "raw_value": "5",
+              "text": "New York City Transit"
+            },
+            {
+              "ref": "B28",
+              "column": "B",
+              "row": 28,
+              "style": "13",
+              "raw_value": "0.35100000000000003",
+              "text": "0.35100000000000003"
+            },
+            {
+              "ref": "C28",
+              "column": "C",
+              "row": 28,
+              "style": "13",
+              "raw_value": "0.33899999999999997",
+              "text": "0.33899999999999997"
+            },
+            {
+              "ref": "D28",
+              "column": "D",
+              "row": 28,
+              "style": "13",
+              "raw_value": "0.34100000000000003",
+              "text": "0.34100000000000003"
+            }
+          ]
+        },
+        {
+          "row_number": 29,
+          "cells": [
+            {
+              "ref": "A29",
+              "column": "A",
+              "row": 29,
+              "type": "s",
+              "style": "12",
+              "raw_value": "6",
+              "text": "Staten Island Railway"
+            },
+            {
+              "ref": "B29",
+              "column": "B",
+              "row": 29,
+              "style": "13",
+              "raw_value": "8.199999999999999E-2",
+              "text": "8.199999999999999E-2"
+            },
+            {
+              "ref": "C29",
+              "column": "C",
+              "row": 29,
+              "style": "13",
+              "raw_value": "6.7000000000000004E-2",
+              "text": "6.7000000000000004E-2"
+            },
+            {
+              "ref": "D29",
+              "column": "D",
+              "row": 29,
+              "style": "13",
+              "raw_value": "7.0999999999999994E-2",
+              "text": "7.0999999999999994E-2"
+            }
+          ]
+        },
+        {
+          "row_number": 30,
+          "cells": [
+            {
+              "ref": "A30",
+              "column": "A",
+              "row": 30,
+              "type": "s",
+              "style": "12",
+              "raw_value": "7",
+              "text": "Long Island Rail Road"
+            },
+            {
+              "ref": "B30",
+              "column": "B",
+              "row": 30,
+              "style": "13",
+              "raw_value": "0.309",
+              "text": "0.309"
+            },
+            {
+              "ref": "C30",
+              "column": "C",
+              "row": 30,
+              "style": "13",
+              "raw_value": "0.32600000000000001",
+              "text": "0.32600000000000001"
+            },
+            {
+              "ref": "D30",
+              "column": "D",
+              "row": 30,
+              "style": "13",
+              "raw_value": "0.33200000000000002",
+              "text": "0.33200000000000002"
+            }
+          ]
+        },
+        {
+          "row_number": 31,
+          "cells": [
+            {
+              "ref": "A31",
+              "column": "A",
+              "row": 31,
+              "type": "s",
+              "style": "12",
+              "raw_value": "8",
+              "text": "Metro-North Railroad"
+            },
+            {
+              "ref": "B31",
+              "column": "B",
+              "row": 31,
+              "style": "13",
+              "raw_value": "0.39799999999999996",
+              "text": "0.39799999999999996"
+            },
+            {
+              "ref": "C31",
+              "column": "C",
+              "row": 31,
+              "style": "13",
+              "raw_value": "0.40700000000000003",
+              "text": "0.40700000000000003"
+            },
+            {
+              "ref": "D31",
+              "column": "D",
+              "row": 31,
+              "style": "13",
+              "raw_value": "0.41200000000000003",
+              "text": "0.41200000000000003"
+            }
+          ]
+        },
+        {
+          "row_number": 32,
+          "cells": [
+            {
+              "ref": "A32",
+              "column": "A",
+              "row": 32,
+              "type": "s",
+              "style": "12",
+              "raw_value": "9",
+              "text": "MTA Bus Company"
+            },
+            {
+              "ref": "B32",
+              "column": "B",
+              "row": 32,
+              "style": "13",
+              "raw_value": "0.20899999999999999",
+              "text": "0.20899999999999999"
+            },
+            {
+              "ref": "C32",
+              "column": "C",
+              "row": 32,
+              "style": "13",
+              "raw_value": "0.19500000000000001",
+              "text": "0.19500000000000001"
+            },
+            {
+              "ref": "D32",
+              "column": "D",
+              "row": 32,
+              "style": "13",
+              "raw_value": "0.191",
+              "text": "0.191"
+            }
+          ]
+        },
+        {
+          "row_number": 33,
+          "cells": [
+            {
+              "ref": "A33",
+              "column": "A",
+              "row": 33,
+              "style": "24",
+              "text": ""
+            },
+            {
+              "ref": "B33",
+              "column": "B",
+              "row": 33,
+              "style": "15",
+              "text": ""
+            },
+            {
+              "ref": "C33",
+              "column": "C",
+              "row": 33,
+              "style": "15",
+              "text": ""
+            },
+            {
+              "ref": "D33",
+              "column": "D",
+              "row": 33,
+              "style": "15",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 34,
+          "cells": [
+            {
+              "ref": "A34",
+              "column": "A",
+              "row": 34,
+              "style": "25",
+              "text": ""
+            },
+            {
+              "ref": "B34",
+              "column": "B",
+              "row": 34,
+              "style": "26",
+              "text": ""
+            },
+            {
+              "ref": "C34",
+              "column": "C",
+              "row": 34,
+              "style": "26",
+              "text": ""
+            },
+            {
+              "ref": "D34",
+              "column": "D",
+              "row": 34,
+              "style": "26",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 35,
+          "cells": [
+            {
+              "ref": "A35",
+              "column": "A",
+              "row": 35,
+              "type": "s",
+              "style": "27",
+              "raw_value": "10",
+              "text": "MTA Total Agency Average"
+            },
+            {
+              "ref": "B35",
+              "column": "B",
+              "row": 35,
+              "style": "19",
+              "raw_value": "0.34",
+              "text": "0.34"
+            },
+            {
+              "ref": "C35",
+              "column": "C",
+              "row": 35,
+              "style": "19",
+              "raw_value": "0.33399999999999996",
+              "text": "0.33399999999999996"
+            },
+            {
+              "ref": "D35",
+              "column": "D",
+              "row": 35,
+              "style": "19",
+              "raw_value": "0.33600000000000002",
+              "text": "0.33600000000000002"
+            }
+          ]
+        },
+        {
+          "row_number": 36,
+          "cells": [
+            {
+              "ref": "A36",
+              "column": "A",
+              "row": 36,
+              "style": "28",
+              "text": ""
+            },
+            {
+              "ref": "B36",
+              "column": "B",
+              "row": 36,
+              "style": "29",
+              "text": ""
+            },
+            {
+              "ref": "C36",
+              "column": "C",
+              "row": 36,
+              "style": "29",
+              "text": ""
+            },
+            {
+              "ref": "D36",
+              "column": "D",
+              "row": 36,
+              "style": "29",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 37,
+          "cells": [
+            {
+              "ref": "A37",
+              "column": "A",
+              "row": 37,
+              "style": "28",
+              "text": ""
+            },
+            {
+              "ref": "B37",
+              "column": "B",
+              "row": 37,
+              "style": "29",
+              "text": ""
+            },
+            {
+              "ref": "C37",
+              "column": "C",
+              "row": 37,
+              "style": "29",
+              "text": ""
+            },
+            {
+              "ref": "D37",
+              "column": "D",
+              "row": 37,
+              "style": "29",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 38,
+          "cells": [
+            {
+              "ref": "A38",
+              "column": "A",
+              "row": 38,
+              "style": "28",
+              "text": ""
+            },
+            {
+              "ref": "B38",
+              "column": "B",
+              "row": 38,
+              "style": "29",
+              "text": ""
+            },
+            {
+              "ref": "C38",
+              "column": "C",
+              "row": 38,
+              "style": "29",
+              "text": ""
+            },
+            {
+              "ref": "D38",
+              "column": "D",
+              "row": 38,
+              "style": "29",
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

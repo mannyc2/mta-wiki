@@ -1,0 +1,377 @@
+{
+  "run_id": "2026-06-10T23-09-55-146Z_1976810-34e7c013_ingest_2013-02-sbs-webster-bx-cb3",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T03:26:32.420Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "rel-sbs-speed-faster-15-20-pct",
+        "local_observation_id": "metric_sbs_speed_faster_15_20_pct",
+        "decision": "uncertain",
+        "rationale": "General SBS performance result on page 6; evidence text 'Speed: 15-20% faster' does not name any specific corridor, project, or route — it presents system-wide SBS results as context for the Webster Avenue proposal. Cannot infer a relation without an explicit subject.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb3",
+            "block_id": "p006_c0002",
+            "source_quote": "Speed: 15- 20% faster"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-sbs-ridership-increase-5-10-pct",
+        "local_observation_id": "metric_sbs_ridership_increase_5_10_pct",
+        "decision": "uncertain",
+        "rationale": "General SBS performance result on page 6; evidence text 'Ridership: 5-10% increase in first year' does not name any specific corridor, project, or route.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb3",
+            "block_id": "p006_c0003",
+            "source_quote": "Ridership: 5-10% increase in first year"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-traffic-injury-reduction-21-pct-1st-2nd",
+        "local_observation_id": "metric_traffic_injury_reduction_21_pct_1st_2nd",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_traffic-injury-reduction-21-pct-1st-2nd",
+            "description": "21% reduction in traffic injuries on 1st and 2nd Avenues with full SBS design treatments",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb3",
+                "block_id": "p006_c0005",
+                "source_quote": "1 st and 2 nd Avenues saw a 21% reduction in traffic injuries in sections with full design treatments"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p006_c0005 explicitly names '1st and 2nd Avenues' as the subject of the 21% injury reduction metric.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb3",
+            "block_id": "p006_c0005",
+            "source_quote": "1 st and 2 nd Avenues saw a 21% reduction in traffic injuries in sections with full design treatments"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-webster-ave-corridor-length-5-3-miles",
+        "local_observation_id": "metric_webster_ave_corridor_length_5_3_miles",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_webster-ave-corridor-length-5-3-miles",
+            "description": "Webster Avenue corridor is 5.3 miles from The Hub to Williamsbridge",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb3",
+                "block_id": "p007_c0002",
+                "source_quote": "5.3 miles from The Hub to Williamsbridge"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p007_c0002 is under the heading 'The Webster Avenue corridor' and explicitly describes the corridor's length.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb3",
+            "block_id": "p007_c0002",
+            "source_quote": "5.3 miles from The Hub to Williamsbridge"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-webster-ave-residents-10min-walk",
+        "local_observation_id": "metric_webster_ave_residents_within_10min_walk",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_webster-ave-residents-within-10min-walk",
+            "description": "200,000 residents within a 10-minute walk of the Webster Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb3",
+                "block_id": "p007_c0002",
+                "source_quote": "200,000 residents"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p007_c0002 under 'The Webster Avenue corridor' names the corridor and states 200,000 residents within a 10-minute walk.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb3",
+            "block_id": "p007_c0002",
+            "source_quote": "200,000 residents"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-webster-ave-households-no-car-71-pct",
+        "local_observation_id": "metric_webster_ave_households_no_car_71_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_webster-ave-households-no-car-71-pct",
+            "description": "71% of households near the Webster Avenue corridor do not own a car",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb3",
+                "block_id": "p007_c0002",
+                "source_quote": "71% of households do not own a car"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p007_c0002 under 'The Webster Avenue corridor' names the corridor and states the car-free household percentage.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb3",
+            "block_id": "p007_c0002",
+            "source_quote": "71% of households do not own a car"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-webster-ave-transit-commute-61-pct",
+        "local_observation_id": "metric_webster_ave_transit_commute_61_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_webster-ave-transit-commute-61-pct",
+            "description": "61% of residents near the Webster Avenue corridor commute by transit",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb3",
+                "block_id": "p007_c0002",
+                "source_quote": "61% of residents commute by transit"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p007_c0002 under 'The Webster Avenue corridor' names the corridor and states the transit commute share.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb3",
+            "block_id": "p007_c0002",
+            "source_quote": "61% of residents commute by transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bx41-daily-ridership-20000",
+        "local_observation_id": "metric_bx41_daily_ridership_20000",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_bx41-ltd-webster-2012",
+            "object_id": "metric_bx41-daily-ridership-20000_5",
+            "description": "The existing Bx41 route carries over 20,000 daily riders",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb3",
+                "block_id": "p007_c0002",
+                "source_quote": "Based on the existing Bx41 route that carries over 20,000 daily riders"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p007_c0002 explicitly names 'the existing Bx41 route' as carrying over 20,000 daily riders.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb3",
+            "block_id": "p007_c0002",
+            "source_quote": "Based on the existing Bx41 route that carries over 20,000 daily riders"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-sbs-customer-satisfaction-95-pct",
+        "local_observation_id": "claim_sbs_customer_satisfaction_95_pct",
+        "decision": "uncertain",
+        "rationale": "General SBS result on page 6; evidence text 'Customer Satisfaction: over 95% satisfied or very satisfied' does not name any specific corridor, project, or route.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb3",
+            "block_id": "p006_c0004",
+            "source_quote": "Customer Satisfaction: over 95% satisfied or very satisfied"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-fare-evasion-declined-bx12-m15",
+        "local_observation_id": "claim_fare_evasion_declined_bx12_m15",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_bx12-plus",
+            "object_id": "claim_fare-evasion-declined-bx12-m15_3",
+            "description": "Fare evasion declined on the Bx12 after pre-payment was introduced",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb3",
+                "block_id": "p012_c0007",
+                "source_quote": "Fare evasion declined on the Bx12 and M15 after pre-payment was introduced"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_m15-sbs",
+            "object_id": "claim_fare-evasion-declined-bx12-m15_3",
+            "description": "Fare evasion declined on the M15 after pre-payment was introduced",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb3",
+                "block_id": "p012_c0007",
+                "source_quote": "Fare evasion declined on the Bx12 and M15 after pre-payment was introduced"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p012_c0007 explicitly names both 'Bx12' and 'M15' as routes where fare evasion declined after pre-payment.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb3",
+            "block_id": "p012_c0007",
+            "source_quote": "Fare evasion declined on the Bx12 and M15 after pre-payment was introduced"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-community-input-top-priorities",
+        "local_observation_id": "claim_community_input_top_priorities",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "claim_community-input-top-priorities_2",
+            "description": "Community input for Webster Avenue SBS: top priorities include Bx41 bus service, pedestrian safety, curb access/parking, and future development",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb3",
+                "block_id": "p009_c0002",
+                "source_quote": "Top priorities:"
+              },
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb3",
+                "block_id": "p009_c0003",
+                "source_quote": "1. Bx41 bus service 2. Pedestrian safety 3. Curb access and parking 4. Accommodating future development"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence blocks p009_c0002 and p009_c0003 are under 'Community Input' in a Webster Avenue SBS presentation and name 'Bx41 bus service' as the top priority, linking the claim to the Webster Avenue SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb3",
+            "block_id": "p009_c0002",
+            "source_quote": "Top priorities:"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb3",
+            "block_id": "p009_c0003",
+            "source_quote": "1. Bx41 bus service 2. Pedestrian safety 3. Curb access and parking 4. Accommodating future development"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bx41-sbs-start-service-2013",
+        "local_observation_id": "event_bx41_sbs_start_service_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "event_bx41-sbs-start-service-2013",
+            "description": "Start of Bx41 SBS service on Webster Avenue at end of June 2013",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb3",
+                "block_id": "p041_c0008",
+                "source_quote": "2013: Roadway markings and transit service"
+              },
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb3",
+                "block_id": "p042_c0001",
+                "source_quote": "2013 Implementation"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence blocks on pages 41-42 describe the 2013 implementation timeline for Webster Avenue SBS, placing start of service at end of June 2013. The event belongs to the Webster Avenue SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb3",
+            "block_id": "p041_c0008",
+            "source_quote": "2013: Roadway markings and transit service"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb3",
+            "block_id": "p042_c0001",
+            "source_quote": "2013 Implementation"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-webster-sbs-community-outreach",
+        "local_observation_id": "event_webster_sbs_community_outreach",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "event_webster-sbs-community-outreach",
+            "description": "Community outreach process for Webster Avenue SBS including CAC meetings, public open houses, and door-to-door surveys from February 2012 through 2013",
+            "evidence_refs": [
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb3",
+                "block_id": "p008_c0002",
+                "source_quote": "Community Advisory Committee (CAC) meetings: 1. February 6, 2012 2. May 2, 2012 3. September 27, 2012 4. November 29, 2012"
+              },
+              {
+                "source_id": "2013_02_sbs_webster_bx_cb3",
+                "block_id": "p041_c0015",
+                "source_quote": "Ongoing: Community outreach"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence blocks describe the community outreach process (CAC meetings, open houses, surveys) specifically for the Webster Avenue SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb3",
+            "block_id": "p008_c0002",
+            "source_quote": "Community Advisory Committee (CAC) meetings: 1. February 6, 2012 2. May 2, 2012 3. September 27, 2012 4. November 29, 2012"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb3",
+            "block_id": "p041_c0015",
+            "source_quote": "Ongoing: Community outreach"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-23-10-920Z_2111393-1c0c1d4c_canonicalize_2026-06-10t23-09-55-146z-1976810-34e7c013-ingest-2013-02-sbs-webster-bx-cb3-relation-linker"
+}

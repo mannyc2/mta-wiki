@@ -1,0 +1,71 @@
+{
+  "run_id": "2026-06-10T17-48-04-824Z_1496766-1c7fdb21_ingest_2010-06-22-brt-nostrand-cb9",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-10T19:49:00.058Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "canon-new-nostrand-rogers-sbs-cb9-2010",
+        "local_observation_id": "project_nostrand_rogers_sbs_cb9_2010",
+        "decision": "new",
+        "rationale": "The observation's base_record_id project_nostrand-rogers-sbs-cb9-2010 already exists in the registry with identical payload — same project name 'Nostrand Ave / Rogers Ave Select Bus Service', same project_type 'Select Bus Service (BRT)', same corridor from Williamsburg Bridge to Sheepshead Bay, same status 'proposed', and same source '2010_06_22_brt_nostrand_cb9'. The observation already resolves to this record; no linking to a different record is warranted.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_22_brt_nostrand_cb9",
+            "block_id": "p001_c0001",
+            "source_quote": "Nostrand Ave / Rogers Ave Select Bus Service Community Board 9 Tuesday, June 22, 2010"
+          },
+          {
+            "source_id": "2010_06_22_brt_nostrand_cb9",
+            "block_id": "p008_c0002",
+            "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+          },
+          {
+            "source_id": "2010_06_22_brt_nostrand_cb9",
+            "block_id": "p007_c0002",
+            "source_quote": "9.3 miles from Williamsburg Bridge to Sheepshead Bay"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_project",
+            "subject_id": "project_nostrand-rogers-sbs-cb9-2010",
+            "object_id": "project_nostrand-rogers-sbs",
+            "description": "Both records describe the same Nostrand Ave/Rogers Ave SBS project — converting B44 Limited to SBS along the same corridor from Williamsburg Bridge to Sheepshead Bay in Brooklyn. The CB9 presentation record and the general project record differ only in source provenance (specific community board presentation vs. multiple CAC/CB presentations).",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_22_brt_nostrand_cb9",
+                "block_id": "p001_c0001",
+                "source_quote": "Nostrand Ave / Rogers Ave Select Bus Service Community Board 9 Tuesday, June 22, 2010"
+              },
+              {
+                "source_id": "2010_06_22_brt_nostrand_cb9",
+                "block_id": "p008_c0002",
+                "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+              }
+            ]
+          },
+          {
+            "relation_kind": "earlier_phase_of",
+            "subject_id": "project_nostrand-rogers-sbs-cb9-2010",
+            "object_id": "project_b44-sbs-implementation",
+            "description": "The June 2010 CB9 presentation represents the planning and community outreach phase of the Nostrand/Rogers SBS project. This project was later implemented as the B44 Select Bus Service on Nostrand Avenue, completed in November 2013.",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_22_brt_nostrand_cb9",
+                "block_id": "p016_c0002",
+                "source_quote": "The diagram illustrates a timeline for the Nostrand / Rogers SBS project... 2012: Winter: SBS Implementation (in a box)."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-47-25-736Z_1663150-9308e4f3_canonicalize_2026-06-10t17-48-04-824z-1496766-1c7fdb21-ingest-2010-06-22-brt-nostrand-cb9-project-identity"
+}

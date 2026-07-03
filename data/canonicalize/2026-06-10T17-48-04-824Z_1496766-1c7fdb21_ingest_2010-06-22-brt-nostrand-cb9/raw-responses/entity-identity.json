@@ -1,0 +1,54 @@
+{
+  "run_id": "2026-06-10T17-48-04-824Z_1496766-1c7fdb21_ingest_2010-06-22-brt-nostrand-cb9",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-10T19:47:51.480Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "canon-new-mta-nyct-2010-brt-nostrand-cb9",
+        "local_observation_id": "entity_mta_nyct_presenter_2010_brt_nostrand_cb9",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_mta-nyct matches the existing registry record entity_mta-nyct (MTA New York City Transit, agency). The observation already resolves to this record; no linking to a different record is warranted.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_22_brt_nostrand_cb9",
+            "block_id": "p001_c0003",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "canon-new-nyc-dot-2010-brt-nostrand-cb9",
+        "local_observation_id": "entity_nyc_dot_presenter_2010_brt_nostrand_cb9",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_nyc-dot matches the existing registry record entity_nyc-dot (NYC Department of Transportation, agency). The observation already resolves to this record; no linking to a different record is warranted.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_22_brt_nostrand_cb9",
+            "block_id": "p009_c0004",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "canon-new-cb9-brooklyn-2010-brt-nostrand",
+        "local_observation_id": "entity_community_board_9_brooklyn_brt_nostrand",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_community-board-9-brooklyn-brt-nostrand matches the existing registry record exactly. The observation already resolves to this record; no linking to a different record is warranted.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_22_brt_nostrand_cb9",
+            "block_id": "p001_c0001",
+            "source_quote": ""
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-47-25-736Z_1663150-ec20bc3b_canonicalize_2026-06-10t17-48-04-824z-1496766-1c7fdb21-ingest-2010-06-22-brt-nostrand-cb9-entity-identity"
+}

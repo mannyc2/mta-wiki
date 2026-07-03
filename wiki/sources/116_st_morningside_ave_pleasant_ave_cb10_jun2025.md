@@ -1,0 +1,483 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_116-st-morningside-ave-pleasant-ave-cb10-jun2025"
+record_kind: "source"
+display_name: "116th Street Bus & Pedestrian Priority Project – Updated Proposal, CB10 June 2025"
+source_id: "116_st_morningside_ave_pleasant_ave_cb10_jun2025"
+source_ids:
+  - "116_st_morningside_ave_pleasant_ave_cb10_jun2025"
+local_observation_id: "source_116_st_morningside_ave_cb10_jun2025"
+local_observation_ids:
+  - "source_116_st_morningside_ave_cb10_jun2025"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-09T16:22:00.349Z"
+submission_ids:
+  - "sub_652a364e6ef39dea"
+payload:
+  authority_tier: "board_material"
+  content_type: "presentation"
+  date_text: "June 2025"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2025-06"
+    precision: "month"
+    raw_text: "June 2025"
+  description: "Presentation to Manhattan Community Board 10's Transportation, Historic Preservation & Landmarks Committee regarding the 116th Street Bus & Pedestrian Priority Project updated proposal."
+  published_date_normalized: "2025-06"
+  published_date_precision: "month"
+  publisher: "MTA / NYC DOT"
+  title: "116th Street Bus & Pedestrian Priority Project – Updated Proposal"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "116_st_morningside_ave_pleasant_ave_cb10_jun2025#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "116_st_morningside_ave_pleasant_ave_cb10_jun2025"
+    source_path: "raw/sources/116_st_morningside_ave_pleasant_ave_cb10_jun2025/blocks.jsonl"
+    text_sha256: "sha256:808d74addd00419e24bc72ef29829f963443d289238edc425e00a222c1992266"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "116_st_morningside_ave_pleasant_ave_cb10_jun2025#p001_c0002"
+    page_number: 1
+    role: "subtitle"
+    source_id: "116_st_morningside_ave_pleasant_ave_cb10_jun2025"
+    source_path: "raw/sources/116_st_morningside_ave_pleasant_ave_cb10_jun2025/blocks.jsonl"
+    text_sha256: "sha256:aedd33b685dd259c59029a7ce4bb13ed2773496aeaf9bf27a06d9fd90581c932"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "116_st_morningside_ave_pleasant_ave_cb10_jun2025#p001_c0003"
+    page_number: 1
+    role: "date"
+    source_id: "116_st_morningside_ave_pleasant_ave_cb10_jun2025"
+    source_path: "raw/sources/116_st_morningside_ave_pleasant_ave_cb10_jun2025/blocks.jsonl"
+    text_sha256: "sha256:964da9b5c7ac7cf08f2d6d519e1ecd23f8f1949beedee6585f30ae7b743da771"
+    text_source: "raw_text"
+---
+
+# 116th Street, Morningside Avenue to Pleasant Avenue - presented to Manhattan Community Board 10 in June 2025 (pdf)
+
+source_id: 116_st_morningside_ave_pleasant_ave_cb10_jun2025
+citation: cite block ids exactly as shown in square brackets
+document: 281 block(s)
+
+## Page 1
+
+### [p001_c0001] 116 th Street Bus & Pedestrian Priority Project – Updated Proposal
+[p001_c0002] CB10's Transportation, Historic Preservation & Landmarks Committee
+[p001_c0003] June 2025
+[p001_c0004] BETTERBUSES
+
+## Page 2
+
+### [p002_c0001] Table of Contents
+- [p002_c0002] 1. Introduction 2. Outreach & Feedback to Date 3. Updated Proposed Design 4. Updated Parking Changes 5. Summary 6. Timeline
+[p002_c0003] _2_
+[p002_c0004] _The MTA logo, consisting of the letters 'MTA' in white inside a black circle._
+[p002_c0005] _The BETTERBUSES logo, with 'BETTER' in blue and 'BUSES' in green._
+[p002_c0006] _The NEW YORK CITY DOT logo, featuring the text 'NEW YORK CITY' above 'DOT' and a stylized 'DOT' graphic._
+
+## Page 3
+
+### [p003_c0001] Introduction
+[p003_c0002] _3_
+[p003_c0003] _The MTA logo, consisting of the letters 'MTA' in white inside a black circle._
+[p003_c0004] _The BETTERBUSES logo, with 'BETTER' in blue and 'BUSES' in green._
+[p003_c0005] _The New York City Department of Transportation (NYC DOT) logo, featuring the text 'NEW YORK CITY' above 'DOT' and a stylized 'DOT' graphic._
+
+## Page 4
+
+### [p004_c0001] Greater Project Area
+### [p004_c0002] Key:
+[p004_c0003] — Study Area
+> [p004_c0004] A map of the Greater Project Area in Manhattan, New York City. The study area is outlined by a solid black line, bounded by Manhattan Ave to the west, Malcolm X Blvd. to the north, Pleasant Ave. to the east, and Lexington Av. to the south. The map shows a grid of streets, including West 113 St. through West 121 St. and East 113 St. through East 129 St. Key landmarks include Central Park, Marcus Garvey Park, and East River Plaza. Bus stops are marked with colored circles: orange circles labeled 'B' and 'C' are located on Manhattan Ave and West 113 St.; red circles labeled '2' and '3' are on 116th St. and 5th Av.; and a green circle labeled '6' is on Lexington Av. Bus route labels CB9, CB10, and CB11 are placed near the study area boundary. A north arrow is in the bottom left corner.
+[p004_c0005] _4_
+
+## Page 5
+
+### [p005_c0001] Why 116 th Street?
+- [p005_c0002] • CB10 Study area: 116 th St., Manhattan Av., and Morningside Av. b/n 114 th St. & 113 th St. – Total: 1.1 miles • Over 64,000+ daily bus passengers across 10 bus routes: – M3, M7, M102, M116, BxM6, BxM7, BxM8, BxM9, BxM11 • Critical crosstown service with connections to 2 3 6 B C and seven different bus routes • Important neighborhood corridor for shopping and restaurants
+[p005_c0003] _Time Lapse Camera Footage W. 116 th St & Frederick Douglass Blvd._
+[p005_c0004] _5_
+
+## Page 6
+
+### [p006_c0001] Demographics
+### [p006_c0002] CB10 Study Area
+- [p006_c0003] • 62,800 residents within \frac{1}{4} mile • 76% of households are car-free – Above city average of 55% • 86% commute to work via public transit, walking, or biking – Above city average of 71%
+> [p006_c0004] A map of the CB10 Study Area in New York City. A large, irregularly shaped gray shaded region covers a portion of the city, primarily in the Bronx and Queens. A red line starts at a green 'Start' marker and ends at a red 'End' marker, representing a travel route. The map includes street names and landmarks such as Harlem, Central Park, and various parks and schools.
+### [p006_c0005] Travel to Work
+> [p006_c0006] Method Percentage Transit 69% Walk 15% Car 11% Bike 2% Other 2%
+### [p006_c0007] Car Access by Household
+> [p006_c0008] Access Percentage Car-Free 76% 1 Car 21% Other 3%
+[p006_c0009] Source: 2022 American Community Survey
+[p006_c0010] _6_
+
+## Page 7
+
+### [p007_c0001] Crash History
+- [p007_c0002] From 2020-2024, 248 people were injured in crashes in the CB10 study area on 116 th St and Manhattan Av, ranking in the top 33% of corridors in Manhattan 12 people severely injured 2 people were killed Vision Zero Priority Corridor and Zone, with one Priority Intersection at Malcolm X Blvd. & 116 th St.
+> [p007_c0003] W. 116 th St. and ACP
+[p007_c0004]
+
+```text
+Study Area Injury Summary 2020-2024 (5 years) Total Injuries Severe Injuries Fatalities KSI Pedestrian 59 1 1 2 Bicyclists 56 4 0 4 Motor Vehicle Occupant 115 7 1 8 Other Motorized 18 0 0 0 Total 248 12 2 14
+```
+[p007_c0005] KSI = Killed or Severely Injured. Source: NYC DOT
+[p007_c0006] _7_
+
+## Page 8
+
+### [p008_c0001] Bus Speeds – Mid-Day
+- [p008_c0002] • Slow and unreliable bus service along 116 th St. • Buses move slowly all day and less than 4 mph in some segments • Weekday congestion causes 785 hours of delay to M116 passengers daily
+> [p008_c0003] M116 Bus Speeds October 2024 | Weekdays 10 AM - 3 PM Source: MTA NYCT Speed Range (MPH) Color < 4 Dark Red 4 - 5 Red 5 - 6 Orange 6 - 7 Light Orange > 7 Yellow
+[p008_c0004] _8_
+[p008_c0005] _BETTERBUSES_
+
+## Page 9
+
+### [p009_c0001] Daily Bus Stop Usage
+- [p009_c0002] Stops near subway and local bus connections are the most heavily used
+### [p009_c0003] Stop Level Ridership* in the 116 St Study Area
+[p009_c0004] October 2024 | Weekdays
+[p009_c0005] *Uses M3, M7, M102, and M116 ridership data. Only routes that travel in the study area were included.
+[p009_c0006] Total Boardings and Alightings by Stop
+- [p009_c0007] < 500 501 - 1000 1001 - 1500 1501 - 2000 > 2000
+[p009_c0008] _9_
+
+## Page 10
+
+### [p010_c0001] Daily On-Bus Ridership
+- [p010_c0002] High ridership across 10 bus routes that use much of the study area
+### [p010_c0003] On-bus Ridership* in the 116 St Study Area
+[p010_c0004] October 2024 | Weekdays
+[p010_c0005] *Uses M3, M7, M102, M116, BxM1, BxM6, BxM7, BxM8, BxM9, BxM11 leave loads data. Only routes that travel in the study area were included.
+> [p010_c0006] Legend: < 1500 1501 - 3000 3001 - 4500 4501 - 6000 > 6000
+[p010_c0007] _10_
+
+## Page 11
+
+### [p011_c0001] Outreach & Feedback to Date
+[p011_c0002] _11_
+[p011_c0003] _The MTA logo, consisting of the letters 'MTA' in white inside a black circle._
+[p011_c0004] _The BETTERBUSES logo, featuring a stylized blue and green graphic followed by the text 'BETTERBUSES' in a sans-serif font._
+[p011_c0005] _The New York City Department of Transportation (NYC DOT) logo, which includes the text 'NEW YORK CITY' above a stylized 'DOT' graphic._
+
+## Page 12
+
+### [p012_c0001] What We've Heard
+### [p012_c0002] Feedback we received
+### [p012_c0003] Pedestrian Safety
+- [p012_c0004] • Add pedestrian space at intersections to make safer to walk/shop
+### [p012_c0005] Traffic Congestion
+- [p012_c0006] • Continue detailed traffic analysis to determine potential effects of lane reduction
+### [p012_c0007] Access to Morningside Park
+- [p012_c0008] • Rethink bus stop removals to prioritize accessible access to Morningside Park
+### [p012_c0009] Loading Needs
+- [p012_c0010] • Propose truck/neighborhood loading zones and short-term parking where appropriate
+### [p012_c0011] Enforcement
+- [p012_c0012] • DOT stationary cameras and ACE on bus cameras to enforce bus lane • Coordinate with NYPD
+### [p012_c0013] Next steps
+[p012_c0014] _12_
+
+## Page 13
+
+### [p013_c0001] Pedestrian and Small Business Outreach
+[p013_c0002] Outreach to small businesses, pedestrians & bus riders confirm interest in streetscape improvements along 116 th .
+> [p013_c0003] A woman with long dark hair and a red patterned scarf holds a sign that reads: "My Neighborhood Is/Mi Barrio es... HARLEM I ride the/Tomo el: M116 M102 I wish the bus would/Me gustaría que el autobús: FASTER SERVICE".
+> [p013_c0004] A woman with short dark hair holds a sign that reads: "My Neighborhood Is/Mi Barrio es... Central Harlem I ride the/Tomo el: M116 M102 M102 I wish the bus would/Me gustaría que el autobús: More Buses, (more) Digital stops, cleaner".
+> [p013_c0005] A woman with long braids holds a sign that reads: "My Neighborhood Is/Mi Barrio es... HARLEM I ride the/Tomo el: M116 M102 I wish the bus would/Me gustaría que el autobús: Faster Service".
+> [p013_c0006] A family (mother, father, and two children) holds a sign that reads: "My Neighborhood Is/Mi Barrio es... Harlem I ride the/Tomo el: 2/3/14/5/16 M116/M102 M102 I wish the bus would/Me gustaría que el autobús: Be on time on 125th & 14th on 116th".
+> [p013_c0007] A sign for Jumbo Hamburgers at 116th St. displays project details for the 116th Street Block & Pedestrian Priority Project. The sign includes a map and lists project goals: "Improve Bus Access & Reliability" and "Pedestrian Safety".
+> [p013_c0008] A photograph of a New York City DOT booth at an outdoor event. A staff member is interacting with a woman at a table covered with informational materials.
+[p013_c0009] _5/31/25 at La Marqueta Block Party_
+[p013_c0010] _13_
+
+## Page 14
+
+### [p014_c0001] Proposed Design
+[p014_c0002] _14_
+[p014_c0003] _The MTA logo, consisting of the letters 'MTA' in white inside a black circle._
+[p014_c0004] _The BETTERBUSES logo, featuring a stylized blue and green graphic followed by the text 'BETTERBUSES' in blue and green._
+[p014_c0005] _The New York City Department of Transportation (NYC DOT) logo, featuring the text 'NEW YORK CITY' above 'DOT' and a stylized graphic of a bus._
+
+## Page 15
+
+### [p015_c0001] 116 th Street Bus & Pedestrian Priority Project Overview*
+[p015_c0002] Subject to change due to traffic analysis and engineering judgement
+[p015_c0003] *ANNOTATIONS ARE NOT TO SCALE. Intended for illustration purposes only
+### [p015_c0004] Key:
+- [p015_c0005] --- Community Board Boundary — Offset Bus Lane — Curbside Bus Lane/Bus Stop ⦿ Bus Queue-Jump Signal — Concrete Pedestrian Space — Painted Pedestrian Space/Daylighting — Left Turn Lane — Capital Project Overlap — Parking-Protected Bike Lane — Bus Stop Removals – New Parking — Sign-Only Daylighting
+[p015_c0006] _15_
+
+## Page 16
+
+### [p016_c0001] Proposed Pedestrian Space (1 Block)
+[p016_c0002] Repurpose Slip Lane for Pedestrians & Potential Programming, speed up circulation
+> [p016_c0003] Existing Condition Morningside Av. at W. 113 th St.
+> [p016_c0004] Proposed Condition Grand Concourse at E. 158 th Street, Bronx
+[p016_c0005] Saves drivers and bus riders time, by reducing signal delay
+[p016_c0006] Key: — Pedestrian Space
+> [p016_c0007] Map showing the proposed pedestrian space area highlighted in yellow, located between Morningside Av. and Manhattan Av. near the intersection of W. 113 th St. and W. 114 th St. The map also shows surrounding streets like West 110 St, West 115 St, West 112 St, and West 114 St. Bus stops CB9, CB10, and CB7 are indicated.
+[p016_c0008] _16 BETTERBUSES_
+[p016_c0009] _NEW YORK CITY DOT_
+
+## Page 17
+
+### [p017_c0001] Proposed Pedestrian Space Benefits
+- [p017_c0002] • 8,600+ ft 2 of programmable plaza space • Hardened by granite blocks and vertical elements • Simpler traffic signal cycle will save time for drivers and bus riders on Morningside Avenue and Manhattan Avenue
+[p017_c0003] _Three-Phase Signal (seconds per 90s light cycle)_
+> [p017_c0004] Street Green Time (seconds) Manhattan Ave NB/SB 45 113th St 23 Morningside Ave SB/Manhattan Ave NB 22
+[p017_c0005] ■ Manhattan Ave NB/SB ■ 113th St ■ Morningside Ave SB/Manhattan Ave NB
+[p017_c0006] _Two-Phase Signal (seconds per 90s light cycle)_
+> [p017_c0007] Street Green Time (seconds) Manhattan Ave NB/SB 67 113th St 23
+[p017_c0008] +22s of green time for NB/SB travel
+[p017_c0009] ■ Manhattan Ave NB/SB    ■ 113th St
+[p017_c0010] _17_
+
+## Page 18
+
+### [p018_c0001] Three (3) Proposed Concrete Pedestrian Islands
+[p018_c0002] Protected by bollards, with potential trees
+> [p018_c0003] A map showing the intersection of 110th St. and 5th Av. in the CB9 and CB10 blocks. A purple line indicates the proposed concrete pedestrian island at the intersection. A north arrow is present.
+> [p018_c0004] A detailed map of the intersection of 116th St. and 5th Av. A purple line indicates the proposed concrete pedestrian island. A north arrow is present.
+[p018_c0005] Key:
+[p018_c0006] Concrete Pedestrian Island
+> [p018_c0007] A photograph showing the existing condition of the intersection at E. 116th St. & 1st Av. Pedestrians are crossing the street. A sign for 'RESTAURANT FOR LEA' is visible in the background.
+> [p018_c0008] A photograph showing the proposed condition of the intersection at Grand St, Manhattan. A concrete pedestrian island is shown, and a blue arrow points to it. Pedestrians, including a family with a stroller, are crossing the street.
+[p018_c0009] Calms left-turning drivers, adds refuge space to intersection
+[p018_c0010] _18_
+
+## Page 19
+
+### [p019_c0001] Nine (9) Proposed Left Turn Lanes
+[p019_c0002] Maintains traffic flow and improves safety
+[p019_c0003] Key: Left Turn Bay
+[p019_c0004] Adds organization and safety for all road users
+[p019_c0005] _MTA BETTERBUSES_
+[p019_c0006] _19_
+[p019_c0007] _NEW YORK CITY DOT_
+
+## Page 20
+
+### [p020_c0001] One (1) Proposed Concrete Pedestrian Curb Extension
+[p020_c0002] Shortens crossing distance with expanded sidewalk space
+> [p020_c0003] Existing Condition 116 th St. & Adam Clayton Powell Jr. Dr.
+> [p020_c0004] Proposed Condition George St., Queens
+> [p020_c0005] CB10 Adam Clayton Powell Jr Blvd 116 th St. West 115 St West 114 St West 113 St CB10
+[p020_c0006] Reduces crossing distance by 12%
+### [p020_c0007] Key:
+[p020_c0008] Concrete Pedestrian Space
+[p020_c0009] _20_
+
+## Page 21
+
+### [p021_c0001] Three (3) Proposed Signalized Mid-Block Crossings
+[p021_c0002] Located between Frederick Douglass Blvd and 5 th Avenue
+[p021_c0003]
+
+```text
+Location Crossing Pedestrians / Hour Between Fredrick Douglass Blvd & Adam Clayton Powell Jr Blvd 330 Between Adam Clayton Powell Jr Blvd & Malcolm X Blvd 240 Between Malcolm X Blvd & 5 th Av 100
+```
+[p021_c0004] Key:
+[p021_c0005] █ Mid-Block Crossing
+[p021_c0006] Reduces crossing distance by 27%
+[p021_c0007] _21_
+[p021_c0008] _BETTERBUSES_
+
+## Page 22
+
+### [p022_c0001] Proposed Offset Bus Lane (4 Blocks)
+[p022_c0002] On 116 th St from Manhattan Av. to 5 th Av., maintains parking throughout
+> [p022_c0003] Existing Condition North Sidewalk 19' Shared Parking & Travel Lane 11' Travel Lane 11' Travel Lane 19' Shared Parking & Travel Lane South Sidewalk 60'
+> [p022_c0004] Proposed Condition North Sidewalk 8' Parking Lane 11' Offset Bus Lane 11' Travel Lane 11' Travel Lane 11' Offset Bus Lane 8' Parking Lane South Sidewalk 60'
+[p022_c0005] Key: —— Offset Bus Lane
+> [p022_c0006] Example: Lexington Ave Increased bus speeds up to 19% Injuries decreased 24%
+[p022_c0007] _22_
+
+## Page 23
+
+### [p023_c0001] One (1) Proposed Bus Queue Jump Signal
+[p023_c0002] At 116 th Street and Adam Clayton Powell Jr. Blvd. (East-West only)
+> [p023_c0003] Map showing the proposed Bus Queue Jump Signal location at 116 th Street and Adam Clayton Powell Jr. Blvd. (East-West only). The map highlights the intersection with a red dashed circle. Surrounding streets include West 118 St, West 117 St, West 115 St, West 114 St, and West 113 St. The map also shows the locations of CB9 and CB10 bus routes.
+[p023_c0004] Key:
+[p023_c0005] Bus Queue Jump Signal
+> [p023_c0006] Photograph of a 'BUS ONLY SIGNAL' at the intersection of 5th Av. and 79th St. A blue arrow points from a text box to the signal. The text box says 'Speeds up bus by 7s every light cycle'. A pedestrian is crossing the street in the foreground.
+[p023_c0007] _5 th Av. At 79 th St_
+> [p023_c0008] Photograph of a 'Queue Jump Signal' at the intersection of Broadway and Queensboro Plaza (QN). A blue arrow points from a text box to the signal. A bus is visible on the right side of the frame.
+[p023_c0009] _Broadway, QN_
+[p023_c0010] _23_
+
+## Page 24
+
+### [p024_c0001] Proposed Pedestrian Curb Extensions (22)
+[p024_c0002] Adds hardened pedestrian space to nine (9) intersections & three (3) new crossings
+### [p024_c0003] Key:
+[p024_c0004] Pedestrian Curb Extension
+[p024_c0005] Adds sidewalk space by removing bike parking from sidewalk
+[p024_c0006] Improves delivery access for small businesses
+[p024_c0007] Improves visibility & significantly reduces crossing distances
+[p024_c0008] Adds greenery with maintenance partner
+[p024_c0009] _24_
+
+## Page 25
+
+### [p025_c0001] Estimated Parking Changes
+[p025_c0002] _25_
+[p025_c0003] _The MTA logo, consisting of the letters 'MTA' in white inside a black circle._
+[p025_c0004] _The BETTERBUSES logo, featuring a stylized blue and green graphic followed by the text 'BETTERBUSES' in a sans-serif font._
+[p025_c0005] _The NEW YORK CITY DOT logo, with 'NEW YORK CITY' in small text above 'DOT' in large, bold letters, accompanied by a graphic of three horizontal bars._
+
+## Page 26
+
+### [p026_c0001] CB10: Estimated Parking Changes
+[p026_c0002] Subject to change based on traffic analysis and community feedback
+> [p026_c0003] The map illustrates the CB10 area, bounded by Manhattan Av. to the west, St. Nicholas Av. to the north, Malcolm X Blvd to the east, and 5th Av. to the east. Streets shown include West 118 St, West 117 St, West 116 St, West 115 St, and West 114 St. The map highlights various parking changes indicated by colored symbols: cyan for left turn lanes, dark teal for long left turn lanes, yellow for mid-block crossings, orange for painted pedestrian space, and black for sign-only daylighting. A key in the bottom right corner defines these symbols. Key: Left Turn Lane – 2-5 spaces for left turn lane Long Left Turn Lane – 6 spaces for left turn lane Mid-Block Crossings – 2-3 spaces for daylighting Painted Pedestrian Space – 0-2 spaces for daylighting Sign Only Daylighting – 1-1.5 spaces for daylighting bus turns
+[p026_c0004] _26_
+
+## Page 27
+
+### [p027_c0001] Summary
+[p027_c0002] _27_
+[p027_c0003] _The MTA logo, consisting of the letters 'MTA' in white inside a black circle._
+[p027_c0004] _The BETTERBUSES logo, featuring a stylized blue and green graphic followed by the text 'BETTERBUSES' in a sans-serif font._
+[p027_c0005] _The New York City Department of Transportation (NYC DOT) logo, which includes the text 'NEW YORK CITY' above the stylized 'DOT' letters._
+
+## Page 28
+
+### [p028_c0001] Existing: 116 th Street and Madison Avenue
+[p028_c0002] Bus stop blocked by parked car
+[p028_c0003] Long crossing distances with no refuge
+[p028_c0004] Lack of roadway organization
+[p028_c0005] _28_
+[p028_c0006] _BETTERBUSES_
+
+## Page 29
+
+### [p029_c0001] Proposed: 116 th Street and Madison Avenue
+[p029_c0002] Opportunities for greening
+[p029_c0003] New pedestrian spaces with shorter crossing distances to improve safety & comfort
+[p029_c0004] Dedicated bus lanes give priority to buses & emergency vehicles
+[p029_c0005] New left turn lanes help organize traffic
+[p029_c0006] _29_
+[p029_c0007] _BETTERBUSES_
+[p029_c0008] _NEW YORK CITY DOT_
+
+## Page 30
+
+### [p030_c0001] Project Summary*
+- [p030_c0002] - Adds 1.15 miles of bus lanes - Maintains all CB10 bus stops - Adds 18,700+ ft 2 of painted pedestrian space - Daylighting at 10 intersections - Adds one (1) new plaza (slip lane closure) - Adds 880+ ft 2 of concrete pedestrian space - Adds several new street tree pits - Adds three (3) new pedestrian midblock crossings - Adds one (1) bus queue jump signal - Adds nine (9) left turn bays
+[p030_c0003] *all calculations are estimates, subject to change based on engineering judgement and traffic analysis
+> [p030_c0004] A screenshot of a video conference call. The main window shows a woman with glasses and a white turtleneck. Above her are several smaller video feeds of other participants. One participant is wearing headphones. The text 'NYCDOT at 2/2025 CB10 Meeting' is overlaid on the bottom right of the main window. The date '2025-02-11 10:47:07' is also visible.
+[p030_c0005] _30_
+[p030_c0006] _The MTA logo, which consists of the letters 'MTA' in a bold, sans-serif font inside a dark circle._
+[p030_c0007] _The BETTERBUSES logo, featuring the word 'BETTER' in blue and 'BUSES' in green, with a stylized blue and green graphic to the left._
+[p030_c0008] _The NEW YORK CITY DOT logo, which includes the text 'NEW YORK CITY' above 'DOT' and a stylized graphic of a bus and a train._
+
+## Page 31
+
+### [p031_c0001] Timeline
+[p031_c0002] _31_
+[p031_c0003] _The MTA logo, consisting of the letters 'MTA' in white inside a black circle._
+[p031_c0004] _The BETTERBUSES logo, featuring a stylized blue and green graphic followed by the text 'BETTERBUSES' in a sans-serif font._
+[p031_c0005] _The New York City Department of Transportation (NYC DOT) logo, which includes the text 'NEW YORK CITY' above a stylized 'DOT' graphic._
+
+## Page 32
+
+### [p032_c0001] Project Timeline
+- [p032_c0002] 1. NYC Streets Plan: 2021 (Identified corridor) 2. Field observations & traffic data 3. Pre-Meeting – CB10 4. Pre-Meeting – CB11 5. Pre-Meeting – Electeds & CBs 6. February 2025 Existing Conditions: CB9 7. February 2025 Existing Conditions: CB10 8. March 2025 Existing Conditions: CB11 9. May: present draft proposal to CBs 10. June: present updated proposal to CBs and elected officials 11. Engineering review and approval 12. Summer 2025: * Tentative* begin Implementation
+[p032_c0003] _W. 116 th St. & Malcolm X Blvd._
+[p032_c0004] _32_
+
+## Page 33
+
+[p033_c0001] Thank You!
+[p033_c0002] Open Discussion & Questions
+> [p033_c0003] The logo for the New York City Department of Transportation (NYC DOT). It features the words "NEW YORK CITY" in a black, sans-serif font at the top. Below this, the letters "DOT" are displayed in a large, bold, green font. The "D" and "O" are stylized with horizontal white lines running through them, and the "T" is a solid green block.
+> [p033_c0004] A white Facebook "f" logo on a dark background.
+[p033_c0005] NYC DOT
+> [p033_c0006] A white Twitter bird logo on a dark background.
+[p033_c0007] NYC DOT
+> [p033_c0008] A white Instagram camera logo on a dark background.
+[p033_c0009] nyc_dot
+> [p033_c0010] A white YouTube logo on a dark background.
+[p033_c0011] NYC DOT
+[p033_c0012] _33_
+[p033_c0013] _The MTA logo, consisting of the letters "MTA" in white inside a black circle._
+[p033_c0014] _The "BETTER BUSES" logo, with "BETTER" in blue and "BUSES" in green._
+[p033_c0015] _A smaller version of the New York City DOT logo._
+
+## Page 34
+
+### [p034_c0001] Appendix
+[p034_c0002] _34_
+[p034_c0003] _The MTA logo, consisting of the letters "MTA" in white inside a black circle._
+[p034_c0004] _The BETTERBUSES logo, with "BETTER" in blue and "BUSES" in green, separated by a stylized blue and green graphic._
+[p034_c0005] _The New York City Department of Transportation (NYC DOT) logo, featuring the text "NEW YORK CITY" above "DOT" and a stylized graphic of a bus._
+
+## Page 35
+
+### [p035_c0001] Bus Map
+### [p035_c0002] Local and Express Routes
+> [p035_c0003] The map displays a section of the New York City bus system, specifically focusing on the area around Central Park and the East River. Key features include: Streets: Manhattan Av, W 116 St, Central Park North, E 120 St, E 116 St, E 125 St, 7 Av, 5 Av, 3 Av, 2 Av, 1 Av, and Pleasant Av. Bus Routes: Numerous routes are shown, including M10, M16, M1, M2, M3, M4, M5, M6, M7, M8, M9, M101, M102, M103, M15, and SBS. Each route is represented by a specific color and a route number in a small box. Transfers: Transfer points are indicated by circles with a cross inside, showing connections between different bus lines. Other Features: The map also shows the Metro North line, the Robert B. Paladino Bridge, and the Central Park North station.
+[p035_c0004] _35_
+[p035_c0005] _BETTERBUSES_
+[p035_c0006] _NEW YORK CITY DOT_
+
+## Page 36
+
+### [p036_c0001] Section 1: Manhattan Av., 110 th to 116 th Sts.
+> [p036_c0002] A map of the Manhattan area showing the highlighted bus route along Manhattan Avenue. The route is marked with a thick blue line, starting at West 110th Street and extending north to West 116th Street. The map includes labels for various streets and landmarks, including: Manhattan Av. (running north-south) Morningside Av. (running north-south, parallel to Manhattan Av.) West 110 th St. to West 116 th St. (running east-west) Cathedral Pkwy/110 th St. (running east-west) Amsterdam Av. (running east-west) West 114 St. to West 112 St. (running east-west) West 115 St. (running east-west) West 113 St. (running east-west) West 111 St. (running east-west) West 108 St. (running east-west) Manhattan Dr. (running north-south) Morningside Dr. (running north-south) Columbus Av. (running east-west) St. Douglas Blvd. (running east-west) PS 241 (a school building)
+[p036_c0003] _36_
+
+## Page 37
+
+### [p037_c0001] Section 2: 116 th St., Morningside Av. to Malcolm X Blvd.
+> [p037_c0002] A map showing a section of Manhattan, New York City, bounded by Morningside Av. to the west, St. Nicholas Av. to the east, and Frederick Douglass Blvd. to the south. The map highlights a route from 116th Street to Malcolm X Blvd. The route is marked by a thick blue line. The map includes labels for Morningside Av., Manhattan Av., Frederick Douglass Blvd., St. Nicholas Av., and Malcolm X Blvd. Street names include West 116 St., West 115 St., West 114 St., West 113 St., West 112 St., West 111 St., West 110 St., West 109 St., West 108 St., West 107 St., West 106 St., West 105 St., West 104 St., West 103 St., West 102 St., West 101 St., West 100 St., West 99 St., West 98 St., West 97 St., West 96 St., West 95 St., West 94 St., West 93 St., West 92 St., West 91 St., West 90 St., West 89 St., West 88 St., West 87 St., West 86 St., West 85 St., West 84 St., West 83 St., West 82 St., West 81 St., West 80 St., West 79 St., West 78 St., West 77 St., West 76 St., West 75 St., West 74 St., West 73 St., West 72 St., West 71 St., West 70 St., West 69 St., West 68 St., West 67 St., West 66 St., West 65 St., West 64 St., West 63 St., West 62 St., West 61 St., West 60 St., West 59 St., West 58 St., West 57 St., West 56 St., West 55 St., West 54 St., West 53 St., West 52 St., West 51 St., West 50 St., West 49 St., West 48 St., West 47 St., West 46 St., West 45 St., West 44 St., West 43 St., West 42 St., West 41 St., West 40 St., West 39 St., West 38 St., West 37 St., West 36 St., West 35 St., West 34 St., West 33 St., West 32 St., West 31 St., West 30 St., West 29 St., West 28 St., West 27 St., West 26 St., West 25 St., West 24 St., West 23 St., West 22 St., West 21 St., West 20 St., West 19 St., West 18 St., West 17 St., West 16 St., West 15 St., West 14 St., West 13 St., West 12 St., West 11 St., West 10 St., West 9 St., West 8 St., West 7 St., West 6 St., West 5 St., West 4 St., West 3 St., West 2 St., West 1 St., West 0 St., West -1 St., West -2 St., West -3 St., West -4 St., West -5 St., West -6 St., West -7 St., West -8 St., West -9 St., West -10 St., West -11 St., West -12 St., West -13 St., West -14 St., West -15 St., West -16 St., West -17 St., West -18 St., West -19 St., West -20 St., West -21 St., West -22 St., West -23 St., West -24 St., West -25 St., West -26 St., West -27 St., West -28 St., West -29 St., West -30 St., West -31 St., West -32 St., West -33 St., West -34 St., West -35 St., West -36 St., West -37 St., West -38 St., West -39 St., West -40 St., West -41 St., West -42 St., West -43 St., West -44 St., West -45 St., West -46 St., West -47 St., West -48 St., West -49 St., West -50 St., West -51 St., West -52 St., West -53 St., West -54 St., West -55 St., West -56 St., West -57 St., West -58 St., West -59 St., West -60 St., West -61 St., West -62 St., West -63 St., West -64 St., West -65 St., West -66 St., West -67 St., West -68 St., West -69 St., West -70 St., West -71 St., West -72 St., West -73 St., West -74 St., West -75 St., West -76 St., West -77 St., West -78 St., West -79 St., West -80 St., West -81 St., West -82 St., West -83 St., West -84 St., West -85 St., West -86 St., West -87 St., West -88 St., West -89 St., West -90 St., West -91 St., West -92 St., West -93 St., West -94 St., West -95 St., West -96 St., West -97 St., West -98 St., West -99 St., West -100 St., West -101 St., West -102 St., West -103 St., West -104 St., West -105 St., West -106 St., West -107 St., West -108 St., West -109 St., West -110 St., West -111 St., West -112 St., West -113 St., West -114 St., West -115 St., West -116 St., West -117 St., West -118 St., West -119 St., West -120 St., West -121 St., West -122 St., West -123 St., West -124 St., West -125 St., West -126 St., West -127 St., West -128 St., West -129 St., West -130 St., West -131 St., West -132 St., West -133 St., West -134 St., West -135 St., West -136 St., West -137 St., West -138 St., West -139 St., West -140 St., West -141 St., West -142 St., West -143 St., West -144 St., West -145 St., West -146 St., West -147 St., West -148 St., West -149 St., West -150 St., West -151 St., West -152 St., West -153 St., West -154 St., West -155 St., West -156 St., West -157 St., West -158 St., West -159 St., West -160 St., West -161 St., West -162 St., West -163 St., West -164 St., West -165 St., West -166 St., West -167 St., West -168 St., West -169 St., West -170 St., West -171 St., West -172 St., West -173 St., West -174 St., West -175 St., West -176 St., West -177 St., West -178 St., West -179 St., West -180 St., West -181 St., West -182 St., West -183 St., West -184 St., West -185 St., West -186 St., West -187 St., West -188 St., West -189 St., West -190 St., West -191 St., West -192 St., West -193 St., West -194 St., West -195 St., West -196 St., West -197 St., West -198 St., West -199 St., West -200 St., West -201 St., West -202 St., West -203 St., West -204 St., West -205 St., West -206 St., West -207 St., West -208 St., West -209 St., West -210 St., West -211 St., West -212 St., West -213 St., West -214 St., West -215 St., West -216 St., West -217 St., West -218 St., West -219 St., West -220 St., West -221 St., West -222 St., West -223 St., West -224 St., West -225 St., West -226 St., West -227 St., West -228 St., West -229 St., West -230 St., West -231 St., West -232 St., West -233 St., West -234 St., West -235 St., West -236 St., West -237 St., West -238 St., West -239 St., West -240 St., West -241 St., West -242 St., West -243 St., West -244 St., West -245 St., West -246 St., West -247 St., West -248 St., West -249 St., West -250 St., West -251 St., West -252 St., West -253 St., West -254 St., West -255 St., West -256 St., West -257 St., West -258 St., West -259 St., West -260 St., West -261 St., West -262 St., West -263 St., West -264 St., West -265 St., West -266 St., West -267 St., West -268 St., West -269 St., West -270 St., West -271 St., West -272 St., West -273 St., West -274 St., West -275 St., West -276 St., West -277 St., West -278 St., West -279 St., West -280 St., West -281 St., West -282 St., West -283 St., West -284 St., West -285 St., West -286 St., West -287 St., West -288 St., West -289 St., West -290 St., West -291 St., West -292 St., West -293 St., West -294 St., West -295 St., West -296 St., West -297 St., West -298 St., West -299 St., West -300 St., West -301 St., West -302 St., West -303 St., West -304 St., West -305 St., West -306 St., West -307 St., West -308 St., West -309 St., West -310 St., West -311 St., West -312 St., West -313 St., West -314 St., West -315 St., West -316 St., West -317 St., West -318 St., West -319 St., West -320 St., West -321 St., West -322 St., West -323 St., West -324 St., West -325 St., West -326 St., West -327 St., West -328 St., West -329 St., West -330 St., West -331 St., West -332 St., West -333 St., West -334 St., West -335 St., West -336 St., West -337 St., West -338 St., West -339 St., West -340 St., West -341 St., West -342 St., West -343 St., West -344 St., West -345 St., West -346 St., West -347 St., West -348 St., West -349 St., West -350 St., West -351 St., West -352 St., West -353 St., West -354 St., West -355 St., West -356 St., West -357 St., West -358 St., West -359 St., West -360 St., West -361 St., West -362 St., West -363 St., West -364 St., West -365 St., West -366 St., West -367 St., West -368 St., West -369 St., West -370 St., West -371 St., West -372 St., West -373 St., West -374 St., West -375 St., West -376 St., West -377 St., West -378 St., West -379 St., West -380 St., West -381 St., West -382 St., West -383 St., West -384 St., West -385 St., West -386 St., West -387 St., West -388 St., West -389 St., West -390 St., West -391 St., West -392 St., West -393 St., West -394 St., West -395 St., West -396 St., West -397 St., West -398 St., West -399 St., West -400 St., West -401 St., West -402 St., West -403 St., West -404 St., West -405 St., West -406 St., West -407 St., West -408 St., West -409 St., West -410 St., West -411 St., West -412 St., West -413 St., West -414 St., West -415 St., West -416 St., West -417 St., West -418 St., West -419 St., West -420 St., West -421 St., West -422 St., West -423 St., West -424 St., West -425 St., West -426 St., West -427 St., West -428 St., West -429 St., West -430 St., West -431 St., West -432 St., West -433 St., West -434 St., West -435 St., West -436 St., West -437 St., West -438 St., West -439 St., West -440 St., West -441 St., West -442 St., West -443 St., West -444 St., West -445 St., West -446 St., West -447 St., West -448 St., West -449 St., West -450 St., West -451 St., West -452 St., West -453 St., West -454 St., West -455 St., West -456 St., West -457 St., West -458 St., West -459 St., West -460 St., West -461 St., West -462 St., West -463 St., West -464 St., West -465 St., West -466 St., West -467 St., West -468 St., West -469 St., West -470 St., West -471 St., West -472 St., West -473 St., West -474 St., West -475 St., West -476 St., West -477 St., West -478 St., West -479 St., West -480 St., West -481 St., West -482 St., West -483 St., West -484 St., West -485 St., West -486 St., West -487 St., West -488 St., West -489 St., West -490 St., West -491 St., West -492 St., West -493 St., West -494 St., West -495 St., West -496 St., West -497 St., West -498 St., West -499 St., West -500 St., West -501 St., West -502 St., West -503 St., West -504 St., West -505 St., West -506 St., West -507 St., West -508 St., West -509 St., West -510 St., West -511 St., West -512 St., West -513 St., West -514 St., West -515 St., West -516 St., West -517 St., West -518 St., West -519 St., West -520 St., West -521 St., West -522 St., West -523 St., West -524 St., West -525 St., West -526 St., West -527 St., West -528 St., West -529 St., West -530 St., West -531 St., West -532 St., West -533 St., West -534 St., West -535 St., West -536 St., West -537 St., West -538 St., West -539 St., West -540 St., West -541 St., West -542 St., West -543 St., West -544 St., West -545 St., West -546 St., West -547 St., West -548 St., West -549 St., West -550 St., West -551 St., West -552 St., West -553 St., West -554 St., West -555 St., West -556 St., West -557 St., West -558 St., West -559 St., West -560 St., West -561 St., West -562 St., West -563 St., West -564 St., West -565 St., West -566 St., West -567 St., West -568 St., West -569 St., West -570 St., West -571 St., West -572 St., West -573 St., West -574 St., West -575 St., West -576 St., West -577 St., West -578 St., West -579 St., West -580 St., West -581 St., West -582 St., West -583 St., West -584 St., West -585 St., West -586 St., West -587 St., West -588 St., West -589 St., West -590 St., West -591 St., West -592 St., West -593 St., West -594 St., West -595 St., West -596 St., West -597 St., West -598 St., West -599 St., West -600 St., West -601 St., West -602 St., West -603 St., West -604 St., West -605 St., West -606 St., West -607 St., West -608 St., West -609 St., West -610 St., West -611 St., West -612 St., West -613 St., West -614 St., West -615 St., West -616 St., West -617 St., West -618 St., West -619 St., West -620 St., West -621 St., West -622 St., West -623 St., West -624 St., West -625 St., West -626 St., West -627 St., West -628 St., West -629 St., West -630 St., West -631 St., West -632 St., West -633 St., West -634 St., West -635 St., West -636 St., West -637 St., West -638 St., West -639 St., West -640 St., West -641 St., West -642 St., West -643 St., West -644 St., West -645 St., West -646 St., West -647 St., West -648 St., West -649 St., West -650 St., West -651 St., West -652 St., West -653 St., West -654 St., West -655 St., West -656 St., West -657 St., West -658 St., West -659 St., West -660 St., West -661 St., West -662 St., West -663 St., West -664 St., West -665 St., West -666 St., West -667 St., West -668 St., West -669 St., West -670 St., West -671 St., West -672 St., West -673 St., West -674 St., West -675 St., West -676 St., West -677 St., West -678 St., West -679 St., West -680 St., West -681 St., West -682 St., West -683 St., West -684 St., West -685 St., West -686 St., West -687 St., West -688 St., West -689 St., West -690 St., West -691 St., West -692 St., West -693 St., West -694 St., West -695 St., West -696 St., West -697 St., West -698 St., West -699 St., West -700 St., West -701 St., West -702 St., West -703 St., West -704 St., West -705 St., West -706 St., West -707 St., West -708 St., West -709 St., West -710 St., West -711 St., West -712 St., West -713 St., West -714 St., West -715 St., West -716 St., West -717 St., West -718 St., West -719 St., West -720 St., West -721 St., West -722 St., West -723 St., West -724 St., West -725 St., West -726 St., West -727 St., West -728 St., West -729 St., West -730 St., West -731 St., West -732 St., West -733 St., West -734 St., West -735 St., West -736 St., West -737 St., West -738 St., West -739 St., West -740 St., West -741 St., West -742 St., West -743 St., West -744 St., West -745 St., West -746 St., West -747 St., West -748 St., West -749 St., West -750 St., West -751 St., West -752 St., West -753 St., West -754 St., West -755 St., West -756 St., West -757 St., West -758 St., West -759 St., West -760 St., West -761 St., West -762 St., West -763 St., West -764 St., West -765 St., West -766 St., West -767 St., West -768 St., West -769 St., West -770 St., West -771 St., West -772 St., West -773 St., West -774 St., West -775 St., West -776 St., West -777 St., West -778 St., West -779 St., West -780 St., West -781 St., West -782 St., West -783 St., West -784 St., West -785 St., West -786 St., West -787 St., West -788 St., West -789 St., West -790 St., West -791 St., West -792 St., West -793 St., West -794 St., West -795 St., West -796 St., West -797 St., West -798 St., West -799 St., West -800 St., West -801 St., West -802 St., West -803 St., West -804 St., West -805 St., West -806 St., West -807 St., West -808 St., West -809 St., West -810 St., West -811 St., West -812 St., West -813 St., West -814 St., West -815 St., West -816 St., West -817 St., West -818 St., West -819 St., West -820 St., West -821 St., West -822 St., West -823 St., West -824 St., West -825 St., West -826 St., West -827 St., West -828 St., West -829 St., West -830 St., West -831 St., West -832 St., West -833 St., West -834 St., West -835 St., West -836 St., West -837 St., West -838 St., West -839 St., West -840 St., West -841 St., West -842 St., West -843 St., West -844 St., West -845 St., West -846 St., West -847 St., West -848 St., West -849 St., West -850 St., West -851 St., West -852 St., West -853 St., West -854 St., West -855 St., West -856 St., West -857 St., West -858 St., West -859 St., West -860 St., West -861 St., West -862 St., West -863 St., West -864 St., West -865 St., West -866 St., West -867 St., West -868 St., West -869 St., West -870 St., West -871 St., West -872 St., West -873 St., West -874 St., West -875 St., West -876 St., West -877 St., West -878 St., West -879 St., West -880 St., West -881 St., West -882 St., West -883 St., West -884 St., West -885 St., West -886 St., West -887 St., West -888 St., West -889 St., West -890 St., West -891 St., West -892 St., West -893 St., West -894 St., West -895 St., West -896 St., West -897 St., West -898 St., West -899 St., West -900 St., West -901 St., West -902 St., West -903 St., West -904 St., West -905 St., West -906 St., West -907 St., West -908 St., West -909 St., West -910 St., West -911 St., West -912 St., West -913 St., West -914 St., West -915 St., West -916 St., West -917 St., West -918 St., West -919 St., West -920 St., West -921 St., West -922 St., West -923 St., West -924 St., West -925 St., West -926 St., West -927 St., West -928 St., West -929 St., West -930 St., West -931 St., West -932 St., West -933 St., West -934 St., West -935 St., West -936 St., West -937 St., West -938 St., West -939 St., West -940 St., West -941 St., West -942 St., West -943 St., West -944 St., West -945 St., West -946 St., West -947 St., West -948 St., West -949 St., West -950 St., West -951 St., West -952 St., West -953 St., West -954 St., West -955 St., West -956 St., West -957 St., West -958 St., West -959 St., West -960 St., West -961 St., West -962 St., West -963 St., West -964 St., West -965 St., West -966 St., West -967 St., West -968 St., West -969 St., West -970 St., West -971 St., West -972 St., West -973 St., West -974 St., West -975 St., West -976 St., West -977 St., West -978 St., West -979 St., West -980 St., West -981 St., West -982 St., West -983 St., West -984 St., West -985 St., West -986 St., West -987 St., West -988 St., West -989 St., West -990 St., West -991 St., West -992 St., West -993 St., West -994 St., West -995 St., West -996 St., West -997 St., West -998 St., West -999 St., West -1000 St.
+[p037_c0003] _37_
+
+## Page 38
+
+### [p038_c0001] Section 3: 116 th St., Malcolm X Blvd. to 5 th Av.
+> [p038_c0002] A map showing a route from 116th Street to 5th Avenue. The route is highlighted with a thick blue line. The map includes street names such as Malcolm X Blvd., St. Nicholas Av., Lenox Blvd./ACP, W. 117th St., W. 116th St., W. 115th St., and 5th Av. It also shows building footprints and landmarks like the Martin Luther King Playground. The map is oriented with North at the top.
+[p038_c0003] _38_
+
+## Page 39
+
+### [p039_c0001] Full Corridor
+> [p039_c0002] A map of the Manhattan Corridor area in New York City. A thick blue line represents a proposed bus route. The route starts at the intersection of Manhattan Avenue and West 114th Street, travels east along West 114th Street, then turns south along East 114th Street, continues south along East 112th Street, then turns east along East 110th Street, and finally turns south along East 108th Street. The map shows a grid of streets with labels for West 108th St through West 120th St and East 108th St through East 127th St. Key landmarks include Central Park North, Harlem Meer, Marcus Garvey Park, and Pleasant Avenue. Other street names like Mt Morris Park West, Fawley Circle, and Morning River are also visible.
+[p039_c0003] _39_
+
+## Page 40
+
+### [p040_c0001] Bus Speeds – AM
+- [p040_c0002] • Slow and unreliable bus service along 116 th St. • Buses move slowly all day and less than 4 mph in some segments • Weekday congestion causes 785 hours of delay to M116 passengers daily
+> [p040_c0003] M116 Bus Speeds October 2024 | Weekdays 6 AM - 10 AM Source: MTA NYCT Speed Range (MPH) Color < 4 Dark Red 4 - 5 Red 5 - 6 Orange-Red 6 - 7 Orange > 7 Yellow
+[p040_c0004] _40_
+[p040_c0005] _BETTERBUSES_
+
+## Page 41
+
+### [p041_c0001] Bus Speeds - PM
+- [p041_c0002] • Slow and unreliable bus service along 116 th St. • Buses move slowly all day and less than 4 mph in some segments • Weekday congestion causes 785 hours of delay to M116 passengers daily
+> [p041_c0003] M116 Bus Speeds October 2024 | Weekdays 3 PM - 7 PM Source: MTA NYCT Speed Range (MPH) Color < 4 Dark Red 4 - 5 Red 5 - 6 Orange-Red 6 - 7 Orange > 7 Yellow
+[p041_c0004] _41_
+
+## Page 42
+
+### [p042_c0001] NYC Streets Plan and Transit Goals
+[p042_c0002] Transit goals of the Streets Plan:
+- [p042_c0003] 1. Increase sustainable travel modes by reconfiguring streets 2. Expand access to job opportunities through faster and more reliable transportation options 3. Allow all New Yorkers to get around the city in multiple ways without encountering barriers to travel
+> [p042_c0004] 116 th Street is within a DOT Tier 1 Priority Investment Area Legend: Existing Bus Lanes Future Bus Priority Corridors 2022 Completed Projects 2023 and Upcoming Projects Priority Investment Area Tier 1 Priority Investment Area Tier 2 Priority Investment Area Tier 3 Map labels include: Washington Heights, Hamilton Heights, Central Harlem, Morningside Heights, East Harlem, Upper West Side, Upper East Side, Midtown, Columbus Circle, Yorkville, Astoria, Bronx River, Parkchester, Hunts Point, Randalls Island, Yankee Stadium, Grand Concourse, Crotona Park.
+[p042_c0005] _42_
+
+## Page 43
+
+### [p043_c0001] Vehicular Speeds on Manhattan Av.
+- [p043_c0002] Slow speeds near 116 th Street and between 110 th and 113 th Streets
+> [p043_c0003] This map shows Manhattan Av. and surrounding streets. The map is color-coded to indicate traffic speeds in mph. Darker red indicates lower speeds, while lighter pink indicates higher speeds. A north arrow is located in the upper left. A legend box in the lower right provides details for the time period and source. Street Segment Speed (mph) West 114 St to West 115 St 10 West 115 St to West 116 St 13 West 116 St to West 117 St 15 West 117 St to West 118 St 12 West 118 St to West 119 St 14 West 119 St to West 120 St 12 West 120 St to West 121 St 15 West 121 St to West 122 St 14 West 122 St to West 123 St 16 West 123 St to West 124 St 14 West 124 St to West 125 St 13 Traffic Speeds (mph) October 2024 | Tues-Thurs 6am - 10am Source: Streetlight
+> [p043_c0004] This map shows Manhattan Av. and surrounding streets. The map is color-coded to indicate traffic speeds in mph. Darker red indicates lower speeds, while lighter pink indicates higher speeds. A north arrow is located in the upper left. A legend box in the lower right provides details for the time period and source. Street Segment Speed (mph) West 114 St to West 115 St 9 West 115 St to West 116 St 11 West 116 St to West 117 St 15 West 117 St to West 118 St 11 West 118 St to West 119 St 19 West 119 St to West 120 St 15 West 120 St to West 121 St 16 West 121 St to West 122 St 17 West 122 St to West 123 St 12 West 123 St to West 124 St 14 Traffic Speeds (mph) October 2024 | Tues-Thurs 3pm - 7pm Source: Streetlight
+[p043_c0005] _43_

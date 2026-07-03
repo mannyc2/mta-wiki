@@ -1,0 +1,2259 @@
+{
+  "generated_at": "2026-06-24T05:06:16.312Z",
+  "objective": "Orchestrate Codex-only post-ingest work for all completed MTA wiki ingest outputs with unprocessed backlog, while keeping ingest waves running separately at max concurrency without babysitting them.",
+  "overall_status": "not_complete_writer_execution_paused",
+  "completion_decision": "Do not mark the goal complete: ingest/source scope and deterministic cleanup gates are clean, and writer dispatch is prepared, but writer execution remains paused with empty writer regions.",
+  "campaign_id": "validation-2026-06",
+  "requirements": [
+    {
+      "requirement": "Keep ingest waves running separately at max concurrency when ready-never-ingested sources exist.",
+      "status": "complete",
+      "evidence": {
+        "ready_never_ingested": 0,
+        "not_ready": 0,
+        "ingested": 2566,
+        "total": 2566
+      },
+      "conclusion": "No ingest wave should be launched now because the ready pool is exhausted."
+    },
+    {
+      "requirement": "Keep deterministic Codex-only post-ingest cleanup gates clean.",
+      "status": "clean",
+      "evidence": {
+        "validation_issues": 0,
+        "source_id_drift_candidates": 0
+      },
+      "conclusion": "Validation and source-id drift gates are clean."
+    },
+    {
+      "requirement": "Ensure every current readiness source has post-ingest scope coverage and no plan-only ghost scope remains.",
+      "status": "complete",
+      "evidence": {
+        "scoped_sources": 2566,
+        "plan_files": 344,
+        "missing_scope": 0,
+        "plan_only_sources": 0
+      },
+      "conclusion": "Post-ingest scope coverage is complete for the current readiness corpus."
+    },
+    {
+      "requirement": "Prepare writer backlog execution without violating the owner pause.",
+      "status": "prepared_but_paused",
+      "evidence": {
+        "writer_readiness_path": "data/post-ingest/2026-06-24T02-13-03-496Z_writer-packet-dispatch-readiness.json",
+        "claimed_shards": 109,
+        "shard_count": 109,
+        "empty_pages": 2703,
+        "packet_count": 2703,
+        "prompt_coverage_shards": 109,
+        "prompt_coverage_expected_shards": 109,
+        "prompt_coverage_files": 109
+      },
+      "conclusion": "Writer dispatch is ready, claimed, and prompt-covered, but writer pages remain empty because execution is paused."
+    }
+  ],
+  "live_gates": {
+    "validation": {
+      "issue_count": 0,
+      "submissions": 98102,
+      "canonical_records": 83983,
+      "wiki_pages": 7355
+    },
+    "post_ingest_audit": {
+      "campaign_id": "validation-2026-06",
+      "readiness": {
+        "total": 2566,
+        "ready": 2566,
+        "ingested": 2566,
+        "ready_never_ingested": 0,
+        "not_ready": 0
+      },
+      "post_ingest_scope": {
+        "scoped_sources": 2566,
+        "plan_files": 344
+      },
+      "writer_backlog": {
+        "empty_writer_regions": 2703,
+        "status": "paused_by_owner",
+        "packet_coverage": {
+          "status": "complete",
+          "artifact_files": 541,
+          "packet_count": 2703,
+          "unique_pages": 2703,
+          "duplicate_pages": 0,
+          "covered_current_backlog_pages": 2703,
+          "missing_current_backlog_pages": 0,
+          "stale_packet_pages": 0,
+          "min_offset": 0,
+          "max_offset": 2700
+        }
+      },
+      "readiness_sources_missing_post_ingest_scope": [],
+      "post_ingest_scoped_sources_not_in_readiness": [],
+      "ok": true
+    },
+    "source_id_drift_audit": {
+      "ok": true,
+      "summary": {
+        "total_candidates": 0,
+        "missing_source_id": 0,
+        "source_mismatch": 0,
+        "single_evidence_likely_truncated": 0,
+        "by_kind": {}
+      },
+      "candidates": []
+    },
+    "writer_readiness": {
+      "generated_at": "2026-06-24T02:13:03.496Z",
+      "ok": true,
+      "execution_policy": "Readiness report only. Do not launch writer agents or edit wiki prose until the owner pause is lifted.",
+      "dispatch_plan_path": "data/post-ingest/2026-06-24T01-26-07-684Z_writer-packet-dispatch-plan.json",
+      "packet_set_path": "data/post-ingest/2026-06-24T01-25-47-846Z_writer-backlog-packet-set-full-2026-06-24.json",
+      "claim_execution": [
+        {
+          "path": "data/post-ingest/2026-06-24T01-26-16-071Z_writer-packet-dispatch-claim.json",
+          "owner": "codex-conductor",
+          "claimed_count": 6,
+          "shard_ids": [
+            "writer-shard-001",
+            "writer-shard-002",
+            "writer-shard-003",
+            "writer-shard-004",
+            "writer-shard-005",
+            "writer-shard-006"
+          ]
+        },
+        {
+          "path": "data/post-ingest/2026-06-24T01-44-48-969Z_writer-packet-dispatch-claim.json",
+          "owner": "codex-conductor",
+          "claimed_count": 6,
+          "shard_ids": [
+            "writer-shard-007",
+            "writer-shard-008",
+            "writer-shard-009",
+            "writer-shard-010",
+            "writer-shard-011",
+            "writer-shard-012"
+          ],
+          "claim_preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-dispatch-claim data/post-ingest/2026-06-24T01-44-48-969Z_writer-packet-dispatch-claim.json"
+        },
+        {
+          "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+          "owner": "codex-conductor",
+          "claimed_count": 97,
+          "shard_ids": [
+            "writer-shard-013",
+            "writer-shard-014",
+            "writer-shard-015",
+            "writer-shard-016",
+            "writer-shard-017",
+            "writer-shard-018",
+            "writer-shard-019",
+            "writer-shard-020",
+            "writer-shard-021",
+            "writer-shard-022",
+            "writer-shard-023",
+            "writer-shard-024",
+            "writer-shard-025",
+            "writer-shard-026",
+            "writer-shard-027",
+            "writer-shard-028",
+            "writer-shard-029",
+            "writer-shard-030",
+            "writer-shard-031",
+            "writer-shard-032",
+            "writer-shard-033",
+            "writer-shard-034",
+            "writer-shard-035",
+            "writer-shard-036",
+            "writer-shard-037",
+            "writer-shard-038",
+            "writer-shard-039",
+            "writer-shard-040",
+            "writer-shard-041",
+            "writer-shard-042",
+            "writer-shard-043",
+            "writer-shard-044",
+            "writer-shard-045",
+            "writer-shard-046",
+            "writer-shard-047",
+            "writer-shard-048",
+            "writer-shard-049",
+            "writer-shard-050",
+            "writer-shard-051",
+            "writer-shard-052",
+            "writer-shard-053",
+            "writer-shard-054",
+            "writer-shard-055",
+            "writer-shard-056",
+            "writer-shard-057",
+            "writer-shard-058",
+            "writer-shard-059",
+            "writer-shard-060",
+            "writer-shard-061",
+            "writer-shard-062",
+            "writer-shard-063",
+            "writer-shard-064",
+            "writer-shard-065",
+            "writer-shard-066",
+            "writer-shard-067",
+            "writer-shard-068",
+            "writer-shard-069",
+            "writer-shard-070",
+            "writer-shard-071",
+            "writer-shard-072",
+            "writer-shard-073",
+            "writer-shard-074",
+            "writer-shard-075",
+            "writer-shard-076",
+            "writer-shard-077",
+            "writer-shard-078",
+            "writer-shard-079",
+            "writer-shard-080",
+            "writer-shard-081",
+            "writer-shard-082",
+            "writer-shard-083",
+            "writer-shard-084",
+            "writer-shard-085",
+            "writer-shard-086",
+            "writer-shard-087",
+            "writer-shard-088",
+            "writer-shard-089",
+            "writer-shard-090",
+            "writer-shard-091",
+            "writer-shard-092",
+            "writer-shard-093",
+            "writer-shard-094",
+            "writer-shard-095",
+            "writer-shard-096",
+            "writer-shard-097",
+            "writer-shard-098",
+            "writer-shard-099",
+            "writer-shard-100",
+            "writer-shard-101",
+            "writer-shard-102",
+            "writer-shard-103",
+            "writer-shard-104",
+            "writer-shard-105",
+            "writer-shard-106",
+            "writer-shard-107",
+            "writer-shard-108",
+            "writer-shard-109"
+          ],
+          "claim_preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-dispatch-claim data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json"
+        }
+      ],
+      "packet_set_verification": {
+        "ok": true,
+        "path": "data/post-ingest/2026-06-24T01-25-47-846Z_writer-backlog-packet-set-full-2026-06-24.json",
+        "file_count": 541,
+        "packet_count": 2703,
+        "unique_page_count": 2703,
+        "duplicate_page_count": 0,
+        "coverage": {
+          "status": "complete",
+          "artifact_files": 541,
+          "packet_count": 2703,
+          "unique_pages": 2703,
+          "duplicate_pages": 0,
+          "covered_current_backlog_pages": 2703,
+          "missing_current_backlog_pages": 0,
+          "stale_packet_pages": 0,
+          "min_offset": 0,
+          "max_offset": 2700
+        },
+        "issues": []
+      },
+      "dispatch_verification": {
+        "ok": true,
+        "path": "data/post-ingest/2026-06-24T01-26-07-684Z_writer-packet-dispatch-plan.json",
+        "shard_count": 109,
+        "packet_file_count": 541,
+        "packet_count": 2703,
+        "unique_page_count": 2703,
+        "duplicate_page_count": 0,
+        "issues": []
+      },
+      "claims_verification": {
+        "ok": true,
+        "dispatch_plan_path": "data/post-ingest/2026-06-24T01-26-07-684Z_writer-packet-dispatch-plan.json",
+        "claim_file_count": 3,
+        "claimed_count": 109,
+        "unique_claimed_shards": 109,
+        "unclaimed_not_started_shards": 0,
+        "files": [
+          {
+            "ok": true,
+            "path": "data/post-ingest/2026-06-24T01-26-16-071Z_writer-packet-dispatch-claim.json",
+            "dispatch_plan_path": "data/post-ingest/2026-06-24T01-26-07-684Z_writer-packet-dispatch-plan.json",
+            "owner": "codex-conductor",
+            "claimed_count": 6,
+            "unique_claimed_shards": 6,
+            "issues": []
+          },
+          {
+            "ok": true,
+            "path": "data/post-ingest/2026-06-24T01-44-48-969Z_writer-packet-dispatch-claim.json",
+            "dispatch_plan_path": "data/post-ingest/2026-06-24T01-26-07-684Z_writer-packet-dispatch-plan.json",
+            "owner": "codex-conductor",
+            "claimed_count": 6,
+            "unique_claimed_shards": 6,
+            "issues": []
+          },
+          {
+            "ok": true,
+            "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+            "dispatch_plan_path": "data/post-ingest/2026-06-24T01-26-07-684Z_writer-packet-dispatch-plan.json",
+            "owner": "codex-conductor",
+            "claimed_count": 97,
+            "unique_claimed_shards": 97,
+            "issues": []
+          }
+        ],
+        "issues": []
+      },
+      "status": {
+        "path": "data/post-ingest/2026-06-24T01-26-07-684Z_writer-packet-dispatch-plan.json",
+        "shard_count": 109,
+        "packet_count": 2703,
+        "empty_pages": 2703,
+        "non_empty_pages": 0,
+        "missing_pages": 0,
+        "not_started_shards": 109,
+        "in_progress_shards": 0,
+        "ready_for_post_edit_verification_shards": 0,
+        "stale_or_missing_shards": 0,
+        "claimed_shards": 109,
+        "unclaimed_not_started_shards": 0,
+        "shards": [
+          {
+            "shard_id": "writer-shard-001",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "9dc61c2b14fa0972",
+              "path": "data/post-ingest/2026-06-24T01-26-16-071Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:26:16.071Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-23T23-22-20-181Z_writer-backlog-packets-offset-0.json data/post-ingest/2026-06-23T23-22-21-252Z_writer-backlog-packets-offset-5.json data/post-ingest/2026-06-23T23-22-22-288Z_writer-backlog-packets-offset-10.json data/post-ingest/2026-06-23T23-22-23-309Z_writer-backlog-packets-offset-15.json data/post-ingest/2026-06-23T23-22-24-315Z_writer-backlog-packets-offset-20.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-23T23-22-20-181Z_writer-backlog-packets-offset-0.json data/post-ingest/2026-06-23T23-22-21-252Z_writer-backlog-packets-offset-5.json data/post-ingest/2026-06-23T23-22-22-288Z_writer-backlog-packets-offset-10.json data/post-ingest/2026-06-23T23-22-23-309Z_writer-backlog-packets-offset-15.json data/post-ingest/2026-06-23T23-22-24-315Z_writer-backlog-packets-offset-20.json"
+          },
+          {
+            "shard_id": "writer-shard-002",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "9dc61c2b14fa0972",
+              "path": "data/post-ingest/2026-06-24T01-26-16-071Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:26:16.071Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-23T23-39-14-709Z_writer-backlog-packets-offset-25.json data/post-ingest/2026-06-23T23-39-15-875Z_writer-backlog-packets-offset-30.json data/post-ingest/2026-06-23T23-39-17-017Z_writer-backlog-packets-offset-35.json data/post-ingest/2026-06-23T23-39-18-028Z_writer-backlog-packets-offset-40.json data/post-ingest/2026-06-23T23-39-19-086Z_writer-backlog-packets-offset-45.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-23T23-39-14-709Z_writer-backlog-packets-offset-25.json data/post-ingest/2026-06-23T23-39-15-875Z_writer-backlog-packets-offset-30.json data/post-ingest/2026-06-23T23-39-17-017Z_writer-backlog-packets-offset-35.json data/post-ingest/2026-06-23T23-39-18-028Z_writer-backlog-packets-offset-40.json data/post-ingest/2026-06-23T23-39-19-086Z_writer-backlog-packets-offset-45.json"
+          },
+          {
+            "shard_id": "writer-shard-003",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "9dc61c2b14fa0972",
+              "path": "data/post-ingest/2026-06-24T01-26-16-071Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:26:16.071Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-23T23-42-37-882Z_writer-backlog-packets-offset-50.json data/post-ingest/2026-06-23T23-42-39-007Z_writer-backlog-packets-offset-55.json data/post-ingest/2026-06-23T23-42-40-105Z_writer-backlog-packets-offset-60.json data/post-ingest/2026-06-23T23-42-41-140Z_writer-backlog-packets-offset-65.json data/post-ingest/2026-06-23T23-42-42-140Z_writer-backlog-packets-offset-70.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-23T23-42-37-882Z_writer-backlog-packets-offset-50.json data/post-ingest/2026-06-23T23-42-39-007Z_writer-backlog-packets-offset-55.json data/post-ingest/2026-06-23T23-42-40-105Z_writer-backlog-packets-offset-60.json data/post-ingest/2026-06-23T23-42-41-140Z_writer-backlog-packets-offset-65.json data/post-ingest/2026-06-23T23-42-42-140Z_writer-backlog-packets-offset-70.json"
+          },
+          {
+            "shard_id": "writer-shard-004",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "9dc61c2b14fa0972",
+              "path": "data/post-ingest/2026-06-24T01-26-16-071Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:26:16.071Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-23T23-42-43-238Z_writer-backlog-packets-offset-75.json data/post-ingest/2026-06-23T23-42-44-238Z_writer-backlog-packets-offset-80.json data/post-ingest/2026-06-23T23-42-45-394Z_writer-backlog-packets-offset-85.json data/post-ingest/2026-06-23T23-42-46-354Z_writer-backlog-packets-offset-90.json data/post-ingest/2026-06-23T23-42-47-358Z_writer-backlog-packets-offset-95.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-23T23-42-43-238Z_writer-backlog-packets-offset-75.json data/post-ingest/2026-06-23T23-42-44-238Z_writer-backlog-packets-offset-80.json data/post-ingest/2026-06-23T23-42-45-394Z_writer-backlog-packets-offset-85.json data/post-ingest/2026-06-23T23-42-46-354Z_writer-backlog-packets-offset-90.json data/post-ingest/2026-06-23T23-42-47-358Z_writer-backlog-packets-offset-95.json"
+          },
+          {
+            "shard_id": "writer-shard-005",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "9dc61c2b14fa0972",
+              "path": "data/post-ingest/2026-06-24T01-26-16-071Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:26:16.071Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-23T23-56-24-022Z_writer-backlog-packets-offset-100.json data/post-ingest/2026-06-23T23-56-25-133Z_writer-backlog-packets-offset-105.json data/post-ingest/2026-06-23T23-56-26-208Z_writer-backlog-packets-offset-110.json data/post-ingest/2026-06-23T23-56-27-280Z_writer-backlog-packets-offset-115.json data/post-ingest/2026-06-23T23-56-28-268Z_writer-backlog-packets-offset-120.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-23T23-56-24-022Z_writer-backlog-packets-offset-100.json data/post-ingest/2026-06-23T23-56-25-133Z_writer-backlog-packets-offset-105.json data/post-ingest/2026-06-23T23-56-26-208Z_writer-backlog-packets-offset-110.json data/post-ingest/2026-06-23T23-56-27-280Z_writer-backlog-packets-offset-115.json data/post-ingest/2026-06-23T23-56-28-268Z_writer-backlog-packets-offset-120.json"
+          },
+          {
+            "shard_id": "writer-shard-006",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "9dc61c2b14fa0972",
+              "path": "data/post-ingest/2026-06-24T01-26-16-071Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:26:16.071Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-23T23-56-29-285Z_writer-backlog-packets-offset-125.json data/post-ingest/2026-06-23T23-56-30-237Z_writer-backlog-packets-offset-130.json data/post-ingest/2026-06-23T23-56-31-168Z_writer-backlog-packets-offset-135.json data/post-ingest/2026-06-23T23-56-32-094Z_writer-backlog-packets-offset-140.json data/post-ingest/2026-06-23T23-56-33-071Z_writer-backlog-packets-offset-145.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-23T23-56-29-285Z_writer-backlog-packets-offset-125.json data/post-ingest/2026-06-23T23-56-30-237Z_writer-backlog-packets-offset-130.json data/post-ingest/2026-06-23T23-56-31-168Z_writer-backlog-packets-offset-135.json data/post-ingest/2026-06-23T23-56-32-094Z_writer-backlog-packets-offset-140.json data/post-ingest/2026-06-23T23-56-33-071Z_writer-backlog-packets-offset-145.json"
+          },
+          {
+            "shard_id": "writer-shard-007",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "7a4beb5ac8539370",
+              "path": "data/post-ingest/2026-06-24T01-44-48-969Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:44:48.969Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-23T23-56-34-088Z_writer-backlog-packets-offset-150.json data/post-ingest/2026-06-23T23-56-35-123Z_writer-backlog-packets-offset-155.json data/post-ingest/2026-06-23T23-56-36-171Z_writer-backlog-packets-offset-160.json data/post-ingest/2026-06-23T23-56-37-155Z_writer-backlog-packets-offset-165.json data/post-ingest/2026-06-23T23-56-38-164Z_writer-backlog-packets-offset-170.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-23T23-56-34-088Z_writer-backlog-packets-offset-150.json data/post-ingest/2026-06-23T23-56-35-123Z_writer-backlog-packets-offset-155.json data/post-ingest/2026-06-23T23-56-36-171Z_writer-backlog-packets-offset-160.json data/post-ingest/2026-06-23T23-56-37-155Z_writer-backlog-packets-offset-165.json data/post-ingest/2026-06-23T23-56-38-164Z_writer-backlog-packets-offset-170.json"
+          },
+          {
+            "shard_id": "writer-shard-008",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "7a4beb5ac8539370",
+              "path": "data/post-ingest/2026-06-24T01-44-48-969Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:44:48.969Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-23T23-56-39-197Z_writer-backlog-packets-offset-175.json data/post-ingest/2026-06-23T23-56-40-189Z_writer-backlog-packets-offset-180.json data/post-ingest/2026-06-23T23-56-41-135Z_writer-backlog-packets-offset-185.json data/post-ingest/2026-06-23T23-56-42-093Z_writer-backlog-packets-offset-190.json data/post-ingest/2026-06-23T23-56-43-075Z_writer-backlog-packets-offset-195.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-23T23-56-39-197Z_writer-backlog-packets-offset-175.json data/post-ingest/2026-06-23T23-56-40-189Z_writer-backlog-packets-offset-180.json data/post-ingest/2026-06-23T23-56-41-135Z_writer-backlog-packets-offset-185.json data/post-ingest/2026-06-23T23-56-42-093Z_writer-backlog-packets-offset-190.json data/post-ingest/2026-06-23T23-56-43-075Z_writer-backlog-packets-offset-195.json"
+          },
+          {
+            "shard_id": "writer-shard-009",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "7a4beb5ac8539370",
+              "path": "data/post-ingest/2026-06-24T01-44-48-969Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:44:48.969Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-01-08-630Z_writer-backlog-packets-offset-200.json data/post-ingest/2026-06-24T00-01-09-739Z_writer-backlog-packets-offset-205.json data/post-ingest/2026-06-24T00-01-10-843Z_writer-backlog-packets-offset-210.json data/post-ingest/2026-06-24T00-01-11-936Z_writer-backlog-packets-offset-215.json data/post-ingest/2026-06-24T00-01-12-998Z_writer-backlog-packets-offset-220.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-01-08-630Z_writer-backlog-packets-offset-200.json data/post-ingest/2026-06-24T00-01-09-739Z_writer-backlog-packets-offset-205.json data/post-ingest/2026-06-24T00-01-10-843Z_writer-backlog-packets-offset-210.json data/post-ingest/2026-06-24T00-01-11-936Z_writer-backlog-packets-offset-215.json data/post-ingest/2026-06-24T00-01-12-998Z_writer-backlog-packets-offset-220.json"
+          },
+          {
+            "shard_id": "writer-shard-010",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "7a4beb5ac8539370",
+              "path": "data/post-ingest/2026-06-24T01-44-48-969Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:44:48.969Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-01-14-053Z_writer-backlog-packets-offset-225.json data/post-ingest/2026-06-24T00-01-15-075Z_writer-backlog-packets-offset-230.json data/post-ingest/2026-06-24T00-01-16-086Z_writer-backlog-packets-offset-235.json data/post-ingest/2026-06-24T00-01-17-083Z_writer-backlog-packets-offset-240.json data/post-ingest/2026-06-24T00-01-18-143Z_writer-backlog-packets-offset-245.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-01-14-053Z_writer-backlog-packets-offset-225.json data/post-ingest/2026-06-24T00-01-15-075Z_writer-backlog-packets-offset-230.json data/post-ingest/2026-06-24T00-01-16-086Z_writer-backlog-packets-offset-235.json data/post-ingest/2026-06-24T00-01-17-083Z_writer-backlog-packets-offset-240.json data/post-ingest/2026-06-24T00-01-18-143Z_writer-backlog-packets-offset-245.json"
+          },
+          {
+            "shard_id": "writer-shard-011",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "7a4beb5ac8539370",
+              "path": "data/post-ingest/2026-06-24T01-44-48-969Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:44:48.969Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-01-19-167Z_writer-backlog-packets-offset-250.json data/post-ingest/2026-06-24T00-01-20-165Z_writer-backlog-packets-offset-255.json data/post-ingest/2026-06-24T00-01-21-101Z_writer-backlog-packets-offset-260.json data/post-ingest/2026-06-24T00-01-22-092Z_writer-backlog-packets-offset-265.json data/post-ingest/2026-06-24T00-01-23-181Z_writer-backlog-packets-offset-270.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-01-19-167Z_writer-backlog-packets-offset-250.json data/post-ingest/2026-06-24T00-01-20-165Z_writer-backlog-packets-offset-255.json data/post-ingest/2026-06-24T00-01-21-101Z_writer-backlog-packets-offset-260.json data/post-ingest/2026-06-24T00-01-22-092Z_writer-backlog-packets-offset-265.json data/post-ingest/2026-06-24T00-01-23-181Z_writer-backlog-packets-offset-270.json"
+          },
+          {
+            "shard_id": "writer-shard-012",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "7a4beb5ac8539370",
+              "path": "data/post-ingest/2026-06-24T01-44-48-969Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:44:48.969Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-01-24-184Z_writer-backlog-packets-offset-275.json data/post-ingest/2026-06-24T00-01-25-194Z_writer-backlog-packets-offset-280.json data/post-ingest/2026-06-24T00-01-26-145Z_writer-backlog-packets-offset-285.json data/post-ingest/2026-06-24T00-01-27-162Z_writer-backlog-packets-offset-290.json data/post-ingest/2026-06-24T00-01-28-233Z_writer-backlog-packets-offset-295.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-01-24-184Z_writer-backlog-packets-offset-275.json data/post-ingest/2026-06-24T00-01-25-194Z_writer-backlog-packets-offset-280.json data/post-ingest/2026-06-24T00-01-26-145Z_writer-backlog-packets-offset-285.json data/post-ingest/2026-06-24T00-01-27-162Z_writer-backlog-packets-offset-290.json data/post-ingest/2026-06-24T00-01-28-233Z_writer-backlog-packets-offset-295.json"
+          },
+          {
+            "shard_id": "writer-shard-013",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-01-29-233Z_writer-backlog-packets-offset-300.json data/post-ingest/2026-06-24T00-01-30-227Z_writer-backlog-packets-offset-305.json data/post-ingest/2026-06-24T00-01-31-234Z_writer-backlog-packets-offset-310.json data/post-ingest/2026-06-24T00-01-32-163Z_writer-backlog-packets-offset-315.json data/post-ingest/2026-06-24T00-01-33-108Z_writer-backlog-packets-offset-320.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-01-29-233Z_writer-backlog-packets-offset-300.json data/post-ingest/2026-06-24T00-01-30-227Z_writer-backlog-packets-offset-305.json data/post-ingest/2026-06-24T00-01-31-234Z_writer-backlog-packets-offset-310.json data/post-ingest/2026-06-24T00-01-32-163Z_writer-backlog-packets-offset-315.json data/post-ingest/2026-06-24T00-01-33-108Z_writer-backlog-packets-offset-320.json"
+          },
+          {
+            "shard_id": "writer-shard-014",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-01-34-095Z_writer-backlog-packets-offset-325.json data/post-ingest/2026-06-24T00-01-35-052Z_writer-backlog-packets-offset-330.json data/post-ingest/2026-06-24T00-01-36-014Z_writer-backlog-packets-offset-335.json data/post-ingest/2026-06-24T00-01-37-017Z_writer-backlog-packets-offset-340.json data/post-ingest/2026-06-24T00-01-38-048Z_writer-backlog-packets-offset-345.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-01-34-095Z_writer-backlog-packets-offset-325.json data/post-ingest/2026-06-24T00-01-35-052Z_writer-backlog-packets-offset-330.json data/post-ingest/2026-06-24T00-01-36-014Z_writer-backlog-packets-offset-335.json data/post-ingest/2026-06-24T00-01-37-017Z_writer-backlog-packets-offset-340.json data/post-ingest/2026-06-24T00-01-38-048Z_writer-backlog-packets-offset-345.json"
+          },
+          {
+            "shard_id": "writer-shard-015",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-01-39-012Z_writer-backlog-packets-offset-350.json data/post-ingest/2026-06-24T00-01-39-985Z_writer-backlog-packets-offset-355.json data/post-ingest/2026-06-24T00-01-41-034Z_writer-backlog-packets-offset-360.json data/post-ingest/2026-06-24T00-01-42-056Z_writer-backlog-packets-offset-365.json data/post-ingest/2026-06-24T00-01-43-269Z_writer-backlog-packets-offset-370.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-01-39-012Z_writer-backlog-packets-offset-350.json data/post-ingest/2026-06-24T00-01-39-985Z_writer-backlog-packets-offset-355.json data/post-ingest/2026-06-24T00-01-41-034Z_writer-backlog-packets-offset-360.json data/post-ingest/2026-06-24T00-01-42-056Z_writer-backlog-packets-offset-365.json data/post-ingest/2026-06-24T00-01-43-269Z_writer-backlog-packets-offset-370.json"
+          },
+          {
+            "shard_id": "writer-shard-016",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-01-44-263Z_writer-backlog-packets-offset-375.json data/post-ingest/2026-06-24T00-01-45-260Z_writer-backlog-packets-offset-380.json data/post-ingest/2026-06-24T00-01-46-218Z_writer-backlog-packets-offset-385.json data/post-ingest/2026-06-24T00-01-47-162Z_writer-backlog-packets-offset-390.json data/post-ingest/2026-06-24T00-01-48-169Z_writer-backlog-packets-offset-395.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-01-44-263Z_writer-backlog-packets-offset-375.json data/post-ingest/2026-06-24T00-01-45-260Z_writer-backlog-packets-offset-380.json data/post-ingest/2026-06-24T00-01-46-218Z_writer-backlog-packets-offset-385.json data/post-ingest/2026-06-24T00-01-47-162Z_writer-backlog-packets-offset-390.json data/post-ingest/2026-06-24T00-01-48-169Z_writer-backlog-packets-offset-395.json"
+          },
+          {
+            "shard_id": "writer-shard-017",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-06-00-088Z_writer-backlog-packets-offset-400.json data/post-ingest/2026-06-24T00-06-01-167Z_writer-backlog-packets-offset-405.json data/post-ingest/2026-06-24T00-06-02-225Z_writer-backlog-packets-offset-410.json data/post-ingest/2026-06-24T00-06-03-300Z_writer-backlog-packets-offset-415.json data/post-ingest/2026-06-24T00-06-04-369Z_writer-backlog-packets-offset-420.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-06-00-088Z_writer-backlog-packets-offset-400.json data/post-ingest/2026-06-24T00-06-01-167Z_writer-backlog-packets-offset-405.json data/post-ingest/2026-06-24T00-06-02-225Z_writer-backlog-packets-offset-410.json data/post-ingest/2026-06-24T00-06-03-300Z_writer-backlog-packets-offset-415.json data/post-ingest/2026-06-24T00-06-04-369Z_writer-backlog-packets-offset-420.json"
+          },
+          {
+            "shard_id": "writer-shard-018",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-06-05-390Z_writer-backlog-packets-offset-425.json data/post-ingest/2026-06-24T00-06-06-360Z_writer-backlog-packets-offset-430.json data/post-ingest/2026-06-24T00-06-07-455Z_writer-backlog-packets-offset-435.json data/post-ingest/2026-06-24T00-06-08-416Z_writer-backlog-packets-offset-440.json data/post-ingest/2026-06-24T00-06-09-387Z_writer-backlog-packets-offset-445.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-06-05-390Z_writer-backlog-packets-offset-425.json data/post-ingest/2026-06-24T00-06-06-360Z_writer-backlog-packets-offset-430.json data/post-ingest/2026-06-24T00-06-07-455Z_writer-backlog-packets-offset-435.json data/post-ingest/2026-06-24T00-06-08-416Z_writer-backlog-packets-offset-440.json data/post-ingest/2026-06-24T00-06-09-387Z_writer-backlog-packets-offset-445.json"
+          },
+          {
+            "shard_id": "writer-shard-019",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-06-10-382Z_writer-backlog-packets-offset-450.json data/post-ingest/2026-06-24T00-06-11-350Z_writer-backlog-packets-offset-455.json data/post-ingest/2026-06-24T00-06-12-280Z_writer-backlog-packets-offset-460.json data/post-ingest/2026-06-24T00-06-13-247Z_writer-backlog-packets-offset-465.json data/post-ingest/2026-06-24T00-06-14-257Z_writer-backlog-packets-offset-470.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-06-10-382Z_writer-backlog-packets-offset-450.json data/post-ingest/2026-06-24T00-06-11-350Z_writer-backlog-packets-offset-455.json data/post-ingest/2026-06-24T00-06-12-280Z_writer-backlog-packets-offset-460.json data/post-ingest/2026-06-24T00-06-13-247Z_writer-backlog-packets-offset-465.json data/post-ingest/2026-06-24T00-06-14-257Z_writer-backlog-packets-offset-470.json"
+          },
+          {
+            "shard_id": "writer-shard-020",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-06-15-230Z_writer-backlog-packets-offset-475.json data/post-ingest/2026-06-24T00-06-16-128Z_writer-backlog-packets-offset-480.json data/post-ingest/2026-06-24T00-06-17-088Z_writer-backlog-packets-offset-485.json data/post-ingest/2026-06-24T00-06-18-017Z_writer-backlog-packets-offset-490.json data/post-ingest/2026-06-24T00-06-18-944Z_writer-backlog-packets-offset-495.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-06-15-230Z_writer-backlog-packets-offset-475.json data/post-ingest/2026-06-24T00-06-16-128Z_writer-backlog-packets-offset-480.json data/post-ingest/2026-06-24T00-06-17-088Z_writer-backlog-packets-offset-485.json data/post-ingest/2026-06-24T00-06-18-017Z_writer-backlog-packets-offset-490.json data/post-ingest/2026-06-24T00-06-18-944Z_writer-backlog-packets-offset-495.json"
+          },
+          {
+            "shard_id": "writer-shard-021",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-06-19-923Z_writer-backlog-packets-offset-500.json data/post-ingest/2026-06-24T00-06-20-935Z_writer-backlog-packets-offset-505.json data/post-ingest/2026-06-24T00-06-21-932Z_writer-backlog-packets-offset-510.json data/post-ingest/2026-06-24T00-06-22-904Z_writer-backlog-packets-offset-515.json data/post-ingest/2026-06-24T00-06-23-850Z_writer-backlog-packets-offset-520.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-06-19-923Z_writer-backlog-packets-offset-500.json data/post-ingest/2026-06-24T00-06-20-935Z_writer-backlog-packets-offset-505.json data/post-ingest/2026-06-24T00-06-21-932Z_writer-backlog-packets-offset-510.json data/post-ingest/2026-06-24T00-06-22-904Z_writer-backlog-packets-offset-515.json data/post-ingest/2026-06-24T00-06-23-850Z_writer-backlog-packets-offset-520.json"
+          },
+          {
+            "shard_id": "writer-shard-022",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-06-24-848Z_writer-backlog-packets-offset-525.json data/post-ingest/2026-06-24T00-06-25-773Z_writer-backlog-packets-offset-530.json data/post-ingest/2026-06-24T00-06-26-723Z_writer-backlog-packets-offset-535.json data/post-ingest/2026-06-24T00-06-27-696Z_writer-backlog-packets-offset-540.json data/post-ingest/2026-06-24T00-06-28-716Z_writer-backlog-packets-offset-545.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-06-24-848Z_writer-backlog-packets-offset-525.json data/post-ingest/2026-06-24T00-06-25-773Z_writer-backlog-packets-offset-530.json data/post-ingest/2026-06-24T00-06-26-723Z_writer-backlog-packets-offset-535.json data/post-ingest/2026-06-24T00-06-27-696Z_writer-backlog-packets-offset-540.json data/post-ingest/2026-06-24T00-06-28-716Z_writer-backlog-packets-offset-545.json"
+          },
+          {
+            "shard_id": "writer-shard-023",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-06-29-722Z_writer-backlog-packets-offset-550.json data/post-ingest/2026-06-24T00-06-30-756Z_writer-backlog-packets-offset-555.json data/post-ingest/2026-06-24T00-06-31-701Z_writer-backlog-packets-offset-560.json data/post-ingest/2026-06-24T00-06-32-671Z_writer-backlog-packets-offset-565.json data/post-ingest/2026-06-24T00-06-33-603Z_writer-backlog-packets-offset-570.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-06-29-722Z_writer-backlog-packets-offset-550.json data/post-ingest/2026-06-24T00-06-30-756Z_writer-backlog-packets-offset-555.json data/post-ingest/2026-06-24T00-06-31-701Z_writer-backlog-packets-offset-560.json data/post-ingest/2026-06-24T00-06-32-671Z_writer-backlog-packets-offset-565.json data/post-ingest/2026-06-24T00-06-33-603Z_writer-backlog-packets-offset-570.json"
+          },
+          {
+            "shard_id": "writer-shard-024",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-06-34-552Z_writer-backlog-packets-offset-575.json data/post-ingest/2026-06-24T00-06-35-522Z_writer-backlog-packets-offset-580.json data/post-ingest/2026-06-24T00-06-36-507Z_writer-backlog-packets-offset-585.json data/post-ingest/2026-06-24T00-06-37-513Z_writer-backlog-packets-offset-590.json data/post-ingest/2026-06-24T00-06-38-462Z_writer-backlog-packets-offset-595.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-06-34-552Z_writer-backlog-packets-offset-575.json data/post-ingest/2026-06-24T00-06-35-522Z_writer-backlog-packets-offset-580.json data/post-ingest/2026-06-24T00-06-36-507Z_writer-backlog-packets-offset-585.json data/post-ingest/2026-06-24T00-06-37-513Z_writer-backlog-packets-offset-590.json data/post-ingest/2026-06-24T00-06-38-462Z_writer-backlog-packets-offset-595.json"
+          },
+          {
+            "shard_id": "writer-shard-025",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-06-39-446Z_writer-backlog-packets-offset-600.json data/post-ingest/2026-06-24T00-06-40-438Z_writer-backlog-packets-offset-605.json data/post-ingest/2026-06-24T00-06-41-467Z_writer-backlog-packets-offset-610.json data/post-ingest/2026-06-24T00-06-42-391Z_writer-backlog-packets-offset-615.json data/post-ingest/2026-06-24T00-06-43-365Z_writer-backlog-packets-offset-620.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-06-39-446Z_writer-backlog-packets-offset-600.json data/post-ingest/2026-06-24T00-06-40-438Z_writer-backlog-packets-offset-605.json data/post-ingest/2026-06-24T00-06-41-467Z_writer-backlog-packets-offset-610.json data/post-ingest/2026-06-24T00-06-42-391Z_writer-backlog-packets-offset-615.json data/post-ingest/2026-06-24T00-06-43-365Z_writer-backlog-packets-offset-620.json"
+          },
+          {
+            "shard_id": "writer-shard-026",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-06-44-376Z_writer-backlog-packets-offset-625.json data/post-ingest/2026-06-24T00-06-45-307Z_writer-backlog-packets-offset-630.json data/post-ingest/2026-06-24T00-06-46-333Z_writer-backlog-packets-offset-635.json data/post-ingest/2026-06-24T00-06-47-282Z_writer-backlog-packets-offset-640.json data/post-ingest/2026-06-24T00-06-48-264Z_writer-backlog-packets-offset-645.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-06-44-376Z_writer-backlog-packets-offset-625.json data/post-ingest/2026-06-24T00-06-45-307Z_writer-backlog-packets-offset-630.json data/post-ingest/2026-06-24T00-06-46-333Z_writer-backlog-packets-offset-635.json data/post-ingest/2026-06-24T00-06-47-282Z_writer-backlog-packets-offset-640.json data/post-ingest/2026-06-24T00-06-48-264Z_writer-backlog-packets-offset-645.json"
+          },
+          {
+            "shard_id": "writer-shard-027",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-06-49-248Z_writer-backlog-packets-offset-650.json data/post-ingest/2026-06-24T00-06-50-239Z_writer-backlog-packets-offset-655.json data/post-ingest/2026-06-24T00-06-51-170Z_writer-backlog-packets-offset-660.json data/post-ingest/2026-06-24T00-06-52-097Z_writer-backlog-packets-offset-665.json data/post-ingest/2026-06-24T00-06-53-071Z_writer-backlog-packets-offset-670.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-06-49-248Z_writer-backlog-packets-offset-650.json data/post-ingest/2026-06-24T00-06-50-239Z_writer-backlog-packets-offset-655.json data/post-ingest/2026-06-24T00-06-51-170Z_writer-backlog-packets-offset-660.json data/post-ingest/2026-06-24T00-06-52-097Z_writer-backlog-packets-offset-665.json data/post-ingest/2026-06-24T00-06-53-071Z_writer-backlog-packets-offset-670.json"
+          },
+          {
+            "shard_id": "writer-shard-028",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-06-54-125Z_writer-backlog-packets-offset-675.json data/post-ingest/2026-06-24T00-06-55-229Z_writer-backlog-packets-offset-680.json data/post-ingest/2026-06-24T00-06-56-281Z_writer-backlog-packets-offset-685.json data/post-ingest/2026-06-24T00-06-57-296Z_writer-backlog-packets-offset-690.json data/post-ingest/2026-06-24T00-06-58-276Z_writer-backlog-packets-offset-695.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-06-54-125Z_writer-backlog-packets-offset-675.json data/post-ingest/2026-06-24T00-06-55-229Z_writer-backlog-packets-offset-680.json data/post-ingest/2026-06-24T00-06-56-281Z_writer-backlog-packets-offset-685.json data/post-ingest/2026-06-24T00-06-57-296Z_writer-backlog-packets-offset-690.json data/post-ingest/2026-06-24T00-06-58-276Z_writer-backlog-packets-offset-695.json"
+          },
+          {
+            "shard_id": "writer-shard-029",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-06-59-219Z_writer-backlog-packets-offset-700.json data/post-ingest/2026-06-24T00-07-00-189Z_writer-backlog-packets-offset-705.json data/post-ingest/2026-06-24T00-07-01-159Z_writer-backlog-packets-offset-710.json data/post-ingest/2026-06-24T00-07-02-171Z_writer-backlog-packets-offset-715.json data/post-ingest/2026-06-24T00-07-03-159Z_writer-backlog-packets-offset-720.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-06-59-219Z_writer-backlog-packets-offset-700.json data/post-ingest/2026-06-24T00-07-00-189Z_writer-backlog-packets-offset-705.json data/post-ingest/2026-06-24T00-07-01-159Z_writer-backlog-packets-offset-710.json data/post-ingest/2026-06-24T00-07-02-171Z_writer-backlog-packets-offset-715.json data/post-ingest/2026-06-24T00-07-03-159Z_writer-backlog-packets-offset-720.json"
+          },
+          {
+            "shard_id": "writer-shard-030",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-07-04-102Z_writer-backlog-packets-offset-725.json data/post-ingest/2026-06-24T00-07-05-158Z_writer-backlog-packets-offset-730.json data/post-ingest/2026-06-24T00-07-06-189Z_writer-backlog-packets-offset-735.json data/post-ingest/2026-06-24T00-07-07-238Z_writer-backlog-packets-offset-740.json data/post-ingest/2026-06-24T00-07-08-213Z_writer-backlog-packets-offset-745.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-07-04-102Z_writer-backlog-packets-offset-725.json data/post-ingest/2026-06-24T00-07-05-158Z_writer-backlog-packets-offset-730.json data/post-ingest/2026-06-24T00-07-06-189Z_writer-backlog-packets-offset-735.json data/post-ingest/2026-06-24T00-07-07-238Z_writer-backlog-packets-offset-740.json data/post-ingest/2026-06-24T00-07-08-213Z_writer-backlog-packets-offset-745.json"
+          },
+          {
+            "shard_id": "writer-shard-031",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-07-09-314Z_writer-backlog-packets-offset-750.json data/post-ingest/2026-06-24T00-07-10-323Z_writer-backlog-packets-offset-755.json data/post-ingest/2026-06-24T00-07-11-293Z_writer-backlog-packets-offset-760.json data/post-ingest/2026-06-24T00-07-12-308Z_writer-backlog-packets-offset-765.json data/post-ingest/2026-06-24T00-07-13-249Z_writer-backlog-packets-offset-770.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-07-09-314Z_writer-backlog-packets-offset-750.json data/post-ingest/2026-06-24T00-07-10-323Z_writer-backlog-packets-offset-755.json data/post-ingest/2026-06-24T00-07-11-293Z_writer-backlog-packets-offset-760.json data/post-ingest/2026-06-24T00-07-12-308Z_writer-backlog-packets-offset-765.json data/post-ingest/2026-06-24T00-07-13-249Z_writer-backlog-packets-offset-770.json"
+          },
+          {
+            "shard_id": "writer-shard-032",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-07-14-246Z_writer-backlog-packets-offset-775.json data/post-ingest/2026-06-24T00-07-15-241Z_writer-backlog-packets-offset-780.json data/post-ingest/2026-06-24T00-07-16-232Z_writer-backlog-packets-offset-785.json data/post-ingest/2026-06-24T00-07-17-234Z_writer-backlog-packets-offset-790.json data/post-ingest/2026-06-24T00-07-18-194Z_writer-backlog-packets-offset-795.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-07-14-246Z_writer-backlog-packets-offset-775.json data/post-ingest/2026-06-24T00-07-15-241Z_writer-backlog-packets-offset-780.json data/post-ingest/2026-06-24T00-07-16-232Z_writer-backlog-packets-offset-785.json data/post-ingest/2026-06-24T00-07-17-234Z_writer-backlog-packets-offset-790.json data/post-ingest/2026-06-24T00-07-18-194Z_writer-backlog-packets-offset-795.json"
+          },
+          {
+            "shard_id": "writer-shard-033",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-12-31-434Z_writer-backlog-packets-offset-800.json data/post-ingest/2026-06-24T00-12-32-527Z_writer-backlog-packets-offset-805.json data/post-ingest/2026-06-24T00-12-33-612Z_writer-backlog-packets-offset-810.json data/post-ingest/2026-06-24T00-12-34-644Z_writer-backlog-packets-offset-815.json data/post-ingest/2026-06-24T00-12-35-616Z_writer-backlog-packets-offset-820.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-12-31-434Z_writer-backlog-packets-offset-800.json data/post-ingest/2026-06-24T00-12-32-527Z_writer-backlog-packets-offset-805.json data/post-ingest/2026-06-24T00-12-33-612Z_writer-backlog-packets-offset-810.json data/post-ingest/2026-06-24T00-12-34-644Z_writer-backlog-packets-offset-815.json data/post-ingest/2026-06-24T00-12-35-616Z_writer-backlog-packets-offset-820.json"
+          },
+          {
+            "shard_id": "writer-shard-034",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-12-36-619Z_writer-backlog-packets-offset-825.json data/post-ingest/2026-06-24T00-12-37-603Z_writer-backlog-packets-offset-830.json data/post-ingest/2026-06-24T00-12-38-558Z_writer-backlog-packets-offset-835.json data/post-ingest/2026-06-24T00-12-39-512Z_writer-backlog-packets-offset-840.json data/post-ingest/2026-06-24T00-12-40-539Z_writer-backlog-packets-offset-845.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-12-36-619Z_writer-backlog-packets-offset-825.json data/post-ingest/2026-06-24T00-12-37-603Z_writer-backlog-packets-offset-830.json data/post-ingest/2026-06-24T00-12-38-558Z_writer-backlog-packets-offset-835.json data/post-ingest/2026-06-24T00-12-39-512Z_writer-backlog-packets-offset-840.json data/post-ingest/2026-06-24T00-12-40-539Z_writer-backlog-packets-offset-845.json"
+          },
+          {
+            "shard_id": "writer-shard-035",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-12-41-643Z_writer-backlog-packets-offset-850.json data/post-ingest/2026-06-24T00-12-42-594Z_writer-backlog-packets-offset-855.json data/post-ingest/2026-06-24T00-12-43-600Z_writer-backlog-packets-offset-860.json data/post-ingest/2026-06-24T00-12-44-527Z_writer-backlog-packets-offset-865.json data/post-ingest/2026-06-24T00-12-45-465Z_writer-backlog-packets-offset-870.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-12-41-643Z_writer-backlog-packets-offset-850.json data/post-ingest/2026-06-24T00-12-42-594Z_writer-backlog-packets-offset-855.json data/post-ingest/2026-06-24T00-12-43-600Z_writer-backlog-packets-offset-860.json data/post-ingest/2026-06-24T00-12-44-527Z_writer-backlog-packets-offset-865.json data/post-ingest/2026-06-24T00-12-45-465Z_writer-backlog-packets-offset-870.json"
+          },
+          {
+            "shard_id": "writer-shard-036",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-12-46-463Z_writer-backlog-packets-offset-875.json data/post-ingest/2026-06-24T00-12-47-478Z_writer-backlog-packets-offset-880.json data/post-ingest/2026-06-24T00-12-48-481Z_writer-backlog-packets-offset-885.json data/post-ingest/2026-06-24T00-12-49-478Z_writer-backlog-packets-offset-890.json data/post-ingest/2026-06-24T00-12-50-429Z_writer-backlog-packets-offset-895.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-12-46-463Z_writer-backlog-packets-offset-875.json data/post-ingest/2026-06-24T00-12-47-478Z_writer-backlog-packets-offset-880.json data/post-ingest/2026-06-24T00-12-48-481Z_writer-backlog-packets-offset-885.json data/post-ingest/2026-06-24T00-12-49-478Z_writer-backlog-packets-offset-890.json data/post-ingest/2026-06-24T00-12-50-429Z_writer-backlog-packets-offset-895.json"
+          },
+          {
+            "shard_id": "writer-shard-037",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-12-51-445Z_writer-backlog-packets-offset-900.json data/post-ingest/2026-06-24T00-12-52-443Z_writer-backlog-packets-offset-905.json data/post-ingest/2026-06-24T00-12-53-459Z_writer-backlog-packets-offset-910.json data/post-ingest/2026-06-24T00-12-54-409Z_writer-backlog-packets-offset-915.json data/post-ingest/2026-06-24T00-12-55-423Z_writer-backlog-packets-offset-920.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-12-51-445Z_writer-backlog-packets-offset-900.json data/post-ingest/2026-06-24T00-12-52-443Z_writer-backlog-packets-offset-905.json data/post-ingest/2026-06-24T00-12-53-459Z_writer-backlog-packets-offset-910.json data/post-ingest/2026-06-24T00-12-54-409Z_writer-backlog-packets-offset-915.json data/post-ingest/2026-06-24T00-12-55-423Z_writer-backlog-packets-offset-920.json"
+          },
+          {
+            "shard_id": "writer-shard-038",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-12-56-492Z_writer-backlog-packets-offset-925.json data/post-ingest/2026-06-24T00-12-57-470Z_writer-backlog-packets-offset-930.json data/post-ingest/2026-06-24T00-12-58-439Z_writer-backlog-packets-offset-935.json data/post-ingest/2026-06-24T00-12-59-436Z_writer-backlog-packets-offset-940.json data/post-ingest/2026-06-24T00-13-00-398Z_writer-backlog-packets-offset-945.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-12-56-492Z_writer-backlog-packets-offset-925.json data/post-ingest/2026-06-24T00-12-57-470Z_writer-backlog-packets-offset-930.json data/post-ingest/2026-06-24T00-12-58-439Z_writer-backlog-packets-offset-935.json data/post-ingest/2026-06-24T00-12-59-436Z_writer-backlog-packets-offset-940.json data/post-ingest/2026-06-24T00-13-00-398Z_writer-backlog-packets-offset-945.json"
+          },
+          {
+            "shard_id": "writer-shard-039",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-13-01-370Z_writer-backlog-packets-offset-950.json data/post-ingest/2026-06-24T00-13-02-385Z_writer-backlog-packets-offset-955.json data/post-ingest/2026-06-24T00-13-03-439Z_writer-backlog-packets-offset-960.json data/post-ingest/2026-06-24T00-13-04-417Z_writer-backlog-packets-offset-965.json data/post-ingest/2026-06-24T00-13-05-423Z_writer-backlog-packets-offset-970.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-13-01-370Z_writer-backlog-packets-offset-950.json data/post-ingest/2026-06-24T00-13-02-385Z_writer-backlog-packets-offset-955.json data/post-ingest/2026-06-24T00-13-03-439Z_writer-backlog-packets-offset-960.json data/post-ingest/2026-06-24T00-13-04-417Z_writer-backlog-packets-offset-965.json data/post-ingest/2026-06-24T00-13-05-423Z_writer-backlog-packets-offset-970.json"
+          },
+          {
+            "shard_id": "writer-shard-040",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-13-06-453Z_writer-backlog-packets-offset-975.json data/post-ingest/2026-06-24T00-13-07-438Z_writer-backlog-packets-offset-980.json data/post-ingest/2026-06-24T00-13-08-406Z_writer-backlog-packets-offset-985.json data/post-ingest/2026-06-24T00-13-09-368Z_writer-backlog-packets-offset-990.json data/post-ingest/2026-06-24T00-13-10-351Z_writer-backlog-packets-offset-995.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-13-06-453Z_writer-backlog-packets-offset-975.json data/post-ingest/2026-06-24T00-13-07-438Z_writer-backlog-packets-offset-980.json data/post-ingest/2026-06-24T00-13-08-406Z_writer-backlog-packets-offset-985.json data/post-ingest/2026-06-24T00-13-09-368Z_writer-backlog-packets-offset-990.json data/post-ingest/2026-06-24T00-13-10-351Z_writer-backlog-packets-offset-995.json"
+          },
+          {
+            "shard_id": "writer-shard-041",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-13-11-365Z_writer-backlog-packets-offset-1000.json data/post-ingest/2026-06-24T00-13-12-310Z_writer-backlog-packets-offset-1005.json data/post-ingest/2026-06-24T00-13-13-258Z_writer-backlog-packets-offset-1010.json data/post-ingest/2026-06-24T00-13-14-240Z_writer-backlog-packets-offset-1015.json data/post-ingest/2026-06-24T00-13-15-219Z_writer-backlog-packets-offset-1020.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-13-11-365Z_writer-backlog-packets-offset-1000.json data/post-ingest/2026-06-24T00-13-12-310Z_writer-backlog-packets-offset-1005.json data/post-ingest/2026-06-24T00-13-13-258Z_writer-backlog-packets-offset-1010.json data/post-ingest/2026-06-24T00-13-14-240Z_writer-backlog-packets-offset-1015.json data/post-ingest/2026-06-24T00-13-15-219Z_writer-backlog-packets-offset-1020.json"
+          },
+          {
+            "shard_id": "writer-shard-042",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-13-16-307Z_writer-backlog-packets-offset-1025.json data/post-ingest/2026-06-24T00-13-17-297Z_writer-backlog-packets-offset-1030.json data/post-ingest/2026-06-24T00-13-18-216Z_writer-backlog-packets-offset-1035.json data/post-ingest/2026-06-24T00-13-19-137Z_writer-backlog-packets-offset-1040.json data/post-ingest/2026-06-24T00-13-20-146Z_writer-backlog-packets-offset-1045.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-13-16-307Z_writer-backlog-packets-offset-1025.json data/post-ingest/2026-06-24T00-13-17-297Z_writer-backlog-packets-offset-1030.json data/post-ingest/2026-06-24T00-13-18-216Z_writer-backlog-packets-offset-1035.json data/post-ingest/2026-06-24T00-13-19-137Z_writer-backlog-packets-offset-1040.json data/post-ingest/2026-06-24T00-13-20-146Z_writer-backlog-packets-offset-1045.json"
+          },
+          {
+            "shard_id": "writer-shard-043",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-13-21-123Z_writer-backlog-packets-offset-1050.json data/post-ingest/2026-06-24T00-13-22-088Z_writer-backlog-packets-offset-1055.json data/post-ingest/2026-06-24T00-13-23-074Z_writer-backlog-packets-offset-1060.json data/post-ingest/2026-06-24T00-13-23-997Z_writer-backlog-packets-offset-1065.json data/post-ingest/2026-06-24T00-13-25-010Z_writer-backlog-packets-offset-1070.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-13-21-123Z_writer-backlog-packets-offset-1050.json data/post-ingest/2026-06-24T00-13-22-088Z_writer-backlog-packets-offset-1055.json data/post-ingest/2026-06-24T00-13-23-074Z_writer-backlog-packets-offset-1060.json data/post-ingest/2026-06-24T00-13-23-997Z_writer-backlog-packets-offset-1065.json data/post-ingest/2026-06-24T00-13-25-010Z_writer-backlog-packets-offset-1070.json"
+          },
+          {
+            "shard_id": "writer-shard-044",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-13-25-938Z_writer-backlog-packets-offset-1075.json data/post-ingest/2026-06-24T00-13-26-990Z_writer-backlog-packets-offset-1080.json data/post-ingest/2026-06-24T00-13-27-989Z_writer-backlog-packets-offset-1085.json data/post-ingest/2026-06-24T00-13-28-981Z_writer-backlog-packets-offset-1090.json data/post-ingest/2026-06-24T00-13-29-945Z_writer-backlog-packets-offset-1095.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-13-25-938Z_writer-backlog-packets-offset-1075.json data/post-ingest/2026-06-24T00-13-26-990Z_writer-backlog-packets-offset-1080.json data/post-ingest/2026-06-24T00-13-27-989Z_writer-backlog-packets-offset-1085.json data/post-ingest/2026-06-24T00-13-28-981Z_writer-backlog-packets-offset-1090.json data/post-ingest/2026-06-24T00-13-29-945Z_writer-backlog-packets-offset-1095.json"
+          },
+          {
+            "shard_id": "writer-shard-045",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-13-30-931Z_writer-backlog-packets-offset-1100.json data/post-ingest/2026-06-24T00-13-31-900Z_writer-backlog-packets-offset-1105.json data/post-ingest/2026-06-24T00-13-32-883Z_writer-backlog-packets-offset-1110.json data/post-ingest/2026-06-24T00-13-33-813Z_writer-backlog-packets-offset-1115.json data/post-ingest/2026-06-24T00-13-34-814Z_writer-backlog-packets-offset-1120.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-13-30-931Z_writer-backlog-packets-offset-1100.json data/post-ingest/2026-06-24T00-13-31-900Z_writer-backlog-packets-offset-1105.json data/post-ingest/2026-06-24T00-13-32-883Z_writer-backlog-packets-offset-1110.json data/post-ingest/2026-06-24T00-13-33-813Z_writer-backlog-packets-offset-1115.json data/post-ingest/2026-06-24T00-13-34-814Z_writer-backlog-packets-offset-1120.json"
+          },
+          {
+            "shard_id": "writer-shard-046",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-13-35-760Z_writer-backlog-packets-offset-1125.json data/post-ingest/2026-06-24T00-13-36-755Z_writer-backlog-packets-offset-1130.json data/post-ingest/2026-06-24T00-13-37-751Z_writer-backlog-packets-offset-1135.json data/post-ingest/2026-06-24T00-13-38-687Z_writer-backlog-packets-offset-1140.json data/post-ingest/2026-06-24T00-13-39-682Z_writer-backlog-packets-offset-1145.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-13-35-760Z_writer-backlog-packets-offset-1125.json data/post-ingest/2026-06-24T00-13-36-755Z_writer-backlog-packets-offset-1130.json data/post-ingest/2026-06-24T00-13-37-751Z_writer-backlog-packets-offset-1135.json data/post-ingest/2026-06-24T00-13-38-687Z_writer-backlog-packets-offset-1140.json data/post-ingest/2026-06-24T00-13-39-682Z_writer-backlog-packets-offset-1145.json"
+          },
+          {
+            "shard_id": "writer-shard-047",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-13-40-648Z_writer-backlog-packets-offset-1150.json data/post-ingest/2026-06-24T00-13-41-654Z_writer-backlog-packets-offset-1155.json data/post-ingest/2026-06-24T00-13-42-654Z_writer-backlog-packets-offset-1160.json data/post-ingest/2026-06-24T00-13-43-696Z_writer-backlog-packets-offset-1165.json data/post-ingest/2026-06-24T00-13-44-690Z_writer-backlog-packets-offset-1170.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-13-40-648Z_writer-backlog-packets-offset-1150.json data/post-ingest/2026-06-24T00-13-41-654Z_writer-backlog-packets-offset-1155.json data/post-ingest/2026-06-24T00-13-42-654Z_writer-backlog-packets-offset-1160.json data/post-ingest/2026-06-24T00-13-43-696Z_writer-backlog-packets-offset-1165.json data/post-ingest/2026-06-24T00-13-44-690Z_writer-backlog-packets-offset-1170.json"
+          },
+          {
+            "shard_id": "writer-shard-048",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-13-45-643Z_writer-backlog-packets-offset-1175.json data/post-ingest/2026-06-24T00-13-46-598Z_writer-backlog-packets-offset-1180.json data/post-ingest/2026-06-24T00-13-47-530Z_writer-backlog-packets-offset-1185.json data/post-ingest/2026-06-24T00-13-48-502Z_writer-backlog-packets-offset-1190.json data/post-ingest/2026-06-24T00-13-49-449Z_writer-backlog-packets-offset-1195.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-13-45-643Z_writer-backlog-packets-offset-1175.json data/post-ingest/2026-06-24T00-13-46-598Z_writer-backlog-packets-offset-1180.json data/post-ingest/2026-06-24T00-13-47-530Z_writer-backlog-packets-offset-1185.json data/post-ingest/2026-06-24T00-13-48-502Z_writer-backlog-packets-offset-1190.json data/post-ingest/2026-06-24T00-13-49-449Z_writer-backlog-packets-offset-1195.json"
+          },
+          {
+            "shard_id": "writer-shard-049",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-19-00-153Z_writer-backlog-packets-offset-1200.json data/post-ingest/2026-06-24T00-19-01-276Z_writer-backlog-packets-offset-1205.json data/post-ingest/2026-06-24T00-19-02-375Z_writer-backlog-packets-offset-1210.json data/post-ingest/2026-06-24T00-19-03-442Z_writer-backlog-packets-offset-1215.json data/post-ingest/2026-06-24T00-19-04-486Z_writer-backlog-packets-offset-1220.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-19-00-153Z_writer-backlog-packets-offset-1200.json data/post-ingest/2026-06-24T00-19-01-276Z_writer-backlog-packets-offset-1205.json data/post-ingest/2026-06-24T00-19-02-375Z_writer-backlog-packets-offset-1210.json data/post-ingest/2026-06-24T00-19-03-442Z_writer-backlog-packets-offset-1215.json data/post-ingest/2026-06-24T00-19-04-486Z_writer-backlog-packets-offset-1220.json"
+          },
+          {
+            "shard_id": "writer-shard-050",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-19-05-519Z_writer-backlog-packets-offset-1225.json data/post-ingest/2026-06-24T00-19-06-495Z_writer-backlog-packets-offset-1230.json data/post-ingest/2026-06-24T00-19-07-490Z_writer-backlog-packets-offset-1235.json data/post-ingest/2026-06-24T00-19-08-452Z_writer-backlog-packets-offset-1240.json data/post-ingest/2026-06-24T00-19-09-388Z_writer-backlog-packets-offset-1245.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-19-05-519Z_writer-backlog-packets-offset-1225.json data/post-ingest/2026-06-24T00-19-06-495Z_writer-backlog-packets-offset-1230.json data/post-ingest/2026-06-24T00-19-07-490Z_writer-backlog-packets-offset-1235.json data/post-ingest/2026-06-24T00-19-08-452Z_writer-backlog-packets-offset-1240.json data/post-ingest/2026-06-24T00-19-09-388Z_writer-backlog-packets-offset-1245.json"
+          },
+          {
+            "shard_id": "writer-shard-051",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-19-10-435Z_writer-backlog-packets-offset-1250.json data/post-ingest/2026-06-24T00-19-11-356Z_writer-backlog-packets-offset-1255.json data/post-ingest/2026-06-24T00-19-12-330Z_writer-backlog-packets-offset-1260.json data/post-ingest/2026-06-24T00-19-13-377Z_writer-backlog-packets-offset-1265.json data/post-ingest/2026-06-24T00-19-14-354Z_writer-backlog-packets-offset-1270.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-19-10-435Z_writer-backlog-packets-offset-1250.json data/post-ingest/2026-06-24T00-19-11-356Z_writer-backlog-packets-offset-1255.json data/post-ingest/2026-06-24T00-19-12-330Z_writer-backlog-packets-offset-1260.json data/post-ingest/2026-06-24T00-19-13-377Z_writer-backlog-packets-offset-1265.json data/post-ingest/2026-06-24T00-19-14-354Z_writer-backlog-packets-offset-1270.json"
+          },
+          {
+            "shard_id": "writer-shard-052",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-19-15-363Z_writer-backlog-packets-offset-1275.json data/post-ingest/2026-06-24T00-19-16-357Z_writer-backlog-packets-offset-1280.json data/post-ingest/2026-06-24T00-19-17-336Z_writer-backlog-packets-offset-1285.json data/post-ingest/2026-06-24T00-19-18-302Z_writer-backlog-packets-offset-1290.json data/post-ingest/2026-06-24T00-19-19-336Z_writer-backlog-packets-offset-1295.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-19-15-363Z_writer-backlog-packets-offset-1275.json data/post-ingest/2026-06-24T00-19-16-357Z_writer-backlog-packets-offset-1280.json data/post-ingest/2026-06-24T00-19-17-336Z_writer-backlog-packets-offset-1285.json data/post-ingest/2026-06-24T00-19-18-302Z_writer-backlog-packets-offset-1290.json data/post-ingest/2026-06-24T00-19-19-336Z_writer-backlog-packets-offset-1295.json"
+          },
+          {
+            "shard_id": "writer-shard-053",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-19-20-362Z_writer-backlog-packets-offset-1300.json data/post-ingest/2026-06-24T00-19-21-317Z_writer-backlog-packets-offset-1305.json data/post-ingest/2026-06-24T00-19-22-318Z_writer-backlog-packets-offset-1310.json data/post-ingest/2026-06-24T00-19-23-250Z_writer-backlog-packets-offset-1315.json data/post-ingest/2026-06-24T00-19-24-215Z_writer-backlog-packets-offset-1320.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-19-20-362Z_writer-backlog-packets-offset-1300.json data/post-ingest/2026-06-24T00-19-21-317Z_writer-backlog-packets-offset-1305.json data/post-ingest/2026-06-24T00-19-22-318Z_writer-backlog-packets-offset-1310.json data/post-ingest/2026-06-24T00-19-23-250Z_writer-backlog-packets-offset-1315.json data/post-ingest/2026-06-24T00-19-24-215Z_writer-backlog-packets-offset-1320.json"
+          },
+          {
+            "shard_id": "writer-shard-054",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-19-25-176Z_writer-backlog-packets-offset-1325.json data/post-ingest/2026-06-24T00-19-26-190Z_writer-backlog-packets-offset-1330.json data/post-ingest/2026-06-24T00-19-27-201Z_writer-backlog-packets-offset-1335.json data/post-ingest/2026-06-24T00-19-28-210Z_writer-backlog-packets-offset-1340.json data/post-ingest/2026-06-24T00-19-29-235Z_writer-backlog-packets-offset-1345.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-19-25-176Z_writer-backlog-packets-offset-1325.json data/post-ingest/2026-06-24T00-19-26-190Z_writer-backlog-packets-offset-1330.json data/post-ingest/2026-06-24T00-19-27-201Z_writer-backlog-packets-offset-1335.json data/post-ingest/2026-06-24T00-19-28-210Z_writer-backlog-packets-offset-1340.json data/post-ingest/2026-06-24T00-19-29-235Z_writer-backlog-packets-offset-1345.json"
+          },
+          {
+            "shard_id": "writer-shard-055",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-19-30-237Z_writer-backlog-packets-offset-1350.json data/post-ingest/2026-06-24T00-19-31-198Z_writer-backlog-packets-offset-1355.json data/post-ingest/2026-06-24T00-19-32-222Z_writer-backlog-packets-offset-1360.json data/post-ingest/2026-06-24T00-19-33-243Z_writer-backlog-packets-offset-1365.json data/post-ingest/2026-06-24T00-19-34-269Z_writer-backlog-packets-offset-1370.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-19-30-237Z_writer-backlog-packets-offset-1350.json data/post-ingest/2026-06-24T00-19-31-198Z_writer-backlog-packets-offset-1355.json data/post-ingest/2026-06-24T00-19-32-222Z_writer-backlog-packets-offset-1360.json data/post-ingest/2026-06-24T00-19-33-243Z_writer-backlog-packets-offset-1365.json data/post-ingest/2026-06-24T00-19-34-269Z_writer-backlog-packets-offset-1370.json"
+          },
+          {
+            "shard_id": "writer-shard-056",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-19-35-297Z_writer-backlog-packets-offset-1375.json data/post-ingest/2026-06-24T00-19-36-330Z_writer-backlog-packets-offset-1380.json data/post-ingest/2026-06-24T00-19-37-362Z_writer-backlog-packets-offset-1385.json data/post-ingest/2026-06-24T00-19-38-341Z_writer-backlog-packets-offset-1390.json data/post-ingest/2026-06-24T00-19-39-291Z_writer-backlog-packets-offset-1395.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-19-35-297Z_writer-backlog-packets-offset-1375.json data/post-ingest/2026-06-24T00-19-36-330Z_writer-backlog-packets-offset-1380.json data/post-ingest/2026-06-24T00-19-37-362Z_writer-backlog-packets-offset-1385.json data/post-ingest/2026-06-24T00-19-38-341Z_writer-backlog-packets-offset-1390.json data/post-ingest/2026-06-24T00-19-39-291Z_writer-backlog-packets-offset-1395.json"
+          },
+          {
+            "shard_id": "writer-shard-057",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-19-40-266Z_writer-backlog-packets-offset-1400.json data/post-ingest/2026-06-24T00-19-41-254Z_writer-backlog-packets-offset-1405.json data/post-ingest/2026-06-24T00-19-42-242Z_writer-backlog-packets-offset-1410.json data/post-ingest/2026-06-24T00-19-43-170Z_writer-backlog-packets-offset-1415.json data/post-ingest/2026-06-24T00-19-44-186Z_writer-backlog-packets-offset-1420.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-19-40-266Z_writer-backlog-packets-offset-1400.json data/post-ingest/2026-06-24T00-19-41-254Z_writer-backlog-packets-offset-1405.json data/post-ingest/2026-06-24T00-19-42-242Z_writer-backlog-packets-offset-1410.json data/post-ingest/2026-06-24T00-19-43-170Z_writer-backlog-packets-offset-1415.json data/post-ingest/2026-06-24T00-19-44-186Z_writer-backlog-packets-offset-1420.json"
+          },
+          {
+            "shard_id": "writer-shard-058",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-19-45-143Z_writer-backlog-packets-offset-1425.json data/post-ingest/2026-06-24T00-19-46-146Z_writer-backlog-packets-offset-1430.json data/post-ingest/2026-06-24T00-19-47-130Z_writer-backlog-packets-offset-1435.json data/post-ingest/2026-06-24T00-19-48-078Z_writer-backlog-packets-offset-1440.json data/post-ingest/2026-06-24T00-19-49-084Z_writer-backlog-packets-offset-1445.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-19-45-143Z_writer-backlog-packets-offset-1425.json data/post-ingest/2026-06-24T00-19-46-146Z_writer-backlog-packets-offset-1430.json data/post-ingest/2026-06-24T00-19-47-130Z_writer-backlog-packets-offset-1435.json data/post-ingest/2026-06-24T00-19-48-078Z_writer-backlog-packets-offset-1440.json data/post-ingest/2026-06-24T00-19-49-084Z_writer-backlog-packets-offset-1445.json"
+          },
+          {
+            "shard_id": "writer-shard-059",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-19-50-161Z_writer-backlog-packets-offset-1450.json data/post-ingest/2026-06-24T00-19-51-188Z_writer-backlog-packets-offset-1455.json data/post-ingest/2026-06-24T00-19-52-198Z_writer-backlog-packets-offset-1460.json data/post-ingest/2026-06-24T00-19-53-144Z_writer-backlog-packets-offset-1465.json data/post-ingest/2026-06-24T00-19-54-126Z_writer-backlog-packets-offset-1470.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-19-50-161Z_writer-backlog-packets-offset-1450.json data/post-ingest/2026-06-24T00-19-51-188Z_writer-backlog-packets-offset-1455.json data/post-ingest/2026-06-24T00-19-52-198Z_writer-backlog-packets-offset-1460.json data/post-ingest/2026-06-24T00-19-53-144Z_writer-backlog-packets-offset-1465.json data/post-ingest/2026-06-24T00-19-54-126Z_writer-backlog-packets-offset-1470.json"
+          },
+          {
+            "shard_id": "writer-shard-060",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-19-55-138Z_writer-backlog-packets-offset-1475.json data/post-ingest/2026-06-24T00-19-56-098Z_writer-backlog-packets-offset-1480.json data/post-ingest/2026-06-24T00-19-57-122Z_writer-backlog-packets-offset-1485.json data/post-ingest/2026-06-24T00-19-58-109Z_writer-backlog-packets-offset-1490.json data/post-ingest/2026-06-24T00-19-59-045Z_writer-backlog-packets-offset-1495.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-19-55-138Z_writer-backlog-packets-offset-1475.json data/post-ingest/2026-06-24T00-19-56-098Z_writer-backlog-packets-offset-1480.json data/post-ingest/2026-06-24T00-19-57-122Z_writer-backlog-packets-offset-1485.json data/post-ingest/2026-06-24T00-19-58-109Z_writer-backlog-packets-offset-1490.json data/post-ingest/2026-06-24T00-19-59-045Z_writer-backlog-packets-offset-1495.json"
+          },
+          {
+            "shard_id": "writer-shard-061",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-20-00-078Z_writer-backlog-packets-offset-1500.json data/post-ingest/2026-06-24T00-20-01-073Z_writer-backlog-packets-offset-1505.json data/post-ingest/2026-06-24T00-20-02-078Z_writer-backlog-packets-offset-1510.json data/post-ingest/2026-06-24T00-20-03-002Z_writer-backlog-packets-offset-1515.json data/post-ingest/2026-06-24T00-20-03-936Z_writer-backlog-packets-offset-1520.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-20-00-078Z_writer-backlog-packets-offset-1500.json data/post-ingest/2026-06-24T00-20-01-073Z_writer-backlog-packets-offset-1505.json data/post-ingest/2026-06-24T00-20-02-078Z_writer-backlog-packets-offset-1510.json data/post-ingest/2026-06-24T00-20-03-002Z_writer-backlog-packets-offset-1515.json data/post-ingest/2026-06-24T00-20-03-936Z_writer-backlog-packets-offset-1520.json"
+          },
+          {
+            "shard_id": "writer-shard-062",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-20-04-880Z_writer-backlog-packets-offset-1525.json data/post-ingest/2026-06-24T00-20-05-884Z_writer-backlog-packets-offset-1530.json data/post-ingest/2026-06-24T00-20-06-899Z_writer-backlog-packets-offset-1535.json data/post-ingest/2026-06-24T00-20-07-926Z_writer-backlog-packets-offset-1540.json data/post-ingest/2026-06-24T00-20-08-898Z_writer-backlog-packets-offset-1545.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-20-04-880Z_writer-backlog-packets-offset-1525.json data/post-ingest/2026-06-24T00-20-05-884Z_writer-backlog-packets-offset-1530.json data/post-ingest/2026-06-24T00-20-06-899Z_writer-backlog-packets-offset-1535.json data/post-ingest/2026-06-24T00-20-07-926Z_writer-backlog-packets-offset-1540.json data/post-ingest/2026-06-24T00-20-08-898Z_writer-backlog-packets-offset-1545.json"
+          },
+          {
+            "shard_id": "writer-shard-063",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-20-09-826Z_writer-backlog-packets-offset-1550.json data/post-ingest/2026-06-24T00-20-10-760Z_writer-backlog-packets-offset-1555.json data/post-ingest/2026-06-24T00-20-11-767Z_writer-backlog-packets-offset-1560.json data/post-ingest/2026-06-24T00-20-12-759Z_writer-backlog-packets-offset-1565.json data/post-ingest/2026-06-24T00-20-13-686Z_writer-backlog-packets-offset-1570.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-20-09-826Z_writer-backlog-packets-offset-1550.json data/post-ingest/2026-06-24T00-20-10-760Z_writer-backlog-packets-offset-1555.json data/post-ingest/2026-06-24T00-20-11-767Z_writer-backlog-packets-offset-1560.json data/post-ingest/2026-06-24T00-20-12-759Z_writer-backlog-packets-offset-1565.json data/post-ingest/2026-06-24T00-20-13-686Z_writer-backlog-packets-offset-1570.json"
+          },
+          {
+            "shard_id": "writer-shard-064",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-20-14-645Z_writer-backlog-packets-offset-1575.json data/post-ingest/2026-06-24T00-20-15-653Z_writer-backlog-packets-offset-1580.json data/post-ingest/2026-06-24T00-20-16-601Z_writer-backlog-packets-offset-1585.json data/post-ingest/2026-06-24T00-20-17-538Z_writer-backlog-packets-offset-1590.json data/post-ingest/2026-06-24T00-20-18-639Z_writer-backlog-packets-offset-1595.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-20-14-645Z_writer-backlog-packets-offset-1575.json data/post-ingest/2026-06-24T00-20-15-653Z_writer-backlog-packets-offset-1580.json data/post-ingest/2026-06-24T00-20-16-601Z_writer-backlog-packets-offset-1585.json data/post-ingest/2026-06-24T00-20-17-538Z_writer-backlog-packets-offset-1590.json data/post-ingest/2026-06-24T00-20-18-639Z_writer-backlog-packets-offset-1595.json"
+          },
+          {
+            "shard_id": "writer-shard-065",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-27-25-200Z_writer-backlog-packets-offset-1600.json data/post-ingest/2026-06-24T00-27-26-292Z_writer-backlog-packets-offset-1605.json data/post-ingest/2026-06-24T00-27-27-317Z_writer-backlog-packets-offset-1610.json data/post-ingest/2026-06-24T00-27-28-357Z_writer-backlog-packets-offset-1615.json data/post-ingest/2026-06-24T00-27-29-308Z_writer-backlog-packets-offset-1620.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-27-25-200Z_writer-backlog-packets-offset-1600.json data/post-ingest/2026-06-24T00-27-26-292Z_writer-backlog-packets-offset-1605.json data/post-ingest/2026-06-24T00-27-27-317Z_writer-backlog-packets-offset-1610.json data/post-ingest/2026-06-24T00-27-28-357Z_writer-backlog-packets-offset-1615.json data/post-ingest/2026-06-24T00-27-29-308Z_writer-backlog-packets-offset-1620.json"
+          },
+          {
+            "shard_id": "writer-shard-066",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-27-30-235Z_writer-backlog-packets-offset-1625.json data/post-ingest/2026-06-24T00-27-31-190Z_writer-backlog-packets-offset-1630.json data/post-ingest/2026-06-24T00-27-32-136Z_writer-backlog-packets-offset-1635.json data/post-ingest/2026-06-24T00-27-33-143Z_writer-backlog-packets-offset-1640.json data/post-ingest/2026-06-24T00-27-34-122Z_writer-backlog-packets-offset-1645.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-27-30-235Z_writer-backlog-packets-offset-1625.json data/post-ingest/2026-06-24T00-27-31-190Z_writer-backlog-packets-offset-1630.json data/post-ingest/2026-06-24T00-27-32-136Z_writer-backlog-packets-offset-1635.json data/post-ingest/2026-06-24T00-27-33-143Z_writer-backlog-packets-offset-1640.json data/post-ingest/2026-06-24T00-27-34-122Z_writer-backlog-packets-offset-1645.json"
+          },
+          {
+            "shard_id": "writer-shard-067",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-27-35-167Z_writer-backlog-packets-offset-1650.json data/post-ingest/2026-06-24T00-27-36-168Z_writer-backlog-packets-offset-1655.json data/post-ingest/2026-06-24T00-27-37-182Z_writer-backlog-packets-offset-1660.json data/post-ingest/2026-06-24T00-27-38-130Z_writer-backlog-packets-offset-1665.json data/post-ingest/2026-06-24T00-27-39-083Z_writer-backlog-packets-offset-1670.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-27-35-167Z_writer-backlog-packets-offset-1650.json data/post-ingest/2026-06-24T00-27-36-168Z_writer-backlog-packets-offset-1655.json data/post-ingest/2026-06-24T00-27-37-182Z_writer-backlog-packets-offset-1660.json data/post-ingest/2026-06-24T00-27-38-130Z_writer-backlog-packets-offset-1665.json data/post-ingest/2026-06-24T00-27-39-083Z_writer-backlog-packets-offset-1670.json"
+          },
+          {
+            "shard_id": "writer-shard-068",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-27-40-032Z_writer-backlog-packets-offset-1675.json data/post-ingest/2026-06-24T00-27-40-959Z_writer-backlog-packets-offset-1680.json data/post-ingest/2026-06-24T00-27-41-911Z_writer-backlog-packets-offset-1685.json data/post-ingest/2026-06-24T00-27-42-860Z_writer-backlog-packets-offset-1690.json data/post-ingest/2026-06-24T00-27-43-827Z_writer-backlog-packets-offset-1695.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-27-40-032Z_writer-backlog-packets-offset-1675.json data/post-ingest/2026-06-24T00-27-40-959Z_writer-backlog-packets-offset-1680.json data/post-ingest/2026-06-24T00-27-41-911Z_writer-backlog-packets-offset-1685.json data/post-ingest/2026-06-24T00-27-42-860Z_writer-backlog-packets-offset-1690.json data/post-ingest/2026-06-24T00-27-43-827Z_writer-backlog-packets-offset-1695.json"
+          },
+          {
+            "shard_id": "writer-shard-069",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-27-44-801Z_writer-backlog-packets-offset-1700.json data/post-ingest/2026-06-24T00-27-45-827Z_writer-backlog-packets-offset-1705.json data/post-ingest/2026-06-24T00-27-46-866Z_writer-backlog-packets-offset-1710.json data/post-ingest/2026-06-24T00-27-47-798Z_writer-backlog-packets-offset-1715.json data/post-ingest/2026-06-24T00-27-48-760Z_writer-backlog-packets-offset-1720.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-27-44-801Z_writer-backlog-packets-offset-1700.json data/post-ingest/2026-06-24T00-27-45-827Z_writer-backlog-packets-offset-1705.json data/post-ingest/2026-06-24T00-27-46-866Z_writer-backlog-packets-offset-1710.json data/post-ingest/2026-06-24T00-27-47-798Z_writer-backlog-packets-offset-1715.json data/post-ingest/2026-06-24T00-27-48-760Z_writer-backlog-packets-offset-1720.json"
+          },
+          {
+            "shard_id": "writer-shard-070",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-27-49-780Z_writer-backlog-packets-offset-1725.json data/post-ingest/2026-06-24T00-27-50-730Z_writer-backlog-packets-offset-1730.json data/post-ingest/2026-06-24T00-27-51-680Z_writer-backlog-packets-offset-1735.json data/post-ingest/2026-06-24T00-27-52-715Z_writer-backlog-packets-offset-1740.json data/post-ingest/2026-06-24T00-27-53-649Z_writer-backlog-packets-offset-1745.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-27-49-780Z_writer-backlog-packets-offset-1725.json data/post-ingest/2026-06-24T00-27-50-730Z_writer-backlog-packets-offset-1730.json data/post-ingest/2026-06-24T00-27-51-680Z_writer-backlog-packets-offset-1735.json data/post-ingest/2026-06-24T00-27-52-715Z_writer-backlog-packets-offset-1740.json data/post-ingest/2026-06-24T00-27-53-649Z_writer-backlog-packets-offset-1745.json"
+          },
+          {
+            "shard_id": "writer-shard-071",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-27-54-632Z_writer-backlog-packets-offset-1750.json data/post-ingest/2026-06-24T00-27-55-672Z_writer-backlog-packets-offset-1755.json data/post-ingest/2026-06-24T00-27-56-642Z_writer-backlog-packets-offset-1760.json data/post-ingest/2026-06-24T00-27-57-636Z_writer-backlog-packets-offset-1765.json data/post-ingest/2026-06-24T00-27-58-694Z_writer-backlog-packets-offset-1770.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-27-54-632Z_writer-backlog-packets-offset-1750.json data/post-ingest/2026-06-24T00-27-55-672Z_writer-backlog-packets-offset-1755.json data/post-ingest/2026-06-24T00-27-56-642Z_writer-backlog-packets-offset-1760.json data/post-ingest/2026-06-24T00-27-57-636Z_writer-backlog-packets-offset-1765.json data/post-ingest/2026-06-24T00-27-58-694Z_writer-backlog-packets-offset-1770.json"
+          },
+          {
+            "shard_id": "writer-shard-072",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-27-59-768Z_writer-backlog-packets-offset-1775.json data/post-ingest/2026-06-24T00-28-00-730Z_writer-backlog-packets-offset-1780.json data/post-ingest/2026-06-24T00-28-01-731Z_writer-backlog-packets-offset-1785.json data/post-ingest/2026-06-24T00-28-02-755Z_writer-backlog-packets-offset-1790.json data/post-ingest/2026-06-24T00-28-03-772Z_writer-backlog-packets-offset-1795.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-27-59-768Z_writer-backlog-packets-offset-1775.json data/post-ingest/2026-06-24T00-28-00-730Z_writer-backlog-packets-offset-1780.json data/post-ingest/2026-06-24T00-28-01-731Z_writer-backlog-packets-offset-1785.json data/post-ingest/2026-06-24T00-28-02-755Z_writer-backlog-packets-offset-1790.json data/post-ingest/2026-06-24T00-28-03-772Z_writer-backlog-packets-offset-1795.json"
+          },
+          {
+            "shard_id": "writer-shard-073",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-28-04-859Z_writer-backlog-packets-offset-1800.json data/post-ingest/2026-06-24T00-28-05-898Z_writer-backlog-packets-offset-1805.json data/post-ingest/2026-06-24T00-28-06-926Z_writer-backlog-packets-offset-1810.json data/post-ingest/2026-06-24T00-28-07-888Z_writer-backlog-packets-offset-1815.json data/post-ingest/2026-06-24T00-28-08-837Z_writer-backlog-packets-offset-1820.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-28-04-859Z_writer-backlog-packets-offset-1800.json data/post-ingest/2026-06-24T00-28-05-898Z_writer-backlog-packets-offset-1805.json data/post-ingest/2026-06-24T00-28-06-926Z_writer-backlog-packets-offset-1810.json data/post-ingest/2026-06-24T00-28-07-888Z_writer-backlog-packets-offset-1815.json data/post-ingest/2026-06-24T00-28-08-837Z_writer-backlog-packets-offset-1820.json"
+          },
+          {
+            "shard_id": "writer-shard-074",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-28-09-869Z_writer-backlog-packets-offset-1825.json data/post-ingest/2026-06-24T00-28-10-875Z_writer-backlog-packets-offset-1830.json data/post-ingest/2026-06-24T00-28-11-850Z_writer-backlog-packets-offset-1835.json data/post-ingest/2026-06-24T00-28-12-855Z_writer-backlog-packets-offset-1840.json data/post-ingest/2026-06-24T00-28-13-871Z_writer-backlog-packets-offset-1845.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-28-09-869Z_writer-backlog-packets-offset-1825.json data/post-ingest/2026-06-24T00-28-10-875Z_writer-backlog-packets-offset-1830.json data/post-ingest/2026-06-24T00-28-11-850Z_writer-backlog-packets-offset-1835.json data/post-ingest/2026-06-24T00-28-12-855Z_writer-backlog-packets-offset-1840.json data/post-ingest/2026-06-24T00-28-13-871Z_writer-backlog-packets-offset-1845.json"
+          },
+          {
+            "shard_id": "writer-shard-075",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-28-14-848Z_writer-backlog-packets-offset-1850.json data/post-ingest/2026-06-24T00-28-15-793Z_writer-backlog-packets-offset-1855.json data/post-ingest/2026-06-24T00-28-16-818Z_writer-backlog-packets-offset-1860.json data/post-ingest/2026-06-24T00-28-17-800Z_writer-backlog-packets-offset-1865.json data/post-ingest/2026-06-24T00-28-18-834Z_writer-backlog-packets-offset-1870.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-28-14-848Z_writer-backlog-packets-offset-1850.json data/post-ingest/2026-06-24T00-28-15-793Z_writer-backlog-packets-offset-1855.json data/post-ingest/2026-06-24T00-28-16-818Z_writer-backlog-packets-offset-1860.json data/post-ingest/2026-06-24T00-28-17-800Z_writer-backlog-packets-offset-1865.json data/post-ingest/2026-06-24T00-28-18-834Z_writer-backlog-packets-offset-1870.json"
+          },
+          {
+            "shard_id": "writer-shard-076",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-28-19-777Z_writer-backlog-packets-offset-1875.json data/post-ingest/2026-06-24T00-28-20-778Z_writer-backlog-packets-offset-1880.json data/post-ingest/2026-06-24T00-28-21-777Z_writer-backlog-packets-offset-1885.json data/post-ingest/2026-06-24T00-28-22-745Z_writer-backlog-packets-offset-1890.json data/post-ingest/2026-06-24T00-28-23-709Z_writer-backlog-packets-offset-1895.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-28-19-777Z_writer-backlog-packets-offset-1875.json data/post-ingest/2026-06-24T00-28-20-778Z_writer-backlog-packets-offset-1880.json data/post-ingest/2026-06-24T00-28-21-777Z_writer-backlog-packets-offset-1885.json data/post-ingest/2026-06-24T00-28-22-745Z_writer-backlog-packets-offset-1890.json data/post-ingest/2026-06-24T00-28-23-709Z_writer-backlog-packets-offset-1895.json"
+          },
+          {
+            "shard_id": "writer-shard-077",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-28-24-670Z_writer-backlog-packets-offset-1900.json data/post-ingest/2026-06-24T00-28-25-660Z_writer-backlog-packets-offset-1905.json data/post-ingest/2026-06-24T00-28-26-694Z_writer-backlog-packets-offset-1910.json data/post-ingest/2026-06-24T00-28-27-696Z_writer-backlog-packets-offset-1915.json data/post-ingest/2026-06-24T00-28-28-673Z_writer-backlog-packets-offset-1920.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-28-24-670Z_writer-backlog-packets-offset-1900.json data/post-ingest/2026-06-24T00-28-25-660Z_writer-backlog-packets-offset-1905.json data/post-ingest/2026-06-24T00-28-26-694Z_writer-backlog-packets-offset-1910.json data/post-ingest/2026-06-24T00-28-27-696Z_writer-backlog-packets-offset-1915.json data/post-ingest/2026-06-24T00-28-28-673Z_writer-backlog-packets-offset-1920.json"
+          },
+          {
+            "shard_id": "writer-shard-078",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-28-29-700Z_writer-backlog-packets-offset-1925.json data/post-ingest/2026-06-24T00-28-30-641Z_writer-backlog-packets-offset-1930.json data/post-ingest/2026-06-24T00-28-31-626Z_writer-backlog-packets-offset-1935.json data/post-ingest/2026-06-24T00-28-32-613Z_writer-backlog-packets-offset-1940.json data/post-ingest/2026-06-24T00-28-33-657Z_writer-backlog-packets-offset-1945.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-28-29-700Z_writer-backlog-packets-offset-1925.json data/post-ingest/2026-06-24T00-28-30-641Z_writer-backlog-packets-offset-1930.json data/post-ingest/2026-06-24T00-28-31-626Z_writer-backlog-packets-offset-1935.json data/post-ingest/2026-06-24T00-28-32-613Z_writer-backlog-packets-offset-1940.json data/post-ingest/2026-06-24T00-28-33-657Z_writer-backlog-packets-offset-1945.json"
+          },
+          {
+            "shard_id": "writer-shard-079",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-28-34-644Z_writer-backlog-packets-offset-1950.json data/post-ingest/2026-06-24T00-28-35-587Z_writer-backlog-packets-offset-1955.json data/post-ingest/2026-06-24T00-28-36-627Z_writer-backlog-packets-offset-1960.json data/post-ingest/2026-06-24T00-28-37-711Z_writer-backlog-packets-offset-1965.json data/post-ingest/2026-06-24T00-28-38-664Z_writer-backlog-packets-offset-1970.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-28-34-644Z_writer-backlog-packets-offset-1950.json data/post-ingest/2026-06-24T00-28-35-587Z_writer-backlog-packets-offset-1955.json data/post-ingest/2026-06-24T00-28-36-627Z_writer-backlog-packets-offset-1960.json data/post-ingest/2026-06-24T00-28-37-711Z_writer-backlog-packets-offset-1965.json data/post-ingest/2026-06-24T00-28-38-664Z_writer-backlog-packets-offset-1970.json"
+          },
+          {
+            "shard_id": "writer-shard-080",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-28-39-724Z_writer-backlog-packets-offset-1975.json data/post-ingest/2026-06-24T00-28-40-678Z_writer-backlog-packets-offset-1980.json data/post-ingest/2026-06-24T00-28-41-607Z_writer-backlog-packets-offset-1985.json data/post-ingest/2026-06-24T00-28-42-543Z_writer-backlog-packets-offset-1990.json data/post-ingest/2026-06-24T00-28-43-502Z_writer-backlog-packets-offset-1995.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-28-39-724Z_writer-backlog-packets-offset-1975.json data/post-ingest/2026-06-24T00-28-40-678Z_writer-backlog-packets-offset-1980.json data/post-ingest/2026-06-24T00-28-41-607Z_writer-backlog-packets-offset-1985.json data/post-ingest/2026-06-24T00-28-42-543Z_writer-backlog-packets-offset-1990.json data/post-ingest/2026-06-24T00-28-43-502Z_writer-backlog-packets-offset-1995.json"
+          },
+          {
+            "shard_id": "writer-shard-081",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-33-35-349Z_writer-backlog-packets-offset-2000.json data/post-ingest/2026-06-24T00-33-36-408Z_writer-backlog-packets-offset-2005.json data/post-ingest/2026-06-24T00-33-37-514Z_writer-backlog-packets-offset-2010.json data/post-ingest/2026-06-24T00-33-38-545Z_writer-backlog-packets-offset-2015.json data/post-ingest/2026-06-24T00-33-39-518Z_writer-backlog-packets-offset-2020.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-33-35-349Z_writer-backlog-packets-offset-2000.json data/post-ingest/2026-06-24T00-33-36-408Z_writer-backlog-packets-offset-2005.json data/post-ingest/2026-06-24T00-33-37-514Z_writer-backlog-packets-offset-2010.json data/post-ingest/2026-06-24T00-33-38-545Z_writer-backlog-packets-offset-2015.json data/post-ingest/2026-06-24T00-33-39-518Z_writer-backlog-packets-offset-2020.json"
+          },
+          {
+            "shard_id": "writer-shard-082",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-33-40-516Z_writer-backlog-packets-offset-2025.json data/post-ingest/2026-06-24T00-33-41-462Z_writer-backlog-packets-offset-2030.json data/post-ingest/2026-06-24T00-33-42-401Z_writer-backlog-packets-offset-2035.json data/post-ingest/2026-06-24T00-33-43-402Z_writer-backlog-packets-offset-2040.json data/post-ingest/2026-06-24T00-33-44-374Z_writer-backlog-packets-offset-2045.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-33-40-516Z_writer-backlog-packets-offset-2025.json data/post-ingest/2026-06-24T00-33-41-462Z_writer-backlog-packets-offset-2030.json data/post-ingest/2026-06-24T00-33-42-401Z_writer-backlog-packets-offset-2035.json data/post-ingest/2026-06-24T00-33-43-402Z_writer-backlog-packets-offset-2040.json data/post-ingest/2026-06-24T00-33-44-374Z_writer-backlog-packets-offset-2045.json"
+          },
+          {
+            "shard_id": "writer-shard-083",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-33-45-378Z_writer-backlog-packets-offset-2050.json data/post-ingest/2026-06-24T00-33-46-326Z_writer-backlog-packets-offset-2055.json data/post-ingest/2026-06-24T00-33-47-301Z_writer-backlog-packets-offset-2060.json data/post-ingest/2026-06-24T00-33-48-322Z_writer-backlog-packets-offset-2065.json data/post-ingest/2026-06-24T00-33-49-363Z_writer-backlog-packets-offset-2070.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-33-45-378Z_writer-backlog-packets-offset-2050.json data/post-ingest/2026-06-24T00-33-46-326Z_writer-backlog-packets-offset-2055.json data/post-ingest/2026-06-24T00-33-47-301Z_writer-backlog-packets-offset-2060.json data/post-ingest/2026-06-24T00-33-48-322Z_writer-backlog-packets-offset-2065.json data/post-ingest/2026-06-24T00-33-49-363Z_writer-backlog-packets-offset-2070.json"
+          },
+          {
+            "shard_id": "writer-shard-084",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-33-50-367Z_writer-backlog-packets-offset-2075.json data/post-ingest/2026-06-24T00-33-51-334Z_writer-backlog-packets-offset-2080.json data/post-ingest/2026-06-24T00-33-52-347Z_writer-backlog-packets-offset-2085.json data/post-ingest/2026-06-24T00-33-53-316Z_writer-backlog-packets-offset-2090.json data/post-ingest/2026-06-24T00-33-54-277Z_writer-backlog-packets-offset-2095.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-33-50-367Z_writer-backlog-packets-offset-2075.json data/post-ingest/2026-06-24T00-33-51-334Z_writer-backlog-packets-offset-2080.json data/post-ingest/2026-06-24T00-33-52-347Z_writer-backlog-packets-offset-2085.json data/post-ingest/2026-06-24T00-33-53-316Z_writer-backlog-packets-offset-2090.json data/post-ingest/2026-06-24T00-33-54-277Z_writer-backlog-packets-offset-2095.json"
+          },
+          {
+            "shard_id": "writer-shard-085",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-33-55-244Z_writer-backlog-packets-offset-2100.json data/post-ingest/2026-06-24T00-33-56-237Z_writer-backlog-packets-offset-2105.json data/post-ingest/2026-06-24T00-33-57-237Z_writer-backlog-packets-offset-2110.json data/post-ingest/2026-06-24T00-33-58-181Z_writer-backlog-packets-offset-2115.json data/post-ingest/2026-06-24T00-33-59-189Z_writer-backlog-packets-offset-2120.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-33-55-244Z_writer-backlog-packets-offset-2100.json data/post-ingest/2026-06-24T00-33-56-237Z_writer-backlog-packets-offset-2105.json data/post-ingest/2026-06-24T00-33-57-237Z_writer-backlog-packets-offset-2110.json data/post-ingest/2026-06-24T00-33-58-181Z_writer-backlog-packets-offset-2115.json data/post-ingest/2026-06-24T00-33-59-189Z_writer-backlog-packets-offset-2120.json"
+          },
+          {
+            "shard_id": "writer-shard-086",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-34-00-120Z_writer-backlog-packets-offset-2125.json data/post-ingest/2026-06-24T00-34-01-112Z_writer-backlog-packets-offset-2130.json data/post-ingest/2026-06-24T00-34-02-092Z_writer-backlog-packets-offset-2135.json data/post-ingest/2026-06-24T00-34-03-055Z_writer-backlog-packets-offset-2140.json data/post-ingest/2026-06-24T00-34-04-052Z_writer-backlog-packets-offset-2145.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-34-00-120Z_writer-backlog-packets-offset-2125.json data/post-ingest/2026-06-24T00-34-01-112Z_writer-backlog-packets-offset-2130.json data/post-ingest/2026-06-24T00-34-02-092Z_writer-backlog-packets-offset-2135.json data/post-ingest/2026-06-24T00-34-03-055Z_writer-backlog-packets-offset-2140.json data/post-ingest/2026-06-24T00-34-04-052Z_writer-backlog-packets-offset-2145.json"
+          },
+          {
+            "shard_id": "writer-shard-087",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-34-05-070Z_writer-backlog-packets-offset-2150.json data/post-ingest/2026-06-24T00-34-06-097Z_writer-backlog-packets-offset-2155.json data/post-ingest/2026-06-24T00-34-07-077Z_writer-backlog-packets-offset-2160.json data/post-ingest/2026-06-24T00-34-08-043Z_writer-backlog-packets-offset-2165.json data/post-ingest/2026-06-24T00-34-09-017Z_writer-backlog-packets-offset-2170.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-34-05-070Z_writer-backlog-packets-offset-2150.json data/post-ingest/2026-06-24T00-34-06-097Z_writer-backlog-packets-offset-2155.json data/post-ingest/2026-06-24T00-34-07-077Z_writer-backlog-packets-offset-2160.json data/post-ingest/2026-06-24T00-34-08-043Z_writer-backlog-packets-offset-2165.json data/post-ingest/2026-06-24T00-34-09-017Z_writer-backlog-packets-offset-2170.json"
+          },
+          {
+            "shard_id": "writer-shard-088",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-34-10-048Z_writer-backlog-packets-offset-2175.json data/post-ingest/2026-06-24T00-34-11-027Z_writer-backlog-packets-offset-2180.json data/post-ingest/2026-06-24T00-34-11-957Z_writer-backlog-packets-offset-2185.json data/post-ingest/2026-06-24T00-34-12-989Z_writer-backlog-packets-offset-2190.json data/post-ingest/2026-06-24T00-34-14-015Z_writer-backlog-packets-offset-2195.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-34-10-048Z_writer-backlog-packets-offset-2175.json data/post-ingest/2026-06-24T00-34-11-027Z_writer-backlog-packets-offset-2180.json data/post-ingest/2026-06-24T00-34-11-957Z_writer-backlog-packets-offset-2185.json data/post-ingest/2026-06-24T00-34-12-989Z_writer-backlog-packets-offset-2190.json data/post-ingest/2026-06-24T00-34-14-015Z_writer-backlog-packets-offset-2195.json"
+          },
+          {
+            "shard_id": "writer-shard-089",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-34-15-026Z_writer-backlog-packets-offset-2200.json data/post-ingest/2026-06-24T00-34-16-017Z_writer-backlog-packets-offset-2205.json data/post-ingest/2026-06-24T00-34-16-972Z_writer-backlog-packets-offset-2210.json data/post-ingest/2026-06-24T00-34-17-990Z_writer-backlog-packets-offset-2215.json data/post-ingest/2026-06-24T00-34-18-971Z_writer-backlog-packets-offset-2220.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-34-15-026Z_writer-backlog-packets-offset-2200.json data/post-ingest/2026-06-24T00-34-16-017Z_writer-backlog-packets-offset-2205.json data/post-ingest/2026-06-24T00-34-16-972Z_writer-backlog-packets-offset-2210.json data/post-ingest/2026-06-24T00-34-17-990Z_writer-backlog-packets-offset-2215.json data/post-ingest/2026-06-24T00-34-18-971Z_writer-backlog-packets-offset-2220.json"
+          },
+          {
+            "shard_id": "writer-shard-090",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-34-19-917Z_writer-backlog-packets-offset-2225.json data/post-ingest/2026-06-24T00-34-20-887Z_writer-backlog-packets-offset-2230.json data/post-ingest/2026-06-24T00-34-21-847Z_writer-backlog-packets-offset-2235.json data/post-ingest/2026-06-24T00-34-22-820Z_writer-backlog-packets-offset-2240.json data/post-ingest/2026-06-24T00-34-23-795Z_writer-backlog-packets-offset-2245.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-34-19-917Z_writer-backlog-packets-offset-2225.json data/post-ingest/2026-06-24T00-34-20-887Z_writer-backlog-packets-offset-2230.json data/post-ingest/2026-06-24T00-34-21-847Z_writer-backlog-packets-offset-2235.json data/post-ingest/2026-06-24T00-34-22-820Z_writer-backlog-packets-offset-2240.json data/post-ingest/2026-06-24T00-34-23-795Z_writer-backlog-packets-offset-2245.json"
+          },
+          {
+            "shard_id": "writer-shard-091",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-34-24-768Z_writer-backlog-packets-offset-2250.json data/post-ingest/2026-06-24T00-34-25-757Z_writer-backlog-packets-offset-2255.json data/post-ingest/2026-06-24T00-34-26-721Z_writer-backlog-packets-offset-2260.json data/post-ingest/2026-06-24T00-34-27-717Z_writer-backlog-packets-offset-2265.json data/post-ingest/2026-06-24T00-34-28-701Z_writer-backlog-packets-offset-2270.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-34-24-768Z_writer-backlog-packets-offset-2250.json data/post-ingest/2026-06-24T00-34-25-757Z_writer-backlog-packets-offset-2255.json data/post-ingest/2026-06-24T00-34-26-721Z_writer-backlog-packets-offset-2260.json data/post-ingest/2026-06-24T00-34-27-717Z_writer-backlog-packets-offset-2265.json data/post-ingest/2026-06-24T00-34-28-701Z_writer-backlog-packets-offset-2270.json"
+          },
+          {
+            "shard_id": "writer-shard-092",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-34-29-613Z_writer-backlog-packets-offset-2275.json data/post-ingest/2026-06-24T00-34-30-567Z_writer-backlog-packets-offset-2280.json data/post-ingest/2026-06-24T00-34-31-538Z_writer-backlog-packets-offset-2285.json data/post-ingest/2026-06-24T00-34-32-583Z_writer-backlog-packets-offset-2290.json data/post-ingest/2026-06-24T00-34-33-562Z_writer-backlog-packets-offset-2295.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-34-29-613Z_writer-backlog-packets-offset-2275.json data/post-ingest/2026-06-24T00-34-30-567Z_writer-backlog-packets-offset-2280.json data/post-ingest/2026-06-24T00-34-31-538Z_writer-backlog-packets-offset-2285.json data/post-ingest/2026-06-24T00-34-32-583Z_writer-backlog-packets-offset-2290.json data/post-ingest/2026-06-24T00-34-33-562Z_writer-backlog-packets-offset-2295.json"
+          },
+          {
+            "shard_id": "writer-shard-093",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-34-34-519Z_writer-backlog-packets-offset-2300.json data/post-ingest/2026-06-24T00-34-35-605Z_writer-backlog-packets-offset-2305.json data/post-ingest/2026-06-24T00-34-36-556Z_writer-backlog-packets-offset-2310.json data/post-ingest/2026-06-24T00-34-37-532Z_writer-backlog-packets-offset-2315.json data/post-ingest/2026-06-24T00-34-38-450Z_writer-backlog-packets-offset-2320.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-34-34-519Z_writer-backlog-packets-offset-2300.json data/post-ingest/2026-06-24T00-34-35-605Z_writer-backlog-packets-offset-2305.json data/post-ingest/2026-06-24T00-34-36-556Z_writer-backlog-packets-offset-2310.json data/post-ingest/2026-06-24T00-34-37-532Z_writer-backlog-packets-offset-2315.json data/post-ingest/2026-06-24T00-34-38-450Z_writer-backlog-packets-offset-2320.json"
+          },
+          {
+            "shard_id": "writer-shard-094",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-34-39-463Z_writer-backlog-packets-offset-2325.json data/post-ingest/2026-06-24T00-34-40-454Z_writer-backlog-packets-offset-2330.json data/post-ingest/2026-06-24T00-34-41-422Z_writer-backlog-packets-offset-2335.json data/post-ingest/2026-06-24T00-34-42-458Z_writer-backlog-packets-offset-2340.json data/post-ingest/2026-06-24T00-34-43-439Z_writer-backlog-packets-offset-2345.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-34-39-463Z_writer-backlog-packets-offset-2325.json data/post-ingest/2026-06-24T00-34-40-454Z_writer-backlog-packets-offset-2330.json data/post-ingest/2026-06-24T00-34-41-422Z_writer-backlog-packets-offset-2335.json data/post-ingest/2026-06-24T00-34-42-458Z_writer-backlog-packets-offset-2340.json data/post-ingest/2026-06-24T00-34-43-439Z_writer-backlog-packets-offset-2345.json"
+          },
+          {
+            "shard_id": "writer-shard-095",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-34-44-474Z_writer-backlog-packets-offset-2350.json data/post-ingest/2026-06-24T00-34-45-506Z_writer-backlog-packets-offset-2355.json data/post-ingest/2026-06-24T00-34-46-460Z_writer-backlog-packets-offset-2360.json data/post-ingest/2026-06-24T00-34-47-476Z_writer-backlog-packets-offset-2365.json data/post-ingest/2026-06-24T00-34-48-408Z_writer-backlog-packets-offset-2370.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-34-44-474Z_writer-backlog-packets-offset-2350.json data/post-ingest/2026-06-24T00-34-45-506Z_writer-backlog-packets-offset-2355.json data/post-ingest/2026-06-24T00-34-46-460Z_writer-backlog-packets-offset-2360.json data/post-ingest/2026-06-24T00-34-47-476Z_writer-backlog-packets-offset-2365.json data/post-ingest/2026-06-24T00-34-48-408Z_writer-backlog-packets-offset-2370.json"
+          },
+          {
+            "shard_id": "writer-shard-096",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-34-49-426Z_writer-backlog-packets-offset-2375.json data/post-ingest/2026-06-24T00-34-50-389Z_writer-backlog-packets-offset-2380.json data/post-ingest/2026-06-24T00-34-51-335Z_writer-backlog-packets-offset-2385.json data/post-ingest/2026-06-24T00-34-52-255Z_writer-backlog-packets-offset-2390.json data/post-ingest/2026-06-24T00-34-53-268Z_writer-backlog-packets-offset-2395.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-34-49-426Z_writer-backlog-packets-offset-2375.json data/post-ingest/2026-06-24T00-34-50-389Z_writer-backlog-packets-offset-2380.json data/post-ingest/2026-06-24T00-34-51-335Z_writer-backlog-packets-offset-2385.json data/post-ingest/2026-06-24T00-34-52-255Z_writer-backlog-packets-offset-2390.json data/post-ingest/2026-06-24T00-34-53-268Z_writer-backlog-packets-offset-2395.json"
+          },
+          {
+            "shard_id": "writer-shard-097",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-34-54-243Z_writer-backlog-packets-offset-2400.json data/post-ingest/2026-06-24T00-34-55-256Z_writer-backlog-packets-offset-2405.json data/post-ingest/2026-06-24T00-34-56-250Z_writer-backlog-packets-offset-2410.json data/post-ingest/2026-06-24T00-34-57-243Z_writer-backlog-packets-offset-2415.json data/post-ingest/2026-06-24T00-34-58-214Z_writer-backlog-packets-offset-2420.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-34-54-243Z_writer-backlog-packets-offset-2400.json data/post-ingest/2026-06-24T00-34-55-256Z_writer-backlog-packets-offset-2405.json data/post-ingest/2026-06-24T00-34-56-250Z_writer-backlog-packets-offset-2410.json data/post-ingest/2026-06-24T00-34-57-243Z_writer-backlog-packets-offset-2415.json data/post-ingest/2026-06-24T00-34-58-214Z_writer-backlog-packets-offset-2420.json"
+          },
+          {
+            "shard_id": "writer-shard-098",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-34-59-158Z_writer-backlog-packets-offset-2425.json data/post-ingest/2026-06-24T00-35-00-115Z_writer-backlog-packets-offset-2430.json data/post-ingest/2026-06-24T00-35-01-044Z_writer-backlog-packets-offset-2435.json data/post-ingest/2026-06-24T00-35-02-035Z_writer-backlog-packets-offset-2440.json data/post-ingest/2026-06-24T00-35-02-970Z_writer-backlog-packets-offset-2445.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-34-59-158Z_writer-backlog-packets-offset-2425.json data/post-ingest/2026-06-24T00-35-00-115Z_writer-backlog-packets-offset-2430.json data/post-ingest/2026-06-24T00-35-01-044Z_writer-backlog-packets-offset-2435.json data/post-ingest/2026-06-24T00-35-02-035Z_writer-backlog-packets-offset-2440.json data/post-ingest/2026-06-24T00-35-02-970Z_writer-backlog-packets-offset-2445.json"
+          },
+          {
+            "shard_id": "writer-shard-099",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-35-03-907Z_writer-backlog-packets-offset-2450.json data/post-ingest/2026-06-24T00-35-04-879Z_writer-backlog-packets-offset-2455.json data/post-ingest/2026-06-24T00-35-05-886Z_writer-backlog-packets-offset-2460.json data/post-ingest/2026-06-24T00-35-06-841Z_writer-backlog-packets-offset-2465.json data/post-ingest/2026-06-24T00-35-07-779Z_writer-backlog-packets-offset-2470.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-35-03-907Z_writer-backlog-packets-offset-2450.json data/post-ingest/2026-06-24T00-35-04-879Z_writer-backlog-packets-offset-2455.json data/post-ingest/2026-06-24T00-35-05-886Z_writer-backlog-packets-offset-2460.json data/post-ingest/2026-06-24T00-35-06-841Z_writer-backlog-packets-offset-2465.json data/post-ingest/2026-06-24T00-35-07-779Z_writer-backlog-packets-offset-2470.json"
+          },
+          {
+            "shard_id": "writer-shard-100",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-35-08-779Z_writer-backlog-packets-offset-2475.json data/post-ingest/2026-06-24T00-35-09-715Z_writer-backlog-packets-offset-2480.json data/post-ingest/2026-06-24T00-35-10-685Z_writer-backlog-packets-offset-2485.json data/post-ingest/2026-06-24T00-35-11-798Z_writer-backlog-packets-offset-2490.json data/post-ingest/2026-06-24T00-35-12-830Z_writer-backlog-packets-offset-2495.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-35-08-779Z_writer-backlog-packets-offset-2475.json data/post-ingest/2026-06-24T00-35-09-715Z_writer-backlog-packets-offset-2480.json data/post-ingest/2026-06-24T00-35-10-685Z_writer-backlog-packets-offset-2485.json data/post-ingest/2026-06-24T00-35-11-798Z_writer-backlog-packets-offset-2490.json data/post-ingest/2026-06-24T00-35-12-830Z_writer-backlog-packets-offset-2495.json"
+          },
+          {
+            "shard_id": "writer-shard-101",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-35-13-860Z_writer-backlog-packets-offset-2500.json data/post-ingest/2026-06-24T00-35-14-808Z_writer-backlog-packets-offset-2505.json data/post-ingest/2026-06-24T00-35-15-773Z_writer-backlog-packets-offset-2510.json data/post-ingest/2026-06-24T00-35-16-778Z_writer-backlog-packets-offset-2515.json data/post-ingest/2026-06-24T00-35-17-720Z_writer-backlog-packets-offset-2520.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-35-13-860Z_writer-backlog-packets-offset-2500.json data/post-ingest/2026-06-24T00-35-14-808Z_writer-backlog-packets-offset-2505.json data/post-ingest/2026-06-24T00-35-15-773Z_writer-backlog-packets-offset-2510.json data/post-ingest/2026-06-24T00-35-16-778Z_writer-backlog-packets-offset-2515.json data/post-ingest/2026-06-24T00-35-17-720Z_writer-backlog-packets-offset-2520.json"
+          },
+          {
+            "shard_id": "writer-shard-102",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-35-18-665Z_writer-backlog-packets-offset-2525.json data/post-ingest/2026-06-24T00-35-19-717Z_writer-backlog-packets-offset-2530.json data/post-ingest/2026-06-24T00-35-20-760Z_writer-backlog-packets-offset-2535.json data/post-ingest/2026-06-24T00-35-21-686Z_writer-backlog-packets-offset-2540.json data/post-ingest/2026-06-24T00-35-22-709Z_writer-backlog-packets-offset-2545.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-35-18-665Z_writer-backlog-packets-offset-2525.json data/post-ingest/2026-06-24T00-35-19-717Z_writer-backlog-packets-offset-2530.json data/post-ingest/2026-06-24T00-35-20-760Z_writer-backlog-packets-offset-2535.json data/post-ingest/2026-06-24T00-35-21-686Z_writer-backlog-packets-offset-2540.json data/post-ingest/2026-06-24T00-35-22-709Z_writer-backlog-packets-offset-2545.json"
+          },
+          {
+            "shard_id": "writer-shard-103",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-35-23-728Z_writer-backlog-packets-offset-2550.json data/post-ingest/2026-06-24T00-35-24-700Z_writer-backlog-packets-offset-2555.json data/post-ingest/2026-06-24T00-35-25-726Z_writer-backlog-packets-offset-2560.json data/post-ingest/2026-06-24T00-35-26-707Z_writer-backlog-packets-offset-2565.json data/post-ingest/2026-06-24T00-35-27-692Z_writer-backlog-packets-offset-2570.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-35-23-728Z_writer-backlog-packets-offset-2550.json data/post-ingest/2026-06-24T00-35-24-700Z_writer-backlog-packets-offset-2555.json data/post-ingest/2026-06-24T00-35-25-726Z_writer-backlog-packets-offset-2560.json data/post-ingest/2026-06-24T00-35-26-707Z_writer-backlog-packets-offset-2565.json data/post-ingest/2026-06-24T00-35-27-692Z_writer-backlog-packets-offset-2570.json"
+          },
+          {
+            "shard_id": "writer-shard-104",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-35-28-747Z_writer-backlog-packets-offset-2575.json data/post-ingest/2026-06-24T00-35-29-707Z_writer-backlog-packets-offset-2580.json data/post-ingest/2026-06-24T00-35-30-716Z_writer-backlog-packets-offset-2585.json data/post-ingest/2026-06-24T00-35-31-717Z_writer-backlog-packets-offset-2590.json data/post-ingest/2026-06-24T00-35-32-665Z_writer-backlog-packets-offset-2595.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-35-28-747Z_writer-backlog-packets-offset-2575.json data/post-ingest/2026-06-24T00-35-29-707Z_writer-backlog-packets-offset-2580.json data/post-ingest/2026-06-24T00-35-30-716Z_writer-backlog-packets-offset-2585.json data/post-ingest/2026-06-24T00-35-31-717Z_writer-backlog-packets-offset-2590.json data/post-ingest/2026-06-24T00-35-32-665Z_writer-backlog-packets-offset-2595.json"
+          },
+          {
+            "shard_id": "writer-shard-105",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-35-33-631Z_writer-backlog-packets-offset-2600.json data/post-ingest/2026-06-24T00-35-34-610Z_writer-backlog-packets-offset-2605.json data/post-ingest/2026-06-24T00-35-35-687Z_writer-backlog-packets-offset-2610.json data/post-ingest/2026-06-24T00-35-36-745Z_writer-backlog-packets-offset-2615.json data/post-ingest/2026-06-24T00-35-37-726Z_writer-backlog-packets-offset-2620.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-35-33-631Z_writer-backlog-packets-offset-2600.json data/post-ingest/2026-06-24T00-35-34-610Z_writer-backlog-packets-offset-2605.json data/post-ingest/2026-06-24T00-35-35-687Z_writer-backlog-packets-offset-2610.json data/post-ingest/2026-06-24T00-35-36-745Z_writer-backlog-packets-offset-2615.json data/post-ingest/2026-06-24T00-35-37-726Z_writer-backlog-packets-offset-2620.json"
+          },
+          {
+            "shard_id": "writer-shard-106",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-35-38-720Z_writer-backlog-packets-offset-2625.json data/post-ingest/2026-06-24T00-35-39-645Z_writer-backlog-packets-offset-2630.json data/post-ingest/2026-06-24T00-35-40-658Z_writer-backlog-packets-offset-2635.json data/post-ingest/2026-06-24T00-35-41-622Z_writer-backlog-packets-offset-2640.json data/post-ingest/2026-06-24T00-35-42-638Z_writer-backlog-packets-offset-2645.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-35-38-720Z_writer-backlog-packets-offset-2625.json data/post-ingest/2026-06-24T00-35-39-645Z_writer-backlog-packets-offset-2630.json data/post-ingest/2026-06-24T00-35-40-658Z_writer-backlog-packets-offset-2635.json data/post-ingest/2026-06-24T00-35-41-622Z_writer-backlog-packets-offset-2640.json data/post-ingest/2026-06-24T00-35-42-638Z_writer-backlog-packets-offset-2645.json"
+          },
+          {
+            "shard_id": "writer-shard-107",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-35-43-661Z_writer-backlog-packets-offset-2650.json data/post-ingest/2026-06-24T00-35-44-615Z_writer-backlog-packets-offset-2655.json data/post-ingest/2026-06-24T00-35-45-731Z_writer-backlog-packets-offset-2660.json data/post-ingest/2026-06-24T00-35-46-800Z_writer-backlog-packets-offset-2665.json data/post-ingest/2026-06-24T00-35-47-802Z_writer-backlog-packets-offset-2670.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-35-43-661Z_writer-backlog-packets-offset-2650.json data/post-ingest/2026-06-24T00-35-44-615Z_writer-backlog-packets-offset-2655.json data/post-ingest/2026-06-24T00-35-45-731Z_writer-backlog-packets-offset-2660.json data/post-ingest/2026-06-24T00-35-46-800Z_writer-backlog-packets-offset-2665.json data/post-ingest/2026-06-24T00-35-47-802Z_writer-backlog-packets-offset-2670.json"
+          },
+          {
+            "shard_id": "writer-shard-108",
+            "packet_count": 25,
+            "page_count": 25,
+            "empty_pages": 25,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-35-48-771Z_writer-backlog-packets-offset-2675.json data/post-ingest/2026-06-24T00-35-49-821Z_writer-backlog-packets-offset-2680.json data/post-ingest/2026-06-24T00-35-50-850Z_writer-backlog-packets-offset-2685.json data/post-ingest/2026-06-24T00-35-51-838Z_writer-backlog-packets-offset-2690.json data/post-ingest/2026-06-24T00-35-52-906Z_writer-backlog-packets-offset-2695.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-35-48-771Z_writer-backlog-packets-offset-2675.json data/post-ingest/2026-06-24T00-35-49-821Z_writer-backlog-packets-offset-2680.json data/post-ingest/2026-06-24T00-35-50-850Z_writer-backlog-packets-offset-2685.json data/post-ingest/2026-06-24T00-35-51-838Z_writer-backlog-packets-offset-2690.json data/post-ingest/2026-06-24T00-35-52-906Z_writer-backlog-packets-offset-2695.json"
+          },
+          {
+            "shard_id": "writer-shard-109",
+            "packet_count": 3,
+            "page_count": 3,
+            "empty_pages": 3,
+            "non_empty_pages": 0,
+            "missing_pages": 0,
+            "state": "not_started",
+            "claim": {
+              "owner": "codex-conductor",
+              "claim_id": "fa718443de87f6ec",
+              "path": "data/post-ingest/2026-06-24T01-56-59-519Z_writer-packet-dispatch-claim.json",
+              "generated_at": "2026-06-24T01:56:59.520Z"
+            },
+            "preflight_command": "bun packages/cli/src/cli.ts verify-writer-packet-set data/post-ingest/2026-06-24T00-35-53-905Z_writer-backlog-packets-offset-2700.json",
+            "post_edit_command": "bun packages/cli/src/cli.ts verify-writer-packet-edits data/post-ingest/2026-06-24T00-35-53-905Z_writer-backlog-packets-offset-2700.json"
+          }
+        ]
+      },
+      "readiness": {
+        "all_shards_claimed": true,
+        "all_pages_unedited": true,
+        "no_missing_pages": true,
+        "no_active_or_completed_writer_regions": true
+      },
+      "path": "data/post-ingest/2026-06-24T02-13-03-496Z_writer-packet-dispatch-readiness.json",
+      "markdown_path": "data/post-ingest/2026-06-24T02-13-03-496Z_writer-packet-dispatch-readiness.md"
+    },
+    "writer_prompt_coverage": {
+      "ok": true,
+      "dispatch_plan_path": "data/post-ingest/2026-06-24T01-26-07-684Z_writer-packet-dispatch-plan.json",
+      "prompt_report_count": 5,
+      "prompt_count": 109,
+      "existing_prompt_count": 109,
+      "expected_shard_count": 109,
+      "covered_shard_count": 109,
+      "duplicate_shard_count": 0,
+      "missing_shard_count": 0,
+      "unexpected_shard_count": 0,
+      "reports": [
+        {
+          "path": "data/post-ingest/2026-06-24T04-10-32-765Z_writer-packet-dispatch-handoff-prompts.json",
+          "ok": true,
+          "prompt_count": 24,
+          "existing_prompt_count": 24,
+          "unique_shard_count": 24
+        },
+        {
+          "path": "data/post-ingest/2026-06-24T04-16-35-979Z_writer-packet-dispatch-handoff-prompts.json",
+          "ok": true,
+          "prompt_count": 24,
+          "existing_prompt_count": 24,
+          "unique_shard_count": 24
+        },
+        {
+          "path": "data/post-ingest/2026-06-24T04-25-29-896Z_writer-packet-dispatch-handoff-prompts.json",
+          "ok": true,
+          "prompt_count": 24,
+          "existing_prompt_count": 24,
+          "unique_shard_count": 24
+        },
+        {
+          "path": "data/post-ingest/2026-06-24T04-28-23-305Z_writer-packet-dispatch-handoff-prompts.json",
+          "ok": true,
+          "prompt_count": 24,
+          "existing_prompt_count": 24,
+          "unique_shard_count": 24
+        },
+        {
+          "path": "data/post-ingest/2026-06-24T04-29-53-371Z_writer-packet-dispatch-handoff-prompts.json",
+          "ok": true,
+          "prompt_count": 13,
+          "existing_prompt_count": 13,
+          "unique_shard_count": 13
+        }
+      ],
+      "issues": []
+    }
+  },
+  "commands_not_run": [
+    "campaign dedup",
+    "canonicalize*",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "write",
+    "ask",
+    "schema",
+    "provider-backed post-ingest commands",
+    "writer agents",
+    "wiki prose edits",
+    "canonical JSONL hand edits"
+  ],
+  "path": "data/review_notes/2026-06-24T05-06-16-312Z_codex-goal-completion-audit.json",
+  "markdown_path": "data/review_notes/2026-06-24T05-06-16-312Z_codex-goal-completion-audit.md"
+}

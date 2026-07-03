@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "route_cluster_0351824b9d",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_0351824b9d.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_0351824b9d.json",
+  "source_review_run_id": "2026-06-23T14-38-47-609Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "route_b103-ltd-proposed-draft",
+        "route_b103e-express-cb18-jun2017"
+      ],
+      "reason": "Contradiction test: service_variant differs (limited_stop vs express). Different service variants never merge (route per-kind rule). Shared base route id 'B103' is insufficient to override variant distinction."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "Both records have explicit and conflicting service_variant fields (limited_stop vs express). This is a decisive strong identity field difference under the contradiction test, and the route per-kind rule explicitly forbids merging different variants. No other evidence overcomes this. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

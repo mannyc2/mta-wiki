@@ -1,0 +1,840 @@
+{
+  "run_id": "2026-06-10T22-56-13-382Z_1976810-c496d526_ingest_201110-brt-34th-cac5",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T01:49:31.735Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "rel_001_metric_pedestrian_space",
+        "local_observation_id": "metric_new_pedestrian_space_sqft",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_new-pedestrian-space-sqft",
+            "description": "34th Street SBS project adds 18,000 sq ft of new pedestrian space",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p010_c0002",
+                "source_quote": "Pedestrians : adds 18,000 sq. ft. of new pedestrian space, reducing crowding and improving safety"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence from the 34th Street SBS CAC #5 presentation explicitly describes pedestrian space added by the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p010_c0002",
+            "source_quote": "Pedestrians : adds 18,000 sq. ft. of new pedestrian space, reducing crowding and improving safety"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_002_metric_loading_spaces",
+        "local_observation_id": "metric_daytime_loading_spaces",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_daytime-loading-spaces",
+            "description": "34th Street SBS project increases daytime loading from 32 to 258 spaces",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p010_c0002",
+                "source_quote": "Loading : increases daytime loading from 32 to 258 spaces with a loading zone on every block"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence from the 34th Street SBS CAC #5 presentation describes loading space increases delivered by the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p010_c0002",
+            "source_quote": "Loading : increases daytime loading from 32 to 258 spaces with a loading zone on every block"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_003_metric_boarding_time_m15",
+        "local_observation_id": "metric_boarding_time_reduction_m15_sbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-sbs",
+            "object_id": "metric_boarding-time-reduction-m15-sbs",
+            "description": "M15 SBS achieved 36% less time spent at stops",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p037_c0002",
+                "source_quote": "Faster Boarding – 36% less time spent at stops (M15 SBS)"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence explicitly names M15 SBS as the subject and describes a performance metric for that route.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p037_c0002",
+            "source_quote": "Faster Boarding – 36% less time spent at stops (M15 SBS)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_004_metric_fare_evasion_m15",
+        "local_observation_id": "metric_fare_evasion_reduction_m15_sbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-sbs",
+            "object_id": "metric_fare-evasion-reduction-m15-sbs",
+            "description": "M15 SBS achieved 37% less fare evasion",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p037_c0002",
+                "source_quote": "Fare Evasion Reduced – 37% less fare evasion (M15 SBS)"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence explicitly names M15 SBS as the subject.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p037_c0002",
+            "source_quote": "Fare Evasion Reduced – 37% less fare evasion (M15 SBS)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_005_metric_daily_riders_34th",
+        "local_observation_id": "metric_daily_riders_34th_st_sbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m34-sbs",
+            "object_id": "metric_daily-riders-34th-st-sbs",
+            "description": "34th Street SBS bus service carries over 33,000 daily riders",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p010_c0002",
+                "source_quote": "Bus Service : improves bus reliability and increase bus speeds for over 33,000 daily riders"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence describes the 34th Street SBS bus service ridership, which corresponds to the M34 SBS route.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p010_c0002",
+            "source_quote": "Bus Service : improves bus reliability and increase bus speeds for over 33,000 daily riders"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_006_claim_traffic_delays",
+        "local_observation_id": "claim_traffic_delays_roughly_same",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_traffic-delays-roughly-same_2",
+            "description": "Traffic analysis conclusion that delays remain roughly the same for the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p027_c0002",
+                "source_quote": "Overall, traffic delays will remain roughly the same"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence from the 34th Street SBS CAC #5 presentation presents a traffic analysis finding for the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p027_c0002",
+            "source_quote": "Overall, traffic delays will remain roughly the same"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_007_claim_traffic_diverted",
+        "local_observation_id": "claim_traffic_diverted_small",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_traffic-diverted-small",
+            "description": "Traffic analysis finding on diversion to 35th Street for the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p027_c0002",
+                "source_quote": "Some traffic diverted to 35 th Street, number of vehicles is small"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence presents a traffic analysis finding specific to the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p027_c0002",
+            "source_quote": "Some traffic diverted to 35 th Street, number of vehicles is small"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_008_claim_no_effect_beyond",
+        "local_observation_id": "claim_no_effect_beyond_project_area",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_no-effect-beyond-project-area",
+            "description": "Traffic analysis finding that there is no effect beyond the 34th Street SBS project area",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p027_c0002",
+                "source_quote": "MTM shows no effect on traffic beyond the project area"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence presents a Manhattan Traffic Model finding for the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p027_c0002",
+            "source_quote": "MTM shows no effect on traffic beyond the project area"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_009_claim_fare_evasion_bx12_m15",
+        "local_observation_id": "claim_fare_evasion_declined_bx12_m15",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_bx12-plus",
+            "object_id": "claim_fare-evasion-declined-bx12-m15_5",
+            "description": "Fare evasion declined on Bx12 SBS after pre-payment introduced",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p035_c0002",
+                "source_quote": "Fare evasion on Bx12 SBS and M15 SBS declined after pre-payment introduced"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_m15-sbs",
+            "object_id": "claim_fare-evasion-declined-bx12-m15_5",
+            "description": "Fare evasion declined on M15 SBS after pre-payment introduced",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p035_c0002",
+                "source_quote": "Fare evasion on Bx12 SBS and M15 SBS declined after pre-payment introduced"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence explicitly names both Bx12 SBS and M15 SBS as routes where fare evasion declined.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p035_c0002",
+            "source_quote": "Fare evasion on Bx12 SBS and M15 SBS declined after pre-payment introduced"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_010_claim_design_standard",
+        "local_observation_id": "claim_design_uses_standard_elements",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_design-uses-standard-elements",
+            "description": "34th Street SBS design uses standard bus and pedestrian design elements",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p010_c0002",
+                "source_quote": "Design : uses standard bus and pedestrian design elements; emergency vehicles could use the improved bus lanes"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence comes from the 34th Street SBS CAC #5 presentation describing the project design.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p010_c0002",
+            "source_quote": "Design : uses standard bus and pedestrian design elements; emergency vehicles could use the improved bus lanes"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_011_claim_11th_ave_stop",
+        "local_observation_id": "claim_design_change_11th_ave_stop",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_design-change-11th-ave-stop",
+            "description": "Design change: eastbound stop relocated to Eleventh Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p011_c0002",
+                "source_quote": "Eleventh Avenue: Relocated eastbound stop to Eleventh Avenue providing better connection to the Jacobs Javits Convention Center"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence describes a design change for the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p011_c0002",
+            "source_quote": "Eleventh Avenue: Relocated eastbound stop to Eleventh Avenue providing better connection to the Jacobs Javits Convention Center"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_012_claim_dyer_ave_stop",
+        "local_observation_id": "claim_design_change_dyer_ave_stop",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_design-change-dyer-ave-stop",
+            "description": "Design change: westbound stop relocated from Tenth Avenue to Dyer Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p011_c0002",
+                "source_quote": "Dyer Ave/Tenth Avenue: Relocated westbound stop located at Tenth Avenue to Dyer Avenue better serving this dense residential block"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence describes a design change for the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p011_c0002",
+            "source_quote": "Dyer Ave/Tenth Avenue: Relocated westbound stop located at Tenth Avenue to Dyer Avenue better serving this dense residential block"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_013_claim_9th_ave_left_turn",
+        "local_observation_id": "claim_design_change_9th_ave_left_turn",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_design-change-9th-ave-left-turn",
+            "description": "Design change: westbound left turn banned at Ninth Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p011_c0002",
+                "source_quote": "Ninth Avenue: Banned westbound left turn to reduce vehicle delays on 34 th Street"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence describes a design change for the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p011_c0002",
+            "source_quote": "Ninth Avenue: Banned westbound left turn to reduce vehicle delays on 34 th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_014_claim_8th_ave_right_turn",
+        "local_observation_id": "claim_design_change_8th_ave_right_turn",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_design-change-8th-ave-right-turn",
+            "description": "Design change: westbound right turn banned at Eighth Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p011_c0002",
+                "source_quote": "Eighth Avenue: Banned westbound right turn to improve pedestrian safety across Eight Avenue and reduce vehicle delays on 34 th Street"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence describes a design change for the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p011_c0002",
+            "source_quote": "Eighth Avenue: Banned westbound right turn to improve pedestrian safety across Eight Avenue and reduce vehicle delays on 34 th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_015_claim_33rd_st_reopen",
+        "local_observation_id": "claim_design_change_33rd_st_reopen",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_design-change-33rd-st-reopen",
+            "description": "Design change under evaluation: reopening 33rd Street at Broadway/Sixth Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p011_c0002",
+                "source_quote": "Sixth Avenue/Broadway/Herald Square: Under evaluation: Reopening 33 rd Street at Broadway/Sixth Avenue to through traffic"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence describes a design change under evaluation for the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p011_c0002",
+            "source_quote": "Sixth Avenue/Broadway/Herald Square: Under evaluation: Reopening 33 rd Street at Broadway/Sixth Avenue to through traffic"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_016_claim_1st_ave_left_turn",
+        "local_observation_id": "claim_design_change_1st_ave_left_turn",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_design-change-1st-ave-left-turn",
+            "description": "Design change: eastbound left turn restored at First Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p011_c0002",
+                "source_quote": "First Avenue: Restored the eastbound left turn at First Avenue E. 34th Street Ferry Terminal"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence describes a design change for the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p011_c0002",
+            "source_quote": "First Avenue: Restored the eastbound left turn at First Avenue E. 34th Street Ferry Terminal"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_017_claim_park_ave_stop",
+        "local_observation_id": "claim_design_change_park_ave_express_stop",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_design-change-park-ave-express-stop",
+            "description": "Design change: Park Avenue express bus stop combined with SBS stop",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p011_c0002",
+                "source_quote": "Park Avenue: Express bus stop combined with westbound Third Avenue SBS bus stop to provide improved curb access and reduce total length of bus stop in front of 155 E. 34 th Street"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence describes a design change for the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p011_c0002",
+            "source_quote": "Park Avenue: Express bus stop combined with westbound Third Avenue SBS bus stop to provide improved curb access and reduce total length of bus stop in front of 155 E. 34 th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_018_claim_madison_fifth_turn",
+        "local_observation_id": "claim_design_change_madison_fifth_turn_bay",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_design-change-madison-fifth-turn-bay",
+            "description": "Design change: right-turn bay reduced at Madison/Fifth Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p011_c0002",
+                "source_quote": "Madison/Fifth Avenue: Right-turn bay reduced to expand length of loading zone serving 7 Park Avenue"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence describes a design change for the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p011_c0002",
+            "source_quote": "Madison/Fifth Avenue: Right-turn bay reduced to expand length of loading zone serving 7 Park Avenue"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_019_claim_3rd_ave_loading",
+        "local_observation_id": "claim_design_change_3rd_ave_loading_zone",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_design-change-3rd-ave-loading-zone",
+            "description": "Design change: commercial loading zone created on Second Avenue near Third Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p011_c0002",
+                "source_quote": "Third Avenue: Created commercial loading zone on Second Avenue to better improve access to 300 E. 34 th Street"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence describes a design change for the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p011_c0002",
+            "source_quote": "Third Avenue: Created commercial loading zone on Second Avenue to better improve access to 300 E. 34 th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_020_claim_2nd_ave_ambulette",
+        "local_observation_id": "claim_design_change_2nd_ave_ambulette",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_design-change-2nd-ave-ambulette",
+            "description": "Design change: ambulette parking zone created on Second Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p011_c0002",
+                "source_quote": "Second Avenue: Created ambulette parking zone for Medical Arts Center"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence describes a design change for the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p011_c0002",
+            "source_quote": "Second Avenue: Created ambulette parking zone for Medical Arts Center"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_021_claim_capacity_reductions",
+        "local_observation_id": "claim_capacity_reductions_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_capacity-reductions-34th-st",
+            "description": "Capacity reductions on 34th Street as part of the SBS design",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p020_c0002",
+                "source_quote": "Capacity reductions – West bound: 2 general traffic lanes to 1 from Madison Ave to Ninth Ave – Both directions: 2 general traffic lanes to 1 from Eleventh Ave to Ninth Ave and from Third Ave to First Ave"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence describes capacity reductions on 34th Street as part of the SBS design.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p020_c0002",
+            "source_quote": "Capacity reductions – West bound: 2 general traffic lanes to 1 from Madison Ave to Ninth Ave – Both directions: 2 general traffic lanes to 1 from Eleventh Ave to Ninth Ave and from Third Ave to First Ave"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_022_claim_2nd_ave_lane",
+        "local_observation_id": "claim_design_response_2nd_ave_lane",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_design-response-2nd-ave-lane",
+            "description": "Design response to traffic analysis: additional eastbound lane at Second Avenue intersection",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p026_c0002",
+                "source_quote": "34 th St East Bound at Second Ave: added additional traffic lane at intersection"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence describes a design change in response to traffic analysis for the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p026_c0002",
+            "source_quote": "34 th St East Bound at Second Ave: added additional traffic lane at intersection"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_023_claim_madison_bus_lane",
+        "local_observation_id": "claim_design_response_madison_bus_lane",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_design-response-madison-bus-lane",
+            "description": "Design response: bus-only left turn lane and pedestrian island at Madison Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p026_c0002",
+                "source_quote": "34 th St East Bound at Madison Ave: added bus only left turn lane and pedestrian island"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence describes a design change in response to traffic analysis for the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p026_c0002",
+            "source_quote": "34 th St East Bound at Madison Ave: added bus only left turn lane and pedestrian island"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_024_event_fare_pre_pay",
+        "local_observation_id": "event_fare_pre_payment_start_2011_11_13",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_fare-pre-payment-start-2011-11-13",
+            "description": "M34/M34A SBS fare pre-payment launch on November 13, 2011",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p030_c0002",
+                "source_quote": "Start date: Sunday November 13, 2011"
+              }
+            ]
+          }
+        ],
+        "rationale": "The event is the fare pre-payment start for the M34/M34A SBS routes, a key milestone in the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p030_c0002",
+            "source_quote": "Start date: Sunday November 13, 2011"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_025_event_cac_meeting_5",
+        "local_observation_id": "event_cac_meeting_5_2011_09_27",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_cac-meeting-5-2011-09-27",
+            "description": "34th Street SBS Community Advisory Committee Meeting #5 on September 27, 2011",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p001_c0001",
+                "source_quote": "34th Street SBS Community Advisory Committee Meeting #5, September 27, 2011"
+              }
+            ]
+          }
+        ],
+        "rationale": "This is the fifth CAC meeting for the 34th Street SBS project; the source document itself is the presentation from this meeting.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p001_c0001",
+            "source_quote": "34th Street SBS Community Advisory Committee Meeting #5, September 27, 2011"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_026_event_open_house_east",
+        "local_observation_id": "event_open_house_east_2011_10_06",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_open-house-east-2011-10-06",
+            "description": "34th Street SBS Open House East on October 6, 2011",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p041_c0004",
+                "source_quote": "Date : Thursday, October 6"
+              }
+            ]
+          }
+        ],
+        "rationale": "The open house was held to present traffic analysis results for the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p041_c0004",
+            "source_quote": "Date : Thursday, October 6"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_027_event_open_house_west",
+        "local_observation_id": "event_open_house_west_2011_10_11",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_open-house-west-2011-10-11",
+            "description": "34th Street SBS Open House West on October 11, 2011",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p041_c0006",
+                "source_quote": "Date : Tuesday, October 11"
+              }
+            ]
+          }
+        ],
+        "rationale": "The open house was held to present traffic analysis results for the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p041_c0006",
+            "source_quote": "Date : Tuesday, October 11"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_028_event_machine_install",
+        "local_observation_id": "event_machine_installation_2011_10_04",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_machine-installation-2011-10-04",
+            "description": "Fare pre-payment machine installation begins October 4, 2011 for 34th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p038_c0002",
+                "source_quote": "Machine installation: begins October 4"
+              }
+            ]
+          }
+        ],
+        "rationale": "The machine installation is a prerequisite milestone for the fare pre-payment launch on the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p038_c0002",
+            "source_quote": "Machine installation: begins October 4"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_029_event_ea_release",
+        "local_observation_id": "event_ea_release_early_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_ea-release-early-2012",
+            "description": "Environmental Assessment for 34th Street SBS published in early 2012",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p040_c0002",
+                "source_quote": "Environmental Assessment (EA) – Published in early 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "The Environmental Assessment is a key regulatory milestone for the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p040_c0002",
+            "source_quote": "Environmental Assessment (EA) – Published in early 2012"
+          }
+        ]
+      }
+    ],
+    "packet_id": "relation-linker"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-46-45-519Z_2111393-77f64e90_canonicalize_2026-06-10t22-56-13-382z-1976810-c496d526-ingest-201110-brt-34th-cac5-relation-linker"
+}

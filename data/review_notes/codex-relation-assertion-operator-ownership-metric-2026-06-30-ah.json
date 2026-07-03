@@ -1,0 +1,168 @@
+{
+  "note_id": "codex-relation-assertion-operator-ownership-metric-2026-06-30-ah",
+  "created_at": "2026-06-30T00:00:00.000Z",
+  "author": "codex",
+  "kind": "deterministic_relation_assertion_status_checkpoint",
+  "status": "validated_clean",
+  "scope": "Reduced relation payload assertion_status=unknown with narrow delivered-status inference for active route operators, static agency service/operation relations, ownership relations, and source/metric containment relations.",
+  "constraints": {
+    "external_or_provider_llms_used": false,
+    "forbidden_commands_run": [],
+    "canonical_jsonl_hand_edited": false,
+    "mutation_path": "deterministic assertion qualifier/test changes plus bun packages/cli/src/cli.ts materialize"
+  },
+  "subagents": [
+    {
+      "agent_id": "019f1ab1-0f76-7b23-b0e2-aef601c61bac",
+      "nickname": "Heisenberg",
+      "role": "read-only metric_context assertion-status scout",
+      "status": "closed",
+      "finding_summary": "Rebaselined 5672 unknown metric_context relations and recommended holding the 5647 has_metric mass because value/period/date/as_of_date fields mix actuals, forecasts, budgets, goals, and proposed expenditures. Recommended only the 11-record source/metric containment slice: includes source->metric_claim and metric_of_source metric_claim->source with source provenance matching the source endpoint."
+    }
+  ],
+  "before": {
+    "relation_total": 20650,
+    "assertion_status_counts": {
+      "cancelled": 2,
+      "deferred": 22,
+      "delivered": 3741,
+      "in_progress": 1600,
+      "planned": 2853,
+      "proposed": 3104,
+      "unknown": 9328
+    },
+    "unknown_by_relation_family": {
+      "metric_context": 5672,
+      "agency_role": 691,
+      "timeline_context": 603,
+      "claim_context": 509,
+      "partnership_engagement": 361,
+      "funding_award": 360,
+      "corridor_scope": 308,
+      "publication_role": 199,
+      "treatment_context": 119,
+      "route_scope": 113,
+      "governance_legal": 112,
+      "organization_hierarchy": 109,
+      "dependency_or_reference": 85,
+      "location_scope": 35,
+      "program_project_scope": 22,
+      "data_reporting": 16,
+      "ownership_role": 14
+    }
+  },
+  "implemented": {
+    "files": [
+      "packages/pipeline/src/records/assertion-qualifiers.ts",
+      "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+    ],
+    "rules": [
+      {
+        "name": "active_route_operator_relations",
+        "guard": "relation_family route_scope; relation_kind operates_route; subject is entity; object is route with route_record_scope true_route; no future/proposed/former/uncertain wording in description or endpoint display names",
+        "normalization": "assertion_status delivered",
+        "rows_moved": 20,
+        "negative_guards": [
+          "Proposed route labels such as Proposed B38 Local",
+          "split_candidate route objects",
+          "non-route objects"
+        ]
+      },
+      {
+        "name": "static_agency_service_relations",
+        "guard": "relation_family agency_role; relation_kind operates, operates_service, provides_service_to, or provides_service_for; subject and object are distinct entity records; no future/proposed/former/uncertain wording in description or endpoint display names",
+        "normalization": "assertion_status delivered",
+        "rows_moved": 55,
+        "negative_guards": [
+          "claim/event/corridor/route objects",
+          "self-links",
+          "wrong relation family",
+          "future/proposed/uncertain wording"
+        ]
+      },
+      {
+        "name": "static_ownership_relations",
+        "guard": "relation_family ownership_role; relation_kind owned_by; subject is not source; object is entity; subject/object are distinct; no future/proposed/former/uncertain wording",
+        "normalization": "assertion_status delivered",
+        "rows_moved": 12,
+        "negative_guards": [
+          "source subjects",
+          "self-links",
+          "future/proposed/uncertain wording"
+        ]
+      },
+      {
+        "name": "metric_source_containment_relations",
+        "guard": "relation_family metric_context; relation_kind includes with source->metric_claim or metric_of_source with metric_claim->source; relation source_id/source_ids includes the source endpoint source_id",
+        "normalization": "assertion_status delivered",
+        "rows_moved": 11,
+        "negative_guards": [
+          "has_metric",
+          "proposes",
+          "wrong endpoint kinds",
+          "provenance mismatch between relation source and source endpoint"
+        ]
+      }
+    ]
+  },
+  "after": {
+    "relation_total": 20650,
+    "assertion_status_counts": {
+      "cancelled": 2,
+      "deferred": 22,
+      "delivered": 3839,
+      "in_progress": 1600,
+      "planned": 2853,
+      "proposed": 3104,
+      "unknown": 9230
+    },
+    "unknown_by_relation_family": {
+      "metric_context": 5661,
+      "agency_role": 636,
+      "timeline_context": 603,
+      "claim_context": 509,
+      "partnership_engagement": 361,
+      "funding_award": 360,
+      "corridor_scope": 308,
+      "publication_role": 199,
+      "treatment_context": 119,
+      "governance_legal": 112,
+      "organization_hierarchy": 109,
+      "route_scope": 93,
+      "dependency_or_reference": 85,
+      "location_scope": 35,
+      "program_project_scope": 22,
+      "data_reporting": 16,
+      "ownership_role": 2
+    },
+    "delta": {
+      "unknown": -98,
+      "delivered": 98,
+      "route_scope_unknown": -20,
+      "agency_role_unknown": -55,
+      "ownership_role_unknown": -12,
+      "metric_context_unknown": -11
+    }
+  },
+  "verification": {
+    "focused_tests": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts: 29 pass, 0 fail, 105 expect() calls",
+    "typecheck": "bun run typecheck passed",
+    "materialize": "bun packages/cli/src/cli.ts materialize completed; Materialized 93092/98102 submissions; retired skipped 243; SQLite FTS quick_check ok",
+    "sqlite_quick_check": "sqlite3 data/canonical.db 'PRAGMA quick_check;': ok",
+    "validate": "bun packages/cli/src/cli.ts validate: Issues 0; submissions 98102; canonical records 84040; wiki pages 7334"
+  },
+  "remaining_lanes": [
+    "Relation assertion_status unknown remains 9230, dominated by metric_context 5661, agency_role 636, timeline_context 603, claim_context 509, partnership_engagement 361, funding_award 360, and corridor_scope 308.",
+    "Do not broadly promote metric_context has_metric rows without a policy decision: the scout found actuals, forecasts, budgets, goals, projected deficits, proposed expenditures, and before/after observations mixed together.",
+    "Next high-confidence relation lanes should use exact relation-kind and endpoint-shape guards, especially funding_award contract/award surfaces, timeline_context scheduled/held event surfaces, or corridor_scope proposed-starting descriptions with explicit false-positive guards."
+  ],
+  "commands_not_run": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed commands"
+  ]
+}

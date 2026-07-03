@@ -1,0 +1,18 @@
+{"decision_id":"tr-bus-bulbs-webster-ave","verdict":"pass","evidence_checked":["2012_10_webster_sbs_newsletter#p001_c0008","2012_10_webster_sbs_newsletter#p002_c0009"]}
+{"decision_id":"tr-dedicated-bus-lanes-webster","verdict":"pass","evidence_checked":["2012_10_webster_sbs_newsletter#p001_c0010","2012_10_webster_sbs_newsletter#p001_c0011"]}
+{"decision_id":"tr-transit-signal-priority-webster","verdict":"pass","evidence_checked":["2012_10_webster_sbs_newsletter#p001_c0013"]}
+{"decision_id":"tr-pedestrian-amenities-webster","verdict":"pass","evidence_checked":["2012_10_webster_sbs_newsletter#p001_c0009"]}
+{"decision_id":"tr-fare-collection-machines-webster","verdict":"pass","evidence_checked":["2012_10_webster_sbs_newsletter#p002_c0009"]}
+{"decision_id":"tr-bus-shelters-webster","verdict":"pass","evidence_checked":["2012_10_webster_sbs_newsletter#p002_c0009"]}
+{"decision_id":"rel-001-metric-bx41-riders","verdict":"unsure","failure_reason":"The cited block says '22,000 daily riders on the Bx41 route' — not 'Bx41 Limited'. The metric's payload also records route as 'Bx41' (not limited-specific). The proposed subject route_bx41-limited-2012-10-webster is specifically the Limited variant (service_variant: limited_stop). The block text does not distinguish whether the 22,000 figure represents the Limited variant alone or the entire Bx41 corridor (local + limited). Attaching this metric to the Limited-specific route record may over-narrow the scope.","evidence_checked":["2012_10_webster_sbs_newsletter#p001_c0004"]}
+{"decision_id":"rel-002-metric-businesses-surveyed","verdict":"pass","evidence_checked":["2012_10_webster_sbs_newsletter#p002_c0011"]}
+{"decision_id":"rel-008-metric-business-deliveries","verdict":"pass","evidence_checked":["2012_10_webster_sbs_newsletter#p002_c0011"]}
+{"decision_id":"rel-009-claim-sbs-fare","verdict":"pass","evidence_checked":["2012_10_webster_sbs_newsletter#p001_c0006"]}
+{"decision_id":"rel-010-claim-parking-concerns","verdict":"pass","evidence_checked":["2012_10_webster_sbs_newsletter#p002_c0011"]}
+{"decision_id":"rel-011-claim-curb-regulations","verdict":"pass","evidence_checked":["2012_10_webster_sbs_newsletter#p002_c0011"]}
+{"decision_id":"rel-012-claim-hope-similar-results","verdict":"pass","evidence_checked":["2012_10_webster_sbs_newsletter#p003_c0008"]}
+{"decision_id":"rel-013-event-design-ideas","verdict":"pass","evidence_checked":["2012_10_webster_sbs_newsletter#p003_c0004"]}
+{"decision_id":"rel-014-event-draft-corridor","verdict":"pass","evidence_checked":["2012_10_webster_sbs_newsletter#p003_c0004"]}
+{"decision_id":"rel-015-event-refine-plan","verdict":"pass","evidence_checked":["2012_10_webster_sbs_newsletter#p003_c0004"]}
+{"decision_id":"rel-016-event-final-design","verdict":"pass","evidence_checked":["2012_10_webster_sbs_newsletter#p003_c0004"]}
+{"decision_id":"rel-017-event-business-survey","verdict":"pass","evidence_checked":["2012_10_webster_sbs_newsletter#p002_c0011"]}

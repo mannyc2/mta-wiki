@@ -1,0 +1,29 @@
+{
+  "run_id": "2026-06-10T22-56-13-349Z_1976810-7111a634_ingest_201109-brt-hylan-proposed",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T01:42:13.463Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "s79-sbs-2011-proposed-link",
+        "local_observation_id": "route_s79_hylan_2011",
+        "decision": "link",
+        "target_record_id": "route_able-s79-sbs",
+        "rationale": "Observation payload has service_variant: 'sbs' and route_type: 'Select Bus Service', but its base_record_id route_s79-hylan-2010 is the local S79 (route_type: 'local'). The strong identity field service_variant differs, so this observation should not live under the local record. The canonical S79 SBS record is route_able-s79-sbs, which represents the same real-world SBS variant (later branded S79+). Source 201109_brt_hylan_proposed is a September 2011 Hylan Boulevard SBS proposal document; the 'S79 SBS' mentioned therein is the planned service that later became the operational S79+. Not blocked by any do_not_merge_pairs.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_proposed",
+            "block_id": "p001_c0005",
+            "source_quote": "For S79 SBS and all local and express bus services"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-40-08-688Z_2111393-342e1508_canonicalize_2026-06-10t22-56-13-349z-1976810-7111a634-ingest-201109-brt-hylan-proposed-route-identity"
+}

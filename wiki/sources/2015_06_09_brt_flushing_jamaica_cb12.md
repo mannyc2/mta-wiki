@@ -1,0 +1,250 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_2015-06-09-brt-flushing-jamaica-cb12"
+record_kind: "source"
+display_name: "Queens Community Board 12 Transportation Committee - Q44 Select Bus Service"
+source_id: "2015_06_09_brt_flushing_jamaica_cb12"
+source_ids:
+  - "2015_06_09_brt_flushing_jamaica_cb12"
+local_observation_id: "source_2015_06_09_brt_flushing_jamaica_cb12"
+local_observation_ids:
+  - "source_2015_06_09_brt_flushing_jamaica_cb12"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T17:54:45.943Z"
+submission_ids:
+  - "sub_e766fd24e0f3a40b"
+payload:
+  authority_tier: "plan_document"
+  content_type: "presentation"
+  date_text: "June 9, 2015"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2015-06-09"
+    precision: "day"
+    raw_text: "June 9, 2015"
+  prepared_for: "Queens Community Board 12 Transportation Committee"
+  published_date_normalized: "2015-06-09"
+  published_date_precision: "day"
+  publisher: "NYC Department of Transportation"
+  title: "Q44 Select Bus Service"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "2015_06_09_brt_flushing_jamaica_cb12#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "2015_06_09_brt_flushing_jamaica_cb12"
+    source_path: "raw/sources/2015_06_09_brt_flushing_jamaica_cb12/blocks.jsonl"
+    text_sha256: "sha256:00da53b88fbe77312c33017c42593759e5bd03ee09cb41fa6812870f42cc4b83"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "2015_06_09_brt_flushing_jamaica_cb12#p001_c0002"
+    page_number: 1
+    role: "audience"
+    source_id: "2015_06_09_brt_flushing_jamaica_cb12"
+    source_path: "raw/sources/2015_06_09_brt_flushing_jamaica_cb12/blocks.jsonl"
+    text_sha256: "sha256:8d9affe745986c0709070f4c6e8e876d8eadaf376ec8af699cfd19decc2729c9"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "2015_06_09_brt_flushing_jamaica_cb12#p001_c0003"
+    page_number: 1
+    role: "date"
+    source_id: "2015_06_09_brt_flushing_jamaica_cb12"
+    source_path: "raw/sources/2015_06_09_brt_flushing_jamaica_cb12/blocks.jsonl"
+    text_sha256: "sha256:1f34b17cfb6c72f8776ed56bcb325004ef7323d07a5c8350c5e9256c3c977531"
+    text_source: "raw_text"
+---
+
+# Download the presentation (pdf)
+
+source_id: 2015_06_09_brt_flushing_jamaica_cb12
+citation: cite block ids exactly as shown in square brackets
+document: 128 block(s)
+
+## Page 1
+
+### [p001_c0001] Q44 Select Bus Service
+[p001_c0002] Queens Community Board 12 Transportation Committee
+[p001_c0003] June 9, 2015
+[p001_c0004] +selectbusservice
+
+## Page 2
+
+### [p002_c0001] About Select Bus Service
+- [p002_c0002] • Buses 15-23% faster • 10%+ increases in ridership in first year • 95%+ customer satisfaction • Better bus stops and connections • Safer streets • Maintain traffic flow
+> [p002_c0003] A map of the New York City area, including Westchester, Nassau, and Staten Island counties, showing the routes of Select Bus Service (SBS). The map highlights several key locations and routes: Westchester County: Williamsbridge Co-Op City, Inwood, The Bronx, The Hub. Nassau County: Queens, Brooklyn, Bay Ridge, Sheepshead Bay. Staten Island: Staten Island Mall. Routes: Bx12: Fordham Rd/ Pelham Pkwy Bx41: Webster Av M60: 125 St./Astoria Blvd. to LGA M34/M34A: 34 St M15: First Av/ Second Av B44: Nostrand Ave/ Rogers Ave S79: Hylan Blvd Other Labels: South Ferry, Williamsburg, Pelham Pkwy, Hylan Blvd, South Ferry, South Ferry. A north arrow is located in the bottom right corner of the map area.
+[p002_c0004] _+selectbusservice_
+[p002_c0005] _2_
+
+## Page 3
+
+### [p003_c0001] Select Bus Service Features
+[p003_c0002] _Improved fare collection_
+[p003_c0003] _Bus lanes where appropriate_
+[p003_c0004] _Transit signal priority_
+[p003_c0005] _Passenger information_
+[p003_c0006] _Improved station amenities_
+[p003_c0007] _Improved Curb Regulations_
+[p003_c0008] _+selectbuservice_
+[p003_c0009] _3_
+
+## Page 4
+
+### [p004_c0001] Select Bus Service Fare Payment
+> [p004_c0002] A close-up photograph of a woman in a purple jacket and blue beanie interacting with a fare payment machine. She is holding a MetroCard and inserting it into the yellow 'METRO CARD' slot. The machine has a screen that says 'Please Take Your Receipt and Transfer' and 'Transfer OK'. Below the screen are buttons for 'RECEIPT', 'PUSH TO START', and 'METRO CARD'. The machine is part of a larger unit with other colored buttons and a small speaker icon labeled 'AUDIO'. (as Whitaker-Photography 2011)
+- [p004_c0003] • Riders pay with MetroCard or coins before boarding • Take ticket from machine • Board bus through all three doors
+> [p004_c0004] A photograph showing MTA fare inspectors in uniform conducting random fare payment inspections. A female inspector in a dark blue uniform with a 'METRO' patch is handing a receipt to a male passenger in a white shirt and dark pants. Other passengers, including a woman in a red dress and a woman in a white dress, are waiting in line. A bus is visible in the background, and a fare payment machine is on the right side of the frame.
+- [p004_c0005] • MTA NYCT conducts random fare payment inspections
+[p004_c0006] _+selectbusservice_
+[p004_c0007] _4_
+
+## Page 5
+
+### [p005_c0001] Project Background
+[p005_c0002] Bronx-Flushing-Jamaica corridor identified in initial NYC BRT study (2006) and Bus Rapid Transit Phase II report (2009)
+[p005_c0003] Characterized by “long and slow bus trips”
+> [p005_c0004] A photograph of a New York City bus at a stop. The bus is white with blue and yellow accents. The destination sign on the front of the bus reads "6X12" and "WORKERS". The background shows a city street with buildings, including one with a "MOBILE" sign. The text "Introduction to BUS RAPID TRANSIT PHASE II" is overlaid in white on a blue banner at the top. At the bottom, there are logos for DOT and New York City Transit.
+> [p005_c0005] A map of the Bronx, Queens, and Brooklyn areas of New York City. The map shows a network of bus service routes. A legend in the bottom right corner identifies three types of routes: "Existing SBS" (solid black line), "2014 Implementation" (solid red line), and "In Planning" (dotted red line). A purple oval highlights a specific area in the Bronx, and a red dotted line indicates a route in the Bronx and Queens. The map also shows the surrounding water bodies, including the East River and the Atlantic Ocean.
+[p005_c0006] _+selectbuservice_
+[p005_c0007] _5_
+
+## Page 6
+
+### [p006_c0001] Project Background
+### [p006_c0002] Two SBS Candidates:
+### [p006_c0003] Main Street:
+### [p006_c0004] 2015 SBS Implementation Goal
+[p006_c0005] 42,000 daily riders on
+- [p006_c0006] • Q20A/B: Jamaica to College Point • Q44: Jamaica to West Farms
+### [p006_c0007] Parsons Blvd/Kissena Blvd:
+### [p006_c0008] Future SBS Implementation Goal
+[p006_c0009] 26,000 daily riders on
+- [p006_c0010] • Q25: Jamaica to College Point • Q34: Jamaica to Whitestone
+> [p006_c0011] A map of the Bronx and Queens area showing two proposed Bus Service (SBS) routes. The map includes major highways like the Bruckner Expressway, Northern Boulevard, and Long Island Expressway, as well as local landmarks like West Farms, Parkchester, Castle Hill, The Bronx, Jamaica Center, and Queensboro Hill. Two routes are highlighted: a red route and a blue route. The red route starts at Jamaica Center (marked with a red circle containing 'Q 20A/B 44') and travels north through Whitestone, College Point, and ends at West Farms (marked with a red circle containing '2 5'). The blue route starts at Jamaica Center (marked with a blue circle containing 'Q 25 34') and travels north through Whitestone, College Point, and ends at West Farms (marked with a blue circle containing '7'). The map also shows various bus stops and subway stations along the routes.
+[p006_c0012] _+selectbuservice_
+[p006_c0013] _6_
+
+## Page 7
+
+### [p007_c0001] Project Background
+[p007_c0002] Q44 was prioritized for SBS upgrade based on
+- [p007_c0003] • Ridership – Over 29,000 per day on Q44 • Key connection between Queens and The Bronx • Main Street offers more opportunity for on-street bus priority
+> [p007_c0004] A map of the Queens-Bronx corridor showing bus routes and SBS upgrade priorities. The map highlights the following features: Bus Routes: The map shows several bus routes, including the 2, 5, 6, 7, 20A/B, 25, 34, and 44 routes. The 20A/B, 25, and 34 routes are highlighted in red and blue, respectively, indicating SBS upgrade priorities. Geographic Labels: The map includes labels for various neighborhoods and landmarks, such as West Farms, Parkchester, Unionport, The Bronx, Castle Hill, Melba, College Point, Whitestone, Murray Hill, Downtown Flushing, Queensboro Hill, Pomonok, Kew Gardens Hills, and Jamaica Center. Infrastructure: The map shows major highways like the BRUCKNER EXWY, LONG IS EXWY, and GRAND CENTRAL PKWY, as well as other streets like Northern Blvd and 71st Ave. Station Markers: The map includes station markers for various bus routes, such as 2, 5, 6, 7, 20A/B, 25, 34, and 44.
+[p007_c0005] _+selectbusservice_
+[p007_c0006] _7_
+
+## Page 8
+
+### [p008_c0001] Bus Ridership and Speed
+> [p008_c0002] Q44 Weekday Stop Activity To Bronx (see inset) Q44 Stop Activity 0 - 500 501 - 1,500 1,501 - 3,000 3,001 - 5,000 > 5,000 Q44 Route 0 0.5 1 Miles Bronx Inset Stops in Bronx Inset: Bronx Zoo, Tremont Av, Bronx Park Av, Taylor Av, Rosedale Av, White Plains Rd, Newbold Av, Hugh Grant Circle, Olmstead Av, Havermeyer Av, Cerega Av, Haviland Av, Bruckner Blvd, Lafayette Av, Wenner Pl.
+> [p008_c0003] Average Bus Speed, MPH < 5 5 - 10 10.1 - 15 15.1 - 20 > 20
+[p008_c0004] _+selectbuservice_
+[p008_c0005] _8_
+
+## Page 9
+
+### [p009_c0001] Q44 SBS Overview
+[p009_c0002] Q44 LTD will be replaced by Q44 SBS
+[p009_c0003] SBS will follow same route as LTD from Merrick Blvd in Jamaica to the Bronx Zoo
+> [p009_c0004] The map illustrates the proposed SBS route for the Q44 bus service. The route is shown as a thick blue line, starting at Merrick Blvd in Jamaica and ending at the Bronx Zoo. Key stops are marked with blue circles containing a white cross. The map also shows the Q20AB Local Route in light blue and other bus routes in grey. A legend in the bottom right corner identifies the symbols: Proposed SBS Station (blue circle with cross), Q44 SBS Route (thick blue line), Q20AB Local Route (light blue line), Subway Station (grey circle), and Other Bus Routes (grey line). A 'Bronx Inset' map in the top right provides a detailed view of the route's path through the Bronx, showing stops like Taylor Av NB, Beach Av SB, and Castle Hill Av SB. The main map includes labels for various neighborhoods and landmarks such as Bayside Av, Kissena Blvd, and Union Turnpike. A note at the top left indicates the route continues to the Bronx Zoo via Whitestone Bridge (see inset).
+[p009_c0005] _+selectbusservice_
+[p009_c0006] _9_
+
+## Page 10
+
+### [p010_c0001] Q44 SBS Stops
+[p010_c0002] SBS will make fewer stops than Q44 LTD to better serve the busiest stops
+- [p010_c0003] • 8 fewer stops in The Bronx • 6 fewer stops in Queens
+> [p010_c0004] The map illustrates the Q44 SBS route, which is a subset of the Q44 LTD route. The route is shown as a thick blue line with circular markers indicating stops. The stops are labeled with street names and numbers. The map includes a legend in the bottom right corner that defines the symbols used: a blue circle with a cross for 'Proposed SBS Station', a pink circle for 'Potential LTD Stop Elimination', a thick blue line for 'Q44 SBS Route', a light blue line for 'Q20AB Local Route', a grey circle for 'Subway Station', and a thin grey line for 'Other Bus Routes'. The map also shows various bus routes (Q4, Q16, Q20, Q28, Q40, Q44, Q46, Q58, Q64, Q77, Q78, Q82, Q84, Q86, Q88, Q90, Q92, Q94, Q96, Q98, Q100, Q102, Q104, Q106, Q108, Q110, Q112, Q114, Q116, Q118, Q120, Q122, Q124, Q126, Q128, Q130, Q132, Q134, Q136, Q138, Q140, Q142, Q144, Q146, Q148, Q150, Q152, Q154, Q156, Q158, Q160, Q162, Q164, Q166, Q168, Q170, Q172, Q174, Q176, Q178, Q180, Q182, Q184, Q186, Q188, Q190, Q192, Q194, Q196, Q198, Q200, Q202, Q204, Q206, Q208, Q210, Q212, Q214, Q216, Q218, Q220, Q222, Q224, Q226, Q228, Q230, Q232, Q234, Q236, Q238, Q240, Q242, Q244, Q246, Q248, Q250, Q252, Q254, Q256, Q258, Q260, Q262, Q264, Q266, Q268, Q270, Q272, Q274, Q276, Q278, Q280, Q282, Q284, Q286, Q288, Q290, Q292, Q294, Q296, Q298, Q300, Q302, Q304, Q306, Q308, Q310, Q312, Q314, Q316, Q318, Q320, Q322, Q324, Q326, Q328, Q330, Q332, Q334, Q336, Q338, Q340, Q342, Q344, Q346, Q348, Q350, Q352, Q354, Q356, Q358, Q360, Q362, Q364, Q366, Q368, Q370, Q372, Q374, Q376, Q378, Q380, Q382, Q384, Q386, Q388, Q390, Q392, Q394, Q396, Q398, Q400, Q402, Q404, Q406, Q408, Q410, Q412, Q414, Q416, Q418, Q420, Q422, Q424, Q426, Q428, Q430, Q432, Q434, Q436, Q438, Q440, Q442, Q444, Q446, Q448, Q450, Q452, Q454, Q456, Q458, Q460, Q462, Q464, Q466, Q468, Q470, Q472, Q474, Q476, Q478, Q480, Q482, Q484, Q486, Q488, Q490, Q492, Q494, Q496, Q498, Q500, Q502, Q504, Q506, Q508, Q510, Q512, Q514, Q516, Q518, Q520, Q522, Q524, Q526, Q528, Q530, Q532, Q534, Q536, Q538, Q540, Q542, Q544, Q546, Q548, Q550, Q552, Q554, Q556, Q558, Q560, Q562, Q564, Q566, Q568, Q570, Q572, Q574, Q576, Q578, Q580, Q582, Q584, Q586, Q588, Q590, Q592, Q594, Q596, Q598, Q600, Q602, Q604, Q606, Q608, Q610, Q612, Q614, Q616, Q618, Q620, Q622, Q624, Q626, Q628, Q630, Q632, Q634, Q636, Q638, Q640, Q642, Q644, Q646, Q648, Q650, Q652, Q654, Q656, Q658, Q660, Q662, Q664, Q666, Q668, Q670, Q672, Q674, Q676, Q678, Q680, Q682, Q684, Q686, Q688, Q690, Q692, Q694, Q696, Q698, Q700, Q702, Q704, Q706, Q708, Q710, Q712, Q714, Q716, Q718, Q720, Q722, Q724, Q726, Q728, Q730, Q732, Q734, Q736, Q738, Q740, Q742, Q744, Q746, Q748, Q750, Q752, Q754, Q756, Q758, Q760, Q762, Q764, Q766, Q768, Q770, Q772, Q774, Q776, Q778, Q780, Q782, Q784, Q786, Q788, Q790, Q792, Q794, Q796, Q798, Q800, Q802, Q804, Q806, Q808, Q810, Q812, Q814, Q816, Q818, Q820, Q822, Q824, Q826, Q828, Q830, Q832, Q834, Q836, Q838, Q840, Q842, Q844, Q846, Q848, Q850, Q852, Q854, Q856, Q858, Q860, Q862, Q864, Q866, Q868, Q870, Q872, Q874, Q876, Q878, Q880, Q882, Q884, Q886, Q888, Q890, Q892, Q894, Q896, Q898, Q900, Q902, Q904, Q906, Q908, Q910, Q912, Q914, Q916, Q918, Q920, Q922, Q924, Q926, Q928, Q930, Q932, Q934, Q936, Q938, Q940, Q942, Q944, Q946, Q948, Q950, Q952, Q954, Q956, Q958, Q960, Q962, Q964, Q966, Q968, Q970, Q972, Q974, Q976, Q978, Q980, Q982, Q984, Q986, Q988, Q990, Q992, Q994, Q996, Q998, Q1000). The map also shows the location of the Bronx Zoo, the Whitestone Bridge, and the Union Turnpike. The inset map in the top right corner provides a detailed view of the Bronx section of the route, showing stops such as Bronx Zoo, West Farms, Parkchester, Rosedale Av, Taylor Av NB, Beach Av SB, White Plains Rd, Pugsley Av SB, Castle Hill Av SB, Blackrock Rd SB, Brush Av, Bruckner Blvd, Lafayette Av, and Wenner Pl. The inset map also shows the route to Flushing and Jamaica via Whitestone Bridge.
+[p010_c0005] _+selectbusservice_
+[p010_c0006] _10_
+
+## Page 11
+
+### [p011_c0001] Q44 SBS Stops
+[p011_c0002] Stop removals proposed in Jamaica
+- [p011_c0003] • Archer Av/Guy Brewer Blvd • Sutphin Blvd/Jamaica Av
+> [p011_c0004] A map of the Q44 SBS route in Jamaica, New York. The route is highlighted in blue and follows a path through the area. Key stops and landmarks are labeled: Manton St, Hillside Av, Merrick Blvd, Guy Brewer Blvd - 165 St, 153 St, Sutphin Blvd, and LIRR Jamaica. The map also shows surrounding areas like Kewi Gardens and Downtown Jamaica. There are several blue circles with a white plus sign (+) indicating proposed stop removals. These are located at the following intersections: Manton St and Hillside Av, Hillside Av and Merrick Blvd, Merrick Blvd and Guy Brewer Blvd - 165 St, and Guy Brewer Blvd - 165 St and 153 St. Additionally, there are pink dots at the intersections of Hillside Av and Merrick Blvd, and 153 St and Guy Brewer Blvd - 165 St. The map also shows bus stop icons for various bus lines: E, F, J, and Z.
+[p011_c0005] _+selectbusservice_
+[p011_c0006] _11_
+
+## Page 12
+
+### [p012_c0001] Sutphin Blvd On-Street Survey
+[p012_c0002] How did you get to Sutphin Boulevard?
+> [p012_c0003] A vertical stacked bar chart illustrating the distribution of transportation methods used to reach Sutphin Boulevard. The chart is divided into seven segments, each representing a different mode of transport. From top to bottom, the segments are: Other (1%), Walked from home (18%), Car service / taxi (3%), Car (20%), Long Island Rail Road (4%), Subway (27%), and Bus (27%). A legend to the right of the chart maps colors to these categories: Other (light grey), Walked from home (light green), Car service / taxi (light grey), Car (dark grey), Long Island Rail Road (light blue), Subway (dark blue), and Bus (dark blue). Transportation Method Percentage Other 1% Walked from home 18% Car service / taxi 3% Car 20% Long Island Rail Road 4% Subway 27% Bus 27%
+[p012_c0004] 58% of those surveyed use transit
+[p012_c0005] 1 in 4 drive
+[p012_c0006] _+selectbuservice_
+[p012_c0007] _12_
+
+## Page 13
+
+### [p013_c0001] Sutphin Blvd On-Street Survey
+[p013_c0002] If you drove, did you park on Sutphin Blvd?
+> [p013_c0003] A pie chart illustrating the results of the survey question 'If you drove, did you park on Sutphin Blvd?'. The chart is divided into two segments: a blue segment representing 'Yes' at 24% and a red segment representing 'No' at 76%. A legend below the chart identifies the colors: a blue square for 'Yes' and a red square for 'No'. Response Percentage Yes 24% No 76%
+[p013_c0004] If you drove, how many blocks away did you park?
+> [p013_c0005] A horizontal bar chart showing the distribution of parking distances from Sutphin Blvd for those who drove. The x-axis represents the percentage of respondents, and the y-axis represents the number of blocks away. The bars are blue, and the exact percentage is labeled at the end of each bar. Blocks Away Percentage 0 8% 1 36% 2 23% 3 11% 4 8% 5... 14%
+[p013_c0006] _+selectbusservice_
+[p013_c0007] _13_
+
+## Page 14
+
+### [p014_c0001] Q44 Bus Lane Proposal
+> [p014_c0002] A map of the Q44 Bus Lane Proposal in Flushing and Jamaica. The map shows the Q44 SBS Route (grey line) and Bus Lane Areas In Development (red line). The Bus Lane Areas In Development are highlighted in green. The map includes labels for Northern Blvd, Roosevelt Av, Flushing, Horace Harding Expy, Booth Memorial Av, Reeves Av, Jewel Av, 73 Av, Kew Gardens Hills, Union Tpk, Queens Blvd, Brianwood, Hillside Av, Jamaica Center, Merrick Blvd, Archer Av, 150 St, and Suprin Blvd. A legend in the top right corner identifies the Q44 SBS Route and Bus Lane Areas In Development. An arrow at the top left indicates the direction to the Bronx.
+[p014_c0003] Bus lanes from Reeves Av to Downtown Flushing
+[p014_c0004] Curbside bus lanes with midday parking in some areas of downtown Jamaica and Flushing
+[p014_c0005] _+selectbuservice_
+[p014_c0006] _14_
+
+## Page 15
+
+### [p015_c0001] SBS Improvements on Sutphin Blvd
+### [p015_c0002] Sutphin Blvd: Existing Regulations
+> [p015_c0003] An aerial map of Sutphin Blvd in New York City, showing the existing regulations for bus stops, no parking/standing, and metered parking. The map is overlaid with colored segments representing different regulations. A legend in the top right corner provides the following data: Regulation Percentage Bus Stops 45% No Parking/ Standing 12% Metered Parking (9AM-7PM) 43% The map shows the following street names: Hillside Av, 88th Av, 89th Av, 90th Av, Jamaica Av, 91st Av, and Archer Av. The colored segments are distributed along the length of Sutphin Blvd, with blue segments representing bus stops, red segments representing no parking/standing, and yellow segments representing metered parking.
+[p015_c0004] Bus stops occupy nearly half of the curb space on Sutphin Blvd
+[p015_c0005] Parking occupancy rates under 80% on blocks with metered parking
+[p015_c0006] _+selectbusservice_
+[p015_c0007] _15_
+
+## Page 16
+
+### [p016_c0001] Bus Lanes for Q44 SBS
+### [p016_c0002] Proposed Changes:
+[p016_c0003] Bus lane 6am-9am, 4pm-7pm on both sides of street
+[p016_c0004] Optional commercial loading midday if desired by BID
+[p016_c0005] Targeted Improvements on Hillside Av under development
+> [p016_c0006] The diagram illustrates a proposed street layout for Hillside Av. It shows a cross-section of the road with the following components from left to right: an East Sidewalk, a 10' Bus Lane (marked with a red 'BUS' sign), a 10' Travel Lane, another 10' Travel Lane, and a final 10' Bus Lane (marked with a red 'BUS' sign) leading to a West Sidewalk. A bus labeled 'SBS+' is shown in the left bus lane, and another bus is shown in the right bus lane. A car and a truck are shown in the travel lanes. A signpost on the right side of the road reads 'BUS LANE ALL TIMES BUSES ONLY S. RIGHT TURNS'. Pedestrians and trees are also depicted along the sidewalks.
+[p016_c0007] _+selectbusservice_
+[p016_c0008] _16_
+
+## Page 17
+
+### [p017_c0001] Bus Lanes for Q44 SBS
+### [p017_c0002] Proposed Changes:
+[p017_c0003] Bus lane 6am-9am, 4pm-7pm on both sides of street
+[p017_c0004] Optional commercial loading midday if desired by BID
+[p017_c0005] Targeted Improvements on Hillside Av under development
+> [p017_c0006] A photograph of a city street with a red-painted bus lane. The lane is bordered by a white line on the right and a curb on the left. A tree is visible on the left sidewalk. In the background, there are buildings, a bus stop, and a white van driving in the lane.
+[p017_c0007] _Example: Jamaica Avenue_
+[p017_c0008] _+selectbusservice_
+[p017_c0009] _17_
+
+## Page 18
+
+### [p018_c0001] Next Steps
+[p018_c0002] Additional traffic/parking analysis
+[p018_c0003] Ongoing outreach with merchants and other stakeholders
+[p018_c0004] Goals:
+- [p018_c0005] • Late Summer bus lane implementation • Fall Q44 SBS launch
+[p018_c0006] _+selectbuservice_
+[p018_c0007] _18_
+
+## Page 19
+
+> [p019_c0001] This map illustrates the proposed Bus Rapid Transit (BRT) corridors in New York City, categorized into Phase I and Phase II. The map includes a key, a north arrow, and a legend for subway lines and study areas. Key Phase II BRT Corridors (Red double-headed arrows) Phase I BRT Corridors (Green double-headed arrows) Study Area (Light green shaded area) Subway Line (Blue line) The map shows the following BRT Corridors: Phase I BRT Corridors (Green): Corridors A, B, C, E, F, and G. Corridor A is in the northeast, B and C are in the central-north area, E is a vertical corridor in the center, and F and G are in the south. Phase II BRT Corridors (Red): Corridors 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, and 17. These are distributed across the city, with many connecting to the Phase I corridors. Study Areas: Shaded in light green, these areas include the area around Corridor A, Corridor B, Corridor D, and Corridor E. Subway Lines: Represented by blue lines, they are shown throughout the city, with some lines intersecting the BRT corridors. North Arrow: Located in the bottom left corner of the map.
+[p019_c0002] _+selectbusservice_
+[p019_c0003] _19_

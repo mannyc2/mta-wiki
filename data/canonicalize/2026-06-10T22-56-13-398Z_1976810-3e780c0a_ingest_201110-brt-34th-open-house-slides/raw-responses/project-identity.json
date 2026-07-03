@@ -1,0 +1,48 @@
+{
+  "run_id": "2026-06-10T22-56-13-398Z_1976810-3e780c0a_ingest_201110-brt-34th-open-house-slides",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T01:51:30.148Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d01-34th-st-sbs-201110-self-resolve",
+        "local_observation_id": "project_34th_st_sbs_201110_open_house",
+        "decision": "new",
+        "rationale": "Observation base_record_id project_34th-st-sbs-2012 already matches the canonical registry record for 34th Street Select Bus Service. The observation's source (201110_brt_34th_open_house_slides) is already in that record's source_ids, and its alias project_34th-st-sbs-201110-open-house confirms the mapping. No different target_record_id applies — the observation already resolves to its own base.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_open_house_slides",
+            "block_id": "p001_c0001",
+            "source_quote": "34 th Street SBS Fall 2011 Open Houses"
+          },
+          {
+            "source_id": "201110_brt_34th_open_house_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "2011 planned improvements – Off-board fare collection – Bus lane camera enforcement • 2012 proposed design – Offset bus lanes – Bus bulbs and sidewalk extensions – Expanded loading zones"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "project_34th-street-2011",
+            "object_id": "project_34th-st-sbs-2012",
+            "description": "project_34th-street-2011 (34th Street Project, planning phase) and project_34th-st-sbs-2012 (34th Street Select Bus Service, design-and-construction phase) describe the same corridor initiative on 34th Street from Twelfth to First Avenue, sharing identical treatment elements: offset bus lanes, bus bulbs, sidewalk extensions, off-board fare collection, bus lane camera enforcement, and expanded loading zones.",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_open_house_slides",
+                "block_id": "p005_c0002",
+                "source_quote": "2011 planned improvements – Off-board fare collection – Bus lane camera enforcement • 2012 proposed design – Offset bus lanes – Bus bulbs and sidewalk extensions – Expanded loading zones"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-49-55-163Z_2111393-241c83b5_canonicalize_2026-06-10t22-56-13-398z-1976810-3e780c0a-ingest-201110-brt-34th-open-house-slides-project-identity"
+}

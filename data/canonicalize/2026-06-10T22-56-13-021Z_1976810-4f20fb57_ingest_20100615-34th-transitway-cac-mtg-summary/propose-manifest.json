@@ -1,0 +1,70 @@
+{
+  "run_id": "2026-06-10T22-56-13-021Z_1976810-4f20fb57_ingest_20100615-34th-transitway-cac-mtg-summary",
+  "generated_at": "2026-06-11T01:06:49.190Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 5,
+  "completed": 5,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 25,
+  "validated_decision_count": 15,
+  "quarantined_decision_count": 3,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T22-56-13-021Z_1976810-4f20fb57_ingest_20100615-34th-transitway-cac-mtg-summary",
+    "manifest": "data/canonicalize/2026-06-10T22-56-13-021Z_1976810-4f20fb57_ingest_20100615-34th-transitway-cac-mtg-summary/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T22-56-13-021Z_1976810-4f20fb57_ingest_20100615-34th-transitway-cac-mtg-summary/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T22-56-13-021Z_1976810-4f20fb57_ingest_20100615-34th-transitway-cac-mtg-summary/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T22-56-13-021Z_1976810-4f20fb57_ingest_20100615-34th-transitway-cac-mtg-summary/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 10,
+      "validated_decision_count": 9,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-021Z_1976810-4f20fb57_ingest_20100615-34th-transitway-cac-mtg-summary/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-46-257Z_2111393-5eae8d81_canonicalize_2026-06-10t22-56-13-021z-1976810-4f20fb57-ingest-20100615-34th-transitway-cac-mtg-summary-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-021Z_1976810-4f20fb57_ingest_20100615-34th-transitway-cac-mtg-summary/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-46-257Z_2111393-0c58381e_canonicalize_2026-06-10t22-56-13-021z-1976810-4f20fb57-ingest-20100615-34th-transitway-cac-mtg-summary-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-021Z_1976810-4f20fb57_ingest_20100615-34th-transitway-cac-mtg-summary/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-46-257Z_2111393-01d2792b_canonicalize_2026-06-10t22-56-13-021z-1976810-4f20fb57-ingest-20100615-34th-transitway-cac-mtg-summary-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 5,
+      "validated_decision_count": 5,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-021Z_1976810-4f20fb57_ingest_20100615-34th-transitway-cac-mtg-summary/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-46-257Z_2111393-7876d472_canonicalize_2026-06-10t22-56-13-021z-1976810-4f20fb57-ingest-20100615-34th-transitway-cac-mtg-summary-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-021Z_1976810-4f20fb57_ingest_20100615-34th-transitway-cac-mtg-summary/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-46-257Z_2111393-75788725_canonicalize_2026-06-10t22-56-13-021z-1976810-4f20fb57-ingest-20100615-34th-transitway-cac-mtg-summary-relation-linker"
+    }
+  ]
+}

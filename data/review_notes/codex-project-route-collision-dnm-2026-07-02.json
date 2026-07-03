@@ -1,0 +1,111 @@
+{
+  "note_id": "codex-project-route-collision-dnm-2026-07-02",
+  "created_at": "2026-07-02",
+  "mode": "codex_only_deterministic",
+  "external_provider_llms_used": false,
+  "forbidden_commands_used": [],
+  "bucket": "route/project duplicate-looking display-label collisions",
+  "subagents": [
+    {
+      "agent_id": "019f205b-3554-7081-ba6b-90351cb91636",
+      "role": "bounded_read_only_route_project_collision_audit",
+      "status": "closed",
+      "finding": "No high-confidence deterministic route/project merges. Found five high-confidence project do-not-merge pairs and one deferred 20-Year Needs Assessment pair requiring source-date/scope review."
+    }
+  ],
+  "baseline": {
+    "routes": 319,
+    "projects": 1859,
+    "exact_normalized_display_label_collisions": {
+      "route": 0,
+      "project": 0
+    },
+    "conservative_rough_display_label_collisions": {
+      "route_groups": 0,
+      "project_groups": 4,
+      "project_records": 9,
+      "project_pairs": 6
+    },
+    "project_do_not_merge_pairs_before": 65,
+    "route_do_not_merge_pairs_before": 68
+  },
+  "implemented_changes": [
+    {
+      "change": "Added five project do-not-merge guards for high-confidence distinct period/year/segment records.",
+      "file": "data/identity-overrides/do-not-merge.json",
+      "pairs": [
+        {
+          "record_ids": [
+            "project_2020-2024-mta-capital-program",
+            "project_meeting-151656-capital-program-2025-2029"
+          ],
+          "reason": "Different capital-program periods and scopes."
+        },
+        {
+          "record_ids": [
+            "project_2024-nyct-committee-work-plan",
+            "project_2025-nyct-committee-work-plan"
+          ],
+          "reason": "Distinct annual NYCT committee work plans."
+        },
+        {
+          "record_ids": [
+            "project_2024-nyct-committee-work-plan",
+            "project_2026-nyct-committee-work-plan"
+          ],
+          "reason": "Distinct annual NYCT committee work plans."
+        },
+        {
+          "record_ids": [
+            "project_2025-nyct-committee-work-plan",
+            "project_2026-nyct-committee-work-plan"
+          ],
+          "reason": "Distinct annual NYCT committee work plans."
+        },
+        {
+          "record_ids": [
+            "project_victory-blvd-transit-safety-cb1",
+            "project_victory-blvd-transit-safety-cb2"
+          ],
+          "reason": "Same corridor family but different community-board/segment scopes."
+        }
+      ]
+    }
+  ],
+  "after": {
+    "project_do_not_merge_pairs_after": 70,
+    "route_do_not_merge_pairs_after": 68,
+    "project_do_not_merge_delta": 5
+  },
+  "deferred": [
+    {
+      "record_ids": [
+        "project_121696-20yr-needs-assessment",
+        "project_mta-20-year-needs-assessment-2025-2044"
+      ],
+      "reason": "Possible lifecycle/edition relation, but not deterministic from payload alone. Needs source-date/scope review before aliasing or guarding."
+    }
+  ],
+  "verification": {
+    "json_parse": {
+      "command": "jq empty data/identity-overrides/do-not-merge.json",
+      "result": "pass"
+    },
+    "materialize": {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "pass",
+      "materialized_submissions": "93067/98115",
+      "retired_submissions_skipped": 265,
+      "pages": 7335,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass",
+      "issues": 0,
+      "submissions": 98115,
+      "canonical_records": 84027,
+      "wiki_pages": 7331
+    }
+  }
+}

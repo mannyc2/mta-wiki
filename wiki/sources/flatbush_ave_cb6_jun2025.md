@@ -1,0 +1,345 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_flatbush-ave-cb6-jun2025"
+record_kind: "source"
+display_name: "Flatbush Ave Bus Priority - CB6 June 2025"
+source_id: "flatbush_ave_cb6_jun2025"
+source_ids:
+  - "flatbush_ave_cb6_jun2025"
+local_observation_id: "source_flatbush_ave_cb6_jun2025"
+local_observation_ids:
+  - "source_flatbush_ave_cb6_jun2025"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T18:40:58.121Z"
+submission_ids:
+  - "sub_a37a79dfb9e7c766"
+payload:
+  authority_tier: "board_material"
+  content_type: "presentation"
+  date_text: "June 18, 2025"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2025-06-18"
+    precision: "day"
+    raw_text: "June 18, 2025"
+  description: "Presentation to Community Board 6 Transportation, Parks, and Public Infrastructure Committee about bus priority improvements on Flatbush Avenue"
+  published_date_normalized: "2025-06-18"
+  published_date_precision: "day"
+  publisher: "NYC DOT"
+  title: "Flatbush Ave Bus Priority"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "flatbush_ave_cb6_jun2025#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "flatbush_ave_cb6_jun2025"
+    source_path: "raw/sources/flatbush_ave_cb6_jun2025/blocks.jsonl"
+    text_sha256: "sha256:ba341abe7fb1fd3b6a8ba54f018777f1502585ac09dfaea012db410a4d05da1d"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "flatbush_ave_cb6_jun2025#p001_c0002"
+    page_number: 1
+    role: "audience"
+    source_id: "flatbush_ave_cb6_jun2025"
+    source_path: "raw/sources/flatbush_ave_cb6_jun2025/blocks.jsonl"
+    text_sha256: "sha256:d6fb95b18599d82a88b6212445d1d19db48bed04a8acafaa7805b007096c8045"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "flatbush_ave_cb6_jun2025#p001_c0003"
+    page_number: 1
+    role: "date"
+    source_id: "flatbush_ave_cb6_jun2025"
+    source_path: "raw/sources/flatbush_ave_cb6_jun2025/blocks.jsonl"
+    text_sha256: "sha256:bce71bf0fb1f6d44abffc5ba5e2e42a2037be5e2490b6c7be6b805490f523739"
+    text_source: "raw_text"
+---
+
+# Flatbush Avenue Bus Priority - presented to Brooklyn Community Board 6's Transportation Committee in June 2025 (pdf)
+
+source_id: flatbush_ave_cb6_jun2025
+citation: cite block ids exactly as shown in square brackets
+document: 190 block(s)
+
+## Page 1
+
+### [p001_c0001] Flatbush Ave Bus Priority
+[p001_c0002] Presentation to Community Board 6 Transportation, Parks, and Public Infrastructure Committee
+[p001_c0003] June 18, 2025
+> [p001_c0004] A photograph of a blue MTA bus (B41 Limited) stopped at a bus stop on Flatbush Avenue. The bus is numbered 7963 and has 'B41 LIMITED' displayed on its destination sign. A group of people, including children and adults, are waiting at the bus stop. The background shows a city street with buildings, trees, and a clear sky.
+> [p001_c0005] The MTA logo, consisting of the letters 'MTA' in a stylized font inside a circle.
+[p001_c0006] BETTERBUSES
+> [p001_c0007] The New York City Department of Transportation (NYC DOT) logo, featuring the text 'NEW YORK CITY' above a stylized 'DOT'.
+
+## Page 2
+
+### [p002_c0001] Table of Contents
+- [p002_c0002] 1. Vision 2. How We Got Here 3. Proposal 4. Making It Work 5. Summary and Next Steps
+[p002_c0003] _2_
+[p002_c0004] _The MTA logo, consisting of the letters 'MTA' in white inside a dark blue circle._
+[p002_c0005] _The BETTERBUSES logo, with 'BETTER' in blue and 'BUSES' in green._
+[p002_c0006] _The New York City Department of Transportation (NYC DOT) logo, featuring the text 'NEW YORK CITY' above 'DOT' and a stylized graphic of a bus._
+
+## Page 3
+
+### [p003_c0001] Vision
+[p003_c0002] 1
+[p003_c0003] _3_
+[p003_c0004] _The MTA logo, consisting of the letters 'MTA' in white inside a black circle._
+[p003_c0005] _The BETTERBUSES logo, with 'BETTER' in blue and 'BUSES' in green._
+[p003_c0006] _The New York City Department of Transportation (NYC DOT) logo, featuring the text 'NEW YORK CITY' above 'DOT' and a stylized graphic of a bus._
+
+## Page 4
+
+### [p004_c0001] High Ridership & Slow Speeds
+- [p004_c0002] • 132,000 daily riders on 12 bus routes where buses often crawl at speeds as slow as 4 mph • 59% of households with no access to a private vehicle • Buses primarily serve Black, female, and low-income workers (Pratt Center Study) • Over half of workers—51%—reported being reprimanded, docked pay, or even fired due to bus service delays (Pratt Center Study) • Nearly 40% of all B41 trips start, end, or travel through the project area. Of those B41 trips, 80% begin or end south of Grand Army Plaza
+> [p004_c0003] A photograph of a blue MTA B41 Limited bus (number 7963) stopped at a bus stop. The bus's destination sign reads "B41 LIMITED" and "252". Several people are boarding the bus, including a man in a white t-shirt and backpack, a woman in a blue beanie, and a woman in a black dress. To the left, a green signpost displays bus routes B41, B69, and B41 E, with destinations like Kings Plaza/Bergen Beach and Downtown Brooklyn. A white van is visible in the background on the street. In the foreground, the top of a dark car and a scooter are partially visible.
+[p004_c0004] _4_
+
+## Page 5
+
+> [p005_c0001] A photograph of a busy city street in Flatbush, Brooklyn, during the day. In the foreground, a dark blue Mazda CX-5 is driving towards the viewer in the left lane. To its right, a red Coldstone Catering truck is driving away, followed by a dark red Toyota Land Cruiser SUV. The street is lined with various commercial buildings, including one with a 'CLEANERS' sign and another with a 'NO JUDGMENT NO LIMITS' sign. A traffic light is visible above the intersection, showing a green light. Pedestrians are walking on the sidewalk to the right. The street has white lane markings and a 'ONE WAY' sign. In the background, there are more buildings and trees.
+### [p005_c0002] Commercial Hub
+- [p005_c0003] • Critical corridor for jobs, shopping, medical appointments, education, and entertainment • Flatbush Ave is a designated truck route and vital freight corridor • Small businesses with loading needs along the corridor
+[p005_c0004] _5_
+[p005_c0005] _The logo for the Metropolitan Transportation Authority (MTA), featuring the letters 'MTA' in a bold, sans-serif font inside a dark circle._
+[p005_c0006] _The logo for 'BETTERBUSES', with the word 'BETTER' in blue and 'BUSES' in green, separated by a stylized blue and green graphic._
+[p005_c0007] _The logo for the New York City Department of Transportation (NYC DOT), featuring the text 'NEW YORK CITY' above the letters 'DOT' in a stylized, blocky font._
+
+## Page 6
+
+### [p006_c0001] High Pedestrian Volumes & Traffic Safety Issues
+- [p006_c0002] • Wide street with long crossing distances and many turning conflicts • Vision Zero Priority corridor with 11 Vision Zero Priority Intersections • 55 people killed or severely injured since 2019
+[p006_c0003] _6_
+
+## Page 7
+
+### [p007_c0001] Concept Proposal – Reimagined Flatbush Avenue
+[p007_c0002] New pedestrian spaces and shorter crossing distances to improve safety, comfort, and neighborhood connectivity
+[p007_c0003] Less space for traffic, more space for people and transit
+[p007_c0004] High-performing transit priority street connecting Brooklyn neighborhoods
+[p007_c0005] _7 BETTERBUSES_
+[p007_c0006] _NEW YORK CITY DOT_
+
+## Page 8
+
+### [p008_c0001] How We Got Here
+[p008_c0002] 2
+[p008_c0003] _8_
+[p008_c0004] _The MTA logo, consisting of the letters "MTA" in white inside a black circle._
+[p008_c0005] _The BETTERBUSES logo, with "BETTER" in blue and "BUSES" in green, separated by a stylized blue and green graphic._
+[p008_c0006] _The New York City Department of Transportation (NYC DOT) logo, featuring the text "NEW YORK CITY" above "DOT" and a stylized graphic of a bus._
+
+## Page 9
+
+### [p009_c0001] Project Extents & Future Phasing
+- [p009_c0002] • Current round of design options will focus on Downtown Brooklyn/ Northern Flatbush section of the corridor from Livingston St to Grand Army Plaza – Slowest bus speeds on the corridor – 69,000 average daily bus riders on 6 MTA bus routes use this section of Flatbush Ave • Bus priority improvements on this section would benefit riders throughout the corridor • DOT plans to study bus priority treatments in other sections of the corridor in future phases
+> [p009_c0003] A map of the Flatbush corridor in Brooklyn, New York. The map shows a grid of streets and major highways. A highlighted route is shown in three colors: blue for the segment from Livingston Street to Atlantic Ave, green for the segment from Atlantic Ave to Linden Blvd, and orange for the segment from Linden Blvd to Avenue U. Labels on the map include Livingston Street, Atlantic Ave, Eastern Pkwy, Empire Blvd, Linden Blvd, Avenue D, Kings Hwy, Flatlands Ave, and Avenue U. The map also shows the location of Lower New York Bay and Long Island. Two callout boxes with arrows point to the highlighted route: one points to the blue segment and is labeled 'Livingston Street', and the other points to the green segment and is labeled 'Grand Army Plaza'.
+[p009_c0004] _9_
+
+## Page 10
+
+### [p010_c0001] Public Outreach to Date
+### [p010_c0002] Kick-Off Meetings
+- [p010_c0003] • Public Town Hall (June 2022) • Mayoral Bus Ride with Rider's Alliance (August 2022) • Presentations to elected officials, CBs, stakeholders (2022 – 2023) • Surveyed 166 merchants on Flatbush, between Parkside Ave and Avenue D (November 2022) • Community Advisory Board Meeting 1 (November 2022)
+### [p010_c0004] Present Design Options for Northern Section
+- [p010_c0005] • Community Advisory Board Meeting 2 (June 2024) • CBs 2, 6, 8 (June 2024) • Meetings with North Flatbush BID, Downtown Brooklyn Partnership (2024 – 2025) • Surveyed 78 businesses and 185 pedestrians on Flatbush, between Atlantic Ave and Grand Army Plaza (July 2024) • Received 105 feedback submissions at Brooklyn Open Streets (August 2024) • Spoke with 118 riders in citywide Bus Boarding Island survey (2024-2025)
+[p010_c0006] _Flatbush Ave Bus Rally_
+[p010_c0007] _10_
+
+## Page 11
+
+### [p011_c0001] What We've Heard
+### [p011_c0002] Collected feedback from:
+- [p011_c0003] • Meetings with Community Boards, Business Improvement Districts, elected officials • Conducted 185 pedestrian surveys, 118 bus boarding island surveys, 78 business surveys
+### [p011_c0004] Common feedback:
+- [p011_c0005] • Bus performance: • Bus is too slow; wait times are too long; service is not reliable • Double parking slows down the bus • Sometimes faster to walk than take the bus • Pedestrian safety: • Flatbush does not feel safe for pedestrians • Uncomfortable crossing the street • Heavy traffic causes noise and air pollution • Curb access for businesses: • Double parked vehicles obstruct traffic flow and pedestrian crossings • Truck drivers often double park far from businesses to make deliveries
+[p011_c0006] _11_
+
+## Page 12
+
+### [p012_c0001] Design Concepts Studied
+### [p012_c0002] June 2024 Outreach
+- [p012_c0003] • DOT presented three design concepts for the northern segment of Flatbush Ave • Curbside Bus Lanes: • Converts parking lane to bus lane • Removes curb access for businesses • Bus lanes more likely to be blocked from illegal parking • Offset Bus Lanes: • Converts rightmost travel lane to bus lane • Maintains curb access for businesses • Bus lanes may still be blocked from double parking • Public realm improvements not as drastic as center-running concept • Center-Running Bus Lanes: • Converts center travel lane to bus lane • Minimizes bus-vehicle conflicts as well as bus blockages • New bus stop islands double as pedestrian refuge islands to enhance safety and comfort of the pedestrian experience • Same traffic capacity reduction as offset bus lanes but includes greater public realm and safety benefits
+[p012_c0004] _Curbside Bus Lanes: Church Ave, Brooklyn_
+[p012_c0005] _Offset Bus Lanes: 21st St, Queens_
+[p012_c0006] _Center-Running Bus Lanes, E.L. Grant, Bronx_
+[p012_c0007] _12_
+
+## Page 13
+
+### [p013_c0001] Why Center-Running Bus Lanes?
+- [p013_c0002] • Provides physically-separated space for buses in the middle of the roadway • Center-running lanes dramatically increase bus speeds with similar effects on traffic as an offset bus lane • Bus boarding islands increase safety by shortening crossing distances and providing pedestrian refuge, and providing near-level boarding • Minimizes bus-vehicle conflicts as well as bus lane blockages • Improves business access compared to curbside lanes and reduces incidences of double parking • Near level boarding platforms create high quality transit experience for riders that resembles train service. Bus riders, including seniors, report that bus boarding islands make service faster and are easy to access ( DOT Bus Boarding Island Survey 2024-2025 ) • Enhances the public realm : adds more pedestrian space, calms traffic, and makes Flatbush Ave a more inviting destination and major hub
+[p013_c0003] _E. Gun Hill Rd, Bronx_
+### [p013_c0004] What do you like about this bus boarding island? (Answers from DOT Survey)
+- [p013_c0005] • “Accessible and not as far as the old stop” • “It feels safer “ • “Buses are faster” • “Safer and easier” • “Feels more comfortable”
+[p013_c0006] _13_
+[p013_c0007] _BETTERBUSES_
+
+## Page 14
+
+### [p014_c0001] Traffic Analysis
+- [p014_c0002] • DOT undertook an extensive traffic analysis process, including: • Data collection at all intersections on Flatbush Ave as well as adjacent critical intersections • Extensive modeling per traffic engineering standards to determine the potential effects of installing a bus lane • Origin-Destination analyses to determine where vehicles are going and where they might divert to in a future bus lane scenario • Analysis and outreach informed the decision to pursue the center-running bus lane design
+> [p014_c0003] A map titled "Traffic Model" showing a detailed view of Flatbush Avenue and its surrounding streets. The map is set against a green background. Flatbush Avenue runs diagonally from the top-left to the bottom-right. Other streets shown include Atlantic Ave, Pacific Ave, Fort Greene Pl, S Portland Ave, 4th St, 5th St, 6th St, 7th St, 8th St, 9th St, 10th St, 11th St, 12th St, 13th St, 14th St, 15th St, 16th St, 17th St, 18th St, 19th St, 20th St, 21st St, 22nd St, 23rd St, 24th St, 25th St, 26th St, 27th St, 28th St, 29th St, 30th St, 31st St, 32nd St, 33rd St, 34th St, 35th St, 36th St, 37th St, 38th St, 39th St, 40th St, 41st St, 42nd St, 43rd St, 44th St, 45th St, 46th St, 47th St, 48th St, 49th St, 50th St, 51st St, 52nd St, 53rd St, 54th St, 55th St, 56th St, 57th St, 58th St, 59th St, 60th St, 61st St, 62nd St, 63rd St, 64th St, 65th St, 66th St, 67th St, 68th St, 69th St, 70th St, 71st St, 72nd St, 73rd St, 74th St, 75th St, 76th St, 77th St, 78th St, 79th St, 80th St, 81st St, 82nd St, 83rd St, 84th St, 85th St, 86th St, 87th St, 88th St, 89th St, 90th St, 91st St, 92nd St, 93rd St, 94th St, 95th St, 96th St, 97th St, 98th St, 99th St, 100th St, 101st St, 102nd St, 103rd St, 104th St, 105th St, 106th St, 107th St, 108th St, 109th St, 110th St, 111th St, 112th St, 113th St, 114th St, 115th St, 116th St, 117th St, 118th St, 119th St, 120th St, 121st St, 122nd St, 123rd St, 124th St, 125th St, 126th St, 127th St, 128th St, 129th St, 130th St, 131st St, 132nd St, 133rd St, 134th St, 135th St, 136th St, 137th St, 138th St, 139th St, 140th St, 141st St, 142nd St, 143rd St, 144th St, 145th St, 146th St, 147th St, 148th St, 149th St, 150th St, 151st St, 152nd St, 153rd St, 154th St, 155th St, 156th St, 157th St, 158th St, 159th St, 160th St, 161st St, 162nd St, 163rd St, 164th St, 165th St, 166th St, 167th St, 168th St, 169th St, 170th St, 171st St, 172nd St, 173rd St, 174th St, 175th St, 176th St, 177th St, 178th St, 179th St, 180th St, 181st St, 182nd St, 183rd St, 184th St, 185th St, 186th St, 187th St, 188th St, 189th St, 190th St, 191st St, 192nd St, 193rd St, 194th St, 195th St, 196th St, 197th St, 198th St, 199th St, 200th St, 201st St, 202nd St, 203rd St, 204th St, 205th St, 206th St, 207th St, 208th St, 209th St, 210th St, 211st St, 212nd St, 213rd St, 214th St, 215th St, 216th St, 217th St, 218th St, 219th St, 220th St, 221st St, 222nd St, 223rd St, 224th St, 225th St, 226th St, 227th St, 228th St, 229th St, 230th St, 231st St, 232nd St, 233rd St, 234th St, 235th St, 236th St, 237th St, 238th St, 239th St, 240th St, 241st St, 242nd St, 243rd St, 244th St, 245th St, 246th St, 247th St, 248th St, 249th St, 250th St, 251st St, 252nd St, 253rd St, 254th St, 255th St, 256th St, 257th St, 258th St, 259th St, 260th St, 261st St, 262nd St, 263rd St, 264th St, 265th St, 266th St, 267th St, 268th St, 269th St, 270th St, 271st St, 272nd St, 273rd St, 274th St, 275th St, 276th St, 277th St, 278th St, 279th St, 280th St, 281st St, 282nd St, 283rd St, 284th St, 285th St, 286th St, 287th St, 288th St, 289th St, 290th St, 291st St, 292nd St, 293rd St, 294th St, 295th St, 296th St, 297th St, 298th St, 299th St, 300th St, 301st St, 302nd St, 303rd St, 304th St, 305th St, 306th St, 307th St, 308th St, 309th St, 310th St, 311st St, 312nd St, 313rd St, 314th St, 315th St, 316th St, 317th St, 318th St, 319th St, 320th St, 321st St, 322nd St, 323rd St, 324th St, 325th St, 326th St, 327th St, 328th St, 329th St, 330th St, 331st St, 332nd St, 333rd St, 334th St, 335th St, 336th St, 337th St, 338th St, 339th St, 340th St, 341st St, 342nd St, 343rd St, 344th St, 345th St, 346th St, 347th St, 348th St, 349th St, 350th St, 351st St, 352nd St, 353rd St, 354th St, 355th St, 356th St, 357th St, 358th St, 359th St, 360th St, 361st St, 362nd St, 363rd St, 364th St, 365th St, 366th St, 367th St, 368th St, 369th St, 370th St, 371st St, 372nd St, 373rd St, 374th St, 375th St, 376th St, 377th St, 378th St, 379th St, 380th St, 381st St, 382nd St, 383rd St, 384th St, 385th St, 386th St, 387th St, 388th St, 389th St, 390th St, 391st St, 392nd St, 393rd St, 394th St, 395th St, 396th St, 397th St, 398th St, 399th St, 400th St, 401st St, 402nd St, 403rd St, 404th St, 405th St, 406th St, 407th St, 408th St, 409th St, 410th St, 411st St, 412nd St, 413rd St, 414th St, 415th St, 416th St, 417th St, 418th St, 419th St, 420th St, 421st St, 422nd St, 423rd St, 424th St, 425th St, 426th St, 427th St, 428th St, 429th St, 430th St, 431st St, 432nd St, 433rd St, 434th St, 435th St, 436th St, 437th St, 438th St, 439th St, 440th St, 441st St, 442nd St, 443rd St, 444th St, 445th St, 446th St, 447th St, 448th St, 449th St, 450th St, 451st St, 452nd St, 453rd St, 454th St, 455th St, 456th St, 457th St, 458th St, 459th St, 460th St, 461st St, 462nd St, 463rd St, 464th St, 465th St, 466th St, 467th St, 468th St, 469th St, 470th St, 471st St, 472nd St, 473rd St, 474th St, 475th St, 476th St, 477th St, 478th St, 479th St, 480th St, 481st St, 482nd St, 483rd St, 484th St, 485th St, 486th St, 487th St, 488th St, 489th St, 490th St, 491st St, 492nd St, 493rd St, 494th St, 495th St, 496th St, 497th St, 498th St, 499th St, 500th St, 501st St, 502nd St, 503rd St, 504th St, 505th St, 506th St, 507th St, 508th St, 509th St, 510th St, 511st St, 512nd St, 513rd St, 514th St, 515th St, 516th St, 517th St, 518th St, 519th St, 520th St, 521st St, 522nd St, 523rd St, 524th St, 525th St, 526th St, 527th St, 528th St, 529th St, 530th St, 531st St, 532nd St, 533rd St, 534th St, 535th St, 536th St, 537th St, 538th St, 539th St, 540th St, 541st St, 542nd St, 543rd St, 544th St, 545th St, 546th St, 547th St, 548th St, 549th St, 550th St, 551st St, 552nd St, 553rd St, 554th St, 555th St, 556th St, 557th St, 558th St, 559th St, 560th St, 561st St, 562nd St, 563rd St, 564th St, 565th St, 566th St, 567th St, 568th St, 569th St, 570th St, 571st St, 572nd St, 573rd St, 574th St, 575th St, 576th St, 577th St, 578th St, 579th St, 580th St, 581st St, 582nd St, 583rd St, 584th St, 585th St, 586th St, 587th St, 588th St, 589th St, 590th St, 591st St, 592nd St, 593rd St, 594th St, 595th St, 596th St, 597th St, 598th St, 599th St, 600th St, 601st St, 602nd St, 603rd St, 604th St, 605th St, 606th St, 607th St, 608th St, 609th St, 610th St, 611st St, 612nd St, 613rd St, 614th St, 615th St, 616th St, 617th St, 618th St, 619th St, 620th St, 621st St, 622nd St, 623rd St, 624th St, 625th St, 626th St, 627th St, 628th St, 629th St, 630th St, 631st St, 632nd St, 633rd St, 634th St, 635th St, 636th St, 637th St, 638th St, 639th St, 640th St, 641st St, 642nd St, 643rd St, 644th St, 645th St, 646th St, 647th St, 648th St, 649th St, 650th St, 651st St, 652nd St, 653rd St, 654th St, 655th St, 656th St, 657th St, 658th St, 659th St, 660th St, 661st St, 662nd St, 663rd St, 664th St, 665th St, 666th St, 667th St, 668th St, 669th St, 670th St, 671st St, 672nd St, 673rd St, 674th St, 675th St, 676th St, 677th St, 678th St, 679th St, 680th St, 681st St, 682nd St, 683rd St, 684th St, 685th St, 686th St, 687th St, 688th St, 689th St, 690th St, 691st St, 692nd St, 693rd St, 694th St, 695th St, 696th St, 697th St, 698th St, 699th St, 700th St, 701st St, 702nd St, 703rd St, 704th St, 705th St, 706th St, 707th St, 708th St, 709th St, 710th St, 711st St, 712nd St, 713rd St, 714th St, 715th St, 716th St, 717th St, 718th St, 719th St, 720th St, 721st St, 722nd St, 723rd St, 724th St, 725th St, 726th St, 727th St, 728th St, 729th St, 730th St, 731st St, 732nd St, 733rd St, 734th St, 735th St, 736th St, 737th St, 738th St, 739th St, 740th St, 741st St, 742nd St, 743rd St, 744th St, 745th St, 746th St, 747th St, 748th St, 749th St, 750th St, 751st St, 752nd St, 753rd St, 754th St, 755th St, 756th St, 757th St, 758th St, 759th St, 760th St, 761st St, 762nd St, 763rd St, 764th St, 765th St, 766th St, 767th St, 768th St, 769th St, 770th St, 771st St, 772nd St, 773rd St, 774th St, 775th St, 776th St, 777th St, 778th St, 779th St, 780th St, 781st St, 782nd St, 783rd St, 784th St, 785th St, 786th St, 787th St, 788th St, 789th St, 790th St, 791st St, 792nd St, 793rd St, 794th St, 795th St, 796th St, 797th St, 798th St, 799th St, 800th St, 801st St, 802nd St, 803rd St, 804th St, 805th St, 806th St, 807th St, 808th St, 809th St, 810th St, 811st St, 812nd St, 813rd St, 814th St, 815th St, 816th St, 817th St, 818th St, 819th St, 820th St, 821st St, 822nd St, 823rd St, 824th St, 825th St, 826th St, 827th St, 828th St, 829th St, 830th St, 831st St, 832nd St, 833rd St, 834th St, 835th St, 836th St, 837th St, 838th St, 839th St, 840th St, 841st St, 842nd St, 843rd St, 844th St, 845th St, 846th St, 847th St, 848th St, 849th St, 850th St, 851st St, 852nd St, 853rd St, 854th St, 855th St, 856th St, 857th St, 858th St, 859th St, 860th St, 861st St, 862nd St, 863rd St, 864th St, 865th St, 866th St, 867th St, 868th St, 869th St, 870th St, 871st St, 872nd St, 873rd St, 874th St, 875th St, 876th St, 877th St, 878th St, 879th St, 880th St, 881st St, 882nd St, 883rd St, 884th St, 885th St, 886th St, 887th St, 888th St, 889th St, 890th St, 891st St, 892nd St, 893rd St, 894th St, 895th St, 896th St, 897th St, 898th St, 899th St, 900th St, 901st St, 902nd St, 903rd St, 904th St, 905th St, 906th St, 907th St, 908th St, 909th St, 910th St, 911st St, 912nd St, 913rd St, 914th St, 915th St, 916th St, 917th St, 918th St, 919th St, 920th St, 921st St, 922nd St, 923rd St, 924th St, 925th St, 926th St, 927th St, 928th St, 929th St, 930th St, 931st St, 932nd St, 933rd St, 934th St, 935th St, 936th St, 937th St, 938th St, 939th St, 940th St, 941st St, 942nd St, 943rd St, 944th St, 945th St, 946th St, 947th St, 948th St, 949th St, 950th St, 951st St, 952nd St, 953rd St, 954th St, 955th St, 956th St, 957th St, 958th St, 959th St, 960th St, 961st St, 962nd St, 963rd St, 964th St, 965th St, 966th St, 967th St, 968th St, 969th St, 970th St, 971st St, 972nd St, 973rd St, 974th St, 975th St, 976th St, 977th St, 978th St, 979th St, 980th St, 981st St, 982nd St, 983rd St, 984th St, 985th St, 986th St, 987th St, 988th St, 989th St, 990th St, 991st St, 992nd St, 993rd St, 994th St, 995th St, 996th St, 997th St, 998th St, 999th St, 1000th St.
+> [p014_c0004] A map titled "Origin-Destination Analysis" showing a street grid. A blue callout box with a black arrow points to a specific location on Flatbush Avenue. The text in the callout box reads: "Top routes used by all vehicles travelling southbound on Flatbush Ave between Livingston St & Lafayette Ave". The map shows various colored lines representing different vehicle routes, with a prominent red line indicating the top route. The map is set against a light gray background with green street lines. The text "Origin-Destination Analysis" is written in the bottom right corner of the map area.
+[p014_c0005] _14_
+
+## Page 15
+
+### [p015_c0001] Community Support
+### [p015_c0002] Support for bus priority improvements on Flatbush Ave, including center-running bus lanes
+- [p015_c0003] • Councilmembers Hanif, Hudson, Restler, and Joseph request center-running design • 1199 SEIU; Brooklyn Botanic Garden; Flatbush Streets for People; Flatbush Development Corporation; Haitian American Caucus; TWU Local 100; LIUNA Local 1010; New York Communities for Change; Pratt Center; Prospect Park Alliance; NYPIRG, Transportation Alternatives, Riders Alliance request bus priority improvements on Flatbush Ave
+[p015_c0004] Fast, reliable bus service must be the linchpin of a city that works better for everyone, every worker, every family, and every neighborhood. Accordingly, we respectfully request that you create center-running bus lanes on Flatbush Avenue this year. Flatbush has been fully vetted by stakeholders. There is broad agreement that buses should move faster. New Yorkers across our economy will benefit once they do.
+[p015_c0005] Sincerely,
+[p015_c0006] _Councilmember Shahana Hanif_
+[p015_c0007] _Councilmember Crystal Hudson_
+[p015_c0008] _Councilmember Lincoln Restler_
+[p015_c0009] _Councilmember Rita Joseph_
+### [p015_c0010] BETTER BUSES FOR FLATBUSH AVENUE:
+### [p015_c0011] PARTICIPATORY ACTION RESEARCH REPORT
+[p015_c0012] _15_
+
+## Page 16
+
+### [p016_c0001] Proposal
+[p016_c0002] 3
+[p016_c0003] _16_
+[p016_c0004] _The MTA logo, consisting of the letters 'MTA' in white inside a black circle._
+[p016_c0005] _The BETTERBUSES logo, with 'BETTER' in blue and 'BUSES' in green._
+[p016_c0006] _The NEW YORK CITY DOT logo, featuring the text 'NEW YORK CITY' above 'DOT' and a stylized 'DOT' graphic._
+
+## Page 17
+
+### [p017_c0001] Existing – Flatbush Ave and 4 th Ave
+[p017_c0002] Car-centric thoroughfare leading to high levels of congestion and traffic injuries
+[p017_c0003] Long crossing distances creating uncomfortable conditions for pedestrians
+[p017_c0004] Insufficient pedestrian space for major transportation and destination hub at Atlantic Terminal and Barclay's Center
+[p017_c0005] _17_
+[p017_c0006] _BETTERBUSES_
+
+## Page 18
+
+### [p018_c0001] Proposed – Flatbush Ave and 4 th Ave
+> [p018_c0002] Curbside Lane General Travel Lane Bus Boarding Islands at Bus Stops Center-Running Bus Lanes General Travel Lane Bus islands create near level boarding, making the bus easier to access with a more defined station-like area New pedestrian spaces with shorter crossing distances and refuge spaces
+[p018_c0003] _18_
+[p018_c0004] _BETTERBUSES_
+
+## Page 19
+
+### [p019_c0001] Existing – Flatbush Ave and Prospect Pl
+[p019_c0002] No dedicated space for transit
+[p019_c0003] Traffic congestion
+[p019_c0004] Long crossing distances
+[p019_c0005] _19_
+[p019_c0006] _BETTERBUSES_
+
+## Page 20
+
+### [p020_c0001] Proposed – Flatbush Ave and Prospect Pl
+> [p020_c0002] Curbside Parking/Loading, Curb Extension General Travel Lane Center-Running Bus Lanes General Travel Lane Curbside Parking/Loading, Curb Extension Painted curb extensions add pedestrian space and calm traffic at intersections to increase safety Opportunities for greenery in curb extensions with maintenance partners Center-running bus lanes allow buses to move freely without conflicts with traffic or double-parked vehicles
+[p020_c0003] _20_
+
+## Page 21
+
+### [p021_c0001] Existing – Flatbush Ave and Park Pl
+[p021_c0002] No dedicated space for transit
+[p021_c0003] Traffic congestion
+[p021_c0004] Long crossing distances
+[p021_c0005] _21_
+[p021_c0006] _BETTERBUSES_
+
+## Page 22
+
+### [p022_c0001] Proposed – Flatbush Ave and Park Pl
+> [p022_c0002] General Travel Lane Center-Running Bus Lanes General Travel Lane Bus Boarding Islands at Bus Stops New pedestrian spaces with shorter crossing distances and refuge spaces Bus islands create near level boarding, making the bus easier to access with a more defined station-like area
+[p022_c0003] _22_
+
+## Page 23
+
+### [p023_c0001] Making It Work
+[p023_c0002] 4
+[p023_c0003] _23_
+[p023_c0004] _The MTA logo, consisting of the letters 'MTA' in white inside a black circle._
+[p023_c0005] _The BETTERBUSES logo, with 'BETTER' in blue and 'BUSES' in green._
+[p023_c0006] _The New York City Department of Transportation (NYC DOT) logo, featuring the text 'NEW YORK CITY' above 'DOT' and a stylized 'DOT' graphic._
+
+## Page 24
+
+### [p024_c0001] Making It Work: Curb Management
+- [p024_c0002] • Curb access remains essential to support Flatbush's small business commercial strip, between Dean St and Grand Army Plaza, and ensures businesses can continue to operate efficiently. • DOT is identifying locations for Truck Loading Zones on Flatbush Ave and side street spurs so businesses can maintain loading access, with careful attention to safety, street design, and neighborhood context. • Where the parking lane is maintained, short-term parking and loading zones will be designated to improve turnover and access for customers and deliveries.
+[p024_c0003] _24_
+
+## Page 25
+
+### [p025_c0001] Making It Work: Current Travel Patterns
+- [p025_c0002] Flatbush Avenue remains a critical corridor connecting people to Downtown Brooklyn and Manhattan, though since CBD Tolling Program (CBDTP) was implemented, fewer car trips are headed to Manhattan. ~33% of northbound traffic continues to Manhattan (down from 44% pre-CBDTP), just 7% is headed to Lower Manhattan ~30% of northbound traffic is headed to other boroughs outside of Manhattan or out of the city entirely Southbound travel patterns are similar emphasizing two-way demand ~24% of Flatbush Ave roadway users are already on the bus (in 3-10% of total vehicles)
+> [p025_c0003] A map of Flatbush Avenue and its surrounding areas in Brooklyn. A red line indicates the northbound route on Flatbush Avenue, starting from a purple dot at the intersection of Dean St & Bergen St. Four blue arrows point north from the top of the map, representing northbound destinations. The map is divided into four shaded regions with the following percentages: 26% (top, light blue), 7% (middle left, light blue), 10% (middle right, light blue), and 6% (bottom right, light blue). A blue callout box with a pointer to the purple dot contains the text: "Top routes used by all vehicles traveling northbound on Flatbush Ave between Dean St & Bergen St". The text "Flatbush Ave Northbound Destinations" is written at the bottom right of the map.
+[p025_c0004] _25_
+
+## Page 26
+
+### [p026_c0001] Making It Work: Future Travel Patterns
+- [p026_c0002] • A reimagined Flatbush Ave will not have room for as many private vehicles as use the roadway today • DOT expects that with the new design: • Some drivers to/from Downtown Brooklyn will shift to faster, more reliable bus service • Some car trips to/from Manhattan will switch to alternate routes or transit service • Some local car traffic may shift to regional and adjacent corridors , which DOT will continue to monitor and manage
+> [p026_c0003] A map showing the proposed alternate northbound routes for Flatbush Avenue. The map highlights the following routes: BBT : Brooklyn-Batavia Tunnel BKB : Brooklyn-Kingsboro Bridge BQE : Brooklyn-Queens Expressway WBB : Westchester Bay Bridge Broadway : The Broadway corridor Bedford : Bedford Avenue Rogers : Rogers Avenue Prospect : Prospect Avenue Gowanus : Gowanus Avenue Ocean Pkwy : Ocean Parkway Belt : Belt Parkway The map also shows the City of New York boundary and the East River. The title at the bottom of the map is 'Alternate Northbound Routes'.
+[p026_c0004] _26_
+
+## Page 27
+
+### [p027_c0001] Summary and Next Steps
+[p027_c0002] 5
+[p027_c0003] _27_
+[p027_c0004] _The MTA logo, consisting of the letters 'MTA' in white inside a black circle._
+[p027_c0005] _The BETTERBUSES logo, with 'BETTER' in blue and 'BUSES' in green, separated by a stylized blue and green graphic._
+[p027_c0006] _The New York City Department of Transportation (NYC DOT) logo, featuring the text 'NEW YORK CITY' above 'DOT' and a stylized graphic of a bus._
+
+## Page 28
+
+### [p028_c0001] Goals for Flatbush Ave:
+- [p028_c0002] • Reimagine Flatbush Ave as a transit and pedestrian-centric corridor that contributes to the long term-vision of improving the public realm of Downtown Brooklyn and Grand Army Plaza • Deliver high-quality transit infrastructure that improves bus speeds and reliability along this critical transportation corridor • Maintain Flatbush Ave's role as a key connector for goods movement , ensuring commercial access and deliveries are supported through improved curb management and freight access strategies. • Create a vibrant, accessible street that connects people to jobs, businesses, and destinations across Brooklyn.
+> [p028_c0003] A photograph of a city street scene in Brooklyn. In the background, there are several tall, multi-story buildings. To the right, a large, modern building with a distinctive red, tiered roof is visible. The street is filled with cars, including a white van and a dark blue SUV. Pedestrians are walking on the sidewalks and crossing the street. The overall scene is a busy urban environment.
+> [p028_c0004] A photograph of a city street scene in Brooklyn. In the foreground, a crosswalk is marked with white stripes. Two pedestrians are crossing the street: one in a white shirt and shorts, and another in a black shirt and red shorts. Several vehicles are on the street, including a white van and a dark blue SUV. The background shows a mix of buildings, including a red-roofed structure and a tall building. The street is busy with traffic and pedestrians.
+[p028_c0005] _28_
+[p028_c0006] _The MTA logo, which consists of the letters "MTA" in a bold, sans-serif font inside a dark circle._
+[p028_c0007] _The BETTERBUSES logo, which features the word "BETTER" in blue and "BUSES" in green, with a stylized blue and green graphic to the left._
+[p028_c0008] _The NEW YORK CITY DOT logo, which includes the text "NEW YORK CITY" above the "DOT" logo, which is a stylized "DOT" with horizontal lines._
+
+## Page 29
+
+### [p029_c0001] Project Timeline
+### [p029_c0002] Spring 2024:
+[p029_c0003] Community Advisory Board meeting #2
+[p029_c0004] Community Boards 2, 6, 8
+### [p029_c0005] Summer 2024:
+[p029_c0006] On-street surveys for merchants and bus riders
+[p029_c0007] Continue traffic analysis and project design
+### [p029_c0008] Fall/Winter 2024-2025:
+[p029_c0009] Complete traffic analysis and project design
+### [p029_c0010] Spring 2025:
+[p029_c0011] Present to Community Boards 2, 6, 8, and elected officials
+[p029_c0012] Collect feedback from center-running proposal
+[p029_c0013] Continue coordinating with MTA on operational adjustments
+### [p029_c0014] Next Steps:
+[p029_c0015] Incorporate feedback and refine
+[p029_c0016] Goal to implement in 2025
+[p029_c0017] _29_
+
+## Page 30
+
+[p030_c0001] Thank You!
+[p030_c0002] Questions?
+> [p030_c0003] The logo for the New York City Department of Transportation (NYC DOT). It features the words "NEW YORK CITY" in a bold, sans-serif font at the top. Below this, the letters "DOT" are displayed in a large, stylized font. The "D" and "O" are green and contain horizontal white lines, while the "T" is green and has a white square at its base.
+> [p030_c0004] The Facebook "f" logo in white.
+[p030_c0005] NYC DOT
+> [p030_c0006] The Twitter bird logo in white.
+[p030_c0007] NYC DOT
+> [p030_c0008] The Instagram camera logo in white.
+[p030_c0009] nyc_dot
+> [p030_c0010] The YouTube logo in white, featuring the word "You" above "Tube".
+[p030_c0011] NYC DOT
+[p030_c0012] _30_
+[p030_c0013] _The MTA logo, consisting of the letters "MTA" in white inside a black circle._
+[p030_c0014] _The "BETTERBUSES" logo, with "BETTER" in blue and "BUSES" in green._
+[p030_c0015] _A smaller version of the New York City DOT logo._

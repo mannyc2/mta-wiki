@@ -1,0 +1,25 @@
+node_modules/
+dist/
+.claude/
+wiki/transcripts/
+.env
+.env.*
+!.env.example
+!.env.*.example
+.gstack/
+backups/
+raw/
+data/transcripts/
+*.log
+.DS_Store
+__pycache__/
+temp.json
+
+# Plan 009 fresh-history exclusions.
+data/canonical.db
+data/post-ingest/
+data/exports/releases/v1-rc1/
+data/exports/releases/v1-rc2/
+data/exports/releases/v1-rc3/
+data/exports/releases/v1-rc4/
+.git-archive/

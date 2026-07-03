@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T23-05-07-096Z_1976810-a3599472_ingest_2012-10-lga-plan-one-pager",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T02:57:30.800Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d1-lga-access-aa-already-resolved",
+        "local_observation_id": "project_lga_access_aa_2012_handout",
+        "decision": "new",
+        "rationale": "Observation base_record_id is project_lga-access-aa, which exactly matches the existing registry record project_lga-access-aa. Both refer to the same LaGuardia Airport Access Alternatives Analysis — same project name, same study (begun May 2011), same BRT/SBS focus. The observation already resolves to its own base_record_id; no linking to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0003",
+            "source_quote": "In May 2011 the LaGuardia Airport Access Alternatives Analysis began with the purpose of developing faster and more reliable transit service to LGA."
+          },
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0004",
+            "source_quote": "Bus Rapid Transit (BRT) was identified as the transit mode best suited to improving service to LGA. Under the Select Bus Service (SBS) brand name, BRT has been implemented successfully on Fordham Road in the Bronx, 34th Street and First and Second Avenues in Manhattan and Hylan Boulevard on Staten Island."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-56-09-413Z_2111393-0ab27e7c_canonicalize_2026-06-10t23-05-07-096z-1976810-a3599472-ingest-2012-10-lga-plan-one-pager-project-identity"
+}

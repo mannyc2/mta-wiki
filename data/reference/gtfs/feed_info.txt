@@ -1,0 +1,2 @@
+feed_publisher_name,feed_publisher_url,feed_lang,feed_version
+MTA (merged: 5 NYCT boroughs + bus company),https://web.mta.info,en,2026-03-19_mta_bus_all

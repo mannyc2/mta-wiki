@@ -1,0 +1,76 @@
+{
+  "note_id": "codex-relation-assertion-entity-source-timeline-2026-07-01",
+  "created_at": "2026-07-01T00:00:00.000Z",
+  "author": "codex",
+  "kind": "deterministic_relation_assertion_status_cleanup",
+  "status": "implemented_materialized_validated",
+  "scope": "Codex-only deterministic relation assertion-status cleanup for entity/source implementation timeline rows. No external/provider-backed LLM commands, ingest/write/ask/schema commands, identity-review-run, ontology-normalize-run, provider profiles, or hand edits to canonical JSONL were used.",
+  "source_subagent": {
+    "agent_id": "019f1b40-38b9-7f12-8bed-1f1e5b2c74ba",
+    "lane": "timeline_context.has_timeline_event residuals",
+    "result_used": "Entity/source implementation timeline rows can be classified when event/source dates are comparable month/day normalized dates, event_family is implementation, event kinds are allowlisted, and relation/evidence/event text has either future schedule wording or completed action wording."
+  },
+  "code_changes": {
+    "assertion_qualifiers": [
+      "Added strict comparable month/day date guard for this timeline lane to hold year-only ambiguity.",
+      "Added planned entity/source implementation timeline inference for future holiday/special/timetable/service-change events with explicit future or schedule wording.",
+      "Added delivered entity/source implementation timeline inference for past implementation/operation/trackwork/timetable/service-change events with completed action wording.",
+      "Added holds for approval conditionals, postponement/defer/cancel/no-item/no-meeting text, route subjects, missing dates, missing source dates, year-only dates, and non-implementation event families."
+    ],
+    "tests": [
+      "Added positive tests for planned future holiday service and timetable change rows.",
+      "Added positive tests for delivered past implementation and coordinated safe-passage operation rows.",
+      "Added negative tests for missing event date, missing source date, year-only date, route subject, conditional approval text, and public meeting rows."
+    ]
+  },
+  "counts": {
+    "pre_materialize_unknown_total": 5606,
+    "post_materialize_unknown_total": 5593,
+    "net_reduction": 13,
+    "selected_pre_to_post_unknown_counts": {
+      "timeline_context.has_timeline_event": {
+        "before": 311,
+        "after": 298,
+        "delta": -13
+      },
+      "timeline_context": {
+        "before": 443,
+        "after": 430,
+        "delta": -13
+      }
+    },
+    "post_materialize_top_unknown_families": {
+      "metric_context": 2896,
+      "timeline_context": 430,
+      "claim_context": 419,
+      "agency_role": 411,
+      "funding_award": 321,
+      "corridor_scope": 276,
+      "partnership_engagement": 244,
+      "governance_legal": 112,
+      "treatment_context": 98,
+      "route_scope": 93,
+      "organization_hierarchy": 91,
+      "dependency_or_reference": 85
+    }
+  },
+  "verification": {
+    "focused_tests": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts: 67 pass, 0 fail, 375 expect() calls",
+    "typecheck": "bun run typecheck passed",
+    "materialize": "bun packages/cli/src/cli.ts materialize: Materialized 93092/98102 submissions; retired submissions skipped 243; pages 7338; SQLite FTS quick_check ok",
+    "validate": "bun packages/cli/src/cli.ts validate: Issues 0; submissions 98102; canonical records 84040; wiki pages 7334"
+  },
+  "remaining_lanes": [
+    "metric_context remains the largest assertion-status residual at 2896 unknown rows.",
+    "timeline_context remains 430 unknown rows after this narrow implementation-event slice.",
+    "claim_context, agency_role, and funding_award remain close in size and should continue with exact guarded rules or fresh read-only scouts."
+  ],
+  "generated_outputs": [
+    "data/canonical/relations.jsonl",
+    "data/canonical.db"
+  ],
+  "source_files_changed": [
+    "packages/pipeline/src/records/assertion-qualifiers.ts",
+    "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+  ]
+}

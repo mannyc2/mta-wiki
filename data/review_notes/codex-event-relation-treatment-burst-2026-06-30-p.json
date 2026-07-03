@@ -1,0 +1,121 @@
+{
+  "note_id": "codex-event-relation-treatment-burst-2026-06-30-p",
+  "created_at": "2026-06-30",
+  "mode": "codex_only_deterministic_post_ingest_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider profiles"
+  ],
+  "subagents": [
+    {
+      "agent_id": "019f18ca-65b1-7463-a98f-fb1ba630761f",
+      "lane": "event family exact public-engagement scout",
+      "result": "confirmed ten exact ERG/community/public-engagement event records and supplied four context-gated follow-up rules"
+    },
+    {
+      "agent_id": "019f18ca-705f-7e70-ad90-345fa6532693",
+      "lane": "next bucket scout",
+      "result": "identified a possible public special-event/facility-impact event slice with expected event_family_other 107 -> 93, but flagged it as a policy change"
+    },
+    {
+      "agent_id": "019f18ca-7cca-7f21-a29c-147da97e6791",
+      "lane": "relation/treatment patch risk review",
+      "result": "confirmed relation and treatment rules were narrow; recommended reversed-endpoint relation guard tests"
+    }
+  ],
+  "before_counts": {
+    "event_family_other": 117,
+    "treatment_adjusted_actionable": 18,
+    "relation_family_other": 0,
+    "supports_timeline_repair_relations": 0,
+    "project_status_missing_unresolved": 34
+  },
+  "after_counts": {
+    "event_family_other": 107,
+    "treatment_adjusted_actionable": 0,
+    "relation_family_other": 0,
+    "supports_timeline_repair_relations": 13,
+    "project_status_missing_unresolved": 34
+  },
+  "implemented_changes": [
+    {
+      "bucket": "event_family_other",
+      "change": "Mapped ten exact ERG, donation-drive, heritage, charity, annual Earth Day, and municipal community event records to public_engagement using bounded payload/source-block markers.",
+      "records": [
+        "event_all-generational-toy-drive-nov2024",
+        "event_nyct-winter-toy-coat-drive-nov-dec2023",
+        "event_nyct-generations-in-workforce-sep2023",
+        "event_mnr-jewish-american-heritage-2023",
+        "event_making-strides-breast-cancer-2023",
+        "event_ossining-earth-day-2025",
+        "event_erg-back-to-school-photos-sept30",
+        "event_erg-tabletop-model-train-project",
+        "event_tabletop-model-train-project",
+        "event_meeting-doc-129076-cortlandt-family-fun-day"
+      ]
+    },
+    {
+      "bucket": "relation family cleanup",
+      "change": "Classified exact event->claim and event->metric malformed has_timeline_event repair relations as timeline_context while keeping reversed or invalid endpoint shapes as dependency_or_reference.",
+      "records_moved": 13
+    },
+    {
+      "bucket": "treatment denormalization/noise",
+      "change": "Scoped bus-priority aggregate/toolkit/list and implementation timeline treatment records as contextual rather than actionable treatment components.",
+      "records_remaining_in_adjusted_actionable_heuristic": 0
+    }
+  ],
+  "files_touched": [
+    "packages/pipeline/src/ontology/normalizers.ts",
+    "packages/pipeline/test/ontology/normalizers.test.ts",
+    "packages/pipeline/src/records/relations.ts",
+    "packages/pipeline/test/records/relations.test.ts",
+    "data/canonical/events.jsonl",
+    "data/canonical/relations.jsonl",
+    "data/canonical/treatment_components.jsonl",
+    "data/canonical.db"
+  ],
+  "generated_outputs": {
+    "method": "deterministic materialize",
+    "canonical_jsonl_hand_edited": false,
+    "materialize_runs": 2,
+    "sqlite_fts_quick_check": "ok",
+    "sqlite_pragma_quick_check": "ok"
+  },
+  "verification": {
+    "focused_normalizer_tests": "bun test packages/pipeline/test/ontology/normalizers.test.ts => 267 pass, 0 fail, 4071 expects",
+    "focused_relation_tests": "bun test packages/pipeline/test/records/relations.test.ts => 8 pass, 0 fail, 527 expects",
+    "typecheck": "bun run typecheck => pass",
+    "validate": "bun packages/cli/src/cli.ts validate => Issues: 0, Submissions: 98102, Canonical records: 84048, Wiki pages: 7337"
+  },
+  "intentionally_unresolved": [
+    {
+      "bucket": "event_family_other",
+      "count_remaining": 107,
+      "reason": "Remaining records include public special events, retail/commercial GCT events, generic public/private events, and policy-sensitive service/facility-impact events. The next fast slice is possible but should be treated as a representation-policy decision, not blind broad matching."
+    },
+    {
+      "bucket": "project_status_missing_unresolved",
+      "count_remaining": 34,
+      "reason": "Next safe fallback is the two-record active-marker project slice; the Queens Boulevard West CBTC ratification candidate still needs adjacent heading context before approval can be encoded safely."
+    }
+  ],
+  "next_lanes": [
+    {
+      "lane": "public special-event/facility-impact events",
+      "expected_count_movement": "event_family_other 107 -> 93",
+      "risk": "policy change; avoid broad retail, holiday market, sampling, and generic public-event matching"
+    },
+    {
+      "lane": "project active status fallback",
+      "expected_count_movement": "project_status_missing_unresolved 34 -> 32",
+      "risk": "low if restricted to exact A Line Initiative and NYCT Additional Initiatives markers"
+    }
+  ]
+}

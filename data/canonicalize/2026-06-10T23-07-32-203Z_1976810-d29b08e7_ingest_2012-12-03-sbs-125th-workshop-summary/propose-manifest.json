@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T23-07-32-203Z_1976810-d29b08e7_ingest_2012-12-03-sbs-125th-workshop-summary",
+  "generated_at": "2026-06-11T03:09:25.308Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 29,
+  "validated_decision_count": 13,
+  "quarantined_decision_count": 4,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T23-07-32-203Z_1976810-d29b08e7_ingest_2012-12-03-sbs-125th-workshop-summary",
+    "manifest": "data/canonicalize/2026-06-10T23-07-32-203Z_1976810-d29b08e7_ingest_2012-12-03-sbs-125th-workshop-summary/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T23-07-32-203Z_1976810-d29b08e7_ingest_2012-12-03-sbs-125th-workshop-summary/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-07-32-203Z_1976810-d29b08e7_ingest_2012-12-03-sbs-125th-workshop-summary/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T23-07-32-203Z_1976810-d29b08e7_ingest_2012-12-03-sbs-125th-workshop-summary/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 5,
+      "validated_decision_count": 5,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-07-32-203Z_1976810-d29b08e7_ingest_2012-12-03-sbs-125th-workshop-summary/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T03-06-18-221Z_2111393-57f7435f_canonicalize_2026-06-10t23-07-32-203z-1976810-d29b08e7-ingest-2012-12-03-sbs-125th-workshop-summary-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 3,
+      "validated_decision_count": 2,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-07-32-203Z_1976810-d29b08e7_ingest_2012-12-03-sbs-125th-workshop-summary/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T03-06-18-221Z_2111393-9efc028c_canonicalize_2026-06-10t23-07-32-203z-1976810-d29b08e7-ingest-2012-12-03-sbs-125th-workshop-summary-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-07-32-203Z_1976810-d29b08e7_ingest_2012-12-03-sbs-125th-workshop-summary/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T03-06-18-229Z_2111393-39976239_canonicalize_2026-06-10t23-07-32-203z-1976810-d29b08e7-ingest-2012-12-03-sbs-125th-workshop-summary-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-07-32-203Z_1976810-d29b08e7_ingest_2012-12-03-sbs-125th-workshop-summary/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T03-06-18-229Z_2111393-976d5824_canonicalize_2026-06-10t23-07-32-203z-1976810-d29b08e7-ingest-2012-12-03-sbs-125th-workshop-summary-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 6,
+      "validated_decision_count": 5,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-07-32-203Z_1976810-d29b08e7_ingest_2012-12-03-sbs-125th-workshop-summary/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T03-06-18-230Z_2111393-9fe350d2_canonicalize_2026-06-10t23-07-32-203z-1976810-d29b08e7-ingest-2012-12-03-sbs-125th-workshop-summary-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-07-32-203Z_1976810-d29b08e7_ingest_2012-12-03-sbs-125th-workshop-summary/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T03-06-18-230Z_2111393-6af3b664_canonicalize_2026-06-10t23-07-32-203z-1976810-d29b08e7-ingest-2012-12-03-sbs-125th-workshop-summary-relation-linker"
+    }
+  ]
+}

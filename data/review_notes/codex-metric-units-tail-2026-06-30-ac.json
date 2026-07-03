@@ -1,0 +1,161 @@
+{
+  "note_id": "codex-metric-units-tail-2026-06-30-ac",
+  "created_at": "2026-06-30T19:20:00.000Z",
+  "author": "codex",
+  "kind": "deterministic_post_ingest_cleanup_checkpoint",
+  "status": "validated_clean",
+  "bucket": "metric_claims.unit_normalized.unit_family",
+  "constraints": {
+    "external_provider_llms_used": false,
+    "forbidden_repo_agent_commands_used": false,
+    "canonical_jsonl_hand_edited": false,
+    "subagents": [
+      {
+        "agent_id": "019f19e3-dd5f-79e0-bd83-3e64cfa1e3bb",
+        "lane": "metric_other_exact_unit_tail",
+        "result": "Recommended exact raw unit literal units -> normalized_unit units, unit_family count; no scale; exact alias only.",
+        "closed_after_use": true
+      },
+      {
+        "agent_id": "019f19e4-2089-7f40-988d-1ebb6a6e702d",
+        "lane": "route_project_duplicate_identity_audit",
+        "result": "No current route/project duplicate-looking candidate is a high-confidence deterministic merge. Route/project alias-key collisions are zero; remaining surfaces are explicit do-not-merge or aggregate-vs-individual materializer-scope cases.",
+        "closed_after_use": true
+      }
+    ]
+  },
+  "before": {
+    "metric_total": 36534,
+    "metric_other": 227,
+    "metric_count": 2818,
+    "selected_literal": {
+      "raw_text": "units",
+      "other_count": 19,
+      "examples": [
+        "metric_1200-units",
+        "metric_meeting-doc-105911-help-points-v3",
+        "metric_meeting-doc-114216-ipad-gps-units",
+        "metric_omny-lu-fanfold-qty-186841",
+        "metric_sb-tvm-tom-quantities"
+      ]
+    },
+    "route_project_duplicate_audit": {
+      "routes": 319,
+      "projects": 1862,
+      "duplicate_current_record_or_alias_keys": {
+        "route": 0,
+        "project": 0
+      },
+      "exact_display_name_collisions": {
+        "route": 0,
+        "project": 0
+      },
+      "route_base_route_duplicate_looking_groups": 21,
+      "route_base_route_pair_surfaces": 36,
+      "route_pair_surfaces_explicit_do_not_merge": 34,
+      "route_pair_surfaces_materializer_scope_guarded": 2,
+      "project_payload_name_collision_pairs": 3,
+      "project_payload_name_collision_pairs_do_not_merge": 3
+    }
+  },
+  "changes": [
+    {
+      "file": "packages/pipeline/src/ontology/normalizers.ts",
+      "summary": "Added exact UNIT_ALIASES entry for raw unit literal units -> normalized_unit units, unit_family count."
+    },
+    {
+      "file": "packages/pipeline/test/ontology/normalizers.test.ts",
+      "summary": "Added units to the exact count-like unit table and moved the ambiguity guard to units per hour so compound/rate forms remain unresolved."
+    }
+  ],
+  "after": {
+    "metric_total": 36534,
+    "metric_families": {
+      "money": 11790,
+      "percentage": 8279,
+      "count": 2837,
+      "missing": 2500,
+      "ridership": 2414,
+      "workforce": 2213,
+      "duration": 1012,
+      "money_rate": 771,
+      "scale": 665,
+      "distance": 616,
+      "speed": 577,
+      "safety": 382,
+      "volume": 378,
+      "population": 366,
+      "safety_rate": 292,
+      "rate": 245,
+      "enforcement": 222,
+      "other": 208,
+      "ratio": 196,
+      "count_rate": 186,
+      "area": 131,
+      "engagement": 90,
+      "access": 26,
+      "rating": 26,
+      "participation": 25,
+      "frequency": 23,
+      "duration_rate": 16,
+      "mass": 16,
+      "service": 14,
+      "data": 6,
+      "power": 3,
+      "energy_rate": 2,
+      "temperature": 2,
+      "mass_rate": 2,
+      "volume_rate": 1,
+      "sound": 1,
+      "visitor_count": 1
+    },
+    "metric_other_delta": -19,
+    "metric_count_delta": 19,
+    "top_other_units": [
+      ["millions", 73],
+      ["thousands", 37],
+      ["year", 4],
+      ["rate", 3],
+      ["trains per day", 2],
+      ["seats per car", 2],
+      ["summons per quarter", 2],
+      ["seats", 1],
+      ["per 1,000 residents", 1],
+      ["recommendations", 1],
+      ["ridership", 1],
+      ["transfers per day", 1],
+      ["scenarios", 1],
+      ["time periods", 1],
+      ["zones", 1],
+      ["tree pits", 1],
+      ["requests per month", 1],
+      ["registrants", 1],
+      ["stations per month", 1],
+      ["proposers", 1]
+    ]
+  },
+  "verification": {
+    "normalizers_test": "bun test packages/pipeline/test/ontology/normalizers.test.ts: 274 pass, 0 fail, 4463 expect() calls",
+    "submissions_test": "bun test packages/pipeline/test/records/submissions.test.ts: 29 pass, 0 fail, 176 expect() calls",
+    "typecheck": "bun run typecheck passed",
+    "materialize": "bun packages/cli/src/cli.ts materialize completed; Materialized 93092/98102 submissions; SQLite FTS quick_check ok",
+    "sqlite_quick_check": "sqlite3 data/canonical.db 'PRAGMA quick_check;' => ok",
+    "validate": "bun packages/cli/src/cli.ts validate: Issues 0; submissions 98102; canonical records 84040; wiki pages 7334"
+  },
+  "remaining": [
+    "Metric other residual is now 208. Remaining high-count literals are mostly ambiguous scale units: millions 73 and thousands 37.",
+    "Route/project duplicate merge work has no current high-confidence slice; current duplicate-looking route/project surfaces are do-not-merge or aggregate-vs-individual policy cases.",
+    "Next likely deterministic metric tails: exact singleton count/count-rate/rate units such as trains per day, summons per quarter, seats, recommendations, transfers per day, requests per month, and infrastructure count nouns; each needs exact-literal audit before application."
+  ],
+  "commands_not_run": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed commands",
+    "external/provider LLM calls",
+    "canonical JSONL hand edits"
+  ]
+}

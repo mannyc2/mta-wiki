@@ -1,0 +1,136 @@
+{
+  "note_id": "codex-relation-assertion-mdbf-metrics-2026-07-01",
+  "created_at": "2026-07-01",
+  "campaign": "post-ingest deterministic normalization cleanup",
+  "slice": "metric_context.has_metric mean distance between failures assertion status",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed model/profile commands"
+  ],
+  "baseline": {
+    "validate_issues": 0,
+    "relation_assertion_unknown_total": 4939,
+    "metric_context_unknown": 2281,
+    "metric_context_has_metric_unknown": 2267,
+    "delivered_metric_context_has_metric": 2826,
+    "exact_mdbf_unknown_rows": {
+      "total": 52,
+      "mean_distance_between_failures": 37,
+      "mean_distance_between_failure": 15
+    },
+    "safe_candidate_count": 51,
+    "safe_candidate_criteria": [
+      "relation_family is metric_context",
+      "relation_kind is has_metric",
+      "subject resolves to entity",
+      "object is metric_claim",
+      "metric_name is exactly mean_distance_between_failures or mean_distance_between_failure",
+      "unit family is distance",
+      "normalized unit is miles",
+      "concrete value is present",
+      "explicit period/date/year/comparison_period anchor is present",
+      "relation and metric share same-source evidence",
+      "future/proposed/planned/estimate rejection text is absent"
+    ]
+  },
+  "implemented_change": {
+    "summary": "Classify observed entity mean-distance-between-failures metric relations as delivered.",
+    "code_paths": [
+      "packages/pipeline/src/records/assertion-qualifiers.ts",
+      "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+    ],
+    "rule": {
+      "status": "delivered",
+      "subject_kind": "entity",
+      "metric_names": [
+        "mean_distance_between_failures",
+        "mean_distance_between_failure"
+      ],
+      "unit_family": "distance",
+      "normalized_unit": "miles",
+      "requires_concrete_value": true,
+      "requires_explicit_metric_period_anchor": true,
+      "requires_same_source_relation_and_metric_evidence": true,
+      "uses_performance_status_rejection_guard": true,
+      "allows_goal_or_target_comparison_text": true
+    }
+  },
+  "subagent_inputs": [
+    {
+      "agent_path": "019f1fcf-7cde-7d93-98bc-6033aa6b0cb7",
+      "name": "Hilbert",
+      "mode": "read-only local JSONL audit",
+      "finding": "52 exact unknown MDBF has_metric rows; 51 have entity subjects, distance/miles units, concrete values, explicit period/date/year/comparison-period anchors, same-source evidence, and no future/proposed/estimate rejection text. One singular-name row lacks a period anchor and should remain unknown."
+    }
+  ],
+  "after": {
+    "validate_issues": 0,
+    "relation_assertion_unknown_total": 4888,
+    "metric_context_unknown": 2230,
+    "metric_context_has_metric_unknown": 2216,
+    "delivered_metric_context_has_metric": 2877,
+    "exact_mdbf_remaining_unknown_rows": {
+      "mean_distance_between_failure": 1
+    },
+    "exact_mdbf_delivered_rows_after": {
+      "mean_distance_between_failures": 48,
+      "mean_distance_between_failure": 14
+    },
+    "delta": {
+      "relation_assertion_unknown_total": -51,
+      "metric_context_unknown": -51,
+      "metric_context_has_metric_unknown": -51,
+      "delivered_metric_context_has_metric": 51
+    }
+  },
+  "verification": {
+    "focused_tests": {
+      "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+      "status": "passed",
+      "tests": 83,
+      "expect_calls": 445
+    },
+    "typecheck": {
+      "command": "bun run typecheck",
+      "status": "passed"
+    },
+    "materialize": {
+      "command": "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+      "status": "passed",
+      "materialized_submissions": "93092/98102",
+      "retired_submissions_skipped": 243,
+      "canonical_records": 84040,
+      "wiki_pages_from_materialize_output": 7338,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "sqlite_quick_check": {
+      "command": "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+      "status": "ok"
+    },
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "status": "passed",
+      "issues": 0,
+      "submissions": 98102,
+      "canonical_records": 84040,
+      "wiki_pages": 7334
+    }
+  },
+  "intentionally_unresolved": [
+    "One singular mean_distance_between_failure row remains unknown because it lacks an explicit period/date/year/comparison-period anchor.",
+    "The rule does not generalize to all reliability or distance metrics.",
+    "Non-entity subjects, wrong units, future/proposed/planned/estimate text, missing values, missing anchors, and missing same-source evidence remain excluded.",
+    "Canonical JSONL was not hand-edited; generated outputs were refreshed through deterministic materialization."
+  ],
+  "next_lanes": [
+    "Rebaseline metric_context.has_metric again and pick the next exact metric-name/unit/anchor cluster.",
+    "Rebaseline duplicate project and route identity candidates separately from assertion-status cleanup so identity merges and do-not-merge guards do not get mixed with status normalization.",
+    "Use read-only subagents for bounded candidate discovery, then implement only deterministic code rules, identity overrides, do-not-merge guards, or materializer policy tests."
+  ]
+}

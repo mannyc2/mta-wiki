@@ -1,0 +1,388 @@
+{
+  "note_id": "codex-identity-batch208-prep",
+  "created_at": "2026-06-23T00:00:00Z",
+  "scope": {
+    "global_kind": "entity",
+    "operation": "prepare_alias_cleanup_only",
+    "checkpoint": "after identity205-corridor206",
+    "disjoint_from_batch207_intent": "Selected later/different ENTITY duplicate_global_identity rows, primarily from the latter half of the deterministic validator order, and excluded visible prior-prep alias ids plus obvious early-sample/community-board/committee traps so this prep batch should not overlap a first-page batch207.",
+    "selection_note": "Codex-only entity alias cleanup from the current remaining duplicate_global_identity backlog. A deterministic local identityKeysForRecord scan reproduced the requested checkpoint count: 315 duplicate_global_identity issues total, with entity 307 and corridor 8. No provider-backed commands, materialize, validate CLI, write, ask, canonicalize, identity-review, schema, or ontology commands were run.",
+    "write_limit": "Exactly one artifact was written: data/review_notes/codex-identity-batch208-prep.json. No merges.json, do-not-merge.json, canonical JSONL, DB, LOG.md, manifest, wiki, submissions, or retired overrides were edited."
+  },
+  "prepared_count": 12,
+  "proposed_aliases": [
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_mta-department-of-diversity-civil-rights-164956",
+      "target_id": "entity_meeting-doc-ddcr",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-ddcr and entity_mta-department-of-diversity-civil-rights-164956 share identity key entity_mta-department-of-diversity-and-civil-rights."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'MTA Department of Diversity and Civil Rights', entity_name 'MTA Department of Diversity and Civil Rights', entity_type 'agency department', evidence meeting_doc_164956#p002_c0004.",
+        "Target canonical record: display_name 'MTA Department of Diversity and Civil Rights', entity_name 'MTA Department of Diversity and Civil Rights', entity_type 'department', evidence meeting_doc_102781#p003_c0015 and meeting_doc_102781#p013_c0001."
+      ],
+      "reason": "Exact MTA department identity; both records preserve the same department name and differ only by source context.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "alias_not_existing_merge_target": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "visible_prior_prep_overlap_found": false,
+        "broad_name_guard": "Specific MTA department name, not a generic MTA or committee label."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_mta-ewt-erg",
+      "target_id": "entity_ewt-erg",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_ewt-erg and entity_mta-ewt-erg share identity key entity_empowering-women-in-transportation-ewt."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'EWT', entity_name 'Empowering Women in Transportation (EWT)', entity_type 'Employee Resource Group', evidence meeting_doc_138421#p006_c0008 and meeting_doc_138421#p006_c0009.",
+        "Target canonical record: display_name 'Empowering Women in Transportation (EWT)', entity_name 'Empowering Women in Transportation (EWT)', entity_type 'employee resource group', evidence meeting_doc_138426#p006_c0007 and meeting_doc_138426#p006_c0008."
+      ],
+      "reason": "Exact employee resource group identity; the alias is the acronym surface for the same full EWT group name.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "alias_not_existing_merge_target": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "visible_prior_prep_overlap_found": false,
+        "broad_name_guard": "Specific named employee resource group with acronym expansion."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_mta-finance-dept-patrick-mccoy",
+      "target_id": "entity_meeting-doc-111901-mta-finance",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-111901-mta-finance and entity_mta-finance-dept-patrick-mccoy share identity key entity_mta-finance-department."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'MTA Finance Department', entity_name 'MTA Finance Department', entity_type 'agency department', evidence meeting_doc_26831#p020_c0003.",
+        "Target canonical record: display_name 'MTA Finance Department Office of Financial Services', entity_name 'MTA Finance Department Office of Financial Services', entity_type 'department', evidence meeting_doc_111901#p026_c0003 and meeting_doc_129061#p001_c0002."
+      ],
+      "reason": "Same MTA Finance Department identity; the target carries a more specific Office of Financial Services surface but shares the department-level identity key.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "alias_not_existing_merge_target": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "visible_prior_prep_overlap_found": false,
+        "broad_name_guard": "Specific MTA finance department context; not a generic finance role/person collision."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_mta-grand-central-madison-operating-co",
+      "target_id": "entity_meeting-doc-121001-gcmoc",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-121001-gcmoc and entity_mta-grand-central-madison-operating-co share identity key entity_mta-grand-central-madison-operating-company."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'MTA Grand Central Madison Operating Company', entity_name 'MTA Grand Central Madison Operating Company', entity_type 'agency', evidence meeting_doc_128986#p029_c0001 quotes 'BY-LAWS MTA GRAND CENTRAL MADISON OPERATING COMPANY'.",
+        "Target canonical record: display_name 'Grand Central Madison Operating Company (GCMOC)', entity_name 'Grand Central Madison Operating Company', entity_type 'agency', evidence meeting_doc_121001#p001_c0007 quotes 'Grand Central Madison Operating Company (GCMOC)'."
+      ],
+      "reason": "Exact operating-company identity; GCMOC is the acronym surface for Grand Central Madison Operating Company.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "alias_not_existing_merge_target": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "visible_prior_prep_overlap_found": false,
+        "broad_name_guard": "Specific operating company name and acronym, not broad MTA/LIRR parent identity."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_mta-inspector-general-meeting-doc-173841",
+      "target_id": "entity_meeting-doc-ig",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-ig and entity_mta-inspector-general-meeting-doc-173841 share identity key entity_mta-office-of-the-inspector-general."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'MTA Office of the Inspector General', entity_name 'MTA Office of the Inspector General', entity_type 'agency office', evidence meeting_doc_173841#p037_c0006.",
+        "Target canonical record: display_name 'Office of the MTA Inspector General', entity_name 'Office of the MTA Inspector General', entity_type 'agency', evidence meeting_doc_102796#p076_c0001 and meeting_doc_128996#p080_c0001."
+      ],
+      "reason": "Exact agency-office identity; both records name the MTA Office of the Inspector General.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "alias_not_existing_merge_target": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "visible_prior_prep_overlap_found": false,
+        "broad_name_guard": "Specific inspector-general office, not broad MTA or committee identity."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_mta-police-meeting-doc-26841",
+      "target_id": "entity_annual-report-2021-mtapd",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_annual-report-2021-mtapd and entity_mta-police-meeting-doc-26841 share identity key entity_mta-police."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'MTA Police', entity_name 'MTA Police', entity_type 'agency', evidence meeting_doc_26841#p002_c0025.",
+        "Target canonical record: display_name 'MTA Police Department', entity_name 'MTA Police Department', entity_type 'police department', evidence annual_report_narrative_2021#p047_c0003 and meeting_doc_105786#p002_c0029."
+      ],
+      "reason": "Exact MTA Police Department identity; 'MTA Police' is the short surface for the department.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "alias_not_existing_merge_target": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "visible_prior_prep_overlap_found": false,
+        "broad_name_guard": "Specific police department surface, not broad MTA parent identity."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_nyc-dep-34th-st-newsletter3",
+      "target_id": "entity_nyc-dep-2012",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_nyc-dep-2012 and entity_nyc-dep-34th-st-newsletter3 share identity key entity_nyc-department-of-environmental-protection."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'NYC Department of Environmental Protection', entity_name 'NYC Department of Environmental Protection', evidence brt_34thst_sbs_newsletter3_winter_2016#p002_c0015.",
+        "Target canonical record: display_name 'NYC Department of Environmental Protection (DEP)', entity_name 'New York City Department of Environmental Protection', entity_type 'agency', evidence 120507_brt_cb6_34th_street#p025_c0002 and 201203_brt_34th_cac6#p022_c0002."
+      ],
+      "reason": "Exact NYC agency identity; DEP is the acronym for New York City Department of Environmental Protection.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "alias_not_existing_merge_target": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "visible_prior_prep_overlap_found": false,
+        "broad_name_guard": "Specific NYC department name and acronym, not a generic city-agency label."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_nyct-eeo-lisette-camillo",
+      "target_id": "entity_lisette-camillo-lirr-erg",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_lisette-camillo-lirr-erg and entity_nyct-eeo-lisette-camillo share identity key entity_lisette-camillo."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Lisette Camillo, Executive Sponsor', entity_name 'Lisette Camillo', entity_type 'person', evidence meeting_doc_121051#p003_c0004 and meeting_doc_121056#p003_c0003.",
+        "Target canonical record: display_name 'Lisette Camillo', entity_name 'Lisette Camillo', entity_type 'person', evidence meeting_doc_121136#p003_c0004 and meeting_doc_121136#p004_c0004."
+      ],
+      "reason": "Exact person identity; both records name Lisette Camillo in employee resource group context.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "alias_not_existing_merge_target": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "visible_prior_prep_overlap_found": false,
+        "broad_name_guard": "Exact person name with scoped ERG/executive-sponsor context."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_rafail-portnoy-201766",
+      "target_id": "entity_mta-cto-portnoy",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_mta-cto-portnoy and entity_rafail-portnoy-201766 share identity key entity_rafail-portnoy."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Rafail Portnoy', entity_name 'Rafail Portnoy', entity_type 'person', evidence meeting_doc_201766#p002_c0004 and meeting_doc_201766#p005_c0004.",
+        "Target canonical record: display_name 'Rafail Portnoy, MTA Chief Technology Officer', entity_name 'Rafail Portnoy', entity_type 'person', evidence meeting_doc_105876#p187_c0002 and meeting_doc_190056#p009_c0004."
+      ],
+      "reason": "Exact person identity; the target preserves the MTA Chief Technology Officer title while both records share the full name.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "alias_not_existing_merge_target": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "visible_prior_prep_overlap_found": false,
+        "broad_name_guard": "Exact person name with compatible MTA technology leadership context."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_robert-foran-dec2021",
+      "target_id": "entity_meeting-doc-33876-robert-foran",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-33876-robert-foran and entity_robert-foran-dec2021 share identity key entity_robert-foran."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Robert Foran, MTA Chief Financial Officer', entity_name 'Robert Foran', entity_type 'person', evidence meeting_doc_73021#p005_c0001 quotes 'Robert Foran, MTA Chief Financial Officer'.",
+        "Target canonical record: display_name 'Robert E. Foran', entity_name 'Robert E. Foran', entity_type 'person', evidence meeting_doc_33876#p001_c0002 and meeting_doc_68251#p004_c0003."
+      ],
+      "reason": "Exact person identity; the middle initial variant and CFO title context are compatible with the same Robert Foran record.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "alias_not_existing_merge_target": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "visible_prior_prep_overlap_found": false,
+        "broad_name_guard": "Exact person name with compatible MTA CFO context."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_safety-officer-warren-mtahq-jan2022",
+      "target_id": "entity_meeting-doc-127566-patrick-warren",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-127566-patrick-warren and entity_safety-officer-warren-mtahq-jan2022 share identity key entity_patrick-warren.",
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-127566-patrick-warren and entity_safety-officer-warren-mtahq-jan2022 share identity key entity_patrick-warren-mtahq."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Patrick Warren, MTAHQ', entity_name 'Patrick Warren', entity_type 'person', evidence meeting_doc_72581#p003_c0006 quotes 'Patrick Warren, Metropolitan Transportation Authority, Headquarters (\"MTAHQ\")'.",
+        "Target canonical record: display_name 'Patrick Warren', entity_name 'Patrick Warren', entity_type 'person', evidence meeting_doc_112151#p001_c0003 and meeting_doc_113956#p003_c0004."
+      ],
+      "reason": "Exact person identity; MTAHQ is a scoped affiliation/title context for the same Patrick Warren name.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "alias_not_existing_merge_target": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "visible_prior_prep_overlap_found": false,
+        "broad_name_guard": "Exact person name with MTAHQ context, not a department-only collision."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_scout-mayor-adams",
+      "target_id": "entity_brooklyn-bp-eric-adams-tsp-2017",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_brooklyn-bp-eric-adams-tsp-2017 and entity_scout-mayor-adams share identity key entity_eric-adams.",
+        "duplicate_global_identity equivalent: Global entity records entity_brooklyn-bp-eric-adams-tsp-2017 and entity_scout-mayor-adams share identity key entity_mayor-eric-adams."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Mayor Eric Adams', entity_name 'Eric Adams', entity_type 'person', evidence meeting_doc_135741#p007_c0010 and meeting_doc_135741#p007_c0009.",
+        "Target canonical record: display_name 'Eric Adams, Brooklyn Borough President', entity_name 'Eric Adams', entity_type 'person', evidence tsp_status_2017#p001_b0001 quotes 'Brooklyn Borough President Eric Adams'."
+      ],
+      "reason": "Exact person identity across role-time surfaces; Mayor Eric Adams and Brooklyn Borough President Eric Adams refer to the same person.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "alias_not_existing_merge_target": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "visible_prior_prep_overlap_found": false,
+        "broad_name_guard": "Exact person name; role titles differ by time but do not create a board or office merge."
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "ids": [
+        "entity_meeting-doc-98256-cdot",
+        "entity_cdot-meeting-doc-104741"
+      ],
+      "reason": "Deferred despite current exact CDOT duplicate because the alias id appears in older prep artifacts, including one note that explicitly skipped it; not reused in batch208."
+    },
+    {
+      "ids": [
+        "entity_paul-l-friman-tbta-gc-jul2024",
+        "entity_meeting-doc-89776-paul-friman"
+      ],
+      "reason": "Deferred because an older prep artifact already identified the broader Paul Friman cluster and deferred it for cluster-aware handling."
+    },
+    {
+      "ids": [
+        "entity_mta-staten-island-railway",
+        "entity_meeting-doc-100241-staten-island-railway"
+      ],
+      "reason": "Deferred because the alias id appears in an older prep artifact; likely valid, but excluded to keep this batch disjoint from visible prior work."
+    },
+    {
+      "ids": [
+        "entity_bronx-cb6-2012-11-webster",
+        "entity_queens-community-board-6"
+      ],
+      "reason": "Deferred as a broad same-number community-board collision across boroughs, not a safe entity alias."
+    },
+    {
+      "ids": [
+        "entity_meeting-doc-140466-nyct-committee-members",
+        "entity_nyct-committee-members",
+        "entity_nyct-transit-committee-members"
+      ],
+      "reason": "Deferred committee/member-list rows because committee identity versus member-list page scope needs exact scoped review."
+    },
+    {
+      "ids": [
+        "entity_mta-entity-update-2025",
+        "entity_mta-real-estate",
+        "entity_mta-construction-and-development"
+      ],
+      "reason": "Deferred broad MTA parent/subunit collisions where merged payload keys from a large MTA record contaminate specific offices or subsidiaries."
+    }
+  ],
+  "blockers": []
+}

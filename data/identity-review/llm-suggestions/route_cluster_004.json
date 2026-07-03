@@ -1,0 +1,80 @@
+{
+  "review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "reviewed_at": "2026-06-08T21:07:18.033Z",
+  "packet_path": "data/identity-review/packets/route_cluster_004.md",
+  "cluster_id": "route_cluster_004",
+  "kind": "route",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "suggestion": {
+    "cluster_id": "route_cluster_004",
+    "kind": "route",
+    "merge_groups": [
+      [
+        "route_able-m15-sbs",
+        "route_first-second-ave-sbs"
+      ]
+    ],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "route_able-m15-sbs",
+          "route_m15-plus"
+        ],
+        "reason": "Variant mismatch: M15-SBS (Select Bus Service) and M15+ (Plus service) are distinct route variants. Negative signal confirms 'variant mismatch: ace-dataset,sbs vs plus-label'. Shared base route M15 alone is insufficient for merging variant types."
+      },
+      {
+        "record_ids": [
+          "route_first-second-ave-sbs",
+          "route_m15-plus"
+        ],
+        "reason": "Variant mismatch: the first record describes M15 SBS (Select Bus Service on 1st/2nd Ave), the second is M15+ (Plus service). The shared alias 'route_m15' is a weak abbreviation applied inconsistently by different source datasets, not an authoritative identity field. Negative signal confirms 'variant mismatch: sbs vs plus-label'."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "route_first-second-ave-sbs",
+        "aliases": [
+          "route_m15"
+        ],
+        "reason": "The BRT route index source used 'M15' as a shorthand label for the M15 SBS route, but this abbreviation overlaps with the local M15 route and causes false duplicate detection."
+      },
+      {
+        "record_id": "route_m15-plus",
+        "aliases": [
+          "route_m15"
+        ],
+        "reason": "The ACE dataset dictionary assigned the M15+ record the alias 'route_m15', an abbreviation that conflicts with the M15 SBS record's alias. Useful for search but not merge authority."
+      }
+    ],
+    "missing_fields": [
+      {
+        "record_id": "route_first-second-ave-sbs",
+        "fields": [
+          "borough",
+          "street",
+          "limits"
+        ]
+      },
+      {
+        "record_id": "route_m15-plus",
+        "fields": [
+          "borough",
+          "street",
+          "limits",
+          "description"
+        ]
+      }
+    ],
+    "ambiguous": [],
+    "suggested_rules": [
+      "Do not merge route records based solely on shared_base_route when variant labels differ (SBS, Plus, Local, Limited). Variant suffix is an authoritative identity field that distinguishes distinct service patterns.",
+      "A record_alias derived from a simplified route_id (e.g., 'route_m15') is weak evidence for duplicate identity when the payload route_id values differ and describe different service variants."
+    ],
+    "confidence": "high",
+    "rationale": "Two records (route_able-m15-sbs and route_first-second-ave-sbs) describe the same M15 Select Bus Service on 1st/2nd Ave in Manhattan — one from ACE enforcement data (label M15-SBS) and one from the BRT route index (label M15, described as First Avenue/Second Avenue SBS). They share the same corridor, borough, and SBS variant type. Conversely, route_m15-plus is a distinct Plus variant; its route_id 'M15+' differs from M15-SBS, and negative signals confirm variant mismatches with both SBS records."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T21-05-50-431Z_3449211-40172be3_identity-review-run_route-cluster-004",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-05-50-432Z_2026-06-08T21-05-50-431Z_3449211-40172be3_identity-review-run_route-cluster-004.jsonl"
+}

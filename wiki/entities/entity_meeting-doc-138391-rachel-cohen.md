@@ -1,0 +1,265 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "entity_meeting-doc-138391-rachel-cohen"
+record_aliases:
+  - "entity_meeting-doc-154986-rachel-cohen"
+  - "entity_meeting-doc-186836-rachel-cohen"
+  - "entity_meeting-doc-205541-rachel-cohen"
+  - "entity_meeting151651-rachel-cohen"
+  - "entity_rachel-cohen"
+  - "entity_rachel-cohen-201601"
+  - "entity_rachel-cohen-2023"
+  - "entity_rachel-cohen-acting-vice-president-of-paratransit"
+  - "entity_rachel-cohen-acting-vp-paratransit-at-mta"
+  - "entity_rachel-cohen-director-systemwide-accessibility"
+  - "entity_rachel-cohen-meeting-doc-164791"
+  - "entity_rachel-cohen-senior-vice-president-paratransit"
+  - "entity_rachel-cohen-systemwide-accessibility"
+  - "entity_rachel-cohen-vice-president-paratransit-nyct"
+record_kind: "entity"
+display_name: "Rachel Cohen"
+source_id: "meeting_doc_128931"
+source_ids:
+  - "meeting_doc_128931"
+  - "meeting_doc_138391"
+  - "meeting_doc_140461"
+  - "meeting_doc_151651"
+  - "meeting_doc_154986"
+  - "meeting_doc_155111"
+  - "meeting_doc_164791"
+  - "meeting_doc_164966"
+  - "meeting_doc_170921"
+  - "meeting_doc_170981"
+  - "meeting_doc_186836"
+  - "meeting_doc_201601"
+  - "meeting_doc_201621"
+  - "meeting_doc_205541"
+  - "meeting_doc_208031"
+  - "meeting_doc_42411"
+local_observation_id: "entity_rachel_cohen_2023"
+local_observation_ids:
+  - "entity_meeting151651_rachel_cohen"
+  - "entity_meeting_doc_138391_rachel_cohen"
+  - "entity_meeting_doc_140461_rachel_cohen"
+  - "entity_meeting_doc_154986_rachel_cohen"
+  - "entity_meeting_doc_170921_rachel_cohen"
+  - "entity_meeting_doc_170981_cohen_rachel"
+  - "entity_meeting_doc_186836_rachel_cohen"
+  - "entity_meeting_doc_201621_rachel_cohen"
+  - "entity_meeting_doc_205541_rachel_cohen"
+  - "entity_meeting_doc_208031_rachel_cohen"
+  - "entity_rachel_cohen_164966"
+  - "entity_rachel_cohen_201601"
+  - "entity_rachel_cohen_2023"
+  - "entity_rachel_cohen_meeting_doc_155111"
+  - "entity_rachel_cohen_meeting_doc_164791"
+  - "entity_rachel_cohen_systemwide_accessibility"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T23:31:12.228Z"
+raw_text: "Requesting Department: Department of Paratransit, Rachel Cohen"
+submission_ids:
+  - "sub_14cf8dd0abbf9dcf"
+  - "sub_16b6f1c26bc78c00"
+  - "sub_173589f3c935f3f4"
+  - "sub_1b8cdafa41a315b9"
+  - "sub_1e80a6b189249226"
+  - "sub_1f5e9ba0ba59ad39"
+  - "sub_332c315665b4f454"
+  - "sub_385042801e8d382a"
+  - "sub_3bf21da39b2c03d4"
+  - "sub_5edffae8b1c305aa"
+  - "sub_76592cd6a5389a9a"
+  - "sub_7e18536817978409"
+  - "sub_9dac719f8bb6713a"
+  - "sub_a9adb0a5bf76506a"
+  - "sub_ea54383160350cb8"
+  - "sub_f3cb62d1b4215c46"
+payload:
+  _merged_field_values:
+    description:
+      - "Requesting Department for Paratransit at MTA NYC Transit"
+      - "Acting VP, Department of Paratransit"
+    organization:
+      - "MTA"
+      - "MTA NYC Transit Department of Paratransit"
+      - "New York City Transit"
+      - "MTA New York City Transit"
+    title:
+      - "Deputy Chief Accessibility Officer / Chief Accessibility Officer"
+      - "Acting Vice President of Paratransit for New York City Transit starting in May"
+      - "Acting Vice President of Paratransit, NYCT"
+      - "Acting Vice President, Paratransit"
+      - "Requesting Department: Department of Paratransit"
+      - "Acting VP, Department of Paratransit, NYC Transit"
+      - "Vice President of Paratransit"
+      - "Vice President, Paratransit, NYCT"
+      - "Department of Paratransit requestor"
+      - "Senior Vice President, Paratransit"
+      - "SVP of Paratransit"
+      - "Director, Systemwide Accessibility"
+  agency: "NYC Transit Department of Paratransit"
+  description: "Requesting Department for Paratransit at MTA NYC Transit"
+  entity_name: "Rachel Cohen"
+  entity_type: "person"
+  organization: "MTA"
+  title: "Deputy Chief Accessibility Officer / Chief Accessibility Officer"
+evidence_refs:
+  -
+    block_id: "p002_c0001"
+    evidence_id: "meeting_doc_128931#p002_c0001"
+    page_number: 2
+    source_id: "meeting_doc_128931"
+    source_path: "raw/sources/meeting_doc_128931/blocks.jsonl"
+    text_sha256: "sha256:539beb1194fc50da23a5bd68a3143d5e84211641fde144f8bb5bd5216b918b35"
+    text_source: "raw_text"
+  -
+    block_id: "p005_c0012"
+    evidence_id: "meeting_doc_128931#p005_c0012"
+    page_number: 5
+    source_id: "meeting_doc_128931"
+    source_path: "raw/sources/meeting_doc_128931/blocks.jsonl"
+    text_sha256: "sha256:f2ced6f0e5936536accbebeb6275db3a16192b53cccf544dbc996bb945b0ddb3"
+    text_source: "raw_text"
+  -
+    block_id: "p018_c0008"
+    evidence_id: "meeting_doc_138391#p018_c0008"
+    page_number: 18
+    source_id: "meeting_doc_138391"
+    source_path: "raw/sources/meeting_doc_138391/blocks.jsonl"
+    text_sha256: "sha256:0f1a53950b12517059cdd011ca795c811524791d6a6720dceb6b8f3d7b57f05e"
+    text_source: "raw_text"
+  -
+    block_id: "p004_c0002"
+    evidence_id: "meeting_doc_140461#p004_c0002"
+    page_number: 4
+    source_id: "meeting_doc_140461"
+    source_path: "raw/sources/meeting_doc_140461/blocks.jsonl"
+    text_sha256: "sha256:caa6fc8408f37df92b47429b0f06ced299d26011f8933be225f35feb67379c28"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0010"
+    evidence_id: "meeting_doc_151651#p001_c0010"
+    page_number: 1
+    role: "entity_attendance"
+    source_id: "meeting_doc_151651"
+    source_path: "raw/sources/meeting_doc_151651/blocks.jsonl"
+    text_sha256: "sha256:c88b212b3a292333b43016164d957e6748cd090e072af45a66184c82dbcc3954"
+    text_source: "raw_text"
+  -
+    block_id: "p006_c0003"
+    evidence_id: "meeting_doc_155111#p006_c0003"
+    page_number: 6
+    source_id: "meeting_doc_155111"
+    source_path: "raw/sources/meeting_doc_155111/blocks.jsonl"
+    text_sha256: "sha256:ec3797154cdd80db8f71a9fc02d18ce614205d6276fde8992151135410136fbc"
+    text_source: "raw_text"
+  -
+    block_id: "p006_c0003"
+    evidence_id: "meeting_doc_154986#p006_c0003"
+    page_number: 6
+    source_id: "meeting_doc_154986"
+    source_path: "raw/sources/meeting_doc_154986/blocks.jsonl"
+    text_sha256: "sha256:ec3797154cdd80db8f71a9fc02d18ce614205d6276fde8992151135410136fbc"
+    text_source: "raw_text"
+  -
+    block_id: "p009_c0003"
+    evidence_id: "meeting_doc_164966#p009_c0003"
+    page_number: 9
+    source_id: "meeting_doc_164966"
+    source_path: "raw/sources/meeting_doc_164966/blocks.jsonl"
+    text_sha256: "sha256:0ea488e63b60fc75c889bfadc8559354afb3182b14a39f5d085c9c96f858d3f0"
+    text_source: "raw_text"
+  -
+    block_id: "p009_c0003"
+    evidence_id: "meeting_doc_164791#p009_c0003"
+    page_number: 9
+    source_id: "meeting_doc_164791"
+    source_path: "raw/sources/meeting_doc_164791/blocks.jsonl"
+    source_quote: "Rachel Cohen, Acting VP"
+    text_sha256: "sha256:2946f480bb6aee4d12089489e921b4ff29b6d82639916c3bc786278e8d83c0b7"
+    text_source: "raw_text"
+  -
+    block_id: "p006_c0003"
+    evidence_id: "meeting_doc_164791#p006_c0003"
+    page_number: 6
+    source_id: "meeting_doc_164791"
+    source_path: "raw/sources/meeting_doc_164791/blocks.jsonl"
+    source_quote: "William Amarosa Jr."
+    text_sha256: "sha256:61c8f07972e9d758e1745f14e91c393cef3f4df53da05fd0873e0593927d03c8"
+    text_source: "raw_text"
+  -
+    block_id: "p004_c0007"
+    evidence_id: "meeting_doc_170921#p004_c0007"
+    page_number: 4
+    role: "appointment"
+    source_id: "meeting_doc_170921"
+    source_path: "raw/sources/meeting_doc_170921/blocks.jsonl"
+    source_quote: "Rachel Cohen as the Vice President of Paratransit"
+    text_sha256: "sha256:6d8f61ae207089a170c555be6243b1ed39664a9c3156661b50bfdc18c2038ded"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0020"
+    evidence_id: "meeting_doc_170981#p001_c0020"
+    page_number: 1
+    source_id: "meeting_doc_170981"
+    source_path: "raw/sources/meeting_doc_170981/blocks.jsonl"
+    source_quote: "Rachel Cohen, Vice President, Paratransit, NYCT"
+    text_sha256: "sha256:0a63b52cdfd8960b4f129acd54248a5f03b543c861a47230b82d29a90043f6ac"
+    text_source: "raw_text"
+  -
+    block_id: "p009_c0004"
+    evidence_id: "meeting_doc_186836#p009_c0004"
+    page_number: 9
+    role: "entity_details"
+    source_id: "meeting_doc_186836"
+    source_path: "raw/sources/meeting_doc_186836/blocks.jsonl"
+    text_sha256: "sha256:a0c8d42411c8b89df86ef9c3adf49a16d423be5314b20901ef793c6138414e3b"
+    text_source: "raw_text"
+  -
+    block_id: "p005_c0002"
+    evidence_id: "meeting_doc_201601#p005_c0002"
+    page_number: 5
+    role: "entity_mention"
+    source_id: "meeting_doc_201601"
+    source_path: "raw/sources/meeting_doc_201601/blocks.jsonl"
+    text_sha256: "sha256:48fad96f80bb3dc87d1b0aab46545d427bd71fa73243542ca88dd7e4c4f62ea6"
+    text_source: "raw_text"
+  -
+    block_id: "p005_c0004"
+    evidence_id: "meeting_doc_201621#p005_c0004"
+    page_number: 5
+    source_id: "meeting_doc_201621"
+    source_path: "raw/sources/meeting_doc_201621/blocks.jsonl"
+    source_quote: "SVP of Paratransit, Rachel Cohen"
+    text_sha256: "sha256:9433d6a53943abc7618f2c45ae1e84b2b209bb6f6c14d78b184cc050c80fd399"
+    text_source: "raw_text"
+  -
+    block_id: "p005_c0003"
+    evidence_id: "meeting_doc_205541#p005_c0003"
+    page_number: 5
+    source_id: "meeting_doc_205541"
+    source_path: "raw/sources/meeting_doc_205541/blocks.jsonl"
+    text_sha256: "sha256:31a4369ec5bbd0b5d31d71fd44c27678137eee6879853934a89d6afcf07f42ed"
+    text_source: "raw_text"
+  -
+    block_id: "p077_c0019"
+    evidence_id: "meeting_doc_208031#p077_c0019"
+    page_number: 77
+    source_id: "meeting_doc_208031"
+    source_path: "raw/sources/meeting_doc_208031/blocks.jsonl"
+    text_sha256: "sha256:02424fb79bdf65d95bff611d00ba7f68af65dffa2bd8969ad0b351b781185ced"
+    text_source: "raw_text"
+  -
+    block_id: "p075_c0002"
+    evidence_id: "meeting_doc_42411#p075_c0002"
+    page_number: 75
+    source_id: "meeting_doc_42411"
+    source_path: "raw/sources/meeting_doc_42411/blocks.jsonl"
+    text_sha256: "sha256:45c625f6d8a0bb5f4d84f2aa83a3e9f558aad10a16861010a52f0d81c54fdb93"
+    text_source: "raw_text"
+---
+
+<!-- mta-wiki:writer:start -->
+
+<!-- mta-wiki:writer:end -->

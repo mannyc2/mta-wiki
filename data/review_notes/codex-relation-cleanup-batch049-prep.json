@@ -1,0 +1,522 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch049-prep",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "batch_id": "relation049",
+  "batch": "batch049",
+  "scope": "Codex-only deterministic/manual relation cleanup prep; no provider-backed commands, post-ingest LLM harnesses, materialize/export-jsonl/full validate/DB publish, generated-output edits, durable retirements, replacement submissions, LOG edits, manifest edits, canonical/generated edits, or code edits applied",
+  "checkpoint_context": {
+    "reported_validate_backlog_after_identity078_relation048": {
+      "issue_count": 1473,
+      "unexpected_relation_endpoint_shape": 18,
+      "duplicate_global_identity": 1455
+    },
+    "selected_bucket": "entity-to-metric_claim relations with wrong relation_kind but source-backed metric semantics",
+    "selected_rows_cleared": 2,
+    "replacement_rows_added": 2,
+    "expected_endpoint_shape_delta": -2,
+    "expected_remaining_unexpected_relation_endpoint_shape_after_apply": 16,
+    "not_repeated": "This prep excludes prior relation cleanup originals through relation048 and does not repeat relation037-relation048 or next22/relation048."
+  },
+  "durable_mechanism_prepared_not_applied": {
+    "retire_originals_via": "data/submission-overrides/retired.json",
+    "replacement_journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch049.jsonl",
+    "mutation_status": "not_applied_by_this_prep",
+    "only_file_written_by_this_task": "data/review_notes/codex-relation-cleanup-batch049-prep.json"
+  },
+  "bucket": {
+    "name": "wrong relation kind for source-backed entity metric associations",
+    "original_endpoint_shapes": [
+      "has_treatment entity -> metric_claim",
+      "has_timeline_event entity -> metric_claim"
+    ],
+    "replacement_relation_kind": "has_metric",
+    "replacement_endpoint_shape": "entity -> metric_claim",
+    "prepared_original_count": 2,
+    "cleanup_direction": "data cleanup only; keep has_treatment scoped to project|corridor|route -> treatment_component and has_timeline_event scoped to event objects",
+    "rationale": "Both originals already connect a durable entity to a durable metric_claim. The cited source blocks support metric association semantics: Grand Central Terminal T-7 elevator availability and TBTA fiscal year 2023 operating surplus. Current endpoint rules already admit has_metric entity -> metric_claim, so no validator widening is needed."
+  },
+  "guards": {
+    "all_pass": true,
+    "originals_accepted_not_retired": {
+      "status": "pass",
+      "selected_originals": [
+        {
+          "submission_id": "sub_54844f41b339d69c",
+          "record_id": "relation_gct-has-elevator-t7",
+          "journal": "data/submissions/2026-06-20T15-10-00-440Z_1885472-8a66f228_ingest_meeting-doc-135296.jsonl",
+          "validation_state": "accepted",
+          "retired_hits": []
+        },
+        {
+          "submission_id": "sub_fc748faa39eb80af",
+          "record_id": "relation_meeting-doc-133551-tbta-surplus-transfer",
+          "journal": "data/submissions/2026-06-20T14-59-27-878Z_1885472-23e27044_ingest_meeting-doc-133551.jsonl",
+          "validation_state": "accepted",
+          "retired_hits": []
+        }
+      ]
+    },
+    "replacements_absent": {
+      "status": "pass",
+      "replacement_submission_ids": [
+        "sub_5e81b8f20d7c5288",
+        "sub_051894ff3c41791a"
+      ],
+      "replacement_submission_id_hits": [],
+      "replacement_local_observation_id_hits": [],
+      "same_semantic_relation_hits_before_apply": [
+        {
+          "record_id": "relation_gct-has-elevator-t7",
+          "relation_kind": "has_treatment",
+          "note": "original malformed relation to retire"
+        },
+        {
+          "record_id": "relation_meeting-doc-133551-tbta-surplus-transfer",
+          "relation_kind": "has_timeline_event",
+          "note": "original malformed relation to retire"
+        }
+      ],
+      "same_replacement_relation_kind_hits": []
+    },
+    "local_observation_ids_not_colliding": {
+      "status": "pass",
+      "replacement_local_observation_ids": [
+        "relation_gct_has_metric_elevator_t7_availability",
+        "relation_tbta_has_metric_operating_surplus_2023"
+      ],
+      "local_observation_id_hits": []
+    },
+    "endpoint_shape_valid_under_packages_pipeline_src_records_relations_ts": {
+      "status": "pass",
+      "original_endpoint_shape_issues": [
+        "Relation kind has_treatment expects project|corridor|route -> treatment_component, got entity -> metric_claim.",
+        "Relation kind has_timeline_event expects project|route|corridor|entity|source|event -> event, got entity -> metric_claim."
+      ],
+      "replacement_endpoint_shape_issue": null,
+      "replacement_relation_kind": "has_metric",
+      "replacement_subject_kind": "entity",
+      "replacement_object_kind": "metric_claim",
+      "current_valid_has_metric_subject_kinds": [
+        "project",
+        "route",
+        "corridor",
+        "entity",
+        "event",
+        "claim"
+      ],
+      "current_valid_has_metric_object_kinds": [
+        "metric_claim"
+      ]
+    },
+    "endpoint_local_ids_known": {
+      "status": "pass",
+      "sources": [
+        {
+          "source_id": "meeting_doc_135296",
+          "known_local_observation_ids": [
+            {
+              "local_observation_id": "entity_gct_2023_elevator_escalator",
+              "submission_id": "sub_4fcbdb3bb358faf5",
+              "observation_kind": "entity",
+              "validation_state": "accepted"
+            },
+            {
+              "local_observation_id": "metric_gct_elevator_t7_availability",
+              "submission_id": "sub_103b909a178c10ad",
+              "observation_kind": "metric_claim",
+              "validation_state": "accepted"
+            }
+          ]
+        },
+        {
+          "source_id": "meeting_doc_133551",
+          "known_local_observation_ids": [
+            {
+              "local_observation_id": "entity_meeting_doc_133551_tbta",
+              "submission_id": "sub_e349650d9d3c66a7",
+              "observation_kind": "entity",
+              "validation_state": "accepted"
+            },
+            {
+              "local_observation_id": "metric_meeting_doc_133551_tbta_operating_surplus",
+              "submission_id": "sub_247aabbded90f61c",
+              "observation_kind": "metric_claim",
+              "validation_state": "accepted"
+            }
+          ]
+        }
+      ]
+    },
+    "evidence_supports_metric_semantics": {
+      "status": "pass",
+      "items": [
+        {
+          "record_id": "relation_gct-has-elevator-t7",
+          "summary": "The cited table row contains Grand Central Terminal T-7 and 97.0 percent availability. The canonical object is metric_gct-elevator-t7-availability, a 2023 elevator availability metric claim for Grand Central Terminal T-7. That supports has_metric entity -> metric_claim, not has_treatment entity -> metric_claim.",
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_135296",
+              "evidence_id": "meeting_doc_135296#p003_c0003",
+              "source_path": "raw/sources/meeting_doc_135296/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0003",
+              "text_sha256": "sha256:becba107ed18f102d1e48f1cad24f5da1413b580231017e9bc18a9f365e9ed8c",
+              "text_source": "raw_text",
+              "source_quote": "GRAND CENTRAL TERMINAL T-7 97.0%"
+            }
+          ]
+        },
+        {
+          "record_id": "relation_meeting-doc-133551-tbta-surplus-transfer",
+          "summary": "The cited text states that the Deloitte calculation represents TBTA operating surplus for fiscal year ending December 31, 2023 and gives the surplus available for transfer. The canonical object is metric_meeting-doc-133551-tbta-operating-surplus. That supports has_metric entity -> metric_claim, not has_timeline_event entity -> metric_claim.",
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_133551",
+              "evidence_id": "meeting_doc_133551#p031_c0011",
+              "source_path": "raw/sources/meeting_doc_133551/blocks.jsonl",
+              "page_number": 31,
+              "block_id": "p031_c0011",
+              "text_sha256": "sha256:b6ec22b14ffb991570c6c7ef398b01416b3616dad81f7a89d2ad933d9719ae1b",
+              "text_source": "raw_text",
+              "source_quote": "operating surplus for fiscal year ending December 31, 2023"
+            }
+          ]
+        }
+      ]
+    },
+    "no_generated_files_edited": {
+      "status": "pass_for_this_task",
+      "note": "This task writes only data/review_notes/codex-relation-cleanup-batch049-prep.json and does not edit retired.json, submissions, canonical JSONL, materialized data, wiki output, LOG, manifest, code, or generated files."
+    }
+  },
+  "local_validation": {
+    "clean": true,
+    "tooling": "Read-only rg/jq/sed inspection plus bun --eval createSubmissionEntry/relationEndpointIssues/relationEndpointShapeIssue dry-runs using direct local imports; no appendSubmission, materialize, export-jsonl, full validate, DB publish, provider-backed command, or generated-output command run.",
+    "summary": {
+      "prepared_count": 2,
+      "retire_replace_count": 2,
+      "retire_only_count": 0,
+      "replacement_submission_count": 2,
+      "accepted_replacement_count": 2,
+      "issue_count": 0,
+      "warning_count": 0,
+      "relation_endpoint_issue_count": 0,
+      "endpoint_shape_issue_count_after_replacement": 0,
+      "expected_endpoint_shape_delta": -2
+    }
+  },
+  "prepared_count": 2,
+  "retire_replace_count": 2,
+  "retire_only_count": 0,
+  "accepted_replacement_count": 2,
+  "issue_count": 0,
+  "expected_endpoint_shape_delta": -2,
+  "all_pass": true,
+  "decisions": [
+    {
+      "action": "retire_and_replace",
+      "retire": {
+        "submission_id": "sub_54844f41b339d69c",
+        "run_id": "2026-06-20T15-10-00-440Z_1885472-8a66f228_ingest_meeting-doc-135296",
+        "original_record_id": "relation_gct-has-elevator-t7",
+        "original_local_observation_id": "relation_gct_has_elevator_t7",
+        "malformed_shape": "has_treatment entity -> metric_claim",
+        "original_relation_kind": "has_treatment",
+        "original_subject_id": "entity_grand-central-terminal",
+        "original_subject_kind": "entity",
+        "original_subject_local_observation_id": "entity_gct_2023_elevator_escalator",
+        "original_subject_name": "Grand Central Terminal (GCT)",
+        "original_object_id": "metric_gct-elevator-t7-availability",
+        "original_object_kind": "metric_claim",
+        "original_object_local_observation_id": "metric_gct_elevator_t7_availability",
+        "original_object_name": "GCT T-7 Elevator Availability 2023",
+        "source_ids": [
+          "meeting_doc_135296"
+        ],
+        "current_args": {
+          "source_id": "meeting_doc_135296",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_gct_has_elevator_t7",
+          "label": "Grand Central Terminal has elevator T-7",
+          "payload": {
+            "relation_kind": "has_treatment",
+            "subject_local_observation_id": "entity_gct_2023_elevator_escalator",
+            "object_local_observation_id": "metric_gct_elevator_t7_availability",
+            "relation_family": "treatment_context",
+            "raw_relation_kind": "has_treatment_component"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_135296",
+              "evidence_id": "meeting_doc_135296#p003_c0003",
+              "source_path": "raw/sources/meeting_doc_135296/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0003",
+              "text_sha256": "sha256:becba107ed18f102d1e48f1cad24f5da1413b580231017e9bc18a9f365e9ed8c",
+              "text_source": "raw_text"
+            }
+          ]
+        },
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_54844f41b339d69c",
+          "reason": "Codex relation cleanup batch049 replaces malformed has_treatment entity -> metric_claim relation relation_gct-has-elevator-t7 with validator-compatible has_metric entity -> metric_claim relation preserving the Grand Central Terminal T-7 elevator availability evidence.",
+          "source_decision": "data/review_notes/codex-relation-cleanup-batch049-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch049",
+          "reviewed_at": "2026-06-23T00:00:00Z"
+        },
+        "reason": "The cited table supports a metric claim for Grand Central Terminal T-7 elevator availability. It does not support a has_treatment relation whose object is a metric_claim.",
+        "expected_endpoint_shape_delta": -1,
+        "confidence": "high"
+      },
+      "replacement": {
+        "run_id": "2026-06-23_codex_relation_cleanup_batch049",
+        "journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch049.jsonl",
+        "id_generation": {
+          "method": "createSubmissionEntry(runId, rawToolArgs, '2026-06-23T00:00:00.000Z') with relationEndpointIssues added; stable hash is over normalized tool_args.",
+          "deterministic_submission_id": "sub_5e81b8f20d7c5288",
+          "tool_args_sha256": "sha256:5e81b8f20d7c528866398f225bb1a5809302c8977f444614cbd1f2a634fa9225",
+          "conductor_required": false
+        },
+        "replacement_entries": [
+          {
+            "role": "corrected relation replacement",
+            "tool_name": "submit_observation",
+            "review_state": "accepted",
+            "deterministic_submission_id": "sub_5e81b8f20d7c5288",
+            "tool_args_sha256": "sha256:5e81b8f20d7c528866398f225bb1a5809302c8977f444614cbd1f2a634fa9225",
+            "proposed_relation_kind": "has_metric",
+            "proposed_endpoint_shape": "entity -> metric_claim",
+            "entry": {
+              "submission_id": "sub_5e81b8f20d7c5288",
+              "run_id": "2026-06-23_codex_relation_cleanup_batch049",
+              "submitted_at": "2026-06-23T00:00:00.000Z",
+              "tool_args_sha256": "sha256:5e81b8f20d7c528866398f225bb1a5809302c8977f444614cbd1f2a634fa9225",
+              "schema_version": 2,
+              "tool_args": {
+                "source_id": "meeting_doc_135296",
+                "observation_kind": "relation",
+                "local_observation_id": "relation_gct_has_metric_elevator_t7_availability",
+                "label": "Grand Central Terminal has GCT T-7 elevator availability metric",
+                "payload": {
+                  "relation_kind": "has_metric",
+                  "subject_local_observation_id": "entity_gct_2023_elevator_escalator",
+                  "object_local_observation_id": "metric_gct_elevator_t7_availability",
+                  "description": "Grand Central Terminal has a 2023 availability metric for elevator T-7.",
+                  "relation_family": "metric_context"
+                },
+                "evidence_refs": [
+                  {
+                    "source_id": "meeting_doc_135296",
+                    "evidence_id": "meeting_doc_135296#p003_c0003",
+                    "source_path": "raw/sources/meeting_doc_135296/blocks.jsonl",
+                    "page_number": 3,
+                    "block_id": "p003_c0003",
+                    "text_sha256": "sha256:becba107ed18f102d1e48f1cad24f5da1413b580231017e9bc18a9f365e9ed8c",
+                    "text_source": "raw_text",
+                    "source_quote": "GRAND CENTRAL TERMINAL T-7 97.0%"
+                  }
+                ]
+              },
+              "validation": {
+                "state": "accepted",
+                "issues": []
+              }
+            },
+            "raw_tool_args_for_replay": {
+              "source_id": "meeting_doc_135296",
+              "observation_kind": "relation",
+              "local_observation_id": "relation_gct_has_metric_elevator_t7_availability",
+              "label": "Grand Central Terminal has GCT T-7 elevator availability metric",
+              "payload": {
+                "relation_kind": "has_metric",
+                "subject_local_observation_id": "entity_gct_2023_elevator_escalator",
+                "object_local_observation_id": "metric_gct_elevator_t7_availability",
+                "description": "Grand Central Terminal has a 2023 availability metric for elevator T-7."
+              },
+              "evidence_refs": [
+                {
+                  "source_id": "meeting_doc_135296",
+                  "evidence_id": "meeting_doc_135296#p003_c0003",
+                  "source_path": "raw/sources/meeting_doc_135296/blocks.jsonl",
+                  "page_number": 3,
+                  "block_id": "p003_c0003",
+                  "text_sha256": "sha256:becba107ed18f102d1e48f1cad24f5da1413b580231017e9bc18a9f365e9ed8c",
+                  "text_source": "raw_text",
+                  "source_quote": "GRAND CENTRAL TERMINAL T-7 97.0%"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "action": "retire_and_replace",
+      "retire": {
+        "submission_id": "sub_fc748faa39eb80af",
+        "run_id": "2026-06-20T14-59-27-878Z_1885472-23e27044_ingest_meeting-doc-133551",
+        "original_record_id": "relation_meeting-doc-133551-tbta-surplus-transfer",
+        "original_local_observation_id": "relation_meeting_doc_133551_tbta_surplus_transfer",
+        "malformed_shape": "has_timeline_event entity -> metric_claim",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_id": "entity_meeting-doc-tbta",
+        "original_subject_kind": "entity",
+        "original_subject_local_observation_id": "entity_meeting_doc_133551_tbta",
+        "original_subject_name": "Triborough Bridge and Tunnel Authority (TBTA)",
+        "original_object_id": "metric_meeting-doc-133551-tbta-operating-surplus",
+        "original_object_kind": "metric_claim",
+        "original_object_local_observation_id": "metric_meeting_doc_133551_tbta_operating_surplus",
+        "original_object_name": "TBTA Operating Surplus 2023",
+        "source_ids": [
+          "meeting_doc_133551"
+        ],
+        "current_args": {
+          "source_id": "meeting_doc_133551",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_meeting_doc_133551_tbta_surplus_transfer",
+          "label": "TBTA surplus transferred to MTA and NYCTA",
+          "payload": {
+            "relation_kind": "has_timeline_event",
+            "subject_local_observation_id": "entity_meeting_doc_133551_tbta",
+            "object_local_observation_id": "metric_meeting_doc_133551_tbta_operating_surplus",
+            "relation_family": "timeline_context"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_133551",
+              "evidence_id": "meeting_doc_133551#p031_c0008",
+              "source_path": "raw/sources/meeting_doc_133551/blocks.jsonl",
+              "page_number": 31,
+              "block_id": "p031_c0008",
+              "text_sha256": "sha256:f2c1ee3ea68ee6d4817ff1c9daf303b7baf374d8bbdab67e026b26f922c4d0c4",
+              "text_source": "raw_text"
+            },
+            {
+              "source_id": "meeting_doc_133551",
+              "evidence_id": "meeting_doc_133551#p031_c0011",
+              "source_path": "raw/sources/meeting_doc_133551/blocks.jsonl",
+              "page_number": 31,
+              "block_id": "p031_c0011",
+              "text_sha256": "sha256:b6ec22b14ffb991570c6c7ef398b01416b3616dad81f7a89d2ad933d9719ae1b",
+              "text_source": "raw_text"
+            }
+          ]
+        },
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_fc748faa39eb80af",
+          "reason": "Codex relation cleanup batch049 replaces malformed has_timeline_event entity -> metric_claim relation relation_meeting-doc-133551-tbta-surplus-transfer with validator-compatible has_metric entity -> metric_claim relation preserving the TBTA fiscal year 2023 operating surplus evidence.",
+          "source_decision": "data/review_notes/codex-relation-cleanup-batch049-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch049",
+          "reviewed_at": "2026-06-23T00:00:00Z"
+        },
+        "reason": "The cited text supports a TBTA fiscal year 2023 operating surplus metric claim. It does not support a has_timeline_event relation whose object is a metric_claim.",
+        "expected_endpoint_shape_delta": -1,
+        "confidence": "high"
+      },
+      "replacement": {
+        "run_id": "2026-06-23_codex_relation_cleanup_batch049",
+        "journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch049.jsonl",
+        "id_generation": {
+          "method": "createSubmissionEntry(runId, rawToolArgs, '2026-06-23T00:00:00.000Z') with relationEndpointIssues added; stable hash is over normalized tool_args.",
+          "deterministic_submission_id": "sub_051894ff3c41791a",
+          "tool_args_sha256": "sha256:051894ff3c41791adf67a6de19ca414810b79831cdc9cd65e28e500a40fbdf72",
+          "conductor_required": false
+        },
+        "replacement_entries": [
+          {
+            "role": "corrected relation replacement",
+            "tool_name": "submit_observation",
+            "review_state": "accepted",
+            "deterministic_submission_id": "sub_051894ff3c41791a",
+            "tool_args_sha256": "sha256:051894ff3c41791adf67a6de19ca414810b79831cdc9cd65e28e500a40fbdf72",
+            "proposed_relation_kind": "has_metric",
+            "proposed_endpoint_shape": "entity -> metric_claim",
+            "entry": {
+              "submission_id": "sub_051894ff3c41791a",
+              "run_id": "2026-06-23_codex_relation_cleanup_batch049",
+              "submitted_at": "2026-06-23T00:00:00.000Z",
+              "tool_args_sha256": "sha256:051894ff3c41791adf67a6de19ca414810b79831cdc9cd65e28e500a40fbdf72",
+              "schema_version": 2,
+              "tool_args": {
+                "source_id": "meeting_doc_133551",
+                "observation_kind": "relation",
+                "local_observation_id": "relation_tbta_has_metric_operating_surplus_2023",
+                "label": "TBTA has 2023 operating surplus metric",
+                "payload": {
+                  "relation_kind": "has_metric",
+                  "subject_local_observation_id": "entity_meeting_doc_133551_tbta",
+                  "object_local_observation_id": "metric_meeting_doc_133551_tbta_operating_surplus",
+                  "description": "TBTA has a fiscal year 2023 operating surplus metric available for transfer to MTA and NYCTA.",
+                  "relation_family": "metric_context"
+                },
+                "evidence_refs": [
+                  {
+                    "source_id": "meeting_doc_133551",
+                    "evidence_id": "meeting_doc_133551#p031_c0011",
+                    "source_path": "raw/sources/meeting_doc_133551/blocks.jsonl",
+                    "page_number": 31,
+                    "block_id": "p031_c0011",
+                    "text_sha256": "sha256:b6ec22b14ffb991570c6c7ef398b01416b3616dad81f7a89d2ad933d9719ae1b",
+                    "text_source": "raw_text",
+                    "source_quote": "operating surplus for fiscal year ending December 31, 2023"
+                  }
+                ]
+              },
+              "validation": {
+                "state": "accepted",
+                "issues": []
+              }
+            },
+            "raw_tool_args_for_replay": {
+              "source_id": "meeting_doc_133551",
+              "observation_kind": "relation",
+              "local_observation_id": "relation_tbta_has_metric_operating_surplus_2023",
+              "label": "TBTA has 2023 operating surplus metric",
+              "payload": {
+                "relation_kind": "has_metric",
+                "subject_local_observation_id": "entity_meeting_doc_133551_tbta",
+                "object_local_observation_id": "metric_meeting_doc_133551_tbta_operating_surplus",
+                "description": "TBTA has a fiscal year 2023 operating surplus metric available for transfer to MTA and NYCTA."
+              },
+              "evidence_refs": [
+                {
+                  "source_id": "meeting_doc_133551",
+                  "evidence_id": "meeting_doc_133551#p031_c0011",
+                  "source_path": "raw/sources/meeting_doc_133551/blocks.jsonl",
+                  "page_number": 31,
+                  "block_id": "p031_c0011",
+                  "text_sha256": "sha256:b6ec22b14ffb991570c6c7ef398b01416b3616dad81f7a89d2ad933d9719ae1b",
+                  "text_source": "raw_text",
+                  "source_quote": "operating surplus for fiscal year ending December 31, 2023"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "commands_run_read_only": [
+    "sed -n '1,220p' packages/pipeline/src/records/relations.ts",
+    "sed -n '220,430p' packages/pipeline/src/records/relations.ts",
+    "sed -n '1,520p' packages/pipeline/src/records/submissions.ts",
+    "sed -n '1,260p' data/review_notes/codex-relation-cleanup-batch048-prep.json",
+    "sed -n '1,240p' data/submission-overrides/retired.json",
+    "bun --eval '<targeted endpoint-shape inventory over data/canonical/*.jsonl and relationEndpointShapeIssue(), excluding retired submissions and prior relation cleanup prep originals through relation048>'",
+    "jq -c 'select(.submission_id==\"sub_54844f41b339d69c\" or .submission_id==\"sub_fc748faa39eb80af\")' data/submissions/*.jsonl",
+    "jq -c 'select(.record_id==\"entity_grand-central-terminal\" or .record_id==\"metric_gct-elevator-t7-availability\" or .record_id==\"entity_meeting-doc-tbta\" or .record_id==\"metric_meeting-doc-133551-tbta-operating-surplus\")' data/canonical/entities.jsonl data/canonical/metric_claims.jsonl",
+    "jq -c 'select((.source_id==\"meeting_doc_135296\" and .block_id==\"p003_c0003\") or (.source_id==\"meeting_doc_133551\" and (.block_id==\"p031_c0008\" or .block_id==\"p031_c0011\")))' raw/sources/meeting_doc_135296/blocks.jsonl raw/sources/meeting_doc_133551/blocks.jsonl",
+    "jq -c '.retired[]? | select(.submission_id==\"sub_54844f41b339d69c\" or .submission_id==\"sub_fc748faa39eb80af\")' data/submission-overrides/retired.json",
+    "bun --eval '<createSubmissionEntry dry-run for relation049 replacements; no appendSubmission>'",
+    "rg -n 'sub_5e81b8f20d7c5288|sub_051894ff3c41791a|relation_gct_has_metric_elevator_t7_availability|relation_tbta_has_metric_operating_surplus_2023' data/submissions data/canonical data/review_notes data/submission-overrides/retired.json -S",
+    "jq -c '<endpoint local id accepted checks for meeting_doc_135296 and meeting_doc_133551>' data/submissions/*.jsonl",
+    "jq -c '<same endpoint relation search for selected metric associations>' data/canonical/relations.jsonl"
+  ],
+  "apply_readiness": {
+    "conductor_can_apply_immediately": true,
+    "apply_steps": [
+      "Add the two proposed_retired_json_entry objects for sub_54844f41b339d69c and sub_fc748faa39eb80af to data/submission-overrides/retired.json.",
+      "Append the proposed replacement entries sub_5e81b8f20d7c5288 and sub_051894ff3c41791a to data/submissions/2026-06-23_codex_relation_cleanup_batch049.jsonl.",
+      "Do not change relation endpoint-shape validator rules for this cleanup."
+    ]
+  }
+}

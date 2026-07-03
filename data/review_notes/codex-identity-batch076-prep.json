@@ -1,0 +1,982 @@
+{
+  "note_id": "codex-identity-batch076-prep",
+  "batch_id": "identity076",
+  "batch": "identity-batch076",
+  "created_at": "2026-06-23T00:42:31Z",
+  "lane": "codex-only identity cleanup",
+  "status": "prepared",
+  "prepared_count": 8,
+  "intended_alias_count": 8,
+  "baseline_context": {
+    "source": "user-supplied fresh baseline after identity075/relation043 checkpoint",
+    "duplicate_global_identity": 1487,
+    "unexpected_relation_endpoint_shape": 26
+  },
+  "scope": {
+    "record_kind": "entity",
+    "decision_kind": "duplicate_global_identity",
+    "selection_rule": "High-confidence full-name person entity duplicates with exact canonical payload.entity_name matches, compatible title/organization/source context, current duplicate_global_identity validator rows, and no overlap with live identity overrides, identity_aliases, do-not-merge pairs, or Codex identity prep batches through 075."
+  },
+  "intended_mutation": {
+    "aliases": {
+      "entity": {
+        "entity_meeting91591-rose-davis": "entity_rose-davis",
+        "entity_meeting-doc-95296-steven-weiss": "entity_steven-weiss-financial-liaison",
+        "entity_louis-montanti-meeting-doc-98291": "entity_louis-montanti",
+        "entity_meeting-robert-free": "entity_meeting-doc-129041-robert-free",
+        "entity_meeting91596-quemuel-arroyo": "entity_meeting-doc-102806-quemuel-arroyo",
+        "entity_olga-chernat-deputy-financial-services": "entity_meeting-doc-129041-olga-chernat",
+        "entity_meeting-doc-72536-richard-hildebrand": "entity_richard-hildebrand",
+        "entity_meeting-doc-151641-lourdes-zapata": "entity_meeting-doc-128991-lourdes-zapata"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "alias_id": "entity_meeting91591-rose-davis",
+      "target_id": "entity_rose-davis",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Rose Davis' and Project Manager title context. The alias is a two-source shard, while the target aggregates the same Rose Davis / Project Manager identity across many MTA meeting documents.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting91591-rose-davis",
+          "display_name": "Rose Davis",
+          "entity_name": "Rose Davis",
+          "entity_type": "person",
+          "title": "Project Manager",
+          "source_ids": [
+            "meeting_doc_91591",
+            "meeting_doc_95156"
+          ],
+          "record_aliases": [
+            "entity_meeting-doc-95156-rose-davis",
+            "entity_rose-davis"
+          ],
+          "evidence_refs": [
+            "meeting_doc_95156#p004_c0001",
+            "meeting_doc_91591#p004_c0001"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_95156/blocks.jsonl",
+            "raw/sources/meeting_doc_91591/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_rose-davis",
+          "display_name": "Rose Davis",
+          "entity_name": "Rose Davis",
+          "entity_type": "person",
+          "title": "Project Manager",
+          "organization": "MTA Long Island Rail Road",
+          "source_id_count": 58,
+          "source_ids": [
+            "meeting_doc_105946",
+            "meeting_doc_107536",
+            "meeting_doc_107606",
+            "meeting_doc_111826",
+            "meeting_doc_115191",
+            "meeting_doc_115251",
+            "meeting_doc_121066",
+            "meeting_doc_124311",
+            "meeting_doc_129071",
+            "meeting_doc_131566",
+            "meeting_doc_133351",
+            "meeting_doc_135306",
+            "meeting_doc_135311",
+            "meeting_doc_135381",
+            "meeting_doc_138251",
+            "meeting_doc_140481",
+            "meeting_doc_143176",
+            "meeting_doc_143191",
+            "meeting_doc_143366",
+            "meeting_doc_146991",
+            "meeting_doc_151741",
+            "meeting_doc_154986",
+            "meeting_doc_155096",
+            "meeting_doc_155111",
+            "meeting_doc_155156",
+            "meeting_doc_157656",
+            "meeting_doc_157696",
+            "meeting_doc_157701",
+            "meeting_doc_160196",
+            "meeting_doc_160286",
+            "meeting_doc_160311",
+            "meeting_doc_160316",
+            "meeting_doc_163216",
+            "meeting_doc_164941",
+            "meeting_doc_164961",
+            "meeting_doc_164966",
+            "meeting_doc_167236",
+            "meeting_doc_171001",
+            "meeting_doc_171011",
+            "meeting_doc_174066",
+            "meeting_doc_176321",
+            "meeting_doc_176436",
+            "meeting_doc_176506",
+            "meeting_doc_179676",
+            "meeting_doc_186846",
+            "meeting_doc_189981",
+            "meeting_doc_190081",
+            "meeting_doc_192241",
+            "meeting_doc_193996",
+            "meeting_doc_194091",
+            "meeting_doc_194146",
+            "meeting_doc_196901",
+            "meeting_doc_197026",
+            "meeting_doc_199111",
+            "meeting_doc_201541",
+            "meeting_doc_205611",
+            "meeting_doc_205626",
+            "meeting_doc_95301"
+          ],
+          "record_alias_count": 57,
+          "record_aliases_sample": [
+            "entity_m190081-rose-davis",
+            "entity_meeting-doc-107536-rose-davis",
+            "entity_meeting-doc-107606-rose-davis",
+            "entity_meeting-doc-111826-rose-davis",
+            "entity_rose-davis-lirr-procurement",
+            "entity_rose-davis-project-manager"
+          ],
+          "evidence_ref_count": 58,
+          "evidence_refs_sample": [
+            "meeting_doc_105946#p004_c0001",
+            "meeting_doc_107606#p003_c0001",
+            "meeting_doc_107536#p004_c0001",
+            "meeting_doc_111826#p004_c0001",
+            "meeting_doc_115191#p003_c0001",
+            "meeting_doc_121066#p004_c0001"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_105946/blocks.jsonl",
+            "raw/sources/meeting_doc_107606/blocks.jsonl",
+            "raw/sources/meeting_doc_107536/blocks.jsonl",
+            "raw/sources/meeting_doc_111826/blocks.jsonl",
+            "raw/sources/meeting_doc_115191/blocks.jsonl",
+            "raw/sources/meeting_doc_121066/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting91591-rose-davis and entity_rose-davis share identity key entity_rose-davis.",
+          "records: entity_meeting91591-rose-davis | entity | Rose Davis | meeting_doc_95156 | source_stated | unreviewed",
+          "records: entity_rose-davis | entity | Rose Davis | meeting_doc_105946 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_075": true,
+        "target_not_in_prior_batches_001_075": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_identity_aliases_table": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true,
+        "current_duplicate_global_identity_validator_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-95296-steven-weiss",
+      "target_id": "entity_steven-weiss-financial-liaison",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Steven Weiss' and Financial Liaison context for Metro-North / MTA Office of the Chief Financial Officer. The alias is a one-source meeting document shard, while the target aggregates the same role across many sources.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-95296-steven-weiss",
+          "display_name": "Steven Weiss",
+          "entity_name": "Steven Weiss",
+          "entity_type": "person",
+          "title": "Financial Liaison, Metro-North Railroad MTA Office of the Chief Financial Officer",
+          "organization": "MTA Office of the Chief Financial Officer",
+          "source_ids": [
+            "meeting_doc_95296"
+          ],
+          "record_aliases": [
+            "entity_steven-weiss"
+          ],
+          "evidence_refs": [
+            "meeting_doc_95296#p001_c0004",
+            "meeting_doc_95296#p001_c0005"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_95296/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_steven-weiss-financial-liaison",
+          "display_name": "Steven Weiss, Financial Liaison",
+          "entity_name": "Steven Weiss",
+          "entity_type": "person",
+          "title": "Financial Liaison",
+          "organization": "Metro-North Railroad",
+          "source_id_count": 37,
+          "source_ids": [
+            "meeting_doc_100301",
+            "meeting_doc_102706",
+            "meeting_doc_105861",
+            "meeting_doc_107626",
+            "meeting_doc_111751",
+            "meeting_doc_113921",
+            "meeting_doc_121111",
+            "meeting_doc_121121",
+            "meeting_doc_124211",
+            "meeting_doc_127526",
+            "meeting_doc_131531",
+            "meeting_doc_133346",
+            "meeting_doc_135301",
+            "meeting_doc_138241",
+            "meeting_doc_140316",
+            "meeting_doc_143186",
+            "meeting_doc_146936",
+            "meeting_doc_151816",
+            "meeting_doc_155031",
+            "meeting_doc_157666",
+            "meeting_doc_160171",
+            "meeting_doc_164876",
+            "meeting_doc_166946",
+            "meeting_doc_170856",
+            "meeting_doc_173896",
+            "meeting_doc_176336",
+            "meeting_doc_179521",
+            "meeting_doc_186676",
+            "meeting_doc_186681",
+            "meeting_doc_189886",
+            "meeting_doc_192166",
+            "meeting_doc_194086",
+            "meeting_doc_196956",
+            "meeting_doc_29961",
+            "meeting_doc_37071",
+            "meeting_doc_95311",
+            "meeting_doc_98261"
+          ],
+          "record_alias_count": 35,
+          "record_aliases_sample": [
+            "entity_133346-steven-weiss",
+            "entity_meeting-doc-102706-steven-weiss",
+            "entity_meeting-doc-105861-steven-weiss",
+            "entity_steven-weiss",
+            "entity_steven-weiss-financial-liaison-feb2025",
+            "entity_steven-weiss-mnr-fin-liaison"
+          ],
+          "evidence_ref_count": 38,
+          "evidence_refs_sample": [
+            "meeting_doc_100301#p001_c0004",
+            "meeting_doc_102706#p001_c0004",
+            "meeting_doc_105861#p001_c0004",
+            "meeting_doc_107626#p001_c0004",
+            "meeting_doc_121121#p001_c0004",
+            "meeting_doc_113921#p001_c0004"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_100301/blocks.jsonl",
+            "raw/sources/meeting_doc_102706/blocks.jsonl",
+            "raw/sources/meeting_doc_105861/blocks.jsonl",
+            "raw/sources/meeting_doc_107626/blocks.jsonl",
+            "raw/sources/meeting_doc_121121/blocks.jsonl",
+            "raw/sources/meeting_doc_113921/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-95296-steven-weiss and entity_steven-weiss-financial-liaison share identity key entity_steven-weiss.",
+          "records: entity_meeting-doc-95296-steven-weiss | entity | Steven Weiss | meeting_doc_95296 | source_stated | unreviewed",
+          "records: entity_steven-weiss-financial-liaison | entity | Steven Weiss, Financial Liaison | meeting_doc_100301 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_075": true,
+        "target_not_in_prior_batches_001_075": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_identity_aliases_table": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true,
+        "current_duplicate_global_identity_validator_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_louis-montanti-meeting-doc-98291",
+      "target_id": "entity_louis-montanti",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Louis Montanti' and Deputy Chief Procurement Officer / Procurement Operations context. The alias is a one-source shard, while the target aggregates the same MTA procurement identity across many meeting documents.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_louis-montanti-meeting-doc-98291",
+          "display_name": "Louis Montanti",
+          "entity_name": "Louis Montanti",
+          "entity_type": "person",
+          "title": "MTA Deputy Chief Procurement Officer - Procurement Operations",
+          "source_ids": [
+            "meeting_doc_98291"
+          ],
+          "record_aliases": [
+            "entity_louis-montanti"
+          ],
+          "evidence_refs": [
+            "meeting_doc_98291#p002_c0003"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_98291/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_louis-montanti",
+          "display_name": "Louis Montanti, Deputy Chief Procurement Officer, Operations, MTA",
+          "entity_name": "Louis Montanti",
+          "entity_type": "person",
+          "title": "Deputy Chief Procurement Officer, Operations, MTA",
+          "organization": "Metropolitan Transportation Authority",
+          "source_id_count": 30,
+          "source_ids": [
+            "meeting_doc_102806",
+            "meeting_doc_105946",
+            "meeting_doc_107531",
+            "meeting_doc_107536",
+            "meeting_doc_111826",
+            "meeting_doc_111971",
+            "meeting_doc_113946",
+            "meeting_doc_115251",
+            "meeting_doc_121066",
+            "meeting_doc_124306",
+            "meeting_doc_124311",
+            "meeting_doc_127551",
+            "meeting_doc_131546",
+            "meeting_doc_131566",
+            "meeting_doc_133236",
+            "meeting_doc_138441",
+            "meeting_doc_138616",
+            "meeting_doc_140461",
+            "meeting_doc_154986",
+            "meeting_doc_155111",
+            "meeting_doc_164966",
+            "meeting_doc_167236",
+            "meeting_doc_170981",
+            "meeting_doc_171011",
+            "meeting_doc_176436",
+            "meeting_doc_190081",
+            "meeting_doc_192241",
+            "meeting_doc_193996",
+            "meeting_doc_196901",
+            "meeting_doc_98296"
+          ],
+          "record_alias_count": 33,
+          "record_aliases_sample": [
+            "entity_louis-montanti-dcpo-mta",
+            "entity_louis-montanti-deputy-chief-procurement-officer",
+            "entity_louis-montanti-deputy-chief-procurement-officer-operations-mta",
+            "entity_louis-montanti-mta-deputy-chief-procurement-officer-procurement-operations",
+            "entity_meeting-doc-102806-louis-montanti",
+            "entity_meeting-doc-98296-louis-montanti"
+          ],
+          "evidence_ref_count": 35,
+          "evidence_refs_sample": [
+            "meeting_doc_102806#p001_c0006",
+            "meeting_doc_105946#p002_c0003",
+            "meeting_doc_107536#p002_c0003",
+            "meeting_doc_107536#p007_c0004",
+            "meeting_doc_107531#p002_c0001",
+            "meeting_doc_111826#p002_c0002"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_102806/blocks.jsonl",
+            "raw/sources/meeting_doc_105946/blocks.jsonl",
+            "raw/sources/meeting_doc_107536/blocks.jsonl",
+            "raw/sources/meeting_doc_107531/blocks.jsonl",
+            "raw/sources/meeting_doc_111826/blocks.jsonl",
+            "raw/sources/meeting_doc_121066/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_louis-montanti and entity_louis-montanti-meeting-doc-98291 share identity key entity_louis-montanti.",
+          "records: entity_louis-montanti-meeting-doc-98291 | entity | Louis Montanti | meeting_doc_98291 | source_stated | unreviewed",
+          "records: entity_louis-montanti | entity | Louis Montanti, Deputy Chief Procurement Officer, Operations, MTA | meeting_doc_102806 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_075": true,
+        "target_not_in_prior_batches_001_075": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_identity_aliases_table": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true,
+        "current_duplicate_global_identity_validator_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-robert-free",
+      "target_id": "entity_meeting-doc-129041-robert-free",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Robert Free' and President, Long Island Rail Road context. The alias is a one-source shard, while the target aggregates the same LIRR president identity across many sources.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting-robert-free",
+          "display_name": "Robert Free, President, Long Island Rail Road",
+          "entity_name": "Robert Free",
+          "entity_type": "person",
+          "title": "President",
+          "organization": "Long Island Rail Road",
+          "source_ids": [
+            "meeting_doc_166941"
+          ],
+          "record_aliases": [
+            "entity_robert-free",
+            "entity_robert-free-president-long-island-rail-rd"
+          ],
+          "evidence_refs": [
+            "meeting_doc_166941#p001_c0011"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_166941/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-129041-robert-free",
+          "display_name": "Robert Free, President, Long Island Rail Road",
+          "entity_name": "Robert Free",
+          "entity_type": "person",
+          "title": "President, Long Island Rail Road",
+          "organization": "Long Island Rail Road",
+          "source_id_count": 30,
+          "source_ids": [
+            "meeting_doc_128991",
+            "meeting_doc_129041",
+            "meeting_doc_129106",
+            "meeting_doc_135266",
+            "meeting_doc_138201",
+            "meeting_doc_140311",
+            "meeting_doc_140481",
+            "meeting_doc_143331",
+            "meeting_doc_157646",
+            "meeting_doc_160246",
+            "meeting_doc_163176",
+            "meeting_doc_170851",
+            "meeting_doc_173986",
+            "meeting_doc_176331",
+            "meeting_doc_176346",
+            "meeting_doc_179541",
+            "meeting_doc_189856",
+            "meeting_doc_192146",
+            "meeting_doc_192301",
+            "meeting_doc_196906",
+            "meeting_doc_199246",
+            "meeting_doc_201536",
+            "meeting_doc_201761",
+            "meeting_doc_205556",
+            "meeting_doc_208026",
+            "meeting_doc_29961",
+            "meeting_doc_37071",
+            "meeting_doc_39691",
+            "meeting_doc_68226",
+            "meeting_doc_87686"
+          ],
+          "record_alias_count": 37,
+          "record_aliases_sample": [
+            "entity_meeting-doc-128991-robert-free",
+            "entity_meeting-doc-129106-robert-free",
+            "entity_rob-free",
+            "entity_rob-free-lirr-president",
+            "entity_robert-free",
+            "entity_robert-free-president-long-island-rail-rd"
+          ],
+          "evidence_ref_count": 34,
+          "evidence_refs_sample": [
+            "meeting_doc_129041#p001_c0009",
+            "meeting_doc_129106#p004_c0009",
+            "meeting_doc_128991#p015_c0012",
+            "meeting_doc_138201#p001_c0014",
+            "meeting_doc_135266#p001_c0012",
+            "meeting_doc_135266#p007_c0004"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_129041/blocks.jsonl",
+            "raw/sources/meeting_doc_129106/blocks.jsonl",
+            "raw/sources/meeting_doc_128991/blocks.jsonl",
+            "raw/sources/meeting_doc_138201/blocks.jsonl",
+            "raw/sources/meeting_doc_135266/blocks.jsonl",
+            "raw/sources/meeting_doc_140311/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-129041-robert-free and entity_meeting-robert-free share identity key entity_robert-free.",
+          "records: entity_meeting-robert-free | entity | Robert Free, President, Long Island Rail Road | meeting_doc_166941 | source_stated | unreviewed",
+          "records: entity_meeting-doc-129041-robert-free | entity | Robert Free, President, Long Island Rail Road | meeting_doc_129041 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_075": true,
+        "target_not_in_prior_batches_001_075": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_identity_aliases_table": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true,
+        "current_duplicate_global_identity_validator_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting91596-quemuel-arroyo",
+      "target_id": "entity_meeting-doc-102806-quemuel-arroyo",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Quemuel Arroyo' and Chief Accessibility Officer / MTA context. The alias is a one-source shard, while the target aggregates the same MTA accessibility officer identity across many meeting documents.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting91596-quemuel-arroyo",
+          "display_name": "Quemuel Arroyo, Chief Accessibility Officer, MTA",
+          "entity_name": "Quemuel Arroyo",
+          "entity_type": "person",
+          "title": "Chief Accessibility Officer, MTA",
+          "organization": "Metropolitan Transportation Authority",
+          "source_ids": [
+            "meeting_doc_91596"
+          ],
+          "record_aliases": [
+            "entity_quemuel-arroyo",
+            "entity_quemuel-arroyo-chief-accessibility-officer-mta"
+          ],
+          "evidence_refs": [
+            "meeting_doc_91596#p001_c0006"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_91596/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-102806-quemuel-arroyo",
+          "display_name": "Quemuel Arroyo, Chief Accessibility Officer, MTA",
+          "entity_name": "Quemuel Arroyo",
+          "entity_type": "person",
+          "title": "Chief Accessibility Officer",
+          "organization": "Metropolitan Transportation Authority",
+          "source_id_count": 23,
+          "source_ids": [
+            "meeting_doc_102806",
+            "meeting_doc_104781",
+            "meeting_doc_107531",
+            "meeting_doc_109976",
+            "meeting_doc_111971",
+            "meeting_doc_113946",
+            "meeting_doc_121016",
+            "meeting_doc_124306",
+            "meeting_doc_127476",
+            "meeting_doc_131546",
+            "meeting_doc_133236",
+            "meeting_doc_135341",
+            "meeting_doc_138201",
+            "meeting_doc_140286",
+            "meeting_doc_140461",
+            "meeting_doc_143331",
+            "meeting_doc_151641",
+            "meeting_doc_151651",
+            "meeting_doc_151826",
+            "meeting_doc_29941",
+            "meeting_doc_65186",
+            "meeting_doc_79331",
+            "meeting_doc_98296"
+          ],
+          "record_alias_count": 24,
+          "record_aliases_sample": [
+            "entity_meeting-doc-104781-quemuel-arroyo",
+            "entity_meeting-doc-107531-quemuel-arroyo",
+            "entity_quemuel-arroyo",
+            "entity_quemuel-arroyo-chief-accessibility-officer",
+            "entity_quemuel-arroyo-chief-accessibility-officer-mta",
+            "entity_quemuel-arroyo-mta-chief-accessibility-officer"
+          ],
+          "evidence_ref_count": 27,
+          "evidence_refs_sample": [
+            "meeting_doc_104781#p001_c0008",
+            "meeting_doc_102806#p001_c0006",
+            "meeting_doc_107531#p001_c0008",
+            "meeting_doc_109976#p014_c0002",
+            "meeting_doc_109976#p014_c0001",
+            "meeting_doc_111971#p001_c0008"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_104781/blocks.jsonl",
+            "raw/sources/meeting_doc_102806/blocks.jsonl",
+            "raw/sources/meeting_doc_107531/blocks.jsonl",
+            "raw/sources/meeting_doc_109976/blocks.jsonl",
+            "raw/sources/meeting_doc_111971/blocks.jsonl",
+            "raw/sources/meeting_doc_121016/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-102806-quemuel-arroyo and entity_meeting91596-quemuel-arroyo share identity key entity_quemuel-arroyo.",
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-102806-quemuel-arroyo and entity_meeting91596-quemuel-arroyo share identity key entity_quemuel-arroyo-chief-accessibility-officer-mta.",
+          "records: entity_meeting91596-quemuel-arroyo | entity | Quemuel Arroyo, Chief Accessibility Officer, MTA | meeting_doc_91596 | source_stated | unreviewed",
+          "records: entity_meeting-doc-102806-quemuel-arroyo | entity | Quemuel Arroyo, Chief Accessibility Officer, MTA | meeting_doc_104781 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_075": true,
+        "target_not_in_prior_batches_001_075": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_identity_aliases_table": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true,
+        "current_duplicate_global_identity_validator_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_olga-chernat-deputy-financial-services",
+      "target_id": "entity_meeting-doc-129041-olga-chernat",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Olga Chernat' and Deputy Chief, Financial Services context for MTA. The alias is a one-source shard, while the target aggregates the same financial services identity across many sources.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_olga-chernat-deputy-financial-services",
+          "display_name": "Olga Chernat, Deputy Chief Financial Services",
+          "entity_name": "Olga Chernat",
+          "entity_type": "person",
+          "title": "Deputy Chief, Financial Services",
+          "organization": "Metropolitan Transportation Authority",
+          "source_ids": [
+            "meeting_doc_146976"
+          ],
+          "record_aliases": [
+            "entity_olga-chernat",
+            "entity_olga-chernat-deputy-chief-financial-services"
+          ],
+          "evidence_refs": [
+            "meeting_doc_146976#p003_c0003"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_146976/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-129041-olga-chernat",
+          "display_name": "Olga Chernat, Deputy Chief, Financial Services",
+          "entity_name": "Olga Chernat",
+          "entity_type": "person",
+          "title": "Deputy Chief, Financial Services",
+          "organization": "Metropolitan Transportation Authority",
+          "source_id_count": 20,
+          "source_ids": [
+            "meeting_doc_124351",
+            "meeting_doc_129041",
+            "meeting_doc_140496",
+            "meeting_doc_146966",
+            "meeting_doc_155131",
+            "meeting_doc_155146",
+            "meeting_doc_160251",
+            "meeting_doc_160256",
+            "meeting_doc_160261",
+            "meeting_doc_163201",
+            "meeting_doc_164926",
+            "meeting_doc_164971",
+            "meeting_doc_170986",
+            "meeting_doc_174011",
+            "meeting_doc_190026",
+            "meeting_doc_192261",
+            "meeting_doc_194136",
+            "meeting_doc_197006",
+            "meeting_doc_199131",
+            "meeting_doc_201756"
+          ],
+          "record_alias_count": 22,
+          "record_aliases_sample": [
+            "entity_meeting-doc-124351-olga-chernat",
+            "entity_olga-chernat",
+            "entity_olga-chernat-deputy-cfo-sep2024",
+            "entity_olga-chernat-deputy-chief-financial-services",
+            "entity_olga-chernat-deputy-chief-financial-services-mta",
+            "entity_olga-chernat-meeting-doc-155146"
+          ],
+          "evidence_ref_count": 21,
+          "evidence_refs_sample": [
+            "meeting_doc_129041#p001_c0009",
+            "meeting_doc_124351#p157_c0003",
+            "meeting_doc_140496#p001_c0003",
+            "meeting_doc_155146#p001_c0003",
+            "meeting_doc_160256#p001_c0002",
+            "meeting_doc_160251#p001_c0002"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_129041/blocks.jsonl",
+            "raw/sources/meeting_doc_124351/blocks.jsonl",
+            "raw/sources/meeting_doc_140496/blocks.jsonl",
+            "raw/sources/meeting_doc_155146/blocks.jsonl",
+            "raw/sources/meeting_doc_160256/blocks.jsonl",
+            "raw/sources/meeting_doc_160251/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-129041-olga-chernat and entity_olga-chernat-deputy-financial-services share identity key entity_olga-chernat.",
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-129041-olga-chernat and entity_olga-chernat-deputy-financial-services share identity key entity_olga-chernat-deputy-chief-financial-services.",
+          "records: entity_olga-chernat-deputy-financial-services | entity | Olga Chernat, Deputy Chief Financial Services | meeting_doc_146976 | source_stated | unreviewed",
+          "records: entity_meeting-doc-129041-olga-chernat | entity | Olga Chernat, Deputy Chief, Financial Services | meeting_doc_129041 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_075": true,
+        "target_not_in_prior_batches_001_075": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_identity_aliases_table": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true,
+        "current_duplicate_global_identity_validator_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-72536-richard-hildebrand",
+      "target_id": "entity_richard-hildebrand",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Richard Hildebrand' and Vice President and Chief of Operations context for TBTA / Triborough Bridge and Tunnel Authority. The alias is a two-source shard, while the target aggregates the same operations identity across more sources.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-72536-richard-hildebrand",
+          "display_name": "Richard Hildebrand",
+          "entity_name": "Richard Hildebrand",
+          "entity_type": "person",
+          "title": "Vice President and Chief of Operations",
+          "organization": "TBTA",
+          "source_ids": [
+            "meeting_doc_68196",
+            "meeting_doc_72536"
+          ],
+          "record_aliases": [
+            "entity_meeting-doc-68196-richard-hildebrand",
+            "entity_richard-hildebrand"
+          ],
+          "evidence_refs": [
+            "meeting_doc_68196#p006_c0008",
+            "meeting_doc_68196#p015_c0004",
+            "meeting_doc_72536#p006_c0008"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_68196/blocks.jsonl",
+            "raw/sources/meeting_doc_72536/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_richard-hildebrand",
+          "display_name": "Richard Hildebrand, Vice President and Chief of Operations",
+          "entity_name": "Richard Hildebrand",
+          "entity_type": "person",
+          "title": "Vice President and Chief of Operations",
+          "organization": "Triborough Bridge and Tunnel Authority",
+          "source_id_count": 11,
+          "source_ids": [
+            "meeting_doc_100256",
+            "meeting_doc_104711",
+            "meeting_doc_107566",
+            "meeting_doc_111711",
+            "meeting_doc_113966",
+            "meeting_doc_115226",
+            "meeting_doc_131486",
+            "meeting_doc_135251",
+            "meeting_doc_85806",
+            "meeting_doc_87681",
+            "meeting_doc_98206"
+          ],
+          "record_alias_count": 10,
+          "record_aliases_sample": [
+            "entity_meeting-doc-107566-richard-hildebrand",
+            "entity_meeting-doc-111711-richard-hildebrand",
+            "entity_meeting-doc-113966-richard-hildebrand",
+            "entity_richard-hildebrand-115226",
+            "entity_richard-hildebrand-meeting-doc-98206",
+            "entity_richard-hildebrand-vice-president-and-chief-of-operations"
+          ],
+          "evidence_ref_count": 14,
+          "evidence_refs_sample": [
+            "meeting_doc_104711#p004_c0007",
+            "meeting_doc_100256#p004_c0007",
+            "meeting_doc_107566#p004_c0008",
+            "meeting_doc_115226#p004_c0007",
+            "meeting_doc_113966#p004_c0007",
+            "meeting_doc_111711#p016_c0004"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_104711/blocks.jsonl",
+            "raw/sources/meeting_doc_100256/blocks.jsonl",
+            "raw/sources/meeting_doc_107566/blocks.jsonl",
+            "raw/sources/meeting_doc_115226/blocks.jsonl",
+            "raw/sources/meeting_doc_113966/blocks.jsonl",
+            "raw/sources/meeting_doc_111711/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-72536-richard-hildebrand and entity_richard-hildebrand share identity key entity_richard-hildebrand.",
+          "records: entity_meeting-doc-72536-richard-hildebrand | entity | Richard Hildebrand | meeting_doc_68196 | source_stated | unreviewed",
+          "records: entity_richard-hildebrand | entity | Richard Hildebrand, Vice President and Chief of Operations | meeting_doc_104711 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_075": true,
+        "target_not_in_prior_batches_001_075": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_identity_aliases_table": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true,
+        "current_duplicate_global_identity_validator_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-151641-lourdes-zapata",
+      "target_id": "entity_meeting-doc-128991-lourdes-zapata",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Lourdes Zapata' and Chief Diversity and Inclusion Officer context for MTA. The alias is a one-source shard, while the target aggregates the same identity across more sources.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-151641-lourdes-zapata",
+          "display_name": "Lourdes Zapata, Chief Diversity & Inclusion Officer, MTA",
+          "entity_name": "Lourdes Zapata",
+          "entity_type": "person",
+          "title": "MTA Chief Diversity & Inclusion Officer",
+          "source_ids": [
+            "meeting_doc_151641"
+          ],
+          "record_aliases": [
+            "entity_lourdes-zapata",
+            "entity_lourdes-zapata-chief-diversity-and-inclusion-officer-mta"
+          ],
+          "evidence_refs": [
+            "meeting_doc_151641#p006_c0004"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_151641/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-128991-lourdes-zapata",
+          "display_name": "Lourdes Zapata - Chief Diversity and Inclusion Officer",
+          "entity_name": "Lourdes Zapata",
+          "entity_type": "person",
+          "title": "Chief Diversity and Inclusion Officer",
+          "organization": "Metropolitan Transportation Authority",
+          "source_id_count": 10,
+          "source_ids": [
+            "meeting_doc_128991",
+            "meeting_doc_138186",
+            "meeting_doc_143146",
+            "meeting_doc_151596",
+            "meeting_doc_151646",
+            "meeting_doc_151826",
+            "meeting_doc_160081",
+            "meeting_doc_166966",
+            "meeting_doc_176446",
+            "meeting_doc_201511"
+          ],
+          "record_alias_count": 12,
+          "record_aliases_sample": [
+            "entity_lourdes-zapata",
+            "entity_lourdes-zapata-chief-diversity-and-inclusion-officer",
+            "entity_lourdes-zapata-mta-chief-diversity-and-inclusion-officer",
+            "entity_lourdes-zapata-meeting-doc-151596",
+            "entity_lourdes-zapata-meeting-doc-160081",
+            "entity_meeting-doc-151646-lourdes-zapata"
+          ],
+          "evidence_ref_count": 16,
+          "evidence_refs_sample": [
+            "meeting_doc_128991#p013_c0008",
+            "meeting_doc_128991#p015_c0009",
+            "meeting_doc_138186#p003_c0010",
+            "meeting_doc_143146#p003_c0006",
+            "meeting_doc_160081#p038_c0003",
+            "meeting_doc_151596#p038_c0003"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_128991/blocks.jsonl",
+            "raw/sources/meeting_doc_138186/blocks.jsonl",
+            "raw/sources/meeting_doc_143146/blocks.jsonl",
+            "raw/sources/meeting_doc_160081/blocks.jsonl",
+            "raw/sources/meeting_doc_151596/blocks.jsonl",
+            "raw/sources/meeting_doc_151646/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_meeting-doc-128991-lourdes-zapata and entity_meeting-doc-151641-lourdes-zapata share identity key entity_lourdes-zapata.",
+          "records: entity_meeting-doc-151641-lourdes-zapata | entity | Lourdes Zapata, Chief Diversity & Inclusion Officer, MTA | meeting_doc_151641 | source_stated | unreviewed",
+          "records: entity_meeting-doc-128991-lourdes-zapata | entity | Lourdes Zapata - Chief Diversity and Inclusion Officer | meeting_doc_128991 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_075": true,
+        "target_not_in_prior_batches_001_075": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_identity_aliases_table": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true,
+        "current_duplicate_global_identity_validator_row_exists": true
+      },
+      "all_pass": true
+    }
+  ],
+  "review_only_notes": [
+    "Excluded initials-only candidates and exact-name pairs with weak or mixed role/agency context from this prep batch.",
+    "Several additional exact-name candidates remain available, but this batch keeps target records distinct and avoids broader role-transition ambiguity."
+  ],
+  "aggregate_guards": {
+    "all_aliases_not_already_overridden": true,
+    "all_aliases_not_in_identity_aliases_table": true,
+    "all_aliases_and_targets_not_in_prior_batches_001_075": true,
+    "all_pairs_have_current_duplicate_global_identity_validator_rows": true,
+    "all_sources_exist": true,
+    "all_evidence_source_paths_exist": true
+  },
+  "verification": {
+    "deterministic_local_only": true,
+    "commands_used": [
+      "rg/read-only file inspection",
+      "sqlite3 -readonly data/canonical.db reads",
+      "bun --eval read-only duplicate_global_identity mining over data/canonical/entities.jsonl, identityKeysForRecord, current merges/do-not-merge guards, current identity_aliases, and prior prep artifacts through batch075",
+      "bun --eval read-only guard/evidence assembly for selected batch076 aliases"
+    ],
+    "prohibited_commands_avoided": [
+      "provider/external-LLM commands",
+      "materialize",
+      "export-jsonl",
+      "full validate",
+      "DB publish",
+      "identity-review-run",
+      "write",
+      "ask",
+      "schema",
+      "ontology-normalize"
+    ]
+  },
+  "all_pass": true
+}

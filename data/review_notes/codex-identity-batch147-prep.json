@@ -1,0 +1,517 @@
+{
+  "note_id": "codex-identity-batch147-prep",
+  "batch": "identity147",
+  "created_at": "2026-06-23T07:11:12Z",
+  "scope": {
+    "global_kind": "route/corridor",
+    "included_kinds": [
+      "route"
+    ],
+    "excluded_kinds": [
+      "entity",
+      "project"
+    ],
+    "selection_note": "Prepared route aliases only after corridor candidates with differing or overly broad limits were excluded."
+  },
+  "prepared_count": 10,
+  "proposed_aliases": [
+    {
+      "global_kind": "route",
+      "alias_id": "route_babylon-branch-lirr",
+      "target_id": "route_lirr-babylon-branch-2023",
+      "canonical_id": "route_lirr-babylon-branch-2023",
+      "confidence": "high",
+      "reason": "Both current records identify the LIRR Babylon Branch. The alias has route_id and route_name \"Babylon Branch\" with MTA Long Island Rail Road operator/agency context, while the target is the canonical LIRR branch record named \"Babylon Branch\".",
+      "validator_duplicate_key": null,
+      "validator_evidence": {
+        "validator_duplicate_key_note": "No route validator key is available because the current route identity key helper emits bus-style route keys and does not derive keys for LIRR branch names.",
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_route_merges": false,
+        "target_is_route_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Babylon Branch",
+          "payload_fields": {
+            "route_id": "Babylon Branch",
+            "route_name": "Babylon Branch",
+            "route_type": "rail branch",
+            "operator": "MTA Long Island Rail Road",
+            "agency": "MTA Long Island Rail Road"
+          },
+          "evidence_refs": [
+            "meeting_doc_100336#p001_c0008",
+            "meeting_doc_107636#p001_c0007",
+            "meeting_doc_164866#p002_c0008"
+          ]
+        },
+        "target": {
+          "display_name": "Babylon Branch",
+          "payload_fields": {
+            "route_name": "Babylon Branch",
+            "route_type": "LIRR branch"
+          },
+          "evidence_refs": [
+            "meeting_doc_133321#p003_c0004"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_hempstead-branch-lirr",
+      "target_id": "route_lirr-hempstead-branch-2023",
+      "canonical_id": "route_lirr-hempstead-branch-2023",
+      "confidence": "high",
+      "reason": "Both current records identify the LIRR Hempstead Branch. The alias is a commuter rail branch record with route_id and route_name \"Hempstead Branch\" and LIRR agency context; the target is the LIRR branch record with the same branch name.",
+      "validator_duplicate_key": null,
+      "validator_evidence": {
+        "validator_duplicate_key_note": "No route validator key is available because the current route identity key helper emits bus-style route keys and does not derive keys for LIRR branch names.",
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_route_merges": false,
+        "target_is_route_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Hempstead Branch",
+          "payload_fields": {
+            "route_id": "Hempstead Branch",
+            "route_name": "Hempstead Branch",
+            "route_type": "commuter rail branch",
+            "agency": "MTA Long Island Rail Road"
+          },
+          "evidence_refs": [
+            "meeting_doc_107636#p001_c0007"
+          ]
+        },
+        "target": {
+          "display_name": "Hempstead Branch",
+          "payload_fields": {
+            "route_name": "Hempstead Branch",
+            "route_type": "LIRR branch"
+          },
+          "evidence_refs": [
+            "meeting_doc_133321#p003_c0004"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_huntington-branch-lirr",
+      "target_id": "route_lirr-huntington-branch-2023",
+      "canonical_id": "route_lirr-huntington-branch-2023",
+      "confidence": "high",
+      "reason": "Both current records identify the LIRR Huntington Branch. The alias carries route_id and route_name \"Huntington Branch\" with LIRR agency context, and the target is the LIRR branch record with the same branch name.",
+      "validator_duplicate_key": null,
+      "validator_evidence": {
+        "validator_duplicate_key_note": "No route validator key is available because the current route identity key helper emits bus-style route keys and does not derive keys for LIRR branch names.",
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_route_merges": false,
+        "target_is_route_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Huntington Branch",
+          "payload_fields": {
+            "route_id": "Huntington Branch",
+            "route_name": "Huntington Branch",
+            "route_type": "commuter rail branch",
+            "agency": "MTA Long Island Rail Road"
+          },
+          "evidence_refs": [
+            "meeting_doc_107636#p001_c0007"
+          ]
+        },
+        "target": {
+          "display_name": "Huntington Branch",
+          "payload_fields": {
+            "route_name": "Huntington Branch",
+            "route_type": "LIRR branch"
+          },
+          "evidence_refs": [
+            "meeting_doc_133321#p003_c0004"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_meeting-doc-104751-long-beach-branch",
+      "target_id": "route_lirr-long-beach-branch-2023",
+      "canonical_id": "route_lirr-long-beach-branch-2023",
+      "confidence": "high",
+      "reason": "Both current records identify the LIRR Long Beach Branch. The alias has route_id and route_name \"Long Beach Branch\" and rail-branch type; the target is the LIRR branch record with the same branch name.",
+      "validator_duplicate_key": null,
+      "validator_evidence": {
+        "validator_duplicate_key_note": "No route validator key is available because the current route identity key helper emits bus-style route keys and does not derive keys for LIRR branch names.",
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_route_merges": false,
+        "target_is_route_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Long Beach Branch",
+          "payload_fields": {
+            "route_id": "Long Beach Branch",
+            "route_name": "Long Beach Branch",
+            "route_type": "rail branch"
+          },
+          "evidence_refs": [
+            "meeting_doc_104751#p001_c0004",
+            "meeting_doc_104751#p001_c0007"
+          ]
+        },
+        "target": {
+          "display_name": "Long Beach Branch",
+          "payload_fields": {
+            "route_name": "Long Beach Branch",
+            "route_type": "LIRR branch"
+          },
+          "evidence_refs": [
+            "meeting_doc_133321#p003_c0004"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_port-washington-branch",
+      "target_id": "route_lirr-port-washington-branch-2023",
+      "canonical_id": "route_lirr-port-washington-branch-2023",
+      "confidence": "high",
+      "reason": "Both current records identify the LIRR Port Washington Branch. The alias has route_id and route_name \"Port Washington Branch\" with LIRR agency context; the target is the LIRR branch record with the same branch name.",
+      "validator_duplicate_key": null,
+      "validator_evidence": {
+        "validator_duplicate_key_note": "No route validator key is available because the current route identity key helper emits bus-style route keys and does not derive keys for LIRR branch names.",
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_route_merges": false,
+        "target_is_route_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Port Washington Branch",
+          "payload_fields": {
+            "route_id": "Port Washington Branch",
+            "route_name": "Port Washington Branch",
+            "route_type": "branch",
+            "agency": "MTA Long Island Rail Road"
+          },
+          "evidence_refs": [
+            "meeting_doc_113926#p001_c0008",
+            "meeting_doc_164866#p001_c0006"
+          ]
+        },
+        "target": {
+          "display_name": "Port Washington Branch",
+          "payload_fields": {
+            "route_name": "Port Washington Branch",
+            "route_type": "LIRR branch"
+          },
+          "evidence_refs": [
+            "meeting_doc_133321#p004_c0001"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_west-hempstead-branch-lirr",
+      "target_id": "route_lirr-west-hempstead-branch-2023",
+      "canonical_id": "route_lirr-west-hempstead-branch-2023",
+      "confidence": "high",
+      "reason": "Both current records identify the LIRR West Hempstead Branch. The alias has route_id and route_name \"West Hempstead Branch\" with LIRR operator/agency context, and the target is the LIRR branch record with the same branch name.",
+      "validator_duplicate_key": null,
+      "validator_evidence": {
+        "validator_duplicate_key_note": "No route validator key is available because the current route identity key helper emits bus-style route keys and does not derive keys for LIRR branch names.",
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_route_merges": false,
+        "target_is_route_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "West Hempstead Branch",
+          "payload_fields": {
+            "route_id": "West Hempstead Branch",
+            "route_name": "West Hempstead Branch",
+            "route_type": "rail branch",
+            "operator": "MTA Long Island Rail Road",
+            "agency": "MTA Long Island Rail Road"
+          },
+          "evidence_refs": [
+            "meeting_doc_100336#p001_c0008",
+            "meeting_doc_107636#p001_c0007"
+          ]
+        },
+        "target": {
+          "display_name": "West Hempstead Branch",
+          "payload_fields": {
+            "route_name": "West Hempstead Branch",
+            "route_type": "LIRR branch"
+          },
+          "evidence_refs": [
+            "meeting_doc_133321#p004_c0001"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_mnrr-harlem-line-2022",
+      "target_id": "route_meeting-doc-106021-harlem-line",
+      "canonical_id": "route_meeting-doc-106021-harlem-line",
+      "confidence": "high",
+      "reason": "Both current records identify the Metro-North Harlem Line. The alias is a commuter rail record named \"Harlem Line\" from a 2022 source, while the target is the richer Harlem Line record with route_id \"Harlem Line\", Metro-North operator/agency context, and many current aliases already consolidated.",
+      "validator_duplicate_key": null,
+      "validator_evidence": {
+        "validator_duplicate_key_note": "No route validator key is available because the current route identity key helper emits bus-style route keys and does not derive keys for Metro-North line names.",
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_route_merges": false,
+        "target_is_route_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Harlem Line",
+          "payload_fields": {
+            "route_name": "Harlem Line",
+            "route_type": "commuter rail"
+          },
+          "evidence_refs": [
+            "meeting_doc_111726#p027_c0002"
+          ]
+        },
+        "target": {
+          "display_name": "Harlem Line",
+          "payload_fields": {
+            "route_id": "Harlem Line",
+            "route_name": "Harlem Line",
+            "route_type": "commuter rail",
+            "operator": "MTA Metro-North Railroad",
+            "agency": "Metro-North Railroad"
+          },
+          "evidence_refs": [
+            "meeting_doc_106021#p010_c0002",
+            "meeting_doc_124206#p003_c0008",
+            "meeting_doc_138236#p001_c0004"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_q52-q53-sbs-proposed-2015-cb9",
+      "target_id": "route_q52-q53-sbs-proposed-2015-05",
+      "canonical_id": "route_q52-q53-sbs-proposed-2015-05",
+      "confidence": "high",
+      "reason": "Both current records identify the proposed Q52/Q53 SBS on the Woodhaven/Cross Bay corridor. They match on Q52/Q53 route labeling, Select Bus Service type, Queens borough context, and proposed SBS description based on the existing Q52/53 LTD route.",
+      "validator_duplicate_key": "route_q52-sbs",
+      "validator_evidence": {
+        "shared_identity_keys": [
+          "route_q52-sbs"
+        ],
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_route_merges": false,
+        "target_is_route_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Q52/53 SBS (Proposed)",
+          "payload_fields": {
+            "route_id": "Q52/Q53",
+            "route_label": "Q52/53 SBS",
+            "route_type": "select bus service",
+            "service_variant": "sbs",
+            "borough": "Queens"
+          },
+          "evidence_refs": [
+            "2015_06_09_brt_woodhaven_cb9#p033_c0003",
+            "2015_06_09_brt_woodhaven_cb9#p008_c0002"
+          ]
+        },
+        "target": {
+          "display_name": "Q52/53 Select Bus Service (proposed)",
+          "payload_fields": {
+            "route_id": "Q52/53",
+            "route_label": "Q52/53 SBS",
+            "route_name": "Woodhaven / Cross Bay Boulevard Select Bus Service",
+            "route_type": "Select Bus Service",
+            "service_variant": "sbs",
+            "borough": "Queens"
+          },
+          "evidence_refs": [
+            "2015_05_13_brt_woodhaven_cb6_presentation#p008_c0002",
+            "2015_05_13_brt_woodhaven_cb6_presentation#p001_c0001",
+            "brt_woodhaven_cb9_jan2016#p014_c0002",
+            "brt_woodhaven_cb9_jan2016#p015_c0002"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_hylan-sbs-proposed-2011",
+      "target_id": "route_hylan-richmond-av-sbs-proposed",
+      "canonical_id": "route_hylan-richmond-av-sbs-proposed",
+      "confidence": "high",
+      "reason": "Both current records identify the proposed Hylan Boulevard/Richmond Avenue Select Bus Service route on Staten Island. The alias and target are both SBS/select-bus-service records and both cite source text naming the Hylan Boulevard/Richmond Avenue proposed SBS route.",
+      "validator_duplicate_key": null,
+      "validator_evidence": {
+        "validator_duplicate_key_note": "No route validator key is available because the current route identity key helper emits numbered bus route keys and does not derive a key from this corridor-style SBS route name.",
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_route_merges": false,
+        "target_is_route_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Hylan Boulevard/Richmond Avenue Select Bus Service (proposed)",
+          "payload_fields": {
+            "route_id": "proposed Hylan/Richmond SBS",
+            "route_name": "Hylan Boulevard/Richmond Avenue Select Bus Service",
+            "route_type": "SBS",
+            "service_variant": "sbs",
+            "borough": "Staten Island"
+          },
+          "evidence_refs": [
+            "201106_hylan_slides#p022_c0005",
+            "201106_hylan_slides#p022_c0007"
+          ]
+        },
+        "target": {
+          "display_name": "Hylan Boulevard/Richmond Avenue Proposed SBS Route",
+          "payload_fields": {
+            "route_id": "Hylan Boulevard/Richmond Avenue",
+            "route_label": "Hylan Boulevard/ Richmond Avenue Select Bus Service",
+            "route_type": "Select Bus Service",
+            "service_variant": "sbs",
+            "borough": "Staten Island"
+          },
+          "evidence_refs": [
+            "201109_brt_hylan_introductory_info#p002_c0002"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_b82-limited-brt-south-brooklyn",
+      "target_id": "route_b82-limited-brt-south-brooklyn-2017",
+      "canonical_id": "route_b82-limited-brt-south-brooklyn-2017",
+      "confidence": "high",
+      "reason": "Both current records identify the B82 Limited route in the South Brooklyn B82 corridor. They match on display name, route label, limited-stop service variant, Brooklyn context, and source evidence distinguishing B82 Limited from B82 Local and B82 SBS.",
+      "validator_duplicate_key": "route_b82",
+      "validator_evidence": {
+        "shared_identity_keys": [
+          "route_b82"
+        ],
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_route_merges": false,
+        "target_is_route_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false,
+        "do_not_merge_variant_guard_checked": "Current do-not-merge only guards B82 local/SBS cross-variant pairs; this proposal is limited_stop to limited_stop."
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "B82 Limited",
+          "payload_fields": {
+            "route_id": "B82 Limited",
+            "route_label": "B82 Limited",
+            "route_type": "Limited",
+            "service_variant": "limited_stop",
+            "borough": "Brooklyn"
+          },
+          "evidence_refs": [
+            "brt_south_brooklyn_b82#p003_c0003",
+            "brt_south_brooklyn_b82#p011_c0002",
+            "brt_south_brooklyn_b82#p020_c0002"
+          ]
+        },
+        "target": {
+          "display_name": "B82 Limited",
+          "payload_fields": {
+            "route_id": "B82",
+            "route_name": "B82 Limited",
+            "route_label": "B82 Limited",
+            "route_type": "limited",
+            "service_variant": "limited_stop",
+            "borough": "Brooklyn"
+          },
+          "evidence_refs": [
+            "brt_south_brooklyn_b82_cb15_may2017#p003_c0003",
+            "brt_south_brooklyn_b82_cb15_may2017#p012_c0002",
+            "brt_south_brooklyn_b82_dec2017#p003_c0003"
+          ]
+        }
+      }
+    }
+  ],
+  "exclusions_and_guards": {
+    "explicit_user_guards": [
+      "Did not propose corridor_125th-street-manhattan -> corridor_125th-st-manhattan.",
+      "Did not repeat stale identity144 aliases absent from current canonical JSONL: route_m23-sbs-ace, route_m79-sbs-ace, route_m86-sbs-ace, route_m34-sbs-ace, route_b82-sbs-bay-pkwy, route_m15-sbs-2010-09-14, corridor_bay-parkway-from-ave-j-to-shore-parkway, corridor_woodhaven-blvd-queens-blvd-to-107-ave."
+    ],
+    "mechanical_guards_applied": [
+      "Alias and target must both be present as current record_id values in data/canonical/routes.jsonl.",
+      "Alias must not already be a current aliases.route key in data/identity-overrides/merges.json.",
+      "Target must not be a current aliases.route key in data/identity-overrides/merges.json, avoiding target chains.",
+      "Alias and target must differ.",
+      "Pair must not appear in current data/identity-overrides/do-not-merge.json route pairs.",
+      "Current known local/SBS do-not-merge variant guards were respected; the B82 proposal is limited_stop to limited_stop only."
+    ],
+    "corridor_candidates_deferred": [
+      "corridor_bay-parkway-avenue-j-to-shore-pkwy -> corridor_bay-parkway-cropsey was not proposed because the target is a combined Bay Parkway and Cropsey Avenue corridor while the alias is only the Bay Parkway segment.",
+      "corridor_125th-street-manhattan -> corridor_125th-st-manhattan was excluded by explicit user guard and by current do-not-merge limits guidance.",
+      "Broad same-street corridor pairs were avoided unless limits and scope were clearly identical."
+    ]
+  },
+  "command_evidence": [
+    {
+      "command": "jq inspection of data/identity-overrides/merges.json and data/identity-overrides/do-not-merge.json",
+      "purpose": "Confirmed override structure, current route/corridor merge aliases, and current do-not-merge route/corridor pairs."
+    },
+    {
+      "command": "jq route/corridor TSV summaries over data/canonical/routes.jsonl and data/canonical/corridors.jsonl",
+      "purpose": "Found current record_id, display_name, route_id/route_name/route_label, service_variant, corridor limits, source_id, and source count surfaces for route/corridor-only candidates."
+    },
+    {
+      "command": "bun --eval read-only selected-pair identityKeysForRecord and guard check",
+      "purpose": "Checked current record presence, shared route identity keys when available, existing merge status, target-chain status, and do-not-merge suppression for selected pairs."
+    },
+    {
+      "command": "rg prior review-note/audit search for selected route aliases",
+      "purpose": "Checked for visible prior prep/audit overlap and confirmed current selected alias IDs are not already applied route merge aliases."
+    },
+    {
+      "command": "bun --eval read-only current-canonical evidence extraction",
+      "purpose": "Captured source-backed display, payload, source_ids, and evidence_refs for the selected alias and target records."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "No provider-backed commands.",
+    "No materialize.",
+    "No export-jsonl.",
+    "No full CLI validate.",
+    "No write, ask, schema, ontology, identity-review, canonicalize, campaign dedup, or provider-profile agent commands.",
+    "No edits to data/identity-overrides/merges.json.",
+    "No edits to LOG.md, manifest, canonical JSONL, wiki pages, database, submissions, generated outputs, or submission overrides."
+  ],
+  "blocker": null
+}

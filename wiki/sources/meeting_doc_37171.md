@@ -1,0 +1,1108 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-37171"
+record_kind: "source"
+display_name: "MTA Board Action Items - April 2021"
+source_id: "meeting_doc_37171"
+source_ids:
+  - "meeting_doc_37171"
+local_observation_id: "source_meeting_doc_37171"
+local_observation_ids:
+  - "source_meeting_doc_37171"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T23:17:13.637Z"
+raw_text: "MTA Board Action Items - April 2021 meeting document containing meeting minutes from March 17, 2021 and action items for April 21, 2021."
+submission_ids:
+  - "sub_ec3f84039851af52"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting minutes / board action items"
+  date_text: "April 2021"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2021-04"
+    precision: "month"
+    raw_text: "April 2021"
+  description: "MTA Board meeting materials including minutes of the March 17, 2021 Joint Committee and Regular Board Meeting and action items for the April 21, 2021 board meeting."
+  published_date_normalized: "2021-04"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "MTA Board Action Items"
+evidence_refs:
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_37171#p001_c0004"
+    page_number: 1
+    role: "document_date"
+    source_id: "meeting_doc_37171"
+    source_path: "raw/sources/meeting_doc_37171/blocks.jsonl"
+    source_quote: "April 2021"
+    text_sha256: "sha256:9828de6efd8d085721bd42f7972e4f5dbadb020d525a6f74fa5d1daaf0930c7e"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0005"
+    evidence_id: "meeting_doc_37171#p001_c0005"
+    page_number: 1
+    role: "document_title"
+    source_id: "meeting_doc_37171"
+    source_path: "raw/sources/meeting_doc_37171/blocks.jsonl"
+    source_quote: "MTA Board Action Items"
+    text_sha256: "sha256:5f9cd9ce531d6511df2421ee46214de32e778d30511a3e4407e407cd96421065"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_37171#p001_c0001"
+    page_number: 1
+    role: "document_id"
+    source_id: "meeting_doc_37171"
+    source_path: "raw/sources/meeting_doc_37171/blocks.jsonl"
+    source_quote: "OS19014_16MTA_board_action_MTA Board Action covers 1/9/19 3:46 PM Page 4"
+    text_sha256: "sha256:70bdee4e963cd35630ecd912c92e1c228937df18bdb938fa9a212c6ef053c721"
+    text_source: "raw_text"
+---
+
+# Board Book
+
+source_id: meeting_doc_37171
+citation: cite block ids exactly as shown in square brackets
+document: 665 block(s)
+
+## Page 1
+
+### [p001_c0001] OS19014_16MTA_board_action_MTA Board Action covers 1/9/19 3:46 PM Page 4
+> [p001_c0002] The MTA logo, consisting of the letters 'MTA' in a stylized font inside a white circle.
+[p001_c0003] Metropolitan Transportation Authority
+### [p001_c0004] April 2021
+### [p001_c0005] MTA Board Action Items
+> [p001_c0006] A large, stylized MTA logo featuring the letters 'MTA' in a bold, sans-serif font, set against a dark blue circular background. The logo is centered on the page.
+
+## Page 2
+
+### [p002_c0001] MTA Board Meeting
+[p002_c0002] 2 Broadway 20th Floor Board Room New York, N.Y. 10004 Wednesday, 4/21/2021 10:00 AM - 5:00 PM ET
+### [p002_c0003] 1. PUBLIC COMMENT PERIOD
+### [p002_c0004] 2. APPROVAL OF MINUTES
+### [p002_c0005] MTA and MTA Agencies Committee & Regular Meeting Joint Minutes - March 17, 2021
+[p002_c0006] MTAHQ
+[p002_c0007] NYCT/MaBSTOA/SIRTOA/MTA Bus Company
+[p002_c0008] MTA Metro-North Railroad
+[p002_c0009] MTA Long Island Rail Road
+[p002_c0010] MTA B&T
+[p002_c0011] MTA Construction & Development
+[p002_c0012] MTA and MTA Agency Joint Committee and Regular Minutes - March 17, 2021 - Page 4
+### [p002_c0013] 3. MTA OTHER BUSINESS
+### [p002_c0014] Extension of Family Benefits Agreement
+[p002_c0015] Extension of Family Benefits Agreement - Page 31
+### [p002_c0016] Migration of Railroad Mail and Ride Program Customers to Mobile Solution
+[p002_c0017] Migration of Railroad Mail and Ride Program Staff Summary - Page 33
+[p002_c0018] Migration of Railroad Mail and Ride Program Resolution - Page 35
+### [p002_c0019] 4. COMMITTEE ON METRO-NORTH RAILROAD & LONG ISLAND RAIL ROAD
+### [p002_c0020] LIRR Procurements Report (no items)
+### [p002_c0021] MNR Procurements Report (no items)
+### [p002_c0022] MTA C&D Procurements Report
+[p002_c0023] MTA C&D Procurements - Page 37
+### [p002_c0024] i. Non-Competitive (no items)
+### [p002_c0025] ii. Competitive (no items)
+### [p002_c0026] iii. Ratifications
+[p002_c0027] MTA C&D Ratifications - Page 41
+### [p002_c0028] 5. COMMITTEE ON NYCT & BUS
+### [p002_c0029] NYCT Procurements (no items)
+### [p002_c0030] C&D Procurements
+
+## Page 3
+
+### [p003_c0001] C&D Procurement Package - Page 43
+### [p003_c0002] 6. COMMITTEE ON MTA BRIDGES & TUNNELS OPERATIONS (no items)
+### [p003_c0003] 7. COMMITTEE ON FINANCE
+[p003_c0004] MTAHQ Procurements Report (no items)
+### [p003_c0005] Real Estate Items
+### [p003_c0006] i. Real Estate Agenda and Staff Summaries
+[p003_c0007] Real Estate Agenda and Staff Summaries - Page 51
+### [p003_c0008] 8. FIRST MUTUAL TRANSPORTATION ASSURANCE CO (FMTAC) (no items)
+
+## Page 4
+
+### [p004_c0001] Joint Committee and Board Meeting of the Metropolitan Transportation Authority, the New York City Transit Authority, the Manhattan and Bronx Surface Transit Operating Authority, the Staten Island Rapid Transit Operating Authority, the Metropolitan Suburban Bus Authority, the Triborough Bridge and Tunnel Authority, the Long Island Rail Road Company, the Metro-North Commuter Railroad Company, MTA Construction & Development, the MTA Bus Company and the First Mutual Transportation Assurance Company
+[p004_c0002] Minutes
+[p004_c0003] 2 Broadway
+[p004_c0004] New York, NY 10004
+[p004_c0005] Wednesday, March 17, 2021
+[p004_c0006] 10:00 a.m.
+[p004_c0007] The following Board Members were present in person or by videoconference:
+[p004_c0008] Hon. Patrick Foye, Chairman & CEO
+[p004_c0009] Hon. Jamey Barbos
+[p004_c0010] Hon. Frank Borelli
+[p004_c0011] Hon. Victor Calise
+[p004_c0012] Hon. Lorraine Cortés-Vázquez
+[p004_c0013] Hon. Michael Fleischer
+[p004_c0014] Hon. Randolph Glucksman
+[p004_c0015] Hon. Rhonda Herman
+[p004_c0016] Hon. David Jones
+[p004_c0017] Hon. Linda Lacewell
+[p004_c0018] Hon. Kevin Law
+[p004_c0019] Hon. Robert W. Linn
+[p004_c0020] Hon. David Mack
+[p004_c0021] Hon. Haeda B. Mihaltses
+[p004_c0022] Hon. Robert F. Mujica
+[p004_c0023] Hon. Lawrence Schwartz
+[p004_c0024] Hon. Vincent Tessitore, Jr.
+[p004_c0025] Hon. Neal Zuckerman
+[p004_c0026] The following alternate non-voting members were present by videoconference:
+[p004_c0027] Hon. Andrew Albert
+[p004_c0028] Hon. Norman Brown
+[p004_c0029] Hon. John Samuelsen
+[p004_c0030] _Master Page # 4 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 5
+
+[p005_c0001] The following staff members attended in person or by videoconference:
+[p005_c0002] Thomas J. Quigley, General Counsel, Robert Foran, MTA Chief Financial Officer, Paul Fama, MTA Chief People Officer, Anthony McCord, MTA Chief Transformation Officer, Patrick Warren, Chief Safety Officer, Sarah E. Feinberg, Interim President, NYCT, Craig Cipriano, Acting President, MTA Bus/Senior Vice President, NYCT Department of Buses, Janno Lieber, MTA Chief Development Officer, MTA Construction & Development, Phillip Eng, President, Long Island Rail Road, Catherine Rinaldi, President, Metro-North Railroad, Daniel DeCrescenzo, Acting President, TBTA, Chief Kathleen O'Reilly, NYPD Chief of Transit, Patrick McCoy, Director of Finance, David Keller, Senior Deputy Director, Financial Management and Budget, Kuvershen Ayer, Chief Procurement Officer, David Florio, Director, R.E. Operations, Leasing & Acquisitions, Lamond Kearse, Chief Compliance Officer, Carolyn Pokorny, MTA Inspector General, Abbey Collins, Chief Communications Officer, Monica Murray, Chief Administrative Officer, NYCT President's Office, and Quemuel Arroyo, MTA Chief Accessibility Officer.
+[p005_c0003] The Board of the Metropolitan Transportation Authority also met as the Boards of the New York City Transit Authority, the Manhattan and Bronx Surface Transit Operating Authority, the Staten Island Rapid Transit Operating Authority, the Metropolitan Suburban Bus Authority, the Triborough Bridge and Tunnel Authority, the Long Island Rail Road Company, the Metro-North Commuter Railroad Company, MTA Construction & Development, the MTA Bus Company, and the First Mutual Transportation Assurance Company.
+[p005_c0004] Unless noted otherwise, votes reflected in these minutes are those of each Committee and that of the MTA Board.
+### [p005_c0005] 1. CHAIRMAN FOYE'S OPENING REMARKS.
+[p005_c0006] Chairman Foye called the meeting to order, stating that the MTA regular Board meeting is being held jointly with the Joint Metro-North Railroad and Long Island Rail Road Committee, the New York City Transit Committee, the Bridges and Tunnels Committee, Finance Committee, the Capital Program Oversight Committee, and the Corporate Governance Committee.
+[p005_c0007] Chairman Foye stated that the meeting is being conducted remotely via videoconference, pursuant to Governor Cuomo's Executive Order 202.1, which has been extended, suspending the Open Meetings Law requirements; accordingly any requirements in the MTA By-Laws that meetings are open to in-person attendance by the public and that Board members may participate only in person are also suspended.
+[p005_c0008] Thomas Quigley, MTA General Counsel, conducted the roll-call and confirmed the presence of a quorum.
+[p005_c0009] _MTA and Agencies' Joint Committee and Regular Board Meeting March 17, 2021_
+[p005_c0010] _Master Page # 5 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 6
+
+[p006_c0001] Chairman Foye stated that later in the meeting, Agency Presidents and staff will submit their agency reports, procurements and actions for a vote. The Board members' participation in the meeting but silence at the time of a vote will be considered an affirmative vote for the record. The Chairman advised Board members that if any member would like to vote in opposition or abstain from any action, that Board member should state his/her name and indicate that.
+[p006_c0002] Chairman Foye stated that speakers for the public comment period were able to register on Monday, March 15, 2021 and send in their video or voice comments. The Chairman noted that the first 30 minutes of speakers' comments will be delivered at today's meeting and comments made by other speakers will be published on the MTA website.
+[p006_c0003] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for the details of Chairman Foye's opening remarks.
+### [p006_c0004] 2. PUBLIC SPEAKERS SESSION.
+[p006_c0005] The MTA Moderator announced that the first 30 minutes of speakers' comments will be delivered at today's meeting and comments made by other speakers will be published to the MTA website. The MTA Moderator reminded speakers of the two-minute speaking limit and that speakers will be alerted when 30 seconds remain to conclude their remarks.
+[p006_c0006] There were 22 registered public speakers, the following 18 speakers commented by videoconference during the public speakers' session. Refer to the video recording of the meeting produced by the MTA and maintained in MTA records for the content of the public speakers' statements, and to MTA.info for comments made by other public speakers.
+[p006_c0007] Assemblymember Jessica González-Rojas, NYS Assembly, District 34 Councilmember Ydanis Rodriguez, NYC Council, District 10 Aleta Dupree, private citizen Rachael Fauss, Reinvent Albany Felicia Park-Rogers, Tri-State Transportation Campaign Matt Kamper, Passengers United Lisa Daglian, Executive Director, PCAC CN, private citizen Lukas Wolpiuk, private citizen Charlton D'Souza, President, Passengers United Monica Bartley, Center for Independence of the Disabled, NY Christina Lampropoulos, TBTA Superior Officers Benevolent Association Andy Pollack, Passengers United Miriam Fisher, private citizen Benjamin Fried, TransitCenter Eman Rimawi, NYLPI Eric Loegel, TWU Anthony Simon, General Chairman, SMART Transportation
+[p006_c0008] _MTA and Agencies' Joint Committee and Regular Board Meeting March 17, 2021_
+[p006_c0009] _Master Page # 6 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 7
+
+### [p007_c0001] CHAIRMAN FOYE’S REMARKS.
+[p007_c0002] Chairman Foye thanked everyone for joining this month’s virtual meeting of the MTA Board. The Chairman stated that for the last year the meetings have been held virtually and he expressed his appreciation to everyone for their patience and understanding during this unprecedented public health crises. Chairman Foye stated that we all have come a long way over the last twelve months and look forward to brighter days and in-person meetings ahead.
+[p007_c0003] Chairman Foye stated that it is important to take a moment today to pause and reflect on the challenges of the past year. It is difficult to comprehend the losses we have experienced, not only at the MTA but as a nation. Over 530,000 Americans have lost their lives to COVID-19, including more than 150 MTA colleagues. Chairman Foye stated that he will begin today’s meeting with a moment of silence to acknowledge members of the MTA family who have passed since the last meeting and recognize and honor their service and their memory.
+[p007_c0004] Interim NYCT President Sarah Feinberg read the names of the following NYCT employees:
+[p007_c0005] NYCT Corporate / NYCT Subways / Staten Island Railway
+- [p007_c0006] • Mir Ali • James Hampton • Thales Delia • Michael Leal • Sylvester Hutchinson • Frank Pappalardo
+[p007_c0007] NYCT Buses / MTA Bus
+- [p007_c0008] • Lloyd Jeffery
+[p007_c0009] Phillip Eng, President, Long Island Rail Road, read the name of the following LIRR employee:
+- [p007_c0010] • Mitchell Datz
+[p007_c0011] Catherine Rinaldi, President, Metro-North Railroad read the name of the following Metro-North employee:
+- [p007_c0012] • Laura Foster
+[p007_c0013] Following the reading of the names, Chairman Foye asked everyone to join him in a moment of silence in honor of these employees.
+[p007_c0014] Chairman Foye stated that over these past months bright spots have been few and far between, but the daily dedication shown by the MTA’s incredible workforce has been a constant source of inspiration. Chairman Foye stated that the workforce has powered the City and the region through the depths of this crisis and kept the region moving. The Chairman stated that he is thrilled that MTA’s partners in the federal government have rightly recognized the MTA employees’ service and sacrifice in the past, and now again by passing the American Rescue Plan.
+[p007_c0015] _MTA and Agencies’ Joint Committee and Regular Board Meeting March 17, 2021_
+[p007_c0016] _Master Page # 7 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 8
+
+[p008_c0001] This landmark legislation provides another estimated $6.5 billion in emergency aid to the MTA. This historic level of funding will further offset COVID's impact and help protect against devastating service cuts and layoffs in the years ahead, where there are still projected substantial deficits. This legislation ensures that MTA can continue providing the services needed to lead New York and the nation's economic recovery.
+[p008_c0002] Chairman Foye stated that this would not be possible without the hard work of New York State's hometown hero, Senate Majority Leader Schumer. Senate Majority Leader Schumer has been MTA's champion from the beginning with respect to COVID and other issues, and the MTA is grateful for his unwavering leadership, and that of Speaker Pelosi and the bipartisan New York delegation. Chairman Foye thanked President Biden for proving once again that he is America's biggest transit advocate. The Chairman also extended thanks to Transportation Secretary Buttigieg for his clear support of transit agencies' need for robust federal assistance.
+[p008_c0003] Chairman Foye stated that with this critical aid on the way, the MTA can shift its focus away from doomsday budget preparations. Accordingly, the MTA is now able to implement all previously negotiated general wage increases as scheduled and move ahead with other contract negotiations. The MTA is committed to finding a path forward that recognizes the dedication of its hardworking employees that also safeguards the agency's long-term financial health.
+[p008_c0004] Chairman Foye stated that, additionally and just as important, the latest infusion of federal aid allows the MTA to unfreeze its historic 2020-2024 Capital Program. Important projects are again under funding discussion, like modernizing signals on subway lines; adding new accessible stations; bringing LIRR service to Grand Central Terminal; expanding Metro-North service to Penn Station with four new stations in the Bronx; and extending the Second Avenue Subway to East and Central Harlem.
+[p008_c0005] Chairman Foye stated that it is imperative that we continue to modernize the system so that once MTA moves past this current crisis, it does not regress back to the situation it was in during the 1970s and '80s. Chairman Foye stated that the organization remains committed to bringing its 117-year-old subway system into the 21st century and this new federal funding package will help with this mission.
+[p008_c0006] Chairman Foye stated that, in the meantime, the MTA remains focused as ever on ensuring the health and safety of its workforce. Last week, the MTA opened its second employee vaccination center at Grand Central Terminal; and we look forward to opening additional sites systemwide, including at the Jamaica Control Center. The Grand Central and 130 Livingston Street locations are already distributing roughly 200 doses to MTA employees per day. Chairman Foye stated that this is great news, as the MTA's goal is to vaccinate as many employees as possible. So far, more than 17,500 colleagues have already received at least their first vaccination shots—that's 25% of the workforce, an impressive number so far but there is a lot more to do. Chairman Foye thanked Chief Safety Officer Patrick Warren, Dr. Daria Luisi, Corporate Occupational Health Officer, and all the MTA staff who have worked so hard to get these hubs up and running. Chairman Foye stated that he realizes that some employees remain hesitant. He encouraged everyone to get vaccinated to better protect their health and that of their colleagues, families and friends.
+[p008_c0007] _MTA and Agencies' Joint Committee and Regular Board Meeting March 17, 2021_
+[p008_c0008] _Master Page # 8 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 9
+
+[p009_c0001] Chairman Foye reiterated that the MTA will play a significant role in the City's return after COVID. Last week MTA reached new ridership highs since the pandemic began—carrying approximately 1.9 million subway riders daily. The Chairman stated that while this number is still significantly below pre-pandemic numbers, ridership is heading in the right direction. MTA is committed to adding service as necessary, as more customers return to the subways, commuter rails and buses. Chairman Foye stated that, as previously announced, the MTA has restored two hours of service overnight and is firmly committed to returning to 24-hour service in the future.
+[p009_c0002] Chairman Foye stated that he and his colleagues have been riding the system all along and they welcome others back to the system over the next few months. The Chairman encouraged riders to wear a mask and ride the train or bus, which he stated is the quickest and safest way to get around the city. The Chairman stated that bringing customers back to the system will be a huge priority in the coming months and beyond, and that more information on this initiative will be forthcoming.
+[p009_c0003] Chairman Foye acknowledged Alan Putre, Executive Director, MTA, Vice President & Chief Revenue Officer, NYCT, New Fare Payment Program; Wayne Lydon, Director, MTA New Fare Payment Programs; and the OMNY team. Chairman Foye stated that the new fare payment system surpassed 50 million taps last week, and the system hit its highest-ever single day for taps on March 9 th – with nearly 340,000. OMNY use has been steadily growing over the last year, and now accounts for nearly 10% of all taps in the system. This time in 2020, that figure was approximately 4%, and it is only expected to increase going forward.
+[p009_c0004] Chairman Foye noted the results of the MTA's latest overtime report, which detailed a reduction of $244 million in overtime since 2018 –a decrease of 18%. The Chairman stated that this is the first time in a decade that the MTA has achieved two consecutive years of overtime reduction. The MTA is on track to reduce overtime spending by $1 billion total between 2020 and 2024. These results have been achieved through aggressive oversight by agency management and by implementing recommendations resulting from various independent reviews.
+[p009_c0005] Chairman Foye stated that while the MTA's work is not over, as it continues implementing new reforms and improving control measures, this news demonstrates considerable progress. The MTA is laser-focused on moving forward with a range of initiatives that will further drive down controllable overtime and address and prevent potential abuses as quickly and efficiently as possible. The MTA knows that it must do better on this issue and is committed to doing just that.
+[p009_c0006] Chairman Foye recognized and applauded Chief Safety Officer Patrick Warren on his steady and tireless leadership over the past year. Chairman Foye stated that as the MTA's Chief Safety and Security Officer, Mr. Warren has not only kept the employees and customers safe, but has also led the way for all transit agencies across the country: pioneering temperature checks, facility safety protocols early on in the pandemic, instituting on-site diagnostic testing, and organizing the current on-site vaccination program for the MTA employees. The Chairman stated that Mr. Warren's leadership in these COVID safety and response initiatives has been rightly recognized by MTA's peer transit agencies, the American Public
+[p009_c0007] MTA and Agencies' Joint Committee and Regular Board Meeting March 17, 2021
+[p009_c0008] _Master Page # 9 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 10
+
+[p010_c0001] Transportation Association (“APTA”), and the MTA’s federal partners. Chairman Foye thanked Mr. Warren, Carl Hamann, Vice President, Office of the Chief Safety Officer, Dr. Luisi, and the entire MTA safety team for their work.
+[p010_c0002] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for the details of Chairman Foye’s remarks.
+### [p010_c0003] 3. CHIEF SAFETY OFFICER’S PRESENTATION.
+[p010_c0004] Patrick Warren, MTA Chief Safety Officer, provided an update on COVID-19.
+[p010_c0005] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for the details of Mr. Warren’s presentation.
+### [p010_c0006] 4. NYPD TRANSIT BUREAU CHIEF OF POLICE PRESENTATION.
+[p010_c0007] Chief Kathleen O’Reilly presented the crime report.
+[p010_c0008] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for the details of Chief O’Reilly’s presentation.
+### [p010_c0009] 5. CHIEF FINANCIAL OFFICER’S PRESENTATION.
+[p010_c0010] Chief Financial Officer Robert Foran provided an updated overview of MTA’s finances.
+[p010_c0011] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for the details of Mr. Foran’s presentation.
+### [p010_c0012] 6. CHIEF DEVELOPMENT OFFICER’S PRESENTATION.
+### [p010_c0013] A. Report on MTA Construction and Development Operations and, CPOC Report:
+[p010_c0014] MTA Chief Development Officer (“CDO”) and C&D President Janno Lieber introduced Tom McGuinness, C&D’s Project Executive for the Long Island Rail Road (“LIRR”) Mainline Expansion (“3 rd Track”) Project (the “Project”), to provide the Board with details concerning the serious incident that occurred over the weekend on the Project in which an iron worker was injured.
+[p010_c0015] Mr. McGuinness reported that on the weekend of March 13, 2021 the Project was working under a double track outage through a ten-mile corridor to remove recently decommissioned specialized track work at the former Nassau 1 Interlocking. He noted that what the MTA has done previously under this Project when a suspension of service exists is to identify other construction operations that can be completed. On the weekend of March 13 th , the Project had 17 such operations scheduled throughout the 10-mile corridor. In Mineola, the Project had work scheduled at Mineola Station, which is being reconstructed. The operation for the day at Mineola was to deliver a preassembled pedestrian bridge to the site. The only work scheduled was for the bridge to be lifted into
+[p010_c0016] _MTA and Agencies’ Joint Committee and Regular Board Meeting March 17, 2021_
+[p010_c0017] _Master Page # 10 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 11
+
+[p011_c0001] place with a large crane, which would set the bridge on top of previously constructed pedestals, and to bolt the bridge into place. The work followed the engineers plans and was completed about 9am on March 13th.
+[p011_c0002] After the scheduled work was done, a decision was made to set an additional piece of steel, a single column. This work was in addition to the work that was originally scheduled and not originally planned for the day. In positioning the piece of steel, the boom of the crane was maneuvered and positioned in a manner that the boom and the mainline cable came into close proximity to overhead energized high-tension electrical lines. This resulted in an electrical arc that jumped through the cable to the steel column that was being set, injuring an iron worker who was in contact with the steel column. The iron worker was transported to NYU Langone Hospital– Long Island, which is about two blocks away from where the incident occurred. Mr. McGuinness noted that it is his understanding that the iron worker is still hospitalized and in serious condition.
+[p011_c0003] Immediately after this incident, all work on the Project was stopped and remains suspended as the MTA continues a thorough investigation into this incident. C&D is looking to identify all contributing factors and to develop and implement additional safety procedures to ensure this and similar types of incidents do not occur going forward.
+[p011_c0004] Mr. McGuinness concluded his remarks by stating that our thoughts and prayers are with the injured iron worker and the agency wishes her a full recovery.
+[p011_c0005] CDO Lieber thanked Mr. McGuinness and stated that safety is the MTA’s number one priority. He noted that when you have a serious incident like this, you have to stop and examine what went on, what were the contributing factors and make sure you have protocols and procedures in place that prevent that type of incident from happening ever again.
+[p011_c0006] CDO Lieber stated he didn’t want to get into the specifics but the MTA has already identified some protocols and procedures that were not properly observed in the sequence that led to the terrible incident. CDO Lieber reported that he attended a meeting on March 16 th at the Project’s Westbury Field Office with 10-12 union leaders, including representatives of the various building and construction trades and representatives of the LIRR work force. The meeting was chaired by Matthew Aracich, President of the Building and Construction trades Council of Nassau & Suffolk Counties. CDO Lieber reported that discussions at the meeting focused on the need to re-examine all of our protocols and procedures and to add additional steps where necessary to prevent accidents of this kind from taking place. He noted that there will be an additional meeting or meetings to accomplish this task.
+[p011_c0007] CDO Lieber reported that there are seven separate investigations taking place concerning the incident. The organizations doing these investigations include federal agencies like OSHA, our own in-house investigation, and the MTA Police Department. All of the findings of the various investigations will be accumulated and factored into the action plan going forward.
+[p011_c0008] _MTA and Agencies’ Joint Committee and Regular Board Meeting March 17, 2021_
+[p011_c0009] _Master Page # 11 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 12
+
+[p012_c0001] CDO Lieber stated one of the things that makes this Project so important is that under this Project, eight grade crossings have already been removed. There had been seven fatalities across these grade crossing in the years leading up to the commencement of the Project. It has only been in these last two years that these eight grade crossings, which are among ten that were identified by the State 20 years ago that were necessary to be closed, have in fact been eliminated due to this Project. Safety is very much at the core of this Project as has been our handling of safety of the contractor and in-house workforce. CDO Lieber stated that he has spoken to the MTA Board regarding the success that C&D has had doing the essential work and keeping the work force safe during the COVID-19 pandemic, where the C&D work force infection rate was three percent which is very low comparatively when you look at other organizations. He further noted that 60% of C&D's work force has been vaccinated or are scheduled to be vaccinated, and that the C&D staff are working and are conducting the work safely.
+[p012_c0002] CDO Lieber noted this is an opportunity to re-examine C&D's work and to work with its in-house and third-party construction unionized trade partners to improve safety. He reiterated that his thoughts are with the iron worker and that the news the last couple of days has been hopeful.
+[p012_c0003] Board Member Kevin Law reported that during an informational briefing with staff from C&D, LIRR and Metro-North with some members of LIRR and MNR Joint Committee held on March 15 th , CDO Lieber provided information on the incident and Board Member Vincent Tessitore, Jr. spoke about safety matters. Board Member Law stated that it is important that we address safety issues because it is always important to improve operations as Board Member Tessitore shared during the briefing and as Anthony Simon has expressed in public statements. Board Member Law further stated that it is critically important for the creditability of the MTA and the LIRR that we get the 3 rd Track Project done on time and on budget as we set out to do a couple of years ago. Deadlines and budgets matter, and Board Member Law noted that he was glad to hear that we are going to pause, undertake an investigation, try to improve safety along with keeping the Project moving forward to meet our deadlines and budgets.
+[p012_c0004] Board Member Law thanked CDO Lieber and Board Member Tessitore for the presentations on Monday.
+[p012_c0005] Due to the discussion on the 3 rd Track incident, CDO Lieber stated that while he would not go through the Presentation he planned to present today, there is a lot of good news including:
+- [p012_c0006] • The opening of ADA elevators at the LIRR Floral Park Station which was done as part of the Project. • We are finishing up the transformative Metro-North White Plains Station Project. • The Rutgers Tube Project, which is the final rehabilitation of a Superstorm Sandy damaged tunnel, which has only taken seven months (began in August 2020) is wrapping up. For this project we utilized the principals we used on the Canarsie Tube (L Train) Project.
+[p012_c0007] MTA and Agencies' Joint Committee and Regular Board Meeting March 17, 2021
+[p012_c0008] _Master Page # 12 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 13
+
+- [p013_c0001] • In tandem with the City Council and the City, our Transit Oriented Development team has developed a zoning for transit accessibility program in which for the first time puts the MTA in partnership with City's Land Use authorities to get elevators for transit facilities out of development projects.
+[p013_c0002] CDO Lieber stated that in the upcoming month he will advise the Board on other information that was contained in the presentation including what C&D is doing with our External Partners Program, an area in which the MTA had struggled in the past in handling outside development that impacts on service and facilities and turning it into a success story. We've instituted a fee structure where we've already collected a million dollars in an area that the MTA historically lost a lot of money and struggled to meet with the demand.
+[p013_c0003] Board Member Andrew Albert commented that it is terrific we have all of this work going on and we are going to try to do it more safely which is of course very important. He noted that, something that might be overlooked is that he has noticed on occasion that the signage for General Orders on major projects sometimes isn't posted and/or removed in a timely fashion while other times it is inaccurate. Board Member Albert stated he was hopeful that people will be reviewing the signage and the electronic alerts to ensure it is accurate, put up and taken down in a timely fashion.
+[p013_c0004] CDO Lieber thanked Board Member Albert and commented that he brought up a very important point. CDO Lieber stated that one of the important benefits of the new digital signage we are putting up throughout the MTA system is that we have more visibility to get information out to the public and provides a more accurate and timely mechanism as to when such information is posted and removed than the paper signage permits.
+[p013_c0005] Board Member Norman E. Brown inquired as to whether the Design-build method itself could be a factor, like a subcontractor cutting corners, and if that will be part of the 3 rd Track investigation.
+[p013_c0006] CDO Lieber responded that we are still in the investigation stage and as Tom McGuinness had indicated earlier, there was some work that was not planned for that weekend that was performed. This work was performed in violation of protocols. There was a Safe Work Plan that was associated with that type of work that was not utilized. So the first step of the investigative process is to determine how did it come to pass that the work was performed at all, why weren't the protocols and procedures for that work followed? After that is determined, we can then explore the motivation of the folks responsible for those decisions. CDO Lieber stated that at this time it would be premature for him to comment on the hypotheticals but it is a fair question and he would be happy to discuss once we have gotten to the bottom to what actually transpired and why.
+[p013_c0007] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for the details of Mr. Lieber's presentation, and discussions and comments from Board members and staff.
+[p013_c0008] _MTA and Agencies' Joint Committee and Regular Board Meeting March 17, 2021_
+[p013_c0009] _Master Page # 13 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 14
+
+### [p014_c0001] 7. APPROVAL OF MINUTES.
+[p014_c0002] Upon motion duly made and seconded, the Board approved the Minutes of the Joint Committee and Board meeting of the MTA and MTA Agencies held on February 18, 2021.
+[p014_c0003] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records for the details.
+### [p014_c0004] 8. LIRR AND METRO-NORTH RAILROAD JOINT COMMITTEE.
+### [p014_c0005] A. LIRR President Phillip Eng's Report:
+[p014_c0006] President Eng stated that he is deeply saddened to report that on February 27, we lost another member of the Long Island Rail Road family to COVID-19: Mitchell Datz, an Engineer and proud member of the Brotherhood of Locomotive Engineers and Trainmen (BLET) union. President Eng stated that Mitch joined the railroad in September 2003, as an Engineer Trainee, dedicating nearly 18 years of his career to public service. Mitchell Datz was always professional, cheerful and respected by all, a true role model in the Transportation Services Department. President Eng extended his heartfelt condolences to Mitch's wife Francine, to his daughter Joanna and son Max, to all of Mitch's family and friends, and to those colleagues who had the honor of working alongside him.
+[p014_c0007] President Eng stated that as we celebrate Women's History Month, it is only fitting that he acknowledges Mary Lou Centauro, who is retiring after 41 years of public service with us. President Eng stated that Mary Lou started in 1980, at what was then Long Island Bus, before joining the LIRR in 2005 as Manager of Pensions. He stated that Mary Lou has always excelled in carrying out her responsibilities, serving as Senior Manager – Audit and Quality Control Services and Director of HR Business and Retirement Services, before becoming our Senior Director of Human Resources. In these roles, Mary Lou oversaw the streamlining of pension data and was instrumental in the successful implementation and auditing of the new PeopleSoft Pension Administration system for two MTA agencies. When the pandemic hit New York, and our agency, Mary Lou went above and beyond as she directed the HR response to COVID-19, a truly monumental task. President Eng stated that he could always go to Mary Lou and get immediate answers, adding that we are all grateful for everything she has brought to the table at the railroad over the years and we are certainly the better for it. President Eng stated that we will all miss Mary Lou Centauro and wish her well in her next chapter of life.
+[p014_c0008] Regarding schedules, President Eng stated that, as we have done since the beginning of the pandemic, we have been adjusting service to support the changing ridership patterns and with each service plan implemented, we are always committed to making further adjustments as needed.
+[p014_c0009] President Eng stated that while we adjusted the March 8 schedules and ridership continues to hover around 24/25%, he felt it was important to restore previous levels of service based on the invaluable feedback from our riders. He noted that the March 8 timetable was
+[p014_c0010] _MTA and Agencies' Joint Committee and Regular Board Meeting March 17, 2021_
+[p014_c0011] _Master Page # 14 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 15
+
+[p015_c0001] developed to allow us to accomplish a series of critical infrastructure projects, several of which started on Day 1.
+[p015_c0002] President Eng noted that one major example is the vital state of good repair work consisting of rail replacement and concrete ties for the Port Washington Branch. He stated that as we finalize the plan for March 29, such work necessitates rewriting train crew assignments for approximately 366 employees to support the successful restoration of service. President Eng stated that this is an aggressive timeline, but achievable with the aid of our labor partners.
+[p015_c0003] President Eng stated that with a focus on getting more and more Americans getting vaccinated, he looks forward to the continued reopening of businesses and the return of riders who rely on mass transportation, noting that we remain committed to providing our customers more information with technology that will assist them as they return.
+[p015_c0004] President Eng then gave a PowerPoint presentation. Regarding the first slide (“Find your seat with TrainTime”), he stated that we use new technology to give our riders real-time loading information, with a new level of granularity for them. President Eng stated that we have added actual passenger counts for each car in a train, which is updated continuously as riders exit or board. Regarding the next slide (“Find your seat zoomed in”), President Eng stated that this information can be viewed prior to boarding or while already on the train, allowing riders to pick and choose cars with more capacity.
+[p015_c0005] Regarding the next slide (“New designs: find your seat”), President Eng observed that everyone has a different level of comfort, so we are going even further. Last year, we provided seat availability on our platform signs in Jamaica. President Eng stated that we now expanded this across all 124 stations, noting that the slide shows the platform sign at New Hyde Park with seat availability.
+[p015_c0006] President Eng stated that customers can access this information not only on the LIRR TrainTime app, but they can also simply now look up while they’re standing on any platform and see which train cars have the most personal space available. He stated that we know riders often board where it’s most convenient, which is not always where there is more room. President Eng observed that this data now triggers an automated platform announcement that customers will hear when an approaching train is unevenly loaded.
+[p015_c0007] The next slide was an audio clip of a recorded platform announcement that customers heard on Monday as they awaited a Penn Station-bound train. President Eng stated that we’re making sure to tackle this from every angle to ensure customer comfort and service, while we do all we can to support New York through its economic recovery and reopening.
+[p015_c0008] Regarding the next two slides, President Eng stated that all of the data shown allows us to plan and adjust service. He noted that dashboard for rail road operations provides a single screen with every train and every car, updated with real time car loading. President Eng stated that he monitors this dashboard daily, which more importantly, is now utilized in our control center so they can continuously monitor real time loading.
+[p015_c0009] _MTA and Agencies’ Joint Committee and Regular Board Meeting March 17, 2021_
+[p015_c0010] _Master Page # 15 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 16
+
+[p016_c0001] Reporting on February 2021 On-Time-Performance (“OTP”), President Eng stated that he is proud to say that the customers we are carrying are getting to their destinations on time and safely. In February, LIRR trains operated on-time at 95.6%, exceeding our monthly goal of 94%. President Eng stated that we’re performing better than we did last year at this time: so far in 2021, our on-time metrics are at 96.5%, an increase of 2.7 percentage points over the same period last year.
+[p016_c0002] Concluding the PowerPoint presentation, President Eng stated that the last slide showed the special guest we had aboard our Montauk train on March 9 th , an eight-year-old English Bulldog named Sampson, saved by our own train crew after he ran away from his owner at a nearby park in the Hamptons. President Eng commended our quick-thinking, and quick-acting, crew -- Conductor Mike Stabile, Engineer Christian Beck and Assistant Conductor Vinny Fragale – who went above and beyond to rescue Sampson. They stopped the train, took him off the tracks, got him on board safely, and then connected the dog to his owner. President Eng praised this crew’s act of heroism as another example of how our workforce is truly part of the community where they live and serve. Our conductors, engineers and other frontline workers are truly compassionate people who take pride in helping their Long Island neighbors.
+[p016_c0003] President Eng stated that for what our workforce does day in and day out, he can’t thank them enough. He assured our customers, those who have been riding with us and those who are coming back, that we will continue to adjust to ensure our system operates as safely and efficiently as possible. He stated that we’re all getting more hopeful by the day, as the vaccine rollout continues, and New York begins to open up more and more. President Eng concluded his report by encouraging everyone to continue to care for one another, practice safety, wear masks in public and on trains, and get vaccinated when you’re able to.
+[p016_c0004] The video recording of the meeting produced by the MTA and maintained in MTA records contains a complete record of President Eng’s report. Additionally, the details of the following Long Island Committee items are contained in reports filed with the records of this meeting:
+### [p016_c0005] B. LIRR Information Items:
+- [p016_c0006] • LIRR Annual Elevator/Escalator Report • Spring Trackwork Programs
+### [p016_c0007] C. Other LIRR Committee Items:
+- [p016_c0008] • Minutes of the Joint Metro-North and Long Island Rail Road Committee Meeting held February 18, 2021 • LIRR 2021 Work Plan • LIRR Safety Report • MTA Police Report – LIRR • LIRR Operations, Performance Metrics, Finance, Ridership, and Capital Program Reports
+[p016_c0009] MTA and Agencies’ Joint Committee and Regular Board Meeting March 17, 2021
+[p016_c0010] _Master Page # 16 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 17
+
+### [p017_c0001] A. Metro-North President Catherine Rinaldi's Report:
+[p017_c0002] President Rinaldi reported that despite winter storms throughout February, Metro-North trains operated above goal at 98% and performance stands at 98.1% year-to-date, broken down as follows:
+- [p017_c0003] • Hudson Line: 97.9% • Harlem Line: 99.2% • New Haven Line: 97.2%
+[p017_c0004] West of Hudson Service operated slightly below goal at 90.6% with year-to-date performance at 92.2%.
+[p017_c0005] President Rinaldi reported that as more customers return to the railroad, Metro-North continues to focus on making the system not only safe and reliable but also improving access. This month, Metro-North held its quarterly Accessibility Task Force meeting with representatives from the counties in Metro-North's service area, the New York City Mayor's Office, New Jersey Transit, the Connecticut Department of Transportation, the Permanent Citizens Advisory Committee, the Metro-North Commuter Council, and Metro-North leadership. President Rinaldi expressed her thanks that Quemuel Arroyo, MTA's Chief Accessibility Officer, was also able to join the meeting along with Board Members Glucksman and Calise.
+[p017_c0006] The task force was briefed on Metro-North's "Call Ahead" program, which is available twenty-four hours a day, seven days a week, including holidays, to assist seniors and people with disabilities, including those who use wheelchairs or other mobility devices. Customers looking for assistance can call 511 or (212) 532-4900. Metro-North needs as little as 15 minutes advance notice of a trip to gather station and train schedule information. We will then coordinate it so that our staff will be available to assist the customer with getting on or off the Metro-North train. Although 2019 was Metro-North's strongest year, with dedicated Customer Service agents assisting 6,600 customers, in 2020 during the pandemic Metro-North still assisted 2,200 customers who either relied on wheelchair assistance, visually impaired escorts in Grand Central Terminal, or contacted Metro-North through the "Call Ahead" program.
+[p017_c0007] Metro-North has Station Ambassadors at select stations throughout its territory to assist getting customers with limited mobility to exits, platforms, bus stops, cab stands, and other transit points. Customers can also request assistance using Metro-North's new "WhatsApp" which connects customers with Customer Service Managers available from 6:00 AM to 10:00 PM, daily. Soon, the "Call Ahead" feature will be integrated with Metro-North's new enhanced "Train Time" app to make it easier and more convenient to access customer service.
+[p017_c0008] Metro-North's greatest resource is its people and President Rinaldi devoted the remainder of her remarks to recognizing some outstanding employees and imminent retirements.
+[p017_c0009] _MTA and Agencies' Joint Committee and Regular Board Meeting March 17, 2021_
+[p017_c0010] _Master Page # 17 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 18
+
+[p018_c0001] President Rinaldi first congratulated Kelli Coughlin on being selected as a 2021 New York Labor Rising Star by City & State New York . Last week, Kelli was recognized as one of forty talented individuals under forty years old who are rising stars in New York's labor sector. In a short time, Kelli has worked her way up at Metro-North starting as an intern in 2012 to her current position as Deputy Director of Labor Relations, which involves interpreting and administering labor contracts for more than fifteen Metro-North unions. She has been involved in numerous arbitration hearings, policy determinations, and is a key member of Metro-North's collective bargaining team. In 2016, Kelli was a recipient of Metro-North's highest employee honor, the President's Award, and is also widely considered a rising star within the MTA family.
+[p018_c0002] President Rinaldi remarked that Metro-North ended Black History Month with a Women's Book Club virtual meeting to discuss "The Warmth of Other Suns: The Epic Story of America's Great Migration," and welcomed Board Member Rhonda Herman's participation. Board Member Herman thanked President Rinaldi for inviting her to the meeting. Metro-North is now celebrating Women's History Month by highlighting the stories of women at Metro-North like Kelli Coughlin who "get the job done." Throughout this month, Metro-North is presenting the stories of these women, focusing on their roles and contributions at Metro-North, and what they think is unique about being a woman in the transportation industry. The women represent a cross section of the railroad, some just starting out, and others seasoned "railroaders," who have built impressive careers.
+[p018_c0003] They are:
+- [p018_c0004] • Phyllis Mials, Coach Cleaner for Maintenance of Equipment in Grand Central Terminal; • Lyn Hannah, Director of Operating Rules in Operations; • Michelle Morris, Signal Maintainer for Maintenance of Way; • Ebony Smith, a Rail Traffic Controller in our Operations Control Center; • Arinda Vasquez, Assistant Facility Director for the Upper Harlem Line; and • Robin Brown, Assistant Director for Crew Management in Transportation.
+[p018_c0005] President Rinaldi stated that Metro-North proudly celebrates this diverse group of women and all women across Metro-North who contribute to Metro-North's mission every day. Finally, President Rinaldi acknowledged the departure of three executive team members, Dave Kubicek, Tom Mitchell, and John Kesich, and thanked each of them for their years of dedicated service.
+[p018_c0006] Dave Kubicek joined Metro-North in 2018 as Vice President of Operations Support and Special Projects after serving at Long Island Rail Road for almost four years. Recently, Dave played a key role in successfully bringing PTC software to Metro-North's M8 fleet ahead of the December 31, 2020 federal deadline for PTC implementation. President Rinaldi wished Dave lots of luck and success as he returns to his home state of Texas and begins his next chapter in transportation with Capital Metro in Austin.
+[p018_c0007] Tom Mitchell will be retiring next month after thirty-seven years of dedicated service. A 2014 President's Award winner, Tom joined the railroad in 1984 as a ticket agent and
+[p018_c0008] MTA and Agencies' Joint Committee and Regular Board Meeting March 17, 2021
+[p018_c0009] _Master Page # 18 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 19
+
+[p019_c0001] block operator. He has steadily risen through the ranks to achieve the position of Vice President of Customer Service and Stations in 2018. Since he has been in that position, Tom has introduced several initiatives. He presided over the extension of the Customer Communications Center to 24/7 coverage, the building of the Station Ambassadors Program, and the installation of the Big Boards in Grand Central Terminal. He has been a principal force in upgrading and improving communications across the railroad. Most recently, Tom has overseen new features to the TrainTime app, including the capacity tracking of trains. He was also instrumental in facilitating real time customer communications using the popular messaging platform WhatsApp. President Rinaldi expressed her gratitude for Tom's friendship and professionalism. She said she was so glad to have had the opportunity to meet, collaborate, and work with him as he has made these advances. President Rinaldi thanked Tom for all he has done for Metro-North and wished him and his family the best of luck.
+[p019_c0002] President Rinaldi also acknowledged the imminent retirement of John Kesich, Senior Vice President of Operations. President Rinaldi thanked John for his thirty-one years of service. President Rinaldi first met John when she was the General Counsel of the Long Island Rail Road, and John was the Assistant Chief Mechanical Officer for Metro-North. They were both engaged in negotiations with Bombardier on behalf of both railroads, with respect to the M7s. Beginning his railroad career in the MTA's Future Managers Program back in November 1990, John worked rotational assignments within all major areas of Metro-North's Operations Division, including Maintenance of Equipment, Transportation, Power, Signal, and Track, which gave him a well-rounded understanding of the railroad's operations. After successfully completing the requirements of the two-year program, John worked his way up through the Mechanical Department bringing to bear his analytical ability, expertise, critical thinking, and creativity. Every day at the railroad, he has used those skills as he climbed up through the ranks of the Mechanical Department. John became the Senior Vice President of Operations in 2013 at a challenging time for Metro-North. The knowledge and skills John developed over the years in the Operations Department capably prepared him for the Senior Vice President of Operations position. John stepped up and has been a driving force in making the railroad what it is today. He stressed the basics – safety, operations, people – everything that it takes to make the railroad safe and reliable. President Rinaldi stated that she is proud of John and it has been an honor to know him. She is grateful for all he has given to the railroad and for his friendship. President Rinaldi expressed her thanks to John and his family for allowing him to give so much and wished him all the best as he moves on to this next stage of life.
+[p019_c0003] President Rinaldi asked the Board to please join her in congratulating Dave, Tom, and John on their outstanding public service and wishing them all the best. Metro-North will greatly miss their expertise and knowledge.
+[p019_c0004] The video recording of the meeting produced by the MTA and maintained in MTA records contains a complete record of President Rinaldi's report and comments made by Board members. Additionally, the details of the following Metro-North Committee items are contained in reports filed with the records of this meeting:
+[p019_c0005] MTA and Agencies' Joint Committee and Regular Board Meeting March 17, 2021
+[p019_c0006] _Master Page # 19 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 20
+
+### [p020_c0001] B. Metro-North Information Item:
+- [p020_c0002] • Annual Elevator and Escalator Report
+### [p020_c0003] C. Metro-North Procurement:
+- [p020_c0004] 1. Board approval to use the competitive Request for Proposal (“RFP”) process to seek a pest control firm for proactive integrated pest management services for Grand Central Terminal facilities and retail shops.
+[p020_c0005] Upon motion duly made and seconded, the Board approved the foregoing procurement. The details of the approved procurement are contained in a staff summary and documentation filed with the records of this meeting.
+### [p020_c0006] D. Other Metro-North Committee Items:
+- [p020_c0007] • Minutes of the Joint Metro-North and Long Island Rail Road Committee Meeting held February 18, 2021 • Metro-North 2021 Work Plan • Metro-North Safety Report • MTA Police Report – Metro-North • Metro-North Operations, Performance Metrics, Finance, Ridership, and Capital Program Reports
+[p020_c0008] Thomas J. Quigley, General Counsel, clarified the comment made by Board Member Kevin Law, who inadvertently referred to an information briefing as a Joint Railroad Committee meeting, which Mr. Quigley confirmed was incorrect. Mr. Quigley stated that the Joint Railroad Committee meeting is being held today, concurrently with the MTA regular Board meeting. Mr. Quigley also confirmed that Board Member Law was referring to an information session held by staff, who provided updates to Board Members on various matters. Additionally, Mr. Quigley confirmed that no roll call was taken, no quorum was established and no action or vote was taken at the information session.
+### [p020_c0009] 9. NEW YORK CITY TRANSIT AUTHORITY (“NYCTA”) COMMITTEE
+### [p020_c0010] A. NYCTA Interim President Sarah Feinberg’s Report:
+[p020_c0011] Interim President Feinberg thanked the men and women of NYCT who she said over the last month have dealt with challenging weather and have continued the deep cleaning and disinfecting of the subway and bus system. She noted that these individuals, as always, have been the true heroes who have kept service running.
+[p020_c0012] Interim President Feinberg expressed how heartbroken she continues to be by the number of people who are fighting through COVID-19 or have passed away due to COVID-19. Interim President Feinberg conveyed her continued gratitude for the family liaison program team and their unbelievable work throughout this crisis, including helping families through
+[p020_c0013] MTA and Agencies’ Joint Committee and Regular Board Meeting March 17, 2021
+[p020_c0014] _Master Page # 20 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 21
+
+[p021_c0001] these horrible moments and all the complicating factors that come from the passing of a loved one. Interim President Feinberg remarked that the continued fact that people are continuing to become ill and pass away serves as a critical reminder of the importance of both mask vigilance and the vaccine rollout. She expressed her gratitude to Pat Warren and his team for the vaccine program they put together, which started with the acceptance of NYCT employees at the Javits Center and grew to include vaccination programs throughout NYCT's own facilities. Interim President Feinberg said that as the program continues to grow, NYCT will be able to vaccinate more and more people. She also thanked Sarah Meyer and her team for their mask force work and noted that some members of the Board will be participating in the mask force this month and she expressed appreciation for those efforts.
+[p021_c0002] Interim President Feinberg spoke about the good news that ridership has continued to go up, with two all-time highs for the subway system in the last several days. She noted that 60-degree sunny weather helps and she hopes to reach the two million ridership mark in light of the forecast for the next few days. Interim President Feinberg reported that the Department of Buses continues to have consistently high ridership and is already ahead of the McKinsey projections. She said that NYCT is slowly chipping away at this crisis as the city and economy start to come back, and she reiterated her appreciation for NYCT employees for continuing to run the system.
+[p021_c0003] Interim President Feinberg addressed issues relating to the C and F lines, noting that there has been a lot of discussion around these lines. She said while she discussed such issues with the transit committee, she wants to make sure other members of the Board who want to discuss the matters know she is available at any time to do so. Interim President Feinberg stated that the C and F lines are two lines that were not fully restored following the "essential service" plan, and service has generally been about even for the lines for a little less than a year. She clarified that the lines are down only slightly not significantly, and that as ridership has continued to hover in the 30% range, ridership on these two lines has continued to be down approximately 80-85%. Interim President Feinberg stated that she understands the frustration of employees who work on these two lines and have been keen to do certain jobs on those lines, or who have shift times and starting locations on these lines, since these two lines have been less available. She said that ultimately, we need to see where service is going to land over the next several months. If the city and economy come back and if we have confidence that we will remain almost full service on every line, then NYCT will be able to put together a pick that gives the workforce certainty and reliability. She noted that she is happy to discuss these issues more.
+[p021_c0004] Interim President Feinberg spoke about NYCT's policing and security issues, thanking Chief O'Reilly for being at the Board meeting and for her continued partnership along with Commissioner Shea. Interim President Feinberg said she continues to be thankful for their help as NYCT continues to deal with these issues in the system. She noted that she is grateful any time the number of incidents goes down in the system, and grateful any time we see the quick work of the police on display. She said she believes the last couple weeks have been an improvement of what has occurred over the last several months, but that she will continue to have concerns about the fact that crime has not come down to match ridership levels coming down. Interim President Feinberg emphasized that any time there
+[p021_c0005] MTA and Agencies' Joint Committee and Regular Board Meeting March 17, 2021
+[p021_c0006] _Master Page # 21 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 22
+
+[p022_c0001] is a significant crime or assault or harassment against one of our employees, and any time someone does not feel safe in the system, that is one too many times for her. She said she will always be the squeaky wheel pushing for more and trying to make sure NYCT is doing everything possible to keep the system safe and secure. Interim President Feinberg then addressed an incident that had just happened overnight where reportedly one of NYCT's cleaners was beaten up and assaulted by someone. She said the police responded extremely quickly, placed the person under arrest and the person attacked a police officer. She said that while these are generally one-off situations, NYCT will do everything they can to address such incidents and bring the numbers down. Interim President Feinberg stressed that she remains deeply concerned about the misdemeanor, assaults and other crimes in the system, that this is not what should be happening and that she will watch the numbers carefully.
+[p022_c0002] Interim President Feinberg addressed an issue she said the Board has traditionally not spoken a lot about which is the use of cameras in the system, noting that NYCT is doing everything possible on this front. She explained that such cameras are not necessarily feeding information in real time but contain information NYCT can go back to if something happens on the system within the path of the camera. Such information can be shared with MTA police. Interim President Feinberg said the fact that NYCT has been able to ramp up use of the technology over the last year has led to a significant number of occasions where NYCT has been able to share information, images and footage with the police, that has led to the arrest of someone who committed a significant crime in the system. Interim President Feinberg thanked NYCT's security team and police for getting that extremely difficult technology up and running, and thanked station personnel as well.
+[p022_c0003] Lastly, Interim President Feinberg thanked MTA Inspector General Carolyn Pokorny and her team for the great work they have done over the last year while she has been at NYCT. Interim President Feinberg stated that NYCT has spent significant resources addressing a lot of the outstanding issues. She said it was important to be candid and transparent about the fact that IG investigations were not always taken seriously at NYCT but said she could not speak for other departments or agencies. Interim President Feinberg commented that any good Inspector General will open a president's or a department's eyes to issues within the agency or organization, and she is thankful for the professional work of the IG, particularly for their work on issues concerning alcohol testing, the boiler room and asbestos issues among others. Interim President Feinberg expressed how grateful she was for Ms. Pokorny's leadership and the team's persistence, and also thanked her own team, who she said has been relentless in their efforts to not only do the right thing and do whatever needs to be done internally, but to hold people's feet to the fire and not let NYCT off the hook when it comes to circumstances that could lead to dangerous circumstances for our colleagues.
+[p022_c0004] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for details of any discussion surrounding this presentation.
+[p022_c0005] _MTA and Agencies' Joint Committee and Regular Board Meeting March 17, 2021_
+[p022_c0006] _Master Page # 22 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 23
+
+### [p023_c0001] 10. MTA BRIDGES AND TUNNELS (“MTA B&T”) OPERATIONS COMMITTEE
+### [p023_c0002] A. MTA B&T President Daniel DeCrescenzo’s Report:
+[p023_c0003] As MTA B&T passes the one-year mark of the global COVID-19 pandemic, Mr. DeCrescenzo acknowledged those family members, friends and fellow MTA employees who have passed away from the virus. He also reflected on how MTA B&T employees have joined together to address the challenges presented by the pandemic and thanked them for continuing to provide essential services to MTA B&T’s customers. He mentioned some ways those challenges have been met:
+- [p023_c0004] • Providing personal protective equipment • Tracking and contact tracing to limit transmissions • Regularly disinfecting work locations • Requiring workplace social distancing and mask usage, with monitoring measures for compliance • Implementing staggered work schedules and continuing telework plans to reduce workplace density
+[p023_c0005] He also stated that COVID-19 vaccinations and testing are made available to all MTA B&T employees and approximately 40% of MTA B&T’s workforce has been vaccinated.
+[p023_c0006] With regard to operations, Mr. DeCrescenzo stated that traffic has declined by 27% in the past 12 months; year to date it has declined approximately 18%; and for this month so far traffic is approximately 13% below pre-pandemic levels. As people continue to get out and about, MTA B&T is helping its customers through the “Tolls NY” smartphone application, which was developed in conjunction with the New York State Thruway Authority and the Port Authority of New York and New Jersey. The app has been downloaded nearly 600,000 times since its release this past summer. Mr. DeCrescenzo presented a promotional video which summarizes the apps features.
+[p023_c0007] Mr. DeCrescenzo stated that the MTA B&T is also working with the MTA digital team to produce a series of instructional videos to help customers better manage their E-ZPass accounts, pay their tolls promptly, and avoid fees. These videos will be available through the app and on the MTA website and he thanked those involved in this effort.
+[p023_c0008] The details of Mr. DeCrescenzo’s presentation are contained in the video recording of this meeting, produced by the MTA and maintained in MTA records.
+### [p023_c0009] Procurements
+[p023_c0010] Mr. DeCrescenzo stated that there are no procurements.
+[p023_c0011] _MTA and Agencies’ Joint Committee and Regular Board Meeting March 17, 2021_
+[p023_c0012] _Master Page # 23 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 24
+
+### [p024_c0001] 11. MTA C & D OPERATIONS PROCUREMENT ITEMS.
+[p024_c0002] CDO Lieber presented C&D's procurement packages for the MNR and LIRR Joint Committee and the MTA B&T Committee.
+### [p024_c0003] A. MNR and LIRR Joint Committee:
+[p024_c0004] CDO Lieber reported that C&D has two procurement actions totaling $7.8M being brought through the MNR and LIRR Joint Committee this month and both are ratifications.
+[p024_c0005] The first item requests Board ratification of a modification to the East Side Access Harold Structures Tunnel B/C Approach with Skanska USA Civil Northeast, Inc. for the furnishing and installation of track, special trackwork, third rail, and catenary for the Loop 1A track in F Interlocking, in the amount of $6.2M.
+[p024_c0006] The work under this modification was originally planned to be performed by Amtrak Force Account but because of capacity and timing issues the work must be performed by a third-party contractor. It is now being accelerated to take advantage of the current Amtrak and LIRR period of low ridership and provides an opportunity to schedule the outages necessary to perform the work between February and April of this year, Skanska is currently mobilized and working in the area and has the necessary experience and equipment to perform the work.
+[p024_c0007] The second item requests Board ratification of a modification to the East Side Access Systems contract with Tutor Perini Corporation to extend the Backbone Communication System to support phones, Public Address and Variable Message Signs, and the Automatic Temperature Control system into the Mid-Day Storage Yard in the amount of $1.6M. Upon a motion duly made and seconded, the Board:
+- [p024_c0008] 1. Ratified a retroactive modification (No. 31) to the East Side Access Project's Harold Structures – B/C Approach contract (CH058A) for furnishing and installation of track, special trackwork, third rail, and catenary for the Loop 1A track in F Interlocking for the amount of $6,200,000. 2. Ratified a retroactive modification (No.421) to the East Side Access Project's Systems Facilities Package No. 1 contract (CS179) to extend the Backbone Communication System to support phones, Public Address and Variable Message Signs, and the Automatic Temperature Control system into the Mid-Day Storage Yard for the amount of $1,647,665.
+[p024_c0009] A copy of the Resolution and the Staff Summaries for the above items are filed with the records of the Regular Board Meeting of the MTA of this date.
+[p024_c0010] _MTA and Agencies' Joint Committee and Regular Board Meeting March 17, 2021_
+[p024_c0011] _Master Page # 24 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 25
+
+### [p025_c0001] B. Bridges and Tunnels Committee
+[p025_c0002] CDO Lieber reported that C&D has six procurement actions being brought through the Bridges and Tunnels Committee for approval this month totaling $43.3M. All six items are competitive.
+[p025_c0003] The first item requests Board approval for an award of a competitively solicited public works contract for design-build services for the installation of a safety fence at the Verrazzano-Narrows Bridge to El Sol Contracting/ES II Enterprises, A Joint Venture in the amount $32.8M.
+[p025_c0004] The work under this contract is for the design and installation of a safety fence on the upper and lower levels of the suspended spans between the Brooklyn Anchorage and Staten Island Anchorage. The fencing will enhance the safety.
+[p025_c0005] The next four items request Board approval to award four competitively procured personal service contracts. These contracts were solicited as a single procurement and are for the Federal Highway Administration and New York State DOT mandated Biennial Bridge inspections. The contracts are as follows: for the Throgs Neck Bridge to Thornton Tomasetti, Inc. in the not-to-exceed amount of $2.5M; for the Bronx-Whitestone Bridge to Stantec Consulting Services, Inc. in the not-to-exceed amount of $2.2M; for the Marine Parkway and Cross Bay Bridge to Hardesty & Hanover, LLC in the not-to-exceed amount of $1.8M; and for the Henry Hudson Bridge and Hugh L. Carey Tunnel Approach Bridge to HNTB New York Engineering and Architecture, P.C. in the not-to-exceed amount of $1.5M.
+[p025_c0006] The last item requests Board approval to award a competitively solicited personal service contract for the Federal Highway Administration and New York State DOT mandated tunnel inspections at the Queens Midtown Tunnel and Hugh L. Carey Tunnel to Stantec Consulting Services, Inc. in the amount of $2.4M.
+- [p025_c0007] 1. Approved the award of a competitively solicited public work contract (VN-X4) for Design-Build Services for Installation of the Safety Fence on the Upper and Lower Roadways at the Verrazzano-Narrows Bridge to El Sol Contracting/ES II Enterprises JV for the amount of $32,845,000 and a duration of one year and seven months and; the payment of stipends in the amount totaling $192,000 to be paid to each unsuccessful proposer ($48,000 each) whose proposal met defined proposal standards. 2. Approved the award of the four personal service contracts (PSC-20-3043A, B, C and D) from a competitive solicitation for the 2021 Biennial Bridge Inspections each for a duration of two years and nine months. The Contract are as follows: • PSC-20-3043A for the Throgs Neck Bridge to Thornton Tomasetti, Inc. for the amount of $2,496,512.60.
+[p025_c0008] _MTA and Agencies' Joint Committee and Regular Board Meeting March 17, 2021_
+[p025_c0009] _Master Page # 25 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 26
+
+- [p026_c0001] • PSC-20-3043B for the Bronx-Whitestone Bridge to Stantec Consulting Services for the amount of $2,242,054.50. • PSC-20-3043C for the Marine Parkway and Cross Bay Bridge to Hardesty & Hanover, LLC for the amount of 1,800,550.00. • PSC-20-3043D for the Henry Hudson Bridge and Hugh L. Carey Tunnel Approach Bridge to HNTB New York Engineering and Architecture, P.C. for the amount of $1,512,390.48. 3. Approved the award of a competitively solicited personal service contract (PSC-20-3044) for the 2021 Routine Tunnel Inspections at the Queens Midtown Tunnel and Hugh L. Carey Tunnel to Stantec Consulting Services, Inc. for the amount of $2,402,723.84 and a duration of two years and nine months.
+[p026_c0002] A copy of the Resolution and the Staff Summaries for the above items are filed with the records of the Regular Board Meeting of the MTA of this date.
+### [p026_c0003] 12. MTA COMMITTEE ON FINANCE.
+### [p026_c0004] A. Budget Watch.
+[p026_c0005] David Keller, MTA Senior Deputy Budget Director, presented the financial report and provided details of the Budget Watch review.
+[p026_c0006] The details of Mr. Keller's presentation are contained in the video recording of this meeting, produced by the MTA and maintained in the MTA records.
+### [p026_c0007] B. Action Items.
+- [p026_c0008] 1. Willis of New York - East Side Access: Extension of Owner Controlled Insurance Program. David Keller, MTA Senior Deputy Budget Director, presented a summary of the item for Board approval.
+[p026_c0009] Upon motion duly made and seconded, the Board approved the extension of the insurance policies of the MTA's Owner Controlled Insurance Program (OCIP) for the East Side Access Project through March 31, 2023, including extending the broker service contract with Willis of NY, and $48.8 million of additional funding. Board Member Linda Lacewell recused herself from the vote on this item. The specifics are set forth in the staff summary and documentation filed with the minutes of the meeting held on this day.
+[p026_c0010] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for the details of Mr. Keller's summary presentation and the discussion relating to this item.
+[p026_c0011] _MTA and Agencies' Joint Committee and Regular Board Meeting March 17, 2021_
+[p026_c0012] _Master Page # 26 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 27
+
+- [p027_c0001] 2. Board Authorization to File for and Accept Federal Funds. David Keller, MTA Senior Deputy Budget Director, presented a summary of the item for Board approval.
+[p027_c0002] Upon motion duly made and seconded, the Board approved a resolution authorizing the filing of applications in request of Federal capital assistance for FFY 2021; authorizing the Chairman or any of his designees to make required certifications; and authorizing the acceptance of the grants. The specifics are set forth in the staff summary and documentation filed with the minutes of the meeting held on this day.
+[p027_c0003] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for the details of Mr. Keller's summary presentation.
+- [p027_c0004] 3. All-Agency Annual Procurement Report 2020. David Keller, MTA Senior Deputy Budget Director, presented a summary of the item for Board approval.
+[p027_c0005] Upon motion duly made and seconded, the Board authorized the filing with the State of New York of the annual MTA All-Agency Procurement report for the period of January 1, 2020 – December 31, 2020, as required under Section 2879 of the Public Authorities Law ("PAL"). The specifics are set forth in the staff summary and documentation filed with the minutes of the meeting held on this day.
+[p027_c0006] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for the details of Mr. Keller's summary presentation.
+- [p027_c0007] 4. Ratification of Triborough Bridge and Tunnel Authority Payroll Mobility Tax (PMT) Obligation Resolution and Approval of PMT Supplemental Resolutions. Chairman Foye noted that the staff summary and related materials were distributed to Board Members today. Patrick McCoy, MTA Director of Finance, presented a summary of item for Board approval.
+[p027_c0008] Upon a motion duly made and seconded, the Board approved a resolution pertaining to the ratification of the TBTA Payroll Mobility Tax (PMT) resolution with its related documentation and approval of various supplemental resolutions to authorize the issuance of up to $1.3 billion of PMT new money bonds, notes, and refunding bonds. The Board also approved the reimbursement resolution for federal tax purposes and a resolution containing a delegation of authority to the Chairman and the CFO to appoint authorized officers in connection with the execution of various activities under the resolution.
+[p027_c0009] Chairman Foye asked Mr. McCoy to confirm that this does not involve an increase or expansion in the PMT and that it is merely a financing taking advantage of existing PMT. Mr. McCoy confirmed and added that it is just an intended incumbrance of PMT tax and trust account receipts for purposes of issuing debt obligations for capital projects of the transit and commuter systems.
+[p027_c0010] The specifics are set forth in the staff summary and documentation filed with the minutes of the meeting held on this day.
+[p027_c0011] MTA and Agencies' Joint Committee and Regular Board Meeting March 17, 2021
+[p027_c0012] _Master Page # 27 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 28
+
+[p028_c0001] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for details of Chairman Foye's comments and Patrick McCoy's summary presentation.
+### [p028_c0002] C. Information Item.
+- [p028_c0003] 1. MTA Prompt Payment Annual Report 2020. The Board received the MTA Prompt Payment Annual Report that is required to be submitted to the State Comptroller, the State Director of the Budget, the Chairman of the Senate Finance Committee, and the Chairman of the Assembly Ways and Means Committee.
+[p028_c0004] The specifics are set forth in the staff summary and documentation filed with the minutes of the meeting held on this day.
+### [p028_c0005] D. Procurement Items. Kuvershen Ayer, MTA Chief Procurement Officer, presented a summary of the following procurement items for Board approval.
+[p028_c0006] Upon motion duly made and seconded the Board approved the procurement items listed below. The specifics are set forth in the staff summaries and documentation filed with the meeting materials.
+- [p028_c0007] 1. Various Contractors – Transportation Planning and Conceptual Design Services – No. 15553. Approved the award of eleven competitively negotiated personal service contracts for the Transportation Planning and Conceptual Design Retainer Contract Panel on an as-needed basis. 2. Various Contractors – Implementation of Contact Center Transformation – No. 900000000003715. Approved the award of competitively negotiated miscellaneous services contracts with Guidehouse LLP and DiRad Technologies to facilitate transforming three technologically obsolete and un-optimized customer call centers into a transformed, all-agency, customer-led, operationally efficient, multi-channel MTA Customer Contact Center. 3. Slalom LLC – Customer Relationship Management Solution – No. 900000000003770. Approved the award of a competitively negotiated miscellaneous services contract to Slalom LLC to provide scalable cloud-based Customer Relationship Management (CRM) solution that includes an integrated Knowledge Management system.
+### [p028_c0008] E. Real Estate Items: David Florio, Director, R.E. Operations, Leasing & Acquisitions, presented a summary of the following real estate items for Board approval.
+[p028_c0009] Upon motion duly made and seconded the Board approved the real estate items listed below. The specifics are set forth in the staff summaries and documentation filed with the meeting materials.
+[p028_c0010] _MTA and Agencies' Joint Committee and Regular Board Meeting March 17, 2021_
+[p028_c0011] _Master Page # 28 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 29
+
+### [p029_c0001] New York City Transit
+- [p029_c0002] 1. Extension of the lease with 89 th Jamaica Realty Company, LLC for the Jamaica Bus Terminal located on 89 th Avenue between 165 th Street and Merrick Boulevard, Queens, NY.
+### [p029_c0003] Metropolitan Transportation Authority
+- [p029_c0004] 2. All-Agency Real Property Disposition Guidelines and All-Agency Personal Property Disposition Guidelines required by Public Authorities Law Sections 2895-2897 3. License agreement with Rosen's Café for a food concession in the lobby of 2 Broadway, New York, NY.
+[p029_c0005] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for details of Mr. Florio's summary of the real estate items.
+### [p029_c0006] 13. COMMITTEE ON CORPORATE GOVERNANCE. Lamond Kearse, Chief Compliance Officer, presented a summary of the following items for Board approval.
+- [p029_c0007] A. Action Items. Upon motion duly made and seconded the Board approved the action items listed below. The specifics are set forth in the staff summaries and documentation filed with the meeting materials.
+- [p029_c0008] 1. All Agency Procurement Guidelines and All Agency Guidelines for Procurement of Services. Approved the MTA's All Agency Procurement Guidelines and All Agency Guidelines for Procurement of Services. 2. Mission Statement, Measurements and Performance Indicators Report. Approved the MTA's Mission Statement and authorized the submission of the 2020 Mission Statement, Measurements and Performance Indicators Report to the Independent Authorities Budget Office as required by Section 1269-f and Section 2824-a of the Public Authorities Law. 3. Public Authorities Law Required Policies. Approved revisions to certain existing policies of the MTA and its Agencies, in accordance with Public Authorities Law Section 2824.
+[p029_c0009] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for details of Mr. Kearse's summary of the items.
+[p029_c0010] _MTA and Agencies' Joint Committee and Regular Board Meeting March 17, 2021_
+[p029_c0011] _Master Page # 29 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 30
+
+### [p030_c0001] 14. MTA INSPECTOR GENERAL REPORT.
+[p030_c0002] MTA Inspector General, Carolyn Pokorny, presented the MTA IG's activities report.
+[p030_c0003] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for the details of Inspector General Pokorny's report and Board Members comments and discussion.
+### [p030_c0004] 15. ADJOURNMENT.
+[p030_c0005] Upon motion duly made and seconded, the Board voted to adjourn the meeting at 12:48 p.m.
+[p030_c0006] Respectfully submitted,
+[p030_c0007] Susan Sarch Vice President, General Counsel and Secretary Metro-North Railroad
+[p030_c0008] Paige Graves Vice President, General Counsel and Secretary Long Island Rail Road Company
+[p030_c0009] Mariel A. Thompson Assistant Secretary NYCTA
+[p030_c0010] David K. Cannon Assistant Secretary MTA C&D
+[p030_c0011] Julia R. Christ General Counsel and Corporate Secretary TBTA
+[p030_c0012] Victoria Clement Assistant Secretary MTAHQ
+[p030_c0013] _MTA and Agencies' Joint Committee and Regular Board Meeting March 17, 2021_
+[p030_c0014] _Master Page # 30 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 31
+
+### [p031_c0001] Staff Summary
+### [p031_c0002] Metropolitan Transportation Authority
+### [p031_c0003] Page 1 of 2
+[p031_c0004]
+
+```text
+Subject AGREEMENTS WITH VARIOUS MTA UNIONS PROVIDING EXTENSION OF ADDITIONAL DEATH BENEFITS RELATED TO COVID-19 Department Department Head Name Paul Fama Chief People Officer Department Head Signature Project Manager Name
+```
+[p031_c0005]
+
+```text
+Date April 20, 2021 Vendor Name N/A Contract Number N/A Contract Manager Name N/A Table of Contents Ref. #
+```
+[p031_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 MTA Board 4/21/2021 X
+```
+[p031_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Chief People Officer PF 2 Chief Financial Officer RF 3 General Counsel TQ 4 Chairman/CEO PF
+```
+[p031_c0008] _Master Page # 31 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 32
+
+### [p032_c0001] Metropolitan Transportation Authority
+### [p032_c0002] Purpose:
+[p032_c0003] To obtain the Board's adoption and approval of Agreements reached through collective bargaining with various MTA unions.
+### [p032_c0004] Discussion:
+[p032_c0005] The MTA's heroic workforce has continuously provided critical transportation services during the pandemic, moving health care workers, first responders, and many other essential employees throughout the region. As of April 16, 2021, the agency has sadly lost 159 MTA employees due to COVID-19-related infections.
+[p032_c0006] In April 2020 the MTA Board unanimously ratified the first-in-the-nation COVID-19 Family Benefits Agreement to provide payment of $500,000 from the MTA to the spouse, beneficiary or estate of any worker who died as a result of COVID-19, in addition to providing health insurance for three years to the spouse and any dependent children (up to the age of 26).
+[p032_c0007] Per their original terms, the supplemental death benefit agreements reached in April 2020 expired on April 13, 2021. In recognition of the ongoing toll of COVID-19 and to honor the heroic service of our colleagues, the MTA subsequently engaged with its Unions to discuss extension of these supplemental death benefits.
+[p032_c0008] These agreements will extend the availability of the supplemental Family Benefits Agreement until August 31, 2021. Eligibility rules remain unchanged except an employee would relinquish eligibility for the supplemental benefits if an approved vaccine was made available to him/her and the employee was not vaccinated, unless the employee has a valid documented exception to vaccination. The vaccination requirement goes into effect on June 1, 2021. Agreement on the extension has been reached with the Transport Workers Union, representing the majority of represented employees at NYCT, and is currently being used as the template for discussions with the MTA's other bargaining units. In addition, the extension would apply to non-represented employees under equivalent terms, as with the original agreement.
+[p032_c0009] Recommendation: It is recommended that the MTA Board approve the Agreements and further authorize the Chairman, or his designee, to execute future agreements without further approval on the same terms with any certified representatives of MTA employees which have not yet executed such agreements. Further, the Chairman would be authorized to extend the supplemental benefits to the non-represented workforce under the same terms.
+[p032_c0010] _Master Page # 32 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 33
+
+### [p033_c0001] Metropolitan Transportation Authority
+### [p033_c0002] Staff Summary
+### [p033_c0003] Page 1 of 2
+[p033_c0004]
+
+```text
+Subject Migration of Railroad Mail and Ride Program Customers to Mobile Solution Department MTA – Office of Management and Budget Department Head Name Mark Young Department Head Signature Project Manager/Division Head James Compton (LIRR), James McGovern (MNR)
+```
+[p033_c0005]
+
+```text
+Date April 14, 2021 Vendor Name Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p033_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Comm. 2 Board
+```
+[p033_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Finance 2 Legal
+```
+### [p033_c0008] Purpose:
+[p033_c0009] To obtain approval of the annexed Resolution which will authorize the migration of existing MTA Long Island Railroad (LIRR) and Metro North Railroad (MNR) Mail & Ride Program customers to the commuter railroads' mobile ticketing application.
+### [p033_c0010] Discussion:
+[p033_c0011] Mail and Ride is an account-based monthly ticket-by-mail program, which also offers a mobile solution via MTA eTix. When initially developed in 1975, the ticket was considered an innovation as it allowed customers to establish an account once and then have monthly tickets delivered to them via U.S. mail with payments made by credit card or check. The ability to avoid buying tickets at windows or vending machines was intended to reduce long lines and reduce wait times. At its peak, participation reached approximately 63,500 customers between the two railroads: 35,500 at LIRR and 28,000 at MNR.
+[p033_c0012] With the expansion of personal mobile device ownership (recent LIRR/MNR surveys reveal approximately 90% of customers use them onboard) and the introduction of MTA eTix in 2016, enrollment has declined as many customers have found the mobile platform to be more convenient. Just prior to the COVID-19 pandemic in 2019, LIRR enrollment had dropped to approximately 21,000, and MNR enrollment had dropped to 21,000. Together, Mail & Ride participation represented less than 1% of total tickets sold at that time. The COVID-19 pandemic further reduced Mail & Ride participation, with currently only approximately 3,300 customers at LIRR and 4,300 at MNR, which reflects only 0.3% of ticket sales at LIRR and 0.6% at MNR.
+[p033_c0013] In 2019, the railroads introduced a new option whereby Mail & Ride customers could enroll to have their monthly tickets delivered to them through the MTA eTix application rather than having to wait for the paper tickets to be received in via U.S. mail. In addition, the MTA eTix delivery provides the capability for customers to self-refund. This option proved popular with over 3,100 pre-COVID customers migrating to mobile. Factoring this in, the total number of Mail & Ride customers currently still receiving paper tickets via U.S. mail is only 6,900.
+[p033_c0014] _Master Page # 33 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 34
+
+### [p034_c0001] Staff Summary
+### [p034_c0002] Metropolitan Transportation Authority
+### [p034_c0003] Page 2 of 2
+[p034_c0004] The MTA would now like build upon this initiative and fully migrate all Mail & Ride customers to the mobile option. Transit Benefit customers would continue to use their wired payments within the Mail & Ride system until the railroad mobile ticketing program transitions to OMNY. The railroads will also continue to support student monthly tickets through the Program. This early transition from paper to mobile tickets will facilitate a much easier transition to the account based OMNY system.
+[p034_c0005] If this proposal is approved, the railroads would migrate their customers to mobile in time for their September monthly tickets. Each month between May and August, the railroads will notify their customers about the upcoming change, and it is expected that this public outreach will encourage the majority of customers voluntarily migrate to eTix. The railroads will assign staff to assist customers who did not transition and need to create an account and get a ticket prior to the start of September or after.
+[p034_c0006] The MTA eTix application cannot support the provision of a joint monthly railroad ticket / unlimited monthly MetroCard, which is currently an option selected by only 1,200 railroad customers (700 at LIRR and 500 at MNR). Nor will it be able to support connecting services tickets, which is currently an option selected by only 100 customers (20 at LIRR and 80 at MNR). Current Mail & Ride customers wishing to purchase MetroCards or connecting services will need to buy them from ticket vending machines or ticket windows. Once OMNY is introduced, customers will be able to purchase joint connecting services through the OMNY mobile application, at vending machines/ticket booths or purchase a joint railroad ticket at vending machines/ticket windows and add OMNY value. The discontinuation of the unlimited monthly MetroCard from the Mail & Ride Program would result in the elimination of the existing 2% discount on the railroad portion of the ticket. This represents a fare change, requiring MTA Board approval. Thus, as required by the Public Authorities Law, it was included in the public notice on fare changes that was approved by the MTA Board in November 2020
+### [p034_c0007] Impact on Funding
+[p034_c0008] Once the railroads are migrated to OMNY and eTix delivery is no longer required, the MTA will save approximately $700,000 annually in third party costs to print and mail paper Mail and Ride tickets. The discontinuance of the 2% MetroCard discount results in a de minimis increase in revenue.
+### [p034_c0009] Recommendation
+[p034_c0010] That the MTA, Metro North and LIRR Boards adopt and approve the attached Resolution authorizing the migration of the Mail & Ride Program to a mobile delivery solution.
+[p034_c0011] _Master Page # 34 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 35
+
+### [p035_c0001] RESOLUTION
+### [p035_c0002] MIGRATION OF RAILROAD MAIL & RIDE PROGRAM CUSTOMERS TO MOBILE SOLUTION
+### [p035_c0003] PERTAINING, AS APPLICABLE, TO MTA, METRO-NORTH and LIRR
+[p035_c0004] WHEREAS , the 2021-2024 Financial Plan adopted by the Metropolitan Transportation Authority (“MTA”) Board on December 16, 2020, contemplates implementation of fare and toll changes in 2021 in furtherance of achieving a balanced budget in 2021; and
+[p035_c0005] WHEREAS , on November 18, 2020, the MTA Board authorized agency staff to take necessary steps in connection with the consideration of fare and toll changes, including publishing any required notices and conducting any required public hearings, for submission to the MTA Board; and
+[p035_c0006] WHEREAS , notices of public hearing on proposed changes in fares and crossing charges were prepared and posted by the MTA, New York City Transit Authority (“NYCTA”); the Manhattan and Bronx Surface Transit Operating Authority (“MaBSTOA”); Staten Island Rapid Transit Operating Authority (“SIRTOA”); MTA Bus Company (“MTA Bus”), Metro-North Commuter Railroad Company (“Metro-North”), and The Long Island Rail Road Company (“LIRR”) (collectively, the “MTA Agencies”) at agency transportation facilities; and advertisements of said public hearings were contemporaneously published by the MTA Agencies, appearing in the Daily News ; on November 23, 2020 in amNewYork/Metro, Newsday, Poughkeepsie Journal , and Daily Challenge ; on November 24, 2020 in El Diario, Chinese World Journal , and Korea Central Daily ; on November 25, 2020 in Journal News, Der Yid weekly , and Haiti Observateur ; on November 27, 2020 in Russkaya Reklama ; and on November 28, 2020 in Weekly Bangalee ; and
+[p035_c0007] WHEREAS , the current Mail & Ride Program is an account-based monthly ticket-by-mail program, which also offers a mobile solution via the MTA e-Tix application;
+[p035_c0008] WHEREAS , Mail & Ride Program enrollment has dropped significantly with the expansion of personal mobile device ownership and the introduction of MTA eTix application in 2016, with only approximately 6,900 customers currently receiving paper tickets via mail, representing less than 1% of ticket sales;
+[p035_c0009] WHEREAS , the migration of the Mail & Ride Program to a mobile option will facilitate a much easier transition to the account-based OMNY system and would enable the railroads to save approximately $700,000 annually in third party costs to print and mail paper tickets;
+[p035_c0010] WHEREAS , the migration of the Mail & Ride program to the MTA eTix application cannot support the provision of a joint monthly railroad ticket / unlimited monthly MetroCard; and
+[p035_c0011] _Master Page # 35 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 36
+
+[p036_c0001] WHEREAS , the discontinuation of the unlimited monthly MetroCard from the Mail & Ride Program would result in the elimination of the existing 2% discount on the railroad portion of the ticket; and
+[p036_c0002] WHEREAS , the elimination of the existing 2% discount on the railroad portion of the ticket represents a fare change, requiring MTA Board approval; and
+[p036_c0003] WHEREAS , hearings at which members of the public were invited to comment on the proposed migration of railroad Mail and Ride program customers to the commuter railroads' mobile ticketing application ("e-Tix") were conducted as virtual public meetings, because of safety concerns related to the global COVID-19 pandemic, on December 1, 2020; on December 3, 2020; on December 7, 2020; on December 9, 2020; on December 14, 2020; and on December 21, 2020; and
+[p036_c0004] WHEREAS , the public was offered the opportunity to record videotaped comments at virtual satellite sessions on December 2, 2020; and on December 8, 2020; and the public was invited to submit written comments via the MTA's website and through the mail; and
+[p036_c0005] WHEREAS , transcripts of the public hearing proceedings and copies of the written and videotaped comments which were received from members of the public have been previously distributed to members of the MTA, Metro North and LIRR Boards ("Boards"); and
+[p036_c0006] WHEREAS , the Boards considered the testimony of the public at the public hearings and written and videotaped comments submitted to the MTA; and
+[p036_c0007] WHEREAS , the Boards have considered all of the above.
+[p036_c0008] NOW, THEREFORE , upon motion duly made and seconded, the following resolution is adopted by the Boards of MTA, Metro-North and LIRR:
+[p036_c0009] RESOLVED , that in accordance with the requirements of section 1266 of the Public Authorities Law, the Boards of MTA, Metro-North and LIRR hereby approve the migration of existing MTA Long Island Rail Road (LIRR) and Metro North Railroad (MNR) Mail & Ride Program customers to the commuter railroads' MTA eTix mobile ticketing application, and the Chairman of the MTA and Presidents of Metro-North and LIRR, and their designees are hereby authorized and directed to take such steps as may be necessary or desirable to implement such migration.
+[p036_c0010] New York, New York April 21, 2021
+[p036_c0011] _2_
+[p036_c0012] _Master Page # 36 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 37
+
+### [p037_c0001] Construction & Development
+### [p037_c0002] PROCUREMENT PACKAGE April 2021
+[p037_c0003] _Master Page # 37 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 38
+
+### [p038_c0001] Construction & Development
+### [p038_c0002] PROCUREMENTS
+[p038_c0003] The Procurement Agenda this month includes one procurement action for a proposed expenditure of $7.6M
+[p038_c0004] _Master Page # 38 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 39
+
+### [p039_c0001] Staff Summary
+[p039_c0002]
+
+```text
+Subject Request for Authorization to Award a Procurement Action Department Contracts Department Head Name & Title Steve Plochochi, Sr. Vice President Department Head Signature Board Action Order To Date Approval Info Other 1 MNR and LIRR Joint Committee 4/21/21 X 2 Board 4/21/21 X
+```
+[p039_c0003]
+
+```text
+Date: April 13, 2021 Internal Approvals Approval Approval Deputy Chief Development Officer, Delivery President Deputy Chief Development Officer, Development EE Executive Vice President & General Counsel
+```
+### [p039_c0004] PURPOSE
+[p039_c0005] To obtain the approval of the Board to award a procurement action and, to inform the Long Island Rail Road Committee of this procurement action.
+### [p039_c0006] DISCUSSION
+[p039_c0007] MTA Construction & Development proposes to award a Ratification in the following category:
+### [p039_c0008] Schedules Requiring Majority Vote
+[p039_c0009]
+
+```text
+K. Ratification of Completed Procurement Actions 1 $7,588,645 TOTAL 1 $7,588,645
+```
+### [p039_c0010] Budget Impact:
+[p039_c0011] The approval of this procurement action will obligate the capital funds in the amount listed. Funds are available in the capital budget for this purpose.
+### [p039_c0012] Recommendation:
+[p039_c0013] The procurement action be approved as proposed. (The item is included in the resolution of approval at the beginning of the Procurement Section.)
+[p039_c0014] _Master Page # 39 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 40
+
+### [p040_c0001] MTA Construction & Development
+### [p040_c0002] MTA Construction & Development
+### [p040_c0003] BOARD RESOLUTION
+[p040_c0004] WHEREAS , in accordance with Sections 1265-a of the Public Authorities Law and the All Agency Procurement Guidelines, the Board authorizes the award of certain non-competitive purchase and public works contracts, and the solicitation and award of request for proposals in regard to purchase and public work contracts; and
+[p040_c0005] WHEREAS , in accordance with the All Agency Procurement Guidelines, the Board authorizes the award of certain non-competitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts;
+[p040_c0006] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Guidelines for Procurement of Services, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p040_c0007] NOW, the Board resolves as follows:
+- [p040_c0008] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract. 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals and authorizes the solicitation of such proposals. 3. As to each request for proposals (for purchase and public work contracts set forth in Schedule C for which a recommendation is made to award the contract), the Board authorizes the execution of said contract. 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein, and ratifies each action for which ratification is requested. 5. The Board authorizes the execution of each of the following for which Board authorization is required: i) the miscellaneous procurement contracts set forth in Schedule E; ii) the personal service contracts set forth in Schedule F; iii) the miscellaneous service contracts set forth in Schedule G; iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; v) the contract modifications to purchase and public work contracts set forth in Schedule I; vi) the modifications to miscellaneous procurement contracts set forth in Schedule J. 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p040_c0009] _Master Page # 40 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 41
+
+### [p041_c0001] Construction & Development
+[p041_c0002] April 2021
+### [p041_c0003] LIST OF RATIFICATIONS FOR BOARD APPROVAL
+### [p041_c0004] Procurements Requiring Majority Vote:
+### [p041_c0005] Schedule K. Ratification of Completed Procurement Actions (Involving Schedules E-J) (Staff Summaries required for items requiring Board Approval)
+- [p041_c0006] 1. Tutor Perini Corporation Contract No. CS179.415 $7,588,645 Staff Summary Attached
+[p041_c0007] MTA Construction and Development requests the Board ratify a retroactive contract modification to: (i) revise and resubmit detailed design drawings and test procedures for five systems in the Grand Central Terminal; (ii) relocate fire alarm, telephone, security, radio, and public address system devices; and (iii) modify Access Restraints in Zone 4 of the Grand Central Terminal Concourse. The modification will also revise and add contract milestones.
+[p041_c0008] _Master Page # 41 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 42
+
+### [p042_c0001] Schedule K: Ratification of Completed Procurement Actions
+[p042_c0002] Item Number 1
+[p042_c0003]
+
+```text
+Vendor Name (& Location) Tutor Perini Corporation (Peekskill, New York) Description Systems Facilities Package No. 1 Contract Term (including Options, if any) 75 Months Option(s) included in Total Amount? Yes No N/A Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Dept/Div & Dept/Div Head Name: East Side Access, Rob Troup
+```
+[p042_c0004]
+
+```text
+Contract Number AWO/Modification # CS179 415 Original Amount: $ 333,588,000 Prior Modifications: $ 177,397,516 Exercised Options: $ 216,800,001 Current Amount: $ 727,785,517 This Request $ 7,588,645 % of This Request to Current Amount: 1.4 % % of Modifications (including This Request) to Original Amount: 55.5 %
+```
+### [p042_c0005] Discussion:
+[p042_c0006] Contract CS179 provides the systems for the East Side Access (“ESA”) project. This retroactive contract modification is to have the Contractor: (i) revise and resubmit detailed design drawings and test procedures for five systems in the Grand Central Terminal (“GCT”) Concourse – Fire Alarm, Telephone, Public Address/Variable Messaging Signs, Security (CCTV, card readers, door hardware) and Radio; (ii) relocate fire alarm, telephone, security, radio, and public address system devices; and (iii) modify Access Restraints in Zone 4 of the GCT Concourse. The modification will also revise and add contract milestones. This work is needed to support the redevelopment of the building at 270 Park Avenue by JP Morgan Chase Bank, N.A.’s (“JPMC”).
+[p042_c0007] Pursuant to an agreement between MTA and JPMC, MTA and JPMC are cooperating in performing the work necessary for the 270 Park Avenue redevelopment in a manner that will minimize impacts on ESA Contracts. The agreement calls for JPMC to both perform, at its own expense, a significant amount of ESA work that is affected by the JPMC redevelopment and reimburse MTA for the cost of change work that MTA performs to support the JPMC redevelopment, such as the work that is the subject of this Modification. This modification is required as a result of JPMC’s construction of shear walls to support its new building that will pass through the GCT Concourse that MTA is constructing as part of the ESA Project. These new shear walls are larger than the existing shear walls that support the present building. This will necessitate a redesign of these systems in the areas of the new shear walls and changes to the locations of equipment and devices that have and will be installed as part of the fire alarm, telephone, public address/variable message signs, security, and radio systems.
+[p042_c0008] To avoid delay to the Contract Schedule, the President approved retroactive memoranda and on August 5, 2020 the Contractor was directed to proceed with the early engineering associated with this Modification, up to a Not-To-Exceed value of $300,000. On December 30, 2020 the Contractor was further directed to proceed with the full scope of this Modification, up to a Not-To-Exceed value of $1,488,645.
+[p042_c0009] The Contractor’s proposal for this Modification was $53,866,578, comprised of approximately $13.6M for the direct costs of construction and approximately $40.3M for impact costs associated with schedule impacts. The parties agreed to $1,488,645 for the direct cost of all work under this Modification. The parties also agreed to extend Substantial Completion from February 14, 2022 to June 3, 2022. The impact costs associated with this time extension, together with an acceleration incentive payment for timely completion of $955,418, total $6,100,000. The total cost of the Modification is $7,588,645 which is considered to be fair and reasonable.
+[p042_c0010] MTA will be reimbursed for the costs of this Modification pursuant to the Cost Reimbursement Agreement between JPMC and MTA. Pursuant to that agreement, JPMC is responsible for all of the direct costs of this Modification and will be responsible for the impact costs and the acceleration incentive for the delays solely attributable to JPMC.
+[p042_c0011] In connection with a previous contract awarded to Tutor Perini Corporation. (“TPC”), TPC was found to be responsible notwithstanding significant adverse information pursuant to the All-Agency Responsibility Guidelines and such responsibility finding was approved by the MTA Chairman/CEO in consultation with the MTA General Counsel in February 2017. No new SAI has been found relating to TPC and TPC has been found to be responsible.
+[p042_c0012] _Master Page # 42 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 43
+
+### [p043_c0001] Construction & Development
+### [p043_c0002] Contracts Department
+[p043_c0003] Stephen Plochochi , Senior Vice President
+[p043_c0004] _Master Page # 43 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 44
+
+### [p044_c0001] Construction & Development
+### [p044_c0002] PROCUREMENTS
+[p044_c0003] The Procurement Agenda this month includes one procurement action for a proposed expenditure of $26.7M.
+[p044_c0004] _Master Page # 44 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 45
+
+### [p045_c0001] Staff Summary
+[p045_c0002]
+
+```text
+Subject Request for Authorization to Award a Procurement Action Department Contracts Department Head Name & Title Steve Plochochi, Sr Vice President Department Head Signature Board Action Order To Date Approval Info Other 1 NYCT & Bus Committee 4/21/21 X 2 Board 4/21/21 X
+```
+[p045_c0003]
+
+```text
+Date: April 12, 2021 Internal Approvals Approval Approval Deputy Chief Development Officer, Delivery President Deputy Chief Development Officer, Development FE Executive Vice President & General Counsel
+```
+### [p045_c0004] PURPOSE
+[p045_c0005] To obtain the approval of the Board to award a procurement action and, to inform the New York City Transit Committee of this procurement action.
+### [p045_c0006] DISCUSSION
+[p045_c0007] MTA Construction & Development proposes to award a Competitive Procurement in the following category:
+### [p045_c0008] Schedules Requiring Majority Vote
+[p045_c0009]
+
+```text
+F. Personal Service Contracts 1 $26,665,060 TOTAL 1 $26,665,060
+```
+### [p045_c0010] Budget Impact:
+[p045_c0011] The approval of this procurement action will obligate the capital funds in the amount listed. Funds are available in the capital budget for this purpose.
+### [p045_c0012] Recommendation:
+[p045_c0013] The procurement action be approved as proposed. (The item is included in the resolution of approval at the beginning of the Procurement Section.)
+[p045_c0014] _Master Page # 45 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 46
+
+### [p046_c0001] MTA Construction & Development
+### [p046_c0002] MTA Construction & Development
+### [p046_c0003] BOARD RESOLUTION
+[p046_c0004] WHEREAS , in accordance with Sections 1265-a and 1209 of the Public Authorities Law and the All Agency Procurement Guidelines, the Board authorizes the award of certain non-competitive purchase and public works contracts, and the solicitation and award of request for proposals in regard to purchase and public work contracts; and
+[p046_c0005] WHEREAS , in accordance with the All Agency Procurement Guidelines, the Board authorizes the award of certain non-competitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts;
+[p046_c0006] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Guidelines for Procurement of Services, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p046_c0007] NOW, the Board resolves as follows:
+- [p046_c0008] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract. 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals and authorizes the solicitation of such proposals. 3. As to each request for proposals (for purchase and public work contracts set forth in Schedule C for which a recommendation is made to award the contract), the Board authorizes the execution of said contract. 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein, and ratifies each action for which ratification is requested. 5. The Board authorizes the execution of each of the following for which Board authorization is required: i) the miscellaneous procurement contracts set forth in Schedule E; ii) the personal service contracts set forth in Schedule F; iii) the miscellaneous service contracts set forth in Schedule G; iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; v) the contract modifications to purchase and public work contracts set forth in Schedule I; vi) the modifications to miscellaneous procurement contracts set forth in Schedule J. 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p046_c0009] _Master Page # 46 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 47
+
+### [p047_c0001] MTA Construction & Development
+[p047_c0002] APRIL 2021
+### [p047_c0003] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p047_c0004] Procurements Requiring Majority Vote:
+[p047_c0005] Schedule F. Personal Service Contracts (Staff Summaries required for all items greater than $1M)
+- [p047_c0006] 1. Naik Consulting Group, PC Contract No. PS886 Thirty-Six Months NTE $26,665,060 Staff Summary Attached
+[p047_c0007] MTA Construction and Development requests Board approval to award a competitively solicited personal service contract to provide project and consultant construction management services for the Midtown 42 nd St. Corridor Projects.
+[p047_c0008] _Master Page # 47 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 48
+
+### [p048_c0001] Schedule F Personal Service Contracts
+### [p048_c0002] Staff Summary
+[p048_c0003] Item Number 1
+### [p048_c0004] Page 1 of 3
+[p048_c0005]
+
+```text
+Dept. & Dept. Stations Business Unit, Anthony Febrizio, Program Manager SUMMARY INFORMATION Contracts Department David K. Cannon, Vice President, Contracts Vendor Name Naik Consulting Group, PC Contract Number PS886 Board Reviews Description Project Management and Consultant Construction Management for Midtown 42 nd St. Corridor Projects Order To Date Approval Info Other Total Amount: Not-To-Exceed $26,665,060 1 Transit & Bus Committee 4/21/21 X Contract Term Thirty-Six (36) Months 2 Board 4/21/21 X Option(s) included in Total Amount? Yes No N/A Internal Approvals Renewal? Yes No Approval Approval Deputy Chief, Development President Deputy Chief, Delivery Executive Vice President & General Counsel Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Funding Source Operating Capital Federal Other:
+```
+### [p048_c0006] I. PURPOSE/RECOMMENDATION:
+[p048_c0007] MTA Construction & Development (C&D) seeks Board approval to award a competitively solicited personal service contract (the "Contract") to provide Project Management and Consultant Construction Management services for Midtown 42 nd St. Corridor Projects to Naik Consulting Group, PC (the "Consultant"), in the not-to-exceed amount of $26,665,060. The duration of this contract will be for thirty-six (36) months.
+### [p048_c0008] II. DISCUSSION:
+[p048_c0009] This contract is for the services of a consultant to perform project and construction management services for Midtown 42 nd St. Corridor projects. C&D has a need to coordinate, manage, and oversee the various MTA agency and Developer projects within the 42nd St. Corridor in order to reduce individual project schedules and budgets through the use of innovative project packaging and contract methodology, apply common safety/quality standards, minimize inconvenience to MTA customers during construction activities and coordinate customer communications. These projects include but are not limited to the replacement of eleven escalators and three elevators at Grand Central Station (the 4, 5, 6 and 7 Subway Lines), replacement of seven escalators within Grand Central Terminal (Metro-North), replacement of one elevator for the Times Square Shuttle, and the redevelopment of the Commodore Hotel and 347 Madison Avenue.
+[p048_c0010] Specifically, the Consultant under this Contract will:
+- [p048_c0011] 1. Develop methods to streamline and condense construction activities and schedules of the 42nd Street Corridor projects. 2. Oversee and verify that all construction activities are conducted safely, efficiently and in accordance with all contract requirements.
+[p048_c0012] _Master Page # 48 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 49
+
+### [p049_c0001] Schedule F Personal Service Contracts
+### [p049_c0002] Staff Summary
+[p049_c0003] Item Number 1
+[p049_c0004] Page 2 of 3
+- [p049_c0005] 3. Monitor, explore and implement all opportunities for coordination of activities between and among adjacent Projects and other Projects. 4. Produce and distribute ongoing Project and Program Area status reports, assist in formulating viable options to solve overcrowding and coordination of work issues within the Program Area, and minimize, to the greatest extent possible, adverse logistical impacts to MTA customers and the public during construction activities. 5. Evaluate impacts of future private developer projects on MTA Agency operations, coordinate activities on all such future MTA and private developer projects and develop strategies to condense future MTA project schedules and reduce future MTA project budgets.
+[p049_c0006] Selection was determined through a one-step qualification-based procurement process as mandated by the federal "Brooks Act" for federally funded projects. Under the Brooks Act, contracts for architecture and engineering, and other federally defined services such as project and construction management must be negotiated with the proposer whose proposal is determined to be the most technically qualified based on established evaluation criteria. Price is not a consideration in the ranking of the firms and negotiations are conducted with the proposer whose proposal is rated most technically qualified. An RFP, explaining the requirements for this Contract, was advertised in the NY Post, Engineering News Record, MTA website, and Minority Commerce Weekly on November 1, 2019. On December 18, 2019, Proposals were received from the following firms:
+- [p049_c0007] 1. APTIM Engineering New York, P.C. 2. HNTB New York Engineering and Architecture, P.C. 3. Naik Consulting Group, P.C. ("Naik") 4. STV/LiRO Joint Venture
+[p049_c0008] The Selection Committee for this Contract consisted of representatives from C&D and New York City Transit. The Selection Committee evaluated the technical proposals and the Proposers' oral presentations in accordance with the following established criteria, which are listed in their relative order of importance:
+- [p049_c0009] • Qualifications and Experience of the Team • Qualifications and Experience of Proposed Key Personnel • Proposed Management Approach • Proposed Technical Approach • Other Relevant Matters
+[p049_c0010] Naik's proposal was unanimously determined by the Selection Committee to be the highest technically ranked proposal. Naik demonstrated the best plan of approach, innovation and a thorough understanding of C&D's requirements in their technical proposal and oral presentation; provided an experienced team; clearly recognized the unique challenges of this contract and offered solutions to overcome those challenges. After the technical evaluation was completed Naik's Cost Proposal was opened and was in the amount of $34,416,908.
+[p049_c0011] Due to the effects of the COVID-19 pandemic on the MTA's finances, this project was put on hold in March 2020. The hold was subsequently lifted, and negotiations resumed in March 2021. Negotiations focused on hourly rates and work efforts related to the ongoing and anticipated Construction projects. After the negotiations were concluded, Naik submitted a Best and Final Offer in the not-to-exceed amount of $26,665,060. A Cost Analysis was performed and the agreed upon amount was found to be fair and reasonable. The contract includes an incentive program based on Performance Evaluation Periods ("PEP") pursuant to which the consultant will receive a performance evaluation on a three month or six-month evaluation period. Based on the PEP score the consultants fee will be adjusted accordingly. The base fee will start at 6% and can be increased by as much as 3% for an excellent score or reduced by as much as 4% for a poor score.
+### [p049_c0012] III. DBE/MBE/WBE/SDVOB INFORMATION:
+[p049_c0013] The MTA's Department of Diversity and Civil Rights has established a DBE goal of 20% for this Contract. Naik has submitted a utilization plan that projects meeting the goal requirement. Naik has met their D/M/WBE/SDVOB goals on prior MTA contracts.
+[p049_c0014] _Master Page # 49 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 50
+
+### [p050_c0001] Schedule F Personal Service Contracts
+### [p050_c0002] Staff Summary
+### [p050_c0003] Item Number 1
+### [p050_c0004] Construction & Development
+### [p050_c0005] Page 3 of 3
+### [p050_c0006] V. IMPACT ON FUNDING
+[p050_c0007] Funding for this project is available in the 2015 - 2019 Capital Program.
+### [p050_c0008] VI. ALTERNATIVES
+[p050_c0009] The alternative would be for C&D to self-perform the services to be provided under this contract. However, C&D does not have the in-house resources to provide the required services.
+[p050_c0010] _Master Page # 50 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 51
+
+### [p051_c0001] APRIL 2021 MTA REAL ESTATE LIST OF REAL ESTATE ACTION ITEMS FOR BOARD APPROVAL
+### [p051_c0002] MTA NEW YORK CITY TRANSIT
+[p051_c0003] Lease agreement with Breezy Point 11224 LLC for retail unit 21 at Stillwell Avenue Terminal Complex
+[p051_c0004] Lease agreement with Breezy Point 11224 LLC for retail unit 24 at Stillwell Avenue Terminal Complex
+[p051_c0005] Lease agreement with Breezy Point 11224 LLC for retail unit 25B at Stillwell Avenue Terminal Complex
+### [p051_c0006] MTA METRO NORTH RAILROAD
+[p051_c0007] Easement Agreement with the City of Beacon for new pump station at Beacon parking facility
+[p051_c0008] Acquisition of Easements from Lot 175 Property LLC and 980 East 149 Property LLC for Penn Station Access located in the Bronx, NY
+[p051_c0009] Easement Agreement with The Kathleen Cullen Trust for ingress, egress, utilities and parking
+[p051_c0010] _Master Page # 51 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 52
+
+### [p052_c0001] Staff Summary
+### [p052_c0002] Metropolitan Transportation Authority
+[p052_c0003]
+
+```text
+Subject LEASE AGREEMENT WITH BREEZY POINT 11224 LLC FOR UNIT 21 AT STILLWELL AVENUE TERMINAL COMPLEX Department REAL ESTATE Department Head Name JOHN N. LIEBER Department Head Signature Project Manager Name RAYMOND SMYTH
+```
+[p052_c0004]
+
+```text
+Date April 21, 2021 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p052_c0005]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 4/21/21 X 2 Board 4/21/21 X
+```
+[p052_c0006]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer 4 Chief of Staff
+```
+[p052_c0007] AGENCY: MTA New York City Transit ("NYCT") LESSEE: Breezy Point 11224 LLC. PREMISES: Stillwell Avenue Terminal Complex – Unit 21 ACTIVITY: Operation of a retail unit as an apparel/gift shop ACTION REQUESTED: Authorization to enter into a lease agreement TERM: 10 years RENT: $14,400.00 Lease Year 1, with 5% annual increases and commencing on Lease Year 6, 3% annual increases for the remainder of the term as described below
+### [p052_c0008] COMMENTS:
+[p052_c0009] The Premises was publicly offered as part of a Request for Proposals ("RFP") in June of 2018 seeking an operator for a 10-year lease term; two proposals were received and are summarized below:
+[p052_c0010]
+
+```text
+Proposer Name Net Present Value at 6% Breezy Point 11224 LLC $126,705.55 Jalal Ahmed $119,790.72
+```
+[p052_c0011] The Lessee is a new operator at the Premises and its proposed use is an apparel/gift shop. At a 6% discount, the Net Present Value ("NPV") for the proposed term is $126,705.55. In addition, the Lessee proposes to make at least $39,000 of capital improvements to the Premises. An appraisal of the Premises dated September 25, 2018 indicates the rent value for the Premises to be $9,240 per annum. The proposed rent exceeds the appraised value by 56%.
+[p052_c0012] The rent schedule is summarized in the table below:
+[p052_c0013] _Master Page # 52 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 53
+
+### [p053_c0001] Staff Summary
+### [p053_c0002] Metropolitan Transportation Authority
+### [p053_c0003] FINANCE COMMITTEE MEETING
+### [p053_c0004] LEASE AGREEMENT FOR UNIT 21 AT STILLWELL AVENUE TERMINAL COMPLEX
+[p053_c0005] Page 2 of 2
+[p053_c0006]
+
+```text
+Lease Year Annual Rent PSF Escalation 1 $14,400.00 $85.71 -- 2 $15,120.00 $90.00 5% 3 $15,876.00 $94.50 5% 4 $16,669.80 $99.23 5% 5 $17,503.29 $104.19 5% 6 $18,029.38 $107.32 3% 7 $18,569.23 $110.53 3% 8 $19,126.31 $113.85 3% 9 $19,700.10 $117.26 3% 10 $20,291.10 $120.78 3%
+```
+[p053_c0007] A credit and background investigation was performed by Kentech Consulting Inc. on the principal of Breezy Point, Tahira R. Rajput. Ms. Rajput has good credit and sufficient financial resources to pay the proposed rent and perform the capital improvements. In addition to a security deposit in the amount of $4,375.82, which is equivalent to three (3) months of the fifth (5 th ) year's rent, Ms. Rajput will provide a personal guaranty of Lessee's obligations under the lease agreement, prepared in a form approved by MTA Legal.
+[p053_c0008] Based on the foregoing, MTA Real Estate requests authorization for NYCT to enter into a lease agreement with the Breezy Point 11224 LLC on the above-described terms and conditions.
+[p053_c0009] _Master Page # 53 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 54
+
+### [p054_c0001] Staff Summary
+[p054_c0002]
+
+```text
+Subject LEASE AGREEMENT WITH BREEZY POINT 11224 LLC FOR UNIT 24 AT STILLWELL AVENUE TERMINAL COMPLEX Department REAL ESTATE Department Head Name JOHN N. LIEBER Department Head Signature Project Manager Name RAYMOND SMYTH
+```
+[p054_c0003]
+
+```text
+Date April 21, 2021 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p054_c0004]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 4/21/21 X 2 Board 4/21/21 X
+```
+[p054_c0005]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer 4 Chief of Staff
+```
+[p054_c0006] AGENCY: MTA New York City Transit ("NYCT") LESSEE: Breezy Point 11224 LLC PREMISES: Stillwell Avenue Terminal Complex – Unit 24 ACTIVITY: Operation of a retail unit as an apparel/gift shop ACTION REQUESTED: Authorization to enter into a lease agreement TERM: 10 years RENT: $15,900.00 Lease Year 1, with 5% annual increases and commencing on Lease Year 6, 3% annual increases for the remainder of the term as described below
+### [p054_c0007] COMMENTS:
+[p054_c0008] The Premises was publicly offered as part of a Request for Proposals ("RFP") in June of 2018 seeking an operator for a 10-year lease term; two proposals were received and are summarized below:
+[p054_c0009]
+
+```text
+Proposer Name Net Present Value at 6% Breezy Point 11224 LLC $139,903.27 Jalal Ahmed $119,790.72
+```
+[p054_c0010] Lessee is the current operator at the Premises and its current use is an apparel/gift shop. At a 6% discount rate, the Net Present Value ("NPV") for the proposed term is $139,903.27. In addition, Lessee proposes to make at least $39,000 of capital improvements to the Premises. An appraisal of the Premises dated September 25, 2018 indicates the rent value for the Premises to be $9,240 per annum. The proposed rent exceeds the appraised value by 72%.
+[p054_c0011] The rent schedule is summarized in the table below:
+[p054_c0012] _Master Page # 54 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 55
+
+### [p055_c0001] Staff Summary
+### [p055_c0002] Metropolitan Transportation Authority
+### [p055_c0003] FINANCE COMMITTEE MEETING
+### [p055_c0004] LEASE AGREEMENT FOR UNIT 24 AT STILLWELL AVENUE TERMINAL COMPLEX
+[p055_c0005] Page 2 of 2
+[p055_c0006]
+
+```text
+Lease Year Annual Rent PSF Escalation 1 $15,900.00 $94.64 -- 2 $16,695.00 $99.38 5% 3 $17,529.75 $104.34 5% 4 $18,406.23 $109.56 5% 5 $19,326.54 $115.04 5% 6 $19,906.34 $118.49 3% 7 $20,503.53 $122.04 3% 8 $21,118.64 $125.71 3% 9 $21,752.19 $129.48 3% 10 $22,404.76 $133.36 3%
+```
+[p055_c0007] A credit and background investigation was performed by Kentech Consulting Inc. on the principal of Breezy Point, Tahira R. Rajput. Ms. Rajput has good credit and sufficient financial resources to pay the proposed rent and perform the capital improvements at the Premises. In addition to a security deposit in the amount of $4,831.64, which is equivalent to three (3) months of the fifth (5 th ) year's rent, Ms. Rajput will provide a personal guaranty of Tenant's obligations under the lease agreement, prepared in a form approved by MTA Legal.
+[p055_c0008] Based on the foregoing, MTA Real Estate requests authorization for NYCT to enter into a lease agreement with Breezy Point 11224 LLC on the above-described terms and conditions.
+[p055_c0009] _Master Page # 55 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 56
+
+### [p056_c0001] Staff Summary
+[p056_c0002]
+
+```text
+Subject LEASE AGREEMENT WITH BROOKLYN FLEECE INC. FOR UNIT 25B AT STILLWELL AVENUE TERMINAL COMPLEX Department REAL ESTATE Department Head Name JOHN N. LIEBER Department Head Signature Project Manager Name RAYMOND SMYTH
+```
+[p056_c0003]
+
+```text
+Date April 21, 2021 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p056_c0004]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 4/21/21 X 2 Board 4/21/21 X
+```
+[p056_c0005]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer 4 Chief of Staff
+```
+[p056_c0006] AGENCY: MTA New York City Transit ("NYCT") LESSEE: Brooklyn Fleece Inc. PREMISES: Stillwell Avenue Terminal Complex – Unit 25B ACTIVITY: Operation of a retail unit as an apparel/gift/electronic accessories store ACTION REQUESTED: Authorization to enter into a lease agreement TERM: 10 years RENT: $12,300.00 Lease Year 1, with 3% annual increases as described below
+### [p056_c0007] COMMENTS:
+[p056_c0008] The Premises was publicly offered as part of a Request for Proposals ("RFP") in June of 2018 seeking an operator for a 10-year lease term; two proposals were received and are summarized below:
+[p056_c0009]
+
+```text
+Proposer Name Net Present Value at 6% Brooklyn Fleece Inc. $102,318.78 Coney Island Beach Shop $40,694.93
+```
+[p056_c0010] The Lessee is a new operator at the Premises and its proposed use is an apparel/gift/electronic accessories store. At a 6% discount, the Net Present Value ("NPV") for the proposed term is $102,318.78. In addition, the Lessee proposes to make at least $26,500 of capital improvements to the Premises. An appraisal of the Premises dated September 25, 2018 indicates the rent value for the Premises to be $9,240 per annum. The proposed rent exceeds the appraised value by 33%.
+[p056_c0011] The rent schedule is summarized in the table below:
+[p056_c0012] _Master Page # 56 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 57
+
+### [p057_c0001] Staff Summary
+### [p057_c0002] Metropolitan Transportation Authority
+### [p057_c0003] FINANCE COMMITTEE MEETING
+### [p057_c0004] LEASE AGREEMENT FOR UNIT 25B AT STILLWELL AVENUE TERMINAL COMPLEX
+[p057_c0005] Page 2 of 2
+[p057_c0006]
+
+```text
+Lease Year Annual Rent PSF Escalation 1 $12,300.00 $73.21 -- 2 $12,669.00 $75.41 3% 3 $13,049.00 $77.67 3% 4 $13,440.00 $80.00 3% 5 $13,843.00 $82.40 3% 6 $14,259.00 $84.88 3% 7 $14,686.00 $87.42 3% 8 $15,127.00 $90.04 3% 9 $15,581.00 $92.74 3% 10 $16,048.00 $95.52 3%
+```
+[p057_c0007] A credit and background investigation was performed by Kentech Consulting Inc. on the principal of Brooklyn Fleece, Abrar Hussain. Mr. Hussain has good credit and sufficient financial resources to pay the proposed rent and perform the capital improvements at the Premises. In addition to a security deposit in the amount of $3,460.75, which is equivalent to three (3) months of the fifth (5 th ) year's rent, Mr. Hussain will provide a personal guaranty of Lessee's obligations under the lease agreement, prepared in a form approved by MTA Legal.
+[p057_c0008] Based on the foregoing, MTA Real Estate requests authorization for NYCT to enter into a lease agreement with Brooklyn Fleece Inc. on the above-described terms and conditions.
+[p057_c0009] _Master Page # 57 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 58
+
+### [p058_c0001] Staff Summary
+### [p058_c0002] Metropolitan Transportation Authority
+### [p058_c0003] Page 1 of 2
+[p058_c0004]
+
+```text
+Subject EASEMENT AGREEMENT WITH THE CITY OF BEACON FOR NEW SEWER PUMP STATION AT PARKING FACILITY IN BEACON, NY Department REAL ESTATE Department Head Name JOHN N. LIEBER Department Head Signature Project Manager Name SELINA STORZ
+```
+[p058_c0005]
+
+```text
+Date APRIL 21, 2021 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p058_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 4/21/21 X 2 Board 4/21/21 X
+```
+[p058_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p058_c0008] AGENCY: MTA Metro-North Railroad (“Metro-North”) GRANTEE: City of Beacon (“the City”) LOCATION: 2 West Main Street, Beacon, NY— An unimproved portion of the Beacon Station Parking Facility Dutchess County Tax Map Section 5954, Block 25 p/o Lot 549980 ACTIVITY: Entering into an easement agreement for a new sewer pump station ACTION REQUESTED: Approval to enter into the easement agreement TERM: Permanent EASEMENT AREAS: Exclusive Easement Area – 2,831± square feet Non-Exclusive Easement Area – 2,308± square feet COMPENSATION: Fee waived
+### [p058_c0009] COMMENTS:
+[p058_c0010] The City of Beacon plans to construct a new sanitary sewer pump station next to its existing pump station and has requested use of a portion of Metro-North’s property adjacent to the Beacon Station parking facility on which to construct, operate and maintain the new sewer pump station. The new sewer pump station facility will be of benefit to the public and of mutual benefit to the City and Metro-North as it will (i) provide replacement sewer service to the City, as the existing sewer pump station is de-commissioned and (ii) provide new sewer service to Metro-North’s Beacon Station.
+[p058_c0011] The two easement areas are comprised of an Exclusive Easement Area of 2,831± square feet of unimproved property for the sewer pump station structure and a Non-Exclusive Easement Area of 2,308± square feet for access for ingress and egress to and from the existing road to the Beacon Station.
+[p058_c0012] Pursuant to §2897 of NYS Public Authorities Law (the “P.A.L.”) governing disposition of public authority property, the Easement Areas were appraised by the MTA’s on-call independent appraiser to determine their fair market values. The Exclusive Easement Area was appraised at $13,200, and the Non-Exclusive Easement Area was appraised at $6,600. The benefit to Metro-North of having its sewage handled by the new sewer pump station far exceeds the fair market value of the Easements.
+[p058_c0013] _Master Page # 58 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 59
+
+### [p059_c0001] Staff Summary
+### [p059_c0002] FINANCE COMMITTEE MEETING
+> [p059_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle containing the white letters "MTA", followed by the text "Metropolitan Transportation Authority" in a black, sans-serif font.
+### [p059_c0004] EASEMENT AGREEMENT WITH THE CITY OF BEACON FOR NEW PUMP STATION AT PARKING FACILITY IN BEACON, NY
+[p059_c0005] (Cont'd.)
+[p059_c0006] Page 2 of 2
+[p059_c0007] In accordance with the P.A.L., the Easement Areas will be conveyed to the City pursuant to an easement agreement for no consideration. The easement agreement will provide that the ownership and use of the Easements will remain with the City.
+[p059_c0008] Based on the foregoing, MTA Real Estate requested authorization for Metro-North to enter into an easement agreement with the City on the terms and conditions described above. Approval of this transaction shall constitute the Board's written determination that there is no reasonable alternative to the proposed below market transfer that would achieve the same purpose of such transfer.
+[p059_c0009] _Master Page # 59 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 60
+
+### [p060_c0001] Staff Summary
+### [p060_c0002] Metropolitan Transportation Authority
+### [p060_c0003] Page 1 of 2
+[p060_c0004]
+
+```text
+Subject ACQUISITION OF EASEMENTS IN THE BRONX FOR PENN STATION ACCESS Department REAL ESTATE Department Head Name JOHN N. LIEBER Department Head Signature Project Manager Name NEIL MASTROPIETRO / ANGELA SZU
+```
+[p060_c0005]
+
+```text
+Date APRIL 21, 2021 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p060_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 4/21/21 X 2 Board 4/21/21 X
+```
+[p060_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p060_c0008] AGENCY: Metropolitan Transportation Authority (the "MTA") GRANTOR: Lot 175 Property LLC and 980 East 149 Property LLC, collectively represented by Turnbridge Equities, LLC ("Turnbridge") LOCATION: 980 East 149 th Street (Bronx Block 2599, Lot 87) and 950 East 141 st Street (Bronx Block 2599, Lot 175), Bronx, New York (the "Properties") ACTIVITY: Acquisition of permanent easements in support of Penn Station Access improvements (the "Easements") ACTION REQUESTED: Authorization to acquire the Easements TERM: Permanent EASEMENT AREA: Lot 87 3,745 ± square feet (aerial) Lot 175 7,637 ± square feet (subsurface) 3,656 ± square feet (aerial) COMPENSATION: $0
+### [p060_c0009] COMMENTS:
+[p060_c0010] The MTA is planning to construct Penn Station Access (the "Project"), which is a new MTA Metro-North Railroad ("Metro-North") link to Penn Station that will travel through the Eastern Bronx and Queens via Amtrak's Hell Gate Bridge and provide one-seat passenger rail service to Penn Station for Metro-North's New Haven Line customers. The construction and operation of the Project will require the acquisition of property along the Project corridor for stations, right-of-way augmentations, and substations. An upgrade to the power system will be needed at various sites along said corridor to provide adequate power for the expected increase in train traffic proposed by the Project.
+[p060_c0011] During preliminary design, the MTA learned of an imminent development at the Properties where the Easements will be required as part of the Project's proposed new Oak AC substation property assemblage. In the MTA's initial discussions with Turnbridge in its capacity as representative of the owners of the Properties, Turnbridge indicated that the owners of the Properties are in final design for an industrial distribution project and anticipate commencing construction of ground improvements in April 2021. However, as the New York State Department of Transportation had pre-existing preferential
+[p060_c0012] _Master Page # 60 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 61
+
+### [p061_c0001] Staff Summary
+### [p061_c0002] FINANCE COMMITTEE MEETING
+> [p061_c0003] The logo of the Metropolitan Transportation Authority (MTA) is a circular emblem. It features a stylized 'M' and 'T' intertwined, with the letters 'A' and 'A' positioned to the right of the 'M' and 'T' respectively. The entire emblem is set against a dark background.
+[p061_c0004] Metropolitan Transportation Authority
+### [p061_c0005] ACQUISITION OF EASEMENTS IN THE BRONX FOR PENN STATION ACCESS (Cont'd.)
+[p061_c0006] Page 2 of 2
+[p061_c0007] rights to acquire, for fair market value upon negotiation, certain real estate interests on portions of the Properties, which rights were then assigned to the MTA, the owners of the Properties are now willing to transfer the Easements in question to the MTA for no consideration; provided, as time is of the essence for the owners of the Properties, that the conveyance can be completed on an expedited basis to enable their construction timeline.
+[p061_c0008] The Project is undergoing an environmental assessment by the Federal Transit Administration ("FTA") and the MTA has requested FTA approval for early acquisitions of the Properties due to such imminent development. If the FTA allows the MTA to acquire the Easements prior to completion of the Environmental Assessment, such early acquisition is preferable to avoid the risk of the owners of the Properties changing their stance due to the MTA's failure to act timely enough to acquire the Easements.
+[p061_c0009] Based on the foregoing, MTA Real Estate requests authorization on behalf of MTA to acquire the easements from the owners of the Properties on the above terms and conditions, subject to environmental review requirements.
+[p061_c0010] _Master Page # 61 of 62 - MTA Board Meeting 4/21/2021_
+
+## Page 62
+
+### [p062_c0001] Staff Summary
+### [p062_c0002] Metropolitan Transportation Authority
+### [p062_c0003] Page 1 of 1
+[p062_c0004]
+
+```text
+Subject EASEMENT AGREEMENT WITH THE KATHLEEN CULLEN TRUST IN NEW HAMBURG, NY Department REAL ESTATE Department Head Name JOHN N. LIEBER Department Head Signature Project Manager Name ANDREA TEDESCHÉ-GOMEZ
+```
+[p062_c0005]
+
+```text
+Date APRIL 21, 2021 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p062_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 4/21/21 X 2 Board 4/21/21 X
+```
+[p062_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p062_c0008] AGENCY: MTA Metro-North Railroad ("Metro-North") GRANTEE: The Kathleen Cullen Trust ("Cullen") LOCATION: Section 6058, Block 2, Lot 620730; along Metro-North's Hudson Line at Milepost 64.95 in New Hamburg, Poughkeepsie, New York ACTIVITY: Grant of an easement for ingress, egress, utilities and parking to an adjacent property owner ACTION REQUESTED: Approval of the easement TERM: Permanent EASEMENT AREA: 11,460± square feet COMPENSATION: $30,001.00
+### [p062_c0009] COMMENTS:
+[p062_c0010] In response to an RFP issued on August 26, 2020 for the above described Location, only one proposal was received by the Grantee, the current owner of the adjacent property. Currently, the Grantee has a license agreement with Metro-North which grants them use of the prospective Easement Area and is a tenant in good standing. As required by the RFP, the Grantee has paid the required down payment and will provide a survey of the Easement Area.
+[p062_c0011] The Easement Area is comprised of the following pieces: a) an area for an existing footbridge as a means of access to Rabbit Island, approximately 360 square feet; b) area for driveway access, approximately 10,700 square feet, c) occupancy for underground utilities; and d) area for a portion of an existing garage, approximately 400 square feet. The permitted use of the Easement Area would be limited to ingress, egress, utility connections and garage for single family residence only. The Easement Area will be delivered "as is".
+[p062_c0012] The Easement Area was appraised by the MTA's on-call independent appraiser to determine fair market value which was appraised at $24,000
+[p062_c0013] Based on the foregoing, MTA Real Estate requested authorization for Metro-North to enter into an easement agreement with the Kathleen Cullen Trust under the terms and conditions described above.
+[p062_c0014] _Master Page # 62 of 62 - MTA Board Meeting 4/21/2021_

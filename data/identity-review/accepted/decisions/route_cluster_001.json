@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "review_state": "corrected",
+  "accepted_at": "2026-06-09T02:29:27.000Z",
+  "reviewer": "codex-audit-2026-06-09",
+  "source": "corrected_from_audit_verdict",
+  "cluster_id": "route_cluster_001",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_001.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_001.json",
+  "source_review_run_id": "2026-06-09T02-14-02-932Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-pro",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 1,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "route_able-m15-sbs",
+        "route_m15-reference"
+      ],
+      "reason": "Distinct service variants on the M15 corridor. route_able-m15-sbs is the SBS/plus-coded M15+ record, while route_m15-reference is the local/limited M15 record. The source distinguishes the pair as M15/M15 SBS; the shared base route label is corridor context, not same-route identity."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [
+    {
+      "record_id": "route_m15-reference",
+      "fields": [
+        "borough",
+        "streets",
+        "service_variant",
+        "route_id_authority"
+      ]
+    }
+  ],
+  "ambiguous": [],
+  "suggested_rules": [
+    "Do not merge base local/limited route records with SBS or plus-coded route records solely because they share the same route number.",
+    "Official plus-suffixed route ids such as M15+ are SBS-specific identity signals and should not be assigned as aliases to local/limited records.",
+    "A source phrase that lists a base route and SBS route together is corridor context unless it explicitly equates the service variants."
+  ],
+  "rationale": "The do-not-merge decision is correct, but the model's weak aliases were unsafe. In particular, M15 SBS and M15+ contradict the local/limited route_m15-reference payload and source evidence, so no weak aliases are accepted for this cluster."
+}

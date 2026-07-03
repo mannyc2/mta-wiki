@@ -1,0 +1,88 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-111666"
+record_kind: "source"
+display_name: "April 2023 Fuel Hedge Program"
+source_id: "meeting_doc_111666"
+source_ids:
+  - "meeting_doc_111666"
+local_observation_id: "source_meeting_doc_111666_fuel_hedge"
+local_observation_ids:
+  - "source_meeting_doc_111666_fuel_hedge"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-23T15:48:08.778Z"
+submission_ids:
+  - "sub_898d771ec91d4011"
+payload:
+  content_type: "spreadsheet"
+  description: "Current ULSD Hedges spreadsheet showing gallons hedged, hedge prices, and forecasted commodity prices by month"
+  title: "April 2023 Fuel Hedge Program"
+evidence_refs:
+  -
+    block_id: "p001_b0001"
+    evidence_id: "meeting_doc_111666#p001_b0001"
+    page_number: 1
+    source_id: "meeting_doc_111666"
+    source_path: "raw/sources/meeting_doc_111666/blocks.jsonl"
+    text_sha256: "sha256:072eee47abeca6d9725b0b6d5baafe0bbd8fe1768e50620f419726daa80264b6"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0008"
+    evidence_id: "meeting_doc_111666#p001_b0008"
+    page_number: 1
+    source_id: "meeting_doc_111666"
+    source_path: "raw/sources/meeting_doc_111666/blocks.jsonl"
+    text_sha256: "sha256:7fed20d3891a45ead30cfec0b72bed10385bb6da4ee5ae6a0d2a48c03671fd5d"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0009"
+    evidence_id: "meeting_doc_111666#p001_b0009"
+    page_number: 1
+    source_id: "meeting_doc_111666"
+    source_path: "raw/sources/meeting_doc_111666/blocks.jsonl"
+    text_sha256: "sha256:ea60447634a01cbb6afa42f02bbb41c712195df5250c89b9639c3d888a4e70c1"
+    text_source: "raw_text"
+---
+
+# April 2023 Fuel Hedge Program
+
+source_id: meeting_doc_111666
+citation: cite block ids exactly as shown in square brackets
+document: 33 block(s)
+
+## Page 1
+
+### [p001_b0001] Spreadsheet source: meeting_doc_111666
+### [p001_b0002] Preview run: spreadsheet-backlog-20260623
+### [p001_b0003] Source file: raw/sources/meeting_doc_111666/source.xlsx
+### [p001_b0004] Sheet: Sheet1
+### [p001_b0005] Sheet path: xl/worksheets/sheet1.xml
+### [p001_b0006] Rows: 27
+### [p001_b0007] Cells: 157
+### [p001_b0008] Row 1: [Sheet1!A1] Current ULSD Hedges
+[p001_b0009] Row 2: [Sheet1!A2] Date | [Sheet1!B2] Gallons Hedged | [Sheet1!C2] Percent of Expected Gallons Purchased* | [Sheet1!D2] Weighted Average Hedge Price for Each Month | [Sheet1!E2] 2022 Adopted Budget (February Plan) Forecasted Commodity Price | [Sheet1!F2] 2023 Adopted Budget (February Plan) Forecasted Commodity Price
+[p001_b0010] Row 4: [Sheet1!A4] 45047 | [Sheet1!B4] 2995075 | [Sheet1!C4] 56.634097269828096 | [Sheet1!D4] 2.3529318710549818 | [Sheet1!E4] 2.0299999999999998 | [Sheet1!F4] 3.06
+[p001_b0011] Row 5: [Sheet1!A5] 45078 | [Sheet1!B5] 2852867 | [Sheet1!C5] 52.893372721724894 | [Sheet1!D5] 2.4328140192655323 | [Sheet1!E5] 2.0299999999999998 | [Sheet1!F5] 3.06
+[p001_b0012] Row 6: [Sheet1!A6] 45108 | [Sheet1!B6] 3141480 | [Sheet1!C6] 61.564915019980063 | [Sheet1!D6] 2.5014374533022652 | [Sheet1!E6] 2.0299999999999998 | [Sheet1!F6] 3.06
+[p001_b0013] Row 7: [Sheet1!A7] 45139 | [Sheet1!B7] 3009763 | [Sheet1!C7] 53.282421471721996 | [Sheet1!D7] 2.5787263895197063 | [Sheet1!E7] 2.0299999999999998 | [Sheet1!F7] 3.06
+[p001_b0014] Row 8: [Sheet1!A8] 45170 | [Sheet1!B8] 2854250 | [Sheet1!C8] 53.921769045060344 | [Sheet1!D8] 2.6236101574844537 | [Sheet1!E8] 2.0299999999999998 | [Sheet1!F8] 3.06
+[p001_b0015] Row 9: [Sheet1!A9] 45200 | [Sheet1!B9] 2854323 | [Sheet1!C9] 53.470135834237418 | [Sheet1!D9] 2.6614939102547259 | [Sheet1!E9] 2.0299999999999998 | [Sheet1!F9] 3.06
+[p001_b0016] Row 10: [Sheet1!A10] 45231 | [Sheet1!B10] 2659407 | [Sheet1!C10] 51.860855714356902 | [Sheet1!D10] 2.7241818286557873 | [Sheet1!E10] 2.0299999999999998 | [Sheet1!F10] 3.06
+[p001_b0017] Row 11: [Sheet1!A11] 45261 | [Sheet1!B11] 2479089 | [Sheet1!C11] 46.885480917065046 | [Sheet1!D11] 2.7641988995151041 | [Sheet1!E11] 2.0299999999999998 | [Sheet1!F11] 3.06
+[p001_b0018] Row 12: [Sheet1!A12] 45292 | [Sheet1!B12] 2756162 | [Sheet1!C12] 55.923919002342657 | [Sheet1!D12] 2.7912898495081206 | [Sheet1!E12] 1.99 | [Sheet1!F12] 2.72
+[p001_b0019] Row 13: [Sheet1!A13] 45323 | [Sheet1!B13] 2703685 | [Sheet1!C13] 52.786926594083248 | [Sheet1!D13] 2.7970706775382488 | [Sheet1!E13] 1.99 | [Sheet1!F13] 2.72
+[p001_b0020] Row 14: [Sheet1!A14] 45352 | [Sheet1!B14] 2798962 | [Sheet1!C14] 49.999998596735239 | [Sheet1!D14] 2.7774895574859539 | [Sheet1!E14] 1.99 | [Sheet1!F14] 2.72
+[p001_b0021] Row 15: [Sheet1!A15] 45383 | [Sheet1!B15] 2576170 | [Sheet1!C15] 49.99998405203867 | [Sheet1!D15] 2.7569714371722367 | [Sheet1!E15] 1.99 | [Sheet1!F15] 2.72
+[p001_b0022] Row 16: [Sheet1!A16] 45413 | [Sheet1!B16] 2423862 | [Sheet1!C16] 45.83298791403891 | [Sheet1!D16] 2.7532431103750952 | [Sheet1!E16] 1.99 | [Sheet1!F16] 2.72
+[p001_b0023] Row 17: [Sheet1!A17] 45444 | [Sheet1!B17] 2247305 | [Sheet1!C17] 41.665994588740368 | [Sheet1!D17] 2.7002653920584878 | [Sheet1!E17] 1.99 | [Sheet1!F17] 2.72
+[p001_b0024] Row 18: [Sheet1!A18] 45474 | [Sheet1!B18] 1913465 | [Sheet1!C18] 37.498984592837182 | [Sheet1!D18] 2.7177787605208352 | [Sheet1!E18] 1.99 | [Sheet1!F18] 2.72
+[p001_b0025] Row 19: [Sheet1!A19] 45505 | [Sheet1!B19] 1882823 | [Sheet1!C19] 33.331982831422948 | [Sheet1!D19] 2.6403919151189466 | [Sheet1!E19] 1.99 | [Sheet1!F19] 2.72
+[p001_b0026] Row 20: [Sheet1!A20] 45536 | [Sheet1!B20] 1543795 | [Sheet1!C20] 29.164984651981758 | [Sheet1!D20] 2.6340834897120406 | [Sheet1!E20] 1.99 | [Sheet1!F20] 2.72
+[p001_b0027] Row 21: [Sheet1!A21] 45566 | [Sheet1!B21] 1334433 | [Sheet1!C21] 24.997981578009547 | [Sheet1!D21] 2.6106051102603129 | [Sheet1!E21] 1.99 | [Sheet1!F21] 2.72
+[p001_b0028] Row 22: [Sheet1!A22] 45597 | [Sheet1!B22] 1068206 | [Sheet1!C22] 20.830988727641287 | [Sheet1!D22] 2.57156292887327 | [Sheet1!E22] 1.99 | [Sheet1!F22] 2.72
+[p001_b0029] Row 23: [Sheet1!A23] 45627 | [Sheet1!B23] 881115 | [Sheet1!C23] 16.663984438735259 | [Sheet1!D23] 2.5266978361507868 | [Sheet1!E23] 1.99 | [Sheet1!F23] 2.72
+[p001_b0030] Row 24: [Sheet1!A24] 45658 | [Sheet1!B24] 615903 | [Sheet1!C24] 12.496982936888273 | [Sheet1!D24] 2.4866187550637036 | [Sheet1!E24] 2.02 | [Sheet1!F24] 2.57
+[p001_b0031] Row 25: [Sheet1!A25] 45689 | [Sheet1!B25] 426652 | [Sheet1!C25] 8.3299821559163885 | [Sheet1!D25] 2.436499617486851 | [Sheet1!E25] 2.02 | [Sheet1!F25] 2.57
+[p001_b0032] Row 26: [Sheet1!A26] 45717 | [Sheet1!B26] 233041 | [Sheet1!C26] 4.1629895914920523 | [Sheet1!D26] 2.4357000000000002 | [Sheet1!E26] 2.02 | [Sheet1!F26] 2.57
+[p001_b0033] Row 28: [Sheet1!A28] * Expected gallons purchased are based on pre covid consumption.

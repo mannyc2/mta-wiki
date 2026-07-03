@@ -1,0 +1,67 @@
+{
+  "run_id": "2026-06-10T22-56-13-329Z_1976810-4a6d2e40_ingest_201106-jamaica-cb12-slides",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T01:37:41.696Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "d1-q20a-new",
+        "local_observation_id": "route_q20a_cb12_2011",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id route_q20a-cb12-2011 which already exists in the registry; this route is already canonicalized.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p026_c0006",
+            "source_quote": "Bus stops at Hillside Av & Sutphin Blvd serve Q20A/Q20B/Q44 and Q43 routes"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2-q20b-new",
+        "local_observation_id": "route_q20b_cb12_2011",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id route_q20b-cb12-2011 which already exists in the registry; this route is already canonicalized.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p026_c0006",
+            "source_quote": "Bus stops at Hillside Av & Sutphin Blvd serve Q20A/Q20B/Q44 and Q43 routes"
+          }
+        ]
+      },
+      {
+        "decision_id": "d3-q43-new",
+        "local_observation_id": "route_q43_cb12_2011",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id route_q43 which already exists in the registry; this route is already canonicalized.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p026_c0006",
+            "source_quote": "Bus stops at Hillside Av & Sutphin Blvd serve Q20A/Q20B/Q44 and Q43 routes"
+          }
+        ]
+      },
+      {
+        "decision_id": "d4-q44-new",
+        "local_observation_id": "route_q44_cb12_2011",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id route_q44-cb12-2011 which already exists in the registry; this is a 2011 reference to Q44 as a local bus route (pre-SBS conversion).",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p026_c0006",
+            "source_quote": "Bus stops at Hillside Av & Sutphin Blvd serve Q20A/Q20B/Q44 and Q43 routes"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-35-46-817Z_2111393-55b6bec6_canonicalize_2026-06-10t22-56-13-329z-1976810-4a6d2e40-ingest-201106-jamaica-cb12-slides-route-identity"
+}

@@ -1,0 +1,34 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:35:03.911Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_eae8877130.md",
+  "cluster_id": "entity_cluster_eae8877130",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_eae8877130",
+    "kind": "entity",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "entity_annual-report-2021-mtapd",
+          "entity_meeting-doc-113891-john-mueller"
+        ],
+        "reason": "Contradiction test: entity_type differs (police department vs person). Payload identity fields show entity_name 'MTA Police Department' vs 'John Mueller'. Regardless of shared aliases (entity_john-j-mueller, entity_john-mueller), these are distinct real-world objects. The relation context confirms they are related as leader and organization, not the same entity."
+      }
+    ],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "The two records represent fundamentally different entity types: an organization (MTA Police Department) and a person (John Mueller). The Identity Merge Canon's first test (contradiction) forces do_not_merge when any strong identity field differs, and entity_type is a strong identity field. The shared identity keys are aliases present in both records but do not override the explicit type difference."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-34-53-964Z_1282984-164a17e8_identity-review-run_entity-cluster-eae8877130",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-34-53-964Z_2026-06-23T14-34-53-964Z_1282984-164a17e8_identity-review-run_entity-cluster-eae8877130.jsonl"
+}

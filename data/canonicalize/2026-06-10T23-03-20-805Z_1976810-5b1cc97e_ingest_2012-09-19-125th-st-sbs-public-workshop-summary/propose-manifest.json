@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T23-03-20-805Z_1976810-5b1cc97e_ingest_2012-09-19-125th-st-sbs-public-workshop-summary",
+  "generated_at": "2026-06-11T02:54:22.676Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 34,
+  "validated_decision_count": 18,
+  "quarantined_decision_count": 9,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T23-03-20-805Z_1976810-5b1cc97e_ingest_2012-09-19-125th-st-sbs-public-workshop-summary",
+    "manifest": "data/canonicalize/2026-06-10T23-03-20-805Z_1976810-5b1cc97e_ingest_2012-09-19-125th-st-sbs-public-workshop-summary/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T23-03-20-805Z_1976810-5b1cc97e_ingest_2012-09-19-125th-st-sbs-public-workshop-summary/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-03-20-805Z_1976810-5b1cc97e_ingest_2012-09-19-125th-st-sbs-public-workshop-summary/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T23-03-20-805Z_1976810-5b1cc97e_ingest_2012-09-19-125th-st-sbs-public-workshop-summary/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 7,
+      "validated_decision_count": 5,
+      "quarantined_decision_count": 2,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-03-20-805Z_1976810-5b1cc97e_ingest_2012-09-19-125th-st-sbs-public-workshop-summary/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-48-16-632Z_2111393-e9d9ed52_canonicalize_2026-06-10t23-03-20-805z-1976810-5b1cc97e-ingest-2012-09-19-125th-st-sbs-public-workshop-summary-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 8,
+      "validated_decision_count": 7,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-03-20-805Z_1976810-5b1cc97e_ingest_2012-09-19-125th-st-sbs-public-workshop-summary/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-48-16-633Z_2111393-035244d4_canonicalize_2026-06-10t23-03-20-805z-1976810-5b1cc97e-ingest-2012-09-19-125th-st-sbs-public-workshop-summary-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-03-20-805Z_1976810-5b1cc97e_ingest_2012-09-19-125th-st-sbs-public-workshop-summary/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-48-16-633Z_2111393-3013b84a_canonicalize_2026-06-10t23-03-20-805z-1976810-5b1cc97e-ingest-2012-09-19-125th-st-sbs-public-workshop-summary-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-03-20-805Z_1976810-5b1cc97e_ingest_2012-09-19-125th-st-sbs-public-workshop-summary/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-48-16-633Z_2111393-6b4336aa_canonicalize_2026-06-10t23-03-20-805z-1976810-5b1cc97e-ingest-2012-09-19-125th-st-sbs-public-workshop-summary-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-03-20-805Z_1976810-5b1cc97e_ingest_2012-09-19-125th-st-sbs-public-workshop-summary/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-48-16-633Z_2111393-80bd6aa9_canonicalize_2026-06-10t23-03-20-805z-1976810-5b1cc97e-ingest-2012-09-19-125th-st-sbs-public-workshop-summary-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 9,
+      "validated_decision_count": 4,
+      "quarantined_decision_count": 5,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-03-20-805Z_1976810-5b1cc97e_ingest_2012-09-19-125th-st-sbs-public-workshop-summary/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-48-16-633Z_2111393-ce27295b_canonicalize_2026-06-10t23-03-20-805z-1976810-5b1cc97e-ingest-2012-09-19-125th-st-sbs-public-workshop-summary-relation-linker"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T22-56-13-315Z_1976810-4b04cae8_ingest_201106-hylan-slides",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T01:35:16.548Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "hylan-blvd-study-corridor-self-resolve",
+        "local_observation_id": "corridor_hylan_blvd_study_corridor",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'corridor_hylan-boulevard-brt' is already the correct canonical record. The observation's source (201106_hylan_slides) is listed in that record's source_ids, and the alias 'corridor_hylan-blvd-study-corridor' / 'corridor_hylan-blvd-richmond-ave-study-corridor' already cover this label. The observation resolves to its own base_record_id with no different target to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p005_c0005",
+            "source_quote": "The map illustrates the Hylan Boulevard/Richmond Avenue Study Corridor. It features a proposed SBS route (solid red line) and Staten Island Railway stations"
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-34-41-887Z_2111393-085fcb56_canonicalize_2026-06-10t22-56-13-315z-1976810-4b04cae8-ingest-201106-hylan-slides-corridor-identity"
+}

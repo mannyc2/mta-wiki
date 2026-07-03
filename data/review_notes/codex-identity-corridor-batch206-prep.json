@@ -1,0 +1,222 @@
+{
+  "note_id": "codex-identity-corridor-batch206-prep",
+  "created_at": "2026-06-23T11:45:39Z",
+  "scope": {
+    "operation": "prepare_corridor_duplicate_identity_cleanup",
+    "after_checkpoint": "identity202-dnm203-204",
+    "global_kind": "corridor",
+    "issue_type": "duplicate_global_identity",
+    "current_duplicate_global_identity_count": 333,
+    "current_corridor_duplicate_issue_count": 13,
+    "selection_note": "Codex-only bounded prep artifact. Used deterministic local inspection and the exported validateRepo helper directly; did not run the validate CLI.",
+    "write_limit": "Exactly one artifact was written: data/review_notes/codex-identity-corridor-batch206-prep.json.",
+    "write_exclusions_observed": [
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json",
+      "data/canonical/*.jsonl",
+      "data/canonical.db",
+      "LOG.md",
+      "manifest files",
+      "wiki pages",
+      "submissions",
+      "retired overrides"
+    ],
+    "commands_not_run": [
+      "provider-backed commands",
+      "materialize",
+      "validate CLI",
+      "write",
+      "ask",
+      "canonicalize",
+      "identity-review",
+      "schema",
+      "ontology"
+    ]
+  },
+  "prepared_count": 4,
+  "proposed_aliases": [
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_14th-st-crosstown-brt-phase2",
+        "corridor_14th-street-ttp"
+      ],
+      "alias_record_id": "corridor_14th-st-crosstown-brt-phase2",
+      "target_record_id": "corridor_14th-street-ttp",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_14th-st-crosstown-brt-phase2 and corridor_14th-street-ttp share identity key corridor_14th-st-crosstown-brt-phase2.",
+        "duplicate_global_identity: Global corridor records corridor_14th-st-crosstown-brt-phase2 and corridor_14th-street-ttp share identity key corridor_14th-st-crosstown-corridor."
+      ],
+      "source_canonical_evidence": [
+        "corridor_14th-st-crosstown-brt-phase2: Manhattan; display_name/corridor_name '14th Street Crosstown Corridor'; BRT Phase II candidate corridor; source brt_phase2_future_corridors_rpt#p004_c0002 lists '14th Street Crosstown Corridor' in the Phase II candidates table.",
+        "corridor_14th-street-ttp: Manhattan; street '14th Street'; limits '3rd Avenue to 8th Avenue (westbound) and 9th Avenue to 3rd Avenue (eastbound)'; merged corridor_name values include '14th Street Crosstown Corridor'; source 14th_street_busway_brochure#p001_c0002 says 14th Street between 9th Avenue and 3rd Avenue would become a Transit & Truck Priority corridor.",
+        "corridor_14th-street-ttp also carries brt_intro_to_phase2 source context with raw_text '14th Street Crosstown Corridor - Difficult Trip - Existing M14 bus route carries 39,000 trips a day', tying the Phase II corridor surface to the same Manhattan 14th Street corridor identity."
+      ],
+      "reason": "The Phase II record is a sparse planning-era surface for the same 14th Street crosstown corridor later materialized as the 14th Street TTP/busway corridor. This is a corridor lifecycle/name surface, not a conflicting borough or limit split.",
+      "expected_duplicate_suppressions": [
+        "corridor_14th-st-crosstown-brt-phase2 <> corridor_14th-street-ttp on corridor_14th-st-crosstown-brt-phase2",
+        "corridor_14th-st-crosstown-brt-phase2 <> corridor_14th-street-ttp on corridor_14th-st-crosstown-corridor"
+      ],
+      "guard_checks": {
+        "both_present_in_current_canonical_jsonl": true,
+        "same_global_kind": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_direct": true,
+        "not_already_merged_or_resolved_same_target": true,
+        "current_validator_duplicate_global_identity": true
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_woodhaven-blvd-brt-phase2",
+        "corridor_woodhaven-boulevard"
+      ],
+      "alias_record_id": "corridor_woodhaven-blvd-brt-phase2",
+      "target_record_id": "corridor_woodhaven-boulevard",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_woodhaven-blvd-brt-phase2 and corridor_woodhaven-boulevard share identity key corridor_woodhaven-blvd-corridor."
+      ],
+      "source_canonical_evidence": [
+        "corridor_woodhaven-blvd-brt-phase2: Queens; display_name/corridor_name 'Woodhaven Blvd Corridor'; BRT Phase II candidate corridor; source brt_phase2_future_corridors_rpt#p004_c0002 lists 'Woodhaven Blvd Corridor' in the Phase II candidates table.",
+        "corridor_woodhaven-boulevard: Queens; corridor_name 'Woodhaven Boulevard'; current payload limits 'Queens Boulevard to 107th Avenue'; record_aliases include 'corridor_woodhaven-blvd-corridor', 'corridor_woodhaven-blvd-q52-q53-sbs-corridor', and 2015 Woodhaven SBS surfaces.",
+        "corridor_woodhaven-boulevard source evidence includes better_buses#p001_b0001 for 'Woodhaven Boulevard in Queens, from Queens Boulevard to 107th Avenue' and 2015_04_01_brt_woodhaven_newsletter_1_spring2015#p002_c0004 for 'Woodhaven Blvd - Main Road Bus Lanes'."
+      ],
+      "reason": "The Phase II record is a minimal planning-candidate shell for Woodhaven Boulevard, while the canonical Woodhaven Boulevard record already aggregates the same Woodhaven Blvd corridor surface and later Q52/Q53 SBS/Better Buses evidence. No conflicting borough or separate street limit is present in the Phase II shell.",
+      "expected_duplicate_suppressions": [
+        "corridor_woodhaven-blvd-brt-phase2 <> corridor_woodhaven-boulevard on corridor_woodhaven-blvd-corridor"
+      ],
+      "guard_checks": {
+        "both_present_in_current_canonical_jsonl": true,
+        "same_global_kind": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_direct": true,
+        "not_already_merged_or_resolved_same_target": true,
+        "current_validator_duplicate_global_identity": true
+      }
+    }
+  ],
+  "proposed_do_not_merge_pairs": [
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_bus-fwd-2-church-av-brooklyn-local",
+        "corridor_church-av"
+      ],
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_bus-fwd-2-church-av-brooklyn-local and corridor_church-av share identity key corridor_church-av."
+      ],
+      "source_canonical_evidence": [
+        "corridor_bus-fwd-2-church-av-brooklyn-local: Brooklyn; corridor_name 'Church Av'; from Coney Island Av to Flatbush Av; source bus_forward_2#p011_c0002 lists 'Church Av from Coney Island Av to Flatbush Av' under local bus-priority corridors.",
+        "corridor_church-av: Brooklyn; corridor_name 'Church Av'; limits 'Flatbush Ave to Ocean Pkwy'; source church_ave_cb12_jun2019#p006_c0002 states 'Flatbush Ave to Ocean Pkwy (0.9 miles)' and splits that corridor into Flatbush Ave to E 16 St and E 16 St to Ocean Pkwy.",
+        "The two records touch at Flatbush Avenue but cover different Church Avenue sections."
+      ],
+      "reason": "Shared Church Avenue street identity hides adjacent but distinct corridor limits: Coney Island Avenue to Flatbush Avenue versus Flatbush Avenue to Ocean Parkway. The pair should be guarded as DNM rather than collapsed.",
+      "expected_duplicate_suppressions": [
+        "corridor_bus-fwd-2-church-av-brooklyn-local <> corridor_church-av on corridor_church-av"
+      ],
+      "guard_checks": {
+        "both_present_in_current_canonical_jsonl": true,
+        "same_global_kind": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_direct": true,
+        "not_already_merged_or_resolved_same_target": true,
+        "current_validator_duplicate_global_identity": true
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_cross-bay-blvd-2015",
+        "corridor_cross-bay-blvd-sbs-spring2015"
+      ],
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_cross-bay-blvd-2015 and corridor_cross-bay-blvd-sbs-spring2015 share identity key corridor_cross-bay-blvd."
+      ],
+      "source_canonical_evidence": [
+        "corridor_cross-bay-blvd-2015: Queens; corridor_name 'Cross Bay Boulevard (north of 165 Av)'; limits 'north of 165 Av'; source 2015_05_13_brt_woodhaven_cb6_presentation#p020_c0009 states 'Cross Bay Blvd (north of 165 Av)' with offset bus lanes and bus bulbs.",
+        "corridor_cross-bay-blvd-sbs-spring2015: Queens; corridor_name 'Cross Bay Boulevard'; merged description includes 'Cross Bay Boulevard bus lanes between 107 Av and N Conduit Av'; source brt_woodhaven_implementation_update_2017#p002_c0006 states 'Cross Bay Blvd bus lanes between 107 Av and N Conduit Av'.",
+        "Existing guardrails already distinguish corridor_cross-bay-blvd-2015 from other Cross Bay/whole Woodhaven-Cross Bay extents; this pair is another shared-street but different-limit case."
+      ],
+      "reason": "The records share Cross Bay Boulevard but carry different physical extents: a north-of-165-Av design segment versus the later 107 Av to N Conduit Av bus-lane segment. Shared street name is not enough for corridor identity.",
+      "expected_duplicate_suppressions": [
+        "corridor_cross-bay-blvd-2015 <> corridor_cross-bay-blvd-sbs-spring2015 on corridor_cross-bay-blvd"
+      ],
+      "guard_checks": {
+        "both_present_in_current_canonical_jsonl": true,
+        "same_global_kind": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_direct": true,
+        "not_already_merged_or_resolved_same_target": true,
+        "current_validator_duplicate_global_identity": true
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_125th-st-crosstown-brt-phase2",
+        "corridor_125th-st-manhattan"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_125th-st-crosstown-brt-phase2 and corridor_125th-st-manhattan share identity key corridor_125th-st-crosstown-corridor."
+      ],
+      "reason": "Deferred for cluster-level corridor policy review. Both are Manhattan 125th Street crosstown surfaces, but one is only a Phase II candidate shell and the other has concrete Morningside Avenue to Second Avenue and other merged 125th Street limits. This was already deferred in batch203 and remains below high-confidence alias/DNM threshold."
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate",
+        "corridor_church-av"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate and corridor_church-av share identity key corridor_church-ave."
+      ],
+      "reason": "Deferred because the Bus Forward 2 SBS candidate is a sparse 'Church Avenue' next-phase candidate without explicit limits, while corridor_church-av is the later Flatbush Avenue to Ocean Parkway priority corridor. No strong limit conflict or exact-limit match is present."
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_utica-ave-b46-2015-04-06",
+        "corridor_utica-ave-brt-phase2",
+        "corridor_utica-ave-st-johns-carroll-2013",
+        "corridor_utica-ave-st-johns-pl-church-ave-2013"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_utica-ave-b46-2015-04-06 and corridor_utica-ave-brt-phase2 share identity key corridor_utica-ave-corridor.",
+        "duplicate_global_identity: Global corridor records corridor_utica-ave-b46-2015-04-06 and corridor_utica-ave-st-johns-carroll-2013 share identity key corridor_utica-ave.",
+        "duplicate_global_identity: Global corridor records corridor_utica-ave-b46-2015-04-06 and corridor_utica-ave-st-johns-pl-church-ave-2013 share identity key corridor_utica-ave.",
+        "duplicate_global_identity: Global corridor records corridor_utica-ave-b46-2015-04-06 and corridor_utica-ave-st-johns-pl-church-ave-2013 share identity key corridor_utica-ave-b46-corridor.",
+        "duplicate_global_identity: Global corridor records corridor_utica-ave-brt-phase2 and corridor_utica-ave-st-johns-pl-church-ave-2013 share identity key corridor_utica-ave-brt-phase2.",
+        "duplicate_global_identity: Global corridor records corridor_utica-ave-b46-2015-04-06 and corridor_utica-ave-st-johns-pl-church-ave-2013 share identity key corridor_utica-ave-corridor."
+      ],
+      "reason": "Deferred for Utica Avenue cluster review. The current records mix broad B46/Phase II corridor surfaces with bounded St. Johns to Carroll and St. Johns/Carroll to Church segments, and existing aliases already point some Utica surfaces through multi-step targets. Pairwise alias or DNM would be possible to overstate without a cluster-level split/merge policy call."
+    }
+  ],
+  "blockers": []
+}

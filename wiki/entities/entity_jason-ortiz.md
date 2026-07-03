@@ -1,0 +1,380 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "entity_jason-ortiz"
+record_aliases:
+  - "entity_jason-ortiz-167301"
+  - "entity_jason-ortiz-174081"
+  - "entity_jason-ortiz-meeting-doc-140406"
+  - "entity_jason-ortiz-meeting-doc-140421"
+  - "entity_jason-ortiz-meeting-doc-146891"
+  - "entity_jason-ortiz-meeting-doc-174086"
+  - "entity_jason-ortiz-mta-real-estate-project-manager"
+  - "entity_jason-ortiz-project-manager"
+  - "entity_meeting-doc-129076-jason-ortiz"
+  - "entity_meeting-doc-138311-jason-ortiz"
+  - "entity_meeting-doc-143166-jason-ortiz"
+  - "entity_meeting-doc-146911-jason-ortiz"
+  - "entity_meeting-doc-178486-jason-ortiz"
+  - "entity_meeting143381-jason-ortiz"
+record_kind: "entity"
+display_name: "Jason Ortiz, Project Manager"
+source_id: "meeting_doc_129076"
+source_ids:
+  - "meeting_doc_129076"
+  - "meeting_doc_138311"
+  - "meeting_doc_140406"
+  - "meeting_doc_140421"
+  - "meeting_doc_143166"
+  - "meeting_doc_143381"
+  - "meeting_doc_146891"
+  - "meeting_doc_146911"
+  - "meeting_doc_147001"
+  - "meeting_doc_151751"
+  - "meeting_doc_155106"
+  - "meeting_doc_160326"
+  - "meeting_doc_163226"
+  - "meeting_doc_163231"
+  - "meeting_doc_167301"
+  - "meeting_doc_167331"
+  - "meeting_doc_173881"
+  - "meeting_doc_174081"
+  - "meeting_doc_174086"
+  - "meeting_doc_178486"
+  - "meeting_doc_186736"
+  - "meeting_doc_189891"
+  - "meeting_doc_190011"
+  - "meeting_doc_196941"
+  - "meeting_doc_197046"
+local_observation_id: "entity_meeting_doc_129076_jason_ortiz"
+local_observation_ids:
+  - "entity_jason_ortiz"
+  - "entity_jason_ortiz_151751"
+  - "entity_jason_ortiz_167301"
+  - "entity_jason_ortiz_173881"
+  - "entity_jason_ortiz_174081"
+  - "entity_jason_ortiz_meeting_doc_140406"
+  - "entity_jason_ortiz_meeting_doc_140421"
+  - "entity_jason_ortiz_meeting_doc_146891"
+  - "entity_jason_ortiz_meeting_doc_160326"
+  - "entity_jason_ortiz_meeting_doc_174086"
+  - "entity_meeting143381_jason_ortiz"
+  - "entity_meeting147001_jason_ortiz"
+  - "entity_meeting163226_jason_ortiz"
+  - "entity_meeting163231_jason_ortiz"
+  - "entity_meeting196941_jason_ortiz"
+  - "entity_meeting_186736_jason_ortiz"
+  - "entity_meeting_doc_129076_jason_ortiz"
+  - "entity_meeting_doc_138311_jason_ortiz"
+  - "entity_meeting_doc_143166_jason_ortiz"
+  - "entity_meeting_doc_146911_jason_ortiz"
+  - "entity_meeting_doc_155106_jason_ortiz"
+  - "entity_meeting_doc_167331_jason_ortiz"
+  - "entity_meeting_doc_178486_jason_ortiz"
+  - "entity_meeting_doc_189891_jason_ortiz"
+  - "entity_meeting_doc_197046_jason_ortiz"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-22T19:03:35.886Z"
+raw_text: "Project Manager Name JASON ORTIZ"
+submission_ids:
+  - "sub_06837375a21ed51b"
+  - "sub_08c994bed563e672"
+  - "sub_0fb1c8423da28840"
+  - "sub_35865feb2079f4c0"
+  - "sub_3e9f225f86af1c79"
+  - "sub_50f81ec59a2718c4"
+  - "sub_5b59a4cd3fec737a"
+  - "sub_62b1419c4e3e67fe"
+  - "sub_65abbc5499e86d71"
+  - "sub_67626fbf5fb3864f"
+  - "sub_6a32c90547e2960d"
+  - "sub_6a48e1582e5570e0"
+  - "sub_7807a75c1c7fbc3e"
+  - "sub_927db56141cd7723"
+  - "sub_9334a5098a8fc7d7"
+  - "sub_998d518d633b34f0"
+  - "sub_9dbf28244353a467"
+  - "sub_a47812a8ce40f49b"
+  - "sub_b50cc8d984561735"
+  - "sub_cd8822851fd52cf0"
+  - "sub_e35926f223a91025"
+  - "sub_e629306c04f08091"
+  - "sub_e92d41db0a62e85e"
+  - "sub_f35ecaa1af4ff909"
+  - "sub_f8b203d04a3c87c9"
+payload:
+  _merged_field_values:
+    description:
+      - "Project Manager named on the staff summary"
+      - "MTA Real Estate Project Manager for Metro-North property disposition"
+    organization:
+      - "MTA Real Estate"
+      - "MTA Real Estate Department"
+    role:
+      - "Project Manager"
+      - "Project Manager for Global Java license and Grand Concourse lease"
+      - "Transaction Manager"
+    title:
+      - "Project Manager"
+      - "Project Manager, MTA Real Estate"
+  agency: "MTA Real Estate"
+  description: "Project Manager named on the staff summary"
+  entity_name: "Jason Ortiz"
+  entity_type: "person"
+  organization: "MTA Real Estate"
+  role: "Project Manager"
+  title: "Project Manager"
+evidence_refs:
+  -
+    block_id: "p006_c0004"
+    evidence_id: "meeting_doc_129076#p006_c0004"
+    page_number: 6
+    source_id: "meeting_doc_129076"
+    source_path: "raw/sources/meeting_doc_129076/blocks.jsonl"
+    text_sha256: "sha256:4e06513a754892c0873808f869425848014b4f1aff26a7eedd6033d2d42799ad"
+    text_source: "raw_text"
+  -
+    block_id: "p007_c0004"
+    evidence_id: "meeting_doc_129076#p007_c0004"
+    page_number: 7
+    source_id: "meeting_doc_129076"
+    source_path: "raw/sources/meeting_doc_129076/blocks.jsonl"
+    text_sha256: "sha256:367cfe9f53f4698330ac38d83a0700133d16ccec80d86c193d3385189237c97b"
+    text_source: "raw_text"
+  -
+    block_id: "p008_c0004"
+    evidence_id: "meeting_doc_129076#p008_c0004"
+    page_number: 8
+    source_id: "meeting_doc_129076"
+    source_path: "raw/sources/meeting_doc_129076/blocks.jsonl"
+    text_sha256: "sha256:60d206db5165c9c49d41f4ca56f96895dc77edd06cdf13992f652b8108f9bbcd"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0001"
+    evidence_id: "meeting_doc_138311#p003_c0001"
+    page_number: 3
+    source_id: "meeting_doc_138311"
+    source_path: "raw/sources/meeting_doc_138311/blocks.jsonl"
+    source_quote: "Project Manager Name JASON ORTIZ"
+    text_sha256: "sha256:194f75e20275994e0a282c3a52de223026267e226a2cb031f63b2b3d72f584ac"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0004"
+    evidence_id: "meeting_doc_140421#p002_c0004"
+    page_number: 2
+    source_id: "meeting_doc_140421"
+    source_path: "raw/sources/meeting_doc_140421/blocks.jsonl"
+    text_sha256: "sha256:25e22a3a3ec21e6d7f3bd266deec16ffdcf4d0038e8b02661054e5a79e0b2fd9"
+    text_source: "raw_text"
+  -
+    block_id: "p004_c0004"
+    evidence_id: "meeting_doc_140406#p004_c0004"
+    page_number: 4
+    source_id: "meeting_doc_140406"
+    source_path: "raw/sources/meeting_doc_140406/blocks.jsonl"
+    text_sha256: "sha256:5cf2f4538298d071578a9484e88cfa12977bb76f5ad8b928eb5730ec77d8de90"
+    text_source: "raw_text"
+  -
+    block_id: "p009_c0004"
+    evidence_id: "meeting_doc_140406#p009_c0004"
+    page_number: 9
+    source_id: "meeting_doc_140406"
+    source_path: "raw/sources/meeting_doc_140406/blocks.jsonl"
+    text_sha256: "sha256:3f9bd8d7a1257e0dbcb66d6d25a4fca92d5edd2453777ba6edfcc3a595faceef"
+    text_source: "raw_text"
+  -
+    block_id: "p014_c0004"
+    evidence_id: "meeting_doc_140406#p014_c0004"
+    page_number: 14
+    source_id: "meeting_doc_140406"
+    source_path: "raw/sources/meeting_doc_140406/blocks.jsonl"
+    text_sha256: "sha256:a164f0820631ab3dfc3ea6ba09a09b963bcbab1f908ad6ff3954a2cfb1731ecc"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_143166#p001_c0004"
+    page_number: 1
+    role: "project_manager"
+    source_id: "meeting_doc_143166"
+    source_path: "raw/sources/meeting_doc_143166/blocks.jsonl"
+    text_sha256: "sha256:a68276fb9435ebdf4050482f1df1b97a2a642095b4a63e72e7e7afa37a665adc"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_146891#p001_c0004"
+    page_number: 1
+    source_id: "meeting_doc_146891"
+    source_path: "raw/sources/meeting_doc_146891/blocks.jsonl"
+    text_sha256: "sha256:bbf2d406eda070c6757e37596993612f58fe81b8991ca01b0229bb4a87dc49aa"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_146911#p001_c0004"
+    page_number: 1
+    source_id: "meeting_doc_146911"
+    source_path: "raw/sources/meeting_doc_146911/blocks.jsonl"
+    text_sha256: "sha256:9965cabf5c12563f7bac6365246104643b2fd4d71f146307954a1d9a90238254"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0002"
+    evidence_id: "meeting_doc_143381#p002_c0002"
+    page_number: 2
+    source_id: "meeting_doc_143381"
+    source_path: "raw/sources/meeting_doc_143381/blocks.jsonl"
+    source_quote: "Project Manager Name JASON ORTIZ"
+    text_sha256: "sha256:a13f63f5edb15dbff5fb40e431c771a0cc9d6ef4175dea667e720c7ce956483e"
+    text_source: "raw_text"
+  -
+    block_id: "p004_c0004"
+    evidence_id: "meeting_doc_160326#p004_c0004"
+    page_number: 4
+    role: "names_project_manager"
+    source_id: "meeting_doc_160326"
+    source_path: "raw/sources/meeting_doc_160326/blocks.jsonl"
+    text_sha256: "sha256:3fd2e4221522ca7cab3b69c79378bdf59980264764a0d1a3231f22d1595883b9"
+    text_source: "raw_text"
+  -
+    block_id: "p022_c0004"
+    evidence_id: "meeting_doc_147001#p022_c0004"
+    page_number: 22
+    source_id: "meeting_doc_147001"
+    source_path: "raw/sources/meeting_doc_147001/blocks.jsonl"
+    text_sha256: "sha256:d3b19f51dcfc17de1ada969f99ee59d5879a05245ed8ecbecfc1b16dd0103365"
+    text_source: "raw_text"
+  -
+    block_id: "p010_c0004"
+    evidence_id: "meeting_doc_151751#p010_c0004"
+    page_number: 10
+    source_id: "meeting_doc_151751"
+    source_path: "raw/sources/meeting_doc_151751/blocks.jsonl"
+    text_sha256: "sha256:3009281ea6d7d61a98b5dc686602c5c8144fe606055afb6ae6d30ab2eab175c4"
+    text_source: "raw_text"
+  -
+    block_id: "p006_c0004"
+    evidence_id: "meeting_doc_155106#p006_c0004"
+    page_number: 6
+    source_id: "meeting_doc_155106"
+    source_path: "raw/sources/meeting_doc_155106/blocks.jsonl"
+    source_quote: "Project Manager Name JASON ORTIZ"
+    text_sha256: "sha256:58ec2a3d8c94070fa3553c5ce6926c6fc7b825d46927d69d5b0c2064151a312a"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_163231#p001_c0003"
+    page_number: 1
+    source_id: "meeting_doc_163231"
+    source_path: "raw/sources/meeting_doc_163231/blocks.jsonl"
+    text_sha256: "sha256:554ed520e1f55df54b958a2781d2e148d0a4c157e3890cd03bd40f663eb75239"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0004"
+    evidence_id: "meeting_doc_163226#p002_c0004"
+    page_number: 2
+    source_id: "meeting_doc_163226"
+    source_path: "raw/sources/meeting_doc_163226/blocks.jsonl"
+    source_quote: "Project Manager Name JASON ORTIZ"
+    text_sha256: "sha256:a0c2bdd7a82288dbafdc6c6a085b92d15eb23acbdb92622c41af02c3605e17bc"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_167331#p001_c0003"
+    page_number: 1
+    role: "entity_reference"
+    source_id: "meeting_doc_167331"
+    source_path: "raw/sources/meeting_doc_167331/blocks.jsonl"
+    text_sha256: "sha256:47a6a00a7d8c949bd61fee32bbe98aa5a469ed7cad53462c53bfb1253de5c08c"
+    text_source: "raw_text"
+  -
+    block_id: "p009_c0003"
+    evidence_id: "meeting_doc_167301#p009_c0003"
+    page_number: 9
+    role: "entity_reference"
+    source_id: "meeting_doc_167301"
+    source_path: "raw/sources/meeting_doc_167301/blocks.jsonl"
+    text_sha256: "sha256:47a6a00a7d8c949bd61fee32bbe98aa5a469ed7cad53462c53bfb1253de5c08c"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_173881#p001_c0004"
+    page_number: 1
+    source_id: "meeting_doc_173881"
+    source_path: "raw/sources/meeting_doc_173881/blocks.jsonl"
+    text_sha256: "sha256:b52691645d55000d2b1f0b0f4eca01608db8feb04613e52ce3add8fe156cf110"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0004"
+    evidence_id: "meeting_doc_174086#p002_c0004"
+    page_number: 2
+    role: "project_manager"
+    source_id: "meeting_doc_174086"
+    source_path: "raw/sources/meeting_doc_174086/blocks.jsonl"
+    source_quote: "Project Manager Name JASON ORTIZ"
+    text_sha256: "sha256:1bc35d040de657c3e8e14eb5e3cc7d924f8361c191388d640a0bfafc70adf6b0"
+    text_source: "raw_text"
+  -
+    block_id: "p014_c0004"
+    evidence_id: "meeting_doc_174081#p014_c0004"
+    page_number: 14
+    source_id: "meeting_doc_174081"
+    source_path: "raw/sources/meeting_doc_174081/blocks.jsonl"
+    text_sha256: "sha256:ce9da1dc63dc0c0dcfde8357b1dc18e64ba6c9d4cc182869a155dd6e10bb609a"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0004"
+    evidence_id: "meeting_doc_178486#p003_c0004"
+    page_number: 3
+    source_id: "meeting_doc_178486"
+    source_path: "raw/sources/meeting_doc_178486/blocks.jsonl"
+    source_quote: "Project Manager Name JASON ORTIZ"
+    text_sha256: "sha256:3b0774683e5648d76c49e803c6c13138ce255fde45f7639df83f03796b6a84c1"
+    text_source: "raw_text"
+  -
+    block_id: "p015_c0004"
+    evidence_id: "meeting_doc_190011#p015_c0004"
+    page_number: 15
+    role: "entity_identification"
+    source_id: "meeting_doc_190011"
+    source_path: "raw/sources/meeting_doc_190011/blocks.jsonl"
+    source_quote: "Project Manager Name JASON ORTIZ"
+    text_sha256: "sha256:202d83c97ac79c4d6857a4a4f83d892601112ccd66f99b16c6b52e9dcd0356e4"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_196941#p001_c0003"
+    page_number: 1
+    role: "entity_reference"
+    source_id: "meeting_doc_196941"
+    source_path: "raw/sources/meeting_doc_196941/blocks.jsonl"
+    text_sha256: "sha256:a73ff557d87a0cd8b8309e7ba8983f50c7ebc6a4ba7650728b8819bcc882784a"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0002"
+    evidence_id: "meeting_doc_197046#p002_c0002"
+    page_number: 2
+    source_id: "meeting_doc_197046"
+    source_path: "raw/sources/meeting_doc_197046/blocks.jsonl"
+    text_sha256: "sha256:c386f2832acd6a60fc8080430f3b8741fc7d00347f957930ece75153bd2948f7"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_189891#p001_c0004"
+    page_number: 1
+    role: "project_manager_stated"
+    source_id: "meeting_doc_189891"
+    source_path: "raw/sources/meeting_doc_189891/blocks.jsonl"
+    text_sha256: "sha256:202d83c97ac79c4d6857a4a4f83d892601112ccd66f99b16c6b52e9dcd0356e4"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_186736#p001_c0004"
+    page_number: 1
+    source_id: "meeting_doc_186736"
+    source_path: "raw/sources/meeting_doc_186736/blocks.jsonl"
+    source_quote: "Project Manager Name JASON ORTIZ"
+    text_sha256: "sha256:9b41d9da1587434f8d3127cba769505e2f45cc79f7d1d2f8448f8000ee508a15"
+    text_source: "raw_text"
+---
+
+<!-- mta-wiki:writer:start -->
+
+<!-- mta-wiki:writer:end -->

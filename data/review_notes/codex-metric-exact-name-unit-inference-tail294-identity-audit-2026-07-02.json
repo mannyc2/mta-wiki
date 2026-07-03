@@ -1,0 +1,167 @@
+{
+  "note_id": "codex-metric-exact-name-unit-inference-tail294-identity-audit-2026-07-02",
+  "mode": "codex-only deterministic cleanup",
+  "provider_backed_commands_run": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-profile commands"
+  ],
+  "subagents": [
+    {
+      "agent_id": "019f2082-1008-7873-8731-5ff6301567e0",
+      "name": "Newton",
+      "role": "read-only metric tail audit",
+      "status": "completed_and_closed",
+      "finding": "Recommended exact-name aliases plus evidence gates for the remaining 421 missing metric unit-family rows."
+    },
+    {
+      "agent_id": "019f2082-1469-76e1-974f-f007cec524d7",
+      "name": "Dirac",
+      "role": "read-only route/project identity backlog audit",
+      "status": "completed_and_closed",
+      "finding": "Current route/project validator-style duplicate_global_identity backlog is zero; no high-confidence merge alias or DNM guard is needed now."
+    }
+  ],
+  "metric_tail": {
+    "before": {
+      "metric_claims": 36534,
+      "metric_unit_family_missing": 421,
+      "metric_unit_family_other": 5,
+      "missing_finite_no_unit_rows": 418
+    },
+    "after_first_slice": {
+      "metric_unit_family_missing": 379,
+      "missing_finite_no_unit_rows": 376,
+      "delta_missing": -42
+    },
+    "after_second_slice": {
+      "metric_claims": 36534,
+      "metric_unit_family_missing": 294,
+      "metric_unit_family_other": 5,
+      "missing_finite_no_unit_rows": 291,
+      "delta_missing_from_turn_start": -127,
+      "delta_missing_from_first_slice": -85
+    }
+  },
+  "implemented_metric_changes": [
+    {
+      "slice": "exact suffix and alias carry-forward",
+      "summary": "Added exact-name metric unit inference for YTD payment/adjudication/violation/train-lateness variants, state-tax refund money variants, daily bus ridership variants, complaint total variants, workforce total variants, daily vehicle volume, participation, and ranking rows."
+    },
+    {
+      "slice": "Newton exact-name gated slice",
+      "summary": "Added exact-name inference for locomotive counts, track trespassing incidents, audit/project completions, revenue/cost money rows, annual money-rate rows, TOS arrest/summons rows, complaint rows, reportable injuries, injured/killed population rows, crime count rows, subway fires, miscellaneous object counts, percent-change rows, ridership rows, and net workforce change by sex."
+    },
+    {
+      "file": "packages/pipeline/src/ontology/normalizers.ts",
+      "summary": "Added gated safety-event inference requiring evidence outside metric_name for derailments, collisions, injuries, and fires; added annual money-rate inference requiring money evidence; retained no-overwrite and finite-value requirements."
+    },
+    {
+      "file": "packages/pipeline/test/ontology/normalizers.test.ts",
+      "summary": "Added representative tests for the new exact names and negative guards for raw-only derailments and money names without money evidence."
+    }
+  ],
+  "metric_target_recount_after": {
+    "target_names_normalized": 542,
+    "target_names_missing": 2,
+    "remaining_target_missing": [
+      {
+        "metric_name": "train_derailments",
+        "record_id": "metric_lirr-train-derailments-2024ytd",
+        "raw_value_text": "2",
+        "reason": "Gated safety-event rule intentionally requires derailment evidence outside metric_name; raw-only numeric row remains unresolved."
+      },
+      {
+        "metric_name": "subway_fires",
+        "record_id": "metric_nyct-subway-fires-dec2022",
+        "raw_value_text": "85",
+        "reason": "Gated safety-event rule intentionally requires fire evidence outside metric_name; raw-only numeric row remains unresolved."
+      }
+    ]
+  },
+  "route_project_identity_audit": {
+    "route_records": 319,
+    "project_records": 1859,
+    "route_merge_aliases": 147,
+    "project_merge_aliases": 353,
+    "route_do_not_merge_pairs": 68,
+    "project_do_not_merge_pairs": 70,
+    "route_scope_split": {
+      "true_route": 302,
+      "split_candidate": 8,
+      "aggregate_list_context": 8,
+      "data_only_scope": 1
+    },
+    "validator_style_duplicate_global_identity": {
+      "route_open_issues": 0,
+      "project_open_issues": 0,
+      "route_open_buckets": 0,
+      "project_open_buckets": 0
+    },
+    "advisory_noisy_edges": {
+      "route_unsuppressed_noisy_edges": 30,
+      "route_unsuppressed_clusters": 14,
+      "route_active_dnm_suppressions": 30,
+      "project_unsuppressed_noisy_edges": 3,
+      "project_unsuppressed_clusters": 3,
+      "project_active_dnm_suppressions": 3,
+      "note": "Explorer reported no open edges after DNM; the noisy edge examples are already DNM-suppressed false positives."
+    },
+    "implementation_decision": "No route/project merge alias, DNM guard, or identity-key edit was applied because the current validator-style route/project duplicate backlog is zero."
+  },
+  "commands": [
+    {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "result": "pass: 278 tests, 4789 expect() calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "Materialized 93067/98115 submissions; retired submissions skipped 265; Pages 7335; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "Issues: 0; Submissions 98115; Canonical records 84027; Wiki pages 7331"
+    }
+  ],
+  "remaining_metric_tail_top_names": [
+    ["crash_injuries", 5],
+    ["ridership", 3],
+    ["Secondary Screening Score", 3],
+    ["audible_pedestrian_turn_warning_systems_installed", 2],
+    ["customer_community_outreach", 2],
+    ["customers_benefited", 2],
+    ["daily_users", 2],
+    ["first_responders_trained", 2],
+    ["Lost Time Incident Rate (LTIR)", 2],
+    ["lost_time_injury_rate", 2],
+    ["major_felony_change", 2],
+    ["safety_incidents_by_hazard_type", 2],
+    ["total_arrests_change", 2],
+    ["total_major_felonies_change", 2],
+    ["users_served", 2],
+    ["vacancies", 2]
+  ],
+  "remaining_deferrals": [
+    "crash_injuries has same-name conflicts between people, crashes, fatalities, and safety units.",
+    "Secondary Screening Score / Bell-Curve Grade Threshold need a score/rating policy before normalization.",
+    "Broad ridership rows mix riders, rides, trips, boardings, and scale examples.",
+    "Lost Time Incident Rate / LTIR need a dedicated rate-family rule.",
+    "Major felony / arrest / hate crime change rows retain change-count versus percent ambiguity.",
+    "Vacancies and bare headcount/FTE variants need a bounded workforce policy.",
+    "Current route/project validator-style duplicate backlog is zero; next identity work should target advisory-edge generation only if it produces a measurable noisy bucket."
+  ],
+  "next_lanes": [
+    "Continue metric missing unit-family tail from 294, starting with score/rating policy or LTIR rate policy if high-confidence.",
+    "Audit remaining singletons for exact names with obvious object units, but keep broad ridership/crash injury/change metrics deferred.",
+    "If returning to identity, target advisory edge generation rules rather than merge/DNM overrides, because route/project duplicate backlog is currently zero."
+  ]
+}

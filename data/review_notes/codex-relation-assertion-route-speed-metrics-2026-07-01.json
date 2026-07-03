@@ -1,0 +1,117 @@
+{
+  "note_id": "codex-relation-assertion-route-speed-metrics-2026-07-01",
+  "date": "2026-07-01",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed profiles",
+    "Pioneer/OpenAI/DeepSeek/vLLM/chandra model calls"
+  ],
+  "bucket": "relation_assertion_status_unknown",
+  "implemented_change": {
+    "summary": "Classify observed true-route bus-speed metric relations as delivered.",
+    "code_paths": [
+      "packages/pipeline/src/records/assertion-qualifiers.ts",
+      "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+    ],
+    "rule": {
+      "relation_family": "metric_context",
+      "relation_kind": "has_metric",
+      "subject": "route with route_record_scope true_route",
+      "object": "metric_claim",
+      "metric_name_allowlist": [
+        "bus_speed",
+        "travel_speed",
+        "peak_period_bus_speed",
+        "average_bus_speed"
+      ],
+      "required_signals": [
+        "speed unit family",
+        "normalized mph unit",
+        "concrete metric value",
+        "period/time_period/date/year/comparison_period anchor",
+        "same-source relation and metric evidence",
+        "no future/planning/proposal/estimate tokens in metric or relation text"
+      ]
+    }
+  },
+  "baseline": {
+    "validate_issues": 0,
+    "relation_assertion_unknown_total": 4999,
+    "metric_context_unknown": 2341,
+    "metric_context_has_metric_unknown": 2327,
+    "delivered_metric_context_has_metric": 2766,
+    "safe_candidate_count": 60
+  },
+  "after": {
+    "validate_issues": 0,
+    "relation_assertion_unknown_total": 4939,
+    "metric_context_unknown": 2281,
+    "metric_context_has_metric_unknown": 2267,
+    "delivered_metric_context_has_metric": 2826
+  },
+  "delta": {
+    "relation_assertion_unknown_total": -60,
+    "metric_context_unknown": -60,
+    "metric_context_has_metric_unknown": -60,
+    "delivered_metric_context_has_metric": 60
+  },
+  "post_slice_speed_tail": {
+    "unknown": {
+      "bus_speed": 12,
+      "travel_speed": 1,
+      "average_bus_speed": 1,
+      "average_speed": 12
+    },
+    "reason": "Remaining speed rows are missing explicit anchors, use aggregate/split route subjects, or use metric names intentionally outside this exact allowlist."
+  },
+  "subagent_inputs": [
+    {
+      "thread_id": "019f1fc8-53e4-7600-a939-b3847a868a5e",
+      "name": "Pasteur",
+      "lane": "metric_context.has_metric residual scout",
+      "used_for_this_change": false,
+      "status": "closed before result; local deterministic rebaseline selected this route-speed slice"
+    }
+  ],
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+      "result": "passed: 81 tests, 437 expect calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "passed"
+    },
+    {
+      "command": "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+      "result": "passed: Materialized 93092/98102 submissions; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+      "result": "ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "passed: Issues 0"
+    }
+  ],
+  "intentionally_unresolved": [
+    "Speed rows on aggregate/list/split-candidate routes remain unknown.",
+    "Future/planned/proposed/estimate speed rows remain unknown.",
+    "Wrong-unit, missing-value, missing-anchor, and missing-evidence rows remain unknown.",
+    "average_speed without an explicit period/date/year anchor remains unknown.",
+    "Canonical JSONL was not hand-edited."
+  ],
+  "next_candidate_lanes": [
+    "Rebaseline metric_context.has_metric again; likely candidates include exact observed mean_distance_between_failures entity miles and observed ridership_change percentage rows.",
+    "Continue using exact-name/unit/period/source-provenance guardrails before broadening metric inference.",
+    "Return to project/route duplicate identity buckets if duplicate-record validation pressure reappears; current project/route duplicate validation pressure is zero."
+  ]
+}

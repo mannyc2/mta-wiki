@@ -1,0 +1,458 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-22-endpoint-shape-batch024-prep",
+  "created_at": "2026-06-22T21:20:00Z",
+  "author": "codex",
+  "scope": "relation endpoint-shape cleanup prep only; no durable retire/apply writes",
+  "batch": "batch024",
+  "run_id_for_replacements": "2026-06-22_codex_relation_cleanup_batch024",
+  "submitted_at_for_dry_run": "2026-06-22T21:20:00Z",
+  "bucket": {
+    "name": "treatment components linked directly to implementing entities",
+    "original_relation_kind": "implemented_by",
+    "original_endpoint_shape": "treatment_component -> entity",
+    "replacement_relation_kind": "implements",
+    "replacement_endpoint_shape": "entity -> treatment_component",
+    "why_coherent": "All six originals use implemented_by with a treatment_component subject, while the current endpoint-shape table allows implemented_by only as project -> entity. The cited source text supports agency/entity participation in implementing or piloting the treatment itself. Reversing the relation to implements entity -> treatment_component preserves the source-backed agency role without broadening the implemented_by rule."
+  },
+  "exclusions_and_guards": {
+    "retired_json_not_edited": true,
+    "submission_journals_not_edited": true,
+    "generated_outputs_not_edited": true,
+    "log_not_edited": true,
+    "manifest_merges_retired_not_edited": true,
+    "wiki_source_pages_not_edited": true,
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": []
+    },
+    "original_submission_guard": {
+      "retired_hits": [],
+      "prior_relation_batch_hits": []
+    }
+  },
+  "relationEndpointIssues_dry_run_acceptance": {
+    "tooling": "createSubmissionEntry plus relationEndpointIssues using accepted local observation ids by source",
+    "summary": {
+      "prepared_count": 6,
+      "accepted_count": 6,
+      "issue_count": 0,
+      "warning_count": 0,
+      "endpoint_shape_issue_count": 0
+    }
+  },
+  "prepared": [
+    {
+      "retire": {
+        "submission_id": "sub_1d0419543e567c34",
+        "original_record_id": "relation_lirr-blue-lighting-installed",
+        "original_local_observation_id": "relation_lirr_blue_lighting_installed",
+        "malformed_shape": "implemented_by treatment_component -> entity",
+        "original_relation_kind": "implemented_by",
+        "original_subject_kind": "treatment_component",
+        "original_subject_id": "treatment_tc-meeting-doc-108036-blue-lighting-lirr",
+        "original_subject_local_observation_id": "tc_meeting_doc_108036_blue_lighting_lirr",
+        "original_object_kind": "entity",
+        "original_object_id": "entity_annual-report-2021-lirr",
+        "original_object_local_observation_id": "entity_meeting_doc_108036_lirr",
+        "reason": "The original relation uses implemented_by with a treatment_component subject, outside the current allowed implemented_by shape. The evidence directly says LIRR installed the Blue Lighting treatment at 26 stations."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_2dd0ecf49df3c065",
+        "proposed_relation_kind": "implements",
+        "proposed_endpoint_shape": "entity -> treatment_component",
+        "input": {
+          "source_id": "meeting_doc_108036",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch024_lirr_implements_blue_lighting",
+          "label": "LIRR implements Blue Lighting at stations",
+          "raw_text": "LIRR installed at 26 stations",
+          "payload": {
+            "relation_kind": "implements",
+            "subject_local_observation_id": "entity_meeting_doc_108036_lirr",
+            "object_local_observation_id": "tc_meeting_doc_108036_blue_lighting_lirr",
+            "description": "Replacement for malformed implemented_by treatment_component -> entity relation; source states LIRR installed Blue Lighting at 26 stations."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_108036",
+              "evidence_id": "meeting_doc_108036#p010_c0004",
+              "source_path": "raw/sources/meeting_doc_108036/blocks.jsonl",
+              "page_number": 10,
+              "block_id": "p010_c0004",
+              "text_sha256": "sha256:8ad4de2e79859a8e5d80e788365bd237320f7f51ccae609f73692b351d219e59",
+              "text_source": "raw_text",
+              "source_quote": "LIRR installed at 26 stations"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_d566368d505b8736",
+        "original_record_id": "relation_nyct-metro-north-blue-lighting-pilots",
+        "original_local_observation_id": "relation_nyct_metro_north_blue_lighting_pilots",
+        "malformed_shape": "implemented_by treatment_component -> entity",
+        "original_relation_kind": "implemented_by",
+        "original_subject_kind": "treatment_component",
+        "original_subject_id": "treatment_tc-meeting-doc-108036-blue-lighting-lirr",
+        "original_subject_local_observation_id": "tc_meeting_doc_108036_blue_lighting_lirr",
+        "original_object_kind": "entity",
+        "original_object_id": "entity_mta-nyct",
+        "original_object_local_observation_id": "entity_meeting_doc_108036_nyct",
+        "reason": "The original relation uses implemented_by with a treatment_component subject, outside the current allowed implemented_by shape. The evidence says NYCT and Metro-North were piloting the same Blue Lighting treatment in that year."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_8c45a34c1d999218",
+        "proposed_relation_kind": "implements",
+        "proposed_endpoint_shape": "entity -> treatment_component",
+        "input": {
+          "source_id": "meeting_doc_108036",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch024_nyct_implements_blue_lighting_pilot",
+          "label": "NYCT pilots Blue Lighting",
+          "raw_text": "NYCT and Metro-North pilots this year",
+          "payload": {
+            "relation_kind": "implements",
+            "subject_local_observation_id": "entity_meeting_doc_108036_nyct",
+            "object_local_observation_id": "tc_meeting_doc_108036_blue_lighting_lirr",
+            "description": "Replacement for malformed implemented_by treatment_component -> entity relation; source states NYCT had a Blue Lighting pilot this year."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_108036",
+              "evidence_id": "meeting_doc_108036#p010_c0004",
+              "source_path": "raw/sources/meeting_doc_108036/blocks.jsonl",
+              "page_number": 10,
+              "block_id": "p010_c0004",
+              "text_sha256": "sha256:8ad4de2e79859a8e5d80e788365bd237320f7f51ccae609f73692b351d219e59",
+              "text_source": "raw_text",
+              "source_quote": "NYCT and Metro-North pilots this year"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high",
+        "caveat": "The shared treatment endpoint is named for the LIRR installation, but its payload description includes the NYCT and Metro-North pilots from the same evidence block."
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_5ddeb3c4a2bd87c7",
+        "original_record_id": "relation_blue-lighting-metro-north-pilot",
+        "original_local_observation_id": "relation_blue_lighting_metro_north_pilot",
+        "malformed_shape": "implemented_by treatment_component -> entity",
+        "original_relation_kind": "implemented_by",
+        "original_subject_kind": "treatment_component",
+        "original_subject_id": "treatment_tc-meeting-doc-108036-blue-lighting-lirr",
+        "original_subject_local_observation_id": "tc_meeting_doc_108036_blue_lighting_lirr",
+        "original_object_kind": "entity",
+        "original_object_id": "entity_mta-metro-north-2015-webster-map",
+        "original_object_local_observation_id": "entity_meeting_doc_108036_metro_north",
+        "reason": "The original relation uses implemented_by with a treatment_component subject, outside the current allowed implemented_by shape. The evidence says Metro-North was piloting the same Blue Lighting treatment in that year."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_0304fb7e884534ec",
+        "proposed_relation_kind": "implements",
+        "proposed_endpoint_shape": "entity -> treatment_component",
+        "input": {
+          "source_id": "meeting_doc_108036",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch024_metro_north_implements_blue_lighting_pilot",
+          "label": "Metro-North pilots Blue Lighting",
+          "raw_text": "NYCT and Metro-North pilots this year",
+          "payload": {
+            "relation_kind": "implements",
+            "subject_local_observation_id": "entity_meeting_doc_108036_metro_north",
+            "object_local_observation_id": "tc_meeting_doc_108036_blue_lighting_lirr",
+            "description": "Replacement for malformed implemented_by treatment_component -> entity relation; source states Metro-North had a Blue Lighting pilot this year."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_108036",
+              "evidence_id": "meeting_doc_108036#p010_c0004",
+              "source_path": "raw/sources/meeting_doc_108036/blocks.jsonl",
+              "page_number": 10,
+              "block_id": "p010_c0004",
+              "text_sha256": "sha256:8ad4de2e79859a8e5d80e788365bd237320f7f51ccae609f73692b351d219e59",
+              "text_source": "raw_text",
+              "source_quote": "NYCT and Metro-North pilots this year"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high",
+        "caveat": "The shared treatment endpoint is named for the LIRR installation, but its payload description includes the NYCT and Metro-North pilots from the same evidence block."
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_f848c7ea03825a65",
+        "original_record_id": "relation_nycdot-partner-pelham-bay-lane",
+        "original_local_observation_id": "relation_nycdot_partner_pelham_bay_lane",
+        "malformed_shape": "implemented_by treatment_component -> entity",
+        "original_relation_kind": "implemented_by",
+        "original_subject_kind": "treatment_component",
+        "original_subject_id": "treatment_pelham-bay-bus-contraflow-lane",
+        "original_subject_local_observation_id": "treatment_pelham_bay_bus_contraflow_lane",
+        "original_object_kind": "entity",
+        "original_object_id": "entity_nyc-dot",
+        "original_object_local_observation_id": "entity_nyc_dot_nov2022",
+        "reason": "The original relation uses implemented_by with a treatment_component subject, outside the current allowed implemented_by shape. The evidence names NYC DOT as the partner painting the street red for the new Pelham Bay bus contra-flow lane."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_e2ff00d0b1d764bc",
+        "proposed_relation_kind": "implements",
+        "proposed_endpoint_shape": "entity -> treatment_component",
+        "input": {
+          "source_id": "meeting_doc_100341",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch024_nycdot_implements_pelham_bay_contraflow_lane",
+          "label": "NYC DOT implements Pelham Bay bus contra-flow lane",
+          "raw_text": "partners at NYC DOT are painting the street red",
+          "payload": {
+            "relation_kind": "implements",
+            "subject_local_observation_id": "entity_nyc_dot_nov2022",
+            "object_local_observation_id": "treatment_pelham_bay_bus_contraflow_lane",
+            "description": "Replacement for malformed implemented_by treatment_component -> entity relation; source says NYC DOT is painting the street red for the new Pelham Bay bus contra-flow lane."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_100341",
+              "evidence_id": "meeting_doc_100341#p005_c0003",
+              "source_path": "raw/sources/meeting_doc_100341/blocks.jsonl",
+              "page_number": 5,
+              "block_id": "p005_c0003",
+              "text_sha256": "sha256:8bb7f4ae594242d1c779c10928f52326732d7d4b997574b3dbca4c3eca065ac4",
+              "text_source": "raw_text",
+              "source_quote": "partners at NYC DOT are painting the street red"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_082e2ea41961bb04",
+        "original_record_id": "relation_nyct-implements-able",
+        "original_local_observation_id": "relation_nyct_implements_able",
+        "malformed_shape": "implemented_by treatment_component -> entity",
+        "original_relation_kind": "implemented_by",
+        "original_subject_kind": "treatment_component",
+        "original_subject_id": "treatment_able-program_2",
+        "original_subject_local_observation_id": "treatment_component_able_program",
+        "original_object_kind": "entity",
+        "original_object_id": "entity_mta-nyct",
+        "original_object_local_observation_id": "entity_meeting_doc_127471_nyct",
+        "reason": "The original relation uses implemented_by with a treatment_component subject, outside the current allowed implemented_by shape. The evidence identifies ABLE as NYCT's camera program."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_932988d8f85ab9c8",
+        "proposed_relation_kind": "implements",
+        "proposed_endpoint_shape": "entity -> treatment_component",
+        "input": {
+          "source_id": "meeting_doc_127471",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch024_nyct_implements_able_program",
+          "label": "NYCT implements ABLE camera program",
+          "raw_text": "NYCT's ABLE camera program",
+          "payload": {
+            "relation_kind": "implements",
+            "subject_local_observation_id": "entity_meeting_doc_127471_nyct",
+            "object_local_observation_id": "treatment_component_able_program",
+            "description": "Replacement for malformed implemented_by treatment_component -> entity relation; source identifies ABLE as NYCT's camera program."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_127471",
+              "evidence_id": "meeting_doc_127471#p027_c0006",
+              "source_path": "raw/sources/meeting_doc_127471/blocks.jsonl",
+              "page_number": 27,
+              "block_id": "p027_c0006",
+              "text_sha256": "sha256:fb091d9cff6048c9c7ae08f9e3ee32842a1e0413f8ec9c72b8bebc4fcfa3ed4d",
+              "text_source": "raw_text",
+              "source_quote": "NYCT's ABLE camera program"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_4c78458e6d77e10a",
+        "original_record_id": "relation_help-points-lirr-program-support",
+        "original_local_observation_id": "relation_help_points_lirr_program_support",
+        "malformed_shape": "implemented_by treatment_component -> entity",
+        "original_relation_kind": "implemented_by",
+        "original_subject_kind": "treatment_component",
+        "original_subject_id": "treatment_help-point-installations",
+        "original_subject_local_observation_id": "treatment_help_point_installations",
+        "original_object_kind": "entity",
+        "original_object_id": "entity_annual-report-2021-lirr",
+        "original_object_local_observation_id": "entity_lirr_meeting_doc_189841",
+        "reason": "The original relation uses implemented_by with a treatment_component subject, outside the current allowed implemented_by shape. The evidence says LIRR Program Support hosted a field visit to explore current and future Help Point installation locations."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_0eb77cb0160494a4",
+        "proposed_relation_kind": "implements",
+        "proposed_endpoint_shape": "entity -> treatment_component",
+        "input": {
+          "source_id": "meeting_doc_189841",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch024_lirr_implements_help_point_installations",
+          "label": "LIRR Program Support implements Help Point installations",
+          "raw_text": "LIRR's Program Support team",
+          "payload": {
+            "relation_kind": "implements",
+            "subject_local_observation_id": "entity_lirr_meeting_doc_189841",
+            "object_local_observation_id": "treatment_help_point_installations",
+            "description": "Replacement for malformed implemented_by treatment_component -> entity relation; source says LIRR Program Support hosted a field visit to explore Help Point installation locations."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_189841",
+              "evidence_id": "meeting_doc_189841#p027_c0004",
+              "source_path": "raw/sources/meeting_doc_189841/blocks.jsonl",
+              "page_number": 27,
+              "block_id": "p027_c0004",
+              "text_sha256": "sha256:3f69ad74b66cf5346fc560176ce5d3ee155b268c19ca93a4bbb8c3274280d3c2",
+              "text_source": "raw_text",
+              "source_quote": "LIRR's Program Support team"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "medium_high",
+        "caveat": "The evidence supports LIRR Program Support involvement in installation planning/site review; it is less direct than the install/pilot language in the other five rows."
+      }
+    }
+  ],
+  "deferred_considered": [
+    {
+      "bucket": "operated_by entity -> entity",
+      "remaining_count_in_local_inventory": 4,
+      "classification": "deferred_data_cleanup",
+      "reason": "Prior batches used operates entity -> entity for clean operator-direction cases, but the remaining four are mixed: one NYCT/MTA Bus row is a co-operator sentence rather than one entity operating the other, and some Access-A-Ride/MTA rows cite only board-update or service-description context. They need a more targeted pass rather than being grouped into this high-confidence batch."
+    },
+    {
+      "bucket": "implemented_by treatment_component -> entity validator widening",
+      "classification": "deferred_rule_gap",
+      "reason": "A validator change admitting treatment_component subjects for implemented_by could also clear this bucket, but this prep treats the current project -> entity shape as intentional and proposes data-only inverse implements replacements instead. No code patch is proposed."
+    }
+  ],
+  "source_evidence_blocks_checked": [
+    {
+      "source_id": "meeting_doc_108036",
+      "block_id": "p010_c0004",
+      "page_number": 10,
+      "text_sha256": "sha256:8ad4de2e79859a8e5d80e788365bd237320f7f51ccae609f73692b351d219e59",
+      "evidence_summary": "States that LIRR installed Blue Lighting at 26 stations and that NYCT and Metro-North had pilots that year."
+    },
+    {
+      "source_id": "meeting_doc_100341",
+      "block_id": "p005_c0003",
+      "page_number": 5,
+      "text_sha256": "sha256:8bb7f4ae594242d1c779c10928f52326732d7d4b997574b3dbca4c3eca065ac4",
+      "evidence_summary": "States that NYC DOT is painting the street red for a new Pelham Bay bus contra-flow lane."
+    },
+    {
+      "source_id": "meeting_doc_127471",
+      "block_id": "p027_c0006",
+      "page_number": 27,
+      "text_sha256": "sha256:fb091d9cff6048c9c7ae08f9e3ee32842a1e0413f8ec9c72b8bebc4fcfa3ed4d",
+      "evidence_summary": "Identifies ABLE as NYCT's camera program and describes its camera-enforcement deployment."
+    },
+    {
+      "source_id": "meeting_doc_189841",
+      "block_id": "p027_c0004",
+      "page_number": 27,
+      "text_sha256": "sha256:3f69ad74b66cf5346fc560176ce5d3ee155b268c19ca93a4bbb8c3274280d3c2",
+      "evidence_summary": "States that LIRR Program Support hosted a field visit to explore current and proposed Help Point installation locations on the Ronkonkoma Branch."
+    }
+  ],
+  "conductor_application_plan": {
+    "only_after_conflict_free_checkpoint": true,
+    "retire_submission_ids": [
+      "sub_1d0419543e567c34",
+      "sub_d566368d505b8736",
+      "sub_5ddeb3c4a2bd87c7",
+      "sub_f848c7ea03825a65",
+      "sub_082e2ea41961bb04",
+      "sub_4c78458e6d77e10a"
+    ],
+    "append_replacement_entries_to": "data/submissions/2026-06-22_codex_relation_cleanup_batch024.jsonl",
+    "replacement_submission_ids": [
+      "sub_2dd0ecf49df3c065",
+      "sub_8c45a34c1d999218",
+      "sub_0304fb7e884534ec",
+      "sub_e2ff00d0b1d764bc",
+      "sub_932988d8f85ab9c8",
+      "sub_0eb77cb0160494a4"
+    ]
+  },
+  "blockers": [],
+  "commands_run": [
+    "rg --files data/review_notes | sort | tail -40",
+    "sed -n '1,430p' data/review_notes/codex-relation-cleanup-batch023-prep.json",
+    "sed -n '180,430p' packages/pipeline/src/records/relations.ts",
+    "bun --eval '<active endpoint-shape inventory over data/canonical/*.jsonl excluding data/submission-overrides/retired.json>'",
+    "sed -n '1,220p' data/review_notes/codex-relation-cleanup-batch019-prep.json",
+    "sed -n '1,190p' data/review_notes/codex-relation-cleanup-batch017-prep.json",
+    "rg raw/sources/<source_id>/blocks.jsonl for selected evidence block ids",
+    "bun --eval '<inspect selected endpoint records and original submissions>'",
+    "bun --eval '<createSubmissionEntry plus relationEndpointIssues dry run for six implements replacements>'",
+    "rg -n '<replacement ids/local ids>' data packages docs -S",
+    "rg -n '<original ids>' data/submission-overrides/retired.json data/review_notes/codex-relation-cleanup-batch0*.json data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl -S",
+    "test -e data/review_notes/codex-relation-cleanup-batch024-prep.json"
+  ],
+  "commands_intentionally_not_run": [
+    "materialize",
+    "validate CLI",
+    "export-jsonl",
+    "DB repair or publish",
+    "canonicalize",
+    "campaign dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "provider/profile-backed post-ingest commands"
+  ]
+}

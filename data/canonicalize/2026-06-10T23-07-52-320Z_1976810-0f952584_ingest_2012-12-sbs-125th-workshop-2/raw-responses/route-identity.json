@@ -1,0 +1,77 @@
+{
+  "run_id": "2026-06-10T23-07-52-320Z_1976810-0f952584_ingest_2012-12-sbs-125th-workshop-2",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T03:11:07.995Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "m60-new",
+        "local_observation_id": "route_m60_2012_12_125th_workshop_2",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'route_125th-laguardia-sbs' matches an existing registry record that already covers this M60 observation from the same source (2012_12_sbs_125th_workshop_2). The observation already resolves to this canonical record; no different target needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_12_sbs_125th_workshop_2",
+            "block_id": "p003_c0004",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2012_12_sbs_125th_workshop_2",
+            "block_id": "p010_c0004",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2012_12_sbs_125th_workshop_2",
+            "block_id": "p011_c0005",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "bx15-new",
+        "local_observation_id": "route_bx15_2012_12_125th_workshop_2",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'route_bx15-ace' matches an existing registry record for Bx15 local service that already includes the source 2012_12_sbs_125th_workshop_2. The observation already resolves to this canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_12_sbs_125th_workshop_2",
+            "block_id": "p003_c0004",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "m100-new",
+        "local_observation_id": "route_m100_2012_12_125th_workshop_2",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'route_m100-ace' matches an existing registry record for M100 local service that already includes the source 2012_12_sbs_125th_workshop_2. The observation already resolves to this canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_12_sbs_125th_workshop_2",
+            "block_id": "p003_c0004",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "m101-new",
+        "local_observation_id": "route_m101_2012_12_125th_workshop_2",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'route_m101' matches an existing registry record for M101 local service that already includes the source 2012_12_sbs_125th_workshop_2. The observation already resolves to this canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_12_sbs_125th_workshop_2",
+            "block_id": "p003_c0004",
+            "source_quote": ""
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-10-17-201Z_2111393-ad2ad9bc_canonicalize_2026-06-10t23-07-52-320z-1976810-0f952584-ingest-2012-12-sbs-125th-workshop-2-route-identity"
+}

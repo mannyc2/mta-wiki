@@ -1,0 +1,178 @@
+{
+  "note_id": "codex-event-project-identity-burst-2026-06-30-h",
+  "created_at": "2026-06-30T00:00:00Z",
+  "author": "codex",
+  "mode": "codex_only_deterministic_post_ingest_cleanup",
+  "constraints_observed": {
+    "external_provider_llms_used": false,
+    "forbidden_commands_used": false,
+    "canonical_jsonl_hand_edited": false,
+    "subagents_used_for_bounded_read_only_audits": true
+  },
+  "subagents": [
+    {
+      "id": "019f1862-62de-7ef2-9d6a-7652c5198e00",
+      "lane": "event_family other residual audit",
+      "result": "Identified exact operating-start, legal-notice, storm/natural-disaster, warranty, FHWA-guidance, and rebranding event-family candidates."
+    },
+    {
+      "id": "019f1862-7922-73c1-af54-f3807ae1d4aa",
+      "lane": "project status/family residual audit",
+      "result": "Identified exact Transforming Jamaica family and source-context project-status candidates; several source-nearby candidates were deferred because decisive text was not present in canonical raw_text/source_quote context."
+    },
+    {
+      "id": "019f1862-8fd4-70a2-acf9-996950716e8f",
+      "lane": "duplicate identity-key collision audit",
+      "result": "Classified Bloomberg as a broad-key prune, Corporate Compliance as a true duplicate merge, and the remaining MTA parent collision as unresolved/risky."
+    }
+  ],
+  "baseline_before": {
+    "validate_issues": 0,
+    "event_family_other": 169,
+    "project_document_time_status_missing": 59,
+    "project_family_missing": 3,
+    "project_family_other": 8,
+    "project_family_unresolved_total": 11,
+    "entity_duplicate_identity_keys": {
+      "records": 1897,
+      "groups": 4,
+      "memberships": 9,
+      "pairs": 6
+    },
+    "project_duplicate_identity_key_groups": 0,
+    "route_duplicate_identity_key_groups": 0
+  },
+  "implemented": [
+    {
+      "kind": "event_normalizer",
+      "change": "Added exact event-family gates for operating-start records, legal notice submission/transmittal milestones, Superstorm Sandy natural disaster incidents, Winter Storm Fern response/kept-operating incidents, warranty expiration, FHWA CBD tolling guidance, and Metro-North Care rebranding.",
+      "guardrails": [
+        "Did not map bare flash-flooding storm records to incidents.",
+        "Did not broadly map weather events, public/private venue events, workshops, tours, training, or generic special events."
+      ]
+    },
+    {
+      "kind": "project_normalizer",
+      "change": "Added exact context-backed project-status gates for Flushing bundle, Direct Fixation Track Replacement, and Fulton-Liberty Line CBTC; added exact Transforming Jamaica planning/report family classification."
+    },
+    {
+      "kind": "identity",
+      "change": "Added reviewed broad-key prune for Bloomberg vendor/procurement record and merged the one-source MTA Corporate Compliance record into the richer MTA Corporate Compliance canonical record through durable identity overrides.",
+      "override_changes": {
+        "merge_alias_added": {
+          "kind": "entity",
+          "alias": "entity_meeting-doc-135596-mta-corporate-compliance",
+          "target": "entity_mta-corporate-compliance-125256"
+        },
+        "do_not_merge_removed": {
+          "kind": "entity",
+          "record_ids": [
+            "entity_meeting-doc-135596-mta-corporate-compliance",
+            "entity_mta-corporate-compliance-125256"
+          ]
+        },
+        "broad_key_prune_added": {
+          "record_id": "entity_meeting-doc-155136-bloomberg",
+          "removed_key": "entity_bloomberg"
+        }
+      }
+    }
+  ],
+  "after_materialize": {
+    "validate_issues": 0,
+    "canonical_records": 84048,
+    "wiki_pages": 7337,
+    "event_family_other": 159,
+    "project_document_time_status_missing": 56,
+    "project_family_missing": 2,
+    "project_family_other": 8,
+    "project_family_unresolved_total": 10,
+    "entity_duplicate_identity_keys": {
+      "records": 1896,
+      "groups": 2,
+      "memberships": 5,
+      "pairs": 4,
+      "remaining_groups": [
+        {
+          "key": "entity_mta",
+          "record_ids": [
+            "entity_meeting-doc-64066-mta",
+            "entity_mta-entity-update-2025",
+            "entity_mta-metropolitan-transportation-authority"
+          ]
+        },
+        {
+          "key": "entity_metropolitan-transportation-authority-mta",
+          "record_ids": [
+            "entity_mta-entity-update-2025",
+            "entity_mta-metropolitan-transportation-authority"
+          ]
+        }
+      ]
+    },
+    "project_duplicate_identity_key_groups": 0,
+    "route_duplicate_identity_key_groups": 0
+  },
+  "deferred": [
+    {
+      "bucket": "event_family other",
+      "items": [
+        "event_ida-sep1-2021",
+        "event_meeting-doc-199246-winter-storm-fern"
+      ],
+      "reason": "Existing guardrail tests treat flash-flooding-only storm text and generic operated-through storm text as too broad. The canonical records do not currently preserve the stronger source quote needed for a safe exact context gate."
+    },
+    {
+      "bucket": "project document_time_status missing",
+      "items": [
+        "project_mnrr-white-plains-esi",
+        "project_meeting-doc-127476-zero-emission",
+        "project_moodna-viaduct-timber-replacement-inspection",
+        "project_new-canaan-branch-cyclical-trackwork"
+      ],
+      "reason": "Live canonical payloads lack the decisive completed/continued-progress/continuation source wording surfaced in the audit; no rule was added from nearby-source knowledge alone."
+    },
+    {
+      "bucket": "entity duplicate identity keys",
+      "items": [
+        "entity_meeting-doc-64066-mta",
+        "entity_mta-entity-update-2025",
+        "entity_mta-metropolitan-transportation-authority"
+      ],
+      "reason": "Remaining duplicate-shaped groups are parent-MTA canonicalization decisions with prior alias-cycle risk; leave for a deliberate MTA parent consolidation lane."
+    }
+  ],
+  "verification": {
+    "commands_passed": [
+      "jq empty data/identity-overrides/merges.json data/identity-overrides/do-not-merge.json",
+      "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "bun test packages/db/test/identity.test.ts packages/pipeline/test/identity/identity-overrides-current.test.ts",
+      "bun test packages/pipeline/test/materialize/materialize.test.ts",
+      "bun run typecheck",
+      "bun packages/cli/src/cli.ts materialize",
+      "bun packages/cli/src/cli.ts validate"
+    ],
+    "focused_test_results": {
+      "ontology_normalizers": "258 pass, 3927 expectations",
+      "identity": "28 pass, 125 expectations",
+      "materialize": "52 pass, 836 expectations"
+    },
+    "materialize_result": {
+      "submissions_materialized": "93092/98102",
+      "retired_submissions_skipped": 243,
+      "pages": 7341,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "validate_result": {
+      "submissions": 98102,
+      "canonical_records": 84048,
+      "wiki_pages": 7337,
+      "issues": 0
+    }
+  },
+  "next_lanes": [
+    "Rebaseline event_family other=159 and implement only exact residual gates with preserved payload/raw_text/source_quote proof.",
+    "Audit whether materializer normalization context should safely include source block text when evidence_refs lack source_quote; this could unlock deferred project statuses without hard-coding source-nearby knowledge.",
+    "Run a deliberate MTA parent entity consolidation audit before touching the two remaining raw entity duplicate-key groups."
+  ]
+}

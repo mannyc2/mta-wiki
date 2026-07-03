@@ -1,0 +1,137 @@
+{
+  "run_id": "2026-06-10T17-48-04-772Z_1496766-26d4ac0d_ingest_2010-05-17-brt-nostrand-cb15",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-10T19:41:47.045Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d_nostrand_rogers_sbs_self_match",
+        "local_observation_id": "project_nostrand_rogers_sbs",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'project_nostrand-rogers-sbs' already exists as a canonical registry record with matching payload (same project_name 'Nostrand Ave / Rogers Ave Select Bus Service', same project_type 'Select Bus Service', same borough 'Brooklyn', same description about converting B44 Limited to SBS on 9.3-mile corridor from Williamsburg Bridge to Sheepshead Bay). Per canonicalization rules, when the closest match IS the observation's own base_record_id, the decision is 'new' — the observation already resolves to that id.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_17_brt_nostrand_cb15",
+            "block_id": "p001_c0002",
+            "source_quote": "Nostrand Ave / Rogers Ave Select Bus Service Community Board 15"
+          },
+          {
+            "source_id": "2010_05_17_brt_nostrand_cb15",
+            "block_id": "p011_c0002",
+            "source_quote": "9.3 miles from Williamsburg Bridge to Sheepshead Bay"
+          },
+          {
+            "source_id": "2010_05_17_brt_nostrand_cb15",
+            "block_id": "p012_c0002",
+            "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "project_nostrand-rogers-sbs-cb3",
+            "description": "Both records describe the identical Nostrand Ave/Rogers Ave SBS project: 9.3 miles from Williamsburg Bridge to Sheepshead Bay, converting B44 Limited to SBS. CB15 and CB3 presentations from May 2010 share identical project features.",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_17_brt_nostrand_cb15",
+                "block_id": "p011_c0002",
+                "source_quote": "9.3 miles from Williamsburg Bridge to Sheepshead Bay"
+              },
+              {
+                "source_id": "2010_05_17_brt_nostrand_cb15",
+                "block_id": "p012_c0002",
+                "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+              },
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p011_c0002",
+                "source_quote": "9.3 miles from Williamsburg Bridge to Sheepshead Bay"
+              },
+              {
+                "source_id": "2010_05_11_brt_nostrand_cb3",
+                "block_id": "p012_c0002",
+                "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+              }
+            ]
+          },
+          {
+            "relation_kind": "same_as",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "project_nostrand-rogers-sbs-cac-2010",
+            "description": "Both records describe the identical Nostrand Ave/Rogers Ave SBS project. The CAC presentation from April 2010 and CB15 presentation from May 2010 share identical corridor description and project features.",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_17_brt_nostrand_cb15",
+                "block_id": "p011_c0002",
+                "source_quote": "9.3 miles from Williamsburg Bridge to Sheepshead Bay"
+              },
+              {
+                "source_id": "2010_05_17_brt_nostrand_cb15",
+                "block_id": "p012_c0002",
+                "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+              },
+              {
+                "source_id": "20100426_nostrand_cac_slides",
+                "block_id": "p008_c0002",
+                "source_quote": "9.3 miles from Williamsburg Bridge to Sheepshead Bay"
+              },
+              {
+                "source_id": "20100426_nostrand_cac_slides",
+                "block_id": "p009_c0002",
+                "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+              }
+            ]
+          },
+          {
+            "relation_kind": "same_as",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "project_nostrand-rogers-sbs-cb9-2010",
+            "description": "Both records describe the identical Nostrand Ave/Rogers Ave SBS project. The CB9 presentation from June 2010 and CB15 presentation from May 2010 share identical corridor description and project features.",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_17_brt_nostrand_cb15",
+                "block_id": "p011_c0002",
+                "source_quote": "9.3 miles from Williamsburg Bridge to Sheepshead Bay"
+              },
+              {
+                "source_id": "2010_05_17_brt_nostrand_cb15",
+                "block_id": "p012_c0002",
+                "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+              },
+              {
+                "source_id": "2010_06_22_brt_nostrand_cb9",
+                "block_id": "p007_c0002",
+                "source_quote": "9.3 miles from Williamsburg Bridge to Sheepshead Bay"
+              },
+              {
+                "source_id": "2010_06_22_brt_nostrand_cb9",
+                "block_id": "p008_c0002",
+                "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+              }
+            ]
+          },
+          {
+            "relation_kind": "predecessor_of",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "project_b44-sbs-implementation",
+            "description": "The Nostrand/Rogers SBS proposal (2010, Phase I BRT corridor) is the planning-phase predecessor of the B44 SBS implementation (completed November 2013), which is described as the 'Fifth and final Phase I SBS route'.",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_17_brt_nostrand_cb15",
+                "block_id": "p007_c0002",
+                "source_quote": "This map illustrates the Phase I BRT Corridors in New York City and its surrounding regions. The map is color-coded to show different types of projects: blue lines represent 'Implemented SBS Projects', and red lines represent 'Phase I SBS Projects'."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-39-53-264Z_1650285-cf7f043e_canonicalize_2026-06-10t17-48-04-772z-1496766-26d4ac0d-ingest-2010-05-17-brt-nostrand-cb15-project-identity"
+}

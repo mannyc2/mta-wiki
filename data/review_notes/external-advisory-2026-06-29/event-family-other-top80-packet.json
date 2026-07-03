@@ -1,0 +1,3213 @@
+{
+  "generated_at": "2026-06-29T12:36:20.611Z",
+  "owner_authorization": "User explicitly authorized external LLM advisory use on 2026-06-29; output is advisory only and cannot mutate repo state directly.",
+  "bucket": "event_family_other",
+  "total_other": 1264,
+  "distinct_event_kind": 646,
+  "instruction": "Classify exact event_kind groups into candidate bounded event_family values only when high-confidence. Prefer conservative no_rule for broad/mixed groups. Do not invent facts. Return JSON only.",
+  "allowed_event_families": [
+    "approval",
+    "construction",
+    "data_release",
+    "enforcement",
+    "implementation",
+    "launch",
+    "legislation",
+    "milestone",
+    "other",
+    "pause",
+    "planning",
+    "public_engagement",
+    "publication"
+  ],
+  "top_event_kind_groups": [
+    {
+      "event_kind": "committee_agenda_item",
+      "count": 93,
+      "samples": [
+        {
+          "record_id": "event_2023-final-proposed-budget-dec2022",
+          "source_id": "meeting_doc_102696",
+          "event_kind": "committee_agenda_item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "2023 Final Proposed Budget",
+          "description": "The Committee will recommend action to the Board on the Final Proposed Budget for 2023.",
+          "date": "December 2022"
+        },
+        {
+          "record_id": "event_2023-year-in-review-133306",
+          "source_id": "meeting_doc_133306",
+          "event_kind": "committee_agenda_item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "A review of the prior year's performance of railroad service will be provided to the Committee.",
+          "date": "February 2024"
+        },
+        {
+          "record_id": "event_2025-final-proposed-budget-133306",
+          "source_id": "meeting_doc_133306",
+          "event_kind": "committee_agenda_item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "The Committee will recommend action to the Board on the Final Proposed Budget for 2025.",
+          "date": "December 2024"
+        },
+        {
+          "record_id": "event_adopted-budget-financial-plan-feb2023",
+          "source_id": "meeting_doc_102696",
+          "event_kind": "committee_agenda_item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Adopted Budget/Financial Plan 2022",
+          "date": "February 2023"
+        }
+      ]
+    },
+    {
+      "event_kind": "information_item",
+      "count": 29,
+      "samples": [
+        {
+          "record_id": "event_feb2025-2024-ops-summary",
+          "source_id": "meeting_doc_170861",
+          "event_kind": "information_item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "2024 Operations Summary (Final)",
+          "description": "A review of the prior year's performance of railroad service through the end of calendar year 2024 will be provided to the Committee.",
+          "date": "February 2025"
+        },
+        {
+          "record_id": "event_feb2025-adopted-budget_2",
+          "source_id": "meeting_doc_170861",
+          "event_kind": "information_item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Adopted Budget/Financial Plan 2025",
+          "description": "The Agency will present its revised 2025 Financial Plan reflecting the 2025 Adopted Budget and an updated Financial Plan for 2025.",
+          "date": "February 2025"
+        },
+        {
+          "record_id": "event_feb2025-financial-plan",
+          "source_id": "meeting_doc_163181",
+          "event_kind": "information_item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Adopted/Financial Plan 2025",
+          "description": "The Agency will present its revised 2025 Financial Plan reflecting the 2024 Adopted Budget.",
+          "date": "February 2025"
+        },
+        {
+          "record_id": "event_feb2025-ops-year-review",
+          "source_id": "meeting_doc_163181",
+          "event_kind": "information_item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "2024 Operations Year in Review",
+          "description": "A review of the prior year's performance of railroad service will be provided to the Committee.",
+          "date": "February 2025"
+        }
+      ]
+    },
+    {
+      "event_kind": "public event",
+      "count": 26,
+      "samples": [
+        {
+          "record_id": "event_170996-adam-dressner-art-exhibit",
+          "source_id": "meeting_doc_170996",
+          "event_kind": "public event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Local artists showcased multiple oil paintings of New Yorkers",
+          "date": "September 24 - 26, 2024"
+        },
+        {
+          "record_id": "event_170996-bombay-sapphire-sampling",
+          "source_id": "meeting_doc_170996",
+          "event_kind": "public event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Sampling event of Bombay Sapphire and lemon Pellegrino",
+          "date": "June 20 - 21, 2024"
+        },
+        {
+          "record_id": "event_170996-dove-us-open",
+          "source_id": "meeting_doc_170996",
+          "event_kind": "public event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Dove Soap event promoting the US Open with a replica tennis court",
+          "date": "August 28, 2024"
+        },
+        {
+          "record_id": "event_170996-espolon-tequila",
+          "source_id": "meeting_doc_170996",
+          "event_kind": "public event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Espolon Tequila promotion with tequila sampling",
+          "date": "October 28 - 30, 2024"
+        }
+      ]
+    },
+    {
+      "event_kind": "license_agreement",
+      "count": 18,
+      "samples": [
+        {
+          "record_id": "event_hicksville-dri-license-agreement",
+          "source_id": "meeting_doc_157711",
+          "event_kind": "license_agreement",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "License Agreement with Town of Oyster Bay for Hicksville DRI",
+          "description": "License agreement with the Town of Oyster Bay for use of two parking lots (69,533 sq ft and 30,899 sq ft) at Hicksville Station for construction of a pedestrian passageway, public open space, and festival plaza in connection with the Hicksville Downtown Revitalization Initiative. Term: 1 year with automatic annual renewals. Compensation: None.",
+          "date": "NOVEMBER 20, 2024"
+        },
+        {
+          "record_id": "event_meeting-doc-124256-joey-bats-cafe-license",
+          "source_id": "meeting_doc_124256",
+          "event_kind": "license_agreement",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Joey Bats Café License Agreement",
+          "description": "New License agreement for Joey Bats Café at Grand Central Terminal Dining Concourse for Portuguese Pastries, 3-year term",
+          "date": "October 25, 2023"
+        },
+        {
+          "record_id": "event_meeting-doc-124256-playa-bowls-license",
+          "source_id": "meeting_doc_124256",
+          "event_kind": "license_agreement",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Playa Bowls License Agreement",
+          "description": "New License agreement for Playa Bowls at Grand Central Terminal Dining Concourse for Acai Bowls, 3-year term",
+          "date": "October 25, 2023"
+        },
+        {
+          "record_id": "event_meeting-doc-124256-salt-point-meadery-license",
+          "source_id": "meeting_doc_124256",
+          "event_kind": "license_agreement",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Salt Point Meadery License Agreement",
+          "description": "New License agreement for Salt Point Meadery at Grand Central Terminal Main Concourse for Mead & Mead Related Food Products, 3-year term",
+          "date": "October 25, 2023"
+        }
+      ]
+    },
+    {
+      "event_kind": "committee agenda item",
+      "count": 16,
+      "samples": [
+        {
+          "record_id": "event_dec-2023-2024-final-proposed-budget",
+          "source_id": "meeting_doc_111771",
+          "event_kind": "committee agenda item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "The Committee will recommend action to the Board on the Final Proposed Budget for 2024.",
+          "date": "December 2023"
+        },
+        {
+          "record_id": "event_dec2024-2025-final-proposed-budget",
+          "source_id": "meeting_doc_138211",
+          "event_kind": "committee agenda item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Committee recommends action to the Board on the Final Proposed Budget for 2025.",
+          "date": "December 2024"
+        },
+        {
+          "record_id": "event_feb-2024-adopted-budget-finplan",
+          "source_id": "meeting_doc_111771",
+          "event_kind": "committee agenda item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "The Agency will present its revised 2024 Financial Plan reflecting the 2024 Adopted Budget and an updated Financial Plan for 2024 reflecting the out-year impact.",
+          "date": "February 2024"
+        },
+        {
+          "record_id": "event_feb-2024-annual-operating-results",
+          "source_id": "meeting_doc_111771",
+          "event_kind": "committee agenda item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "A review of the prior year's performance of railroad service will be provided to the Committee.",
+          "date": "February 2024"
+        }
+      ]
+    },
+    {
+      "event_kind": "committee information item",
+      "count": 15,
+      "samples": [
+        {
+          "record_id": "event_2024-budget-review-may2025",
+          "source_id": "meeting_doc_166951",
+          "event_kind": "committee information item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Final Review of 2024 Operating Budget Results",
+          "description": "A review of the prior year's budget results and their implications for current and future budget performance will be presented to the Committee.",
+          "date": "May 2025"
+        },
+        {
+          "record_id": "event_adopted-budget-feb2026",
+          "source_id": "meeting_doc_166951",
+          "event_kind": "committee information item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Adopted Budget/Financial Plan 2026",
+          "description": "The Agency will present its revised 2026 Financial Plan reflecting the 2026 Adopted Budget.",
+          "date": "February 2026"
+        },
+        {
+          "record_id": "event_lirr-dec2025-2026-final-budget",
+          "source_id": "meeting_doc_166936",
+          "event_kind": "committee information item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "2026 Final Proposed Budget",
+          "description": "The Committee will recommend action to the Board on the Final Proposed Budget for 2026.",
+          "date": "December 2025"
+        },
+        {
+          "record_id": "event_lirr-feb2025-financial-plan",
+          "source_id": "meeting_doc_166936",
+          "event_kind": "committee information item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Adopted/Financial Plan 2025",
+          "description": "The Agency will present its revised 2025 Financial Plan reflecting the 2024 Adopted Budget and an updated Financial Plan for 2024.",
+          "date": "February 2025"
+        }
+      ]
+    },
+    {
+      "event_kind": "ceremony",
+      "count": 12,
+      "samples": [
+        {
+          "record_id": "event_170996-mtapd-medal-award-ceremony-jun",
+          "source_id": "meeting_doc_170996",
+          "event_kind": "ceremony",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MTAPD Medal and Award Ceremony",
+          "date": "June 4, 2024"
+        },
+        {
+          "record_id": "event_170996-mtapd-promotional-ceremony-feb",
+          "source_id": "meeting_doc_170996",
+          "event_kind": "ceremony",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MTAPD Promotional Ceremony",
+          "date": "February 22, 2024"
+        },
+        {
+          "record_id": "event_170996-mtapd-promotional-ceremony-may",
+          "source_id": "meeting_doc_170996",
+          "event_kind": "ceremony",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MTAPD Promotional Ceremony",
+          "date": "May 8, 2024"
+        },
+        {
+          "record_id": "event_170996-mtapd-promotional-ceremony-oct",
+          "source_id": "meeting_doc_170996",
+          "event_kind": "ceremony",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MTAPD promotional ceremony",
+          "date": "October 16, 2024"
+        }
+      ]
+    },
+    {
+      "event_kind": "document_date",
+      "count": 12,
+      "samples": [
+        {
+          "record_id": "event_document-date-138251",
+          "source_id": "meeting_doc_138251",
+          "event_kind": "document_date",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Date of the LIRR Procurement Agenda document",
+          "date": "April 24, 2024"
+        },
+        {
+          "record_id": "event_document-date-171001",
+          "source_id": "meeting_doc_171001",
+          "event_kind": "document_date",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Date of the procurement report",
+          "date": "April 25, 2025"
+        },
+        {
+          "record_id": "event_document-date-20240320-135311",
+          "source_id": "meeting_doc_135311",
+          "event_kind": "document_date",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Date of the procurement agenda document",
+          "date": "March 20, 2024"
+        },
+        {
+          "record_id": "event_document-date-meeting-doc-192246",
+          "source_id": "meeting_doc_192246",
+          "event_kind": "document_date",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Date of MTA Headquarters procurement document",
+          "date": "November 14, 2025"
+        }
+      ]
+    },
+    {
+      "event_kind": "recurring_agenda_item",
+      "count": 12,
+      "samples": [
+        {
+          "record_id": "event_bt-recurring-diversity-report",
+          "source_id": "meeting_doc_189766",
+          "event_kind": "recurring_agenda_item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Diversity and Equal Opportunity Report",
+          "description": "Summary of B&T workforce numbers, new hires, separations, ERG events and accomplishments, and complaints. Provided quarterly."
+        },
+        {
+          "record_id": "event_bt-recurring-financial-report",
+          "source_id": "meeting_doc_189766",
+          "event_kind": "recurring_agenda_item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Financial Report",
+          "description": "Summary presentation of financial indicators for the month, including Balance Sheet, Accrual Statement of Operations, variance analysis, traffic volume, ridership, toll collection rates, and headcount charts."
+        },
+        {
+          "record_id": "event_bt-recurring-operations-report",
+          "source_id": "meeting_doc_189766",
+          "event_kind": "recurring_agenda_item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Operations Report",
+          "description": "Summary of major B&T service indicators, including graphs and tables depicting total traffic for all facilities, average daily traffic by method of payment and vehicle type, traffic by facility, and data on factors that can impact B&T traffic such as weather and gasoline prices."
+        },
+        {
+          "record_id": "event_bt-recurring-procurements",
+          "source_id": "meeting_doc_189766",
+          "event_kind": "recurring_agenda_item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Procurements",
+          "description": "List of procurement action items requiring Board approval. Non-competitive items listed first, followed by competitive items, then ratifications."
+        }
+      ]
+    },
+    {
+      "event_kind": "incident",
+      "count": 11,
+      "samples": [
+        {
+          "record_id": "event_i95-norwalk-crash",
+          "source_id": "meeting_doc_140286",
+          "event_kind": "incident",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Fiery crash on I-95 in Norwalk, CT involving tractor-trailer, fuel truck, and another vehicle under Fairfield Avenue overpass. Overpass needed demolition. Metro-North added service on New Haven Line over weekend of May 4-5.",
+          "date": "May 2, 2024"
+        },
+        {
+          "record_id": "event_meeting-doc-108036-subway-surfing-incident",
+          "source_id": "meeting_doc_108036",
+          "event_kind": "incident",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "A 15-year-old boy died while subway surfing on a northbound J train crossing the Williamsburg Bridge at around 6:45 p.m., slamming his head on a part of the structure, falling beneath the train",
+          "date": "February 20, 2023"
+        },
+        {
+          "record_id": "event_meeting-doc-115251-thermal-event-ct",
+          "source_id": "meeting_doc_115251",
+          "event_kind": "incident",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Following a thermal event on an all-electric bus in Connecticut, NYC Transit met with New Flyer to discuss need for early warning detection system on high-voltage battery storage system",
+          "date": "late July 2022"
+        },
+        {
+          "record_id": "event_meeting-doc-131541-1-line-collision-jan4",
+          "source_id": "meeting_doc_131541",
+          "event_kind": "incident",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Slow-speed collision on the 1 line north of the 96 St Station. No serious injuries.",
+          "date": "January 4"
+        }
+      ]
+    },
+    {
+      "event_kind": "information item",
+      "count": 11,
+      "samples": [
+        {
+          "record_id": "event_2024-operations-summary-feb2025",
+          "source_id": "meeting_doc_160106",
+          "event_kind": "information item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "2024 Operations Summary",
+          "description": "A review of the prior year's performance of railroad service through the end of calendar year 2024.",
+          "date": "February 2025"
+        },
+        {
+          "record_id": "event_adopted-budget-financial-plan-feb2025",
+          "source_id": "meeting_doc_160106",
+          "event_kind": "information item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Adopted Budget/Financial Plan 2025",
+          "description": "The Agency will present its revised 2025 Financial Plan reflecting the 2025 Adopted Budget and an updated Financial Plan.",
+          "date": "February 2025"
+        },
+        {
+          "record_id": "event_final-review-2024-operating-budget-may2025",
+          "source_id": "meeting_doc_160106",
+          "event_kind": "information item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Final Review of 2024 Operating Budget Results",
+          "description": "A review of the prior year's budget results and their implications for current and future budget performance.",
+          "date": "May 2025"
+        },
+        {
+          "record_id": "event_meeting-doc-176326-feb2025-finplan",
+          "source_id": "meeting_doc_176326",
+          "event_kind": "information item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Adopted/Financial Plan 2025",
+          "description": "The Agency will present its revised 2025 Financial Plan. These plans will reflect the 2024 Adopted Budget and an updated Financial Plan for 2024 reflecting the out-year impact of any changes incorporated into the 2024 Adopted Budget.",
+          "date": "February 2025"
+        }
+      ]
+    },
+    {
+      "event_kind": "committee briefing",
+      "count": 10,
+      "samples": [
+        {
+          "record_id": "event_meeting-doc-127516-esa-support-update-nov2023",
+          "source_id": "meeting_doc_127516",
+          "event_kind": "committee briefing",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Committee briefing on status of East Side Access Support Projects.",
+          "date": "November 2023"
+        },
+        {
+          "record_id": "event_meeting-doc-98251-may2023-ptc-update",
+          "source_id": "meeting_doc_98251",
+          "event_kind": "committee briefing",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "The committee will be briefed on the status of project implementation and close-out following full Positive Train Control functionality for both railroads.",
+          "date": "May 2023"
+        },
+        {
+          "record_id": "event_meeting-doc-98251-nov2022-east-side-access-briefing",
+          "source_id": "meeting_doc_98251",
+          "event_kind": "committee briefing",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "The Committee will be briefed on the status of the East Side Access Support Projects.",
+          "date": "November 2022"
+        },
+        {
+          "record_id": "event_meeting-doc-apr2023-annual-ridership",
+          "source_id": "meeting_doc_100311",
+          "event_kind": "committee briefing",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "A report will be presented to the Committee on Agency ridership trends during 2022 based on monthly ticket sales data and the results of train ridership counts conducted by the Agency.",
+          "date": "April 2023"
+        }
+      ]
+    },
+    {
+      "event_kind": "adjournment",
+      "count": 9,
+      "samples": [
+        {
+          "record_id": "event_adjournment-1126am-meeting",
+          "source_id": "meeting_doc_194141",
+          "event_kind": "adjournment",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Board voted to adjourn the meeting at 11:26 am",
+          "date": "November 19, 2025"
+        },
+        {
+          "record_id": "event_board-adjournment-april-2026",
+          "source_id": "meeting_doc_208051",
+          "event_kind": "adjournment",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Board voted to adjourn the meeting at approximately 11:05 A.M."
+        },
+        {
+          "record_id": "event_board-meeting-adjournment-apr2023",
+          "source_id": "meeting_doc_112036",
+          "event_kind": "adjournment",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Board voted to adjourn the meeting at 12:31 p.m.",
+          "date": "April 26, 2023"
+        },
+        {
+          "record_id": "event_meeting-adjourned-march23-2026",
+          "source_id": "meeting_doc_205666",
+          "event_kind": "adjournment",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "The Finance Committee voted to adjourn the meeting."
+        }
+      ]
+    },
+    {
+      "event_kind": "announcement",
+      "count": 9,
+      "samples": [
+        {
+          "record_id": "event_2014-vision-zero-announcement",
+          "source_id": "2014_06_11_brt_flushingjamaica_cac1_presentation",
+          "event_kind": "announcement",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Mayor de Blasio announces Vision Zero initiative to eliminate traffic fatalities in New York",
+          "date": "2014"
+        },
+        {
+          "record_id": "event_mayors-2019-state-of-city",
+          "source_id": "battery_pl_oct2019",
+          "event_kind": "announcement",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Mayor's 2019 State of the City announcement of improve bus speeds 25% by 2020",
+          "date": "2019"
+        },
+        {
+          "record_id": "event_meeting-doc-105911-class-action-settlement",
+          "source_id": "meeting_doc_105911",
+          "event_kind": "announcement",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Governor Kathy Hochul announced that the Metropolitan Transportation Authority and accessibility advocates reached a class action settlement affirming the MTA's commitment towards accessibility in the subway system. Under the terms, the MTA will add elevators or ramps to create a stair-free path of travel at 95 percent of currently inaccessible subway stations by 2055.",
+          "date": "June 2022"
+        },
+        {
+          "record_id": "event_meeting-doc-157771-gov-hochul-cbdtp-announcement",
+          "source_id": "meeting_doc_157771",
+          "event_kind": "announcement",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Governor Hochul announced a proposal to proceed with the CBDTP with phased-in toll rates over several years",
+          "date": "November 14, 2024"
+        }
+      ]
+    },
+    {
+      "event_kind": "committee action",
+      "count": 9,
+      "samples": [
+        {
+          "record_id": "event_113901-dec2023-2024-final-proposed-budget",
+          "source_id": "meeting_doc_113901",
+          "event_kind": "committee action",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "The Committee will recommend action to the Board on the Final Proposed Budget for 2024.",
+          "date": "December 2023"
+        },
+        {
+          "record_id": "event_2026-final-proposed-budget-dec2025",
+          "source_id": "meeting_doc_160106",
+          "event_kind": "committee action",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "2026 Final Proposed Budget",
+          "description": "The Committee will recommend action to the Board on the Final Proposed Budget for 2026.",
+          "date": "December 2025"
+        },
+        {
+          "record_id": "event_dec2023-final-proposed-budget",
+          "source_id": "meeting_doc_105786",
+          "event_kind": "committee action",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "The Committee will recommend action to the Board on the Final Proposed Budget for 2024.",
+          "date": "December 2023"
+        },
+        {
+          "record_id": "event_final-budget-dec2025",
+          "source_id": "meeting_doc_166951",
+          "event_kind": "committee action",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "2026 Final Proposed Budget",
+          "description": "The Committee will recommend action to the Board on the Final Proposed Budget for 2026.",
+          "date": "December 2025"
+        }
+      ]
+    },
+    {
+      "event_kind": "committee_action",
+      "count": 9,
+      "samples": [
+        {
+          "record_id": "event_2025-final-proposed-budget",
+          "source_id": "meeting_doc_143196",
+          "event_kind": "committee_action",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "2025 Final Proposed Budget",
+          "description": "The Committee will recommend action to the Board on the Final Proposed Budget for 2025.",
+          "date": "December 2024"
+        },
+        {
+          "record_id": "event_dec2025-2026-final-proposed-budget",
+          "source_id": "meeting_doc_173891",
+          "event_kind": "committee_action",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "2026 Final Proposed Budget",
+          "description": "The Committee will recommend action to the Board on the Final Proposed Budget for 2026.",
+          "date": "December 2025"
+        },
+        {
+          "record_id": "event_dec2025-final-budget-2026",
+          "source_id": "meeting_doc_170861",
+          "event_kind": "committee_action",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "2026 Final Proposed Budget",
+          "description": "The Committee will recommend action to the Board on the Final Proposed Budget for 2026.",
+          "date": "December 2025"
+        },
+        {
+          "record_id": "event_dec2025-final-proposed-budget",
+          "source_id": "meeting_doc_163181",
+          "event_kind": "committee_action",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "2026 Final Proposed Budget",
+          "description": "The Committee will recommend action to the Board on the Final Proposed Budget for 2026.",
+          "date": "December 2025"
+        }
+      ]
+    },
+    {
+      "event_kind": "committee_information_item",
+      "count": 9,
+      "samples": [
+        {
+          "record_id": "event_f2026-adopted-financial-plan",
+          "source_id": "meeting_doc_199056",
+          "event_kind": "committee_information_item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "The Agency will present its revised 2026 Financial Plan reflecting the 2026 Adopted Budget and updated Financial Plan for 2026",
+          "date": "February 2026"
+        },
+        {
+          "record_id": "event_f2026-ops-year-in-review",
+          "source_id": "meeting_doc_199056",
+          "event_kind": "committee_information_item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "A review of the prior year's performance of railroad service will be provided to the Committee",
+          "date": "February 2026"
+        },
+        {
+          "record_id": "event_jul2026-mid-year-ops",
+          "source_id": "meeting_doc_199056",
+          "event_kind": "committee_information_item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "The Committee will be advised of Agency key operating performance metrics and indicators for the first half of 2026",
+          "date": "July 2026"
+        },
+        {
+          "record_id": "event_may2026-operating-budget-review",
+          "source_id": "meeting_doc_199056",
+          "event_kind": "committee_information_item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "A review of the prior year's budget results and their implications for current and future budget performance",
+          "date": "May 2026"
+        }
+      ]
+    },
+    {
+      "event_kind": "board_action",
+      "count": 8,
+      "samples": [
+        {
+          "record_id": "event_2025-final-budget-dec2024",
+          "source_id": "meeting_doc_128901",
+          "event_kind": "board_action",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "The Committee will recommend action to the Board on the Final Proposed Budget for 2025.",
+          "date": "December 2024"
+        },
+        {
+          "record_id": "event_adoption-final-budget-finplan",
+          "source_id": "meeting_doc_194151",
+          "event_kind": "board_action",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Adoption of Final Budget and Financial Plan - The Committee will recommend action to the Board on the Final Proposed Budget for and Financial Plan."
+        },
+        {
+          "record_id": "event_dec2024-final-budget-155041",
+          "source_id": "meeting_doc_155041",
+          "event_kind": "board_action",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "2025 Final Proposed Budget",
+          "description": "The Committee will recommend action to the Board on the Final Proposed Budget for 2025.",
+          "date": "December 2024"
+        },
+        {
+          "record_id": "event_meeting-doc-173856-mnr-approval",
+          "source_id": "meeting_doc_173856",
+          "event_kind": "board_action",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MNR 1 approval for acquisition of real property interests in connection with Penn Station Access Project",
+          "date": "MAY 28, 2025"
+        }
+      ]
+    },
+    {
+      "event_kind": "committee_review",
+      "count": 8,
+      "samples": [
+        {
+          "record_id": "event_bcss-bafo-presented",
+          "source_id": "meeting_doc_131691",
+          "event_kind": "committee_review",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "BAFOs presented to the Selection Committee for consideration",
+          "date": "December 5, 2023"
+        },
+        {
+          "record_id": "event_finance-committee-121823_2",
+          "source_id": "meeting_doc_128926",
+          "event_kind": "committee_review",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Finance Committee review of MTA Bus 2024 Budget and 2024-2027 Financial Plan Adoption",
+          "date": "12/18/23"
+        },
+        {
+          "record_id": "event_lirr-review-committee-charter",
+          "source_id": "meeting_doc_189846",
+          "event_kind": "committee_review",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Review of Long Island Committee Charter",
+          "date": "December 2025"
+        },
+        {
+          "record_id": "event_meeting-doc-111736-may2023-final-review-2022-operating",
+          "source_id": "meeting_doc_111736",
+          "event_kind": "committee_review",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Final Review of 2022 Operating Budget Results presented to the LIRR Committee",
+          "date": "May 2023"
+        }
+      ]
+    },
+    {
+      "event_kind": "evaluation",
+      "count": 8,
+      "samples": [
+        {
+          "record_id": "event_2017-evaluate-performance",
+          "source_id": "brt_m23_cb6_apr2016",
+          "event_kind": "evaluation",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Evaluate SBS performance. Study more robust options if supported by community. Continue community outreach.",
+          "date": "2017 – beyond"
+        },
+        {
+          "record_id": "event_busway-performance-eval-summer2025",
+          "source_id": "tremont_ave_bus_priority_cb5_nov2024",
+          "event_kind": "evaluation",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Present busway performance data and project modifications if needed",
+          "date": "Summer 2025"
+        },
+        {
+          "record_id": "event_evaluate-performance-2017-beyond",
+          "source_id": "brt_m23_cb5_jun2016",
+          "event_kind": "evaluation",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Evaluate SBS performance. Study more robust options if supported by community. Continue community outreach.",
+          "date": "2017 – beyond"
+        },
+        {
+          "record_id": "event_evaluate-sbs-2017-beyond",
+          "source_id": "brt_m23_cb4_apr2016",
+          "event_kind": "evaluation",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Evaluate SBS performance. Study more robust options if supported by community. Continue community outreach.",
+          "date": "2017 – beyond"
+        }
+      ]
+    },
+    {
+      "event_kind": "private event",
+      "count": 8,
+      "samples": [
+        {
+          "record_id": "event_170996-boldyn-cellular-announcement",
+          "source_id": "meeting_doc_170996",
+          "event_kind": "private event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Private lunch and reception to celebrate the announcement of Boldyn's cellular service in the subways",
+          "date": "September 4, 2024"
+        },
+        {
+          "record_id": "event_170996-bridges-tunnels-award",
+          "source_id": "meeting_doc_170996",
+          "event_kind": "private event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Award ceremony",
+          "date": "February 24, 2024"
+        },
+        {
+          "record_id": "event_170996-metlife-foundation-food-bank",
+          "source_id": "meeting_doc_170996",
+          "event_kind": "private event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MetLife employees packed food boxes in partnership with Food Bank of NY",
+          "date": "September 12, 2024"
+        },
+        {
+          "record_id": "event_170996-mnr-ibt-union-vote",
+          "source_id": "meeting_doc_170996",
+          "event_kind": "private event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MNR Union Vote",
+          "date": "October 17, 2024"
+        }
+      ]
+    },
+    {
+      "event_kind": "community event",
+      "count": 7,
+      "samples": [
+        {
+          "record_id": "event_age-friendly-glen-cove-trip",
+          "source_id": "meeting_doc_196906",
+          "event_kind": "community event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Ron Kessler, Oyster Bay Branch Line Manager, met with members of Age Friendly Glen Cove and City of Glen Cove Mayor Pam Panzenbach. Group visited Grand Central Madison and Bryant Park Holiday Market.",
+          "date": "December 4, 2025"
+        },
+        {
+          "record_id": "event_lakeview-spring-cleanup-2026",
+          "source_id": "meeting_doc_208026",
+          "event_kind": "community event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "LIRR joined Lakeview Civic Association for Spring Clean-Up at Lakeview Station. Stations Department supplied materials, MTA Police Department assisted."
+        },
+        {
+          "record_id": "event_mdoc128991-breast-cancer-walk",
+          "source_id": "meeting_doc_128991",
+          "event_kind": "community event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MTA employees united with the American Cancer Society for the Making Strides Against Breast Cancer Walk in Central Park. 30th anniversary walk.",
+          "date": "October 15, 2023"
+        },
+        {
+          "record_id": "event_mdoc128991-toy-coat-drive",
+          "source_id": "meeting_doc_128991",
+          "event_kind": "community event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Winter toy and coat drive to benefit The Henry Street Settlement and The Bronx Defenders",
+          "date": "November 1 - December 8, 2023"
+        }
+      ]
+    },
+    {
+      "event_kind": "event",
+      "count": 7,
+      "samples": [
+        {
+          "record_id": "event_170996-tournament-of-champions-squash",
+          "source_id": "meeting_doc_170996",
+          "event_kind": "event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Annual squash tournament",
+          "date": "January 12 - 27, 2024"
+        },
+        {
+          "record_id": "event_bike-ny-discover-hudson-valley-ride-2024",
+          "source_id": "meeting_doc_151751",
+          "event_kind": "event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Bike New York's annual 'Discover Hudson Valley Ride' event using Poughkeepsie Station parking lot",
+          "date": "Saturday, July 13, 2024, 5:30am to 11:59pm"
+        },
+        {
+          "record_id": "event_meeting-doc-128981-nyc-marathon-2023",
+          "source_id": "meeting_doc_128981",
+          "event_kind": "event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "52nd running of the TCS New York City Marathon started from Verrazzano-Narrows Bridge (VNB). More than 50,000 participants.",
+          "date": "November 5, 2023"
+        },
+        {
+          "record_id": "event_meeting-doc-192266-54th-nyc-marathon",
+          "source_id": "meeting_doc_192266",
+          "event_kind": "event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "54th New York City Marathon",
+          "description": "More than 59,000 runners began their journey across the Verrazzano-Narrows Bridge.",
+          "date": "November 2025"
+        }
+      ]
+    },
+    {
+      "event_kind": "tour",
+      "count": 7,
+      "samples": [
+        {
+          "record_id": "event_cbtc-tour-2025_2",
+          "source_id": "meeting_doc_186711",
+          "event_kind": "tour",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Communication-Based Train Control (CBTC) Tour – Young Professional",
+          "date": "June 20 & 27, 2025"
+        },
+        {
+          "record_id": "event_coney-island-yard-tour-2025_2",
+          "source_id": "meeting_doc_186711",
+          "event_kind": "tour",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Coney Island Yard Tour – Young Professional",
+          "date": "June 6 & 13, 2025"
+        },
+        {
+          "record_id": "event_croton-harmon-yard-tour",
+          "source_id": "meeting_doc_111761",
+          "event_kind": "tour",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Metro-North Railroad welcomed Chair Ken Zebrowski for a tour of Croton-Harmon Yard. Also welcomed Senator Pete Harckham, Ossining Town Supervisor Liz Feldman to Croton-Harmon Yard.",
+          "date": "April 21, 2023"
+        },
+        {
+          "record_id": "event_grand-avenue-depot-climate-week-2023",
+          "source_id": "meeting_doc_124296",
+          "event_kind": "tour",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Grand Avenue Depot tour during Climate Week",
+          "description": "Buses SVP Frank Annicaro toured Grand Avenue Depot and Central Maintenance Facility in Queens with Justin E. Driscoll of NYPA to announce construction for Phase I of charging infrastructure project"
+        }
+      ]
+    },
+    {
+      "event_kind": "agenda_item",
+      "count": 6,
+      "samples": [
+        {
+          "record_id": "event_meeting-doc-124301-aug2023-no-meetings",
+          "source_id": "meeting_doc_124301",
+          "event_kind": "agenda_item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "No meetings held",
+          "date": "August 2023"
+        },
+        {
+          "record_id": "event_meeting-doc-124301-feb2023-adopted-budget",
+          "source_id": "meeting_doc_124301",
+          "event_kind": "agenda_item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "NYCT, SIR, MTA Bus Adopted Budget/Financial Plan 2023-2026, ADA Compliance Report, Transit Adjudication Bureau Report 4th Qtr 2022",
+          "date": "February 2023"
+        },
+        {
+          "record_id": "event_meeting-doc-124301-jul2023-no-items",
+          "source_id": "meeting_doc_124301",
+          "event_kind": "agenda_item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "No items scheduled",
+          "date": "July 2023"
+        },
+        {
+          "record_id": "event_meeting-doc-124301-mar2023-no-items",
+          "source_id": "meeting_doc_124301",
+          "event_kind": "agenda_item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "No items scheduled",
+          "date": "March 2023"
+        }
+      ]
+    },
+    {
+      "event_kind": "delivery",
+      "count": 6,
+      "samples": [
+        {
+          "record_id": "event_cs-pos-first-delivery-meeting-doc-192246",
+          "source_id": "meeting_doc_192246",
+          "event_kind": "delivery",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Expected delivery of first 15 Customer Service Point of Sale devices",
+          "date": "December 15, 2025"
+        },
+        {
+          "record_id": "event_cs-pos-remaining-delivery-meeting-doc-192246",
+          "source_id": "meeting_doc_192246",
+          "event_kind": "delivery",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Expected delivery of remaining 15 Customer Service Point of Sale devices",
+          "date": "January 2026"
+        },
+        {
+          "record_id": "event_meeting-doc-115251-production-delivery-complete",
+          "source_id": "meeting_doc_115251",
+          "event_kind": "delivery",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Delivery of production buses now scheduled to be completed in September 2024",
+          "date": "September 2024"
+        },
+        {
+          "record_id": "event_meeting-doc-124201-lirr-sdmf-delivery-2023",
+          "source_id": "meeting_doc_124201",
+          "event_kind": "delivery",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "LIRR Software Data Maintenance Facility (SDMF) Delivery",
+          "description": "Receive Software Data Maintenance Facility (SDMF) delivery. The SDMF house all PTC software, as-builts, documentation, asset information, and variance management.",
+          "date": "2023"
+        }
+      ]
+    },
+    {
+      "event_kind": "Finance Committee agenda item",
+      "count": 6,
+      "samples": [
+        {
+          "record_id": "event_meeting-doc-192236-apr-variable-debt",
+          "source_id": "meeting_doc_192236",
+          "event_kind": "Finance Committee agenda item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "The MTA Finance Department will present a report summarizing performance of MTA's various variable-rate debt programs, including discussion of savings achieved compared to long-term rates and current policy and limits on variable rate debt use.",
+          "date": "April"
+        },
+        {
+          "record_id": "event_meeting-doc-192236-feb-finplan",
+          "source_id": "meeting_doc_192236",
+          "event_kind": "Finance Committee agenda item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "February Financial Plan - MTA Office of Management & Budget will present a revised Financial Plan reflecting technical adjustments from the Adopted Budget and incorporation of below-the-line policy actions into the baseline.",
+          "date": "February"
+        },
+        {
+          "record_id": "event_meeting-doc-192236-final-budget-november",
+          "source_id": "meeting_doc_192236",
+          "event_kind": "Finance Committee agenda item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Final Proposed Budget/November Financial Plan - The MTA Chief Financial Officer and MTA Office of Management & Budget will present an updated forecast for the current year, a Final Proposed Budget for next year, and a four-year Financial Plan.",
+          "date": "November"
+        },
+        {
+          "record_id": "event_meeting-doc-192236-jan-yearend",
+          "source_id": "meeting_doc_192236",
+          "event_kind": "Finance Committee agenda item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "The MTA Finance Department will present a report that summarizes financing activities for the prior year and expectations of financing activity for the current year.",
+          "date": "January"
+        }
+      ]
+    },
+    {
+      "event_kind": "workshop",
+      "count": 6,
+      "samples": [
+        {
+          "record_id": "event_all-gen-mnr-workshop-dec2025",
+          "source_id": "meeting_doc_201631",
+          "event_kind": "workshop",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "All Generational continued Train Module building workshops at MTA Headquarters (2 Broadway); MTA employees worked together to build sections of an operating model railroad. Culminated in a public exhibition at 2 Broadway.",
+          "date": "December 4, 2025"
+        },
+        {
+          "record_id": "event_all-gen-workshop-lirr-jan2026",
+          "source_id": "meeting_doc_201631",
+          "event_kind": "workshop",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "All Generational continued Train Module building workshops at LIRR-Hillside working on a LIRR Dual-Mode locomotive. Concluded with an exhibition for staff and leadership.",
+          "date": "January 15, 2026"
+        },
+        {
+          "record_id": "event_discover-your-history-oct-2023",
+          "source_id": "meeting_doc_121056",
+          "event_kind": "workshop",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Workshop allowing employees to acquire knowledge and tools to conduct family history research, focusing on descendants from the Caribbean, Central, South and North America.",
+          "date": "October 6"
+        },
+        {
+          "record_id": "event_erg-all-member-meeting-aug-2023",
+          "source_id": "meeting_doc_121056",
+          "event_kind": "workshop",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Personal Best: New Year, New You theme focused on Emotional Intelligence (E.I.), covering The Importance of Emotional Intelligence and best practices for elevating E.I.",
+          "date": "August 3, 2023"
+        }
+      ]
+    },
+    {
+      "event_kind": "board action",
+      "count": 5,
+      "samples": [
+        {
+          "record_id": "event_186736-mnr-board-action",
+          "source_id": "meeting_doc_186736",
+          "event_kind": "board action",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MNR Board action on license agreement with Gateway Foods",
+          "date": "09/29/25"
+        },
+        {
+          "record_id": "event_meeting-doc-146996-lease-bagel-train",
+          "source_id": "meeting_doc_146996",
+          "event_kind": "board action",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Authorization to enter into a lease agreement with Bagel Train Brewster LLC for retail space at Brewster Station, Brewster, NY",
+          "date": "July 31, 2024"
+        },
+        {
+          "record_id": "event_meeting-doc-146996-lease-starbucks",
+          "source_id": "meeting_doc_146996",
+          "event_kind": "board action",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Authorization to enter into a lease agreement with Starbucks Corporation for a retail unit at 2 Broadway, New York, NY",
+          "date": "July 31, 2024"
+        },
+        {
+          "record_id": "event_meeting-doc-192191-capital-plan-amendment",
+          "source_id": "meeting_doc_192191",
+          "event_kind": "board action",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Board will consider an amendment to the 2020-2024 Capital Plan reflecting $600 million in savings reinvested in new and expanded work.",
+          "date": "November 2025"
+        }
+      ]
+    },
+    {
+      "event_kind": "board_update",
+      "count": 5,
+      "samples": [
+        {
+          "record_id": "event_2021-feb-board-update-meeting",
+          "source_id": "meeting_doc_30741",
+          "event_kind": "board_update",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MTA Construction & Development presentation to the board on 2021 commitment and completion goals",
+          "date": "February 18, 2021"
+        },
+        {
+          "record_id": "event_meeting-doc-171496-board-update",
+          "source_id": "meeting_doc_171496",
+          "event_kind": "board_update",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "LIRR presented an update to the MTA Board on planning for Amtrak's East River Tunnel Outage",
+          "date": "April 30, 2025"
+        },
+        {
+          "record_id": "event_meeting-doc-february-update",
+          "source_id": "meeting_doc_102796",
+          "event_kind": "board_update",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MTA Board will be updated in February on the outlook for legislative actions with respect to the assumed $600 million of additional funding.",
+          "date": "February 2023"
+        },
+        {
+          "record_id": "event_mta-board-meeting-dec2025",
+          "source_id": "meeting_doc_194491",
+          "event_kind": "board_update",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Update to the MTA Board presenting 2025 year in data",
+          "date": "December 17, 2025"
+        }
+      ]
+    },
+    {
+      "event_kind": "briefing",
+      "count": 5,
+      "samples": [
+        {
+          "record_id": "event_may2023-ptc-update",
+          "source_id": "meeting_doc_105781",
+          "event_kind": "briefing",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "LIRR/MNR PTC Implementation Update",
+          "date": "May 2023"
+        },
+        {
+          "record_id": "event_nov2023-esa-update",
+          "source_id": "meeting_doc_105781",
+          "event_kind": "briefing",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "East Side Access Support Projects Update",
+          "date": "November 2023"
+        },
+        {
+          "record_id": "event_oct2023-ptc-update",
+          "source_id": "meeting_doc_105781",
+          "event_kind": "briefing",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "The committee will be briefed on the status of project implementation and close-out following full Positive Train Control functionality for both railroads going into effect in December 2020.",
+          "date": "October 2023"
+        },
+        {
+          "record_id": "event_pomonok-2015-02-04",
+          "source_id": "2015_01_22_brt_flushingjamaica_pw3_boards",
+          "event_kind": "briefing",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Pomonok Houses Transportation Committee: Select Bus Service Briefing",
+          "date": "February 4, 2015"
+        }
+      ]
+    },
+    {
+      "event_kind": "budget_review",
+      "count": 5,
+      "samples": [
+        {
+          "record_id": "event_2025-final-proposed-budget-dec2024",
+          "source_id": "meeting_doc_160151",
+          "event_kind": "budget_review",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "The Committee will recommend action to the Board on the Final Proposed Budget for 2025.",
+          "date": "December 2024"
+        },
+        {
+          "record_id": "event_dec2024-2025-final-proposed-budget_2",
+          "source_id": "meeting_doc_135271",
+          "event_kind": "budget_review",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "The Committee will recommend action to the Board on the Final Proposed Budget for 2025.",
+          "date": "December 2024"
+        },
+        {
+          "record_id": "event_final-review-2024-operating-budget-may2025_2",
+          "source_id": "meeting_doc_160151",
+          "event_kind": "budget_review",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "A review of the prior year's budget results and their implications for current and future budget performance.",
+          "date": "May 2025"
+        },
+        {
+          "record_id": "event_meeting-doc-121101-final-review-2023-operating-budget-may2024",
+          "source_id": "meeting_doc_121101",
+          "event_kind": "budget_review",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Review of the prior year's budget results and their implications for current and future budget performance",
+          "date": "May 2024"
+        }
+      ]
+    },
+    {
+      "event_kind": "contract extension",
+      "count": 5,
+      "samples": [
+        {
+          "record_id": "event_meeting-doc-199116-atsa-contract-extension",
+          "source_id": "meeting_doc_199116",
+          "event_kind": "contract extension",
+          "event_family": "other",
+          "lifecycle_phase": "expanded",
+          "description": "Four-year extension of Contract CMM-1467 for ATS-A software maintenance",
+          "date": "March 27, 2026–March 27, 2030"
+        },
+        {
+          "record_id": "event_meeting-doc-199116-pacis2-contract-extension",
+          "source_id": "meeting_doc_199116",
+          "event_kind": "contract extension",
+          "event_family": "other",
+          "lifecycle_phase": "expanded",
+          "description": "Four-year extension of Contract CMM-589 for PA/CIS II software maintenance",
+          "date": "April 30, 2026–April 30, 2030"
+        },
+        {
+          "record_id": "event_meeting91591-wsp-extension-start",
+          "source_id": "meeting_doc_91591",
+          "event_kind": "contract extension",
+          "event_family": "other",
+          "lifecycle_phase": "expanded",
+          "description": "Two-year extension of WSP worldwide inspection and testing services contract",
+          "date": "November 1, 2022–October 31, 2024"
+        },
+        {
+          "record_id": "event_modification-extension-june2024",
+          "source_id": "meeting_doc_105946",
+          "event_kind": "contract extension",
+          "event_family": "other",
+          "lifecycle_phase": "expanded",
+          "description": "This modification will extend the contract through January 31, 2024",
+          "date": "January 31, 2024"
+        }
+      ]
+    },
+    {
+      "event_kind": "contract_period",
+      "count": 5,
+      "samples": [
+        {
+          "record_id": "event_cdms-contract-term-201766",
+          "source_id": "meeting_doc_201766",
+          "event_kind": "contract_period",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Contract term for GIRO CDMS implementation and maintenance.",
+          "date": "April 2026–March 2034"
+        },
+        {
+          "record_id": "event_justiceone-contract-term",
+          "source_id": "meeting_doc_201751",
+          "event_kind": "contract_period",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Five-year noncompetitive miscellaneous service contract to JusticeONE",
+          "date": "January 20, 2026–January 19, 2031"
+        },
+        {
+          "record_id": "event_meeting-doc-179671-pmis-base-term",
+          "source_id": "meeting_doc_179671",
+          "event_kind": "contract_period",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Base term of PMIS implementation and integration contract",
+          "date": "August 2025 - February 2027"
+        },
+        {
+          "record_id": "event_meeting-doc-179671-pmis-option-term",
+          "source_id": "meeting_doc_179671",
+          "event_kind": "contract_period",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Option year for PMIS post-implementation support",
+          "date": "March 2027 - February 2028"
+        }
+      ]
+    },
+    {
+      "event_kind": "deployment",
+      "count": 5,
+      "samples": [
+        {
+          "record_id": "event_meeting-doc-124201-lirr-fleetwide-obc-2024",
+          "source_id": "meeting_doc_124201",
+          "event_kind": "deployment",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "LIRR Fleetwide OBC Software Deployment",
+          "description": "Complete fleetwide deployment of OBC software",
+          "date": "2024"
+        },
+        {
+          "record_id": "event_meeting-doc-124201-mnr-m8-fleet-deployment-2024",
+          "source_id": "meeting_doc_124201",
+          "event_kind": "deployment",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "MNR M8 OBC Software 1.5 Fleet Deployment",
+          "description": "Begin deployment of M8 OBC software 1.5 on the fleet",
+          "date": "2024"
+        },
+        {
+          "record_id": "event_meeting-doc-135421-first-r211t-open-gangway-cars-deployed",
+          "source_id": "meeting_doc_135421",
+          "event_kind": "deployment",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "First R211T open gangway cars hit the tracks with enhanced accessibility features including brighter lighting, large floor decals, yellow seats marking priority seating areas, and open-gangway design",
+          "date": "February 2024"
+        },
+        {
+          "record_id": "event_real-time-info-2015-cb7",
+          "source_id": "2015_02_04_brt_86thstreet_cb7_presentation",
+          "event_kind": "deployment",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Real-time passenger information coming to 86th Street",
+          "date": "2015"
+        }
+      ]
+    },
+    {
+      "event_kind": "document date",
+      "count": 5,
+      "samples": [
+        {
+          "record_id": "event_document-date-feb2024",
+          "source_id": "meeting_doc_133351",
+          "event_kind": "document date",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Document date for LIRR procurement request",
+          "date": "February 23, 2024"
+        },
+        {
+          "record_id": "event_document-date-nov-14-2024_2",
+          "source_id": "meeting_doc_157696",
+          "event_kind": "document date",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Date of the procurement document",
+          "date": "November 14, 2024"
+        },
+        {
+          "record_id": "event_meeting164941-document-date",
+          "source_id": "meeting_doc_164941",
+          "event_kind": "document date",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Date of the procurement document preparation/approval",
+          "date": "February 21, 2025"
+        },
+        {
+          "record_id": "event_staff-summary-date-20220708",
+          "source_id": "meeting_doc_91606",
+          "event_kind": "document date",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Staff summary document date",
+          "date": "July 8, 2022"
+        }
+      ]
+    },
+    {
+      "event_kind": "Finance Committee action item",
+      "count": 5,
+      "samples": [
+        {
+          "record_id": "event_meeting-doc-192236-dec-bonds",
+          "source_id": "meeting_doc_192236",
+          "event_kind": "Finance Committee action item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MTA Finance seeks Board approval for: issuance of new money bonds/notes to fund existing approved bond financed capital projects under MTA and TBTA bond resolutions; refunding of fixed-rate bonds; issuance of new money bonds/notes for working capital needs; and reimbursement of capital expenditures from tax-exempt bond sales.",
+          "date": "December"
+        },
+        {
+          "record_id": "event_meeting-doc-192236-december-adoption",
+          "source_id": "meeting_doc_192236",
+          "event_kind": "Finance Committee action item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "December Action Items: Adoption of Final Budget and Financial Plan (Committee recommends action to the Board), Authorization to Issue MTA and TBTA New Money Bonds and related obligations, and Approval of Proposed Work Plan.",
+          "date": "December"
+        },
+        {
+          "record_id": "event_meeting-doc-192236-february-tbta",
+          "source_id": "meeting_doc_192236",
+          "event_kind": "Finance Committee action item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "February Action Item: TBTA Operating Surplus - The MTA Comptroller should be prepared to answer questions on a staff summary requesting (1) transfer of TBTA Operating Surplus and Investment Income, (2) advances of TBTA Operating Surplus, and (3) the deduction from TBTA Operating Revenue for the Necessary Reconstruction Reserve.",
+          "date": "February"
+        },
+        {
+          "record_id": "event_meeting-doc-192236-june-pwef",
+          "source_id": "meeting_doc_192236",
+          "event_kind": "Finance Committee action item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "June Action Item: PWEF Assessment - The Board is requested to authorize remittance to the State Public Work Enforcement Fund for the current calendar year as required by State statute, based on the value of public work construction projects to cover costs of enforcing prevailing wage laws.",
+          "date": "June"
+        }
+      ]
+    },
+    {
+      "event_kind": "infrastructure_project",
+      "count": 5,
+      "samples": [
+        {
+          "record_id": "event_canarsie-tube-reconstruction",
+          "source_id": "meeting_doc_135736",
+          "event_kind": "infrastructure_project",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Canarsie Tube Reconstruction - On time & under budget"
+        },
+        {
+          "record_id": "event_lirr-third-track",
+          "source_id": "meeting_doc_135736",
+          "event_kind": "infrastructure_project",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "LIRR Third Track"
+        },
+        {
+          "record_id": "event_meeting-doc-124251-bridge-replacement-mt-vernon",
+          "source_id": "meeting_doc_124251",
+          "event_kind": "infrastructure_project",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Bridge-replacement projects at South St and Fulton Ave in Mt Vernon"
+        },
+        {
+          "record_id": "event_meeting-doc-124251-mow-rail-tie-replacement",
+          "source_id": "meeting_doc_124251",
+          "event_kind": "infrastructure_project",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Maintenance of Way rail and tie replacement between Bridgeport and Devon, CT"
+        }
+      ]
+    },
+    {
+      "event_kind": "safety incident",
+      "count": 5,
+      "samples": [
+        {
+          "record_id": "event_lirr-3rd-track-incident-37171",
+          "source_id": "meeting_doc_37171",
+          "event_kind": "safety incident",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Iron worker injured when crane boom contacted overhead high-tension electrical lines during unplanned work at Mineola on LIRR 3rd Track Project",
+          "date": "weekend of March 13, 2021"
+        },
+        {
+          "record_id": "event_meeting-doc-138436-incident-march-14-2024",
+          "source_id": "meeting_doc_138436",
+          "event_kind": "safety incident",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Incident on A subway train at Hoyt-Schermerhorn",
+          "description": "Gun shots were fired on an A train; Elisa Hamilton acted to safeguard employees and customers",
+          "date": "March 14, 2024"
+        },
+        {
+          "record_id": "event_meeting-doc-151636-lombardi-rescue",
+          "source_id": "meeting_doc_151636",
+          "event_kind": "safety incident",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Dennis Lombardi, Maintenance Supervisor II, saved a Track Worker who fainted and fell under a train on the 6th Avenue Line, shielding him from the energized third rail with a plastic shovel.",
+          "date": "July 5"
+        },
+        {
+          "record_id": "event_meeting-doc-189921-livonia-fire",
+          "source_id": "meeting_doc_189921",
+          "event_kind": "safety incident",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Transit Property Protection Supervisor Deborah Bynum detected a large fire in the parking area at Livonia Train Yard where flames engulfed two parked vehicles. She contacted emergency services and initiated evacuation of the building above the fire. No injuries were reported.",
+          "date": "Sunday, March 23, 2025"
+        }
+      ]
+    },
+    {
+      "event_kind": "scheduled_committee_agenda",
+      "count": 5,
+      "samples": [
+        {
+          "record_id": "event_apr2023-final-review-operating-results",
+          "source_id": "meeting_doc_98306",
+          "event_kind": "scheduled_committee_agenda",
+          "event_family": "other",
+          "lifecycle_phase": "planned",
+          "description": "Final reviews of NYCT, SIR, and MTA Bus 2022 Operating Results",
+          "date": "April 2023"
+        },
+        {
+          "record_id": "event_dec2022-adopted-budget-finplan",
+          "source_id": "meeting_doc_98306",
+          "event_kind": "scheduled_committee_agenda",
+          "event_family": "other",
+          "lifecycle_phase": "planned",
+          "description": "NYCT, SIR, and MTA Bus present their 2022 Adopted Budget and revised 2023-2026 Financial Plans",
+          "date": "December 2022"
+        },
+        {
+          "record_id": "event_feb2023-adopted-budget-ada-tab",
+          "source_id": "meeting_doc_98306",
+          "event_kind": "scheduled_committee_agenda",
+          "event_family": "other",
+          "lifecycle_phase": "planned",
+          "description": "Adopted Budget/Financial Plan 2023-2026 for NYCT, SIR, MTA Bus; ADA Compliance Report; TAB and Fare Evasion quarterly reports",
+          "date": "February 2023"
+        },
+        {
+          "record_id": "event_may2023-customer-satisfaction-tab-fare-eeo",
+          "source_id": "meeting_doc_98306",
+          "event_kind": "scheduled_committee_agenda",
+          "event_family": "other",
+          "lifecycle_phase": "planned",
+          "description": "Biannual Customer Satisfaction Report, TAB and Fare Evasion quarterly reports for 1st Qtr 2023",
+          "date": "May 2023"
+        }
+      ]
+    },
+    {
+      "event_kind": "track work program update",
+      "count": 5,
+      "samples": [
+        {
+          "record_id": "event_fall-trackwork-oct2025",
+          "source_id": "meeting_doc_164861",
+          "event_kind": "track work program update",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Fall track work programs including Main Line Second Track construction and East Side Access Readiness projects",
+          "date": "October 2025"
+        },
+        {
+          "record_id": "event_spring-trackwork-mar2025_2",
+          "source_id": "meeting_doc_164861",
+          "event_kind": "track work program update",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Spring track work programs schedule adjustment advisory",
+          "date": "March 2025"
+        },
+        {
+          "record_id": "event_winter-trackwork-dec2025",
+          "source_id": "meeting_doc_164861",
+          "event_kind": "track work program update",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Winter track work programs schedule adjustment advisory",
+          "date": "December 2025"
+        },
+        {
+          "record_id": "event_winter-trackwork-jan2025",
+          "source_id": "meeting_doc_164861",
+          "event_kind": "track work program update",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Advisory on schedule adjustments for Winter 2025 track construction projects",
+          "date": "January 2025"
+        }
+      ]
+    },
+    {
+      "event_kind": "training",
+      "count": 5,
+      "samples": [
+        {
+          "record_id": "event_201536-emergency-response-training",
+          "source_id": "meeting_doc_201536",
+          "event_kind": "training",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Employees supported emergency response training with MTAPD's Emergency Services Unit and the Southwest Regional Emergency Response Team at Metro-North's Stamford Yard. Tactical exercises using railroad equipment, including M8 rail cars."
+        },
+        {
+          "record_id": "event_erg-leader-training-july-2023",
+          "source_id": "meeting_doc_121056",
+          "event_kind": "training",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "ERG Leadership Training centered on developing strong leaders, covering leadership skills, alignment of mission/vision/purpose with MTA Strategic Priorities, and tools to measure ERG success.",
+          "date": "July 18, 2023"
+        },
+        {
+          "record_id": "event_mnr-erg-leader-training-2023",
+          "source_id": "meeting_doc_121131",
+          "event_kind": "training",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Employee Resource Group Leader Training",
+          "description": "ERG Leadership Training centered on developing strong leaders, alignment of the mission, vision and purpose of the respective ERGs with the MTA Strategic Priorities.",
+          "date": "July 18, 2023"
+        },
+        {
+          "record_id": "event_mnr-olav-training",
+          "source_id": "meeting_doc_205551",
+          "event_kind": "training",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Operation Lifesaver Authorized Volunteer Training",
+          "description": "More than 30 MNR Office of System Safety employees completed OLAV training led by New York and Connecticut State Operation Lifesaver State Coordinators"
+        }
+      ]
+    },
+    {
+      "event_kind": "budget review",
+      "count": 4,
+      "samples": [
+        {
+          "record_id": "event_2024-nyct-budget-adoption-feb2024",
+          "source_id": "meeting_doc_160421",
+          "event_kind": "budget review",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Adopted Budget & Financial Plan Review",
+          "date": "February 2024"
+        },
+        {
+          "record_id": "event_2024-nyct-sir-mtabus-midyear-forecast",
+          "source_id": "meeting_doc_160421",
+          "event_kind": "budget review",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "2024 Mid-Year Forecast Monthly Allocation/Committee Review of Budget",
+          "date": "September 2024"
+        },
+        {
+          "record_id": "event_meeting-doc-104761-may2023-operating-results-review",
+          "source_id": "meeting_doc_104761",
+          "event_kind": "budget review",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Final Review of 2022 Operating Results",
+          "description": "Review of prior year's budget results and their implications for current and future budget performance.",
+          "date": "May 2023"
+        },
+        {
+          "record_id": "event_meeting-doc-128866-2024-final-proposed-budget",
+          "source_id": "meeting_doc_128866",
+          "event_kind": "budget review",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "The Committee will recommend action to the Board on the Final Proposed Budget for 2023.",
+          "date": "December 2023"
+        }
+      ]
+    },
+    {
+      "event_kind": "capital project",
+      "count": 4,
+      "samples": [
+        {
+          "record_id": "event_2018-2020-capital-project-brt-bx6-cb4-mar2017",
+          "source_id": "brt_bx6_south_bronx_mar2017",
+          "event_kind": "capital project",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Design and implement capital project for Bx6 SBS",
+          "date": "2018-2020"
+        },
+        {
+          "record_id": "event_capital-project-2017-2018",
+          "source_id": "2015_09_22_brt_flushing_jamaica_cb7_presentation",
+          "event_kind": "capital project",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Capital project including bus bulbs",
+          "date": "2017-2018"
+        },
+        {
+          "record_id": "event_capital-project-2018-2020",
+          "source_id": "brt_bx6_cb2_feb2017",
+          "event_kind": "capital project",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Design and implement capital project",
+          "date": "2018-2020"
+        },
+        {
+          "record_id": "event_upcoming-capital-intersection-project",
+          "source_id": "bay_pkwy_cropsey_ave_jan2025",
+          "event_kind": "capital project",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Upcoming capital project at Bay Parkway & Cropsey Avenue intersection; water main project led by Department of Environmental Protection; incorporating bus stop and pedestrian improvements"
+        }
+      ]
+    },
+    {
+      "event_kind": "deadline",
+      "count": 4,
+      "samples": [
+        {
+          "record_id": "event_march-31-2026-deadline",
+          "source_id": "meeting_doc_201751",
+          "event_kind": "deadline",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Deadline for JusticeONE to be the only viable option to meet the March 31, 2026 deployment deadline",
+          "date": "March 31, 2026"
+        },
+        {
+          "record_id": "event_nycdot-park-ave-malls-deadline",
+          "source_id": "meeting_doc_201771",
+          "event_kind": "deadline",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "If NYC DOT does not provide final plans for its Park Avenue Malls project by December 31, 2026, the Expanded Work will proceed in a manner enabling NYC DOT to rebuild the affected portion of the Park Avenue Malls once plans are complete",
+          "date": "December 31, 2026"
+        },
+        {
+          "record_id": "event_open-data-challenge-submission-deadline",
+          "source_id": "meeting_doc_152191",
+          "event_kind": "deadline",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Submissions due for MTA's first-ever Open Data Challenge",
+          "date": "October 25"
+        },
+        {
+          "record_id": "event_written-comment-deadline-jul31-2025",
+          "source_id": "meeting_doc_186831",
+          "event_kind": "deadline",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Deadline for written submissions with comments about the Penn Station Access Project and proposed property acquisitions",
+          "date": "July 31, 2025 at 5:30 p.m."
+        }
+      ]
+    },
+    {
+      "event_kind": "Event",
+      "count": 4,
+      "samples": [
+        {
+          "record_id": "event_meeting-doc-138311-lyres-sampling",
+          "source_id": "meeting_doc_138311",
+          "event_kind": "Event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Sampling event of Lyre's non-alcoholic beverages. Full-size cans were handed out to people on the go.",
+          "date": "January 31, 2024"
+        },
+        {
+          "record_id": "event_meeting-doc-138311-mucinex-magic-show",
+          "source_id": "meeting_doc_138311",
+          "event_kind": "Event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "A short magic show hosted by Penn & Teller for press and public.",
+          "date": "February 6 - 7, 2024"
+        },
+        {
+          "record_id": "event_meeting-doc-138311-tommy-hilfiger",
+          "source_id": "meeting_doc_138311",
+          "event_kind": "Event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Tommy Hilfiger Fashion Show. Vanderbilt Hall was used for Hair and Makeup. City Winery and Cornelius were used for dressing and line up and Oyster Bar hosted the main event.",
+          "date": "February 8 - 10, 2024"
+        },
+        {
+          "record_id": "event_meeting-doc-138311-tournament-of-champions",
+          "source_id": "meeting_doc_138311",
+          "event_kind": "Event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "26th annual squash tournament",
+          "date": "January 12 - 27, 2024"
+        }
+      ]
+    },
+    {
+      "event_kind": "fare increase",
+      "count": 4,
+      "samples": [
+        {
+          "record_id": "event_ctdot-fare-increase-jul2026",
+          "source_id": "meeting_doc_179916",
+          "event_kind": "fare increase",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "CTDOT proposed 5% fare increase for New Haven Line fares for travel to or from Connecticut stations, with CTDOT reserving ability to withdraw",
+          "date": "July 1, 2026"
+        },
+        {
+          "record_id": "event_ctdot-fare-increase-sep2025",
+          "source_id": "meeting_doc_179916",
+          "event_kind": "fare increase",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "CTDOT proposed 5% fare increase for New Haven Line fares for travel to or from Connecticut stations",
+          "date": "September 1, 2025"
+        },
+        {
+          "record_id": "event_meeting-doc-127701-fare-increase-jan2025",
+          "source_id": "meeting_doc_127701",
+          "event_kind": "fare increase",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "An increase in fares and tolls, yielding a 4 percent overall increase in farebox and toll revenues, projected to generate $299 million annualized increase",
+          "date": "January 2025"
+        },
+        {
+          "record_id": "event_meeting-doc-127701-fare-increase-mar2027",
+          "source_id": "meeting_doc_127701",
+          "event_kind": "fare increase",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "An increase in fares and tolls, yielding a 4% overall increase in farebox and toll revenues, projected to generate a $325 million annualized increase",
+          "date": "March 2027"
+        }
+      ]
+    },
+    {
+      "event_kind": "fare_increase",
+      "count": 4,
+      "samples": [
+        {
+          "record_id": "event_cdot-fare-increase-jul2026",
+          "source_id": "meeting_doc_192541",
+          "event_kind": "fare_increase",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Second CDOT five percent fare increase on the Connecticut portion of MNR's New Haven Line",
+          "date": "July 2026"
+        },
+        {
+          "record_id": "event_cdot-fare-increase-sep2025",
+          "source_id": "meeting_doc_192541",
+          "event_kind": "fare_increase",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Connecticut Department of Transportation five percent fare increase on the Connecticut portion of MNR's New Haven Line",
+          "date": "September 2025"
+        },
+        {
+          "record_id": "event_meeting-doc-179556-fare-increase-july-2026",
+          "source_id": "meeting_doc_179556",
+          "event_kind": "fare_increase",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "5% fare increase on New Haven Line for travel to/from Connecticut stations, with CTDOT reserving ability to withdraw",
+          "date": "July 1, 2026"
+        },
+        {
+          "record_id": "event_meeting-doc-179556-fare-increase-sept-2025",
+          "source_id": "meeting_doc_179556",
+          "event_kind": "fare_increase",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "5% fare increase on New Haven Line for travel to/from Connecticut stations",
+          "date": "September 1, 2025"
+        }
+      ]
+    },
+    {
+      "event_kind": "lunch and learn",
+      "count": 4,
+      "samples": [
+        {
+          "record_id": "event_meeting-doc-151641-intersectionality-lunch-learn",
+          "source_id": "meeting_doc_151641",
+          "event_kind": "lunch and learn",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Intersectionality Awareness Month Lunch and Learn",
+          "description": "Intersectionality Awareness Month Lunch and Learn with Quemuel Arroyo, Chief Accessibility Officer at 2 Broadway, 20th Floor Conference Room 1",
+          "date": "Tuesday, August 20 12 PM – 1 PM"
+        },
+        {
+          "record_id": "event_meeting-doc-160411-pride-lunch-learn",
+          "source_id": "meeting_doc_160411",
+          "event_kind": "lunch and learn",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Lunch & Learn",
+          "description": "Pride Express hosted a lunch and learn detailing the timeline of historical events that shaped the LGBTQ+ rights in the workplace.",
+          "date": "November 2024"
+        },
+        {
+          "record_id": "event_pride-express-lunch-learn-nov2024",
+          "source_id": "meeting_doc_160126",
+          "event_kind": "lunch and learn",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Lunch & Learn",
+          "description": "Pride Express hosted a lunch and learn detailing the timeline of historical events that shaped the LGBTQ+ rights in the workplace.",
+          "date": "November 2024"
+        },
+        {
+          "record_id": "event_pride-express-lunch-learn-nov2024_3",
+          "source_id": "meeting_doc_160101",
+          "event_kind": "lunch and learn",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Pride Express hosted a lunch and learn detailing the timeline of historical events that shaped LGBTQ+ rights in the workplace.",
+          "date": "November 2024"
+        }
+      ]
+    },
+    {
+      "event_kind": "parade",
+      "count": 4,
+      "samples": [
+        {
+          "record_id": "event_meeting-doc-154976-disability-pride-parade",
+          "source_id": "meeting_doc_154976",
+          "event_kind": "parade",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MTA Accessibility team's participation in the Disability Pride Parade, first since 2019",
+          "date": "October 23, 2024"
+        },
+        {
+          "record_id": "event_meeting-doc-164866-st-patricks-day-parade",
+          "source_id": "meeting_doc_164866",
+          "event_kind": "parade",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "New York City St. Patrick's Day Parade",
+          "description": "New York City St. Patrick's Day Parade; LIRR will operate extra train service",
+          "date": "Monday, March 17th"
+        },
+        {
+          "record_id": "event_meeting-doc-44216-hometown-heroes-parade",
+          "source_id": "meeting_doc_44216",
+          "event_kind": "parade",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Hometown Heroes ticker tape parade honoring essential workers who got New York City through the COVID-19 pandemic. MTA participated with a zero-emissions articulated electric bus.",
+          "date": "July 7, 2021"
+        },
+        {
+          "record_id": "event_pride-parade-jun2024",
+          "source_id": "meeting_doc_143161",
+          "event_kind": "parade",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "NYC Pride Parade",
+          "description": "Pride Express and TWU Local 100 led MTA employees in the New York City Pride Parade down 5th Avenue.",
+          "date": "June 30, 2024"
+        }
+      ]
+    },
+    {
+      "event_kind": "performance review",
+      "count": 4,
+      "samples": [
+        {
+          "record_id": "event_2024-year-in-review-feb2025_2",
+          "source_id": "meeting_doc_155006",
+          "event_kind": "performance review",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "A review of the prior year's performance of railroad service will be provided to the Committee.",
+          "date": "February 2025"
+        },
+        {
+          "record_id": "event_feb2024-2023-year-review",
+          "source_id": "meeting_doc_131511",
+          "event_kind": "performance review",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "A review of the prior year's performance of railroad service will be provided to the Committee.",
+          "date": "February 2024"
+        },
+        {
+          "record_id": "event_final-review-2024-operating-results-may2025_2",
+          "source_id": "meeting_doc_155006",
+          "event_kind": "performance review",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "A review of the prior year's budget results and their implications for current and future budget performance will be presented to the Committee.",
+          "date": "May 2025"
+        },
+        {
+          "record_id": "event_meeting-doc-127516-2023-annual-operating-results-feb2024",
+          "source_id": "meeting_doc_127516",
+          "event_kind": "performance review",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "A review of the prior year's performance of railroad service provided to the Committee.",
+          "date": "February 2024"
+        }
+      ]
+    },
+    {
+      "event_kind": "Pride event",
+      "count": 4,
+      "samples": [
+        {
+          "record_id": "event_lgbtq-pride-reception-gracie-mansion-2025",
+          "source_id": "meeting_doc_186711",
+          "event_kind": "Pride event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Mayor's Annual LGBTQ+ Pride Reception at Gracie Mansion – Pride Express",
+          "date": "June 3, 2025"
+        },
+        {
+          "record_id": "event_nyc-pride-parade-2025_2",
+          "source_id": "meeting_doc_186711",
+          "event_kind": "Pride event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "NYC Pride Parade – Pride Express",
+          "date": "June 29, 2025"
+        },
+        {
+          "record_id": "event_nys-governor-pride-reception-2025",
+          "source_id": "meeting_doc_186711",
+          "event_kind": "Pride event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "NYS Governor's Pride Reception – Pride Express",
+          "date": "June 10, 2025"
+        },
+        {
+          "record_id": "event_stonewall-historical-walking-tour-2025",
+          "source_id": "meeting_doc_186711",
+          "event_kind": "Pride event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Stonewall Historical Walking Tour – Pride Express",
+          "date": "June 12, 2025"
+        }
+      ]
+    },
+    {
+      "event_kind": "Pride Month event",
+      "count": 4,
+      "samples": [
+        {
+          "record_id": "event_mayors-pride-reception-2025",
+          "source_id": "meeting_doc_186966",
+          "event_kind": "Pride Month event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Mayor's Annual LGBTQ+ Pride Reception",
+          "description": "Part of June Pride Month activities",
+          "date": "June 3, 2025"
+        },
+        {
+          "record_id": "event_nyc-pride-parade-2025",
+          "source_id": "meeting_doc_186966",
+          "event_kind": "Pride Month event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "NYC Pride Parade",
+          "description": "Part of June Pride Month activities",
+          "date": "June 29, 2025"
+        },
+        {
+          "record_id": "event_nys-gov-pride-reception-2025",
+          "source_id": "meeting_doc_186966",
+          "event_kind": "Pride Month event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "NYS Governor's Pride Reception",
+          "date": "June 10, 2025"
+        },
+        {
+          "record_id": "event_stonewall-walking-tour-2025",
+          "source_id": "meeting_doc_186966",
+          "event_kind": "Pride Month event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Stonewall Historical Walking Tour",
+          "date": "June 12, 2025"
+        }
+      ]
+    },
+    {
+      "event_kind": "public_event",
+      "count": 4,
+      "samples": [
+        {
+          "record_id": "event_grand-central-holiday-fair-2023",
+          "source_id": "meeting_doc_127506",
+          "event_kind": "public_event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Annual Grand Central Holiday Fair opened, bringing together 36 small businesses and artisan merchants.",
+          "date": "November 13, 2023"
+        },
+        {
+          "record_id": "event_meeting-doc-113966-five-boro-bike-tour-2023",
+          "source_id": "meeting_doc_113966",
+          "event_kind": "public_event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "45th iteration of the NYC-permitted TD Five-Boro Bike Tour; cyclists crossed the Verrazzano-Narrows Bridge into Staten Island",
+          "date": "Sunday May 7, 2023"
+        },
+        {
+          "record_id": "event_meeting-doc-113966-td-five-boro-bike-tour-2023",
+          "source_id": "meeting_doc_113966",
+          "event_kind": "public_event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "45th iteration of the NYC-permitted TD Five-Boro Bike Tour; nearly 30,000 cyclists crossed the Verrazzano-Narrows Bridge",
+          "date": "Sunday May 7, 2023"
+        },
+        {
+          "record_id": "event_mn-open-house-oct2025",
+          "source_id": "meeting_doc_192146",
+          "event_kind": "public_event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Metro-North held its annual Open House in New Haven CCO shop on Saturday, October 4 with over 2600 attendees including Metro-North employees, retirees, and the public.",
+          "date": "October 4, 2025"
+        }
+      ]
+    },
+    {
+      "event_kind": "recurring agenda item",
+      "count": 4,
+      "samples": [
+        {
+          "record_id": "event_mnr-committee-police-report",
+          "source_id": "meeting_doc_199061",
+          "event_kind": "recurring agenda item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Police Report",
+          "description": "MTA Police will highlight the significant police activities incurred during the month reported."
+        },
+        {
+          "record_id": "event_mnr-committee-president-report",
+          "source_id": "meeting_doc_199061",
+          "event_kind": "recurring agenda item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "President's Report",
+          "description": "A monthly report will be provided highlighting major accomplishments including safety, operations and progress on key initiatives and performance indicators."
+        },
+        {
+          "record_id": "event_mnr-committee-procurements",
+          "source_id": "meeting_doc_199061",
+          "event_kind": "recurring agenda item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Procurements",
+          "description": "List of procurement action items requiring Board approval."
+        },
+        {
+          "record_id": "event_mnr-committee-work-plan_2",
+          "source_id": "meeting_doc_199061",
+          "event_kind": "recurring agenda item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Work Plan",
+          "description": "The Work Plan will list, by month, the topics anticipated to be presented to the Committee for action or for information. The Committee will be advised if any changes have been made to the plan."
+        }
+      ]
+    },
+    {
+      "event_kind": "service_period",
+      "count": 4,
+      "samples": [
+        {
+          "record_id": "event_meeting-doc-154986-ctg-maintenance-end",
+          "source_id": "meeting_doc_154986",
+          "event_kind": "service_period",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "CTG ongoing maintenance of AVLM software through December 31, 2025",
+          "date": "through December 31, 2025"
+        },
+        {
+          "record_id": "event_meeting-doc-171006-ovd-tech-support-end",
+          "source_id": "meeting_doc_171006",
+          "event_kind": "service_period",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "OVD technical support",
+          "description": "Technical support for Onboard Validation Devices through July 31, 2030, with two 5-year options exercisable at MTA's sole discretion",
+          "date": "through July 31, 2030"
+        },
+        {
+          "record_id": "event_option2-through-end-of-2025",
+          "source_id": "meeting_doc_155151",
+          "event_kind": "service_period",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Option 2 to cover Disability and Medicare Coordination Services through the end of 2025.",
+          "date": "through the end of 2025"
+        },
+        {
+          "record_id": "event_remainder-2024-service-period",
+          "source_id": "meeting_doc_155151",
+          "event_kind": "service_period",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Contract funding for Disability and Medicare Coordination Services for the remainder of 2024.",
+          "date": "remainder of 2024"
+        }
+      ]
+    },
+    {
+      "event_kind": "accident",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_lirr-atlantic-terminal-strike",
+          "source_id": "meeting_doc_140486",
+          "event_kind": "accident",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MTA LIRR Far Rockaway Line train struck a bumper block in Atlantic Terminal-Brooklyn Station. 122 claims put into suit. $11 million FMTAC Station Maintenance retention limit paid. $19.57 million impacted. 6 open lawsuits.",
+          "date": "January 4, 2017"
+        },
+        {
+          "record_id": "event_lirr-new-hyde-park-collision",
+          "source_id": "meeting_doc_140486",
+          "event_kind": "accident",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MTA LIRR track equipment derailed fouling live track and was struck by a train carrying passengers near New Hyde Park Station. 72 claims related to this accident: 57 passenger injuries, 8 employee injuries, property damage. $11 million FMTAC Force Account retention limit paid. $8.6 million impacted ELF program.",
+          "date": "October 8, 2016"
+        },
+        {
+          "record_id": "event_nyct-bicycle-case",
+          "source_id": "meeting_doc_140486",
+          "event_kind": "accident",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Plaintiff rode bicycle through cordoned-off construction site beneath elevated subway line and was struck by a rotted cross tie. Jury awarded $110 million, reduced to roughly $69 million after post-trial motions. Case under appeal. Reported to ELF.",
+          "date": "April 10, 2016"
+        }
+      ]
+    },
+    {
+      "event_kind": "agenda item",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_2024-charter-transit-committee",
+          "source_id": "meeting_doc_160421",
+          "event_kind": "agenda item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Charter for Transit Committee",
+          "date": "December 2024"
+        },
+        {
+          "record_id": "event_final-review-2022-results-may2023",
+          "source_id": "meeting_doc_104711",
+          "event_kind": "agenda item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Final Review of 2022 Year-End Operating Results",
+          "date": "May 2023"
+        },
+        {
+          "record_id": "event_work-plan-approval-jan2023",
+          "source_id": "meeting_doc_104711",
+          "event_kind": "agenda item",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Approval of 2023 Work Plan by Committee Chair & Members",
+          "date": "January 2023"
+        }
+      ]
+    },
+    {
+      "event_kind": "board update",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_chair-board-update-mar2022",
+          "source_id": "meeting_doc_79786",
+          "event_kind": "board update",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Chair's March Board Update presenting MTA Seven Priorities for 2022",
+          "date": "March 30, 2022"
+        },
+        {
+          "record_id": "event_meeting-doc-171491-board-update",
+          "source_id": "meeting_doc_171491",
+          "event_kind": "board update",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Metro-North Railroad Service Plans for NJ Transit Strike update to the MTA Board",
+          "date": "April 30, 2025"
+        },
+        {
+          "record_id": "event_meeting-doc-42866-board-update",
+          "source_id": "meeting_doc_42866",
+          "event_kind": "board update",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MTA Board Update presentation by MTA Construction & Development",
+          "date": "June 23, 2021"
+        }
+      ]
+    },
+    {
+      "event_kind": "ceremony and parade",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_meeting-doc-160411-veterans-day",
+          "source_id": "meeting_doc_160411",
+          "event_kind": "ceremony and parade",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Veterans ERG Veterans Day Ceremony and Parade",
+          "description": "The Veteran ERG held their annual Veteran Day Ceremony to commemorate the service and sacrifice of our Armed Service Veterans. MTA Pipes and Drums, as well as The Color Guard, participated. Veterans took part in the NYC Veterans Day Parade.",
+          "date": "November 2024"
+        },
+        {
+          "record_id": "event_veterans-erg-ceremony-nov2024",
+          "source_id": "meeting_doc_160126",
+          "event_kind": "ceremony and parade",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Veterans ERG Veteran Day Ceremony and Parade",
+          "description": "The Veteran ERG held their annual Veteran Day Ceremony. MTA Pipes and Drums, as well as The Color Guard, participated. Veterans took part in the NYC Veterans Day Parade.",
+          "date": "November 2024"
+        },
+        {
+          "record_id": "event_veterans-erg-ceremony-parade-nov2024",
+          "source_id": "meeting_doc_160101",
+          "event_kind": "ceremony and parade",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Veteran ERG held annual Veterans Day Ceremony. MTA Pipes and Drums and Color Guard participated. Veterans took part in NYC Veterans Day Parade.",
+          "date": "November 2024"
+        }
+      ]
+    },
+    {
+      "event_kind": "closeout",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_massapequa-closeout_2",
+          "source_id": "meeting_doc_127536",
+          "event_kind": "closeout",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Massapequa Pocket Track closeout",
+          "date": "November 2021"
+        },
+        {
+          "record_id": "event_mid-suffolk-yard-closeout",
+          "source_id": "meeting_doc_100321",
+          "event_kind": "closeout",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Mid-Suffolk Yard (Phase 1) closeout forecast",
+          "date": "July 2023 (Forecast)"
+        },
+        {
+          "record_id": "event_mid-suffolk-yard-closeout_2",
+          "source_id": "meeting_doc_127536",
+          "event_kind": "closeout",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Mid-Suffolk Yard (Phase 1) closeout",
+          "date": "December 2022"
+        }
+      ]
+    },
+    {
+      "event_kind": "community_event",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_african-american-day-parade-sep2025",
+          "source_id": "meeting_doc_193981",
+          "event_kind": "community_event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "56th Annual African American Day Parade",
+          "description": "B.E.G.I.N. Employee Resource Group participating in the 56th Annual African American Day Parade at Adam Clayton Powell Jr. Blvd (7 Ave) between 111 – 137 St",
+          "date": "Sunday, September 21 12:30 – 6 PM"
+        },
+        {
+          "record_id": "event_lakeview-spring-cleanup",
+          "source_id": "meeting_doc_170831",
+          "event_kind": "community_event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Spring clean-up at Lakeview Station supported by LIRR",
+          "date": "April 12, 2025"
+        },
+        {
+          "record_id": "event_meeting-doc-128981-breast-cancer-walk-2023",
+          "source_id": "meeting_doc_128981",
+          "event_kind": "community_event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MTA employees united with American Cancer Society for the Making Strides Against Breast Cancer Walk in Central Park. 30th anniversary.",
+          "date": "October 15, 2023"
+        }
+      ]
+    },
+    {
+      "event_kind": "conference",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_meeting-doc-129116-pre-proposal-conference-sep2022",
+          "source_id": "meeting_doc_129116",
+          "event_kind": "conference",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Pre-proposal conference held on September 8, 2022, attended by New Flyer and Nova Bus.",
+          "date": "2022-09-08"
+        },
+        {
+          "record_id": "event_meeting-doc-isberg-conference-nov2022",
+          "source_id": "meeting_doc_102686",
+          "event_kind": "conference",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "ISBeRG (International Suburban Rail Benchmarking Group) end-of-year conference hosted by Metro-North and LIRR at Metro-North's Operations Training Center in GCT",
+          "date": "week of November 14, 2022"
+        },
+        {
+          "record_id": "event_meeting135266-c3rs-symposium",
+          "source_id": "meeting_doc_135266",
+          "event_kind": "conference",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "First industry-wide C3RS Confidential Close Call Reporting System Symposium at Grand Central Terminal",
+          "date": "March 12 and 13, 2024"
+        }
+      ]
+    },
+    {
+      "event_kind": "contract option period",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_aar-option-years-term",
+          "source_id": "meeting_doc_164791",
+          "event_kind": "contract option period",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Two-year Option period for Access-A-Ride Primary Carrier contracts (PTM, NYPG, AMR)",
+          "date": "April 1, 2025 – March 31, 2027"
+        },
+        {
+          "record_id": "event_c2k-option2-2026-2030",
+          "source_id": "meeting_doc_197031",
+          "event_kind": "contract option period",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "C2K Partners Option 2 Period",
+          "description": "56-month Option 2 period for Post-Award Consulting Services in support of R34211 Option 2 Subway Car Contract",
+          "date": "February 1, 2026–September 30, 2030"
+        },
+        {
+          "record_id": "event_meeting-doc-196901-c2k-option2-term",
+          "source_id": "meeting_doc_196901",
+          "event_kind": "contract option period",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "56-month Option 2 period for C2K Partners Post-Award Consulting Services in support of the R34211 Option 2 Subway Car Contract",
+          "date": "February 1, 2026–September 30, 2030"
+        }
+      ]
+    },
+    {
+      "event_kind": "contract_modification",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_hayden-mod1-award-20231221",
+          "source_id": "meeting_doc_138441",
+          "event_kind": "contract_modification",
+          "event_family": "other",
+          "lifecycle_phase": "modified",
+          "description": "Modification #1 to Hayden contract awarded in estimated amount of $63,477,161 for additional ABLE systems and contract term extension",
+          "date": "December 21, 2023"
+        },
+        {
+          "record_id": "event_meeting-doc-186836-hayden-mod1-award",
+          "source_id": "meeting_doc_186836",
+          "event_kind": "contract_modification",
+          "event_family": "other",
+          "lifecycle_phase": "modified",
+          "description": "Hayden awarded Modification 1 for $63,477,161, adding 723 ABLE systems for total of 1,023 systems, extending through December 2027",
+          "date": "December 21, 2023"
+        },
+        {
+          "record_id": "event_runwise-expansion-request",
+          "source_id": "meeting_doc_157706",
+          "event_kind": "contract_modification",
+          "event_family": "other",
+          "lifecycle_phase": "modified",
+          "description": "MTA Strategic Initiatives approached MTAHQ Procurement to add 38 new NYC Transit locations to the Runwise contract",
+          "date": "September 2024"
+        }
+      ]
+    },
+    {
+      "event_kind": "derailment",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_f-line-derailment-jan2024",
+          "source_id": "meeting_doc_133131",
+          "event_kind": "derailment",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "F Line derailment under NYCT investigation. Missing bolts found on incident car component. System-wide reverification of S2 track defects completed.",
+          "date": "January 10, 2024"
+        },
+        {
+          "record_id": "event_lirr-derailment-aug3-2023",
+          "source_id": "meeting_doc_124171",
+          "event_kind": "derailment",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Derailment of a Hempstead-bound passenger train east of Jamaica; 55 customers onboard, no severe injuries; caused by wiring issue in a single switch",
+          "date": "August 3"
+        },
+        {
+          "record_id": "event_lirr-work-train-derailment-sep7-2023",
+          "source_id": "meeting_doc_124171",
+          "event_kind": "derailment",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Partial derailment of an LIRR work train east of Queens Village; no injuries; full service restored by following morning; cause under investigation",
+          "date": "September 7"
+        }
+      ]
+    },
+    {
+      "event_kind": "employee_event",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_all-agency-accessible-programs",
+          "source_id": "meeting_doc_151826",
+          "event_kind": "employee_event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "All-Agency Accessible Programs",
+          "description": "Abilities ERG presents All-Agency Accessible Programs - insightful discussion on making the MTA more inclusive for everyone. 2 Broadway, 20th Floor conference room.",
+          "date": "Thursday, July 25, 12 PM"
+        },
+        {
+          "record_id": "event_cafecito-chat-jose-la-salle",
+          "source_id": "meeting_doc_151826",
+          "event_kind": "employee_event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Cafecito Chat with Jose La Salle",
+          "description": "Virtual Cafecito chat (interview) with Jose La Salle, Subway's Weekend Czar, hosted by Latinos & Friends ERG.",
+          "date": "October 4"
+        },
+        {
+          "record_id": "event_cafecito-chat-lourdes-zapata",
+          "source_id": "meeting_doc_151826",
+          "event_kind": "employee_event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Cafecito Chat with Lourdes Zapata",
+          "description": "Virtual Cafecito chat (interview) with Lourdes Zapata, MTA Chief Diversity & Inclusion Officer, hosted by Latinos & Friends ERG.",
+          "date": "September 20"
+        }
+      ]
+    },
+    {
+      "event_kind": "employee_resource_group_event",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_erg-back-to-school-photos-sept30",
+          "source_id": "meeting_doc_194051",
+          "event_kind": "employee_resource_group_event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Back to School Photos",
+          "description": "School photos - preschool to high school - and general talent. Submit photos by September 8.",
+          "date": "September 30"
+        },
+        {
+          "record_id": "event_erg-tabletop-model-train-project",
+          "source_id": "meeting_doc_194051",
+          "event_kind": "employee_resource_group_event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Tabletop Model Train Project",
+          "description": "Design. Build. Collaborate. Showcase your skills and talent! Learn 3D printing, design, and more."
+        },
+        {
+          "record_id": "event_tabletop-model-train-project",
+          "source_id": "meeting_doc_194046",
+          "event_kind": "employee_resource_group_event",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Tabletop Model Train Project",
+          "description": "Design. Build. Collaborate. 2 Broadway, 20th Fl Conference Room.",
+          "date": "Tuesday, April 23 12 PM – 1 PM"
+        }
+      ]
+    },
+    {
+      "event_kind": "exhibition",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_all-generational-train-module-exhibit-feb2025",
+          "source_id": "meeting_doc_170931",
+          "event_kind": "exhibition",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "All-Generational Train Module Exhibit",
+          "description": "All-day exhibition showcasing the efforts and creativity of the All-Generational members that participated in a year long joint train module building initiative.",
+          "date": "February 6, 2025"
+        },
+        {
+          "record_id": "event_dear-new-york-exhibition",
+          "source_id": "meeting_doc_189841",
+          "event_kind": "exhibition",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Dear New York / Humans of New York Installation",
+          "description": "For two weeks in October, a Humans of New York installation took over Grand Central Terminal. More than 150 digital screens were unified to showcase thousands of portraits and stories from artist Brandon Stanton's Humans of New York archive.",
+          "date": "October 6-19"
+        },
+        {
+          "record_id": "event_mnr-train-module-exhibit-feb2025",
+          "source_id": "meeting_doc_166916",
+          "event_kind": "exhibition",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Train Module Exhibit",
+          "description": "All-Generational ERG hosted an all-day exhibition showcasing a year-long joint train module building initiative",
+          "date": "February 6, 2025"
+        }
+      ]
+    },
+    {
+      "event_kind": "expansion",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_ace-expansion-manhattan-apr2025",
+          "source_id": "meeting_doc_167241",
+          "event_kind": "expansion",
+          "event_family": "other",
+          "lifecycle_phase": "expanded",
+          "description": "Expand Automated Camera Enforcement to two new routes in Manhattan",
+          "date": "April 2025"
+        },
+        {
+          "record_id": "event_fall-2024-strategic-expansion",
+          "source_id": "meeting_doc_140671",
+          "event_kind": "expansion",
+          "event_family": "other",
+          "lifecycle_phase": "expanded",
+          "description": "Onboard up to 800 new customers if budget impact is as expected",
+          "date": "Fall 2024"
+        },
+        {
+          "record_id": "event_scout-expansion-2024",
+          "source_id": "meeting_doc_135741",
+          "event_kind": "expansion",
+          "event_family": "other",
+          "lifecycle_phase": "expanded",
+          "description": "SCOUT expansion: 3 more teams in Bronx, Brooklyn, Queens in 2024; up to 10 teams by 2025",
+          "date": "2024-2025"
+        }
+      ]
+    },
+    {
+      "event_kind": "filing",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_cyber-cert-filing-2025",
+          "source_id": "meeting_doc_174056",
+          "event_kind": "filing",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Annual Cybersecurity Certification of Material Compliance filed with NYSDFS for FMTAC",
+          "date": "April 11, 2025"
+        },
+        {
+          "record_id": "event_mdoc135376-annual-report-filing",
+          "source_id": "meeting_doc_135376",
+          "event_kind": "filing",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MTA Prompt Payment Annual Report 2023 filed in accordance with legislative requirement",
+          "date": "February 7, 2024"
+        },
+        {
+          "record_id": "event_meeting-doc-174096-ftmac-cybersecurity-cert",
+          "source_id": "meeting_doc_174096",
+          "event_kind": "filing",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Seeking Board approval of the annual Cybersecurity Certification of Material Compliance, filed with the NYS Department of Financial Services on April 11, 2025, for First Mutual Transportation Assurance Company (FTMAC), reflecting updates to personnel and the cybersecurity plan in accordance with 23 NYCRR Part 500 (Cyber Security Regulation)",
+          "date": "April 11, 2025"
+        }
+      ]
+    },
+    {
+      "event_kind": "lease_agreement",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_meeting-doc-179656-lirr-mineola",
+          "source_id": "meeting_doc_179656",
+          "event_kind": "lease_agreement",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "LIRR Lease with Lessee: Interwings Food & Beverage at portions of Mineola Station Building and a Travel Convenience Unit. Operation of a cafe and bar for quick serve coffee/breakfast, lunch, dinner, and drinks, and a vending machine located in the waiting room. Term: 10 years. Compensation: $46,000/yr, 3% annual escalation. RFP Proposals included. Transaction Manager: Neil Mastropietro.",
+          "date": "10 years"
+        },
+        {
+          "record_id": "event_meeting-doc-199126-agreement-4-yono-gct",
+          "source_id": "meeting_doc_199126",
+          "event_kind": "lease_agreement",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MNR Lease Agreement with Licensee: Yono Grand Central, LLC at Grand Central Terminal - Dining Concourse LC-9. License agreement for the retail sale of fresh high-quality sushi. Term: 3 Years with 3% annual escalations. Year 1 Rent: $100,000.00, Year 2: $103,000.00, Year 3: $106,090.00. Transaction Manager: Danielle M. Gaudio.",
+          "date": "February 2026"
+        },
+        {
+          "record_id": "event_meeting-doc-199126-agreement-5-barberino-gct",
+          "source_id": "meeting_doc_199126",
+          "event_kind": "lease_agreement",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MNR Lease Agreement with Licensee: Barberino NY LLC at Grand Central Terminal - Lexington Passage MC-79. Lease agreement for the retail sale of luxury men's grooming brand products. Term: 5 Years with 3% annual escalations. Transaction Manager: Danielle M. Gaudio. Also includes sub-lease information for Dr Kirshchner and Two Kids and a Dog.",
+          "date": "February 2026"
+        }
+      ]
+    },
+    {
+      "event_kind": "license term",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_chashama-license-term",
+          "source_id": "meeting_doc_133386",
+          "event_kind": "license term",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Term of license between NYCT and Chashama Inc. for installation, maintenance, and display of artwork in three stations"
+        },
+        {
+          "record_id": "event_signage-license-term-nycdot",
+          "source_id": "meeting_doc_133386",
+          "event_kind": "license term",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Term of license between NYCT and NYC DOT for removal, installation, operation and maintenance of signage at St. George Ferry Terminal"
+        },
+        {
+          "record_id": "event_temp-license-queens-ballpark-term",
+          "source_id": "meeting_doc_133386",
+          "event_kind": "license term",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Term of temporary license agreement with Queens Ballpark Company LLC for access to property adjacent to Corona Substation",
+          "date": "December 4, 2023, to March 22, 2024"
+        }
+      ]
+    },
+    {
+      "event_kind": "observance",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_meeting-doc-135421-national-transit-employee-appreciation-day",
+          "source_id": "meeting_doc_135421",
+          "event_kind": "observance",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "National Transit Employee Appreciation Day; NYCT President Richard Davey spent the day in the field visiting NYCT team members",
+          "date": "March 18, 2024"
+        },
+        {
+          "record_id": "event_mnr-memorial-day-observance-2023",
+          "source_id": "meeting_doc_113931",
+          "event_kind": "observance",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MTA Veterans Employee Resource Group held a noontime Memorial Day Observance at 2 Broadway",
+          "date": "May 17, 2023"
+        },
+        {
+          "record_id": "event_veterans-memorial-day-observance-may2024",
+          "source_id": "meeting_doc_143161",
+          "event_kind": "observance",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "Veterans ERG Memorial Day Observance",
+          "description": "Veterans Employee Resource Group held a noontime Memorial Day Observance on May 28th at 2 Broadway.",
+          "date": "May 28, 2024"
+        }
+      ]
+    },
+    {
+      "event_kind": "payment",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_march2025-payment-meeting-doc-164946",
+          "source_id": "meeting_doc_164946",
+          "event_kind": "payment",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "MRT-2 Escalator Payments to Dutchess, Orange and Rockland Counties",
+          "description": "Statutorily required MRT-2 escalator payments totaling $7,051,265.10 expected to be made in March 2025",
+          "date": "March 2025"
+        },
+        {
+          "record_id": "event_meeting-doc-133381-mrt2-escalator-payments",
+          "source_id": "meeting_doc_133381",
+          "event_kind": "payment",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Statutorily required MRT-2 escalator payments to Dutchess, Orange and Rockland counties totaling $6,423,806.34 expected to be made",
+          "date": "March 2024"
+        },
+        {
+          "record_id": "event_mrt2-escalator-payments-march-2024",
+          "source_id": "meeting_doc_135356",
+          "event_kind": "payment",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "MRT-2 escalator payments totaling $6.424 million to Dutchess, Orange and Rockland Counties",
+          "date": "March 2024"
+        }
+      ]
+    },
+    {
+      "event_kind": "performance_review",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_2024-year-in-review",
+          "source_id": "meeting_doc_140306",
+          "event_kind": "performance_review",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "A review of the prior year's performance of railroad service will be provided to the Committee.",
+          "date": "February 2025"
+        },
+        {
+          "record_id": "event_2024-year-in-review-feb2025",
+          "source_id": "meeting_doc_160151",
+          "event_kind": "performance_review",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "A review of the prior year's performance of railroad service.",
+          "date": "February 2025"
+        },
+        {
+          "record_id": "event_meeting-doc-121101-annual-operating-results-feb2024",
+          "source_id": "meeting_doc_121101",
+          "event_kind": "performance_review",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Review of the prior year's performance of railroad service",
+          "date": "February 2024"
+        }
+      ]
+    },
+    {
+      "event_kind": "policy revision",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_meeting-doc-79496-gct-guidelines",
+          "source_id": "meeting_doc_79496",
+          "event_kind": "policy revision",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "GCT Leasing Guidelines Revision",
+          "description": "GCT Leasing Guidelines modified and presented at MTA Board Meeting; originally adopted November 18, 2009 with annual revisions through March 17, 2021",
+          "date": "March 2022"
+        },
+        {
+          "record_id": "event_meeting-doc-79496-lirr-med005",
+          "source_id": "meeting_doc_79496",
+          "event_kind": "policy revision",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "LIRR Alcohol and Substance Abuse Policy MED-005 Revision",
+          "description": "LIRR Corporate Policy MED-005 revised to add Mechanical Employees (MECH) to Regulated Service Employees classification per 49 CFR 219, and update Reasonable Cause testing guidelines",
+          "date": "March 2022"
+        },
+        {
+          "record_id": "event_meeting-doc-79496-mnr-21012",
+          "source_id": "meeting_doc_79496",
+          "event_kind": "policy revision",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "event_name": "MNR Alcohol and Substance Abuse Policy 21-012 Revision",
+          "description": "Metro-North Railroad Corporate Policy 21-012 updated to include Mechanical Employees under Regulated Service; administrative changes made to align with Federal regulations",
+          "date": "March 2022"
+        }
+      ]
+    },
+    {
+      "event_kind": "postponement",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_bx6-sbs-2023-delay",
+          "source_id": "bronx_bus_network_final_plan_addendum_2021",
+          "event_kind": "postponement",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Bx6 SBS implementation delayed until 2023 to coincide with MetroCard retirement and OMNY full deployment.",
+          "date": "until 2023"
+        },
+        {
+          "record_id": "event_meeting-doc-196846-postponed-minutes",
+          "source_id": "meeting_doc_196846",
+          "event_kind": "postponement",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Postponed approval of TBTA portion of Joint-agency Committee Meeting minutes from November 19, 2025 due to lack of quorum",
+          "date": "December 15, 2025"
+        },
+        {
+          "record_id": "event_meeting-doc-196846-postponed-workplan",
+          "source_id": "meeting_doc_196846",
+          "event_kind": "postponement",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Postponed approval of proposed 2026 TBTA Committee Work Plan due to lack of quorum",
+          "date": "December 15, 2025"
+        }
+      ]
+    },
+    {
+      "event_kind": "procurement",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_bx6-procurement-2023_2",
+          "source_id": "brt_bx6_cb2_edc_may2022",
+          "event_kind": "procurement",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Procurement for Bx6 SBS capital improvements",
+          "date": "Summer/Fall 2023"
+        },
+        {
+          "record_id": "event_meeting-doc-160311-proposal-received",
+          "source_id": "meeting_doc_160311",
+          "event_kind": "procurement",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "A single proposal was received from NY Waterway",
+          "date": "October 25, 2024"
+        },
+        {
+          "record_id": "event_mfg-qual-procurement",
+          "source_id": "meeting_doc_202091",
+          "event_kind": "procurement",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "Qualification & Procurement for modern fare gates",
+          "date": "Q1 2026 - Q2 2026"
+        }
+      ]
+    },
+    {
+      "event_kind": "project update",
+      "count": 3,
+      "samples": [
+        {
+          "record_id": "event_meeting-doc-128866-east-side-access-support-nov2024",
+          "source_id": "meeting_doc_128866",
+          "event_kind": "project update",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "The Committee will be briefed on the status of the East Side Access Support Projects.",
+          "date": "November 2024"
+        },
+        {
+          "record_id": "event_meeting-doc-128866-esa-support-nov2024",
+          "source_id": "meeting_doc_128866",
+          "event_kind": "project update",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "East Side Access Support Projects Update",
+          "date": "November 2024"
+        },
+        {
+          "record_id": "event_meeting-doc-nov2023-esa-support",
+          "source_id": "meeting_doc_104756",
+          "event_kind": "project update",
+          "event_family": "other",
+          "lifecycle_phase": "other",
+          "description": "East Side Access Support Projects Update - The Committee will be briefed on the status of the East Side Access Support Projects.",
+          "date": "November 2023"
+        }
+      ]
+    }
+  ]
+}

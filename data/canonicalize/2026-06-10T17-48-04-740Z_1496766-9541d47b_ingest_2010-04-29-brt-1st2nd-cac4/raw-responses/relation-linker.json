@@ -1,0 +1,743 @@
+{
+  "run_id": "2026-06-10T17-48-04-740Z_1496766-9541d47b_ingest_2010-04-29-brt-1st2nd-cac4",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-10T19:40:32.313Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "rel-m15-weekday-riders",
+        "local_observation_id": "metric_m15_weekday_riders_57000",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-sbs",
+            "object_id": "metric_m15-weekday-riders-57000_2",
+            "description": "Over 57,000 weekday riders on the M15",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p005_c0010",
+                "source_quote": "Over 57,000 weekday riders on the M15"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p005_c0010 names the M15 route explicitly — 'Over 57,000 weekday riders on the M15' — so the metric belongs to route_m15-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p005_c0010",
+            "source_quote": "Over 57,000 weekday riders on the M15"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-corridor-length",
+        "local_observation_id": "metric_corridor_length_8_5_miles",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "metric_corridor-length-8-5-miles_2",
+            "description": "8.5 miles from South Ferry to 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p005_c0010",
+                "source_quote": "8.5 miles from South Ferry to 125th Street"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p005_c0010 presents the corridor length as part of the SBS project context — 'About the Corridor • 8.5 miles from South Ferry to 125th Street'. Linked to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p005_c0010",
+            "source_quote": "8.5 miles from South Ferry to 125th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-residents-quarter-mile",
+        "local_observation_id": "metric_residents_within_quarter_mile",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "metric_residents-within-quarter-mile",
+            "description": "537,000 residents within 1/4 mile of the corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p005_c0010",
+                "source_quote": "537,000 residents"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p005_c0010 lists corridor demographics under the SBS newsletter. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p005_c0010",
+            "source_quote": "537,000 residents"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-households-no-car",
+        "local_observation_id": "metric_households_no_car_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "metric_households-no-car-pct",
+            "description": "79% of households do not own a car",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p005_c0010",
+                "source_quote": "79% of households do not own a car"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p005_c0010 presents demographic data under the SBS project newsletter. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p005_c0010",
+            "source_quote": "79% of households do not own a car"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-commute-transit-pct",
+        "local_observation_id": "metric_commute_by_transit_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "metric_commute-by-transit-pct",
+            "description": "5.7% of residents commute by transit",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p005_c0010",
+                "source_quote": "5.7% of residents commute by transit"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p005_c0010 presents corridor commute data within the SBS project context. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p005_c0010",
+            "source_quote": "5.7% of residents commute by transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-over-10-miles-facilities-metric",
+        "local_observation_id": "metric_over_10_miles_facilities",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "metric_over-10-miles-facilities",
+            "description": "Over 10 miles of new and improved bus and bicycle facilities",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p003_c0006",
+                "source_quote": "Over 10 miles of new and improved bus and bicycle facilities"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p003_c0006 states the facilities metric for the First Avenue/Second Avenue SBS project. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p003_c0006",
+            "source_quote": "Over 10 miles of new and improved bus and bicycle facilities"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-28th-st-stations",
+        "local_observation_id": "claim_28th_st_stations_added",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "claim_28th-st-stations-added",
+            "description": "Added 28th Street stations on First Avenue (northbound) and Second Avenue (southbound)",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p009_c0007",
+                "source_quote": "Added in response to analysis of current ridership"
+              }
+            ]
+          }
+        ],
+        "rationale": "Blocks p009_c0007, p014_c0007, and p017_c0005 all describe the 28th Street station addition as a change to the First Avenue/Second Avenue SBS project. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p009_c0007",
+            "source_quote": "Added in response to analysis of current ridership"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-curbside-bike-lane",
+        "local_observation_id": "claim_curbside_bicycle_lane_proposal",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "claim_curbside-bicycle-lane-proposal",
+            "description": "Curbside Bicycle Lane Proposal presented to CB6 in March 2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p016_c0005",
+                "source_quote": "Curbside Bicycle Lane Proposal"
+              }
+            ]
+          }
+        ],
+        "rationale": "Blocks p016_c0005-c0008 present the Curbside Bicycle Lane Proposal as part of the First Avenue/Second Avenue SBS project's bike facility improvement. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p016_c0005",
+            "source_quote": "Curbside Bicycle Lane Proposal"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-water-st-wall-st",
+        "local_observation_id": "claim_water_st_wall_st_station_changes",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "claim_water-st-wall-st-station-changes",
+            "description": "Water Street/Wall Street southbound SBS and local relocated to far side of Wall Street",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p007_c0008",
+                "source_quote": "SBS and local at far side of Wall Street"
+              }
+            ]
+          }
+        ],
+        "rationale": "Blocks p007_c0008-c0009 describe station changes for the Water Street/Wall Street stop as part of the SBS project. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p007_c0009",
+            "source_quote": "Relocated to improve hotel loading zone on Water Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-grand-st-allen-st",
+        "local_observation_id": "claim_grand_st_allen_st_station_changes",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "claim_grand-st-allen-st-station-changes",
+            "description": "Grand Street/Allen Street southbound SBS relocated south of local between Hester and Grand Streets",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p008_c0009",
+                "source_quote": "SBS south of local between Hester and Grand Streets"
+              }
+            ]
+          }
+        ],
+        "rationale": "Blocks p008_c0009-c0010 describe the Grand Street/Allen Street station relocation as part of the SBS project. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p008_c0010",
+            "source_quote": "Relocated to reduce conflicts with truck loading, bus activity on Allen Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-42nd-st-un",
+        "local_observation_id": "claim_42nd_st_station_relocated_un",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "claim_42nd-st-station-relocated-un",
+            "description": "First Avenue/42nd Street northbound SBS station relocated to between 43rd and 44th Streets",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p010_c0006",
+                "source_quote": "SBS north of local between 43 rd and 44 th Streets"
+              }
+            ]
+          }
+        ],
+        "rationale": "Blocks p010_c0006-c0007 describe the 42nd Street station relocation to address UN security concerns. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p010_c0007",
+            "source_quote": "Relocated to address United Nations security concerns"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-57th-st-trees",
+        "local_observation_id": "claim_57th_st_station_relocated_tree_impacts",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "claim_57th-st-station-relocated-tree-impacts",
+            "description": "57th Street/First Avenue northbound SBS station relocated to between 57th and 58th Streets",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p011_c0006",
+                "source_quote": "SBS north of local between 57 th and 58 th Streets"
+              }
+            ]
+          }
+        ],
+        "rationale": "Blocks p011_c0006-c0007 describe the 57th Street station relocation to reduce street tree impacts. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p011_c0007",
+            "source_quote": "Relocated through discussion with community and elected officials to reduce street tree impacts"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-116th-st-bus-bulb",
+        "local_observation_id": "claim_116th_st_station_bus_bulb",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "claim_116th-st-station-bus-bulb",
+            "description": "116th Street/Second Avenue southbound SBS station relocated south of 115th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p012_c0006",
+                "source_quote": "SBS south of local south of 115 th Street"
+              }
+            ]
+          }
+        ],
+        "rationale": "Blocks p012_c0006-c0007 describe the 116th Street station relocation to add a bus bulb. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p012_c0007",
+            "source_quote": "Relocated to add bus bulb where street widens"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-106th-st-bus-bulb",
+        "local_observation_id": "claim_106th_st_station_bus_bulb",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "claim_106th-st-station-bus-bulb",
+            "description": "106th Street/Second Avenue southbound SBS station relocated to between 107th and 106th Streets",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p013_c0006",
+                "source_quote": "SBS south of local between 107 th and 106 th Streets"
+              }
+            ]
+          }
+        ],
+        "rationale": "Blocks p013_c0006-c0007 describe the 106th Street station relocation to add a bus bulb. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p013_c0007",
+            "source_quote": "Relocated to add bus bulb where street widens"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-offset-bus-lane-regs",
+        "local_observation_id": "claim_offset_bus_lane_regulations",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "claim_offset-bus-lane-regulations",
+            "description": "Offset bus lane regulations: bus lane in effect at all times, curb lane parking regulations remain largely unchanged",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p022_c0006",
+                "source_quote": "Where bus lane is offset:"
+              }
+            ]
+          }
+        ],
+        "rationale": "Blocks p022_c0006-c0008 describe offset bus lane regulations for the First Avenue/Second Avenue SBS project. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p022_c0007",
+            "source_quote": "Bus lane in effect at all times"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-curb-bus-lane-hours",
+        "local_observation_id": "claim_curb_bus_lane_hours",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "claim_curb-bus-lane-hours",
+            "description": "Curb bus lane hours and parking regulations",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p024_c0005",
+                "source_quote": "Where bus lane is at the curb:"
+              }
+            ]
+          }
+        ],
+        "rationale": "Blocks p024_c0005-c0006 describe curb bus lane hours and parking regulations for the SBS project. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p024_c0006",
+            "source_quote": "Bus lane hours 7 am to 10 am, 2pm to 7pm"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-outreach-businesses",
+        "local_observation_id": "claim_outreach_businesses_notified",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "claim_outreach-businesses-notified",
+            "description": "Every storefront from Houston to 125th Street notified in person about the project",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p005_c0006",
+                "source_quote": "Every storefront from Houston to 125 th Street on both Avenues notified in person about the project"
+              }
+            ]
+          }
+        ],
+        "rationale": "Blocks p005_c0006 and p005_c0008 describe outreach to businesses along the corridor for the SBS project. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p005_c0008",
+            "source_quote": "99 businesses/institutions contacted to discuss loading patterns"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-over-10-miles-facilities-claim",
+        "local_observation_id": "claim_over_10_miles_facilities",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "claim_over-10-miles-facilities",
+            "description": "Over 10 miles of new and improved bus and bicycle facilities",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p003_c0006",
+                "source_quote": "Over 10 miles of new and improved bus and bicycle facilities"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p003_c0006 states the facilities scope for the First Avenue/Second Avenue SBS project. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p003_c0006",
+            "source_quote": "Over 10 miles of new and improved bus and bicycle facilities"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-protected-bike-path-parking",
+        "local_observation_id": "claim_protected_bike_path_parking",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "claim_protected-bike-path-parking",
+            "description": "Protected bike path parking regulations",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p023_c0005",
+                "source_quote": "Where protected bike path is applied:"
+              }
+            ]
+          }
+        ],
+        "rationale": "Blocks p023_c0005-c0007 describe parking regulations where protected bike paths are applied for the SBS project. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p023_c0006",
+            "source_quote": "Current parking regulations at curb remain largely unchanged in floating parking, except in locations with left-turn mixing zones"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-construction-sequencing",
+        "local_observation_id": "claim_construction_sequencing",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "claim_construction-sequencing",
+            "description": "Construction sequencing working north from First Avenue and Houston Street",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p020_c0006",
+                "source_quote": "Working north from First Avenue and Houston Street"
+              }
+            ]
+          }
+        ],
+        "rationale": "Blocks p020_c0006-c0009 describe the construction sequencing for the SBS project. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p020_c0007",
+            "source_quote": "▪ Milling ▪ Paving ▪ Lane Markings ▪ Bus and bike lane paint"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-construction-timeline",
+        "local_observation_id": "claim_construction_timeline_map",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "claim_construction-timeline-map",
+            "description": "Construction timeline by segment from May to September 2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p020_c0010",
+                "source_quote": "Yellow May-June Orange June-July Red July-August Brown August-September Grey No changes to street design in 2010"
+              }
+            ]
+          }
+        ],
+        "rationale": "Blocks p020_c0010-c0011 describe the construction timeline by color-coded segments for the SBS project. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p020_c0010",
+            "source_quote": "Yellow May-June Orange June-July Red July-August Brown August-September Grey No changes to street design in 2010"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m15-sbs-launch",
+        "local_observation_id": "event_m15_sbs_launch_oct_10_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "event_m15-sbs-launch-oct-10-2010",
+            "description": "M15 Select Bus Service begins October 10, 2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p003_c0005",
+                "source_quote": "M15 Select Bus Service begins: October 10, 2010"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p003_c0005 explicitly states the M15 SBS launch date as part of the project overview. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p003_c0005",
+            "source_quote": "M15 Select Bus Service begins: October 10, 2010"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-construction-begins",
+        "local_observation_id": "event_construction_begins_may_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "event_construction-begins-may-2010",
+            "description": "Construction begins in May 2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p003_c0007",
+                "source_quote": "Construction begins in May"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p003_c0007 states construction begins in May as part of the project overview. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p003_c0007",
+            "source_quote": "Construction begins in May"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-cac-5-midsummer",
+        "local_observation_id": "event_cac_5_mid_summer_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "event_cac-5-mid-summer-2010",
+            "description": "CAC #5 – Mid-summer 2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p028_c0008",
+                "source_quote": "CAC #5 – Mid-summer 2010"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p028_c0008 lists CAC #5 as a next step in the project. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p028_c0008",
+            "source_quote": "CAC #5 – Mid-summer 2010"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-open-house-2-sept",
+        "local_observation_id": "event_open_house_2_sept_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "event_open-house-2-sept-2010",
+            "description": "Open House #2 – September 2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p028_c0009",
+                "source_quote": "Open House #2 – September 2010"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p028_c0009 lists Open House #2 as a next step. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p028_c0009",
+            "source_quote": "Open House #2 – September 2010"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-cac-4-april-29",
+        "local_observation_id": "event_cac_4_april_29_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "event_cac-4-april-29-2010",
+            "description": "Community Advisory Committee Meeting #4 – April 29, 2010",
+            "evidence_refs": [
+              {
+                "source_id": "2010_04_29_brt_1st2nd_cac4",
+                "block_id": "p001_c0001",
+                "source_quote": "First Avenue/Second Avenue Select Bus Service Community Advisory Committee Meeting #4"
+              }
+            ]
+          }
+        ],
+        "rationale": "Blocks p001_c0001-c0002 identify this document itself as CAC Meeting #4 for the First Avenue/Second Avenue SBS project. Relates to project_first-second-ave-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p001_c0002",
+            "source_quote": "Julia De Burgos Latino Cultural Center Thursday, April 29, 2010"
+          }
+        ]
+      }
+    ],
+    "packet_id": "relation-linker"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-38-29-012Z_1647891-de982ef6_canonicalize_2026-06-10t17-48-04-740z-1496766-9541d47b-ingest-2010-04-29-brt-1st2nd-cac4-relation-linker"
+}

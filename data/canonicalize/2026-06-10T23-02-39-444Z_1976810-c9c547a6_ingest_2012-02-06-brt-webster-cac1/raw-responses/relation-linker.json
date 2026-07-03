@@ -1,0 +1,905 @@
+{
+  "run_id": "2026-06-10T23-02-39-444Z_1976810-c9c547a6_ingest_2012-02-06-brt-webster-cac1",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T02:27:49.869Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "rel-bx12-travel-time-reduction",
+        "local_observation_id": "metric_bx12_sbs_travel_time_reduction",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_bx12-plus",
+            "object_id": "metric_bx12-sbs-travel-time-reduction",
+            "description": "Bx12 SBS achieved 20% reduction in running time",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p011_c0001",
+                "source_quote": "Bx12 SBS | Results"
+              },
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p011_c0005",
+                "source_quote": "Travel Time"
+              },
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p011_c0006",
+                "source_quote": "20% reduction in running time"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p011_c0001 explicitly names Bx12 SBS; blocks p011_c0005 and p011_c0006 provide the metric value on the same Bx12 SBS Results page.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p011_c0001",
+            "source_quote": "Bx12 SBS | Results"
+          },
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p011_c0005",
+            "source_quote": "Travel Time"
+          },
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p011_c0006",
+            "source_quote": "20% reduction in running time"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bx12-ridership-increase",
+        "local_observation_id": "metric_bx12_sbs_ridership_increase",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_bx12-plus",
+            "object_id": "metric_bx12-sbs-ridership-increase",
+            "description": "Bx12 SBS achieved 7% ridership increase from June 2008 to June 2009",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p011_c0001",
+                "source_quote": "Bx12 SBS | Results"
+              },
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p011_c0007",
+                "source_quote": "Ridership"
+              },
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p011_c0008",
+                "source_quote": "7% increase from June 2008 to June 2009"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p011_c0001 explicitly names Bx12 SBS; blocks p011_c0007 and p011_c0008 provide the ridership metric on the same page.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p011_c0001",
+            "source_quote": "Bx12 SBS | Results"
+          },
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p011_c0007",
+            "source_quote": "Ridership"
+          },
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p011_c0008",
+            "source_quote": "7% increase from June 2008 to June 2009"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bx12-customer-satisfaction",
+        "local_observation_id": "metric_bx12_sbs_customer_satisfaction",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_bx12-plus",
+            "object_id": "metric_bx12-sbs-customer-satisfaction",
+            "description": "Bx12 SBS achieved 98% customer satisfaction",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p011_c0001",
+                "source_quote": "Bx12 SBS | Results"
+              },
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p011_c0009",
+                "source_quote": "Customer Satisfaction"
+              },
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p011_c0010",
+                "source_quote": "98% satisfied or very satisfied"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p011_c0001 explicitly names Bx12 SBS; blocks p011_c0009 and p011_c0010 provide the satisfaction metric on the same page.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p011_c0001",
+            "source_quote": "Bx12 SBS | Results"
+          },
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p011_c0009",
+            "source_quote": "Customer Satisfaction"
+          },
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p011_c0010",
+            "source_quote": "98% satisfied or very satisfied"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bx41-one-way-travel-time",
+        "local_observation_id": "metric_bx41_one_way_travel_time",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_bx41-ltd-webster-2012",
+            "object_id": "metric_bx41-one-way-travel-time",
+            "description": "Bx41 one-way travel time ranges from 37 to 57 minutes",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p013_c0003",
+                "source_quote": "Based on the existing Bx41 route"
+              },
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p016_c0003",
+                "source_quote": "One-way travel time: 37-57 minutes"
+              }
+            ]
+          }
+        ],
+        "rationale": "p013_c0003 establishes the presentation is about the Bx41 route; p016_c0003 provides the one-way travel time metric.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p013_c0003",
+            "source_quote": "Based on the existing Bx41 route"
+          },
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p016_c0003",
+            "source_quote": "One-way travel time: 37-57 minutes"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bx41-daily-riders",
+        "local_observation_id": "metric_bx41_daily_riders",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_bx41-ltd-webster-2012",
+            "object_id": "metric_bx41-daily-riders",
+            "description": "Bx41 serves 22,000 daily riders",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p024_c0002",
+                "source_quote": "Faster and more reliable transit service for the 22,000 daily Bx41 riders"
+              }
+            ]
+          }
+        ],
+        "rationale": "p024_c0002 explicitly names Bx41 and states 22,000 daily riders.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p024_c0002",
+            "source_quote": "Faster and more reliable transit service for the 22,000 daily Bx41 riders"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bx41-delay-in-motion",
+        "local_observation_id": "metric_bx41_delay_in_motion",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_bx41-ltd-webster-2012",
+            "object_id": "metric_bx41-delay-in-motion",
+            "description": "Bx41 bus spends 49% of time in motion",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p013_c0003",
+                "source_quote": "Based on the existing Bx41 route"
+              },
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p016_c0002",
+                "source_quote": "A pie chart illustrating the causes of bus delay. The chart is divided into four segments: 'In Motion' (49%), 'Red Lights' (26%), 'Bus Stops' (24%), and 'Other' (1%)."
+              }
+            ]
+          }
+        ],
+        "rationale": "p013_c0003 establishes this presentation is about the Bx41 route; p016_c0002 provides the delay breakdown on the bus delay page.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p013_c0003",
+            "source_quote": "Based on the existing Bx41 route"
+          },
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p016_c0002",
+            "source_quote": "A pie chart illustrating the causes of bus delay. The chart is divided into four segments: 'In Motion' (49%), 'Red Lights' (26%), 'Bus Stops' (24%), and 'Other' (1%)."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bx41-delay-red-lights",
+        "local_observation_id": "metric_bx41_delay_red_lights",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_bx41-ltd-webster-2012",
+            "object_id": "metric_bx41-delay-red-lights",
+            "description": "Bx41 bus spends 26% of time at red lights",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p013_c0003",
+                "source_quote": "Based on the existing Bx41 route"
+              },
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p016_c0002",
+                "source_quote": "A pie chart illustrating the causes of bus delay. The chart is divided into four segments: 'In Motion' (49%), 'Red Lights' (26%), 'Bus Stops' (24%), and 'Other' (1%)."
+              }
+            ]
+          }
+        ],
+        "rationale": "Same source context as delay-in-motion; p013_c0003 confirms Bx41 route, p016_c0002 provides red light delay pct.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p013_c0003",
+            "source_quote": "Based on the existing Bx41 route"
+          },
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p016_c0002",
+            "source_quote": "A pie chart illustrating the causes of bus delay. The chart is divided into four segments: 'In Motion' (49%), 'Red Lights' (26%), 'Bus Stops' (24%), and 'Other' (1%)."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bx41-delay-bus-stops",
+        "local_observation_id": "metric_bx41_delay_bus_stops",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_bx41-ltd-webster-2012",
+            "object_id": "metric_bx41-delay-bus-stops",
+            "description": "Bx41 bus spends 24% of time at bus stops",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p013_c0003",
+                "source_quote": "Based on the existing Bx41 route"
+              },
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p016_c0002",
+                "source_quote": "A pie chart illustrating the causes of bus delay. The chart is divided into four segments: 'In Motion' (49%), 'Red Lights' (26%), 'Bus Stops' (24%), and 'Other' (1%)."
+              }
+            ]
+          }
+        ],
+        "rationale": "Same source context; p013_c0003 confirms subject is Bx41, p016_c0002 provides bus stops delay pct.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p013_c0003",
+            "source_quote": "Based on the existing Bx41 route"
+          },
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p016_c0002",
+            "source_quote": "A pie chart illustrating the causes of bus delay. The chart is divided into four segments: 'In Motion' (49%), 'Red Lights' (26%), 'Bus Stops' (24%), and 'Other' (1%)."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bx41-delay-other",
+        "local_observation_id": "metric_bx41_delay_other",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_bx41-ltd-webster-2012",
+            "object_id": "metric_bx41-delay-other",
+            "description": "Bx41 bus spends 1% of time on other delay causes",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p013_c0003",
+                "source_quote": "Based on the existing Bx41 route"
+              },
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p016_c0002",
+                "source_quote": "A pie chart illustrating the causes of bus delay. The chart is divided into four segments: 'In Motion' (49%), 'Red Lights' (26%), 'Bus Stops' (24%), and 'Other' (1%)."
+              }
+            ]
+          }
+        ],
+        "rationale": "Same source context; p013_c0003 confirms Bx41 route, p016_c0002 provides other delay pct.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p013_c0003",
+            "source_quote": "Based on the existing Bx41 route"
+          },
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p016_c0002",
+            "source_quote": "A pie chart illustrating the causes of bus delay. The chart is divided into four segments: 'In Motion' (49%), 'Red Lights' (26%), 'Bus Stops' (24%), and 'Other' (1%)."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-safety-e-gun-hill-rd-crashes",
+        "local_observation_id": "metric_safety_e_gun_hill_rd_crashes",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_safety-e-gun-hill-rd-crashes",
+            "description": "E Gun Hill Rd had 119 total crashes from 2006-11 along the Webster Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p023_c0003",
+                "source_quote": "E Gun Hill Rd 119 19% 2"
+              }
+            ]
+          }
+        ],
+        "rationale": "p023_c0003 explicitly names E Gun Hill Rd and provides crash data; this is a cross street along Webster Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p023_c0003",
+            "source_quote": "E Gun Hill Rd 119 19% 2"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-safety-e-fordham-rd-crashes",
+        "local_observation_id": "metric_safety_e_fordham_rd_crashes",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_safety-e-fordham-rd-crashes",
+            "description": "E Fordham Rd had 129 total crashes from 2006-11 along the Webster Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p023_c0003",
+                "source_quote": "E Fordham Rd 129 35% -"
+              }
+            ]
+          }
+        ],
+        "rationale": "p023_c0003 explicitly names E Fordham Rd and provides crash data; this is a cross street along Webster Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p023_c0003",
+            "source_quote": "E Fordham Rd 129 35% -"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-safety-white-plains-rd-crashes",
+        "local_observation_id": "metric_safety_white_plains_rd_crashes",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_safety-white-plains-rd-crashes",
+            "description": "White Plains Rd had 102 total crashes from 2006-11 along the Webster Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p023_c0003",
+                "source_quote": "White Plains Rd 102 28% -"
+              }
+            ]
+          }
+        ],
+        "rationale": "p023_c0003 explicitly names White Plains Rd and provides crash data.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p023_c0003",
+            "source_quote": "White Plains Rd 102 28% -"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-safety-e-tremont-ave-crashes",
+        "local_observation_id": "metric_safety_e_tremont_ave_crashes",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_safety-e-tremont-ave-crashes",
+            "description": "E Tremont Ave had 78 total crashes from 2006-11 along the Webster Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p023_c0003",
+                "source_quote": "E Tremont Ave 78 18% -"
+              }
+            ]
+          }
+        ],
+        "rationale": "p023_c0003 explicitly names E Tremont Ave and provides crash data.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p023_c0003",
+            "source_quote": "E Tremont Ave 78 18% -"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-safety-e-gun-hill-rd-ped-fatalities",
+        "local_observation_id": "metric_safety_e_gun_hill_rd_ped_fatalities",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_safety-e-gun-hill-rd-ped-fatalities",
+            "description": "E Gun Hill Rd had 2 pedestrian fatalities from 2006-11",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p023_c0003",
+                "source_quote": "E Gun Hill Rd 119 19% 2"
+              }
+            ]
+          }
+        ],
+        "rationale": "p023_c0003 explicitly names E Gun Hill Rd and provides pedestrian fatality count.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p023_c0003",
+            "source_quote": "E Gun Hill Rd 119 19% 2"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-safety-e-gun-hill-rd-ped-pct",
+        "local_observation_id": "metric_safety_e_gun_hill_rd_ped_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_safety-e-gun-hill-rd-ped-pct",
+            "description": "E Gun Hill Rd pedestrian crash percentage is 19%",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p023_c0003",
+                "source_quote": "E Gun Hill Rd 119 19% 2"
+              }
+            ]
+          }
+        ],
+        "rationale": "p023_c0003 explicitly names E Gun Hill Rd and provides pedestrian percentage.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p023_c0003",
+            "source_quote": "E Gun Hill Rd 119 19% 2"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-safety-e-fordham-rd-ped-pct",
+        "local_observation_id": "metric_safety_e_fordham_rd_ped_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_safety-e-fordham-rd-ped-pct",
+            "description": "E Fordham Rd pedestrian crash percentage is 35%",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p023_c0003",
+                "source_quote": "E Fordham Rd 129 35% -"
+              }
+            ]
+          }
+        ],
+        "rationale": "p023_c0003 explicitly names E Fordham Rd and provides pedestrian percentage.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p023_c0003",
+            "source_quote": "E Fordham Rd 129 35% -"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-safety-white-plains-rd-ped-pct",
+        "local_observation_id": "metric_safety_white_plains_rd_ped_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_safety-white-plains-rd-ped-pct",
+            "description": "White Plains Rd pedestrian crash percentage is 28%",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p023_c0003",
+                "source_quote": "White Plains Rd 102 28% -"
+              }
+            ]
+          }
+        ],
+        "rationale": "p023_c0003 explicitly names White Plains Rd and provides pedestrian percentage.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p023_c0003",
+            "source_quote": "White Plains Rd 102 28% -"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-safety-e-tremont-ave-ped-pct",
+        "local_observation_id": "metric_safety_e_tremont_ave_ped_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "metric_safety-e-tremont-ave-ped-pct",
+            "description": "E Tremont Ave pedestrian crash percentage is 18%",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p023_c0003",
+                "source_quote": "E Tremont Ave 78 18% -"
+              }
+            ]
+          }
+        ],
+        "rationale": "p023_c0003 explicitly names E Tremont Ave and provides pedestrian percentage.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p023_c0003",
+            "source_quote": "E Tremont Ave 78 18% -"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-corridor-residents",
+        "local_observation_id": "claim_webster_corridor_residents",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "claim_webster-corridor-residents",
+            "description": "125,000 residents within a quarter mile of the Webster Avenue Corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p013_c0003",
+                "source_quote": "Within a quarter mile of the corridor: - 125,000 residents"
+              }
+            ]
+          }
+        ],
+        "rationale": "p013_c0003 is on page 13 titled 'Webster Avenue Corridor' and describes corridor demographics.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p013_c0003",
+            "source_quote": "Within a quarter mile of the corridor: - 125,000 residents"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-corridor-car-ownership",
+        "local_observation_id": "claim_webster_corridor_car_ownership",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "claim_webster-corridor-car-ownership",
+            "description": "74% of households along the Webster Avenue Corridor do not own a car",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p013_c0003",
+                "source_quote": "74% of households do not own a car"
+              }
+            ]
+          }
+        ],
+        "rationale": "p013_c0003 is on the 'Webster Avenue Corridor' page and provides demographic data about the corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p013_c0003",
+            "source_quote": "74% of households do not own a car"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-corridor-transit-commute",
+        "local_observation_id": "claim_webster_corridor_transit_commute",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "claim_webster-corridor-transit-commute",
+            "description": "61% of residents along the Webster Avenue Corridor commute by transit",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p013_c0003",
+                "source_quote": "61% of residents commute by transit"
+              }
+            ]
+          }
+        ],
+        "rationale": "p013_c0003 is on the 'Webster Avenue Corridor' page and provides commute data about the corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p013_c0003",
+            "source_quote": "61% of residents commute by transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-safety-problem-areas",
+        "local_observation_id": "claim_safety_problem_areas",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_webster-ave-bronx",
+            "object_id": "claim_safety-problem-areas",
+            "description": "Safety problem areas along Webster Avenue corridor: E Gun Hill Rd, Fordham Rd, E Tremont Ave",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p023_c0002",
+                "source_quote": "5-year analysis (2006-11)"
+              },
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p023_c0002",
+                "source_quote": "Problem areas: - E Gun Hill Rd - Fordham Rd - E Tremont Ave"
+              }
+            ]
+          }
+        ],
+        "rationale": "p023_c0002 identifies safety problem areas along the corridor; the presentation is about Webster Avenue SBS.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p023_c0002",
+            "source_quote": "5-year analysis (2006-11)"
+          },
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p023_c0002",
+            "source_quote": "Problem areas: - E Gun Hill Rd - Fordham Rd - E Tremont Ave"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-project-benefits",
+        "local_observation_id": "claim_project_benefits",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "claim_project-benefits",
+            "description": "Webster Avenue SBS project benefits for Bx41 riders",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p024_c0002",
+                "source_quote": "Faster and more reliable transit service for the 22,000 daily Bx41 riders"
+              }
+            ]
+          }
+        ],
+        "rationale": "p024_c0002 is on the 'Project benefits' page of the Webster Avenue SBS presentation and describes specific project benefits.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p024_c0002",
+            "source_quote": "Faster and more reliable transit service for the 22,000 daily Bx41 riders"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-cac-meeting-feb6-2012",
+        "local_observation_id": "event_cac_meeting_feb6_2012",
+        "decision": "skip",
+        "rationale": "Already linked: has_timeline_event project_12-webster-ave -> event_cac-meeting-feb6-2012 in existing_relation_keys.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p001_c0003",
+            "source_quote": "Community Advisory Committee Meeting | February 6, 2012 | 6:30pm | Lincoln Hospital"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-step2-design-ideas-spring2012",
+        "local_observation_id": "event_step2_design_ideas_spring2012",
+        "decision": "skip",
+        "rationale": "Already linked: has_timeline_event project_12-webster-ave -> event_step2-design-ideas-spring2012 in existing_relation_keys.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p026_c0006",
+            "source_quote": "Spring 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-step3-preferred-plan-summer-fall2012",
+        "local_observation_id": "event_step3_preferred_plan_summer_fall2012",
+        "decision": "skip",
+        "rationale": "Already linked: has_timeline_event project_12-webster-ave -> event_step3-preferred-plan-summer-fall2012 in existing_relation_keys.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p027_c0006",
+            "source_quote": "Summer/Fall 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-step1-data-collection-winter2011-2012",
+        "local_observation_id": "event_step1_data_collection_winter2011_2012",
+        "decision": "skip",
+        "rationale": "Already linked: has_timeline_event project_12-webster-ave -> event_step1-data-collection-winter2011-2012 in existing_relation_keys.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p025_c0006",
+            "source_quote": "Winter 2011/12"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-step4-final-design-implementation-2013-2014",
+        "local_observation_id": "event_step4_final_design_implementation_2013_2014",
+        "decision": "skip",
+        "rationale": "Already linked: has_timeline_event project_12-webster-ave -> event_step4-final-design-implementation-2013-2014 in existing_relation_keys.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p028_c0006",
+            "source_quote": "2013-2014"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-next-steps-winter-spring-2012",
+        "local_observation_id": "event_next_steps_winter_spring_2012",
+        "decision": "skip",
+        "rationale": "Already linked: has_timeline_event project_12-webster-ave -> event_next-steps-winter-spring-2012 in existing_relation_keys.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p030_c0002",
+            "source_quote": "Winter 2012 – Continue data analysis – Develop design ideas ▪ Spring 2012 – 2 nd CAC meeting to discuss design ideas – Develop preferred plan"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bx12-sbs-implementation-june2008",
+        "local_observation_id": "event_bx12_sbs_implementation_june2008",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "route_bx12-plus",
+            "object_id": "event_bx12-sbs-implementation-june2008",
+            "description": "Bx12 SBS was implemented in June 2008",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p011_c0001",
+                "source_quote": "Bx12 SBS | Results"
+              },
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p011_c0003",
+                "source_quote": "Implementation"
+              },
+              {
+                "source_id": "2012_02_06_brt_webster_cac1",
+                "block_id": "p011_c0004",
+                "source_quote": "June 2008"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0001 names Bx12 SBS; p011_c0003 and p011_c0004 state implementation date of June 2008 on the same page.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p011_c0001",
+            "source_quote": "Bx12 SBS | Results"
+          },
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p011_c0003",
+            "source_quote": "Implementation"
+          },
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p011_c0004",
+            "source_quote": "June 2008"
+          }
+        ]
+      }
+    ],
+    "packet_id": "relation-linker"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-21-29-160Z_2111393-ab4c3be2_canonicalize_2026-06-10t23-02-39-444z-1976810-c9c547a6-ingest-2012-02-06-brt-webster-cac1-relation-linker"
+}

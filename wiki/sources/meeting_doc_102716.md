@@ -1,0 +1,181 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-102716"
+record_kind: "source"
+display_name: "Metro-North 2023 Final Proposed Budget"
+source_id: "meeting_doc_102716"
+source_ids:
+  - "meeting_doc_102716"
+local_observation_id: "source_meeting_doc_102716"
+local_observation_ids:
+  - "source_meeting_doc_102716"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T19:34:49.023Z"
+submission_ids:
+  - "sub_7977192d84885d02"
+payload:
+  authority_tier: "board_material"
+  content_type: "Staff Summary"
+  date_text: "December 8, 2022"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2022-12-08"
+    precision: "day"
+    raw_text: "December 8, 2022"
+  description: "Staff summary to secure MTA Board adoption of MTA Metro-North Railroad's 2022 November Forecast, 2023 Final Proposed Budget, and Four-Year Financial Plan for 2023-2026."
+  document_date: "December 8, 2022"
+  document_date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2022-12-08"
+    precision: "day"
+    raw_text: "December 8, 2022"
+  published_date_normalized: "2022-12-08"
+  published_date_precision: "day"
+  title: "Metro-North 2023 Final Proposed Budget"
+evidence_refs:
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_102716#p001_c0004"
+    page_number: 1
+    role: "contains subject and date"
+    source_id: "meeting_doc_102716"
+    source_path: "raw/sources/meeting_doc_102716/blocks.jsonl"
+    text_sha256: "sha256:0d875f5e015b7fd451faf32aff6b7e6fd018383fa9fd0e7a75f13390965e99ad"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0008"
+    evidence_id: "meeting_doc_102716#p001_c0008"
+    page_number: 1
+    role: "contains purpose"
+    source_id: "meeting_doc_102716"
+    source_path: "raw/sources/meeting_doc_102716/blocks.jsonl"
+    text_sha256: "sha256:1cd50c253c1d3b90fd15f8d8fb153bd97f105974a4e03854d27de76c0f9ec51a"
+    text_source: "raw_text"
+---
+
+# Metro-North 2023 Final Proposed Budget
+
+source_id: meeting_doc_102716
+citation: cite block ids exactly as shown in square brackets
+document: 42 block(s)
+
+## Page 1
+
+### [p001_c0001] Page 1 of 2
+### [p001_c0002] Metro-North Railroad
+### [p001_c0003] Staff Summary
+[p001_c0004]
+
+```text
+Subject MNR 2023 Budget and 2023-2026 Financial Plan Adoption Date December 8, 2022 Department Office of the Chief Financial Officer Vendor Name Department Head Name Kevin Willens, Chief Financial Officer Contract Number Department Head Signature Kevin Willens Contract Manager Name Project Manager Name David Keller DK Table of Contents Ref#
+```
+[p001_c0005]
+
+```text
+Board Action Order To Date Approval Info Other 1 MNR&LIRR Comm. Mtg. 12/19/2022 X 2 MTA Fin. Comm. 12/19/2022 X 3 MTA Board Mtg. 12/21/2022 X
+```
+[p001_c0006]
+
+```text
+Internal Approvals Order Approval Order Approval 3 President CAR 1 OMB DK VP Operations VP Capital Programs 2 Financial Liaison SW Engr/Const Controller Project Reporting
+```
+### [p001_c0007] Purpose
+[p001_c0008] To secure MTA Board adoption of the MTA Metro-North Railroad's (Metro-North) 2022 November Forecast, 2023 Final Proposed Budget, and the Four-Year Financial Plan for 2023-2026.
+### [p001_c0009] Discussion
+[p001_c0010] The 2023 Final Proposed Budget, which is consistent with information presented to the Board in November, provides funding for strategic investments that further promote safe, secure, and reliable transportation service for our customers, continuing improvements in our infrastructure, and a safe and secure working environment for our employees. Metro-North projections do not include the estimated impacts from projected fare increases in New York State and MTA policy actions. These impacts will be presented as part of the MTA consolidated materials.
+[p001_c0011] The 2023 Final Proposed Budget includes key initiatives deemed essential to providing safe and reliable service for our customers as well as meet service demands. These key initiatives are:
+- [p001_c0012] • Locomotive Engineer Workforce – In order to meet service requirements, maintain a qualified workforce and provide outstanding customer service, Metro-North is taking a focused effort to increase Locomotive Engineer headcount that will enable the Transportation Department to address short-term and long-term staffing needs, meet training standards, and address overall staffing shortages. • Increase Transportation Trainmasters to Increase Supervisory Oversight of Train Crew – Hire eight trainmasters to increase supervisory oversight of train crews. This program will bring Metro-North closer in alignment with the supervisory oversight and span of control in place at the Long Island Rail Road. • Dedicated Connecticut/NHL Drainage Gang – Create a dedicated Connecticut drainage gang that is needed to methodically address drainage issues on a programmatic basis to reduce adverse track conditions, such as mud spots and flooding, which negatively impacts equipment and causes service disruptions. Repairs and upgrades to drainage will improve the integrity of the system and promote a stable track structure, which will help to remove speed restrictions. The Connecticut Department of Transportation (CDOT) supports this initiative. • Rolling Stock Predictive Maintenance Application – Maintenance of Equipment will implement predictive maintenance solutions powered by artificial intelligence and machine learning to help shift from a reactive to a proactive approach. Predictive maintenance forecasts the right part at the right time thereby reducing unscheduled maintenance and rolling stock failures leading to increased reliability and fleet availability.
+[p001_c0013] _The legal name of MTA Metro-North Railroad is Metro-North Commuter Railroad Company_
+
+## Page 2
+
+### [p002_c0001] Page 2 of 2
+### [p002_c0002] 2022 November Forecast-Baseline
+[p002_c0003] The 2022 Non-Reimbursable Forecast reflects revenues totaling $464.1 million, including $430.9 million of farebox revenue and $33.2 million in other operating revenue. Total operating expense projections of $1,796.3 million consist of labor costs of $983.6 million, non-labor costs of $434.2 million and non-cash liability adjustments of $378.5 million. After including cash adjustments of $352.8 million, the projected net cash deficit is $979.5 million, of which $723.9 million represents the MTA share and $255.6 million the CDOT share. Total reimbursable expense projections of $297.7 million are fully offset by capital reimbursements. Total end-of-year authorized positions are projected at 7,080 and include 6,518 non-reimbursable positions and 562 reimbursable positions.
+### [p002_c0004] 2023 Final Proposed Budget-Baseline
+[p002_c0005] The 2023 Final Proposed Non-Reimbursable Budget reflects revenues totaling $547.8 million. Farebox revenue of $508.4 million reflects the "midpoint" of the 2022 McKinsey ridership recovery scenarios and includes the extension of fare promotion discounts. Other operating revenue of $39.5 million reflects Grand Central Terminal net retail revenues, advertising, and outlying station & parking revenue. Total operating expense projections of $1,870.1 million consist of labor costs of $1,019.7 million, non-labor costs of $466.4 million and non-cash liability adjustments of $384.0 million. After including cash adjustments of $269.2 million, the projected net cash deficit is $1,053.1 million, of which $786.6 million represents the MTA share and $266.5 million the CDOT share. Total reimbursable expense projections of $332.5 million are fully offset by capital reimbursements. Total end-of-year authorized positions are projected at 7,144 and include 6,343 non-reimbursable positions and 801 reimbursable positions.
+### [p002_c0006] Impact on Funding
+[p002_c0007] The 2022 November Forecast, the 2023 Final Proposed Budget and the Four-Year Financial Plan for 2023-2026, which are presented in the attached tables, are consistent with the proposed MTA Financial Plan.
+### [p002_c0008] Recommendation
+[p002_c0009] It is recommended that the MTA Board adopt the 2022 November Forecast, the 2023 Final Proposed Budget, and the Four-Year Financial Plan for 2023-2026 for MTA Metro-North Railroad.
+[p002_c0010] _The legal name of MTA Metro-North Railroad is Metro-North Commuter Railroad Company_
+
+## Page 3
+
+### [p003_c0001] MTA METRO-NORTH RAILROAD November Financial Plan 2023 - 2026 Accrual Statement of Operations By Category ($ in millions)
+[p003_c0002]
+
+```text
+Actual 2021 November Forecast 2022 Final Proposed Budget 2023 2024 2025 2026 Non-Reimbursable Operating Revenue Farebox Revenue $262,660 $430,898 $508,372 $503,468 $509,968 $517,287 Other Operating Revenue 383,824 33,169 39,453 55,134 56,734 58,293 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $646,484 $464,067 $547,825 $558,602 $566,702 $575,580 Operating Expense Labor: Payroll $518,805 $546,886 $577,475 $598,367 $618,583 $643,761 Overtime 85,958 93,927 94,939 96,410 98,298 100,223 Health and Welfare 105,648 117,507 122,575 127,533 132,236 138,391 OPEB Current Payments 41,774 45,000 46,000 47,000 48,000 49,000 Pension 121,741 122,347 125,254 123,304 123,505 123,431 Other Fringe Benefits 122,310 138,480 142,192 146,651 151,083 156,526 Reimbursable Overhead (57,296) (80,577) (88,707) (85,818) (78,507) (79,912) Total Labor Expenses $938,939 $983,569 $1,019,728 $1,053,447 $1,093,197 $1,131,421 Non-Labor: Electric Power $58,969 $92,875 $101,008 $97,290 $96,709 $96,806 Fuel 17,927 34,133 33,996 29,832 27,667 28,236 Insurance 17,421 18,939 24,023 28,807 34,640 41,792 Claims 1,553 1,000 1,000 1,000 1,000 1,000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 111,037 119,060 128,607 127,280 129,947 125,198 Professional Services Contracts 32,169 43,365 41,946 45,102 41,504 41,135 Materials and Supplies 95,268 100,401 113,014 140,622 166,431 170,109 Other Business Expenses 20,432 24,463 22,765 22,491 22,186 22,081 Total Non-Labor Expenses $354,776 $434,236 $466,359 $492,425 $520,084 $526,357 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $1,293,716 $1,417,805 $1,486,087 $1,545,871 $1,613,281 $1,657,779 Depreciation $315,715 $301,941 $298,566 $297,429 $298,709 $300,789 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 119,812 70,202 69,844 72,135 74,581 77,217 GASB 68 Pension Expense Adjustment 10,427 2,380 11,610 (13,080) 6,190 (11,690) Environmental Remediation (0.230) 4.000 4.000 4.000 4.000 4.000 Total Expenses $1,739,439 $1,796,327 $1,870,106 $1,906,356 $1,996,762 $2,028,094 Net Surplus/(Deficit) ($1,092,955) ($1,332,260) ($1,322,282) ($1,347,754) ($1,430,060) ($1,452,514) Cash Conversion Adjustments Depreciation $315,715 $301,941 $298,566 $297,429 $298,709 $300,789 Operating/Capital (37,777) (27,635) (74,798) (41,204) (26,265) (28,921) Other Cash Adjustments 64,431 78,490 45,463 49,065 59,931 32,770 Total Cash Conversion Adjustments $342,369 $352,795 $269,231 $305,290 $332,375 $304,638 Net Cash Surplus/(Deficit) ($750,586) ($979,465) ($1,053,051) ($1,042,463) ($1,097,685) ($1,147,877)
+```
+
+## Page 4
+
+### [p004_c0001] MTA METRO-NORTH RAILROAD November Financial Plan 2023 - 2026 Accrual Statement of Operations By Category ($ in millions)
+[p004_c0002]
+
+```text
+Actual 2021 November Forecast 2022 Final Proposed Budget 2023 2024 2025 2026 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 MNR - MTA 123.461 170.601 187.640 176.534 169.221 176.195 MNR - CDOT 114.036 110.177 131.955 121.483 109.558 109.233 MNR - Other 13.031 16.914 12.857 12.101 7.768 6.702 Capital and Other Reimbursements 250.529 297.691 332.452 310.117 286.546 292.130 Total Revenues $250.529 $297.691 $332.452 $310.117 $286.546 $292.130 Operating Expense Labor: Payroll $48.859 $59.402 $66.280 $68.056 $71.004 $70.000 Overtime 28.604 34.791 34.204 36.020 37.827 39.722 Health and Welfare 16.753 21.242 23.970 24.800 25.881 26.010 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 14.686 16.372 18.479 19.121 19.961 20.012 Other Fringe Benefits 13.522 16.341 18.156 18.761 19.610 19.672 Reimbursable Overhead 58.983 80.097 88.223 85.542 78.265 79.657 Total Labor Expenses $181.408 $228.246 $249.312 $252.300 $252.548 $255.073 Non-Labor: Electric Power $0.392 $0.112 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 2.010 1.749 1.885 1.887 1.705 1.758 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 18.520 12.893 19.384 22.569 11.018 11.917 Professional Services Contracts 14.900 16.597 38.322 14.912 6.260 6.367 Materials and Supplies 33.099 37.998 23.549 18.450 15.015 17.015 Other Business Expenses 0.200 0.096 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $69.122 $69.446 $83.140 $57.818 $33.998 $37.058 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $250.529 $297.691 $332.452 $310.117 $286.546 $292.130 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+
+## Page 5
+
+### [p005_c0001] MTA METRO-NORTH RAILROAD November Financial Plan 2023 - 2026 Accrual Statement of Operations By Category ($ in millions)
+[p005_c0002]
+
+```text
+Actual 2021 November Forecast 2022 Final Proposed Budget 2023 2024 2025 2026 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $262,660 $430,898 $508,372 $503,468 $509,968 $517,287 Other Operating Revenue 383,824 33,169 39,453 55,134 56,734 58,293 MNR - MTA 123,461 170,601 187,640 176,534 169,221 176,195 MNR - CDOT 114,036 110,177 131,955 121,483 109,558 109,233 MNR - Other 13,031 16,914 12,857 12,101 7,768 6,702 Capital and Other Reimbursements 250,529 297,691 332,452 310,117 286,546 292,130 Total Revenues $897,013 $761,759 $880,277 $868,719 $853,248 $867,710 Operating Expense Labor: Payroll $567,665 $606,288 $643,756 $666,423 $689,588 $713,761 Overtime 114,562 128,719 129,143 132,431 136,125 139,946 Health and Welfare 122,402 138,749 146,545 152,333 158,117 164,402 OPEB Current Payments 41,774 45,000 46,000 47,000 48,000 49,000 Pension 136,426 138,719 143,732 142,425 143,465 143,443 Other Fringe Benefits 135,832 154,821 160,348 165,411 170,693 176,198 Reimbursable Overhead 1,686 (0.480) (0.484) (0.276) (0.242) (0.256) Total Labor Expenses $1,120,347 $1,211,815 $1,269,040 $1,305,746 $1,345,745 $1,386,494 Non-Labor: Electric Power $59,361 $92,988 $101,008 $97,290 $96,709 $96,806 Fuel 17,927 34,133 33,996 29,832 27,667 28,236 Insurance 19,431 20,688 25,908 30,694 36,346 43,550 Claims 1,553 1,000 1,000 1,000 1,000 1,000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 129,557 131,953 147,991 149,849 140,965 137,115 Professional Services Contracts 47,069 59,962 80,268 60,014 47,764 47,502 Materials and Supplies 128,367 138,398 136,563 159,073 181,446 187,125 Other Business Expenses 20,632 24,560 22,765 22,491 22,186 22,081 Total Non-Labor Expenses $423,898 $503,681 $549,499 $550,242 $554,083 $563,415 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $1,544,245 $1,715,496 $1,818,539 $1,855,989 $1,899,828 $1,949,909 Depreciation $315,715 $301,941 $298,566 $297,429 $298,709 $300,789 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 119,812 70,202 69,844 72,135 74,581 77,217 GASB 68 Pension Expense Adjustment 10,427 2,380 11,610 (13,080) 6,190 (11,690) Environmental Remediation (0.230) 4.000 4.000 4.000 4.000 4.000 Total Expenses $1,989,968 $2,094,019 $2,202,559 $2,216,473 $2,283,308 $2,320,225 Net Surplus/(Deficit) ($1,092,955) ($1,332,260) ($1,322,282) ($1,347,754) ($1,430,060) ($1,452,514) Cash Conversion Adjustments Depreciation $315,715 $301,941 $298,566 $297,429 $298,709 $300,789 Operating/Capital (37,777) (27,635) (74,798) (41,204) (26,265) (28,921) Other Cash Adjustments 64,431 78,490 45,463 49,065 59,931 32,770 Total Cash Conversion Adjustments $342,369 $352,795 $269,231 $305,290 $332,375 $304,638 Net Cash Surplus/(Deficit) ($750,586) ($979,465) ($1,053,051) ($1,042,463) ($1,097,685) ($1,147,877)
+```
+
+## Page 6
+
+### [p006_c0001] MTA METRO-NORTH RAILROAD November Financial Plan 2023 - 2026 Cash Receipts and Expenditures ($ in millions)
+[p006_c0002]
+
+```text
+Actual 2021 November Forecast 2022 Final Proposed Budget 2023 2024 2025 2026 Cash Receipts and Expenditures Receipts Farebox Revenue $253.679 $418.940 $492.974 $487.269 $493.321 $500.203 Other Operating Revenue 357.484 123.168 73.974 90.308 92.553 95.490 MNR - MTA 1123.46 1703.01 1853.40 1573.94 1723.61 1573.2. MNR - CDOT 1693.27 1103.55 1913. . 1613.89 1023. .8 1023.99 MNR - Other 103.24 173.14 163.5 163.01 537.8 73.06 Capital and Other Reimbursements 253.632 287.691 332.452 310.117 286.546 292.130 Total Receipts $864.795 $829.799 $899.401 $887.694 $872.420 $887.824 Expenditures Labor: Payroll $556.604 $616.183 $657.818 $655.560 $681.159 $718.835 Overtime 111.346 131.209 134.261 131.465 135.491 141.840 Health and Welfare 138.837 152.306 157.917 163.703 169.620 176.067 OPEB Current Payments 42.093 45.000 46.000 47.000 48.000 49.000 Pension 141.802 135.348 143.915 142.505 143.535 143.515 Other Fringe Benefits 197.275 153.581 160.931 159.749 165.632 174.495 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $1,187.957 $1,233.628 $1,300.842 $1,299.982 $1,343.438 $1,403.752 Non-Labor: Electric Power $61.832 $96.015 $103.667 $99.665 $99.078 $97.372 Fuel 17.044 34.133 33.996 29.832 27.667 28.236 Insurance 9.888 36.019 27.267 32.378 39.542 46.048 Claims 3.695 1.146 1.146 1.146 1.146 1.146 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 128.876 147.655 189.178 171.031 148.906 143.312 Professional Services Contracts 30.837 87.640 89.708 62.671 52.480 52.219 Materials and Supplies 124.279 121.049 151.956 174.176 192.205 190.211 Other Business Expenses 50.973 51.978 54.691 59.278 65.644 73.404 Total Non-Labor Expenditures $427.424 $575.636 $651.609 $630.176 $626.667 $631.949 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $1,615.381 $1,809.264 $1,952.452 $1,930.157 $1,970.105 $2,035.700 Net Cash Balance ($750.586) ($979.465) ($1,053.051) ($1,042.463) ($1,097.685) ($1,147.877) Subsidies MTA $578.496 $723.877 $786.583 $760.308 $801.049 $842.898 CDOT 312.782 255.588 266.468 282.155 296.636 304.979 Total Subsidies $891.278 $979.465 $1,053.051 $1,042.463 $1,097.685 $1,147.877
+```
+
+## Page 7
+
+### [p007_c0001] MTA METRO-NORTH RAILROAD November Financial Plan 2023 - 2026 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p007_c0002]
+
+```text
+Actual 2021 November Forecast 2022 Final Proposed Budget 2023 2024 2025 2026 Cash Flow Adjustments Receipts Farebox Revenue ($8.981) ($11.958) ($15.397) ($16.199) ($16.646) ($17.084) Other Operating Revenue ($26.340) $89.999 $34.521 $35.174 $35.819 $37.197 MNR - MTA (3.919) (10.000) 0.000 0.000 0.000 0.000 MNR - CDOT 9.060 0.000 0.000 0.000 0.000 0.000 MNR - Other (2.037) 0.000 0.000 0.000 0.000 0.000 Total Capital and Other Reimbursements $3.103 ($10.000) $0.000 $0.000 $0.000 $0.000 Total Receipts ($32.218) $68.041 $19.124 $18.975 $19.172 $20.114 Expenditures Labor: Payroll $11.061 ($9.895) ($14.063) $10.863 $8.428 ($5.073) Overtime 3.216 (2.491) (5.118) 0.966 0.634 (1.894) Health and Welfare (16.435) (13.558) (11.372) (11.370) (11.503) (11.666) OPEB Current Payments (0.319) 0.000 0.000 0.000 0.000 0.000 Pension (5.376) 3.371 (0.183) (0.080) (0.070) (0.072) Other Fringe Benefits (61.443) 1.239 (0.583) 5.663 5.060 1.703 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 1.686 (0.480) (0.484) (0.276) (0.242) (0.256) Total Labor Expenditures ($67.610) ($21.813) ($31.803) $5.765 $2.307 ($17.258) Non-Labor: Electric Power (2.471) ($3.028) (2.659) ($2.375) ($2.368) ($0.566) Fuel 0.883 0.000 0.000 0.000 0.000 0.000 Insurance 9.543 (15.332) (1.358) (1.684) (3.196) (2.498) Claims (2.142) (0.146) (0.146) (0.146) (0.146) (0.146) Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.681 (15.701) (41.187) (21.182) (7.941) (6.198) Professional Services Contracts 16.232 (27.678) (9.440) (2.657) (4.716) (4.716) Materials and Supplies 4.088 17.349 (15.393) (15.103) (10.759) (3.087) Other Business Expenses (30.341) (27.419) (31.926) (36.787) (43.458) (51.323) Total Non-Labor Expenditures ($3.526) ($71.955) ($102.110) ($79.933) ($72.584) ($68.534) Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures ($71.136) ($93.767) ($133.913) ($74.168) ($70.278) ($85.791) Total Cash Conversion Adjustments before Depreciation ($103.355) ($25.727) ($114.789) ($55.194) ($51.105) ($65.678) Depreciation $315.715 $301.941 $298.566 $297.429 $298.709 $300.789 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 119.812 70.202 69.844 72.135 74.581 77.217 GASB 68 Pension Expense Adjustment 10.427 2.380 11.610 (13.080) 6.190 (11.690) Environmental Remediation (0.230) 4.000 4.000 4.000 4.000 4.000 Total Cash Conversion Adjustments $342.369 $352.795 $269.231 $305.290 $332.375 $304.638
+```
+
+## Page 8
+
+### [p008_c0001] MTA METRO-NORTH RAILROAD November Financial Plan 2023 - 2026 Ridership (Utilization) and Revenue (in millions)
+[p008_c0002]
+
+```text
+Actual November Final 2021 Forecast Proposed 2022 Budget 2024 2025 2026 RIDERSHIP Harlem Line Ridership - Commutation 2.937 6.321 7.621 11.457 11.592 11.748 Harlem Line Ridership - Non-Commutation 6.620 8.469 9.825 7.589 7.678 7.782 Total Harlem Line 9.556 14.790 17.446 19.046 19.270 19.530 Hudson Line Ridership - Commutation 1.584 3.376 3.912 6.548 6.636 6.738 Hudson Line Ridership - Non-Commutation 4.801 6.182 7.104 5.504 5.578 5.664 Total Hudson Line 6.385 9.558 11.016 12.052 12.214 12.402 New Haven Line Ridership - Commutation 3.479 7.883 9.290 14.981 15.177 15.396 New Haven Line Ridership - Non-Commutation 10.682 13.993 15.989 12.662 12.828 13.013 Total New Haven Line 14.161 21.876 25.279 27.643 28.006 28.409 Total Commutation Ridership 7.999 17.580 20.823 32.985 33.405 33.882 Total Non-Commutation Ridership 22.103 28.644 32.918 25.755 26.085 26.459 Total East of Hudson Ridership 30.102 46.224 53.741 58.741 59.490 60.340 West of Hudson Ridership 0.620 0.762 1.033 1.130 1.151 1.168 Total Ridership 30.722 46.986 54.774 59.871 60.641 61.509
+```
+### [p008_c0003] FAREBOX REVENUE
+[p008_c0004]
+
+```text
+Harlem Line - Commutation Revenue 17.058 42.142 51.243 71.916 72.762 73.743 Harlem Line - Non-Commutation Revenue 55.332 79.083 93.594 72.485 73.337 74.325 Total Harlem Line Revenue $72.390 $121.225 $144.837 $144.401 $146.100 $148.067 Hudson Line - Commutation Revenue 12.133 27.245 31.503 49.976 50.651 51.427 Hudson Line - Non-Commutation Revenue 50.911 70.903 82.724 64.686 65.557 66.560 Total Hudson Line Revenue $63.044 $98.148 $114.227 $114.662 $116.208 $117.987 New Haven Line - Commutation Revenue 19.875 55.423 65.956 97.087 98.362 99.778 New Haven Line - Non-Commutation Revenue 101.168 148.591 173.135 137.266 139.068 141.069 Total New Haven Line Revenue $121.044 $204.014 $239.091 $234.353 $237.430 $240.847 Total Commutation Revenue $49.067 $124.810 $148.702 $218.980 $221.775 $224.948 Total Non-Commutation Revenue 207.411 298.577 349.452 274.436 277.962 281.954 Total East of Hudson Revenue $256.478 $423.387 $498.154 $493.416 $499.737 $506.902 West of Hudson Revenue $6.182 $7.511 $10.217 $10.052 $10.231 $10.385 Total Farebox Revenue $262.660 $430.898 $508.372 $503.468 $509.968 $517.287
+```
+[p008_c0005] Notes: West of Hudson total ridership is both Pascack Valley and Port Jervis lines.
+
+## Page 9
+
+### [p009_c0001] MTA METRO-NORTH RAILROAD November Financial Plan 2023 - 2026 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time/Full-Time Equivalents
+[p009_c0002]
+
+```text
+FUNCTION/DEPARTMENT 2022 2023 2024 2025 2026 2021 Actual November Forecast Final Proposed Budget Administration President 2 4 4 4 4 4 Labor Relations 9 10 10 10 10 10 Safety 61 90 92 92 92 92 Security 16 23 23 23 23 23 VP Ops Support and Org Res 22 28 28 28 28 28 Corporate & Public Affairs 12 12 12 12 12 12 Customer Service 42 54 54 54 54 54 Legal 9 9 9 9 9 9 Claims 5 5 5 5 5 5 VP Human Resources 27 35 35 35 35 35 Training 74 97 97 97 97 97 Employee Relations & Diversity 4 4 4 4 4 4 Capital Planning & Programming 7 10 10 10 10 10 Long Range Planning 4 4 4 4 4 4 Controller 50 55 55 55 55 55 Information Technology & Project Mgmt 0 0 0 0 0 0 Budget 13 15 15 15 15 15 Procurement & Material Management 14 17 17 17 17 17 Rolling Stock Delivery & Integ 0 7 9 9 9 9 Corporate 0 0 0 0 0 0 Total Administration 370 479 483 483 483 483 Operations Operations Support 48 55 59 63 63 63 Rolling Stock & EAM 11 21 21 21 21 21 Transportation 1,566 1,773 1,800 1,800 1,800 1,798 Customer Service 351 409 409 409 409 409 Metro-North West 32 33 33 33 33 33 Corporate 0 (28) (28) (28) (28) (28) Total Operations 2,008 2,263 2,294 2,298 2,298 2,296 Maintenance Maintenance of Equipment 1,530 1,758 1,758 1,758 1,758 1,758 Maintenance of Way 2,007 2,365 2,394 2,394 2,394 2,394 Procurement & Material Management 105 116 116 116 116 116 Corporate 0 0 0 0 0 0 Total Maintenance 3,642 4,239 4,268 4,268 4,268 4,268 Engineering/Capital Construction Management 16 29 29 29 29 29 Engineering & Design 52 70 70 70 70 70 Total Engineering/Capital 68 99 99 99 99 99 Total Positions 6,088 7,080 7,144 7,148 7,148 7,146 Non-Reimbursable 5,606 6,518 6,343 6,357 6,335 6,356 Reimbursable 482 562 801 791 813 790 Total Full-Time 6,087 7,079 7,143 7,147 7,147 7,145 Total Full-Time-Equivalents 1 1 1 1 1 1
+```
+
+## Page 10
+
+### [p010_c0001] MTA METRO-NORTH RAILROAD November Financial Plan 2023 - 2026 Total Positions By Function and Occupational Group
+[p010_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual 2021 November Forecast 2022 Final Proposed Budget 2023 2024 2025 2026 Administration Managers/Supervisors 127 153 154 154 154 154 Professional/Technical/Clerical 244 326 329 329 329 329 Operational Hourlies 0 0 0 0 0 0 Total Administration Headcount 371 479 483 483 483 483 Operations Managers/Supervisors 230 266 277 278 278 277 Professional/Technical/Clerical 225 251 257 260 260 259 Operational Hourlies 1,551 1,746 1,760 1,760 1,760 1,760 Total Operations Headcount 2,006 2,263 2,294 2,298 2,298 2,296 Maintenance Managers/Supervisors 645 721 725 725 725 725 Professional/Technical/Clerical 452 575 577 577 577 577 Operational Hourlies 2,545 2,943 2,966 2,966 2,966 2,966 Total Maintenance Headcount 3,642 4,239 4,268 4,268 4,268 4,268 Engineering / Capital Managers/Supervisors 26 46 46 46 46 46 Professional/Technical/Clerical 43 53 53 53 53 53 Operational Hourlies 0 0 0 0 0 0 Total Engineering Headcount 69 99 99 99 99 99 Public Safety Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Public Safety Headcount 0 0 0 0 0 0 Total Positions Managers/Supervisors 1,028 1,186 1,202 1,203 1,203 1,202 Professional/Technical/ Clerical 963 1,205 1,216 1,219 1,219 1,218 Operational Hourlies 4,096 4,689 4,726 4,726 4,726 4,726 Total Positions 6,088 7,080 7,144 7,148 7,148 7,146
+```

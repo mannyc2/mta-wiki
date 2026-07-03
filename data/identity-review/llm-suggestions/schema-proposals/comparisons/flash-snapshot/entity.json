@@ -1,0 +1,1111 @@
+{
+  "schema_proposal_run_id": "2026-06-08T23-05-26-749Z_schema-proposal-run",
+  "proposed_at": "2026-06-08T23:07:20.159Z",
+  "observation_kind": "entity",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "audit_packet": {
+    "observation_kind": "entity",
+    "submission_count": 194,
+    "accepted_count": 190,
+    "rejected_count": 4,
+    "declared_anchor_fields": [
+      "agency_name",
+      "entity_name",
+      "entity_type",
+      "name",
+      "operator",
+      "owner",
+      "publisher"
+    ],
+    "enum_candidates": [
+      {
+        "field": "publisher",
+        "occurrences": 11,
+        "coverage": 0.06,
+        "distinct_values": 3,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "NYC Comptroller",
+          "NYC DOT",
+          "People Oriented Cities"
+        ],
+        "value_counts": [
+          {
+            "value": "NYC DOT",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "field": "jurisdiction",
+        "occurrences": 4,
+        "coverage": 0.02,
+        "distinct_values": 1,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "New York State"
+        ],
+        "value_counts": [
+          {
+            "value": "New York State",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "field": "organization",
+        "occurrences": 4,
+        "coverage": 0.02,
+        "distinct_values": 3,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Metropolitan Transportation Authority",
+          "New York State Assembly",
+          "New York State Senate"
+        ],
+        "value_counts": [
+          {
+            "value": "Metropolitan Transportation Authority",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "borough",
+        "occurrences": 3,
+        "coverage": 0.02,
+        "distinct_values": 3,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Brooklyn",
+          "Manhattan",
+          "Queens"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "buses",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 1,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "5,800"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "executive_director",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Ben Furnas",
+          "Betsy Plum"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "office",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "New York City Comptroller",
+          "New York City Council"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "owner",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "New York City",
+          "New York State"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "parent_organization",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 1,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Metropolitan Transportation Authority"
+        ],
+        "value_counts": [
+          {
+            "value": "Metropolitan Transportation Authority",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "subway_cars",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 1,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "nearly 6,700"
+        ],
+        "value_counts": []
+      }
+    ],
+    "additional_keys": [
+      {
+        "field": "a_line",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "converted to all R179 and R211 cars"
+        ]
+      },
+      {
+        "field": "acronym",
+        "occurrences": 12,
+        "coverage": 0.06,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "MTA",
+          "NYCT",
+          "AAA",
+          "DOF",
+          "DOT",
+          "MTA Bus",
+          "NYPD",
+          "NYS ITS"
+        ]
+      },
+      {
+        "field": "active_locations",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "over 15 locations across MTA"
+        ]
+      },
+      {
+        "field": "active_locations_normalized",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "agency",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Metropolitan Transportation Authority (MTA)",
+          "MTA New York City Transit"
+        ]
+      },
+      {
+        "field": "bus_depots",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "bus_routes_covered",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Bx12"
+        ]
+      },
+      {
+        "field": "c_line",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "converted to all R179 and R211 cars"
+        ]
+      },
+      {
+        "field": "chair",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Haeda Mihaltses"
+        ]
+      },
+      {
+        "field": "commissioner",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Ydanis Rodriguez"
+        ]
+      },
+      {
+        "field": "daily_passengers",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "daily_riders",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "nearly 10,000"
+        ]
+      },
+      {
+        "field": "data_source",
+        "occurrences": 3,
+        "coverage": 0.02,
+        "value_kind": "boolean",
+        "classification": "boolean",
+        "sample_values": []
+      },
+      {
+        "field": "description",
+        "occurrences": 36,
+        "coverage": 0.19,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Automated Camera Enforcement program for bus lane enforcement",
+          "ASL interpretation via QR code for Deaf/hard-of-hearing customers",
+          "Automated Bus Lane Enforcement program",
+          "Blog launched at end of 2023 featuring contributions from the broader Data & Analytics team covering topics related to MTA data",
+          "City's bus shelter franchisee",
+          "Community Advisory Committee formed for the Jamaica Bus Improvement Study, involved in initial meeting and preliminary recommendations",
+          "Created in 2024 to facilitate internal decision-making on open data releases",
+          "Division of MTA managing local, express, and Select Bus Service routes"
+        ]
+      },
+      {
+        "field": "employees",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "g_line",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "introducing R211s, entire fleet expected to be R211s later this year"
+        ]
+      },
+      {
+        "field": "location",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Jamaica, Queens"
+        ]
+      },
+      {
+        "field": "location_normalized",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "members",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Andrew Albert",
+          "Dan Garodnick",
+          "David Jones",
+          "Haeda Mihaltses",
+          "John Ross Rizzo",
+          "John Samuelsen",
+          "Lisa Sorin",
+          "Melva Miller"
+        ]
+      },
+      {
+        "field": "navilens_uses_ytd",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "over 45,000"
+        ]
+      },
+      {
+        "field": "nearby_subway",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "169th St F Station"
+        ]
+      },
+      {
+        "field": "notable_stations",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Bleecker St/Broadway-Lafayette",
+          "Brooklyn Bridge-City Hall",
+          "Canal St",
+          "Union Sq"
+        ]
+      },
+      {
+        "field": "parent_entity",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Metropolitan Transportation Authority (MTA)",
+          "New York City Comptroller Brad Lander"
+        ]
+      },
+      {
+        "field": "regions",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Connecticut",
+          "Long Island",
+          "New York City",
+          "southeastern New York State"
+        ]
+      },
+      {
+        "field": "replaces",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "165th Street Bus Terminal"
+        ]
+      },
+      {
+        "field": "role",
+        "occurrences": 23,
+        "coverage": 0.12,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "ACE program partner",
+          "partner_agency",
+          "publisher",
+          "ACE program administrator",
+          "adjudicates automated camera enforcement violations",
+          "bus_priority_study_partner",
+          "busway_operator_and_publisher",
+          "data provider for bus performance and partner on TTP Pilot Project"
+        ]
+      },
+      {
+        "field": "role_in_source",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "co-lead of Jamaica Bus Improvement Study"
+        ]
+      },
+      {
+        "field": "routes_most_recently_added",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Bx5",
+          "M100",
+          "M2",
+          "M4",
+          "M42"
+        ]
+      },
+      {
+        "field": "routes_served",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "10 MTA bus routes and five Nassau Inter-County Express bus routes"
+        ]
+      },
+      {
+        "field": "service_area_description",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "serving a population of 15.3 million people across a 5,000-square-mile travel area surrounding New York City through Long Island, southeastern New York State, and Connecticut"
+        ]
+      },
+      {
+        "field": "service_area_population",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "service_area_sq_miles",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "shops_and_yards",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "short_name",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "MTA"
+        ]
+      },
+      {
+        "field": "stations_with_navilens",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "status",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "operational"
+        ]
+      },
+      {
+        "field": "subway_line_deployed",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "6 line"
+        ]
+      },
+      {
+        "field": "subway_stations",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "successful_calls",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "over 200 in 3 months"
+        ]
+      },
+      {
+        "field": "teams",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Customer Communications",
+          "Department of Buses",
+          "Government and Community Relations",
+          "Operations Planning"
+        ]
+      },
+      {
+        "field": "title",
+        "occurrences": 17,
+        "coverage": 0.09,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Project Manager",
+          "Acting Chief, Operations Planning",
+          "Chief Customer Officer",
+          "Chief of Operations Planning",
+          "Chief of Strategic Initiatives",
+          "DDC Acting Commissioner",
+          "Governor of New York State",
+          "Manhattan Borough President"
+        ]
+      },
+      {
+        "field": "top_locations",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "3 Stone Street",
+          "Penn Station"
+        ]
+      },
+      {
+        "field": "top_locations_normalized",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "track_miles",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "url",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "data.ny.gov"
+        ]
+      }
+    ]
+  },
+  "closure_policy": "deferred",
+  "closure_signals": [
+    {
+      "field": "publisher",
+      "closure_readiness": "open",
+      "occurrences": 11,
+      "coverage": 0.06
+    },
+    {
+      "field": "jurisdiction",
+      "closure_readiness": "open",
+      "occurrences": 4,
+      "coverage": 0.02
+    },
+    {
+      "field": "organization",
+      "closure_readiness": "open",
+      "occurrences": 4,
+      "coverage": 0.02
+    },
+    {
+      "field": "borough",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "coverage": 0.02
+    },
+    {
+      "field": "buses",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "executive_director",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "office",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "owner",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "parent_organization",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "subway_cars",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.01
+    }
+  ],
+  "valid": true,
+  "schema_issues": [],
+  "warnings": [],
+  "proposal": {
+    "observation_kind": "entity",
+    "field_proposals": [
+      {
+        "field": "publisher",
+        "decision": "enum",
+        "canonical_values": [
+          "nyc_comptroller",
+          "nyc_dot",
+          "people_oriented_cities"
+        ],
+        "value_mapping": [
+          {
+            "from": "NYC Comptroller",
+            "to": "nyc_comptroller"
+          },
+          {
+            "from": "NYC DOT",
+            "to": "nyc_dot"
+          },
+          {
+            "from": "People Oriented Cities",
+            "to": "people_oriented_cities"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "publisher_other"
+        },
+        "rationale": "Publishers observed; treat as enum with open escape due to low coverage."
+      },
+      {
+        "field": "jurisdiction",
+        "decision": "enum",
+        "canonical_values": [
+          "new_york_state"
+        ],
+        "value_mapping": [
+          {
+            "from": "New York State",
+            "to": "new_york_state"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "jurisdiction_other"
+        },
+        "rationale": "Only one jurisdiction observed; open enum with escape."
+      },
+      {
+        "field": "organization",
+        "decision": "enum",
+        "canonical_values": [
+          "metropolitan_transportation_authority",
+          "new_york_state_assembly",
+          "new_york_state_senate"
+        ],
+        "value_mapping": [
+          {
+            "from": "Metropolitan Transportation Authority",
+            "to": "metropolitan_transportation_authority"
+          },
+          {
+            "from": "New York State Assembly",
+            "to": "new_york_state_assembly"
+          },
+          {
+            "from": "New York State Senate",
+            "to": "new_york_state_senate"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "organization_other"
+        },
+        "rationale": "Organizations observed; open enum."
+      },
+      {
+        "field": "borough",
+        "decision": "enum",
+        "canonical_values": [
+          "brooklyn",
+          "manhattan",
+          "queens"
+        ],
+        "value_mapping": [
+          {
+            "from": "Brooklyn",
+            "to": "brooklyn"
+          },
+          {
+            "from": "Manhattan",
+            "to": "manhattan"
+          },
+          {
+            "from": "Queens",
+            "to": "queens"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "borough_other"
+        },
+        "rationale": "NYC boroughs; open enum."
+      },
+      {
+        "field": "buses",
+        "decision": "free_text",
+        "rationale": "Numeric string count; too sparse and not categorical, treat as free text."
+      },
+      {
+        "field": "executive_director",
+        "decision": "free_text",
+        "rationale": "Proper names; sparse, treat as free text."
+      },
+      {
+        "field": "office",
+        "decision": "needs_more_data",
+        "rationale": "Too few observations to determine if enum or free text; needs more data."
+      },
+      {
+        "field": "owner",
+        "decision": "enum",
+        "canonical_values": [
+          "new_york_city",
+          "new_york_state"
+        ],
+        "value_mapping": [
+          {
+            "from": "New York City",
+            "to": "new_york_city"
+          },
+          {
+            "from": "New York State",
+            "to": "new_york_state"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "owner_other"
+        },
+        "rationale": "Owner entities observed; open enum."
+      },
+      {
+        "field": "parent_organization",
+        "decision": "enum",
+        "canonical_values": [
+          "metropolitan_transportation_authority"
+        ],
+        "value_mapping": [
+          {
+            "from": "Metropolitan Transportation Authority",
+            "to": "metropolitan_transportation_authority"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "parent_organization_other"
+        },
+        "rationale": "Single parent organization observed; open enum."
+      },
+      {
+        "field": "subway_cars",
+        "decision": "free_text",
+        "rationale": "Numeric description; too sparse, treat as free text."
+      }
+    ],
+    "key_dispositions": [
+      {
+        "key": "a_line",
+        "disposition": "drop",
+        "rationale": "Sparse and specific; not generalizable."
+      },
+      {
+        "key": "acronym",
+        "disposition": "promote_field",
+        "target": "acronym",
+        "rationale": "Common acronym for entity; promote as free text field."
+      },
+      {
+        "key": "active_locations",
+        "disposition": "drop",
+        "rationale": "Sparse single occurrence."
+      },
+      {
+        "key": "active_locations_normalized",
+        "disposition": "drop",
+        "rationale": "Sparse single occurrence of object."
+      },
+      {
+        "key": "agency",
+        "disposition": "relation_context",
+        "target": "organization",
+        "rationale": "Agency designation; relates to organization."
+      },
+      {
+        "key": "bus_depots",
+        "disposition": "needs_more_data",
+        "rationale": "Numeric metric with only 2 occurrences."
+      },
+      {
+        "key": "bus_routes_covered",
+        "disposition": "drop",
+        "rationale": "Sparse array."
+      },
+      {
+        "key": "c_line",
+        "disposition": "drop",
+        "rationale": "Sparse and specific."
+      },
+      {
+        "key": "chair",
+        "disposition": "drop",
+        "rationale": "Sparse proper name."
+      },
+      {
+        "key": "commissioner",
+        "disposition": "drop",
+        "rationale": "Sparse proper name."
+      },
+      {
+        "key": "daily_passengers",
+        "disposition": "needs_more_data",
+        "rationale": "Numeric metric with only 2 occurrences."
+      },
+      {
+        "key": "daily_riders",
+        "disposition": "drop",
+        "rationale": "Sparse single occurrence."
+      },
+      {
+        "key": "data_source",
+        "disposition": "promote_field",
+        "target": "data_source",
+        "rationale": "Boolean indicating data source; promote as field."
+      },
+      {
+        "key": "description",
+        "disposition": "promote_field",
+        "target": "description",
+        "rationale": "Frequent free text; promote as field."
+      },
+      {
+        "key": "employees",
+        "disposition": "needs_more_data",
+        "rationale": "Numeric with only 2 occurrences."
+      },
+      {
+        "key": "g_line",
+        "disposition": "drop",
+        "rationale": "Sparse single occurrence."
+      },
+      {
+        "key": "location",
+        "disposition": "drop",
+        "rationale": "Sparse string."
+      },
+      {
+        "key": "location_normalized",
+        "disposition": "drop",
+        "rationale": "Sparse object."
+      },
+      {
+        "key": "members",
+        "disposition": "drop",
+        "rationale": "Sparse array."
+      },
+      {
+        "key": "navilens_uses_ytd",
+        "disposition": "drop",
+        "rationale": "Sparse single occurrence."
+      },
+      {
+        "key": "nearby_subway",
+        "disposition": "drop",
+        "rationale": "Sparse single occurrence."
+      },
+      {
+        "key": "notable_stations",
+        "disposition": "drop",
+        "rationale": "Sparse array."
+      },
+      {
+        "key": "parent_entity",
+        "disposition": "needs_more_data",
+        "rationale": "Only 2 occurrences; unclear if enum or free text."
+      },
+      {
+        "key": "regions",
+        "disposition": "drop",
+        "rationale": "Sparse array."
+      },
+      {
+        "key": "replaces",
+        "disposition": "drop",
+        "rationale": "Sparse single occurrence."
+      },
+      {
+        "key": "role",
+        "disposition": "promote_field",
+        "target": "role",
+        "rationale": "Frequent free text; promote as field."
+      },
+      {
+        "key": "role_in_source",
+        "disposition": "needs_more_data",
+        "rationale": "Only 2 occurrences; potential alias for role."
+      },
+      {
+        "key": "routes_most_recently_added",
+        "disposition": "drop",
+        "rationale": "Sparse array."
+      },
+      {
+        "key": "routes_served",
+        "disposition": "drop",
+        "rationale": "Sparse single occurrence."
+      },
+      {
+        "key": "service_area_description",
+        "disposition": "drop",
+        "rationale": "Sparse single occurrence."
+      },
+      {
+        "key": "service_area_population",
+        "disposition": "drop",
+        "rationale": "Sparse numeric."
+      },
+      {
+        "key": "service_area_sq_miles",
+        "disposition": "drop",
+        "rationale": "Sparse numeric."
+      },
+      {
+        "key": "shops_and_yards",
+        "disposition": "needs_more_data",
+        "rationale": "Numeric with only 2 occurrences."
+      },
+      {
+        "key": "short_name",
+        "disposition": "drop",
+        "rationale": "Sparse single occurrence; possible alias."
+      },
+      {
+        "key": "stations_with_navilens",
+        "disposition": "drop",
+        "rationale": "Sparse numeric."
+      },
+      {
+        "key": "status",
+        "disposition": "drop",
+        "rationale": "Sparse single occurrence; possible enum but insufficient."
+      },
+      {
+        "key": "subway_line_deployed",
+        "disposition": "drop",
+        "rationale": "Sparse single occurrence."
+      },
+      {
+        "key": "subway_stations",
+        "disposition": "needs_more_data",
+        "rationale": "Numeric with only 2 occurrences."
+      },
+      {
+        "key": "successful_calls",
+        "disposition": "drop",
+        "rationale": "Sparse single occurrence."
+      },
+      {
+        "key": "teams",
+        "disposition": "drop",
+        "rationale": "Sparse array."
+      },
+      {
+        "key": "title",
+        "disposition": "promote_field",
+        "target": "title",
+        "rationale": "Frequent free text; promote as field."
+      },
+      {
+        "key": "top_locations",
+        "disposition": "drop",
+        "rationale": "Sparse array."
+      },
+      {
+        "key": "top_locations_normalized",
+        "disposition": "drop",
+        "rationale": "Sparse object."
+      },
+      {
+        "key": "track_miles",
+        "disposition": "needs_more_data",
+        "rationale": "Numeric with only 2 occurrences."
+      },
+      {
+        "key": "url",
+        "disposition": "drop",
+        "rationale": "Sparse single occurrence."
+      }
+    ],
+    "notes": "Enum candidates with low coverage are treated as open enums with escape hatches as per policy. Additional keys with very few observations are dropped or marked needs_more_data to avoid overfitting."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T23-06-24-335Z_3564593-adf346e4_schema-proposal-run_entity",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-06-24-335Z_2026-06-08T23-06-24-335Z_3564593-adf346e4_schema-proposal-run_entity.jsonl"
+}

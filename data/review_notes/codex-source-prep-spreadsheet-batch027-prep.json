@@ -1,0 +1,74 @@
+{
+  "note_id": "codex-source-prep-spreadsheet-batch027-prep",
+  "created_at": "2026-06-23T18:41:00.000Z",
+  "author": "codex",
+  "kind": "source_prep_spreadsheet_batch_applied",
+  "status": "applied_wave53_recovered_checkpoint_clean",
+  "scope": "Applied the final safe xlsx spreadsheet preview sidecars after wave52 generated-output checkpoint, launched the reopened 5-source pool as wave53, recovered the no-report parent, and checkpointed generated outputs.",
+  "source_prep_run_id": "spreadsheet-backlog-20260623",
+  "mutation_mechanism": "bun packages/cli/src/cli.ts source-prep-apply-preview <source_id> --run-id spreadsheet-backlog-20260623",
+  "sources": [
+    { "source_id": "meeting_doc_95061", "sheets": 4, "rows": 407, "cells": 4699, "blocks": 385 },
+    { "source_id": "meeting_doc_95071", "sheets": 2, "rows": 134, "cells": 1830, "blocks": 113 },
+    { "source_id": "meeting_doc_98026", "sheets": 2, "rows": 134, "cells": 1820, "blocks": 113 },
+    { "source_id": "meeting_doc_98036", "sheets": 4, "rows": 417, "cells": 4769, "blocks": 395 },
+    { "source_id": "meeting_doc_98111", "sheets": 1, "rows": 0, "cells": 0, "blocks": 7 }
+  ],
+  "readiness_after_apply": {
+    "command": "bun packages/cli/src/cli.ts campaign readiness --id validation-2026-06",
+    "total": 2566,
+    "ready": 2557,
+    "ready_never_ingested": 5,
+    "already_ingested": 2560,
+    "quarantined": 9,
+    "interpretation": "The reopened 5-source pool came from batch027 and was launched as wave53."
+  },
+  "ingest_started": {
+    "wave": 53,
+    "pid": 1525581,
+    "source_count": 5,
+    "concurrency": 5,
+    "materialize_cadence": "MTA_MATERIALIZE_EVERY=100000",
+    "profile": "pioneer-deepseek-flash",
+    "command_template": "PIONEER_API_KEY='<PIONEER_API_KEY>' MTA_MATERIALIZE_EVERY=100000 setsid -f bun packages/cli/src/cli.ts campaign ingest --wave 53 --id validation-2026-06 --size 5 --concurrency 5 --timeout-min 300 --profile pioneer-deepseek-flash",
+    "secret_persisted": false
+  },
+  "wave_recovery": {
+    "accepted_submission_journals": 5,
+    "report_exists": false,
+    "parent_exit": "TERM exited cleanly"
+  },
+  "generated_output_checkpoint": {
+    "materialized_submissions": 93115,
+    "total_submissions": 98065,
+    "retired_skipped": 239,
+    "pages_reported_by_materialize": 7357,
+    "sqlite_fts_quick_check": "ok",
+    "independent_quick_check": "ok",
+    "export_jsonl_verify": "DB == shadow JSONL (83942 records)",
+    "validate_issues": 1,
+    "remaining_issue": "duplicate_global_identity corridor_church-av"
+  },
+  "readiness_after_checkpoint": {
+    "total": 2566,
+    "ready": 2557,
+    "ready_never_ingested": 0,
+    "already_ingested": 2565,
+    "quarantined": 9
+  },
+  "verification": {
+    "source_prep_tests": "bun test packages/pipeline/test/sources/source-prep.test.ts: 6 pass, 0 fail",
+    "blocks_line_counts_checked": true,
+    "repo_secret_scan_after_launch": "rg for Pioneer key fragments returned no matches"
+  },
+  "commands_not_run": [
+    "campaign dedup",
+    "canonicalize*",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "write",
+    "ask",
+    "schema",
+    "provider-backed post-ingest commands"
+  ]
+}

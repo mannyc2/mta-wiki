@@ -1,0 +1,1038 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-201511"
+record_kind: "source"
+display_name: "Diversity Committee Meeting - March 23, 2026"
+source_id: "meeting_doc_201511"
+source_ids:
+  - "meeting_doc_201511"
+local_observation_id: "source_meeting_doc_201511"
+local_observation_ids:
+  - "source_meeting_doc_201511"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T21:53:09.604Z"
+submission_ids:
+  - "sub_c8e53ebd77b65a56"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting book/presentation"
+  date: "March 23, 2026"
+  date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2026-03-23"
+    precision: "day"
+    raw_text: "March 23, 2026"
+  date_text: "March 23, 2026"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2026-03-23"
+    precision: "day"
+    raw_text: "March 23, 2026"
+  description: "Diversity Committee meeting book including agenda, minutes from December 15, 2025 meeting, 2026 Diversity Committee Work Plan, Executive Summary/Presentation, Title VI Triennial Program Summary, EEO Activity and Workforce Report, M/W/DBE and SDVOB Utilization, Discretionary Awards, Financial Services, Asset Fund Management, Business Development Initiatives, and MTA EDGE Update"
+  published_date_normalized: "2026-03-23"
+  published_date_precision: "day"
+  publisher: "Metropolitan Transportation Authority Department of Diversity and Civil Rights"
+  title: "Diversity Committee Meeting"
+evidence_refs:
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_201511#p001_c0003"
+    page_number: 1
+    role: "title"
+    source_id: "meeting_doc_201511"
+    source_path: "raw/sources/meeting_doc_201511/blocks.jsonl"
+    text_sha256: "sha256:25429ddb967fefda54daff18251839b92d578756dc8f833e913a2e2a563dd8ea"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0001"
+    evidence_id: "meeting_doc_201511#p002_c0001"
+    page_number: 2
+    role: "meeting_info"
+    source_id: "meeting_doc_201511"
+    source_path: "raw/sources/meeting_doc_201511/blocks.jsonl"
+    text_sha256: "sha256:25429ddb967fefda54daff18251839b92d578756dc8f833e913a2e2a563dd8ea"
+    text_source: "raw_text"
+  -
+    block_id: "p010_c0001"
+    evidence_id: "meeting_doc_201511#p010_c0001"
+    page_number: 10
+    role: "publisher_logo"
+    source_id: "meeting_doc_201511"
+    source_path: "raw/sources/meeting_doc_201511/blocks.jsonl"
+    text_sha256: "sha256:77c18b5689e4112ec02c0d1d66a36371c15ca20a3c73cd4cb2fb711572150384"
+    text_source: "raw_text"
+---
+
+# Diversity Committee Book
+
+source_id: meeting_doc_201511
+citation: cite block ids exactly as shown in square brackets
+document: 591 block(s)
+
+## Page 1
+
+> [p001_c0001] The logo for the Metropolitan Transportation Authority (MTA) is located in the top left corner. It consists of a black circle with the letters "MTA" in white, bold, sans-serif font.
+[p001_c0002] Metropolitan Transportation Authority
+### [p001_c0003] Diversity Committee Meeting
+[p001_c0004] March 2026
+### [p001_c0005] Committee Members
+[p001_c0006] B. Lopez, Chair C. Leathers M. M. Miller Dr. JR. Rizzo J. Smauelsen M. Valdivia E. Valente N. Zuckerman
+
+## Page 2
+
+### [p002_c0001] Diversity Committee Meeting
+[p002_c0002] Monday, 3/23/2026
+[p002_c0003] 1:15 - 1:45 PM ET
+### [p002_c0004] 1. Public Comments
+### [p002_c0005] 2. Approval of Minutes
+[p002_c0006] Diversity Committee Minutes - Page 3
+### [p002_c0007] 3. 2026 Diversity Work Plan
+[p002_c0008] 2026 Diversity Committee Work Plan - Page 6
+### [p002_c0009] 4. Executive Summary / Presentation
+[p002_c0010] Executive Summary / Presentation - Page 10
+### [p002_c0011] 5. Title VI Triennial Program Summary - Additional Materials in Exhibit
+[p002_c0012] Staff Summary_ 2026 Title VI Program - FINAL.3.19.26 - Page 29
+[p002_c0013] 2026 Title VI Program Board Certification - Page 30
+[p002_c0014] Title VI Triennial Program -Summary - Page 31
+### [p002_c0015] 6. EEO Activity
+[p002_c0016] EEO Activity and Workforce Report - Page 35
+### [p002_c0017] 7. M/W/DBE and SDVOB Utilization
+[p002_c0018] M/W/DBE and SDVOB Utilization - Page 45
+### [p002_c0019] 8. Discretionary Awards
+[p002_c0020] All Discretionary Spend Including A&E, IT and Legal - Page 57
+### [p002_c0021] 9. Financial Services
+[p002_c0022] Underwriter Fees - Page 60
+### [p002_c0023] 10. Asset Fund Management
+[p002_c0024] Asset Fund Management - Page 62
+### [p002_c0025] 11. Business Development Initiatives
+[p002_c0026] Business Development Initiatives - Page 66
+### [p002_c0027] 12. MTA EDGE Update
+[p002_c0028] MTA EDGE Update - Page 70
+
+## Page 3
+
+### [p003_c0001] MTA DIVERSITY COMMITTEE
+[p003_c0002] Meeting Minutes 2 Broadway, 20 th Floor New York, NY 10004 Monday, December 15, 2025
+### [p003_c0003] The following Committee Members were present:
+[p003_c0004] Hon. Neal Zuckerman Hon. Edward Valente Hon. Christopher Leathers
+### [p003_c0005] The following Board Member was present:
+[p003_c0006] Hon. Gerard Bringmann Hon. Marc Herbst
+### [p003_c0007] The following staff were also present:
+[p003_c0008] Ray Burke, Deputy CDO, MWDBE/SDVOB Contract Compliance Barbara Cockfiueld, Senior Director, Diversity and Inclusion Initiatives Mersida Ibric, Chief People Officer Evita Marrow, Deputy CDO, Operations & Programming Christine Norman, Deputy CDO, Technology, Operations, DBE Certification & Outreach Sheree Owens, Deputy CDO, MTA EDGE Donequa Sougrin, Deputy Chief, Talent Acquisition Lourdes Zapata, Chief Diversity and Inclusion Officer
+[p003_c0009] Chair Lopez asked Mr. Zuckerman to serve as Chair, who then called the December 2025 Diversity Committee to order.
+### [p003_c0010] 1. PUBLIC SPEAKERS' SESSION
+- [p003_c0011] ▪ There were two public speakers during the public comments portion of the meeting: Jesse Figueroa Jason Anthony
+[p003_c0012] Refer to the video recording of the meeting produced by the MTA and maintained in MTA records for the content of each speaker's statements.
+### [p003_c0013] 2. APPROVAL OF MINUTES
+- [p003_c0014] ▪ Due to the absence of a quorum, the Diversity Committee was unable to approve the minutes from the September 29, 2025, meeting. Approval is deferred to the next meeting.
+### [p003_c0015] 3. WORK PLAN REPORT
+- [p003_c0016] ▪ Due to the absence of a quorum, the Diversity Committee was unable to approve the 2025/2026 Work
+[p003_c0017] _Master Page # 3 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 4
+
+[p004_c0001] Plan. Approval is deferred to the next meeting.
+- [p004_c0002] ▪ The 2025 Work Plan can be found on pages 5-7; the 2026 Work Plan can be found on pages 8-11 of the Diversity Committee Book.
+### [p004_c0003] 4. EXECUTIVE SUMMARY
+[p004_c0004] Ms. Zapata presented the agenda items and provided an update on the Small Business Strategies Council (M/W/DBE and SDVOB Advisory Board). Ms. Zapata asked Ms. Norman to share insights regarding the Federal DBE Program Update.
+- [p004_c0005] ▪ Ms. Norman provided an overview of the key changes and updates to the Federal DBE Program and their impact on current MTA contracts.
+### [p004_c0006] EEO Activities
+- [p004_c0007] ▪ Ms. Marrow presented data on the MTA's overall workforce, noting an increase in self-identified female and male hires for Q3. However, there was a decrease in hires of self-identified individuals with disabilities and veterans. Workforce data can be found on pages 46-53 of the Diversity Committee Book. ▪ Ms. Marrow presented the accomplishments of the EEO Program, which included concurrence workshops, investigator development, and a reduction of backlog.
+### [p004_c0008] M/W/DBE, SDVOB Activity
+- [p004_c0009] ▪ Ms. Owens shared updates on MTA EDGE: training curriculum, contract awards, and alumni program ▪ Ms. Norman highlighted the key aspects of the M/W/DBE and SDVOB fiscal year programs and provided an update on M/W/DBE and SDVOB payments. While the participation levels in the SDVOB percentage-based target have experienced a decline, the total value of awards has notably increased by over $1.5 million compared to the previous fiscal year quarter. Ms. Norman reported that MWBE engagement shows a strong increase compared to the previous fiscal year. ▪ Due to the recent changes to the DBE Program, submission of the second semi-annual report is currently on hold. ▪ Ms. Norman shared a success story about an MWBE, highlighting a non-construction firm that currently works with the MTA.
+### [p004_c0010] Recruitment Strategies Update
+- [p004_c0011] ▪ Ms. Ibric presented recruitment strategies, outlining key steps in the process and highlighting effective outreach tactics, including social media and partnerships with educational institutions.
+### [p004_c0012] Events
+- [p004_c0013] ▪ Ms. Zapata reported on the DDCR events that have significantly enhanced the department's outreach initiatives. ▪ Ms. Cockfield shared ERG (Employee Resource Group) quarterly highlights detailing their events, activities, and accomplishments.
+[p004_c0014] _Master Page # 4 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 5
+
+[p005_c0001] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for the details of the Executive Summary report and the Diversity Committee members' comments and discussion.
+### [p005_c0002] 5. ADJOURNMENT
+[p005_c0003] The meeting was adjourned by Acting Chair Mr. Zuckerman
+[p005_c0004] Respectfully submitted, Ipek M. King Civil Rights Business Liaison
+[p005_c0005] _Master Page # 5 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 6
+
+### [p006_c0001] 2026 Diversity Committee Work Plan (Revised: March 2026)
+### [p006_c0002] I. RECURRING AGENDA ITEMS
+[p006_c0003]
+
+```text
+Responsibility Approval of Minutes Committee Chair & Members Committee Work Plan MTA Agency-wide DEO Program Activities (EEO, Title VI and 5-year DEI Strategic Plan) Dept. of Diversity/Civil Rights MTA Agency-wide Business Diversity Initiatives MTA DBE Certification Program Activities M/W/DBE and SDVOB Contract Compliance Activities Action Items (if any) As listed
+```
+### [p006_c0004] II. SPECIFIC AGENDA ITEMS
+[p006_c0005]
+
+```text
+March 2026 Responsibility MTA Agency-Wide Title VI Triennial Report Dept. of Diversity/Civil Rights 2025 Year-End Report DBE Program Update NYS Diversity, Inclusion and Equal Opportunity 2025 Report
+```
+[p006_c0006]
+
+```text
+June 2026 Responsibility 1 st Quarter 2026 Report Dept. of Diversity/Civil Rights EUCI/EMPP Pilot Program Updates MTA EDGE Program Update Accessibility Programming Update MTAHQ and Agency Staff
+```
+[p006_c0007]
+
+```text
+September 2026 Responsibility 2 nd Quarter 2026 Report Dept. of Diversity/Civil Rights 5-Year DEI Strategic Plan – Bi-Annual Update DBE Program Update Recommitment to Equal Opportunity (“EO”)
+```
+[p006_c0008]
+
+```text
+December 2026 Responsibility 3 rd Quarter 2026 Report Dept. of Diversity/Civil Rights MTA Agency Wide EEO Program Report 2027 Diversity Committee Workplan Accessibility Programming Update MTAHQ and Agency Staff Recruitment Strategies for MTAHQ and MTA Agencies Diversity Committee Charter Review Committee Chair & Members
+```
+[p006_c0009] _Master Page # 6 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 7
+
+### [p007_c0001] Detailed Summary
+### [p007_c0002] I. RECURRING
+### [p007_c0003] Approval of Minutes
+[p007_c0004] Approval of the official proceedings of the previous month's Committee meeting.
+### [p007_c0005] Diversity Committee Work Plan
+[p007_c0006] An update of any edits and/or changes in the work plan.
+### [p007_c0007] MTA Agency-wide Business and Diversity Initiatives Program Activities
+[p007_c0008] The MTA Department of Diversity and Civil Rights update of planned Agency-wide Business and Diversity Initiatives Program activities.
+### [p007_c0009] MTA Agency-wide Diversity and Equal Opportunity Program Activities
+[p007_c0010] The MTA Department of Diversity and Civil Rights update of agency-wide workforce analysis, employee/customer/stakeholder diversity initiatives and EO complaints.
+### [p007_c0011] MTA DBE Certification Program Activities
+[p007_c0012] MTA Department of Diversity and Civil Rights update of DBE Certification Program activities.
+### [p007_c0013] M/W/DBE and SDVOB Contract Compliance Activities
+[p007_c0014] MTA Department of Diversity and Civil Rights update of M/W/DBE and SDVOB contract activities and program initiatives.
+### [p007_c0015] Action Items
+[p007_c0016] Staff summary documents presented to the Board for approval of items affecting business standards and practices.
+### [p007_c0017] II. SPECIFIC AGENDA ITEMS
+### [p007_c0018] March 2026
+### [p007_c0019] • MTA Agency-Wide Title VI Triennial Report
+[p007_c0020] The MTA is required to submit a report to the Federal Transit Administration (FTA) outlining its Title VI program activities for the term of July 1, 2022 – June 30, 2025. Due to the FTA by June 1, 2026, the report requires full MTA Board approval prior to submission. DDCR will provide the Committee with an overview of the report scope and findings for approval prior to submission.
+### [p007_c0021] • 2025 Year-End Report
+[p007_c0022] The Department of Diversity and Civil Rights will present 2025 year-end update on MTA Agency-wide DEO and M/W/DBE and SDVOB contract compliance activities.
+### [p007_c0023] • DBE Program Update
+[p007_c0024] DDCR will provide an update on program activities resulting from the Interim Final Rule published by the U.S. Department of Transportation related to amendments to 49 CFR Parts 23 and 26 in October 2025 which restructured the Disadvantaged Business Enterprise (DBE) program.
+### [p007_c0025] • NYS Diversity, Inclusion and Equal Opportunity 2025 Report
+[p007_c0026] Pursuant to NYS Executive Order 187, the MTA is required to submit an annual report to the State regarding its workplace demographic data, training activities and other diversity activities. Due for submission by January 31,
+[p007_c0027] _Master Page # 7 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 8
+
+[p008_c0001] 2026, the report does not require full MTA Board approval prior to submission but will be shared with the Committee with an overview of the report scope and findings.
+### [p008_c0002] June 2026
+### [p008_c0003] • 1 st Quarter 2026 Report
+[p008_c0004] The Department of Diversity and Civil Rights will present 1 st quarter 2026 update on MTA Agency-wide DEO, and M/W/DBE and SDVOB contract compliance activities.
+### [p008_c0005] • EUCI/EMPP Pilot Program Updates
+[p008_c0006] Launching in 2026, DDCR will update on two pilot initiatives designed to increase NYS MWBE contracting with the MTA – the Enhanced Utilization Credit Initiative (EUCI) and the Enhanced Mentor Protégé Program (EMPP).
+### [p008_c0007] • MTA EDGE Program Update
+[p008_c0008] DDCR will provide an update on program roll out and transition for current MTA EDGE (formerly named Small Business Mentoring Program) cycle.
+### [p008_c0009] • Accessibility Programming Update
+[p008_c0010] The Committee will receive an update on MTA accessibility programming that is non-capital in nature and relevant to the MTA's workforce and customers.
+### [p008_c0011] September 2026
+### [p008_c0012] • 2 nd Quarter 2026 Report
+[p008_c0013] The Department of Diversity and Civil Rights will present 2 nd quarter 2026 update on MTA Agency-wide DEO, and M/W/DBE and SDVOB contract compliance activities.
+### [p008_c0014] • 5-Year DEI Strategic Plan – Bi-Annual Update
+[p008_c0015] The Department of Diversity and Civil Rights will present MTA's progress towards its 5-year DEI Strategic Plan developed to comply with the New York State Executive Order 187.
+### [p008_c0016] • DBE Program Update
+[p008_c0017] DDCR will provide an update on program activities resulting from the Interim Final Rule published by the U.S. Department of Transportation related to amendments to 49 CFR Parts 23 and 26 in October 2025 which restructured the Disadvantaged Business Enterprise (DBE) program.
+### [p008_c0018] • Recommitment to Equal Opportunity ("EO")
+[p008_c0019] Each year, the MTA disseminates Policies addressing the Americans with Disabilities Act ("ADA"), Sexual and Other Discriminatory Harassment Prevention and Equal Employment Opportunity to reaffirm MTA's commitment to ensuring a workplace environment free from illegal discrimination and to ensure continued compliance with all applicable laws and regulations. The Department of Diversity and Civil Rights will present the 2025 EO Policy Statements.
+### [p008_c0020] December 2026
+### [p008_c0021] • 3 rd Quarter 2026 Report
+[p008_c0022] The Department of Diversity and Civil Rights will present 3 rd quarter 2026 update on MTA Agency-wide DEO, and M/W/DBE and SDVOB contract compliance activities
+[p008_c0023] _Master Page # 8 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 9
+
+### [p009_c0001] • MTA Agency Wide EEO Program Report
+[p009_c0002] The MTA is required to submit a report to the Federal Transit Administration (FTA) outlining its Equal Employment Opportunity Program ("EEO Program") which outlines the MTA's policies, practices and procedures to ensure equal employment opportunities for the term of July 1, 2021 – June 30, 2025. This report was originally due to the FTA by March 1, 2026, however the agency was notified in February 2026 that the new due date will be October 1, 2026. The report does not require full MTA Board approval prior to submission but will be shared with the Committee with an overview of the report scope and findings.
+### [p009_c0003] • 2027 Diversity Committee Work Plan
+[p009_c0004] The Department of Diversity and Civil Rights will present an updated Diversity Committee Work Plan for 2027.
+### [p009_c0005] • Recruitment Strategies for MTAHQ and MTA Agencies
+[p009_c0006] Staff from the Department of Diversity and Civil Rights, MTAHQ and MTA Agencies will present recruitment strategies to address underutilization of minorities and women in the workforce.
+### [p009_c0007] • Accessibility Programming Update
+[p009_c0008] The Committee will receive an update on MTA accessibility programming that is non-capital in nature and relevant to the MTA's workforce and customers.
+### [p009_c0009] • Diversity Committee Charter Review
+[p009_c0010] The Diversity Committee will review and assess the adequacy of its charter and recommend changes as necessary.
+[p009_c0011] _Master Page # 9 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 10
+
+> [p010_c0001] The logo for the Metropolitan Transportation Authority (MTA) is shown. It consists of a blue circle with the white letters 'MTA' inside. To the right of the circle, the text 'Metropolitan Transportation Authority' is written in a bold, blue, sans-serif font. Below this, in a smaller, lighter blue font, it says 'Department of Diversity and Civil Rights'.
+### [p010_c0002] Diversity Committee Presentation/ Executive Summary
+[p010_c0003] March 23, 2026
+> [p010_c0004] A person dressed in a vibrant red and gold lion dance costume is standing on the side of a blue and yellow bus. The bus has 'HYBRID BUS' and 'I NY' printed on its side. The person is holding a small object, possibly a prop or a small gift.
+> [p010_c0005] A close-up shot of a person's hand holding a smartphone over a blue digital payment terminal. The terminal is part of a turnstile or gate system, likely for a subway or bus station. The screen of the terminal shows a blue interface with some text and icons.
+> [p010_c0006] A person is using a smartphone to interact with a blue digital payment terminal inside a subway car. The terminal is mounted on a blue seat. The screen of the terminal shows a blue interface with some text and icons. The person's hand is holding a smartphone over the terminal.
+> [p010_c0007] A person is using a smartphone to interact with a blue digital payment terminal inside a subway car. The terminal is mounted on a blue seat. The screen of the terminal shows a blue interface with some text and icons. The person's hand is holding a smartphone over the terminal.
+> [p010_c0008] A person is working on a large, colorful, abstract sculpture. The sculpture is made of various materials and colors, including red, yellow, and blue. The person is wearing a blue shirt and is focused on their work.
+> [p010_c0009] A person is standing in front of a blue and white building. The building has a sign that says 'Dutchess Avenue Subway Station'. The person is wearing a blue shirt and is looking towards the camera.
+[p010_c0010] _Master Page # 10 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 11
+
+### [p011_c0001] Agenda:
+### [p011_c0002] I. Welcome new DDCR Leader
+### [p011_c0003] II. MTA-wide EEO Activities
+- [p011_c0004] • EEO Program Report • Title VI Program Report • NYS EO 187 Report - 2025 • Workplace Statistics – Q4 Reporting
+> [p011_c0005] The image shows the official logo of the Metropolitan Transportation Authority (MTA). It features a blue circle with the white letters 'MTA' inside. To the right of the circle, the words 'Metropolitan Transportation Authority' are written in a bold, sans-serif font, stacked vertically. Below this, in a smaller, lighter font, are the words 'Department of Diversity and Civil Rights'.
+### [p011_c0006] III. 2025-26 Small Business Development Activity
+- [p011_c0007] • DBE Program Update • MWBE/SDVOB Payments & Awards • MWBE Success Story
+### [p011_c0008] IV. Events
+[p011_c0009] _Master Page # 11 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 12
+
+### [p012_c0001] Michelle Thompson, Agency EO Chief, C&D
+[p012_c0002] Michelle Thompson is an attorney with extensive experience in employment law and EEO investigations who began her career as an Assistant District Attorney in the Brooklyn District Attorney's Office and later represented the NYC Department of Education in arbitration and employee discipline matters.
+> [p012_c0003] A professional headshot of Michelle Thompson. She is a Black woman with long, curly, light brown hair. She is wearing a dark blazer over a dark top and a pearl necklace. She is smiling warmly at the camera. The background is a soft, out-of-focus light color.
+[p012_c0004] Ms. Thompson subsequently returned to public service at the NYC Department of Transportation, where she advised on legislative matters, drafted agency rules, and responded to discrimination complaints filed with the New York State Division of Human Rights and the Equal Employment Opportunity Commission.
+[p012_c0005] Prior to joining the MTA as a Senior EO Investigator, Ms. Thompson advised a recruiting firm on employment law and EEO compliance and served as an EEO Attorney with the New York City Administration for Children's Services, conducting complex investigations and providing guidance on workplace discrimination policies and best practices.
+[p012_c0006] In addition to her professional work, Ms. Thompson has volunteered as a mediator for the U.S. District Court for the Southern District of New York and as a small claims arbitrator in New York State Civil Court.
+[p012_c0007] Ms. Thompson earned her J.D. from Boston University School of Law and her B.A. in Political Science from Howard University. She is admitted to practice law in New York.
+> [p012_c0008] The logo for the Metropolitan Transportation Authority (MTA). It features a blue circle with the white letters 'MTA' inside. To the right of the circle, the text 'Metropolitan Transportation Authority' is written in blue. Below this, in a smaller font, it says 'Department of Diversity and Civil Rights'.
+[p012_c0009] _Master Page # 12 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 13
+
+### [p013_c0001] Agenda:
+### [p013_c0002] I. Welcome new DDCR Leader
+### [p013_c0003] II. MTA-wide EEO Activities
+- [p013_c0004] • EEO Program Report • Title VI Program Report • NYS EO 187 Report • Workplace Statistics – Q4 Reporting
+> [p013_c0005] The image shows the official logo of the Metropolitan Transportation Authority (MTA). It features a blue circle with the white letters 'MTA' inside. To the right of the circle, the words 'Metropolitan Transportation Authority' are written in a bold, blue, sans-serif font, stacked vertically. Below this, in a smaller, blue, sans-serif font, are the words 'Department of Diversity and Civil Rights'.
+### [p013_c0006] III. 2025-26 Small Business Development Activity
+- [p013_c0007] • DBE Program Update • MWBE/SDVOB Payments & Awards • MWBE Success Story
+### [p013_c0008] IV. Events
+[p013_c0009] _Master Page # 13 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 14
+
+### [p014_c0001] EEO Program Report: Overview
+> [p014_c0002] A dark blue square icon containing a white calendar grid with a small circle in the top-left corner.
+[p014_c0003] Reporting Period: July 2021 – June 2025
+> [p014_c0004] A dark blue square icon containing a white graphic of three stylized human figures with an upward-pointing arrow.
+[p014_c0005] Workforce Analysis
+> [p014_c0006] A dark blue square icon containing a white graphic of a megaphone.
+[p014_c0007] Risk Mitigation
+> [p014_c0008] A dark blue square icon containing a white graphic of a classical building with columns.
+[p014_c0009] Agencies Covered: HQ, NYCT, LIRR, MNR, Bus, C&D
+> [p014_c0010] The logo for the Metropolitan Transportation Authority (MTA). It features a blue circle with the white letters 'MTA' inside. To the right of the circle, the text 'Metropolitan Transportation Authority' is written in blue, with 'Department of Diversity and Civil Rights' in a smaller font below it.
+[p014_c0011] _Master Page # 14 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 15
+
+### [p015_c0001] Title VI Program Report: Overview
+[p015_c0002] Reporting Period: July 2022 – June 2025
+[p015_c0003] FTA Requirement: Circular 4702.1B
+[p015_c0004] Core Components: Service Equity Analysis, Language Access, Complaint Process
+[p015_c0005] _Master Page # 15 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 16
+
+### [p016_c0001] Title VI Program Report: Strategic Importance
+[p016_c0002] Supports Ongoing Federal Compliance
+[p016_c0003] Reflects a Commitment to Fair and Consistent Practices
+[p016_c0004] Ensures proactive risk management
+> [p016_c0005] The image is a logo for the Metropolitan Transportation Authority (MTA). It features a blue circular icon with the white letters 'MTA' inside. To the right of the icon, the text 'Metropolitan Transportation Authority' is written in a bold, sans-serif font. Below this, in a smaller, lighter font, it says 'Department of Transportation' and 'Department of Diversity and Civil Rights'.
+[p016_c0006] _Master Page # 16 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 17
+
+### [p017_c0001] Title VI Program Report: Service Equity Snapshot
+- [p017_c0002] ✓ Title VI Compliance All required analyses completed prior to implementation ✓ Minority Population Coverage (>60%) Service levels are equitably distributed across communities ✓ No Disparate Impact No adverse effects identified for minority populations ✓ No Disproportionate Burden Fare and service changes did not burden low-income riders ✓ 95% Confidence Testing Statistical standard applied to all major service changes
+> [p017_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the bottom right corner. It features a blue circular icon with the letters 'MTA' in white. To the right of the icon, the text 'Metropolitan Transportation Authority' is written in a bold, sans-serif font. Below this, in a smaller font, it says 'Department of Diversity and Civil Rights'.
+[p017_c0004] _Master Page # 17 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 18
+
+### [p018_c0001] NYS EO 187 Report - 2025
+- [p018_c0002] • Leadership Commitment: Diversity integrated into the strategic plan with leadership engagement. • Dedicated Resources: 142 FTEs, $100K outreach and engagement budget, $10K for ERGs • Employee Engagement: Robust ERGs hosted cultural events and awareness programs • Accessibility Progress: 7 stations fully accessible, 39 elevator replacements • Recruitment Impact: 164 events leveraging LinkedIn and Handshake
+> [p018_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the bottom right corner. It features a blue circular icon with the white letters 'MTA' inside. To the right of the icon, the text 'Metropolitan Transportation Authority' is written in a bold, sans-serif font. Below this, in a smaller font, it says 'Department of Diversity and Civil Rights'.
+[p018_c0004] _Master Page # 18 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 19
+
+### [p019_c0001] MTA - Wide Workforce: Q4
+[p019_c0002] 75,006 strong as of December 31, 2025
+### [p019_c0003] Workforce Demographics
+- [p019_c0004] ➤ 20% (14,733) self-identified as females ➤ 75% (55,991) self-identified as minorities ➤ 2% (1,598) veterans* ➤ 1% (791) self-identified as a person with a disability
+### [p019_c0005] Hires & Separations
+- [p019_c0006] ➤ 5,712 new hires and 5,045 separations ➤ Net increase of 234 self-identified female and net increase of 433 self-identified male employees ➤ Net decrease of 98 veterans* and a net decrease of 49 self-identified individuals with a disability
+[p019_c0007] *Veteran data reflects individuals verified as Eligible Veterans (honorable discharge, including Vietnam-era veterans) through the MTA DD-214 verification process
+> [p019_c0008] The logo for the Metropolitan Transportation Authority (MTA) is displayed. It features the MTA logo (a blue circle with the letters 'MTA' in white) followed by the text 'Metropolitan Transportation Authority' in a bold, sans-serif font. Below this, in a smaller font, it says 'Department of Transportation' and 'Diversity and Civil Rights'.
+[p019_c0009] Workforce data details can be found on pages 31-38 of the Diversity Committee Book
+[p019_c0010] _Master Page # 19 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 20
+
+### [p020_c0001] Agenda:
+### [p020_c0002] I. Welcome new DDCR Leader
+### [p020_c0003] II. MTA-wide EEO Activities
+- [p020_c0004] • EEO Program Report • Title VI Program Report • NYS EO 187 Report - 2025 • Workplace Statistics – Q4 Reporting
+> [p020_c0005] The image shows the official logo of the Metropolitan Transportation Authority (MTA). It features a blue circle with the white letters 'MTA' inside. To the right of the circle, the words 'Metropolitan Transportation Authority' are written in a bold, sans-serif font. Below this, in a smaller font, it says 'Department of Diversity and Civil Rights'. The entire logo is set against a light blue background.
+### [p020_c0006] III. 2025-26 Small Business Development Activity
+- [p020_c0007] • DBE Program Update • MWBE/SDVOB Payments & Awards • MWBE Success Story
+### [p020_c0008] IV. Events
+[p020_c0009] _Master Page # 20 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 21
+
+### [p021_c0001] Federal DBE Program Update
+[p021_c0002] On Oct. 3, 2025, the U.S. Department of Transportation (DOT) issued an interim Final Rule (IFR) fundamentally restructuring the Disadvantaged Business Enterprise (DBE) and Airport Concessions DBE/ACDBE programs.
+- [p021_c0003] • The reevaluation process has been initiated by the NYS Unified Certification Partners (NYSUCP), which includes the MTA, PANYNJ, NYSDOT, and NFTA. • Notices have been sent to DBE and ACDBE firms requesting firms to submit their Personal Narratives (PN) and updated Personal Net Worth (PNW) documentation. • Nine workshops providing an overview of the new eligibility requirements and the reevaluation process have been held to date. Additional workshops will be delivered through Q1 and Q2 as needed. • As of March 11: approximately 29% of all eligible firms certified by a NYS partner have responded to requests to submit materials for reevaluation.
+> [p021_c0004] The image is a logo for the Metropolitan Transportation Authority (MTA). It features a blue circular icon with the letters 'MTA' in white. To the right of the icon, the text 'Metropolitan Transportation Authority' is written in a bold, sans-serif font. Below this, in a smaller font, it says 'Department of Transportation' and 'Department of Diversity and Civil Rights'.
+[p021_c0005] _Master Page # 21 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 22
+
+### [p022_c0001] SDVOB Utilization & Payments
+[p022_c0002]
+
+```text
+NYS FY 2025/2026 Apr. – Dec. 2025 NYS FY 2024/2025 Apr. – Dec. 2024 SDVOB % 5% 8% SDVOB Payments $53,377,567 $48,784,428
+```
+[p022_c0003]
+
+```text
+NYS FY 2025/2026 SDVOB (APRIL 2025 – DECEMBER 2025) Industry Amount Paid ($) Amount Paid (%) C - Commodities $16,958,666 32% CC - Construction Consultants $27,614,626 52% CN - Construction $1,397,398 2% SC - Services / Consultants 7,406,877 14% Grand Total $53,377,567 100%
+```
+[p022_c0004]
+
+```text
+NYS FY 2024/2025 SDVOB (APRIL 2024 - DECEMBER 2024) Industry Amount Paid ($) Amount Paid (%) C - Commodities $22,969,416 47% CC - Construction Consultants $18,471,711 38% CN - Construction 2,156,267 4% SC - Services / Consultants $5,187,033 11% Grand Total $48,784,428 100%
+```
+[p022_c0005] _Master Page # 22 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 23
+
+### [p023_c0001] MWBE Utilization & Payments
+[p023_c0002]
+
+```text
+NYS FY 2025/2026 Apr. – Dec. 2025 NYS FY 2024/2025 Apr. – Dec. 2024 MWBE % 32% 33% MWBE Payments $719,058,401 $688,056,649
+```
+[p023_c0003]
+
+```text
+NYS FY 2025/2026 MWBE (APRIL 2025 – DECEMBER 2025) Industry Amount Paid ($) Amount Paid (%) C - Commodities $12,1343,568 17% CC - Construction Consultants $12,587,401 2% CN - Construction $430,117,714 60% SC - Services / Consultants $155,009,718 21% Grand Total $719,058,401 100%
+```
+[p023_c0004]
+
+```text
+NYS FY 2024/2025 MWBE (APRIL 2024 - DECEMBER 2024) Industry Amount Paid ($) Amount Paid (%) C - Commodities $131,709,686 19% CC - Construction Consultants $18,075,704 3% CN - Construction $36,0391,011 52% SC - Services / Consultants $177,880,248 26% Grand Total $688,056,649 100%
+```
+[p023_c0005] _Master Page # 23 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 24
+
+### [p024_c0001] MWBE Success Story
+### [p024_c0002] vCloud Tech Inc. (MBE)
+[p024_c0003] vCloud Tech is an IT consulting and technology services firm specializing in modernizing and securing enterprise IT environments through cloud-first strategies, digital transformation, and managed solutions. Serving commercial, government, financial, and educational organizations, vCloud accelerates technology adoption and enhances IT performance.
+[p024_c0004] Its core offerings include Cloud Migration, IT Consulting, Cybersecurity Solutions, and comprehensive implementation support covering deployment, training, and advisory services aligned with organizational goals and cloud strategies.
+[p024_c0005] Since 2019, vCloud has consistently won competitive bids, demonstrating that MBE firms can succeed in open markets for IT services and products. In FY 2025-2026, vCloud secured over $8.7M in software licenses and support, bringing its total awards since 2019 to more than $19M
+> [p024_c0006] A black and white portrait of Muhammad Khan, a man with a beard, smiling and looking slightly to the left.
+[p024_c0007] _vCLOUD TECH Muhammad Khan Chief Executive Officer_
+> [p024_c0008] The logo for the Metropolitan Transportation Authority (MTA) of New York City. It features a blue circle with the letters 'MTA' in white, followed by the text 'Metropolitan Transportation Authority' and 'Department of Diversity and Civil Rights' below it.
+[p024_c0009] _Master Page # 24 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 25
+
+### [p025_c0001] Agenda:
+### [p025_c0002] I. Welcome new DDCR Leader
+### [p025_c0003] II. MTA-wide EEO Activities
+- [p025_c0004] • EEO Program Report • Title VI Program Report • NYS EO 187 Report - 2025 • Workplace Statistics – Q4 Reporting
+> [p025_c0005] The image shows the official logo of the Metropolitan Transportation Authority (MTA). It features a blue circle with the white letters 'MTA' inside. To the right of the circle, the words 'Metropolitan Transportation Authority' are written in a bold, blue, sans-serif font. Below this, in a smaller, blue, sans-serif font, are the words 'Department of Diversity and Civil Rights'.
+### [p025_c0006] III. 2025-26 Small Business Development Activity
+- [p025_c0007] • DBE Program Update • MWBE/SDVOB Payments & Awards • MWBE Success Story
+### [p025_c0008] IV. Events
+[p025_c0009] _Master Page # 25 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 26
+
+### [p026_c0001] All Agency Employee Resource Groups Quarterly Highlights
+[p026_c0002] ABILITIES
+[p026_c0003] PRIDE EXPRESS
+[p026_c0004] TransportAsian
+[p026_c0005] *The ERG Events are open to all MTA employees
+[p026_c0006] _Master Page # 26 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 27
+
+### [p027_c0001] All Agency Employee Resource Groups (ERG) Quarterly Highlights
+[p027_c0002] *The ERG Events are open to all MTA employees
+[p027_c0003] _Master Page # 27 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 28
+
+[p028_c0001] Thank you from the DDCR team...
+[p028_c0002] Lourdes Zapata (she/ella) Chief Diversity and Inclusion Officer
+[p028_c0003] Ray Burke (he/him) Deputy Chief Diversity and Inclusion Officer, MWDBE/SDVOB Contract Compliance
+[p028_c0004] Evita Marrow (she/her) Deputy Chief Diversity and Inclusion Officer, Programming & Operations
+[p028_c0005] Christine Norman (she/her) Deputy Chief Diversity and Inclusion Officer, Technology, Operations, DBE Certification & Outreach
+[p028_c0006] Sheree Owens (she/her) Deputy Chief Diversity and Inclusion Officer, MTA EDGE
+> [p028_c0007] The image shows the official logo of the Metropolitan Transportation Authority (MTA). It features a blue circular icon with the letters 'MTA' in white. To the right of the icon, the text 'Metropolitan Transportation Authority' is written in a bold, sans-serif font. Below this, in a smaller font, it says 'Department of Diversity and Civil Rights'.
+[p028_c0008] _Master Page # 28 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 29
+
+### [p029_c0001] Metropolitan Transportation Authority
+### [p029_c0002] Staff Summary
+### [p029_c0003] Page 1 of 1
+[p029_c0004]
+
+```text
+Subject: 2026 Title VI Program Department Diversity and Civil Rights Department Head Name Lourdes Zapata, Chief Diversity and Inclusion Officer Department Head Signature Project Manager/Division Head Evita Marrow, Deputy Chief Diversity and Inclusion Officer
+```
+[p029_c0005]
+
+```text
+Date March 23, 2026 Vendor Name N/A Contract Number N/A Contract Manager Name N/A Table of Contents Ref # N/A
+```
+[p029_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Diversity Committee 2 Board
+```
+[p029_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Diversity & Civil Rights 2 Legal 3 Chief of Staff
+```
+### [p029_c0008] Purpose:
+[p029_c0009] To obtain Board approval for the 2026 MTA-wide Title VI Program, including service-monitoring results, and Public Participation Guide (PPG).
+### [p029_c0010] Discussion:
+[p029_c0011] As a recipient of Federal Transit Administration (FTA) funds, certain subsidiaries and affiliates of the Metropolitan Transportation Authority (“MTA”) must comply with the requirements of FTA Circulars 4702.1B (Title VI), 4703.1 (Environmental Justice), 4704.1A (EEO), as well as related Federal Transit Laws, 49 U.S.C. § 5332.
+[p029_c0012] These statutes and regulations prohibit discrimination on the basis of race, color, national origin (including limited English proficiency (LEP) access), age, sex, religion, and disability, in connection with any federally-funded program or activity of the MTA and the following affiliated and subsidiary agencies: MTA Long Island Rail Road, MTA Metro-North Railroad, MTA Construction & Development, MTA Grand Central Madison Concourse Operating Company, MTA Bus Company, and MTA New York City Transit, including the Manhattan and Bronx Surface Transit Operating Authority and the Staten Island Rapid Transit Operating Authority, (collectively, “the MTA”).
+[p029_c0013] Further, as provided under (FTA) Circular 4702.1b, the Title VI Program is a consolidated document developed for submission to the FTA that details and affirms the MTA’s commitment to complying with the requirements of Title VI and related Non-discrimination Federal Transit Laws with respect to its federally funded programs and activities.
+[p029_c0014] Under the requirements of FTA Circular 4702.1b, the Title VI Program, service monitoring results, and Public Participation Guide must be approved by the MTA Board of Directors before submission to the FTA.
+[p029_c0015] The MTA is required to submit an updated Title VI Program to the FTA every three years. MTA’s updated Title VI program submission is due June 30, 2026.
+### [p029_c0016] Recommendation:
+[p029_c0017] It is the recommendation that the Board approve MTA’s 2026 consolidated Title VI Program, including service monitoring results, and Public Participation Guide in satisfaction of the requirements of the FTA Title VI Circular, 4702.1B.
+[p029_c0018] _Page 1 of 1_
+[p029_c0019] _Master Page # 29 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 30
+
+### [p030_c0001] BOARD RESOLUTION 2026 TITLE VI Program and Public Participation Guide
+[p030_c0002] WHEREAS, Title VI of the Civil Rights Act of 1964, 42 U.S.C. § 2000d et seq. (“Title VI”), the U. S. Department of Transportation (“DOT”) regulations, 49 CFR Part 21, and the Federal Transit Administration (“FTA”) Circular 4702.1B prohibit discrimination on the basis of race, color or national origin by recipients of federal financial assistance in administering the benefits of their programs; and
+[p030_c0003] WHEREAS, Federal Transit Laws, (49 U.S.C. § 5332) further prohibit discrimination in any Federally Assisted Programs on the bases of age, sex, religion, and disability and are protected and investigated under MTA’s Title VI Program, as applicable to certain of MTA’s affiliates and subsidiaries.
+[p030_c0004] WHEREAS, as a recipient of federal funds, certain MTA affiliated and subsidiary agencies are required to comply with the requirements of Title VI, the applicable DOT regulations, and the FTA Circular; and
+[p030_c0005] WHEREAS, pursuant to FTA Circular 4702.1B, the MTA is required to develop a consolidated report that outlines the Title VI Program for these certain affiliated and subsidiary agencies and submit that report to the MTA Board for approval; and
+[p030_c0006] WHEREAS, the MTA Board has been briefed on the contents of the MTA’s Title VI Program, including the service monitoring results; and
+[p030_c0007] WHEREAS, the MTA Board has also been briefed on the contents of the MTA’s Public Participation Guide (PPG),
+[p030_c0008] Now, THEREFORE IT IS RESOLVED that the Board approves the MTA’s consolidated Title VI Program, including service monitoring results, and Public Participation Guide (PPG) as described in the attached Staff Summary.
+[p030_c0009] _Master Page # 30 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 31
+
+### [p031_c0001] Memorandum
+> [p031_c0002] The logo for the Metropolitan Transportation Authority (MTA) is located in the top left corner. It features a blue circle with the white letters "MTA" inside. To the right of the circle, the text "Metropolitan Transportation Authority" is written in a bold, blue, sans-serif font. Below this text, in a smaller, lighter blue font, is the phrase "State of New York".
+[p031_c0003] Date: March 19, 2026
+[p031_c0004] To: Janno Lieber, Chair & CEO
+[p031_c0005] From: Lourdes Zapata, Chief Diversity & Inclusion Officer, DDCR Evita Marrow, Deputy CDIO, Operations & Programming, DDCR Vanessa Summers, Director, Title VI Analysis, Equity and Access, DDCR
+[p031_c0006] Re: Summary of Federal Report: 2022-2025 Title VI Program (Title VI)
+[p031_c0007] The MTA's 2022–2025 Title VI Program is mandated by the Federal Transit Administration. Its development involves months of coordinated, data-driven work across agencies to assess workforce equity, evaluate service impacts, and enhance accountability.
+[p031_c0008] While the Title VI report is due June 30, 2026, all materials—including exhibits—must be uploaded to the Federal portal at least 60 days before the program's expiration. Submission also requires confirmation of MTA Board approval.
+[p031_c0009] This report was drafted by EO staff, reviewed with Agency Presidents, and vetted by Legal and senior leadership. A high-level overview of the report is provided below.
+### [p031_c0010] 2022-2025 Title VI Program (Title VI)
+### [p031_c0011] Program Overview:
+- [p031_c0012] • Required by FTA Circular 4702.1B for agencies receiving federal funds. • Covers all MTA operating agencies; excludes Bridges & Tunnels • Reporting Period: July 1, 2022 – June 30, 2025
+### [p031_c0013] Strategic Importance
+- [p031_c0014] • Documents MTA's compliance and minimize funding risks. • Demonstrates commitment to fair and inclusive transit service. • Ensures proactive identification and resolution of potential disparate impacts.
+[p031_c0015] _1_
+[p031_c0016] _Master Page # 31 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 32
+
+### [p032_c0001] Core Components:
+[p032_c0002]
+
+```text
+Category Definition 1 Transit Related Title VI Investigations, Complaints and Lawsuits Outlines how the MTA tracks and resolves Title VI complaints; ensures multiple reporting channels and timely investigations. Summary: 258 Title VI complaints and 3 Title VI lawsuits were received during the reporting term. 2 Public Participation Plan Guaranteeing meaningful involvement of all communities in decision-making processes for major service and fare changes. Summary: MTA Agencies conducted or participated in 16 public hearings, and over 900 community outreach and other public meetings during various times and at multiple transit and ADA accessible locations during the program report term. 3 Language Assistance Plan Ensuring Limited English Proficient (LEP) individuals can fully understand and benefit from MTA services through interpretation and translation. Summary: The MTA ensures Limited English Proficiency (LEP) riders have access to information and participation opportunities in the top 9 languages: 1. Spanish 6. Haitian Creole 2. Chinese 7. Korean 3. Russian 8. Italian 4. Yiddish 9. Arabic 5. Bengali 4 Minority Representation on Planning and Advisory Bodies Promoting diverse perspectives in transit planning and policy development. Summary: • The MTA is governed by a 23-member Board of Directors. • The Board also has six rotating, non-voting seats held by representatives of organized labor and the Permanent Citizens Advisory Committee (PCAC) • PCAC consists of 38 members, all of whom are regular MTA commuters on Long Island Rail Road, Metro-North Railroad, and/or New York City Transit. 5 Subrecipient Assistance and Monitoring Ensures compliance by contractors and subrecipients through monitoring and reporting requirements. Summary: The MTA did not have any sub-recipients during the reporting period. 6 Determination of Site or Location of Facilities The process by which MTA evaluates and selects facility locations to ensure compliance by assessing potential disparate impacts on minority and low-income populations. Key Finding(s): • The MTA did not determine any new sites or locations for facilities for storage or maintenance facilities, operations centers, etc., during the report period.
+```
+[p032_c0003] _2_
+[p032_c0004] _Master Page # 32 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 33
+
+[p033_c0001]
+
+```text
+• The MTA has no new facilities planned within the next three-year period as shown in Exhibit 8. • Environmental Justice requirements were followed by MTA Agencies where required for construction projects. 7 Equity Analysis – Locations, Facilities and New Starts Projects MTA’s investment in infrastructure improvements to maintain equity and accessibility across the system. Summary: The MTA had no federally funded facilities construction projects such as vehicle storage or maintenance facilities, or any New Starts projects that required an equity analysis during this program period. 8 Service Standards and Service Policies Efforts to provide measurable guidelines for equitable distribution of transit amenities and vehicle assignments. Key Finding(s): • Title VI analysis of MTA service standards were completed in 2013. A new analysis will be required and submitted for Board approval by the due date of the next triennial report (2029). • NYCT/Bus standards were last updated in 2010. DDCR has met with NYCT staff to determine need and timing for an update. • LIRR standards were last updated outside of reporting period (Nov. 2025). • DDCR is confirming whether MNR standards have been updated since 2013. 9 Collecting and Reporting Demographic Data and Profile Maps MTA used Census and ACS data to map minority and low-income populations across service areas to provide data-driven insights to monitor equity and inform planning decisions. Summary: Over 60% of MTA service area identified as minority population zones. 10 Demographics and Travel Patterns Collection of customer feedback, system usage and demographics, and fare payment methods. Summary: The Spring 2025 MTA Customers Count Survey was conducted in April 2025 and received over 94,000 responses. A copy of the survey and results were shared as an exhibit in the report. 11 Major Service Changes Evaluates whether transit service changes (major service adjustments, fare changes) have disparate impacts on minority populations or disproportionate burdens on low-income riders. Key Finding(s): Three (3) major services changes occurred during the reporting period which received an equity analysis. No disparate impact findings in 2025 service adjustments; mitigation strategies applied where potential impacts were identified: • Queens Bus Network Redesign – NYCT and MTA Bus • East Side Access / Grand Central Madison (GCM) – LIRR • Mets-Willet Point Station (MWP) – LIRR
+```
+[p033_c0002] _3_
+[p033_c0003] _Master Page # 33 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 34
+
+[p034_c0001]
+
+```text
+12 Fare Changes Requires MTA to conduct a Title VI equity analyses to ensure fare adjustments do not disproportionately impact minority or low-income riders. Key finding(s): • NYCT Subway, Bus and MTA BUS Co. received Board approval for fare increases in August 2023. • LIRR implemented two fare changes during the reporting period. • MNR implemented fare changes on some lines and increases on certain ticket types during the reporting period. • Fare equity analysis confirmed affordability measures (e.g., OMNY discounts, Fair Fares NYC) where appropriate and/or no disparate impact on minority and/or low-income riders.
+```
+### [p034_c0002] Key Strategies for Compliance & Equity
+- [p034_c0003] • Data-Driven Analysis: GIS mapping and statistical tests for equity in service changes. • Community Engagement: Expanded multilingual outreach, virtual and in-person hearings. • Language Access Plan: Over 100 languages supported; targeted outreach for LEP communities.
+[p034_c0004] _4_
+[p034_c0005] _Master Page # 34 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 35
+
+### [p035_c0001] MTA EEO Activity and Workforce Report
+[p035_c0002] March 23, 2026
+> [p035_c0003] The image shows the logo of the Metropolitan Transportation Authority (MTA). The logo consists of a blue circle with the white letters 'MTA' inside. To the right of the logo, the text 'Metropolitan Transportation Authority' is written in a bold, blue, sans-serif font. Below this, the text 'Department of Diversity and Civil Rights' is written in a smaller, blue, sans-serif font, stacked vertically.
+[p035_c0004] _Master Page # 35 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 36
+
+### [p036_c0001] Definitions of EEO Job Categories
+- [p036_c0002] • Officials & Administrators - Occupations in which employees set broad policies, exercise overall responsibility for execution of these policies, or direct individual departments or special phases of the agency's operations, or provide specialized consultation on a regional, district, or area basis. • Professionals – Occupations that require specialized and theoretical knowledge, which is usually acquired through college training or through work experience and other training that provides comparable knowledge. • Technicians – Occupations that require a combination of basic scientific or technical knowledge and manual skill, which can be obtained through specialized post-secondary school education or through equivalent on-the-job training. • Protective Services – Occupations in which workers are entrusted with public safety, security, and protection from destructive forces. • Paraprofessionals – Occupations in which workers perform some of the duties of a professional or technician in a supportive role, which usually require less formal training and/or experience normally required for professional or technical status. • Administrative Support – Occupations in which workers are responsible for internal and external communication, recording and retrieval of data and/or information, and other paperwork required in an office. • Skilled Craft – Occupations in which workers perform jobs that require special manual skill and a thorough knowledge of the process involved in the work, which is acquired through on-the-job training and experience or through apprenticeship or other formal training programs. • Service Maintenance – Occupations in which workers perform duties that result in or contribute to the comfort, convenience, hygiene, or safety of the general public or that contribute to the upkeep and care of buildings, facilities, or grounds of public property.
+> [p036_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the bottom right corner. It features a blue circular icon with the letters 'MTA' in white. To the right of the icon, the text 'Metropolitan Transportation Authority' is written in a bold, sans-serif font. Below this, in a smaller font, it says 'Department of Transportation' and 'Diversity and Civil Rights'.
+[p036_c0004] _Master Page # 36 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 37
+
+### [p037_c0001] MTA - Wide Workforce: Q4
+[p037_c0002] _Workforce by Sex and Ethnicity As of December 31, 2025_
+> [p037_c0003] Ethnicity Male Female 2+ Races 3,081 772 AI/AN 235 35 Asians 7,417 1,040 Blacks 21,204 2,577 Hispanics 11,054 17,253 NHOPi 529 11 Whites 1,762 8,536
+[p037_c0004] _Hires & Separations January 1, 2025 – December 31, 2025_
+> [p037_c0005] Ethnicity Hires Separations 2+ Races ~400 ~300 AI/AN ~600 ~500 Asians ~1,000 ~900 Blacks ~1,500 ~1,400 Hispanics ~2,500 ~2,400 NHOPi ~2,500 ~2,400 Whites ~2,800 ~2,700
+[p037_c0006] _Master Page # 37 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 38
+
+### [p038_c0001] MTA - Wide Workforce: Q4 as of December 31, 2025
+[p038_c0002]
+
+```text
+JOB CATEGORY TOTAL Minorities 2+ RACES AI/AN* ASIAN BLACKS HISPANICS NHOI** WHITES VETERANS PWD*** # % # % # % # % # % # % # % # % # % # % # % Officials & Administrators F 5,967 3543 59% 437 7% 10 0% 944 16% 1,368 23% 790 13% 4 0% 2,424 41% 166 3% 221 4% M 1,772 1281 73% 122 2% 3 0% 275 5% 630 11% 251 4% 0 0% 491 8% 17 0% 75 1% Professionals F 4,559 3279 72% 397 9% 11 0% 1,107 24% 1,135 25% 624 14% 5 0% 1,202 28% 77 2% 161 4% M 1,718 1386 81% 153 3% 6 0% 362 8% 629 14% 232 5% 4 0% 332 7% 13 0% 72 2% Technicians F 2,841 1853 65% 244 5% 5 0% 745 16% 506 11% 392 9% 1 0% 948 21% 64 1% 89 2% M 645 306 48% 37 6% 4 1% 95 15% 141 22% 108 17% 1 0% 259 40% 25 4% 12 2% Protective Services F 75 59 79% 4 1% 0 0% 7 1% 34 5% 14 2% 0 0% 16 2% 3 0% 3 0% M 570 886 51% 33 5% 4 1% 88 14% 107 17% 94 15% 1 0% 243 38% 22 3% 9 1% Paraprofessionals F 2,235 1,488 67% 103 4% 2 0% 136 6% 607 31% 572 26% 2 0% 747 33% 103 5% 14 1% M 480 347 72% 20 1% 1 0% 9 0% 201 9% 106 5% 0 0% 93 4% 9 0% 7 0% Administrative Support F 1,795 1141 64% 59 3% 1 0% 127 6% 486 22% 466 21% 2 0% 654 29% 54 4% 11 0% M 104 77 74% 14 13% 0 0% 10 10% 41 39% 11 11% 1 1% 27 26% 1 1% 1 1% Skilled Craft F 66 58 88% 11 11% 0 0% 6 6% 30 29% 10 10% 1 1% 8 8% 0 0% 1 1% M 38 19 50% 3 3% 0 0% 4 4% 11 11% 1 1% 0 0% 19 18% 1 1% 0 0% Service Maintenance F 1,498 1151 77% 118 8% 4 0% 194 13% 580 39% 242 17% 3 0% 347 23% 21 1% 41 3% M 813 633 46% 66 4% 2 0% 93 6% 374 25% 146 10% 2 0% 130 9% 8 1% 25 2% Total 685 468 31% 52 3% 2 0% 101 7% 206 14% 106 7% 1 0% 217 14% 13 1% 16 1% Total 23,299 14,983 64% 1,276 5% 130 1% 3,233 14% 6,933 30% 3,396 15% 17 0% 8,314 36% 658 3% 136 1% Total 697 620 3% 36 0% 1 0% 46 0% 433 2% 103 0% 1 0% 77 0% 7 0% 9 0% Total 22,602 14,365 62% 1,240 5% 129 1% 3,187 14% 6,500 28% 3,293 14% 16 0% 8,237 35% 651 3% 127 1% Total 36,699 31,002 85% 1,405 4% 109 0% 2,738 7% 10,835 51% 7,808 21% 7 0% 5,617 15% 547 1% 201 1% Total 9,152 8537 21% 350 1% 22 0% 242 1% 6,205 17% 1,715 5% 3 0% 615 2% 66 0% 62 0% Total 27,547 22,545 61% 1,135 3% 87 0% 2,496 7% 12,650 34% 6,173 17% 4 0% 5,002 14% 481 1% 139 0% Total 75,006 55,901 75% 3,853 5% 270 0% 8,457 11% 29,740 40% 13,631 18% 40 0% 19,015 25% 1,508 2% 791 1%
+```
+[p038_c0003] _* American Indian/Alaskan Native ** F represents employees who Self-Identified as Females *** M represents employees who Self-Identified as Males Persons With Disabilities NOTE: Data may vary by +/- 4% due to variations in reporting methodology and/or external factors affecting the data collection process and have been rounded up to the nearest whole number._
+[p038_c0004] _Master Page # 38 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 39
+
+### [p039_c0001] MTA - Wide Workforce, by Agency as of December 31, 2025
+[p039_c0002]
+
+```text
+MTA Agency TOTAL Minorities 2+ RACES All/AN* ASIANS BLACKS HISPANICS NHODI** WHITES VETERANS PWD*** # % # % # % # % # % # % # % # % # % # % B&T F 776 15% 468 60% 58 7% 4 1% 52 7% 195 25% 159 20% 0 0% 108 40% 7 1% 9 1% M 151 124 124 16% 9 1% 1 0% 14 2% 71 5% 29 4% 0 0% 27 3% 2 0% 4 1% 625 81% 344 44% 49 6% 3 0% 38 5% 124 16% 130 17% 0 0% 281 36% 5 1% 5 1% BUS F 4,039 13% 3267 88% 231 6% 21 1% 391 10% 1,580 49% 936 23% 8 0% 472 12% 45 1% 38 1% M 529 13% 501 12% 24 1% 2 0% 18 0% 319 8% 138 3% 0 0% 28 1% 3 0% 7 0% 3,510 87% 3066 70% 207 5% 19 0% 373 9% 1,601 41% 798 20% 8 0% 444 11% 42 1% 31 1% CB&D F 1,807 31% 1242 66% 137 7% 3 0% 534 28% 139 18% 228 12% 1 0% 665 34% 12 1% 64 3% M 589 31% 433 23% 42 2% 2 0% 167 8% 151 8% 90 5% 1 0% 156 8% 2 0% 26 1% 1,398 69% 809 43% 95 5% 1 0% 167 21% 182 10% 138 7% 0 0% 489 26% 10 1% 18 2% HQ F 5,676 35% 3655 64% 441 8% 15 0% 1,021 18% 1,281 23% 879 15% 8 0% 2,021 36% 140 2% 156 3% M 2,801 35% 1,699 26% 190 3% 4 0% 313 6% 683 12% 305 5% 4 0% 502 9% 24 0% 65 1% 3,675 65% 2156 38% 251 4% 11 0% 708 12% 608 11% 574 10% 4 0% 1,519 27% 116 2% 91 2% UBR F 7,471 15% 3213 43% 470 6% 26 0% 353 5% 1,363 18% 598 13% 3 0% 4,238 57% 137 3% 74 1% M 984 15% 608 8% 72 1% 1 0% 61 1% 334 4% 140 2% 0 0% 376 3% 20 0% 12 0% 6,467 87% 2605 35% 398 5% 25 0% 292 4% 1,029 14% 858 11% 3 0% 1,862 52% 117 4% 62 1% MANH F 6,451 11% 2091 43% 443 7% 23 0% 219 3% 1,332 20% 489 14% 4 0% 1,560 55% 192 6% 110 2% M 733 89% 508 8% 67 1% 4 0% 33 1% 263 4% 117 2% 2 0% 225 3% 22 0% 21 0% 5,718 89% 2383 37% 376 6% 19 0% 177 3% 1,037 16% 772 12% 2 0% 1,315 52% 370 6% 89 1% NYCT F 48,706 20% 40555 84% 2,073 4% 178 0% 5,896 12% 23,250 48% 9,542 20% 16 0% 7,751 16% 665 1% 340 1% M 9,746 20% 9238 19% 368 1% 21 0% 454 1% 6,693 14% 1,758 4% 4 0% 448 1% 50 0% 119 0% 38,960 80% 31037 65% 1,705 4% 157 0% 5,442 11% 16,537 34% 7,784 16% 12 0% 7,303 15% 615 1% 221 0% Total 75,000 55,991 75% 3,653 5% 279 0% 8,457 11% 29,740 40% 13,031 18% 40 0% 19,015 25% 1,598 2% 791 1%
+```
+[p039_c0003] _* American/Indian/Alekan Native ** Native Hawaiian/Other Pacific Islander *** Persons With Disabilities F represents employees who Self-Identified as Females M represents employees who Self-Identified as Males NOTE: Data may vary by +/- 4% due to variations in reporting methodology and/or external factors affecting the data collection process and have been rounded up to the nearest whole number._
+[p039_c0004] _Master Page # 39 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 40
+
+### [p040_c0001] New Hires by Agency
+[p040_c0002] January 1, 2025 - December 31, 2025
+[p040_c0003] _MTA Agencies New Hires By Sex_
+> [p040_c0004] Agency Self-Identified Males (%) Self-Identified Females (%) B&T ~60% ~40% BUS ~80% ~20% C&D ~75% ~25% HQ ~70% ~30% LIRR ~65% ~35% MNR ~80% ~20% NYCT ~85% ~15%
+[p040_c0005] _MTA Agencies New Hires By Race/Ethnicity_
+> [p040_c0006] Agency 2+ Races (%) Amerind (%) ASIAN (%) NHOPi (%) WHITE (%) B&T ~15% ~10% ~10% ~0% ~15% BUS ~25% ~10% ~10% ~0% ~15% C&D ~20% ~10% ~10% ~0% ~15% HQ ~15% ~10% ~10% ~0% ~15% LIRR ~15% ~10% ~10% ~0% ~15% MNR ~15% ~10% ~10% ~0% ~15% NYCT ~15% ~10% ~10% ~0% ~15%
+[p040_c0007] _Self-Identified Females_
+[p040_c0008]
+
+```text
+Agency Self-Identified Females (%) B&T 38% BUS 19% C&D 28% HQ 36% LIRR 14% MNR 13% NYCT 25%
+```
+[p040_c0009] _New Hires_
+[p040_c0010]
+
+```text
+Agency New Hires B&T 24 BUS 684 C&D 198 HQ 408 LIRR 309 MNR 365 NYCT 3724
+```
+[p040_c0011] _Master Page # 40 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 41
+
+### [p041_c0001] MTA-Wide New Hires & Separations by Sex
+[p041_c0002] January 1, 2025 - December 31, 2025
+> [p041_c0003] Sex Percentage Count Self-Identified Males 76% 4,365 Self-Identified Females 24% 1,347
+> [p041_c0004] Sex Percentage Count Self-Identified Males 78% 3,932 Self-Identified Females 22% 1,113
+- [p041_c0005] During the 4th Quarter 2025, MTA hired 5,712 employees, including 1,347 self-identified females and 4,365 self-identified males. During this same reporting period, 5,045 employees separated from MTA, including 1,113 self-identified females and 3,932 self-identified males. The result was a net increase of 234 self-identified females and 433 self-identified male employees. The number of employees who are veterans decreased by 98 . There were 53 veterans hired and 151 veterans separated during 2025.
+[p041_c0006] _Master Page # 41 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 42
+
+### [p042_c0001] MTA-Wide New Hires & Separations by Ethnicity
+[p042_c0002] January 1, 2025 - December 31, 2025
+[p042_c0003] _NEW HIRES BY RACE/ETHNICITY (TOTAL = 5,712)_
+> [p042_c0004] A 3D pie chart titled 'NEW HIRES BY RACE/ETHNICITY (TOTAL = 5,712)'. The chart is divided into six segments representing different racial and ethnic groups. The segments are: Blacks (44%, 2,489), Whites (15%, 883), Hispanics (22%, 1,269), 2+ Races (7%, 402), Asians (11%, 635), and AI/AN (1%, 32). Each segment is labeled with its percentage and count. Race/Ethnicity Percentage Count Blacks 44% 2,489 Whites 15% 883 Hispanics 22% 1,269 2+ Races 7% 402 Asians 11% 635 AI/AN 1% 32
+[p042_c0005] _SEPARATIONS BY RACE/ETHNICITY (TOTAL = 5,045)_
+> [p042_c0006] A 3D pie chart titled 'SEPARATIONS BY RACE/ETHNICITY (TOTAL = 5,045)'. The chart is divided into six segments representing different racial and ethnic groups. The segments are: Blacks (44%, 2,200), Whites (25%, 1,261), Hispanics (17%, 877), 2+ Races (5%, 225), Asians (9%, 430), and AI/AN (1%, 32). Each segment is labeled with its percentage and count. Race/Ethnicity Percentage Count Blacks 44% 2,200 Whites 25% 1,261 Hispanics 17% 877 2+ Races 5% 225 Asians 9% 430 AI/AN 1% 32
+[p042_c0007] During 2025, MTA hired 5,712 employees, 4,829 minorities, and 883 non-minorities. During this same reporting period, 5,045 employees separated from MTA, 3,784 minorities, and 1,261 non-minorities.
+[p042_c0008] The number of employees who self-identified as a person(s) with a disability decreased by 49 . There were 27 persons with a disability hired and 76 persons with a disability separated during 2025.
+> [p042_c0009] The logo for the Metropolitan Transportation Authority (MTA). It features a blue circle with the letters 'MTA' in white. To the right of the circle, the text 'Metropolitan Transportation Authority' is written in blue, followed by 'Department of Diversity and Civil Rights' in a smaller font.
+[p042_c0010] _Master Page # 42 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 43
+
+### [p043_c0001] MTA - Wide Workforce: Q4
+### [p043_c0002] Title VI and Related Discrimination
+[p043_c0003] _Title VI and Related Discrimination Complaints by Bases (January 1, 2025 – December 31, 2025)_
+- [p043_c0004] • 112 Title VI and Related* complaints were filed, citing 115 separate bases • 82 Title VI complaints were filed. • 30 Related discrimination complaints were filed. • The most frequently cited basis was Race • There was 1 Title VI Lawsuit filed.
+> [p043_c0005] Basis Number of Complaints Race 72 National Origin 17 Disability 13 Religion 6 Sex 6 Color 0 Age 1
+### [p043_c0006] Notes:
+[p043_c0007] Formal complaints and lawsuits can be filed alleging multiple bases.
+[p043_c0008] * Related Discrimination complaints are filed by customers based on age, disability, religion, and sex.
+[p043_c0009] _Master Page # 43 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 44
+
+### [p044_c0001] MTA - Wide Workforce: Q4 EO Employment Discrimination Complaints
+[p044_c0002] _Internal and External Complaints by Bases (January 1, 2025 – December 31, 2025)_
+> [p044_c0003] Base Internal External Age 11 12 Disability 19 31 Gender 4 17 National Origin 11 14 Other* 28 3 Race/Color 54 36 Religion 24 25 Retaliation 3 2 Sexual Harassment 3 3
+- [p044_c0004] • 182 complaints were filed citing 328 separate bases • 124 filed internal complaints. • 58 filed external complaints. • The most frequently singularly-cited* basis was Race/Color • There were 25 Lawsuits filed.
+### [p044_c0005] Notes:
+[p044_c0006] Formal complaints can be filed alleging multiple bases.
+[p044_c0007] * Other consists of any of the remaining 12 legally protected bases not individually shown
+[p044_c0008] _Master Page # 44 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 45
+
+### [p045_c0001] MTA MWBE/DBE/SDVOB Utilization
+[p045_c0002] March 23, 2026
+> [p045_c0003] The image shows the logo of the Metropolitan Transportation Authority (MTA). It features a blue circle with the white letters "MTA" inside. To the right of the logo, the text "Metropolitan Transportation Authority" is written in a bold, blue, sans-serif font. Below this, the text "Department of Diversity and Civil Rights" is written in a smaller, blue, sans-serif font.
+[p045_c0004] _Master Page # 45 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 46
+
+### [p046_c0001] Contract Compliance Q4
+### [p046_c0002] Compliance Strategies
+- [p046_c0003] • MWDBE and SDVOB goals are monitored daily for compliance - meetings are held when the goal is not being met at or about 50% contract completion. • Site visits are scheduled to address subcontractor performance and payment issues, and to mitigate and address Commercial Useful Function issues (CUF) and fraud. • Waiver requests are reviewed thoroughly for completeness and adequate good faith effort and will not be considered without concurrence from project management.
+[p046_c0004] DDCR currently monitors more than 1,317 contracts for MW/DBE and SDVOB goal compliance.
+[p046_c0005] As of December 31, 2025, DDCR:
+[p046_c0006] ✓ Conducted 576 site visits for MW/DBE and SDVOB Commercial Useful Function (CUF) review this year.
+[p046_c0007] Monthly Average: 48
+[p046_c0008] ✓ Closed 243 contracts
+[p046_c0009] Monthly Average: 20.25
+[p046_c0010] _Master Page # 46 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 47
+
+### [p047_c0001] MWBE, DBE, SDVOB Program – Fiscal Year Program Highlights
+[p047_c0002]
+
+```text
+Report Period Goal Type Top Prime Award Top Subcontract Award Federal FY: October 1, 2024 – March 31, 2025 DBE Nathaniel Rand, Inc. $1M Crossroads JV, LLC $15M NYS FY: April 1, 2025 – December 31, 2025 MBE Quality And Assurance Tech. $24M GCCOM Construction Company $87M WBE Pro Group Equipment LLC $6.4M Northeast Structural Steel $87M SDVOB Broadband Connect LLC $1.7M RNM Tech Consulting LLC $7.8M
+```
+[p047_c0003]
+
+```text
+Federal Fiscal Year Report Frequency Reporting Period Reported Semi-annually October 1 st to March 31 st Q1 Semi-annually April 1 st to September 30 th Q2
+```
+[p047_c0004]
+
+```text
+State Fiscal Year Report Frequency Reporting Period Reported Quarterly April 1 st to June 30 th Q1 Quarterly July 1 st to September 30 th Q2 Quarterly October 1 st to December 31 st Q3 Quarterly January 1 st to March 31 st Q4
+```
+[p047_c0005] The report is currently on hold due to recent changes in the DBE program as determined by the U.S. Department of Transportation (DOT).
+[p047_c0006] _Master Page # 47 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 48
+
+### [p048_c0001] DBE Program – Awards
+[p048_c0002]
+
+```text
+DBE Goal Federal Fiscal Year 2024-2025 Oct. 2024-Mar. 2025 NY State Fiscal Year 2023-2024 Oct. 2023-Mar. 2024 % DBE Participation 12% 15% DBE Award Amount $66,308,614 $260,187,527
+```
+[p048_c0003] Total Number of Federally Funded Contracts: 150 Total Number of Contracts with DBE Goals: 64
+[p048_c0004] Note: The 2 nd Semi-Annual report is currently on hold due to recent changes in the DBE program as determined by the U.S. Department of Transportation (DOT).
+> [p048_c0005] A 3D pie chart illustrating DBE participation. The chart is divided into two segments: a light blue segment representing 'Total Awards' and an orange segment representing 'DBE Participation'. The 'Total Awards' segment is labeled with the value '$556,238,248'. The 'DBE Participation' segment is labeled with '12%'. A legend at the top right identifies the orange segment as 'DBE Participation' and the blue segment as 'Total Awards'. To the right of the chart, the text '20% DBE GOAL' is displayed.
+[p048_c0006] Actual DBE Participation = $66M or 12%
+> [p048_c0007] The logo for the Metropolitan Transportation Authority (MTA) is located in the bottom right corner. It features the MTA logo (a blue circle with 'MTA' in white) followed by the text 'Metropolitan Transportation Authority' and 'Department of Diversity and Civil Rights' below it.
+[p048_c0008] _Master Page # 48 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 49
+
+### [p049_c0001] MWBE Participation on State-Funded Contracts New York State Fiscal Year 2025-2026* (Reporting Period: April 1, 2025, to December 31, 2025)
+- [p049_c0002] Each quarter, the MTA reports to the Empire State Development Corporation the MWBE participation on state-funded contracts. Reports are submitted 15 days after the end of each quarter, on January 15, April 15, July 15, and October 15. Reports include data on contracts with goals and MWBE contract payments.
+> [p049_c0003] NYS MWBE PAYMENTS April 2020 - December 2025 Fiscal Year MBE (%) MWBE (%) FY 20-21 17% 14% FY 21-22 19% 14% FY 22-23 20% 17% FY 23-24 19% 15% FY 24-25 18% 14% FY 25-26 19% 13%
+- [p049_c0004] MTA established an overall MWBE goal of 30% for the New York State fiscal year 2025-2026, starting April 1, 2025. During the first three quarters of FY 2025-26, the MTA has paid over $2.2 billion on prime contracts, with $719 million (32%) paid to certified MWBEs.
+[p049_c0005] _*The State Fiscal Year runs from April 1 st through March 31 st_
+[p049_c0006] _Master Page # 49 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 50
+
+### [p050_c0001] SDVOB Participation on State-Funded Contracts New York State Fiscal Year 2025-2026* (Reporting Period: April 1, 2025, to December 31, 2025)
+- [p050_c0002] Each quarter, the MTA reports to the New York State Office of General Services the SDVOB participation on state-funded contracts. Reports are submitted 30 days after the end of each quarter on January 30, April 30, July 30, and October 30. Reports include data on contracts with SDVOB goals and payments made to SDVOBs. New York State and MTA established an overall SDVOB goal of 6% for the State fiscal year 2025-2026, starting on April 1, 2025.
+> [p050_c0003] The bar chart, titled 'SDVOB CONTRACT PAYMENTS April 2020 - December 2025', displays the percentage of SDVOB participation on state-funded contracts for fiscal years 2021 through 2026. The y-axis represents the percentage, ranging from 0% to 7% in 1% increments. The x-axis lists the fiscal years. The data points are: FY 2021 (4%), FY 2022 (5%), FY 2023 (7%), FY 2024 (7%), FY 2025 (5%), and FY 2026 (7%). Fiscal Year SDVOB Contract Payments (%) FY 2021 4% FY 2022 5% FY 2023 7% FY 2024 7% FY 2025 5% FY 2026 7%
+- [p050_c0004] During the first three quarters of FY 2025-26, the MTA paid $1 billion on prime contracts, with $53 million (5%) paid to certified SDVOBs.
+[p050_c0005] _*The State Fiscal Year runs from April 1 st through March 31 st ._
+[p050_c0006] _Master Page # 50 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 51
+
+### [p051_c0001] DBE Participation in Federally Funded Contracts Federal Fiscal Year 2024-2025 (Reporting Period: October 1, 2024, to March 31, 2025)
+- [p051_c0002] ■ On a semi-annual basis, the MTA reports to the Federal Transit Administration on DBE participation in federally funded contracts. ■ Reports are submitted on June 1st - covering October through March, and December 1st -- covering April through September. The December report also summarizes data for the entire Federal Fiscal Year ("FFY"). ■ Reports include DBE participation data on new awards and payments on ongoing and completed contracts. ■ For FFY 2024-25, MTA's DBE goal is 20%. ■ During the first half of FFY 2024-25, MTA awarded $556 million in the federally funded portion of contracts, with approximately $66 million (12%) being awarded to certified DBEs. ■ On contracts closed during the first half of FFY 2024-25, MTA achieved 19% DBE participation.
+> [p051_c0003] The bar chart, titled 'DBE CONTRACT AWARDS October 2020 - March 2025', displays the percentage of DBE participation in federally funded contracts for each Federal Fiscal Year (FFY) from 2020 to 2025. The y-axis represents the percentage, ranging from 0% to 25% in 5% increments. The x-axis lists the FFYs. The data points are: FFY 2020 (15%), FFY 2021 (25%), FFY 2022 (17%), FFY 2023 (16%), FFY 2024 (15%), and FFY 2025 (12%). FFY DBE Participation (%) FFY 2020 15% FFY 2021 25% FFY 2022 17% FFY 2023 16% FFY 2024 15% FFY 2025 12%
+[p051_c0004] Note: The 2 nd Semi-Annual report is currently on hold due to recent changes in the DBE program as determined by the U.S. Department of Transportation (DOT).
+[p051_c0005] _Master Page # 51 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 52
+
+### [p052_c0001] MWBE, DBE, SDVOB Program – Capital Project Performance
+[p052_c0002]
+
+```text
+Federal DBE Goal 20% NYS MBE Participation Goal (15%) NYS WBE Participation Goal (15%) SDVOB Participation Goal (6%) Term Federal FY 2024 (Oct 2024 – Sep 2025) NYS FY 2025-26 (Apr 2025 – Dec 2025) Total MTA Payments $1.8B $1.18B $1.18BM $326M Total MWDBE Payments $434M (24%) $277M (23%) $161M (14%) $28M (9%)
+```
+[p052_c0003] The report is based on the original contract amount provided by MTA Agencies for third-party design and construction contracts (excluding rolling stock and signals).
+[p052_c0004] Note: Total does not include TBDs on Design Build contracts
+[p052_c0005] _Master Page # 52 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 53
+
+### [p053_c0001] MWBE, DBE, SDVOB Program – Discretionary Spend
+### [p053_c0002] IT Discretionary Consulting Contract No. 14357
+### [p053_c0003] April 2025 – December 2025
+[p053_c0004] Total Number of Awards- 74
+[p053_c0005] Total Value of Awards- $8.1 million
+### [p053_c0006] Discretionary spend since 2016 to Date
+[p053_c0007] Total Number of Awards- 1262
+[p053_c0008] Total Value of Awards- $250 million
+[p053_c0009] _Metropolitan Transportation Authority Department of Diversity and Civil Rights_
+[p053_c0010] _Master Page # 53 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 54
+
+### [p054_c0001] MTA – All Agency Legal Fee
+### [p054_c0002] April 2025– December 2025
+> [p054_c0003] Category Percentage Amount MBE 4% $2,520,475 WBE 9% $6,309,088 Total Legal Fees 100% $66,479,079
+[p054_c0004] Actual MBE Participation: $2,520,475 (4%) Actual WBE Participation: $6,309,088 (9%)
+### [p054_c0005] April 2024 – December 2024
+> [p054_c0006] Category Percentage Amount MBE 6% $4,268,875 WBE 8% $5,691,832 Total Legal Fees 100% $71,147,917
+[p054_c0007] Actual MBE Participation: $4,090,835 (6%) Actual WBE Participation: $5,654,064 (8%)
+[p054_c0008] _Master Page # 54 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 55
+
+### [p055_c0001] MTA All Agency Underwriter Fees
+### [p055_c0002] April 2025 – December 2025
+> [p055_c0003] Category Percentage ALL OTHER FEES 73% MBE 12% WBE 9% SDVOB 6%
+[p055_c0004]
+
+```text
+Actual MBE Participation: $652,185 (12%) Actual WBE Participation: $454,479 (9%) Actual SDVOB Participation: $317,381 (6%) All Other Underwriting Fees: $3,840,422 (73%) Total Underwriting Fees: $5,264,468
+```
+### [p055_c0005] April 2024 – December 2024
+> [p055_c0006] Category Percentage ALL OTHER FEES 59% MBE 21% WBE 15% SDVOB 5%
+[p055_c0007]
+
+```text
+Actual MBE Participation: $1,762,405 (21%) Actual WBE Participation: $1,249,453 (15%) Actual SDVOB Participation: $438,955 (5%) All Other Underwriting Fees: $5,014,185 (59%) Total Underwriting Fees: $8,464,998
+```
+[p055_c0008] _Metropolitan Transportation Authority Department of Diversity and Civil Rights_
+[p055_c0009] _Master Page # 55 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 56
+
+### [p056_c0001] MWBE, DBE, SDVOB Program – Asset Fund Managers/Combined Plans
+[p056_c0002] As of December 2025
+- [p056_c0003] • Total assets managed by MWBEs: $4.4 billion; or 35% of total assets • Majority of assets are in traditional asset classes • Traditional assets managed by MWBEs: $4.35 billion; or 45% of traditional assets • MWBE firms manage • 90% of US Equities • 17% of Non-US Equities • 48% of Fixed Income • 9% of Credit/Private • Alternative investments managed by MWBE's: $43.4 million; or 2% of alternative investments
+[p056_c0004] _Metropolitan Transportation Authority Department of Diversity and Civil Rights_
+[p056_c0005] _Master Page # 56 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 57
+
+### [p057_c0001] MTA All Discretionary Spend Including A&E, IT, Legal March 23, 2026
+> [p057_c0002] The logo for the Metropolitan Transportation Authority (MTA) is displayed. It features a blue circle on the left containing the white letters "MTA". To the right of the circle, the words "Metropolitan Transportation Authority" are written in a bold, blue, sans-serif font, stacked vertically. Below this, the words "Department of Diversity and Civil Rights" are written in a smaller, blue, sans-serif font, also stacked vertically.
+[p057_c0003] _Master Page # 57 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 58
+
+### [p058_c0001] MTA All Agency Discretionary Procurement Report
+[p058_c0002]
+
+```text
+Agency Total Awards $1.5M or Less MWBE SBC Discretionary Discretionary MWBE Discretionary Discretionary SBC MTA NYCTA $ 175,553,631 $ 46,966,006 27% $ 1,408,897 1% MTA MNR $ 51,794,403 $ 3,695,054 7% $ 450,695 1% MTA B&T $ 8,752,303 $ 1,168,415 13% $ 649,850 7% MTA LIRR $ 75,609,013 $ 5,071,386 7% $ 717,571 1% MTA HQ $ 40,954,664 $ 14,537,510 35% $ 1,500,420 4% MTA C&D $ 722,079 $ 219,354 30% $ - 0% MTA BUS $ 30,000,474 $ 2,449,130 8% $ 505,340 2% Total $ 383,386,567 $ 74,106,855 19% $ 5,232,774 1%
+```
+[p058_c0003] * Discretionary procurements include purchases for goods, miscellaneous procurements, personal or miscellaneous services.
+> [p058_c0004] Discretionary MWBE Awards Agency Award Amount MTA C&D $219,354 MTA B&T $1,168,415 MTA BUS $2,449,130 MTA MNR $3,695,054 MTA LIRR $5,071,386 MTA HQ $14,537,510 MTA NYCTA $46,966,006
+[p058_c0005] _Metropolitan Transportation Authority Department of Diversity and Civil Rights_
+[p058_c0006] _Master Page # 58 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 59
+
+### [p059_c0001] MTA All Agency Total Procurements
+[p059_c0002]
+
+```text
+April 2025 - December 2025 Agency Total Award Amount Total MWBE Awards MWBE MTA NYCTA $ 417,831,232 $ 79,384,475 19% MTA MNR $ 84,115,681 $ 11,662,342 14% MTA B&T $ 118,438,514 $ 1,052,101 1% MTA LIRR $ 150,057,449 $ 9,566,673 6% MTA HQ $ 158,580,480 $ 58,887,869 37% MTA C&D $ 37,029,419 $ 226,566 1% MTA BUS $ 32,687,550 $ 4,152,514 13% Total $ 998,740,324 $ 164,932,539 17%
+```
+> [p059_c0003] Total Procurements MWBE Awards Agency Total Procurements MWBE Awards MTA C&D $226,566 MTA B&T $1,052,101 MTA BUS $4,152,514 LIRR $9,566,673 MTA MNR $11,662,342 MTAHQ $58,887,869 MTA NYCTA $79,384,475
+[p059_c0004] _Metropolitan Transportation Authority Department of Diversity and Civil Rights_
+[p059_c0005] _Master Page # 59 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 60
+
+[p060_c0001] MTA
+[p060_c0002] Underwriter Fees
+[p060_c0003] March 23, 2025
+> [p060_c0004] The MTA logo, consisting of the letters 'MTA' in white inside a blue circle.
+[p060_c0005] Metropolitan Transportation Authority
+[p060_c0006] Department of Diversity and Civil Rights
+[p060_c0007] _Master Page # 60 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 61
+
+### [p061_c0001] MTA All Agency Underwriter Fees
+[p061_c0002] _MTA ALL AGENCY UNDERWRITER FEES APRIL 2025 - DECEMBER 2025_
+> [p061_c0003] Category Actual Participation Actual WBE Participation Actual SDVOB Participation All Other Underwriting Fees Total Underwriting Fees Actual MBE Participation $652,185 (12%) Actual WBE Participation $454,479 (9%) Actual SDVOB Participation $317,381 (6%) All Other Underwriting Fees $3,840,422 (73%) Total Underwriting Fees $5,264,468
+[p061_c0004] _Master Page # 61 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 62
+
+[p062_c0001] MTA
+[p062_c0002] Asset Fund Managers
+[p062_c0003] March 23, 2026
+> [p062_c0004] The MTA logo, consisting of a blue circle with the white letters "MTA" inside.
+[p062_c0005] Metropolitan Transportation Authority
+[p062_c0006] Department of Diversity and Civil Rights
+[p062_c0007] _Master Page # 62 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 63
+
+### [p063_c0001] MTA Sponsored Plans – MWBE Participation
+[p063_c0002] As November 2025
+[p063_c0003] _Combined Plans - Total Assets_
+> [p063_c0004] Asset Type Value Percentage MWBE Managed Assets $4,395,773,073 35% Non-MWBE Managed Assets $8,050,843,402 65%
+[p063_c0005] _Combined Plans - Traditional Investments_
+> [p063_c0006] Asset Type Value Percentage MWBE Managed Assets (Traditional) $4,352,362,677 45% Non-MWBE Managed Assets (Traditional) $5,320,369,006 55%
+[p063_c0007] _Combined Plans- Alternative Investments_
+> [p063_c0008] Asset Type Value Percentage MWBE Managed Assets (Alternatives) 43,410,396 2% Non-MWBE Managed Assets (Alternatives) 52,730,474,396 98%
+[p063_c0009] _MWBE Managed Assets by Asset Class_
+> [p063_c0010] Asset Class Percentage % of US Equity 90.00% % of Non-US Equity 10.00% % of Field Income 20.00% % of Credit/Private Debt 50.00% % of Private Equity 10.00% % of Real Estate 0.00%
+[p063_c0011] _MTA Metropolitan Transportation Authority Department of Diversity and Civil Rights_
+[p063_c0012] _Master Page # 63 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 64
+
+### [p064_c0001] MTA Sponsored Plans – MWBE Participation
+[p064_c0002] As November 2025
+### [p064_c0003] MTA Defined Benefit - Total Assets
+> [p064_c0004] Asset Type Value Percentage MWBE Managed Assets $2,924,237,197 36% Non-MWBE Managed Assets $5,272,363,019 64%
+### [p064_c0005] MTA Defined Benefit - Traditional Investments
+> [p064_c0006] Asset Type Value Percentage MWBE Managed Assets (Traditional) $2,897,447,541 45% Non-MWBE Managed Assets (Traditional) $3,511,452,018 55%
+### [p064_c0007] MTA Defined Benefit - Alternative Investments
+> [p064_c0008] Asset Type Value Percentage MWBE Managed Assets (Alternatives) 26,789,656 1% Non-MWBE Managed Assets (Alternatives) $1,760,911,001 99%
+### [p064_c0009] MWBE Managed Assets by Asset Class
+> [p064_c0010] Asset Class Percentage % of US Equity 90.00% % of Non-US Equity 10.00% % of Fixed Income 20.00% % of Credit/Private Debt 10.00% % of Private Equity 0.00% % of Real Estate 0.00%
+[p064_c0011] _Metropolitan Transportation Authority Department of Diversity and Civil Rights_
+[p064_c0012] _Master Page # 64 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 65
+
+### [p065_c0001] MTA Sponsored Plans – MWBE Participation
+[p065_c0002] As of November 2025
+[p065_c0003] _MaBSTOA - Total Assets_
+> [p065_c0004] Category Value Percentage MWBE Managed Assets $1,471,535,876 35% Non-MWBE Managed Assets $2,778,480,383 65%
+[p065_c0005] _MaBSTOA - Traditional Investments_
+> [p065_c0006] Category Value Percentage MWBE Managed Assets (Traditional) $1,454,915,136 45% Non-MWBE Managed Assets (Traditional) $1,808,916,988 55%
+[p065_c0007] _MaBSTOA - Alternative Investments_
+> [p065_c0008] Category Value Percentage MWBE Managed Assets (Alternatives) — — Non-MWBE Managed Assets (Alternatives) $969,563,395 98%
+[p065_c0009] _MWBE Managed Assets by Asset Class_
+> [p065_c0010] Asset Class Percentage % of US Equity 90.00% % of Non-US Equity 10.00% % of Fixed Income 10.00% % of Credit/Private Debt 10.00% % of Private Equity 10.00% % of Real Estate 10.00%
+[p065_c0011] _MTA Metropolitan Transportation Authority Department of Diversity and Civil Rights_
+[p065_c0012] _Master Page # 65 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 66
+
+### [p066_c0001] MTA Business Development Initiatives March 23, 2025
+> [p066_c0002] The logo for the Metropolitan Transportation Authority (MTA) is displayed. It features a blue circle with the white letters 'MTA' inside. To the right of the circle, the text 'Metropolitan Transportation Authority' is written in a bold, blue, sans-serif font. Below this, the text 'Department of Diversity and Civil Rights' is written in a smaller, blue, sans-serif font.
+[p066_c0003] _Master Page # 66 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 67
+
+### [p067_c0001] MWBE, DBE, SDVOB Program – Outreach Activity
+[p067_c0002] Total Number of Firms Interested in Doing Business with the MTA (April - December 2025): 696
+- [p067_c0003] ✓ Newly certified and/or currently certified firms new to the MTA are invited to the MTA's New Firm Orientation Session (NFOS). The NFOS integrates certified firms into the MTA procurement process.
+[p067_c0004]
+
+```text
+Current Certification Type(s) MBE/WBE/DBE/SDVOB 566 NON-CERTIFIED FIRMS 130
+```
+[p067_c0005] _Firms By Industry_
+> [p067_c0006] Industry Number of Firms Percentage Service Consulting 413 59.34% Construction Consulting 115 16.52% Construction 79 12.79% Commodities 79 11.35%
+- [p067_c0007] ✓ To build a pipeline of certified firms, we recommend non-certified firms participate in the MTA's Disadvantaged Business Enterprise (DBE) Certification Workshop and/or be referred to our partner agencies for the MWBE and SDVOB certifications.
+[p067_c0008] _Master Page # 67 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 68
+
+### [p068_c0001] MWBE, DBE, SDVOB Program – DBE Certification Activity
+[p068_c0002]
+
+```text
+January – July 2025 January – July 2024 Total of New Applications Received 75 104 Total New Firms Certified 48 77 Average Time to Process Applications (Days) 81 49
+```
+[p068_c0003] Note: DBE Certification activity is currently on hold due recent changes in the DBE program as determined by the U.S. Department of Transportation (DOT).
+[p068_c0004] _Master Page # 68 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 69
+
+### [p069_c0001] Business Development Initiatives – Outreach April 2025 – December 2025
+[p069_c0002]
+
+```text
+April May June City of Mt. Vernon Opportunities Networking Event Virtual Session: How to do business with the MTA: Greater New York Chamber of Commerce (GNYCC) Regional Infrastructure Opportunities Summit -(RIOS) DDCR Presents "DBE Certification Session" New York Power Authority (NYPA) Supplier Diversity Expo NYC SBS POISE - The Entrepreneurs' Blueprint-An MWBE Opportunity Hub SBA International B2B and Small Business Resource Forum Queens Chamber Business Expo - Cititfield 2025 NYC Small Business Month Expo Competitive Edge Conference/Gala/Awards DDCR Presents "DBE Certification Session" Empire State Development (ESD) Downstate MWBE Expo African American Chamber of Commerce of NJ (AACCNJ) and the New York State Black Business Alliance (NYSBBA) Webinar DDCR Presents New Firm Orientation Session SBA International B2B and Small Business Resource Forum DDCR Presents "DBE Certification Session" LaGuardia Community College (PTAC) Government & Business Expo July August September Conference of Minority Transportation Officials (COMTO) Harlem Week Sr. Citizen Day Suffolk County - SDVOB Event Rochester/Senator Cooney - Doing Business w/ MTA Harlem Week Career Day ConXpo - Westchester Small Business Expo ESD Upstate MWBE Expo DDCR Presents "DBE Certification Session" Queens Outreach Event DDCR Presents New Firm Orientation Session DDCR Presents "DBE Certification Session" October November December Queens/Long Island MWBE Expo at York College MTA Meet the Primes VETCON, ALBANY Queens Outreach Event at Dabar Bethlehem Cathedral NYS MWBE FORUM, ALBANY DDCR Presents New Firm Orientation Session Brooklyn Chamber of Commerce - Doing Business with MTA MTA Rolling Stock Event
+```
+[p069_c0003] _Master Page # 69 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 70
+
+> [p070_c0001] The image shows a logo for 'MTA EDGE'. The logo consists of a stylized 'S' shape in blue and green, followed by the text 'MTA' in a smaller font above the word 'EDGE' in a large, bold, sans-serif font. To the right of the logo, the date 'March 23, 2025' is written in a bold, sans-serif font. The entire logo and date are enclosed in a thin black rectangular border.
+> [p070_c0002] The image shows the logo for the Metropolitan Transportation Authority (MTA). It features a blue circle with the white letters 'MTA' inside. To the right of the circle, the words 'Metropolitan Transportation Authority' are written in a bold, blue, sans-serif font. Below this, the words 'Department of Diversity and Civil Rights' are written in a smaller, blue, sans-serif font. The entire logo and text are set against a light blue rectangular background.
+[p070_c0003] _Master Page # 70 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 71
+
+[p071_c0001]
+
+```text
+Mission Statement Elements of the SBPD Benefits of the Program To develop and grow emerging contractors through classes, on-the-job training, and technical assistance on prime contracts with MTA Agencies, creating a larger pool of diverse, qualified contractors who can compete for and complete MTA construction projects safely, timely, and within budget. ✓ Prime Contract Bid Opportunities up to $5 million ✓ Uniform Set of Front-End Bid Documents for All Agencies: NYCT, MNR, B&T, LIRR, MTA BUS, and MTA C&D ✓ Business Management, Leadership and Technical Training ✓ Fast-Track Payments ✓ Access to Working Capital and Surety Bonding ✓ Awards SBMP & SBFP –within 22 business days ✓ Comprehensive business consulting services ✓ Closeouts SBMP & SBFP – within 20 & 30 business days respectively ✓ Experience working on MTA Projects up to $5 million ✓ Submittals – within 10 business days ✓ RFIs – within 5 business days
+```
+[p071_c0002] _Master Page # 71 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 72
+
+> [p072_c0001] The logo for MTA EDGE, featuring a stylized 'S' shape in blue and green, followed by the text 'MTA' in a small font above 'EDGE' in a large, bold, sans-serif font.
+### [p072_c0002] 260 Firms Actively Enrolled in the Program
+> [p072_c0003] A 3D pie chart illustrating the distribution of 260 firms actively enrolled in the program across various New York City boroughs. The chart is divided into ten segments, each representing a borough or region, with the number of firms indicated by a label next to the segment. The segments are colored as follows: Queens (yellow), Kings (light blue), Nassau (light green), Non-NYS (brown), Bronx (blue), Westchester (dark green), Richmond (orange), Suffolk (light green), New York (purple), and Orange (dark green). Borough Number of Firms Queens 80 Kings 48 Nassau 50 Non-NYS 25 Bronx 17 Westchester 9 Richmond 11 Suffolk 10 New York 8 Orange 2
+> [p072_c0004] The logo for the Metropolitan Transportation Authority (MTA), featuring a blue circle with the letters 'MTA' in white, followed by the text 'Metropolitan Transportation Authority' and 'Department of Diversity and Civil Rights' in a smaller font.
+[p072_c0005] _Master Page # 72 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 73
+
+### [p073_c0001] Active Prequalified Firms by Tier (Emerging ECP, Tier-1, Tier-2, SBFP)
+> [p073_c0002] Program Emerging Contractors Tier 1 Tier 2 Federal Program Emerging 13 0 0 0 Tier 1 40 155 0 0 Tier 2 0 0 60 0 Federal Program 0 0 0 12 Total 13 168 70 12 Annotations: 168 Firms in Tier 1 13 Emerging Contractors are in Tier 1 70 Firms in Tier 2 22 Firms in SBFP 10 Contractors are in both Tier 2 & SBFP
+> [p073_c0003] Metropolitan Transportation Authority Department of Transportation Diversity and Civil Rights
+[p073_c0004] _Master Page # 73 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 74
+
+### [p074_c0001] Ethnicity of Firms Actively Enrolled in the Program by Tier
+> [p074_c0002] Ethnicity Emerging Contractors Tier 1 Tier 2 Federal Program Total Firms Native American 0 0 0 0 0 firms Asian Pacific 0 0 0 15 15 firms Hispanic 0 0 0 29 29 firms Black 0 0 0 40 40 firms Caucasian 0 0 0 31 31 firms Subcontinent Asian 0 0 0 145 145 firms
+[p074_c0003] _Metropolitan Transportation Authority Department of Diversity and Civil Rights_
+[p074_c0004] _Master Page # 74 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 75
+
+### [p075_c0001] Certifications of Firms Actively Enrolled in the Program by Tier
+> [p075_c0002] A stacked bar chart titled 'Certifications of Firms Actively Enrolled in the Program by Tier'. The y-axis represents the number of firms, ranging from 0 to 160 in increments of 20. The x-axis lists five certification types: MBE, WBE, DBE, SDVOB, and Non-Certified. Each bar is stacked with three categories: Emerging Contractors (light blue), Tier 1 (medium blue), and Tier 2 (dark blue). Total firm counts are labeled above each bar: 148 for MBE, 33 for WBE, 50 for DBE, 10 for SDVOB, and 89 for Non-Certified. A legend at the bottom identifies the three tiers. Certification Emerging Contractors Tier 1 Tier 2 Total Firms MBE ~100 ~40 ~8 148 WBE ~20 ~10 ~3 33 DBE ~30 ~15 ~5 50 SDVOB ~5 ~3 ~2 10 Non-Certified ~70 ~15 ~4 89
+[p075_c0003] _Metropolitan Transportation Authority Department of Diversity and Civil Rights_
+[p075_c0004] _Master Page # 75 of 76 - Diversity Committee Meeting 3/23/2026_
+
+## Page 76
+
+[p076_c0001]
+
+```text
+2024 Total Contracts Awarded 2025 Total Contracts Awarded 2025 SBDP Contract Awards Q1 Q2 Q3 Q4 Number of Awarded Contracts 23 31 5 1 13 12 Total Contract Value $32.2 M $54.7 M $7.7 M $0.7 $20.2 26.1
+```
+[p076_c0002]
+
+```text
+2024 Loans Awarded 2025 Loans Awarded 2025 SBDP Loans Awards Q1 Q2 Q3 Q4 Number of Loans Facilitated 14 5 0 1 3 1 Total Loan Value $2,581,525 $857,000 $0 $150,000 $575,000 $132,000
+```
+[p076_c0003] _Master Page # 76 of 76 - Diversity Committee Meeting 3/23/2026_

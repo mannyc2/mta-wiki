@@ -1,0 +1,358 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-151756"
+record_kind: "source"
+display_name: "source_meeting_doc_151756"
+source_id: "meeting_doc_151756"
+source_ids:
+  - "meeting_doc_151756"
+local_observation_id: "source_meeting_doc_151756"
+local_observation_ids:
+  - "source_meeting_doc_151756"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T16:02:14.468Z"
+submission_ids:
+  - "sub_1afa05e0204a61ca"
+payload:
+  authority_tier: "board_material"
+  content_type: "Finance Committee agenda / staff summary packet"
+  date_text: "SEPTEMBER 25, 2024"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2024-09-25"
+    precision: "day"
+    raw_text: "SEPTEMBER 25, 2024"
+  published_date_normalized: "2024-09-25"
+  published_date_precision: "day"
+  publisher: "Metropolitan Transportation Authority"
+  title: "SEPTEMBER 2024 MTA REAL ESTATE MTA C&D TRANSIT ORIENTED DEVELOPMENT MTA C&D ADVERTISING & PROMOTIONS FINANCE COMMITTEE AGENDA ITEMS"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_151756#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "meeting_doc_151756"
+    source_path: "raw/sources/meeting_doc_151756/blocks.jsonl"
+    text_sha256: "sha256:247dc09a3ad334d298eb195257ba7b7145f22c4d28fcd279c396498be4e014e2"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_151756#p001_c0002"
+    page_number: 1
+    role: "section_header"
+    source_id: "meeting_doc_151756"
+    source_path: "raw/sources/meeting_doc_151756/blocks.jsonl"
+    text_sha256: "sha256:d328c29762ae067bcb2612c443cc86e27db0968bc7e85a455533415539c9a52b"
+    text_source: "raw_text"
+  -
+    block_id: "p004_c0003"
+    evidence_id: "meeting_doc_151756#p004_c0003"
+    page_number: 4
+    role: "date"
+    source_id: "meeting_doc_151756"
+    source_path: "raw/sources/meeting_doc_151756/blocks.jsonl"
+    text_sha256: "sha256:2061d6b9f4d41678709d5031174a9b99a55cb6cb762c65666779d40f6b0881e3"
+    text_source: "raw_text"
+---
+
+# Real estate action items
+
+source_id: meeting_doc_151756
+citation: cite block ids exactly as shown in square brackets
+document: 127 block(s)
+
+## Page 1
+
+### [p001_c0001] SEPTEMBER 2024 MTA REAL ESTATE MTA C&D TRANSIT ORIENTED DEVELOPMENT MTA C&D ADVERTISING & PROMOTIONS FINANCE COMMITTEE AGENDA ITEMS
+### [p001_c0002] 1. TRANSACTIONAL ACTION ITEMS
+### [p001_c0003] Metropolitan Transportation Authority
+- [p001_c0004] a. License agreement with Municipal Credit Union for the installation and maintenance of ATMs at various bus facilities and MTA Headquarters b. License agreement with Clear Channel Outdoor, LLC for billboard advertising on MTA agency properties.
+### [p001_c0005] MTA Long Island Rail Road
+- [p001_c0006] c. Grant of permanent and temporary easements to National Railroad Passenger Corporation for the East River Tunnel 1 and 2 Rehab project at the Sunnyside Yard in Queens, NY d. Lease agreement with SNH Medical Office Properties Trust for medical and administrative offices at 200 Old Country Road, Mineola, NY
+### [p001_c0007] MTA Metro-North Railroad
+- [p001_c0008] e. Conveyance of property interests to Hudson Harbor LLC in support of an 88-unit multifamily TOD in Tarrytown, NY f. Acquisition of property interests from the Village of Pleasantville in support of the Harlem and Hudson Power Improvements project
+### [p001_c0009] 2. INFORMATION ITEMS
+- [p001_c0010] a. License agreement between NYCT and the Whitney Museum of American Art for the installation, maintenance, and display of artwork at West 4 th Street – Washington Square Station, Jay Street-Metro Tech Station, and Fordham Road Station b. License agreement between NYCT and Brooklyn Public Library for the installation, maintenance, and display of artwork at Euclid Avenue Station
+
+## Page 2
+
+- [p002_c0001] c. License agreement between NYCT and Los Herederos Inc. for the installation, maintenance, and display of community inspired artwork and a radio studio at Jackson Heights – Roosevelt Avenue/74 th Street Station d. License agreement between NYCT and Emmett Palaima for the installation of a multi-channel audio system to play recorded compositions at the Chambers Street Station, New York, NY e. License agreement between the LIRR and Archer Towers Phase 1 Development LLC for the installation, maintenance, and display of artwork along the LIRR’s retaining wall in Jamaica, Queens, NY f. License agreement between the LIRR and the City of Long Beach for a temporary Maintenance of Equipment mobile facility adjacent to the Long Beach Station in Long Beach, NY g. Short-term parking permit between MNR and Bike New York, Inc. for the use of parking spaces at the Poughkeepsie Station, Poughkeepsie, NY h. Report on retail agreements entered into directly by the Real Estate Department pursuant to MTA Board policy
+[p002_c0002]
+
+```text
+Legal Name Popular Name Abbreviation New York City Transit Authority MTA New York City Transit NYC Transit The Long Island Rail Road Company MTA Long Island Rail Road LIRR Metro-North Commuter Railroad Company MTA Metro-North Railroad MNR Triborough Bridge and Tunnel Authority MTA Bridges and Tunnels MTA B&T MTA Construction and Development Company MTA Construction and Development MTA C&D MTA Bus Company MTA Bus Company MTA Bus MTA Grand Central Madison Operating Company Grand Central Madison GCMC
+```
+[p002_c0003] Staten Island Rapid Transit Operating Authority is a subsidiary of the Metropolitan Transportation Authority. Its popular name is MTA Staten Island Railway (abbreviated as SIR).
+[p002_c0004] Manhattan and Bronx Surface Transit Operating Authority is a subsidiary of the New York City Transit Authority (abbreviated as MaBSTOA).
+
+## Page 3
+
+### [p003_c0001] METROPOLITAN TRANSPORTATION AUTHORITY
+
+## Page 4
+
+### [p004_c0001] Staff Summary
+[p004_c0002]
+
+```text
+Subject LICENSE AGREEMENT WITH THE MUNICIPAL CREDIT UNION FOR THE INSTALLATION AND MAINTENANCE OF ATMS AT VARIOUS NYCT AND BUS FACILITY LOCATIONS AND MTA HEADQUARTERS Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name RAYMOND SMYTH
+```
+[p004_c0003]
+
+```text
+Date SEPTEMBER 25, 2024 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p004_c0004]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 09/23/24 X 2 Board 09/25/24 X
+```
+[p004_c0005]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Administrative Officer 3 Chief Financial Officer
+```
+[p004_c0006] AGENCY: Metropolitan Transportation Authority ("MTA") and New York City Transit ("NYCT")
+[p004_c0007] LICENSEE: Municipal Credit Union ("MCU")
+[p004_c0008] LOCATIONS:
+[p004_c0009]
+
+```text
+Agency Location Name Location Address Location Borough MTA HQ MTA Headquarters 2 Broadway New York NYCT Kingsbridge Depot 4069 10th Ave New York NYCT Gun Hill Depot 1910 Bartow Ave Bronx NYCT West Farms Depot 1100 E 177th St Bronx NYCT Westchester Yard 1311 Waters Place Bronx NYCT 207 St Yard 3961 10th Ave New York NYCT Coney Island Yard 2556 McDonald Ave Brooklyn NYCT Rail Control Center 806-814 9th Ave New York NYCT East New York Depot 25 Jamaica Ave Brooklyn
+```
+[p004_c0010] USE: The installation, operation, and maintenance of ATMs at NYCT, MTA Bus Facilities, and MTA Headquarters
+[p004_c0011] ACTION REQUESTED: Authorization to enter into one or more license agreement(s) with MCU for the installation, operation and maintenance of ATMs
+[p004_c0012] TERM: Ten (10) Years
+
+## Page 5
+
+### [p005_c0001] Staff Summary
+### [p005_c0002] FINANCE COMMITTEE MEETING
+### [p005_c0003] LICENSE AGREEMENT WITH THE MUNICIPAL CREDIT UNION FOR THE INSTALLATION AND MAINTENANCE OF ATMS AT VARIOUS NYCT AND BUS FACILITY LOCATIONS AND MTA HEADQUARTERS
+### [p005_c0004] Page 2 of 2
+### [p005_c0005] COMPENSATION:
+[p005_c0006]
+
+```text
+License Year Annual Rent (Per Location) Total Annual Rent (All Locations) Escalations 1 $18,000.00 $162,000.00 3% 2 $18,540.00 $166,860.00 3% 3 $19,096.20 $171,864.00 3% 4 $19,669.09 $177,021.00 3% 5 $20,259.16 $182,331.00 3% 6 $20,867.00 $187,803.00 3% 7 $21,493.00 $193,437.00 3% 8 $22,137.00 $199,233.00 3% 9 $22,904.00 $206,136.00 3% 10 $23,591.00 $212,319.00 3%
+```
+### [p005_c0007] COMMENTS:
+[p005_c0008] On February 12, 2024, MTA Real Estate issued a Request for Proposal ("RFP"), seeking an ATM operator to provide services encompassing the furnishing, installation, maintenance, and management of ATMs at the various MTA employee facilities listed above. One proposal was received from MCU.
+[p005_c0009] MCU submitted their response on March 13, 2024, providing proposals for all nine (9) of the above-referenced Locations. The Locations will be delivered to MCU in as-is condition, with MCU assuming responsibility for all required and any optional improvements. Throughout the term, MCU will be responsible for ongoing maintenance and necessary repairs for all ATMs. MCU will be required to make timely repairs, whether routine or extensive, and to keep the Locations and ATM machines in good working condition. Furthermore, pursuant to the terms of the RFP, the MTA may offer MCU the option to install additional ATMs at other MTA employee facilities. The terms of any additional ATMs, including, but not limited to, compensation, shall be subject to review and approval of the MTA.
+[p005_c0010] The proposed compensation structure for the ten (10) year term is consistent across all nine (9) locations, as outlined in the compensation table above. A security deposit equivalent to one (1) month of license fees based on the first year of the base term of the license for each location will be requested, totaling $13,500.
+[p005_c0011] Based on the foregoing, MTA Real Estate requests authorization to enter into a license agreement on behalf of NYCT and MTA with MCU under the above-described terms and conditions.
+
+## Page 6
+
+### [p006_c0001] Staff Summary
+### [p006_c0002] Metropolitan Transportation Authority
+### [p006_c0003] Page 1 of 2
+[p006_c0004]
+
+```text
+Subject LICENSE AGREEMENT WITH CLEAR CHANNEL OUTDOOR, LLC FOR BILLBOARD ADVERTISING ON MTA AGENCY PROPERTIES Department C&D PLANNING, ADVERTISING & PROMOTIONS Department Head Name FREDERICKA CUENCA Department Head Signature Project Manager Name LUCY ZACHMAN
+```
+[p006_c0005]
+
+```text
+Date SEPTEMBER 25, 2024 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p006_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 09/23/24 X 2 Board 09/25/24 X
+```
+[p006_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p006_c0008] AGENCY: MTA New York City Transit, MTA Long Island Rail Road, MTA Metro-North, MTA Bridges & Tunnels (the "Agencies"). CONCESSIONAIRE: Clear Channel Outdoor, LLC ("Clear Channel" or "CCO") ACTIVITY/USE: Award of an exclusive license (collectively, the " Concession ") to manage advertising on billboards along rights-of-way, on trestles and bridges, at depots and yards, and on the exterior walls or roofs of buildings, all on property owned or operated by one of the Agencies (the " Billboards "). The Billboards fall into two categories: (1) those that are owned by one of the Agencies (" Agency-Owned Billboards ") and (2) those that are owned by various outdoor advertising companies (each a " Landlease ") that are permitted to erect billboards on Agency property (" Landlease Billboards "). ACTION REQUESTED: Board authorization to enter into a new license agreement with Clear Channel Outdoor, LLC to be the new Billboard Concessionaire (the " New Concession Agreement "). TERM: 15 years: 11/1/2024 – 10/31/2039 COMPENSATION: CCO has agreed to pay each year of the term the larger of: 1) For Agency-Owned Billboards, revenue share of 80.0% of gross revenue subject to priority recoupment of capital expenses attributable to conversion to digital or installation of new static or digital billboards solely from incremental revenues attributable to each converted or new installation made by Clear Channel with MTA's consent; and 100% of revenues from Landlease Billboards
+
+## Page 7
+
+### [p007_c0001] Staff Summary
+### [p007_c0002] FINANCE COMMITTEE MEETING LICENSE AGREEMENT WITH CLEAR CHANNEL OUTDOOR, LLC FOR BILLBOARD ADVERTISING ON MTA AGENCY PROPERTIES (Cont'd)
+[p007_c0003] Page 2 of 2
+- [p007_c0004] Billboards; or 2) Minimum Annual Guarantee (MAG) which is $26M in year 1, which amount will be reset via an increase in each subsequent year by CPI with a floor of 0% and a maximum of 3%; or 3) 75% of gross revenue net of capex recoupment of the prior year.
+### [p007_c0005] COMMENTS:
+[p007_c0006] In 2023, the MTA received $21 M in revenue from this Concession. The inventory generating this revenue includes 319 locations.
+[p007_c0007]
+
+```text
+Static Billboards Digital Billboards Trestle Walls Total LIRR 18 1 112 3 134 MNR 32 2 11 45 NYCT 77 12 13 102 Total 111 15 123 16 281 Landlease 38 Grand Total 319
+```
+[p007_c0008] The Concessionaire will maintain, sell, and display the advertising on the Agency-Owned Billboards. The Landlease Billboards are maintained and operated by the respective Landlessees, pursuant to agreements that the Concessionaire will continue to manage on behalf of the applicable Agencies.
+[p007_c0009] Revenue from digital inventory generates nearly half of the revenue and it is projected to continue to generate increased revenue compared with static. In recognition of the increased investment necessary to construct and maintain these digital assets, this Concession has a longer term than our previous concession.
+[p007_c0010] Proposals were submitted by five companies: Outfront, Clear Channel, Lamar + New Traditions (joint proposers), First Media, and JCDecaux. First Media proposed on only a portion of the inventory. The remaining proposers all included minimum annual guarantees in addition to a revenue share of gross revenues.
+[p007_c0011] Clear Channel proposed both the highest MAG with annual CPI increases and the highest revenue share at 80% of Agency-Owned Billboard revenue.
+[p007_c0012] Based on the foregoing, MTA C&D Planning requests authorization to enter into the New Concession Agreement with Clear Channel Outdoor, LLC.
+
+## Page 8
+
+### [p008_c0001] MTA LONG ISLAND RAIL ROAD
+
+## Page 9
+
+### [p009_c0001] Staff Summary
+### [p009_c0002] Metropolitan Transportation Authority
+### [p009_c0003] Page 1 of 2
+[p009_c0004]
+
+```text
+Subject GRANT OF PERMANENT AND TEMPORARY EASEMENT AGREEMENTS TO THE NATIONAL RAILROAD PASSENGER CORPORATION FOR INSTALLATIONS RELATING TO EAST RIVER TUNNEL REHABILITATION WORK AT THE SUNNYSIDE YARD IN QUEENS, NY Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name XAVIER CARRERA
+```
+[p009_c0005]
+
+```text
+Date SEPTEMBER 25, 2024 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p009_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 09/23/24 X 2 Board 09/25/24 X
+```
+[p009_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Administrative Officer 3 Chief Financial Officer
+```
+[p009_c0008] AGENCY: MTA Long Island Rail Road ("LIRR") LICENSEE: National Railroad Passenger Corporation ("Amtrak") LOCATION: Sunnyside Yard, Long Island City, New York 11101 Block 72, Lot 200 and Block 71, Lot 9 PERMANENT EASEMENTS: #1: 6,370 square feet (surface & subsurface) #2: 16,911 square feet (surface & subsurface) #3: 457 square feet (aerial) (together the "Permanent Easements") TEMPORARY EASEMENTS: #1: 17,117 square feet (surface) #2: 10,142 square feet (surface) (together the "Temporary Easements") USE: Installation of signal houses, traction, and signal power duct banks and manholes; installation of cable bridge; and a construction work area (the "Work"). ACTION REQUESTED: Authorization to execute an agreement with Amtrak for the requested Permanent Easements and the Temporary Easements. TERM: Permanent Easements duration: Perpetual Temporary Easements duration: Until the earlier to occur of: (i) Forty-one (41) months (or such longer duration as approved by LIRR), and (ii) completion of the Work. COMPENSATION: $4,790,000 total; $2,930,000 for the Permanent Easements and $1,860,000 for the Temporary Easements
+
+## Page 10
+
+### [p010_c0001] Staff Summary
+### [p010_c0002] Metropolitan Transportation Authority
+### [p010_c0003] GRANT OF PERMANENT AND TEMPORARY EASEMENT AGREEMENTS TO THE NATIONAL RAILROAD PASSENGER CORPORATION FOR EAST RIVER TUNNEL REHABILITATION WORK AT THE SUNNYSIDE YARD IN QUEENS, NY
+[p010_c0004] Page 2 of 2
+### [p010_c0005] COMMENTS:
+[p010_c0006] Amtrak will perform rehabilitation work to East River Tunnels 1 and 2 at the Sunnyside Yard in Queens. A large portion of the Sunnyside Yard is owned by Amtrak; however, Amtrak requires use of a portion which is owned by LIRR and is requesting the Permanent Easements and Temporary Easements, as listed above. Amtrak requires the Permanent Easements for the installation of signal houses, traction and signal power duct banks and manholes, and a cable bridge. Amtrak requires the Temporary Easements to perform the work in the Permanent Easements.
+[p010_c0007] The proposed compensation is based on fair market value of $4,790,000 pursuant to an appraisal and appraisal review as required by the Uniform Relocation Assistance and Real Property Acquisition Policies for Federal and Federally Assisted Programs Act of 1970 Federal Regulation, 49 U.S.C.A.24101(4).
+[p010_c0008] Based on the foregoing, MTA Real Estate requests authorization to enter into easement agreement(s) for the Temporary Easements and Permanent Easements with Amtrak in form(s) to be approved by MTA Legal, on behalf of the LIRR, under the above-described terms and conditions and on such other terms and conditions deemed necessary or desirable by MTA and LIRR.
+
+## Page 11
+
+### [p011_c0001] Staff Summary
+### [p011_c0002] Metropolitan Transportation Authority
+### [p011_c0003] Page 1 of 2
+[p011_c0004]
+
+```text
+Subject LEASE AGREEMENT WITH COUNTRY ROAD MINEOLA LLC FOR LIRR EMPLOYEE ASSISTANCE PROGRAM AND OFFICE OF HEALTH SERVICES AT 200 OLD COUNTRY ROAD, MINEOLA, NY Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name ANDREW D GREENBERG
+```
+[p011_c0005]
+
+```text
+Date SEPTEMBER 25, 2024 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p011_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 09/23/24 X 2 Board 09/25/24 X
+```
+[p011_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 3 Chief Administrative Officer 2 Chief Financial Officer
+```
+[p011_c0008] AGENCY: MTA Long Island Rail Road (“LIRR”) LESSOR: Country Road Mineola LLC LOCATION: 200 Old Country Road, Mineola, New York PREMISES: Portion of the Lower level– approximately 346 rentable sq. ft. Portion of the 2nd Floor – approximately 9,022 rentable sq. ft. Portion of the 4th Floor – approximately 2,556 rentable sq. ft. Total Premises: Approximately 11,924 rentable sq. ft. USE: Premises to be used for the LIRR Office of Health Services (“OHS”) and Employee Assistance Program (“EAP”) medical and administrative office requirements. ACTION REQUESTED: Authorization to enter into a lease agreement in support of the LIRR EAP and OHS operational needs TERM: Ten (10) years from possession date RENEWAL OPTIONS: Two five (5) year renewal options at a rent calculated at 3% greater than the escalated rent at lease expiration for the first option and at 95% of the fair market value for the second option period. BASE RENT: Partial 2nd and 4th floor spaces - $31.75 per sq ft. - $367,601.50 per annum Portion of Lower Level - $14.50 per sq. ft. - $5,017 per annum Tenant receives 3 months’ free rent concession (months 2-4). REAL ESTATE TAXES: The LIRR pays its proportionate share of increases in the building’s real estate taxes over a 2025 base tax year with no increases until the first anniversary following rent commencement OPERATING EXPENSES: 3.0% increases in base rent per year
+
+## Page 12
+
+### [p012_c0001] Staff Summary
+### [p012_c0002] Metropolitan Transportation Authority
+### [p012_c0003] FINANCE COMMITTEE MEETING LEASE WITH COUNTRY ROAD MINEOLA LLC FOR LIRR EAP AND OHS MEDICAL AND ADMINISTRATIVE OFFICES 200 OLD COUNTRY ROAD, MINEOLA NY (Cont'd)
+[p012_c0004] Page 2 of 2
+[p012_c0005]
+
+```text
+UTILITIES: Electricity is on a rent inclusion basis at $3.65 per sq. ft. per annum. Lessor provides heat and air conditioning to the LIRR's air-handlers LESSOR WORK: Lessor will be required to provide turn-key alterations and improvements per LIRR-approved plans and specifications at Lessor's cost and expense ("Lessor's Work"). The LIRR will be required to reimburse Lessor for the cost of IT, data, and telecom installation as additional rent over initial 5 years of the Term with a maximum cost not to exceed $350,000 POSSESSION: Upon delivery of the Premises with Lessor's Work substantially complete. MAINTENANCE AND REPAIRS: Lessor is responsible for all exterior and structural repairs except if caused by the LIRR's negligence. The LIRR is responsible for interior non-structural repairs to the Premises. CLEANING: Lessor shall provide daily cleaning per a specification, at its cost and expense. PARKING: Lessor will provide approximately 55 complimentary automobile parking spaces in the building parking lot. SECURITY DEPOSIT: None.
+```
+### [p012_c0006] COMMENTS:
+[p012_c0007] The LIRR is seeking approximately 11,924 square feet of new space for its OHS medical facilities and EAP program at 200 Old Country Road, Mineola ("200 OCR"). Currently, the OHS and EAP offices occupy a combined area of approximately 11,000 square feet in three condominium units at 300 Old Country Road, Mineola ("300 OCR"). After 15 years at 300 OCR, the space no longer meets the operational needs of OHS and EAP and requires repairs. In addition, the individual condominium owners are demanding 5-year lease renewals, and two of the three condominium owners are requiring payments of any future condominium assessment with no limits.
+[p012_c0008] CBRE, the MTA's real estate broker, identified 200 OCR as the only viable option. 200 OCR already has built medical and administrative offices, it is closer to the LIRR's Mineola Station, and the Lessor, an institutional quality real estate investment trust, will provide alterations and improvements at its cost and expense on a "turnkey" basis.
+[p012_c0009] The annual cost per square foot at 200 OCR is less than renewing at 300 OCR, considering all factors. It is important to note that the space at 200 OCR is approximately 1,000 square feet greater than at 300 OCR allowing for expansion, accommodating new hires, and consolidating space from the LIRR Hillside Facility, with the total cost to relocate due to the additional square footage only marginally greater. Additionally, if needed, the 200 OCR Lessor has proposed up to approximately 11,000 square feet of swing space at a cost of just $3.65 per square foot for electricity (one optional swing space, if needed, for approx. 5,461 sq. ft would be at a rental rate of $36.93 per square foot until 12/31/24 and then reduced to $3.65 per square foot for electricity).
+[p012_c0010] Based on the foregoing, MTA Real Estate requests authorization for the LIRR to enter into a lease agreement with Country Road Mineola LLC for use of the Premises by LIRR OHS and EAP under the above-described terms and conditions.
+
+## Page 13
+
+### [p013_c0001] MTA METRO-NORTH RAILROAD
+
+## Page 14
+
+### [p014_c0001] Staff Summary
+### [p014_c0002] Metropolitan Transportation Authority
+### [p014_c0003] Page 1 of 2
+[p014_c0004]
+
+```text
+Subject GROUND LEASE OF PORTION OF PARKING LOT LOCATED AT 2 DEPOT PLAZA, TARRYTOWN, NEW YORK, AND RELATED ACCESS AND PROPERTY IMPROVEMENTS Department TRANSIT ORIENTED DEVELOPMENT Department Head Name ROBERT PALEY Department Head Signature Project Manager Name NICHOLAS ROBERTS
+```
+[p014_c0005]
+
+```text
+Date SEPTEMBER 23, 2024 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p014_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Metro-North 09/23/24 X 2 Finance Committee 09/23/24 X 3 Board 09/25/24 X
+```
+[p014_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+- [p014_c0008] AGENCY: Metropolitan Transportation Authority (“MTA”) and MTA Metro-North Railroad (“MNR”) GRANTEE: Hudson Harbor Station, LLC (“Hudson Harbor”), an affiliate of National Resources Acquisitions, LLC, a Delaware limited liability company, owned or controlled by Joseph Cotter and Lynne M. Ward LOCATION: 2 Depot Plaza, Tarrytown, New York (the “MTA Property”) ACTIVITY: Ground lease of ± 25,000 square feet of the MTA Property (the “Leased Premises”) pursuant to a triple net lease for a base term of 49 years with two 15-year renewal options (Years 50 – 64 and Years 65 – 79) for a total lease term of 79 years (the “Ground Lease”), and the acquisition of improved and expanded access easements for the MTA Property. ACTION REQUESTED: Authorization to (i) conditionally designate Hudson Harbor as the successful proposer under the RFP (as defined below), and (ii) negotiate and enter into (a) the Ground Lease for the Leased Premises upon the terms and conditions set forth therein, (b) a design and construction agreement providing for the design and construction by Hudson Harbor of certain parking, roadway and drive aisle improvements benefitting the MTA Property, (c) access easements providing MTA/MNR with improved and expanded permanent access to the MTA Property and Yard and the northbound platform of the Tarrytown Station, and (d) such documents reasonably necessary or appropriate to consummate the Ground Lease and the other actions required of Hudson Harbor in connection therewith (collectively, the “Transaction Documents”). COMPENSATION: (a) Base Rent: $1,016,770 (net present value, discounted at 6%). The initial annual Base Rent of $37,350 will escalate by 15% every 5 years during the term of the Ground Lease and will reset to not less than 95% of fair market value upon the commencement of each of the renewal terms. (b) In-Kind Compensation: (i) permanent easements providing for improved and expanded access to the MTA Property, including the Yard and the northbound platform of MNR’s Tarrytown Station, and (ii) improvements benefitting the MTA Property, including repaving, striping and lighting and the perpetual maintenance of the portion of the Parking Lot (as defined below) to be retained by MTA, at Hudson Harbor’s expense.
+
+## Page 15
+
+### [p015_c0001] Staff Summary
+### [p015_c0002] Metropolitan Transportation Authority
+### [p015_c0003] Page 2 of 2
+### [p015_c0004] COMMENTS:
+[p015_c0005] The MTA Property is an approximately 21-acre lot in the immediate vicinity of MNR's Tarrytown Station (the "Station"). Comprised largely of the Hudson Line right of way, the MTA Property also includes land improved by: (i) an unpaved and unstriped MNR parking lot located at the northeastern end of the MTA Property (the "Parking Lot"), (ii) an MNR layover yard at the southern end of the MTA Property (the "MNR Yard"), and (iii) a roadway connecting Depot Plaza, a public street located to the north of the MTA Property, to the Parking Lot and the MNR Yard (the "Access Drive"). Hudson Harbor owns the property to the west of the MTA Property (the "Development Site"), which was recently rezoned by the Village of Tarrytown (the "Village") for transit-oriented development (the "TOD Zoning"). Hudson Harbor intends to develop the Development Site under the TOD Zoning as an 88-unit multi-family housing project with community artist workshops and galleries on its ground floor (the "Project"). The TOD Zoning requires that the Project contain at least 105 tenant parking spaces. To satisfy in part the TOD Zoning parking requirements for the Project, Hudson Harbor has proposed to ground lease from MTA the portion of the existing Parking Lot that will become the Leased Premises and improve the Leased Premises with 37 parking spaces dedicated for tenant parking at the Project (the "Dedicated Tenant Parking").
+[p015_c0006] MTA Transit Oriented Development ("TOD") and MNR view Hudson Harbor's proposal to lease the Leased Premises for Dedicated Tenant Parking as an opportunity to facilitate transit-oriented development, obtain unfettered 24/7 use of the Access Drive, improve ADA accessibility to the Station, obtain at no expense improvements to the portion of the Parking Lot to be retained by MTA for MTA/MNR's exclusive use, including repaving, striping and lighting, and the perpetual maintenance of the portion of the Parking Lot to be retained by MTA by the proposer at its own expense, and generate revenue for the MTA Capital Program. TOD therefore issued a Request for Proposals ("RFP") in accordance with the Public Authorities Law for a proposer to ground lease the Leased Premises and to require, as partial consideration therefor, that the successful proposer grant to MTA the improved and expanded access easements and construct and maintain the improvements benefiting the MTA Property described above.
+[p015_c0007] Hudson Harbor was the only respondent to the RFP. Hudson Harbor proposed to pay MTA an annual base rent for the Leased Premises of $36,000, subject to the rent escalations and rent adjustments referenced above. The net present value of the ground rent payable during the initial term of the Ground Lease equals or exceeds the fair market value of the Leased Premises as determined by an independent appraisal obtained by TOD. Hudson Harbor also agreed to grant to MTA/MNR the improved and expanded access easements and undertake the required improvements benefiting the MTA Property at Hudson Harbor's sole cost and expense, including maintenance.
+[p015_c0008] Based on the foregoing, TOD requests Board authorization to (i) conditionally designate Hudson Harbor as the successful proposer to the RFP, and (ii) negotiate, execute and deliver the Transaction Documents, upon the terms and conditions set forth above and other such terms and conditions as the Chief Development Officer or such officer's designee deems necessary or appropriate to consummate the Ground Lease of the Leased Premises to Hudson Harbor, effectuate the grant by Hudson Harbor of the improved and expanded access easements and provide for the construction and maintenance by Hudson Harbor of the improvements benefiting the MTA Property described above.
+
+## Page 16
+
+### [p016_c0001] Staff Summary
+### [p016_c0002] Metropolitan Transportation Authority
+### [p016_c0003] Page 1 of 2
+[p016_c0004]
+
+```text
+Subject ACQUISITION OF PROPERTY INTERESTS FROM THE VILLAGE OF PLEASANTVILLE IN SUPPORT OF THE HARLEM AND HUDSON POWER IMPROVEMENTS PROJECT, PLEASANTVILLE SUBSTATION Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name GARRETT BURGER
+```
+[p016_c0005]
+
+```text
+Date SEPTEMBER 25, 2024 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p016_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Metro-North 09/23/24 X 2 Finance Committee 09/25/24 X 3 Board 09/25/24 X
+```
+[p016_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Administrative Officer 3 Chief Financial Officer
+```
+[p016_c0008] AGENCY: MTA Metro-North Railroad ("MNR") SELLER / GRANTOR: Village of Pleasantville ("the Village") LOCATION: North Side of Manville Road between Washington Avenue and Metro-North's Harlem Line (Adjacent to 2 Washington Avenue and 44 Washington Avenue), Pleasantville, NY 10570 PREMISES: Fee acquisition of a 5,570± square foot parcel identified on the Westchester County tax maps as Section 106.6, Block 1, Lot 52 Permanent easement on and over a 2,584± square foot portion of a parcel identified on the Westchester County tax maps as Section 106.6, Lot 51 USE: Construction, operation, maintenance, and access to a new electrical substation ACTION REQUESTED: Authorization to acquire the Premises through negotiated agreement. COMPENSATION: $410,000
+### [p016_c0009] COMMENTS:
+[p016_c0010] In support of the Harlem and Hudson Power Improvements Project - Pleasantville Substation (the "Project"), Metro-North seeks to construct a new electrical substation in the Village of Pleasantville in order to strengthen the traction power system on the Harlem Line. In furtherance of the Project, the MTA is seeking to acquire the Premises cited above. The Premises is owned by the Village of Pleasantville and comprise both a fee parcel (the "Fee Parcel") and a permanent access easement (the "Access Easement"). The Fee Parcel is a vacant lot with an approximately 25 x 26 foot paved area that contains a trash compactor in support of an adjacent commercial property. As part of the conveyance, the Village will retain a permanent easement over the compactor enclosure. The access easement is located within an adjacent municipal parking lot and will not cause any existing parking spaces to be eliminated.
+
+## Page 17
+
+### [p017_c0001] Staff Summary
+### [p017_c0002] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle containing the white letters "MTA", followed by the text "Metropolitan Transportation Authority" in a black, sans-serif font.
+### [p017_c0003] FINANCE COMMITTEE MEETING
+### [p017_c0004] ACQUISITION OF PROPERTY INTERESTS FROM THE VILLAGE OF PLEASANTVILLE IN SUPPORT OF THE HARLEM AND HUDSON POWER IMPROVEMENTS (PLEASANTVILLE SUBSTATION) PROJECT (cont'd)
+[p017_c0005] Page 2 of 2
+[p017_c0006] MTA Real Estate initiated negotiations with the Village in early 2024 and in April 2024 obtained an independent appraisal of the Premises. The appraised value is $410,000, and the Village has accepted this amount for the fee parcel and access easement.
+[p017_c0007] Based on the foregoing, MTA Real Estate is requesting authorization to proceed with the acquisition of the Premises by negotiated agreement pursuant to the above-described terms and conditions.

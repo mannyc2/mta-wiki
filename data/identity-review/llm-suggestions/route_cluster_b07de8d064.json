@@ -1,0 +1,34 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:37:54.132Z",
+  "packet_path": "data/identity-review/packets/route_cluster_b07de8d064.md",
+  "cluster_id": "route_cluster_b07de8d064",
+  "kind": "route",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "route_cluster_b07de8d064",
+    "kind": "route",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "route_s78-hylan-2010",
+          "route_s79-hylan-2010"
+        ],
+        "reason": "Strong identity field route_id differs (S78 vs S79). Decision test 1 forces do_not_merge."
+      }
+    ],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "The two records have different route_id values (S78 and S79), which is a strong identity field per the route identity definition (route_id + service_variant). Contrast test 1 applies: any differing strong identity field forces do_not_merge. Service_variant is 'local' for both, but route_id is distinct. No evidence suggests they are the same route; they are separate routes mentioned in the same study documents."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-37-43-506Z_1282984-db69cd92_identity-review-run_route-cluster-b07de8d064",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-37-43-506Z_2026-06-23T14-37-43-506Z_1282984-db69cd92_identity-review-run_route-cluster-b07de8d064.jsonl"
+}

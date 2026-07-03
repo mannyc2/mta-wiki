@@ -1,0 +1,31 @@
+{
+  "review_run_id": "2026-06-23T14-38-47-609Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:38:55.833Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_57b869f3be.md",
+  "cluster_id": "entity_cluster_57b869f3be",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_57b869f3be",
+    "kind": "entity",
+    "merge_groups": [
+      [
+        "entity_nys-office-mental-health",
+        "entity_scout-nys-omh"
+      ]
+    ],
+    "do_not_merge": [],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "Both records represent the New York State Office of Mental Health (NYS OMH). The same-object test (canon rule 2) applies: strong identity fields (acronym 'NYS OMH' and entity_name) agree, and the differences are simple abbreviation/expansion (NYS vs New York State) and a trivial entity_type variation ('agency' vs 'government agency') that does not indicate distinct entities. Per the per-kind rule for entities, acronym + expanded legal name merge. The negative signal in the candidate edge is not a true contradiction; it is a synonym. Therefore merge."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-38-47-612Z_1287237-07349d66_identity-review-run_entity-cluster-57b869f3be",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-38-47-612Z_2026-06-23T14-38-47-612Z_1287237-07349d66_identity-review-run_entity-cluster-57b869f3be.jsonl"
+}

@@ -1,0 +1,375 @@
+{
+  "run_id": "2026-06-10T23-12-19-370Z_1976810-cd557040_ingest_2013-03-sbs-webster-bx-cb7",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T03:45:11.439Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "rel-offset-bus-lanes-2013-wa",
+        "local_observation_id": "treatment_2013_03_sbs_webster_offset_bus_lanes",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_2013-03-sbs-webster-offset-bus-lanes",
+            "description": "4 miles of offset bus lanes with bus bulb stations as part of the Webster Avenue SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_sbs_webster_bx_cb7",
+                "block_id": "p011_c0002",
+                "source_quote": "4 miles of offset bus lanes with bus bulb stations"
+              },
+              {
+                "source_id": "2013_03_sbs_webster_bx_cb7",
+                "block_id": "p017_c0003",
+                "source_quote": "Offset bus lanes improve bus speed"
+              }
+            ]
+          }
+        ],
+        "rationale": "The source explicitly states these offset bus lanes are part of the Webster Ave SBS project (presented to CB7).",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb7",
+            "block_id": "p011_c0002",
+            "source_quote": "4 miles of offset bus lanes with bus bulb stations"
+          },
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb7",
+            "block_id": "p017_c0003",
+            "source_quote": "Offset bus lanes improve bus speed"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-offboard-fare-2013-wa",
+        "local_observation_id": "treatment_2013_03_sbs_webster_offboard_fare",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_2013-03-sbs-webster-offboard-fare",
+            "description": "Off-board fare collection as part of the Webster Avenue SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_sbs_webster_bx_cb7",
+                "block_id": "p011_c0002",
+                "source_quote": "Off-board fare collection"
+              },
+              {
+                "source_id": "2013_03_sbs_webster_bx_cb7",
+                "block_id": "p012_c0003",
+                "source_quote": "Before you board, dip your MetroCard at the MetroCard machine or insert coins into the coin machine located on the sidewalk"
+              }
+            ]
+          }
+        ],
+        "rationale": "The source explicitly lists off-board fare collection as part of the Webster Ave SBS design.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb7",
+            "block_id": "p011_c0002",
+            "source_quote": "Off-board fare collection"
+          },
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb7",
+            "block_id": "p012_c0003",
+            "source_quote": "Before you board, dip your MetroCard at the MetroCard machine or insert coins into the coin machine located on the sidewalk"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-tsp-2013-wa",
+        "local_observation_id": "treatment_2013_03_sbs_webster_tsp",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_2013-03-sbs-webster-tsp",
+            "description": "Transit signal priority for Webster Avenue SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_sbs_webster_bx_cb7",
+                "block_id": "p011_c0002",
+                "source_quote": "Transit signal priority"
+              }
+            ]
+          }
+        ],
+        "rationale": "Transit Signal Priority is listed as part of the SBS Overview on p011.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb7",
+            "block_id": "p011_c0002",
+            "source_quote": "Transit signal priority"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-bulbs-2013-wa",
+        "local_observation_id": "treatment_2013_03_sbs_webster_bus_bulbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_2013-03-sbs-webster-bus-bulbs",
+            "description": "Bus bulbs at SBS bus stops along Webster Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_sbs_webster_bx_cb7",
+                "block_id": "p027_c0002",
+                "source_quote": "Bus bulbs - Additional capital construction items"
+              },
+              {
+                "source_id": "2013_03_sbs_webster_bx_cb7",
+                "block_id": "p028_c0006",
+                "source_quote": "Bus bulbs at SBS bus stops"
+              }
+            ]
+          }
+        ],
+        "rationale": "Bus bulbs are explicitly identified as SBS capital construction items for the Webster Ave project (pages 27-32).",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb7",
+            "block_id": "p027_c0002",
+            "source_quote": "Bus bulbs - Additional capital construction items"
+          },
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb7",
+            "block_id": "p028_c0006",
+            "source_quote": "Bus bulbs at SBS bus stops"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-ped-safety-2013-wa",
+        "local_observation_id": "treatment_2013_03_sbs_webster_pedestrian_safety",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_2013-03-sbs-webster-pedestrian-safety",
+            "description": "Pedestrian safety improvements along Webster Avenue SBS corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_sbs_webster_bx_cb7",
+                "block_id": "p027_c0002",
+                "source_quote": "Selected pedestrian islands / medians"
+              },
+              {
+                "source_id": "2013_03_sbs_webster_bx_cb7",
+                "block_id": "p030_c0004",
+                "source_quote": "Pedestrian safety improvements: - E 193 pedestrian refuge - E 194 St median - E 195 St median + neckdown - E 197 pedestrian refuge"
+              }
+            ]
+          }
+        ],
+        "rationale": "Pedestrian safety improvements are part of the SBS project, as shown on the CB7 SBS overview.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb7",
+            "block_id": "p027_c0002",
+            "source_quote": "Selected pedestrian islands / medians"
+          },
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb7",
+            "block_id": "p030_c0004",
+            "source_quote": "Pedestrian safety improvements: - E 193 pedestrian refuge - E 194 St median - E 195 St median + neckdown - E 197 pedestrian refuge"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-right-turn-bays-2013-wa",
+        "local_observation_id": "treatment_2013_03_sbs_webster_right_turn_bays",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_2013-03-sbs-webster-right-turn-bays",
+            "description": "Right-turn bays at busy intersections to support Webster Avenue SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_sbs_webster_bx_cb7",
+                "block_id": "p024_c0005",
+                "source_quote": "Right-turn bays reduce blockages at busy intersections"
+              },
+              {
+                "source_id": "2013_03_sbs_webster_bx_cb7",
+                "block_id": "p029_c0004",
+                "source_quote": "NB and SB right-turn bays add storage space for turning vehicles and keep the bus lane clear"
+              }
+            ]
+          }
+        ],
+        "rationale": "Right-turn bays are listed as a traffic operation improvement on the Webster Ave SBS project (p024, p029).",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb7",
+            "block_id": "p024_c0005",
+            "source_quote": "Right-turn bays reduce blockages at busy intersections"
+          },
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb7",
+            "block_id": "p029_c0004",
+            "source_quote": "NB and SB right-turn bays add storage space for turning vehicles and keep the bus lane clear"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-left-turn-bays-2013-wa",
+        "local_observation_id": "treatment_2013_03_sbs_webster_left_turn_bays",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_2013-03-sbs-webster-left-turn-bays",
+            "description": "Lengthened left-turn bays for Webster Avenue SBS traffic improvements",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_sbs_webster_bx_cb7",
+                "block_id": "p024_c0005",
+                "source_quote": "Lengthening left-turn bays creates more storage space"
+              },
+              {
+                "source_id": "2013_03_sbs_webster_bx_cb7",
+                "block_id": "p029_c0003",
+                "source_quote": "Lengthened Left-Turn Bays create more storage space for heavy left-turning volumes"
+              }
+            ]
+          }
+        ],
+        "rationale": "Left-turn bays are part of the capacity improvements for the Webster Avenue SBS traffic changes.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb7",
+            "block_id": "p024_c0005",
+            "source_quote": "Lengthening left-turn bays creates more storage space"
+          },
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb7",
+            "block_id": "p029_c0003",
+            "source_quote": "Lengthened Left-Turn Bays create more storage space for heavy left-turning volumes"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-banned-left-turns-2013-wa",
+        "local_observation_id": "treatment_2013_03_sbs_webster_banned_left_turns",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_2013-03-sbs-webster-banned-left-turns",
+            "description": "Banned left-turns at E Fordham Rd/Webster Ave to support Webster Avenue SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_sbs_webster_bx_cb7",
+                "block_id": "p024_c0005",
+                "source_quote": "Banning left-turns at key intersections reduces conflicts and opens up additional signal time for other congested movements"
+              },
+              {
+                "source_id": "2013_03_sbs_webster_bx_cb7",
+                "block_id": "p029_c0005",
+                "source_quote": "Banned EB and WB left-turns simplify intersection operations and improve pedestrian safety"
+              }
+            ]
+          }
+        ],
+        "rationale": "Banned left-turns are listed as a capacity improvement for Webster Avenue SBS traffic operations.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb7",
+            "block_id": "p024_c0005",
+            "source_quote": "Banning left-turns at key intersections reduces conflicts and opens up additional signal time for other congested movements"
+          },
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb7",
+            "block_id": "p029_c0005",
+            "source_quote": "Banned EB and WB left-turns simplify intersection operations and improve pedestrian safety"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-gun-hill-ops-2013-wa",
+        "local_observation_id": "treatment_2013_03_sbs_webster_gun_hill_ops",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_2013-03-sbs-webster-gun-hill-ops",
+            "description": "Traffic operational improvements at E Gun Hill Rd / Webster Ave for the SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_sbs_webster_bx_cb7",
+                "block_id": "p035_c0005",
+                "source_quote": "Curbside bus lane and Bus-Only RT signal phase helps buses get through the intersection faster"
+              }
+            ]
+          }
+        ],
+        "rationale": "E Gun Hill Road traffic operations are part of the Webster Ave SBS project per the CB7 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb7",
+            "block_id": "p035_c0003",
+            "source_quote": "Thru and right-turn only lanes improve traffic organization on this congested approach"
+          },
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb7",
+            "block_id": "p035_c0004",
+            "source_quote": "Increase signal time for congested turning movements"
+          },
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb7",
+            "block_id": "p035_c0005",
+            "source_quote": "Curbside bus lane and Bus-Only RT signal phase helps buses get through the intersection faster"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-parkside-place-2013-wa",
+        "local_observation_id": "treatment_2013_03_sbs_webster_parkside_place",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_2013-03-sbs-webster-parkside-place",
+            "description": "Parkside Place pedestrian area improvements as part of Webster Ave SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_sbs_webster_bx_cb7",
+                "block_id": "p033_c0004",
+                "source_quote": "Realign Parkside Place and create a pedestrian area using temporary paint treatment with granite blocks to define the space. Build concrete pedestrian median"
+              }
+            ]
+          }
+        ],
+        "rationale": "Parkside Place improvements are described as part of the 2013-2015 SBS capital construction for Webster Avenue.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb7",
+            "block_id": "p033_c0004",
+            "source_quote": "Realign Parkside Place and create a pedestrian area using temporary paint treatment with granite blocks to define the space. Build concrete pedestrian median"
+          }
+        ]
+      }
+    ],
+    "packet_id": "treatment-relations"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-40-33-756Z_2111393-e2682054_canonicalize_2026-06-10t23-12-19-370z-1976810-cd557040-ingest-2013-03-sbs-webster-bx-cb7-treatment-relations"
+}

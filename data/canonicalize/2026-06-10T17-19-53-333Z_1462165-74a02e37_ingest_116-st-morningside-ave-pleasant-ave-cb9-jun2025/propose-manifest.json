@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T17-19-53-333Z_1462165-74a02e37_ingest_116-st-morningside-ave-pleasant-ave-cb9-jun2025",
+  "generated_at": "2026-06-21T15:16:44.000Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 59,
+  "validated_decision_count": 9,
+  "quarantined_decision_count": 11,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T17-19-53-333Z_1462165-74a02e37_ingest_116-st-morningside-ave-pleasant-ave-cb9-jun2025",
+    "manifest": "data/canonicalize/2026-06-10T17-19-53-333Z_1462165-74a02e37_ingest_116-st-morningside-ave-pleasant-ave-cb9-jun2025/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T17-19-53-333Z_1462165-74a02e37_ingest_116-st-morningside-ave-pleasant-ave-cb9-jun2025/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T17-19-53-333Z_1462165-74a02e37_ingest_116-st-morningside-ave-pleasant-ave-cb9-jun2025/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T17-19-53-333Z_1462165-74a02e37_ingest_116-st-morningside-ave-pleasant-ave-cb9-jun2025/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 10,
+      "validated_decision_count": 2,
+      "quarantined_decision_count": 8,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-19-53-333Z_1462165-74a02e37_ingest_116-st-morningside-ave-pleasant-ave-cb9-jun2025/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-21T15-04-01-763Z_2836603-aa120349_canonicalize_2026-06-10t17-19-53-333z-1462165-74a02e37-ingest-116-st-morningside-ave-pleasant-ave-cb9-jun2025-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 4,
+      "validated_decision_count": 4,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-19-53-333Z_1462165-74a02e37_ingest_116-st-morningside-ave-pleasant-ave-cb9-jun2025/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-21T15-04-01-764Z_2836603-9273a0e3_canonicalize_2026-06-10t17-19-53-333z-1462165-74a02e37-ingest-116-st-morningside-ave-pleasant-ave-cb9-jun2025-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-19-53-333Z_1462165-74a02e37_ingest_116-st-morningside-ave-pleasant-ave-cb9-jun2025/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-21T15-04-01-764Z_2836603-a99a8403_canonicalize_2026-06-10t17-19-53-333z-1462165-74a02e37-ingest-116-st-morningside-ave-pleasant-ave-cb9-jun2025-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 3,
+      "validated_decision_count": 2,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-19-53-333Z_1462165-74a02e37_ingest_116-st-morningside-ave-pleasant-ave-cb9-jun2025/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-21T15-04-01-764Z_2836603-1c4499e4_canonicalize_2026-06-10t17-19-53-333z-1462165-74a02e37-ingest-116-st-morningside-ave-pleasant-ave-cb9-jun2025-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-19-53-333Z_1462165-74a02e37_ingest_116-st-morningside-ave-pleasant-ave-cb9-jun2025/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-21T15-04-01-764Z_2836603-219672a5_canonicalize_2026-06-10t17-19-53-333z-1462165-74a02e37-ingest-116-st-morningside-ave-pleasant-ave-cb9-jun2025-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T17-19-53-333Z_1462165-74a02e37_ingest_116-st-morningside-ave-pleasant-ave-cb9-jun2025/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-21T15-04-01-764Z_2836603-82932b08_canonicalize_2026-06-10t17-19-53-333z-1462165-74a02e37-ingest-116-st-morningside-ave-pleasant-ave-cb9-jun2025-relation-linker"
+    }
+  ]
+}

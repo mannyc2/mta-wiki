@@ -1,0 +1,183 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-121191"
+record_kind: "source"
+display_name: "July Financial Plan - 2023 Mid-Year Forecast"
+source_id: "meeting_doc_121191"
+source_ids:
+  - "meeting_doc_121191"
+local_observation_id: "source_meeting_doc_121191"
+local_observation_ids:
+  - "source_meeting_doc_121191"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-23T16:46:06.262Z"
+submission_ids:
+  - "sub_424c35f69a65353f"
+payload:
+  authority_tier: "plan_document"
+  content_type: "spreadsheet"
+  date_text: "July 2023"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2023-07"
+    precision: "month"
+    raw_text: "July 2023"
+  description: "Accrual Statement of Operations by Category, July 2023 Monthly and Year-to-Date"
+  published_date_normalized: "2023-07"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "July Financial Plan - 2023 Mid-Year Forecast"
+evidence_refs:
+  -
+    block_id: "p001_b0008"
+    evidence_id: "meeting_doc_121191#p001_b0008"
+    page_number: 1
+    source_id: "meeting_doc_121191"
+    source_path: "raw/sources/meeting_doc_121191/blocks.jsonl"
+    source_quote: "METROPOLITAN TRANSPORTATION AUTHORITY"
+    text_sha256: "sha256:5d3049e4258ddce26bd7caf3cd5ea186838830f852d2ed1e3c3a78f5f732ff45"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0009"
+    evidence_id: "meeting_doc_121191#p001_b0009"
+    page_number: 1
+    source_id: "meeting_doc_121191"
+    source_path: "raw/sources/meeting_doc_121191/blocks.jsonl"
+    source_quote: "July Financial Plan - 2023 Mid-Year Forecast"
+    text_sha256: "sha256:47f0dfc9af9672447c044b8e1297df6ddae86e633de11e37e9d7ffb6fb6bb55d"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0010"
+    evidence_id: "meeting_doc_121191#p001_b0010"
+    page_number: 1
+    source_id: "meeting_doc_121191"
+    source_path: "raw/sources/meeting_doc_121191/blocks.jsonl"
+    source_quote: "Accrual Statement of Operations by Category"
+    text_sha256: "sha256:6a534e51ccaa2f560cfc87bd55a871efe5cdaba8f2311c8b09d910146d21484e"
+    text_source: "raw_text"
+---
+
+# July 2023 Statement of Operations (1 of 2)
+
+source_id: meeting_doc_121191
+citation: cite block ids exactly as shown in square brackets
+document: 115 block(s)
+
+## Page 1
+
+### [p001_b0001] Spreadsheet source: meeting_doc_121191
+### [p001_b0002] Preview run: spreadsheet-backlog-20260623
+### [p001_b0003] Source file: raw/sources/meeting_doc_121191/source.xlsx
+### [p001_b0004] Sheet: July
+### [p001_b0005] Sheet path: xl/worksheets/sheet1.xml
+### [p001_b0006] Rows: 66
+### [p001_b0007] Cells: 903
+### [p001_b0008] Row 1: [July!A1] METROPOLITAN TRANSPORTATION AUTHORITY
+### [p001_b0009] Row 2: [July!A2] July Financial Plan - 2023 Mid-Year Forecast
+### [p001_b0010] Row 3: [July!A3] Accrual Statement of Operations by Category
+### [p001_b0011] Row 4: [July!A4] July 2023 Monthly
+### [p001_b0012] Row 5: [July!A5] ($ in millions)
+### [p001_b0013] Row 6: [July!A6] 5 | [July!C6] 6 | [July!H6] 7
+[p001_b0014] Row 7: [July!A7] 8 | [July!C7] Actual | [July!D7] -Variance: Dollars | [July!E7] Fav/(Unfav)-Percent | [July!F7] 8 | [July!H7] Actual | [July!I7] -Variance: Dollars | [July!J7] Fav/(Unfav)-Percent | [July!K7] ' | [July!L7] Mid-Year Forecast | [July!M7] Actual | [July!N7] -Variance: Dollars | [July!O7] Fav/(Unfav)-Percent
+### [p001_b0015] Row 8: [July!A8] Revenue
+[p001_b0016] Row 9: [July!A9] Farebox Revenue | [July!B9] 381.5 | [July!C9] 381 | [July!D9] -0.5 | [July!E9] 0.1 | [July!F9] 0 | [July!H9] 0 | [July!I9] 0 | [July!J9] N/A | [July!K9] 381.5 | [July!M9] 381 | [July!N9] -0.5 | [July!O9] 0.1
+[p001_b0017] Row 10: [July!A10] Toll Revenue | [July!B10] 208.3 | [July!C10] 210.2 | [July!D10] 1.9 | [July!E10] 0.9 | [July!F10] 0 | [July!H10] 0 | [July!I10] 0 | [July!J10] N/A | [July!K10] 208.3 | [July!M10] 210.2 | [July!N10] 1.9 | [July!O10] 0.9
+[p001_b0018] Row 11: [July!A11] Other Revenue | [July!B11] 81.099999999999994 | [July!C11] 88.2 | [July!D11] 7.2 | [July!E11] 8.8000000000000007 | [July!F11] 0 | [July!H11] 0 | [July!I11] 0 | [July!J11] N/A | [July!K11] 81.099999999999994 | [July!M11] 88.2 | [July!N11] 7.2 | [July!O11] 8.8000000000000007
+[p001_b0019] Row 12: [July!A12] Capital and Other Reimbursements | [July!B12] 0 | [July!C12] 0 | [July!D12] 0 | [July!E12] N/A | [July!F12] 186.7 | [July!H12] 149.5 | [July!I12] -37.200000000000003 | [July!J12] 19.899999999999999 | [July!K12] 186.7 | [July!M12] 149.5 | [July!N12] -37.200000000000003 | [July!O12] 19.899999999999999
+[p001_b0020] Row 13: [July!A13] Total Revenues | [July!B13] 670.8 | [July!C13] 679.4 | [July!D13] 8.6 | [July!E13] 1.3 | [July!F13] 186.7 | [July!H13] 149.5 | [July!I13] -37.200000000000003 | [July!J13] 19.899999999999999 | [July!K13] 857.5 | [July!M13] 828.9 | [July!N13] -28.6 | [July!O13] 3.3
+### [p001_b0021] Row 15: [July!A15] Expenses
+### [p001_b0022] Row 16: [July!A16] Labor:
+[p001_b0023] Row 17: [July!A17] Payroll | [July!B17] 503.1 | [July!C17] 485.2 | [July!D17] 17.899999999999999 | [July!E17] 3.6 | [July!F17] 63.5 | [July!H17] 46.4 | [July!I17] 17.100000000000001 | [July!J17] 26.9 | [July!K17] 566.6 | [July!M17] 531.6 | [July!N17] 35 | [July!O17] 6.2
+[p001_b0024] Row 18: [July!A18] Overtime | [July!B18] 80.599999999999994 | [July!C18] 92.4 | [July!D18] -11.8 | [July!E18] 14.7 | [July!F18] 17.399999999999999 | [July!H18] 18.399999999999999 | [July!I18] -1 | [July!J18] 5.6 | [July!K18] 98 | [July!M18] 110.8 | [July!N18] -12.8 | [July!O18] 13.1
+[p001_b0025] Row 19: [July!A19] Health and Welfare | [July!B19] 145.80000000000001 | [July!C19] 136.30000000000001 | [July!D19] 9.5 | [July!E19] 6.5 | [July!F19] 7.8 | [July!H19] 5.8 | [July!I19] 2 | [July!J19] 25.7 | [July!K19] 153.6 | [July!M19] 142.1 | [July!N19] 11.5 | [July!O19] 7.5
+[p001_b0026] Row 20: [July!A20] OPEB Current Payments | [July!B20] 70.2 | [July!C20] 75.400000000000006 | [July!D20] -5.2 | [July!E20] 7.4 | [July!F20] 1.4 | [July!H20] 1.3 | [July!I20] 0 | [July!J20] 2.5 | [July!K20] 71.599999999999994 | [July!M20] 76.8 | [July!N20] -5.2 | [July!O20] 7.2
+[p001_b0027] Row 21: [July!A21] Pension | [July!B21] 111.5 | [July!C21] 114.3 | [July!D21] -2.7 | [July!E21] 2.4 | [July!F21] 9.3000000000000007 | [July!H21] 7.4 | [July!I21] 1.8 | [July!J21] 19.8 | [July!K21] 120.8 | [July!M21] 121.7 | [July!N21] -0.9 | [July!O21] 0.7
+[p001_b0028] Row 22: [July!A22] Other Fringe Benefits | [July!B22] 93.1 | [July!C22] 89.5 | [July!D22] 3.6 | [July!E22] 3.9 | [July!F22] 21.5 | [July!H22] 16.899999999999999 | [July!I22] 4.5999999999999996 | [July!J22] 21.3 | [July!K22] 114.7 | [July!M22] 106.4 | [July!N22] 8.1999999999999993 | [July!O22] 7.2
+[p001_b0029] Row 23: [July!A23] Reimbursable Overhead | [July!B23] -35.700000000000003 | [July!C23] -30.9 | [July!D23] -4.8 | [July!E23] 13.3 | [July!F23] 35.700000000000003 | [July!H23] 31 | [July!I23] 4.7 | [July!J23] 13.2 | [July!K23] 0 | [July!M23] 0 | [July!N23] -0.1 | [July!O23] <(100.0)
+[p001_b0030] Row 24: [July!A24] Total Labor Expenses | [July!B24] 968.6 | [July!C24] 962.1 | [July!D24] 6.5 | [July!E24] 0.7 | [July!F24] 156.6 | [July!H24] 127.3 | [July!I24] 29.3 | [July!J24] 18.7 | [July!K24] 1125.2 | [July!M24] 1089.4000000000001 | [July!N24] 35.799999999999997 | [July!O24] 3.2
+### [p001_b0031] Row 26: [July!A26] Non-Labor:
+[p001_b0032] Row 27: [July!A27] Electric Power | [July!B27] 50.4 | [July!C27] 40.5 | [July!D27] 9.9 | [July!E27] 19.600000000000001 | [July!F27] 0.1 | [July!H27] 0.2 | [July!I27] -0.2 | [July!J27] <(100.0) | [July!K27] 50.4 | [July!M27] 40.700000000000003 | [July!N27] 9.6999999999999993 | [July!O27] 19.3
+[p001_b0033] Row 28: [July!A28] Fuel | [July!B28] 17.100000000000001 | [July!C28] 8.6999999999999993 | [July!D28] 8.4 | [July!E28] 49.1 | [July!F28] 0 | [July!H28] 0 | [July!I28] 0 | [July!J28] 99.8 | [July!K28] 17.100000000000001 | [July!M28] 8.6999999999999993 | [July!N28] 8.4 | [July!O28] 49.1
+[p001_b0034] Row 29: [July!A29] Insurance | [July!B29] 0 | [July!C29] 2.5 | [July!D29] -2.4 | [July!E29] <(100.0) | [July!F29] 0.7 | [July!H29] 0.5 | [July!I29] 0.2 | [July!J29] 25 | [July!K29] 0.7 | [July!M29] 3 | [July!N29] -2.2999999999999998 | [July!O29] <(100.0)
+[p001_b0035] Row 30: [July!A30] Claims | [July!B30] 32.1 | [July!C30] 32.700000000000003 | [July!D30] -0.6 | [July!E30] 1.9 | [July!F30] 0 | [July!H30] 0 | [July!I30] 0 | [July!J30] N/A | [July!K30] 32.1 | [July!M30] 32.700000000000003 | [July!N30] -0.6 | [July!O30] 1.9
+[p001_b0036] Row 31: [July!A31] Paratransit Service Contracts | [July!B31] 41.4 | [July!C31] 43.4 | [July!D31] -2 | [July!E31] 4.9000000000000004 | [July!F31] 0 | [July!H31] 0 | [July!I31] 0 | [July!J31] N/A | [July!K31] 41.4 | [July!M31] 43.4 | [July!N31] -2 | [July!O31] 4.9000000000000004
+[p001_b0037] Row 32: [July!A32] Maintenance and Other Operating Contracts | [July!B32] 81 | [July!C32] 61.5 | [July!D32] 19.5 | [July!E32] 24.1 | [July!F32] 5 | [July!H32] 6.4 | [July!I32] -1.4 | [July!J32] 27.7 | [July!K32] 86.1 | [July!M32] 68 | [July!N32] 18.100000000000001 | [July!O32] 21.1
+[p001_b0038] Row 33: [July!A33] Professional Services Contracts | [July!B33] 69.5 | [July!C33] 50.5 | [July!D33] 19.100000000000001 | [July!E33] 27.4 | [July!F33] 13.3 | [July!H33] 5.9 | [July!I33] 7.3 | [July!J33] 55.4 | [July!K33] 82.8 | [July!M33] 56.4 | [July!N33] 26.4 | [July!O33] 31.9
+[p001_b0039] Row 34: [July!A34] Materials and Supplies | [July!B34] 61.9 | [July!C34] 51.2 | [July!D34] 10.8 | [July!E34] 17.399999999999999 | [July!F34] 10.6 | [July!H34] 9.3000000000000007 | [July!I34] 1.3 | [July!J34] 12 | [July!K34] 72.5 | [July!M34] 60.5 | [July!N34] 12 | [July!O34] 16.600000000000001
+[p001_b0040] Row 35: [July!A35] Other Business Expenses | [July!B35] 24.9 | [July!C35] 22.4 | [July!D35] 2.6 | [July!E35] 10.3 | [July!F35] 0.5 | [July!H35] -0.1 | [July!I35] 0.6 | [July!J35] > 100.0 | [July!K35] 25.4 | [July!M35] 22.2 | [July!N35] 3.2 | [July!O35] 12.5
+[p001_b0041] Row 36: [July!A36] Total  Non-Labor Expenses | [July!B36] 378.4 | [July!C36] 313.3 | [July!D36] 65.099999999999994 | [July!E36] 17.2 | [July!F36] 30.1 | [July!H36] 22.2 | [July!I36] 7.9 | [July!J36] 26.2 | [July!K36] 408.5 | [July!M36] 335.5 | [July!N36] 73 | [July!O36] 17.899999999999999
+### [p001_b0042] Row 38: [July!A38] Other Expense Adjustments
+[p001_b0043] Row 39: [July!A39] Other | [July!B39] 1.7 | [July!C39] 1.1000000000000001 | [July!D39] 0.6 | [July!E39] 36 | [July!F39] 0 | [July!H39] 0 | [July!I39] 0 | [July!J39] N/A | [July!K39] 1.7 | [July!M39] 1.1000000000000001 | [July!N39] 0.6 | [July!O39] 36
+[p001_b0044] Row 40: [July!A40] General Reserve | [July!B40] 0 | [July!C40] 0 | [July!D40] 0 | [July!E40] N/A | [July!F40] 0 | [July!H40] 0 | [July!I40] 0 | [July!J40] N/A | [July!K40] 0 | [July!M40] 0 | [July!N40] 0 | [July!O40] N/A
+[p001_b0045] Row 41: [July!A41] Total  Other Expense Adjustments | [July!B41] 1.7 | [July!C41] 1.1000000000000001 | [July!D41] 0.6 | [July!E41] 36 | [July!F41] 0 | [July!H41] 0 | [July!I41] 0 | [July!J41] N/A | [July!K41] 1.7 | [July!M41] 1.1000000000000001 | [July!N41] 0.6 | [July!O41] 36
+[p001_b0046] Row 43: [July!A43] Total Expenses Before Non-Cash Liability Adjs. | [July!B43] 1348.8 | [July!C43] 1276.5 | [July!D43] 72.2 | [July!E43] 5.4 | [July!F43] 186.7 | [July!H43] 149.5 | [July!I43] 37.200000000000003 | [July!J43] 19.899999999999999 | [July!K43] 1535.4 | [July!M43] 1426 | [July!N43] 109.4 | [July!O43] 7.1
+[p001_b0047] Row 45: [July!A45] Depreciation | [July!B45] 295.8 | [July!C45] 286.60000000000002 | [July!D45] 9.1999999999999993 | [July!E45] 3.1 | [July!F45] 0 | [July!H45] 0 | [July!I45] 0 | [July!J45] N/A | [July!K45] 295.8 | [July!M45] 286.60000000000002 | [July!N45] 9.1999999999999993 | [July!O45] 3.1
+[p001_b0048] Row 46: [July!A46] GASB 68 Pension Expense Adjustment | [July!B46] 11 | [July!C46] 0 | [July!D46] 11 | [July!E46] 100 | [July!F46] 0 | [July!H46] 0 | [July!I46] 0 | [July!J46] N/A | [July!K46] 11 | [July!M46] 0 | [July!N46] 11 | [July!O46] 100
+[p001_b0049] Row 47: [July!A47] GASB 75 OPEB Expense Adjustment | [July!B47] 10.8 | [July!C47] 0 | [July!D47] 10.8 | [July!E47] 100 | [July!F47] 0 | [July!H47] 0 | [July!I47] 0 | [July!J47] N/A | [July!K47] 10.8 | [July!M47] 0 | [July!N47] 10.8 | [July!O47] 100
+[p001_b0050] Row 48: [July!A48] GASB 87 Lease Adjustment | [July!B48] -0.2 | [July!C48] -4.0999999999999996 | [July!D48] 3.9 | [July!E48] > 100.0 | [July!F48] 0 | [July!H48] 0 | [July!I48] 0 | [July!J48] N/A | [July!K48] -0.2 | [July!M48] -4.0999999999999996 | [July!N48] 3.9 | [July!O48] >100.0
+[p001_b0051] Row 49: [July!A49] Environmental Remediation | [July!B49] 0.1 | [July!C49] 0.2 | [July!D49] -0.1 | [July!E49] <(100.0) | [July!F49] 0 | [July!H49] 0 | [July!I49] 0 | [July!J49] N/A | [July!K49] 0.1 | [July!M49] 0.2 | [July!N49] -0.1 | [July!O49] <(100.0)
+[p001_b0052] Row 51: [July!A51] Total Expenses After Non-Cash Liability Adjs. | [July!B51] 1666.1 | [July!C51] 1559.2 | [July!D51] 107 | [July!E51] 6.4 | [July!F51] 186.7 | [July!H51] 149.5 | [July!I51] 37.200000000000003 | [July!J51] 19.899999999999999 | [July!K51] 1852.8 | [July!M51] 1708.7 | [July!N51] 144.1 | [July!O51] 7.8
+[p001_b0053] Row 53: [July!A53] Less: B&T Depreciation & GASB Adjustments | [July!B53] $16.8 | [July!C53] $18.1 | [July!D53] ($1.3) | [July!E53] (7.6) | [July!F53] 60 | [July!H53] $0.0 | [July!I53] $0.0 | [July!J53] 0.0 | [July!K53] 56 | [July!M53] $18.1 | [July!N53] ($1.3) | [July!O53] (7.6)
+[p001_b0054] Row 55: [July!A55] Adjusted Total Expenses | [July!B55] $1,649.3 | [July!C55] $1,541.1 | [July!D55] $108.2 | [July!E55] 6.6 | [July!F55] 67 | [July!H55] $149.5 | [July!I55] $37.2 | [July!J55] 19.9 | [July!K55] 71 | [July!M55] $1,690.6 | [July!N55] $145.4 | [July!O55] 7.9
+[p001_b0055] Row 57: [July!A57] Net Surplus/(Deficit) | [July!B57] ($978.5) | [July!C57] ($861.7) | [July!D57] $116.8 | [July!E57] 11.9 | [July!F57] 60 | [July!H57] $0.0 | [July!I57] $0.0 | [July!J57] 0.1 | [July!K57] 76 | [July!M57] ($861.7) | [July!N57] $116.8 | [July!O57] 11.9
+[p001_b0056] Row 59: [July!A59] Total Subsidies | [July!B59] 855.1 | [July!C59] 809.2 | [July!D59] -46 | [July!E59] 5.4 | [July!F59] 0 | [July!H59] 0 | [July!I59] 0 | [July!J59] N/A | [July!K59] 855.1 | [July!M59] 809.2 | [July!N59] -46 | [July!O59] 5.4
+[p001_b0057] Row 60: [July!A60] Debt Service | [July!B60] 234.1 | [July!C60] 235.5 | [July!D60] -1.4 | [July!E60] 0.6 | [July!F60] 0 | [July!H60] 0 | [July!I60] 0 | [July!J60] N/A | [July!K60] 234.1 | [July!M60] 235.5 | [July!N60] -1.4 | [July!O60] 0.6
+### [p001_b0058] Row 62: [July!A62] Notes: Totals may not add due to rounding
+[p001_b0059] Row 63: [July!A63] Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current months' actuals do not include post-close adjustments, which will be captured in the YTD results.
+### [p001_b0060] Sheet: YTD July
+### [p001_b0061] Sheet path: xl/worksheets/sheet2.xml
+### [p001_b0062] Rows: 66
+### [p001_b0063] Cells: 903
+### [p001_b0064] Row 1: [YTD July!A1] METROPOLITAN TRANSPORTATION AUTHORITY
+### [p001_b0065] Row 2: [YTD July!A2] July Financial Plan - 2023 Mid-Year Forecast
+### [p001_b0066] Row 3: [YTD July!A3] Accrual Statement of Operations by Category
+### [p001_b0067] Row 4: [YTD July!A4] July 2023 Year-to-Date
+### [p001_b0068] Row 5: [YTD July!A5] ($ in millions)
+### [p001_b0069] Row 6: [YTD July!A6] 5 | [YTD July!C6] 6 | [YTD July!H6] 7
+[p001_b0070] Row 7: [YTD July!A7] 8 | [YTD July!C7] Actual | [YTD July!D7] -Variance: Dollars | [YTD July!E7] Fav/(Unfav)-Percent | [YTD July!F7] 8 | [YTD July!H7] Actual | [YTD July!I7] -Variance: Dollars | [YTD July!J7] Fav/(Unfav)-Percent | [YTD July!K7] ' | [YTD July!L7] Mid-Year Forecast | [YTD July!M7] Actual | [YTD July!N7] -Variance: Dollars | [YTD July!O7] Fav/(Unfav)-Percent
+### [p001_b0071] Row 8: [YTD July!A8] Revenue
+[p001_b0072] Row 9: [YTD July!A9] Farebox Revenue | [YTD July!B9] 2575.6999999999998 | [YTD July!C9] 2607.5 | [YTD July!D9] 31.8 | [YTD July!E9] 1.2 | [YTD July!F9] 0 | [YTD July!H9] 0 | [YTD July!I9] 0 | [YTD July!J9] N/A | [YTD July!K9] 2575.6999999999998 | [YTD July!M9] 2607.5 | [YTD July!N9] 31.8 | [YTD July!O9] 1.2
+[p001_b0073] Row 10: [YTD July!A10] Toll Revenue | [YTD July!B10] 1379.4 | [YTD July!C10] 1387.4 | [YTD July!D10] 8 | [YTD July!E10] 0.6 | [YTD July!F10] 0 | [YTD July!H10] 0 | [YTD July!I10] 0 | [YTD July!J10] N/A | [YTD July!K10] 1379.4 | [YTD July!M10] 1387.4 | [YTD July!N10] 8 | [YTD July!O10] 0.6
+[p001_b0074] Row 11: [YTD July!A11] Other Revenue | [YTD July!B11] 494.3 | [YTD July!C11] 471.8 | [YTD July!D11] -22.6 | [YTD July!E11] 4.5999999999999996 | [YTD July!F11] 0 | [YTD July!H11] 1.4 | [YTD July!I11] 1.4 | [YTD July!J11] N/A | [YTD July!K11] 494.3 | [YTD July!M11] 473.2 | [YTD July!N11] -21.2 | [YTD July!O11] 4.3
+[p001_b0075] Row 12: [YTD July!A12] Capital and Other Reimbursements | [YTD July!B12] 0 | [YTD July!C12] 0 | [YTD July!D12] 0 | [YTD July!E12] N/A | [YTD July!F12] 1268.5999999999999 | [YTD July!H12] 1136.8 | [YTD July!I12] -131.9 | [YTD July!J12] 10.4 | [YTD July!K12] 1268.5999999999999 | [YTD July!M12] 1136.8 | [YTD July!N12] -131.9 | [YTD July!O12] 10.4
+[p001_b0076] Row 13: [YTD July!A13] Total Revenues | [YTD July!B13] 4449.3999999999996 | [YTD July!C13] 4466.7 | [YTD July!D13] 17.3 | [YTD July!E13] 0.4 | [YTD July!F13] 1268.5999999999999 | [YTD July!H13] 1138.2 | [YTD July!I13] -130.4 | [YTD July!J13] 10.3 | [YTD July!K13] 5718 | [YTD July!M13] 5604.9 | [YTD July!N13] -113.2 | [YTD July!O13] 2
+### [p001_b0077] Row 15: [YTD July!A15] Expenses
+### [p001_b0078] Row 16: [YTD July!A16] Labor:
+[p001_b0079] Row 17: [YTD July!A17] Payroll | [YTD July!B17] 3358.4 | [YTD July!C17] 3266 | [YTD July!D17] 92.4 | [YTD July!E17] 2.8 | [YTD July!F17] 441.3 | [YTD July!H17] 360.8 | [YTD July!I17] 80.5 | [YTD July!J17] 18.2 | [YTD July!K17] 3799.7 | [YTD July!M17] 3626.8 | [YTD July!N17] 172.9 | [YTD July!O17] 4.5999999999999996
+[p001_b0080] Row 18: [YTD July!A18] Overtime | [YTD July!B18] 530.79999999999995 | [YTD July!C18] 648.70000000000005 | [YTD July!D18] -117.9 | [YTD July!E18] 22.2 | [YTD July!F18] 128.4 | [YTD July!H18] 135.1 | [YTD July!I18] -6.7 | [YTD July!J18] 5.2 | [YTD July!K18] 659.2 | [YTD July!M18] 783.8 | [YTD July!N18] -124.6 | [YTD July!O18] 18.899999999999999
+[p001_b0081] Row 19: [YTD July!A19] Health and Welfare | [YTD July!B19] 972.1 | [YTD July!C19] 905.3 | [YTD July!D19] 66.8 | [YTD July!E19] 6.9 | [YTD July!F19] 51.3 | [YTD July!H19] 43.4 | [YTD July!I19] 7.9 | [YTD July!J19] 15.3 | [YTD July!K19] 1023.4 | [YTD July!M19] 948.7 | [YTD July!N19] 74.7 | [YTD July!O19] 7.3
+[p001_b0082] Row 20: [YTD July!A20] OPEB Current Payments | [YTD July!B20] 485.5 | [YTD July!C20] 481.7 | [YTD July!D20] 3.8 | [YTD July!E20] 0.8 | [YTD July!F20] 9.5 | [YTD July!H20] 8.6999999999999993 | [YTD July!I20] 0.8 | [YTD July!J20] 8.1999999999999993 | [YTD July!K20] 495 | [YTD July!M20] 490.5 | [YTD July!N20] 4.5 | [YTD July!O20] 0.9
+[p001_b0083] Row 21: [YTD July!A21] Pension | [YTD July!B21] 799.4 | [YTD July!C21] 779.4 | [YTD July!D21] 20 | [YTD July!E21] 2.5 | [YTD July!F21] 61 | [YTD July!H21] 58.1 | [YTD July!I21] 2.9 | [YTD July!J21] 4.8 | [YTD July!K21] 860.5 | [YTD July!M21] 837.5 | [YTD July!N21] 22.9 | [YTD July!O21] 2.7
+[p001_b0084] Row 22: [YTD July!A22] Other Fringe Benefits | [YTD July!B22] 619.70000000000005 | [YTD July!C22] 619.5 | [YTD July!D22] 0.2 | [YTD July!E22] 0 | [YTD July!F22] 154.6 | [YTD July!H22] 133.80000000000001 | [YTD July!I22] 20.8 | [YTD July!J22] 13.4 | [YTD July!K22] 774.3 | [YTD July!M22] 753.3 | [YTD July!N22] 21 | [YTD July!O22] 2.7
+[p001_b0085] Row 23: [YTD July!A23] Reimbursable Overhead | [YTD July!B23] -255.2 | [YTD July!C23] -250.2 | [YTD July!D23] -5 | [YTD July!E23] 2 | [YTD July!F23] 256.2 | [YTD July!H23] 251.3 | [YTD July!I23] 4.9000000000000004 | [YTD July!J23] 1.9 | [YTD July!K23] 1 | [YTD July!M23] 1.1000000000000001 | [YTD July!N23] -0.1 | [YTD July!O23] 14.5
+[p001_b0086] Row 24: [YTD July!A24] Total Labor Expenses | [YTD July!B24] 6510.7 | [YTD July!C24] 6450.5 | [YTD July!D24] 60.3 | [YTD July!E24] 0.9 | [YTD July!F24] 1102.3 | [YTD July!H24] 991.3 | [YTD July!I24] 111.1 | [YTD July!J24] 10.1 | [YTD July!K24] 7613.1 | [YTD July!M24] 7441.7 | [YTD July!N24] 171.3 | [YTD July!O24] 2.2999999999999998
+### [p001_b0087] Row 26: [YTD July!A26] Non-Labor:
+[p001_b0088] Row 27: [YTD July!A27] Electric Power | [YTD July!B27] 320.89999999999998 | [YTD July!C27] 303 | [YTD July!D27] 17.899999999999999 | [YTD July!E27] 5.6 | [YTD July!F27] 0.3 | [YTD July!H27] 0.5 | [YTD July!I27] -0.2 | [YTD July!J27] 51 | [YTD July!K27] 321.2 | [YTD July!M27] 303.5 | [YTD July!N27] 17.7 | [YTD July!O27] 5.5
+[p001_b0089] Row 28: [YTD July!A28] Fuel | [YTD July!B28] 132.5 | [YTD July!C28] 131.30000000000001 | [YTD July!D28] 1.2 | [YTD July!E28] 0.9 | [YTD July!F28] 0.1 | [YTD July!H28] 0.3 | [YTD July!I28] -0.2 | [YTD July!J28] <(100.0) | [YTD July!K28] 132.6 | [YTD July!M28] 131.6 | [YTD July!N28] 0.9 | [YTD July!O28] 0.7
+[p001_b0090] Row 29: [YTD July!A29] Insurance | [YTD July!B29] 19.5 | [YTD July!C29] 24.6 | [YTD July!D29] -5.0999999999999996 | [YTD July!E29] 25.9 | [YTD July!F29] 4.8 | [YTD July!H29] 4.2 | [YTD July!I29] 0.6 | [YTD July!J29] 12.3 | [YTD July!K29] 24.3 | [YTD July!M29] 28.8 | [YTD July!N29] -4.5 | [YTD July!O29] 18.399999999999999
+[p001_b0091] Row 30: [YTD July!A30] Claims | [YTD July!B30] 222.4 | [YTD July!C30] 206.3 | [YTD July!D30] 16.100000000000001 | [YTD July!E30] 7.3 | [YTD July!F30] 0 | [YTD July!H30] 0 | [YTD July!I30] 0 | [YTD July!J30] N/A | [YTD July!K30] 222.4 | [YTD July!M30] 206.3 | [YTD July!N30] 16.100000000000001 | [YTD July!O30] 7.3
+[p001_b0092] Row 31: [YTD July!A31] Paratransit Service Contracts | [YTD July!B31] 288.89999999999998 | [YTD July!C31] 295.60000000000002 | [YTD July!D31] -6.7 | [YTD July!E31] 2.2999999999999998 | [YTD July!F31] 0 | [YTD July!H31] 0 | [YTD July!I31] 0 | [YTD July!J31] N/A | [YTD July!K31] 288.89999999999998 | [YTD July!M31] 295.60000000000002 | [YTD July!N31] -6.7 | [YTD July!O31] 2.2999999999999998
+[p001_b0093] Row 32: [YTD July!A32] Maintenance and Other Operating Contracts | [YTD July!B32] 501.4 | [YTD July!C32] 463.6 | [YTD July!D32] 37.799999999999997 | [YTD July!E32] 7.5 | [YTD July!F32] 36.5 | [YTD July!H32] 40.6 | [YTD July!I32] -4.0999999999999996 | [YTD July!J32] 11.3 | [YTD July!K32] 537.9 | [YTD July!M32] 504.1 | [YTD July!N32] 33.700000000000003 | [YTD July!O32] 6.3
+[p001_b0094] Row 33: [YTD July!A33] Professional Services Contracts | [YTD July!B33] 418.6 | [YTD July!C33] 352.3 | [YTD July!D33] 66.400000000000006 | [YTD July!E33] 15.9 | [YTD July!F33] 64.099999999999994 | [YTD July!H33] 43.3 | [YTD July!I33] 20.7 | [YTD July!J33] 32.299999999999997 | [YTD July!K33] 482.7 | [YTD July!M33] 395.6 | [YTD July!N33] 87.1 | [YTD July!O33] 18
+[p001_b0095] Row 34: [YTD July!A34] Materials and Supplies | [YTD July!B34] 393.7 | [YTD July!C34] 363.8 | [YTD July!D34] 29.9 | [YTD July!E34] 7.6 | [YTD July!F34] 60.6 | [YTD July!H34] 56.4 | [YTD July!I34] 4.2 | [YTD July!J34] 6.9 | [YTD July!K34] 454.3 | [YTD July!M34] 420.2 | [YTD July!N34] 34.1 | [YTD July!O34] 7.5
+[p001_b0096] Row 35: [YTD July!A35] Other Business Expenses | [YTD July!B35] 149.4 | [YTD July!C35] 154.9 | [YTD July!D35] -5.6 | [YTD July!E35] 3.7 | [YTD July!F35] 0 | [YTD July!H35] 0.2 | [YTD July!I35] -0.2 | [YTD July!J35] <(100.0) | [YTD July!K35] 149.30000000000001 | [YTD July!M35] 155.1 | [YTD July!N35] -5.8 | [YTD July!O35] 3.9
+[p001_b0097] Row 36: [YTD July!A36] Total  Non-Labor Expenses | [YTD July!B36] 2447.1999999999998 | [YTD July!C36] 2295.1999999999998 | [YTD July!D36] 151.9 | [YTD July!E36] 6.2 | [YTD July!F36] 166.3 | [YTD July!H36] 145.5 | [YTD July!I36] 20.8 | [YTD July!J36] 12.5 | [YTD July!K36] 2613.5 | [YTD July!M36] 2440.8000000000002 | [YTD July!N36] 172.7 | [YTD July!O36] 6.6
+### [p001_b0098] Row 38: [YTD July!A38] Other Expense Adjustments
+[p001_b0099] Row 39: [YTD July!A39] Other | [YTD July!B39] -9.9 | [YTD July!C39] -2.9 | [YTD July!D39] -7 | [YTD July!E39] 71 | [YTD July!F39] 0 | [YTD July!H39] 0 | [YTD July!I39] 0 | [YTD July!J39] N/A | [YTD July!K39] -9.9 | [YTD July!M39] -2.9 | [YTD July!N39] -7 | [YTD July!O39] 71
+[p001_b0100] Row 40: [YTD July!A40] General Reserve | [YTD July!B40] 0 | [YTD July!C40] 0 | [YTD July!D40] 0 | [YTD July!E40] N/A | [YTD July!F40] 0 | [YTD July!H40] 0 | [YTD July!I40] 0 | [YTD July!J40] N/A | [YTD July!K40] 0 | [YTD July!M40] 0 | [YTD July!N40] 0 | [YTD July!O40] N/A
+[p001_b0101] Row 41: [YTD July!A41] Total  Other Expense Adjustments | [YTD July!B41] -9.9 | [YTD July!C41] -2.9 | [YTD July!D41] -7 | [YTD July!E41] 71 | [YTD July!F41] 0 | [YTD July!H41] 0 | [YTD July!I41] 0 | [YTD July!J41] N/A | [YTD July!K41] -9.9 | [YTD July!M41] -2.9 | [YTD July!N41] -7 | [YTD July!O41] 71
+[p001_b0102] Row 43: [YTD July!A43] Total Expenses Before Non-Cash Liability Adjs. | [YTD July!B43] 8948 | [YTD July!C43] 8742.7999999999993 | [YTD July!D43] 205.2 | [YTD July!E43] 2.2999999999999998 | [YTD July!F43] 1268.5999999999999 | [YTD July!H43] 1136.8 | [YTD July!I43] 131.9 | [YTD July!J43] 10.4 | [YTD July!K43] 10216.700000000001 | [YTD July!M43] 9879.6 | [YTD July!N43] 337 | [YTD July!O43] 3.3
+[p001_b0103] Row 45: [YTD July!A45] Depreciation | [YTD July!B45] 1993.3 | [YTD July!C45] 2024.3 | [YTD July!D45] -31 | [YTD July!E45] 1.6 | [YTD July!F45] 0 | [YTD July!H45] 0 | [YTD July!I45] 0 | [YTD July!J45] N/A | [YTD July!K45] 1993.3 | [YTD July!M45] 2024.3 | [YTD July!N45] -31 | [YTD July!O45] 1.6
+[p001_b0104] Row 46: [YTD July!A46] GASB 68 Pension Expense Adjustment | [YTD July!B46] 22.1 | [YTD July!C46] 0 | [YTD July!D46] 22.1 | [YTD July!E46] 100 | [YTD July!F46] 0 | [YTD July!H46] 0 | [YTD July!I46] 0 | [YTD July!J46] N/A | [YTD July!K46] 22.1 | [YTD July!M46] 0 | [YTD July!N46] 22.1 | [YTD July!O46] 100
+[p001_b0105] Row 47: [YTD July!A47] GASB 75 OPEB Expense Adjustment | [YTD July!B47] 21.6 | [YTD July!C47] 0 | [YTD July!D47] 21.6 | [YTD July!E47] 100 | [YTD July!F47] 0 | [YTD July!H47] 0 | [YTD July!I47] 0 | [YTD July!J47] N/A | [YTD July!K47] 21.6 | [YTD July!M47] 0 | [YTD July!N47] 21.6 | [YTD July!O47] 100
+[p001_b0106] Row 48: [YTD July!A48] GASB 87 Lease Adjustment | [YTD July!B48] 6.4 | [YTD July!C48] 13.8 | [YTD July!D48] -7.4 | [YTD July!E48] <(100.0) | [YTD July!F48] 0 | [YTD July!H48] 0 | [YTD July!I48] 0 | [YTD July!J48] N/A | [YTD July!K48] 6.4 | [YTD July!M48] 13.8 | [YTD July!N48] -7.4 | [YTD July!O48] <(100.0)
+[p001_b0107] Row 49: [YTD July!A49] Environmental Remediation | [YTD July!B49] 5.7 | [YTD July!C49] 6.4 | [YTD July!D49] -0.7 | [YTD July!E49] 11.7 | [YTD July!F49] 0 | [YTD July!H49] 0 | [YTD July!I49] 0 | [YTD July!J49] N/A | [YTD July!K49] 5.7 | [YTD July!M49] 6.4 | [YTD July!N49] -0.7 | [YTD July!O49] 11.7
+[p001_b0108] Row 51: [YTD July!A51] Total Expenses After Non-Cash Liability Adjs. | [YTD July!B51] 10997.1 | [YTD July!C51] 10787.3 | [YTD July!D51] 209.7 | [YTD July!E51] 1.9 | [YTD July!F51] 1268.5999999999999 | [YTD July!H51] 1136.8 | [YTD July!I51] 131.9 | [YTD July!J51] 10.4 | [YTD July!K51] 12265.7 | [YTD July!M51] 11924.1 | [YTD July!N51] 341.6 | [YTD July!O51] 2.8
+[p001_b0109] Row 53: [YTD July!A53] Less: B&T Depreciation & GASB Adjustments | [YTD July!B53] $116.4 | [YTD July!C53] $123.3 | [YTD July!D53] ($6.9) | [YTD July!E53] (5.9) | [YTD July!F53] 60 | [YTD July!H53] $0.0 | [YTD July!I53] $0.0 | [YTD July!J53] 0.0 | [YTD July!K53] 87 | [YTD July!M53] $123.3 | [YTD July!N53] ($6.9) | [YTD July!O53] (5.9)
+[p001_b0110] Row 55: [YTD July!A55] Adjusted Total Expenses | [YTD July!B55] $10,880.6 | [YTD July!C55] $10,664.0 | [YTD July!D55] $216.6 | [YTD July!E55] 2.0 | [YTD July!F55] 95 | [YTD July!H55] $1,136.8 | [YTD July!I55] $131.9 | [YTD July!J55] 10.4 | [YTD July!K55] 99 | [YTD July!M55] $11,800.8 | [YTD July!N55] $348.5 | [YTD July!O55] 2.9
+[p001_b0111] Row 57: [YTD July!A57] Net Surplus/(Deficit) | [YTD July!B57] ($6,431.2) | [YTD July!C57] ($6,197.3) | [YTD July!D57] $233.9 | [YTD July!E57] 3.6 | [YTD July!F57] 60 | [YTD July!H57] $1.4 | [YTD July!I57] $1.4 | [YTD July!J57] 1,100,000.9 | [YTD July!K57] 103 | [YTD July!M57] ($6,195.9) | [YTD July!N57] $235.3 | [YTD July!O57] 3.7
+[p001_b0112] Row 59: [YTD July!A59] Total Subsidies | [YTD July!B59] 3923 | [YTD July!C59] 3910.6 | [YTD July!D59] -12.4 | [YTD July!E59] 0.3 | [YTD July!F59] 0 | [YTD July!H59] 0 | [YTD July!I59] 0 | [YTD July!J59] N/A | [YTD July!K59] 3923 | [YTD July!M59] 3910.6 | [YTD July!N59] -12.4 | [YTD July!O59] 0.3
+[p001_b0113] Row 60: [YTD July!A60] Debt Service | [YTD July!B60] 1623.1 | [YTD July!C60] 1602.5 | [YTD July!D60] 20.5 | [YTD July!E60] 1.3 | [YTD July!F60] 0 | [YTD July!H60] 0 | [YTD July!I60] 0 | [YTD July!J60] N/A | [YTD July!K60] 1623.1 | [YTD July!M60] 1602.5 | [YTD July!N60] 20.5 | [YTD July!O60] 1.3
+### [p001_b0114] Row 62: [YTD July!A62] Notes: Totals may not add due to rounding
+[p001_b0115] Row 63: [YTD July!A63] Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current months' actuals do not include post-close adjustments, which will be captured in the YTD results.

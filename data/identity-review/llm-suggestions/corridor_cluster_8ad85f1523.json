@@ -1,0 +1,30 @@
+{
+  "review_run_id": "2026-06-23T14-42-00-000Z_manual-identity-review",
+  "reviewed_at": "2026-06-23T14:42:00.000Z",
+  "packet_path": "data/identity-review/packets/corridor_cluster_8ad85f1523.md",
+  "cluster_id": "corridor_cluster_8ad85f1523",
+  "kind": "corridor",
+  "profile_name": "manual",
+  "provider": "manual",
+  "model": "manual",
+  "attempt": 1,
+  "max_attempts": 1,
+  "suggestion": {
+    "cluster_id": "corridor_cluster_8ad85f1523",
+    "kind": "corridor",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "corridor_webster-ave-bronx",
+          "corridor_webster-avenue-sbs"
+        ],
+        "reason": "Do not merge: the records share a street/corridor label but have different or only partially overlapping limits. Corridor identity requires matching limits/scope."
+      }
+    ],
+    "weak_aliases": [],
+    "ambiguous": []
+  },
+  "transcript_dir": "manual",
+  "session_path": "manual"
+}

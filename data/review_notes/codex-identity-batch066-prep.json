@@ -1,0 +1,389 @@
+{
+  "note_id": "codex-canonical-cleanup-2026-06-22-identity-alias-batch-066-prep",
+  "created_at": "2026-06-22T22:27:10Z",
+  "status": "ready_for_conductor_apply",
+  "lane": "identity_prep_only",
+  "batch": "identity-batch066",
+  "scope": {
+    "allowed_write": "data/review_notes/codex-identity-batch066-prep.json",
+    "durable_inputs_mutated": false,
+    "generated_outputs_mutated": false,
+    "db_mutated": false,
+    "provider_backed_commands_run": false,
+    "forbidden_commands_run": []
+  },
+  "context": {
+    "source_backlog": "unresolved duplicate_global_identity canonical backlog after current overrides and prior prep through identity065",
+    "candidate_mining_summary": {
+      "current_entity_records_scanned_from_jsonl": 2588,
+      "current_alias_overrides_considered": 419,
+      "db_identity_alias_rows_considered": 379,
+      "prior_prep_alias_entries_considered_through_batch065": 160,
+      "prior_prep_target_entries_considered_through_batch065": 160,
+      "prior_prep_unique_records_excluded_through_batch065": 268,
+      "identity_key_groups_scanned": 14443,
+      "candidate_pairs_after_alias_do_not_merge_and_prior_prep_filters": 688,
+      "selected_high_confidence_candidates": 10
+    },
+    "selection_policy": [
+      "Prefer full named-person aliases with shared deterministic identity keys, matching or compatible role text, and source evidence on both sides.",
+      "Exclude any alias or target record that appeared as either alias or target in prior identity prep artifacts through batch065.",
+      "Exclude broad agencies, programs, committees, member-list records, aliases already mapped in merges.json/current identity_aliases, target records that are alias-mapped, do-not-merge suppressed pairs, and visibly contaminated identity pairs."
+    ]
+  },
+  "intended_mutation": {
+    "aliases": {
+      "entity": {
+        "entity_meeting-doc-138396-quemuel-arroyo": "entity_meeting-doc-95161-quemuel-arroyo",
+        "entity_meeting-doc-197046-jason-forrest": "entity_meeting-doc-199126-jason-forrest",
+        "entity_meeting-doc-160311-jeffrey-weston": "entity_meeting155126-jeffrey-weston",
+        "entity_jon-kaufman": "entity_meeting-doc-121091-jon-kaufman",
+        "entity_meeting-doc-124256-kim-trevisan": "entity_meeting-doc-127531-kim-trevisan",
+        "entity_lamond-kearsse-cco": "entity_lamond-kearsse-corp-compliance",
+        "entity_meeting-doc-95156-louis-montanti": "entity_meeting91591-louis-montanti",
+        "entity_mark-young-lirr-vp-finance-39691": "entity_meeting-doc-29961-mark-young",
+        "entity_meeting-doc-199121-miriam-harris": "entity_miriam-harris-dec2025",
+        "entity_sarah-wyss-2025": "entity_meeting-doc-186641-sarah-wyss"
+      }
+    }
+  },
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "canonical_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "targets_not_alias_mapped_in_merges_json": true,
+    "targets_not_alias_mapped_in_identity_aliases_table": true,
+    "no_overlap_with_prior_prep_through_batch065": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 20,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 20,
+    "source_page_blocks_missing": [],
+    "all_pass": true
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-138396-quemuel-arroyo",
+      "target": "entity_meeting-doc-95161-quemuel-arroyo",
+      "validator_duplicate_key": "entity_quemuel-arroyo",
+      "reason": "Both records identify Quemuel Arroyo as Chief Accessibility Officer, MTA, with exact person and role-specific identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_138396#p001_c0011",
+        "meeting_doc_95161#p001_c0006"
+      ],
+      "shared_identity_keys": [
+        "entity_quemuel-arroyo",
+        "entity_quemuel-arroyo-chief-accessibility-officer-mta"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch065": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-197046-jason-forrest",
+      "target": "entity_meeting-doc-199126-jason-forrest",
+      "validator_duplicate_key": "entity_jason-forrest",
+      "reason": "Both records identify Jason Forrest as the same named person; exact person identity key overlap and source evidence on both sides make this a high-confidence alias.",
+      "evidence_refs": [
+        "meeting_doc_197046#p002_c0002",
+        "meeting_doc_199126#p002_c0002"
+      ],
+      "shared_identity_keys": [
+        "entity_jason-forrest"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch065": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-160311-jeffrey-weston",
+      "target": "entity_meeting155126-jeffrey-weston",
+      "validator_duplicate_key": "entity_jeffrey-weston",
+      "reason": "Both records identify Jeffrey Weston as Chief Mechanical Officer in MNR Maintenance of Equipment context, with exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_160311#p006_c0004",
+        "meeting_doc_155126#p006_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_jeffrey-weston"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch065": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_jon-kaufman",
+      "target": "entity_meeting-doc-121091-jon-kaufman",
+      "validator_duplicate_key": "entity_jon-kaufman",
+      "reason": "Both records identify Jon Kaufman as MTA Chief of Strategic Initiatives; exact person identity key and compatible role text overlap.",
+      "evidence_refs": [
+        "open_data_plan_2023_update#p002_c0003",
+        "meeting_doc_121091#p012_c0005"
+      ],
+      "shared_identity_keys": [
+        "entity_jon-kaufman"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch065": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-124256-kim-trevisan",
+      "target": "entity_meeting-doc-127531-kim-trevisan",
+      "validator_duplicate_key": "entity_kim-trevisan",
+      "reason": "Both records identify Kim Trevisan in project/transaction manager context, with exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_124256#p001_c0003",
+        "meeting_doc_127531#p001_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_kim-trevisan"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch065": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_lamond-kearsse-cco",
+      "target": "entity_lamond-kearsse-corp-compliance",
+      "validator_duplicate_key": "entity_lamond-w-kearsse",
+      "reason": "Both records identify Lamond W. Kearsse in MTA corporate compliance/chief compliance officer context, with exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_100286#p003_c0009",
+        "meeting_doc_64096#p069_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_lamond-w-kearsse"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch065": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-95156-louis-montanti",
+      "target": "entity_meeting91591-louis-montanti",
+      "validator_duplicate_key": "entity_louis-montanti",
+      "reason": "Both records identify Louis Montanti as MTA Deputy Chief Procurement Officer in procurement operations context, with exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_95156#p002_c0003",
+        "meeting_doc_91591#p002_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_louis-montanti"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch065": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_mark-young-lirr-vp-finance-39691",
+      "target": "entity_meeting-doc-29961-mark-young",
+      "validator_duplicate_key": "entity_mark-young",
+      "reason": "Both records identify Mark Young in LIRR management/finance leadership context, with exact person identity key overlap and compatible finance titles.",
+      "evidence_refs": [
+        "meeting_doc_39691#p105_c0008",
+        "meeting_doc_29961#p162_c0008"
+      ],
+      "shared_identity_keys": [
+        "entity_mark-young"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch065": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-199121-miriam-harris",
+      "target": "entity_miriam-harris-dec2025",
+      "validator_duplicate_key": "entity_miriam-harris",
+      "reason": "Both records identify Miriam Harris in transit-oriented development context, with exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_199121#p003_c0004",
+        "meeting_doc_197006#p004_c0008"
+      ],
+      "shared_identity_keys": [
+        "entity_miriam-harris"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch065": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_sarah-wyss-2025",
+      "target": "entity_meeting-doc-186641-sarah-wyss",
+      "validator_duplicate_key": "entity_sarah-wyss",
+      "reason": "Both records identify Sarah Wyss as Acting Chief, Operations Planning, NYCT, with exact person and role-specific identity key overlap.",
+      "evidence_refs": [
+        "q70_fare_free_service_increases_2025#p001_c0003",
+        "meeting_doc_186641#p001_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_sarah-wyss",
+        "entity_sarah-wyss-acting-chief-operations-planning-nyct"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch065": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    }
+  ],
+  "deferred_low_confidence_examples": [
+    {
+      "candidate": "P. Dietlin and other initial-only person records",
+      "reason": "Deferred because initial-only labels are more target-churn prone than full named-person role matches."
+    },
+    {
+      "candidate": "Dutchess County and other place/government geography records",
+      "reason": "Deferred to keep this batch focused on named-person identities."
+    },
+    {
+      "candidate": "Shanifah Riera / Sofia Hubscher candidate",
+      "reason": "Deferred because the candidate payload showed conflicting person names despite a shared generated identity key."
+    }
+  ],
+  "commands_used_for_evidence": [
+    {
+      "command": "test ! -e data/review_notes/codex-identity-batch066-prep.json && echo missing || echo exists",
+      "purpose": "Confirmed the batch066 prep artifact did not already exist before writing.",
+      "result": "missing"
+    },
+    {
+      "command": "jq '.intended_mutation.aliases.entity, .aggregate_guard_results' data/review_notes/codex-identity-batch065-prep.json",
+      "purpose": "Read prior batch065 aliases and guard result to preserve disjointness.",
+      "result": "batch065 contained 10 aliases with all aggregate guards passing."
+    },
+    {
+      "command": "bun --eval '<read-only duplicate_global_identity mining over data/canonical/entities.jsonl, identityKeysForRecord(), current merges.json, read-only identity_aliases, prior prep aliases and targets through batch065, and do-not-merge guards>'",
+      "purpose": "Mined unresolved duplicate_global_identity candidates while excluding already mapped aliases, alias-mapped targets, current identity_aliases, prior prep records, and do-not-merge pairs.",
+      "result": "2588 current entity records scanned; 688 candidate pairs after alias/do-not-merge/prior-prep filters; 10 high-confidence candidates selected."
+    },
+    {
+      "command": "bun --eval '<read-only final guard script for canonical record presence, alias/target guard checks, prior prep disjointness, shared identity keys, raw source blocks, and source-page blocks>'",
+      "purpose": "Verified selected aliases and evidence before writing this prep artifact.",
+      "result": "all_pass true; 20 raw source blocks checked, 20 source-page blocks checked, no missing evidence blocks."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "purpose": "Stamped this prep artifact.",
+      "result": "2026-06-22T22:27:10Z"
+    }
+  ],
+  "commands_intentionally_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "export-jsonl",
+    "DB repair or publish commands",
+    "provider-backed post-ingest commands",
+    "identity-review-run or apply commands"
+  ]
+}

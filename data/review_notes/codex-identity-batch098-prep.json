@@ -1,0 +1,251 @@
+{
+  "batch_id": "codex-identity-batch098",
+  "created_at": "2026-06-23T03:58:46Z",
+  "prepared_count": 8,
+  "all_pass": true,
+  "expected_delta": {
+    "duplicate_global_identity": -8
+  },
+  "scope": {
+    "record_kind": "project",
+    "global_only": true,
+    "notes": "Prepared only high-confidence duplicate project records. Excluded entity, corridor, route, and treatment_component records."
+  },
+  "proposed_aliases": [
+    {
+      "kind": "project",
+      "alias_id": "project_b46-sbs-2015-04-28-cb9",
+      "target_id": "project_b46-sbs-utica-ave-2015-09-10",
+      "reason": "Both records describe the same B46 Select Bus Service project on the Utica Avenue corridor. The alias is a CB9 presentation for the draft B46 SBS service plan and Utica Avenue street design; the target is the same B46 SBS Utica Avenue project in later implementation/outreach material.",
+      "evidence": [
+        {
+          "record_id": "project_b46-sbs-2015-04-28-cb9",
+          "source_id": "2015_04_28_brt_uticaave_cb9_presentation",
+          "block_id": "p002_c0002",
+          "page_number": 2,
+          "quote": "Present draft service plan for B46 SBS and B46 Local; Discuss Utica Avenue street design"
+        },
+        {
+          "record_id": "project_b46-sbs-utica-ave-2015-09-10",
+          "source_id": "2015_09_10_brt_uticaave_cb8_presentation",
+          "block_id": "p002_c0002",
+          "page_number": 2,
+          "quote": "The Utica Avenue B46 corridor was identified as a potential candidate for Select Bus Service"
+        }
+      ],
+      "validator_evidence": [
+        "record-kind-check: alias and target exist in records with record_kind=project",
+        "conflict-checks-clean: no existing merge alias, identity_aliases hit, do-not-merge pair, or prior prep alias through identity096"
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_b46-sbs-2015-05-11-cb3",
+      "target_id": "project_b46-sbs-utica-ave-2015-09-10",
+      "reason": "Both records describe the same B46 Select Bus Service project. The alias source title is B46 Select Bus Service and its supporting evidence identifies the Utica Avenue B46 corridor; the target carries the same project_name and Select Bus Service type for the Utica Avenue B46 corridor.",
+      "evidence": [
+        {
+          "record_id": "project_b46-sbs-2015-05-11-cb3",
+          "source_id": "2015_05_11_brt_uticaave_cb3_town_hall_presentation",
+          "block_id": "p001_c0001",
+          "page_number": 1,
+          "quote": "B46 Select Bus Service"
+        },
+        {
+          "record_id": "project_b46-sbs-utica-ave-2015-09-10",
+          "source_id": "2015_09_10_brt_uticaave_cb8_presentation",
+          "block_id": "p002_c0002",
+          "page_number": 2,
+          "quote": "The Utica Avenue B46 corridor was identified as a potential candidate for Select Bus Service"
+        }
+      ],
+      "validator_evidence": [
+        "record-kind-check: alias and target exist in records with record_kind=project",
+        "conflict-checks-clean: no existing merge alias, identity_aliases hit, do-not-merge pair, or prior prep alias through identity096"
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_b46-sbs-utica-avenue-2015",
+      "target_id": "project_b46-sbs-utica-ave-2015-09-10",
+      "reason": "Both records are B46 Select Bus Service on Utica Avenue. The alias is a CB18 presentation for the same project, draft service plan, and Utica Avenue street design; the target is the same B46 SBS Utica Avenue project with implementation/outreach evidence.",
+      "evidence": [
+        {
+          "record_id": "project_b46-sbs-utica-avenue-2015",
+          "source_id": "2015_04_15_brt_uticaave_cb18_presentation",
+          "block_id": "p002_c0002",
+          "page_number": 2,
+          "quote": "Present draft service plan for B46 SBS and B46 local; Present draft street design changes in CB 18"
+        },
+        {
+          "record_id": "project_b46-sbs-utica-ave-2015-09-10",
+          "source_id": "2015_09_10_brt_uticaave_cb8_presentation",
+          "block_id": "p002_c0002",
+          "page_number": 2,
+          "quote": "The Utica Avenue B46 corridor was identified as a potential candidate for Select Bus Service"
+        }
+      ],
+      "validator_evidence": [
+        "record-kind-check: alias and target exist in records with record_kind=project",
+        "conflict-checks-clean: no existing merge alias, identity_aliases hit, do-not-merge pair, or prior prep alias through identity096"
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_b46-utica-ave-sbs-2015",
+      "target_id": "project_b46-sbs-utica-ave-2015-09-10",
+      "reason": "Both records describe B46 SBS on the Utica Avenue corridor. The alias and target share the same project_name, Select Bus Service project type, and source evidence naming the Utica Avenue B46 corridor as the SBS candidate corridor.",
+      "evidence": [
+        {
+          "record_id": "project_b46-utica-ave-sbs-2015",
+          "source_id": "2015_04_15_brt_uticaave_cb17_presentation",
+          "block_id": "p003_c0002",
+          "page_number": 3,
+          "quote": "The Utica Avenue B46 corridor was identified as a potential candidate for Select Bus Service"
+        },
+        {
+          "record_id": "project_b46-sbs-utica-ave-2015-09-10",
+          "source_id": "2015_09_10_brt_uticaave_cb8_presentation",
+          "block_id": "p002_c0002",
+          "page_number": 2,
+          "quote": "The Utica Avenue B46 corridor was identified as a potential candidate for Select Bus Service"
+        }
+      ],
+      "validator_evidence": [
+        "record-kind-check: alias and target exist in records with record_kind=project",
+        "conflict-checks-clean: no existing merge alias, identity_aliases hit, do-not-merge pair, or prior prep alias through identity096"
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_bx6-sbs-cb3-feb2017",
+      "target_id": "project_bx6-south-bronx-crosstown-sbs",
+      "reason": "Both records identify the same Bx6 South Bronx Crosstown Select Bus Service project. The alias is a CB3 February 2017 presentation and the target is the broader Bx6 South Bronx Crosstown SBS project record with the same title and Select Bus Service type.",
+      "evidence": [
+        {
+          "record_id": "project_bx6-sbs-cb3-feb2017",
+          "source_id": "brt_bx6_cb3_feb2017",
+          "block_id": "p001_c0001",
+          "page_number": 1,
+          "quote": "Bx6 South Bronx Crosstown Select Bus Service"
+        },
+        {
+          "record_id": "project_bx6-south-bronx-crosstown-sbs",
+          "source_id": "2015_11_20_brt_south_bronx_crosstown_kickoff",
+          "block_id": "p001_c0001",
+          "page_number": 1,
+          "quote": "Bx6 South Bronx Crosstown Select Bus Service"
+        }
+      ],
+      "validator_evidence": [
+        "record-kind-check: alias and target exist in records with record_kind=project",
+        "conflict-checks-clean: no existing merge alias, identity_aliases hit, do-not-merge pair, or prior prep alias through identity096"
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_bx6-sbs-river-terrace-2016",
+      "target_id": "project_bx6-south-bronx-crosstown-sbs",
+      "reason": "Both records identify the same Bx6 South Bronx Crosstown Select Bus Service project. The alias is an outreach/audience-specific 2016 record, while the target is the same global project with the identical title and project type.",
+      "evidence": [
+        {
+          "record_id": "project_bx6-sbs-river-terrace-2016",
+          "source_id": "ace_able_pdf_brt_bx6_river_terrace_houses_sept2016",
+          "block_id": "p001_c0001",
+          "page_number": 1,
+          "quote": "Bx6 South Bronx Crosstown Select Bus Service"
+        },
+        {
+          "record_id": "project_bx6-south-bronx-crosstown-sbs",
+          "source_id": "2015_11_20_brt_south_bronx_crosstown_kickoff",
+          "block_id": "p001_c0001",
+          "page_number": 1,
+          "quote": "Bx6 South Bronx Crosstown Select Bus Service"
+        }
+      ],
+      "validator_evidence": [
+        "record-kind-check: alias and target exist in records with record_kind=project",
+        "conflict-checks-clean: no existing merge alias, identity_aliases hit, do-not-merge pair, or prior prep alias through identity096"
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_bx6-sbs-south-bronx-may2016",
+      "target_id": "project_bx6-south-bronx-crosstown-sbs",
+      "reason": "Both records identify the same Bx6 South Bronx Crosstown Select Bus Service project. The alias is a May 2016 community-board presentation; the target is the same Bx6 South Bronx Crosstown SBS project record, not a different phase or route variant.",
+      "evidence": [
+        {
+          "record_id": "project_bx6-sbs-south-bronx-may2016",
+          "source_id": "brt_bx6_south_bronx_cb2_may2016",
+          "block_id": "p001_c0001",
+          "page_number": 1,
+          "quote": "Bx6 South Bronx Crosstown Select Bus Service"
+        },
+        {
+          "record_id": "project_bx6-south-bronx-crosstown-sbs",
+          "source_id": "2015_11_20_brt_south_bronx_crosstown_kickoff",
+          "block_id": "p001_c0001",
+          "page_number": 1,
+          "quote": "Bx6 South Bronx Crosstown Select Bus Service"
+        }
+      ],
+      "validator_evidence": [
+        "record-kind-check: alias and target exist in records with record_kind=project",
+        "conflict-checks-clean: no existing merge alias, identity_aliases hit, do-not-merge pair, or prior prep alias through identity096"
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_eastern-pkwy-transit-priority-b14-cb8-apr2025",
+      "target_id": "project_eastern-pkwy-transit-priority-b14-apr2025",
+      "reason": "Both records describe the same Eastern Parkway transit-priority proposal for B14 from Schenectady Avenue to Ralph Avenue. The alias is a CB8 April 2025 audience-specific record; the target is the same proposal and corridor scope from the CB9 April 2025 source.",
+      "evidence": [
+        {
+          "record_id": "project_eastern-pkwy-transit-priority-b14-cb8-apr2025",
+          "source_id": "eastern_pkwy_schenectady_ave_ralph_ave_cb8_apr2025",
+          "block_id": "p001_c0001",
+          "page_number": 1,
+          "quote": "Eastern Parkway - Transit Priority Proposal B14 from Schenectady Avenue to Ralph Avenue"
+        },
+        {
+          "record_id": "project_eastern-pkwy-transit-priority-b14-apr2025",
+          "source_id": "eastern_pkwy_schenectady_ave_ralph_ave_cb9_apr2025",
+          "block_id": "p001_c0001",
+          "page_number": 1,
+          "quote": "Eastern Parkway - Transit Priority Proposal B14 from Schenectady Avenue to Ralph Avenue"
+        }
+      ],
+      "validator_evidence": [
+        "record-kind-check: alias and target exist in records with record_kind=project",
+        "conflict-checks-clean: no existing merge alias, identity_aliases hit, do-not-merge pair, or prior prep alias through identity096"
+      ]
+    }
+  ],
+  "guard_summary": {
+    "record_existence_and_kind": {
+      "command": "sqlite3 -header -csv data/canonical.db \"with selected(record_id) as (...) select count(*) as selected_records, sum(case when r.record_kind='project' then 1 else 0 end) as project_records from selected s left join records r using(record_id); select r.record_id, r.record_kind from records r where r.record_id in (...) order by r.record_id;\"",
+      "result": "selected_records=11, project_records=11; every selected alias and target returned record_kind=project."
+    },
+    "existing_alias_conflicts": {
+      "merges_json_command": "jq -r '.aliases.project as $p | [selected_alias_ids][] | select($p[.] != null)' data/identity-overrides/merges.json",
+      "merges_json_result": "no rows",
+      "identity_aliases_command": "sqlite3 -header -csv data/canonical.db \"select * from identity_aliases where kind='project' and alias in (selected_alias_ids);\"",
+      "identity_aliases_result": "no rows"
+    },
+    "do_not_merge_conflicts": {
+      "db_command": "sqlite3 -header -csv data/canonical.db \"with pairs(alias,target) as (...) select d.* from do_not_merge d join pairs p on d.kind='project' and ((d.record_id_a=p.alias and d.record_id_b=p.target) or (d.record_id_a=p.target and d.record_id_b=p.alias));\"",
+      "db_result": "no rows",
+      "json_command": "jq -r --argjson pairs '[selected_pairs]' '.pairs.project[]? as $d | $d.record_ids as $ids | select(any($pairs[]; ...))' data/identity-overrides/do-not-merge.json",
+      "json_result": "no rows"
+    },
+    "prior_prep_conflicts": {
+      "command": "jq -r '.proposed_aliases[]? | select(.kind==\"project\" and (.alias_id as $id | [selected_alias_ids] | index($id))) | input_filename + \":\" + .alias_id' data/review_notes/codex-identity-batch0[4-9][0-9]-prep.json",
+      "result": "no rows; no selected alias_id appeared in prior codex identity prep artifacts through identity096."
+    },
+    "source_evidence_command": "sqlite3 -header -csv data/canonical.db \"select e.record_id, e.source_id, e.block_id, e.page_number, replace(substr(b.raw_text,1,180), char(10), ' ') as quote from evidence_refs e left join blocks_fts b on b.source_id=e.source_id and b.block_id=e.block_id where e.record_id in (...) and e.ordinal=0 order by e.record_id;\"",
+    "forbidden_command_compliance": {
+      "result": "pass",
+      "evidence": "No provider-backed or forbidden project commands were run. Inspection used local deterministic commands only: pwd, rg, git status, ls, sed, head, jq, sqlite3, date, test, shell loops, and apply_patch for this artifact."
+    }
+  }
+}

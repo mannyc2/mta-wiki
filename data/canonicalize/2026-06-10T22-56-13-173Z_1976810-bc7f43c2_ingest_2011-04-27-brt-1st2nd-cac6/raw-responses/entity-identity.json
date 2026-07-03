@@ -1,0 +1,54 @@
+{
+  "run_id": "2026-06-10T22-56-13-173Z_1976810-bc7f43c2_ingest_2011-04-27-brt-1st2nd-cac6",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T01:09:54.006Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "d_nyc_dot_2011_new",
+        "local_observation_id": "entity_nyc_dot_2011_04_27",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_nyc-dot is the canonical registry record for the New York City Department of Transportation (entity_name matches, entity_type matches as 'agency'). The do_not_merge_pairs confirm this record is distinct from commissioner/person records like entity_commissioner-polly-trottenberg-tsp-2017 and entity_nycdot-commissioner-mike-flynn. Observation already resolves to its correct canonical record; no different target record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p001_c0003",
+            "source_quote": "The logo for the New York City Department of Transportation (NYC DOT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_mta_nyct_2011_new",
+        "local_observation_id": "entity_mta_nyct_2011_04_27",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_mta-nyct is the canonical registry record for MTA New York City Transit (entity_name matches, entity_type matches as 'agency'). The do_not_merge_pairs confirm entity_mta-nyct is distinct from the parent MTA authority (entity_mta-entity-update-2025, entity_mta-2019) and from person records. Observation already resolves to its correct canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p002_c0001",
+            "source_quote": "MTA New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_nypd_2011_new",
+        "local_observation_id": "entity_nypd_2011_04_27",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_nypd is the canonical registry record for the New York City Police Department (entity_name matches, entity_type matches as 'government agency'). The canonical record's aliases already include entity_nypd-2011-04-27 showing this observation source is already known. Observation already resolves to its correct canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p009_c0005",
+            "source_quote": "Summons issued by NYPD"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-08-44-833Z_2111393-86278c97_canonicalize_2026-06-10t22-56-13-173z-1976810-bc7f43c2-ingest-2011-04-27-brt-1st2nd-cac6-entity-identity"
+}

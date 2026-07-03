@@ -1,0 +1,106 @@
+{
+  "note_id": "codex-perf-test-followup-2026-06-22",
+  "created_at": "2026-06-22T21:25:00Z",
+  "author": "codex",
+  "scope": "perf/tests lane follow-up only; no generated data edits and no materialize, validate, export-jsonl, DB repair/publish, or provider-backed commands",
+  "kind": "focused_test_coverage_review",
+  "decision": {
+    "type": "review_note_only",
+    "summary": "No additional patch is recommended. The recent materialize perf optimization and relation validator widening already have focused tests that cover the risky behavior directly.",
+    "confidence": "high"
+  },
+  "inspected_changes": {
+    "materialize_perf_patch": [
+      "materializableEntries now precomputes source-scoped local_observation_id sets instead of rebuilding a same-source Set for every accepted entry.",
+      "entriesToRecords now updates repeated local-id buckets in place instead of reconstructing Sets, and builds localIdsByRecord for canonical-id relation endpoint backfill.",
+      "MTA_MATERIALIZE_TIMING instrumentation was added around materialize phases but remains opt-in."
+    ],
+    "relation_validator_patch": [
+      "has_metric now accepts claim -> metric_claim as well as event -> metric_claim.",
+      "The expected-shape error message for has_metric now includes claim in the subject-kind list.",
+      "Nearby already-landed relation rule widenings for source/event timeline and event claim carriers are covered in the same focused relation helper test."
+    ]
+  },
+  "targeted_checks_already_sufficient": [
+    {
+      "file": "packages/pipeline/test/materialize/materialize.test.ts",
+      "test": "does not materialize relations whose local endpoints exist only in another source",
+      "coverage": "Guards the correctness side of the materializableEntries optimization: source-scoped endpoint presence must not be replaced by a global local_observation_id set."
+    },
+    {
+      "file": "packages/pipeline/test/materialize/materialize.test.ts",
+      "test": "keeps same-source relation endpoint filtering bounded for large accepted batches",
+      "coverage": "Exercises 6,000 accepted relation submissions with missing endpoints and asserts entriesToRecords finishes under the focused threshold while filtering all invalid relations."
+    },
+    {
+      "file": "packages/pipeline/test/materialize/materialize.test.ts",
+      "test": "indexes repeated local observation ids without quadratic duplicate-set churn",
+      "coverage": "Monkey-patches Set iteration to catch repeated local-id bucket reconstruction and verifies the repeated-local path stays bounded."
+    },
+    {
+      "file": "packages/pipeline/test/materialize/materialize.test.ts",
+      "test": "backfills relation local endpoint ids when canonical record ids are supplied directly",
+      "coverage": "Covers the new localIdsByRecord backfill path for canonical-id relation endpoints."
+    },
+    {
+      "file": "packages/pipeline/test/materialize/materialize.test.ts",
+      "test": "prefers same-source local endpoint ids when backfilling merged canonical relation targets",
+      "coverage": "Covers the source-preference branch in localIdsByRecord so merged canonical targets use same-source local ids when available."
+    },
+    {
+      "file": "packages/pipeline/test/records/relations.test.ts",
+      "test": "accepts expected endpoint shapes and reports unexpected known shapes",
+      "coverage": "Directly asserts relationEndpointShapeIssue(\"has_metric\", \"claim\", \"metric_claim\") is accepted and that the has_metric expected-subject message includes claim."
+    }
+  ],
+  "commands_run": [
+    {
+      "command": "git status --short -- packages/pipeline/src/materialize/materialize.ts packages/pipeline/test/materialize/materialize.test.ts packages/pipeline/src/records/relations.ts packages/pipeline/test/records/relations.test.ts data/review_notes",
+      "outcome": "Confirmed the relevant source/test files were already modified in the shared worktree and review_notes contained untracked artifacts."
+    },
+    {
+      "command": "rg -n \"materializableEntries|entriesToRecords|source-local|sourceLocal|local_observation|has_metric|relationEndpointShapeIssue\\(\\\"has_metric\\\"\" packages/pipeline/src packages/pipeline/test -S",
+      "outcome": "Located the materialize optimization, relation endpoint rule, and focused test coverage."
+    },
+    {
+      "command": "sed -n '1,340p' packages/pipeline/src/materialize/materialize.ts; sed -n '340,740p' packages/pipeline/test/materialize/materialize.test.ts",
+      "outcome": "Reviewed the optimization implementation and materialize tests for same-source endpoint filtering, bounded batch behavior, repeated local-id indexing, and canonical-id endpoint backfill."
+    },
+    {
+      "command": "sed -n '1,120p' packages/pipeline/test/records/relations.test.ts && sed -n '230,250p' packages/pipeline/src/records/relations.ts",
+      "outcome": "Verified has_metric claim -> metric_claim is in the endpoint-shape table and the focused relation helper test asserts acceptance plus the updated expected-shape message."
+    },
+    {
+      "command": "git diff -- packages/pipeline/src/materialize/materialize.ts packages/pipeline/test/materialize/materialize.test.ts packages/pipeline/src/records/relations.ts packages/pipeline/test/records/relations.test.ts",
+      "outcome": "Reviewed the current focused diff; no obvious missing test gap remained."
+    },
+    {
+      "command": "bun test packages/pipeline/test/materialize/materialize.test.ts packages/pipeline/test/records/relations.test.ts",
+      "outcome": "Passed: 25 tests, 0 failures, 724 expect() calls."
+    },
+    {
+      "command": "bun run --cwd packages/pipeline typecheck",
+      "outcome": "Passed: tsc -p tsconfig.json --noEmit."
+    },
+    {
+      "command": "jq empty data/review_notes/codex-perf-test-followup-2026-06-22.json && jq '{decision_type: .decision.type, focused_check_count: (.targeted_checks_already_sufficient | length), final_commands: .commands_run[-2:]}' data/review_notes/codex-perf-test-followup-2026-06-22.json",
+      "outcome": "Post-write JSON parse passed; summary reported decision_type review_note_only and six focused checks."
+    },
+    {
+      "command": "git status --short -- data/review_notes/codex-perf-test-followup-2026-06-22.json",
+      "outcome": "Confirmed the review note is the only new file for this task."
+    }
+  ],
+  "commands_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts export-jsonl --verify",
+    "DB repair or publish commands",
+    "provider-backed ingest/post-ingest commands"
+  ],
+  "residual_risk": [
+    "The timing threshold in the 6,000-relation test is an environment-sensitive smoke guard, not a formal benchmark. It is useful for catching the previous quadratic behavior but should not be treated as a stable performance SLA.",
+    "The targeted tests exercise representative in-memory entriesToRecords paths; they do not replace a later serialized materialize/export/validate checkpoint in the generated-output lane.",
+    "The relation helper test proves the has_metric claim endpoint rule directly. It does not inspect live canonical backlog counts, which is intentionally outside this lane."
+  ]
+}

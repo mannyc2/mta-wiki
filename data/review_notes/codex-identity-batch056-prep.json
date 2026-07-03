@@ -1,0 +1,361 @@
+{
+  "note_id": "codex-canonical-cleanup-2026-06-22-identity-alias-batch-056-prep",
+  "created_at": "2026-06-22T21:15:18Z",
+  "author": "codex",
+  "status": "ready_for_conductor_apply",
+  "lane": "identity_prep_only",
+  "batch": "identity-batch056",
+  "scope": "Codex-only identity alias preparation after identity055; no generated output, validation CLI, materialization, export, DB repair, publish, or provider-backed commands run",
+  "context": {
+    "starting_point": "unresolved duplicate_global_identity backlog after current identity overrides, including identity055 aliases present in data/identity-overrides/merges.json",
+    "candidate_mining_summary": {
+      "current_entity_records_scanned": 2594,
+      "current_alias_overrides_considered": 319,
+      "db_identity_alias_rows_considered": 289,
+      "entity_duplicate_groups_after_alias_filter": 619,
+      "entity_duplicate_groups_after_alias_and_do_not_merge_filters": 616,
+      "selected_high_confidence_candidates": 10,
+      "selection_policy": "Exact person identities only for this batch; broad agencies, programs, committees, hierarchy records, target-churn chains, already-mapped aliases, and do-not-merge pairs were excluded."
+    },
+    "write_scope_used_for_this_task": [
+      "data/review_notes/codex-identity-batch056-prep.json"
+    ],
+    "paths_intentionally_not_edited": [
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json",
+      "data/submission-overrides/retired.json",
+      "data/canonical/",
+      "data/canonical.db",
+      "data/materialized/",
+      "data/submissions/",
+      "wiki/",
+      "LOG.md"
+    ]
+  },
+  "intended_mutation": {
+    "path": "data/identity-overrides/merges.json",
+    "operation": "add_aliases",
+    "aliases": {
+      "entity": {
+        "entity_demetrius-crichlow-lirr-erg": "entity_demetrius-crichlow",
+        "entity_meeting-doc-199481-crichlow": "entity_demetrius-crichlow",
+        "entity_meeting-doc-201516-demetrius-crichlow": "entity_demetrius-crichlow",
+        "entity_meeting-doc-205541-haeda-mihaltses": "entity_meeting-doc-102806-haeda-mihaltses",
+        "entity_meeting-doc-115396-nichola-angel": "entity_nichola-angel-115226",
+        "entity_nichola-angel-meeting-doc-121016": "entity_nichola-angel-115226",
+        "entity_meeting-doc-68196-eric-osnes": "entity_eric-osnes",
+        "entity_safety-officer-osnes-bt-jan2022": "entity_eric-osnes",
+        "entity_meeting-doc-131491-evan-eisland": "entity_evan-eisland-cgc",
+        "entity_meeting-doc-151646-lourdes-zapata": "entity_meeting-doc-128991-lourdes-zapata"
+      }
+    }
+  },
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "all_pass": true,
+    "canonical_records_present": true,
+    "target_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "targets_not_aliases_in_merges_json": true,
+    "targets_not_aliases_in_identity_aliases_table": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 20,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 20,
+    "source_page_blocks_missing": [],
+    "confidence": "high"
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_demetrius-crichlow-lirr-erg",
+      "target": "entity_demetrius-crichlow",
+      "validator_duplicate_key": "entity_demetrius-crichlow",
+      "reason": "Exact person identity for Demetrius Crichlow. The alias identifies Demetrius Crichlow as an Executive Sponsor of the Latinos & Friends Employee Resource Group, and the target is the richer multi-source Demetrius Crichlow NYCT leadership record.",
+      "evidence_refs": [
+        "meeting_doc_121136#p003_c0004",
+        "nyct_key_performance_metrics_doc194001#p004_c0003"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_demetrius-crichlow"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-199481-crichlow",
+      "target": "entity_demetrius-crichlow",
+      "validator_duplicate_key": "entity_demetrius-crichlow",
+      "reason": "Exact person identity for Demetrius Crichlow. The alias names Demetrius Crichlow as President of NYCT, matching the target's same person and New York City Transit president identity.",
+      "evidence_refs": [
+        "meeting_doc_199481#p003_c0010",
+        "nyct_key_performance_metrics_doc194001#p004_c0003"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_demetrius-crichlow",
+          "entity_demetrius-crichlow-president-nyct"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-201516-demetrius-crichlow",
+      "target": "entity_demetrius-crichlow",
+      "validator_duplicate_key": "entity_demetrius-crichlow",
+      "reason": "Exact person identity for Demetrius Crichlow. The alias identifies Demetrius Crichlow as President, New York City Transit, which is role chronology within the same person identity already represented by the target.",
+      "evidence_refs": [
+        "meeting_doc_201516#p006_c0007",
+        "nyct_key_performance_metrics_doc194001#p004_c0003"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_demetrius-crichlow"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-205541-haeda-mihaltses",
+      "target": "entity_meeting-doc-102806-haeda-mihaltses",
+      "validator_duplicate_key": "entity_haeda-mihaltses",
+      "reason": "Exact person identity for Haeda Mihaltses. The alias names Hon. Haeda Mihaltses as a committee member, and the target is the richer committee chair/member record for the same person.",
+      "evidence_refs": [
+        "meeting_doc_205541#p001_c0007",
+        "meeting_doc_105931#p001_c0004"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_haeda-mihaltses"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-115396-nichola-angel",
+      "target": "entity_nichola-angel-115226",
+      "validator_duplicate_key": "entity_nichola-angel",
+      "reason": "Exact person identity for Nichola Angel. The alias identifies Nichola Angel in ITS & Tolling leadership at MTA Bridges and Tunnels/TBTA, matching the target's same person and vice-president identity.",
+      "evidence_refs": [
+        "meeting_doc_115396#p015_c0006",
+        "meeting_doc_115226#p004_c0007"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_nichola-angel"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_nichola-angel-meeting-doc-121016",
+      "target": "entity_nichola-angel-115226",
+      "validator_duplicate_key": "entity_nichola-angel",
+      "reason": "Exact person identity for Nichola Angel. The alias names Nichola Angel as Vice President of Intelligent Transportation Systems for TBTA, matching the target's same person and title family.",
+      "evidence_refs": [
+        "meeting_doc_121016#p004_c0007",
+        "meeting_doc_115226#p004_c0007"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_nichola-angel",
+          "entity_nichola-angel-vice-president-of-intelligent-transportation-systems"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-68196-eric-osnes",
+      "target": "entity_eric-osnes",
+      "validator_duplicate_key": "entity_eric-osnes",
+      "reason": "Exact person identity for Eric Osnes. The alias identifies Eric Osnes as TBTA Vice President and Chief Safety Officer, and the target is the richer Eric Osnes Bridges and Tunnels safety-officer record.",
+      "evidence_refs": [
+        "meeting_doc_68196#p006_c0008",
+        "meeting_doc_102771#p004_c0007"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_eric-osnes"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_safety-officer-osnes-bt-jan2022",
+      "target": "entity_eric-osnes",
+      "validator_duplicate_key": "entity_eric-osnes",
+      "reason": "Exact person identity for Eric Osnes. The alias names Eric Osnes as MTA Bridges and Tunnels agency safety officer, matching the target's same person and chief-safety-officer identity.",
+      "evidence_refs": [
+        "meeting_doc_72581#p003_c0006",
+        "meeting_doc_102771#p004_c0007"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_eric-osnes"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-131491-evan-eisland",
+      "target": "entity_evan-eisland-cgc",
+      "validator_duplicate_key": "entity_evan-eisland",
+      "reason": "Exact person identity for Evan Eisland. The alias identifies Evan Eisland as MTA C&D Executive Vice President and General Counsel, matching the target's richer general counsel/secretary record for the same person.",
+      "evidence_refs": [
+        "meeting_doc_131491#p007_c0005",
+        "meeting_doc_128986#p003_c0007"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_evan-eisland"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-151646-lourdes-zapata",
+      "target": "entity_meeting-doc-128991-lourdes-zapata",
+      "validator_duplicate_key": "entity_lourdes-zapata",
+      "reason": "Exact person identity for Lourdes Zapata. The alias identifies Lourdes Zapata as MTA Chief Diversity & Inclusion Officer, matching the target's same person and Chief Diversity and Inclusion Officer record.",
+      "evidence_refs": [
+        "meeting_doc_151646#p006_c0004",
+        "meeting_doc_128991#p013_c0008"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_lourdes-zapata"
+        ]
+      },
+      "confidence": "high"
+    }
+  ],
+  "deferred_low_confidence_examples": [
+    {
+      "candidate": "entity_lirr-meeting-doc-131666 -> entity_annual-report-2021-lirr",
+      "reason": "Broad/subsidiary agency identity; intentionally deferred under this lane's avoid-broad-agencies constraint."
+    },
+    {
+      "candidate": "additional Demetrius Crichlow/Janno Lieber large-cluster leftovers",
+      "reason": "Potential target churn or large-cluster review surface; kept out of this small safe batch."
+    }
+  ],
+  "commands_used_for_evidence": [
+    "git status --short",
+    "jq '{entity_alias_count:(.aliases.entity|length), batch055_probe:.aliases.entity[\"entity_meeting-doc-113966-catherine-sheridan\"]}' data/identity-overrides/merges.json",
+    "sqlite3 data/canonical.db 'select count(*) from identity_aliases; ...'",
+    "bun --eval '<read-only duplicate_global_identity mining over readCanonicalRecords(), identityKeysForRecord(), current merges.json, identity_aliases, and do-not-merge guards>'",
+    "bun --eval '<read-only final guard script for canonical record presence, alias/target guard checks, shared identity keys, raw source blocks, and source-page blocks>'"
+  ],
+  "commands_intentionally_not_run": [
+    "materialize",
+    "validate CLI",
+    "export-jsonl",
+    "DB repair/publish",
+    "provider-backed post-ingest commands",
+    "identity-review-run",
+    "identity-review-apply"
+  ],
+  "conductor_apply_note": "This prep artifact intentionally does not edit data/identity-overrides/merges.json or generated outputs. Re-run the deterministic guard script immediately before conductor application because current canonical DB rows may lag the durable identity override file."
+}

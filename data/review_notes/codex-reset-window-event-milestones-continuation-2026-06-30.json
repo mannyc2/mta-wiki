@@ -1,0 +1,148 @@
+{
+  "run_id": "codex-reset-window-event-milestones-continuation-2026-06-30",
+  "date": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "provider_backed_llm_commands_used": false,
+  "forbidden_commands_used": [],
+  "baseline": {
+    "validation_issues": 0,
+    "canonical_records": 84043,
+    "wiki_pages": 7339,
+    "events_event_family_other": 362,
+    "events_event_family_milestone": 1044,
+    "projects_project_family_missing": 6,
+    "projects_project_family_other": 13,
+    "projects_document_time_status_missing": 91,
+    "projects_document_time_status_other": 4,
+    "source_gaps_gap_kind_normalized_other": 16,
+    "source_gaps_risk_or_contingency": 16,
+    "relation_family_other": 0,
+    "treatment_family_other": 0,
+    "routes_route_type_normalized_missing": 1
+  },
+  "after": {
+    "validation_issues": 0,
+    "canonical_records": 84043,
+    "wiki_pages": 7339,
+    "events_event_family_other": 342,
+    "events_event_family_milestone": 1064,
+    "projects_project_family_missing": 6,
+    "projects_project_family_other": 13,
+    "projects_document_time_status_missing": 91,
+    "projects_document_time_status_other": 4,
+    "source_gaps_gap_kind_normalized_other": 16,
+    "source_gaps_risk_or_contingency": 16,
+    "relation_family_other": 0,
+    "treatment_family_other": 0,
+    "routes_route_type_normalized_missing": 1
+  },
+  "implemented_slices": [
+    {
+      "bucket": "events.event_family",
+      "change": "Added payload-gated legal/transaction milestone rules for holdover/license expiry, Letter of Intent, formal offer, procurement option/modification, contract direction/termination, license/lease/sale, legal agreement, commercial license, option-agreement modification, contract assignment, and short-term permit records.",
+      "record_ids": [
+        "event_186736-holdover-agreement",
+        "event_186736-prior-license-expiry",
+        "event_expansion-loi-2024",
+        "event_initial-offer-nov2025-meeting-doc-196926",
+        "event_kawasaki-subway-car-option",
+        "event_meeting-doc-102806-procurement-omny-cvm",
+        "event_meeting-doc-115186-formal-offer",
+        "event_meeting-doc-115251-modification-directed",
+        "event_meeting-doc-154986-contract-termination",
+        "event_meeting-doc-170991-laz-license-2022",
+        "event_meeting-doc-179656-mabstoa-audubon",
+        "event_meeting-doc-205601-nys-sale-premises-200310",
+        "event_meeting-doc-206081-gcm-retail-lease",
+        "event_meeting91596-accessibility-agreement",
+        "event_pescatore-seafood-license",
+        "event_rfk-bridge-option-agreement",
+        "event_rite-aid-grand-central-lease-termination-2022",
+        "event_siemens-to-yunex-assignment-meeting-doc-138336",
+        "event_termination-contract-w32564-jan2023",
+        "event_town-cortlandt-short-term-permit-dec2025"
+      ],
+      "count_delta": {
+        "other": -20,
+        "milestone": 20
+      }
+    }
+  ],
+  "subagents": [
+    {
+      "agent_id": "019f1766-940a-7280-bce9-f143efcb9383",
+      "lane": "events.event_family next residual scout",
+      "status": "closed_while_running",
+      "result": "Closed after the implemented event slice validated to avoid leaving a background agent open."
+    },
+    {
+      "agent_id": "019f1766-9a71-7670-9b0c-920af6183601",
+      "lane": "project status/family residual scout",
+      "status": "completed_closed",
+      "result": "Recommended a one-record Access-A-Ride primary-carrier project-family cleanup expected to move project_family other 13 -> 12; deferred for a later small slice."
+    }
+  ],
+  "verification": {
+    "focused_ontology_tests": {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "tests_passed": 256,
+      "expects": 3664
+    },
+    "typecheck": {
+      "command": "bun run typecheck",
+      "passed": true
+    },
+    "materialize": {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "completed": true,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "issues": 0
+    },
+    "diff_check": {
+      "command": "git diff --check -- LOG.md data/review_notes packages/pipeline/src/ontology/normalizers.ts packages/pipeline/test/ontology/normalizers.test.ts",
+      "passed": true
+    }
+  },
+  "remaining_lanes": [
+    {
+      "bucket": "events.event_family",
+      "remaining_other": 342,
+      "next_action": "Fan out a fresh event residual scout and continue payload-gated event tail slices."
+    },
+    {
+      "bucket": "projects.document_time_status",
+      "remaining_missing": 91,
+      "remaining_other": 4,
+      "next_action": "Continue exact-name or payload-proof lifecycle-status slices; avoid broad defaults over generic capital, status, or engineering language."
+    },
+    {
+      "bucket": "projects.project_family",
+      "remaining_missing": 6,
+      "remaining_other": 13,
+      "next_action": "Implement the one-record Access-A-Ride primary-carrier option-year service-change rule if a small project-family pass is useful."
+    },
+    {
+      "bucket": "source_gaps.gap_kind_normalized",
+      "remaining_other": 16,
+      "next_action": "Treat as policy floor unless a new extraction-limit or implementation-caveat taxonomy value is approved."
+    }
+  ],
+  "files_changed_by_this_slice": [
+    "packages/pipeline/src/ontology/normalizers.ts",
+    "packages/pipeline/test/ontology/normalizers.test.ts",
+    "data/canonical/events.jsonl",
+    "data/canonical.db",
+    "wiki/",
+    "LOG.md",
+    "data/review_notes/codex-reset-window-event-milestones-continuation-2026-06-30.json"
+  ],
+  "notes": [
+    "The first focused test run caught a formal-offer false positive against an existing negative guard; the implementation was tightened before materialization.",
+    "The worktree was already very dirty from the broader campaign; unrelated dirty files were not reverted.",
+    "Canonical JSONL was updated through deterministic materialization, not hand-edited.",
+    "All subagents were closed before final reporting."
+  ]
+}

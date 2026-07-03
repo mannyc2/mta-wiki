@@ -1,0 +1,236 @@
+{
+  "note_id": "codex-relation-rule-or-data-next25-prep",
+  "batch_id": "next25",
+  "created_at": "2026-06-23T02:30:00Z",
+  "author": "codex",
+  "scope": "Codex-only relation endpoint-shape rule-or-data triage artifact; deterministic local inspection only; no provider-backed commands, post-ingest LLM harnesses, materialize/export-jsonl/full validate/DB publish, durable data edits, code edits, LOG edits, manifest edits, submissions edits, retired.json edits, or canonical/generated edits",
+  "current_checkpoint_context": {
+    "reported_validate_backlog_after_identity080_relation052": {
+      "issue_count": 1444,
+      "unexpected_relation_endpoint_shape": 13,
+      "duplicate_global_identity": 1431
+    },
+    "observed_endpoint_shape_issue_count": 13,
+    "recent_work_not_repeated": [
+      "relation049 data cleanup for metric-context endpoint-shape rows",
+      "relation050 data cleanup for implemented_by entity->entity",
+      "relation051 data cleanup for published_by metric_claim->source",
+      "relation052 data cleanup for operated_by entity->entity",
+      "relation037 through relation052"
+    ],
+    "inspection_method": "Read-only canonical JSONL inventory using the current RELATION_ENDPOINT_SHAPES table in packages/pipeline/src/records/relations.ts, excluding fully retired relation submissions from data/submission-overrides/retired.json, plus read-only rg/sed inspection of the selected submission, canonical records, source blocks, and prior review notes. No validate/materialize/export/publish/provider command was run."
+  },
+  "remaining_bucket_counts": {
+    "total": 13,
+    "buckets": [
+      { "bucket": "has_claim claim->claim", "count": 1 },
+      { "bucket": "has_timeline_event event->entity", "count": 1 },
+      { "bucket": "has_timeline_event project->entity", "count": 1 },
+      { "bucket": "has_timeline_event source->entity", "count": 1 },
+      { "bucket": "implemented_by source->entity", "count": 1 },
+      { "bucket": "operated_by treatment_component->entity", "count": 1 },
+      { "bucket": "operates_on_corridor project->entity", "count": 1 },
+      { "bucket": "owned_by event->entity", "count": 1 },
+      { "bucket": "owned_by source->entity", "count": 1 },
+      { "bucket": "published_by claim->entity", "count": 1 },
+      { "bucket": "related_route project->project", "count": 1 },
+      { "bucket": "serves_route project->entity", "count": 1 },
+      { "bucket": "serves_route project->project", "count": 1 }
+    ],
+    "triage_note": "All remaining exact endpoint-shape buckets are singletons. The selected has_claim claim->claim row is a clean data-cleanup candidate because previous rule triage explicitly kept claim->claim invalid while noting this row should be handled later as a non-has_claim support/reference relation."
+  },
+  "recommendation": "data_cleanup",
+  "recommended_bucket": "has_claim claim->claim",
+  "expected_delta": {
+    "baseline_unexpected_relation_endpoint_shape": 13,
+    "selected_rows_cleared": 1,
+    "replacement_rows_added": 1,
+    "replacement_rows_expected_to_be_endpoint_shape_valid": 1,
+    "expected_remaining_after_cleanup": 12
+  },
+  "recommended_data_cleanup": {
+    "mechanism": "retire_and_replace",
+    "why_data_cleanup": "The current row uses has_claim with a claim subject and claim object. Current has_claim is scoped to project|route|corridor|entity|source|event|treatment_component -> claim. A claim-to-claim edge here is not a missing validator shape; it is a modeling error where a detailed station-list claim was attached to an aggregate count claim using a container-style relation. The same evidence is better represented as the detail-list claim supporting the aggregate count claim.",
+    "why_not_validator_rule_patch": "Adding claim to RELATION_ENDPOINT_SHAPES.has_claim.subject would validate broad nested-claim structures and blur the boundary between page/context owners and data-only claims. Prior next17 rule triage admitted only has_claim treatment_component->claim and explicitly kept has_claim claim->claim invalid. Prior next20 also called this row a future data cleanup candidate rather than a rule widening.",
+    "submissions_to_retire": [
+      {
+        "submission_id": "sub_5d04512e0ab539f9",
+        "run_id": "2026-06-20T12-37-31-102Z_1885472-cc2fc193_ingest_meeting-doc-121711",
+        "submission_path": "data/submissions/2026-06-20T12-37-31-102Z_1885472-cc2fc193_ingest_meeting-doc-121711.jsonl",
+        "submission_line": 53,
+        "record_id": "relation_23-stations-has-claim",
+        "source_id": "meeting_doc_121711",
+        "current_relation_kind": "has_claim",
+        "current_shape": "claim -> claim",
+        "retire_reason": "Malformed has_claim claim -> claim relation; the source-backed detail-list claim should not be modeled as a claim owned by the aggregate count claim."
+      }
+    ],
+    "proposed_semantic_replacement_direction": {
+      "replacement_needed": true,
+      "preferred_relation_kind": "supports",
+      "preferred_endpoint_shape": "claim -> claim",
+      "subject_local_observation_id": "claim_ada_stations_completed_since_2020_list",
+      "subject_record_id": "claim_ada-stations-completed-since-2020-list",
+      "object_local_observation_id": "claim_23_stations_completed_since_2020",
+      "object_record_id": "claim_23-stations-completed-since-2020",
+      "proposed_local_observation_id": "relation_ada_station_list_supports_23_station_count",
+      "proposed_label": "ADA station list supports 23 stations since 2020 count",
+      "proposed_description": "The ADA station list and map detail support the aggregate claim that 23 stations were completed since 2020 and 6 stations were to be completed by the end of the year.",
+      "evidence_refs_to_reuse": [
+        {
+          "source_id": "meeting_doc_121711",
+          "evidence_id": "meeting_doc_121711#p009_c0003",
+          "source_path": "raw/sources/meeting_doc_121711/blocks.jsonl",
+          "page_number": 9,
+          "block_id": "p009_c0003",
+          "text_sha256": "sha256:dbd36ed1541d7be3539b7a6e9af767f03d07df468599f1fb88c726ae92793057",
+          "text_source": "raw_text"
+        }
+      ],
+      "endpoint_shape_note": "supports is in the dependency_or_reference relation family and has no strict endpoint entry in RELATION_ENDPOINT_SHAPES, so this replacement would not produce an unexpected_relation_endpoint_shape issue under the current validator."
+    },
+    "replacement_collision_check": {
+      "status": "needs_apply_worker_confirmation",
+      "read_only_triage": "rg found the original relation and the two endpoint claim submissions, but this prep did not generate an accepted replacement entry or run createSubmissionEntry dry-run. The follow-up worker should confirm no existing relation_ada_station_list_supports_23_station_count submission or equivalent supports claim->claim canonical row has been added before applying."
+    }
+  },
+  "representative_records": [
+    {
+      "record_id": "relation_23-stations-has-claim",
+      "source_id": "meeting_doc_121711",
+      "submission_ids": [
+        "sub_5d04512e0ab539f9"
+      ],
+      "current_malformed_shape": "has_claim claim->claim",
+      "current_relation": {
+        "relation_kind": "has_claim",
+        "relation_family": "claim_context",
+        "subject": {
+          "record_id": "claim_23-stations-completed-since-2020",
+          "record_kind": "claim",
+          "display_name": "23 stations completed since 2020",
+          "local_observation_id": "claim_23_stations_completed_since_2020",
+          "claim_text": "23 stations completed since 2020 and 6 stations to be completed by end of year",
+          "submission_id": "sub_7b93f4bb3bc3dd4a"
+        },
+        "object": {
+          "record_id": "claim_ada-stations-completed-since-2020-list",
+          "record_kind": "claim",
+          "display_name": "ADA Stations Completed Since 2020 list",
+          "local_observation_id": "claim_ada_stations_completed_since_2020_list",
+          "claim_text_summary": "List-style claim enumerating ADA projects completed since 2020 and stations to be completed by end of year.",
+          "submission_id": "sub_afb9961be862a796"
+        },
+        "payload_summary": {
+          "description": null,
+          "assertion_status": "unknown"
+        }
+      },
+      "triage_read": "The source block contains both an aggregate count and detailed station names. The detailed list can support the aggregate count, but the aggregate claim should not own another claim through has_claim."
+    }
+  ],
+  "source_and_evidence_summary": {
+    "source_id": "meeting_doc_121711",
+    "source_title": "Accessibility Update",
+    "source_url": "https://www.mta.info/document/121711",
+    "source_path": "raw/sources/meeting_doc_121711/blocks.jsonl",
+    "source_metadata_summary": {
+      "publisher": "MTA",
+      "source_group": "mta_board_meeting",
+      "retrieved_at": "2026-06-07T01:15:00.252Z",
+      "capture_status": "captured",
+      "content_type": "application/pdf"
+    },
+    "submission_raw_text": null,
+    "evidence_blocks": [
+      {
+        "evidence_id": "meeting_doc_121711#p009_c0003",
+        "page_number": 9,
+        "block_id": "p009_c0003",
+        "block_kind": "figure",
+        "text_sha256": "sha256:dbd36ed1541d7be3539b7a6e9af767f03d07df468599f1fb88c726ae92793057",
+        "summary": "A subway-system map showing ADA projects; the legend distinguishes projects completed since 2020 from projects to be completed by end of year, states the 23 completed and 6 end-of-year counts, and lists station names.",
+        "short_source_quote": "The map shows 23 stations completed since 2020 and 6 stations to be completed by the end of the year."
+      }
+    ],
+    "related_endpoint_claim_submissions": [
+      {
+        "submission_id": "sub_7b93f4bb3bc3dd4a",
+        "local_observation_id": "claim_23_stations_completed_since_2020",
+        "record_id": "claim_23-stations-completed-since-2020",
+        "validation_state": "accepted",
+        "evidence_id": "meeting_doc_121711#p009_c0003"
+      },
+      {
+        "submission_id": "sub_afb9961be862a796",
+        "local_observation_id": "claim_ada_stations_completed_since_2020_list",
+        "record_id": "claim_ada-stations-completed-since-2020-list",
+        "validation_state": "accepted",
+        "evidence_id": "meeting_doc_121711#p009_c0003"
+      }
+    ]
+  },
+  "validator_boundary": {
+    "current_valid_has_claim_shapes": [
+      "project->claim",
+      "route->claim",
+      "corridor->claim",
+      "entity->claim",
+      "source->claim",
+      "event->claim",
+      "treatment_component->claim"
+    ],
+    "endpoint_combos_that_should_remain_invalid": [
+      "has_claim claim->claim",
+      "has_claim metric_claim->claim",
+      "has_claim table->claim",
+      "has_claim source_gap->claim",
+      "has_claim relation->claim",
+      "has_claim claim->metric_claim",
+      "has_claim claim->event",
+      "has_claim claim->treatment_component"
+    ],
+    "prior_triage_boundary": [
+      "data/review_notes/codex-relation-rule-or-data-next17-prep.json selected has_claim treatment_component->claim as a scoped validator patch and explicitly kept claim->claim invalid.",
+      "data/review_notes/codex-relation-rule-or-data-next20-prep.json noted this exact row should later be retired or replaced with a non-has_claim claim-to-claim support/reference relation."
+    ]
+  },
+  "why_safe": [
+    "The cleanup is a single-row endpoint-shape fix, so the expected endpoint-shape delta is exactly -1 if the malformed submission is retired and the replacement is added without endpoint-shape issues.",
+    "The two endpoint claim records remain accepted and unmodified; only the malformed relation between them is retired.",
+    "The same source block backs both endpoint claims and the proposed supports replacement, so the source-backed semantic association is preserved without widening has_claim.",
+    "Keeping has_claim claim->claim invalid protects the writer/data-owner boundary: claims remain data-only assertions rather than containers for other claims.",
+    "The proposed supports relation has no strict endpoint shape entry under current validator rules and is semantically narrower than admitting all nested claim ownership.",
+    "This selection does not overlap relation037-relation052 or the recent relation049, relation050, relation051, and relation052 endpoint-shape work."
+  ],
+  "apply_readiness": {
+    "follow_up_apply_ready_relation_worker_needed": true,
+    "reason": "A follow-up worker should prepare the retired.json entry and one deterministic replacement submission entry, including collision checks and createSubmissionEntry/dry-run validation if that lane allows it. This artifact intentionally does not edit retired.json or append submissions.",
+    "expected_worker_scope": [
+      "Retire sub_5d04512e0ab539f9.",
+      "Append one supports claim -> claim replacement from claim_ada_stations_completed_since_2020_list to claim_23_stations_completed_since_2020 using meeting_doc_121711#p009_c0003.",
+      "Do not change RELATION_ENDPOINT_SHAPES.has_claim."
+    ]
+  },
+  "commands_run_read_only": [
+    "pwd && rg --files data/review_notes data/canonical data/submissions | sed -n '1,160p'",
+    "git status --short",
+    "ls -la data/review_notes | tail -80",
+    "rg -n \"unexpected_relation_endpoint_shape|endpoint_shape|current malformed|malformed\" data/review_notes data/campaigns/validation-2026-06 data -g '!canonical.db' -g '!canonicalize/**' -g '!transcripts/**'",
+    "sed -n '1,220p' data/review_notes/codex-relation-rule-or-data-next24-prep.json",
+    "sed -n '1,220p' data/review_notes/codex-relation-cleanup-batch052-prep.json",
+    "sed -n '1,360p' packages/pipeline/src/records/relations.ts",
+    "rg -n \"sub_9e51ef484cc836e5|relation052|relation051|relation050\" data/submission-overrides/retired.json data/review_notes/codex-relation-cleanup-batch051-prep.json data/review_notes/codex-relation-cleanup-batch052-prep.json data/review_notes/codex-relation-rule-or-data-next23-prep.json data/review_notes/codex-relation-rule-or-data-next24-prep.json",
+    "sed -n '1,220p' data/review_notes/codex-relation-cleanup-batch051-prep.json",
+    "head -3 data/canonical/relations.jsonl",
+    "head -3 data/canonical/entities.jsonl && head -3 data/canonical/projects.jsonl",
+    "jq 'keys' data/submission-overrides/retired.json && tail -80 data/submission-overrides/retired.json",
+    "rg -n '\"submission_id\": \"sub_955bdb6577872b30\"|\"submission_id\": \"sub_9e51ef484cc836e5\"|relation052|relation051' data/submission-overrides/retired.json",
+    "node read-only endpoint-shape inventory over data/canonical/*.jsonl plus data/submission-overrides/retired.json exclusions",
+    "rg -n \"sub_5d04512e0ab539f9|relation_23-stations-has-claim|relation_23_stations_has_claim|claim_23-stations-completed-since-2020|claim_ada-stations-completed-since-2020-list|23 stations|ADA Stations Completed Since 2020\" data/submissions data/canonical raw/sources/meeting_doc_121711/blocks.jsonl data/submission-overrides/retired.json",
+    "sed -n '1,80p' raw/sources/meeting_doc_121711/metadata.json && sed -n '1,80p' raw/sources/meeting_doc_121711/blocks.jsonl",
+    "rg -n \"has_claim claim|claim->claim|claim -> claim|23-stations|ADA Stations Completed\" data/review_notes/codex-relation-rule-or-data-next*.json data/review_notes/codex-relation-cleanup-batch*.json",
+    "test ! -e data/review_notes/codex-relation-rule-or-data-next25-prep.json && echo absent || echo present",
+    "sed -n '120,260p' data/review_notes/codex-relation-rule-or-data-next17-prep.json && sed -n '140,180p' data/review_notes/codex-relation-rule-or-data-next20-prep.json"
+  ]
+}

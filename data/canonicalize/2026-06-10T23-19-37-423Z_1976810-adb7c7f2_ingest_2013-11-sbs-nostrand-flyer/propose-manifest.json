@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T23-19-37-423Z_1976810-adb7c7f2_ingest_2013-11-sbs-nostrand-flyer",
+  "generated_at": "2026-06-11T04:04:41.894Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 21,
+  "validated_decision_count": 0,
+  "quarantined_decision_count": 6,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T23-19-37-423Z_1976810-adb7c7f2_ingest_2013-11-sbs-nostrand-flyer",
+    "manifest": "data/canonicalize/2026-06-10T23-19-37-423Z_1976810-adb7c7f2_ingest_2013-11-sbs-nostrand-flyer/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T23-19-37-423Z_1976810-adb7c7f2_ingest_2013-11-sbs-nostrand-flyer/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-19-37-423Z_1976810-adb7c7f2_ingest_2013-11-sbs-nostrand-flyer/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T23-19-37-423Z_1976810-adb7c7f2_ingest_2013-11-sbs-nostrand-flyer/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-19-37-423Z_1976810-adb7c7f2_ingest_2013-11-sbs-nostrand-flyer/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-04-39-696Z_2111393-d9f936e5_canonicalize_2026-06-10t23-19-37-423z-1976810-adb7c7f2-ingest-2013-11-sbs-nostrand-flyer-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-19-37-423Z_1976810-adb7c7f2_ingest_2013-11-sbs-nostrand-flyer/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-04-39-696Z_2111393-f0c765a6_canonicalize_2026-06-10t23-19-37-423z-1976810-adb7c7f2-ingest-2013-11-sbs-nostrand-flyer-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-19-37-423Z_1976810-adb7c7f2_ingest_2013-11-sbs-nostrand-flyer/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-04-39-696Z_2111393-e21371e2_canonicalize_2026-06-10t23-19-37-423z-1976810-adb7c7f2-ingest-2013-11-sbs-nostrand-flyer-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-19-37-423Z_1976810-adb7c7f2_ingest_2013-11-sbs-nostrand-flyer/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-04-39-696Z_2111393-c3425add_canonicalize_2026-06-10t23-19-37-423z-1976810-adb7c7f2-ingest-2013-11-sbs-nostrand-flyer-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-19-37-423Z_1976810-adb7c7f2_ingest_2013-11-sbs-nostrand-flyer/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-04-39-696Z_2111393-bc36ae0b_canonicalize_2026-06-10t23-19-37-423z-1976810-adb7c7f2-ingest-2013-11-sbs-nostrand-flyer-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-19-37-423Z_1976810-adb7c7f2_ingest_2013-11-sbs-nostrand-flyer/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-04-39-696Z_2111393-6f91b13b_canonicalize_2026-06-10t23-19-37-423z-1976810-adb7c7f2-ingest-2013-11-sbs-nostrand-flyer-relation-linker"
+    }
+  ]
+}

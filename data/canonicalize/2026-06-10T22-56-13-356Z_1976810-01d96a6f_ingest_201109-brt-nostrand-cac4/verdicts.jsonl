@@ -1,0 +1,14 @@
+{"decision_id":"rel-bus-lanes-nostrand-to-project","verdict":"pass","evidence_checked":["201109_brt_nostrand_cac4#p006_c0003"]}
+{"decision_id":"rel-signal-priority-to-project","verdict":"pass","evidence_checked":["201109_brt_nostrand_cac4#p004_c0003"]}
+{"decision_id":"rel-off-board-fare-to-project","verdict":"pass","evidence_checked":["201109_brt_nostrand_cac4#p004_c0007","201109_brt_nostrand_cac4#p007_c0005"]}
+{"decision_id":"rel-sbs-stations-to-project","verdict":"pass","evidence_checked":["201109_brt_nostrand_cac4#p007_c0001"]}
+{"decision_id":"rel-01-b44-weekday-ridership","verdict":"pass","evidence_checked":["201109_brt_nostrand_cac4#p003_c0004"]}
+{"decision_id":"rel-02-b44-avg-speed","verdict":"pass","evidence_checked":["201109_brt_nostrand_cac4#p003_c0004"]}
+{"decision_id":"rel-03-residents-quarter-mile","verdict":"pass","evidence_checked":["201109_brt_nostrand_cac4#p003_c0006"]}
+{"decision_id":"rel-04-pct-no-car","verdict":"pass","evidence_checked":["201109_brt_nostrand_cac4#p003_c0006"]}
+{"decision_id":"rel-05-sbs-trip-time","verdict":"pass","evidence_checked":["201109_brt_nostrand_cac4#p005_c0003"]}
+{"decision_id":"rel-06-sbs-customer-satisfaction","verdict":"pass","evidence_checked":["201109_brt_nostrand_cac4#p005_c0003"]}
+{"decision_id":"rel-07-sbs-ridership-increase","verdict":"pass","evidence_checked":["201109_brt_nostrand_cac4#p005_c0003"]}
+{"decision_id":"rel-08-crashes-corridor","verdict":"pass","evidence_checked":["201109_brt_nostrand_cac4#p008_c0002"]}
+{"decision_id":"rel-09-worst-intersections","verdict":"pass","evidence_checked":["201109_brt_nostrand_cac4#p008_c0002"]}
+{"decision_id":"rel-10-left-turn-bans","verdict":"pass","evidence_checked":["201109_brt_nostrand_cac4#p008_c0002","201109_brt_nostrand_cac4#p018_c0003"]}

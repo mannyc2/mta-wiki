@@ -1,0 +1,603 @@
+{
+  "run_id": "2026-06-10T22-56-13-211Z_1976810-4d6654f7_ingest_2011-34th-sbs-comments-on-proposed-design",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T01:21:53.447Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "rel-metric-stop-spacing-guidelines",
+        "local_observation_id": "metric_stop_spacing_guidelines",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_stop-spacing-guidelines",
+            "description": "NYCT citywide local stop spacing guidelines cited in 34th Street SBS proposed design comments",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p005_c0012",
+                "source_quote": "NYCT citywide local stop spacing guidelines, which call for 750-1,000 feet between stops"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric cited in the 34th Street SBS proposed design document to justify stop spacing decisions on the corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p005_c0012",
+            "source_quote": "NYCT citywide local stop spacing guidelines, which call for 750-1,000 feet between stops"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-block-length-34th-st",
+        "local_observation_id": "metric_block_length_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_block-length-34th-st",
+            "description": "Block length measurement on the 34th Street corridor used in SBS stop spacing analysis",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p005_c0012",
+                "source_quote": "most blocks on the corridor are about 875 feet long"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric describes block lengths on the 34th Street corridor, directly relevant to the SBS project stop spacing analysis.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p005_c0012",
+            "source_quote": "most blocks on the corridor are about 875 feet long"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-parking-loss-if-stops-added",
+        "local_observation_id": "metric_parking_loss_if_stops_added",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_parking-loss-if-stops-added",
+            "description": "Estimated parking/loading space loss if Lexington and Madison Avenue stops are added to the 34th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p006_c0005",
+                "source_quote": "adding back the Lexington Avenue and Madison Avenue stops would result in a loss of about 15-20 parking or loading spaces between Fifth Avenue and Third Avenue"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric quantifies the impact of stop placement decisions on the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p006_c0005",
+            "source_quote": "adding back the Lexington Avenue and Madison Avenue stops would result in a loss of about 15-20 parking or loading spaces between Fifth Avenue and Third Avenue"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-curb-regulation-change-length",
+        "local_observation_id": "metric_curb_regulation_change_length",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_curb-regulation-change-length",
+            "description": "Curb regulation change length on Third Avenue as part of 34th Street SBS design",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p012_c0006",
+                "source_quote": "DOT proposes changing the first 100 feet of curb north of corner to No Parking"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric describes a DOT-proposed curb regulation change adjacent to the 34th Street corridor, part of the SBS project design.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p012_c0006",
+            "source_quote": "DOT proposes changing the first 100 feet of curb north of corner to No Parking"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-legal-midday-loading-50-to-350",
+        "local_observation_id": "metric_legal_midday_loading_50_to_350",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_legal-midday-loading-50-to-350",
+            "description": "Increase in legal midday loading spaces under the 34th Street Select Bus Service project",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p003_c0015",
+                "source_quote": "The proposed 34 th Street Select Bus Service project would increase the amount of legal midday loading on the corridor from about 50 spaces to about 350 spaces."
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence quote explicitly names the 34th Street Select Bus Service project as the subject.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p003_c0015",
+            "source_quote": "The proposed 34 th Street Select Bus Service project would increase the amount of legal midday loading on the corridor from about 50 spaces to about 350 spaces."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-loading-space-addition-bay-shortening",
+        "local_observation_id": "metric_loading_space_addition_bay_shortening",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_loading-space-addition-bay-shortening",
+            "description": "Additional loading space gained by shortening right turn bay on 34th Street between Park and Lexington",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p012_c0010",
+                "source_quote": "DOT can shorten the right turn bay on the north curb of 34 th Street between Park Avenue and Lexington Avenue, providing an additional 30 feet of loading space on this block"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric describes a DOT loading space improvement on 34th Street, part of the SBS project curb management strategy.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p012_c0010",
+            "source_quote": "DOT can shorten the right turn bay on the north curb of 34 th Street between Park Avenue and Lexington Avenue, providing an additional 30 feet of loading space on this block"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-stop-spacing-less-than-250",
+        "local_observation_id": "metric_stop_spacing_less_than_250",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_stop-spacing-less-than-250",
+            "description": "Stop spacing consequence if Lexington and Madison Avenue stops were included in the 34th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p006_c0004",
+                "source_quote": "Including stops at Madison Avenue and Lexington Avenue would result in stop spacing of less than 250 feet in some cases."
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric directly addresses stop spacing decisions for the 34th Street SBS project design.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p006_c0004",
+            "source_quote": "Including stops at Madison Avenue and Lexington Avenue would result in stop spacing of less than 250 feet in some cases."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-ada-compliance-34th-sbs",
+        "local_observation_id": "claim_ada_compliance_34th_sbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_ada-compliance-34th-sbs",
+            "description": "ADA compliance statement for the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p003_c0008",
+                "source_quote": "the project will be fully compliant with the Americans with Disabilities Act (ADA)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence quote refers to the project, which is the 34th Street SBS project in context of this source document.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p003_c0008",
+            "source_quote": "the project will be fully compliant with the Americans with Disabilities Act (ADA)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-traffic-accommodation-river-to-river",
+        "local_observation_id": "claim_traffic_accommodation_river_to_river",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_traffic-accommodation-river-to-river",
+            "description": "DOT confidence claim that the 34th Street SBS plan will accommodate traffic demand",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p004_c0010",
+                "source_quote": "DOT is confident that the proposed plan, which maintains traffic in both directions from river to river, will accommodate traffic demand on 34 th Street without spillover effects onto parallel side streets."
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence quote references the proposed plan maintaining traffic on 34th Street, which is the SBS project design.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p004_c0010",
+            "source_quote": "DOT is confident that the proposed plan, which maintains traffic in both directions from river to river, will accommodate traffic demand on 34 th Street without spillover effects onto parallel side streets."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-curbside-bus-lane-benefits",
+        "local_observation_id": "claim_curbside_bus_lane_benefits",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_curbside-bus-lane-benefits",
+            "description": "Claim about benefits of the curbside bus lane configuration on 34th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p004_c0005",
+                "source_quote": "The current curbside bus lane configuration on 34 th Street provides significant benefits to bus riders, including decreased travel times, and has lead to growth in bus ridership on 34 th Street."
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim describes the existing bus lane on 34th Street, providing context for the SBS project upgrades.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p004_c0005",
+            "source_quote": "The current curbside bus lane configuration on 34 th Street provides significant benefits to bus riders, including decreased travel times, and has lead to growth in bus ridership on 34 th Street."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-private-vehicles-bus-lane-right-turn",
+        "local_observation_id": "claim_private_vehicles_bus_lane_right_turn",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_private-vehicles-bus-lane-right-turn",
+            "description": "Rule permitting private vehicles to use the bus lane for right turns and curb access on 34th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p007_c0012",
+                "source_quote": "private vehicles will be permitted to use the bus lane when making the next available right turn and to access the curb"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim describes bus lane access rules for the 34th Street SBS project design.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p007_c0012",
+            "source_quote": "private vehicles will be permitted to use the bus lane when making the next available right turn and to access the curb"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-m34-m16-transfer-to-m15-sbs",
+        "local_observation_id": "claim_m34_m16_transfer_to_m15_sbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_m34-m16-transfer-to-m15-sbs",
+            "description": "Transfer policy for riders transferring from 34th Street SBS routes to M15 SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p008_c0012",
+                "source_quote": "Riders making a transfer to the M15 SBS will have to obtain a separate receipt at a M15 SBS MetroCard fare collection machine or coin fare collection machine. Existing transfer policies, including free bus to bus transfer, will apply."
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim describes fare and transfer procedures for the 34th Street SBS project, specifically for M16/M34 riders transferring to M15 SBS.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p008_c0012",
+            "source_quote": "Riders making a transfer to the M15 SBS will have to obtain a separate receipt at a M15 SBS MetroCard fare collection machine or coin fare collection machine. Existing transfer policies, including free bus to bus transfer, will apply."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-sbs-hybrid-buses-initial",
+        "local_observation_id": "claim_sbs_hybrid_buses_initial",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_sbs-hybrid-buses-initial",
+            "description": "Initial bus fleet description for 34th Street SBS service using M34 and M16 hybrid-electric buses",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p006_c0009",
+                "source_quote": "Initially service will operate with the hybrid-electric, low floor buses currently used on M34 and M16 routes. Should there be significant increases in ridership, low floor articulated buses would be used."
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim describes the planned bus fleet for 34th Street SBS service, mentioning the M34 and M16 routes.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p006_c0009",
+            "source_quote": "Initially service will operate with the hybrid-electric, low floor buses currently used on M34 and M16 routes. Should there be significant increases in ridership, low floor articulated buses would be used."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-loading-prioritized-over-parking",
+        "local_observation_id": "claim_loading_prioritized_over_parking",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_loading-prioritized-over-parking",
+            "description": "Curb regulations for the 34th Street SBS project will prioritize loading over parking",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p003_c0013",
+                "source_quote": "DOT agrees. The curb regulations, which will be determined in consultation with the 34 th Street Community Advisory Committee, residents and other project stakeholders, will prioritize loading over parking."
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim explicitly references the 34th Street Community Advisory Committee and project stakeholders, tying it to the SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p003_c0013",
+            "source_quote": "DOT agrees. The curb regulations, which will be determined in consultation with the 34 th Street Community Advisory Committee, residents and other project stakeholders, will prioritize loading over parking."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-traffic-analysis-completion-fall2011",
+        "local_observation_id": "event_traffic_analysis_completion_fall2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_traffic-analysis-completion-fall2011",
+            "description": "Completion of comprehensive traffic analysis for the 34th Street SBS design in early fall 2011",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p004_c0010",
+                "source_quote": "The results of this analysis will be completed in early fall of 2011"
+              }
+            ]
+          }
+        ],
+        "rationale": "Timeline event for the traffic analysis milestone of the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p004_c0010",
+            "source_quote": "The results of this analysis will be completed in early fall of 2011"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-environmental-review-early2012",
+        "local_observation_id": "event_environmental_review_early2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_environmental-review-early2012",
+            "description": "Target completion of environmental review for the 34th Street SBS project by early 2012",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p004_c0004",
+                "source_quote": "found to be feasible and completes environmental review by early 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "Timeline event for the environmental review milestone of the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p004_c0004",
+            "source_quote": "found to be feasible and completes environmental review by early 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-construction-start-summer2012",
+        "local_observation_id": "event_construction_start_summer2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_construction-start-summer2012",
+            "description": "Planned construction start for the 34th Street SBS project in summer 2012",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p004_c0004",
+                "source_quote": "NYCT and DOT plan to begin construction on the project in the summer of 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "The evidence quote explicitly references the project which is the 34th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p004_c0004",
+            "source_quote": "NYCT and DOT plan to begin construction on the project in the summer of 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-hudson-yards-stops-completion-2013",
+        "local_observation_id": "event_hudson_yards_stops_completion_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_hudson-yards-stops-completion-2013",
+            "description": "Completion of two SBS stops as part of Hudson Yards boulevard and park project, scheduled for 2013",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p016_c0007",
+                "source_quote": "These two stops will be built by the Hudson Yards Development Corporation as part of Hudson Yards boulevard and park project, scheduled for completion in 2013."
+              }
+            ]
+          }
+        ],
+        "rationale": "Timeline event for the Hudson Yards SBS stops, part of the 34th Street SBS project infrastructure.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p016_c0007",
+            "source_quote": "These two stops will be built by the Hudson Yards Development Corporation as part of Hudson Yards boulevard and park project, scheduled for completion in 2013."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-cac-meeting-mar14-2011",
+        "local_observation_id": "event_cac_meeting_mar14_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_cac-meeting-mar14-2011",
+            "description": "Community Advisory Committee meeting for 34th Street SBS proposed design on March 14, 2011",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p002_c0008",
+                "source_quote": "Monday, March 14, 2011 New Yorker Hotel, Gramercy Park Suite 481 8th Avenue, New York, NY 6:00 – 8:00 PM"
+              }
+            ]
+          }
+        ],
+        "rationale": "Timeline event for the CAC meeting listed in the 34th Street SBS proposed design document.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p002_c0008",
+            "source_quote": "Monday, March 14, 2011 New Yorker Hotel, Gramercy Park Suite 481 8th Avenue, New York, NY 6:00 – 8:00 PM"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-public-meeting-mar30-2011",
+        "local_observation_id": "event_public_meeting_mar30_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_public-meeting-mar30-2011",
+            "description": "First public meeting for 34th Street SBS proposed design on March 30, 2011",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p002_c0010",
+                "source_quote": "Wednesday, March 30, 2011 Norman Thomas High School, Cafeteria 111 East 33rd Street, New York, NY 6:00 – 8:00 PM"
+              }
+            ]
+          }
+        ],
+        "rationale": "Timeline event for the public meeting listed in the 34th Street SBS proposed design document.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p002_c0010",
+            "source_quote": "Wednesday, March 30, 2011 Norman Thomas High School, Cafeteria 111 East 33rd Street, New York, NY 6:00 – 8:00 PM"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-public-meeting-mar31-2011",
+        "local_observation_id": "event_public_meeting_mar31_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "event_public-meeting-mar31-2011",
+            "description": "Second public meeting for 34th Street SBS proposed design on March 31, 2011",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p002_c0010",
+                "source_quote": "Thursday, March 31, 2011 New Yorker Hotel, Gramercy Park Suite 481 8th Avenue, New York, NY 6:30 – 8:30 PM"
+              }
+            ]
+          }
+        ],
+        "rationale": "Timeline event for the public meeting listed in the 34th Street SBS proposed design document.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p002_c0010",
+            "source_quote": "Thursday, March 31, 2011 New Yorker Hotel, Gramercy Park Suite 481 8th Avenue, New York, NY 6:30 – 8:30 PM"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-17-12-651Z_2111393-63b1c3d8_canonicalize_2026-06-10t22-56-13-211z-1976810-4d6654f7-ingest-2011-34th-sbs-comments-on-proposed-design-relation-linker"
+}

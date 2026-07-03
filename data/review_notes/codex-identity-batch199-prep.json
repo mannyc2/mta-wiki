@@ -1,0 +1,304 @@
+{
+  "note_id": "codex-identity-batch199-prep",
+  "created_at": "2026-06-23T11:13:21Z",
+  "prepared_count": 10,
+  "scope": {
+    "global_kind": "entity",
+    "operation": "prepare_alias_cleanup_only",
+    "selection_note": "Codex-only entity alias cleanup after identity196-dnm197-198. No provider-backed commands were run. Current validateRepo duplicate_global_identity output, canonical entity records, identity overrides, do-not-merge overrides, and identity186-198 review-note ids were inspected read-only.",
+    "write_limit": "Exactly one artifact was written: data/review_notes/codex-identity-batch199-prep.json. No merges.json, do-not-merge.json, LOG.md, manifest, submissions, canonical outputs, DB, or wiki files were edited."
+  },
+  "proposed_aliases": [
+    {
+      "alias_id": "entity_meeting-doc-133246-office-ada-compliance",
+      "target_id": "entity_meeting-doc-164781-office-of-ada-compliance",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_meeting-doc-133246-office-ada-compliance and entity_meeting-doc-164781-office-of-ada-compliance share identity key entity_office-of-ada-compliance."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Office of ADA Compliance', entity_name 'Office of ADA Compliance', entity_type 'office', evidence meeting_doc_133246#p007_c0006 says the Office of ADA Compliance partnered with the Department of Subways on ADA Sensitivity Training.",
+        "Target canonical record: display_name 'entity_meeting_doc_164781_office_of_ada_compliance', entity_name 'Office of ADA Compliance', entity_type 'office', evidence meeting_doc_164781#p007_c0006 contains the same Office of ADA Compliance training context."
+      ],
+      "reason": "Exact office identity with the same entity_name and same validator identity key; the target preserves the later meeting-doc surface while the alias is the cleaner display-name duplicate.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_198": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_meeting-doc-140491-pension-board-managers",
+      "target_id": "entity_meeting-doc-174021-pension-board-of-managers",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_meeting-doc-140491-pension-board-managers and entity_meeting-doc-174021-pension-board-of-managers share identity key entity_mta-defined-benefit-pension-plan-lirr-plan-for-additional-pensions-pension-board-of-managers."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'MTA Defined Benefit Pension Plan / LIRR Plan for Additional Pensions Pension Board of Managers', entity_type 'committee', evidence meeting_doc_140491#p009_c0002 names that Pension Board of Managers.",
+        "Target canonical record: display_name 'MTA Defined Benefit Pension Plan / LIRR Plan for Additional Pensions - Pension Board of Managers', entity_type 'board/committee', evidence meeting_doc_174021#p009_c0002 names the same Pension Board of Managers."
+      ],
+      "reason": "Exact board/committee identity; punctuation differences between slash and dash forms do not indicate separate entities.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_198": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_meeting-doc-143366-mta-procurement",
+      "target_id": "entity_mta-procurement",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_meeting-doc-143366-mta-procurement and entity_mta-procurement share identity key entity_mta-procurement."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'entity_meeting_doc_143366_mta_procurement', entity_name 'MTA Procurement', entity_type 'department', evidence meeting_doc_143366#p006_c0004 says 'Requesting Department: MTA Procurement, Lisette Camilo, Acting CPO'.",
+        "Target canonical record: display_name 'MTA Procurement', entity_name 'MTA Procurement', entity_type 'department', evidence includes meeting_doc_100346#p004_c0001 and meeting_doc_107536#p004_c0001 naming Department MTA Procurement."
+      ],
+      "reason": "Exact MTA Procurement department identity; the alias is a single-source meeting-doc extraction that duplicates the established multi-source department record.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_198": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_meeting-doc-111756-nyct-cost-price-analysis",
+      "target_id": "entity_nyct-cost-price-analysis-unit",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_meeting-doc-111756-nyct-cost-price-analysis and entity_nyct-cost-price-analysis-unit share identity key entity_nyc-transit-cost-price-analysis-unit."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'NYC Transit Cost Price Analysis Unit', entity_name 'NYC Transit Cost Price Analysis Unit', entity_type 'unit', evidence meeting_doc_111756#p006_c0010 says a review was conducted with the NYC Transit Cost Price Analysis Unit.",
+        "Target canonical record: display_name 'NYC Transit Cost Price Analysis Unit', entity_name 'NYC Transit's Cost Price Analysis Unit', entity_type 'unit', evidence meeting_doc_105946#p007_c0011 says the final proposal was reviewed by NYC Transit's Cost Price Analysis Unit."
+      ],
+      "reason": "Exact unit identity; the possessive target entity_name and non-possessive alias entity_name refer to the same NYC Transit Cost Price Analysis Unit.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_198": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_penn-station-131526",
+      "target_id": "entity_penn-station-127546",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_penn-station-127546 and entity_penn-station-131526 share identity key entity_penn-station."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Penn Station', entity_name 'Penn Station', entity_type 'station', evidence meeting_doc_131526#p001_c0007 describes West Side Storage Yard as the primary storage facility for Penn Station.",
+        "Target canonical record: display_name 'Penn Station', entity_name 'Penn Station', entity_type 'station', evidence meeting_doc_127546#p001_c0008 also describes West Side Storage Yard as the primary storage facility for Penn Station and has additional Penn Station evidence from meeting_doc_157681 and meeting_doc_33886."
+      ],
+      "reason": "Exact station identity; both records name Penn Station and the target has broader source coverage.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_198": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_west-side-storage-yard-127546",
+      "target_id": "entity_west-side-yard-131526",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_west-side-storage-yard-127546 and entity_west-side-yard-131526 share identity key entity_west-side-storage-yard."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'West Side Storage Yard', entity_name 'West Side Storage Yard', entity_type 'facility', evidence meeting_doc_127546#p001_c0008 says all yard tracks within West Side Storage Yard would be out of service for switch installations.",
+        "Target canonical record: display_name 'West Side Yard / West Side Storage Yard', entity_name 'West Side Storage Yard', entity_type 'facility', evidence meeting_doc_131526#p001_c0007 describes the same West Side Storage Yard as the primary storage facility for Penn Station."
+      ],
+      "reason": "Exact facility identity; West Side Yard and West Side Storage Yard are represented as the same facility in the target display name and entity_name.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_198": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_meeting-doc-mnr-operations-planning-analysis",
+      "target_id": "entity_mnr-ops-planning-analysis-192151",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_meeting-doc-mnr-operations-planning-analysis and entity_mnr-ops-planning-analysis-192151 share identity key entity_operations-planning-and-analysis."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Metro-North Railroad Operations Planning & Analysis', entity_name 'Operations Planning & Analysis', entity_type 'department', evidence meeting_doc_124191#p002_c0002 names Operations Planning & Analysis.",
+        "Target canonical record: display_name 'Operations Planning & Analysis (Metro-North)', entity_name 'Operations Planning & Analysis', entity_type 'department', evidence meeting_doc_192151#p001_c0045 names Operations Planning & Analysis."
+      ],
+      "reason": "Exact Metro-North department identity; both records preserve the same department name, with Metro-North scope explicit in the display names/record ids.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_198": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_meeting-doc-mnr-operations",
+      "target_id": "entity_mnr-operations-192151",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_meeting-doc-mnr-operations and entity_mnr-operations-192151 share identity key entity_operations."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Metro-North Railroad Operations', entity_name 'Operations', entity_type 'department', evidence meeting_doc_102696#p003_c0005 names Operations in Metro-North committee context.",
+        "Target canonical record: display_name 'Operations (Metro-North)', entity_name 'Operations', entity_type 'department', evidence meeting_doc_192151#p002_c0003 names Operations."
+      ],
+      "reason": "Same Metro-North Operations department; unlike generic cross-agency Operations labels, both record ids/display names carry Metro-North scope.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_198": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_mike-flynn-commissioner-nyc-dot",
+      "target_id": "entity_nycdot-commissioner-mike-flynn",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_mike-flynn-commissioner-nyc-dot and entity_nycdot-commissioner-mike-flynn share identity key entity_mike-flynn."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Mike Flynn, Commissioner', entity_name 'Mike Flynn', entity_type 'person', evidence flatbush_ave_state_st_grand_army_plaza_street_design_checklist#p001_c0002 names Mike Flynn, Commissioner.",
+        "Target canonical record: display_name 'Mike Flynn, NYC DOT Commissioner', entity_name 'Mike Flynn', entity_type 'government_official', evidence fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026#p002_c0002 names Commissioner Mike Flynn."
+      ],
+      "reason": "Exact person identity for Mike Flynn as commissioner; this is distinct from existing do-not-merge guardrails that prevent merging the person with the NYC DOT agency.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_198": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_meeting-doc-164901-peter-kohner",
+      "target_id": "entity_peter-kohner-feb2024",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_meeting-doc-164901-peter-kohner and entity_peter-kohner-feb2024 share identity key entity_peter-kohner."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'entity_meeting_doc_164901_peter_kohner', entity_name 'Peter Kohner', entity_type 'person', evidence meeting_doc_164901#p006_c0006 names Peter Kohner, Senior Vice President, Infrastructure.",
+        "Target canonical record: display_name 'Peter Kohner, Senior Vice President of Infrastructure', entity_name 'Peter Kohner', entity_type 'person', evidence meeting_doc_133356#p006_c0004 names Peter Kohner, Senior Vice President of Infrastructure."
+      ],
+      "reason": "Exact person identity with matching name and senior infrastructure role; the alias is a meeting-doc extraction of the same Peter Kohner record.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_198": true
+      },
+      "confidence": "high"
+    }
+  ],
+  "deferred": [
+    {
+      "global_kind": "entity",
+      "reason": "Deferred generic Community Advisory Committee collisions because the same CAC label appears across distinct SBS corridor/project contexts; exact project scope needs relation/context review before aliasing.",
+      "confidence": "low"
+    },
+    {
+      "global_kind": "entity",
+      "reason": "Deferred boroughless community-board number collisions, including Community Board 1/4/5/7 examples where the validator key is shared but borough scope differs or is ambiguous.",
+      "confidence": "low"
+    },
+    {
+      "global_kind": "entity",
+      "reason": "Deferred initial-only person duplicates such as H. Mihaltses, P. Dietlin, M. Herbst, N. Zuckerman, S. Chu, and N. Brown; matching initials alone are not enough for this safe alias batch.",
+      "confidence": "low"
+    },
+    {
+      "global_kind": "entity",
+      "reason": "Deferred person clusters that appear to have a better existing root target outside the validator pair, such as David S. Mack or Lisette Camillo/Camilo variants, to avoid creating a side cluster.",
+      "confidence": "low"
+    },
+    {
+      "global_kind": "entity",
+      "reason": "Deferred broad program-label duplicates such as Vision Zero where source snippets may identify a logo or priority-corridor label rather than prove all records should collapse into one entity identity.",
+      "confidence": "low"
+    }
+  ],
+  "blockers": [],
+  "deterministic_inspection": {
+    "commands": [
+      "rg --files data/review_notes | rg 'identity.*(18[6-9]|19[0-9]|20[0-9])|identity-batch' | sort",
+      "jq inspection of data/identity-overrides/merges.json and data/identity-overrides/do-not-merge.json",
+      "jq recursive extraction of entity ids from data/review_notes/codex-identity-batch186-prep.json through codex-identity-dnm-batch198-prep.json",
+      "bun --eval read-only validateRepo duplicate_global_identity mining over current canonical entity records",
+      "bun --eval read-only canonical record/evidence inspection for selected alias/target pairs",
+      "rg source-block checks for selected evidence literals"
+    ],
+    "guard_summary": {
+      "selected_alias_count": 10,
+      "all_global_kind_entity": true,
+      "all_aliases_present": true,
+      "all_targets_present": true,
+      "all_aliases_not_already_merged": true,
+      "all_targets_not_aliases": true,
+      "all_aliases_not_merge_targets": true,
+      "all_pairs_non_cyclic": true,
+      "all_pairs_absent_from_do_not_merge": true,
+      "all_pairs_absent_from_identity186_198_touched_ids": true,
+      "provider_backed_commands_run": false
+    }
+  }
+}

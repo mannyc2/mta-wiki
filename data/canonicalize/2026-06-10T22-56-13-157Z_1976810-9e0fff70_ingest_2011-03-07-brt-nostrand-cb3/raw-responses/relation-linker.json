@@ -1,0 +1,392 @@
+{
+  "run_id": "2026-06-10T22-56-13-157Z_1976810-9e0fff70_ingest_2011-03-07-brt-nostrand-cb3",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T01:06:13.695Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "rel-01-fordham-travel-time",
+        "local_observation_id": "metric_fordham_travel_time_reduction_20pct",
+        "decision": "relate",
+        "rationale": "Page 4 of the presentation references Fordham Road SBS results as an example. The '20% reduction in running time' is explicitly presented under the 'Fordham Road SBS' section on page 4. This metric claim belongs to the Fordham Road SBS project.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_fordham-road-sbs-2010-01-14",
+            "object_id": "metric_fordham-travel-time-reduction-20pct_3",
+            "description": "Fordham Road SBS: 20% reduction in running time",
+            "evidence_refs": [
+              {
+                "source_id": "2011_03_07_brt_nostrand_cb3",
+                "block_id": "p004_c0003",
+                "source_quote": "20% reduction in running time"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p004_c0003",
+            "source_quote": "20% reduction in running time"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-02-fordham-ridership",
+        "local_observation_id": "metric_fordham_ridership_increase_10pct",
+        "decision": "relate",
+        "rationale": "Page 4 of the presentation references Fordham Road SBS ridership results as an example. '10% increase' appears under the Fordham Road SBS section.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_fordham-road-sbs-2010-01-14",
+            "object_id": "metric_fordham-ridership-increase-10pct",
+            "description": "Fordham Road SBS: 10% ridership increase",
+            "evidence_refs": [
+              {
+                "source_id": "2011_03_07_brt_nostrand_cb3",
+                "block_id": "p004_c0005",
+                "source_quote": "10% increase"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p004_c0005",
+            "source_quote": "10% increase"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-03-fordham-satisfaction",
+        "local_observation_id": "metric_fordham_customer_satisfaction_98pct",
+        "decision": "relate",
+        "rationale": "Page 4 of the presentation references Fordham Road SBS customer satisfaction. '98% satisfied or very satisfied' appears under the Fordham Road SBS section.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_fordham-road-sbs-2010-01-14",
+            "object_id": "metric_fordham-customer-satisfaction-98pct",
+            "description": "Fordham Road SBS: 98% customer satisfaction",
+            "evidence_refs": [
+              {
+                "source_id": "2011_03_07_brt_nostrand_cb3",
+                "block_id": "p004_c0007",
+                "source_quote": "98% satisfied or very satisfied"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p004_c0007",
+            "source_quote": "98% satisfied or very satisfied"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-04-m15-faster",
+        "local_observation_id": "metric_m15_sbs_18pct_faster",
+        "decision": "relate",
+        "rationale": "Page 5 of the presentation references M15 SBS initial results as an example. 'SBS buses are 18% faster' appears under the 'First Avenue/Second Avenue SBS' section on page 5.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "metric_m15-sbs-18pct-faster",
+            "description": "M15 SBS: 18% faster",
+            "evidence_refs": [
+              {
+                "source_id": "2011_03_07_brt_nostrand_cb3",
+                "block_id": "p005_c0006",
+                "source_quote": "Initial results: SBS buses are 18% faster"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p005_c0006",
+            "source_quote": "Initial results: SBS buses are 18% faster"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-05-claim-meetings",
+        "local_observation_id": "claim_community_planning_23_meetings",
+        "decision": "relate",
+        "rationale": "Page 14 of the presentation explicitly states '23 meetings to date with elected officials, Community Boards, and the public about Nostrand/Rogers BRT'. This is a claim about the Nostrand Rogers SBS project.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "claim_community-planning-23-meetings",
+            "description": "23 community meetings held about Nostrand/Rogers BRT",
+            "evidence_refs": [
+              {
+                "source_id": "2011_03_07_brt_nostrand_cb3",
+                "block_id": "p014_c0002",
+                "source_quote": "23 meetings to date with elected officials, Community Boards, and the public about Nostrand/Rogers BRT"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p014_c0002",
+            "source_quote": "23 meetings to date with elected officials, Community Boards, and the public about Nostrand/Rogers BRT"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-06-same-fare",
+        "local_observation_id": "claim_sbs_same_fare_as_local",
+        "decision": "relate",
+        "rationale": "Page 6 of the presentation states 'SBS buses will have the same fare as the locals.' This is a claim explicitly about the Nostrand SBS project features.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "claim_sbs-same-fare-as-local",
+            "description": "SBS buses will have same fare as locals",
+            "evidence_refs": [
+              {
+                "source_id": "2011_03_07_brt_nostrand_cb3",
+                "block_id": "p006_c0002",
+                "source_quote": "SBS buses will have the same fare as the locals."
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p006_c0002",
+            "source_quote": "SBS buses will have the same fare as the locals."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-07-brt-study-selects-nostrand",
+        "local_observation_id": "event_brt_study_selects_nostrand_2005_2007",
+        "decision": "relate",
+        "rationale": "Page 15 shows the timeline with 'BRT Study and Public Input selects Nostrand/Rogers Aves as one of five BRT corridors for further development' under 2005-2007. This is a timeline event for the Nostrand Rogers SBS project.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_brt-study-selects-nostrand-2005-2007",
+            "description": "BRT Study selects Nostrand/Rogers for development (2005-2007)",
+            "evidence_refs": [
+              {
+                "source_id": "2011_03_07_brt_nostrand_cb3",
+                "block_id": "p015_c0002",
+                "source_quote": "BRT Study and Public Input selects Nostrand/Rogers Aves as one of five BRT corridors for further development"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p015_c0002",
+            "source_quote": "BRT Study and Public Input selects Nostrand/Rogers Aves as one of five BRT corridors for further development"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-08-dup-event",
+        "local_observation_id": "event_brt_study_selects_nostrand_2005_2007",
+        "decision": "skip",
+        "rationale": "This is a duplicate event with same base_record_id as observation 7. The first instance covers the relation. This second instance has no new evidence to add.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p015_c0002",
+            "source_quote": "BRT Study and Public Input selects Nostrand/Rogers Aves as one of five BRT corridors for further development"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-09-cac-meetings-2009-2010",
+        "local_observation_id": "event_cac_meetings_nostrand_2009_2010",
+        "decision": "relate",
+        "rationale": "Page 15 timeline shows '1st CAC Meeting' and '2nd & 3rd CAC Meetings' under 2009-2010 as part of the Nostrand/Rogers SBS timeline.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_cac-meetings-nostrand-2009-2010",
+            "description": "Community Advisory Committee meetings 2009-2010 for Nostrand/Rogers SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2011_03_07_brt_nostrand_cb3",
+                "block_id": "p015_c0002",
+                "source_quote": "1st CAC Meeting 2 nd & 3 rd CAC Meetings"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p015_c0002",
+            "source_quote": "1st CAC Meeting 2 nd & 3 rd CAC Meetings"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-10-sbs-start-2013",
+        "local_observation_id": "event_sbs_start_of_service_nostrand_2013",
+        "decision": "relate",
+        "rationale": "Page 16 timeline states '2013: SBS Start of Service is scheduled for the Summer quarter'. This is a timeline event for Nostrand/Rogers SBS.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_sbs-start-of-service-nostrand-2013",
+            "description": "SBS Start of Service target Summer 2013 for Nostrand/Rogers",
+            "evidence_refs": [
+              {
+                "source_id": "2011_03_07_brt_nostrand_cb3",
+                "block_id": "p016_c0002",
+                "source_quote": "2013: SBS Start of Service (Service Start of Service) is scheduled for the Summer quarter."
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p016_c0002",
+            "source_quote": "2013: SBS Start of Service (Service Start of Service) is scheduled for the Summer quarter."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-11-nyct-dot-brt-study-2004",
+        "local_observation_id": "event_nyct_dot_brt_study_initiated_2004",
+        "decision": "relate",
+        "rationale": "Page 15 timeline shows 'NYCT & DOT initiate NYC BRT Study' under 2004. This is a precursor event in the Nostrand/Rogers SBS timeline.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_nyct-dot-brt-study-initiated-2004",
+            "description": "NYCT & DOT initiate NYC BRT Study in 2004",
+            "evidence_refs": [
+              {
+                "source_id": "2011_03_07_brt_nostrand_cb3",
+                "block_id": "p015_c0002",
+                "source_quote": "NYCT & DOT initiate NYC BRT Study"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p015_c0002",
+            "source_quote": "NYCT & DOT initiate NYC BRT Study"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-12-open-house-2010",
+        "local_observation_id": "event_community_open_house_2010",
+        "decision": "relate",
+        "rationale": "Page 14 states '3 Community Advisory Committee meetings and one Public Open House to date'. This is a timeline event for Nostrand/Rogers SBS.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_community-open-house-2010",
+            "description": "Public Open House for Nostrand/Rogers BRT",
+            "evidence_refs": [
+              {
+                "source_id": "2011_03_07_brt_nostrand_cb3",
+                "block_id": "p014_c0003",
+                "source_quote": "3 Community Advisory Committee meetings and one Public Open House to date"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p014_c0003",
+            "source_quote": "3 Community Advisory Committee meetings and one Public Open House to date"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-13-cac4-2011",
+        "local_observation_id": "event_cac4_cb_presentations_2011",
+        "decision": "relate",
+        "rationale": "Page 16 timeline states '2011: CAC #4 and CB Presentations are scheduled for the Winter and Spring quarters'. This is a timeline event for Nostrand/Rogers SBS.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_cac4-cb-presentations-2011",
+            "description": "CAC #4 and CB Presentations scheduled Winter/Spring 2011",
+            "evidence_refs": [
+              {
+                "source_id": "2011_03_07_brt_nostrand_cb3",
+                "block_id": "p016_c0002",
+                "source_quote": "2011: CAC #4 (Construction Activity Center) and CB Presentations (Construction Bid Presentations) are scheduled for the Winter and Spring quarters."
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p016_c0002",
+            "source_quote": "2011: CAC #4 (Construction Activity Center) and CB Presentations (Construction Bid Presentations) are scheduled for the Winter and Spring quarters."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-14-m15-sbs-launch",
+        "local_observation_id": "event_m15_sbs_launch_october_2010",
+        "decision": "relate",
+        "rationale": "Page 5 states 'Service began October 2010 on the M15 SBS'. This is a timeline event for the M15/First-Second Ave SBS project.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "event_m15-sbs-launch-october-2010",
+            "description": "M15 SBS service began October 2010",
+            "evidence_refs": [
+              {
+                "source_id": "2011_03_07_brt_nostrand_cb3",
+                "block_id": "p005_c0002",
+                "source_quote": "Service began October 2010 on the M15 SBS"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p005_c0002",
+            "source_quote": "Service began October 2010 on the M15 SBS"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-47-658Z_2111393-5706791a_canonicalize_2026-06-10t22-56-13-157z-1976810-9e0fff70-ingest-2011-03-07-brt-nostrand-cb3-relation-linker"
+}

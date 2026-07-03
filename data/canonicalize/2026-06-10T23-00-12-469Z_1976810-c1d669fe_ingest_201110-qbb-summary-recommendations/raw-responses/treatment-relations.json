@@ -1,0 +1,273 @@
+{
+  "run_id": "2026-06-10T23-00-12-469Z_1976810-c1d669fe_ingest_201110-qbb-summary-recommendations",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T02:06:05.572Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "rel-qbb-1a",
+        "local_observation_id": "treatment_rec_1a_special_bus_phase",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_qbb-bus-priority-study",
+            "object_id": "treatment_rec-1a-special-bus-phase",
+            "description": "Recommendation #1A from Queensboro Bridge Bus Priority Study",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_summary_recommendations",
+                "block_id": "p007_c0002",
+                "source_quote": "Queensboro Bridge Bus Priority Study"
+              },
+              {
+                "source_id": "201110_qbb_summary_recommendations",
+                "block_id": "p007_c0004",
+                "source_quote": "Recommendation #1A"
+              },
+              {
+                "source_id": "201110_qbb_summary_recommendations",
+                "block_id": "p007_c0006",
+                "source_quote": "Solution: special bus phase to allow for turn"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page explicitly headed 'Queensboro Bridge Bus Priority Study'; Recommendation #1A is a study deliverable for the QBB Bus Priority Study project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p007_c0002",
+            "source_quote": "Queensboro Bridge Bus Priority Study"
+          },
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p007_c0004",
+            "source_quote": "Recommendation #1A"
+          },
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p007_c0006",
+            "source_quote": "Solution: special bus phase to allow for turn"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-qbb-1b",
+        "local_observation_id": "treatment_rec_1b_60th_st_reconfigure",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_qbb-bus-priority-study",
+            "object_id": "treatment_rec-1b-60th-st-reconfigure",
+            "description": "Recommendation #1B from Queensboro Bridge Bus Priority Study",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_summary_recommendations",
+                "block_id": "p009_c0002",
+                "source_quote": "Queensboro Bridge Bus Priority Study"
+              },
+              {
+                "source_id": "201110_qbb_summary_recommendations",
+                "block_id": "p009_c0003",
+                "source_quote": "60 th Street Bus Stop Recommendation #1B"
+              },
+              {
+                "source_id": "201110_qbb_summary_recommendations",
+                "block_id": "p009_c0005",
+                "source_quote": "Solution: Reconfigure 60 th Street to provide 2 WB bus lanes and stops (Q60 & Q101)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page explicitly headed 'Queensboro Bridge Bus Priority Study'; Recommendation #1B is a study deliverable for the QBB Bus Priority Study project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p009_c0002",
+            "source_quote": "Queensboro Bridge Bus Priority Study"
+          },
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p009_c0003",
+            "source_quote": "60 th Street Bus Stop Recommendation #1B"
+          },
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p009_c0005",
+            "source_quote": "Solution: Reconfigure 60 th Street to provide 2 WB bus lanes and stops (Q60 & Q101)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-qbb-2",
+        "local_observation_id": "treatment_rec_2_leading_pedestrian_interval_57th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_qbb-bus-priority-study",
+            "object_id": "treatment_rec-2-leading-pedestrian-interval-57th",
+            "description": "Recommendation #2 from Queensboro Bridge Bus Priority Study",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_summary_recommendations",
+                "block_id": "p010_c0002",
+                "source_quote": "Queensboro Bridge Bus Priority Study"
+              },
+              {
+                "source_id": "201110_qbb_summary_recommendations",
+                "block_id": "p010_c0003",
+                "source_quote": "Third Avenue at 57 th Street Recommendation #2"
+              },
+              {
+                "source_id": "201110_qbb_summary_recommendations",
+                "block_id": "p010_c0005",
+                "source_quote": "Leading Pedestrian Interval an opportunity for EB bus signal priority"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page explicitly headed 'Queensboro Bridge Bus Priority Study'; Recommendation #2 is a study deliverable for the QBB Bus Priority Study project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p010_c0002",
+            "source_quote": "Queensboro Bridge Bus Priority Study"
+          },
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p010_c0003",
+            "source_quote": "Third Avenue at 57 th Street Recommendation #2"
+          },
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p010_c0005",
+            "source_quote": "Leading Pedestrian Interval an opportunity for EB bus signal priority"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-qbb-3",
+        "local_observation_id": "treatment_rec_3_lpi_queens_plaza_crescent",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_qbb-bus-priority-study",
+            "object_id": "treatment_rec-3-lpi-queens-plaza-crescent",
+            "description": "Recommendation #3 from Queensboro Bridge Bus Priority Study",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_summary_recommendations",
+                "block_id": "p013_c0002",
+                "source_quote": "Queensboro Bridge Bus Priority Study Queens Plaza North at Crescent Street Recommendation #3"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page explicitly headed 'Queensboro Bridge Bus Priority Study'; Recommendation #3 is a study deliverable for the QBB Bus Priority Study project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p013_c0002",
+            "source_quote": "Queensboro Bridge Bus Priority Study Queens Plaza North at Crescent Street Recommendation #3"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-qbb-4",
+        "local_observation_id": "treatment_rec_4_signal_timing_thomson_van_dam",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_qbb-bus-priority-study",
+            "object_id": "treatment_rec-4-signal-timing-thomson-van-dam",
+            "description": "Recommendation #4 from Queensboro Bridge Bus Priority Study",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_summary_recommendations",
+                "block_id": "p015_c0002",
+                "source_quote": "Queensboro Bridge Bus Priority Study"
+              },
+              {
+                "source_id": "201110_qbb_summary_recommendations",
+                "block_id": "p015_c0003",
+                "source_quote": "Thomson Avenue at Van Dam Street Recommendation #4"
+              },
+              {
+                "source_id": "201110_qbb_summary_recommendations",
+                "block_id": "p015_c0006",
+                "source_quote": "New signal timing:"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page explicitly headed 'Queensboro Bridge Bus Priority Study'; Recommendation #4 is a study deliverable for the QBB Bus Priority Study project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p015_c0002",
+            "source_quote": "Queensboro Bridge Bus Priority Study"
+          },
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p015_c0003",
+            "source_quote": "Thomson Avenue at Van Dam Street Recommendation #4"
+          },
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p015_c0006",
+            "source_quote": "New signal timing:"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-qbb-5",
+        "local_observation_id": "treatment_rec_5_express_bus_lane_thomson_ramps",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_qbb-bus-priority-study",
+            "object_id": "treatment_rec-5-express-bus-lane-thomson-ramps",
+            "description": "Recommendation #5 from Queensboro Bridge Bus Priority Study",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_summary_recommendations",
+                "block_id": "p016_c0002",
+                "source_quote": "Queensboro Bridge Bus Priority Study Upper Level Express Buses Recommendation #5"
+              },
+              {
+                "source_id": "201110_qbb_summary_recommendations",
+                "block_id": "p016_c0004",
+                "source_quote": "DOT is examining options for bus priority on Thomson Ave ramps, including an express bus lane"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page explicitly headed 'Queensboro Bridge Bus Priority Study'; Recommendation #5 is a study deliverable for the QBB Bus Priority Study project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p016_c0002",
+            "source_quote": "Queensboro Bridge Bus Priority Study Upper Level Express Buses Recommendation #5"
+          },
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p016_c0004",
+            "source_quote": "DOT is examining options for bus priority on Thomson Ave ramps, including an express bus lane"
+          }
+        ]
+      }
+    ],
+    "packet_id": "treatment-relations"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-02-57-627Z_2111393-f0a3c8c5_canonicalize_2026-06-10t23-00-12-469z-1976810-c1d669fe-ingest-201110-qbb-summary-recommendations-treatment-relations"
+}

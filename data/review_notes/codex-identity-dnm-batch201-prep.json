@@ -1,0 +1,333 @@
+{
+  "note_id": "codex-identity-dnm-batch201-prep",
+  "batch": 201,
+  "created_at": "2026-06-23T11:13:18Z",
+  "scope": {
+    "operation": "prepare_do_not_merge_suppressions_only",
+    "allowed_global_kinds": [
+      "route",
+      "corridor"
+    ],
+    "issue_type": "duplicate_global_identity",
+    "selection_note": "Codex-only do-not-merge review artifact after identity196-dnm197-198. Scope is remaining current route/corridor duplicate_global_identity pairs only. No provider-backed commands were run.",
+    "write_limit": "Exactly one artifact was written: data/review_notes/codex-identity-dnm-batch201-prep.json. No merges.json, do-not-merge.json, LOG.md, manifest, submissions, canonical outputs, DB, materialized outputs, or wiki files were edited.",
+    "excluded_if_already_direct_or_resolved_dnm": true,
+    "excluded_if_already_merged_or_resolved_same_target": true,
+    "provider_backed_commands_run": false
+  },
+  "deterministic_inspection": [
+    {
+      "purpose": "Read-only live validation scan for duplicate_global_identity issues restricted to Global route/corridor records.",
+      "command": "bun -e \"import { validateRepo } from './packages/pipeline/src/validate.ts'; ...\"",
+      "result": "38 current route/corridor duplicate_global_identity messages were inspected."
+    },
+    {
+      "purpose": "Read-only guard checks against current merge and do-not-merge override state.",
+      "inputs": [
+        "data/identity-overrides/merges.json",
+        "data/identity-overrides/do-not-merge.json"
+      ],
+      "result": "Selected pairs had no direct/resolved DNM hit and did not resolve to the same alias target."
+    },
+    {
+      "purpose": "Read-only canonical/source evidence inspection.",
+      "inputs": [
+        "data/canonical/routes.jsonl",
+        "data/canonical/corridors.jsonl",
+        "raw/sources/*/blocks.jsonl"
+      ]
+    }
+  ],
+  "prepared_count": 8,
+  "proposed_do_not_merge_pairs": [
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_b82-limited-brt-south-brooklyn-2017",
+        "route_b82e-express-cb18-jun2017"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global route records route_b82-limited-brt-south-brooklyn-2017 and route_b82e-express-cb18-jun2017 share identity key route_b82."
+      ],
+      "source_canonical_evidence": [
+        "route_b82-limited-brt-south-brooklyn-2017: display_name 'B82 Limited', route_id 'B82', route_type_normalized 'limited_stop', service_variant 'limited_stop', borough 'Brooklyn', description says existing B82 Limited service would be converted to B82 SBS.",
+        "route_b82e-express-cb18-jun2017: display_name 'B82 Express (B82E)', route_id 'B82E', route_label 'B82E', route_type_normalized 'express', service_variant 'express', borough 'Brooklyn', description says existing B82 Express bus service on Flatlands Ave.",
+        "Source block brt_south_brooklyn_b82#p011_c0002 says 'Existing B82 Limited Route'; source block brt_south_brooklyn_b82_cb18_jun2017#p037_c0004 separately lists stop-sign labels B82 and B82E."
+      ],
+      "reason": "Shared base label B82 is not enough to merge a limited-stop route with the distinct B82E express service label and express service variant.",
+      "guard_checks": {
+        "both_present": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "current_validator_duplicate_global_identity": true
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "route_b82-limited-brt-south-brooklyn-2017 <> route_b82e-express-cb18-jun2017 on route_b82"
+      ]
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_bx41-limited-2012",
+        "route_bx41-local-2012-02-brt-webster-cac1"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global route records route_bx41-limited-2012 and route_bx41-local-2012-02-brt-webster-cac1 share identity key route_bx41."
+      ],
+      "source_canonical_evidence": [
+        "route_bx41-limited-2012: display_name 'Bx41 Limited', route_id 'Bx41', route_label 'Bx41 Limited', route_type_normalized 'limited_stop', service_variant 'limited_stop'.",
+        "route_bx41-local-2012-02-brt-webster-cac1: display_name 'Bx41 Local', route_id 'Bx41', route_label 'Bx41 Local', route_type_normalized 'local', service_variant 'local'.",
+        "Source block 2012_10_webster_sbs_newsletter#p001_c0006 distinguishes the variants: Bx41 SBS replaces Bx41 Limited, while the Bx41 local route remains the same."
+      ],
+      "reason": "The pair is a direct local-versus-limited service-variant mismatch on the same base route. The source explicitly treats Bx41 Local and Bx41 Limited as separate services.",
+      "guard_checks": {
+        "both_present": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "current_validator_duplicate_global_identity": true
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "route_bx41-limited-2012 <> route_bx41-local-2012-02-brt-webster-cac1 on route_bx41"
+      ]
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_23rd-st-sbs",
+        "route_m23-local-cb4-apr2016"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global route records route_23rd-st-sbs and route_m23-local-cb4-apr2016 share identity key route_m23."
+      ],
+      "source_canonical_evidence": [
+        "route_23rd-st-sbs: display_name 'M23-SBS - ABLE route', route_label 'M23-SBS', route_type_normalized 'select_bus_service', service_variant 'sbs'.",
+        "route_m23-local-cb4-apr2016: display_name 'M23', route_name 'M23 Manhattan Crosstown', route_type_normalized 'local', service_variant 'local'.",
+        "Source block brt_route_index#p001_b0001 says 23rd Street Select Bus Service began service on the M23 bus route; source block brt_m23_cb4_apr2016#p006_c0002 describes the 15,000 daily M23 passengers before the SBS conversion context."
+      ],
+      "reason": "The records preserve different M23 service variants: local crosstown route versus Select Bus Service. Upgrade/replacement context should remain relational, not a route identity merge.",
+      "guard_checks": {
+        "both_present": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "current_validator_duplicate_global_identity": true
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "route_23rd-st-sbs <> route_m23-local-cb4-apr2016 on route_m23"
+      ]
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_m34-local-2011",
+        "route_m34a-sbs"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global route records route_m34-local-2011 and route_m34a-sbs share identity key route_m34."
+      ],
+      "source_canonical_evidence": [
+        "route_m34-local-2011: display_name 'M34 Bus Route (Local)', route_id 'M34', route_type_normalized 'local', service_variant 'local'.",
+        "route_m34a-sbs: display_name 'M34A SBS on 34th Street Busway', route_id 'M34A', route_label 'M34A SBS', route_type_normalized 'select_bus_service', service_variant 'sbs'.",
+        "Source block 201110_brt_34th_open_house_slides#p028_c0002 says M16 was to be renamed M34A SBS; route_m34-local-2011 evidence preserves the separate M34 local route."
+      ],
+      "reason": "This is both a branch mismatch and a service-variant mismatch: M34 local is not the M34A SBS branch created from the M16 rename.",
+      "guard_checks": {
+        "both_present": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "current_validator_duplicate_global_identity": true
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "route_m34-local-2011 <> route_m34a-sbs on route_m34"
+      ]
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_b46-local-limited-20110915",
+        "route_utica-ave-sbs"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global route records route_b46-local-limited-20110915 and route_utica-ave-sbs share identity key route_b46."
+      ],
+      "source_canonical_evidence": [
+        "route_b46-local-limited-20110915: display_name 'B46 (Utica Avenue)', route_type_normalized 'local_and_limited_stop', description says B46 local buses make all stops and B46 Limited-Stop buses operate seven days a week.",
+        "route_utica-ave-sbs: display_name 'B46-SBS - ABLE route', route_id 'B46+', route_type_normalized 'select_bus_service', service_variant 'sbs'.",
+        "Source block 2011_09_15_sbs_utica_cb8_9_17#p004_c0003 distinguishes B46 local buses and B46 Limited-Stop buses; source block brt_route_index#p001_b0001 says Utica Avenue Select Bus Service began service on the B46 route."
+      ],
+      "reason": "The pair is a local/limited predecessor or bundle record versus the B46 SBS route. The shared B46 base label is lifecycle/corridor context, not durable same-route identity.",
+      "guard_checks": {
+        "both_present": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "current_validator_duplicate_global_identity": true
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "route_b46-local-limited-20110915 <> route_utica-ave-sbs on route_b46"
+      ]
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_bx41-limited-2012",
+        "route_webster-ave-sbs"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global route records route_bx41-limited-2012 and route_webster-ave-sbs share identity key route_bx41.",
+        "duplicate_global_identity: Global route records route_bx41-limited-2012 and route_webster-ave-sbs share identity key route_bx41-sbs."
+      ],
+      "source_canonical_evidence": [
+        "route_bx41-limited-2012: display_name 'Bx41 Limited', route_type_normalized 'limited_stop', service_variant 'limited_stop', description says Bx41 Limited was replaced by Bx41 SBS.",
+        "route_webster-ave-sbs: display_name 'BX41-SBS - ABLE route', route_id 'BX41+', route_type_normalized 'select_bus_service', service_variant 'sbs'.",
+        "Source block 2012_10_webster_sbs_newsletter#p001_c0006 says Bx41 SBS replaces the Bx41 Limited; source block brt_route_index#p001_b0001 says Webster Avenue Select Bus Service began service on the Bx41 route."
+      ],
+      "reason": "The records are predecessor limited-stop service versus the SBS replacement. Replacement evidence is a relation, not proof of same canonical route identity.",
+      "guard_checks": {
+        "both_present": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "current_validator_duplicate_global_identity": true
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "route_bx41-limited-2012 <> route_webster-ave-sbs on route_bx41",
+        "route_bx41-limited-2012 <> route_webster-ave-sbs on route_bx41-sbs"
+      ]
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_b82-southern-brooklyn",
+        "corridor_brt-b82-mar2018-kings-highway"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_b82-southern-brooklyn and corridor_brt-b82-mar2018-kings-highway share identity key corridor_kings-highway."
+      ],
+      "source_canonical_evidence": [
+        "corridor_b82-southern-brooklyn: display_name 'B82 Corridor - Kings Hwy and Flatlands Ave', corridor_name 'B82 Corridor', street 'Kings Hwy and Flatlands Ave', 10-mile east-west corridor from Bay Pkwy to Pennsylvania Ave.",
+        "corridor_brt-b82-mar2018-kings-highway: display_name 'Kings Highway (Southern Brooklyn)', corridor_name 'Kings Highway', limits 'Bay Pkwy to Ocean Ave and E 23 St to Ave K'.",
+        "Source block brt_south_brooklyn_b82_mar2018#p021_c0001 names the specific Kings Highway section; #p021_c0002 says it is used by B82 Local, B82 Limited, B7 Local, school buses, coach buses, and other buses."
+      ],
+      "reason": "Whole-corridor/subsegment mismatch: the B82 Southern Brooklyn corridor spans Kings Highway plus Flatlands Avenue and other limits, while the second record is a bounded Kings Highway section. A shared street segment should not collapse the whole corridor into the subsegment.",
+      "guard_checks": {
+        "both_present": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "current_validator_duplicate_global_identity": true
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "corridor_b82-southern-brooklyn <> corridor_brt-b82-mar2018-kings-highway on corridor_kings-highway"
+      ]
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_cross-bay-blvd-2015",
+        "corridor_cross-bay-blvd-liberty-109av-2015"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_cross-bay-blvd-2015 and corridor_cross-bay-blvd-liberty-109av-2015 share identity key corridor_cross-bay-blvd."
+      ],
+      "source_canonical_evidence": [
+        "corridor_cross-bay-blvd-2015: display_name 'Cross Bay Boulevard (north of 165 Av)', limits 'north of 165 Av', description says it is a segment of the SBS corridor with offset bus lanes.",
+        "corridor_cross-bay-blvd-liberty-109av-2015: display_name 'Cross Bay Boulevard', limits 'at Liberty Avenue and 109 Avenue', description says it is the Cross Bay Boulevard portion of the Q52/Q53 SBS draft plans.",
+        "Source block 2015_04_30_brt_woodhaven_dw4_presentation#p013_c0009 names Cross Bay Blvd north of 165 Av; source blocks 2015_04_16_brt_woodhaven_dw1_draftplans#p004_c0009 and #p004_c0010 name discrete locations at Liberty Avenue and 109 Av."
+      ],
+      "reason": "Physical-extent mismatch: 'north of 165 Av' and discrete draft-plan points at Liberty Avenue and 109 Av are not the same corridor extent. Shared Cross Bay Boulevard street name is too broad for identity.",
+      "guard_checks": {
+        "both_present": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "current_validator_duplicate_global_identity": true
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "corridor_cross-bay-blvd-2015 <> corridor_cross-bay-blvd-liberty-109av-2015 on corridor_cross-bay-blvd"
+      ]
+    }
+  ],
+  "deferred": [
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_b44-brt-phase2",
+        "route_b44-sbs"
+      ],
+      "reason": "Excluded from this DNM artifact because the current merge override maps route_b44-brt-phase2 to route_b44-sbs. Other B44 route warnings should be evaluated against the resolved alias target and existing B44 variant DNM policy."
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_m14-ad-sbs",
+        "route_m14-brt-phase2"
+      ],
+      "reason": "Excluded because the current merge override maps route_m14-brt-phase2 to route_m14-ad-sbs."
+    },
+    {
+      "global_kind": "route",
+      "reason": "Deferred route_bx55-2012 vs route_bx55-lga-2012, route_q53-lga-2012 vs route_q53-sbs-ace, and route_q52-q53-sbs-proposed-2015-05 vs route_q52-sbs-queens. These look like source-context or bundle collisions, but need stronger source review before durable suppression."
+    },
+    {
+      "global_kind": "corridor",
+      "reason": "Deferred 125th Street, 14th Street, Church Avenue, Bay Parkway/Cropsey, Flatlands, Lexington, Utica, Woodhaven, and remaining Cross Bay corridor warnings where the safer next step may be a cluster-level merge/split policy rather than immediate DNM."
+    }
+  ],
+  "blockers": [],
+  "conductor_apply_note": {
+    "recommended_action": "Apply only the eight high-confidence proposed_do_not_merge_pairs above. Do not apply deferred items without a cluster-level review.",
+    "expected_effect": "Suppress 9 current route/corridor duplicate_global_identity messages: 7 single-key pair warnings plus the two-key Bx41 Limited versus Webster Avenue SBS warning."
+  }
+}

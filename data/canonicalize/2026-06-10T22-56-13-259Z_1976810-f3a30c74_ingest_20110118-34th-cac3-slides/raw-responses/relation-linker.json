@@ -1,0 +1,885 @@
+{
+  "run_id": "2026-06-10T22-56-13-259Z_1976810-f3a30c74_ingest_20110118-34th-cac3-slides",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T01:27:54.142Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "rel-metric-avg-bus-speed",
+        "decision": "relate",
+        "local_observation_id": "metric_avg_bus_speed_4_5_mph",
+        "rationale": "The metric '4.5 mph average bus speed' appears on p004 of the 34th Street Transitway CAC #3 slides as a key fact about the 34th Street corridor. It describes a condition on the 34th Street corridor and belongs to the 34th Street Transitway project.",
+        "evidence_refs": [
+          {
+            "block_id": "p004_c0004",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "4.5 mph average bus speed"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "metric_avg-bus-speed-4-5-mph",
+            "description": "Average bus speed on 34th Street corridor",
+            "evidence_refs": [
+              {
+                "block_id": "p004_c0004",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "– 33,000+ daily bus riders – 4.5 mph average bus speed – 90% of travelers on the corridor are walking or taking the bus"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "metric_avg-bus-speed-4-5-mph",
+            "description": "Average bus speed metric from Transitway project presentation",
+            "evidence_refs": [
+              {
+                "block_id": "p004_c0004",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "4.5 mph average bus speed"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-travelers-walk-or-bus",
+        "decision": "relate",
+        "local_observation_id": "metric_travelers_walk_or_bus_90pct",
+        "rationale": "The metric '90% of travelers on the corridor are walking or taking the bus' is a key fact from p004 of the 34th Street Transitway CAC #3 presentation. It describes mode share on the 34th Street corridor.",
+        "evidence_refs": [
+          {
+            "block_id": "p004_c0004",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "90% of travelers on the corridor are walking or taking the bus"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "metric_travelers-walk-or-bus-90pct",
+            "description": "Mode share on 34th Street corridor",
+            "evidence_refs": [
+              {
+                "block_id": "p004_c0004",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "– 90% of travelers on the corridor are walking or taking the bus"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "metric_travelers-walk-or-bus-90pct",
+            "description": "Mode share metric from Transitway project presentation",
+            "evidence_refs": [
+              {
+                "block_id": "p004_c0004",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "90% of travelers on the corridor are walking or taking the bus"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-daily-bus-riders",
+        "decision": "relate",
+        "local_observation_id": "metric_daily_bus_riders_33000",
+        "rationale": "The metric '33,000+ daily bus riders' is a key fact from p004 of the 34th Street Transitway CAC #3 slides describing ridership on the 34th Street corridor.",
+        "evidence_refs": [
+          {
+            "block_id": "p004_c0004",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "– 33,000+ daily bus riders"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "metric_daily-bus-riders-33000",
+            "description": "Daily bus ridership on 34th Street corridor",
+            "evidence_refs": [
+              {
+                "block_id": "p004_c0004",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "– 33,000+ daily bus riders"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "metric_daily-bus-riders-33000",
+            "description": "Daily bus ridership metric from Transitway project presentation",
+            "evidence_refs": [
+              {
+                "block_id": "p004_c0004",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "– 33,000+ daily bus riders"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-residents-no-car",
+        "decision": "relate",
+        "local_observation_id": "metric_residents_no_car_80pct",
+        "rationale": "The metric 'Over 80% of these residents do not own a car' is from p004 of the 34th Street Transitway CAC #3 slides, describing residents within 1/4 mile of the 34th Street corridor.",
+        "evidence_refs": [
+          {
+            "block_id": "p004_c0004",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "– Over 80% of these residents do not own a car"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "metric_residents-no-car-80pct",
+            "description": "Car ownership rate of residents near 34th Street corridor",
+            "evidence_refs": [
+              {
+                "block_id": "p004_c0004",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "Over 80% of these residents do not own a car"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "metric_residents-no-car-80pct",
+            "description": "Car ownership metric from Transitway project presentation",
+            "evidence_refs": [
+              {
+                "block_id": "p004_c0004",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "– Over 80% of these residents do not own a car"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-workers-transit-walk",
+        "decision": "relate",
+        "local_observation_id": "metric_workers_transit_walk_80pct",
+        "rationale": "The metric 'Over 80% of these workers commute by transit or walking' is from p004 of the 34th Street Transitway CAC #3 slides, describing workers within 1/4 mile of the corridor.",
+        "evidence_refs": [
+          {
+            "block_id": "p004_c0004",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "– Over 80% of these workers commute by transit or walking"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "metric_workers-transit-walk-80pct",
+            "description": "Commute mode share of workers near 34th Street corridor",
+            "evidence_refs": [
+              {
+                "block_id": "p004_c0004",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "Over 80% of these workers commute by transit or walking"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "metric_workers-transit-walk-80pct",
+            "description": "Commute mode share metric from Transitway project presentation",
+            "evidence_refs": [
+              {
+                "block_id": "p004_c0004",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "– Over 80% of these workers commute by transit or walking"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-residents-50000",
+        "decision": "relate",
+        "local_observation_id": "metric_residents_50000_v2",
+        "rationale": "The metric 'About 50,000 residents within 1/4 mile' is from p004 of the 34th Street Transitway CAC #3 slides, describing population within a quarter mile of the corridor.",
+        "evidence_refs": [
+          {
+            "block_id": "p004_c0004",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "– About 50,000 residents and 300,000 workers within ¼ mile"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "metric_residents-50000-v2",
+            "description": "Population within 1/4 mile of 34th Street corridor",
+            "evidence_refs": [
+              {
+                "block_id": "p004_c0004",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "About 50,000 residents and 300,000 workers within ¼ mile"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "metric_residents-50000-v2",
+            "description": "Resident population metric from Transitway project presentation",
+            "evidence_refs": [
+              {
+                "block_id": "p004_c0004",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "– About 50,000 residents and 300,000 workers within ¼ mile"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-workers-300000",
+        "decision": "relate",
+        "local_observation_id": "metric_workers_300000_v2",
+        "rationale": "The metric 'About 300,000 workers within 1/4 mile' is from p004 of the 34th Street Transitway CAC #3 slides, describing worker population near the corridor.",
+        "evidence_refs": [
+          {
+            "block_id": "p004_c0004",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "– About 50,000 residents and 300,000 workers within ¼ mile"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "metric_workers-300000-v2",
+            "description": "Worker population within 1/4 mile of 34th Street corridor",
+            "evidence_refs": [
+              {
+                "block_id": "p004_c0004",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "About 50,000 residents and 300,000 workers within ¼ mile"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "metric_workers-300000-v2",
+            "description": "Worker population metric from Transitway project presentation",
+            "evidence_refs": [
+              {
+                "block_id": "p004_c0004",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "– About 50,000 residents and 300,000 workers within ¼ mile"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-curb-access-key",
+        "decision": "relate",
+        "local_observation_id": "claim_curb_access_key_to_businesses",
+        "rationale": "This claim about curb access being key to businesses and resident quality of life appears on p009 of the 34th Street Transitway CAC #3 presentation as a key finding from the curb activities survey for the Transitway project.",
+        "evidence_refs": [
+          {
+            "block_id": "p009_c0002",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "Curb access is key to businesses and the quality of life of residents"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "claim_curb-access-key-to-businesses",
+            "description": "Curb access survey finding presented at CAC #3",
+            "evidence_refs": [
+              {
+                "block_id": "p009_c0002",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "Curb access is key to businesses and the quality of life of residents"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-curb-activities-daytime",
+        "decision": "relate",
+        "local_observation_id": "claim_varied_curb_activities_daytime",
+        "rationale": "This claim about the highest frequency of curb side activities during daytime appears on p009 as a finding of the curb activities survey for the 34th Street Transitway project.",
+        "evidence_refs": [
+          {
+            "block_id": "p009_c0002",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "Highest frequency of curb side activities is during daytime hours"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "claim_varied-curb-activities-daytime",
+            "description": "Curb activities survey finding presented at CAC #3",
+            "evidence_refs": [
+              {
+                "block_id": "p009_c0002",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "Highest frequency of curb side activities is during daytime hours"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-curb-activities-vary",
+        "decision": "relate",
+        "local_observation_id": "claim_curb_activities_vary_by_building",
+        "rationale": "This claim about curb side needs varying by building type appears on p009 as a finding of the curb activities survey for the 34th Street Transitway project.",
+        "evidence_refs": [
+          {
+            "block_id": "p009_c0002",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "Curb side needs vary by building type and by side street access"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "claim_curb-activities-vary-by-building",
+            "description": "Curb activities survey finding presented at CAC #3",
+            "evidence_refs": [
+              {
+                "block_id": "p009_c0002",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "Curb side needs vary by building type and by side street access"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-curb-in-front",
+        "decision": "relate",
+        "local_observation_id": "claim_certain_curb_activities_must_be_in_front",
+        "rationale": "This claim about certain curb activities needing to occur in front of buildings appears on p010 as a key finding from the curb activities survey, informing Transitway design.",
+        "evidence_refs": [
+          {
+            "block_id": "p010_c0002",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "Certain curb activities must occur right in front of buildings, e.g. Access-A-Ride, oil deliveries"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "claim_certain-curb-activities-must-be-in-front",
+            "description": "Key curb access finding informing Transitway design",
+            "evidence_refs": [
+              {
+                "block_id": "p010_c0002",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "Certain curb activities must occur right in front of buildings, e.g. Access-A-Ride, oil deliveries"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-design-accommodate-curb",
+        "decision": "relate",
+        "local_observation_id": "claim_design_accommodate_curb_access",
+        "rationale": "This design requirement about accommodating curb access needs appears on p010 as a key finding from curb activities outreach for the 34th Street Transitway.",
+        "evidence_refs": [
+          {
+            "block_id": "p010_c0002",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "Design of the Transitway must accommodate curb access needs to work for residents and businesses"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "claim_design-accommodate-curb-access",
+            "description": "Design requirement from curb activities outreach",
+            "evidence_refs": [
+              {
+                "block_id": "p010_c0002",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "Design of the Transitway must accommodate curb access needs to work for residents and businesses"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-special-populations",
+        "decision": "relate",
+        "local_observation_id": "claim_special_populations_special_attention",
+        "rationale": "This claim about specific populations requiring special attention appears on p010 as a key finding from the curb activities survey for the Transitway design.",
+        "evidence_refs": [
+          {
+            "block_id": "p010_c0002",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "Specific populations (esp. elderly, disabled persons) require special attention in the design"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "claim_special-populations-special-attention",
+            "description": "Key finding from curb activities survey about special populations",
+            "evidence_refs": [
+              {
+                "block_id": "p010_c0002",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "Specific populations (esp. elderly, disabled persons) require special attention in the design"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-dot-committed-traffic",
+        "decision": "relate",
+        "local_observation_id": "claim_dot_committed_minimizing_traffic",
+        "rationale": "This commitment statement about DOT minimizing traffic effects appears on p023 under the EA Methodology section of the Transitway project presentation.",
+        "evidence_refs": [
+          {
+            "block_id": "p023_c0002",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "DOT committed to minimizing traffic effects"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "claim_dot-committed-minimizing-traffic",
+            "description": "DOT commitment stated in EA methodology section",
+            "evidence_refs": [
+              {
+                "block_id": "p023_c0002",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "DOT committed to minimizing traffic effects"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-160-surveys-a",
+        "decision": "relate",
+        "local_observation_id": "claim_160_surveys_filled",
+        "rationale": "This claim about 160 curb access needs surveys appears on p008 of the CAC #3 presentation as part of community outreach efforts for the Transitway. First of two observations with same record_id.",
+        "evidence_refs": [
+          {
+            "block_id": "p008_c0002",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "160 curb access needs surveys filled out"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "claim_160-surveys-filled",
+            "description": "Survey outreach effort for curb activities study",
+            "evidence_refs": [
+              {
+                "block_id": "p008_c0002",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "160 curb access needs surveys filled out"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-four-forums",
+        "decision": "relate",
+        "local_observation_id": "claim_four_community_forums_2010",
+        "rationale": "This claim about four community forums in Oct & Nov 2010 appears on p008 of the CAC #3 presentation as part of community outreach for the Transitway.",
+        "evidence_refs": [
+          {
+            "block_id": "p008_c0002",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "• Four Community Forums in Oct & Nov 2010: – 240+ attendees – 30+ bldg managers and business reps – Fliers delivered in advance to every bldg and business on 34 th St"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "claim_four-community-forums-2010",
+            "description": "Community forum outreach for Transitway project",
+            "evidence_refs": [
+              {
+                "block_id": "p008_c0002",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "Four Community Forums in Oct & Nov 2010: 240+ attendees, 30+ bldg managers and business reps"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-160-surveys-b",
+        "decision": "relate",
+        "local_observation_id": "claim_160_surveys_filled",
+        "rationale": "Duplicate observation (different submission_id) of the '160 curb access needs surveys filled out' claim from p008. Second of two observations with same record_id.",
+        "evidence_refs": [
+          {
+            "block_id": "p008_c0002",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "• 160 curb access needs surveys filled out"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "claim_160-surveys-filled",
+            "description": "Survey outreach effort for curb activities study",
+            "evidence_refs": [
+              {
+                "block_id": "p008_c0002",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "• 160 curb access needs surveys filled out"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-cac-composition",
+        "decision": "relate",
+        "local_observation_id": "claim_cac_composition",
+        "rationale": "This claim describes the composition of the 34th Street CAC (Community Advisory Committee), appearing on p003 of the CAC #3 presentation. It names the CAC explicitly.",
+        "evidence_refs": [
+          {
+            "block_id": "p003_c0002",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "Composed of:"
+          },
+          {
+            "block_id": "p003_c0003",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "• Elected Officials • Community Boards • Major Institutions • Business Representatives • Residential/Civic Organizations"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "entity_34th-st-cac-20100921",
+            "object_id": "claim_cac-composition",
+            "description": "Composition of the 34th Street Transitway CAC",
+            "evidence_refs": [
+              {
+                "block_id": "p003_c0002",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "Composed of:"
+              },
+              {
+                "block_id": "p003_c0003",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "• Elected Officials • Community Boards • Major Institutions • Business Representatives • Residential/Civic Organizations"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-cac-role",
+        "decision": "relate",
+        "local_observation_id": "claim_cac_role",
+        "rationale": "This claim describes the role of the 34th Street CAC, appearing on p003 of the CAC #3 presentation. It names the CAC's role explicitly.",
+        "evidence_refs": [
+          {
+            "block_id": "p003_c0004",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "Role:"
+          },
+          {
+            "block_id": "p003_c0005",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "• Provide opportunities for design input • Keep stakeholders informed • Review project progress • Represent community needs"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "entity_34th-st-cac-20100921",
+            "object_id": "claim_cac-role",
+            "description": "Role of the 34th Street Transitway CAC",
+            "evidence_refs": [
+              {
+                "block_id": "p003_c0004",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "Role:"
+              },
+              {
+                "block_id": "p003_c0005",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "• Provide opportunities for design input • Keep stakeholders informed • Review project progress • Represent community needs"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-cac-mtg-3",
+        "decision": "relate",
+        "local_observation_id": "event_cac_meeting_3_20110118",
+        "rationale": "This is the CAC Meeting #3 event documented by the slides themselves, held January 18, 2011. It is a meeting of the 34th Street Transitway CAC for the Transitway project about the 34th Street corridor.",
+        "evidence_refs": [
+          {
+            "block_id": "p001_c0001",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "34th Street Transitway Community Advisory Committee Meeting #3"
+          },
+          {
+            "block_id": "p001_c0002",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "January 18, 2011"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "event_cac-meeting-3-20110118",
+            "description": "CAC Meeting #3 for the 34th Street Transitway project",
+            "evidence_refs": [
+              {
+                "block_id": "p001_c0001",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "34th Street Transitway Community Advisory Committee Meeting #3"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "event_cac-meeting-3-20110118",
+            "description": "CAC Meeting #3 concerning the 34th Street corridor",
+            "evidence_refs": [
+              {
+                "block_id": "p001_c0001",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "34th Street Transitway Community Advisory Committee Meeting #3"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "entity_34th-st-cac-20100921",
+            "object_id": "event_cac-meeting-3-20110118",
+            "description": "Third meeting of the 34th Street Transitway CAC",
+            "evidence_refs": [
+              {
+                "block_id": "p001_c0001",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "34th Street Transitway Community Advisory Committee Meeting #3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-prelim-design",
+        "decision": "relate",
+        "local_observation_id": "event_preliminary_design_spring2011",
+        "rationale": "This milestone event 'Preliminary design: Presentation to CAC and public for comment, Spring 2011' appears on p005 of the Transitway project schedule update.",
+        "evidence_refs": [
+          {
+            "block_id": "p005_c0002",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "Spring 2011: Preliminary design: Presentation to CAC and public for comment. Traffic analysis: Presentation to CAC and public for comment."
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "event_preliminary-design-spring2011",
+            "description": "Project milestone: preliminary design and traffic analysis presentation",
+            "evidence_refs": [
+              {
+                "block_id": "p005_c0002",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "Spring 2011: Preliminary design: Presentation to CAC and public for comment"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-revised-design",
+        "decision": "relate",
+        "local_observation_id": "event_revised_design_summer2011",
+        "rationale": "This milestone 'Revised design & Draft EA: Pres. to CAC & public for comment, Summer 2011' appears on p005 of the Transitway project schedule.",
+        "evidence_refs": [
+          {
+            "block_id": "p005_c0002",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "Summer 2011: Revised design & Draft EA: Pres. to CAC & public for comment."
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "event_revised-design-summer2011",
+            "description": "Project milestone: revised design and draft EA presentation",
+            "evidence_refs": [
+              {
+                "block_id": "p005_c0002",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "Summer 2011: Revised design & Draft EA: Pres. to CAC & public for comment"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-final-ea-fall",
+        "decision": "relate",
+        "local_observation_id": "event_final_ea_fall2011",
+        "rationale": "This milestone 'Final EA & project determination: Presentation to CAC & public, Fall 2011' appears on p005 of the Transitway project schedule.",
+        "evidence_refs": [
+          {
+            "block_id": "p005_c0002",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "Fall 2011: Final EA & project determination: Presentation to CAC & public."
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "event_final-ea-fall2011",
+            "description": "Project milestone: final EA and project determination",
+            "evidence_refs": [
+              {
+                "block_id": "p005_c0002",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "Fall 2011: Final EA & project determination: Presentation to CAC & public"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-ea-workplan",
+        "decision": "relate",
+        "local_observation_id": "event_ea_workplan_release_fall2010",
+        "rationale": "This milestone 'Release of EA work plan: public review and comment, Fall 2010' appears on p024 in the EA Timeline section of the Transitway presentation.",
+        "evidence_refs": [
+          {
+            "block_id": "p024_c0002",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "Fall 2010: Release of EA work plan: public review and comment"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "event_ea-workplan-release-fall2010",
+            "description": "EA milestone: release of EA work plan for public review",
+            "evidence_refs": [
+              {
+                "block_id": "p024_c0002",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "Fall 2010: Release of EA work plan: public review and comment"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-draft-ea",
+        "decision": "relate",
+        "local_observation_id": "event_draft_ea_comment_summer2011",
+        "rationale": "This milestone 'Draft EA: Available for comment; pres. to CAC & public for comment, Summer 2011' appears on p024 in the EA Timeline.",
+        "evidence_refs": [
+          {
+            "block_id": "p024_c0002",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "Summer 2011: Draft EA: Available for comment; pres. to CAC & public for comment."
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "event_draft-ea-comment-summer2011",
+            "description": "EA milestone: draft EA available for public comment",
+            "evidence_refs": [
+              {
+                "block_id": "p024_c0002",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "Summer 2011: Draft EA: Available for comment; pres. to CAC & public for comment"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-final-ea-pres",
+        "decision": "relate",
+        "local_observation_id": "event_final_ea_presentation_fall2011",
+        "rationale": "This milestone 'Final EA: Presentation to CAC and public, Fall 2011' appears on p024 in the EA Timeline section.",
+        "evidence_refs": [
+          {
+            "block_id": "p024_c0002",
+            "source_id": "20110118_34th_cac3_slides",
+            "source_quote": "Fall 2011: Final EA: Presentation to CAC and public."
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "event_final-ea-presentation-fall2011",
+            "description": "EA milestone: final EA presented to CAC and public",
+            "evidence_refs": [
+              {
+                "block_id": "p024_c0002",
+                "source_id": "20110118_34th_cac3_slides",
+                "source_quote": "Fall 2011: Final EA: Presentation to CAC and public"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "relation-linker"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-24-00-201Z_2111393-7701b90f_canonicalize_2026-06-10t22-56-13-259z-1976810-f3a30c74-ingest-20110118-34th-cac3-slides-relation-linker"
+}

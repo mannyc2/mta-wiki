@@ -1,0 +1,185 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-102711"
+record_kind: "source"
+display_name: "LIRR 2023 Final Proposed Budget"
+source_id: "meeting_doc_102711"
+source_ids:
+  - "meeting_doc_102711"
+local_observation_id: "source_meeting_doc_102711"
+local_observation_ids:
+  - "source_meeting_doc_102711"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T19:31:39.059Z"
+submission_ids:
+  - "sub_df04c65200b6e463"
+payload:
+  authority_tier: "plan_document"
+  content_type: "budget document"
+  date_text: "December 6, 2022"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2022-12-06"
+    precision: "day"
+    raw_text: "December 6, 2022"
+  description: "LIRR 2023 Final Proposed Budget and Four-Year Financial Plan 2023-2026"
+  published_date_normalized: "2022-12-06"
+  published_date_precision: "day"
+  publisher: "MTA Long Island Rail Road"
+  title: "LIRR 2023 Budget & 2023-2026 Financial Plan"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_102711#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "meeting_doc_102711"
+    source_path: "raw/sources/meeting_doc_102711/blocks.jsonl"
+    text_sha256: "sha256:b8ae0da2bc74d75523eb0f5a5502253b0183373a0cc3b70d7891a451a10ddee3"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_102711#p001_c0002"
+    page_number: 1
+    role: "subject"
+    source_id: "meeting_doc_102711"
+    source_path: "raw/sources/meeting_doc_102711/blocks.jsonl"
+    text_sha256: "sha256:f0697cf3692fe7a4593c3005a5e9af1d1a8c7be99d327876a5b617b898306d00"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0007"
+    evidence_id: "meeting_doc_102711#p001_c0007"
+    page_number: 1
+    role: "purpose"
+    source_id: "meeting_doc_102711"
+    source_path: "raw/sources/meeting_doc_102711/blocks.jsonl"
+    text_sha256: "sha256:8c9b404885af990292a514c5f9f39657cb90570fd94695eb300c767e6b1a09d8"
+    text_source: "raw_text"
+---
+
+# LIRR 2023 Final Proposed Budget
+
+source_id: meeting_doc_102711
+citation: cite block ids exactly as shown in square brackets
+document: 38 block(s)
+
+## Page 1
+
+### [p001_c0001] Long Island Rail Road
+[p001_c0002]
+
+```text
+Subject LIRR 2023 Budget & 2023-2026 Financial Plan Adoption Date December 6, 2022 Department Office of the Chief Financial Officer Vendor Name Department Head Name Kevin Willens, Chief Financial Officer Contract Number Department Head Signature Kevin Willens Contract Manager Name Project Manager Name David Keller D. Keller Table of Contents Ref #
+```
+[p001_c0003]
+
+```text
+Board Action Order To Date Approval Info Other 1 MNR & LIRR Committee 12/19/22 X 2 Finance Committee 12/19/22 X 3 MTA Board 12/21/22 X
+```
+[p001_c0004]
+
+```text
+Internal Approvals Order Approval Order Approval 3 President C. M... VP Svc Plng Tech & CPM 2 Financial Liaison M. ... VP Mkt Dev & Public Affairs Sr. VP Operations General Counsel VP Labor Relations 1 OMB D. Keller
+```
+[p001_c0005]
+
+```text
+Internal Approvals (cont.) Order Approval Order Approval Order Approval Order Approval
+```
+### [p001_c0006] Purpose
+[p001_c0007] To secure MTA Board adoption of the MTA Long Island Rail Road's (LIRR) 2022 November Forecast, 2023 Final Proposed Budget, and the Four-Year Financial Plan for 2023 – 2026.
+### [p001_c0008] Discussion
+[p001_c0009] The 2023 Final Proposed Budget, which is consistent with information presented to the Board in November 2022, provides funding to maintain the LIRR's commitment to delivering safe, secure, and reliable transportation and first-class customer service. The LIRR projections do not include the estimated impacts of projected fare increases and MTA consolidated below-the-line adjustments, which are presented as part of MTA consolidated materials.
+[p001_c0010] The 2023 Final Proposed Budget reflects key initiatives deemed essential to providing safe and reliable service to our customers while ensuring our assets remain in a state of good repair. The initiatives are as follows:
+- [p001_c0011] • Grand Central Madison- LIRR is scheduled to begin running service to Grand Central Madison (GCM) in late 2022/early 2023. Funding has been adjusted based on the latest estimates and most up-to-date information. Some notable examples include additional non-payroll funding for infrastructure maintenance and converting non-payroll to headcount for assets to be maintained in-house. • Security- Funding was added to monitor security cameras at several additional locations to retrieve electronic data for video distribution to law enforcement agencies and LIRR Claims Department. In addition, funding was added for Fire Safety/Unarmed Guards at several new locations. • Penn Station Maintenance- Additional assets/infrastructure need to be maintained/cleaned as a result of the Penn Station Rehabilitation Project. Additional costs include cleaning of approximately 20k SF of additional space, HVAC maintenance, canopy structure maintenance, glazing and facade repair/maintenance, LED screen maintenance, etc. • Maintenance Requirements for New Assets- Significant increase in infrastructure in the areas of vertical equipment, fire systems, and HVAC that require inspection, preventive, and reactive maintenance to remain in compliance with local, state, and federal mandates.
+
+## Page 2
+
+### [p002_c0001] 2022 November Forecast - Baseline
+[p002_c0002] The 2022 Non-Reimbursable November Forecast reflects revenues totaling $482.6 million, including $451.4 million in Farebox Revenue and $31.2 million in Other Operating Revenue. Total Operating Expense projections of $2,329.7 million consist of labor costs of $1,254.2 million, non-labor costs of $425.2 million and non-cash liability adjustments of $650.3 million. Total Reimbursable expense projections of $451.1 million are fully offset by capital reimbursements. Total end-of-year authorized positions are projected at 7,976 and include 6,849 Non-Reimbursable positions and 1,127 Reimbursable positions.
+### [p002_c0003] 2023 Final Proposed Budget - Baseline
+[p002_c0004] The 2023 Non-Reimbursable Final Proposed Budget reflects revenues totaling $568.7 million. Farebox Revenue of $540.7 million reflects ridership growth based on the midpoint of McKinsey's "best case" and "worst case" ridership recovery scenarios and includes the extension of fare promotion discounts. Other Operating Revenue of $28.1 million largely reflects revenue from advertising and rental fees. Total Operating Expense projections of $2,684.5 million consist of labor costs of $1,457.4 million, non-labor costs of $612.4 million and non-cash liability adjustments of $614.8 million. Total Reimbursable expense projections of $379.9 million are fully offset by capital reimbursements. Total end-of-year authorized positions are projected at 7,995 and include 6,910 Non-Reimbursable positions and 1,085 Reimbursable positions.
+### [p002_c0005] Impact on Funding
+[p002_c0006] The 2022 November Forecast, 2023 Final Proposed Budget and the Four-Year Financial Plan for 2023 – 2026, which are presented in the attached tables, are consistent with the proposed MTA Financial Plan.
+### [p002_c0007] Recommendation
+[p002_c0008] It is recommended that the MTA Board adopt the 2022 November Forecast, the 2023 Final Proposed Budget and the Four-Year Financial Plan for 2023 – 2026 for the MTA Long Island Rail Road.
+
+## Page 3
+
+### [p003_c0001] MTA LONG ISLAND RAIL ROAD November Financial Plan 2023 - 2026 Accrual Statement of Operations By Category ($ in millions)
+[p003_c0002]
+
+```text
+Actual 2021 November Forecast 2022 Final Proposed Budget 2023 2024 2025 2026 Non-Reimbursable Operating Revenue Farebox Revenue $295.755 $451.398 $540.661 $577.547 $603.136 $627.002 Other Operating Revenue 649.714 31.224 28.058 28.661 28.551 28.830 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $945.468 $482.622 $568.719 $606.208 $631.687 $655.832 Operating Expense Labor: Payroll $550.059 $614.726 $703.580 $720.358 $734.661 $752.722 Overtime 123.130 151.395 165.926 154.879 166.403 171.447 Health and Welfare 111.430 131.319 161.552 171.092 181.635 192.177 OPEB Current Payments 61.153 73.414 87.822 93.196 98.895 104.938 Pension 180.194 156.711 190.193 187.406 190.478 190.475 Other Fringe Benefits 142.843 167.452 179.114 183.323 187.852 192.946 Reimbursable Overhead (40.238) (40.769) (30.830) (35.337) (36.132) (37.843) Total Labor Expenses $1,128.571 $1,254.248 $1,457.357 $1,474.917 $1,523.794 $1,566.861 Non-Labor: Electric Power $80.487 $103.664 $127.307 $124.854 $125.573 $126.710 Fuel 20.434 36.903 32.545 28.901 27.531 27.895 Insurance 18.403 21.834 25.728 30.321 35.866 42.605 Claims 7.283 4.682 4.755 4.851 4.937 4.937 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 80.209 81.644 127.903 121.529 119.067 118.547 Professional Services Contracts 34.076 40.619 50.659 45.952 43.056 43.692 Materials and Supplies 99.455 119.792 222.580 268.716 278.905 264.919 Other Business Expenses 13.111 16.042 20.894 20.824 29.386 29.944 Total Non-Labor Expenses $353.457 $425.182 $612.372 $645.949 $664.319 $659.249 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $1,482.028 $1,679.429 $2,069.728 $2,120.866 $2,188.113 $2,226.110 Depreciation $458.588 $472.622 $443.558 $447.993 $452.473 $456.997 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 122.928 180.000 183.600 187.272 191.017 194.838 GASB 68 Pension Expense Adjustment (6.813) (4.350) (14.350) (64.190) (30.690) (59.010) Environmental Remediation 1.071 2.000 2.000 2.000 2.000 2.000 Total Expenses $2,057.802 $2,329.702 $2,684.536 $2,693.941 $2,802.913 $2,820.935 Net Surplus/(Deficit) ($1,112.334) ($1,847.080) ($2,115.817) ($2,087.733) ($2,171.226) ($2,165.103) Cash Conversion Adjustments Depreciation $458.588 $472.622 $443.558 $447.993 $452.473 $456.997 Operating/Capital (8.467) (8.277) (25.075) (11.748) (9.036) (15.355) Other Cash Adjustments (55.890) 273.626 177.090 130.063 163.029 143.027 Total Cash Conversion Adjustments $394.231 $737.972 $595.573 $566.309 $606.466 $584.668 Net Cash Surplus/(Deficit) ($718.102) ($1,109.109) ($1,520.244) ($1,521.424) ($1,564.760) ($1,580.434)
+```
+
+## Page 4
+
+### [p004_c0001] MTA LONG ISLAND RAIL ROAD November Financial Plan 2023 - 2026 Accrual Statement of Operations By Category ($ in millions)
+[p004_c0002]
+
+```text
+Actual 2021 November Forecast 2022 Final Proposed Budget 2023 2024 2025 2026 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 438.200 451.120 379.913 380.150 382.826 394.834 Total Revenues $438.200 $451.120 $379.913 $380.150 $382.826 $394.834 Operating Expense Labor: Payroll $146.466 $144.991 $127.362 $136.748 $138.318 $139.538 Overtime 51.876 55.190 45.557 39.266 40.064 40.865 Health and Welfare 34.461 37.425 29.031 30.217 30.603 30.925 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 41.086 66.439 47.168 49.095 49.723 50.246 Other Fringe Benefits 37.406 38.550 29.687 30.900 31.295 31.624 Reimbursable Overhead 40.238 40.769 30.830 35.337 36.132 37.843 Total Labor Expenses $351.533 $383.364 $309.634 $321.563 $326.134 $331.042 Non-Labor: Electric Power $0.353 $0.363 $0.360 $0.360 $0.360 $0.360 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 6.218 7.007 7.719 8.501 8.650 8.706 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 21.790 21.063 13.962 14.202 14.331 14.462 Professional Services Contracts 7.296 2.720 0.709 0.728 0.745 0.763 Materials and Supplies 50.532 35.909 47.126 34.377 32.181 39.072 Other Business Expenses 0.477 0.694 0.402 0.419 0.424 0.429 Total Non-Labor Expenses $86.667 $67.756 $70.278 $58.587 $56.692 $63.792 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $438.200 $451.120 $379.913 $380.150 $382.826 $394.834 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+
+## Page 5
+
+### [p005_c0001] MTA LONG ISLAND RAIL ROAD November Financial Plan 2023 - 2026 Accrual Statement of Operations By Category ($ in millions)
+[p005_c0002]
+
+```text
+Actual 2021 November Forecast 2022 Final Proposed Budget 2023 2024 2025 2026 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $295.755 $451.398 $540.661 $577.547 $603.136 $627.002 Other Operating Revenue 649.714 31.224 28.058 28.661 28.551 28.830 Capital and Other Reimbursements 438.200 451.120 379.913 380.150 382.826 394.834 Total Revenues $1,383.668 $933.742 $948.632 $986.357 $1,014.513 $1,050.666 Operating Expense Labor: Payroll $696.525 $759.717 $830.942 $857.106 $872.979 $892.260 Overtime 175.006 206.584 211.482 194.145 206.467 212.312 Health and Welfare 145.891 168.743 190.583 201.309 212.238 223.102 OPEB Current Payments 61.153 73.414 87.822 93.196 98.895 104.938 Pension 221.280 223.150 237.361 236.501 240.201 240.721 Other Fringe Benefits 180.250 206.002 208.801 214.223 219.147 224.570 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $1,480.104 $1,637.611 $1,766.991 $1,796.479 $1,849.928 $1,897.903 Non-Labor: Electric Power $80.840 $104.027 $127.667 $125.214 $125.933 $127.070 Fuel 20.434 36.903 32.545 28.901 27.531 27.895 Insurance 24.620 28.842 33.447 38.823 44.516 51.311 Claims 7.283 4.682 4.755 4.851 4.937 4.937 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 101.999 102.708 141.865 135.731 133.398 133.008 Professional Services Contracts 41.372 43.340 51.369 46.680 43.801 44.455 Materials and Supplies 149.987 155.701 269.707 303.094 311.086 303.991 Other Business Expenses 13.589 16.735 21.297 21.243 29.810 30.373 Total Non-Labor Expenses $440.124 $492.938 $682.650 $704.536 $721.011 $723.041 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $1,920.228 $2,130.549 $2,449.641 $2,501.015 $2,570.939 $2,620.944 Depreciation $458.588 $472.622 $443.558 $447.993 $452.473 $456.997 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 122.928 180.000 183.600 187.272 191.017 194.838 GASB 68 Pension Expense Adjustment (6.813) (4.350) (14.350) (64.190) (30.690) (59.010) Environmental Remediation 1.071 2.000 2.000 2.000 2.000 2.000 Total Expenses $2,496.002 $2,780.822 $3,064.449 $3,074.091 $3,185.739 $3,215.769 Net Surplus/(Deficit) ($1,112.334) ($1,847.080) ($2,115.817) ($2,087.733) ($2,171.226) ($2,165.103) Cash Conversion Adjustments Depreciation $458.588 $472.622 $443.558 $447.993 $452.473 $456.997 Operating/Capital (8.467) (8.277) (25.075) (11.748) (9.036) (15.355) Other Cash Adjustments (55.890) 273.626 177.090 130.063 163.029 143.027 Total Cash Conversion Adjustments $394.231 $737.972 $595.573 $566.309 $606.466 $584.668 Net Cash Surplus/(Deficit) ($718.102) ($1,109.109) ($1,520.244) ($1,521.424) ($1,564.760) ($1,580.434)
+```
+
+## Page 6
+
+### [p006_c0001] MTA LONG ISLAND RAIL ROAD November Financial Plan 2023 - 2026 Cash Receipts and Expenditures ($ in millions)
+[p006_c0002]
+
+```text
+Actual 2021 November Forecast 2022 Final Proposed Budget 2023 2024 2025 2026 Cash Receipts and Expenditures Receipts Farebox Revenue $299.220 $455.133 $552.027 $589.069 $614.658 $638.524 Other Operating Revenue 545.660 124.014 21.029 21.501 21.250 21.388 Capital and Other Reimbursements 429.524 442.375 354.355 367.905 373.285 378.964 Total Receipts $1,274.403 $1,021.521 $927.411 $978.474 $1,009.193 $1,038.876 Expenditures Labor: Payroll $719.632 $765.919 $825.518 $851.556 $867.300 $886.449 Overtime 164.049 210.615 211.482 194.145 206.467 212.312 Health and Welfare 147.835 158.321 190.583 201.309 212.238 223.102 OPEB Current Payments 56.448 70.098 87.822 93.196 98.895 104.938 Pension 217.167 224.150 237.361 236.501 240.201 240.721 Other Fringe Benefits 248.291 223.682 207.801 213.223 218.147 223.570 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $1,553.421 $1,652.786 $1,760.567 $1,789.930 $1,843.249 $1,891.092 Non-Labor: Electric Power $79.996 $104.027 $127.667 $125.214 $125.933 $127.070 Fuel 19.163 36.903 32.545 28.901 27.531 27.895 Insurance 18.393 25.623 32.935 38.284 45.078 50.702 Claims 4.455 1.852 1.867 1.888 1.929 1.929 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 102.056 112.698 141.865 135.731 133.398 133.008 Professional Services Contracts 31.370 36.401 38.369 33.680 30.801 31.455 Materials and Supplies 165.643 133.336 276.448 310.720 321.865 311.274 Other Business Expenses 13.898 19.441 24.026 24.030 32.648 33.364 Total Non-Labor Expenditures $434.973 $470.281 $675.722 $698.447 $719.182 $716.697 Other Expenditure Adjustments: Other $4.111 $7.563 $11.366 $11.522 $11.522 $11.522 Total Other Expense Adjustments $4.111 $7.563 $11.366 $11.522 $11.522 $11.522 Total Expenditures $1,992.506 $2,130.630 $2,447.655 $2,499.899 $2,573.953 $2,619.311 Net Cash Balance ($718.102) ($1,109.109) ($1,520.244) ($1,521.424) ($1,564.760) ($1,580.434) Cash Timing and Availability Adjustment (39.165) (0.000) (0.000) (0.000) (0.000) (0.000) Net Cash Balance after Cash Timing & Availability Adj ($757.268) ($1,109.109) ($1,520.244) ($1,521.424) ($1,564.760) ($1,580.434)
+```
+
+## Page 7
+
+### [p007_c0001] MTA LONG ISLAND RAIL ROAD November Financial Plan 2023 - 2026 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p007_c0002]
+
+```text
+Actual 2021 November Forecast 2022 Final Proposed Budget 2023 2024 2025 2026 Cash Flow Adjustments Receipts Farebox Revenue $3.465 $3.735 $11.366 $11.522 $11.522 $11.522 Other Operating Revenue ($104.054) $92.790 ($7.029) ($7.161) ($7.301) ($7.442) Capital and Other Reimbursements (8.676) (8.745) (25.558) (12.245) (9.541) (15.870) Total Receipts ($109.265) $87.780 ($21.221) ($7.883) ($5.320) ($11.790) Expenditures Labor: Payroll ($23.107) ($6.202) $5.424 $5.550 $5.679 $5.812 Overtime 10.957 (4.031) 0.000 0.000 0.000 0.000 Health and Welfare (1.944) 10.422 0.000 0.000 0.000 0.000 OPEB Current Payments 4.704 3.316 0.000 0.000 0.000 0.000 Pension 4.113 (1.000) 0.000 0.000 0.000 0.000 Other Fringe Benefits (68.041) (17.680) 1.000 1.000 1.000 1.000 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures ($73.318) ($15.175) $6.424 $6.550 $6.679 $6.812 Non-Labor: Electric Power $0.844 $0.000 0.000 $0.000 $0.000 $0.000 Fuel 1.271 0.000 0.000 0.000 0.000 0.000 Insurance 6.227 3.218 0.511 0.538 (0.563) 0.610 Claims 2.828 2.831 2.887 2.963 3.008 3.008 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts (0.057) (9.990) 0.000 0.000 0.000 0.000 Professional Services Contracts 10.003 6.939 13.000 13.000 13.000 13.000 Materials and Supplies (15.656) 22.365 (6.741) (7.626) (10.779) (7.283) Other Business Expenses (0.310) (2.706) (2.729) (2.787) (2.838) (2.991) Total Non-Labor Expenditures $5.151 $22.657 $6.928 $6.089 $1.828 $6.344 Other Expenditure Adjustments: Other Expense Adjustments ($4.111) ($7.563) ($11.366) ($11.522) ($11.522) ($11.522) Total Other Expenditure Adjustments ($4.111) ($7.563) ($11.366) ($11.522) ($11.522) ($11.522) Total Expenditures ($72.277) ($0.080) $1.986 $1.116 ($3.014) $1.634 Total Cash Conversion Adjustments before Depreciation ($181.543) $87.699 ($19.235) ($6.767) ($8.334) ($10.156) Depreciation $458.588 $472.622 $443.558 $447.993 $452.473 $456.997 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 122.928 180.000 183.600 187.272 191.017 194.838 GASB 68 Pension Expense Adjustment (6.813) (4.350) (14.350) (64.190) (30.690) (59.010) Environmental Remediation 1.071 2.000 2.000 2.000 2.000 2.000 Cash Timing and Availability Adjustment (39.165) 0.000 0.000 0.000 0.000 0.000 Total Cash Conversion Adjustments $355.066 $737.972 $595.573 $566.309 $606.466 $584.668
+```
+
+## Page 8
+
+### [p008_c0001] MTA LONG ISLAND RAIL ROAD November Financial Plan 2023 - 2026 Ridership (Utilization) and Revenue (in millions)
+### [p008_c0002] RIDERSHIP
+[p008_c0003]
+
+```text
+Actual 2021 November Forecast 2022 Final Proposed Budget 2023 2024 2025 2026 Total Commutation 9.716 23.342 33.753 38.735 40.038 41.423 Total Non-Commutation 25.321 28.978 28.408 31.368 32.949 34.409 Total Ridership 35.037 52.320 62.160 70.103 72.987 75.832
+```
+### [p008_c0004] FAREBOX REVENUE
+[p008_c0005]
+
+```text
+Baseline Total Farebox Revenue $295.755 $451.398 $540.661 $577.547 $603.136 $627.002
+```
+
+## Page 9
+
+### [p009_c0001] MTA LONG ISLAND RAIL ROAD November Financial Plan 2023-2026 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time/Full Time Equivalents
+[p009_c0002]
+
+```text
+FUNCTION/DEPARTMENT 2021 Actual November Forecast 2022 Final Proposed Budget 2023 2024 2025 2026 Administration Executive VP 0 0 0 0 0 0 Enterprise Asset Management 6 9 9 9 9 9 Sr Vice President - Engineering 1 0 0 0 0 0 Labor Relations 10 14 14 14 14 14 Procurement & Logistics (excl. Stores) 47 46 44 44 44 44 Human Resources 32 35 35 35 35 35 Sr VP Administration 2 2 2 2 2 2 Strategic Investments 10 25 25 25 25 25 President 5 10 10 10 10 10 VP & CFO 2 2 2 2 2 2 Information Technology 0 0 0 0 0 0 Controller 39 39 39 39 39 39 Management and Budget 11 13 13 13 13 13 BPM, Controls, & Compliance 4 4 4 4 4 4 Market Dev. & Public Affairs 61 71 71 71 71 71 Gen. Counsel & Secretary 23 28 28 28 28 28 Diversity Management 1 3 3 3 3 3 Security 12 15 15 15 15 15 System Safety 41 49 52 52 52 52 Training 65 74 70 70 70 70 Service Planning 28 31 25 22 22 22 Rolling Stock Programs 8 17 17 17 17 17 Sr Vice President - Operations 3 5 5 5 5 5 Total Administration 411 492 483 480 480 480 Operations Train Operations 2,158 2,329 2,261 2,250 2,247 2,247 Customer Service 425 548 548 547 547 546 Total Operations 2,583 2,877 2,809 2,797 2,794 2,793 Maintenance Engineering 1,933 2,142 2,147 2,246 2,245 2,233 Equipment 2,022 2,143 2,247 2,284 2,344 2,396 Procurement (Stores) 92 101 101 104 105 106 Total Maintenance 4,047 4,386 4,495 4,634 4,694 4,735 4386 4495 4634 4694 4735 Engineering/Capital Department of Program Management 109 112 111 111 111 111 Special Projects 44 59 47 47 47 47 Positive Train Control 13 50 50 50 50 50 Total Engineering/Capital 166 221 208 208 208 208 Total Baseline Positions 7,207 7,976 7,995 8,119 8,176 8,216 Non-Reimbursable 6,274 6,849 6,910 7,128 7,190 7,241 Reimbursable 933 1,127 1,085 991 986 975 Total Full-Time 7,207 7,976 7,995 8,119 8,176 8,216 Total Full-Time Equivalents - - - - - -
+```
+
+## Page 10
+
+### [p010_c0001] MTA LONG ISLAND RAIL ROAD November Financial Plan 2023 - 2026 Total Positions by Function and Occupational Group Non-Reimbursable and Reimbursable
+[p010_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual November Final 2024 2025 2026 2021 Forecast 2022 Proposed Budget 2023 Administration Managers/Supervisors 230 269 260 260 260 260 Professional/Technical/Clerical 159 200 200 197 197 197 Operational Hourlies 22 23 23 23 23 23 Total Administration Headcount 411 492 483 480 480 480 Operations Managers/Supervisors 313 369 364 361 358 357 Professional/Technical/Clerical 99 126 126 126 126 126 Operational Hourlies 2,171 2,382 2,319 2,310 2,310 2,310 Total Operations Headcount 2,583 2,877 2,809 2,797 2,794 2,793 Maintenance Managers/Supervisors 774 904 944 885 896 900 Professional/Technical/Clerical 231 287 279 305 306 301 Operational Hourlies 3,042 3,195 3,272 3,444 3,492 3,534 Total Maintenance Headcount 4,047 4,386 4,495 4,634 4,694 4,735 Engineering / Capital Managers/Supervisors 124 154 141 141 141 141 Professional/Technical/Clerical 42 67 67 67 67 67 Operational Hourlies 0 0 0 0 0 0 Total Engineering Headcount 166 221 208 208 208 208 Public Safety Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Public Safety Headcount 0 0 0 0 0 0 Total Positions Managers/Supervisors 1,441 1,696 1,709 1,647 1,655 1,658 Professional/Technical/ Clerical 531 680 672 695 696 691 Operational Hourlies 5,235 5,600 5,614 5,777 5,825 5,867 Total Positions 7,207 7,976 7,995 8,119 8,176 8,216
+```

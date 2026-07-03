@@ -1,0 +1,140 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-100251"
+record_kind: "source"
+display_name: "October 2022 Statement of Operations (2 of 2)"
+source_id: "meeting_doc_100251"
+source_ids:
+  - "meeting_doc_100251"
+local_observation_id: "source_meeting_doc_100251"
+local_observation_ids:
+  - "source_meeting_doc_100251"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-23T15:47:50.539Z"
+submission_ids:
+  - "sub_7ad8ced34cf9788e"
+payload:
+  authority_tier: "plan_document"
+  content_type: "spreadsheet"
+  date_text: "OCTOBER 2022"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2022-10"
+    precision: "month"
+    raw_text: "OCTOBER 2022"
+  description: "EXPLANATION OF VARIANCES BETWEEN MID-YEAR FORECAST AND ACTUAL - ACCRUAL BASIS"
+  published_date_normalized: "2022-10"
+  published_date_precision: "month"
+  publisher: "METROPOLITAN TRANSPORTATION AUTHORITY"
+  title: "CONSOLIDATED ACCRUAL STATEMENT OF OPERATIONS BY CATEGORY"
+evidence_refs:
+  -
+    block_id: "p001_b0008"
+    evidence_id: "meeting_doc_100251#p001_b0008"
+    page_number: 1
+    source_id: "meeting_doc_100251"
+    source_path: "raw/sources/meeting_doc_100251/blocks.jsonl"
+    source_quote: "METROPOLITAN TRANSPORTATION AUTHORITY"
+    text_sha256: "sha256:3ea18be420a1fdd2509d18cf6b99ca8203326a3501c8ec82676175d2077e4c3d"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0009"
+    evidence_id: "meeting_doc_100251#p001_b0009"
+    page_number: 1
+    source_id: "meeting_doc_100251"
+    source_path: "raw/sources/meeting_doc_100251/blocks.jsonl"
+    source_quote: "CONSOLIDATED ACCRUAL STATEMENT OF OPERATIONS BY CATEGORY"
+    text_sha256: "sha256:75f182780e29c4d2fb74fbf98e851f302df7aef686460ead0cf4876e694b389f"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0011"
+    evidence_id: "meeting_doc_100251#p001_b0011"
+    page_number: 1
+    source_id: "meeting_doc_100251"
+    source_path: "raw/sources/meeting_doc_100251/blocks.jsonl"
+    source_quote: "OCTOBER 2022"
+    text_sha256: "sha256:96d36ae17b9e8579fa99f1535efe93f768fc4fb83d2f5f2a8e623474c423cdf5"
+    text_source: "raw_text"
+  -
+    block_id: "p001_b0010"
+    evidence_id: "meeting_doc_100251#p001_b0010"
+    page_number: 1
+    source_id: "meeting_doc_100251"
+    source_path: "raw/sources/meeting_doc_100251/blocks.jsonl"
+    source_quote: "EXPLANATION OF VARIANCES BETWEEN MID-YEAR FORECAST AND ACTUAL - ACCRUAL BASIS"
+    text_sha256: "sha256:f4a6e51cf6f876f8ca0650eb419fe5cb564cae650ee6714e60f0b3759ad3d781"
+    text_source: "raw_text"
+---
+
+# October 2022 Statement of Operations (2 of 2)
+
+source_id: meeting_doc_100251
+citation: cite block ids exactly as shown in square brackets
+document: 63 block(s)
+
+## Page 1
+
+### [p001_b0001] Spreadsheet source: meeting_doc_100251
+### [p001_b0002] Preview run: spreadsheet-backlog-20260623
+### [p001_b0003] Source file: raw/sources/meeting_doc_100251/source.xlsx
+### [p001_b0004] Sheet: Consolidated Variance Data
+### [p001_b0005] Sheet path: xl/worksheets/sheet1.xml
+### [p001_b0006] Rows: 59
+### [p001_b0007] Cells: 472
+### [p001_b0008] Row 1: [Consolidated Variance Data!B1] METROPOLITAN TRANSPORTATION AUTHORITY
+[p001_b0009] Row 2: [Consolidated Variance Data!B2] CONSOLIDATED ACCRUAL STATEMENT OF OPERATIONS BY CATEGORY
+[p001_b0010] Row 3: [Consolidated Variance Data!B3] EXPLANATION OF VARIANCES BETWEEN MID-YEAR FORECAST AND ACTUAL - ACCRUAL BASIS
+### [p001_b0011] Row 4: [Consolidated Variance Data!B4] OCTOBER 2022
+### [p001_b0012] Row 5: [Consolidated Variance Data!B5] ($ in millions)
+[p001_b0013] Row 6: [Consolidated Variance Data!G7] OCTOBER | [Consolidated Variance Data!L7] OCTOBER 2022 YEAR-TO-DATE
+### [p001_b0014] Row 9: [Consolidated Variance Data!B9] Generic Revenue
+[p001_b0015] or Expense Category | [Consolidated Variance Data!C9] Nonreimb | [Consolidated Variance Data!D9] Favorable | [Consolidated Variance Data!E9] 23
+[p001_b0016] Row 10: [Consolidated Variance Data!B10] 9 | [Consolidated Variance Data!D10] (Unfavorable) | [Consolidated Variance Data!E10] 10 | [Consolidated Variance Data!I10] (Unfavorable) | [Consolidated Variance Data!J10] 10
+[p001_b0017] Row 11: [Consolidated Variance Data!D11] $ | [Consolidated Variance Data!E11] % | [Consolidated Variance Data!F11] 11 | [Consolidated Variance Data!J11] %
+[p001_b0018] Row 12: [Consolidated Variance Data!B12] Farebox Revenue | [Consolidated Variance Data!C12] NR | [Consolidated Variance Data!D12] 13.2 | [Consolidated Variance Data!E12] 3.7 | [Consolidated Variance Data!F12] 123 | [Consolidated Variance Data!I12] 150.6 | [Consolidated Variance Data!J12] 4.8 | [Consolidated Variance Data!K12] 122
+[p001_b0019] Row 13: [Consolidated Variance Data!B13] Vehicle Toll Revenue | [Consolidated Variance Data!C13] NR | [Consolidated Variance Data!D13] 6.7230129300000669 | [Consolidated Variance Data!E13] 3.3022440628241849 | [Consolidated Variance Data!F13] 95 | [Consolidated Variance Data!H13] 14.080908880000152 | [Consolidated Variance Data!J13] 0.72604466548535462 | [Consolidated Variance Data!K13] 52
+[p001_b0020] Row 14: [Consolidated Variance Data!B14] Other Operating Revenue | [Consolidated Variance Data!C14] NR | [Consolidated Variance Data!D14] 44.3 | [Consolidated Variance Data!E14] 76.099999999999994 | [Consolidated Variance Data!F14] 93 | [Consolidated Variance Data!H14] -31.9 | [Consolidated Variance Data!J14] -6 | [Consolidated Variance Data!K14] 54
+[p001_b0021] Row 15: [Consolidated Variance Data!B15] Payroll | [Consolidated Variance Data!C15] NR | [Consolidated Variance Data!D15] 17.451775093950914 | [Consolidated Variance Data!E15] 3.6848239697145249 | [Consolidated Variance Data!F15] 98 | [Consolidated Variance Data!H15] 172.10635908605127 | [Consolidated Variance Data!J15] 3.7378569074355683 | [Consolidated Variance Data!K15] 99
+[p001_b0022] Row 16: [Consolidated Variance Data!B16] Overtime | [Consolidated Variance Data!C16] NR | [Consolidated Variance Data!D16] -19.399999999999999 | [Consolidated Variance Data!E16] -25 | [Consolidated Variance Data!F16] 94 | [Consolidated Variance Data!H16] -195 | [Consolidated Variance Data!J16] -26.2 | [Consolidated Variance Data!K16] 55
+[p001_b0023] Row 17: [Consolidated Variance Data!B17] Health and Welfare | [Consolidated Variance Data!C17] NR | [Consolidated Variance Data!D17] 20.7 | [Consolidated Variance Data!E17] 15.2 | [Consolidated Variance Data!F17] 56 | [Consolidated Variance Data!H17] 112.2 | [Consolidated Variance Data!J17] 8.5 | [Consolidated Variance Data!K17] 57
+[p001_b0024] Row 18: [Consolidated Variance Data!B18] OPEB - Current Payment | [Consolidated Variance Data!C18] NR | [Consolidated Variance Data!D18] -6 | [Consolidated Variance Data!E18] -9.1 | [Consolidated Variance Data!F18] 58 | [Consolidated Variance Data!H18] 28.5 | [Consolidated Variance Data!J18] 4.4000000000000004 | [Consolidated Variance Data!K18] 59
+[p001_b0025] Row 19: [Consolidated Variance Data!B19] Pensions | [Consolidated Variance Data!C19] NR | [Consolidated Variance Data!D19] -2.1800590680342822 | [Consolidated Variance Data!E19] -1.9890573678917995 | [Consolidated Variance Data!F19] 100 | [Consolidated Variance Data!H19] 38.717332527866802 | [Consolidated Variance Data!J19] 3.4139797994637426 | [Consolidated Variance Data!K19] 101
+[p001_b0026] Row 20: [Consolidated Variance Data!B20] Other Fringe Benefits | [Consolidated Variance Data!C20] NR | [Consolidated Variance Data!D20] 0.75674023124831535 | [Consolidated Variance Data!E20] 0.93480714467106751 | [Consolidated Variance Data!F20] 102 | [Consolidated Variance Data!H20] -20.602790017373309 | [Consolidated Variance Data!J20] -2.4935717894037928 | [Consolidated Variance Data!K20] 85
+[p001_b0027] Row 21: [Consolidated Variance Data!B21] Reimbursable Overhead | [Consolidated Variance Data!C21] NR | [Consolidated Variance Data!D21] -4.0896355911565081 | [Consolidated Variance Data!E21] -10.982826706837074 | [Consolidated Variance Data!F21] 86 | [Consolidated Variance Data!H21] -52.58428074925655 | [Consolidated Variance Data!J21] -13.840767933964052 | [Consolidated Variance Data!K21] 87
+[p001_b0028] Row 22: [Consolidated Variance Data!B22] Electric Power | [Consolidated Variance Data!C22] NR | [Consolidated Variance Data!D22] 4.0065874704277604 | [Consolidated Variance Data!E22] 7.2106579683269469 | [Consolidated Variance Data!F22] 103 | [Consolidated Variance Data!H22] 47.832736084240707 | [Consolidated Variance Data!J22] 9.3420593854433793 | [Consolidated Variance Data!K22] 104
+[p001_b0029] Row 23: [Consolidated Variance Data!B23] Fuel | [Consolidated Variance Data!C23] NR | [Consolidated Variance Data!D23] 2.8 | [Consolidated Variance Data!E23] 10.199999999999999 | [Consolidated Variance Data!F23] 96 | [Consolidated Variance Data!H23] -5.0999999999999996 | [Consolidated Variance Data!J23] -2.2000000000000002 | [Consolidated Variance Data!K23] 105
+[p001_b0030] Row 24: [Consolidated Variance Data!B24] Insurance | [Consolidated Variance Data!C24] NR | [Consolidated Variance Data!D24] 4.4249646678175143 | [Consolidated Variance Data!E24] 92.664118916490679 | [Consolidated Variance Data!F24] 88 | [Consolidated Variance Data!H24] 23.88250013446762 | [Consolidated Variance Data!J24] 78.070993084404634 | [Consolidated Variance Data!K24] 89
+[p001_b0031] Row 25: [Consolidated Variance Data!B25] Claims | [Consolidated Variance Data!C25] NR | [Consolidated Variance Data!D25] 7.2265071849999991 | [Consolidated Variance Data!E25] 18.519420355983758 | [Consolidated Variance Data!F25] 107 | [Consolidated Variance Data!H25] 41.4867534642583 | [Consolidated Variance Data!J25] 11.712062791053672 | [Consolidated Variance Data!K25] 106
+[p001_b0032] Row 26: [Consolidated Variance Data!B26] Paratransit Service Contracts | [Consolidated Variance Data!C26] NR | [Consolidated Variance Data!D26] -0.6 | [Consolidated Variance Data!E26] -1.5 | [Consolidated Variance Data!F26] 108 | [Consolidated Variance Data!H26] 15.3 | [Consolidated Variance Data!J26] 4.4000000000000004 | [Consolidated Variance Data!K26] 40
+[p001_b0033] Row 27: [Consolidated Variance Data!B27] Maintenance and Other Operating Contracts | [Consolidated Variance Data!C27] NR | [Consolidated Variance Data!D27] 12.9 | [Consolidated Variance Data!E27] 16.600000000000001 | [Consolidated Variance Data!F27] 109 | [Consolidated Variance Data!H27] 87.1 | [Consolidated Variance Data!J27] 12.4 | [Consolidated Variance Data!K27] 73
+[p001_b0034] Row 28: [Consolidated Variance Data!B28] Professional Service Contracts | [Consolidated Variance Data!C28] NR | [Consolidated Variance Data!D28] -8.9 | [Consolidated Variance Data!E28] -11.4 | [Consolidated Variance Data!F28] 74 | [Consolidated Variance Data!H28] 56.8 | [Consolidated Variance Data!J28] 10.1 | [Consolidated Variance Data!K28] 75
+[p001_b0035] Row 29: [Consolidated Variance Data!B29] Materials & Supplies | [Consolidated Variance Data!C29] NR | [Consolidated Variance Data!D29] 9.834259809436098 | [Consolidated Variance Data!E29] 15.890309864782026 | [Consolidated Variance Data!F29] 110 | [Consolidated Variance Data!H29] 99.35645064961659 | [Consolidated Variance Data!J29] 17.835390755615769 | [Consolidated Variance Data!K29] 111
+[p001_b0036] Row 30: [Consolidated Variance Data!B30] Other Business Expenses | [Consolidated Variance Data!C30] NR | [Consolidated Variance Data!D30] 0.9 | [Consolidated Variance Data!E30] 4.4000000000000004 | [Consolidated Variance Data!F30] 60 | [Consolidated Variance Data!H30] -0.6 | [Consolidated Variance Data!J30] -0.3 | [Consolidated Variance Data!K30] 61
+[p001_b0037] Row 31: [Consolidated Variance Data!B31] Other Expense Adjustments | [Consolidated Variance Data!C31] NR | [Consolidated Variance Data!D31] 0.2 | [Consolidated Variance Data!E31] 45.5 | [Consolidated Variance Data!F31] 42 | [Consolidated Variance Data!H31] -2.1 | [Consolidated Variance Data!J31] -27.5 | [Consolidated Variance Data!K31] 42
+[p001_b0038] Row 32: [Consolidated Variance Data!B32] Depreciation | [Consolidated Variance Data!C32] NR | [Consolidated Variance Data!D32] -1.6 | [Consolidated Variance Data!E32] -0.6 | [Consolidated Variance Data!F32] 62 | [Consolidated Variance Data!H32] -4.2 | [Consolidated Variance Data!J32] -0.2 | [Consolidated Variance Data!K32] 63
+[p001_b0039] Row 33: [Consolidated Variance Data!B33] OPEB Liability Adjustment | [Consolidated Variance Data!C33] NR | [Consolidated Variance Data!D33] 0 | [Consolidated Variance Data!E33] 0 | [Consolidated Variance Data!F33] 43 | [Consolidated Variance Data!H33] 0 | [Consolidated Variance Data!J33] 0 | [Consolidated Variance Data!K33] 43
+[p001_b0040] Row 34: [Consolidated Variance Data!B34] GASB 75 Pension Adjustment | [Consolidated Variance Data!C34] NR | [Consolidated Variance Data!D34] 10.9 | [Consolidated Variance Data!E34] * | [Consolidated Variance Data!F34] 64 | [Consolidated Variance Data!H34] 55.7 | [Consolidated Variance Data!J34] * | [Consolidated Variance Data!K34] 65
+[p001_b0041] Row 35: [Consolidated Variance Data!B35] GASB 68 Pension Adjustment | [Consolidated Variance Data!C35] NR | [Consolidated Variance Data!D35] 6.4 | [Consolidated Variance Data!E35] * | [Consolidated Variance Data!F35] 66 | [Consolidated Variance Data!H35] 32.5 | [Consolidated Variance Data!J35] * | [Consolidated Variance Data!K35] 67
+[p001_b0042] Row 36: [Consolidated Variance Data!B36] Environmental Remediation | [Consolidated Variance Data!C36] NR | [Consolidated Variance Data!D36] 0.36752401000000001 | [Consolidated Variance Data!E36] 69.662909272708362 | [Consolidated Variance Data!F36] 47 | [Consolidated Variance Data!H36] 4.1426330499999988 | [Consolidated Variance Data!J36] 83.784080580542138 | [Consolidated Variance Data!K36] 112
+[p001_b0043] Row 37: [Consolidated Variance Data!B37] Reimbursable revenue and expense activity are primarily influenced by the nature and timing of project activity. Accordingly, variances reflect the impact of the aforementioned influences as well as changes in reimbursement and vacancy assumptions, refinements to project scheduling, as well as project delays/accelerations. At MTAHQ, impacts reflect reimbursable directed patrol (police coverage) requirements. The following lists the major contributors of the variance by Agency.
+[p001_b0044] Row 39: [Consolidated Variance Data!B39] Capital & Other Reimbursements | [Consolidated Variance Data!C39] R | [Consolidated Variance Data!D39] -81.400000000000006 | [Consolidated Variance Data!E39] -40.9 | [Consolidated Variance Data!F39] 76 | [Consolidated Variance Data!H39] -383.8 | [Consolidated Variance Data!J39] -20.3 | [Consolidated Variance Data!K39] 77
+[p001_b0045] Row 40: [Consolidated Variance Data!B40] Payroll | [Consolidated Variance Data!C40] R | [Consolidated Variance Data!D40] 17.370250299329086 | [Consolidated Variance Data!E40] 26.839488741580169 | [Consolidated Variance Data!F40] 113 | [Consolidated Variance Data!H40] 129.5 | [Consolidated Variance Data!J40] 20.5 | [Consolidated Variance Data!K40] 114
+[p001_b0046] Row 41: [Consolidated Variance Data!B41] Overtime | [Consolidated Variance Data!C41] R | [Consolidated Variance Data!D41] 5.0999999999999996 | [Consolidated Variance Data!E41] 28.2 | [Consolidated Variance Data!F41] 68 | [Consolidated Variance Data!H41] 16.100000000000001 | [Consolidated Variance Data!J41] 8.5 | [Consolidated Variance Data!K41] 69
+[p001_b0047] Row 42: [Consolidated Variance Data!B42] Health and Welfare | [Consolidated Variance Data!C42] R | [Consolidated Variance Data!D42] 4.0999999999999996 | [Consolidated Variance Data!E42] 48.3 | [Consolidated Variance Data!F42] 70 | [Consolidated Variance Data!H42] 15.8 | [Consolidated Variance Data!J42] 19.7 | [Consolidated Variance Data!K42] 115
+[p001_b0048] Row 43: [Consolidated Variance Data!B43] OPEB Current Payment | [Consolidated Variance Data!C43] R | [Consolidated Variance Data!D43] 0.1 | [Consolidated Variance Data!E43] 5.0999999999999996 | [Consolidated Variance Data!F43] 47 | [Consolidated Variance Data!H43] 0.9 | [Consolidated Variance Data!J43] 7.1 | [Consolidated Variance Data!K43] 71
+[p001_b0049] Row 44: [Consolidated Variance Data!B44] Pensions | [Consolidated Variance Data!C44] R | [Consolidated Variance Data!D44] 0.85219628912415679 | [Consolidated Variance Data!E44] 7.7394618326064171 | [Consolidated Variance Data!F44] 116 | [Consolidated Variance Data!H44] 5.0999999999999996 | [Consolidated Variance Data!J44] 4.8 | [Consolidated Variance Data!K44] 117
+[p001_b0050] Row 45: [Consolidated Variance Data!B45] Other Fringe Benefits | [Consolidated Variance Data!C45] R | [Consolidated Variance Data!D45] 4.7134284398086734 | [Consolidated Variance Data!E45] 21.680991697361176 | [Consolidated Variance Data!F45] 90 | [Consolidated Variance Data!H45] 36.6 | [Consolidated Variance Data!J45] 16.8 | [Consolidated Variance Data!K45] 118
+[p001_b0051] Row 46: [Consolidated Variance Data!B46] Reimbursable Overhead | [Consolidated Variance Data!C46] R | [Consolidated Variance Data!D46] 3.9674844499924546 | [Consolidated Variance Data!E46] 10.720319423963156 | [Consolidated Variance Data!F46] 92 | [Consolidated Variance Data!H46] 51.7 | [Consolidated Variance Data!J46] 13.7 | [Consolidated Variance Data!K46] 91
+[p001_b0052] Row 47: [Consolidated Variance Data!B47] Electric Power | [Consolidated Variance Data!C47] R | [Consolidated Variance Data!D47] -0.10095376999999998 | [Consolidated Variance Data!E47] * | [Consolidated Variance Data!F47] 47 | [Consolidated Variance Data!H47] -0.3 | [Consolidated Variance Data!J47] -55.6 | [Consolidated Variance Data!K47] 47
+[p001_b0053] Row 48: [Consolidated Variance Data!B48] Fuel | [Consolidated Variance Data!C48] R | [Consolidated Variance Data!D48] 3.0000000000000001E-3 | [Consolidated Variance Data!E48] 97.1 | [Consolidated Variance Data!F48] 47 | [Consolidated Variance Data!H48] 0.2 | [Consolidated Variance Data!J48] 96.8 | [Consolidated Variance Data!K48] 47
+[p001_b0054] Row 49: [Consolidated Variance Data!B49] Insurance | [Consolidated Variance Data!C49] R | [Consolidated Variance Data!D49] 0.3145139831726701 | [Consolidated Variance Data!E49] 37.199846158263746 | [Consolidated Variance Data!F49] 47 | [Consolidated Variance Data!H49] 1 | [Consolidated Variance Data!J49] 12.8 | [Consolidated Variance Data!K49] 119
+[p001_b0055] Row 50: [Consolidated Variance Data!B50] Claims | [Consolidated Variance Data!C50] R | [Consolidated Variance Data!D50] 0 | [Consolidated Variance Data!E50] - | [Consolidated Variance Data!F50] 14 | [Consolidated Variance Data!H50] 0 | [Consolidated Variance Data!J50] - | [Consolidated Variance Data!K50] 14
+[p001_b0056] Row 51: [Consolidated Variance Data!B51] Paratransit Service Contracts | [Consolidated Variance Data!C51] R | [Consolidated Variance Data!D51] 0 | [Consolidated Variance Data!E51] 0 | [Consolidated Variance Data!F51] 14 | [Consolidated Variance Data!H51] 0 | [Consolidated Variance Data!J51] 0 | [Consolidated Variance Data!K51] 14
+[p001_b0057] Row 52: [Consolidated Variance Data!B52] Maintenance and Other Operating Contracts | [Consolidated Variance Data!C52] R | [Consolidated Variance Data!D52] 1.1000000000000001 | [Consolidated Variance Data!E52] 15.3 | [Consolidated Variance Data!F52] 78 | [Consolidated Variance Data!H52] -1.8 | [Consolidated Variance Data!J52] -3 | [Consolidated Variance Data!K52] 79
+[p001_b0058] Row 53: [Consolidated Variance Data!B53] Professional Service Contracts | [Consolidated Variance Data!C53] R | [Consolidated Variance Data!D53] 42.9 | [Consolidated Variance Data!E53] * | [Consolidated Variance Data!F53] 80 | [Consolidated Variance Data!H53] 118.4 | [Consolidated Variance Data!J53] * | [Consolidated Variance Data!K53] 81
+[p001_b0059] Row 54: [Consolidated Variance Data!B54] Materials & Supplies | [Consolidated Variance Data!C54] R | [Consolidated Variance Data!D54] 0.58784709725806472 | [Consolidated Variance Data!E54] 5.6017733459174686 | [Consolidated Variance Data!F54] 120 | [Consolidated Variance Data!H54] 11.5 | [Consolidated Variance Data!J54] 11.8 | [Consolidated Variance Data!K54] 121
+[p001_b0060] Row 55: [Consolidated Variance Data!B55] Other Business Expenses | [Consolidated Variance Data!C55] R | [Consolidated Variance Data!D55] 0.5 | [Consolidated Variance Data!E55] * | [Consolidated Variance Data!F55] 47 | [Consolidated Variance Data!H55] -0.9 | [Consolidated Variance Data!J55] -99 | [Consolidated Variance Data!K55] 72
+### [p001_b0061] Row 57: [Consolidated Variance Data!B57] B80:W81
+[p001_b0062] Row 58: [Consolidated Variance Data!B58] Subsidies | [Consolidated Variance Data!C58] NR | [Consolidated Variance Data!D58] -77.590047848252425 | [Consolidated Variance Data!E58] -10.4840118311956 | [Consolidated Variance Data!F58] 97 | [Consolidated Variance Data!H58] 211.18424771623359 | [Consolidated Variance Data!J58] 3.4422055631094004 | [Consolidated Variance Data!K58] 84
+[p001_b0063] Row 59: [Consolidated Variance Data!B59] Debt Service | [Consolidated Variance Data!C59] NR | [Consolidated Variance Data!D59] -117.5 | [Consolidated Variance Data!E59] -49.6 | [Consolidated Variance Data!F59] 82 | [Consolidated Variance Data!H59] -46.3 | [Consolidated Variance Data!J59] -1.8 | [Consolidated Variance Data!K59] 83

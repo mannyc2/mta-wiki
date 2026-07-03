@@ -1,0 +1,847 @@
+{
+  "run_id": "2026-06-10T17-48-04-680Z_1496766-f5d09147_ingest_2010-02-25-brt-1st2nd-cb8",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-10T19:36:19.174Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "rel-avg-bus-speed-nyc",
+        "local_observation_id": "metric_avg_bus_speed_nyc_81",
+        "decision": "skip",
+        "rationale": "The cited block (p003_c0003) shows a general bar chart comparing NYC average bus speed (8.1 MPH) to other US cities — city-wide context, not specific to the First/Second Avenue corridor, M15 route, or any registry subject. No registry subject is named in the cited text.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p003_c0003",
+            "source_quote": "A bar chart comparing the average bus speeds in five major US cities. The vertical axis is labeled 'Average Speed (MPH)' and ranges from 0 to 14 in increments of 2. The horizontal axis lists the cities: New York, Chicago, Boston, Washington, and Los Angeles. Each city has a corresponding bar. The New York bar is orange and has a value of 8.1."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-corridor-length",
+        "local_observation_id": "metric_corridor_length_85_miles",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_corridor-length-85-miles",
+            "description": "Corridor length: 8.5 miles from South Ferry to 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p006_c0004",
+                "source_quote": "8.5 miles from South Ferry to 125 th Street"
+              }
+            ]
+          }
+        ],
+        "rationale": "p006_c0004 states '8.5 miles from South Ferry to 125th Street' in the 'About the Corridor' section, which describes the First Avenue/Second Avenue corridor matching corridor_first-second-avenues-brt.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p006_c0004",
+            "source_quote": "8.5 miles from South Ferry to 125 th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-weekday-riders",
+        "local_observation_id": "metric_weekday_riders_57000",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-cb8-2010",
+            "object_id": "metric_weekday-riders-57000_2",
+            "description": "M15 route: Over 57,000 weekday riders",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p006_c0006",
+                "source_quote": "Over 57,000 weekday riders"
+              }
+            ]
+          }
+        ],
+        "rationale": "p006_c0006 states 'Over 57,000 weekday riders' in the corridor section that states 'Currently served by M15 bus route' (p006_c0005). The metric describes ridership on the M15 route.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p006_c0006",
+            "source_quote": "Over 57,000 weekday riders"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-residents-quarter-mile",
+        "local_observation_id": "metric_residents_within_quarter_mile",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_residents-within-quarter-mile_2",
+            "description": "537,000 residents within 1/4 mile of the corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p006_c0010",
+                "source_quote": "537,000 residents"
+              }
+            ]
+          }
+        ],
+        "rationale": "p006_c0010 states '537,000 residents' under 'Within a ¼ mile:' in the About the Corridor section describing the First/Second Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p006_c0010",
+            "source_quote": "537,000 residents"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-pct-no-car",
+        "local_observation_id": "metric_pct_households_no_car",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_pct-households-no-car",
+            "description": "78% of households within 1/4 mile do not own a car",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p006_c0011",
+                "source_quote": "78% of households do not own a car"
+              }
+            ]
+          }
+        ],
+        "rationale": "p006_c0011 states '78% of households do not own a car' under the corridor demographics section describing the First/Second Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p006_c0011",
+            "source_quote": "78% of households do not own a car"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-pct-commute-transit",
+        "local_observation_id": "metric_pct_commute_by_transit",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_pct-commute-by-transit",
+            "description": "57% of residents within 1/4 mile commute by transit",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p006_c0012",
+                "source_quote": "57% of residents commute by transit"
+              }
+            ]
+          }
+        ],
+        "rationale": "p006_c0012 states '57% of residents commute by transit' under the corridor demographics section describing the First/Second Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p006_c0012",
+            "source_quote": "57% of residents commute by transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m15-bus-in-motion",
+        "local_observation_id": "metric_m15_delay_bus_in_motion_54",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-cb8-2010",
+            "object_id": "metric_m15-delay-bus-in-motion-54",
+            "description": "M15 Limited: Bus in Motion accounts for 54% of delay",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p012_c0005",
+                "source_quote": "A pie chart titled \"Sources of delay on M15 Limited\" showing the distribution of delay sources. The chart is divided into four segments: a large green segment for \"Bus in Motion\" at 54%"
+              }
+            ]
+          }
+        ],
+        "rationale": "p012_c0005 shows a pie chart titled 'Sources of delay on M15 Limited' that explicitly names M15 Limited, with Bus in Motion at 54%.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p012_c0005",
+            "source_quote": "A pie chart titled \"Sources of delay on M15 Limited\" showing the distribution of delay sources. The chart is divided into four segments: a large green segment for \"Bus in Motion\" at 54%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m15-stopped-at-stops",
+        "local_observation_id": "metric_m15_delay_stopped_bus_stops_22",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-cb8-2010",
+            "object_id": "metric_m15-delay-stopped-bus-stops-22",
+            "description": "M15 Limited: Stopped at Bus Stops accounts for 22% of delay",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p012_c0005",
+                "source_quote": "a blue segment for \"Stopped at Bus Stops\" at 22%"
+              }
+            ]
+          }
+        ],
+        "rationale": "p012_c0005 pie chart titled 'Sources of delay on M15 Limited' shows Stopped at Bus Stops at 22%.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p012_c0005",
+            "source_quote": "a blue segment for \"Stopped at Bus Stops\" at 22%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m15-red-lights",
+        "local_observation_id": "metric_m15_delay_red_lights_21",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-cb8-2010",
+            "object_id": "metric_m15-delay-red-lights-21",
+            "description": "M15 Limited: Stopped During Red Lights accounts for 21% of delay",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p012_c0005",
+                "source_quote": "a red segment for \"Stopped During Red Lights\" at 21%"
+              }
+            ]
+          }
+        ],
+        "rationale": "p012_c0005 pie chart titled 'Sources of delay on M15 Limited' shows Stopped During Red Lights at 21%.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p012_c0005",
+            "source_quote": "a red segment for \"Stopped During Red Lights\" at 21%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m15-other",
+        "local_observation_id": "metric_m15_delay_other_4",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m15-cb8-2010",
+            "object_id": "metric_m15-delay-other-4",
+            "description": "M15 Limited: Other Delays account for 4% of delay",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p012_c0005",
+                "source_quote": "a small orange segment for \"Other Delays\" at 4%"
+              }
+            ]
+          }
+        ],
+        "rationale": "p012_c0005 pie chart titled 'Sources of delay on M15 Limited' shows Other Delays at 4%.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p012_c0005",
+            "source_quote": "a small orange segment for \"Other Delays\" at 4%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-34th-travel-time",
+        "local_observation_id": "metric_34th_st_travel_time_improvement_17",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-street-enhanced-bus-priority",
+            "object_id": "metric_34th-st-travel-time-improvement-17",
+            "description": "34th Street Enhanced Bus Priority: 17% improvement in travel time",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p013_c0006",
+                "source_quote": "17% improvement in travel time 29% less time stopped at red lights"
+              }
+            ]
+          }
+        ],
+        "rationale": "p013_c0006 appears under the heading '34th Street Enhanced Bus Priority' (p013_c0002) and explicitly states results for that project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p013_c0006",
+            "source_quote": "17% improvement in travel time 29% less time stopped at red lights"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-34th-red-light",
+        "local_observation_id": "metric_34th_st_less_red_light_time_29",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-street-enhanced-bus-priority",
+            "object_id": "metric_34th-st-less-red-light-time-29",
+            "description": "34th Street Enhanced Bus Priority: 29% less time stopped at red lights",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p013_c0006",
+                "source_quote": "17% improvement in travel time 29% less time stopped at red lights"
+              }
+            ]
+          }
+        ],
+        "rationale": "p013_c0006 under '34th Street Enhanced Bus Priority' heading states '29% less time stopped at red lights'.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p013_c0006",
+            "source_quote": "17% improvement in travel time 29% less time stopped at red lights"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-fordham-running-time",
+        "local_observation_id": "metric_fordham_rd_running_time_reduction_20",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_fordham-road-sbs-2010-01-14",
+            "object_id": "metric_fordham-rd-running-time-reduction-20",
+            "description": "Fordham Road SBS: 20% reduction in running time",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p014_c0006",
+                "source_quote": "Travel Time: 20% reduction in running time Ridership: 10% increase from October 2007 to October 2008 Customer Satisfaction: 98% satisfied or very satisfied"
+              }
+            ]
+          }
+        ],
+        "rationale": "p014_c0006 appears under 'Fordham Road Select Bus Service' heading (p014_c0002) and states the results for that project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p014_c0006",
+            "source_quote": "Travel Time: 20% reduction in running time Ridership: 10% increase from October 2007 to October 2008 Customer Satisfaction: 98% satisfied or very satisfied"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-fordham-ridership",
+        "local_observation_id": "metric_fordham_rd_ridership_increase_10",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_fordham-road-sbs-2010-01-14",
+            "object_id": "metric_fordham-rd-ridership-increase-10",
+            "description": "Fordham Road SBS: 10% ridership increase Oct 2007 to Oct 2008",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p014_c0006",
+                "source_quote": "Ridership: 10% increase from October 2007 to October 2008"
+              }
+            ]
+          }
+        ],
+        "rationale": "p014_c0006 under 'Fordham Road Select Bus Service' states 'Ridership: 10% increase from October 2007 to October 2008'.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p014_c0006",
+            "source_quote": "Ridership: 10% increase from October 2007 to October 2008"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-fordham-satisfaction",
+        "local_observation_id": "metric_fordham_rd_customer_satisfaction_98",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_fordham-road-sbs-2010-01-14",
+            "object_id": "metric_fordham-rd-customer-satisfaction-98",
+            "description": "Fordham Road SBS: 98% customer satisfaction",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p014_c0006",
+                "source_quote": "Customer Satisfaction: 98% satisfied or very satisfied"
+              }
+            ]
+          }
+        ],
+        "rationale": "p014_c0006 under 'Fordham Road Select Bus Service' states 'Customer Satisfaction: 98% satisfied or very satisfied'.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p014_c0006",
+            "source_quote": "Customer Satisfaction: 98% satisfied or very satisfied"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-first-ave-ped-fatalities",
+        "local_observation_id": "metric_first_ave_ped_fatalities_7",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_first-ave-ped-fatalities-7",
+            "description": "First Avenue: 7 pedestrian fatalities (2006-2008)",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p015_c0006",
+                "source_quote": "Pedestrian fatalities Pedestrian crashes First Avenue 7 538 Second Avenue 4 597"
+              }
+            ]
+          }
+        ],
+        "rationale": "p015_c0006 explicitly names 'First Avenue' and 'Second Avenue' in the pedestrian safety data table under the Design Goals section of the First Avenue/Second Avenue SBS presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p015_c0006",
+            "source_quote": "First Avenue 7 538"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-first-ave-ped-crashes",
+        "local_observation_id": "metric_first_ave_ped_crashes_538",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_first-ave-ped-crashes-538",
+            "description": "First Avenue: 538 pedestrian crashes (2006-2008)",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p015_c0006",
+                "source_quote": "First Avenue 7 538"
+              }
+            ]
+          }
+        ],
+        "rationale": "p015_c0006 explicitly names 'First Avenue' in the pedestrian safety data table.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p015_c0006",
+            "source_quote": "First Avenue 7 538"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-second-ave-ped-fatalities",
+        "local_observation_id": "metric_second_ave_ped_fatalities_4",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_second-ave-ped-fatalities-4",
+            "description": "Second Avenue: 4 pedestrian fatalities (2006-2008)",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p015_c0006",
+                "source_quote": "Second Avenue 4 597"
+              }
+            ]
+          }
+        ],
+        "rationale": "p015_c0006 explicitly names 'Second Avenue' in the pedestrian safety data table.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p015_c0006",
+            "source_quote": "Second Avenue 4 597"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-second-ave-ped-crashes",
+        "local_observation_id": "metric_second_ave_ped_crashes_597",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "metric_second-ave-ped-crashes-597",
+            "description": "Second Avenue: 597 pedestrian crashes (2006-2008)",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p015_c0006",
+                "source_quote": "Second Avenue 4 597"
+              }
+            ]
+          }
+        ],
+        "rationale": "p015_c0006 explicitly names 'Second Avenue' in the pedestrian safety data table.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p015_c0006",
+            "source_quote": "Second Avenue 4 597"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-broadway-ped-injuries",
+        "local_observation_id": "metric_broadway_ped_injuries_down_40",
+        "decision": "skip",
+        "rationale": "The cited block (p016_c0006) names 'Broadway' as a location for pedestrian injury reduction from protected bicycle paths. This is an example from a different corridor, not the First/Second Avenue corridor. No registry subject matches this metric — Broadway here refers to a different project/location.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p016_c0006",
+            "source_quote": "Pedestrian injuries on Broadway: ↓ 40% Ninth Avenue: ↓ 29% Grand Street: ↓ 28%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-ninth-ave-ped-injuries",
+        "local_observation_id": "metric_ninth_ave_ped_injuries_down_29",
+        "decision": "skip",
+        "rationale": "The cited block (p016_c0006) names Ninth Avenue as a location for pedestrian injury reduction — an example from a different corridor. Not the First/Second Avenue corridor that is the subject of this presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p016_c0006",
+            "source_quote": "Ninth Avenue: ↓ 29%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-grand-st-ped-injuries",
+        "local_observation_id": "metric_grand_st_ped_injuries_down_28",
+        "decision": "skip",
+        "rationale": "The cited block (p016_c0006) names Grand Street as a location for pedestrian injury reduction — an example from a different corridor. Not the First/Second Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p016_c0006",
+            "source_quote": "Grand Street: ↓ 28%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-broadway-bike",
+        "local_observation_id": "metric_broadway_bike_volumes_up_50",
+        "decision": "skip",
+        "rationale": "The cited block (p018_c0005) states 'Broadway ↑ 50%' under 'Protected Bicycle Paths and Pedestrian Improvements — Results'. This is an example result from Broadway, not the First/Second Avenue corridor that is the subject of the presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p018_c0005",
+            "source_quote": "Broadway \\uparrow 50%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-ninth-ave-bike",
+        "local_observation_id": "metric_ninth_ave_bike_volumes_up_37",
+        "decision": "skip",
+        "rationale": "The cited block (p018_c0006) states 'Ninth Avenue ↑ 37%' — an example result from a different corridor, cited in the presentation as evidence of benefits of protected bike paths.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p018_c0006",
+            "source_quote": "Ninth Avenue \\uparrow 37%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-grand-st-bike",
+        "local_observation_id": "metric_grand_st_bike_volumes_up_29",
+        "decision": "skip",
+        "rationale": "The cited block (p018_c0007) states 'Grand Street ↑ 29%' — an example result from a different corridor, cited in the presentation as evidence of benefits of protected bike paths.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p018_c0007",
+            "source_quote": "Grand Street \\uparrow 29%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-bus-speeds-declining",
+        "local_observation_id": "claim_bus_speeds_declining",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "claim_bus-speeds-declining_3",
+            "description": "Bus speeds on the First Avenue/Second Avenue corridor have been declining",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p006_c0007",
+                "source_quote": "Bus speeds have been declining"
+              }
+            ]
+          }
+        ],
+        "rationale": "p006_c0007 states 'Bus speeds have been declining' in the 'About the Corridor' section describing the First/Second Avenue corridor served by M15.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p006_c0007",
+            "source_quote": "Bus speeds have been declining"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-ridership-decreasing",
+        "local_observation_id": "claim_ridership_decreasing",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "claim_ridership-decreasing",
+            "description": "Ridership on the First Avenue/Second Avenue corridor has been decreasing",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p006_c0008",
+                "source_quote": "Ridership has been decreasing"
+              }
+            ]
+          }
+        ],
+        "rationale": "p006_c0008 states 'Ridership has been decreasing' in the 'About the Corridor' section describing the First/Second Avenue corridor served by M15.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p006_c0008",
+            "source_quote": "Ridership has been decreasing"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-design-goals",
+        "local_observation_id": "claim_design_goals",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_first-second-ave-sbs-cb8-2010",
+            "object_id": "claim_design-goals",
+            "description": "Design goals for First Avenue/Second Avenue SBS: improve bus service, pedestrian safety, bicycle access, maintain traffic flow, and allow curb access",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p019_c0001",
+                "source_quote": "First Avenue/Second Avenue SBS"
+              }
+            ]
+          }
+        ],
+        "rationale": "p019_c0001 is the 'First Avenue/Second Avenue SBS' section heading under which the 'Design Goals' (p019_c0002) are listed. The design goals are explicitly for the First Avenue/Second Avenue SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p019_c0001",
+            "source_quote": "First Avenue/Second Avenue SBS"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-sas-m15-demand",
+        "local_observation_id": "claim_sas_m15_demand_high",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_m15-cb8-2010",
+            "object_id": "claim_sas-m15-demand-high",
+            "description": "Under Phase 1 and full-build of SAS, passenger demand on M15 will remain high",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p036_c0008",
+                "source_quote": "Under Phase 1 and full-build of SAS, passenger demand on M15 will remain high"
+              }
+            ]
+          }
+        ],
+        "rationale": "p036_c0008 explicitly names 'M15' and states passenger demand will remain high even after Second Avenue Subway construction.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p036_c0008",
+            "source_quote": "Under Phase 1 and full-build of SAS, passenger demand on M15 will remain high"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-bus-ridership-stagnation",
+        "local_observation_id": "claim_bus_ridership_stagnation_2002_2008",
+        "decision": "skip",
+        "rationale": "The cited block (p004_c0003) shows a graph of NYC-wide subway and bus ridership trends, highlighting bus ridership stagnation 2002-2008. This is a city-wide context claim, not specific to the First/Second Avenue corridor, M15 route, or the SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p004_c0003",
+            "source_quote": "A yellow oval highlights the period from 2002 to 2008, indicating a stagnation in bus ridership."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-cb8-meeting",
+        "local_observation_id": "event_cb8_meeting_feb2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs-cb8-2010",
+            "object_id": "event_cb8-meeting-feb2010",
+            "description": "Community Board 8 Transportation Committee meeting on February 25, 2010 for the First Avenue/Second Avenue SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p001_c0003",
+                "source_quote": "Community Board 8 Transportation Committee Thursday, February 25, 2010"
+              }
+            ]
+          }
+        ],
+        "rationale": "p001_c0003 names 'Community Board 8 Transportation Committee' and the date 'Thursday, February 25, 2010' in the context of the 'First Avenue/Second Avenue Select Bus Service' presentation (p001_c0002).",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p001_c0003",
+            "source_quote": "Community Board 8 Transportation Committee Thursday, February 25, 2010"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-phase1-sbs",
+        "local_observation_id": "event_phase1_sbs_service_begins_nov2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs-cb8-2010",
+            "object_id": "event_phase1-sbs-service-begins-nov2010",
+            "description": "Phase 1 SBS service begins November 2010 on First Avenue/Second Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p010_c0004",
+                "source_quote": "Nov Phase 1 SBS Service begins"
+              }
+            ]
+          }
+        ],
+        "rationale": "p010_c0004 shows the 2010 schedule for the First Avenue/Second Avenue SBS project, with 'Nov ... Phase 1 SBS Service begins' as a project milestone.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p010_c0004",
+            "source_quote": "Nov Phase 1 SBS Service begins"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-open-houses",
+        "local_observation_id": "event_public_open_houses_mar2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs-cb8-2010",
+            "object_id": "event_public-open-houses-mar2010_2",
+            "description": "Public Open Houses on March 18 and 23, 2010 for First Avenue/Second Avenue SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p008_c0015",
+                "source_quote": "March 18 and 23, 2010"
+              }
+            ]
+          }
+        ],
+        "rationale": "p008_c0015-16 lists 'Public Open Houses — March 18 and 23, 2010' under the 'Public Outreach' section of the First Avenue/Second Avenue SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p008_c0015",
+            "source_quote": "March 18 and 23, 2010"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-cac-4",
+        "local_observation_id": "event_cac_meeting_4_apr2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_first-second-ave-sbs-cb8-2010",
+            "object_id": "event_cac-meeting-4-apr2010_2",
+            "description": "CAC Meeting #4 on curb regulations, scheduled for March 2010 (listed as April elsewhere in the presentation)",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p010_c0004",
+                "source_quote": "Mar CAC meeting #4: curb regulations"
+              }
+            ]
+          }
+        ],
+        "rationale": "p010_c0004 shows the 2010 schedule with 'Mar CAC meeting #4: curb regulations' as an outreach milestone for the First Avenue/Second Avenue SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p010_c0004",
+            "source_quote": "Mar CAC meeting #4: curb regulations"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-32-18-836Z_1637391-d7dc6f2d_canonicalize_2026-06-10t17-48-04-680z-1496766-f5d09147-ingest-2010-02-25-brt-1st2nd-cb8-relation-linker"
+}

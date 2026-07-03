@@ -1,0 +1,186 @@
+{
+  "id": "codex-sourcegap-route-project-identity-batch-2026-06-30-r",
+  "created_at": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-profile commands"
+  ],
+  "implemented_changes": [
+    {
+      "bucket": "source_gaps.gap_kind_normalized",
+      "before": 5,
+      "after": 4,
+      "change": "exact scope_limitation payloads with outside-scope/could-not-evaluate text plus future analysis/finalization markers now normalize to pending_analysis",
+      "records_moved": [
+        {
+          "record_id": "gap_study-limitations-outside-scope",
+          "gap_kind_normalized": "pending_analysis"
+        }
+      ]
+    },
+    {
+      "bucket": "routes.route_record_scope",
+      "before": {
+        "true_route": 302,
+        "aggregate_list_context": 9,
+        "split_candidate": 8,
+        "data_only_scope": 1
+      },
+      "after": {
+        "true_route": 303,
+        "aggregate_list_context": 8,
+        "split_candidate": 8,
+        "data_only_scope": 1
+      },
+      "change": "primary route_id same-base A/B branch surfaces such as Bx18A/B are true routes, while broader slash surfaces remain aggregate or split candidates",
+      "records_moved": [
+        {
+          "record_id": "route_bx18a-b",
+          "route_record_scope": "true_route",
+          "route_record_scope_reason": "same_base_branch_route_id"
+        }
+      ]
+    },
+    {
+      "bucket": "projects.document_time_status",
+      "before": 32,
+      "after": 30,
+      "change": "exact strategic-plan status gates for DEI Strategic Plan 2025-2030 and Metro-North One",
+      "records_moved": [
+        {
+          "record_id": "project_m151646-dei-strategic-plan-2025-2030",
+          "document_time_status": "active"
+        },
+        {
+          "record_id": "project_meeting-doc-176346-metro-north-one",
+          "document_time_status": "active"
+        }
+      ]
+    },
+    {
+      "bucket": "entity identity aliases",
+      "before": {
+        "entity_records": 1896,
+        "total_aliases": 1758
+      },
+      "after": {
+        "entity_records": 1895,
+        "total_aliases": 1759
+      },
+      "change": "durable identity override aliases thin MTA Bus Company (BUS) table row to canonical MTA Bus Company entity",
+      "records_moved": [
+        {
+          "alias": "entity_meeting-doc-201701-bus",
+          "target": "entity_mta-bus-company"
+        }
+      ]
+    }
+  ],
+  "final_counts": {
+    "submissions": 98102,
+    "canonical_records": 84045,
+    "wiki_pages": 7336,
+    "projects": 1862,
+    "routes": 320,
+    "source_gaps": 480,
+    "entities": 1895,
+    "project_status_missing_unresolved": 30,
+    "project_family_missing_unresolved": 10,
+    "source_gap_kind_other_or_missing": 4,
+    "route_record_scope": {
+      "true_route": 303,
+      "aggregate_list_context": 8,
+      "split_candidate": 8,
+      "data_only_scope": 1
+    },
+    "identity_overrides": {
+      "alias_counts": {
+        "entity": 1162,
+        "project": 352,
+        "corridor": 99,
+        "route": 146
+      },
+      "total_aliases": 1759,
+      "do_not_merge_counts": {
+        "entity": 171,
+        "project": 65,
+        "corridor": 53,
+        "route": 68
+      },
+      "total_do_not_merge_pairs": 357
+    }
+  },
+  "tests_and_validation": [
+    {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "result": "pass",
+      "details": "267 pass, 0 fail, 4080 expect() calls"
+    },
+    {
+      "command": "bun test packages/pipeline/test/materialize/materialize.test.ts",
+      "result": "pass",
+      "details": "55 pass, 0 fail, 855 expect() calls"
+    },
+    {
+      "command": "bun test packages/db/test/identity.test.ts",
+      "result": "pass",
+      "details": "26 pass, 0 fail, 120 expect() calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    {
+      "command": "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+      "result": "pass",
+      "details": "Materialized 93092/98102 submissions; canonical records 84045; pages 7340 during materialize; SQLite FTS quick_check: ok"
+    },
+    {
+      "command": "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+      "result": "pass",
+      "details": "ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass",
+      "details": "Submissions 98102; canonical records 84045; wiki pages 7336; Issues 0"
+    }
+  ],
+  "subagent_inputs": [
+    {
+      "agent_id": "019f18df-7954-79c1-badc-6adfc72c8481",
+      "lane": "source_gap.gap_kind_normalized residuals",
+      "used": true
+    },
+    {
+      "agent_id": "019f18df-bad3-7740-bef0-f6df44b7de52",
+      "lane": "route residual guardrail candidates",
+      "used": true
+    },
+    {
+      "agent_id": "019f18df-9cca-7f72-8554-0fff4d3525c3",
+      "lane": "project family/status residuals",
+      "used": true
+    },
+    {
+      "agent_id": "019f18df-a1ce-7851-b605-1ea17bcd2e26",
+      "lane": "entity duplicate identity keys and override candidates",
+      "used": true
+    }
+  ],
+  "remaining_intentionally_unresolved": [
+    "30 project records still lack document_time_status.",
+    "10 project records still have missing/other project_family.",
+    "4 source_gap records still have gap_kind_normalized other/missing; the remaining examples are COVID moratorium or runner/process context rather than source-stated data gaps.",
+    "Route split_candidate remains 8 and aggregate_list_context remains 8; M101 local/SBS and public slash-route aggregates are deferred as representation-policy decisions.",
+    "event_family other remains 107; the public/special-event slice remains deferred pending representation-policy approval.",
+    "Canonical JSONL was updated only by deterministic materialization, not hand-edited."
+  ]
+}

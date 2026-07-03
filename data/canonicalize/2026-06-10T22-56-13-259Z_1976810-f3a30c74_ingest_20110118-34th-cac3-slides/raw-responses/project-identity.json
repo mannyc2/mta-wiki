@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-06-10T22-56-13-259Z_1976810-f3a30c74_ingest_20110118-34th-cac3-slides",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T01:24:45.985Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "decision-project-34th-street-transitway-20110118",
+        "local_observation_id": "project_34th_street_transitway_20110118",
+        "decision": "new",
+        "rationale": "The observation already resolves to its own base_record_id (project_34th-street-transitway-concept), which exists in the registry with matching source ID '20110118_34th_cac3_slides' and the alias 'project_34th-street-transitway-20110118'. The payloads match on project_name ('34th Street Transitway' vs '34th Street Transitway Concept'), project_type ('transitway'), and borough ('Manhattan'). No different existing record needs to be linked.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac3_slides",
+            "block_id": "p004_c0001",
+            "source_quote": "34th Street Transitway. Key Facts: 33,000+ daily bus riders, 4.5 mph average bus speed, 90% of travelers on the corridor are walking or taking the bus."
+          },
+          {
+            "source_id": "20110118_34th_cac3_slides",
+            "block_id": "p004_c0003",
+            "source_quote": "34th Street Transitway"
+          },
+          {
+            "source_id": "20110118_34th_cac3_slides",
+            "block_id": "p004_c0004",
+            "source_quote": "34th Street Transitway"
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-24-00-201Z_2111393-129175f5_canonicalize_2026-06-10t22-56-13-259z-1976810-f3a30c74-ingest-20110118-34th-cac3-slides-project-identity"
+}

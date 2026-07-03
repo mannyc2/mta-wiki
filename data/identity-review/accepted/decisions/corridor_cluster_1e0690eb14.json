@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "corridor_cluster_1e0690eb14",
+  "kind": "corridor",
+  "packet_path": "data/identity-review/packets/corridor_cluster_1e0690eb14.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_1e0690eb14.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "corridor_bedford-avenue-201011",
+        "corridor_stationary-brooklyn"
+      ],
+      "reason": "Contradiction test: strong identity fields differ. corridor_bedford-avenue-201011 has street='Bedford Avenue' with specific limits 'Between DeKalb Ave and Flushing Ave (bus lane)'; corridor_stationary-brooklyn has a multi-street array (including Bedford Avenue among 13 streets) and no limits. These are not the same canonical corridor. Per-kind rule: a broad study corridor (collection of camera corridors) and a specific segment are distinct."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "The two records describe different objects: one is a specific segment of Bedford Avenue with defined limits and a project role; the other is a list of 13 Brooklyn streets with stationary cameras. The identity fields (street(s), limits) contradict each other, so they cannot be merged. This is covered by the contradiction test (test 1) and the per-kind rule that broad study corridors and specific segments are distinct. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

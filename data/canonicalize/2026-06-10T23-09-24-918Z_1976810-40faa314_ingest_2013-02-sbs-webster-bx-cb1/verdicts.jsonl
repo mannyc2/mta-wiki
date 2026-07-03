@@ -1,0 +1,14 @@
+{"decision_id":"rel-metric-01-bx41-ridership","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb1#p007_c0002"]}
+{"decision_id":"rel-metric-02-corridor-population","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb1#p007_c0002"]}
+{"decision_id":"rel-metric-03-households-no-car","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb1#p007_c0002"]}
+{"decision_id":"rel-metric-04-commute-transit","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb1#p007_c0002"]}
+{"decision_id":"rel-metric-08-traffic-injuries","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb1#p006_c0005"]}
+{"decision_id":"rel-metric-09-bx41-local-frequency","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb1#p028_c0002"]}
+{"decision_id":"rel-metric-10-corridor-length","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb1#p007_c0002"]}
+{"decision_id":"rel-metric-12-offset-bus-lanes","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb1#p011_c0002"]}
+{"decision_id":"rel-claim-13-fare-evasion","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb1#p012_c0007"]}
+{"decision_id":"rel-claim-14-clemente-plaza","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb1#p023_c0002"]}
+{"decision_id":"rel-claim-15-community-priorities","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb1#p009_c0003"]}
+{"decision_id":"rel-event-16-start-of-service","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb1#p032_c0007"]}
+{"decision_id":"rel-event-17-cac1","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb1#p008_c0002"]}
+{"decision_id":"rel-event-21-open-house-1","verdict":"pass","evidence_checked":["2013_02_sbs_webster_bx_cb1#p008_c0002"]}

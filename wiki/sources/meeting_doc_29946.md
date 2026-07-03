@@ -1,0 +1,553 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-29946"
+record_kind: "source"
+display_name: "Capital Program Oversight Committee Meeting - February 2021"
+source_id: "meeting_doc_29946"
+source_ids:
+  - "meeting_doc_29946"
+local_observation_id: "source_meeting_doc_29946"
+local_observation_ids:
+  - "source_meeting_doc_29946"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T22:55:43.934Z"
+submission_ids:
+  - "sub_8c432a14180de6ff"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting book"
+  date_text: "February 2021"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2021-02"
+    precision: "month"
+    raw_text: "February 2021"
+  published_date_normalized: "2021-02"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "Capital Program Oversight Committee Meeting"
+evidence_refs:
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_29946#p001_c0004"
+    page_number: 1
+    source_id: "meeting_doc_29946"
+    source_path: "raw/sources/meeting_doc_29946/blocks.jsonl"
+    text_sha256: "sha256:1d42c7bfa4b420e69392483b62e734ac9a9a7af84754633c5b37e4518402c2fa"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_29946#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_29946"
+    source_path: "raw/sources/meeting_doc_29946/blocks.jsonl"
+    text_sha256: "sha256:ec4da331c09e2061578a1964b23a90bdb7edf5115e31a65c01ad04c21487f1e4"
+    text_source: "raw_text"
+---
+
+# Capital Program Oversight Committee Book
+
+source_id: meeting_doc_29946
+citation: cite block ids exactly as shown in square brackets
+document: 366 block(s)
+
+## Page 1
+
+> [p001_c0001] The logo for the Metropolitan Transportation Authority (MTA) is a black circle containing the white letters "MTA" in a bold, sans-serif font.
+[p001_c0002] Metropolitan Transportation Authority
+### [p001_c0003] Capital Program Oversight Committee Meeting
+[p001_c0004] February 2021
+### [p001_c0005] Committee Members
+[p001_c0006] P. Foye, Chair N. Zuckerman, Vice Chair A. Albert J. Barbas N. Brown M. Fleischer R. Glucksman R. Herman D. Jones K. Law R. Linn D. Mack J. Samuelsen V. Tessitore
+
+## Page 2
+
+### [p002_c0001] Capital Program Oversight Committee Meeting
+[p002_c0002] 2 Broadway, 20th Floor Board Room
+[p002_c0003] New York, NY 10004
+[p002_c0004] Thursday, 2/18/2021
+[p002_c0005] 10:00 AM - 5:00 PM ET
+### [p002_c0006] 1. PUBLIC COMMENTS PERIOD
+### [p002_c0007] 2. APPROVAL OF MINUTES JANUARY 21, 2021
+[p002_c0008] CPOC Committee Minutes - Page 3
+### [p002_c0009] 3. COMMITTEE WORK PLAN
+[p002_c0010] 2021 - 2022 CPOC Committee Work Plan - Page 4
+### [p002_c0011] 4. C&D CAPITAL PROGRAM UPDATE
+[p002_c0012] Capital Program Update - Page 6
+[p002_c0013] Progress Report on B&T Capital Program - Page 11
+[p002_c0014] IEC Project Review on Throgs Neck Bridge Orthotropic Deck Replacement (TN-49) - Page 17
+[p002_c0015] IEC Traffic Light Report (TLR) Review of B&T Core Projects - Page 21
+### [p002_c0016] 5. CAPITAL PROGRAM STATUS
+[p002_c0017] Commitments, Completions, and Funding Report - Page 23
+
+## Page 3
+
+### [p003_c0001] MINUTES OF MEETING MTA CAPITAL PROGRAM OVERSIGHT COMMITTEE January 21, 2021 New York, New York 10:00 A.M.
+[p003_c0002] Because of the ongoing COVID-19 public health crisis, the MTA Chairman convened a one-day, virtual Board and Committee meeting session on January 21, 2021, which included the following committees:
+- [p003_c0003] • Long Island Rail Road and Metro-North Railroad; • New York City Transit; • MTA Bridges and Tunnels; • Finance; • Audit; • Safety; • Capital Program Oversight Committee.
+[p003_c0004] To see a summary of the CPOC Committee meeting, please refer to the January 21, 2021 Board minutes in the February Board Book available here on the Board materials website: https://new.mta.info/transparency/board-and-committee-meetings/february-2021
+[p003_c0005] _Master Page # 3 of 38 - Capital Program Oversight Committee Meeting 2/18/2021_
+
+## Page 4
+
+### [p004_c0001] Metropolitan Transportation Authority
+### [p004_c0002] 2021- 2022 CPOC Committee Work Plan
+### [p004_c0003] I. Recurring Agenda Items
+[p004_c0004] Approval of the Minutes Committee Work Plan Commitments/Completions and Funding Report
+### [p004_c0005] II. Specific Agenda Items
+### [p004_c0006] March
+[p004_c0007] Overall Capital Program • Infrastructure Quarterly Traffic Light Report
+### [p004_c0008] April
+[p004_c0009] Overall Capital Program • Signals and Train Control Security Projects Minority, Women and Disadvantaged Business Participation
+### [p004_c0010] May
+[p004_c0011] Overall Capital Program • Integrated Megaprojects
+### [p004_c0012] June
+[p004_c0013] Overall Capital Program Rolling Stock OMNY Quarterly Traffic Light Report
+### [p004_c0014] July
+[p004_c0015] Overall Capital Program • Stations
+[p004_c0016] _Master Page # 4 of 38 - Capital Program Oversight Committee Meeting 2/18/2021_
+
+## Page 5
+
+### [p005_c0001] September
+[p005_c0002] Overall Capital Program
+- [p005_c0003] • Railroads
+[p005_c0004] Quarterly Traffic Light Report
+### [p005_c0005] October
+[p005_c0006] Overall Capital Program
+- [p005_c0007] • Infrastructure
+### [p005_c0008] November
+[p005_c0009] Overall Capital Program
+- [p005_c0010] • Signals and Train Control
+[p005_c0011] Minority, Women and Disadvantaged Business Participation
+[p005_c0012] Small Business Development Program
+### [p005_c0013] December
+[p005_c0014] Overall Capital Program
+- [p005_c0015] • Integrated Megaprojects
+[p005_c0016] OMNY
+[p005_c0017] Quarterly Traffic Light Report
+### [p005_c0018] January
+[p005_c0019] Overall Capital Program
+[p005_c0020] Rolling Stock
+### [p005_c0021] February
+[p005_c0022] Overall Capital Program
+- [p005_c0023] • B&T • Railroads
+[p005_c0024] _Master Page # 5 of 38 - Capital Program Oversight Committee Meeting 2/18/2021_
+
+## Page 6
+
+### [p006_c0001] Capital Program Update February 2021
+### [p006_c0002] Program Commitments
+[p006_c0003] Every year, MTA C&D publishes our Program Commitments: Projects out of the funded five-year capital program that the MTA is planning to award to third-party contractors or in-house teams in the next 12 months.
+- [p006_c0004] • In early 2020, MTA C&D was planning to award $13.5B worth of projects that year, largely funded by the then recently approved $51.5B 2020-2024 Capital Program. The severe constraints on the MTA's budget caused by COVID-19 put the capital program on pause in March. As a result, total commitments in 2020 came to $5.4B – short of what had been planned, but roughly the same order of magnitude as past years. This was achieved by aggressively advancing federally funded projects, as well as in-house work. • In 2021, MTA forecasts being able to issue at least $6.2B in total project commitments– made possible in part by New York State support reflected in the Governor's FY21-22 Executive Budget. If additional financial support comes in – whether through federal aid, an infrastructure bill, additional dedicated state revenue, CBD Tolling or other sources – MTA C&D will be ready to award more. We can scale up our capital commitments to match available resources should they become available.
+> [p006_c0005] MTA Commitments by Year ($M) Year Goal ($M) Actual ($M) 2016 6,573 5,034 2017 7,280 7,249 2018 7,337 6,282 2019 7,123 4,819 2020 13,497 5,442 2021 6,238 -
+> [p006_c0006] 2021 Commitment Goal by Agency ($M) Agency Goal ($M) NYCT/SIR 3,839 MNR 777 LIRR 485 MTA Bus 57 Interagency 40 Expansion 867 B&T 173
+> [p006_c0007] 2021 Commitment Goal by Quarter ($M) Quarter Goal ($M) Q1 ~850 Q2 ~1,350 Q3 ~1,750 Q4 ~2,300
+[p006_c0008] _Master Page # 6 of 38 - Capital Program Oversight Committee Meeting 2/18/2021_
+
+## Page 7
+
+### [p007_c0001] Program Completions
+[p007_c0002] The value of the project work that is completed in a given year is one of the metrics that MTA C&D uses to measure progress on the Capital Program.
+- [p007_c0003] • MTA completed many critical projects in 2020, including 11 new ADA subway stations (the most in a single year ever), a new entrance to Penn Station at 7 Ave and 33 St, improvements to the Canarsie L Train Tunnel, replacement of track on the Archer Ave Line (E line near Jamaica), among others. In all, MTA completed $4.3B worth of work in 2020, all while successfully maintaining safe work protocols during the COVID-19 epidemic. • C&D plans to complete a record $7.2B of work in 2021, much of it funded by 2015-19 and previous Capital Programs. Little of the 2020-2024 Capital Program was awarded in 2020 because of the COVID-related pause on new awards, so scarce few of those projects will be completed in 2021.
+> [p007_c0004] The chart displays MTA completions in millions of dollars. The y-axis ranges from $0 to $8,000 in increments of $1,000. The x-axis lists years from 2016 to 2021. For each year from 2016 to 2020, there are two bars: a light blue bar for the Goal and a dark blue bar for the Actual. For 2021, there is a single yellow bar for the Goal. The values are labeled on top of each bar. Year Goal ($M) Actual ($M) 2016 $4,630 $2,761 2017 $4,970 $3,918 2018 $6,299 $4,845 2019 $6,472 $6,276 2020 $5,388 $4,324 2021 $7,183
+[p007_c0005] _Master Page # 7 of 38 - Capital Program Oversight Committee Meeting 2/18/2021_
+
+## Page 8
+
+### [p008_c0001] Project Highlight: White Plains Station Renovations
+[p008_c0002] MTA C&D is nearing completion of a gut rehabilitation of the third-busiest station on the Metro-North network – White Plains. Major improvements include: new elevators, stairs, heated platforms for ice control, bathrooms, ticket office, food vendor space, digital signage, and artwork.
+> [p008_c0003] A photograph of the exterior platform area of White Plains Station. A digital sign stands on the left, displaying safety information for the Metro-North. A glass-enclosed staircase leads down to the platform level. The platform is paved with light-colored concrete, and a yellow safety strip is visible along the edge. The ceiling is made of horizontal wooden planks.
+> [p008_c0004] A photograph of the interior of the station. A large, vibrant mosaic artwork is mounted on the wall, featuring a pattern of white and black dots of varying sizes against a blue and white background. The floor is made of dark grey tiles, and the ceiling is made of horizontal wooden planks. A red 'EXIT' sign is visible in the background.
+> [p008_c0005] A photograph of the interior of the station, showing a staircase with a glass railing. The stairs are white, and the railing is made of glass and metal. The floor is made of dark grey tiles, and the ceiling is made of horizontal wooden planks. A large window is visible in the background, showing the exterior of the station.
+> [p008_c0006] A photograph of the interior of the station, showing a waiting area with people sitting on wooden benches. The floor is made of dark grey tiles, and the ceiling is made of horizontal wooden planks. Large windows are visible on the left side, showing the exterior of the station. A digital sign is visible on the right side.
+> [p008_c0007] A photograph of the interior of the station, showing a digital signage wall. The wall is white and features several digital screens displaying information. The top of the wall has the text 'White Plains Station'. The floor is made of dark grey tiles, and the ceiling is made of horizontal wooden planks.
+> [p008_c0008] A photograph of the interior of the station, showing a platform area. The floor is made of light-colored concrete, and the ceiling is made of horizontal wooden planks. A yellow safety strip is visible along the edge of the platform. A wooden bench is visible in the foreground.
+[p008_c0009] _Master Page # 8 of 38 - Capital Program Oversight Committee Meeting 2/18/2021_
+
+## Page 9
+
+### [p009_c0001] Project Highlight: Rutgers Tunnel
+[p009_c0002] MTA C&D is repairing the damage caused by Superstorm Sandy to the Rutgers Tunnel, which F trains use to cross the East River, and fortifying it against future flooding. This is the last of the MTA cross-river tunnels to be rehabbed through the Capital Program. The project also entails making significant station improvements at East Broadway.
+[p009_c0003] Work began in August 2020 and is expected to be completed in the fall of 2021. The project is being accelerated to a record 14 months to take advantage of the current period of low ridership.
+> [p009_c0004] A photograph showing construction workers inside a tunnel. One worker in a red hard hat and orange safety vest is working on a wall that has been covered with a grid of green dots and white lines. The wall has a sign that says "E BWAY". Other workers in orange vests and hard hats are visible in the background, and there are boxes and equipment on the floor.
+> [p009_c0005] A photograph of a tunnel interior showing two sets of tracks. The left wall is covered in graffiti and has a series of metal brackets or supports. Red and white striped safety barriers are placed along the edge of the tracks. The tunnel is lit by overhead lights.
+> [p009_c0006] A photograph of a construction worker in a white hard hat and orange safety vest working on a wet, reflective floor. The worker is using a tool to manipulate something on the floor. In the background, other workers and construction equipment are visible.
+[p009_c0007] _Master Page # 9 of 38 - Capital Program Oversight Committee Meeting 2/18/2021_
+
+## Page 10
+
+### [p010_c0001] Project Highlight: Modern Signals on the Queens Boulevard West Line
+[p010_c0002] A large section of the Queens Boulevard Line, from 23 St-Ely Ave to 50 St-8 Ave and around 47-50 St Rockefeller Center, is now in CBTC revenue service. MTA C&D accelerated this phase of the project and avoided future outages by taking the line out of service for consecutive 9 days around the new year, when ridership is very low. When the project is complete, modern signals will allow for trains to run closer together and more reliably on this line, one of the busiest in the entire MTA network.
+> [p010_c0003] A worker wearing a white hard hat with the "SIEMENS" logo, a high-visibility orange and yellow safety vest, and a blue surgical mask is seated in a train cab. They are looking at a laptop screen while interacting with a complex control panel that features two digital displays and numerous physical buttons and switches. The background shows a window with a view of a street and a car.
+> [p010_c0004] A worker wearing a white hard hat with the "SIEMENS" logo and a high-visibility safety vest is seen from the side, working on a large rack of electronic signal equipment. The rack is filled with numerous modules, each with a small digital display and a row of indicator lights. The worker appears to be adjusting or connecting components on the rack.
+> [p010_c0005] A large wall-mounted diagram of the Queens Boulevard West Line signal system. The diagram shows a complex network of tracks, switches, and signal points, with many small lights indicating the status of each component. The names of stations are written in large letters on the wall, including "18TH AVE" and "16TH AVE". In the foreground, a desk holds a laptop, a water bottle, and some papers.
+[p010_c0006] _Master Page # 10 of 38 - Capital Program Oversight Committee Meeting 2/18/2021_
+
+## Page 11
+
+### [p011_c0001] CPOC Update: B&T BU Capital Program Update – February 2021
+### [p011_c0002] Construction & Development
+[p011_c0003] C&D's last report to CPOC on Bridges & Tunnels Capital Programs and major projects was in February 2020. This document presents an executive summary of the Capital Program status as well as progress of the major projects since February 2020, and identifies primary factors influencing the projects' performance.
+### [p011_c0004] Overall B&T Capital Program Update
+### [p011_c0005] 2015-19 Capital Program Commitments
+- [p011_c0006] • Total Program: $2.936 B; Committed to date: $2.68 B (91%); Remaining to be committed: $19 M • Remaining balance (approx. $237 M) reflects a combination of good bid savings and program reserves/contingency, which are held in reserve
+### [p011_c0007] 2020-24 Capital Program Commitments
+- [p011_c0008] • Total Program: $2.8 B not including CBDTP; Committed to date: $54 M
+### [p011_c0009] 2020 Commitments
+- [p011_c0010] • 2020 Plan: 127 commitments at a value of $258.7 M; 2020 Actual: 131 commitments at a value of $183.2 M (71%) • Commitments were $75.6 M below the 2020 Plan, mainly due to the pause in procurements resulting from the impacts of the COVID-19 pandemic.
+### [p011_c0011] 2020 Completions
+- [p011_c0012] • 2020 Plan: 19 completions at a value of $406.1 M; 2020 Actual: 33 completions at a value of $660.3 M (162.6%) • 10 early project completions were a direct result of work being accelerated while traffic volumes were low due to the COVID pandemic.
+### [p011_c0013] Moving NY Forward Program (C&D Acceleration)
+- [p011_c0014] • B&T advanced $144 M of work in 2020 to be performed while traffic volumes were reduced. • To date, $85.5 M of the Moving NY Forward initiatives have been completed with another $48.5 M expected to be completed in 2021.
+[p011_c0015] _Page 1 of 6_
+[p011_c0016] _Master Page # 11 of 38 - Capital Program Oversight Committee Meeting 2/18/2021_
+
+## Page 12
+
+### [p012_c0001] CPOC Update: B&T BU Capital Program Update – February 2021
+### [p012_c0002] Construction & Development
+### [p012_c0003] 2020 Major Completions
+### [p012_c0004] New Ramp to Connect the RFK Bridge to the Harlem River Drive
+[p012_c0005] B&T constructed a new ramp connecting the Robert F. Kennedy Bridge to the Harlem River Drive, eliminating a detour through East Harlem. The new ramp removes up to 18,000 cars daily from local streets, in a community that suffers from air pollution and high asthma rates.
+[p012_c0006] This Design-Build project was completed in November 2020, one month ahead of schedule and under budget.
+[p012_c0007] Original budget: $72.6 M (including contingency) EAC: $55 M
+### [p012_c0008] Rehabilitation of the Skewbacks, Tower Piers, & Pedestals at the Henry Hudson Bridge
+[p012_c0009] B&T rehabilitated the concrete skewbacks that support the steel arch of the bridge, and replaced the concrete pedestals that are the foundations for the piers that support the approach viaducts. This design-build project was completed in September, within the project budget.
+[p012_c0010] Original budget: $100.4 M; EAC: $100.4 M
+### [p012_c0011] Reconstruction of the South Approach Roadway and the Replacement of Facility Lighting System at the Henry Hudson Bridge
+[p012_c0012] B&T replaced the original 1930's south approach roadways, including the substructure, superstructure and deck of the upper and lower levels of the Henry Hudson Bridge. This reconstruction replaced one of the last pieces of the original 1930's era bridge and enhanced safety and traffic flow by eliminating support columns on the lower level, improving sight distance and overall roadway alignment. The new structure also meets modern geometrics and seismic standards. In addition the Henry Hudson Parkway roadway lighting system was completely replaced. The project was completed in December 2020 within budget and one month ahead of schedule.
+[p012_c0013] Original budget: $109.6 M; EAC: $109.6
+### [p012_c0014] Rehabilitation of Tunnel Controls & Communication Systems at the Queens-Midtown Tunnel
+[p012_c0015] B&T modernized tunnel controls and communication systems to improve customer safety in the Queens-Midtown Tunnel. This Design-Build project was completed in December, within budget and seven months ahead of schedule.
+[p012_c0016] Original budget: $39 M; EAC: $32.5 M
+### [p012_c0017] Installation of Electronic Monitoring & Detection Systems at the Bronx-Whitestone Bridge and the RFK Bridge
+[p012_c0018] B&T installed new electronic traffic monitoring and fire detection systems at the BWB and RFK. The Design-Build project was completed in December, within budget and on schedule.
+[p012_c0019] Original budget: $88.3 M; EAC: $81 M
+### [p012_c0020] Two-way Tolling at the Verrazzano-Narrows Bridge
+[p012_c0021] B&T reconfigured the tolling area to enable two-way tolling at the VNB, eliminating an anomaly in regional traffic patterns created by federally mandated one-way tolling. The project was completed in
+[p012_c0022] _Page 2 of 6_
+[p012_c0023] _Master Page # 12 of 38 - Capital Program Oversight Committee Meeting 2/18/2021_
+
+## Page 13
+
+### [p013_c0001] CPOC Update: B&T BU Capital Program Update – February 2021
+### [p013_c0002] Construction & Development
+[p013_c0003] November, within the project budget and one month ahead of schedule. Original budget: $39.6 M; EAC: $39.6 M
+### [p013_c0004] Bridge Program Updates
+### [p013_c0005] Verrazzano-Narrows Bridge
+[p013_c0006] The Verrazzano-Narrows program includes five projects that span several Capital Programs and total well over $1 B. B&T has carefully planned and sequenced the projects to completely reconstruct the nearly 60 year old upper level approaches to the VNB to meet current standards, including replacing the non-standard existing left hand exits to the Belt Parkway with new right hand exits on both upper and lower levels, and make on-grade improvements on adjoining highways to eliminate lane drops that constrict traffic on the VNB exits to the Gowanus Expressway and the Belt Parkway.
+[p013_c0007] Two of these projects are under construction, and three are in design.
+### [p013_c0008] Under construction: Phase 1 of the Reconstruction of the VNB Upper level Brooklyn and Staten Island Approach and Anchors Spans
+[p013_c0009] Phase 1 of this project will replace the deck on the entire Brooklyn Approach and a portion of the Staten Island Approach. It will also replace the structural steel and decks of the Anchorages, and make critical repairs to the Belt Parkway Ramps.
+[p013_c0010] Status: Approx. 36% complete
+[p013_c0011] Original budget: $205M; EAC: $205M
+[p013_c0012] Substantial completion forecasted- June 2023 (on schedule)
+[p013_c0013] Progress to date:
+- [p013_c0014] • The replacement of decks on the Brooklyn Approach was completed at the end of November, five months ahead of schedule • Belt Parkway ramp concrete repairs were completed in July 2020, five months ahead of the original schedule • Belt Parkway Ramp safety repairs were completed at the end of December.
+### [p013_c0015] Under construction: Brooklyn Approach Reconstruction
+[p013_c0016] The on-grade Brooklyn Approach Reconstruction includes construction of a fourth lane to the Gowanus Expressway, which will alleviate a traffic bottleneck and improve customer safety. All
+[p013_c0017] _Page 3 of 6_
+[p013_c0018] _Master Page # 13 of 38 - Capital Program Oversight Committee Meeting 2/18/2021_
+
+## Page 14
+
+### [p014_c0001] CPOC Update: B&T BU Capital Program Update – February 2021
+### [p014_c0002] Construction & Development
+[p014_c0003] roadway work was accelerated under the Moving NY Forward Initiative and the fourth travel lane was opened to traffic in October 2020, 2 months ahead of the original project schedule. Status: Approx. 90% complete Original budget: $26.1M    EAC: $26.1M Substantial completion forecasted: June 2021 (ahead of the original planned December 2021 completion date)
+### [p014_c0004] In design:
+- [p014_c0005] • Phases 2 and 3 of the Reconstruction of the VNB Upper level Staten Island Approach • Widening of the Belt Parkway approach
+[p014_c0006] Also at the VNB, the design-build project for installation of a safety fence on the upper and lower level suspended spans is currently under procurement, and is scheduled to be presented at the March Board for approval. This project has garnered a great deal of public interest, and is a key public safety project.
+### [p014_c0007] Throgs Neck Bridge
+[p014_c0008] B&T is undertaking two projects to extend the service life of the Throgs Neck Bridge: replacement of the suspended span deck and rehabilitation of the approach viaducts. Not only will these projects extend the life of the structure, they will also improve customer safety and experience by ensuring a smooth, safe riding surface, improved roadway lighting, and improved emergency response to fire with the installation of a new fire standpipe system.
+### [p014_c0009] Under construction: Replacement of the Suspended Span Deck
+[p014_c0010] This project is to reconstruct the roadway including replacing the original 1960's concrete grid deck with a lightweight steel orthotropic deck, along with performing steel repairs and painting of the steel supporting the deck; upgrading the bridge roadway lighting and bridge electrical systems, and installing a fire standpipe system. In addition, the project includes removing and replacing several suspender ropes and main cable investigation to determine the current load carrying capacity of the main cables. The deck work is being accomplished in six stages using a movable barrier to maintain traffic capacity in the peak direction. Project benefits include extending the service life of the bridge by reducing the load on the main cables as well as improving seismic and wind performance and overall structural resiliency.
+[p014_c0011] Status: Approx. 43% complete Original budget: $336M; EAC: $336M Substantial completion forecasted: November 2022 (on target)
+[p014_c0012] Progress to date:
+[p014_c0013] _Page 4 of 6_
+[p014_c0014] _Master Page # 14 of 38 - Capital Program Oversight Committee Meeting 2/18/2021_
+
+## Page 15
+
+### [p015_c0001] CPOC Update: B&T BU Capital Program Update – February 2021
+### [p015_c0002] Construction & Development
+- [p015_c0003] • Roadway lighting and fire standpipe systems on the approaches were completed in May 2020 meeting the contractual milestones. • Stage 1 of deck demolition is complete and deck installation is in progress • Three lanes of traffic are maintained in the peak direction using a movable barrier • Orthotropic deck fabrication work is progressing on schedule
+[p015_c0004] 2021 Look ahead:
+- [p015_c0005] • Continue staged reconstruction of suspended span
+### [p015_c0006] Under construction: Rehabilitation of the TNB Viaducts
+[p015_c0007] This project is to repair the steel structure supporting the roadway and the concrete piers. Work is being performed from a work platform under the structure. This project has minimal traffic impacts.
+[p015_c0008] Status: Approx. 18% complete
+[p015_c0009] Original budget: $212.2M; EAC: $212.2 M
+[p015_c0010] Substantial completion forecasted: August 2023 (on target)
+[p015_c0011] Progress to date:
+- [p015_c0012] • Under deck shield installation is complete • Steel and concrete repairs are ongoing • Replaced existing concrete barriers over the Bronx Lower Garage
+[p015_c0013] 2021 Look Ahead:
+- [p015_c0014] • Complete shield installation • Continue with steel and concrete repairs • Begin bearing replacement • Continue electrical repairs
+### [p015_c0015] Henry Hudson Bridge
+[p015_c0016] As discussed above under 2020 Major Completions, the HHB Program has already completed the Skewback Rehabilitation and the South Approach Reconstruction. Under construction now is the structural rehabilitation and painting of the steel arch and approach structures. This project has minimal traffic impacts.
+[p015_c0017] Status: Approx. 46% complete
+[p015_c0018] Original budget: $58.8M; EAC: $58.9M
+[p015_c0019] Substantial completion forecasted: March 2022 (on target)
+[p015_c0020] Progress to date:
+- [p015_c0021] • Under deck shield installation nearly complete • Steel repairs are ongoing
+[p015_c0022] _Page 5 of 6_
+[p015_c0023] _Master Page # 15 of 38 - Capital Program Oversight Committee Meeting 2/18/2021_
+
+## Page 16
+
+### [p016_c0001] CPOC Update: B&T BU Capital Program Update – February 2021
+### [p016_c0002] Construction & Development
+### [p016_c0003] 2021 Look ahead:
+- [p016_c0004] • Complete shield installation • Continue with steel repairs • Begin structural painting
+[p016_c0005] In addition to performing structural repairs, B&T is completing preliminary design for an upcoming design-build project to upgrade and replace substations that provide primary and back-up power for the facility to ensure full electrical redundancy for the entire Henry Hudson Facility. The design is currently 10% complete, the DB RFP is under preparation and the project will be advertised this year.
+### [p016_c0006] Robert F. Kennedy Bridge Program Update
+[p016_c0007] As discussed under major completions, the new Direct connector Ramp to the Harlem River Drive was opened to traffic in November 2020, eliminating significant traffic from the local streets. The focus of the program now turns to necessary rehabilitation and retrofits needed on the viaducts and the suspended span to extend the service life of the existing structures.
+[p016_c0008] The structural rehabilitation of the viaducts is currently ongoing, with work being performed to repair and upgrade the steel supporting the roadway to meet current load criteria.
+[p016_c0009] Status: Approx. 37% complete
+[p016_c0010] Original budget: $85 M; EAC: $85 M
+[p016_c0011] Substantial completion forecasted: August 2022 (on target)
+### [p016_c0012] Progress to date:
+- [p016_c0013] • Steel repairs are ongoing
+### [p016_c0014] 2021 Look ahead:
+- [p016_c0015] • Continue with steel repairs
+[p016_c0016] In addition, preliminary design is progressing for two critical design-build projects planned for later in the 2020-2024 program: the Structural Rehabilitation and Wind Retrofit of the suspended spans, and Rehabilitation of the Anchorage Structures. Both designs are currently less than 5% complete and are progressing on schedule.
+[p016_c0017] _Page 6 of 6_
+[p016_c0018] _Master Page # 16 of 38 - Capital Program Oversight Committee Meeting 2/18/2021_
+
+## Page 17
+
+### [p017_c0001] February 2021 CPOC Independent Engineering Consultant Project Review
+[p017_c0002] Throgs Neck Bridge Orthotropic Deck Replacement (TN-49)
+> [p017_c0003] The logo for McKissack, featuring a red square with a white star in the upper right corner and a large white letter 'M' to its left.
+[p017_c0004] MCKISSACK MTA Independent Engineering Consultant
+[p017_c0005] _Master Page # 17 of 38 - Capital Program Oversight Committee Meeting 2/18/2021_
+
+## Page 18
+
+### [p018_c0001] Master Page # 18 of 38 - Capital Program Oversight Committee Meeting 2/18/2021
+### [p018_c0002] TN-49 Project Scope
+[p018_c0003] Project TN-49 is the staged replacement of the existing concrete deck with a new steel orthotropic deck. The orthotropic deck design will improve the bridge's wind performance, structural resiliency, and upgrade the suspended spans to meet current seismic and fatigue performance criteria. The contract was awarded November 2018 to Judlau Contracting Inc for $235M. The project's duration is 48 months and in addition to above deck replacement, the project's scope includes:
+- [p018_c0004] □ Additional steel repairs to the supporting structure □ Increasing deck cross slopes to improve drainage □ Removal and replacement of four suspender ropes for testing □ Main cable opening and inspection □ Improving bridge utility systems
+> [p018_c0005] The logo for MCKISSACK, featuring a large red letter 'M' with a white star in the upper right corner.
+[p018_c0006] _MCKISSACK MTA Independent Engineering Consultant_
+[p018_c0007] _2_
+
+## Page 19
+
+### [p019_c0001] Master Page # 19 of 38 - Capital Program Oversight Committee Meeting 2/18/2021
+### [p019_c0002] TN-49 Budget and Schedule Review
+### [p019_c0003] Budget
+- [p019_c0004] ■ The IEC has reviewed the project expenditures, contingency, soft costs and change orders and forecasts the EAC as $306M, which is within the budget of $336M.
+### [p019_c0005] Schedule
+- [p019_c0006] ■ The IEC has reviewed the latest schedule update and finds that the project remains on schedule to achieve substantial completion by November 2022. Since last CPOC, the project has adjusted durations in panel replacement stages to account for challenges while installing the gantry cranes and establishing the deck panel welding process. Productivity is expected to increase in later stages by using lessons learned from stage 1.
+[p019_c0007]
+
+```text
+Deck Panel Replacement Update No. 13 Jan 31, 2020 Update No. 23 Nov 30, 2020 Duration Variance (Days) Finish Duration (Days) Finish Duration (Days) Stage 1 148 Panels 11/2/2020 73 3/12/2021 179 106 Stage 2 74 Panels 5/10/2021 70 5/12/2021 58 -12 Stage 3 74 Panels 7/23/2021 73 7/13/2021 61 -12 Stage 4 74 Panels 10/5/2021 71 9/13/2021 61 -10 Stage 5 74 Panels 5/10/2022 70 5/9/2022 59 -11 Stage 6 148 Panels 8/4/2022 85 7/25/2022 76 -9 Substantial Completion 11/21/2022 11/21/2022
+```
+[p019_c0008] _MTA Independent Engineering Consultant_
+[p019_c0009] _3_
+
+## Page 20
+
+### [p020_c0001] Master Page # 20 of 38 - Capital Program Oversight Committee Meeting 2/18/2021
+### [p020_c0002] TN-49 – IEC Observations
+- [p020_c0003] ■ The agency mitigated potential schedule risks by implementing incentives for early completion of the fire standpipe installation and luminaire replacement at the approaches. ■ Fabrication and timely delivery of orthotropic deck panels was determined to be the top project risk. ■ The project mitigated any potential issues by engaging a quality inspection team at the fabricator's facility during production. ■ A shipment containing orthotropic panels for stages two and three is expected to arrive in New York in time for the current scheduled start of stage 2. ■ In the opinion of the IEC, the project team is effectively managing the project and coordinating with the contractor to ensure outstanding risks are mitigated.
+> [p020_c0004] The logo for McKissack, featuring a large red letter 'M' with a white star in the upper right corner.
+[p020_c0005] _MCKISSACK MTA Independent Engineering Consultant_
+[p020_c0006] _4_
+
+## Page 21
+
+### [p021_c0001] February 2021 CPOC Independent Engineering Consultant B&T Program Review
+### [p021_c0002] Bridges and Tunnels Program Core and Sandy Traffic Light Reports
+> [p021_c0003] The logo for McKissack, featuring a red square with a white star in the upper right corner and a large white letter 'M' in the center.
+[p021_c0004] McKISSACK MTA Independent Engineering Consultant
+[p021_c0005] _Master Page # 21 of 38 - Capital Program Oversight Committee Meeting 2/18/2021_
+
+## Page 22
+
+### [p022_c0001] TLR Summary of B&T Projects
+- [p022_c0002] ■ In the Core and Sandy Traffic Light Reports, presented at the December 2020 CPOC, the IEC reviewed a total of 29 active design and construction projects which make up part of B&T's capital program. All 29 projects were reviewed for Cost, Contingency and Schedule Performance. ■ Of the 29 B&T projects featured in the TLR: ■ 27 projects (93%) were designated Green, which indicates no performance variance was triggered. ■ No B&T projects cited in the TLR were designated Red, which would have indicated that a performance variance had been triggered. ■ 2 projects (7%) were designated Yellow, symbolizing that they had been previously Red after triggering a performance variance in a prior quarter. ■ The positive TLR reporting results for B&T reflects projects that have managed their costs and maintained their schedule completion dates during the ongoing operating difficulties presented by the Covid-19 pandemic in 2020. ■ Similar TLR reporting results were also presented at September's 2020 CPOC. No B&T projects were designated Red in September and all 29 projects were designated Green and Yellow. ■ In addition, IEC analysis of the project data resulted in little to no trending variations in the overall cost and schedule indexes since the prior quarter. TLR trending provides an early indicator of potential project cost and schedule concerns and the quarter-to-quarter results indicates that B&T projects will continue to do well in the next quarterly TLR.
+> [p022_c0003] The logo for McKiback, featuring a stylized red 'M' with a white star in the upper right corner.
+[p022_c0004] MTA Independent Engineering Consultant
+[p022_c0005] _2_
+[p022_c0006] _Master Page # 22 of 38 - Capital Program Oversight Committee Meeting 2/18/2021_
+
+## Page 23
+
+### [p023_c0001] Master Page # 23 of 38 - Capital Program Oversight Committee Meeting 2/18/2021
+### [p023_c0002] MTA Capital Program Commitments & Completions
+[p023_c0003] through January 31, 2021
+[p023_c0004] _Metropolitan Transportation Authority_
+
+## Page 24
+
+### [p024_c0001] MTA Metropolitan Transportation Authority
+### [p024_c0002] Master Page # 24 of 38 - Capital Program Oversight Committee Meeting 2/18/2021
+### [p024_c0003] Capital Projects – Commitments – January 2021
+### [p024_c0004] MTA-wide 2021 Commitments
+> [p024_c0005] Quarter 2021 Annual Goal ($ in Millions) Budgeted Value ($ in Millions) Actual / Forecast ($ in Millions) 1Q $865 $864 $865 2Q $1,350 $1,345 $1,345 3Q $1,729 $1,729 $1,729 4Q $2,295 $2,295 $2,295 YTD $159 $125 $109
+[p024_c0006] Annual Goals: Dollar and time-based programmatic milestones for the commitment of contracts established at the start of each year and which are achievable during the year.
+[p024_c0007] Actuals: The value of the goals and any additional unplanned commitments as they are achieved during the year.
+[p024_c0008] Forecasts: The updated estimates by quarter for remaining goals as well as any unplanned commitments that might occur during the year.
+[p024_c0009] Budget: The budgeted value assumed in the capital program for the Actual and Forecasted Commitments being tracked during the year.
+### [p024_c0010] Commitments Summary
+[p024_c0011] In 2021, agencies have a goal of $6.2 billion in overall commitments, including $3,839 million for NYCT, $485 million for LIRR, $777 million for MNR, $57 million for MTA Bus, $40 million for MTA Interagency, $867 million for MTA Expansion, and $173 million for B&T.
+[p024_c0012] Through January, agencies have committed $109 million versus a $159 million goal. At the end of each quarter in 2021, schedule variances will be explained on the following pages.
+
+## Page 25
+
+### [p025_c0001] MTA Metropolitan Transportation Authority
+### [p025_c0002] NYCT/MTA Bus Capital Projects – Commitments – January 2021 – Budget Analysis and Schedule Variances
+### [p025_c0003] NYCT and MTA Bus Budget Analysis
+> [p025_c0004] 2021 Annual Goal $3,897 ($ in millions) 2021 Forecast $3,897 of Annual Goal Forecast Left to commit 100% $3,798 Period 2021 Annual Goal ($ in millions) Budgeted Value ($ in millions) Actual / Forecast ($ in millions) 1Q ~350 ~350 ~350 2Q ~650 ~650 ~650 3Q ~1100 ~1100 ~1100 4Q ~1800 ~1800 ~1800 YTD ~150 ~150 ~150 Legend: ■ 2021 Annual Goal ■ Budgeted Value ■ Actual / Forecast
+### [p025_c0005] Schedule Variances
+[p025_c0006] There are no schedule variances to report at this time.
+[p025_c0007] _Master Page # 25 of 38 - Capital Program Oversight Committee Meeting 2/18/2021_
+
+## Page 26
+
+### [p026_c0001] MTA Metropolitan Transportation Authority
+### [p026_c0002] Master Page # 26 of 38 - Capital Program Oversight Committee Meeting 2/18/2021
+### [p026_c0003] LIRR Capital Projects – Commitments – January 2021 – Budget Analysis and Schedule Variances
+### [p026_c0004] LIRR Budget Analysis
+> [p026_c0005] 2021 Annual Goal $485 ($ in millions) 2021 Forecast $485 of Annual Goal Forecast Left to commit 100% $480 Quarter 2021 Annual Goal ($ in millions) Budgeted Value ($ in millions) Actual / Forecast ($ in millions) 1Q ~70 ~70 ~70 2Q ~165 ~165 ~165 3Q ~125 ~125 ~125 4Q ~115 ~115 ~115 YTD ~20 ~5 ~5 Legend: ■ 2021 Annual Goal ■ Budgeted Value ■ Actual / Forecast
+### [p026_c0006] Schedule Variances
+[p026_c0007] There are no schedule variances to report at this time.
+
+## Page 27
+
+### [p027_c0001] MTA Metropolitan Transportation Authority
+### [p027_c0002] Master Page # 27 of 38 - Capital Program Oversight Committee Meeting 2/18/2021
+### [p027_c0003] MNR Capital Projects – Commitments – January 2021 – Budget Analysis and Schedule Variances
+### [p027_c0004] MNR Budget Analysis
+> [p027_c0005] 2021 Annual Goal ($777 ($ in millions)) 2021 Forecast ($777 of Annual Goal) Forecast Left to commit 100% $777 Quarter 2021 Annual Goal ($ in millions) Budgeted Value ($ in millions) Actual / Forecast ($ in millions) 1Q 300 300 300 2Q 225 225 225 3Q 150 150 150 4Q 100 100 100 YTD 0 0 0 Legend: ■ 2021 Annual Goal ■ Budgeted Value ■ Actual / Forecast
+### [p027_c0006] Schedule Variances
+[p027_c0007] There are no schedule variances to report at this time.
+
+## Page 28
+
+### [p028_c0001] MTA Metropolitan Transportation Authority
+### [p028_c0002] Master Page # 28 of 38 - Capital Program Oversight Committee Meeting 2/18/2021
+### [p028_c0003] MTA Expansion Capital Projects – Commitments – January 2021 – Budget Analysis and Schedule Variances
+### [p028_c0004] MTA Expansion Budget Analysis
+> [p028_c0005] 2021 Annual Goal $867 ($ in millions) 2021 Forecast $867 of Annual Goal Forecast Left to commit 100% $863 Period 2021 Annual Goal ($ in millions) Budgeted Value ($ in millions) Actual / Forecast ($ in millions) 1Q 145 145 145 2Q 190 190 190 3Q 335 335 335 4Q 210 210 210 YTD 35 5 5 Legend: ■ 2021 Annual Goal ■ Budgeted Value ■ Actual / Forecast
+### [p028_c0006] Schedule Variances
+[p028_c0007] There are no schedule variances to report at this time.
+
+## Page 29
+
+### [p029_c0001] MTA Metropolitan Transportation Authority
+### [p029_c0002] B&T Capital Projects – Commitments – January 2021 – Budget Analysis and Schedule Variances
+### [p029_c0003] B&T Budget Analysis
+> [p029_c0004] Category 2021 Annual Goal ($ in millions) Budgeted Value ($ in millions) Actual / Forecast ($ in millions) 2021 Annual Goal $173 2021 Forecast $168 Forecast Left to commit 97% $167 ($ in millions) Legend: ■ 2021 Annual Goal ■ Budgeted Value ■ Actual / Forecast
+### [p029_c0005] Schedule Variances
+[p029_c0006] There are no schedule variances to report at this time.
+[p029_c0007] _Master Page # 29 of 38 - Capital Program Oversight Committee Meeting 2/18/2021_
+
+## Page 30
+
+### [p030_c0001] MTA Metropolitan Transportation Authority
+### [p030_c0002] Master Page # 30 of 38 - Capital Program Oversight Committee Meeting 2/18/2021
+### [p030_c0003] Capital Projects – Completions – January 2021
+[p030_c0004]
+
+```text
+Actual MTA-wide 2021 Major Completions Post 2021 Goal Jan-21 Feb-21 Mar-21 Apr-21 May-21 Jun-21 Jul-21 Aug-21 Sep-21 Oct-21 Nov-21 Dec-21 2021 Total 51 1 2 2 3 7 7 3 5 2 7 2 10 0 Jan-21 1 1 Feb-21 2 2 Mar-21 2 2 Apr-21 3 3 May-21 7 7 Jun-21 7 7 Jul-21 3 3 Aug-21 5 5 Sep-21 2 2 Oct-21 7 7 Nov-21 2 2 Dec-21 10 10
+```
+[p030_c0005] BLUE = Forecast/Actual earlier than Goal GREEN = Forecast/actual matches Goal AMBER = Forecast/actual within 2 months of Goal RED = Forecast/actual beyond 2 months of Goal
+### [p030_c0006] Completions Summary
+[p030_c0007] In 2021, agencies have a goal of completing $7.2 billion in work including 51 major completions. Major completions are generally those that have significant dollar value or have high visibility. In 2021, major completions total 72% of the annual goal. Major completions for 2021 by agency include 26 for NYCT, 7 for LIRR, 7 for MNR, 2 for MTA Bus, 5 for MTA Expansion, and 4 for B&T.
+[p030_c0008] Through January, agencies have completed $33 million versus a $26 million goal.
+### [p030_c0009] Budget Analysis
+[p030_c0010] 2021 Annual Goal $7,183 ($ in millions) 2021 Forecast 100% of Annual Goal ($7,204) Forecast left to Complete 100% ($7,171)
+> [p030_c0011] A bar chart comparing YTD Goal and YTD Actual. The YTD Goal is represented by a blue bar at $26 million. The YTD Actual is represented by a red bar at $33 million. The x-axis is labeled in millions of dollars, ranging from $0 to $500. YTD Goal $26 YTD Actual $33 ($ in millions)
+
+## Page 31
+
+### [p031_c0001] MTA Metropolitan Transportation Authority
+### [p031_c0002] Master Page # 31 of 38 - Capital Program Oversight Committee Meeting 2/18/2021
+### [p031_c0003] NYCT/MTA Bus Capital Projects – Completions – January 2021 – Budget Analysis and Schedule Variances
+### [p031_c0004] NYCT and MTA Bus Budget Analysis
+> [p031_c0005] Category 2021 Annual Goal ($ in millions) 2021 Forecast ($ in millions) Forecast Left to complete ($ in millions) 2021 Annual Goal $3,640 2021 Forecast $3,657 Forecast Left to complete 100% of Annual Goal $3,646 Legend: ■ 2021 Goal ■ Actual / Forecast ■ 2021 Goal (Rolling Stock) ■ Actual / Forecast (Rolling Stock)
+### [p031_c0006] Schedule Variances
+[p031_c0007] There are no schedule variances to report at this time.
+
+## Page 32
+
+### [p032_c0001] MTA Metropolitan Transportation Authority
+### [p032_c0002] Master Page # 32 of 38 - Capital Program Oversight Committee Meeting 2/18/2021
+### [p032_c0003] LIRR Capital Projects – Completions – January 2021 – Budget Analysis and Schedule Variances
+### [p032_c0004] LIRR Budget Analysis
+> [p032_c0005] ($ in millions) 2021 Annual Goal $364 ($ in millions) 2021 Forecast $364 of Annual Goal Forecast Left to complete 100% $343 Legend: ■ 2021 Goal ■ Actual / Forecast ■ 2021 Goal (Rolling Stock) ■ Actual / Forecast (Rolling Stock) LIRR Budget Analysis Data (Estimated) Period 2021 Goal ($M) Actual / Forecast ($M) 2021 Goal (Rolling Stock) ($M) Actual / Forecast (Rolling Stock) ($M) 1Q 125 125 0 0 2Q 100 100 65 65 3Q 15 15 0 0 4Q 125 125 0 0 YTD 25 25 0 0
+### [p032_c0006] Schedule Variances
+[p032_c0007] There are no schedule variances to report at this time.
+
+## Page 33
+
+### [p033_c0001] MTA Metropolitan Transportation Authority
+### [p033_c0002] Master Page # 33 of 38 - Capital Program Oversight Committee Meeting 2/18/2021
+### [p033_c0003] MNR Capital Projects – Completions – January 2021 – Budget Analysis and Schedule Variances
+### [p033_c0004] MNR Budget Analysis
+> [p033_c0005] Category 2021 Annual Goal 2021 Forecast Forecast Left to complete ($ in millions) $963 $963 100% of Annual Goal $963 Legend: ■ 2021 Goal ■ Actual / Forecast
+### [p033_c0006] Schedule Variances
+[p033_c0007] There are no schedule variances to report at this time.
+
+## Page 34
+
+### [p034_c0001] MTA Metropolitan Transportation Authority
+### [p034_c0002] Master Page # 34 of 38 - Capital Program Oversight Committee Meeting 2/18/2021
+### [p034_c0003] MTA Expansion Capital Projects – Completions – January 2021 – Budget Analysis and Schedule Variances
+### [p034_c0004] MTA Expansion Budget Analysis
+> [p034_c0005] Category 2021 Goal ($ in millions) Actual / Forecast ($ in millions) 2021 Annual Goal $1,796 ($ in millions) 2021 Forecast $1,800 of Annual Goal Forecast Left to complete 100% $1,800 Legend: ■ 2021 Goal ■ Actual / Forecast
+### [p034_c0006] Schedule Variances
+[p034_c0007] There are no schedule variances to report at this time.
+
+## Page 35
+
+### [p035_c0001] MTA Metropolitan Transportation Authority
+### [p035_c0002] Master Page # 35 of 38 - Capital Program Oversight Committee Meeting 2/18/2021
+### [p035_c0003] B&T Capital Projects – Completions – January 2021 – Budget Analysis and Schedule Variances
+### [p035_c0004] B&T Budget Analysis
+> [p035_c0005] Period 2021 Goal ($ in millions) Actual / Forecast ($ in millions) 1Q ~$5 ~$5 2Q ~$85 ~$95 3Q ~$95 ~$80 4Q ~$210 ~$210 YTD ~$300 ~$300 2021 Annual Goal: $384 ($ in millions) 2021 Forecast: $384 of Annual Goal Forecast Left to complete: 100% $384
+### [p035_c0006] Schedule Variances
+[p035_c0007] There are no schedule variances to report at this time.
+
+## Page 36
+
+### [p036_c0001] Master Page # 36 of 38 - Capital Program Oversight Committee Meeting 2/18/2021
+### [p036_c0002] Status of MTA Capital Program Funding
+[p036_c0003] _Metropolitan Transportation Authority_
+
+## Page 37
+
+### [p037_c0001] Capital Funding (January 2021)
+[p037_c0002] $ in millions
+> [p037_c0003] Capital Program Received ($ in millions) Remainder ($ in millions) 2020-2024 1,289 ~98,711 2015-2019 21,475 ~78,525 2010-2014 29,511 ~70,489 1982-2009 79,048 ~20,952
+[p037_c0004] _Master Page # 37 of 38 - Capital Program Oversight Committee Meeting 2/18/2021_
+
+## Page 38
+
+### [p038_c0001] Capital Funding Detail (January 30, 2021)
+[p038_c0002] $ in millions
+### [p038_c0003] 2010-2014 Program
+[p038_c0004]
+
+```text
+Funding Plan Receipts Current Thru Dec This month Received to date Federal Formula, Flexible, Misc $5,844 $5,839 $ - $5,839 Federal High Speed Rail 173 173 - 173 Federal New Start 1,271 1,257 - 1,257 Federal Security 89 89 - 89 Federal RRIF Loan - - - - City Capital Funds 719 608 - 608 State Assistance 770 770 - 770 MTA Bus Federal and City Match 132 112 - 112 MTA Bonds (Payroll Mobility Tax) 11,625 10,450 - 10,450 Other (Including Operating to Capital)** 1,284 1,273 - 1,273 B&T Bonds 2,175 2,019 - 2,019 Hurricane Sandy Recovery Insurance Proceeds/Federal Reimbursement 6,697 6,697 - 6,697 PAYGO 18 18 - 18 Sandy Recovery MTA Bonds 659 182 - 182 Sandy Recovery B&T Bonds 230 23 - 23 Total 31,685 29,511 - 29,511
+```
+### [p038_c0005] 2015-2019 Program
+[p038_c0006]
+
+```text
+Funding Plan Receipts Current Thru Dec This month Received to date Federal Formula, Flexible, Misc $6,704 $4,989 $ - $4,989 Federal High Speed Rail $122 $122 - $122 Federal Core Capacity 100 - - - Federal New Start 500 - - - Federal Security 19 15 - 15 State Assistance 9,064 3,573 150 3,723 City Capital Funds 2,667 1,235 - 1,235 MTA Bonds 8,474 7,818 - 7,818 Asset Sales/Leases 959 315 - 315 Pay-as-you-go (PAYGO)** 2,145 1,572 - 1,572 Other 257 38 3 41 B&T Bonds & PAYGO/Asset Sale 2,942 1,644 - 1,644 Total 33,953 21,321 153 21,475
+```
+### [p038_c0007] 2020-2024 Program
+[p038_c0008]
+
+```text
+Funding Plan Receipts Current Thru Dec This month Received to date Capital from Central Business District Tolling $15,000 $ - $ - $ - Capital from New Revenue Sources 10,000 - - - MTA Bonds and PAYGO 9,782 80 - 80 Federal Formula 7,500 1,119 - 1,119 State of New York 3,000 - - - City of New York 3,000 80 - 80 Federal New Start (SAS Ph2) 2,905 - - - Federal Flexible 275 - - - Federal Security 10 10 - 10 B&T Bonds (Self-Funded) 3,327 1 - 1 Total 54,799 1,289 - 1,289
+```
+[p038_c0009] _Master Page # 38 - Capital Program Oversight Committee Meeting 2/18/2021_

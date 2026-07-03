@@ -1,0 +1,1144 @@
+{
+  "schema_proposal_run_id": "2026-06-08T23-05-26-749Z_schema-proposal-run",
+  "proposed_at": "2026-06-08T23:09:10.860Z",
+  "observation_kind": "source",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "audit_packet": {
+    "observation_kind": "source",
+    "submission_count": 42,
+    "accepted_count": 40,
+    "rejected_count": 2,
+    "declared_anchor_fields": [],
+    "enum_candidates": [
+      {
+        "field": "content_type",
+        "occurrences": 6,
+        "coverage": 0.14,
+        "distinct_values": 3,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "application/pdf",
+          "html",
+          "text/html"
+        ],
+        "value_counts": [
+          {
+            "value": "text/html",
+            "count": 3
+          },
+          {
+            "value": "application/pdf",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "date",
+        "occurrences": 5,
+        "coverage": 0.12,
+        "distinct_values": 4,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "2022-04-18",
+          "December 2025",
+          "June 2025",
+          "Winter 2020"
+        ],
+        "value_counts": [
+          {
+            "value": "June 2025",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "date_text",
+        "occurrences": 4,
+        "coverage": 0.1,
+        "distinct_values": 4,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "April 2019",
+          "Fall 2019",
+          "November 2021",
+          "November 2022"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "document_kind",
+        "occurrences": 3,
+        "coverage": 0.07,
+        "distinct_values": 3,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "equity_evaluation",
+          "final_plan",
+          "monitoring_report"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "retrieved_at",
+        "occurrences": 3,
+        "coverage": 0.07,
+        "distinct_values": 1,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "2026-05-25T22:21:55.189Z"
+        ],
+        "value_counts": [
+          {
+            "value": "2026-05-25T22:21:55.189Z",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "field": "dataset_name",
+        "occurrences": 2,
+        "coverage": 0.05,
+        "distinct_values": 1,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Bus Lanes"
+        ],
+        "value_counts": [
+          {
+            "value": "Bus Lanes",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "publication_date",
+        "occurrences": 2,
+        "coverage": 0.05,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "2026-03-24",
+          "October 2019"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "report_type",
+        "occurrences": 2,
+        "coverage": 0.05,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "performance evaluation",
+          "preliminary report"
+        ],
+        "value_counts": []
+      },
+      {
+        "field": "source_kind",
+        "occurrences": 2,
+        "coverage": 0.05,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "brochure",
+          "webpage"
+        ],
+        "value_counts": []
+      }
+    ],
+    "additional_keys": [
+      {
+        "field": "author",
+        "occurrences": 1,
+        "coverage": 0.02,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Sarah Meyer, Chief Customer Officer"
+        ]
+      },
+      {
+        "field": "commissioner",
+        "occurrences": 1,
+        "coverage": 0.02,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Ydanis Rodriguez"
+        ]
+      },
+      {
+        "field": "coverage_period",
+        "occurrences": 1,
+        "coverage": 0.02,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "2022-2023"
+        ]
+      },
+      {
+        "field": "date_normalized",
+        "occurrences": 5,
+        "coverage": 0.12,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "date_prepared",
+        "occurrences": 1,
+        "coverage": 0.02,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "June 23, 2025"
+        ]
+      },
+      {
+        "field": "date_text_normalized",
+        "occurrences": 4,
+        "coverage": 0.1,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "description",
+        "occurrences": 21,
+        "coverage": 0.5,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Schema definition with column names, data types, descriptions, and cached value distributions for the NYC DOT Bus Lanes dataset",
+          "Annual update on the MTA Open Data Program covering 2022 achievements, program transition, data publication metrics, and forward-looking plans for 2023.",
+          "Brochure describing 34th Street Busway regulations, maps, and frequently asked questions",
+          "Column definitions for the MTA ACE (Automated Camera Enforcement) Routes dataset",
+          "Descriptive page about Select Bus Service features including bus lanes, fare collection, station design, and transit priority treatments",
+          "Index page listing NYC Select Bus Service routes with descriptions, launch dates, ridership figures, and service improvements",
+          "Informational brochure about the Jamaica Ave and Archer Ave Busway pilot projects starting October 2021",
+          "Informational brochure describing the 14th Street Transit & Truck Priority Pilot Project regulations, FAQ, and access instructions for eastbound and westbound travel."
+        ]
+      },
+      {
+        "field": "document_date",
+        "occurrences": 8,
+        "coverage": 0.19,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "2025",
+          "2016-06",
+          "2020-07",
+          "2022-06-23",
+          "2022-12-01",
+          "2025-09",
+          "2026-01-27"
+        ]
+      },
+      {
+        "field": "document_date_normalized",
+        "occurrences": 8,
+        "coverage": 0.19,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "document_title",
+        "occurrences": 3,
+        "coverage": 0.07,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Bronx Bus Network Redesign Final Plan",
+          "METROPOLITAN TRANSPORTATION AUTHORITY OPEN DATA PLAN 2026 ANNUAL UPDATE",
+          "NEW YORK CITY TRANSIT KEY PERFORMANCE METRICS"
+        ]
+      },
+      {
+        "field": "document_type",
+        "occurrences": 10,
+        "coverage": 0.24,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "bus_network_redesign_plan",
+          "addendum",
+          "annual update / open data plan",
+          "annual_report",
+          "draft_plan",
+          "monitoring_update",
+          "performance_report",
+          "plan"
+        ]
+      },
+      {
+        "field": "event",
+        "occurrences": 1,
+        "coverage": 0.02,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Community Advisory Board Meeting"
+        ]
+      },
+      {
+        "field": "format",
+        "occurrences": 2,
+        "coverage": 0.05,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "JSON data dictionary (Socrata API column metadata)"
+        ]
+      },
+      {
+        "field": "language",
+        "occurrences": 1,
+        "coverage": 0.02,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "en"
+        ]
+      },
+      {
+        "field": "location",
+        "occurrences": 1,
+        "coverage": 0.02,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "2 Broadway, New York, NY 10004"
+        ]
+      },
+      {
+        "field": "location_normalized",
+        "occurrences": 1,
+        "coverage": 0.02,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "prepared_for",
+        "occurrences": 3,
+        "coverage": 0.07,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "June 2025 meeting of the New York City Transit & Bus Committee",
+          "NYCDOT",
+          "October 2025 meeting of the New York City Transit & Bus Committee"
+        ]
+      },
+      {
+        "field": "program",
+        "occurrences": 1,
+        "coverage": 0.02,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Better Buses Restart"
+        ]
+      },
+      {
+        "field": "project",
+        "occurrences": 1,
+        "coverage": 0.02,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Queens Bus Network Redesign"
+        ]
+      },
+      {
+        "field": "publication_date_normalized",
+        "occurrences": 2,
+        "coverage": 0.05,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "publication_date_text",
+        "occurrences": 1,
+        "coverage": 0.02,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "April 2025"
+        ]
+      },
+      {
+        "field": "publication_date_text_normalized",
+        "occurrences": 1,
+        "coverage": 0.02,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "publication_name",
+        "occurrences": 1,
+        "coverage": 0.02,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "34th Street Busway"
+        ]
+      },
+      {
+        "field": "publisher",
+        "occurrences": 41,
+        "coverage": 0.98,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "NYC DOT",
+          "MTA",
+          "MTA New York City Transit",
+          "NYC Department of Transportation",
+          "Metropolitan Transportation Authority",
+          "NYC Department of Transportation (NYC DOT)",
+          "Sam Schwartz",
+          "Metropolitan Transportation Authority (MTA)"
+        ]
+      },
+      {
+        "field": "record_count",
+        "occurrences": 2,
+        "coverage": 0.05,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "series",
+        "occurrences": 1,
+        "coverage": 0.02,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Better Buses"
+        ]
+      },
+      {
+        "field": "source_date",
+        "occurrences": 1,
+        "coverage": 0.02,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "2025"
+        ]
+      },
+      {
+        "field": "source_date_normalized",
+        "occurrences": 1,
+        "coverage": 0.02,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "source_group",
+        "occurrences": 1,
+        "coverage": 0.02,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "open_data_plan"
+        ]
+      },
+      {
+        "field": "source_id",
+        "occurrences": 13,
+        "coverage": 0.31,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "14th_street_busway",
+          "161st_bx6_capital_project_2026",
+          "181st_street_jun2022",
+          "behind_schedule_2025",
+          "bronx_bus_network_final_plan_addendum_2021",
+          "brooklyn_bus_network_draft_plan_with_route_profiles",
+          "busway_34thstreet",
+          "busway_tremontavenue"
+        ]
+      },
+      {
+        "field": "source_label",
+        "occurrences": 1,
+        "coverage": 0.02,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Better Buses Restart: Jamaica Busway Monitoring Update – November 2022"
+        ]
+      },
+      {
+        "field": "source_name",
+        "occurrences": 7,
+        "coverage": 0.17,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Queens Bus Network Redesign Proposed Final Plan",
+          "14th Street Transit & Truck Priority Pilot Project Brochure",
+          "MTA ACE Routes Dataset Columns",
+          "MTA Open Data Plan 2022",
+          "NYCT Key Performance Metrics Committee Book",
+          "Q70 Fare Free Service Increases 2025"
+        ]
+      },
+      {
+        "field": "source_title",
+        "occurrences": 6,
+        "coverage": 0.14,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "14th Street Transit & Truck Priority Pilot Project Quarterly Report Winter 2020",
+          "B44 Select Bus Service Nostrand Avenue Progress Report",
+          "Fare-Free Bus Pilot 1-Year Evaluation",
+          "MTA Open Data Plan 2023 Annual Update",
+          "NYC DOT Select Bus Service Routes",
+          "Queens Bus Network Redesign Proposed Final Plan Addendum Appendix D - Equity Evaluation"
+        ]
+      },
+      {
+        "field": "source_type",
+        "occurrences": 12,
+        "coverage": 0.29,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "webpage",
+          "data_dictionary",
+          "brochure",
+          "dataset_dictionary",
+          "evaluation_report",
+          "monitoring_report",
+          "plan",
+          "press_release"
+        ]
+      },
+      {
+        "field": "source_url",
+        "occurrences": 8,
+        "coverage": 0.19,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "https://capitaldashboard.mta.info/",
+          "https://www.mta.info/document/173971",
+          "https://www.nyc.gov/html/brt/downloads/pdf/brt-nostrand-progress-report-june2016.pdf",
+          "https://www.nyc.gov/html/brt/html/busways/34thstreet.shtml",
+          "https://www.nyc.gov/html/brt/html/busways/busways.shtml",
+          "https://www.nyc.gov/html/brt/html/busways/tremontavenue.shtml",
+          "https://www.nyc.gov/html/dot/downloads/pdf/181-st-broadway-ave-amsterdam-ave-jun2022.pdf",
+          "https://www.nyc.gov/html/dot/downloads/pdf/jay-street-busway-pilot-overview-jul2020.pdf"
+        ]
+      },
+      {
+        "field": "status",
+        "occurrences": 1,
+        "coverage": 0.02,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "loading_placeholder_only"
+        ]
+      },
+      {
+        "field": "title",
+        "occurrences": 21,
+        "coverage": 0.5,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "14th Street Busway",
+          "14th Street Transit & Truck Priority Pilot Project Preliminary Report Fall 2019",
+          "34th Street Busway",
+          "Ahead of Opening Day, Mamdani Administration Breaks Ground on Project to Improve Bronx Crosstown Bus Service and Safety Near Yankee Stadium",
+          "Behind Schedule: How New York City's Bus System Slow Rolls Riders",
+          "Better Buses Action Plan",
+          "Brooklyn Bus Network Redesign: Draft Plan with Route Profiles",
+          "Bus Rapid Transit - Select Bus Service Features"
+        ]
+      },
+      {
+        "field": "total_blocks",
+        "occurrences": 2,
+        "coverage": 0.05,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "total_pages",
+        "occurrences": 2,
+        "coverage": 0.05,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "url",
+        "occurrences": 6,
+        "coverage": 0.14,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "https://comptroller.nyc.gov",
+          "https://www.mta.info/open-data",
+          "https://www.nyc.gov",
+          "nyc.gov/34Busway",
+          "nyc.gov/betterbuses",
+          "nyc.gov/busprojects"
+        ]
+      },
+      {
+        "field": "year",
+        "occurrences": 6,
+        "coverage": 0.14,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      }
+    ]
+  },
+  "closure_policy": "deferred",
+  "closure_signals": [
+    {
+      "field": "content_type",
+      "closure_readiness": "open",
+      "occurrences": 6,
+      "coverage": 0.14
+    },
+    {
+      "field": "date",
+      "closure_readiness": "open",
+      "occurrences": 5,
+      "coverage": 0.12
+    },
+    {
+      "field": "date_text",
+      "closure_readiness": "open",
+      "occurrences": 4,
+      "coverage": 0.1
+    },
+    {
+      "field": "document_kind",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "coverage": 0.07
+    },
+    {
+      "field": "retrieved_at",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "coverage": 0.07
+    },
+    {
+      "field": "dataset_name",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.05
+    },
+    {
+      "field": "publication_date",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.05
+    },
+    {
+      "field": "report_type",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.05
+    },
+    {
+      "field": "source_kind",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.05
+    }
+  ],
+  "valid": true,
+  "schema_issues": [],
+  "warnings": [],
+  "proposal": {
+    "observation_kind": "source",
+    "field_proposals": [
+      {
+        "field": "content_type",
+        "decision": "enum",
+        "canonical_values": [
+          "application_pdf",
+          "html"
+        ],
+        "value_mapping": [
+          {
+            "from": "application/pdf",
+            "to": "application_pdf"
+          },
+          {
+            "from": "html",
+            "to": "html"
+          },
+          {
+            "from": "text/html",
+            "to": "html"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "content_type_other"
+        },
+        "rationale": "MIME types; text/html and html collapsed to 'html'."
+      },
+      {
+        "field": "date",
+        "decision": "free_text",
+        "canonical_values": [
+          "2022-04-18",
+          "December 2025",
+          "June 2025",
+          "Winter 2020"
+        ],
+        "value_mapping": [
+          {
+            "from": "2022-04-18",
+            "to": "2022-04-18"
+          },
+          {
+            "from": "December 2025",
+            "to": "December 2025"
+          },
+          {
+            "from": "June 2025",
+            "to": "June 2025"
+          },
+          {
+            "from": "Winter 2020",
+            "to": "Winter 2020"
+          }
+        ],
+        "escape_hatch": null,
+        "rationale": "Date strings of varying granularity; not suitable for enum."
+      },
+      {
+        "field": "date_text",
+        "decision": "free_text",
+        "canonical_values": [
+          "April 2019",
+          "Fall 2019",
+          "November 2021",
+          "November 2022"
+        ],
+        "value_mapping": [
+          {
+            "from": "April 2019",
+            "to": "April 2019"
+          },
+          {
+            "from": "Fall 2019",
+            "to": "Fall 2019"
+          },
+          {
+            "from": "November 2021",
+            "to": "November 2021"
+          },
+          {
+            "from": "November 2022",
+            "to": "November 2022"
+          }
+        ],
+        "escape_hatch": null,
+        "rationale": "Date-like free text; kept as-is."
+      },
+      {
+        "field": "document_kind",
+        "decision": "enum",
+        "canonical_values": [
+          "equity_evaluation",
+          "final_plan",
+          "monitoring_report"
+        ],
+        "value_mapping": [
+          {
+            "from": "equity_evaluation",
+            "to": "equity_evaluation"
+          },
+          {
+            "from": "final_plan",
+            "to": "final_plan"
+          },
+          {
+            "from": "monitoring_report",
+            "to": "monitoring_report"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "document_kind_other"
+        },
+        "rationale": "Document kind categories; open enum with escape."
+      },
+      {
+        "field": "retrieved_at",
+        "decision": "free_text",
+        "canonical_values": [
+          "2026-05-25T22:21:55.189Z"
+        ],
+        "value_mapping": [
+          {
+            "from": "2026-05-25T22:21:55.189Z",
+            "to": "2026-05-25T22:21:55.189Z"
+          }
+        ],
+        "escape_hatch": null,
+        "rationale": "ISO timestamp; stored as free text for now."
+      },
+      {
+        "field": "dataset_name",
+        "decision": "free_text",
+        "canonical_values": [
+          "Bus Lanes"
+        ],
+        "value_mapping": [
+          {
+            "from": "Bus Lanes",
+            "to": "Bus Lanes"
+          }
+        ],
+        "escape_hatch": null,
+        "rationale": "Dataset name; free text to accommodate many names."
+      },
+      {
+        "field": "publication_date",
+        "decision": "free_text",
+        "canonical_values": [
+          "2026-03-24",
+          "October 2019"
+        ],
+        "value_mapping": [
+          {
+            "from": "2026-03-24",
+            "to": "2026-03-24"
+          },
+          {
+            "from": "October 2019",
+            "to": "October 2019"
+          }
+        ],
+        "escape_hatch": null,
+        "rationale": "Publication date as free text."
+      },
+      {
+        "field": "report_type",
+        "decision": "enum",
+        "canonical_values": [
+          "performance_evaluation",
+          "preliminary_report"
+        ],
+        "value_mapping": [
+          {
+            "from": "performance evaluation",
+            "to": "performance_evaluation"
+          },
+          {
+            "from": "preliminary report",
+            "to": "preliminary_report"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "report_type_other"
+        },
+        "rationale": "Report type categories; open enum."
+      },
+      {
+        "field": "source_kind",
+        "decision": "enum",
+        "canonical_values": [
+          "brochure",
+          "webpage"
+        ],
+        "value_mapping": [
+          {
+            "from": "brochure",
+            "to": "brochure"
+          },
+          {
+            "from": "webpage",
+            "to": "webpage"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "source_kind_other"
+        },
+        "rationale": "Source kind categories; open enum."
+      }
+    ],
+    "key_dispositions": [
+      {
+        "key": "author",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Sparse; author is a person, not a core source attribute."
+      },
+      {
+        "key": "commissioner",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Sparse; commissioner is organizational role."
+      },
+      {
+        "key": "coverage_period",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Very sparse and redundant with date fields."
+      },
+      {
+        "key": "date_normalized",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Structured normalized date; useful for queries."
+      },
+      {
+        "key": "date_prepared",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Very sparse; can be captured by other date fields."
+      },
+      {
+        "key": "date_text_normalized",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Structured normalized date text."
+      },
+      {
+        "key": "description",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "High coverage; free-text description of the source."
+      },
+      {
+        "key": "document_date",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Moderate coverage; free-text document date."
+      },
+      {
+        "key": "document_date_normalized",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Structured normalized document date."
+      },
+      {
+        "key": "document_title",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Free-text title of the document."
+      },
+      {
+        "key": "document_type",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Free-text type; complements document_kind enum."
+      },
+      {
+        "key": "event",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Sparse event name; relation context."
+      },
+      {
+        "key": "format",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Free-text format description."
+      },
+      {
+        "key": "language",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Only one value; cannot confidently treat as enum yet."
+      },
+      {
+        "key": "location",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Very sparse and specific; not core."
+      },
+      {
+        "key": "location_normalized",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Structured location if needed."
+      },
+      {
+        "key": "prepared_for",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Recipient context for the document."
+      },
+      {
+        "key": "program",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Program name is organizational relation."
+      },
+      {
+        "key": "project",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Project name is organizational relation."
+      },
+      {
+        "key": "publication_date_normalized",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Structured normalized publication date."
+      },
+      {
+        "key": "publication_date_text",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Very sparse; redundant with other date fields."
+      },
+      {
+        "key": "publication_date_text_normalized",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Structured normalized publication date text."
+      },
+      {
+        "key": "publication_name",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Name of publication; relation context."
+      },
+      {
+        "key": "publisher",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "High coverage; free-text publisher name."
+      },
+      {
+        "key": "record_count",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Numeric field for record count."
+      },
+      {
+        "key": "series",
+        "disposition": "relation_context",
+        "target": null,
+        "rationale": "Series name; relation context."
+      },
+      {
+        "key": "source_date",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Very sparse; covered by other date fields."
+      },
+      {
+        "key": "source_date_normalized",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Structured normalized source date."
+      },
+      {
+        "key": "source_group",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Only one value; insufficient to promote."
+      },
+      {
+        "key": "source_id",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Moderate coverage; free-text identifier."
+      },
+      {
+        "key": "source_label",
+        "disposition": "alias",
+        "target": "source_name",
+        "rationale": "Similar to source_name; can be unified."
+      },
+      {
+        "key": "source_name",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Free-text name of source."
+      },
+      {
+        "key": "source_title",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Free-text title of source."
+      },
+      {
+        "key": "source_type",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Free-text type; more specific than source_kind."
+      },
+      {
+        "key": "source_url",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "URL for the source."
+      },
+      {
+        "key": "status",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Internal placeholder; not meaningful."
+      },
+      {
+        "key": "title",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "High coverage; free-text title."
+      },
+      {
+        "key": "total_blocks",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Numeric field."
+      },
+      {
+        "key": "total_pages",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Numeric field."
+      },
+      {
+        "key": "url",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Free-text URL."
+      },
+      {
+        "key": "year",
+        "disposition": "promote_field",
+        "target": null,
+        "rationale": "Numeric year field."
+      }
+    ],
+    "notes": "The source schema includes standardized date fields (e.g., date_normalized) that will be promoted as structured objects. Several free-text fields (description, title, publisher) have high coverage and are kept as-is. Relation context keys (author, project, etc.) are not promoted to top-level fields. The open enums (content_type, document_kind, report_type, source_kind) include escape hatches."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T23-08-24-946Z_3564593-faaa809a_schema-proposal-run_source",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-08-24-946Z_2026-06-08T23-08-24-946Z_3564593-faaa809a_schema-proposal-run_source.jsonl"
+}

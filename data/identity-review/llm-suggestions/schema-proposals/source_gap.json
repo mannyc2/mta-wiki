@@ -1,0 +1,144 @@
+{
+  "schema_proposal_run_id": "2026-06-08T23-52-42-494Z_schema-proposal-run",
+  "proposed_at": "2026-06-08T23:57:02.001Z",
+  "observation_kind": "source_gap",
+  "profile_name": "deepseek-pro",
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "audit_packet": {
+    "observation_kind": "source_gap",
+    "submission_count": 4,
+    "accepted_count": 4,
+    "rejected_count": 0,
+    "declared_anchor_fields": [
+      "description",
+      "gap_kind",
+      "gap_text",
+      "missing_information"
+    ],
+    "enum_candidates": [
+      {
+        "field": "gap_kind",
+        "occurrences": 4,
+        "accepted_occurrences": 4,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 4,
+        "coverage": 1,
+        "distinct_values": 4,
+        "accepted_distinct_values": 4,
+        "canonical_distinct_values": 4,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "data_collection_suspension",
+          "data_not_collected",
+          "data_unavailable",
+          "deferred_data"
+        ],
+        "accepted_values": [
+          "data_collection_suspension",
+          "data_not_collected",
+          "data_unavailable",
+          "deferred_data"
+        ],
+        "canonical_values_observed": [
+          "data_collection_suspension",
+          "data_not_collected",
+          "data_unavailable",
+          "deferred_data"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      }
+    ],
+    "additional_keys": [
+      {
+        "field": "affected_period",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.25,
+        "accepted_coverage": 0.25,
+        "canonical_coverage": 0.25,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "2022-2023"
+        ],
+        "accepted_sample_values": [
+          "2022-2023"
+        ],
+        "canonical_sample_values": [
+          "2022-2023"
+        ]
+      }
+    ]
+  },
+  "closure_policy": "deferred",
+  "closure_signals": [
+    {
+      "field": "gap_kind",
+      "closure_readiness": "open",
+      "occurrences": 4,
+      "accepted_occurrences": 4,
+      "canonical_occurrences": 4,
+      "coverage": 1
+    }
+  ],
+  "valid": true,
+  "schema_issues": [],
+  "warnings": [],
+  "proposal": {
+    "observation_kind": "source_gap",
+    "field_proposals": [
+      {
+        "field": "gap_kind",
+        "decision": "enum",
+        "canonical_values": [
+          "data_collection_suspension",
+          "data_not_collected",
+          "data_unavailable",
+          "deferred_data"
+        ],
+        "value_mapping": [
+          {
+            "from": "data_collection_suspension",
+            "to": "data_collection_suspension"
+          },
+          {
+            "from": "data_not_collected",
+            "to": "data_not_collected"
+          },
+          {
+            "from": "data_unavailable",
+            "to": "data_unavailable"
+          },
+          {
+            "from": "deferred_data",
+            "to": "deferred_data"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "gap_kind_other"
+        },
+        "rationale": "All four observed values accepted, distinct, and already canonical; open enum with escape hatch for future gap types."
+      }
+    ],
+    "key_dispositions": [
+      {
+        "key": "affected_period",
+        "disposition": "needs_more_data",
+        "rationale": "Only one occurrence (coverage 0.25), insufficient data to determine type or promote."
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T23-56-50-265Z_3609302-8cbe231b_schema-proposal-run_source-gap",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-56-50-265Z_2026-06-08T23-56-50-265Z_3609302-8cbe231b_schema-proposal-run_source-gap.jsonl"
+}

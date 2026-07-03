@@ -1,0 +1,251 @@
+{
+  "note_id": "codex-relation-rule-or-data-next9-prep",
+  "created_at_utc": "2026-06-22T21:53:50Z",
+  "lane": "validator/rule-data triage next9",
+  "constraints_observed": {
+    "no_materialize": true,
+    "no_validate_cli": true,
+    "no_export_jsonl": true,
+    "no_provider_backed_commands": true,
+    "no_generated_canonical_wiki_or_db_edits": true,
+    "single_written_artifact": "data/review_notes/codex-relation-rule-or-data-next9-prep.json"
+  },
+  "checkpoint_context": {
+    "last_materialized_checkpoint": "canonical/materialized state before relation027, relation028, relation029, and missing_target_repair001 are materialized",
+    "applied_but_unmaterialized_exclusions": [
+      {
+        "batch": "relation027",
+        "source_artifact": "data/review_notes/codex-relation-cleanup-batch027-prep.json",
+        "excluded_record_ids": [
+          "relation_the-city-mta-article",
+          "relation_gothamist-congestion-pricing",
+          "relation_meeting-doc-177271-nytimes-reported-congestion-pricing",
+          "relation_meeting-doc-79466-lirr-policy",
+          "relation_meeting-doc-79466-mnr-policy"
+        ],
+        "reason": "queued cleanup for published_by endpoint-shape rows"
+      },
+      {
+        "batch": "relation028",
+        "source_artifact": "data/review_notes/codex-relation-cleanup-batch028-prep.json",
+        "excluded_record_ids": [
+          "relation_135421-nyct-subway-bus-ops",
+          "relation_meeting-doc-154986-aar-operated-by-paratransit",
+          "relation_mnr-operated-by-mta",
+          "relation_rel-meeting-doc-177266-aar-operated-by-mta"
+        ],
+        "reason": "queued cleanup for operated_by entity->entity rows"
+      },
+      {
+        "batch": "relation029",
+        "source_artifact": "data/review_notes/codex-relation-cleanup-batch029-prep.json",
+        "excluded_record_ids": [
+          "relation_lirr-implemented-by-lirr-dept",
+          "relation_lirr-license-implemented-by-lirr",
+          "relation_meeting-doc-121201-ocip",
+          "relation_tbta-operated-by-mta-bt"
+        ],
+        "reason": "queued cleanup for implemented_by entity->entity rows"
+      },
+      {
+        "batch": "missing_target_repair001",
+        "source_artifact": "data/submissions/2026-06-22_codex_relation_missing_target_repair001.jsonl",
+        "excluded_record_ids": [
+          "relation_85476-published-by-mta-corrected"
+        ],
+        "reason": "queued repair for missing_relation_target; included in exclusion set for next9 context even though it is not an endpoint-shape bucket"
+      }
+    ]
+  },
+  "bucket_counts_after_exclusions": {
+    "unexpected_relation_endpoint_shape_total": 55,
+    "top_shape_buckets": [
+      {
+        "bucket": "part_of_program project->source",
+        "count": 3
+      },
+      {
+        "bucket": "serves_route project->project",
+        "count": 3
+      },
+      {
+        "bucket": "has_metric source->metric_claim",
+        "count": 2
+      },
+      {
+        "bucket": "has_timeline_event claim->event",
+        "count": 2
+      },
+      {
+        "bucket": "implemented_by route->entity",
+        "count": 2
+      },
+      {
+        "bucket": "part_of_program entity->project",
+        "count": 2
+      },
+      {
+        "bucket": "part_of_program event->entity",
+        "count": 2
+      },
+      {
+        "bucket": "part_of_program project->claim",
+        "count": 2
+      },
+      {
+        "bucket": "part_of_program project->event",
+        "count": 2
+      },
+      {
+        "bucket": "serves_route event->route",
+        "count": 2
+      },
+      {
+        "bucket": "serves_route project->entity",
+        "count": 2
+      },
+      {
+        "bucket": "serves_route treatment_component->route",
+        "count": 2
+      }
+    ],
+    "tie_breaker": "The top two buckets are tied at 3. Choose part_of_program project->source first because the pattern is internally consistent: a source document is being used as a stand-in for a program, plan, or capital-program object. The serves_route project->project bucket is also cleanup-shaped but includes self-loop identity mistakes that may require route/entity target discovery."
+  },
+  "recommendation": {
+    "type": "data_cleanup_bucket",
+    "bucket": "part_of_program project->source",
+    "summary": "Retire or retarget three part_of_program relations whose object endpoint is a source record rather than a program/project/entity record.",
+    "confidence": "high",
+    "why_not_validator_rule_change": "The existing endpoint rule expects part_of_program to connect project|route subjects to project|entity objects. Accepting source as an object would make source documents behave like program containers and would convert document provenance into semantic program membership. The three examples are better interpreted as data modeling mistakes: the evidence belongs on the relation or project/claim records, while the source page is not itself the program.",
+    "next_best_action": "Prepare a narrow cleanup batch for the three relation records listed in exact_examples. Use retire-only when no concrete program entity/project target exists; only submit replacement part_of_program rows when a non-source canonical program/project/entity target already exists and the evidence supports that target."
+  },
+  "exact_examples": [
+    {
+      "record_id": "relation_meeting-doc-112141-grand-central-part-of-20yr",
+      "submission_ids": [
+        "sub_c621889d18837a7c"
+      ],
+      "source_id": "meeting_doc_112141",
+      "display_name": "Grand Central Train Shed part of 20-Year Needs",
+      "relation_kind": "part_of_program",
+      "subject": {
+        "record_id": "project_meeting-doc-112141-grand-central-train-shed",
+        "record_kind": "project",
+        "display_name": "Grand Central Train Shed"
+      },
+      "object": {
+        "record_id": "source_meeting-doc-112141",
+        "record_kind": "source",
+        "display_name": "20-Year Needs Assessment Progress Update"
+      },
+      "evidence_refs": [
+        "meeting_doc_112141#p014_c0004"
+      ],
+      "evidence_summary": "The cited block says Grand Central Train Shed is one of the next mega infrastructure projects; it does not make the source document itself the program object.",
+      "current_validator_message": "Relation kind part_of_program expects project|route -> project|entity, got project -> source.",
+      "recommended_cleanup": "Retire unless a non-source canonical 20-Year Needs Assessment program/project/entity target is intentionally created or already selected."
+    },
+    {
+      "record_id": "relation_meeting-doc-112141-zerobus-part-of-20yr",
+      "submission_ids": [
+        "sub_c85ca73f5e3f3e5b"
+      ],
+      "source_id": "meeting_doc_112141",
+      "display_name": "Zero-Emission Bus Transition part of 20-Year Needs",
+      "relation_kind": "part_of_program",
+      "subject": {
+        "record_id": "project_meeting-doc-112141-zero-emission-bus-transition",
+        "record_kind": "project",
+        "display_name": "Zero-Emission Bus Transition"
+      },
+      "object": {
+        "record_id": "source_meeting-doc-112141",
+        "record_kind": "source",
+        "display_name": "20-Year Needs Assessment Progress Update"
+      },
+      "evidence_refs": [
+        "meeting_doc_112141#p019_c0002"
+      ],
+      "evidence_summary": "The cited block discusses investment for a zero-emissions bus fleet and a 2020-24 Capital Program down payment; the source endpoint is a provenance document, not a program entity.",
+      "current_validator_message": "Relation kind part_of_program expects project|route -> project|entity, got project -> source.",
+      "recommended_cleanup": "Retire or retarget to a non-source capital-program/program entity if one is selected in a dedicated data cleanup pass."
+    },
+    {
+      "record_id": "relation_meeting-doc-115221-psa-capital-program",
+      "submission_ids": [
+        "sub_601170659eb5f193"
+      ],
+      "source_id": "meeting_doc_115221",
+      "display_name": "Penn Station Access in 2020-2024 Capital Program",
+      "relation_kind": "part_of_program",
+      "subject": {
+        "record_id": "project_annual-2021-penn-station-access",
+        "record_kind": "project",
+        "display_name": "Penn Station Access"
+      },
+      "object": {
+        "record_id": "source_meeting-doc-115221",
+        "record_kind": "source",
+        "display_name": "Audit Committee Book - July 2023"
+      },
+      "evidence_refs": [
+        "meeting_doc_115221#p025_c0006"
+      ],
+      "evidence_summary": "The cited block says the MTA Board approved an amendment to increase the 2020-2024 Capital Program to support Penn Station Access; the audit committee book source is not the capital program.",
+      "current_validator_message": "Relation kind part_of_program expects project|route -> project|entity, got project -> source.",
+      "recommended_cleanup": "Retarget to a non-source 2020-2024 Capital Program record only if one is deliberately selected or created; otherwise retire the malformed source-object relation."
+    }
+  ],
+  "simulated_impact": {
+    "baseline_endpoint_shape_issues_after_exclusions": 55,
+    "bucket_count": 3,
+    "remaining_endpoint_shape_issues_after_bucket_cleanup": 52,
+    "relative_reduction": "3 of 55 endpoint-shape issues, about 5.5%",
+    "side_effect_expectation": "No validator behavior change. No generated data changes until a future cleanup batch is submitted and materialized."
+  },
+  "proposed_mechanism": {
+    "cleanup_batch_shape": [
+      "Retire relation_meeting-doc-112141-grand-central-part-of-20yr, relation_meeting-doc-112141-zerobus-part-of-20yr, and relation_meeting-doc-115221-psa-capital-program.",
+      "Prefer retire-only for source-as-program placeholders.",
+      "If a future pass chooses replacements, object_id must resolve to an existing non-source project or entity representing the named program or capital plan, with the same evidence_refs carried forward."
+    ],
+    "validator_code_or_test_plan": {
+      "warranted": false,
+      "reason": "The current rule is conceptually correct for part_of_program. A test widening source objects would encode the data mistake; a regression test is optional only if future cleanup automation needs to assert source objects remain invalid."
+    }
+  },
+  "commands_run": [
+    "test ! -e data/review_notes/codex-relation-rule-or-data-next9-prep.json && echo ok || echo exists",
+    "rg -n \"relationEndpointShapeIssue|readCanonicalRecords\" packages -g '*.ts'",
+    "jq -r '.prepared[]? | [.retire.original_record_id, .retire.original_relation_kind, .retire.original_subject_kind, .retire.original_object_kind] | @tsv' data/review_notes/codex-relation-cleanup-batch027-prep.json data/review_notes/codex-relation-cleanup-batch028-prep.json data/review_notes/codex-relation-cleanup-batch029-prep.json 2>/dev/null",
+    "bun --eval 'import { readCanonicalRecords } from \"./packages/pipeline/src/materialize/materialize.ts\"; const r=readCanonicalRecords().find((x:any)=>x.record_kind===\"relation\"); console.log(JSON.stringify(r,null,2));'",
+    "sed -n '340,430p' packages/pipeline/src/records/relations.ts",
+    "jq -r '.prepared[]? | .retire.original_record_id' data/review_notes/codex-relation-cleanup-batch027-prep.json data/review_notes/codex-relation-cleanup-batch028-prep.json data/review_notes/codex-relation-cleanup-batch029-prep.json; jq -r '.original.record_id? // .retire.original_record_id? // empty' data/review_notes/*missing*target*repair*001*.json 2>/dev/null",
+    "bun --eval '<readCanonicalRecords plus relationEndpointShapeIssue inventory, excluding relation027/relation028/relation029/missing_target_repair001 record ids>'",
+    "bun --eval '<canonical search for 20-Year Needs, Capital Program, Hempstead Branch, New Haven Line, Rockaways, A Train, S lines>'",
+    "bun --eval '<payload and evidence dump for top tied bucket examples>'",
+    "rg -n \"20-Year Needs|Grand Central Train Shed|Zero-Emission Bus Transition|Penn Station Access|Hempstead Branch|New Haven Line|Rockaways\" data/submissions/*.jsonl data/submission-overrides/retired.json | head -n 80",
+    "rg -n '\"block_id\":\"p014_c0004\"|\"block_id\":\"p019_c0002\"' raw/sources/meeting_doc_112141/blocks.jsonl",
+    "rg -n '\"block_id\":\"p025_c0006\"' raw/sources/meeting_doc_115221/blocks.jsonl",
+    "date -u +%Y-%m-%dT%H:%M:%SZ"
+  ],
+  "forbidden_commands_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts export-jsonl",
+    "provider-backed ingest/write/ask commands",
+    "database repair or publish commands"
+  ],
+  "files_intentionally_not_edited": [
+    "data/canonical/**",
+    "canonical.db",
+    "data/materialized/**",
+    "wiki/**",
+    "LOG.md",
+    "manifest files",
+    "data/submission-overrides/merges.json",
+    "data/submission-overrides/retired.json",
+    "data/submissions/**",
+    "packages/**"
+  ]
+}

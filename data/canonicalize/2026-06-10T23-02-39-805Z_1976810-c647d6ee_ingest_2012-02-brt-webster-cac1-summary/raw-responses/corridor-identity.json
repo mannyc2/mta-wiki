@@ -1,0 +1,63 @@
+{
+  "run_id": "2026-06-10T23-02-39-805Z_1976810-c647d6ee_ingest_2012-02-brt-webster-cac1-summary",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T02:23:51.054Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "webster-ave-bronx-2012-self-resolve",
+        "local_observation_id": "corridor_webster_avenue_bronx_2012",
+        "decision": "new",
+        "rationale": "The observation's base_record_id corridor_webster-avenue-bronx-2012 already exists in the registry with the same source_id (2012_02_brt_webster_cac1_summary), same corridor_name (Webster Avenue), same borough (Bronx), and same description about SBS study. The observation resolves to its own canonical record — no different record is a closer match.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p001_c0003",
+            "source_quote": "Webster Avenue SBS Community Advisory Committee Meeting #1 Summary"
+          },
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p001_c0006",
+            "source_quote": "On Monday, February 6, 2012, The New York City Department of Transportation (NYCDOT) and MTA New York City Transit (NYCT), held the first Community Advisory Committee (CAC) meeting for the Webster Avenue Select Bus Service (SBS) project at Lincoln Hospital in the Bronx."
+          },
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p001_c0008",
+            "source_quote": "Borough President Diaz also noted that the difference between the proposed Webster Avenue SBS and the Fordham SBS is that the latter was designed to fit existing conditions, whereas Webster Avenue SBS will need to address transportation needs based on the future potential of the corridor."
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_corridor",
+            "subject_id": "corridor_webster-avenue-bronx-2012",
+            "object_id": "corridor_webster-ave-bronx",
+            "description": "Both records describe the same Webster Avenue corridor in the Bronx studied for Select Bus Service based on the Bx41 route. corridor_webster-ave-bronx is the more comprehensive record with limits (The Hub to Williamsbridge), sourced from multiple CAC meetings and progress reports spanning 2012–2014; corridor_webster-avenue-bronx-2012 represents the earliest study phase from the February 2012 CAC1 meeting summary.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_02_brt_webster_cac1_summary",
+                "block_id": "p001_c0003",
+                "source_quote": "Webster Avenue SBS Community Advisory Committee Meeting #1 Summary"
+              },
+              {
+                "source_id": "2012_02_brt_webster_cac1_summary",
+                "block_id": "p001_c0006",
+                "source_quote": "On Monday, February 6, 2012, The New York City Department of Transportation (NYCDOT) and MTA New York City Transit (NYCT), held the first Community Advisory Committee (CAC) meeting for the Webster Avenue Select Bus Service (SBS) project at Lincoln Hospital in the Bronx."
+              },
+              {
+                "source_id": "2012_02_brt_webster_cac1_summary",
+                "block_id": "p001_c0008",
+                "source_quote": "the difference between the proposed Webster Avenue SBS and the Fordham SBS is that the latter was designed to fit existing conditions, whereas Webster Avenue SBS will need to address transportation needs based on the future potential of the corridor."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-21-37-000Z_2111393-2a7dcf83_canonicalize_2026-06-10t23-02-39-805z-1976810-c647d6ee-ingest-2012-02-brt-webster-cac1-summary-corridor-identity"
+}

@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-06-09T10-59-35-382Z_ontology-normalize-run",
+  "generated_at": "2026-06-09T10:59:35.382Z",
+  "dry_run": true,
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "concurrency": 2,
+  "ontology_review_run_id": "2026-06-09T02-55-36-774Z_ontology-review",
+  "packet_count": 1,
+  "completed": 0,
+  "failed": 0,
+  "planned": 1,
+  "decision_count": 0,
+  "validated_decision_count": 0,
+  "quarantined_decision_count": 0,
+  "paths": {
+    "output_dir": "data/ontology-decisions/2026-06-09T10-59-35-382Z_ontology-normalize-run",
+    "runs_dir": "data/ontology-decisions/runs",
+    "manifest": "data/ontology-decisions/runs/2026-06-09T10-59-35-382Z_ontology-normalize-run.json",
+    "latest": "data/ontology-decisions/runs/latest.json",
+    "decisions_jsonl": "data/ontology-decisions/2026-06-09T10-59-35-382Z_ontology-normalize-run/validated-decisions.jsonl",
+    "quarantine_jsonl": "data/ontology-decisions/2026-06-09T10-59-35-382Z_ontology-normalize-run/quarantined-decisions.jsonl",
+    "raw_responses_dir": "data/ontology-decisions/2026-06-09T10-59-35-382Z_ontology-normalize-run/raw-responses"
+  },
+  "results": [
+    {
+      "agent_id": "relation-ontology",
+      "packet_path": "data/ontology-review/packets/relation-ontology.md",
+      "status": "planned",
+      "decision_count": 0,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 0,
+      "transcript_dir": "data/transcripts/runs/2026-06-09T10-59-35-382Z_33458-6b8ba1b2_ontology-normalize-run_relation-ontology",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-09T10-59-35-383Z_2026-06-09T10-59-35-382Z_33458-6b8ba1b2_ontology-normalize-run_relation-ontology.jsonl"
+    }
+  ]
+}

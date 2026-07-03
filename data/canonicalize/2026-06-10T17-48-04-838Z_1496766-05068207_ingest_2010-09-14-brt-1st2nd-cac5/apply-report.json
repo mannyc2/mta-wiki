@@ -1,0 +1,21 @@
+{
+  "run_id": "2026-06-10T17-48-04-838Z_1496766-05068207_ingest_2010-09-14-brt-1st2nd-cac5",
+  "generated_at": "2026-06-10T20:36:44.527Z",
+  "dry_run": false,
+  "wrote": true,
+  "decision_count": 40,
+  "reviewed_count": 25,
+  "alias_additions": [],
+  "aliases_already_present": [],
+  "do_not_merge_additions": [],
+  "relation_submissions": 9,
+  "quarantined": 13,
+  "conflicts": [],
+  "paths": {
+    "merges": "data/identity-overrides/merges.json",
+    "do_not_merge": "data/identity-overrides/do-not-merge.json",
+    "relation_submissions_jsonl": "data/submissions/2026-06-10T17-48-04-838Z_1496766-05068207_ingest_2010-09-14-brt-1st2nd-cac5_canonicalize.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T17-48-04-838Z_1496766-05068207_ingest_2010-09-14-brt-1st2nd-cac5/apply-quarantine.jsonl",
+    "apply_report": "data/canonicalize/2026-06-10T17-48-04-838Z_1496766-05068207_ingest_2010-09-14-brt-1st2nd-cac5/apply-report.json"
+  }
+}

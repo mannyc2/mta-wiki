@@ -1,0 +1,33 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:37:43.577Z",
+  "packet_path": "data/identity-review/packets/route_cluster_4f61a869c0.md",
+  "cluster_id": "route_cluster_4f61a869c0",
+  "kind": "route",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "route_cluster_4f61a869c0",
+    "kind": "route",
+    "merge_groups": [
+      [
+        "route_able-s79-sbs",
+        "route_hylan-richmond-av-sbs-proposed"
+      ]
+    ],
+    "do_not_merge": [],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [
+      "A route proposal that predates implementation and differs only in naming (descriptive corridor name vs. official route ID) merges into the implemented route record as a lifecycle stage."
+    ],
+    "confidence": "high",
+    "rationale": "Both records refer to the same S79 SBS route on Staten Island. The proposed record (2011) is the pre-implementation stage of the route that launched in 2012 and is still in service. Strong identity fields (SBS variant, geographic corridor Hylan/Richmond) agree; differences in route ID (\"proposed Hylan/Richmond SBS\" vs \"S79+\") are source-local naming before formalization. Per route lifecycle rule and same-object test, these merge into one canonical record."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-37-24-389Z_1282984-9167fa22_identity-review-run_route-cluster-4f61a869c0",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-37-24-397Z_2026-06-23T14-37-24-389Z_1282984-9167fa22_identity-review-run_route-cluster-4f61a869c0.jsonl"
+}

@@ -1,0 +1,491 @@
+{
+  "note_id": "codex-identity-batch187-prep",
+  "batch": "identity187",
+  "created_at": "2026-06-23T10:19:33Z",
+  "scope": {
+    "selection_note": "Codex-only identity cleanup prep after identity186. Scope is entity aliases only. This note avoids already-merged aliases, identity186 proposed ids, identity186 deferred trap ids, alias-as-current-merge-target chains, target-as-current-alias chains, and current do-not-merge pairs.",
+    "prepared_global_kind": "entity",
+    "allowed_global_kinds": [
+      "entity"
+    ],
+    "write_limit": "Only this review note was written. No identity overrides, LOG.md, manifest, submissions, canonical outputs, DB, wiki, or materialized outputs were intentionally edited.",
+    "candidate_limit": {
+      "requested": "8-12 high-confidence entity aliases if possible",
+      "prepared_count": 11,
+      "pass": true
+    },
+    "validator_duplicate_counts_observed": {
+      "total_issues": 470,
+      "duplicate_entity_issues": 399,
+      "method": "read-only validateRepo() via bun --eval"
+    }
+  },
+  "prepared_count": 11,
+  "proposed_aliases": [
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_pcac-mta-2012-webster-cac3",
+      "target_id": "entity_meeting-doc-113891-pcac",
+      "canonical_id": "entity_meeting-doc-113891-pcac",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_meeting-doc-113891-pcac and entity_pcac-mta-2012-webster-cac3 share identity key entity_permanent-citizens-advisory-committee-to-the-mta."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_pcac-mta-2012-webster-cac3",
+          "evidence_id": "2012_10_brt_webster_cac3_meeting_summary#p005_c0003",
+          "quote": "Permanent Citizens Advisory Committee to the MTA"
+        },
+        {
+          "record_id": "entity_meeting-doc-113891-pcac",
+          "evidence_id": "meeting_doc_165226#p020_c0004",
+          "quote": "Associate Director for the Permanent Citizens Advisory Committee to the MTA, PCAC"
+        }
+      ],
+      "reason": "Both records identify the Permanent Citizens Advisory Committee to the MTA. The alias is a single-source Webster CAC mention; the target is the richer PCAC record with the same long-form name and acronym support.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_in_identity186_or_deferred_traps": true,
+        "override_kind_valid": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-121091-pcac",
+      "target_id": "entity_meeting-doc-113891-pcac",
+      "canonical_id": "entity_meeting-doc-113891-pcac",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_meeting-doc-113891-pcac and entity_meeting-doc-121091-pcac share identity key entity_permanent-citizens-advisory-committee.",
+        "validateRepo duplicate_global_identity: Global entity records entity_meeting-doc-113891-pcac and entity_meeting-doc-121091-pcac share identity key entity_permanent-citizens-advisory-committee-pcac."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-121091-pcac",
+          "evidence_id": "meeting_doc_127506#p015_c0003",
+          "quote": "Executive Director of the Permanent Citizens Advisory Committee (PCAC)"
+        },
+        {
+          "record_id": "entity_meeting-doc-113891-pcac",
+          "evidence_id": "meeting_doc_165226#p020_c0004",
+          "quote": "Permanent Citizens Advisory Committee to the MTA, PCAC"
+        }
+      ],
+      "reason": "Both records identify PCAC/Permanent Citizens Advisory Committee. The target already carries PCAC and long-form aliases; the alias record is a smaller duplicate of that same advisory committee.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_in_identity186_or_deferred_traps": true,
+        "override_kind_valid": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-104796-nypd",
+      "target_id": "entity_170871-nypd",
+      "canonical_id": "entity_170871-nypd",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_170871-nypd and entity_meeting-doc-104796-nypd share identity key entity_new-york-city-police-department."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-104796-nypd",
+          "evidence_id": "meeting_doc_104796#p070_c0008",
+          "quote": "the New York City Police Department (\"NYPD\")"
+        },
+        {
+          "record_id": "entity_170871-nypd",
+          "evidence_id": "meeting_doc_170871#p005_c0013",
+          "quote": "partners at NYPD and MTAPD"
+        }
+      ],
+      "reason": "Both records identify the New York City Police Department/NYPD agency. The alias has the full official name plus acronym; the target is the existing NYPD agency record.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_in_identity186_or_deferred_traps": true,
+        "override_kind_valid": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_nypd-tremont-busway",
+      "target_id": "entity_170871-nypd",
+      "canonical_id": "entity_170871-nypd",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_170871-nypd and entity_nypd-tremont-busway share identity key entity_nypd."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_nypd-tremont-busway",
+          "evidence_id": "tremont_ave_bus_priority_cb6_feb2025#p006_c0011",
+          "quote": "Coordination with NYPD"
+        },
+        {
+          "record_id": "entity_170871-nypd",
+          "evidence_id": "meeting_doc_170871#p005_c0013",
+          "quote": "partners at NYPD and MTAPD"
+        }
+      ],
+      "reason": "Both records identify NYPD as an agency. The alias is a source-scoped Tremont busway NYPD reference and the target is the existing New York City Police Department/NYPD entity.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_in_identity186_or_deferred_traps": true,
+        "override_kind_valid": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_plasser-american-corp-jan2026",
+      "target_id": "entity_meeting-doc-100351-plasser-american",
+      "canonical_id": "entity_meeting-doc-100351-plasser-american",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_meeting-doc-100351-plasser-american and entity_plasser-american-corp-jan2026 share identity key entity_plasser-american-corp."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_plasser-american-corp-jan2026",
+          "evidence_id": "meeting_doc_197456#p008_c0004",
+          "quote": "Vendor Name (Location) Plasser American Corp. (Chesapeake, Virginia)"
+        },
+        {
+          "record_id": "entity_meeting-doc-100351-plasser-american",
+          "evidence_id": "meeting_doc_111826#p007_c0003",
+          "quote": "Vendor Name (Location) Plasser American Corporation (Chesapeake, Virginia)"
+        }
+      ],
+      "reason": "Both records identify Plasser American Corp./Corporation at the same Chesapeake, Virginia vendor surface. The target is the richer multi-source Plasser American vendor record.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_in_identity186_or_deferred_traps": true,
+        "override_kind_valid": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-197041-y-properties",
+      "target_id": "entity_y-properties-holdings-llc",
+      "canonical_id": "entity_y-properties-holdings-llc",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_meeting-197041-y-properties and entity_y-properties-holdings-llc share identity key entity_y-properties-holdings-ii-llc."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-197041-y-properties",
+          "evidence_id": "meeting_doc_197041#p009_c0008",
+          "quote": "GRANTOR: Y PROPERTIES HOLDINGS II, LLC"
+        },
+        {
+          "record_id": "entity_y-properties-holdings-llc",
+          "evidence_id": "meeting_doc_196931#p001_c0008",
+          "quote": "GRANTOR: Y PROPERTIES HOLDINGS II, LLC"
+        }
+      ],
+      "reason": "Both records identify the same legal entity, Y Properties Holdings II, LLC, as grantor. The name match is exact apart from local record id shape.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_in_identity186_or_deferred_traps": true,
+        "override_kind_valid": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-104796-vpct-realty",
+      "target_id": "entity_vpct-realty-llc",
+      "canonical_id": "entity_vpct-realty-llc",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_meeting-doc-104796-vpct-realty and entity_vpct-realty-llc share identity key entity_vpct-realty-llc."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-104796-vpct-realty",
+          "evidence_id": "meeting_doc_104796#p074_c0008",
+          "quote": "LICENSEE: VPCT Realty LLC (\"VPCT\")"
+        },
+        {
+          "record_id": "entity_vpct-realty-llc",
+          "evidence_id": "meeting_doc_131811#p058_c0007",
+          "quote": "LICENSEE: VPCT Realty LLC (\"VPCT\")"
+        }
+      ],
+      "reason": "Both records identify VPCT Realty LLC as the same licensee for access/parking near 465 Johnson Avenue. The legal name and acronym match exactly.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_in_identity186_or_deferred_traps": true,
+        "override_kind_valid": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-53036-mta-board",
+      "target_id": "entity_meeting-doc-102761-mta-board",
+      "canonical_id": "entity_meeting-doc-102761-mta-board",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_meeting-doc-102761-mta-board and entity_meeting-doc-53036-mta-board share identity key entity_mta-board."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-53036-mta-board",
+          "evidence_id": "meeting_doc_53036#p001_c0002",
+          "quote": "C&D Update to the MTA Board"
+        },
+        {
+          "record_id": "entity_meeting-doc-102761-mta-board",
+          "evidence_id": "meeting_doc_102761#p001_c0017",
+          "quote": "That the MTA Board grant approval"
+        }
+      ],
+      "reason": "Both records identify the MTA Board. The alias is a single-source C&D update audience record; the target is the richer MTA Board entity with many source aliases.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_in_identity186_or_deferred_traps": true,
+        "override_kind_valid": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-121021-capital-program-committee",
+      "target_id": "entity_capital-program-committee-charter",
+      "canonical_id": "entity_capital-program-committee-charter",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_capital-program-committee-charter and entity_meeting-doc-121021-capital-program-committee share identity key entity_capital-program-committee."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-121021-capital-program-committee",
+          "evidence_id": "meeting_doc_121021#p001_c0003",
+          "quote": "Capital Program Committee Meeting"
+        },
+        {
+          "record_id": "entity_capital-program-committee-charter",
+          "evidence_id": "meeting_doc_128986#p088_c0003",
+          "quote": "CAPITAL PROGRAM COMMITTEE"
+        }
+      ],
+      "reason": "Both records identify the MTA Capital Program Committee. The target is the richer committee record with CPC acronym and MTA parent context; the alias is a single-source meeting page for the same committee.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_in_identity186_or_deferred_traps": true,
+        "override_kind_valid": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_bt-committee-chair-lacewell",
+      "target_id": "entity_39651-l-lacewell",
+      "canonical_id": "entity_39651-l-lacewell",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_39651-l-lacewell and entity_bt-committee-chair-lacewell share identity key entity_l-lacewell."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_bt-committee-chair-lacewell",
+          "evidence_id": "meeting_doc_37056#p001_c0006",
+          "quote": "L. Lacewell, Chair"
+        },
+        {
+          "record_id": "entity_39651-l-lacewell",
+          "evidence_id": "meeting_doc_39651#p001_c0006",
+          "quote": "L. Lacewell, Chair"
+        }
+      ],
+      "reason": "Both records identify the same L. Lacewell Bridges and Tunnels Committee chair/person record with identical source text and person type.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_in_identity186_or_deferred_traps": true,
+        "override_kind_valid": true
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_siemens-meeting-doc-113971",
+      "target_id": "entity_meeting-doc-111791-siemens",
+      "canonical_id": "entity_meeting-doc-111791-siemens",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global entity records entity_meeting-doc-111791-siemens and entity_siemens-meeting-doc-113971 share identity key entity_siemens."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_siemens-meeting-doc-113971",
+          "evidence_id": "meeting_doc_113971#p012_c0004",
+          "quote": "Siemens has deployed several software upgrades"
+        },
+        {
+          "record_id": "entity_meeting-doc-111791-siemens",
+          "evidence_id": "meeting_doc_111791#p039_c0003",
+          "quote": "new SC42 Dual Mode locomotives (designed by Siemens)"
+        }
+      ],
+      "reason": "Both records identify Siemens as a supplier/company. The target is the richer Siemens/Siemens Industry Inc. record and the alias is a single-source Siemens supplier duplicate.",
+      "guards": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "alias_not_equal_target": true,
+        "no_do_not_merge": true,
+        "no_resolved_do_not_merge": true,
+        "not_used_in_identity186_or_deferred_traps": true,
+        "override_kind_valid": true
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "candidate": "entity_joint-lirr-mnr-committee-108051 -> entity_joint-lirr-metronorth-committee",
+      "reason": "Semantically strong committee duplicate, but the alias id is already a current merge target, so it fails the alias_not_merge_target_trap guard."
+    },
+    {
+      "candidate": "entity_meeting-doc-105931-craig-cipriano -> entity_craig-cipriano-dec2021",
+      "reason": "Semantically strong person duplicate, but the alias id is already a current merge target, so it fails the alias_not_merge_target_trap guard."
+    },
+    {
+      "candidate": "entity_jai-patel-201601 -> entity_jai-patel-deputy-cfo-mta-138446",
+      "reason": "Semantically strong person duplicate, but the alias id is already a current merge target, so it fails the alias_not_merge_target_trap guard."
+    },
+    {
+      "candidate": "entity_meeting-doc-98256-cdot -> entity_cdot-meeting-doc-104741",
+      "reason": "Carried forward from identity186 deferred traps; excluded from batch187 by request."
+    },
+    {
+      "candidate": "Community Board same-number rows across boroughs",
+      "reason": "Carried forward from identity186 deferred traps; broad Community Board keys remain unsafe unless a pair has explicit same-borough support."
+    },
+    {
+      "candidate": "generic department, finance, operations, and committee-member rows",
+      "reason": "Deferred because several current duplicate keys are caused by broad or role-like payload fields rather than durable same-entity identity."
+    }
+  ],
+  "blockers": [],
+  "exclusions_and_guards": {
+    "input_files_read": [
+      "data/review_notes/codex-identity-batch186-prep.json",
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json",
+      "data/canonical/entities.jsonl",
+      "data/canonical.db",
+      "raw/sources/*/blocks.jsonl",
+      "packages/pipeline/src/validate.ts",
+      "packages/db/src/identity.ts"
+    ],
+    "proposal_guards": [
+      "Alias and target must both be present in current canonical entity records.",
+      "Alias must not already be present as an override alias.",
+      "Target must not itself be a current override alias.",
+      "Alias must not be a current merge target, avoiding alias-target chains.",
+      "Alias and target must differ.",
+      "Pair must not appear in current do-not-merge guardrails.",
+      "Alias and target must not be used in identity186 proposed aliases or identity186 deferred trap ids.",
+      "Override kind must be entity."
+    ],
+    "commands_run_for_this_prep": [
+      "rg read-only inspection of review notes, package helpers, source blocks, and repo paths",
+      "jq read-only inspection of data/review_notes/codex-identity-batch186-prep.json",
+      "jq read-only inspection of data/identity-overrides/merges.json and data/identity-overrides/do-not-merge.json",
+      "bun --eval read-only validateRepo() extraction of duplicate_global_identity entity rows",
+      "bun --eval readCanonicalRecords() plus local guard checks over merges.json, do-not-merge.json, identity186 ids, and candidate evidence refs",
+      "date -u for artifact timestamp"
+    ],
+    "commands_not_run": [
+      "provider-backed commands",
+      "materialize",
+      "validate CLI",
+      "export-jsonl",
+      "canonicalize",
+      "canonicalize-wave",
+      "canonicalize-review",
+      "campaign dedup",
+      "identity-review",
+      "write",
+      "ask",
+      "schema",
+      "ontology-normalize"
+    ],
+    "preexisting_dirty_paths_observed_but_not_touched": [
+      "LOG.md",
+      "data/canonical.db",
+      "data/canonical/*.jsonl",
+      "data/identity-overrides/do-not-merge.json",
+      "data/identity-overrides/merges.json"
+    ]
+  }
+}

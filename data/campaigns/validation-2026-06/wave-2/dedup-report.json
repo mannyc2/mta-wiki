@@ -1,0 +1,33 @@
+{
+  "campaign_id": "validation-2026-06",
+  "wave": 2,
+  "generated_at": "2026-06-10T22:15:02.512Z",
+  "profile": "pioneer-deepseek-pro",
+  "dry_run": true,
+  "clusters": 16,
+  "review_run": {
+    "completed": 0,
+    "skipped": 0,
+    "failed": 0
+  },
+  "auto_accept": {
+    "written_decisions": 0,
+    "written_quarantines": 0,
+    "statuses": {
+      "no_suggestion": 16
+    },
+    "quarantined_clusters": []
+  },
+  "apply": {
+    "alias_additions": 0,
+    "do_not_merge_additions": 6,
+    "conflicts": 0,
+    "validation_issues": 0
+  },
+  "validate": {
+    "issues_before": 0,
+    "dups_before": 0,
+    "issues_after": 0,
+    "dups_after": 0
+  }
+}

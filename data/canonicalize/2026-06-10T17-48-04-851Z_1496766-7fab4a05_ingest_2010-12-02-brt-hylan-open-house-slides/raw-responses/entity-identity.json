@@ -1,0 +1,125 @@
+{
+  "run_id": "2026-06-10T17-48-04-851Z_1496766-7fab4a05_ingest_2010-12-02-brt-hylan-open-house-slides",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-10T19:51:33.201Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "entity-mta-nyct-hylan-2010-new",
+        "local_observation_id": "entity_mta_nyct_hylan_2010",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_mta-nyct already matches an existing registry record — MTA New York City Transit. The observation resolves to its own canonical record; no different target applies.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_12_02_brt_hylan_open_house_slides",
+            "block_id": "p001_c0001",
+            "source_quote": "MTA New York City Transit"
+          },
+          {
+            "source_id": "2010_12_02_brt_hylan_open_house_slides",
+            "block_id": "p002_c0001",
+            "source_quote": "New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-nyc-dot-hylan-2010-new",
+        "local_observation_id": "entity_nyc_dot_hylan_2010",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_nyc-dot already matches the existing NYC DOT registry record. No different canonical target applies.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_12_02_brt_hylan_open_house_slides",
+            "block_id": "p001_c0002",
+            "source_quote": "NEW YORK CITY DOT"
+          },
+          {
+            "source_id": "2010_12_02_brt_hylan_open_house_slides",
+            "block_id": "p006_c0003",
+            "source_quote": "NEW YORK CITY DOT"
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-hylan-cac-new",
+        "local_observation_id": "entity_hylan_cac",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_hylan-cac already matches the existing Community Advisory Committee registry record for the Hylan Boulevard study. No different canonical target applies.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_12_02_brt_hylan_open_house_slides",
+            "block_id": "p003_c0004",
+            "source_quote": "Composed of:"
+          },
+          {
+            "source_id": "2010_12_02_brt_hylan_open_house_slides",
+            "block_id": "p003_c0007",
+            "source_quote": "■ To provide input as project design and implementation progresses ■ To provide stakeholders with information to share with other constituents about project details and outreach efforts ■ To ensure that key issues are addressed in a timely manner"
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-robert-marino-nyct-new",
+        "local_observation_id": "entity_robert_marino_nyct",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_robert-marino-nyct already matches the existing Robert Marino registry record. No different canonical target applies.",
+        "proposed_relations": [
+          {
+            "relation_kind": "works_for",
+            "subject_id": "entity_robert-marino-nyct",
+            "object_id": "entity_mta-nyct",
+            "description": "Robert Marino is an NYCT Project Outreach Contact for the Hylan Boulevard Transportation Improvement Study, with an @nyct.com email address.",
+            "evidence_refs": [
+              {
+                "source_id": "2010_12_02_brt_hylan_open_house_slides",
+                "block_id": "p017_c0004",
+                "source_quote": "■ NYCT Project Outreach Contacts ■ Robert Marino ■ Phone: 646-252-2659 ■ Email: Robert.Marino@nyct.com ■ Melissa Farley ■ Phone: 646-252-2655 ■ Email: Melissa.farley@nyct.com"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2010_12_02_brt_hylan_open_house_slides",
+            "block_id": "p017_c0004",
+            "source_quote": "■ NYCT Project Outreach Contacts ■ Robert Marino ■ Phone: 646-252-2659 ■ Email: Robert.Marino@nyct.com"
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-melissa-farley-nyct-new",
+        "local_observation_id": "entity_melissa_farley_nyct",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_melissa-farley-nyct already matches the existing Melissa Farley registry record. No different canonical target applies.",
+        "proposed_relations": [
+          {
+            "relation_kind": "works_for",
+            "subject_id": "entity_melissa-farley-nyct",
+            "object_id": "entity_mta-nyct",
+            "description": "Melissa Farley is an NYCT Project Outreach Contact for the Hylan Boulevard Transportation Improvement Study, with an @nyct.com email address.",
+            "evidence_refs": [
+              {
+                "source_id": "2010_12_02_brt_hylan_open_house_slides",
+                "block_id": "p017_c0004",
+                "source_quote": "■ NYCT Project Outreach Contacts ■ Robert Marino ■ Phone: 646-252-2659 ■ Email: Robert.Marino@nyct.com ■ Melissa Farley ■ Phone: 646-252-2655 ■ Email: Melissa.farley@nyct.com"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2010_12_02_brt_hylan_open_house_slides",
+            "block_id": "p017_c0004",
+            "source_quote": "■ NYCT Project Outreach Contacts ■ Melissa Farley ■ Phone: 646-252-2655 ■ Email: Melissa.farley@nyct.com"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-48-37-114Z_1665696-2b51faf3_canonicalize_2026-06-10t17-48-04-851z-1496766-7fab4a05-ingest-2010-12-02-brt-hylan-open-house-slides-entity-identity"
+}

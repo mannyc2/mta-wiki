@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T17-48-04-740Z_1496766-9541d47b_ingest_2010-04-29-brt-1st2nd-cac4",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-10T19:39:10.362Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "corridor-first-second-ave-brt-already-canonical",
+        "local_observation_id": "corridor_first_second_ave_brt_2010",
+        "decision": "new",
+        "rationale": "The observation's base_record_id corridor_first-second-avenues-brt already represents the same real-world entity: First & Second Avenues from South Ferry to 125th Street in Manhattan. The source 2010_04_29_brt_1st2nd_cac4 is already registered under that record. Per rules, matching your own base_record_id is a 'new' decision — the observation already resolves to its canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p005_c0010",
+            "source_quote": "First Avenue/Second Avenue Corridor"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-38-29-011Z_1647891-d0290268_canonicalize_2026-06-10t17-48-04-740z-1496766-9541d47b-ingest-2010-04-29-brt-1st2nd-cac4-corridor-identity"
+}

@@ -1,0 +1,54 @@
+{
+  "run_id": "2026-06-10T23-10-24-333Z_1976810-1a314ef0_ingest_2013-03-13-sbs-125th-cb10",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T03:30:11.507Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "entity_nyc_dot_2013_03_13",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot resolves to existing registry record entity_nyc-dot (New York City Department of Transportation, agency). Same entity_name and entity_type. No different target needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_13_sbs_125th_cb10",
+            "block_id": "p001_c0004",
+            "source_quote": "NEW YORK CITY DOT / New York City Department of Transportation (NYC DOT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2",
+        "local_observation_id": "entity_mta_nyct_2013_03_13",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-nyct resolves to existing registry record entity_mta-nyct (MTA New York City Transit, agency). Same entity_name and compatible entity_type. No different target needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_13_sbs_125th_cb10",
+            "block_id": "p001_c0005",
+            "source_quote": "New York City Transit / MTA / Metropolitan Transportation Authority"
+          }
+        ]
+      },
+      {
+        "decision_id": "d3",
+        "local_observation_id": "entity_manhattan_community_board_10",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_community-board-10-manhattan resolves to existing registry record entity_community-board-10-manhattan (Manhattan Community Board 10, community board). Same entity_name and entity_type. No different target needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_13_sbs_125th_cb10",
+            "block_id": "p001_c0002",
+            "source_quote": "Manhattan Community Board 10 Transportation Committee"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-29-07-361Z_2111393-67ffc765_canonicalize_2026-06-10t23-10-24-333z-1976810-1a314ef0-ingest-2013-03-13-sbs-125th-cb10-entity-identity"
+}

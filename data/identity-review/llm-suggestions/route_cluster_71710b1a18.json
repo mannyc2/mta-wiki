@@ -1,0 +1,49 @@
+{
+  "review_run_id": "2026-06-23T14-38-47-609Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:39:09.838Z",
+  "packet_path": "data/identity-review/packets/route_cluster_71710b1a18.md",
+  "cluster_id": "route_cluster_71710b1a18",
+  "kind": "route",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "route_cluster_71710b1a18",
+    "kind": "route",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "route_b3-2015-sbk-corridor",
+          "route_b3-draft-plan"
+        ],
+        "reason": "Route service variant mismatch: route_b3-2015-sbk-corridor has no determinable variant (unknown), while route_b3-draft-plan is explicitly a Local variant. Per merge canon for routes, different variants never merge with each other or with a variant-unspecified base record by key alone (contradiction test: route service variant differs)."
+      }
+    ],
+    "weak_aliases": [],
+    "missing_fields": [
+      {
+        "record_id": "route_b3-2015-sbk-corridor",
+        "fields": [
+          "variant",
+          "borough",
+          "limits"
+        ]
+      },
+      {
+        "record_id": "route_b3-draft-plan",
+        "fields": [
+          "variant"
+        ]
+      }
+    ],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "Both records share base route B3 but have conflicting or missing variant specification. The negative signal 'variant mismatch or missing variant: unknown vs local' directly triggers the route variant rule: records with different service variants (or unknown vs known) are distinct and must not be merged."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-38-55-367Z_1287237-fc82b7e4_identity-review-run_route-cluster-71710b1a18",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-38-55-367Z_2026-06-23T14-38-55-367Z_1287237-fc82b7e4_identity-review-run_route-cluster-71710b1a18.jsonl"
+}

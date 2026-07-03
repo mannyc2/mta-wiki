@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-06-10T17-48-04-377Z_1496766-74d645bd_ingest_120418-brt-cb4-34th-street",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-10T19:16:49.596Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "project_34th_st_sbs_2012",
+        "decision": "new",
+        "rationale": "The observation's base_record_id (project_34th-st-sbs-2012) already matches an existing registry record with the same record_id, same project_name ('34th Street Select Bus Service'), same project_type ('Select Bus Service'), same borough (Manhattan), same description, and shared source_id (120418_brt_cb4_34th_street). The observation confirms this existing record; no different target is needed. Other 34th Street records in the registry represent distinct projects: a 2008 bus-priority initiative (project_34th-street-bus-priority), the later busway (project_34th-street-busway), an enhanced bus priority study (project_34th-street-enhanced-bus-priority), and a transitway concept (project_34th-street-transitway-concept).",
+        "evidence_refs": [
+          {
+            "source_id": "120418_brt_cb4_34th_street",
+            "block_id": "p001_c0001",
+            "source_quote": "34 th Street SBS Presentation to Manhattan CB 4 Transportation Committee"
+          },
+          {
+            "source_id": "120418_brt_cb4_34th_street",
+            "block_id": "p003_c0002",
+            "source_quote": "Since last fall, DOT & NYCT have ... – Implemented off-board fare collection – Completed environmental review – Released the Project Analysis Report – Initiated design work of the project"
+          },
+          {
+            "source_id": "120418_brt_cb4_34th_street",
+            "block_id": "p022_c0001",
+            "source_quote": "34 th Street SBS: Phasing"
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-543Z_1609875-185bd7d9_canonicalize_2026-06-10t17-48-04-377z-1496766-74d645bd-ingest-120418-brt-cb4-34th-street-project-identity"
+}

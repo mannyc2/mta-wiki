@@ -1,0 +1,911 @@
+{
+  "run_id": "2026-06-10T22-59-53-483Z_1976810-7e48c798_ingest_201110-qbb-approach-summary",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T02:06:35.258Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "rel-qbb-daily-bus-trips",
+        "local_observation_id": "metric_qbb_daily_bus_trips",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_qbb-daily-bus-trips",
+            "description": "QBB daily bus trips metric",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p004_c0003",
+                "source_quote": "The Queensboro Bridge (QBB) is a major bus corridor – 16,000 bus trips a day, including about 8,000 local riders – 110 buses during PM rush hour or one bus every 30 seconds"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p004_c0003 explicitly names Queensboro Bridge (QBB) and states 16,000 bus trips a day.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p004_c0003",
+            "source_quote": "The Queensboro Bridge (QBB) is a major bus corridor – 16,000 bus trips a day, including about 8,000 local riders – 110 buses during PM rush hour or one bus every 30 seconds"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-qbb-daily-local-riders",
+        "local_observation_id": "metric_qbb_daily_local_riders",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_qbb-daily-local-riders",
+            "description": "QBB daily local riders metric",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p004_c0003",
+                "source_quote": "The Queensboro Bridge (QBB) is a major bus corridor – 16,000 bus trips a day, including about 8,000 local riders – 110 buses during PM rush hour or one bus every 30 seconds"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p004_c0003 names Queensboro Bridge and states about 8,000 local riders.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p004_c0003",
+            "source_quote": "The Queensboro Bridge (QBB) is a major bus corridor – 16,000 bus trips a day, including about 8,000 local riders – 110 buses during PM rush hour or one bus every 30 seconds"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-qbb-pm-rush-buses",
+        "local_observation_id": "metric_qbb_pm_rush_buses",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_qbb-pm-rush-buses",
+            "description": "QBB PM rush hour bus volume metric",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p004_c0003",
+                "source_quote": "The Queensboro Bridge (QBB) is a major bus corridor – 16,000 bus trips a day, including about 8,000 local riders – 110 buses during PM rush hour or one bus every 30 seconds"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p004_c0003 names Queensboro Bridge and states 110 buses during PM rush hour.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p004_c0003",
+            "source_quote": "The Queensboro Bridge (QBB) is a major bus corridor – 16,000 bus trips a day, including about 8,000 local riders – 110 buses during PM rush hour or one bus every 30 seconds"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-q60-total-daily-ridership",
+        "local_observation_id": "metric_q60_total_daily_ridership",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_q60-ace",
+            "object_id": "metric_q60-total-daily-ridership",
+            "description": "Q60 total daily ridership metric",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p007_c0002",
+                "source_quote": "Average Weekday Route Daily Q60 (Eastbound) 1,430 Q60 (Westbound)* 1,280 Q60 (Total) 2,710 Q101 (Eastbound) 450 Q101 (Westbound)* 400 Q101 (Total) 850 Q32 (Eastbound) 2,290 Q32 (Westbound) 2,050 Q32 (Total) 4,340 Total 7,900"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p007_c0002 explicitly names the Q60 route and its total daily ridership of 2,710.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p007_c0002",
+            "source_quote": "Average Weekday Route Daily Q60 (Eastbound) 1,430 Q60 (Westbound)* 1,280 Q60 (Total) 2,710 Q101 (Eastbound) 450 Q101 (Westbound)* 400 Q101 (Total) 850 Q32 (Eastbound) 2,290 Q32 (Westbound) 2,050 Q32 (Total) 4,340 Total 7,900"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-q101-total-daily-ridership",
+        "local_observation_id": "metric_q101_total_daily_ridership",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_q101-201110-qbb",
+            "object_id": "metric_q101-total-daily-ridership",
+            "description": "Q101 total daily ridership metric",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p007_c0002",
+                "source_quote": "Average Weekday Route Daily Q60 (Eastbound) 1,430 Q60 (Westbound)* 1,280 Q60 (Total) 2,710 Q101 (Eastbound) 450 Q101 (Westbound)* 400 Q101 (Total) 850 Q32 (Eastbound) 2,290 Q32 (Westbound) 2,050 Q32 (Total) 4,340 Total 7,900"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p007_c0002 explicitly names the Q101 route and its total daily ridership of 850.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p007_c0002",
+            "source_quote": "Average Weekday Route Daily Q60 (Eastbound) 1,430 Q60 (Westbound)* 1,280 Q60 (Total) 2,710 Q101 (Eastbound) 450 Q101 (Westbound)* 400 Q101 (Total) 850 Q32 (Eastbound) 2,290 Q32 (Westbound) 2,050 Q32 (Total) 4,340 Total 7,900"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-q32-total-daily-ridership",
+        "local_observation_id": "metric_q32_total_daily_ridership",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_q32-201110-qbb",
+            "object_id": "metric_q32-total-daily-ridership",
+            "description": "Q32 total daily ridership metric",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p007_c0002",
+                "source_quote": "Average Weekday Route Daily Q60 (Eastbound) 1,430 Q60 (Westbound)* 1,280 Q60 (Total) 2,710 Q101 (Eastbound) 450 Q101 (Westbound)* 400 Q101 (Total) 850 Q32 (Eastbound) 2,290 Q32 (Westbound) 2,050 Q32 (Total) 4,340 Total 7,900"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p007_c0002 explicitly names the Q32 route and its total daily ridership of 4,340.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p007_c0002",
+            "source_quote": "Average Weekday Route Daily Q60 (Eastbound) 1,430 Q60 (Westbound)* 1,280 Q60 (Total) 2,710 Q101 (Eastbound) 450 Q101 (Westbound)* 400 Q101 (Total) 850 Q32 (Eastbound) 2,290 Q32 (Westbound) 2,050 Q32 (Total) 4,340 Total 7,900"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-local-bus-total-daily",
+        "local_observation_id": "metric_local_bus_total_daily_ridership",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_local-bus-total-daily-ridership",
+            "description": "QBB local bus total daily ridership metric",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p007_c0002",
+                "source_quote": "Average Weekday Route Daily Q60 (Eastbound) 1,430 Q60 (Westbound)* 1,280 Q60 (Total) 2,710 Q101 (Eastbound) 450 Q101 (Westbound)* 400 Q101 (Total) 850 Q32 (Eastbound) 2,290 Q32 (Westbound) 2,050 Q32 (Total) 4,340 Total 7,900"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p007_c0002 appears on page headed 'Queensboro Bridge Bus Priority Study Local Bus Routes' and shows total 7,900 local bus riders on QBB.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p007_c0002",
+            "source_quote": "Average Weekday Route Daily Q60 (Eastbound) 1,430 Q60 (Westbound)* 1,280 Q60 (Total) 2,710 Q101 (Eastbound) 450 Q101 (Westbound)* 400 Q101 (Total) 850 Q32 (Eastbound) 2,290 Q32 (Westbound) 2,050 Q32 (Total) 4,340 Total 7,900"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-express-bus-total-daily",
+        "local_observation_id": "metric_express_bus_total_daily_ridership",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_express-bus-total-daily-ridership",
+            "description": "QBB express bus total daily ridership metric",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p008_c0003",
+                "source_quote": "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p008_c0003 appears on page headed 'Queensboro Bridge Bus Priority Study Express Bus Routes' and shows total 7,920 express bus riders on QBB.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p008_c0003",
+            "source_quote": "Route Daily QM1 750 QM1A 2,020 QM2 1,160 QM2A 720 QM3 90 QM4 350 QM10 130 QM12 220 QM15 430 QM16 140 QM17 200 QM18 110 QM21 340 QM24 150 X51* 180 X63* 380 X64* 220 X68* 330 Total 7,920"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-pm-express-tt-4to5-seg1",
+        "local_observation_id": "metric_pm_express_travel_time_4to5_seg1",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_pm-express-travel-time-4to5-seg1",
+            "description": "QBB PM express travel time 4-5pm Segment 1",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p011_c0002",
+                "source_quote": "PM Period Average Travel Time Average Speed (mph) 4:00-5:00 0:03:40 23.9 5:00-6:00 0:04:50 18.1 6:00-7:00 0:04:12 22.0"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p011_c0002 appears on page headed 'Queensboro Bridge Bus Priority Study PM Express Bus Travel Times' — page heading names the QBB subject.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p011_c0002",
+            "source_quote": "PM Period Average Travel Time Average Speed (mph) 4:00-5:00 0:03:40 23.9 5:00-6:00 0:04:50 18.1 6:00-7:00 0:04:12 22.0"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-pm-express-tt-5to6-seg1",
+        "local_observation_id": "metric_pm_express_travel_time_5to6_seg1",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_pm-express-travel-time-5to6-seg1",
+            "description": "QBB PM express travel time 5-6pm Segment 1",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p011_c0002",
+                "source_quote": "PM Period Average Travel Time Average Speed (mph) 4:00-5:00 0:03:40 23.9 5:00-6:00 0:04:50 18.1 6:00-7:00 0:04:12 22.0"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p011_c0002 appears on page headed 'Queensboro Bridge Bus Priority Study PM Express Bus Travel Times'.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p011_c0002",
+            "source_quote": "PM Period Average Travel Time Average Speed (mph) 4:00-5:00 0:03:40 23.9 5:00-6:00 0:04:50 18.1 6:00-7:00 0:04:12 22.0"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-pm-express-tt-6to7-seg1",
+        "local_observation_id": "metric_pm_express_travel_time_6to7_seg1",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_pm-express-travel-time-6to7-seg1",
+            "description": "QBB PM express travel time 6-7pm Segment 1",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p011_c0002",
+                "source_quote": "PM Period Average Travel Time Average Speed (mph) 4:00-5:00 0:03:40 23.9 5:00-6:00 0:04:50 18.1 6:00-7:00 0:04:12 22.0"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p011_c0002 appears on page headed 'Queensboro Bridge Bus Priority Study PM Express Bus Travel Times'.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p011_c0002",
+            "source_quote": "PM Period Average Travel Time Average Speed (mph) 4:00-5:00 0:03:40 23.9 5:00-6:00 0:04:50 18.1 6:00-7:00 0:04:12 22.0"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-pm-express-tt-4to5-seg2",
+        "local_observation_id": "metric_pm_express_travel_time_4to5_seg2",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_pm-express-travel-time-4to5-seg2",
+            "description": "QBB PM express travel time 4-5pm Segment 2",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p011_c0002",
+                "source_quote": "PM Period Average Travel Time Average Speed (mph) 4:00-5:00 0:03:48 4.3 5:00-6:00 0:02:59 5.3 6:00-7:00 0:01:47 8.8"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p011_c0002 appears on page headed 'Queensboro Bridge Bus Priority Study PM Express Bus Travel Times'.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p011_c0002",
+            "source_quote": "PM Period Average Travel Time Average Speed (mph) 4:00-5:00 0:03:48 4.3 5:00-6:00 0:02:59 5.3 6:00-7:00 0:01:47 8.8"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-pm-express-tt-5to6-seg2",
+        "local_observation_id": "metric_pm_express_travel_time_5to6_seg2",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_pm-express-travel-time-5to6-seg2",
+            "description": "QBB PM express travel time 5-6pm Segment 2",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p011_c0002",
+                "source_quote": "PM Period Average Travel Time Average Speed (mph) 4:00-5:00 0:03:48 4.3 5:00-6:00 0:02:59 5.3 6:00-7:00 0:01:47 8.8"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p011_c0002 appears on page headed 'Queensboro Bridge Bus Priority Study PM Express Bus Travel Times'.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p011_c0002",
+            "source_quote": "PM Period Average Travel Time Average Speed (mph) 4:00-5:00 0:03:48 4.3 5:00-6:00 0:02:59 5.3 6:00-7:00 0:01:47 8.8"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-pm-express-tt-6to7-seg2",
+        "local_observation_id": "metric_pm_express_travel_time_6to7_seg2",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_pm-express-travel-time-6to7-seg2",
+            "description": "QBB PM express travel time 6-7pm Segment 2",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p011_c0002",
+                "source_quote": "PM Period Average Travel Time Average Speed (mph) 4:00-5:00 0:03:48 4.3 5:00-6:00 0:02:59 5.3 6:00-7:00 0:01:47 8.8"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p011_c0002 appears on page headed 'Queensboro Bridge Bus Priority Study PM Express Bus Travel Times'.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p011_c0002",
+            "source_quote": "PM Period Average Travel Time Average Speed (mph) 4:00-5:00 0:03:48 4.3 5:00-6:00 0:02:59 5.3 6:00-7:00 0:01:47 8.8"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-pm-express-tt-4to5-seg3",
+        "local_observation_id": "metric_pm_express_travel_time_4to5_seg3",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_pm-express-travel-time-4to5-seg3",
+            "description": "QBB PM express travel time 4-5pm Segment 3",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p011_c0002",
+                "source_quote": "PM Period Average Travel Time Average Speed (mph) 4:00-5:00 0:07:29 15.0 5:00-6:00 0:09:19 12.2 6:00-7:00 0:05:49 21.2"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p011_c0002 appears on page headed 'Queensboro Bridge Bus Priority Study PM Express Bus Travel Times'.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p011_c0002",
+            "source_quote": "PM Period Average Travel Time Average Speed (mph) 4:00-5:00 0:07:29 15.0 5:00-6:00 0:09:19 12.2 6:00-7:00 0:05:49 21.2"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-pm-express-tt-5to6-seg3",
+        "local_observation_id": "metric_pm_express_travel_time_5to6_seg3",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_pm-express-travel-time-5to6-seg3",
+            "description": "QBB PM express travel time 5-6pm Segment 3",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p011_c0002",
+                "source_quote": "PM Period Average Travel Time Average Speed (mph) 4:00-5:00 0:07:29 15.0 5:00-6:00 0:09:19 12.2 6:00-7:00 0:05:49 21.2"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p011_c0002 appears on page headed 'Queensboro Bridge Bus Priority Study PM Express Bus Travel Times'.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p011_c0002",
+            "source_quote": "PM Period Average Travel Time Average Speed (mph) 4:00-5:00 0:07:29 15.0 5:00-6:00 0:09:19 12.2 6:00-7:00 0:05:49 21.2"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-pm-express-tt-6to7-seg3",
+        "local_observation_id": "metric_pm_express_travel_time_6to7_seg3",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_pm-express-travel-time-6to7-seg3",
+            "description": "QBB PM express travel time 6-7pm Segment 3",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p011_c0002",
+                "source_quote": "PM Period Average Travel Time Average Speed (mph) 4:00-5:00 0:07:29 15.0 5:00-6:00 0:09:19 12.2 6:00-7:00 0:05:49 21.2"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p011_c0002 appears on page headed 'Queensboro Bridge Bus Priority Study PM Express Bus Travel Times'.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p011_c0002",
+            "source_quote": "PM Period Average Travel Time Average Speed (mph) 4:00-5:00 0:07:29 15.0 5:00-6:00 0:09:19 12.2 6:00-7:00 0:05:49 21.2"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-local-rider-survey-respondents",
+        "local_observation_id": "metric_local_rider_survey_respondents",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_local-rider-survey-respondents",
+            "description": "QBB local bus rider survey respondent count",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p012_c0004",
+                "source_quote": "Total respondents 313 511"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p012_c0004 appears on page headed 'Queensboro Bridge Bus Priority Study Bus Rider Survey Findings' — page heading names the QBB subject.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p012_c0004",
+            "source_quote": "Total respondents 313 511"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-express-rider-survey-respondents",
+        "local_observation_id": "metric_express_rider_survey_respondents",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_express-rider-survey-respondents",
+            "description": "QBB express bus rider survey respondent count",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p012_c0004",
+                "source_quote": "Total respondents 313 511"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p012_c0004 appears on page headed 'Queensboro Bridge Bus Priority Study Bus Rider Survey Findings'.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p012_c0004",
+            "source_quote": "Total respondents 313 511"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-local-rider-work-trip-pct",
+        "local_observation_id": "metric_local_rider_work_trip_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_local-rider-work-trip-pct",
+            "description": "QBB local rider work trip percentage",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p012_c0004",
+                "source_quote": "Travelling to or from work 75% 88%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p012_c0004 appears on page headed 'Queensboro Bridge Bus Priority Study Bus Rider Survey Findings'.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p012_c0004",
+            "source_quote": "Travelling to or from work 75% 88%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-express-rider-work-trip-pct",
+        "local_observation_id": "metric_express_rider_work_trip_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_express-rider-work-trip-pct",
+            "description": "QBB express rider work trip percentage",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p012_c0004",
+                "source_quote": "Travelling to or from work 75% 88%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p012_c0004 appears on page headed 'Queensboro Bridge Bus Priority Study Bus Rider Survey Findings'.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p012_c0004",
+            "source_quote": "Travelling to or from work 75% 88%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-local-rider-daily-bus-pct",
+        "local_observation_id": "metric_local_rider_daily_bus_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_local-rider-daily-bus-pct",
+            "description": "QBB local rider daily bus usage percentage",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p012_c0004",
+                "source_quote": "Ride the bus daily 68% 81%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p012_c0004 appears on page headed 'Queensboro Bridge Bus Priority Study Bus Rider Survey Findings'.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p012_c0004",
+            "source_quote": "Ride the bus daily 68% 81%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-express-rider-daily-bus-pct",
+        "local_observation_id": "metric_express_rider_daily_bus_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_express-rider-daily-bus-pct",
+            "description": "QBB express rider daily bus usage percentage",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p012_c0004",
+                "source_quote": "Ride the bus daily 68% 81%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p012_c0004 appears on page headed 'Queensboro Bridge Bus Priority Study Bus Rider Survey Findings'.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p012_c0004",
+            "source_quote": "Ride the bus daily 68% 81%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-local-rider-subway-alt-pct",
+        "local_observation_id": "metric_local_rider_subway_alternative_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_local-rider-subway-alternative-pct",
+            "description": "QBB local rider subway alternative percentage",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p012_c0004",
+                "source_quote": "Sometimes use another means of transportation 68%: subway Reason: \"faster\" or \"more convenient\""
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p012_c0004 appears on page headed 'Queensboro Bridge Bus Priority Study Bus Rider Survey Findings'.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p012_c0004",
+            "source_quote": "Sometimes use another means of transportation 68%: subway Reason: \"faster\" or \"more convenient\""
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-express-rider-subway-alt-pct",
+        "local_observation_id": "metric_express_rider_subway_alternative_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "metric_express-rider-subway-alternative-pct",
+            "description": "QBB express rider subway alternative percentage",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p012_c0004",
+                "source_quote": "52%: subway Reason: destination, time of day, or \"faster\""
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p012_c0004 appears on page headed 'Queensboro Bridge Bus Priority Study Bus Rider Survey Findings'.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p012_c0004",
+            "source_quote": "52%: subway Reason: destination, time of day, or \"faster\""
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-local-congestion",
+        "local_observation_id": "claim_local_rider_survey_traffic_congestion",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "claim_local-rider-survey-traffic-congestion",
+            "description": "Claim: 76% local riders perceive traffic congestion on QBB",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p012_c0004",
+                "source_quote": "Perceive traffic congestion on their bus 76%: sometimes, often or always Locations: Queensboro Bridge and Queens Plaza"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p012_c0004 explicitly names Queensboro Bridge as the location of perceived traffic congestion.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p012_c0004",
+            "source_quote": "Perceive traffic congestion on their bus 76%: sometimes, often or always Locations: Queensboro Bridge and Queens Plaza"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-express-congestion",
+        "local_observation_id": "claim_express_rider_survey_traffic_congestion",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "claim_express-rider-survey-traffic-congestion",
+            "description": "Claim: 80% express riders perceive traffic congestion on QBB",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p012_c0004",
+                "source_quote": "80% (PM): sometimes, often or always; Locations: LIE, Queensboro Bridge, and Queens Boulevard"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p012_c0004 explicitly names Queensboro Bridge as a location of perceived traffic congestion.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p012_c0004",
+            "source_quote": "80% (PM): sometimes, often or always; Locations: LIE, Queensboro Bridge, and Queens Boulevard"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-over75-pct-delay",
+        "local_observation_id": "claim_over75_percent_riders_report_delay",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "claim_over75-percent-riders-report-delay",
+            "description": "Claim: Over 75% of QBB riders report congestion delay",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p004_c0003",
+                "source_quote": "Over 75% of QBB express and local bus riders report that traffic congestion regularly delays their bus"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p004_c0003 explicitly names QBB and states over 75% of riders report congestion delay.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p004_c0003",
+            "source_quote": "Over 75% of QBB express and local bus riders report that traffic congestion regularly delays their bus"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-local-delay-5to15",
+        "local_observation_id": "claim_local_rider_survey_delay_5to15min",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "claim_local-rider-survey-delay-5to15min",
+            "description": "Claim: 58% of local riders say 5-15 min delay on QBB",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p012_c0004",
+                "source_quote": "Of those who perceive delay on the bridge, 58% said 5-15 minutes"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p012_c0004 appears on page headed 'Queensboro Bridge Bus Priority Study Bus Rider Survey Findings' and refers to 'delay on the bridge' — the QBB.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p012_c0004",
+            "source_quote": "Of those who perceive delay on the bridge, 58% said 5-15 minutes"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-express-delay-5to15",
+        "local_observation_id": "claim_express_rider_survey_delay_5to15min",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "claim_express-rider-survey-delay-5to15min",
+            "description": "Claim: 62% of express riders say 5-15 min delay on QBB",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p012_c0004",
+                "source_quote": "Of those who perceive delay on the bridge, 62% said 5-15 minutes"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p012_c0004 appears on page headed 'Queensboro Bridge Bus Priority Study' and refers to 'delay on the bridge' — the QBB.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p012_c0004",
+            "source_quote": "Of those who perceive delay on the bridge, 62% said 5-15 minutes"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-local-improvements",
+        "local_observation_id": "claim_local_rider_survey_improvements",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "claim_local-rider-survey-improvements",
+            "description": "Claim: Local riders suggest 'Bus lanes' and 'More buses'",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p012_c0004",
+                "source_quote": "Suggested improvements for trip speed \"Bus lanes\" and \"More buses\""
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p012_c0004 appears on page headed 'Queensboro Bridge Bus Priority Study Bus Rider Survey Findings'.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p012_c0004",
+            "source_quote": "Suggested improvements for trip speed \"Bus lanes\" and \"More buses\""
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-express-improvements",
+        "local_observation_id": "claim_express_rider_survey_improvements",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_queensboro-bridge-201110",
+            "object_id": "claim_express-rider-survey-improvements",
+            "description": "Claim: Express riders suggest bus lanes, enforcement, routing improvements",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p012_c0004",
+                "source_quote": "\"Bus lanes,\" \"Enforcement of bus lanes,\" and routing suggestions"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p012_c0004 appears on page headed 'Queensboro Bridge Bus Priority Study Bus Rider Survey Findings'.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p012_c0004",
+            "source_quote": "\"Bus lanes,\" \"Enforcement of bus lanes,\" and routing suggestions"
+          }
+        ]
+      }
+    ],
+    "packet_id": "relation-linker"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-02-00-995Z_2111393-55a4a3ba_canonicalize_2026-06-10t22-59-53-483z-1976810-7e48c798-ingest-201110-qbb-approach-summary-relation-linker"
+}

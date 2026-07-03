@@ -1,0 +1,227 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "project_cluster_69825470e4",
+  "kind": "project",
+  "packet_path": "data/identity-review/packets/project_cluster_69825470e4.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/project_cluster_69825470e4.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 28,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "project_brewster-yard-union-depot-reorganization-meeting-doc-171486",
+        "project_climate-resilience-hudson-line-design-stabilization-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_brewster-yard-union-depot-reorganization-meeting-doc-171486",
+        "project_climate-resilience-hudson-line-road-protections-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_brewster-yard-union-depot-reorganization-meeting-doc-171486",
+        "project_grand-central-artery-improvements-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_brewster-yard-union-depot-reorganization-meeting-doc-171486",
+        "project_grand-central-terminal-improvements-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_brewster-yard-union-depot-reorganization-meeting-doc-171486",
+        "project_infrastructure-refurb-hudson-line-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_brewster-yard-union-depot-reorganization-meeting-doc-171486",
+        "project_mott-haven-yard-fueling-improvements-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_brewster-yard-union-depot-reorganization-meeting-doc-171486",
+        "project_signal-renewal-hudson-line-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_climate-resilience-hudson-line-design-stabilization-meeting-doc-171486",
+        "project_climate-resilience-hudson-line-road-protections-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_climate-resilience-hudson-line-design-stabilization-meeting-doc-171486",
+        "project_grand-central-artery-improvements-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_climate-resilience-hudson-line-design-stabilization-meeting-doc-171486",
+        "project_grand-central-terminal-improvements-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_climate-resilience-hudson-line-design-stabilization-meeting-doc-171486",
+        "project_infrastructure-refurb-hudson-line-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_climate-resilience-hudson-line-design-stabilization-meeting-doc-171486",
+        "project_mott-haven-yard-fueling-improvements-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_climate-resilience-hudson-line-design-stabilization-meeting-doc-171486",
+        "project_signal-renewal-hudson-line-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_climate-resilience-hudson-line-road-protections-meeting-doc-171486",
+        "project_grand-central-artery-improvements-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_climate-resilience-hudson-line-road-protections-meeting-doc-171486",
+        "project_grand-central-terminal-improvements-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_climate-resilience-hudson-line-road-protections-meeting-doc-171486",
+        "project_infrastructure-refurb-hudson-line-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_climate-resilience-hudson-line-road-protections-meeting-doc-171486",
+        "project_mott-haven-yard-fueling-improvements-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_climate-resilience-hudson-line-road-protections-meeting-doc-171486",
+        "project_signal-renewal-hudson-line-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_grand-central-artery-improvements-meeting-doc-171486",
+        "project_grand-central-terminal-improvements-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_grand-central-artery-improvements-meeting-doc-171486",
+        "project_infrastructure-refurb-hudson-line-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_grand-central-artery-improvements-meeting-doc-171486",
+        "project_mott-haven-yard-fueling-improvements-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_grand-central-artery-improvements-meeting-doc-171486",
+        "project_signal-renewal-hudson-line-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_grand-central-terminal-improvements-meeting-doc-171486",
+        "project_infrastructure-refurb-hudson-line-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_grand-central-terminal-improvements-meeting-doc-171486",
+        "project_mott-haven-yard-fueling-improvements-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_grand-central-terminal-improvements-meeting-doc-171486",
+        "project_signal-renewal-hudson-line-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_infrastructure-refurb-hudson-line-meeting-doc-171486",
+        "project_mott-haven-yard-fueling-improvements-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_infrastructure-refurb-hudson-line-meeting-doc-171486",
+        "project_signal-renewal-hudson-line-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    },
+    {
+      "record_ids": [
+        "project_mott-haven-yard-fueling-improvements-meeting-doc-171486",
+        "project_signal-renewal-hudson-line-meeting-doc-171486"
+      ],
+      "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [
+    "Program is relation context, not merge authority for projects. Only project_name + corridor/scope define identity."
+  ],
+  "rationale": "All candidate edges are based solely on shared program (MTA Metro-North Railroad), which is explicitly not merge authority per the canon (program is relation context). Each record has a distinct project_name (strong identity field), and no other identity fields are shared. Test 1 (contradiction) applies: different project_names force do_not_merge. No lifecycle records within the cluster share a base identity. All records are distinct projects from the same document listing. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

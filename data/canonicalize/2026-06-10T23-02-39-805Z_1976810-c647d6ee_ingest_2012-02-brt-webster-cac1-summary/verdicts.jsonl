@@ -1,0 +1,12 @@
+{"decision_id":"rel-claim-webster-parking-loss","verdict":"pass","evidence_checked":["2012_02_brt_webster_cac1_summary#p002_c0006"]}
+{"decision_id":"rel-claim-fordham-plaza-redevelopment","verdict":"pass","evidence_checked":["2012_02_brt_webster_cac1_summary#p002_c0006"]}
+{"decision_id":"rel-claim-sbs-time-savings","verdict":"pass","evidence_checked":["2012_02_brt_webster_cac1_summary#p002_c0006"]}
+{"decision_id":"rel-claim-offset-bus-lane","verdict":"pass","evidence_checked":["2012_02_brt_webster_cac1_summary#p002_c0006"]}
+{"decision_id":"rel-claim-webster-congestion","verdict":"pass","evidence_checked":["2012_02_brt_webster_cac1_summary#p003_c0008"]}
+{"decision_id":"rel-claim-bx41-cut","verdict":"pass","evidence_checked":["2012_02_brt_webster_cac1_summary#p003_c0003"]}
+{"decision_id":"rel-claim-webster-wide-enough","verdict":"pass","evidence_checked":["2012_02_brt_webster_cac1_summary#p003_c0003"]}
+{"decision_id":"rel-claim-gun-hill-pedestrian","verdict":"pass","evidence_checked":["2012_02_brt_webster_cac1_summary#p003_c0005"]}
+{"decision_id":"rel-claim-new-school-205th","verdict":"pass","evidence_checked":["2012_02_brt_webster_cac1_summary#p003_c0005"]}
+{"decision_id":"rel-claim-unified-fare","verdict":"fail","failure_reason":"The cited block text confirms the claim was made ('A unified fare collection for all modes of transportation was suggested, including commuter rail'), but provides no evidence that this claim is specifically about the Webster Avenue SBS project (project_12-webster-ave). The claim is a broad policy suggestion about all modes of transportation, not about Webster Avenue or SBS on Webster Avenue specifically. The relation to project_12-webster-ave is based solely on co-occurrence at the meeting, which the rules state is insufficient: 'co-occurrence in a document is not a relation.'","evidence_checked":["2012_02_brt_webster_cac1_summary#p004_c0003"]}
+{"decision_id":"rel-claim-joint-verification","verdict":"pass","evidence_checked":["2012_02_brt_webster_cac1_summary#p004_c0005"]}
+{"decision_id":"rel-event-cac1-meeting","verdict":"pass","evidence_checked":["2012_02_brt_webster_cac1_summary#p001_c0006","2012_02_brt_webster_cac1_summary#p001_c0004"]}

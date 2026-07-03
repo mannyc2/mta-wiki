@@ -1,0 +1,56 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:36:17.004Z",
+  "packet_path": "data/identity-review/packets/route_cluster_9f24976591.md",
+  "cluster_id": "route_cluster_9f24976591",
+  "kind": "route",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "route_cluster_9f24976591",
+    "kind": "route",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "route_q52-q53-sbs-proposed-2015-05",
+          "route_q52-sbs-queens"
+        ],
+        "reason": "Contradiction test (test 1): route_id differs ('Q52/Q53' vs 'Q52 SBS'). The proposed record bundles two bases; it cannot merge into a single base route record."
+      },
+      {
+        "record_ids": [
+          "route_q52-q53-sbs-proposed-2015-05",
+          "route_q53-sbs-ace"
+        ],
+        "reason": "Contradiction test (test 1): route_id differs ('Q52/Q53' vs 'Q53-SBS'). The proposed record bundles two bases; it cannot merge into a single base route record."
+      },
+      {
+        "record_ids": [
+          "route_q52-sbs-queens",
+          "route_q53-sbs-ace"
+        ],
+        "reason": "Contradiction test (test 1): route_id differs ('Q52 SBS' vs 'Q53-SBS') and base route id differs (Q52 vs Q53). Different routes with same SBS variant but distinct base identifiers."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "route_q52-q53-sbs-proposed-2015-05",
+        "aliases": [
+          "route_q52-sbs"
+        ],
+        "reason": "The alias 'route_q52-sbs' could be misinterpreted as the Q52 SBS route, but the record represents a combined Q52/Q53 proposal."
+      }
+    ],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "All three records have distinct route_id/base identifiers. The proposed record (Q52/Q53) bundles two distinct bases and cannot merge into either individual record. Q52 SBS and Q53 SBS are separate base routes with different route_ids and route_labels. No merge is possible under test 1 (contradiction) of the identity merge canon."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-35-59-695Z_1282984-43d8fd3c_identity-review-run_route-cluster-9f24976591",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-35-59-695Z_2026-06-23T14-35-59-695Z_1282984-43d8fd3c_identity-review-run_route-cluster-9f24976591.jsonl"
+}

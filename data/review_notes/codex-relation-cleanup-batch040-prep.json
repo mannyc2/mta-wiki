@@ -1,0 +1,261 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-22-endpoint-shape-batch040-prep",
+  "created_at": "2026-06-22T23:58:00Z",
+  "author": "codex",
+  "batch": "batch040",
+  "bucket": {
+    "name": "published_by entity->source",
+    "original_relation_kind": "published_by",
+    "original_endpoint_shape": "entity -> source",
+    "prepared_original_count": 1,
+    "cleanup_direction": "data cleanup only; do not widen published_by beyond source|project|entity -> entity",
+    "rationale": "The source-backed fact is publication of a document by MTA. The original relation reversed the validator-compatible shape by making the MTA entity the subject and the source document the object. A source -> entity published_by replacement preserves the fact using an already accepted source local id and same-source MTA entity local id.",
+    "durable_mechanism_plan": {
+      "retire_originals_via": "data/submission-overrides/retired.json",
+      "append_replacements_via": "data/submissions/2026-06-23_codex_relation_cleanup_batch040.jsonl",
+      "mutation_status": "not_applied_by_this_prep",
+      "only_file_written_by_this_task": "data/review_notes/codex-relation-cleanup-batch040-prep.json"
+    }
+  },
+  "checkpoint_context": {
+    "reported_checkpoint": "Current state is after identity071, relation039, and the owned_by corridor rule patch, with unexpected_relation_endpoint_shape at 33.",
+    "read_only_probe_count": 33,
+    "selected_bucket_count": 1,
+    "expected_remaining_after_applying_prepared_decisions": 32,
+    "endpoint_shape_probe": {
+      "published_by entity->source": "Relation kind published_by expects source|project|entity -> entity, got entity -> source.",
+      "published_by source->entity": "accepted by current endpoint-shape rules"
+    },
+    "owned_by_corridor_rule_context": "Current relationEndpointShapeIssue rules admit owned_by corridor -> entity; this batch does not touch owned_by rows."
+  },
+  "exclusions_and_guards": {
+    "excluded_prior_relation_batches": [
+      "batch017",
+      "batch018",
+      "batch019",
+      "batch020",
+      "batch021",
+      "batch022",
+      "batch023",
+      "batch024",
+      "batch025",
+      "batch026",
+      "batch027",
+      "batch028",
+      "batch029",
+      "batch030",
+      "batch031",
+      "batch032",
+      "batch033",
+      "batch034",
+      "batch035",
+      "batch036",
+      "batch037",
+      "batch038",
+      "batch039"
+    ],
+    "missing_target_repairs_excluded": true,
+    "guarded_files_not_edited": [
+      "data/submission-overrides/retired.json",
+      "data/submissions/*.jsonl",
+      "LOG.md",
+      "manifest files",
+      "data/canonical/*",
+      "wiki/*",
+      "data/canonical.db"
+    ],
+    "original_submission_guard": {
+      "retired_hits_for_selected_originals": [],
+      "prior_relation_batch_prepared_hits_for_selected_originals": [],
+      "selected_original_submission_id": "sub_c3e911a46d99f6c0",
+      "selected_original_record_id": "relation_mta-published-source_5"
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": [],
+      "canonical_record_collision_hits_for_new_batch040_locals": []
+    }
+  },
+  "local_validation": {
+    "clean": true,
+    "summary": {
+      "prepared_count": 1,
+      "retire_replace_count": 1,
+      "retire_only_count": 0,
+      "replacement_submission_count": 1,
+      "accepted_replacement_submission_count": 1,
+      "replacement_issue_count": 0,
+      "replacement_warning_count": 0,
+      "relation_endpoint_issue_count": 0,
+      "endpoint_shape_issue_count_after_replacement": 0,
+      "current_unexpected_relation_endpoint_shape_count": 33,
+      "known_local_ids_confirmed_for_replacement": [
+        "source_meeting_doc_92021",
+        "entity_meeting_doc_92021_mta"
+      ]
+    },
+    "tooling": "createSubmissionEntry dry-run for one corrected published_by source->entity relation replacement, with relationEndpointIssues using accepted same-source local ids and direct relationEndpointShapeIssue probe for original and replacement shapes."
+  },
+  "prepared": [
+    {
+      "action": "retire_and_replace",
+      "retire": {
+        "submission_id": "sub_c3e911a46d99f6c0",
+        "run_id": "2026-06-22T21-31-25-869Z_382829-07d4b541_ingest_meeting-doc-92021",
+        "original_record_id": "relation_mta-published-source_5",
+        "original_local_observation_id": "relation_mta_published_source",
+        "malformed_shape": "published_by entity -> source",
+        "original_relation_kind": "published_by",
+        "original_subject_id": "entity_meeting-doc-64066-mta",
+        "original_subject_kind": "entity",
+        "original_subject_local_observation_id": "entity_meeting_doc_92021_mta",
+        "original_subject_name": "Metropolitan Transportation Authority",
+        "original_object_id": "source_meeting-doc-92021",
+        "original_object_kind": "source",
+        "original_object_local_observation_id": "source_meeting_doc_92021",
+        "original_object_name": "Monthly Pulse Survey: Subways and Buses",
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_c3e911a46d99f6c0",
+          "reason": "Codex relation cleanup batch040 replaces malformed published_by entity -> source relation relation_mta-published-source_5 with validator-compatible source -> entity published_by relation preserving the Monthly Pulse Survey publisher context.",
+          "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch040",
+          "reviewed_at": "2026-06-22T23:58:00Z"
+        },
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_92021",
+            "evidence_id": "meeting_doc_92021#p001_c0002",
+            "source_path": "raw/sources/meeting_doc_92021/blocks.jsonl",
+            "page_number": 1,
+            "block_id": "p001_c0002",
+            "text_sha256": "sha256:addca123fd670124b17780e64aa2c0d1b93bfc54fb58685698f1e1a92f2cf71e",
+            "text_source": "raw_text",
+            "source_quote": "The MTA logo, consisting of the letters 'MTA' in white, bold, sans-serif font, is centered within a dark blue circle."
+          },
+          {
+            "source_id": "meeting_doc_92021",
+            "evidence_id": "meeting_doc_92021#p006_c0005",
+            "source_path": "raw/sources/meeting_doc_92021/blocks.jsonl",
+            "page_number": 6,
+            "block_id": "p006_c0005",
+            "text_sha256": "sha256:ac40c374d25a424f2eb1b10e149ab0ef2b3b7a23a29c4d34635970042852358a",
+            "text_source": "raw_text",
+            "source_quote": "The MTA logo, consisting of the letters 'MTA' in white on a dark blue circular background."
+          }
+        ],
+        "reason": "published_by already expresses document-to-publisher context. Reversing the endpoints to source -> entity preserves the source literal and matches current endpoint rules.",
+        "confidence": "high"
+      },
+      "replacement": {
+        "run_id": "2026-06-23_codex_relation_cleanup_batch040",
+        "journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch040.jsonl",
+        "replacement_entries": [
+          {
+            "role": "corrected relation replacement",
+            "deterministic_submission_id": "sub_2aea475a86d3eb39",
+            "tool_args_sha256": "sha256:2aea475a86d3eb39fdda70413780b37b5feef552489ff2ad75fc903256b1c8c6",
+            "proposed_relation_kind": "published_by",
+            "proposed_endpoint_shape": "source -> entity",
+            "tool_args": {
+              "source_id": "meeting_doc_92021",
+              "observation_kind": "relation",
+              "local_observation_id": "relation_batch040_monthly_pulse_survey_published_by_mta",
+              "label": "Monthly Pulse Survey published by MTA",
+              "raw_text": "The MTA logo appears on the document, identifying MTA as the publisher of the Monthly Pulse Survey.",
+              "payload": {
+                "relation_kind": "published_by",
+                "subject_local_observation_id": "source_meeting_doc_92021",
+                "object_local_observation_id": "entity_meeting_doc_92021_mta",
+                "description": "Replacement for malformed published_by entity -> source relation; the source document is the Monthly Pulse Survey and MTA is the publisher indicated by the document logo.",
+                "relation_family": "publication_role"
+              },
+              "evidence_refs": [
+                {
+                  "source_id": "meeting_doc_92021",
+                  "evidence_id": "meeting_doc_92021#p001_c0002",
+                  "source_path": "raw/sources/meeting_doc_92021/blocks.jsonl",
+                  "page_number": 1,
+                  "block_id": "p001_c0002",
+                  "text_sha256": "sha256:addca123fd670124b17780e64aa2c0d1b93bfc54fb58685698f1e1a92f2cf71e",
+                  "text_source": "raw_text",
+                  "source_quote": "MTA logo"
+                },
+                {
+                  "source_id": "meeting_doc_92021",
+                  "evidence_id": "meeting_doc_92021#p006_c0005",
+                  "source_path": "raw/sources/meeting_doc_92021/blocks.jsonl",
+                  "page_number": 6,
+                  "block_id": "p006_c0005",
+                  "text_sha256": "sha256:ac40c374d25a424f2eb1b10e149ab0ef2b3b7a23a29c4d34635970042852358a",
+                  "text_source": "raw_text",
+                  "source_quote": "MTA logo"
+                }
+              ]
+            },
+            "local_validation": {
+              "state": "accepted",
+              "issues": [],
+              "warnings": [],
+              "relationEndpointIssues": [],
+              "endpoint_shape_issue_after_replacement": null,
+              "known_local_observation_ids_confirmed": [
+                "source_meeting_doc_92021",
+                "entity_meeting_doc_92021_mta"
+              ]
+            }
+          }
+        ],
+        "confidence": "high"
+      }
+    }
+  ],
+  "command_evidence": [
+    {
+      "command": "bun --eval '<readCanonicalRecords plus relationEndpointShapeIssue inventory>'",
+      "output_excerpt": "unexpected_relation_endpoint_shape count is 33; selected row relation_mta-published-source_5 is published_by with entity subject and source object."
+    },
+    {
+      "command": "sed -n '200,380p' packages/pipeline/src/records/relations.ts",
+      "output_excerpt": "Current endpoint rules show published_by expects source|project|entity -> entity and owned_by expects entity|project|corridor -> entity."
+    },
+    {
+      "command": "sqlite3 -readonly data/canonical.db \"SELECT r.record_id, r.record_kind, rel.relation_kind, rel.subject_id, rs.record_kind AS subject_kind, rel.object_id, ro.record_kind AS object_kind FROM relations rel JOIN records r ON r.record_id=rel.record_id LEFT JOIN records rs ON rs.record_id=rel.subject_id LEFT JOIN records ro ON ro.record_id=rel.object_id WHERE r.record_id='relation_mta-published-source_5';\"",
+      "output": "relation_mta-published-source_5|relation|published_by|entity_meeting-doc-64066-mta|entity|source_meeting-doc-92021|source"
+    },
+    {
+      "command": "rg -n '\"block_id\":\"p001_c0002\"|\"block_id\":\"p006_c0005\"' raw/sources/meeting_doc_92021/blocks.jsonl",
+      "output_excerpt": "Confirmed p001_c0002 and p006_c0005 are MTA-logo evidence blocks for meeting_doc_92021."
+    },
+    {
+      "command": "rg -n 'sub_c3e911a46d99f6c0|relation_mta-published-source_5|source_meeting_doc_92021|entity_meeting_doc_92021_mta' data/submissions data/canonical/relations.jsonl data/canonical/sources.jsonl data/canonical/entities.jsonl data/submission-overrides/retired.json data/review_notes -S",
+      "output_excerpt": "Confirmed original accepted submission, canonical malformed relation, same-source source/entity local ids, and no selected-original hits in prior relation cleanup notes or retired overrides."
+    },
+    {
+      "command": "bun --eval '<createSubmissionEntry dry-run for published_by source->entity replacement>'",
+      "output_excerpt": "Generated deterministic submission sub_2aea475a86d3eb39 with sha256:2aea475a86d3eb39fdda70413780b37b5feef552489ff2ad75fc903256b1c8c6; validation accepted with issues=[], warnings=[], relationEndpointIssues=[]; replacement shape probe returned null."
+    },
+    {
+      "command": "rg -n 'sub_2aea475a86d3eb39|relation_batch040_monthly_pulse_survey_published_by_mta|relation_mta-published-source_5|sub_c3e911a46d99f6c0' data/submissions data/review_notes data/submission-overrides/retired.json data/canonical/relations.jsonl -S",
+      "output_excerpt": "Only existing hits were the original submission/canonical relation; no existing hits for replacement submission id or replacement local observation id."
+    },
+    {
+      "command": "git status --short data/review_notes/codex-relation-cleanup-batch040-prep.json data/submission-overrides/retired.json data/submissions data/canonical.db data/canonical/relations.jsonl LOG.md",
+      "output_excerpt": "Workspace already has unrelated dirty durable/generated files; this task did not edit them. The only intended new write is data/review_notes/codex-relation-cleanup-batch040-prep.json."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "canonicalize",
+    "campaign dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "materialize",
+    "export-jsonl",
+    "full validate CLI",
+    "DB repair/publish",
+    "any command with --profile",
+    "any provider-backed command"
+  ],
+  "blockers": []
+}

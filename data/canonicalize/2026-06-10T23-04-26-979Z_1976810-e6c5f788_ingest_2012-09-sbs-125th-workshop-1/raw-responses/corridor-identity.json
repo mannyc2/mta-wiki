@@ -1,0 +1,53 @@
+{
+  "run_id": "2026-06-10T23-04-26-979Z_1976810-e6c5f788_ingest_2012-09-sbs-125th-workshop-1",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T02:49:52.165Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "canon-125th-st-new",
+        "local_observation_id": "corridor_125th_street_manhattan",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'corridor_125th-street-manhattan' already exists in the registry and is the closest match. The observation's source '2012_09_sbs_125th_workshop_1' is already listed under that record. Per rules, when the closest match IS the observation's own base_record_id, the decision is 'new' — the observation already resolves to that id.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_sbs_125th_workshop_1",
+            "block_id": "p002_c0001",
+            "source_quote": "Crosstown Buses on 125 th Street"
+          },
+          {
+            "source_id": "2012_09_sbs_125th_workshop_1",
+            "block_id": "p002_c0004",
+            "source_quote": "• Bx15 • M60 • M100 • M101"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "duplicate",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "corridor_125th-st-manhattan",
+            "description": "Both records describe the same 125th Street corridor in Manhattan. corridor_125th-street-manhattan has limits 'Amsterdam Avenue to Second Avenue' and description 'Crosstown bus corridor in Manhattan serving routes Bx15, M60, M100, M101'. corridor_125th-st-manhattan has limits 'Morningside Avenue to Second Avenue' and description 'Major east-west corridor in Manhattan where bus service improvements were discussed at the September 2012 public workshop'. Same borough, same eastern limit (Second Avenue), substantially overlapping western limits, and both tied to the 125th Street SBS/public workshop initiative.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_09_sbs_125th_workshop_1",
+                "block_id": "p002_c0001",
+                "source_quote": "Crosstown Buses on 125 th Street"
+              },
+              {
+                "source_id": "2012_09_sbs_125th_workshop_1",
+                "block_id": "p002_c0004",
+                "source_quote": "• Bx15 • M60 • M100 • M101"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-48-35-043Z_2111393-b9db2e40_canonicalize_2026-06-10t23-04-26-979z-1976810-e6c5f788-ingest-2012-09-sbs-125th-workshop-1-corridor-identity"
+}

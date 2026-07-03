@@ -1,0 +1,378 @@
+{
+  "schema_proposal_run_id": "2026-06-08T23-05-26-749Z_schema-proposal-run",
+  "proposed_at": "2026-06-08T23:06:44.896Z",
+  "observation_kind": "event",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "audit_packet": {
+    "observation_kind": "event",
+    "submission_count": 207,
+    "accepted_count": 200,
+    "rejected_count": 7,
+    "declared_anchor_fields": [
+      "date",
+      "date_text",
+      "description",
+      "event_date",
+      "event_kind"
+    ],
+    "enum_candidates": [
+      {
+        "field": "details",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "16 agents deployed",
+          "55 agents deployed"
+        ],
+        "value_counts": []
+      }
+    ],
+    "additional_keys": [
+      {
+        "field": "affected_boroughs",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Manhattan",
+          "Queens"
+        ]
+      },
+      {
+        "field": "affected_routes",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "E",
+          "F",
+          "M",
+          "R"
+        ]
+      },
+      {
+        "field": "affected_stations",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "date_normalized",
+        "occurrences": 30,
+        "coverage": 0.14,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "date_text_normalized",
+        "occurrences": 190,
+        "coverage": 0.92,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "end_date_text",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "April 27, 2020"
+        ]
+      },
+      {
+        "field": "end_date_text_normalized",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "event_date_normalized",
+        "occurrences": 26,
+        "coverage": 0.13,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "event_name",
+        "occurrences": 13,
+        "coverage": 0.06,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Budget Press Tour",
+          "168th St/Jamaica Interim Bus Terminal Opens",
+          "CUNY Macaulay Honors College Datathon",
+          "Customer Ambassador Program Start",
+          "GTFS real-time Service Alerts dataset release",
+          "MTA Open Data Challenge",
+          "Open Data Steering Committee creation",
+          "Operating Budget open data release"
+        ]
+      },
+      {
+        "field": "location",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Washington, DC"
+        ]
+      },
+      {
+        "field": "location_normalized",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "month",
+        "occurrences": 2,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "organizers",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "MTA",
+          "NYC DOT"
+        ]
+      },
+      {
+        "field": "participants",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "CM De La Rosa's office",
+          "NYC DOT",
+          "WHBID"
+        ]
+      },
+      {
+        "field": "riders_affected",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "start_date_text",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "April 2019"
+        ]
+      },
+      {
+        "field": "start_date_text_normalized",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "stations_affected",
+        "occurrences": 1,
+        "coverage": 0,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Atlantic Av-Barclays Ctr (2345)",
+          "W 4 St-Wash Sq (ACEBDFM)"
+        ]
+      },
+      {
+        "field": "year",
+        "occurrences": 23,
+        "coverage": 0.11,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      }
+    ]
+  },
+  "closure_policy": "deferred",
+  "closure_signals": [
+    {
+      "field": "details",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.01
+    }
+  ],
+  "valid": true,
+  "schema_issues": [],
+  "warnings": [],
+  "proposal": {
+    "observation_kind": "event",
+    "field_proposals": [
+      {
+        "field": "details",
+        "decision": "needs_more_data",
+        "canonical_values": [],
+        "value_mapping": [
+          {
+            "from": "16 agents deployed",
+            "to": "16 agents deployed"
+          },
+          {
+            "from": "55 agents deployed",
+            "to": "55 agents deployed"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "details_other"
+        },
+        "rationale": "Only 2 distinct values observed from 2 occurrences; insufficient coverage to define enum responsibly."
+      }
+    ],
+    "key_dispositions": [
+      {
+        "key": "affected_boroughs",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence only; too sparse to include as a schema field."
+      },
+      {
+        "key": "affected_routes",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence only; too sparse to include."
+      },
+      {
+        "key": "affected_stations",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence only; too sparse to include."
+      },
+      {
+        "key": "date_normalized",
+        "disposition": "promote_field",
+        "target": "date_normalized",
+        "rationale": "Structured date object with 14% coverage; worth retaining as a normalized date field."
+      },
+      {
+        "key": "date_text_normalized",
+        "disposition": "promote_field",
+        "target": "date_text_normalized",
+        "rationale": "Structured date text with 92% coverage; primary normalized date representation."
+      },
+      {
+        "key": "end_date_text",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence only; too sparse to include."
+      },
+      {
+        "key": "end_date_text_normalized",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence only; too sparse to include."
+      },
+      {
+        "key": "event_date_normalized",
+        "disposition": "promote_field",
+        "target": "event_date_normalized",
+        "rationale": "Structured event date object with 13% coverage; useful normalized variant."
+      },
+      {
+        "key": "event_name",
+        "disposition": "promote_field",
+        "target": "event_name",
+        "rationale": "Free text field with 6% coverage; captures event name."
+      },
+      {
+        "key": "location",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence only; too sparse to include."
+      },
+      {
+        "key": "location_normalized",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence only; too sparse to include."
+      },
+      {
+        "key": "month",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Only 2 occurrences; too sparse to include reliably."
+      },
+      {
+        "key": "organizers",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence only; too sparse to include."
+      },
+      {
+        "key": "participants",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence only; too sparse to include."
+      },
+      {
+        "key": "riders_affected",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence only; too sparse to include."
+      },
+      {
+        "key": "start_date_text",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence only; too sparse to include."
+      },
+      {
+        "key": "start_date_text_normalized",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence only; too sparse to include."
+      },
+      {
+        "key": "stations_affected",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence only; too sparse to include."
+      },
+      {
+        "key": "year",
+        "disposition": "promote_field",
+        "target": "year",
+        "rationale": "Numeric field with 11% coverage; useful for filtering."
+      }
+    ],
+    "notes": "Details field is not ready for enum due to low coverage; remaining additional keys with single occurrences are deferred pending more data. The main normalized date fields (date_text_normalized, date_normalized, event_date_normalized) are promoted to structured sub‑objects."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T23-06-17-050Z_3564593-7a3ba9af_schema-proposal-run_event",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-06-17-050Z_2026-06-08T23-06-17-050Z_3564593-7a3ba9af_schema-proposal-run_event.jsonl"
+}

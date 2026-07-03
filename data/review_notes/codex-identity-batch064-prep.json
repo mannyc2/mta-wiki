@@ -1,0 +1,390 @@
+{
+  "note_id": "codex-canonical-cleanup-2026-06-22-identity-alias-batch-064-prep",
+  "created_at": "2026-06-22T22:17:31Z",
+  "status": "ready_for_conductor_apply",
+  "lane": "identity_prep_only",
+  "batch": "identity-batch064",
+  "scope": {
+    "allowed_write": "data/review_notes/codex-identity-batch064-prep.json",
+    "durable_inputs_mutated": false,
+    "generated_outputs_mutated": false,
+    "db_mutated": false,
+    "provider_backed_commands_run": false,
+    "forbidden_commands_run": []
+  },
+  "context": {
+    "source_backlog": "unresolved duplicate_global_identity canonical backlog after current overrides and prior prep through identity063",
+    "candidate_mining_summary": {
+      "current_entity_records_scanned_from_jsonl": 2588,
+      "current_alias_overrides_considered": 399,
+      "db_identity_alias_rows_considered": 379,
+      "prior_prep_alias_entries_considered_through_batch063": 140,
+      "prior_prep_target_entries_considered_through_batch063": 140,
+      "prior_prep_unique_records_excluded_through_batch063": 228,
+      "identity_key_groups_scanned": 14443,
+      "candidate_pairs_after_alias_do_not_merge_and_prior_prep_filters": 868,
+      "selected_high_confidence_candidates": 10
+    },
+    "selection_policy": [
+      "Prefer exact named-person aliases with shared deterministic identity keys, matching or compatible role text, and source evidence on both sides.",
+      "Exclude any alias or target record that appeared as either alias or target in prior prep artifacts through batch063.",
+      "Exclude broad agencies, programs, committees, member-list records, aliases already mapped in merges.json/current identity_aliases, target records that are alias-mapped, and do-not-merge suppressed pairs."
+    ]
+  },
+  "intended_mutation": {
+    "aliases": {
+      "entity": {
+        "entity_meeting-doc-95156-kuvershen-ayer": "entity_meeting91591-kuvershen-ayer",
+        "entity_lamond-kearse-cgc": "entity_lamond-kearse-meeting-doc-173841",
+        "entity_meeting-doc-95161-louis-montanti": "entity_meeting91596-louis-montanti",
+        "entity_meeting-doc-135451-michael-kemper": "entity_meeting-doc-138396-michael-kemper",
+        "entity_meeting-doc-178486-neil-mastropietro": "entity_meeting163226-neil-mastropietro",
+        "entity_nicholas-roberts": "entity_nicholas-roberts-meeting-doc-160301",
+        "entity_meeting-doc-197061-olga-chernat": "entity_olga-chernat-129061",
+        "entity_meeting-doc-111756-omar-messado": "entity_meeting155126-omar-messado",
+        "entity_paige-graves-meeting-doc-135256": "entity_paige-graves-meeting-doc-173841",
+        "entity_meeting176311-peter-crawford": "entity_peter-crawford-meeting-doc-176306"
+      }
+    }
+  },
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "canonical_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "targets_not_alias_mapped_in_merges_json": true,
+    "targets_not_alias_mapped_in_identity_aliases_table": true,
+    "no_overlap_with_prior_prep_through_batch063": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 20,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 20,
+    "source_page_blocks_missing": [],
+    "all_pass": true
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-95156-kuvershen-ayer",
+      "target": "entity_meeting91591-kuvershen-ayer",
+      "validator_duplicate_key": "entity_kuvershen-ayer",
+      "reason": "Both records identify Kuvershen Ayer as MTA Procurement Department Head, with matching title text and exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_95156#p004_c0001",
+        "meeting_doc_91591#p004_c0001"
+      ],
+      "shared_identity_keys": [
+        "entity_kuvershen-ayer"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch063": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_lamond-kearse-cgc",
+      "target": "entity_lamond-kearse-meeting-doc-173841",
+      "validator_duplicate_key": "entity_lamond-w-kearse",
+      "reason": "Both records identify Lamond W. Kearse as MTA Chief Compliance Officer, with matching title text and exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_128986#p003_c0007",
+        "meeting_doc_173841#p004_c0012"
+      ],
+      "shared_identity_keys": [
+        "entity_lamond-w-kearse"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch063": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-95161-louis-montanti",
+      "target": "entity_meeting91596-louis-montanti",
+      "validator_duplicate_key": "entity_louis-montanti",
+      "reason": "Both records identify Louis Montanti as Deputy Chief Procurement Officer, Operations, MTA, with exact person and role-specific identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_95161#p001_c0006",
+        "meeting_doc_91596#p001_c0006"
+      ],
+      "shared_identity_keys": [
+        "entity_louis-montanti",
+        "entity_louis-montanti-deputy-chief-procurement-officer-operations-mta"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch063": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-135451-michael-kemper",
+      "target": "entity_meeting-doc-138396-michael-kemper",
+      "validator_duplicate_key": "entity_michael-kemper",
+      "reason": "Both records identify Michael Kemper as Chief of Transit, NYPD, with exact person and role-specific identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_135451#p001_c0008",
+        "meeting_doc_138396#p001_c0011"
+      ],
+      "shared_identity_keys": [
+        "entity_michael-kemper",
+        "entity_michael-kemper-chief-of-transit-nypd"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch063": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-178486-neil-mastropietro",
+      "target": "entity_meeting163226-neil-mastropietro",
+      "validator_duplicate_key": "entity_neil-mastropietro",
+      "reason": "Both records identify Neil Mastropietro as a Project Manager in MTA Real Estate context, with matching title text and exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_178486#p006_c0004",
+        "meeting_doc_163226#p004_c0004"
+      ],
+      "shared_identity_keys": [
+        "entity_neil-mastropietro"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch063": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_nicholas-roberts",
+      "target": "entity_nicholas-roberts-meeting-doc-160301",
+      "validator_duplicate_key": "entity_nicholas-roberts",
+      "reason": "Both records identify Nicholas Roberts as a Project Manager, with matching title text and exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_160181#p001_c0003",
+        "meeting_doc_160301#p002_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_nicholas-roberts"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch063": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-197061-olga-chernat",
+      "target": "entity_olga-chernat-129061",
+      "validator_duplicate_key": "entity_olga-chernat",
+      "reason": "Both records identify Olga Chernat as Deputy Chief, Financial Services, with exact person and role-specific identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_197061#p001_c0003",
+        "meeting_doc_129061#p001_c0002"
+      ],
+      "shared_identity_keys": [
+        "entity_olga-chernat",
+        "entity_olga-chernat-deputy-chief-financial-services"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch063": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-111756-omar-messado",
+      "target": "entity_meeting155126-omar-messado",
+      "validator_duplicate_key": "entity_omar-messado",
+      "reason": "Both records identify Omar Messado as Assistant Deputy Chief Procurement Officer in the MTA Office of the Chief Procurement Officer, with matching role text and exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_111756#p001_c0003",
+        "meeting_doc_155126#p001_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_omar-messado"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch063": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_paige-graves-meeting-doc-135256",
+      "target": "entity_paige-graves-meeting-doc-173841",
+      "validator_duplicate_key": "entity_paige-graves",
+      "reason": "Both records identify Paige Graves as General Counsel for the Metropolitan Transportation Authority, with matching title text and exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_135256#p003_c0007",
+        "meeting_doc_173841#p003_c0007"
+      ],
+      "shared_identity_keys": [
+        "entity_paige-graves"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch063": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting176311-peter-crawford",
+      "target": "entity_peter-crawford-meeting-doc-176306",
+      "validator_duplicate_key": "entity_peter-crawford",
+      "reason": "Both records identify Peter Crawford as Assistant Director, Construction Manager, MNR, with matching title text and exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_176311#p007_c0003",
+        "meeting_doc_176306#p008_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_peter-crawford"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch063": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    }
+  ],
+  "deferred_low_confidence_examples": [
+    {
+      "candidate": "P. Dietlin and other initial-only person records",
+      "reason": "Deferred because initial-only labels are more target-churn prone than full named-person role matches."
+    },
+    {
+      "candidate": "MTA Procurement Department and other department records",
+      "reason": "Deferred because broad department identities are outside this named-person batch."
+    },
+    {
+      "candidate": "Muhammad Afzal lessee/person pair",
+      "reason": "Deferred because the entity type differs and the record is less clearly a stable staff/person identity than the selected exact-role people."
+    }
+  ],
+  "commands_used_for_evidence": [
+    {
+      "command": "test ! -e data/review_notes/codex-identity-batch064-prep.json && echo missing || echo exists",
+      "purpose": "Confirmed the batch064 prep artifact did not already exist before writing.",
+      "result": "missing"
+    },
+    {
+      "command": "jq '.intended_mutation.aliases.entity, .aggregate_guard_results' data/review_notes/codex-identity-batch063-prep.json",
+      "purpose": "Read prior batch063 aliases and guard result to preserve disjointness.",
+      "result": "batch063 contained 10 aliases with all aggregate guards passing."
+    },
+    {
+      "command": "bun --eval '<read-only duplicate_global_identity mining over data/canonical/entities.jsonl, identityKeysForRecord(), current merges.json, read-only identity_aliases, prior prep aliases and targets through batch063, and do-not-merge guards>'",
+      "purpose": "Mined unresolved duplicate_global_identity candidates while excluding already mapped aliases, alias-mapped targets, current identity_aliases, prior prep records, and do-not-merge pairs.",
+      "result": "2588 current entity records scanned; 868 candidate pairs after alias/do-not-merge/prior-prep filters; 10 high-confidence candidates selected."
+    },
+    {
+      "command": "bun --eval '<read-only final guard script for canonical record presence, alias/target guard checks, prior prep disjointness, shared identity keys, raw source blocks, and source-page blocks>'",
+      "purpose": "Verified selected aliases and evidence before writing this prep artifact.",
+      "result": "all_pass true; 20 raw source blocks checked, 20 source-page blocks checked, no missing evidence blocks."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "purpose": "Stamped this prep artifact.",
+      "result": "2026-06-22T22:17:31Z"
+    }
+  ],
+  "commands_intentionally_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "export-jsonl",
+    "DB repair or publish commands",
+    "provider-backed post-ingest commands",
+    "identity-review-run or apply commands"
+  ]
+}

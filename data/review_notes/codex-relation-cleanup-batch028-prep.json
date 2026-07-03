@@ -1,0 +1,344 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-22-endpoint-shape-batch028-prep",
+  "created_at": "2026-06-22T23:35:00Z",
+  "author": "codex",
+  "scope": "relation endpoint-shape cleanup prep only; durable mechanism planned but not applied",
+  "batch": "batch028",
+  "run_id_for_replacements": "2026-06-22_codex_relation_cleanup_batch028",
+  "submitted_at_for_dry_run": "2026-06-22T23:35:00Z",
+  "durable_mechanism_planned_not_applied": {
+    "retirements_target": "data/submission-overrides/retired.json",
+    "replacement_journal_target": "data/submissions/2026-06-22_codex_relation_cleanup_batch028.jsonl",
+    "applied": false
+  },
+  "bucket": {
+    "name": "residual operated_by entity-to-entity service context",
+    "original_relation_kind": "operated_by",
+    "original_endpoint_shape": "entity -> entity",
+    "replacement_relation_kind": "related_to",
+    "replacement_endpoint_shape": "entity -> entity",
+    "why_coherent": "All four remaining operated_by entity->entity rows are service or agency-context associations, not clean project/route operator edges. Current endpoint rules reserve operated_by for project|route -> entity. Earlier operated_by batches repaired exact operator-direction cases with operates; these residual rows do not consistently support reversing to operates. Using related_to preserves the source-backed entity association without widening operated_by or overstating one entity as operating the other."
+  },
+  "checkpoint_context": {
+    "method": "Read-only inventory over canonical records with the current endpoint-shape table; excluded retired submissions and prior codex relation cleanup prep originals through batch027. Did not run CLI validate, materialize, export-jsonl, DB repair/publish, or provider-backed commands.",
+    "remaining_endpoint_shape_inventory_after_exclusions": {
+      "total": 63,
+      "selected_bucket": "operated_by entity->entity",
+      "selected_bucket_count": 4,
+      "prepared_count": 4,
+      "other_top_buckets": [
+        {
+          "bucket": "implemented_by entity->entity",
+          "count": 4
+        },
+        {
+          "bucket": "serves_route project->project",
+          "count": 3
+        },
+        {
+          "bucket": "part_of_program project->source",
+          "count": 3
+        },
+        {
+          "bucket": "part_of_program event->entity",
+          "count": 2
+        },
+        {
+          "bucket": "has_metric source->metric_claim",
+          "count": 2
+        }
+      ]
+    }
+  },
+  "exclusions_and_guards": {
+    "excluded_batches": [
+      "batch017",
+      "batch019",
+      "batch020",
+      "batch021",
+      "batch022",
+      "batch023",
+      "batch024",
+      "batch025",
+      "batch026",
+      "batch027"
+    ],
+    "retired_json_not_edited": true,
+    "submission_journals_not_edited": true,
+    "generated_outputs_not_edited": true,
+    "log_not_edited": true,
+    "manifest_merges_retired_not_edited": true,
+    "wiki_source_pages_not_edited": true,
+    "original_submission_guard": {
+      "retired_hits": [],
+      "prior_relation_batch_hits": []
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": [],
+      "prior_review_note_submission_id_hits": [],
+      "prior_review_note_local_observation_id_hits": []
+    }
+  },
+  "local_validation": {
+    "tooling": "createSubmissionEntry plus relationEndpointIssues using accepted local observation ids by source; relationEndpointShapeIssue checked for related_to entity -> entity",
+    "summary": {
+      "prepared_count": 4,
+      "accepted_count": 4,
+      "issue_count": 0,
+      "warning_count": 0,
+      "endpoint_shape_issue_count": 0
+    }
+  },
+  "prepared": [
+    {
+      "retire": {
+        "submission_id": "sub_a4fb1ea880cfb8d4",
+        "original_record_id": "relation_135421-nyct-subway-bus-ops",
+        "original_local_observation_id": "relation_135421_nyct_subway_bus_ops",
+        "malformed_shape": "operated_by entity -> entity",
+        "original_relation_kind": "operated_by",
+        "original_subject_id": "entity_mta-nyct",
+        "original_subject_local_observation_id": "entity_mta_nyct",
+        "original_object_id": "entity_mta-bus-company",
+        "original_object_local_observation_id": "entity_mta_bus_company",
+        "reason": "The original relation uses operated_by between two entity records. The evidence jointly names New York City Transit and MTA Bus as operators of subway and bus service, but does not support modeling one entity as operated_by the other."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_89a70f3a04eb21ea",
+        "proposed_relation_kind": "related_to",
+        "proposed_endpoint_shape": "entity -> entity",
+        "tool_args": {
+          "source_id": "meeting_doc_135421",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch028_nyct_related_to_mta_bus_operations_context",
+          "label": "NYCT related to MTA Bus operations context",
+          "raw_text": "New York City Transit and MTA Bus operate all subways and buses in New York City.",
+          "payload": {
+            "relation_kind": "related_to",
+            "subject_id": "entity_mta-nyct",
+            "object_id": "entity_mta-bus-company",
+            "description": "Replacement for malformed operated_by entity -> entity relation; source jointly names New York City Transit and MTA Bus as operators of subway and bus service in New York City, but does not support one entity as operated_by the other.",
+            "relation_family": "dependency_or_reference"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_135421",
+              "evidence_id": "meeting_doc_135421#p030_c0003",
+              "source_path": "raw/sources/meeting_doc_135421/blocks.jsonl",
+              "page_number": 30,
+              "block_id": "p030_c0003",
+              "text_sha256": "sha256:1d949f37961f54fa9c5893622ff56fc777eb2d4a4e8c62aee301b2bc4685c70a",
+              "text_source": "raw_text",
+              "source_quote": "New York City Transit and MTA Bus operate all subways and buses in New York City."
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_1c9cc33bcc15df63",
+        "original_record_id": "relation_meeting-doc-154986-aar-operated-by-paratransit",
+        "original_local_observation_id": "relation_meeting_doc_154986_aar_operated_by_paratransit",
+        "malformed_shape": "operated_by entity -> entity",
+        "original_relation_kind": "operated_by",
+        "original_subject_id": "entity_meeting-doc-154986-aar",
+        "original_subject_local_observation_id": "entity_meeting_doc_154986_aar",
+        "original_object_id": "entity_department-of-paratransit",
+        "original_object_local_observation_id": "entity_department_of_paratransit",
+        "reason": "The original relation uses operated_by between entity endpoints. The source phrase supports Paratransit/Access-A-Ride operational context, but Access-A-Ride is not a project or route endpoint under the current operated_by rule."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_44357212f40a1cc4",
+        "proposed_relation_kind": "related_to",
+        "proposed_endpoint_shape": "entity -> entity",
+        "tool_args": {
+          "source_id": "meeting_doc_154986",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch028_aar_related_to_paratransit_operations",
+          "label": "Access-A-Ride related to Paratransit operations",
+          "raw_text": "Paratransit’s Access-A-Ride (“AAR”) operations",
+          "payload": {
+            "relation_kind": "related_to",
+            "subject_id": "entity_meeting-doc-154986-aar",
+            "object_id": "entity_department-of-paratransit",
+            "description": "Replacement for malformed operated_by entity -> entity relation; source places Access-A-Ride within Paratransit operations, but the entity endpoints do not fit the shaped operated_by project/route operator relation.",
+            "relation_family": "dependency_or_reference"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_154986",
+              "evidence_id": "meeting_doc_154986#p006_c0006",
+              "source_path": "raw/sources/meeting_doc_154986/blocks.jsonl",
+              "page_number": 6,
+              "block_id": "p006_c0006",
+              "text_sha256": "sha256:c6c42dfee19fe9e459487bb5d8f52d507c969ac62d9cd38fb7aedfbdd7326e53",
+              "text_source": "raw_text",
+              "source_quote": "Paratransit’s Access-A-Ride (“AAR”) operations"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_e55bf62624751083",
+        "original_record_id": "relation_mnr-operated-by-mta",
+        "original_local_observation_id": "relation_mnr_operated_by_mta",
+        "malformed_shape": "operated_by entity -> entity",
+        "original_relation_kind": "operated_by",
+        "original_subject_id": "entity_meeting-doc-124881-mnr",
+        "original_subject_local_observation_id": "entity_meeting_doc_124881_mnr",
+        "original_object_id": "entity_mta-entity-update-2025",
+        "original_object_local_observation_id": "entity_mta_2019",
+        "reason": "The original relation uses operated_by between MNR and MTA entity records. The cited document is MTA/MNR budget context, not a project or route operator edge."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_a6e31429bda13c2c",
+        "proposed_relation_kind": "related_to",
+        "proposed_endpoint_shape": "entity -> entity",
+        "tool_args": {
+          "source_id": "meeting_doc_160111",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch028_mnr_related_to_mta_budget_context",
+          "label": "Metro-North related to MTA budget context",
+          "raw_text": "Metropolitan Transportation Authority; Subject MTA MNR 2025 Budget and 2025-2028 Financial Plan Adoption",
+          "payload": {
+            "relation_kind": "related_to",
+            "subject_id": "entity_meeting-doc-124881-mnr",
+            "object_id": "entity_mta-entity-update-2025",
+            "description": "Replacement for malformed operated_by entity -> entity relation; source is an MTA Metro-North budget/adoption document, supporting MNR/MTA context but not a shaped operated_by edge.",
+            "relation_family": "dependency_or_reference"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_160111",
+              "evidence_id": "meeting_doc_160111#p001_c0002",
+              "source_path": "raw/sources/meeting_doc_160111/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0002",
+              "text_sha256": "sha256:ec4da331c09e2061578a1964b23a90bdb7edf5115e31a65c01ad04c21487f1e4",
+              "text_source": "raw_text",
+              "source_quote": "Metropolitan Transportation Authority"
+            },
+            {
+              "source_id": "meeting_doc_160111",
+              "evidence_id": "meeting_doc_160111#p001_c0004",
+              "source_path": "raw/sources/meeting_doc_160111/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0004",
+              "text_sha256": "sha256:d0c61eff75546d34483470ad25acd2afff0e2919988ff2410724a2a9b3814639",
+              "text_source": "raw_text",
+              "source_quote": "Subject MTA MNR 2025 Budget and 2025-2028 Financial Plan Adoption"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_dc761ff547163533",
+        "original_record_id": "relation_rel-meeting-doc-177266-aar-operated-by-mta",
+        "original_local_observation_id": "rel_meeting_doc_177266_aar_operated_by_mta",
+        "malformed_shape": "operated_by entity -> entity",
+        "original_relation_kind": "operated_by",
+        "original_subject_id": "entity_annual-report-2021-accessaride",
+        "original_subject_local_observation_id": "entity_annual_report_2021_accessaride",
+        "original_object_id": "entity_mta-entity-update-2025",
+        "original_object_local_observation_id": "entity_mta_2019",
+        "reason": "The original relation uses operated_by between Access-A-Ride and MTA entity records. The evidence is an MTA Board update describing Access-A-Ride service, but it does not make Access-A-Ride a route/project endpoint for operated_by."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_b3217ace9bef863c",
+        "proposed_relation_kind": "related_to",
+        "proposed_endpoint_shape": "entity -> entity",
+        "tool_args": {
+          "source_id": "meeting_doc_177266",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch028_access_a_ride_related_to_mta_board_update",
+          "label": "Access-A-Ride related to MTA Board update",
+          "raw_text": "MTA Board Update; A transit provider that prioritizes safe, reliable service",
+          "payload": {
+            "relation_kind": "related_to",
+            "subject_id": "entity_annual-report-2021-accessaride",
+            "object_id": "entity_mta-entity-update-2025",
+            "description": "Replacement for malformed operated_by entity -> entity relation; source is an MTA Board update describing Access-A-Ride as a transit provider, but the evidence does not make Access-A-Ride a route/project subject for operated_by.",
+            "relation_family": "dependency_or_reference"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_177266",
+              "evidence_id": "meeting_doc_177266#p001_c0003",
+              "source_path": "raw/sources/meeting_doc_177266/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0003",
+              "text_sha256": "sha256:4416d024fa03699be856d86487ea237fe2e7e17083abe71527af41bbb8b5fee0",
+              "text_source": "raw_text",
+              "source_quote": "MTA Board Update"
+            },
+            {
+              "source_id": "meeting_doc_177266",
+              "evidence_id": "meeting_doc_177266#p002_c0002",
+              "source_path": "raw/sources/meeting_doc_177266/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0002",
+              "text_sha256": "sha256:045f341cbc7cfa725fb0de2568ecb4ef13e4b3724baa52c7c699963775eb02ec",
+              "text_source": "raw_text",
+              "source_quote": "A transit provider that prioritizes safe, reliable service"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "bucket": "implemented_by entity -> entity",
+      "count": 4,
+      "reason": "Not selected because examples include self-links, a license-agreement row, and an OCIP context row; they do not share one high-confidence replacement shape."
+    },
+    {
+      "bucket": "serves_route endpoint identity issues",
+      "count": 9,
+      "reason": "Remaining serves_route issues span project->project, project->entity, event->route, and treatment_component->route shapes; they need a separate endpoint-by-endpoint review."
+    },
+    {
+      "bucket": "part_of_program mixed object shapes",
+      "count": 11,
+      "reason": "Remaining part_of_program issues involve source, event, claim, entity, and corridor subjects/objects; likely mixed relation-kind cleanup rather than one coherent batch."
+    }
+  ]
+}

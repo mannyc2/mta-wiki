@@ -1,0 +1,295 @@
+{
+  "run_id": "2026-06-10T17-48-04-658Z_1496766-855f41d9_ingest_2010-01-14-brt-1st2nd-cac3",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-10T20:49:21.064Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-design-a-to-cac3",
+        "local_observation_id": "treatment_design_a_offset_bus_lane_protected_bike_path",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-cac3",
+            "object_id": "treatment_design-a-offset-bus-lane-protected-bike-path",
+            "description": "Design A listed as an SBS Station treatment on the First/Second Avenue corridor map",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p035_c0003",
+                "source_quote": "■ SBS Station A: Offset Bus Lane, Protected Bike Path B: Curb Bus Lane, Protected Bike Path C: Curb Bus Lane, Shared Bike Lane A or B, subject to further analysis ■ No change to street design ■ Construction Zone"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p035_c0003 on the Corridor Map page explicitly lists Design A (Offset Bus Lane, Protected Bike Path) as an SBS Station treatment for the First Avenue/Second Avenue SBS corridor, which is the subject of project_first-second-ave-sbs-cac3.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p035_c0003",
+            "source_quote": "■ SBS Station A: Offset Bus Lane, Protected Bike Path B: Curb Bus Lane, Protected Bike Path C: Curb Bus Lane, Shared Bike Lane A or B, subject to further analysis ■ No change to street design ■ Construction Zone"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-design-b-to-cac3",
+        "local_observation_id": "treatment_design_b_curb_bus_lane_protected_bike_path",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-cac3",
+            "object_id": "treatment_design-b-curb-bus-lane-protected-bike-path",
+            "description": "Design B listed as an SBS Station treatment on the First/Second Avenue corridor map",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p035_c0003",
+                "source_quote": "■ SBS Station A: Offset Bus Lane, Protected Bike Path B: Curb Bus Lane, Protected Bike Path C: Curb Bus Lane, Shared Bike Lane A or B, subject to further analysis ■ No change to street design ■ Construction Zone"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p035_c0003 on the Corridor Map page explicitly lists Design B (Curb Bus Lane, Protected Bike Path) as an SBS Station treatment for the First Avenue/Second Avenue SBS corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p035_c0003",
+            "source_quote": "■ SBS Station A: Offset Bus Lane, Protected Bike Path B: Curb Bus Lane, Protected Bike Path C: Curb Bus Lane, Shared Bike Lane A or B, subject to further analysis ■ No change to street design ■ Construction Zone"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-design-c-to-cac3",
+        "local_observation_id": "treatment_design_c_curb_bus_lane_shared_bike_lane",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-cac3",
+            "object_id": "treatment_design-c-curb-bus-lane-shared-bike-lane",
+            "description": "Design C listed as an SBS Station treatment on the First/Second Avenue corridor map",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p035_c0003",
+                "source_quote": "■ SBS Station A: Offset Bus Lane, Protected Bike Path B: Curb Bus Lane, Protected Bike Path C: Curb Bus Lane, Shared Bike Lane A or B, subject to further analysis ■ No change to street design ■ Construction Zone"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p035_c0003 on the Corridor Map page explicitly lists Design C (Curb Bus Lane, Shared Bike Lane) as an SBS Station treatment for the First Avenue/Second Avenue SBS corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p035_c0003",
+            "source_quote": "■ SBS Station A: Offset Bus Lane, Protected Bike Path B: Curb Bus Lane, Protected Bike Path C: Curb Bus Lane, Shared Bike Lane A or B, subject to further analysis ■ No change to street design ■ Construction Zone"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-34th-curbside-bus-lane-to-ebp",
+        "local_observation_id": "treatment_34th_st_curbside_bus_lane",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-street-enhanced-bus-priority",
+            "object_id": "treatment_34th-st-curbside-bus-lane",
+            "description": "Curbside bus lane listed as a feature of 34th Street Enhanced Bus Priority",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p015_c0004",
+                "source_quote": "Curbside bus lane Real-time arrival information Left-turn signal priority Taxi video enforcement"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p015_c0004, under the heading '34th Street Enhanced Bus Priority' (p015_c0002), explicitly lists 'Curbside bus lane' as a feature of that project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p015_c0004",
+            "source_quote": "Curbside bus lane Real-time arrival information Left-turn signal priority Taxi video enforcement"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-34th-real-time-info-to-ebp",
+        "local_observation_id": "treatment_34th_st_real_time_arrival_info",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-street-enhanced-bus-priority",
+            "object_id": "treatment_34th-st-real-time-arrival-info",
+            "description": "Real-time arrival information listed as a feature of 34th Street Enhanced Bus Priority",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p015_c0004",
+                "source_quote": "Curbside bus lane Real-time arrival information Left-turn signal priority Taxi video enforcement"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p015_c0004, under the heading '34th Street Enhanced Bus Priority', explicitly lists 'Real-time arrival information' as a feature of that project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p015_c0004",
+            "source_quote": "Curbside bus lane Real-time arrival information Left-turn signal priority Taxi video enforcement"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-34th-left-turn-signal-to-ebp",
+        "local_observation_id": "treatment_34th_st_left_turn_signal_priority",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-street-enhanced-bus-priority",
+            "object_id": "treatment_34th-st-left-turn-signal-priority",
+            "description": "Left-turn signal priority listed as a feature of 34th Street Enhanced Bus Priority",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p015_c0004",
+                "source_quote": "Curbside bus lane Real-time arrival information Left-turn signal priority Taxi video enforcement"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p015_c0004, under the heading '34th Street Enhanced Bus Priority', explicitly lists 'Left-turn signal priority' as a feature of that project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p015_c0004",
+            "source_quote": "Curbside bus lane Real-time arrival information Left-turn signal priority Taxi video enforcement"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-34th-taxi-video-to-ebp",
+        "local_observation_id": "treatment_34th_st_taxi_video_enforcement",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-street-enhanced-bus-priority",
+            "object_id": "treatment_34th-st-taxi-video-enforcement",
+            "description": "Taxi video enforcement listed as a feature of 34th Street Enhanced Bus Priority",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p015_c0004",
+                "source_quote": "Curbside bus lane Real-time arrival information Left-turn signal priority Taxi video enforcement"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p015_c0004, under the heading '34th Street Enhanced Bus Priority', explicitly lists 'Taxi video enforcement' as a feature of that project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p015_c0004",
+            "source_quote": "Curbside bus lane Real-time arrival information Left-turn signal priority Taxi video enforcement"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-fordham-curbside-bus-lane-to-sbs",
+        "local_observation_id": "treatment_fordham_rd_curbside_bus_lane",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_fordham-road-sbs-2010-01-14",
+            "object_id": "treatment_fordham-rd-curbside-bus-lane",
+            "description": "Curbside Bus Lane listed as a feature of Fordham Road Select Bus Service",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p016_c0004",
+                "source_quote": "Curbside Bus Lane"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p016_c0004, under the heading 'Fordham Road Select Bus Service' (p016_c0002) and 'Features' (p016_c0003), explicitly lists 'Curbside Bus Lane' as a feature of that project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p016_c0004",
+            "source_quote": "Curbside Bus Lane"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-fordham-off-board-fare-to-sbs",
+        "local_observation_id": "treatment_fordham_rd_off_board_fare_collection",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_fordham-road-sbs-2010-01-14",
+            "object_id": "treatment_fordham-rd-off-board-fare-collection",
+            "description": "Off-Board Fare Collection listed as a feature of Fordham Road Select Bus Service",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p016_c0005",
+                "source_quote": "Off-Board Fare Collection"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p016_c0005, under the heading 'Fordham Road Select Bus Service' and 'Features', explicitly lists 'Off-Board Fare Collection' as a feature of that project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p016_c0005",
+            "source_quote": "Off-Board Fare Collection"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-fordham-tsp-to-sbs",
+        "local_observation_id": "treatment_fordham_rd_transit_signal_priority",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_fordham-road-sbs-2010-01-14",
+            "object_id": "treatment_fordham-rd-transit-signal-priority",
+            "description": "Transit Signal Priority listed as a feature of Fordham Road Select Bus Service",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p016_c0006",
+                "source_quote": "Transit Signal Priority"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p016_c0006, under the heading 'Fordham Road Select Bus Service' and 'Features', explicitly lists 'Transit Signal Priority' as a feature of that project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p016_c0006",
+            "source_quote": "Transit Signal Priority"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T20-46-32-092Z_1744250-ae482fb9_canonicalize_2026-06-10t17-48-04-658z-1496766-855f41d9-ingest-2010-01-14-brt-1st2nd-cac3-treatment-relations"
+}

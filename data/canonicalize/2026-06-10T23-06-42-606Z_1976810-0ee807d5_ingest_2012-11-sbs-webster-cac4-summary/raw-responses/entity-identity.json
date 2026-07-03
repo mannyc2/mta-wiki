@@ -1,0 +1,210 @@
+{
+  "run_id": "2026-06-10T23-06-42-606Z_1976810-0ee807d5_ingest_2012-11-sbs-webster-cac4-summary",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T03:09:16.548Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "d001",
+        "local_observation_id": "entity_nycdot_2012_11_webster_cac4",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot already registered as entity_nyc-dot (NYC DOT) with same entity_name, entity_type, and description. This observation already resolves to the canonical registry record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p001_c0006",
+            "source_quote": "New York City Department of Transportation (NYCDOT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d002",
+        "local_observation_id": "entity_mta_nyct_2012_11_webster_cac4",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-nyct already registered as entity_mta-nyct (MTA NYCT) with matching entity_name and entity_type.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p001_c0006",
+            "source_quote": "MTA New York City Transit (NYCT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d003",
+        "local_observation_id": "entity_eric_beaton_2012_11_webster_cac4",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_eric-beaton-20100921 already registered as entity_eric-beaton-20100921 (Eric Beaton) with alias entity_eric-beaton-2012-11-webster-cac4. This observation already resolves to that canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p001_c0007",
+            "source_quote": "Eric Beaton, Director of Transit Development for NYCDOT"
+          }
+        ]
+      },
+      {
+        "decision_id": "d004",
+        "local_observation_id": "entity_ted_orosz_2012_11_webster_cac4",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_ted-orosz-20100921 already registered as entity_ted-orosz-20100921 (Ted Orosz) with alias entity_ted-orosz-2012-11-webster-cac4. This observation already resolves to that canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p001_c0007",
+            "source_quote": "Ted Orosz, Director of Long Range Bus Planning for NYCT"
+          }
+        ]
+      },
+      {
+        "decision_id": "d005",
+        "local_observation_id": "entity_taylor_reiss_2012_11_webster_cac4",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_taylor-reiss-2012-11-webster-cac4 already registered as entity_taylor-reiss-2012-11-webster-cac4 (Taylor Reiss). This observation already resolves to that canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p001_c0007",
+            "source_quote": "Taylor Reiss, NYCDOT Project Manager"
+          }
+        ]
+      },
+      {
+        "decision_id": "d006",
+        "local_observation_id": "entity_bronx_cb3_2012_11_webster",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_bronx-cb3-2012-11-webster already registered as entity_bronx-cb3-2012-11-webster (Community Board 3 Bronx). This observation already resolves to that canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p003_c0015",
+            "source_quote": "Bronx Community Board 3"
+          }
+        ]
+      },
+      {
+        "decision_id": "d007",
+        "local_observation_id": "entity_bronx_cb5_2012_11_webster",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_bronx-cb5-2012-11-webster already registered as entity_bronx-cb5-2012-11-webster (Community Board 5 Bronx). This observation already resolves to that canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p003_c0015",
+            "source_quote": "Bronx Community Board 5"
+          }
+        ]
+      },
+      {
+        "decision_id": "d008",
+        "local_observation_id": "entity_bronx_cb6_2012_11_webster",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_bronx-cb6-2012-11-webster already registered as entity_bronx-cb6-2012-11-webster (Community Board 6 Bronx). This observation already resolves to that canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p003_c0015",
+            "source_quote": "Bronx Community Board 6"
+          }
+        ]
+      },
+      {
+        "decision_id": "d009",
+        "local_observation_id": "entity_bronx_cb7_2012_11_webster",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_bronx-cb7-2012-11-webster already registered as entity_bronx-cb7-2012-11-webster (Community Board 7 Bronx). This observation already resolves to that canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p003_c0015",
+            "source_quote": "Bronx Community Board 7"
+          }
+        ]
+      },
+      {
+        "decision_id": "d010",
+        "local_observation_id": "entity_fordham_road_bid_2012_11_webster",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_fordham-road-bid-2012-11-webster already registered as entity_fordham-road-bid-2012-11-webster (Fordham Road BID). This observation already resolves to that canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p003_c0015",
+            "source_quote": "Fordham Road BID"
+          }
+        ]
+      },
+      {
+        "decision_id": "d011",
+        "local_observation_id": "entity_bedford_mosholu_community_assoc_2012",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_bedford-mosholu-community-assoc-2012 already registered as entity_bedford-mosholu-community-assoc-2012 (Bedford-Mosholu Community Association). This observation already resolves to that canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p003_c0015",
+            "source_quote": "Bedford-Mosholu Community Association"
+          }
+        ]
+      },
+      {
+        "decision_id": "d012",
+        "local_observation_id": "entity_nypirg_straphangers_2012_11_webster",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nypirg-straphangers-2012-11-webster already registered as entity_nypirg-straphangers-2012-11-webster (NYPIRG Straphangers Campaign). This observation already resolves to that canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p003_c0015",
+            "source_quote": "NYPIRG Straphangers Campaign"
+          }
+        ]
+      },
+      {
+        "decision_id": "d013",
+        "local_observation_id": "entity_oliver_koppell_office_2012_11_webster",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_oliver-koppell-office-2012-11-webster already registered as entity_oliver-koppell-office-2012-11-webster (Councilmember Oliver Koppell's Office). This observation already resolves to that canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p003_c0015",
+            "source_quote": "Councilmember Oliver Koppell's Office"
+          }
+        ]
+      },
+      {
+        "decision_id": "d014",
+        "local_observation_id": "entity_eric_stevenson_office_2012_11_webster",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_eric-stevenson-office-2012-11-webster already registered as entity_eric-stevenson-office-2012-11-webster (Assembly Member Eric Stevenson's Office). This observation already resolves to that canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p003_c0015",
+            "source_quote": "Assembly Member Eric Stevenson's Office"
+          }
+        ]
+      },
+      {
+        "decision_id": "d015",
+        "local_observation_id": "entity_gustavo_rivera_office_2012_11_webster",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_gustavo-rivera-office-2012-11-webster already registered as entity_gustavo-rivera-office-2012-11-webster (Senator Gustavo Rivera's Office). This observation already resolves to that canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p003_c0015",
+            "source_quote": "Senator Gustavo Rivera's Office"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-05-57-217Z_2111393-1c5025ee_canonicalize_2026-06-10t23-06-42-606z-1976810-0ee807d5-ingest-2012-11-sbs-webster-cac4-summary-entity-identity"
+}

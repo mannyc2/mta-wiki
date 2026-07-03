@@ -1,0 +1,162 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-160316"
+record_kind: "source"
+display_name: "Long Island Rail Road Procurements - December 2024"
+source_id: "meeting_doc_160316"
+source_ids:
+  - "meeting_doc_160316"
+local_observation_id: "source_meeting_doc_160316"
+local_observation_ids:
+  - "source_meeting_doc_160316"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T20:38:52.393Z"
+submission_ids:
+  - "sub_23180b555aef3849"
+payload:
+  authority_tier: "board_material"
+  content_type: "board procurement resolution"
+  date_text: "December 13, 2024"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2024-12-13"
+    precision: "day"
+    raw_text: "December 13, 2024"
+  published_date_normalized: "2024-12-13"
+  published_date_precision: "day"
+  publisher: "Long Island Rail Road"
+  title: "Long Island Rail Road Procurements"
+evidence_refs:
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_160316#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_160316"
+    source_path: "raw/sources/meeting_doc_160316/blocks.jsonl"
+    text_sha256: "sha256:3fa1b61ccea689ec8b33f6b8e77a4674a8b28cf73f39f28b9274a41561148919"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0002"
+    evidence_id: "meeting_doc_160316#p002_c0002"
+    page_number: 2
+    source_id: "meeting_doc_160316"
+    source_path: "raw/sources/meeting_doc_160316/blocks.jsonl"
+    text_sha256: "sha256:84d262594a06a2c1388055364d6c52d230753147988a5a48edb80cd1ee05deda"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0002"
+    evidence_id: "meeting_doc_160316#p003_c0002"
+    page_number: 3
+    source_id: "meeting_doc_160316"
+    source_path: "raw/sources/meeting_doc_160316/blocks.jsonl"
+    text_sha256: "sha256:dab5dde30e847007bfc74814ca416e1585dc83a0f767d7e8b7f175e6b49b7468"
+    text_source: "raw_text"
+---
+
+# LIRR procurement
+
+source_id: meeting_doc_160316
+citation: cite block ids exactly as shown in square brackets
+document: 56 block(s)
+
+## Page 1
+
+> [p001_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p001_c0002] Long Island Rail Road Procurements
+[p001_c0003] Jacqueline Waddell, Acting Assistant Deputy Chief Procurement Officer – LIRR Procurement
+
+## Page 2
+
+> [p002_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a blue circle.
+### [p002_c0002] PROCUREMENTS
+[p002_c0003] The Procurement Agenda this month includes 1 action for a proposed estimated expenditure of $787.6.
+
+## Page 3
+
+[p003_c0001]
+
+```text
+Subject Request for Authorization to Award Various Procurements Department LIRR Procurement Department Head Name Jacqueline Waddell Department Head Signature Project Manager Name Rose Davis Board Action Order To Date Approval Info Other 1 Committee 12/16/24 2 Board 12/18/24
+```
+[p003_c0002]
+
+```text
+December 13, 2024 Department Department Head Name Department Head Signature Internal Approvals Approval Approval 1 VP, General Counsel & Secretary 4 SVP Operations 2 Chief Rolling Stock Programs Officer 5 President 3 VP Capital Program Delivery & Oversight 6
+```
+[p003_c0003]
+
+```text
+Internal Approvals (cont.) Order Approval Order Approval Order Approval Order Approval
+```
+### [p003_c0004] PURPOSE
+[p003_c0005] To obtain approval of the Board to award various contracts and purchase orders, and to inform the Long Island Rail Road Committee of these procurement actions.
+### [p003_c0006] DISCUSSION
+[p003_c0007] LIRR proposes to award Noncompetitive procurements in the following categories: None
+[p003_c0008] LIRR proposes to award Competitive procurements in the following categories:
+[p003_c0009]
+
+```text
+Schedules Requiring Majority Vote: # of Actions $ Amount Schedule I: Modifications to Purchase and Public Works Contracts 1 $ 787.6 M LIRR proposes to award Ratifications in the following categories: None TOTAL 1 $ 787.6 M
+```
+[p003_c0010] COMPETITIVE BIDDING REQUIREMENTS: The procurement actions in Schedules A, B, C, and D are subject to the competitive bidding requirements of PAL 1209 or 1265-a relating to contracts for the purchase of goods or public work. Procurement actions in the remaining Schedules are not subject to these requirements.
+[p003_c0011] BUDGET IMPACT: The purchases/contracts will result in obligating funds in the amounts listed. Funds are available in the current operating/capital budgets for this purpose.
+[p003_c0012] RECOMMENDATION: That the purchases/contracts be approved as proposed. (Items are included in the resolution of approval at the beginning of the Procurement Section.)
+
+## Page 4
+
+### [p004_c0001] BOARD RESOLUTION
+[p004_c0002] WHEREAS , in accordance with Sections 1265-a and 1209 of the Public Authorities Law and the All-Agency General Contract Procurement Guidelines, the Board authorizes the award of certain noncompetitive purchase and public work contracts, and the solicitation and award of requests for proposals regarding purchase and public work contracts; and
+[p004_c0003] WHEREAS , in accordance with the All-Agency Service Contract Procurement Guidelines and General Contract Procurement Guidelines the Board authorizes the award of certain noncompetitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts, and
+[p004_c0004] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Service Contract Procurement Guidelines, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p004_c0005] NOW, the Board resolves as follows:
+[p004_c0006] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract.
+[p004_c0007] 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals, and authorizes the solicitation of such proposals.
+[p004_c0008] 3. As to each request for proposals (for purchase and public work contracts) set forth in Schedule C for which a recommendation is made to award the contract, the Board authorizes the execution of said contract.
+[p004_c0009] 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein and ratifies each action for which ratification is requested.
+[p004_c0010] 5. The Board authorizes the execution of each of the following for which Board authorization is required: (i) the miscellaneous procurement contracts set forth in Schedule E; (ii) the personal service contracts set forth in Schedule F; (iii) the miscellaneous service contracts set forth in Schedule G; (iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; (v) the contract modifications to purchase and public work contracts set forth in Schedule I; and (vi) the modifications to miscellaneous procurement contracts set forth in Schedule J.
+[p004_c0011] 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+
+## Page 5
+
+### [p005_c0001] Long Island Rail Road
+[p005_c0002] DECEMBER 2024
+### [p005_c0003] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p005_c0004] Procurements Requiring Majority Vote:
+### [p005_c0005] I. Modifications to Purchase and Public Work Contracts
+[p005_c0006] (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p005_c0007] 1. Siemens Mobility, Inc. $787,566,410 Staff Summary Attached 7 years Contract # 244941.14 Contract for Design, Manufacture, Test, and Delivery of New Dual-Mode Locomotives; Modification to exercise Option 3 in order to purchase up to 44 additional Dual-Mode Locomotives and related non-car items.
+
+## Page 6
+
+### [p006_c0001] Schedule I: Modifications to Purchase and Public Works Contracts
+[p006_c0002] Item Number: 1
+[p006_c0003]
+
+```text
+Vendor Name (Location) Siemens Mobility, Inc. (Sacramento, California) Description Design, Manufacture, Test, and Delivery of New Dual-Mode Locomotives – Option Election Contract Term (including Options, if any) February 2021–January 2028 Option(s) included in Total Amount? Yes No Procurement Type: Competitive Noncompetitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Department: Chief Rolling Stock Programs Officer, Craig Daly
+```
+[p006_c0004]
+
+```text
+Contract Number 244941 Modification # 14 Original Amount: $252,768,764 Prior Modifications $162,993,034 Current Amount: $415,761,798 This Request: $787,566,410 % of This Request to Current Amount: 89.0% % of Modifications (including This Request) to Original Amount: 276.0%
+```
+### [p006_c0005] Discussion:
+[p006_c0006] Long Island Rail Road (“LIRR”) is requesting Board approval to exercise Option 3 of the contract awarded to Siemens Mobility, Inc. (“Siemens”) for the design, manufacturing, testing, and delivery of up to 44 dual-mode locomotives, including related non-car items such as special tools, portable test equipment, spare parts, bench test equipment, and training aids, in the total estimated amount of $787,566,410. This modification will also cover the contract extension (February 2028–December 2034) to allow time for the delivery of cars and the continuation of all terms and conditions, including the warranty.
+[p006_c0007] In December 2020, the Board authorized the award of competitively solicited Contract 244941 to Siemens for the design, manufacturing, testing, and delivery of 19 base-order locomotives including options for up to: 40 dual-mode locomotives for Metro-North Railroad (“MNR”); 20 dual-mode locomotives in an alternate configuration for Connecticut Department of Transportation (“CDOT”); 66 dual-mode locomotives in an alternate configuration for Long Island Rail Road; and 26 dual-mode locomotives in an alternate configuration for the New York State Department of Transportation. Option 1 was approved by the Board in December 2020 at the same time the base order quantity was approved. The Board approved Option 2 for six dual-mode locomotives for CDOT in June 2023.
+[p006_c0008] The 44 dual-mode locomotives under this option are needed for the replacement of existing LIRR passenger diesel locomotives that are beyond their service life. These locomotives will provide improved reliable passenger service to the LIRR’s diesel branch customers and provide more operational flexibility. Additionally, they will also reduce the LIRR’s carbon footprint featuring engines that meet Tier 4 emission regulations as defined by the U.S. Environmental Protection Agency. These locomotives will provide eco-friendliness by cutting airborne emissions by more than 85 percent.
+[p006_c0009] The pricing for option cars is subject to an adjustment formula resulting from changes in labor and material cost indices, currency exchange rates, and other agreed-upon factors included in the base contract. The option pricing was considered fair and reasonable at the time of the contract award (2021). Therefore, since Option 1 pricing has been escalated according to indices and adjusted to reflect currency changes already included in the base contract, the option price is considered fair and reasonable. The proposed escalated price was $789,534,093 in advance negotiations. Negotiations, centering on LIRR-specific modifications, resulted in a reduction of $1,967,683 for a final price of $787,566,410.
+[p006_c0010] Modifications have been made throughout this contract which, in some cases, impacted the cost of the Option locomotives. Additionally, specific modifications affecting the LIRR locomotives that differ from MNR are being addressed in this option election. Negotiations for these modifications were necessary for the modifications that impacted the LIRR locomotives.
+[p006_c0011] Based on the current contract schedule and continuous production, the delivery of the 44 Dual-Mode Locomotives is scheduled to begin in 2027 and be completed in 2031 for an overall delivery period of 72 months from the Notice of Award.
+[p006_c0012] Siemens has the experience, technical capability, resources, and facilities to perform the work required. The MTA’s Controller’s Office found that there is reasonable assurance Siemens has the financial resources to support performance under this Option. Metro North received the first two Siemens locomotives, which have successfully completed Phase 1 testing on schedule in Pueblo, Colorado. They are now in Phase 2 testing in the Metro-North environment and are expected to enter passenger service in early 2025.
+
+## Page 7
+
+### [p007_c0001] Schedule I: Modifications to Purchase and Public Works Contracts
+> [p007_c0002] The logo for the Metropolitan Transportation Authority (MTA) Long Island Rail Road. It features a black circle with the white letters "MTA" inside, followed by the text "Long Island Rail Road" in a bold, black, sans-serif font.
+[p007_c0003] Siemens has certified pursuant to EO 16 that it is not doing business in Russia.
+[p007_c0004] Any cybersecurity requirements applicable to the scope of the contract as agreed upon by the parties will be included in the contract terms and conditions prior to award.
+### [p007_c0005] MBE/WBE/TVM
+[p007_c0006] Because the base contract utilized Federal Transit Authority ("FTA") funds, federal terms and conditions apply. Therefore, the FTA Transit Vehicle Manufacturer program applies. Siemens complies with this FTA program.
+### [p007_c0007] Impact on Funding
+[p007_c0008] The 2020–2024 Capital Plan will fully fund five locomotives and 39 locomotives are contingent upon approval of the 2025–2029 Capital Plan.

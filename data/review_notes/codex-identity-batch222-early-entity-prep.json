@@ -1,0 +1,519 @@
+{
+  "note_id": "codex-identity-batch222-early-entity-prep",
+  "batch": "identity222",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "scope": {
+    "operation": "prepare_identity_cleanup_artifact_only",
+    "checkpoint_after": "identity221",
+    "issue_type": "duplicate_global_identity",
+    "global_kind": "entity",
+    "selection_note": "Focused on the early/sample entity duplicate_global_identity issues named for identity222 before the larger MTA parent-contamination cluster. This artifact proposes only high-confidence alias_merge or do_not_merge decisions and leaves ambiguous/already-guarded neighbors in skipped_review_only.",
+    "current_duplicate_snapshot": {
+      "method": "Read-only LOG.md checkpoint after identity221 plus read-only inspection of data/identity-review candidate_edges.jsonl and records.jsonl; no validate/materialize/export/provider command was run.",
+      "log_checkpoint": "After identity221, validate was recorded at 139 issues, all duplicate_global_identity: corridor=1, entity=138.",
+      "candidate_edge_snapshot": "data/identity-review/candidate_edges.jsonl generated 2026-06-23T14:08 local file timestamp; used only as validator evidence for the named early entity pairs."
+    },
+    "write_limit": "Exactly one artifact was written: data/review_notes/codex-identity-batch222-early-entity-prep.json. No overrides, LOG, manifest, canonical JSONL, DB, wiki, materialized output, export output, or validation output was mutated."
+  },
+  "prepared_count": 10,
+  "decision_type_counts": {
+    "alias_merge": 1,
+    "do_not_merge": 9
+  },
+  "proposed_durable_decisions": [
+    {
+      "decision_id": "identity222-early-entity-001",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_audit-committee-sorin",
+        "entity_catherine-sheridan-115226"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_lisa-sorin"
+        ],
+        "message": "Global entity records entity_audit-committee-sorin and entity_catherine-sheridan-115226 share identity key entity_lisa-sorin."
+      },
+      "canonical_evidence": [
+        {
+          "record_id": "entity_audit-committee-sorin",
+          "display_name": "Hon. Lisa Sorin",
+          "source_ids_count": 7
+        },
+        {
+          "record_id": "entity_catherine-sheridan-115226",
+          "display_name": "Interim President Catherine Sheridan",
+          "source_ids_count": 42
+        }
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_audit-committee-sorin",
+          "evidence_ref": "meeting_doc_189751#p003_c0007",
+          "quote": "Hon. John-Ross Rizzo Hon. Michael Fleischer Hon. Lisa Sorin"
+        },
+        {
+          "record_id": "entity_catherine-sheridan-115226",
+          "evidence_ref": "meeting_doc_106151#p011_c0004",
+          "quote": "Interim President Catherine Sheridan"
+        }
+      ],
+      "reason": "The shared Lisa Sorin key is contamination on the Catherine Sheridan record. Lisa Sorin and Catherine Sheridan are distinct people with separate board/agency contexts.",
+      "guard_notes": "Person-name contamination should be suppressed; do not alias different MTA board or agency officials merely because a member roster polluted another person record."
+    },
+    {
+      "decision_id": "identity222-early-entity-002",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_catherine-sheridan-115226",
+        "entity_mta-bridges-and-tunnels"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_catherine-sheridan",
+          "entity_catherine-sheridan-president-bridges-and-tunnels"
+        ],
+        "messages": [
+          "Global entity records entity_catherine-sheridan-115226 and entity_mta-bridges-and-tunnels share identity key entity_catherine-sheridan.",
+          "Global entity records entity_catherine-sheridan-115226 and entity_mta-bridges-and-tunnels share identity key entity_catherine-sheridan-president-bridges-and-tunnels."
+        ]
+      },
+      "canonical_evidence": [
+        {
+          "record_id": "entity_catherine-sheridan-115226",
+          "display_name": "Interim President Catherine Sheridan",
+          "entity_shape": "person"
+        },
+        {
+          "record_id": "entity_mta-bridges-and-tunnels",
+          "display_name": "MTA Bridges and Tunnels",
+          "entity_shape": "agency / TBTA"
+        }
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_catherine-sheridan-115226",
+          "evidence_ref": "meeting_doc_113966#p004_c0007",
+          "quote": "Catherine T. Sheridan, P.E., Interim President"
+        },
+        {
+          "record_id": "entity_mta-bridges-and-tunnels",
+          "evidence_ref": "meeting_doc_102771#p049_c0012",
+          "quote": "The legal name of MTA Bridges and Tunnels is Triborough Bridge and Tunnel Authority."
+        }
+      ],
+      "reason": "Catherine Sheridan is a person/official; MTA Bridges and Tunnels/TBTA is an agency. Role text naming a president of the agency is affiliation evidence, not identity.",
+      "guard_notes": "Keep agency leadership people distinct from the agency they lead."
+    },
+    {
+      "decision_id": "identity222-early-entity-003",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_department-of-buses",
+        "entity_dept-of-subways-crichlow"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_mta-nyct"
+        ],
+        "message": "Global entity records entity_department-of-buses and entity_dept-of-subways-crichlow share identity key entity_mta-nyct."
+      },
+      "canonical_evidence": [
+        {
+          "record_id": "entity_department-of-buses",
+          "display_name": "Department of Buses",
+          "source_ids_count": 43
+        },
+        {
+          "record_id": "entity_dept-of-subways-crichlow",
+          "display_name": "Department of Subways, Demetrius Crichlow",
+          "source_ids_count": 29
+        }
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_department-of-buses",
+          "evidence_ref": "meeting_doc_124731#p011_c0014",
+          "quote": "NYC Transit Department of Buses (\"DOB\") and MTA Bus Company"
+        },
+        {
+          "record_id": "entity_dept-of-subways-crichlow",
+          "evidence_ref": "meeting_doc_100346#p015_c0005",
+          "quote": "Requesting Department: Department of Subways, Demetrius Crichlow"
+        }
+      ],
+      "reason": "Department of Buses and Department of Subways/Demetrius Crichlow are different NYCT organizational/person-context records. The broad NYCT key is parent-agency contamination.",
+      "guard_notes": "Do not collapse NYCT subdepartments or department-head/person records into each other through the parent NYCT key."
+    },
+    {
+      "decision_id": "identity222-early-entity-004",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_department-of-buses",
+        "entity_mta-nyct"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_mta-nyct",
+          "entity_new-york-city-transit-authority"
+        ],
+        "messages": [
+          "Global entity records entity_department-of-buses and entity_mta-nyct share identity key entity_mta-nyct.",
+          "Global entity records entity_department-of-buses and entity_mta-nyct share identity key entity_new-york-city-transit-authority."
+        ]
+      },
+      "canonical_evidence": [
+        {
+          "record_id": "entity_department-of-buses",
+          "display_name": "Department of Buses",
+          "entity_shape": "department / subunit"
+        },
+        {
+          "record_id": "entity_mta-nyct",
+          "display_name": "MTA New York City Transit",
+          "entity_shape": "agency / authority"
+        }
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_department-of-buses",
+          "evidence_ref": "meeting_doc_108046#p001_c0004",
+          "quote": "New York City Transit Department of Buses & Department of Subways"
+        },
+        {
+          "record_id": "entity_mta-nyct",
+          "evidence_ref": "m86_sbs_progress_report_2017#p003_c0003",
+          "quote": "MTA New York City Transit (NYCT)"
+        }
+      ],
+      "reason": "NYCT Department of Buses is a subunit/context under NYCT, not the same canonical identity as the New York City Transit Authority.",
+      "guard_notes": "Parent/subunit relations should be represented separately; do not merge departments into the parent agency."
+    },
+    {
+      "decision_id": "identity222-early-entity-005",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_annual-report-2021-lirr",
+        "entity_long-island-committee"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_long-island-rail-rd-committee",
+          "entity_mta-long-island-rail-rd"
+        ],
+        "messages": [
+          "Global entity records entity_annual-report-2021-lirr and entity_long-island-committee share identity key entity_long-island-rail-rd-committee.",
+          "Global entity records entity_annual-report-2021-lirr and entity_long-island-committee share identity key entity_mta-long-island-rail-rd."
+        ]
+      },
+      "canonical_evidence": [
+        {
+          "record_id": "entity_annual-report-2021-lirr",
+          "display_name": "MTA Long Island Rail Road",
+          "entity_shape": "railroad agency"
+        },
+        {
+          "record_id": "entity_long-island-committee",
+          "display_name": "Long Island Committee",
+          "entity_shape": "board committee"
+        }
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_annual-report-2021-lirr",
+          "evidence_ref": "annual_report_narrative_2021#p093_c0006",
+          "quote": "MTA Long Island Rail Road operates commuter rail service"
+        },
+        {
+          "record_id": "entity_long-island-committee",
+          "evidence_ref": "meeting_doc_102751#p001_c0005",
+          "quote": "inform the Long Island Committee of the MTA Long Island Rail Road"
+        }
+      ],
+      "reason": "The Long Island Rail Road agency and the Long Island Committee are related but distinct. Committee references are oversight/meeting context, not the railroad agency identity.",
+      "guard_notes": "Preserve agency-vs-committee separation even when meeting documents use both names in one phrase."
+    },
+    {
+      "decision_id": "identity222-early-entity-006",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_annual-report-2021-mtapd",
+        "entity_meeting-doc-113891-john-mueller"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_john-j-mueller",
+          "entity_john-mueller"
+        ],
+        "messages": [
+          "Global entity records entity_annual-report-2021-mtapd and entity_meeting-doc-113891-john-mueller share identity key entity_john-j-mueller.",
+          "Global entity records entity_annual-report-2021-mtapd and entity_meeting-doc-113891-john-mueller share identity key entity_john-mueller."
+        ]
+      },
+      "canonical_evidence": [
+        {
+          "record_id": "entity_annual-report-2021-mtapd",
+          "display_name": "MTA Police Department",
+          "entity_shape": "agency / police department"
+        },
+        {
+          "record_id": "entity_meeting-doc-113891-john-mueller",
+          "display_name": "John Mueller",
+          "entity_shape": "person"
+        }
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_annual-report-2021-mtapd",
+          "evidence_ref": "annual_report_narrative_2021#p047_c0003",
+          "quote": "Provided systemwide policing through the MTA Police Department (MTAPD)"
+        },
+        {
+          "record_id": "entity_meeting-doc-113891-john-mueller",
+          "evidence_ref": "meeting_doc_113891#p009_c0005",
+          "quote": "MTAPD Chief of Police John Mueller"
+        }
+      ],
+      "reason": "MTAPD is an agency; John Mueller is a person/Chief of Police. The person-name keys on the agency record are contamination from leadership mentions.",
+      "guard_notes": "Keep law-enforcement agency identities distinct from named chiefs or project managers."
+    },
+    {
+      "decision_id": "identity222-early-entity-007",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_finance-committee-mta",
+        "entity_meeting-doc-124881-mnr"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_finance-committee"
+        ],
+        "message": "Global entity records entity_finance-committee-mta and entity_meeting-doc-124881-mnr share identity key entity_finance-committee."
+      },
+      "canonical_evidence": [
+        {
+          "record_id": "entity_finance-committee-mta",
+          "display_name": "MTA Finance Committee",
+          "entity_shape": "board committee"
+        },
+        {
+          "record_id": "entity_meeting-doc-124881-mnr",
+          "display_name": "MTA Metro-North Railroad",
+          "entity_shape": "railroad agency"
+        }
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_finance-committee-mta",
+          "evidence_ref": "meeting_doc_102786#p005_c0001",
+          "quote": "Minutes of the Metropolitan Transportation Authority Finance Committee Meeting"
+        },
+        {
+          "record_id": "entity_meeting-doc-124881-mnr",
+          "evidence_ref": "meeting_doc_131536#p001_c0007",
+          "quote": "AGENCY: MTA Metro-North Railroad (\"MNR\")"
+        }
+      ],
+      "reason": "The MTA Finance Committee is a board committee; Metro-North Railroad is an operating agency. Shared Finance Committee key on the Metro-North record is approval-workflow contamination.",
+      "guard_notes": "Approval routing through a Finance Committee does not make an agency the committee."
+    },
+    {
+      "decision_id": "identity222-early-entity-008",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-102746-committee",
+        "entity_meeting-doc-124881-mnr"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_metro-north-commuter-railroad-company",
+          "entity_metro-north-commuter-railroad-company-metro-north"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-102746-committee and entity_meeting-doc-124881-mnr share identity key entity_metro-north-commuter-railroad-company.",
+          "Global entity records entity_meeting-doc-102746-committee and entity_meeting-doc-124881-mnr share identity key entity_metro-north-commuter-railroad-company-metro-north."
+        ]
+      },
+      "canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-102746-committee",
+          "display_name": "Committee on the Operations of the Metro-North Commuter Railroad",
+          "entity_shape": "board committee"
+        },
+        {
+          "record_id": "entity_meeting-doc-124881-mnr",
+          "display_name": "MTA Metro-North Railroad",
+          "entity_shape": "railroad agency"
+        }
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-102746-committee",
+          "evidence_ref": "meeting_doc_102746#p001_c0006",
+          "quote": "The Committee on the Operations of the Metro-North Commuter Railroad"
+        },
+        {
+          "record_id": "entity_meeting-doc-124881-mnr",
+          "evidence_ref": "meeting_doc_129081#p002_c0007",
+          "quote": "Metro-North Commuter Railroad Company MTA Metro-North Railroad MNR"
+        }
+      ],
+      "reason": "The Metro-North operations committee oversees/monitors the railroad; it is not the same entity as Metro-North Railroad itself.",
+      "guard_notes": "Committee charter language naming the railroad should not create committee-to-agency identity merges."
+    },
+    {
+      "decision_id": "identity222-early-entity-009",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-111791-michael-baker",
+        "entity_meeting-doc-164901-iec"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_independent-engineering-consultant"
+        ],
+        "message": "Global entity records entity_meeting-doc-111791-michael-baker and entity_meeting-doc-164901-iec share identity key entity_independent-engineering-consultant."
+      },
+      "canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-111791-michael-baker",
+          "display_name": "Michael Baker International",
+          "entity_shape": "company / consultant"
+        },
+        {
+          "record_id": "entity_meeting-doc-164901-iec",
+          "display_name": "entity_meeting_doc_164901_iec",
+          "entity_shape": "generic IEC role/context"
+        }
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-111791-michael-baker",
+          "evidence_ref": "meeting_doc_113971#p017_c0005",
+          "quote": "Michael Baker INTERNATIONAL"
+        },
+        {
+          "record_id": "entity_meeting-doc-164901-iec",
+          "evidence_ref": "meeting_doc_164901#p008_c0007",
+          "quote": "Sirish Peyyetti, Program Director of the IEC"
+        }
+      ],
+      "reason": "Michael Baker International is a named firm; the one-source IEC record is a generic Independent Engineering Consultant role/context with a program director mention. The shared IEC key is role contamination, not proof of the same named firm.",
+      "guard_notes": "Only merge IEC records into Michael Baker when the source explicitly identifies Michael Baker as the IEC in that record."
+    },
+    {
+      "decision_id": "identity222-early-entity-010",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias": "entity_meeting157646-joint-committee",
+      "target": "entity_joint-lirr-metronorth-committee",
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_joint-long-island-rail-rd-and-metro-north-railroad-committees"
+        ],
+        "message": "Global entity records entity_joint-lirr-metronorth-committee and entity_meeting157646-joint-committee share identity key entity_joint-long-island-rail-rd-and-metro-north-railroad-committees."
+      },
+      "canonical_evidence": [
+        {
+          "record_id": "entity_joint-lirr-metronorth-committee",
+          "display_name": "Joint LIRR and Metro-North Committee",
+          "source_ids_count": 20
+        },
+        {
+          "record_id": "entity_meeting157646-joint-committee",
+          "display_name": "Joint Long Island Rail Road and Metro-North Railroad Committees",
+          "source_ids_count": 1
+        }
+      ],
+      "source_evidence": [
+        {
+          "record_id": "entity_joint-lirr-metronorth-committee",
+          "evidence_ref": "meeting_doc_108051#p001_c0001",
+          "quote": "JOINT LONG ISLAND RAIL ROAD & METRO-NORTH RAILROAD COMMITTEE"
+        },
+        {
+          "record_id": "entity_meeting157646-joint-committee",
+          "evidence_ref": "meeting_doc_157646#p001_c0001",
+          "quote": "Minutes of the Regular Meeting Joint Long Island Rail Road and Metro-North Railroad Committees"
+        }
+      ],
+      "reason": "Both records identify the same MTA Board joint LIRR/Metro-North railroad committee; singular/plural committee wording is a meeting-title variant.",
+      "guard_notes": "Merge only the joint committee identity; keep LIRR agency, Metro-North agency, and their separate committee records distinct."
+    }
+  ],
+  "skipped_review_only": [
+    {
+      "candidate": "entity_community-advisory-committee-2015 <> entity_community-advisory-committee-webster",
+      "confidence": "low",
+      "reason": "Both records use generic Community Advisory Committee/CAC language, but the evidence points to different project/corridor scopes: Woodhaven 2015 versus Webster/Utica context. Prior notes also flagged this pair for focused corridor review, so no durable DNM was proposed here."
+    },
+    {
+      "candidate": "entity_bloomberg-news-org <> entity_meeting-doc-155136-bloomberg",
+      "confidence": "medium",
+      "reason": "The left record is Bloomberg as a news/source label; the right record is Bloomberg terminals/communication/data-license procurement text. They may both ultimately belong to Bloomberg L.P., but the current record evidence is too thin for either merge or DNM."
+    },
+    {
+      "candidate": "entity_bt-committee-members-sep2024 <> entity_meeting-doc-205631-committee-chair-members",
+      "confidence": "medium",
+      "reason": "The left record is clearly Bridges and Tunnels Committee Members; the right source says generic Committee Chair & Members and then MTA Finance. This looks like a false friend, but the right record needs source-local committee identification before a durable guard."
+    },
+    {
+      "candidate": "entity_department-of-buses <> entity_meeting-doc-128981-nyct",
+      "confidence": "already_guarded",
+      "reason": "The exact Department of Buses versus NYCT financial-record false friend was already present in earlier review/override work; identity222 keeps the fresh Department of Buses guards scoped to still-useful exact pairs."
+    },
+    {
+      "candidate": "entity_meeting-doc-124881-mnr <> entity_metro-north-railroad / entity_mta-metro-north-2015-webster-map",
+      "confidence": "medium",
+      "reason": "Likely same Metro-North agency family, but prior notes warned that meeting_doc_124881 is heavily contaminated with Finance Committee, LIRR, and NYCT keys. Needs a cluster-aware Metro-North target-selection pass."
+    },
+    {
+      "candidate": "entity_meeting-doc-140466-nyct-committee-members <> entity_nyct-committee-2023 / entity_nyct-mta-bus-committee-charter / entity_nyct-transit-committee-members",
+      "confidence": "medium",
+      "reason": "These are NYCT committee/member/work-plan shapes, but member-list snapshots, committee charters, and operations-committee names are mixed. Kept review-only so a later NYCT committee policy pass can distinguish same committee identity from roster snapshots and committee-on-operations variants."
+    }
+  ],
+  "blockers": [
+    "No provider-backed, materialize, validate, export, canonical/generated-output, override, LOG, manifest, DB, or wiki mutation was performed.",
+    "data/identity-review candidate files are useful validator evidence but predate some identity221 cleanup; direct override checks were used to avoid knowingly duplicating already-applied exact guards."
+  ],
+  "commands_run": [
+    "pwd && rg --files | rg '(^|/)(LOG.md|data/review_notes|data/.+identity|canonical|materialized|wiki|raw/sources)'",
+    "rg -n \"identity222|identity221|duplicate_global_identity|Lisa Sorin|Catherine Sheridan|Community Advisory Committee|Webster|Department of Buses|Crichlow|John Mueller|Long Island Committee|Bloomberg|IEC|Joint LIRR|Metro-North\" .",
+    "rg --files data/review_notes data/campaigns data/validation data | rg '(identity|duplicate|review|validation|batch222|221|220|latest|issues|manifest)'",
+    "tail -n 90 LOG.md",
+    "find data -maxdepth 4 -type f \\( -name '*identity*' -o -name '*duplicate*' -o -name '*validation*' -o -name '*issues*' \\) | sort | tail -n 120",
+    "jq '.' data/review_notes/codex-identity-batch221-entity-prep.json",
+    "jq '.' data/review_notes/codex-identity-batch220-prep.json",
+    "jq '.' data/review_notes/codex-identity-community-committee-219-prep.json",
+    "ls -la data/identity-review",
+    "jq -r 'select(.kind==\"entity\" and (.validation_issue_codes // [] | index(\"duplicate_global_identity\"))) | [.left_record_id,.right_record_id,(.shared_keys|join(\";\")),(.validation_messages|join(\" | \"))] | @tsv' data/identity-review/candidate_edges.jsonl | nl -ba | sed -n '1,180p'",
+    "jq -r 'select(.kind==\"entity\" and (.validation_issue_codes // [] | index(\"duplicate_global_identity\")) and ((.left_record_id + \" \" + .right_record_id + \" \" + ((.shared_keys // [])|join(\" \")) + \" \" + ((.validation_messages // [])|join(\" \"))) | test(\"(?i)(lisa|sorin|catherine|sheridan|community-advisory|webster|department-of-buses|crichlow|long-island-committee|mtapd|john-mueller|finance|metro-north|nyct|bloomberg|iec|bt-|bridges|tunnels|joint-lirr|joint.*metro|long-island-rail-road|lirr)\"))) | {left_record_id,right_record_id,shared_keys,validation_messages}' data/identity-review/candidate_edges.jsonl",
+    "jq -r 'select(.record_id|IN(\"entity_audit-committee-sorin\",\"entity_catherine-sheridan-115226\",\"entity_mta-bridges-and-tunnels\",\"entity_community-advisory-committee-2015\",\"entity_community-advisory-committee-webster\",\"entity_department-of-buses\",\"entity_dept-of-subways-crichlow\",\"entity_meeting-doc-128981-nyct\",\"entity_mta-nyct\",\"entity_annual-report-2021-lirr\",\"entity_long-island-committee\",\"entity_annual-report-2021-mtapd\",\"entity_meeting-doc-113891-john-mueller\",\"entity_finance-committee-mta\",\"entity_meeting-doc-124881-mnr\",\"entity_bloomberg-news-org\",\"entity_meeting-doc-155136-bloomberg\",\"entity_meeting-doc-111791-michael-baker\",\"entity_meeting-doc-164901-iec\",\"entity_bt-committee-members-sep2024\",\"entity_meeting-doc-205631-committee-chair-members\",\"entity_joint-lirr-metronorth-committee\",\"entity_meeting157646-joint-committee\",\"entity_meeting-doc-102746-committee\",\"entity_nyct-committee-2023\",\"entity_meeting-doc-140466-nyct-committee-members\",\"entity_nyct-mta-bus-committee-charter\",\"entity_nyct-transit-committee-members\")) | {record_id,display_name,source_ids,identity_keys,evidence_samples:(.evidence_samples[0:5])}' data/identity-review/records.jsonl",
+    "rg -n \"Lisa Sorin|Catherine Sheridan|Community Advisory Committee|Department of Buses|Crichlow|Long Island Committee|John Mueller|Finance Committee|Bloomberg|Independent Engineering Consultant|Committee Chair and Members|Joint Long Island Rail Road and Metro-North|Joint LIRR\" raw/sources data/canonical wiki/entities wiki/sources -g 'blocks.jsonl' -g '*.jsonl' -g '*.md'",
+    "jq -r '.pairs.entity[0:8]' data/identity-overrides/do-not-merge.json",
+    "jq -r '.pairs.entity[]? | select(type==\"object\") | select((.record_ids|index(\"entity_department-of-buses\")) or (.record_ids|index(\"entity_audit-committee-sorin\")) or (.record_ids|index(\"entity_catherine-sheridan-115226\")) or (.record_ids|index(\"entity_annual-report-2021-lirr\")) or (.record_ids|index(\"entity_long-island-committee\")) or (.record_ids|index(\"entity_annual-report-2021-mtapd\")) or (.record_ids|index(\"entity_meeting-doc-113891-john-mueller\")) or (.record_ids|index(\"entity_meeting-doc-111791-michael-baker\")) or (.record_ids|index(\"entity_meeting-doc-164901-iec\")) or (.record_ids|index(\"entity_meeting-doc-205631-committee-chair-members\")) or (.record_ids|index(\"entity_meeting157646-joint-committee\"))) | [(.record_ids|join(\" <> \")), .reason, .source_decision] | @tsv' data/identity-overrides/do-not-merge.json",
+    "jq -r '.aliases.entity | to_entries[] | [.key,.value] | @tsv' data/identity-overrides/merges.json | rg \"entity_meeting157646-joint-committee|entity_joint-lirr-metronorth-committee|entity_meeting-doc-164901-iec|entity_meeting-doc-205631-committee-chair-members|entity_department-of-buses|entity_long-island-committee|entity_meeting-doc-113891-john-mueller\"",
+    "test ! -e data/review_notes/codex-identity-batch222-early-entity-prep.json && echo absent || echo exists"
+  ]
+}

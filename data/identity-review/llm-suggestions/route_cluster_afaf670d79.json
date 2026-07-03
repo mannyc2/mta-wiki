@@ -1,0 +1,154 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:34:00.992Z",
+  "packet_path": "data/identity-review/packets/route_cluster_afaf670d79.md",
+  "cluster_id": "route_cluster_afaf670d79",
+  "kind": "route",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "route_cluster_afaf670d79",
+    "kind": "route",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "route_b82-limited-brt-south-brooklyn-2017",
+          "route_b82-local"
+        ],
+        "reason": "Different service variants (limited_stop vs local) on the same base route B82. Per per-kind route rule: different variants never merge."
+      },
+      {
+        "record_ids": [
+          "route_b82-limited-brt-south-brooklyn-2017",
+          "route_b82-sbs"
+        ],
+        "reason": "Different service variants (limited_stop vs sbs) on the same base route B82. Per per-kind route rule: different variants never merge."
+      },
+      {
+        "record_ids": [
+          "route_b82-local",
+          "route_b82-sbs"
+        ],
+        "reason": "Different service variants (local vs sbs) on the same base route B82. Per per-kind route rule: different variants never merge."
+      },
+      {
+        "record_ids": [
+          "route_b82-limited-brt-south-brooklyn-2017",
+          "route_b82e-express-cb18-jun2017"
+        ],
+        "reason": "Different base route IDs (B82 vs B82E). Per route identity rule, identity = base route id + service variant; different base route IDs denote distinct routes."
+      },
+      {
+        "record_ids": [
+          "route_b82-local",
+          "route_b82e-express-cb18-jun2017"
+        ],
+        "reason": "Different base route IDs (B82 vs B82E). Distinct routes."
+      },
+      {
+        "record_ids": [
+          "route_b82-sbs",
+          "route_b82e-express-cb18-jun2017"
+        ],
+        "reason": "Different base route IDs (B82 vs B82E). Distinct routes."
+      },
+      {
+        "record_ids": [
+          "route_b82-limited-brt-south-brooklyn-2017",
+          "route_bm2-brt-south-brooklyn-2017"
+        ],
+        "reason": "Different base route IDs (B82 vs BM2). Distinct routes."
+      },
+      {
+        "record_ids": [
+          "route_b82-local",
+          "route_bm2-brt-south-brooklyn-2017"
+        ],
+        "reason": "Different base route IDs (B82 vs BM2). Distinct routes."
+      },
+      {
+        "record_ids": [
+          "route_b82-sbs",
+          "route_bm2-brt-south-brooklyn-2017"
+        ],
+        "reason": "Different base route IDs (B82 vs BM2). Distinct routes."
+      },
+      {
+        "record_ids": [
+          "route_b82e-express-cb18-jun2017",
+          "route_bm2-brt-south-brooklyn-2017"
+        ],
+        "reason": "Different base route IDs (B82E vs BM2). Distinct routes."
+      },
+      {
+        "record_ids": [
+          "route_b82-limited-brt-south-brooklyn-2017",
+          "route_bm5-brt-south-brooklyn-2017"
+        ],
+        "reason": "Different base route IDs (B82 vs BM5). Distinct routes."
+      },
+      {
+        "record_ids": [
+          "route_b82-local",
+          "route_bm5-brt-south-brooklyn-2017"
+        ],
+        "reason": "Different base route IDs (B82 vs BM5). Distinct routes."
+      },
+      {
+        "record_ids": [
+          "route_b82-sbs",
+          "route_bm5-brt-south-brooklyn-2017"
+        ],
+        "reason": "Different base route IDs (B82 vs BM5). Distinct routes."
+      },
+      {
+        "record_ids": [
+          "route_b82e-express-cb18-jun2017",
+          "route_bm5-brt-south-brooklyn-2017"
+        ],
+        "reason": "Different base route IDs (B82E vs BM5). Distinct routes."
+      },
+      {
+        "record_ids": [
+          "route_bm2-brt-south-brooklyn-2017",
+          "route_bm5-brt-south-brooklyn-2017"
+        ],
+        "reason": "Different base route IDs (BM2 vs BM5). Distinct routes."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "route_b82-limited-brt-south-brooklyn-2017",
+        "aliases": [
+          "route_b82"
+        ],
+        "reason": "Base key shared with other B82 records, not a merge alias."
+      },
+      {
+        "record_id": "route_b82-local",
+        "aliases": [
+          "route_b82"
+        ],
+        "reason": "Base key shared with other B82 records, not a merge alias."
+      },
+      {
+        "record_id": "route_b82-sbs",
+        "aliases": [
+          "route_b82"
+        ],
+        "reason": "Base key shared with other B82 records, not a merge alias."
+      }
+    ],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "All six records have distinct identity keys: the three B82 records differ in service variant (limited, local, sbs), and the remaining three records have different base route IDs (B82E, BM2, BM5). The per-kind route rule that different variants never merge, and that different base route IDs denote different routes, directly applies. No ambiguity exists because payload identity fields clearly specify route_id and service_variant for each record."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-33-30-584Z_1282984-645ef0e2_identity-review-run_route-cluster-afaf670d79",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-33-30-584Z_2026-06-23T14-33-30-584Z_1282984-645ef0e2_identity-review-run_route-cluster-afaf670d79.jsonl"
+}

@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T23-06-42-606Z_1976810-0ee807d5_ingest_2012-11-sbs-webster-cac4-summary",
+  "generated_at": "2026-06-11T05:06:16.746Z",
+  "dry_run": false,
+  "wrote": true,
+  "decision_count": 23,
+  "reviewed_count": 8,
+  "alias_additions": [
+    {
+      "kind": "route",
+      "alias": "route_bx15-ace",
+      "target": "route_bx15-ltd-webster-2012",
+      "decision_id": "bx15-limited-link"
+    }
+  ],
+  "aliases_already_present": [],
+  "do_not_merge_additions": [],
+  "relation_submissions": 4,
+  "quarantined": 0,
+  "conflicts": [],
+  "paths": {
+    "merges": "data/identity-overrides/merges.json",
+    "do_not_merge": "data/identity-overrides/do-not-merge.json",
+    "relation_submissions_jsonl": "data/submissions/2026-06-10T23-06-42-606Z_1976810-0ee807d5_ingest_2012-11-sbs-webster-cac4-summary_canonicalize.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-06-42-606Z_1976810-0ee807d5_ingest_2012-11-sbs-webster-cac4-summary/apply-quarantine.jsonl",
+    "apply_report": "data/canonicalize/2026-06-10T23-06-42-606Z_1976810-0ee807d5_ingest_2012-11-sbs-webster-cac4-summary/apply-report.json"
+  }
+}

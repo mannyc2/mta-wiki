@@ -1,0 +1,213 @@
+{
+  "batch": "identity212",
+  "generated_at": "2026-06-23T12:27:19Z",
+  "candidates": [
+    {
+      "kind": "entity",
+      "keep": "entity_mta-bridges-and-tunnels",
+      "alias": "entity_meeting-doc-124881-bridges-tunnels",
+      "identity_key": "entity_mta-bridges-and-tunnels",
+      "evidence": [
+        "entity_mta-bridges-and-tunnels: display_name 'MTA Bridges and Tunnels'; payload entity_name 'MTA Bridges and Tunnels', acronym 'TBTA', entity_type 'agency'; aliases include entity_b-and-t, entity_bridges-and-tunnels, entity_mta-bridges-tunnels, and entity_triborough-bridge-and-tunnel-authority; evidence includes meeting_doc_100216#p006_c0001, meeting_doc_100231#p001_c0006, meeting_doc_100241#p001_c0006.",
+        "entity_meeting-doc-124881-bridges-tunnels: display_name 'MTA Bridges and Tunnels'; payload entity_name 'B&T', acronym 'MTA Bridges and Tunnels', entity_type 'agency', organization 'Metropolitan Transportation Authority'; aliases include entity_mta-bridges-and-tunnels, entity_b-and-t, entity_bridges-and-tunnels, and many B&T/TBTA variants; evidence includes meeting_doc_104736#p001_c0006, meeting_doc_124881#p004_c0011, meeting_doc_129081#p002_c0007."
+      ],
+      "reason": "Exact agency identity. The alias record is a large B&T/MTA Bridges and Tunnels cluster that already carries entity_mta-bridges-and-tunnels as an alias, but it remains a separate canonical record and is not directly covered by current entity merge overrides or batches210-211.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_mta-bridges-and-tunnels",
+      "alias": "entity_meeting-doc-68121-bridges-tunnels",
+      "identity_key": "entity_bridges-and-tunnels",
+      "evidence": [
+        "entity_mta-bridges-and-tunnels: display_name 'MTA Bridges and Tunnels'; payload includes entity_name variants 'MTA Bridges and Tunnels', 'Bridges and Tunnels', 'TBTA', and 'B&T'; aliases include entity_bridges-and-tunnels and entity_bridges-and-tunnels-b-and-t; source_ids span MTA B&T/TBTA records.",
+        "entity_meeting-doc-68121-bridges-tunnels: display_name 'Bridges and Tunnels (B&T)'; payload entity_name 'Bridges and Tunnels', acronym 'B&T', entity_type 'agency', description 'MTA Bridges and Tunnels operating agency that provides operating surplus transfers as inter-agency subsidy transactions'; aliases entity_bridges-and-tunnels and entity_bridges-and-tunnels-b-and-t; evidence meeting_doc_68121#p001_c0002."
+      ],
+      "reason": "Exact B&T agency identity. The single-source alias is the same MTA Bridges and Tunnels / Bridges and Tunnels agency, not a committee or project-specific role.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_bt-committee-members-sep2024",
+      "alias": "entity_bt-committee-members",
+      "identity_key": "entity_bridges-and-tunnels-committee-members",
+      "evidence": [
+        "entity_bt-committee-members-sep2024: display_name 'Bridges and Tunnels Committee Members'; payload entity_name 'Bridges and Tunnels Committee', entity_type 'committee', organization/parent_organization 'MTA Bridges and Tunnels'; aliases include entity_bridges-and-tunnels-committee, entity_bridges-and-tunnels-committee-members, entity_committee-chair-and-members, and entity_mta-bridges-and-tunnels-committee; evidence meeting_doc_151591#p001_c0005, meeting_doc_151591#p001_c0006.",
+        "entity_bt-committee-members: display_name 'Bridges and Tunnels Committee Members'; payload entity_name 'Bridges and Tunnels Committee', entity_type 'committee'; aliases entity_bridges-and-tunnels-committee and entity_bridges-and-tunnels-committee-members; evidence meeting_doc_37056#p001_c0005, meeting_doc_37056#p001_c0006, meeting_doc_37056#p001_c0007."
+      ],
+      "reason": "Same MTA Bridges and Tunnels committee/member-list entity label with identical aliases and compatible committee payloads. This is not the broad agency B&T record.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_meeting-doc-ddcr",
+      "alias": "entity_mta-diversity-civil-rights-1q2023",
+      "identity_key": "entity_department-of-diversity-and-civil-rights",
+      "evidence": [
+        "entity_meeting-doc-ddcr: display_name 'MTA Department of Diversity and Civil Rights'; payload entity_name 'MTA Department of Diversity and Civil Rights', acronym 'DDCR', entity_type 'department', parent_organization 'Metropolitan Transportation Authority'; aliases include entity_department-of-diversity-and-civil-rights and entity_mta-department-of-diversity-and-civil-rights; evidence meeting_doc_102781#p003_c0015, meeting_doc_102781#p013_c0001, meeting_doc_102736#p012_c0001.",
+        "entity_mta-diversity-civil-rights-1q2023: display_name 'MTA Department of Diversity and Civil Rights'; payload entity_name 'Department of Diversity and Civil Rights', parent_organization 'Metropolitan Transportation Authority', description 'MTA department responsible for EEO complaints and lawsuits reporting'; aliases entity_department-of-diversity-and-civil-rights and entity_mta-department-of-diversity-and-civil-rights; evidence meeting_doc_113961#p017_c0001, meeting_doc_113961#p017_c0002."
+      ],
+      "reason": "Exact MTA DDCR department identity with matching department name, parent organization, and aliases. Current overrides cover other DDCR aliases but not this canonical alias record.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_brt-bx6-cb9-nyct-ops-planning",
+      "alias": "entity_nyct-operations-planning-brt-bx6-cb4",
+      "identity_key": "entity_nyct-operations-planning",
+      "evidence": [
+        "entity_brt-bx6-cb9-nyct-ops-planning: display_name/entity_name 'NYCT Operations Planning'; payload entity_type 'department'; aliases include entity_nyct-operations-planning, entity_nyct-operations-planning-brt-bx6-cb2, and entity_nyct-ops-planning-brt-bx6-cb12-may2022; evidence brt_bx6_cb2_edc_may2022#p010_c0009, brt_bx6_cb2_edc_may2022#p011_c0005, brt_bx6_cb9_may2022#p009_c0009.",
+        "entity_nyct-operations-planning-brt-bx6-cb4: display_name/entity_name 'NYCT Operations Planning'; payload entity_type 'program', description 'Source of bus reliability and ridership data in the Bx6 SBS presentation'; alias entity_nyct-operations-planning; evidence brt_bx6_cb4_may2022#p010_c0009, brt_bx6_cb4_may2022#p011_c0005."
+      ],
+      "reason": "Exact unit identity across Bx6 presentation records. Batch210 already proposed the CB2 and CB12 aliases for this keep; this CB4 singleton is the same NYCT Operations Planning entity and is not in batch210-211.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_meeting-doc-189866-p-dietlin",
+      "alias": "entity_p-dietlin-fall-trackwork",
+      "identity_key": "entity_p-dietlin",
+      "evidence": [
+        "entity_meeting-doc-189866-p-dietlin: display_name/entity_name 'P. Dietlin'; payload title 'Sr. Vice President - Operations', entity_type 'person', role 'Department Head - SR. VICE PRESIDENT - OPERATIONS', organization 'Long Island Rail Road'; aliases include entity_p-dietlin, entity_meeting-doc-192156-p-dietlin, and entity_meeting-doc-205616-p-dietlin; evidence meeting_doc_189866#p001_c0002, meeting_doc_192156#p001_c0003, meeting_doc_205616#p001_c0002.",
+        "entity_p-dietlin-fall-trackwork: display_name/entity_name 'P. Dietlin'; payload entity_type 'person', role 'Department Head - Sr. Vice President Operations'; alias entity_p-dietlin; evidence meeting_doc_186721#p001_c0003."
+      ],
+      "reason": "Exact person label with the same uncommon initial/surname and same Department Head / Senior Vice President Operations role. The fall-trackwork singleton is not already covered by the P. Dietlin candidates in batch210.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_vision-zero-sept2016",
+      "alias": "entity_vision-zero-utica-apr2016",
+      "identity_key": "entity_vision-zero",
+      "evidence": [
+        "entity_vision-zero-sept2016: display_name/entity_name 'Vision Zero'; payload entity_type 'program', description 'Multiagency effort to reduce traffic fatalities'; aliases entity_sbwhh-vision-zero and entity_vision-zero; evidence brt_bx6_south_bronx_sept2016#p007_c0004, south_brooklyn_whh_fraser_square#p001_c0015.",
+        "entity_vision-zero-utica-apr2016: display_name/entity_name 'Vision Zero'; payload entity_type 'program', description 'Vision Zero Priority Corridor program for street safety, targeting elimination of traffic fatalities and severe injuries'; alias entity_vision-zero; evidence brt_cb17_uticaave_apr2016#p003_c0003, brt_cb17_uticaave_apr2016#p033_c0002."
+      ],
+      "reason": "Exact program identity. Both records describe NYC Vision Zero as a traffic-safety program and share the entity_vision-zero alias.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_nyct-cost-price-analysis-unit",
+      "alias": "entity_cost-price-analysis-unit-192241",
+      "identity_key": "entity_cost-price-analysis-unit",
+      "evidence": [
+        "entity_nyct-cost-price-analysis-unit: display_name 'NYC Transit Cost Price Analysis Unit'; payload entity_name 'NYC Transit's Cost Price Analysis Unit', entity_type 'unit', acronym 'CPAU'; merged names include 'Cost Price Analysis Unit' and 'MTA Cost Price Analysis Unit'; aliases include entity_cost-price-analysis-unit and entity_mta-cost-price-analysis-unit; evidence meeting_doc_105946#p007_c0011, meeting_doc_111756#p006_c0010, meeting_doc_138336#p001_c0009.",
+        "entity_cost-price-analysis-unit-192241: display_name 'Cost Price Analysis Unit'; payload entity_name 'Cost Price Analysis Unit (CPAU)', entity_type 'unit', organization 'MTA Procurement'; aliases entity_cost-price-analysis-unit and entity_cost-price-analysis-unit-cpau; evidence meeting_doc_192241#p006_c0010, meeting_doc_192241#p012_c0009."
+      ],
+      "reason": "Same CPAU / Cost Price Analysis Unit procurement review unit, with identical shared alias and compatible unit payloads. The organization wording differs (NYCT/MTA Procurement), but the alias record explicitly expands to CPAU and the keep already includes MTA Cost Price Analysis Unit variants.",
+      "confidence": "high"
+    }
+  ],
+  "do_not_merge": [
+    {
+      "kind": "entity",
+      "record_ids": [
+        "entity_catherine-rinaldi",
+        "entity_richard-davey-nyct-president"
+      ],
+      "identity_key": "entity_catherine-rinaldi-president-metro-north-railroad-lirr-interim-president",
+      "evidence": [
+        "entity_catherine-rinaldi: display_name/entity_name 'Catherine Rinaldi'; payload entity_type 'person', title 'Interim President (LIRR) / President (Metro-North)', role 'President, Metro-North Railroad'; aliases include entity_catherine-rinaldi-president-metro-north-railroad-lirr-interim-president; evidence meeting_doc_102686#p001_c0010, meeting_doc_102686#p001_c0012.",
+        "entity_richard-davey-nyct-president: display_name 'Richard Davey, President of New York City Transit'; payload entity_name 'Richard Davey', entity_type 'person', title/role 'President of New York City Transit'; aliases incorrectly include entity_catherine-rinaldi and entity_catherine-rinaldi-president-metro-north-railroad-lirr-interim-president; evidence meeting_doc_102836#p004_c0003, meeting_doc_102841#p003_c0013."
+      ],
+      "reason": "Different people. The shared Catherine Rinaldi identity key on the Richard Davey record is a false-positive alias contamination from president-role context, not a person identity match.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-131651-mta-chief-investment-officer",
+        "entity_mta-entity-update-2025"
+      ],
+      "identity_key": "entity_mta-chief-investment-officer",
+      "evidence": [
+        "entity_meeting-doc-131651-mta-chief-investment-officer: display_name/entity_name 'MTA Chief Investment Officer'; payload entity_type 'office'; alias entity_mta-chief-investment-officer; evidence meeting_doc_131651#p002_c0010, meeting_doc_131651#p005_c0004.",
+        "entity_mta-entity-update-2025: display_name 'Metropolitan Transportation Authority (MTA)'; payload entity_name 'Metropolitan Transportation Authority', entity_type 'transit_authority', organization/parent identity for broad MTA records; source-backed agency cluster spans many MTA sources."
+      ],
+      "reason": "Generic office-vs-agency collision. The MTA Chief Investment Officer is an office/role within MTA, not the Metropolitan Transportation Authority entity itself.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "record_ids": [
+        "entity_mta-chief-procurement-officer",
+        "entity_mta-procurement"
+      ],
+      "identity_key": "entity_mta-office-of-the-chief-procurement-officer",
+      "evidence": [
+        "entity_mta-chief-procurement-officer: display_name/entity_name 'Office of the Chief Procurement Officer'; payload entity_type 'office', organization 'MTA'; aliases include entity_mta-office-of-the-chief-procurement-officer and entity_office-of-the-chief-procurement-officer; evidence meeting_doc_100276#p009_c0002, meeting_doc_121156#p001_c0003, meeting_doc_111756#p001_c0003.",
+        "entity_mta-procurement: display_name/entity_name 'MTA Procurement'; payload entity_type 'department', organization 'MTA', description 'MTA Procurement Department, Kuvershen Ayer, CPO'; aliases include entity_mta-procurement-department, entity_mta-procurement-division, and entity_mta-office-of-the-chief-procurement-officer; evidence meeting_doc_100346#p007_c0003, meeting_doc_100346#p004_c0001, meeting_doc_107536#p004_c0001."
+      ],
+      "reason": "Related but not identical MTA procurement entities. The Office of the Chief Procurement Officer is a specific office/role context, while MTA Procurement is the broader department/division.",
+      "confidence": "high"
+    }
+  ],
+  "skipped": [
+    {
+      "reason": "Already covered by current entity merge overrides, despite appearing in duplicate_global_identity validation issues: 34th Street Partnership, Arnie Bloch, Bedford-Mosholu Community Association, Bronx Borough President's Office, Fordham Road BID, Hudson Yards Development Corporation, Jamaica Center BID, Murray Hill Neighborhood Association, NYC TLC, NYPD, NYPIRG Straphangers Campaign, Port Authority of New York and New Jersey, Scott Stringer, Will Carry, and Zetlin Strategic Communications.",
+      "records_sample": [
+        "entity_34th-st-partnership-20110314 -> entity_34th-st-partnership-201103",
+        "entity_arnie-bloch-20110118 -> entity_arnie-bloch-20100921",
+        "entity_nypd-20100615 -> entity_nypd",
+        "entity_port-authority-ny-nj-2011 -> entity_port-authority-ny-nj"
+      ]
+    },
+    {
+      "reason": "Skipped broad community-board and CAC collisions unless already in overrides or useful as DNM context. These require borough/project-specific guard work and are easy to over-merge.",
+      "records_sample": [
+        "entity_community-advisory-committee-flushing-jamaica",
+        "entity_community-advisory-committee-webster",
+        "entity_brooklyn-community-board-1",
+        "entity_community-board-1-bronx-2012-02",
+        "entity_community-board-1-manhattan-2013-06"
+      ]
+    },
+    {
+      "reason": "Skipped acronym-only or mixed committee-member candidates with weaker identity evidence.",
+      "records_sample": [
+        "entity_smg-201531 / entity_smg-meeting-doc-201706",
+        "entity_nyct-committee-dec2024 / entity_nyct-transit-committee-members",
+        "entity_meeting-doc-205631-committee-chair-members / entity_bt-committee-members-sep2024"
+      ]
+    },
+    {
+      "reason": "Skipped direct repeats from identity210-211.",
+      "records_sample": [
+        "entity_cdot-meeting-doc-104741 / entity_meeting-doc-98256-cdot",
+        "entity_brt-bx6-cb9-nyct-ops-planning / entity_nyct-operations-planning-brt-bx6-cb2",
+        "entity_brt-bx6-cb9-nyct-ops-planning / entity_nyct-ops-planning-brt-bx6-cb12-may2022",
+        "entity_meeting-doc-189866-p-dietlin / entity_meeting-doc-192156-p-dietlin",
+        "entity_meeting-doc-189866-p-dietlin / entity_meeting-doc-205616-p-dietlin"
+      ]
+    }
+  ],
+  "guard_summary": {
+    "scope": "Prepared next safe entity identity cleanup batch after identity210-211.",
+    "allowed_write": "Only this artifact was written: data/review_notes/codex-identity-batch212-prep.json.",
+    "source_of_truth_mutation": "none",
+    "commands_used": [
+      "rg read-only inspection",
+      "jq read-only inspection of data/canonical/entities.jsonl, data/identity-review/validation_issues.jsonl, data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, and batches210-211",
+      "date for generated_at"
+    ],
+    "commands_not_used": [
+      "provider/external LLM commands",
+      "materialize",
+      "full validate",
+      "export/generated-output rewrite commands",
+      "canonical JSONL/DB/wiki/submission/LOG/manifest/override edits"
+    ],
+    "filters": [
+      "Excluded direct aliases already present in data/identity-overrides/merges.json.",
+      "Excluded direct DNM pairs already present in data/identity-overrides/do-not-merge.json.",
+      "Excluded direct candidates and DNM pairs already proposed in data/review_notes/codex-identity-batch210-prep.json and data/review_notes/codex-identity-batch211-prep.json.",
+      "Preferred exact same person/org/unit/program labels with compatible payload entity_type and source-backed evidence refs.",
+      "Used do_not_merge only for clear generic-role or contaminated-alias false positives.",
+      "Avoided broad community-board/CAC traps except in skipped notes."
+    ],
+    "candidate_count": 8,
+    "do_not_merge_count": 3,
+    "notes": "The worktree was already dirty, including source-of-truth and generated files. This prep did not revert, overwrite, materialize, validate, export, or mutate those files."
+  }
+}

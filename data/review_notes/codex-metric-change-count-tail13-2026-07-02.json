@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-07-02",
+  "agent": "Codex",
+  "mode": "deterministic_post_ingest_cleanup",
+  "bucket": "metric_claims missing payload.unit_normalized.unit_family",
+  "constraints": {
+    "external_provider_llms_used": false,
+    "banned_commands_used": false,
+    "notes": "No ingest/write/ask/schema/provider-profile commands, identity-review-run, or ontology-normalize-run were used."
+  },
+  "subagents": [
+    {
+      "id": "019f20f7-602f-7993-9974-dc19bba01c2c",
+      "nickname": "Copernicus",
+      "mode": "read_only_audit",
+      "result": "Audited remaining metric missing-unit rows and recommended exact gated handling for crime/arrest change-count rows plus safety/rate opportunities. No files were edited by the subagent."
+    }
+  ],
+  "baseline_before_slice": {
+    "metric_claims_total": 36534,
+    "missing_unit_family": 26,
+    "finite_missing_unit_family": 25,
+    "distinct_missing_metric_names": 23,
+    "other_unit_family": 4
+  },
+  "after_slice": {
+    "metric_claims_total": 36534,
+    "missing_unit_family": 13,
+    "finite_missing_unit_family": 12,
+    "distinct_missing_metric_names": 13,
+    "other_unit_family": 4
+  },
+  "implemented_rules": [
+    {
+      "rule": "Exact stored-count metric units for budgeted_resources",
+      "normalized_unit": "resources",
+      "unit_family": "count",
+      "guard": "Exact metric name from missing-unit tail."
+    },
+    {
+      "rule": "Exact safety metric unit for collisions",
+      "normalized_unit": "collisions",
+      "unit_family": "safety",
+      "guard": "Exact metric name from audited NTD collision row."
+    },
+    {
+      "rule": "Exact rate unit for felony_crimes_per_day",
+      "normalized_unit": "crimes_per_day",
+      "unit_family": "count_rate",
+      "guard": "Exact metric name from audited subway felony-crimes-per-day wording."
+    },
+    {
+      "rule": "Gated safety unit for subway_fires_12mo_rolling",
+      "normalized_unit": "fires",
+      "unit_family": "safety",
+      "guard": "Exact metric name plus non-name subway/systemwide evidence; bare mixed-count/percent text without context remains unresolved."
+    },
+    {
+      "rule": "Gated count/enforcement units for crime and arrest change rows",
+      "metric_names": [
+        "hate_crime_count_change",
+        "hate_crimes_change",
+        "major_felony_change",
+        "total_arrests_change",
+        "total_major_felonies_change",
+        "tos_arrests_change"
+      ],
+      "guard": "Exact metric name, finite integer value, raw_value_text containing the stored integer, and comparison/diff evidence from change/comparison/comparison_period/period/category/scope fields. Bare numeric change rows remain unresolved."
+    }
+  ],
+  "materialized_effect": {
+    "missing_unit_family_delta": -13,
+    "rows_cleared": [
+      "budgeted_resources",
+      "collisions",
+      "felony_crimes_per_day",
+      "subway_fires_12mo_rolling",
+      "hate_crime_count_change",
+      "hate_crimes_change",
+      "major_felony_change",
+      "major_felony_change",
+      "total_arrests_change",
+      "total_arrests_change",
+      "total_major_felonies_change",
+      "total_major_felonies_change",
+      "tos_arrests_change"
+    ]
+  },
+  "remaining_missing_unit_family": [
+    "cares_program_count",
+    "infrastructure_protection",
+    "internal_eeo_complaints_by_basis",
+    "procurement_amount",
+    "revenue_vehicles",
+    "ridership",
+    "ridership_recovery_rate",
+    "substantial_completion_date",
+    "subway_fires",
+    "traffic_fatalities_and_injuries",
+    "train_derailments",
+    "vacancies",
+    "workforce_development"
+  ],
+  "remaining_other_unit_family": [
+    {
+      "metric_name": "cost_per_daily_rider",
+      "unit": "2027 $M",
+      "note": "Cost-row unit repair needs policy/source review; no broad alias added."
+    },
+    {
+      "metric_name": "substantial_completion_date",
+      "unit": "year",
+      "note": "Date-shaped metric; held for date-vs-unit policy."
+    },
+    {
+      "metric_name": "target_completion_year",
+      "unit": "year",
+      "note": "Date-shaped metric; held for date-vs-unit policy."
+    },
+    {
+      "metric_name": "forecasted_revenue_service_date",
+      "unit": "year",
+      "note": "Date-shaped metric; held for date-vs-unit policy."
+    }
+  ],
+  "intentional_deferrals": [
+    "Bare numeric subway_fires and train_derailments remain unresolved unless payload/context carries fire or derailment evidence.",
+    "traffic_fatalities_and_injuries is a composite value/value_min row and needs representation policy rather than a simple unit guess.",
+    "internal_eeo_complaints_by_basis has conflicting raw text and stored value semantics.",
+    "revenue_vehicles appears likely to be a misnamed revenue-passenger/ridership row and needs a source/payload repair path.",
+    "substantial_completion_date and year/date rows need date-metric policy rather than unit-family normalization.",
+    "procurement_amount lacks a stored value in current payload and remains unresolved.",
+    "cares_program_count, infrastructure_protection, ridership_recovery_rate, and workforce_development need narrower object/policy review."
+  ],
+  "verification": {
+    "focused_tests": {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "result": "278 pass, 0 fail, 4995 expect() calls"
+    },
+    "typecheck": {
+      "command": "bun run typecheck",
+      "result": "passed"
+    },
+    "materialize": {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "Materialized 93067/98115 submissions; retired submissions skipped: 265; pages: 7335; SQLite FTS quick_check: ok"
+    },
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "Issues: 0; submissions: 98115; canonical records: 84027; wiki pages: 7331"
+    }
+  },
+  "next_lanes": [
+    "Inspect the 13 remaining missing-unit rows for one more exact deterministic rule or an explicit representation deferral.",
+    "Audit date-shaped metric rows and decide whether they should normalize to date metadata, remain metrics with date family, or be retired/split.",
+    "Audit revenue_vehicles source context for a deterministic metric-name repair path."
+  ]
+}

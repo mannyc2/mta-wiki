@@ -1,0 +1,245 @@
+{
+  "batch_id": "codex-identity-batch105",
+  "created_at": "2026-06-23T04:21:07Z",
+  "prepared_count": 8,
+  "all_pass": true,
+  "scope": {
+    "included_kinds": [
+      "route"
+    ],
+    "excluded_kinds": [
+      "corridor",
+      "entity",
+      "project",
+      "treatment_component"
+    ],
+    "note": "Prepared as a CORRIDOR/ROUTE ONLY batch; no corridor aliases were needed because eight higher-confidence route-only candidates were available."
+  },
+  "expected_delta": {
+    "duplicate_global_identity": -8
+  },
+  "proposed_aliases": [
+    {
+      "kind": "route",
+      "alias_id": "route_b17-eastern-pkwy-cb8-apr2025",
+      "target_id": "route_b17-eastern-pkwy-apr2025",
+      "reason": "Same global route: both records are B17 local service in Brooklyn/Eastern Parkway context. The target already merges the same B17 local route from CB9 April 2025 and meeting_doc_160441 evidence; the alias is the CB8 April 2025 instance of the same route.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "B17",
+          "service_variant": "local",
+          "route_type_normalized": "local"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "B17",
+          "service_variant": "local",
+          "route_type_normalized": "local"
+        }
+      },
+      "source_evidence_refs": [
+        "eastern_pkwy_schenectady_ave_ralph_ave_cb8_apr2025#p009_c0005",
+        "eastern_pkwy_schenectady_ave_ralph_ave_cb9_apr2025#p009_c0005"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_b60-cb18-jun2017",
+      "target_id": "route_b60",
+      "reason": "Same global route: both records are B60 local bus service in Brooklyn. The alias is a one-source B60 local mention from the B82 South Brooklyn CB18 June 2017 deck; the target is the broader B60 route record with ten source contexts and the same route/service variant.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "B60",
+          "service_variant": "local",
+          "route_type_normalized": "local"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "B60",
+          "service_variant": "local",
+          "route_type_normalized": "local"
+        }
+      },
+      "source_evidence_refs": [
+        "brt_south_brooklyn_b82_cb18_jun2017#p037_c0005",
+        "better_buses#p001_b0001"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_b69-flatbush-ave-cb2-jun2025",
+      "target_id": "route_b69-flatbush-ave-apr2026",
+      "reason": "Same global route: both records are B69 local service in Brooklyn/Flatbush Avenue context. The alias is a single CB2 June 2025 B69 local route record; the target is the multi-source B69 local Flatbush Avenue route record.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "B69",
+          "service_variant": "local",
+          "route_type_normalized": "local"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "B69",
+          "service_variant": "local",
+          "route_type_normalized": "local"
+        }
+      },
+      "source_evidence_refs": [
+        "flatbush_ave_cb2_jun2025#p001_c0004",
+        "flatbush_ave_bus_priority_mtp_briefing_apr2026#p015_c0001"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_b69-flatbush-sept2025",
+      "target_id": "route_b69-flatbush-ave-apr2026",
+      "reason": "Same global route: both records are B69 local service in Brooklyn/Flatbush Avenue context. The alias describes potential B69 reroutes; the target already represents the same B69 local route across Flatbush Avenue sources.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "B69",
+          "service_variant": "local",
+          "route_type_normalized": "local"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "B69",
+          "service_variant": "local",
+          "route_type_normalized": "local"
+        }
+      },
+      "source_evidence_refs": [
+        "flatbush_ave_bus_priority_sept2025#p017_c0001",
+        "flatbush_ave_bus_priority_cb8_oct2025#p014_c0001",
+        "flatbush_ave_bus_priority_mtp_briefing_apr2026#p015_c0001"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_x28-x38-bay-pkwy-nov2024",
+      "target_id": "route_x28-x38-bay-pkwy",
+      "reason": "Same global route grouping: both records identify X28/X38 express bus service on the Bay Parkway/Cropsey Avenue corridor, with identical route_id and express service variant. The alias is the November 2024 instance; the target is the January 2025 instance.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "X28/X38",
+          "service_variant": "express",
+          "route_type_normalized": "express"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "X28/X38",
+          "service_variant": "express",
+          "route_type_normalized": "express"
+        }
+      },
+      "source_evidence_refs": [
+        "bay_pkwy_cropsey_ave_nov2024#p004_c0002",
+        "bay_pkwy_cropsey_ave_jan2025#p004_c0002"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_x28-x38-express-cb12-jun2025",
+      "target_id": "route_x28-x38-bay-pkwy",
+      "reason": "Same global route grouping: both records identify X28/X38 express bus service on the Bay Parkway/Cropsey Avenue corridor, with identical route_id and express service variant. The alias is the CB12 June 2025 instance; the target is the January 2025 instance.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "X28/X38",
+          "service_variant": "express",
+          "route_type_normalized": "express"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "X28/X38",
+          "service_variant": "express",
+          "route_type_normalized": "express"
+        }
+      },
+      "source_evidence_refs": [
+        "bay_pkwy_cropsey_ave_cb12_jun2025#p004_c0002",
+        "bay_pkwy_cropsey_ave_jan2025#p004_c0002"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_meeting-doc-115256-q58",
+      "target_id": "route_q58",
+      "reason": "Same global route: both records are Q58 local service in Queens. The alias is a one-source Q58 Bus Route record from meeting_doc_115256; the target is the broader Q58 local route record with eleven source contexts.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "Q58",
+          "service_variant": "local",
+          "route_type_normalized": "local"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "Q58",
+          "service_variant": "local",
+          "route_type_normalized": "local"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_115256#p015_c0010",
+        "ace_routes_dataset_dictionary#p001_b0017"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_bxm1-jun2025",
+      "target_id": "route_bxm1",
+      "reason": "Same global route: both records are BxM1 express bus service. The alias is a single June 2025 116th Street study-area BxM1 express record; the target is the broader BxM1 express route record with nine source contexts.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "BxM1",
+          "service_variant": "express",
+          "route_type_normalized": "express"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "BxM1",
+          "service_variant": "express",
+          "route_type_normalized": "express"
+        }
+      },
+      "source_evidence_refs": [
+        "116_st_morningside_ave_pleasant_ave_cb10_jun2025#p010_c0005",
+        "better_buses#p001_b0001"
+      ]
+    }
+  ],
+  "guard_summary": {
+    "record_existence_and_kind": {
+      "command": "sqlite3 -header -column data/canonical.db \"select r.record_id, r.record_kind, r.display_name, routes.route_id, json_extract(r.payload,'$.service_variant') as service_variant, routes.route_type_normalized, (select count(*) from record_sources rs where rs.record_id=r.record_id) as source_count from records r join routes on r.record_id=routes.record_id where r.record_id in ('route_b17-eastern-pkwy-cb8-apr2025','route_b17-eastern-pkwy-apr2025','route_b60-cb18-jun2017','route_b60','route_b69-flatbush-ave-cb2-jun2025','route_b69-flatbush-sept2025','route_b69-flatbush-ave-apr2026','route_x28-x38-bay-pkwy-nov2024','route_x28-x38-express-cb12-jun2025','route_x28-x38-bay-pkwy','route_meeting-doc-115256-q58','route_q58','route_bxm1-jun2025','route_bxm1') order by r.record_id;\"",
+      "result_summary": "14/14 selected alias and target records exist; every selected record has record_kind=route. Route IDs and variants match within each proposed pair: B17/local, B60/local, B69/local, X28/X38/express, Q58/local, and BxM1/express."
+    },
+    "existing_alias_conflicts": {
+      "merges_json_command": "jq -r '.aliases.route as $r | [\"route_b17-eastern-pkwy-cb8-apr2025\",\"route_b60-cb18-jun2017\",\"route_b69-flatbush-ave-cb2-jun2025\",\"route_b69-flatbush-sept2025\",\"route_x28-x38-bay-pkwy-nov2024\",\"route_x28-x38-express-cb12-jun2025\",\"route_meeting-doc-115256-q58\",\"route_bxm1-jun2025\"][] | select($r[.] != null) | . + \" -> \" + $r[.]' data/identity-overrides/merges.json",
+      "merges_json_result": "no output; none of the proposed aliases are already present in data/identity-overrides/merges.json",
+      "identity_aliases_command": "sqlite3 -header -column data/canonical.db \"select kind, alias, target from identity_aliases where kind='route' and alias in ('route_b17-eastern-pkwy-cb8-apr2025','route_b60-cb18-jun2017','route_b69-flatbush-ave-cb2-jun2025','route_b69-flatbush-sept2025','route_x28-x38-bay-pkwy-nov2024','route_x28-x38-express-cb12-jun2025','route_meeting-doc-115256-q58','route_bxm1-jun2025');\"",
+      "identity_aliases_result": "no output; none of the proposed aliases are already present in canonical identity_aliases"
+    },
+    "do_not_merge_conflicts": {
+      "db_command": "sqlite3 -header -column data/canonical.db \"with pairs(alias,target) as (values ('route_b17-eastern-pkwy-cb8-apr2025','route_b17-eastern-pkwy-apr2025'),('route_b60-cb18-jun2017','route_b60'),('route_b69-flatbush-ave-cb2-jun2025','route_b69-flatbush-ave-apr2026'),('route_b69-flatbush-sept2025','route_b69-flatbush-ave-apr2026'),('route_x28-x38-bay-pkwy-nov2024','route_x28-x38-bay-pkwy'),('route_x28-x38-express-cb12-jun2025','route_x28-x38-bay-pkwy'),('route_meeting-doc-115256-q58','route_q58'),('route_bxm1-jun2025','route_bxm1')) select d.* from do_not_merge d join pairs p on d.kind='route' and ((d.record_id_a=p.alias and d.record_id_b=p.target) or (d.record_id_a=p.target and d.record_id_b=p.alias));\"",
+      "db_result": "no output; no selected pair is present in canonical do_not_merge",
+      "json_command": "jq -r '.pairs.route[]? | select((.record_ids | index(\"route_b17-eastern-pkwy-cb8-apr2025\") and index(\"route_b17-eastern-pkwy-apr2025\")) or (.record_ids | index(\"route_b60-cb18-jun2017\") and index(\"route_b60\")) or (.record_ids | index(\"route_b69-flatbush-ave-cb2-jun2025\") and index(\"route_b69-flatbush-ave-apr2026\")) or (.record_ids | index(\"route_b69-flatbush-sept2025\") and index(\"route_b69-flatbush-ave-apr2026\")) or (.record_ids | index(\"route_x28-x38-bay-pkwy-nov2024\") and index(\"route_x28-x38-bay-pkwy\")) or (.record_ids | index(\"route_x28-x38-express-cb12-jun2025\") and index(\"route_x28-x38-bay-pkwy\")) or (.record_ids | index(\"route_meeting-doc-115256-q58\") and index(\"route_q58\")) or (.record_ids | index(\"route_bxm1-jun2025\") and index(\"route_bxm1\"))) | .record_ids|@tsv' data/identity-overrides/do-not-merge.json",
+      "json_result": "no output; no selected pair is present in data/identity-overrides/do-not-merge.json"
+    },
+    "prior_prep_conflicts_through_identity102": {
+      "command": "for f in data/review_notes/codex-identity-batch0*-prep.json data/review_notes/codex-identity-batch10[0-2]-prep.json; do jq -r --arg f \"$f\" '.proposed_aliases[]? | select(.kind==\"route\") | select(.alias_id as $a | [\"route_b17-eastern-pkwy-cb8-apr2025\",\"route_b60-cb18-jun2017\",\"route_b69-flatbush-ave-cb2-jun2025\",\"route_b69-flatbush-sept2025\",\"route_x28-x38-bay-pkwy-nov2024\",\"route_x28-x38-express-cb12-jun2025\",\"route_meeting-doc-115256-q58\",\"route_bxm1-jun2025\"] | index($a)) | [$f,.alias_id,.target_id] | @tsv' \"$f\" 2>/dev/null; done",
+      "result": "no output; none of the proposed aliases appear in prior codex identity prep artifacts through batch102"
+    },
+    "source_evidence_spot_check": {
+      "command": "jq -r 'select(.record_id|IN(\"route_b17-eastern-pkwy-cb8-apr2025\",\"route_b17-eastern-pkwy-apr2025\",\"route_b60-cb18-jun2017\",\"route_b60\",\"route_b69-flatbush-ave-cb2-jun2025\",\"route_b69-flatbush-sept2025\",\"route_b69-flatbush-ave-apr2026\",\"route_x28-x38-bay-pkwy-nov2024\",\"route_x28-x38-express-cb12-jun2025\",\"route_x28-x38-bay-pkwy\",\"route_meeting-doc-115256-q58\",\"route_q58\",\"route_bxm1-jun2025\",\"route_bxm1\")) | [.record_id, (.evidence_refs[0].evidence_id // \"\"), (.evidence_refs[0].source_quote // .evidence_refs[0].role // \"\")] | @tsv' data/canonical/routes.jsonl",
+      "result_summary": "Selected records have source evidence refs for the same route labels; examples include B17 current route/map evidence, B60 route mentions, B69 Flatbush route/reroute evidence, X28/X38 Express bus evidence, Q58 route evidence, and BxM1 express-route list evidence."
+    },
+    "forbidden_command_compliance": {
+      "result": "No external/provider-backed commands or profiles/providers were used. No canonicalize, canonicalize-wave, canonicalize-review, campaign dedup, identity-review-run, write, ask, schema-propose, ontology-normalize-run, materialize, export-jsonl, or validate commands were run. Inspection used local deterministic commands only: rg, jq, sqlite3, sed/head for read-only file inspection, pwd, and date."
+    }
+  }
+}

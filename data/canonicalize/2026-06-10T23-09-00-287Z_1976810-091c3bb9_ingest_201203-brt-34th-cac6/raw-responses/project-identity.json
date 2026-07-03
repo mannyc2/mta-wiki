@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T23-09-00-287Z_1976810-091c3bb9_ingest_201203-brt-34th-cac6",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T03:15:02.234Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "project_201203_brt_34th_cac6_34th_sbs",
+        "decision": "new",
+        "rationale": "The observation's base_record_id is project_34th-st-sbs-2012, which already exists as a registry record. The observation's source (201203_brt_34th_cac6) is already in that registry card's source_ids. The observation already resolves to its correct canonical record — no link to a different record is needed. Per rule: when the closest match is the observation's own base_record_id, the decision is 'new'.",
+        "evidence_refs": [
+          {
+            "source_id": "201203_brt_34th_cac6",
+            "block_id": "p003_c0002",
+            "source_quote": "Since the last CAC, DOT & NYCT have ... – Implemented off-board fare collection – Completed environmental review – Released the Project Analysis Report – Initiated design work of the project"
+          },
+          {
+            "source_id": "201203_brt_34th_cac6",
+            "block_id": "p019_c0001",
+            "source_quote": "34 th Street SBS: Phasing"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-11-34-022Z_2111393-d9f57084_canonicalize_2026-06-10t23-09-00-287z-1976810-091c3bb9-ingest-201203-brt-34th-cac6-project-identity"
+}

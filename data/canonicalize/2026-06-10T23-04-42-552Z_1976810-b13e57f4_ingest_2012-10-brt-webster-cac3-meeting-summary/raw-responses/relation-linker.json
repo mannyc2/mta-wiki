@@ -1,0 +1,160 @@
+{
+  "run_id": "2026-06-10T23-04-42-552Z_1976810-b13e57f4_ingest_2012-10-brt-webster-cac3-meeting-summary",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T02:58:52.060Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "rel-bus-lane-time-savings-to-webster-project",
+        "local_observation_id": "claim_bus_lane_time_savings_20_percent",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "claim_bus-lane-time-savings-20-percent",
+            "description": "Claim about 20% bus lane time savings raised at Webster Avenue SBS CAC Meeting #3",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+                "block_id": "p003_c0003",
+                "source_quote": "Is the time savings of installing a bus lane (20%) worth the overall impact to traffic?"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim directly from the 'Other issues raised' section of the Webster Avenue SBS CAC Meeting #3 summary; concerns the Webster Avenue SBS project design.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p003_c0003",
+            "source_quote": "Is the time savings of installing a bus lane (20%) worth the overall impact to traffic?"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-emergency-vehicles-to-webster-project",
+        "local_observation_id": "claim_emergency_vehicles_bus_lanes",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "claim_emergency-vehicles-bus-lanes",
+            "description": "Claim that emergency vehicles are allowed in bus lanes at all times, stated at Webster Avenue SBS CAC Meeting #3",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+                "block_id": "p003_c0003",
+                "source_quote": "Emergency vehicles are allowed to use the bus lanes at all times."
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim directly from the 'Other issues raised' section of the Webster Avenue SBS CAC Meeting #3 summary; addresses bus lane access policy for the Webster Avenue SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p003_c0003",
+            "source_quote": "Emergency vehicles are allowed to use the bus lanes at all times."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-fare-machines-outside-to-webster-project",
+        "local_observation_id": "claim_sbs_fare_machines_outside_shelters",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "claim_sbs-fare-machines-outside-shelters",
+            "description": "Claim that SBS fare machines will be placed outside shelters, stated at Webster Avenue SBS CAC Meeting #3",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+                "block_id": "p003_c0003",
+                "source_quote": "SBS fare machines will be placed outside shelters to maintain seating in the shelters."
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim directly from the 'Other issues raised' section of the Webster Avenue SBS CAC Meeting #3 summary; concerns SBS fare machine placement for the Webster Avenue project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p003_c0003",
+            "source_quote": "SBS fare machines will be placed outside shelters to maintain seating in the shelters."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-fare-machines-no-metrocard-to-webster-project",
+        "local_observation_id": "claim_sbs_fare_machines_no_metrocard",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "claim_sbs-fare-machines-no-metrocard",
+            "description": "Claim that SBS fare machines do not sell or refill MetroCards, stated at Webster Avenue SBS CAC Meeting #3",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+                "block_id": "p003_c0003",
+                "source_quote": "SBS fare machines do not sell or refill MetroCards."
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim directly from the 'Other issues raised' section of the Webster Avenue SBS CAC Meeting #3 summary; concerns SBS fare machine functionality for the Webster Avenue project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p003_c0003",
+            "source_quote": "SBS fare machines do not sell or refill MetroCards."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-cac3-meeting-to-webster-project",
+        "local_observation_id": "event_webster_sbs_cac3_meeting_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "event_webster-sbs-cac3-meeting-2012",
+            "description": "Third Community Advisory Committee meeting for the Webster Avenue SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+                "block_id": "p001_c0004",
+                "source_quote": "Thursday September 27, 2012, 3:00-5:00pm Garden Terrace Room Foyer at Abigail Kirsch The New York Botanical Garden 2900 Southern Boulevard, Bronx, NY 10458"
+              },
+              {
+                "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+                "block_id": "p001_c0006",
+                "source_quote": "On Thursday, September 27, 2012, The New York City Department of Transportation (NYCDOT) and MTA New York City Transit (NYCT), held the third Community Advisory Committee (CAC) meeting for the Webster Avenue Select Bus Service (SBS) project at The New York Botanical Garden."
+              }
+            ]
+          }
+        ],
+        "rationale": "Event is the third CAC meeting for the Webster Avenue SBS project, explicitly named in the meeting summary source document.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p001_c0006",
+            "source_quote": "On Thursday, September 27, 2012, The New York City Department of Transportation (NYCDOT) and MTA New York City Transit (NYCT), held the third Community Advisory Committee (CAC) meeting for the Webster Avenue Select Bus Service (SBS) project at The New York Botanical Garden."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-55-43-158Z_2111393-4f619ea3_canonicalize_2026-06-10t23-04-42-552z-1976810-b13e57f4-ingest-2012-10-brt-webster-cac3-meeting-summary-relation-linker"
+}

@@ -1,0 +1,417 @@
+{
+  "note_id": "codex-identity-corridor-batch203-prep",
+  "created_at": "2026-06-23T11:30:31Z",
+  "scope": {
+    "operation": "prepare_corridor_duplicate_identity_cleanup",
+    "after_checkpoint": "identity199-dnm200-201",
+    "global_kind": "corridor",
+    "issue_type": "duplicate_global_identity",
+    "current_corridor_duplicate_issue_count": 23,
+    "selection_note": "Codex-only bounded prep artifact. No provider-backed commands were run. No materialize, validate CLI, write, ask, canonicalize, identity-review, schema, or ontology commands were run.",
+    "write_limit": "Exactly one artifact was written: data/review_notes/codex-identity-corridor-batch203-prep.json.",
+    "write_exclusions_observed": [
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json",
+      "data/canonical/*.jsonl",
+      "data/canonical.db",
+      "LOG.md",
+      "manifest files",
+      "wiki pages",
+      "submissions",
+      "retired overrides"
+    ]
+  },
+  "prepared_count": 10,
+  "proposed_aliases": [],
+  "proposed_do_not_merge_pairs": [
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_bay-parkway-cropsey",
+        "corridor_cropsey-ave-brooklyn-b82"
+      ],
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_bay-parkway-cropsey and corridor_cropsey-ave-brooklyn-b82 share identity key corridor_cropsey-ave."
+      ],
+      "source_canonical_evidence": [
+        "corridor_bay-parkway-cropsey: Brooklyn; corridor_name 'Bay Parkway and Cropsey Avenue'; limits 'Bay Parkway: Avenue J to Shore Parkway; Cropsey Avenue: Bay Parkway to 26th Avenue'; source block better_buses#p001_b0001 names both Bay Parkway and Cropsey Avenue limits.",
+        "corridor_cropsey-ave-brooklyn-b82: Brooklyn; corridor_name/street 'Cropsey Avenue'; description 'B82 corridor segment from Bay 37 St northward'; source blocks brt_south_brooklyn_b82_feb2018#p010_c0001 and #p011_c0002 place this within the B82 SBS route map context."
+      ],
+      "reason": "Shared Cropsey Avenue street identity hides a compound Bay Parkway/Cropsey corridor versus a B82 route segment. The broader Bay Parkway/Cropsey study area should not collapse into the B82 Cropsey segment.",
+      "expected_duplicate_issues_suppressed": [
+        "corridor_bay-parkway-cropsey <> corridor_cropsey-ave-brooklyn-b82 on corridor_cropsey-ave"
+      ],
+      "guard_checks": {
+        "both_present_in_current_canonical_jsonl": true,
+        "same_global_kind": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "current_validator_duplicate_global_identity": true
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_flatlands-ave-brooklyn-b82",
+        "corridor_flatlands-avenue-brooklyn-oct2018"
+      ],
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_flatlands-ave-brooklyn-b82 and corridor_flatlands-avenue-brooklyn-oct2018 share identity key corridor_flatlands-ave."
+      ],
+      "source_canonical_evidence": [
+        "corridor_flatlands-ave-brooklyn-b82: Brooklyn; street 'Flatlands Avenue'; limits 'E 103 St to Pennsylvania Ave'; source block brt_south_brooklyn_b82#p018_c0001 says 'Existing: Flatlands Ave (E 103 St to Pennsylvania Ave)'.",
+        "corridor_flatlands-avenue-brooklyn-oct2018: Brooklyn; corridor_name 'Flatlands Avenue'; limits 'Ave I to Ralph Ave'; source blocks brt_south_brooklyn_b82_mbca_oct2018#p013_c0001 and #p014_c0001 identify the Ave I to Ralph Ave existing/new treatment segment."
+      ],
+      "reason": "Both are Flatlands Avenue/B82 corridor records, but the limits are different named segments. A durable DNM keeps the street-name key from merging E 103 St to Pennsylvania Ave with Ave I to Ralph Ave.",
+      "expected_duplicate_issues_suppressed": [
+        "corridor_flatlands-ave-brooklyn-b82 <> corridor_flatlands-avenue-brooklyn-oct2018 on corridor_flatlands-ave"
+      ],
+      "guard_checks": {
+        "both_present_in_current_canonical_jsonl": true,
+        "same_global_kind": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "current_validator_duplicate_global_identity": true
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_b82-southern-brooklyn",
+        "corridor_kings-highway-brooklyn"
+      ],
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_b82-southern-brooklyn and corridor_kings-highway-brooklyn share identity key corridor_kings-highway."
+      ],
+      "source_canonical_evidence": [
+        "corridor_b82-southern-brooklyn: Brooklyn; corridor_name 'B82 Corridor'; street 'Kings Hwy and Flatlands Ave'; from Bay Pkwy to Pennsylvania Ave; 10-mile east-west corridor.",
+        "corridor_kings-highway-brooklyn: Brooklyn; corridor_name/street 'Kings Highway'; limits 'at E 34th Street, E 35th Street, and Avenue M'; source blocks brt_kings_highway_aug2018#p001_c0002 and #p002_c0002 describe a Kings Highway curbside-change context."
+      ],
+      "reason": "Whole-corridor/subsegment mismatch. The B82 Southern Brooklyn corridor spans Kings Highway plus Flatlands Avenue and other streets; the other record is a Kings Highway-specific treatment/location record.",
+      "expected_duplicate_issues_suppressed": [
+        "corridor_b82-southern-brooklyn <> corridor_kings-highway-brooklyn on corridor_kings-highway"
+      ],
+      "guard_checks": {
+        "both_present_in_current_canonical_jsonl": true,
+        "same_global_kind": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "current_validator_duplicate_global_identity": true
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_b82-southern-brooklyn",
+        "corridor_kings-hwy-brooklyn-b82-cb11"
+      ],
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_b82-southern-brooklyn and corridor_kings-hwy-brooklyn-b82-cb11 share identity key corridor_kings-highway."
+      ],
+      "source_canonical_evidence": [
+        "corridor_b82-southern-brooklyn: Brooklyn; corridor_name 'B82 Corridor'; street 'Kings Hwy and Flatlands Ave'; from Bay Pkwy to Pennsylvania Ave; 10-mile east-west corridor.",
+        "corridor_kings-hwy-brooklyn-b82-cb11: Brooklyn; street 'Kings Highway'; limits 'From Bay Pkwy to McDonald Ave in CB 11'; source blocks brt_south_brooklyn_b82_feb2018#p017_c0001 and #p017_c0002 identify the Kings Highway CB 11 segment."
+      ],
+      "reason": "Whole-corridor/subsegment mismatch. The CB 11 Kings Highway section is a bounded segment inside the larger B82 Southern Brooklyn corridor, not a same-identity corridor record.",
+      "expected_duplicate_issues_suppressed": [
+        "corridor_b82-southern-brooklyn <> corridor_kings-hwy-brooklyn-b82-cb11 on corridor_kings-highway"
+      ],
+      "guard_checks": {
+        "both_present_in_current_canonical_jsonl": true,
+        "same_global_kind": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "current_validator_duplicate_global_identity": true
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_lexington-ave-2015-01-06",
+        "corridor_lexington-ave-96th-to-60th"
+      ],
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_lexington-ave-2015-01-06 and corridor_lexington-ave-96th-to-60th share identity key corridor_lexington-ave."
+      ],
+      "source_canonical_evidence": [
+        "corridor_lexington-ave-2015-01-06: Manhattan; street 'Lexington Avenue'; limits 'at 125th Street'; source block 2015_01_06_brt_125th_cb11#p013_c0003 describes 125th/Lex curb extension proposals.",
+        "corridor_lexington-ave-96th-to-60th: Manhattan; street 'Lexington Ave'; limits '96th St to 60th St'; source block better_buses_action_plan_2019#p024_c0001 names 'Lexington Ave, 96th St to 60th St'."
+      ],
+      "reason": "Same Manhattan avenue but non-overlapping corridor limits. A 125th Street/Lexington intersection treatment should not merge with the 96th-to-60th Street bus-forward corridor.",
+      "expected_duplicate_issues_suppressed": [
+        "corridor_lexington-ave-2015-01-06 <> corridor_lexington-ave-96th-to-60th on corridor_lexington-ave"
+      ],
+      "guard_checks": {
+        "both_present_in_current_canonical_jsonl": true,
+        "same_global_kind": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "current_validator_duplicate_global_identity": true
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_lexington-ave-2015-01-06",
+        "corridor_lexington-avenue"
+      ],
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_lexington-ave-2015-01-06 and corridor_lexington-avenue share identity key corridor_lexington-ave."
+      ],
+      "source_canonical_evidence": [
+        "corridor_lexington-ave-2015-01-06: Manhattan; street 'Lexington Avenue'; limits 'at 125th Street'; source block 2015_01_06_brt_125th_cb11#p013_c0003 describes 125th/Lex curb extension proposals.",
+        "corridor_lexington-avenue: Manhattan; street 'Lexington Avenue'; limits '60th Street to 52nd Street'; source block better_buses#p001_b0001 names Lexington Avenue, 60th Street to 52nd Street, Manhattan."
+      ],
+      "reason": "Same Manhattan avenue but clearly distinct limits: 125th Street intersection context versus the 60th-to-52nd Street offset bus lane segment.",
+      "expected_duplicate_issues_suppressed": [
+        "corridor_lexington-ave-2015-01-06 <> corridor_lexington-avenue on corridor_lexington-ave"
+      ],
+      "guard_checks": {
+        "both_present_in_current_canonical_jsonl": true,
+        "same_global_kind": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "current_validator_duplicate_global_identity": true
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_cross-bay-blvd-2015",
+        "corridor_cross-bay-boulevard-rockaway-to-165"
+      ],
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_cross-bay-blvd-2015 and corridor_cross-bay-boulevard-rockaway-to-165 share identity key corridor_cross-bay-blvd."
+      ],
+      "source_canonical_evidence": [
+        "corridor_cross-bay-blvd-2015: Queens; street 'Cross Bay Boulevard'; limits 'north of 165 Av'; source block 2015_04_30_brt_woodhaven_dw4_presentation#p013_c0009 names Cross Bay Blvd north of 165 Av.",
+        "corridor_cross-bay-boulevard-rockaway-to-165: Queens; street 'Cross Bay Boulevard'; limits 'between Rockaway Boulevard and 165 Avenue'; source block 2015_04_29_brt_woodhaven_dw3_draftplans#p001_c0003 names Cross Bay Boulevard between Rockaway Boulevard and 165 Avenue."
+      ],
+      "reason": "Adjacent/different Cross Bay Boulevard extents should stay distinct: one is north of 165 Av, the other is Rockaway Boulevard to 165 Avenue.",
+      "expected_duplicate_issues_suppressed": [
+        "corridor_cross-bay-blvd-2015 <> corridor_cross-bay-boulevard-rockaway-to-165 on corridor_cross-bay-blvd"
+      ],
+      "guard_checks": {
+        "both_present_in_current_canonical_jsonl": true,
+        "same_global_kind": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "current_validator_duplicate_global_identity": true
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_woodhaven-blvd-dry-harbor-to-metropolitan",
+        "corridor_woodhaven-blvd-union-tpke-to-81st-rd"
+      ],
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_woodhaven-blvd-dry-harbor-to-metropolitan and corridor_woodhaven-blvd-union-tpke-to-81st-rd share identity key corridor_woodhaven-blvd."
+      ],
+      "source_canonical_evidence": [
+        "corridor_woodhaven-blvd-dry-harbor-to-metropolitan: Queens; street 'Woodhaven Boulevard'; limits 'Dry Harbor Road to Metropolitan Avenue'; source block 2015_07_brt_woodhaven_whh_flyer#p001_c0007 names Woodhaven Boulevard between Dry Harbor Road and Metropolitan Avenue.",
+        "corridor_woodhaven-blvd-union-tpke-to-81st-rd: Queens; street 'Woodhaven Boulevard'; limits 'from Union Turnpike to 81st Rd'; source block brt_woodhaven_crossbay_blvd_sept_flyer#p001_c0007 says DOT will reconstruct Woodhaven Boulevard from Union Turnpike to 81st Rd."
+      ],
+      "reason": "Same boulevard, different bounded project segments. The shared Woodhaven Boulevard key should not merge Dry Harbor-to-Metropolitan with Union Turnpike-to-81st Road.",
+      "expected_duplicate_issues_suppressed": [
+        "corridor_woodhaven-blvd-dry-harbor-to-metropolitan <> corridor_woodhaven-blvd-union-tpke-to-81st-rd on corridor_woodhaven-blvd"
+      ],
+      "guard_checks": {
+        "both_present_in_current_canonical_jsonl": true,
+        "same_global_kind": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "current_validator_duplicate_global_identity": true
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_woodhaven-blvd-dry-harbor-to-metropolitan",
+        "corridor_woodhaven-boulevard"
+      ],
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_woodhaven-blvd-dry-harbor-to-metropolitan and corridor_woodhaven-boulevard share identity key corridor_woodhaven-blvd."
+      ],
+      "source_canonical_evidence": [
+        "corridor_woodhaven-blvd-dry-harbor-to-metropolitan: Queens; street 'Woodhaven Boulevard'; limits 'Dry Harbor Road to Metropolitan Avenue'; source block 2015_07_brt_woodhaven_whh_flyer#p001_c0007 names Woodhaven Boulevard between Dry Harbor Road and Metropolitan Avenue.",
+        "corridor_woodhaven-boulevard: Queens; street 'Woodhaven Boulevard'; limits 'Queens Boulevard to 107th Avenue' with merged segment values including Queens Boulevard to Union Turnpike and Union Turnpike to Rockaway Boulevard; source block better_buses#p001_b0001 names Woodhaven Boulevard from Queens Boulevard to 107th Avenue."
+      ],
+      "reason": "The records describe different Woodhaven Boulevard extents. The Dry Harbor-to-Metropolitan bus-lane segment should remain separate from the broader Queens Boulevard-to-107th Avenue corridor/capital-project record.",
+      "expected_duplicate_issues_suppressed": [
+        "corridor_woodhaven-blvd-dry-harbor-to-metropolitan <> corridor_woodhaven-boulevard on corridor_woodhaven-blvd"
+      ],
+      "guard_checks": {
+        "both_present_in_current_canonical_jsonl": true,
+        "same_global_kind": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "current_validator_duplicate_global_identity": true
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_cross-bay-blvd-2015",
+        "corridor_woodhaven-cross-bay-blvds"
+      ],
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_cross-bay-blvd-2015 and corridor_woodhaven-cross-bay-blvds share identity key corridor_cross-bay-blvd."
+      ],
+      "source_canonical_evidence": [
+        "corridor_cross-bay-blvd-2015: Queens; street 'Cross Bay Boulevard'; limits 'north of 165 Av'; source block 2015_04_30_brt_woodhaven_dw4_presentation#p013_c0009 names Cross Bay Blvd north of 165 Av.",
+        "corridor_woodhaven-cross-bay-blvds: Queens; street 'Woodhaven Boulevard / Cross Bay Boulevard'; limits 'from Woodside to the Rockaways'; 14-mile corridor for Q52/Q53 SBS."
+      ],
+      "reason": "Whole-corridor/subsegment mismatch. A Cross Bay Boulevard segment north of 165 Av should not merge with the full Woodhaven/Cross Bay corridor from Woodside to the Rockaways.",
+      "expected_duplicate_issues_suppressed": [
+        "corridor_cross-bay-blvd-2015 <> corridor_woodhaven-cross-bay-blvds on corridor_cross-bay-blvd"
+      ],
+      "guard_checks": {
+        "both_present_in_current_canonical_jsonl": true,
+        "same_global_kind": true,
+        "selected_record_alias_targets": [
+          null,
+          null
+        ],
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_resolved_same_target": true,
+        "current_validator_duplicate_global_identity": true
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_125th-st-crosstown-brt-phase2",
+        "corridor_125th-st-manhattan"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_125th-st-crosstown-brt-phase2 and corridor_125th-st-manhattan share identity key corridor_125th-st-crosstown-corridor."
+      ],
+      "reason": "Deferred for cluster-level review: both are 125th Street/Manhattan crosstown corridor concepts, but the Phase II candidate versus concrete Morningside-to-Second limits need a policy call before alias or DNM."
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_14th-st-crosstown-brt-phase2",
+        "corridor_14th-street-ttp"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_14th-st-crosstown-brt-phase2 and corridor_14th-street-ttp share identity key corridor_14th-st-crosstown-brt-phase2.",
+        "duplicate_global_identity: Global corridor records corridor_14th-st-crosstown-brt-phase2 and corridor_14th-street-ttp share identity key corridor_14th-st-crosstown-corridor."
+      ],
+      "reason": "Deferred because 14th Street Phase II candidate, transit/truck priority pilot, and permanent busway records need cluster-level lifecycle handling rather than a one-pair decision."
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_bus-fwd-2-church-av-brooklyn-local",
+        "corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate",
+        "corridor_church-av"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_bus-fwd-2-church-av-brooklyn-local and corridor_church-av share identity key corridor_church-av.",
+        "duplicate_global_identity: Global corridor records corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate and corridor_church-av share identity key corridor_church-ave."
+      ],
+      "reason": "Deferred pending Church Avenue local/SBS candidate cluster review. The records may be lifecycle variants of a same street corridor or intentionally distinct local/SBS candidate contexts."
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_cross-bay-blvd-2015",
+        "corridor_cross-bay-blvd-sbs-spring2015"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_cross-bay-blvd-2015 and corridor_cross-bay-blvd-sbs-spring2015 share identity key corridor_cross-bay-blvd."
+      ],
+      "reason": "Deferred because the spring 2015 record has a vaguer Cross Bay Boulevard design description; it may overlap the north-of-165 Av segment, but the limits need stronger confirmation before alias or DNM."
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_utica-ave-b46-2015-04-06",
+        "corridor_utica-ave-brt-phase2",
+        "corridor_utica-ave-st-johns-carroll-2013",
+        "corridor_utica-ave-st-johns-pl-church-ave-2013"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_utica-ave-b46-2015-04-06 and corridor_utica-ave-brt-phase2 share identity key corridor_utica-ave-corridor.",
+        "duplicate_global_identity: Global corridor records corridor_utica-ave-b46-2015-04-06 and corridor_utica-ave-st-johns-carroll-2013 share identity key corridor_utica-ave.",
+        "duplicate_global_identity: Global corridor records corridor_utica-ave-b46-2015-04-06 and corridor_utica-ave-st-johns-pl-church-ave-2013 share identity key corridor_utica-ave.",
+        "duplicate_global_identity: Global corridor records corridor_utica-ave-b46-2015-04-06 and corridor_utica-ave-st-johns-pl-church-ave-2013 share identity key corridor_utica-ave-b46-corridor.",
+        "duplicate_global_identity: Global corridor records corridor_utica-ave-brt-phase2 and corridor_utica-ave-st-johns-pl-church-ave-2013 share identity key corridor_utica-ave-brt-phase2.",
+        "duplicate_global_identity: Global corridor records corridor_utica-ave-b46-2015-04-06 and corridor_utica-ave-st-johns-pl-church-ave-2013 share identity key corridor_utica-ave-corridor."
+      ],
+      "reason": "Deferred for Utica Avenue cluster review. The warnings mix B46 corridor, Phase II candidate, St Johns-to-Carroll, and St Johns-to-Church extents; deciding pairwise risks losing project/lifecycle structure."
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_woodhaven-blvd-brt-phase2",
+        "corridor_woodhaven-boulevard"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity: Global corridor records corridor_woodhaven-blvd-brt-phase2 and corridor_woodhaven-boulevard share identity key corridor_woodhaven-blvd-corridor."
+      ],
+      "reason": "Deferred because the Phase II candidate record is broad and underspecified; it needs a policy call against the later Woodhaven Boulevard/Q52-Q53 capital corridor before alias or DNM."
+    }
+  ],
+  "blockers": []
+}

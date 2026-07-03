@@ -1,0 +1,28 @@
+{
+  "campaign_id": "validation-2026-06",
+  "wave": 28,
+  "generated_at": "2026-06-22T22:53:02.279Z",
+  "sources_selected": [
+    "routes_woodhaven_corridor_map_lg"
+  ],
+  "ingested": [
+    "routes_woodhaven_corridor_map_lg"
+  ],
+  "skipped_already_done": [],
+  "quarantined": [],
+  "run_ids": [
+    "/mnt/models/dev/mta-wiki/data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-22T22-53-02-267Z_2026-06-22T22-53-02-177Z_455282-ec0e2fc7_ingest_routes-woodhaven-corridor-map-lg.jsonl"
+  ],
+  "telemetry": {
+    "concurrency": 40,
+    "timeout_min": 30,
+    "wall_clock_s": 1,
+    "rate_limit": [],
+    "materialize": {
+      "completed_ingests": 0,
+      "runs": 0,
+      "total_seconds": 0,
+      "every_k": 10
+    }
+  }
+}

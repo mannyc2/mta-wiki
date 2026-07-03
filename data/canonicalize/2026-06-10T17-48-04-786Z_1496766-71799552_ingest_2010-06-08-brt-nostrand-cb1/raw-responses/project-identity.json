@@ -1,0 +1,63 @@
+{
+  "run_id": "2026-06-10T17-48-04-786Z_1496766-71799552_ingest_2010-06-08-brt-nostrand-cb1",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-10T19:46:26.790Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "proj-nostrand-rogers-sbs-new",
+        "local_observation_id": "project_nostrand_rogers_sbs",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'project_nostrand-rogers-sbs' already matches the existing registry record exactly: same project name (Nostrand Ave / Rogers Ave Select Bus Service), same project_type (Select Bus Service), same borough (Brooklyn), same description (SBS on Nostrand/Rogers Avenues, B44 Limited to SBS). The source 2010_06_08_brt_nostrand_cb1 is already listed as a source for this registry record. The closest match is the observation's own base_record_id, so no link to a different record is needed — decision is 'new' (already correctly resolved).",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_08_brt_nostrand_cb1",
+            "block_id": "p001_c0001",
+            "source_quote": "Nostrand Ave / Rogers Ave Select Bus Service Community Board 1"
+          },
+          {
+            "source_id": "2010_06_08_brt_nostrand_cb1",
+            "block_id": "p007_c0001",
+            "source_quote": "Corridor Description"
+          },
+          {
+            "source_id": "2010_06_08_brt_nostrand_cb1",
+            "block_id": "p007_c0002",
+            "source_quote": "9.3 miles from Williamsburg Bridge to Sheepshead Bay"
+          },
+          {
+            "source_id": "2010_06_08_brt_nostrand_cb1",
+            "block_id": "p008_c0002",
+            "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "project_nostrand-rogers-sbs-cb3",
+            "description": "Both records describe the identical project: Nostrand Ave/Rogers Ave Select Bus Service, 9.3 miles from Williamsburg Bridge to Sheepshead Bay, converting B44 Limited to SBS. The CB3 record's description text matches verbatim the evidence presented in this CB1 packet.",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_08_brt_nostrand_cb1",
+                "block_id": "p007_c0002",
+                "source_quote": "9.3 miles from Williamsburg Bridge to Sheepshead Bay"
+              },
+              {
+                "source_id": "2010_06_08_brt_nostrand_cb1",
+                "block_id": "p008_c0002",
+                "source_quote": "B44 Limited will become SBS; B44 Local will continue as before"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-43-26-095Z_1656125-d36c78a1_canonicalize_2026-06-10t17-48-04-786z-1496766-71799552-ingest-2010-06-08-brt-nostrand-cb1-project-identity"
+}

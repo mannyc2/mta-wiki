@@ -1,0 +1,159 @@
+{
+  "run_id": "2026-06-10T23-03-12-876Z_1976810-853fca30_ingest_2012-05-webster-cac2-summary",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T02:42:21.060Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "relate-curbside-webster",
+        "local_observation_id": "treatment_curbside_alignment_webster_ave",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_curbside-alignment-webster-ave",
+            "description": "Curbside bus lane alignment conceptual option for Webster Avenue SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p001_c0006",
+                "source_quote": "On Wednesday, May 2, 2012, The New York City Department of Transportation (NYCDOT) and MTA New York City Transit (NYCT), held the second Community Advisory Committee (CAC) meeting for the Webster Avenue Select Bus Service (SBS) project at the Icahn Charter Middle School in the Bronx."
+              },
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p001_c0009",
+                "source_quote": "During the second segment of the workshop, the participants were shown three conceptual SBS running way design options (see Appendix on pages 6-9) and discussed the advantages and disadvantages of each option."
+              },
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p003_c0006",
+                "source_quote": "Curbside Alignment:"
+              }
+            ]
+          }
+        ],
+        "rationale": "Cited blocks identify this as a conceptual SBS running way design option presented at CAC Meeting #2 for the Webster Avenue SBS project. Block p001_c0006 explicitly names the project; p001_c0009 confirms the three conceptual options were shown; p003_c0006 identifies the curbside option.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p001_c0006",
+            "source_quote": "On Wednesday, May 2, 2012, The New York City Department of Transportation (NYCDOT) and MTA New York City Transit (NYCT), held the second Community Advisory Committee (CAC) meeting for the Webster Avenue Select Bus Service (SBS) project at the Icahn Charter Middle School in the Bronx."
+          },
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p001_c0009",
+            "source_quote": "During the second segment of the workshop, the participants were shown three conceptual SBS running way design options (see Appendix on pages 6-9) and discussed the advantages and disadvantages of each option."
+          },
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p003_c0006",
+            "source_quote": "Curbside Alignment:"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-offset-webster",
+        "local_observation_id": "treatment_offset_alignment_webster_ave",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_offset-alignment-webster-ave",
+            "description": "Offset bus lane alignment conceptual option for Webster Avenue SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p001_c0006",
+                "source_quote": "On Wednesday, May 2, 2012, The New York City Department of Transportation (NYCDOT) and MTA New York City Transit (NYCT), held the second Community Advisory Committee (CAC) meeting for the Webster Avenue Select Bus Service (SBS) project at the Icahn Charter Middle School in the Bronx."
+              },
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p001_c0009",
+                "source_quote": "During the second segment of the workshop, the participants were shown three conceptual SBS running way design options (see Appendix on pages 6-9) and discussed the advantages and disadvantages of each option."
+              },
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p003_c0011",
+                "source_quote": "Offset Alignment:"
+              }
+            ]
+          }
+        ],
+        "rationale": "Cited blocks identify this as a conceptual SBS running way design option presented at CAC Meeting #2 for the Webster Avenue SBS project. Block p001_c0006 explicitly names the project; p001_c0009 confirms the three conceptual options were shown; p003_c0011 identifies the offset option.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p001_c0006",
+            "source_quote": "On Wednesday, May 2, 2012, The New York City Department of Transportation (NYCDOT) and MTA New York City Transit (NYCT), held the second Community Advisory Committee (CAC) meeting for the Webster Avenue Select Bus Service (SBS) project at the Icahn Charter Middle School in the Bronx."
+          },
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p001_c0009",
+            "source_quote": "During the second segment of the workshop, the participants were shown three conceptual SBS running way design options (see Appendix on pages 6-9) and discussed the advantages and disadvantages of each option."
+          },
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p003_c0011",
+            "source_quote": "Offset Alignment:"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-median-webster",
+        "local_observation_id": "treatment_median_alignment_webster_ave",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_median-alignment-webster-ave",
+            "description": "Median bus lane alignment conceptual option for Webster Avenue SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p001_c0006",
+                "source_quote": "On Wednesday, May 2, 2012, The New York City Department of Transportation (NYCDOT) and MTA New York City Transit (NYCT), held the second Community Advisory Committee (CAC) meeting for the Webster Avenue Select Bus Service (SBS) project at the Icahn Charter Middle School in the Bronx."
+              },
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p001_c0009",
+                "source_quote": "During the second segment of the workshop, the participants were shown three conceptual SBS running way design options (see Appendix on pages 6-9) and discussed the advantages and disadvantages of each option."
+              },
+              {
+                "source_id": "2012_05_webster_cac2_summary",
+                "block_id": "p004_c0002",
+                "source_quote": "Median Alignment:"
+              }
+            ]
+          }
+        ],
+        "rationale": "Cited blocks identify this as a conceptual SBS running way design option presented at CAC Meeting #2 for the Webster Avenue SBS project. Block p001_c0006 explicitly names the project; p001_c0009 confirms the three conceptual options were shown; p004_c0002 identifies the median option.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p001_c0006",
+            "source_quote": "On Wednesday, May 2, 2012, The New York City Department of Transportation (NYCDOT) and MTA New York City Transit (NYCT), held the second Community Advisory Committee (CAC) meeting for the Webster Avenue Select Bus Service (SBS) project at the Icahn Charter Middle School in the Bronx."
+          },
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p001_c0009",
+            "source_quote": "During the second segment of the workshop, the participants were shown three conceptual SBS running way design options (see Appendix on pages 6-9) and discussed the advantages and disadvantages of each option."
+          },
+          {
+            "source_id": "2012_05_webster_cac2_summary",
+            "block_id": "p004_c0002",
+            "source_quote": "Median Alignment:"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-39-44-938Z_2111393-f8844a2a_canonicalize_2026-06-10t23-03-12-876z-1976810-853fca30-ingest-2012-05-webster-cac2-summary-treatment-relations"
+}

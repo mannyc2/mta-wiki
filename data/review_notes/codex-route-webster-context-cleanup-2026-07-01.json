@@ -1,0 +1,183 @@
+{
+  "id": "route-webster-context-cleanup",
+  "created_at": "2026-07-01T00:00:00Z",
+  "agent": "Codex",
+  "external_provider_llms_used": false,
+  "forbidden_commands_used": false,
+  "bucket": "route high-denorm context contamination",
+  "summary": "Removed seven context-only Webster Avenue/Bx41 SBS route observations from non-Webster project sources and replaced two stale local-endpoint Bx6-to-Bx41 relations plus two missing Bx6 connection facts with direct canonical endpoint relations.",
+  "subagent_inputs": [
+    {
+      "session_id": "019f2009-c9f7-7ca0-9a79-d7d7d914c108",
+      "lane": "Webster route context contamination audit"
+    },
+    {
+      "session_id": "019f2009-dcaf-7373-bb83-d95bcc0cb44c",
+      "lane": "Adjacent entity/project duplicate identity-key rebaseline"
+    }
+  ],
+  "retired_submissions": [
+    {
+      "submission_id": "sub_bdfc0f2eee9d5a18",
+      "affected_record": "route_webster-ave-sbs",
+      "source_id": "2014_10_01_brt_86thstreet_cb8_presentation",
+      "reason": "86th Street presentation overview map/caption added Brooklyn geography to Webster/Bx41 SBS."
+    },
+    {
+      "submission_id": "sub_f0268e80a2ee80d8",
+      "affected_record": "route_webster-ave-sbs",
+      "source_id": "2014_11_06_brt_woodhaven_pw3_boards",
+      "reason": "Woodhaven project board listed existing SBS routes; not primary Webster route evidence."
+    },
+    {
+      "submission_id": "sub_aa82b0c6313f737b",
+      "affected_record": "route_webster-ave-sbs",
+      "source_id": "2015_06_17_brt_southbrooklyn_kickoff_boards",
+      "reason": "South Brooklyn kickoff board existing-SBS map listed Bx41/Webster only as context."
+    },
+    {
+      "submission_id": "sub_c01ac84f875a756f",
+      "affected_record": "route_webster-ave-sbs",
+      "source_id": "2015_11_20_brt_south_bronx_crosstown_kickoff",
+      "replacement_submission_id": "sub_0de5fba9123c5950",
+      "reason": "Bx6 source cited Bx41 SBS as connection/context; direct relation replacement preserves Bx6-to-Bx41 evidence."
+    },
+    {
+      "submission_id": "sub_ead442a06dc90e55",
+      "affected_record": "route_webster-ave-sbs",
+      "source_id": "ace_able_pdf_brt_bx6_river_terrace_houses_sept2016",
+      "replacement_submission_id": "sub_f2b3b2248f943819",
+      "reason": "Bx6 River Terrace source cited Bx41 SBS as connection/context; direct relation replacement preserves Bx6-to-Bx41 evidence."
+    },
+    {
+      "submission_id": "sub_5d77a0ea670435f1",
+      "affected_record": "route_webster-ave-sbs",
+      "source_id": "brt_bx6_south_bronx_may2016",
+      "replacement_submission_id": "sub_6ee54c241d905726",
+      "reason": "Bx6 source cited Bx41 SBS in a context map/connection list; direct relation replacement preserves Bx6-to-Bx41 evidence."
+    },
+    {
+      "submission_id": "sub_90643d8fd672399b",
+      "affected_record": "route_webster-ave-sbs",
+      "source_id": "brt_bx6_south_bronx",
+      "replacement_submission_id": "sub_db37c4d142233e3a",
+      "reason": "Bx6 CB4 source cited Bx41 SBS as connection/context; direct relation replacement preserves Bx6-to-Bx41 evidence."
+    },
+    {
+      "submission_id": "sub_efbe69099083f712",
+      "affected_record": "relation_rel-bx6-connects-bx41-sbs",
+      "replacement_submission_id": "sub_0de5fba9123c5950",
+      "reason": "Original relation depended on a retired context-only route local endpoint."
+    },
+    {
+      "submission_id": "sub_fa2e5fa3e8d33c47",
+      "affected_record": "relation_bx6-connects-bx41sbs-may2016",
+      "replacement_submission_id": "sub_6ee54c241d905726",
+      "reason": "Original relation depended on a retired context-only route local endpoint."
+    }
+  ],
+  "replacement_submissions_file": "data/submissions/2026-07-01_codex_route_webster_context_cleanup.jsonl",
+  "replacement_submissions": [
+    {
+      "submission_id": "sub_0de5fba9123c5950",
+      "canonical_record_id": "relation_bx6-local-connects-webster-sbs-direct-20260701",
+      "source_id": "2015_11_20_brt_south_bronx_crosstown_kickoff",
+      "subject_id": "route_bx6-local",
+      "object_id": "route_webster-ave-sbs"
+    },
+    {
+      "submission_id": "sub_6ee54c241d905726",
+      "canonical_record_id": "relation_bx6-corridor-connects-webster-sbs-direct-20260701",
+      "source_id": "brt_bx6_south_bronx_may2016",
+      "subject_id": "corridor_bx6-south-bronx",
+      "object_id": "route_webster-ave-sbs"
+    },
+    {
+      "submission_id": "sub_f2b3b2248f943819",
+      "canonical_record_id": "relation_bx6-corridor-connects-webster-sbs-river-terrace-direct-20260701",
+      "source_id": "ace_able_pdf_brt_bx6_river_terrace_houses_sept2016",
+      "subject_id": "corridor_bx6-south-bronx",
+      "object_id": "route_webster-ave-sbs"
+    },
+    {
+      "submission_id": "sub_db37c4d142233e3a",
+      "canonical_record_id": "relation_bx6-corridor-connects-webster-sbs-cb4-direct-20260701",
+      "source_id": "brt_bx6_south_bronx",
+      "subject_id": "corridor_bx6-south-bronx",
+      "object_id": "route_webster-ave-sbs"
+    }
+  ],
+  "before_after": {
+    "route_webster-ave-sbs": {
+      "before": {
+        "source_count": 40,
+        "local_observation_count": 37,
+        "submission_count": 40,
+        "boroughs": [
+          "Bronx",
+          "Brooklyn"
+        ],
+        "contaminant_submission_count": 7,
+        "contaminant_source_count": 7
+      },
+      "after": {
+        "source_count": 33,
+        "local_observation_count": 31,
+        "submission_count": 33,
+        "boroughs": [
+          "Bronx"
+        ],
+        "contaminants_remaining": 0
+      }
+    },
+    "canonical_records": {
+      "before_final_relation_additions": 84028,
+      "after": 84030
+    }
+  },
+  "adjacent_duplicate_rebaseline": {
+    "entity_strict_identity_key_duplicate_groups": 0,
+    "entity_open_pairs": 0,
+    "project_strict_identity_key_duplicate_groups": 0,
+    "project_open_pairs": 0,
+    "optional_next_hygiene": "Add canonical Community Board 5 do-not-merge guards after alias collapse for Bronx/Brooklyn/Queens CB5 records."
+  },
+  "commands": [
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "stage": "baseline",
+      "result": "Issues: 0; submissions 98111; canonical records 84028; wiki pages 7333"
+    },
+    {
+      "command": "bun test packages/pipeline/test/materialize/materialize.test.ts",
+      "result": "57 pass; 0 fail; 867 expect calls"
+    },
+    {
+      "command": "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+      "result": "Materialized 93070/98115 submissions; retired submissions skipped 263; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "stage": "after",
+      "result": "Issues: 0; submissions 98115; canonical records 84030; wiki pages 7333"
+    },
+    {
+      "command": "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+      "result": "ok"
+    }
+  ],
+  "typecheck": {
+    "run": false,
+    "reason": "Data-only override/submission/materialization slice; no code changed."
+  },
+  "remaining_intentionally_unresolved": [
+    "Other high-denorm route records may still contain context-map/source contamination outside the audited Webster bucket.",
+    "Aggregate/split candidate policy remains explicit for route_q52-sbs-queens, route_m34-sbs, and other bundled route surfaces.",
+    "Entity/project strict duplicate identity-key buckets are currently zero; optional CB5 do-not-merge hygiene remains for a later small adjacent slice."
+  ],
+  "next_lanes": [
+    "Optional Community Board 5 canonical do-not-merge guard cleanup.",
+    "Rebaseline a measurable relation_family other or treatment_family other bucket and implement one deterministic normalization rule.",
+    "Continue route aggregate/split policy cleanup for remaining high-denorm route candidates."
+  ]
+}

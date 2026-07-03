@@ -1,0 +1,307 @@
+{
+  "run_id": "2026-06-10T17-48-04-838Z_1496766-05068207_ingest_2010-09-14-brt-1st2nd-cac5",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-10T19:50:28.091Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-bus-lane-to-sbs-2010",
+        "local_observation_id": "treatment_bus_lane_first_second_ave",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_bus-lane-first-second-ave",
+            "description": "Bus lane markings and paint on First and Second Avenues as part of M15 SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p005_c0009",
+                "source_quote": "First Avenue Second Avenue Markings • Houston St to 125 th St • 125 th St to 101 st St • 69 th St to 14 th St Bus lane Paint • Houston St to 72 nd St • 125 th St to 101 st St • 23 rd St to 14 th St"
+              }
+            ]
+          }
+        ],
+        "rationale": "The cited block from the M15 SBS CAC5 presentation (September 2010) explicitly lists bus lane markings and paint on First Avenue and Second Avenue. The source is directly associated with project_first-second-ave-sbs-2010, the Phase I SBS project launching October 2010.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p005_c0009",
+            "source_quote": "First Avenue Second Avenue Markings • Houston St to 125 th St • 125 th St to 101 st St • 69 th St to 14 th St Bus lane Paint • Houston St to 72 nd St • 125 th St to 101 st St • 23 rd St to 14 th St"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bike-lane-to-sbs-2010",
+        "local_observation_id": "treatment_bike_lane_first_second_ave",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_bike-lane-first-second-ave",
+            "description": "Protected bike lane paint on First and Second Avenues as part of M15 SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p005_c0009",
+                "source_quote": "Bike Lane Paint • Houston St to 34 th St • 34 th St to 17 th St • 14 th St to Houston St"
+              },
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p003_c0009",
+                "source_quote": "Doubles the protected bike lanes in New York City"
+              }
+            ]
+          }
+        ],
+        "rationale": "The cited blocks from the M15 SBS CAC5 presentation list bike lane paint locations on First and Second Avenues and state the project doubles protected bike lanes in NYC. The source is directly associated with project_first-second-ave-sbs-2010.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p005_c0009",
+            "source_quote": "Bike Lane Paint • Houston St to 34 th St • 34 th St to 17 th St • 14 th St to Houston St"
+          },
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p003_c0009",
+            "source_quote": "Doubles the protected bike lanes in New York City"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-ped-islands-to-sbs-2010",
+        "local_observation_id": "treatment_pedestrian_islands",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_pedestrian-islands_2",
+            "description": "Pedestrian islands completed on First and Second Avenues as part of M15 SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p008_c0010",
+                "source_quote": "First Avenue Second Avenue Islands Completed Houston to 10 th St 34 th St to 29 th St"
+              }
+            ]
+          }
+        ],
+        "rationale": "The cited block from the M15 SBS CAC5 presentation explicitly lists completed pedestrian islands on First and Second Avenues. The source is directly associated with project_first-second-ave-sbs-2010.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p008_c0010",
+            "source_quote": "First Avenue Second Avenue Islands Completed Houston to 10 th St 34 th St to 29 th St"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-shelters-to-sbs-2010",
+        "local_observation_id": "treatment_shelters_fare_machines",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_shelters-fare-machines",
+            "description": "Shelters and fare machines installed at 6 locations as part of M15 SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p009_c0011",
+                "source_quote": "Shelters and fare machines installed at 6 locations"
+              }
+            ]
+          }
+        ],
+        "rationale": "The cited block from the M15 SBS CAC5 presentation explicitly states shelters and fare machines were installed at 6 locations along the SBS corridor. The source is directly associated with project_first-second-ave-sbs-2010.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p009_c0011",
+            "source_quote": "Shelters and fare machines installed at 6 locations"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-turn-restrict-to-sbs-2010",
+        "local_observation_id": "treatment_left_turn_restrictions",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_left-turn-restrictions_3",
+            "description": "Left turn restrictions in effect on First and Second Avenues as part of M15 SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p007_c0010",
+                "source_quote": "Left Turn Restrictions In Effect"
+              }
+            ]
+          }
+        ],
+        "rationale": "The cited block from the M15 SBS CAC5 presentation explicitly states left turn restrictions are in effect on the SBS corridor. The source is directly associated with project_first-second-ave-sbs-2010.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p007_c0010",
+            "source_quote": "Left Turn Restrictions In Effect"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-offset-bus-lane-to-sbs-2010",
+        "local_observation_id": "treatment_offset_bus_lane",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_offset-bus-lane",
+            "description": "Offset bus lane on First Avenue as part of M15 SBS project design",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p019_c0005",
+                "source_quote": "Where bus lane is offset:"
+              },
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p019_c0006",
+                "source_quote": "Bus lane in effect at all times"
+              },
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p019_c0007",
+                "source_quote": "Curb lane parking regulations remain unchanged"
+              }
+            ]
+          }
+        ],
+        "rationale": "The cited blocks from the M15 SBS CAC5 presentation describe the offset bus lane configuration on First Avenue as part of the SBS project design details. The source is directly associated with project_first-second-ave-sbs-2010.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p019_c0005",
+            "source_quote": "Where bus lane is offset:"
+          },
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p019_c0006",
+            "source_quote": "Bus lane in effect at all times"
+          },
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p019_c0007",
+            "source_quote": "Curb lane parking regulations remain unchanged"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-curb-bus-lane-to-sbs-2010",
+        "local_observation_id": "treatment_curb_bus_lane",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_curb-bus-lane",
+            "description": "Curb bus lane on First and Second Avenues as part of M15 SBS project design",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p020_c0005",
+                "source_quote": "Where bus lane is at the curb:"
+              },
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p020_c0006",
+                "source_quote": "Bus lane hours 7 am to 10 am, 2pm to 7pm Metered commercial loading 10 am to 2 pm Open parking overnight"
+              }
+            ]
+          }
+        ],
+        "rationale": "The cited blocks from the M15 SBS CAC5 presentation describe the curb bus lane configuration with specific hours and parking regulations. The source is directly associated with project_first-second-ave-sbs-2010.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p020_c0005",
+            "source_quote": "Where bus lane is at the curb:"
+          },
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p020_c0006",
+            "source_quote": "Bus lane hours 7 am to 10 am, 2pm to 7pm Metered commercial loading 10 am to 2 pm Open parking overnight"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-video-enf-to-sbs-2010",
+        "local_observation_id": "treatment_video_enforcement",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_video-enforcement",
+            "description": "Video camera enforcement for bus lanes coming November 2010 as part of M15 SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p021_c0006",
+                "source_quote": "Video cameras (coming November 2010)"
+              }
+            ]
+          }
+        ],
+        "rationale": "The cited block from the M15 SBS CAC5 presentation announces video cameras for bus lane enforcement coming November 2010. The source is directly associated with project_first-second-ave-sbs-2010.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p021_c0006",
+            "source_quote": "Video cameras (coming November 2010)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-offboard-fare-to-sbs-2010",
+        "local_observation_id": "treatment_off_board_fare_payment",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs-2010",
+            "object_id": "treatment_off-board-fare-payment_2",
+            "description": "Off-board fare payment via sidewalk Metrocard and coin machines as part of M15 SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p012_c0007",
+                "source_quote": "1. Pay at sidewalk Metrocard or coin machines before boarding the bus 2. Take your receipt 3. Enter through any of the three doors"
+              }
+            ]
+          }
+        ],
+        "rationale": "The cited block from the M15 SBS CAC5 presentation describes the SBS off-board fare payment procedure. The source is directly associated with project_first-second-ave-sbs-2010.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p012_c0007",
+            "source_quote": "1. Pay at sidewalk Metrocard or coin machines before boarding the bus 2. Take your receipt 3. Enter through any of the three doors"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-48-32-199Z_1665469-c9d7bc02_canonicalize_2026-06-10t17-48-04-838z-1496766-05068207-ingest-2010-09-14-brt-1st2nd-cac5-treatment-relations"
+}

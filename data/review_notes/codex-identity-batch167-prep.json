@@ -1,0 +1,183 @@
+{
+  "note_id": "codex-identity-batch167-prep",
+  "batch": "identity167",
+  "created_at": "2026-06-23T08:26:23Z",
+  "scope": {
+    "global_kind": "route/corridor",
+    "selection_note": "Codex-only identity cleanup prep from current route/corridor canonical JSONL, current merge and do-not-merge overrides, and read-only duplicate_global_identity issue inspection using validateRepo's deterministic identity-key logic. Strict corridor geography was applied; partial overlaps, adjacent segments, same-street-only collisions, borough conflicts, compound routes, and route service-variant traps were excluded."
+  },
+  "prepared_count": 1,
+  "proposed_aliases": [
+    {
+      "global_kind": "route",
+      "alias_id": "route_bx55-limited-webster-2012",
+      "target_id": "route_bx55-2012",
+      "canonical_id": "route_bx55-2012",
+      "confidence": "high",
+      "validator_duplicate_key": "route_bx55",
+      "reason": "validateRepo duplicate_global_identity evidence says current route records route_bx55-2012 and route_bx55-limited-webster-2012 share identity key route_bx55. Canonical/source evidence supports the same Bx55 Limited/Webster identity: the alias record is Bx55 Limited with route_id Bx55, limited_stop service_variant, Bronx borough, and descriptions for limited service on Third Avenue and Webster Avenue north of Fordham Plaza; the target record is Bx55 (Limited), also route_id Bx55 in the Bronx, with merged limited_stop/Bx55 Limited values and progress-report evidence describing the Bx55 as the limited-stop replacement that operated partly on Webster Avenue and partly on 3rd Avenue.",
+      "validator_evidence": {
+        "duplicate_issue": "Global route records route_bx55-2012 and route_bx55-limited-webster-2012 share identity key route_bx55.",
+        "issue_source": "read-only duplicate_global_identity pass over current data/canonical/routes.jsonl and data/canonical/corridors.jsonl using packages/db/src/identity.ts identityKeysForRecord and do-not-merge suppression matching packages/pipeline/src/validate.ts validateRepo logic"
+      },
+      "canonical_evidence": {
+        "alias": {
+          "record_id": "route_bx55-limited-webster-2012",
+          "display_name": "Bx55 Limited",
+          "route_id": "Bx55",
+          "route_label": "Bx55 Limited",
+          "service_variant": "limited_stop",
+          "route_type_normalized": "limited_stop",
+          "borough_normalized": "bronx",
+          "source_ids": [
+            "2012_11_sbs_webster_cac4",
+            "2012_11_sbs_webster_cac4_summary",
+            "2013_02_sbs_webster_bx_cb4",
+            "2013_03_sbs_webster_bx_cb5",
+            "2013_03_sbs_webster_bx_cb7"
+          ]
+        },
+        "target": {
+          "record_id": "route_bx55-2012",
+          "display_name": "Bx55 (Limited)",
+          "route_id": "Bx55",
+          "route_label": "Bx55",
+          "borough_normalized": "bronx",
+          "merged_values_include": {
+            "route_label": [
+              "Bx55",
+              "Bx55 Limited"
+            ],
+            "service_variant": [
+              "local",
+              "limited_stop"
+            ],
+            "description": [
+              "Bx55 Limited north of Fordham Plaza",
+              "Existing Bx55 Limited service north of Fordham Plaza on Webster Avenue and Third Avenue.",
+              "Limited-stop replacement for the 3rd Avenue elevated subway service discontinued in 1973. Operated partly on Webster Avenue and partly on 3rd Avenue. Duplicative portion on northern Webster Avenue eliminated with Bx41 SBS launch."
+            ]
+          },
+          "source_ids": [
+            "2012_09_webster_sbs_cac3_workshop",
+            "2012_10_brt_webster_cac3_meeting_summary",
+            "2013_01_webster_sbs_newsletter",
+            "2013_02_sbs_webster_bx_cb1",
+            "2013_02_sbs_webster_bx_cb3",
+            "2013_03_sbs_webster_bx_cb6",
+            "2014_08_25_brt_websteravenue_progressreport"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "route_bx55-limited-webster-2012",
+          "evidence_id": "2013_02_sbs_webster_bx_cb4#p034_c0003",
+          "quote": "1. Bx41 LTD 2. Bx41 Local 3. Bx55 (Limited) north of Fordham Plaza"
+        },
+        {
+          "record_id": "route_bx55-limited-webster-2012",
+          "evidence_id": "2013_03_sbs_webster_bx_cb7#p037_c0003",
+          "quote": "1. Bx41 LTD 2. Bx41 Local 3. Bx55 (Limited) north of Fordham Plaza"
+        },
+        {
+          "record_id": "route_bx55-2012",
+          "evidence_id": "2013_02_sbs_webster_bx_cb3#p036_c0003",
+          "quote": "1. Bx41 LTD 2. Bx41 Local 3. Bx55 (Limited) north of Fordham Plaza"
+        },
+        {
+          "record_id": "route_bx55-2012",
+          "evidence_id": "2014_08_25_brt_websteravenue_progressreport#p011_c0004",
+          "quote": "The Bx55, the limited-stop replacement for the 3rd Avenue elevated subway service that was discontinued in 1973, also operated partly on Webster Avenue and partly on 3rd Avenue."
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_is_current_merge_target": true,
+        "alias_current_merge_target_for": [
+          "route_bx55-limited-2012-11-webster"
+        ],
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false
+      }
+    }
+  ],
+  "exclusions_and_guards": {
+    "current_duplicate_issue_counts": {
+      "route": 25,
+      "corridor": 34,
+      "route_and_corridor_total": 59
+    },
+      "input_files_read": [
+      "data/canonical/routes.jsonl",
+      "data/canonical/corridors.jsonl",
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json"
+    ],
+      "proposal_guards": [
+        "Both proposed ids were verified in current data/canonical/routes.jsonl.",
+        "Alias id route_bx55-limited-webster-2012 is not a current route merge alias in data/identity-overrides/merges.json.",
+        "Target id route_bx55-2012 is not a current route merge alias in data/identity-overrides/merges.json.",
+        "Alias id route_bx55-limited-webster-2012 is a current route merge target for route_bx55-limited-2012-11-webster; this was recorded as an incoming-alias caveat, while the requested guards only prohibit an already-merged alias and a target that is itself a merge alias.",
+        "Alias and target are distinct ids.",
+        "No route do-not-merge pair contains route_bx55-limited-webster-2012 with route_bx55-2012."
+      ],
+    "excluded_current_duplicate_classes": [
+      "Excluded B103/B103E, B82/B82E, Bx40/Bx42, and Q52/Q53 combined records because they are compound or express-vs-local/limited route traps, not safe one-record aliases.",
+      "Excluded B44, B46, Bx41, M23, M34, Q44, Q52, and Q53 local/limited/SBS collisions where current canonical fields or source text distinguish service variants or predecessor/replacement relationships.",
+      "Excluded route_m14-brt-phase2 -> route_m14-ad-sbs because the alias is a one-source generic existing M14 route mention, while the target is M14 A/D SBS; the current evidence is insufficient to collapse generic/pre-SBS route identity into the SBS route.",
+      "Excluded route_bx55-lga-2012 -> route_bx55-2012 because the alias is a one-source participant-identified LaGuardia workshop route mention from northern Bronx to LGA; source evidence is too thin and contextually different from the Webster/Third Avenue Bx55 Limited cluster.",
+      "Excluded corridor_125th-st-crosstown-brt-phase2, corridor_14th-st-crosstown-brt-phase2, and corridor_woodhaven-blvd-brt-phase2 because each is already a merge target for a phase-candidate alias and the corridor geography is underspecified relative to richer records; proposing them as aliases would create broad geography-sensitive override chains.",
+      "Excluded Church Avenue collisions because current canonical limits show adjacent or underspecified scopes (Coney Island Av to Flatbush Av, Flatbush Ave to Ocean Pkwy, and broad SBS-candidate wording).",
+      "Excluded Bay Parkway/Cropsey, B82 Kings Highway/Flatlands, Cross Bay Boulevard, Lexington Avenue, Third Avenue, Utica Avenue, Webster/Third, and Woodhaven Boulevard collisions as partial-overlap, segment-vs-corridor, or same-street-only geography traps.",
+      "Excluded Broadway-related corridor collisions where borough or corridor limits conflict."
+    ]
+  },
+  "command_evidence": [
+    {
+      "command": "sed -n '260,330p' packages/pipeline/src/validate.ts && sed -n '433,560p' packages/db/src/identity.ts",
+      "purpose": "Read validateRepo duplicate_global_identity logic and the deterministic identityKeysForRecord implementation."
+    },
+    {
+      "command": "bun --eval '<read-only duplicate-key pass over data/canonical/routes.jsonl and data/canonical/corridors.jsonl using identityKeysForRecord plus current do-not-merge suppression>'",
+      "purpose": "Reproduced current route/corridor duplicate_global_identity backlog without running the CLI validate command; found 59 in-scope issues: 25 route and 34 corridor."
+    },
+    {
+      "command": "jq -r 'select(.record_id|IN(\"route_bx55-2012\",\"route_bx55-limited-webster-2012\")) | .record_id' data/canonical/routes.jsonl | sort",
+      "purpose": "Verified both proposed ids currently exist as canonical route record_id values."
+    },
+    {
+      "command": "jq -r '.aliases.route as $r | [\"route_bx55-limited-webster-2012\",\"route_bx55-2012\"][] as $id | [$id, ($r[$id] // \"NO_MERGE_ALIAS\"), ([($r|to_entries[]|select(.value==$id)|.key)]|join(\",\"))] | @tsv' data/identity-overrides/merges.json",
+      "purpose": "Verified the proposed alias is not already merged and the target is not a merge alias; also recorded incoming aliases for each id."
+    },
+    {
+      "command": "jq -r '.pairs.route[]? | select(.record_ids|index(\"route_bx55-limited-webster-2012\") or index(\"route_bx55-2012\")) | .record_ids | @tsv' data/identity-overrides/do-not-merge.json",
+      "purpose": "Verified no do-not-merge guard covers the proposed pair."
+    },
+    {
+      "command": "jq -r 'select(.record_id|IN(\"route_bx55-2012\",\"route_bx55-limited-webster-2012\")) | {record_id, display_name, record_aliases, source_ids, payload, evidence_refs: [.evidence_refs[] | {evidence_id, source_quote, role}]} ' data/canonical/routes.jsonl",
+      "purpose": "Inspected canonical route payloads, aliases, source ids, and evidence refs for the proposed pair."
+    },
+    {
+      "command": "rg -n 'p034_c0003|p036_c0003|p037_c0003|p011_c0004|p029_c0003' raw/sources/2013_02_sbs_webster_bx_cb4/blocks.jsonl raw/sources/2013_02_sbs_webster_bx_cb3/blocks.jsonl raw/sources/2013_03_sbs_webster_bx_cb7/blocks.jsonl raw/sources/2014_08_25_brt_websteravenue_progressreport/blocks.jsonl raw/sources/2012_11_sbs_webster_cac4/blocks.jsonl",
+      "purpose": "Read local source blocks for source-backed evidence quotes cited by the proposed pair."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed commands",
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts export",
+    "materialize",
+    "validate",
+    "export",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "campaign dedup",
+    "canonicalize",
+    "write",
+    "ask"
+  ]
+}

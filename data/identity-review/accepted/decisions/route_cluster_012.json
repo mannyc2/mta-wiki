@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "review_state": "accepted",
+  "accepted_at": "2026-06-08T21:21:36.731Z",
+  "reviewer": "codex-audit-2026-06-08",
+  "source": "audit_safe_to_promote",
+  "cluster_id": "route_cluster_012",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_012.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_012.json",
+  "source_review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Flash",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 1,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "route_34th-st-sbs",
+        "route_m14-ad-sbs"
+      ],
+      "reason": "Distinct routes on different streets: route_34th-st-sbs is the 34th Street SBS (Manhattan crosstown on 34th St) while route_m14-ad-sbs is the M14 A/D SBS (14th Street M14A/M14D). The identity key collision (route_34th-st-sbs assigned to both) is an ingestion artifact from the brt_route_index source page listing many SBS routes in one block; both routes happen to appear in the same source block. Payload identity fields confirm different names ('34th Street Select Bus Service' vs 'M14 A Select Bus Service'), different streets ('34th Street' vs '14 St'), and different route numbers (none vs 'M14'). Relation contexts also differ: 34th St SBS has capital improvements in 2014 and off-board fare in 2011, while M14 A/D SBS started in July 2019 on the 14th Street TTP corridor."
+    }
+  ],
+  "weak_aliases": [
+    {
+      "record_id": "route_m14-ad-sbs",
+      "aliases": [
+        "34th Street Select Bus Service",
+        "14th Street Select Bus Service"
+      ],
+      "reason": "Source label '14th Street Select Bus Service' from brt_route_index appears in this record's merged payload (route_name: '14th Street Select Bus Service'), reflecting the source describing the 14th St route. The label 'route_34th_st_sbs' local_observation_id is a weak alias, useful for search but not merge authority."
+    }
+  ],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [
+    "Do not merge routes solely because they appear in the same multi-route source document or share an observation ID from a single-source ingestion. Use street name, route number/ID, and borough as strong identity discriminators for SBS routes."
+  ],
+  "rationale": "Payload identity fields are decisive: route_34th-st-sbs has route_name '34th Street Select Bus Service' and description mentioning 34th Street; route_m14-ad-sbs has route_id 'M14 A SBS', route 'M14', streets '14 St', and borough 'Manhattan'. The shared identity key is an ingestion artifact. The wiki pages and canonical JSONL confirm the distinct street scopes. No merger is warranted."
+}

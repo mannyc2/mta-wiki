@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "corridor_cluster_e833feb14e",
+  "kind": "corridor",
+  "packet_path": "data/identity-review/packets/corridor_cluster_e833feb14e.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_e833feb14e.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 3,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "corridor_125th-st-manhattan",
+        "corridor_125th-street-manhattan"
+      ],
+      "reason": "Same street and borough but different limits (Morningside Avenue vs Amsterdam Avenue) — per corridor rule: same street with differing limits never merges. Limits are a strong identity field."
+    },
+    {
+      "record_ids": [
+        "corridor_125th-st-manhattan",
+        "corridor_stationary-manhattan"
+      ],
+      "reason": "stationary-manhattan is a list of multiple corridors; it has no single street+limits identity. A compound record aggregating many segments is not the same canonical identity as a specific corridor segment. No strong identity fields match."
+    },
+    {
+      "record_ids": [
+        "corridor_125th-street-manhattan",
+        "corridor_stationary-manhattan"
+      ],
+      "reason": "Same reasoning as above: stationary-manhattan is a collection, not a specific corridor with defined limits. Distinct identities."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "Corridor identity requires street+borough+limits. The two 125th St records have different western limits (Morningside vs Amsterdam), so they are distinct corridors. The stationary-manhattan record aggregates many corridors with no single limit, making it a different entity type. All pairs are do_not_merge. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

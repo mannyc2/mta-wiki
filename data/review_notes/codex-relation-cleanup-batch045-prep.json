@@ -1,0 +1,683 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch045-prep",
+  "batch_id": "relation045",
+  "batch": "codex-relation-cleanup-batch045",
+  "author": "codex",
+  "created_at": "2026-06-23T00:00:00Z",
+  "scope": "Prepare, but do not apply, a Codex-only relation endpoint-shape retire-and-replace batch.",
+  "checkpoint_context": {
+    "fresh_baseline_after_relation044_identity076_next20": {
+      "unexpected_relation_endpoint_shape": 24
+    },
+    "excluded_recent_batches": [
+      "relation037",
+      "relation038",
+      "relation039",
+      "relation040",
+      "relation041",
+      "relation042",
+      "relation043",
+      "relation044"
+    ],
+    "recent_rule_patches_not_repeated": [
+      "owned_by corridor->entity",
+      "operated_by corridor->entity",
+      "has_claim treatment_component->claim",
+      "has_treatment route->treatment_component",
+      "operates_on_corridor entity->corridor"
+    ]
+  },
+  "bucket": {
+    "name": "implemented_by non-project -> entity rows that should use a project endpoint",
+    "reason_selected": "These rows already have the correct implementing entity object and source-backed implementation evidence, but the subject endpoint is an event, treatment component, or corridor. Replacing each malformed row with a narrow project endpoint plus implemented_by project->entity relation avoids ontology widening and preserves the authored implementation claim.",
+    "original_endpoint_shapes": [
+      "implemented_by event -> entity",
+      "implemented_by treatment_component -> entity",
+      "implemented_by corridor -> entity"
+    ],
+    "replacement_endpoint_shape": "implemented_by project -> entity"
+  },
+  "prepared_count": 3,
+  "retire_replace_count": 3,
+  "accepted_replacement_count": 6,
+  "retire_only_count": 0,
+  "issue_count": 0,
+  "expected_endpoint_shape_delta": -3,
+  "endpoint_shape_issue_count_after_replacement_estimate": 21,
+  "durable_mechanism_prepared_not_applied": {
+    "retire_target": "data/submission-overrides/retired.json",
+    "replacement_journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch045.jsonl",
+    "applied": false
+  },
+  "forbidden_commands_not_run": [
+    "provider/external-LLM commands",
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "commands with --profile/provider",
+    "materialize",
+    "export-jsonl",
+    "full validate",
+    "DB publish"
+  ],
+  "command_evidence": [
+    "Read packages/pipeline/src/records/relations.ts for the current RELATION_ENDPOINT_SHAPES allowlist.",
+    "Read-only bun --eval inventory over canonical JSONL plus retired.json exclusion confirmed 24 current unexpected_relation_endpoint_shape rows after relation044/identity076/next20.",
+    "rg confirmed selected original submission ids are not retired.",
+    "rg confirmed selected original submissions/records do not appear in relation037-relation044 prep artifacts.",
+    "rg confirmed proposed batch045 local_observation_id values do not collide in canonical data or existing submissions.",
+    "createSubmissionEntry dry run using packages/pipeline/src/records/submissions.ts produced accepted replacement entries with empty issues."
+  ],
+  "decisions": [
+    {
+      "action": "retire_and_replace",
+      "retire": {
+        "submission_id": "sub_c744ce63f9b7d506",
+        "run_id": "2026-06-22T22-06-39-606Z_413689-63ab24df_ingest_meeting-doc-98206",
+        "current_relation_id": "relation_ort-tbta-project",
+        "current_local_observation_id": "relation_ort_tbta_project",
+        "malformed_shape": "implemented_by event -> entity",
+        "original_relation_kind": "implemented_by",
+        "original_subject_id": "event_ort-conversion-completion-2017",
+        "original_subject_kind": "event",
+        "original_subject_local_observation_id": "event_ort_conversion_completion_2017",
+        "original_subject_name": "Open Road Tolling Conversion Completed",
+        "original_object_id": "entity_meeting-doc-tbta",
+        "original_object_kind": "entity",
+        "original_object_local_observation_id": "entity_tbta_meeting_doc_98206",
+        "original_object_name": "Triborough Bridge and Tunnel Authority (TBTA)",
+        "source_ids": [
+          "meeting_doc_98206"
+        ],
+        "current_args": {
+          "source_id": "meeting_doc_98206",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_ort_tbta_project",
+          "label": "ORT implemented by TBTA",
+          "raw_text": "TBTA completed the conversion of its seven bridges and two tunnels to Open Road Tolling (ORT)",
+          "payload": {
+            "relation_kind": "implemented_by",
+            "subject_local_observation_id": "event_ort_conversion_completion_2017",
+            "object_local_observation_id": "entity_tbta_meeting_doc_98206",
+            "description": "TBTA completed Open Road Tolling conversion of its seven bridges and two tunnels in 2017",
+            "relation_family": "agency_role"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_98206",
+              "evidence_id": "meeting_doc_98206#p006_c0001",
+              "source_path": "raw/sources/meeting_doc_98206/blocks.jsonl",
+              "page_number": 6,
+              "block_id": "p006_c0001",
+              "text_sha256": "sha256:fccf47a479e472fa092a321a00c647fd5a351986b3aed124fd41c4edfb019de6",
+              "text_source": "raw_text",
+              "role": "statement",
+              "source_quote": "September marks five years since TBTA completed the conversion of its seven bridges and two tunnels to Open Road Tolling (ORT)"
+            }
+          ]
+        },
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_c744ce63f9b7d506",
+          "reason": "Codex relation cleanup batch045 replaces malformed implemented_by event -> entity relation relation_ort-tbta-project with a source-backed ORT conversion project endpoint and a validator-compatible implemented_by project -> entity relation.",
+          "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-23.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch045",
+          "reviewed_at": "2026-06-23T00:00:00Z"
+        },
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_98206",
+            "evidence_id": "meeting_doc_98206#p006_c0001",
+            "source_path": "raw/sources/meeting_doc_98206/blocks.jsonl",
+            "page_number": 6,
+            "block_id": "p006_c0001",
+            "text_sha256": "sha256:fccf47a479e472fa092a321a00c647fd5a351986b3aed124fd41c4edfb019de6",
+            "text_source": "raw_text",
+            "source_quote": "TBTA completed the conversion of its seven bridges and two tunnels to Open Road Tolling (ORT)"
+          }
+        ],
+        "reason": "The current subject is the completion event, but implemented_by is defined for project subjects. The same evidence describes a discrete ORT conversion undertaking completed by TBTA, so a project endpoint is the correct subject shape.",
+        "expected_endpoint_shape_delta": -1,
+        "confidence": "high"
+      },
+      "replacement": {
+        "run_id": "2026-06-23_codex_relation_cleanup_batch045",
+        "journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch045.jsonl",
+        "id_generation": {
+          "method": "createSubmissionEntry(runId, rawToolArgs, '2026-06-23T00:00:00.000Z') with stable hashes over normalized tool_args.",
+          "conductor_required": false
+        },
+        "replacement_entries": [
+          {
+            "role": "project endpoint replacement",
+            "deterministic_submission_id": "sub_775b96e45b077d14",
+            "tool_args_sha256": "sha256:775b96e45b077d146002e20fe5265751a9fb4128bb4abf166e21111fa827c856",
+            "proposed_endpoint_kind": "project",
+            "entry": {
+              "submission_id": "sub_775b96e45b077d14",
+              "run_id": "2026-06-23_codex_relation_cleanup_batch045",
+              "submitted_at": "2026-06-23T00:00:00.000Z",
+              "tool_args_sha256": "sha256:775b96e45b077d146002e20fe5265751a9fb4128bb4abf166e21111fa827c856",
+              "schema_version": 2,
+              "tool_args": {
+                "source_id": "meeting_doc_98206",
+                "observation_kind": "project",
+                "local_observation_id": "project_batch045_open_road_tolling_conversion",
+                "create_new": true,
+                "label": "Open Road Tolling conversion",
+                "raw_text": "TBTA completed the conversion of its seven bridges and two tunnels to Open Road Tolling (ORT)",
+                "payload": {
+                  "project_name": "Open Road Tolling (ORT) conversion",
+                  "project_type": "tolling infrastructure conversion",
+                  "status": "completed",
+                  "description": "TBTA conversion of its seven bridges and two tunnels to Open Road Tolling, completed in 2017.",
+                  "document_time_status": "implemented",
+                  "project_family": "capital_or_infrastructure"
+                },
+                "evidence_refs": [
+                  {
+                    "source_id": "meeting_doc_98206",
+                    "evidence_id": "meeting_doc_98206#p006_c0001",
+                    "source_path": "raw/sources/meeting_doc_98206/blocks.jsonl",
+                    "page_number": 6,
+                    "block_id": "p006_c0001",
+                    "text_sha256": "sha256:fccf47a479e472fa092a321a00c647fd5a351986b3aed124fd41c4edfb019de6",
+                    "text_source": "raw_text",
+                    "role": "project_scope",
+                    "source_quote": "TBTA completed the conversion of its seven bridges and two tunnels to Open Road Tolling (ORT)"
+                  }
+                ]
+              },
+              "validation": {
+                "state": "accepted",
+                "issues": []
+              }
+            },
+            "local_validation": {
+              "state": "accepted",
+              "issues": [],
+              "warnings": [],
+              "collision": false
+            }
+          },
+          {
+            "role": "corrected relation replacement",
+            "deterministic_submission_id": "sub_292a24aa00d998f4",
+            "tool_args_sha256": "sha256:292a24aa00d998f4869fb6d3c82ab7dda435ead9944b524588975c6391de2488",
+            "proposed_relation_kind": "implemented_by",
+            "proposed_endpoint_shape": "project -> entity",
+            "entry": {
+              "submission_id": "sub_292a24aa00d998f4",
+              "run_id": "2026-06-23_codex_relation_cleanup_batch045",
+              "submitted_at": "2026-06-23T00:00:00.000Z",
+              "tool_args_sha256": "sha256:292a24aa00d998f4869fb6d3c82ab7dda435ead9944b524588975c6391de2488",
+              "schema_version": 2,
+              "tool_args": {
+                "source_id": "meeting_doc_98206",
+                "observation_kind": "relation",
+                "local_observation_id": "relation_batch045_ort_conversion_implemented_by_tbta",
+                "label": "Open Road Tolling conversion implemented by TBTA",
+                "raw_text": "TBTA completed the conversion of its seven bridges and two tunnels to Open Road Tolling (ORT)",
+                "payload": {
+                  "relation_kind": "implemented_by",
+                  "subject_local_observation_id": "project_batch045_open_road_tolling_conversion",
+                  "object_local_observation_id": "entity_tbta_meeting_doc_98206",
+                  "description": "Replacement for malformed implemented_by event-to-entity row; the source states TBTA completed the ORT conversion project.",
+                  "relation_family": "agency_role"
+                },
+                "evidence_refs": [
+                  {
+                    "source_id": "meeting_doc_98206",
+                    "evidence_id": "meeting_doc_98206#p006_c0001",
+                    "source_path": "raw/sources/meeting_doc_98206/blocks.jsonl",
+                    "page_number": 6,
+                    "block_id": "p006_c0001",
+                    "text_sha256": "sha256:fccf47a479e472fa092a321a00c647fd5a351986b3aed124fd41c4edfb019de6",
+                    "text_source": "raw_text",
+                    "role": "implementation_statement",
+                    "source_quote": "TBTA completed the conversion of its seven bridges and two tunnels to Open Road Tolling (ORT)"
+                  }
+                ]
+              },
+              "validation": {
+                "state": "accepted",
+                "issues": []
+              }
+            },
+            "local_validation": {
+              "state": "accepted",
+              "issues": [],
+              "warnings": [],
+              "relationEndpointIssues": [],
+              "endpoint_shape_issue_after_replacement": null,
+              "known_local_observation_ids_confirmed": [
+                "project_batch045_open_road_tolling_conversion",
+                "entity_tbta_meeting_doc_98206"
+              ],
+              "collision": false
+            }
+          }
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "action": "retire_and_replace",
+      "retire": {
+        "submission_id": "sub_ed65399ad3324e0c",
+        "run_id": "2026-06-22T20-45-01-485Z_336399-9fd9c884_ingest_meeting-doc-85796",
+        "current_relation_id": "relation_ada-elevators-nyct",
+        "current_local_observation_id": "relation_ada_elevators_nyct",
+        "malformed_shape": "implemented_by treatment_component -> entity",
+        "original_relation_kind": "implemented_by",
+        "original_subject_id": "treatment_grand-street-ada-elevators",
+        "original_subject_kind": "treatment_component",
+        "original_subject_local_observation_id": "treatment_grand_street_ada_elevators",
+        "original_subject_name": "ADA Elevator Construction at Grand Street Subway Station",
+        "original_object_id": "entity_meeting-doc-128981-nyct",
+        "original_object_kind": "entity",
+        "original_object_local_observation_id": "entity_meeting_doc_85796_nyct",
+        "original_object_name": "New York City Transit Authority (NYCT)",
+        "source_ids": [
+          "meeting_doc_85796"
+        ],
+        "current_args": {
+          "source_id": "meeting_doc_85796",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_ada_elevators_nyct",
+          "label": "ADA elevators by NYC Transit",
+          "raw_text": "NYCT is constructing elevators at 8 subway stations across New York City",
+          "payload": {
+            "relation_kind": "implemented_by",
+            "subject_local_observation_id": "treatment_grand_street_ada_elevators",
+            "object_local_observation_id": "entity_meeting_doc_85796_nyct",
+            "relation_family": "agency_role"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_85796",
+              "evidence_id": "meeting_doc_85796#p124_c0010",
+              "source_path": "raw/sources/meeting_doc_85796/blocks.jsonl",
+              "page_number": 124,
+              "block_id": "p124_c0010",
+              "text_sha256": "sha256:92b775bc5a33d30d16b7947d3601d2395bd0e2abc74c08475973f7aed109670a",
+              "text_source": "raw_text",
+              "role": "entity_agency"
+            }
+          ]
+        },
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_ed65399ad3324e0c",
+          "reason": "Codex relation cleanup batch045 replaces malformed implemented_by treatment_component -> entity relation relation_ada-elevators-nyct with a source-backed Grand Street ADA elevator project endpoint and a validator-compatible implemented_by project -> entity relation.",
+          "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-23.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch045",
+          "reviewed_at": "2026-06-23T00:00:00Z"
+        },
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_85796",
+            "evidence_id": "meeting_doc_85796#p124_c0010",
+            "source_path": "raw/sources/meeting_doc_85796/blocks.jsonl",
+            "page_number": 124,
+            "block_id": "p124_c0010",
+            "text_sha256": "sha256:92b775bc5a33d30d16b7947d3601d2395bd0e2abc74c08475973f7aed109670a",
+            "text_source": "raw_text",
+            "source_quote": "NYCT is constructing elevators at 8 subway stations across New York City"
+          }
+        ],
+        "reason": "The current subject is the treatment component. The evidence states NYCT is constructing the elevators, so a narrow project endpoint for the ADA elevator construction is the validator-compatible implemented_by subject while the treatment component can remain available for has_treatment context.",
+        "expected_endpoint_shape_delta": -1,
+        "confidence": "high"
+      },
+      "replacement": {
+        "run_id": "2026-06-23_codex_relation_cleanup_batch045",
+        "journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch045.jsonl",
+        "id_generation": {
+          "method": "createSubmissionEntry(runId, rawToolArgs, '2026-06-23T00:00:00.000Z') with stable hashes over normalized tool_args.",
+          "conductor_required": false
+        },
+        "replacement_entries": [
+          {
+            "role": "project endpoint replacement",
+            "deterministic_submission_id": "sub_1d1088d1dcd5f79a",
+            "tool_args_sha256": "sha256:1d1088d1dcd5f79a3b705fa33c3ae025b7ca4015538a0065176eeea744c750d7",
+            "proposed_endpoint_kind": "project",
+            "entry": {
+              "submission_id": "sub_1d1088d1dcd5f79a",
+              "run_id": "2026-06-23_codex_relation_cleanup_batch045",
+              "submitted_at": "2026-06-23T00:00:00.000Z",
+              "tool_args_sha256": "sha256:1d1088d1dcd5f79a3b705fa33c3ae025b7ca4015538a0065176eeea744c750d7",
+              "schema_version": 2,
+              "tool_args": {
+                "source_id": "meeting_doc_85796",
+                "observation_kind": "project",
+                "local_observation_id": "project_batch045_grand_street_ada_elevators",
+                "create_new": true,
+                "label": "Grand Street ADA elevator construction",
+                "raw_text": "NYCT is constructing elevators at 8 subway stations across New York City in support of improving accessibility to the stations in compliance with the Americans with Disabilities Act (ADA).",
+                "payload": {
+                  "project_name": "Grand Street ADA elevator construction",
+                  "project_type": "ADA accessibility construction",
+                  "status": "under construction",
+                  "description": "NYCT elevator construction for ADA accessibility, including installation activity adjacent to Grand Street subway station properties.",
+                  "document_time_status": "under_construction",
+                  "project_family": "capital_or_infrastructure"
+                },
+                "evidence_refs": [
+                  {
+                    "source_id": "meeting_doc_85796",
+                    "evidence_id": "meeting_doc_85796#p124_c0010",
+                    "source_path": "raw/sources/meeting_doc_85796/blocks.jsonl",
+                    "page_number": 124,
+                    "block_id": "p124_c0010",
+                    "text_sha256": "sha256:92b775bc5a33d30d16b7947d3601d2395bd0e2abc74c08475973f7aed109670a",
+                    "text_source": "raw_text",
+                    "role": "project_scope",
+                    "source_quote": "NYCT is constructing elevators at 8 subway stations across New York City"
+                  }
+                ]
+              },
+              "validation": {
+                "state": "accepted",
+                "issues": []
+              }
+            },
+            "local_validation": {
+              "state": "accepted",
+              "issues": [],
+              "warnings": [],
+              "collision": false
+            }
+          },
+          {
+            "role": "corrected relation replacement",
+            "deterministic_submission_id": "sub_99f6ac5b6a39b03b",
+            "tool_args_sha256": "sha256:99f6ac5b6a39b03bdaa7e80ba939bf0719a5a08322cc8f928f558bffa4327c96",
+            "proposed_relation_kind": "implemented_by",
+            "proposed_endpoint_shape": "project -> entity",
+            "entry": {
+              "submission_id": "sub_99f6ac5b6a39b03b",
+              "run_id": "2026-06-23_codex_relation_cleanup_batch045",
+              "submitted_at": "2026-06-23T00:00:00.000Z",
+              "tool_args_sha256": "sha256:99f6ac5b6a39b03bdaa7e80ba939bf0719a5a08322cc8f928f558bffa4327c96",
+              "schema_version": 2,
+              "tool_args": {
+                "source_id": "meeting_doc_85796",
+                "observation_kind": "relation",
+                "local_observation_id": "relation_batch045_grand_street_ada_elevators_implemented_by_nyct",
+                "label": "Grand Street ADA elevators implemented by NYCT",
+                "raw_text": "NYCT is constructing elevators at 8 subway stations across New York City",
+                "payload": {
+                  "relation_kind": "implemented_by",
+                  "subject_local_observation_id": "project_batch045_grand_street_ada_elevators",
+                  "object_local_observation_id": "entity_meeting_doc_85796_nyct",
+                  "description": "Replacement for malformed implemented_by treatment_component-to-entity row; the source states NYCT is constructing the ADA elevators.",
+                  "relation_family": "agency_role"
+                },
+                "evidence_refs": [
+                  {
+                    "source_id": "meeting_doc_85796",
+                    "evidence_id": "meeting_doc_85796#p124_c0010",
+                    "source_path": "raw/sources/meeting_doc_85796/blocks.jsonl",
+                    "page_number": 124,
+                    "block_id": "p124_c0010",
+                    "text_sha256": "sha256:92b775bc5a33d30d16b7947d3601d2395bd0e2abc74c08475973f7aed109670a",
+                    "text_source": "raw_text",
+                    "role": "implementation_statement",
+                    "source_quote": "NYCT is constructing elevators at 8 subway stations across New York City"
+                  }
+                ]
+              },
+              "validation": {
+                "state": "accepted",
+                "issues": []
+              }
+            },
+            "local_validation": {
+              "state": "accepted",
+              "issues": [],
+              "warnings": [],
+              "relationEndpointIssues": [],
+              "endpoint_shape_issue_after_replacement": null,
+              "known_local_observation_ids_confirmed": [
+                "project_batch045_grand_street_ada_elevators",
+                "entity_meeting_doc_85796_nyct"
+              ],
+              "collision": false
+            }
+          }
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "action": "retire_and_replace",
+      "retire": {
+        "submission_id": "sub_ba53c6cee7cbe7ae",
+        "run_id": "2026-06-20T20-50-03-648Z_1885472-23e846bc_ingest_meeting-doc-160966",
+        "current_relation_id": "relation_rel-mta-implements-crz",
+        "current_local_observation_id": "rel_mta_implements_crz",
+        "malformed_shape": "implemented_by corridor -> entity",
+        "original_relation_kind": "implemented_by",
+        "original_subject_id": "corridor_congestion-relief-zone",
+        "original_subject_kind": "corridor",
+        "original_subject_local_observation_id": "corridor_crz_meeting_doc_160966",
+        "original_subject_name": "Congestion Relief Zone",
+        "original_object_id": "entity_mta-entity-update-2025",
+        "original_object_kind": "entity",
+        "original_object_local_observation_id": "entity_mta_meeting_doc_160966",
+        "original_object_name": "Metropolitan Transportation Authority (MTA)",
+        "source_ids": [
+          "meeting_doc_160966"
+        ],
+        "current_args": {
+          "source_id": "meeting_doc_160966",
+          "observation_kind": "relation",
+          "local_observation_id": "rel_mta_implements_crz",
+          "label": "MTA implements CRZ",
+          "raw_text": "In 2019, the State Legislature passed a law directing the MTA to implement congestion pricing in partnership with NYCDOT and NYSDOT.",
+          "payload": {
+            "relation_kind": "implemented_by",
+            "subject_local_observation_id": "corridor_crz_meeting_doc_160966",
+            "object_local_observation_id": "entity_mta_meeting_doc_160966",
+            "relation_family": "agency_role"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_160966",
+              "evidence_id": "meeting_doc_160966#p005_c0006",
+              "source_path": "raw/sources/meeting_doc_160966/blocks.jsonl",
+              "page_number": 5,
+              "block_id": "p005_c0006",
+              "text_sha256": "sha256:08e47bfd0f965c1c5cbf6261f559c1ba347be922d4bce7c58e5609bdfca232f5",
+              "text_source": "raw_text"
+            }
+          ]
+        },
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_ba53c6cee7cbe7ae",
+          "reason": "Codex relation cleanup batch045 replaces malformed implemented_by corridor -> entity relation relation_rel-mta-implements-crz with a source-backed congestion pricing implementation project endpoint and a validator-compatible implemented_by project -> entity relation.",
+          "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-23.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch045",
+          "reviewed_at": "2026-06-23T00:00:00Z"
+        },
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_160966",
+            "evidence_id": "meeting_doc_160966#p005_c0006",
+            "source_path": "raw/sources/meeting_doc_160966/blocks.jsonl",
+            "page_number": 5,
+            "block_id": "p005_c0006",
+            "text_sha256": "sha256:08e47bfd0f965c1c5cbf6261f559c1ba347be922d4bce7c58e5609bdfca232f5",
+            "text_source": "raw_text",
+            "source_quote": "directing the MTA to implement congestion pricing"
+          }
+        ],
+        "reason": "The source says the MTA was directed to implement congestion pricing; the current row incorrectly attaches implemented_by to the zone/corridor endpoint. A narrow project endpoint for the implementation work preserves the CRZ corridor record while producing the allowed project -> entity relation shape.",
+        "expected_endpoint_shape_delta": -1,
+        "confidence": "high"
+      },
+      "replacement": {
+        "run_id": "2026-06-23_codex_relation_cleanup_batch045",
+        "journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch045.jsonl",
+        "id_generation": {
+          "method": "createSubmissionEntry(runId, rawToolArgs, '2026-06-23T00:00:00.000Z') with stable hashes over normalized tool_args.",
+          "conductor_required": false
+        },
+        "replacement_entries": [
+          {
+            "role": "project endpoint replacement",
+            "deterministic_submission_id": "sub_922011d21ce8d739",
+            "tool_args_sha256": "sha256:922011d21ce8d739c52ace23a7a60d9698ae035e3795e4ce6a25ad44e990b9b5",
+            "proposed_endpoint_kind": "project",
+            "entry": {
+              "submission_id": "sub_922011d21ce8d739",
+              "run_id": "2026-06-23_codex_relation_cleanup_batch045",
+              "submitted_at": "2026-06-23T00:00:00.000Z",
+              "tool_args_sha256": "sha256:922011d21ce8d739c52ace23a7a60d9698ae035e3795e4ce6a25ad44e990b9b5",
+              "schema_version": 2,
+              "tool_args": {
+                "source_id": "meeting_doc_160966",
+                "observation_kind": "project",
+                "local_observation_id": "project_batch045_congestion_pricing_implementation",
+                "create_new": true,
+                "label": "Congestion pricing implementation",
+                "raw_text": "In 2019, the State Legislature passed a law directing the MTA to implement congestion pricing in partnership with NYCDOT and NYSDOT.",
+                "payload": {
+                  "project_name": "Congestion pricing implementation",
+                  "project_type": "tolling program implementation",
+                  "status": "directed by law",
+                  "description": "MTA implementation of congestion pricing in partnership with NYCDOT and NYSDOT, as directed by the 2019 State Legislature law.",
+                  "document_time_status": "other",
+                  "project_family": "other"
+                },
+                "evidence_refs": [
+                  {
+                    "source_id": "meeting_doc_160966",
+                    "evidence_id": "meeting_doc_160966#p005_c0006",
+                    "source_path": "raw/sources/meeting_doc_160966/blocks.jsonl",
+                    "page_number": 5,
+                    "block_id": "p005_c0006",
+                    "text_sha256": "sha256:08e47bfd0f965c1c5cbf6261f559c1ba347be922d4bce7c58e5609bdfca232f5",
+                    "text_source": "raw_text",
+                    "role": "project_scope",
+                    "source_quote": "directing the MTA to implement congestion pricing in partnership with NYCDOT and NYSDOT"
+                  }
+                ]
+              },
+              "validation": {
+                "state": "accepted",
+                "issues": []
+              }
+            },
+            "local_validation": {
+              "state": "accepted",
+              "issues": [],
+              "warnings": [],
+              "collision": false
+            }
+          },
+          {
+            "role": "corrected relation replacement",
+            "deterministic_submission_id": "sub_9e9fb57020bce61e",
+            "tool_args_sha256": "sha256:9e9fb57020bce61ec3fa7b6c7eabb1b9503163236b29d944193a140572c0b753",
+            "proposed_relation_kind": "implemented_by",
+            "proposed_endpoint_shape": "project -> entity",
+            "entry": {
+              "submission_id": "sub_9e9fb57020bce61e",
+              "run_id": "2026-06-23_codex_relation_cleanup_batch045",
+              "submitted_at": "2026-06-23T00:00:00.000Z",
+              "tool_args_sha256": "sha256:9e9fb57020bce61ec3fa7b6c7eabb1b9503163236b29d944193a140572c0b753",
+              "schema_version": 2,
+              "tool_args": {
+                "source_id": "meeting_doc_160966",
+                "observation_kind": "relation",
+                "local_observation_id": "relation_batch045_congestion_pricing_implemented_by_mta",
+                "label": "Congestion pricing implementation by MTA",
+                "raw_text": "State Legislature passed a law directing the MTA to implement congestion pricing",
+                "payload": {
+                  "relation_kind": "implemented_by",
+                  "subject_local_observation_id": "project_batch045_congestion_pricing_implementation",
+                  "object_local_observation_id": "entity_mta_meeting_doc_160966",
+                  "description": "Replacement for malformed implemented_by corridor-to-entity row; the source states the MTA was directed to implement congestion pricing.",
+                  "relation_family": "agency_role"
+                },
+                "evidence_refs": [
+                  {
+                    "source_id": "meeting_doc_160966",
+                    "evidence_id": "meeting_doc_160966#p005_c0006",
+                    "source_path": "raw/sources/meeting_doc_160966/blocks.jsonl",
+                    "page_number": 5,
+                    "block_id": "p005_c0006",
+                    "text_sha256": "sha256:08e47bfd0f965c1c5cbf6261f559c1ba347be922d4bce7c58e5609bdfca232f5",
+                    "text_source": "raw_text",
+                    "role": "implementation_statement",
+                    "source_quote": "directing the MTA to implement congestion pricing"
+                  }
+                ]
+              },
+              "validation": {
+                "state": "accepted",
+                "issues": []
+              }
+            },
+            "local_validation": {
+              "state": "accepted",
+              "issues": [],
+              "warnings": [],
+              "relationEndpointIssues": [],
+              "endpoint_shape_issue_after_replacement": null,
+              "known_local_observation_ids_confirmed": [
+                "project_batch045_congestion_pricing_implementation",
+                "entity_mta_meeting_doc_160966"
+              ],
+              "collision": false
+            }
+          }
+        ],
+        "confidence": "high"
+      }
+    }
+  ],
+  "exclusions_and_guards": {
+    "not_repeated_from_relation037_to_relation044": true,
+    "selected_original_submission_ids_not_retired": [
+      "sub_c744ce63f9b7d506",
+      "sub_ed65399ad3324e0c",
+      "sub_ba53c6cee7cbe7ae"
+    ],
+    "proposed_local_observation_id_collisions": [],
+    "excluded_schema_or_ontology_invention": true,
+    "replacement_relation_shapes_allowed_by_current_rules": [
+      "implemented_by project -> entity"
+    ],
+    "remaining_singleton_buckets_not_selected": [
+      "has_claim claim->claim",
+      "has_timeline_event entity->metric_claim",
+      "has_timeline_event event->entity",
+      "has_timeline_event project->entity",
+      "has_timeline_event source->entity",
+      "has_treatment claim->treatment_component",
+      "has_treatment entity->metric_claim",
+      "has_treatment event->treatment_component",
+      "implemented_by entity->entity",
+      "implemented_by source->entity",
+      "operated_by entity->entity",
+      "operated_by entity->event",
+      "operated_by treatment_component->entity",
+      "operates_on_corridor project->entity",
+      "owned_by event->entity",
+      "owned_by source->entity",
+      "published_by claim->entity",
+      "published_by metric_claim->source",
+      "related_route project->project",
+      "serves_route project->entity",
+      "serves_route project->project"
+    ]
+  },
+  "blockers": [],
+  "files_written": [
+    "data/review_notes/codex-relation-cleanup-batch045-prep.json"
+  ],
+  "all_pass": true
+}

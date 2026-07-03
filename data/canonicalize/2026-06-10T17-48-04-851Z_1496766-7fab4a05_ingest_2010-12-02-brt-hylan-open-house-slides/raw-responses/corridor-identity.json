@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-06-10T17-48-04-851Z_1496766-7fab4a05_ingest_2010-12-02-brt-hylan-open-house-slides",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-10T19:49:35.918Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "hylan-blvd-2010-study-self-match",
+        "local_observation_id": "corridor_hylan_blvd_2010_study",
+        "decision": "new",
+        "rationale": "The observation's base_record_id corridor_hylan-boulevard-brt already matches the existing registry card for Hylan Boulevard in Staten Island. The registry card already includes the observation's source_id (2010_12_02_brt_hylan_open_house_slides) in its source_ids and the alias corridor_hylan-blvd-2010-study. No different registry record represents the same real-world corridor: corridor_stationary-staten-island is an aggregate borough-level camera index (streets list includes Hylan Boulevard), not an individual corridor — analogous to the do_not_merge_pair distinguishing corridor_archer-ave-busway from corridor_stationary-queens. Per the rule, when the closest match is the observation's own base_record_id, the decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_12_02_brt_hylan_open_house_slides",
+            "block_id": "p004_c0004",
+            "source_quote": "Corridor Issues"
+          },
+          {
+            "source_id": "2010_12_02_brt_hylan_open_house_slides",
+            "block_id": "p009_c0004",
+            "source_quote": "A detailed map of the Hylan Boulevard Transportation Improvement Study Corridor. The corridor is highlighted with a thick red line, starting from the Verrazano-Narrows Bridge in Brooklyn, crossing the Narrows via Narrows Road and Steuben Street, and continuing through Staten Island along Hylan Boulevard."
+          },
+          {
+            "source_id": "2010_12_02_brt_hylan_open_house_slides",
+            "block_id": "p012_c0005",
+            "source_quote": "A map of Staten Island, New York, showing the proposed Hylan Boulevard route. The route is highlighted with a thick red line and four green hatched rectangular boxes indicating initial study areas."
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-48-37-114Z_1665696-05958393_canonicalize_2026-06-10t17-48-04-851z-1496766-7fab4a05-ingest-2010-12-02-brt-hylan-open-house-slides-corridor-identity"
+}

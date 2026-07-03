@@ -1,0 +1,71 @@
+{
+  "run_id": "2026-06-10T17-48-04-902Z_1496766-95afb994_ingest_20100921-34th-cac-minutes",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-10T19:31:20.261Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "relate-34th-st-transitway",
+        "local_observation_id": "treatment_34th_st_transitway_20100921",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "treatment_34th-st-transitway-20100921",
+            "description": "34th Street Transitway is a transitway treatment on the 34th Street busway corridor",
+            "evidence_refs": [
+              {
+                "source_id": "20100921_34th_cac_minutes",
+                "block_id": "p001_c0009",
+                "source_quote": "34th Street Transitway benefits and features; project timeline; and the Transitway design process."
+              },
+              {
+                "source_id": "20100921_34th_cac_minutes",
+                "block_id": "p002_c0004",
+                "source_quote": "For all three options of how the proposed Transitway would accommodate non-bus traffic flow – eastbound only, westbound only, or outbound only"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "treatment_34th-st-transitway-20100921",
+            "description": "34th Street Transitway is a treatment within the 34th Street Transitway Concept project",
+            "evidence_refs": [
+              {
+                "source_id": "20100921_34th_cac_minutes",
+                "block_id": "p001_c0009",
+                "source_quote": "34th Street Transitway benefits and features; project timeline; and the Transitway design process."
+              },
+              {
+                "source_id": "20100921_34th_cac_minutes",
+                "block_id": "p002_c0004",
+                "source_quote": "For all three options of how the proposed Transitway would accommodate non-bus traffic flow – eastbound only, westbound only, or outbound only"
+              }
+            ]
+          }
+        ],
+        "rationale": "The 2010-09-21 CAC minutes explicitly discuss the 34th Street Transitway design process, timeline, and non-bus traffic flow options. This treatment is inherently part of both the 34th Street busway corridor and the 34th Street Transitway Concept project, both of which cite this same source. The evidence supports attaching the transitway treatment to both.",
+        "evidence_refs": [
+          {
+            "source_id": "20100921_34th_cac_minutes",
+            "block_id": "p001_c0009",
+            "source_quote": "34th Street Transitway benefits and features; project timeline; and the Transitway design process."
+          },
+          {
+            "source_id": "20100921_34th_cac_minutes",
+            "block_id": "p002_c0004",
+            "source_quote": "For all three options of how the proposed Transitway would accommodate non-bus traffic flow – eastbound only, westbound only, or outbound only"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-30-06-082Z_1632336-6064587e_canonicalize_2026-06-10t17-48-04-902z-1496766-95afb994-ingest-20100921-34th-cac-minutes-treatment-relations"
+}

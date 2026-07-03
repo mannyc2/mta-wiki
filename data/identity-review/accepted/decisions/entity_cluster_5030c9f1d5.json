@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "entity_cluster_5030c9f1d5",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_5030c9f1d5.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_5030c9f1d5.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 1,
+    "do_not_merge_count": 2,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [
+    [
+      "entity_mta-real-estate-tod",
+      "entity_mta-transit-oriented-development"
+    ]
+  ],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "entity_mta-real-estate-tod",
+        "entity_mta-tod-meeting-doc-160301"
+      ],
+      "reason": "Test 1 contradiction: entity_type differs (department vs program). Strong identity field conflict forces do_not_merge regardless of name/alias overlap."
+    },
+    {
+      "record_ids": [
+        "entity_mta-tod-meeting-doc-160301",
+        "entity_mta-transit-oriented-development"
+      ],
+      "reason": "Test 1 contradiction: entity_type differs (program vs department). Strong identity field conflict forces do_not_merge."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "entity_mta-real-estate-tod and entity_mta-transit-oriented-development share entity_type 'department', same acronym TOD, and near-identical descriptions; their name difference (with/without 'MTA') is a source-local abbreviation, satisfying test 2. entity_mta-tod-meeting-doc-160301 has entity_type 'program', a strong identity field that contradicts the other two records, so test 1 forces do_not_merge for both pairs. The payload identity fields are decisive; no ambiguous context is needed. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

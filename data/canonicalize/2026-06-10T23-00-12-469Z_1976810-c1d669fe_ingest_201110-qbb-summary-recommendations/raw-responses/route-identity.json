@@ -1,0 +1,168 @@
+{
+  "run_id": "2026-06-10T23-00-12-469Z_1976810-c1d669fe_ingest_201110-qbb-summary-recommendations",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T02:05:25.226Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "q60-new",
+        "local_observation_id": "route_q60_qbb_study",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_q60-ace matches existing registry record route_q60-ace, which already aggregates both QBB approach summary and summary recommendations sources. The observation resolves to its own canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p006_c0002",
+            "source_quote": "Q60 bus stop; Q60 turns left against traffic from QBB during same signal phase"
+          },
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p006_c0003",
+            "source_quote": "Q60 bus stop; Q60 turns left against traffic from QBB during same signal phase"
+          }
+        ]
+      },
+      {
+        "decision_id": "q101-new",
+        "local_observation_id": "route_q101_qbb_study",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_q101-qbb-study matches existing registry record route_q101-qbb-study from the same source. The observation resolves to its own canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p008_c0001",
+            "source_quote": "Q101 Second Avenue Bus Stop Existing Issue; 1/2-mile loop to return EB on QBB"
+          },
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p008_c0003",
+            "source_quote": "Q101 Second Avenue Bus Stop Existing Issue; 1/2-mile loop to return EB on QBB"
+          }
+        ]
+      },
+      {
+        "decision_id": "qm4-new",
+        "local_observation_id": "route_qm4_qbb_study",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_qm4-qbb-study matches existing registry record route_qm4-qbb-study. The observation resolves to its own canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p010_c0005",
+            "source_quote": "Bus Stop: QM 4 QM 10 QM 12 QM 24"
+          }
+        ]
+      },
+      {
+        "decision_id": "qm10-new",
+        "local_observation_id": "route_qm10_qbb_study",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_qm10-qbb-study matches existing registry record route_qm10-qbb-study. The observation resolves to its own canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p010_c0005",
+            "source_quote": "Bus Stop: QM 4 QM 10 QM 12 QM 24"
+          }
+        ]
+      },
+      {
+        "decision_id": "qm12-new",
+        "local_observation_id": "route_qm12_qbb_study",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_qm12-qbb-study matches existing registry record route_qm12-qbb-study. The observation resolves to its own canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p010_c0005",
+            "source_quote": "Bus Stop: QM 4 QM 10 QM 12 QM 24"
+          }
+        ]
+      },
+      {
+        "decision_id": "qm15-new",
+        "local_observation_id": "route_qm15_qbb_study",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_qm15-qbb-study matches existing registry record route_qm15-qbb-study. The observation resolves to its own canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p010_c0005",
+            "source_quote": "Bus Stop: QM 15 QM 16 QM 17 QM 18 QM 21"
+          }
+        ]
+      },
+      {
+        "decision_id": "qm16-new",
+        "local_observation_id": "route_qm16_qbb_study",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_qm16-qbb-study matches existing registry record route_qm16-qbb-study. The observation resolves to its own canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p010_c0005",
+            "source_quote": "Bus Stop: QM 15 QM 16 QM 17 QM 18 QM 21"
+          }
+        ]
+      },
+      {
+        "decision_id": "qm17-new",
+        "local_observation_id": "route_qm17_qbb_study",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_qm17-qbb-study matches existing registry record route_qm17-qbb-study. The observation resolves to its own canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p010_c0005",
+            "source_quote": "Bus Stop: QM 15 QM 16 QM 17 QM 18 QM 21"
+          }
+        ]
+      },
+      {
+        "decision_id": "qm18-new",
+        "local_observation_id": "route_qm18_qbb_study",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_qm18-qbb-study matches existing registry record route_qm18-qbb-study. The observation resolves to its own canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p010_c0005",
+            "source_quote": "Bus Stop: QM 15 QM 16 QM 17 QM 18 QM 21"
+          }
+        ]
+      },
+      {
+        "decision_id": "qm21-new",
+        "local_observation_id": "route_qm21_qbb_study",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_qm21-qbb-study matches existing registry record route_qm21-qbb-study. The observation resolves to its own canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p010_c0005",
+            "source_quote": "Bus Stop: QM 15 QM 16 QM 17 QM 18 QM 21"
+          }
+        ]
+      },
+      {
+        "decision_id": "qm24-new",
+        "local_observation_id": "route_qm24_qbb_study",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_qm24-qbb-study matches existing registry record route_qm24-qbb-study. The observation resolves to its own canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_summary_recommendations",
+            "block_id": "p010_c0005",
+            "source_quote": "Bus Stop: QM 4 QM 10 QM 12 QM 24"
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-02-57-618Z_2111393-3b2172bb_canonicalize_2026-06-10t23-00-12-469z-1976810-c1d669fe-ingest-201110-qbb-summary-recommendations-route-identity"
+}

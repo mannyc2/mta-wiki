@@ -1,0 +1,286 @@
+{
+  "batch_id": "identity084",
+  "prepared_count": 5,
+  "all_pass": true,
+  "proposed_aliases": [
+    {
+      "kind": "entity",
+      "alias_id": "entity_connecticut-department-of-transportation-oct2022",
+      "target_id": "entity_cdot-meeting-doc-104741",
+      "reason": "Both records identify the same Connecticut Department of Transportation state transportation agency, with CDOT as the same acronym.",
+      "evidence": [
+        {
+          "record_id": "entity_connecticut-department-of-transportation-oct2022",
+          "display_name": "Connecticut Department of Transportation (CDOT)",
+          "entity_name": "Connecticut Department of Transportation",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_100301",
+            "meeting_doc_115141"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_115141",
+              "block_id": "p015_c0009",
+              "evidence_id": "meeting_doc_115141#p015_c0009",
+              "source_quote": "on behalf of the Connecticut Department of Transportation (\"CDOT\")"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_cdot-meeting-doc-104741",
+          "display_name": "Connecticut Department of Transportation",
+          "entity_name": "Connecticut Department of Transportation",
+          "entity_type": "state agency",
+          "source_ids": [
+            "meeting_doc_104741"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_104741",
+              "block_id": "p012_c0001",
+              "evidence_id": "meeting_doc_104741#p012_c0001",
+              "source_quote": "Connecticut Department of Transportation (\"CDOT\") is responsible for approximately 33%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-100331-cdot",
+      "target_id": "entity_cdot-meeting-doc-104741",
+      "reason": "Both records identify the same Connecticut Department of Transportation agency; the alias record expands CDOT to Connecticut Department of Transportation in funding-apportionment context.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-100331-cdot",
+          "display_name": "Connecticut Department of Transportation",
+          "entity_name": "Connecticut Department of Transportation",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_100331"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_100331",
+              "block_id": "p006_c0006",
+              "evidence_id": "meeting_doc_100331#p006_c0006",
+              "source_quote": "Funding for this procurement will be apportioned between the Connecticut Department of Transportation (State of Connecticut)"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_cdot-meeting-doc-104741",
+          "display_name": "Connecticut Department of Transportation",
+          "entity_name": "Connecticut Department of Transportation",
+          "entity_type": "state agency",
+          "source_ids": [
+            "meeting_doc_104741"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_104741",
+              "block_id": "p012_c0001",
+              "evidence_id": "meeting_doc_104741#p012_c0001",
+              "source_quote": "Connecticut Department of Transportation (\"CDOT\") is responsible for approximately 33%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-102756-ctdot",
+      "target_id": "entity_cdot-meeting-doc-104741",
+      "reason": "Both records identify the same Connecticut Department of Transportation agency in Metro-North funding-responsibility context.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-102756-ctdot",
+          "display_name": "Connecticut Department of Transportation",
+          "entity_name": "Connecticut Department of Transportation",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_102756"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_102756",
+              "block_id": "p006_c0012",
+              "evidence_id": "meeting_doc_102756#p006_c0012",
+              "source_quote": "Of Metro-North's $4M total, the Connecticut Department of Transportation is responsible for approximately 33 percent"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_cdot-meeting-doc-104741",
+          "display_name": "Connecticut Department of Transportation",
+          "entity_name": "Connecticut Department of Transportation",
+          "entity_type": "state agency",
+          "source_ids": [
+            "meeting_doc_104741"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_104741",
+              "block_id": "p012_c0001",
+              "evidence_id": "meeting_doc_104741#p012_c0001",
+              "source_quote": "Connecticut Department of Transportation (\"CDOT\") is responsible for approximately 33%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-114016-cdot",
+      "target_id": "entity_cdot-meeting-doc-104741",
+      "reason": "Both records identify the same Connecticut Department of Transportation agency, with CDOT explicitly expanded in the alias evidence.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-114016-cdot",
+          "display_name": "Connecticut Department of Transportation",
+          "entity_name": "Connecticut Department of Transportation",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_114016"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_114016",
+              "block_id": "p028_c0006",
+              "evidence_id": "meeting_doc_114016#p028_c0006",
+              "source_quote": "on behalf of the Connecticut Department of Transportation (\"CDOT\")"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_cdot-meeting-doc-104741",
+          "display_name": "Connecticut Department of Transportation",
+          "entity_name": "Connecticut Department of Transportation",
+          "entity_type": "state agency",
+          "source_ids": [
+            "meeting_doc_104741"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_104741",
+              "block_id": "p012_c0001",
+              "evidence_id": "meeting_doc_104741#p012_c0001",
+              "source_quote": "Connecticut Department of Transportation (\"CDOT\") is responsible for approximately 33%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-cdot",
+      "target_id": "entity_cdot-meeting-doc-104741",
+      "reason": "Both records identify the same Connecticut Department of Transportation agency, with the alias record explicitly expanding CDOT.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-cdot",
+          "display_name": "Connecticut Department of Transportation (CDOT)",
+          "entity_name": "Connecticut Department of Transportation",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_102716"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_102716",
+              "block_id": "p001_c0012",
+              "evidence_id": "meeting_doc_102716#p001_c0012",
+              "source_quote": "The Connecticut Department of Transportation (CDOT) supports this initiative."
+            }
+          ]
+        },
+        {
+          "record_id": "entity_cdot-meeting-doc-104741",
+          "display_name": "Connecticut Department of Transportation",
+          "entity_name": "Connecticut Department of Transportation",
+          "entity_type": "state agency",
+          "source_ids": [
+            "meeting_doc_104741"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_104741",
+              "block_id": "p012_c0001",
+              "evidence_id": "meeting_doc_104741#p012_c0001",
+              "source_quote": "Connecticut Department of Transportation (\"CDOT\") is responsible for approximately 33%"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guard_checks": {
+    "mutation_scope": "prep artifact only; no canonical JSONL, canonical.db, identity-overrides, LOG.md, manifest, wiki, materialized, or generated-output files intentionally changed",
+    "candidate_limit": {
+      "max_allowed": 10,
+      "proposed_count": 5,
+      "pass": true
+    },
+    "override_shape": {
+      "intended_apply_path": "data/identity-overrides/merges.json aliases.entity",
+      "flat_aliases": false,
+      "pass": true
+    },
+    "existing_alias_conflicts": {
+      "checked_with": "sqlite3 data/canonical.db identity_aliases",
+      "conflicts": [],
+      "pass": true
+    },
+    "do_not_merge_conflicts": {
+      "checked_with": "sqlite3 data/canonical.db do_not_merge",
+      "conflicts": [],
+      "pass": true
+    },
+    "prior_prep_conflicts": {
+      "checked_with": "jq over data/review_notes/codex-identity-batch0*-prep.json proposed_aliases",
+      "conflicts": [],
+      "pass": true
+    },
+    "record_existence": {
+      "checked_with": "sqlite3 data/canonical.db records/entities",
+      "missing_record_ids": [],
+      "pass": true
+    },
+    "candidate_basis": {
+      "method": "deterministic local inspection of canonical.db records/entities/evidence_refs/record_sources/identity_aliases/do_not_merge plus cited raw source blocks",
+      "external_or_provider_llm_used": false,
+      "generated_output_commands_run": false,
+      "validate_materialize_export_run": false,
+      "pass": true
+    }
+  },
+  "skipped_candidates": [
+    {
+      "kind": "entity",
+      "candidate_ids": [
+        "entity_connecticut-dot",
+        "entity_cdot-meeting-doc-104741"
+      ],
+      "reason": "Skipped despite matching structured entity_name because the available cited block inspected for entity_connecticut-dot does not itself mention Connecticut DOT or CTDOT; not high-confidence enough for this small prep batch."
+    },
+    {
+      "kind": "entity",
+      "candidate_ids": [
+        "entity_meeting-doc-98256-cdot",
+        "entity_cdot-meeting-doc-104741"
+      ],
+      "reason": "Skipped because the inspected source block uses the acronym CDOT without expanding it; the structured record likely refers to Connecticut Department of Transportation, but this batch only proposes source-expanded duplicates."
+    },
+    {
+      "kind": "entity",
+      "candidate_ids": [
+        "entity_bronx-cb5-2012-11-webster",
+        "entity_cb5-brooklyn-b82",
+        "entity_community-board-5-manhattan-20110118",
+        "entity_community-board-5-queens-2015"
+      ],
+      "reason": "Skipped exact display-name cluster because Community Board 5 is borough-dependent and these records are not the same real-world board."
+    }
+  ]
+}

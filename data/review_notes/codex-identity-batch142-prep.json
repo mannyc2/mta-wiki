@@ -1,0 +1,209 @@
+{
+  "batch_id": "identity142",
+  "global_kind": "entity",
+  "prepared_count": 12,
+  "proposed_aliases": [
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-111766-john-mueller",
+      "target_id": "entity_meeting-doc-113891-john-mueller",
+      "confidence": "high",
+      "reason": "Both records are exact-name person records for John Mueller. The alias has person evidence from meeting_doc_109291, meeting_doc_111766, and meeting_doc_131506; the target has person evidence from meeting_doc_112151 and meeting_doc_113891. No conflicting middle initial, title, or organization-specific identity is present in the canonical fields inspected.",
+      "evidence_refs": [
+        "meeting_doc_109291#p012_c0007",
+        "meeting_doc_111766#p011_c0005",
+        "meeting_doc_131506#p001_c0014",
+        "meeting_doc_112151#p001_c0003",
+        "meeting_doc_113891#p009_c0005"
+      ],
+      "guard_notes": "Person guard: exact full name match. Pair is absent from current entity merges and do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-155486-judlau-tc-electric",
+      "target_id": "entity_judlau-tc-electric-jv",
+      "confidence": "high",
+      "reason": "Both records identify the same Judlau/TC Electric joint venture contractor. The names differ only by slash versus hyphen punctuation and comma placement around JV, and both canonical payloads classify the entity as a company/contractor.",
+      "evidence_refs": [
+        "meeting_doc_155486#p027_c0005",
+        "meeting_doc_138181#p033_c0006",
+        "meeting_doc_138181#p034_c0005"
+      ],
+      "guard_notes": "Company/contractor guard: punctuation-only name variation for the same JV. Pair is absent from current entity merges and do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_kawasaki-april2021-cpoc",
+      "target_id": "entity_kawasaki-meeting-doc-113971",
+      "confidence": "high",
+      "reason": "Both records are manufacturer records named Kawasaki. The alias is a date/source-scoped Kawasaki record, while the target already carries multiple Kawasaki manufacturer evidence refs across meeting documents.",
+      "evidence_refs": [
+        "meeting_doc_37061#p010_c0016",
+        "meeting_doc_113971#p006_c0003",
+        "meeting_doc_163121#p031_c0006",
+        "meeting_doc_176356#p033_c0004"
+      ],
+      "guard_notes": "Organization guard: exact manufacturer name match and no competing Kawasaki subdivision identity in the inspected canonical fields. Pair is absent from current entity merges and do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-98256-kawasaki",
+      "target_id": "entity_kawasaki-meeting-doc-113971",
+      "confidence": "high",
+      "reason": "Both records are exact-name manufacturer records for Kawasaki. The alias is a single meeting_doc_98256 record; the target is the broader Kawasaki manufacturer record with multiple source-backed references.",
+      "evidence_refs": [
+        "meeting_doc_98256#p005_c0006",
+        "meeting_doc_113971#p006_c0003",
+        "meeting_doc_163121#p031_c0006",
+        "meeting_doc_176356#p033_c0004"
+      ],
+      "guard_notes": "Organization guard: exact manufacturer name match. Pair is absent from current entity merges and do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-127531-kim-trevisan",
+      "target_id": "entity_kim-trevisan-meeting-doc-140421",
+      "confidence": "high",
+      "reason": "Both records are exact-name person records for Kim Trevisan. The alias and target each have multiple meeting-document evidence refs, with no conflicting name qualifiers or entity type differences in the inspected canonical fields.",
+      "evidence_refs": [
+        "meeting_doc_124256#p001_c0003",
+        "meeting_doc_127531#p001_c0003",
+        "meeting_doc_135391#p004_c0003",
+        "meeting_doc_135386#p009_c0004",
+        "meeting_doc_140421#p003_c0003",
+        "meeting_doc_173871#p001_c0004"
+      ],
+      "guard_notes": "Person guard: exact full name match. Pair is absent from current entity merges and do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-79341-kuvershen-ayer",
+      "target_id": "entity_kuvershen-ayer",
+      "confidence": "high",
+      "reason": "Both records are exact-name person records for Kuvershen Ayer. The target already aggregates repeated Kuvershen Ayer evidence across several meeting documents, while the alias is another source-scoped occurrence of the same full name.",
+      "evidence_refs": [
+        "meeting_doc_79341#p005_c0006",
+        "meeting_doc_102756#p003_c0001",
+        "meeting_doc_100331#p002_c0001",
+        "meeting_doc_105946#p004_c0001"
+      ],
+      "guard_notes": "Person guard: exact full name match. Pair is absent from current entity merges and do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting91591-kuvershen-ayer",
+      "target_id": "entity_kuvershen-ayer",
+      "confidence": "high",
+      "reason": "Both records are exact-name person records for Kuvershen Ayer. The alias carries meeting_doc_95156 and meeting_doc_91591 evidence, and the target is the broader Kuvershen Ayer person record.",
+      "evidence_refs": [
+        "meeting_doc_95156#p004_c0001",
+        "meeting_doc_91591#p004_c0001",
+        "meeting_doc_102756#p003_c0001",
+        "meeting_doc_100331#p002_c0001",
+        "meeting_doc_105946#p004_c0001"
+      ],
+      "guard_notes": "Person guard: exact full name match. Pair is absent from current entity merges and do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_lamond-w-kearse-meeting-doc-135256",
+      "target_id": "entity_lamond-kearse-meeting-doc-173841",
+      "confidence": "high",
+      "reason": "Both records are exact-name person records for Lamond W. Kearse. The canonical display names and payload entity names match, and both sides are typed as person records with source-backed meeting-document evidence.",
+      "evidence_refs": [
+        "meeting_doc_135256#p004_c0013",
+        "meeting_doc_135256#p037_c0006",
+        "meeting_doc_128986#p003_c0007",
+        "meeting_doc_160371#p003_c0009",
+        "meeting_doc_173841#p004_c0012"
+      ],
+      "guard_notes": "Person guard: exact full name including middle initial. Pair is absent from current entity merges and do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting163226-neil-mastropietro",
+      "target_id": "entity_neil-mastropietro-167301",
+      "confidence": "high",
+      "reason": "Both records are exact-name person records for Neil Mastropietro. The alias has meeting_doc_163226 and meeting_doc_178486 evidence, and the target has meeting_doc_167301 evidence for the same full name and entity type.",
+      "evidence_refs": [
+        "meeting_doc_163226#p004_c0004",
+        "meeting_doc_178486#p006_c0004",
+        "meeting_doc_167301#p003_c0004"
+      ],
+      "guard_notes": "Person guard: exact full name match. Pair is absent from current entity merges and do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-39936-oliver-wyman",
+      "target_id": "entity_oliver-wyman-actuarial-140486",
+      "confidence": "high",
+      "reason": "Both records identify Oliver Wyman Actuarial Consulting, Inc. The alias and target display names and payload entity names match exactly, with compatible consulting-firm/vendor-style entity types.",
+      "evidence_refs": [
+        "meeting_doc_39936#p208_c0007",
+        "meeting_doc_39936#p240_c0004",
+        "meeting_doc_140486#p001_c0011",
+        "meeting_doc_140486#p094_c0005",
+        "meeting_doc_140486#p094_c0006"
+      ],
+      "guard_notes": "Company guard: exact legal/business name match. Pair is absent from current entity merges and do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_omar-messado-135311",
+      "target_id": "entity_meeting155126-omar-messado",
+      "confidence": "high",
+      "reason": "Both records are exact-name person records for Omar Messado. The alias is a source-scoped Omar Messado record from meeting_doc_135311 and meeting_doc_164941; the target already aggregates Omar Messado evidence from several meeting documents.",
+      "evidence_refs": [
+        "meeting_doc_135311#p001_c0003",
+        "meeting_doc_164941#p001_c0003",
+        "meeting_doc_111756#p001_c0003",
+        "meeting_doc_143191#p001_c0003",
+        "meeting_doc_155126#p001_c0003"
+      ],
+      "guard_notes": "Person guard: exact full name match. Pair is absent from current entity merges and do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_peter-pan-bus-lines-135311",
+      "target_id": "entity_peter-pan-bus-lines-inc",
+      "confidence": "high",
+      "reason": "Both records identify Peter Pan Bus Lines, Inc. and both are typed as bus company records. The alias is a meeting_doc_135311 occurrence; the target carries the same legal name from meeting_doc_105966 evidence.",
+      "evidence_refs": [
+        "meeting_doc_135311#p007_c0004",
+        "meeting_doc_105966#p001_c0003",
+        "meeting_doc_105966#p001_c0005"
+      ],
+      "guard_notes": "Company guard: exact legal bus-company name match. Pair is absent from current entity merges and do-not-merge. Durable merge direction is alias_id -> target_id."
+    }
+  ],
+  "commands_run": [
+    "pwd && rg --files data packages raw wiki | rg '(^data/identity-overrides/merges\\.json$|do-not|canonical|review_notes|entity|entities|sources|metadata\\.json|text\\.txt)' | head -200",
+    "git status --short",
+    "ls -la data/identity-overrides data/review_notes data/canonical 2>/dev/null",
+    "jq 'keys, .batch_id, .global_kind, .prepared_count, (.proposed_aliases[0] // null)' data/review_notes/codex-identity-batch141-prep.json",
+    "jq 'type, if type==\"object\" then keys[0:20] else length end' data/identity-overrides/merges.json && jq 'type, if type==\"object\" then keys[0:20] else length end' data/identity-overrides/do-not-merge.json",
+    "head -3 data/canonical/entities.jsonl | jq '.'",
+    "jq '.aliases | to_entries[0:5]' data/identity-overrides/merges.json && jq '.pairs[0:5]' data/identity-overrides/do-not-merge.json",
+    "jq -r '[.record_id,.display_name,(.payload.entity_name // \"\"),(.payload.entity_type // \"\"),(.evidence_refs[0].evidence_id // \"\")] | @tsv' data/canonical/entities.jsonl | head -100",
+    "jq -r '.record_id' data/canonical/entities.jsonl | wc -l",
+    "jq '.' data/identity-overrides/do-not-merge.json | head -80",
+    "jq -r '.aliases.entity | to_entries[] | [.key,.value] | @tsv' data/identity-overrides/merges.json | head -20",
+    "jq -r '[(.record_id),(.display_name // .payload.entity_name // \"\"),(.payload.entity_name // \"\"),(.payload.entity_type // \"\"),((.evidence_refs // []) | map(.evidence_id) | join(\"|\"))] | @tsv' data/canonical/entities.jsonl > /tmp/mta_entities.tsv && awk -F'\\t' '{name=tolower($2); gsub(/[^a-z0-9]+/,\" \",name); gsub(/^ +| +$/, \"\", name); if(name!=\"\") print name\"\\t\"$0}' /tmp/mta_entities.tsv | sort | awk -F'\\t' 'prev==$1{if(!printed){print saved; printed=1} print $0; next} {prev=$1; saved=$0; printed=0}' | head -240",
+    "bun -e '<read-only candidate inspection against data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, and data/canonical/entities.jsonl>'"
+  ],
+  "commands_not_run": [
+    "provider-backed commands",
+    "agent harness commands",
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "commands with --profile/provider",
+    "materialize",
+    "export-jsonl",
+    "full validate"
+  ]
+}

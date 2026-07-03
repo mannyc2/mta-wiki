@@ -1,0 +1,324 @@
+{
+  "run_id": "2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T02:50:39.136Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "relate-hylan-bus-lanes-to-s79-sbs",
+        "local_observation_id": "treatment_bus_lanes_hylan_blvd_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_s79-sbs-launch-2012",
+            "object_id": "treatment_bus-lanes-hylan-blvd-2012",
+            "description": "Bus lanes on Hylan Boulevard are part of the S79 Select Bus Service launch",
+            "evidence_refs": [
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0001",
+                "source_quote": "S79 SELECT BUS SERVICE BEGINS SEPTEMBER 2, 2012"
+              },
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0004",
+                "source_quote": "2. Bus lanes at key locations bring faster and more reliable service to all bus riders."
+              },
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0005",
+                "source_quote": "▪ On Hylan Boulevard between Lincoln Avenue and Steuben Street. ▪ On Richmond Avenue between Platinum Avenue & Forest Hill Road. ▪ On Richmond Avenue between Shirley Avenue & Hylan Boulevard."
+              }
+            ]
+          }
+        ],
+        "rationale": "The flyer lists bus lanes on Hylan Boulevard as improvement #2 under 'IMPROVEMENTS COMING SEPTEMBER 2ND' for the S79 Select Bus Service launch, and detail blocks p002_c0017/p002_c0018 confirm location and hours.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0005",
+            "source_quote": "▪ On Hylan Boulevard between Lincoln Avenue and Steuben Street. ▪ On Richmond Avenue between Platinum Avenue & Forest Hill Road. ▪ On Richmond Avenue between Shirley Avenue & Hylan Boulevard."
+          },
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0017",
+            "source_quote": "Bus lanes on Hylan Boulevard"
+          },
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0018",
+            "source_quote": "▪ Between Lincoln Avenue and Steuben Street ▪ In effect on weekdays from 6-9am northbound and 3-7pm southbound"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-richmond-platinum-bus-lanes-to-s79-sbs",
+        "local_observation_id": "treatment_bus_lanes_richmond_ave_platinum_forest_hill_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_s79-sbs-launch-2012",
+            "object_id": "treatment_bus-lanes-richmond-ave-platinum-forest-hill-2012",
+            "description": "Bus lanes on Richmond Avenue (Platinum Avenue to Forest Hill Road) are part of the S79 Select Bus Service launch",
+            "evidence_refs": [
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0001",
+                "source_quote": "S79 SELECT BUS SERVICE BEGINS SEPTEMBER 2, 2012"
+              },
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0004",
+                "source_quote": "2. Bus lanes at key locations bring faster and more reliable service to all bus riders."
+              },
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0005",
+                "source_quote": "▪ On Hylan Boulevard between Lincoln Avenue and Steuben Street. ▪ On Richmond Avenue between Platinum Avenue & Forest Hill Road. ▪ On Richmond Avenue between Shirley Avenue & Hylan Boulevard."
+              }
+            ]
+          }
+        ],
+        "rationale": "The flyer lists Richmond Avenue bus lanes (Platinum to Forest Hill) as improvement #2 under 'IMPROVEMENTS COMING SEPTEMBER 2ND' for the S79 SBS launch, with details in p002_c0019/p002_c0020.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0005",
+            "source_quote": "▪ On Hylan Boulevard between Lincoln Avenue and Steuben Street. ▪ On Richmond Avenue between Platinum Avenue & Forest Hill Road. ▪ On Richmond Avenue between Shirley Avenue & Hylan Boulevard."
+          },
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0019",
+            "source_quote": "Bus lanes on Richmond Avenue"
+          },
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0020",
+            "source_quote": "▪ Between Platinum Avenue and Forest Hill Road, and between Shirley Avenue and Hylan Boulevard ▪ In effect at all times ▪ Located to the left of the curb lane"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-richmond-shirley-bus-lanes-to-s79-sbs",
+        "local_observation_id": "treatment_bus_lanes_richmond_ave_shirley_hylan_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_s79-sbs-launch-2012",
+            "object_id": "treatment_bus-lanes-richmond-ave-shirley-hylan-2012",
+            "description": "Bus lanes on Richmond Avenue (Shirley Avenue to Hylan Boulevard) are part of the S79 Select Bus Service launch",
+            "evidence_refs": [
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0001",
+                "source_quote": "S79 SELECT BUS SERVICE BEGINS SEPTEMBER 2, 2012"
+              },
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0004",
+                "source_quote": "2. Bus lanes at key locations bring faster and more reliable service to all bus riders."
+              },
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0005",
+                "source_quote": "▪ On Hylan Boulevard between Lincoln Avenue and Steuben Street. ▪ On Richmond Avenue between Platinum Avenue & Forest Hill Road. ▪ On Richmond Avenue between Shirley Avenue & Hylan Boulevard."
+              }
+            ]
+          }
+        ],
+        "rationale": "The flyer lists Richmond Avenue bus lanes (Shirley to Hylan) as improvement #2 under 'IMPROVEMENTS COMING SEPTEMBER 2ND' for the S79 SBS launch, with details in p002_c0019/p002_c0020.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0005",
+            "source_quote": "▪ On Hylan Boulevard between Lincoln Avenue and Steuben Street. ▪ On Richmond Avenue between Platinum Avenue & Forest Hill Road. ▪ On Richmond Avenue between Shirley Avenue & Hylan Boulevard."
+          },
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0019",
+            "source_quote": "Bus lanes on Richmond Avenue"
+          },
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0020",
+            "source_quote": "▪ Between Platinum Avenue and Forest Hill Road, and between Shirley Avenue and Hylan Boulevard ▪ In effect at all times ▪ Located to the left of the curb lane"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-tsp-to-s79-sbs",
+        "local_observation_id": "treatment_tsp_coming_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_s79-sbs-launch-2012",
+            "object_id": "treatment_tsp-coming-2013",
+            "description": "Transit Signal Priority (coming in 2013) is part of the S79 Select Bus Service launch",
+            "evidence_refs": [
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0001",
+                "source_quote": "S79 SELECT BUS SERVICE BEGINS SEPTEMBER 2, 2012"
+              },
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0007",
+                "source_quote": "4. Transit Signal Priority (TSP) extends the green light or shortens the red light to keep buses moving (coming in 2013)."
+              }
+            ]
+          }
+        ],
+        "rationale": "The flyer lists Transit Signal Priority as improvement #4 under 'IMPROVEMENTS COMING SEPTEMBER 2ND' for the S79 SBS launch.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0007",
+            "source_quote": "4. Transit Signal Priority (TSP) extends the green light or shortens the red light to keep buses moving (coming in 2013)."
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-signal-timing-to-s79-sbs",
+        "local_observation_id": "treatment_optimized_signal_timing_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_s79-sbs-launch-2012",
+            "object_id": "treatment_optimized-signal-timing-2012",
+            "description": "Optimized signal timing is part of the S79 Select Bus Service launch",
+            "evidence_refs": [
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0001",
+                "source_quote": "S79 SELECT BUS SERVICE BEGINS SEPTEMBER 2, 2012"
+              },
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0006",
+                "source_quote": "3. Optimized signal timing improves progression of traffic."
+              }
+            ]
+          }
+        ],
+        "rationale": "The flyer lists optimized signal timing as improvement #3 under 'IMPROVEMENTS COMING SEPTEMBER 2ND' for the S79 SBS launch.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0006",
+            "source_quote": "3. Optimized signal timing improves progression of traffic."
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-pedestrian-refuge-to-s79-sbs",
+        "local_observation_id": "treatment_pedestrian_refuge_islands_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_s79-sbs-launch-2012",
+            "object_id": "treatment_pedestrian-refuge-islands-2012",
+            "description": "Pedestrian refuge islands are part of the S79 Select Bus Service launch",
+            "evidence_refs": [
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0001",
+                "source_quote": "S79 SELECT BUS SERVICE BEGINS SEPTEMBER 2, 2012"
+              },
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0008",
+                "source_quote": "5. Pedestrian refuge islands improve safety."
+              }
+            ]
+          }
+        ],
+        "rationale": "The flyer lists pedestrian refuge islands as improvement #5 under 'IMPROVEMENTS COMING SEPTEMBER 2ND' for the S79 SBS launch.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0008",
+            "source_quote": "5. Pedestrian refuge islands improve safety."
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-sidewalks-to-s79-sbs",
+        "local_observation_id": "treatment_new_repaired_sidewalks_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_s79-sbs-launch-2012",
+            "object_id": "treatment_new-repaired-sidewalks-2012",
+            "description": "New and repaired sidewalks are part of the S79 Select Bus Service launch",
+            "evidence_refs": [
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0001",
+                "source_quote": "S79 SELECT BUS SERVICE BEGINS SEPTEMBER 2, 2012"
+              },
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0009",
+                "source_quote": "6. New and repaired sidewalks enhance safety and access to bus stops."
+              }
+            ]
+          }
+        ],
+        "rationale": "The flyer lists new and repaired sidewalks as improvement #6 under 'IMPROVEMENTS COMING SEPTEMBER 2ND' for the S79 SBS launch.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0009",
+            "source_quote": "6. New and repaired sidewalks enhance safety and access to bus stops."
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-left-turn-bays-to-s79-sbs",
+        "local_observation_id": "treatment_left_turn_bays_richmond_ave_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_s79-sbs-launch-2012",
+            "object_id": "treatment_left-turn-bays-richmond-ave-2012",
+            "description": "Left turn bays on Richmond Avenue are part of the S79 Select Bus Service launch",
+            "evidence_refs": [
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0001",
+                "source_quote": "S79 SELECT BUS SERVICE BEGINS SEPTEMBER 2, 2012"
+              },
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0010",
+                "source_quote": "7. Left turn bays on Richmond Avenue help reduce traffic congestion."
+              }
+            ]
+          }
+        ],
+        "rationale": "The flyer lists left turn bays on Richmond Avenue as improvement #7 under 'IMPROVEMENTS COMING SEPTEMBER 2ND' for the S79 SBS launch.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0010",
+            "source_quote": "7. Left turn bays on Richmond Avenue help reduce traffic congestion."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-47-35-386Z_2111393-429b3f30_canonicalize_2026-06-10t23-03-18-639z-1976810-d330c4c4-ingest-2012-08-hylan-start-of-service-flyer-treatment-relations"
+}

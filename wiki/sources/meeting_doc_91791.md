@@ -1,0 +1,288 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-91791"
+record_kind: "source"
+display_name: "2022-2026 ridership and revenue impact assessment"
+source_id: "meeting_doc_91791"
+source_ids:
+  - "meeting_doc_91791"
+local_observation_id: "source_meeting_doc_91791"
+local_observation_ids:
+  - "source_meeting_doc_91791"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-22T21:32:44.449Z"
+raw_text: "2022-2026 ridership and revenue impact assessment - July 2022"
+submission_ids:
+  - "sub_45d084235538e4e9"
+payload:
+  authority_tier: "official_evaluation"
+  content_type: "economic analysis"
+  date: "July 2022"
+  date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2022-07"
+    precision: "month"
+    raw_text: "July 2022"
+  date_text: "July 2022"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2022-07"
+    precision: "month"
+    raw_text: "July 2022"
+  description: "Ridership and revenue impact assessment for MTA 2022-2026 prepared by McKinsey & Company"
+  published_date_normalized: "2022-07"
+  published_date_precision: "month"
+  publisher: "McKinsey & Company, Washington D.C."
+  title: "2022-2026 ridership and revenue impact assessment"
+evidence_refs:
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_91791#p001_c0003"
+    page_number: 1
+    source_id: "meeting_doc_91791"
+    source_path: "raw/sources/meeting_doc_91791/blocks.jsonl"
+    source_quote: "2022-2026 ridership and revenue impact assessment"
+    text_sha256: "sha256:6efb3c14c7dc6a02e595647d1948658734a5e81a9d57054d44d85c4c3e0cb68a"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_91791#p001_c0004"
+    page_number: 1
+    source_id: "meeting_doc_91791"
+    source_path: "raw/sources/meeting_doc_91791/blocks.jsonl"
+    source_quote: "July 2022"
+    text_sha256: "sha256:c0f6adc8cb4ea5e9e1bfffd5040a324de5bb671193070d3021db6642744adf20"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0005"
+    evidence_id: "meeting_doc_91791#p001_c0005"
+    page_number: 1
+    source_id: "meeting_doc_91791"
+    source_path: "raw/sources/meeting_doc_91791/blocks.jsonl"
+    source_quote: "McKinsey & Company, Washington D.C."
+    text_sha256: "sha256:3ab68be7b8675e5476d7303e7124394345284650df083a03bb4595878f91c4a2"
+    text_source: "raw_text"
+---
+
+# McKinsey Ridership/Revenue Impact Assessment
+
+source_id: meeting_doc_91791
+citation: cite block ids exactly as shown in square brackets
+document: 149 block(s)
+
+## Page 1
+
+### [p001_c0001] Metropolitan Transportation Authority
+> [p001_c0002] The logo of the Metropolitan Transportation Authority (MTA) is a blue circle with the letters "MTA" in white, bold, sans-serif font.
+[p001_c0003] 2022-2026 ridership and revenue impact assessment
+[p001_c0004] July 2022
+[p001_c0005] The analyses and conclusions contained in this document are based on various assumptions that were developed by MTA, which partly may or may not be correct, being based upon factors and events subject to uncertainty. Such assumptions were developed solely as a means of illustrating the principal considerations that may be taken into account and independently evaluated. Such information has not been independently verified and is inherently uncertain and subject to change. Future results may differ materially from any statements of expectation, forecasts or projections. These materials do not constitute legal, accounting, policy, or similar professional or regulatory advice normally provided by licensed or certified practitioners. Particularly, in light of the rapidly evolving COVID-19 pandemic and the attendant regulatory and market supply conditions, these materials were developed, for information purposes, to provide fact-based, independent analysis to the MTA for its own use to develop its own recommendations and make its own decisions regarding future plans. McKinsey & Company, Washington D.C., makes no representation or warranty, express or implied, as to the accuracy or completeness of the underlying assumptions, estimates, analyses, or other information contained in this document, and nothing herein is or shall be relied upon as a promise, warranty or a representation, whether as to the past, the present, or the future. MTA remains solely responsible for all decisions, use of these materials, and compliance with applicable laws, rules, regulations and standards.
+
+## Page 2
+
+### [p002_c0001] Disclaimer
+### [p002_c0002] McKinsey & Company Analysis—Metropolitan Transportation Authority Financial Impact Assessment on 2022-2026 Revenue of COVID-19
+[p002_c0003] In April 2022, McKinsey & Company was contracted to provide MTA with a detailed economic analysis of factors impacting ridership (the “Report”) which will assist management in assessing the financial impact of the COVID-19 pandemic on MTA operations. Before reviewing the Report, users are advised to carefully read the “Disclaimer” page of the Report in its entirety.
+[p002_c0004] Please take a few minutes to read the Terms of Use below as they are complementary to the information presented in the Report.
+### [p002_c0005] Terms of Use
+- [p002_c0006] 1. Not an Offer to Sell/Buy Securities: The information provided in the Report does not constitute an offer to sell or buy securities or the solicitation of an offer to sell or buy securities and should not be relied upon to provide specific offering information in connection with any issuance, sale, resale or remarketing of bonds, notes, or other municipal obligations. 2. Information is Subject to Change Without Notice and May Not Be Updated: MTA is under no obligation to update any information included in the Report. The information and expressions of opinion therein are subject to change without notice. 3. Estimates or Other Forward-Looking Statements: The Report may make “forward-looking statements” by using forward-looking words such as “may”, “will”, “should”, “expects”, “believes”, “anticipates”, “estimates,” or others. You are cautioned that forward-looking statements are subject to a variety of uncertainties that could cause actual results to differ from the projected results. Because MTA cannot predict all factors that may affect future decisions, actions, events, policy decisions, or financial circumstances, what actually happens may be different than what is included in forward-looking statements. 4. Investment decisions: The Report is not intended to replace any information or consultation provided by a professional financial advisor. 5. Unauthorized Use Not Permitted: The Report is part of the official website of MTA. MTA disclaims all responsibility for any copies, modifications, and reproductions of this Report or the information it contains that are not produced by MTA.
+[p002_c0007] _DOCUMENT INTENDED TO PROVIDE INSIGHT BASED ON CURRENTLY AVAILABLE INFORMATION FOR CONSIDERATION AND NOT SPECIFIC ADVICE_
+[p002_c0008] _2_
+
+## Page 3
+
+### [p003_c0001] Overview of forecasting approach
+### [p003_c0002] Step 1 Key drivers
+[p003_c0003] The key drivers impacting ridership were determined, including future of office work and consumer sentiment away from transit
+### [p003_c0004] Step 2 Calibration
+[p003_c0005] Parameters were calibrated to quantify each of the drivers to include as part of scenarios
+### [p003_c0006] Step 3 Ridership scenarios
+[p003_c0007] Scenarios were developed for the forecasting of ridership
+[p003_c0008] _DOCUMENT INTENDED TO PROVIDE INSIGHT BASED ON CURRENTLY AVAILABLE INFORMATION FOR CONSIDERATION AND NOT SPECIFIC ADVICE_
+[p003_c0009] _3_
+
+## Page 4
+
+### [p004_c0001] Ridership scenarios
+[p004_c0002] The scenarios are designed to illustrate the range of outcomes possible
+### [p004_c0003] S1 Scenario 1
+[p004_c0004] Continued office return, limited mode shift from transit and limited economic disruption
+[p004_c0005] Workers continue to return to work in-person, with workers who can work from home working on-site an average of 3 days per week
+[p004_c0006] Non-work ridership returns closer to pre-pandemic levels as confidence and safety perceptions improve, though still fewer trips than in 2019 (e.g., increase in e-commerce)
+[p004_c0007] Riders who shifted to alternative auto or non-auto modes of transit largely shift back to public transit
+[p004_c0008] Economy continues to rebound without major financial stress; increasing total employment at a steady rate (~0.7% p.a.)
+### [p004_c0009] S2 Scenario 2
+[p004_c0010] Work-from-home remains at current levels, rider mode shift away from mass transit and sustained disruption to economy
+[p004_c0011] Return-to-office stalls at current rates of approximately 2 days a week on-site, for workers that have an ability to work from home
+[p004_c0012] Drop in non-work ridership is larger and more sustained, given more ingrained nature of COVID behaviors; long-term trends in e-commerce and telehealth continue to reduce trips
+[p004_c0013] Alternative modes of transit prove to be stickier as former riders make more permanent shift away from transit
+[p004_c0014] Continued financial disruption leads to slower economic outlook; employment growth is slower (~0.2% p.a.)
+[p004_c0015] The analysis examines viable scenarios—each relying on the evolution of several key variables—showing a range of most likely outcomes
+[p004_c0016] In practice, a different mix of these variables will likely materialize, e.g., prolonged economic disruption (Scenario 2) but also stronger return to in-person work (Scenario 1)
+[p004_c0017] As such, impacts may lie between these scenarios
+[p004_c0018] _Source: MTA ridership and revenue modeling – May 2022_
+[p004_c0019] _DOCUMENT INTENDED TO PROVIDE INSIGHT BASED ON CURRENTLY AVAILABLE INFORMATION FOR CONSIDERATION AND NOT SPECIFIC ADVICE_
+[p004_c0020] _4_
+
+## Page 5
+
+### [p005_c0001] Transit ridership over time by scenario
+[p005_c0002] _Paid ridership scenario forecasts , as a percentage of pre-pandemic ridership 1_
+> [p005_c0003] Quarter Actual (%) Scenario 1 (%) Scenario 2 (%) Q1 2020 90 Q2 2020 15 Q3 2020 35 Q4 2020 35 Q1 2021 35 Q2 2021 45 Q3 2021 55 Q4 2021 58 Q1 2022 55 58 58 Q2 2022 61 65 61 Q3 2022 65 69 62 Q4 2022 69 71 63 Q1 2023 69 75 65 Q2 2023 71 77 65 Q3 2023 75 77 65 Q4 2023 77 79 66 Q1 2024 77 81 68 Q2 2024 79 82 68 Q3 2024 81 80 67 Q4 2024 82 82 68 Q1 2025 80 84 70 Q2 2025 82 85 71 Q3 2025 84 83 69 Q4 2025 85 85 70 Q1 2026 83 87 72 Q2 2026 85 88 73 Q3 2026 87 Q4 2026 88
+[p005_c0004] Expected future ridership may be between 73-88% of pre-pandemic levels by Q4 2026
+[p005_c0005] Ridership under scenario 2 is likely lower due to sustained current levels of working from home, continued higher consumer sentiment away from transit, and sustained reduction of non-work trips
+[p005_c0006] Ridership under scenario 1 likely grows with a continued return to the office, a return of non-work trips and consumer mode shift back to transit
+[p005_c0007] We may see reductions in ridership trends under both scenarios stemming from a COVID-19 variant with similar impact to Delta or Omicron; such month-to-month variations due to variants were not modeled in this analysis to focus on the macro ridership outlook
+[p005_c0008] _1. Ridership values reflect represent a percentage of current service_
+[p005_c0009] _Source: U.S. Census American Community Survey (ACS), Oxford Economics, press search, expert interviews_
+[p005_c0010] _DOCUMENT INTENDED TO PROVIDE INSIGHT BASED ON CURRENTLY AVAILABLE INFORMATION FOR CONSIDERATION AND NOT SPECIFIC ADVICE_
+[p005_c0011] _5_
+
+## Page 6
+
+### [p006_c0001] Scenario 1 – Transit ridership over time by mode
+[p006_c0002] S1
+[p006_c0003] Paid ridership scenario forecasts , as a percentage of pre-pandemic ridership
+> [p006_c0004] The chart displays paid ridership as a percentage of pre-pandemic levels. The y-axis ranges from 0% to 100% in 20% increments. The x-axis shows quarters from Q1 2020 to Q4 2026. Solid lines represent actual data, and dashed lines represent forecast data. The legend identifies the modes: Weighted average (black), Subway (dark blue), Bus (medium blue), MNR (light blue), and LIRR (very light blue). Data labels are provided for the forecast lines from Q1 2022 onwards. Quarter Weighted average Subway Bus MNR LIRR Q1 2020 88 88 88 88 88 Q2 2020 15 15 15 15 15 Q3 2020 35 35 55 25 25 Q4 2020 35 35 50 25 25 Q1 2021 35 35 48 25 25 Q2 2021 45 45 55 35 35 Q3 2021 55 55 60 45 45 Q4 2021 58 58 65 50 50 Q1 2022 55 55 59 44 44 Q2 2022 60 60 64 53 53 Q3 2022 65 65 69 56 56 Q4 2022 68 68 73 60 60 Q1 2023 68 68 73 63 63 Q2 2023 72 72 76 65 65 Q3 2023 75 75 78 69 69 Q4 2023 76 76 79 73 73 Q1 2024 78 78 80 75 75 Q2 2024 80 80 82 75 75 Q3 2024 82 82 84 76 76 Q4 2024 83 83 84 77 77 Q1 2025 82 82 83 76 76 Q2 2025 84 84 86 76 76 Q3 2025 86 86 88 77 77 Q4 2025 87 87 88 78 78 Q1 2026 86 86 87 77 77 Q2 2026 88 88 89 77 77 Q3 2026 90 90 91 78 78 Q4 2026 92 92 92 79 79
+[p006_c0005] 1. Ridership values reflect represent a percentage of current service
+[p006_c0006] Source: U.S. Census American Community Survey (ACS), Oxford Economics, press search, expert interviews
+[p006_c0007] DOCUMENT INTENDED TO PROVIDE INSIGHT BASED ON CURRENTLY AVAILABLE INFORMATION FOR CONSIDERATION AND NOT SPECIFIC ADVICE
+[p006_c0008] Increase of in-office work from those who can work from home from, on average, 3 days to 2 days, return of more non-work trips from virtual alternatives, and a closer return to pre-COVID consumer sentiment about transit, drives growth across modes
+[p006_c0009] MNR likely recovers slower than subway and bus because it has a higher proportion of work trips, and work trips from workers who can work from home
+[p006_c0010] LIRR recovery is likely boosted by increased ridership (+1 to +4%) from the opening of East Side Access
+[p006_c0011] _6_
+
+## Page 7
+
+### [p007_c0001] Scenario 2 – Transit ridership over time by mode
+[p007_c0002] S2
+[p007_c0003] Paid ridership scenario forecasts , as a percentage of pre-pandemic ridership
+> [p007_c0004] Legend: — Actual    - - Forecast Legend: — Weighted average — Subway — Bus — MNR — LIRR Quarter Weighted average Subway Bus MNR LIRR Q1 2020 88 88 88 88 88 Q2 2020 15 15 15 15 15 Q3 2020 35 35 35 35 35 Q4 2020 32 32 32 32 32 Q1 2021 35 35 35 35 35 Q2 2021 45 45 45 45 45 Q3 2021 55 55 55 55 55 Q4 2021 58 58 58 58 58 Q1 2022 55 55 55 44 55 Q2 2022 59 59 61 51 59 Q3 2022 63 63 63 52 63 Q4 2022 65 65 65 54 65 Q1 2023 64 64 64 54 64 Q2 2023 66 66 66 55 66 Q3 2023 67 67 67 57 67 Q4 2023 68 68 68 59 68 Q1 2024 67 67 67 58 67 Q2 2024 69 69 69 58 69 Q3 2024 71 71 71 59 71 Q4 2024 71 71 71 59 71 Q1 2025 70 70 70 59 70 Q2 2025 72 72 72 59 72 Q3 2025 73 73 73 59 73 Q4 2025 73 73 73 60 73 Q1 2026 72 72 72 59 72 Q2 2026 74 74 74 59 74 Q3 2026 75 75 75 59 75 Q4 2026 75 75 75 60 75
+[p007_c0005] 1. Ridership values reflect represent a percentage of current service
+[p007_c0006] Source: U.S. Census American Community Survey (ACS), Oxford Economics, press search, expert interviews
+[p007_c0007] DOCUMENT INTENDED TO PROVIDE INSIGHT BASED ON CURRENTLY AVAILABLE INFORMATION FOR CONSIDERATION AND NOT SPECIFIC ADVICE
+[p007_c0008] Work-from-home (WFH) assumptions of scenario 2 relative to scenario 1 (3 days per week instead of 2 days per week of those who have jobs able to WFH) drive decreases across modes
+[p007_c0009] More limited impact on bus trips, where only 35% of trips are for work purposes, and a moderate impact on subway trips, where 59% of rides are for work
+[p007_c0010] MNR and LIRR, with 85% and 64% work ridership respectively, are likely disproportionately affected and experience a slower recovery
+[p007_c0011] Ridership may recover beyond 2024, as some work and non-work trips return and employment decline slightly decreases; however, overall ridership might not exceed ~80% of pre-pandemic ridership given lasting behavioral changes
+[p007_c0012] _7_
+
+## Page 8
+
+### [p008_c0001] Historical Bridge and Tunnel (B&T) traffic trends
+> [p008_c0002] The graph illustrates the historical trends of Bridge and Tunnel (B&T) traffic from 1980 to 2020. The Y-axis represents traffic volume, ranging from 0 to 30. The X-axis represents years, with major ticks at 1980, 85, 90, 95, 2000, 05, 10, 15, and 2020. The legend indicates: B&T - traffic (actual) (light grey line), B&T - traffic (moving average) (dark grey line), Recessions (grey shaded bars), and Technology advancements (blue shaded bars). The moving average line shows a steady upward trend, with annotations indicating growth rates: 0.4% p.a. from 1980 to 1990, 0.7% p.a. from 1990 to 2015, and 0.5% p.a. from 2015 to 2020. Key events marked include: Iranian revolution, oil price increase, US inflation (1980); Interest rates, 1990 oil price shock (1990); EZPass adopted (1995); Burst of .com bubble (2000); Great recession oil prices soared (2008); Open road tolling implemented (2015); and COVID-19 Recession (2020). Year B&T - traffic (actual) B&T - traffic (moving average) Event 1980 ~20 ~20 Iranian revolution, oil price increase, US inflation 1990 ~23 ~23 Interest rates, 1990 oil price shock 1995 ~22 ~22 EZPass adopted 2000 ~25 ~25 Burst of .com bubble 2008 ~25 ~25 Great recession oil prices soared 2015 ~24 ~24 Open road tolling implemented 2020 ~28 ~28 COVID-19 Recession
+[p008_c0003] B&T traffic since 1980 followed a cyclical pattern with historical long-run growth between 0.4-0.7% p.a.
+[p008_c0004] Technological advancements and improvements in how tolls are captured (e.g., replacement of cash collection booths with EZ pass, ORT) have enabled increases in capacity in a largely fixed arterial and feeder network
+[p008_c0005] _Source: MTA B&T traffic data_
+[p008_c0006] _DOCUMENT INTENDED TO PROVIDE INSIGHT BASED ON CURRENTLY AVAILABLE INFORMATION FOR CONSIDERATION AND NOT SPECIFIC ADVICE_
+[p008_c0007] _8_
+
+## Page 9
+
+### [p009_c0001] Bridge and Tunnel (B&T) traffic over time
+[p009_c0002] -- Scenario 1 -- Scenario 2 — Actuals
+### [p009_c0003] Bridges and Tunnels traffic forecasts
+[p009_c0004] As percentage of pre-pandemic traffic
+> [p009_c0005] Quarter Actuals Scenario 1 Scenario 2 Q1 2020 100 Q2 2020 55 Q3 2020 85 Q4 2020 85 Q1 2021 85 Q2 2021 95 Q3 2021 98 Q4 2021 99 Q1 2022 96 Q2 2022 96 Q3 2022 Q4 2022 Q1 2023 Q2 2023 Q3 2023 Q4 2023 Q1 2024 Q2 2024 Q3 2024 Q4 2024 Q1 2025 Q2 2025 Q3 2025 Q4 2025 Q1 2026 Q2 2026 Q3 2026 Q4 2026
+[p009_c0006] Traffic returned to nearly pre-pandemic levels in 2021
+[p009_c0007] Growth in traffic, aligned with long-term trend of between 0.4-0.7% p.a., may continue through 2026, due to GDP recovery, continued growth in VMT and shift to auto; although some transition to transit is likely expected to align with an increase in congestion charges from early 2024 and onwards
+[p009_c0008] Limits on arterial and feeder capacity cap growth is estimated to be less than 1% per year, producing a relatively stable forecast
+[p009_c0009] _Source: MTA, U.S. Department of Transportation, Apple mobility data_
+[p009_c0010] _DOCUMENT INTENDED TO PROVIDE INSIGHT BASED ON CURRENTLY AVAILABLE INFORMATION FOR CONSIDERATION AND NOT SPECIFIC ADVICE_
+[p009_c0011] _9_
+
+## Page 10
+
+### [p010_c0001] Potential drivers of change for each scenario
+[p010_c0002]
+
+```text
+Categorization Potential drivers of change Description Structural employment changes A Future of office work Number of workers that can work from home (WFH), their return to the office (at their original location), and how many days a week they return to the office Consumer preferences and incoming interventions B Long term behaviors for non-work trips Consumer preferences changing the number of trips that are not work-related, by trip type (e.g., shift to e-commerce reduces shopping trips) C Consumer sentiment away from transit Number of transit rides that are replaced with auto (e.g., personal vehicle, FHV), non-auto modes (e.g., cycling), or not taken due to negative sentiment regarding transit (e.g., perceptions of safety/cleanliness) D Motorists shift to transit Shift from auto to other transportation modes due to, for example, congestion pricing (assumed to start in 2023 Q4) Economic and demographic factors E Employment and GDP Number of individuals employed within NYMSA and impact of other macro variables (e.g., domestic product, inflation) on mode-shift F Population changes (including migration) Number of individuals living within NYMSA by age, household size and other demographic variables including net migration Leakage G Incremental fare evasion Riders not paying fares (over and above the baseline expectations from 2019) Network enhancement and expansion H Capital expansion projects Changes in ridership from expansion projects under construction, although not yet complete (e.g., East Side Access)
+```
+[p010_c0003] NOT EXHAUSTIVE
+[p010_c0004] Use or disclosure of information contained on this page is subject to the restrictions on the title page
+[p010_c0005] Source: MTA transit drivers workshop(s) – May 2022
+[p010_c0006] DOCUMENT INTENDED TO PROVIDE INSIGHT BASED ON CURRENTLY AVAILABLE INFORMATION FOR CONSIDERATION AND NOT SPECIFIC ADVICE
+[p010_c0007] _10_
+
+## Page 11
+
+### [p011_c0001] Potential drivers of change for each scenario – details (1/2)
+[p011_c0002] NOT EXHAUSTIVE
+[p011_c0003]
+
+```text
+Categorization Potential drivers of change Baseline: Pre-pandemic 2019 view S1 Continued office return, limited mode shift from transit and limited economic disruption S2 Work-from-home remains at current levels, greater mode shift away from mass transit and sustained disruption to economy Sources/case studies Structural employment changes A Future of office work 0.5 days work from home Average 2 days total work from home varying by occupation (1 less day from today's 3) by Q4 2024 Average 3 days total work from home varying by occupation (same as today's 3) by Q4 2024 • McKinsey American Opportunity Survey • McKinsey analysis, in partnership with Oxford Economics Consumer preferences and incoming interventions B Long term behaviors for non-work trips ~2.5 non-work trips per person, per day Reduction in non-work trips per person, per day based on returning 100% of school trips, 75% of retail trips and 95% of leisure/VFR trips to 2019 levels by Q4 2026 Reduction in non-work trips per person, per day based on returning 100% of school trips, 65% of retail trips and, 85% of leisure/VFR trips to 2019 levels by Q4 2026 • McKinsey Grocery and Consumer Pulse survey(s) • E-commerce and bus. & consumer credit card exp. (Affinity) • MTA rider survey C Consumer sentiment away from transit No shift / 2019 baseline FHV ridership returns to pre-pandemic levels Auto mode shift continues fall from peak in Q3 2020 to settle at 1% Bicycle ridership returns to historical trend, mode shift of 1.5% 0.5% shift to FHVs matching estimated Omicron levels Auto mode shift falls at slower rate to 2%, matching new car registrations Bicycle mode shift continues, grows to 2% • Manhattan parking availability • Auto Consumer Insights • MTA rider survey • Partnership for NYC survey • MTA trip distance data, Micro-mobility trends D Motorists shift to transit No shift / 2019 baseline Higher gas prices are sustained, and congestion pricing moves small % of motorists toward transit from Q1 2024 Congestion pricing has limited change to B+T and transit ridership; gas prices revert to lower historical levels • MTA forward looking traffic and ridership data
+```
+[p011_c0004] _11_
+[p011_c0005] _DOCUMENT INTENDED TO PROVIDE INSIGHT BASED ON CURRENTLY AVAILABLE INFORMATION FOR CONSIDERATION AND NOT SPECIFIC ADVICE_
+
+## Page 12
+
+### [p012_c0001] Potential drivers of change for each scenario – details (2/2)
+[p012_c0002] NOT EXHAUSTIVE
+[p012_c0003] ✕ Details on ridership impact follow
+[p012_c0004]
+
+```text
+Categorization Potential drivers of change Baseline: Pre-pandemic 2019 view S1 Continued office return, limited mode shift from transit and limited economic disruption S2 Work-from-home remains at current levels, greater mode shift away from mass transit and sustained disruption to economy Sources/case studies Economic and demographic factors E Employment and GDP GDP: Growth rate (2018-2019) 2.1% Level $1866 B Employment: Growth rate 1.4% Level (workers) • 10 M (NYMSA) • 4.6 M (NYC) • 2.6 M (Manhattan) NYMSA employment grows at approx. 0.7% annually through Q4 2026 NYC overall and Manhattan employment grows approx. 0.8% annually through Q4 2026 Note: employment levels in 2026Q4 predominantly remain 1.5-3% lower than pre-pandemic (2019) NYMSA employment grows at approx. 0.2% annually through Q4 2026 NYC overall and Manhattan employment grows approx. 0.3% annually through Q4 2026 Note: employment levels in Q4 2026 predominantly remain 3-4% lower than pre-pandemic (2019) • McKinsey analysis, in partnership with Oxford Economics • Moody's and IHS Markit F Population changes (incl. migration) 19.9 M people NY metro area population increases at approx. 0.5% annualized growth rate NY metro area population increases at approx. 0.2% annualized growth rate • American Community Survey • McKinsey analysis, in partnership with Oxford Economics Leakage G Incremental fare evasion 5-6% on subway 20-25% on bus Estimated fare evasion continues decline and falls to 2018 levels, 3-5% on subway, and 15-25% on bus Decline in fare evasion on subway stalls at Q4 21 levels of 8%, current trends on bus continue to reach 35% • MTA historical fare evasion data Network enhancement and expansion H Capital expansion projects No capital expansion projects Additional ridership included on LIRR as part of ESA No additional capital expansion projects contributing net new trips in 2026 timeframe, new trips are diversions of old trips • MTA planning data
+```
+[p012_c0005] _DOCUMENT INTENDED TO PROVIDE INSIGHT BASED ON CURRENTLY AVAILABLE INFORMATION FOR CONSIDERATION AND NOT SPECIFIC ADVICE_
+[p012_c0006] _12_
+
+## Page 13
+
+### [p013_c0001] A: WFH is largest single driver: additional 1.5 – 2.5 days per week for the half of all work trips that can be done from home
+[p013_c0002] ■ Work trips with ability to WFH ■ Work trips required to be in-person ■ Non-work trips
+[p013_c0003]
+
+```text
+Ridership % by trip type and ability to work from home (2019) Average daily pre-pandemic ridership (000s) Days WFH for those able to (days/week) Impact on total ridership (pp) 2019 2026 Total 24% | 29% | 46% ~7,570 0.5 2.1 - 3.2 7 - 11 Bus 11% | 24% | 65% ~1,700 0.5 2.1 - 3.1 2 - 4 Subway 27% | 31% | 41% ~5,300 0.5 2.1 - 3.2 7 - 13 LIRR 37% | 27% | 36% ~300 0.5 2.1 - 3.2 11 - 20 MNR 60% | 25% | 15% ~270 0.5 2.0 - 3.2 18 - 34
+```
+[p013_c0004] _Source: MGI Economics Research analytics, US Census American Community Survey (ACS), McKinsey American Opportunity Survey 2022 (Spring 2022) , MTA ridership survey data_
+[p013_c0005] _DOCUMENT INTENDED TO PROVIDE INSIGHT BASED ON CURRENTLY AVAILABLE INFORMATION FOR CONSIDERATION AND NOT SPECIFIC ADVICE_
+[p013_c0006] _13_
+
+## Page 14
+
+### [p014_c0001] Total transit ridership in 2026 Q4 is estimated to reach 73-88% of pre-pandemic levels
+### [p014_c0002] Q4 2026 ridership estimates, As percentage of pre-pandemic ridership
+> [p014_c0003] S1 Scenario 1 S2 Scenario 2 Pre-pandemic ridership 100% 100% A Future of office work -7% -11% B Non-work trips -4% -7% C Consumer sentiment away from transit -3% -5% D Population growth 0% -1% E Employment change since 2019 -3% -3% F Motorists shift to transit 2% 1% G Fare evasion relative to 2019 1 2% -1% H Capital expansion projects <1% 0% 2026 Q4 ridership 88% 73%
+[p014_c0004] The largest factor contributing to the estimated reduction in 2026 ridership is the future of office work (7 to 11%), represents a 30 – 50% reduction of the 24% of the MTA's trips that are work trips, of jobs that can be done from home
+[p014_c0005] Non-work trips (4 to 7%) and consumer sentiment away from transit (3 to 5%) may contribute to the next two largest drivers of estimated change to 2026 ridership, followed by employment change (approx. 3%), fare evasion (+2 to -1%) and population growth (0 to 1%)
+[p014_c0006] Motorist shift to transit (congestion pricing) (+1 to +2%) and capital expansion projects (<1%) may likely contribute some increases to ridership ( with ESA increasing LIRR ridership by 4% in Q4 26 in S1 )
+[p014_c0007] _1. Estimated as change in 'paid ridership'_
+[p014_c0008] _Source: MTA ridership and revenue modeling – May 2022_
+[p014_c0009] _DOCUMENT INTENDED TO PROVIDE INSIGHT BASED ON CURRENTLY AVAILABLE INFORMATION FOR CONSIDERATION AND NOT SPECIFIC ADVICE_
+[p014_c0010] _14_
+
+## Page 15
+
+### [p015_c0001] Impact of drivers to ridership for 2022 Q1
+### [p015_c0002] 2022 Q1 ridership estimates, As percentage of pre-pandemic ridership
+> [p015_c0003] Driver Impact (%) Pre-COVID-19 ridership 100% A Future of office work -11% B Non-work trips -12% C Consumer sentiment away from transit -15% D Population growth 0% E Employment change since 2019 -5% F Motorists shift to transit 0% G Fare evasion relative to 2019 1 -2% H Capital expansion projects 0% 2022 Q1 ridership 55% Decline in work trips represents 3 days a week work from home, of the 24% of the MTA's trips that are work trips that can be done from home
+[p015_c0004] The largest drivers of decline to 2022 Q1 ridership may relate to consumer sentiment away from transit due to COVID-19 (15%), non-work trips (12%), and the future of office work (11%)
+[p015_c0005] Employment change since pre-pandemic also has an impact on 2022 Q1 ridership, with an estimated 5% decrease on public transit ridership due to lower employment levels
+[p015_c0006] Other smaller drivers impacting 2022 Q1 ridership, compared to pre-pandemic levels), include increased fare evasion (2%)
+[p015_c0007] _1. Estimated as change in 'paid ridership'_
+[p015_c0008] _Source: MTA ridership and revenue modeling – May 2022_
+[p015_c0009] _DOCUMENT INTENDED TO PROVIDE INSIGHT BASED ON CURRENTLY AVAILABLE INFORMATION FOR CONSIDERATION AND NOT SPECIFIC ADVICE_
+[p015_c0010] _15_
+
+## Page 16
+
+### [p016_c0001] Path from today, 2022 Q2 to 2026 Q4 ridership
+### [p016_c0002] Q4 2026 ridership estimates, As percentage of pre-COVID-19 ridership
+> [p016_c0003] S1 Scenario 1 S2 Scenario 2 2022 Q2 ridership 61 58 A Future of office work -3 -0 B Non-work trips 7 6 C Consumer sentiment away from transit 8 5 D Population growth -0 -1 E Employment change since 2019 -4 -2 F Motorists shift to transit -2 -1 G Fare evasion relative to 2019 1 -4 -1 H Capital expansion projects <1% -0 2026 Q4 ridership 88 73
+[p016_c0004] The path to 2026 ridership from current includes return of non-work trips (6 to 7%), movement in consumer sentiment (5 to 8%) and improved employment levels (2 to 4%) as the largest drivers
+[p016_c0005] Other smaller drivers helping toward increased 2026 ridership include reduced fare evasion from current levels (1 to 4%), congestion pricing affecting motorist shift to transit (1 to 2%) and continued future office worker return (0 to 3%)
+[p016_c0006] Capital expansion projects (ESA) contributes 4% to LIRR ridership in S1 in Q4 '26, though impact on total ridership is more muted
+[p016_c0007] _1. Estimated as change in 'paid ridership'_
+[p016_c0008] _Source: MTA ridership and revenue modeling – May 2022_
+[p016_c0009] _DOCUMENT INTENDED TO PROVIDE INSIGHT BASED ON CURRENTLY AVAILABLE INFORMATION FOR CONSIDERATION AND NOT SPECIFIC ADVICE_
+[p016_c0010] _16_
+
+## Page 17
+
+> [p017_c0001] The logo for the Metropolitan Transportation Authority (MTA) is centered on a white background. It consists of a solid blue circle with the letters "MTA" in a bold, white, sans-serif font. The letters are slightly slanted to the right.

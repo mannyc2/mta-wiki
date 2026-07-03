@@ -1,0 +1,12 @@
+{
+  "run_id": "2026-06-10T17-19-53-333Z_1462165-74a02e37_ingest_116-st-morningside-ave-pleasant-ave-cb9-jun2025",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-21T15:16:44.000Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "assistant_text",
+  "parse_error": "JSON Parse error: Unexpected identifier \"Now\"",
+  "raw_response": "Now I have all the evidence from the source document. Let me verify the key evidence blocks and compose the decisions. Let me check one more thing - the existing records:\n\n",
+  "transcript_dir": "data/transcripts/runs/2026-06-21T15-04-01-764Z_2836603-82932b08_canonicalize_2026-06-10t17-19-53-333z-1462165-74a02e37-ingest-116-st-morningside-ave-pleasant-ave-cb9-jun2025-relation-linker"
+}

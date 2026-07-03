@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T17-48-04-591Z_1496766-bb550d62_ingest_14th-street-truck-transit-priority-trifold-r1-p2",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-10T19:21:17.724Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "canon-entity-nyc-dot-trifold",
+        "local_observation_id": "entity_nyc_dot_trifold_publisher",
+        "decision": "new",
+        "rationale": "Observation resolves to base_record_id entity_nyc-dot, which is the NYC Department of Transportation agency. The source 14th_street_truck_transit_priority_trifold_r1_p2 is already associated with entity_nyc-dot in the registry. Entity name 'NYC DOT', entity type 'agency', and publisher 'NYC DOT' all match the registry record — no different record is a closer match.",
+        "evidence_refs": [
+          {
+            "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+            "block_id": "p001_c0001",
+            "source_quote": ""
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-20-34-669Z_1617604-10b596a7_canonicalize_2026-06-10t17-48-04-591z-1496766-bb550d62-ingest-14th-street-truck-transit-priority-trifold-r1-p2-entity-identity"
+}

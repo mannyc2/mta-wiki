@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T22-56-13-021Z_1976810-4f20fb57_ingest_20100615-34th-transitway-cac-mtg-summary",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T01:04:19.993Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1-34th-transitway-cac-self-match",
+        "local_observation_id": "project_34th_street_transitway_20100615_cac",
+        "decision": "new",
+        "rationale": "The observation's base_record_id (project_34th-street-transitway-concept) is the closest registry match — the registry card already lists source 20100615_34th_transitway_cac_mtg_summary and alias project_34th-street-transitway-20100615-cac. The observation describes the same 34th Street Transitway concept CAC meeting #1 (June 15, 2010). Per identity rules, when the closest match IS the observation's own base_record_id, the decision is 'new'.",
+        "evidence_refs": [
+          {
+            "source_id": "20100615_34th_transitway_cac_mtg_summary",
+            "block_id": "p001_c0001",
+            "source_quote": "34th Street Transitway - Eric Beaton, Project Manager of the Transitway at DOT, and Ted Orosz, the director of Long-Range Bus Planning for NYCT gave a PowerPoint presentation on the 34th Street Transitway."
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-46-257Z_2111393-0c58381e_canonicalize_2026-06-10t22-56-13-021z-1976810-4f20fb57-ingest-20100615-34th-transitway-cac-mtg-summary-project-identity"
+}

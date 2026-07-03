@@ -1,0 +1,184 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-100306"
+record_kind: "source"
+display_name: "Joint LIRR/Metro-North Committee Minutes, October 2022"
+source_id: "meeting_doc_100306"
+source_ids:
+  - "meeting_doc_100306"
+local_observation_id: "source_meeting_doc_100306"
+local_observation_ids:
+  - "source_meeting_doc_100306"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T19:31:44.759Z"
+raw_text: "Minutes of the Regular Meeting Joint Long Island Rail Road and Metro-North Committees Monday, October 24, 2022"
+submission_ids:
+  - "sub_9ec9772692cc2be6"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting minutes"
+  date_text: "Monday, October 24, 2022"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2022-10-24"
+    precision: "day"
+    raw_text: "Monday, October 24, 2022"
+  published_date_normalized: "2022-10-24"
+  published_date_precision: "day"
+  publisher: "MTA"
+  title: "Minutes of the Regular Meeting Joint Long Island Rail Road and Metro-North Committees Monday, October 24, 2022"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_100306#p001_c0001"
+    page_number: 1
+    role: "document_title"
+    source_id: "meeting_doc_100306"
+    source_path: "raw/sources/meeting_doc_100306/blocks.jsonl"
+    text_sha256: "sha256:29d494d9be53adca200ecf7b5a60f58ddc2f38e75c53cc4d881660f90ca41489"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_100306#p001_c0002"
+    page_number: 1
+    role: "meeting_location"
+    source_id: "meeting_doc_100306"
+    source_path: "raw/sources/meeting_doc_100306/blocks.jsonl"
+    text_sha256: "sha256:47e4e0012518dd7c76d00ddaaa13c3cd9df4b78482883d530811027169ee2b39"
+    text_source: "raw_text"
+---
+
+# Joint LIRR-Metro-North Committee Minutes, October 2022
+
+source_id: meeting_doc_100306
+citation: cite block ids exactly as shown in square brackets
+document: 98 block(s)
+
+## Page 1
+
+### [p001_c0001] Minutes of the Regular Meeting Joint Long Island Rail Road and Metro-North Committees Monday, October 24, 2022
+[p001_c0002] Meeting held at 2 Broadway – 20 th Floor New York, New York 10004 9:30 am
+[p001_c0003] The following Board members were present in person:
+[p001_c0004] Hon. Samuel Chu, Co-Chair Hon. Blanca López, Co-Chair Hon. Frank Borelli, Jr. Hon. Norman Brown Hon. Gerard Bringmann Hon. Randolph Glucksman Hon. David Mack Hon. Harold Porr III Hon. Vincent Tessitore, Jr. Hon. Midori Valdivia Hon. Neal Zuckerman
+[p001_c0005] The following Board members were not present:
+[p001_c0006] Hon. Michael Fleischer
+### [p001_c0007] Representing Long Island Rail Road:
+[p001_c0008] Catherine Rinaldi – Interim President Stephen Papandon – Acting Vice President, General Counsel & Secretary Rob Free – Senior Vice President, Operations Lori Ebbighausen – Vice President, Corporate Safety Paul Dietlin – Vice President, Maintenance of Way
+### [p001_c0009] Representing Metro-North:
+[p001_c0010] Catherine Rinaldi – President Justin Vonashek – Senior Vice President, Operations Shelley Prettyman – Vice President, System Safety David Melillo – Vice President, Maintenance of Way
+[p001_c0011] The members of the Long Island Rail Road (“LIRR”) Committee met jointly with the members of the Metro-North Committee.
+[p001_c0012] Co-Chair Chu called the joint meeting to order.
+### [p001_c0013] PUBLIC COMMENTS:
+[p001_c0014] The following public speakers commented:
+[p001_c0015] _1_
+
+## Page 2
+
+[p002_c0001] Jack Nierenberg (in person), Passengers United Vice President, said they should discuss improved wayfinding and passenger information. He proposed text to speech clear audio announcements at Penn Station, Atlantic Terminal, and Jamaica. He also sought improvements to M7 and M9 customer information screens, including next stop, connections, and track numbers.
+[p002_c0002] Murray Bodin (in person) from Concerned Grandparents asked what safety reason there is to sound the train horn at the Botanical Garden station. He also said the beep signifying the time limit for speaking at one of the two committees is symbolic of what needs to change.
+[p002_c0003] John Mishno (via audio) said Mineola station is a disgrace, with few platform entrances and exits, a railing between the platform and the NICE bus area, no seating, and safety hazards including clear glass between a waiting area and new staircase. There is no way for pedestrians to cross at Willis Avenue and there are ADA violations. New Hyde Park has design flaws. Floral Park is dangerous, with deteriorating platforms and unsafe railings. Renovated Babylon branch stations have plenty of seats, a canopy over 75% of the platform, and tables with charging ports.
+[p002_c0004] Andy Pollack (via audio) said one of the Floral Park platforms has no yellow paint. He said that the Main Line and Hempstead branch should not be shut down this weekend because there is an Islanders game and the Port Washington branch should not be shut down during the weekend of the New York City Marathon. He said there should be other busing options between Bayside and Great Neck and at least cross honor on the Q12 and N20g.
+[p002_c0005] Jason Anthony (in person) from Amazon Labor Union said that when LIRR has a service change, people should plan ahead before traveling to sporting events. He said that he lives two blocks from Atlantic Terminal and that his branch will be affected by East Side Access. During peak periods and on weekends, he will not have a one seat ride between Atlantic Terminal and Hempstead or Far Rockaway. He said that he has recently seen homeless individuals at Grand Central Terminal but has not seen BRC or any homeless outreach staff there. He noted that New Jersey is opposing congestion pricing and asked how they would respond.
+[p002_c0006] Kara Gurl (in person), PCAC Research and Communications Associate, said she was glad that both railroads were sharing best practices to minimize nature's impacts. Metro-North's laser trains, first used by LIRR, are a great example of what is possible when the railroads share technology and ideas to solve common issues. The improved TrainTime app is another example of how sharing information benefits riders. The first mile/last mile initiative will help increase ridership access for both railroads. A more integrated fare policy would also provide a more seamless experience. Implementing Freedom Ticket would offer discounted fares for City riders on both railroads, with 24/7 subway and bus transfers, and would reduce confusion. She also recommended a pilot program extending half fare senior/disabled tickets to morning peak hours.
+[p002_c0007] Mr. H (via audio) thanked LIRR employees and contractors who completed the Main Line work. He said that stations look more beautiful, although Valley Stream has issues. He mentioned someone trespassing at Mineola station's LIRR parking lot, drugs at Jamaica station, and homeless
+[p002_c0008] _2_
+
+## Page 3
+
+[p003_c0001] individuals at Bay Shore station. He also said that Atlantic Terminal trains will run more frequently.
+[p003_c0002] Sally Wolf (via video) said that she is an immunocompromised train rider who had suggested masked cars or masked sections of cars, but has seen no progress or pilot on what feels like a financially and logistically feasible idea. Many conductors share her love for this idea. She said that it is cheap, aligns with Americans' love for independence because everyone can self-select, and honors physical and mental well-being beyond just COVID. She asked for 13 seats to start and said that people will do the right thing if there is clear signage.
+[p003_c0003] Christopher Greif (in person) thanked MTAPD for working with Department of Mental Health and Mental Hygiene outreach to remove individuals from Atlantic Terminal. He supports having MTA Police enter subways and the railroads. He says he sees officers in the subway stations, but does not see local police at Nassau or Suffolk County stations. He said that homelessness should not interfere with service. He also said that station intercoms need to work.
+[p003_c0004] Deborah Greif (in person), Brooklyn Family Support Service Advisory Council Chairperson, said that LIRR and Metro-North should fully implement CityTicket because many respite care workers need to get back and forth quickly so that parents can work or go out shopping. She said that mental health laws need to be updated so that people can get help. She asked that Metro-North Care be implemented soon.
+[p003_c0005] Aleta Dupree (via video) is looking forward to Grand Central Madison because she spends a lot of time on the East Side. She said that electrification is essential and will require building third rail. She asked what OMNY will look like on the railroads. She said ADA for the railroads is essential.
+[p003_c0006] The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of the public comments.
+### [p003_c0007] APPROVAL OF MINUTES:
+[p003_c0008] Upon motion duly made and seconded, the Committee approved the minutes of the September 19, 2022 Joint LIRR/Metro-North Committee Meeting.
+### [p003_c0009] METRO-NORTH AND LIRR 2022 WORK PLANS:
+[p003_c0010] LIRR Interim President/Metro-North President Catherine Rinaldi ("President Rinaldi") reported no changes to the LIRR or Metro-North Work Plans. The 2022 Metro-North and LIRR Work Plans are filed with the records of this meeting.
+[p003_c0011] _3_
+
+## Page 4
+
+### [p004_c0001] PRESIDENT’S REPORTS:
+[p004_c0002] President Rinaldi said that records are made to be broken and post-Labor Day ridership remains strong at both railroads. Following Metro-North’s pandemic-era ridership records set on Tuesday, September 13 and Wednesday, September 14, Metro-North again set a record on Tuesday, September 20 and yet again on Tuesday, October 11, with 192,900 riders or 74% of pre-pandemic levels. LIRR similarly has set a bunch of records since Labor Day, on September 7 and then again on September 21, with 204,600 riders, which is 71% of pre-pandemic levels. Ridership has remained strong throughout the month of October, with both railroads carrying 60%-70% of pre-pandemic levels on weekdays and anywhere between 65% and 120% on weekends.
+[p004_c0003] The third and final section of LIRR’s Main Line Third Track between Carle Place and Hicksville opened on Monday, October 3, with Governor Hochul presiding at a ribbon-cutting ceremony in Westbury. This project opened on time and $100 million under budget, unlocking huge benefits for LIRR customers and operations, especially when taken together with the opening of Grand Central Madison (“GCM”) service before the end of this year. With GCM service coming into clearer view, crews are performing safety and security drills. Last week, LIRR completed its second day of advanced pre-revenue testing, operating eight trains simultaneously to test out the infrastructure, validate service planning assumptions, and gain experience dispatching the territory. Live emergency drills are planned for three weeks in October and November. In fact, there was a tunnel evacuation drill that went off without a hitch on Sunday. It was a great team effort, with participation not only from LIRR but also from Metro-North, Construction & Development (“C&D”), MTAPD, FDNY, and NYPD. LIRR crews continue to go through a federally mandated process known as physical characteristics training. Crews need to learn the location of every signal and switch between tracks as well as many other physical characteristics of the new route, such as emergency egress locations, tunnel grades, and station configurations. Train crews have been conducting this training for several months to familiarize themselves with this new stretch of LIRR territory.
+[p004_c0004] As a result of requests for retention of express service to Penn Station from customers on the Port Washington branch during the summer’s public outreach process, MTA and LIRR met with elected officials from that area, including Senator Anna Kaplan, Assemblymember Gina Sillitti, Town of North Hempstead Supervisor Jennifer DeSena, and Councilmembers Mariann Dalimonte and Veronica Lurvey. The delegation recognizes that construction of additional track space in the Port Washington Yard will be necessary in future capital programs to allow for a future expansion of service on the Port Washington branch. At the same time, railroad officials were able to look at the schedules and find ways to create express service within the envelope of existing train and track capacity constraints. They were able to add three morning and three evening rush hour Penn Station express trains serving Port Washington, Plandome, Manhasset, and Great Neck. These new express trains are part of the overall 41% service increase that will take effect along with the opening of GCM.
+[p004_c0005] While LIRR service increases are taking effect later this year when the new service opens, earlier this month Metro-North restored several half-hourly weekend Hudson Line trains, six on Saturdays and four on Sundays. These trains had been suspended with the July 10 schedule change to support three essential state-of-good-repair infrastructure projects between Cortlandt and Cold
+[p004_c0006] _4_
+
+## Page 5
+
+[p005_c0001] Spring. And two weeks ago, Metro-North began operating its popular Leaf Peeper seasonal weekend trains on the Hudson Line to take New York City area riders out to the incomparable scenery of the Hudson Valley. Weather permitting, there are five extra trains on Saturdays and four extra trains on Sundays which complement normal hourly service. Leaf Peeper ridership was strong the first two weekends, with most trains reporting passenger counts between 70% and 90% of capacity. Metro-North will also be operating extra service for the holidays, which they will talk about next month.
+[p005_c0002] While both railroads share the fundamental mission and commitment to improving customer service, never has collaboration between the two sister railroads been more pronounced. Operations teams are sharing ideas and learning from each other in unprecedented ways, and they will be highlighting these examples of collaboration between the railroads as part of President Rinaldi's monthly Committee report. This month, she wants to highlight Metro-North's adoption of laser train technology for the first time this year. This is a technology that was pioneered by LIRR in 2018, and is poised to become an important part of Metro-North's efforts to combat leaf season slip slide and flat wheels. As autumn sets in and leaves fall from trees onto the tracks, the detritus of wet leaves and slimy pectin residue builds up on the railway tracks. The laser train works by using high intensity lasers to remove the debris, requiring only one pass to leave a smooth, clean rail behind. Additionally, both LIRR and Metro-North operate high pressure rail washer trains to combat slip slide conditions. These water trains essentially complement the laser train. Both railroads are solving the same problem for maximum customer benefit. Metro-North is going to build upon LIRR's laser train innovation by piloting it at higher speeds.
+[p005_c0003] President Rinaldi highlighted items from Metro-North's Track Program Quarterly Update. She showed an installation of anti-trespasser panels at Brewster station and near the Harlem River Lift Bridge, the installation of friction hydraulic bumping blocks on Tracks 17 and 18 in Grand Central Terminal ("GCT"), rail installation on the Wassaic branch, Nanuet platform repairs, and the Shea Road Bridge repair on the Port Jervis line.
+[p005_c0004] President Rinaldi attended an LIRR Connect With Us Forum at the Merrick LIRR station on Wednesday, September 28. Representatives from various departments from LIRR and MTA were on hand to answer questions from commuters on topics such as the new service to GCM, the upgraded TrainTime app, the completion of the Third Track, service to Elmont-UBS Arena, and more. These customer facing events are a great way to find out what is on the minds of customers while they are in the system, and they will be doing more of those throughout the year. President Rinaldi will be at Metro-North's Tarrytown station tomorrow morning.
+[p005_c0005] Finally, both railroads participated in a series of events surrounding National Rail Safety Week, September 19 through 23, in order to raise awareness of rail safety and help the public learn how to keep themselves safe around stations, grade crossings, and rights of way. Participation in the national weeklong education campaign is part of both railroads' TRACKS programs. Railroad employees were joined by members of the MTA Police Department, the New York State and Connecticut Departments of Transportation, the Federal Railroad Administration, Operation Lifesaver, and the Suicide Response Crisis Center. The public was encouraged to wear red on Friday, September 23 for Red Out for Rail Safety Day and post photos on social media.
+[p005_c0006] _5_
+
+## Page 6
+
+### [p006_c0001] OPERATING REPORTS:
+[p006_c0002] Rob Free, LIRR's Senior Vice President, Operations, said that LIRR's September on-time performance ("OTP") was 96.3% and YTD OTP as of September was 96%, both of which are above goal of 94%. All eleven branches operated at or above goal for the month and YTD. There were six major events which resulted in delays of ten or more trains in September, the most significant of which was on September 7 involving a track condition in the vicinity of Plandome station on the Port Washington branch during the midday. This event impacted OTP by 0.8%. For fleet performance, the August mean distance between failure ("MDBF") was 190,896 miles and YTD as of August was 217,439 miles, both of which are above goal of 190,000 miles. For service delivery, LIRR completed 99.7% of its trips for the month and YTD.
+[p006_c0003] As LIRR continues to upgrade its system, some work will impact operations. This upcoming weekend will represent the final scheduled shutdown of the Main Line branch to support Queens Interlocking system upgrades. In November, there will be three shutdowns between Bayside and Port Washington. Bus service will be provided. This work is to complete the Great Neck pocket extension for GCM service. On November 12 and 13, there will be concrete tie work on the Hempstead branch. Bus service will be provided. Finally, as they approach the holidays, LIRR will be providing extra holiday service on Wednesday, November 23 for Thanksgiving eve. LIRR will have eleven extra early afternoon eastbound trains. On Thanksgiving Day, LIRR will run its Thanksgiving Day program, which will be six pre-parade trains and eleven trains post-parade.
+[p006_c0004] Justin Vonashek, Metro-North's Senior Vice President, Operations, said that Metro-North's September OTP was 97%, which was above goal of 94%. YTD was also above goal at 97.1%. The August MDBF was 172,500. YTD MDBF was above goal at 210,000 miles. Metro-North will also be operating its Thanksgiving week service plan. On the Wednesday before Thanksgiving, additional afternoon getaway trains will be operated. On Thanksgiving, additional inbound morning service will be provided for customers going to the Macy's Thanksgiving Day Parade and additional service will also be provided throughout the day for holiday travel. On Friday, a special schedule will be operated. Customers can check the TrainTime app for the latest schedule information.
+[p006_c0005] The complete LIRR and Metro-North reports are filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of the presentations.
+### [p006_c0006] SAFETY REPORT:
+[p006_c0007] LIRR Vice President – Corporate Safety Lori Ebbighausen stated that LIRR's safety performance is on page 18 in the Key Performance Metrics Report. For the 12 month period ending August 2022, the FRA reportable customer injury rate decreased from 3.92 to 2.42 per million customers, and the average reportable employee lost time injury rate increased from 3.97 to 4.13 injuries per 200,000 hours worked. They are continuing to collaborate across departments and with their labor partners to identify hazards in the yards. This month they are at the yards in Montauk,
+[p006_c0008] _6_
+
+## Page 7
+
+[p007_c0001] Greenport, Patchogue, Speonk, and Huntington. The results of those safety inspections and engagement with their employees is then shared within the departments and with the Engineering Department to address any actions that need to be taken. Vice President Ebbighausen extended an invitation to schools and community groups to ask for crossword puzzles, word searches, and other activities to help get the safety message out as part of the school safety contest. The submissions are due by December 15. They also continue to partner with MTA Police for Operation Lifesaver. Operation Lifesaver will be at Bethpage and Syosset this month.
+[p007_c0002] Metro-North Vice President of System Safety Shelley Prettyman stated that Metro-North's safety report is on page 28 of the Key Performance Metrics Report. For the 12 month period ending August 2022, the FRA reportable customer injury rate was 2.14 per one million customers, which was up from 2.11 for the prior 12 month reporting period ending August 2021. Slips, trips, and falls remain the most frequent cause of injury. The FRA reportable lost time employee injury rate was 2.14 per 200,000 work hours for the current reporting period, up from 1.90 for the prior period. This month Metro-North's TRACKS safety outreach and education program will be participating in some local Halloween events. Two examples are the Miracle League of Westchester's A Very Special Halloween event on October 29 in Hartsdale and the Danbury Railway Museum's Pumpkin Patch Train event on October 30 in Danbury. TRACKS is also holding its fifth annual rail safety contest. Contest details are available on the MTA web page. To support suicide prevention awareness, Metro-North continues to deliver Question, Persuade, Refer ("QPR") training to employees. Digital posters throughout the territory have been updated to include the 988 Suicide and Crisis Lifeline number.
+[p007_c0003] In response to a question from Co-Chair López regarding the type and frequency of employee QPR training, Vice President Prettyman said the training is offered a couple of times each month, is open to all employees, and trains the employees to recognize the signs of someone in crisis, to understand how to respond, and how to connect them with the help they need. President Rinaldi noted that she took the QPR training, found it to be eye opening, and said that they would make it available to Committee members.
+[p007_c0004] In response to a question from Board Member Zuckerman regarding reasons for a 13% uptick in Metro-North employee injuries, Vice President Prettyman said the numbers were updated as the Kronos timekeeping system has been updated, but that there was also an uptick in the actual number of incidents. She noted that after every incident, both for employee and customer injuries, the Safety Department partners with the Operating Department to look at the circumstances, determine the root cause, and identify issues that need to be resolved. They also look at trends, although a challenge is that there are many root causes.
+[p007_c0005] Board Member Bringmann encouraged the railroads to have posters showing the dangers of riding bicycles, scooters, and other vehicles in the stations and platforms.
+[p007_c0006] The full safety report is filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of the presentations.
+[p007_c0007] _7_
+
+## Page 8
+
+### [p008_c0001] MTAPD REPORT:
+[p008_c0002] MTAPD Chief of Police John Mueller said that for September 2022, they had 16 felonies for the entire system. More than half were grand larcenies. They had four felony assaults, with one against an MTA employee. Chief Mueller said the numbers were trending well. They are speaking with municipal leaders, including mayors, police departments, and district attorney offices. Crime continues to be low on the commuter railroads, with less than one per million riders, with the goal of getting it down to zero.
+[p008_c0003] In response to a question from Board Member Porr about a typical grand larceny incident, Chief Mueller said this month they had two grand larcenies involving electric bikes, one car stolen, and two involving sleeping passengers.
+[p008_c0004] Board Member Mack complimented Chief Mueller on reaching out and implementing a K9 program. He said it was unfortunate that New York City only offered two openings for its class, while Nassau County provided four openings. He also said that it is unfortunate that MTA Police officers are being taken away from their duties at Metro-North and LIRR and being placed on the subway, even though MTA is paying NYPD to protect transit. He said that MTA should hire more police.
+[p008_c0005] Board Member Brown said MTA Police should be using and acting on Nassau County police intelligence. In response to his question about how many grand larcenies involve cell phones, Chief Mueller said there were four. They are checking lost property so that they can adjust the crime statistics.
+[p008_c0006] Chief Mueller also said that they were working to place bike racks in visible places to discourage theft or give the police a better chance of catching people.
+[p008_c0007] In response to a question from Board Member Brown as to whether he was concerned that, while the customer assault numbers were going down, the employee assault numbers were going up, Chief Mueller said that this month there were four felony assaults and one was an MTA employee. They are making sure that they see those cases all the way through, including with victim impact statements, speaking with district attorneys – especially when they see repeat activity. They are also speaking with conductors and other employees about how to handle things.
+[p008_c0008] MTA Chief Safety and Security Office Patrick Warren said they recognize there are a lot of problems in the subway system and that it is important to their customers, but that LIRR and Metro-North will remain strong and secure. MTA Police will be placed largely at locations where they already have a presence, such as Penn Station, GCT, Atlantic Terminal, and Jamaica. They will use the expertise at those locations and extend it into the subway system. The New York State Police have agreed to backfill some of the missions that the MTA Police were performing.
+[p008_c0009] In response to a question from Board Member Bringmann about catalytic converter thefts, Chief Mueller said he did not believe they had any in September but have had them in the past and that it is a real problem, especially in the outer boroughs and on Long Island. He noted that cadmium is one of the most valuable minerals, so there is incentive to steal catalytic converters
+[p008_c0010] _8_
+
+## Page 9
+
+[p009_c0001] and it only takes between 30-45 seconds to get under a car and cut one out. Chief Mueller said outreach to local police departments is helpful.
+[p009_c0002] Board Member Mack said that is another reason that MTA Police officers should not be doing the job of the NYPD. He said that the only deterrent to crime is a blue uniform.
+[p009_c0003] In response to a question from Co-Chair López whether MTA Police patrolling subways will impact MTA Police's upcoming plan to have more MTA Police patrol the railroads, Chief Mueller said it will not.
+[p009_c0004] In response to a question from Board Member Zuckerman regarding how many police officers are being reassigned to the subways, Chief Mueller said a lot of it will be overtime so that it does not compromise commuter rail. He said they are still starting to build out the plan.
+[p009_c0005] In response to a question from Board Member Glucksman as to whether there are cameras in many of the parking lots and who controls them, Chief Mueller said that if the cameras are on MTA property, MTA controls them. He noted that the MTA has a robust program to expand cameras on MTA property.
+[p009_c0006] Board Member Tessitore thanked Chief Mueller and said that they were making progress with the train patrols. He said the Committee should support the resources needed to make sure the patrols keep going. He also requested that they take a look at the need for a gating program at Elmont-UBS Arena, not just for fare collection but also for crowd control.
+[p009_c0007] Co-Chair Chu shared that a conductor on his train last night handled a homeless individual and a panhandler with dignity. When he spoke with the conductor about the train patrol, the conductor said that she was encouraged by it.
+[p009_c0008] Board Member Mack asked why we should be taking MTA Police away from helping Metro-North and LIRR. He also said we need to recruit more MTA Police.
+[p009_c0009] Co-Chair Chu complimented Chief Mueller.
+[p009_c0010] Board Member Brown complimented Chief Mueller. He said placing some MTA Police in the subway system will give commuter rail riders confidence that they will have a safe ride when they transfer to the subway.
+[p009_c0011] Board Member Zuckerman said the MTA was one system and they should work together to protect that one system.
+[p009_c0012] Board Member Glucksman advocated for the pilot program for seniors and individuals with disabilities to purchase discounted tickets for morning peak trains.
+[p009_c0013] The MTAPD report is filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of Chief Mueller's presentation.
+[p009_c0014] _9_
+
+## Page 10
+
+### [p010_c0001] INFORMATION ITEMS:
+[p010_c0002] President Rinaldi reported on the following joint information items: (a) the 2022 preliminary budget, which is out for public comment, and (b) LIRR/Metro-North positive train control update.
+[p010_c0003] She also reported on the following LIRR information items: (a) fall track work programs and holiday service, and (b) Maintenance of Way quarterly update.
+[p010_c0004] She also reported on the following Metro-North information item: the Track Program quarterly update.
+[p010_c0005] The details of these information items are contained in reports filed with the records of this meeting.
+### [p010_c0006] PROCUREMENTS:
+[p010_c0007] There are no procurements for the Committee this month.
+### [p010_c0008] ADJOURNMENT:
+[p010_c0009] The Committee unanimously voted to adjourn the meeting.
+[p010_c0010] Respectfully submitted,
+[p010_c0011] Stephen N. Papandon Acting Vice President, General Counsel & Secretary The Long Island Rail Road Company
+[p010_c0012] Susan Sarch Vice President, General Counsel & Secretary Metro-North Commuter Railroad Company
+[p010_c0013] _10_

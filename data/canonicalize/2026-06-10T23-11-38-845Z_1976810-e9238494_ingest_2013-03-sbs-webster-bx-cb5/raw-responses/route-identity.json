@@ -1,0 +1,134 @@
+{
+  "run_id": "2026-06-10T23-11-38-845Z_1976810-e9238494_ingest_2013-03-sbs-webster-bx-cb5",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T03:36:37.910Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "bx41-sbs-new",
+        "local_observation_id": "route_bx41_sbs_2013_03_cb5",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'route_webster-ave-sbs' already exists in the registry as the canonical BX41 SBS record (route_id 'BX41+', route_type 'SBS', borough 'Bronx'). The observation resolves to its own base_record_id, which is the closest match. No different existing record matches better.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb5",
+            "block_id": "p011_c0002",
+            "source_quote": "Bx41 LTD → Bx41 SBS. 1/2 mile stop spacing. Service will run frequently all day."
+          }
+        ]
+      },
+      {
+        "decision_id": "bx41-local-new",
+        "local_observation_id": "route_bx41_local_2013_03_cb5",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'route_bx41-local-webster-2012' already exists in the registry as the canonical Bx41 Local record (route_id 'Bx41', route_type 'local', borough 'Bronx'). The observation resolves to its own base_record_id. No different record matches better.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb5",
+            "block_id": "p040_c0002",
+            "source_quote": "Bx41 Local - No change to stop spacing. Service every ~10 minutes."
+          }
+        ]
+      },
+      {
+        "decision_id": "bx55-limited-new",
+        "local_observation_id": "route_bx55_limited_2013_03_cb5",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'route_bx55-limited-webster-2012' already exists in the registry as the canonical Bx55 Limited record (route_id 'Bx55', route_type 'limited', borough 'Bronx'). The observation resolves to its own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb5",
+            "block_id": "p038_c0003",
+            "source_quote": "Bx55 (Limited) north of Fordham Plaza"
+          }
+        ]
+      },
+      {
+        "decision_id": "bx15-local-new",
+        "local_observation_id": "route_bx15_local_2013_03_cb5",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'route_bx15-ace' already exists in the registry as the canonical Bx15 Local record (route_id 'Bx15', route_type 'local', boroughs ['Bronx','Manhattan']). The observation resolves to its own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb5",
+            "block_id": "p041_c0002",
+            "source_quote": "Bx15 Local - Local stops: The Hub ↔ Fordham Plaza"
+          }
+        ]
+      },
+      {
+        "decision_id": "bx15-ltd-new",
+        "local_observation_id": "route_bx15_ltd_2013_03_cb5",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'route_bx15-ltd-webster-2012' already exists in the registry as the canonical Bx15 LTD record (route_id 'Bx15', route_type 'limited', boroughs ['Bronx','Manhattan']). The observation resolves to its own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb5",
+            "block_id": "p041_c0002",
+            "source_quote": "Bx15 LTD - Local stops: Harlem 125th St ↔ The Hub. Limited stops: The Hub ↔ Fordham Plaza."
+          }
+        ]
+      },
+      {
+        "decision_id": "bx36-new",
+        "local_observation_id": "route_bx36_2013_03_cb5",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'route_bx36' already exists in the registry as the canonical BX36 record (route_id 'BX36', route_type 'local_bus', borough 'Bronx'). The observation resolves to its own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb5",
+            "block_id": "p033_c0003",
+            "source_quote": "Relocate Bx40/42 and Bx36 bus stops to Valentine Av"
+          }
+        ]
+      },
+      {
+        "decision_id": "bx40-42-new",
+        "local_observation_id": "route_bx40_42_2013_03_cb5",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'route_bx40-42-2013-03-cb5' already exists in the registry as the canonical Bx40/42 record (route_id 'Bx40/42', route_type 'local', borough 'Bronx'). The observation resolves to its own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb5",
+            "block_id": "p033_c0003",
+            "source_quote": "Relocate Bx40/42 and Bx36 bus stops to Valentine Av"
+          }
+        ]
+      },
+      {
+        "decision_id": "sbs-laguardia-new",
+        "local_observation_id": "route_sbs_laguardia_2013_03_cb5",
+        "decision": "new",
+        "proposed_relations": [
+          {
+            "relation_kind": "corridor_context",
+            "subject_id": "route_sbs-to-laguardia-2012",
+            "object_id": "route_webster-ave-sbs",
+            "description": "Proposed SBS to LaGuardia Airport appears in the Webster Avenue SBS presentation as a future connection; both are part of the same 2013 corridor planning context.",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_sbs_webster_bx_cb5",
+                "block_id": "p039_c0003",
+                "source_quote": "SBS to LaGuardia Airport"
+              }
+            ]
+          }
+        ],
+        "rationale": "Observation's base_record_id 'route_sbs-to-laguardia-2012' already exists in the registry (route_label 'SBS to LaGuardia Airport', route_type 'SBS', boroughs ['Bronx','Queens']). The observation resolves to its own base_record_id. Proposed relation to route_webster-ave-sbs since both appear in the same Webster Avenue SBS presentation as related corridor projects.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb5",
+            "block_id": "p039_c0003",
+            "source_quote": "SBS to LaGuardia Airport"
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-34-56-656Z_2111393-ca17c824_canonicalize_2026-06-10t23-11-38-845z-1976810-e9238494-ingest-2013-03-sbs-webster-bx-cb5-route-identity"
+}

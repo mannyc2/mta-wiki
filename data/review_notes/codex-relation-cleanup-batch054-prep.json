@@ -1,0 +1,336 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch054",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "batch_id": "relation054",
+  "batch": "batch054",
+  "source_triage_artifact": "data/review_notes/codex-relation-rule-or-data-next25-prep.json",
+  "scope": "Codex-only deterministic/manual relation cleanup prep; no provider-backed commands, post-ingest LLM harnesses, materialize/export-jsonl/full validate/DB publish, generated-output edits, durable retirements, replacement submissions, LOG edits, manifest edits, canonical/generated edits, or code edits applied",
+  "checkpoint_context": {
+    "reported_validate_backlog_after_identity080_relation052": {
+      "issue_count": 1444,
+      "unexpected_relation_endpoint_shape": 13,
+      "duplicate_global_identity": 1431
+    },
+    "selected_bucket": "has_claim claim->claim",
+    "selected_rows_cleared": 1,
+    "replacement_rows_added": 1,
+    "expected_endpoint_shape_delta": -1,
+    "expected_remaining_unexpected_relation_endpoint_shape_after_apply": 12,
+    "not_repeated": "This prep uses relation054 as requested and does not repeat relation053."
+  },
+  "durable_mechanism_prepared_not_applied": {
+    "retire_originals_via": "data/submission-overrides/retired.json",
+    "replacement_journal": "data/submissions/2026-06-23_codex_relation_cleanup_batch054.jsonl",
+    "mutation_status": "not_applied_by_this_prep",
+    "only_file_written_by_this_task": "data/review_notes/codex-relation-cleanup-batch054-prep.json"
+  },
+  "summary_counts": {
+    "prepared_count": 1,
+    "retire_replace_count": 1,
+    "accepted_replacement_count": 1,
+    "issue_count": 0,
+    "expected_endpoint_shape_delta": -1
+  },
+  "bucket": {
+    "name": "ADA station-list claim incorrectly modeled as has_claim under aggregate count claim",
+    "original_relation_kind": "has_claim",
+    "original_endpoint_shape": "claim -> claim",
+    "cleanup_direction": "retire and replace with supports claim -> claim",
+    "rationale": "Current has_claim is scoped to page/context owners pointing to claims, not nested claim ownership. The source block contains both the aggregate ADA station count and the station list, so preserving the association as a supports relation is narrower and better matches the evidence."
+  },
+  "guards": {
+    "all_pass": true,
+    "original_accepted_not_retired": {
+      "status": "pass",
+      "selected_original_submission_id": "sub_5d04512e0ab539f9",
+      "selected_original_record_id": "relation_23-stations-has-claim",
+      "selected_original_journal": "data/submissions/2026-06-20T12-37-31-102Z_1885472-cc2fc193_ingest_meeting-doc-121711.jsonl:53",
+      "current_validation_state": "accepted",
+      "retired_hits": []
+    },
+    "replacement_absent": {
+      "status": "pass",
+      "replacement_submission_id": "sub_cf1282558f5bd73f",
+      "replacement_tool_args_sha256": "sha256:cf1282558f5bd73fb4389c33c314474c010a276c21f9ec0031b560fe37796d48",
+      "replacement_local_observation_id": "relation_ada_station_list_supports_23_station_count",
+      "exact_replacement_relation": "supports claim_ada_stations_completed_since_2020_list -> claim_23_stations_completed_since_2020",
+      "submission_or_canonical_hits": [],
+      "note": "Only the earlier next25 triage note mentions the proposed local id; no accepted submission, canonical relation, retired override, or existing batch prep contains the deterministic replacement entry."
+    },
+    "local_observation_id_not_colliding": {
+      "status": "pass",
+      "replacement_local_observation_id": "relation_ada_station_list_supports_23_station_count",
+      "local_observation_id_hits": []
+    },
+    "replacement_endpoint_shape_valid_under_packages_pipeline_src_records_relations_ts": {
+      "status": "pass",
+      "file": "packages/pipeline/src/records/relations.ts",
+      "replacement_relation_kind": "supports",
+      "replacement_relation_family": "dependency_or_reference",
+      "replacement_subject_kind": "claim",
+      "replacement_object_kind": "claim",
+      "endpoint_shape_issue": null,
+      "reason": "supports is registered in RELATION_FAMILY_BY_KIND as dependency_or_reference and has no strict RELATION_ENDPOINT_SHAPES row, so relationEndpointShapeIssue returns undefined for claim -> claim."
+    },
+    "original_endpoint_shape_invalid_under_packages_pipeline_src_records_relations_ts": {
+      "status": "pass",
+      "file": "packages/pipeline/src/records/relations.ts",
+      "current_valid_has_claim_subjects": [
+        "project",
+        "route",
+        "corridor",
+        "entity",
+        "source",
+        "event",
+        "treatment_component"
+      ],
+      "current_valid_has_claim_objects": [
+        "claim"
+      ],
+      "original_subject_kind": "claim",
+      "original_object_kind": "claim",
+      "endpoint_shape_issue": "Relation kind has_claim expects project|route|corridor|entity|source|event|treatment_component -> claim, got claim -> claim."
+    },
+    "evidence_supports_semantics": {
+      "status": "pass",
+      "evidence_id": "meeting_doc_121711#p009_c0003",
+      "summary": "The same figure block states the 23 completed / 6 end-of-year ADA station counts and then lists ADA projects completed since 2020 and to be completed by end of year. That supports a list-style claim referencing an aggregate count claim without modeling the aggregate claim as an owner of the list claim."
+    },
+    "no_generated_files_edited": {
+      "status": "pass_for_this_task",
+      "note": "The shared worktree already contains unrelated generated-output and durable data edits owned by others. This task writes only data/review_notes/codex-relation-cleanup-batch054-prep.json and does not edit retired.json, submissions, canonical JSONL, materialized data, wiki output, LOG, manifest, code, or generated files."
+    }
+  },
+  "prepared_changes": [
+    {
+      "original": {
+        "submission_id": "sub_5d04512e0ab539f9",
+        "run_id": "2026-06-20T12-37-31-102Z_1885472-cc2fc193_ingest_meeting-doc-121711",
+        "submitted_at": "2026-06-20T14:26:46.856Z",
+        "journal": "data/submissions/2026-06-20T12-37-31-102Z_1885472-cc2fc193_ingest_meeting-doc-121711.jsonl:53",
+        "record_id": "relation_23-stations-has-claim",
+        "source_id": "meeting_doc_121711",
+        "local_observation_id": "relation_23_stations_has_claim",
+        "label": "23 Stations Since 2020 has claim stations completed list",
+        "malformed_shape": "has_claim claim -> claim",
+        "tool_args_sha256": "sha256:5d04512e0ab539f951bb61a3657124a0235031f160cea5906402b84a1886a877",
+        "tool_args": {
+          "source_id": "meeting_doc_121711",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_23_stations_has_claim",
+          "label": "23 Stations Since 2020 has claim stations completed list",
+          "payload": {
+            "relation_kind": "has_claim",
+            "subject_local_observation_id": "claim_23_stations_completed_since_2020",
+            "object_local_observation_id": "claim_ada_stations_completed_since_2020_list",
+            "relation_family": "claim_context"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_121711",
+              "evidence_id": "meeting_doc_121711#p009_c0003",
+              "source_path": "raw/sources/meeting_doc_121711/blocks.jsonl",
+              "page_number": 9,
+              "block_id": "p009_c0003",
+              "text_sha256": "sha256:dbd36ed1541d7be3539b7a6e9af767f03d07df468599f1fb88c726ae92793057",
+              "text_source": "raw_text"
+            }
+          ]
+        },
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_5d04512e0ab539f9",
+          "reason": "Codex relation cleanup batch054 replaces malformed has_claim claim -> claim relation relation_23-stations-has-claim with source-backed supports claim -> claim relation preserving the ADA station-list support for the aggregate 23-stations count.",
+          "source_decision": "data/review_notes/codex-relation-cleanup-batch054-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch054",
+          "reviewed_at": "2026-06-23T00:00:00Z"
+        },
+        "reason": "The original relation uses a has_claim endpoint shape that current relation rules reject; the cited block supports a claim-support relation instead of nested claim ownership.",
+        "expected_endpoint_shape_delta": -1,
+        "confidence": "high"
+      },
+      "replacement": {
+        "run_id": "2026-06-23_codex_relation_cleanup_batch054",
+        "journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch054.jsonl",
+        "id_generation": {
+          "method": "createSubmissionEntry(runId, rawToolArgs, '2026-06-23T00:00:00.000Z') with relationEndpointIssues added; stable hash is over normalized tool_args.",
+          "deterministic_submission_id": "sub_cf1282558f5bd73f",
+          "tool_args_sha256": "sha256:cf1282558f5bd73fb4389c33c314474c010a276c21f9ec0031b560fe37796d48",
+          "conductor_required": false
+        },
+        "replacement_entries": [
+          {
+            "role": "corrected relation replacement",
+            "tool_name": "submit_observation",
+            "review_state": "accepted",
+            "deterministic_submission_id": "sub_cf1282558f5bd73f",
+            "tool_args_sha256": "sha256:cf1282558f5bd73fb4389c33c314474c010a276c21f9ec0031b560fe37796d48",
+            "proposed_relation_kind": "supports",
+            "proposed_endpoint_shape": "claim -> claim",
+            "entry": {
+              "submission_id": "sub_cf1282558f5bd73f",
+              "run_id": "2026-06-23_codex_relation_cleanup_batch054",
+              "submitted_at": "2026-06-23T00:00:00.000Z",
+              "tool_args_sha256": "sha256:cf1282558f5bd73fb4389c33c314474c010a276c21f9ec0031b560fe37796d48",
+              "schema_version": 2,
+              "tool_args": {
+                "source_id": "meeting_doc_121711",
+                "observation_kind": "relation",
+                "local_observation_id": "relation_ada_station_list_supports_23_station_count",
+                "label": "ADA station list supports 23 stations since 2020 count",
+                "raw_text": "23 stations completed since 2020 and 6 stations to be completed by the end of the year; ADA Projects Completed Since 2020 / To Be Completed By End of Year station list",
+                "payload": {
+                  "relation_kind": "supports",
+                  "subject_local_observation_id": "claim_ada_stations_completed_since_2020_list",
+                  "object_local_observation_id": "claim_23_stations_completed_since_2020",
+                  "description": "The source map gives the aggregate ADA station counts and the station list in the same evidence block; the list-style claim supports the aggregate count claim.",
+                  "relation_family": "dependency_or_reference"
+                },
+                "evidence_refs": [
+                  {
+                    "source_id": "meeting_doc_121711",
+                    "evidence_id": "meeting_doc_121711#p009_c0003",
+                    "source_path": "raw/sources/meeting_doc_121711/blocks.jsonl",
+                    "page_number": 9,
+                    "block_id": "p009_c0003",
+                    "text_sha256": "sha256:dbd36ed1541d7be3539b7a6e9af767f03d07df468599f1fb88c726ae92793057",
+                    "text_source": "raw_text"
+                  }
+                ]
+              },
+              "validation": {
+                "state": "accepted",
+                "issues": []
+              }
+            },
+            "raw_tool_args_for_replay": {
+              "source_id": "meeting_doc_121711",
+              "observation_kind": "relation",
+              "local_observation_id": "relation_ada_station_list_supports_23_station_count",
+              "label": "ADA station list supports 23 stations since 2020 count",
+              "raw_text": "23 stations completed since 2020 and 6 stations to be completed by the end of the year; ADA Projects Completed Since 2020 / To Be Completed By End of Year station list",
+              "payload": {
+                "relation_kind": "supports",
+                "subject_local_observation_id": "claim_ada_stations_completed_since_2020_list",
+                "object_local_observation_id": "claim_23_stations_completed_since_2020",
+                "description": "The source map gives the aggregate ADA station counts and the station list in the same evidence block; the list-style claim supports the aggregate count claim."
+              },
+              "evidence_refs": [
+                {
+                  "source_id": "meeting_doc_121711",
+                  "evidence_id": "meeting_doc_121711#p009_c0003",
+                  "block_id": "p009_c0003"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "replacement_ids": [
+    "sub_cf1282558f5bd73f"
+  ],
+  "accepted_replacements": [
+    {
+      "submission_id": "sub_cf1282558f5bd73f",
+      "relation_kind": "supports",
+      "source_id": "meeting_doc_121711",
+      "subject_local_observation_id": "claim_ada_stations_completed_since_2020_list",
+      "object_local_observation_id": "claim_23_stations_completed_since_2020",
+      "validation_state": "accepted",
+      "issues": []
+    }
+  ],
+  "source_and_evidence_summary": {
+    "source_id": "meeting_doc_121711",
+    "source_title": "Accessibility Update",
+    "source_url": "https://www.mta.info/document/121711",
+    "evidence_blocks": [
+      {
+        "evidence_id": "meeting_doc_121711#p009_c0003",
+        "page_number": 9,
+        "block_id": "p009_c0003",
+        "block_kind": "figure",
+        "text_sha256": "sha256:dbd36ed1541d7be3539b7a6e9af767f03d07df468599f1fb88c726ae92793057",
+        "summary": "A map block with ADA completed/end-of-year legend, the aggregate count of 23 completed stations and 6 end-of-year stations, and station names under the completed/end-of-year headings."
+      }
+    ],
+    "related_endpoint_claim_submissions": [
+      {
+        "submission_id": "sub_afb9961be862a796",
+        "local_observation_id": "claim_ada_stations_completed_since_2020_list",
+        "record_id": "claim_ada-stations-completed-since-2020-list",
+        "validation_state": "accepted",
+        "evidence_id": "meeting_doc_121711#p009_c0003"
+      },
+      {
+        "submission_id": "sub_7b93f4bb3bc3dd4a",
+        "local_observation_id": "claim_23_stations_completed_since_2020",
+        "record_id": "claim_23-stations-completed-since-2020",
+        "validation_state": "accepted",
+        "evidence_id": "meeting_doc_121711#p009_c0003"
+      }
+    ]
+  },
+  "apply_instructions": {
+    "conductor_can_apply_immediately": true,
+    "steps": [
+      "Add the proposed_retired_json_entry for sub_5d04512e0ab539f9 to data/submission-overrides/retired.json.",
+      "Append the accepted replacement entry sub_cf1282558f5bd73f to data/submissions/2026-06-23_codex_relation_cleanup_batch054.jsonl.",
+      "Do not change relation endpoint-shape rules for has_claim or supports."
+    ]
+  },
+  "local_validation": {
+    "clean": true,
+    "tooling": "Read-only rg/sed/node/bun --eval inspection plus createSubmissionEntry/relationEndpointIssues/relationEndpointShapeIssue dry-run using direct local imports; no appendSubmission, materialize, export-jsonl, full validate, DB publish, provider-backed command, post-ingest LLM harness, generated-output command, durable data edit, or code edit run.",
+    "summary": {
+      "original_submission_id": "sub_5d04512e0ab539f9",
+      "original_validation_state": "accepted",
+      "retired_hits": [],
+      "replacement_submission_ids": [
+        "sub_cf1282558f5bd73f"
+      ],
+      "accepted_replacement_count": 1,
+      "issue_count": 0,
+      "expected_endpoint_shape_delta": -1
+    }
+  },
+  "commands_run": [
+    "pwd && rg -n \"sub_5d04512e0ab539f9|relation053|relation054|has_claim|23-stations|ADA|station-list|batch054|createSubmissionEntry|local_observation_id\" data/review_notes data/submissions packages/pipeline/src packages/harness/src 2>/dev/null",
+    "git status --short",
+    "ls data/review_notes | tail -80",
+    "rg -l \"sub_5d04512e0ab539f9\" data/submissions data/review_notes data/submission-overrides",
+    "sed -n '1,260p' data/review_notes/codex-relation-rule-or-data-next25-prep.json",
+    "sed -n '1,260p' packages/pipeline/src/records/relations.ts",
+    "sed -n '1,220p' packages/pipeline/src/records/submissions.ts",
+    "sed -n '220,520p' packages/pipeline/src/records/submissions.ts",
+    "sed -n '260,620p' packages/pipeline/src/records/relations.ts",
+    "sed -n '45,65p' data/submissions/2026-06-20T12-37-31-102Z_1885472-cc2fc193_ingest_meeting-doc-121711.jsonl",
+    "rg -n \"sub_5d04512e0ab539f9|relation_23-stations-has-claim|claim_23_stations_completed_since_2020|claim_ada_stations_completed_since_2020_list|relation_ada_station_list_supports_23_station_count\" data/submission-overrides/retired.json data/submissions data/canonical/relations.jsonl data/canonical/claims.jsonl raw/sources/meeting_doc_121711/blocks.jsonl data/review_notes -g '!data/review_notes/codex-relation-rule-or-data-next25-prep.json'",
+    "sed -n '1,360p' data/review_notes/codex-relation-cleanup-batch052-prep.json",
+    "sed -n '180,290p' data/review_notes/codex-relation-cleanup-batch050-prep.json",
+    "node read-only retired hit check for sub_5d04512e0ab539f9",
+    "node read-only replacement local id / exact supports pair collision check",
+    "bun --eval '<createSubmissionEntry dry-run for relation054 replacement using direct local imports; no appendSubmission>'",
+    "node read-only p009_c0003 evidence block summary",
+    "test ! -e data/review_notes/codex-relation-cleanup-batch054-prep.json && echo absent || echo present",
+    "rg -n \"sub_cf1282558f5bd73f|sha256:cf1282558f5bd73fb4389c33c314474c010a276c21f9ec0031b560fe37796d48|relation_ada_station_list_supports_23_station_count\" data/submissions data/canonical data/submission-overrides/retired.json data/review_notes",
+    "node read-only exact original submission hit check",
+    "git status --short -- data/review_notes/codex-relation-cleanup-batch054-prep.json data/submission-overrides/retired.json data/submissions data/canonical packages/pipeline/src/records/relations.ts LOG.md"
+  ],
+  "commands_not_run": [
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts materialize",
+    "export-jsonl",
+    "DB publish",
+    "canonicalize",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "any command with --profile/provider-backed command",
+    "appendSubmission"
+  ]
+}

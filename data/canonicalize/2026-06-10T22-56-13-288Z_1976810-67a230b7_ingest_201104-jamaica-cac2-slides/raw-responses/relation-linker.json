@@ -1,0 +1,356 @@
+{
+  "run_id": "2026-06-10T22-56-13-288Z_1976810-67a230b7_ingest_201104-jamaica-cac2-slides",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T01:34:15.765Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "rel-archer-peak-buses-to-corridor",
+        "local_observation_id": "metric_archer_peak_buses_per_hr",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_archer-ave-busway",
+            "object_id": "metric_archer-peak-buses-per-hr",
+            "description": "Archer Avenue peak bus volume of up to 180 buses/hr per direction",
+            "evidence_refs": [
+              {
+                "source_id": "201104_jamaica_cac2_slides",
+                "block_id": "p016_c0003",
+                "source_quote": "Busiest local bus corridor in NYC (up to 180 buses/hr per direction)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Slide p016 is explicitly titled 'Archer Avenue - Existing Conditions' and the metric block states Archer Avenue is the busiest local bus corridor in NYC, linking the volume metric to the Archer Avenue Busway corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p016_c0003",
+            "source_quote": "Busiest local bus corridor in NYC (up to 180 buses/hr per direction)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-jamaica-peak-buses-to-corridor",
+        "local_observation_id": "metric_jamaica_peak_buses_per_hr",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_jamaica-ave-busway",
+            "object_id": "metric_jamaica-peak-buses-per-hr",
+            "description": "Jamaica Avenue peak bus volume of up to 90 buses/hr per direction",
+            "evidence_refs": [
+              {
+                "source_id": "201104_jamaica_cac2_slides",
+                "block_id": "p021_c0003",
+                "source_quote": "Up to 90 buses/hr per direction"
+              }
+            ]
+          }
+        ],
+        "rationale": "Slide p021 is explicitly titled 'Jamaica Avenue - Existing Conditions' and the metric block states up to 90 buses/hr per direction, linking the volume metric to the Jamaica Avenue Busway corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p021_c0003",
+            "source_quote": "Up to 90 buses/hr per direction"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-archer-daily-benefit-to-corridor",
+        "local_observation_id": "metric_archer_daily_benefit_buses",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_archer-ave-busway",
+            "object_id": "metric_archer-daily-benefit-buses",
+            "description": "Archer Avenue bus lane benefits 1,100 to 1,300 buses per direction daily",
+            "evidence_refs": [
+              {
+                "source_id": "201104_jamaica_cac2_slides",
+                "block_id": "p020_c0003",
+                "source_quote": "Benefits 1,100 to 1,300 buses per direction daily"
+              }
+            ]
+          }
+        ],
+        "rationale": "Slide p020 is titled 'Archer Avenue Bus Lane Benefits' and states the benefit figures, directly linking the benefit metric to the Archer Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p020_c0003",
+            "source_quote": "Benefits 1,100 to 1,300 buses per direction daily"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-jamaica-daily-benefit-to-corridor",
+        "local_observation_id": "metric_jamaica_daily_benefit_buses",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_jamaica-ave-busway",
+            "object_id": "metric_jamaica-daily-benefit-buses",
+            "description": "Jamaica Avenue bus lane benefits 600 to 750 buses per direction daily",
+            "evidence_refs": [
+              {
+                "source_id": "201104_jamaica_cac2_slides",
+                "block_id": "p025_c0003",
+                "source_quote": "Benefits 600 to 750 buses per direction daily"
+              }
+            ]
+          }
+        ],
+        "rationale": "Slide p025 is titled 'Jamaica Avenue Bus Lanes' and states the benefit figures, directly linking the benefit metric to the Jamaica Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p025_c0003",
+            "source_quote": "Benefits 600 to 750 buses per direction daily"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-lane-mileage-to-project",
+        "local_observation_id": "metric_proposed_bus_lane_mileage",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "metric_proposed-bus-lane-mileage",
+            "description": "Overall proposed bus lane mileage summary for the Jamaica study area",
+            "evidence_refs": [
+              {
+                "source_id": "201104_jamaica_cac2_slides",
+                "block_id": "p014_c0003",
+                "source_quote": "Existing Bus Lane 1.6 miles, Proposed Bus Lane 1.4 miles, Proposed Bus Lane Removal 0.1 miles, New Total 2.9 miles"
+              }
+            ]
+          }
+        ],
+        "rationale": "Slide p014 'Proposed Bus Lanes' presents the overall mileage summary for the entire Jamaica Bus Improvement Study area, linking it to the project.",
+        "evidence_refs": [
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p014_c0003",
+            "source_quote": "Existing Bus Lane 1.6 miles, Proposed Bus Lane 1.4 miles, Proposed Bus Lane Removal 0.1 miles, New Total 2.9 miles"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-47-bus-routes-claim-to-project",
+        "local_observation_id": "claim_47_bus_routes_jamaica_hub",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "claim_47-bus-routes-jamaica-hub",
+            "description": "Jamaica serves as hub for 47 bus routes across NYCT, MTA Bus, and LI Bus",
+            "evidence_refs": [
+              {
+                "source_id": "201104_jamaica_cac2_slides",
+                "block_id": "p004_c0004",
+                "source_quote": "47 NYCT, MTA Bus and LI Bus routes – hub for services throughout SE Queens"
+              }
+            ]
+          }
+        ],
+        "rationale": "Slide p004 'Study Context' describes Jamaica as a hub for 47 bus routes serving SE Queens, a key finding of the Jamaica Bus Improvement Study.",
+        "evidence_refs": [
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p004_c0004",
+            "source_quote": "47 NYCT, MTA Bus and LI Bus routes – hub for services throughout SE Queens"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-lane-markings-to-project",
+        "local_observation_id": "claim_field_obs_bus_lane_markings",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "claim_field-obs-bus-lane-markings",
+            "description": "Field observation: existing bus lane markings in poor condition in Jamaica",
+            "evidence_refs": [
+              {
+                "source_id": "201104_jamaica_cac2_slides",
+                "block_id": "p007_c0006",
+                "source_quote": "Existing bus lane markings are difficult to see and in poor condition"
+              }
+            ]
+          }
+        ],
+        "rationale": "Slide p007 'Field Observations' reports findings from the Jamaica Bus Improvement Study fieldwork, linking this condition assessment to the project.",
+        "evidence_refs": [
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p007_c0006",
+            "source_quote": "Existing bus lane markings are difficult to see and in poor condition"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-narrow-streets-to-project",
+        "local_observation_id": "claim_field_obs_narrow_streets",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "claim_field-obs-narrow-streets",
+            "description": "Field observation: many narrow streets with heavy bus and local traffic in Jamaica CBD",
+            "evidence_refs": [
+              {
+                "source_id": "201104_jamaica_cac2_slides",
+                "block_id": "p007_c0004",
+                "source_quote": "Many narrow streets with heavy bus and local traffic"
+              }
+            ]
+          }
+        ],
+        "rationale": "Slide p007 'Field Observations' reports findings from the Jamaica Bus Improvement Study fieldwork, linking this condition assessment to the project.",
+        "evidence_refs": [
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p007_c0004",
+            "source_quote": "Many narrow streets with heavy bus and local traffic"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-misaligned-intersections-to-project",
+        "local_observation_id": "claim_field_obs_misaligned_intersections",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "claim_field-obs-misaligned-intersections",
+            "description": "Field observation: many misaligned intersections and complex street geometry in Jamaica",
+            "evidence_refs": [
+              {
+                "source_id": "201104_jamaica_cac2_slides",
+                "block_id": "p007_c0005",
+                "source_quote": "Many misaligned intersections and complex street geometry"
+              }
+            ]
+          }
+        ],
+        "rationale": "Slide p007 'Field Observations' reports findings from the Jamaica Bus Improvement Study fieldwork, linking this condition assessment to the project.",
+        "evidence_refs": [
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p007_c0005",
+            "source_quote": "Many misaligned intersections and complex street geometry"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-stop-weaving-to-project",
+        "local_observation_id": "claim_field_obs_bus_stop_weaving",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "claim_field-obs-bus-stop-weaving",
+            "description": "Field observation: bus stop patterns cause excess weaving and congestion in Jamaica",
+            "evidence_refs": [
+              {
+                "source_id": "201104_jamaica_cac2_slides",
+                "block_id": "p009_c0004",
+                "source_quote": "Bus stop patterns cause excess weaving, congestion"
+              }
+            ]
+          }
+        ],
+        "rationale": "Slide p009 'Field Observations' reports findings from the Jamaica Bus Improvement Study fieldwork, linking this condition assessment to the project.",
+        "evidence_refs": [
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p009_c0004",
+            "source_quote": "Bus stop patterns cause excess weaving, congestion"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-cac-meeting-1-to-project",
+        "local_observation_id": "event_cac_meeting_1_2009",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "event_cac-meeting-1-2009",
+            "description": "Community Advisory Committee Meeting #1 held September 29, 2009 for the Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "201104_jamaica_cac2_slides",
+                "block_id": "p010_c0014",
+                "source_quote": "Community Advisory Committee Meeting #1 - September 29, 2009 - Jamaica Control Center, Fifth Floor Conference Room"
+              }
+            ]
+          }
+        ],
+        "rationale": "Slide p010 references CAC Meeting #1 (Sept 2009) within the Jamaica Bus Improvement Study presentation, establishing the timeline event for this project.",
+        "evidence_refs": [
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p010_c0014",
+            "source_quote": "Community Advisory Committee Meeting #1 - September 29, 2009 - Jamaica Control Center, Fifth Floor Conference Room"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-cac-meeting-2-to-project",
+        "local_observation_id": "event_cac_meeting_2_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "event_cac-meeting-2-2011",
+            "description": "Community Advisory Committee Meeting #2 held March 25, 2011 presenting preliminary study recommendations",
+            "evidence_refs": [
+              {
+                "source_id": "201104_jamaica_cac2_slides",
+                "block_id": "p001_c0001",
+                "source_quote": "Jamaica Bus Improvement Study Community Advisory Committee Meeting #2 - Friday, March 25, 2011 - Jamaica Control Center, AirTrain Building"
+              }
+            ]
+          }
+        ],
+        "rationale": "Slide p001 titles the document as CAC Meeting #2 for the Jamaica Bus Improvement Study on March 25, 2011, establishing the timeline event for this project.",
+        "evidence_refs": [
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p001_c0001",
+            "source_quote": "Jamaica Bus Improvement Study Community Advisory Committee Meeting #2"
+          },
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p001_c0002",
+            "source_quote": "Friday, March 25, 2011"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-29-26-662Z_2111393-57ef479f_canonicalize_2026-06-10t22-56-13-288z-1976810-67a230b7-ingest-201104-jamaica-cac2-slides-relation-linker"
+}

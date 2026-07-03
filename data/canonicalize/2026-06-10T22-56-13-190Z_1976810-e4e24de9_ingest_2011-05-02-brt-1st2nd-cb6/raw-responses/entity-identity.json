@@ -1,0 +1,77 @@
+{
+  "run_id": "2026-06-10T22-56-13-190Z_1976810-e4e24de9_ingest_2011-05-02-brt-1st2nd-cb6",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T01:10:24.958Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "entity-mta-nyct-20110502-new",
+        "local_observation_id": "entity_mta_nyct_2011_05_02",
+        "decision": "new",
+        "rationale": "Observation matches base_record_id entity_mta-nyct: same entity_name 'MTA New York City Transit' and entity_type 'agency'. The base identity is already correct.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_05_02_brt_1st2nd_cb6",
+            "block_id": "p001_c0002",
+            "source_quote": "MTA New York City Transit"
+          },
+          {
+            "source_id": "2011_05_02_brt_1st2nd_cb6",
+            "block_id": "p003_c0001",
+            "source_quote": "MTA New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-nyc-dot-20110502-new",
+        "local_observation_id": "entity_nyc_dot_2011_05_02",
+        "decision": "new",
+        "rationale": "Observation matches base_record_id entity_nyc-dot: same entity_name 'New York City Department of Transportation' and entity_type 'agency'. The base identity is already correct.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_05_02_brt_1st2nd_cb6",
+            "block_id": "p001_c0003",
+            "source_quote": "New York City Department of Transportation (NYC DOT)"
+          },
+          {
+            "source_id": "2011_05_02_brt_1st2nd_cb6",
+            "block_id": "p003_c0003",
+            "source_quote": "New York City Department of Transportation (NYC DOT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-nypd-20110502-new",
+        "local_observation_id": "entity_nypd_2011_05_02",
+        "decision": "new",
+        "rationale": "Observation matches base_record_id entity_nypd: same entity 'New York Police Department (NYPD)'. Registry record entity_nypd has entity_name 'New York City Police Department'. The base identity is already correct.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_05_02_brt_1st2nd_cb6",
+            "block_id": "p007_c0005",
+            "source_quote": "Summons issued by NYPD"
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-cb6-20110502-new",
+        "local_observation_id": "entity_community_board_6_2011_05_02",
+        "decision": "new",
+        "rationale": "Observation matches base_record_id entity_manhattan-community-board-6: this is Manhattan Community Board 6 Transportation Committee (source is 1st/2nd Ave SBS CB6 presentation). Registry record has entity_name 'Manhattan Community Board 6', entity_type 'community_board'. The base identity is already correct; not confused with Bronx Community Board 6 (separate registry records).",
+        "evidence_refs": [
+          {
+            "source_id": "2011_05_02_brt_1st2nd_cb6",
+            "block_id": "p001_c0001",
+            "source_quote": "Community Board 6 Transportation Committee"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-09-14-408Z_2111393-7d656bae_canonicalize_2026-06-10t22-56-13-190z-1976810-e4e24de9-ingest-2011-05-02-brt-1st2nd-cb6-entity-identity"
+}

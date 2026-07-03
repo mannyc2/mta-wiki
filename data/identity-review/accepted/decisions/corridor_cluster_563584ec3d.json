@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "corridor_cluster_563584ec3d",
+  "kind": "corridor",
+  "packet_path": "data/identity-review/packets/corridor_cluster_563584ec3d.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_563584ec3d.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 3,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "corridor_lexington-ave-2015-01-06",
+        "corridor_lexington-ave-96th-to-60th"
+      ],
+      "reason": "Different limits: 'at 125th Street' vs '96th St to 60th St'. Per corridor merge canon, identity = street(s) + borough + limits; differing limits forces do_not_merge (Contradiction test, strong field: limits)."
+    },
+    {
+      "record_ids": [
+        "corridor_lexington-ave-2015-01-06",
+        "corridor_lexington-avenue"
+      ],
+      "reason": "Different limits: 'at 125th Street' vs '60th Street to 52nd Street'. Non-overlapping segments of same street in same borough do not merge. Contradiction test on limits."
+    },
+    {
+      "record_ids": [
+        "corridor_lexington-ave-96th-to-60th",
+        "corridor_lexington-avenue"
+      ],
+      "reason": "Different limits: '96th St to 60th St' vs '60th Street to 52nd Street'. Even though they share the 60th St boundary, they are distinct segments covering different ranges. Per canon, differing borough or limits never merge. Here both Manhattan but limits differ."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [
+    "Ensure corridor identity always includes limits (and borough); shared street name alone should never trigger merge."
+  ],
+  "rationale": "All three records are distinct corridors on Lexington Avenue in Manhattan, each with different, non-overlapping limits. Per the corridor identity rule (street + borough + limits), differing limits force do_not_merge. No lifecycle or merged-common-base scenario applies because each has its own clearly defined scope. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

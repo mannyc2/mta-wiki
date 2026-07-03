@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "route_cluster_3bb73bbedf",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_3bb73bbedf.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_3bb73bbedf.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "quarantined",
+  "quarantine": {
+    "blocker": "suggestion marks ambiguous: route_m15-local-limited | do_not_merge route_m15-limited-2010-06-09 <> route_m15-local-limited: cited distinction not supported by the records: both records have service_variant limited_stop | do_not_merge route_m15-local-2010-09-14 <> route_m15-local-limited: reason does not cite a strong identity field",
+    "note": "Partial: structurally clean actions were auto-accepted in the decisions file with the same cluster_id."
+  },
+  "original_merge_groups": [],
+  "original_do_not_merge": [
+    {
+      "record_ids": [
+        "route_m15-limited-2010-06-09",
+        "route_m15-local-limited"
+      ],
+      "reason": "Per-route rule: route_m15-local-limited bundles both local and limited service (description 'Local/Limited route reference'). Even though its payload has limited_stop variant, it cannot be folded into the purely limited record. Do not merge a multi-variant bundle into a single variant."
+    },
+    {
+      "record_ids": [
+        "route_m15-local-2010-09-14",
+        "route_m15-local-limited"
+      ],
+      "reason": "Per-route rule: route_m15-local-limited bundles both local and limited service; cannot be merged into the purely local record."
+    }
+  ]
+}

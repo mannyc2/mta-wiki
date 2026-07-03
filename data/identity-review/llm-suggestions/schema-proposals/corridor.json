@@ -1,0 +1,1874 @@
+{
+  "schema_proposal_run_id": "2026-06-08T23-52-42-494Z_schema-proposal-run",
+  "proposed_at": "2026-06-08T23:57:05.455Z",
+  "observation_kind": "corridor",
+  "profile_name": "deepseek-pro",
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "audit_packet": {
+    "observation_kind": "corridor",
+    "submission_count": 74,
+    "accepted_count": 72,
+    "rejected_count": 2,
+    "declared_anchor_fields": [
+      "corridor_name",
+      "description",
+      "from",
+      "limits",
+      "name",
+      "street",
+      "streets",
+      "to"
+    ],
+    "enum_candidates": [
+      {
+        "field": "borough",
+        "occurrences": 45,
+        "accepted_occurrences": 43,
+        "rejected_occurrences": 2,
+        "canonical_occurrences": 33,
+        "coverage": 0.61,
+        "distinct_values": 6,
+        "accepted_distinct_values": 6,
+        "canonical_distinct_values": 5,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Bronx",
+          "Brooklyn",
+          "Manhattan",
+          "Queens",
+          "Staten Island",
+          "the Bronx"
+        ],
+        "accepted_values": [
+          "Bronx",
+          "Brooklyn",
+          "Manhattan",
+          "Queens",
+          "Staten Island",
+          "the Bronx"
+        ],
+        "canonical_values_observed": [
+          "Bronx",
+          "Brooklyn",
+          "Manhattan",
+          "Queens",
+          "Staten Island"
+        ],
+        "value_counts": [
+          {
+            "value": "Manhattan",
+            "count": 14
+          },
+          {
+            "value": "Brooklyn",
+            "count": 11
+          },
+          {
+            "value": "Queens",
+            "count": 11
+          },
+          {
+            "value": "Bronx",
+            "count": 6
+          },
+          {
+            "value": "Staten Island",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "Manhattan",
+            "count": 13
+          },
+          {
+            "value": "Brooklyn",
+            "count": 11
+          },
+          {
+            "value": "Queens",
+            "count": 10
+          },
+          {
+            "value": "Bronx",
+            "count": 6
+          },
+          {
+            "value": "Staten Island",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "Brooklyn",
+            "count": 11
+          },
+          {
+            "value": "Manhattan",
+            "count": 9
+          },
+          {
+            "value": "Queens",
+            "count": 6
+          },
+          {
+            "value": "Bronx",
+            "count": 5
+          },
+          {
+            "value": "Staten Island",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "status",
+        "occurrences": 12,
+        "accepted_occurrences": 12,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 11,
+        "coverage": 0.16,
+        "distinct_values": 4,
+        "accepted_distinct_values": 4,
+        "canonical_distinct_values": 4,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Completed 2020",
+          "Future Plan",
+          "Planned",
+          "Present Implementation"
+        ],
+        "accepted_values": [
+          "Completed 2020",
+          "Future Plan",
+          "Planned",
+          "Present Implementation"
+        ],
+        "canonical_values_observed": [
+          "Completed 2020",
+          "Future Plan",
+          "Planned",
+          "Present Implementation"
+        ],
+        "value_counts": [
+          {
+            "value": "Completed 2020",
+            "count": 4
+          },
+          {
+            "value": "Future Plan",
+            "count": 4
+          },
+          {
+            "value": "Planned",
+            "count": 2
+          },
+          {
+            "value": "Present Implementation",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "Completed 2020",
+            "count": 4
+          },
+          {
+            "value": "Future Plan",
+            "count": 4
+          },
+          {
+            "value": "Planned",
+            "count": 2
+          },
+          {
+            "value": "Present Implementation",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "Completed 2020",
+            "count": 4
+          },
+          {
+            "value": "Future Plan",
+            "count": 4
+          },
+          {
+            "value": "Present Implementation",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "days",
+        "occurrences": 9,
+        "accepted_occurrences": 9,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 9,
+        "coverage": 0.12,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Monday through Friday",
+          "seven days a week"
+        ],
+        "accepted_values": [
+          "Monday through Friday",
+          "seven days a week"
+        ],
+        "canonical_values_observed": [
+          "Monday through Friday",
+          "seven days a week"
+        ],
+        "value_counts": [
+          {
+            "value": "seven days a week",
+            "count": 8
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "seven days a week",
+            "count": 8
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "seven days a week",
+            "count": 8
+          }
+        ]
+      },
+      {
+        "field": "hours",
+        "occurrences": 9,
+        "accepted_occurrences": 9,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 9,
+        "coverage": 0.12,
+        "distinct_values": 5,
+        "accepted_distinct_values": 5,
+        "canonical_distinct_values": 5,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "24 hours a day",
+          "6am to 10pm",
+          "6am to 7pm",
+          "6am to 8pm",
+          "7am to 7pm"
+        ],
+        "accepted_values": [
+          "24 hours a day",
+          "6am to 10pm",
+          "6am to 7pm",
+          "6am to 8pm",
+          "7am to 7pm"
+        ],
+        "canonical_values_observed": [
+          "24 hours a day",
+          "6am to 10pm",
+          "6am to 7pm",
+          "6am to 8pm",
+          "7am to 7pm"
+        ],
+        "value_counts": [
+          {
+            "value": "6am to 8pm",
+            "count": 3
+          },
+          {
+            "value": "24 hours a day",
+            "count": 2
+          },
+          {
+            "value": "6am to 10pm",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "6am to 8pm",
+            "count": 3
+          },
+          {
+            "value": "24 hours a day",
+            "count": 2
+          },
+          {
+            "value": "6am to 10pm",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "6am to 8pm",
+            "count": 3
+          },
+          {
+            "value": "24 hours a day",
+            "count": 2
+          },
+          {
+            "value": "6am to 10pm",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "through_access_vehicles",
+        "occurrences": 9,
+        "accepted_occurrences": 9,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 9,
+        "coverage": 0.12,
+        "distinct_values": 6,
+        "accepted_distinct_values": 6,
+        "canonical_distinct_values": 6,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Access-A-Ride vans",
+          "bicycles",
+          "buses",
+          "buses only",
+          "emergency vehicles",
+          "trucks"
+        ],
+        "accepted_values": [
+          "Access-A-Ride vans",
+          "bicycles",
+          "buses",
+          "buses only",
+          "emergency vehicles",
+          "trucks"
+        ],
+        "canonical_values_observed": [
+          "Access-A-Ride vans",
+          "bicycles",
+          "buses",
+          "buses only",
+          "emergency vehicles",
+          "trucks"
+        ],
+        "value_counts": [
+          {
+            "value": "buses",
+            "count": 8
+          },
+          {
+            "value": "emergency vehicles",
+            "count": 8
+          },
+          {
+            "value": "trucks",
+            "count": 7
+          },
+          {
+            "value": "Access-A-Ride vans",
+            "count": 2
+          },
+          {
+            "value": "bicycles",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "buses",
+            "count": 8
+          },
+          {
+            "value": "emergency vehicles",
+            "count": 8
+          },
+          {
+            "value": "trucks",
+            "count": 7
+          },
+          {
+            "value": "Access-A-Ride vans",
+            "count": 2
+          },
+          {
+            "value": "bicycles",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "buses",
+            "count": 8
+          },
+          {
+            "value": "emergency vehicles",
+            "count": 8
+          },
+          {
+            "value": "trucks",
+            "count": 7
+          },
+          {
+            "value": "Access-A-Ride vans",
+            "count": 2
+          },
+          {
+            "value": "bicycles",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "boroughs",
+        "occurrences": 3,
+        "accepted_occurrences": 3,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 3,
+        "coverage": 0.04,
+        "distinct_values": 4,
+        "accepted_distinct_values": 4,
+        "canonical_distinct_values": 4,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Bronx",
+          "Brooklyn",
+          "Manhattan",
+          "Queens"
+        ],
+        "accepted_values": [
+          "Bronx",
+          "Brooklyn",
+          "Manhattan",
+          "Queens"
+        ],
+        "canonical_values_observed": [
+          "Bronx",
+          "Brooklyn",
+          "Manhattan",
+          "Queens"
+        ],
+        "value_counts": [
+          {
+            "value": "Manhattan",
+            "count": 4
+          },
+          {
+            "value": "Queens",
+            "count": 4
+          },
+          {
+            "value": "Brooklyn",
+            "count": 3
+          },
+          {
+            "value": "Bronx",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "Manhattan",
+            "count": 4
+          },
+          {
+            "value": "Queens",
+            "count": 4
+          },
+          {
+            "value": "Brooklyn",
+            "count": 3
+          },
+          {
+            "value": "Bronx",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "Manhattan",
+            "count": 4
+          },
+          {
+            "value": "Queens",
+            "count": 4
+          },
+          {
+            "value": "Brooklyn",
+            "count": 3
+          },
+          {
+            "value": "Bronx",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "daily_ridership_hours",
+        "occurrences": 3,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 2,
+        "coverage": 0.04,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "All Days, 24/7",
+          "All Days, 6AM-8PM"
+        ],
+        "accepted_values": [
+          "All Days, 24/7",
+          "All Days, 6AM-8PM"
+        ],
+        "canonical_values_observed": [
+          "All Days, 24/7",
+          "All Days, 6AM-8PM"
+        ],
+        "value_counts": [
+          {
+            "value": "All Days, 6AM-8PM",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "direction",
+        "occurrences": 3,
+        "accepted_occurrences": 3,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 3,
+        "coverage": 0.04,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "both directions",
+          "eastbound only"
+        ],
+        "accepted_values": [
+          "both directions",
+          "eastbound only"
+        ],
+        "canonical_values_observed": [
+          "both directions",
+          "eastbound only"
+        ],
+        "value_counts": [
+          {
+            "value": "both directions",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "both directions",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "both directions",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "ridership_text",
+        "occurrences": 3,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 2,
+        "coverage": 0.04,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "139,000 daily riders",
+          "189,000 daily riders"
+        ],
+        "accepted_values": [
+          "139,000 daily riders",
+          "189,000 daily riders"
+        ],
+        "canonical_values_observed": [
+          "139,000 daily riders",
+          "189,000 daily riders"
+        ],
+        "value_counts": [
+          {
+            "value": "139,000 daily riders",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "busway_launch_date",
+        "occurrences": 2,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 1,
+        "coverage": 0.03,
+        "distinct_values": 1,
+        "accepted_distinct_values": 1,
+        "canonical_distinct_values": 1,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "October 24, 2021"
+        ],
+        "accepted_values": [
+          "October 24, 2021"
+        ],
+        "canonical_values_observed": [
+          "October 24, 2021"
+        ],
+        "value_counts": [
+          {
+            "value": "October 24, 2021",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "pickup_dropoff",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.03,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "allowed throughout except Jamaica Ave westbound between 147th Pl and Sutphin Blvd",
+          "permitted in westbound direction"
+        ],
+        "accepted_values": [
+          "allowed throughout except Jamaica Ave westbound between 147th Pl and Sutphin Blvd",
+          "permitted in westbound direction"
+        ],
+        "canonical_values_observed": [
+          "allowed throughout except Jamaica Ave westbound between 147th Pl and Sutphin Blvd",
+          "permitted in westbound direction"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      }
+    ],
+    "additional_keys": [
+      {
+        "field": "_merged_field_values",
+        "occurrences": 0,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 7,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0.15,
+        "value_kind": "empty",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "object",
+        "classification": "sparse",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "borough_normalized",
+        "occurrences": 0,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 33,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0.69,
+        "value_kind": "empty",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": [
+          "brooklyn",
+          "manhattan",
+          "queens",
+          "bronx",
+          "staten_island"
+        ]
+      },
+      {
+        "field": "boroughs_normalized",
+        "occurrences": 0,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 3,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0.06,
+        "value_kind": "empty",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": [
+          "manhattan",
+          "queens",
+          "brooklyn",
+          "bronx"
+        ]
+      },
+      {
+        "field": "borrow",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.02,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Manhattan"
+        ],
+        "accepted_sample_values": [
+          "Manhattan"
+        ],
+        "canonical_sample_values": [
+          "Manhattan"
+        ]
+      },
+      {
+        "field": "bus_routes",
+        "occurrences": 3,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 2,
+        "coverage": 0.04,
+        "accepted_coverage": 0.03,
+        "canonical_coverage": 0.04,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "busway_launch_date_normalized",
+        "occurrences": 2,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 1,
+        "coverage": 0.03,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.02,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "combined_daily_ridership",
+        "occurrences": 9,
+        "accepted_occurrences": 9,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 9,
+        "coverage": 0.12,
+        "accepted_coverage": 0.13,
+        "canonical_coverage": 0.19,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "corridor_length_mi",
+        "occurrences": 10,
+        "accepted_occurrences": 10,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 10,
+        "coverage": 0.14,
+        "accepted_coverage": 0.14,
+        "canonical_coverage": 0.21,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "daily_ridership",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.02,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "eastbound_limits",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.02,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Third Avenue to Southern Boulevard"
+        ],
+        "accepted_sample_values": [
+          "Third Avenue to Southern Boulevard"
+        ],
+        "canonical_sample_values": [
+          "Third Avenue to Southern Boulevard"
+        ]
+      },
+      {
+        "field": "features",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.02,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Enhanced protected bicycle lanes on Jay Street and Smith Street"
+        ],
+        "accepted_sample_values": [
+          "Enhanced protected bicycle lanes on Jay Street and Smith Street"
+        ],
+        "canonical_sample_values": [
+          "Enhanced protected bicycle lanes on Jay Street and Smith Street"
+        ]
+      },
+      {
+        "field": "left_turns",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.02,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "restricted except eastbound left at 153rd St"
+        ],
+        "accepted_sample_values": [
+          "restricted except eastbound left at 153rd St"
+        ],
+        "canonical_sample_values": [
+          "restricted except eastbound left at 153rd St"
+        ]
+      },
+      {
+        "field": "length_miles",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.02,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "limits_northbound",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.02,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Main Street between Sanford Avenue and Northern Boulevard"
+        ],
+        "accepted_sample_values": [
+          "Main Street between Sanford Avenue and Northern Boulevard"
+        ],
+        "canonical_sample_values": [
+          "Main Street between Sanford Avenue and Northern Boulevard"
+        ]
+      },
+      {
+        "field": "limits_southbound",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.02,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Main Street between Sanford Avenue and 37th Avenue"
+        ],
+        "accepted_sample_values": [
+          "Main Street between Sanford Avenue and 37th Avenue"
+        ],
+        "canonical_sample_values": [
+          "Main Street between Sanford Avenue and 37th Avenue"
+        ]
+      },
+      {
+        "field": "local_access",
+        "occurrences": 9,
+        "accepted_occurrences": 9,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 8,
+        "coverage": 0.12,
+        "accepted_coverage": 0.13,
+        "canonical_coverage": 0.17,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "may turn onto the busway from a side street but must turn at next available right",
+          "all other vehicles may make local trips to access the curb, must make next available right turn",
+          "may enter but must turn at next available right (except at 41st Avenue where a left turn is permitted)",
+          "no local access on Archer Ave",
+          "permitted from the east and west only",
+          "permitted from the north and south only (except at Broadway) and must take the next required turn off the corridor; local traffic may not enter 181st Street via Broadway",
+          "permitted from the north and south only and must take the next required turn off the corridor",
+          "permitted from the north and south only and must take the next right turn off the corridor"
+        ],
+        "accepted_sample_values": [
+          "may turn onto the busway from a side street but must turn at next available right",
+          "all other vehicles may make local trips to access the curb, must make next available right turn",
+          "may enter but must turn at next available right (except at 41st Avenue where a left turn is permitted)",
+          "no local access on Archer Ave",
+          "permitted from the east and west only",
+          "permitted from the north and south only (except at Broadway) and must take the next required turn off the corridor; local traffic may not enter 181st Street via Broadway",
+          "permitted from the north and south only and must take the next required turn off the corridor",
+          "permitted from the north and south only and must take the next right turn off the corridor"
+        ],
+        "canonical_sample_values": [
+          "may turn onto the busway from a side street but must turn at next available right",
+          "may enter but must turn at next available right (except at 41st Avenue where a left turn is permitted)",
+          "no local access on Archer Ave",
+          "permitted from the east and west only",
+          "permitted from the north and south only (except at Broadway) and must take the next required turn off the corridor; local traffic may not enter 181st Street via Broadway",
+          "permitted from the north and south only and must take the next required turn off the corridor",
+          "permitted from the north and south only and must take the next right turn off the corridor"
+        ]
+      },
+      {
+        "field": "neighborhoods",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.02,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Inwood",
+          "Washington Heights"
+        ],
+        "accepted_sample_values": [
+          "Inwood",
+          "Washington Heights"
+        ],
+        "canonical_sample_values": [
+          "Inwood",
+          "Washington Heights"
+        ]
+      },
+      {
+        "field": "parking_loading",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.02,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "no parking nor loading access eastbound between 150th St and 160th St"
+        ],
+        "accepted_sample_values": [
+          "no parking nor loading access eastbound between 150th St and 160th St"
+        ],
+        "canonical_sample_values": [
+          "no parking nor loading access eastbound between 150th St and 160th St"
+        ]
+      },
+      {
+        "field": "pre_busway_speed_range",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.02,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "5.3 to 6.1 MPH (PM)"
+        ],
+        "accepted_sample_values": [
+          "5.3 to 6.1 MPH (PM)"
+        ],
+        "canonical_sample_values": [
+          "5.3 to 6.1 MPH (PM)"
+        ]
+      },
+      {
+        "field": "regulation_text",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.03,
+        "accepted_coverage": 0.03,
+        "canonical_coverage": 0.04,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "24 hours a day/7 days a week"
+        ],
+        "accepted_sample_values": [
+          "24 hours a day/7 days a week"
+        ],
+        "canonical_sample_values": [
+          "24 hours a day/7 days a week"
+        ]
+      },
+      {
+        "field": "restrictions",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.03,
+        "accepted_coverage": 0.03,
+        "canonical_coverage": 0.04,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "No parking nor loading access along busway",
+          "truck loading zones are provided on adjacent streets; all vehicles may use small sections of Fulton Street to make north-south connections"
+        ],
+        "accepted_sample_values": [
+          "No parking nor loading access along busway",
+          "truck loading zones are provided on adjacent streets; all vehicles may use small sections of Fulton Street to make north-south connections"
+        ],
+        "canonical_sample_values": [
+          "No parking nor loading access along busway",
+          "truck loading zones are provided on adjacent streets; all vehicles may use small sections of Fulton Street to make north-south connections"
+        ]
+      },
+      {
+        "field": "ridership",
+        "occurrences": 3,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 2,
+        "coverage": 0.04,
+        "accepted_coverage": 0.03,
+        "canonical_coverage": 0.04,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "routes",
+        "occurrences": 10,
+        "accepted_occurrences": 10,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 10,
+        "coverage": 0.14,
+        "accepted_coverage": 0.14,
+        "canonical_coverage": 0.21,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Bx36",
+          "Bx3",
+          "Bx35",
+          "Bx11",
+          "Bx12",
+          "Bx12 SBS",
+          "Bx13",
+          "Bx17"
+        ],
+        "accepted_sample_values": [
+          "Bx36",
+          "Bx3",
+          "Bx35",
+          "Bx11",
+          "Bx12",
+          "Bx12 SBS",
+          "Bx13",
+          "Bx17"
+        ],
+        "canonical_sample_values": [
+          "Bx36",
+          "Bx3",
+          "Bx35",
+          "Bx11",
+          "Bx12",
+          "Bx12 SBS",
+          "Bx13",
+          "Bx17"
+        ]
+      },
+      {
+        "field": "routes_note",
+        "occurrences": 3,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 2,
+        "coverage": 0.04,
+        "accepted_coverage": 0.03,
+        "canonical_coverage": 0.04,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Routes running between Sutphin Blvd & 168 St only"
+        ],
+        "accepted_sample_values": [
+          "Routes running between Sutphin Blvd & 168 St only"
+        ],
+        "canonical_sample_values": [
+          "Routes running between Sutphin Blvd & 168 St only"
+        ]
+      },
+      {
+        "field": "routes_served",
+        "occurrences": 10,
+        "accepted_occurrences": 10,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 10,
+        "coverage": 0.14,
+        "accepted_coverage": 0.14,
+        "canonical_coverage": 0.21,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Bx35",
+          "Bx36",
+          "Bx11",
+          "Bx12",
+          "Bx12 SBS",
+          "Bx13",
+          "Bx17",
+          "Bx18"
+        ],
+        "accepted_sample_values": [
+          "Bx35",
+          "Bx36",
+          "Bx11",
+          "Bx12",
+          "Bx12 SBS",
+          "Bx13",
+          "Bx17",
+          "Bx18"
+        ],
+        "canonical_sample_values": [
+          "Bx35",
+          "Bx36",
+          "Bx11",
+          "Bx12",
+          "Bx12 SBS",
+          "Bx13",
+          "Bx17",
+          "Bx18"
+        ]
+      },
+      {
+        "field": "through_trips",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.03,
+        "accepted_coverage": 0.03,
+        "canonical_coverage": 0.04,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "buses and emergency vehicles only",
+          "buses, trucks, emergency vehicles only"
+        ],
+        "accepted_sample_values": [
+          "buses and emergency vehicles only",
+          "buses, trucks, emergency vehicles only"
+        ],
+        "canonical_sample_values": [
+          "buses and emergency vehicles only",
+          "buses, trucks, emergency vehicles only"
+        ]
+      },
+      {
+        "field": "trucks_allowed",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.02,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "not allowed eastbound"
+        ],
+        "accepted_sample_values": [
+          "not allowed eastbound"
+        ],
+        "canonical_sample_values": [
+          "not allowed eastbound"
+        ]
+      },
+      {
+        "field": "westbound_limits",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.02,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Southern Boulevard to Belmont Avenue"
+        ],
+        "accepted_sample_values": [
+          "Southern Boulevard to Belmont Avenue"
+        ],
+        "canonical_sample_values": [
+          "Southern Boulevard to Belmont Avenue"
+        ]
+      }
+    ]
+  },
+  "closure_policy": "deferred",
+  "closure_signals": [
+    {
+      "field": "borough",
+      "closure_readiness": "open",
+      "occurrences": 45,
+      "accepted_occurrences": 43,
+      "canonical_occurrences": 33,
+      "coverage": 0.61
+    },
+    {
+      "field": "status",
+      "closure_readiness": "open",
+      "occurrences": 12,
+      "accepted_occurrences": 12,
+      "canonical_occurrences": 11,
+      "coverage": 0.16
+    },
+    {
+      "field": "days",
+      "closure_readiness": "open",
+      "occurrences": 9,
+      "accepted_occurrences": 9,
+      "canonical_occurrences": 9,
+      "coverage": 0.12
+    },
+    {
+      "field": "hours",
+      "closure_readiness": "open",
+      "occurrences": 9,
+      "accepted_occurrences": 9,
+      "canonical_occurrences": 9,
+      "coverage": 0.12
+    },
+    {
+      "field": "through_access_vehicles",
+      "closure_readiness": "open",
+      "occurrences": 9,
+      "accepted_occurrences": 9,
+      "canonical_occurrences": 9,
+      "coverage": 0.12
+    },
+    {
+      "field": "boroughs",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "accepted_occurrences": 3,
+      "canonical_occurrences": 3,
+      "coverage": 0.04
+    },
+    {
+      "field": "daily_ridership_hours",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0.04
+    },
+    {
+      "field": "direction",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "accepted_occurrences": 3,
+      "canonical_occurrences": 3,
+      "coverage": 0.04
+    },
+    {
+      "field": "ridership_text",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0.04
+    },
+    {
+      "field": "busway_launch_date",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 1,
+      "canonical_occurrences": 1,
+      "coverage": 0.03
+    },
+    {
+      "field": "pickup_dropoff",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0.03
+    }
+  ],
+  "valid": true,
+  "schema_issues": [],
+  "warnings": [],
+  "proposal": {
+    "observation_kind": "corridor",
+    "field_proposals": [
+      {
+        "field": "borough",
+        "decision": "enum",
+        "canonical_values": [
+          "bronx",
+          "brooklyn",
+          "manhattan",
+          "queens",
+          "staten_island"
+        ],
+        "value_mapping": [
+          {
+            "from": "Bronx",
+            "to": "bronx"
+          },
+          {
+            "from": "Brooklyn",
+            "to": "brooklyn"
+          },
+          {
+            "from": "Manhattan",
+            "to": "manhattan"
+          },
+          {
+            "from": "Queens",
+            "to": "queens"
+          },
+          {
+            "from": "Staten Island",
+            "to": "staten_island"
+          },
+          {
+            "from": "the Bronx",
+            "to": "bronx"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "borough_other"
+        },
+        "rationale": "Well-represented NYC borough values with one synonym; normalized to snake_case."
+      },
+      {
+        "field": "status",
+        "decision": "enum",
+        "canonical_values": [
+          "completed_2020",
+          "future_plan",
+          "planned",
+          "present_implementation"
+        ],
+        "value_mapping": [
+          {
+            "from": "Completed 2020",
+            "to": "completed_2020"
+          },
+          {
+            "from": "Future Plan",
+            "to": "future_plan"
+          },
+          {
+            "from": "Planned",
+            "to": "planned"
+          },
+          {
+            "from": "Present Implementation",
+            "to": "present_implementation"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "status_other"
+        },
+        "rationale": "Four distinct implementation status phrases; snake_case normalization."
+      },
+      {
+        "field": "days",
+        "decision": "enum",
+        "canonical_values": [
+          "monday_through_friday",
+          "seven_days_a_week"
+        ],
+        "value_mapping": [
+          {
+            "from": "Monday through Friday",
+            "to": "monday_through_friday"
+          },
+          {
+            "from": "seven days a week",
+            "to": "seven_days_a_week"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "days_other"
+        },
+        "rationale": "Two day-range values observed; normalized to snake_case."
+      },
+      {
+        "field": "hours",
+        "decision": "enum",
+        "canonical_values": [
+          "24_hours_a_day",
+          "6am_to_10pm",
+          "6am_to_7pm",
+          "6am_to_8pm",
+          "7am_to_7pm"
+        ],
+        "value_mapping": [
+          {
+            "from": "24 hours a day",
+            "to": "24_hours_a_day"
+          },
+          {
+            "from": "6am to 10pm",
+            "to": "6am_to_10pm"
+          },
+          {
+            "from": "6am to 7pm",
+            "to": "6am_to_7pm"
+          },
+          {
+            "from": "6am to 8pm",
+            "to": "6am_to_8pm"
+          },
+          {
+            "from": "7am to 7pm",
+            "to": "7am_to_7pm"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "hours_other"
+        },
+        "rationale": "Five time-range variants present; normalized to snake_case."
+      },
+      {
+        "field": "through_access_vehicles",
+        "decision": "enum",
+        "canonical_values": [
+          "access_a_ride_vans",
+          "bicycles",
+          "buses",
+          "buses_only",
+          "emergency_vehicles",
+          "trucks"
+        ],
+        "value_mapping": [
+          {
+            "from": "Access-A-Ride vans",
+            "to": "access_a_ride_vans"
+          },
+          {
+            "from": "bicycles",
+            "to": "bicycles"
+          },
+          {
+            "from": "buses",
+            "to": "buses"
+          },
+          {
+            "from": "buses only",
+            "to": "buses_only"
+          },
+          {
+            "from": "emergency vehicles",
+            "to": "emergency_vehicles"
+          },
+          {
+            "from": "trucks",
+            "to": "trucks"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "through_access_vehicles_other"
+        },
+        "rationale": "Multi-valued vehicle-type list; snake_case normalization."
+      },
+      {
+        "field": "boroughs",
+        "decision": "enum",
+        "canonical_values": [
+          "bronx",
+          "brooklyn",
+          "manhattan",
+          "queens"
+        ],
+        "value_mapping": [
+          {
+            "from": "Bronx",
+            "to": "bronx"
+          },
+          {
+            "from": "Brooklyn",
+            "to": "brooklyn"
+          },
+          {
+            "from": "Manhattan",
+            "to": "manhattan"
+          },
+          {
+            "from": "Queens",
+            "to": "queens"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "boroughs_other"
+        },
+        "rationale": "Multi-valued borough list; same normalization as borough. Only four observed."
+      },
+      {
+        "field": "daily_ridership_hours",
+        "decision": "needs_more_data",
+        "rationale": "Only three occurrences, two accepted; one rejected. Insufficient to define a reliable enum."
+      },
+      {
+        "field": "direction",
+        "decision": "enum",
+        "canonical_values": [
+          "both_directions",
+          "eastbound_only"
+        ],
+        "value_mapping": [
+          {
+            "from": "both directions",
+            "to": "both_directions"
+          },
+          {
+            "from": "eastbound only",
+            "to": "eastbound_only"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "direction_other"
+        },
+        "rationale": "Two directional values; clear enum."
+      },
+      {
+        "field": "ridership_text",
+        "decision": "free_text",
+        "rationale": "Contains variable numeric text with no consistent categorical value."
+      },
+      {
+        "field": "busway_launch_date",
+        "decision": "needs_more_data",
+        "rationale": "Only two occurrences and one accepted; too thin to proposition as enum or structured field."
+      },
+      {
+        "field": "pickup_dropoff",
+        "decision": "free_text",
+        "rationale": "Long descriptive strings, not enumerable."
+      }
+    ],
+    "key_dispositions": [
+      {
+        "key": "_merged_field_values",
+        "disposition": "drop",
+        "rationale": "Internal merged field not relevant for payload."
+      },
+      {
+        "key": "borough_normalized",
+        "disposition": "alias",
+        "target": "borough",
+        "rationale": "Already covered by normalized borough enum."
+      },
+      {
+        "key": "boroughs_normalized",
+        "disposition": "alias",
+        "target": "boroughs",
+        "rationale": "Already covered by normalized boroughs enum."
+      },
+      {
+        "key": "borrow",
+        "disposition": "drop",
+        "rationale": "Single occurrence, likely typo; not meaningful."
+      },
+      {
+        "key": "bus_routes",
+        "disposition": "promote_field",
+        "rationale": "Numeric count of bus routes; useful attribute."
+      },
+      {
+        "key": "busway_launch_date_normalized",
+        "disposition": "needs_more_data",
+        "rationale": "Structured date object but very sparse."
+      },
+      {
+        "key": "combined_daily_ridership",
+        "disposition": "promote_field",
+        "rationale": "Numeric ridership value with adequate occurrence."
+      },
+      {
+        "key": "corridor_length_mi",
+        "disposition": "promote_field",
+        "rationale": "Numeric corridor length, well-represented."
+      },
+      {
+        "key": "daily_ridership",
+        "disposition": "needs_more_data",
+        "rationale": "Only one occurrence; too sparse to promote."
+      },
+      {
+        "key": "eastbound_limits",
+        "disposition": "drop",
+        "rationale": "Extremely sparse directional limit string."
+      },
+      {
+        "key": "features",
+        "disposition": "drop",
+        "rationale": "Single occurrence, not generalizable."
+      },
+      {
+        "key": "left_turns",
+        "disposition": "drop",
+        "rationale": "Single occurrence."
+      },
+      {
+        "key": "length_miles",
+        "disposition": "drop",
+        "rationale": "Single occurrence; likely duplicate of corridor_length_mi."
+      },
+      {
+        "key": "limits_northbound",
+        "disposition": "drop",
+        "rationale": "Sparse directional limit."
+      },
+      {
+        "key": "limits_southbound",
+        "disposition": "drop",
+        "rationale": "Sparse directional limit."
+      },
+      {
+        "key": "local_access",
+        "disposition": "promote_field",
+        "rationale": "Free-text description of local access rules, present in many submissions."
+      },
+      {
+        "key": "neighborhoods",
+        "disposition": "drop",
+        "rationale": "Single occurrence; not reliable."
+      },
+      {
+        "key": "parking_loading",
+        "disposition": "drop",
+        "rationale": "Single occurrence."
+      },
+      {
+        "key": "pre_busway_speed_range",
+        "disposition": "drop",
+        "rationale": "Single occurrence."
+      },
+      {
+        "key": "regulation_text",
+        "disposition": "promote_field",
+        "rationale": "Free-text regulatory summary; useful for corridor description."
+      },
+      {
+        "key": "restrictions",
+        "disposition": "promote_field",
+        "rationale": "Free-text restriction details, present in multiple submissions."
+      },
+      {
+        "key": "ridership",
+        "disposition": "promote_field",
+        "rationale": "Numeric ridership, though sparse; promote as optional field."
+      },
+      {
+        "key": "routes",
+        "disposition": "relation_context",
+        "rationale": "List of bus routes serving corridor; relation to route entities, not corridor identity."
+      },
+      {
+        "key": "routes_note",
+        "disposition": "promote_field",
+        "rationale": "Free-text annotation about routes."
+      },
+      {
+        "key": "routes_served",
+        "disposition": "relation_context",
+        "rationale": "Another list of served routes; relation to routes."
+      },
+      {
+        "key": "through_trips",
+        "disposition": "promote_field",
+        "rationale": "Free-text description of through-trip permissions."
+      },
+      {
+        "key": "trucks_allowed",
+        "disposition": "drop",
+        "rationale": "Single occurrence."
+      },
+      {
+        "key": "westbound_limits",
+        "disposition": "drop",
+        "rationale": "Single occurrence."
+      }
+    ],
+    "notes": "Borough and boroughs enums share the same canonical values except Staten Island not observed in boroughs array; both have escape hats. Several free-text fields provide geometric/policy details. Route-related lists are treated as relation context."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T23-55-37-605Z_3609302-0102f466_schema-proposal-run_corridor",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-55-37-614Z_2026-06-08T23-55-37-605Z_3609302-0102f466_schema-proposal-run_corridor.jsonl"
+}

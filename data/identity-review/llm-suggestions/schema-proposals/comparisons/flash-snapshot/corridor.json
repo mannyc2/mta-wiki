@@ -1,0 +1,1005 @@
+{
+  "schema_proposal_run_id": "2026-06-08T23-05-26-749Z_schema-proposal-run",
+  "proposed_at": "2026-06-08T23:08:43.775Z",
+  "observation_kind": "corridor",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "audit_packet": {
+    "observation_kind": "corridor",
+    "submission_count": 74,
+    "accepted_count": 72,
+    "rejected_count": 2,
+    "declared_anchor_fields": [
+      "corridor_name",
+      "description",
+      "from",
+      "limits",
+      "name",
+      "street",
+      "streets",
+      "to"
+    ],
+    "enum_candidates": [
+      {
+        "field": "borough",
+        "occurrences": 45,
+        "coverage": 0.61,
+        "distinct_values": 6,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Bronx",
+          "Brooklyn",
+          "Manhattan",
+          "Queens",
+          "Staten Island",
+          "the Bronx"
+        ],
+        "value_counts": [
+          {
+            "value": "Manhattan",
+            "count": 14
+          },
+          {
+            "value": "Brooklyn",
+            "count": 11
+          },
+          {
+            "value": "Queens",
+            "count": 11
+          },
+          {
+            "value": "Bronx",
+            "count": 6
+          },
+          {
+            "value": "Staten Island",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "status",
+        "occurrences": 12,
+        "coverage": 0.16,
+        "distinct_values": 4,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Completed 2020",
+          "Future Plan",
+          "Planned",
+          "Present Implementation"
+        ],
+        "value_counts": [
+          {
+            "value": "Completed 2020",
+            "count": 4
+          },
+          {
+            "value": "Future Plan",
+            "count": 4
+          },
+          {
+            "value": "Planned",
+            "count": 2
+          },
+          {
+            "value": "Present Implementation",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "days",
+        "occurrences": 9,
+        "coverage": 0.12,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Monday through Friday",
+          "seven days a week"
+        ],
+        "value_counts": [
+          {
+            "value": "seven days a week",
+            "count": 8
+          }
+        ]
+      },
+      {
+        "field": "hours",
+        "occurrences": 9,
+        "coverage": 0.12,
+        "distinct_values": 5,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "24 hours a day",
+          "6am to 10pm",
+          "6am to 7pm",
+          "6am to 8pm",
+          "7am to 7pm"
+        ],
+        "value_counts": [
+          {
+            "value": "6am to 8pm",
+            "count": 3
+          },
+          {
+            "value": "24 hours a day",
+            "count": 2
+          },
+          {
+            "value": "6am to 10pm",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "through_access_vehicles",
+        "occurrences": 9,
+        "coverage": 0.12,
+        "distinct_values": 6,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Access-A-Ride vans",
+          "bicycles",
+          "buses",
+          "buses only",
+          "emergency vehicles",
+          "trucks"
+        ],
+        "value_counts": [
+          {
+            "value": "buses",
+            "count": 8
+          },
+          {
+            "value": "emergency vehicles",
+            "count": 8
+          },
+          {
+            "value": "trucks",
+            "count": 7
+          },
+          {
+            "value": "Access-A-Ride vans",
+            "count": 2
+          },
+          {
+            "value": "bicycles",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "boroughs",
+        "occurrences": 3,
+        "coverage": 0.04,
+        "distinct_values": 4,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Bronx",
+          "Brooklyn",
+          "Manhattan",
+          "Queens"
+        ],
+        "value_counts": [
+          {
+            "value": "Manhattan",
+            "count": 4
+          },
+          {
+            "value": "Queens",
+            "count": 4
+          },
+          {
+            "value": "Brooklyn",
+            "count": 3
+          },
+          {
+            "value": "Bronx",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "daily_ridership_hours",
+        "occurrences": 3,
+        "coverage": 0.04,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "All Days, 24/7",
+          "All Days, 6AM-8PM"
+        ],
+        "value_counts": [
+          {
+            "value": "All Days, 6AM-8PM",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "direction",
+        "occurrences": 3,
+        "coverage": 0.04,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "both directions",
+          "eastbound only"
+        ],
+        "value_counts": [
+          {
+            "value": "both directions",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "ridership_text",
+        "occurrences": 3,
+        "coverage": 0.04,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "139,000 daily riders",
+          "189,000 daily riders"
+        ],
+        "value_counts": [
+          {
+            "value": "139,000 daily riders",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "busway_launch_date",
+        "occurrences": 2,
+        "coverage": 0.03,
+        "distinct_values": 1,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "October 24, 2021"
+        ],
+        "value_counts": [
+          {
+            "value": "October 24, 2021",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "pickup_dropoff",
+        "occurrences": 2,
+        "coverage": 0.03,
+        "distinct_values": 2,
+        "closure_readiness": "open",
+        "corpus_values": [
+          "allowed throughout except Jamaica Ave westbound between 147th Pl and Sutphin Blvd",
+          "permitted in westbound direction"
+        ],
+        "value_counts": []
+      }
+    ],
+    "additional_keys": [
+      {
+        "field": "borrow",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Manhattan"
+        ]
+      },
+      {
+        "field": "bus_routes",
+        "occurrences": 3,
+        "coverage": 0.04,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "busway_launch_date_normalized",
+        "occurrences": 2,
+        "coverage": 0.03,
+        "value_kind": "object",
+        "classification": "structured",
+        "sample_values": []
+      },
+      {
+        "field": "combined_daily_ridership",
+        "occurrences": 9,
+        "coverage": 0.12,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "corridor_length_mi",
+        "occurrences": 10,
+        "coverage": 0.14,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "daily_ridership",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "eastbound_limits",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Third Avenue to Southern Boulevard"
+        ]
+      },
+      {
+        "field": "features",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Enhanced protected bicycle lanes on Jay Street and Smith Street"
+        ]
+      },
+      {
+        "field": "left_turns",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "restricted except eastbound left at 153rd St"
+        ]
+      },
+      {
+        "field": "length_miles",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "limits_northbound",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Main Street between Sanford Avenue and Northern Boulevard"
+        ]
+      },
+      {
+        "field": "limits_southbound",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Main Street between Sanford Avenue and 37th Avenue"
+        ]
+      },
+      {
+        "field": "local_access",
+        "occurrences": 9,
+        "coverage": 0.12,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "may turn onto the busway from a side street but must turn at next available right",
+          "all other vehicles may make local trips to access the curb, must make next available right turn",
+          "may enter but must turn at next available right (except at 41st Avenue where a left turn is permitted)",
+          "no local access on Archer Ave",
+          "permitted from the east and west only",
+          "permitted from the north and south only (except at Broadway) and must take the next required turn off the corridor; local traffic may not enter 181st Street via Broadway",
+          "permitted from the north and south only and must take the next required turn off the corridor",
+          "permitted from the north and south only and must take the next right turn off the corridor"
+        ]
+      },
+      {
+        "field": "neighborhoods",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Inwood",
+          "Washington Heights"
+        ]
+      },
+      {
+        "field": "parking_loading",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "no parking nor loading access eastbound between 150th St and 160th St"
+        ]
+      },
+      {
+        "field": "pre_busway_speed_range",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "5.3 to 6.1 MPH (PM)"
+        ]
+      },
+      {
+        "field": "regulation_text",
+        "occurrences": 2,
+        "coverage": 0.03,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "24 hours a day/7 days a week"
+        ]
+      },
+      {
+        "field": "restrictions",
+        "occurrences": 2,
+        "coverage": 0.03,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "No parking nor loading access along busway",
+          "truck loading zones are provided on adjacent streets; all vehicles may use small sections of Fulton Street to make north-south connections"
+        ]
+      },
+      {
+        "field": "ridership",
+        "occurrences": 3,
+        "coverage": 0.04,
+        "value_kind": "number",
+        "classification": "numeric",
+        "sample_values": []
+      },
+      {
+        "field": "routes",
+        "occurrences": 10,
+        "coverage": 0.14,
+        "value_kind": "array_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Bx36",
+          "Bx3",
+          "Bx35",
+          "Bx11",
+          "Bx12",
+          "Bx12 SBS",
+          "Bx13",
+          "Bx17"
+        ]
+      },
+      {
+        "field": "routes_note",
+        "occurrences": 3,
+        "coverage": 0.04,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Routes running between Sutphin Blvd & 168 St only"
+        ]
+      },
+      {
+        "field": "routes_served",
+        "occurrences": 10,
+        "coverage": 0.14,
+        "value_kind": "array_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Bx35",
+          "Bx36",
+          "Bx11",
+          "Bx12",
+          "Bx12 SBS",
+          "Bx13",
+          "Bx17",
+          "Bx18"
+        ]
+      },
+      {
+        "field": "through_trips",
+        "occurrences": 2,
+        "coverage": 0.03,
+        "value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "buses and emergency vehicles only",
+          "buses, trucks, emergency vehicles only"
+        ]
+      },
+      {
+        "field": "trucks_allowed",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "not allowed eastbound"
+        ]
+      },
+      {
+        "field": "westbound_limits",
+        "occurrences": 1,
+        "coverage": 0.01,
+        "value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Southern Boulevard to Belmont Avenue"
+        ]
+      }
+    ]
+  },
+  "closure_policy": "deferred",
+  "closure_signals": [
+    {
+      "field": "borough",
+      "closure_readiness": "open",
+      "occurrences": 45,
+      "coverage": 0.61
+    },
+    {
+      "field": "status",
+      "closure_readiness": "open",
+      "occurrences": 12,
+      "coverage": 0.16
+    },
+    {
+      "field": "days",
+      "closure_readiness": "open",
+      "occurrences": 9,
+      "coverage": 0.12
+    },
+    {
+      "field": "hours",
+      "closure_readiness": "open",
+      "occurrences": 9,
+      "coverage": 0.12
+    },
+    {
+      "field": "through_access_vehicles",
+      "closure_readiness": "open",
+      "occurrences": 9,
+      "coverage": 0.12
+    },
+    {
+      "field": "boroughs",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "coverage": 0.04
+    },
+    {
+      "field": "daily_ridership_hours",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "coverage": 0.04
+    },
+    {
+      "field": "direction",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "coverage": 0.04
+    },
+    {
+      "field": "ridership_text",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "coverage": 0.04
+    },
+    {
+      "field": "busway_launch_date",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.03
+    },
+    {
+      "field": "pickup_dropoff",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "coverage": 0.03
+    }
+  ],
+  "valid": true,
+  "schema_issues": [],
+  "warnings": [],
+  "proposal": {
+    "observation_kind": "corridor",
+    "field_proposals": [
+      {
+        "field": "borough",
+        "decision": "enum",
+        "canonical_values": [
+          "bronx",
+          "brooklyn",
+          "manhattan",
+          "queens",
+          "staten_island"
+        ],
+        "value_mapping": [
+          {
+            "from": "Bronx",
+            "to": "bronx"
+          },
+          {
+            "from": "Brooklyn",
+            "to": "brooklyn"
+          },
+          {
+            "from": "Manhattan",
+            "to": "manhattan"
+          },
+          {
+            "from": "Queens",
+            "to": "queens"
+          },
+          {
+            "from": "Staten Island",
+            "to": "staten_island"
+          },
+          {
+            "from": "the Bronx",
+            "to": "bronx"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "borough_other"
+        },
+        "rationale": "Well‑covered field with clear borough names; map 'the Bronx' to 'bronx'."
+      },
+      {
+        "field": "status",
+        "decision": "enum",
+        "canonical_values": [
+          "completed_2020",
+          "future_plan",
+          "planned",
+          "present_implementation"
+        ],
+        "value_mapping": [
+          {
+            "from": "Completed 2020",
+            "to": "completed_2020"
+          },
+          {
+            "from": "Future Plan",
+            "to": "future_plan"
+          },
+          {
+            "from": "Planned",
+            "to": "planned"
+          },
+          {
+            "from": "Present Implementation",
+            "to": "present_implementation"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "status_other"
+        },
+        "rationale": "Four distinct status values; treat as open enum."
+      },
+      {
+        "field": "days",
+        "decision": "enum",
+        "canonical_values": [
+          "monday_through_friday",
+          "seven_days_a_week"
+        ],
+        "value_mapping": [
+          {
+            "from": "Monday through Friday",
+            "to": "monday_through_friday"
+          },
+          {
+            "from": "seven days a week",
+            "to": "seven_days_a_week"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "days_other"
+        },
+        "rationale": "Two clear operating‑day patterns."
+      },
+      {
+        "field": "hours",
+        "decision": "enum",
+        "canonical_values": [
+          "24_hours",
+          "6am_to_10pm",
+          "6am_to_7pm",
+          "6am_to_8pm",
+          "7am_to_7pm"
+        ],
+        "value_mapping": [
+          {
+            "from": "24 hours a day",
+            "to": "24_hours"
+          },
+          {
+            "from": "6am to 10pm",
+            "to": "6am_to_10pm"
+          },
+          {
+            "from": "6am to 7pm",
+            "to": "6am_to_7pm"
+          },
+          {
+            "from": "6am to 8pm",
+            "to": "6am_to_8pm"
+          },
+          {
+            "from": "7am to 7pm",
+            "to": "7am_to_7pm"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "hours_other"
+        },
+        "rationale": "Five unique time ranges; open enum with escape hatch."
+      },
+      {
+        "field": "through_access_vehicles",
+        "decision": "enum",
+        "canonical_values": [
+          "access_a_ride_vans",
+          "bicycles",
+          "buses",
+          "buses_only",
+          "emergency_vehicles",
+          "trucks"
+        ],
+        "value_mapping": [
+          {
+            "from": "Access-A-Ride vans",
+            "to": "access_a_ride_vans"
+          },
+          {
+            "from": "bicycles",
+            "to": "bicycles"
+          },
+          {
+            "from": "buses",
+            "to": "buses"
+          },
+          {
+            "from": "buses only",
+            "to": "buses_only"
+          },
+          {
+            "from": "emergency vehicles",
+            "to": "emergency_vehicles"
+          },
+          {
+            "from": "trucks",
+            "to": "trucks"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "through_access_vehicles_other"
+        },
+        "rationale": "Six vehicle types; 'buses only' is distinct from 'buses'."
+      },
+      {
+        "field": "boroughs",
+        "decision": "drop",
+        "rationale": "Redundant with field 'borough'; very low coverage (0.04) and distinct values are a subset."
+      },
+      {
+        "field": "daily_ridership_hours",
+        "decision": "needs_more_data",
+        "rationale": "Only 3 occurrences and 2 distinct values; likely a formatted combination of 'days' and 'hours', but insufficient to normalize."
+      },
+      {
+        "field": "direction",
+        "decision": "enum",
+        "canonical_values": [
+          "both_directions",
+          "eastbound_only"
+        ],
+        "value_mapping": [
+          {
+            "from": "both directions",
+            "to": "both_directions"
+          },
+          {
+            "from": "eastbound only",
+            "to": "eastbound_only"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "direction_other"
+        },
+        "rationale": "Two direction types; open enum."
+      },
+      {
+        "field": "ridership_text",
+        "decision": "free_text",
+        "rationale": "Human‑readable ridership strings; better stored as free text rather than enum."
+      },
+      {
+        "field": "busway_launch_date",
+        "decision": "structured",
+        "rationale": "Single date value ('October 24, 2021') indicates a date field; not an enum."
+      },
+      {
+        "field": "pickup_dropoff",
+        "decision": "free_text",
+        "rationale": "Long, descriptive strings; free text is appropriate."
+      }
+    ],
+    "key_dispositions": [
+      {
+        "key": "borrow",
+        "disposition": "alias",
+        "target": "borough",
+        "rationale": "Likely misspelling of 'borough'."
+      },
+      {
+        "key": "bus_routes",
+        "disposition": "promote_field",
+        "target": "bus_routes",
+        "rationale": "Numeric count of bus routes."
+      },
+      {
+        "key": "busway_launch_date_normalized",
+        "disposition": "drop",
+        "rationale": "Redundant with 'busway_launch_date'."
+      },
+      {
+        "key": "combined_daily_ridership",
+        "disposition": "promote_field",
+        "target": "combined_daily_ridership",
+        "rationale": "Numeric ridership figure."
+      },
+      {
+        "key": "corridor_length_mi",
+        "disposition": "promote_field",
+        "target": "corridor_length_mi",
+        "rationale": "Numeric corridor length in miles."
+      },
+      {
+        "key": "daily_ridership",
+        "disposition": "promote_field",
+        "target": "daily_ridership",
+        "rationale": "Numeric daily ridership."
+      },
+      {
+        "key": "eastbound_limits",
+        "disposition": "promote_field",
+        "target": "eastbound_limits",
+        "rationale": "Directional limit text."
+      },
+      {
+        "key": "features",
+        "disposition": "promote_field",
+        "target": "features",
+        "rationale": "Free‑text description of corridor features."
+      },
+      {
+        "key": "left_turns",
+        "disposition": "promote_field",
+        "target": "left_turns",
+        "rationale": "Free‑text turn restriction details."
+      },
+      {
+        "key": "length_miles",
+        "disposition": "drop",
+        "rationale": "Redundant with 'corridor_length_mi'."
+      },
+      {
+        "key": "limits_northbound",
+        "disposition": "promote_field",
+        "target": "limits_northbound",
+        "rationale": "Directional limit text."
+      },
+      {
+        "key": "limits_southbound",
+        "disposition": "promote_field",
+        "target": "limits_southbound",
+        "rationale": "Directional limit text."
+      },
+      {
+        "key": "local_access",
+        "disposition": "promote_field",
+        "target": "local_access",
+        "rationale": "Free‑text local access rules."
+      },
+      {
+        "key": "neighborhoods",
+        "disposition": "promote_field",
+        "target": "neighborhoods",
+        "rationale": "Array of neighborhood names."
+      },
+      {
+        "key": "parking_loading",
+        "disposition": "promote_field",
+        "target": "parking_loading",
+        "rationale": "Free‑text parking/loading restrictions."
+      },
+      {
+        "key": "pre_busway_speed_range",
+        "disposition": "promote_field",
+        "target": "pre_busway_speed_range",
+        "rationale": "Free‑text speed range."
+      },
+      {
+        "key": "regulation_text",
+        "disposition": "promote_field",
+        "target": "regulation_text",
+        "rationale": "Free‑text regulation description."
+      },
+      {
+        "key": "restrictions",
+        "disposition": "promote_field",
+        "target": "restrictions",
+        "rationale": "Free‑text restriction details."
+      },
+      {
+        "key": "ridership",
+        "disposition": "promote_field",
+        "target": "ridership",
+        "rationale": "Numeric ridership field."
+      },
+      {
+        "key": "routes",
+        "disposition": "promote_field",
+        "target": "routes",
+        "rationale": "Array of bus route identifiers."
+      },
+      {
+        "key": "routes_note",
+        "disposition": "promote_field",
+        "target": "routes_note",
+        "rationale": "Free‑text note about routes."
+      },
+      {
+        "key": "routes_served",
+        "disposition": "promote_field",
+        "target": "routes_served",
+        "rationale": "Array of served route identifiers."
+      },
+      {
+        "key": "through_trips",
+        "disposition": "promote_field",
+        "target": "through_trips",
+        "rationale": "Free‑text through trip permissions."
+      },
+      {
+        "key": "trucks_allowed",
+        "disposition": "promote_field",
+        "target": "trucks_allowed",
+        "rationale": "Free‑text truck restriction."
+      },
+      {
+        "key": "westbound_limits",
+        "disposition": "promote_field",
+        "target": "westbound_limits",
+        "rationale": "Directional limit text."
+      }
+    ],
+    "notes": "Many additional keys are sparse; they are promoted as free‑text or numeric fields for now. The enum candidates with very low coverage (daily_ridership_hours, boroughs) are dropped or marked needs_more_data. Directional limit fields (eastbound_limits, westbound_limits, etc.) are kept as separate free‑text fields pending more data."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T23-07-40-389Z_3564593-3ba70068_schema-proposal-run_corridor",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-07-40-389Z_2026-06-08T23-07-40-389Z_3564593-3ba70068_schema-proposal-run_corridor.jsonl"
+}

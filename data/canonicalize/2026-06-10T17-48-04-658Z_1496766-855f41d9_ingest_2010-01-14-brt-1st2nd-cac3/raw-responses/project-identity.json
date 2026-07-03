@@ -1,0 +1,84 @@
+{
+  "run_id": "2026-06-10T17-48-04-658Z_1496766-855f41d9_ingest_2010-01-14-brt-1st2nd-cac3",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-10T20:48:17.784Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "dec-project-identity-01",
+        "local_observation_id": "project_first_second_ave_sbs_cac3",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'project_first-second-ave-sbs-cac3' already exists in the registry with a matching payload (same project_name, project_type, borough, status, description). The observation already resolves to its own registry record; no different registry record refers to the same real-world project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p001_c0001",
+            "source_quote": "First Avenue/Second Avenue SBS Community Advisory Committee"
+          },
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p002_c0001",
+            "source_quote": "First Avenue/Second Avenue SBS"
+          },
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p035_c0004",
+            "source_quote": "The map illustrates the proposed SBS corridor along the East River, running from South Ferry to 125th Street."
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-project-identity-02",
+        "local_observation_id": "project_fordham_road_sbs_2010_01_14",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'project_fordham-road-sbs-2010-01-14' already exists in the registry with a matching payload (same project_name, project_type, borough, description). The observation already resolves to its own registry record; no different registry record refers to the same real-world project. The registry record 'project_fordham-road-transit-improvements-bronx' is a distinct study project on the same corridor but is not the same thing.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p016_c0002",
+            "source_quote": "Fordham Road Select Bus Service"
+          },
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p016_c0004",
+            "source_quote": "Curbside Bus Lane"
+          },
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p016_c0005",
+            "source_quote": "Off-Board Fare Collection"
+          },
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p016_c0006",
+            "source_quote": "Transit Signal Priority"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-project-identity-03",
+        "local_observation_id": "project_34th_st_enhanced_bus_priority_2010_01_14",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'project_34th-street-enhanced-bus-priority' already exists in the registry (source_ids include both '2010_01_14_brt_1st2nd_cac3' and 'better_buses'). Same project_name and project_type. The observation already resolves to its own registry record; no different registry record refers to the same real-world project. Other 34th Street registry records (34th-st-sbs-2012, 34th-street-bus-priority, 34th-street-busway, 34th-street-transitway-concept) all have different project types, names, or statuses.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p015_c0002",
+            "source_quote": "34 th Street Enhanced Bus Priority"
+          },
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p015_c0004",
+            "source_quote": "Curbside bus lane Real-time arrival information Left-turn signal priority Taxi video enforcement"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T20-46-32-092Z_1744250-f028607f_canonicalize_2026-06-10t17-48-04-658z-1496766-855f41d9-ingest-2010-01-14-brt-1st2nd-cac3-project-identity"
+}

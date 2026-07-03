@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "route_cluster_b9e9449867",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_b9e9449867.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_b9e9449867.json",
+  "source_review_run_id": "2026-06-23T14-38-47-609Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "route_m79-local-cb8-oct2016",
+        "route_m79-sbs"
+      ],
+      "reason": "Contradiction test: strong identity field 'service_variant' differs (local vs sbs). Per route merge canon, different service variants never merge."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "Both records share base route_id M79, but their service_variant fields are explicitly 'local' and 'sbs'. The Identity Merge Canon's route rule states that different variants never merge. The contradiction test (test 1) applies here because the strong identity field 'service_variant' conflicts. Therefore, these are distinct route variants and must not be merged. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

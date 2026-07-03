@@ -1,0 +1,177 @@
+{
+  "id": "codex-metric-project-relation-batch-2026-06-30-s",
+  "created_at": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-profile commands"
+  ],
+  "implemented_changes": [
+    {
+      "bucket": "metric_claims.unit_normalized.unit_family",
+      "before": {
+        "unit_family_other": 14930,
+        "unit_family_count": 595,
+        "unit_family_missing": 2500
+      },
+      "after": {
+        "unit_family_other": 14794,
+        "unit_family_count": 731,
+        "unit_family_missing": 2500
+      },
+      "change": "exact metric unit literal count now normalizes to unit_family=count instead of other",
+      "records_moved": 136
+    },
+    {
+      "bucket": "projects.document_time_status",
+      "before": {
+        "missing": 30,
+        "implemented": 327,
+        "planned": 627
+      },
+      "after": {
+        "missing": 25,
+        "implemented": 331,
+        "planned": 628
+      },
+      "change": "five exact source-context-backed project status gates",
+      "records_moved": [
+        {
+          "record_id": "project_harrison-station-tod",
+          "document_time_status": "implemented"
+        },
+        {
+          "record_id": "project_meeting-doc-129366-incredible-advocates",
+          "document_time_status": "implemented"
+        },
+        {
+          "record_id": "project_meeting-doc-112146-elevator-el616",
+          "document_time_status": "implemented"
+        },
+        {
+          "record_id": "project_beach-67-st-ada-meeting-doc-131981",
+          "document_time_status": "implemented"
+        },
+        {
+          "record_id": "project_queens-blvd-west-cbtc-meeting-doc-170976",
+          "document_time_status": "planned"
+        }
+      ]
+    },
+    {
+      "bucket": "relations.assertion_status",
+      "before": {
+        "unknown": 11624,
+        "delivered": 1550,
+        "planned": 2785
+      },
+      "after": {
+        "unknown": 11245,
+        "delivered": 1928,
+        "planned": 2786
+      },
+      "change": "present-tense route-to-corridor operates_on_corridor relations infer delivered when no explicit or endpoint status applies, with future/proposed wording guarded out",
+      "notes": [
+        "The delivered relation rule accounts for the large delivered movement; one additional planned relation follows from the new planned CBTC project endpoint status.",
+        "Future/proposed examples such as Bx41 SBS will operate on Webster Avenue remain unknown."
+      ]
+    }
+  ],
+  "final_counts": {
+    "submissions": 98102,
+    "canonical_records": 84045,
+    "wiki_pages": 7336,
+    "projects": 1862,
+    "metric_claims": 36534,
+    "relations": 20653,
+    "project_status_missing_unresolved": 25,
+    "metric_unit_family_other": 14794,
+    "metric_unit_family_count": 731,
+    "metric_unit_family_missing": 2500,
+    "relation_assertion_status": {
+      "unknown": 11245,
+      "delivered": 1928,
+      "planned": 2786,
+      "proposed": 3070,
+      "in_progress": 1600,
+      "deferred": 22,
+      "cancelled": 2
+    }
+  },
+  "tests_and_validation": [
+    {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "result": "pass",
+      "details": "267 pass, 0 fail, 4085 expect() calls"
+    },
+    {
+      "command": "bun test packages/pipeline/test/records/submissions.test.ts",
+      "result": "pass",
+      "details": "29 pass, 0 fail, 70 expect() calls"
+    },
+    {
+      "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+      "result": "pass",
+      "details": "8 pass, 0 fail, 13 expect() calls"
+    },
+    {
+      "command": "bun test packages/pipeline/test/records/relations.test.ts",
+      "result": "pass",
+      "details": "8 pass, 0 fail, 527 expect() calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    {
+      "command": "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+      "result": "pass",
+      "details": "Materialized 93092/98102 submissions; canonical records 84045; SQLite FTS quick_check: ok"
+    },
+    {
+      "command": "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+      "result": "pass",
+      "details": "ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass",
+      "details": "Submissions 98102; canonical records 84045; wiki pages 7336; Issues 0"
+    }
+  ],
+  "subagent_inputs": [
+    {
+      "agent_id": "019f18ee-8925-7502-bd9f-410a1dbea15b",
+      "lane": "metric ontology residuals",
+      "used": true
+    },
+    {
+      "agent_id": "019f18ee-84b7-7831-b385-10bcb33f5fe0",
+      "lane": "project document_time_status residuals",
+      "used": true
+    },
+    {
+      "agent_id": "019f18ee-8c90-7a91-a53d-86ac528fba82",
+      "lane": "relation assertion_status residuals",
+      "used": true
+    },
+    {
+      "agent_id": "019f18ee-90c6-7ed3-8cb4-55758c1cc3ac",
+      "lane": "route residuals",
+      "used": false,
+      "note": "Scout confirmed the remaining route residuals are policy floor after Bx18A/B."
+    }
+  ],
+  "remaining_intentionally_unresolved": [
+    "25 project records still lack document_time_status.",
+    "metric unit_family other remains 14794, with large money/scale literals intentionally left for a careful currency/scale policy slice.",
+    "relation assertion_status unknown remains 11245; relation_family and endpoint-shape validation remain clean.",
+    "route split_candidate and aggregate_list_context residuals remain policy-floor after the Bx18A/B guardrail."
+  ]
+}

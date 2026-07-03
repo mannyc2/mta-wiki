@@ -1,0 +1,169 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-176496"
+record_kind: "source"
+display_name: "MTA Advertising Policy - June 18, 2025 Board Meeting"
+source_id: "meeting_doc_176496"
+source_ids:
+  - "meeting_doc_176496"
+local_observation_id: "source_meeting_doc_176496"
+local_observation_ids:
+  - "source_meeting_doc_176496"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T18:00:23.180Z"
+raw_text: "Subject Date MTA Advertising Policy June 18, 2025 Department Vendor Name Strategic Initiatives N/A Department Head Name Contract Number Jon Kaufman, Chief Strategic Initiatives N/A Department Head Signature Contract Manager Name N/A Project Manager Table of Contents Ref # Jessica Lazarus, Deputy Chief, Commercial Ventures N/A"
+submission_ids:
+  - "sub_b429630707885aca"
+payload:
+  authority_tier: "board_material"
+  content_type: "Board Staff Summary with Proposed Policy"
+  date_text: "June 18, 2025"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2025-06-18"
+    precision: "day"
+    raw_text: "June 18, 2025"
+  description: "Staff summary and proposed updated MTA Advertising Policy presented to the Finance Committee and Board for approval in June 2025."
+  published_date_normalized: "2025-06-18"
+  published_date_precision: "day"
+  publisher: "Metropolitan Transportation Authority"
+  title: "MTA Advertising Policy"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_176496#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "meeting_doc_176496"
+    source_path: "raw/sources/meeting_doc_176496/blocks.jsonl"
+    text_sha256: "sha256:5fe5df9a065d52445688c17b5baa79d36b9a8957fb7f163ae3447e4bc52278cc"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_176496#p001_c0002"
+    page_number: 1
+    role: "metadata"
+    source_id: "meeting_doc_176496"
+    source_path: "raw/sources/meeting_doc_176496/blocks.jsonl"
+    text_sha256: "sha256:7b4fbe3571cc44c2181c30454d259291b9ddeefe3ad6913acc897f6f8fc22edd"
+    text_source: "raw_text"
+---
+
+# Advertising policy
+
+source_id: meeting_doc_176496
+citation: cite block ids exactly as shown in square brackets
+document: 71 block(s)
+
+## Page 1
+
+### [p001_c0001] STAFF SUMMARY
+[p001_c0002]
+
+```text
+Subject Date MTA Advertising Policy June 18, 2025 Department Vendor Name Strategic Initiatives N/A Department Head Name Contract Number Jon Kaufman, Chief Strategic Initiatives N/A Department Head Signature Contract Manager Name N/A Project Manager Table of Contents Ref # Jessica Lazarus, Deputy Chief, Commercial Ventures N/A
+```
+[p001_c0003]
+
+```text
+Board Action Internal Approvals Order To Date Approval Info Order Approval Approval 1 Finance Committee 6/23/2025 X 1 CFO 2 Board 6/25/2025 X 2 Legal 3 Chief Policy External Relations 4 Chief Administrative Officer
+```
+### [p001_c0004] I. Purpose
+[p001_c0005] To obtain Board approval of updates to the MTA Advertising Policy, annexed hereto.
+### [p001_c0006] II. Discussion
+[p001_c0007] The Metropolitan Transportation Authority (“MTA”) had long maintained an Advertising Policy to set standards for the display of advertising in and on the facilities, vehicles and other property (together “Property”) of the MTA and its affiliated and subsidiary agencies (together “MTA”). The MTA is recommending today that the Board approve the following updates to the policy:
+[p001_c0008] _1_
+
+## Page 2
+
+[p002_c0001] First, the updated policy clarifies the scope of the MTA's Advertising Policy applies to all MTA properties, including station advertising, billboards, and digital properties.
+[p002_c0002] Second, the updated policy clarifies the requirements for proposed "Large Format Advertising." This format includes (i) advertising that physically "wraps" and so covers all or nearly all of the exterior surfaces of subway cars, train cars, or buses and (ii) any other advertisement in any medium that appears on MTA Property that is an equivalent or greater size. Any advertising which prominently displays the unclothed human body, regardless of the nature of any clothing items depicted, will not be accepted in such formats.
+[p002_c0003] Third, the updated policy maintains alcohol advertising in the policy's "Prohibited" category, while also now allowing for alcohol advertising in the following limited settings:
+- [p002_c0004] • On digital displays within stations or attached to station exteriors, and on the interior of railcars and buses, but only outside of typical student commutation hours (6-8 a.m. and 2-5 p.m. on weekdays when school is in session); • On static displays inside (1) major commuter rail hubs and (2) stations adjacent to large venues where alcohol is lawfully sold; • In "train wrap" format on the S shuttle train between Times Square and Grand Central – but not on the exterior of any other MTA railcars or buses; and • On billboards, but only where the advertiser certifies that such billboards are not readable within 500 feet of a school, playground, or place of worship. The same requirement to certify compliance of the 500-foot limitation would apply to signage affixed to station exteriors.
+[p002_c0005] Advertisers of alcohol products would also be required to verify their compliance with all applicable federal and state laws and regulations regarding alcohol advertising. Advertisers would be forbidden to target alcohol ads to any particular geographic community.
+[p002_c0006] Fourth, the updated advertising policy reassigns within the MTA the responsibility to issue final determinations regarding decisions by the MTA's Advertising Committee. Advertisers can request a final determination after the committee rejects an ad pursuant to the Advertising Policy. Such final determinations will now be made by the MTA's Chief Administrative Officer or their designee.
+[p002_c0007] Fifth, the proposal before the Board also includes several other changes that are administrative and textual clean up. These changes would not materially alter the types of advertising that are displayed in the MTA system.
+[p002_c0008] _2_
+
+## Page 3
+
+[p003_c0001] Finally, as an information item, the existing pilots for audio announcements and audio advertising are being renewed until July 2026.
+### [p003_c0002] I. Recommendation
+[p003_c0003] It is recommended that the Board approve and adopt the annexed updated MTA Advertising Policy.
+[p003_c0004] _3_
+
+## Page 4
+
+### [p004_c0001] MTA ADVERTISING POLICY
+### [p004_c0002] I. PURPOSE
+[p004_c0003] A. To establish uniform, reasonable, and viewpoint-neutral standards for the display of advertising in and on the facilities, stations, vehicles, digital assets (e.g. MTA webpages and mobile apps) and other property (together “Property”) owned or controlled by the Metropolitan Transportation Authority and its affiliated and subsidiary agencies (together “MTA”).
+[p004_c0004] B. To maintain the attractiveness of the Property and the MTA’s services to a multicultural, multi-ethnic, religiously diverse and otherwise diverse ridership, including minors.
+[p004_c0005] C. To maintain the advertising space on the Property as a non-public forum by limiting the range of expression permitted in the forum, including but not limited to by excluding advertising of a political nature as defined below.
+### [p004_c0006] II. SCOPE
+[p004_c0007] This policy (the “Advertising Policy”) applies to all advertisements proposed to be displayed in and on the Property on or after the Effective Date set forth below.
+### [p004_c0008] III. OBJECTIVE
+[p004_c0009] The MTA’s mission is to provide safe, reliable, and efficient public transportation and crossings within its service area. The MTA’s transportation operations are funded by a combination of federal, state, and local funds, including grants and taxes, as well as fare box and toll revenue. Advertising revenues are an important supplemental source of revenue that supports the MTA’s transportation operations. The MTA’s purpose in allowing paid advertising to be displayed in and on the Property is to maximize such supplemental revenue to support transportation operations.
+[p004_c0010] By accepting paid advertising for display in and on the Property, the MTA is acting in a proprietary capacity as a provider of public transportation and crossings seeking to maximize advertising revenue to support its transportation operations. The MTA does not intend that the advertising permitted to be displayed in and on the Property be created, designated, or used as a public forum for expressive activities or general discourse or opinions. In furtherance of the MTA’s purpose of maximizing advertising revenue, the MTA in its proprietary capacity is limiting advertisements it will accept for display in and on the Property to paid commercial advertising, certain public service announcements that will help build goodwill for the MTA among its riders and the public, and governmental messages, and prohibiting certain advertisements described below. The MTA retains control over the advertising that it will allow to be displayed in and on the Property by subjecting all proposed advertisements to this Advertising Policy. The MTA expressly intends that the advertising space on the Property be a non-public forum.
+[p004_c0011] In establishing and enforcing this Advertising Policy, the MTA seeks to fulfill the following goals and objectives:
+- [p004_c0012] • Maximize advertising revenue. • Maximize ridership and fare revenue, including by adopting an advertising policy that will create an attractive environment for a diverse ridership, including minors.
+[p004_c0013] _1_
+
+## Page 5
+
+- [p005_c0001] • Maintain a secure and orderly operating environment. • Maintain a safe and welcoming environment for all MTA employees and customers, including minors, who use the MTA's subways, buses, commuter trains, and crossings. • Minimize the extraordinary resources and executive attention that have been expended to resolve disputes relating to the permissibility of certain political advertisements and advertisements of a sexual nature, thus unnecessarily diverting the organization from performing its mission. • Avoid identification of the MTA with, and the appearance of MTA endorsement of, the advertisements of non-MTA parties displayed in or on the Property, including the associated messages, products, services, or events being proposed or promoted. • Preventing government property from being used to promote invidious discrimination against constitutionally and statutorily recognized protected classes, via advertising to MTA customers who are captive audiences.
+[p005_c0002] This Advertising Policy contains additional restrictions for two categories of advertisements:
+- [p005_c0003] • Large Format Advertisements, as set out in section V below. Because of their much larger size, Large Format Advertisements have a stronger, more visceral impact than other advertising on the Property, especially as the graphics become larger and often more detailed and more difficult for customers to avoid. Further, Large Format Advertisements on buses and subways on outdoor tracks travel through communities whose members may not have affirmatively chosen to use the MTA's services. For these reasons, Large Format Advertisements must satisfy both the standards for all advertisements and also the additional requirements. • Advertisements of alcoholic beverage products or brands, as set out in section IV.D below. Such advertisements can raise concerns about their impact on young people and on certain communities. For these reasons, such advertisements must satisfy both the standards for all advertisements and also the additional requirements.
+### [p005_c0004] IV. ADVERTISING STANDARDS
+### [p005_c0005] A. Permitted Advertising
+[p005_c0006] The MTA will only display advertisements that fall under one or more of the following categories of permitted advertising:
+- [p005_c0007] 1. Commercial advertising. Paid advertisements that propose, promote, or solicit the sale, rent, lease, license, distribution, or availability of, or some other commercial transaction concerning, goods, products, services, or events for the advertiser's commercial or proprietary interest, or more generally promote an entity that engages in such activities. 2. Governmental advertising. Notices or messages from the MTA that promote the MTA or any of its functions or programs, and paid notices or messages of the United States government, the States of New York, New Jersey and Connecticut and their agencies and counties, the City of New York and its departments, or of any of the County governments within the Metropolitan Commuter Transportation District that advance specific governmental purposes.
+[p005_c0008] _2_
+
+## Page 6
+
+- [p006_c0001] 3. Public service announcements. Public service announcements not otherwise prohibited under Section IV.B of this Policy, which are sponsored by a nonprofit corporation that is exempt from taxation under Section 501(c)(3) of the Internal Revenue Code, and which are directed to the general public and relate directly and exclusively to: i. Prevention or treatment of illnesses; ii. Promotion of safety or personal health; iii. Education or training programs (e.g., colleges, graduate school programs, or vocational training programs); iv. Art or culture programs (e.g., free art exhibitions or concerts); v. Provision of children and family services; vi. Provision of services and programs that provide support to low-income persons, senior citizens, or people with disabilities; or vii. Public education that solely informs the public of the existence of current New York City, New York State or national laws or constitutional provisions and that contains only a quotation from and citation to such provision and/or explanatory graphics accurately reflecting the law, and the identity of the advertiser.
+### [p006_c0002] B. Prohibited Advertising
+[p006_c0003] Even if an advertisement qualifies as permitted advertising under Section IV.A of this Advertising Policy, the MTA will not accept any advertisement for display in or on the Property if it falls within one or more of the following categories of prohibited advertising:
+- [p006_c0004] 1. Promotes or opposes a political party, a ballot referendum, any proposed or contemplated legislation or regulation, or the election of any candidate or group of candidates for government offices. 2. Prominently or predominantly supports, opposes, or comments on any action, inaction, prospective action, or policies of a government entity, except for advertisements that (i) qualify as permitted advertising under Section IV.A.2 of this Advertising Policy; (ii) are limited to providing public education regarding the existence of current government programs and services under Section IV.A.3(i) through Section IV.A.3(vi) of this Advertising Policy; or (iii) are limited to providing public education regarding existing laws under Section IV.A.3(vii) of this Advertising Policy. 3. Prominently or predominantly supports, opposes, or comments on a matter of public policy, except for advertisements that (i) qualify as permitted advertising under Section IV.A.2 of this Advertising Policy; (ii) are limited to providing public education regarding the existence of current government programs and services under Section IV.A.3(i) through Section IV.A.3(vi) of this Advertising Policy; or (iii) are limited to providing public education regarding existing laws under Section IV.A.3(vii) of this Advertising Policy. Public policy is defined as a system of laws, regulatory measures, courses of action or inaction, and funding priorities concerning a given issue or topic promulgated, proposed to be promulgated, administered, or effectuated by a government entity or its representatives, and can relate to issues that are political, economic, cultural, religious, or social in nature, among other issues.
+[p006_c0005] _3_
+
+## Page 7
+
+- [p007_c0001] 4. Prominently or predominantly supports, opposes or comments on any international dispute or warfare among nations or religious, ethnic, or other similar groups. 5. Prominently or predominantly supports, opposes or comments on a matter of religious policy. Religious policy is defined as the doctrines, practices, belief systems, or edicts promulgated or proposed to be promulgated by a religious entity or religious group or their respective representatives. This subsection IV.B.5 is not intended to prohibit advertisements that inform the public of the existence of a religious or atheist group or institution or the availability of their services if such advertisements otherwise comply with this Advertising Policy. 6. Is false, misleading, or deceptive. 7. Promotes unlawful or illegal goods, services, or activities, or involves other unlawful conduct. 8. The advertisement (i) depicts or describes in a patently offensive manner sexual or excretory activities so as to satisfy the definition of obscene material as contained in New York Penal Law § 235.00, as such provision may be amended, modified, or supplemented from time to time; or (ii) contains material that, if sold or loaned to a minor for monetary consideration with knowledge of its character and content, would give rise to a violation of New York Penal Law § 235.21, which prohibits the dissemination of indecent material to minors, as such provision may be amended, modified, or supplemented from time to time; or (iii) contains material that, if displayed with knowledge of its character and content, would give rise to a violation of New York Penal Law § 245.11, which prohibits the public display of offensive sexual material, as such provision may be amended, modified, or supplemented from time to time. 9. Advertises a film, publication or other content, including but not limited to an Internet website, that (i) satisfies the definition of obscene material contained in New York Penal Law § 235.00, Law § 235.00, as such provision may be amended, modified, or supplemented from time to time; (ii) if sold or loaned to a minor for monetary consideration with knowledge of its character and content, would give rise to a violation of New York Penal Law § 235.21, which prohibits the dissemination of indecent material to minors, as such provision may be amended, modified, or supplemented from time to time; or (iii) that, if displayed with knowledge of its character and content, would give rise to a violation of New York Penal Law § 245.11, which prohibits the public display of offensive sexual material, as such provision may be amended, modified, or supplemented from time to time. 10. Implies or declares an endorsement by the MTA of any service, product, or point of view. 11. Encourages or depicts conduct that is a violation of any of the MTA's Rules of Conduct, or other unsafe or undesirable behavior with respect to the MTA's transportation operations, such as failure to comply with normal safety precautions in awaiting, boarding, riding upon, or disembarking from MTA vehicles, or is otherwise directly adverse to the commercial, administrative or operational interests of the MTA as a business. This prohibition includes advertisements that incidentally portray the MTA, MTA employees, or MTA services in advertisements which primarily promote an unrelated product or service. 12. Contains an image of a person who is or appears to be a minor in sexually suggestive dress, pose, or context, or contains sexually explicit material that appeals to the prurient interest in sex, as judged by contemporary community standards relevant to MTA Property. 13. Promotes an escort service, strip club, or a Sexually Oriented Product or Service. A Sexually Oriented Product or Service as employed herein is any good, product, or service primarily related to or used for the purposes of sexual activity by persons of any gender or orientation,
+[p007_c0002] _4_
+
+## Page 8
+
+[p008_c0001] including but not limited to genital intercourse, oral sex, anal sex, masturbation, sadomasochism, erotic touching of covered or uncovered genitals, pubic area, buttocks, anus, or breasts, obtaining or maintaining an erection, or experiencing an orgasm (“Sexual Activity”). Sexually Oriented Products or Services include but are not limited to sex toys, sexual enhancement products, sexual dysfunction medications and supplements, genital or anal lubricants, libido enhancing medications and supplements, surgical procedures for the enhancement of sexual activity or sexual pleasure, and surgical procedures for the enlargement of breasts or genitals. Sexually Oriented Products or Services do not include contraceptives or reproductive or family-planning services, gender affirming surgery, or post-operative breast reconstruction surgery, and advertisements that promote these topics are not prohibited so long as they comply with all other provisions of this Advertising Policy.
+- [p008_c0002] 14. Contains profanity, including words, symbols or gestures commonly understood as profanity even if they are mis-spelled or do not contain all their letters, or slang terms for the genitals, pubic area, buttocks, anus or breasts. Examples of profanity include: fuck, shit, asshole, bitch, and cunt. 15. Depicts, references, or contains symbols or images reasonably understood to represent or evoke feces, urine, semen, orgasms, erections or Sexual Activity, excluding kissing. 16. Promotes tobacco, nicotine, or any tobacco-related or nicotine-related product; any alcohol product (except where compliant with section IV.D below); cannabis or any cannabis-related product; or hallucinogenic mushrooms or hallucinogenic mushroom-related product. 17. Contains material the display of which the MTA reasonably foresees would (a) result in harm to, disruption of or interference with the normal operations of the transportation system operated by the MTA, or (b) incite or provoke imminent violence or other imminent breach of the peace and so harm, disrupt, or interfere with safe, efficient, and orderly transit operations. 18. Contains material that demeans, disparages, praises, or promotes an individual or group of individuals on the basis of race, national origin, sex, sexual orientation, gender identity, disability, age, alienage, or religion. For purposes of determining whether an advertisement “demeans or disparages” an individual or group on this basis, the MTA will determine whether a reasonably prudent person, knowledgeable of the MTA’s ridership and using prevailing community standards, would believe that the advertisement contains material that is abusive to, or debases the dignity of, an individual or group of individuals on the basis of the listed classes. 19. Portrays graphic violence; sexual violence; mutilation, dismemberment, decomposition, or burning of human body parts, animal parts, or fetuses; or the purposeful infliction of pain to a human being or animal.
+### [p008_c0003] C. Additional Provisions Relating to Advertisements
+[p008_c0004] To avoid identification of the MTA with messages or images contained within advertisements displayed in and on the Property and to avoid the appearance of MTA endorsement of goods, products, services, or events by advertisers, advertisements shall readily and unambiguously identify the person, corporation, or entity paying for the advertisement. An advertiser may, at the MTA’s discretion, be required to include in the advertisement a statement explicitly identifying the person, corporation, or entity paying for the advertisement. An advertiser may also, at the MTA’s discretion, be required to incorporate additional language to avoid the appearance of MTA endorsement. The advertiser may in
+[p008_c0005] _5_
+
+## Page 9
+
+[p009_c0001] the MTA's discretion be required to include such identifying information within each advertisement, adjacent to an advertisement, or both.
+### [p009_c0002] D. Alcohol Advertising
+[p009_c0003] Pursuant to section IV.B.16 above, advertisements for alcohol products or brands remain prohibited, with the following exceptions:
+- [p009_c0004] 1. Alcohol advertisements may only be displayed: a. in digital formats within the interior of MTA stations, railcars or buses, or affixed to station exteriors, provided that the advertisements: i. may only run outside of typical student commutation hours, i.e., 6 a.m. to 8 a.m. and 2 p.m. to 5 p.m. on weekdays when school is in session, ii. may not be targeted to run in any particular geographic community, and iii. for signs on station exteriors, the advertiser must certify to the MTA or its advertising vendor that the advertisements may not be readable within 500 feet of a school, playground, or place of worship; b. in fixed "train wrap" format only on the S subway line (i.e., the shuttle between Times Square and Grand Central); c. in fixed formats within: i. the commuter rail portions of Grand Central Terminal, Grand Central Madison, Jamaica Station and Penn Station, or ii. subway or rail stations adjacent to venues where (i) alcoholic beverages are legally served, and the venue's seating capacity is 5,000 or more (if within New York City) or 1,500 or more (if within the MTA service area outside of New York City); d. on billboards, subject to the advertiser certifying to the MTA or its advertising vendor that the advertisements may not be readable within 500 feet of a school, playground, or place of worship). 2. Advertisers must certify to the MTA or its advertising vendor their compliance with any applicable federal or state laws or regulations and industry self-regulatory codes regarding alcohol advertising. 3. These additional requirements do not apply to: a. Advertising in or on retail sale establishments located on the Property, whether the establishment is fixed (e.g., a physical retail store) or temporary (e.g., a holiday pop-up kiosk); b. Advertisements for events where an alcoholic beverage company is a sponsor, and where the advertisement predominantly promotes the event and not an alcoholic beverage product or brand; or c. Advertisements that promote other types of products or services, but also incidentally depict an alcoholic beverage, product or brand.
+[p009_c0005] _6_
+
+## Page 10
+
+### [p010_c0001] V. LARGE FORMAT ADVERTISING
+[p010_c0002] Large Format Advertising is defined to include (i) advertising that physically “wraps” and so covers all or nearly all of the exterior surfaces of subway cars, train cars, or buses and (ii) any other advertisement in any medium that appears on the Property that is an equivalent or greater size.
+[p010_c0003] In addition to the prohibited categories of advertising set forth in Section IV.B.15 of this Policy, the MTA will not accept Large Format Advertising that depicts or explicitly references lingerie, underwear, or swimsuits; prominently displays the unclothed human body, regardless of the nature of any clothing items depicted; or promotes any brand that prominently promotes itself in its marketing materials as a company selling Sexually Oriented Products or Services.
+[p010_c0004] The MTA may, from time to time, implement further restrictions on Large Format Advertising as part of short-term pilot projects to test what standards are appropriate for these advertising spaces.
+### [p010_c0005] VI. REVIEW OF ADVERTISING PROPOSED FOR DISPLAY IN OR ON THE PROPERTY
+- [p010_c0006] 1. Before accepting an advertisement for display in or on the Property, the advertising contractor shall review such proposed advertisement to determine whether the advertisement potentially may not comply with the Advertising Standards. 2. If the advertising contractor determines that a proposed advertisement may not comply with the Advertising Standards, it shall promptly notify the MTA Advertising Review Committee (or a designee) in writing. The advertising contractor has no authority to reject an advertisement on behalf of the MTA and any statements by the advertising contractor to the advertiser regarding an advertisement are not binding on the MTA. 3. In reviewing an advertisement for compliance with the Advertising Standards, the Advertising Review Committee (or its designee) may consult the advertiser’s website, marketing and promotional materials, the content found at any link, QR code or similar reference within the proposed advertisement itself, government filings, materials regarding the nature or content of advertised products or services, or any other material that would inform its judgment (the “Broader Materials”). The Advertising Review Committee also may request additional facts or materials from the advertiser to determine whether the advertisement complies with Advertising Standards. The MTA’s decision to accept a proposed advertisement or not under this Advertising Policy may be based not only on the content of the proposed advertisement, but also on the Broader Materials. 4. In reviewing a commercial advertisement promoting a book, film, television show, audio program (such as a radio show, album or podcast), live event, or other similar form of entertainment (collectively, “Media Products”), the MTA will distinguish between ads where the title of the Media Product and advertising copy merely identify the topic of the Media Product, on the one hand, and ads where the title of the Media Product and advertising copy advocate a position of the advertiser on the issues identified in Section IV.B.1-5 of this Policy, on the other hand. In determining whether a proposed advertisement is not permitted under Section IV.B.1-5 of this Policy, one factor among others that the MTA may consider is whether the advertiser is a media or entertainment company whose business is to regularly engage in the distribution of Media Products.
+[p010_c0007] _7_
+
+## Page 11
+
+- [p011_c0001] 5. The promotion in an advertisement of the sale of bumper stickers, t-shirts, buttons or other similar products with slogans, symbols, images, or logos shall not render an otherwise non-commercial advertisement a commercial advertisement. 6. If the Advertising Review Committee determines that a proposed advertisement does not comply with this Advertising Policy, the advertiser shall be notified by the advertising contractor. If the MTA so desires, the advertising contractor, in consultation with the Advertising Review Committee (or a designee), or the Advertising Review Committee, may discuss with the advertiser revisions to the advertisement to try to bring the advertisement into compliance with the Advertising Standards, and the advertiser may submit a revised advertisement to the advertising contractor for review. This procedure is optional and in the MTA's sole discretion. 7. If the advertiser has received notice that the Advertising Review Committee has determined that a proposed advertisement does not comply with the Advertising Policy, the advertiser may request a final determination from the MTA Chief Administrative Officer or their designee. In reaching a final determination, the MTA Chief Administrative Officer or their designee may consult with the advertising contractor, the Advertising Review Committee, the MTA General Counsel or their designee, other members of MTA leadership, or with any other individuals, and may consider any materials submitted by the advertiser or relevant to the determination. The MTA Chief Administrative Officer or their designee shall advise the advertiser and the advertising contractor of the final determination in writing. 8. The MTA may from time-to-time issue Frequently Asked Questions regarding the Advertising Policy, to assist the public with respect to the Advertising Policy. In the event of any conflict between the FAQ and this Advertising Policy, the Advertising Policy shall control.
+### [p011_c0002] VII. SEVERABILITY
+[p011_c0003] If any section, subsection, sentence, clause, phrase or other portion of this Policy is, for any reason, declared invalid, in whole or in part, by any court of competent jurisdiction, such portion shall be deemed severable, and such invalidity shall not affect the validity of the remaining portions of this Policy, which remaining portions shall continue in full force and effect.
+### [p011_c0004] VIII. EFFECTIVE DATE
+[p011_c0005] This Advertising Policy is effective as of June __, 2025.
+[p011_c0006] _8_

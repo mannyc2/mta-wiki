@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "route_cluster_88f99f53c6",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_88f99f53c6.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_88f99f53c6.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "quarantined",
+  "quarantine": {
+    "blocker": "do_not_merge route_sim11-lex-ave-oct2025 <> route_sim22-42nd-st: reason does not cite a strong identity field | do_not_merge route_sim11-lex-ave-oct2025 <> route_sim26-42nd-st: reason does not cite a strong identity field | do_not_merge route_sim11-lex-ave-oct2025 <> route_sim6-lex-ave-oct2025: reason does not cite a strong identity field | do_not_merge route_sim22-42nd-st <> route_sim26-42nd-st: reason does not cite a strong identity field | do_not_merge route_sim22-42nd-st <> route_sim6-lex-ave-oct2025: reason does not cite a strong identity field | do_not_merge route_sim26-42nd-st <> route_sim6-lex-ave-oct2025: reason does not cite a strong identity field",
+    "note": "Partial: structurally clean actions were auto-accepted in the decisions file with the same cluster_id."
+  },
+  "original_merge_groups": [],
+  "original_do_not_merge": [
+    {
+      "record_ids": [
+        "route_sim11-lex-ave-oct2025",
+        "route_sim22-42nd-st"
+      ],
+      "reason": "Contradiction test: route_id differs (SIM11 vs SIM22). Different routes despite both being express."
+    },
+    {
+      "record_ids": [
+        "route_sim11-lex-ave-oct2025",
+        "route_sim26-42nd-st"
+      ],
+      "reason": "Contradiction test: route_id differs (SIM11 vs SIM26). Different routes."
+    },
+    {
+      "record_ids": [
+        "route_sim11-lex-ave-oct2025",
+        "route_sim6-lex-ave-oct2025"
+      ],
+      "reason": "Contradiction test: route_id differs (SIM11 vs SIM6). Different routes."
+    },
+    {
+      "record_ids": [
+        "route_sim22-42nd-st",
+        "route_sim26-42nd-st"
+      ],
+      "reason": "Contradiction test: route_id differs (SIM22 vs SIM26). Different routes."
+    },
+    {
+      "record_ids": [
+        "route_sim22-42nd-st",
+        "route_sim6-lex-ave-oct2025"
+      ],
+      "reason": "Contradiction test: route_id differs (SIM22 vs SIM6). Different routes."
+    },
+    {
+      "record_ids": [
+        "route_sim26-42nd-st",
+        "route_sim6-lex-ave-oct2025"
+      ],
+      "reason": "Contradiction test: route_id differs (SIM26 vs SIM6). Different routes."
+    }
+  ]
+}

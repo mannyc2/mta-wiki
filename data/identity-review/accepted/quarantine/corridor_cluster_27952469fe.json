@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "corridor_cluster_27952469fe",
+  "kind": "corridor",
+  "packet_path": "data/identity-review/packets/corridor_cluster_27952469fe.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_27952469fe.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "quarantined",
+  "quarantine": {
+    "blocker": "suggestion marks ambiguous: corridor_bus-fwd-2-church-av-brooklyn-local, corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate, corridor_church-av",
+    "note": "Partial: structurally clean actions were auto-accepted in the decisions file with the same cluster_id."
+  },
+  "original_merge_groups": [],
+  "original_do_not_merge": []
+}

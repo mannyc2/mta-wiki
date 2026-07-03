@@ -1,0 +1,545 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_brt-nostrand-progress-report-june2016"
+record_kind: "source"
+display_name: "B44 SBS on Nostrand Avenue Progress Report"
+source_id: "brt_nostrand_progress_report_june2016"
+source_ids:
+  - "brt_nostrand_progress_report_june2016"
+local_observation_id: "source_b44_sbs_progress_report_2016"
+local_observation_ids:
+  - "source_b44_sbs_progress_report_2016"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T18:13:50.176Z"
+submission_ids:
+  - "sub_a48455f8b2202692"
+payload:
+  authority_tier: "plan_document"
+  content_type: "report"
+  date_text: "May 2016"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2016-05"
+    precision: "month"
+    raw_text: "May 2016"
+  published_date_normalized: "2016-05"
+  published_date_precision: "month"
+  publisher: "New York City Transit"
+  title: "B44 SBS on Nostrand Avenue Progress Report"
+  year: 2016
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "brt_nostrand_progress_report_june2016#p001_c0001"
+    page_number: 1
+    source_id: "brt_nostrand_progress_report_june2016"
+    source_path: "raw/sources/brt_nostrand_progress_report_june2016/blocks.jsonl"
+    text_sha256: "sha256:63cee7ef798dea3df890d4a5d638938946c579681a8554afb9e68022af45e6eb"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "brt_nostrand_progress_report_june2016#p001_c0003"
+    page_number: 1
+    source_id: "brt_nostrand_progress_report_june2016"
+    source_path: "raw/sources/brt_nostrand_progress_report_june2016/blocks.jsonl"
+    text_sha256: "sha256:1c3b6fe2605c21d72bdfd1581201694fde75a3f1e00c148f258944eb3874150f"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "brt_nostrand_progress_report_june2016#p001_c0004"
+    page_number: 1
+    source_id: "brt_nostrand_progress_report_june2016"
+    source_path: "raw/sources/brt_nostrand_progress_report_june2016/blocks.jsonl"
+    text_sha256: "sha256:14fa89562f916e43564b23a65e2c8c5b461e15e294a09b13c7d1463a473fad08"
+    text_source: "raw_text"
+  -
+    block_id: "p038_c0002"
+    evidence_id: "brt_nostrand_progress_report_june2016#p038_c0002"
+    page_number: 38
+    source_id: "brt_nostrand_progress_report_june2016"
+    source_path: "raw/sources/brt_nostrand_progress_report_june2016/blocks.jsonl"
+    text_sha256: "sha256:7663140f45a4ea2def300988e2c5350894a1a41ff0fefa3419038e3bbea01ee4"
+    text_source: "raw_text"
+---
+
+# Download the report here (pdf)
+
+source_id: brt_nostrand_progress_report_june2016
+citation: cite block ids exactly as shown in square brackets
+document: 329 block(s)
+
+## Page 1
+
+### [p001_c0001] +selectbuservice
+[p001_c0002] B44 SBS on Nostrand Avenue
+[p001_c0003] Progress Report
+[p001_c0004] New York City Transit
+
+## Page 2
+
+[p002_c0001] Nostrand Avenue & Church Avenue
+[p002_c0002] B44
+[p002_c0003] Southbound +selectbusservice
+[p002_c0004]
+
+```text
+Route Destination Stops away SBS Avenue U 0 LCL Avenue U 0 LCL Knapp Street 1 SBS Avenue U 2 FRI MAR 21 07:48 AM
+```
+[p002_c0005]
+
+```text
+Route Frequency SBS 15 min LCL 15 min WIDE 15 min
+```
+[p002_c0006] WM-NYC
+[p002_c0007] WM-NYC
+
+## Page 3
+
+### [p003_c0001] Table of Contents
+[p003_c0002] 5 Executive Summary 6 Introduction Select Bus Service The B44 Bus Route Issues Project Goals 10 Project Planning Public Outreach Merchant Survey Shopper Survey Service Planning & SBS Station Locations Traffic Planning & Street Design 18 B44 Select Bus Service Elements Bus Lanes Stations & Customer Information Off-board Fare Collection Pedestrian Improvements 22 Implementation Construction Project Launch 24 Project Results Bus Travel Time Bus Delay Customer Satisfaction Bus Ridership Traffic Patterns General Traffic Travel Time Safety 34 Next Steps Speeding Mitigation Washington Plaza Reconstruction Additional Real-Time Bus Arrival Signs
+[p003_c0003] _Table of Contents_
+[p003_c0004] _3_
+
+## Page 4
+
+### [p004_c0001] Executive Summary
+> [p004_c0002] A photograph of a blue and white MTA bus, route B44, stopped at a bus stop. The bus's destination sign displays 'B44' and '+SELECT BUS SERVICE+'. The bus number '519' is visible on the windshield. The front of the bus features the MTA logo and the text '5325 MTA +selectbuservice'. The bus is parked on a red-paved area with the letters 'SMO' painted in large white characters. A white line separates the red area from the grey asphalt. In the background, there are trees with autumn foliage, a bus stop shelter, and a few people. A silver car is visible on the street to the right.
+[p004_c0003] _4_
+
+## Page 5
+
+### [p005_c0001] Executive Summary
+### [p005_c0002] Executive Summary
+[p005_c0003] The B44 has historically been one of the highest ridership bus routes in both Brooklyn and the five boroughs. Running along Nostrand Avenue and adjacent corridors from Williamsburg to Emmons Avenue in Sheepshead Bay, it connects major residential neighborhoods, commercial districts, and educational and health care institutions. The B44 acts as both a subway feeder connecting commuters with the numerous subway lines that cross the route, and a neighborhood connector serving the Junction shopping district, the Nostrand Avenue retail corridor, Brooklyn College, Kings County Medical Center, and other major destinations.
+[p005_c0004] Before Select Bus Service (SBS) was implemented in November 2013, the B44 Limited service was often slow, unreliable, and crowded due to traffic congestion on Nostrand and New York Avenues, high passenger boardings, and double parking. New York City Transit (NYCT) and the New York City Department of Transportation (NYC DOT) worked together to make the bus faster and more reliable through off-board fare collection, bus lanes, a re-routing of the northbound bus from New York Avenue to Rogers Avenue, the consolidation of bus stops, and traffic improvements along the route. The B44 customer experience was further improved with the addition of larger, more comfortable buses, and the installation of bus bulbs with new bus shelters and greenery.
+[p005_c0005] The conversion to Select Bus Service improved transit service, while maintaining the flow of general traffic, and improving safety for all road users. Major project results include:
+- [p005_c0006] • 15-31% improvement in B44 SBS travel times compared to the B44 Limited • 10% B44 SBS ridership increase from 2014 to 2015 (following an initial SBS corridor ridership decline), compared to a 1% decline in overall Brooklyn ridership over the same period. • Maintenance of general traffic speeds along the project corridors, with small reductions in northbound and southbound traffic volume during peak periods • 37% reduction in traffic injuries where crossing distances were shortened with bus bulbs or neckdowns, and a 2% reduction in traffic injuries where bus lanes were added.
+[p005_c0007] Achieving these results required redesign of the street and bus service patterns, which were made possible through an extensive outreach effort involving numerous community stakeholders, the use of locally-sensitive design treatments on different portions of the project corridors, and the strong working relationship between NYC DOT and NYCT. Capital construction of portions of the street and the sidewalk was completed as a joint effort between NYC DOT and the NYC Department of Design and Construction (DDC).
+[p005_c0008] As with all SBS implementations, both NYCT and NYC DOT continue to monitor the performance of the service after its launch. After B44 SBS implementation, NYCT and NYC DOT added two station locations to the B44 SBS, and additional B44 local service. Continued monitoring and future work will focus on reducing vehicular speeding along the project corridors to further enhance safety, and increasing the bus arrival information provided to passengers through the installation of additional real time information screens.
+[p005_c0009] _5_
+
+## Page 6
+
+### [p006_c0001] Introduction
+### [p006_c0002] Introduction
+### [p006_c0003] Select Bus Service
+[p006_c0004] Select Bus Service (SBS) is a joint program between MTA New York City Transit (NYCT) and the New York City Department of Transportation (NYC DOT), which aims to improve transit service through the application of Bus Rapid Transit (BRT) principles to New York City's busiest bus routes.
+[p006_c0005] Through a process that involved detailed analysis and significant public outreach, the two agencies developed a set of recommended routes that would be most appropriate for BRT improvements. A 2004
+[p006_c0006] joint study between NYC DOT and NYCT identified the five corridors which would comprise Phase I of the BRT Program. The first four Phase I corridors (Bx12, M15, M34, & S79) were implemented between 2008 and 2012, with each achieving a 10-20% average reduction in travel time and significant ridership growth. Bus rider satisfaction has also increased where SBS was implemented, with over 95% stating that they are either "satisfied" or "very satisfied" with the new service. The B44 was the fifth and final Phase I SBS route to be implemented, the 6th SBS route overall, and is now one of nine SBS routes in the city.
+> [p006_c0007] A map of New York City showing the locations of six Select Bus Service (SBS) routes. The routes are highlighted in blue. The map includes labels for the boroughs: The Bronx, Queens, Brooklyn, and Staten Island, as well as Westchester and Nassau Counties. Specific SBS routes and their starting points are labeled: Bx41 (Webster Av), Bx12 (Fordham Rd), M60 (125th St / Astoria Blvd), M86 (86th St), M34/M34A (34th St), M15 (1st Av / 2nd Av), S79 (Hylan Blvd), and B44 (Nostrand Av / Rogers Av). A legend at the bottom right indicates that blue lines represent 'Other Existing SBS' and a blue square represents 'Other'. A north arrow is also present.
+[p006_c0008] _Map of SBS Routes Currently in Operation_
+[p006_c0009] Other Existing SBS
+[p006_c0010] _6_
+
+## Page 7
+
+### [p007_c0001] Introduction
+### [p007_c0002] The B44 bus route
+[p007_c0003] The B44 route has historically operated on Nostrand Avenue and New York Avenue between Washington Plaza and Emmons Avenue, exclusively in Brooklyn. The route connects the Nostrand Avenue retail corridor to the Junction shopping district and numerous east-west subway lines serving Downtown Brooklyn and Manhattan. Brooklyn College and SUNY Downstate Medical Center are also important destinations along the route.
+[p007_c0004] The B44 is the 3rd highest ridership bus route in Brooklyn, and the 6th highest in all of New York City. The B44 has historically carried between 35,000 and 40,000 people on an average weekday and 13.6 million annual riders. While the B44 parallels the 2 and 5 subway lines for a portion of its route, the majority of the route provides critical north-south connectivity for the 300,000 residents who live within a 1/4 mile of the service. Of these 300,000 residents who live in the diverse set of communities near the route, approximately 60% commute by transit, and more than half of the households do not own a car.
+### [p007_c0005] Issues
+[p007_c0006] As a result of an extensive data collection and community outreach process, three main issues for the project to address were identified:
+### [p007_c0007] Slow, unreliable, and crowded bus service
+[p007_c0008] Prior to the launch of SBS, the B44 traveled between 6.7 and 7.2 miles per hour on average. For more than half of its travel time, the bus was stopped at either bus stops or red lights, or stopped due to general congestion. Crowding and long lines to board at the busiest stops impacted comfort and service reliability.
+[p007_c0009] _Crowding at the southbound Avenue H stop on Nostrand Avenue near Brooklyn College (pre-SBS)_
+[p007_c0010] _7_
+
+## Page 8
+
+### [p008_c0001] Introduction
+### [p008_c0002] Pedestrian and traffic safety
+[p008_c0003] Both Nostrand Avenue and Rogers Avenue were identified as Vision Zero priority corridors due to their high rate of pedestrian injuries and fatalities. In the two years before implementation, there was an average of 583 traffic injuries per year between Atlantic Avenue and Flatbush Avenue on Nostrand and Rogers Avenues.
+[p008_c0004] _Pedestrian attempting to cross Nostrand Avenue near The Junction (pre-SBS)_
+### [p008_c0005] Maintenance of traffic flow and allocation of street space
+[p008_c0006] Nostrand Avenue is an important corridor for car travel, moving 700 to 1,100 vehicles on average during the peak hour. Before implementation, the street faced regular congestion due to double parking and traffic signal constraints at major cross streets. New York Avenue, which comprised a large portion of the B44 Limited northbound route, faced these same issues, but was even more adversely affected by double parking and congestion due to the narrow width of the street, and the fact that unlike Nostrand and Rogers Avenue, it is primarily a two-way operation, limiting signal coordination. Outside of the AM and PM peak periods, Nostrand Avenue and Rogers Avenue were often underutilized, creating conditions for speeding, and compromising pedestrian safety.
+[p008_c0007] _Heavy traffic volume at Nostrand and St. Johns Place during AM Peak (pre-SBS)_
+[p008_c0008] _8_
+
+## Page 9
+
+### [p009_c0001] Introduction
+### [p009_c0002] Project Goals
+[p009_c0003] Based on these three issues, four main project goals were established:
+- [p009_c0004] 1. Introduce a new, high performance transit option for NYC by improving the speed, reliability, and attractiveness of the B44 2. Provide measurable benefits to existing B44 users and attract new riders 3. Increase street safety across all modes on the project corridors 4. Minimize impact to vehicular traffic flow on project corridors, and more efficiently utilize street space for motorists, transit riders, and pedestrians
+[p009_c0005] _9_
+
+## Page 10
+
+### [p010_c0001] Project Planning
+### [p010_c0002] Project Planning
+### [p010_c0003] Public outreach
+[p010_c0004] Community outreach and stakeholder participation were essential parts of the project, helping to bring local knowledge and feedback into the planning and implementation process. Community contributions came through the Community Advisory Committee (CAC), public open houses, business owner and shopper surveys, and meetings with elected officials and community leaders.
+### [p010_c0005] Community Advisory Committee
+[p010_c0006] The Community Advisory Committee, formed in 2009, was comprised of a broad range of stakeholders including elected officials, community board members, representatives of other governmental organizations, business owners, and leaders of major area institutions. Its role was to provide project guidance, and input on design and policy considerations, while contributing to the outreach process by informing their constituencies about key issues. The CAC met five times between 2009 and June 2012, with each meeting centering on a different theme.
+[p010_c0007] _04-26-2010 CAC Meeting_
+### [p010_c0008] Community Advisory Committee Meetings
+- [p010_c0009] 1. December 8th, 2009 - outreach plan overview, project overview and purpose, SBS overview 2. April 26th, 2010 - station location and design 3. October 27th 2010 - traffic analysis, street changes 4. September 20th, 2011 - shopper and merchant surveys 5. June 19th, 2012 - turn bans, curb management, and construction
+[p010_c0010] _10-04-2011 Public Open House_
+[p010_c0011] _10_
+
+## Page 11
+
+### [p011_c0001] Project Planning
+### [p011_c0002] Public Open Houses
+[p011_c0003] Public open houses were held at key points to involve the community in the planning process and to allow them to provide individualized feedback on design plans. This format allowed community members to have one-on-one conversations with project staff. Three public open houses were held over the course of the project planning process:
+- [p011_c0004] 1. November 15, 2010 - project goals, introduction to Select Bus Service, traffic changes, station locations 2. October 4, 2011 - street design changes, curb regulations, parking regulations, merchant surveys, delivery zones. 3. November 7, 2013 - street design, traffic analysis, shopper surveys
+### [p011_c0005] Stakeholder Meetings and Presentations
+[p011_c0006] In addition to CAC meetings and public open houses, NYC DOT and NYCT met with a variety of organizations and elected officials to gain specific feedback about the project.
+[p011_c0007] These organizations included:
+- [p011_c0008] • Business Improvement Districts and merchant associations • Citizens Advisory Committee to the MTA • Brooklyn community boards within the project area • Elected officials including the Borough President, NYC Council Members, State Senators, and State Assembly Members • Other community stakeholders
+> [p011_c0009] A photograph showing a man in a dark suit pointing at a poster titled "Project Changes: Flatbush Junction Improvements". The poster includes a map and text about "Problems" and "Proposals". A person in a teal hoodie is looking at the poster. The Select Bus Service logo is visible at the bottom of the poster.
+[p011_c0010] _10-04-2011 Public Open House_
+> [p011_c0011] A photograph of two men in suits looking at a poster titled "Parking and Loading Solutions". The poster details "Parking" and "Delivery" zones, with an example of "Church Avenue Truck Delivery Windows". A person in a blue jacket with a green tote bag labeled "EAT STREET SMART" and "NYC Green Cart" is standing nearby, looking at the poster.
+[p011_c0012] _10-04-2011 Public Open House_
+[p011_c0013] _11_
+
+## Page 12
+
+### [p012_c0001] Project Planning
+### [p012_c0002] Merchant Survey
+[p012_c0003] Much of Nostrand Avenue, especially between Fulton Street and Flatbush Avenue, is lined with small storefront businesses. In the summer of 2011, staff from NYC DOT, NYCT, and the Pratt Institute surveyed 192 storefront businesses along Nostrand Avenue between Eastern Parkway and Linden Boulevard. 149 additional businesses were surveyed by mail in a larger area on Nostrand, Rogers, and Bedford Avenues between Flushing Avenue and Avenue I. The survey results were then used as input for developing parking and loading regulations as part of SBS implementation. Information from the surveys was presented to members of the public and business groups in multiple forums, where options for addressing curb use issues were presented for feedback.
+### [p012_c0004] Major Findings:
+- [p012_c0005] • 53% of merchants were concerned about deliveries • 54% were concerned about employee parking • 75% were concerned about customer parking • 57% of businesses typically receive deliveries in the midday, between 10 AM and 4 PM • 88% of deliveries take less than 30 minutes to complete. • 67% expressed interest in a delivery zone either directly in front of their store, across the street, or around the corner.
+### [p012_c0006] Timing of Deliveries on Nostrand Avenue
+> [p012_c0007] Time Interval Percentage 12 - 7 AM 1% 7 - 10 AM 19% 10 AM - 1 PM 31% 1 - 4 PM 26% 4 - 7 PM 13% 7 PM - 12 AM 1% Anytime/Varies 7%
+### [p012_c0008] Delivery Duration on Nostrand Av
+> [p012_c0009] Duration Percentage Less than 10 minutes 52% 10-30 minutes 37% over 30 minutes 12%
+### [p012_c0010] Nostrand Delivery Zone Requests
+> [p012_c0011] Request Percentage A delivery zone in front of your store that is in effect for 2 or 3 hours per day 46% A delivery zone down the block or across the street that is in effect all day 33% A delivery zone around the corner that is in effect all day 10% I prefer the existing situation 11%
+[p012_c0012] _12_
+
+## Page 13
+
+### [p013_c0001] Project Planning
+### [p013_c0002] Shopper Survey
+[p013_c0003] NYCT interviewed 1,186 shoppers on Nostrand Avenue in the summer of 2011 near Glenwood Road, Church Avenue, Empire Boulevard, and Fulton Street.
+[p013_c0004] Survey results were shared with merchants and members of the public.
+### [p013_c0005] Nostrand Avenue Shoppers Mode of Transportation
+> [p013_c0006] Location Walked from home Bus Subway Car - Not parked on SBS Street Car - Parked on SBS Street Car service Other Glenwood Rd 37% 30% 18% 8% 3% 2% 0% Church Ave 52% 18% 16% 6% 5% 2% 2% Empire Blvd 64% 11% 10% 6% 9% 0% 0% Fulton St 51% 20% 21% 3% 2% 2% 2% Percentages <2% not labeled
+- [p013_c0007] • An average of 84% of shoppers came to Nostrand Avenue by walking or taking the bus/subway • An average of 20% of shoppers came to Nostrand Avenue by bus • 11% of Nostrand Avenue shoppers arrived by car, with only 5% finding parking on Nostrand Avenue itself
+[p013_c0008] _13_
+
+## Page 14
+
+### [p014_c0001] Project Planning
+> [p014_c0002] This map illustrates the proposed B44 SBS Project Corridors in Flatbush, Brooklyn. The map shows the following features: B44 SBS Route: Represented by a thick dark blue line running north-south through the Flatbush area. B44 SBS stop: Indicated by a blue circle with a white crosshair. B44 Local & Former Limited Route: Represented by a light blue line running parallel to the SBS route. Former B44 LTD stop: Indicated by a light blue circle. Bus Lane: Represented by a thick red line running parallel to the SBS route. Subway Routes: Indicated by thin grey lines. LIRR Station: Indicated by a black square. Key streets and landmarks shown include: Streets: Taylor St, Hewes St, Flushing Av, Dekalb Av, Gates Av, Lafayette Av, Fulton St, St. John's Pl, Empire Blvd, Clarkson Av, Church Av, Newkirk Av, Farragut Rd, Flatbush Av, Ave D, Ave L, Kings Hwy, Ave U, Ave X, Shore Pkwy, Emmons Av, Knapp St. Subway Lines: WBB Bus Plaza (M, Z), G, A, C, LIRR, B44 LOC, B44 LTD, B49, B44 SBS. Landmarks: South Williamsburg, Bedford Stuyvesant, Crown Heights, Lefferts Gardens, Flatlands, Flatbush, Midwood, Prospect Park, Greenwood Cemetery, Holy Cross Cemetery, Flatbush Av, Sheepshead Bay. Other: ATLANTIC AV, BEDFORD AV, ROGERS AV, BEDFORD AV, NEW YORK AV, OCEAN AV, FLATBUSH AV, LINDEN BL.
+[p014_c0003] _B44 SBS Project Corridors Map_
+[p014_c0004] _14_
+
+## Page 15
+
+### [p015_c0001] Project Planning
+### [p015_c0002] Service Planning & SBS Station Locations
+[p015_c0003] From an early stage in the service planning process, route and station changes were discussed at length with community stakeholders. Passenger origin and destination data from MetroCards was also extensively studied. One of the main outcomes of this process was the decision to change the northbound route for the B44 SBS.
+[p015_c0004] Instead of traveling northbound north of Flatbush Avenue on New York Avenue like the B44 Limited did, the B44 SBS was moved to Rogers Avenue.
+[p015_c0005] The rerouting to Rogers Avenue decreased the length of the northbound route from 9.9 to 9.5 miles, and allowed the northbound route to benefit from being on a wider street with multiple travel lanes. The width of Rogers Avenue helped the bus avoid being slowed by parking maneuvers or double parked vehicles and allowed for the installation of bus lanes and bus bulbs, resulting in reduced travel times and increased amenities for bus customers. B44 Local service was maintained on New York Avenue to continue serving the needs of customers accessing local destinations on that street. These service changes now allow bus customers on both New York Avenue and Rogers Avenue to reach important destinations north of Fulton Street, where the local and SBS routes travel together on Bedford Avenue.
+[p015_c0006] Larger, articulated buses were added to serve the B44 SBS route, increasing comfort and decreasing crowding. 40-foot long, 2-door B44 Limited buses were replaced by 62-foot long, 3-door buses for SBS- the first use of such buses in Brooklyn. Results from previous SBS routes have shown that the increased number of doors combined with off-board fare collection can greatly speed up passenger loading. These larger buses allowed more capacity to be added to the route without major changes to the schedule. 40-foot long, 2-door buses continue to be used on the B44 Local.
+[p015_c0007] Community input was also essential in determining SBS station locations. As part of this process, lesser used stops, especially in the northern and southern portions of the route, were changed from Limited to local only. These stop changes allow for more efficient stop-spacing, which means the B44 spends less time stopped at bus stops, and allows the majority of bus customers to reach major destinations faster. Block-level bus stop changes were also made to maximize safe and efficient operation at intersections, and to allow for the placement of fare machines and street furniture to increase customer convenience and comfort.
+[p015_c0008] Since the B44 SBS implementation, NYC DOT and NYCT have continued to monitor performance and listen to community feedback, leading to post-implementation adjustments to the service. The Gates Avenue and Avenue L stations were added in response to strong public feedback provided after launch, and B44 local service was also increased. Requests were also made for an SBS stop at Avenue R. This request was evaluated but not implemented due to low bus transfer volumes at this stop, and an inability to lengthen the existing stop to accommodate the longer articulated SBS buses due to adjacent residential driveways.
+[p015_c0009] _B44 SBS Bus in Bus Lane_
+[p015_c0010] _15_
+
+## Page 16
+
+### [p016_c0001] Project Planning
+### [p016_c0002] Pre-implementation
+> [p016_c0003] The diagram shows a street cross-section with four lanes. From left to right, the lanes are: a 10-foot wide 'Peak Period Travel / Off-Peak Parking' lane, a 10-foot wide 'Travel Lane', a 10-foot wide 'Travel Lane', and a 10-foot wide 'Parking Lane'. The total width is 40 feet. Pedestrians and a dog are shown on the sidewalks. Buildings are on both sides.
+### [p016_c0004] Post-implementation
+> [p016_c0005] The diagram shows a street cross-section with four lanes. From left to right, the lanes are: a 9-foot wide 'Parking Lane', an 11-foot wide 'SBS' bus lane (highlighted in red), a 10-foot wide 'Travel Lane', and a 10-foot wide 'Peak Period Travel / Off-Peak Parking' lane. The total width is 40 feet. Pedestrians and a dog are shown on the sidewalks. Buildings are on both sides.
+[p016_c0006] _Cross-sections of Nostrand Avenue_
+### [p016_c0007] Traffic Planning & Street Design
+[p016_c0008] NYC DOT and NYCT extensively studied the Nostrand Avenue and Rogers Avenue corridors, collecting and analyzing data on buses, pedestrians, general traffic, parking activity, and the needs of business owners and shoppers. This diversity of data was collected in order to be able to generate regulatory and street design solutions for the project corridors that would make buses faster, while maintaining traffic flow and local access. NYC DOT & NYCT utilized traffic modeling to assess the potential effects that the B44 SBS project would have on traffic flow on the project corridors.
+[p016_c0009] Although Nostrand Avenue and Rogers Avenue accommodate substantial all day travel demand in both directions, the largest volume of traffic is headed northbound in the AM, and southbound in the PM. In order to accommodate peak travel along the project corridors during AM and PM rush hours, curb management techniques and bus lanes were utilized. The peak period parking restriction
+[p016_c0010] and curbside travel lane on Nostrand were moved from the west side to the east side of the street as part of the SBS implementation process. This was done to maintain traffic capacity and to keep all regular travel lanes on the eastern side of the street. Moving the parking restriction cleared the curb on the east side for through and left turning vehicles, and eliminated the condition where general traffic traveling along the west curb was conflicting with bus stops. Therefore, moving the peak period curbside travel lane to the east side of the street increased the effectiveness of the travel lanes. A similar treatment was applied on Rogers Avenue where peak-period parking restrictions were moved from the east side to the west side of the street.
+[p016_c0011] As a means of further accommodating general traffic, reverse peak parking restrictions were also added, providing a curbside travel lane for southbound vehicles in the AM peak on Nostrand Avenue and northbound vehicles in the PM peak on
+[p016_c0012] _16_
+
+## Page 17
+
+### [p017_c0001] Project Planning
+[p017_c0002] Rogers Avenue. This decision was made because of moderate traffic volumes in the reverse peak direction. These changes created a 10 AM – 4 PM window of time for deliveries, truck loading, or customer parking to occur in the middle of the day.
+[p017_c0003] A “delivery window” reserved for commercial vehicles was selected to match the results of the merchant survey; typically this is 10 AM – 12 PM on the east side of the street, and 12 – 2 PM on the west side of the street, with longer regulations where needed. Before loading zones were added, trucks making deliveries to local shops had trouble accessing the curb in front of their target business because the space was being used for general metered parking or unregulated, all-day car storage. Adding loading zones to the commercial sections of Nostrand Avenue
+[p017_c0004] and Rogers Avenue has opened curb space for deliveries, reducing the need for double-parking.
+[p017_c0005] In addition to street design changes, signal timing changes were instituted along the project corridors to alleviate traffic delay. Northbound-southbound green time was added at Linden Boulevard, and the coordination of the signals approaching Eastern Parkway was improved. These implementations were designed to improve traffic flow along the corridor for buses and other traffic.
+[p017_c0006] As part of the environmental review process, the project plan qualified as a Type II action under local (CEQR) guidelines and as a Categorical Exclusion under federal (NEPA) guidelines.
+[p017_c0007] _Trucks accessing the curb at Nostrand Avenue and Martense Street (post-implementation)_
+[p017_c0008] _17_
+
+## Page 18
+
+### [p018_c0001] B44 Select Bus Service Elements
+### [p018_c0002] B44 Select Bus Service Elements
+[p018_c0003] _B44 SBS in offset bus lane leaving bus bulb station_
+### [p018_c0004] Bus Lanes
+[p018_c0005] Bus lanes were added to Nostrand Avenue and Rogers Avenue in order to better organize the street, increase safety, and to better provide for the large number of buses and bus customers. The cross-sections on page 16 show the alignment of Nostrand Avenue before and after SBS implementation. The main difference is the addition of an offset bus lane, which uses the travel lane adjacent to the curbside lane for exclusive bus travel. The offset configuration was selected because of its increased effectiveness in remaining free of blockages, while preserving curbside space for parking. In other portions of the route, curbside bus lanes were implemented where available space for general traffic was a concern.
+[p018_c0006] In total there were 9.6 miles of bus lanes implemented along the B44 SBS counting both directions of travel, covering just over half of the route.
+[p018_c0007] The bus lane accommodates the high volume of buses, as well as any vehicles turning right at the next intersection, and therefore serves a significant portion of general traffic. The remaining middle travel
+[p018_c0008] lane is therefore clearer of double parked vehicles and left turners due to curb management improvements, and is free of buses and right turners due to the addition of the bus lane, making it highly efficient for through vehicles.
+### [p018_c0009] Off-board Fare Collection
+[p018_c0010] Off-board fare collection was implemented as part of the conversion to SBS. Before the bus arrives, passengers pay their fare using their MetroCards or coins at machines installed at every bus stop to obtain a receipt. When the bus arrives, most customers can board the bus through any
+[p018_c0011] _Bus bulb station at Nostrand Avenue and Parkside Avenue with shelter and added greenery_
+[p018_c0012] _18_
+
+## Page 19
+
+### [p019_c0001] B44 Select Bus Service Elements
+[p019_c0002] door and do not need to interface with the bus operator, though customers who paid with coins and need a transfer to another bus must ask the bus operator for a transfer. Roving fare inspectors then ask customers to present their tickets on-board buses.
+[p019_c0003] Prior to the implementation of off-board fare collection with SBS, customers had to line up at the front of the bus and dip their MetroCards or insert change one by one, a lengthy process. Results from other SBS routes around the city have demonstrated that off-board fare collection significantly reduces the amount of time that buses spend stopped at bus stops.
+[p019_c0004] _Real-time bus arrival sign with pedestrian wayfinding information_
+### [p019_c0005] Stations and Customer Information
+[p019_c0006] Rider comfort is one of the major aspects of Select Bus Service. One type of rider-focused improvement implemented along the B44 route is the bus bulb. Bus bulbs are locations where sidewalks have been widened to meet an offset bus lane or general travel lane. Bus bulbs provide more room for people to wait, create more space for amenities like bus shelters, benches, and landscaping, and allow buses to pull straight into and out of stations without pulling over. These stations also have a high curb nearly level with the lower floor of the Select Bus
+[p019_c0007] Service buses, making it easier and faster for all passengers to get on and off the bus. In total, fifteen bus bulbs were constructed—eight on Nostrand Avenue and seven on Rogers and Bedford Avenues.
+[p019_c0008] Another aspect of the Select Bus Service toolkit is improved customer service information. For the November 2013 launch, one real-time information sign was installed at the Church Avenue stop on Nostrand Avenue. These signs are valuable because they provide easy access to bus arrival information, and display static maps. Real time information signs are being installed at at least 18 more stops along the route to give passengers bus arrival information and wayfinding to orient them to their place along the route and their location within the city.
+[p019_c0009] As of February 2014, Bus Time information was made available throughout Brooklyn, including on the B44 SBS route, accessible via text message, smartphone app, or web interface.
+[p019_c0010] Customer information was also improved with the installation of strip maps in bus shelters with clear routing and station information.
+[p019_c0011] _Customer ambassadors helping customers use the fare machines during the first weeks of B44 SBS service_
+[p019_c0012] _19_
+
+## Page 20
+
+### [p020_c0001] B44 Select Bus Service Elements
+### [p020_c0002] Pedestrian improvements
+[p020_c0003] As part of the B44 Select Bus Service implementation, 15 bus bulbs and 5 neckdowns (curb extensions at intersection crosswalks) were installed on the project corridors. In addition to serving bus riders, bus bulbs also widen the sidewalk for pedestrians at bus stops. Where bus bulbs are located at the intersection, they shorten crossing distances, making it easier to cross the street. Because of street width
+[p020_c0004] constraints south of Flatbush Avenue, all bus bulbs were constructed north of Flatbush Avenue in the main bus lane portion of the route.
+[p020_c0005] Neckdowns, which also shorten crossing distances, were installed at locations identified by school safety studies. Though neckdowns do not directly improve bus operations, they were installed as part of the overall effort to improve pedestrian safety along the project corridors.
+[p020_c0006] _Bus Bulb on Nostrand Avenue at Gates Avenue (SW corner)_
+[p020_c0007] _Neckdown on Lafayette Avenue at Nostrand Avenue (SW Corner)_
+[p020_c0008] _20_
+
+## Page 21
+
+### [p021_c0001] B44 Select Bus Service Elements
+> [p021_c0002] This map illustrates the B44 Select Bus Service (SBS) route in Queens, New York. The route is depicted as a thick dark blue line, with a red line indicating the bus lanes. The map shows the route running north-south, with several street crossings and landmarks. Key streets labeled include Flushing Av, Park Av, DeKalb Av, Kosciusko St, Lafayette Av, Gates Av, Halsey St, Fulton St, Herkimer St, St. John's Pl, Lincoln Pl, Empire Bl, Sterling St, Parkside Av, Clarkson Av, Martense St, Church Av, Avenue D, and Newkirk Av. Other streets shown include Bedford Av, Flatbush Av, Broadway, Atlantic Av, Eastern Pkwy, Linden Blvd, Rogers Av, Nostrand Av, and Ocean Pkwy. The map also identifies parks in light green. A legend in the bottom right corner defines the symbols: a green circle for Bus Bulbs, an orange square for Neckdowns, a red line for Bus Lanes, a dark blue line for the B44 SBS Route, and light green for Parks. The map shows the route starting from the south near Nostrand Av and ending near Flushing Av, with several bus bulbs and neckdowns along the way.
+[p021_c0003] _Map of Pedestrian Infrastructure Improvements_
+[p021_c0004] _21_
+
+## Page 22
+
+### [p022_c0001] Implementation
+### [p022_c0002] Implementation
+### [p022_c0003] Construction
+[p022_c0004] The B44 SBS project timeline began in fall 2011 with final design work. Construction south of Atlantic Avenue occurred between spring and fall of 2013, and included the construction of bus bulbs, neckdowns, and bus pads, repaving the street, and installing bus lanes and new gantry-style bus lane signs. B44 Select Bus Service launched in November 2013.
+[p022_c0005] In parallel to the construction south of Atlantic Avenue, DDC performed a full street reconstruction project between Flushing Avenue and Atlantic Avenue. The significant
+[p022_c0006] subsurface and utility work (unrelated to Select Bus Service) was completed in September 2014. This work affected the southbound B44 SBS for more than a year after the start of service, slowing service and discouraging ridership, but addressed an important roadway infrastructure need. Remaining surface work on the Flushing Avenue to Atlantic Avenue section, which included the construction of three bus bulbs and bus lane painting, continued until final completion in October 2015, after which post-SBS travel time data was collected for this section.
+> [p022_c0007] The diagram is a horizontal timeline from Fall 2011 to Winter 2015. It shows two main project tracks: SBS Construction on Nostrand Avenue south of Atlantic Avenue, and on Bedford and Rogers Avenues: Final Design (Fall 2011 - Winter 2012) Contract Bidding (Winter 2012 - Spring 2013) Surface Construction (Spring 2013 - Fall 2013) Start of SBS Service (Fall 2013) SBS Service Operating (Winter 2013 - Winter 2015) Nostrand Avenue Reconstruction: Flushing Avenue to Atlantic Avenue: Utility Work (Fall 2011 - Spring 2014) Subsurface Construction (Spring 2014 - Fall 2014) Surface Construction (Fall 2014 - Winter 2015)
+[p022_c0008] _B44 SBS Project Implementation Timeline_
+> [p022_c0009] A photograph showing a street scene on Rogers Avenue. A red bus lane is being painted on the asphalt. Several workers in high-visibility vests are visible near the painted area. Buildings and parked cars are in the background.
+[p022_c0010] _Bus lane painting on Rogers Avenue_
+> [p022_c0011] A photograph of a construction site on Rogers Avenue at Parkside Avenue. A bus bulb is being installed in a concrete base. A traffic signal pole stands nearby. Construction equipment, including an orange traffic cone and a green utility box, is visible. The area is surrounded by buildings and trees.
+[p022_c0012] _Bus bulb construction on Rogers Avenue at Parkside Avenue_
+[p022_c0013] _22_
+
+## Page 23
+
+### [p023_c0001] Implementation
+### [p023_c0002] Project Launch
+[p023_c0003] The elements described in the “B44 Select Bus Service Elements” section of this report were substantially in place for the Select Bus Service launch on November 17, 2013 . In the weeks prior to the beginning of SBS service, a public open house was held in order to inform bus riders about the upcoming changes, and notices were posted on the buses, in subway stations, and at all B44 SBS stops. For the first two weeks of service, a team of NYCT and NYC DOT employees were stationed as customer ambassadors at all SBS stations. These ambassadors assisted riders in all aspects of using the service, with a focus on explaining the new fare payment system to riders.
+[p023_c0004] _(from left to right) MTA Chairman Tom Prendergast, Mayor Michael Bloomberg, DOT Commissioner Janette Sadik-Khan, MTA Bus President Darryl Irick, and NYCT President Carmen Bianco at the press conference introducing B44 SBS on November 18, 2013_
+[p023_c0005] _Customer ambassadors helping customers at SBS station during first two weeks of service_
+[p023_c0006] _23_
+
+## Page 24
+
+### [p024_c0001] Project Results
+### [p024_c0002] Project Results
+### [p024_c0003] Bus travel time
+[p024_c0004] The total northbound bus route travel times after SBS implementation were 31% faster in the AM and 20% faster in the PM than pre-implementation travel times. Total southbound travel times post-implementation were 19% faster in the AM and 15% faster in the PM compared to pre-implementation travel times.
+[p024_c0005] This large reduction in northbound travel times is likely driven by the improvements in the northern segment that were made possible by the rerouting the B44 SBS to Rogers Avenue. Additionally, the full-route improvement is not as large as some of the improvements seen on individual segments because portions of the route, particularly in the northernmost and southernmost sections did not have bus lanes added. Taken together, these percentage reductions in travel time amount to 15-28
+[p024_c0006] minutes saved for commuters traveling the majority of the route in either direction.
+[p024_c0007] The southern segment of the northbound route between Knapp Street at Shore Parkway and Nostrand Avenue at Flatbush Avenue saw a decrease in travel times of 14% in the AM and 12% in the PM. The northern segment of the northbound route achieved even greater travel time savings, due largely to the reroute of the SBS from New York Avenue onto Rogers Avenue and the accompanying street design and signal changes. Travel times on the northbound segment between Nostrand at Flatbush Ave and New York Ave/Bedford Ave at Fulton Street, which corresponds to the main bus lane section, decreased by 37% in the AM and 33% in the PM.
+[p024_c0008] Southbound travel times between Nostrand Avenue at Fulton Street and Nostrand
+### [p024_c0009] B44 Travel Time (in minutes) - Entire Route
+> [p024_c0010] Direction Time Period Pre-SBS (min) Post-SBS (min) % Change Northbound 6 AM - 10 AM 89 61.2 31% Southbound 6 AM - 10 AM 77.7 62.6 19% Northbound 3 PM - 7 PM 83.1 66.7 20% Southbound 3 PM - 7 PM 82.9 70.1 15%
+[p024_c0011] _Entire route travel time change before and after SBS_
+[p024_c0012]
+
+```text
+Direction Start Point End Point Period Pre-SBS Post-SBS % Change NB Nostrand at Flatbush New York Ave/Bedford Av at Fulton AM 32.3 20.3 -37% PM 33.5 22.6 -33% Knapp St at Shore Pkwy Nostrand at Flatbush AM 24.9 21.4 -14% PM 28.2 24.8 -12% SB Nostrand at Fulton Nostrand at Flatbush AM 28 22.5 -20% PM 30 23.5 -22% Nostrand at Flatbush Knapp St at Shore Pkwy AM 27.6 19.7 -29% PM 32.3 21.1 -35%
+```
+[p024_c0013] _B44 travel time change by segment_
+[p024_c0014] _24_
+
+## Page 25
+
+### [p025_c0001] Project Results
+[p025_c0002] Avenue at Flatbush Avenue decreased by 19% in the AM peak period and 22% in the PM peak period. This improvement in travel time and speed is noteworthy due to the heavy retail activity, congestion, and double-parking often seen on this portion of the route. Improvements in traffic operations can be attributed to the expansion of the No Standing curbside regulations to both AM and PM peaks (it was previously just PM peak), the addition of commercial loading zones, and the relocation of the No Standing peak period travel lane to the east side of the street and away from the bus stops.
+[p025_c0003] There were even greater improvements in southbound travel times between Nostrand Avenue at Flatbush Avenue and Knapp Street at Shore Parkway, with decreases of 29% in the AM and 35% in the PM. The larger improvements in this area could be due to the greater stop consolidation south of Flatbush Avenue.
+[p025_c0004] The combination of bus stop consolidation, bus lane implementation, off-board fare collection, and the rerouting of the northbound route to Rogers Avenue proved successful in reducing bus travel times for the B44 SBS in both directions, particularly during the AM and PM peak periods. These changes were particularly impactful in reducing B44 travel times in the northern section of the northbound route and in the southern section of the southbound route.
+[p025_c0005] The bus lane and signal improvements on Rogers Avenue also benefitted the B49 local bus, which did not have any route or stop changes. B49 service is operating faster between Rogers Avenue at Foster Avenue and Bedford Avenue at Fulton Street- the area where bus lanes were installed as part
+[p025_c0006]
+
+```text
+Time Period Travel Time (mins) % Change Fall 2012 Fall 2015 AM 26.5 24.6 -7% PM 30 26.7 -11%
+```
+[p025_c0007] _B49 Northbound Travel Time Change in the Bus Lane Section of the route between Rogers Avenue at Foster Avenue and Bedford Avenue at Fulton Street._
+[p025_c0008] of the SBS project. B49 travel times in the bus lane section decreased by 7% in the AM peak and 11% in the PM peak. This demonstrates the benefits that bus lanes and signal timing changes implemented as part of SBS can have for other routes sharing the same corridor.
+### [p025_c0009] Bus Delay
+### [p025_c0010] Sources of Bus Delay Before and After SBS Implementation
+> [p025_c0011] Bus Delay Data Category B44 Limited (min) B44 SBS (min) Percentage of Total Stopped at bus stops 25.8 15.4 31% / 24% Stopped in traffic 20.0 12.5 24% / 19% Bus in motion 37.4 37.3 45% / 57% Total 83.2 65.2
+[p025_c0012] SBS changes to the street and bus service resulted in significant reductions in overall B44 travel time, which were achieved through a combination of factors. First, the B44 SBS spends a higher proportion of its total route travel time in motion than the B44 Limited did. Notably, while the actual time in motion is virtually the same before and after SBS, the in-motion time is now a higher proportion of the total travel time, as time at bus stops and red lights has declined.
+[p025_c0013] The B44 SBS spends less time stopped in traffic or at red lights because of bus lanes that keep the bus separate from general traffic queues, and signal changes that increase the amount of green time available to the bus and improve the coordination between intersections. The B44 SBS spends less time stopped at bus stops than the B44 Limited did because of off-board fare collection, which allows customers to pay their fare before the bus arrives, and more efficient stop spacing, which eliminated lesser used stops.
+[p025_c0014] _25_
+
+## Page 26
+
+### [p026_c0001] Project Results
+### [p026_c0002] Customer Satisfaction
+[p026_c0003] B44 SBS riders were more satisfied with the service on average than B44 Limited riders. This was especially true at higher levels of the satisfaction range, where 46% of B44 SBS riders were very satisfied, compared with 14% of B44 Limited riders before SBS implementation. SBS customer satisfaction levels also compare positively to satisfaction levels on the B44 Local, which were measured before SBS implementation. The B44 SBS also attracted new riders, with 18% of those surveyed being new to the B44. Of those new riders, 43% were primarily attracted by the better service and 12% were attracted by better accessibility.
+[p026_c0004]
+
+```text
+Very satisfied Satisfied Unsatisfied Very unsatisfied B44 Local 14% 72% 12% 2% B44 Limited 14% 76% 9% 1% B44 SBS 46% 46% 5% 2%
+```
+[p026_c0005] _Customer satisfaction on the B44 Local, Limited, and SBS_
+### [p026_c0006] Bus Ridership
+[p026_c0007] Ridership data, as part of NYCT standard procedure, was collected continually throughout the major project construction and implementation periods, which are both highlighted in Figure 30. Year over year B44 ridership initially decreased before stabilizing and beginning to increase at the end of the first year of SBS service. Compared to the ridership in the same month of the prior year, ridership on the B44 remained relatively stable until April 2013, as major corridor construction ramped up.
+[p026_c0008] Beginning in May 2013 and continuing through September 2014, ridership levels remained lower than the year before, with the largest dip in ridership occurring between October 2013 and February 2014. This decrease in ridership can be attributed to major corridor construction and the resulting slowdowns, customers adjusting to the new service, and the unusually bad winter in late
+### [p026_c0009] Average Weekday Ridership Change by Month (% Change from One Year Before)
+> [p026_c0010] The chart displays the year-over-year percentage change in average weekday ridership for two bus types: B44 Total (blue line) and Brooklyn (BK) locals (gray line). The x-axis represents months from January 2012 to December 2015. The y-axis represents the percentage change from one year before, ranging from -25% to 50%. Key features of the chart include: Period of Major Corridor Construction: A shaded gray area from approximately November 2012 to October 2013, indicating a period of significant ridership decline. First Year of SBS Service: A shaded blue area from November 2013 to December 2014, indicating the first year of SBS service. Ridership Totals: B44 Total: 35,798 BK locals: 620,141 Trends: Both bus types show a sharp decline in ridership during the corridor construction period. Ridership recovers after the construction period, with a notable dip in early 2014 followed by a gradual increase through 2015. Approximate Ridership Change Data (%) Month B44 Total (%) BK locals (%) Jan 2012 10 8 Jul 2012 0 0 Nov 2012 0 0 Jan 2013 -2 -1 Apr 2013 -10 -5 Oct 2013 -15 -10 Jan 2014 -20 -15 Jul 2014 0 0 Jan 2015 5 5 Jul 2015 2 2
+[p026_c0011] _Year over year average weekday ridership on the B44 and Brooklyn local buses (2012-2015)_
+[p026_c0012] _26_
+
+## Page 27
+
+### [p027_c0001] Project Results
+[p027_c0002]
+
+```text
+Average Weekday Ridership and % Change from Prior Year 2011 2012 2013 2014 2015 B44 Total 39,516 39,661 37,786 36,016 36,989 -3.1%" +0.4%" -4.7%" -4.7%" +2.7%" Brooklyn locals 640,056 641,773 634,406 620,976 615,432 -4.3%" +0.3%" -1.1%" -2.1%" -0.8%"
+```
+[p027_c0003] _Figure 31: Yearly Averages of Average Weekday Ridership (2011-2015)_
+[p027_c0004] 2013, early 2014. The weather also impacted all Brooklyn local bus ridership (gray line), which dipped during this period as well. B44 ridership began trending upward in November 2014, with ridership levels remaining higher than the prior year through the end of 2015. These 5-10% B44 ridership gains were not mirrored by Brooklyn local bus ridership as a whole, which fell slightly in 2015.
+[p027_c0005] The downward trend in both B44 and Brooklyn local bus ridership began a few years before B44 SBS planning began in 2010, and continued until 2012, which saw slight gains in both B44 and Brooklyn local bus ridership. B44 ridership and Brooklyn local bus ridership had similar general trends
+[p027_c0006] throughout project planning, construction, and implementation until 2015 when B44 ridership gained even as Brooklyn local bus ridership fell.
+[p027_c0007] Recent ridership numbers broken out by service type show significant SBS ridership gains since the launch of service and the completion of construction.
+[p027_c0008] Since the start of 2014, B44 SBS ridership has increased by 10%. Over this same time period, B44 Local ridership dropped 4%, and Brooklyn borough-wide ridership dropped 1%. B44 SBS ridership has continued to grow steadily despite borough-wide trends.
+### [p027_c0009] Average Weekday Ridership (2014 - present)
+> [p027_c0010] 2014 Averages B44 SBS: 17,249 B44 local: 18,767 2015 Averages B44 SBS: 18,986 (+10%) B44 local: 18,035 (-4%)
+[p027_c0011] _Post-Implementation Average Weekday Ridership for B44 SBS and B44 local (2014 & 2015)_
+[p027_c0012] _27_
+
+## Page 28
+
+### [p028_c0001] Project Results
+### [p028_c0002] B44 and B49 Northbound Ridership on New York and Rogers Avenues
+[p028_c0003] In order to evaluate the effects of moving the northbound route from New York Avenue to Rogers Avenue for SBS, northbound ridership trends between Flatbush Avenue and Fulton Street were examined. This change resulted in the B44 northbound Local remaining on New York Avenue, and the B44 northbound SBS operating on Rogers Avenue with the B49. In particular, this analysis explored the change in total northbound ridership on the two corridors combined, and the ridership dynamic between the B44 SBS and the B49 in the new section of route overlap.
+[p028_c0004] The rerouted section therefore includes five SBS stops – Avenue D, Church Avenue, Clarkson Avenue, Empire Boulevard, and St. John’s Place – all of which are adjacent to B49 stops, and have corresponding stops on New York Avenue. Due to gaps in data before the advent of MTA Bus Time, pre and post-
+[p028_c0005] implementation per-stop ridership data was only available at two of the five stop locations for all of the routes of interest. For a pre-SBS ridership snapshot, March 2010 B44 data and February 2013 B49 data were used. The pre and post-implementation B44 Limited/SBS, B44 Local, and B49 ridership results for Avenue D and Church Avenue are shown below.
+[p028_c0006] Combining the data from the two cross-streets in the rerouted section, pre-SBS B44 Limited ridership on New York Avenue was 34% higher than May 2014 SBS ridership, indicating a post-implementation ridership decline similar to, but larger than, the ridership trend on the whole route. B49 ridership at Avenue D and Church Avenue stops on Rogers Avenue decreased by 35% from pre-SBS to May 2014.
+[p028_c0007] These declines reflect the lingering effects of construction on Rogers Avenue, and may speak to the initial effect of the changed
+### [p028_c0008] Average Daily Ridership at Avenue D and Church Avenue Stops on Rogers Avenue
+> [p028_c0009] Avenue D Stops Church Avenue Stops Pre-SBS May 2014 May 2015 Pre-SBS May 2014 May 2015 B44 Limited/SBS: 903 B44 Local: 288 B49: 139 Total: 1330 B44 Limited/SBS: 556 B44 Local: 415 B49: 61 Total: 1032 B44 Limited/SBS: 749 B44 Local: 420 B49: 72 Total: 1241 B44 Limited/SBS: 1026 B44 Local: 544 B49: 277 Total: 1847 B44 Limited/SBS: 722 B44 Local: 700 B49: 209 Total: 1631 B44 Limited/SBS: 1007 B44 Local: 683 B49: 326 Total: 2016 Legend: ■ B44 Limited/SBS ■ B44 Local ■ B49
+[p028_c0010] _Average Daily Ridership at Avenue D and Church Avenue stops on Rogers Avenue (B44 SBS & B49) and New York Avenue (B44 Limited & B44 Local)_
+[p028_c0011] _28_
+
+## Page 29
+
+### [p029_c0001] Project Results
+[p029_c0002] service patterns. B44 local ridership at these two stops on New York Avenue increased 34% from pre-SBS to May 2014, likely reflecting a shift of some former B44 Limited riders to the local service which remained on New York Avenue. In total, general northbound ridership at these two cross-street streets decreased 16% from pre-SBS to May 2014.
+[p029_c0003] The ridership trend changed towards positive ridership gains after May 2014. Between May 2014 and May 2015, B44 SBS ridership at Avenue D and Church Avenue increased 37%, roughly recovering to pre-implementation levels. Over this same time period, B49 ridership increased 47%, and total northbound ridership increased by 22%. Month by month average daily ridership per-stop reveals a steady linear increase in year-over-year ridership, so the trend in increasing ridership is not limited to May-to-May comparisons.
+[p029_c0004] Due to bus lanes and signal timing changes on Rogers Avenue, the resulting 33-37% travel time reductions on the B44 SBS and 7-11% travel time reductions on the B49 are likely contributing to the current upward trend in ridership. At the same time, B44 local ridership has stabilized, declining 1% between May 2014 and May 2015 on New York Avenue. Currently, total northbound ridership at these
+[p029_c0005] two cross-streets is approximately 3% higher than pre-SBS levels.
+[p029_c0006] To examine the effect of the B44 SBS rerouting on the B49, which was already operating on Rogers Avenue, B49 Local ridership at the five stops in the rerouted section was analyzed. At seven time points scattered over the seven year period from 2009 to 2015, ridership was measured at each of the five stops. From September 2009 through May 2014, there was a declining trend in ridership at these five B49 stops, the origins of which predate the SBS project and all associated construction on Rogers Avenue.
+[p029_c0007] B49 ridership at the five stops then begins to increase after May 2014, even with the addition of potentially competing B44 SBS service on Rogers Avenue. Because the upward trend in ridership closely coincides with the launch of the B44 SBS, this indicates that B49 customers are not being “stolen” by the B44 SBS. Instead, new riders may be attracted to the B49 because the new bus lanes have improved B49 travel times. Some additional ridership on the B49 may also be attributed to customers choosing to wait on Rogers Avenue for the SBS but choosing to ride a B49 if it arrives first.
+[p029_c0008] _B49 Ridership at Stops Affected by B44 SBS Reroute (2009-2015)_
+> [p029_c0009] Time Point Total Ridership September 2009 1,305 November 2011 1,106 February 2013 760 May 2014 487 October 2014 525 May 2015 665 October 2015 699
+[p029_c0010] _29_
+
+## Page 30
+
+### [p030_c0001] Project Results
+### [p030_c0002] Traffic Patterns
+[p030_c0003] NYC DOT collected traffic data on Nostrand Avenue, Rogers Avenue, and neighboring parallel streets to determine the effect of SBS implementation on traffic volumes. This analysis was performed south of the Nostrand Avenue DDC street reconstruction area to minimize the effects of that street work on the analysis.
+[p030_c0004] During the PM peak, the 141 vehicle volume reduction at Eastern Parkway and the 91 vehicle reduction at Empire Boulevard coincided with 69, 99, and 50 vehicle additions on Washington Avenue, Bedford Avenue, and Brooklyn Avenue respectively. This means that a small amount of traffic may have diverted from Nostrand onto parallel southbound alternative streets in the PM. In the AM reverse peak, the 114 vehicle volume reduction on Nostrand did not coincide with consistent volume additions on parallel corridors. It is not clear where these AM vehicles rerouted or if they dispersed within the larger Brooklyn street grid.
+[p030_c0005] Similar volume reductions were observed on Rogers Avenue, with evidence of traffic diversion to parallel northbound streets in the AM peak. Between 7:45 and 8:45 AM, three out of the four northbound parallel streets saw added volume totaling 111 vehicles, coinciding with a 146 vehicle volume reduction on Rogers Avenue at Empire Boulevard. In the PM, the 92 vehicle volume reduction on Rogers Avenue did not coincide systematically with added volume on neighboring streets. In fact, three out of four of the northbound alternatives actually lost volume at Empire Boulevard indicating that the volume lost from Rogers Avenue did not divert to local parallel routes.
+> [p030_c0006] Map A shows the AM Peak (7:45 - 8:45 AM) traffic volume changes for the B44 SBS Route. The map displays the route and surrounding streets including Washington Av, Bedford Av, Brooklyn Av, Rogers Av, Nostrand Av, Flatbush Av, Lincoln Pl, Eastern Py, Empire Bl, Lenox Rd, Linden Bl, and Church Av. The legend indicates 'Before Implementation Traffic Volumes' in grey and 'After Implementation Traffic Volumes' in blue. The following table summarizes the data points shown on the map: Street Before Implementation Traffic Volumes After Implementation Traffic Volumes Change Washington Av - +55 +55 Bedford Av - +61 +61 Brooklyn Av - -18 -18 Rogers Av - -114 -114 Nostrand Av - -27 -27 Empire Bl - -52 -52 Eastern Parkway - -146 -146
+> [p030_c0007] Map B shows the PM Peak (5:15 - 6:15 PM) traffic volume changes for the B44 SBS Route. The map displays the route and surrounding streets including Washington Av, Bedford Av, Brooklyn Av, Rogers Av, Nostrand Av, Flatbush Av, Lincoln Pl, Eastern Py, Empire Bl, Lenox Rd, Linden Bl, and Church Av. The legend indicates 'Before Implementation Traffic Volumes' in grey and 'After Implementation Traffic Volumes' in blue. The following table summarizes the data points shown on the map: Street Before Implementation Traffic Volumes After Implementation Traffic Volumes Change Washington Av - +69 +69 Bedford Av - +99 +99 Brooklyn Av - +50 +50 Rogers Av - -91 -91 Nostrand Av - -64 -64 Empire Bl - -172 -172 Eastern Parkway - -141 -141
+[p030_c0008] _Southbound volume change on Nostrand and parallel streets at Empire Boulevard in the (a) AM Peak and (b) PM Peak_
+[p030_c0009] _30_
+
+## Page 31
+
+### [p031_c0001] Project Results
+> [p031_c0002] AM Peak (7:45 - 8:45 AM) Volume Changes Street Before Implementation After Implementation Change Flatbush Av - +27 +27 Washington Av - +52 +52 Bedford Av - -146 -146 New York Av - +32 +32 Empire Bl - -84 -84 Lenox Rd - -537 -537 Linden Bl - -90 -90 Church Av - - -
+> [p031_c0003] PM Peak (5:15 - 6:15 PM) Volume Changes Street Before Implementation After Implementation Change Flatbush Av - -19 -19 Washington Av - +28 +28 Bedford Av - -92 -92 New York Av - -37 -37 Empire Bl - -10 -10 Lenox Rd - -118 -118 Linden Bl - -2 -2 Church Av - - -
+[p031_c0004] _Northbound volume change on Rogers and parallel streets at Empire Boulevard in the (a) AM Peak and (b) PM Peak_
+### [p031_c0005] General Traffic Travel Time
+[p031_c0006] The addition of bus lanes between Atlantic Avenue and Flatbush Avenue resulted in varied changes to traffic speeds on the project corridors. Peak period travel times on both Nostrand Avenue and Rogers Avenue increased slightly from pre to post-implementation, partly due to the
+[p031_c0007] addition of the bus lane. Reverse peak travel times decreased on both Nostrand Avenue and Rogers Avenue, reflecting the capacity added by the reverse peak parking restriction. The large 15 to 31% reductions in bus travel time resulting from the SBS project are not accompanied by substantially longer travel times for motorists.
+### [p031_c0008] General Traffic Travel Time (minutes)- North of Flatbush Ave
+> [p031_c0009] General Traffic Travel Time (minutes) - North of Flatbush Ave Direction Peak Pre-SBS (min) Post-SBS (min) Change (%) Northbound AM Peak (7:45 - 8:45 AM) 19.0 19.8 4% Southbound AM Peak (7:45 - 8:45 AM) 21.8 21.5 2% Northbound PM Peak (5:15 - 6:15 PM) 18.3 16.7 9% Southbound PM Peak (5:15 - 6:15 PM) 21.8 22.6 4%
+[p031_c0010] _General traffic travel time change north of Flatbush Avenue_
+[p031_c0011] _31_
+
+## Page 32
+
+### [p032_c0001] Project Results
+[p032_c0002] The traffic story is complex, varying by segment, time of day, and direction of travel. However, some trends were evident in the results. Corresponding to the geographic
+[p032_c0003] extents of the PM parking restriction on Rogers Avenue, northbound speeds north of Flatbush in the PM reverse peak period were 10% faster after SBS implementation. The signal
+> [p032_c0004] A. AM Peak: 7:45 - 8:45 AM SB Speeds Up 2% North of Flatbush NB Speeds Down 4% North of Flatbush NB Speeds Down 7% South of Flatbush SB Speeds Up 2% South of Flatbush Speed (MPH) Change Greater than -2.5 -2.5 to -.5 -.5 to .5 .5 to 2.5 Greater than 2.5 Signal Mitigations Bus Lane NB SB Map labels: FLUSHING AV, MYRTLE AV, LAFAYETTE AV, GATES AV, FULTON ST, ST. MARKS AV, ATLANTIC AV, EASTERN PKWY, STERLING PL, CARROLL ST, MIDWOOD ST, EMPIRE BLVD, LINDEN BLVD, CLARKSON AV, BEVERLY RD, CHURCH AV, NEWKIRK AV, FARRAGUT RD, AVENUE I, FLATBUSH AV, AVENUE M, AVENUE P, AVENUE S, AVENUE V, AVENUE Z, BELT PKWY, KINGS HWY, EMMONS AV.
+[p032_c0005] _Speed Change by Segment on the Project Corridors in the (a) AM Peak and (b) PM Peak_
+[p032_c0006] _32_
+
+## Page 33
+
+### [p033_c0001] Project Results
+[p033_c0002] mitigations at Linden Boulevard and Eastern Parkway also showed direct benefits, resulting in .5 to 2.5 MPH increases in average speed for traffic approaching these intersections in
+[p033_c0003] the peak direction and .5 to 5 MPH increases approaching in the non-peak direction.
+> [p033_c0004] B. PM Peak: 5:15 - 6:15 PM Flushing AV, Lafayette AV, Fulton St, St. Marks Av, Eastern Pkwy, Empire Blvd, Clarkson Av, Church Av, Newkirk Av, Avenue I, Flatbush Av, Avenue M, Avenue P, Avenue S, Avenue V, Avenue Z, Belt Pkwy, Myrtle Av, Gates Av, Atlantic Av, Sterling Pl, Carroll St, Midwood St, Linden Blvd, Beverly Rd, Farragut Rd, Kings Hwy. Speed (MPH) Change Greater than -2.5 -2.5 to -.5 -.5 to .5 .5 to 2.5 Greater than 2.5 Signal Mitigations Bus Lane NB SB NB Speeds Up 10% North of Flatbush SB Speeds Down 4% North of Flatbush NB Speeds Down 1% South of Flatbush SB Speeds Up 1% South of Flatbush
+[p033_c0005] _33_
+
+## Page 34
+
+### [p034_c0001] Project Results
+### [p034_c0002] Safety
+[p034_c0003]
+
+```text
+Injuries Per Year Average Before After % Change 2014 Bus Lane Section 583 574 -2% Sidewalk Extension Intersections 100 63 -37%
+```
+[p034_c0004] _Per Year Traffic Injuries Before and After SBS Implementation_
+[p034_c0005] Both Nostrand Avenue from Flushing Avenue to Emmons Avenue and Rogers Avenue from Dean Street to Farragut Road are Vision Zero priority corridors due to the high volume and severity of pedestrian injuries. This Vision Zero designation occurred after the implementation of SBS, but was based on data collected prior to the SBS project. In the last 4 years, 68 pedestrians were killed or seriously injured on Nostrand Avenue, and 22 were killed or
+[p034_c0006] seriously injured on Rogers Avenue between Dean Street and Farragut Road.
+[p034_c0007] As part of the street redesign for SBS, bus lanes, bus bulbs, and neckdowns were built, all of which have the potential to improve safety on a street. Between Atlantic and Flatbush Avenue, where bus lanes were installed on Nostrand and Rogers Avenues, traffic injuries were reduced by 2% after SBS implementation.
+[p034_c0008] At intersections where bus bulbs or neckdowns extended the sidewalk and shortened pedestrian crossing distances, traffic injuries were reduced by 37%. This indicates that although bus lanes themselves didn't play a large role in increasing safety, bus bulbs and neckdowns had a large positive impact.
+[p034_c0009] _Bus bulbs with high curb construction like this one at Nostrand Avenue and Kosciuszeko Street shorten crossing distances for pedestrians, and make it easier for the bus to reach the curb to deploy the ramp for level wheelchair boardings._
+[p034_c0010] _34_
+
+## Page 35
+
+### [p035_c0001] Project Results
+[p035_c0002] _Page intentionally left blank_
+[p035_c0003] _35_
+
+## Page 36
+
+### [p036_c0001] Next Steps
+### [p036_c0002] Next Steps
+[p036_c0003] _Map of Spot Speed Count Locations_
+### [p036_c0004] Speeding Mitigation
+[p036_c0005] Due to recent speeding concerns along the project corridors, NYC DOT collected speed data at 13 locations- 8 along Nostrand Avenue and 5 along Rogers Avenue. The data showed that speeding was prevalent in the AM and PM peaks on Rogers Avenue, matching community feedback. Few instances of speeding were observed on Nostrand Avenue. The blocks with the most speeding were Rogers Avenue between Prospect Place & Saint Marks Avenue and Rogers Avenue between Hawthorne Street & Fenimore Street. DOT is currently restoring PM parking and some AM parking on Rogers Avenue between Beverly Road and Maple Street, in order to narrow the roadway and lessen opportunities for speeding, while still maintaining traffic flow.
+[p036_c0006]
+
+```text
+Loc On Street From Street To Street AM Peak (7-10 AM) MD Peak (11 AM-2 PM) PM Peak (4-7 PM) MPH Ave % > 25 % > 30 MPH Ave % > 25 % > 30 MPH Ave % > 25 % > 30 1 Nostrand Av Park Av Myrtle Av 24.3 36% 8% 21.9 16% 3% 21.9 16% 3% 2 Nostrand Av Clifton Pl Greene Av 23.9 34% 5% 24.4 34% 7% 24.4 34% 7% 3 Nostrand Av Hancock St Halsey St 20.6 18% 2% 22.1 21% 3% 22.1 21% 3% 4 Nostrand Av St. Marks Av Prospect Pl 20.7 14% 1% 22.6 20% 3% 22.6 20% 3% 5 Nostrand Av Crown St Montgomery St 19.6 7% 0% 20.9 12% 24% 20.9 12% 24% 6 Nostrand Av Fenimore St Hawthorne St 23.3 32% 11% 22.7 31% 5% 22.7 31% 5% 7 Nostrand Av Snyder Av Albermarle Av 25.7 49% 15% 24.5 39% 10% 24.5 39% 10% 8 Nostrand Av Newkirk Av Foster Av 24.0 36% 10% 22.9 23% 6% 22.9 23% 6% 9 Rogers Av Prospect Pl St. Marks Av 27.2 61% 22% 26.2 53% 21% 26.2 53% 21% 10 Rogers Av Montgomery St Crown St 23.6 33% 8% 22.6 19% 3% 22.6 19% 3% 11 Rogers Av Hawthorne St Fenimore St 26.9 57% 23% 25.1 45% 13% 25.1 45% 13% 12 Rogers Av Albermarle Av Snyder Av 23.6 35% 7% 21.5 14% 2% 21.5 14% 2% 13 Rogers Av Foster Av Newkirk Av 27.9 67% 30% 24.2 38% 9% 24.2 38% 9%
+```
+[p036_c0007] _Speeding on Nostrand and Rogers Avenue_
+[p036_c0008] _36_
+
+## Page 37
+
+### [p037_c0001] Next Steps
+### [p037_c0002] Williamsburg Bridge Bus Plaza Reconstruction
+[p037_c0003] Williamsburg Bridge Bus Plaza, an important facility for the B44 SBS route, has been reconstructed as part of a capital project through the NYC Department of Design and Construction (DDC). This plaza serves as the northern terminus for the B44, and as a terminal for several other bus routes. The goal of the project is to better knit the plaza into the fabric of the neighborhood both aesthetically and functionally. These changes were requested by Brooklyn Community Board 1, which cited the inconvenience and unattractiveness of the previous facility as reasons for backing the reconstruction project. Street trees have been added to improve greenery. The pedestrian environment has been made safer through sidewalk extensions, additional crosswalks, and the addition of pedestrian islands. Bus and vehicle circulation issues have been alleviated through site access and signal changes. As of April 2016, DDC plaza construction is substantially complete.
+[p037_c0004] _Williamsburg Bridge Bus Plaza Construction Progress as of 11-2015_
+[p037_c0005] This project will also benefit bus customers as they wait for the B44. As part of the project, MTA/New York City Transit is constructing a new building, which will include an indoor waiting area for bus customers and a crew facility. Further added amenities will include additional seating and an automatic public toilet. The NYCT facility is expected to be completed in summer 2016.
+### [p037_c0006] Additional Real Time Bus Arrival Signs
+[p037_c0007] NYC DOT and NYCT are beginning to implement more real-time bus arrival signs at bus stops throughout the city. Currently, NYC DOT is planning to install at least 18 additional real-time bus arrival signs on Nostrand, Rogers, and Bedford Avenues in 2016. These will be designed similarly to the sign currently installed at the Church Avenue stop on Nostrand Avenue.
+[p037_c0008] _NYCT building under construction as of 03-2016_
+[p037_c0009] _37_
+
+## Page 38
+
+> [p038_c0001] An abstract background design featuring a grid of light blue plus signs on a white background. The design is overlaid with several layers of semi-transparent blue waves, creating a sense of depth and movement. The waves are more prominent in the lower half of the image, with a darker blue wave at the bottom and lighter blue waves above it. The top of the image has a solid dark blue horizontal band.
+[p038_c0002] May 2016

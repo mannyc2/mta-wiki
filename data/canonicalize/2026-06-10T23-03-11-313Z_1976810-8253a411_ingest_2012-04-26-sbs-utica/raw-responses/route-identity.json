@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T23-03-11-313Z_1976810-8253a411_ingest_2012-04-26-sbs-utica",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T02:36:56.600Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "b46-utica-2012-identity",
+        "local_observation_id": "route_b46_2012_04_26_utica",
+        "decision": "new",
+        "rationale": "The observation's base_record_id route_b46-local-limited-20110915 is already the canonical record for the B46 'local and limited-stop' route, sourced from the same document (2012_04_26_sbs_utica). The observation confirms the existing identity — same route_id B46, same borough Brooklyn, same route_type 'local and limited-stop'. Per rule, when the closest match is the observation's own base_record_id, the decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p003_c0002",
+            "source_quote": "B46: second busiest bus route in NYC • Over 49,000 bus passengers per weekday • Average speed of 6.8 mph, below Bklyn avg."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-36-18-317Z_2111393-ad71d08a_canonicalize_2026-06-10t23-03-11-313z-1976810-8253a411-ingest-2012-04-26-sbs-utica-route-identity"
+}

@@ -1,0 +1,145 @@
+{
+  "run_id": "2026-06-10T22-56-13-211Z_1976810-4d6654f7_ingest_2011-34th-sbs-comments-on-proposed-design",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T01:17:58.079Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1-nyc-dot-2011-34th-sbs",
+        "local_observation_id": "entity_nyc_dot_2011_34th_sbs",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot matches existing registry record entity_nyc-dot exactly. The observation already resolves to this canonical record; per rules, when the closest match IS the observation's own base_record_id, decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p001_c0004",
+            "source_quote": "New York City Department of Transportation (NYC DOT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2-mta-nyct-2011-34th-sbs",
+        "local_observation_id": "entity_mta_nyct_2011_34th_sbs",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-nyct matches existing registry record entity_mta-nyct exactly. Already resolved; per rules, new when closest match is own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p001_c0003",
+            "source_quote": "MTA New York City Transit (NYCT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d3-janette-sadik-khan-2011-34th-sbs",
+        "local_observation_id": "entity_janette_sadik_khan_2011_34th_sbs",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_janette-sadik-khan-2009 matches existing registry record entity_janette-sadik-khan-2009 exactly (aliases include entity_janette-sadik-khan-2011-34th-sbs). Already resolved; new per rules.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p002_c0003",
+            "source_quote": "JANETTE SADIK-KHAN, Commissioner"
+          }
+        ]
+      },
+      {
+        "decision_id": "d4-nypd-2011-34th-sbs",
+        "local_observation_id": "entity_nypd_2011_34th_sbs",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nypd-2011-34th-sbs matches existing registry record entity_nypd-2011-34th-sbs exactly. Already resolved; new per rules.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p004_c0006",
+            "source_quote": "NYPD"
+          }
+        ]
+      },
+      {
+        "decision_id": "d5-tlc-2011-34th-sbs",
+        "local_observation_id": "entity_tlc_2011_34th_sbs",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_tlc-2011-34th-sbs matches existing registry record entity_tlc-2011-34th-sbs exactly. Already resolved; new per rules.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p004_c0007",
+            "source_quote": "DOT continues to work with the NYPD and the Taxi and Limousine Commission, which regulates the taxi industry"
+          }
+        ]
+      },
+      {
+        "decision_id": "d6-port-authority-ny-nj-2011",
+        "local_observation_id": "entity_port_authority_ny_nj_2011",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_port-authority-ny-nj-2011 matches existing registry record entity_port-authority-ny-nj-2011 exactly. Already resolved; new per rules.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p015_c0009",
+            "source_quote": "Dyer Avenue is owned and operated by the Port Authority of New York and New Jersey"
+          }
+        ]
+      },
+      {
+        "decision_id": "d7-hudson-yards-dev-corp-2011",
+        "local_observation_id": "entity_hudson_yards_dev_corp_2011",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_hudson-yards-dev-corp-2011 matches existing registry record entity_hudson-yards-dev-corp-2011 exactly. Already resolved; new per rules.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p016_c0007",
+            "source_quote": "These two stops will be built by the Hudson Yards Development Corporation as part of Hudson Yards boulevard and park project"
+          }
+        ]
+      },
+      {
+        "decision_id": "d8-cb4-manhattan-2011",
+        "local_observation_id": "entity_community_board_4_manhattan_2011",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_community-board-4-manhattan-2011 matches existing registry record entity_community-board-4-manhattan-2011 exactly. Already resolved; new per rules.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p002_c0011",
+            "source_quote": "Manhattan Community Boards 4, 5, and 6"
+          }
+        ]
+      },
+      {
+        "decision_id": "d9-cb5-manhattan-2011",
+        "local_observation_id": "entity_community_board_5_manhattan_2011",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_community-board-5-manhattan-2011 matches existing registry record entity_community-board-5-manhattan-2011 exactly. Already resolved; new per rules.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p002_c0011",
+            "source_quote": "Manhattan Community Boards 4, 5, and 6"
+          }
+        ]
+      },
+      {
+        "decision_id": "d10-cb6-manhattan-2011",
+        "local_observation_id": "entity_community_board_6_manhattan_2011",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_community-board-6-manhattan-2011 matches existing registry record entity_community-board-6-manhattan-2011 exactly. Already resolved; new per rules.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p002_c0011",
+            "source_quote": "Manhattan Community Boards 4, 5, and 6"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-17-12-651Z_2111393-e8dd22d0_canonicalize_2026-06-10t22-56-13-211z-1976810-4d6654f7-ingest-2011-34th-sbs-comments-on-proposed-design-entity-identity"
+}

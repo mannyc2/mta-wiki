@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T22-56-13-151Z_1976810-216ae5f7_ingest_201011-nostrand-handout",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T01:04:27.975Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d001",
+        "local_observation_id": "project_nostrand_rogers_sbs_201011",
+        "decision": "new",
+        "rationale": "Observation based on 2010-11 handout for Nostrand Avenue/Rogers Avenue Select Bus Service already correctly resolves to base_record_id 'project_nostrand-rogers-sbs'. The registry card for project_nostrand-rogers-sbs already lists 201011_nostrand_handout among its source_ids, confirming identity. No different registry record matches this observation — the observation already maps to the correct existing record.",
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p001_c0004",
+            "source_quote": "Select Bus Service (SBS) is coming to Nostrand, Rogers, and Bedford Avenues through a partnership between the New York City Department of Transportation (DOT) and MTA New York City Transit (NYCT)."
+          },
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p001_c0006",
+            "source_quote": "▪ B44 SBS replaces the B44 Limited ▪ B44 local route remains the same ▪ Northbound SBS will travel on Rogers instead of New York Ave, for faster and more direct service ▪ SBS fare = local bus fare"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-47-190Z_2111393-32f35345_canonicalize_2026-06-10t22-56-13-151z-1976810-216ae5f7-ingest-201011-nostrand-handout-project-identity"
+}

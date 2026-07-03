@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "review_state": "corrected",
+  "accepted_at": "2026-06-09T02:29:27.000Z",
+  "reviewer": "codex-audit-2026-06-09",
+  "source": "corrected_from_audit_verdict",
+  "cluster_id": "entity_cluster_001",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_001.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_001.json",
+  "source_review_run_id": "2026-06-09T02-13-04-577Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-pro",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 3,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "entity_commissioner-polly-trottenberg-tsp-2017",
+        "entity_nyc-dot"
+      ],
+      "reason": "Different entity_type and identity: Polly Trottenberg is a person/commissioner affiliated with NYC DOT, while entity_nyc-dot is the New York City Department of Transportation agency. The shared NYC DOT key is affiliation context, not person-agency identity."
+    },
+    {
+      "record_ids": [
+        "entity_commissioner-polly-trottenberg-tsp-2017",
+        "entity_scott-gastel-alana-morales-tsp-2017"
+      ],
+      "reason": "Different people/contact mentions in tsp_status_2017. Polly Trottenberg is identified as commissioner, while Scott Gastel and Alana Morales appear as press contacts. A shared NYC DOT affiliation key is not personal identity."
+    },
+    {
+      "record_ids": [
+        "entity_nyc-dot",
+        "entity_scott-gastel-alana-morales-tsp-2017"
+      ],
+      "reason": "Different entity_type and identity: entity_nyc-dot is the NYC DOT agency, while Scott Gastel and Alana Morales are press contacts affiliated with the agency. The shared NYC DOT key is affiliation context, not identity."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [
+    "Do not merge person/contact records with agency records based solely on a shared agency-name key; agency names on people are affiliation context, not identity aliases.",
+    "Two person/contact records sharing only an agency affiliation key are not the same identity.",
+    "Keep affiliation/context keys out of identity aliases unless the alias is reviewed as an actual name for the same record."
+  ],
+  "rationale": "The do-not-merge decisions from the model suggestion are data-backed and should be promoted. The weak aliases are intentionally removed because promoting the agency key onto person/contact records would preserve the same identity collision. The Scott Gastel/Alana Morales record remains a modeling smell because the source has two press contacts on one line, but that does not block this identity suppression."
+}

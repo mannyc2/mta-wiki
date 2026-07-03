@@ -1,0 +1,31 @@
+{
+  "review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "reviewed_at": "2026-06-08T21:09:21.272Z",
+  "packet_path": "data/identity-review/packets/corridor_cluster_009.md",
+  "cluster_id": "corridor_cluster_009",
+  "kind": "corridor",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "suggestion": {
+    "cluster_id": "corridor_cluster_009",
+    "kind": "corridor",
+    "merge_groups": [
+      [
+        "corridor_university-ave",
+        "corridor_university-avenue"
+      ]
+    ],
+    "do_not_merge": [],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [
+      "When corridor_name, street, limits (from/to), and routes_served are identical across records, merge despite minor variant in record id naming."
+    ],
+    "confidence": "high",
+    "rationale": "Both records describe University Avenue from Kingsbridge Road to Cross Bronx Expressway serving Bx3, Bx18, Bx36. The first record uses a 'limits' string, the second splits into 'from' and 'to' with identical endpoints. Routes match exactly. The only difference is the record identifier suffix ('-ave' vs '-avenue') and the source document (2019 plan vs 2021 addendum). The addendum evidence snippet does not list this corridor directly but the payload and identity keys (including shared key corridor_university-ave) confirm the same corridor. This is a duplicate global identity."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T21-09-18-096Z_3449211-c6cde40b_identity-review-run_corridor-cluster-009",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-09-18-096Z_2026-06-08T21-09-18-096Z_3449211-c6cde40b_identity-review-run_corridor-cluster-009.jsonl"
+}

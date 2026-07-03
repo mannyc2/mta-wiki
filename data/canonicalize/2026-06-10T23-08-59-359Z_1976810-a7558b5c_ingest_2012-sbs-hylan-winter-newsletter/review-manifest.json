@@ -1,0 +1,16 @@
+{
+  "run_id": "2026-06-10T23-08-59-359Z_1976810-a7558b5c_ingest_2012-sbs-hylan-winter-newsletter",
+  "generated_at": "2026-06-11T03:18:19.299Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "reviewed_decision_count": 16,
+  "pass_count": 16,
+  "fail_count": 0,
+  "unsure_count": 0,
+  "paths": {
+    "verdicts_jsonl": "data/canonicalize/2026-06-10T23-08-59-359Z_1976810-a7558b5c_ingest_2012-sbs-hylan-winter-newsletter/verdicts.jsonl",
+    "manifest": "data/canonicalize/2026-06-10T23-08-59-359Z_1976810-a7558b5c_ingest_2012-sbs-hylan-winter-newsletter/review-manifest.json"
+  }
+}

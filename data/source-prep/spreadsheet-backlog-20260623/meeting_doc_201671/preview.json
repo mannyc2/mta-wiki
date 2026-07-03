@@ -1,0 +1,1511 @@
+{
+  "kind": "spreadsheet_preview",
+  "status": "ok",
+  "source_id": "meeting_doc_201671",
+  "run_id": "spreadsheet-backlog-20260623",
+  "generated_at": "2026-06-23T12:36:12.489Z",
+  "source_path": "raw/sources/meeting_doc_201671/source.xlsx",
+  "source_sha256": "sha256:265609806b9f2f712fc42ab3d9f5ec75d4e013ee54eb681ea902b29311a23ada",
+  "sheets": [
+    {
+      "name": "Sheet1",
+      "sheet_id": "1",
+      "path": "xl/worksheets/sheet1.xml",
+      "row_count": 31,
+      "cell_count": 156,
+      "rows": [
+        {
+          "row_number": 1,
+          "cells": [
+            {
+              "ref": "A1",
+              "column": "A",
+              "row": 1,
+              "type": "s",
+              "style": "11",
+              "raw_value": "0",
+              "text": "Fuel Hedging Program: Active Ultra-Low Sulfur Diesel (ULSD) Hedges"
+            },
+            {
+              "ref": "B1",
+              "column": "B",
+              "row": 1,
+              "style": "11",
+              "text": ""
+            },
+            {
+              "ref": "C1",
+              "column": "C",
+              "row": 1,
+              "style": "11",
+              "text": ""
+            },
+            {
+              "ref": "D1",
+              "column": "D",
+              "row": 1,
+              "style": "11",
+              "text": ""
+            },
+            {
+              "ref": "E1",
+              "column": "E",
+              "row": 1,
+              "style": "11",
+              "text": ""
+            },
+            {
+              "ref": "F1",
+              "column": "F",
+              "row": 1,
+              "style": "11",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 2,
+          "cells": [
+            {
+              "ref": "A2",
+              "column": "A",
+              "row": 2,
+              "type": "s",
+              "style": "1",
+              "raw_value": "1",
+              "text": "Date"
+            },
+            {
+              "ref": "B2",
+              "column": "B",
+              "row": 2,
+              "type": "s",
+              "style": "1",
+              "raw_value": "2",
+              "text": "Gallons Hedged "
+            },
+            {
+              "ref": "C2",
+              "column": "C",
+              "row": 2,
+              "type": "s",
+              "style": "2",
+              "raw_value": "3",
+              "text": "Percent of Expected Gallons Purchased*"
+            },
+            {
+              "ref": "D2",
+              "column": "D",
+              "row": 2,
+              "type": "s",
+              "style": "2",
+              "raw_value": "4",
+              "text": "Weighted Average Hedge Price for Each Month"
+            },
+            {
+              "ref": "E2",
+              "column": "E",
+              "row": 2,
+              "type": "s",
+              "style": "3",
+              "raw_value": "5",
+              "text": "2026 Adopted Budget (February Plan) Forecasted Commodity Price"
+            }
+          ]
+        },
+        {
+          "row_number": 3,
+          "cells": [
+            {
+              "ref": "A3",
+              "column": "A",
+              "row": 3,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "B3",
+              "column": "B",
+              "row": 3,
+              "style": "4",
+              "text": ""
+            },
+            {
+              "ref": "C3",
+              "column": "C",
+              "row": 3,
+              "style": "5",
+              "text": ""
+            },
+            {
+              "ref": "D3",
+              "column": "D",
+              "row": 3,
+              "style": "5",
+              "text": ""
+            },
+            {
+              "ref": "E3",
+              "column": "E",
+              "row": 3,
+              "style": "4",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 4,
+          "cells": [
+            {
+              "ref": "A4",
+              "column": "A",
+              "row": 4,
+              "style": "6",
+              "raw_value": "46082",
+              "formula": "'[1]Board Report for Budget'!AU5",
+              "text": "46082"
+            },
+            {
+              "ref": "B4",
+              "column": "B",
+              "row": 4,
+              "style": "7",
+              "raw_value": "2697726",
+              "formula": "'[1]Board Report for Budget'!AV5",
+              "text": "2697726"
+            },
+            {
+              "ref": "C4",
+              "column": "C",
+              "row": 4,
+              "style": "8",
+              "raw_value": "54.964693718465341",
+              "formula": "'[1]Board Report for Budget'!AW5",
+              "text": "54.964693718465341"
+            },
+            {
+              "ref": "D4",
+              "column": "D",
+              "row": 4,
+              "style": "9",
+              "raw_value": "2.2849440114377817",
+              "formula": "'[1]Board Report for Budget'!AX5",
+              "text": "2.2849440114377817"
+            },
+            {
+              "ref": "E4",
+              "column": "E",
+              "row": 4,
+              "style": "10",
+              "raw_value": "2.1676666666666664",
+              "formula": "'[1]Board Report for Budget'!AY5",
+              "text": "2.1676666666666664"
+            }
+          ]
+        },
+        {
+          "row_number": 5,
+          "cells": [
+            {
+              "ref": "A5",
+              "column": "A",
+              "row": 5,
+              "style": "6",
+              "raw_value": "46113",
+              "formula": "'[1]Board Report for Budget'!AU6",
+              "text": "46113"
+            },
+            {
+              "ref": "B5",
+              "column": "B",
+              "row": 5,
+              "style": "7",
+              "raw_value": "2443787",
+              "formula": "'[1]Board Report for Budget'!AV6",
+              "text": "2443787"
+            },
+            {
+              "ref": "C5",
+              "column": "C",
+              "row": 5,
+              "style": "8",
+              "raw_value": "48.91791904693428",
+              "formula": "'[1]Board Report for Budget'!AW6",
+              "text": "48.91791904693428"
+            },
+            {
+              "ref": "D5",
+              "column": "D",
+              "row": 5,
+              "style": "9",
+              "raw_value": "2.2525694014658399",
+              "formula": "'[1]Board Report for Budget'!AX6",
+              "text": "2.2525694014658399"
+            },
+            {
+              "ref": "E5",
+              "column": "E",
+              "row": 5,
+              "style": "10",
+              "raw_value": "2.1676666666666664",
+              "formula": "'[1]Board Report for Budget'!AY6",
+              "text": "2.1676666666666664"
+            }
+          ]
+        },
+        {
+          "row_number": 6,
+          "cells": [
+            {
+              "ref": "A6",
+              "column": "A",
+              "row": 6,
+              "style": "6",
+              "raw_value": "46143",
+              "formula": "'[1]Board Report for Budget'!AU7",
+              "text": "46143"
+            },
+            {
+              "ref": "B6",
+              "column": "B",
+              "row": 6,
+              "style": "7",
+              "raw_value": "2584179",
+              "formula": "'[1]Board Report for Budget'!AV7",
+              "text": "2584179"
+            },
+            {
+              "ref": "C6",
+              "column": "C",
+              "row": 6,
+              "style": "8",
+              "raw_value": "51.018574408310059",
+              "formula": "'[1]Board Report for Budget'!AW7",
+              "text": "51.018574408310059"
+            },
+            {
+              "ref": "D6",
+              "column": "D",
+              "row": 6,
+              "style": "9",
+              "raw_value": "2.2209878629150688",
+              "formula": "'[1]Board Report for Budget'!AX7",
+              "text": "2.2209878629150688"
+            },
+            {
+              "ref": "E6",
+              "column": "E",
+              "row": 6,
+              "style": "10",
+              "raw_value": "2.1676666666666664",
+              "formula": "'[1]Board Report for Budget'!AY7",
+              "text": "2.1676666666666664"
+            }
+          ]
+        },
+        {
+          "row_number": 7,
+          "cells": [
+            {
+              "ref": "A7",
+              "column": "A",
+              "row": 7,
+              "style": "6",
+              "raw_value": "46174",
+              "formula": "'[1]Board Report for Budget'!AU8",
+              "text": "46174"
+            },
+            {
+              "ref": "B7",
+              "column": "B",
+              "row": 7,
+              "style": "7",
+              "raw_value": "2645466",
+              "formula": "'[1]Board Report for Budget'!AV8",
+              "text": "2645466"
+            },
+            {
+              "ref": "C7",
+              "column": "C",
+              "row": 7,
+              "style": "8",
+              "raw_value": "54.469078376656256",
+              "formula": "'[1]Board Report for Budget'!AW8",
+              "text": "54.469078376656256"
+            },
+            {
+              "ref": "D7",
+              "column": "D",
+              "row": 7,
+              "style": "9",
+              "raw_value": "2.1938050577478601",
+              "formula": "'[1]Board Report for Budget'!AX8",
+              "text": "2.1938050577478601"
+            },
+            {
+              "ref": "E7",
+              "column": "E",
+              "row": 7,
+              "style": "10",
+              "raw_value": "2.1676666666666664",
+              "formula": "'[1]Board Report for Budget'!AY8",
+              "text": "2.1676666666666664"
+            }
+          ]
+        },
+        {
+          "row_number": 8,
+          "cells": [
+            {
+              "ref": "A8",
+              "column": "A",
+              "row": 8,
+              "style": "6",
+              "raw_value": "46204",
+              "formula": "'[1]Board Report for Budget'!AU9",
+              "text": "46204"
+            },
+            {
+              "ref": "B8",
+              "column": "B",
+              "row": 8,
+              "style": "7",
+              "raw_value": "2556244",
+              "formula": "'[1]Board Report for Budget'!AV9",
+              "text": "2556244"
+            },
+            {
+              "ref": "C8",
+              "column": "C",
+              "row": 8,
+              "style": "8",
+              "raw_value": "45.596975329769307",
+              "formula": "'[1]Board Report for Budget'!AW9",
+              "text": "45.596975329769307"
+            },
+            {
+              "ref": "D8",
+              "column": "D",
+              "row": 8,
+              "style": "9",
+              "raw_value": "2.1841498197355182",
+              "formula": "'[1]Board Report for Budget'!AX9",
+              "text": "2.1841498197355182"
+            },
+            {
+              "ref": "E8",
+              "column": "E",
+              "row": 8,
+              "style": "10",
+              "raw_value": "2.1676666666666664",
+              "formula": "'[1]Board Report for Budget'!AY9",
+              "text": "2.1676666666666664"
+            }
+          ]
+        },
+        {
+          "row_number": 9,
+          "cells": [
+            {
+              "ref": "A9",
+              "column": "A",
+              "row": 9,
+              "style": "6",
+              "raw_value": "46235",
+              "formula": "'[1]Board Report for Budget'!AU10",
+              "text": "46235"
+            },
+            {
+              "ref": "B9",
+              "column": "B",
+              "row": 9,
+              "style": "7",
+              "raw_value": "2649408",
+              "formula": "'[1]Board Report for Budget'!AV10",
+              "text": "2649408"
+            },
+            {
+              "ref": "C9",
+              "column": "C",
+              "row": 9,
+              "style": "8",
+              "raw_value": "48.014897768913443",
+              "formula": "'[1]Board Report for Budget'!AW10",
+              "text": "48.014897768913443"
+            },
+            {
+              "ref": "D9",
+              "column": "D",
+              "row": 9,
+              "style": "9",
+              "raw_value": "2.1740720588901365",
+              "formula": "'[1]Board Report for Budget'!AX10",
+              "text": "2.1740720588901365"
+            },
+            {
+              "ref": "E9",
+              "column": "E",
+              "row": 9,
+              "style": "10",
+              "raw_value": "2.1676666666666664",
+              "formula": "'[1]Board Report for Budget'!AY10",
+              "text": "2.1676666666666664"
+            }
+          ]
+        },
+        {
+          "row_number": 10,
+          "cells": [
+            {
+              "ref": "A10",
+              "column": "A",
+              "row": 10,
+              "style": "6",
+              "raw_value": "46266",
+              "formula": "'[1]Board Report for Budget'!AU11",
+              "text": "46266"
+            },
+            {
+              "ref": "B10",
+              "column": "B",
+              "row": 10,
+              "style": "7",
+              "raw_value": "2443308",
+              "formula": "'[1]Board Report for Budget'!AV11",
+              "text": "2443308"
+            },
+            {
+              "ref": "C10",
+              "column": "C",
+              "row": 10,
+              "style": "8",
+              "raw_value": "47.51452810174014",
+              "formula": "'[1]Board Report for Budget'!AW11",
+              "text": "47.51452810174014"
+            },
+            {
+              "ref": "D10",
+              "column": "D",
+              "row": 10,
+              "style": "9",
+              "raw_value": "2.1711023019611115",
+              "formula": "'[1]Board Report for Budget'!AX11",
+              "text": "2.1711023019611115"
+            },
+            {
+              "ref": "E10",
+              "column": "E",
+              "row": 10,
+              "style": "10",
+              "raw_value": "2.1676666666666664",
+              "formula": "'[1]Board Report for Budget'!AY11",
+              "text": "2.1676666666666664"
+            }
+          ]
+        },
+        {
+          "row_number": 11,
+          "cells": [
+            {
+              "ref": "A11",
+              "column": "A",
+              "row": 11,
+              "style": "6",
+              "raw_value": "46296",
+              "formula": "'[1]Board Report for Budget'!AU12",
+              "text": "46296"
+            },
+            {
+              "ref": "B11",
+              "column": "B",
+              "row": 11,
+              "style": "7",
+              "raw_value": "2770490",
+              "formula": "'[1]Board Report for Budget'!AV12",
+              "text": "2770490"
+            },
+            {
+              "ref": "C11",
+              "column": "C",
+              "row": 11,
+              "style": "8",
+              "raw_value": "49.999983689512341",
+              "formula": "'[1]Board Report for Budget'!AW12",
+              "text": "49.999983689512341"
+            },
+            {
+              "ref": "D11",
+              "column": "D",
+              "row": 11,
+              "style": "9",
+              "raw_value": "2.169191213106707",
+              "formula": "'[1]Board Report for Budget'!AX12",
+              "text": "2.169191213106707"
+            },
+            {
+              "ref": "E11",
+              "column": "E",
+              "row": 11,
+              "style": "10",
+              "raw_value": "2.1676666666666664",
+              "formula": "'[1]Board Report for Budget'!AY12",
+              "text": "2.1676666666666664"
+            }
+          ]
+        },
+        {
+          "row_number": 12,
+          "cells": [
+            {
+              "ref": "A12",
+              "column": "A",
+              "row": 12,
+              "style": "6",
+              "raw_value": "46327",
+              "formula": "'[1]Board Report for Budget'!AU13",
+              "text": "46327"
+            },
+            {
+              "ref": "B12",
+              "column": "B",
+              "row": 12,
+              "style": "7",
+              "raw_value": "2522092",
+              "formula": "'[1]Board Report for Budget'!AV13",
+              "text": "2522092"
+            },
+            {
+              "ref": "C12",
+              "column": "C",
+              "row": 12,
+              "style": "8",
+              "raw_value": "49.99998415039525",
+              "formula": "'[1]Board Report for Budget'!AW13",
+              "text": "49.99998415039525"
+            },
+            {
+              "ref": "D12",
+              "column": "D",
+              "row": 12,
+              "style": "9",
+              "raw_value": "2.1603881899232862",
+              "formula": "'[1]Board Report for Budget'!AX13",
+              "text": "2.1603881899232862"
+            },
+            {
+              "ref": "E12",
+              "column": "E",
+              "row": 12,
+              "style": "10",
+              "raw_value": "2.1676666666666664",
+              "formula": "'[1]Board Report for Budget'!AY13",
+              "text": "2.1676666666666664"
+            }
+          ]
+        },
+        {
+          "row_number": 13,
+          "cells": [
+            {
+              "ref": "A13",
+              "column": "A",
+              "row": 13,
+              "style": "6",
+              "raw_value": "46357",
+              "formula": "'[1]Board Report for Budget'!AU14",
+              "text": "46357"
+            },
+            {
+              "ref": "B13",
+              "column": "B",
+              "row": 13,
+              "style": "7",
+              "raw_value": "2626256",
+              "formula": "'[1]Board Report for Budget'!AV14",
+              "text": "2626256"
+            },
+            {
+              "ref": "C13",
+              "column": "C",
+              "row": 13,
+              "style": "8",
+              "raw_value": "49.999997236806678",
+              "formula": "'[1]Board Report for Budget'!AW14",
+              "text": "49.999997236806678"
+            },
+            {
+              "ref": "D13",
+              "column": "D",
+              "row": 13,
+              "style": "9",
+              "raw_value": "2.1536663612382032",
+              "formula": "'[1]Board Report for Budget'!AX14",
+              "text": "2.1536663612382032"
+            },
+            {
+              "ref": "E13",
+              "column": "E",
+              "row": 13,
+              "style": "10",
+              "raw_value": "2.1676666666666664",
+              "formula": "'[1]Board Report for Budget'!AY14",
+              "text": "2.1676666666666664"
+            }
+          ]
+        },
+        {
+          "row_number": 14,
+          "cells": [
+            {
+              "ref": "A14",
+              "column": "A",
+              "row": 14,
+              "style": "6",
+              "raw_value": "46388",
+              "formula": "'[1]Board Report for Budget'!AU15",
+              "text": "46388"
+            },
+            {
+              "ref": "B14",
+              "column": "B",
+              "row": 14,
+              "style": "7",
+              "raw_value": "2504669",
+              "formula": "'[1]Board Report for Budget'!AV15",
+              "text": "2504669"
+            },
+            {
+              "ref": "C14",
+              "column": "C",
+              "row": 14,
+              "style": "8",
+              "raw_value": "49.999982202928081",
+              "formula": "'[1]Board Report for Budget'!AW15",
+              "text": "49.999982202928081"
+            },
+            {
+              "ref": "D14",
+              "column": "D",
+              "row": 14,
+              "style": "9",
+              "raw_value": "2.1496257562176884",
+              "formula": "'[1]Board Report for Budget'!AX15",
+              "text": "2.1496257562176884"
+            },
+            {
+              "ref": "E14",
+              "column": "E",
+              "row": 14,
+              "style": "10",
+              "raw_value": "2.1450499999999995",
+              "formula": "'[1]Board Report for Budget'!AY15",
+              "text": "2.1450499999999995"
+            }
+          ]
+        },
+        {
+          "row_number": 15,
+          "cells": [
+            {
+              "ref": "A15",
+              "column": "A",
+              "row": 15,
+              "style": "6",
+              "raw_value": "46419",
+              "formula": "'[1]Board Report for Budget'!AU16",
+              "text": "46419"
+            },
+            {
+              "ref": "B15",
+              "column": "B",
+              "row": 15,
+              "style": "7",
+              "raw_value": "2296373",
+              "formula": "'[1]Board Report for Budget'!AV16",
+              "text": "2296373"
+            },
+            {
+              "ref": "C15",
+              "column": "C",
+              "row": 15,
+              "style": "8",
+              "raw_value": "49.999996863238557",
+              "formula": "'[1]Board Report for Budget'!AW16",
+              "text": "49.999996863238557"
+            },
+            {
+              "ref": "D15",
+              "column": "D",
+              "row": 15,
+              "style": "9",
+              "raw_value": "2.1564652019510766",
+              "formula": "'[1]Board Report for Budget'!AX16",
+              "text": "2.1564652019510766"
+            },
+            {
+              "ref": "E15",
+              "column": "E",
+              "row": 15,
+              "style": "10",
+              "raw_value": "2.1450499999999995",
+              "formula": "'[1]Board Report for Budget'!AY16",
+              "text": "2.1450499999999995"
+            }
+          ]
+        },
+        {
+          "row_number": 16,
+          "cells": [
+            {
+              "ref": "A16",
+              "column": "A",
+              "row": 16,
+              "style": "6",
+              "raw_value": "46447",
+              "formula": "'[1]Board Report for Budget'!AU17",
+              "text": "46447"
+            },
+            {
+              "ref": "B16",
+              "column": "B",
+              "row": 16,
+              "style": "7",
+              "raw_value": "2249532",
+              "formula": "'[1]Board Report for Budget'!AV17",
+              "text": "2249532"
+            },
+            {
+              "ref": "C16",
+              "column": "C",
+              "row": 16,
+              "style": "8",
+              "raw_value": "45.832985777609288",
+              "formula": "'[1]Board Report for Budget'!AW17",
+              "text": "45.832985777609288"
+            },
+            {
+              "ref": "D16",
+              "column": "D",
+              "row": 16,
+              "style": "9",
+              "raw_value": "2.1530838992288173",
+              "formula": "'[1]Board Report for Budget'!AX17",
+              "text": "2.1530838992288173"
+            },
+            {
+              "ref": "E16",
+              "column": "E",
+              "row": 16,
+              "style": "10",
+              "raw_value": "2.1450499999999995",
+              "formula": "'[1]Board Report for Budget'!AY17",
+              "text": "2.1450499999999995"
+            }
+          ]
+        },
+        {
+          "row_number": 17,
+          "cells": [
+            {
+              "ref": "A17",
+              "column": "A",
+              "row": 17,
+              "style": "6",
+              "raw_value": "46478",
+              "formula": "'[1]Board Report for Budget'!AU18",
+              "text": "46478"
+            },
+            {
+              "ref": "B17",
+              "column": "B",
+              "row": 17,
+              "style": "7",
+              "raw_value": "2081503",
+              "formula": "'[1]Board Report for Budget'!AV18",
+              "text": "2081503"
+            },
+            {
+              "ref": "C17",
+              "column": "C",
+              "row": 17,
+              "style": "8",
+              "raw_value": "41.665986131340759",
+              "formula": "'[1]Board Report for Budget'!AW18",
+              "text": "41.665986131340759"
+            },
+            {
+              "ref": "D17",
+              "column": "D",
+              "row": 17,
+              "style": "9",
+              "raw_value": "2.1643833813355062",
+              "formula": "'[1]Board Report for Budget'!AX18",
+              "text": "2.1643833813355062"
+            },
+            {
+              "ref": "E17",
+              "column": "E",
+              "row": 17,
+              "style": "10",
+              "raw_value": "2.1450499999999995",
+              "formula": "'[1]Board Report for Budget'!AY18",
+              "text": "2.1450499999999995"
+            }
+          ]
+        },
+        {
+          "row_number": 18,
+          "cells": [
+            {
+              "ref": "A18",
+              "column": "A",
+              "row": 18,
+              "style": "6",
+              "raw_value": "46508",
+              "formula": "'[1]Board Report for Budget'!AU19",
+              "text": "46508"
+            },
+            {
+              "ref": "B18",
+              "column": "B",
+              "row": 18,
+              "style": "7",
+              "raw_value": "1899389",
+              "formula": "'[1]Board Report for Budget'!AV19",
+              "text": "1899389"
+            },
+            {
+              "ref": "C18",
+              "column": "C",
+              "row": 18,
+              "style": "8",
+              "raw_value": "37.498996403432436",
+              "formula": "'[1]Board Report for Budget'!AW19",
+              "text": "37.498996403432436"
+            },
+            {
+              "ref": "D18",
+              "column": "D",
+              "row": 18,
+              "style": "9",
+              "raw_value": "2.1767055030328177",
+              "formula": "'[1]Board Report for Budget'!AX19",
+              "text": "2.1767055030328177"
+            },
+            {
+              "ref": "E18",
+              "column": "E",
+              "row": 18,
+              "style": "10",
+              "raw_value": "2.1450499999999995",
+              "formula": "'[1]Board Report for Budget'!AY19",
+              "text": "2.1450499999999995"
+            }
+          ]
+        },
+        {
+          "row_number": 19,
+          "cells": [
+            {
+              "ref": "A19",
+              "column": "A",
+              "row": 19,
+              "style": "6",
+              "raw_value": "46539",
+              "formula": "'[1]Board Report for Budget'!AU20",
+              "text": "46539"
+            },
+            {
+              "ref": "B19",
+              "column": "B",
+              "row": 19,
+              "style": "7",
+              "raw_value": "1618875",
+              "formula": "'[1]Board Report for Budget'!AV20",
+              "text": "1618875"
+            },
+            {
+              "ref": "C19",
+              "column": "C",
+              "row": 19,
+              "style": "8",
+              "raw_value": "33.331983573786019",
+              "formula": "'[1]Board Report for Budget'!AW20",
+              "text": "33.331983573786019"
+            },
+            {
+              "ref": "D19",
+              "column": "D",
+              "row": 19,
+              "style": "9",
+              "raw_value": "2.1801321861169023",
+              "formula": "'[1]Board Report for Budget'!AX20",
+              "text": "2.1801321861169023"
+            },
+            {
+              "ref": "E19",
+              "column": "E",
+              "row": 19,
+              "style": "10",
+              "raw_value": "2.1450499999999995",
+              "formula": "'[1]Board Report for Budget'!AY20",
+              "text": "2.1450499999999995"
+            }
+          ]
+        },
+        {
+          "row_number": 20,
+          "cells": [
+            {
+              "ref": "A20",
+              "column": "A",
+              "row": 20,
+              "style": "6",
+              "raw_value": "46569",
+              "formula": "'[1]Board Report for Budget'!AU21",
+              "text": "46569"
+            },
+            {
+              "ref": "B20",
+              "column": "B",
+              "row": 20,
+              "style": "7",
+              "raw_value": "1635039",
+              "formula": "'[1]Board Report for Budget'!AV21",
+              "text": "1635039"
+            },
+            {
+              "ref": "C20",
+              "column": "C",
+              "row": 20,
+              "style": "8",
+              "raw_value": "29.164990879669812",
+              "formula": "'[1]Board Report for Budget'!AW21",
+              "text": "29.164990879669812"
+            },
+            {
+              "ref": "D20",
+              "column": "D",
+              "row": 20,
+              "style": "9",
+              "raw_value": "2.1747058798597467",
+              "formula": "'[1]Board Report for Budget'!AX21",
+              "text": "2.1747058798597467"
+            },
+            {
+              "ref": "E20",
+              "column": "E",
+              "row": 20,
+              "style": "10",
+              "raw_value": "2.1450499999999995",
+              "formula": "'[1]Board Report for Budget'!AY21",
+              "text": "2.1450499999999995"
+            }
+          ]
+        },
+        {
+          "row_number": 21,
+          "cells": [
+            {
+              "ref": "A21",
+              "column": "A",
+              "row": 21,
+              "style": "6",
+              "raw_value": "46600",
+              "formula": "'[1]Board Report for Budget'!AU22",
+              "text": "46600"
+            },
+            {
+              "ref": "B21",
+              "column": "B",
+              "row": 21,
+              "style": "7",
+              "raw_value": "1379361",
+              "formula": "'[1]Board Report for Budget'!AV22",
+              "text": "1379361"
+            },
+            {
+              "ref": "C21",
+              "column": "C",
+              "row": 21,
+              "style": "8",
+              "raw_value": "24.997991023438519",
+              "formula": "'[1]Board Report for Budget'!AW22",
+              "text": "24.997991023438519"
+            },
+            {
+              "ref": "D21",
+              "column": "D",
+              "row": 21,
+              "style": "9",
+              "raw_value": "2.175205854232503",
+              "formula": "'[1]Board Report for Budget'!AX22",
+              "text": "2.175205854232503"
+            },
+            {
+              "ref": "E21",
+              "column": "E",
+              "row": 21,
+              "style": "10",
+              "raw_value": "2.1450499999999995",
+              "formula": "'[1]Board Report for Budget'!AY22",
+              "text": "2.1450499999999995"
+            }
+          ]
+        },
+        {
+          "row_number": 22,
+          "cells": [
+            {
+              "ref": "A22",
+              "column": "A",
+              "row": 22,
+              "style": "6",
+              "raw_value": "46631",
+              "formula": "'[1]Board Report for Budget'!AU23",
+              "text": "46631"
+            },
+            {
+              "ref": "B22",
+              "column": "B",
+              "row": 22,
+              "style": "7",
+              "raw_value": "1071178",
+              "formula": "'[1]Board Report for Budget'!AV23",
+              "text": "1071178"
+            },
+            {
+              "ref": "C22",
+              "column": "C",
+              "row": 22,
+              "style": "8",
+              "raw_value": "20.830986999169074",
+              "formula": "'[1]Board Report for Budget'!AW23",
+              "text": "20.830986999169074"
+            },
+            {
+              "ref": "D22",
+              "column": "D",
+              "row": 22,
+              "style": "9",
+              "raw_value": "2.1751370581733385",
+              "formula": "'[1]Board Report for Budget'!AX23",
+              "text": "2.1751370581733385"
+            },
+            {
+              "ref": "E22",
+              "column": "E",
+              "row": 22,
+              "style": "10",
+              "raw_value": "2.1450499999999995",
+              "formula": "'[1]Board Report for Budget'!AY23",
+              "text": "2.1450499999999995"
+            }
+          ]
+        },
+        {
+          "row_number": 23,
+          "cells": [
+            {
+              "ref": "A23",
+              "column": "A",
+              "row": 23,
+              "style": "6",
+              "raw_value": "46661",
+              "formula": "'[1]Board Report for Budget'!AU24",
+              "text": "46661"
+            },
+            {
+              "ref": "B23",
+              "column": "B",
+              "row": 23,
+              "style": "7",
+              "raw_value": "923349",
+              "formula": "'[1]Board Report for Budget'!AV24",
+              "text": "923349"
+            },
+            {
+              "ref": "C23",
+              "column": "C",
+              "row": 23,
+              "style": "8",
+              "raw_value": "16.663996238834113",
+              "formula": "'[1]Board Report for Budget'!AW24",
+              "text": "16.663996238834113"
+            },
+            {
+              "ref": "D23",
+              "column": "D",
+              "row": 23,
+              "style": "9",
+              "raw_value": "2.171215823052822",
+              "formula": "'[1]Board Report for Budget'!AX24",
+              "text": "2.171215823052822"
+            },
+            {
+              "ref": "E23",
+              "column": "E",
+              "row": 23,
+              "style": "10",
+              "raw_value": "2.1450499999999995",
+              "formula": "'[1]Board Report for Budget'!AY24",
+              "text": "2.1450499999999995"
+            }
+          ]
+        },
+        {
+          "row_number": 24,
+          "cells": [
+            {
+              "ref": "A24",
+              "column": "A",
+              "row": 24,
+              "style": "6",
+              "raw_value": "46692",
+              "formula": "'[1]Board Report for Budget'!AU25",
+              "text": "46692"
+            },
+            {
+              "ref": "B24",
+              "column": "B",
+              "row": 24,
+              "style": "7",
+              "raw_value": "630371",
+              "formula": "'[1]Board Report for Budget'!AV25",
+              "text": "630371"
+            },
+            {
+              "ref": "C24",
+              "column": "C",
+              "row": 24,
+              "style": "8",
+              "raw_value": "12.496982667114763",
+              "formula": "'[1]Board Report for Budget'!AW25",
+              "text": "12.496982667114763"
+            },
+            {
+              "ref": "D24",
+              "column": "D",
+              "row": 24,
+              "style": "9",
+              "raw_value": "2.1930362745113592",
+              "formula": "'[1]Board Report for Budget'!AX25",
+              "text": "2.1930362745113592"
+            },
+            {
+              "ref": "E24",
+              "column": "E",
+              "row": 24,
+              "style": "10",
+              "raw_value": "2.1450499999999995",
+              "formula": "'[1]Board Report for Budget'!AY25",
+              "text": "2.1450499999999995"
+            }
+          ]
+        },
+        {
+          "row_number": 25,
+          "cells": [
+            {
+              "ref": "A25",
+              "column": "A",
+              "row": 25,
+              "style": "6",
+              "raw_value": "46722",
+              "formula": "'[1]Board Report for Budget'!AU26",
+              "text": "46722"
+            },
+            {
+              "ref": "B25",
+              "column": "B",
+              "row": 25,
+              "style": "7",
+              "raw_value": "437534",
+              "formula": "'[1]Board Report for Budget'!AV26",
+              "text": "437534"
+            },
+            {
+              "ref": "C25",
+              "column": "C",
+              "row": 25,
+              "style": "8",
+              "raw_value": "8.3299947876402651",
+              "formula": "'[1]Board Report for Budget'!AW26",
+              "text": "8.3299947876402651"
+            },
+            {
+              "ref": "D25",
+              "column": "D",
+              "row": 25,
+              "style": "9",
+              "raw_value": "2.2496207823849121",
+              "formula": "'[1]Board Report for Budget'!AX26",
+              "text": "2.2496207823849121"
+            },
+            {
+              "ref": "E25",
+              "column": "E",
+              "row": 25,
+              "style": "10",
+              "raw_value": "2.1450499999999995",
+              "formula": "'[1]Board Report for Budget'!AY26",
+              "text": "2.1450499999999995"
+            }
+          ]
+        },
+        {
+          "row_number": 26,
+          "cells": [
+            {
+              "ref": "A26",
+              "column": "A",
+              "row": 26,
+              "style": "6",
+              "raw_value": "46753",
+              "formula": "'[1]Board Report for Budget'!AU27",
+              "text": "46753"
+            },
+            {
+              "ref": "B26",
+              "column": "B",
+              "row": 26,
+              "style": "7",
+              "raw_value": "208538",
+              "formula": "'[1]Board Report for Budget'!AV27",
+              "text": "208538"
+            },
+            {
+              "ref": "C26",
+              "column": "C",
+              "row": 26,
+              "style": "8",
+              "raw_value": "4.1629837270450576",
+              "formula": "'[1]Board Report for Budget'!AW27",
+              "text": "4.1629837270450576"
+            },
+            {
+              "ref": "D26",
+              "column": "D",
+              "row": 26,
+              "style": "9",
+              "raw_value": "2.2928999999999999",
+              "formula": "'[1]Board Report for Budget'!AX27",
+              "text": "2.2928999999999999"
+            },
+            {
+              "ref": "E26",
+              "column": "E",
+              "row": 26,
+              "style": "10",
+              "raw_value": "2.1405833333333333",
+              "formula": "'[1]Board Report for Budget'!AY27",
+              "text": "2.1405833333333333"
+            }
+          ]
+        },
+        {
+          "row_number": 28,
+          "cells": [
+            {
+              "ref": "A28",
+              "column": "A",
+              "row": 28,
+              "type": "s",
+              "style": "12",
+              "raw_value": "6",
+              "text": "*MTA’s fuel hedging program mitigates budget risk by dollar cost averaging approximately 50% of projected fuel expenses. The goal of the program is to be 50% hedged for the next 12 months. Monthly hedges are equal to approximately  4% of the projected fuel purchases expected to occur 13-24 months from each hedge execution date. The actual  percentage hedged could be higher or lower than the 50% target depending on the actual levels of fuel consumption. While the fuel heding program includes compressed natrual gas, there are currently no actve hedges."
+            },
+            {
+              "ref": "B28",
+              "column": "B",
+              "row": 28,
+              "style": "12",
+              "text": ""
+            },
+            {
+              "ref": "C28",
+              "column": "C",
+              "row": 28,
+              "style": "12",
+              "text": ""
+            },
+            {
+              "ref": "D28",
+              "column": "D",
+              "row": 28,
+              "style": "12",
+              "text": ""
+            },
+            {
+              "ref": "E28",
+              "column": "E",
+              "row": 28,
+              "style": "12",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 29,
+          "cells": [
+            {
+              "ref": "A29",
+              "column": "A",
+              "row": 29,
+              "style": "12",
+              "text": ""
+            },
+            {
+              "ref": "B29",
+              "column": "B",
+              "row": 29,
+              "style": "12",
+              "text": ""
+            },
+            {
+              "ref": "C29",
+              "column": "C",
+              "row": 29,
+              "style": "12",
+              "text": ""
+            },
+            {
+              "ref": "D29",
+              "column": "D",
+              "row": 29,
+              "style": "12",
+              "text": ""
+            },
+            {
+              "ref": "E29",
+              "column": "E",
+              "row": 29,
+              "style": "12",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 30,
+          "cells": [
+            {
+              "ref": "A30",
+              "column": "A",
+              "row": 30,
+              "style": "12",
+              "text": ""
+            },
+            {
+              "ref": "B30",
+              "column": "B",
+              "row": 30,
+              "style": "12",
+              "text": ""
+            },
+            {
+              "ref": "C30",
+              "column": "C",
+              "row": 30,
+              "style": "12",
+              "text": ""
+            },
+            {
+              "ref": "D30",
+              "column": "D",
+              "row": 30,
+              "style": "12",
+              "text": ""
+            },
+            {
+              "ref": "E30",
+              "column": "E",
+              "row": 30,
+              "style": "12",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 31,
+          "cells": [
+            {
+              "ref": "A31",
+              "column": "A",
+              "row": 31,
+              "style": "12",
+              "text": ""
+            },
+            {
+              "ref": "B31",
+              "column": "B",
+              "row": 31,
+              "style": "12",
+              "text": ""
+            },
+            {
+              "ref": "C31",
+              "column": "C",
+              "row": 31,
+              "style": "12",
+              "text": ""
+            },
+            {
+              "ref": "D31",
+              "column": "D",
+              "row": 31,
+              "style": "12",
+              "text": ""
+            },
+            {
+              "ref": "E31",
+              "column": "E",
+              "row": 31,
+              "style": "12",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "row_number": 32,
+          "cells": [
+            {
+              "ref": "A32",
+              "column": "A",
+              "row": 32,
+              "style": "12",
+              "text": ""
+            },
+            {
+              "ref": "B32",
+              "column": "B",
+              "row": 32,
+              "style": "12",
+              "text": ""
+            },
+            {
+              "ref": "C32",
+              "column": "C",
+              "row": 32,
+              "style": "12",
+              "text": ""
+            },
+            {
+              "ref": "D32",
+              "column": "D",
+              "row": 32,
+              "style": "12",
+              "text": ""
+            },
+            {
+              "ref": "E32",
+              "column": "E",
+              "row": 32,
+              "style": "12",
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

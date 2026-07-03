@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "entity_cluster_d021833ba0",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_d021833ba0.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_d021833ba0.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "entity_community-board-1-bronx-2012-02",
+        "entity_community-board-1-manhattan-2013-06"
+      ],
+      "reason": "Contradiction test (test 1): borough differs (Bronx vs Manhattan), which is a strong identity field for community boards. Same name alone does not override geographic scope. Records are distinct community boards in different boroughs."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [
+    "For community boards, borough is a strong identity differentiator; records with same numeric designation but different borough should never merge. Consider adding explicit 'borough' field to payload_identity_fields."
+  ],
+  "rationale": "Per test 1 (contradiction), borough differs between the Bronx and Manhattan community boards. No evidence supports them being the same canonical entity. The shared alias 'entity_community-board-1' is insufficient for merge. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

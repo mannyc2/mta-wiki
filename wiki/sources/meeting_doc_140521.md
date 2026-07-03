@@ -1,0 +1,93 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-140521"
+record_kind: "source"
+display_name: "Grand Central Madison operations and maintenance"
+source_id: "meeting_doc_140521"
+source_ids:
+  - "meeting_doc_140521"
+local_observation_id: "source_meeting_doc_140521"
+local_observation_ids:
+  - "source_meeting_doc_140521"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T17:06:46.083Z"
+submission_ids:
+  - "sub_e329e844cb2ccea1"
+payload:
+  authority_tier: "board_material"
+  content_type: "Board meeting staff summary"
+  description: "Staff summary for MTA Board approval of a contract for operation and maintenance of Grand Central Madison Terminal facilities"
+  publisher: "MTA Construction and Development"
+  title: "Schedule C: Competitive Requests for Proposals (Award of Purchase and Public Works Contracts)"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_140521#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_140521"
+    source_path: "raw/sources/meeting_doc_140521/blocks.jsonl"
+    text_sha256: "sha256:edb6ecac401fbe542450c24c81c922170a1c646501310015b0f5b6863a3586f9"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_140521#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_140521"
+    source_path: "raw/sources/meeting_doc_140521/blocks.jsonl"
+    text_sha256: "sha256:3b3387a294c50efa4c75296c566aacf4827e1c448fd69eb9edb8ada2caed4c2b"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0005"
+    evidence_id: "meeting_doc_140521#p001_c0005"
+    page_number: 1
+    source_id: "meeting_doc_140521"
+    source_path: "raw/sources/meeting_doc_140521/blocks.jsonl"
+    text_sha256: "sha256:394bfee72b39d7c011750ad2b7fb484ef168b852c96647f60f1e8b7e0bd997b0"
+    text_source: "raw_text"
+---
+
+# Grand Central Madison operations and maintenance
+
+source_id: meeting_doc_140521
+citation: cite block ids exactly as shown in square brackets
+document: 25 block(s)
+
+## Page 1
+
+### [p001_c0001] Staff Summary
+### [p001_c0002] Schedule C: Competitive Requests for Proposals (Award of Purchase and Public Works Contracts)
+[p001_c0003] Page 1 of 2
+[p001_c0004]
+
+```text
+Item Number 1 Department, Department Head Name: Grand Central Madison Operating Company, Paul Grether, Acting Chief Board Reviews Order To Date Approval Info Other 1 Finance Committee 5/20/24 X 2 Board 5/22/24 X Internal Approvals Order Approval Order Approval X Deputy Chief, Development X Executive Vice President & General Counsel X Deputy Chief, Delivery X President X Sr. Advisor MTA Railroads X MTA CFO
+```
+[p001_c0005]
+
+```text
+SUMMARY INFORMATION Vendor Name George S. Hall, Inc. Contract Number MS21001 Description Operation and Maintenance of Infrastructure and Related Structures Supporting LIRR Access Into Grand Central Madison Terminal Passenger Facilities Total Amount $420,588,215.48 Contract Term (including Options, if any) Five years, plus 2 three-year options Option(s) included in Total Amount? Yes No Renewal? Yes No Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Funding Source Operating Capital Federal Other:
+```
+### [p001_c0006] ACTION REQUESTED
+[p001_c0007] MTA Construction and Development (“C&D”), on behalf of the MTA Grand Central Madison Operating Company (“GCMC”), requests Board approval to award to George S. Hall (“GSH”) a publicly advertised and competitively solicited contract (the “Contract”) for the operation and maintenance of the new Grand Central Madison Terminal and related facility assets in Manhattan and Queens. The Contract is in the amount of $420,588,215.48 for a duration of five years. The Contract includes two 3-year extension options for an additional sum to be established in accordance with the Contract terms, which can be exercised in GCMC’s sole discretion.
+### [p001_c0008] DISCUSSION
+[p001_c0009] In October 2021, the Board approved the creation of GCMC to oversee the operation and maintenance of the 350,000 square foot Grand Central Madison Concourse (the “Concourse”) and related facilities (collectively, “Grand Central Madison”). At that time, the Board was advised that GCMC would be retaining a private sector facilities maintainer (“Facility Maintainer”) with the expertise and ability to operate and maintain these facilities with GCMC overseeing and managing the Facility Maintainer.
+[p001_c0010] The Contract requires the selected Facility Maintainer to maintain Grand Central Madison Concourse, associated ventilation and power facilities, and certain communication rooms associated with the Concourse in Sunnyside Yards in Queens. The Facility Maintainer’s work will include (i) performing preventative maintenance for mechanical, electrical, plumbing, communications, fire protection, security and vertical transportation systems, (ii) operating the chiller and steam plant, the tunnel ventilation system, and the building management system; (iii) performing general housekeeping and janitorial services; and (iv) coordinating with the future retail master lessee and other vendors performing services within the facility.
+[p001_c0011] GCMC, through C&D, engaged in a one-step request for proposal (“RFP”) process. Given the unique complexities associated with maintaining a facility of this size, C&D conducted extensive outreach. In addition to the traditional periodicals, advertisements were run in ten publications targeted at vendors who perform transportation-related maintenance and operations work. Letters were sent to over 50 companies that perform similar work. Numerous general
+
+## Page 2
+
+### [p002_c0001] Construction & Development
+### [p002_c0002] Page 2 of 2
+[p002_c0003] site visits were conducted, and a pre-proposal conference was held, followed by one-on-one meetings and personalized tours and question and answer sessions to help potential proposers better understand the nature and complexities of the facilities.
+[p002_c0004] In response to the RFP, C&D received proposals from George S. Hall ("GSH") and RailWorks Transit LLC ("Railworks"). Both GSH and a subsidiary of Railworks, LK Comstock have performed certain portions of the interim maintenance for the Concourse and other Grand Central Madison assets under separate C&D contracts. The Selection Committee, consisting of representatives from C&D's Delivery and Contracts Departments, MTA Real Estate and GCMC, reviewed the technical proposals and heard oral presentations by each proposer. The Selection Committee evaluated the technical proposals using the following pre-established evaluation criteria to determine which proposal represents the best value to MTA to undertake and successfully complete the Contract work: technical approach, past experience and performance, preparedness for performing the facilities scope of work, and diversity practices. After evaluating technical proposals and finding both proposers to be technically qualified to perform the work, the Selection Committee opened the price proposals, which were as follows: GSH's initial proposal was $750,112,357.28; and Railworks' initial proposal was $1,168,452,000.
+[p002_c0005] Both firms were then invited to negotiate with the Negotiation Committee. Following extensive cost discussions, MTA, together with its engineering consultant and representatives from GCMC and Long Island Rail Road, revised the scope of work to eliminate and/or reduce scope that was deemed excessive or unnecessary and revised the terms of the Contract to better allocate risks and to reflect comments received from the proposers. MTA issued an addendum reflecting those changes, requested revised proposals and again the Negotiation Committee met with both firms to discuss their proposals. At the conclusion of negotiations, MTA issued an addendum requesting best and final offers ("BAFO's"), which were received on May 10, 2024. The offer received from GSH was substantially less than the offer received from Railworks. Following subsequent negotiations with GSH, GSH reduced its BAFO proposal to $420,588,215.48.
+[p002_c0006] Based upon its review of the technical and cost proposals, and discussions during the oral presentations, the Selection Committee unanimously recommended GSH for award of this Contract. It determined that the proposal submitted by GSH provides the best overall value to the MTA. In addition to offering the lowest price, the proposal exhibits a comprehensive understanding of all components of the scope of work as established in its technical approach.
+[p002_c0007] The Contract includes incentives and disincentives for timely mobilization and also based upon certain established key performance indicators. Based on this program GSH could earn as much as $21.4M if it were to meet all performance criteria, which sum is not included in the Contract amount. Conversely, the Contract amount would be decreased if GSH fails to meet the performance criteria.
+[p002_c0008] Based on the foregoing, GSH's revised BAFO of $420,588,215.48 is deemed to be fair and reasonable.
+### [p002_c0009] DBE/MBE/WBE/SDVOB INFORMATION
+[p002_c0010] The MTA Department of Diversity and Civil Rights has established an MBE goal of 15%, an WBE goal of 15% and SDVOB goal of 6% for this Contract. GSH is committed to meet the required goal requirements and their utilization plan is under review. GSH has achieved its DBE/MBE/WBE/SDVOB goals on recently completed MTA contracts.
+### [p002_c0011] IMPACT ON FUNDING
+[p002_c0012] Funding for this Contract is included in GCMC's operating budget.
+### [p002_c0013] ALTERNATIVES
+[p002_c0014] None recommended. MTA lacks available in-house technical personnel to perform the scope of work associated with this Contract.

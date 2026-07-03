@@ -1,0 +1,53 @@
+{
+  "run_id": "2026-06-10T22-56-13-173Z_1976810-bc7f43c2_ingest_2011-04-27-brt-1st2nd-cac6",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T01:10:42.730Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision": "new",
+        "decision_id": "first-avenue-2011",
+        "evidence_refs": [
+          {
+            "block_id": "p002_c0002",
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "source_quote": "+selectbusservice first avenue/second avenue"
+          },
+          {
+            "block_id": "p025_c0009",
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "source_quote": "125 St/1 Av"
+          }
+        ],
+        "local_observation_id": "corridor_first_avenue_manhattan_2011",
+        "rationale": "Already resolves to its own base_record_id corridor_first-avenue-manhattan-2010, the existing First Avenue corridor registry record that shares source 2011_04_27_brt_1st2nd_cac6, same street, borough, and M15 SBS context.",
+        "target_record_id": "null"
+      },
+      {
+        "decision": "new",
+        "decision_id": "second-avenue-2011",
+        "evidence_refs": [
+          {
+            "block_id": "p002_c0002",
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "source_quote": "+selectbusservice first avenue/second avenue"
+          },
+          {
+            "block_id": "p025_c0009",
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "source_quote": "125 St/2 Av"
+          }
+        ],
+        "local_observation_id": "corridor_second_avenue_manhattan_2011",
+        "rationale": "Already resolves to its own base_record_id corridor_second-avenue-manhattan-2010, the existing Second Avenue corridor registry record that shares source 2011_04_27_brt_1st2nd_cac6, same street, borough, and M15 SBS context.",
+        "target_record_id": "null"
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-08-44-833Z_2111393-a9ae33a6_canonicalize_2026-06-10t22-56-13-173z-1976810-bc7f43c2-ingest-2011-04-27-brt-1st2nd-cac6-corridor-identity"
+}

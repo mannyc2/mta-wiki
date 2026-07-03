@@ -1,0 +1,614 @@
+{
+  "batch_id": "identity086",
+  "prepared_count": 10,
+  "all_pass": true,
+  "proposed_aliases": [
+    {
+      "kind": "entity",
+      "alias_id": "entity_manhattan-bronx-surface-transit-operating-authority",
+      "target_id": "entity_mabstoa",
+      "reason": "Both records identify the same Manhattan and Bronx Surface Transit Operating Authority agency; the alias record carries the full legal name and MaBSTOA acronym, matching the target record's entity_name and acronym.",
+      "evidence": [
+        {
+          "record_id": "entity_manhattan-bronx-surface-transit-operating-authority",
+          "display_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_128986",
+            "meeting_doc_131696",
+            "meeting_doc_133236",
+            "meeting_doc_135376",
+            "meeting_doc_138346",
+            "meeting_doc_138351",
+            "meeting_doc_138396",
+            "meeting_doc_140491",
+            "meeting_doc_147016",
+            "meeting_doc_155141",
+            "meeting_doc_160636",
+            "meeting_doc_170981",
+            "meeting_doc_186881"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_131696",
+              "block_id": "p002_c0004",
+              "evidence_id": "meeting_doc_131696#p002_c0004",
+              "source_quote": "Manhattan and Bronx Surface Transit Operating Authority is a subsidiary of the New York City Transit Authority (abbreviated as MaBSTOA)."
+            }
+          ]
+        },
+        {
+          "record_id": "entity_mabstoa",
+          "display_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_115391",
+            "meeting_doc_157711",
+            "meeting_doc_174081",
+            "meeting_doc_179656",
+            "meeting_doc_189751",
+            "meeting_doc_190006",
+            "meeting_doc_201706",
+            "meeting_doc_39661",
+            "meeting_doc_85796",
+            "meeting_doc_98296",
+            "nyct_itsp_solicitation_notice_2026"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_201706",
+              "block_id": "p002_c0003",
+              "evidence_id": "meeting_doc_201706#p002_c0003",
+              "source_quote": "Manhattan and Bronx Surface Transit Operating Authority is a subsidiary of the New York City Transit Authority (abbreviated as MaBSTOA)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-115246-mabstoa",
+      "target_id": "entity_mabstoa",
+      "reason": "Both records identify Manhattan and Bronx Surface Transit Operating Authority / MaBSTOA; the alias evidence expands the same legal name and abbreviation as the target record.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-115246-mabstoa",
+          "display_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_type": "operating authority",
+          "source_ids": [
+            "meeting_doc_112041",
+            "meeting_doc_115216",
+            "meeting_doc_115246",
+            "meeting_doc_121271",
+            "meeting_doc_124306",
+            "meeting_doc_124881",
+            "meeting_doc_127476"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_112041",
+              "block_id": "p014_c0002",
+              "evidence_id": "meeting_doc_112041#p014_c0002",
+              "source_quote": "Manhattan and Bronx Surface Transit Operating Authority (MaBSTOA)"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_mabstoa",
+          "display_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_115391",
+            "meeting_doc_157711",
+            "meeting_doc_174081",
+            "meeting_doc_179656",
+            "meeting_doc_189751",
+            "meeting_doc_190006",
+            "meeting_doc_201706",
+            "meeting_doc_39661",
+            "meeting_doc_85796",
+            "meeting_doc_98296",
+            "nyct_itsp_solicitation_notice_2026"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_201706",
+              "block_id": "p002_c0003",
+              "evidence_id": "meeting_doc_201706#p002_c0003",
+              "source_quote": "Manhattan and Bronx Surface Transit Operating Authority is a subsidiary of the New York City Transit Authority (abbreviated as MaBSTOA)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-155481-mabstoa",
+      "target_id": "entity_mabstoa",
+      "reason": "Both records identify the same Manhattan and Bronx Surface Transit Operating Authority agency; the alias source says NYCT and its subsidiary MaBSTOA provide subway and bus service, matching the target's structured identity.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-155481-mabstoa",
+          "display_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_155481"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_155481",
+              "block_id": "p036_c0011",
+              "evidence_id": "meeting_doc_155481#p036_c0011",
+              "source_quote": "New York City Transit Authority (\"MTA New York City Transit\") and its subsidiary, Manhattan and Bronx Surface Transit Operating Authority (\"MaBSTOA\"), provide subway and public bus service within the five boroughs of New York City."
+            }
+          ]
+        },
+        {
+          "record_id": "entity_mabstoa",
+          "display_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_115391",
+            "meeting_doc_157711",
+            "meeting_doc_174081",
+            "meeting_doc_179656",
+            "meeting_doc_189751",
+            "meeting_doc_190006",
+            "meeting_doc_201706",
+            "meeting_doc_39661",
+            "meeting_doc_85796",
+            "meeting_doc_98296",
+            "nyct_itsp_solicitation_notice_2026"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_201706",
+              "block_id": "p002_c0003",
+              "evidence_id": "meeting_doc_201706#p002_c0003",
+              "source_quote": "Manhattan and Bronx Surface Transit Operating Authority is a subsidiary of the New York City Transit Authority (abbreviated as MaBSTOA)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-164931-mabstoa",
+      "target_id": "entity_mabstoa",
+      "reason": "Both records identify Manhattan and Bronx Surface Transit Operating Authority as the same MTA-related operating agency; the alias evidence names it in a list of agencies for the same capital program context.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-164931-mabstoa",
+          "display_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_164931"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_164931",
+              "block_id": "p002_c0007",
+              "evidence_id": "meeting_doc_164931#p002_c0007",
+              "source_quote": "New York City Transit Authority, Manhattan and Bronx Surface Transit Operating Authority, Long Island Rail Road, Metro-North Commuter Railroad, MTA Construction and Development, MTA Bus Company, and Staten Island Rapid Transit Operating Authority"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_mabstoa",
+          "display_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_115391",
+            "meeting_doc_157711",
+            "meeting_doc_174081",
+            "meeting_doc_179656",
+            "meeting_doc_189751",
+            "meeting_doc_190006",
+            "meeting_doc_201706",
+            "meeting_doc_39661",
+            "meeting_doc_85796",
+            "meeting_doc_98296",
+            "nyct_itsp_solicitation_notice_2026"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_201706",
+              "block_id": "p002_c0003",
+              "evidence_id": "meeting_doc_201706#p002_c0003",
+              "source_quote": "Manhattan and Bronx Surface Transit Operating Authority is a subsidiary of the New York City Transit Authority (abbreviated as MaBSTOA)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-33226-mabstoa",
+      "target_id": "entity_mabstoa",
+      "reason": "Both records identify the same MTA subsidiary/affiliate agency; the alias evidence expands Manhattan and Bronx Surface Transit Operating Authority with the MaBSTOA abbreviation.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-33226-mabstoa",
+          "display_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_33226"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_33226",
+              "block_id": "p003_c0007",
+              "evidence_id": "meeting_doc_33226#p003_c0007",
+              "source_quote": "the New York City Transit Authority (\"NYCTA\"), including the Manhattan and Bronx Surface Transit Operating Authority (\"MaBSTOA\") and the Staten Island Rapid Transit Operating Authority (\"SIRTOA\")"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_mabstoa",
+          "display_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_115391",
+            "meeting_doc_157711",
+            "meeting_doc_174081",
+            "meeting_doc_179656",
+            "meeting_doc_189751",
+            "meeting_doc_190006",
+            "meeting_doc_201706",
+            "meeting_doc_39661",
+            "meeting_doc_85796",
+            "meeting_doc_98296",
+            "nyct_itsp_solicitation_notice_2026"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_201706",
+              "block_id": "p002_c0003",
+              "evidence_id": "meeting_doc_201706#p002_c0003",
+              "source_quote": "Manhattan and Bronx Surface Transit Operating Authority is a subsidiary of the New York City Transit Authority (abbreviated as MaBSTOA)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-72551-mabstoa",
+      "target_id": "entity_mabstoa",
+      "reason": "Both records identify Manhattan and Bronx Surface Transit Operating Authority / MaBSTOA as the same MTA agency.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-72551-mabstoa",
+          "display_name": "Manhattan and Bronx Surface Transit Operating Authority (MaBSTOA)",
+          "entity_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_72551"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_72551",
+              "block_id": "p040_c0012",
+              "evidence_id": "meeting_doc_72551#p040_c0012",
+              "source_quote": "Manhattan and Bronx Surface Transit Operating Authority"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_mabstoa",
+          "display_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_115391",
+            "meeting_doc_157711",
+            "meeting_doc_174081",
+            "meeting_doc_179656",
+            "meeting_doc_189751",
+            "meeting_doc_190006",
+            "meeting_doc_201706",
+            "meeting_doc_39661",
+            "meeting_doc_85796",
+            "meeting_doc_98296",
+            "nyct_itsp_solicitation_notice_2026"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_201706",
+              "block_id": "p002_c0003",
+              "evidence_id": "meeting_doc_201706#p002_c0003",
+              "source_quote": "Manhattan and Bronx Surface Transit Operating Authority is a subsidiary of the New York City Transit Authority (abbreviated as MaBSTOA)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-111756-sirtoa",
+      "target_id": "entity_staten-island-rapid-transit-operating-authority",
+      "reason": "Both records identify Staten Island Rapid Transit Operating Authority / SIRTOA; the alias evidence expands SIRTOA and the target evidence links the legal name to MTA Staten Island Railway/SIR.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-111756-sirtoa",
+          "display_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_type": "operating authority",
+          "source_ids": [
+            "meeting_doc_111756",
+            "meeting_doc_112041",
+            "meeting_doc_124306",
+            "meeting_doc_127476",
+            "meeting_doc_135376",
+            "meeting_doc_186841",
+            "meeting_doc_201701",
+            "meeting_doc_201756",
+            "meeting_doc_63996",
+            "meeting_doc_68111",
+            "meeting_doc_71956",
+            "meeting_doc_76476",
+            "meeting_doc_79036",
+            "meeting_doc_85496",
+            "meeting_doc_87421",
+            "meeting_doc_89551",
+            "meeting_doc_91296",
+            "meeting_doc_94866",
+            "meeting_doc_94996",
+            "meeting_doc_98011",
+            "meeting_doc_98296",
+            "nyct_itsp_solicitation_notice_2026"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_111756",
+              "block_id": "p006_c0005",
+              "evidence_id": "meeting_doc_111756#p006_c0005",
+              "source_quote": "Metro-North Railroad (\"MNR\"), on behalf of itself and Staten Island Rapid Transit Operating Authority (\"SIRTOA\") (collectively, the \"Agencies\")"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_staten-island-rapid-transit-operating-authority",
+          "display_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_type": "transit operating authority",
+          "source_ids": [
+            "meeting_doc_113891",
+            "meeting_doc_128986",
+            "meeting_doc_133236",
+            "meeting_doc_138396",
+            "meeting_doc_160636",
+            "meeting_doc_164931",
+            "meeting_doc_170981",
+            "meeting_doc_186881",
+            "meeting_doc_201706",
+            "meeting_doc_39661"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_201706",
+              "block_id": "p002_c0002",
+              "evidence_id": "meeting_doc_201706#p002_c0002",
+              "source_quote": "Staten Island Rapid Transit Operating Authority is a subsidiary of the Metropolitan Transportation Authority. Its popular name is MTA Staten Island Railway (abbreviated as SIR)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-115246-sirtoa",
+      "target_id": "entity_staten-island-rapid-transit-operating-authority",
+      "reason": "Both records identify Staten Island Rapid Transit Operating Authority / SIRTOA as the same operating authority.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-115246-sirtoa",
+          "display_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_type": "operating authority",
+          "source_ids": [
+            "meeting_doc_115246",
+            "meeting_doc_121271"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_121271",
+              "block_id": "p001_c0001",
+              "evidence_id": "meeting_doc_121271#p001_c0001",
+              "source_quote": "Staten Island Rapid Transit Operating Authority"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_staten-island-rapid-transit-operating-authority",
+          "display_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_type": "transit operating authority",
+          "source_ids": [
+            "meeting_doc_113891",
+            "meeting_doc_128986",
+            "meeting_doc_133236",
+            "meeting_doc_138396",
+            "meeting_doc_160636",
+            "meeting_doc_164931",
+            "meeting_doc_170981",
+            "meeting_doc_186881",
+            "meeting_doc_201706",
+            "meeting_doc_39661"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_201706",
+              "block_id": "p002_c0002",
+              "evidence_id": "meeting_doc_201706#p002_c0002",
+              "source_quote": "Staten Island Rapid Transit Operating Authority is a subsidiary of the Metropolitan Transportation Authority. Its popular name is MTA Staten Island Railway (abbreviated as SIR)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-155481-sir",
+      "target_id": "entity_staten-island-rapid-transit-operating-authority",
+      "reason": "Both records identify Staten Island Rapid Transit Operating Authority; the alias record uses the popular MTA Staten Island Railway name, and the cited source explicitly maps that popular name to the legal authority.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-155481-sir",
+          "display_name": "MTA Staten Island Railway",
+          "entity_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_155481"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_155481",
+              "block_id": "p036_c0011",
+              "evidence_id": "meeting_doc_155481#p036_c0011",
+              "source_quote": "Staten Island Rapid Transit Operating Authority (\"MTA Staten Island Railway\") provides passenger transportation on Staten Island."
+            }
+          ]
+        },
+        {
+          "record_id": "entity_staten-island-rapid-transit-operating-authority",
+          "display_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_type": "transit operating authority",
+          "source_ids": [
+            "meeting_doc_113891",
+            "meeting_doc_128986",
+            "meeting_doc_133236",
+            "meeting_doc_138396",
+            "meeting_doc_160636",
+            "meeting_doc_164931",
+            "meeting_doc_170981",
+            "meeting_doc_186881",
+            "meeting_doc_201706",
+            "meeting_doc_39661"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_201706",
+              "block_id": "p002_c0002",
+              "evidence_id": "meeting_doc_201706#p002_c0002",
+              "source_quote": "Staten Island Rapid Transit Operating Authority is a subsidiary of the Metropolitan Transportation Authority. Its popular name is MTA Staten Island Railway (abbreviated as SIR)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-171381-sir",
+      "target_id": "entity_staten-island-rapid-transit-operating-authority",
+      "reason": "Both records identify Staten Island Rapid Transit Operating Authority; the alias source states that its popular name is MTA Staten Island Railway and abbreviation is SIR, matching the target record's legal entity.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-171381-sir",
+          "display_name": "MTA Staten Island Railway",
+          "entity_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_171381"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_171381",
+              "block_id": "p041_c0002",
+              "evidence_id": "meeting_doc_171381#p041_c0002",
+              "source_quote": "Staten Island Rapid Transit Operating Authority is a subsidiary of the Metropolitan Transportation Authority. Its popular name is MTA Staten Island Railway (abbreviated as SIR)."
+            }
+          ]
+        },
+        {
+          "record_id": "entity_staten-island-rapid-transit-operating-authority",
+          "display_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_type": "transit operating authority",
+          "source_ids": [
+            "meeting_doc_113891",
+            "meeting_doc_128986",
+            "meeting_doc_133236",
+            "meeting_doc_138396",
+            "meeting_doc_160636",
+            "meeting_doc_164931",
+            "meeting_doc_170981",
+            "meeting_doc_186881",
+            "meeting_doc_201706",
+            "meeting_doc_39661"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_201706",
+              "block_id": "p002_c0002",
+              "evidence_id": "meeting_doc_201706#p002_c0002",
+              "source_quote": "Staten Island Rapid Transit Operating Authority is a subsidiary of the Metropolitan Transportation Authority. Its popular name is MTA Staten Island Railway (abbreviated as SIR)."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guard_checks": {
+    "mutation_scope": "prep artifact only; no LOG.md, manifest, merges.json, canonical JSONL, wiki, submissions, data/canonical.db, materialized data, generated outputs, or identity override files intentionally changed",
+    "candidate_limit": {
+      "max_allowed": 10,
+      "proposed_count": 10,
+      "pass": true
+    },
+    "scope": {
+      "record_kind": "entity",
+      "only_entity_aliases": true,
+      "pass": true
+    },
+    "override_shape": {
+      "intended_apply_path": "data/identity-overrides/merges.json aliases.entity",
+      "flat_aliases": false,
+      "pass": true
+    },
+    "existing_alias_conflicts": {
+      "checked_with": "sqlite3 data/canonical.db identity_aliases plus jq data/identity-overrides/merges.json .aliases.entity",
+      "conflicts": [],
+      "pass": true
+    },
+    "record_alias_conflicts": {
+      "checked_with": "sqlite3 data/canonical.db record_aliases for exact target record_id plus alias_id rows",
+      "conflicts": [],
+      "pass": true
+    },
+    "do_not_merge_conflicts": {
+      "checked_with": "sqlite3 data/canonical.db do_not_merge and jq data/identity-overrides/do-not-merge.json .pairs.entity[].record_ids",
+      "conflicts": [],
+      "pass": true
+    },
+    "prior_prep_conflicts": {
+      "checked_with": "jq over data/review_notes/codex-identity-batch0*-prep.json proposed_aliases through identity085",
+      "conflicts": [],
+      "pass": true
+    },
+    "record_existence": {
+      "checked_with": "sqlite3 data/canonical.db records",
+      "missing_record_ids": [],
+      "pass": true
+    },
+    "candidate_basis": {
+      "method": "deterministic local inspection of data/canonical.db records/entities/evidence_refs/record_sources/identity_aliases/record_aliases/do_not_merge, data/identity-overrides/*.json, prior prep artifacts, and cited raw source blocks",
+      "external_or_provider_llm_used": false,
+      "canonicalize_dedup_identity_review_write_ask_schema_ontology_commands_run": false,
+      "profile_or_provider_commands_run": false,
+      "materialize_export_jsonl_validate_run": false,
+      "pass": true
+    }
+  }
+}

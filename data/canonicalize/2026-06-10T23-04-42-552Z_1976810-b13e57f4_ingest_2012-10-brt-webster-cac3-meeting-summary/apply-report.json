@@ -1,0 +1,21 @@
+{
+  "run_id": "2026-06-10T23-04-42-552Z_1976810-b13e57f4_ingest_2012-10-brt-webster-cac3-meeting-summary",
+  "generated_at": "2026-06-11T05:01:40.031Z",
+  "dry_run": false,
+  "wrote": true,
+  "decision_count": 27,
+  "reviewed_count": 5,
+  "alias_additions": [],
+  "aliases_already_present": [],
+  "do_not_merge_additions": [],
+  "relation_submissions": 4,
+  "quarantined": 0,
+  "conflicts": [],
+  "paths": {
+    "merges": "data/identity-overrides/merges.json",
+    "do_not_merge": "data/identity-overrides/do-not-merge.json",
+    "relation_submissions_jsonl": "data/submissions/2026-06-10T23-04-42-552Z_1976810-b13e57f4_ingest_2012-10-brt-webster-cac3-meeting-summary_canonicalize.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-04-42-552Z_1976810-b13e57f4_ingest_2012-10-brt-webster-cac3-meeting-summary/apply-quarantine.jsonl",
+    "apply_report": "data/canonicalize/2026-06-10T23-04-42-552Z_1976810-b13e57f4_ingest_2012-10-brt-webster-cac3-meeting-summary/apply-report.json"
+  }
+}

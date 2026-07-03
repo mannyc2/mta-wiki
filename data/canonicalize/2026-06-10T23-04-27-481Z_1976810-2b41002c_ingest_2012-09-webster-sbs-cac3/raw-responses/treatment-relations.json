@@ -1,0 +1,226 @@
+{
+  "run_id": "2026-06-10T23-04-27-481Z_1976810-2b41002c_ingest_2012-09-webster-sbs-cac3",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T02:56:04.760Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "relate-offset-bus-lanes-webster",
+        "local_observation_id": "treatment_offset_bus_lanes_webster",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_offset-bus-lanes-webster_3",
+            "description": "4 miles of offset bus lanes with bus bulb stations on Webster Avenue for Bx41 SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2012_09_webster_sbs_cac3",
+                "block_id": "p018_c0002",
+                "source_quote": "4 miles of offset bus lanes with bus bulb stations"
+              }
+            ]
+          }
+        ],
+        "rationale": "p018_c0002 explicitly places offset bus lanes on Webster Avenue as part of Bx41 SBS route design",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_webster_sbs_cac3",
+            "block_id": "p018_c0002",
+            "source_quote": "4 miles of offset bus lanes with bus bulb stations"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-offboard-fare-webster",
+        "local_observation_id": "treatment_off_board_fare_collection_webster",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_off-board-fare-collection-webster",
+            "description": "Off board fare collection for the entire Bx41 SBS route",
+            "evidence_refs": [
+              {
+                "source_id": "2012_09_webster_sbs_cac3",
+                "block_id": "p018_c0002",
+                "source_quote": "For the entire route: - Off board fare collection"
+              }
+            ]
+          }
+        ],
+        "rationale": "p018_c0002 explicitly lists off board fare collection for the entire Bx41 SBS route",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_webster_sbs_cac3",
+            "block_id": "p018_c0002",
+            "source_quote": "For the entire route: - Off board fare collection"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-tsp-webster",
+        "local_observation_id": "treatment_transit_signal_priority_webster",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_transit-signal-priority-webster",
+            "description": "Transit signal priority for the entire Bx41 SBS route on Webster Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "2012_09_webster_sbs_cac3",
+                "block_id": "p018_c0002",
+                "source_quote": "Transit signal priority"
+              }
+            ]
+          }
+        ],
+        "rationale": "p018_c0002 explicitly lists transit signal priority for the entire Bx41 SBS route",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_webster_sbs_cac3",
+            "block_id": "p018_c0002",
+            "source_quote": "Transit signal priority"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-bus-bulbs-webster",
+        "local_observation_id": "treatment_sbs_stations_bus_bulbs_webster",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_sbs-stations-bus-bulbs-webster",
+            "description": "SBS stations with bus bulbs on Webster Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "2012_09_webster_sbs_cac3",
+                "block_id": "p016_c0003",
+                "source_quote": "2. Bus bulbs allow for high-quality SBS stations"
+              }
+            ]
+          }
+        ],
+        "rationale": "p016_c0003 explicitly ties bus bulbs to Webster Avenue SBS design",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_webster_sbs_cac3",
+            "block_id": "p015_c0002",
+            "source_quote": "SBS Station / Bus Bulb : Points to a bus stop area with a shelter and a bus."
+          },
+          {
+            "source_id": "2012_09_webster_sbs_cac3",
+            "block_id": "p016_c0003",
+            "source_quote": "2. Bus bulbs allow for high-quality SBS stations"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-ped-safety-webster",
+        "local_observation_id": "treatment_pedestrian_safety_webster",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_pedestrian-safety-webster",
+            "description": "Pedestrian safety improvements throughout the Bx41 SBS corridor on Webster Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "2012_09_webster_sbs_cac3",
+                "block_id": "p018_c0002",
+                "source_quote": "Pedestrian safety improvements"
+              }
+            ]
+          }
+        ],
+        "rationale": "p018_c0002 explicitly lists pedestrian safety improvements for the entire Bx41 SBS route; p015_c0002 and p016_c0003 further show these features in the Webster Ave design",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_webster_sbs_cac3",
+            "block_id": "p015_c0002",
+            "source_quote": "Pedestrian neckdowns : Points to a narrow section of the sidewalk where the street narrows to allow pedestrians to cross."
+          },
+          {
+            "source_id": "2012_09_webster_sbs_cac3",
+            "block_id": "p016_c0003",
+            "source_quote": "3. Curb extensions and medians improve pedestrian safety"
+          },
+          {
+            "source_id": "2012_09_webster_sbs_cac3",
+            "block_id": "p018_c0002",
+            "source_quote": "Pedestrian safety improvements"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-low-floor-webster",
+        "local_observation_id": "treatment_low_floor_buses_webster",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_low-floor-buses-webster",
+            "description": "Low-floor buses for the entire Bx41 SBS route on Webster Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "2012_09_webster_sbs_cac3",
+                "block_id": "p018_c0002",
+                "source_quote": "Low-floor buses"
+              }
+            ]
+          }
+        ],
+        "rationale": "p018_c0002 explicitly lists low-floor buses for the entire Bx41 SBS route",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_webster_sbs_cac3",
+            "block_id": "p018_c0002",
+            "source_quote": "Low-floor buses"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-branding-webster",
+        "local_observation_id": "treatment_sbs_branding_webster",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_sbs-branding-webster",
+            "description": "Station and bus branding for the entire Bx41 SBS route on Webster Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "2012_09_webster_sbs_cac3",
+                "block_id": "p018_c0002",
+                "source_quote": "Station and bus branding"
+              }
+            ]
+          }
+        ],
+        "rationale": "p018_c0002 explicitly lists station and bus branding for the entire Bx41 SBS route",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_webster_sbs_cac3",
+            "block_id": "p018_c0002",
+            "source_quote": "Station and bus branding"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-52-59-133Z_2111393-20cadf0d_canonicalize_2026-06-10t23-04-27-481z-1976810-2b41002c-ingest-2012-09-webster-sbs-cac3-treatment-relations"
+}

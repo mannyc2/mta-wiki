@@ -1,0 +1,139 @@
+{
+  "note_id": "codex-project-identity-2017-sip-woodhaven-retarget-2026-07-01",
+  "created_at": "2026-07-01",
+  "campaign": "post-ingest deterministic normalization cleanup",
+  "slice": "project duplicate identity retarget",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed model/profile commands"
+  ],
+  "baseline": {
+    "route_count": 319,
+    "project_count": 1862,
+    "exact_normalized_project_name_duplicate_groups": 4,
+    "target_group": "2017 street improvement project",
+    "bad_targeted_submissions": [
+      {
+        "submission_id": "sub_15f5c00d09bac31e",
+        "source_id": "capital_woodhaven_blvd_capital_projects_cb10_dec2024",
+        "old_target_record_id": "project_2017-street-improvement-79th",
+        "correct_target_record_id": "project_2017-sip-woodhaven-blvd-cb5-sept2024"
+      },
+      {
+        "submission_id": "sub_98f679d832db408e",
+        "source_id": "capital_woodhaven_blvd_capital_projects_cb6_sept2024",
+        "old_target_record_id": "project_2017-street-improvement-79th",
+        "correct_target_record_id": "project_2017-sip-woodhaven-blvd-cb5-sept2024"
+      }
+    ],
+    "pre_fix_symptom": {
+      "project_2017-street-improvement-79th": {
+        "incorrect_source_ids": [
+          "capital_woodhaven_blvd_capital_projects_cb10_dec2024",
+          "capital_woodhaven_blvd_capital_projects_cb6_sept2024"
+        ],
+        "incorrect_payload_signals": [
+          "Woodhaven Boulevard location",
+          "Queens borough merge value",
+          "Q52/Q53 SBS Woodhaven description"
+        ]
+      }
+    }
+  },
+  "implemented_change": {
+    "summary": "Retired two wrong-target Woodhaven project submissions and appended deterministic replacements targeting the Woodhaven 2017 SIP project.",
+    "retired_submission_ids": [
+      "sub_15f5c00d09bac31e",
+      "sub_98f679d832db408e"
+    ],
+    "replacement_submission_ids": [
+      "sub_580b14fa60241bb5",
+      "sub_3c9e5dcdd684b0bc"
+    ],
+    "files_changed": [
+      "data/submission-overrides/retired.json",
+      "data/submissions/2026-07-01_codex_project_identity_2017_sip_woodhaven_retarget.jsonl"
+    ],
+    "canonical_jsonl_hand_edited": false
+  },
+  "after": {
+    "validate_issues": 0,
+    "submissions": 98104,
+    "canonical_records": 84031,
+    "wiki_pages": 7334,
+    "retired_submissions_skipped": 245,
+    "project_count": 1862,
+    "exact_normalized_project_name_duplicate_groups": 4,
+    "project_2017-street-improvement-79th": {
+      "source_ids": [
+        "79_st_riverside_dr_fdr_dr_cb7_apr2025",
+        "79_st_riverside_dr_fdr_dr_cb8_apr2025"
+      ],
+      "submission_ids": [
+        "sub_4086278c9c419945",
+        "sub_83fdabb8da564645"
+      ],
+      "contains_woodhaven_payload": false,
+      "borough": "Manhattan"
+    },
+    "project_2017-sip-woodhaven-blvd-cb5-sept2024": {
+      "source_ids": [
+        "capital_woodhaven_blvd_capital_projects_cb10_dec2024",
+        "capital_woodhaven_blvd_capital_projects_cb5_sept2024",
+        "capital_woodhaven_blvd_capital_projects_cb6_sept2024"
+      ],
+      "submission_ids": [
+        "sub_1876cbdee8497840",
+        "sub_3c9e5dcdd684b0bc",
+        "sub_580b14fa60241bb5"
+      ],
+      "contains_woodhaven_payload": true,
+      "borough": "Queens"
+    }
+  },
+  "verification": {
+    "focused_tests": {
+      "command": "bun test packages/pipeline/test/materialize/materialize.test.ts",
+      "status": "passed",
+      "tests": 56,
+      "expect_calls": 859
+    },
+    "materialize": {
+      "command": "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+      "status": "passed",
+      "materialized_submissions": "93083/98104",
+      "retired_submissions_skipped": 245,
+      "canonical_records": 84031,
+      "wiki_pages_from_materialize_output": 7338,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "sqlite_quick_check": {
+      "command": "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+      "status": "ok"
+    },
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "status": "passed",
+      "issues": 0,
+      "submissions": 98104,
+      "canonical_records": 84031,
+      "wiki_pages": 7334
+    }
+  },
+  "intentionally_unresolved": [
+    "The exact normalized project-name duplicate group remains as two distinct records because Woodhaven/Queens/Q52-Q53 and 79th Street/Manhattan/M79 are intentionally do-not-merge scoped projects.",
+    "Other exact project-name groups remain queued for triage: Cops Cameras Care, Jamaica Capacity Improvement Project versus Phase 2, and Security Initiatives.",
+    "Route duplicate heuristic groups remain queued: sparse route-id SBS route-index records and the S shuttle display/id collision."
+  ],
+  "next_lanes": [
+    "Audit and either merge or guard Cops Cameras Care project records.",
+    "Audit the sparse route-id SBS route-index records and decide whether they should be aggregate/list context rather than true_route.",
+    "Continue exact project/route duplicate buckets before returning to assertion-status unknown reductions."
+  ]
+}

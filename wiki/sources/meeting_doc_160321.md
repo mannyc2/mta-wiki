@@ -1,0 +1,172 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-160321"
+record_kind: "source"
+display_name: "Bridges and Tunnels Procurement - December 2024"
+source_id: "meeting_doc_160321"
+source_ids:
+  - "meeting_doc_160321"
+local_observation_id: "source_meeting_doc_160321"
+local_observation_ids:
+  - "source_meeting_doc_160321"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T20:43:44.669Z"
+raw_text: "MTA Bridges and Tunnels procurement document for December 2024 including modification to personal service contract with Gannett Fleming Engineers and Architects, PC for $2.1M."
+submission_ids:
+  - "sub_9fb3b9d175d5ead1"
+payload:
+  authority_tier: "board_material"
+  content_type: "procurement agenda"
+  date: "December 12, 2024"
+  date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2024-12-12"
+    precision: "day"
+    raw_text: "December 12, 2024"
+  date_text: "December 12, 2024"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2024-12-12"
+    precision: "day"
+    raw_text: "December 12, 2024"
+  description: "Bridges and Tunnels procurement agenda for December 2024 with Schedule H modification for PMOC Services"
+  document_date: "December 12, 2024"
+  document_date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2024-12-12"
+    precision: "day"
+    raw_text: "December 12, 2024"
+  published_date_normalized: "2024-12-12"
+  published_date_precision: "day"
+  publisher: "MTA Bridges and Tunnels"
+  title: "PROCUREMENTS"
+evidence_refs:
+  -
+    block_id: "p003_c0002"
+    evidence_id: "meeting_doc_160321#p003_c0002"
+    page_number: 3
+    role: "document_date"
+    source_id: "meeting_doc_160321"
+    source_path: "raw/sources/meeting_doc_160321/blocks.jsonl"
+    source_quote: "December 12, 2024"
+    text_sha256: "sha256:3f390f0648573e4942214db89aac2b3590d7f1931751c4e10ba576e1474bd52e"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0003"
+    evidence_id: "meeting_doc_160321#p002_c0003"
+    page_number: 2
+    role: "summary"
+    source_id: "meeting_doc_160321"
+    source_path: "raw/sources/meeting_doc_160321/blocks.jsonl"
+    source_quote: "The Procurement Agenda this month includes 1 action for a proposed estimated expenditure of $2.1M."
+    text_sha256: "sha256:9f5ad608d4b6dd09482cce9bab94fbd4295237c8477ad3c40c263aa1a20edd59"
+    text_source: "raw_text"
+---
+
+# Bridges and Tunnels procurement
+
+source_id: meeting_doc_160321
+citation: cite block ids exactly as shown in square brackets
+document: 55 block(s)
+
+## Page 1
+
+> [p001_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p001_c0002] MTA Bridges and Tunnels
+[p001_c0003] Lynn Gore , Deputy Chief Procurement Officer, Procurement Department
+
+## Page 2
+
+### [p002_c0001] The logo for MTA Bridges and Tunnels, featuring a black circle with the white letters 'MTA' inside, followed by the text 'Bridges and Tunnels' in a bold, black, sans-serif font.
+### [p002_c0002] PROCUREMENTS
+[p002_c0003] The Procurement Agenda this month includes 1 action for a proposed estimated expenditure of $2.1M.
+
+## Page 3
+
+[p003_c0001]
+
+```text
+Subject Request for Authorization to Award Various Procurements Department MTA Procurement Department Head Name Lynn Gore Department Head Signature Project Manager Name Various Board Action Order To Date Approval Info Other 1 Committee 12/16/24 2 Board 12/18/24
+```
+[p003_c0002]
+
+```text
+December 12, 2024 Department Department Head Name Department Head Signature Internal Approvals Approval Order Approval President Gen. Counsel & Corporate Secretary MTA Deputy Chief Procurement Officer
+```
+### [p003_c0003] Internal Approvals (cont.)
+[p003_c0004]
+
+```text
+Order Approval Order Approval Order Approval Order Approval Chief Financial Officer Chief Technology Officer Chief Health & Safety Officer Chief EEO Officer Chief Security Officer Chief Maintenance Officer MTA Office of Civil Rights
+```
+### [p003_c0005] PURPOSE
+[p003_c0006] To obtain approval of the Board to award various contracts and purchase orders, and to inform the Bridges & Tunnels Committee of these procurement actions.
+### [p003_c0007] DISCUSSION
+[p003_c0008] MTA B&T proposes to award Noncompetitive procurements in the following categories: None
+[p003_c0009] MTA B&T proposes to award Competitive procurements in the following categories:
+[p003_c0010]
+
+```text
+Procurements Requiring Majority Vote: # of Actions $ Amount Schedule H: Modification to Personal & Miscellaneous Service 1 $ 2.1 M
+```
+[p003_c0011] MTA B&T proposes to award Ratifications in the following categories: None
+[p003_c0012]
+
+```text
+TOTAL 1 $ 2.1 M
+```
+[p003_c0013] COMPETITIVE BIDDING REQUIREMENTS: The procurement actions in Schedules A, B, C, and D are subject to the competitive bidding requirements of PAL 1209 or 1265-a relating to contracts for the purchase of goods or public work. Procurement actions in the remaining Schedules are not subject to these requirements.
+[p003_c0014] BUDGET IMPACT: The purchases/contracts will result in obligating funds in the amounts listed. Funds are available in the current operating/capital budgets for this purpose.
+[p003_c0015] RECOMMENDATION: That the purchases/contracts be approved as proposed. (Items are included in the resolution of approval at the beginning of the Procurement Section.)
+[p003_c0016] The legal name of MTA Bridges and Tunnels is Triborough Bridge and Tunnel Authority.
+
+## Page 4
+
+### [p004_c0001] BOARD RESOLUTION
+[p004_c0002] WHEREAS , in accordance with Sections 1265-a and 1209 of the Public Authorities Law and the All-Agency General Contract Procurement Guidelines, the Board authorizes the award of certain noncompetitive purchase and public work contracts, and the solicitation and award of requests for proposals regarding purchase and public work contracts; and
+[p004_c0003] WHEREAS , in accordance with the All-Agency Service Contract Procurement Guidelines and General Contract Procurement Guidelines the Board authorizes the award of certain noncompetitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts, and
+[p004_c0004] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Service Contract Procurement Guidelines, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p004_c0005] NOW, the Board resolves as follows:
+[p004_c0006] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract.
+[p004_c0007] 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals, and authorizes the solicitation of such proposals.
+[p004_c0008] 3. As to each request for proposals (for purchase and public work contracts) set forth in Schedule C for which a recommendation is made to award the contract, the Board authorizes the execution of said contract.
+[p004_c0009] 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein and ratifies each action for which ratification is requested.
+[p004_c0010] 5. The Board authorizes the execution of each of the following for which Board authorization is required: (i) the miscellaneous procurement contracts set forth in Schedule E; (ii) the personal service contracts set forth in Schedule F; (iii) the miscellaneous service contracts set forth in Schedule G; (iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; (v) the contract modifications to purchase and public work contracts set forth in Schedule I; and (vi) the modifications to miscellaneous procurement contracts set forth in Schedule J.
+[p004_c0011] 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+
+## Page 5
+
+### [p005_c0001] Bridges and Tunnels
+[p005_c0002] DECEMBER 2024
+### [p005_c0003] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p005_c0004] Procurements Requiring Majority Vote:
+### [p005_c0005] H. Modification to Personal Service & Miscellaneous Service Contracts
+[p005_c0006] (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p005_c0007] 1. Gannett Fleming Engineers and Architects, PC      $2,100,000 Staff Summary Attached 2 years Contract # PSC-21-3047.3
+[p005_c0008] Contract for project management office consultant services to provide services for the New York Customer Service Center contracts; Modification for a one-year extension.
+
+## Page 6
+
+### [p006_c0001] Schedule H: Modifications to Personal Service & Miscellaneous Service Contracts
+### [p006_c0002] Item Number:
+[p006_c0003]
+
+```text
+Vendor Name (Location) Gannett Fleming Engineers and Architects, PC (New York, New York) Description: Project Management Office Consultant Services for the New York Customer Service Center Contracts Contract Term (including Options, if any) March 22, 2022–March 21, 2024 Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Department: Toll Management, Stephen Knapp SVP
+```
+[p006_c0004]
+
+```text
+Contract Number PSC-21-3047 AWO/Mod. # 3 Original Amount: $ 1,867,505 Prior Modifications: $ 1,591,385 Current Amount: $ 3,458,890 This Request: $2,100,000 % of This Request to Current Amount: 60.7% % of Modifications (including This Request) to Original Amount: 197.7%
+```
+### [p006_c0005] Discussion:
+[p006_c0006] Bridges and Tunnels (“B&T”) is seeking Board approval to extend the personal service contract awarded to Gannett Fleming Engineers and Architects, PC (“GFE”) for one-year (December 31, 2024–December 31, 2025) for additional Project Management Office Consultant (“PMOC”) Services for the New York Customer Service Center (“NYCSC”) Contracts in the amount of $2.1 million.
+[p006_c0007] Pursuant to two competitively procured joint solicitations, B&T, the New York State Thruway Authority (“NYSTA”), and the Port Authority of New York and New Jersey (“PANYNJ”), (collectively, “the Authorities”), awarded three contracts for the following services: (1) NYCSC System and License Plate and Owner Identification Services (to Conduent State & Local Solutions, Inc.); (2) Customer Contact Center (to TTEC Government Solutions); and (3) Tag Distribution (to TransCore, Inc.). To assist in the oversight of these contracts, the Authorities required the PMOC services of a consultant to provide two Project Managers (“CPMs”) to work under the general direction of the Authorities’ project managers (“APMs”). PMOC services provided by the CPMs include: (1) coordinating interagency activities; (2) providing oversight of NYCSC contractors’ design and development activities; (3) reviewing and confirming that business rules, requirements, and documents prepared by contractors align with the executed contract documents; and (4) providing status reports on contractors’ adherence to project schedule.
+[p006_c0008] In September of 2021, B&T issued a joint Request for Proposal (“RFP”) on behalf of the Authorities for PMOC Services. As a result of the RFP, the Authorities recommended GFE for contract award. The base contract was Board approved in January 2022 and awarded in March 2022 for two years in the amount of $1,867,505. To date, there have been two amendments: No. 1 was for additional project management support services with additional funding in the amount of $621,385; and No. 2, because of a delay to NYCSC contract, extended the period of performance (March 21, 2024–December 31, 2024) and added funding in the amount of $970,000. The contractor, Conduent State & Local Solutions, Inc., will therefore reimburse the Authorities in full for the cost of Amendment No. 2.
+[p006_c0009] The implementation of the NYCSC System is now scheduled to go live in early 2025. The Authorities have determined that the continuation of PMOC services with GFE will be required to help manage the new system after the go-live date.
+[p006_c0010] GFE proposed a cost of $2.3 million. After negotiations, a cost of $2.1 million was agreed upon and is consistent with the Project Manager’s estimate and consistent with the existing rates of the contract. Based on the aforementioned, the value of this Amendment is considered fair and reasonable. GFE shall be compensated under the existing rates of the contract.
+[p006_c0011] GFE has certified that pursuant to EO 16, it is not doing business in Russia.
+[p006_c0012] The contract awarded to GFE was evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state, and local law and regulations. GFE has certified compliance with the MTA’s cybersecurity requirements.
+### [p006_c0013] Impact on Fundin
+[p006_c0014] Funding is available in the operating budget. B&T, PANYNJ, and NYSTA will equally share the cost under this contract, therefore B&T will be reimbursed two-thirds of the cost for this amendment by the other participating Authorities.

@@ -1,0 +1,160 @@
+{
+  "note_id": "codex-relation-rule-or-data-next-prep-2026-06-22",
+  "created_at": "2026-06-22T00:00:00Z",
+  "author": "codex",
+  "scope": "validator/rule lane; no generated-output commands; no provider-backed post-ingest commands",
+  "kind": "scoped_code_test_patch_recommendation",
+  "recommendation": {
+    "type": "validator_rule_gap",
+    "relation_kind": "has_timeline_event",
+    "current_rejected_shape": "source -> event",
+    "candidate_count": 60,
+    "summary": "Allow source records to carry source-backed timeline events. The sampled records consistently use a source document or meeting-material source as the subject and a dated board, committee, approval, timetable, or document event as the object. This is analogous to the already accepted project/route/corridor/entity -> event timeline relation and avoids retire/replace churn for correctly shaped source timeline context.",
+    "why_not_data_cleanup": [
+      "The subject endpoint is intentionally the source record, not a mistaken project/entity endpoint, in the sampled rows.",
+      "The object endpoint is already an event record with event/date payload fields.",
+      "The relation kind has_timeline_event accurately describes source-document timeline context such as approval schedules, board/committee dates, and timetable periods.",
+      "Replacing these rows would require inventing less direct relation kinds or dropping useful source-to-event context rather than correcting bad endpoints."
+    ],
+    "exact_patch_plan": {
+      "files": [
+        "packages/pipeline/src/records/relations.ts",
+        "packages/pipeline/test/records/relations.test.ts"
+      ],
+      "relations_ts_change": "In RELATION_ENDPOINT_SHAPES.has_timeline_event.subject, add \"source\" to the existing subject list. Do not add event, claim, treatment_component, or any other subject kind in this patch.",
+      "relations_test_change": "In relation helpers > accepts expected endpoint shapes and reports unexpected known shapes, add expect(relationEndpointShapeIssue(\"has_timeline_event\", \"source\", \"event\")).toBeUndefined(); and update the negative expected message for has_timeline_event only if the test asserts the full expected-subject string.",
+      "non_goals": [
+        "Do not widen published_by.",
+        "Do not widen has_timeline_event to event -> event, claim -> event, or treatment_component -> event in this patch.",
+        "Do not run materialize, export-jsonl, full validate, canonicalize, identity-review-run, write, ask, schema, ontology-normalize, or provider/profile commands."
+      ]
+    }
+  },
+  "inventory_context": {
+    "method": "Targeted bun --eval over readCanonicalRecords() plus relationEndpointShapeIssue(); not full validate.",
+    "batch019_pending_materialize_note": "The log says relation batch019 retired nine MTA Bridges and Tunnels facility operated_by entity -> entity rows and appended replacements, but those durable inputs are pending materialize. The targeted inventory excluded those nine retired submission ids so this prep does not duplicate serialized conductor work.",
+    "targeted_issue_count_after_excluding_batch019_retire_ids": 181,
+    "top_buckets_after_excluding_batch019_retire_ids": [
+      {
+        "bucket": "has_timeline_event source->event",
+        "count": 60
+      },
+      {
+        "bucket": "has_timeline_event event->event",
+        "count": 15,
+        "note": "Not included in this patch recommendation; event-to-event timeline semantics need separate review."
+      },
+      {
+        "bucket": "has_timeline_event claim->event",
+        "count": 9,
+        "note": "Not included in this patch recommendation; claim-to-event semantics are less uniform and need separate review."
+      },
+      {
+        "bucket": "has_claim event->claim",
+        "count": 8,
+        "note": "Previously proposed broader rule gap class, but not part of this narrow patch."
+      }
+    ]
+  },
+  "evidence_samples": [
+    {
+      "record_id": "relation_199066-timetable-change-has-event-period",
+      "submission_id": "sub_d0a0caaef1ff9fec",
+      "source_id": "meeting_doc_199066",
+      "local_observation_id": "relation_199066_timetable_change_has_event_period",
+      "subject": "source_meeting-doc-199066",
+      "object": "event_199066-march-timetable-change-period",
+      "evidence_refs": [
+        "meeting_doc_199066#p001_c0004"
+      ],
+      "evidence_text": "This is to inform the Long Island Committee of the MTA Long Island Rail Road’s plan to adjust schedules beginning on March 23, 2026, through May 17, 2026.",
+      "reason": "The source document itself describes a timetable-change period event."
+    },
+    {
+      "record_id": "relation_board-action-timeline",
+      "submission_id": "sub_5714070cdfad918e",
+      "source_id": "meeting_doc_102816",
+      "local_observation_id": "relation_board_action_timeline",
+      "subject": "source_meeting-doc-102816",
+      "object": "event_ta-committee-121922",
+      "evidence_refs": [
+        "meeting_doc_102816#p002_c0006"
+      ],
+      "evidence_text": "Board Action Order To Date Approval Info Other 1 TA Committee 12/19/22 X 2 Finance Committee 12/19/22 X 3 MTA Board 12/21/22 X",
+      "reason": "The source record carries explicit committee and board timeline events."
+    },
+    {
+      "record_id": "relation_board-action-timeline-board",
+      "submission_id": "sub_7c5c6303c5ae4ac8",
+      "source_id": "meeting_doc_102816",
+      "local_observation_id": "relation_board_action_timeline_board",
+      "subject": "source_meeting-doc-102816",
+      "object": "event_mta-board-122122",
+      "evidence_refs": [
+        "meeting_doc_102816#p002_c0006"
+      ],
+      "evidence_text": "Board Action Order To Date Approval Info Other 1 TA Committee 12/19/22 X 2 Finance Committee 12/19/22 X 3 MTA Board 12/21/22 X",
+      "reason": "Same source-backed action table supports the source-to-board-meeting timeline edge."
+    },
+    {
+      "record_id": "relation_board-approves-procurement",
+      "submission_id": "sub_6e99f71705c549c7",
+      "source_id": "meeting_doc_164966",
+      "local_observation_id": "relation_board_approves_procurement",
+      "subject": "source_meeting-doc-164966",
+      "object": "event_mta-board-20250226",
+      "evidence_refs": [
+        "meeting_doc_164966#p003_c0001"
+      ],
+      "evidence_text": "Subject Request for Authorization to Award Various Procurements Department MTA Procurement Department Head Name Lisette Camilo Department Head Signature Lisette Camilo Project Manager Name Rose Davis Board Action Order To Date Approval Info Other 1 Committee 02/24/25 2 Board 02/26/25",
+      "reason": "The procurement source record has board/committee action dates as timeline events."
+    },
+    {
+      "record_id": "relation_capital-program-amendment-oct2024-meeting-doc-155616",
+      "submission_id": "sub_31202346781f12e5",
+      "source_id": "meeting_doc_155616",
+      "local_observation_id": "relation_capital_program_amendment_oct2024_meeting_doc_155616",
+      "subject": "source_meeting-doc-155616",
+      "object": "event_board-amendment-october-2024-meeting-doc-155616",
+      "evidence_refs": [
+        "meeting_doc_155616#p001_c0009"
+      ],
+      "evidence_text": "2010-2014 Capital Program Amendment No. 7 As Proposed to the MTA Board on October 30, 2024",
+      "reason": "The source title/evidence directly encodes the board proposal event date."
+    },
+    {
+      "record_id": "relation_capital-program-original-adoption-meeting-doc-155616",
+      "submission_id": "sub_61e538e52633d493",
+      "source_id": "meeting_doc_155616",
+      "local_observation_id": "relation_capital_program_original_adoption_meeting_doc_155616",
+      "subject": "source_meeting-doc-155616",
+      "object": "event_original-program-adoption-meeting-doc-155616",
+      "evidence_refs": [
+        "meeting_doc_155616#p002_c0002"
+      ],
+      "evidence_text": "On April 28, 2010, the MTA Board approved a proposed $23.812 billion 2010-2014 Capital Program.",
+      "reason": "The source document contains historical program-adoption event context."
+    }
+  ],
+  "commands_run": [
+    "sed -n '1,90p' LOG.md",
+    "rg -n \"has_timeline_event metric_claim|operated_by entity|relation-rule|endpoint-shape\" LOG.md data/review_notes packages/pipeline/src/records/relations.ts packages/pipeline/test/records/relations.test.ts -g '*.md' -g '*.json' -g '*.jsonl' -g '*.ts'",
+    "sed -n '228,282p' packages/pipeline/src/records/relations.ts && sed -n '52,90p' packages/pipeline/test/records/relations.test.ts",
+    "bun --eval targeted endpoint-shape inventory over readCanonicalRecords() and relationEndpointShapeIssue(), excluding queued batch019 retire ids",
+    "bun --eval sample has_timeline_event source->event/event->event/claim->event buckets from readCanonicalRecords()",
+    "jq -c selected evidence blocks from raw/sources/meeting_doc_199066/blocks.jsonl, meeting_doc_102816/blocks.jsonl, meeting_doc_164966/blocks.jsonl, meeting_doc_171001/blocks.jsonl, meeting_doc_112151/blocks.jsonl, and meeting_doc_155616/blocks.jsonl"
+  ],
+  "commands_not_run": [
+    "materialize",
+    "export-jsonl",
+    "full validate",
+    "canonicalize",
+    "dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "provider/profile commands"
+  ]
+}

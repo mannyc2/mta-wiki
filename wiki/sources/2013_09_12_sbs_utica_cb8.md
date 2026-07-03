@@ -1,0 +1,211 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_2013-09-12-sbs-utica-cb8"
+record_kind: "source"
+display_name: "Utica Avenue Bus Priority and Safety Study - Brooklyn CB 8 Presentation"
+source_id: "2013_09_12_sbs_utica_cb8"
+source_ids:
+  - "2013_09_12_sbs_utica_cb8"
+local_observation_id: "source_2013_09_12_sbs_utica_cb8"
+local_observation_ids:
+  - "source_2013_09_12_sbs_utica_cb8"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-10T23:16:41.205Z"
+raw_text: "Utica Avenue Bus Priority and Safety Study presentation to Brooklyn CB 8 on September 12, 2013"
+submission_ids:
+  - "sub_c29486d83f976b95"
+payload:
+  authority_tier: "plan_document"
+  content_type: "presentation"
+  date: "2013-09-12"
+  date_normalized:
+    confidence: "submitted_iso"
+    normalized_date: "2013-09-12"
+    precision: "day"
+    raw_text: "2013-09-12"
+  date_text: "September 12, 2013"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2013-09-12"
+    precision: "day"
+    raw_text: "September 12, 2013"
+  published_date_normalized: "2013-09-12"
+  published_date_precision: "day"
+  publisher: "New York City Department of Transportation"
+  title: "Utica Avenue Bus Priority and Safety Study"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "2013_09_12_sbs_utica_cb8#p001_c0001"
+    page_number: 1
+    role: "document_logo"
+    source_id: "2013_09_12_sbs_utica_cb8"
+    source_path: "raw/sources/2013_09_12_sbs_utica_cb8/blocks.jsonl"
+    source_quote: "The logo for the New York City Department of Transportation (NYC DOT)"
+    text_sha256: "sha256:bc677338ad5135f028cf8573bf3fe94c4a3fba54affe5dd45543eb095e5c8339"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "2013_09_12_sbs_utica_cb8#p001_c0002"
+    page_number: 1
+    role: "document_title"
+    source_id: "2013_09_12_sbs_utica_cb8"
+    source_path: "raw/sources/2013_09_12_sbs_utica_cb8/blocks.jsonl"
+    source_quote: "Utica Avenue Bus Priority and Safety Study"
+    text_sha256: "sha256:46a83815d60c3bf9aa76c911197f36d3020062c729a0f28505f5cbf710571786"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "2013_09_12_sbs_utica_cb8#p001_c0004"
+    page_number: 1
+    role: "date_audience"
+    source_id: "2013_09_12_sbs_utica_cb8"
+    source_path: "raw/sources/2013_09_12_sbs_utica_cb8/blocks.jsonl"
+    source_quote: "Brooklyn CB 8, September 12, 2013"
+    text_sha256: "sha256:287ab09d7d047f95535ec65e819085cb022c916f5c3dc42310b153ca3d57af3e"
+    text_source: "raw_text"
+---
+
+# Download the slideshow (pdf)
+
+source_id: 2013_09_12_sbs_utica_cb8
+citation: cite block ids exactly as shown in square brackets
+document: 83 block(s)
+
+## Page 1
+
+> [p001_c0001] The logo for the New York City Department of Transportation (NYC DOT). It features the words "NEW YORK CITY" in a bold, sans-serif font above a stylized green "DOT" symbol. The "DOT" symbol consists of two overlapping circles with horizontal lines inside, creating a sense of motion or speed.
+### [p001_c0002] Utica Avenue Bus Priority and Safety Study
+> [p001_c0003] A photograph of a busy bus stop on a sunny day in Brooklyn. A large crowd of people is gathered on the sidewalk, waiting for a bus. In the background, a white bus is stopped at the curb, with its destination sign displaying "B46 LIMITED" in orange. The bus has "Clean Air Hybrid Electric Bus" and the number "4226" on its side. A "V.I.M." advertisement is visible on the side of the bus. The street is lined with buildings, and a "DRUGS" sign is visible on the left. The overall scene depicts a high-traffic urban environment.
+[p001_c0004] Brooklyn CB 8, September 12, 2013
+[p001_c0005] _1_
+
+## Page 2
+
+> [p002_c0001] The logo for the New York City Department of Transportation (NYC DOT) is located in the top left corner. It features the words "NEW YORK CITY" in a bold, sans-serif font above a stylized green graphic consisting of three horizontal bars and a circular element.
+### [p002_c0002] Project Overview
+> [p002_c0003] A detailed street map of the Utica Avenue project area in New York City. The map shows a grid of streets with labels for each. A red double-headed arrow is drawn along Utica Avenue, indicating the project's extent from St. Johns Place to Church Avenue. Three green rectangular boxes are placed at the intersections of Utica Avenue with St. Johns Place, Eastern Parkway, and Church Avenue. A scale bar at the bottom right shows distances of 0, 0.125, 0.25, and 0.5 miles. A north arrow is located in the bottom left corner.
+- [p002_c0004] • Focus on Utica Avenue from St. Johns Place to Church Avenue • Key intersections at Eastern Parkway, Empire/Lefferts, Church Avenue • Study goals – Improve pedestrian and driver safety – Improve bus travel times – Maintain parking and curb access
+[p002_c0005] _2_
+
+## Page 3
+
+### [p003_c0001] Transit Needs: B46 Bus Service
+- [p003_c0002] • Limited subway access • B46: second busiest bus route in NYC • Over 49,000 bus passengers per weekday • Average speed of 6.8 mph, below Bklyn avg. • Congestion: slower buses and bus bunching
+> [p003_c0003] The map illustrates the B46 bus route in Brooklyn, starting at Williamsburg Bridge Plaza and ending at Kings Plaza. The route is primarily along Broadway and Malcolm X Blvd. Key stops include: Williamsburg: Marcy Av, Rodney St, Union Av, Lorimer St (B46), Debevoise St, Graham Av (B43). Bushwick: Flushing Av (B15, B43, B47, B57), Myrtle Av (B47, B54). Bedford-Stuyvesant: Marcus Garvey Blvd (B15), DeKalb Av (B38, B38LTD, Kosciuszko St), Quincy St, Gates Av (B52), Hancock St, Halsey St (B26). Brooklyn: Fulton St (B25), Dean St (B15, B65), Bergen St (B15, B65), Utica Av (B46 local buses make all stops). Crown Heights: St. Johns Pl (B45), Eastern Pkwy (B14, B17, Crown Hts-Utica Av), Empire Blvd (B12), Lefferts Av (B12), Winthrop St. East Flatbush: Church Av (B35), Avenue D (B8), Kings Hwy (B7). Flatbush: Avenue H (B6, B6LTD, B103LTD), Flatlands Av (B82, B82LTD, BM1), Avenue N (B41, B41LTD), Fillmore Av (B41, B100), Avenue S (B2, B9), Avenue U' (B2, B3, B9, B41, B47, Q35, B41LTD). Marine Park: Flatbush Av, Kings Plaza. Williamsburg Bridge Plaza Bus Service: B24, B44, B60, B62, Q54, Q59, B44LTD, B46LTD. B46 Limited-Stop buses: operate 7 days a week. These buses make limited stops between DeKalb Av/Malcolm X Blvd and Avenue H/Utica Av, and make all stops along the rest of the route. Map Details: Includes a compass rose indicating North, South, East, and West. The map is credited to br046a11013_cs.
+[p003_c0004] _3_
+
+## Page 4
+
+> [p004_c0001] The logo for the New York City Department of Transportation (NYC DOT) is located in the top left corner. It features the words "NEW YORK CITY" in a bold, sans-serif font above a stylized graphic of a road with three horizontal lines and a circular element.
+### [p004_c0002] Safety Needs: Carroll St. to Church Ave.
+- [p004_c0003] • Speeding: 63% of vehicles exceed speed limit (30 mph) • Crash stats 2006-2010: – 766 total crashes – 41 severe injuries – 2 fatalities • Utica has among the highest rate of injury from motor vehicle crashes in Brooklyn
+> [p004_c0004] A map of the Utica area in Brooklyn, showing the street grid and crash counts from 2005-2009. The map is centered on Utica Ave., which runs vertically. To the left of Utica Ave., streets are labeled from north to south: Carroll St., Crown St., Montgomery St., Lefferts Ave., East New York Ave., Maple St., Rutland Rd., Winthrop St., Clarkson Ave., Lenox Rd., Linden Blvd., and Church Ave. To the right of Utica Ave., the street grid is visible but not labeled. A legend in the top right corner, titled "Crashes: 2005-2009", shows "Utica Crashes ICOUNT" with four red circles of increasing size representing crash counts: 1-16 (smallest), 17-30, 31-45, and 46-59 (largest). Red circles of varying sizes are placed along the intersection of each street with Utica Ave., indicating the number of crashes at each location. The size of the circles generally increases from north to south, with the largest circle at the intersection of Church Ave. and Utica Ave. A small number "4" is visible in the bottom right corner of the map area.
+
+## Page 5
+
+> [p005_c0001] The logo for the New York City Department of Transportation (NYC DOT). It features the words "NEW YORK CITY" in a sans-serif font above a stylized green graphic. The graphic consists of two overlapping circles, each with three horizontal lines, creating a sense of motion or speed.
+### [p005_c0002] Parking Needs: Merchant Request
+- [p005_c0003] • Request for expanded parking on Utica Ave. bet. Eastern Parkway and Carroll St. • DOT seeking to balance parking needs with needs of B46 bus riders
+> [p005_c0004] A photograph of a city street scene. In the foreground, a black sedan is driving in a lane marked with "ONLY BUS" in large white letters. The street is lined with shops, including one with a "MEATS" sign and another with "POULTRY". Further down the street, there are signs for "HAIR & BEAUTY SUPPLY" and "GENERAL". Trees and pedestrians are visible on the sidewalks. The sky is blue with some clouds. A fire hydrant and a manhole cover are visible on the right side of the street. A small orange stamp in the bottom right corner reads "11.9.10".
+[p005_c0005] _Bus Lane: Carroll St. to President St._
+[p005_c0006] _5_
+
+## Page 6
+
+> [p006_c0001] The logo for the New York City Department of Transportation (NYC DOT). It features the words "NEW YORK CITY" in a sans-serif font at the top. Below this, the letters "DOT" are displayed in a large, bold, green font. The "D" and "T" are stylized with horizontal lines, and the "O" is a circle with horizontal lines.
+### [p006_c0002] Community Feedback
+- [p006_c0003] • Key Feedback – B46 provides an important service for the local community – Pedestrian safety concerns, esp. at Eastern Pkwy., East New York Ave., and Church Ave. – Risky driving concerns, inc. speeding, illegal U-turns and lefts, esp. by dollar van drivers – Maintaining street parking supply is important to local businesses (particularly near Eastern Parkway) – More enforcement needed – Need to coordinate signal timing better – Do not impact traffic flow
+[p006_c0004] _6_
+
+## Page 7
+
+> [p007_c0001] The logo for the New York City Department of Transportation (NYC DOT). It features the text "NEW YORK CITY" in a bold, sans-serif font at the top. Below the text is a stylized graphic consisting of two overlapping circles. The left circle contains three horizontal lines, and the right circle contains three vertical lines, creating a grid-like pattern.
+[p007_c0002] St. Johns Pl. to Carroll St:
+[p007_c0003] _7_
+
+## Page 8
+
+### [p008_c0001] Existing Conditions
+> [p008_c0002] A map of Utica Ave showing existing conditions for parking, bus stops, and bus-only lanes. The map includes street names: St Johns Pl, Lincoln Pl, Eastern Parkway, Union St, President St, and Carroll St. The legend indicates: Green for Parking/Loading, Yellow for Bus Stop, and Red for Bus Only Lane. The map shows a central yellow line for Utica Ave with arrows indicating traffic flow. Red boxes highlight the bus-only lane areas on Union St and President St. The map also shows bus stops (yellow) and parking areas (green) along the street.
+- [p008_c0003] Parking/Loading Bus Stop Bus Only Lane
+- [p008_c0004] • Traffic congestion is worst on approaches to Eastern Parkway
+[p008_c0005] _8_
+
+## Page 9
+
+> [p009_c0001] The logo for the New York City Department of Transportation (NYC DOT) is located in the top left corner. It features the words "NEW YORK CITY" in a bold, sans-serif font above a stylized "DOT" where the letters are represented by green circles and horizontal lines.
+### [p009_c0002] Proposed Improvement
+> [p009_c0003] The diagram illustrates a proposed traffic improvement at the Union-Carroll intersection in New York City. The map shows the intersection of St. John's Place, Lincoln Place, Eastern Parkway, Union Street, President Street, and Carroll Street with Utica Avenue running vertically through the center. A legend on the right side of the map defines the color coding: green for Parking/Loading, yellow for Bus Stop, and red for Bus Only Lane. A blue line with arrows indicates the proposed changes: a red box highlights the removal of the bus lane from Union-Carroll, and another red box highlights the installation of a new bus lane from St. John's Place to Eastern Parkway. The map also shows existing parking/loading areas (green) and bus stops (yellow) at various points along the streets. Parking/Loading Bus Stop Bus Only Lane • Remove bus lane Union-Carroll • Install bus lane from St. John's Place to Eastern Parkway
+[p009_c0004] _9_
+
+## Page 10
+
+> [p010_c0001] The logo for the New York City Department of Transportation (NYC DOT) is located in the top left corner. It features the words "NEW YORK CITY" in a bold, sans-serif font above a stylized green graphic consisting of two overlapping circles with horizontal lines inside.
+### [p010_c0002] Proposed Improvement
+> [p010_c0003] A map of the intersection of Utica Ave and Eastern Parkway, showing proposed improvements. The map includes street names: St Johns Pl, Lincoln Pl, Eastern Parkway, Union St, President St, and Carroll St. Utica Ave is the vertical street, and Eastern Parkway is the horizontal street. The map shows various colored blocks representing different types of spaces: green for Parking/Loading, yellow for Bus Stop, and red for Bus Only Lane. A blue box highlights the intersection area between Lincoln Pl and President St. Arrows indicate traffic flow: Southbound (SB) traffic on Eastern Parkway is moving south, and Northbound (NB) traffic on Utica Ave is moving north. The map also shows parking spaces on both sides of the streets, some of which are colored green, yellow, or red to indicate their current or proposed use.
+[p010_c0004] Parking/Loading
+[p010_c0005] Bus Stop
+[p010_c0006] Bus Only Lane
+- [p010_c0007] • Reduces bus delays on SB approach to Eastern Pkwy. • Net gain: 19 peak period parking/loading spaces
+[p010_c0008] _10_
+
+## Page 11
+
+> [p011_c0001] The logo for the New York City Department of Transportation (NYC DOT) is located in the top left corner. It features the text "NEW YORK CITY" in a bold, sans-serif font above a stylized graphic. The graphic consists of two large circles, each containing three horizontal lines, and a vertical rectangle to the right of the circles, also containing three horizontal lines. The entire logo is set against a white background within a rectangular frame.
+[p011_c0002] Carroll St. to Church Ave:
+[p011_c0003] _11_
+
+## Page 12
+
+> [p012_c0001] The logo for the New York City Department of Transportation (NYC DOT). It features the words "NEW YORK CITY" in a sans-serif font above a stylized green "DOT" graphic. The "D" and "T" are composed of horizontal lines, and the "O" is a circle with a horizontal line through it.
+### [p012_c0002] Proposed Solutions
+> [p012_c0003] A photograph of a street scene in New York City. On the left, there is a Rite Aid store with a blue roof and red signage. Several cars are parked along the curb in front of the store. In the middle of the street, there is a line of traffic including a white bus and several cars. The sky is blue with some white clouds. A blue arrow points from the right side of the image towards the center.
+> [p012_c0004] A blue arrow pointing to the right, indicating the direction of the proposed solutions or the flow of traffic.
+- [p012_c0005] • Convert one travel lane to “offset” bus lane to reduce speeding, maximize parking, and benefit bus service • To improve safety and traffic flow: add left turn bays at some intersections, prohibit left turns elsewhere • Implement Transit Signal Priority, optimize corridor signal timings • Adjust bus lanes near Eastern Parkway to increase parking
+
+## Page 13
+
+### [p013_c0001] Potential Left Turn Bans
+> [p013_c0002] A map of a portion of Manhattan, New York City, illustrating potential left turn bans. The map shows a grid of streets including Union St, 1st St, 2nd St, 3rd St, 4th St, 5th St, 6th St, 7th St, 8th St, 9th St, 10th St, 11th St, 12th St, 13th St, 14th St, 15th St, 16th St, 17th St, 18th St, 19th St, 20th St, 21st St, 22nd St, 23rd St, 24th St, 25th St, 26th St, 27th St, 28th St, 29th St, 30th St, 31st St, 32nd St, 33rd St, 34th St, 35th St, 36th St, 37th St, 38th St, 39th St, 40th St, 41st St, 42nd St, 43rd St, 44th St, 45th St, 46th St, 47th St, 48th St, 49th St, 50th St, 51st St, 52nd St, 53rd St, 54th St, 55th St, 56th St, 57th St, 58th St, 59th St, 60th St, 61st St, 62nd St, 63rd St, 64th St, 65th St, 66th St, 67th St, 68th St, 69th St, 70th St, 71st St, 72nd St, 73rd St, 74th St, 75th St, 76th St, 77th St, 78th St, 79th St, 80th St, 81st St, 82nd St, 83rd St, 84th St, 85th St, 86th St, 87th St, 88th St, 89th St, 90th St, 91st St, 92nd St, 93rd St, 94th St, 95th St, 96th St, 97th St, 98th St, 99th St, 100th St, 101st St, 102nd St, 103rd St, 104th St, 105th St, 106th St, 107th St, 108th St, 109th St, 110th St, 111th St, 112th St, 113th St, 114th St, 115th St, 116th St, 117th St, 118th St, 119th St, 120th St, 121st St, 122nd St, 123rd St, 124th St, 125th St, 126th St, 127th St, 128th St, 129th St, 130th St, 131st St, 132nd St, 133rd St, 134th St, 135th St, 136th St, 137th St, 138th St, 139th St, 140th St, 141st St, 142nd St, 143rd St, 144th St, 145th St, 146th St, 147th St, 148th St, 149th St, 150th St, 151st St, 152nd St, 153rd St, 154th St, 155th St, 156th St, 157th St, 158th St, 159th St, 160th St, 161st St, 162nd St, 163rd St, 164th St, 165th St, 166th St, 167th St, 168th St, 169th St, 170th St, 171st St, 172nd St, 173rd St, 174th St, 175th St, 176th St, 177th St, 178th St, 179th St, 180th St, 181st St, 182nd St, 183rd St, 184th St, 185th St, 186th St, 187th St, 188th St, 189th St, 190th St, 191st St, 192nd St, 193rd St, 194th St, 195th St, 196th St, 197th St, 198th St, 199th St, 200th St, 201st St, 202nd St, 203rd St, 204th St, 205th St, 206th St, 207th St, 208th St, 209th St, 210th St, 211st St, 212nd St, 213rd St, 214th St, 215th St, 216th St, 217th St, 218th St, 219th St, 220th St, 221st St, 222nd St, 223rd St, 224th St, 225th St, 226th St, 227th St, 228th St, 229th St, 230th St, 231st St, 232nd St, 233rd St, 234th St, 235th St, 236th St, 237th St, 238th St, 239th St, 240th St, 241st St, 242nd St, 243rd St, 244th St, 245th St, 246th St, 247th St, 248th St, 249th St, 250th St, 251st St, 252nd St, 253rd St, 254th St, 255th St, 256th St, 257th St, 258th St, 259th St, 260th St, 261st St, 262nd St, 263rd St, 264th St, 265th St, 266th St, 267th St, 268th St, 269th St, 270th St, 271st St, 272nd St, 273rd St, 274th St, 275th St, 276th St, 277th St, 278th St, 279th St, 280th St, 281st St, 282nd St, 283rd St, 284th St, 285th St, 286th St, 287th St, 288th St, 289th St, 290th St, 291st St, 292nd St, 293rd St, 294th St, 295th St, 296th St, 297th St, 298th St, 299th St, 300th St, 301st St, 302nd St, 303rd St, 304th St, 305th St, 306th St, 307th St, 308th St, 309th St, 310th St, 311st St, 312nd St, 313rd St, 314th St, 315th St, 316th St, 317th St, 318th St, 319th St, 320th St, 321st St, 322nd St, 323rd St, 324th St, 325th St, 326th St, 327th St, 328th St, 329th St, 330th St, 331st St, 332nd St, 333rd St, 334th St, 335th St, 336th St, 337th St, 338th St, 339th St, 340th St, 341st St, 342nd St, 343rd St, 344th St, 345th St, 346th St, 347th St, 348th St, 349th St, 350th St, 351st St, 352nd St, 353rd St, 354th St, 355th St, 356th St, 357th St, 358th St, 359th St, 360th St, 361st St, 362nd St, 363rd St, 364th St, 365th St, 366th St, 367th St, 368th St, 369th St, 370th St, 371st St, 372nd St, 373rd St, 374th St, 375th St, 376th St, 377th St, 378th St, 379th St, 380th St, 381st St, 382nd St, 383rd St, 384th St, 385th St, 386th St, 387th St, 388th St, 389th St, 390th St, 391st St, 392nd St, 393rd St, 394th St, 395th St, 396th St, 397th St, 398th St, 399th St, 400th St, 401st St, 402nd St, 403rd St, 404th St, 405th St, 406th St, 407th St, 408th St, 409th St, 410th St, 411st St, 412nd St, 413rd St, 414th St, 415th St, 416th St, 417th St, 418th St, 419th St, 420th St, 421st St, 422nd St, 423rd St, 424th St, 425th St, 426th St, 427th St, 428th St, 429th St, 430th St, 431st St, 432nd St, 433rd St, 434th St, 435th St, 436th St, 437th St, 438th St, 439th St, 440th St, 441st St, 442nd St, 443rd St, 444th St, 445th St, 446th St, 447th St, 448th St, 449th St, 450th St, 451st St, 452nd St, 453rd St, 454th St, 455th St, 456th St, 457th St, 458th St, 459th St, 460th St, 461st St, 462nd St, 463rd St, 464th St, 465th St, 466th St, 467th St, 468th St, 469th St, 470th St, 471st St, 472nd St, 473rd St, 474th St, 475th St, 476th St, 477th St, 478th St, 479th St, 480th St, 481st St, 482nd St, 483rd St, 484th St, 485th St, 486th St, 487th St, 488th St, 489th St, 490th St, 491st St, 492nd St, 493rd St, 494th St, 495th St, 496th St, 497th St, 498th St, 499th St, 500th St, 501st St, 502nd St, 503rd St, 504th St, 505th St, 506th St, 507th St, 508th St, 509th St, 510th St, 511st St, 512nd St, 513rd St, 514th St, 515th St, 516th St, 517th St, 518th St, 519th St, 520th St, 521st St, 522nd St, 523rd St, 524th St, 525th St, 526th St, 527th St, 528th St, 529th St, 530th St, 531st St, 532nd St, 533rd St, 534th St, 535th St, 536th St, 537th St, 538th St, 539th St, 540th St, 541st St, 542nd St, 543rd St, 544th St, 545th St, 546th St, 547th St, 548th St, 549th St, 550th St, 551st St, 552nd St, 553rd St, 554th St, 555th St, 556th St, 557th St, 558th St, 559th St, 560th St, 561st St, 562nd St, 563rd St, 564th St, 565th St, 566th St, 567th St, 568th St, 569th St, 570th St, 571st St, 572nd St, 573rd St, 574th St, 575th St, 576th St, 577th St, 578th St, 579th St, 580th St, 581st St, 582nd St, 583rd St, 584th St, 585th St, 586th St, 587th St, 588th St, 589th St, 590th St, 591st St, 592nd St, 593rd St, 594th St, 595th St, 596th St, 597th St, 598th St, 599th St, 600th St, 601st St, 602nd St, 603rd St, 604th St, 605th St, 606th St, 607th St, 608th St, 609th St, 610th St, 611st St, 612nd St, 613rd St, 614th St, 615th St, 616th St, 617th St, 618th St, 619th St, 620th St, 621st St, 622nd St, 623rd St, 624th St, 625th St, 626th St, 627th St, 628th St, 629th St, 630th St, 631st St, 632nd St, 633rd St, 634th St, 635th St, 636th St, 637th St, 638th St, 639th St, 640th St, 641st St, 642nd St, 643rd St, 644th St, 645th St, 646th St, 647th St, 648th St, 649th St, 650th St, 651st St, 652nd St, 653rd St, 654th St, 655th St, 656th St, 657th St, 658th St, 659th St, 660th St, 661st St, 662nd St, 663rd St, 664th St, 665th St, 666th St, 667th St, 668th St, 669th St, 670th St, 671st St, 672nd St, 673rd St, 674th St, 675th St, 676th St, 677th St, 678th St, 679th St, 680th St, 681st St, 682nd St, 683rd St, 684th St, 685th St, 686th St, 687th St, 688th St, 689th St, 690th St, 691st St, 692nd St, 693rd St, 694th St, 695th St, 696th St, 697th St, 698th St, 699th St, 700th St, 701st St, 702nd St, 703rd St, 704th St, 705th St, 706th St, 707th St, 708th St, 709th St, 710th St, 711st St, 712nd St, 713rd St, 714th St, 715th St, 716th St, 717th St, 718th St, 719th St, 720th St, 721st St, 722nd St, 723rd St, 724th St, 725th St, 726th St, 727th St, 728th St, 729th St, 730th St, 731st St, 732nd St, 733rd St, 734th St, 735th St, 736th St, 737th St, 738th St, 739th St, 740th St, 741st St, 742nd St, 743rd St, 744th St, 745th St, 746th St, 747th St, 748th St, 749th St, 750th St, 751st St, 752nd St, 753rd St, 754th St, 755th St, 756th St, 757th St, 758th St, 759th St, 760th St, 761st St, 762nd St, 763rd St, 764th St, 765th St, 766th St, 767th St, 768th St, 769th St, 770th St, 771st St, 772nd St, 773rd St, 774th St, 775th St, 776th St, 777th St, 778th St, 779th St, 780th St, 781st St, 782nd St, 783rd St, 784th St, 785th St, 786th St, 787th St, 788th St, 789th St, 790th St, 791st St, 792nd St, 793rd St, 794th St, 795th St, 796th St, 797th St, 798th St, 799th St, 800th St, 801st St, 802nd St, 803rd St, 804th St, 805th St, 806th St, 807th St, 808th St, 809th St, 810th St, 811st St, 812nd St, 813rd St, 814th St, 815th St, 816th St, 817th St, 818th St, 819th St, 820th St, 821st St, 822nd St, 823rd St, 824th St, 825th St, 826th St, 827th St, 828th St, 829th St, 830th St, 831st St, 832nd St, 833rd St, 834th St, 835th St, 836th St, 837th St, 838th St, 839th St, 840th St, 841st St, 842nd St, 843rd St, 844th St, 845th St, 846th St, 847th St, 848th St, 849th St, 850th St, 851st St, 852nd St, 853rd St, 854th St, 855th St, 856th St, 857th St, 858th St, 859th St, 860th St, 861st St, 862nd St, 863rd St, 864th St, 865th St, 866th St, 867th St, 868th St, 869th St, 870th St, 871st St, 872nd St, 873rd St, 874th St, 875th St, 876th St, 877th St, 878th St, 879th St, 880th St, 881st St, 882nd St, 883rd St, 884th St, 885th St, 886th St, 887th St, 888th St, 889th St, 890th St, 891st St, 892nd St, 893rd St, 894th St, 895th St, 896th St, 897th St, 898th St, 899th St, 900th St, 901st St, 902nd St, 903rd St, 904th St, 905th St, 906th St, 907th St, 908th St, 909th St, 910th St, 911st St, 912nd St, 913rd St, 914th St, 915th St, 916th St, 917th St, 918th St, 919th St, 920th St, 921st St, 922nd St, 923rd St, 924th St, 925th St, 926th St, 927th St, 928th St, 929th St, 930th St, 931st St, 932nd St, 933rd St, 934th St, 935th St, 936th St, 937th St, 938th St, 939th St, 940th St, 941st St, 942nd St, 943rd St, 944th St, 945th St, 946th St, 947th St, 948th St, 949th St, 950th St, 951st St, 952nd St, 953rd St, 954th St, 955th St, 956th St, 957th St, 958th St, 959th St, 960th St, 961st St, 962nd St, 963rd St, 964th St, 965th St, 966th St, 967th St, 968th St, 969th St, 970th St, 971st St, 972nd St, 973rd St, 974th St, 975th St, 976th St, 977th St, 978th St, 979th St, 980th St, 981st St, 982nd St, 983rd St, 984th St, 985th St, 986th St, 987th St, 988th St, 989th St, 990th St, 991st St, 992nd St, 993rd St, 994th St, 995th St, 996th St, 997th St, 998th St, 999th St, 1000th St.
+- [p013_c0003] • Safety Benefits – Reduce conflicts between pedestrians and vehicles – Reduce conflicts between through traffic and turning vehicles • Traffic Benefits – Reduces traffic congestion
+[p013_c0004] _13_
+
+## Page 14
+
+> [p014_c0001] The logo for the New York City Department of Transportation (NYC DOT). It features the words "NEW YORK CITY" in a bold, sans-serif font at the top. Below the text is a stylized green graphic consisting of two overlapping circles with horizontal lines, and a vertical bar to the right.
+### [p014_c0002] Traffic Signal Changes
+- [p014_c0003] • Optimize traffic signal offsets for all traffic • Increase signal cycle from 60 seconds to 90-120 seconds – Increase green time for Utica Avenue while maintaining safe pedestrian crossing times – Better match cycles at Church, Linden, Eastern Parkway • Implement Transit Signal Priority from Kings Highway to Broadway (with NYCT)
+> [p014_c0004] An illustration demonstrating Transit Signal Priority (TSP). A blue and white MTA bus is shown approaching a traffic signal at an intersection. A yellow cone-shaped beam of light from the traffic signal is directed towards the bus. Above the traffic signal, there is a red arrow pointing down, indicating a change in the signal cycle or priority.
+
+## Page 15
+
+> [p015_c0001] The logo for the New York City Department of Transportation (NYC DOT). It features the text "NEW YORK CITY" in a sans-serif font above a stylized graphic. The graphic consists of two overlapping circles, one green and one white, with horizontal lines passing through them, creating a sense of motion or a bridge.
+### [p015_c0002] Traffic Analysis
+- [p015_c0003] • Measured traffic conditions at all intersections in AM, MD, PM peak hours • “Synchro” network constructed to evaluate all intersections with coordinated signal timing • Build conditions included all traffic lane changes, signal timing changes • Analysis shows that project will maintain traffic flow at all intersections, in all peak periods – In PM peak, 10 intersections improve, 7 neutral, 1 declines slightly (LOS B to LOS C)
+
+## Page 16
+
+> [p016_c0001] The logo for the New York City Department of Transportation (NYC DOT). It features the words "NEW YORK CITY" in a sans-serif font at the top. Below the text is a stylized graphic consisting of two overlapping circles. The left circle is green and the right circle is white. Between the two circles are several horizontal lines, some green and some white, creating a striped effect. The entire logo is set against a white background.
+### [p016_c0002] Project Benefits
+### [p016_c0003] Transit:
+- [p016_c0004] • Faster, more reliable service on B46 • Sets groundwork for potential future Select Bus Service
+### [p016_c0005] Safety:
+- [p016_c0006] • Bus lanes help reduce off-peak traffic speeding • Left turn restrictions and bays improve pedestrian safety
+### [p016_c0007] Traffic:
+- [p016_c0008] • Maintains all traffic at acceptable level of service
+### [p016_c0009] Parking:
+- [p016_c0010] • +19 parking spaces near Eastern Parkway (within 3 blocks) • -22 parking spaces along southern part of corridor (~1 per block face)
+
+## Page 17
+
+> [p017_c0001] The logo for the New York City Department of Transportation (NYC DOT). It features the text "NEW YORK CITY" in a sans-serif font at the top. Below the text is a stylized graphic consisting of two overlapping circles. The left circle contains three horizontal lines, and the right circle contains three vertical lines, creating a grid-like pattern.
+### [p017_c0002] Next Steps
+- [p017_c0003] • Present proposed changes to CBs • Finalize implementation plan and schedule – potentially Fall 2013 • Develop capital project for bus bulbs (if desired)
+
+## Page 18
+
+> [p018_c0001] The logo for the New York City Department of Transportation (NYC DOT). It features the words "NEW YORK CITY" in a bold, sans-serif font at the top. Below this is a large, stylized "DOT" where the letters are composed of horizontal green and white stripes, creating a sense of motion or speed.
+### [p018_c0002] Questions?
+> [p018_c0003] A photograph of a busy bus stop in New York City. A large crowd of people is gathered on the sidewalk, waiting for a bus. In the foreground, a woman with long dark hair, wearing a grey jacket and a brown scarf, is walking past the crowd. Behind her, a white bus is stopped at the curb. The bus has "B46 LIMITED" displayed on its destination sign in orange letters. The side of the bus features an advertisement for "V.I.M." boots. The bus number "4226" is visible on its side. In the background, there are street signs for "Church Av." and a "DRUGS" sign. The scene is set on a sunny day with clear shadows on the pavement.

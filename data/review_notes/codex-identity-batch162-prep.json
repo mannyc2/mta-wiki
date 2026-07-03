@@ -1,0 +1,696 @@
+{
+  "note_id": "codex-identity-batch162-prep",
+  "batch": "identity162",
+  "created_at": "2026-06-23T08:07:26Z",
+  "scope": {
+    "global_kind": "project",
+    "selection_note": "Codex-only project prep from current data/canonical/projects.jsonl, current data/identity-overrides/merges.json, current data/identity-overrides/do-not-merge.json, existing review note prep files, and local validateRepo duplicate_global_identity inspection. Excluded non-project records, aliases already in current merges, targets that are current merge aliases, alias==target pairs, do-not-merge hits, missing current canonical ids, previously proposed project aliases found in review notes, broad parent/child program collisions, amendment-only or phase/stage traps, and same-name-but-different-location project traps."
+  },
+  "prepared_count": 12,
+  "proposed_aliases": [
+    {
+      "global_kind": "project",
+      "alias_id": "project_able-program-nov2022",
+      "target_id": "project_able-program",
+      "canonical_id": "project_able-program",
+      "confidence": "high",
+      "validator_duplicate_key": "project_automated-bus-lane-enforcement-able-program",
+      "reason": "Both current records identify the MTA Automated Bus Lane Enforcement (ABLE) program. The alias is a November 2022/Phase 2A program record with the same ABLE program identity key; the target is the richer eight-source ABLE program cluster.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Automated Bus Lane Enforcement (ABLE) Program",
+          "project_name": "Automated Bus Lane Enforcement (ABLE)",
+          "project_type": "enforcement program",
+          "status": "ongoing",
+          "source_ids": [
+            "meeting_doc_100341",
+            "meeting_doc_121046",
+            "meeting_doc_30186"
+          ],
+          "evidence_refs": [
+            "meeting_doc_100341#p015_c0010",
+            "meeting_doc_100341#p015_c0011",
+            "meeting_doc_121046#p015_c0010"
+          ]
+        },
+        "target": {
+          "display_name": "MTA ABLE (Automated Bus Lane Enforcement) Program",
+          "project_name": "MTA ABLE (Automated Bus Lane Enforcement) Program",
+          "project_type": "enforcement_program",
+          "status": "operational",
+          "source_count": 8,
+          "source_ids_sample": [
+            "bus_lane_camera_report_2024",
+            "meeting_doc_100351",
+            "meeting_doc_104791",
+            "meeting_doc_138336"
+          ],
+          "evidence_refs": [
+            "bus_lane_camera_report_2024#p008_c0002",
+            "bus_lane_camera_report_2024#p009_c0001",
+            "meeting_doc_100351#p003_c0007"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issues": [
+          "Global project records project_able-expansion-2023 and project_able-program-nov2022 share identity key project_automated-bus-lane-enforcement-able.",
+          "Global project records project_able-program and project_able-program-nov2022 share identity key project_automated-bus-lane-enforcement-able-program."
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "alias_is_current_project_merge_target": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false,
+          "previously_proposed_project_alias_in_review_notes": false
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_broadway-junction-accessibility-improvements",
+      "target_id": "project_meeting-doc-129106-broadway-junction-accessibility",
+      "canonical_id": "project_meeting-doc-129106-broadway-junction-accessibility",
+      "confidence": "high",
+      "validator_duplicate_key": "project_broadway-junction-accessibility",
+      "reason": "Both records describe accessibility improvements at the Broadway Junction subway station complex. The alias already carries the target id as a record alias and cites the same station accessibility/elevator/easement scope; the target has broader multi-source evidence.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Broadway Junction Accessibility Improvements",
+          "project_name": "Accessibility Improvements at NYCT's Broadway Junction Station",
+          "project_type": "capital project",
+          "status": "active",
+          "location": "Broadway Junction, Brooklyn, NY",
+          "source_ids": [
+            "meeting_doc_129081",
+            "meeting_doc_174086",
+            "meeting_doc_192226"
+          ],
+          "evidence_refs": [
+            "meeting_doc_129081#p052_c0008",
+            "meeting_doc_129081#p052_c0010",
+            "meeting_doc_174086#p005_c0010"
+          ]
+        },
+        "target": {
+          "display_name": "Broadway Junction Station Accessibility Improvements",
+          "project_name": "Broadway Junction Station Accessibility Improvements",
+          "project_type": "capital project",
+          "status": "in progress",
+          "location": "Work area within Callahan-Kelly Playground, Brooklyn, NY",
+          "source_count": 7,
+          "evidence_refs": [
+            "meeting_doc_129106#p096_c0004",
+            "meeting_doc_129106#p096_c0010",
+            "meeting_doc_129196#p023_c0008"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issues": [
+          "Global project records project_broadway-junction-accessibility-improvements and project_meeting-doc-129106-broadway-junction-accessibility share identity key project_broadway-junction-accessibility.",
+          "Global project records project_broadway-junction-accessibility-improvements and project_meeting-doc-129106-broadway-junction-accessibility share identity key project_meeting-doc-129106-broadway-junction-accessibility."
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "alias_is_current_project_merge_target": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false,
+          "previously_proposed_project_alias_in_review_notes": false
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-199481-train-shed",
+      "target_id": "project_grand-central-train-shed",
+      "canonical_id": "project_grand-central-train-shed",
+      "confidence": "high",
+      "validator_duplicate_key": "project_grand-central-train-shed-reconstruction",
+      "reason": "Both records identify the Grand Central Train Shed reconstruction/repair project. The alias is a one-source reconstruction mention; the target is the durable Grand Central Train Shed cluster and already carries the same reconstruction alias.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Grand Central Train Shed Reconstruction",
+          "project_name": "Grand Central Train Shed Reconstruction",
+          "project_type": "reconstruction",
+          "status": "active",
+          "source_ids": [
+            "meeting_doc_199481"
+          ],
+          "evidence_refs": [
+            "meeting_doc_199481#p014_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "Grand Central Train Shed",
+          "project_name": "Grand Central Train Shed",
+          "project_type": "mega infrastructure",
+          "status": "in_progress",
+          "location": "Grand Central Terminal, New York City",
+          "source_count": 6,
+          "evidence_refs": [
+            "meeting_doc_109976#p012_c0001",
+            "meeting_doc_109976#p012_c0002",
+            "meeting_doc_112141#p014_c0004"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_grand-central-train-shed and project_meeting-doc-199481-train-shed share identity key project_grand-central-train-shed-reconstruction.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "alias_is_current_project_merge_target": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false,
+          "previously_proposed_project_alias_in_review_notes": false
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_mnr-ada-bronx-harlem-line",
+      "target_id": "project_metro-north-ada-improvements-three-bronx-stations",
+      "canonical_id": "project_metro-north-ada-improvements-three-bronx-stations",
+      "confidence": "high",
+      "validator_duplicate_key": "project_metro-north-ada-improvements-at-three-bronx-stations-harlem-line",
+      "reason": "Both current records describe the Metro-North ADA improvements at the same three Bronx Harlem Line stations: Williams Bridge/Williamsbridge, Botanical Garden(s), and Woodlawn. The alias is a design-build contract wording; the target is the multi-source project cluster.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Metro-North ADA Improvements at Three Bronx Stations - Harlem Line",
+          "project_name": "Design-Build Services for Metro-North ADA Improvements at Three Bronx Stations – Harlem Line",
+          "project_type": "design-build contract",
+          "status": "award pending Board approval",
+          "source_ids": [
+            "meeting_doc_155001",
+            "meeting_doc_155486"
+          ],
+          "evidence_refs": [
+            "meeting_doc_155486#p024_c0007",
+            "meeting_doc_155001#p001_c0005",
+            "meeting_doc_155001#p001_c0007"
+          ]
+        },
+        "target": {
+          "display_name": "Metro-North ADA Improvements at 3 Bronx Stations",
+          "project_name": "Metro-North ADA Improvements Project at 3 Bronx stations",
+          "project_type": "ADA accessibility",
+          "status": "active - property acquisition",
+          "source_count": 6,
+          "evidence_refs": [
+            "meeting_doc_111896#p113_c0007",
+            "meeting_doc_112036#p082_c0007",
+            "meeting_doc_124206#p003_c0008"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_metro-north-ada-improvements-three-bronx-stations and project_mnr-ada-bronx-harlem-line share identity key project_metro-north-ada-improvements-at-three-bronx-stations-harlem-line.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "alias_is_current_project_merge_target": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false,
+          "previously_proposed_project_alias_in_review_notes": false
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_mnr-sandy-cs-restoration",
+      "target_id": "project_mnr-sandy-restoration-hudson-line",
+      "canonical_id": "project_mnr-sandy-restoration-hudson-line",
+      "confidence": "high",
+      "validator_duplicate_key": "project_power-c-and-s-infrastructure-restoration-sandy",
+      "reason": "Both records have the same project name and scope: restoring Sandy-damaged Metro-North power and C&S infrastructure on more than 30 miles of the Hudson Line from CP 5 to CP 35. The target preserves the Hudson Line specificity in the id/display name.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "MNR Power, C&S Infrastructure Restoration - Sandy",
+          "project_name": "Power, C&S Infrastructure Restoration – Sandy",
+          "project_type": "infrastructure restoration",
+          "status": "in progress",
+          "source_ids": [
+            "meeting_doc_29961"
+          ],
+          "evidence_refs": [
+            "meeting_doc_29961#p142_c0001"
+          ]
+        },
+        "target": {
+          "display_name": "Power, C&S Infrastructure Restoration - Sandy (Hudson Line)",
+          "project_name": "Power, C&S Infrastructure Restoration – Sandy",
+          "project_type": "capital program",
+          "status": "ongoing",
+          "agency": "MTA Metro-North Railroad",
+          "source_ids": [
+            "meeting_doc_26841"
+          ],
+          "evidence_refs": [
+            "meeting_doc_26841#p216_c0001",
+            "meeting_doc_26841#p216_c0003"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_mnr-sandy-cs-restoration and project_mnr-sandy-restoration-hudson-line share identity key project_power-c-and-s-infrastructure-restoration-sandy.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "alias_is_current_project_merge_target": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false,
+          "previously_proposed_project_alias_in_review_notes": false
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_m151646-bus-open-stroller-pilot",
+      "target_id": "project_open-stroller-pilot",
+      "canonical_id": "project_open-stroller-pilot",
+      "confidence": "high",
+      "validator_duplicate_key": "project_bus-open-stroller-pilot",
+      "reason": "Both records identify the bus Open Stroller Pilot. The alias is a one-source M151646 bus-open-stroller record; the target is the seven-source Open Stroller Pilot cluster and already carries the bus-open-stroller alias.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Bus Open Stroller Pilot",
+          "project_name": "Bus Open Stroller Pilot",
+          "project_type": "pilot",
+          "status": "Completed",
+          "source_ids": [
+            "meeting_doc_151646"
+          ],
+          "evidence_refs": [
+            "meeting_doc_151646#p011_c0005",
+            "meeting_doc_151646#p011_c0006",
+            "meeting_doc_151646#p011_c0007"
+          ]
+        },
+        "target": {
+          "display_name": "Open Stroller Pilot",
+          "project_name": "Open Stroller Pilot",
+          "project_type": "pilot program",
+          "status": "ongoing",
+          "source_count": 7,
+          "evidence_refs": [
+            "meeting_doc_100341#p007_c0004",
+            "meeting_doc_104791#p018_c0010",
+            "meeting_doc_121046#p018_c0008"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_m151646-bus-open-stroller-pilot and project_open-stroller-pilot share identity key project_bus-open-stroller-pilot.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "alias_is_current_project_merge_target": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false,
+          "previously_proposed_project_alias_in_review_notes": false
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_queens-interlocking-modernization",
+      "target_id": "project_cpc-queens-interlocking-202602",
+      "canonical_id": "project_cpc-queens-interlocking-202602",
+      "confidence": "high",
+      "validator_duplicate_key": "project_queens-interlocking-modernization",
+      "reason": "Both records identify the Queens Interlocking modernization project at the Hempstead Branch/Main Line junction. The target has two current sources and already carries project_queens-interlocking-modernization as a record alias.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Queens Interlocking modernization project",
+          "project_name": "Queens Interlocking modernization project",
+          "project_type": "infrastructure modernization",
+          "status": "ongoing",
+          "location": "Queens Interlocking",
+          "source_ids": [
+            "meeting_doc_196906"
+          ],
+          "evidence_refs": [
+            "meeting_doc_196906#p007_c0002",
+            "meeting_doc_196906#p007_c0004",
+            "meeting_doc_196906#p007_c0016"
+          ]
+        },
+        "target": {
+          "display_name": "Queens Interlocking modernization",
+          "project_name": "Queens Interlocking modernization",
+          "project_type": "modernization",
+          "status": "active",
+          "source_ids": [
+            "meeting_doc_198991",
+            "meeting_doc_199481"
+          ],
+          "evidence_refs": [
+            "meeting_doc_198991#p009_c0004",
+            "meeting_doc_199481#p008_c0004"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_cpc-queens-interlocking-202602 and project_queens-interlocking-modernization share identity key project_queens-interlocking-modernization.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "alias_is_current_project_merge_target": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false,
+          "previously_proposed_project_alias_in_review_notes": false
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_nyct-r211-subway-car",
+      "target_id": "project_r211-subway-car-program",
+      "canonical_id": "project_r211-subway-car-program",
+      "confidence": "high",
+      "validator_duplicate_key": "project_nyct-r211-subway-car-program",
+      "reason": "Both records describe the NYCT/R211 Subway Car Program, including the R211 base order and additional option orders. The target is the broader five-source R211 subway car program cluster.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "NYCT R211 Subway Car Program",
+          "project_name": "NYCT R211 Subway Car Program",
+          "project_type": "rolling stock procurement",
+          "status": "In progress - Base Order Completion January 2025",
+          "source_ids": [
+            "meeting_doc_111791",
+            "meeting_doc_143601"
+          ],
+          "evidence_refs": [
+            "meeting_doc_111791#p021_c0002",
+            "meeting_doc_111791#p028_c0003",
+            "meeting_doc_143601#p017_c0002"
+          ]
+        },
+        "target": {
+          "display_name": "R211 Subway Car Program",
+          "project_name": "R211 Subway Car Program",
+          "project_type": "Rolling Stock",
+          "status": "In Construction",
+          "agency": "New York City Transit",
+          "source_count": 5,
+          "evidence_refs": [
+            "meeting_doc_113971#p005_c0012",
+            "meeting_doc_113971#p006_c0003",
+            "meeting_doc_160446#p009_c0008"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_nyct-r211-subway-car and project_r211-subway-car-program share identity key project_nyct-r211-subway-car-program.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "alias_is_current_project_merge_target": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false,
+          "previously_proposed_project_alias_in_review_notes": false
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_tremont-av-bus-priority-cab1",
+      "target_id": "project_tremont-avenue-bus-priority-bronx",
+      "canonical_id": "project_tremont-avenue-bus-priority-bronx",
+      "confidence": "high",
+      "validator_duplicate_key": "project_tremont-av-bus-priority-improvements",
+      "reason": "Both records describe Tremont Avenue bus priority improvements in the Bronx. The alias is the CAB1 source-local wording with University Avenue to Boston Road scope; the target is the richer current Tremont Avenue Bus Priority Project cluster and already carries the same improvement alias.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Tremont Av Bus Priority Improvements",
+          "project_name": "Tremont Av Bus Priority Improvements",
+          "project_type": "bus priority",
+          "status": "planning / community outreach",
+          "source_ids": [
+            "tremont_ave_bus_priority_cab1_dec2022"
+          ],
+          "evidence_refs": [
+            "tremont_ave_bus_priority_cab1_dec2022#p001_c0001",
+            "tremont_ave_bus_priority_cab1_dec2022#p005_c0002",
+            "tremont_ave_bus_priority_cab1_dec2022#p023_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "Tremont Avenue Bus Priority Project, the Bronx",
+          "project_name": "Tremont Avenue Bus Priority Project",
+          "status": "proposed",
+          "source_ids": [
+            "better_buses",
+            "tremont_ave_bus_priority_cb5_mar2024"
+          ],
+          "evidence_refs": [
+            "better_buses#p001_b0001",
+            "tremont_ave_bus_priority_cb5_mar2024#p001_c0001"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_tremont-av-bus-priority-cab1 and project_tremont-avenue-bus-priority-bronx share identity key project_tremont-av-bus-priority-improvements.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "alias_is_current_project_merge_target": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false,
+          "previously_proposed_project_alias_in_review_notes": false
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_39651-vn-x4-operational-improvements",
+      "target_id": "project_vn-x4-safety-fence",
+      "canonical_id": "project_vn-x4-safety-fence",
+      "confidence": "high",
+      "validator_duplicate_key": "project_vn-operational-improvements-safety-fence",
+      "reason": "Both records identify the Verrazzano-Narrows Bridge VN-X4 operational improvements/safety fence project. The alias is a one-source planning record; the target consolidates safety-fence evidence across three meeting documents.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "VN - Operational Improvements (Safety Fence)",
+          "project_name": "VN - Operational Improvements (Safety Fence)",
+          "project_type": "capital project",
+          "status": "planned",
+          "source_ids": [
+            "meeting_doc_39651"
+          ],
+          "evidence_refs": [
+            "meeting_doc_39651#p049_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "VN - Operational Improvements (Safety Fence)",
+          "project_name": "VN - Operational Improvements (Safety Fence)",
+          "project_type": "Design-Build",
+          "status": "Award pending Board approval",
+          "source_ids": [
+            "meeting_doc_33241",
+            "meeting_doc_37056",
+            "meeting_doc_52711"
+          ],
+          "evidence_refs": [
+            "meeting_doc_33241#p056_c0007",
+            "meeting_doc_33241#p049_c0003",
+            "meeting_doc_37056#p071_c0007"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_39651-vn-x4-operational-improvements and project_vn-x4-safety-fence share identity key project_vn-operational-improvements-safety-fence.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "alias_is_current_project_merge_target": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false,
+          "previously_proposed_project_alias_in_review_notes": false
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_paint-suspended-span-vn",
+      "target_id": "project_vn49-paint-suspended-span",
+      "canonical_id": "project_vn49-paint-suspended-span",
+      "confidence": "high",
+      "validator_duplicate_key": "project_vn-49-paint-suspended-span-upper-and-lower-level-steel",
+      "reason": "Both records identify VN-49 Paint Suspended Span Upper & Lower Level Steel at the Verrazzano-Narrows Bridge. The alias is a one-source completion-status record; the target is the three-source VN-49 cluster.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "VN-49 Paint Suspended Span Upper & Lower Level Steel",
+          "project_name": "Paint Suspended Span Upper & Lower Level Steel",
+          "project_type": "Capital project completion",
+          "status": "41% complete, 17% contingency spent, completing December 2021",
+          "source_ids": [
+            "meeting_doc_33241"
+          ],
+          "evidence_refs": [
+            "meeting_doc_33241#p051_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "VN-49 Paint Suspended Span Upper & Lower Level Steel",
+          "project_name": "VN-49 Paint Suspended Span Upper & Lower Level Steel",
+          "project_type": "capital project",
+          "status": "in progress",
+          "agency": "MTA Bridges and Tunnels",
+          "source_ids": [
+            "meeting_doc_39651",
+            "meeting_doc_42391",
+            "meeting_doc_52711"
+          ],
+          "evidence_refs": [
+            "meeting_doc_42391#p049_c0003",
+            "meeting_doc_39651#p051_c0003",
+            "meeting_doc_52711#p085_c0003"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issues": [
+          "Global project records project_paint-suspended-span-vn and project_vn49-paint-suspended-span share identity key project_paint-suspended-span-upper-and-lower-level-steel.",
+          "Global project records project_paint-suspended-span-vn and project_vn49-paint-suspended-span share identity key project_vn-49-paint-suspended-span-upper-and-lower-level-steel."
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "alias_is_current_project_merge_target": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false,
+          "previously_proposed_project_alias_in_review_notes": false
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_woodhaven-cross-bay-q52-q53-sbs-spring2016",
+      "target_id": "project_woodhaven-cross-bay-sbs",
+      "canonical_id": "project_woodhaven-cross-bay-sbs",
+      "confidence": "high",
+      "validator_duplicate_key": "project_woodhaven-cross-bay-blvd-q52-q53-sbs",
+      "reason": "Both records describe the Woodhaven/Cross Bay Boulevard Q52/Q53 Select Bus Service project. The alias is a Spring 2016 source-local SBS project record; the target is the long-running Woodhaven/Cross Bay SBS cluster with many public-workshop and design sources.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Woodhaven / Cross Bay Boulevard Q52/Q53 Select Bus Service",
+          "project_name": "Woodhaven / Cross Bay Boulevard Q52/Q53 Select Bus Service",
+          "project_type": "Select Bus Service",
+          "status": "proposed",
+          "source_ids": [
+            "brt_woodhaven_newsletter2_spring2016"
+          ],
+          "evidence_refs": [
+            "brt_woodhaven_newsletter2_spring2016#p001_c0003",
+            "brt_woodhaven_newsletter2_spring2016#p001_c0004",
+            "brt_woodhaven_newsletter2_spring2016#p002_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "Woodhaven / Cross Bay Boulevards Select Bus Service",
+          "project_name": "Woodhaven / Cross Bay Boulevards Select Bus Service",
+          "project_type": "Select Bus Service",
+          "status": "proposed",
+          "source_count": 38,
+          "source_ids_sample": [
+            "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "2014_06_25_brt_woodhaven_publicworkshop2_summary",
+            "2014_10_22_brt_woodhaven_cac2_discussionmaterials",
+            "2014_10_22_brt_woodhaven_cac2_presentation"
+          ],
+          "evidence_refs": [
+            "2012_06_25_brt_woodhaven_publicworkshop2_presentation#p001_c0001",
+            "2012_06_25_brt_woodhaven_publicworkshop2_presentation#p007_c0001",
+            "2012_06_25_brt_woodhaven_publicworkshop2_presentation#p007_c0002"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_woodhaven-cross-bay-q52-q53-sbs-spring2016 and project_woodhaven-cross-bay-sbs share identity key project_woodhaven-cross-bay-blvd-q52-q53-sbs.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "alias_is_current_project_merge_target": false,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false,
+          "previously_proposed_project_alias_in_review_notes": false
+        }
+      }
+    }
+  ],
+  "exclusions_and_guards": {
+    "excluded_existing_project_merge_aliases_count": 305,
+    "excluded_current_project_do_not_merge_pairs_count": 1,
+    "excluded_previously_proposed_project_aliases_from_review_notes_count": 76,
+    "excluded_categories": [
+      "same-name-but-different-location traps such as 2017 Street Improvement Project Woodhaven versus 79th Street",
+      "broad parent program versus child or contract modification records, including CBD tolling, East Side Access, and congestion-relief obligation collisions",
+      "amendment-only and phase/stage traps such as 2020-2024 Capital Program amendment records, Hylan Boulevard SBS phase records, and Park Avenue Viaduct phase records",
+      "current aliases already present in data/identity-overrides/merges.json",
+      "targets that would create merge chains because the proposed target is itself a current merge alias",
+      "stale ids not present in current data/canonical/projects.jsonl",
+      "aliases previously proposed in existing data/review_notes/codex-identity-*-prep.json artifacts"
+    ],
+    "per_proposal_required_guards": {
+      "global_kind_is_project": true,
+      "alias_and_target_present_in_current_canonical_jsonl": true,
+      "already_merged_in_current_project_merges": false,
+      "target_is_current_project_merge_alias": false,
+      "alias_equals_target": false,
+      "do_not_merge_hit": false,
+      "previously_proposed_project_alias_in_review_notes": false
+    }
+  },
+  "command_evidence": [
+    {
+      "command": "bun -e 'import { validateRepo } from \"./packages/agents/src/index.ts\"; ...'",
+      "result": "Local read-only validateRepo inspection found 68 current project duplicate_global_identity issues after current identity157-160 state."
+    },
+    {
+      "command": "jq '(.aliases.project | type), (.aliases.project | to_entries | .[0:8])' data/identity-overrides/merges.json",
+      "result": "Confirmed current project merge overrides are an object map and inspected current entries."
+    },
+    {
+      "command": "jq '.pairs' data/identity-overrides/do-not-merge.json",
+      "result": "Confirmed current do-not-merge project guard list includes one project pair and no selected proposal hits it."
+    },
+    {
+      "command": "jq -r '.proposed_aliases[]? | select(.global_kind==\"project\") | .alias_id' data/review_notes/*.json",
+      "result": "Checked existing prep artifacts for previously proposed project aliases; none of the 12 selected alias ids appeared."
+    },
+    {
+      "command": "bun -e '<guard pass over selected pairs>'",
+      "result": "For all 12 selected pairs: alias and target are present in current canonical JSONL, alias is not a current merge alias, target is not a current merge alias, alias is not a current merge target, pair is not do-not-merge, and alias != target."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed commands",
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts export-jsonl",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts write",
+    "bun packages/cli/src/cli.ts ask",
+    "bun packages/cli/src/cli.ts schema-proposal",
+    "bun packages/cli/src/cli.ts ontology-review",
+    "bun packages/cli/src/cli.ts identity-review",
+    "bun packages/cli/src/cli.ts canonicalize",
+    "bun packages/cli/src/cli.ts campaign"
+  ]
+}

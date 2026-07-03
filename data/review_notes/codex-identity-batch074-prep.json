@@ -1,0 +1,700 @@
+{
+  "note_id": "codex-identity-batch074-prep",
+  "batch_id": "identity074",
+  "batch": "identity-batch074",
+  "created_at": "2026-06-23T00:17:02Z",
+  "lane": "codex-only identity cleanup",
+  "status": "prepared",
+  "prepared_count": 8,
+  "intended_alias_count": 8,
+  "scope": {
+    "record_kind": "entity",
+    "decision_kind": "duplicate_global_identity",
+    "selection_rule": "High-confidence person-entity duplicates with exact canonical payload.entity_name matches, compatible role/source context, and no overlap with live identity overrides, identity_aliases, do-not-merge pairs, or Codex identity prep batches through 073."
+  },
+  "intended_mutation": {
+    "aliases": {
+      "entity": {
+        "entity_meeting-doc-91801-allison-de-cerreno": "entity_allison-decerreno-115226",
+        "entity_meeting-doc-111711-catherine-sheridan": "entity_catherine-sheridan-115226",
+        "entity_meeting-doc-113966-charles-passarella": "entity_charles-passarella-115226",
+        "entity_meeting-doc-89776-daniel-decrecenzo": "entity_daniel-decrescenzo",
+        "entity_meeting-doc-95161-demetrius-crichlow": "entity_demetrius-crichlow",
+        "entity_meeting-doc-98211-lisa-sorin": "entity_audit-committee-sorin",
+        "entity_sarah-feinberg-37081": "entity_sarah-feinberg-nyct-interim-president",
+        "entity_meeting-doc-29941-sarah-feinberg": "entity_sarah-feinberg-nyct-interim-president"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "alias_id": "entity_meeting-doc-91801-allison-de-cerreno",
+      "target_id": "entity_allison-decerreno-115226",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Allison L. C. de Cerreño'. The alias is a single-source Deputy Chief Operating Officer mention and the target aggregates the same named TBTA executive across multiple meeting documents.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-91801-allison-de-cerreno",
+          "display_name": "Allison L. C. de Cerreño, Ph.D.",
+          "entity_name": "Allison L. C. de Cerreño",
+          "entity_type": "person",
+          "title": "Deputy Chief Operating Officer",
+          "source_ids": [
+            "meeting_doc_91801"
+          ],
+          "record_aliases": [
+            "entity_allison-l-c-de-cerre-o",
+            "entity_allison-l-c-de-cerre-o-ph-d"
+          ],
+          "evidence_refs": [
+            "meeting_doc_91801#p001_c0002"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_91801/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_allison-decerreno-115226",
+          "display_name": "Allison L. C. de Cerreño, Ph.D., Chief Operating Officer",
+          "entity_name": "Allison L. C. de Cerreño",
+          "entity_type": "person",
+          "title": "Chief Operating Officer",
+          "organization": "Triborough Bridge and Tunnel Authority",
+          "source_ids": [
+            "meeting_doc_107566",
+            "meeting_doc_115226",
+            "meeting_doc_128981",
+            "meeting_doc_131486",
+            "meeting_doc_135251",
+            "meeting_doc_146836",
+            "meeting_doc_196846"
+          ],
+          "record_aliases": [
+            "entity_allison-cerreno-coo-tbta-jul2024",
+            "entity_allison-l-c-de-cerre-o",
+            "entity_meeting-doc-107566-allison-de-cerreno"
+          ],
+          "evidence_refs": [
+            "meeting_doc_107566#p004_c0008",
+            "meeting_doc_115226#p009_c0008",
+            "meeting_doc_128981#p004_c0007"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_107566/blocks.jsonl",
+            "raw/sources/meeting_doc_115226/blocks.jsonl",
+            "raw/sources/meeting_doc_128981/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_allison-decerreno-115226 and entity_meeting-doc-91801-allison-de-cerreno share identity key entity_allison-l-c-de-cerre-o.",
+          "records: entity_meeting-doc-91801-allison-de-cerreno | entity | Allison L. C. de Cerreño, Ph.D. | meeting_doc_91801 | source_stated | unreviewed",
+          "records: entity_allison-decerreno-115226 | entity | Allison L. C. de Cerreño, Ph.D., Chief Operating Officer | meeting_doc_107566 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_073": true,
+        "target_not_in_prior_batches_001_073": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-111711-catherine-sheridan",
+      "target_id": "entity_catherine-sheridan-115226",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Catherine T. Sheridan' and TBTA/MTA Bridges and Tunnels president context. The target has broader source coverage for the same named executive.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-111711-catherine-sheridan",
+          "display_name": "Catherine T. Sheridan, P.E., Interim President",
+          "entity_name": "Catherine T. Sheridan",
+          "entity_type": "person",
+          "title": "Interim President",
+          "organization": "MTA Bridges and Tunnels / TBTA",
+          "source_ids": [
+            "meeting_doc_111711",
+            "meeting_doc_113966",
+            "meeting_doc_128981",
+            "meeting_doc_128991",
+            "meeting_doc_138176",
+            "meeting_doc_140276",
+            "meeting_doc_146836",
+            "meeting_doc_157631",
+            "meeting_doc_160071"
+          ],
+          "record_aliases": [
+            "entity_catherine-sheridan",
+            "entity_catherine-sheridan-bt-president",
+            "entity_meeting-doc-113966-catherine-sheridan"
+          ],
+          "evidence_refs": [
+            "meeting_doc_113966#p004_c0007",
+            "meeting_doc_111711#p004_c0008",
+            "meeting_doc_128981#p004_c0007"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_113966/blocks.jsonl",
+            "raw/sources/meeting_doc_111711/blocks.jsonl",
+            "raw/sources/meeting_doc_128981/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_catherine-sheridan-115226",
+          "display_name": "Catherine T. Sheridan, P.E., Interim President",
+          "entity_name": "Catherine T. Sheridan",
+          "entity_type": "person",
+          "title": "Interim President",
+          "organization": "Triborough Bridge and Tunnel Authority",
+          "source_ids": [
+            "meeting_doc_115226",
+            "meeting_doc_124281",
+            "meeting_doc_127551",
+            "meeting_doc_131486",
+            "meeting_doc_133166",
+            "meeting_doc_135251",
+            "meeting_doc_151591",
+            "meeting_doc_165006",
+            "meeting_doc_170871",
+            "meeting_doc_192201",
+            "meeting_doc_205651"
+          ],
+          "record_aliases": [
+            "entity_catherine-t-sheridan",
+            "entity_catherine-t-sheridan-p-e-interim-president",
+            "entity_meeting-doc-124281-catherine-sheridan"
+          ],
+          "evidence_refs": [
+            "meeting_doc_115226#p004_c0007",
+            "meeting_doc_124281#p004_c0007",
+            "meeting_doc_124281#p008_c0007"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_115226/blocks.jsonl",
+            "raw/sources/meeting_doc_124281/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_catherine-sheridan-115226 and entity_meeting-doc-111711-catherine-sheridan share identity key entity_catherine-t-sheridan.",
+          "records: entity_meeting-doc-111711-catherine-sheridan | entity | Catherine T. Sheridan, P.E., Interim President | meeting_doc_113966 | source_stated | unreviewed",
+          "records: entity_catherine-sheridan-115226 | entity | Catherine T. Sheridan, P.E., Interim President | meeting_doc_115226 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_073": true,
+        "target_not_in_prior_batches_001_073": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-113966-charles-passarella",
+      "target_id": "entity_charles-passarella-115226",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Charles J. Passarella' and the same Maintenance and Operations Support vice-president role.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-113966-charles-passarella",
+          "display_name": "Charles J. Passarella",
+          "entity_name": "Charles J. Passarella",
+          "entity_type": "person",
+          "title": "Vice President of Maintenance and Operations Support",
+          "organization": "MTA Bridges and Tunnels",
+          "source_ids": [
+            "meeting_doc_111711",
+            "meeting_doc_113966"
+          ],
+          "record_aliases": [
+            "entity_charles-j-passarella",
+            "entity_meeting-doc-111711-charles-passarella"
+          ],
+          "evidence_refs": [
+            "meeting_doc_113966#p004_c0007",
+            "meeting_doc_111711#p004_c0008",
+            "meeting_doc_111711#p007_c0003"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_113966/blocks.jsonl",
+            "raw/sources/meeting_doc_111711/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_charles-passarella-115226",
+          "display_name": "Charles J. Passarella, Vice President of Maintenance and Operations Support",
+          "entity_name": "Charles J. Passarella",
+          "entity_type": "person",
+          "title": "Vice President of Maintenance and Operations Support",
+          "source_ids": [
+            "meeting_doc_115226",
+            "meeting_doc_151591"
+          ],
+          "record_aliases": [
+            "entity_charles-j-passarella",
+            "entity_charles-j-passarella-vice-president-of-maintenance-and-operations-support",
+            "entity_charles-passarella-vp-maintenance"
+          ],
+          "evidence_refs": [
+            "meeting_doc_115226#p004_c0007",
+            "meeting_doc_151591#p004_c0008"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_115226/blocks.jsonl",
+            "raw/sources/meeting_doc_151591/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_charles-passarella-115226 and entity_meeting-doc-113966-charles-passarella share identity key entity_charles-j-passarella.",
+          "records: entity_meeting-doc-113966-charles-passarella | entity | Charles J. Passarella | meeting_doc_113966 | source_stated | unreviewed",
+          "records: entity_charles-passarella-115226 | entity | Charles J. Passarella, Vice President of Maintenance and Operations Support | meeting_doc_115226 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_073": true,
+        "target_not_in_prior_batches_001_073": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-89776-daniel-decrecenzo",
+      "target_id": "entity_daniel-decrescenzo",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Daniel F. DeCrescenzo, Jr.' and TBTA president context. The target also carries the spelling variant alias used by the alias id.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-89776-daniel-decrecenzo",
+          "display_name": "Daniel F. DeCrescenzo, Jr.",
+          "entity_name": "Daniel F. DeCrescenzo, Jr.",
+          "entity_type": "person",
+          "title": "President",
+          "organization": "TBTA",
+          "source_ids": [
+            "meeting_doc_89776"
+          ],
+          "record_aliases": [
+            "entity_daniel-f-decrescenzo-jr"
+          ],
+          "evidence_refs": [
+            "meeting_doc_89776#p004_c0008"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_89776/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_daniel-decrescenzo",
+          "display_name": "Daniel F. DeCrescenzo, Jr., President",
+          "entity_name": "Daniel F. DeCrescenzo, Jr.",
+          "entity_type": "person",
+          "title": "President",
+          "organization": "Triborough Bridge and Tunnel Authority",
+          "source_ids": [
+            "meeting_doc_100256",
+            "meeting_doc_104711",
+            "meeting_doc_106151",
+            "meeting_doc_107566",
+            "meeting_doc_68196",
+            "meeting_doc_72536",
+            "meeting_doc_85806",
+            "meeting_doc_87681",
+            "meeting_doc_98206"
+          ],
+          "record_aliases": [
+            "entity_daniel-decrecenzo",
+            "entity_daniel-f-decrescenzo-jr",
+            "entity_meeting-doc-106151-daniel-decrescenzo"
+          ],
+          "evidence_refs": [
+            "meeting_doc_104711#p004_c0007",
+            "meeting_doc_100256#p004_c0007",
+            "meeting_doc_106151#p011_c0002"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_104711/blocks.jsonl",
+            "raw/sources/meeting_doc_100256/blocks.jsonl",
+            "raw/sources/meeting_doc_106151/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_daniel-decrescenzo and entity_meeting-doc-89776-daniel-decrecenzo share identity key entity_daniel-f-decrescenzo-jr.",
+          "records: entity_meeting-doc-89776-daniel-decrecenzo | entity | Daniel F. DeCrescenzo, Jr. | meeting_doc_89776 | source_stated | unreviewed",
+          "records: entity_daniel-decrescenzo | entity | Daniel F. DeCrescenzo, Jr., President | meeting_doc_104711 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_073": true,
+        "target_not_in_prior_batches_001_073": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-95161-demetrius-crichlow",
+      "target_id": "entity_demetrius-crichlow",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Demetrius Crichlow'. The alias is a single NYCT Subways SVP mention; the target aggregates the same named NYCT executive across many sources and already includes equivalent Subways SVP aliases.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-95161-demetrius-crichlow",
+          "display_name": "Demetrius Crichlow, Senior Vice President, Subways, NYCT",
+          "entity_name": "Demetrius Crichlow",
+          "entity_type": "person",
+          "title": "Senior Vice President, Subways, NYCT",
+          "organization": "New York City Transit Authority",
+          "source_ids": [
+            "meeting_doc_95161"
+          ],
+          "record_aliases": [
+            "entity_demetrius-crichlow",
+            "entity_demetrius-crichlow-senior-vice-president-subways-nyct"
+          ],
+          "evidence_refs": [
+            "meeting_doc_95161#p001_c0006"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_95161/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_demetrius-crichlow",
+          "display_name": "Demetrius Crichlow, President of New York City Transit",
+          "entity_name": "Demetrius Crichlow",
+          "entity_type": "person",
+          "title": "President of New York City Transit",
+          "organization": "MTA",
+          "source_ids": [
+            "meeting_doc_102806",
+            "meeting_doc_102841",
+            "meeting_doc_104781",
+            "meeting_doc_105956",
+            "meeting_doc_107531",
+            "meeting_doc_111811",
+            "meeting_doc_111971",
+            "meeting_doc_115256",
+            "meeting_doc_121046",
+            "meeting_doc_121051",
+            "meeting_doc_121056",
+            "meeting_doc_121136",
+            "meeting_doc_124296",
+            "meeting_doc_124306",
+            "meeting_doc_127476",
+            "meeting_doc_131546"
+          ],
+          "record_aliases": [
+            "entity_demetrius-crichlow",
+            "entity_demetrius-crichlow-senior-vice-president-subways-nyct",
+            "entity_meeting-doc-95156-demetrius-crichlow"
+          ],
+          "evidence_refs": [
+            "nyct_key_performance_metrics_doc194001#p004_c0003",
+            "nyct_key_performance_metrics_june2025#p004_c0003",
+            "meeting_doc_102841#p002_c0002"
+          ],
+          "source_paths": [
+            "raw/sources/nyct_key_performance_metrics_doc194001/blocks.jsonl",
+            "raw/sources/nyct_key_performance_metrics_june2025/blocks.jsonl",
+            "raw/sources/meeting_doc_102841/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_demetrius-crichlow and entity_meeting-doc-95161-demetrius-crichlow share identity key entity_demetrius-crichlow.",
+          "records: entity_meeting-doc-95161-demetrius-crichlow | entity | Demetrius Crichlow, Senior Vice President, Subways, NYCT | meeting_doc_95161 | source_stated | unreviewed",
+          "records: entity_demetrius-crichlow | entity | Demetrius Crichlow, President of New York City Transit | nyct_key_performance_metrics_doc194001 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_073": true,
+        "target_not_in_prior_batches_001_073": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-98211-lisa-sorin",
+      "target_id": "entity_audit-committee-sorin",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Lisa Sorin'. The target aggregates Hon. Lisa Sorin committee-member appearances, while the alias is a single-source Lisa Sorin mention from the same MTA meeting-document family.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-98211-lisa-sorin",
+          "display_name": "Lisa Sorin",
+          "entity_name": "Lisa Sorin",
+          "entity_type": "person",
+          "organization": "Metropolitan Transportation Authority",
+          "source_ids": [
+            "meeting_doc_98211"
+          ],
+          "record_aliases": [
+            "entity_lisa-sorin"
+          ],
+          "evidence_refs": [
+            "meeting_doc_98211#p001_c0006"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_98211/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_audit-committee-sorin",
+          "display_name": "Hon. Lisa Sorin",
+          "entity_name": "Lisa Sorin",
+          "entity_type": "person",
+          "title": "Bridges and Tunnels Committee Member",
+          "organization": "Metropolitan Transportation Authority",
+          "source_ids": [
+            "meeting_doc_105876",
+            "meeting_doc_189751",
+            "meeting_doc_193976",
+            "meeting_doc_196846",
+            "meeting_doc_201651",
+            "meeting_doc_208036"
+          ],
+          "record_aliases": [
+            "entity_193976-lisa-sorin",
+            "entity_lisa-sorin",
+            "entity_lisa-sorin-mar2026"
+          ],
+          "evidence_refs": [
+            "meeting_doc_105876#p001_c0006",
+            "meeting_doc_105876#p003_c0004",
+            "meeting_doc_189751#p003_c0007"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_105876/blocks.jsonl",
+            "raw/sources/meeting_doc_189751/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_audit-committee-sorin and entity_meeting-doc-98211-lisa-sorin share identity key entity_lisa-sorin.",
+          "records: entity_meeting-doc-98211-lisa-sorin | entity | Lisa Sorin | meeting_doc_98211 | source_stated | unreviewed",
+          "records: entity_audit-committee-sorin | entity | Hon. Lisa Sorin | meeting_doc_105876 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_073": true,
+        "target_not_in_prior_batches_001_073": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_sarah-feinberg-37081",
+      "target_id": "entity_sarah-feinberg-nyct-interim-president",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Sarah Feinberg' and NYC Transit interim-president context. The target carries the same NYCT Interim President identity across multiple sources.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_sarah-feinberg-37081",
+          "display_name": "Sarah Feinberg, NYC Transit Interim President",
+          "entity_name": "Sarah Feinberg",
+          "entity_type": "person",
+          "title": "NYC Transit Interim President",
+          "organization": "New York City Transit",
+          "source_ids": [
+            "meeting_doc_37081"
+          ],
+          "record_aliases": [
+            "entity_sarah-feinberg",
+            "entity_sarah-feinberg-nyc-transit-interim-president"
+          ],
+          "evidence_refs": [
+            "meeting_doc_37081#p040_c0005"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_37081/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_sarah-feinberg-nyct-interim-president",
+          "display_name": "Sarah Feinberg",
+          "entity_name": "Sarah Feinberg",
+          "entity_type": "person",
+          "title": "NYCT Interim President",
+          "organization": "New York City Transit",
+          "source_ids": [
+            "meeting_doc_26846",
+            "meeting_doc_44216"
+          ],
+          "record_aliases": [
+            "entity_meeting-doc-44216-sarah-feinberg",
+            "entity_sarah-feinberg"
+          ],
+          "evidence_refs": [
+            "meeting_doc_26846#p001_c0017",
+            "meeting_doc_44216#p171_c0003"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_26846/blocks.jsonl",
+            "raw/sources/meeting_doc_44216/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_sarah-feinberg-nyct-interim-president and entity_sarah-feinberg-37081 share identity key entity_sarah-feinberg.",
+          "records: entity_sarah-feinberg-37081 | entity | Sarah Feinberg, NYC Transit Interim President | meeting_doc_37081 | source_stated | unreviewed",
+          "records: entity_sarah-feinberg-nyct-interim-president | entity | Sarah Feinberg | meeting_doc_26846 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_073": true,
+        "target_not_in_prior_batches_001_073": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-29941-sarah-feinberg",
+      "target_id": "entity_sarah-feinberg-nyct-interim-president",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Sarah Feinberg' and Interim President / New York City Transit context. The alias contributes additional meeting-document evidence for the same NYCT interim-president identity.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-29941-sarah-feinberg",
+          "display_name": "Sarah Feinberg, Interim President NYCT",
+          "entity_name": "Sarah Feinberg",
+          "entity_type": "person",
+          "title": "Interim President New York City Transit",
+          "organization": "New York City Transit",
+          "source_ids": [
+            "meeting_doc_29941",
+            "meeting_doc_40141",
+            "meeting_doc_42411"
+          ],
+          "record_aliases": [
+            "entity_sarah-feinberg",
+            "entity_sarah-feinberg-interim-president-new-york-city-transit",
+            "entity_sarah-feinberg-interim-president-nyct"
+          ],
+          "evidence_refs": [
+            "meeting_doc_29941#p210_c0004",
+            "meeting_doc_42411#p166_c0003",
+            "meeting_doc_40141#p206_c0004"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_29941/blocks.jsonl",
+            "raw/sources/meeting_doc_42411/blocks.jsonl",
+            "raw/sources/meeting_doc_40141/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_sarah-feinberg-nyct-interim-president",
+          "display_name": "Sarah Feinberg",
+          "entity_name": "Sarah Feinberg",
+          "entity_type": "person",
+          "title": "NYCT Interim President",
+          "organization": "New York City Transit",
+          "source_ids": [
+            "meeting_doc_26846",
+            "meeting_doc_44216"
+          ],
+          "record_aliases": [
+            "entity_meeting-doc-44216-sarah-feinberg",
+            "entity_sarah-feinberg"
+          ],
+          "evidence_refs": [
+            "meeting_doc_26846#p001_c0017",
+            "meeting_doc_44216#p171_c0003"
+          ],
+          "source_paths": [
+            "raw/sources/meeting_doc_26846/blocks.jsonl",
+            "raw/sources/meeting_doc_44216/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_sarah-feinberg-nyct-interim-president and entity_meeting-doc-29941-sarah-feinberg share identity key entity_sarah-feinberg.",
+          "records: entity_meeting-doc-29941-sarah-feinberg | entity | Sarah Feinberg, Interim President NYCT | meeting_doc_29941 | source_stated | unreviewed",
+          "records: entity_sarah-feinberg-nyct-interim-president | entity | Sarah Feinberg | meeting_doc_26846 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_073": true,
+        "target_not_in_prior_batches_001_073": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    }
+  ],
+  "aggregate_guard_results": {
+    "all_alias_ids_materialize_currently": true,
+    "all_target_ids_materialize_currently": true,
+    "all_aliases_not_already_overridden": true,
+    "all_aliases_not_in_identity_aliases_table": true,
+    "no_alias_or_target_repeats_prior_batches_001_073": true,
+    "no_do_not_merge_pairs": true,
+    "all_source_ids_exist": true,
+    "all_evidence_source_paths_exist": true
+  },
+  "commands_used_for_evidence": [
+    "sed -n '1,240p' data/review_notes/codex-identity-batch073-prep.json",
+    "rg -n \"duplicate_global_identity|unexpected_relation_endpoint_shape\" data -g '*.json' -g '*.jsonl' | head -200",
+    "jq -r 'select(.payload.entity_type==\"person\") | [.payload.entity_name,.record_id,.display_name,((.source_ids//[.source_id])|join(\",\"))] | @tsv' data/canonical/entities.jsonl | sort | awk ...",
+    "jq -c 'select(.record_id as $id | [selected ids] | index($id)) | {record_id, display_name, entity_name:.payload.entity_name, entity_type:.payload.entity_type, title:.payload.title, organization:.payload.organization, source_id, source_ids, record_aliases, evidence_refs:[.evidence_refs[0:3][] | {evidence_id,source_id,source_path,page_number,block_id,source_quote,role}]}' data/canonical/entities.jsonl",
+    "bun --eval '<read-only guard scan over data/canonical/entities.jsonl, data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, prior codex-identity-batch*-prep.json through 073, sqlite read-only identity_aliases, and evidence source paths>'"
+  ],
+  "commands_intentionally_not_run": [
+    "provider/external-LLM commands",
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "commands with --profile/provider",
+    "materialize",
+    "export-jsonl",
+    "full validate",
+    "DB publish"
+  ],
+  "deferred_review_only_notes": [
+    "Initial-only or broad person groups such as L. Lacewell, J. Lieber, R. FREE, P. Dietlin, and N. Zuckerman were excluded from this mutation batch despite exact labels because they are less useful than full-name records for high-confidence cleanup.",
+    "Large exact-name groups with many possible aliases, such as Rachel Cohen, Paul L. Friman, and Rose Davis, were left for a later batch to avoid oversized or less focused decisions."
+  ],
+  "all_pass": true
+}

@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T22-56-13-382Z_1976810-c496d526_ingest_201110-brt-34th-cac5",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T01:49:02.208Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "new-34th-st-cac5-2011",
+        "local_observation_id": "corridor_34th_st_manhattan_cac5_2011",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id corridor_34th-st-busway, which captures the same project (34th Street SBS) from the same source (201110_brt_34th_cac5). The observation's alias 'corridor_34th-st-manhattan-cac5-2011' is already in the canonical record's aliases. The observation describes the full river-to-river study corridor (First to Twelfth Avenue) while the canonical record's payload focuses on the busway segment (9th-3rd), but they refer to the same 34th Street SBS project identity. Per rules, since the closest match IS the observation's own base_record_id, this is 'new'.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p006_c0002",
+            "source_quote": "maintains 2-way traffic from river to river"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-46-45-519Z_2111393-f86b3912_canonicalize_2026-06-10t22-56-13-382z-1976810-c496d526-ingest-201110-brt-34th-cac5-corridor-identity"
+}

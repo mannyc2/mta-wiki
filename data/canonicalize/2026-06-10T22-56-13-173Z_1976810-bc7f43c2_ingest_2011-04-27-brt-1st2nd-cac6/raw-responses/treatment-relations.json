@@ -1,0 +1,455 @@
+{
+  "run_id": "2026-06-10T22-56-13-173Z_1976810-bc7f43c2_ingest_2011-04-27-brt-1st2nd-cac6",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T01:17:25.541Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-001-dedicated-bus-lanes",
+        "local_observation_id": "treatment_dedicated_bus_lanes_1st2nd",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "treatment_dedicated-bus-lanes-1st2nd",
+            "evidence_refs": [
+              {
+                "source_id": "2011_04_27_brt_1st2nd_cac6",
+                "block_id": "p003_c0006",
+                "source_quote": "Over 10 miles of dedicated bus lanes - NYPD and camera enforcement"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "treatment_dedicated-bus-lanes-1st2nd",
+            "evidence_refs": [
+              {
+                "source_id": "2011_04_27_brt_1st2nd_cac6",
+                "block_id": "p003_c0006",
+                "source_quote": "Over 10 miles of dedicated bus lanes - NYPD and camera enforcement"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p003_c0006 under 2010 Implementation explicitly lists dedicated bus lanes as a launched M15 SBS treatment on First and Second Avenues.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p003_c0006",
+            "source_quote": "Over 10 miles of dedicated bus lanes - NYPD and camera enforcement"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-002-off-board-fare",
+        "local_observation_id": "treatment_off_board_fare_payment",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "treatment_off-board-fare-payment",
+            "evidence_refs": [
+              {
+                "source_id": "2011_04_27_brt_1st2nd_cac6",
+                "block_id": "p003_c0006",
+                "source_quote": "off-board fare payment"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "treatment_off-board-fare-payment",
+            "evidence_refs": [
+              {
+                "source_id": "2011_04_27_brt_1st2nd_cac6",
+                "block_id": "p003_c0006",
+                "source_quote": "off-board fare payment"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p003_c0006 under 2010 Implementation lists off-board fare payment as an M15 SBS treatment on First and Second Avenues.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p003_c0006",
+            "source_quote": "off-board fare payment"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-003-revised-station-spacing",
+        "local_observation_id": "treatment_revised_station_spacing",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "treatment_revised-station-spacing",
+            "evidence_refs": [
+              {
+                "source_id": "2011_04_27_brt_1st2nd_cac6",
+                "block_id": "p003_c0006",
+                "source_quote": "revised station spacing"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "treatment_revised-station-spacing",
+            "evidence_refs": [
+              {
+                "source_id": "2011_04_27_brt_1st2nd_cac6",
+                "block_id": "p003_c0006",
+                "source_quote": "revised station spacing"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p003_c0006 under 2010 Implementation lists revised station spacing as an M15 SBS treatment.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p003_c0006",
+            "source_quote": "revised station spacing"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-004-bus-bulbs",
+        "local_observation_id": "treatment_bus_bulbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "treatment_bus-bulbs_6",
+            "evidence_refs": [
+              {
+                "source_id": "2011_04_27_brt_1st2nd_cac6",
+                "block_id": "p025_c0006",
+                "source_quote": "Early action implementation of a limited number of bus bulbs in 2011"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "treatment_bus-bulbs_6",
+            "evidence_refs": [
+              {
+                "source_id": "2011_04_27_brt_1st2nd_cac6",
+                "block_id": "p025_c0006",
+                "source_quote": "Early action implementation of a limited number of bus bulbs in 2011"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 25 under 2011 Implementation → Bus Bulbs explicitly describes bus bulb deployment on the First/Second Avenues SBS route with a map showing specific SBS stations.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p025_c0006",
+            "source_quote": "Early action implementation of a limited number of bus bulbs in 2011"
+          },
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p025_c0007",
+            "source_quote": "Remainder in 2012"
+          },
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p025_c0008",
+            "source_quote": "Bulbs will contain stormwater management component where feasible"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-005-tsp",
+        "local_observation_id": "treatment_transit_signal_priority_south_ferry_houston",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "treatment_transit-signal-priority-south-ferry-houston",
+            "evidence_refs": [
+              {
+                "source_id": "2011_04_27_brt_1st2nd_cac6",
+                "block_id": "p022_c0007",
+                "source_quote": "Traffic signals from South Ferry to Houston St to provide additional green time for buses (Fall 2011)"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "treatment_transit-signal-priority-south-ferry-houston",
+            "evidence_refs": [
+              {
+                "source_id": "2011_04_27_brt_1st2nd_cac6",
+                "block_id": "p022_c0007",
+                "source_quote": "Traffic signals from South Ferry to Houston St to provide additional green time for buses (Fall 2011)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 22 under 2011 Implementation → Transit Signal Priority explicitly states TSP deployment for the M15 SBS route on First and Second Avenues.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p022_c0007",
+            "source_quote": "Traffic signals from South Ferry to Houston St to provide additional green time for buses (Fall 2011)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-006-shared-bike-1st",
+        "local_observation_id": "treatment_shared_bike_path_1st_ave_49_to_57",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "treatment_shared-bike-path-1st-ave-49-to-57",
+            "evidence_refs": [
+              {
+                "source_id": "2011_04_27_brt_1st2nd_cac6",
+                "block_id": "p021_c0005",
+                "source_quote": "First Avenue – East 49th St to East 57th St"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "treatment_shared-bike-path-1st-ave-49-to-57",
+            "evidence_refs": [
+              {
+                "source_id": "2011_04_27_brt_1st2nd_cac6",
+                "block_id": "p021_c0005",
+                "source_quote": "First Avenue – East 49th St to East 57th St"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 21 under Proposed Bicycle Facilities → Shared Bicycle Path describes the First Avenue shared bike lane as part of the 2011 implementation for the First/Second Avenues SBS corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p021_c0005",
+            "source_quote": "First Avenue – East 49th St to East 57th St"
+          },
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p021_c0008",
+            "source_quote": "Modified shared lane design to enhance cyclist's safety"
+          },
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p021_c0010",
+            "source_quote": "Solid lane striping, vehicles cannot move out of lane"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-007-shared-bike-2nd",
+        "local_observation_id": "treatment_shared_bike_path_2nd_ave_59_to_34",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "treatment_shared-bike-path-2nd-ave-59-to-34",
+            "evidence_refs": [
+              {
+                "source_id": "2011_04_27_brt_1st2nd_cac6",
+                "block_id": "p021_c0006",
+                "source_quote": "Second Avenue – East 59th St to East 34th St"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "treatment_shared-bike-path-2nd-ave-59-to-34",
+            "evidence_refs": [
+              {
+                "source_id": "2011_04_27_brt_1st2nd_cac6",
+                "block_id": "p021_c0006",
+                "source_quote": "Second Avenue – East 59th St to East 34th St"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 21 under Proposed Bicycle Facilities → Shared Bicycle Path describes the Second Avenue shared bike lane as part of the 2011 implementation for the First/Second Avenues SBS corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p021_c0006",
+            "source_quote": "Second Avenue – East 59th St to East 34th St"
+          },
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p021_c0013",
+            "source_quote": "No loss of parking spaces"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-008-protected-bike-34-40",
+        "local_observation_id": "treatment_protected_bike_path_34_to_40_2",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "treatment_protected-bike-path-34-to-40-2",
+            "evidence_refs": [
+              {
+                "source_id": "2011_04_27_brt_1st2nd_cac6",
+                "block_id": "p019_c0005",
+                "source_quote": "E 34 th Street to E 40 th Street"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "treatment_protected-bike-path-34-to-40-2",
+            "evidence_refs": [
+              {
+                "source_id": "2011_04_27_brt_1st2nd_cac6",
+                "block_id": "p019_c0005",
+                "source_quote": "E 34 th Street to E 40 th Street"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 19 under Proposed Bicycle Facilities → Protected Bicycle Path describes the First Avenue protected bike path E 34th to E 40th as part of the 2011 SBS corridor implementation.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p019_c0005",
+            "source_quote": "E 34 th Street to E 40 th Street"
+          },
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p019_c0007",
+            "source_quote": "Mixing Zones – accommodate vehicle/bike turning conflict"
+          },
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p019_c0008",
+            "source_quote": "Pedestrian Islands (12) – Shorten pedestrian crossings"
+          },
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p019_c0009",
+            "source_quote": "Total protection for cyclists mid-block"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-009-protected-bike-40-49",
+        "local_observation_id": "treatment_protected_bike_path_40_to_49_2",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "treatment_protected-bike-path-40-to-49-2",
+            "evidence_refs": [
+              {
+                "source_id": "2011_04_27_brt_1st2nd_cac6",
+                "block_id": "p020_c0005",
+                "source_quote": "E 40 th Street to E 49 th Street"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "treatment_protected-bike-path-40-to-49-2",
+            "evidence_refs": [
+              {
+                "source_id": "2011_04_27_brt_1st2nd_cac6",
+                "block_id": "p020_c0005",
+                "source_quote": "E 40 th Street to E 49 th Street"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 20 under Proposed Bicycle Facilities → Protected Bicycle Path describes the First Avenue protected bike path E 40th to E 49th as part of the 2011 SBS corridor implementation.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p020_c0005",
+            "source_quote": "E 40 th Street to E 49 th Street"
+          },
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p020_c0006",
+            "source_quote": "Mixing Zones – accommodate vehicle/bike turning conflict"
+          },
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p020_c0010",
+            "source_quote": "16 total parking spaces repurposed for pedestrian islands and mixing zones"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-010-low-floor-buses",
+        "local_observation_id": "treatment_low_floor_three_door_buses",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "treatment_low-floor-three-door-buses_2",
+            "evidence_refs": [
+              {
+                "source_id": "2011_04_27_brt_1st2nd_cac6",
+                "block_id": "p003_c0006",
+                "source_quote": "low-floor, three-door buses"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "treatment_low-floor-three-door-buses_2",
+            "evidence_refs": [
+              {
+                "source_id": "2011_04_27_brt_1st2nd_cac6",
+                "block_id": "p003_c0006",
+                "source_quote": "low-floor, three-door buses"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p003_c0006 under 2010 Implementation lists low-floor three-door buses as a launched M15 SBS fleet treatment on the First/Second Avenues corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p003_c0006",
+            "source_quote": "low-floor, three-door buses"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-08-44-833Z_2111393-926c12b4_canonicalize_2026-06-10t22-56-13-173z-1976810-bc7f43c2-ingest-2011-04-27-brt-1st2nd-cac6-treatment-relations"
+}

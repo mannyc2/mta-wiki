@@ -1,0 +1,92 @@
+{
+  "run_id": "2026-06-08T16-50-10-718Z_3206939-260dd524_ingest_14th-street-busway-brochure",
+  "submission_path": "data/submissions/2026-06-08T16-50-10-718Z_3206939-260dd524_ingest_14th-street-busway-brochure.jsonl",
+  "transcript_path": "wiki/transcripts/runs/2026-06-08T16-50-10-718Z_3206939-260dd524_ingest_14th-street-busway-brochure/events.jsonl",
+  "source_ids": [
+    "14th_street_busway_brochure"
+  ],
+  "rows": 34,
+  "state_counts": {
+    "accepted": 34
+  },
+  "observation_kind_counts": {
+    "source": 1,
+    "entity": 2,
+    "project": 1,
+    "corridor": 1,
+    "route": 1,
+    "treatment_component": 13,
+    "event": 1,
+    "claim": 4,
+    "table": 2,
+    "relation": 8
+  },
+  "evidence_ref_count": 42,
+  "unique_evidence_block_count": 30,
+  "evidence_text_source_counts": {
+    "raw_text": 42
+  },
+  "evidence_source_surface_counts": {
+    "chandra_ocr": 42
+  },
+  "evidence_block_kind_counts": {
+    "heading": 8,
+    "text": 29,
+    "list_item": 3,
+    "table": 2
+  },
+  "max_evidence_refs_per_observation": 2,
+  "transcript": {
+    "found": true,
+    "normalization_skipped": true,
+    "read_source_calls": 1,
+    "search_source_calls": 0,
+    "read_evidence_calls": 3,
+    "submit_observation_calls": 34,
+    "read_source_returned_blocks": [
+      53
+    ],
+    "read_evidence_block_ids": [
+      "p002_c0013",
+      "p002_c0015",
+      "p001_c0003"
+    ]
+  },
+  "usage": {
+    "request_count": 37,
+    "total_tokens": 925826,
+    "estimated_cost": 0.09166400000000002,
+    "accepted_per_1k_tokens": 0.03672396325011395,
+    "cost_per_accepted_submission": 0.0026960000000000005
+  },
+  "warnings": [
+    {
+      "code": "payload_field_not_in_evidence",
+      "message": "Payload field entity_name=\"NYC Department of Transportation\" is not textually present in the cited evidence. This may be valid normalization, but it needs human review.",
+      "source_id": "14th_street_busway_brochure",
+      "local_observation_id": "entity_nyc_dot",
+      "observation_kind": "entity"
+    },
+    {
+      "code": "payload_field_not_in_evidence",
+      "message": "Payload field entity_name=\"MTA New York City Transit\" is not textually present in the cited evidence. This may be valid normalization, but it needs human review.",
+      "source_id": "14th_street_busway_brochure",
+      "local_observation_id": "entity_mta_nyct_bus",
+      "observation_kind": "entity"
+    },
+    {
+      "code": "payload_field_not_in_evidence",
+      "message": "Payload field operator=\"MTA New York City Transit\" is not textually present in the cited evidence. This may be valid normalization, but it needs human review.",
+      "source_id": "14th_street_busway_brochure",
+      "local_observation_id": "route_m14_ad_sbs",
+      "observation_kind": "route"
+    },
+    {
+      "code": "weak_relation_evidence",
+      "message": "Relation kind has_owner is supported by evidence that lacks an obvious ownership/management/operator cue.",
+      "source_id": "14th_street_busway_brochure",
+      "local_observation_id": "rel_project_has_owner_dot",
+      "observation_kind": "relation"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-100331"
+record_kind: "source"
+display_name: "Metro-North procurement items"
+source_id: "meeting_doc_100331"
+source_ids:
+  - "meeting_doc_100331"
+local_observation_id: "source_meeting_doc_100331"
+local_observation_ids:
+  - "source_meeting_doc_100331"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T19:32:40.348Z"
+submission_ids:
+  - "sub_3a9e7b163c024576"
+payload:
+  content_type: "application/pdf"
+  publisher: "MTA"
+  source_url: "https://www.mta.info/document/100331"
+  title: "Metro-North procurement items"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_100331#p001_c0001"
+    page_number: 1
+    role: "document_logo"
+    source_id: "meeting_doc_100331"
+    source_path: "raw/sources/meeting_doc_100331/blocks.jsonl"
+    text_sha256: "sha256:bfcc6898e93469b72e77b6755265f12b44c12d6b1f6fd6ebf6b50ff992e1e551"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_100331#p001_c0002"
+    page_number: 1
+    role: "document_title"
+    source_id: "meeting_doc_100331"
+    source_path: "raw/sources/meeting_doc_100331/blocks.jsonl"
+    text_sha256: "sha256:8d58f3a1918e41a5d24f1303077c37dcd98c7e18ab7b0b71163e3ac774f298c4"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_100331#p001_c0003"
+    page_number: 1
+    role: "document_section"
+    source_id: "meeting_doc_100331"
+    source_path: "raw/sources/meeting_doc_100331/blocks.jsonl"
+    text_sha256: "sha256:136e75c456a18829d5200ee45e7b0f6cd245ae644cd88d0d7496a13eade1c462"
+    text_source: "raw_text"
+---
+
+# Metro-North procurement items
+
+source_id: meeting_doc_100331
+citation: cite block ids exactly as shown in square brackets
+document: 52 block(s)
+
+## Page 1
+
+> [p001_c0001] The logo consists of a blue circle with the letters "MTA" in white, bold, sans-serif font. The letters are slightly slanted to the right.
+[p001_c0002] Metro-North Railroad
+### [p001_c0003] Procurement
+
+## Page 2
+
+[p002_c0001]
+
+```text
+Subject Request for Authorization to Award One Non-Competitive Procurement Department MTA Procurement Department Head Name Kuvershen Ayer Department Head Signature Kuvershen Ayer Project Manager Name Jonathan Rodriguez-Rojas Board Action Order To Date Approval Info Other 1 Committee 11/29/22 2 Board 11/30/22
+```
+[p002_c0002]
+
+```text
+November 18, 2022 Department Department Head Name Department Head Signature Internal Approvals Approval Approval President CAR VP & General Counsel ss
+```
+[p002_c0003]
+
+```text
+Internal Approvals (cont.) Order Approval Order Approval Order Approval Order Approval
+```
+### [p002_c0004] PURPOSE
+[p002_c0005] To obtain approval of the Board to award one non-competitive contract, and to inform the Metro-North Committee of this procurement action.
+### [p002_c0006] DISCUSSION
+[p002_c0007] Metro-North Railroad proposes to award one Noncompetitive procurement in the following category:
+[p002_c0008]
+
+```text
+Procurements Requiring Two Thirds Vote: # of Actions $ Amount Schedule A: Noncompetitive Purchases and Public Work Contracts 1 $ 3.9 M SUBTOTAL 1 $ 3.9 M
+```
+[p002_c0009] Metro-North Railroad proposes to award Competitive procurements in the following categories: None
+[p002_c0010] Metro-North Railroad proposes to award Ratifications in the following categories: None
+[p002_c0011]
+
+```text
+TOTAL 1 $ 3.9 M
+```
+[p002_c0012] COMPETITIVE BIDDING REQUIREMENTS: The procurement actions in Schedules A, B, C, and D are subject to the competitive bidding requirements of PAL 1209 or 1265-a relating to contracts for the purchase of goods or public work. Procurement actions in the remaining Schedules are not subject to these requirements.
+[p002_c0013] BUDGET IMPACT: The purchases/contracts will result in obligating funds in the amounts listed. Funds are available in the current operating/capital budgets for this purpose, which costs will be apportioned between CDOT (74 percent) and Metro-North (26 percent).
+[p002_c0014] RECOMMENDATION: That the contract be approved as proposed. (Items are included in the resolution of approval at the beginning of the Procurement Section.)
+
+## Page 3
+
+### [p003_c0001] BOARD RESOLUTION
+[p003_c0002] WHEREAS , in accordance with Sections 1265-a and 1209 of the Public Authorities Law and the All-Agency General Contract Procurement Guidelines, the Board authorizes the award of certain noncompetitive purchase and public work contracts, and the solicitation and award of requests for proposals regarding purchase and public work contracts; and
+[p003_c0003] WHEREAS , in accordance with the All-Agency Service Contract Procurement Guidelines and General Contract Procurement Guidelines the Board authorizes the award of certain noncompetitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts, and
+[p003_c0004] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Service Contract Procurement Guidelines, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p003_c0005] NOW, the Board resolves as follows:
+[p003_c0006] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract.
+[p003_c0007] 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals, and authorizes the solicitation of such proposals.
+[p003_c0008] 3. As to each request for proposals (for purchase and public work contracts) set forth in Schedule C for which a recommendation is made to award the contract, the Board authorizes the execution of said contract.
+[p003_c0009] 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein and ratifies each action for which ratification is requested.
+[p003_c0010] 5. The Board authorizes the execution of each of the following for which Board authorization is required: (i) the miscellaneous procurement contracts set forth in Schedule E; (ii) the personal service contracts set forth in Schedule F; (iii) the miscellaneous service contracts set forth in Schedule G; (iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; (v) the contract modifications to purchase and public work contracts set forth in Schedule I; and (vi) the modifications to miscellaneous procurement contracts set forth in Schedule J.
+[p003_c0011] 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+
+## Page 4
+
+### [p004_c0001] Metro-North Railroad
+[p004_c0002] NOVEMBER 2022
+### [p004_c0003] LIST OF NONCOMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p004_c0004] Procurements Requiring Two-Thirds Vote:
+### [p004_c0005] A. Noncompetitive Purchases and Public Work Contracts
+[p004_c0006] (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p004_c0007] 1. Powell Electric Systems, Inc. $3,872,640 Staff Summary Attached Five years Contract# 209669
+[p004_c0008] New and/or refurbished original equipment manufacturer circuit breakers at seven alternating current traction power substations on Metro-North's New Haven line in both Connecticut and New York.
+
+## Page 5
+
+### [p005_c0001] Schedule A: Noncompetitive Purchases and Public Work Contracts
+### [p005_c0002] Item Number: 1
+[p005_c0003]
+
+```text
+Vendor Name (Location) Powell Electric Systems Inc. (Houston, Texas) Contract Number 209669 Renewal? Yes No Description OEM Circuit Breaker Replacement and/or Refurbishment on New Haven Line Total Amount: $3,872,640 Contract Term (including Options, if any) Five years Funding Source Operating Capital Federal Other: CDOT Option(s) included in Total Amount? Yes No Requesting Department Maintenance of Way-Power, Stephen Walsh, Deputy Chief Engineer Procurement Type Competitive Noncompetitive Contract Manager Zulma Rosario Solicitation Type RFP Bid Other: Sole-Source
+```
+### [p005_c0004] Discussion:
+[p005_c0005] Metro-North Railroad (“Metro-North”) requests Board approval to award a five-year noncompetitive estimated quantities contract in the amount of $3,872,640 to Powell Electric Systems Inc. (“Powell”) for the provision of new and/or refurbishment of original equipment manufacturer (“OEM”) circuit breakers and to conduct testing for seven alternating current (“AC”) traction power substations on Metro-North’s New Haven Line (“NHL”) in both Connecticut and New York.
+[p005_c0006] Metro-North maintains 19 AC traction power substations on the NHL, which feed into the traction power system and provide electricity for the movement of trains. Seven of these 19 substations were designed and built for Metro-North by Powell in the 1990’s and include circuit breakers (approximately 30 per substation) designed specifically for railroad use on traction power systems. The circuit breakers in the 7 substations have reached the end of their useful life. The contract calls for the refurbishment of 208 circuit breakers at a maximum price of $17,455 each, and the purchase of 15 new circuit breakers at a maximum price of $29,997 each. The new circuit breakers are to be used as spares, which will be swapped with the existing circuit breakers undergoing refurbishment in order to avoid any disruptions. Metro-North’s forces will remove and install the circuit breakers during the term of the contract.
+[p005_c0007] The circuit breakers, which are beginning to fail more frequently, act as the primary safety mechanisms to prevent the flow of electric current to a circuit when there is an electrical fault. If a circuit breaker fails, it will affect the corresponding track, disrupt train service, and possibly cause damage to the substation. The proactive replacement and refurbishment of these circuit breakers will ensure safe and uninterrupted train service for Metro-North’s ridership. This will also have the added benefit of extending the useful life of the seven substations by an estimated 15 years and forestall the need for a complete replacement of the substations, which is estimated to cost approximately $25 million each.
+[p005_c0008] Powell, as the designer and OEM, is uniquely qualified and experienced with the requisite electrical components for these substations. Additionally, as the OEM, Powell will also be able to ensure proper form, fit and functionality of the circuit breakers including integration into the substations. If Metro-North were to have another vendor perform refurbishment services on this equipment, Metro-North could run the risk of a potential decrease in the functionality and reliability of the circuit breakers.
+[p005_c0009] Based on a comparative price analysis between Powell and another vendor that performed a one-time limited emergency repair on a Powell circuit breaker last year, the emergency repair cost was 113 percent higher than Powell’s current pricing for a more comprehensive refurbishment. Further, by refurbishing the 208 circuit breakers rather than replacing them with new circuit breakers, Metro-North is further achieving a savings of approximately $3 million. As for new circuit breakers, other vendors are not able to provide new circuit breakers and ensure compatibility with the substation equipment given Powell’s unique and proprietary design of the circuit breakers for Metro-North’s use.
+[p005_c0010] In requesting Board authorization, Metro-North has complied with the public advertisement requirements of PAL Section 1265-a (3) and PAL Section 1265-a(4)(b), as well as with the MTA All Agency General Contract Procurement Guidelines for the procurement of sole-source items. An advertisement notice was placed in the New York State Contract Reporter, Journal News and New Haven Register and posted on the Metro-North website. These efforts did not yield interest from other vendors.
+
+## Page 6
+
+### [p006_c0001] Schedule A: Noncompetitive Purchases and Public Work Contracts
+> [p006_c0002] The logo for Metro-North Railroad, featuring a stylized 'M' inside a circle followed by the text 'Metro-North Railroad'.
+[p006_c0003] The contract resulting from this procurement has been evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state, and local law and regulations. Any applicable cybersecurity requirements, to the extent required, have been included in the contract terms and conditions.
+[p006_c0004] Powell has certified that pursuant to EO 16 it is not doing business in Russia.
+### [p006_c0005] Impact on Funding
+[p006_c0006] Funding for this procurement will be apportioned between the Connecticut Department of Transportation (State of Connecticut) ($2,857,586 or 74 percent) and Metro-North ($1,015,054 or 26 percent).

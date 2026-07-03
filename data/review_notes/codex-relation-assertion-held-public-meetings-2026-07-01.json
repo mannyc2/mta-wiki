@@ -1,0 +1,92 @@
+{
+  "id": "codex-relation-assertion-held-public-meetings-2026-07-01",
+  "date": "2026-07-01",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider profiles"
+  ],
+  "bucket": "relation_assertion_status_unknown",
+  "slice": "held_public_engagement_meeting_timeline_events",
+  "baseline": {
+    "validate_issues": 0,
+    "relation_assertion_unknown_total": 5301,
+    "timeline_context_unknown": 430,
+    "timeline_context_has_timeline_event_unknown": 298,
+    "safe_candidate_count": 11
+  },
+  "implemented": [
+    {
+      "area": "assertion qualifier",
+      "files": [
+        "packages/pipeline/src/records/assertion-qualifiers.ts",
+        "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+      ],
+      "summary": "Added a deterministic delivered-status rule for held public-engagement meeting timeline events. The rule is scoped to entity subjects, event objects, public_engagement meeting-kind events, non-work-plan citing sources, comparable month/day event and source dates where the event is not after the source, occurrence text such as held/meeting minutes/called to order, and guards for no-meeting/no-items/postponed/deferred/cancelled/scheduled/approval-agenda text."
+    }
+  ],
+  "after": {
+    "relation_assertion_unknown_total": 5290,
+    "timeline_context_unknown": 419,
+    "timeline_context_has_timeline_event_unknown": 287,
+    "timeline_context_has_timeline_event_delivered": 498,
+    "validate_issues": 0,
+    "canonical_records": 84040,
+    "wiki_pages": 7334
+  },
+  "delta": {
+    "relation_assertion_unknown_total": -11,
+    "timeline_context_unknown": -11,
+    "timeline_context_has_timeline_event_unknown": -11
+  },
+  "subagent_inputs": [
+    {
+      "agent_id": "019f1b61-94fb-7a91-8ab2-2cceb42f1de8",
+      "lane": "timeline_context.has_timeline_event held public-engagement meetings",
+      "used": true
+    }
+  ],
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+      "result": "pass",
+      "details": "73 pass, 0 fail, 398 expect() calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    {
+      "command": "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+      "result": "pass",
+      "details": "Materialized 93092/98102 submissions; SQLite FTS quick_check: ok"
+    },
+    {
+      "command": "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+      "result": "pass",
+      "details": "ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass",
+      "details": "Submissions 98102; canonical records 84040; wiki pages 7334; Issues 0"
+    }
+  ],
+  "intentionally_unresolved": [
+    "Public-engagement meeting rows without source dates, event dates, or occurrence text remain unknown.",
+    "No-meeting/no-items, future event dates, work-plan rows, source-subject rows, and approval-agenda text are not marked delivered by this rule.",
+    "Some work-plan meeting rows remain planned under the pre-existing work-plan timeline classifier; this rule does not override them to delivered.",
+    "No canonical JSONL was hand-edited; canonical relations and SQLite were refreshed by deterministic materialization."
+  ],
+  "next_lanes": [
+    "Continue metric_context.has_metric residual cleanup with exact-name/unit/period guards.",
+    "Scout claim_context.has_claim and agency_role residuals for patch-ready deterministic assertion rules.",
+    "Periodically recheck route/project duplicate pressure, but the current high-confidence duplicate backlog remains drained."
+  ]
+}

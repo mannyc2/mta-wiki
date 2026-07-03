@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-06-10T23-12-02-636Z_1976810-607b0367_ingest_2013-03-sbs-webster-bx-cb6",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T03:41:47.607Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d001",
+        "local_observation_id": "project_webster_avenue_sbs_2013_03",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'project_12-webster-ave' already resolves to the existing registry record of the same id. Per the rules, when the closest matching record IS the observation's own base_record_id, the decision is 'new' — the observation is an additional source observation for the same canonical record, not a link to a different record.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb6",
+            "block_id": "p011_c0002",
+            "source_quote": "Bx41 LTD → Bx41 SBS"
+          },
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb6",
+            "block_id": "p007_c0002",
+            "source_quote": "Based on the existing Bx41 route that carries over 20,000 daily riders. 5.3 miles from The Hub to Williamsbridge"
+          },
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb6",
+            "block_id": "p001_c0002",
+            "source_quote": "Webster Avenue Select Bus Service"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-40-13-441Z_2111393-d7e0dc6a_canonicalize_2026-06-10t23-12-02-636z-1976810-607b0367-ingest-2013-03-sbs-webster-bx-cb6-project-identity"
+}

@@ -1,0 +1,16 @@
+{
+  "run_id": "2026-06-10T23-20-32-317Z_1976810-a49f1275_ingest_2014-03-01-brt-webster-sbs-newsletter",
+  "generated_at": "2026-06-11T04:04:44.844Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "reviewed_decision_count": 0,
+  "pass_count": 0,
+  "fail_count": 0,
+  "unsure_count": 0,
+  "paths": {
+    "verdicts_jsonl": "data/canonicalize/2026-06-10T23-20-32-317Z_1976810-a49f1275_ingest_2014-03-01-brt-webster-sbs-newsletter/verdicts.jsonl",
+    "manifest": "data/canonicalize/2026-06-10T23-20-32-317Z_1976810-a49f1275_ingest_2014-03-01-brt-webster-sbs-newsletter/review-manifest.json"
+  }
+}

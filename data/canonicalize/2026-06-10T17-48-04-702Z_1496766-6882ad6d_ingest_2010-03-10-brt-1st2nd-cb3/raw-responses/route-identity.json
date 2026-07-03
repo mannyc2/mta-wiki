@@ -1,0 +1,66 @@
+{
+  "run_id": "2026-06-10T17-48-04-702Z_1496766-6882ad6d_ingest_2010-03-10-brt-1st2nd-cb3",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-10T19:36:35.864Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "m15-local-limited-new",
+        "local_observation_id": "route_m15_serving_corridor_2010",
+        "decision": "new",
+        "rationale": "Observation describes M15 local/limited service on the First Avenue/Second Avenue corridor. The base_record_id route_m15-local-limited already exists in the registry with alias route_m15-serving-corridor-2010, matching this observation exactly. The closest canonical record IS the observation's own base_record_id, so this is new (already resolved).",
+        "evidence_refs": [
+          {
+            "source_id": "2010_03_10_brt_1st2nd_cb3",
+            "block_id": "p003_c0005",
+            "source_quote": "Currently served by M15 bus route"
+          },
+          {
+            "source_id": "2010_03_10_brt_1st2nd_cb3",
+            "block_id": "p003_c0003",
+            "source_quote": "A map of the First Avenue/Second Avenue SBS corridor in Manhattan, showing the route from South Ferry to 125th Street."
+          }
+        ]
+      },
+      {
+        "decision_id": "m15-sbs-proposed-new",
+        "local_observation_id": "route_m15_sbs_proposed_2010",
+        "decision": "new",
+        "rationale": "Observation describes proposed M15 Select Bus Service on the First Avenue/Second Avenue corridor, replacing M15 Limited. The base_record_id route_m15-sbs already exists in the registry with alias route_m15-sbs-proposed-2010, matching this observation. The closest canonical record IS the observation's own base_record_id, so this is new.",
+        "proposed_relations": [
+          {
+            "relation_kind": "replaces",
+            "subject_id": "route_m15-sbs",
+            "object_id": "route_m15-local-limited",
+            "description": "M15 SBS is proposed to replace M15 Limited service on the First Avenue/Second Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2010_03_10_brt_1st2nd_cb3",
+                "block_id": "p004_c0003",
+                "source_quote": "Features Current M15 M15 SBS (2010) M15 SBS (2012) Local service Yes Yes Yes Limited service Yes No No Simpler service pattern No Yes Off-board fare collection No Yes Regular bus fare Yes Yes Improved bus lanes No Yes Bus bulbs No No Yes Transit Signal Priority No No Yes (below Houston St)"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2010_03_10_brt_1st2nd_cb3",
+            "block_id": "p004_c0003",
+            "source_quote": "Features Current M15 M15 SBS (2010) M15 SBS (2012) Local service Yes Yes Yes Limited service Yes No No Simpler service pattern No Yes Off-board fare collection No Yes Regular bus fare Yes Yes Improved bus lanes No Yes Bus bulbs No No Yes Transit Signal Priority No No Yes (below Houston St)"
+          },
+          {
+            "source_id": "2010_03_10_brt_1st2nd_cb3",
+            "block_id": "p003_c0005",
+            "source_quote": "Currently served by M15 bus route"
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-35-35-832Z_1641434-bfde38b0_canonicalize_2026-06-10t17-48-04-702z-1496766-6882ad6d-ingest-2010-03-10-brt-1st2nd-cb3-route-identity"
+}

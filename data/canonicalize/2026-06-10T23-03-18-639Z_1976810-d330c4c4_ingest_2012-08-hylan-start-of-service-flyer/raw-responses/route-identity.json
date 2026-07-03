@@ -1,0 +1,62 @@
+{
+  "run_id": "2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T02:51:16.384Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d79d3c0c",
+        "local_observation_id": "route_s79_sbs_2012_hylan_flyer",
+        "decision": "new",
+        "rationale": "Observation already resolves to its own base_record_id (route_able-s79-sbs). The registry already has route_able-s79-sbs as canonical, and the observation's record_id matches — no cross-linking is needed. The observation's own record is the closest match.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p001_c0002",
+            "source_quote": "S79 will become S79 SBS and will only stop at SBS stations"
+          },
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0013",
+            "source_quote": "All S79 service becomes Select Bus Service, stopping only at SBS stations"
+          }
+        ],
+        "proposed_relations": []
+      },
+      {
+        "decision_id": "d8043f01",
+        "local_observation_id": "route_s59_2012_hylan_flyer",
+        "decision": "new",
+        "rationale": "Observation already resolves to its own base_record_id (route_s59-hylan-2011). The registry card for route_s59-hylan-2011 exists and the observation's record matches — no cross-linking is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p001_c0002",
+            "source_quote": "S59 and S78 will continue to serve local stops with added service"
+          }
+        ],
+        "proposed_relations": []
+      },
+      {
+        "decision_id": "d12b7e4a",
+        "local_observation_id": "route_s78_2012_hylan_flyer",
+        "decision": "new",
+        "rationale": "Observation already resolves to its own base_record_id (route_s78-hylan-2010). The registry card for route_s78-hylan-2010 exists and the observation's record matches — no cross-linking is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p001_c0002",
+            "source_quote": "S59 and S78 will continue to serve local stops with added service"
+          }
+        ],
+        "proposed_relations": []
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-47-35-385Z_2111393-fa47aed4_canonicalize_2026-06-10t23-03-18-639z-1976810-d330c4c4-ingest-2012-08-hylan-start-of-service-flyer-route-identity"
+}

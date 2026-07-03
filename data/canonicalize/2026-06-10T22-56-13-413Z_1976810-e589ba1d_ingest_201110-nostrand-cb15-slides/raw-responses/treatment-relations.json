@@ -1,0 +1,271 @@
+{
+  "run_id": "2026-06-10T22-56-13-413Z_1976810-e589ba1d_ingest_201110-nostrand-cb15-slides",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T01:59:57.222Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-bus-signal-priority-nostrand-sbs",
+        "local_observation_id": "treatment_bus_signal_priority_nostrand_sbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs-201110",
+            "object_id": "treatment_bus-signal-priority-nostrand-sbs",
+            "description": "Bus Signal Priority is an SBS feature for the Nostrand/Rogers corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb15_slides",
+                "block_id": "p004_c0002",
+                "source_quote": "Bus Signal Priority"
+              },
+              {
+                "source_id": "201110_nostrand_cb15_slides",
+                "block_id": "p010_c0003",
+                "source_quote": "Transit Signal Priority improves bus and traffic flow"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 4 lists Bus Signal Priority as an SBS feature; page 10 confirms Transit Signal Priority on Nostrand. Evidence explicitly attaches the treatment to the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb15_slides",
+            "block_id": "p004_c0002",
+            "source_quote": "Bus Signal Priority"
+          },
+          {
+            "source_id": "201110_nostrand_cb15_slides",
+            "block_id": "p010_c0003",
+            "source_quote": "Transit Signal Priority improves bus and traffic flow"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-lanes-nostrand-sbs",
+        "local_observation_id": "treatment_bus_lanes_nostrand_sbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs-201110",
+            "object_id": "treatment_bus-lanes-nostrand-sbs",
+            "description": "Bus Lanes are an SBS feature for the Nostrand/Rogers corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb15_slides",
+                "block_id": "p004_c0003",
+                "source_quote": "Bus Lanes"
+              },
+              {
+                "source_id": "201110_nostrand_cb15_slides",
+                "block_id": "p008_c0001",
+                "source_quote": "Nostrand SBS Project Features – North of Farragut Rd"
+              },
+              {
+                "source_id": "201110_nostrand_cb15_slides",
+                "block_id": "p008_c0004",
+                "source_quote": "Dedicated Bus Lane & Right Turn Lane: Offset bus lane allows buses to move quickly and preserves parking"
+              },
+              {
+                "source_id": "201110_nostrand_cb15_slides",
+                "block_id": "p010_c0003",
+                "source_quote": "Peak-period bus lanes in wider section of Nostrand will speed buses and reduce conflicts with general traffic"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 4 lists Bus Lanes as an SBS feature; page 8 describes dedicated/offset bus lanes as Nostrand SBS Project Features; page 10 confirms peak-period bus lanes. Evidence explicitly attaches bus lanes to the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb15_slides",
+            "block_id": "p004_c0003",
+            "source_quote": "Bus Lanes"
+          },
+          {
+            "source_id": "201110_nostrand_cb15_slides",
+            "block_id": "p008_c0001",
+            "source_quote": "Nostrand SBS Project Features – North of Farragut Rd"
+          },
+          {
+            "source_id": "201110_nostrand_cb15_slides",
+            "block_id": "p008_c0004",
+            "source_quote": "Dedicated Bus Lane & Right Turn Lane: Offset bus lane allows buses to move quickly and preserves parking"
+          },
+          {
+            "source_id": "201110_nostrand_cb15_slides",
+            "block_id": "p010_c0003",
+            "source_quote": "Peak-period bus lanes in wider section of Nostrand will speed buses and reduce conflicts with general traffic"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-pre-payment-nostrand-sbs",
+        "local_observation_id": "treatment_pre_payment_nostrand_sbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs-201110",
+            "object_id": "treatment_pre-payment-nostrand-sbs",
+            "description": "Pre-Payment is an SBS feature for the Nostrand/Rogers corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb15_slides",
+                "block_id": "p004_c0004",
+                "source_quote": "Pre-Payment"
+              },
+              {
+                "source_id": "201110_nostrand_cb15_slides",
+                "block_id": "p005_c0002",
+                "source_quote": "Pay before you board by dipping MetroCard at sidewalk MetroCard machine or inserting coins at sidewalk coin machine"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 4 lists Pre-Payment as an SBS feature; page 5 explains how pre-payment works. Evidence explicitly attaches the treatment to the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb15_slides",
+            "block_id": "p004_c0004",
+            "source_quote": "Pre-Payment"
+          },
+          {
+            "source_id": "201110_nostrand_cb15_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "Pay before you board by dipping MetroCard at sidewalk MetroCard machine or inserting coins at sidewalk coin machine"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-sbs-stations-nostrand",
+        "local_observation_id": "treatment_sbs_stations_nostrand",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs-201110",
+            "object_id": "treatment_sbs-stations-nostrand",
+            "description": "SBS Stations are an SBS feature for the Nostrand/Rogers corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb15_slides",
+                "block_id": "p004_c0006",
+                "source_quote": "Stations"
+              },
+              {
+                "source_id": "201110_nostrand_cb15_slides",
+                "block_id": "p010_c0002",
+                "source_quote": "SBS stations"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 4 lists Stations as an SBS feature; page 10 maps SBS stations including Kings Highway, Avenue U, Avenue X, Emmons Ave, Knapp St. Evidence explicitly attaches stations to the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb15_slides",
+            "block_id": "p004_c0006",
+            "source_quote": "Stations"
+          },
+          {
+            "source_id": "201110_nostrand_cb15_slides",
+            "block_id": "p010_c0002",
+            "source_quote": "SBS stations"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-sbs-branding-nostrand",
+        "local_observation_id": "treatment_sbs_branding_nostrand",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs-201110",
+            "object_id": "treatment_sbs-branding-nostrand",
+            "description": "SBS Branding is an SBS feature for the Nostrand/Rogers corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb15_slides",
+                "block_id": "p004_c0007",
+                "source_quote": "Branding"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 4 lists Branding as an SBS feature. Evidence explicitly attaches branding to the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb15_slides",
+            "block_id": "p004_c0007",
+            "source_quote": "Branding"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-passenger-info-nostrand-sbs",
+        "local_observation_id": "treatment_passenger_info_nostrand_sbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs-201110",
+            "object_id": "treatment_passenger-info-nostrand-sbs",
+            "description": "Passenger Info is an SBS feature for the Nostrand/Rogers corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb15_slides",
+                "block_id": "p004_c0005",
+                "source_quote": "Passenger Info"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 4 lists Passenger Info as an SBS feature. Evidence explicitly attaches passenger information to the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb15_slides",
+            "block_id": "p004_c0005",
+            "source_quote": "Passenger Info"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-pre-payment-enforcement-nostrand",
+        "local_observation_id": "treatment_pre_payment_enforcement_nostrand",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs-201110",
+            "object_id": "treatment_pre-payment-enforcement-nostrand",
+            "description": "Pre-Payment Enforcement is part of the Nostrand/Rogers SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb15_slides",
+                "block_id": "p006_c0002",
+                "source_quote": "Inspector teams conduct random checks of buses; $100 fine for passengers without a receipt"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 6 describes fare enforcement inspectors conducting random checks, $100 fines. This is presented as part of the How Pre-Payment Works presentation that is part of the Nostrand/Rogers SBS project material. Evidence explicitly attaches enforcement to the SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb15_slides",
+            "block_id": "p006_c0002",
+            "source_quote": "Inspector teams conduct random checks of buses; $100 fine for passengers without a receipt"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-56-30-274Z_2111393-8ebf31a5_canonicalize_2026-06-10t22-56-13-413z-1976810-e589ba1d-ingest-201110-nostrand-cb15-slides-treatment-relations"
+}

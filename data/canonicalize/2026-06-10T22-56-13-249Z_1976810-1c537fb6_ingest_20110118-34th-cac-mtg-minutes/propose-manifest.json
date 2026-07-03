@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T22-56-13-249Z_1976810-1c537fb6_ingest_20110118-34th-cac-mtg-minutes",
+  "generated_at": "2026-06-11T01:27:13.362Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 32,
+  "validated_decision_count": 31,
+  "quarantined_decision_count": 1,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T22-56-13-249Z_1976810-1c537fb6_ingest_20110118-34th-cac-mtg-minutes",
+    "manifest": "data/canonicalize/2026-06-10T22-56-13-249Z_1976810-1c537fb6_ingest_20110118-34th-cac-mtg-minutes/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T22-56-13-249Z_1976810-1c537fb6_ingest_20110118-34th-cac-mtg-minutes/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T22-56-13-249Z_1976810-1c537fb6_ingest_20110118-34th-cac-mtg-minutes/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T22-56-13-249Z_1976810-1c537fb6_ingest_20110118-34th-cac-mtg-minutes/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 2,
+      "validated_decision_count": 2,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-249Z_1976810-1c537fb6_ingest_20110118-34th-cac-mtg-minutes/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-22-11-499Z_2111393-667ba123_canonicalize_2026-06-10t22-56-13-249z-1976810-1c537fb6-ingest-20110118-34th-cac-mtg-minutes-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 13,
+      "validated_decision_count": 13,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-249Z_1976810-1c537fb6_ingest_20110118-34th-cac-mtg-minutes/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-22-11-499Z_2111393-7b3dd1a8_canonicalize_2026-06-10t22-56-13-249z-1976810-1c537fb6-ingest-20110118-34th-cac-mtg-minutes-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-249Z_1976810-1c537fb6_ingest_20110118-34th-cac-mtg-minutes/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-22-11-499Z_2111393-397e8e27_canonicalize_2026-06-10t22-56-13-249z-1976810-1c537fb6-ingest-20110118-34th-cac-mtg-minutes-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-249Z_1976810-1c537fb6_ingest_20110118-34th-cac-mtg-minutes/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-22-11-499Z_2111393-46e55115_canonicalize_2026-06-10t22-56-13-249z-1976810-1c537fb6-ingest-20110118-34th-cac-mtg-minutes-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 5,
+      "validated_decision_count": 5,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-249Z_1976810-1c537fb6_ingest_20110118-34th-cac-mtg-minutes/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-22-11-499Z_2111393-43d1a2ef_canonicalize_2026-06-10t22-56-13-249z-1976810-1c537fb6-ingest-20110118-34th-cac-mtg-minutes-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 10,
+      "validated_decision_count": 10,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-249Z_1976810-1c537fb6_ingest_20110118-34th-cac-mtg-minutes/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-22-11-508Z_2111393-0d231a8d_canonicalize_2026-06-10t22-56-13-249z-1976810-1c537fb6-ingest-20110118-34th-cac-mtg-minutes-relation-linker"
+    }
+  ]
+}

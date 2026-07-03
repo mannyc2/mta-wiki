@@ -1,0 +1,190 @@
+{
+  "run_id": "2026-06-10T22-56-13-021Z_1976810-4f20fb57_ingest_20100615-34th-transitway-cac-mtg-summary",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T01:04:54.105Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "entity_new_york_city_department_of_transportation_20100615",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_nyc-dot, which exists in the registry with matching entity_name, entity_type, and source. No different target needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20100615_34th_transitway_cac_mtg_summary",
+            "block_id": "p001_c0010",
+            "source_quote": "Eric Beaton, Project Manager of the Transitway at DOT"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2",
+        "local_observation_id": "entity_nyct_20100615_cac",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_mta-nyct, which exists in the registry with matching entity_name, entity_type, and source. No different target needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20100615_34th_transitway_cac_mtg_summary",
+            "block_id": "p001_c0010",
+            "source_quote": "Ted Orosz, the director of Long-Range Bus Planning for NYCT"
+          }
+        ]
+      },
+      {
+        "decision_id": "d3",
+        "local_observation_id": "entity_hsh_20100615_cac",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_hsh-20100921-cac, which exists in the registry with matching entity_name, entity_type, acronym, and source. No different target needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20100615_34th_transitway_cac_mtg_summary",
+            "block_id": "p001_c0007",
+            "source_quote": "Arnie Bloch of Howard/Stein-Hudson Associates (HSH)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d4",
+        "local_observation_id": "entity_eric_beaton_20100615_cac",
+        "decision": "new",
+        "proposed_relations": [
+          {
+            "relation_kind": "part_of",
+            "subject_id": "entity_eric-beaton-20100921",
+            "object_id": "entity_nyc-dot",
+            "description": "Eric Beaton is Project Manager of the Transitway at NYC DOT",
+            "evidence_refs": [
+              {
+                "source_id": "20100615_34th_transitway_cac_mtg_summary",
+                "block_id": "p001_c0010",
+                "source_quote": "Eric Beaton, Project Manager of the Transitway at DOT"
+              }
+            ]
+          }
+        ],
+        "rationale": "Observation already resolves to base_record_id entity_eric-beaton-20100921, which exists in the registry. Eric Beaton's affiliation with NYC DOT is evidenced by his title.",
+        "evidence_refs": [
+          {
+            "source_id": "20100615_34th_transitway_cac_mtg_summary",
+            "block_id": "p001_c0010",
+            "source_quote": "Eric Beaton, Project Manager of the Transitway at DOT"
+          }
+        ]
+      },
+      {
+        "decision_id": "d5",
+        "local_observation_id": "entity_ted_orosz_20100615_cac",
+        "decision": "new",
+        "proposed_relations": [
+          {
+            "relation_kind": "part_of",
+            "subject_id": "entity_ted-orosz-20100921",
+            "object_id": "entity_mta-nyct",
+            "description": "Ted Orosz is Director of Long-Range Bus Planning for NYCT",
+            "evidence_refs": [
+              {
+                "source_id": "20100615_34th_transitway_cac_mtg_summary",
+                "block_id": "p001_c0010",
+                "source_quote": "Ted Orosz, the director of Long-Range Bus Planning for NYCT"
+              }
+            ]
+          }
+        ],
+        "rationale": "Observation already resolves to base_record_id entity_ted-orosz-20100921, which exists in the registry. Ted Orosz's affiliation with MTA NYCT is evidenced by his title.",
+        "evidence_refs": [
+          {
+            "source_id": "20100615_34th_transitway_cac_mtg_summary",
+            "block_id": "p001_c0010",
+            "source_quote": "Ted Orosz, the director of Long-Range Bus Planning for NYCT"
+          }
+        ]
+      },
+      {
+        "decision_id": "d6",
+        "local_observation_id": "entity_arnie_bloch_20100615_cac",
+        "decision": "new",
+        "proposed_relations": [
+          {
+            "relation_kind": "part_of",
+            "subject_id": "entity_arnie-bloch-20100921",
+            "object_id": "entity_hsh-20100921-cac",
+            "description": "Arnie Bloch is a representative of Howard/Stein-Hudson Associates",
+            "evidence_refs": [
+              {
+                "source_id": "20100615_34th_transitway_cac_mtg_summary",
+                "block_id": "p001_c0007",
+                "source_quote": "Arnie Bloch of Howard/Stein-Hudson Associates (HSH)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Observation already resolves to base_record_id entity_arnie-bloch-20100921, which exists in the registry. Arnie Bloch's affiliation with HSH is evidenced by the text.",
+        "evidence_refs": [
+          {
+            "source_id": "20100615_34th_transitway_cac_mtg_summary",
+            "block_id": "p001_c0007",
+            "source_quote": "Arnie Bloch of Howard/Stein-Hudson Associates (HSH)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d7",
+        "local_observation_id": "entity_federal_transit_administration_20100615",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_federal-transit-administration-lga-aa, which exists in the registry with matching entity_name, entity_type, acronym, and source. No different target needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20100615_34th_transitway_cac_mtg_summary",
+            "block_id": "p002_c0016",
+            "source_quote": "The FTA has not identified the level of environmental review required for this project"
+          }
+        ]
+      },
+      {
+        "decision_id": "d8",
+        "local_observation_id": "entity_stv_20100615",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_stv-20100615, which exists in the registry as a record created from this same source. No different target needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20100615_34th_transitway_cac_mtg_summary",
+            "block_id": "p002_c0002",
+            "source_quote": "Bill Redl of STV, who has also worked on the ARC project"
+          }
+        ]
+      },
+      {
+        "decision_id": "d9",
+        "local_observation_id": "entity_nypd_20100615",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_nypd-20100615, which exists in the registry as a record created from this same source. No different target needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20100615_34th_transitway_cac_mtg_summary",
+            "block_id": "p002_c0020",
+            "source_quote": "Q: Will additional space be given for NYPD parking? ... DOT will review parallel streets to determine appropriate parking regulations, which may include NYPD authorized parking"
+          }
+        ]
+      },
+      {
+        "decision_id": "d10",
+        "local_observation_id": "entity_community_advisory_committee_34th_transitway",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_community-advisory-committee-34th-transitway, which exists in the registry with matching entity_name, entity_type, acronym, and source. No different target needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20100615_34th_transitway_cac_mtg_summary",
+            "block_id": "p001_c0002",
+            "source_quote": "Community Advisory Committee Meeting #1 Summary"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-46-257Z_2111393-5eae8d81_canonicalize_2026-06-10t22-56-13-021z-1976810-4f20fb57-ingest-20100615-34th-transitway-cac-mtg-summary-entity-identity"
+}

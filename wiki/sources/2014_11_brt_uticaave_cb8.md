@@ -1,0 +1,277 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_2014-11-brt-uticaave-cb8"
+record_kind: "source"
+display_name: "Utica Avenue - CB 8 Transportation Committee November 18, 2014"
+source_id: "2014_11_brt_uticaave_cb8"
+source_ids:
+  - "2014_11_brt_uticaave_cb8"
+local_observation_id: "source_2014_11_brt_uticaave_cb8"
+local_observation_ids:
+  - "source_2014_11_brt_uticaave_cb8"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-10T23:29:32.105Z"
+submission_ids:
+  - "sub_47004ca1fb1df295"
+payload:
+  authority_tier: "board_material"
+  content_type: "presentation"
+  date_text: "November 18, 2014"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2014-11-18"
+    precision: "day"
+    raw_text: "November 18, 2014"
+  description: "Presentation to Community Board 8 Transportation Committee about Utica Avenue Select Bus Service planning, including 2014 bus priority and safety improvements and proposed SBS upgrade for B46 Limited."
+  published_date_normalized: "2014-11-18"
+  published_date_precision: "day"
+  publisher: "New York City Transit"
+  title: "Utica Avenue"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "2014_11_brt_uticaave_cb8#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "2014_11_brt_uticaave_cb8"
+    source_path: "raw/sources/2014_11_brt_uticaave_cb8/blocks.jsonl"
+    text_sha256: "sha256:bc6e3d4bdcbb0b939f74538e0d15963ca17b4222f2a8589a9bb3b421d3bae7c9"
+    text_source: "raw_text"
+---
+
+# Download the presentation (pdf)
+
+source_id: 2014_11_brt_uticaave_cb8
+citation: cite block ids exactly as shown in square brackets
+document: 156 block(s)
+
+## Page 1
+
+### [p001_c0001] Utica Avenue
+[p001_c0002] CB 8 Transportation Committee | November 18, 2014
+[p001_c0003] New York City Transit
+[p001_c0004] +selectbusservice
+
+## Page 2
+
+### [p002_c0001] Select Bus Service in New York City
+[p002_c0002] Select Bus Service (SBS) is New York City's brand name for Bus Rapid Transit: an improved bus service that offers fast, frequent, and reliable service on high-ridership bus routes.
+### [p002_c0003] SBS has brought:
+- [p002_c0004] • 15-23% faster bus speeds • 10% increase in ridership • More reliable service • Customer satisfaction of 95% • Safer streets / reduction in crashes
+[p002_c0005] There are 7 Select Bus Service routes serving all 5 boroughs.
+> [p002_c0006] A map of New York City and surrounding areas, including Westchester, Nassau, and Staten Island counties. The map highlights seven Select Bus Service (SBS) routes in blue, each serving all five boroughs. The routes are labeled as follows: Bx12: Fordham Rd/ Pelham Pkwy (Northernmost route, serving Manhattan, Bronx, Queens, Brooklyn, and Staten Island) Bx41: Webster Av (Northern route, serving Manhattan, Bronx, Queens, Brooklyn, and Staten Island) M60: 125 St./Astoria Blvd. to LGA (Northeast route, serving Manhattan, Bronx, Queens, Brooklyn, and Staten Island) M34/M34A: 34 St (Northeast route, serving Manhattan, Bronx, Queens, Brooklyn, and Staten Island) M15: First Av/ Second Av (Northeast route, serving Manhattan, Bronx, Queens, Brooklyn, and Staten Island) B44: Nostrand Ave/ Rogers Ave (Southeast route, serving Manhattan, Bronx, Queens, Brooklyn, and Staten Island) S79: Hylan Blvd (Southernmost route, serving Manhattan, Bronx, Queens, Brooklyn, and Staten Island) The map also shows major landmarks such as The Bronx, The Hub, Williamsbridge, Inwood, Co-Op City, Williamsburg, Queens, Brooklyn, Bay Ridge, Staten Island Mall, Staten Island, Sheephead Bay, and South Ferry. A north arrow is located in the bottom right corner.
+[p002_c0007] _+selectbuservice_
+[p002_c0008] _2_
+
+## Page 3
+
+### [p003_c0001] Select Bus Service in New York City
+### [p003_c0002] Dedicated Bus Lanes
+> [p003_c0003] A photograph of a city street in New York City, likely in the Bronx, showing dedicated bus lanes. The road is multi-lane, with red-painted lanes on both sides and a central lane. The red lanes are marked with 'ONLY BUS' and white arrows pointing in the direction of travel. The central lane is also marked 'ONLY' with a white arrow. Several buses are visible on the road, including a blue and white bus in the center lane. The street is lined with buildings, including tall apartment buildings in the background and smaller commercial buildings on the sides. There are trees and streetlights along the sidewalks. The sky is clear and blue.
+[p003_c0004] _+selectbusservice_
+[p003_c0005] _3_
+
+## Page 4
+
+### [p004_c0001] Select Bus Service in New York City
+### [p004_c0002] Improved Fare Collection
+[p004_c0003] _+selectbusservice_
+[p004_c0004] _4_
+
+## Page 5
+
+### [p005_c0001] Select Bus Service in New York City
+### [p005_c0002] Transit Signal Priority
+> [p005_c0003] A photograph of a New York City Select Bus Service bus, route M15, at a city intersection. The bus is white with blue accents and features the text 'M15 VIA 1 AV' on its destination sign. The bus number '1277' and the MTA logo are visible on the front. The bus is stopped at a green traffic light. In the background, a yellow taxi is visible, and there are several large flower planters on the sidewalk. The scene is set in an urban environment with tall buildings and a clear sky.
+[p005_c0004] _+selectbusservice_
+[p005_c0005] _5_
+
+## Page 6
+
+### [p006_c0001] Select Bus Service in New York City
+### [p006_c0002] Real-time Passenger Information
+[p006_c0003]
+
+```text
+B44 Avenue U 0 B44 Avenue U 0 B44 Knapp Street 1 B44 Avenue U 2 FRI MAR 21 07:13 AM
+```
+> [p006_c0004] A map of the Flatbush area in New York City, showing a grid of streets. The map includes labels for streets such as Linden Boulevard, Under Boulevard, Church Avenue, and Flatbush Avenue. It also shows bus stops and routes, including B44, B44A, B44B, B44C, B44D, B44E, B44F, B44G, B44H, B44I, B44J, B44K, B44L, B44M, B44N, B44O, B44P, B44Q, B44R, B44S, B44T, B44U, B44V, B44W, B44X, B44Y, B44Z, B45, B46, B47, B48, B49, B50, B51, B52, B53, B54, B55, B56, B57, B58, B59, B60, B61, B62, B63, B64, B65, B66, B67, B68, B69, B70, B71, B72, B73, B74, B75, B76, B77, B78, B79, B80, B81, B82, B83, B84, B85, B86, B87, B88, B89, B90, B91, B92, B93, B94, B95, B96, B97, B98, B99, B100, B101, B102, B103, B104, B105, B106, B107, B108, B109, B110, B111, B112, B113, B114, B115, B116, B117, B118, B119, B120, B121, B122, B123, B124, B125, B126, B127, B128, B129, B130, B131, B132, B133, B134, B135, B136, B137, B138, B139, B140, B141, B142, B143, B144, B145, B146, B147, B148, B149, B150, B151, B152, B153, B154, B155, B156, B157, B158, B159, B160, B161, B162, B163, B164, B165, B166, B167, B168, B169, B170, B171, B172, B173, B174, B175, B176, B177, B178, B179, B180, B181, B182, B183, B184, B185, B186, B187, B188, B189, B190, B191, B192, B193, B194, B195, B196, B197, B198, B199, B200, B201, B202, B203, B204, B205, B206, B207, B208, B209, B210, B211, B212, B213, B214, B215, B216, B217, B218, B219, B220, B221, B222, B223, B224, B225, B226, B227, B228, B229, B230, B231, B232, B233, B234, B235, B236, B237, B238, B239, B240, B241, B242, B243, B244, B245, B246, B247, B248, B249, B250, B251, B252, B253, B254, B255, B256, B257, B258, B259, B260, B261, B262, B263, B264, B265, B266, B267, B268, B269, B270, B271, B272, B273, B274, B275, B276, B277, B278, B279, B280, B281, B282, B283, B284, B285, B286, B287, B288, B289, B290, B291, B292, B293, B294, B295, B296, B297, B298, B299, B300, B301, B302, B303, B304, B305, B306, B307, B308, B309, B310, B311, B312, B313, B314, B315, B316, B317, B318, B319, B320, B321, B322, B323, B324, B325, B326, B327, B328, B329, B330, B331, B332, B333, B334, B335, B336, B337, B338, B339, B340, B341, B342, B343, B344, B345, B346, B347, B348, B349, B350, B351, B352, B353, B354, B355, B356, B357, B358, B359, B360, B361, B362, B363, B364, B365, B366, B367, B368, B369, B370, B371, B372, B373, B374, B375, B376, B377, B378, B379, B380, B381, B382, B383, B384, B385, B386, B387, B388, B389, B390, B391, B392, B393, B394, B395, B396, B397, B398, B399, B400, B401, B402, B403, B404, B405, B406, B407, B408, B409, B410, B411, B412, B413, B414, B415, B416, B417, B418, B419, B420, B421, B422, B423, B424, B425, B426, B427, B428, B429, B430, B431, B432, B433, B434, B435, B436, B437, B438, B439, B440, B441, B442, B443, B444, B445, B446, B447, B448, B449, B450, B451, B452, B453, B454, B455, B456, B457, B458, B459, B460, B461, B462, B463, B464, B465, B466, B467, B468, B469, B470, B471, B472, B473, B474, B475, B476, B477, B478, B479, B480, B481, B482, B483, B484, B485, B486, B487, B488, B489, B490, B491, B492, B493, B494, B495, B496, B497, B498, B499, B500, B501, B502, B503, B504, B505, B506, B507, B508, B509, B510, B511, B512, B513, B514, B515, B516, B517, B518, B519, B520, B521, B522, B523, B524, B525, B526, B527, B528, B529, B530, B531, B532, B533, B534, B535, B536, B537, B538, B539, B540, B541, B542, B543, B544, B545, B546, B547, B548, B549, B550, B551, B552, B553, B554, B555, B556, B557, B558, B559, B560, B561, B562, B563, B564, B565, B566, B567, B568, B569, B570, B571, B572, B573, B574, B575, B576, B577, B578, B579, B580, B581, B582, B583, B584, B585, B586, B587, B588, B589, B590, B591, B592, B593, B594, B595, B596, B597, B598, B599, B600, B601, B602, B603, B604, B605, B606, B607, B608, B609, B610, B611, B612, B613, B614, B615, B616, B617, B618, B619, B620, B621, B622, B623, B624, B625, B626, B627, B628, B629, B630, B631, B632, B633, B634, B635, B636, B637, B638, B639, B640, B641, B642, B643, B644, B645, B646, B647, B648, B649, B650, B651, B652, B653, B654, B655, B656, B657, B658, B659, B660, B661, B662, B663, B664, B665, B666, B667, B668, B669, B670, B671, B672, B673, B674, B675, B676, B677, B678, B679, B680, B681, B682, B683, B684, B685, B686, B687, B688, B689, B690, B691, B692, B693, B694, B695, B696, B697, B698, B699, B700, B701, B702, B703, B704, B705, B706, B707, B708, B709, B710, B711, B712, B713, B714, B715, B716, B717, B718, B719, B720, B721, B722, B723, B724, B725, B726, B727, B728, B729, B730, B731, B732, B733, B734, B735, B736, B737, B738, B739, B740, B741, B742, B743, B744, B745, B746, B747, B748, B749, B750, B751, B752, B753, B754, B755, B756, B757, B758, B759, B760, B761, B762, B763, B764, B765, B766, B767, B768, B769, B770, B771, B772, B773, B774, B775, B776, B777, B778, B779, B780, B781, B782, B783, B784, B785, B786, B787, B788, B789, B790, B791, B792, B793, B794, B795, B796, B797, B798, B799, B800, B801, B802, B803, B804, B805, B806, B807, B808, B809, B810, B811, B812, B813, B814, B815, B816, B817, B818, B819, B820, B821, B822, B823, B824, B825, B826, B827, B828, B829, B830, B831, B832, B833, B834, B835, B836, B837, B838, B839, B840, B841, B842, B843, B844, B845, B846, B847, B848, B849, B850, B851, B852, B853, B854, B855, B856, B857, B858, B859, B860, B861, B862, B863, B864, B865, B866, B867, B868, B869, B870, B871, B872, B873, B874, B875, B876, B877, B878, B879, B880, B881, B882, B883, B884, B885, B886, B887, B888, B889, B890, B891, B892, B893, B894, B895, B896, B897, B898, B899, B900, B901, B902, B903, B904, B905, B906, B907, B908, B909, B910, B911, B912, B913, B914, B915, B916, B917, B918, B919, B920, B921, B922, B923, B924, B925, B926, B927, B928, B929, B930, B931, B932, B933, B934, B935, B936, B937, B938, B939, B940, B941, B942, B943, B944, B945, B946, B947, B948, B949, B950, B951, B952, B953, B954, B955, B956, B957, B958, B959, B960, B961, B962, B963, B964, B965, B966, B967, B968, B969, B970, B971, B972, B973, B974, B975, B976, B977, B978, B979, B980, B981, B982, B983, B984, B985, B986, B987, B988, B989, B990, B991, B992, B993, B994, B995, B996, B997, B998, B999, B1000.
+[p006_c0005] _+selectbusservice_
+[p006_c0006] _6_
+
+## Page 7
+
+### [p007_c0001] Select Bus Service in New York City
+### [p007_c0002] Improved Station Amenities
+> [p007_c0003] A photograph of a bus stop in New York City featuring Select Bus Service ticket machines. The machines are blue and silver, with instructions in English and Spanish. The stop is landscaped with green plants and small trees. In the background, there are buildings, a bus, and people walking on the sidewalk.
+[p007_c0004] _+selectbusservice_
+[p007_c0005] _7_
+
+## Page 8
+
+### [p008_c0001] Select Bus Service in New York City
+### [p008_c0002] Pedestrian Safety Improvements
+> [p008_c0003] A photograph of a city street intersection in New York City. In the foreground, a wide sidewalk with a fire hydrant and a bollard is visible. A crosswalk with white stripes spans the street. Several pedestrians are crossing the street, including a man with a brown bag, a woman with a black bag, and a man with a backpack. In the background, there are cars, including a red sedan and a silver SUV, and a large building with arched windows. A traffic light is visible on the right side of the frame. The sky is clear and blue.
+[p008_c0004] _+selectbusservice_
+[p008_c0005] _8_
+
+## Page 9
+
+### [p009_c0001] Project Background
+[p009_c0002] The Utica Avenue B46 corridor was identified as a potential candidate for Select Bus Service in the 2009 Bus Rapid Transit: Phase II Study.
+- [p009_c0003] • Ranked by community as one of two corridors most in need of bus improvements • Characterized by slow and crowded trips • Second-busiest bus route in NYC, carrying nearly 50,000 passengers per day • Crucial connection to 3 4 A C trains • Connection to 30 bus routes including B35, B6, B12 • B35-to-B46 transfer is the most frequent bus-to-bus transfer in NYC
+### [p009_c0004] Residents Mode to Work
+> [p009_c0005] Mode Percentage Transit 61% Driving 24% Walk / Bicycle 10% Other 5%
+[p009_c0006] Source: 2008-2012 ACS 5-Year Estimates 1/4 mile from Utica corridor
+[p009_c0007] _+selectbusservice_
+[p009_c0008] _9_
+
+## Page 10
+
+### [p010_c0001] Project Background Safety Concerns
+[p010_c0002] Corridor has among the highest rates of injury from motor vehicle crashes in Brooklyn.
+- [p010_c0003] • 16 fatalities and 254 severe injuries between 2008 and 2012 • 60% of vehicles travel above the speed limit (30 mph at time of observation)
+### [p010_c0004] High Crash Intersections (2008-2012)
+[p010_c0005]
+
+```text
+Intersection Fatalities Severe Injuries Avenue U 1 10 Flushing Av 0 10 Eastern Pkwy 3 6 Avenue H 0 8 Winthrop St 2 6 Myrtle Av 1 6
+```
+> [p010_c0006] A map of Brooklyn showing a corridor of high crash intersections. The map includes street names such as BOE, Flushing Av, Myrtle Av, BROADWAY, WASHINGTON BLVD, ATLANTIC AV, FULTON ST, EASTERN PKWY, EASTERN PKWY EX, KINGS HWY, Winthrop St, BLVD, Holy Cross Cemetery, UTTICA AV, Ave H, FLATLANDS AV, and FLATBUSH AV. Red circles of varying sizes are placed at intersections along the corridor, representing the number of fatalities and severe injuries. A legend in the bottom right corner titled 'Persons Killed or Severely Injured' shows five sizes of red circles corresponding to the following ranges: 1 - 2, 3 - 4, 5 - 6, 7 - 8, and 9 - 11. Labels with arrows point to specific intersections: Flushing Av, Myrtle Av, Eastern Pkwy, Winthrop St, Ave H, and Ave U.
+[p010_c0007] _+selectbusservice_
+[p010_c0008] _10_
+
+## Page 11
+
+### [p011_c0001] 2014 Bus Priority and Safety Improvements
+### [p011_c0002] Transit
+- [p011_c0003] • Offset and curbside bus lanes on 1.3 miles of Utica Av corridor from St. John's Pl to Church Av
+### [p011_c0004] Traffic and Safety
+- [p011_c0005] • Left-turn restrictions to improve pedestrian safety and left-turn bay additions to maintain traffic flow
+### [p011_c0006] Parking
+- [p011_c0007] • +19 parking spaces near Eastern Parkway (within 3 blocks) • -22 parking spaces along southern part of corridor (about 1 per block) • New loading zones to accommodate businesses
+> [p011_c0008] A map of the Utica Avenue corridor in Utica, New York, showing proposed and existing bus lane and parking improvements. The map covers the area from St. John's Pl at the top to Church Av at the bottom. Key streets shown include Utica Av, Sterling Pl, St. John's Pl, Lincoln Pl, Eastern Pkwy, Union St, Presik, Carroll St, Crown St, Montgomery St, Lefferts Av, E New York Av, Maple St, Midwood St, Rutland Rd, Winthrop St, Clarkson Av, Lenox Rd, Linden Blvd, and Church Av. The map highlights several improvements: a 'New Bus Lane' (solid red line) running along the right side of the corridor; an 'Existing Bus Lane' (dashed red line) running along the left side; 'New Parking and Truck Loading' (thick grey line) near Eastern Parkway; and 'New Curbside Bus Lane' (solid red line) and 'New Offset Bus Lane' (solid red line) further south. Several 'No Left Turn' signs are placed at intersections along the corridor. A legend at the bottom right identifies the symbols: a thick grey line for 'New Parking and Truck Loading', a dashed red line for 'Existing Curbside Bus Lane', a solid red line for 'New Curbside Bus Lane', and a solid red line for 'New Offset Bus Lane'.
+[p011_c0009] _+selectbuservice_
+[p011_c0010] _11_
+
+## Page 12
+
+### [p012_c0001] 2014 Bus Priority and Safety Improvements
+> [p012_c0002] The image shows a street intersection with several bus priority lanes. A white bus is in a left turn bay. A car is in a curbside bus lane. A car is in an offset bus lane. Pedestrians and a pickup truck are also visible. Blue arrows point from text labels to the specific lanes. Left Turn Bay Curbside Bus Lane Offset Bus Lane
+[p012_c0003] _+selectbusservice_
+[p012_c0004] _12_
+
+## Page 13
+
+### [p013_c0001] 2014 Bus Priority and Safety Improvements
+### [p013_c0002] Sections where bus lane was installed
+- [p013_c0003] • B46 Limited and local travel times decreased 8% to 15%* • Vehicle travel times decreased 20% to 25% in peak direction*
+[p013_c0004] *AM and PM peak
+[p013_c0005] _+selectbusservice_
+[p013_c0006] _13_
+
+## Page 14
+
+### [p014_c0001] Utica Avenue Select Bus Service
+[p014_c0002] Build on existing Bus Priority and Safety Project to upgrade B46 Limited to B46 SBS. Utica Avenue SBS might include:
+- [p014_c0003] • Off-board fare collection • Additional bus lanes • Transit signal priority • Service planning changes to improve reliability • Capital improvements at SBS stations ▪ Real-time passenger information ▪ Bus bulbs (sidewalk extensions at bus stops) ▪ New shelters, plantings, benches, etc.
+> [p014_c0004] A map of the Utica Avenue Select Bus Service (SBS) project area in Brooklyn. The map shows the intersection of Broadway and Utica Avenue, with the SBS route highlighted in a thick blue line. The route starts at the Williamsburg Bridge Plaza, passes through the Malcolm X Blvd station, and continues south along Utica Avenue. A grey shaded area on the map indicates the '2014 Project' area, which is a bus lane on Utica Avenue between Eastern Parkway and Linden Boulevard. The map also shows various bus stops and stations, including the M, J, Z, A, and C lines. Other landmarks shown include Bedford Stuyvesant, Crown Heights, Holy Cross Cemetery, East Flatbush, Flatlands, Marine Park, and Kings Plaza. The map also shows the surrounding streets, including Broadway, Malcolm X Blvd, Utica Ave, Eastern Pkwy, Linden Blvd, 24th St, 25th St, 26th St, 27th St, 28th St, 29th St, 30th St, 31st St, 32nd St, 33rd St, 34th St, 35th St, 36th St, 37th St, 38th St, 39th St, 40th St, 41st St, 42nd St, 43rd St, 44th St, 45th St, 46th St, 47th St, 48th St, 49th St, 50th St, 51st St, 52nd St, 53rd St, 54th St, 55th St, 56th St, 57th St, 58th St, 59th St, 60th St, 61st St, 62nd St, 63rd St, 64th St, 65th St, 66th St, 67th St, 68th St, 69th St, 70th St, 71st St, 72nd St, 73rd St, 74th St, 75th St, 76th St, 77th St, 78th St, 79th St, 80th St, 81st St, 82nd St, 83rd St, 84th St, 85th St, 86th St, 87th St, 88th St, 89th St, 90th St, 91st St, 92nd St, 93rd St, 94th St, 95th St, 96th St, 97th St, 98th St, 99th St, 100th St, 101st St, 102nd St, 103rd St, 104th St, 105th St, 106th St, 107th St, 108th St, 109th St, 110th St, 111th St, 112th St, 113th St, 114th St, 115th St, 116th St, 117th St, 118th St, 119th St, 120th St, 121st St, 122nd St, 123rd St, 124th St, 125th St, 126th St, 127th St, 128th St, 129th St, 130th St, 131st St, 132nd St, 133rd St, 134th St, 135th St, 136th St, 137th St, 138th St, 139th St, 140th St, 141st St, 142nd St, 143rd St, 144th St, 145th St, 146th St, 147th St, 148th St, 149th St, 150th St, 151st St, 152nd St, 153rd St, 154th St, 155th St, 156th St, 157th St, 158th St, 159th St, 160th St, 161st St, 162nd St, 163rd St, 164th St, 165th St, 166th St, 167th St, 168th St, 169th St, 170th St, 171st St, 172nd St, 173rd St, 174th St, 175th St, 176th St, 177th St, 178th St, 179th St, 180th St, 181st St, 182nd St, 183rd St, 184th St, 185th St, 186th St, 187th St, 188th St, 189th St, 190th St, 191st St, 192nd St, 193rd St, 194th St, 195th St, 196th St, 197th St, 198th St, 199th St, 200th St, 201st St, 202nd St, 203rd St, 204th St, 205th St, 206th St, 207th St, 208th St, 209th St, 210th St, 211st St, 212nd St, 213rd St, 214th St, 215th St, 216th St, 217th St, 218th St, 219th St, 220th St, 221st St, 222nd St, 223rd St, 224th St, 225th St, 226th St, 227th St, 228th St, 229th St, 230th St, 231st St, 232nd St, 233rd St, 234th St, 235th St, 236th St, 237th St, 238th St, 239th St, 240th St, 241st St, 242nd St, 243rd St, 244th St, 245th St, 246th St, 247th St, 248th St, 249th St, 250th St, 251st St, 252nd St, 253rd St, 254th St, 255th St, 256th St, 257th St, 258th St, 259th St, 260th St, 261st St, 262nd St, 263rd St, 264th St, 265th St, 266th St, 267th St, 268th St, 269th St, 270th St, 271st St, 272nd St, 273rd St, 274th St, 275th St, 276th St, 277th St, 278th St, 279th St, 280th St, 281st St, 282nd St, 283rd St, 284th St, 285th St, 286th St, 287th St, 288th St, 289th St, 290th St, 291st St, 292nd St, 293rd St, 294th St, 295th St, 296th St, 297th St, 298th St, 299th St, 300th St, 301st St, 302nd St, 303rd St, 304th St, 305th St, 306th St, 307th St, 308th St, 309th St, 310th St, 311st St, 312nd St, 313rd St, 314th St, 315th St, 316th St, 317th St, 318th St, 319th St, 320th St, 321st St, 322nd St, 323rd St, 324th St, 325th St, 326th St, 327th St, 328th St, 329th St, 330th St, 331st St, 332nd St, 333rd St, 334th St, 335th St, 336th St, 337th St, 338th St, 339th St, 340th St, 341st St, 342nd St, 343rd St, 344th St, 345th St, 346th St, 347th St, 348th St, 349th St, 350th St, 351st St, 352nd St, 353rd St, 354th St, 355th St, 356th St, 357th St, 358th St, 359th St, 360th St, 361st St, 362nd St, 363rd St, 364th St, 365th St, 366th St, 367th St, 368th St, 369th St, 370th St, 371st St, 372nd St, 373rd St, 374th St, 375th St, 376th St, 377th St, 378th St, 379th St, 380th St, 381st St, 382nd St, 383rd St, 384th St, 385th St, 386th St, 387th St, 388th St, 389th St, 390th St, 391st St, 392nd St, 393rd St, 394th St, 395th St, 396th St, 397th St, 398th St, 399th St, 400th St, 401st St, 402nd St, 403rd St, 404th St, 405th St, 406th St, 407th St, 408th St, 409th St, 410th St, 411st St, 412nd St, 413rd St, 414th St, 415th St, 416th St, 417th St, 418th St, 419th St, 420th St, 421st St, 422nd St, 423rd St, 424th St, 425th St, 426th St, 427th St, 428th St, 429th St, 430th St, 431st St, 432nd St, 433rd St, 434th St, 435th St, 436th St, 437th St, 438th St, 439th St, 440th St, 441st St, 442nd St, 443rd St, 444th St, 445th St, 446th St, 447th St, 448th St, 449th St, 450th St, 451st St, 452nd St, 453rd St, 454th St, 455th St, 456th St, 457th St, 458th St, 459th St, 460th St, 461st St, 462nd St, 463rd St, 464th St, 465th St, 466th St, 467th St, 468th St, 469th St, 470th St, 471st St, 472nd St, 473rd St, 474th St, 475th St, 476th St, 477th St, 478th St, 479th St, 480th St, 481st St, 482nd St, 483rd St, 484th St, 485th St, 486th St, 487th St, 488th St, 489th St, 490th St, 491st St, 492nd St, 493rd St, 494th St, 495th St, 496th St, 497th St, 498th St, 499th St, 500th St, 501st St, 502nd St, 503rd St, 504th St, 505th St, 506th St, 507th St, 508th St, 509th St, 510th St, 511st St, 512nd St, 513rd St, 514th St, 515th St, 516th St, 517th St, 518th St, 519th St, 520th St, 521st St, 522nd St, 523rd St, 524th St, 525th St, 526th St, 527th St, 528th St, 529th St, 530th St, 531st St, 532nd St, 533rd St, 534th St, 535th St, 536th St, 537th St, 538th St, 539th St, 540th St, 541st St, 542nd St, 543rd St, 544th St, 545th St, 546th St, 547th St, 548th St, 549th St, 550th St, 551st St, 552nd St, 553rd St, 554th St, 555th St, 556th St, 557th St, 558th St, 559th St, 560th St, 561st St, 562nd St, 563rd St, 564th St, 565th St, 566th St, 567th St, 568th St, 569th St, 570th St, 571st St, 572nd St, 573rd St, 574th St, 575th St, 576th St, 577th St, 578th St, 579th St, 580th St, 581st St, 582nd St, 583rd St, 584th St, 585th St, 586th St, 587th St, 588th St, 589th St, 590th St, 591st St, 592nd St, 593rd St, 594th St, 595th St, 596th St, 597th St, 598th St, 599th St, 600th St, 601st St, 602nd St, 603rd St, 604th St, 605th St, 606th St, 607th St, 608th St, 609th St, 610th St, 611st St, 612nd St, 613rd St, 614th St, 615th St, 616th St, 617th St, 618th St, 619th St, 620th St, 621st St, 622nd St, 623rd St, 624th St, 625th St, 626th St, 627th St, 628th St, 629th St, 630th St, 631st St, 632nd St, 633rd St, 634th St, 635th St, 636th St, 637th St, 638th St, 639th St, 640th St, 641st St, 642nd St, 643rd St, 644th St, 645th St, 646th St, 647th St, 648th St, 649th St, 650th St, 651st St, 652nd St, 653rd St, 654th St, 655th St, 656th St, 657th St, 658th St, 659th St, 660th St, 661st St, 662nd St, 663rd St, 664th St, 665th St, 666th St, 667th St, 668th St, 669th St, 670th St, 671st St, 672nd St, 673rd St, 674th St, 675th St, 676th St, 677th St, 678th St, 679th St, 680th St, 681st St, 682nd St, 683rd St, 684th St, 685th St, 686th St, 687th St, 688th St, 689th St, 690th St, 691st St, 692nd St, 693rd St, 694th St, 695th St, 696th St, 697th St, 698th St, 699th St, 700th St, 701st St, 702nd St, 703rd St, 704th St, 705th St, 706th St, 707th St, 708th St, 709th St, 710th St, 711st St, 712nd St, 713rd St, 714th St, 715th St, 716th St, 717th St, 718th St, 719th St, 720th St, 721st St, 722nd St, 723rd St, 724th St, 725th St, 726th St, 727th St, 728th St, 729th St, 730th St, 731st St, 732nd St, 733rd St, 734th St, 735th St, 736th St, 737th St, 738th St, 739th St, 740th St, 741st St, 742nd St, 743rd St, 744th St, 745th St, 746th St, 747th St, 748th St, 749th St, 750th St, 751st St, 752nd St, 753rd St, 754th St, 755th St, 756th St, 757th St, 758th St, 759th St, 760th St, 761st St, 762nd St, 763rd St, 764th St, 765th St, 766th St, 767th St, 768th St, 769th St, 770th St, 771st St, 772nd St, 773rd St, 774th St, 775th St, 776th St, 777th St, 778th St, 779th St, 780th St, 781st St, 782nd St, 783rd St, 784th St, 785th St, 786th St, 787th St, 788th St, 789th St, 790th St, 791st St, 792nd St, 793rd St, 794th St, 795th St, 796th St, 797th St, 798th St, 799th St, 800th St, 801st St, 802nd St, 803rd St, 804th St, 805th St, 806th St, 807th St, 808th St, 809th St, 810th St, 811st St, 812nd St, 813rd St, 814th St, 815th St, 816th St, 817th St, 818th St, 819th St, 820th St, 821st St, 822nd St, 823rd St, 824th St, 825th St, 826th St, 827th St, 828th St, 829th St, 830th St, 831st St, 832nd St, 833rd St, 834th St, 835th St, 836th St, 837th St, 838th St, 839th St, 840th St, 841st St, 842nd St, 843rd St, 844th St, 845th St, 846th St, 847th St, 848th St, 849th St, 850th St, 851st St, 852nd St, 853rd St, 854th St, 855th St, 856th St, 857th St, 858th St, 859th St, 860th St, 861st St, 862nd St, 863rd St, 864th St, 865th St, 866th St, 867th St, 868th St, 869th St, 870th St, 871st St, 872nd St, 873rd St, 874th St, 875th St, 876th St, 877th St, 878th St, 879th St, 880th St, 881st St, 882nd St, 883rd St, 884th St, 885th St, 886th St, 887th St, 888th St, 889th St, 890th St, 891st St, 892nd St, 893rd St, 894th St, 895th St, 896th St, 897th St, 898th St, 899th St, 900th St, 901st St, 902nd St, 903rd St, 904th St, 905th St, 906th St, 907th St, 908th St, 909th St, 910th St, 911st St, 912nd St, 913rd St, 914th St, 915th St, 916th St, 917th St, 918th St, 919th St, 920th St, 921st St, 922nd St, 923rd St, 924th St, 925th St, 926th St, 927th St, 928th St, 929th St, 930th St, 931st St, 932nd St, 933rd St, 934th St, 935th St, 936th St, 937th St, 938th St, 939th St, 940th St, 941st St, 942nd St, 943rd St, 944th St, 945th St, 946th St, 947th St, 948th St, 949th St, 950th St, 951st St, 952nd St, 953rd St, 954th St, 955th St, 956th St, 957th St, 958th St, 959th St, 960th St, 961st St, 962nd St, 963rd St, 964th St, 965th St, 966th St, 967th St, 968th St, 969th St, 970th St, 971st St, 972nd St, 973rd St, 974th St, 975th St, 976th St, 977th St, 978th St, 979th St, 980th St, 981st St, 982nd St, 983rd St, 984th St, 985th St, 986th St, 987th St, 988th St, 989th St, 990th St, 991st St, 992nd St, 993rd St, 994th St, 995th St, 996th St, 997th St, 998th St, 999th St, 1000th St.
+[p014_c0005] _+selectbusservice_
+[p014_c0006] _14_
+
+## Page 15
+
+### [p015_c0001] Community Outreach
+> [p015_c0002] A group of approximately ten people are seated around a large, round table in a formal room with large windows in the background. They are looking at a large map or document spread out on the table. A man in a suit stands at the head of the table, appearing to lead the discussion.
+[p015_c0003] _Community Advisory Committee_
+> [p015_c0004] A group of about six people are gathered around a table in a room with white tiled walls. They are looking at a large sheet of paper with various colorful sticky notes and a map. One person is pointing at the paper, and others are listening or contributing to the discussion.
+[p015_c0005] _Public open houses and workshops_
+> [p015_c0006] A group of people are seated at several tables in a room, facing a presentation screen at the front. A speaker is standing at the front, presenting to the group. The room has a modern look with recessed lighting and a large projection screen.
+[p015_c0007] _Community Board Presentations_
+> [p015_c0008] A group of people are seated at tables in a room with a red and white tiled wall. A speaker is standing at the front, presenting to the group. A large projection screen is visible on the right side of the room, displaying a presentation slide.
+[p015_c0009] _Individual Stakeholder Meetings_
+[p015_c0010] _+selectbuservice_
+[p015_c0011] _15_
+
+## Page 16
+
+### [p016_c0001] Public Workshop #1
+### [p016_c0002] What We Heard
+### [p016_c0003] Transit Concerns
+- [p016_c0004] • Crowding (especially during rush hour) • Bus bunching / reliability • Amount of service to Williamsburg • Lack of real-time information
+### [p016_c0005] Traffic Concerns
+- [p016_c0006] • Double parking • Congestion / slow bus trips • Bus lane being blocked / lack of enforcement
+### [p016_c0007] Safety Concerns
+- [p016_c0008] • Pedestrian safety at complex intersections • Dangerous driver behavior / speeding • Lighting at night
+> [p016_c0009] A photograph showing a group of approximately six people gathered around a table during a public workshop. They are focused on a large, detailed map or diagram spread out on the table. One person in a red New York Yankees cap is pointing at a section of the map. Another person in a black jacket is also pointing. A woman in a white hoodie is seated in the foreground, looking at the map. In the background, there are whiteboards with various notes and sticky notes. The setting appears to be a community room or a workshop space.
+[p016_c0010] _+selectbuservice_
+[p016_c0011] _16_
+
+## Page 17
+
+### [p017_c0001] Project Timeline
+[p017_c0002] Step 1
+[p017_c0003] Step 2
+[p017_c0004] Step 3
+[p017_c0005] Step 4
+[p017_c0006] Fall 2014
+### [p017_c0007] Step 1: Data collection and analysis
+- [p017_c0008] • Monitor and evaluate 2014 project ▪ Bus speeds ▪ Vehicle travel time • Analyze full B46 corridor ▪ Traffic counts ▪ Parking survey ▪ Safety data ▪ Transit operations • Ridership / transfer data • Sources of delay • Local and Limited service patterns
+[p017_c0009] _+selectbusservice_
+[p017_c0010] _17_
+
+## Page 18
+
+### [p018_c0001] Project Timeline
+> [p018_c0002] Step 1 → Step 2 → Step 3 → Step 4 Fall/Winter 2014
+### [p018_c0003] Step 2: Conceptual design
+- [p018_c0004] • Identify feasible street design changes south of Church Avenue and north of St. John's Place and determine impacts on: ▪ Transit travel time and reliability ▪ Traffic flow ▪ Safety ▪ Parking / delivery access • Develop conceptual service plans for B46 SBS and B46 Local • Solicit input from community members
+[p018_c0005] _+selectbusservice_
+[p018_c0006] _18_
+
+## Page 19
+
+### [p019_c0001] Project Timeline
+[p019_c0002] Step 1
+[p019_c0003] Step 2
+[p019_c0004] Step 3
+[p019_c0005] Step 4
+[p019_c0006] 2015
+### [p019_c0007] Step 3: Develop corridor plan
+- [p019_c0008] • Develop detailed street design • Prepare traffic analysis • Identify SBS station locations • Develop capital designs for station improvements • Refine details with CAC, community boards, and general public
+[p019_c0009] _+selectbuservice_
+[p019_c0010] _19_
+
+## Page 20
+
+### [p020_c0001] Project Timeline
+[p020_c0002] Step 1
+[p020_c0003] Step 2
+[p020_c0004] Step 3
+[p020_c0005] Step 4
+[p020_c0006] TBD
+### [p020_c0007] Step 4: Final design plan
+- [p020_c0008] • Finalize corridor design • Develop implementation plan • Potential 2015 SBS service launch • Prepare construction phasing plan for capital elements
+> [p020_c0009] An aerial photograph of a city street. The street is paved with white markings, including 'ONLY' and 'BUS' painted on the pavement. A yellow traffic light is visible in the foreground. On the left side of the street, there are buildings and trees. On the right side, there are more buildings, including one with a purple awning that says 'MONTGOMERY ACADEMY'. A white bus is visible on the street, and several cars are parked or driving. The street appears to be a multi-lane road with a dedicated bus lane.
+[p020_c0010] _+selectbusservice_
+[p020_c0011] _20_
+
+## Page 21
+
+### [p021_c0001] Next Steps
+### [p021_c0002] Fall 2014
+- [p021_c0003] • Traffic and parking data collection and analysis • Transit operations data collection and analysis
+### [p021_c0004] Winter 2015
+- [p021_c0005] • CAC Meeting #2 • Public Meeting #2
+[p021_c0006] _+selectbusservice_
+[p021_c0007] _21_
+
+## Page 22
+
+### [p022_c0001] Questions?
+> [p022_c0002] A wide-angle photograph of a busy urban street in New York City. The street is paved with a red-colored bus lane marked "ONLY BUS" in white letters. The lane is filled with cars, vans, and a bus. To the right of the bus lane, there is a parking area with many cars. Buildings line both sides of the street, including a Hess station and an AutoZone. A blue sky with scattered clouds is visible in the background.
+> [p022_c0003] The logo for the Metropolitan Transportation Authority (MTA), featuring the letters "MTA" in a stylized font inside a circle.
+[p022_c0004] New York City Transit
+[p022_c0005] +selectbusservice
+> [p022_c0006] The logo for the New York City Department of Transportation (NYC DOT), featuring the words "NEW YORK CITY" above "DOT" and a stylized graphic of a road or bridge.

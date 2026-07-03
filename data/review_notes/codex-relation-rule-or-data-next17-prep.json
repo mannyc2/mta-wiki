@@ -1,0 +1,288 @@
+{
+  "note_id": "codex-relation-rule-or-data-next17-prep",
+  "batch_id": "next17",
+  "created_at": "2026-06-22T23:59:47Z",
+  "author": "codex",
+  "scope": "Codex-only relation endpoint-shape rule-or-data triage; read-only deterministic inspection plus this single prep artifact; no generated-output, provider-backed, durable data, or code mutations",
+  "current_checkpoint_context": {
+    "reported_unexpected_relation_endpoint_shape_count": 31,
+    "observed_endpoint_shape_issue_count": 31,
+    "recent_batches_not_repeated": [
+      "owned_by corridor->entity validator rule patch",
+      "operated_by corridor->entity validator rule patch",
+      "relation cleanup batches037-040 for timeline/published_by/implemented_by buckets"
+    ],
+    "inspection_method": "Read-only SQLite queries against data/canonical.db plus source block JSONL inspection; endpoint table transcribed from packages/pipeline/src/records/relations.ts after confirming current tests accept owned_by and operated_by corridor->entity."
+  },
+  "remaining_bucket_counts": {
+    "total": 31,
+    "buckets": [
+      { "bucket": "has_claim claim->claim", "count": 1 },
+      { "bucket": "has_claim treatment_component->claim", "count": 1 },
+      { "bucket": "has_timeline_event entity->metric_claim", "count": 1 },
+      { "bucket": "has_timeline_event event->entity", "count": 1 },
+      { "bucket": "has_timeline_event event->source", "count": 1 },
+      { "bucket": "has_timeline_event project->entity", "count": 1 },
+      { "bucket": "has_timeline_event source->entity", "count": 1 },
+      { "bucket": "has_treatment claim->treatment_component", "count": 1 },
+      { "bucket": "has_treatment entity->metric_claim", "count": 1 },
+      { "bucket": "has_treatment event->treatment_component", "count": 1 },
+      { "bucket": "has_treatment route->treatment_component", "count": 1 },
+      { "bucket": "implemented_by corridor->entity", "count": 1 },
+      { "bucket": "implemented_by entity->entity", "count": 1 },
+      { "bucket": "implemented_by event->entity", "count": 1 },
+      { "bucket": "implemented_by source->entity", "count": 1 },
+      { "bucket": "implemented_by treatment_component->entity", "count": 1 },
+      { "bucket": "operated_by entity->entity", "count": 1 },
+      { "bucket": "operated_by entity->event", "count": 1 },
+      { "bucket": "operated_by treatment_component->entity", "count": 1 },
+      { "bucket": "operates_on_corridor entity->corridor", "count": 1 },
+      { "bucket": "operates_on_corridor project->entity", "count": 1 },
+      { "bucket": "owned_by event->entity", "count": 1 },
+      { "bucket": "owned_by source->entity", "count": 1 },
+      { "bucket": "part_of_program project->claim", "count": 1 },
+      { "bucket": "published_by claim->entity", "count": 1 },
+      { "bucket": "published_by event->entity", "count": 1 },
+      { "bucket": "published_by metric_claim->source", "count": 1 },
+      { "bucket": "related_route project->project", "count": 1 },
+      { "bucket": "related_route project->route", "count": 1 },
+      { "bucket": "serves_route project->entity", "count": 1 },
+      { "bucket": "serves_route project->project", "count": 1 }
+    ],
+    "triage_note": "All current exact endpoint-shape buckets are singletons, so selection favors a clean reusable ontology rule with narrow blast radius."
+  },
+  "recommendation": "validator_rule_patch",
+  "recommended_bucket": "has_claim treatment_component->claim",
+  "expected_delta": {
+    "baseline_unexpected_relation_endpoint_shape": 31,
+    "selected_rows_cleared": 1,
+    "expected_remaining_after_patch": 30
+  },
+  "recommended_patch": {
+    "relation_kind": "has_claim",
+    "endpoint_kind_combination": "treatment_component -> claim",
+    "code_direction": "Add treatment_component to RELATION_ENDPOINT_SHAPES.has_claim.subject and add a focused relationEndpointShapeIssue test that accepts has_claim treatment_component->claim while keeping claim->claim invalid.",
+    "why_semantically_valid": "Treatment components can carry source-stated attribute or condition claims, such as operating hours, eligibility, restrictions, or stated benefits. The selected row links a bus-lane treatment component to a claim that states its operating hours; this preserves a useful treatment-specific assertion without inventing a project, route, or corridor endpoint.",
+    "why_not_data_cleanup": "The source already has accepted project->treatment and corridor->treatment context for the Kings Highway bus lanes. Replacing the selected row with project->claim or corridor->claim would make the hours claim less specific, while retire-only would discard a source-backed treatment attribute. The current relation kind and direction are the most precise shape if treatment_component subjects are admitted for has_claim.",
+    "why_not_broader_rule_change": "This does not justify allowing treatment_component subjects for has_treatment, implemented_by, operated_by, owned_by, published_by, or timeline relations. It also does not justify claim subjects for has_claim."
+  },
+  "representative_records": [
+    {
+      "record_id": "relation_bus-lane-treatment-has-claim-hours",
+      "source_id": "brt_kings_highway_aug2018",
+      "submission_ids": [
+        "sub_0b80a0978d1d4596"
+      ],
+      "malformed_shape": "has_claim treatment_component->claim",
+      "relation_kind": "has_claim",
+      "subject": {
+        "record_id": "treatment_bus-lanes-kings-highway-8-block-faces",
+        "record_kind": "treatment_component",
+        "display_name": "Bus Lanes along Kings Highway",
+        "local_observation_id": "treatment_bus_lanes_kings_highway_8_block_faces"
+      },
+      "object": {
+        "record_id": "claim_bus-lane-hours-kings-highway",
+        "record_kind": "claim",
+        "display_name": "Bus Lane Hours on Kings Highway",
+        "local_observation_id": "claim_bus_lane_hours_kings_highway"
+      },
+      "payload_summary": {
+        "description": "The proposed bus lanes have operating hours of 7 AM - 7 PM all days",
+        "as_of_date": "2018-08",
+        "relation_family": "claim_context"
+      },
+      "evidence": [
+        {
+          "source_id": "brt_kings_highway_aug2018",
+          "evidence_id": "brt_kings_highway_aug2018#p001_c0004",
+          "source_path": "raw/sources/brt_kings_highway_aug2018/blocks.jsonl",
+          "page_number": 1,
+          "block_id": "p001_c0004",
+          "text_sha256": "sha256:78b64eca013101b18f368c50932b73d4132b658f573e44815b23864234e7693d",
+          "quote": "Red line = Bus Lane (7 AM - 7 PM all days)"
+        },
+        {
+          "source_id": "brt_kings_highway_aug2018",
+          "evidence_id": "brt_kings_highway_aug2018#p001_c0007",
+          "source_path": "raw/sources/brt_kings_highway_aug2018/blocks.jsonl",
+          "page_number": 1,
+          "block_id": "p001_c0007",
+          "text_sha256": "sha256:34f0d31dcb887f94e92ce9a267afcfd030208c0bab5c02910dbc2e9f161874ac",
+          "quote": "Install bus lanes along 8 block faces"
+        },
+        {
+          "source_id": "brt_kings_highway_aug2018",
+          "evidence_id": "brt_kings_highway_aug2018#p002_c0004",
+          "source_path": "raw/sources/brt_kings_highway_aug2018/blocks.jsonl",
+          "page_number": 2,
+          "block_id": "p002_c0004",
+          "text_sha256": "sha256:e6d9ef93f1e3e51355d4683e32068bb32947f3c54c40508a5da35b8b2b2ac4a3",
+          "quote": "Bus Lane (7 AM - 7 PM all days)"
+        }
+      ],
+      "related_valid_context": [
+        {
+          "record_id": "relation_project-has-treatment-bus-lanes_32",
+          "shape": "has_treatment project->treatment_component",
+          "triage_read": "Already valid project context for the same bus-lane treatment; it does not replace treatment-specific operating-hours claim context."
+        },
+        {
+          "record_id": "relation_corridor-has-treatment-bus-lanes",
+          "shape": "has_treatment corridor->treatment_component",
+          "triage_read": "Already valid corridor context for the same treatment; it should remain separate from the proposed treatment->claim rule."
+        }
+      ],
+      "triage_read": "Clean source-backed treatment attribute claim; best handled by a scoped validator rule patch."
+    },
+    {
+      "record_id": "relation_23-stations-has-claim",
+      "source_id": "meeting_doc_121711",
+      "submission_ids": [
+        "sub_5d04512e0ab539f9"
+      ],
+      "malformed_shape": "has_claim claim->claim",
+      "relation_kind": "has_claim",
+      "subject": {
+        "record_id": "claim_23-stations-completed-since-2020",
+        "record_kind": "claim",
+        "display_name": "23 stations completed since 2020"
+      },
+      "object": {
+        "record_id": "claim_ada-stations-completed-since-2020-list",
+        "record_kind": "claim",
+        "display_name": "ADA Stations Completed Since 2020 list"
+      },
+      "evidence": [
+        {
+          "source_id": "meeting_doc_121711",
+          "evidence_id": "meeting_doc_121711#p009_c0003",
+          "source_path": "raw/sources/meeting_doc_121711/blocks.jsonl",
+          "page_number": 9,
+          "block_id": "p009_c0003",
+          "text_sha256": "sha256:dbd36ed1541d7be3539b7a6e9af767f03d07df468599f1fb88c726ae92793057",
+          "quote": "The map shows 23 stations completed since 2020 and 6 stations to be completed by the end of the year."
+        }
+      ],
+      "triage_read": "Counterexample for a broader has_claim subject expansion. Claim->claim conflates nested assertions/list extraction and should remain invalid for data cleanup or possible claim modeling refinement."
+    },
+    {
+      "record_id": "relation_accessibility-has-treatment-elevator",
+      "source_id": "meeting_doc_109976",
+      "submission_ids": [
+        "sub_e9da8479c21e0686"
+      ],
+      "malformed_shape": "has_treatment claim->treatment_component",
+      "relation_kind": "has_treatment",
+      "evidence": [
+        {
+          "source_id": "meeting_doc_109976",
+          "evidence_id": "meeting_doc_109976#p013_c0001",
+          "source_path": "raw/sources/meeting_doc_109976/blocks.jsonl",
+          "page_number": 13,
+          "block_id": "p013_c0001",
+          "text_sha256": "sha256:6d40cc00221b6942c1d1053a53dfd426c9d83c196bb661c49b955221b8b8e21a",
+          "quote": "Welcome back to a new elevator!"
+        }
+      ],
+      "triage_read": "Counterexample for widening treatment rules generally. This row asks whether a claim can own a treatment component, which is a different data-cleanup/modeling problem from treatment_component carrying a claim."
+    },
+    {
+      "record_id": "relation_bx36-able-treatment",
+      "source_id": "meeting_doc_113986",
+      "submission_ids": [
+        "sub_021c889cc990cb4b"
+      ],
+      "malformed_shape": "has_treatment route->treatment_component",
+      "relation_kind": "has_treatment",
+      "evidence": [
+        {
+          "source_id": "meeting_doc_113986",
+          "evidence_id": "meeting_doc_113986#p014_c0011",
+          "source_path": "raw/sources/meeting_doc_113986/blocks.jsonl",
+          "page_number": 14,
+          "block_id": "p014_c0011",
+          "text_sha256": "sha256:3e69ff294a3e5d0dda705ae0abfde472507f53c714a7f622d4f5eba1c5b806a5",
+          "quote": "we activate enforcement on the Bx36 route"
+        }
+      ],
+      "triage_read": "Plausible later rule-or-data question for route-level treatments, but it has broader modeling implications and should not be bundled with this has_claim treatment_component->claim patch."
+    }
+  ],
+  "evidence": {
+    "source_and_canonical_evidence_summary": [
+      "The selected relation, treatment component, and claim are all from brt_kings_highway_aug2018 and use the same local observation ids supplied by the ingest submission.",
+      "Source block p001_c0004 states the bus-lane legend and operating hours; p001_c0007 states the bus-lane installation scope; p002_c0004 repeats the bus-lane hours in the project legend.",
+      "Current valid neighboring relations already connect the project and corridor to the treatment component, so the remaining issue is not a missing project/corridor carrier but a treatment-specific claim-context rule."
+    ],
+    "current_shape_inventory_for_selected_family": {
+      "has_claim accepted_or_present_counts": [
+        { "shape": "project->claim", "count": 258 },
+        { "shape": "route->claim", "count": 241 },
+        { "shape": "entity->claim", "count": 153 },
+        { "shape": "corridor->claim", "count": 49 },
+        { "shape": "event->claim", "count": 10 },
+        { "shape": "source->claim", "count": 2 },
+        { "shape": "claim->claim", "count": 1 },
+        { "shape": "treatment_component->claim", "count": 1 }
+      ],
+      "interpretation": "The proposed patch admits only the treatment_component->claim singleton. The claim->claim singleton remains outside the accepted subject set."
+    }
+  },
+  "guards": {
+    "non_goals": [
+      "Do not retire, replace, or edit canonical data as part of this prep.",
+      "Do not apply the code patch in this artifact-only lane.",
+      "Do not widen has_claim to claim->claim, metric_claim->claim, table->claim, source_gap->claim, or relation->claim.",
+      "Do not widen has_treatment, implemented_by, operated_by, owned_by, published_by, has_timeline_event, related_route, serves_route, or operates_on_corridor based on this evidence.",
+      "Do not reinterpret the Kings Highway treatment as a project, corridor, or route merely to satisfy the current validator.",
+      "Do not repeat the already-handled owned_by/operated_by corridor->entity patches or relation cleanup batches037-040."
+    ],
+    "negative_endpoint_combos_that_must_remain_invalid": [
+      "has_claim claim->claim",
+      "has_claim metric_claim->claim",
+      "has_claim treatment_component->metric_claim",
+      "has_treatment claim->treatment_component",
+      "has_treatment route->treatment_component until separately approved",
+      "implemented_by treatment_component->entity",
+      "operated_by treatment_component->entity",
+      "owned_by source->entity",
+      "published_by metric_claim->source"
+    ],
+    "suggested_test_assertions": [
+      "expect(relationEndpointShapeIssue(\"has_claim\", \"treatment_component\", \"claim\")).toBeUndefined();",
+      "expect(relationEndpointShapeIssue(\"has_claim\", \"claim\", \"claim\")?.message).toContain(\"expects project|route|corridor|entity|source|event|treatment_component -> claim\");",
+      "expect(relationEndpointShapeIssue(\"has_treatment\", \"route\", \"treatment_component\")?.message).toContain(\"expects project|corridor -> treatment_component\");"
+    ]
+  },
+  "commands_run_read_only": [
+    "sed -n '190,385p' packages/pipeline/src/records/relations.ts",
+    "sed -n '1,120p' packages/pipeline/test/records/relations.test.ts",
+    "sqlite3 -readonly data/canonical.db '.schema records'",
+    "sqlite3 -readonly data/canonical.db '.schema relations'",
+    "bun --eval '<read-only sqlite endpoint-shape inventory using current RELATION_ENDPOINT_SHAPES table>'",
+    "sqlite3 -readonly data/canonical.db '<selected records and related context queries>'",
+    "jq -c 'select(.block_id==...)' raw/sources/brt_kings_highway_aug2018/blocks.jsonl",
+    "jq -c 'select(.block_id==...)' raw/sources/meeting_doc_121711/blocks.jsonl",
+    "rg -n '<selected submission ids/local ids>' data/submissions data/review_notes -S"
+  ],
+  "commands_intentionally_not_run": [
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "materialize",
+    "export-jsonl",
+    "full validate",
+    "DB publish/repair",
+    "any command with --profile or provider-backed execution"
+  ],
+  "files_written": [
+    "data/review_notes/codex-relation-rule-or-data-next17-prep.json"
+  ],
+  "blockers": [],
+  "all_pass": true
+}

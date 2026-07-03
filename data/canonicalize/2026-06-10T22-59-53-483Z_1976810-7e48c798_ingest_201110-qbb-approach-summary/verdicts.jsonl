@@ -1,0 +1,32 @@
+{"decision_id":"rel-qbb-daily-bus-trips","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p004_c0003"]}
+{"decision_id":"rel-qbb-daily-local-riders","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p004_c0003"]}
+{"decision_id":"rel-qbb-pm-rush-buses","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p004_c0003"]}
+{"decision_id":"rel-q60-total-daily-ridership","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p007_c0002"]}
+{"decision_id":"rel-q101-total-daily-ridership","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p007_c0002"]}
+{"decision_id":"rel-q32-total-daily-ridership","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p007_c0002"]}
+{"decision_id":"rel-local-bus-total-daily","verdict":"fail","failure_reason":"Cited block p007_c0002 does not explicitly name Queensboro Bridge or QBB. The block shows only a route-level ridership table ending with 'Total 7,900' — it does not connect that total to the QBB corridor. The page heading ('Queensboro Bridge Bus Priority Study Local Bus Routes') is a separate block (p007_c0001) not cited as evidence. Co-occurrence in a document is not a relation.","evidence_checked":["201110_qbb_approach_summary#p007_c0002"]}
+{"decision_id":"rel-express-bus-total-daily","verdict":"fail","failure_reason":"Cited block p008_c0003 does not explicitly name Queensboro Bridge or QBB. The block shows only an express bus ridership table ending with 'Total 7,920' — it does not connect that total to the QBB corridor. The page heading ('Queensboro Bridge Bus Priority Study Express Bus Routes') is a separate block (p008_c0001) not cited as evidence. Co-occurrence in a document is not a relation.","evidence_checked":["201110_qbb_approach_summary#p008_c0003"]}
+{"decision_id":"rel-pm-express-tt-4to5-seg1","verdict":"fail","failure_reason":"Cited block p011_c0002 does not explicitly name Queensboro Bridge or QBB, and does not identify 'Segment 1'. The block concatenates three unlabeled tables — the segment labeling (Segment 1, Segment 2, etc.) is inferred from page layout, not from block text. The page heading is a separate block (p011_c0001) not cited as evidence.","evidence_checked":["201110_qbb_approach_summary#p011_c0002"]}
+{"decision_id":"rel-pm-express-tt-5to6-seg1","verdict":"fail","failure_reason":"Cited block p011_c0002 does not explicitly name Queensboro Bridge or QBB, and does not identify 'Segment 1'. The block concatenates three unlabeled tables — the segment labeling is inferred from page layout, not from block text. The page heading is a separate block (p011_c0001) not cited as evidence.","evidence_checked":["201110_qbb_approach_summary#p011_c0002"]}
+{"decision_id":"rel-pm-express-tt-6to7-seg1","verdict":"fail","failure_reason":"Cited block p011_c0002 does not explicitly name Queensboro Bridge or QBB, and does not identify 'Segment 1'. The block concatenates three unlabeled tables — the segment labeling is inferred from page layout, not from block text. The page heading is a separate block (p011_c0001) not cited as evidence.","evidence_checked":["201110_qbb_approach_summary#p011_c0002"]}
+{"decision_id":"rel-pm-express-tt-4to5-seg2","verdict":"fail","failure_reason":"Cited block p011_c0002 does not explicitly name Queensboro Bridge or QBB, and does not identify 'Segment 2'. The block concatenates three unlabeled tables — the segment labeling is inferred from page layout, not from block text. The page heading is a separate block (p011_c0001) not cited as evidence.","evidence_checked":["201110_qbb_approach_summary#p011_c0002"]}
+{"decision_id":"rel-pm-express-tt-5to6-seg2","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p011_c0002"]}
+{"decision_id":"rel-pm-express-tt-6to7-seg2","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p011_c0002"]}
+{"decision_id":"rel-pm-express-tt-4to5-seg3","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p011_c0002"]}
+{"decision_id":"rel-pm-express-tt-5to6-seg3","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p011_c0002"]}
+{"decision_id":"rel-pm-express-tt-6to7-seg3","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p011_c0002"]}
+{"decision_id":"rel-local-rider-survey-respondents","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p012_c0004"]}
+{"decision_id":"rel-express-rider-survey-respondents","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p012_c0004"]}
+{"decision_id":"rel-local-rider-work-trip-pct","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p012_c0004"]}
+{"decision_id":"rel-express-rider-work-trip-pct","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p012_c0004"]}
+{"decision_id":"rel-local-rider-daily-bus-pct","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p012_c0004"]}
+{"decision_id":"rel-express-rider-daily-bus-pct","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p012_c0004"]}
+{"decision_id":"rel-local-rider-subway-alt-pct","verdict":"unsure","failure_reason":"reviewer did not cover this decision","evidence_checked":[]}
+{"decision_id":"rel-express-rider-subway-alt-pct","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p012_c0004"]}
+{"decision_id":"rel-claim-local-congestion","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p012_c0004"]}
+{"decision_id":"rel-claim-express-congestion","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p012_c0004"]}
+{"decision_id":"rel-claim-over75-pct-delay","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p004_c0003"]}
+{"decision_id":"rel-claim-local-delay-5to15","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p012_c0004"]}
+{"decision_id":"rel-claim-express-delay-5to15","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p012_c0004"]}
+{"decision_id":"rel-claim-local-improvements","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p012_c0004"]}
+{"decision_id":"rel-claim-express-improvements","verdict":"pass","evidence_checked":["201110_qbb_approach_summary#p012_c0004"]}

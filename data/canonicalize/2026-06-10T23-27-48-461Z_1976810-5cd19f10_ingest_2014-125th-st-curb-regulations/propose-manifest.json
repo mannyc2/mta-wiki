@@ -1,0 +1,70 @@
+{
+  "run_id": "2026-06-10T23-27-48-461Z_1976810-5cd19f10_ingest_2014-125th-st-curb-regulations",
+  "generated_at": "2026-06-11T04:05:21.078Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 5,
+  "completed": 5,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 11,
+  "validated_decision_count": 0,
+  "quarantined_decision_count": 5,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T23-27-48-461Z_1976810-5cd19f10_ingest_2014-125th-st-curb-regulations",
+    "manifest": "data/canonicalize/2026-06-10T23-27-48-461Z_1976810-5cd19f10_ingest_2014-125th-st-curb-regulations/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T23-27-48-461Z_1976810-5cd19f10_ingest_2014-125th-st-curb-regulations/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-27-48-461Z_1976810-5cd19f10_ingest_2014-125th-st-curb-regulations/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T23-27-48-461Z_1976810-5cd19f10_ingest_2014-125th-st-curb-regulations/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-27-48-461Z_1976810-5cd19f10_ingest_2014-125th-st-curb-regulations/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-18-830Z_2111393-d223e003_canonicalize_2026-06-10t23-27-48-461z-1976810-5cd19f10-ingest-2014-125th-st-curb-regulations-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-27-48-461Z_1976810-5cd19f10_ingest_2014-125th-st-curb-regulations/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-18-830Z_2111393-432679d7_canonicalize_2026-06-10t23-27-48-461z-1976810-5cd19f10-ingest-2014-125th-st-curb-regulations-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-27-48-461Z_1976810-5cd19f10_ingest_2014-125th-st-curb-regulations/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-18-830Z_2111393-0273f0bb_canonicalize_2026-06-10t23-27-48-461z-1976810-5cd19f10-ingest-2014-125th-st-curb-regulations-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-27-48-461Z_1976810-5cd19f10_ingest_2014-125th-st-curb-regulations/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-18-830Z_2111393-625dde8e_canonicalize_2026-06-10t23-27-48-461z-1976810-5cd19f10-ingest-2014-125th-st-curb-regulations-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-27-48-461Z_1976810-5cd19f10_ingest_2014-125th-st-curb-regulations/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-18-831Z_2111393-c200ad7b_canonicalize_2026-06-10t23-27-48-461z-1976810-5cd19f10-ingest-2014-125th-st-curb-regulations-relation-linker"
+    }
+  ]
+}

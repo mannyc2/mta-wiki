@@ -1,0 +1,367 @@
+{
+  "note_id": "codex-identity-batch205-prep",
+  "created_at": "2026-06-23T11:45:00Z",
+  "scope": {
+    "global_kind": "entity",
+    "operation": "prepare_alias_cleanup_only",
+    "checkpoint": "after identity202-dnm203-204",
+    "selection_note": "Codex-only entity alias cleanup from the remaining entity duplicate_global_identity backlog. The deterministic local identityKeysForRecord scan reproduced the current checkpoint count: 333 duplicate_global_identity issues total, with entity 320, corridor 13, project 0, and route 0. No provider-backed commands, materialize, validate CLI, write, ask, canonicalize, identity-review, schema, or ontology commands were run.",
+    "write_limit": "Exactly one artifact was written: data/review_notes/codex-identity-batch205-prep.json. No merges.json, do-not-merge.json, canonical JSONL, DB, LOG.md, manifest, wiki, submissions, or retired overrides were edited."
+  },
+  "prepared_count": 12,
+  "proposed_aliases": [
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_westchester-county-meeting-doc-140526",
+      "target_id": "entity_164896-westchester-county",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_164896-westchester-county and entity_westchester-county-meeting-doc-140526 share identity key entity_westchester-county."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Westchester County', entity_name 'Westchester County', entity_type 'county', evidence meeting_doc_140526#p002_c0004 includes a county billing table row for WESTCHESTER.",
+        "Target canonical record: display_name 'Westchester County', entity_name 'Westchester County', entity_type 'county government', evidence meeting_doc_164896#p001_c0011 refers to Westchester County in Metro-North shuttle agreement context."
+      ],
+      "reason": "Exact county government identity; both records name Westchester County and differ only by extraction/source context.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Specific county government name, not a generic agency or community-board label."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-201746-trapeze-software",
+      "target_id": "entity_trapeze-software-201766",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-201746-trapeze-software and entity_trapeze-software-201766 share identity key entity_trapeze-software-group-signature-rail."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Trapeze Software Group / Signature Rail', entity_name 'Trapeze Software Group/Signature Rail', entity_type 'vendor', evidence meeting_doc_201746#p009_c0013 quotes 'Trapeze Software Group/Signature Rail'.",
+        "Target canonical record: display_name 'Trapeze Software Group/Signature Rail', entity_name 'Trapeze Software Group', entity_type 'company', evidence meeting_doc_201766#p005_c0013 carries the same Trapeze/Signature Rail contract background."
+      ],
+      "reason": "Exact vendor/company identity for the Trapeze Software Group / Signature Rail CTSS contract surface.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Specific vendor name with matching contract context."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_flatbush-twu-local-100",
+      "target_id": "entity_twu-local-100",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_flatbush-twu-local-100 and entity_twu-local-100 share identity key entity_twu-local-100."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'TWU Local 100', entity_name 'TWU Local 100', entity_type 'labor union', acronym 'TWU', evidence flatbush_ave_cb8_jun2025#p015_c0003 quotes 'TWU Local 100'.",
+        "Target canonical record: display_name 'Transit Workers Union (TWU) Local 100', merged entity_name values include 'TWU Local 100' and 'Transport Workers Union Local 100', entity_type 'union', with multiple MTA labor evidence refs."
+      ],
+      "reason": "Exact labor-union identity; the Flatbush-specific extraction is the same TWU Local 100 organization as the multi-source root.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Specific labor union local, not a broad agency or board name."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_veterans-erg-176471",
+      "target_id": "entity_veterans-erg",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_veterans-erg and entity_veterans-erg-176471 share identity key entity_veterans-employee-resource-group."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Veterans Employee Resource Group', entity_name 'Veterans Employee Resource Group', entity_type 'Employee Resource Group', organization 'MTA', evidence meeting_doc_176471#p008_c0005 names the group.",
+        "Target canonical record: display_name 'Veterans ERG', merged entity_name values include 'Veterans ERG' and 'Veterans Employee Resource Group', entity_type 'Employee Resource Group', organization 'MTA', evidence meeting_doc_160126#p006_c0002 and meeting_doc_176311#p006_c0005."
+      ],
+      "reason": "Exact MTA employee resource group identity; ERG is the acronym surface for Employee Resource Group.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Specific MTA employee resource group name, not a generic agency label."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_village-of-pleasantville-meeting-doc-151756",
+      "target_id": "entity_meeting-doc-151746-village-pleasantville",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-151746-village-pleasantville and entity_village-of-pleasantville-meeting-doc-151756 share identity key entity_village-of-pleasantville."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'entity_village_of_pleasantville_meeting_doc_151756', entity_name 'Village of Pleasantville', entity_type 'municipality', evidence meeting_doc_151756#p016_c0008.",
+        "Target canonical record: display_name 'Village of Pleasantville', entity_name 'Village of Pleasantville', entity_type 'municipality', evidence meeting_doc_151746#p001_c0001."
+      ],
+      "reason": "Exact municipality identity; both records preserve the same Village of Pleasantville name and type.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Specific municipality name, not a generic government entity."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_william-amarosa-jr",
+      "target_id": "entity_meeting-doc-170981-amarosa",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_meeting-doc-170981-amarosa and entity_william-amarosa-jr share identity key entity_william-amarosa-jr."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'William Amarosa Jr.', entity_name 'William Amarosa Jr.', entity_type 'person', organization 'NYC Transit Department of Subways', evidence meeting_doc_164966#p006_c0003 and meeting_doc_171011#p006_c0004.",
+        "Target canonical record: display_name 'William Amarosa, SVP Subways', merged entity_name values include 'William Amarosa' and 'William Amarosa Jr.', entity_type 'person', with NYCT/Subways leadership titles and evidence meeting_doc_170981#p001_c0018 quoting 'William Amarosa, Senior Vice President, Subways, NYCT Operations Support'."
+      ],
+      "reason": "Exact person identity; the Jr. suffix and NYCT Department of Subways context are already represented on the target.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Exact person name with matching NYCT Subways context."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_paige-graves-meeting-doc-173841",
+      "target_id": "entity_paige-graves-legal",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_paige-graves-legal and entity_paige-graves-meeting-doc-173841 share identity key entity_paige-graves."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Paige Graves', entity_name 'Paige Graves', entity_type 'person', title 'General Counsel', evidence meeting_doc_135256#p003_c0007 states 'Paige Graves, General Counsel'.",
+        "Target canonical record: display_name 'Paige Graves', entity_name 'Paige Graves', entity_type 'person', title 'MTA Legal Department Head', with evidence meeting_doc_100286#p173_c0004 naming Paige Graves as MTA Legal Department Head."
+      ],
+      "reason": "Exact person identity; both records refer to Paige Graves in MTA legal/general-counsel context.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Exact person name with matching legal/general-counsel context."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-cathy-rinaldi",
+      "target_id": "entity_catherine-rinaldi",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_catherine-rinaldi and entity_meeting-doc-cathy-rinaldi share identity key entity_cathy-rinaldi."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Cathy Rinaldi', entity_name 'Cathy Rinaldi', entity_type 'person', with Metro-North/LIRR leadership evidence.",
+        "Target canonical record: display_name 'Catherine Rinaldi', merged entity_name values include 'Catherine Rinaldi' and 'Cathy Rinaldi', entity_type 'person', with president/chair leadership context."
+      ],
+      "reason": "Exact person identity; Cathy is the source-backed short-name variant of Catherine Rinaldi in MTA railroad leadership context.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Specific person name variant with matching railroad leadership context."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting91591-louis-montanti",
+      "target_id": "entity_louis-montanti",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_louis-montanti and entity_meeting91591-louis-montanti share identity key entity_louis-montanti."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Louis Montanti', entity_name 'Louis Montanti', entity_type 'person', title 'MTA Deputy Chief Procurement Officer - Procurement Operations', evidence meeting_doc_95156#p002_c0003 quotes 'Louis Montanti'.",
+        "Target canonical record: display_name 'Louis Montanti, Deputy Chief Procurement Officer, Operations, MTA', entity_name 'Louis Montanti', entity_type 'person', with merged procurement-officer title variants and many MTA procurement evidence refs."
+      ],
+      "reason": "Exact person identity; both records name Louis Montanti in MTA deputy chief procurement officer context.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Exact person name with matching MTA procurement role context."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-68196-david-mack",
+      "target_id": "entity_david-s-mack-meeting-doc-157631",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_david-s-mack-meeting-doc-157631 and entity_meeting-doc-68196-david-mack share identity key entity_david-s-mack."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'David S. Mack', entity_name 'David S. Mack', entity_type 'person', organization 'MTA Bridges and Tunnels Committee', title 'Acting Chair', evidence meeting_doc_68196#p001_c0006.",
+        "Target canonical record: display_name 'David S. Mack, Chair', entity_name 'David S. Mack', entity_type 'person', with Chair/Co-Chair title values and evidence meeting_doc_151591#p004_c0005 quoting 'David S. Mack, Co-Chair'."
+      ],
+      "reason": "Exact person identity; both records identify David S. Mack in Bridges and Tunnels committee chair context.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Exact person name with middle initial and matching committee-chair context."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-186836-chris-pangilinan",
+      "target_id": "entity_christopher-pangilinan-ops-planning",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_christopher-pangilinan-ops-planning and entity_meeting-doc-186836-chris-pangilinan share identity key entity_chris-pangilinan.",
+        "duplicate_global_identity equivalent: Global entity records entity_christopher-pangilinan-ops-planning and entity_meeting-doc-186836-chris-pangilinan share identity key entity_chris-pangilinan-vice-president-paratransit-nyct."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Chris Pangilinan', entity_name 'Chris Pangilinan', entity_type 'person', title 'Vice President of Paratransit', evidence meeting_doc_113986#p007_c0005 states 'Paratransit Vice President Chris Pangilinan'.",
+        "Target canonical record: display_name 'Christopher Pangilinan, Chief of Operations Planning', merged entity_name values include 'Christopher Pangilinan' and 'Chris Pangilinan', entity_type 'person', with NYCT/paratransit/operations-planning title variants and evidence queens_service_change_board_item_2025#p001_c0003."
+      ],
+      "reason": "Exact person identity; Chris/Christopher variants share NYCT paratransit and operations-planning leadership context.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Specific person name variant with matching NYCT role context; not the Department of Paratransit agency collision."
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_nyc-ddc-2015",
+      "target_id": "entity_nyc-ddc",
+      "confidence": "high",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global entity records entity_nyc-ddc and entity_nyc-ddc-2015 share identity key entity_nyc-dept-of-design-and-construction."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'NYC Dept. of Design and Construction', entity_name 'NYC Dept. of Design and Construction', entity_type 'agency', evidence 2015_06_09_brt_woodhaven_cb9#p039_c0002.",
+        "Target canonical record: display_name 'Department of Design and Construction', entity_name 'NYC Department of Design and Construction', entity_type 'government_agency', short_name 'DDC', with merged agency_name values for NYC Department of Design and Construction and evidence m86_sbs_progress_report_2017#p011_c0008."
+      ],
+      "reason": "Exact NYC agency identity; 'Dept.' and 'Department' surfaces both refer to NYC Department of Design and Construction/DDC.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_mapped": true,
+        "target_not_alias_or_non_root": true,
+        "no_direct_do_not_merge_conflict": true,
+        "no_resolved_do_not_merge_conflict": true,
+        "non_cyclic": true,
+        "current_duplicate_global_identity": true,
+        "broad_name_guard": "Agency-name alias allowed here because both sides explicitly name the same NYC Department of Design and Construction/DDC agency."
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "ids": [
+        "entity_bronx-cb6-2012-11-webster",
+        "entity_brooklyn-cb6-flatbush-ave-oct2025"
+      ],
+      "reason": "Deferred as a cross-borough community-board collision on generic key entity_community-board-6; requires borough-aware do-not-merge or more specific identity handling, not aliasing."
+    },
+    {
+      "ids": [
+        "entity_bronx-cb5-2012-11-webster",
+        "entity_cb5-brooklyn-brt-sbs-jan2018"
+      ],
+      "reason": "Deferred as a cross-borough community-board collision on generic key entity_community-board-5."
+    },
+    {
+      "ids": [
+        "entity_audit-committee-sorin",
+        "entity_catherine-sheridan-115226"
+      ],
+      "reason": "Deferred because the shared Lisa Sorin key appears on a Catherine Sheridan record; this looks like mixed committee-member evidence rather than a safe alias."
+    },
+    {
+      "ids": [
+        "entity_meeting-doc-189866-p-dietlin",
+        "entity_meeting-doc-192156-p-dietlin"
+      ],
+      "reason": "Deferred because the surface is initial-only 'P. Dietlin'; likely a duplicate but below this batch's full-name/source-context bar."
+    },
+    {
+      "ids": [
+        "entity_bloomberg-news-org",
+        "entity_meeting-doc-155136-bloomberg"
+      ],
+      "reason": "Deferred because one record is typed as a news organization while the other appears in procurement/license context; needs review of whether the intended entity is Bloomberg L.P. or a narrower product/vendor surface."
+    },
+    {
+      "ids": [
+        "entity_pratt-center-community-development-2012",
+        "entity_pratt-center-flatbush-2025"
+      ],
+      "reason": "Deferred despite likely overlap because the records use different organization labels and source contexts; a later batch can verify whether 'Pratt Center' always means Pratt Center for Community Development here."
+    },
+    {
+      "ids": [
+        "entity_annual-report-2021-lirr",
+        "entity_meeting-doc-128981-nyct"
+      ],
+      "reason": "Deferred as broad agency/railroad key pollution across large merged records, not a high-confidence entity alias."
+    }
+  ],
+  "blockers": []
+}

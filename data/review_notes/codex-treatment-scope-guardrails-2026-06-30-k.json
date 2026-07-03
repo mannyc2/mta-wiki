@@ -1,0 +1,89 @@
+{
+  "id": "codex-treatment-scope-guardrails-2026-06-30-k",
+  "created_at": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "provider_backed_llm_commands_used": false,
+  "forbidden_commands_used": [],
+  "bucket": "treatment_noisy_actionable_union",
+  "baseline": {
+    "validation_issues": 0,
+    "total_treatment_records": 2648,
+    "raw_noisy_union": 37,
+    "route_type_taxonomy_records": 10,
+    "adjusted_actionable_noisy_union_before": 37
+  },
+  "implemented_changes": [
+    {
+      "change": "mark route-type taxonomy treatment records as contextual",
+      "scope": "route_taxonomy_context",
+      "reason": "route_type_taxonomy",
+      "affected_count": 10,
+      "affected_records": [
+        "treatment_route-type-crosstown-sbs",
+        "treatment_route-type-crosstown-sbs_2",
+        "treatment_route-type-express",
+        "treatment_route-type-express_2",
+        "treatment_route-type-limited",
+        "treatment_route-type-limited_2",
+        "treatment_route-type-local",
+        "treatment_route-type-local_2",
+        "treatment_route-type-rush",
+        "treatment_route-type-rush_2"
+      ]
+    },
+    {
+      "change": "mark generic bus_priority literals with concrete treatment-family proof as contextual raw-literal noise",
+      "scope": "generic_bus_priority_literal_context",
+      "reason": "concrete_treatment_family_payload",
+      "affected_count": 8,
+      "affected_records": [
+        "treatment_bus-boarders_2",
+        "treatment_bus-queue-jump-tsp",
+        "treatment_flatbush-av-bus-priority",
+        "treatment_livingston-st-bus-priority",
+        "treatment_new-bus-lanes",
+        "treatment_protected-bus-lane_2",
+        "treatment_transit-freight-priority",
+        "treatment_upgraded-bus-lane"
+      ]
+    }
+  ],
+  "post_materialize_counts": {
+    "validation_issues": 0,
+    "total_treatment_records": 2648,
+    "raw_noisy_union": 37,
+    "route_taxonomy_scoped": 10,
+    "generic_bus_priority_literal_scoped": 8,
+    "adjusted_actionable_noisy_union_after": 19,
+    "remaining_unscoped_by_family": {
+      "bus_priority": 16,
+      "amenity_or_public_art": 2,
+      "monitoring": 1
+    }
+  },
+  "tests": [
+    "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+    "bun test packages/pipeline/test/records/payload-schemas.test.ts",
+    "bun run typecheck",
+    "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+    "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+    "bun packages/cli/src/cli.ts validate"
+  ],
+  "test_results": {
+    "normalizers": "262 pass, 3978 expect() calls",
+    "payload_schemas": "19 pass, 93 expect() calls",
+    "typecheck": "pass",
+    "sqlite_quick_check": "ok",
+    "validate": "Issues: 0"
+  },
+  "remaining_intentionally_unresolved": [
+    "16 umbrella/composite bus_priority package/toolkit records need aggregate representation policy rather than literal rewrite.",
+    "2 amenity_or_public_art records and 1 monitoring record remain separate treatment taxonomy decisions.",
+    "Raw treatment_kind literals were preserved; cleanup uses runner-owned treatment_record_scope companions."
+  ],
+  "next_lanes": [
+    "Project document_time_status exact gates from read-only project scout.",
+    "Event_family other exact gates from read-only event scout.",
+    "Further aggregate bus_priority package policy for remaining 16 treatment records."
+  ]
+}

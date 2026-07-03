@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "review_state": "accepted",
+  "accepted_at": "2026-06-08T21:21:36.731Z",
+  "reviewer": "codex-audit-2026-06-08",
+  "source": "audit_safe_to_promote",
+  "cluster_id": "corridor_cluster_007",
+  "kind": "corridor",
+  "packet_path": "data/identity-review/packets/corridor_cluster_007.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_007.json",
+  "source_review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Flash",
+  "action_summary": {
+    "merge_group_count": 1,
+    "do_not_merge_count": 0,
+    "weak_alias_count": 2,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [
+    [
+      "corridor_story-ave",
+      "corridor_story-avenue"
+    ]
+  ],
+  "do_not_merge": [],
+  "weak_aliases": [
+    {
+      "record_id": "corridor_story-ave",
+      "aliases": [
+        "corridor_story-ave-corridor",
+        "corridor_story_ave"
+      ],
+      "reason": "Variant naming conventions for the same corridor; useful for search."
+    },
+    {
+      "record_id": "corridor_story-avenue",
+      "aliases": [
+        "corridor_story-ave",
+        "corridor_story_avenue"
+      ],
+      "reason": "Variant naming conventions for the same corridor; useful for search."
+    }
+  ],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [
+    "Corridor records with identical street name, identical limits (from/to), and identical routes served from different source documents should be merged."
+  ],
+  "rationale": "Both records describe Story Avenue corridor from Bronx River Avenue to White Plains Road serving Bx5 and Bx6 SBS. The first record uses 'limits' field while the second uses 'from'/'to' fields, but the values are identical. The second record explicitly lists corridor_story-ave as an alias and identity key, confirming they represent the same canonical corridor from two different source documents (2019 plan and 2021 addendum). The validator's duplicate_global_identity flag is correct."
+}

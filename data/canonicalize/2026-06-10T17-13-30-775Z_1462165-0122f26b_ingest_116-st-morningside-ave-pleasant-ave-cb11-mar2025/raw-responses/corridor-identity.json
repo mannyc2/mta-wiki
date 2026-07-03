@@ -1,0 +1,29 @@
+{
+  "run_id": "2026-06-10T17-13-30-775Z_1462165-0122f26b_ingest_116-st-morningside-ave-pleasant-ave-cb11-mar2025",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-10T17:39:19.374Z",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "corridor_116th_st_study_area_link",
+        "local_observation_id": "corridor_116th_st_study_area_mar2025",
+        "decision": "link",
+        "target_record_id": "corridor_116th-street",
+        "rationale": "Observation describes the 116th Street Study Area in Manhattan on 116th Street, Manhattan Avenue, Pleasant Avenue, and Morningside Avenue, matching the existing corridor_116th-street record which has the same streets, borough, and display name '116th Street Study Area, Manhattan'. The same source (cb11_mar2025) is already present in the registry card's source_ids.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p004_c0002",
+            "source_quote": "Study area: 116 th St., Manhattan Av., Pleasant Av., and Morningside Av. between 114 th St. & 113 th St. – Total: 2.2 miles"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T17-34-36-033Z_1481967-eb8d4ffa_canonicalize_2026-06-10t17-13-30-775z-1462165-0122f26b-ingest-116-st-morningside-ave-pleasant-ave-cb11-mar2025-corridor-identity"
+}

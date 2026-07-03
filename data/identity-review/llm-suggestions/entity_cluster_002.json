@@ -1,0 +1,29 @@
+{
+  "review_run_id": "2026-06-10T21-39-01-072Z_identity-review-run",
+  "reviewed_at": "2026-06-10T21:39:12.652Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_002.md",
+  "cluster_id": "entity_cluster_002",
+  "kind": "entity",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "suggestion": {
+    "cluster_id": "entity_cluster_002",
+    "kind": "entity",
+    "merge_groups": [
+      [
+        "entity_hudson-yards-dev-corp-2012",
+        "entity_hudson-yards-development-corp"
+      ]
+    ],
+    "do_not_merge": [],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "Both records represent the same real-world entity: Hudson Yards Development Corporation. All strong identity fields agree — identical entity_name ('Hudson Yards Development Corporation') and identical entity_type ('development corporation'). The record-ID differences are purely source-local naming conventions: one uses abbreviated 'dev-corp' with a date suffix '-2012', the other spells out 'development-corp'. Both share the alias 'entity-hudson-yards-development-corporation' and the validator confirms them as duplicates via shared identity key. Under the Same-object test (test 2): strong identity fields agree, and the id/name differences are explained entirely by source-local abbreviation and date-suffix conventions. Under per-kind rules: acronym + expanded name of same org DO merge. Decision: merge."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T21-39-01-074Z_1822282-6cde7f40_identity-review-run_entity-cluster-002",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-10T21-39-01-074Z_2026-06-10T21-39-01-074Z_1822282-6cde7f40_identity-review-run_entity-cluster-002.jsonl"
+}

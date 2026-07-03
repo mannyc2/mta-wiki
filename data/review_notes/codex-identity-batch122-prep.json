@@ -1,0 +1,589 @@
+{
+  "note_id": "codex-identity-batch122-prep",
+  "batch_id": "identity122",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "scope": {
+    "description": "Codex-only deterministic identity cleanup prep for global project records only.",
+    "author": "codex",
+    "included_global_kinds": [
+      "project"
+    ],
+    "excluded_global_kinds": [
+      "corridor",
+      "route",
+      "entity",
+      "treatment_component",
+      "claim",
+      "metric_claim",
+      "event",
+      "source_gap"
+    ],
+    "selection_policy": "Only high-confidence same durable project aliases were queued. Exact-title and acronym-equivalent project/program records were allowed when project type, scope, and source-time statuses were compatible. Phases, options, station-specific subprojects, contract-only records, awards, and program-vs-child-project false friends were excluded."
+  },
+  "batch": "identity122",
+  "global_kinds": [
+    "project"
+  ],
+  "prepared_count": 8,
+  "aliases": [
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_2025-2029-capital-plan",
+      "target_id": "project_2025-2029-capital-plan",
+      "alias_id": "project_2025-2029-mta-capital-plan-meeting-doc-171486",
+      "canonical_name": "2025-2029 Capital Plan",
+      "alias_name": "2025-2029 MTA Capital Plan",
+      "reason": "Same durable MTA 2025-2029 Capital Plan record. The alias only expands the agency name and comes from a single meeting-document record; both records are typed as a capital plan, and the planned/proposed source-time status is compatible with the target's broader active/open-house coverage.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_2025-2029-capital-plan",
+          "record_kind": "project",
+          "project_name": "2025-2029 Capital Plan",
+          "project_type": "capital plan",
+          "status": "Open House ongoing",
+          "document_time_status": "active",
+          "source_ids": [
+            "meeting_doc_151861",
+            "meeting_doc_152171",
+            "meeting_doc_154976",
+            "meeting_doc_174181",
+            "meeting_doc_174391",
+            "meeting_doc_174396",
+            "meeting_doc_177271",
+            "meeting_doc_205541"
+          ],
+          "evidence_refs": [
+            "meeting_doc_152171#p002_c0002",
+            "meeting_doc_154976#p024_c0003",
+            "meeting_doc_154976#p024_c0006",
+            "meeting_doc_151861#p005_c0015"
+          ],
+          "source_quote": "2025-2029 Capital Plan"
+        },
+        "alias": {
+          "record_id": "project_2025-2029-mta-capital-plan-meeting-doc-171486",
+          "record_kind": "project",
+          "project_name": "2025-2029 MTA Capital Plan",
+          "project_type": "capital plan",
+          "status": "proposed",
+          "document_time_status": "planned",
+          "source_ids": [
+            "meeting_doc_171486"
+          ],
+          "evidence_refs": [
+            "meeting_doc_171486#p009_c0003",
+            "meeting_doc_171486#p009_c0004"
+          ],
+          "source_quote": "2025-2029 MTA Capital Plan"
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: same capital-plan identity, same date range, compatible source-time statuses, and no phase/award/contract/station split. Alias was absent from data/identity-overrides/merges.json project mappings and visible identity prep through identity120; no identity121 prep artifact was visible by filename scan; pair was absent from project do-not-merge."
+    },
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_2025-2029-capital-plan",
+      "target_id": "project_2025-2029-capital-plan",
+      "alias_id": "project_meeting-doc-174176-2025-2029-capital-plan",
+      "canonical_name": "2025-2029 Capital Plan",
+      "alias_name": "MTA 2025-2029 Capital Plan",
+      "reason": "Same durable MTA 2025-2029 Capital Plan record. The alias source describes Board approval and re-submission of the MTA 2025-2029 Capital Plan, which is a later source-time action on the same plan rather than a distinct project.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_2025-2029-capital-plan",
+          "record_kind": "project",
+          "project_name": "2025-2029 Capital Plan",
+          "project_type": "capital plan",
+          "status": "Open House ongoing",
+          "document_time_status": "active",
+          "source_ids": [
+            "meeting_doc_151861",
+            "meeting_doc_152171",
+            "meeting_doc_154976",
+            "meeting_doc_174181",
+            "meeting_doc_174391",
+            "meeting_doc_174396",
+            "meeting_doc_177271",
+            "meeting_doc_205541"
+          ],
+          "evidence_refs": [
+            "meeting_doc_152171#p002_c0002",
+            "meeting_doc_154976#p024_c0003",
+            "meeting_doc_154976#p024_c0006",
+            "meeting_doc_151861#p005_c0015"
+          ],
+          "source_quote": "2025-2029 Capital Plan"
+        },
+        "alias": {
+          "record_id": "project_meeting-doc-174176-2025-2029-capital-plan",
+          "record_kind": "project",
+          "project_name": "MTA 2025-2029 Capital Plan",
+          "project_type": "capital plan",
+          "status": "resubmission for board approval",
+          "document_time_status": "other",
+          "source_ids": [
+            "meeting_doc_174176"
+          ],
+          "evidence_refs": [
+            "meeting_doc_174176#p003_c0009",
+            "meeting_doc_174176#p003_c0012"
+          ],
+          "source_quote": "Board approval of the proposed $68.4 billion MTA 2025-2029 Capital Plan"
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: identical plan name and date range, same capital-plan scope, and source-time status is a procedural update on the same plan. Alias was absent from applied project merges and visible identity prep through identity120; no identity121 prep artifact was visible; pair was absent from project do-not-merge."
+    },
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_2025-2029-capital-plan",
+      "target_id": "project_2025-2029-capital-plan",
+      "alias_id": "project_mta-2025-2029-capital-plan",
+      "canonical_name": "2025-2029 Capital Plan",
+      "alias_name": "MTA 2025-2029 Capital Plan",
+      "reason": "Same durable MTA 2025-2029 Capital Plan record. The alias source requests Board approval to submit the same MTA 2025-2029 Capital Plan, with no conflicting phase, component, or agency scope.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_2025-2029-capital-plan",
+          "record_kind": "project",
+          "project_name": "2025-2029 Capital Plan",
+          "project_type": "capital plan",
+          "status": "Open House ongoing",
+          "document_time_status": "active",
+          "source_ids": [
+            "meeting_doc_151861",
+            "meeting_doc_152171",
+            "meeting_doc_154976",
+            "meeting_doc_174181",
+            "meeting_doc_174391",
+            "meeting_doc_174396",
+            "meeting_doc_177271",
+            "meeting_doc_205541"
+          ],
+          "evidence_refs": [
+            "meeting_doc_152171#p002_c0002",
+            "meeting_doc_154976#p024_c0003",
+            "meeting_doc_154976#p024_c0006",
+            "meeting_doc_151861#p005_c0015"
+          ],
+          "source_quote": "2025-2029 Capital Plan"
+        },
+        "alias": {
+          "record_id": "project_mta-2025-2029-capital-plan",
+          "record_kind": "project",
+          "project_name": "MTA 2025-2029 Capital Plan",
+          "project_type": "Capital Plan",
+          "status": "proposed",
+          "document_time_status": "planned",
+          "source_ids": [
+            "meeting_doc_152076"
+          ],
+          "evidence_refs": [
+            "meeting_doc_152076#p004_c0008",
+            "meeting_doc_152076#p004_c0010",
+            "meeting_doc_152076#p005_c0015"
+          ],
+          "source_quote": "Board approval of the proposed MTA 2025-2029 Capital Plan"
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: identical plan name and date range, same capital-plan scope, and compatible proposed/planned source-time status. Alias was absent from applied project merges and visible identity prep through identity120; no identity121 prep artifact was visible; pair was absent from project do-not-merge."
+    },
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_omny",
+      "target_id": "project_omny",
+      "alias_id": "project_omny-fare-payment",
+      "canonical_name": "OMNY fare payment system",
+      "alias_name": "OMNY Fare Payment System",
+      "reason": "Same durable OMNY fare payment system. Both records identify OMNY as MTA's fare payment system; the alias is a narrower meeting-document record for the same rollout, with in-progress source-time status compatible with the target's broader ongoing rollout coverage.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_omny",
+          "record_kind": "project",
+          "project_name": "OMNY",
+          "project_type": "fare payment system",
+          "status": "ongoing rollout",
+          "document_time_status": "active",
+          "source_ids": [
+            "behind_schedule_2025",
+            "meeting_doc_100276",
+            "meeting_doc_100281",
+            "meeting_doc_128961",
+            "meeting_doc_138396",
+            "meeting_doc_140456",
+            "meeting_doc_140511",
+            "meeting_doc_140621",
+            "meeting_doc_160436",
+            "meeting_doc_164901",
+            "meeting_doc_170976",
+            "meeting_doc_171381",
+            "meeting_doc_173986",
+            "meeting_doc_174071",
+            "meeting_doc_174221",
+            "meeting_doc_186841",
+            "meeting_doc_192246",
+            "meeting_doc_192561",
+            "meeting_doc_199246",
+            "meeting_doc_201516",
+            "meeting_doc_206071",
+            "meeting_doc_42401",
+            "meeting_doc_68251",
+            "meeting_doc_72541",
+            "meeting_doc_76796",
+            "meeting_doc_79331",
+            "meeting_doc_98321",
+            "meeting_doc_98326"
+          ],
+          "evidence_refs": [
+            "behind_schedule_2025#p030_c0001",
+            "meeting_doc_100276#p009_c0004",
+            "meeting_doc_100276#p052_c0006",
+            "meeting_doc_100281#p007_c0002"
+          ],
+          "source_quote": "MTA launched OMNY, a contactless fare payment system"
+        },
+        "alias": {
+          "record_id": "project_omny-fare-payment",
+          "record_kind": "project",
+          "project_name": "OMNY",
+          "project_type": "capital project",
+          "status": "in progress",
+          "document_time_status": "other",
+          "source_ids": [
+            "meeting_doc_30186",
+            "meeting_doc_91581"
+          ],
+          "evidence_refs": [
+            "meeting_doc_30186#p113_c0006",
+            "meeting_doc_91581#p028_c0006",
+            "meeting_doc_91581#p028_c0008"
+          ],
+          "source_quote": "Project: OMNY. OMNY is MTA's new fare payment system."
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: same named fare-payment system, same rollout scope, and compatible source-time progress states. Alias was absent from applied project merges and visible identity prep through identity120; no identity121 prep artifact was visible; pair was absent from project do-not-merge."
+    },
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_omny",
+      "target_id": "project_omny",
+      "alias_id": "project_meeting-doc-199481-omny",
+      "canonical_name": "OMNY fare payment system",
+      "alias_name": "OMNY Fare Payment System Completion",
+      "reason": "Same durable OMNY fare payment system. The alias records substantial completion of the OMNY fare payment system in 2025, which is a lifecycle status update for the same project rather than a separate project.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_omny",
+          "record_kind": "project",
+          "project_name": "OMNY",
+          "project_type": "fare payment system",
+          "status": "ongoing rollout",
+          "document_time_status": "active",
+          "source_ids": [
+            "behind_schedule_2025",
+            "meeting_doc_100276",
+            "meeting_doc_100281",
+            "meeting_doc_128961",
+            "meeting_doc_138396",
+            "meeting_doc_140456",
+            "meeting_doc_140511",
+            "meeting_doc_140621",
+            "meeting_doc_160436",
+            "meeting_doc_164901",
+            "meeting_doc_170976",
+            "meeting_doc_171381",
+            "meeting_doc_173986",
+            "meeting_doc_174071",
+            "meeting_doc_174221",
+            "meeting_doc_186841",
+            "meeting_doc_192246",
+            "meeting_doc_192561",
+            "meeting_doc_199246",
+            "meeting_doc_201516",
+            "meeting_doc_206071",
+            "meeting_doc_42401",
+            "meeting_doc_68251",
+            "meeting_doc_72541",
+            "meeting_doc_76796",
+            "meeting_doc_79331",
+            "meeting_doc_98321",
+            "meeting_doc_98326"
+          ],
+          "evidence_refs": [
+            "behind_schedule_2025#p030_c0001",
+            "meeting_doc_100276#p009_c0004",
+            "meeting_doc_100276#p052_c0006",
+            "meeting_doc_100281#p007_c0002"
+          ],
+          "source_quote": "OMNY, a contactless fare payment system to replace MetroCards"
+        },
+        "alias": {
+          "record_id": "project_meeting-doc-199481-omny",
+          "record_kind": "project",
+          "project_name": "OMNY Fare Payment System",
+          "project_type": "fare payment system",
+          "status": "substantially completed",
+          "document_time_status": "implemented",
+          "source_ids": [
+            "meeting_doc_199481"
+          ],
+          "evidence_refs": [
+            "meeting_doc_199481#p014_c0002"
+          ],
+          "source_quote": "substantial completion of the OMNY fare payment system in 2025"
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: same named fare-payment system and source-time status is a completion update for the target, not a distinct phase or contract. Alias was absent from applied project merges and visible identity prep through identity120; no identity121 prep artifact was visible; pair was absent from project do-not-merge."
+    },
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_interborough-express-2020-2024",
+      "target_id": "project_interborough-express-2020-2024",
+      "alias_id": "project_ibx-amt5-2025",
+      "canonical_name": "Interborough Express",
+      "alias_name": "Interborough Express (IBX)",
+      "reason": "Same durable Interborough Express project. The alias uses the standard IBX acronym and describes design support for the Interborough Express project; it is not a distinct network-expansion project.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_interborough-express-2020-2024",
+          "record_kind": "project",
+          "project_name": "Interborough Express",
+          "project_type": "expansion",
+          "status": "active in 2020-2024 Capital Program",
+          "document_time_status": "active",
+          "source_ids": [
+            "meeting_doc_151861",
+            "meeting_doc_152076",
+            "meeting_doc_152161",
+            "meeting_doc_155486",
+            "meeting_doc_164931",
+            "meeting_doc_171486",
+            "meeting_doc_174181",
+            "meeting_doc_180421",
+            "meeting_doc_186856",
+            "meeting_doc_187096",
+            "meeting_doc_192191",
+            "meeting_doc_198991",
+            "meeting_doc_199246",
+            "meeting_doc_199481",
+            "meeting_doc_201756",
+            "meeting_doc_201761",
+            "meeting_doc_206071",
+            "meeting_doc_206191",
+            "meeting_doc_208006",
+            "meeting_doc_208051"
+          ],
+          "evidence_refs": [
+            "meeting_doc_155486#p008_c0011",
+            "meeting_doc_155486#p009_c0006",
+            "meeting_doc_151861#p007_c0007",
+            "meeting_doc_152161#p003_c0004"
+          ],
+          "source_quote": "Interborough Express project"
+        },
+        "alias": {
+          "record_id": "project_ibx-amt5-2025",
+          "record_kind": "project",
+          "project_name": "Interborough Express",
+          "project_type": "network expansion",
+          "source_ids": [
+            "meeting_doc_190291"
+          ],
+          "evidence_refs": [
+            "meeting_doc_190291#p014_c0007"
+          ],
+          "source_quote": "$58.3 million to support design for the Interborough Express project (IBX)"
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: exact project name plus acronym, same network-expansion scope, and no distinct phase/option/station/contract identity. Alias was absent from applied project merges and visible identity prep through identity120; no identity121 prep artifact was visible; pair was absent from project do-not-merge."
+    },
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_interborough-express-2020-2024",
+      "target_id": "project_interborough-express-2020-2024",
+      "alias_id": "project_meeting-doc-128921-interborough-express",
+      "canonical_name": "Interborough Express",
+      "alias_name": "Interborough Express",
+      "reason": "Same durable Interborough Express project. The alias describes current progress and the Planning and Environmental Linkages study for the Interborough Express light rail transit project, which is lifecycle context for the same Brooklyn-Queens project.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_interborough-express-2020-2024",
+          "record_kind": "project",
+          "project_name": "Interborough Express",
+          "project_type": "expansion",
+          "status": "active in 2020-2024 Capital Program",
+          "document_time_status": "active",
+          "source_ids": [
+            "meeting_doc_151861",
+            "meeting_doc_152076",
+            "meeting_doc_152161",
+            "meeting_doc_155486",
+            "meeting_doc_164931",
+            "meeting_doc_171486",
+            "meeting_doc_174181",
+            "meeting_doc_180421",
+            "meeting_doc_186856",
+            "meeting_doc_187096",
+            "meeting_doc_192191",
+            "meeting_doc_198991",
+            "meeting_doc_199246",
+            "meeting_doc_199481",
+            "meeting_doc_201756",
+            "meeting_doc_201761",
+            "meeting_doc_206071",
+            "meeting_doc_206191",
+            "meeting_doc_208006",
+            "meeting_doc_208051"
+          ],
+          "evidence_refs": [
+            "meeting_doc_155486#p008_c0011",
+            "meeting_doc_155486#p009_c0006",
+            "meeting_doc_151861#p007_c0007",
+            "meeting_doc_152161#p003_c0004"
+          ],
+          "source_quote": "Interborough Express project"
+        },
+        "alias": {
+          "record_id": "project_meeting-doc-128921-interborough-express",
+          "record_kind": "project",
+          "project_name": "Interborough Express",
+          "project_type": "Light Rail Transit Project",
+          "status": "formal engineering",
+          "document_time_status": "other",
+          "source_ids": [
+            "meeting_doc_128921",
+            "meeting_doc_131541",
+            "meeting_doc_138351",
+            "meeting_doc_160096",
+            "meeting_doc_160206",
+            "meeting_doc_160246",
+            "meeting_doc_160431",
+            "meeting_doc_179916"
+          ],
+          "evidence_refs": [
+            "meeting_doc_128921#p021_c0004",
+            "meeting_doc_131541#p013_c0010",
+            "meeting_doc_138351#p007_c0015",
+            "meeting_doc_138351#p007_c0016"
+          ],
+          "source_quote": "current progress on the Interborough Express"
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: exact project name and same Brooklyn-Queens light rail/network expansion scope; formal engineering is a source-time stage, not a separate project. Alias was absent from applied project merges and visible identity prep through identity120; no identity121 prep artifact was visible; pair was absent from project do-not-merge."
+    },
+    {
+      "kind": "project",
+      "global_kind": "project",
+      "canonical_id": "project_mta-avl-monitoring-system",
+      "target_id": "project_mta-avl-monitoring-system",
+      "alias_id": "project_mta-avlm-system",
+      "canonical_name": "MTA Automated Vehicle Location Monitoring System",
+      "alias_name": "MTA Automated Vehicle Location Monitoring System",
+      "reason": "Same durable Automated Vehicle Location Monitoring System implementation. The alias expands the AVLM acronym and describes the same LB Technology award for implementation of the system for all MTA agencies, with compatible pending/awaiting Board approval status.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "project_mta-avl-monitoring-system",
+          "record_kind": "project",
+          "project_name": "Automated Vehicle Location Monitoring System (AVLM)",
+          "project_type": "procurement",
+          "status": "pending board approval",
+          "document_time_status": "other",
+          "source_ids": [
+            "meeting_doc_26926"
+          ],
+          "evidence_refs": [
+            "meeting_doc_26926#p030_c0007",
+            "meeting_doc_26926#p031_c0006",
+            "meeting_doc_26926#p031_c0007"
+          ],
+          "source_quote": "Implementation of MTA Automated Vehicle Location Monitoring System"
+        },
+        "alias": {
+          "record_id": "project_mta-avlm-system",
+          "record_kind": "project",
+          "project_name": "Implementation of MTA Automated Vehicle Location Monitoring System (AVLM)",
+          "project_type": "technology system implementation",
+          "status": "awaiting board approval",
+          "document_time_status": "other",
+          "source_ids": [
+            "meeting_doc_26886"
+          ],
+          "evidence_refs": [
+            "meeting_doc_26886#p070_c0008",
+            "meeting_doc_26886#p071_c0007"
+          ],
+          "source_quote": "implementation of Automated Vehicle Location Monitoring System (AVLM) for all MTA Agencies"
+        }
+      },
+      "guard_notes": "Project merge guard satisfied: same AVLM system name, same all-agency implementation/procurement scope, same vendor-award context, and compatible pending Board approval statuses. Alias was absent from applied project merges and visible identity prep through identity120; no identity121 prep artifact was visible; pair was absent from project do-not-merge."
+    }
+  ],
+  "guard_summary": {
+    "global_kind_scope": "project only",
+    "prepared_count": 8,
+    "target_limit": 8,
+    "applied_merge_guard": "Checked data/identity-overrides/merges.json under aliases.project; no selected alias_id was already present.",
+    "prior_prep_guard": "Checked visible data/review_notes/codex-identity-batch*-prep.json files through batch120; no selected alias_id was already prepared. Filename scan found no visible identity121 prep artifact.",
+    "do_not_merge_guard": "Checked data/identity-overrides/do-not-merge.json under pairs.project; no selected target/alias pair was listed.",
+    "confidence_policy": "Only high-confidence same durable project aliases are included; lower-confidence phase, option, award, station, contract, parent-program/child-project, and source-time ambiguity cases were excluded."
+  },
+  "command_evidence": [
+    {
+      "command": "rg --files data wiki packages docs | rg '(^data/identity-overrides/merges\\\\.json$|identity[0-9]+|canonical/.+project|review_notes|materialized)'",
+      "purpose": "Located identity override and review-note artifacts for deterministic inspection."
+    },
+    {
+      "command": "rg --files data | rg 'identity.*121|batch121|identity121'",
+      "purpose": "Checked for visible identity121 prep artifacts; none were found by filename scan."
+    },
+    {
+      "command": "jq '.aliases | type, (if type==\"object\" then keys[0:10] else .[0:10] end)' data/identity-overrides/merges.json",
+      "purpose": "Confirmed merge override durable shape is aliases.<kind> alias_id -> target_id."
+    },
+    {
+      "command": "jq -r 'select(.record_kind==\"project\") | [.record_id,.display_name,(.payload.project_name//.payload.name//\"\"),(.payload.location//\"\"),(.payload.status//\"\"),(.payload.document_time_status//\"\"),(.source_ids|join(\",\"))] | @tsv' data/canonical/projects.jsonl | sort",
+      "purpose": "Read project canonical records and source-time fields for candidate discovery."
+    },
+    {
+      "command": "node - <<'NODE' ... read-only candidate clustering over data/canonical/projects.jsonl, data/identity-overrides/merges.json, and visible codex-identity-batch*-prep.json files ... NODE",
+      "purpose": "Built deterministic candidate clusters while excluding applied and previously prepared aliases."
+    },
+    {
+      "command": "node - <<'NODE' ... direct guard check for selected target/alias pairs against merges, prior prep, project do-not-merge, and canonical existence ... NODE",
+      "purpose": "Verified selected aliases were unapplied, unprepared, not do-not-merge guarded, and present in canonical project records."
+    },
+    {
+      "command": "jq -r --arg b \"$block\" 'select(.block_id==$b) | ...' raw/sources/<source_id>/blocks.jsonl",
+      "purpose": "Read cited source blocks for selected evidence refs."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema-propose",
+    "ontology-normalize-run",
+    "ingest/write with --profile/provider",
+    "materialize",
+    "validate",
+    "export-jsonl",
+    "DB publish/repair",
+    "provider-backed or external LLM commands"
+  ]
+}

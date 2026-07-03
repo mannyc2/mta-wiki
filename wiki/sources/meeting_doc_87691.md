@@ -1,0 +1,1194 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-87691"
+record_kind: "source"
+display_name: "Capital Program Committee Meeting - May 2022"
+source_id: "meeting_doc_87691"
+source_ids:
+  - "meeting_doc_87691"
+local_observation_id: "source_cpc_meeting_may2022"
+local_observation_ids:
+  - "source_cpc_meeting_may2022"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-22T20:58:38.588Z"
+raw_text: "Capital Program Committee Meeting - May 2022. Meeting document covering Capital Program Committee sessions on April 25, 2022 and scheduled May 23, 2022, including project updates on Penn Station Access, LIRR Concourse, East Side Access, LIRR Main Line Expansion, CBTC programs, procurement actions, safety reports, and capital program commitments/completions."
+submission_ids:
+  - "sub_7c2724fd2ac8fd76"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting_book"
+  date_text: "May 2022"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2022-05"
+    precision: "month"
+    raw_text: "May 2022"
+  description: "Capital Program Committee Meeting book for May 23, 2022, including minutes from April 25, 2022 meeting, integrated project updates, safety report, capital program status, and procurement actions."
+  published_date_normalized: "2022-05"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "Capital Program Committee Meeting"
+evidence_refs:
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_87691#p001_c0003"
+    page_number: 1
+    source_id: "meeting_doc_87691"
+    source_path: "raw/sources/meeting_doc_87691/blocks.jsonl"
+    source_quote: "Capital Program Committee Meeting"
+    text_sha256: "sha256:80dba0324d80f52b33f3d19d63a02c2d720e350d8fe7f9a14b7effb1f982c93c"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_87691#p001_c0004"
+    page_number: 1
+    source_id: "meeting_doc_87691"
+    source_path: "raw/sources/meeting_doc_87691/blocks.jsonl"
+    source_quote: "May 2022"
+    text_sha256: "sha256:f675407c9d6350719e9b40477867ac87f5a1c7d06dcdfb54912907b1dea9cd62"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_87691#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_87691"
+    source_path: "raw/sources/meeting_doc_87691/blocks.jsonl"
+    source_quote: "Metropolitan Transportation Authority"
+    text_sha256: "sha256:ec4da331c09e2061578a1964b23a90bdb7edf5115e31a65c01ad04c21487f1e4"
+    text_source: "raw_text"
+---
+
+# Capital Program Committee Book
+
+source_id: meeting_doc_87691
+citation: cite block ids exactly as shown in square brackets
+document: 703 block(s)
+
+## Page 1
+
+> [p001_c0001] The logo for the Metropolitan Transportation Authority (MTA) is a black circle containing the white letters "MTA" in a bold, sans-serif font.
+[p001_c0002] Metropolitan Transportation Authority
+### [p001_c0003] Capital Program Committee Meeting
+[p001_c0004] May 2022
+### [p001_c0005] Committee Members
+[p001_c0006] J. Lieber, Chair N. Zuckerman, Vice Chair A. Albert J. Barbas N. Brown M. Fleischer R. Glucksman D. Jones H. Mihaltses J. Samuelsen V. Tessitore
+
+## Page 2
+
+### [p002_c0001] Capital Program Committee Meeting
+[p002_c0002] 2 Broadway, 20th Floor Board Room
+[p002_c0003] New York, NY 10004
+[p002_c0004] Monday, 5/23/2022
+[p002_c0005] 12:15 - 1:30 PM ET
+### [p002_c0006] 1. SUMMARY OF ACTIONS
+[p002_c0007] C&D May Summary of Actions - Page 3
+### [p002_c0008] 2. PUBLIC COMMENTS PERIOD
+### [p002_c0009] 3. APPROVAL OF MINUTES – APRIL 25, 2022
+[p002_c0010] CPC Committee Minutes - Page 4
+### [p002_c0011] 4. 2022 – 2023 COMMITTEE WORK PLAN
+[p002_c0012] CPC Committee Work Plan - Page 10
+### [p002_c0013] 5. C&D CAPITAL PROGRAM UPDATE
+[p002_c0014] Update on Integrated Projects - Page 12
+[p002_c0015] IEC Project Review on Penn Station Access - Page 23
+[p002_c0016] IEC Project Review on LIRR Concourse - Page 29
+[p002_c0017] IEC Project Review on East Side Access - Page 34
+[p002_c0018] IEC Project Review on LIRR Expansion - Page 41
+### [p002_c0019] 6. C&D SAFETY REPORT
+[p002_c0020] Committee Safety Report - Page 47
+### [p002_c0021] 7. CAPITAL PROGRAM STATUS
+[p002_c0022] Commitments, Completions, and Funding Report - Page 49
+### [p002_c0023] 8. C&D PROCUREMENTS
+[p002_c0024] C&D Procurements - Page 66
+
+## Page 3
+
+### [p003_c0001] CONSTRUCTION & DEVELOPMENT COMMITTEE ACTIONS SUMMARY for MAY 2022
+[p003_c0002]
+
+```text
+Responsible Department Vendor Name Total Amount Summary of Action Contracts LK Comstock & Company LLC $ 39,900,000 MTA Construction & Development requests Board approval to award a publicly advertised and competitively solicited contract (C34866) for design-build services to upgrade the supervisory control and data acquisition system which connects to the Power Control Center and to create a new back-up electronic power control center. Contracts E-J Electric Installation Co. $ 7,099,255 MTA Construction and Development requests that the Board ratify the following two modifications to the Traction Power Systems Package No. 4 East Side Access Project contract (CS084): (i) Modification No. 78 to energize, operate and maintain four traction power substations to support Long Island Rail Road Physical Characteristics Training and (ii) Modification No. 95 to replace fourteen (14) sectionalized switches with new load break switches and an excusable delay of 121 days, extending the substantial completion date of the Contract to September 22, 2022.
+```
+[p003_c0003] _Master Page # 3 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 4
+
+### [p004_c0001] MINUTES OF MEETING MTA CAPITAL PROGRAM COMMITTEE April 25, 2022 New York, New York 11:30 P.M.
+### [p004_c0002] CPC members present:
+[p004_c0003] Hon. Janno Lieber Hon. Andrew Albert Hon. Jamey Barbas Hon. Randolph Glucksman Hon. David Jones Hon. Haeda Mihaltses Hon. Neal Zuckerman
+### [p004_c0004] CPC member present via video conference:
+[p004_c0005] Hon. Vincent Tessitore, Jr.
+### [p004_c0006] Board members present:
+[p004_c0007] Hon. Gerard Bringmann
+### [p004_c0008] CPC members not present:
+[p004_c0009] Hon. Norman Brown Hon. Michael Fleischer Hon. Kevin Law Hon. John Samuelsen
+### [p004_c0010] MTA staff present:
+[p004_c0011] David Cannon Dan Creighton Evan Eisland Mike Garner John McCarthy Tim Mulligan Tom Savio Gregoire Sulmont Jamie Torres-Springer
+### [p004_c0012] Independent Engineering Consultant staff present:
+[p004_c0013] Joe Devito Elizabeth King
+[p004_c0014] _Master Page # 4 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 5
+
+[p005_c0001] * * *
+[p005_c0002] Chairman Lieber called the April 25, 2022 meeting of the Capital Program Committee to order at 11:47 A.M.
+### [p005_c0003] Public Comments Period
+[p005_c0004] There were four public speakers in the public comments portion of the meeting: Jason Anthony, Amazon Labor Union, regarding CBTC; Murray Bowden regarding miscellaneous issues; Christopher Greif, NYC Transit Riders Council & ACTA LIRR ADA Task Force, regarding miscellaneous issues; and Charlton D’Souza, Passengers United, regarding miscellaneous issues.
+### [p005_c0005] Meeting Minutes
+[p005_c0006] The minutes of the meeting held on March 28, 2022 were approved.
+### [p005_c0007] CPC Work Plan
+[p005_c0008] There were no changes to the CPC Work Plan; upon motion duly made and seconded, the CPC Work Plan was approved.
+[p005_c0009] Details of the following presentations, and Committee Members’ comments and questions with respect thereto, are included in the video recording of the meeting, produced by the MTA and maintained in MTA’s records.
+### [p005_c0010] President’s Report
+[p005_c0011] President Torres-Springer noted that the new, state-of-the-art, Clifton Shop for the Staten Island Railway is now in use, which will go a long way toward making SIRTOA self-sufficient for its maintenance needs, which in turn, will make a big difference for Staten Island riders and the employees who work in this facility. In addition, he noted that next month a virtual town hall meeting (the first such event) on the Interborough Express will be held. Among the topics to be taken up at this month’s full Board meeting are various bus electrification efforts, including the recent issuance of a Request for Proposal (RFP) for the Gun Hill Road electric bus fleet charging facility project. In addition, a Request for Qualifications (RFQ) will be issued this week for the Jamaica Bus Depot reconstruction project. Further, a vote on the Westbury Transit-Oriented Development project is planned for the upcoming Finance Committee meeting. President
+[p005_c0012] _Master Page # 5 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 6
+
+[p006_c0001] Torres-Springer then highlighted the topics to be discussed in today's CPC meeting, which focus primarily on C&D's Communications-Based Train Control (CBTC) program. Briefly citing the benefits of CBTC -- including better, more reliable, faster service for riders -- he then introduced the co-Business Unit Leaders for Signals and Train Control, Gregoire Sulmont, who is new to the MTA, and Dan Creighton.
+### [p006_c0002] C&D Capital Program Update
+[p006_c0003] Mr. Creighton reported that there are currently 17 projects under management, totaling $3.2B, 60% of which is based on CBTC. He and Mr. Sulmont then provided details on the following projects currently underway: QBL-West CBTC (Union Turnpike in Queens through 50 th Street/8 th Avenue and 21 st Street/Queensbridge in Manhattan), the first segment in which interoperability among suppliers is being employed, is currently under CBTC operation; 8 th Avenue CBTC (59 th Street in Manhattan through High Street in Brooklyn), is the first project to feature axle counters, which will replace track circuits; Culver CBTC (West 8 th Street to Church Avenue in Brooklyn) is currently 78% complete; QBL-East CBTC (north of Union Turnpike to 179 th Street, as an extension of QBL-West) awarded in late 2021, includes a new CBTC supplier to NYCT, thus increasing competition among qualified vendors; and the Information Systems Integrated Management (ISIM -B) project, which was developed to establish the IT infrastructure at the Rail Control Center for Division B, with a substantial completion forecast for December 2022.
+[p006_c0004] In response to questions by Commissioner Jones with respect to signal system redundancy, Chairman Lieber requested that the C&D project team provide the Committee with a write-up addressing this query.
+[p006_c0005] In its Project Review of the 8 th Avenue Line CBTC project, the IEC noted that overall, the project is 57% complete and remains on schedule with completion planned in January 2025. The budget and Estimate at Completion (EAC) for the original project work are unchanged since last report however, added scope has resulted in the current EAC of $774M, a $14M increase. Based on review of the car builder's revised delivery schedule, the IEC finds the R211 subway cars will be delayed, likely impacting the CBTC in-service date on the A-Line express; a full report on the status of the R211 procurement will be provided at the June CPC. C&D and NYCT are working on a mitigation strategy to minimize impact to the CBTC project completion and to provide customer benefits as soon as possible. The IEC shares C&D's concern regarding room equipment deliveries and timely resolution of QBL issues, which are critical to the project. Lastly, manufacturing of the Axle Counter System (ACS) hardware is complete; the IEC is monitoring development of the plan to ensure procedures required for revenue service are in place in time.
+[p006_c0006] In its Project Review of the Queens Boulevard Line - West CBTC project, the IEC noted that CBTC was placed into service on all sections of the project this past February -- a major accomplishment, considering the project's complexity. At 95% complete, substantial completion
+[p006_c0007] _Master Page # 6 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 7
+
+[p007_c0001] of the last third-party contract is projected for December of this year, provided all ATS functions are in place and system stability and Automatic Train Operations are achieved. The budget is $666M and the EAC remains unchanged at $729M; a budget modification for the $63M shortfall -- unchanged since the last report -- is still outstanding. The IEC then offered the following observations: previously reported issues with the Thales Zone Controller have been resolved and stable operation has been achieved; the Thales Onboard Computer Unit, needed to validate interoperability between Siemens and Thales equipment, remains in test and has not been approved for passenger service; removal of the decommissioned signal equipment is on track to be completed by this July; radio communication problems between trains and the wayside have continued, and updated Siemens hardware, firmware, and software will be deployed in May to resolve known issues; lastly, the IEC is concerned that CBTC incidents during revenue operations continue to occur, the root causes of which need to be identified and solutions implemented as soon as possible.
+[p007_c0002] In its Project Review of the Culver Line CBTC project, the IEC reported that overall, this project, which is 78% complete, is significantly delayed. However, given adequate risk-informed contingency, the project remains within the original budget of $482M. As previously reported, project completion had been delayed by 10 months due to late deliveries of signal cable and Data Communication System equipment; during this reporting period, inconsistencies between ties and track conditions at the Ditmas Interlocking have impacted the project schedule by an additional 5 months - moving Substantial Completion (SC) to November 2023. The C&D project team and NYCT continue to work together to identify ways to minimize the schedule impact. In the IEC's opinion, SC may slip several more months due to long-lead time required for tie fabrication.
+[p007_c0003] In its Project Review of the Queens Boulevard Line - East CBTC project, the IEC noted that this is Mitsubishi's first CBTC project at the MTA, and by qualifying them the MTA stands to benefit through increased competition among CBTC suppliers. As reported by C&D, the budget and EAC for the project are $539M. With respect to schedule, the IEC reported that both the Installer and CBTC Supplier contracts were awarded in December 2021, and that the separate contract schedules are being integrated by the installer, EJ Electric; the CBTC in-service date is May 2026. Early project risks include the following: development by Mitsubishi of a production version of their CBTC System, to be integrated with Siemens and Thales on-board equipment; and because there are multiple prime contractors -- each responsible for providing complex portions of the CBTC System -- effective technical and schedule coordination will be needed. The IEC then noted that it will be participating in C&D's risk assessment update in May, in which mitigation measures for these and all major project risks will be identified.
+[p007_c0004] The IEC concluded its remarks with the following Programmatic Recommendation, to be applied to all ongoing and future CBTC projects : as a Lesson-Learned from the Queens Boulevard Line - West project (in which tests identified a significant level of radio interference), in order to establish a basis for radio design -- thereby ensuring reliable communications -- the contractor on each CBTC project should be directed to perform an analysis of the signal-to-noise ratio on the respective line; this should be done in a timely manner so as not to delay the project.
+[p007_c0005] _Master Page # 7 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 8
+
+### [p008_c0001] Update on M/WBE, DBE, and SDVOB Participation on Capital Projects
+[p008_c0002] Mr. Garner reported that the MTA has exceeded the Federal DBE goal of 20% with actual awards of 23%. With respect to New York State goals, which are based on payments, he noted that against 15% MBE and WBE goals, the MTA has achieved 14% and 12%, respectively, and against the 6% Service Disabled Veteran-Owned Business (SDVOB) goal, payments currently stand at 1%, but will be adjusted throughout the life of the contracts. Mr. Garner then concluded his presentation by citing the effect that improvements in the Small Business Mentoring Program have on the MTA's overall performance in meeting -- and exceeding -- these goals.
+### [p008_c0003] Procurement Actions
+[p008_c0004] David Cannon, Vice President and Chief Procurement Officer ("VP"), Contracts, MTA Construction & Development Company ("C&D") reported there were five competitive procurement actions were being brought to the Capital Program Committee totaling $62.4M. VP Cannon then presented all five of the items and requested their approval.
+[p008_c0005] Board Member Albert requested the geographical boundaries for the work that will be performed on the 8 th Avenue Line under Contract C48731 (Item No. 1) below. Subsequently but not part of the meeting, Board Member Albert was informed that the limits on the 8th Avenue Line under Contract C48731 are between the 59 th Street/Columbus Circle and Jay Street Stations, and between the Canal Street and World Trade Center Stations.
+[p008_c0006] Upon a motion duly made and seconded, the Capital Program Committee voted the following procurement actions be brought before the MTA Board and recommended their approval:
+- [p008_c0007] 1. The award of a publicly advertised and competitively solicited contract (C48731) to JTTC JV for design-build services for the repair of structural elements, construction of a new tunnel lighting room and accompanying tunnel lighting system and installation of fiber optic cables on the 8th Avenue Line for the amount of $51,600,000 and a duration of 818 calendar days. 2. The award of a publicly advertised and competitively solicited personal service contract (PSC-21-3049A) to HNTB New York Engineering and Architecture, P.C. for the 2022 Biennial Bridge Inspection of the Robert F. Kennedy Bridge Main Line for the not-to-exceed amount of $3,373,633 and a duration of two years and eight months. 3. The award of a publicly advertised and competitively solicited personal service contract (PSC-21-3049B) to AECOM USA, Inc. for the 2022 Biennial Bridge Inspection of the Robert F. Kennedy Bridge Harlem River Lift Span and Approach Ramps for the not-to-exceed amount of $2,555,601 and a duration of two years and eight months. 4. The award of a publicly advertised and competitively solicited personal service contract (PSC-21-3049C) to Stantec Consulting Services, Inc. for the 2022 Biennial Bridge Inspection of the
+[p008_c0008] _Master Page # 8 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 9
+
+[p009_c0001] Verrazzano-Narrows Bridge Main Line for the not-to-exceed amount of $3,247,771 and a duration of two years and eight months.
+- [p009_c0002] 5. The award of a publicly advertised and competitively solicited personal service contract (PSC-21-3049D) to WSP USA, Inc. for the 2022 Biennial Bridge Inspection of the Verrazzano-Narrows Bridge Approach Ramps for the not-to-exceed amount of $1,589,402 and a duration of two years and eight months.
+[p009_c0003] A copy of the Resolution and the Staff Summaries for the above items are filed with the records of the Capital Program Committee Meeting of this date.
+### [p009_c0004] Adjournment
+[p009_c0005] Upon motion duly made and seconded, Chairman Lieber adjourned the April 25, 2022 meeting of the MTA Capital Program Committee at 12:37 PM.
+[p009_c0006] Respectfully submitted, Michael Jew-Geralds Office of Construction Oversight
+[p009_c0007] _Master Page # 9 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 10
+
+### [p010_c0001] Metropolitan Transportation Authority
+### [p010_c0002] 2022-2023 CPC Committee Work Plan
+### [p010_c0003] I. Recurring Agenda Items
+[p010_c0004] Approval of the Minutes Committee Work Plan Commitments/Completions and Funding Report
+### [p010_c0005] II. Specific Agenda Items
+### [p010_c0006] June
+[p010_c0007] Overall Capital Program Rolling Stock Security Projects Quarterly Traffic Light Report
+### [p010_c0008] July
+[p010_c0009] Overall Capital Program • Stations
+### [p010_c0010] September
+[p010_c0011] Overall Capital Program • Railroads OMNY Quarterly Traffic Light Report
+### [p010_c0012] October
+[p010_c0013] Overall Capital Program • Infrastructure
+### [p010_c0014] November
+[p010_c0015] Overall Capital Program • Signals and Train Control Minority, Women and Disadvantaged Business Participation Small Business Development Program
+### [p010_c0016] December
+[p010_c0017] Overall Capital Program • Integrated Megaprojects Security Projects Quarterly Traffic Light Report
+[p010_c0018] _Master Page # 10 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 11
+
+### [p011_c0001] January
+[p011_c0002] Overall Capital Program
+- [p011_c0003] • Stations
+### [p011_c0004] February
+[p011_c0005] Overall Capital Program
+- [p011_c0006] • Railroads
+### [p011_c0007] March
+[p011_c0008] Overall Capital Program
+- [p011_c0009] • B&T • Infrastructure
+[p011_c0010] OMNY
+[p011_c0011] Quarterly Traffic Light Report
+### [p011_c0012] April
+[p011_c0013] Overall Capital Program
+- [p011_c0014] • Signals and Train Control
+[p011_c0015] Minority, Women and Disadvantaged Business Participation
+### [p011_c0016] May
+[p011_c0017] Overall Capital Program
+- [p011_c0018] • Integrated Megaprojects
+[p011_c0019] _Master Page # 11 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 12
+
+### [p012_c0001] MTA Board & Capital Program Committee Update Integrated Projects May 2022
+### [p012_c0002] MTA Board & Capital Program Committee Update Integrated Projects
+[p012_c0003] This is MTA Construction & Development’s first report to the Capital Program Committee on the Penn Station Access (PSA) Project. This document provides a brief introduction of the project and summarizes the progress on some of the significant elements of the project. PSA will provide Metro-North New Haven Line customers with service into and out of Penn Station via Amtrak’s Hell Gate Line. The project includes four new ADA-accessible stations in the East Bronx, introducing rail service and drastically reducing travel times for communities whose residents are 25% below the poverty level.
+[p012_c0004] Along with four new stations, the project also includes bridge rehabilitations, almost 20 miles of new and rehabilitated track work, new and reconfigured interlockings, modernization of signal, power and communication infrastructure, and the potential reconfiguration of Metro-North’s New Rochelle Yard. By bringing the Hell Gate Line to a state of good repair, the project will improve reliability and on-time performance for Amtrak customers and prepare the Northeast Corridor for high-speed rail in the future.
+### [p012_c0005] Penn Station Access CBX001
+[p012_c0006]
+
+```text
+PROJECT STATUS Original Forecast Substantial Completion March 2027 March 2027 Closeout June 2027 June 2027 Budget $2,482M * $2,867M *
+```
+[p012_c0007] * Excludes $385M in future options and support cost
+[p012_c0008] ** Includes $385M in future options and support
+[p012_c0009] NOTE: Current Budget and Forecast exclude rolling stock
+[p012_c0010] The Board approved this project on December 15, 2021. The teams have mobilized and all participants (including the Joint Venture of Halmar International and Railworks) are fully activated to meet the completion deadline of June 2027. This project is implementing the successful project management practices used on the Third Track project including a co-located project office for all project staff (railroads, contractor and project management staff). In addition, we have assigned Tom McGuinness, the former Project Executive on Third Track to PSA as the Project CEO.
+[p012_c0011] The team is focused on preconstruction activities -- acquiring permits, community and stakeholder engagement and preparing for construction activities beginning this year.
+- [p012_c0012] • Anticipated 2022 Construction Activities include: ○ Begin Retaining Wall foundations ○ Install Temp Turnout Tk 2 – Tk 5 / Demo Track 5 ○ Begin civil work in area of Gate and Leggett Interlockings ○ Begin Bronxdale Bridge Replacement • Key Project Risks ○ Coordination with 3 rd Party Stakeholders, including NYSDOT, Con
+[p012_c0013] _Page 1 of 11_
+[p012_c0014] _Master Page # 12 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 13
+
+### [p013_c0001] MTA Board & Capital Program Committee Update Integrated Projects May 2022
+### [p013_c0002] Construction & Development
+### [p013_c0003] Edison and Railroad Freight Operators
+- [p013_c0004] ○ Getting timely reviews from Amtrak as design submittals increase. The project team is monitoring the overall turnaround time for design review in consideration of the level of effort that will be required in the upcoming months when the design production is going to be substantially increased.
+[p013_c0005] _Page 2 of 11_
+[p013_c0006] _Master Page # 13 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 14
+
+### [p014_c0001] MTA Board & Capital Program Committee Update Integrated Projects May 2022
+### [p014_c0002] LIRR Concourse
+[p014_c0003] L70206/VN L70206/EG L80206/04 T80407/07 T70413/50 T80412/19 T80806/13 N51001/18
+[p014_c0004] This project addresses major congestion and passenger improvements at the 33rd Street Concourse in Penn Station, which is the primary corridor linking LIRR commuters with the New York City Transit (NYCT) subway lines on 7th and 8th Avenues (1,2,3,A,C,E). At 30 feet wide, the corridor is insufficient for the volume and movement of passengers now and expected in the future. The temperature and fresh air circulation are not in accordance with modern standards.
+[p014_c0005] As part of an overall plan to transform conditions of the existing Penn Station, this $559.6M investment will widen the corridor to 57 feet and raise the ceiling to 18 feet in the main 33rd Street corridor. In addition, passenger amenities such as better wayfinding, fresh air and passenger information systems will be provided. The LIRR Concourse will be integrated with the new East End Gateway, with modern architectural finishes similar to those in the recently opened Moynihan Train Hall.
+[p014_c0006] The LIRR Concourse project is on schedule and budget and is scheduled to open in Q1 2023. There are incentives in the contract to enable a Q4 2022 opening. The team is working diligently with the Design/Builder to meet the incentive target.
+[p014_c0007]
+
+```text
+PROJECT STATUS Original Forecast Substantial Completion March 2023 March 2023 Budget* $538.7 M $538.7 M *Deducts $20.9 M of LIRR Concourse work performed in East End Gateway Project. LIRR Concourse is 65% complete
+```
+[p014_c0008] We are pleased to report that the contractor, Skanska Penn Station Constructor, the project management consultant, WSP USA Inc, and our development partner, Penn District Station Developer (Vornado Realty Trust), as well as our railroad partners – LIRR, NYC Transit, NJ Transit and Amtrak -- are working as a unified team moving the project forward.
+[p014_c0009] A brief outline of status of major project components is as follows:
+### [p014_c0010] Creating the space
+[p014_c0011] The LIRR Concourse project has created the station volume for a ceiling structure of up to 18 feet of overhead clearance and an additional 27 feet width of corridor, with the completion of the following activities:
+- [p014_c0012] • Installed construction shielding in the Concourse. Demolished the barreled ceiling and relocated affected utilities and other systems. • Removed and relocated the two (2) utility structures known as “sewer boxes” and the associated utilities in the bed of 33rd Street, increasing
+[p014_c0013] _Page 3 of 11_
+[p014_c0014] _Master Page # 14 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 15
+
+### [p015_c0001] MTA Board & Capital Program Committee Update Integrated Projects May 2022
+### [p015_c0002] Construction & Development
+[p015_c0003] the overhead clearance and reframing the street and the Penn Station roof under 33 rd Street.
+- [p015_c0004] • Removed seven (7) beams “Head Knockers” at the west end of the 33 rd Concourse (with less than 7 feet of overhead clearance) and HVAC equipment supported by the beams; relocated the HVAC equipment and established the ceiling structure to match the rest of the Concourse. • Removed the Level B Amtrak retail (kitchen) overhangs in the 33 rd St. Concourse. This work included removing overhead transverse beams, kitchen spaces, mechanical spaces, and other spaces. Re-established the ceiling structure and finishes; relocated and reestablished the removed mechanical systems and restored the affected Amtrak spaces on Level B.
+### [p015_c0005] Below are some of the planned improvements to the Concourse:
+### [p015_c0006] Passenger Amenities:
+- [p015_c0007] • Provide upgraded architectural finishes including the luminous ceiling that is integrated with the LIRR entry hall constructed under Phase 1. • Provide modern finishes and contemporary lighting throughout the renovated spaces. • Provide signage and wayfinding in the affected areas including both static and dynamic signage. • Replace the Passenger Information Display System (PIDS) with a new head end and new digital screen displays distributed throughout the renovated spaces and in retail spaces. • Increase the HVAC capacity to meet the demands of the widened Concourse and bring in 100,000 CFM of fresh air to the below grade station for the first time. • Add view to tracks in the Main Gate Area • Provide a new elevator from 33 rd and 7 th avenue into the new concourse at the LIRR Entry Hall and within the 1/2/3 station. • Renovate the 34 th Street Concourse.
+### [p015_c0008] Station and Facilities Upgrades
+- [p015_c0009] • Upgrade other building systems in Penn Station in the work area. These include a new service feed from Con Edison from 34 th Street, an upgraded fire alarm system, and upgraded security systems. • Relocate the MTA Back-of-House facilities in Penn Station and One Penn Plaza. • New facilities will house offices, conference rooms, breakrooms, restrooms, locker rooms, workshops, storage, utility rooms, furniture and fixtures, mechanical, electrical, plumbing, fire protection, communications and security systems with integration and connections to both LIRR network and systems and to base building utilities.
+[p015_c0010] MTA C&D has bundled priority capital work and State of Good Repair (SOGR)
+[p015_c0011] _Page 4 of 11_
+[p015_c0012] _Master Page # 15 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 16
+
+### [p016_c0001] MTA Board & Capital Program Committee Update Integrated Projects May 2022
+[p016_c0002] from various agencies into the LIRR Concourse Development Agreement to integrate work and reduce disruption to operations including:
+### [p016_c0003] LIRR State of Good Repair and ADA Work
+- [p016_c0004] • Replacement of elevator P-11; • Replacement of platform stairs – Stairs 11E, 11C, 11M, and 11EE; • Repair of Stair 10EE; • Replacement of mechanical equipment such as air curtains and air handlers and associated work. • Replacement of boiler including pumps, piping and demolition of non-functioning equipment in the Chiller Plant.
+### [p016_c0005] NYCT State of Good Repair, ADA, and priority work:
+- [p016_c0006] • Provide a new ADA elevator (EL-618) and associated work from the street to the Concourse Level. Demolish the existing NYCT Street stair on the northwest corner of 33 rd St. and 7 th Avenue and provide a new widened stair. The new elevator and the new stair are in a new entrance in the former Capital One Bank easement space. • Replace existing NYC Transit elevators EL-214, EL-215 and EL-216. • Perform leak remediation in the 33 rd Street subpassage under 7 th Avenue and at NYCT Control Area R-138. • Provide for new HVAC in Communications Room 318A.
+### [p016_c0007] MTAPD priority work:
+- [p016_c0008] • Provide in-building fiber network connectivity between the MTAPD, LIRR, and NYCT Communications systems and provisions for a new MTA Police Radio System in Penn Station. • Renovate MTAPD district office
+[p016_c0009] Accomplishments since the last reporting period include:
+- [p016_c0010] • Completed the station shell to provide for the widened concourse to 57 feet and 18 feet high ceiling with the removals of the “Head-knockers” (7 low-hanging beams at the west end of the 33 rd Street Concourse) and other structural and utility work. • The structural work for Stairs 11E, and 11EE has been completed and the stairs have been reopened. • The new replacement elevator 215 for NYCT on the express platform of the 34 th St./7 th Avenue Station serving the 2/3 trains has been placed in service. • Transformers, boilers, hot water pumps, electrical systems, HVAC and other equipment in the LIRR boiler plant have been installed and have been energized by Con Edison.
+[p016_c0011] Current activities include:
+- [p016_c0012] • Installation of luminous ceiling and architectural finishes in the concourse. Install and commissioning of new mechanical, electrical, and communications equipment.
+[p016_c0013] _Page 5 of 11_
+[p016_c0014] _Master Page # 16 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 17
+
+### [p017_c0001] MTA Board & Capital Program Committee Update Integrated Projects May 2022
+### [p017_c0002] Construction & Development
+- [p017_c0003] • Construction of Back-of-House facilities • Continuing replacement of LIRR's P11 Elevator and NYCT's EL 214 and EL 216 elevators. Construction of the new elevator EL 618 is in progress. Upcoming NYCT outages will provide additional power for the new elevator.
+[p017_c0004] Project risks include:
+- [p017_c0005] • Delays in procurement of materials by the Design-Builder could be affected by supply chain interruptions. • The luminous ceiling installation and commissioning is complicated and requires extensive coordination. • Installation and commissioning of complex new mass notification and fire alarm systems create schedule risk.
+[p017_c0006] The project team has mitigated project issues to ensure that the project is on schedule and under budget.
+[p017_c0007] _Page 6 of 11_
+[p017_c0008] _Master Page # 17 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 18
+
+### [p018_c0001] MTA Board & Capital Program Committee Update Integrated Projects May 2022
+### [p018_c0002] East Side Access
+- [p018_c0003] CM007 CM014B CM030 CS179 CS084 CS086 CQ033 CH063
+[p018_c0004] East Side Access (ESA) will provide LIRR passengers with direct service to Grand Central Terminal. Project involves building an 11.5 mile underground tunnel with a new station and concourse below the existing Grand Central Terminal.
+[p018_c0005]
+
+```text
+PROJECT STATUS Original Forecast Revenue Service Dec 2022 Dec 2022 Budget $11.1B* $11.1B *Project was re-baselined to $11.1 B in April of 2018 The project is approximately 94% complete
+```
+[p018_c0006] The ESA program consists of eight active third party and four force account construction contracts that are all or partially undertaking ESA construction work. The project is currently approximately 94% complete against a planned completion of 98% with a Revenue Service Date in the 4 th Quarter 2022.
+[p018_c0007] Since our last report ESA right-of-way has transitioned from a construction site to an “operating” railroad for training purposes. Centralized Traffic Control (CTC), Signals, Track system, Traction Power network and Blue Lights have been fully tested. The Tunnel systems (primarily pumps and ventilation) are at an 85% completion rate with local testing completed on 90% of the tunnel fans.
+[p018_c0008] The territory is essentially being “temporally separated” with construction activities occurring during off-shift hours. A contract for an interim asset maintainer for major track and signal assets, as well as tunnel drainage and ventilation facilities, has been awarded.
+[p018_c0009] A separate interim maintainer contract is currently being advertised to maintain “facility” assets; the award is expected in late May 2022. In accordance with previous Board approvals, a Request For Proposal for a long-term station facilities maintenance and concourse master tenant entity was advertised; however, due to a lack of interest from qualified bidders, it is currently being restructured to modify duration and division of scope.
+[p018_c0010] The project is scheduled for completion date in the 4 th Quarter of 2022. The major risks that could affect the planned opening include:
+- [p018_c0011] • Completion of all necessary fire alarm and smoke extraction tests: this is due to the complexity and interfaces between multiple contracts. The ESA team works closely with the LIRR Fire Marshal and Code Compliance Unit (CCU) to identify issues early and resolve during the testing. In addition, we are working on parallel testing efforts between the various contractors to create efficiency of testing activities. • Remediation of concourse escalators: the ESA team is working closely
+[p018_c0012] _Page 7 of 11_
+[p018_c0013] _Master Page # 18 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 19
+
+### [p019_c0001] MTA Board & Capital Program Committee Update Integrated Projects May 2022
+[p019_c0002] with the contractors/subcontractors, GCTC and Schindler to ensure timely delivery and installation of parts and materials. This will allow for the testing to be completed.
+- [p019_c0003] • Completion of PTC testing: the ESA team is working closely with LIRR on installation and termination of “physical” assets. The contractor has been able to improve on the schedule and is expected to continue on that trend.
+### [p019_c0004] Concourse
+- [p019_c0005] • The new LIRR passenger concourse, known as Madison Concourse, is a 250,000 square foot facility with 25 retail storefronts. All major assets, including a Chiller Plant and Steam Plant, are being finished and testing activities have started for systems, fire alarm and passenger information. • Resolution of deficiencies and vertical transportation installation and testing were putting pressure on the revenue service date. Work towards remediation, including replacement of treads, drives and cleaning of drive chains for escalators, continues. This work is on schedule and is not currently on the critical path. • The Biltmore Connection is progressing now that MNR electrical room relocations have begun. This allows access of the escalators into the MNR space. • B-20 substation has four of six feeders installed and is fully on-line. Work is progressing on the “Power SCADA” (control) for B20, B30 and B25, which are the remaining substations requiring IST to SCADA. • The Design/Build Services Contract for Passenger Experience Enhancements and Finish Detailing has begun construction. • The “joint test team” approach is proving successful in integrating our commissioning processes. Punch list issues are continuously arising and are being addressed by the integrated team.
+### [p019_c0006] Platform and Mezzanine
+- [p019_c0007] • This work is scheduled for substantial completion in July. The only major element of construction work remaining is the Terrazzo flooring on the platform levels. • Major efforts are focused on test documentation, as-builts and warranties in addition to the required Safety and Security Certification packages.
+### [p019_c0008] Right-of-Way
+- [p019_c0009] • All traction power work has been completed. • Track work has been completed, including the rail and frog remediations. Full clearance alignment check and geometry car runs have been completed. • Integrated systems testing continues for tunnel systems, which include pumps and ventilation fans. Fan deficiencies with compromised
+[p019_c0010] _Page 8 of 11_
+[p019_c0011] _Master Page # 19 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 20
+
+### [p020_c0001] MTA Board & Capital Program Committee Update Integrated Projects May 2022
+### [p020_c0002] Construction & Development
+[p020_c0003] bearings have been successfully remediated.
+### [p020_c0004] Mid-Day Storage Yard (MDSY)
+- [p020_c0005] • This part of the ESA project has achieved substantial completion. • FRA testing and supervisory control is completed and is under operational control of the LIRR.
+### [p020_c0006] LIRR Operational Readiness
+- [p020_c0007] • LIRR Operational Readiness is implemented through a rail activation management committee structure. Major progress has been made in the following areas. • Physical Characteristic (PC) training: PC training is a Federal Railroad Administration (FRA) requirement for train and engine crews to be properly qualified on the physical attributes of the territory where they will be operating trains. The first phase, classroom training, started at the end of last year and has been running successfully. LIRR worked closely with the FRA to allow the second phase, PC Training with LIRR equipment, to commence in mid-April. • Maintenance Transfer: LIRR has started taking over the maintenance of some of the ESA assets including track and signals in the right-of-way and the Mid-Day Storage Yard. The LIRR continues to work closely with the ESA program team with the test and acceptance of fire and life safety systems and building management systems. • Service Plan: LIRR service plan has been developed and is being refined. The timetable and equipment cycles to support the schedule are also mostly complete. • Hiring: Hiring is underway and LIRR expects to have the requisite staffing for opening day. There is also a contingency plan in place if this aggressive hiring effort needs to be supplemented come opening day. LIRR is hosting regular job fairs. LIRR and HQ have streamlined and improved the hiring process. • Coordinating with FTA and FRA: LIRR, MTA C&D and FRA have frequent meetings on advancing the construction and on PC training, new startup, and compliance into revenue service. Similar discussions are being held with the FTA and the FTA PMOC as the project sponsors. • Drills and Exercises: Emergency, security, and operational tabletops are progressing; live exercise drills are forecast to start in August/September. • Pre-revenue Testing: LIRR is developing the schedule for extensive pre-revenue testing required by the FRA and FTA.
+[p020_c0008] _Page 9 of 11_
+[p020_c0009] _Master Page # 20 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 21
+
+### [p021_c0001] MTA Board & Capital Program Committee Update Integrated Projects May 2022
+### [p021_c0002] LIRR Main Line Expansion (Third Track)
+[p021_c0003] This project will add a 10-mile-long third track on the LIRR Main Line to reduce train congestion and enable bi-directional service during peak hours. The new third track, by enabling reverse commuting in the peak hours, has the potential to reshape the future of Long Island.
+[p021_c0004] LIRR Expansion also includes several related projects, including the elimination of eight street level grade crossings, improvements to rail bridges, reconstruction of five stations, and new parking garages.
+[p021_c0005]
+
+```text
+PROJECT STATUS Original Forecast Substantial Completion April 2023 April 2023 Budget $2,588 M $2,488 M The project is approximately 87% complete.
+```
+[p021_c0006] The project is on schedule to reach substantial completion in Q2 2023 and is still on track to put the new third track into service in Q4 2022.
+[p021_c0007] All civil/structural and utility works have been completed with the exception of the roadway work for Denton Avenue Bridge. All stations are under construction and the current focus is on the completion of works along the right of way – signals, cabling and communications.
+[p021_c0008] The primary task remaining is the commissioning and the activation of the entire third track. Major power and signal system elements have been put in service in preparation for the 3 rd Track cutover. Installation and adjustment of track ties, rail and switches have begun in various locations through the corridor.
+[p021_c0009] There is no float left in the schedule to meet the Q4 opening, and every weekend outage on the project is critical. The LIRR, 3TC (Halmar, John Piccone, Dragados and CCA) and C&D are in very close alignment in addressing all issues rapidly to enable the project to be completed. This integrated team approach is the basis for the success for this project.
+[p021_c0010] The project continues to progress on all fronts:
+### [p021_c0011] Grade Crossings
+- [p021_c0012] • With the completion of the Willis Avenue grade crossings in September, all 8 at-grade crossings along the Main Line have now been permanently eliminated.
+### [p021_c0013] Track and Systems
+- [p021_c0014] • Signals and Interlockings from Floral Park to Mineola have been installed and commissioned. Nassau 1 Interlocking was commissioned and placed into service in February 2021.
+[p021_c0015] _Page 10 of 11_
+[p021_c0016] _Master Page # 21 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 22
+
+### [p022_c0001] MTA Board & Capital Program Committee Update Integrated Projects May 2022
+- [p022_c0002] • Signals and Interlockings from Mineola to Hicksville: supporting infrastructure (Track Switches, Signal Control Houses, Signal Power, Communications Equipment and Networks, Fiber-Optic Cables, Utility Poles) are being installed. Nassau 3 and Divide 1 Interlockings were commissioned and put into service in March 2022. • Park 1 and Park 2 Interlockings and supporting infrastructure are being installed along the Hempstead Branch. Park 1 and Park 2 are forecasted to be commissioned in Q3 2022. • Infrastructure to support Nassau 2 Interlocking is scheduled to be completed in Q4 2022 and will be commissioned immediately thereafter. • Divide 4 Interlocking supporting infrastructure is scheduled to be completed at the end of Q2 2023 and will be commissioned thereafter.
+### [p022_c0003] Stations
+- [p022_c0004] • Construction at all stations is underway or has been completed. • Merillon Ave Station is open and the elevators are now operational. Punchlist work remains. • New Hyde Park Station platform and the S. 12th Street underpass are open. The station building opened on May 2nd. Punchlist work remains. • Mineola Station construction is ongoing. Currently an 8-car platform is in service. Forecast for full operation is Q3 2022, with the Main Street overpass expected to be in full operation by Project Final Completion (April 2023). • Westbury Station construction began in spring 2021 and is currently progressing on schedule. Construction of the permanent platforms, walls and overpass were completed. Forecast full operation in Q4 2022.
+### [p022_c0005] Bridges
+- [p022_c0006] • All bridges were completed by Q2 2022, with remaining roadway work to be completed at Denton Avenue Bridge.
+### [p022_c0007] Parking garages
+- [p022_c0008] • Harrison Ave Garage was turned over to the Town of Mineola on December 1, 2021 and contains 551 parking spots. • Westbury North Garage was opened to the public in August 2021 and contains 683 parking spots. • Mineola 2 nd Street Garage has been removed from the Contract and is progressing through a Transit Oriented Development project.
+[p022_c0009] _Page 11 of 11_
+[p022_c0010] _Master Page # 22 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 23
+
+### [p023_c0001] May 2022 CPC Independent Engineering Consultant Project Review
+### [p023_c0002] MNR - Penn Station Access
+> [p023_c0003] The logo for McKissack, featuring a red square with a white star in the upper right corner and a large white letter 'M' in the center.
+[p023_c0004] McKISSACK MTA Independent Engineering Consultant
+[p023_c0005] _Master Page # 23 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 24
+
+### [p024_c0001] MNR - Penn Station Access
+### [p024_c0002] Scope of Work
+- [p024_c0003] ■ Provide improved rail access to PSNY from southern Connecticut, Westchester County, and the eastern Bronx. The Project is needed to: ■ Reduce travel times to and from Penn Station New York by providing direct service to Metro-North New Haven Line (NHL) customers. ■ Introduce convenient, direct rail service to the east Bronx, currently underserved by mass transit. ■ Provide infrastructure improvements that aim to meet the transportation and infrastructure industry standard for sustainability. ■ The Design Build (D-B) project scope elements include but are not limited to: ■ Realigning existing tracks and constructing two (2) new passenger tracks along a three-mile segment of the Hell Gate Line (HGL), 19 miles of new track within the 6-mile project area of the HGL. ■ Upgrade Signals and Communications; 3 rd Rail Traction Power and Overhead Contact Systems. ■ Install five (5) new interlockings and reconstruct one (1) existing interlocking. ■ Construct four (4) new Metro-North ADA Accessible stations. ■ Rehabilitate/reconstruct four (4) rail bridges. ■ Public outreach keeping Project Stakeholders and Community informed. ■ Option for reconfiguration of Metro-North's New Rochelle Yard (NRY).
+[p024_c0004] McKIBACK MTA Independent Engineering Consultant
+[p024_c0005] _2_
+[p024_c0006] _Master Page # 24 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 25
+
+### [p025_c0001] MNR - Penn Station Access
+### [p025_c0002] Schedule
+- [p025_c0003] ■ MTA C&D awarded a Design-Build (D-B) Contract in December 2021, for a construction duration of 63 months to Halmar International, LLC/RailWorks, a Joint Venture (HRJV). ■ Overall Design Status is 45% complete. ■ Schedule time elapsed from NTP is 6.3% ■ Base Contract NTP issued: January 2022 ■ NRY Option work contractual Notice to Proceed (NTP) shall be executed by January 2023, to maintain SC date as noted above. ■ Project Baseline Schedule submitted by the D-B team to MTA for approval. ■ The Design/Build Phase and Cost Share Agreement for the Penn Station Access (PSA) Project between MTA and National Railroad Passenger Corporation (Amtrak) was executed effective December 2021. ■ Included in the agreement, Amtrak will pay project delay costs up to $50M, if it does not provide agreed upon amount of track outages and force account personnel to support the project. ■ Substantial Completion (SC) 63 months: March 2027 ■ Contractual Final Completion: June 2027 ■ The IEC review of the Base Line Schedule finds that the SC date noted is attainable.
+[p025_c0004] _McKISSACK MTA Independent Engineering Consultant_
+[p025_c0005] _3_
+[p025_c0006] _Master Page # 25 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 26
+
+### [p026_c0001] MNR - Penn Station Access
+### [p026_c0002] Budget
+- [p026_c0003] ■ Awarded a D-B Services contract in December 2021 to HRJV: ■ Base Contract amount $1.7B ■ Total Contract Award amount (includes Option work) $1.8B ■ DBE participation goal 22.5% of the contract amount ■ Forecast total Project Estimate At Completion (EAC) $2.9B ■ Includes unfunded future options and deferred components ■ IEC performed a review of the total project cost, inclusive of contingency, work in place, soft costs, potential change orders and agrees with the project EAC of $2.9B.
+> [p026_c0004] The logo for McKissack, featuring a stylized red 'M' with a white star in the upper right corner.
+[p026_c0005] McKISSACK MTA Independent Engineering Consultant
+[p026_c0006] _4_
+[p026_c0007] _Master Page # 26 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 27
+
+### [p027_c0001] MNR - Penn Station Access
+### [p027_c0002] Risks and Status
+- [p027_c0003] ■ Amtrak availability and scheduling force account labor supporting construction activities as well as multiple internal AMTRAK projects competing for resources. ■ Amtrak is in the process of retaining additional labor force staff who will be dedicated to the PSA project to allow work-flow continuance. ■ Amtrak and CSX maintenance agreement - Ongoing negotiations. ■ Upon completion of the pre-design phase, CSX approved the track alignment, however, CSX has not been timely in their review and comment/approval of the documents submitted causing concern for delay in obtaining approvals. PMT continues discussions with CSX to expedite reviews. ■ Delay in obtaining outside public agency property and permit approvals e.g., NYC Park Dept., and NYSDOT. ■ Multiple meetings have been held as well as follow up coordination with project stakeholders to resolve and mitigate issues. Outstanding agreements are being finalized to obtain requisite approvals when required per forecast schedule. ■ Delay of MOU agreement between MTA/Con Edison could impact Oak and Van Nest sub-station construction. ■ Agreement is in its final stages for approval. ■ The IEC finds that the project management team and responsible stakeholders are actively addressing the noted risks.
+> [p027_c0004] The logo for McKissack, featuring a stylized red 'M' with a white star in the upper right corner.
+[p027_c0005] McKISSACK MTA Independent Engineering Consultant
+[p027_c0006] _5_
+[p027_c0007] _Master Page # 27 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 28
+
+### [p028_c0001] MNR - Penn Station Access
+### [p028_c0002] Observations
+- [p028_c0003] ■ IEC has observed the following management, design, and field construction activities: ■ Program Management Team (PMT) comprised of MTA/PMC/Amtrak have commenced work and are effectively managing this D-B project. ■ HRJV established a Project Field Office as of April 2022, in New Rochelle, NY. Both PMT and HRJV are co-located in the building. MTA has requested that Amtrak's PMC consultant also establish a daily presence in the office. ■ Design progress documents are being submitted by HRJV, reviewed and commented/approved by the PMT. "Over the Shoulder" design progress and weekly technical design coordination meetings are being held regularly. ■ HRJV subcontractors are performing survey work, soil boring investigation to support structural design elements, also environmental assessments and alignment surveys. Work is being performed both within and outside of Amtrak ROW in accordance with permittee requirements. ■ PMT commenced preparation of "Risk Register" to identify, monitor, and mitigate risks effectively. IEC is participating in this process. ■ Power requirements coordination continues with Con Edison and HRJV to determine Property Line Box locations and power load requirements. ■ PSA team continues its Public Outreach engagement with internal and external stakeholders, Bronx Community Boards and the City of New Rochelle.
+> [p028_c0004] The logo for McKissack, featuring a stylized red 'M' with a white star in the upper right corner.
+[p028_c0005] MTA Independent Engineering Consultant
+[p028_c0006] _6_
+[p028_c0007] _Master Page # 28 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 29
+
+### [p029_c0001] May 2022 CPC Independent Engineering Consultant Project Review
+### [p029_c0002] Penn Station – East End Gateway (Phase 1) & LIRR Concourse (Phase 2)
+> [p029_c0003] The logo for McKissack, featuring a red square with a white star in the upper right corner and a large white letter 'M' in the center.
+[p029_c0004] McKISSACK MTA Independent Engineering Consultant
+[p029_c0005] _Master Page # 29 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 30
+
+### [p030_c0001] Penn Station – LIRR Concourse
+### [p030_c0002] Scope of Work
+[p030_c0003] Phase 1 (East End Gateway) of a two-phase Penn Station improvement is complete.
+[p030_c0004] The in-progress Phase 2 (LIRR Concourse) provides for the widening of the corridor to almost twice its current 30-foot width and raises the ceiling to 18 feet from a low of less than 7 feet, reducing congestion and adding more air and light. It also provides American with Disability Act (ADA) improvements and enhanced wayfinding.
+[p030_c0005] This two-phase project involves numerous stakeholders including multiple railroads, a developer, and NY State.
+[p030_c0006] The Design-Build (D-B) contractor (Skanska/Penn Station Constructors) was awarded the contract in December 2020.
+[p030_c0007] Major Phase 2 Work Elements:
+- [p030_c0008] ■ Luminous ceiling installation ■ Rebuild existing structure with raised ceiling and widened corridor ■ One new elevator from street to concourse and four replacement elevators ■ Air Handling Unit installations (AHUs)
+[p030_c0009] _The Reimagined LIRR Concourse_
+[p030_c0010] _McKIBACK MTA Independent Engineering Consultant_
+[p030_c0011] _2_
+[p030_c0012] _Master Page # 30 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 31
+
+### [p031_c0001] Penn Station – LIRR Concourse
+### [p031_c0002] Schedule Review
+- [p031_c0003] ■ The project is 65% complete and remains on schedule. ■ The IEC finds that the project has successfully completed the following major work: ■ Demolished barreled ceiling and reframed the street and Penn Station roof allowing for a new 18-foot ceiling. ■ Relocated utilities and retail spaces and created structural framework for the widening on the corridor. ■ New Boiler installation and operations in December 2021. ■ The installation of replacement elevator 215 from Concourse to 2/3 subway platform in March 2022, ahead of schedule. ■ The IEC's review of the schedule, completed and remaining work finds: ■ C&D's goal to open the LIRR Concourse in December 2022 is challenging due to remaining work and supply chain issues to be completed within a compressed schedule. ■ IEC believes C&D can achieve contractual Substantial Completion by March 2023.
+> [p031_c0004] The logo for McKissack, featuring a stylized red letter 'M' with a white star in the upper right corner.
+[p031_c0005] McKISSACK MTA Independent Engineering Consultant
+[p031_c0006] _3_
+[p031_c0007] _Master Page # 31 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 32
+
+### [p032_c0001] Penn Station – LIRR Concourse
+### [p032_c0002] Budget Review
+[p032_c0003] The IEC performed a review of the project contingency, work in place, soft costs, change orders and risks for remaining work and finds both the Budget and Estimate at Completion (EAC) of $538.7M, which has not changed since the project's last report, is sufficient to complete the project.
+> [p032_c0004] The logo for McKissack, featuring a red square with a white star in the upper right corner and a large white letter 'M' in the center.
+[p032_c0005] McKISSACK MTA Independent Engineering Consultant
+[p032_c0006] _4_
+[p032_c0007] _Master Page # 32 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 33
+
+### [p033_c0001] Penn Station – LIRR Concourse
+### [p033_c0002] Risks and Mitigations
+- [p033_c0003] ■ Potential Supply Chain disruptions of material and equipment deliveries which may delay completion of work. ■ Project has mitigated and continues to mitigate potential risks through the following actions: ■ Frequent coordination meetings which identify opportunities for early procurement of material and equipment. ■ Obtained assurances from manufacturers of raw material availability, accelerated ordering of long lead items, enacted dedicated freight shipping. ■ Project is receiving live updates on current market conditions for critical architectural finishes and components adding and adjusting procurement needs accordingly. ■ Eliminate factory mock-ups to expedite the approval and delivery of material and equipment. ■ Potential delay in Code Compliance approvals: ■ The project team is sharing punch-list, responsibility and commissioning matrices with code compliance group, convening weekly meetings and conducting regular site inspections to prompt timely signoffs. ■ It is the IEC's opinion that the actions of the project team serve as reasonable mitigations for the identified risks.
+> [p033_c0004] The logo for McKissack, featuring a stylized red 'M' with a white star in the upper right corner.
+[p033_c0005] McKISSACK MTA Independent Engineering Consultant
+[p033_c0006] _5_
+[p033_c0007] _Master Page # 33 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 34
+
+### [p034_c0001] May 2022 CPC Independent Engineering Consultant Project Review
+### [p034_c0002] East Side Access
+> [p034_c0003] The logo for McKissack, featuring a red square with a white star in the upper right corner and a large white letter 'M' in the center.
+[p034_c0004] McKISSACK MTA Independent Engineering Consultant
+[p034_c0005] _Master Page # 34 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 35
+
+### [p035_c0001] East Side Access
+### [p035_c0002] Scope of Work
+- [p035_c0003] ■ The East Side Access project will provide a new Long Island Railroad (LIRR) commuter service into Grand Central Terminal (GCT). □ Over 11.5 miles of tunneling, utilizing the vacant lower level of the existing 63 rd Street tunnel to cross under the East River □ New 8-track terminal and concourse beneath Metro North Railroad's (MNR) existing facility at GCT □ Improvements in Harold Interlocking that will facilitate train movements through the existing and new tracks □ Train storage yard in Queens □ Traction power, signal, communications, and life safety systems □ Commissioning of all new facilities and systems □ New M9A LIRR vehicles ■ Mitigations measures are in place to address the unavailability of the M9A cars (160) at the start of revenue service.
+> [p035_c0004] The logo for McKissack, featuring a stylized red 'M' with a white star in the upper right corner.
+[p035_c0005] MTA Independent Engineering Consultant
+[p035_c0006] _2_
+[p035_c0007] _Master Page # 35 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 36
+
+### [p036_c0001] East Side Access
+### [p036_c0002] Budget
+- [p036_c0003] □ The Independent Engineering Consultant's (IEC) analysis indicates that the budget of $11.13 Billion remains sufficient to complete the work required to enter revenue service in December 2022. □ This analysis considers the use of available contingency to address all known third party and force account issues, pending change orders, and risks on remaining work. □ There are numerous outstanding claims for this project. There is a risk that these claims get settled for a higher value than estimated, which may result in the need for additional funds.
+> [p036_c0004] The logo for McKissack, featuring a large red letter 'M' with a white star in the upper right corner.
+[p036_c0005] McKISSACK MTA Independent Engineering Consultant
+[p036_c0006] _3_
+[p036_c0007] _Master Page # 36 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 37
+
+### [p037_c0001] East Side Access
+### [p037_c0002] Schedule
+- [p037_c0003] ■ As per the IEC's schedule analysis, the revenue service in December 2022, is still achievable, contingent on increased productivity for the remaining system work. ■ The coordination efforts and the new Rail Group have contributed to the success in making the rail systems operational, which allowed Physical Characteristics Training with equipment to start in April 2022. ■ Since the last report, Fire Alarm (FA), Building Management System/Fire Life Safety System (BMS/FLSS) have been delayed due to contractor coordination issues, need for re-work and change orders. This has compressed the takeover period of ESA facilities/ concourse and pre-revenue operations from 3 months to 1.5 months. ■ FA, BMS/FLSS and Positive Train Control (PTC) are the key testing activities essential in meeting the Revenue Service Date (RSD). The IEC concurs with the mitigation efforts being implemented to complete this work. ■ To advance the Fire Alarm testing, the contractors have committed to work additional days and extended work shifts. ■ For BMS/FLSS, which has been impacted by the elevators/escalators remediation work, the Integrated Systems Testing (IST) will be performed in a phased approach. This consists of testing the available equipment, while allowing escalators and elevators to be tested once remediation is complete. Further mitigation, such as extended work shifts/days, is being negotiated with the contractor. ■ To advance the PTC work and ensure completion by RSD, LIRR provided items that were long lead if purchased by the contractor and expects to increase manpower for PTC testing.
+> [p037_c0004] The logo for McKissack, featuring a stylized red 'M' with a white star in the upper right corner.
+[p037_c0005] MTA Independent Engineering Consultant
+[p037_c0006] _4_
+[p037_c0007] _Master Page # 37 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 38
+
+### [p038_c0001] East Side Access
+### [p038_c0002] Observations
+- [p038_c0003] ■ In the IEC's opinion, for final Safety and Security Certification (SSC) required for revenue service, additional staff may be necessary to expedite the submittal and approval process for the required documentation. The delays to systems testing, reallocation of SSC resources to support testing, and subsequent submittal of reports, have contributed to the slow progress on the SSC for the major contracts. ■ The IEC concurs with the measures being implemented to facilitate the issuance of a Certificate of Occupancy by revenue service. ■ Early involvement of MTA Fire Alarm/Code Compliance unit and the LIRR Fire Marshal during testing is assisting in the identification of fire life safety and code issues. This allows time for remediation work, prior to inspections and certification. ■ Close coordination continues between the project team, LIRR and the Federal Railroad Administration (FRA) to ensure a safe and smooth transition from construction completion to railroad readiness and to start-up operations. ■ Emergency Preparedness, with participation from LIRR/MNR operations and emergency service providers, has commenced. Several systems (tunnel ventilation, radio in the concourse and public address) should be completed prior to live exercise emergency drills. ■ LIRR staffing ramp-up is necessary to achieve the required number of employees to support revenue operations. Outreach efforts are advancing to attract new applicants, focusing on positions that are harder to fill.
+[p038_c0004] MTA Independent Engineering Consultant
+[p038_c0005] _5_
+[p038_c0006] _Master Page # 38 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 39
+
+### [p039_c0001] East Side Access
+### [p039_c0002] Observations
+- [p039_c0003] ■ Progress has been observed in the staffing of the MTA Grand Central Madison Concourse (GCMC) group, and the development of the procurement packages for the contracts that will be performing Operation and Maintenance of ESA assets. ■ MTA executive staff has been appointed to the MTA GCMC group, which will manage the ESA assets at the time of revenue service. ■ LIRR will operate and maintain the rail systems (signal, traction power, third rail) at the time of revenue service. Currently, an interim maintenance contract (IM-1) is in place to support LIRR. ■ Long term Third-Party Operation and Maintenance (O&M) contracts will be ultimately used for the concourse and facility systems. An interim maintenance contract (IM-2) is expected to be in place until the Third-Party contracts are awarded. ■ The IEC has observed that further delineation of scope, responsibilities and handovers are necessary to execute the Operation & Maintenance tasks under the MTA/LIRR/Grand Central Madison Concourse agreement.
+> [p039_c0004] The logo for McKissack, featuring a red square with a white star in the upper right corner and a large white letter 'M' in the center.
+[p039_c0005] McKISSACK MTA Independent Engineering Consultant
+[p039_c0006] _6_
+[p039_c0007] _Master Page # 39 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 40
+
+### [p040_c0001] East Side Access
+### [p040_c0002] Risks and Mitigations
+- [p040_c0003] ■ The project team continues to focus on completing the systems testing work and obtain the certifications required for revenue service. As issues are identified and risks realized, mitigation measures continue to be developed by the project team and implemented by the contractors. ■ The following top risks remain to the program: ■ Continued delays to the completion of systems testing may further compress the takeover period and/or delay revenue service. ■ Positive Train Control in the ESA territory is required for opening day. Delays to this work beyond the forecast date of November 2022 may add pressure to the RSD. ■ Further delays to the submission of the required contractors' documentation, including test reports, and subsequent approval by Safety and Security Certification Committee may delay revenue service. ■ As fire life safety and code issues continue to be identified, there is risk that the required remediation work and subsequent inspections may take longer than anticipated. This may delay the issuance of a Certificate of Occupancy.
+> [p040_c0004] The logo for McKissack, featuring a red square with a white star in the upper right corner and a large white letter 'M' below it.
+[p040_c0005] McKISSACK MTA Independent Engineering Consultant
+[p040_c0006] _7_
+[p040_c0007] _Master Page # 40 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 41
+
+### [p041_c0001] May 2022 CPC Independent Engineering Consultant Project Review
+### [p041_c0002] Long Island Rail Road Expansion
+> [p041_c0003] The logo for McKissack, featuring a red square with a white star in the upper right corner and a large white letter 'M' in the center.
+[p041_c0004] McKISSACK MTA Independent Engineering Consultant
+[p041_c0005] _Master Page # 41 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 42
+
+### [p042_c0001] Long Island Rail Road Expansion
+### [p042_c0002] Scope of Work
+- [p042_c0003] ■ The primary purpose of the LIRR Expansion Project is to improve rail service, reliability, availability and public safety along the LIRR Main Line segment between Floral Park and Hicksville by constructing a third track, eliminating eight grade crossings, constructing various station improvements and modifications, parking garages and other related railroad infrastructure improvements. Major system elements that require modification for traction power and signal power within project limits are eight substations and three motor-generator sets. ■ The 9.8-mile project is divided into three signal interlocking block cutovers (see figure below). Block 1 is Queens interlocking to Nassau 1 interlocking; Block 2 in Nassau 1 to Nassau 3 Interlocking; Block 3 is Nassau 3 to Divide Interlocking.
+> [p042_c0004] The image is a map of the Long Island Rail Road (LIRR) Main Line segment between Floral Park and Hicksville. A red line traces the rail line, which is divided into three distinct sections by vertical red lines. These sections are labeled 'Block 1', 'Block 2', and 'Block 3' in green boxes with arrows pointing to their respective segments. Block 1 covers the area from Floral Park to the Oyster Bay Branch. Block 2 covers the area from the Oyster Bay Branch to the Nassau 3 Interlocking. Block 3 covers the area from the Nassau 3 Interlocking to the Divide Interlocking. The map includes labels for various locations: FLORAL PARK, TEMPLETOWN BRANCH, NEW HIDE PARK, WHELLON AVE, OYSTER BAY BRANCH, MINICOLA, CAFE PLACE, WESTBURY, LIRR MAINLINE, and HICKSVILLE. There are also directional arrows pointing to 'TO PORT JEFFERSON' and 'TO GOSNOR/ROSWAY'. A north arrow is located in the bottom right corner.
+> [p042_c0005] The logo for McKiback, featuring a stylized red 'M' with a white star inside it.
+[p042_c0006] MTA Independent Engineering Consultant
+[p042_c0007] _2_
+[p042_c0008] _Master Page # 42 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 43
+
+### [p043_c0001] Long Island Rail Road Expansion
+### [p043_c0002] Schedule
+- [p043_c0003] ❑ The IEC's review of the schedule and progress of work to date verifies that the project's forecasted substantial completion date of April 2023 for major construction is achievable barring no major unforeseen condition. ❑ The field progress, based on contractor's invoice to date, is 87% complete vs. 89% of the time expended. ❑ The project team continues to work aggressively to achieve a 4th quarter 2022 in-service date. ❑ The critical path goes through the completion of Nassau 2 design and fabrication, installation and testing. Concurrently, the Nassau 2 tie-in to Nassau 4 design and material are also driving the testing of Nassau 2 interlocking signal system. ❑ Adherence to completing planned work within the LIRR 2022 system outage plan is critical to success of maintaining schedule. Continued oversight of the signal system designer will be essential in achieving the required milestone. ❑ The project is on target to cutover of Block 1 (Floral Park to east of New Hyde Park station) in August 2022. ❑ Major near-critical path activities are: ❑ Westbury Station work. ❑ Mineola Station work. ❑ Installation and commissioning of substations; (G14,G15) and (G19,G20).
+> [p043_c0004] The logo for McKissack, featuring a stylized red 'M' with a white star in the upper right corner.
+[p043_c0005] MTA Independent Engineering Consultant
+[p043_c0006] _3_
+[p043_c0007] _Master Page # 43 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 44
+
+### [p044_c0001] Long Island Rail Road Expansion
+### [p044_c0002] Budget
+- [p044_c0003] □ The project budget is $2.48B and Estimate at Completion(EAC) is $2.44B. Project expenditures to date of $ 1.96B are in line with plan. Based on expenditures to date, project contingency and estimated future costs, the IEC forecasts an EAC that is trending within the budget. □ Favorable project expenditures in soft cost and many of the potential high impact risks have not been realized, thereby leaving adequate project contingency and reserve which keeps the EAC below the budget.
+> [p044_c0004] The logo for McKissack, featuring a red square with a white star in the upper right corner and a large white letter 'M' below it.
+[p044_c0005] McKISSACK MTA Independent Engineering Consultant
+[p044_c0006] _4_
+[p044_c0007] _Master Page # 44 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 45
+
+### [p045_c0001] Long Island Rail Road Expansion
+### [p045_c0002] Risks and mitigations
+[p045_c0003] A quarterly Quantitative and Qualitative Risk Analysis (RA) which evaluates current project risks was performed on April 25, 2022. The top risks and mitigations are:
+- [p045_c0004] ■ Potential delays due to unplanned events such as, weather or equipment failure may prevent the successful completion of work during the limited number (19) of planned double track outages (DTO) in 2022. ■ The project team is conducting weekly coordination meetings with a focus on phasing plans, means and methods, manpower needs and progress against plan. This has led to successfully completing 10 out of 19 DTOs. ■ Increased focus of LIRR signal resources for the review of Divide 4/ Nassau 2 design and planned work. ■ Potential delays associated with completion of all station construction work. ■ Project Team is focusing on completing work as planned and successfully placed 2 nd pedestrian overpass at Westbury station on time. ■ As the project moves closer to contract completion, a risk of unforeseen claims; escalation of flagging cost and insufficient use of resources become more likely. ■ Project Team is mitigating this risk by reviewing recent claim cost and tracking and reconciling flagging and resource costs with the contractor.
+> [p045_c0005] The logo for McKissack, featuring a stylized red 'M' with a white star in the upper right corner.
+[p045_c0006] MTA Independent Engineering Consultant
+[p045_c0007] _5_
+[p045_c0008] _Master Page # 45 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 46
+
+### [p046_c0001] Long Island Rail Road Expansion
+### [p046_c0002] Observations
+- [p046_c0003] ■ Central to the opinion of the IEC, the project management team has made significant progress on milestones since last report: ■ Denton Avenue Bridge cutover completed. ■ New Nassau 3/Divide 1 cutover completed. ■ New Hyde Park Pedestrian Underpass completed. ■ An increased level of attention should be maintained for proper planning of resources by the contractor to effectively closeout the remaining system elements and paperwork for final project completion.
+> [p046_c0004] The logo for McKissack, featuring a red square with a white star in the upper right corner and a large white letter 'M' in the center.
+[p046_c0005] McKISSACK MTA Independent Engineering Consultant
+[p046_c0006] _6_
+[p046_c0007] _Master Page # 46 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 47
+
+### [p047_c0001] Construction & Development
+### [p047_c0002] SAFETY SUMMARY
+### [p047_c0003] TOTAL RECORDABLE INCIDENT RATE (TRIR) & LOST TIME INCIDENT RATE (LTIR)
+> [p047_c0004] Month TRIR (Current) LTIR (Current) TRIR National Avg LTIR National Avg Apr-21 3.60 2.61 2.00 1.30 May-21 3.60 2.50 2.00 1.30 Jun-21 3.40 2.30 2.00 1.30 Jul-21 3.20 2.10 2.00 1.30 Aug-21 2.90 1.90 2.00 1.30 Sep-21 2.90 1.80 2.00 1.30 Oct-21 2.90 1.80 2.00 1.30 Nov-21 2.90 1.80 2.00 1.30 Dec-21 2.90 1.70 2.00 1.30 Jan-22 2.80 1.50 2.00 1.30 Feb-22 2.87 1.70 2.00 1.30 Mar-22 2.80 1.60 2.00 1.30
+### [p047_c0005] SAFETY NARRATIVE
+### [p047_c0006] INCIDENTS (MONTH MARCH) – Six (6) Lost Time and One (1) Recordable
+- [p047_c0007] • There were Six (6) Lost Time Incidents: B&T – Two (2), Infrastructure Two (2), ESA and 3TC – One (1) each. • There was One (1) Recordable Incident: MNR – One (1) • Lost Time Injuries for March include Two (2) Struck By, Two (2) Material Handling - Push/Pull, and Two (2) Falls.
+### [p047_c0008] INVESTIGATIONS:
+- [p047_c0009] • B&T – LT – 4/2/2022 - VN-32/49X – Worker felt sharp pain in back removing paint pails from vehicle. Investigation determined worker was performing unsafe act – improper lifting techniques - resulting to 2 lost days. • B&T – LT – 4/10/2022 – CB/MP – Painter fell backward on back carrying 5-gallon paint bucket. Investigation showed worker tripped over his feet while walking surface was free of obstructions- lost 3 days work. • 3TC – REC – 4/18/2022 – Hicksville Station - Operator improperly using Demo Saw cut lower leg approx. 30 stitches. The employee returned to work the next day on modified duty. • INF-LT-4/29/2022-ENY Bus Depot -Iron worker was struck in the lower leg by a steel beam that was placed in a steel “shake out” area prior to being lifted into position on the roof of the Bus Depot. As the rigging was loosened, the Iron Worker did not step far enough away from the beams, the beams shifted and struck his lower leg. Worker had surgery and a pin placed in his lower leg and remains out of work.
+### [p047_c0010] AUDITS: INTERNAL – 292 EXTERNAL – 418 Includes 378 OCIP Visits
+- [p047_c0011] • The Top Safety Hazards found include General Safety/Housekeeping, Supervision/Organization, Fire Protection/Prevention and Barricades/Enclosure. • Positive Findings include Hand & Power Tools, Stairs/Ladders, Supervision/Organization, and Electrical.
+### [p047_c0012] TRENDS:
+- [p047_c0013] • As a result of the decrease in workhours even with the decrease of Incidents from last year, the Incident rates basically remained level for Recordable and Lost Time Rates. • Lost Time and Recordable Incidents are lower than the same reporting period for 2021 (50% and 25% respectively). • General Safety and Supervision/Organization positive observations increased from the previous month.
+### [p047_c0014] ACTIONS:
+- [p047_c0015] • PMT’s throughout the MTA C&D Business Units and Integrated Projects, continue to be reminded of the need for their offices to continue being active participants in ensuring safety compliance and oversight of their projects. • In the Stations BU, the PMC Safety Manager for Contract A-37151, (8 Stations ADA), conducted a project wide Safety Standdown at two locations, on 4/29/2022, to address some of the recent incidents/deficiencies that had occurred. There was a strong emphasis on the seriousness of fall hazards. All Safety Coordinators were instructed to review all components of the proper use of a Personal Fall Arrest System.
+[p047_c0016] _Master Page # 47 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 48
+
+### [p048_c0001] Construction & Development
+### [p048_c0002] SAFETY SUMMARY
+- [p048_c0003] • C&D Safety continues to try to increase the amount of randomized Safety Inspections throughout C&D projects, however, the need for review of project Safety Submittals is creating some challenges to this effort. • The AECOM Safety Assessment Initiative for C&D NYCT BU's is complete. The team will be moving onto B&T and MNR for Meetings and Observations. The Team continues to review of project safety deliverables with the project teams, Contractor, PMC and MTA C&D Project Management. To date, the team has met with the PMT's of 10 projects. • On April 26, 2022, members of the PMC and DB under Contract E-30436 were performing surveys of the escalators at the Bowling Green Station and were observed by the Chief of C&D Safety working without the full complement of required PPE. The team was informed of the PPE requirements while working on C&D projects and did so immediately. The PCEO was advised of the observation and immediately convened a meeting with the PMC and DB to remind them of the need to comply with MTA C&D safety requirements.
+[p048_c0004] _Master Page # 48 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 49
+
+### [p049_c0001] Master Page # 49 of 75 - Capital Program Committee Meeting 5/23/2022
+### [p049_c0002] MTA Capital Program Commitments & Completions
+[p049_c0003] through April 30, 2022
+[p049_c0004] _Metropolitan Transportation Authority_
+
+## Page 50
+
+### [p050_c0001] MTA Metropolitan Transportation Authority
+### [p050_c0002] Master Page # 50 of 75 - Capital Program Committee Meeting 5/23/2022
+### [p050_c0003] Capital Projects – Commitments – April 2022
+### [p050_c0004] MTA-wide 2022 Commitments
+> [p050_c0005] Period 2022 Annual Goal ($M) Budgeted Value ($M) Actual / Forecast ($M) 1Q $1,173 $730 $803 2Q $1,861 $1,013 $1,429 3Q $2,149 $1,755 $1,992 4Q $2,884 $3,899 $3,991 YTD $1,490 $1,047 $1,117 2022 Annual Goal $8,067 Annual Forecast $8,215 Forecast left to commit 87% ($7,169)
+[p050_c0006] Annual Goals: Dollar and time-based programmatic milestones for the commitment of contracts established at the start of each year and which are achievable during the year.
+[p050_c0007] Actuals: The value of the goals and any additional unplanned commitments as they are achieved during the year.
+[p050_c0008] Forecasts: The updated estimates by quarter for remaining goals as well as any unplanned commitments that might occur during the year.
+[p050_c0009] Budget: The budgeted value assumed in the capital program for the Actual and Forecasted commitments being tracked during the year.
+### [p050_c0010] Commitments Summary
+[p050_c0011] In 2022 the MTA plans to commit $8.1 billion worth of capital projects. Through April, the MTA has committed $1.1 billion versus a $1.5 billion year-to-date goal. The shortfall is mostly due to the delayed awards of $577 million of NYCT projects. This shortfall is partly offset by higher than anticipated commitments at the LIRR. By year end, the MTA forecasts meeting or exceeding its $8.1 billion goal.
+
+## Page 51
+
+### [p051_c0001] MTA Metropolitan Transportation Authority
+### [p051_c0002] Master Page # 51 of 75 - Capital Program Committee Meeting 5/23/2022
+### [p051_c0003] NYCT/MTA Bus Capital Projects – Commitments – April 2022 – Budget Analysis and Schedule Variances
+### [p051_c0004] NYCT and MTA Bus Budget Analysis
+[p051_c0005]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2022 Annual Goal $832 $1,639 $1,545 $1,494 $1,065 2022 Forecast $427 $1,011 $1,340 $2,549 $487 Budgeted Value $355 $602 $1,103 $2,457 $397
+```
+> [p051_c0006] NYCT and MTA Bus Budget Analysis Data Period 2022 Annual Goal ($ mil) Budgeted Value ($ mil) 2022 Forecast ($ mil) 1Q 832 355 427 2Q 1,639 602 1,011 3Q 1,545 1,103 1,340 4Q 1,494 2,457 2,549 YTD 1,065 397 487
+### [p051_c0007] Q1 Schedule Variances
+[p051_c0008]
+
+```text
+Project Commitment Goal Forecast
+```
+### [p051_c0009] 2 NYCT/MTA Bus Amber Commitments
+[p051_c0010] Amber delays are within 2 months of goal.
+### [p051_c0011] Line Structures
+[p051_c0012]
+
+```text
+E. 180th St ROW Bundle / WPR, Dyre Construction Mar-22 May-22 $ 175.0 174.9
+```
+[p051_c0013] The award date was initially delayed until April 2022 to address proposer concerns by removing negative rail work from the project scope as well as introducing B&T practices for structural painting into new specifications for use by NYCT. A more recent delay is connected with qualifying the proposed painting subcontractor.
+### [p051_c0014] Facilities
+[p051_c0015]
+
+```text
+Tiffany Central Warehouse Construction Feb-22 Mar-22 (A) $ 58.4 58.4
+```
+[p051_c0016] The award was rescheduled due to additional time needed to respond to questions and comments received from the proposers, which required technical changes to the contract
+
+## Page 52
+
+### [p052_c0001] MTA Metropolitan Transportation Authority
+### [p052_c0002] Master Page # 52 of 75 - Capital Program Committee Meeting 5/23/2022
+### [p052_c0003] LIRR Capital Projects – Commitments – April 2022 – Budget Analysis and Schedule Variances
+### [p052_c0004] LIRR Budget Analysis
+[p052_c0005]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2022 Annual Goal $0 $23 $168 $500 $0 2022 Forecast $35 $154 $176 $549 $177 Budgeted Value $35 $154 $176 $549 $177
+```
+> [p052_c0006] LIRR Budget Analysis Data (in millions of dollars) Period 2022 Annual Goal Budgeted Value 2022 Forecast 1Q $0 $35 $35 2Q $23 $154 $154 3Q $168 $176 $176 4Q $500 $549 $549 YTD $0 $177 $177
+### [p052_c0007] Q1 Schedule Variances
+[p052_c0008] There are no major schedule slippages to report for the Long Island Rail Road.
+
+## Page 53
+
+### [p053_c0001] MTA Metropolitan Transportation Authority
+### [p053_c0002] Master Page # 53 of 75 - Capital Program Committee Meeting 5/23/2022
+### [p053_c0003] MNR Capital Projects – Commitments – April 2022 – Budget Analysis and Schedule Variances
+### [p053_c0004] MNR Budget Analysis
+[p053_c0005]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2022 Annual Goal $31 $73 $103 $461 $32 2022 Forecast $29 $75 $106 $468 $74 Budgeted Value $28 $68 $106 $468 $67
+```
+> [p053_c0006] MNR Budget Analysis Data Period 2022 Annual Goal Budgeted Value 2022 Forecast 1Q $31 $28 $29 2Q $73 $68 $75 3Q $103 $106 $106 4Q $461 $468 $468 YTD $32 $67 $74
+### [p053_c0007] Q1 Schedule Variances
+[p053_c0008] There are no major schedule slippages to report for Metro-North Railroad.
+
+## Page 54
+
+### [p054_c0001] MTA Metropolitan Transportation Authority
+### [p054_c0002] Master Page # 54 of 75 - Capital Program Committee Meeting 5/23/2022
+### [p054_c0003] MTA Network Expansion Projects – Commitments – April 2022 – Budget Analysis and Schedule Variances
+### [p054_c0004] MTA Network Expansion Budget Analysis
+[p054_c0005]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2022 Annual Goal $278 $90 $269 $48 $358 2022 Forecast $266 $178 $279 $44 $331 Budgeted Value $266 $177 $279 $44 $358
+```
+> [p054_c0006] MTA Network Expansion Budget Analysis Data Period 2022 Annual Goal ($M) Budgeted Value ($M) 2022 Forecast ($M) 1Q 278 266 266 2Q 90 177 178 3Q 269 279 279 4Q 48 44 44 YTD 358 358 331
+### [p054_c0007] Q1 Schedule Variances
+[p054_c0008]
+
+```text
+Project Commitment Goal Actual
+```
+### [p054_c0009] 1 Network Expansion Amber Commitments
+[p054_c0010] Amber delays are within 2 months of goal.
+### [p054_c0011] East Side Access
+[p054_c0012]
+
+```text
+Interim Maintenance Contract Construction Mar-22 Apr-22 (A) $32.6 $20.8
+```
+[p054_c0013] The award was delayed due to additional time required for final contract negotiations. A reduction in scope resulted in a reduced award value.
+
+## Page 55
+
+### [p055_c0001] MTA Metropolitan Transportation Authority
+### [p055_c0002] Master Page # 55 of 75 - Capital Program Committee Meeting 5/23/2022
+### [p055_c0003] B&T Capital Projects – Commitments – April 2022 – Budget Analysis and Schedule Variances
+### [p055_c0004] B&T Budget Analysis
+[p055_c0005]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2022 Annual Goal $32 $37 $64 $380 $34 2022 Forecast $36 $12 $92 $380 $38 Budgeted Value $36 $12 $92 $380 $39
+```
+> [p055_c0006] B&T Budget Analysis Data Period 2022 Annual Goal ($M) Budgeted Value ($M) 2022 Forecast ($M) 1Q 32 36 36 2Q 37 12 12 3Q 64 92 92 4Q 380 380 380 YTD 34 39 38
+### [p055_c0007] Q1 Schedule Variances
+[p055_c0008] There are no major schedule slippages to report for MTA Bridges and Tunnels.
+
+## Page 56
+
+### [p056_c0001] MTA Metropolitan Transportation Authority
+### [p056_c0002] Master Page # 56 of 75 - Capital Program Committee Meeting 5/23/2022
+### [p056_c0003] Capital Projects – Completions – April 2022
+[p056_c0004]
+
+```text
+Actual MTA-wide 2022 Major Completions Post 2022 Goal Jan-22 Feb-22 Mar-22 Apr-22 May-22 Jun-22 Jul-22 Aug-22 Sep-22 Oct-22 Nov-22 Dec-22 2022 Total 53 2 1 4 3 3 12 2 5 2 3 4 12 0 Jan-22 1 1 Feb-22 2 1 1 Mar-22 5 3 1 1 Apr-22 6 2 2 2 May-22 3 1 2 Jun-22 11 9 2 Jul-22 3 1 1 1 Aug-22 5 5 Sep-22 2 1 1 Oct-22 3 3 Nov-22 4 4 Dec-22 8 8
+```
+[p056_c0005] BLUE = Forecast/Actual earlier than Goal GREEN = Forecast/actual matches Goal AMBER = Forecast/actual within 2 months of Goal RED = Forecast/actual beyond 2 months of Goal
+### [p056_c0006] Completions Summary
+[p056_c0007] In 2022 the MTA plans to complete $9.2 billion of projects. Through April, the MTA has completed $1.3 billion versus a $2.3 billion year-to-date goal. The shortfall is mostly due to the delayed completion of about $700 million of NYCT projects, four of which are identified as “major” completion slips for the first four months of the year on the following pages. These delayed completions are anticipated to be achieved later in the year. By year end, the MTA forecasts meeting its $9.2 billion goal.
+### [p056_c0008] Budget Analysis
+[p056_c0009]
+
+```text
+2022 Annual Goal $9,234 Annual Forecast $9,195 Forecast left to complete 85% ($7,852)
+```
+> [p056_c0010] ($ in millions) Category Value ($ in millions) Goal $2,296 Actual $1,343
+
+## Page 57
+
+### [p057_c0001] MTA Metropolitan Transportation Authority
+### [p057_c0002] Master Page # 57 of 75 - Capital Program Committee Meeting 5/23/2022
+### [p057_c0003] NYCT/MTA Bus Capital Projects – Completions – April 2022 – Budget Analysis and Schedule Variances
+### [p057_c0004] NYCT and MTA Bus Budget Analysis
+[p057_c0005]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2022 Annual Goal $1,032 $1,300 $1,236 $1,618 $1,473 2022 Forecast $655 $1,021 $1,358 $2,078 $773
+```
+[p057_c0006]
+
+```text
+2022 Goal (Rolling Stock) $185 $287 $80 $407 $424 Forecast (Rolling Stock) $99 $86 $226 $548 $99
+```
+> [p057_c0007] NYCT and MTA Bus Budget Analysis Data Quarter 2022 Annual Goal ($ in millions) 2022 Forecast ($ in millions) 1Q $1,032 $655 2Q $1,300 $1,021 3Q $1,236 $1,358 4Q $1,618 $2,078 YTD $1,473 $773
+### [p057_c0008] Schedule Variances
+[p057_c0009]
+
+```text
+Project Completion Goal Forecast
+```
+### [p057_c0010] 2 NYCT/MTA Bus Amber Completions
+[p057_c0011] Amber delays are within 2 months of goal.
+### [p057_c0012] Power
+[p057_c0013]
+
+```text
+New Substation: Harrison Pl / Canarsie Construction Feb-22 Apr-22 (A) $ 51.3 $ 51.3
+```
+[p057_c0014] The revised date reflects the delayed completion of equipment wiring and breaker energization.
+### [p057_c0015] Stations
+[p057_c0016]
+
+```text
+ADA: Livonia Avenue / Canarsie Construction Mar-22 May-22 $ 84.3 $ 84.3
+```
+[p057_c0017] The completion date reflects the additional time required to complete steel repairs and station painting.
+[p057_c0018]
+
+```text
+Project Completion Goal Forecast
+```
+### [p057_c0019] 4 NYCT/MTA Bus Red Completions (1 new this month)
+[p057_c0020] Red delays are beyond 2 months of goal.
+### [p057_c0021] Power
+[p057_c0022]
+
+```text
+Power Upgrade: RCC, PCC - Phase 2 Construction Feb-22 Jun-22 $ 63.4 $ 63.4
+```
+[p057_c0023] The revised date reflects the additional time needed to complete the equipment monitoring system.
+[p057_c0024]
+
+```text
+New Substations at New Dorp and Clifton Construction Apr-22 Dec-22 $ 50.4 $ 50.4
+```
+[p057_c0025] The project completion has been delayed until December 2022 due to final cables connection and testing.
+### [p057_c0026] Signals
+[p057_c0027]
+
+```text
+CBTC QBL West Ph.1 /Siemens Construction Jun-22 Dec-22 $ 214.6 $ 214.6
+```
+[p057_c0028] Substantial completion has been delayed due to carborne hardw are/firmw are testing.
+
+## Page 58
+
+### [p058_c0001] NYCT/MTA Bus Capital Projects – Completions – April 2022 – Budget Analysis and Schedule Variances
+### [p058_c0002] Schedule Variances
+[p058_c0003]
+
+```text
+Completion Goal Forecast 4 NYCT/MTA Bus Red Completions (1 new this month) Red delays are beyond 2 months of goal. Buses Hybrid-Electric Standard Buses (Nova) (New Item) Construction Apr-22 Dec-22 $ 253.9 $ 253.9 Bus delivery schedules have been delayed due to supply chain issues with the final bus delivery anticipated for December 2022.
+```
+[p058_c0004] _Master Page # 58 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 59
+
+### [p059_c0001] MTA Metropolitan Transportation Authority
+### [p059_c0002] Master Page # 59 of 75 - Capital Program Committee Meeting 5/23/2022
+### [p059_c0003] LIRR Capital Projects – Completions – April 2022 – Budget Analysis and Schedule Variances
+### [p059_c0004] LIRR Budget Analysis
+[p059_c0005]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2022 Annual Goal $18 $286 $19 $94 $21 2022 Forecast $29 $45 $22 $341 $37 2022 Goal (Rolling Stock) $0 $198 $0 $0 $0 Forecast (Rolling Stock) $0 $0 $0 $198 $0
+```
+> [p059_c0006] LIRR Budget Analysis Data Quarter 2022 Annual Goal ($ in millions) 2022 Forecast ($ in millions) 1Q $18 $29 2Q $286 $45 3Q $19 $22 4Q $94 $341 YTD $21 $37
+### [p059_c0007] Schedule Variances
+[p059_c0008]
+
+```text
+Project Completion Goal Actual 1 LIRR Red Completion Red delays are beyond 2 months of goal. Rolling Stock M9 Fleet Procurement Fleet Purchase Jun-22 Dec-22 $197.8 $197.8
+```
+[p059_c0009] The slippage in the schedule is a result of Kawasaki correcting various workmanship issues prior to conditional acceptance by LIRR.
+
+## Page 60
+
+### [p060_c0001] MTA Metropolitan Transportation Authority
+### [p060_c0002] Master Page # 60 of 75 - Capital Program Committee Meeting 5/23/2022
+### [p060_c0003] MNR Capital Projects – Completions – April 2022 – Budget Analysis and Schedule Variances
+### [p060_c0004] MNR Budget Analysis
+[p060_c0005]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2022 Annual Goal $100 $275 $416 $401 $242 2022 Forecast $40 $317 $78 $756 $39
+```
+[p060_c0006]
+
+```text
+2022 Goal (Rolling Stock) $0 $0 $0 $230 $0 Forecast (Rolling Stock) $0 $0 $0 $230 $0
+```
+> [p060_c0007] MNR Budget Analysis Data Quarter 2022 Annual Goal ($M) 2022 Forecast ($M) 1Q $100 $40 2Q $275 $317 3Q $416 $78 4Q $401 $756 YTD $242 $39
+### [p060_c0008] Schedule Variances
+[p060_c0009]
+
+```text
+Project Completion Goal Forecast
+```
+### [p060_c0010] 1 Metro-North Red Completion
+[p060_c0011] Red delays are beyond 2 months of goal.
+### [p060_c0012] Power
+[p060_c0013]
+
+```text
+86th / 110th Substations Construction Mar-22 Sep-22 $30.3 $30.3
+```
+[p060_c0014] This project is delayed due to completion of an asset study, completion of the removable panel air filter system, and equipment testing which has extended the overall project completion date to September 2022.
+[p060_c0015]
+
+```text
+Project Completion Goal Forecast
+```
+### [p060_c0016] 1 Metro-North Amber Completion
+[p060_c0017] Amber delays are within 2 months of goal.
+### [p060_c0018] Communications
+[p060_c0019]
+
+```text
+Network Infrastructure Replacement Construction Apr-22 Jun-22 $44.4 $44.4
+```
+[p060_c0020] Before the Dense Wave Division Multiplexing (DWDM) equipment can be put online, the deficiencies identified by Mitsubishi (HVAC unit manufacturer) need to be rectified pushing this to a June 2022 completion.
+
+## Page 61
+
+### [p061_c0001] MTA Metropolitan Transportation Authority
+### [p061_c0002] Master Page # 61 of 75 - Capital Program Committee Meeting 5/23/2022
+### [p061_c0003] MTA Network Expansion Projects – Completions – April 2022 – Budget Analysis and Schedule Variances
+### [p061_c0004] MTA Network Expansion Budget Analysis
+[p061_c0005]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2022 Annual Goal $0 $525 $0 $1,353 $421 2022 Forecast $0 $525 $0 $1,353 $349
+```
+> [p061_c0006] MTA Network Expansion Budget Analysis Data Quarter 2022 Annual Goal ($ in millions) 2022 Forecast ($ in millions) 1Q $0 $0 2Q $525 $525 3Q $0 $0 4Q $1,353 $1,353 YTD $421 $349
+### [p061_c0007] Schedule Variances
+[p061_c0008]
+
+```text
+Project Completion Goal Forecast
+```
+### [p061_c0009] 1 Network Expansion Completion (1 new this month)
+[p061_c0010] Amber delays are within 2 months of goal.
+### [p061_c0011] East Side Access
+[p061_c0012]
+
+```text
+Systems Package 2 - Tunnel Construction Apr-22 Jun-22 Systems - CS086 (New Item) $72.0 $72.0
+```
+[p061_c0013] Additional completion scope, including additional wiring/cabling, testing, and PTC work was added to CS086 contract which will extend the contract's completion.
+
+## Page 62
+
+### [p062_c0001] MTA Metropolitan Transportation Authority
+### [p062_c0002] Master Page # 62 of 75 - Capital Program Committee Meeting 5/23/2022
+### [p062_c0003] B&T Capital Projects – Completions – April 2022 – Budget Analysis and Schedule Variances
+### [p062_c0004] B&T Budget Analysis
+[p062_c0005]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2022 Annual Goal $98 $60 $105 $298 $140 2022 Forecast $103 $55 $102 $301 $145
+```
+> [p062_c0006] A bar chart titled 'B&T Budget Analysis' comparing the 2022 Annual Goal (blue bars) and the 2022 Forecast (red bars) in millions of dollars. The y-axis is labeled '$ (in millions)' and ranges from $0 to $500. The x-axis shows the quarters 1Q, 2Q, 3Q, 4Q, and YTD. For each category, there are two bars: a blue bar for the Annual Goal and a red bar for the Forecast. The values are labeled above each bar: 1Q ($98, $103), 2Q ($60, $55), 3Q ($105, $102), 4Q ($298, $301), and YTD ($140, $145). A legend at the bottom indicates that blue represents the 2022 Annual Goal and red represents the 2022 Forecast. B&T Budget Analysis Data Category 2022 Annual Goal ($M) 2022 Forecast ($M) 1Q 98 103 2Q 60 55 3Q 105 102 4Q 298 301 YTD 140 145
+### [p062_c0007] Schedule Variances
+[p062_c0008] There are no major schedule slippages to report for MTA Bridges and Tunnels.
+
+## Page 63
+
+### [p063_c0001] Master Page # 63 of 75 - Capital Program Committee Meeting 5/23/2022
+### [p063_c0002] Status of MTA Capital Program Funding
+[p063_c0003] _Metropolitan Transportation Authority_
+
+## Page 64
+
+### [p064_c0001] Master Page # 64 of 75 - Capital Program Committee Meeting 5/23/2022
+### [p064_c0002] Capital Funding (April 2022)
+[p064_c0003] $ in millions
+> [p064_c0004] Capital Program Received ($ in millions) Remainder ($ in millions) 2020-2024 3,986 ~96,014 2015-2019 25,926 ~74,074 2010-2014 29,640 ~70,360 1982-2009 79,040 ~20,960
+
+## Page 65
+
+### [p065_c0001] Master Page # 65 of 75 - Capital Program Committee Meeting 5/23/2022
+### [p065_c0002] Capital Funding Detail (April 2022)
+[p065_c0003] $ in millions
+[p065_c0004]
+
+```text
+Funding Plan Receipts Current Thru March This month Received to date 2010-2014 Program Federal Formula, Flexible, Misc $5,862 $5,857 $ - $5,857 Federal High Speed Rail 173 173 - 173 Federal New Start 1,278 1,278 - 1,278 Federal Security 89 89 - 89 Federal RRIF Loan - - - - City Capital Funds 719 608 - 608 State Assistance 770 770 - 770 MTA Bus Federal and City Match 132 113 - 113 MTA Bonds (Payroll Mobility Tax) 11,625 10,647 - 10,647 Other (Including Operating to Capital)** 1,270 1,124 - 1,124 B&T Bonds 2,022 1,864 - 1,864 Hurricane Sandy Recovery Insurance Proceeds/Federal Reimbursement 6,697 6,697 - 6,697 PAYGO 171 171 - 171 Sandy Recovery MTA Bonds 659 225 - 225 Sandy Recovery B&T Bonds 230 23 - 23 Total 31,696 29,640 - 29,640
+```
+[p065_c0005]
+
+```text
+Funding Plan Receipts Current Thru March This month Received to date 2015-2019 Program Federal Formula, Flexible, Misc $6,681 $5,528 $ - $5,528 Federal High Speed Rail $122 $122 - $122 Federal Core Capacity 100 - - - Federal New Start 500 - - - Federal Security 18 15 - 15 State Assistance 9,091 6,179 - 6,179 City Capital Funds 2,667 2,050 - 2,050 MTA Bonds 8,474 8,175 - 8,175 Asset Sales/Leases 943 315 - 315 Pay-as-you-go (PAYGO)** 2,156 1,572 - 1,572 Other 273 68 - 68 B&T Bonds & PAYGO/Asset Sale 2,942 1,902 - 1,902 Total 33,969 25,926 - 25,926
+```
+[p065_c0006]
+
+```text
+Funding Plan Receipts Current Thru March This month Received to date 2020-2024 Program Capital from Central Business District Tolling $15,000 $ - $ - $ - Capital from New Revenue Sources 10,000 461 - 461 MTA Bonds and PAYGO 9,785 202 - 202 Other Contribution 520 - - - Federal Formula 7,435 2,799 - 2,799 State of New York 3,000 - - - City of New York 3,007 127 - 127 Federal New Start (SAS Ph2) 2,905 - - - Federal Flexible 275 51 - 51 Federal Other 71 71 - 71 Federal Security 10 10 - 10 B&T Bonds 3,327 266 - 266 Total 55,334 3,986 - 3,986
+```
+
+## Page 66
+
+### [p066_c0001] Construction & Development
+### [p066_c0002] Contracts Department
+[p066_c0003] Stephen Plochochi, Senior Vice President
+### [p066_c0004] PROCUREMENT PACKAGE May 2022
+[p066_c0005] _Master Page # 66 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 67
+
+### [p067_c0001] Construction & Development
+### [p067_c0002] PROCUREMENTS
+[p067_c0003] The Procurement Agenda this month includes three (3) actions for a proposed expenditure of $47M.
+[p067_c0004] _Master Page # 67 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 68
+
+[p068_c0001]
+
+```text
+Subject Request for Authorization to Award Various Procurement Actions Contract Department Stephen Plochochi, Senior Vice President Board Action Order To Date Approval Info Other 1 Capital Program Committee 5/23/22 X 2 Board 5/25/22 X
+```
+[p068_c0002]
+
+```text
+Date: May 19, 2022 Internal Approvals Approval Approval X Deputy Chief Development Officer, Delivery X President X Deputy Chief Development Officer, Development X Executive Vice President & General Counsel
+```
+### [p068_c0003] Purpose
+[p068_c0004] To obtain the approval of the Board to a ward various procurement actions and to inform the Capital Program Committee of these procurement actions.
+### [p068_c0005] Discussion
+[p068_c0006] MTA Construction & Development proposes to a ward a Competitive Procurement in the following category:
+[p068_c0007]
+
+```text
+Schedules Requiring Two-Thirds Vote # of Actions $ Amount C. Competitive Requests for Proposals (Award of Purchase/Public Work Contracts) 1 $ 39,900,000 SUBTOTAL 1 $ 39,900,000
+```
+[p068_c0008] MTA Construction & Development proposes Ratifications in the following category:
+[p068_c0009]
+
+```text
+Schedules Requiring Majority Vote # of Actions $ Amount K. Ratification of Completed Procurement Actions 2 $ 7,099,255 SUBTOTAL 2 $ 7,099,255 TOTAL 3 $ 46,999,255
+```
+### [p068_c0010] Budget Impact
+[p068_c0011] The approval of these procurement actions will oblige capital funds in the amounts listed. Funds are available in the capital budget for this purpose.
+### [p068_c0012] Recommendation
+[p068_c0013] The procurement actions be approved as proposed. (The items are included in the resolution of approval at the beginning of the Procurement Section.)
+[p068_c0014] _Master Page # 68 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 69
+
+### [p069_c0001] MTA Construction & Development
+### [p069_c0002] MTA Construction & Development
+### [p069_c0003] BOARD RESOLUTION
+[p069_c0004] WHEREAS , in accordance with Sections 559, 2879, 1209 and 1265-a of the Public Authorities Law and the All Agency Procurement Guidelines, the Board authorizes the award of certain non-competitive purchase and public works contracts, and the solicitation and award of request for proposals in regard to purchase and public work contracts; and
+[p069_c0005] WHEREAS , in accordance with the All Agency Procurement Guidelines, the Board authorizes the award of certain non-competitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts;
+[p069_c0006] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Guidelines for Procurement of Services, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p069_c0007] NOW, the Board resolves as follows:
+- [p069_c0008] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract. 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals and authorizes the solicitation of such proposals. 3. As to each request for proposals (for purchase and public work contracts set forth in Schedule C for which a recommendation is made to award the contract), the Board authorizes the execution of said contract. 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein, and ratifies each action for which ratification is requested. 5. The Board authorizes the execution of each of the following for which Board authorization is required: i) the miscellaneous procurement contracts set forth in Schedule E; ii) the personal service contracts set forth in Schedule F; iii) the miscellaneous service contracts set forth in Schedule G; iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; v) the contract modifications to purchase and public work contracts set forth in Schedule I; vi) the modifications to miscellaneous procurement contracts set forth in Schedule J. 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p069_c0009] _Master Page # 69 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 70
+
+### [p070_c0001] MTA Construction & Development
+### [p070_c0002] MAY 2022 LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p070_c0003] Procurements Requiring Two-Thirds Vote:
+### [p070_c0004] Schedule C. Competitive Requests for Proposals (Award of Purchase/Public Work Contracts) (Staff Summaries required for all items greater than $1M)
+- [p070_c0005] 1. LK Comstock & Company LLC Contract No. C34866 1,034 Calendar Days $ 39,900,000 Staff Summary Attached
+[p070_c0006] MTA Construction & Development requests Board approval to award a publicly advertised and competitively solicited contract for design-build services to upgrade the supervisory control and data acquisition system which connects to the Power Control Center and to create a new back-up electronic power control center.
+[p070_c0007] _Master Page # 70 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 71
+
+### [p071_c0001] Schedule C Competitive Requests for Proposals (Award of Purchase/Public Work Contracts)
+### [p071_c0002] Construction & Development
+[p071_c0003] Staff Summary Item No. 1
+### [p071_c0004] Page 1 of 2
+[p071_c0005]
+
+```text
+Dept & Dept Head Name: Infrastructure/Dana Hecht, Senior Vice President Contracts Department: Jessica Goldstein, Tower Lead Board Reviews Order To Date Approval Info Other 1 Capital Program Committee 5/23/22 X 2 Board 5/25/22 X Internal Approvals Order Approval Order Approval X Deputy Chief, Development X President X Deputy Chief, Delivery X Executive VP & General Counsel
+```
+[p071_c0006]
+
+```text
+SUMMARY INFORMATION Vendor Name L.K. Comstock & Company LLC Contract Number C34866 Description Design-Build Services for the SCADA Systems Upgrades Total Amount 1. C34866 Award: $ 39,900,000 2. Stipend Payments: $ 192,000 Contract Term 1,034 Calendar Days Option(s) included in Total Amount? Yes No N/A Renewal? Yes No Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Funding Source Operating Capital Federal Other
+```
+### [p071_c0007] PURPOSE/RECOMMENDATION
+[p071_c0008] MTA Construction & Development (“C&D”) requests Board approval to award a publicly advertised and competitively solicited contract to L.K. Comstock & Company LLC for design-build services to upgrade the supervisory control and data acquisition (“SCADA”) system which connects to the Power Control Center and to create a new back-up electronic power control center. The Contract is in the amount of $39,900,000 and has a duration of 1,034 calendar days. In accordance with MTA policy regarding the use of design-build contracts, and to enhance competition and defray proposal costs, this solicitation includes a stipend of $64,000 to be paid to each unsuccessful proposer whose proposal met the defined proposal standards. Accordingly, approval is also requested to pay stipends totaling $192,000 to the three unsuccessful proposers.
+### [p071_c0009] DISCUSSION
+[p071_c0010] Contract C34866 (the “Contract”) will upgrade the SCADA system at the Power Control Center, create the new back-up power control center, and upgrade thirteen (13) control zones for the BMT division (three other control zones were previously upgraded as part of a separate contract). At the Power Control Center, the Design-Builder will install a new LCD video wall display and new workstations for unified operation of all sixteen (16) BMT division control zones. The Work will also include the installation of new programmable logic controller gateway cabinets, data cabinets, and other associated equipment in the control zones. In addition, the Design-Builder will construct the new back-up control center at the existing Jay Street Substation in Brooklyn, which will be capable of operating all sixteen (16) BMT division control zones if the Power Control Center is unavailable. The back-up power control center will be equipped with the necessary infrastructure for future connections to the IRT and IND divisions.
+[p071_c0011] A two-step procurement process was conducted for the Contract. In Step 1, a Request for Qualifications (“RFQ”) was advertised resulting in the submission of seven (7) Statements of Qualifications which were evaluated against pre-established Threshold Criteria (addressing compliance with the RFP requirements, timeliness, and responsibility) and Substantive Evaluation Criteria, set forth below. The following four firms were selected to receive the Request for Proposal (“RFP”) in Step 2:
+[p071_c0012] _Master Page # 71 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 72
+
+### [p072_c0001] Schedule C Competitive Requests for Proposals (Award of Purchase/Public Work Contracts)
+### [p072_c0002] Construction & Development
+[p072_c0003] Item No. 1
+### [p072_c0004] Page 2 of 2
+- [p072_c0005] • E-J Electric Installation Co. ("E-J Electric") • L.K. Comstock & Company LLC ("LKC") • Mass Electric Construction Company ("Mass Electric") • TAP Electrical Contracting Service, Inc. ("TAP")
+[p072_c0006] In response to the RFP, all four (4) teams submitted technical and price proposals. The selection committee, consisting of representatives from C&D Delivery and Contracts Departments, first reviewed the technical proposals and heard oral presentations from each of the proposers. The selection committee evaluated the technical proposals using pre-established selection criteria which assessed the proposers' schedule, key personnel and major participants, construction plan, management plan, safety and quality, prior experience, past performance, subcontractors and suppliers, diversity compliance and other relevant matters. The selection committee determined that all four teams submitted technical proposals that were responsive and acceptable. The selection committee next opened the cost proposals, which were as follows: E-J Electric $59,239,907; LKC $40,021,000; Mass Electric $46,363,000; and TAP $42,996,000.
+[p072_c0007] Based upon its review of the technical and cost proposals, the selection committee determined that the proposals submitted by LKC and Mass Electric demonstrated superior combination of technical approach, cost, and schedule and unanimously recommended that both firms be invited for negotiations. While TAP submitted the second-lowest cost proposal, its proposal focused primarily on the electrical and mechanical work, rather than the SCADA and communications scope of work, and did not include a phasing schedule for the cutovers of the new Power Control Center, back-up power control center, and control zones, which are key elements for successful completion of this project. E-J Electric was not selected to negotiate given that its cost proposal was significantly higher than the other proposers and their Key Personnel did not have the required level of expertise with SCADA systems.
+[p072_c0008] Negotiations with LKC and Mass Electric included discussions of the proposed design and construction approach, project schedule, overall cost and clarification of the design/build requirements. Following negotiations, LKC and Mass Electric submitted Best and Final Offers ("BAFO") as follows:
+[p072_c0009]
+
+```text
+LKC $39,900,000 Mass Electric $45,104,000
+```
+[p072_c0010] After review of the BAFOs, the selection committee unanimously recommended LKC for award of the Contract. Both LKC and Mass Electric included a reduction from its original price; however, LKC's BAFO was still the lowest between the two. The selection committee determined that LKC offered the best value to C&D based on the strength of their technical proposal, their understanding of the work, their detailed schedule for completion, their lowest proposed cost, and reductions to the allocations of Railroad-Supplied Services. LKC's price is considered fair and reasonable. Although Mass Electric submitted a strong technical proposal, its cost proposal was substantially higher than LKC. Their proposed duration of 992 calendar days to complete the Work was 42 calendar days less than the duration proposed by LKC, but was not enough to justify an additional $5 million in costs. Also, Mass Electric did not propose any reductions to the allocation of Railroad-Supplied Services.
+[p072_c0011] In connection with previous contracts awarded to LKC, LKC was found responsible notwithstanding Significant Adverse Information ("SAI") pursuant to the All-Agency Responsibility Guidelines, and such responsibility findings were approved by the MTA Chairman/CEO in consultation with the MTA General Counsel in March 2022. No new SAI has been found relating to LKC and LKC has been found to be responsible.
+### [p072_c0012] DBE/MBE/WBE/SDVOB INFORMATION
+[p072_c0013] The MTA Department of Diversity and Civil Rights ("DDCR") has established a 22.5% DBE goal for the Contract. LKC has not achieved its DBE/MBE/WBE goals on completed contracts; however, it has demonstrated good faith effort towards meeting these goals. Although this is a design-build contact with some undefined scope, LKC is projecting to meet the required DBE goal.
+### [p072_c0014] IMPACT ON FUNDING
+[p072_c0015] Funding for the Contract and stipends for the three unsuccessful proposers are included in the New York City Transit portion of the MTA's 2020-2024 Capital Program through Federal and MTA Local funds.
+### [p072_c0016] ALTERNATIVES
+[p072_c0017] None recommended. Currently, MTA lacks a available in-house technical personnel to perform the scope of work associated with this Contract.
+[p072_c0018] _Master Page # 72 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 73
+
+### [p073_c0001] Construction & Development
+### [p073_c0002] MAY 2022 LIST OF RATIFICATIONS FOR BOARD APPROVAL
+### [p073_c0003] Procurements Requiring Majority Vote:
+### [p073_c0004] Schedule K. Ratification of Completed Procurement Actions (Involving Schedule E – J) (Staff Summaries required for all items)
+[p073_c0005] 2 & 3. E-J Electric Installation Co. $ 7,099,255 Staff Summary Attached Contract No. CS084.78 and .95 Ninety Two Months
+[p073_c0006] MTA Construction and Development requests that the Board ratify: (i) Contract Modification No. 78 to energize, operate and maintain four traction power substations to support Long Island Rail Road Physical Characteristics Training and (ii) Contract Modification No. 95 to replace fourteen (14) sectionalized switches with new load break switches and an excusable delay of 121 days, extending the substantial completion date of the Contract to September 22, 2022.
+[p073_c0007] _Master Page # 73 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 74
+
+### [p074_c0001] Schedule K: Ratification of Completed Procurement Actions
+[p074_c0002] Item No. 4
+[p074_c0003]
+
+```text
+Vendor Name (& Location) E-J Electric Installation Co. (Long Island City, NY) Contract Number CS084 AWO/Modification # 78 & 95 Description Traction Power Systems Package No. 4 for the East Side Access Project Original Amount: $ 71,248,884 Contract Term (including Options, if any) 92 Months Prior Modifications: $ 28,249,964 Option(s) included in Total Amount? Yes No N/A Exercised Options: $ -0- Procurement Type Competitive Non-competitive Current Amount: $ 99,498,848 Solicitation Type RFP Bid Other: Modification This Request $ 7,099,255 Funding Source Operating Capital Federal Other: % of This Request to Current Amount: 7.1% Requesting Dept/Div & Dept/Div Head Name: East Side Access, R. Troup. % of Modifications (including This Request) to Original Amount: 49.6%
+```
+### [p074_c0004] Discussion:
+[p074_c0005] Contract CS084 (the “Contract”) provides for the installation and testing of the traction power system for the East Side Access (“ESA”) project. MTA Construction and Development (“C&D”) requests that the Board ratify: (i) Contract Modification No. 78 to energize, operate and maintain four traction power substations to support Long Island Rail Road (“LIRR”) Physical Characteristics Training for a total cost of $5,203,200 and (ii) Contract Modification No. 95 to replace fourteen (14) sectionalized switches with new load break switches for a total cost of $1,896,055, and an excusable delay of 121 days, extending the substantial completion date of the Contract to September 22, 2022.
+### [p074_c0006] Modification No. 78
+[p074_c0007] Prior to ESA revenue service, LIRR is required by the Federal Railroad Administration to conduct Physical Characteristics Training, in which test trains are run within the ESA territory so that operators can gain familiarity with the layout, characteristics and operational requirements of the new territory. Traction power substations provide DC power to energize the third rail, which must be energized to operate the test trains during Physical Characteristics Training.
+[p074_c0008] When in Revenue Service, traction power will be controlled remotely from LIRR’s Jamaica Control Center, however, not all the new ESA facilities have been fully tested and, as a result, remote operation from the Jamaica Control Center is not expected to be available until August. Until then, energizing the third rail must be performed manually. This requires the CS084 contractor to energize, operate and maintain a minimum of three substations for up to six 12-hour shifts per week and one substation at the Mid-Day Storage Yard continuously, for the period from February 1, 2022, to August 21, 2022.
+[p074_c0009] The Contractor proposed a weekly rate for operating the Mid-Day Storage Yard, weekday and weekend rates for the other substations, and a monthly maintenance rate, with a total not-to-exceed cost of $5,621,033. Negotiations were held and the parties agreed to reduced rates and a total not-to-exceed cost of $5,203,200.
+[p074_c0010] To avoid delay to revenue service, the President approved a retroactive memorandum on February 1, 2022 and the Contractor was directed to proceed with energizing the third rail in support of Physical Characteristics Training up to a Not-To-Exceed amount of $4,500,000.
+### [p074_c0011] Modification No. 95
+[p074_c0012] The contract required the installation of sectionalized switches to connect and isolate traction power along the third rail. However, the type of switch specified, known as a “tie switch”, does not open while under load and therefore, is incapable of de-energizing the third rail during an emergency without shutting down all ESA traction power substations. LIRR has determined that this creates a safety issue and requested that the fourteen sectionalized switches that were specified be replaced with “load break switches” which are a different type of sectionalized switch that is capable of de-energizing the third rail when under load without shutting down all ESA traction power substations. The initial design has been referred to the ESA Cost Recovery Panel for review to determine whether this was a design error that should be pursued.
+[p074_c0013] _Master Page # 74 of 75 - Capital Program Committee Meeting 5/23/2022_
+
+## Page 75
+
+### [p075_c0001] Schedule K: Ratification of Completed Procurement Actions
+### [p075_c0002] Item No. 4
+> [p075_c0003] The logo for MTA Construction & Development, featuring a blue circle with the letters "MTA" in white, followed by the text "Construction & Development" in blue.
+[p075_c0004] The Contractor proposed a cost of $2,408,078. Negotiations were held and the parties agreed to a cost of $1,896,055 including $1,586,055 in direct costs and $310,000 in impact costs, which is deemed to be fair and reasonable. This Modification will also provide for an excusable delay of 121 days, extending the substantial completion date of the Contract to September 22, 2022, of which 75 days are compensable in the amount of $310,000.
+[p075_c0005] To avoid delay to revenue service, the President approved a retroactive memorandum on August 21, 2021 and the Contractor was directed to proceed with furnishing the fourteen (14) load break switches up to a Not-To-Exceed amount of $440,700.
+[p075_c0006] In connection with previous contracts awarded to E-J Electric Installation Company ("E-J"), E-J was found to be responsible notwithstanding significant adverse information ("SAI") pursuant to the All-Agency Responsibility Guidelines, and such responsibility findings were approved by the MTA Managing Director in consultation with the MTA General Counsel in August 2018. No new SAI has been found relating to E-J and E-J has been found to be responsible.
+[p075_c0007] _Master Page # 75 of 75 - Capital Program Committee Meeting 5/23/2022_

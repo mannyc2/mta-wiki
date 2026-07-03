@@ -1,0 +1,136 @@
+{
+  "note_id": "codex-metric-payload-tail7-2026-07-02",
+  "created_at": "2026-07-02",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llm_used": false,
+  "banned_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-profile commands"
+  ],
+  "subagents": [
+    {
+      "agent_id": "019f210c-af99-7881-8776-1b1771d415a3",
+      "nickname": "Nietzsche",
+      "role": "read-only remaining metric tail audit",
+      "result": "Confirmed high-confidence payload-shaped rules for ridership, vacancies, subway_fires, and B&T revenue_vehicles; recommended revenue_vehicles normalize to vehicles/count, not riders/ridership."
+    }
+  ],
+  "bucket": "metric_claim missing unit_family",
+  "before": {
+    "missing_unit_family": 11,
+    "finite_missing_unit_family": 10,
+    "distinct_missing_metric_names": 11,
+    "other_unit_family": 4
+  },
+  "after": {
+    "missing_unit_family": 7,
+    "finite_missing_unit_family": 6,
+    "distinct_missing_metric_names": 7,
+    "other_unit_family": 4
+  },
+  "implemented": [
+    {
+      "metric_name": "ridership",
+      "record_id": "metric_lirr-ridership-april2025",
+      "rule": "Exact ridership metric with transit-agency entity/scope, date/period, and raw million text matching the stored value normalizes to riders/ridership.",
+      "unit_normalized": {
+        "normalized_unit": "riders",
+        "unit_family": "ridership"
+      }
+    },
+    {
+      "metric_name": "vacancies",
+      "record_id": "metric_dec2025-total-vacancies",
+      "rule": "Exact vacancies metric with MTA-wide/all-agencies context, date/period, and integer raw count matching the stored value normalizes to vacancies/workforce.",
+      "unit_normalized": {
+        "normalized_unit": "vacancies",
+        "unit_family": "workforce"
+      }
+    },
+    {
+      "metric_name": "subway_fires",
+      "record_id": "metric_nyct-subway-fires-dec2022",
+      "rule": "Exact subway_fires metric with subway scope/entity/mode, date/period, and integer raw count matching the stored value normalizes to fires/safety.",
+      "unit_normalized": {
+        "normalized_unit": "fires",
+        "unit_family": "safety"
+      }
+    },
+    {
+      "metric_name": "revenue_vehicles",
+      "record_id": "metric_meeting-doc-95361-july2022-bt",
+      "rule": "Exact revenue_vehicles metric with B&T scope/entity, date/period, and integer raw count matching the stored value normalizes to vehicles/count. This intentionally replaces the earlier context-test expectation that treated the B&T row as riders.",
+      "unit_normalized": {
+        "normalized_unit": "vehicles",
+        "unit_family": "count"
+      }
+    }
+  ],
+  "guardrails": [
+    "No broad metric-name-only fallback was added.",
+    "Bare numeric ridership, vacancies, subway_fires, and revenue_vehicles tests remain unresolved unless payload carries the required scope/entity/date/raw-value shape.",
+    "Non-B&T revenue_vehicles remains unresolved."
+  ],
+  "remaining_missing_metric_names": [
+    "cares_program_count",
+    "infrastructure_protection",
+    "internal_eeo_complaints_by_basis",
+    "procurement_amount",
+    "ridership_recovery_rate",
+    "substantial_completion_date",
+    "workforce_development"
+  ],
+  "remaining_missing_records": [
+    "metric_cd-workforce-development-2025",
+    "metric_lirr-cares-program",
+    "metric_mckinsey-ridership-recovery-rates",
+    "metric_meeting-doc-133551-mta-kronos",
+    "metric_meeting-doc-157976-hudson-protection",
+    "metric_mta-bus-eeo-complaint-bases-internal-1q2023",
+    "metric_omny-rr-substantial-completion-q2-2026"
+  ],
+  "unchanged_other_unit_family": [
+    "metric_meeting-doc-182066-sas2-cost-per-rider",
+    "metric_omny-nyct-substantial-completion-dec2025",
+    "metric_sas-phase2-revenue-service-target",
+    "metric_sas2-revenue-service-date-2032-v3"
+  ],
+  "verification": {
+    "focused_tests": {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "result": "pass",
+      "tests": 278,
+      "expect_calls": 5006
+    },
+    "typecheck": {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    "materialize": {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "pass",
+      "sqlite_fts_quick_check": "ok",
+      "materialized_submissions": "93067/98115",
+      "retired_submissions_skipped": 265
+    },
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass",
+      "issues": 0,
+      "submissions": 98115,
+      "canonical_records": 84027,
+      "wiki_pages": 7331
+    }
+  },
+  "next_candidates": [
+    "Classify remaining date-shaped substantial_completion_date and year-valued other unit-family rows as date/temporal records or defer to representation repair.",
+    "Inspect cares_program_count and workforce_development source tables for whether they are participant/program counts or mislabeled categorical dashboard rows.",
+    "Keep internal_eeo_complaints_by_basis deferred until the stored value conflict is resolved.",
+    "Keep procurement_amount deferred while value is null."
+  ]
+}

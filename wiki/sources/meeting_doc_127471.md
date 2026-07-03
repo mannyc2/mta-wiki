@@ -1,0 +1,446 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-127471"
+record_kind: "source"
+display_name: "New York City Transit Key Performance Metrics - November 2023"
+source_id: "meeting_doc_127471"
+source_ids:
+  - "meeting_doc_127471"
+local_observation_id: "source_meeting_doc_127471"
+local_observation_ids:
+  - "source_meeting_doc_127471"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T13:07:53.990Z"
+submission_ids:
+  - "sub_248410cbf18b2255"
+payload:
+  authority_tier: "board_material"
+  content_type: "performance metrics report"
+  date_text: "November 2023"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2023-11"
+    precision: "month"
+    raw_text: "November 2023"
+  description: "Key performance metrics report prepared for the November 2023 meeting of the New York City Transit & Bus Committee."
+  published_date_normalized: "2023-11"
+  published_date_precision: "month"
+  publisher: "new.mta.info"
+  title: "NEW YORK CITY TRANSIT KEY PERFORMANCE METRICS"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_127471#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "meeting_doc_127471"
+    source_path: "raw/sources/meeting_doc_127471/blocks.jsonl"
+    text_sha256: "sha256:652428edc2ec73a399f9be33e568011d4dc409b54fea8b501c9001f180567afb"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_127471#p001_c0002"
+    page_number: 1
+    role: "date"
+    source_id: "meeting_doc_127471"
+    source_path: "raw/sources/meeting_doc_127471/blocks.jsonl"
+    text_sha256: "sha256:e69c0d0941613a92d310b2b015f10809eea1561b1567a4752340b6747677fe1b"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_127471#p001_c0003"
+    page_number: 1
+    role: "publisher"
+    source_id: "meeting_doc_127471"
+    source_path: "raw/sources/meeting_doc_127471/blocks.jsonl"
+    text_sha256: "sha256:976b8839915e7759de22c37479d7ddd509682f4222f1eb732e633704bb38e5ec"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0001"
+    evidence_id: "meeting_doc_127471#p003_c0001"
+    page_number: 3
+    role: "context"
+    source_id: "meeting_doc_127471"
+    source_path: "raw/sources/meeting_doc_127471/blocks.jsonl"
+    text_sha256: "sha256:b855c41e83abe8a88018e14c07b47f0cd38bfdc737748f15bc26772aefd5f23b"
+    text_source: "raw_text"
+---
+
+# Key performance metrics report
+
+source_id: meeting_doc_127471
+citation: cite block ids exactly as shown in square brackets
+document: 274 block(s)
+
+## Page 1
+
+### [p001_c0001] NEW YORK CITY TRANSIT KEY PERFORMANCE METRICS
+[p001_c0002] November 2023
+[p001_c0003] _new.mta.info_
+
+## Page 2
+
+[p002_c0001] New York City Transit President Richard Davey, MTA Construction & Development President Jamie Torres-Springer, and City Council Member Lincoln Restler announced the first OMNY vending machines are in-service at the Atlantic Av-Barclays Center station on Monday, Oct 30, 2023.
+[p002_c0002] Welcome OMNY
+
+## Page 3
+
+[p003_c0001] This performance metrics document was prepared for the November 2023 meeting of the New York City Transit & Bus Committee.
+[p003_c0002] 2 Broadway • New York, NY 10004 Wednesday, November 29, 2023
+### [p003_c0003] Table of Contents
+[p003_c0004] Message from the President ..... 4 Customer Satisfaction ..... 8 Ridership ..... 10 Service Performance ..... 12 Accessibility ..... 18 Financial Results ..... 19 Customers and Communities ..... 20 Safety and Security ..... 22 Special Feature ..... 26
+> [p003_c0005] A square QR code with a black and white pixelated pattern, used for quick access to digital content.
+[p003_c0006] Visit new.mta.info/transparency/board-and-committee-meetings/november-2023 or scan the QR code for Board action staff summaries, administrative items, and information items.
+> [p003_c0007] A square QR code with a black and white pixelated pattern, used for quick access to the MTA metrics dashboard.
+[p003_c0008] Visit metrics.mta.info or scan the QR code to access a comprehensive dashboard of New York City Transit metrics.
+> [p003_c0009] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a white circle, set against a blue background.
+[p003_c0010] _| 3 |_
+
+## Page 4
+
+### [p004_c0001] MESSAGE FROM THE PRESIDENT
+> [p004_c0002] A professional headshot of Richard Davey, President of New York City Transit. He is a middle-aged man with short brown hair, wearing a dark suit jacket over a light-colored checkered shirt and a dark tie. He is looking directly at the camera with a slight smile against a solid blue background.
+[p004_c0003] _Richard Davey President, New York City Transit_
+### [p004_c0004] The North Star: Increasing Customer Satisfaction
+[p004_c0005] This November, the 47,000 strong New York City Transit Team and I have much to be grateful for. Over the last month, we successfully delivered multiple projects to improve the customer experience, including announcing the first in-service OMNY Vending Machines at Atlantic Avenue - Barclays Center on October 30 and three subway station re-NEW-vations, including the 50th re-NEW-vation at Junction Boulevard 7 , on October 12. With the completion of Morris Park 5 on October 18, Hunters Point Avenue 7 and Avenue J B Q (both on November 1), NYCT has now re-NEW-vated 53 stations in 2023 (surpassing the goal of 50), with more to come before the end of 2023.
+[p004_c0006] This month, NYCT is focusing on the “Faster” aspect of the “Faster, Cleaner, Safer” Plan. From increased frequency on eight subway lines (with more to come!), historic highs in subway on-time performance, ambitious plans to speed up our buses citywide, and new efforts to speed up the paratransit booking process, 2023 has seen across-the-board progress on faster service.
+[p004_c0007] Much of this progress was driven by the feedback of our customers. As I said when we announced the launch of the bi-annual Fall 2023 Customers Count Survey on November 6, New York City Transit is guided by the feedback of our customers as we continue to progress towards our North Star goal of 70% satisfaction on all modes. We listen to what our customers tell us, and the feedback we receive in this fall’s survey will be invaluable in shaping our 2024 plans.
+> [p004_c0008] A photograph showing Richard Davey and a woman standing at a podium outdoors. Davey is on the left, wearing a dark suit and tie. The woman is on the right, wearing a bright green coat and speaking into a microphone. The podium has a sign that reads "MTA Have Your Say. Take the Survey!". The background shows a stone structure, possibly part of a subway station.
+[p004_c0009] Building upon our large, biennial samples, we are constantly taking the pulse of our customers in monthly surveys to assess how we’re doing. In October, 59% of subway customers were satisfied with overall service, unchanged from September. Customer Journey Time Performance (CJTP), or riders reaching their destinations within 5 minutes of schedule, was 84.5% - the 21st straight month above the Department of Subways goal (83.5%). Weekday
+[p004_c0010] _The MTA logo, which consists of the letters "MTA" in white inside a blue circle._
+[p004_c0011] _| 4 |_
+
+## Page 5
+
+### [p005_c0001] MESSAGE FROM THE PRESIDENT
+[p005_c0002] On-Time Performance (OTP), came in at 81.8%, and Weekend OTP at 84.6%, which were 1.9 percentage points higher and 0.5 lower than September, respectively. Service Delivery was slightly lower this month at 93.7%. Although Additional Platform Time (APT) in October (82 seconds) was 8 seconds longer than the prior month, Additional Train Time (ATT - 33 seconds) was one second shorter.
+[p005_c0003] Customers' sense of safety remained stable in October. 58% of customers felt safe on trains while 57% felt safe in stations, both down one point from September. NYCT will continue to further efforts to keep subway customers safe by collaborating with the NYPD, Homeless Outreach, and other partners to create a safer environment for our riders and employees.
+[p005_c0004] Our customers tell us that their experience would be improved by faster, more reliable, and frequent transit service. Riders have consistently indicated to us that travel times are a core driver of their satisfaction. We hear them loud and clear, and the Department of Subways is proud to continue their focused efforts to safely increase train speeds across the system. The SPEED Unit and its partners in Maintenance of Way rolled out 15 increases in October, with a total of 56 speed increases implemented in 2023 to date. Subways has seen clearly improved performance from these changes and looks forward to implementing more improvements later this month on the N, Q, R, W, and J lines, as well as the Franklin Shuttle.
+[p005_c0005] Subway teams are also working hard to identify improvements to terminal operations and dispatching procedures at critical points in the system, with capacity bottlenecks being the primary focus. These efforts complement the speed improvements and will support NYCT's goal of providing faster service to our customers.
+[p005_c0006] Bus performance in October improved from September. Overall bus satisfaction was one point higher at 60%, with Local Bus satisfaction (60%) and Express Bus Satisfaction (63%) remaining the same. CJTP increased to 69.2% compared to 68% in September. Weekday paid bus ridership in October was approximately 1.4 million average daily customers (62% of pre-pandemic ridership).
+[p005_c0007] Committed to faster and more reliable service, the Department of Buses team was excited to stand alongside NYC DOT for their recent announcement on the completion of 3.1 miles of bus lanes on Gun Hill Road on October 31. The bus lanes will improve the commute of 40,000 daily customers who ride the Bx28, Bx38, Bx41, and Bx41-SBS. These four bus routes span from
+[p005_c0008] 81.8% subway weekday on-time performance
+[p005_c0009] 84.6% subway weekend on-time performance
+[p005_c0010] _| 5 |_
+
+## Page 6
+
+### [p006_c0001] MESSAGE FROM THE PRESIDENT
+[p006_c0002] Co-Op City to the Montefiore Hospital as well as provide key connections to the 2, 5, B, and D lines. I say it all the time: bus lanes work. By giving our buses – often carrying dozens of customers – the priority on city streets that they deserve, they help bring transit equity to the communities that need it most. I am grateful to our City DOT partners and to Bronx customers who advocated for this project for delivering the bus priority Gun Hill Road customers deserve.
+### [p006_c0003] 600 buses with ABLE cameras
+[p006_c0004] Our Automated Bus Lane Enforcement (ABLE) camera program continues to improve bus speeds by 5% on top of the gains we see from bus lanes while reducing collisions by about 20%. At the beginning of November, the Buses team expanded the ABLE program to the Q54, improving the commute of 12,000 customers along the Jamaica Avenue Busway. Today, the MTA has over 600 buses on 21 routes equipped with these cameras across the five boroughs, benefitting 450,000 daily customers.
+[p006_c0005] The team at Buses continues to implement strategies to improve the customer experience, especially by improving travel times and service reliability. In 2024, we are excited to see our ABLE program transform to Automated Camera Enforcement, or ACE, with expanded enforcement powers outside of bus lanes. These new enforcement powers were
+[p006_c0006] secured in the 2023 New York State Budget and will be transformative for bus customers. Blocking bus stops and double parking – which often impedes buses on congested city streets – selfishly slows down the journeys of our over one million daily bus customers. Starting next year, these drivers will pay the price through automated camera enforcement, and if our success with ABLE is any indication, they'll get the message. Most ABLE offenders only commit one violation before they change their behavior on the road. Clearing the way for our buses using ACE will be crucial to improving customer satisfaction with wait and journey times.
+[p006_c0007] Paratransit's (AAR) performance continued the improving trend. In October, 73% of AAR customers were satisfied with service – the eight consecutive months customer satisfactions rates were over Transit's goal of 70%. Also, No-Show Rates (out of 1,000 scheduled trips) decreased for Primary Carriers to 0.9% and were down a significant 2.3 percentage points for Brokers.
+> [p006_c0008] A photograph of a blue MTA bus driving on a city street. The bus is in a designated red bus lane, which is marked with white arrows. Other vehicles, including cars and a white van, are visible on the street. The background shows urban buildings and a traffic light.
+[p006_c0009] _The MTA logo, which consists of the letters "MTA" in white inside a blue circle._
+[p006_c0010] _| 6 |_
+
+## Page 7
+
+### [p007_c0001] MESSAGE FROM THE PRESIDENT
+[p007_c0002] The volume of complaints continued the downward trend; in October, the complaint rate for Primary Carriers (3.6) and Brokers (2.7) were respectively 1 point and 1.2 points lower than the prior month. The service improvements are heading in the right direction, particularly since Average Daily Weekday Trips (27,900) increased in October by 900 trips.
+[p007_c0003] AAR On-Time Performance has been on the rise this fall, and we are now tightening our standard reporting metric from 30 minutes to 20 minutes. We've already seen improvements; 20-minute pick-up OTP for Primary Carriers (87.3%) and Brokers (86.4%) increased 1.8 and 3.6 percentage points respectively from September. The AAR team will continue to develop ways to improve performance, and they will soon begin the procurement process to upgrade scheduling and dispatch software that will further enhance on-time performance.
+[p007_c0004] In August, Access-A-Ride, in collaboration with MTA IT, implemented a series of fixes to reduce the time it takes our system to accept customer trip reservations over the phone or online. This has resulted in significantly reduced wait times at our call center, as higher utilization of our MyAAR app (11% usage in October versus 9.7% usage in August) leads to faster overall speeds for customers. All of this was achieved amid a 10% surge in ridership since the summer.
+[p007_c0005] Our expansion of the on-demand pilot program, E-Hail Phase 2, continues this fall. Our team has reached out to over 3,600 customers to invite them to join the pilot program so they may enjoy the benefits of the on-demand service while giving us valuable feedback. Their experience will help shape the future of the program in 2024 and beyond.
+[p007_c0006] This month, we celebrated Thanksgiving, and I wanted to close by expressing my immense gratitude and thanks for the work that the 47,000 strong team at New York City Transit has done in 2023. We have achieved some remarkable things this year – with more to come in December! Customers are coming back to transit in our city because we are focusing on what they want: faster, cleaner, safer service. None of that would be possible without a great team, and the progress we've made in 2023 is proof positive that we have one here at Transit. As we continue to make progress towards our North Star goals in 2024, I know that we can count on our New York City Transit team to continue to move the needle for our customers and improve their satisfaction. improve their satisfaction.
+[p007_c0007] 27,900 weekday AAR trips made
+[p007_c0008] _| 7 |_
+[p007_c0009] _The MTA logo, consisting of the letters 'MTA' in white inside a blue circle._
+
+## Page 8
+
+### [p008_c0001] CUSTOMER SATISFACTION
+### [p008_c0002] Monthly Pulse Survey Results - October
+[p008_c0003] How satisfied are you with your transit experience?
+> [p008_c0004] Stacked bar chart showing satisfaction levels for Subways, Bus, and Paratransit across three categories: O, S, and A. The legend indicates four levels of satisfaction: Very Satisfied (blue), Satisfied (green), Dissatisfied (orange), and Very Dissatisfied (red). Mode Category Very Satisfied Satisfied Dissatisfied Very Dissatisfied Subways O 15% 45% 30% 10% S 15% 45% 30% 10% A 15% 45% 30% 10% Bus O 18% 42% 28% 12% S 18% 42% 28% 12% A 22% 40% 28% 10% Paratransit O 35% 35% 20% 10% S 30% 40% 25% 5% A 35% 40% 20% 5%
+### [p008_c0005] What needs to improve to increase your satisfaction?
+> [p008_c0006] Bar chart for Subway showing satisfaction needs: Need Percentage Personal safety & security 12% People experiencing homelessness 13% People behaving erratically 14% Wait times 10% Cleanliness 6%
+> [p008_c0007] Bar chart for Bus showing satisfaction needs: Need Percentage Wait times 28% Travel times 11% Crowding 13% People not paying 11% Unexpected delays 6%
+### [p008_c0008] What would encourage you to ride more often?
+> [p008_c0009] Bar chart for Subway showing factors encouraging more rides: Factor Percentage Fewer people behaving erratically 19% More visible police and security presence 11% Shorter wait times on weekends 11% Personal security concerns addressed 11% Shorter wait times on weekdays 11%
+> [p008_c0010] Bar chart for Bus showing factors encouraging more rides: Factor Percentage Shorter wait times on weekdays 20% Shorter wait times on weekends 16% More reliable service 13% Shorter travel times 9% Better fare incentives 6%
+[p008_c0011] _| 8 |_
+
+## Page 9
+
+### [p009_c0001] CUSTOMER SATISFACTION
+### [p009_c0002] Key Customer Experience Indicators
+### [p009_c0003] How satisfied are you with each of the following attributes?
+[p009_c0004] Includes customers who were very satisfied or satisfied
+> [p009_c0005] Attribute Aug-23 Sep-23 Oct-23 Train Cleanliness 58% 60% 60% Station Cleanliness 56% 56% 56% Train Announcements 51% 52% 51% Station Announcements 53% 53% 52% Waiting Time 56% 55% 54% Service Reliability 60% 60% 60% MTA Staff Helpfulness 53% 53% 52% Attribute Aug-23 Sep-23 Oct-23 Bus Cleanliness 72% 73% 71% Bus Announcements 65% 64% 65% Waiting Time 51% 46% 45% Travel Time 68% 66% 65% Service Reliability 58% 54% 53% MTA Staff Helpfulness 70% 69% 67%
+### [p009_c0006] Data Review
+[p009_c0007] The overall subway satisfaction rate for October is 59%. Overall line and station satisfaction are 59% and 60% respectively- both down one point from September. Feeling safe on trains is 58%, while feeling safe in stations is 57%. Most onboard and in-station key indicators remained consistent this month; Travel Times was the highest indicator (67%) while Train Cleanliness decreased two points (60%). Service Reliability is in line with September with 59% of customers satisfied.
+[p009_c0008] Overall bus satisfaction in October is 60%, one point higher than September. Local bus satisfaction is 60% while Express Bus satisfaction is 63%. Local bus satisfaction exceeds 70% among customers traveling two or less days per week while 54% of more frequent customers (3+ days per week) are satisfied. In October, Waiting Times is the lowest rated indicator (46%) while Bus Cleanliness was the highest (72%).
+[p009_c0009] Access-A-Ride (Paratransit) overall satisfaction in October is 73%, matching September's score. Customer satisfaction across all five boroughs reached at least 70%, ranging from 70% in Queens to 76% in Staten Island. Frequency of no shows, which is the lowest rated key indicator, significantly increased this month by five points to 54% satisfaction. Three quarters of customers are satisfied with Cleanliness of Vehicles (76%) while two thirds are satisfied with On Time Pick Up (64%).
+[p009_c0010] _| 9 |_
+
+## Page 10
+
+### [p010_c0001] RIDERSHIP
+### [p010_c0002] Subway Ridership
+[p010_c0003] The number of paying subway & SIR customers, and estimated number of non-paying customers, on an average weekday
+> [p010_c0004] October fare evasion data not yet available Year Month Paid (Millions) Unpaid (Millions) Total (Millions) 2020 Nov 1.8 0.5 2.3 2020 Dec 1.8 0.5 2.3 2021 Jan 1.8 0.5 2.3 2021 Feb 1.9 0.5 2.4 2021 Mar 2.0 0.5 2.5 2021 Apr 2.1 0.5 2.6 2021 May 2.2 0.5 2.7 2021 Jun 2.3 0.5 2.8 2021 Jul 2.4 0.5 2.9 2021 Aug 2.5 0.5 3.0 2021 Sep 2.6 0.5 3.1 2021 Oct 2.7 0.5 3.2 2021 Nov 2.8 0.5 3.3 2021 Dec 2.9 0.5 3.4 2022 Jan 3.0 0.5 3.5 2022 Feb 3.1 0.5 3.6 2022 Mar 3.2 0.5 3.7 2022 Apr 3.3 0.5 3.8 2022 May 3.4 0.5 3.9 2022 Jun 3.5 0.5 4.0 2022 Jul 3.6 0.5 4.1 2022 Aug 3.7 0.5 4.2 2022 Sep 3.8 0.5 4.3 2022 Oct 3.9 0.5 4.4 2022 Nov 4.0 0.5 4.5 2022 Dec 4.1 0.5 4.6 2023 Jan 4.2 0.5 4.7 2023 Feb 4.3 0.5 4.8 2023 Mar 4.4 0.5 4.9 2023 Apr 4.5 0.5 5.0 2023 May 4.6 0.5 5.1 2023 Jun 4.7 0.5 5.2 2023 Jul 4.8 0.5 5.3 2023 Aug 4.9 0.5 5.4 2023 Sep 4.0 0.5 4.5 2023 Oct 4.0 0.5 4.5
+### [p010_c0005] Bus Ridership
+[p010_c0006] The number of paying bus (NYCT and MTA) customers, and estimated number of non-paying customers, on an average weekday
+> [p010_c0007] October fare evasion data not yet available Year Month Paid (Millions) Unpaid (Millions) Total (Millions) 2020 Nov 1.0 0.3 1.3 2020 Dec 1.0 0.3 1.3 2021 Jan 1.0 0.3 1.3 2021 Feb 1.1 0.3 1.4 2021 Mar 1.2 0.3 1.5 2021 Apr 1.3 0.3 1.6 2021 May 1.4 0.3 1.7 2021 Jun 1.5 0.3 1.8 2021 Jul 1.6 0.3 1.9 2021 Aug 1.7 0.3 2.0 2021 Sep 1.8 0.3 2.1 2021 Oct 1.9 0.3 2.2 2021 Nov 2.0 0.3 2.3 2021 Dec 2.1 0.3 2.4 2022 Jan 2.2 0.3 2.5 2022 Feb 2.3 0.3 2.6 2022 Mar 2.4 0.3 2.7 2022 Apr 2.5 0.3 2.8 2022 May 2.6 0.3 2.9 2022 Jun 2.7 0.3 3.0 2022 Jul 2.8 0.3 3.1 2022 Aug 2.9 0.3 3.2 2022 Sep 3.0 0.3 3.3 2022 Oct 3.1 0.3 3.4 2022 Nov 3.2 0.3 3.5 2022 Dec 3.3 0.3 3.6 2023 Jan 3.4 0.3 3.7 2023 Feb 3.5 0.3 3.8 2023 Mar 3.6 0.3 3.9 2023 Apr 3.7 0.3 4.0 2023 May 3.8 0.3 4.1 2023 Jun 3.9 0.3 4.2 2023 Jul 4.0 0.3 4.3 2023 Aug 4.1 0.3 4.4 2023 Sep 4.2 0.3 4.5 2023 Oct 4.3 0.3 4.6
+### [p010_c0008] Paratransit Ridership
+[p010_c0009] The count of trips taken on paratransit over the course of the month
+> [p010_c0010] Year Month Trips (Millions) 2020 Nov 0.45 2020 Dec 0.45 2021 Jan 0.45 2021 Feb 0.35 2021 Mar 0.45 2021 Apr 0.45 2021 May 0.45 2021 Jun 0.45 2021 Jul 0.45 2021 Aug 0.45 2021 Sep 0.50 2021 Oct 0.45 2021 Nov 0.40 2021 Dec 0.40 2022 Jan 0.55 2022 Feb 0.55 2022 Mar 0.55 2022 Apr 0.55 2022 May 0.55 2022 Jun 0.55 2022 Jul 0.55 2022 Aug 0.55 2022 Sep 0.55 2022 Oct 0.55 2022 Nov 0.55 2022 Dec 0.55 2023 Jan 0.55 2023 Feb 0.55 2023 Mar 0.65 2023 Apr 0.60 2023 May 0.65 2023 Jun 0.65 2023 Jul 0.65 2023 Aug 0.65 2023 Sep 0.65 2023 Oct 0.65
+[p010_c0011] _| 10 |_
+
+## Page 11
+
+### [p011_c0001] RIDERSHIP
+### [p011_c0002] Data Review
+[p011_c0003] October paid weekday subway ridership reached a new post-COVID high at 3.86 million, an 8.6% increase over September, and exceeding the previous May high of 3.85 million. Seasonally adjusted comparisons to pre-COVID levels remain stable at 67%. On 12 out of 13 midweek days, ridership exceeded 4 million, with a midweek average of 4.056 million. While the single day high remains a date in September, new pandemic highs have been reached for five out of seven days of the week – for a Monday (3.69 million on November 6), Thursday (4.14 million on October 26), Friday (3.85 million on October 27), Saturday (2.74 million on October 28), and Sunday (2.31 million on November 5, the day of the NYC Marathon).
+[p011_c0004] Paid weekday bus ridership rose slightly from September to 1.385 million, though still lower than the levels reached in the spring, as fare evasion continues to be a challenge. Note that the five routes in fare free bus pilot launched in late September comprised about 1.5% of paid ridership in previous months, thus lowering the paid numbers by roughly that amount. At the six-month mark of the pilot a full analysis of the ridership impact of the program will be conducted.
+[p011_c0005] _| 11 |_
+
+## Page 12
+
+### [p012_c0001] SERVICE PERFORMANCE
+### [p012_c0002] Subway Service Delivered
+[p012_c0003] The share of scheduled trains that are actually provided (compared to schedule) during peak hours
+> [p012_c0004] Year Month Service Delivered (%) 2020 N 96 2020 D 95 2020 J 97 2020 F 91 2020 M 95 2020 A 96 2020 M 91 2020 J 91 2020 J 90 2020 A 90 2020 S 90 2020 O 92 2020 N 90 2021 D 92 2021 J 94 2021 F 94 2021 M 93 2021 A 92 2021 M 92 2021 J 92 2021 J 91 2021 A 93 2021 S 94 2021 O 94 2021 N 94 2022 D 94 2022 J 96 2022 F 95 2022 M 95 2022 A 96 2022 M 95 2022 J 95 2022 J 94 2022 A 94 2022 S 94 2022 O 94 2022 N 94 2023 D 94 2023 J 94 2023 F 94 2023 M 94 2023 A 94 2023 M 94 2023 J 94 2023 J 94 2023 A 94 2023 S 94 2023 O 94
+### [p012_c0005] Subway Delays
+[p012_c0006] The share of trains that arrived at terminal locations more than five minutes late, did not operate, or that skipped any planned station stops
+> [p012_c0007] Year Month Infrastructure & Equipment (%) Crew Availability (%) Scheduled Maintenance (%) Operating Conditions (%) External Factors (%) Police & Medical (%) Total (%) 2020 N 4 3 2 2 1 1 10 2020 D 4 3 2 2 1 1 10 2020 J 4 3 2 2 1 1 10 2020 F 4 3 2 2 1 1 10 2020 M 4 3 2 2 1 1 10 2020 A 4 3 2 2 1 1 10 2020 M 4 3 2 2 1 1 10 2020 J 4 3 2 2 1 1 10 2020 J 4 3 2 2 1 1 10 2020 A 4 3 2 2 1 1 10 2020 S 4 3 2 2 1 1 10 2020 O 4 3 2 2 1 1 10 2020 N 4 3 2 2 1 1 10 2021 D 4 3 2 2 1 1 10 2021 J 4 3 2 2 1 1 10 2021 F 4 3 2 2 1 1 10 2021 M 4 3 2 2 1 1 10 2021 A 4 3 2 2 1 1 10 2021 M 4 3 2 2 1 1 10 2021 J 4 3 2 2 1 1 10 2021 J 4 3 2 2 1 1 10 2021 A 4 3 2 2 1 1 10 2021 S 4 3 2 2 1 1 10 2021 O 4 3 2 2 1 1 10 2021 N 4 3 2 2 1 1 10 2022 D 4 3 2 2 1 1 10 2022 J 4 3 2 2 1 1 10 2022 F 4 3 2 2 1 1 10 2022 M 4 3 2 2 1 1 10 2022 A 4 3 2 2 1 1 10 2022 M 4 3 2 2 1 1 10 2022 J 4 3 2 2 1 1 10 2022 J 4 3 2 2 1 1 10 2022 A 4 3 2 2 1 1 10 2022 S 4 3 2 2 1 1 10 2022 O 4 3 2 2 1 1 10 2022 N 4 3 2 2 1 1 10 2023 D 4 3 2 2 1 1 10 2023 J 4 3 2 2 1 1 10 2023 F 4 3 2 2 1 1 10 2023 M 4 3 2 2 1 1 10 2023 A 4 3 2 2 1 1 10 2023 M 4 3 2 2 1 1 10 2023 J 4 3 2 2 1 1 10 2023 J 4 3 2 2 1 1 10 2023 A 4 3 2 2 1 1 10 2023 S 4 3 2 2 1 1 10 2023 O 4 3 2 2 1 1 10
+### [p012_c0008] Data Review
+[p012_c0009] The Subways team continued to deliver strong results in October. On time performance was 81.8%, up over two points from September, which was impacted by the historic flooding on September 29. The percentage of customers arriving at their destinations within five minutes of schedule (CJTP) rose slightly to 84.5%. Due to the impacts of several large incidents on the J , Z and 7 lines, systemwide APT rose from 74 to 82 seconds. However, despite those performance challenges, additional train time (ATT) fell from 34 to 33 seconds. Driven largely by improvements on the lettered lines, the drop in ATT highlights the continuing impact that subways' speed improvement work is having on the system. On weekends, performance remained strong despite the high volume of planned improvement projects. 84.7% of trains arrived on time in October, just slightly less than in September. Across all metrics, except for APT, this October's results exceeded 2022 levels, demonstrated the dedicated work of the Subways team to get customers to their destinations quickly and safely.
+[p012_c0010] _| 12 |_
+
+## Page 13
+
+### [p013_c0001] SERVICE PERFORMANCE
+### [p013_c0002] Subway Additional Platform Time + Additional Train Time
+[p013_c0003] APT: The average time that customers spend waiting at a station beyond their scheduled wait time
+[p013_c0004] ATT: The average time that customers spend onboard a train beyond their scheduled travel time
+> [p013_c0005] Month APT (Minutes) ATT (Minutes) Total (Minutes) Nov 2020 1.0 0.1 1.1 Dec 2020 1.1 0.1 1.2 Jan 2021 1.1 0.1 1.2 Feb 2021 1.1 0.1 1.2 Mar 2021 1.1 0.1 1.2 Apr 2021 1.1 0.1 1.2 May 2021 1.1 0.1 1.2 Jun 2021 1.1 0.1 1.2 Jul 2021 1.1 0.1 1.2 Aug 2021 1.1 0.1 1.2 Sep 2021 1.1 0.1 1.2 Oct 2021 1.1 0.1 1.2 Nov 2021 1.1 0.1 1.2 Dec 2021 1.1 0.1 1.2 Jan 2022 1.1 0.1 1.2 Feb 2022 1.1 0.1 1.2 Mar 2022 1.1 0.1 1.2 Apr 2022 1.1 0.1 1.2 May 2022 1.1 0.1 1.2 Jun 2022 1.1 0.1 1.2 Jul 2022 1.1 0.1 1.2 Aug 2022 1.1 0.1 1.2 Sep 2022 1.1 0.1 1.2 Oct 2022 1.1 0.1 1.2 Nov 2022 1.1 0.1 1.2 Dec 2022 1.1 0.1 1.2 Jan 2023 1.1 0.1 1.2 Feb 2023 1.1 0.1 1.2 Mar 2023 1.1 0.1 1.2 Apr 2023 1.1 0.1 1.2 May 2023 1.1 0.1 1.2 Jun 2023 1.1 0.1 1.2 Jul 2023 1.1 0.1 1.2 Aug 2023 1.1 0.1 1.2 Sep 2023 1.1 0.1 1.2 Oct 2023 1.1 0.1 1.2
+### [p013_c0006] Customer Journey Time Performance
+[p013_c0007] The share of customer trips with a total travel time within 5 minutes of the scheduled time
+> [p013_c0008] Line Performance (%) 1 88% 2 83% 3 86% 4 86% 5 86% 6 87% 7 87% S 42nd 98% A 80% B 78% C 80% D 76% E 85% F 81% G 82% JZ 80% L 92% M 85% N 81% Q 80% R 82% S Pkn 95% S Rock 89% W 88%
+### [p013_c0009] Moving Forward
+[p013_c0010] While our October results demonstrate the continued success of Subways' service improvement efforts, there has been an increase of operating and planned work delays, over the past few months. Subways is committed to drilling down and targeting these sources of controllable delay. We continue to roll out speed increases across the system, with October bringing sign changes to the M and R lines' terminals at Metropolitan Avenue and Bay Ridge, where the allowable speed of trains leaving the station was increased from 15 to 21 miles per hour after we rebuilt track switches at that location. This change saves 10 to 15 seconds from many R train trips and increases the operational resilience and capacity of this terminal station. Changes like these exemplify the benefits of continuing to invest in our infrastructure. We also began a focused effort to improve terminal operations at key locations across the system. This month, we rolled out a new service pattern on the A line that has successfully reduced congestion for northbound trains in Washington Heights at the end of the morning rush hour. Through the end of 2023, we plan to build on these successes at other locations in the network, ensuring fast and reliable service for our customers.
+[p013_c0011] _| 13 |_
+
+## Page 14
+
+### [p014_c0001] SERVICE PERFORMANCE
+### [p014_c0002] Bus Service Delivered
+[p014_c0003] The share of scheduled buses that are actually provided at the peak load point during peak hours
+> [p014_c0004] Year Month Service Delivered (%) 2020 N 96.5 D 94.5 J 97.0 F 91.0 M 95.0 A 95.0 M 94.0 J 93.5 J 93.0 A 92.5 S 93.5 O 91.5 2021 D 94.5 J 95.5 F 96.0 M 95.0 A 95.5 M 95.5 J 95.0 J 95.0 A 95.0 S 95.0 O 95.0 2022 D 95.5 J 96.5 F 96.0 M 95.5 A 95.5 M 95.5 J 95.5 J 95.5 A 95.5 S 95.5 O 95.5 2023 D 96.0 J 96.5 F 96.0 M 95.5 A 95.0 M 94.5 J 95.5 J 94.5 A 95.5 S 95.0 O 95.5
+### [p014_c0005] Bus Speeds, by Time of Day
+[p014_c0006] The average speed of all NYCT & MTA buses
+> [p014_c0007] Year Month AM Peak (6a-10a) (mph) Midday (10a-3p) (mph) PM Peak (3p-7p) (mph) 2020 N 8.5 7.5 7.7 D 8.6 7.6 7.8 J 8.5 7.5 7.7 F 8.4 7.4 7.7 M 8.4 7.3 7.6 A 8.4 7.3 7.6 M 8.4 7.4 7.6 J 8.4 7.4 7.6 J 8.3 7.2 7.4 A 8.0 7.1 7.3 S 8.2 7.3 7.5 O 8.3 7.4 7.7 2021 D 8.3 7.5 7.7 J 8.2 7.4 7.6 F 8.1 7.3 7.5 M 8.1 7.2 7.4 A 8.4 7.3 7.7 M 8.5 7.4 7.7 J 8.4 7.3 7.6 J 8.1 7.2 7.4 A 8.0 7.2 7.4 S 8.1 7.2 7.4 O 8.3 7.4 7.6 2022 D 8.3 7.4 7.7 J 8.3 7.4 7.6 F 8.2 7.3 7.5 M 8.3 7.2 7.4 A 8.4 7.3 7.7 M 8.5 7.4 7.7 J 8.4 7.3 7.6 J 8.1 7.2 7.4 A 8.1 7.2 7.4 S 8.2 7.2 7.4 O 8.3 7.4 7.6 2023 D 8.3 7.4 7.7 J 8.4 7.3 7.6 F 8.5 7.3 7.7 M 8.3 7.2 7.5 A 8.4 7.2 7.6 M 8.5 7.2 7.7 J 8.5 7.3 7.7 J 7.9 7.1 7.3 A 8.0 7.1 7.3 S 7.9 7.1 7.3 O 7.9 7.1 7.3
+### [p014_c0008] Data Review
+[p014_c0009] Daily bus ridership in October, at approximately 1.4 million (or 62% of pre-pandemic levels), remained about the same as September. Express bus ridership reached the highest it has been at 80% of pre-pandemic levels. Service Delivered (at 95.2%) showed a slight improvement by 0.6 percentage points compared to September and remained relatively the same as last year. Bus speeds remained the same as September (and pre-pandemic) at 7.9 mph, but decreased by 2.5% from last year. Customer Journey Time Performance (CJTP) showed an improvement of 1.5% (with a 4-second improvement in bus stop time and a 14-second improvement in travel time) against the previous month, although we remain below last year's and pre-pandemic levels.
+[p014_c0010] Overall bus customer satisfaction was 60%, a one-point increase from September. Local bus (Local/Limited and SBS) overall experience is 60% (flat) while Express Bus overall experience is 63%, on par with September. Notably, Express bus service-related attributes (Waiting Times, Travel Times, Service Reliability) all
+[p014_c0011] _| 14 |_
+
+## Page 15
+
+### [p015_c0001] SERVICE PERFORMANCE
+### [p015_c0002] Additional Bus Stop Time + Additional Travel Time
+[p015_c0003] ABST: The average time that customers spend waiting at a stop beyond their scheduled wait time.
+[p015_c0004] ATT: The average time customers spend onboard a bus beyond their scheduled travel time
+> [p015_c0005] Estimated data for Additional Bus Stop Time (ABST) and Additional Travel Time (ATT) in minutes Month Year ABST (min) ATT (min) Total (min) N 2020 1.5 -0.5 1.0 D 2020 1.8 -0.2 1.6 J 2020 1.2 -0.8 0.4 F 2020 2.4 -0.5 1.9 M 2020 1.6 -0.7 0.9 A 2020 1.7 -0.4 1.3 M 2020 1.9 -0.1 1.8 J 2020 1.8 -0.1 1.7 J 2020 1.8 -0.1 1.7 A 2020 1.8 -0.1 1.7 S 2020 2.9 0.8 3.7 O 2020 3.1 0.7 3.8 N 2020 2.7 0.6 3.3 D 2020 2.7 0.1 2.8 J 2021 2.3 0.1 2.4 F 2021 2.3 0.2 2.5 M 2021 2.3 0.3 2.6 A 2021 2.0 0.4 2.4 M 2021 2.6 0.6 3.2 J 2021 2.4 0.5 2.9 J 2021 1.7 0.1 1.8 A 2021 1.7 -0.1 1.6 S 2021 2.9 0.8 3.7 O 2021 2.6 0.6 3.2 N 2021 2.6 0.5 3.1 D 2021 2.5 0.4 2.9 J 2022 1.7 0.3 2.0 F 2022 1.9 0.4 2.3 M 2022 2.0 0.5 2.5 A 2022 2.9 0.7 3.6 M 2022 2.6 0.5 3.1 J 2022 2.0 0.1 2.1 J 2022 1.7 0.1 1.8 A 2022 1.7 -0.1 1.6 S 2022 3.3 1.1 4.4 O 2022 2.6 0.8 3.4 N 2023 1.7 0.3 2.0 D 2023 1.9 0.4 2.3 F 2023 2.0 0.5 2.5 M 2023 2.9 0.7 3.6 A 2023 2.6 0.5 3.1 M 2023 2.0 0.1 2.1 J 2023 1.7 0.1 1.8 J 2023 3.3 1.1 4.4 A 2023 2.6 0.8 3.4 S 2023 1.7 0.3 2.0
+### [p015_c0006] Bus Customer Journey Time Performance, by Borough, October 2023
+[p015_c0007] The share of customer trips with a total travel time within 5 minutes of the scheduled time
+> [p015_c0008] Bus Customer Journey Time Performance by Borough, October 2023 Borough Performance (%) Bronx ~72% Brooklyn ~65% Manhattan ~75% Queens ~66% Staten Island ~65% Systemwide average 69.2%
+[p015_c0009] increased this month and are approaching 60% satisfaction. The top reasons for encouraging more frequent bus rides remain shorter wait times and “more reliable service.” As ridership grows, 13% of responses mentioned ‘Crowding’ as the most important aspect to improve for increased satisfaction (up from 11% last month and 9% in August). Total ridership continues to increase to its highest point since the pandemic.
+### [p015_c0010] Moving Forward
+[p015_c0011] The Bus team is laser focused on multiple initiatives to improve wait and travel times and improve service reliability. We know that bus lanes and busways are among the most effective tools for increasing bus speeds, with an average of 10% improvements for bus lanes and up to 50% for busways. Several initiatives aimed to improve bus speeds, such as collaborating with NYC DOT to complete 3.1 miles of bus lanes on Gun Hill Road (completed on October 31st), expanding the ABLE program to the Q54, and transitioning ABLE to ACE (Automated Camera Enforcement) in 2024, will play a role in Transit’s “Faster, Cleaner, Safer” Plan.
+[p015_c0012] _| 15 |_
+
+## Page 16
+
+### [p016_c0001] SERVICE PERFORMANCE
+### [p016_c0002] Paratransit Trips, by Type of Provider
+[p016_c0003] The number of paratransit trips, by type of service
+> [p016_c0004] This stacked bar chart displays the monthly volume of paratransit trips across five provider categories from November 2020 to October 2023. The y-axis is labeled 'Thousands' and ranges from 0 to 700. The x-axis lists months from N (November) to O (October) for each year. The legend identifies the categories: Broker (green), E-Hail (blue), Street Hail (yellow), Primary Provider (red), and All others (dark blue). The total number of trips shows a steady increase over the period, starting around 450,000 in late 2020 and reaching approximately 650,000 by late 2023. The 'Primary Provider' category consistently represents the largest share of trips, followed by 'Broker'.
+### [p016_c0005] Paratransit On-Time Performance
+[p016_c0006] The share of paratransit customers who are picked up within 20 minutes of schedule
+> [p016_c0007] This line chart tracks the percentage of paratransit customers picked up within 20 minutes of their scheduled time for two provider types: Primary provider (green line) and Broker (blue line) from November 2020 to October 2023. The y-axis represents the percentage, ranging from 70% to 100%. The Primary provider consistently maintains a higher on-time performance rate, generally staying above 85%, while the Broker performance fluctuates more significantly, with notable dips in late 2020 and early 2021.
+### [p016_c0008] Paratransit Provider No-Shows
+[p016_c0009] The share of providers that do not arrive at the pick-up location within 30 minutes of the promised time and the trip is not provided
+> [p016_c0010] This line chart illustrates the no-show rate for paratransit providers, defined as the number of providers that fail to arrive within 30 minutes of the promised time per 1,000 scheduled trips. The y-axis ranges from 0 to 12. The x-axis covers the period from November 2020 to October 2023. The Broker provider (blue line) shows a much higher and more volatile no-show rate compared to the Primary provider (green line). The Broker rate peaks at over 10 no-shows per 1,000 trips in late 2021, while the Primary provider's rate remains consistently low, generally below 3.
+[p016_c0011] _| 16 |_
+
+## Page 17
+
+### [p017_c0001] SERVICE PERFORMANCE
+### [p017_c0002] Data Review
+[p017_c0003] The year over year growth in ridership continued in October, with total trips increasing by 100,000 (or 17.4%) when compared to October 2022. For the category of on-time performance, both our primary carrier and broker services completed 87% of trips within the 20-minute pick-up window from the scheduled time. The Primary service declined by 3%, while Broker service improved by 4% from October 2022 despite the significantly higher trip volume.
+[p017_c0004] On primary carrier service, the no-show rate for performance decreased by 0.2 per 1,000 scheduled trips to 0.89, considerably better than our goal of 3.0. For Broker service, the result for October 2023 was 1.60 no-shows per 1,000 scheduled trips, also better than our goal of 3.0. Overall, the rate of Primary carrier no-shows has decreased by 0.41 per 1,000 trips (or 31.5%) and the broker no-show rate has decreased by 3.03 per 1,000 trips or (65.4%) when compared to October 2022.
+[p017_c0005] In October 2023, 97% of all calls were answered, and the average call answer speed decreased by 3 seconds (or 9.4%) to 29 seconds when compared to September 2023 and decreased by 66 seconds (or 69.5%) when compared to October 2022.
+### [p017_c0006] Moving Forward
+[p017_c0007] As we continue our push to further improve Access-a-Ride service, this month we began reporting our On-Time Performance within a 20-minute window. This new performance metric, which is more customer-oriented than the paratransit industry standard of 30-minutes, will be our new standard going forward. For reference, we will continue to report the 30-minute performance online at metrics.mta.info .
+[p017_c0008] Over the next month, our focus remains on our North Star goal of increasing our customer satisfaction. Based on our daily customer feedback and monthly pulse surveys, we continue working to address the issues most important to our customers, including increasing on-time performance, reducing provider no-shows, and reducing trip lengths.
+[p017_c0009] _| 17 |_
+[p017_c0010] _The MTA logo, consisting of the letters 'MTA' in white inside a blue circle._
+
+## Page 18
+
+### [p018_c0001] ACCESSIBILITY
+### [p018_c0002] Elevator Availability
+[p018_c0003] The share of time that elevators across the system are running and available for customer use
+> [p018_c0004] Month Total Elevator Availability (%) NYCT Elevator Availability (%) 3rd Party Elevator Availability (%) N 2020 96 97 95 D 2020 95 97 92 J 2020 95 97 91 F 2020 95 96 91 M 2021 95 96 90 A 2021 95 96 88 M 2021 95 96 87 J 2021 95 96 85 J 2021 95 96 86 A 2021 95 96 87 S 2021 96 96 88 O 2021 96 96 92 N 2021 95 96 85 D 2021 95 96 83 J 2022 95 96 85 F 2022 95 96 88 M 2022 95 96 85 J 2022 95 96 85 J 2022 95 96 85 A 2022 95 96 86 S 2022 95 96 90 O 2022 95 96 83 N 2022 95 96 82 D 2022 95 96 85 J 2023 95 96 88 F 2023 95 96 92 M 2023 95 96 93 J 2023 95 96 92 J 2023 95 96 88 A 2023 95 96 87 S 2023 95 96 87 O 2023 95 96 87
+### [p018_c0005] Accessibility Update
+[p018_c0006] How does this month's theme of "faster" relate to accessibility? Simple: the more accessible our bus and subway system is, the faster all customers get to their destinations.
+[p018_c0007] Faster bus boarding requires keeping bus lanes and bus stops clear and accessible, which is why we're thrilled to see the expansion of the ABLE program to additional routes and the plan to expand enforcement to bus stops starting next year. Our bus fleet is fully accessible, but that access is only as good as the operator's ability to pull the bus to the curb and kneel the bus or safely deploy that ramp or lift, so keeping the stop clear of non-transit vehicles is just essential in improving access and speed for customers. We're also working with our partners at DOT and Department of Sanitation to ensure that bus stops are kept clear of garbage, debris, snow, and ice.
+[p018_c0008] Through our bus open stroller program , parents and caregivers who use 57 bus routes across the city no longer need to take time to close a stroller to board a bus – and we're excited about the continued positive feedback on this expanded pilot. Autonomous wheelchair self-securement also has the potential to make boarding faster by allowing customers with mobility devices the option to use the Quantum device to self-secure in seconds with the touch of a button, and we continue to seek customer and operator feedback on this pilot on the M7 route.
+[p018_c0009] With funding from State Senator Hoylman-Sigal, we are expanding four of the most successful features from the 2019 Accessible Station Lab . Large blue, white, and yellow floor decals, marking the accessible boarding areas, are being installed at all 24 accessible stations in Senator Hoylman-Sigal's district. You'll see these decals at Herald Sq, Times Sq-42 St and more stations. The NaviLens wayfinding, information, and language translation app is already installed at 66 St-Lincoln Center 1 and 72 St 1 2 3 stations and stops along the M66 bus route, with 9 additional stations on the West Side of Manhattan to follow suit in the coming months. This free app has the potential to help all customers navigate bus stops and subway stations more easily. Check out this video about the project and learn more on our website .
+[p018_c0010] _| 18 |_
+
+## Page 19
+
+### [p019_c0001] FINANCIAL RESULTS
+### [p019_c0002] 2023 Operating Revenue & Expenses, October Year-to-Date
+[p019_c0003]
+
+```text
+in $ millions New York City Transit MTA Bus Staten Island Rail Forecast Actual Variance Forecast Actual Variance Forecast Actual Variance Total non-reimbursable revenues 3,296.1 3,276.1 (20.0) 159.2 156.7 (2.5) 5.1 4.5 (0.6) Farebox revenues 2,758.7 2,746.4 (12.3) 143.9 148.9 5.0 3.5 3.0 (0.5) Other revenues 537.4 529.7 (7.7) 15.3 7.8 (7.5) 1.6 1.5 (0.1) Total non-reimbursable expenses 7,916.5 8,005.7 (89.2) 758.4 704.4 54.0 61.1 49.1 12.0 Labor expenses 6,059.4 6,150.0 (90.5) 567.8 546.8 21.0 46.5 36.9 9.6 Non-labor expenses 1,857.1 1,855.7 1.4 190.6 157.7 32.9 14.7 12.2 2.4 Non-cash liabilities 1,832.7 1,817.4 15.4 156.7 44.5 112.2 14.9 18.2 (3.3) Net surplus/(deficit) - accrued (6,453.1) (6,546.9) (93.8) (755.9) (592.2) 163.7 (71.0) (62.8) 8.1
+```
+### [p019_c0004] Staffing Levels (Full-Time Equivalents)
+[p019_c0005]
+
+```text
+New York City Transit MTA Bus Staten Island Rail Forecast Actual Variance Forecast Actual Variance Forecast Actual Variance Non-Reimbursable 45,329 42,781 2,548 3,868 3,610 258 366 347 19 Reimbursable 5,123 3,782 1,341 38 33 5 54 7 47 Total Positions 50,452 46,563 3,889 3,906 3,643 263 420 354 66
+```
+### [p019_c0006] Data Review
+[p019_c0007] Farebox revenue was unfavorable to the Forecast by $7.8 million due to lower than projected Bus ridership and Fare Liability offset by higher Subways ridership than projected and higher average fare. Other Revenue was $15.3 million lower than the Forecast mainly due to unfavorable timing of Fare and Paratransit reimbursement and other contract services. Expenses were below the Forecast by $23.2 million. Labor expenses, including fringe benefits, were unfavorable by $59.9 million driven largely by the TWU active essential employee bonus payment and overruns in overtime due to vacancy and availability back fill coverage; offset by health and welfare underruns. Non-labor expenses were favorable by $36.7 million mainly due to favorable timing of claims, professional contracts and materials and supplies expenses offset by increasing paratransit support cost and Subways car cleaning contracts overruns.
+### [p019_c0008] Moving Forward
+[p019_c0009] The Agency continues its efforts to fill vacancies, monitor ridership trends, look for cost effective ways to operate efficiently and focus on tightly managing expenditures, especially overtime.
+[p019_c0010] _| 19 |_
+
+## Page 20
+
+### [p020_c0001] CUSTOMERS AND COMMUNITIES
+### [p020_c0002] Livonia Maintenance Shop Tour with Elected Officials
+[p020_c0003] Recently, the MTA led a tour of elected officials through the Livonia Maintenance Shop, home of the 3-train, to bring to life a major case study featured in the recently released 20-Year Needs Assessment . The tour, while amplifying the hard work of the crews that maintain the 300-car shop, highlighted to our partners in government the major investments needed to bring the New York City subway system into a state of good repair. Led by the Government and Community Relations team and MTA Construction and Development (C&D) the tour (which included Senator Leroy Comrie, Assemblymember Emily Gallagher, and the offices of Senators Persaud, Kreuger and Assemblymembers Rajkumar, Walker and Cunningham), was essential to see these case studies first-hand as we begin to work on the 2025-2029 Capital Program.
+> [p020_c0004] A group of people, including MTA staff in safety vests and elected officials, are engaged in conversation inside a workshop. One man in a safety vest is gesturing while speaking to others, including a man in a white hard hat and a woman in a dark jacket.
+> [p020_c0005] A man in a white hard hat and safety vest is smiling and talking to a woman holding a large blueprint or map. Another man in a white hard hat and safety vest is visible in the background.
+> [p020_c0006] A group of people, including MTA staff in safety vests and elected officials, are standing in a large industrial space, possibly a maintenance shop, with a large door in the background. The group is listening to a man in a light-colored shirt who is speaking.
+[p020_c0007] _The MTA logo, consisting of the letters "MTA" in white inside a blue circle._
+[p020_c0008] _| 20 |_
+
+## Page 21
+
+### [p021_c0001] CUSTOMERS AND COMMUNITIES
+### [p021_c0002] 20 Year Needs: Staten Island North Shore and West Shore BRT Projects
+[p021_c0003] On Wednesday, October 25, representatives from MTA Government & Community Relations (GCR) and C&D met with members of the Staten Island Economic Development Corporation and Staten Island Chamber of Commerce for an update on the North Shore BRT EIS and West Shore Bus Rapid Transit studies.
+[p021_c0004] The MTA team gave an overview of the recently announced 20-Year Needs Assessment which includes a Comparative Evaluation of 22 potential expansion projects (including the Staten Island North Shore BRT and West Shore BRT)
+> [p021_c0005] A photograph of a meeting room where several people are seated around a large conference table. A large digital screen at the head of the table displays a presentation slide. The participants appear to be in a professional setting, engaged in a discussion.
+### [p021_c0006] Interborough Express Town Hall Meeting
+[p021_c0007] On Wednesday, November 8, the MTA held its first of three in-person public engagement town hall meetings on the Interborough Express at Brooklyn College in Flatbush. The town hall events provide an opportunity for members of the public to learn more about the proposed project and to provide feedback on its potential benefits as the MTA prepares to formally enter the environmental review process.
+[p021_c0008] Representatives from GCR and C&D gave an overview of current progress on the Interborough Express which includes the Planning and Environmental Linkages study. The transformative Light Rail Transit project will connect communities in Brooklyn and Queens to 17 subway lines and the Long Island Railroad. This will significantly reduce travel times within and between the two boroughs.
+> [p021_c0009] A photograph showing a group of people gathered around informational posters at a town hall meeting. The posters contain text and images related to the Interborough Express project. The attendees are looking at the posters and appear to be engaged in a discussion.
+[p021_c0010] _| 21 |_
+[p021_c0011] _The MTA logo, consisting of the letters "MTA" in white inside a blue circle._
+
+## Page 22
+
+### [p022_c0001] SAFETY AND SECURITY
+### [p022_c0002] Customer Accident Rate
+[p022_c0003] The number of reportable subway and bus customer accidents per million customers (12-month rolling average)
+[p022_c0004] October data not yet available
+> [p022_c0005] Month Bus Subway Dec 2020 1.8 4.2 Jan 2021 1.9 4.8 Feb 2021 1.9 5.8 Mar 2021 1.9 6.0 Apr 2021 1.9 5.8 May 2021 1.9 5.5 Jun 2021 1.9 5.2 Jul 2021 1.9 5.0 Aug 2021 1.9 4.8 Sep 2021 1.9 4.6 Oct 2021 1.9 4.2 Nov 2021 1.9 4.0 Dec 2021 1.9 3.8 Jan 2022 1.9 3.6 Feb 2022 1.9 3.4 Mar 2022 1.9 3.2 Apr 2022 1.9 3.1 May 2022 1.9 3.0 Jun 2022 1.9 2.9 Jul 2022 1.9 2.8 Aug 2022 1.9 2.7 Sep 2022 1.9 2.6 Oct 2022 1.9 2.5 Nov 2022 1.9 2.4 Dec 2022 1.9 2.3 Jan 2023 1.9 2.2 Feb 2023 1.9 2.1 Mar 2023 1.9 2.0 Apr 2023 1.9 2.0 May 2023 1.9 1.9 Jun 2023 1.9 1.9 Jul 2023 1.9 1.9 Aug 2023 1.9 1.9 Sep 2023 1.9 1.9 Oct 2023 2.2 2.8
+### [p022_c0006] Bus Collision Rate
+[p022_c0007] The number of bus collisions per million miles
+> [p022_c0008] Month Bus Dec 2020 47 Jan 2021 47 Feb 2021 36 Mar 2021 47 Apr 2021 44 May 2021 47 Jun 2021 50 Jul 2021 53 Aug 2021 54 Sep 2021 53 Oct 2021 61 Nov 2021 66 Dec 2021 56 Jan 2022 57 Feb 2022 53 Mar 2022 55 Apr 2022 58 May 2022 60 Jun 2022 65 Jul 2022 54 Aug 2022 58 Sep 2022 63 Oct 2022 64 Nov 2022 63 Dec 2022 67 Jan 2023 51 Feb 2023 56 Mar 2023 58 Apr 2023 58 May 2023 66 Jun 2023 55 Jul 2023 53 Aug 2023 51 Sep 2023 64 Oct 2023 64
+### [p022_c0009] Subway Fires
+[p022_c0010] Total number of fires in the subway, including right-of-way, in stations and on trains.
+> [p022_c0011] Month Fires Dec 2020 75 Jan 2021 90 Feb 2021 80 Mar 2021 105 Apr 2021 85 May 2021 90 Jun 2021 110 Jul 2021 90 Aug 2021 60 Sep 2021 70 Oct 2021 85 Nov 2021 75 Dec 2021 125 Jan 2022 150 Feb 2022 130 Mar 2022 115 Apr 2022 95 May 2022 90 Jun 2022 105 Jul 2022 105 Aug 2022 95 Sep 2022 110 Oct 2022 105 Nov 2022 85 Dec 2022 75 Jan 2023 95 Feb 2023 95 Mar 2023 95 Apr 2023 140 May 2023 100 Jun 2023 75 Jul 2023 65 Aug 2023 85 Sep 2023 70 Oct 2023 70
+[p022_c0012] _| 22 |_
+
+## Page 23
+
+### [p023_c0001] SAFETY AND SECURITY
+### [p023_c0002] Employee Lost Time Accident Rate
+[p023_c0003] The number of reportable employee lost time accidents per 100 employees (12-month rolling average)
+> [p023_c0004] October data not yet available Month Bus Subway 2020 N 7.2 5.0 2020 D 7.3 5.0 2020 J 7.4 5.0 2020 F 7.5 5.0 2020 M 7.2 4.2 2020 A 7.0 4.2 2020 M 7.2 4.2 2020 J 7.3 4.2 2020 J 7.4 4.2 2020 A 7.5 4.2 2020 S 7.5 4.2 2020 O 7.5 4.2 2021 D 7.5 4.2 2021 J 7.5 4.2 2021 F 7.5 4.2 2021 M 7.5 4.2 2021 A 7.5 4.2 2021 M 7.5 4.2 2021 J 7.5 4.2 2021 J 7.5 4.2 2021 A 7.5 4.2 2021 S 7.5 4.2 2021 O 7.5 4.2 2022 D 7.5 4.2 2022 J 7.5 4.2 2022 F 7.5 4.2 2022 M 7.5 4.2 2022 A 7.5 4.2 2022 M 7.5 4.2 2022 J 7.5 4.2 2022 J 7.5 4.2 2022 A 7.5 4.2 2022 S 7.5 4.2 2022 O 7.5 4.2 2023 D 7.5 4.2 2023 F 7.5 4.2 2023 M 7.5 4.2 2023 A 7.5 4.2 2023 J 7.5 4.2 2023 J 7.5 4.2 2023 A 7.5 4.2 2023 S 7.5 4.2 2023 O 7.5 4.2
+### [p023_c0005] Assaults and Harassments Against NYCT Employees
+[p023_c0006] Assault, under NYS penal law, requires physical injury. Harassment involves actions that annoy or alarm with no resulting physical injury
+> [p023_c0007] October data not yet available Month Harassment Assault Total 2020 N 210 10 220 2020 D 210 10 220 2020 J 210 10 220 2020 F 210 10 220 2020 M 210 10 220 2020 A 210 10 220 2020 M 210 10 220 2020 J 210 10 220 2020 J 210 10 220 2020 A 210 10 220 2020 S 210 10 220 2020 O 210 10 220 2021 D 210 10 220 2021 J 210 10 220 2021 F 210 10 220 2021 M 210 10 220 2021 A 210 10 220 2021 M 210 10 220 2021 J 210 10 220 2021 J 210 10 220 2021 A 210 10 220 2021 S 210 10 220 2021 O 210 10 220 2022 D 210 10 220 2022 J 210 10 220 2022 F 210 10 220 2022 M 210 10 220 2022 A 210 10 220 2022 M 210 10 220 2022 J 210 10 220 2022 J 210 10 220 2022 A 210 10 220 2022 S 210 10 220 2022 O 210 10 220 2023 D 210 10 220 2023 F 210 10 220 2023 M 210 10 220 2023 A 210 10 220 2023 J 210 10 220 2023 J 210 10 220 2023 A 210 10 220 2023 S 210 10 220 2023 O 210 10 220
+### [p023_c0008] Data Review & Moving Forward
+[p023_c0009] Subway Customer Accident Rates decreased when comparing the most recent 12-month period to the previous one.
+[p023_c0010] Bus Collision Injuries and Customer Accidents increased, while Bus Collisions decreased slightly when comparing the most recent 12-month period to the previous one. The Office of System Safety is still working with the Department of Buses to rate the severity of each collision so there's a better understanding of the collisions and develop the best ways to reduce them.
+[p023_c0011] Employee Lost Time Accidents decreased when comparing the most recent 12-month period to the previous one. Subway Fires have decreased on a rolling 12-month basis when comparing periods ending October 2022 and October 2023. It is also worth noting that Monthly Fires for October 2023 (70) decreased when compared to the same month in the previous year (110).
+[p023_c0012] _| 23 |_
+
+## Page 24
+
+### [p024_c0001] SAFETY AND SECURITY
+### [p024_c0002] Major Crimes Against Subway Customers
+[p024_c0003] The rate of all major felonies (murder, rape, robbery, felony assault, grand larceny) against subway customers
+> [p024_c0004] Estimated Data for Major Crimes Against Subway Customers Month Total Crimes (Rate) Crimes per Million Customers Nov 2020 2.0 180 Dec 2020 2.2 190 Jan 2021 2.1 200 Feb 2021 2.0 190 Mar 2021 2.1 180 Apr 2021 2.0 170 May 2021 2.8 200 Jun 2021 2.1 160 Jul 2021 2.2 160 Aug 2021 2.0 170 Sep 2021 2.8 180 Oct 2021 3.5 170 Nov 2021 3.5 180 Dec 2021 3.0 190 Jan 2022 3.2 200 Feb 2022 2.8 180 Mar 2022 2.8 180 Apr 2022 3.2 170 May 2022 2.5 160 Jun 2022 2.8 170 Jul 2022 2.5 170 Aug 2022 2.8 170 Sep 2022 2.8 170 Oct 2022 2.8 170 Nov 2022 2.5 160 Dec 2022 2.2 150 Jan 2023 2.5 160 Feb 2023 2.8 170 Mar 2023 2.5 160 Apr 2023 2.8 170 May 2023 2.5 160 Jun 2023 2.8 170 Jul 2023 2.5 160 Aug 2023 2.8 170 Sep 2023 3.2 180 Oct 2023 3.5 190
+### [p024_c0005] NYPD Summonses & Arrests
+[p024_c0006] The number of summonses issued for fare evasion (TABS + criminal); number of summons issued for other infractions; and number of arrests made by NYPD
+> [p024_c0007] Estimated Data for NYPD Summonses & Arrests (Thousands) Month Fare Evasion Summons All Other Summons Subway Arrests Nov 2020 3.0 0.5 0.5 Dec 2020 3.5 0.5 0.5 Jan 2021 4.0 0.5 0.5 Feb 2021 4.5 0.5 0.5 Mar 2021 5.0 0.5 0.5 Apr 2021 5.5 0.5 0.5 May 2021 6.0 0.5 0.5 Jun 2021 5.5 0.5 0.5 Jul 2021 5.0 0.5 0.5 Aug 2021 5.5 0.5 0.5 Sep 2021 6.0 0.5 0.5 Oct 2021 6.5 0.5 0.5 Nov 2021 7.0 0.5 0.5 Dec 2021 7.5 0.5 0.5 Jan 2022 8.0 0.5 0.5 Feb 2022 8.5 0.5 0.5 Mar 2022 9.0 0.5 0.5 Apr 2022 9.5 0.5 0.5 May 2022 10.0 0.5 0.5 Jun 2022 10.5 0.5 0.5 Jul 2022 11.0 0.5 0.5 Aug 2022 11.5 0.5 0.5 Sep 2022 12.0 0.5 0.5 Oct 2022 12.5 0.5 0.5 Nov 2022 13.0 0.5 0.5 Dec 2022 13.5 0.5 0.5 Jan 2023 14.0 0.5 0.5 Feb 2023 14.5 0.5 0.5 Mar 2023 15.0 0.5 0.5 Apr 2023 15.5 0.5 0.5 May 2023 16.0 0.5 0.5 Jun 2023 16.5 0.5 0.5 Jul 2023 17.0 0.5 0.5 Aug 2023 17.5 0.5 0.5 Sep 2023 18.0 0.5 0.5 Oct 2023 18.5 0.5 0.5
+### [p024_c0008] Perception of Safety and Police Presence
+[p024_c0009] On a scale of 1-10, where 1 is very unsafe and 10 is very safe, how safe do you feel using the subway?
+> [p024_c0010] Estimated Data for Perception of Safety Month On Trains In Stations Feb 2022 5.0 4.5 Mar 2022 4.8 4.5 Apr 2022 4.5 4.5 May 2022 4.8 5.0 Jun 2022 4.5 4.5 Jul 2022 5.2 5.0 Aug 2022 5.5 5.0 Sep 2022 5.5 5.0 Oct 2022 5.2 4.8 Nov 2022 5.0 4.5 Dec 2022 5.5 5.0 Jan 2023 5.8 5.5 Feb 2023 6.0 6.0 Mar 2023 6.0 6.0 Apr 2023 5.8 5.8 May 2023 5.5 5.5 Jun 2023 5.5 5.5 Jul 2023 5.8 5.8 Aug 2023 5.8 5.8 Sep 2023 5.8 5.8 Oct 2023 5.8 5.8
+[p024_c0011] How do you feel about the number of uniformed police officers you've seen in the subway?
+> [p024_c0012] Estimated Data for Police Presence Perception Month Too few police Right amount Too many Jul 2023 55% 35% 10% Aug 2023 55% 35% 10% Sep 2023 55% 35% 10% Oct 2023 55% 35% 10%
+[p024_c0013] _| 24 |_
+
+## Page 25
+
+### [p025_c0001] SAFETY AND SECURITY
+### [p025_c0002] Data Review
+[p025_c0003] In October 2023, monthly Major Felony Crime was up 27% versus September 2023. Crimes per million rides also increased 17% from September 2023. Additionally, crime was up 6% versus October 2022 and up 16% versus the 2022 monthly average. This was the first month in three months we saw increases in crime.
+[p025_c0004] Although we saw a rise in crime October, we continue to make progress year over year. Year to date crime is still down 3.9% compared to 2022. On a per rider basis, crime in 2023 remains the lowest level seen since December 2019. Also, our Cops, Cameras, and Care (Subway Safety) Initiative has crossed one year of full deployment and yielded a 6% reduction in major crime.
+### [p025_c0005] Moving Forward
+[p025_c0006] The MTA remains committed to innovate internal programs as well as develop City/State/National partnerships on initiatives geared towards crime reduction, enhanced customer and employee safety, and improved customer experience. Our long-term safety, security, and policing strategies continue to make progress on crime and quality of life incidents. We look forward to continued progress and growth of our initiatives into 2024 and deterring future crime.
+> [p025_c0007] A police officer in a dark uniform and face mask is walking past a subway car. A passenger is visible inside the car, also wearing a face mask. The scene is set in a subway station with tiled floors and a blue subway car in the background.
+[p025_c0008] _| 25 |_
+[p025_c0009] _The MTA logo, consisting of the letters "MTA" in white inside a blue circle._
+
+## Page 26
+
+### [p026_c0001] SPECIAL FEATURE
+### [p026_c0002] Improving Bus Speeds and the Customer Experience
+[p026_c0003] Every day, nearly one and a half million customers rely on a bus to get to work, school, and to fully experience New York City. For many New Yorkers, especially those who live in neighborhoods without direct subway access, their local bus route is an essential connector to the entire city. Buses are engines of equity in our city – bus customers are disproportionately likely to come from working class communities. And buses are a crucial tool in our drive to combat climate change – even a diesel-fueled bus can reduce carbon emissions – something that will only grow more powerful as NYCT transitions to a fully zero-emission bus fleet in the coming decades.
+[p026_c0004] Bus customers have broadly expressed increasing satisfaction with their trips in recent months. Overall bus satisfaction has hovered in the sixties percentage-wise in 2023, nearing the North Star goal of 70%. However, one area where work remains to move the needle for customers is on service speed and predictability. In October, customer satisfaction with wait times was 46%, the lowest rated metric for bus customers. 28% of bus customers said improving wait times is the single biggest factor in increasing their satisfaction, with travel times not far behind as the fourth largest factor. Bus speeds contribute to these satisfaction scores; in September, citywide bus speeds were 8.0 mph, and in Brooklyn and Manhattan, buses crawled at a mere 6.9 mph and 6.2 mph respectively.
+[p026_c0005] Buses are often forced to compete for precious street space with privately driven and for-hire vehicles, usually carrying two or fewer passengers, with the result being slower journeys for the dozens of customers aboard a bus. Data on this is stark. Bus speeds saw historic peaks during the initial months of the Covid-19 pandemic, reaching 9.3 mph on average in April of 2020. Since then, as congestion has returned and even worsened compared to pre-pandemic levels, speeds have returned to the 8.0-8.5 mph baseline.
+[p026_c0006] _| 26 |_
+
+## Page 27
+
+### [p027_c0001] SPECIAL FEATURE
+### [p027_c0002] Improving Bus Speeds and the Customer Experience (con't)
+### [p027_c0003] A Roadmap to Build On
+[p027_c0004] Since the debut of the 14th Street Busway in 2019, we have seen the potency of a new era of bus prioritization on city streets, especially when combined with camera enforcement. Expanding dedicated bus lanes and busways is an essential tactic in the overall strategy of bringing better bus service to New Yorkers. The data is clear: bus lanes and busways work, and countless thousands of New Yorkers benefit from them.
+[p027_c0005] Take a few examples. The Main St busway in Flushing includes some of the most congested blocks outside of Manhattan's central business district. Since its implementation, the PM peak speed has increased by 39%. In Washington Heights, the critical 181st St crosstown busway has seen PM peak speeds increase by 43%. And in Jamaica, which is a crucial hub for Queens commuters, especially those making connections from bus to rail, the Archer Ave busway has increased PM peak speeds by 41%. These are remarkable gains in speed for customers. In total, NYC will have 164 miles of bus lanes by the end of 2023, and New York City Transit continues to work with City partners to identify and complete additional bus prioritization projects in the coming years.
+[p027_c0006] Building on the success of bus lanes is NYCT's ABLE camera program. ABLE – short for Automated Bus Lane Enforcement – deploys automated cameras on buses which ticket vehicles illegally operating in bus lanes. To date, ABLE is active on 623 buses, covering 80 miles of bus lanes, on 21 routes, benefiting 450,000 daily customers. The scale is immense. In four years, 328,000 violations have been issued; drivers who get a ticket learn their
+[p027_c0007] lesson too – our recidivism rate is a remarkably low 8%. On average, ABLE increases bus speeds by an additional 5% on top of the speed increases gained via bus lanes or busways. ABLE also is a win for safety: ABLE corridors have seen a 20% reduction in collisions on average. The data is clear, ABLE is a uniquely successful tool to deliver faster and safer bus service at scale. It is a roadmap to build upon into the future.
+> [p027_c0008] A photograph showing four people standing outdoors in front of a multi-story building. From left to right: a man in a dark uniform, a woman in a dark shirt, a man in a dark suit holding a blue sign that says 'MTA More Cameras = Faster Buses', and another man in a grey suit. They are all smiling. The background shows a city street with parked cars and a building.
+[p027_c0009] _| 27 |_
+[p027_c0010] _The MTA logo, which consists of the letters 'MTA' in white inside a blue circle._
+
+## Page 28
+
+### [p028_c0001] SPECIAL FEATURE
+### [p028_c0002] Improving Bus Speeds and the Customer Experience (con't)
+### [p028_c0003] Automated Camera Enforcement: The Future of Faster Buses
+[p028_c0004] May 2024 is poised to be a transformative moment for bus service in New York City. That month, enhanced enforcement powers secured by the MTA in the 2023 State Budget go live, meaning that camera enforcement previously confined to bus lanes will be dramatically expanded to include cars parked in bus stops and double-parked cars. Any New Yorker, bus customer or not, will have seen both issues on our city streets countless times. In both instances, bus customers are inconvenienced by the actions of a single vehicle. Historically, a physical ticket writer would need to be present to enforce such violations. These new enforcement powers will instead allow for offending vehicles to be ticketed automatically.
+[p028_c0005] With new powers, a new brand for our camera enforcement program was needed. Starting in May, the program currently known as ABLE will be officially rebranded as Automated Camera Enforcement, or ACE. This is much more than a simple rebrand. ACE represents an opportunity for dramatic improvements to bus speeds, frequency, and safety on our streets, with hundreds of thousands of customers poised to benefit. The expanded powers will see camera enforcement benefits expanded to as many as 2,500 road miles in our city.
+[p028_c0006] By 2028, ACE will benefit nearly one million daily customers. To get there, enforcement powers will initially be expanded to another 400 buses on 14 new routes in 2024, with an additional 1,000 buses expected to be armed with ACE by 2027, which would bring the benefits of ACE to riders on 65 total routes.
+[p028_c0007] In the coming months, NYCT will begin to identify the next wave of ACE routes. As this program begins to scale up, we will closely monitor the impact on bus speeds, safety, and service quality, with an eye towards leveraging this new tool to improve the customer experience.
+[p028_c0008] _| 28 |_
+
+## Page 29
+
+> [p029_c0001] A solid, uniform dark blue background with no visible text, patterns, or other features.
+
+## Page 30
+
+### [p030_c0001] ABOUT THE METROPOLITAN TRANSPORTATION AUTHORITY & NEW YORK CITY TRANSIT
+[p030_c0002] The Metropolitan Transportation Authority is North America's largest transportation network, serving a population of 15.3 million people across a 5,000-square-mile travel area surrounding New York City through Long Island, southeastern New York State, and Connecticut.
+[p030_c0003] New York City Transit and MTA Bus operate all subways and buses in New York City. Our 45,000 employees serve 4,500,000 passengers a day. We operate nearly 6,700 subway cars and 4,500 buses, and we maintain 472 subway stations, 640 miles of track, 20 bus depots and 70 shops and yards.
+[p030_c0004] The MTA is governed by a 23-member Board of Directors, organized in eight committees. Members of the New York City Transit Committee include:
+- [p030_c0005] • Haeda Mihaltses, Chair • Andrew Albert • Jamey Barbas • Randolph Glucksman • David Jones • Frankie Miranda • John Ross "JR" Rizzo • John Samuelsen • Lisa Sorin • Midori Valdivia
+[p030_c0006] _new.mta.info_
+[p030_c0007] _The MTA logo, consisting of the letters "MTA" in a bold, sans-serif font, is centered within a white circle. The circle is set against a dark blue background._

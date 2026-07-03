@@ -1,0 +1,117 @@
+{
+  "note_id": "codex-metric-unit-ratio-cleanup-2026-07-02",
+  "date": "2026-07-02",
+  "mode": "codex_deterministic_post_ingest_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "pioneer",
+    "openai",
+    "deepseek",
+    "vllm",
+    "chandra"
+  ],
+  "bucket": {
+    "name": "metric_unit_family residuals",
+    "baseline": {
+      "metric_claim_records": 36534,
+      "unit_family_other": 6,
+      "unit_family_missing": 2500,
+      "farebox_recovery_or_operating_ratio_missing_unit": 424
+    },
+    "after": {
+      "metric_claim_records": 36534,
+      "unit_family_other": 5,
+      "unit_family_missing": 2076,
+      "farebox_recovery_or_operating_ratio_missing_unit": 0,
+      "farebox_recovery_or_operating_ratio_with_ratio_unit": 607
+    }
+  },
+  "subagent_inputs": [
+    {
+      "agent_id": "019f2025-4b76-7291-b470-1a9a9f680b86",
+      "lane": "metric unit family unresolved audit",
+      "result_used": "Confirmed 6 unit_family other records, 2500 missing unit-family records, and a high-confidence exact farebox ratio missing-unit slice."
+    },
+    {
+      "agent_id": "019f2025-2d63-7221-b70e-7821e49dca2b",
+      "lane": "event_family other audit",
+      "result_used": "Queued the next high-confidence event-family cleanup slice: Safety Focus Day records, expected 107 -> 105."
+    }
+  ],
+  "implemented": [
+    {
+      "area": "corrupted metric unit note normalization",
+      "files": [
+        "packages/pipeline/src/ontology/normalizers.ts",
+        "packages/pipeline/test/ontology/normalizers.test.ts"
+      ],
+      "summary": "Exact-gated the leaked unit literal 'million dollars... wait, the table shows amounts in millions. Let me re-read.' to dollars with scale 1000000 only when metric_name has a finance metric signal.",
+      "affected_records": [
+        "metric_support-to-mass-transit-actual-jan2026"
+      ],
+      "guardrails": [
+        "Same literal with an unrelated metric_name remains unit_family other.",
+        "No broad prose-unit or dollar-text inference was added."
+      ]
+    },
+    {
+      "area": "missing farebox ratio unit inference",
+      "files": [
+        "packages/pipeline/src/ontology/normalizers.ts",
+        "packages/pipeline/test/ontology/normalizers.test.ts"
+      ],
+      "summary": "Added missing-unit inference for exact metric_name values farebox_recovery_ratio and farebox_operating_ratio when raw_value_text is decimal/scientific ratio text, including audited parenthetical scientific notation.",
+      "affected_record_count": 424,
+      "guardrails": [
+        "Only applies when unit and unit_normalized are absent.",
+        "Only applies to farebox_recovery_ratio and farebox_operating_ratio.",
+        "Percent-like raw values and unrelated ratio-looking metrics remain uninferred."
+      ]
+    }
+  ],
+  "verification": {
+    "commands": [
+      "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "bun run typecheck",
+      "bun packages/cli/src/cli.ts materialize",
+      "bun packages/cli/src/cli.ts validate"
+    ],
+    "focused_tests": {
+      "tests_passed": 277,
+      "expect_calls": 4581
+    },
+    "typecheck": "passed",
+    "materialize": {
+      "materialized_submissions": "93067/98115",
+      "retired_submissions_skipped": 265,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "validation": {
+      "submissions": 98115,
+      "canonical_records": 84027,
+      "wiki_pages": 7331,
+      "issues": 0
+    }
+  },
+  "remaining": {
+    "metric_unit_family_other_records": [
+      "metric_meeting-doc-140311-mn-tracks-outreach",
+      "metric_meeting-doc-182066-sas2-cost-per-rider",
+      "metric_omny-nyct-substantial-completion-dec2025",
+      "metric_sas-phase2-revenue-service-target",
+      "metric_sas2-revenue-service-date-2032-v3"
+    ],
+    "metric_unit_family_missing": 2076,
+    "next_lanes": [
+      "Implement the audited Safety Focus Day event_family rule if source/payload tests confirm the two-record slice.",
+      "Rebaseline the remaining metric missing-family records by exact metric_name/raw_value_text clusters before any broader inference.",
+      "Continue duplicate identity checks for the remaining raw same-name route/project groups only when deterministic evidence supports alias or do-not-merge action."
+    ]
+  }
+}

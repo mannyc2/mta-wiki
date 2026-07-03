@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T23-03-20-805Z_1976810-5b1cc97e_ingest_2012-09-19-125th-st-sbs-public-workshop-summary",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T02:49:20.905Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "project_125th_st_bus_service_improvement",
+        "decision": "new",
+        "rationale": "The observation's base_record_id (project_125th-st-bus-service-improvement) already matches the exact registry record — same source_id (2012_09_19_125th_st_sbs_public_workshop_summary), same project_name ('Bus Service on 125th Street'), same project_type ('public workshop / planning study'), same status ('public workshop conducted'), same borough (Manhattan), and same description. The observation already resolves to its canonical record; no linking to a different record is needed. Per the rules, when the closest match IS the observation's own base_record_id, the decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_19_125th_st_sbs_public_workshop_summary",
+            "block_id": "p002_c0005",
+            "source_quote": "The New York City Department of Transportation (DOT) and MTA New York City Transit (NYCT) conducted a Public Workshop on September 19, 2012"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-48-16-633Z_2111393-3013b84a_canonicalize_2026-06-10t23-03-20-805z-1976810-5b1cc97e-ingest-2012-09-19-125th-st-sbs-public-workshop-summary-project-identity"
+}

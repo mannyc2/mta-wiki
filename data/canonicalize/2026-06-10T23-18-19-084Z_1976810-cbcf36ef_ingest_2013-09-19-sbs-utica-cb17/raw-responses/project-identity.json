@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T23-18-19-084Z_1976810-cbcf36ef_ingest_2013-09-19-sbs-utica-cb17",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T03:58:38.954Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "utica-bus-priority-safety-study-cb17-confirmed",
+        "local_observation_id": "project_utica_ave_bus_priority_safety_study_cb17",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'project_utica-ave-bus-priority-safety-study' matches the existing registry record exactly — same project name ('Utica Avenue Bus Priority and Safety Study'), same source_id listed in the registry card's source_ids, same borough (Brooklyn), same project_type (study). The observation already resolves to its own base_record_id, so per the rule against linking to one's own base_record_id, the decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19_sbs_utica_cb17",
+            "block_id": "p001_c0002",
+            "source_quote": "Utica Avenue Bus Priority and Safety Study"
+          },
+          {
+            "source_id": "2013_09_19_sbs_utica_cb17",
+            "block_id": "p002_c0004",
+            "source_quote": "Study goals – Improve pedestrian and driver safety – Improve bus travel times – Maintain parking and curb access"
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-58-07-623Z_2111393-e5c50850_canonicalize_2026-06-10t23-18-19-084z-1976810-cbcf36ef-ingest-2013-09-19-sbs-utica-cb17-project-identity"
+}

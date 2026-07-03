@@ -1,0 +1,763 @@
+{
+  "run_id": "2026-06-10T22-56-13-279Z_1976810-d212e19e_ingest_20110314-34th-cac4-slides",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T01:29:58.638Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "rel_avg_speed_45mph",
+        "local_observation_id": "metric_avg_speed_45mph_34th_st_20110314",
+        "decision": "relate",
+        "rationale": "Metric about average bus speed of 4.5 mph on 34th Street, cited directly from the CAC4 slides describing the project's existing conditions on page 3.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_avg-speed-45mph-34th-st-20110314",
+            "description": "Average bus speed of 4.5 mph on 34th Street cited in 34th Street SBS CAC4 slides",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p003_c0002",
+                "source_quote": "avg. speed of 4.5 mph"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "metric_avg-speed-45mph-34th-st-20110314",
+            "description": "Average bus speed on the 34th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p003_c0002",
+                "source_quote": "avg. speed of 4.5 mph"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p003_c0002",
+            "source_quote": "avg. speed of 4.5 mph"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_daily_riders_33000",
+        "local_observation_id": "metric_daily_riders_33000_34th_st_20110314",
+        "decision": "relate",
+        "rationale": "Metric about 33,000 daily bus riders on 34th Street, cited from project existing conditions on page 3 of the CAC4 slides.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_daily-riders-33000-34th-st-20110314",
+            "description": "Over 33,000 daily bus riders on 34th Street cited in 34th Street SBS CAC4 slides",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p003_c0002",
+                "source_quote": "over 33,000 daily bus riders"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "metric_daily-riders-33000-34th-st-20110314",
+            "description": "Daily bus ridership on the 34th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p003_c0002",
+                "source_quote": "over 33,000 daily bus riders"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p003_c0002",
+            "source_quote": "over 33,000 daily bus riders"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_pedestrian_space_18000sqft",
+        "local_observation_id": "metric_new_pedestrian_space_18000sqft_20110314",
+        "decision": "relate",
+        "rationale": "Metric about 18,000 sq. ft. of new pedestrian space added by the project, cited from benefits page 19 of the CAC4 slides.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_new-pedestrian-space-18000sqft-20110314",
+            "description": "18,000 sq. ft. of new pedestrian space added by the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p019_c0002",
+                "source_quote": "adds 18,000 sq. ft. of new pedestrian space"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p019_c0002",
+            "source_quote": "adds 18,000 sq. ft. of new pedestrian space"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_loading_spaces_55_to_355",
+        "local_observation_id": "metric_loading_spaces_increase_55_to_355_20110314",
+        "decision": "relate",
+        "rationale": "Metric about increase in daytime loading spaces from 55 to 355, cited from project benefits page 19 of the CAC4 slides.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_loading-spaces-increase-55-to-355-20110314",
+            "description": "Daytime loading increases from 55 to 355 spaces along 34th Street",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p019_c0002",
+                "source_quote": "increases daytime loading from 55 to 355 spaces"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p019_c0002",
+            "source_quote": "increases daytime loading from 55 to 355 spaces"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_roadway_width_60ft",
+        "local_observation_id": "metric_roadway_width_60ft_east_west_20110314",
+        "decision": "relate",
+        "rationale": "Metric about proposed 60 ft roadway width east of Third Ave and west of Ninth Ave, cited from design page 13 of the CAC4 slides.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_roadway-width-60ft-east-west-20110314",
+            "description": "Proposed 60 ft roadway width for 34th Street east of Third Ave and west of Ninth Ave",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p013_c0002",
+                "source_quote": "60 ft wide section: East of Third Ave West of Ninth Ave"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p013_c0002",
+            "source_quote": "60 ft wide section: East of Third Ave West of Ninth Ave"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_roadway_width_52ft",
+        "local_observation_id": "metric_roadway_width_52ft_mid_20110314",
+        "decision": "relate",
+        "rationale": "Metric about proposed 52 ft roadway width from Third Ave to Ninth Ave, cited from design page 14 of the CAC4 slides.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "metric_roadway-width-52ft-mid-20110314",
+            "description": "Proposed 52 ft roadway width for 34th Street from Third Ave to Ninth Ave",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p014_c0002",
+                "source_quote": "52 ft wide section: Third Ave to Ninth Ave"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p014_c0002",
+            "source_quote": "52 ft wide section: Third Ave to Ninth Ave"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_claim_slow_bus_speeds",
+        "local_observation_id": "claim_slow_bus_speeds_34th_st_20110314",
+        "decision": "relate",
+        "rationale": "Claim about slow bus speeds on 34th Street citing average 4.5 mph and 33,000 daily riders, from the existing conditions page 3 of the CAC4 slides.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_slow-bus-speeds-34th-st-20110314",
+            "description": "Slow bus speeds on 34th Street identified as a problem the SBS project addresses",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p003_c0002",
+                "source_quote": "Slow Bus Speeds: avg. speed of 4.5 mph, over 33,000 daily bus riders"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p003_c0002",
+            "source_quote": "Slow Bus Speeds: avg. speed of 4.5 mph, over 33,000 daily bus riders"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_claim_pedestrian_safety",
+        "local_observation_id": "claim_pedestrian_safety_34th_st_20110314",
+        "decision": "relate",
+        "rationale": "Claim about pedestrian safety and congested sidewalks on 34th Street, from existing conditions page 3.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_pedestrian-safety-34th-st-20110314",
+            "description": "Pedestrian safety concerns on 34th Street that the SBS project aims to address",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p003_c0002",
+                "source_quote": "Pedestrian Safety: some of the most congested sidewalks in NYC"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p003_c0002",
+            "source_quote": "Pedestrian Safety: some of the most congested sidewalks in NYC"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_claim_curbside_loading",
+        "local_observation_id": "claim_curbside_loading_concern_20110314",
+        "decision": "relate",
+        "rationale": "Claim about curbside loading being a key concern of residents and businesses, from existing conditions page 3.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_curbside-loading-concern-20110314",
+            "description": "Curbside loading identified as a key community concern the 34th Street SBS project must address",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p003_c0002",
+                "source_quote": "Curbside loading: key concern of residents and businesses"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p003_c0002",
+            "source_quote": "Curbside loading: key concern of residents and businesses"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_claim_future_growth",
+        "local_observation_id": "claim_future_growth_34th_st_20110314",
+        "decision": "relate",
+        "rationale": "Claim about future growth with tens of thousands of new residents and jobs coming to 34th Street, from existing conditions page 3.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_future-growth-34th-st-20110314",
+            "description": "Future growth on 34th Street motivating the need for SBS improvements",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p003_c0002",
+                "source_quote": "Future growth: tens of thousands of new residents and jobs coming to 34th St."
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p003_c0002",
+            "source_quote": "Future growth: tens of thousands of new residents and jobs coming to 34th St."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_claim_bus_service_benefits",
+        "local_observation_id": "claim_bus_service_benefits_20110314",
+        "decision": "relate",
+        "rationale": "Claim that the project improves bus reliability and increases bus speeds for over 33,000 daily riders, from project benefits page 19.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_bus-service-benefits-20110314",
+            "description": "Bus service improvements promised by the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p019_c0002",
+                "source_quote": "Bus Service : improves bus reliability and increase bus speeds for over 33,000 daily riders"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p019_c0002",
+            "source_quote": "Bus Service : improves bus reliability and increase bus speeds for over 33,000 daily riders"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_claim_pedestrian_space_benefit",
+        "local_observation_id": "claim_pedestrian_space_benefit_20110314",
+        "decision": "relate",
+        "rationale": "Claim about 18,000 sq. ft. of new pedestrian space reducing crowding and improving safety, from project benefits page 19.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_pedestrian-space-benefit-20110314",
+            "description": "Pedestrian space benefit of the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p019_c0002",
+                "source_quote": "Pedestrians : adds 18,000 sq. ft. of new pedestrian space, reducing crowding and improving safety"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p019_c0002",
+            "source_quote": "Pedestrians : adds 18,000 sq. ft. of new pedestrian space, reducing crowding and improving safety"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_claim_loading_zone_benefit",
+        "local_observation_id": "claim_loading_zone_benefit_20110314",
+        "decision": "relate",
+        "rationale": "Claim about increasing daytime loading from 55 to 355 spaces with loading zones on every block, from project benefits page 19.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_loading-zone-benefit-20110314",
+            "description": "Loading capacity improvement benefit of the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p019_c0002",
+                "source_quote": "Loading : increases daytime loading from 55 to 355 spaces with a loading zone on every block"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p019_c0002",
+            "source_quote": "Loading : increases daytime loading from 55 to 355 spaces with a loading zone on every block"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_claim_design_benefit",
+        "local_observation_id": "claim_design_benefit_20110314",
+        "decision": "relate",
+        "rationale": "Claim about standard design elements and emergency vehicle use of bus lanes, from project benefits page 19.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_design-benefit-20110314",
+            "description": "Design features of the 34th Street SBS project including emergency vehicle access",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p019_c0002",
+                "source_quote": "Design : uses standard bus and pedestrian design elements; emergency vehicles could use the improved bus lanes"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p019_c0002",
+            "source_quote": "Design : uses standard bus and pedestrian design elements; emergency vehicles could use the improved bus lanes"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_claim_traffic_benefit",
+        "local_observation_id": "claim_traffic_benefit_20110314",
+        "decision": "relate",
+        "rationale": "Claim about maintaining 2-way traffic river to river and avoiding traffic spillover, from project benefits page 19.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_traffic-benefit-20110314",
+            "description": "Traffic management benefit of the 34th Street SBS project maintaining 2-way traffic",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p019_c0002",
+                "source_quote": "Traffic : maintains 2-way traffic from river to river, avoids traffic spillover onto parallel side streets"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p019_c0002",
+            "source_quote": "Traffic : maintains 2-way traffic from river to river, avoids traffic spillover onto parallel side streets"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_claim_community_loading",
+        "local_observation_id": "claim_community_feedback_loading_20110314",
+        "decision": "relate",
+        "rationale": "Claim about community feedback that loading/curb access is a key issue, from community input page 4.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_community-feedback-loading-20110314",
+            "description": "Community feedback on loading and curb access for the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p004_c0002",
+                "source_quote": "Loading/curb access is a key issue – improve curbside access wherever possible"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p004_c0002",
+            "source_quote": "Loading/curb access is a key issue – improve curbside access wherever possible"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_claim_community_traffic",
+        "local_observation_id": "claim_community_feedback_traffic_20110314",
+        "decision": "relate",
+        "rationale": "Claim about community feedback that side-street traffic is already an issue and 2-way traffic should be maintained, from community input page 4.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_community-feedback-traffic-20110314",
+            "description": "Community feedback on traffic management for the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p004_c0002",
+                "source_quote": "Traffic on side streets is already an issue – maintain 2-way traffic on 34th Street if possible"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p004_c0002",
+            "source_quote": "Traffic on side streets is already an issue – maintain 2-way traffic on 34th Street if possible"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_claim_community_pedestrian",
+        "local_observation_id": "claim_community_feedback_pedestrian_20110314",
+        "decision": "relate",
+        "rationale": "Claim about community feedback that pedestrian improvements are very important, from community input page 4.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_community-feedback-pedestrian-20110314",
+            "description": "Community feedback on pedestrian improvements for the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p004_c0002",
+                "source_quote": "Pedestrian improvements are very important – and should be focused where they are needed most"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p004_c0002",
+            "source_quote": "Pedestrian improvements are very important – and should be focused where they are needed most"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_claim_community_evaluation",
+        "local_observation_id": "claim_community_feedback_evaluation_20110314",
+        "decision": "relate",
+        "rationale": "Claim about community feedback that each improvement should be fully evaluated with community involvement, from community input page 4.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_community-feedback-evaluation-20110314",
+            "description": "Community feedback on evaluation and involvement for the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p004_c0002",
+                "source_quote": "Each improvement should be fully evaluated – and the community kept involved throughout the process"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p004_c0002",
+            "source_quote": "Each improvement should be fully evaluated – and the community kept involved throughout the process"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_claim_community_process",
+        "local_observation_id": "claim_community_process_summary_20110314",
+        "decision": "relate",
+        "rationale": "Claim about the Community Advisory Committee composition and meetings, from community process page 5.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_community-process-summary-20110314",
+            "description": "Community Advisory Committee details for the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p005_c0002",
+                "source_quote": "Community Advisory Committee – Includes residents, business owners, CB members, and representatives of local elected officials – Meetings: 4 since June 2010"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "Community Advisory Committee – Includes residents, business owners, CB members, and representatives of local elected officials – Meetings: 4 since June 2010"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_claim_curbside_outreach",
+        "local_observation_id": "claim_curbside_outreach_summary_20110314",
+        "decision": "relate",
+        "rationale": "Claim about the curbside access needs outreach activities, from community process page 5.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_curbside-outreach-summary-20110314",
+            "description": "Curbside access outreach activities for the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p005_c0002",
+                "source_quote": "Curbside Access Needs Outreach – Community forums: 4 in Fall of 2010 – On-line survey – Block-by-block analysis"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "Curbside Access Needs Outreach – Community forums: 4 in Fall of 2010 – On-line survey – Block-by-block analysis"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_claim_stakeholder_outreach",
+        "local_observation_id": "claim_stakeholder_outreach_summary_20110314",
+        "decision": "relate",
+        "rationale": "Claim about stakeholder outreach with 50+ meetings since 2008 and named organizations including NYU, Empire State Building, Javits Center, 34th St Partnership, Murray Hill Neighborhood Association, from community process page 5.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_stakeholder-outreach-summary-20110314",
+            "description": "Stakeholder outreach activities for the 34th Street SBS project naming key partners",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p005_c0002",
+                "source_quote": "Stakeholder Outreach – 50+ meetings since 2008 – Meetings with CB4, CB5, & CB6 – NYU, Empire State Building, Javits Center, 34th St Partnership, Murray Hill Neighborhood Association, and property owners"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "Stakeholder Outreach – 50+ meetings since 2008 – Meetings with CB4, CB5, & CB6 – NYU, Empire State Building, Javits Center, 34th St Partnership, Murray Hill Neighborhood Association, and property owners"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel_claim_project_schedule",
+        "local_observation_id": "claim_project_schedule_phases_20110314",
+        "decision": "relate",
+        "rationale": "Claim about the project schedule phases from Winter 2011 through Fall 2011, from project schedule page 6.",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "claim_project-schedule-phases-20110314",
+            "description": "Project schedule phases for the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p006_c0002",
+                "source_quote": "Development of proposed design by DOT (Winter 2011 to Spring 2011) Design revision based on public input and traffic analysis (Spring 2011 to Fall 2011) Environmental Review (Winter 2011 to Fall 2011)"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p006_c0002",
+            "source_quote": "Development of proposed design by DOT (Winter 2011 to Spring 2011) Design revision based on public input and traffic analysis (Spring 2011 to Fall 2011) Environmental Review (Winter 2011 to Fall 2011)"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip_event_cac_meeting_4",
+        "local_observation_id": "event_cac_meeting_4_20110314",
+        "decision": "skip",
+        "rationale": "This event already has an existing has_timeline_event relation from project_34th-st-sbs-2012 → event_cac-meeting-4-20110314. No new relation needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p001_c0001",
+            "source_quote": "34th Street Project Community Advisory Committee Meeting #4"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip_event_open_house_east",
+        "local_observation_id": "event_open_house_east_20110330",
+        "decision": "skip",
+        "rationale": "This event already has an existing has_timeline_event relation from project_34th-st-sbs-2012 → event_open-house-east-20110330. No new relation needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p021_c0004",
+            "source_quote": "Date : Wednesday, March 30 – Time : 6:00 - 8:00 PM – Location : Norman Thomas HS, 6 th floor Cafeteria 111 East 33rd Street (at Park Avenue)"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip_event_open_house_west",
+        "local_observation_id": "event_open_house_west_20110331",
+        "decision": "skip",
+        "rationale": "This event already has an existing has_timeline_event relation from project_34th-st-sbs-2012 → event_open-house-west-20110331. No new relation needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p021_c0006",
+            "source_quote": "Date : Thursday, March 31 – Time : 6:30 - 8:30 PM – Location : New Yorker Hotel, Sutton Place Suite, 3rd floor 481 8th Avenue (at 34th Street)"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip_event_traffic_analysis",
+        "local_observation_id": "event_traffic_analysis_fall2011_20110314",
+        "decision": "skip",
+        "rationale": "This event already has an existing has_timeline_event relation from project_34th-st-sbs-2012 → event_traffic-analysis-fall2011-20110314. No new relation needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p020_c0002",
+            "source_quote": "Traffic analysis – Results in Fall 2011"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip_event_environmental_assessment",
+        "local_observation_id": "event_environmental_assessment_20110314",
+        "decision": "skip",
+        "rationale": "This event already has an existing has_timeline_event relation from project_34th-st-sbs-2012 → event_environmental-assessment-20110314. No new relation needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p020_c0002",
+            "source_quote": "Environmental Assessment (EA) – Draft for public review in late 2011/early 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip_event_project_update",
+        "local_observation_id": "event_project_update_late_spring_2011_20110314",
+        "decision": "skip",
+        "rationale": "This event already has an existing has_timeline_event relation from project_34th-st-sbs-2012 → event_project-update-late-spring-2011-20110314. No new relation needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p020_c0002",
+            "source_quote": "Next project update – Late Spring 2011"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-26-39-809Z_2111393-1ce4cdc4_canonicalize_2026-06-10t22-56-13-279z-1976810-d212e19e-ingest-20110314-34th-cac4-slides-relation-linker"
+}

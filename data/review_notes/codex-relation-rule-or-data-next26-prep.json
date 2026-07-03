@@ -1,0 +1,178 @@
+{
+  "note_id": "codex-relation-rule-or-data-next26-prep",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "scope": "Codex-only validator/rule-or-data triage for the next current unexpected_relation_endpoint_shape bucket after relation054; deterministic inspection only; no provider-backed commands, generated-output commands, durable data edits, code edits, LOG edits, manifest edits, submissions edits, retired.json edits, canonical edits, or wiki edits",
+  "current_count_if_observed": {
+    "unexpected_relation_endpoint_shape": 11,
+    "method": "Read-only SQLite inventory over data/canonical.db using the endpoint shape table currently present in packages/pipeline/src/records/relations.ts.",
+    "relation054_state": "The prior has_claim claim->claim row from relation054 is no longer present in the observed endpoint-shape inventory; the next sorted singleton bucket is has_timeline_event event->entity."
+  },
+  "bucket": {
+    "name": "has_timeline_event event->entity",
+    "count": 1,
+    "selected_record_id": "relation_finance-committee-dec16",
+    "selected_submission_id": "sub_cc4afbb3972f607e",
+    "source_id": "meeting_doc_160256",
+    "current_relation_kind": "has_timeline_event",
+    "current_endpoint_shape": {
+      "subject_kind": "event",
+      "subject_record_id": "event_meeting-doc-160256-finance-comm-dec16-2024",
+      "subject_local_observation_id": "event_meeting_doc_160256_finance_comm_dec16_2024",
+      "subject_display_name": "Finance Committee Meeting - December 16, 2024",
+      "object_kind": "entity",
+      "object_record_id": "entity_mta-entity-update-2025",
+      "object_local_observation_id": "entity_meeting_doc_160256_mta",
+      "object_display_name": "Metropolitan Transportation Authority (MTA)"
+    },
+    "validator_expectation": "Current has_timeline_event allows project|route|corridor|entity|source|event -> event. It should not be widened to event -> entity for this row."
+  },
+  "recommendation": {
+    "classification": "data_cleanup",
+    "why_data_cleanup": "The submitted relation label and description say the Finance Committee meeting preceded Board action, but the object endpoint was the MTA entity. The same source already has an accepted December 18, 2024 MTA Board adoption event, which is the timeline endpoint the relation needs.",
+    "why_not_validator_code_gap": "A has_timeline_event edge is timeline context and should point at an event object. Allowing event -> entity would admit organization endpoints as timeline events and would hide this endpoint selection error. The current validator already admits the scoped replacement shape event -> event.",
+    "bad_submission_ids": [
+      {
+        "submission_id": "sub_cc4afbb3972f607e",
+        "run_id": "2026-06-20T20-13-09-212Z_1885472-221c5348_ingest_meeting-doc-160256",
+        "submission_path": "data/submissions/2026-06-20T20-13-09-212Z_1885472-221c5348_ingest_meeting-doc-160256.jsonl",
+        "submission_line": 23,
+        "record_id": "relation_finance-committee-dec16",
+        "local_observation_id": "relation_finance_committee_dec16",
+        "relation_kind": "has_timeline_event",
+        "endpoint_kinds": "event -> entity",
+        "retire_reason": "Malformed timeline relation: object endpoint is the MTA entity, while the source-backed Board action is represented by an accepted event record."
+      }
+    ],
+    "proposed_replacement": {
+      "replacement_needed": true,
+      "relation_kind": "has_timeline_event",
+      "endpoint_kinds": "event -> event",
+      "subject_local_observation_id": "event_meeting_doc_160256_finance_comm_dec16_2024",
+      "subject_record_id": "event_meeting-doc-160256-finance-comm-dec16-2024",
+      "object_local_observation_id": "event_meeting_doc_160256_mta_board_adoption_dec18_2024",
+      "object_record_id": "event_meeting-doc-160256-mta-board-adoption-dec18-2024",
+      "suggested_local_observation_id": "relation_finance_committee_precedes_mta_board_adoption",
+      "suggested_label": "Finance Committee meeting precedes MTA Board adoption",
+      "suggested_description": "The December 16, 2024 Finance Committee action preceded the December 18, 2024 MTA Board adoption of the Multiple Credit and Series 2025 Supplemental Resolution.",
+      "relation_family": "timeline_context",
+      "replacement_shape_valid_under_current_rules": true,
+      "notes": "Do not add a second TBTA timeline replacement in this cleanup unless the apply worker explicitly decides to expand scope; the malformed original object was the MTA entity and the MTA Board adoption event is the nearest same-source endpoint."
+    }
+  },
+  "evidence": {
+    "selected_relation_submission": {
+      "submission_id": "sub_cc4afbb3972f607e",
+      "tool_args_sha256": "sha256:cc4afbb3972f607e2bf95d504b1568e4bd56c8dd74d7e15d9d87fb8e85b666f9",
+      "label": "Finance Committee meeting precedes Board action",
+      "payload_description": "The Finance Committee meeting on December 16, 2024 considered the resolutions before the December 18, 2024 Board action",
+      "evidence_ref": "meeting_doc_160256#p001_c0004"
+    },
+    "source": {
+      "source_id": "meeting_doc_160256",
+      "title": "TBTA New Money Bonds authorization",
+      "publisher": "MTA"
+    },
+    "source_blocks": [
+      {
+        "evidence_id": "meeting_doc_160256#p001_c0004",
+        "source_path": "raw/sources/meeting_doc_160256/blocks.jsonl",
+        "page_number": 1,
+        "block_id": "p001_c0004",
+        "block_kind": "table",
+        "text_sha256": "sha256:ca52c222bff5fd2dbdb28abc5d3a5e927fc7a2725c05fc81abb2ff25d8a2df39",
+        "summary": "Board action order table lists Finance Comm. on 12/16/24 and Board on 12/18/24.",
+        "short_quote": "1 Finance Comm. 12/16/24 X 2 Board 12/18/24 X"
+      },
+      {
+        "evidence_id": "meeting_doc_160256#p006_c0003",
+        "source_path": "raw/sources/meeting_doc_160256/blocks.jsonl",
+        "page_number": 6,
+        "block_id": "p006_c0003",
+        "block_kind": "heading",
+        "text_sha256": "sha256:c4cb32f3f7795e3367a00a4093663cc3c222babee6bb843bdb719746003ecec6",
+        "summary": "Resolution heading for the MTA Multiple Credit and Series 2025 Supplemental Resolution."
+      },
+      {
+        "evidence_id": "meeting_doc_160256#p006_c0004",
+        "source_path": "raw/sources/meeting_doc_160256/blocks.jsonl",
+        "page_number": 6,
+        "block_id": "p006_c0004",
+        "block_kind": "text",
+        "text_sha256": "sha256:f9f777dc112dd6ba4ee26d14d1c27d71a2c351838f731e106f4cfa7f3e4657f2",
+        "summary": "MTA resolution adoption date is December 18, 2024.",
+        "short_quote": "Adopted December 18, 2024"
+      }
+    ],
+    "existing_endpoint_records": [
+      {
+        "record_id": "event_meeting-doc-160256-finance-comm-dec16-2024",
+        "submission_id": "sub_fe9fd8260c067712",
+        "record_kind": "event",
+        "local_observation_id": "event_meeting_doc_160256_finance_comm_dec16_2024",
+        "display_name": "Finance Committee Meeting - December 16, 2024",
+        "date_normalized": "2024-12-16",
+        "evidence_id": "meeting_doc_160256#p001_c0004"
+      },
+      {
+        "record_id": "event_meeting-doc-160256-mta-board-adoption-dec18-2024",
+        "submission_id": "sub_90030eb24a6b3424",
+        "record_kind": "event",
+        "local_observation_id": "event_meeting_doc_160256_mta_board_adoption_dec18_2024",
+        "display_name": "MTA Board Adoption of Multiple Credit and Series 2025 Supplemental Resolution",
+        "date_normalized": "2024-12-18",
+        "evidence_ids": [
+          "meeting_doc_160256#p001_c0004",
+          "meeting_doc_160256#p006_c0003",
+          "meeting_doc_160256#p006_c0004"
+        ]
+      }
+    ],
+    "collision_and_prior_work_checks": {
+      "original_retired_json_hits": 0,
+      "prior_review_note_hits_for_selected_relation": 0,
+      "existing_same_source_finance_to_mta_board_timeline_relation_hits": 0,
+      "observed_related_existing_relation": "relation_mta-board-adopts-mta-resolution already links the MTA Board adoption event to the MTA entity using organized_by; it does not replace the missing Finance Committee -> Board action timeline edge."
+    }
+  },
+  "expected_delta": {
+    "baseline_unexpected_relation_endpoint_shape": 11,
+    "selected_rows_cleared": 1,
+    "replacement_rows_added": 1,
+    "replacement_rows_expected_to_be_endpoint_shape_valid": 1,
+    "expected_remaining_after_cleanup": 10,
+    "caveat": "Assumes no other concurrent relation endpoint-shape work lands before conductor applies this cleanup."
+  },
+  "apply_or_patch_plan": {
+    "conductor_action": "apply_data_cleanup",
+    "data_cleanup_steps": [
+      "Retire submission sub_cc4afbb3972f607e with a reason tying the malformed has_timeline_event event -> entity row to this prep artifact.",
+      "Append one accepted replacement relation submission for meeting_doc_160256 using relation_kind has_timeline_event, subject_local_observation_id event_meeting_doc_160256_finance_comm_dec16_2024, and object_local_observation_id event_meeting_doc_160256_mta_board_adoption_dec18_2024.",
+      "Reuse meeting_doc_160256#p001_c0004 as the primary board-action-order evidence; include p006_c0003 and p006_c0004 if the replacement description names the MTA resolution adoption.",
+      "Run only the conductor-owned materialize/validate lane after applying, outside this bounded prep task."
+    ],
+    "code_patch_plan": {
+      "needed": false,
+      "files": [
+        "packages/pipeline/src/records/relations.ts",
+        "packages/pipeline/test/records/relations.test.ts"
+      ],
+      "reason": "No validator patch is recommended. Keep has_timeline_event object endpoints constrained to event."
+    }
+  },
+  "commands_run_read_only": [
+    "git status --short",
+    "ls -la data/review_notes | tail -80",
+    "sed -n '1,260p' data/review_notes/codex-relation-cleanup-batch054-prep.json",
+    "sed -n '1,260p' data/review_notes/codex-relation-rule-or-data-next25-prep.json",
+    "sqlite3 data/canonical.db '.tables'",
+    "sqlite3 data/canonical.db 'pragma table_info(relations); pragma table_info(records); pragma table_info(record_submissions); pragma table_info(evidence_refs);'",
+    "sed -n '206,390p' packages/pipeline/src/records/relations.ts",
+    "sqlite3 endpoint-shape inventory query against data/canonical.db",
+    "sqlite3 targeted relation and endpoint queries for relation_finance-committee-dec16",
+    "rg targeted searches for sub_cc4afbb3972f607e, relation_finance_committee_dec16, and candidate replacement endpoints",
+    "jq targeted source block reads from raw/sources/meeting_doc_160256/blocks.jsonl",
+    "jq retired.json check for sub_cc4afbb3972f607e",
+    "test ! -e data/review_notes/codex-relation-rule-or-data-next26-prep.json"
+  ]
+}

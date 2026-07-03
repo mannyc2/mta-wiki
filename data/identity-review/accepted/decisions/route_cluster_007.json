@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "review_state": "accepted",
+  "accepted_at": "2026-06-08T21:21:36.731Z",
+  "reviewer": "codex-audit-2026-06-08",
+  "source": "audit_safe_to_promote",
+  "cluster_id": "route_cluster_007",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_007.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_007.json",
+  "source_review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Flash",
+  "action_summary": {
+    "merge_group_count": 1,
+    "do_not_merge_count": 0,
+    "weak_alias_count": 0,
+    "missing_field_count": 2,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [
+    [
+      "route_bx34",
+      "route_bx34-addendum-update"
+    ]
+  ],
+  "do_not_merge": [],
+  "weak_aliases": [],
+  "missing_fields": [
+    {
+      "record_id": "route_bx34",
+      "fields": [
+        "variant",
+        "borough",
+        "limits"
+      ]
+    },
+    {
+      "record_id": "route_bx34-addendum-update",
+      "fields": [
+        "variant",
+        "borough",
+        "limits"
+      ]
+    }
+  ],
+  "ambiguous": [],
+  "suggested_rules": [
+    "Records sharing the same route_id (e.g., Bx34) and representing the base route without conflicting variant labels should be merged as the same canonical identity, even when sourced from different documents."
+  ],
+  "rationale": "Both records share route_id 'Bx34', which is a strong identity field. The addendum record explicitly aliases route_bx34 and carries it as an identity key. The validator duplicate_global_identity signal confirms the collision is real. Neither record specifies a variant (local/SBS/limited), so both refer to the base Bx34 route. Complementary corridor descriptions (Fordham Road vs Bainbridge/Valentine Avenue) describe the same route's geography, not distinct services. The second record is an update about the same route from a different planning document."
+}

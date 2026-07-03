@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T22-59-53-483Z_1976810-7e48c798_ingest_201110-qbb-approach-summary",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:02:28.886Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "entity_nyc_dot_201110_qbb_new",
+        "local_observation_id": "entity_nyc_dot_201110_qbb",
+        "decision": "new",
+        "rationale": "The observation already resolves to base_record_id entity_nyc-dot which exists in the registry with matching entity_name 'New York City Department of Transportation', entity_type 'agency', and acronym 'NYC DOT'. The source 201110_qbb_approach_summary is already listed among entity_nyc-dot's source_ids. No new canonical record is needed — the observation is already correctly canonicalized.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p001_c0001",
+            "source_quote": "The logo for the New York City Department of Transportation (NYC DOT)"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-02-00-995Z_2111393-dfee8382_canonicalize_2026-06-10t22-59-53-483z-1976810-7e48c798-ingest-201110-qbb-approach-summary-entity-identity"
+}

@@ -1,0 +1,97 @@
+{
+  "id": "codex-project-status-exact-gates-2026-06-30-l",
+  "created_at": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "provider_backed_llm_commands_used": false,
+  "forbidden_commands_used": [],
+  "bucket": "project_document_time_status_missing",
+  "baseline": {
+    "validation_issues": 0,
+    "project_records": 1862,
+    "missing_or_unresolved_document_time_status_before": 52
+  },
+  "implemented_changes": [
+    {
+      "change": "broaden read-only normalization context to include full cited source block text even when evidence_refs already contain shorter source_quote excerpts",
+      "affected_context_cache": {
+        "unique_block_snippets_before": 11452,
+        "unique_block_snippets_after": 15799
+      },
+      "notes": [
+        "Context remains bounded by existing per-record caps.",
+        "Full block text is not persisted into canonical payloads or evidence refs."
+      ]
+    },
+    {
+      "change": "add exact project document_time_status gates from the read-only project scout",
+      "affected_count": 15,
+      "affected_records": {
+        "implemented": [
+          "project_ada-upgrades-lindenhurst-lirr-meeting-doc-147341",
+          "project_meeting-doc-129366-congestion-pricing",
+          "project_meeting-doc-129366-financial-stability",
+          "project_meeting-doc-129366-increase-accessibility",
+          "project_meeting-doc-129366-increase-ridership",
+          "project_meeting-doc-129366-promoting-public-safety",
+          "project_meeting-doc-152171-14-st-fml-upgrades",
+          "project_meeting-doc-152171-42-st-shuttle-5g",
+          "project_mow-situation-room"
+        ],
+        "active": [
+          "project_hunter-college-68-st-ada",
+          "project_meeting-doc-115221-third-track-lirr",
+          "project_meeting-doc-194171-fm-swap"
+        ],
+        "planned": [
+          "project_bridges-tunnels-capital-199041"
+        ],
+        "under_construction": [
+          "project_cd-lirr-expansion-third-track",
+          "project_meeting-doc-152171-babylon-station"
+        ]
+      }
+    }
+  ],
+  "post_materialize_counts": {
+    "validation_issues": 0,
+    "project_records": 1862,
+    "missing_or_unresolved_document_time_status_after": 37,
+    "status_distribution": {
+      "planned": 625,
+      "implemented": 327,
+      "study": 60,
+      "approved": 247,
+      "active": 454,
+      "pilot": 22,
+      "stalled_resuming": 7,
+      "under_construction": 81,
+      "missing": 37,
+      "monitoring": 1,
+      "program_context": 1
+    }
+  },
+  "tests": [
+    "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+    "bun test packages/pipeline/test/materialize/materialize.test.ts",
+    "bun run typecheck",
+    "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+    "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+    "bun packages/cli/src/cli.ts validate"
+  ],
+  "test_results": {
+    "normalizers": "263 pass, 4002 expect() calls",
+    "materialize": "55 pass, 851 expect() calls",
+    "typecheck": "pass",
+    "sqlite_quick_check": "ok",
+    "validate": "Issues: 0"
+  },
+  "remaining_intentionally_unresolved": [
+    "37 project records still lack document_time_status.",
+    "Broad strategic plans, grant availability records, mixed aggregate records, title-only/photo-only records, and generic section checkmarks remain unresolved unless exact project-specific evidence supports a status."
+  ],
+  "next_lanes": [
+    "Event_family other exact gates from read-only event scout.",
+    "Remaining project document_time_status missing bucket rebaseline and next exact-gate scout.",
+    "Remaining 19 adjusted treatment noisy/actionable records."
+  ]
+}

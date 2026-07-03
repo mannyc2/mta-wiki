@@ -1,0 +1,21 @@
+{
+  "run_id": "2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer",
+  "generated_at": "2026-06-11T04:55:54.021Z",
+  "dry_run": false,
+  "wrote": true,
+  "decision_count": 26,
+  "reviewed_count": 15,
+  "alias_additions": [],
+  "aliases_already_present": [],
+  "do_not_merge_additions": [],
+  "relation_submissions": 8,
+  "quarantined": 0,
+  "conflicts": [],
+  "paths": {
+    "merges": "data/identity-overrides/merges.json",
+    "do_not_merge": "data/identity-overrides/do-not-merge.json",
+    "relation_submissions_jsonl": "data/submissions/2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer_canonicalize.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer/apply-quarantine.jsonl",
+    "apply_report": "data/canonicalize/2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer/apply-report.json"
+  }
+}

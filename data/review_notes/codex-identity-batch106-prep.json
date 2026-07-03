@@ -1,0 +1,289 @@
+{
+  "batch_id": "codex-identity-batch106",
+  "created_at": "2026-06-23T04:31:28Z",
+  "scope": {
+    "record_kind": "entity",
+    "notes": "ENTITY ONLY. Prepared with local deterministic inspection only; no generated canonical outputs or override files were edited."
+  },
+  "prepared_count": 10,
+  "all_pass": true,
+  "expected_delta": {
+    "duplicate_global_identity": -10
+  },
+  "proposed_aliases": [
+    {
+      "kind": "entity",
+      "alias_id": "entity_annual-report-2021-mtacd",
+      "target_id": "entity_mta-construction-and-development",
+      "reason": "Same global entity: both records identify MTA Construction and Development / MTA Construction & Development, with acronym MTA C&D. The alias is the annual-report instance and the target is the broader MTA C&D entity record.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Construction & Development",
+          "entity_name": "MTA Construction and Development",
+          "acronym": "MTA C&D"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Construction and Development",
+          "entity_name": "MTA Construction and Development",
+          "acronym": "MTA C&D"
+        }
+      },
+      "source_evidence_refs": [
+        "annual_report_narrative_2021#p087_c0004",
+        "meeting_doc_157711#p001_c0007"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-127471-mta-cd",
+      "target_id": "entity_mta-construction-and-development",
+      "reason": "Same global entity: both records identify MTA Construction and Development / MTA Construction & Development. The alias is a one-source meeting-document instance and the target is the broader MTA C&D entity record.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Construction & Development",
+          "entity_name": "MTA Construction & Development",
+          "entity_type": "agency"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Construction and Development",
+          "entity_name": "MTA Construction and Development",
+          "acronym": "MTA C&D"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_127471#p002_c0001",
+        "meeting_doc_157711#p001_c0007"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-129106-mta-cd",
+      "target_id": "entity_mta-construction-and-development",
+      "reason": "Same global entity: both records identify MTA Construction and Development and carry the same MTA C&D acronym. The alias is a one-source meeting-document instance and the target is the broader MTA C&D entity record.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Construction and Development",
+          "entity_name": "MTA Construction and Development",
+          "acronym": "MTA C&D"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Construction and Development",
+          "entity_name": "MTA Construction and Development",
+          "acronym": "MTA C&D"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_129106#p046_c0007",
+        "meeting_doc_157711#p001_c0007"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-199136-cd",
+      "target_id": "entity_mta-construction-and-development",
+      "reason": "Same global entity: both records identify MTA Construction and Development / MTA Construction & Development. The alias is a one-source meeting-document instance and the target is the broader MTA C&D entity record.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Construction & Development",
+          "entity_name": "MTA Construction & Development",
+          "entity_type": "agency"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Construction and Development",
+          "entity_name": "MTA Construction and Development",
+          "acronym": "MTA C&D"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_199136#p011_c0003",
+        "meeting_doc_157711#p001_c0007"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-29956-mtacd",
+      "target_id": "entity_mta-construction-and-development",
+      "reason": "Same global entity: both records identify MTA Construction and Development. The alias is a one-source meeting-document instance and the target is the broader MTA C&D entity record.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Construction and Development",
+          "entity_name": "MTA Construction and Development",
+          "entity_type": "agency"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Construction and Development",
+          "entity_name": "MTA Construction and Development",
+          "acronym": "MTA C&D"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_29956#p109_c0003",
+        "meeting_doc_157711#p001_c0007"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-37086-mta-cd",
+      "target_id": "entity_mta-construction-and-development",
+      "reason": "Same global entity: the alias display name expands to MTA Construction and Development and includes the same MTA C&D acronym as the target. The alias is a one-source meeting-document instance and the target is the broader MTA C&D entity record.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Construction and Development (MTA C&D)",
+          "entity_name": "MTA Construction and Development",
+          "acronym": "MTA C&D"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Construction and Development",
+          "entity_name": "MTA Construction and Development",
+          "acronym": "MTA C&D"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_37086#p003_c0003",
+        "meeting_doc_157711#p001_c0007"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-39661-mtacd",
+      "target_id": "entity_mta-construction-and-development",
+      "reason": "Same global entity: both records identify MTA Construction and Development / MTA C&D. The alias source quote states MTA Construction and Development Company is called MTA Construction and Development, matching the target.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Construction and Development",
+          "entity_name": "MTA Construction and Development Company",
+          "short_name": "MTA Construction and Development",
+          "acronym": "MTA C&D"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Construction and Development",
+          "entity_name": "MTA Construction and Development",
+          "acronym": "MTA C&D"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_39661#p226_c0011",
+        "meeting_doc_157711#p001_c0007"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_mta-c-and-d-meeting-doc-131666",
+      "target_id": "entity_mta-construction-and-development",
+      "reason": "Same global entity: both records identify MTA Construction and Development. The alias source quote states MTA Construction and Development Company is called MTA Construction and Development, matching the target.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Construction and Development",
+          "entity_name": "MTA Construction and Development Company",
+          "entity_type": "subsidiary"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Construction and Development",
+          "entity_name": "MTA Construction and Development",
+          "acronym": "MTA C&D"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_131666#p003_c0012",
+        "meeting_doc_157711#p001_c0007"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_mta-cd-meeting-doc-102786",
+      "target_id": "entity_mta-construction-and-development",
+      "reason": "Same global entity: both records identify MTA Construction and Development / MTA C&D. The alias source evidence uses the MTA C&D acronym and the target expands that acronym to MTA Construction and Development.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Construction and Development",
+          "entity_name": "MTA Construction and Development Company",
+          "acronym": "MTA C&D"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Construction and Development",
+          "entity_name": "MTA Construction and Development",
+          "acronym": "MTA C&D"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_102786#p033_c0007",
+        "meeting_doc_157711#p001_c0007"
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_mta-construction-development-186841",
+      "target_id": "entity_mta-construction-and-development",
+      "reason": "Same global entity: both records identify MTA Construction and Development; the alias source quote also names C&D as the abbreviated form. The alias is a one-source meeting-document instance and the target is the broader MTA C&D entity record.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Construction and Development",
+          "entity_name": "MTA Construction and Development",
+          "acronym": "C&D"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Construction and Development",
+          "entity_name": "MTA Construction and Development",
+          "acronym": "MTA C&D"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_186841#p007_c0007",
+        "meeting_doc_157711#p001_c0007"
+      ]
+    }
+  ],
+  "guard_summary": {
+    "artifact_absence": {
+      "command": "test ! -e data/review_notes/codex-identity-batch106-prep.json && echo 'artifact_absent' || echo 'artifact_exists'",
+      "result": "artifact_absent before writing"
+    },
+    "record_existence_and_kind": {
+      "command": "sqlite3 -header -column data/canonical.db \"select r.record_id, r.record_kind, r.display_name, e.entity_name, e.entity_type, e.short_name, e.acronym, r.primary_source_id from records r join entities e using(record_id) where r.record_id in ('entity_mta-construction-and-development','entity_annual-report-2021-mtacd','entity_meeting-doc-127471-mta-cd','entity_meeting-doc-129106-mta-cd','entity_meeting-doc-199136-cd','entity_meeting-doc-29956-mtacd','entity_meeting-doc-37086-mta-cd','entity_meeting-doc-39661-mtacd','entity_mta-c-and-d-meeting-doc-131666','entity_mta-cd-meeting-doc-102786','entity_mta-construction-development-186841') order by r.record_id;\"",
+      "result_summary": "11/11 selected alias and target records exist; every selected record has record_kind=entity. Names consistently identify MTA Construction and Development / MTA Construction & Development / MTA C&D."
+    },
+    "existing_alias_conflicts": {
+      "merges_json_command": "jq -r '.aliases.entity as $e | [\"entity_annual-report-2021-mtacd\",\"entity_meeting-doc-127471-mta-cd\",\"entity_meeting-doc-129106-mta-cd\",\"entity_meeting-doc-199136-cd\",\"entity_meeting-doc-29956-mtacd\",\"entity_meeting-doc-37086-mta-cd\",\"entity_meeting-doc-39661-mtacd\",\"entity_mta-c-and-d-meeting-doc-131666\",\"entity_mta-cd-meeting-doc-102786\",\"entity_mta-construction-development-186841\"][] | select($e[.] != null) | . + \" -> \" + $e[.]' data/identity-overrides/merges.json",
+      "merges_json_result": "no output; none of the proposed aliases are already present in data/identity-overrides/merges.json",
+      "identity_aliases_command": "sqlite3 -header -column data/canonical.db \"select kind, alias, target from identity_aliases where kind='entity' and alias in ('entity_annual-report-2021-mtacd','entity_meeting-doc-127471-mta-cd','entity_meeting-doc-129106-mta-cd','entity_meeting-doc-199136-cd','entity_meeting-doc-29956-mtacd','entity_meeting-doc-37086-mta-cd','entity_meeting-doc-39661-mtacd','entity_mta-c-and-d-meeting-doc-131666','entity_mta-cd-meeting-doc-102786','entity_mta-construction-development-186841');\"",
+      "identity_aliases_result": "no output; none of the proposed aliases are already present in canonical identity_aliases"
+    },
+    "do_not_merge_conflicts": {
+      "db_command": "sqlite3 -header -column data/canonical.db \"with pairs(alias,target) as (values ('entity_annual-report-2021-mtacd','entity_mta-construction-and-development'),('entity_meeting-doc-127471-mta-cd','entity_mta-construction-and-development'),('entity_meeting-doc-129106-mta-cd','entity_mta-construction-and-development'),('entity_meeting-doc-199136-cd','entity_mta-construction-and-development'),('entity_meeting-doc-29956-mtacd','entity_mta-construction-and-development'),('entity_meeting-doc-37086-mta-cd','entity_mta-construction-and-development'),('entity_meeting-doc-39661-mtacd','entity_mta-construction-and-development'),('entity_mta-c-and-d-meeting-doc-131666','entity_mta-construction-and-development'),('entity_mta-cd-meeting-doc-102786','entity_mta-construction-and-development'),('entity_mta-construction-development-186841','entity_mta-construction-and-development')) select d.* from do_not_merge d join pairs p on d.kind='entity' and ((d.record_id_a=p.alias and d.record_id_b=p.target) or (d.record_id_a=p.target and d.record_id_b=p.alias));\"",
+      "db_result": "no output; no selected pair is present in canonical do_not_merge",
+      "json_command": "jq -r '.pairs.entity[]? | select((.record_ids | index(\"entity_mta-construction-and-development\")) and (.record_ids | index(\"entity_annual-report-2021-mtacd\") or index(\"entity_meeting-doc-127471-mta-cd\") or index(\"entity_meeting-doc-129106-mta-cd\") or index(\"entity_meeting-doc-199136-cd\") or index(\"entity_meeting-doc-29956-mtacd\") or index(\"entity_meeting-doc-37086-mta-cd\") or index(\"entity_meeting-doc-39661-mtacd\") or index(\"entity_mta-c-and-d-meeting-doc-131666\") or index(\"entity_mta-cd-meeting-doc-102786\") or index(\"entity_mta-construction-development-186841\"))) | .record_ids | @tsv' data/identity-overrides/do-not-merge.json",
+      "json_result": "no output; no selected pair is present in data/identity-overrides/do-not-merge.json"
+    },
+    "prior_prep_conflicts_through_identity105": {
+      "command": "for f in data/review_notes/codex-identity-batch0*-prep.json data/review_notes/codex-identity-batch10[0-5]-prep.json; do jq -r --arg f \"$f\" '.proposed_aliases[]? | select(.kind==\"entity\") | select(.alias_id as $a | [\"entity_annual-report-2021-mtacd\",\"entity_meeting-doc-127471-mta-cd\",\"entity_meeting-doc-129106-mta-cd\",\"entity_meeting-doc-199136-cd\",\"entity_meeting-doc-29956-mtacd\",\"entity_meeting-doc-37086-mta-cd\",\"entity_meeting-doc-39661-mtacd\",\"entity_mta-c-and-d-meeting-doc-131666\",\"entity_mta-cd-meeting-doc-102786\",\"entity_mta-construction-development-186841\"] | index($a)) | [$f,.alias_id,.target_id] | @tsv' \"$f\" 2>/dev/null; done",
+      "result": "no output; none of the proposed entity aliases appear in prior codex identity prep artifacts through batch105"
+    },
+    "source_evidence_spot_check": {
+      "command": "jq -r 'select(.record_id|IN(\"entity_annual-report-2021-mtacd\",\"entity_meeting-doc-127471-mta-cd\",\"entity_meeting-doc-129106-mta-cd\",\"entity_meeting-doc-199136-cd\",\"entity_meeting-doc-29956-mtacd\",\"entity_meeting-doc-37086-mta-cd\",\"entity_meeting-doc-39661-mtacd\",\"entity_mta-c-and-d-meeting-doc-131666\",\"entity_mta-cd-meeting-doc-102786\",\"entity_mta-construction-development-186841\",\"entity_mta-construction-and-development\")) | [.record_id, .record_kind, .display_name, (.payload.entity_name // .payload.name // \"\"), (.payload.acronym // \"\"), (.evidence_refs[0].evidence_id // \"\"), (.evidence_refs[0].source_quote // .evidence_refs[0].role // \"\")] | @tsv' data/canonical/entities.jsonl",
+      "result_summary": "Selected records have entity evidence refs naming MTA Construction and Development / MTA Construction & Development / MTA C&D. Source quotes for meeting_doc_39661 and meeting_doc_131666 explicitly say MTA Construction and Development Company is called MTA Construction and Development."
+    },
+    "forbidden_command_compliance": {
+      "result": "No external/provider-backed commands or profiles/providers were used. Did not run canonicalize, canonicalize-wave, canonicalize-review, campaign dedup, identity-review-run, write, ask, schema-propose, ontology-normalize-run, materialize, export-jsonl, or validate. Inspection used local deterministic commands only: pwd, rg, git status, sqlite3 data/canonical.db, jq, sed/head, test, wc, and date; the only file edit was adding this prep artifact."
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "entity_cluster_48b736c500",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_48b736c500.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_48b736c500.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "entity_meeting-doc-twu",
+        "entity_twu-local-100"
+      ],
+      "reason": "Contradiction test: entity_type differs (union vs labor union) and the records represent a parent organization (Transport Workers Union) and its subsidiary local (TWU Local 100). Per Identity Merge Canon: Authority vs subsidiary never merge. The shared identity keys are weak aliases and do not override the strong identity field contradiction."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [
+    "Parent-subsidiary entities (e.g., international union vs local chapter) should never merge regardless of shared name components."
+  ],
+  "rationale": "The two records denote distinct entities: the Transport Workers Union (a national/international union) and its local chapter TWU Local 100. Strong identity field entity_type differs, and the parent-subsidiary rule from the canon applies. The duplicate validator flags were triggered by misleading aliases on the local record, but the canonical identity fields confirm separation. No merge possible. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

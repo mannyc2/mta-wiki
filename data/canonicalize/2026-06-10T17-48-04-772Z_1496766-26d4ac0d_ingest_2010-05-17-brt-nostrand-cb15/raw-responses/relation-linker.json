@@ -1,0 +1,259 @@
+{
+  "run_id": "2026-06-10T17-48-04-772Z_1496766-26d4ac0d_ingest_2010-05-17-brt-nostrand-cb15",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-10T19:41:43.984Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "rel-nyc-brt-study-initiated-2004-project",
+        "local_observation_id": "event_nyc_brt_study_initiated_2004",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_nyc-brt-study-initiated-2004",
+            "description": "NYCT/DOT initiate NYC BRT study in 2004, the starting milestone of the Nostrand/Rogers SBS project timeline",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_17_brt_nostrand_cb15",
+                "block_id": "p019_c0002",
+                "source_quote": "NYCT/ DOT initiate NYC BRT study"
+              }
+            ]
+          }
+        ],
+        "rationale": "Event appears on the Nostrand/Rogers SBS project timeline (page 19) in the CB15 presentation. The project record project_nostrand-rogers-sbs includes this source.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_17_brt_nostrand_cb15",
+            "block_id": "p019_c0002",
+            "source_quote": "NYCT/ DOT initiate NYC BRT study"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-nostrand-rogers-selected-2006-project",
+        "local_observation_id": "event_brt_study_selects_nostrand_rogers_2006",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_brt-study-selects-nostrand-rogers-2006",
+            "description": "BRT Study and Public Input selects Nostrand/Rogers Aves as one of five BRT corridors in 2006, the corridor selection milestone for the project",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_17_brt_nostrand_cb15",
+                "block_id": "p019_c0002",
+                "source_quote": "BRT Study and Public Input selects Nostrand/ Rogers Aves as one of five BRT corridors for further development"
+              }
+            ]
+          }
+        ],
+        "rationale": "Event appears on the Nostrand/Rogers SBS project timeline (page 19). This milestone directly concerns the project's corridor selection.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_17_brt_nostrand_cb15",
+            "block_id": "p019_c0002",
+            "source_quote": "BRT Study and Public Input selects Nostrand/ Rogers Aves as one of five BRT corridors for further development"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-nostrand-sbs-identified-2008-project",
+        "local_observation_id": "event_nostrand_rogers_sbs_identified_2008",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_nostrand-rogers-sbs-identified-2008",
+            "description": "Nostrand/Rogers SBS identified for implementation in 2008, advancing the project to implementation phase",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_17_brt_nostrand_cb15",
+                "block_id": "p019_c0002",
+                "source_quote": "Nostrand/ Rogers SBS identified for implementation"
+              }
+            ]
+          }
+        ],
+        "rationale": "Event appears on the Nostrand/Rogers SBS project timeline (page 19). Marks the transition from study to implementation identification.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_17_brt_nostrand_cb15",
+            "block_id": "p019_c0002",
+            "source_quote": "Nostrand/ Rogers SBS identified for implementation"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-first-cac-meeting-2009-project",
+        "local_observation_id": "event_first_cac_meeting_2009",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_first-cac-meeting-2009",
+            "description": "First Community Advisory Committee meeting held in 2009 as part of the Nostrand/Rogers SBS community planning process",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_17_brt_nostrand_cb15",
+                "block_id": "p019_c0002",
+                "source_quote": "First CAC Meeting"
+              }
+            ]
+          }
+        ],
+        "rationale": "Event appears on the Nostrand/Rogers SBS project timeline (page 19). The CAC was formed specifically for this project's community engagement.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_17_brt_nostrand_cb15",
+            "block_id": "p019_c0002",
+            "source_quote": "First CAC Meeting"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-cac-meetings-2010-project",
+        "local_observation_id": "event_cac_meetings_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_cac-meetings-2010_2",
+            "description": "Community Advisory Committee meetings held throughout 2010 for the Nostrand/Rogers SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_17_brt_nostrand_cb15",
+                "block_id": "p020_c0002",
+                "source_quote": "CAC Meetings"
+              }
+            ]
+          }
+        ],
+        "rationale": "Event appears on the Nostrand/Rogers SBS project timeline (page 20) under the 2010 activities. The CAC was the project's community advisory body.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_17_brt_nostrand_cb15",
+            "block_id": "p020_c0002",
+            "source_quote": "CAC Meetings"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-cac-tour-fordham-spring2010-project",
+        "local_observation_id": "event_cac_tour_fordham_spring_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_cac-tour-fordham-spring-2010",
+            "description": "CAC tour of the Fordham Road SBS in Spring 2010, organized as part of the Nostrand/Rogers SBS project outreach",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_17_brt_nostrand_cb15",
+                "block_id": "p020_c0002",
+                "source_quote": "CAC Tour of Fordham Rd SBS"
+              },
+              {
+                "source_id": "2010_05_17_brt_nostrand_cb15",
+                "block_id": "p021_c0002",
+                "source_quote": "CAC Tour of Fordham Road SBS – Spring 2010"
+              }
+            ]
+          }
+        ],
+        "rationale": "Event appears on the project timeline (page 20) and in the Next Steps (page 21) as a CAC activity for the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_17_brt_nostrand_cb15",
+            "block_id": "p020_c0002",
+            "source_quote": "CAC Tour of Fordham Rd SBS"
+          },
+          {
+            "source_id": "2010_05_17_brt_nostrand_cb15",
+            "block_id": "p021_c0002",
+            "source_quote": "CAC Tour of Fordham Road SBS – Spring 2010"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-public-open-house-tbd-project",
+        "local_observation_id": "event_public_open_house_tbd",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_public-open-house-tbd_2",
+            "description": "Public Open House planned (date TBD) as part of the Nostrand/Rogers SBS community outreach",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_17_brt_nostrand_cb15",
+                "block_id": "p020_c0002",
+                "source_quote": "Public Open House TBD"
+              },
+              {
+                "source_id": "2010_05_17_brt_nostrand_cb15",
+                "block_id": "p021_c0003",
+                "source_quote": "Public Open House – TBD"
+              }
+            ]
+          }
+        ],
+        "rationale": "Event appears on the project timeline (page 20) and in Next Steps (page 21) as a planned public engagement activity for the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_17_brt_nostrand_cb15",
+            "block_id": "p020_c0002",
+            "source_quote": "Public Open House TBD"
+          },
+          {
+            "source_id": "2010_05_17_brt_nostrand_cb15",
+            "block_id": "p021_c0003",
+            "source_quote": "Public Open House – TBD"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-additional-cac-open-houses-2011-project",
+        "local_observation_id": "event_additional_cac_open_houses_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_additional-cac-open-houses-2011",
+            "description": "Additional CAC meetings and open houses planned for 2011 as continued community engagement for the Nostrand/Rogers SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2010_05_17_brt_nostrand_cb15",
+                "block_id": "p020_c0002",
+                "source_quote": "Additional CAC Meetings and Open Houses"
+              }
+            ]
+          }
+        ],
+        "rationale": "Event appears on the Nostrand/Rogers SBS project timeline (page 20) under 2011 as continued community engagement for the project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_05_17_brt_nostrand_cb15",
+            "block_id": "p020_c0002",
+            "source_quote": "Additional CAC Meetings and Open Houses"
+          }
+        ]
+      }
+    ],
+    "packet_id": "relation-linker"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-39-53-264Z_1650285-a02b4938_canonicalize_2026-06-10t17-48-04-772z-1496766-26d4ac0d-ingest-2010-05-17-brt-nostrand-cb15-relation-linker"
+}

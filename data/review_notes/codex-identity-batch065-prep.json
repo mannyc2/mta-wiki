@@ -1,0 +1,390 @@
+{
+  "note_id": "codex-canonical-cleanup-2026-06-22-identity-alias-batch-065-prep",
+  "created_at": "2026-06-22T22:21:19Z",
+  "status": "ready_for_conductor_apply",
+  "lane": "identity_prep_only",
+  "batch": "identity-batch065",
+  "scope": {
+    "allowed_write": "data/review_notes/codex-identity-batch065-prep.json",
+    "durable_inputs_mutated": false,
+    "generated_outputs_mutated": false,
+    "db_mutated": false,
+    "provider_backed_commands_run": false,
+    "forbidden_commands_run": []
+  },
+  "context": {
+    "source_backlog": "unresolved duplicate_global_identity canonical backlog after current overrides and prior prep through identity064",
+    "candidate_mining_summary": {
+      "current_entity_records_scanned_from_jsonl": 2588,
+      "current_alias_overrides_considered": 409,
+      "db_identity_alias_rows_considered": 379,
+      "prior_prep_alias_entries_considered_through_batch064": 150,
+      "prior_prep_target_entries_considered_through_batch064": 150,
+      "prior_prep_unique_records_excluded_through_batch064": 248,
+      "identity_key_groups_scanned": 14443,
+      "candidate_pairs_after_alias_do_not_merge_and_prior_prep_filters": 778,
+      "selected_high_confidence_candidates": 10
+    },
+    "selection_policy": [
+      "Prefer full named-person aliases with shared deterministic identity keys, matching or compatible role text, and source evidence on both sides.",
+      "Exclude any alias or target record that appeared as either alias or target in prior prep artifacts through batch064.",
+      "Exclude broad agencies, programs, committees, member-list records, aliases already mapped in merges.json/current identity_aliases, target records that are alias-mapped, and do-not-merge suppressed pairs."
+    ]
+  },
+  "intended_mutation": {
+    "aliases": {
+      "entity": {
+        "entity_meeting-doc-128921-quemuel-arroyo": "entity_quemuel-arroyo-mta-cao",
+        "entity_meeting143381-raymond-smyth": "entity_raymond-smyth",
+        "entity_meeting-doc-68196-richard-hildebrand": "entity_meeting-doc-72536-richard-hildebrand",
+        "entity_meeting-doc-107606-richard-mack": "entity_richard-mack-meeting-doc-135306",
+        "entity_meeting-doc-160441-robert-lai": "entity_robert-lai-2025",
+        "entity_meeting-doc-95156-rose-davis": "entity_meeting91591-rose-davis",
+        "entity_meeting91596-sarah-meyer": "entity_sarah-meyer-cco-mta",
+        "entity_meeting143381-selina-storz": "entity_selina-storz",
+        "entity_meeting-doc-194171-shea-noteman": "entity_shea-noteman",
+        "entity_meeting-doc-121026-nadara-wade": "entity_meeting-doc-128991-nadara-wade"
+      }
+    }
+  },
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "canonical_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "targets_not_alias_mapped_in_merges_json": true,
+    "targets_not_alias_mapped_in_identity_aliases_table": true,
+    "no_overlap_with_prior_prep_through_batch064": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 20,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 20,
+    "source_page_blocks_missing": [],
+    "all_pass": true
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-128921-quemuel-arroyo",
+      "target": "entity_quemuel-arroyo-mta-cao",
+      "validator_duplicate_key": "entity_quemuel-arroyo",
+      "reason": "Both records identify Quemuel Arroyo as MTA Chief Accessibility Officer, with exact person and role-specific identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_128921#p002_c0001",
+        "meeting_doc_72576#p010_c0006"
+      ],
+      "shared_identity_keys": [
+        "entity_quemuel-arroyo",
+        "entity_quemuel-arroyo-mta-chief-accessibility-officer"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch064": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting143381-raymond-smyth",
+      "target": "entity_raymond-smyth",
+      "validator_duplicate_key": "entity_raymond-smyth",
+      "reason": "Both records identify Raymond Smyth as Project Manager in MTA Real Estate context, with matching role text and exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_143381#p008_c0004",
+        "meeting_doc_133386#p002_c0004"
+      ],
+      "shared_identity_keys": [
+        "entity_raymond-smyth"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch064": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-68196-richard-hildebrand",
+      "target": "entity_meeting-doc-72536-richard-hildebrand",
+      "validator_duplicate_key": "entity_richard-hildebrand",
+      "reason": "Both records identify Richard Hildebrand as Vice President and Chief of Operations, with matching title text and exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_68196#p006_c0008",
+        "meeting_doc_72536#p006_c0008"
+      ],
+      "shared_identity_keys": [
+        "entity_richard-hildebrand"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch064": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-107606-richard-mack",
+      "target": "entity_richard-mack-meeting-doc-135306",
+      "validator_duplicate_key": "entity_richard-mack",
+      "reason": "Both records identify Richard Mack as MTA Assistant Deputy Chief Contracts Officer for LIRR Procurements, with matching title text and exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_107606#p001_c0003",
+        "meeting_doc_135306#p001_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_richard-mack"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch064": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-160441-robert-lai",
+      "target": "entity_robert-lai-2025",
+      "validator_duplicate_key": "entity_robert-lai",
+      "reason": "Both records identify Robert Lai as Project Manager, with exact person and role-specific identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_160441#p002_c0004",
+        "q70_fare_free_service_increases_2025#p002_c0002"
+      ],
+      "shared_identity_keys": [
+        "entity_robert-lai",
+        "entity_robert-lai-project-manager"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch064": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-95156-rose-davis",
+      "target": "entity_meeting91591-rose-davis",
+      "validator_duplicate_key": "entity_rose-davis",
+      "reason": "Both records identify Rose Davis as Project Manager for the procurement action, with matching title text and exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_95156#p004_c0001",
+        "meeting_doc_91591#p004_c0001"
+      ],
+      "shared_identity_keys": [
+        "entity_rose-davis"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch064": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting91596-sarah-meyer",
+      "target": "entity_sarah-meyer-cco-mta",
+      "validator_duplicate_key": "entity_sarah-meyer",
+      "reason": "Both records identify Sarah Meyer as Chief Customer Officer, MTA, with exact person and role-specific identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_91596#p001_c0006",
+        "meeting_doc_72576#p011_c0006"
+      ],
+      "shared_identity_keys": [
+        "entity_sarah-meyer",
+        "entity_sarah-meyer-chief-customer-officer-mta"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch064": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting143381-selina-storz",
+      "target": "entity_selina-storz",
+      "validator_duplicate_key": "entity_selina-storz",
+      "reason": "Both records identify Selina Storz as Project Manager in MTA Real Estate context, with matching role text and exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_143381#p006_c0004",
+        "meeting_doc_133386#p005_c0004"
+      ],
+      "shared_identity_keys": [
+        "entity_selina-storz"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch064": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-194171-shea-noteman",
+      "target": "entity_shea-noteman",
+      "validator_duplicate_key": "entity_shea-noteman",
+      "reason": "Both records identify Shea Noteman as Train Service Supervisor in Department of Subways/DOS safety efficiency context, with matching title text and exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_194171#p003_c0008",
+        "meeting_doc_199241#p011_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_shea-noteman"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch064": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-121026-nadara-wade",
+      "target": "entity_meeting-doc-128991-nadara-wade",
+      "validator_duplicate_key": "entity_nadara-wade",
+      "reason": "Both records identify Nadara Wade as Director, Title VI Analysis, Equity and Access, with matching title text and exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_121026#p005_c0005",
+        "meeting_doc_128991#p005_c0004"
+      ],
+      "shared_identity_keys": [
+        "entity_nadara-wade"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch064": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    }
+  ],
+  "deferred_low_confidence_examples": [
+    {
+      "candidate": "P. Dietlin and other initial-only person records",
+      "reason": "Deferred because initial-only labels are more target-churn prone than full named-person role matches."
+    },
+    {
+      "candidate": "MTA Procurement Department and other department records",
+      "reason": "Deferred because broad department identities are outside this named-person batch."
+    },
+    {
+      "candidate": "Muhammad Afzal lessee/person pair",
+      "reason": "Deferred because the entity type differs and the record is less clearly a stable staff/person identity than the selected exact-role people."
+    }
+  ],
+  "commands_used_for_evidence": [
+    {
+      "command": "test ! -e data/review_notes/codex-identity-batch065-prep.json && echo missing || echo exists",
+      "purpose": "Confirmed the batch065 prep artifact did not already exist before writing.",
+      "result": "missing"
+    },
+    {
+      "command": "jq '.intended_mutation.aliases.entity, .aggregate_guard_results' data/review_notes/codex-identity-batch064-prep.json",
+      "purpose": "Read prior batch064 aliases and guard result to preserve disjointness.",
+      "result": "batch064 contained 10 aliases with all aggregate guards passing."
+    },
+    {
+      "command": "bun --eval '<read-only duplicate_global_identity mining over data/canonical/entities.jsonl, identityKeysForRecord(), current merges.json, read-only identity_aliases, prior prep aliases and targets through batch064, and do-not-merge guards>'",
+      "purpose": "Mined unresolved duplicate_global_identity candidates while excluding already mapped aliases, alias-mapped targets, current identity_aliases, prior prep records, and do-not-merge pairs.",
+      "result": "2588 current entity records scanned; 778 candidate pairs after alias/do-not-merge/prior-prep filters; 10 high-confidence candidates selected."
+    },
+    {
+      "command": "bun --eval '<read-only final guard script for canonical record presence, alias/target guard checks, prior prep disjointness, shared identity keys, raw source blocks, and source-page blocks>'",
+      "purpose": "Verified selected aliases and evidence before writing this prep artifact.",
+      "result": "all_pass true; 20 raw source blocks checked, 20 source-page blocks checked, no missing evidence blocks."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "purpose": "Stamped this prep artifact.",
+      "result": "2026-06-22T22:21:19Z"
+    }
+  ],
+  "commands_intentionally_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "export-jsonl",
+    "DB repair or publish commands",
+    "provider-backed post-ingest commands",
+    "identity-review-run or apply commands"
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "note_id": "codex-identity-batch184-prep",
+  "batch": "identity184",
+  "created_at": "2026-06-23T09:52:33Z",
+  "scope": {
+    "global_kind": "project",
+    "selection_note": "Codex-only post-ingest identity cleanup prep for PROJECT duplicate_global_identity rows only. Inputs were current data/canonical/projects.jsonl, data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, and allowed in-process validateRepo duplicate_global_identity output.",
+    "write_limit": "Only this review note was written. No identity overrides, LOG.md, manifest, canonical JSONL, DB, wiki, submissions, or other files were edited.",
+    "validator_duplicate_counts_latest_allowed_run": {
+      "total_issues": 495,
+      "duplicate_global_identity": 495,
+      "project_duplicate_global_identity": 24,
+      "project_duplicate_pairs_reviewed": 16
+    }
+  },
+  "prepared_count": 1,
+  "proposed_aliases": [
+    {
+      "global_kind": "project",
+      "alias_id": "project_mta-2020-2024-cp-amendment5",
+      "target_id": "project_2020-2024-capital-program-meeting-doc-152166",
+      "canonical_id": "project_2020-2024-capital-program-meeting-doc-152166",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global project records project_2020-2024-capital-program-meeting-doc-152166 and project_mta-2020-2024-cp-amendment5 share identity key project_mta-2020-2024-capital-program-amendment-5."
+      ],
+      "canonical_evidence": {
+        "alias": {
+          "record_id": "project_mta-2020-2024-cp-amendment5",
+          "display_name": "MTA 2020-2024 Capital Program Amendment #5",
+          "project_name": "MTA 2020-2024 Capital Program Amendment #5",
+          "project_type": "capital program amendment",
+          "status": "As Proposed to the MTA Board October 29, 2025",
+          "document_time_status": "planned",
+          "project_family": "capital_or_infrastructure",
+          "description": "Proposed amendment encompassing $55.432 billion of investments that renew, enhance, and expand the MTA network",
+          "record_aliases_include": [
+            "project_mta-2020-2024-capital-program-amendment-5"
+          ],
+          "source_ids": [
+            "meeting_doc_190291"
+          ]
+        },
+        "target": {
+          "record_id": "project_2020-2024-capital-program-meeting-doc-152166",
+          "display_name": "2020-2024 Capital Program",
+          "project_name": "MTA 2020-2024 Capital Program",
+          "project_type": "capital program amendment",
+          "status": "completed",
+          "document_time_status": "implemented",
+          "project_family": "capital_or_infrastructure",
+          "record_aliases_include": [
+            "project_2020-2024-cap-prog-amendment-5",
+            "project_2020-2024-capital-program",
+            "project_mta-2020-2024-capital-program-amendment-5"
+          ],
+          "merged_values_include": {
+            "project_name": [
+              "MTA 2020-2024 Capital Program Amendment #5"
+            ],
+            "description": [
+              "Decreases total funding to $55.432 billion; CPRB portion $52.182 billion"
+            ],
+            "status": [
+              "proposed for board approval"
+            ]
+          },
+          "source_ids_sample": [
+            "meeting_doc_152166",
+            "meeting_doc_190286",
+            "meeting_doc_192251",
+            "meeting_doc_91706",
+            "meeting_doc_91716",
+            "meeting_doc_91741"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "project_mta-2020-2024-cp-amendment5",
+          "evidence_id": "meeting_doc_190291#p012_c0001",
+          "quote": "The proposed MTA 2020-2024 Capital Program amendment (Amendment #5) encompasses $55.432 billion of investments that renew, enhance, and expand the MTA network."
+        },
+        {
+          "record_id": "project_2020-2024-capital-program-meeting-doc-152166",
+          "evidence_id": "meeting_doc_190286#p006_c0007",
+          "quote": "To obtain MTA Board approval of the proposed amendment to the MTA 2020-2024 Capital Program that decreases the total funding to $55.432 billion"
+        },
+        {
+          "record_id": "project_2020-2024-capital-program-meeting-doc-152166",
+          "evidence_id": "meeting_doc_190286#p007_c0018",
+          "quote": "That the MTA Board approve this proposed 2020-2024 Capital Program amendment #5 in the amount of $55.432 billion"
+        }
+      ],
+      "reason": "Both records carry the same Amendment #5 identity for the MTA 2020-2024 Capital Program, including the same $55.432 billion total and the same shared identity key. The target is the existing aggregate 2020-2024 Capital Program record and already includes Amendment #5 aliases plus merged Amendment #5 field values, so the standalone Amendment #5 record is a safe alias into that target.",
+      "guards": {
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "alias_is_not_current_merge_target": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "stale_id_hit": false,
+        "phase_stage_guard": "passes: this is a capital-program amendment identity already represented inside the target, not a construction phase/stage or parent/child project proposal",
+        "same_name_different_location_guard": "passes: no conflicting location; both records concern MTA 2020-2024 Capital Program Amendment #5",
+        "target_scope_caveat": "target is the existing aggregate 2020-2024 Capital Program record and already carries Amendment #5 values"
+      }
+    }
+  ],
+  "blockers": [
+    {
+      "reason": "same-name-different-location or contaminated-location collision",
+      "pairs": [
+        [
+          "project_2017-sip-woodhaven-blvd-cb5-sept2024",
+          "project_2017-street-improvement-79th"
+        ],
+        [
+          "project_2017-sip-woodhaven-blvd-cb5-sept2024",
+          "project_79th-st-2017-improvement-cb7-apr2025"
+        ],
+        [
+          "project_lirr-security-initiatives",
+          "project_security-initiatives-nyct"
+        ]
+      ]
+    },
+    {
+      "reason": "phase, stage, component, support-project, contract-modification, or parent/child scope collision",
+      "pairs": [
+        [
+          "project_able-camera-expansion-2022",
+          "project_able-program"
+        ],
+        [
+          "project_annual-2021-cbdtp",
+          "project_cbd-tolling-transcore-mod"
+        ],
+        [
+          "project_annual-2021-east-side-access",
+          "project_east-side-access-support"
+        ],
+        [
+          "project_jamaica-capacity-improvement",
+          "project_jamaica-capacity-improvement-phase2"
+        ],
+        [
+          "project_hall-interlocking-expansion",
+          "project_jamaica-capacity-improvements"
+        ],
+        [
+          "project_01-lexington-ave",
+          "project_lexington-ave-60th-52nd-offset-bus-lane"
+        ],
+        [
+          "project_east-side-access-support",
+          "project_main-line-second-track"
+        ],
+        [
+          "project_park-ave-viaduct-phase1",
+          "project_park-avenue-viaduct-repair"
+        ],
+        [
+          "project_penn-reconstruction-2020-2024",
+          "project_penn-station-reconstruction-design"
+        ]
+      ]
+    },
+    {
+      "reason": "otherwise plausible duplicate, but both possible alias records are already current merge targets, so batch184 did not prepare an alias under the requested guard",
+      "pairs": [
+        [
+          "project_bx6-sbs-brt-bx6-cb12-may2022",
+          "project_bx6-south-bronx-crosstown-sbs"
+        ],
+        [
+          "project_fordham-rd-bus-priority",
+          "project_fordham-rd-bus-priority-cb5-may2026"
+        ],
+        [
+          "project_faster-cleaner-safer-plan",
+          "project_meeting-doc-113946-faster-cleaner-safer"
+        ],
+        [
+          "project_b46-sbs-utica-ave-2015-09-10",
+          "project_utica-ave-sbs-2014"
+        ],
+        [
+          "project_vn-x4-operational-improvements-safety-fence",
+          "project_vn-x4-safety-fence"
+        ]
+      ]
+    }
+  ],
+  "commands_run_for_this_prep": [
+    "rg --files data packages filtered to requested inputs",
+    "git status --short",
+    "read prior prep artifact patterns",
+    "jq read-only inspection of data/identity-overrides/merges.json and data/identity-overrides/do-not-merge.json",
+    "bun --eval validateRepo duplicate_global_identity scan via ./packages/agents/src/index.ts",
+    "bun --eval read-only project duplicate grouping and guard inspection",
+    "jq read-only source block inspection for selected evidence"
+  ],
+  "commands_not_run": [
+    "materialize",
+    "validate CLI",
+    "export-jsonl",
+    "canonicalize",
+    "canonicalize-wave",
+    "canonicalize-review",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "provider/profile post-ingest commands"
+  ]
+}

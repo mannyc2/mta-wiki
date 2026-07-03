@@ -1,0 +1,117 @@
+{
+  "id": "codex-relation-assertion-agency-role-workplan-timeline-2026-06-30-aj",
+  "date_utc": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "bucket": "relation_assertion_status_unknown",
+  "baseline": {
+    "validation_issues": 0,
+    "unknown_relations_total": 9185,
+    "unknown_by_family": {
+      "agency_role": 636,
+      "timeline_context": 603,
+      "metric_context": 5661
+    }
+  },
+  "implemented": [
+    {
+      "rule": "static_agency_role_exact_kind_assertion_status",
+      "status": "delivered",
+      "guards": [
+        "relation_family == agency_role",
+        "relation_kind is an exact allowlisted static role/leadership/officer/manager kind",
+        "subject and object are entity records",
+        "subject and object are not the same record",
+        "relation description and endpoint display names do not contain future/proposed/former/uncertain tokens"
+      ],
+      "notably_excluded": [
+        {
+          "relation_kind": "reports_to",
+          "reason": "current rows often mean reporting/presentation/action to a board or committee, not durable organizational reporting structure"
+        }
+      ],
+      "estimated_or_observed_rows_moved": 131
+    },
+    {
+      "rule": "work_plan_source_to_dated_committee_event",
+      "status": "planned",
+      "guards": [
+        "relation_family == timeline_context",
+        "relation_kind in has_agenda_event or has_timeline_event",
+        "subject is a source and object is an event",
+        "source/relation/object text has work plan or workplan provenance",
+        "event_kind is committee_meeting_agenda, committee_meeting, or committee_presentation",
+        "event date_normalized is present",
+        "source/relation/object text does not contain no-item or no-meeting absence language"
+      ],
+      "estimated_or_observed_rows_moved": 13
+    }
+  ],
+  "after_materialize": {
+    "validation_issues": 0,
+    "unknown_relations_total": 9041,
+    "unknown_by_family": {
+      "agency_role": 505,
+      "timeline_context": 590,
+      "metric_context": 5661
+    },
+    "delta_unknown_relations_total": -144
+  },
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+      "result": "pass",
+      "summary": "32 tests, 151 expects"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "pass",
+      "summary": "Materialized 93092/98102 submissions; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass",
+      "summary": "Issues: 0; Submissions: 98102; Canonical records: 84040; Wiki pages: 7334"
+    }
+  ],
+  "subagents": [
+    {
+      "id": "019f1aca-2b05-7870-b3b3-784c6fbc5f7b",
+      "lane": "timeline_context read-only scout",
+      "result": "recommended a 13-row work-plan source to dated committee event planned-status slice and explicitly held no-item/no-meeting, subject_of_agenda_item, supports, and route launch/fare/postponement rows"
+    },
+    {
+      "id": "019f1ace-0b75-7d42-8888-060dd29adb7e",
+      "lane": "agency_role read-only exact-kind scout",
+      "result": "recommended exact static role/leadership/officer/manager relation kinds and explicitly excluded reports_to because current rows are mixed reporting/presentation actions"
+    }
+  ],
+  "remaining_known_holdouts": [
+    {
+      "bucket": "metric_context has_metric",
+      "count": 5647,
+      "reason": "mixed actuals, forecasts, budgets, goals, proposed expenditures, before/after observations; held for narrower rules"
+    },
+    {
+      "bucket": "agency_role reports_to",
+      "count": 58,
+      "reason": "mixed report delivery and presentation semantics; not a safe durable role rule"
+    },
+    {
+      "bucket": "timeline_context has_timeline_event",
+      "count": 458,
+      "reason": "remaining rows need separate delivered/planned/cancelled route launch, meeting, fare, and postponement policies"
+    }
+  ],
+  "files_changed": [
+    "packages/pipeline/src/records/assertion-qualifiers.ts",
+    "packages/pipeline/test/records/assertion-qualifiers.test.ts",
+    "data/canonical/relations.jsonl",
+    "data/canonical.db",
+    "LOG.md"
+  ]
+}

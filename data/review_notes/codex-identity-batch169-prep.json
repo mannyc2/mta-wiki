@@ -1,0 +1,596 @@
+{
+  "note_id": "codex-identity-batch169-prep",
+  "batch": "identity169",
+  "created_at": "2026-06-23T08:40:08Z",
+  "scope": {
+    "global_kind": "entity",
+    "selection_note": "Codex-only identity cleanup prep from current data/canonical/entities.jsonl, current entity merge and do-not-merge overrides, and read-only validateRepo duplicate_global_identity messages. Selected proposals are exact person identity shards with matching names and compatible titles/organizations. Broad community-board, committee, generic MTA, and borough-ambiguous collisions were excluded.",
+    "backlog_caveat": "The user described a 561-issue current validation backlog. A first read-only validateRepo inspection observed 561 duplicate_global_identity issues; by the final guard pass, concurrent repo changes had moved the current read-only count to 548 total duplicate_global_identity issues, including 458 entity duplicate_global_identity issues. This note anchors proposals to the final current guard pass."
+  },
+  "prepared_count": 10,
+  "proposed_aliases": [
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting91591-louis-montanti",
+      "target_id": "entity_louis-montanti",
+      "canonical_id": "entity_louis-montanti",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_louis-montanti",
+      "validator_evidence": [
+        "Global entity records entity_louis-montanti and entity_meeting91591-louis-montanti share identity key entity_louis-montanti."
+      ],
+      "reason": "validateRepo currently flags the pair on identity key entity_louis-montanti. Canonical evidence shows both records are person entities named Louis Montanti with the same MTA deputy chief procurement officer/procurement operations role. Source evidence includes the alias as Louis Montanti, MTA Deputy Chief Procurement Officer - Procurement Operations, and the target cluster has the same name/title across many procurement records.",
+      "canonical_evidence": {
+        "alias": {
+          "entity_name": "Louis Montanti",
+          "entity_type": "person",
+          "title": "MTA Deputy Chief Procurement Officer - Procurement Operations",
+          "source_count": 2,
+          "source_ids_sample": [
+            "meeting_doc_91591",
+            "meeting_doc_95156"
+          ]
+        },
+        "target": {
+          "entity_name": "Louis Montanti",
+          "entity_type": "person",
+          "title": "Deputy Chief Procurement Officer, Operations, MTA",
+          "organization": "Metropolitan Transportation Authority",
+          "source_count": 33,
+          "source_ids_sample": [
+            "meeting_doc_102806",
+            "meeting_doc_105946",
+            "meeting_doc_107531",
+            "meeting_doc_107536"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting91591-louis-montanti",
+          "evidence_id": "meeting_doc_95156#p002_c0003",
+          "quote": "Louis Montanti , MTA Deputy Chief Procurement Officer - Procurement Operations"
+        },
+        {
+          "record_id": "entity_louis-montanti",
+          "evidence_id": "meeting_doc_105946#p002_c0003",
+          "quote": "Louis Montanti , MTA Deputy Chief Procurement Officer - Procurement Operations"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_entities_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "alias_current_merge_target_for": [
+          "entity_meeting-doc-95156-louis-montanti"
+        ]
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_olga-chernat-129061",
+      "target_id": "entity_meeting-doc-129041-olga-chernat",
+      "canonical_id": "entity_meeting-doc-129041-olga-chernat",
+      "confidence": "high",
+      "validator_duplicate_key": [
+        "entity_olga-chernat",
+        "entity_olga-chernat-deputy-chief-financial-services"
+      ],
+      "validator_evidence": [
+        "Global entity records entity_meeting-doc-129041-olga-chernat and entity_olga-chernat-129061 share identity key entity_olga-chernat.",
+        "Global entity records entity_meeting-doc-129041-olga-chernat and entity_olga-chernat-129061 share identity key entity_olga-chernat-deputy-chief-financial-services."
+      ],
+      "reason": "validateRepo currently flags the pair on both the name key and the Deputy Chief, Financial Services key. Canonical evidence shows both are person records for Olga Chernat with the same finance title and MTA organization. Source evidence repeatedly names Olga Chernat as Deputy Chief, Financial Services.",
+      "canonical_evidence": {
+        "alias": {
+          "entity_name": "Olga Chernat",
+          "entity_type": "person",
+          "title": "Deputy Chief, Financial Services",
+          "organization": "Metropolitan Transportation Authority",
+          "source_count": 2
+        },
+        "target": {
+          "entity_name": "Olga Chernat",
+          "entity_type": "person",
+          "title": "Deputy Chief, Financial Services",
+          "organization": "Metropolitan Transportation Authority",
+          "source_count": 21
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_olga-chernat-129061",
+          "evidence_id": "meeting_doc_197061#p001_c0003",
+          "quote": "MTA Finance Department Olga Chernat Deputy Chief, Financial Services January 26, 2026"
+        },
+        {
+          "record_id": "entity_meeting-doc-129041-olga-chernat",
+          "evidence_id": "meeting_doc_124351#p157_c0003",
+          "quote": "MTA Finance Department Olga Chernat Deputy Chief, Financial Services October 23, 2023"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_entities_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "alias_current_merge_target_for": [
+          "entity_meeting-doc-197061-olga-chernat"
+        ]
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_craig-cipriano-dec2021",
+      "target_id": "entity_meeting-doc-105931-craig-cipriano",
+      "canonical_id": "entity_meeting-doc-105931-craig-cipriano",
+      "confidence": "high",
+      "validator_duplicate_key": [
+        "entity_craig-cipriano",
+        "entity_craig-cipriano-interim-president-nyct"
+      ],
+      "validator_evidence": [
+        "Global entity records entity_craig-cipriano-dec2021 and entity_meeting-doc-105931-craig-cipriano share identity key entity_craig-cipriano.",
+        "Global entity records entity_craig-cipriano-dec2021 and entity_meeting-doc-105931-craig-cipriano share identity key entity_craig-cipriano-interim-president-nyct."
+      ],
+      "reason": "validateRepo currently flags the pair on Craig Cipriano identity keys. Canonical evidence shows both are person records named Craig Cipriano with compatible NYCT/MTA Bus leadership titles, including President, Interim President, and Chief Operating Officer variants. Source evidence names the same person in those roles.",
+      "canonical_evidence": {
+        "alias": {
+          "entity_name": "Craig Cipriano",
+          "entity_type": "person",
+          "title": "President, MTA Bus Company / Senior Vice President, NYCT Department of Buses",
+          "organization": "MTA Bus Company",
+          "source_count": 5
+        },
+        "target": {
+          "entity_name": "Craig Cipriano",
+          "entity_type": "person",
+          "title": "Chief Operating Officer, NYCT",
+          "organization": "New York City Transit Authority",
+          "source_count": 14
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_craig-cipriano-dec2021",
+          "evidence_id": "meeting_doc_72581#p003_c0006",
+          "quote": "Craig Cipriano, President, New York City Transit"
+        },
+        {
+          "record_id": "entity_meeting-doc-105931-craig-cipriano",
+          "evidence_id": "meeting_doc_105931#p001_c0010",
+          "quote": "Craig Cipriano, Chief Operating Officer, NYCT"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_entities_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "alias_current_merge_target_for": [
+          "entity_cipriano-nyct-president-jan2022",
+          "entity_meeting-doc-44216-craig-cipriano"
+        ]
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_rachel-cohen-2023",
+      "target_id": "entity_meeting-doc-138391-rachel-cohen",
+      "canonical_id": "entity_meeting-doc-138391-rachel-cohen",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_rachel-cohen",
+      "validator_evidence": [
+        "Global entity records entity_meeting-doc-138391-rachel-cohen and entity_rachel-cohen-2023 share identity key entity_rachel-cohen."
+      ],
+      "reason": "validateRepo currently flags the pair on Rachel Cohen. Canonical evidence shows both are person records named Rachel Cohen in accessibility/paratransit roles at MTA/NYC Transit. Source evidence identifies the alias as Deputy Chief Accessibility Officer/Chief Accessibility Officer and the target as Acting Vice President of Paratransit.",
+      "canonical_evidence": {
+        "alias": {
+          "entity_name": "Rachel Cohen",
+          "entity_type": "person",
+          "title": "Deputy Chief Accessibility Officer / Chief Accessibility Officer",
+          "organization": "MTA NYC Transit Department of Paratransit",
+          "source_count": 2
+        },
+        "target": {
+          "entity_name": "Rachel Cohen",
+          "entity_type": "person",
+          "title": "Acting Vice President of Paratransit for New York City Transit starting in May",
+          "organization": "MTA",
+          "source_count": 13
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_rachel-cohen-2023",
+          "evidence_id": "meeting_doc_128931#p005_c0012",
+          "quote": "Rachel Cohen, Deputy Chief Accessibility Officer, delivered the Accessibility Report."
+        },
+        {
+          "record_id": "entity_meeting-doc-138391-rachel-cohen",
+          "evidence_id": "meeting_doc_138391#p018_c0008",
+          "quote": "MTA Accessibility congratulates our Deputy Chief Rachel Cohen on her appointment as Acting Vice President of Paratransit"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_entities_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "alias_current_merge_target_for": []
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_rachel-cohen-systemwide-accessibility",
+      "target_id": "entity_meeting-doc-138391-rachel-cohen",
+      "canonical_id": "entity_meeting-doc-138391-rachel-cohen",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_rachel-cohen",
+      "validator_evidence": [
+        "Global entity records entity_meeting-doc-138391-rachel-cohen and entity_rachel-cohen-systemwide-accessibility share identity key entity_rachel-cohen."
+      ],
+      "reason": "validateRepo currently flags the pair on Rachel Cohen. Canonical evidence shows both are person records named Rachel Cohen with MTA/NYC Transit accessibility and paratransit leadership titles. The alias source names Rachel Cohen as Director, Systemwide Accessibility, while the target source describes the same accessibility official moving into Acting Vice President of Paratransit.",
+      "canonical_evidence": {
+        "alias": {
+          "entity_name": "Rachel Cohen",
+          "entity_type": "person",
+          "title": "Director, Systemwide Accessibility",
+          "organization": "MTA New York City Transit",
+          "source_count": 1
+        },
+        "target": {
+          "entity_name": "Rachel Cohen",
+          "entity_type": "person",
+          "title": "Acting Vice President of Paratransit for New York City Transit starting in May",
+          "organization": "MTA",
+          "source_count": 13
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_rachel-cohen-systemwide-accessibility",
+          "evidence_id": "meeting_doc_42411#p075_c0002",
+          "quote": "Rachel Cohen Director, Systemwide Accessibility"
+        },
+        {
+          "record_id": "entity_meeting-doc-138391-rachel-cohen",
+          "evidence_id": "meeting_doc_140461#p004_c0002",
+          "quote": "Rachel Cohen, who will be serving as Acting Vice President of Paratransit"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_entities_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "alias_current_merge_target_for": []
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_richard-hildebrand-44201",
+      "target_id": "entity_richard-hildebrand",
+      "canonical_id": "entity_richard-hildebrand",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_richard-hildebrand",
+      "validator_evidence": [
+        "Global entity records entity_richard-hildebrand and entity_richard-hildebrand-44201 share identity key entity_richard-hildebrand."
+      ],
+      "reason": "validateRepo currently flags the pair on Richard Hildebrand. Canonical evidence shows both are person records named Richard Hildebrand with the same Vice President and Chief of Operations title and TBTA/MTA Bridges and Tunnels organization context. Source evidence repeats the exact name/title.",
+      "canonical_evidence": {
+        "alias": {
+          "entity_name": "Richard Hildebrand",
+          "entity_type": "person",
+          "title": "Vice President and Chief of Operations",
+          "organization": "TBTA",
+          "source_count": 2
+        },
+        "target": {
+          "entity_name": "Richard Hildebrand",
+          "entity_type": "person",
+          "title": "Vice President and Chief of Operations",
+          "organization": "Triborough Bridge and Tunnel Authority",
+          "source_count": 13
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_richard-hildebrand-44201",
+          "evidence_id": "meeting_doc_44201#p012_c0004",
+          "quote": "Richard Hildebrand, Vice President and Chief of Operations"
+        },
+        {
+          "record_id": "entity_richard-hildebrand",
+          "evidence_id": "meeting_doc_104711#p004_c0007",
+          "quote": "Richard Hildebrand, Vice President and Chief of Operations"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_entities_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "alias_current_merge_target_for": [
+          "entity_meeting-doc-102771-richard-hildebrand"
+        ]
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-98321-kuvershen-ayer",
+      "target_id": "entity_kuvershen-ayer",
+      "canonical_id": "entity_kuvershen-ayer",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_kuvershen-ayer",
+      "validator_evidence": [
+        "Global entity records entity_kuvershen-ayer and entity_meeting-doc-98321-kuvershen-ayer share identity key entity_kuvershen-ayer."
+      ],
+      "reason": "validateRepo currently flags the pair on Kuvershen Ayer. Canonical evidence shows both are person records named Kuvershen Ayer with Chief Procurement Officer/MTA Procurement Department Head roles. Source evidence directly names Kuvershen Ayer as Chief Procurement Officer.",
+      "canonical_evidence": {
+        "alias": {
+          "entity_name": "Kuvershen Ayer",
+          "entity_type": "person",
+          "title": "Chief Procurement Officer",
+          "organization": "Metropolitan Transportation Authority",
+          "source_count": 1
+        },
+        "target": {
+          "entity_name": "Kuvershen Ayer",
+          "entity_type": "person",
+          "title": "MTA Procurement Department Head",
+          "organization": "MTA Procurement Department",
+          "source_count": 9
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-98321-kuvershen-ayer",
+          "evidence_id": "meeting_doc_98321#p005_c0021",
+          "quote": "Kuvershen Ayer, Chief Procurement Officer"
+        },
+        {
+          "record_id": "entity_kuvershen-ayer",
+          "evidence_id": "meeting_doc_79341#p005_c0006",
+          "quote": "Kuvershen Ayer, Chief Procurement Officer"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_entities_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "alias_current_merge_target_for": []
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting154966-samuel-chu",
+      "target_id": "entity_193976-samuel-chu",
+      "canonical_id": "entity_193976-samuel-chu",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_samuel-chu",
+      "validator_evidence": [
+        "Global entity records entity_193976-samuel-chu and entity_meeting154966-samuel-chu share identity key entity_samuel-chu."
+      ],
+      "reason": "validateRepo currently flags the pair on Samuel Chu. Canonical evidence shows both are person records named Samuel Chu with committee member/co-chair roles. Source evidence names Hon. Samuel Chu in the alias and Samuel Chu as Co-Chair in the target cluster.",
+      "canonical_evidence": {
+        "alias": {
+          "entity_name": "Samuel Chu",
+          "entity_type": "person",
+          "title": "Committee Member, Committee on Operations",
+          "source_count": 1
+        },
+        "target": {
+          "entity_name": "Samuel Chu",
+          "entity_type": "person",
+          "title": "Co-Chair, Joint LIRR and Metro-North Committees",
+          "source_count": 9
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting154966-samuel-chu",
+          "evidence_id": "meeting_doc_154966#p001_c0007",
+          "quote": "Hon. Samuel Chu"
+        },
+        {
+          "record_id": "entity_193976-samuel-chu",
+          "evidence_id": "meeting_doc_201651#p016_c0005",
+          "quote": "Samuel Chu, Co-Chair"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_entities_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "alias_current_merge_target_for": []
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_paige-graves-meeting-doc-173841",
+      "target_id": "entity_paige-graves-legal",
+      "canonical_id": "entity_paige-graves-legal",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_paige-graves",
+      "validator_evidence": [
+        "Global entity records entity_paige-graves-legal and entity_paige-graves-meeting-doc-173841 share identity key entity_paige-graves."
+      ],
+      "reason": "validateRepo currently flags the pair on Paige Graves. Canonical evidence shows both are person records named Paige Graves with General Counsel/MTA Legal context. Source evidence names Paige Graves as General Counsel in both records.",
+      "canonical_evidence": {
+        "alias": {
+          "entity_name": "Paige Graves",
+          "entity_type": "person",
+          "title": "General Counsel",
+          "organization": "Metropolitan Transportation Authority",
+          "source_count": 2
+        },
+        "target": {
+          "entity_name": "Paige Graves",
+          "entity_type": "person",
+          "title": "MTA Legal Department Head",
+          "organization": "Metropolitan Transportation Authority",
+          "source_count": 9
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_paige-graves-meeting-doc-173841",
+          "evidence_id": "meeting_doc_173841#p003_c0007",
+          "quote": "Paige Graves, General Counsel"
+        },
+        {
+          "record_id": "entity_paige-graves-legal",
+          "evidence_id": "meeting_doc_128986#p003_c0007",
+          "quote": "Paige Graves, General Counsel"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_entities_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "alias_current_merge_target_for": [
+          "entity_paige-graves-meeting-doc-135256"
+        ]
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-89776-paul-friman",
+      "target_id": "entity_paul-friman",
+      "canonical_id": "entity_paul-friman",
+      "confidence": "high",
+      "validator_duplicate_key": [
+        "entity_paul-l-friman",
+        "entity_paul-l-friman-general-counsel-and-corporate-secretary",
+        "entity_paul-l-friman-general-counsel-and-corporate-secretary-tbta-mta"
+      ],
+      "validator_evidence": [
+        "Global entity records entity_meeting-doc-89776-paul-friman and entity_paul-friman share identity key entity_paul-l-friman.",
+        "Global entity records entity_meeting-doc-89776-paul-friman and entity_paul-friman share identity key entity_paul-l-friman-general-counsel-and-corporate-secretary.",
+        "Global entity records entity_meeting-doc-89776-paul-friman and entity_paul-friman share identity key entity_paul-l-friman-general-counsel-and-corporate-secretary-tbta-mta."
+      ],
+      "reason": "validateRepo currently flags the pair on Paul L. Friman name and title keys. Canonical evidence shows both are person records named Paul L. Friman with General Counsel and Corporate Secretary roles in TBTA/MTA context. Source evidence repeats the same full name and title.",
+      "canonical_evidence": {
+        "alias": {
+          "entity_name": "Paul L. Friman",
+          "entity_type": "person",
+          "title": "Acting General Counsel and Corporate Secretary",
+          "organization": "MTA",
+          "source_count": 17
+        },
+        "target": {
+          "entity_name": "Paul L. Friman",
+          "entity_type": "person",
+          "title": "Acting General Counsel and Corporate Secretary - TBTA, MTA",
+          "organization": "Triborough Bridge and Tunnel Authority",
+          "source_count": 11
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-89776-paul-friman",
+          "evidence_id": "meeting_doc_121016#p004_c0007",
+          "quote": "Paul L. Friman, General Counsel and Corporate Secretary - TBTA, MTA"
+        },
+        {
+          "record_id": "entity_paul-friman",
+          "evidence_id": "meeting_doc_104711#p004_c0007",
+          "quote": "Paul L. Friman, Acting General Counsel and Corporate Secretary - TBTA, MTA"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_entities_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "alias_current_merge_target_for": [
+          "entity_meeting-doc-102771-paul-friman"
+        ]
+      }
+    }
+  ],
+  "exclusions_and_guards": {
+    "current_duplicate_issue_counts": {
+      "first_read_total_duplicate_global_identity": 561,
+      "final_guard_total_duplicate_global_identity": 548,
+      "final_guard_entity_duplicate_global_identity": 458
+    },
+    "input_files_read": [
+      "data/canonical/entities.jsonl",
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json"
+    ],
+    "proposal_guards": [
+      "Every alias and target was verified as a current record_id in data/canonical/entities.jsonl.",
+      "No proposed alias is a current entity merge alias in data/identity-overrides/merges.json.",
+      "No proposed target is a current entity merge alias in data/identity-overrides/merges.json.",
+      "Every alias and target pair is distinct.",
+      "No proposed pair is covered by a current entity do-not-merge guard.",
+      "Several proposed aliases or targets are current merge targets for other aliases; incoming aliases are recorded per proposal, but the requested guards only prohibit an already-merged alias and a target that is itself a merge alias."
+    ],
+    "excluded_current_duplicate_classes": [
+      "Excluded community-board collisions where shared keys omit borough or board-name context.",
+      "Excluded broad committee, workplan, and roster-page collisions unless the selected entity was a specific named person.",
+      "Excluded generic MTA, MTA Board, LIRR, Metro-North, NYCT, Access-A-Ride, and department-wide collisions where source context could collapse institution, committee, office, or system labels incorrectly.",
+      "Excluded initials-only person pairs unless a richer exact-name target and strong source title context made the identity unambiguous; none of the final ten depend only on initials.",
+      "Excluded agency/office labels where one side was a role, bureau, or generic department label rather than the same named entity."
+    ]
+  },
+  "command_evidence": [
+    {
+      "command": "sed -n '280,340p' packages/pipeline/src/validate.ts && sed -n '1,120p' packages/pipeline/src/validate.ts",
+      "purpose": "Read validateRepo duplicate_global_identity logic and confirm it uses identityKeysForRecord plus do-not-merge suppression."
+    },
+    {
+      "command": "bun --eval 'import { validateRepo } from \"./packages/pipeline/src/validate.ts\"; ... print duplicate_global_identity entity messages'",
+      "purpose": "Read-only validator inspection without running the CLI validate command; first pass observed 561 duplicate_global_identity issues and printed entity duplicate messages for candidate selection."
+    },
+    {
+      "command": "bun --eval '<read-only candidate mining over data/canonical/entities.jsonl, current merges.json, current do-not-merge.json, and validateRepo duplicate_global_identity messages>'",
+      "purpose": "Filtered entity duplicate candidates to pairs where both ids exist, alias is not a merge alias, target is not a merge alias, alias != target, and no do-not-merge guard applies."
+    },
+    {
+      "command": "bun --eval '<read selected entity records and local raw/sources/*/blocks.jsonl evidence text for proposed aliases and targets>'",
+      "purpose": "Inspected canonical payloads, source ids, evidence refs, and local source-block quotes for the selected proposals."
+    },
+    {
+      "command": "bun --eval '<final read-only guard pass over selected pairs using validateRepo, entities.jsonl, merges.json, and do-not-merge.json>'",
+      "purpose": "Final current guard pass reported 548 duplicate_global_identity issues total, 458 entity duplicate_global_identity issues, validator rows for all selected pairs, and no merge-alias or do-not-merge guard failures."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "purpose": "Generated the UTC created_at timestamp."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed commands",
+    "bun run validate",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts export",
+    "materialize",
+    "validate",
+    "export",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "campaign dedup",
+    "canonicalize",
+    "write",
+    "ask"
+  ]
+}

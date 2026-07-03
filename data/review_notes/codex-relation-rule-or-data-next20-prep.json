@@ -1,0 +1,260 @@
+{
+  "note_id": "codex-relation-rule-or-data-next20-prep",
+  "batch_id": "next20",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "scope": "Codex-only relation endpoint-shape rule-or-data triage; deterministic read-only inspection plus this single prep artifact; no provider-backed commands, generated-output commands, durable data edits, or code edits",
+  "current_checkpoint_context": {
+    "reported_unexpected_relation_endpoint_shape_count_after_relation043_identity075": 26,
+    "observed_endpoint_shape_issue_count": 26,
+    "recent_work_not_repeated": [
+      "owned_by corridor->entity validator rule patch",
+      "operated_by corridor->entity validator rule patch",
+      "has_claim treatment_component->claim validator rule patch",
+      "has_treatment route->treatment_component validator rule patch",
+      "relation cleanup batches037-043 for timeline, published_by, implemented_by, and related_route buckets",
+      "next19 selected part_of_program project->claim for data cleanup"
+    ],
+    "inspection_method": "Read-only SQLite queries against data/canonical.db using the current RELATION_ENDPOINT_SHAPES table from packages/pipeline/src/records/relations.ts, plus jq inspection of existing source blocks and previous prep artifacts."
+  },
+  "remaining_bucket_counts": {
+    "total": 26,
+    "buckets": [
+      { "bucket": "has_claim claim->claim", "count": 1 },
+      { "bucket": "has_timeline_event entity->metric_claim", "count": 1 },
+      { "bucket": "has_timeline_event event->entity", "count": 1 },
+      { "bucket": "has_timeline_event project->entity", "count": 1 },
+      { "bucket": "has_timeline_event source->entity", "count": 1 },
+      { "bucket": "has_treatment claim->treatment_component", "count": 1 },
+      { "bucket": "has_treatment entity->metric_claim", "count": 1 },
+      { "bucket": "has_treatment event->treatment_component", "count": 1 },
+      { "bucket": "implemented_by corridor->entity", "count": 1 },
+      { "bucket": "implemented_by entity->entity", "count": 1 },
+      { "bucket": "implemented_by event->entity", "count": 1 },
+      { "bucket": "implemented_by source->entity", "count": 1 },
+      { "bucket": "implemented_by treatment_component->entity", "count": 1 },
+      { "bucket": "operated_by entity->entity", "count": 1 },
+      { "bucket": "operated_by entity->event", "count": 1 },
+      { "bucket": "operated_by treatment_component->entity", "count": 1 },
+      { "bucket": "operates_on_corridor entity->corridor", "count": 1 },
+      { "bucket": "operates_on_corridor project->entity", "count": 1 },
+      { "bucket": "owned_by event->entity", "count": 1 },
+      { "bucket": "owned_by source->entity", "count": 1 },
+      { "bucket": "part_of_program project->claim", "count": 1 },
+      { "bucket": "published_by claim->entity", "count": 1 },
+      { "bucket": "published_by metric_claim->source", "count": 1 },
+      { "bucket": "related_route project->project", "count": 1 },
+      { "bucket": "serves_route project->entity", "count": 1 },
+      { "bucket": "serves_route project->project", "count": 1 }
+    ],
+    "triage_note": "All current exact endpoint-shape buckets are singletons. After excluding next19 and the recently handled timeline/published_by/implemented_by/related_route lanes, operates_on_corridor entity->corridor is the clearest narrow validator gap."
+  },
+  "recommendation": "validator_rule_patch",
+  "recommended_bucket": "operates_on_corridor entity->corridor",
+  "expected_delta": {
+    "baseline_unexpected_relation_endpoint_shape": 26,
+    "selected_rows_cleared": 1,
+    "expected_remaining_after_patch": 25
+  },
+  "recommended_rule_patch": {
+    "relation_kind": "operates_on_corridor",
+    "add_subject_kind": "entity",
+    "object_kind": "corridor",
+    "exact_endpoint_combination": "entity -> corridor",
+    "current_valid_shapes": [
+      "route->corridor"
+    ],
+    "proposed_valid_shapes_after_patch": [
+      "route->corridor",
+      "entity->corridor"
+    ],
+    "why_validator_rule_patch": "An operating agency or railroad entity can source-validly operate service on a corridor. The selected row's subject is MTA Long Island Rail Road and the object is the Main Line corridor; the evidence says LIRR planned schedule adjustments and that a Queens Interlocking signal/switch project would improve operations through a vital segment of the Main Line corridor. This is an operator-to-corridor scope assertion, not a malformed source, claim, event, or metric endpoint.",
+    "why_not_data_cleanup": "A data cleanup replacement would either invent a route endpoint not present in the source or convert the assertion into project->corridor uses_corridor, losing the source-backed agency/operator relationship. The sibling malformed bucket operates_on_corridor project->entity remains a data error and is not evidence for broadening project or entity objects.",
+    "negative_endpoint_combos_that_must_remain_invalid": [
+      "operates_on_corridor project->corridor",
+      "operates_on_corridor project->entity",
+      "operates_on_corridor entity->entity",
+      "operates_on_corridor entity->route",
+      "operates_on_corridor source->corridor",
+      "operates_on_corridor claim->corridor",
+      "operates_on_corridor event->corridor",
+      "operates_on_corridor treatment_component->corridor",
+      "operates_on_corridor metric_claim->corridor",
+      "operates_on_corridor corridor->route"
+    ]
+  },
+  "representative_records": [
+    {
+      "record_id": "relation_lirr-operates-main-line",
+      "source_id": "meeting_doc_196911",
+      "submission_ids": [
+        "sub_f144d6f0071c1d22"
+      ],
+      "malformed_shape_under_current_validator": "operates_on_corridor entity->corridor",
+      "recommended_shape_after_patch": "valid operates_on_corridor entity->corridor",
+      "relation_kind": "operates_on_corridor",
+      "subject": {
+        "record_id": "entity_annual-report-2021-lirr",
+        "record_kind": "entity",
+        "display_name": "MTA Long Island Rail Road",
+        "local_observation_id": "entity_annual_report_2021_lirr"
+      },
+      "object": {
+        "record_id": "corridor_main-line-lirr",
+        "record_kind": "corridor",
+        "display_name": "Main Line corridor",
+        "local_observation_id": "corridor_main_line_lirr"
+      },
+      "payload_summary": {
+        "relation_family": "corridor_scope",
+        "as_of_date": "2026-01-16",
+        "description": "MTA Long Island Rail Road operates service on the Main Line corridor"
+      },
+      "evidence": [
+        {
+          "source_id": "meeting_doc_196911",
+          "evidence_id": "meeting_doc_196911#p001_c0004",
+          "source_path": "raw/sources/meeting_doc_196911/blocks.jsonl",
+          "page_number": 1,
+          "block_id": "p001_c0004",
+          "text_sha256": "sha256:67dff443ab5d926133aa7be7e14a32d3e74cb5ed75392720c5e5fce40709421e",
+          "source_quote": "MTA Long Island Rail Road's plan to temporarily adjust schedules"
+        },
+        {
+          "source_id": "meeting_doc_196911",
+          "evidence_id": "meeting_doc_196911#p001_c0007",
+          "source_path": "raw/sources/meeting_doc_196911/blocks.jsonl",
+          "page_number": 1,
+          "block_id": "p001_c0007",
+          "text_sha256": "sha256:b1308043ef5926252dcbe84ea7ec69b768b01e4d53ee002cc2d6f64daff51242",
+          "source_quote": "improved switch configuration and modernized signal system at Queens Interlocking will add new routing options and improve operations through this vital segment of the Main Line corridor"
+        }
+      ],
+      "triage_read": "The subject is an operating railroad entity and the object is a real corridor endpoint. The evidence supports the operator/corridor relationship closely enough for a narrow validator rule patch."
+    },
+    {
+      "record_id": "relation_rel-ace-starts-at-manhattan-brooklyn",
+      "source_id": "meeting_doc_201621",
+      "submission_ids": [
+        "sub_a0a60967ae6b4493"
+      ],
+      "malformed_shape_under_current_validator": "operates_on_corridor project->entity",
+      "triage_read": "Counterexample for over-broad patching. The object is MTA as an entity while the cited sentence says ABLE began on buses across routes and boroughs. Keep project->entity invalid for operates_on_corridor."
+    },
+    {
+      "record_id": "relation_meeting-doc-121091-psa-bronx-stations",
+      "source_id": "meeting_doc_121091",
+      "submission_ids": [
+        "sub_724ffb54454bb964"
+      ],
+      "malformed_shape_under_current_validator": "serves_route project->entity",
+      "triage_read": "Not selected. The source says Penn Station Access brings Metro-North service into Penn; the object is an entity rather than a route, so this should remain a future data cleanup or route reconstruction problem, not a serves_route rule widening."
+    },
+    {
+      "record_id": "relation_23-stations-has-claim",
+      "source_id": "meeting_doc_121711",
+      "submission_ids": [
+        "sub_5d04512e0ab539f9"
+      ],
+      "malformed_shape_under_current_validator": "has_claim claim->claim",
+      "triage_read": "Not selected. The same map block contains a count claim and a station-list claim; if cleaned later, retire or replace with a non-has_claim claim-to-claim support/reference relation rather than allowing has_claim claim->claim."
+    }
+  ],
+  "evidence": {
+    "source_and_canonical_evidence_summary": [
+      "The selected relation is canonical record relation_lirr-operates-main-line from source meeting_doc_196911, with accepted submission sub_f144d6f0071c1d22.",
+      "Its subject endpoint is entity_annual-report-2021-lirr, a canonical entity for MTA Long Island Rail Road. Its object endpoint is corridor_main-line-lirr, a canonical corridor record from the same source.",
+      "The corridor record cites meeting_doc_196911#p001_c0007 for 'Main Line corridor'. The selected relation cites p001_c0004 for the LIRR plan and p001_c0007 for operations through the Main Line corridor.",
+      "The source also has project_queens-interlocking-renewal and claim_improved-operations-queens-interlocking records, but those do not make the entity->corridor edge malformed; they provide adjacent context for the same operating-corridor assertion."
+    ],
+    "selected_source_blocks": [
+      {
+        "source_id": "meeting_doc_196911",
+        "block_id": "p001_c0004",
+        "page_number": 1,
+        "raw_text": "This is to inform the Long Island Committee of the MTA Long Island Rail Road’s plan to temporarily adjust schedules in support of signal testing in Queens Interlocking. The Queens Interlocking renewal is a multi-phased track, switch and signal project that will lead to improved operations and further state of good repair maintenance in this critical area of our network. Additional phases of this ongoing project will take place throughout this year.",
+        "text_sha256": "sha256:67dff443ab5d926133aa7be7e14a32d3e74cb5ed75392720c5e5fce40709421e"
+      },
+      {
+        "source_id": "meeting_doc_196911",
+        "block_id": "p001_c0007",
+        "page_number": 1,
+        "raw_text": "Main Line – Signal Testing - On the weekends of February 7-8, February 14-16, and February 21-22, two of four main tracks will be out of service in Queens Interlocking while signal testing is performed in advance of a signal cutover which will be performed later this year. Once complete, the improved switch configuration and modernized signal system at Queens Interlocking will add new routing options and improve operations through this vital segment of the Main Line corridor.",
+        "text_sha256": "sha256:b1308043ef5926252dcbe84ea7ec69b768b01e4d53ee002cc2d6f64daff51242"
+      }
+    ],
+    "validator_boundary": {
+      "current_valid_operates_on_corridor_shapes": [
+        "route->corridor"
+      ],
+      "selected_invalid_shape": "entity->corridor",
+      "interpretation": "The current table models a route operating on a corridor but omits the equally source-backed operator/agency-to-corridor form. Add only entity subjects; do not alter object kinds or admit project/source/claim/event/treatment/metric subjects."
+    }
+  },
+  "guards": {
+    "non_goals": [
+      "Do not retire, replace, or edit canonical data as part of this prep.",
+      "Do not apply the code patch in this artifact-only lane.",
+      "Do not rerun materialize, export-jsonl, full validate, DB publish, write, ask, schema, ontology-normalize, identity-review, canonicalize, campaign dedup, or any provider/profile-backed command.",
+      "Do not repeat next19's part_of_program project->claim cleanup.",
+      "Do not pick another timeline, published_by, implemented_by, or related_route data batch in this next20 triage.",
+      "Do not use this selected row to allow operates_on_corridor project->corridor or project->entity; project-to-corridor scope belongs under uses_corridor when source-backed.",
+      "Do not change route->corridor behavior for operates_on_corridor."
+    ],
+    "negative_endpoint_combos_that_must_remain_invalid": [
+      "operates_on_corridor project->corridor",
+      "operates_on_corridor project->entity",
+      "operates_on_corridor entity->entity",
+      "operates_on_corridor entity->route",
+      "operates_on_corridor source->corridor",
+      "operates_on_corridor claim->corridor",
+      "operates_on_corridor event->corridor",
+      "operates_on_corridor treatment_component->corridor",
+      "operates_on_corridor metric_claim->corridor",
+      "serves_route project->entity",
+      "serves_route project->project",
+      "has_claim claim->claim",
+      "has_treatment event->treatment_component",
+      "owned_by source->entity"
+    ]
+  },
+  "commands_run_read_only": [
+    "pwd && rg --files | rg '(^data/review_notes/codex-relation-rule-or-data-next19-prep\\\\.json$|data/canonical|data/submissions|packages/harness/src/mta|LOG\\\\.md)'",
+    "git status --short",
+    "sed -n '1,220p' data/review_notes/codex-relation-rule-or-data-next19-prep.json",
+    "rg -n 'unexpected_relation_endpoint_shape|endpoint_shape|relation.*endpoint|allowed.*relation|relation kind|part_of_program|has_treatment|has_claim|owned_by|operated_by' packages/harness/src/mta data -g '!data/transcripts/**'",
+    "sed -n '220,520p' data/review_notes/codex-relation-rule-or-data-next19-prep.json",
+    "sqlite3 'file:data/canonical.db?mode=ro' '.tables'",
+    "sqlite3 'file:data/canonical.db?mode=ro' '.schema'",
+    "sed -n '1,180p' LOG.md",
+    "rg -n 'RELATION_ENDPOINT_SHAPES|unexpected_relation_endpoint_shape|allowedRelation|relation.*shape|part_of_program|operates_on_corridor|serves_route' packages/pipeline/src packages/core/src packages/cli/src -g '*.ts'",
+    "sed -n '190,270p' packages/pipeline/src/records/relations.ts",
+    "sed -n '260,285p' packages/pipeline/src/validate.ts",
+    "find data/review_notes -maxdepth 1 -name 'codex-relation-rule-or-data-next*-prep.json' -printf '%f\\\\n' | sort -V | tail -25",
+    "find data/review_notes -maxdepth 1 -name 'codex-relation-cleanup-batch0*-prep.json' -printf '%f\\\\n' | sort -V | tail -20",
+    "sqlite3 'file:data/canonical.db?mode=ro' '<current endpoint-shape bucket inventory using RELATION_ENDPOINT_SHAPES>'",
+    "sqlite3 'file:data/canonical.db?mode=ro' '<current endpoint-shape issue rows with endpoints, payloads, evidence, and submissions>'",
+    "jq -c 'select(.page_number==1) | {page_number,block_id,raw_text,text_sha256}' raw/sources/meeting_doc_196911/blocks.jsonl",
+    "sqlite3 'file:data/canonical.db?mode=ro' '<selected relation and adjacent canonical context>'",
+    "test ! -e data/review_notes/codex-relation-rule-or-data-next20-prep.json && echo missing || echo exists"
+  ],
+  "commands_intentionally_not_run": [
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "materialize",
+    "export-jsonl",
+    "full validate",
+    "DB publish/repair",
+    "any command with --profile or provider-backed execution"
+  ],
+  "files_written": [
+    "data/review_notes/codex-relation-rule-or-data-next20-prep.json"
+  ],
+  "blockers": [],
+  "all_pass": true
+}

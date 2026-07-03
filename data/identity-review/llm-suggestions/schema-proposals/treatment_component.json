@@ -1,0 +1,1109 @@
+{
+  "schema_proposal_run_id": "2026-06-08T23-52-42-494Z_schema-proposal-run",
+  "proposed_at": "2026-06-08T23:55:44.857Z",
+  "observation_kind": "treatment_component",
+  "profile_name": "deepseek-pro",
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "audit_packet": {
+    "observation_kind": "treatment_component",
+    "submission_count": 149,
+    "accepted_count": 145,
+    "rejected_count": 4,
+    "declared_anchor_fields": [
+      "component_kind",
+      "component_type",
+      "description",
+      "locations",
+      "treatment_kind",
+      "treatment_type"
+    ],
+    "enum_candidates": [
+      {
+        "field": "location_text",
+        "occurrences": 5,
+        "accepted_occurrences": 5,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 5,
+        "coverage": 0.03,
+        "distinct_values": 4,
+        "accepted_distinct_values": 4,
+        "canonical_distinct_values": 4,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "13th Street and 5th Avenue",
+          "Along 14th Street",
+          "Six locations along 14th Street",
+          "Union Square area"
+        ],
+        "accepted_values": [
+          "13th Street and 5th Avenue",
+          "Along 14th Street",
+          "Six locations along 14th Street",
+          "Union Square area"
+        ],
+        "canonical_values_observed": [
+          "13th Street and 5th Avenue",
+          "Along 14th Street",
+          "Six locations along 14th Street",
+          "Union Square area"
+        ],
+        "value_counts": [
+          {
+            "value": "Along 14th Street",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "Along 14th Street",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "Along 14th Street",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "date_text",
+        "occurrences": 4,
+        "accepted_occurrences": 4,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 4,
+        "coverage": 0.03,
+        "distinct_values": 4,
+        "accepted_distinct_values": 4,
+        "canonical_distinct_values": 4,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "December 2021",
+          "June 2021",
+          "October 2021",
+          "proposed as of June 2022"
+        ],
+        "accepted_values": [
+          "December 2021",
+          "June 2021",
+          "October 2021",
+          "proposed as of June 2022"
+        ],
+        "canonical_values_observed": [
+          "December 2021",
+          "June 2021",
+          "October 2021",
+          "proposed as of June 2022"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "time_of_day",
+        "occurrences": 4,
+        "accepted_occurrences": 4,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 4,
+        "coverage": 0.03,
+        "distinct_values": 4,
+        "accepted_distinct_values": 4,
+        "canonical_distinct_values": 4,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "10pm-6am",
+          "6am-10pm",
+          "6am-10pm daily",
+          "all times"
+        ],
+        "accepted_values": [
+          "10pm-6am",
+          "6am-10pm",
+          "6am-10pm daily",
+          "all times"
+        ],
+        "canonical_values_observed": [
+          "10pm-6am",
+          "6am-10pm",
+          "6am-10pm daily",
+          "all times"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "corridor",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Archer Avenue",
+          "Jamaica Avenue"
+        ],
+        "accepted_values": [
+          "Archer Avenue",
+          "Jamaica Avenue"
+        ],
+        "canonical_values_observed": [
+          "Archer Avenue",
+          "Jamaica Avenue"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "direction",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "both directions",
+          "eastbound only"
+        ],
+        "accepted_values": [
+          "both directions",
+          "eastbound only"
+        ],
+        "canonical_values_observed": [
+          "both directions",
+          "eastbound only"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "local_access",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "allowed with next-right-turn requirement",
+          "none"
+        ],
+        "accepted_values": [
+          "allowed with next-right-turn requirement",
+          "none"
+        ],
+        "canonical_values_observed": [
+          "allowed with next-right-turn requirement",
+          "none"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "pickup_dropoff",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "allowed throughout except westbound between 147th Pl and Sutphin Blvd",
+          "permitted in westbound direction"
+        ],
+        "accepted_values": [
+          "allowed throughout except westbound between 147th Pl and Sutphin Blvd",
+          "permitted in westbound direction"
+        ],
+        "canonical_values_observed": [
+          "allowed throughout except westbound between 147th Pl and Sutphin Blvd",
+          "permitted in westbound direction"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "street",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Johnson Street",
+          "Smith Street / Jay Street"
+        ],
+        "accepted_values": [
+          "Johnson Street",
+          "Smith Street / Jay Street"
+        ],
+        "canonical_values_observed": [
+          "Johnson Street",
+          "Smith Street / Jay Street"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "through_trips_allowed",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "buses and emergency vehicles",
+          "buses, trucks, emergency vehicles"
+        ],
+        "accepted_values": [
+          "buses and emergency vehicles",
+          "buses, trucks, emergency vehicles"
+        ],
+        "canonical_values_observed": [
+          "buses and emergency vehicles",
+          "buses, trucks, emergency vehicles"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      }
+    ],
+    "additional_keys": [
+      {
+        "field": "access_points",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "north",
+          "south"
+        ],
+        "accepted_sample_values": [
+          "north",
+          "south"
+        ],
+        "canonical_sample_values": [
+          "north",
+          "south"
+        ]
+      },
+      {
+        "field": "allowed_vehicles",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Access-A-Ride vans",
+          "bicycles",
+          "buses",
+          "emergency vehicles",
+          "trucks with over six wheels"
+        ],
+        "accepted_sample_values": [
+          "Access-A-Ride vans",
+          "bicycles",
+          "buses",
+          "emergency vehicles",
+          "trucks with over six wheels"
+        ],
+        "canonical_sample_values": [
+          "Access-A-Ride vans",
+          "bicycles",
+          "buses",
+          "emergency vehicles",
+          "trucks with over six wheels"
+        ]
+      },
+      {
+        "field": "date_text_normalized",
+        "occurrences": 4,
+        "accepted_occurrences": 4,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 4,
+        "coverage": 0.03,
+        "accepted_coverage": 0.03,
+        "canonical_coverage": 0.03,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "days",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "7 days/week"
+        ],
+        "accepted_sample_values": [
+          "7 days/week"
+        ],
+        "canonical_sample_values": [
+          "7 days/week"
+        ]
+      },
+      {
+        "field": "end_date",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "2024-08-31"
+        ],
+        "accepted_sample_values": [
+          "2024-08-31"
+        ],
+        "canonical_sample_values": [
+          "2024-08-31"
+        ]
+      },
+      {
+        "field": "end_date_normalized",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "enforcement_authority",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "NYPD"
+        ],
+        "accepted_sample_values": [
+          "NYPD"
+        ],
+        "canonical_sample_values": [
+          "NYPD"
+        ]
+      },
+      {
+        "field": "enforcement_methods",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "automated cameras",
+          "traffic agents"
+        ],
+        "accepted_sample_values": [
+          "automated cameras",
+          "traffic agents"
+        ],
+        "canonical_sample_values": [
+          "automated cameras",
+          "traffic agents"
+        ]
+      },
+      {
+        "field": "features",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "free_text",
+        "sample_values": [
+          "dedicated bus lanes",
+          "left-turn lanes",
+          "limited stops",
+          "low-floor three-door articulated buses",
+          "new bus shelters",
+          "off-board fare payment",
+          "pedestrian refuge islands",
+          "transit signal priority"
+        ],
+        "accepted_sample_values": [
+          "dedicated bus lanes",
+          "left-turn lanes",
+          "limited stops",
+          "low-floor three-door articulated buses",
+          "new bus shelters",
+          "off-board fare payment",
+          "pedestrian refuge islands",
+          "transit signal priority"
+        ],
+        "canonical_sample_values": [
+          "dedicated bus lanes",
+          "left-turn lanes",
+          "limited stops",
+          "low-floor three-door articulated buses",
+          "new bus shelters",
+          "off-board fare payment",
+          "pedestrian refuge islands",
+          "transit signal priority"
+        ]
+      },
+      {
+        "field": "hours",
+        "occurrences": 4,
+        "accepted_occurrences": 4,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 4,
+        "coverage": 0.03,
+        "accepted_coverage": 0.03,
+        "canonical_coverage": 0.03,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "24/7",
+          "6 AM – 10 PM / 7 days a week",
+          "6 AM – 8 PM"
+        ],
+        "accepted_sample_values": [
+          "24/7",
+          "6 AM – 10 PM / 7 days a week",
+          "6 AM – 8 PM"
+        ],
+        "canonical_sample_values": [
+          "24/7",
+          "6 AM – 10 PM / 7 days a week",
+          "6 AM – 8 PM"
+        ]
+      },
+      {
+        "field": "left_turns",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "restricted except eastbound left at 153rd St"
+        ],
+        "accepted_sample_values": [
+          "restricted except eastbound left at 153rd St"
+        ],
+        "canonical_sample_values": [
+          "restricted except eastbound left at 153rd St"
+        ]
+      },
+      {
+        "field": "limits",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "150th St to 160th St",
+          "Sutphin Blvd to 168th St"
+        ],
+        "accepted_sample_values": [
+          "150th St to 160th St",
+          "Sutphin Blvd to 168th St"
+        ],
+        "canonical_sample_values": [
+          "150th St to 160th St",
+          "Sutphin Blvd to 168th St"
+        ]
+      },
+      {
+        "field": "locations_normalized",
+        "occurrences": 31,
+        "accepted_occurrences": 31,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 31,
+        "coverage": 0.21,
+        "accepted_coverage": 0.21,
+        "canonical_coverage": 0.21,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "normalized_location",
+        "occurrences": 5,
+        "accepted_occurrences": 5,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 5,
+        "coverage": 0.03,
+        "accepted_coverage": 0.03,
+        "canonical_coverage": 0.03,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "parking_loading",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "no parking nor loading eastbound between 150th St and 160th St"
+        ],
+        "accepted_sample_values": [
+          "no parking nor loading eastbound between 150th St and 160th St"
+        ],
+        "canonical_sample_values": [
+          "no parking nor loading eastbound between 150th St and 160th St"
+        ]
+      },
+      {
+        "field": "passenger_vehicles_allowed",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "boolean",
+        "accepted_value_kind": "boolean",
+        "canonical_value_kind": "boolean",
+        "classification": "boolean",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "restricted_to",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "bicycles",
+          "buses",
+          "trucks"
+        ],
+        "accepted_sample_values": [
+          "bicycles",
+          "buses",
+          "trucks"
+        ],
+        "canonical_sample_values": [
+          "bicycles",
+          "buses",
+          "trucks"
+        ]
+      },
+      {
+        "field": "restricted_vehicles",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "for-hire vehicles",
+          "passenger vehicles"
+        ],
+        "accepted_sample_values": [
+          "for-hire vehicles",
+          "passenger vehicles"
+        ],
+        "canonical_sample_values": [
+          "for-hire vehicles",
+          "passenger vehicles"
+        ]
+      },
+      {
+        "field": "start_date",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "2023-09-24"
+        ],
+        "accepted_sample_values": [
+          "2023-09-24"
+        ],
+        "canonical_sample_values": [
+          "2023-09-24"
+        ]
+      },
+      {
+        "field": "start_date_normalized",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "treatment_family",
+        "occurrences": 0,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 145,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 1,
+        "value_kind": "empty",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": [
+          "traffic_restriction",
+          "bus_lane",
+          "curb_management",
+          "bus_stop_or_boarding",
+          "enforcement",
+          "busway",
+          "pedestrian_or_accessibility",
+          "bus_priority"
+        ]
+      },
+      {
+        "field": "trucks_allowed",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "boolean",
+        "accepted_value_kind": "boolean",
+        "canonical_value_kind": "boolean",
+        "classification": "boolean",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      }
+    ]
+  },
+  "closure_policy": "deferred",
+  "closure_signals": [
+    {
+      "field": "location_text",
+      "closure_readiness": "open",
+      "occurrences": 5,
+      "accepted_occurrences": 5,
+      "canonical_occurrences": 5,
+      "coverage": 0.03
+    },
+    {
+      "field": "date_text",
+      "closure_readiness": "open",
+      "occurrences": 4,
+      "accepted_occurrences": 4,
+      "canonical_occurrences": 4,
+      "coverage": 0.03
+    },
+    {
+      "field": "time_of_day",
+      "closure_readiness": "open",
+      "occurrences": 4,
+      "accepted_occurrences": 4,
+      "canonical_occurrences": 4,
+      "coverage": 0.03
+    },
+    {
+      "field": "corridor",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "direction",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "local_access",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "pickup_dropoff",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "street",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "through_trips_allowed",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0.01
+    }
+  ],
+  "valid": true,
+  "schema_issues": [],
+  "warnings": [],
+  "proposal": {
+    "observation_kind": "treatment_component",
+    "field_proposals": [
+      {
+        "field": "location_text",
+        "decision": "free_text",
+        "rationale": "free-text location descriptions, not an enumeration"
+      },
+      {
+        "field": "date_text",
+        "decision": "free_text",
+        "rationale": "date descriptions, not a closed set"
+      },
+      {
+        "field": "time_of_day",
+        "decision": "needs_more_data",
+        "rationale": "only 4 occurrences, too sparse to determine enumeration; values are time spans that could be normalized later"
+      },
+      {
+        "field": "corridor",
+        "decision": "free_text",
+        "rationale": "corridor names are identifiers, not an enumeration"
+      },
+      {
+        "field": "direction",
+        "decision": "needs_more_data",
+        "rationale": "only 2 occurrences; potentially categorical but sample insufficient"
+      },
+      {
+        "field": "local_access",
+        "decision": "free_text",
+        "rationale": "free-text description of access rules"
+      },
+      {
+        "field": "pickup_dropoff",
+        "decision": "free_text",
+        "rationale": "free-text description of pickup/dropoff rules"
+      },
+      {
+        "field": "street",
+        "decision": "free_text",
+        "rationale": "street names are identifiers"
+      },
+      {
+        "field": "through_trips_allowed",
+        "decision": "free_text",
+        "rationale": "free-text description of vehicles allowed"
+      }
+    ],
+    "key_dispositions": [
+      {
+        "key": "access_points",
+        "disposition": "needs_more_data",
+        "rationale": "only 1 occurrence, too sparse to promote"
+      },
+      {
+        "key": "allowed_vehicles",
+        "disposition": "needs_more_data",
+        "rationale": "only 1 occurrence, too sparse to promote"
+      },
+      {
+        "key": "date_text_normalized",
+        "disposition": "promote_field",
+        "target": "date_text_normalized",
+        "rationale": "structured date object, useful as a field"
+      },
+      {
+        "key": "days",
+        "disposition": "needs_more_data",
+        "rationale": "only 1 occurrence, too sparse to promote"
+      },
+      {
+        "key": "end_date",
+        "disposition": "promote_field",
+        "target": "end_date",
+        "rationale": "standard ISO date string"
+      },
+      {
+        "key": "end_date_normalized",
+        "disposition": "promote_field",
+        "target": "end_date_normalized",
+        "rationale": "structured date object"
+      },
+      {
+        "key": "enforcement_authority",
+        "disposition": "needs_more_data",
+        "rationale": "only 1 occurrence, too sparse; may later become relation_context"
+      },
+      {
+        "key": "enforcement_methods",
+        "disposition": "needs_more_data",
+        "rationale": "only 1 occurrence, too sparse to promote"
+      },
+      {
+        "key": "features",
+        "disposition": "promote_field",
+        "target": "features",
+        "rationale": "list of treatment features, free text"
+      },
+      {
+        "key": "hours",
+        "disposition": "promote_field",
+        "target": "hours",
+        "rationale": "operating hours description, free text"
+      },
+      {
+        "key": "left_turns",
+        "disposition": "needs_more_data",
+        "rationale": "only 1 occurrence, too sparse to promote"
+      },
+      {
+        "key": "limits",
+        "disposition": "promote_field",
+        "target": "limits",
+        "rationale": "description of spatial limits, free text"
+      },
+      {
+        "key": "locations_normalized",
+        "disposition": "promote_field",
+        "target": "locations_normalized",
+        "rationale": "structured location object"
+      },
+      {
+        "key": "normalized_location",
+        "disposition": "promote_field",
+        "target": "normalized_location",
+        "rationale": "structured location object"
+      },
+      {
+        "key": "parking_loading",
+        "disposition": "needs_more_data",
+        "rationale": "only 1 occurrence, too sparse to promote"
+      },
+      {
+        "key": "passenger_vehicles_allowed",
+        "disposition": "promote_field",
+        "target": "passenger_vehicles_allowed",
+        "rationale": "boolean field, sparse but clear type"
+      },
+      {
+        "key": "restricted_to",
+        "disposition": "needs_more_data",
+        "rationale": "only 1 occurrence, too sparse to promote"
+      },
+      {
+        "key": "restricted_vehicles",
+        "disposition": "needs_more_data",
+        "rationale": "only 1 occurrence, too sparse to promote"
+      },
+      {
+        "key": "start_date",
+        "disposition": "promote_field",
+        "target": "start_date",
+        "rationale": "ISO date string"
+      },
+      {
+        "key": "start_date_normalized",
+        "disposition": "promote_field",
+        "target": "start_date_normalized",
+        "rationale": "structured date object"
+      },
+      {
+        "key": "treatment_family",
+        "disposition": "promote_enum",
+        "target": "treatment_family",
+        "rationale": "derived canonical field with 145 occurrences and clear categories, suitable as enum"
+      },
+      {
+        "key": "trucks_allowed",
+        "disposition": "promote_field",
+        "target": "trucks_allowed",
+        "rationale": "boolean field, sparse but clear type"
+      }
+    ],
+    "notes": "Most text fields are free-form descriptions; sparse boolean and date fields are promoted. treatment_family is a derived canonical field suitable for enum. Many fields need more data before a robust enum can be defined."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T23-54-48-543Z_3609302-e5532ff7_schema-proposal-run_treatment-component",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-54-48-552Z_2026-06-08T23-54-48-543Z_3609302-e5532ff7_schema-proposal-run_treatment-component.jsonl"
+}

@@ -1,0 +1,12 @@
+{
+  "run_id": "2026-06-10T22-56-13-021Z_1976810-4f20fb57_ingest_20100615-34th-transitway-cac-mtg-summary",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T01:06:49.189Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "assistant_text",
+  "parse_error": "JSON Parse error: Unexpected EOF",
+  "raw_response": "",
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-46-257Z_2111393-75788725_canonicalize_2026-06-10t22-56-13-021z-1976810-4f20fb57-ingest-20100615-34th-transitway-cac-mtg-summary-relation-linker"
+}

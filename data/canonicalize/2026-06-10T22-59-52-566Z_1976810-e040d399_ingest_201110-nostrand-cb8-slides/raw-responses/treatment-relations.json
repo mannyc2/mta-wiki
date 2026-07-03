@@ -1,0 +1,200 @@
+{
+  "run_id": "2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T02:05:01.163Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "nostrand-rogers-sbs-bus-lanes",
+        "local_observation_id": "treatment_bus_lanes_nostrand_rogers_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_bus-lanes-nostrand-rogers-2011",
+            "description": "Offset dedicated bus lane treatment on Nostrand/Rogers corridor as part of the Nostrand/Rogers SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb8_slides",
+                "block_id": "p007_c0003",
+                "source_quote": "Travel Lane Dedicated Bus Lane & Right Turn Lane: Offset bus lane allows buses to move quickly and preserves parking"
+              },
+              {
+                "source_id": "201110_nostrand_cb8_slides",
+                "block_id": "p007_c0004",
+                "source_quote": "Bus Lane is at right curb on Nostrand & Rogers between Eastern Pkwy & Empire Blvd, and on Bedford Ave between DeKalb & Flushing Aves"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence from CB8 slides page 7 explicitly describes the dedicated bus lane treatment on Nostrand & Rogers between Eastern Pkwy & Empire Blvd, and on Bedford Ave between DeKalb & Flushing Aves, which are part of the Nostrand/Rogers SBS project corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb8_slides",
+            "block_id": "p007_c0003",
+            "source_quote": "Travel Lane Dedicated Bus Lane & Right Turn Lane: Offset bus lane allows buses to move quickly and preserves parking"
+          },
+          {
+            "source_id": "201110_nostrand_cb8_slides",
+            "block_id": "p007_c0004",
+            "source_quote": "Bus Lane is at right curb on Nostrand & Rogers between Eastern Pkwy & Empire Blvd, and on Bedford Ave between DeKalb & Flushing Aves"
+          }
+        ]
+      },
+      {
+        "decision_id": "nostrand-rogers-sbs-bus-bulbs",
+        "local_observation_id": "treatment_bus_bulbs_nostrand_rogers_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_bus-bulbs-nostrand-rogers-2011",
+            "description": "SBS bus bulbs/platforms at Nostrand/Rogers corridor stations as part of the Nostrand/Rogers SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb8_slides",
+                "block_id": "p008_c0006",
+                "source_quote": "Bus Bulb:"
+              },
+              {
+                "source_id": "201110_nostrand_cb8_slides",
+                "block_id": "p008_c0007",
+                "source_quote": "Sidewalks at SBS stations will extend out to the bus lane."
+              },
+              {
+                "source_id": "201110_nostrand_cb8_slides",
+                "block_id": "p008_c0008",
+                "source_quote": "Buses will not need to pull in and out of traffic."
+              },
+              {
+                "source_id": "201110_nostrand_cb8_slides",
+                "block_id": "p008_c0009",
+                "source_quote": "Higher curbs on the SBS platform will allow for easier boarding."
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence from CB8 slides page 8 explicitly describes bus bulbs/SBS platforms at SBS stations (Empire Blvd, Rogers at Empire, Rogers at Clarkson, Nostrand at Empire) on the Nostrand/Rogers corridor as part of the SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb8_slides",
+            "block_id": "p008_c0006",
+            "source_quote": "Bus Bulb:"
+          },
+          {
+            "source_id": "201110_nostrand_cb8_slides",
+            "block_id": "p008_c0007",
+            "source_quote": "Sidewalks at SBS stations will extend out to the bus lane."
+          }
+        ]
+      },
+      {
+        "decision_id": "nostrand-rogers-sbs-pre-payment",
+        "local_observation_id": "treatment_pre_payment_nostrand_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_pre-payment-nostrand-2011",
+            "description": "Off-board fare payment (pre-payment) treatment on the Nostrand/Rogers SBS corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb8_slides",
+                "block_id": "p004_c0002",
+                "source_quote": "Pay before you board by dipping MetroCard at sidewalk MetroCard machine or inserting coins at sidewalk coin machine"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence from CB8 slides page 4 describes pre-payment via sidewalk MetroCard machine, which is the off-board fare collection treatment for the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb8_slides",
+            "block_id": "p004_c0002",
+            "source_quote": "Pay before you board by dipping MetroCard at sidewalk MetroCard machine or inserting coins at sidewalk coin machine"
+          }
+        ]
+      },
+      {
+        "decision_id": "nostrand-rogers-sbs-signal-priority",
+        "local_observation_id": "treatment_bus_signal_priority_sbs_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_bus-signal-priority-sbs-2011",
+            "description": "Bus Signal Priority treatment as an SBS feature for the Nostrand/Rogers corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb8_slides",
+                "block_id": "p003_c0002",
+                "source_quote": "Bus Signal Priority"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence from CB8 slides page 3 lists Bus Signal Priority as one of the SBS features for the Nostrand/Rogers corridor, explicitly connecting it to the SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb8_slides",
+            "block_id": "p003_c0002",
+            "source_quote": "Bus Signal Priority"
+          }
+        ]
+      },
+      {
+        "decision_id": "nostrand-rogers-sbs-empire-blvd-station",
+        "local_observation_id": "treatment_sbs_stations_empire_blvd_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_sbs-stations-empire-blvd-2011",
+            "description": "Empire Blvd SBS Station with local bus stop, new shelter, and fare collection machines as part of the Nostrand/Rogers SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb8_slides",
+                "block_id": "p008_c0002",
+                "source_quote": "Empire Blvd SBS Station"
+              },
+              {
+                "source_id": "201110_nostrand_cb8_slides",
+                "block_id": "p008_c0003",
+                "source_quote": "Local Bus Stop at curb"
+              },
+              {
+                "source_id": "201110_nostrand_cb8_slides",
+                "block_id": "p008_c0004",
+                "source_quote": "New Shelter"
+              },
+              {
+                "source_id": "201110_nostrand_cb8_slides",
+                "block_id": "p008_c0005",
+                "source_quote": "Fare Collection Machines"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence from CB8 slides page 8 explicitly describes the Empire Blvd SBS Station with local bus stop, new shelter, and fare collection machines, which is the station treatment for the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb8_slides",
+            "block_id": "p008_c0002",
+            "source_quote": "Empire Blvd SBS Station"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-01-59-973Z_2111393-d29c44bd_canonicalize_2026-06-10t22-59-52-566z-1976810-e040d399-ingest-201110-nostrand-cb8-slides-treatment-relations"
+}

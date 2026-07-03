@@ -1,0 +1,508 @@
+{
+  "note_id": "codex-identity-batch151-prep",
+  "batch": "identity151",
+  "created_at": "2026-06-23T07:24:10Z",
+  "scope": {
+    "global_kind": "route/corridor",
+    "included_kinds": [
+      "route",
+      "corridor"
+    ],
+    "selection_note": "Codex-only deterministic prep from current route/corridor canonical JSONL and current identity override guards. Chosen aliases avoid current target chains, existing merge aliases, do-not-merge pairs, stale route-branch aliases from identity147, stale identity144 aliases, and corridor segment traps."
+  },
+  "prepared_count": 8,
+  "proposed_aliases": [
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_42nd-st-cb4",
+      "target_id": "corridor_42nd-st-manhattan",
+      "canonical_id": "corridor_42nd-st-manhattan",
+      "confidence": "high",
+      "validator_duplicate_key": "corridor_42nd-st",
+      "reason": "Both current records identify the Manhattan 42nd Street bus-priority/project corridor. The alias is a one-source CB4 project-corridor record, while the target is the richer 42nd Street Corridor record with 12th Avenue to FDR Drive limits and matching 42nd Street Project Corridor alias.",
+      "validator_evidence": {
+        "shared_identity_keys": [
+          "corridor_42nd-st",
+          "corridor_42nd-st-project-corridor"
+        ],
+        "duplicate_issue": "Global corridor records corridor_42nd-st-cb4 and corridor_42nd-st-manhattan share identity key corridor_42nd-st.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_corridor_merges": false,
+          "target_is_current_corridor_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "42nd Street Project Corridor",
+          "payload_fields": {
+            "corridor_name": "42nd Street",
+            "borough": "Manhattan",
+            "limits": "42nd St"
+          },
+          "evidence_refs": [
+            "42nd_st_cb4_jun192019#p006_c0002",
+            "42nd_st_cb4_jun192019#p006_c0001"
+          ]
+        },
+        "target": {
+          "display_name": "42nd Street Corridor",
+          "payload_fields": {
+            "corridor_name": "42nd Street Corridor",
+            "street": "42nd Street",
+            "borough": "Manhattan",
+            "limits": "12th Avenue to FDR Drive"
+          },
+          "evidence_refs": [
+            "42nd_st_cb6_jun032019#p008_c0001",
+            "42nd_st_cb6_jun032019#p008_c0002",
+            "42nd_st_cb6_jun032019#p008_c0003"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_b82-kings-hwy-flatlands-ave",
+      "target_id": "corridor_b82-southern-brooklyn",
+      "canonical_id": "corridor_b82-southern-brooklyn",
+      "confidence": "high",
+      "validator_duplicate_key": "corridor_b82-southern-brooklyn",
+      "reason": "Both records identify the Southern Brooklyn B82 corridor. The alias names the B82 corridor along Kings Highway and Flatlands Avenue with Cropsey/Bay 37 to Canarsie/Pennsylvania Avenue scope; the target is the consolidated Southern Brooklyn B82 corridor with compatible Cropsey/Bay 37 to Flatlands/Kings Highway/Rockaway Parkway scope.",
+      "validator_evidence": {
+        "shared_identity_keys": [
+          "corridor_b82-southern-brooklyn",
+          "corridor_b82-southern-brooklyn-corridor",
+          "corridor_southern-brooklyn-b82-corridor"
+        ],
+        "duplicate_issue": "Global corridor records corridor_b82-kings-hwy-flatlands-ave and corridor_b82-southern-brooklyn share identity key corridor_b82-southern-brooklyn.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_corridor_merges": false,
+          "target_is_current_corridor_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "B82 Corridor - Kings Hwy and Flatlands Ave",
+          "payload_fields": {
+            "corridor_name": "B82 Corridor",
+            "street": "Kings Hwy and Flatlands Ave",
+            "borough": "Brooklyn",
+            "limits": "Cropsey Avenue/Bay 37 Street to Canarsie area",
+            "corridor_length_mi": 10
+          },
+          "evidence_refs": [
+            "2016_01_20_brt_southbrooklyn_cb18#p009_c0002",
+            "brt_south_brooklyn_b82_cb11_apr2017#p003_c0002",
+            "brt_south_brooklyn_b82_cb11_apr2017#p003_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "Southern Brooklyn B82 Corridor",
+          "payload_fields": {
+            "corridor_name": "Southern Brooklyn B82 corridor",
+            "borough": "Brooklyn",
+            "limits": "Cropsey Ave & Bay 37 St to Flatlands Ave / Kings Highway / Rockaway Pkwy",
+            "from": "Cropsey Ave & Bay 37 St",
+            "to": "Pennsylvania Ave in Starrett City"
+          },
+          "evidence_refs": [
+            "brt_south_brooklyn_b82_cb14_may2017#p003_c0002",
+            "brt_south_brooklyn_b82_cb14_may2017#p003_c0003",
+            "brt_south_brooklyn_b82_mar2018#p003_c0002"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_bx6-south-bronx-crosstown",
+      "target_id": "corridor_bx6-south-bronx",
+      "canonical_id": "corridor_bx6-south-bronx",
+      "confidence": "high",
+      "validator_duplicate_key": "corridor_bx6-south-bronx-corridor",
+      "reason": "Both records identify the Bx6 South Bronx corridor. The alias uses the fuller Crosstown wording and Riverside Drive West to Hunts Point limits; the target is the established Bx6 South Bronx corridor target with the same Hunts Point to Riverside Drive scope in reverse order.",
+      "validator_evidence": {
+        "shared_identity_keys": [
+          "corridor_bx6-south-bronx-corridor"
+        ],
+        "duplicate_issue": "Global corridor records corridor_bx6-south-bronx and corridor_bx6-south-bronx-crosstown share identity key corridor_bx6-south-bronx-corridor.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_corridor_merges": false,
+          "target_is_current_corridor_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Bx6 South Bronx Crosstown corridor",
+          "payload_fields": {
+            "corridor_name": "Bx6 South Bronx Crosstown",
+            "limits": "Riverside Drive West to Hunts Point",
+            "from": "Riverside Drive West",
+            "to": "Hunts Point",
+            "corridor_length_mi": 4.8
+          },
+          "evidence_refs": [
+            "ace_able_pdf_brt_bx6_river_terrace_houses_sept2016#p007_c0001",
+            "brt_bx6_south_bronx_cb10_june2016#p007_c0002",
+            "brt_bx6_south_bronx_cb10_june2016#p009_c0002"
+          ]
+        },
+        "target": {
+          "display_name": "Bx6 South Bronx corridor",
+          "payload_fields": {
+            "corridor_name": "Bx6 South Bronx corridor",
+            "limits": "Hunts Point to Riverside Drive",
+            "corridor_length_mi": 4.8,
+            "routes": [
+              "Bx6"
+            ]
+          },
+          "evidence_refs": [
+            "brt_bx6_cb12_apr2017#p003_c0001",
+            "brt_bx6_cb12_apr2017#p003_c0002",
+            "brt_bx6_south_bronx_june2016#p007_c0002"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_cross-bay-blvd-queens",
+      "target_id": "corridor_cross-bay-blvd-2015",
+      "canonical_id": "corridor_cross-bay-blvd-2015",
+      "confidence": "high",
+      "validator_duplicate_key": "corridor_cross-bay-blvd-north-of-165-av",
+      "reason": "Both records identify the same Cross Bay Boulevard segment north of 165 Av in Queens. The target direction avoids making the already-targeted corridor_cross-bay-blvd-2015 record into an alias and keeps the existing corridor_cross-bay-blvd-north-165-2015-05 merge chain flat.",
+      "validator_evidence": {
+        "shared_identity_keys": [
+          "corridor_cross-bay-blvd-north-of-165-av"
+        ],
+        "duplicate_issue": "Global corridor records corridor_cross-bay-blvd-2015 and corridor_cross-bay-blvd-queens share identity key corridor_cross-bay-blvd-north-of-165-av.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_corridor_merges": false,
+          "target_is_current_corridor_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Cross Bay Boulevard (north of 165 Av)",
+          "payload_fields": {
+            "corridor_name": "Cross Bay Boulevard",
+            "borough": "Queens",
+            "from": "north of 165 Av"
+          },
+          "evidence_refs": [
+            "2015_04_29_brt_woodhaven_dw3_presentation#p013_c0009",
+            "2015_04_29_brt_woodhaven_dw3_presentation#p016_c0001"
+          ]
+        },
+        "target": {
+          "display_name": "Cross Bay Boulevard (north of 165 Av)",
+          "payload_fields": {
+            "corridor_name": "Cross Bay Boulevard (north of 165 Av)",
+            "street": "Cross Bay Boulevard",
+            "borough": "Queens",
+            "limits": "north of 165 Av"
+          },
+          "evidence_refs": [
+            "2015_04_30_brt_woodhaven_dw4_presentation#p013_c0009",
+            "2015_04_30_brt_woodhaven_dw4_presentation#p016_c0008",
+            "2015_05_13_brt_woodhaven_cb6_presentation#p020_c0009"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_utica-ave-b46-2015-cac2",
+      "target_id": "corridor_utica-ave-b46-2015-04-06",
+      "canonical_id": "corridor_utica-ave-b46-2015-04-06",
+      "confidence": "high",
+      "validator_duplicate_key": "corridor_utica-ave-b46-corridor",
+      "reason": "Both records identify the Utica Avenue B46 corridor in Brooklyn. The alias is a CAC2 one-source record using the exact Utica Avenue B46 corridor label; the target is the richer Utica Avenue B46 corridor record that already consolidates later Utica Avenue/B46 SBS corridor evidence.",
+      "validator_evidence": {
+        "shared_identity_keys": [
+          "corridor_utica-ave-b46-corridor"
+        ],
+        "duplicate_issue": "Global corridor records corridor_utica-ave-b46-2015-04-06 and corridor_utica-ave-b46-2015-cac2 share identity key corridor_utica-ave-b46-corridor.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_corridor_merges": false,
+          "target_is_current_corridor_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Utica Avenue B46 corridor",
+          "payload_fields": {
+            "corridor_name": "Utica Avenue B46 corridor",
+            "street": "Utica Avenue",
+            "borough": "Brooklyn"
+          },
+          "evidence_refs": [
+            "2015_02_04_brt_utica_cac2_presentation#p006_c0002",
+            "2015_02_04_brt_utica_cac2_presentation#p006_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "The Utica Avenue B46 corridor",
+          "payload_fields": {
+            "corridor_name": "Utica Avenue",
+            "street": "Utica Avenue",
+            "borough": "Brooklyn",
+            "limits": "from Avenue U to DeKalb Avenue",
+            "routes": [
+              "B46"
+            ]
+          },
+          "evidence_refs": [
+            "2015_04_06_brt_uticaave_cb3_presentation#p003_c0002",
+            "brt_cb17_uticaave_apr2016#p003_c0002",
+            "brt_cb17_uticaave_apr2016#p033_c0002"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_meeting-doc-104751-long-beach-branch",
+      "target_id": "corridor_meeting-doc-109341-long-beach-branch",
+      "canonical_id": "corridor_meeting-doc-109341-long-beach-branch",
+      "confidence": "high",
+      "validator_duplicate_key": "corridor_long-beach-branch",
+      "reason": "Both current corridor records identify the LIRR Long Beach Branch. The alias gives the explicit Valley Stream to Long Beach limits, and the target names the same Long Beach Branch corridor for rail replacement and signal maintenance.",
+      "validator_evidence": {
+        "shared_identity_keys": [
+          "corridor_long-beach-branch"
+        ],
+        "duplicate_issue": "Global corridor records corridor_meeting-doc-104751-long-beach-branch and corridor_meeting-doc-109341-long-beach-branch share identity key corridor_long-beach-branch.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_corridor_merges": false,
+          "target_is_current_corridor_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Long Beach Branch (Valley Stream to Long Beach)",
+          "payload_fields": {
+            "corridor_name": "Long Beach Branch",
+            "limits": "between Valley Stream and Long Beach",
+            "from": "Valley Stream",
+            "to": "Long Beach"
+          },
+          "evidence_refs": [
+            "meeting_doc_104751#p001_c0007"
+          ]
+        },
+        "target": {
+          "display_name": "Long Beach Branch",
+          "payload_fields": {
+            "corridor_name": "Long Beach Branch"
+          },
+          "evidence_refs": [
+            "meeting_doc_109341#p002_c0004"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_q14-proposed-queens-redesign",
+      "target_id": "route_q14-queens",
+      "canonical_id": "route_q14-queens",
+      "confidence": "high",
+      "validator_duplicate_key": "route_q14",
+      "reason": "Both records identify the Queens Q14 local bus route. The alias is a proposed Queens redesign Q14 record, and the target is the current Q14 bus route record with the same route_id/route label and no conflicting service variant.",
+      "validator_evidence": {
+        "shared_identity_keys": [
+          "route_q14"
+        ],
+        "duplicate_issue": "Global route records route_q14-proposed-queens-redesign and route_q14-queens share identity key route_q14.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_route_merges": false,
+          "target_is_current_route_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Q14 (proposed)",
+          "payload_fields": {
+            "route_id": "Q14",
+            "borough": "Queens",
+            "route_type": "Local",
+            "service_variant": "local"
+          },
+          "evidence_refs": [
+            "meeting_doc_87961#p007_c0002"
+          ]
+        },
+        "target": {
+          "display_name": "Q14 bus route",
+          "payload_fields": {
+            "route_id": "Q14",
+            "route_name": "Q14",
+            "route_label": "Q14"
+          },
+          "evidence_refs": [
+            "queens_addendum_equity_evaluation_appendix_d#p013_c0004"
+          ]
+        }
+      }
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_bx40-42-2013-03-cb5",
+      "target_id": "route_bx40-bx42-tremont-cb5-2024",
+      "canonical_id": "route_bx40-bx42-tremont-cb5-2024",
+      "confidence": "high",
+      "validator_duplicate_key": "route_bx40",
+      "reason": "Both records identify the combined Bx40/Bx42 local bus route pair serving Tremont/Webster-area contexts. The alias uses Bx40/42 notation and local service variant; the target uses Bx40/Bx42 notation, lists both routes, and also normalizes to local service.",
+      "validator_evidence": {
+        "shared_identity_keys": [
+          "route_bx40"
+        ],
+        "duplicate_issue": "Global route records route_bx40-42-2013-03-cb5 and route_bx40-bx42-tremont-cb5-2024 share identity key route_bx40.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_route_merges": false,
+          "target_is_current_route_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Bx40/42",
+          "payload_fields": {
+            "route_id": "Bx40/42",
+            "route_label": "Bx40/42",
+            "route_type": "local",
+            "service_variant": "local",
+            "borough": "Bronx"
+          },
+          "evidence_refs": [
+            "2013_03_sbs_webster_bx_cb5#p033_c0003",
+            "2014_03_20_brt_webste_cb5#p024_c0002",
+            "tremont_ave_bus_priority_cab1_dec2022#p007_c0002"
+          ]
+        },
+        "target": {
+          "display_name": "Bx40/Bx42",
+          "payload_fields": {
+            "route_id": "Bx40/Bx42",
+            "route_type": "local",
+            "service_variant": "local",
+            "borough": "Bronx",
+            "routes": [
+              "Bx40",
+              "Bx42"
+            ]
+          },
+          "evidence_refs": [
+            "tremont_ave_bus_priority_cb5_mar2024#p006_c0002",
+            "meeting_doc_98311#p005_c0008"
+          ]
+        }
+      }
+    }
+  ],
+  "exclusions_and_guards": {
+    "explicit_user_guards": [
+      "Did not propose corridor_125th-street-manhattan -> corridor_125th-st-manhattan.",
+      "Did not repeat stale identity144 aliases.",
+      "Did not repeat stale route branch aliases already applied in identity147."
+    ],
+    "mechanical_guards_applied": [
+      "Alias and target must both be present as current record_id values in data/canonical/routes.jsonl or data/canonical/corridors.jsonl.",
+      "Alias must not already be a current aliases.route or aliases.corridor key in data/identity-overrides/merges.json.",
+      "Target must not be a current aliases.route or aliases.corridor key in data/identity-overrides/merges.json.",
+      "Alias and target must differ.",
+      "Pair must not appear in current data/identity-overrides/do-not-merge.json route or corridor pairs.",
+      "Route aliases with local/limited/SBS or predecessor/replacement conflicts were excluded unless both sides had compatible local route-pair identity.",
+      "Corridor aliases with only broad shared street names, partial overlapping limits, or combined-corridor/segment traps were excluded."
+    ],
+    "excluded_candidate_examples": [
+      {
+        "candidate": "corridor_bay-parkway-avenue-j-to-shore-pkwy -> corridor_bay-parkway-cropsey",
+        "reason": "Segment trap: the target combines Bay Parkway and Cropsey Avenue while the alias is only the Bay Parkway segment."
+      },
+      {
+        "candidate": "corridor_cross-bay-blvd-2015 -> corridor_cross-bay-blvd-queens",
+        "reason": "Direction would make corridor_cross-bay-blvd-2015, already a current merge target, into an alias. Proposed the reverse direction instead."
+      },
+      {
+        "candidate": "corridor_bx6-south-bronx -> corridor_bx6-south-bronx-crosstown",
+        "reason": "Direction would make corridor_bx6-south-bronx, already a current merge target, into an alias. Proposed corridor_bx6-south-bronx-crosstown -> corridor_bx6-south-bronx instead."
+      },
+      {
+        "candidate": "corridor_livingston-street-2023 <-> corridor_livingston-st",
+        "reason": "Deferred as a possible busway-vs-broader-corridor segment trap: Livingston Street alone may not be identical to Livingston St / Boerum Pl / Joralemon St."
+      },
+      {
+        "candidate": "route_125th-st-m60 -> route_125th-laguardia-sbs",
+        "reason": "Deferred because the alias is local M60 while the target is the M60 SBS cluster; local/SBS replacement context is not enough for identity."
+      }
+    ]
+  },
+  "command_evidence": [
+    {
+      "command": "jq bracket-access inspection of data/identity-overrides/merges.json and data/identity-overrides/do-not-merge.json",
+      "purpose": "Confirmed current route/corridor alias maps and do-not-merge pair maps, including target-chain risks."
+    },
+    {
+      "command": "bun --eval read-only validateRepo() filtered to duplicate_global_identity route/corridor messages",
+      "purpose": "Mined current route/corridor validator duplicate issues without running the forbidden full CLI validate command."
+    },
+    {
+      "command": "bun --eval read-only canonical JSONL pair summaries with identityKeysForRecord()",
+      "purpose": "Checked shared identity keys, payload fields, display names, source_ids, and evidence_refs for selected pairs."
+    },
+    {
+      "command": "bun --eval selected-pair guard check over routes.jsonl, corridors.jsonl, merges.json, do-not-merge.json, and identityKeysForRecord()",
+      "purpose": "Verified current record presence, alias-not-already-merged, target-not-alias, alias != target, no do-not-merge hit, and shared validator key status."
+    },
+    {
+      "command": "rg prior review-note and override search for selected aliases/targets",
+      "purpose": "Checked visible prior application/prep overlap and identified target-chain direction issues before finalizing proposal directions."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "No provider-backed commands.",
+    "No materialize.",
+    "No export-jsonl.",
+    "No full CLI validate.",
+    "No write, ask, schema, ontology, identity-review, canonicalize, campaign dedup, or provider-profile agent commands.",
+    "No edits to data/identity-overrides/merges.json.",
+    "No edits to data/identity-overrides/do-not-merge.json.",
+    "No edits to LOG.md, manifest, canonical JSONL, wiki pages, database, submissions, generated outputs, or submission overrides."
+  ],
+  "blocker": null
+}

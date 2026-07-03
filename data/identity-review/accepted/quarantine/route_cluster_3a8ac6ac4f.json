@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "route_cluster_3a8ac6ac4f",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_3a8ac6ac4f.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_3a8ac6ac4f.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "quarantined",
+  "quarantine": {
+    "blocker": "suggestion marks ambiguous: route_b46-local-2012, route_b46-local-limited-20110915, route_utica-ave-sbs",
+    "note": "Partial: structurally clean actions were auto-accepted in the decisions file with the same cluster_id."
+  },
+  "original_merge_groups": [],
+  "original_do_not_merge": []
+}

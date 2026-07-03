@@ -1,0 +1,26 @@
+{
+  "run_id": "2026-06-30T05-23-20-552Z_identity-review",
+  "generated_at": "2026-06-30T05:23:20.552Z",
+  "output_dir": "data/identity-review",
+  "paths": {
+    "latest": "data/identity-review/latest.json",
+    "records_jsonl": "data/identity-review/records.jsonl",
+    "candidate_edges_jsonl": "data/identity-review/candidate_edges.jsonl",
+    "clusters_jsonl": "data/identity-review/clusters.jsonl",
+    "validation_issues_jsonl": "data/identity-review/validation_issues.jsonl",
+    "packets_dir": "data/identity-review/packets",
+    "llm_suggestions_dir": "data/identity-review/llm-suggestions",
+    "accepted_dir": "data/identity-review/accepted"
+  },
+  "counts": {
+    "total_global_records": 4298,
+    "review_records": 0,
+    "candidate_edges": 0,
+    "clusters": 0,
+    "packet_count": 0,
+    "validation_issues": 0,
+    "duplicate_global_identity_issues": 0,
+    "relation_endpoint_shape_issues": 0
+  },
+  "top_clusters": []
+}

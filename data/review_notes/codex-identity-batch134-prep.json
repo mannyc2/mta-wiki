@@ -1,0 +1,185 @@
+{
+  "batch_id": "identity134",
+  "global_kind": "project",
+  "prepared_count": 10,
+  "proposed_aliases": [
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-east-side-access-support",
+      "target_id": "project_east-side-access-support",
+      "confidence": "high",
+      "reason": "Same East Side Access Support Projects durable record. Both records use the exact project name, describe LIRR support projects related to East Side Access readiness, and cite committee/work-plan evidence for the same ongoing support-project topic.",
+      "evidence_refs": [
+        "meeting_doc_104756#p005_c0022",
+        "meeting_doc_104756#p005_c0023",
+        "meeting_doc_102691#p006_c0004",
+        "meeting_doc_102721#p002_c0008",
+        "meeting_doc_111736#p004_c0022"
+      ],
+      "guard_notes": "Project guard satisfied: exact project title and matching support-project scope. Treat as an alias for the durable East Side Access Support Projects record, not as a separate phase. Exact alias->target pair is absent from merges, absent from project do-not-merge, and absent from visible prior identity prep artifacts."
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-68196-hhb-electrical",
+      "target_id": "project_hh36-electrical-power-resiliency",
+      "confidence": "high",
+      "reason": "Same HH-36 Henry Hudson Bridge electrical power resiliency project. Both records name Electrical Power Resiliency, Utility and Building Improvements at the Henry Hudson Bridge; the alias evidence includes Contract HH-36, E-J Electric, and the same design-build scope later represented by the target.",
+      "evidence_refs": [
+        "meeting_doc_68196#p051_c0008",
+        "meeting_doc_68196#p051_c0009",
+        "meeting_doc_68196#p055_c0007",
+        "meeting_doc_72536#p009_c0001",
+        "meeting_doc_72536#p009_c0003"
+      ],
+      "guard_notes": "Project guard satisfied: same bridge, same contract/scope, same design-build public works project. Status wording differs only by document time around award. Exact alias->target pair is absent from merges, absent from project do-not-merge, and absent from visible prior identity prep artifacts."
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_vnx4-vnb-safety-fence-44201",
+      "target_id": "project_vn-x4-operational-improvements-safety-fence",
+      "confidence": "high",
+      "reason": "Same VN-X4 Verrazzano-Narrows Bridge safety fence capital commitment. Both records use the VN-X4/VN project name and identify operational improvements consisting of safety fence work at the Verrazzano-Narrows Bridge.",
+      "evidence_refs": [
+        "meeting_doc_44201#p049_c0003",
+        "meeting_doc_42391#p047_c0003"
+      ],
+      "guard_notes": "Project guard satisfied: same contract/project code family, same VNB location, and same safety-fence scope. Exact alias->target pair is absent from merges, absent from project do-not-merge, and absent from visible prior identity prep artifacts."
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-coney-island-flood",
+      "target_id": "project_coney-island-yard-flood-mitigation",
+      "confidence": "high",
+      "reason": "Same Coney Island Yard Complex Long Term Flood Mitigation project. Both records use the exact title and describe construction of a perimeter flood wall at the Coney Island Yard Complex extending approximately 30 feet below grade and 12-15 feet above grade.",
+      "evidence_refs": [
+        "meeting_doc_104706#p024_c0003",
+        "meeting_doc_104706#p024_c0007",
+        "meeting_doc_104701#p071_c0003",
+        "meeting_doc_104701#p071_c0006",
+        "meeting_doc_104701#p071_c0007"
+      ],
+      "guard_notes": "Project guard satisfied: exact project title, same Brooklyn/Coney Island Yard location, and same flood-wall scope. Later PLC/signal wiring fields on the target appear to be modifications within the same flood mitigation project, not a separate durable project. Exact alias->target pair is absent from merges, absent from project do-not-merge, and absent from visible prior identity prep artifacts."
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-115211-gun-hill-road",
+      "target_id": "project_gun-hill-road-development",
+      "confidence": "high",
+      "reason": "Same Gun Hill Road Development real estate project. Both records identify the 1824 Allerton Avenue Bronx development, Madison Capital conditional designation, a warehouse/distribution facility, and an NYCT electric bus charging facility.",
+      "evidence_refs": [
+        "meeting_doc_115211#p039_c0008",
+        "meeting_doc_115211#p040_c0008",
+        "meeting_doc_115331#p057_c0008",
+        "meeting_doc_115331#p059_c0012"
+      ],
+      "guard_notes": "Project guard satisfied: same title, same address/location, same developer/designation, and same warehouse plus NYCT charging-facility scope. Exact alias->target pair is absent from merges, absent from project do-not-merge, and absent from visible prior identity prep artifacts."
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_lirr-long-island-city-flood-wall",
+      "target_id": "project_lirr-lic-flood-wall",
+      "confidence": "high",
+      "reason": "Same LIRR Long Island City Flood Wall Project. Both records describe the perimeter flood wall for the Long Island City station/yard with nine flood gates, three pumping stations, backup generators, relocated utilities, and near/substantial completion status.",
+      "evidence_refs": [
+        "meeting_doc_160096#p005_c0005",
+        "meeting_doc_157676#p022_c0003",
+        "meeting_doc_157676#p022_c0004",
+        "meeting_doc_157676#p022_c0005",
+        "meeting_doc_160431#p005_c0005"
+      ],
+      "guard_notes": "Project guard satisfied: same LIRR Long Island City yard/station location and same flood-wall components. Exact alias->target pair is absent from merges, absent from project do-not-merge, and absent from visible prior identity prep artifacts."
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_mtabc-50-low-floor-buses",
+      "target_id": "project_mta-bus-50-low-floor-diesel-buses",
+      "confidence": "high",
+      "reason": "Same procurement of 50 low-floor 40-foot diesel buses for MTA Bus Company/MTABC. Both records include the option for 85 additional buses, replacement of aging buses, and Queens MTABC depot operation.",
+      "evidence_refs": [
+        "meeting_doc_26926#p034_c0007",
+        "meeting_doc_26926#p034_c0012",
+        "meeting_doc_26926#p035_c0006",
+        "meeting_doc_26886#p058_c0005",
+        "meeting_doc_26886#p059_c0006"
+      ],
+      "guard_notes": "Project guard satisfied: same procurement quantity, bus type, owner/operator, option quantity, and Queens deployment context. Exact alias->target pair is absent from merges, absent from project do-not-merge, and absent from visible prior identity prep artifacts."
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_railcar-acceptance-testing-facility",
+      "target_id": "project_railcar-testing-facility-bk",
+      "confidence": "high",
+      "reason": "Same Railcar Acceptance and Testing Facility in Brooklyn/Sunset Park. The alias is the opened facility record; the target is the design-build/contract record for the same new NYCT facility to test and accept rail cars.",
+      "evidence_refs": [
+        "nyct_key_performance_metrics_doc194001#p005_c0002",
+        "meeting_doc_102911#p042_c0005",
+        "meeting_doc_102911#p042_c0007",
+        "meeting_doc_102911#p042_c0009",
+        "meeting_doc_102776#p003_c0002"
+      ],
+      "guard_notes": "Project guard satisfied: same facility title, same Brooklyn location, and same purpose of accepting/testing new railcars. Status differs by document time (awarded versus opened), not by durable project identity. Exact alias->target pair is absent from merges, absent from project do-not-merge, and absent from visible prior identity prep artifacts."
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-201761-railcar-acceptance-testing-facility",
+      "target_id": "project_railcar-testing-facility-bk",
+      "confidence": "high",
+      "reason": "Same Railcar Acceptance and Testing Facility in Brooklyn. This meeting-doc record reports the opening of the first-ever facility to test/process new subway cars, matching the target's design-build record for the Brooklyn railcar acceptance/testing facility.",
+      "evidence_refs": [
+        "meeting_doc_201761#p017_c0005",
+        "meeting_doc_102911#p042_c0005",
+        "meeting_doc_102911#p042_c0007",
+        "meeting_doc_102776#p003_c0002"
+      ],
+      "guard_notes": "Project guard satisfied: same facility title, same Brooklyn location, and same durable capital facility. Status differs by document time (opened versus awarded), not by durable project identity. Exact alias->target pair is absent from merges, absent from project do-not-merge, and absent from visible prior identity prep artifacts."
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-140516-summer-saturdays",
+      "target_id": "project_summer-saturdays-pilot",
+      "confidence": "high",
+      "reason": "Same Summer Saturdays fare pilot/discount program. Both records describe a July 6-August 31, 2024 Saturday program allowing monthly pass holders on LIRR/Metro-North to travel to any destination on the issuing railroad with up to two additional people for $1 each.",
+      "evidence_refs": [
+        "meeting_doc_140516#p002_c0004",
+        "meeting_doc_140286#p007_c0005",
+        "meeting_doc_140286#p007_c0006",
+        "meeting_doc_140286#p022_c0006"
+      ],
+      "guard_notes": "Project guard satisfied for a fare-program project record: same program name, same date range, same railroads, and same fare terms. Exact alias->target pair is absent from merges, absent from project do-not-merge, and absent from visible prior identity prep artifacts."
+    }
+  ],
+  "commands_run": [
+    "pwd && rg --files data packages wiki raw | rg '(^data/(canonical|review_notes|materialized)|merges\\\\.json$|do-not-merge|identity|project|source)'",
+    "git status --short",
+    "ls -la data/review_notes data/canonical 2>/dev/null",
+    "jq 'keys, .batch_id, .global_kind, .prepared_count, (.proposed_aliases[0] // null)' data/review_notes/codex-identity-batch132-prep.json",
+    "jq 'keys' data/identity-overrides/merges.json && jq 'keys' data/identity-overrides/do-not-merge.json",
+    "head -n 3 data/canonical/projects.jsonl | jq '.'",
+    "jq '.aliases | to_entries[0:5]' data/identity-overrides/merges.json",
+    "jq '.pairs[0:10]' data/identity-overrides/do-not-merge.json",
+    "jq -r '.proposed_aliases[]? | select((.global_kind // \"project\") == \"project\") | [.alias_id,.target_id] | @tsv' data/review_notes/codex-identity-batch*.json 2>/dev/null | tail -n 80",
+    "jq '.pairs | type, keys[0:10], .project[0:5]?' data/identity-overrides/do-not-merge.json",
+    "bun eval '<read-only project duplicate clustering script>'",
+    "bun --eval '<read-only normalized project duplicate clustering script>'",
+    "bun --eval '<read-only exact-name project duplicate scoring script>'",
+    "bun --eval '<read-only selected project record inspection script>'",
+    "bun --eval '<read-only final guard check for selected alias-target pairs>'"
+  ],
+  "commands_not_run": [
+    "provider-backed commands",
+    "agent harness commands",
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "commands with --profile",
+    "commands with provider-backed profiles",
+    "materialize",
+    "export-jsonl",
+    "full validate",
+    "commands mutating canonical JSONL, wiki pages, DB, LOG.md, manifest, retired submissions, submissions, or merges.json"
+  ]
+}

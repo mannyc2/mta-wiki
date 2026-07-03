@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T22-56-13-157Z_1976810-9e0fff70_ingest_2011-03-07-brt-nostrand-cb3",
+  "generated_at": "2026-06-11T01:06:50.336Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 33,
+  "validated_decision_count": 30,
+  "quarantined_decision_count": 3,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T22-56-13-157Z_1976810-9e0fff70_ingest_2011-03-07-brt-nostrand-cb3",
+    "manifest": "data/canonicalize/2026-06-10T22-56-13-157Z_1976810-9e0fff70_ingest_2011-03-07-brt-nostrand-cb3/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T22-56-13-157Z_1976810-9e0fff70_ingest_2011-03-07-brt-nostrand-cb3/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T22-56-13-157Z_1976810-9e0fff70_ingest_2011-03-07-brt-nostrand-cb3/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T22-56-13-157Z_1976810-9e0fff70_ingest_2011-03-07-brt-nostrand-cb3/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 3,
+      "validated_decision_count": 3,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-157Z_1976810-9e0fff70_ingest_2011-03-07-brt-nostrand-cb3/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-47-658Z_2111393-beacca73_canonicalize_2026-06-10t22-56-13-157z-1976810-9e0fff70-ingest-2011-03-07-brt-nostrand-cb3-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 4,
+      "validated_decision_count": 2,
+      "quarantined_decision_count": 2,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-157Z_1976810-9e0fff70_ingest_2011-03-07-brt-nostrand-cb3/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-47-658Z_2111393-c136c79e_canonicalize_2026-06-10t22-56-13-157z-1976810-9e0fff70-ingest-2011-03-07-brt-nostrand-cb3-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 3,
+      "validated_decision_count": 2,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-157Z_1976810-9e0fff70_ingest_2011-03-07-brt-nostrand-cb3/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-47-658Z_2111393-d2fb4002_canonicalize_2026-06-10t22-56-13-157z-1976810-9e0fff70-ingest-2011-03-07-brt-nostrand-cb3-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 3,
+      "validated_decision_count": 3,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-157Z_1976810-9e0fff70_ingest_2011-03-07-brt-nostrand-cb3/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-47-658Z_2111393-9dde0a73_canonicalize_2026-06-10t22-56-13-157z-1976810-9e0fff70-ingest-2011-03-07-brt-nostrand-cb3-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 6,
+      "validated_decision_count": 6,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-157Z_1976810-9e0fff70_ingest_2011-03-07-brt-nostrand-cb3/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-47-658Z_2111393-bcef5931_canonicalize_2026-06-10t22-56-13-157z-1976810-9e0fff70-ingest-2011-03-07-brt-nostrand-cb3-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 14,
+      "validated_decision_count": 14,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-157Z_1976810-9e0fff70_ingest_2011-03-07-brt-nostrand-cb3/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-47-658Z_2111393-5706791a_canonicalize_2026-06-10t22-56-13-157z-1976810-9e0fff70-ingest-2011-03-07-brt-nostrand-cb3-relation-linker"
+    }
+  ]
+}

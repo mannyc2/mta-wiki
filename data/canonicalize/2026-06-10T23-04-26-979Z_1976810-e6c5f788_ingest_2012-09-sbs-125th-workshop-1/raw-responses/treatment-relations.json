@@ -1,0 +1,195 @@
+{
+  "run_id": "2026-06-10T23-04-26-979Z_1976810-e6c5f788_ingest_2012-09-sbs-125th-workshop-1",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T02:51:30.209Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "relate-faster-fare-collection",
+        "local_observation_id": "treatment_faster_fare_collection_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "treatment_faster-fare-collection-125th",
+            "description": "Faster Fare Collection treatment for 125th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_09_sbs_125th_workshop_1",
+                "block_id": "p005_c0003",
+                "source_quote": "Faster Fare Collection"
+              }
+            ]
+          }
+        ],
+        "rationale": "The 2012 workshop presentation explicitly proposes 'Faster Fare Collection' as a treatment on 125th Street, discussed under 'Crosstown Buses on 125th Street / Making Buses Faster'.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_sbs_125th_workshop_1",
+            "block_id": "p005_c0003",
+            "source_quote": "Faster Fare Collection"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-dedicated-bus-lanes",
+        "local_observation_id": "treatment_dedicated_bus_lanes_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "treatment_dedicated-bus-lanes-125th",
+            "description": "Dedicated Bus Lanes treatment for 125th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_09_sbs_125th_workshop_1",
+                "block_id": "p006_c0003",
+                "source_quote": "Dedicated Bus Lanes"
+              },
+              {
+                "source_id": "2012_09_sbs_125th_workshop_1",
+                "block_id": "p006_c0005",
+                "source_quote": "Curbside"
+              },
+              {
+                "source_id": "2012_09_sbs_125th_workshop_1",
+                "block_id": "p006_c0007",
+                "source_quote": "Offset"
+              }
+            ]
+          }
+        ],
+        "rationale": "The 2012 workshop presentation explicitly proposes 'Dedicated Bus Lanes' as a treatment on 125th Street, discussed under 'Crosstown Buses on 125th Street / Making Buses Faster', with curbside and offset configurations shown.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_sbs_125th_workshop_1",
+            "block_id": "p006_c0003",
+            "source_quote": "Dedicated Bus Lanes"
+          },
+          {
+            "source_id": "2012_09_sbs_125th_workshop_1",
+            "block_id": "p006_c0005",
+            "source_quote": "Curbside"
+          },
+          {
+            "source_id": "2012_09_sbs_125th_workshop_1",
+            "block_id": "p006_c0007",
+            "source_quote": "Offset"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-signal-priority",
+        "local_observation_id": "treatment_signal_priority_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "treatment_signal-priority-125th",
+            "description": "Signal Priority for Buses treatment for 125th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_09_sbs_125th_workshop_1",
+                "block_id": "p008_c0003",
+                "source_quote": "Signal Priority for Buses"
+              }
+            ]
+          }
+        ],
+        "rationale": "The 2012 workshop presentation explicitly proposes 'Signal Priority for Buses' as a treatment on 125th Street, discussed under 'Crosstown Buses on 125th Street / Making Buses Faster'.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_sbs_125th_workshop_1",
+            "block_id": "p008_c0003",
+            "source_quote": "Signal Priority for Buses"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-improved-passenger-info",
+        "local_observation_id": "treatment_improved_passenger_info_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "treatment_improved-passenger-info-125th",
+            "description": "Improved Passenger Information treatment for 125th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_09_sbs_125th_workshop_1",
+                "block_id": "p009_c0003",
+                "source_quote": "Improved Passenger Information"
+              },
+              {
+                "source_id": "2012_09_sbs_125th_workshop_1",
+                "block_id": "p009_c0004",
+                "source_quote": "MTA Bus Time website interface"
+              }
+            ]
+          }
+        ],
+        "rationale": "The 2012 workshop presentation explicitly proposes 'Improved Passenger Information' as a treatment on 125th Street, discussed under 'Crosstown Buses on 125th Street / Making Buses Faster', accompanied by an MTA Bus Time screenshot.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_sbs_125th_workshop_1",
+            "block_id": "p009_c0003",
+            "source_quote": "Improved Passenger Information"
+          },
+          {
+            "source_id": "2012_09_sbs_125th_workshop_1",
+            "block_id": "p009_c0004",
+            "source_quote": "MTA Bus Time website interface"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate-limited-stops",
+        "local_observation_id": "treatment_limited_stops_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "treatment_limited-stops-125th_3",
+            "description": "Limited Stops treatment for 125th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_09_sbs_125th_workshop_1",
+                "block_id": "p007_c0003",
+                "source_quote": "Limited Stops"
+              },
+              {
+                "source_id": "2012_09_sbs_125th_workshop_1",
+                "block_id": "p007_c0004",
+                "source_quote": "the bottom route is labeled 'Limited' in a green box and is shown as a solid green line with 4 white circular stops"
+              }
+            ]
+          }
+        ],
+        "rationale": "The 2012 workshop presentation explicitly proposes 'Limited Stops' as a treatment on 125th Street, discussed under 'Crosstown Buses on 125th Street / Making Buses Faster', with a diagram showing limited-stop routing.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_sbs_125th_workshop_1",
+            "block_id": "p007_c0003",
+            "source_quote": "Limited Stops"
+          },
+          {
+            "source_id": "2012_09_sbs_125th_workshop_1",
+            "block_id": "p007_c0004",
+            "source_quote": "the bottom route is labeled 'Limited' in a green box and is shown as a solid green line with 4 white circular stops"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-48-35-043Z_2111393-171dae27_canonicalize_2026-06-10t23-04-26-979z-1976810-e6c5f788-ingest-2012-09-sbs-125th-workshop-1-treatment-relations"
+}

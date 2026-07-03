@@ -1,0 +1,291 @@
+{
+  "run_id": "2026-06-10T22-56-13-211Z_1976810-4d6654f7_ingest_2011-34th-sbs-comments-on-proposed-design",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T01:21:03.375Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "rel-offset-bus-lane-34th",
+        "local_observation_id": "treatment_offset_bus_lane_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "treatment_offset-bus-lane-34th-st",
+            "description": "Offset bus lane is a treatment on the 34th Street busway corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p007_c0008",
+                "source_quote": "Response: The offset bus lane will be in operations 24 hours, seven days a week and the curbside bus lane will operate 7 AM to 7 PM on weekdays."
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_offset-bus-lane-34th-st",
+            "description": "Offset bus lane is part of the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p007_c0008",
+                "source_quote": "Response: The offset bus lane will be in operations 24 hours, seven days a week and the curbside bus lane will operate 7 AM to 7 PM on weekdays."
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p007_c0008 is a direct response about the offset bus lane operating hours as part of the 34th Street SBS proposed design, explicitly confirming it as both a corridor treatment and a project component.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p007_c0008",
+            "source_quote": "Response: The offset bus lane will be in operations 24 hours, seven days a week and the curbside bus lane will operate 7 AM to 7 PM on weekdays."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-curbside-bus-lane-34th",
+        "local_observation_id": "treatment_curbside_bus_lane_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "treatment_curbside-bus-lane-34th-st",
+            "description": "Curbside bus lane is a treatment on the 34th Street busway corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p007_c0008",
+                "source_quote": "Response: The offset bus lane will be in operations 24 hours, seven days a week and the curbside bus lane will operate 7 AM to 7 PM on weekdays."
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_curbside-bus-lane-34th-st",
+            "description": "Curbside bus lane is part of the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p007_c0008",
+                "source_quote": "Response: The offset bus lane will be in operations 24 hours, seven days a week and the curbside bus lane will operate 7 AM to 7 PM on weekdays."
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p007_c0008 explicitly states the curbside bus lane operating hours as part of the 34th Street SBS proposed design response.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p007_c0008",
+            "source_quote": "Response: The offset bus lane will be in operations 24 hours, seven days a week and the curbside bus lane will operate 7 AM to 7 PM on weekdays."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-off-board-fare-34th",
+        "local_observation_id": "treatment_off_board_fare_collection_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "treatment_off-board-fare-collection-34th-st_2",
+            "description": "Off-board fare collection is a treatment on the 34th Street busway corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p008_c0007",
+                "source_quote": "• Comment: Visible signage should be provided at the bus stops notifying passengers that they need to pay their fares prior to entering the SBS bus. Also proper lighting needs to be provided at the fare machines."
+              },
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p008_c0008",
+                "source_quote": "Response: Visible signage will be provided at bus stops notifying passengers that they need to pay their fares prior to boarding a bus. Prior to and during the first weeks of off board fare collection, NYCT and DOT will conduct extensive outreach to M34 and M16 riders to inform them of the new system and to provide customer assistance."
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_off-board-fare-collection-34th-st_2",
+            "description": "Off-board fare collection is part of the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p008_c0007",
+                "source_quote": "• Comment: Visible signage should be provided at the bus stops notifying passengers that they need to pay their fares prior to entering the SBS bus. Also proper lighting needs to be provided at the fare machines."
+              },
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p008_c0008",
+                "source_quote": "Response: Visible signage will be provided at bus stops notifying passengers that they need to pay their fares prior to boarding a bus. Prior to and during the first weeks of off board fare collection, NYCT and DOT will conduct extensive outreach to M34 and M16 riders to inform them of the new system and to provide customer assistance."
+              }
+            ]
+          }
+        ],
+        "rationale": "Blocks p008_c0007 and p008_c0008 discuss public comment and agency response about off-board fare collection signage and outreach for the 34th Street SBS, confirming it as a treatment component of the project and corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p008_c0007",
+            "source_quote": "• Comment: Visible signage should be provided at the bus stops notifying passengers that they need to pay their fares prior to entering the SBS bus. Also proper lighting needs to be provided at the fare machines."
+          },
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p008_c0008",
+            "source_quote": "Response: Visible signage will be provided at bus stops notifying passengers that they need to pay their fares prior to boarding a bus. Prior to and during the first weeks of off board fare collection, NYCT and DOT will conduct extensive outreach to M34 and M16 riders to inform them of the new system and to provide customer assistance."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-bulbs-34th",
+        "local_observation_id": "treatment_bus_bulbs_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "treatment_bus-bulbs-34th-st_3",
+            "description": "Bus bulbs are a treatment on the 34th Street busway corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p007_c0018",
+                "source_quote": "• Comment: The proposed bus bulbs (sidewalk extensions) will make driving on the corridor difficult, especially when making turns."
+              },
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p008_c0004",
+                "source_quote": "Response: the bus bulbs will be designed so that all vehicles, including trucks, buses, and emergency vehicles, can safely make turns."
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_bus-bulbs-34th-st_3",
+            "description": "Bus bulbs are part of the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p007_c0018",
+                "source_quote": "• Comment: The proposed bus bulbs (sidewalk extensions) will make driving on the corridor difficult, especially when making turns."
+              },
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p008_c0004",
+                "source_quote": "Response: the bus bulbs will be designed so that all vehicles, including trucks, buses, and emergency vehicles, can safely make turns."
+              }
+            ]
+          }
+        ],
+        "rationale": "Blocks p007_c0018 and p008_c0004 contain a public comment and official response about proposed bus bulbs on the 34th Street corridor as part of the SBS design.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p007_c0018",
+            "source_quote": "• Comment: The proposed bus bulbs (sidewalk extensions) will make driving on the corridor difficult, especially when making turns."
+          },
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p008_c0004",
+            "source_quote": "Response: the bus bulbs will be designed so that all vehicles, including trucks, buses, and emergency vehicles, can safely make turns."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-camera-enforcement-34th",
+        "local_observation_id": "treatment_bus_lane_camera_enforcement_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "treatment_bus-lane-camera-enforcement-34th-st_2",
+            "description": "Bus lane camera enforcement is a treatment on the 34th Street busway corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p007_c0006",
+                "source_quote": "Response: In addition to regular enforcement of the bus lane by the NYPD, DOT uses bus cameras to enforce bus lane rules. NYCT is considering a proposal to mount cameras on buses as well."
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_bus-lane-camera-enforcement-34th-st_2",
+            "description": "Bus lane camera enforcement is part of the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p007_c0006",
+                "source_quote": "Response: In addition to regular enforcement of the bus lane by the NYPD, DOT uses bus cameras to enforce bus lane rules. NYCT is considering a proposal to mount cameras on buses as well."
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p007_c0006 is an agency response explicitly discussing DOT bus cameras and NYCT camera enforcement plans for the 34th Street bus lanes as part of the SBS design.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p007_c0006",
+            "source_quote": "Response: In addition to regular enforcement of the bus lane by the NYPD, DOT uses bus cameras to enforce bus lane rules. NYCT is considering a proposal to mount cameras on buses as well."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-tsp-34th",
+        "local_observation_id": "treatment_transit_signal_priority_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "treatment_transit-signal-priority-34th-st",
+            "description": "Transit Signal Priority is a treatment on the 34th Street busway corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p006_c0014",
+                "source_quote": "• Comment: Buses are often delayed by cars accessing the parking garages. • Comment: Consider an alternative to Transit Signal Priority (TSP) technology."
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_transit-signal-priority-34th-st",
+            "description": "Transit Signal Priority is part of the 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2011_34th_sbs_comments_on_proposed_design",
+                "block_id": "p006_c0014",
+                "source_quote": "• Comment: Buses are often delayed by cars accessing the parking garages. • Comment: Consider an alternative to Transit Signal Priority (TSP) technology."
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p006_c0014 contains a public comment explicitly mentioning Transit Signal Priority (TSP) technology being considered as part of the 34th Street SBS design alternatives.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_34th_sbs_comments_on_proposed_design",
+            "block_id": "p006_c0014",
+            "source_quote": "• Comment: Buses are often delayed by cars accessing the parking garages. • Comment: Consider an alternative to Transit Signal Priority (TSP) technology."
+          }
+        ]
+      }
+    ],
+    "packet_id": "treatment-relations"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-17-12-651Z_2111393-9d55825e_canonicalize_2026-06-10t22-56-13-211z-1976810-4d6654f7-ingest-2011-34th-sbs-comments-on-proposed-design-treatment-relations"
+}

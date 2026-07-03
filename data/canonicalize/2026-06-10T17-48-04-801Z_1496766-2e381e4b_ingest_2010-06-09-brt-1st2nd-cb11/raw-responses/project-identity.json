@@ -1,0 +1,63 @@
+{
+  "run_id": "2026-06-10T17-48-04-801Z_1496766-2e381e4b_ingest_2010-06-09-brt-1st2nd-cb11",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-10T19:45:11.309Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "first-second-ave-sbs-already-mapped",
+        "local_observation_id": "project_first_second_ave_sbs",
+        "decision": "new",
+        "rationale": "Observation already maps to its base_record_id project_first-second-ave-sbs, which exists in the registry and already includes source 2010_06_09_brt_1st2nd_cb11 in its source_ids. The observation and base record describe the same project: M15 Select Bus Service on First and Second Avenues from Houston Street/South Ferry to 125th Street in Manhattan. Per rules, since the closest registry match IS the observation's own base_record_id, the decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_09_brt_1st2nd_cb11",
+            "block_id": "p001_c0001",
+            "source_quote": "First Avenue/Second Avenue Select Bus Service"
+          },
+          {
+            "source_id": "2010_06_09_brt_1st2nd_cb11",
+            "block_id": "p029_c0005",
+            "source_quote": "M15 Select Bus Service"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_project",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "project_first-second-ave-sbs-2009",
+            "description": "Both refer to the M15 Select Bus Service corridor on First and Second Avenues in Manhattan from South Ferry/125th Street; records represent the same project from different source snapshots (2009 CAC1 vs. aggregated 2009-2010 sources).",
+            "evidence_refs": []
+          },
+          {
+            "relation_kind": "same_project",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "project_first-second-ave-sbs-cac3",
+            "description": "Both refer to the M15 Select Bus Service corridor on First and Second Avenues in Manhattan from South Ferry to 125th Street; project_first-second-ave-sbs-cac3 captures Phase 1 design status from January 2010 CAC3 meeting, while the base record aggregates multiple presentations.",
+            "evidence_refs": []
+          },
+          {
+            "relation_kind": "same_project",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "project_first-second-ave-sbs-cb8-2010",
+            "description": "Both describe the M15 Select Bus Service on First and Second Avenues, 8.5 miles from South Ferry to 125th Street, with bus lanes, off-board fare collection, and TSP. The cb8-2010 record captures the February 2010 CB8 presentation.",
+            "evidence_refs": []
+          },
+          {
+            "relation_kind": "same_project",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "project_first-second-ave-sbs-2010",
+            "description": "Both describe the M15 Select Bus Service on First and Second Avenues. The 2010 record captures the Phase I launch stage (October 10, 2010) and includes later 2010 source presentations; the base record captures earlier planning phase.",
+            "evidence_refs": []
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-43-55-642Z_1657335-380d4db5_canonicalize_2026-06-10t17-48-04-801z-1496766-2e381e4b-ingest-2010-06-09-brt-1st2nd-cb11-project-identity"
+}

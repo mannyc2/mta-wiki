@@ -1,0 +1,715 @@
+{
+  "note_id": "codex-identity-batch073-prep",
+  "batch_id": "identity073",
+  "batch": "identity-batch073",
+  "created_at": "2026-06-23T00:00:24Z",
+  "lane": "codex-only identity cleanup",
+  "status": "prepared",
+  "prepared_count": 10,
+  "intended_alias_count": 10,
+  "scope": {
+    "record_kind": "entity",
+    "decision_kind": "duplicate_global_identity",
+    "selection_rule": "High-confidence person-entity duplicates with exact or punctuation-only equivalent canonical entity_name values, repeated role/source context, and no overlap with live identity overrides, identity_aliases, do-not-merge pairs, or Codex identity prep batches through 072."
+  },
+  "intended_mutation": {
+    "aliases": {
+      "entity": {
+        "entity_michele-woods-auditor-general": "entity_mta-auditor-general-woods",
+        "entity_elizabeth-velez-diversity-committee-chair": "entity_elizabeth-velez-diversity-chair",
+        "entity_meeting-doc-121026-elizabeth-velez": "entity_elizabeth-velez-diversity-chair",
+        "entity_meeting-doc-193996-frank-farrell": "entity_mta-nyct-evp-frank-farrell",
+        "entity_frank-farrell-192241": "entity_mta-nyct-evp-frank-farrell",
+        "entity_meeting91596-robert-diehl": "entity_meeting-doc-133146-robert-diehl",
+        "entity_safety-officer-diehl-nyct-jan2022": "entity_meeting-doc-133146-robert-diehl",
+        "entity_meeting-doc-171011-william-amarosa": "entity_william-amarosa-jr",
+        "entity_meeting-doc-196901-william-amarosa": "entity_william-amarosa-jr",
+        "entity_william-amarosa-jr-164966": "entity_william-amarosa-jr"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "alias_id": "entity_michele-woods-auditor-general",
+      "target_id": "entity_mta-auditor-general-woods",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Michele Woods' and auditor-general context. The target has broader source coverage, while the alias repeats the same MTA Auditor General identity.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_michele-woods-auditor-general",
+          "display_name": "Michele Woods, MTA Auditor General",
+          "entity_name": "Michele Woods",
+          "record_aliases": [
+            "entity_auditor-general-michele-woods",
+            "entity_michele-woods",
+            "entity_michele-woods-mta-auditor-general"
+          ],
+          "source_ids": [
+            "meeting_doc_26816",
+            "meeting_doc_72531",
+            "meeting_doc_91561",
+            "meeting_doc_98211"
+          ],
+          "evidence_refs": [
+            "meeting_doc_26816#p004_c0003",
+            "meeting_doc_72531#p003_c0015",
+            "meeting_doc_91561#p006_c0008"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_mta-auditor-general-woods",
+          "display_name": "Michele Woods",
+          "entity_name": "Michele Woods",
+          "record_aliases": [
+            "entity_meeting-doc-115221-michele-woods",
+            "entity_michele-woods",
+            "entity_michele-woods-auditor-general",
+            "entity_michele-woods-mta-auditor-general"
+          ],
+          "source_ids": [
+            "meeting_doc_105876",
+            "meeting_doc_111701",
+            "meeting_doc_115221",
+            "meeting_doc_124286",
+            "meeting_doc_39666"
+          ],
+          "evidence_refs": [
+            "meeting_doc_105876#p007_c0011",
+            "meeting_doc_111701#p007_c0011",
+            "meeting_doc_115221#p003_c0007"
+          ]
+        },
+        "validator_rows": [
+          "records: entity_michele-woods-auditor-general | entity | Michele Woods, MTA Auditor General | meeting_doc_26816 | source_stated | unreviewed",
+          "records: entity_mta-auditor-general-woods | entity | Michele Woods | meeting_doc_105876 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_072": true,
+        "target_not_in_prior_batches_001_072": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_elizabeth-velez-diversity-committee-chair",
+      "target_id": "entity_elizabeth-velez-diversity-chair",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Elizabeth Velez' and Diversity Committee chair context. The target already carries multiple source ids for the same board/committee identity.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_elizabeth-velez-diversity-committee-chair",
+          "display_name": "Elizabeth Velez, Chair of MTA Diversity Committee",
+          "entity_name": "Elizabeth Velez",
+          "record_aliases": [
+            "entity_elizabeth-velez",
+            "entity_mta-diversity-chair-elizabeth-velez"
+          ],
+          "source_ids": [
+            "meeting_doc_113991"
+          ],
+          "evidence_refs": [
+            "meeting_doc_113991#p001_c0006",
+            "meeting_doc_113991#p003_c0004"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_elizabeth-velez-diversity-chair",
+          "display_name": "Elizabeth Velez, Diversity Committee Chair",
+          "entity_name": "Elizabeth Velez",
+          "record_aliases": [
+            "entity_elizabeth-velez",
+            "entity_elizabeth-velez-board-member",
+            "entity_elizabeth-velez-chair",
+            "entity_elizabeth-velez-mta-diversity-committee-chair"
+          ],
+          "source_ids": [
+            "meeting_doc_109186",
+            "meeting_doc_91801",
+            "meeting_doc_95536"
+          ],
+          "evidence_refs": [
+            "meeting_doc_109186#p001_c0006",
+            "meeting_doc_91801#p002_c0014",
+            "meeting_doc_95536#p010_c0001"
+          ]
+        },
+        "validator_rows": [
+          "records: entity_elizabeth-velez-diversity-committee-chair | entity | Elizabeth Velez, Chair of MTA Diversity Committee | meeting_doc_113991 | source_stated | unreviewed",
+          "records: entity_elizabeth-velez-diversity-chair | entity | Elizabeth Velez, Diversity Committee Chair | meeting_doc_109186 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_072": true,
+        "target_not_in_prior_batches_001_072": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-121026-elizabeth-velez",
+      "target_id": "entity_elizabeth-velez-diversity-chair",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Elizabeth Velez'. The alias is a single-source Hon. Elizabeth Velez record and matches the same Diversity Committee chair target.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-121026-elizabeth-velez",
+          "display_name": "Hon. Elizabeth Velez",
+          "entity_name": "Elizabeth Velez",
+          "record_aliases": [
+            "entity_elizabeth-velez",
+            "entity_hon-elizabeth-velez"
+          ],
+          "source_ids": [
+            "meeting_doc_121026"
+          ],
+          "evidence_refs": [
+            "meeting_doc_121026#p003_c0004"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_elizabeth-velez-diversity-chair",
+          "display_name": "Elizabeth Velez, Diversity Committee Chair",
+          "entity_name": "Elizabeth Velez",
+          "record_aliases": [
+            "entity_elizabeth-velez",
+            "entity_elizabeth-velez-board-member",
+            "entity_elizabeth-velez-chair",
+            "entity_elizabeth-velez-mta-diversity-committee-chair"
+          ],
+          "source_ids": [
+            "meeting_doc_109186",
+            "meeting_doc_91801",
+            "meeting_doc_95536"
+          ],
+          "evidence_refs": [
+            "meeting_doc_109186#p001_c0006",
+            "meeting_doc_91801#p002_c0014",
+            "meeting_doc_95536#p010_c0001"
+          ]
+        },
+        "validator_rows": [
+          "records: entity_meeting-doc-121026-elizabeth-velez | entity | Hon. Elizabeth Velez | meeting_doc_121026 | source_stated | unreviewed",
+          "records: entity_elizabeth-velez-diversity-chair | entity | Elizabeth Velez, Diversity Committee Chair | meeting_doc_109186 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_072": true,
+        "target_not_in_prior_batches_001_072": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-193996-frank-farrell",
+      "target_id": "entity_mta-nyct-evp-frank-farrell",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Frank Farrell'. The alias identifies Department of Buses context and the target aggregates broader NYCT/EVP-related coverage for the same named individual.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-193996-frank-farrell",
+          "display_name": "Frank Farrell, Department of Buses",
+          "entity_name": "Frank Farrell",
+          "record_aliases": [
+            "entity_frank-farrell",
+            "entity_frank-farrell-department-of-buses"
+          ],
+          "source_ids": [
+            "meeting_doc_193996"
+          ],
+          "evidence_refs": [
+            "meeting_doc_193996#p006_c0003"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_mta-nyct-evp-frank-farrell",
+          "display_name": "Frank Farrell",
+          "entity_name": "Frank Farrell",
+          "record_aliases": [
+            "entity_frank-farrell",
+            "entity_frank-farrell-evp-and-chief-operating-officer-nyct",
+            "entity_frank-farrell-mta-nyct-executive-vice-president-and-chief-operating-officer",
+            "entity_meeting-doc-186616-frank-farrell"
+          ],
+          "source_ids": [
+            "161st_bx6_capital_project_2026",
+            "meeting_doc_186616",
+            "meeting_doc_190081",
+            "meeting_doc_196876",
+            "meeting_doc_199166",
+            "meeting_doc_199486",
+            "meeting_doc_201621",
+            "meeting_doc_205541",
+            "meeting_doc_208031"
+          ],
+          "evidence_refs": [
+            "161st_bx6_capital_project_2026#p001_b0001",
+            "meeting_doc_186616#p005_c0006",
+            "meeting_doc_190081#p006_c0005"
+          ]
+        },
+        "validator_rows": [
+          "records: entity_meeting-doc-193996-frank-farrell | entity | Frank Farrell, Department of Buses | meeting_doc_193996 | source_stated | unreviewed",
+          "records: entity_mta-nyct-evp-frank-farrell | entity | Frank Farrell | 161st_bx6_capital_project_2026 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_072": true,
+        "target_not_in_prior_batches_001_072": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_frank-farrell-192241",
+      "target_id": "entity_mta-nyct-evp-frank-farrell",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Frank Farrell'. The alias is a single-source Frank Farrell record and matches the target's broader repeated NYCT/Department of Buses identity.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_frank-farrell-192241",
+          "display_name": "Frank Farrell",
+          "entity_name": "Frank Farrell",
+          "record_aliases": [
+            "entity_frank-farrell"
+          ],
+          "source_ids": [
+            "meeting_doc_192241"
+          ],
+          "evidence_refs": [
+            "meeting_doc_192241#p006_c0003",
+            "meeting_doc_192241#p009_c0003"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_mta-nyct-evp-frank-farrell",
+          "display_name": "Frank Farrell",
+          "entity_name": "Frank Farrell",
+          "record_aliases": [
+            "entity_frank-farrell",
+            "entity_frank-farrell-evp-and-chief-operating-officer-nyct",
+            "entity_frank-farrell-mta-nyct-executive-vice-president-and-chief-operating-officer",
+            "entity_meeting-doc-186616-frank-farrell"
+          ],
+          "source_ids": [
+            "161st_bx6_capital_project_2026",
+            "meeting_doc_186616",
+            "meeting_doc_190081",
+            "meeting_doc_196876",
+            "meeting_doc_199166",
+            "meeting_doc_199486",
+            "meeting_doc_201621",
+            "meeting_doc_205541",
+            "meeting_doc_208031"
+          ],
+          "evidence_refs": [
+            "161st_bx6_capital_project_2026#p001_b0001",
+            "meeting_doc_186616#p005_c0006",
+            "meeting_doc_190081#p006_c0005"
+          ]
+        },
+        "validator_rows": [
+          "records: entity_frank-farrell-192241 | entity | Frank Farrell | meeting_doc_192241 | source_stated | unreviewed",
+          "records: entity_mta-nyct-evp-frank-farrell | entity | Frank Farrell | 161st_bx6_capital_project_2026 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_072": true,
+        "target_not_in_prior_batches_001_072": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting91596-robert-diehl",
+      "target_id": "entity_meeting-doc-133146-robert-diehl",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Robert Diehl' and NYCT safety/security context. The target has multiple source ids and matching NYCT role context.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting91596-robert-diehl",
+          "display_name": "Robert Diehl, Senior Vice President, Safety and Security, NYCT",
+          "entity_name": "Robert Diehl",
+          "record_aliases": [
+            "entity_robert-diehl",
+            "entity_robert-diehl-senior-vice-president-safety-and-security-nyct"
+          ],
+          "source_ids": [
+            "meeting_doc_91596"
+          ],
+          "evidence_refs": [
+            "meeting_doc_91596#p001_c0006"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-133146-robert-diehl",
+          "display_name": "Robert Diehl, NYCT",
+          "entity_name": "Robert Diehl",
+          "record_aliases": [
+            "entity_meeting-doc-26846-robert-diehl",
+            "entity_meeting-doc-44276-robert-diehl",
+            "entity_robert-diehl",
+            "entity_robert-diehl-nyct"
+          ],
+          "source_ids": [
+            "meeting_doc_133146",
+            "meeting_doc_26846",
+            "meeting_doc_44276"
+          ],
+          "evidence_refs": [
+            "meeting_doc_133146#p001_c0008",
+            "meeting_doc_26846#p014_c0003",
+            "meeting_doc_44276#p006_c0009"
+          ]
+        },
+        "validator_rows": [
+          "records: entity_meeting91596-robert-diehl | entity | Robert Diehl, Senior Vice President, Safety and Security, NYCT | meeting_doc_91596 | source_stated | unreviewed",
+          "records: entity_meeting-doc-133146-robert-diehl | entity | Robert Diehl, NYCT | meeting_doc_133146 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_072": true,
+        "target_not_in_prior_batches_001_072": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_safety-officer-diehl-nyct-jan2022",
+      "target_id": "entity_meeting-doc-133146-robert-diehl",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'Robert Diehl' and NYCT safety context. The alias is a single-source safety-officer record and matches the target's multi-source NYCT identity.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_safety-officer-diehl-nyct-jan2022",
+          "display_name": "Robert Diehl, NYCT",
+          "entity_name": "Robert Diehl",
+          "record_aliases": [
+            "entity_robert-diehl",
+            "entity_robert-diehl-nyct"
+          ],
+          "source_ids": [
+            "meeting_doc_72581"
+          ],
+          "evidence_refs": [
+            "meeting_doc_72581#p003_c0006"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_meeting-doc-133146-robert-diehl",
+          "display_name": "Robert Diehl, NYCT",
+          "entity_name": "Robert Diehl",
+          "record_aliases": [
+            "entity_meeting-doc-26846-robert-diehl",
+            "entity_meeting-doc-44276-robert-diehl",
+            "entity_robert-diehl",
+            "entity_robert-diehl-nyct"
+          ],
+          "source_ids": [
+            "meeting_doc_133146",
+            "meeting_doc_26846",
+            "meeting_doc_44276"
+          ],
+          "evidence_refs": [
+            "meeting_doc_133146#p001_c0008",
+            "meeting_doc_26846#p014_c0003",
+            "meeting_doc_44276#p006_c0009"
+          ]
+        },
+        "validator_rows": [
+          "records: entity_safety-officer-diehl-nyct-jan2022 | entity | Robert Diehl, NYCT | meeting_doc_72581 | source_stated | unreviewed",
+          "records: entity_meeting-doc-133146-robert-diehl | entity | Robert Diehl, NYCT | meeting_doc_133146 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_072": true,
+        "target_not_in_prior_batches_001_072": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-171011-william-amarosa",
+      "target_id": "entity_william-amarosa-jr",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities for William Amarosa Jr.; the only canonical-name difference is comma punctuation before 'Jr.'. This decision intentionally targets the Jr. cluster and does not merge non-Jr. William Amarosa records.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-171011-william-amarosa",
+          "display_name": "William Amarosa, Jr.",
+          "entity_name": "William Amarosa, Jr.",
+          "record_aliases": [
+            "entity_william-amarosa-jr"
+          ],
+          "source_ids": [
+            "meeting_doc_171011"
+          ],
+          "evidence_refs": [
+            "meeting_doc_171011#p006_c0004"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_william-amarosa-jr",
+          "display_name": "William Amarosa Jr., Department of Subways",
+          "entity_name": "William Amarosa Jr.",
+          "record_aliases": [
+            "entity_william-amarosa-jr"
+          ],
+          "source_ids": [
+            "meeting_doc_197031"
+          ],
+          "evidence_refs": [
+            "meeting_doc_197031#p008_c0003"
+          ]
+        },
+        "validator_rows": [
+          "records: entity_meeting-doc-171011-william-amarosa | entity | William Amarosa, Jr. | meeting_doc_171011 | source_stated | unreviewed",
+          "records: entity_william-amarosa-jr | entity | William Amarosa Jr., Department of Subways | meeting_doc_197031 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_072": true,
+        "target_not_in_prior_batches_001_072": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-196901-william-amarosa",
+      "target_id": "entity_william-amarosa-jr",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'William Amarosa Jr.' and source-stated Department of Subways context on the target. This is another single-source Jr. record for the same person.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-196901-william-amarosa",
+          "display_name": "William Amarosa Jr.",
+          "entity_name": "William Amarosa Jr.",
+          "record_aliases": [
+            "entity_william-amarosa-jr"
+          ],
+          "source_ids": [
+            "meeting_doc_196901"
+          ],
+          "evidence_refs": [
+            "meeting_doc_196901#p008_c0003"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_william-amarosa-jr",
+          "display_name": "William Amarosa Jr., Department of Subways",
+          "entity_name": "William Amarosa Jr.",
+          "record_aliases": [
+            "entity_william-amarosa-jr"
+          ],
+          "source_ids": [
+            "meeting_doc_197031"
+          ],
+          "evidence_refs": [
+            "meeting_doc_197031#p008_c0003"
+          ]
+        },
+        "validator_rows": [
+          "records: entity_meeting-doc-196901-william-amarosa | entity | William Amarosa Jr. | meeting_doc_196901 | source_stated | unreviewed",
+          "records: entity_william-amarosa-jr | entity | William Amarosa Jr., Department of Subways | meeting_doc_197031 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_072": true,
+        "target_not_in_prior_batches_001_072": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_william-amarosa-jr-164966",
+      "target_id": "entity_william-amarosa-jr",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records are person entities with canonical entity_name 'William Amarosa Jr.'. This aliases a third single-source Jr. record into the same Jr.-qualified target.",
+      "evidence": {
+        "canonical_alias": {
+          "record_id": "entity_william-amarosa-jr-164966",
+          "display_name": "William Amarosa Jr.",
+          "entity_name": "William Amarosa Jr.",
+          "record_aliases": [
+            "entity_william-amarosa-jr"
+          ],
+          "source_ids": [
+            "meeting_doc_164966"
+          ],
+          "evidence_refs": [
+            "meeting_doc_164966#p006_c0003"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_william-amarosa-jr",
+          "display_name": "William Amarosa Jr., Department of Subways",
+          "entity_name": "William Amarosa Jr.",
+          "record_aliases": [
+            "entity_william-amarosa-jr"
+          ],
+          "source_ids": [
+            "meeting_doc_197031"
+          ],
+          "evidence_refs": [
+            "meeting_doc_197031#p008_c0003"
+          ]
+        },
+        "validator_rows": [
+          "records: entity_william-amarosa-jr-164966 | entity | William Amarosa Jr. | meeting_doc_164966 | source_stated | unreviewed",
+          "records: entity_william-amarosa-jr | entity | William Amarosa Jr., Department of Subways | meeting_doc_197031 | source_stated | unreviewed"
+        ]
+      },
+      "guards": {
+        "source_id_exists": true,
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_batches_001_072": true,
+        "target_not_in_prior_batches_001_072": true,
+        "not_do_not_merge_pair": true,
+        "evidence_source_paths_exist": true
+      },
+      "all_pass": true
+    }
+  ],
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "prepared_count": 10,
+    "intended_alias_count": 10,
+    "selected_unique_record_count": 15,
+    "canonical_records_present": true,
+    "db_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "aliases_disjoint_from_current_merges_records": true,
+    "targets_disjoint_from_current_merges_records": true,
+    "targets_not_alias_mapped_in_merges_json": true,
+    "targets_not_alias_mapped_in_identity_aliases_table": true,
+    "no_overlap_with_prior_prep_through_batch072": true,
+    "prior_prep_files_considered_through_batch072": 26,
+    "prior_prep_unique_records_excluded_through_batch072": 429,
+    "current_merges_entity_alias_count": 484,
+    "current_identity_aliases_entity_count": 484,
+    "current_do_not_merge_entity_pair_count": 20,
+    "do_not_merge_guard_hits": 0,
+    "source_ids_checked": 34,
+    "source_ids_missing": [],
+    "source_paths_checked": 34,
+    "source_paths_missing": [],
+    "all_decision_guards_pass": true,
+    "all_pass": true
+  },
+  "commands_used_for_evidence": [
+    "pwd && rg --files data/review_notes data/identity-overrides data/canonical data/materialized | sort | tail -120",
+    "sed -n '1,240p' data/review_notes/codex-identity-batch072-prep.json",
+    "git status --short",
+    "sqlite3 'file:data/canonical.db?mode=ro' '.tables'",
+    "sqlite3 'file:data/canonical.db?mode=ro' 'pragma table_info(records); pragma table_info(identity_aliases); pragma table_info(do_not_merge); pragma table_info(evidence_refs);'",
+    "sed -n '1,5p' data/canonical/entities.jsonl",
+    "find data/review_notes -maxdepth 1 -name 'codex-identity-batch*-prep.json' | sort | sed -n '1,120p'",
+    "bun --eval '<read-only exact-name person candidate scan over data/canonical/entities.jsonl, data/identity-overrides, and prior data/review_notes/codex-identity-batch*-prep.json through batch072>'",
+    "bun --eval '<read-only selected candidate inspection against canonical entities, current merges, prior prep files, and evidence paths>'",
+    "bun --eval '<read-only selected candidate DB records and identity_aliases check using sqlite3 file:data/canonical.db?mode=ro>'",
+    "bun --eval '<read-only aggregate guard verification for selected 10 aliases against canonical JSONL, canonical.db records, identity_aliases, current merges, do-not-merge, prior prep through batch072, canonical source ids, and evidence source paths>'",
+    "sed -n '1,3p' data/canonical/sources.jsonl",
+    "sqlite3 'file:data/canonical.db?mode=ro' 'select record_id, display_name, primary_source_id from records where record_kind=\"source\" limit 5;'",
+    "rg '\"source_id\":\"meeting_doc_105876\"|\"source_ids\":\\[\"meeting_doc_105876\"' data/canonical/sources.jsonl | head -3",
+    "date -u +%Y-%m-%dT%H:%M:%SZ"
+  ],
+  "commands_intentionally_not_run": [
+    "canonicalize",
+    "campaign dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "materialize",
+    "export-jsonl",
+    "full validate",
+    "DB publish",
+    "any command with --profile",
+    "any provider-backed command"
+  ],
+  "deferred_review_only_notes": [
+    {
+      "records": [
+        "entity_david-s-mack-meeting-doc-157631",
+        "entity_meeting-doc-68196-david-mack"
+      ],
+      "reason": "Exact David S. Mack match, but adjacent David Mack records without middle initial should be reviewed cluster-aware before choosing a target."
+    },
+    {
+      "records": [
+        "entity_mta-cco-kearse",
+        "entity_lamond-kearse-167301"
+      ],
+      "reason": "Exact Lamond Kearse match, but the name also has additional Lamond Kearse records; deferred for cluster-aware target selection."
+    },
+    {
+      "records": [
+        "entity_paul-friman",
+        "entity_meeting-doc-128981-paul-friman",
+        "entity_paul-l-friman-tbta-gc-jul2024",
+        "entity_meeting-doc-196846-paul-friman"
+      ],
+      "reason": "High-confidence Paul L. Friman cluster remains, but one same-name record is already covered by prior identity prep; deferred to avoid partial cluster handling."
+    }
+  ],
+  "all_pass": true
+}

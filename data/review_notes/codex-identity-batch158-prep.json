@@ -1,0 +1,498 @@
+{
+  "note_id": "codex-identity-batch158-prep",
+  "batch": "identity158",
+  "created_at": "2026-06-23T07:49:53Z",
+  "scope": {
+    "global_kind": "project",
+    "selection_note": "Codex-only deterministic prep from current data/canonical/projects.jsonl, current data/identity-overrides/merges.json, current data/identity-overrides/do-not-merge.json, and a local project-only duplicate_global_identity reproduction. Excluded broad parent/child program collisions, phase/stage-only matches, current merge aliases, targets that are themselves current merge aliases, alias==target pairs, do-not-merge hits, missing current canonical ids, and specifically avoided the known Grand Central circulation and Hartsdale station direction traps."
+  },
+  "prepared_count": 8,
+  "proposed_aliases": [
+    {
+      "global_kind": "project",
+      "alias_id": "project_jamaica-bus-depot-db-jan2023",
+      "target_id": "project_jamaica-bus-depot",
+      "canonical_id": "project_jamaica-bus-depot",
+      "confidence": "high",
+      "validator_duplicate_key": "project_jamaica-bus-depot",
+      "reason": "Both current records describe the New Jamaica Bus Depot design-build replacement/zero-emissions bus depot project. The alias record carries project_jamaica-bus-depot as a current record alias and cites the same Jamaica Bus Depot design-build scope and Skanska award context as the richer target cluster.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Jamaica Bus Depot Design-Build",
+          "project_name": "Jamaica Bus Depot",
+          "project_type": "Design-Build",
+          "status": "Awarded",
+          "source_ids": [
+            "meeting_doc_104701",
+            "meeting_doc_131491",
+            "meeting_doc_198991",
+            "meeting_doc_199246",
+            "meeting_doc_199481"
+          ],
+          "evidence_refs": [
+            "meeting_doc_104701#p006_c0005",
+            "meeting_doc_104701#p005_c0007",
+            "meeting_doc_131491#p016_c0011"
+          ]
+        },
+        "target": {
+          "display_name": "New Jamaica Bus Depot",
+          "project_name": "New Jamaica Bus Depot",
+          "project_type": "design-build",
+          "status": "awarded",
+          "source_ids": [
+            "meeting_doc_102776",
+            "meeting_doc_102911",
+            "meeting_doc_163236",
+            "meeting_doc_164901",
+            "meeting_doc_196836",
+            "meeting_doc_199231"
+          ],
+          "evidence_refs": [
+            "meeting_doc_102911#p024_c0005",
+            "meeting_doc_102911#p024_c0007",
+            "meeting_doc_102911#p024_c0009"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_jamaica-bus-depot and project_jamaica-bus-depot-db-jan2023 share identity key project_jamaica-bus-depot.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-115156-third-rail-sogr-montauk",
+      "target_id": "project_meeting-doc-109341-third-rail-sgr-montauk",
+      "canonical_id": "project_meeting-doc-109341-third-rail-sgr-montauk",
+      "confidence": "high",
+      "validator_duplicate_key": "project_third-rail-state-of-good-repair-work-on-the-montauk-branch",
+      "reason": "Both records identify third-rail state-of-good-repair work on the Montauk Branch. The target has the more specific Amityville-to-Babylon limits and two-source evidence; the alias is a single-source spelling variant of the same SGR/SOGR project.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "project_meeting_doc_115156_third_rail_sogr_montauk",
+          "project_name": "Third Rail State of Good Repair Work on the Montauk Branch",
+          "project_type": "state of good repair",
+          "source_ids": [
+            "meeting_doc_115156"
+          ],
+          "evidence_refs": [
+            "meeting_doc_115156#p001_c0006"
+          ]
+        },
+        "target": {
+          "display_name": "Third Rail State of Good Repair - Montauk Branch",
+          "project_name": "Third Rail State of Good Repair work on the Montauk Branch between Amityville and Babylon",
+          "project_type": "State of Good Repair Work",
+          "location": "Montauk Branch between Amityville and Babylon",
+          "source_ids": [
+            "meeting_doc_109341",
+            "meeting_doc_124266"
+          ],
+          "evidence_refs": [
+            "meeting_doc_109341#p001_c0009",
+            "meeting_doc_124266#p001_c0005"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_meeting-doc-109341-third-rail-sgr-montauk and project_meeting-doc-115156-third-rail-sogr-montauk share identity key project_third-rail-state-of-good-repair-work-on-the-montauk-branch.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_mnr-csi-stations",
+      "target_id": "project_mnr-csi-outlying-stations",
+      "canonical_id": "project_mnr-csi-outlying-stations",
+      "confidence": "high",
+      "validator_duplicate_key": "project_customer-service-initiative-csi-outlying-stations-public-announcement-visual-information-and-sur",
+      "reason": "Both records have the same long project name for Metro-North Customer Service Initiative outlying-station PA/VIS/surveillance/access-control work at 20 stations and facilities. Differences are classification/status wording only.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "MNR Customer Service Initiative - Outlying Stations",
+          "project_name": "Customer Service Initiative (CSI) - Outlying Stations Public Announcement/Visual Information and Surveillance/Access Control Systems",
+          "project_type": "infrastructure upgrade",
+          "status": "in progress",
+          "source_ids": [
+            "meeting_doc_29961"
+          ],
+          "evidence_refs": [
+            "meeting_doc_29961#p141_c0002"
+          ]
+        },
+        "target": {
+          "display_name": "Customer Service Initiative - Outlying Stations",
+          "project_name": "Customer Service Initiative (CSI) - Outlying Stations Public Announcement/Visual Information and Surveillance/Access Control Systems",
+          "project_type": "capital program",
+          "status": "ongoing",
+          "agency": "MTA Metro-North Railroad",
+          "source_ids": [
+            "meeting_doc_26841"
+          ],
+          "evidence_refs": [
+            "meeting_doc_26841#p215_c0002",
+            "meeting_doc_26841#p215_c0003",
+            "meeting_doc_26841#p215_c0005"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_mnr-csi-outlying-stations and project_mnr-csi-stations share identity key project_customer-service-initiative-csi-outlying-stations-public-announcement-visual-information-and-sur.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_small-business-development-program-166966",
+      "target_id": "project_small-business-development-program",
+      "canonical_id": "project_small-business-development-program",
+      "confidence": "high",
+      "validator_duplicate_key": "project_mta-small-business-development-program-sbdp",
+      "reason": "Both records identify MTA Small Business Development Program (SBDP). The alias is a one-source duplicate of the same program; the target is the durable multi-source program cluster.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "MTA Small Business Development Program (SBDP)",
+          "project_name": "MTA Small Business Development Program (SBDP)",
+          "project_type": "small_business_development",
+          "source_ids": [
+            "meeting_doc_166966"
+          ],
+          "evidence_refs": [
+            "meeting_doc_166966#p081_c0001",
+            "meeting_doc_166966#p081_c0002"
+          ]
+        },
+        "target": {
+          "display_name": "MTA Small Business Development Program (SBDP)",
+          "project_name": "MTA Small Business Development Program",
+          "project_type": "small business development program",
+          "status": "active",
+          "agency": "Metropolitan Transportation Authority",
+          "source_ids_sample": [
+            "meeting_doc_102781",
+            "meeting_doc_121026",
+            "meeting_doc_138186",
+            "meeting_doc_143146"
+          ],
+          "source_count": 11,
+          "evidence_refs": [
+            "meeting_doc_102781#p039_c0002",
+            "meeting_doc_102781#p040_c0003",
+            "meeting_doc_121026#p040_c0003"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_small-business-development-program and project_small-business-development-program-166966 share identity key project_mta-small-business-development-program-sbdp.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_tarrytown-tod-housing",
+      "target_id": "project_tarrytown-tod-meeting-doc-151756",
+      "canonical_id": "project_tarrytown-tod-meeting-doc-151756",
+      "confidence": "high",
+      "validator_duplicate_key": "project_tarrytown-transit-oriented-development-project",
+      "reason": "Both records describe the same Tarrytown transit-oriented development at 2 Depot Plaza: an 88-unit multifamily housing project with ground-floor artist/workshop/gallery uses. The target has the fuller two-source board-document cluster and station-access context.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Tarrytown Transit-Oriented Development Project",
+          "project_name": "Transit-Oriented Development Project",
+          "project_type": "transit-oriented development",
+          "status": "proposed",
+          "location": "2 Depot Plaza, Tarrytown, New York",
+          "source_ids": [
+            "meeting_doc_151836"
+          ],
+          "evidence_refs": [
+            "meeting_doc_151836#p002_c0005"
+          ]
+        },
+        "target": {
+          "display_name": "Tarrytown TOD - 88-unit multifamily housing",
+          "project_name": "Tarrytown Transit-Oriented Development Project",
+          "project_type": "transit-oriented development",
+          "status": "proposed - conditional designation of developer",
+          "location": "2 Depot Plaza, Tarrytown, NY",
+          "source_ids": [
+            "meeting_doc_151756",
+            "meeting_doc_152076"
+          ],
+          "evidence_refs": [
+            "meeting_doc_151756#p014_c0004",
+            "meeting_doc_151756#p015_c0004",
+            "meeting_doc_152076#p062_c0010"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_tarrytown-tod-housing and project_tarrytown-tod-meeting-doc-151756 share identity key project_tarrytown-transit-oriented-development-project.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_m86-sbs-conversion-cb7-presentation",
+      "target_id": "project_m86-sbs",
+      "canonical_id": "project_m86-sbs",
+      "confidence": "high",
+      "validator_duplicate_key": "project_m86-sbs",
+      "reason": "Both records identify the M86 Select Bus Service conversion/implementation project on the 86th Street corridor. The alias is the pre-launch CB7 presentation view; the target is the multi-source implementation/progress-report cluster.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "M86 Select Bus Service Conversion",
+          "project_name": "M86 Select Bus Service",
+          "project_type": "SBS conversion",
+          "status": "proposed",
+          "source_ids": [
+            "2015_02_04_brt_86thstreet_cb7_presentation"
+          ],
+          "evidence_refs": [
+            "2015_02_04_brt_86thstreet_cb7_presentation#p002_c0002",
+            "2015_02_04_brt_86thstreet_cb7_presentation#p025_c0005"
+          ]
+        },
+        "target": {
+          "display_name": "M86 Select Bus Service Implementation",
+          "project_name": "M86 Select Bus Service Implementation",
+          "project_type": "Select Bus Service",
+          "status": "operational",
+          "source_ids": [
+            "2014_10_01_brt_86thstreet_cb8_presentation",
+            "2014_10_14_brt_86thstreet_cb7_presentation",
+            "brt_m86_m79_cb7_oct2016",
+            "brt_m86_m79_cb8_oct2016",
+            "brt_m86sbs_progress_report_april2017",
+            "m86_sbs_progress_report_2017"
+          ],
+          "evidence_refs": [
+            "m86_sbs_progress_report_2017#p003_c0003",
+            "m86_sbs_progress_report_2017#p006_c0005",
+            "m86_sbs_progress_report_2017#p002_c0003"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_m86-sbs and project_m86-sbs-conversion-cb7-presentation share identity key project_m86-sbs.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_mnr-station-improvements-5-stations",
+      "target_id": "project_mnr-station-improvement-initiatives",
+      "canonical_id": "project_mnr-station-improvement-initiatives",
+      "confidence": "high",
+      "validator_duplicate_key": "project_station-improvement-initiatives-at-harlem-125th-st-riverdale-crestwood-white-plains-and-port-che",
+      "reason": "Both records carry the same long project identity for Metro-North station improvement initiatives at Harlem-125th Street, Riverdale, Crestwood, White Plains, and Port Chester. The alias has more detailed scope text, but it is the same named initiative as the target.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Station Improvement Initiatives at Harlem-125th Street, Riverdale, Crestwood, White Plains and Port Chester",
+          "project_name": "Station Improvement Initiatives at Harlem-125th Street, Riverdale, Crestwood, White Plains and Port Chester",
+          "project_type": "capital program",
+          "status": "ongoing",
+          "agency": "MTA Metro-North Railroad",
+          "source_ids": [
+            "meeting_doc_26841"
+          ],
+          "evidence_refs": [
+            "meeting_doc_26841#p215_c0007",
+            "meeting_doc_26841#p215_c0009",
+            "meeting_doc_26841#p215_c0010"
+          ]
+        },
+        "target": {
+          "display_name": "MNR Station Improvement Initiatives",
+          "project_name": "Station Improvement Initiatives at Harlem-125th Street, Riverdale, Crestwood, White Plains and Port Chester",
+          "project_type": "station improvement",
+          "status": "in progress",
+          "source_ids": [
+            "meeting_doc_29961"
+          ],
+          "evidence_refs": [
+            "meeting_doc_29961#p141_c0007"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_mnr-station-improvement-initiatives and project_mnr-station-improvements-5-stations share identity key project_station-improvement-initiatives-at-harlem-125th-st-riverdale-crestwood-white-plains-and-port-che.",
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-track-program",
+      "target_id": "project_track-program-quarterly-update",
+      "canonical_id": "project_track-program-quarterly-update",
+      "confidence": "high",
+      "validator_duplicate_key": "project_track-program-quarterly-update",
+      "reason": "Both records are Metro-North Track Program quarterly update records. The alias has three earlier meeting-document sources; the target has the larger seven-source Track Program cluster and the same project/update identity.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Track Program Quarterly Update",
+          "project_name": "Track Program Quarterly Update",
+          "project_type": "quarterly update",
+          "status": "ongoing",
+          "agency": "Metro-North Railroad",
+          "source_ids": [
+            "meeting_doc_100316",
+            "meeting_doc_102726",
+            "meeting_doc_121101"
+          ],
+          "evidence_refs": [
+            "meeting_doc_100316#p002_c0002",
+            "meeting_doc_100316#p002_c0008",
+            "meeting_doc_100316#p002_c0015"
+          ]
+        },
+        "target": {
+          "display_name": "Track Program Quarterly Update",
+          "project_name": "Track Program",
+          "project_type": "maintenance program",
+          "status": "ongoing",
+          "agency": "Metro-North Railroad",
+          "source_count": 7,
+          "source_ids_sample": [
+            "meeting_doc_104761",
+            "meeting_doc_105786",
+            "meeting_doc_111771",
+            "meeting_doc_113901"
+          ],
+          "evidence_refs": [
+            "meeting_doc_105786#p004_c0002",
+            "meeting_doc_104761#p003_c0015",
+            "meeting_doc_104761#p003_c0016"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_meeting-doc-track-program and project_track-program-quarterly-update share identity key project_track-program-quarterly-update.",
+        "additional_duplicate_keys": [
+          "project_track-program"
+        ],
+        "guards": {
+          "alias_and_target_present_in_current_canonical_jsonl": true,
+          "already_merged_in_current_project_merges": false,
+          "target_is_current_project_merge_alias": false,
+          "target_chain_guard_passed": true,
+          "do_not_merge_hit": false,
+          "alias_equals_target": false
+        }
+      }
+    }
+  ],
+  "exclusions_and_guards": {
+    "excluded_current_merge_aliases": true,
+    "excluded_targets_that_are_current_merge_aliases": true,
+    "excluded_alias_equals_target": true,
+    "excluded_do_not_merge_pairs": [
+      [
+        "project_better-buses-restart-2021",
+        "project_jamaica-busway"
+      ]
+    ],
+    "excluded_missing_current_canonical_ids": true,
+    "excluded_same_name_but_different_phase_or_stage_traps": [
+      "project_hylan-blvd-sbs-phase1 vs project_hylan-blvd-sbs-brt-phase2",
+      "project_bx12-sbs-fordham-rd-phase1 vs project_bx12-sbs-brt-phase2",
+      "project_jamaica-capacity-improvement vs project_jamaica-capacity-improvement-phase2",
+      "project_2020-2024-capital-program amendment records with different amendment numbers",
+      "project_hartsdale-station-improvements / project_hartsdale-station-ada-improvements direction trap",
+      "project_grand-central-circulation-improvements stale direction trap"
+    ],
+    "excluded_broad_parent_child_program_collisions": [
+      "ABLE program vs ABLE expansion-only records",
+      "Central Business District Tolling Program vs TransCore contract modification or toll-revenue-obligation resolution",
+      "generic capital program records vs amendment-specific records"
+    ],
+    "current_project_merge_alias_count": 285,
+    "current_project_do_not_merge_pair_count": 1,
+    "project_only_duplicate_global_identity_count_reproduced": 91
+  },
+  "command_evidence": [
+    {
+      "command": "jq 'length' data/identity-overrides/merges.json && jq 'length' data/identity-overrides/do-not-merge.json && wc -l data/canonical/projects.jsonl",
+      "result_summary": "Current override files parsed as JSON; projects.jsonl has 1921 records."
+    },
+    {
+      "command": "bun -e 'import { identityKeysForRecord, identityDoNotMergeSuppressed } from \"./packages/db/src/identity.ts\"; ... project-only duplicate scan ...'",
+      "result_summary": "Reproduced 91 current project duplicate_global_identity issues without running full CLI validate."
+    },
+    {
+      "command": "jq -r '.aliases.project | to_entries[] | [.key,.value] | @tsv' data/identity-overrides/merges.json | wc -l",
+      "result_summary": "Current project merge alias count is 285."
+    },
+    {
+      "command": "jq -r '.pairs.project[]? | .record_ids | @tsv' data/identity-overrides/do-not-merge.json",
+      "result_summary": "Only current project do-not-merge guard is project_better-buses-restart-2021 vs project_jamaica-busway."
+    },
+    {
+      "command": "jq current-record inspections over data/canonical/projects.jsonl for all proposed alias_id and target_id values",
+      "result_summary": "Confirmed all proposed alias and target ids are present in current canonical JSONL and captured display_name, payload, source_ids, and evidence_refs from current records."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed commands",
+    "materialize",
+    "export-jsonl",
+    "full CLI validate",
+    "write",
+    "ask",
+    "schema",
+    "ontology",
+    "identity-review",
+    "canonicalize",
+    "campaign dedup"
+  ]
+}

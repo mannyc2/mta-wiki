@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides",
+  "generated_at": "2026-06-11T02:06:47.864Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 62,
+  "validated_decision_count": 8,
+  "quarantined_decision_count": 3,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides",
+    "manifest": "data/canonicalize/2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 2,
+      "validated_decision_count": 2,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-01-59-964Z_2111393-b0434770_canonicalize_2026-06-10t22-59-52-566z-1976810-e040d399-ingest-201110-nostrand-cb8-slides-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-01-59-972Z_2111393-6aa8334e_canonicalize_2026-06-10t22-59-52-566z-1976810-e040d399-ingest-201110-nostrand-cb8-slides-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-01-59-972Z_2111393-d330a012_canonicalize_2026-06-10t22-59-52-566z-1976810-e040d399-ingest-201110-nostrand-cb8-slides-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-01-59-972Z_2111393-9793d1c5_canonicalize_2026-06-10t22-59-52-566z-1976810-e040d399-ingest-201110-nostrand-cb8-slides-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 5,
+      "validated_decision_count": 5,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-01-59-973Z_2111393-d29c44bd_canonicalize_2026-06-10t22-59-52-566z-1976810-e040d399-ingest-201110-nostrand-cb8-slides-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-01-59-973Z_2111393-cd7d5f30_canonicalize_2026-06-10t22-59-52-566z-1976810-e040d399-ingest-201110-nostrand-cb8-slides-relation-linker"
+    }
+  ]
+}

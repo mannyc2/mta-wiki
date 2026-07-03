@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T23-24-18-555Z_1976810-1571fc06_ingest_2014-08-25-brt-websteravenue-progressreport",
+  "generated_at": "2026-06-11T04:05:03.625Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 48,
+  "validated_decision_count": 0,
+  "quarantined_decision_count": 6,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T23-24-18-555Z_1976810-1571fc06_ingest_2014-08-25-brt-websteravenue-progressreport",
+    "manifest": "data/canonicalize/2026-06-10T23-24-18-555Z_1976810-1571fc06_ingest_2014-08-25-brt-websteravenue-progressreport/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T23-24-18-555Z_1976810-1571fc06_ingest_2014-08-25-brt-websteravenue-progressreport/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-24-18-555Z_1976810-1571fc06_ingest_2014-08-25-brt-websteravenue-progressreport/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T23-24-18-555Z_1976810-1571fc06_ingest_2014-08-25-brt-websteravenue-progressreport/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-18-555Z_1976810-1571fc06_ingest_2014-08-25-brt-websteravenue-progressreport/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-01-454Z_2111393-8e5b1b1c_canonicalize_2026-06-10t23-24-18-555z-1976810-1571fc06-ingest-2014-08-25-brt-websteravenue-progressreport-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-18-555Z_1976810-1571fc06_ingest_2014-08-25-brt-websteravenue-progressreport/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-01-454Z_2111393-4e7c2041_canonicalize_2026-06-10t23-24-18-555z-1976810-1571fc06-ingest-2014-08-25-brt-websteravenue-progressreport-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-18-555Z_1976810-1571fc06_ingest_2014-08-25-brt-websteravenue-progressreport/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-01-454Z_2111393-0420181a_canonicalize_2026-06-10t23-24-18-555z-1976810-1571fc06-ingest-2014-08-25-brt-websteravenue-progressreport-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-18-555Z_1976810-1571fc06_ingest_2014-08-25-brt-websteravenue-progressreport/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-01-454Z_2111393-5885633c_canonicalize_2026-06-10t23-24-18-555z-1976810-1571fc06-ingest-2014-08-25-brt-websteravenue-progressreport-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-18-555Z_1976810-1571fc06_ingest_2014-08-25-brt-websteravenue-progressreport/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-01-454Z_2111393-565786cd_canonicalize_2026-06-10t23-24-18-555z-1976810-1571fc06-ingest-2014-08-25-brt-websteravenue-progressreport-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-24-18-555Z_1976810-1571fc06_ingest_2014-08-25-brt-websteravenue-progressreport/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-01-454Z_2111393-3bcb4d15_canonicalize_2026-06-10t23-24-18-555z-1976810-1571fc06-ingest-2014-08-25-brt-websteravenue-progressreport-relation-linker"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "run_id": "2026-06-10T17-48-04-658Z_1496766-855f41d9_ingest_2010-01-14-brt-1st2nd-cac3",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-10T20:49:09.854Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "m15-limited-already-canonical",
+        "local_observation_id": "route_m15_limited_2010_01_14",
+        "decision": "new",
+        "rationale": "Observation already maps to its own base_record_id route_m15-local-limited, which is the canonical M15 Limited record. The record already aliases route_m15-limited-2010-01-14 and lists 2010_01_14_brt_1st2nd_cac3 as a source. Evidence p014_c0004 confirms 'Sources of delay on M15 Limited' matches this route variant. do_not_merge_pairs confirms route_m15-local-limited ≠ route_m15-sbs.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p014_c0004",
+            "source_quote": "Sources of delay on M15 Limited"
+          },
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p014_c0005",
+            "source_quote": "A pie chart titled \"Sources of delay on M15 Limited\" showing the distribution of delay sources."
+          }
+        ]
+      },
+      {
+        "decision_id": "bx12-sbs-already-canonical",
+        "local_observation_id": "route_bx12_sbs_2010_01_14",
+        "decision": "new",
+        "rationale": "Observation already maps to its own base_record_id route_bx12-plus, which is the canonical BX12 SBS record. The record already aliases route_bx12-sbs-2010-01-14 and lists 2010_01_14_brt_1st2nd_cac3 as a source. Block p016_c0011 shows a BX12 SBS bus; page heading p016_c0002 labels it 'Fordham Road Select Bus Service'.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_01_14_brt_1st2nd_cac3",
+            "block_id": "p016_c0011",
+            "source_quote": "A photograph of a New York City Select Bus Service (SBS) bus, route BX12, stopped at a curbside bus lane. The bus is white with blue and light blue accents, featuring the 'selectbusservice' logo. The destination sign displays 'BX12 BAY PLAZA CO-OP CITY'."
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_route",
+            "subject_id": "route_fordham-pelham-pkwy-sbs",
+            "object_id": "route_bx12-plus",
+            "description": "route_fordham-pelham-pkwy-sbs describes Fordham Road-Pelham Parkway Select Bus Service, which is the BX12 SBS route. Source p016 uses 'Fordham Road Select Bus Service' as the heading for a page whose photo (p016_c0011) clearly depicts a BX12 SBS bus, confirming the identity.",
+            "evidence_refs": [
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p016_c0002",
+                "source_quote": "Fordham Road Select Bus Service"
+              },
+              {
+                "source_id": "2010_01_14_brt_1st2nd_cac3",
+                "block_id": "p016_c0011",
+                "source_quote": "A photograph of a New York City Select Bus Service (SBS) bus, route BX12, stopped at a curbside bus lane. The bus is white with blue and light blue accents, featuring the 'selectbusservice' logo. The destination sign displays 'BX12 BAY PLAZA CO-OP CITY'."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T20-46-32-083Z_1744250-98916366_canonicalize_2026-06-10t17-48-04-658z-1496766-855f41d9-ingest-2010-01-14-brt-1st2nd-cac3-route-identity"
+}

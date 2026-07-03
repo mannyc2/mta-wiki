@@ -1,0 +1,54 @@
+{
+  "run_id": "2026-06-10T17-48-04-801Z_1496766-2e381e4b_ingest_2010-06-09-brt-1st2nd-cb11",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-10T19:46:18.904Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "dec-mta-nyct-2010",
+        "local_observation_id": "entity_mta_nyct_2010_06_09",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-nyct already exists in registry as a fully matching canonical record (entity_name: MTA New York City Transit, entity_type: agency). The registry record already has this source in source_ids and entity_mta-nyct-2010-06-09 as an alias. No different target to link to — the observation already resolves to its own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_09_brt_1st2nd_cb11",
+            "block_id": "p001_c0004",
+            "source_quote": "New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-nyc-dot-2010",
+        "local_observation_id": "entity_nyc_dot_2010_06_09",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot already exists in registry as a fully matching canonical record (entity_name: New York City Department of Transportation, entity_type: agency). The registry record already has this source in source_ids and entity_nyc-dot-2010-06-09 as an alias. No different target to link to — the observation already resolves to its own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_09_brt_1st2nd_cb11",
+            "block_id": "p002_c0003",
+            "source_quote": "NEW YORK CITY DOIT"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-cb11-manhattan-2010",
+        "local_observation_id": "entity_community_board_11_manhattan_2010_06_09",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_community-board-11-manhattan already exists in registry as a fully matching canonical record (entity_name: Community Board 11, Manhattan, entity_type: community board). The registry record already has this source in source_ids and entity_community-board-11-manhattan-2010-06-09 as an alias. No different target to link to — the observation already resolves to its own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_09_brt_1st2nd_cb11",
+            "block_id": "p001_c0002",
+            "source_quote": "Community Board 11 Public Safety & Transportation Committee Wednesday, June 9, 2010"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-43-55-642Z_1657335-70481915_canonicalize_2026-06-10t17-48-04-801z-1496766-2e381e4b-ingest-2010-06-09-brt-1st2nd-cb11-entity-identity"
+}

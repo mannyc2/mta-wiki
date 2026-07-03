@@ -1,0 +1,342 @@
+{
+  "note_id": "codex-identity-batch070-prep",
+  "batch": "identity-batch070",
+  "created_at": "2026-06-22T23:21:06Z",
+  "lane": "IDENTITY PREP ONLY",
+  "status": "prepared",
+  "checkpoint": "post-identity069-applied-materialized-validated",
+  "scope": {
+    "write_scope": [
+      "data/review_notes/codex-identity-batch070-prep.json"
+    ],
+    "excluded_outputs": [
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json",
+      "data/submission-overrides/retired.json",
+      "LOG.md",
+      "manifest",
+      "data/canonical",
+      "data/materialized",
+      "wiki",
+      "data/canonical.db"
+    ],
+    "prior_prep_disjoint_through_batch": "identity-batch069"
+  },
+  "context": {
+    "source_issue": "remaining duplicate entity identities after identity069 application",
+    "selection_policy": "high-confidence person entity aliases with exact full-name matches and compatible role/organization context; broad agencies, committees, initials-only people, combined-person records, and role-only/generated-name records were deferred.",
+    "canonical_entity_records_scanned": 2551,
+    "prior_prep_files_considered_through_batch069": 23,
+    "prior_prep_unique_records_excluded_through_batch069": 377,
+    "current_merges_entity_alias_count": 457,
+    "current_identity_aliases_entity_count": 457,
+    "current_do_not_merge_entity_pair_count": 20,
+    "selected_candidate_count": 8
+  },
+  "intended_mutation": {
+    "aliases": {
+      "entity": {
+        "entity_blanca-lopez-meeting-doc-151596": "entity_board-member-blanca-lopez-20231218",
+        "entity_rachel-cohen-meeting-doc-164791": "entity_meeting-doc-138391-rachel-cohen",
+        "entity_meeting-doc-205541-william-amarosa": "entity_meeting-doc-170981-amarosa",
+        "entity_robert-free-lirr": "entity_meeting-doc-129041-robert-free",
+        "entity_ray-burke-166966": "entity_meeting-doc-128991-ray-burke",
+        "entity_sheree-owens-166966": "entity_meeting-doc-143146-sheree-owens",
+        "entity_meeting-doc-190056-rafail-portnoy": "entity_mta-cto-portnoy",
+        "entity_sarah-feinberg-nyct-meeting-doc-42411": "entity_meeting-doc-29941-sarah-feinberg"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_blanca-lopez-meeting-doc-151596",
+      "target": "entity_board-member-blanca-lopez-20231218",
+      "validator_duplicate_key": "entity_blanca-lopez",
+      "reason": "Both records identify Blanca Lopez as a person and MTA committee chair/co-chair; the name differs only by accenting and the role context is compatible.",
+      "evidence_refs": [
+        "meeting_doc_151596#p001_c0006",
+        "meeting_doc_131506#p001_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_blanca-lopez"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch069": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_rachel-cohen-meeting-doc-164791",
+      "target": "entity_meeting-doc-138391-rachel-cohen",
+      "validator_duplicate_key": "entity_rachel-cohen",
+      "reason": "Both records identify Rachel Cohen as a person in NYC Transit paratransit leadership; the alias title is a shorter form of the target's merged Acting/Vice President Paratransit role context.",
+      "evidence_refs": [
+        "meeting_doc_164791#p009_c0003",
+        "meeting_doc_138391#p018_c0008"
+      ],
+      "shared_identity_keys": [
+        "entity_rachel-cohen"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch069": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-205541-william-amarosa",
+      "target": "entity_meeting-doc-170981-amarosa",
+      "validator_duplicate_key": "entity_william-amarosa",
+      "reason": "Both records identify William Amarosa as a person in NYCT Subways senior leadership; Senior Vice President, Subways is compatible with the target's merged SVP/Subways context.",
+      "evidence_refs": [
+        "meeting_doc_205541#p005_c0001",
+        "meeting_doc_170981#p001_c0018"
+      ],
+      "shared_identity_keys": [
+        "entity_william-amarosa"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch069": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_robert-free-lirr",
+      "target": "entity_meeting-doc-129041-robert-free",
+      "validator_duplicate_key": "entity_robert-free",
+      "reason": "Both records identify Robert Free as a person and Long Island Rail Road president/senior operations leader; the alias is a compact duplicate of the richer LIRR president target.",
+      "evidence_refs": [
+        "meeting_doc_140481#p006_c0003",
+        "meeting_doc_129041#p001_c0009"
+      ],
+      "shared_identity_keys": [
+        "entity_robert-free"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch069": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_ray-burke-166966",
+      "target": "entity_meeting-doc-128991-ray-burke",
+      "validator_duplicate_key": "entity_ray-burke",
+      "reason": "Both records identify Ray Burke as a person in MTA Diversity and Civil Rights, with matching Deputy Chief Diversity/Diversity and Inclusion Officer MWDBE contract-compliance context.",
+      "evidence_refs": [
+        "meeting_doc_166966#p043_c0004",
+        "meeting_doc_128991#p003_c0010"
+      ],
+      "shared_identity_keys": [
+        "entity_ray-burke"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch069": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_sheree-owens-166966",
+      "target": "entity_meeting-doc-143146-sheree-owens",
+      "validator_duplicate_key": "entity_sheree-owens",
+      "reason": "Both records identify Sheree Owens as a person in MTA Diversity and Civil Rights small-business program leadership; the title wording differs but describes the same Small Business Mentoring/Development role family.",
+      "evidence_refs": [
+        "meeting_doc_166966#p043_c0012",
+        "meeting_doc_143146#p003_c0006"
+      ],
+      "shared_identity_keys": [
+        "entity_sheree-owens"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch069": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-190056-rafail-portnoy",
+      "target": "entity_mta-cto-portnoy",
+      "validator_duplicate_key": "entity_rafail-portnoy",
+      "reason": "Both records identify Rafail Portnoy as a person and MTA Chief Technology Officer; the target already carries CTO/MTA IT context matching the alias.",
+      "evidence_refs": [
+        "meeting_doc_190056#p009_c0004",
+        "meeting_doc_105876#p187_c0002"
+      ],
+      "shared_identity_keys": [
+        "entity_rafail-portnoy"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch069": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_sarah-feinberg-nyct-meeting-doc-42411",
+      "target": "entity_meeting-doc-29941-sarah-feinberg",
+      "validator_duplicate_key": "entity_sarah-feinberg",
+      "reason": "Both records identify Sarah Feinberg as a person and Interim President of New York City Transit/NYCT; the alias is a duplicate of the target's same full-name and title identity.",
+      "evidence_refs": [
+        "meeting_doc_42411#p166_c0003",
+        "meeting_doc_29941#p210_c0004"
+      ],
+      "shared_identity_keys": [
+        "entity_sarah-feinberg"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch069": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    }
+  ],
+  "aggregate_guard_results": {
+    "candidate_count": 8,
+    "canonical_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "targets_not_alias_mapped_in_merges_json": true,
+    "targets_not_alias_mapped_in_identity_aliases_table": true,
+    "no_overlap_with_prior_prep_through_batch069": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 16,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 16,
+    "source_page_blocks_missing": [],
+    "all_pass": true
+  },
+  "commands_used_for_evidence": [
+    "git status --short",
+    "rg --files data/review_notes data/identity-overrides data/canonical packages",
+    "ls -la data/review_notes data/identity-overrides",
+    "jq 'keys, .note_id, .batch, .intended_mutation, (.decisions[0] // null), .aggregate_guard_results' data/review_notes/codex-identity-batch069-prep.json",
+    "jq '.aliases.entity | to_entries[0:20]' data/identity-overrides/merges.json",
+    "sed -n '1,80p' data/identity-overrides/do-not-merge.json",
+    "sed -n '1,5p' data/canonical/entities.jsonl",
+    "sqlite3 data/canonical.db '.tables'",
+    "sqlite3 data/canonical.db '.schema identity_aliases'",
+    "sqlite3 data/canonical.db '.schema records'",
+    "bun -e '<read-only candidate scan over data/canonical/entities.jsonl, data/review_notes/codex-identity-batch047-prep.json through codex-identity-batch069-prep.json, data/identity-overrides/merges.json, and data/identity-overrides/do-not-merge.json>'",
+    "bun -e '<read-only selected-record payload/evidence inspection for the 8 proposed aliases and targets>'",
+    "sed -n '1,40p' wiki/sources/meeting_doc_151596.md",
+    "jq 'select(.block_id==\"p001_c0006\")' raw/sources/meeting_doc_151596/blocks.jsonl",
+    "rg -n 'p001_c0006|Blanca|Ray Burke|Sheree Owens' wiki/sources/meeting_doc_151596.md",
+    "sqlite3 data/canonical.db \"select kind, alias, target from identity_aliases where kind='entity' and (alias in (...) or target in (...));\"",
+    "sqlite3 data/canonical.db \"select count(*) from identity_aliases where kind='entity';\"",
+    "bun -e '<read-only aggregate guard check for canonical presence, merges aliases, do-not-merge pairs, prior prep overlap through batch069, raw blocks, and source pages>'",
+    "wc -l data/canonical/entities.jsonl",
+    "date -u +%Y-%m-%dT%H:%M:%SZ"
+  ],
+  "commands_intentionally_not_run": [
+    "canonicalize",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "materialize",
+    "export-jsonl",
+    "full validate",
+    "DB repair/publish",
+    "any command with --profile",
+    "any provider-backed command"
+  ],
+  "deferred_low_confidence_examples": [
+    {
+      "alias": "entity_b-lopez-cgc-oct2025",
+      "target": "entity_b-lopez-committee-member",
+      "reason": "Initial-only person pair; likely related to Blanca Lopez but not enough full-name evidence for this high-confidence batch."
+    },
+    {
+      "alias": "entity_ellen-kirwin-meeting-doc-157721",
+      "target": "entity_ellen-kirwin-matthew-kirwin",
+      "reason": "Combined two-person entity; aliasing could collapse a compound record rather than a single person identity."
+    },
+    {
+      "alias": "entity_bridges-tunnels-committee-members-apr2026",
+      "target": "entity_bt-committee-members-sep2024",
+      "reason": "Committee membership roster records may vary by meeting/date; deferred to avoid broad committee aliasing in a person-only batch."
+    },
+    {
+      "alias": "entity_meeting-doc-114216-arro",
+      "target": "entity_arro-inc",
+      "reason": "Normalizer collision between a person name and ARRO Inc.; explicit false-positive pattern."
+    }
+  ]
+}

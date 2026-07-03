@@ -1,0 +1,224 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-157711"
+record_kind: "source"
+display_name: "November 2024 MTA Real Estate Finance Committee Agenda Items"
+source_id: "meeting_doc_157711"
+source_ids:
+  - "meeting_doc_157711"
+local_observation_id: "source_meeting_doc_157711"
+local_observation_ids:
+  - "source_meeting_doc_157711"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T20:36:18.162Z"
+submission_ids:
+  - "sub_07079dc3000258a3"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting agenda"
+  date_text: "NOVEMBER 2024"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2024-11"
+    precision: "month"
+    raw_text: "NOVEMBER 2024"
+  published_date_normalized: "2024-11"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "NOVEMBER 2024 MTA REAL ESTATE FINANCE COMMITTEE AGENDA ITEMS"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_157711#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_157711"
+    source_path: "raw/sources/meeting_doc_157711/blocks.jsonl"
+    text_sha256: "sha256:0a32df6998663d7e1bab7f191966dac5b871bba3d893cc7eea3af20a25a918f1"
+    text_source: "raw_text"
+---
+
+# Real estate action items
+
+source_id: meeting_doc_157711
+citation: cite block ids exactly as shown in square brackets
+document: 80 block(s)
+
+## Page 1
+
+### [p001_c0001] NOVEMBER 2024 MTA REAL ESTATE FINANCE COMMITTEE AGENDA ITEMS
+### [p001_c0002] 1. TRANSACTIONAL ACTION ITEMS
+### [p001_c0003] MTA Long Island Rail Road
+- [p001_c0004] a. License agreement with the Town of Oyster Bay for use of two parking lots in connection with the Hicksville Downtown Revitalization Initiative at Hicksville Station b. Grant of permanent easement agreement to Brookhaven Logistics Center, LLC for a sewer connection in Yaphank, NY c. License of land with Ellen Kirwin and Matt Kirwin for a residential use in Southampton, NY d. License of land with Hawkins Ave Development RHP2 LLC for a recreational use in Ronkonkoma, NY
+### [p001_c0005] 2. INFORMATION ITEMS
+- [p001_c0006] a. Fifth modification to the Option Agreement between B&T and the City of New York for property interests to facilitate improvements to the Robert F. Kennedy Bridge and its approaches on Randall's Island, NY b. Acquisition of temporary and permanent easements from the City of New York in support of Second Avenue Subway – Phase 2
+[p001_c0007]
+
+```text
+Legal Name Popular Name Abbreviation New York City Transit Authority MTA New York City Transit NYC Transit The Long Island Rail Road Company MTA Long Island Rail Road LIRR Metro-North Commuter Railroad Company MTA Metro-North Railroad MNR Triborough Bridge and Tunnel Authority MTA Bridges and Tunnels MTA B&T MTA Construction and Development Company MTA Construction and Development MTA C&D MTA Bus Company MTA Bus Company MTA Bus MTA Grand Central Madison Operating Company Grand Central Madison GCMC
+```
+[p001_c0008] Staten Island Rapid Transit Operating Authority is a subsidiary of the Metropolitan Transportation Authority. Its popular name is MTA Staten Island Railway (abbreviated as SIR).
+[p001_c0009] Manhattan and Bronx Surface Transit Operating Authority is a subsidiary of the New York City Transit Authority (abbreviated as MaBSTOA).
+
+## Page 2
+
+### [p002_c0001] MTA LONG ISLAND RAIL ROAD
+
+## Page 3
+
+### [p003_c0001] Staff Summary
+### [p003_c0002] Page 1 of 2
+[p003_c0003]
+
+```text
+Subject LICENSE AGREEMENT WITH THE TOWN OF OYSTER BAY FOR USE OF TWO PARKING LOTS IN CONNECTION WITH THE HICKSVILLE DOWNTOWN REVITALIZATION INITIATIVE AT HICKSVILLE STATION Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name SELINA STORZ
+```
+[p003_c0004]
+
+```text
+Date NOVEMBER 20, 2024 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p003_c0005]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 11/18/24 X 2 Board 11/20/24 X
+```
+[p003_c0006]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Administrative Officer 3 Chief Financial Officer
+```
+[p003_c0007] AGENCY: MTA Long Island Rail Road (“LIRR”) LICENSEE: Town of Oyster Bay (“Town”) LOCATION: LIRR’s Hicksville Station (“Station”), Town of Oyster Bay, Nassau County, New York PREMISES: Southern half of parking lot No. 008-9, approximately 69,533 square feet and all of parking lot No. 008-15, approximately 30,899 square feet USE: Construction and maintenance of a new pedestrian passageway and public open space along with a new festival plaza which will support seasonal activities and pop-up ventures
+[p003_c0008] ACTION REQUESTED: Approval to enter into a license agreement with the Town
+[p003_c0009] TERM: One (1) year, with automatic annual renewals
+[p003_c0010] COMPENSATION: None
+### [p003_c0011] COMMENTS:
+[p003_c0012] In an effort to improve, enhance, and revitalize the area surrounding the Station, the Town was awarded a grant for $8.7 million by the New York Department of State, under the NYS Downtown Revitalization Initiative to fund the design and construction of the Town’s Hicksville Downtown Revitalization Initiative (“Hicksville DRI”). In connection with the Hicksville DRI, the Town has requested to utilize the Premises, which LIRR currently leases to the Town for commuter parking pursuant to a Lease Agreement dated February 11, 1965.
+[p003_c0013] The Town has proposed to use the Premises to construct a new pedestrian passageway and public open space to establish a safer and more engaging walkway from the Station to Broadway and the Hicksville business district. The Town will install trees, seating, and a temporary pavilion which will enhance the public space and connect it to the adjacent Kennedy Park. This new festival plaza will also support seasonal activities and pop-up ventures that can be utilized by both residents and commuters. While the Hicksville DRI will not include the replacement of the parking to be displaced, the Town and LIRR intend to continue working together to evaluate future parking and station access needs at the Station pursuant to March 28, 2022 Memorandum of Understanding between the parties.
+
+## Page 4
+
+### [p004_c0001] Staff Summary
+### [p004_c0002] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle containing the white letters "MTA", followed by the text "Metropolitan Transportation Authority" in a black, sans-serif font.
+### [p004_c0003] FINANCE COMMITTEE MEETING
+### [p004_c0004] LICENSE AGREEMENT WITH THE TOWN OF OYSTER BAY FOR USE OF TWO PARKING LOTS IN CONNECTION WITH THE HICKSVILLE DOWNTOWN REVITALIZATION INITIATIVE AT HICKSVILLE STATION (Cont'd.)
+[p004_c0005] Page 2 of 2
+[p004_c0006] MTA Legal will draft appropriate documents in support of the transaction and the Town will provide the required insurance coverage and indemnification and comply with LIRR's operating requirements.
+[p004_c0007] MTA Real Estate is authorized to forego a public offering and enter into an agreement directly with the Town, pursuant to the MTA Real Estate Department's Policy and Procedures for the Licensing of Real Property under Circumstance 4, which provides for entering into license agreements with municipalities for municipal purposes.
+[p004_c0008] Based on the foregoing, MTA Real Estate hereby requests authorization to enter into a license agreement on behalf of LIRR with the Town under the above-described terms and conditions.
+
+## Page 5
+
+### [p005_c0001] Staff Summary
+### [p005_c0002] Metropolitan Transportation Authority
+### [p005_c0003] Page 1 of 1
+[p005_c0004]
+
+```text
+Subject GRANT OF A PERMANENT EASEMENT AGREEMENT TO BROOKHAVEN LOGISTICS CENTER, LLC FOR A SEWER CONNECTION IN YAPHANK, NY Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name XAVIER CARRERA
+```
+[p005_c0005]
+
+```text
+Date NOVEMBER 20, 2024 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p005_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 11/18/24 X 2 Board 11/20/24 X
+```
+[p005_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Administrative Officer 3 Chief Financial Officer
+```
+[p005_c0008] AGENCY: MTA Long Island Rail Road (“LIRR”) GRANTEE: Brookhaven Logistics Center, LLC (“Brookhaven”) LOCATION: 205 Sills Road, Yaphank, NY PREMISES: Approximately 1,360 square feet USE Installation of a sanitary sewer force main from the north side, under the tracks, to the south side of the tracks, to the public sewer facility ACTION REQUESTED: Authorization to grant a subsurface permanent easement to Brookhaven TERM: Perpetual COMPENSATION: $11,000 plus reimbursement for MTA’s appraisal and legal fees
+### [p005_c0009] COMMENTS:
+[p005_c0010] Brookhaven plans to develop a commercial property on the north side of the LIRR’s right-of-way, approximately 0.9 miles west of the Yaphank Station. In support of the development, Brookhaven requires a subsurface easement for the installation and operation of a sewer force main crossing LIRR property. The sewer connection will run from the north side of the LIRR right-of-way, underneath the tracks to the south side of the LIRR right-of-way and connect to the Suffolk County Sewer Authority public sewer facility. LIRR Engineering has reviewed the proposed development and sewer connection and has taken no exception.
+[p005_c0011] There was no public bidding for the Premises, however Public Authorities Law Section 2897(6)(c) allows public authorities to dispose of property by negotiation rather than by public bidding in certain circumstances, including where the value of the property to be disposed of does not exceed $15,000, which is the situation in this case.
+[p005_c0012] Based on the foregoing, MTA Real Estate requests authorization to enter into a subsurface permanent easement agreement, on behalf of the LIRR, with Brookhaven under the above-described terms and conditions.
+
+## Page 6
+
+### [p006_c0001] Staff Summary
+### [p006_c0002] Page 1 of 2
+[p006_c0003]
+
+```text
+Subject LICENSE OF LAND WITH ELLEN KIRWIN AND MATT KIRWIN FOR A PARCEL OF LAND LOCATED AT 100 HILLS STATION ROAD, SOUTHAMPTON, NY Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name SELINA STORZ
+```
+[p006_c0004]
+
+```text
+Date NOVEMBER 20, 2024 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p006_c0005]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 11/18/24 X 2 Board 11/20/24 X
+```
+[p006_c0006]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Administrative Officer 3 Chief Financial Officer
+```
+[p006_c0007] AGENCY: MTA Long Island Rail Road (“LIRR”) LICENSEE: Ellen Kirwin and Matthew Kirwin LOCATION: Former Shinnecock Hills Station, 100 Hills Station Rd, Southampton PREMISES: Approximately 15,700 square feet USE: Solely and exclusively for the use of yard areas and land under Licensee’s structures, which includes the former station building, used by Licensee as a year-round primary residence.
+[p006_c0008] ACTION REQUESTED: Authorization to enter into a license agreement with Ellen Kirwin and Matthew Kirwin TERM: Ten (10) years COMPENSATION: $3,768.00 per annum or $314 per month with 3% annual increases ($.24 per square foot)
+### [p006_c0009] COMMENTS:
+[p006_c0010] LIRR received a request from the current residential property owner at the former Shinnecock Hills Station for the renewal of the lease agreement dated June 26, 1998, for use of yard areas and land under Ellen Kirwin’s structures, situated on the south of the LIRR’s Montauk Branch right-of-way, approximately 300 feet east of Hills Station Road. The one-story frame building and garage that once served as the Shinnecock Hills Station were sold by the LIRR November 10, 1973 to Robert and Ellen Kirwin for use as their residential dwelling.
+[p006_c0011] LIRR has no objections to granting the license agreement. The new license agreement includes a termination for convenience clause, allowing the LIRR to terminate the agreement “at will” by providing 60 days notice. MTA Legal will draft the license agreement and Licensee will be required to provide appropriate insurance coverage and indemnification for the Use.
+[p006_c0012] The above compensation is in line with the market rates as determined by an independent Broker’s Opinion of Value conducted by MTA Real Estate’s consultant Greystone Management Solutions.
+
+## Page 7
+
+### [p007_c0001] Staff Summary
+### [p007_c0002] Metropolitan Transportation Authority
+### [p007_c0003] FINANCE COMMITTEE MEETING
+### [p007_c0004] LICENSE OF LAND WITH ELLEN KIRWIN AND MATT KIRWIN FOR A PARCEL OF LAND LOCATED AT 100 HILLS STATION ROAD, SOUTHAMPTON, NY (Cont'd)
+[p007_c0005] Page 2 of 2
+[p007_c0006] MTA Real Estate is authorized to forego a public offering and enter into an agreement directly with the Licensee pursuant to the MTA Real Estate Department's Policy and Procedures for the Licensing of Real Property under Circumstance 2, where the market rental value of the space, determined using standard practices, is less than $5,000 per year or $10.00 per square foot, whichever is greater. For this transaction the value per square foot is .24¢.
+[p007_c0007] Based on the foregoing, MTA Real Estate hereby requests authorization to enter into a license agreement on behalf of the LIRR with Ellen Kirwin and Matt Kirwin under the above-described terms and conditions.
+
+## Page 8
+
+### [p008_c0001] Staff Summary
+### [p008_c0002] Metropolitan Transportation Authority
+### [p008_c0003] Page 1 of 2
+[p008_c0004]
+
+```text
+Subject LICENSE OF LAND WITH HAWKINS AVE DEVELOPMENT RHP2 LLC FOR A RECREATIONAL USE IN RONKONKOMA, NY Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name ROBERT GOLDBERG
+```
+[p008_c0005]
+
+```text
+Date NOVEMBER 20, 2024 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p008_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 11/18/24 X 2 Board 11/20/24 X
+```
+[p008_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 3 Chief Administrative Officer 2 Chief Financial Officer
+```
+[p008_c0008] AGENCY: MTA Long Island Rail Road ("LIRR") LICENSEE: Hawkins Ave Development RHP2, LLC LOCATION: LIRR's Ronkonkoma Station, Ronkonkoma, NY PREMISES: Strip of land between LIRR's Ronkonkoma Station garage and a new development site ("Ronkonkoma Hub Development Property") just west of the garage, consisting of approximately 4,300 square feet USE: Recreational activity ACTION REQUESTED: Authorization to enter a license agreement with Hawkins Ave Development RHP2 COMPENSATION:
+[p008_c0009]
+
+```text
+License Year Monthly Rent Annual Rent Escalations 1 $806.25 $9,675.00 3% 2 $830.44 $9,965.25 3% 3 $855.35 $10,264.21 3% 4 $881.02 $10,572.14 3% 5 $907.45 $10,889.31 3% 6 $934.67 $11,215.99 3% 7 $962.71 $11,552.47 3% 8 $991.59 $11,899.05 3% 9 $1,021.34 $12,256.03 3% 10 $1,051.98 $12,623.71 3%
+```
+
+## Page 9
+
+### [p009_c0001] Staff Summary
+### [p009_c0002] Metropolitan Transportation Authority
+### [p009_c0003] FINANCE COMMITTEE MEETING
+### [p009_c0004] LICENSE OF LAND WITH HAWKINS AVE DEVELOPMENT RHP2 LLC FOR A RECREATIONAL USE IN RONKONKOMA, NY (Cont'd)
+[p009_c0005] Page 2 of 2
+### [p009_c0006] COMMENTS:
+[p009_c0007] MTA Real Estate received a request from Hawkins to license the Premises to the rear of the Ronkonkoma Hub Development property to improve LIRR's property with paving, a grassy area and lighting and create a dog run. The above compensation is the line with the market rates as determined by an independent Broker's Opinion of Value provided by MTA Real Estate consultant Greystone Management Solutions.
+[p009_c0008] MTA Real Estate is authorized to forego a public offering and enter into an agreement directly with Licensee, pursuant to the MTA Real Estate Department's Policy and Procedures for the Licensing of Real Property under Circumstance 2, where the market rental value of the space, determined using standard practices, is less than $5,000 per year or $10.00 per square foot, whichever is greater. For this transaction the value per square foot is $2.25.
+[p009_c0009] Based on the foregoing, MTA Real Estate requests authorization to enter into a license agreement on behalf of LIRR with Hawkins Ave Development RHP2, LLC under the above-described terms and conditions.

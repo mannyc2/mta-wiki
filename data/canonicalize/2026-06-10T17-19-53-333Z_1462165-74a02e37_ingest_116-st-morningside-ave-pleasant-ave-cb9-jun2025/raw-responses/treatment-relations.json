@@ -1,0 +1,12 @@
+{
+  "run_id": "2026-06-10T17-19-53-333Z_1462165-74a02e37_ingest_116-st-morningside-ave-pleasant-ave-cb9-jun2025",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-21T15:10:36.196Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "assistant_text",
+  "parse_error": "JSON Parse error: Unexpected identifier \"Now\"",
+  "raw_response": "Now I have all the evidence I need. Let me analyze each observation:\n\n**Document context**: This is a single presentation to CB9 titled \"116th Street Bus and Pedestrian Priority Project - Proposal\" (June 2025). All seven treatments are explicitly proposed as components of this project. The document header at p001_c0001: \"116 th Street Bus and Pedestrian Priority Project - Proposal\" establishes the project scope.\n\nLet me now verify each treatment's evidence:\n\n1. **Curbside Bus Lane** – p013_c0001: \"Proposed Curbside Bus Lane (3 Blocks)\" with cross-section diagram and map on Manhattan Av between 110th-116th St → part of the 116th St project\n2. **Pedestrian Plaza / Slip Lane** – p012_c0001: \"Proposed Pedestrian Space (1 Block)\" / \"Repurpose Slip Lane for Pedestrians and Potential Programming\" → part of the project\n3. **Concrete Pedestrian Islands** – p014_c0001: \"Proposed Concrete Pedestrian Islands (2)\" at Manhattan Av/Cathedral Parkway → part of the project\n4. **Bus Stop Removal** – p015_c0001: \"Proposed Bus Stop Removal on Manhattan Av. (1 stop)\" → part of the project\n5. **Painted Curb Extension** – p016_c0001: \"Proposed Painted Curb Extension (1 intersection)\" at Morningside & 116th → part of the project\n6. **Daylighting** – p018_c0001/p018_c0002: Curb regulations section, repurposing parking to daylight Morningside Ave & 116th St → part of the project\n7. **Bike Corral** – p018_c0002: \"Uses proposed pedestrian curb extension for bike corral for 18+ bicycles\" → part of the same daylighting treatment within the project\n\nAll seven are treatments within `project_116th-st-bus-pedestrian-priority`. The existing_relation_keys already confirm relations for 1, 2, 4, and variants of 3. Treatments 5, 6, 7 don't have existing relations yet.\n\nNow let me submit the final envelope:\n\n",
+  "transcript_dir": "data/transcripts/runs/2026-06-21T15-04-01-764Z_2836603-219672a5_canonicalize_2026-06-10t17-19-53-333z-1462165-74a02e37-ingest-116-st-morningside-ave-pleasant-ave-cb9-jun2025-treatment-relations"
+}

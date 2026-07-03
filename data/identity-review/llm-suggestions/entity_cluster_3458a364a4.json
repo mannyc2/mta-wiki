@@ -1,0 +1,92 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:36:17.991Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_3458a364a4.md",
+  "cluster_id": "entity_cluster_3458a364a4",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_3458a364a4",
+    "kind": "entity",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "entity_brooklyn-cb3-2011",
+          "entity_community-board-3-bronx-2012"
+        ],
+        "reason": "Different boroughs (Brooklyn vs Bronx) indicate distinct community boards. The shared entity_name 'Community Board 3' is insufficient to override this strong identity field per Identity Merge Canon contradiction test."
+      },
+      {
+        "record_ids": [
+          "entity_brooklyn-cb3-2011",
+          "entity_staten-island-community-board-3"
+        ],
+        "reason": "Different boroughs (Brooklyn vs Staten Island) indicate distinct community boards. The shared entity_name 'Community Board 3' is insufficient to override this strong identity field per Identity Merge Canon contradiction test."
+      },
+      {
+        "record_ids": [
+          "entity_community-board-3-bronx-2012",
+          "entity_staten-island-community-board-3"
+        ],
+        "reason": "Different boroughs (Bronx vs Staten Island) indicate distinct community boards. The shared entity_name 'Community Board 3' is insufficient to override this strong identity field per Identity Merge Canon contradiction test."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "entity_brooklyn-cb3-2011",
+        "aliases": [
+          "Community Board 3",
+          "entity_community-board-3"
+        ],
+        "reason": "These aliases lack the borough qualifier and are ambiguous across multiple Community Board 3 entities. Not merge-authoritative."
+      },
+      {
+        "record_id": "entity_community-board-3-bronx-2012",
+        "aliases": [
+          "Community Board 3",
+          "entity_community-board-3"
+        ],
+        "reason": "These aliases lack the borough qualifier and are ambiguous across multiple Community Board 3 entities. Not merge-authoritative."
+      },
+      {
+        "record_id": "entity_staten-island-community-board-3",
+        "aliases": [
+          "Community Board 3",
+          "entity_community-board-3"
+        ],
+        "reason": "These aliases lack the borough qualifier and are ambiguous across multiple Community Board 3 entities. Not merge-authoritative."
+      }
+    ],
+    "missing_fields": [
+      {
+        "record_id": "entity_brooklyn-cb3-2011",
+        "fields": [
+          "borough"
+        ]
+      },
+      {
+        "record_id": "entity_community-board-3-bronx-2012",
+        "fields": [
+          "borough"
+        ]
+      },
+      {
+        "record_id": "entity_staten-island-community-board-3",
+        "fields": [
+          "borough"
+        ]
+      }
+    ],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "The three records correspond to distinct Community Board 3 entities in different boroughs (Brooklyn, Bronx, Staten Island). Per the Identity Merge Canon's contradiction test, differing borough (a strong identity field) prevents merge. The shared entity_name 'Community Board 3' is a weak alias that does not override the borough distinction. No merge groups apply across borough lines. All cross-record pairs are do_not_merge."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-36-01-279Z_1282984-f0bbb91c_identity-review-run_entity-cluster-3458a364a4",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-36-01-279Z_2026-06-23T14-36-01-279Z_1282984-f0bbb91c_identity-review-run_entity-cluster-3458a364a4.jsonl"
+}

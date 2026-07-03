@@ -1,0 +1,351 @@
+{
+  "note_id": "codex-relation-rule-or-data-next3-prep-2026-06-22",
+  "created_at": "2026-06-22T00:00:00Z",
+  "author": "codex",
+  "scope": "validator/rule lane; artifact-only prep; no generated-output commands; no provider-backed post-ingest commands",
+  "kind": "scoped_code_test_patch_recommendation",
+  "recommendation": {
+    "type": "validator_rule_gap",
+    "relation_kind": "has_claim",
+    "current_rejected_shape": "event -> claim",
+    "candidate_count": 8,
+    "confidence": "high",
+    "summary": "Allow event records to carry source-backed claims via has_claim. The remaining eight rows are meeting events linked to claims discussed, reviewed, approved, delayed, or described during that meeting event. This is a narrow endpoint-shape gap analogous to the already accepted event-carrier shapes, and does not require widening unrelated relation kinds.",
+    "current_validator_rule": {
+      "subject_kinds": [
+        "project",
+        "route",
+        "corridor",
+        "entity",
+        "source"
+      ],
+      "object_kinds": [
+        "claim"
+      ],
+      "missing_subject_kind": "event"
+    },
+    "why_not_data_cleanup": [
+      "All eight subjects are canonical event records, and all eight objects are canonical claim records.",
+      "The relation kind is semantically direct: the meeting event has, reviews, discusses, or records the claim.",
+      "Four rows are already conductor-produced batch013 replacements for earlier malformed timeline relations, with descriptions explicitly preserving the event and claim endpoints as has_claim.",
+      "Replacing these rows again would add churn without correcting endpoint identity or relation direction."
+    ],
+    "exact_patch_plan": {
+      "files": [
+        "packages/pipeline/src/records/relations.ts",
+        "packages/pipeline/test/records/relations.test.ts"
+      ],
+      "relations_ts_change": "In RELATION_ENDPOINT_SHAPES.has_claim.subject, add \"event\" to the existing subject list. Keep the object list as [\"claim\"].",
+      "relations_test_change": "Add expect(relationEndpointShapeIssue(\"has_claim\", \"event\", \"claim\")).toBeUndefined(); to the relation helper accepted-shapes test. Add or update one negative assertion for has_claim so the expected-subject message includes event if the test asserts the full expected-subject string.",
+      "non_goals": [
+        "Do not widen has_metric claim -> metric_claim in this patch.",
+        "Do not widen has_timeline_event claim, treatment_component, or metric_claim subjects in this patch.",
+        "Do not change generated canonical/materialized outputs.",
+        "Do not run materialize, export-jsonl, full validate, provider/profile, or other post-ingest generated-output commands."
+      ]
+    }
+  },
+  "inventory_context": {
+    "method": "Targeted bun --eval over readCanonicalRecords() plus relationEndpointShapeIssue(); not full validate.",
+    "validator_patches_already_present": [
+      "has_metric event -> metric_claim",
+      "has_timeline_event source -> event",
+      "has_timeline_event event -> event"
+    ],
+    "pending_retirement_exclusions": {
+      "reason": "Batches 019, 020, and 021 are durable conductor inputs pending the next serialized materialize/export/validate checkpoint. Their retired submission ids were excluded where applicable to avoid duplicating already-queued data cleanup.",
+      "batch019": [
+        "sub_e3dacb50a35c909a",
+        "sub_e89670dffd7d2c1f",
+        "sub_7016900affdbe84b",
+        "sub_db7fc16a63375073",
+        "sub_e0a876b760de7c90",
+        "sub_8c46f2c816d59acb",
+        "sub_30d5c582a9cdb298",
+        "sub_a908bb1e54abe963",
+        "sub_f9db6ab4364cfbea"
+      ],
+      "batch020": [
+        "sub_86f5c96117b0a103",
+        "sub_c1f48c3e4bc60c39",
+        "sub_3fab7a286d7bf864",
+        "sub_8b1dc41f5fa93999"
+      ],
+      "batch021": [
+        "sub_1784665c44e4ab70",
+        "sub_21ce597aaf9ca2cd",
+        "sub_7e500fcbda984783",
+        "sub_144290e0a3313d4d"
+      ]
+    },
+    "targeted_issue_count_after_exclusions": 102,
+    "top_buckets_after_exclusions": [
+      {
+        "bucket": "has_claim event->claim",
+        "count": 8,
+        "classification": "validator_rule_gap_recommended_here"
+      },
+      {
+        "bucket": "has_metric claim->metric_claim",
+        "count": 8,
+        "classification": "defer; plausible next rule-gap review, but not bundled into this narrow has_claim patch"
+      },
+      {
+        "bucket": "implemented_by treatment_component->entity",
+        "count": 6,
+        "classification": "defer/data-likely; treatment components are not implemented projects under current rule"
+      },
+      {
+        "bucket": "has_metric source->metric_claim",
+        "count": 6,
+        "classification": "defer; source metric ownership needs separate evidence review"
+      },
+      {
+        "bucket": "has_timeline_event claim->event",
+        "count": 5,
+        "classification": "defer/data-likely based on batch020 precedent for claim timeline context"
+      }
+    ]
+  },
+  "candidate_rows": [
+    {
+      "record_id": "relation_batch013-cgc-reviews-ethics-codes-has-claim",
+      "submission_id": "sub_f596fa0fc3174d0f",
+      "source_id": "meeting_doc_135256",
+      "local_observation_id": "relation_batch013_cgc_reviews_ethics_codes_has_claim",
+      "subject": {
+        "id": "event_corporate-governance-committee-mtg-2024-03-25",
+        "kind": "event",
+        "display_name": "Corporate Governance Committee Meeting - March 25, 2024"
+      },
+      "object": {
+        "id": "claim_code-of-ethics-origin-and-revisions",
+        "kind": "claim",
+        "display_name": "MTA Code of Ethics Originally Adopted 2005"
+      },
+      "evidence_refs": [
+        "meeting_doc_135256#p002_c0012",
+        "meeting_doc_135256#p035_c0001",
+        "meeting_doc_135256#p036_c0002"
+      ],
+      "evidence_text": "4. REVIEW AND APPROVE MTA CODES OF ETHICS / All-Agency Code of Ethics / Originally Adopted May 25, 2005",
+      "reason": "The committee meeting event reviewed/approved a code-of-ethics claim."
+    },
+    {
+      "record_id": "relation_batch013-cgc-reviews-mission-report-has-claim",
+      "submission_id": "sub_992e3ba234ac6bd0",
+      "source_id": "meeting_doc_135256",
+      "local_observation_id": "relation_batch013_cgc_reviews_mission_report_has_claim",
+      "subject": {
+        "id": "event_corporate-governance-committee-mtg-2024-03-25",
+        "kind": "event",
+        "display_name": "Corporate Governance Committee Meeting - March 25, 2024"
+      },
+      "object": {
+        "id": "claim_mission-report-2023-annual-report",
+        "kind": "claim",
+        "display_name": "Mission Statement Report Submitted as Part of MTA 2023 Annual Report"
+      },
+      "evidence_refs": [
+        "meeting_doc_135256#p002_c0015",
+        "meeting_doc_135256#p108_c0002"
+      ],
+      "evidence_text": "5. REVIEW AND APPROVE MISSION STATEMENT AND PERFORMANCE MEASURE REPORT / Metropolitan Transportation Authority Mission Statement, Measurements, and Performance Indicators Report Covering Fiscal Year 2023",
+      "reason": "The meeting event carries a source-backed mission/performance report claim."
+    },
+    {
+      "record_id": "relation_batch013-cgc-reviews-procurement-guidelines-has-claim",
+      "submission_id": "sub_440d4de09181e644",
+      "source_id": "meeting_doc_135256",
+      "local_observation_id": "relation_batch013_cgc_reviews_procurement_guidelines_has_claim",
+      "subject": {
+        "id": "event_corporate-governance-committee-mtg-2024-03-25",
+        "kind": "event",
+        "display_name": "Corporate Governance Committee Meeting - March 25, 2024"
+      },
+      "object": {
+        "id": "claim_procurement-guidelines-no-revisions-2024",
+        "kind": "claim",
+        "display_name": "No proposed revisions to Procurement Guidelines"
+      },
+      "evidence_refs": [
+        "meeting_doc_135256#p002_c0008",
+        "meeting_doc_135256#p002_c0009",
+        "meeting_doc_135256#p005_c0014"
+      ],
+      "evidence_text": "3. REVIEW AND APPROVE PROCUREMENT GUIDELINES / Staff Summary Procurement Guidelines - Page 5 / It is recommended that the MTA Board approve the annexed All Agency Procurement Guidelines and All Agency Guidelines for Procurement of Services.",
+      "reason": "The meeting event reviews/approves a procurement-guidelines claim."
+    },
+    {
+      "record_id": "relation_batch013-cgc-reviews-whistleblower-policy-has-claim",
+      "submission_id": "sub_de4c9306524342e5",
+      "source_id": "meeting_doc_135256",
+      "local_observation_id": "relation_batch013_cgc_reviews_whistleblower_policy_has_claim",
+      "subject": {
+        "id": "event_corporate-governance-committee-mtg-2024-03-25",
+        "kind": "event",
+        "display_name": "Corporate Governance Committee Meeting - March 25, 2024"
+      },
+      "object": {
+        "id": "claim_whistleblower-policy-protection",
+        "kind": "claim",
+        "display_name": "Whistleblower Protection Policy"
+      },
+      "evidence_refs": [
+        "meeting_doc_135256#p002_c0018",
+        "meeting_doc_135256#p112_c0003",
+        "meeting_doc_135256#p112_c0006"
+      ],
+      "evidence_text": "6. REVIEW MTA WHISTLEBLOWER POLICY / WHISTLEBLOWER PROTECTION / To encourage and enable the reporting by MTA employees of wrongful acts, protect MTA employees from retaliation for whistleblowing and ensure that the MTA complies with applicable law protecting whistleblowers.",
+      "reason": "The meeting event carries a reviewed whistleblower-policy claim."
+    },
+    {
+      "record_id": "relation_meeting-doc-133146-claim-bus-enclosures",
+      "submission_id": "sub_4628e4397c1fcdbb",
+      "source_id": "meeting_doc_133146",
+      "local_observation_id": "relation_meeting_doc_133146_claim_bus_enclosures",
+      "subject": {
+        "id": "event_meeting-doc-133146-safety-committee",
+        "kind": "event",
+        "display_name": "MTA Safety Committee Meeting - November 2023"
+      },
+      "object": {
+        "id": "claim_meeting-doc-133146-bus-operator-enclosures",
+        "kind": "claim",
+        "display_name": "Bus operator enclosures status"
+      },
+      "evidence_refs": [
+        "meeting_doc_133146#p002_c0015",
+        "meeting_doc_133146#p003_c0001"
+      ],
+      "evidence_text": "Board Member Albert asked about the status of bus operator enclosures and whether a pilot program has begun on any routes. Mr. Warren stated that the enclosures have been designed and installed in several busses. / improvements have been made to the enclosures. Robert Diehl spoke briefly about the full enclosure that is still being evaluated but will be coming soon.",
+      "reason": "The safety committee meeting event records a bus-operator-enclosure status claim."
+    },
+    {
+      "record_id": "relation_meeting-doc-133146-claim-fare-evasion",
+      "submission_id": "sub_41c52425c147a295",
+      "source_id": "meeting_doc_133146",
+      "local_observation_id": "relation_meeting_doc_133146_claim_fare_evasion",
+      "subject": {
+        "id": "event_meeting-doc-133146-safety-committee",
+        "kind": "event",
+        "display_name": "MTA Safety Committee Meeting - November 2023"
+      },
+      "object": {
+        "id": "claim_meeting-doc-133146-fare-evasion-deferred",
+        "kind": "claim",
+        "display_name": "Fare Evasion briefing deferred"
+      },
+      "evidence_refs": [
+        "meeting_doc_133146#p002_c0007"
+      ],
+      "evidence_text": "Chair Lieber asked if there are any changes to the Work Plan. Patrick Warren stated there was a change to the plan. Fare Evasion was originally going to be briefed but will be done next month in a different venue.",
+      "reason": "The meeting event records a claim about the fare-evasion briefing being deferred."
+    },
+    {
+      "record_id": "relation_meeting-doc-133146-claim-minutes-delayed",
+      "submission_id": "sub_344717b796ec7d3a",
+      "source_id": "meeting_doc_133146",
+      "local_observation_id": "relation_meeting_doc_133146_claim_minutes_delayed",
+      "subject": {
+        "id": "event_meeting-doc-133146-safety-committee",
+        "kind": "event",
+        "display_name": "MTA Safety Committee Meeting - November 2023"
+      },
+      "object": {
+        "id": "claim_meeting-doc-133146-minutes-delayed",
+        "kind": "claim",
+        "display_name": "Minutes approval delayed"
+      },
+      "evidence_refs": [
+        "meeting_doc_133146#p002_c0005"
+      ],
+      "evidence_text": "Chair Lieber stated there was no quorum, so approval of the minutes from the July 2023 Safety Committee would be delayed until a time a quorum is present.",
+      "reason": "The meeting event records a procedural claim about minutes approval."
+    },
+    {
+      "record_id": "relation_meeting-doc-133146-claim-policing",
+      "submission_id": "sub_80977fc50b3e3719",
+      "source_id": "meeting_doc_133146",
+      "local_observation_id": "relation_meeting_doc_133146_claim_policing",
+      "subject": {
+        "id": "event_meeting-doc-133146-safety-committee",
+        "kind": "event",
+        "display_name": "MTA Safety Committee Meeting - November 2023"
+      },
+      "object": {
+        "id": "claim_meeting-doc-133146-policing-model",
+        "kind": "claim",
+        "display_name": "Policing arrangement description"
+      },
+      "evidence_refs": [
+        "meeting_doc_133146#p003_c0003"
+      ],
+      "evidence_text": "Chair Lieber pointed out we are in control of policing with MTAPD on the commuter railroads and partner with NYPD in the subways, and work to deter employee assaults.",
+      "reason": "The meeting event records a source-backed claim about policing arrangements."
+    }
+  ],
+  "deferred_neighbor_bucket": {
+    "bucket": "has_metric claim->metric_claim",
+    "count": 8,
+    "sample_submission_ids": [
+      "sub_849055eddb6a2cc2",
+      "sub_022b0f01c3748c7b",
+      "sub_4ec4e7c061b86107",
+      "sub_e42bbd2e38aeaea2"
+    ],
+    "why_deferred": "This bucket may also be a validator rule gap because claims can carry metrics, but it has different semantics from event-owned claims and should receive its own evidence-backed prep rather than being bundled into the has_claim event-subject patch."
+  },
+  "commands_run": [
+    {
+      "command": "sed -n '228,282p' packages/pipeline/src/records/relations.ts",
+      "outcome": "Confirmed has_metric event -> metric_claim, has_timeline_event source -> event, and has_timeline_event event -> event are present; has_claim still omits event subjects."
+    },
+    {
+      "command": "sed -n '52,78p' packages/pipeline/test/records/relations.test.ts",
+      "outcome": "Confirmed tests cover the three applied validator patches and do not cover has_claim event -> claim."
+    },
+    {
+      "command": "rg -n \"relation-rule-or-data-next2|has_claim event|has_metric claim|has_timeline_event event|batch020|batch019\" LOG.md data/review_notes packages/pipeline/src/records/relations.ts packages/pipeline/test/records/relations.test.ts -g '*.md' -g '*.json' -g '*.jsonl' -g '*.ts'",
+      "outcome": "Found current rule/data context, including pending relation batches and the previous event-timeline prep."
+    },
+    {
+      "command": "sed -n '28,72p' LOG.md",
+      "outcome": "Confirmed relation batches019,020,021 are durable conductor inputs pending materialize, and that the three validator patches named in this task are applied."
+    },
+    {
+      "command": "bun --eval 'import { readCanonicalRecords } from \"./packages/pipeline/src/materialize/materialize.ts\"; import { relationEndpointShapeIssue } from \"./packages/pipeline/src/records/relations.ts\"; ... targeted endpoint-shape inventory excluding batches019-021 retire ids ...'",
+      "outcome": "Targeted inventory only: 102 unexpected endpoint-shape rows after exclusions. Top buckets were has_claim event->claim count 8 and has_metric claim->metric_claim count 8."
+    },
+    {
+      "command": "bun --eval 'import { readCanonicalRecords } from \"./packages/pipeline/src/materialize/materialize.ts\"; import { relationEndpointShapeIssue } from \"./packages/pipeline/src/records/relations.ts\"; ... print has_claim event->claim and has_metric claim->metric_claim rows ...'",
+      "outcome": "Printed all rows in the top two buckets, including record ids, submission ids, endpoint ids/kinds, display names, and evidence refs."
+    },
+    {
+      "command": "jq -r 'select(.block_id==\"p002_c0012\" or .block_id==\"p035_c0001\" or .block_id==\"p036_c0002\" or .block_id==\"p002_c0015\" or .block_id==\"p108_c0002\" or .block_id==\"p002_c0008\" or .block_id==\"p002_c0009\" or .block_id==\"p005_c0014\" or .block_id==\"p002_c0018\" or .block_id==\"p112_c0003\" or .block_id==\"p112_c0006\") | {ref:(.source_id+\"#\"+.block_id), text:.raw_text} | @json' raw/sources/meeting_doc_135256/blocks.jsonl",
+      "outcome": "Retrieved exact evidence text for the four Corporate Governance Committee meeting has_claim rows."
+    },
+    {
+      "command": "jq -r 'select(.block_id==\"p002_c0015\" or .block_id==\"p003_c0001\" or .block_id==\"p002_c0007\" or .block_id==\"p002_c0005\" or .block_id==\"p003_c0003\") | {ref:(.source_id+\"#\"+.block_id), text:.raw_text} | @json' raw/sources/meeting_doc_133146/blocks.jsonl",
+      "outcome": "Retrieved exact evidence text for the four Safety Committee meeting has_claim rows."
+    },
+    {
+      "command": "jq -r '.decisions[]?.retired_submission_id' data/review_notes/codex-relation-cleanup-batch021-prep.json",
+      "outcome": "No output because this prep artifact does not expose those ids under that path; batch021 retire ids were taken from LOG and the batch021 prep text."
+    }
+  ],
+  "commands_not_run": [
+    "materialize",
+    "export-jsonl",
+    "full validate",
+    "canonicalize",
+    "dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "provider/profile commands"
+  ],
+  "blockers": []
+}

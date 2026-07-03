@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "review_state": "accepted",
+  "accepted_at": "2026-06-08T21:21:36.731Z",
+  "reviewer": "codex-audit-2026-06-08",
+  "source": "audit_safe_to_promote",
+  "cluster_id": "entity_cluster_004",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_004.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_004.json",
+  "source_review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Flash",
+  "action_summary": {
+    "merge_group_count": 1,
+    "do_not_merge_count": 0,
+    "weak_alias_count": 2,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [
+    [
+      "entity_governor-kathy-hochul",
+      "entity_kathy-hochul-open-data-plan"
+    ]
+  ],
+  "do_not_merge": [],
+  "weak_aliases": [
+    {
+      "record_id": "entity_governor-kathy-hochul",
+      "aliases": [
+        "Governor Kathy Hochul",
+        "Governor Hochul",
+        "Kathy Hochul"
+      ],
+      "reason": "Useful for search, not merge authority."
+    },
+    {
+      "record_id": "entity_kathy-hochul-open-data-plan",
+      "aliases": [
+        "Kathy Hochul",
+        "Governor of New York State",
+        "The Honorable Kathy Hochul"
+      ],
+      "reason": "Useful for search, not merge authority."
+    }
+  ],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [
+    "Merge entity records when they share the same canonical identity key (entity_kathy-hochul) and refer to the same named individual with the same official title and jurisdiction.",
+    "Minor entity_type differences (government_official vs person) are classification variants not identity barriers."
+  ],
+  "rationale": "Both records refer to the same person: Kathy Hochul, Governor of New York State. The shared identity key entity_kathy-hochul is decisive. Payload fields show the same name ('Kathy Hochul'), same office ('Governor of New York State'), and same policy context (MTA Open Data Act/Law). The entity_type difference (government_official vs person) is a classification label, not an identity distinction. Source evidence from open_data_plan_2022 (addressee) and open_data_lessons_2026/open_data_plan_2024_update/open_data_plan_2025_update (signatory context) all describe the same individual. Merge recommended with high confidence."
+}

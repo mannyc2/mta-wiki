@@ -1,0 +1,48 @@
+{
+  "run_id": "2026-06-10T23-03-13-561Z_1976810-31a3769a_ingest_2012-06-25-brt-woodhaven-publicworkshop2-presentation",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T02:43:07.596Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d_woodhaven_cross_bay_sbs",
+        "local_observation_id": "project_woodhaven_cross_bay_sbs",
+        "decision": "new",
+        "rationale": "The observation's base_record_id (project_woodhaven-cross-bay-sbs) already matches an existing registry card with identical project_name, project_type, status, borough, and description. Per identity-canonicalization rules, when the closest match IS the observation's own base_record_id, the decision is new — the observation already resolves to that canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p001_c0001",
+            "source_quote": "Woodhaven / Cross Bay Boulevards"
+          },
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p007_c0001",
+            "source_quote": "Long Term: Select Bus Service"
+          },
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p007_c0002",
+            "source_quote": "Many corridor issues need to be addressed in a capital project"
+          },
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p007_c0003",
+            "source_quote": "SBS project will look at all potential changes, focusing on:"
+          },
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p007_c0004",
+            "source_quote": "• Faster bus service • Safer streets for pedestrians and drivers • Maintaining appropriate traffic flow for local and through drivers"
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-42-08-828Z_2111393-9559f802_canonicalize_2026-06-10t23-03-13-561z-1976810-31a3769a-ingest-2012-06-25-brt-woodhaven-publicworkshop2-presentation-project-identity"
+}

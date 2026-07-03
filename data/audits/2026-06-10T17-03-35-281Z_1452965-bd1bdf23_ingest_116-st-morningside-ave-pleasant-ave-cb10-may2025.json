@@ -1,0 +1,100 @@
+{
+  "run_id": "2026-06-10T17-03-35-281Z_1452965-bd1bdf23_ingest_116-st-morningside-ave-pleasant-ave-cb10-may2025",
+  "submission_path": "data/submissions/2026-06-10T17-03-35-281Z_1452965-bd1bdf23_ingest_116-st-morningside-ave-pleasant-ave-cb10-may2025.jsonl",
+  "transcript_path": "data/transcripts/runs/2026-06-10T17-03-35-281Z_1452965-bd1bdf23_ingest_116-st-morningside-ave-pleasant-ave-cb10-may2025/events.jsonl",
+  "source_ids": [
+    "116_st_morningside_ave_pleasant_ave_cb10_may2025"
+  ],
+  "rows": 92,
+  "state_counts": {
+    "accepted": 88,
+    "rejected": 4
+  },
+  "observation_kind_counts": {
+    "source": 1,
+    "entity": 4,
+    "project": 1,
+    "corridor": 1,
+    "route": 10,
+    "treatment_component": 9,
+    "event": 6,
+    "metric_claim": 22,
+    "claim": 4,
+    "relation": 34
+  },
+  "evidence_ref_count": 102,
+  "unique_evidence_block_count": 26,
+  "evidence_text_source_counts": {
+    "raw_text": 102
+  },
+  "evidence_source_surface_counts": {
+    "chandra_ocr": 102
+  },
+  "evidence_block_kind_counts": {
+    "heading": 18,
+    "footnote": 12,
+    "text": 3,
+    "list_item": 64,
+    "figure": 2,
+    "table": 3
+  },
+  "max_evidence_refs_per_observation": 3,
+  "transcript": {
+    "found": true,
+    "normalization_skipped": false,
+    "read_source_calls": 0,
+    "search_source_calls": 0,
+    "read_evidence_calls": 0,
+    "submit_observation_calls": 0,
+    "read_source_returned_blocks": [],
+    "read_evidence_block_ids": []
+  },
+  "usage": {
+    "request_count": 26,
+    "total_tokens": 1562106,
+    "estimated_cost": 0.0548235,
+    "accepted_per_1k_tokens": 0.0563342052331916,
+    "cost_per_accepted_submission": 0.0006229943181818181
+  },
+  "warnings": [
+    {
+      "code": "payload_field_not_in_evidence",
+      "message": "Payload field entity_name=\"Manhattan Community Board 10\" is not textually present in the cited evidence. This may be valid normalization, but it needs human review.",
+      "source_id": "116_st_morningside_ave_pleasant_ave_cb10_may2025",
+      "local_observation_id": "entity_community_board_10_manhattan_may2025",
+      "observation_kind": "entity"
+    },
+    {
+      "code": "rejected_submission",
+      "message": "metric_claim payload with raw_value_text should include normalized numeric value or value_min/value_max",
+      "source_id": "116_st_morningside_ave_pleasant_ave_cb10_may2025",
+      "local_observation_id": "metric_17900_plus_ft2_painted_pedestrian_space_may2025",
+      "observation_kind": "metric_claim"
+    },
+    {
+      "code": "rejected_submission",
+      "message": "metric_claim payload with raw_value_text should include normalized numeric value or value_min/value_max",
+      "source_id": "116_st_morningside_ave_pleasant_ave_cb10_may2025",
+      "local_observation_id": "metric_1450_plus_ft2_concrete_pedestrian_space_may2025",
+      "observation_kind": "metric_claim"
+    },
+    {
+      "code": "rejected_submission",
+      "message": "metric_claim payload with raw_value_text should include normalized numeric value or value_min/value_max",
+      "source_id": "116_st_morningside_ave_pleasant_ave_cb10_may2025",
+      "local_observation_id": "metric_17900_plus_ft2_painted_pedestrian_space_may2025",
+      "observation_kind": "metric_claim"
+    },
+    {
+      "code": "rejected_submission",
+      "message": "metric_claim payload with raw_value_text should include normalized numeric value or value_min/value_max",
+      "source_id": "116_st_morningside_ave_pleasant_ave_cb10_may2025",
+      "local_observation_id": "metric_1450_plus_ft2_concrete_pedestrian_space_may2025",
+      "observation_kind": "metric_claim"
+    },
+    {
+      "code": "normalization_not_skipped",
+      "message": "Transcript does not show ingest-time normalization being skipped."
+    }
+  ]
+}

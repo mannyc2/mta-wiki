@@ -1,0 +1,378 @@
+{
+  "note_id": "codex-canonical-cleanup-2026-06-22-identity-alias-batch-048-prep",
+  "created_at": "2026-06-22T21:10:00Z",
+  "author": "codex",
+  "scope": "Codex-only identity cleanup lane; next batch prep after durable identity batches043-047",
+  "kind": "identity_alias_batch_prep",
+  "status": "ready_for_conductor_apply",
+  "current_checkpoint_context": {
+    "validation_issue_count": 1672,
+    "issue_counts_by_code": {
+      "unexpected_relation_endpoint_shape": 77,
+      "duplicate_global_identity": 1595
+    },
+    "note": "Checkpoint supplied by conductor; this prep did not run materialize, export-jsonl, or full validate."
+  },
+  "intended_mutation_path": "data/identity-overrides/merges.json",
+  "merge_patch": {
+    "aliases": {
+      "entity": {
+        "entity_164896-donna-mason": "entity_donna-mason-102766",
+        "entity_ahern-painting-contractors-44201": "entity_ahern-painting-contractors",
+        "entity_daniel-decrecenzo": "entity_daniel-decrescenzo",
+        "entity_donald-look-svp-internal-affairs": "entity_donald-look-115226",
+        "entity_exp-urbahn-jv-208006": "entity_exp-urbahn-jv-206071",
+        "entity_holden-rosen-grupp-meeting-doc-201731": "entity_holden-rosen-grupp-meeting-doc-201706",
+        "entity_holden-rosen-grupp-meeting-doc-205666": "entity_holden-rosen-grupp-meeting-doc-201706",
+        "entity_jacob-luce-omb-194031": "entity_jacob-luce-meeting-doc-194026",
+        "entity_judlau-contracting-jan2026": "entity_judlau-contracting",
+        "entity_lawrence-montreuil-meeting-doc-201541": "entity_lawrence-montreuil-meeting-doc-199076"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_ahern-painting-contractors-44201",
+      "target": "entity_ahern-painting-contractors",
+      "validator_duplicate_key": "entity_ahern-painting-contractors-inc",
+      "reason": "Same Ahern Painting Contractors, Inc. contractor identity; both records use the exact legal contractor name and bridge/painting contractor context.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_44201",
+          "block_id": "p058_c0003"
+        },
+        {
+          "source_id": "meeting_doc_52711",
+          "block_id": "p007_c0012"
+        },
+        {
+          "source_id": "meeting_doc_52711",
+          "block_id": "p008_c0002"
+        }
+      ],
+      "guard_results": {
+        "canonical_records_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_daniel-decrecenzo",
+      "target": "entity_daniel-decrescenzo",
+      "validator_duplicate_key": "entity_daniel-f-decrescenzo-jr",
+      "reason": "Same Daniel F. DeCrescenzo, Jr. person identity; target preserves already-merged Daniel/DeCrescenzo name variants and TBTA/MTA Bridges and Tunnels president context.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_104711",
+          "block_id": "p004_c0007"
+        },
+        {
+          "source_id": "meeting_doc_107566",
+          "block_id": "p004_c0008"
+        },
+        {
+          "source_id": "meeting_doc_100256",
+          "block_id": "p004_c0007"
+        },
+        {
+          "source_id": "meeting_doc_106151",
+          "block_id": "p011_c0002"
+        }
+      ],
+      "guard_results": {
+        "canonical_records_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_donald-look-svp-internal-affairs",
+      "target": "entity_donald-look-115226",
+      "validator_duplicate_key": "entity_donald-e-look",
+      "reason": "Same Donald E. Look person identity; both records name Donald E. Look in senior security/internal-affairs roles at TBTA/MTA Bridges and Tunnels.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_151591",
+          "block_id": "p004_c0008"
+        },
+        {
+          "source_id": "meeting_doc_115226",
+          "block_id": "p004_c0007"
+        }
+      ],
+      "guard_results": {
+        "canonical_records_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_164896-donna-mason",
+      "target": "entity_donna-mason-102766",
+      "validator_duplicate_key": "entity_donna-y-mason",
+      "reason": "Same Donna Y. Mason person identity; target already preserves Donna Mason / Donna Y Mason variants and project-manager role context.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_164896",
+          "block_id": "p001_c0003"
+        },
+        {
+          "source_id": "meeting_doc_194101",
+          "block_id": "p001_c0003"
+        },
+        {
+          "source_id": "meeting_doc_102766",
+          "block_id": "p001_c0004"
+        },
+        {
+          "source_id": "meeting_doc_128906",
+          "block_id": "p001_c0003"
+        }
+      ],
+      "guard_results": {
+        "canonical_records_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_exp-urbahn-jv-208006",
+      "target": "entity_exp-urbahn-jv-206071",
+      "validator_duplicate_key": "entity_exp-urbahn-joint-venture",
+      "reason": "Same EXP-Urbahn Joint Venture identity; both records use the exact joint-venture name in design/engineering services for accessibility improvement contracts.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_208006",
+          "block_id": "p012_c0006"
+        },
+        {
+          "source_id": "meeting_doc_206071",
+          "block_id": "p051_c0005"
+        },
+        {
+          "source_id": "meeting_doc_206071",
+          "block_id": "p051_c0007"
+        }
+      ],
+      "guard_results": {
+        "canonical_records_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_holden-rosen-grupp-meeting-doc-201731",
+      "target": "entity_holden-rosen-grupp-meeting-doc-201706",
+      "validator_duplicate_key": "entity_holden-rosen-grupp",
+      "reason": "Same Holden Rosen Grupp business/vendor identity; exact entity name matches and target anchors the retail leasing context.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_201731",
+          "block_id": "p001_c0003"
+        },
+        {
+          "source_id": "meeting_doc_201706",
+          "block_id": "p016_c0007"
+        },
+        {
+          "source_id": "meeting_doc_201706",
+          "block_id": "p016_c0011"
+        }
+      ],
+      "guard_results": {
+        "canonical_records_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_holden-rosen-grupp-meeting-doc-205666",
+      "target": "entity_holden-rosen-grupp-meeting-doc-201706",
+      "validator_duplicate_key": "entity_holden-rosen-grupp",
+      "reason": "Same Holden Rosen Grupp tenant/business identity; exact entity name matches the 201706 and 201731 leasing/vendor records.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_205666",
+          "block_id": "p006_c0011"
+        },
+        {
+          "source_id": "meeting_doc_201706",
+          "block_id": "p016_c0007"
+        },
+        {
+          "source_id": "meeting_doc_201706",
+          "block_id": "p016_c0011"
+        }
+      ],
+      "guard_results": {
+        "canonical_records_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_jacob-luce-omb-194031",
+      "target": "entity_jacob-luce-meeting-doc-194026",
+      "validator_duplicate_key": "entity_jacob-luce-omb",
+      "reason": "Same Jacob Luce person identity; both records identify Jacob Luce in OMB / Office of Management and Budget context.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_194031",
+          "block_id": "p001_c0004"
+        },
+        {
+          "source_id": "meeting_doc_194026",
+          "block_id": "p001_c0004"
+        }
+      ],
+      "guard_results": {
+        "canonical_records_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_judlau-contracting-jan2026",
+      "target": "entity_judlau-contracting",
+      "validator_duplicate_key": "entity_judlau-contracting-inc",
+      "reason": "Same Judlau Contracting, Inc. contractor/company identity; target already carries merged contractor/vendor variants and broader accessibility/structural-work evidence.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_197456",
+          "block_id": "p017_c0005"
+        },
+        {
+          "source_id": "meeting_doc_105871",
+          "block_id": "p003_c0002"
+        },
+        {
+          "source_id": "meeting_doc_105871",
+          "block_id": "p025_c0003"
+        }
+      ],
+      "guard_results": {
+        "canonical_records_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_lawrence-montreuil-meeting-doc-201541",
+      "target": "entity_lawrence-montreuil-meeting-doc-199076",
+      "validator_duplicate_key": "entity_lawrence-j-montreuil",
+      "reason": "Same Lawrence J. Montreuil person identity; both records carry the same MTA Procurement assistant deputy chief procurement officer title.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_201541",
+          "block_id": "p001_c0003"
+        },
+        {
+          "source_id": "meeting_doc_199076",
+          "block_id": "p001_c0003"
+        }
+      ],
+      "guard_results": {
+        "canonical_records_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true
+      },
+      "confidence": "high"
+    }
+  ],
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "canonical_records_present": true,
+    "aliases_not_already_merged": true,
+    "targets_not_aliases_in_merges_json": true,
+    "do_not_merge_guard_hits": 0,
+    "target_records_present": true,
+    "raw_source_blocks_checked": 29,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 29,
+    "source_page_blocks_missing": [],
+    "shared_identity_keys_present": true,
+    "confidence": "high"
+  },
+  "deferred_low_confidence_or_scope_review": [
+    "Community board, committee, department, authority, program, broad agency, route-variant, and Better Buses/program label clusters were skipped.",
+    "Grand Central Madison agency/station/operator collisions were skipped because station/facility/operator identities may be distinct.",
+    "Cubic Corporation versus Cubic Transportation Systems was skipped because target selection and corporate/subsidiary identity need a separate review.",
+    "MTA operating-agency and subsidiary records were skipped unless the exact vendor/person identity was clear."
+  ],
+  "commands_run_for_this_prep": [
+    "git status --short -- data/identity-overrides/merges.json data/identity-overrides/do-not-merge.json data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl data/review_notes/codex-identity-batch048-prep.json",
+    "tail -n 20 data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl",
+    "rg -n \"identity-alias-batch-04[3-7]|batch048|1672|1595|unexpected_relation_endpoint_shape\" data/review_notes data/post-ingest data/campaigns -g '*.jsonl' -g '*.json' -g '*.md'",
+    "sqlite3 data/canonical.db \"select record_kind, count(*) from records group by record_kind order by record_kind; select count(*) as identity_aliases from identity_aliases; select count(*) as do_not_merge from do_not_merge; pragma quick_check;\"",
+    "sed -n '1,260p' data/review_notes/codex-identity-batch047-prep.json",
+    "jq '.aliases.entity | length, to_entries[-30:]' data/identity-overrides/merges.json",
+    "jq '.pairs.entity | length, .[-20:]' data/identity-overrides/do-not-merge.json",
+    "ls data/review_notes | rg 'batch04[3-8]|identity'",
+    "bun --eval deterministic duplicate mining over readCanonicalRecords plus identityKeysForRecord and identityDoNotMergeOverrideIssueSuppressed; filtered to exact entity/person/vendor/company candidates",
+    "sqlite3 data/canonical.db selected candidate payload/evidence_refs inspection",
+    "bun --eval exact batch048 guard script checking active records, alias absence, target-not-alias, do-not-merge hits, shared identity keys, raw blocks, and source-page blocks"
+  ],
+  "commands_not_run": [
+    "materialize",
+    "export-jsonl --verify",
+    "full validate",
+    "canonicalize",
+    "campaign dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "provider/profile post-ingest commands"
+  ],
+  "conductor_apply_note": "Apply only after conductor re-runs the same guards against the then-current merges/do-not-merge files. This prep intentionally does not edit generated canonical JSONL, canonical.db, wiki pages, source pages, or LOG.md."
+}

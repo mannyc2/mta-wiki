@@ -1,0 +1,54 @@
+{
+  "run_id": "2026-06-10T23-18-19-084Z_1976810-cbcf36ef_ingest_2013-09-19-sbs-utica-cb17",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T03:58:36.613Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "dec-1-nyc-dot",
+        "local_observation_id": "entity_2013_09_19_nyc_dot_utica_cb17",
+        "decision": "new",
+        "rationale": "Observation resolves to base_record_id entity_nyc-dot which matches existing registry card entity_nyc-dot (New York City Department of Transportation). The observation already resolves to this canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19_sbs_utica_cb17",
+            "block_id": "p001_c0001",
+            "source_quote": "New York City Department of Transportation (NYC DOT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-2-cb17-brooklyn",
+        "local_observation_id": "entity_2013_09_19_cb17_brooklyn",
+        "decision": "new",
+        "rationale": "Observation resolves to base_record_id entity_community-board-17-brooklyn-20110915 which matches existing registry card with display_name 'Community Board 17, Brooklyn'. The observation already resolves to this canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19_sbs_utica_cb17",
+            "block_id": "p001_c0004",
+            "source_quote": "Brooklyn CB 17 September 19, 2013"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-3-nyct",
+        "local_observation_id": "entity_2013_09_19_nyct_utica",
+        "decision": "new",
+        "rationale": "Observation resolves to base_record_id entity_mta-nyct which matches existing registry card entity_mta-nyct (MTA New York City Transit). The observation already resolves to this canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19_sbs_utica_cb17",
+            "block_id": "p017_c0003",
+            "source_quote": "Implement Transit Signal Priority from Kings Highway to Broadway (with NYCT)"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-58-07-623Z_2111393-0a9f3c1d_canonicalize_2026-06-10t23-18-19-084z-1976810-cbcf36ef-ingest-2013-09-19-sbs-utica-cb17-entity-identity"
+}

@@ -1,0 +1,160 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-189856"
+record_kind: "source"
+display_name: "Joint LIRR and Metro-North Committees Meeting Minutes Sep 29, 2025"
+source_id: "meeting_doc_189856"
+source_ids:
+  - "meeting_doc_189856"
+local_observation_id: "source_meeting_doc_189856"
+local_observation_ids:
+  - "source_meeting_doc_189856"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T20:13:46.545Z"
+submission_ids:
+  - "sub_ff1008349a246909"
+payload:
+  authority_tier: "board_material"
+  content_type: "minutes"
+  date_text: "September 29, 2025"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2025-09-29"
+    precision: "day"
+    raw_text: "September 29, 2025"
+  published_date_normalized: "2025-09-29"
+  published_date_precision: "day"
+  publisher: "MTA"
+  title: "Minutes of the Regular Meeting Joint Long Island Rail Road and Metro-North Railroad Committees Monday, September 29, 2025 9:30 a.m."
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_189856#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_189856"
+    source_path: "raw/sources/meeting_doc_189856/blocks.jsonl"
+    text_sha256: "sha256:34bb34545571cc2a2c53744b867210d6a3049a46658db6ea1dd9a57b266f3d81"
+    text_source: "raw_text"
+---
+
+# Minutes
+
+source_id: meeting_doc_189856
+citation: cite block ids exactly as shown in square brackets
+document: 91 block(s)
+
+## Page 1
+
+### [p001_c0001] Minutes of the Regular Meeting Joint Long Island Rail Road and Metro-North Railroad Committees Monday, September 29, 2025 9:30 a.m.
+[p001_c0002] Meeting held at 130 Livingston St. Brooklyn, New York 11201
+### [p001_c0003] The following Committee Members were present:
+[p001_c0004] Hon. Marc Herbst, Co-Chair Hon. Samuel Chu Hon. Gerard Bringmann Hon. Michael Fleischer Hon. Daniel Garodnick Hon. Randolph Glucksman Hon. Blanca López, Co-Chair Hon. David Mack Hon. Melva M. Miller Hon. James O'Donnell Hon. Midori Valdivia Hon. Edward Valente Hon. Neal Zuckerman
+### [p001_c0005] The following Board Members were also present:
+[p001_c0006] Hon. Andrew Albert Hon. David Jones
+### [p001_c0007] The following Committee Members were not present:
+[p001_c0008] Hon. Christopher Leathers Hon. Lisa Sorin
+### [p001_c0009] Representing Metro-North Railroad:
+[p001_c0010] Justin Vonashek – Executive Vice President & Chief Operating Officer Brian Pina – Vice President, System Safety Eamonn Foley – Vice President, General Counsel & Secretary
+### [p001_c0011] Representing Long Island Rail Road:
+[p001_c0012] Robert Free – President Chris Gough – Vice President, Corporate Safety Haley Stein – Vice President, General Counsel & Secretary Hector Garcia – Chief of Staff
+### [p001_c0013] Representing MTA Police Department:
+[p001_c0014] Thomas J. Taffe – Chief of Police
+
+## Page 2
+
+### [p002_c0001] 2 | Joint LIRR and Metro-North Committees Meeting Minutes September 29, 2025
+### [p002_c0002] Also present:
+[p002_c0003] John McCarthy – MTA Chief of Policy and External Relations David Florio – MTA Chief of Real Estate Transactions and Operations Michael Kemper – MTA Chief Security Officer
+[p002_c0004] The members of the Metro-North Railroad (“Metro-North”) Committee met jointly with the members of the Long Island Rail Road (“LIRR”) Committee.
+### [p002_c0005] 1. OPENING MEETING:
+[p002_c0006] Co-Chair Herbst called the joint meeting to order.
+### [p002_c0007] 2. PUBLIC COMMENTS:
+[p002_c0008] The following public speakers commented:
+[p002_c0009] Christopher D. Greif Jason Anthony, LIRR ADA Task Force Iris Kelley Charlton D’Souza*, Passengers United President Ian Matthews* Wendy Smith* Gary Prophet* Andy Pollack* Murray Bodin* Naomi Hersson-Ringskog* Brian Fritsch, PCAC Associate Director (in person)
+[p002_c0010] * Appeared by audio/video
+[p002_c0011] To hear the content of public comments, details of Committee presentations, and Committee Members’ comments and questions as well as any part of the Committee meeting, please refer to the video recording of the meeting produced by the MTA, available and maintained on the MTA website:
+[p002_c0012] https://www.mta.info/transparency/board-and-committee-meetings/july-2025
+### [p002_c0013] 3. APPROVAL OF MINUTES:
+[p002_c0014] Upon motion duly made and seconded, the Committee approved the minutes of the July 28, 2025 Joint LIRR/Metro-North Committee Meeting.
+
+## Page 3
+
+### [p003_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 3 September 29, 2025
+### [p003_c0002] 4. METRO-NORTH AND LIRR 2025 WORK PLANS:
+[p003_c0003] There were no changes to the LIRR or Metro-North Work Plans. The 2025 Metro-North and LIRR Work Plans are filed with the records of this meeting.
+### [p003_c0004] 5. LIRR PRESIDENT’S REPORT:
+[p003_c0005] LIRR President Rob Free (“President Free”) stated that summer ridership experienced explosive growth, setting new records. Total ridership for July was 7.3 million customers representing 91.1% of July 2019 ridership, both numbers setting post-COVID record highs.
+[p003_c0006] President Free emphasized continued record-breaking numbers for August and September ridership, including the highest non-commutation ridership month in LIRR recorded history for August 2025 with 4.9 million customers; and a post-pandemic single day ridership record of 306,735 this past week during the Ryder Cup. President Free thanked all the dedicated employees for delivering a world-class service.
+[p003_c0007] President Free stated that on-time performance (“OTP”) for July was 96.4% and August was 95.7%, while year-to-date (“YTD”) OTP as of August was 96.4%. President Free emphasized that these numbers are even more impressive considering the LIRR serves five major event venues, with three located on main line stations, with events regularly scheduled during rush hour service.
+[p003_c0008] President Free stated that the customer injury rate in July 2025 fell by 27% and employee injury rate fell by 12% as compared to July of last year.
+[p003_c0009] President Free announced the grand opening of the iconic TRACKS Raw Bar and Grill at Grand Central Madison on September 2. There are five more retail locations under negotiation.
+[p003_c0010] President Free showcased a new pilot program that identifies accessible boarding areas on tracks 11 and 12 at Jamaica Station.
+[p003_c0011] In response to a question from Board Member Zuckerman regarding ridership levels at Grand Central Madison, President Free stated that ridership levels reached 1.1 million and the split between Penn Station and Grand Central Madison has consistently surpassed the 60-40 split and there are many days with 58-42 split.
+[p003_c0012] Board Member Mack congratulated President Free and LIRR employees for how the Ryder Cup went so smoothly. Board Member Mack expressed appreciation for the Nassau County Police, MTA Police Department (“MTAPD”), and the federal government for keeping riders safe.
+[p003_c0013] Board Member O’Donnell also expressed appreciation for the work of the MTAPD and for LIRR employees who assisted the riders on wayfinding at the Ryder Cup.
+
+## Page 4
+
+### [p004_c0001] 4 | Joint LIRR and Metro-North Committees Meeting Minutes September 29, 2025
+[p004_c0002] Co-Chair Herbst acknowledged LIRR's high levels of performance for everyday commuters and thanked the LIRR for providing the wonderful reliable and safe service.
+[p004_c0003] The complete presentation is filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of President Free's remarks.
+### [p004_c0004] 6. METRO-NORTH PRESIDENT'S REPORT:
+[p004_c0005] Metro-North President Justin Vonashek ("President Vonashek") announced the appointment of Shushil Ramnaess as the new Vice President of Rolling Stock and thanked Jeff Weston for his role during this transition.
+[p004_c0006] President Vonashek reported on the recent power outage at Grand Central Terminal ("GCT") that occurred last Thursday. President Vonashek explained that GCT is powered by four high voltage feeders supplied by Con Edison ("ConEd"). Power to operate trains is not supplied by these feeders. On Thursday two of the four feeders were offline, one was undergoing repairs due to damage over the summer and a second was taken off line for repairs by ConEd that day. When a power dip occurred causing an undervoltage condition just before 8:30 pm, a third feeder tripped, as per its design. The fourth feeder then received an overload of electrical demand and also tripped, leaving no feeders to power GCT. Emergency generators were activated as designed and provided emergency power to lighting and other systems. Power was restored to the upper level within 20 minutes and the rest of GCT 15 minutes later. There were no injuries and train service was not interrupted. Until the feeder damaged over the summer is back online, ConEd will not be authorized to do discretionary work on the other feeders. Metro-North is working with ConEd to ensure this never happens again. President Vonashek thanked the MTAPD, emergency response teams, and Metro-North crews for their work and for helping every customer get safely to their destination.
+[p004_c0007] President Vonashek stated that OTP for August was 97.2% and 97.9% YTD OTP through August. Weekday ridership rose nearly 9% higher than August 2024. Last week MNR saw its highest average weekday ridership at over 243,000 riders. President Vonashek stated that the increased ridership evidences the preference of riders for Metro-North for their travels.
+[p004_c0008] President Vonashek stated Metro-North is looking to continue the success of last fall with the Laser Train. This year, the Laser Train has been upgraded with a refined laser optical system to clean hard-to-reach track segments. There is also a new process to measure rail contamination after cleaning to determine overall effectiveness.
+[p004_c0009] President Vonashek reported on the upcoming schedule changes for the Fall. Two trains will be added in response to increased ridership on the Harlem Line as well as a late evening train from Grand Central for return trips after a game or a show, based on customer feedback. Fall also brings back the Leaf Peeper Train on the Hudson Line. Finally, the Poughkeepsie Super Express
+
+## Page 5
+
+### [p005_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 5 September 29, 2025
+[p005_c0002] Train includes five trains operating at under 90 minutes, as result of signal enhancements and optimized train routing.
+[p005_c0003] President Vonashek stated that Metro-North debuted the new Siemens Charger locomotive last Monday at GCT, which produces 1,000 more horsepower than the aging Genesis locomotives, does so more efficiently, and reduces airborne pollutants by 85%. It was delivered on time and on budget, having been manufactured by Siemens in their California facility. The first two of these thirty-three chargers have been delivered ahead of schedule. President Vonashek thanked Governor Hochul and elected officials for their support in this investment, and the project team lead by Joseph Reynolds for their hard work and dedication.
+[p005_c0004] President Vonashek reported on the continued resiliency efforts of raising the tracks, including in Mott Haven in the Bronx, where all three lines come together. Three tracks have been raised so far up to 6 inches in Mott Haven.
+[p005_c0005] President Vonashek announced the revival of the digital newsletter Mileposts, which will feature information on Metro-North including travel tips, schedule changes, things to see and do on our lines, and track work projects. President Vonashek urged everyone to subscribe to the newsletter at mta.info .
+[p005_c0006] President Vonashek stated that several Metro-North employees were recognized as MTA Heroes of the Week on WABC TV. The Metro-North Fire Brigade team stepped up to assist when a customer's electric wheelchair stopped working and helped to get him home safely.
+[p005_c0007] President Vonashek concluded his remarks by acknowledging and honoring Director of Operations Compliance and Procurement Daria Weible for 41 years of dedication at Metro-North. President Vonashek congratulated Daria on her well-deserved retirement.
+[p005_c0008] In response to a question from Board Member Bringmann regarding the impact of the power outage on Grand Central Madison, President Free stated that the power outage had no impact on Grand Central Madison.
+[p005_c0009] The complete presentation is filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of President Vonashek's remarks.
+### [p005_c0010] 7. MTAPD REPORTS:
+[p005_c0011] MTAPD Chief of Operations Thomas J. Taffe ("Chief Taffe") presented the crime and policing report for August 2025 for both railroads, which reported that crime on the railroads remains low with 23 reported incidents, which is a 15% decrease YTD as compared to the same period last year. MTA Police have issued over 570 criminal summonses with over half related to fare evasion.
+
+## Page 6
+
+### [p006_c0001] 6 | Joint LIRR and Metro-North Committees Meeting Minutes September 29, 2025
+[p006_c0002] In response to a question from Co-Chair López regarding the incident involving passenger O’Keefe that occurred last week, Chief Taffe stated that the case is under investigation. MTA PD responded to a report of a disorderly passenger who was removed from the train in cuffs after police unsuccessfully attempted to de-escalate the situation. The passenger was issued a summons for disorderly conduct, released, and permitted to reboard the next train to his destination. In response to a question from Board Member Zuckerman regarding whether the conduct of the passenger rose to the level of disorderly conduct, Chief Taffe stated on a train yes. Co-Chair López requested updates on the investigation. In response to a question from Board Member Mack, Board Members López and Zuckerman stated that it was their role on the Board to inquire about the incident.
+[p006_c0003] Board Member Valente thanked Chief Taffe for the MTAPD’s work and responsiveness on the train patrols.
+[p006_c0004] The full MTAPD report is filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of Chief Taffe’s presentation and the Board Members’ discussion.
+### [p006_c0005] 8. SAFETY AND SECURITY REPORTS:
+[p006_c0006] LIRR Vice President of Corporate Safety Chris Gough stated that the reportable customer injury rate from January through July 2025 decreased by 25.8% as compared to the same period the prior year. The decrease is due to campaigns and customer outreach programs along with clear and consistent messaging across all communications. The reportable employee lost time injury rate from January through July 2025 decreased by 19.4% as compared to the same period in the prior year. The decrease is likely due to increased oversight and audits, targeted safety campaigns, and employee engagements.
+[p006_c0007] Vice President Gough reported on safety events in September including Customer Safety Day at Penn Station and Rail Safety Week at grade crossings throughout the system.
+[p006_c0008] Vice President Gough reported on bridge strikes, which have been decreasing year over year, primarily as a result of bridge replacements that raise the clearance for vehicles, in addition to cameras, signage and beacon lights.
+[p006_c0009] In response to a question from Co-Chair Herbst regarding the locations of where there have been the most bridge strikes, President Free stated that two examples are bridges at Continental Avenue in Forest Hills, and Plandome Station. President Free stated that they are also working with various municipalities to enforce weight limits on the bridges to reduce wear on the bridges.
+[p006_c0010] Metro-North Vice President of System Safety Brian Pina reported that the customer injury rate is down by 7.8% over the last twelve months with the use of forecasting and data to know when platforms and stations need to be prepared for storms, while remaining focused on station conditions such as lighting, cleaning, and campaigns to reduce gap related injuries. The employee
+
+## Page 7
+
+### [p007_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 7 September 29, 2025
+[p007_c0002] lost time injury rate is down by 7.9%. The biggest driver is culture. Employees are reporting hazards earlier and more often. Specific and targeted departmental safety action plans have been developed. The TRACKS program has been expanded to include a new virtual reality platform, including wrapped VR goggles, and is being expanded beyond schools. VP Pina described the expanding Confidential Close Call Reporting System (“C3RS”). In addition, Metro-North is leveraging AI by partnering with Rutgers University across multiple areas of the railroad.
+[p007_c0003] Metro-North Chief Security Officer Michael Metz presented highlights on the Right of Way Task Force and the video management program and described steps being taken to modernize and harden video technology, including the use of video analytics.
+[p007_c0004] In response to a question from Co-Chair López regarding the partnership with Rutgers University, Chief Metz stated that Rutgers has an advanced video analytics laboratory, and contact was made via Metro-North and headquarters.
+[p007_c0005] Board Member Valente stated that the new interviews have been very popular and the expansion of C3RS has done a lot to improve labor management relations.
+[p007_c0006] LIRR Chief of Security Robert Murphy presented the LIRR video analysis program, which aids in maintaining the safety of the LIRR area that spans over 700 miles of track.
+[p007_c0007] In response to a question from Board Member Zuckerman regarding drones, Chief Murphy stated that there is a drone pilot program that deploys four drones used for emergency purposes. The OSCAR monitoring system integrates all the data and imagery from all forms, including drones.
+[p007_c0008] The full Safety and Security Reports are filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of the presentations and the Board Members’ questions and comments.
+### [p007_c0009] 9. INFORMATION ITEMS:
+[p007_c0010] The information items for both railroads are contained in the meeting material.
+### [p007_c0011] 10. FINANCE:
+[p007_c0012] The finance reports for both railroads are contained in the meeting material.
+### [p007_c0013] 11. PROCUREMENTS:
+[p007_c0014] There were no procurements for LIRR or Metro-North.
+
+## Page 8
+
+### [p008_c0001] 8 | Joint LIRR and Metro-North Committees Meeting Minutes September 29, 2025
+### [p008_c0002] 12. ADJOURNMENT:
+[p008_c0003] Upon motion duly made and seconded, the Committee unanimously voted to adjourn the meeting.
+[p008_c0004] Respectfully submitted,
+[p008_c0005] _Haley Stein Vice President, General Counsel & Secretary The Long Island Rail Road Company_
+[p008_c0006] _Eamonn F. Foley Vice President, General Counsel & Secretary Metro-North Commuter Railroad Company_

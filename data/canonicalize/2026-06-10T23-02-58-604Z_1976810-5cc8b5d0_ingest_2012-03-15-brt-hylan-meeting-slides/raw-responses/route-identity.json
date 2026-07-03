@@ -1,0 +1,59 @@
+{
+  "run_id": "2026-06-10T23-02-58-604Z_1976810-5cc8b5d0_ingest_2012-03-15-brt-hylan-meeting-slides",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T02:34:39.507Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "s79-hylan-2012-new",
+        "local_observation_id": "route_s79_hylan_2012_03",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_s79-hylan-2010 matches an existing registry record exactly. The observation already resolves to this record; all strong identity fields (route_id: S79, borough: Staten Island, corridor: Hylan Boulevard) are consistent. The observation describes a proposed limited-stop variant but its canonical resolution is already set to the existing route_s79-hylan-2010 record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_03_15_brt_hylan_meeting_slides",
+            "block_id": "p008_c0005",
+            "source_quote": "Introduce Limited stop spacing on S79 to match ridership demands"
+          },
+          {
+            "source_id": "2012_03_15_brt_hylan_meeting_slides",
+            "block_id": "p007_c0004",
+            "source_quote": "Speed S79 service with fewer stops and more direct route"
+          }
+        ]
+      },
+      {
+        "decision_id": "s59-hylan-2012-new",
+        "local_observation_id": "route_s59_hylan_2012_03",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_s59-hylan-2011 matches an existing registry record exactly. S59 local service on Hylan Boulevard with consistent payload: route_id: S59, route_type: local, borough: Staten Island. Observation already resolves to this record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_03_15_brt_hylan_meeting_slides",
+            "block_id": "p008_c0005",
+            "source_quote": "S59, S78 provide Local service"
+          }
+        ]
+      },
+      {
+        "decision_id": "s78-hylan-2012-new",
+        "local_observation_id": "route_s78_hylan_2012_03",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_s78-hylan-2010 matches an existing registry record exactly. S78 local bus service on Hylan Boulevard with consistent payload: route_id: S78, route_type: local, borough: Staten Island. Observation already resolves to this record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_03_15_brt_hylan_meeting_slides",
+            "block_id": "p008_c0005",
+            "source_quote": "S59, S78 provide Local service -- S78 rerouted via Steuben Street"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-33-01-538Z_2111393-340ff879_canonicalize_2026-06-10t23-02-58-604z-1976810-5cc8b5d0-ingest-2012-03-15-brt-hylan-meeting-slides-route-identity"
+}

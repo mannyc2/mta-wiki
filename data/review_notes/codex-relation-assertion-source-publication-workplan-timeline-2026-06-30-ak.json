@@ -1,0 +1,160 @@
+{
+  "id": "codex-relation-assertion-source-publication-workplan-timeline-2026-06-30-ak",
+  "date_utc": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "bucket": "relation_assertion_status_unknown",
+  "baseline": {
+    "validation_issues": 0,
+    "unknown_relations_total": 9041,
+    "unknown_by_family": {
+      "metric_context": 5661,
+      "timeline_context": 590,
+      "claim_context": 509,
+      "agency_role": 505,
+      "publication_role": 154
+    },
+    "unknown_family_kind": {
+      "timeline_context.has_timeline_event": 458,
+      "claim_context.has_claim": 432
+    }
+  },
+  "implemented": [
+    {
+      "rule": "source_publication_scope_audience_attribution",
+      "status": "delivered",
+      "guards": [
+        "relation_family == publication_role",
+        "subject is a source and object is an entity",
+        "relation provenance cites the source endpoint",
+        "exact relation_kind is source subject/scope, source audience/work-plan-for, or source attribution",
+        "audience/attribution rows do not contain temporal/future/former wording"
+      ],
+      "relation_kinds": [
+        "covers_entity",
+        "pertains_to",
+        "is_about",
+        "addresses",
+        "addresses_entity",
+        "covers_mode",
+        "covers_system",
+        "describes_entity",
+        "description_about",
+        "has_subject",
+        "about_subject",
+        "relates_to",
+        "report_subject",
+        "prepared_for",
+        "published_for",
+        "reported_to",
+        "received_by",
+        "committee_work_plan_of",
+        "is_work_plan_of",
+        "drafted_by",
+        "has_author",
+        "sourced_from",
+        "sponsored_by"
+      ],
+      "observed_rows_moved": 62
+    },
+    {
+      "rule": "source_submitted_by_entity",
+      "status": "delivered",
+      "guards": [
+        "relation_family == agency_role",
+        "relation_kind == submitted_by",
+        "subject is a source and object is an entity",
+        "relation provenance cites the source endpoint",
+        "relation text and endpoint display names do not contain temporal/future/former wording"
+      ],
+      "observed_rows_moved": 7
+    },
+    {
+      "rule": "entity_work_plan_timeline_event",
+      "status": "planned",
+      "guards": [
+        "relation_family == timeline_context",
+        "relation_kind == has_timeline_event",
+        "subject is an entity and object is an event",
+        "the relation's citing source is work-plan shaped",
+        "event has date_normalized",
+        "event_kind is committee_meeting, committee_agenda_item, committee_information_item, presentation, or committee_action",
+        "relation/object/source text does not contain no-item, no-meeting, postponed, deferred, or cancelled wording"
+      ],
+      "observed_rows_moved": 112
+    }
+  ],
+  "after_materialize": {
+    "validation_issues": 0,
+    "unknown_relations_total": 8860,
+    "unknown_by_family": {
+      "metric_context": 5661,
+      "claim_context": 509,
+      "agency_role": 498,
+      "timeline_context": 478,
+      "publication_role": 92
+    },
+    "unknown_family_kind": {
+      "timeline_context.has_timeline_event": 346,
+      "claim_context.has_claim": 432
+    },
+    "delta_unknown_relations_total": -181
+  },
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+      "result": "pass",
+      "summary": "33 tests, 172 expects"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "pass",
+      "summary": "Materialized 93092/98102 submissions; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass",
+      "summary": "Issues: 0; Submissions: 98102; Canonical records: 84040; Wiki pages: 7334"
+    }
+  ],
+  "subagents": [
+    {
+      "id": "019f1ad7-c721-73e1-b0c1-5cc5ab171e4d",
+      "lane": "timeline_context.has_timeline_event read-only scout",
+      "result": "recommended entity-to-event work-plan timeline rows as planned and identified no-item/no-meeting, recurring no-date, budget_presentation, and board_action rows to hold"
+    },
+    {
+      "id": "019f1ad7-a70c-7b02-8609-42bfb112339c",
+      "lane": "claim_context.has_claim read-only scout",
+      "result": "recommended only a tiny source-to-claim containment slice and one optional installed-treatment row; held broad non-source has_claim rows because provenance does not prove lifecycle/status"
+    }
+  ],
+  "remaining_known_holdouts": [
+    {
+      "bucket": "metric_context.has_metric",
+      "count": 5647,
+      "reason": "mixed actuals, forecasts, budgets, goals, proposed expenditures, and before/after observations"
+    },
+    {
+      "bucket": "claim_context.has_claim",
+      "count": 432,
+      "reason": "broad non-source shapes mix entity/route/corridor/event claim attachment with real-world status; only source-to-claim containment appears safe next"
+    },
+    {
+      "bucket": "timeline_context.has_timeline_event",
+      "count": 346,
+      "reason": "remaining rows include route launches, source-to-event references, no-item/no-meeting absences, and budget/board-action event types requiring separate policies"
+    }
+  ],
+  "files_changed": [
+    "packages/pipeline/src/records/assertion-qualifiers.ts",
+    "packages/pipeline/test/records/assertion-qualifiers.test.ts",
+    "data/canonical/relations.jsonl",
+    "data/canonical.db",
+    "LOG.md"
+  ]
+}

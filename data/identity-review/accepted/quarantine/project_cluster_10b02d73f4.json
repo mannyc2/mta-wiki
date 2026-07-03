@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "project_cluster_10b02d73f4",
+  "kind": "project",
+  "packet_path": "data/identity-review/packets/project_cluster_10b02d73f4.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/project_cluster_10b02d73f4.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "quarantined",
+  "quarantine": {
+    "blocker": "merge project_207th-st-sewer-replacement-33751 + project_207th-st-sewer-replacement-apr2022: record project_207th-st-sewer-replacement-apr2022 is not in the current canonical corpus"
+  },
+  "original_merge_groups": [
+    [
+      "project_207th-st-sewer-replacement-33751",
+      "project_207th-st-sewer-replacement-apr2022"
+    ]
+  ],
+  "original_do_not_merge": []
+}

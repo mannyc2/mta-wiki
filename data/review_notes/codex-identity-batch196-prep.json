@@ -1,0 +1,349 @@
+{
+  "note_id": "codex-identity-batch196-prep",
+  "batch": 196,
+  "created_at": "2026-06-23T00:00:00Z",
+  "scope": {
+    "global_kind": "entity",
+    "operation": "prepare_alias_cleanup_only",
+    "selection_note": "Codex-only entity alias cleanup after identity193. No provider-backed commands were run. Current merges, do-not-merge pairs, canonical entity records, deterministic identity keys, and identity186-195 review-note ids were inspected read-only.",
+    "write_limit": "Exactly one artifact was written: data/review_notes/codex-identity-batch196-prep.json. No merges.json, do-not-merge.json, LOG.md, manifest, submissions, canonical outputs, DB, or wiki files were edited."
+  },
+  "prepared_count": 12,
+  "proposed_aliases": [
+    {
+      "alias_id": "entity_brt-flushing-jamaica-oct2016-cb7",
+      "target_id": "entity_brt-flushing-main-st-aug2018-cb7-queens",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_brt-flushing-jamaica-oct2016-cb7 and entity_brt-flushing-main-st-aug2018-cb7-queens share identity keys entity_community-board-7 and entity_community-board-7-queens."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Community Board 7 (Queens)', entity_type 'community board', source_id brt_flushing_jamaica_oct2016, evidence brt_flushing_jamaica_oct2016#p013_c0003: 'CB7 & Sheraton request for 2-way conversion of 39 Av between Prince St & Main St'.",
+        "Target canonical record: display_name 'Community Board 7 (Queens)', entity_type 'community_board', source_id brt_flushing_main_st_aug2018, evidence brt_flushing_main_st_aug2018#p013_c0002 listing CB7 outreach in the Flushing Main Street project."
+      ],
+      "reason": "Both records identify Queens Community Board 7 in Flushing/Main Street project outreach; this avoids the unsafe broad Community Board 7 key by requiring the explicit Queens scope on both sides.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_195": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_queens-community-board-7",
+      "target_id": "entity_queens-community-board-7-2015",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_queens-community-board-7 and entity_queens-community-board-7-2015 share identity key entity_queens-community-board-7."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Queens Community Board 7', entity_type 'community board', evidence 2015_09_22_brt_flushing_jamaica_cb7_presentation#p001_c0002: 'Queens Community Board 7 September 21, 2015'.",
+        "Target canonical record: display_name 'Queens Community Board 7', entity_type 'community board', evidence 2015_07_07_brt_flushing_jamaica_cb7_presentation#p001_c0002: 'Queens Community Board 7 Transportation Committee'."
+      ],
+      "reason": "Both records explicitly identify Queens Community Board 7 in 2015 Flushing-Jamaica source context.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_195": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_cb5-brooklyn-b82",
+      "target_id": "entity_cb5-brooklyn-brt-sbs-jan2018",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_cb5-brooklyn-b82 and entity_cb5-brooklyn-brt-sbs-jan2018 share identity keys entity_community-board-5 and entity_community-board-5-brooklyn."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Community Board 5, Brooklyn', entity_type 'community board', source_id brt_south_brooklyn_b82_feb2018, evidence brt_south_brooklyn_b82_feb2018#p005_c0010: 'CB5'.",
+        "Target canonical record: display_name 'Community Board 5 (Brooklyn)', entity_type 'community board', source_id brt_south_brooklyn_b82_jan2018, evidence brt_south_brooklyn_b82_jan2018#p001_c0002: 'For presentation to CB 5 Transportation Committee | January 22, 2018'."
+      ],
+      "reason": "Both records identify Brooklyn Community Board 5 in the B82/South Brooklyn context; this does not rely on the unsafe boroughless Community Board 5 key.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_195": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_community-board-18-brooklyn-2015-04-15",
+      "target_id": "entity_community-board-18-brooklyn-2016",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_community-board-18-brooklyn-2015-04-15 and entity_community-board-18-brooklyn-2016 share identity key entity_community-board-18."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Community Board 18', entity_type 'community board', description 'Brooklyn Community Board 18', evidence 2015_04_15_brt_uticaave_cb18_presentation#p010_c0002: 'Brooklyn Community Board 18'.",
+        "Target canonical record: display_name 'Community Board 18, Brooklyn', entity_type 'community board', description 'Brooklyn Community Board 18', evidence 2016_01_20_brt_southbrooklyn_cb18#p001_c0002: 'Presentation to CB 18 | January 20, 2016'."
+      ],
+      "reason": "Both records identify Brooklyn Community Board 18; the target already carries Brooklyn scope and multiple source ids.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_195": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_manhattan-cb5-brt-m23-cb5-jun2016",
+      "target_id": "entity_mn-community-board-5",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_manhattan-cb5-brt-m23-cb5-jun2016 and entity_mn-community-board-5 share identity key entity_manhattan-community-board-five."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Manhattan Community Board Five', entity_type 'community board', evidence brt_m23_cb5_jun2016#p001_c0002: 'June 27, 2016 - Manhattan Community Board Five Transportation Committee'.",
+        "Target canonical record: display_name 'Manhattan Community Board Five', entity_type 'community board', evidence brt_m23_cb6_jun2016#p013_c0003: 'Present final plan to Community Boards Four and Five'."
+      ],
+      "reason": "Both records identify Manhattan Community Board Five in M23 planning context, including word-number spelling.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_195": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_mnr-diversity-eeo-155041",
+      "target_id": "entity_meeting-doc-mnr-diversity-eeo",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_mnr-diversity-eeo-155041 and entity_meeting-doc-mnr-diversity-eeo share identity key entity_diversity-and-eeo."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Diversity and EEO', entity_type 'program', organization 'Metro-North Railroad', evidence meeting_doc_155041#p003_c0017 describes MNR EEO and Diversity efforts.",
+        "Target canonical record: display_name 'Metro-North Railroad Diversity and EEO', entity_type 'department', organization 'Metro-North Railroad', evidence meeting_doc_102696#p003_c0017: 'Diversity & EEO Report- 3 rd Quarter 2022'."
+      ],
+      "reason": "Both records identify the Metro-North Diversity and EEO function; the program/department type difference is a descriptive modeling difference within the same MNR organizational unit.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_195": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_mnr-diversity-eeo-192151",
+      "target_id": "entity_meeting-doc-mnr-diversity-eeo",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_mnr-diversity-eeo-192151 and entity_meeting-doc-mnr-diversity-eeo share identity key entity_diversity-and-eeo."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Diversity and EEO (Metro-North)', entity_type 'department', parent_entity 'Metro-North Railroad', evidence meeting_doc_192151#p001_c0042: 'Diversity and EEO'.",
+        "Target canonical record: display_name 'Metro-North Railroad Diversity and EEO', entity_type 'department', organization 'Metro-North Railroad', evidence meeting_doc_102696#p001_c0006 includes 'Diversity and EEO' in the committee work plan responsibility table."
+      ],
+      "reason": "Both records identify the same Metro-North Diversity and EEO department/function; the target has broader source support.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_195": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_mnr-engineering-192151",
+      "target_id": "entity_meeting-doc-mnr-engineering",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_mnr-engineering-192151 and entity_meeting-doc-mnr-engineering share identity key entity_engineering."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Engineering (Metro-North)', entity_type 'department', parent_entity 'Metro-North Railroad', evidence meeting_doc_192151#p001_c0040: 'Engineering'.",
+        "Target canonical record: display_name 'Metro-North Railroad Engineering', entity_type 'department', organization 'Metro-North Railroad', evidence meeting_doc_102696#p001_c0006 includes Engineering in the Metro-North committee work plan responsibility table."
+      ],
+      "reason": "Both records identify Metro-North Railroad Engineering, not a generic engineering department, because each side carries Metro-North organization/parent context.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_195": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_mnr-finance-192151",
+      "target_id": "entity_meeting-doc-mnr-finance",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_mnr-finance-192151 and entity_meeting-doc-mnr-finance share identity key entity_finance."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Finance (Metro-North)', entity_type 'department', parent_entity 'Metro-North Railroad', evidence meeting_doc_192151#p001_c0022: 'Finance'.",
+        "Target canonical record: display_name 'Metro-North Railroad Finance', entity_type 'department', organization 'Metro-North Railroad', evidence meeting_doc_102696#p003_c0007: 'Finance'."
+      ],
+      "reason": "Both records identify Metro-North Railroad Finance, with matching department identity and Metro-North context.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_195": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_meeting-doc-155486-nyct-paratransit",
+      "target_id": "entity_department-of-paratransit",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_meeting-doc-155486-nyct-paratransit and entity_department-of-paratransit share identity keys entity_department-of-paratransit and entity_nyc-transit-department-of-paratransit."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'NYC Transit Department of Paratransit', entity_type 'agency', organization 'NYC Transit', evidence meeting_doc_174061#p002_c0004: 'Department: Paratransit, Rachel Cohen'.",
+        "Target canonical record: display_name 'Department of Paratransit', entity_type 'department', organization 'NYC Transit', evidence meeting_doc_102801#p009_c0003: 'Department of Paratransit, Chris Pangilinan'."
+      ],
+      "reason": "Both records identify NYC Transit's Department of Paratransit; agency/department type differences reflect modeling variance, while organization and department name match.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_195": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_nyc-dep-jan2026",
+      "target_id": "entity_nyc-dep-2012",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_nyc-dep-jan2026 and entity_nyc-dep-2012 share identity key entity_new-york-city-department-of-environmental-protection."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'New York City Department of Environmental Protection (NYC DEP)', entity_type 'agency', evidence meeting_doc_197456#p041_c0008: 'GRANTEE: New York City Department of Environmental Protection (\"NYC DEP\")'.",
+        "Target canonical record: display_name 'NYC Department of Environmental Protection (DEP)', entity_type 'agency', payload entity_name 'New York City Department of Environmental Protection', evidence 120507_brt_cb6_34th_street#p025_c0002 and 201203_brt_34th_cac6#p022_c0002 reference DEP coordination."
+      ],
+      "reason": "Both records identify New York City Department of Environmental Protection; acronym variants NYC DEP and DEP are already present on the target payload.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_195": true
+      },
+      "confidence": "high"
+    },
+    {
+      "alias_id": "entity_meeting-doc-206081-xorail",
+      "target_id": "entity_xorail-meeting-doc-205611",
+      "global_kind": "entity",
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: entity_meeting-doc-206081-xorail and entity_xorail-meeting-doc-205611 share identity key entity_xorail-inc."
+      ],
+      "source_evidence": [
+        "Alias canonical record: display_name 'Xorail Inc.', entity_type 'company', organization 'Wabtec', evidence meeting_doc_206081#p030_c0003.",
+        "Target canonical record: display_name 'Xorail Inc., a Wabtec Company', entity_type 'company/vendor', organization 'Wabtec', evidence meeting_doc_205611#p005_c0006 and meeting_doc_205611#p006_c0003."
+      ],
+      "reason": "Both records identify Xorail Inc. in Wabtec context; the target preserves the fuller 'a Wabtec Company' surface.",
+      "guard_checks": {
+        "alias_present": true,
+        "target_present": true,
+        "alias_not_already_merged": true,
+        "target_not_alias": true,
+        "alias_not_merge_target_trap": true,
+        "non_cyclic": true,
+        "no_do_not_merge": true,
+        "not_used_or_deferred_in_identity186_195": true
+      },
+      "confidence": "high"
+    }
+  ],
+  "deferred": [
+    {
+      "global_kind": "entity",
+      "reason": "Deferred broad community-board duplicate keys where boroughs differ or one side lacks explicit borough support, including current Community Board 1/3/4/5/6/7/9 collisions. Same board number alone is not safe.",
+      "confidence": "low"
+    },
+    {
+      "global_kind": "entity",
+      "reason": "Deferred person-versus-agency collisions caused by affiliation aliases, such as person records sharing MTA Police Department, NYSDOT, NYC DOT, NYCT, or MTA parent organization keys.",
+      "confidence": "low"
+    },
+    {
+      "global_kind": "entity",
+      "reason": "Deferred initial-only person duplicates such as H. Mihaltses, P. Dietlin, S. Chu, N. Brown, and R. FREE unless a future reviewer confirms full-name and role continuity.",
+      "confidence": "low"
+    },
+    {
+      "global_kind": "entity",
+      "reason": "Deferred committee-member snapshot collisions where records may represent membership lists, committee roles, or the standing committee itself rather than a single durable entity.",
+      "confidence": "medium"
+    },
+    {
+      "global_kind": "entity",
+      "reason": "Deferred Metro-North committee versus Metro-North Railroad collisions: shared legal railroad wording is not enough to merge a board committee with the operating railroad agency.",
+      "confidence": "low"
+    }
+  ],
+  "blockers": [],
+  "deterministic_inspection": {
+    "commands": [
+      "rg/jq inspection of data/review_notes/codex-identity-batch186-prep.json through codex-identity-batch195-prep.json for touched entity ids and trap notes",
+      "jq inspection of data/identity-overrides/merges.json and data/identity-overrides/do-not-merge.json",
+      "bun --eval read-only duplicate identity mining over data/canonical/entities.jsonl with packages/db/src/identity.ts identityKeysForRecord()",
+      "bun --eval final guard and source-evidence check for selected alias/target pairs"
+    ],
+    "guard_summary": {
+      "all_aliases_present": true,
+      "all_targets_present": true,
+      "all_aliases_not_already_merged": true,
+      "all_targets_not_aliases": true,
+      "all_aliases_not_merge_targets": true,
+      "all_pairs_non_cyclic": true,
+      "all_pairs_absent_from_do_not_merge": true,
+      "all_pairs_absent_from_identity186_195_touched_ids": true,
+      "provider_backed_commands_run": false
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:35:56.958Z",
+  "packet_path": "data/identity-review/packets/corridor_cluster_27952469fe.md",
+  "cluster_id": "corridor_cluster_27952469fe",
+  "kind": "corridor",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "corridor_cluster_27952469fe",
+    "kind": "corridor",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "corridor_bus-fwd-2-church-av-brooklyn-local",
+          "corridor_church-av"
+        ],
+        "reason": "Different limits: corridor_bus-fwd-2-church-av-brooklyn-local spans Coney Island Av to Flatbush Av, while corridor_church-av spans Flatbush Ave to Ocean Pkwy. Per identity merge canon, same street with differing limits never merges (test 1: contradiction in strong identity field 'limits')."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "corridor_bus-fwd-2-church-av-brooklyn-local",
+        "aliases": [
+          "corridor_church-av"
+        ],
+        "reason": "Shared alias 'Church Av' with corridor_church-av but limits differ; useful for searching, not merge authority."
+      },
+      {
+        "record_id": "corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate",
+        "aliases": [
+          "corridor_church-ave"
+        ],
+        "reason": "Shared alias 'corridor_church-ave' with corridor_church-av but limits unknown; treat as weak alias pending scope clarification."
+      }
+    ],
+    "missing_fields": [
+      {
+        "record_id": "corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate",
+        "fields": [
+          "from",
+          "to",
+          "limits"
+        ]
+      }
+    ],
+    "ambiguous": [
+      {
+        "record_ids": [
+          "corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate",
+          "corridor_church-av"
+        ],
+        "needed_context": [
+          "Does the source 'bus_forward_2' provide any limits or segment definition for the Church Avenue SBS candidate (candidate G)? Additional blocks from the same document, or other sources referenced by the record, may clarify whether it corresponds to a specific segment like Flatbush Ave to Ocean Pkwy or a broader corridor."
+        ]
+      },
+      {
+        "record_ids": [
+          "corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate",
+          "corridor_bus-fwd-2-church-av-brooklyn-local"
+        ],
+        "needed_context": [
+          "Does the SBS candidate 'Church Avenue' refer to the same segment as corridor_bus-fwd-2-church-av-brooklyn-local (Coney Island Av to Flatbush Av) or to a different segment? Without limits on the SBS record, no merge decision is possible."
+        ]
+      }
+    ],
+    "suggested_rules": [],
+    "confidence": "medium",
+    "rationale": "Two records have explicit, non-overlapping limits and are clearly distinct (do_not_merge). The third record lacks limits entirely, making its relationship to the others ambiguous. No merge is justified under the identity merge canon because the strong identity field 'limits' either contradicts or is missing. The validator identity collision on alias 'corridor_church-ave' is insufficient to merge without corroborating limits."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-35-34-824Z_1282984-c409c4f4_identity-review-run_corridor-cluster-27952469fe",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-35-34-824Z_2026-06-23T14-35-34-824Z_1282984-c409c4f4_identity-review-run_corridor-cluster-27952469fe.jsonl"
+}

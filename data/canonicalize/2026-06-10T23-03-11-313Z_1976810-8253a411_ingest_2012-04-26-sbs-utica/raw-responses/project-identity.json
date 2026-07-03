@@ -1,0 +1,51 @@
+{
+  "run_id": "2026-06-10T23-03-11-313Z_1976810-8253a411_ingest_2012-04-26-sbs-utica",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T02:37:47.854Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d1-utica-study-new",
+        "local_observation_id": "project_utica_ave_bus_priority_safety_study",
+        "decision": "new",
+        "rationale": "Observation base_record_id project_utica-ave-bus-priority-safety-study already matches existing registry record project_utica-ave-bus-priority-safety-study. No linkage to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p001_c0002",
+            "source_quote": "Project Update: Utica Avenue Bus Priority and Safety Study"
+          },
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p007_c0004",
+            "source_quote": "Study goals – Improve pedestrian and driver safety – Improve bus travel times – Maintain parking and curb access"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2-empire-new",
+        "local_observation_id": "project_empire_blvd_utica_ave_east_ny_ave",
+        "decision": "new",
+        "rationale": "Observation base_record_id project_empire-blvd-utica-ave-east-ny-ave already matches existing registry record project_empire-blvd-utica-ave-east-ny-ave. No linkage to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p021_c0002",
+            "source_quote": "Empire Blvd. / Utica Ave. / East New York Ave. Project"
+          },
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p022_c0003",
+            "source_quote": "Department of Design and Construction (DDC) conducting design work • Construction slated to start in 2014"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-36-18-318Z_2111393-3167f011_canonicalize_2026-06-10t23-03-11-313z-1976810-8253a411-ingest-2012-04-26-sbs-utica-project-identity"
+}

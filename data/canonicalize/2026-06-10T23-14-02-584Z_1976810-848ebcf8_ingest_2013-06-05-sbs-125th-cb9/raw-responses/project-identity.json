@@ -1,0 +1,43 @@
+{
+  "run_id": "2026-06-10T23-14-02-584Z_1976810-848ebcf8_ingest_2013-06-05-sbs-125th-cb9",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T03:50:03.919Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d001-m60-sbs-125th-street-2013",
+        "local_observation_id": "project_m60_sbs_125th_street_2013",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'project_m60-sbs-125th-street-2013' already exists in the registry and is the closest match — the registry record includes this exact source (2013_06_05_sbs_125th_cb9) and describes the same project: proposed Select Bus Service on the M60 route along 125th Street with offset bus lanes, off-board fare collection, limited stops, and other SBS features. Per canonicalization rules, when the closest match is the observation's own base_record_id, the decision is 'new' — the observation already resolves to that registry record and no linking action is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p001_c0001",
+            "source_quote": "M60 Select Bus Service on 125 th Street"
+          },
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p006_c0003",
+            "source_quote": "Select Bus Service on the M60"
+          },
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p006_c0004",
+            "source_quote": "Limited stops"
+          },
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p006_c0006",
+            "source_quote": "Offset lanes for buses and right turns"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-49-03-891Z_2111393-cac476dc_canonicalize_2026-06-10t23-14-02-584z-1976810-848ebcf8-ingest-2013-06-05-sbs-125th-cb9-project-identity"
+}

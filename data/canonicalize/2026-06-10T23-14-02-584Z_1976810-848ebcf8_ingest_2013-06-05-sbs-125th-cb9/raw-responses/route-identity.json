@@ -1,0 +1,82 @@
+{
+  "run_id": "2026-06-10T23-14-02-584Z_1976810-848ebcf8_ingest_2013-06-05-sbs-125th-cb9",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T03:49:43.955Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "d1-m60-sbs-new",
+        "local_observation_id": "route_m60_sbs_2013_06_05_cb9",
+        "decision": "new",
+        "rationale": "Observation already resolves to route_125th-laguardia-sbs — M60 SBS on 125th Street, Manhattan/Queens. Payload matches registry record exactly (route_id M60, route_type select_bus_service, boroughs Manhattan/Queens). No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p001_c0001",
+            "source_quote": "M60 Select Bus Service on 125 th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2-bx15-new",
+        "local_observation_id": "route_bx15_2013_06_05_cb9",
+        "decision": "new",
+        "rationale": "Observation already resolves to route_bx15-ace — Bx15 local service on 125th Street, Bronx/Manhattan. Payload matches registry record (route_id Bx15, route_type local, boroughs Bronx/Manhattan).",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p006_c0005",
+            "source_quote": "M100 M101 Bx15"
+          },
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p009_c0006",
+            "source_quote": "Bus stops are unchanged on Bx15, M100, M101"
+          }
+        ]
+      },
+      {
+        "decision_id": "d3-m100-new",
+        "local_observation_id": "route_m100_2013_06_05_cb9",
+        "decision": "new",
+        "rationale": "Observation already resolves to route_m100-ace — M100 local service on 125th Street, Manhattan. Payload matches registry record (route_id M100, route_type local, borough Manhattan).",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p006_c0005",
+            "source_quote": "M100 M101 Bx15"
+          },
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p009_c0006",
+            "source_quote": "Bus stops are unchanged on Bx15, M100, M101"
+          }
+        ]
+      },
+      {
+        "decision_id": "d4-m101-new",
+        "local_observation_id": "route_m101_2013_06_05_cb9",
+        "decision": "new",
+        "rationale": "Observation already resolves to route_m101 — M101 local service on 125th Street, Manhattan. Payload matches registry record (route_id M101, route_type local, borough Manhattan).",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p006_c0005",
+            "source_quote": "M100 M101 Bx15"
+          },
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p009_c0006",
+            "source_quote": "Bus stops are unchanged on Bx15, M100, M101"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-49-03-890Z_2111393-8f6c9584_canonicalize_2026-06-10t23-14-02-584z-1976810-848ebcf8-ingest-2013-06-05-sbs-125th-cb9-route-identity"
+}

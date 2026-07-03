@@ -1,0 +1,76 @@
+{
+  "run_id": "2026-06-10T23-01-15-160Z_1976810-7fae13a5_ingest_2012-01-24-sbs-utica-merchants",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T02:23:02.396Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "b46-local-2012-new",
+        "local_observation_id": "route_b46_local_2012",
+        "decision": "new",
+        "rationale": "Observation already resolves to its base_record_id route_b46-local-2012, which exists in the registry with matching source_ids and submission_ids. The closest match is the observation's own canonical record — no link to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p004_c0002",
+            "source_quote": "B46 is the second busiest bus route in NYC"
+          },
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p004_c0003",
+            "source_quote": "B46 local buses make all stops."
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "shared_base_route",
+            "subject_id": "route_b46-local-2012",
+            "object_id": "route_b46-limited-2012",
+            "description": "Both are service variants of the B46 route on the Utica Avenue corridor, described together on the same page of the source.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p004_c0003",
+                "source_quote": "B46 local buses make all stops. B46 Limited-Stop buses operate 7 days a week. These buses make limited stops between DeKalb Av/Malcolm X Blvd and Avenue H/Utica Av, and make all stops along the rest of the route."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "b46-limited-2012-new",
+        "local_observation_id": "route_b46_limited_2012",
+        "decision": "new",
+        "rationale": "Observation already resolves to its base_record_id route_b46-limited-2012, which exists in the registry with matching source_ids and submission_ids. The closest match is the observation's own canonical record — no link to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p004_c0003",
+            "source_quote": "B46 Limited-Stop buses operate 7 days a week. These buses make limited stops between DeKalb Av/Malcolm X Blvd and Avenue H/Utica Av, and make all stops along the rest of the route."
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "shared_base_route",
+            "subject_id": "route_b46-limited-2012",
+            "object_id": "route_b46-local-2012",
+            "description": "Both are service variants of the B46 route on the Utica Avenue corridor, described together on the same page of the source.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p004_c0003",
+                "source_quote": "B46 local buses make all stops. B46 Limited-Stop buses operate 7 days a week. These buses make limited stops between DeKalb Av/Malcolm X Blvd and Avenue H/Utica Av, and make all stops along the rest of the route."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-19-43-109Z_2111393-75488284_canonicalize_2026-06-10t23-01-15-160z-1976810-7fae13a5-ingest-2012-01-24-sbs-utica-merchants-route-identity"
+}

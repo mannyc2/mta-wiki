@@ -1,0 +1,110 @@
+{
+  "note_id": "codex-entity-frank-farrell-display-2026-07-02",
+  "created_at": "2026-07-02",
+  "mode": "codex_only_deterministic",
+  "external_provider_llms_used": false,
+  "forbidden_commands_used": [],
+  "bucket": "remaining exact-display entity duplicate keys",
+  "subagents": [
+    {
+      "agent_id": "019f2130-2318-7ae0-af2e-7d2f4398c867",
+      "role": "bounded_read_only_remaining_entity_display_audit",
+      "status": "closed",
+      "finding": "Frank Farrell is safe for a narrow display-only, record-specific rule. The Metropolitan Transportation Authority pair should remain unresolved pending representation-policy or alias-hygiene review."
+    }
+  ],
+  "baseline": {
+    "route_exact_display_duplicate_keys": 0,
+    "project_exact_display_duplicate_keys": 0,
+    "entity_exact_display_duplicate_keys": 2,
+    "entity_exact_display_duplicate_records": 4,
+    "entity_groups": [
+      {
+        "display_key": "frank farrell",
+        "records": [
+          "entity_frank-farrell-mta-acting-evp-buses",
+          "entity_mta-nyct-evp-frank-farrell"
+        ],
+        "decision": "High-confidence display-only disambiguation. Existing do-not-merge keeps the records separate because payload entity_type differs, and each record has exact title/agency payload context."
+      },
+      {
+        "display_key": "metropolitan transportation authority (mta)",
+        "records": [
+          "entity_mta-entity-update-2025",
+          "entity_mta-metropolitan-transportation-authority"
+        ],
+        "decision": "Deferred. Current payloads and override trail indicate a representation-policy/alias-hygiene issue, not a safe display-label cleanup."
+      }
+    ]
+  },
+  "implemented_changes": [
+    {
+      "path": "packages/pipeline/src/materialize/materialize.ts",
+      "summary": "Added exact reviewed display-name guards for the two Frank Farrell records. Gates require record_id, original display name, entity_name, entity_type, title, and for the NYCT record agency_name."
+    },
+    {
+      "path": "packages/pipeline/test/materialize/materialize.test.ts",
+      "summary": "Added regression coverage for the Frank Farrell reviewed display labels."
+    }
+  ],
+  "after": {
+    "route_exact_display_duplicate_keys": 0,
+    "project_exact_display_duplicate_keys": 0,
+    "entity_exact_display_duplicate_keys": 1,
+    "entity_exact_display_duplicate_records": 2,
+    "changed_entity_labels": [
+      {
+        "record_id": "entity_frank-farrell-mta-acting-evp-buses",
+        "display_name": "Frank Farrell, MTA Acting EVP of Buses/MTA Bus Company"
+      },
+      {
+        "record_id": "entity_mta-nyct-evp-frank-farrell",
+        "display_name": "Frank Farrell, MTA NYCT EVP of Buses"
+      }
+    ],
+    "remaining_entity_exact_display_duplicate_groups": [
+      {
+        "display_key": "metropolitan transportation authority (mta)",
+        "records": [
+          "entity_mta-entity-update-2025",
+          "entity_mta-metropolitan-transportation-authority"
+        ],
+        "reason_deferred": "Subagent and local audit found the broad MTA parent pair has contaminated merged type/context values and a cautionary override trail. Leave for representation-policy or alias-hygiene repair rather than display-only relabeling."
+      }
+    ]
+  },
+  "verification": {
+    "focused_tests": {
+      "command": "bun test packages/pipeline/test/materialize/materialize.test.ts",
+      "result": "pass",
+      "tests": 59,
+      "expects": 875
+    },
+    "typecheck": {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    "materialize": {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "pass",
+      "materialized_submissions": "93067/98115",
+      "retired_submissions_skipped": 265,
+      "pages": 7335,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass",
+      "issues": 0,
+      "submissions": 98115,
+      "canonical_records": 84027,
+      "wiki_pages": 7331
+    }
+  },
+  "next_lanes": [
+    "MTA parent representation-policy / alias-hygiene review for entity_mta-entity-update-2025 and entity_mta-metropolitan-transportation-authority.",
+    "Metric tail repair for date-shaped rows via event/date representation rather than unit coercion.",
+    "Mis-scoped workforce_development metric repair via retirement/replacement if source context supports it."
+  ],
+  "goal_status": "active"
+}

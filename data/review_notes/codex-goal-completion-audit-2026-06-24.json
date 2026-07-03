@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-06-24T04:00:00.000Z",
+  "kind": "codex_goal_completion_audit",
+  "objective": "Orchestrate Codex-only post-ingest work for all completed MTA wiki ingest outputs with unprocessed backlog, while keeping ingest waves running separately at max concurrency without babysitting them.",
+  "overall_status": "not_complete_writer_execution_paused_by_owner",
+  "completion_decision": "Do not mark goal complete: all ready sources are ingested and deterministic post-ingest/canonical cleanup gates are clean, but the writer backlog remains intentionally paused and unexecuted. Dispatch is prepared/claimed, not completed.",
+  "requirements": [
+    {
+      "requirement": "Keep ingest waves running separately at max concurrency without babysitting when a ready-never-ingested pool exists.",
+      "status": "currently_no_wave_to_launch",
+      "evidence": {
+        "post_ingest_audit": "Readiness: 2566/2566 ready, 0 ready & never-ingested, 2566 ingested, 0 not-ready.",
+        "live_process_sweep": "No repo-local campaign ingest process after final sweep.",
+        "ingest_source_prep_subagent": "019ef784-2baa-7a02-9995-e46ac12fd82e confirms total 2566, ready 2566, ingested 2566, ready_never_ingested 0, not_ready/quarantined 0, no active ingest/source-prep processes, no staged source-prep backlog."
+      },
+      "conclusion": "Satisfied for current state; no ready pool exists to launch and no source-prep backlog remains."
+    },
+    {
+      "requirement": "Perform Codex-only post-ingest cleanup for completed ingest outputs without provider-backed post-ingest commands.",
+      "status": "clean_current_gates",
+      "evidence": {
+        "validate": "Issues: 0; submissions 98102; canonical records 83983; wiki pages 7355",
+        "source_id_drift_audit": "ok; 0 candidates",
+        "stale_checkpoint_reconciliation": "data/review_notes/codex-stale-pending-generated-checkpoint-reconciliation-2026-06-24.json",
+        "relation_identity_reconciliation": "identity/relation pending labels reconciled; no unapplied mutation or safe relation mutation remaining"
+      },
+      "conclusion": "Current deterministic cleanup gates are clean; no safe canonical/relation/identity mutation remains indicated by current evidence."
+    },
+    {
+      "requirement": "Ensure every completed/ready source has deterministic post-ingest scope coverage.",
+      "status": "complete_current_scope",
+      "evidence": {
+        "post_ingest_audit": "Post-ingest scope: 2566 scoped sources across 344 plan file(s); no plan-only sources."
+      },
+      "conclusion": "Complete for current readiness corpus."
+    },
+    {
+      "requirement": "Prepare Codex/subagent execution for the writer backlog without violating the owner pause.",
+      "status": "prepared_but_not_executed",
+      "evidence": {
+        "writer_backlog": "2703 empty writer regions, paused_by_owner",
+        "packet_coverage": "2703/2703 current backlog pages, 2703 packets across 541 artifact files, 0 duplicate, 0 stale",
+        "dispatch_readiness": "data/post-ingest/2026-06-24T02-13-03-496Z_writer-packet-dispatch-readiness.json ready; 109/109 shards claimed; all packet pages empty",
+        "writer_dispatch_subagent": "019ef784-4410-7a41-8761-ec46d2813ec1 confirms packet set 2703/2703, 109/109 claimed shards, all packet pages empty/unedited, no remaining safe non-writer orchestration gap."
+      },
+      "conclusion": "Dispatch orchestration is ready and independently verified, but writer work itself is not done because writer agents/prose edits remain paused."
+    },
+    {
+      "requirement": "Use subagents for bounded investigation/execution where useful, while serializing generated-output mutation.",
+      "status": "satisfied_for_current_turn",
+      "evidence": {
+        "subagents": [
+          "019ef77f-06ac-7382-8584-f58013dba916 identity reconciliation",
+          "019ef77f-2355-7142-8183-28c398eb5ece relation reconciliation",
+          "019ef784-2baa-7a02-9995-e46ac12fd82e ingest/source-prep lane check pending at audit creation",
+          "019ef784-4410-7a41-8761-ec46d2813ec1 writer dispatch lane check pending at audit creation"
+        ],
+        "generated_output": "No materialize/export mutation run in this reconciliation turn; earlier materialize checkpoints recorded clean."
+      },
+      "conclusion": "Subagents are used for independent lane checks; generated-output lane remains serialized."
+    }
+  ],
+  "live_gates": {
+    "post_ingest_audit": "ok; readiness 2566/2566 ready, 0 ready-never-ingested, 2566 ingested, 0 not-ready; scope 2566 sources across 344 plans; writer coverage complete 2703/2703",
+    "source_id_drift_audit": "ok; 0 candidates",
+    "validate": "Issues 0; submissions 98102; canonical records 83983; wiki pages 7355"
+  },
+  "commands_not_run": [
+    "campaign dedup",
+    "canonicalize*",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "write",
+    "ask",
+    "schema",
+    "provider-backed post-ingest commands",
+    "writer agents",
+    "wiki prose edits",
+    "canonical JSONL hand edits"
+  ],
+  "next_allowed_actions": [
+    "If owner unpauses writer execution, use the claim execution checklist in data/post-ingest/2026-06-24T02-13-03-496Z_writer-packet-dispatch-readiness.md and run claimed shards with strict writer edit/citation verification.",
+    "If new sources become ready-never-ingested, launch a detached ingest wave at max useful concurrency, then recover/checkpoint generated outputs without babysitting.",
+    "If future deterministic audits find source-id drift, relation endpoint issues, or duplicate identity issues, use durable override/journal mechanisms and checkpoint after tiny batches."
+  ],
+  "updated_at": "2026-06-24T04:15:00.000Z",
+  "subagent_evidence": {
+    "ingest_source_prep": {
+      "agent_id": "019ef784-2baa-7a02-9995-e46ac12fd82e",
+      "status": "complete",
+      "conclusion": "No ingest/source-prep wave should be started now; campaign ingest pool is exhausted.",
+      "evidence": {
+        "readiness_summary": {
+          "total": 2566,
+          "ready": 2566,
+          "not_ready": 0,
+          "ingested": 2566,
+          "ready_never_ingested": 0,
+          "quarantined": 0
+        },
+        "raw_source_metadata_count": 2566,
+        "raw_source_ids_missing_from_readiness": 0,
+        "readiness_ids_missing_from_raw_sources": 0,
+        "sources_with_missing_or_empty_blocks": 0,
+        "staged_source_dirs_with_no_usable_source_artifact": 0,
+        "active_ingest_processes": "none",
+        "stale_pid_files": "old wave pid files exist but ps -p returned no live processes"
+      }
+    },
+    "writer_dispatch": {
+      "agent_id": "019ef784-4410-7a41-8761-ec46d2813ec1",
+      "status": "complete",
+      "conclusion": "Writer execution is prepared and paused; no remaining safe non-writer orchestration gap was found. The only remaining gate is lifting the explicit owner pause and then running writer agents.",
+      "evidence": {
+        "packet_set": {
+          "artifact_files": 541,
+          "packet_count": 2703,
+          "unique_pages": 2703,
+          "duplicate_pages": 0,
+          "covered_current_backlog_pages": 2703,
+          "missing_current_backlog_pages": 0,
+          "stale_packet_pages": 0,
+          "offsets": "0..2700"
+        },
+        "dispatch_plan": {
+          "shard_count": 109,
+          "packets_per_shard": 25,
+          "execution_policy": "Dispatch manifest only. Do not launch writer agents or edit wiki prose until the owner pause is lifted."
+        },
+        "claim_ledger": {
+          "claim_files": 3,
+          "claimed_shards": 109,
+          "unclaimed_shards": 0,
+          "claim_verifiers": "passed for all three claim files"
+        },
+        "readiness": {
+          "ok": true,
+          "all_shards_claimed": true,
+          "all_pages_unedited": true,
+          "no_missing_pages": true,
+          "no_active_or_completed_writer_regions": true,
+          "empty_pages": 2703,
+          "non_empty_pages": 0
+        },
+        "packet_page_scan": {
+          "packet_pages": 2703,
+          "unique_pages": 2703,
+          "duplicate_pages": 0,
+          "missing": 0,
+          "noMarkers": 0,
+          "empty": 2703,
+          "nonEmpty": 0
+        },
+        "whole_wiki_non_source_scan": {
+          "non_source_wiki_pages": 4794,
+          "with_writer_markers": 4793,
+          "missing_writer_markers": [
+            "wiki/index.md"
+          ],
+          "empty_writer_regions": 4614,
+          "non_empty_writer_regions": 179
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "campaign_id": "codex-route-normalization-campaign-2026-06-24",
+  "baseline": {
+    "validate_issues": 0,
+    "canonical_route_records": 321,
+    "identity_review_validation_issues_total": 156,
+    "identity_review_route_validation_issues": 0,
+    "route_merge_aliases": 146,
+    "route_do_not_merge_pairs": 64,
+    "duplicate_heuristic_leads": [
+      {
+        "key": "B3|",
+        "record_ids": ["route_b3-2015-sbk-corridor", "route_b3-draft-plan"],
+        "disposition": "audit lead only; variant absent"
+      },
+      {
+        "key": "M15|limited",
+        "record_ids": ["route_m15-limited-2010-06-09", "route_m15-local-limited"],
+        "disposition": "known local-limited bundle typing problem, not a blind merge"
+      },
+      {
+        "key": "S|shuttle",
+        "record_ids": ["route_meeting-doc-152171-42-st-shuttle", "route_meeting-doc-160271-s-shuttle"],
+        "disposition": "false duplicate pressure from under-specified public route id"
+      }
+    ]
+  },
+  "subagent_lanes": [
+    {
+      "lane": "route_identity_key_audit",
+      "status": "completed",
+      "key_findings": [
+        "S shuttle records are distinct when route label/name includes 42 St Shuttle or Rockaway Park Shuttle.",
+        "route_rockaway-shuttle-167241 remains a review candidate for cautious Rockaway Shuttle handling.",
+        "Advisory identity-review route-base generation has a weaker parser than deterministic identity keys."
+      ]
+    },
+    {
+      "lane": "bundled_aggregate_route_audit",
+      "status": "completed",
+      "key_findings": [
+        "Route bundles should use payload.routes/list context instead of masquerading as one scalar route_id.",
+        "Local/limited bundle records should normalize to composite local_limited rather than local or limited_stop."
+      ]
+    },
+    {
+      "lane": "route_denormalization_audit",
+      "status": "completed",
+      "key_findings": [
+        "Q52/Q53 SBS, Utica/B46 SBS, and some predecessor/current SBS records have likely split-candidate contamination.",
+        "Several high-merge records are mostly healthy but need field filtering for borough arrays and route-list context."
+      ]
+    },
+    {
+      "lane": "override_code_path_audit",
+      "status": "completed",
+      "key_findings": [
+        "Smallest high-confidence patch is deterministic identity/submission normalization plus focused tests.",
+        "Identity overrides should remain safety nets unless validate reports concrete duplicate pairs after rematerialization."
+      ]
+    }
+  ],
+  "implemented": [
+    {
+      "area": "route payload normalization",
+      "files": ["packages/pipeline/src/ontology/normalizers.ts"],
+      "summary": "Normalize local/limited, local and limited, and limited/local route-type surfaces to composite local_limited and use that composite as service_variant when preserved in source_route_type_phrase."
+    },
+    {
+      "area": "route submission validation",
+      "files": ["packages/pipeline/src/records/submissions.ts"],
+      "summary": "Treat route_m15-local-limited style targets as composite local_limited; reject limited-only payloads targeting them; reject combined service-variant identity fields; require named context for route_id S shuttle submissions."
+    },
+    {
+      "area": "identity override guardrail",
+      "files": ["data/identity-overrides/do-not-merge.json"],
+      "summary": "Added one reviewed do-not-merge guard for route_m34-sbs versus route_m34a-sbs after materialization surfaced duplicate identity key route_m34-m34a."
+    },
+    {
+      "area": "tests",
+      "files": [
+        "packages/db/test/identity.test.ts",
+        "packages/pipeline/test/materialize/materialize.test.ts",
+        "packages/pipeline/test/records/submissions.test.ts"
+      ],
+      "summary": "Covered S shuttle identity keys, route bundle keys, local_limited materialization, local-limited target rejection, combined-variant rejection, and generic S shuttle rejection."
+    }
+  ],
+  "intentionally_unresolved": [
+    "No identity override aliases were added in this pass.",
+    "No Q52/Q53, B46, Bx41, M60, B44, Bx12, or M34 denormalization/split aliases were changed.",
+    "The advisory identity-review route-base parser remains separate from deterministic route key generation.",
+    "route_rockaway-shuttle-167241 remains a candidate for future deterministic or reviewed handling."
+  ],
+  "verification": {
+    "focused_tests": [
+      "bun test packages/db/test/identity.test.ts",
+      "bun test packages/pipeline/test/materialize/materialize.test.ts",
+      "bun test packages/pipeline/test/records/submissions.test.ts"
+    ],
+    "full_gates": [
+      "bun run typecheck",
+      "bun packages/cli/src/cli.ts materialize",
+      "bun packages/cli/src/cli.ts validate"
+    ],
+    "final_validate_issues": 0
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "run_id": "2026-06-10T17-48-04-619Z_1496766-3c175619_ingest_2009-09-23-brt-1st2nd-cac2",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-10T19:26:50.507Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "d-m15-cac-2009-new",
+        "local_observation_id": "route_m15_cac_meeting_2009",
+        "decision": "new",
+        "rationale": "Observation refers to the M15 local/limited service on the First/Second Avenue corridor in Manhattan, discussed at the September 2009 CAC meeting. The base_record_id route_m15-local-limited is the correct canonical record for this variant, with aliases that include route_m15-cac-meeting-2009 and source 2009_09_23_brt_1st2nd_cac2. No other distinct registry record is a closer match, and the base record already fully represents this observation.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_09_23_brt_1st2nd_cac2",
+            "block_id": "p014_c0005",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2009_09_23_brt_1st2nd_cac2",
+            "block_id": "p014_c0006",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "d-bx12-sbs-cac-2009-new",
+        "local_observation_id": "route_bx12_sbs_cac_meeting_2009",
+        "decision": "new",
+        "rationale": "Observation refers to the Bx12 Select Bus Service in the Bronx, discussed at the September 2009 CAC meeting as a reference example SBS route. The base_record_id route_bx12-plus is the correct canonical record for Bx12 SBS, with aliases that include route_bx12-sbs-cac-meeting-2009 and source 2009_09_23_brt_1st2nd_cac2. No other distinct registry record is a closer match; the base record fully represents this observation.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_09_23_brt_1st2nd_cac2",
+            "block_id": "p010_c0002",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2009_09_23_brt_1st2nd_cac2",
+            "block_id": "p010_c0003",
+            "source_quote": ""
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-26-20-364Z_1626237-1665f6c0_canonicalize_2026-06-10t17-48-04-619z-1496766-3c175619-ingest-2009-09-23-brt-1st2nd-cac2-route-identity"
+}

@@ -1,0 +1,903 @@
+{
+  "run_id": "2026-06-10T22-56-13-303Z_1976810-9799dcb4_ingest_20110517-jamaica-open-house-posters",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T01:41:08.724Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "rel-001-metric-delivery-time-midnight-7am",
+        "local_observation_id": "metric_merchant_delivery_time_midnight_7am",
+        "decision": "relate",
+        "rationale": "Merchant delivery time survey data collected as part of the Jamaica Bus Improvement Study's business outreach; the poster is a study deliverable.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0018",
+            "source_quote": "Midnight to 7 AM ~1%"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "metric_merchant-delivery-time-midnight-7am",
+            "description": "Merchant delivery time metric from Jamaica Bus Improvement Study merchant survey",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0018",
+                "source_quote": "Time Range Percentage Midnight to 7 AM ~1% 7 AM to 10 AM ~12% 10 AM to noon ~35% Noon to 2 PM ~38% 2 PM to 7 PM ~25% 7 PM to midnight ~1%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-002-metric-delivery-time-7am-10am",
+        "local_observation_id": "metric_merchant_delivery_time_7am_10am",
+        "decision": "relate",
+        "rationale": "Merchant delivery time survey data collected as part of the Jamaica Bus Improvement Study's business outreach.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0018",
+            "source_quote": "7 AM to 10 AM ~12%"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "metric_merchant-delivery-time-7am-10am",
+            "description": "Merchant delivery time metric from Jamaica Bus Improvement Study merchant survey",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0018",
+                "source_quote": "Time Range Percentage Midnight to 7 AM ~1% 7 AM to 10 AM ~12% 10 AM to noon ~35% Noon to 2 PM ~38% 2 PM to 7 PM ~25% 7 PM to midnight ~1%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-003-metric-delivery-time-10am-noon",
+        "local_observation_id": "metric_merchant_delivery_time_10am_noon",
+        "decision": "relate",
+        "rationale": "Merchant delivery time survey data collected as part of the Jamaica Bus Improvement Study's business outreach.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0018",
+            "source_quote": "10 AM to noon ~35%"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "metric_merchant-delivery-time-10am-noon",
+            "description": "Merchant delivery time metric from Jamaica Bus Improvement Study merchant survey",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0018",
+                "source_quote": "Time Range Percentage Midnight to 7 AM ~1% 7 AM to 10 AM ~12% 10 AM to noon ~35% Noon to 2 PM ~38% 2 PM to 7 PM ~25% 7 PM to midnight ~1%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-004-metric-delivery-time-noon-2pm",
+        "local_observation_id": "metric_merchant_delivery_time_noon_2pm",
+        "decision": "relate",
+        "rationale": "Merchant delivery time survey data collected as part of the Jamaica Bus Improvement Study's business outreach.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0018",
+            "source_quote": "Noon to 2 PM ~38%"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "metric_merchant-delivery-time-noon-2pm",
+            "description": "Merchant delivery time metric from Jamaica Bus Improvement Study merchant survey",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0018",
+                "source_quote": "Time Range Percentage Midnight to 7 AM ~1% 7 AM to 10 AM ~12% 10 AM to noon ~35% Noon to 2 PM ~38% 2 PM to 7 PM ~25% 7 PM to midnight ~1%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-005-metric-delivery-time-2pm-7pm",
+        "local_observation_id": "metric_merchant_delivery_time_2pm_7pm",
+        "decision": "relate",
+        "rationale": "Merchant delivery time survey data collected as part of the Jamaica Bus Improvement Study's business outreach.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0018",
+            "source_quote": "2 PM to 7 PM ~25%"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "metric_merchant-delivery-time-2pm-7pm",
+            "description": "Merchant delivery time metric from Jamaica Bus Improvement Study merchant survey",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0018",
+                "source_quote": "Time Range Percentage Midnight to 7 AM ~1% 7 AM to 10 AM ~12% 10 AM to noon ~35% Noon to 2 PM ~38% 2 PM to 7 PM ~25% 7 PM to midnight ~1%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-006-metric-delivery-time-7pm-midnight",
+        "local_observation_id": "metric_merchant_delivery_time_7pm_midnight",
+        "decision": "relate",
+        "rationale": "Merchant delivery time survey data collected as part of the Jamaica Bus Improvement Study's business outreach.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0018",
+            "source_quote": "7 PM to midnight ~1%"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "metric_merchant-delivery-time-7pm-midnight",
+            "description": "Merchant delivery time metric from Jamaica Bus Improvement Study merchant survey",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0018",
+                "source_quote": "Time Range Percentage Midnight to 7 AM ~1% 7 AM to 10 AM ~12% 10 AM to noon ~35% Noon to 2 PM ~38% 2 PM to 7 PM ~25% 7 PM to midnight ~1%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-007-metric-parking-bus-stop",
+        "local_observation_id": "metric_merchant_parking_bus_stop",
+        "decision": "relate",
+        "rationale": "Delivery vehicle parking location survey data collected as part of the Jamaica Bus Improvement Study's business outreach.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0020",
+            "source_quote": "In a bus stop ~1%"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "metric_merchant-parking-bus-stop",
+            "description": "Delivery parking location metric from Jamaica Bus Improvement Study merchant survey",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0020",
+                "source_quote": "Parking Location Percentage In a bus stop ~1% On a side street ~75% Across the street from my business on Jamaica Avenue ~5% In front of my business on Jamaica Avenue ~35%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-008-metric-parking-side-street",
+        "local_observation_id": "metric_merchant_parking_side_street",
+        "decision": "relate",
+        "rationale": "Delivery vehicle parking location survey data collected as part of the Jamaica Bus Improvement Study's business outreach.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0020",
+            "source_quote": "On a side street ~75%"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "metric_merchant-parking-side-street",
+            "description": "Delivery parking location metric from Jamaica Bus Improvement Study merchant survey",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0020",
+                "source_quote": "Parking Location Percentage In a bus stop ~1% On a side street ~75% Across the street from my business on Jamaica Avenue ~5% In front of my business on Jamaica Avenue ~35%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-009-metric-parking-across-street",
+        "local_observation_id": "metric_merchant_parking_across_street",
+        "decision": "relate",
+        "rationale": "Delivery vehicle parking location survey data collected as part of the Jamaica Bus Improvement Study's business outreach.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0020",
+            "source_quote": "Across the street from my business on Jamaica Avenue ~5%"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "metric_merchant-parking-across-street",
+            "description": "Delivery parking location metric from Jamaica Bus Improvement Study merchant survey",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0020",
+                "source_quote": "Parking Location Percentage In a bus stop ~1% On a side street ~75% Across the street from my business on Jamaica Avenue ~5% In front of my business on Jamaica Avenue ~35%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-010-metric-parking-front-business",
+        "local_observation_id": "metric_merchant_parking_front_business",
+        "decision": "relate",
+        "rationale": "Delivery vehicle parking location survey data collected as part of the Jamaica Bus Improvement Study's business outreach.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0020",
+            "source_quote": "In front of my business on Jamaica Avenue ~35%"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "metric_merchant-parking-front-business",
+            "description": "Delivery parking location metric from Jamaica Bus Improvement Study merchant survey",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0020",
+                "source_quote": "Parking Location Percentage In a bus stop ~1% On a side street ~75% Across the street from my business on Jamaica Avenue ~5% In front of my business on Jamaica Avenue ~35%"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-011-metric-bus-lane-existing-miles",
+        "local_observation_id": "metric_bus_lane_existing_miles",
+        "decision": "relate",
+        "rationale": "Bus lane mileage data from the proposed bus lanes section of the Jamaica Bus Improvement Study poster.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p004_c0006",
+            "source_quote": "Existing Bus Lanes 1.6 miles"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "metric_bus-lane-existing-miles",
+            "description": "Existing bus lane mileage from Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p004_c0006",
+                "source_quote": "Existing Bus Lanes 1.6 miles Proposed Bus Lane Additions 1.4 miles Proposed Bus Lane Removal 0.1 miles New Total 2.9 miles"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-012-metric-bus-lane-addition-miles",
+        "local_observation_id": "metric_bus_lane_addition_miles",
+        "decision": "relate",
+        "rationale": "Proposed bus lane addition mileage from the Jamaica Bus Improvement Study poster.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p004_c0006",
+            "source_quote": "Proposed Bus Lane Additions 1.4 miles"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "metric_bus-lane-addition-miles",
+            "description": "Proposed bus lane addition mileage from Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p004_c0006",
+                "source_quote": "Existing Bus Lanes 1.6 miles Proposed Bus Lane Additions 1.4 miles Proposed Bus Lane Removal 0.1 miles New Total 2.9 miles"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-013-metric-bus-lane-removal-miles",
+        "local_observation_id": "metric_bus_lane_removal_miles",
+        "decision": "relate",
+        "rationale": "Proposed bus lane removal mileage from the Jamaica Bus Improvement Study poster.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p004_c0006",
+            "source_quote": "Proposed Bus Lane Removal 0.1 miles"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "metric_bus-lane-removal-miles",
+            "description": "Proposed bus lane removal mileage from Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p004_c0006",
+                "source_quote": "Existing Bus Lanes 1.6 miles Proposed Bus Lane Additions 1.4 miles Proposed Bus Lane Removal 0.1 miles New Total 2.9 miles"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-014-metric-bus-lane-new-total-miles",
+        "local_observation_id": "metric_bus_lane_new_total_miles",
+        "decision": "relate",
+        "rationale": "New total bus lane mileage from the Jamaica Bus Improvement Study poster.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p004_c0006",
+            "source_quote": "New Total 2.9 miles"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "metric_bus-lane-new-total-miles",
+            "description": "New total bus lane mileage from Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p004_c0006",
+                "source_quote": "Existing Bus Lanes 1.6 miles Proposed Bus Lane Additions 1.4 miles Proposed Bus Lane Removal 0.1 miles New Total 2.9 miles"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-015-metric-archer-ave-buses-per-direction",
+        "local_observation_id": "metric_archer_ave_buses_per_direction_min",
+        "decision": "relate",
+        "rationale": "Archer Avenue bus lane benefits data from the Jamaica Bus Improvement Study poster.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p005_c0007",
+            "source_quote": "Benefits 1,100 to 1,300 buses per direction daily"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "metric_archer-ave-buses-per-direction-min",
+            "description": "Archer Avenue buses served metric from Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p005_c0007",
+                "source_quote": "▪ Benefits 1,100 to 1,300 buses per direction daily ▪ Faster, more reliable bus service ▪ Improves eastbound bus and vehicle flow"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-016-metric-jamaica-ave-buses-per-direction",
+        "local_observation_id": "metric_jamaica_ave_buses_per_direction_min",
+        "decision": "relate",
+        "rationale": "Jamaica Avenue bus lane benefits data from the Jamaica Bus Improvement Study poster.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p006_c0007",
+            "source_quote": "Benefits 600 to 750 buses per direction daily"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "metric_jamaica-ave-buses-per-direction-min",
+            "description": "Jamaica Avenue buses served metric from Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p006_c0007",
+                "source_quote": "▪ Benefits 600 to 750 buses per direction daily ▪ Faster, more reliable bus service ▪ Offset lanes provide access to curb for parking and deliveries ▪ Reduces congestion by removing bus from general traffic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-017-claim-misaligned-intersections",
+        "local_observation_id": "claim_field_observations_misaligned_intersections",
+        "decision": "relate",
+        "rationale": "Field observation finding from the Jamaica Bus Improvement Study's 'What We Learned' section.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0003",
+            "source_quote": "Many misaligned intersections and complex street geometry"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "claim_field-observations-misaligned-intersections",
+            "description": "Field observation claim from Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0003",
+                "source_quote": "Many misaligned intersections and complex street geometry"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-018-claim-narrow-streets",
+        "local_observation_id": "claim_field_observations_narrow_streets",
+        "decision": "relate",
+        "rationale": "Field observation finding from the Jamaica Bus Improvement Study's 'What We Learned' section.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0004",
+            "source_quote": "Many narrow streets with heavy bus and local traffic"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "claim_field-observations-narrow-streets",
+            "description": "Field observation claim from Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0004",
+                "source_quote": "Many narrow streets with heavy bus and local traffic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-019-claim-bus-lane-markings",
+        "local_observation_id": "claim_field_observations_bus_lane_markings",
+        "decision": "relate",
+        "rationale": "Field observation finding from the Jamaica Bus Improvement Study's 'What We Learned' section.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0005",
+            "source_quote": "Existing bus lane markings are difficult to see and in poor condition"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "claim_field-observations-bus-lane-markings",
+            "description": "Field observation claim from Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0005",
+                "source_quote": "Existing bus lane markings are difficult to see and in poor condition"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-020-claim-bus-ops-layovers",
+        "local_observation_id": "claim_bus_ops_layovers",
+        "decision": "relate",
+        "rationale": "Bus operations finding from the Jamaica Bus Improvement Study's Findings section.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0010",
+            "source_quote": "Bus Operations:"
+          },
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0011",
+            "source_quote": "Undesirable bus layovers"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "claim_bus-ops-layovers",
+            "description": "Bus operations claim from Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0011",
+                "source_quote": "Undesirable bus layovers Lack of passenger amenities at bus stops Frequent bus bunching Long waits for certain bus routes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-021-claim-bus-ops-passenger-amenities",
+        "local_observation_id": "claim_bus_ops_passenger_amenities",
+        "decision": "relate",
+        "rationale": "Bus operations finding from the Jamaica Bus Improvement Study's Findings section.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0011",
+            "source_quote": "Lack of passenger amenities at bus stops"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "claim_bus-ops-passenger-amenities",
+            "description": "Bus operations claim from Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0011",
+                "source_quote": "Undesirable bus layovers Lack of passenger amenities at bus stops Frequent bus bunching Long waits for certain bus routes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-022-claim-bus-ops-bunching",
+        "local_observation_id": "claim_bus_ops_bunching",
+        "decision": "relate",
+        "rationale": "Bus operations finding from the Jamaica Bus Improvement Study's Findings section.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0011",
+            "source_quote": "Frequent bus bunching"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "claim_bus-ops-bunching",
+            "description": "Bus operations claim from Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0011",
+                "source_quote": "Undesirable bus layovers Lack of passenger amenities at bus stops Frequent bus bunching Long waits for certain bus routes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-023-claim-bus-ops-long-waits",
+        "local_observation_id": "claim_bus_ops_long_waits",
+        "decision": "relate",
+        "rationale": "Bus operations finding from the Jamaica Bus Improvement Study's Findings section.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0011",
+            "source_quote": "Long waits for certain bus routes"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "claim_bus-ops-long-waits",
+            "description": "Bus operations claim from Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0011",
+                "source_quote": "Undesirable bus layovers Lack of passenger amenities at bus stops Frequent bus bunching Long waits for certain bus routes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-024-claim-traffic-turns-congestion",
+        "local_observation_id": "claim_traffic_turns_congestion",
+        "decision": "relate",
+        "rationale": "Traffic finding from the Jamaica Bus Improvement Study's Findings section.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0012",
+            "source_quote": "Traffic:"
+          },
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0013",
+            "source_quote": "Turns add to congestion"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "claim_traffic-turns-congestion",
+            "description": "Traffic claim from Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0013",
+                "source_quote": "Turns add to congestion Traffic diversions to side streets Confusing signage and lane markings Insufficient enforcement of parking and at busy intersections"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-025-claim-traffic-diversions",
+        "local_observation_id": "claim_traffic_diversions",
+        "decision": "relate",
+        "rationale": "Traffic finding from the Jamaica Bus Improvement Study's Findings section.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0013",
+            "source_quote": "Traffic diversions to side streets"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "claim_traffic-diversions",
+            "description": "Traffic claim from Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0013",
+                "source_quote": "Turns add to congestion Traffic diversions to side streets Confusing signage and lane markings Insufficient enforcement of parking and at busy intersections"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-026-claim-traffic-signage",
+        "local_observation_id": "claim_traffic_signage",
+        "decision": "relate",
+        "rationale": "Traffic finding from the Jamaica Bus Improvement Study's Findings section.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0013",
+            "source_quote": "Confusing signage and lane markings"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "claim_traffic-signage",
+            "description": "Traffic claim from Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0013",
+                "source_quote": "Turns add to congestion Traffic diversions to side streets Confusing signage and lane markings Insufficient enforcement of parking and at busy intersections"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-027-claim-traffic-enforcement",
+        "local_observation_id": "claim_traffic_enforcement",
+        "decision": "relate",
+        "rationale": "Traffic finding from the Jamaica Bus Improvement Study's Findings section.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0013",
+            "source_quote": "Insufficient enforcement of parking and at busy intersections"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "claim_traffic-enforcement",
+            "description": "Traffic claim from Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0013",
+                "source_quote": "Turns add to congestion Traffic diversions to side streets Confusing signage and lane markings Insufficient enforcement of parking and at busy intersections"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-028-event-cac-meeting-sep2009",
+        "local_observation_id": "event_cac_meeting_sep2009",
+        "decision": "relate",
+        "rationale": "Community Advisory Committee meeting held as part of the Jamaica Bus Improvement Study outreach.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0007",
+            "source_quote": "Community Advisory Committee meetings (September 2009 and April 2011)"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "event_cac-meeting-sep2009",
+            "description": "September 2009 CAC meeting for Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0007",
+                "source_quote": "Community Advisory Committee meetings (September 2009 and April 2011)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-029-event-cac-meeting-apr2011",
+        "local_observation_id": "event_cac_meeting_apr2011",
+        "decision": "relate",
+        "rationale": "Community Advisory Committee meeting held as part of the Jamaica Bus Improvement Study outreach.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0007",
+            "source_quote": "Community Advisory Committee meetings (September 2009 and April 2011)"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "event_cac-meeting-apr2011",
+            "description": "April 2011 CAC meeting for Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0007",
+                "source_quote": "Community Advisory Committee meetings (September 2009 and April 2011)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-030-event-bus-passenger-survey-fall2009",
+        "local_observation_id": "event_bus_passenger_survey_fall2009",
+        "decision": "relate",
+        "rationale": "Bus passenger survey conducted as part of the Jamaica Bus Improvement Study data collection.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0008",
+            "source_quote": "Bus passenger survey (Fall 2009)"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "event_bus-passenger-survey-fall2009",
+            "description": "Fall 2009 bus passenger survey for Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0008",
+                "source_quote": "Bus passenger survey (Fall 2009)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-031-event-merchant-survey-may2011",
+        "local_observation_id": "event_merchant_survey_may2011",
+        "decision": "relate",
+        "rationale": "Merchant survey conducted as part of the Jamaica Bus Improvement Study's business outreach.",
+        "evidence_refs": [
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0015",
+            "source_quote": "Survey of Jamaica Avenue merchants (May 2011) in coordination with the Jamaica Center Business Improvement District"
+          },
+          {
+            "source_id": "20110517_jamaica_open_house_posters",
+            "block_id": "p002_c0016",
+            "source_quote": "Business owners interviewed to better understand impact of bus lane improvements on Jamaica Avenue"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_jamaica-bus-improvement-study",
+            "object_id": "event_merchant-survey-may2011",
+            "description": "May 2011 merchant survey for Jamaica Bus Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0015",
+                "source_quote": "Survey of Jamaica Avenue merchants (May 2011) in coordination with the Jamaica Center Business Improvement District"
+              },
+              {
+                "source_id": "20110517_jamaica_open_house_posters",
+                "block_id": "p002_c0016",
+                "source_quote": "Business owners interviewed to better understand impact of bus lane improvements on Jamaica Avenue"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-30-12-890Z_2111393-650bbf24_canonicalize_2026-06-10t22-56-13-303z-1976810-9799dcb4-ingest-20110517-jamaica-open-house-posters-relation-linker"
+}

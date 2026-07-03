@@ -1,0 +1,14 @@
+{
+  "review_run_id": "2026-06-11T06-05-21-891Z_identity-review-run",
+  "reviewed_at": "2026-06-11T06:05:30.410Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_63c0a4e6dd.md",
+  "cluster_id": "entity_cluster_63c0a4e6dd",
+  "kind": "entity",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "parse_error": "JSON Parse error: Unexpected EOF",
+  "raw_response": "",
+  "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-28-537Z_2444665-e1a82dd7_identity-review-run_entity-cluster-63c0a4e6dd",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-28-537Z_2026-06-11T06-05-28-537Z_2444665-e1a82dd7_identity-review-run_entity-cluster-63c0a4e6dd.jsonl"
+}

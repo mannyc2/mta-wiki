@@ -1,0 +1,106 @@
+{
+  "run_id": "2026-06-10T17-13-30-642Z_1462165-56810a52_ingest_116-st-morningside-ave-pleasant-ave-cb11-jun2025",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-21T15:04:42.948Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "m116-cb11-jun2025-new",
+        "local_observation_id": "route_m116_cb11_jun2025",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_m116 already matches existing canonical registry record route_m116 (with this source in its source_ids and aliases including route_m116-cb11-jun2025). No different record to link to; observation already resolves to its base record.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p004_c0002",
+            "source_quote": "Over 36,000+ daily bus passengers across 7 bus routes – M102, M116, BxM6, BxM7, BxM8, BxM9, BxM11"
+          }
+        ]
+      },
+      {
+        "decision_id": "m102-cb11-jun2025-new",
+        "local_observation_id": "route_m102_cb11_jun2025",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_m102 already matches existing canonical registry record route_m102 (with this source in its source_ids and aliases including route_m102-cb11-jun2025). No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p004_c0002",
+            "source_quote": "Over 36,000+ daily bus passengers across 7 bus routes – M102, M116, BxM6, BxM7, BxM8, BxM9, BxM11"
+          }
+        ]
+      },
+      {
+        "decision_id": "bxm6-cb11-jun2025-new",
+        "local_observation_id": "route_bxm6_cb11_jun2025",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_bxm6 already matches existing canonical registry record route_bxm6 (with this source in its source_ids and aliases including route_bxm6-cb11-jun2025). No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p004_c0002",
+            "source_quote": "Over 36,000+ daily bus passengers across 7 bus routes: – M102, M116, BxM6, BxM7, BxM8, BxM9, BxM11"
+          }
+        ]
+      },
+      {
+        "decision_id": "bxm7-cb11-jun2025-new",
+        "local_observation_id": "route_bxm7_cb11_jun2025",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_bxm7 already matches existing canonical registry record route_bxm7 (with this source in its source_ids and aliases including route_bxm7-cb11-jun2025). No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p004_c0002",
+            "source_quote": "Over 36,000+ daily bus passengers across 7 bus routes: – M102, M116, BxM6, BxM7, BxM8, BxM9, BxM11"
+          }
+        ]
+      },
+      {
+        "decision_id": "bxm8-cb11-jun2025-new",
+        "local_observation_id": "route_bxm8_cb11_jun2025",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_bxm8 already matches existing canonical registry record route_bxm8 (with this source in its source_ids and aliases including route_bxm8-cb11-jun2025). No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p004_c0002",
+            "source_quote": "Over 36,000+ daily bus passengers across 7 bus routes: – M102, M116, BxM6, BxM7, BxM8, BxM9, BxM11"
+          }
+        ]
+      },
+      {
+        "decision_id": "bxm9-cb11-jun2025-new",
+        "local_observation_id": "route_bxm9_cb11_jun2025",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_bxm9 already matches existing canonical registry record route_bxm9 (with this source in its source_ids and aliases including route_bxm9-cb11-jun2025). No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p004_c0002",
+            "source_quote": "Over 36,000+ daily bus passengers across 7 bus routes: – M102, M116, BxM6, BxM7, BxM8, BxM9, BxM11"
+          }
+        ]
+      },
+      {
+        "decision_id": "bxm11-cb11-jun2025-new",
+        "local_observation_id": "route_bxm11_cb11_jun2025",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_bxm11 already matches existing canonical registry record route_bxm11 (with this source in its source_ids and aliases including route_bxm11-cb11-jun2025). No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p004_c0002",
+            "source_quote": "Over 36,000+ daily bus passengers across 7 bus routes: – M102, M116, BxM6, BxM7, BxM8, BxM9, BxM11"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-21T15-03-56-517Z_2836603-73064d81_canonicalize_2026-06-10t17-13-30-642z-1462165-56810a52-ingest-116-st-morningside-ave-pleasant-ave-cb11-jun2025-route-identity"
+}

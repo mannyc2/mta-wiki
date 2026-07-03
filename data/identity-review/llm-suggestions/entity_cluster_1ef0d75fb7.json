@@ -1,0 +1,49 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:36:28.296Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_1ef0d75fb7.md",
+  "cluster_id": "entity_cluster_1ef0d75fb7",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_1ef0d75fb7",
+    "kind": "entity",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "entity_bt-committee-members-sep2024",
+          "entity_meeting-doc-205631-committee-chair-members"
+        ],
+        "reason": "Strong identity field entity_type differs: 'committee' vs 'committee_role'. Test 1 (Contradiction test) forces do_not_merge. The relation_context shows a part_of_agency link from the role record to the committee, confirming they are related but distinct objects."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "entity_bt-committee-members-sep2024",
+        "aliases": [
+          "entity_committee-chair-and-members"
+        ],
+        "reason": "Shared identity key from validator, but not authoritative for merge due to entity_type mismatch."
+      },
+      {
+        "record_id": "entity_meeting-doc-205631-committee-chair-members",
+        "aliases": [
+          "entity_committee-chair-and-members"
+        ],
+        "reason": "Shared identity key from validator, but not authoritative for merge due to entity_type mismatch."
+      }
+    ],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "Test 1 (Contradiction test) applies: entity_type differs between 'committee' and 'committee_role'. This is a decisive strong identity field difference under the Entities per-kind rule (Person/title vs agency never merge; a committee_role is analogous to a title/role). The relation_context explicitly links the role record as part_of_agency to the committee record, reinforcing they are distinct. No merge possible."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-36-17-991Z_1282984-3ab9fcfb_identity-review-run_entity-cluster-1ef0d75fb7",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-36-17-991Z_2026-06-23T14-36-17-991Z_1282984-3ab9fcfb_identity-review-run_entity-cluster-1ef0d75fb7.jsonl"
+}

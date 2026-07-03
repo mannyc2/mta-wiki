@@ -1,0 +1,54 @@
+{
+  "run_id": "2026-06-10T22-56-13-157Z_1976810-9e0fff70_ingest_2011-03-07-brt-nostrand-cb3",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T01:04:33.251Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "nostrand-avenue-new",
+        "local_observation_id": "corridor_nostrand_avenue_2011_cb3",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'corridor_nostrand-avenue' exactly matches existing registry record corridor_nostrand-avenue, which already includes this source (2011_03_07_brt_nostrand_cb3) and alias corridor_nostrand-avenue-2011-cb3. The observation already resolves to the correct canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p006_c0007",
+            "source_quote": "Nostrand Ave Bus Rapid Transit (BRT) project route, which runs north-south through Brooklyn and into Queens"
+          }
+        ]
+      },
+      {
+        "decision_id": "bedford-avenue-new",
+        "local_observation_id": "corridor_bedford_avenue_2011_cb3",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'corridor_bedford-avenue-2011-cb3' exactly matches existing registry record corridor_bedford-avenue-2011-cb3, which was created from this same source (2011_03_07_brt_nostrand_cb3). The observation already resolves to the correct canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p007_c0003",
+            "source_quote": "BRT in Bus Lane: Indicated by a red dashed line along Bedford Avenue. BRT in Mixed Traffic: Indicated by a solid red line along Bedford Avenue."
+          }
+        ]
+      },
+      {
+        "decision_id": "rogers-avenue-new",
+        "local_observation_id": "corridor_rogers_avenue_2011_cb3",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'corridor_rogers-avenue' exactly matches existing registry record corridor_rogers-avenue, which already includes this source (2011_03_07_brt_nostrand_cb3) and alias corridor_rogers-avenue-2011-cb3. The observation already resolves to the correct canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p001_c0004",
+            "source_quote": "Nostrand Ave/Rogers Ave Select Bus Service Community Board 3"
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-47-658Z_2111393-9dde0a73_canonicalize_2026-06-10t22-56-13-157z-1976810-9e0fff70-ingest-2011-03-07-brt-nostrand-cb3-corridor-identity"
+}

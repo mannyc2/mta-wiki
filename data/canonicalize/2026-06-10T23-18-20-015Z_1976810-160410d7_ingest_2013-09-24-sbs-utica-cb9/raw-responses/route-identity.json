@@ -1,0 +1,46 @@
+{
+  "run_id": "2026-06-10T23-18-20-015Z_1976810-160410d7_ingest_2013-09-24-sbs-utica-cb9",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T04:02:22.980Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "dec-b46-local-new",
+        "local_observation_id": "route_b46_local_2013_09_24_utica_cb9",
+        "decision": "new",
+        "rationale": "Observation's base_record_id route_b46-local-2012 already exists in the registry as the same B46 Local route (Brooklyn, local service, Broadway/Utica Avenue). The observation resolves to its own record — no different target exists to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_24_sbs_utica_cb9",
+            "block_id": "p003_c0002",
+            "source_quote": "B46: second busiest bus route in NYC"
+          },
+          {
+            "source_id": "2013_09_24_sbs_utica_cb9",
+            "block_id": "p003_c0003",
+            "source_quote": "B46 local buses make all stops"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-b46-limited-new",
+        "local_observation_id": "route_b46_limited_2013_09_24_utica_cb9",
+        "decision": "new",
+        "rationale": "Observation's base_record_id route_b46-limited-2012 already exists in the registry as the same B46 Limited-Stop route (Brooklyn, limited-stop service, Broadway/Utica Avenue). The observation resolves to its own record — no different target exists to link to. Different service variant from B46 Local (local vs limited-stop); per do_not_merge_pairs precedent, different variants never merge.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_24_sbs_utica_cb9",
+            "block_id": "p003_c0003",
+            "source_quote": "B46 Limited-Stop buses operate 7 days a week. These buses make limited stops between DeKalb Av/Malcolm X Blvd and Avenue H/Utica Av, and make all stops along the rest of the route."
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T04-00-53-147Z_2111393-7c50be5e_canonicalize_2026-06-10t23-18-20-015z-1976810-160410d7-ingest-2013-09-24-sbs-utica-cb9-route-identity"
+}

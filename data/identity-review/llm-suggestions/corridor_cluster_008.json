@@ -1,0 +1,58 @@
+{
+  "review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "reviewed_at": "2026-06-08T21:10:22.570Z",
+  "packet_path": "data/identity-review/packets/corridor_cluster_008.md",
+  "cluster_id": "corridor_cluster_008",
+  "kind": "corridor",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "suggestion": {
+    "cluster_id": "corridor_cluster_008",
+    "kind": "corridor",
+    "merge_groups": [
+      [
+        "corridor_tremont-ave",
+        "corridor_tremont-avenue"
+      ]
+    ],
+    "do_not_merge": [],
+    "weak_aliases": [
+      {
+        "record_id": "corridor_tremont-avenue",
+        "aliases": [
+          "corridor_tremont-ave-busway",
+          "corridor_tremont-ave-busway-segment",
+          "corridor_tremont-ave-busway-the-bronx",
+          "corridor_tremont-ave-university-ave-to-bronx-river-parkway-the-bronx",
+          "corridor_tremont-avenue-busway-segment"
+        ],
+        "reason": "These describe busway sub-segments (Third Avenue to Southern Boulevard etc.) within the larger Tremont Avenue corridor. Useful for search/disambiguation but not the full corridor identity."
+      },
+      {
+        "record_id": "corridor_tremont-ave",
+        "aliases": [
+          "corridor_tremont-ave-corridor"
+        ],
+        "reason": "Synonym alias for the same corridor."
+      }
+    ],
+    "missing_fields": [
+      {
+        "record_id": "corridor_tremont-ave",
+        "fields": [
+          "borough"
+        ]
+      }
+    ],
+    "ambiguous": [],
+    "suggested_rules": [
+      "For corridors, merge records when primary limits (from/to) match across documents, even if payload display limits use broader/superset phrasing, as long as the evidence points to the same street segment with overlapping termini.",
+      "Shared identity keys (corridor_tremont-ave) that appear as both primary key in one record and alias in another are strong merge signals."
+    ],
+    "confidence": "medium",
+    "rationale": "Both records describe Tremont Avenue in the Bronx with matching primary limits (Sedgwick Avenue to Boston Road) from authoritative sources: corridor_tremont-ave from the 2019 Final Plan page 32, and corridor_tremont-avenue from the 2021 Addendum table (p005_c0003) which explicitly lists Tremont Avenue with from=Sedgwick Avenue, to=Boston Road. Routes overlap substantially (Bx18, Bx36, Bx40, Bx42 common; Bx4A and Bx9 in the 2019 plan only). The records share identity key 'corridor_tremont-ave' and the validator flagged duplicate_global_identity. The conflicting limits field 'University Avenue to Bronx River Parkway' in record 2 appears to be a broader/superset description from a different observation (better_buses), but the core from/to fields and the addendum evidence confirm the same Sedgwick-to-Boston segment. The busway sub-segments in record 2's evidence (Third Avenue to Southern Boulevard) describe a shorter project within this corridor. Confidence is medium because of the conflicting limits label, but the structural evidence strongly supports a single canonical corridor."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T21-09-11-230Z_3449211-5dc11fc6_identity-review-run_corridor-cluster-008",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-09-11-230Z_2026-06-08T21-09-11-230Z_3449211-5dc11fc6_identity-review-run_corridor-cluster-008.jsonl"
+}

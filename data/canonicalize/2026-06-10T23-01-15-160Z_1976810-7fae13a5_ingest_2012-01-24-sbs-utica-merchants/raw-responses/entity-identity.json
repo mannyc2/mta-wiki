@@ -1,0 +1,65 @@
+{
+  "run_id": "2026-06-10T23-01-15-160Z_1976810-7fae13a5_ingest_2012-01-24-sbs-utica-merchants",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:21:59.408Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1-nycdot-new",
+        "local_observation_id": "entity_nyc_dot_2012_01_24",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_nyc-dot matches the existing registry record entity_nyc-dot (New York City Department of Transportation, agency). The observation already resolves to this id — no different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p001_c0001",
+            "source_quote": "The logo for the New York City Department of Transportation (NYC DOT) is located in the top left corner."
+          },
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p001_c0003",
+            "source_quote": "Presentation to Council Member Darlene Mealy & Utica Avenue Merchants Representatives"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2-mealy-new",
+        "local_observation_id": "entity_council_member_darlene_mealy",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_council-member-darlene-mealy matches the existing registry record entity_council-member-darlene-mealy (Darlene Mealy, person, Council Member). The observation already resolves to this id — no different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p001_c0003",
+            "source_quote": "Presentation to Council Member Darlene Mealy & Utica Avenue Merchants Representatives"
+          }
+        ]
+      },
+      {
+        "decision_id": "d3-mta-new",
+        "local_observation_id": "entity_mta_2012_01_24",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_mta-nyct matches the existing registry record entity_mta-nyct (MTA New York City Transit, agency, operator of bus routes). Although the observation label uses 'Metropolitan Transportation Authority', the base_record_id already resolves to the NYCT subsidiary record which is the correct operator of the B46 bus route discussed in the source. The observation already resolves to this id — no different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p004_c0001",
+            "source_quote": "B46 Bus Service"
+          },
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p010_c0003",
+            "source_quote": "The diagram shows a blue and white bus with the MTA logo on its side."
+          }
+        ],
+        "proposed_relations": []
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-19-43-118Z_2111393-b22f702d_canonicalize_2026-06-10t23-01-15-160z-1976810-7fae13a5-ingest-2012-01-24-sbs-utica-merchants-entity-identity"
+}

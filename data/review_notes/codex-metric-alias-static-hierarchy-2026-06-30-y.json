@@ -1,0 +1,200 @@
+{
+  "note_id": "codex-metric-alias-static-hierarchy-2026-06-30-y",
+  "created_at": "2026-06-30",
+  "mode": "codex_only_deterministic",
+  "external_provider_llms_used": false,
+  "forbidden_commands_used": [],
+  "subagents": [
+    {
+      "agent_id": "019f19a8-1dae-79e3-81aa-13475a1f6eed",
+      "nickname": "Descartes the 3rd",
+      "role": "bounded_read_only_scout",
+      "status": "closed",
+      "finding": "Recommended extending static organization_hierarchy delivered inference to a fixed relation-kind whitelist with entity-only, non-self-link, and temporal wording guards."
+    }
+  ],
+  "implemented_changes": [
+    {
+      "bucket": "metric_claim.unit_normalized.unit_family",
+      "change": "Added exact aliases for residual count, safety, safety-rate, count-rate, rate, population, workforce, area, mass, money, money-rate, duration-rate, and ridership metric-unit literals.",
+      "files": [
+        "packages/pipeline/src/ontology/normalizers.ts",
+        "packages/pipeline/test/ontology/normalizers.test.ts"
+      ],
+      "before": {
+        "other": 1533,
+        "count": 2517,
+        "money": 11590,
+        "workforce": 2182,
+        "ridership": 2080,
+        "money_rate": 703,
+        "safety": 335,
+        "population": 348,
+        "safety_rate": 235,
+        "rate": 197,
+        "count_rate": 93,
+        "area": 124,
+        "duration_rate": 10,
+        "mass": 9
+      },
+      "after": {
+        "other": 1209,
+        "count": 2645,
+        "money": 11595,
+        "workforce": 2188,
+        "ridership": 2088,
+        "money_rate": 724,
+        "safety": 366,
+        "population": 364,
+        "safety_rate": 257,
+        "rate": 224,
+        "count_rate": 139,
+        "area": 129,
+        "duration_rate": 14,
+        "mass": 14
+      },
+      "examples_promoted": [
+        "crimes",
+        "collisions",
+        "invoices",
+        "loans",
+        "outages",
+        "railcars",
+        "subway cars",
+        "vehicle crossings",
+        "buses per hour",
+        "pedestrians per hour",
+        "collisions per million miles",
+        "per 1M customers",
+        "USD per year",
+        "$000",
+        "tons"
+      ],
+      "intentionally_guarded_literals": [
+        "millions",
+        "customers",
+        "thousands",
+        "units",
+        "M",
+        "B",
+        "riders per car",
+        "passengers per car",
+        "per annum",
+        "per square foot"
+      ]
+    },
+    {
+      "bucket": "relation.assertion_status",
+      "change": "Extended static entity-to-entity organization_hierarchy delivered inference from part_of_agency to a fixed whitelist while preserving self-link, endpoint-kind, raw-alias, and future/former/proposed guards.",
+      "files": [
+        "packages/pipeline/src/records/assertion-qualifiers.ts",
+        "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+      ],
+      "relation_kind_whitelist": [
+        "part_of_agency",
+        "part_of",
+        "parent_organization",
+        "has_subsidiary",
+        "subsidiary_of",
+        "parent_of",
+        "parent_entity",
+        "has_agency",
+        "has_component",
+        "parent_subsidiary"
+      ],
+      "before": {
+        "unknown": 9799,
+        "delivered": 3270,
+        "organization_hierarchy_unknown": 339
+      },
+      "after": {
+        "unknown": 9569,
+        "delivered": 3500,
+        "organization_hierarchy_unknown": 109
+      },
+      "guard_examples_left_unknown": [
+        "entity-source and source-entity hierarchy-shaped rows",
+        "self-links after identity resolution",
+        "raw alias relation kinds outside the whitelist",
+        "future/proposed/planned/former wording"
+      ]
+    }
+  ],
+  "verification": {
+    "tests": [
+      {
+        "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+        "result": "pass",
+        "tests": 274,
+        "expects": 4284
+      },
+      {
+        "command": "bun test packages/pipeline/test/records/submissions.test.ts",
+        "result": "pass",
+        "tests": 29,
+        "expects": 176
+      },
+      {
+        "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+        "result": "pass",
+        "tests": 19,
+        "expects": 68
+      },
+      {
+        "command": "bun run typecheck",
+        "result": "pass"
+      }
+    ],
+    "materialize": {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "pass",
+      "materialized_submissions": 93092,
+      "total_submissions": 98102,
+      "retired_submissions_skipped": 243,
+      "pages_reported": 7338,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass",
+      "issues": 0,
+      "submissions": 98102,
+      "canonical_records": 84040,
+      "wiki_pages": 7334
+    },
+    "sqlite": {
+      "command": "sqlite3 data/canonical.db 'PRAGMA quick_check;'",
+      "result": "ok"
+    }
+  },
+  "current_backlog": {
+    "metric_claim_unit_family_other": {
+      "count": 1209,
+      "top_units": [
+        ["millions", 368],
+        ["customers", 146],
+        ["thousands", 61],
+        ["units", 19],
+        ["M", 18],
+        ["riders per car", 9],
+        ["% of Jan 2017 baseline", 7],
+        ["observations", 5],
+        ["passengers per car", 5],
+        ["per annum", 5],
+        ["per square foot", 5]
+      ]
+    },
+    "relation_assertion_status_unknown": {
+      "count": 9569,
+      "policy": "Avoid mass-marking metric_context, claim_context, broad agency/person roles, and partnership edges. Continue only with endpoint-kind and wording-proven shape rules."
+    },
+    "project_tails": {
+      "project_family_other": 8,
+      "project_family_missing": 2,
+      "document_time_status_missing": 18
+    },
+    "route_project_duplicate_pressure": "policy_floor"
+  },
+  "validation_clean": true,
+  "goal_status": "active"
+}

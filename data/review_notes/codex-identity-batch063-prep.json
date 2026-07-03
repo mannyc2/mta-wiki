@@ -1,0 +1,390 @@
+{
+  "note_id": "codex-canonical-cleanup-2026-06-22-identity-alias-batch-063-prep",
+  "created_at": "2026-06-22T22:10:33Z",
+  "status": "ready_for_conductor_apply",
+  "lane": "identity_prep_only",
+  "batch": "identity-batch063",
+  "scope": {
+    "allowed_write": "data/review_notes/codex-identity-batch063-prep.json",
+    "durable_inputs_mutated": false,
+    "generated_outputs_mutated": false,
+    "provider_backed_commands_run": false,
+    "forbidden_commands_run": []
+  },
+  "context": {
+    "source_backlog": "unresolved duplicate_global_identity canonical backlog after current overrides and prior prep through identity062",
+    "candidate_mining_summary": {
+      "current_entity_records_scanned_from_jsonl": 2588,
+      "current_alias_overrides_considered": 379,
+      "db_identity_alias_rows_considered": 379,
+      "prior_prep_alias_entries_considered_through_batch062": 130,
+      "prior_prep_target_entries_considered_through_batch062": 130,
+      "prior_prep_unique_records_excluded_through_batch062": 208,
+      "identity_key_groups_scanned": 14443,
+      "candidate_pairs_after_alias_do_not_merge_and_prior_prep_filters": 880,
+      "selected_high_confidence_candidates": 10
+    },
+    "selection_policy": [
+      "Prefer exact named-person aliases with shared deterministic identity keys, matching or compatible role text, and source evidence on both sides.",
+      "Exclude any alias or target record that appeared as either alias or target in prior prep artifacts through batch062.",
+      "Exclude broad agencies, programs, committees, member-list records, aliases already mapped in merges.json/current identity_aliases, target records that are alias-mapped, and do-not-merge suppressed pairs."
+    ]
+  },
+  "intended_mutation": {
+    "aliases": {
+      "entity": {
+        "entity_jai-patel-deputy-cfo": "entity_jai-patel-deputy-cfo-mta-138446",
+        "entity_meeting-doc-95161-jason-wilcox": "entity_meeting91596-jason-wilcox",
+        "entity_meeting-doc-109291-john-mueller": "entity_meeting-doc-111766-john-mueller",
+        "entity_joseph-odonnell-meeting-doc-140406": "entity_joseph-odonnell",
+        "entity_joseph-mcgrann-mta-police-chief-39691": "entity_meeting-doc-29961-joseph-mcgrann",
+        "entity_meeting-doc-128981-joyce-brown": "entity_joyce-brown-eeo-officer",
+        "entity_meeting-doc-151636-kenneth-daughtry": "entity_kenneth-daughtry",
+        "entity_lawrence-montreuil-meeting-doc-199076": "entity_lawrence-montreuil-meeting-doc-205611",
+        "entity_meeting-doc-104781-michael-kemper": "entity_meeting-doc-105931-michael-kemper",
+        "entity_kim-trevisan-174081": "entity_kim-trevisan-meeting-doc-140421"
+      }
+    }
+  },
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "canonical_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "targets_not_alias_mapped_in_merges_json": true,
+    "targets_not_alias_mapped_in_identity_aliases_table": true,
+    "no_overlap_with_prior_prep_through_batch062": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 20,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 20,
+    "source_page_blocks_missing": [],
+    "all_pass": true
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_jai-patel-deputy-cfo",
+      "target": "entity_jai-patel-deputy-cfo-mta-138446",
+      "validator_duplicate_key": "entity_jai-patel",
+      "reason": "Both records identify Jai Patel as Deputy Chief Financial Officer in MTA context, with exact person and role-specific identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_146976#p002_c0006",
+        "meeting_doc_138446#p001_c0002"
+      ],
+      "shared_identity_keys": [
+        "entity_jai-patel",
+        "entity_jai-patel-deputy-chief-financial-officer"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch062": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-95161-jason-wilcox",
+      "target": "entity_meeting91596-jason-wilcox",
+      "validator_duplicate_key": "entity_jason-wilcox",
+      "reason": "Both records identify Jason Wilcox as Chief of Transit, NYPD, with exact person and role-specific identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_95161#p001_c0006",
+        "meeting_doc_91596#p001_c0006"
+      ],
+      "shared_identity_keys": [
+        "entity_jason-wilcox",
+        "entity_jason-wilcox-chief-of-transit-nypd"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch062": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-109291-john-mueller",
+      "target": "entity_meeting-doc-111766-john-mueller",
+      "validator_duplicate_key": "entity_john-mueller",
+      "reason": "Both records identify John Mueller as MTAPD Chief of Police, with matching title text and exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_109291#p012_c0007",
+        "meeting_doc_111766#p011_c0005"
+      ],
+      "shared_identity_keys": [
+        "entity_john-mueller"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch062": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_joseph-odonnell-meeting-doc-140406",
+      "target": "entity_joseph-odonnell",
+      "validator_duplicate_key": "entity_joseph-o-donnell",
+      "reason": "Both records identify Joseph O'Donnell as Director of Public Affairs for MTA Construction & Development, with exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_140406#p007_c0009",
+        "meeting_doc_131536#p004_c0011"
+      ],
+      "shared_identity_keys": [
+        "entity_joseph-o-donnell"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch062": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_joseph-mcgrann-mta-police-chief-39691",
+      "target": "entity_meeting-doc-29961-joseph-mcgrann",
+      "validator_duplicate_key": "entity_joseph-p-mcgrann",
+      "reason": "Both records identify Joseph P. McGrann as Chief of Police, with exact person identity key and matching title text.",
+      "evidence_refs": [
+        "meeting_doc_39691#p024_c0005",
+        "meeting_doc_29961#p024_c0005"
+      ],
+      "shared_identity_keys": [
+        "entity_joseph-p-mcgrann"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch062": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-128981-joyce-brown",
+      "target": "entity_joyce-brown-eeo-officer",
+      "validator_duplicate_key": "entity_joyce-brown",
+      "reason": "Both records identify Joyce Brown as Agency Chief Equal Opportunity Officer, with exact person and role-specific identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_128981#p004_c0007",
+        "meeting_doc_151591#p004_c0008"
+      ],
+      "shared_identity_keys": [
+        "entity_joyce-brown",
+        "entity_joyce-brown-agency-chief-equal-opportunity-officer"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch062": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-151636-kenneth-daughtry",
+      "target": "entity_kenneth-daughtry",
+      "validator_duplicate_key": "entity_kenneth-daughtry",
+      "reason": "Both records identify Kenneth Daughtry as a Train Service Supervisor in NYCT Department of Subways/DOS context, with exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_151636#p005_c0011",
+        "meeting_doc_199241#p011_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_kenneth-daughtry"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch062": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_lawrence-montreuil-meeting-doc-199076",
+      "target": "entity_lawrence-montreuil-meeting-doc-205611",
+      "validator_duplicate_key": "entity_lawrence-j-montreuil",
+      "reason": "Both records identify Lawrence J. Montreuil as Assistant Deputy Chief Procurement Officer for MTA Procurement, with exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_199076#p001_c0003",
+        "meeting_doc_205611#p001_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_lawrence-j-montreuil"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch062": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-104781-michael-kemper",
+      "target": "entity_meeting-doc-105931-michael-kemper",
+      "validator_duplicate_key": "entity_michael-kemper",
+      "reason": "Both records identify Michael Kemper as Acting Chief, Transit, NYPD, with exact person and role-specific identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_104781#p001_c0008",
+        "meeting_doc_105931#p001_c0010"
+      ],
+      "shared_identity_keys": [
+        "entity_michael-kemper",
+        "entity_michael-kemper-acting-chief-transit-nypd"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch062": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_kim-trevisan-174081",
+      "target": "entity_kim-trevisan-meeting-doc-140421",
+      "validator_duplicate_key": "entity_kim-trevisan",
+      "reason": "Both records identify Kim Trevisan as a transaction/project manager in Metro-North context, with exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_174081#p018_c0004",
+        "meeting_doc_140421#p003_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_kim-trevisan"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch062": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    }
+  ],
+  "deferred_low_confidence_examples": [
+    {
+      "candidate": "Catherine T. Sheridan pair",
+      "reason": "Deferred because one side has visibly contaminated merged-field values, despite strong shared identity keys."
+    },
+    {
+      "candidate": "Haeda Mihaltses and Louis Montanti records touching prior prep targets",
+      "reason": "Deferred to preserve strict disjointness from prior prep artifacts through batch062."
+    },
+    {
+      "candidate": "initial-only committee members and member-list records",
+      "reason": "Deferred because initial-only and committee-list identities are more target-churn prone than full named-person role matches."
+    }
+  ],
+  "commands_used_for_evidence": [
+    {
+      "command": "test ! -e data/review_notes/codex-identity-batch063-prep.json && echo missing || echo exists",
+      "purpose": "Confirmed the batch063 prep artifact did not already exist before writing.",
+      "result": "missing"
+    },
+    {
+      "command": "jq '.intended_mutation.aliases.entity, .aggregate_guard_results' data/review_notes/codex-identity-batch062-prep.json",
+      "purpose": "Read prior batch062 aliases and guard result to preserve disjointness.",
+      "result": "batch062 contained 10 aliases with all aggregate guards passing."
+    },
+    {
+      "command": "bun --eval '<read-only duplicate_global_identity mining over data/canonical/entities.jsonl, identityKeysForRecord(), current merges.json, read-only identity_aliases, prior prep aliases and targets through batch062, and do-not-merge guards>'",
+      "purpose": "Mined unresolved duplicate_global_identity candidates while excluding already mapped aliases, alias-mapped targets, current identity_aliases, prior prep records, and do-not-merge pairs.",
+      "result": "2588 current entity records scanned; 880 candidate pairs after alias/do-not-merge/prior-prep filters; 10 high-confidence candidates selected."
+    },
+    {
+      "command": "bun --eval '<read-only final guard script for canonical record presence, alias/target guard checks, prior prep disjointness, shared identity keys, raw source blocks, and source-page blocks>'",
+      "purpose": "Verified selected aliases and evidence before writing this prep artifact.",
+      "result": "all_pass true; 20 raw source blocks checked, 20 source-page blocks checked, no missing evidence blocks."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "purpose": "Stamped this prep artifact.",
+      "result": "2026-06-22T22:10:33Z"
+    }
+  ],
+  "commands_intentionally_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "export-jsonl",
+    "DB repair or publish commands",
+    "provider-backed post-ingest commands",
+    "identity-review-run or apply commands"
+  ]
+}

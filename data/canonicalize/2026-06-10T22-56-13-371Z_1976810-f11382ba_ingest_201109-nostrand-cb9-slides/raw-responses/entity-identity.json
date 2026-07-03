@@ -1,0 +1,54 @@
+{
+  "run_id": "2026-06-10T22-56-13-371Z_1976810-f11382ba_ingest_201109-nostrand-cb9-slides",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T01:45:56.352Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "entity-mta-nyct-20110927-new",
+        "local_observation_id": "entity_mta_nyct_20110927",
+        "decision": "new",
+        "rationale": "Base record id entity_mta-nyct already exists in registry with matching entity_name 'MTA New York City Transit', entity_type 'agency'. Registry record includes source 201109_nostrand_cb9_slides and alias entity_mta-nyct-20110927. Observation already resolves to its own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p001_c0002",
+            "source_quote": "MTA globe icon and the text 'New York City transit'"
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-community-board-9-brooklyn-20110927-new",
+        "local_observation_id": "entity_community_board_9_brooklyn_20110927",
+        "decision": "new",
+        "rationale": "Base record id entity_community-board-9-brooklyn-brt-nostrand already exists in registry with matching entity_name 'Community Board 9', entity_type 'community board', description 'Brooklyn Community Board 9, audience for Nostrand/Rogers SBS presentation'. Registry record includes source 201109_nostrand_cb9_slides and alias entity_community-board-9-brooklyn-20110927. Observation already resolves to its own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p001_c0004",
+            "source_quote": "Nostrand Avenue / Rogers Avenue Select Bus Service Presentation to Community Board 9"
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-nyc-dot-20110927-new",
+        "local_observation_id": "entity_nyc_dot_20110927",
+        "decision": "new",
+        "rationale": "Base record id entity_nyc-dot already exists in registry with matching entity_name 'New York City Department of Transportation', entity_type 'agency'. Registry record includes source 201109_nostrand_cb9_slides and alias entity_nyc-dot-20110927. Observation already resolves to its own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p001_c0003",
+            "source_quote": "The logo for the New York City Department of Transportation (NYC DOT)"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-44-43-789Z_2111393-ce3fe0d5_canonicalize_2026-06-10t22-56-13-371z-1976810-f11382ba-ingest-201109-nostrand-cb9-slides-entity-identity"
+}

@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-06-10T17-48-04-740Z_1496766-9541d47b_ingest_2010-04-29-brt-1st2nd-cac4",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-10T19:39:34.565Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "proj-first-second-ave-sbs-new",
+        "local_observation_id": "project_first_second_ave_sbs",
+        "decision": "new",
+        "rationale": "The observation already resolves to base_record_id 'project_first-second-ave-sbs', which exists in the registry with matching source 2010_04_29_brt_1st2nd_cac4 among its source_ids. The observation refers to the same real-world project — M15 Select Bus Service on First and Second Avenues from South Ferry to 125th Street, launching October 10, 2010 — and the registry record already captures this. No link to a different registry record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p003_c0005",
+            "source_quote": "M15 Select Bus Service begins: October 10, 2010"
+          },
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p005_c0010",
+            "source_quote": "SELECT BUS SERVICE IS COMING TO FIRST AVENUE/SECOND AVENUE About the Corridor • 8.5 miles from South Ferry to 125th Street • Over 57,000 weekday riders on the M15"
+          },
+          {
+            "source_id": "2010_04_29_brt_1st2nd_cac4",
+            "block_id": "p018_c0005",
+            "source_quote": "Select Bus Service begins October 10, 2010"
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-38-29-011Z_1647891-99f6a220_canonicalize_2026-06-10t17-48-04-740z-1496766-9541d47b-ingest-2010-04-29-brt-1st2nd-cac4-project-identity"
+}

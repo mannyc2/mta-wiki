@@ -1,0 +1,69 @@
+{
+  "note_id": "codex-source-prep-spreadsheet-batch011-prep",
+  "created_at": "2026-06-23T16:45:00Z",
+  "author": "codex",
+  "kind": "source_prep_spreadsheet_batch_prep",
+  "status": "applied",
+  "scope": "Next ten not-ready spreadsheet sources with reviewed spreadsheet-backlog-20260623 preview sidecars and empty current blocks.",
+  "run_id": "spreadsheet-backlog-20260623",
+  "candidates": [
+    {
+      "source_id": "meeting_doc_100246",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_100246/preview.json"
+    },
+    {
+      "source_id": "meeting_doc_105821",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_105821/preview.json"
+    },
+    {
+      "source_id": "meeting_doc_109211",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109211/preview.json"
+    },
+    {
+      "source_id": "meeting_doc_109246",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109246/preview.json"
+    },
+    {
+      "source_id": "meeting_doc_109256",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109256/preview.json"
+    },
+    {
+      "source_id": "meeting_doc_109261",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109261/preview.json"
+    },
+    {
+      "source_id": "meeting_doc_109266",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_109266/preview.json"
+    },
+    {
+      "source_id": "meeting_doc_111656",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_111656/preview.json"
+    },
+    {
+      "source_id": "meeting_doc_111676",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_111676/preview.json"
+    },
+    {
+      "source_id": "meeting_doc_111686",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_111686/preview.json"
+    }
+  ],
+  "recommended_apply_command": "for source_id in meeting_doc_100246 meeting_doc_105821 meeting_doc_109211 meeting_doc_109246 meeting_doc_109256 meeting_doc_109261 meeting_doc_109266 meeting_doc_111656 meeting_doc_111676 meeting_doc_111686; do bun packages/cli/src/cli.ts source-prep-apply-preview \"$source_id\" --run-id spreadsheet-backlog-20260623; done"
+  ,
+  "applied": {
+    "meeting_doc_100246": 113,
+    "meeting_doc_105821": 115,
+    "meeting_doc_109211": 131,
+    "meeting_doc_109246": 115,
+    "meeting_doc_109256": 7,
+    "meeting_doc_109261": 159,
+    "meeting_doc_109266": 399,
+    "meeting_doc_111656": 168,
+    "meeting_doc_111676": 115,
+    "meeting_doc_111686": 399
+  },
+  "verification": {
+    "source_prep_tests": "bun test packages/pipeline/test/sources/source-prep.test.ts: 6 pass, 0 fail",
+    "readiness_after_apply": "2402/2566 ready, 11 ready & never-ingested, 2399 already ingested, 164 quarantined/not-ready"
+  }
+}

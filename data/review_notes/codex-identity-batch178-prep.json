@@ -1,0 +1,170 @@
+{
+  "note_id": "codex-identity-batch178-prep",
+  "batch": "identity178",
+  "created_at": "2026-06-23T00:00:00Z",
+  "scope": {
+    "global_kind": "project",
+    "selection_note": "Codex-only prep for PROJECT duplicate_global_identity rows only. Inputs were current data/canonical/projects.jsonl, data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, and read-only in-process validateRepo duplicate_global_identity output.",
+    "write_limit": "Only this prep artifact was written. No identity overrides, LOG.md, manifest, canonical JSONL, DB, wiki, submissions, materialized data, or other files were edited.",
+    "validator_duplicate_counts_latest_allowed_run": {
+      "duplicate_global_identity_total": 519,
+      "project_duplicate_global_identity": 26
+    }
+  },
+  "prepared_count": 1,
+  "proposed_aliases": [
+    {
+      "global_kind": "project",
+      "alias_id": "project_congestion-relief-zone-toll-revenue-obligation",
+      "target_id": "project_annual-2021-cbdtp",
+      "canonical_id": "project_annual-2021-cbdtp",
+      "confidence": "high",
+      "validator_evidence": [
+        "Global project records project_annual-2021-cbdtp and project_congestion-relief-zone-toll-revenue-obligation share identity key project_congestion-relief-zone-toll-revenue-obligation-resolution."
+      ],
+      "canonical_evidence": {
+        "alias": {
+          "record_id": "project_congestion-relief-zone-toll-revenue-obligation",
+          "display_name": "Congestion Relief Zone Toll Revenue Obligation Resolution",
+          "project_name": "Congestion Relief Zone Toll Revenue Obligation Resolution",
+          "project_type": "resolution",
+          "description": "Authorization of the TBTA Congestion Relief Zone Toll Revenue Obligation Resolution for Submission to the Capital Program Review Board",
+          "record_aliases": [
+            "project_congestion-relief-zone-toll-revenue-obligation-resolution"
+          ],
+          "source_ids": [
+            "meeting_doc_190031"
+          ]
+        },
+        "target": {
+          "record_id": "project_annual-2021-cbdtp",
+          "display_name": "Central Business District Tolling Program",
+          "project_name": "Central Business District Tolling Program",
+          "project_type": "congestion pricing program",
+          "status": "ongoing",
+          "program": "Traffic Mobility Act",
+          "location": "Manhattan south of and inclusive of 60th Street",
+          "record_aliases_include": [
+            "project_central-business-district-tolling-program",
+            "project_central-business-district-tolling-program-cbdtp",
+            "project_congestion-relief-zone-toll-revenue-obligation-resolution",
+            "project_congestion-relief-zone-toll-revenue-obligation-resolution-crz-bond-resolution",
+            "project_meeting-doc-192281-crz-bond-resolution"
+          ],
+          "merged_values_include": {
+            "description": [
+              "CRZ Tolling Program established pursuant to the Traffic Mobility Act. Requires TBTA to establish and operate the CRZ Tolling Program and charge variable tolls for vehicles entering the Congestion Relief Zone. Program went into effect on January 5, 2025. Required to generate net annual revenues over time to fund $15 billion for MTA transit and commuter rail system capital projects.",
+              "The MTA Finance Department is seeking TBTA Board ratification of the CRZ Toll Revenue Obligation Resolution, including Master Glossary of Terms and Standard Resolution Provisions, to enable TBTA to issue bonds and notes to finance approved Capital Program transit and commuter projects.",
+              "Enables TBTA to issue bonds and notes secured by CRZ revenues to fund $15 billion portion of the 2020-2024 Capital Program for key transit and commuter rail capital projects"
+            ]
+          },
+          "source_count": 43,
+          "source_ids_sample": [
+            "annual_report_narrative_2021",
+            "meeting_doc_192251",
+            "meeting_doc_192261",
+            "meeting_doc_192281"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "project_congestion-relief-zone-toll-revenue-obligation",
+          "evidence_id": "meeting_doc_190031#p001_c0003",
+          "quote": "Congestion Relief Zone Toll Revenue Obligation Resolution Authorization of the TBTA Congestion Relief Zone Toll Revenue Obligation Resolution for Submission to the Capital Program Review Board."
+        },
+        {
+          "record_id": "project_annual-2021-cbdtp",
+          "evidence_id": "meeting_doc_192251#p002_c0017",
+          "quote": "submission of the proposed Congestion Relief Zone Toll Revenue Obligation Resolution (CRZ Bond Resolution) to the Capital Program Review Board (CPRB)"
+        },
+        {
+          "record_id": "project_annual-2021-cbdtp",
+          "evidence_id": "meeting_doc_192261#p001_c0007",
+          "quote": "The MTA Finance Department is seeking MTA Bridges and Tunnels Board ratification of the previously approved annexed Congestion Relief Zone Toll Revenue Obligation Resolution"
+        },
+        {
+          "record_id": "project_annual-2021-cbdtp",
+          "evidence_id": "meeting_doc_192261#p001_c0009",
+          "quote": "The Central Business District Tolling Program was established pursuant to the Traffic Mobility Act"
+        }
+      ],
+      "reason": "The alias is a one-source project-shaped split for the CRZ Toll Revenue Obligation Resolution. The current CBDTP target already carries the exact resolution identity alias and merged descriptions for the CRZ Bond Resolution, CPRB submission/approval, and bond authority. Merge direction keeps the broad Central Business District Tolling Program as canonical and avoids treating the financing resolution as a standalone project identity.",
+      "guards": {
+        "alias_and_target_present_in_current_projects_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "alias_is_not_current_merge_target": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "not_phase_or_stage_merge": true,
+        "not_parent_child_merge": true,
+        "not_same_name_different_location": true,
+        "stale_id_hit": false,
+        "target_current_merge_target_for": [
+          "project_congestion-relief"
+        ]
+      }
+    }
+  ],
+  "exclusions_and_guards": {
+    "input_files_read": [
+      "data/canonical/projects.jsonl",
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json"
+    ],
+    "proposal_guards": [
+      "Each proposed alias_id and target_id exists in current data/canonical/projects.jsonl.",
+      "No proposed alias_id is already present as a merge alias in current data/identity-overrides/merges.json.",
+      "No proposed alias_id is currently a merge target in current data/identity-overrides/merges.json.",
+      "No proposed target_id is currently a merge alias in current data/identity-overrides/merges.json.",
+      "No proposed pair appears in current data/identity-overrides/do-not-merge.json.",
+      "No stale ids, alias==target pairs, phase/stage merges, parent/child merges, same-name-different-location collisions, existing aliases, targets that are aliases, aliases that are merge targets, or do-not-merge hits were included."
+    ],
+    "excluded_current_duplicate_classes": [
+      "Excluded the 2017 Street Improvement Project rows because current records mix Woodhaven Boulevard and 79th Street/Manhattan evidence under the same generic project name; this is a same-name-different-location trap.",
+      "Excluded 2020-2024 Capital Program Amendment #2 and Amendment #5 rows because the current target is a broad/polluted capital-program record carrying multiple amendment numbers; treating individual amendments as aliases would be a phase/stage or amendment-level collapse.",
+      "Excluded ABLE expansion versus ABLE program because both records are current merge targets and the candidate is program-versus-expansion scope.",
+      "Excluded Bx6 SBS, Fordham Road bus priority, Faster/Cleaner/Safer, Park Avenue Viaduct, B46/Utica SBS, and VN-X4 safety fence pairs because the possible alias ids are current merge targets, creating alias-chain hazards.",
+      "Excluded CBDTP TransCore modification because it is a contract-modification/procurement record related to CBDTP, not the same project identity under the parent/child guard.",
+      "Excluded East Side Access versus East Side Access Support and East Side Access Support versus Main Line Second Track because they are program/support/component relationships, not same project identity.",
+      "Excluded Jamaica Capacity Improvement versus Phase 2 and Hall Interlocking Expansion versus Jamaica Capacity Improvements because they are phase/component or parent/child relationships.",
+      "Excluded Lexington Avenue 96th-to-60th versus 60th-to-52nd because current evidence shows adjacent or extended segment scopes rather than a high-confidence same project identity.",
+      "Excluded Penn Reconstruction versus Penn Station Reconstruction Design because current evidence distinguishes the capital project from design-service/contract scope.",
+      "Excluded LIRR Security Initiatives versus NYCT Security Initiatives because the shared name is generic and agency/source scopes differ."
+    ]
+  },
+  "command_evidence": [
+    {
+      "command": "bun --eval 'import { validateRepo } from \"./packages/pipeline/src/validate.ts\"; ... filter duplicate_global_identity project issues'",
+      "purpose": "Read-only local validateRepo inspection; observed 519 duplicate_global_identity issues total and 26 project duplicate_global_identity messages."
+    },
+    {
+      "command": "bun --eval '<read projects.jsonl, merges.json, do-not-merge.json, and validateRepo issues; compute guard states for project duplicate pairs>'",
+      "purpose": "Checked stale ids, existing aliases, aliases that are merge targets, targets that are aliases, alias==target, and do-not-merge hits before selecting proposals."
+    },
+    {
+      "command": "jq/rg over raw/sources/<source_id>/blocks.jsonl and data/canonical/projects.jsonl",
+      "purpose": "Read local source blocks and canonical payloads for selected and excluded project duplicate candidates without running provider-backed commands."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed commands",
+    "canonicalize",
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "--profile",
+    "provider",
+    "materialize",
+    "validate CLI",
+    "export-jsonl"
+  ],
+  "blockers": [
+    "Only one high-confidence project alias proposal survived the requested guards. The remaining current project duplicate_global_identity rows were excluded for phase/stage, parent/child, same-name-different-location, existing merge-target alias-chain, or contract/component-scope reasons."
+  ]
+}

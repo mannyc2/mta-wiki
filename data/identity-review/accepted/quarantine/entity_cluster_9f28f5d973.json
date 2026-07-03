@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "entity_cluster_9f28f5d973",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_9f28f5d973.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_9f28f5d973.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "quarantined",
+  "quarantine": {
+    "blocker": "merge entity_stv-20100615 + entity_stv-inc: contradicting strong identity field between entity_stv-20100615 and entity_stv-inc: entity_type organization vs consulting firm"
+  },
+  "original_merge_groups": [
+    [
+      "entity_stv-20100615",
+      "entity_stv-inc"
+    ]
+  ],
+  "original_do_not_merge": []
+}

@@ -1,0 +1,435 @@
+{
+  "run_id": "2026-06-10T23-01-15-160Z_1976810-7fae13a5_ingest_2012-01-24-sbs-utica-merchants",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T02:25:03.415Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "rel-metric-b46-weekday-ridership",
+        "local_observation_id": "metric_b46_weekday_ridership",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_b46-limited-2012",
+            "object_id": "metric_b46-weekday-ridership",
+            "description": "B46 has over 49,000 weekday passengers",
+            "evidence_refs": [
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p004_c0002",
+                "source_quote": "Over 49,000 passengers per weekday"
+              }
+            ]
+          }
+        ],
+        "rationale": "p004_c0002 explicitly states 'Over 49,000 passengers per weekday' about the B46 bus route under the 'B46 Bus Service' heading.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p004_c0002",
+            "source_quote": "Over 49,000 passengers per weekday"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-speeding-63-percent",
+        "local_observation_id": "metric_speeding_63_percent",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_utica-ave-carroll-to-church",
+            "object_id": "metric_speeding-63-percent",
+            "description": "63% of vehicles exceed speed limit on Utica Ave corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p005_c0002",
+                "source_quote": "Speeding: 63% of vehicles exceed speed limit (30 mph)"
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0002 is under the heading 'Safety Issues: Carroll St to Flatbush Ave' and explicitly names the Utica corridor. The metric is about the Utica Ave corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p005_c0002",
+            "source_quote": "Speeding: 63% of vehicles exceed speed limit (30 mph)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-crashes-total",
+        "local_observation_id": "metric_crashes_2005_2009_total",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_utica-ave-carroll-to-church",
+            "object_id": "metric_crashes-2005-2009-total",
+            "description": "1,682 total crashes on Utica Ave corridor 2005-2009",
+            "evidence_refs": [
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p005_c0002",
+                "source_quote": "Crash stats 2005-2009: – 1,682 total crashes – 9 fatalities – 114 severe injuries"
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0002 under 'Safety Issues: Carroll St to Flatbush Ave' presents crash statistics for the Utica Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p005_c0002",
+            "source_quote": "1,682 total crashes"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-crashes-fatalities",
+        "local_observation_id": "metric_crashes_2005_2009_fatalities",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_utica-ave-carroll-to-church",
+            "object_id": "metric_crashes-2005-2009-fatalities",
+            "description": "9 fatalities on Utica Ave corridor 2005-2009",
+            "evidence_refs": [
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p005_c0002",
+                "source_quote": "Crash stats 2005-2009: – 1,682 total crashes – 9 fatalities – 114 severe injuries"
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0002 under 'Safety Issues: Carroll St to Flatbush Ave' presents crash statistics for the Utica Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p005_c0002",
+            "source_quote": "9 fatalities"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-metric-crashes-severe-injuries",
+        "local_observation_id": "metric_crashes_2005_2009_severe_injuries",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_utica-ave-carroll-to-church",
+            "object_id": "metric_crashes-2005-2009-severe-injuries",
+            "description": "114 severe injuries on Utica Ave corridor 2005-2009",
+            "evidence_refs": [
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p005_c0002",
+                "source_quote": "Crash stats 2005-2009: – 1,682 total crashes – 9 fatalities – 114 severe injuries"
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0002 under 'Safety Issues: Carroll St to Flatbush Ave' presents crash statistics for the Utica Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p005_c0002",
+            "source_quote": "114 severe injuries"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-b46-second-busiest",
+        "local_observation_id": "claim_b46_second_busiest",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_b46-limited-2012",
+            "object_id": "claim_b46-second-busiest",
+            "description": "B46 is the second busiest bus route in NYC",
+            "evidence_refs": [
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p004_c0002",
+                "source_quote": "B46 is the second busiest bus route in NYC"
+              }
+            ]
+          }
+        ],
+        "rationale": "p004_c0002 explicitly states 'B46 is the second busiest bus route in NYC' under the 'B46 Bus Service' heading, naming the B46 route.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p004_c0002",
+            "source_quote": "B46 is the second busiest bus route in NYC"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-utica-no-subway",
+        "local_observation_id": "claim_most_utica_residents_no_subway",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_utica-ave-carroll-to-church",
+            "object_id": "claim_most-utica-residents-no-subway",
+            "description": "Most Utica area residents do not have subway access",
+            "evidence_refs": [
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p004_c0002",
+                "source_quote": "Most Utica area residents do not have subway access"
+              }
+            ]
+          }
+        ],
+        "rationale": "p004_c0002 states 'Most Utica area residents do not have subway access', which names the Utica area. The claim is about the corridor community, not the B46 route specifically.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p004_c0002",
+            "source_quote": "Most Utica area residents do not have subway access"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-eastern-pkwy-transfer",
+        "local_observation_id": "claim_eastern_pkwy_major_transfer",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_b46-limited-2012",
+            "object_id": "claim_eastern-pkwy-major-transfer",
+            "description": "Eastern Pkwy is a major transfer point for B46 to 3/4 trains",
+            "evidence_refs": [
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p004_c0002",
+                "source_quote": "Eastern Pkwy a major transfer point to 3/4 trains"
+              }
+            ]
+          }
+        ],
+        "rationale": "p004_c0002 states 'Eastern Pkwy a major transfer point to 3/4 trains' under 'B46 Bus Service'. This claim is about the B46 route's transfer connections at Eastern Parkway.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p004_c0002",
+            "source_quote": "Eastern Pkwy a major transfer point to 3/4 trains"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-congestion-slows-buses",
+        "local_observation_id": "claim_congestion_slows_buses",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_utica-ave-carroll-to-church",
+            "object_id": "claim_congestion-slows-buses",
+            "description": "Congestion slows B46 buses approaching Eastern Pkwy on Utica Ave corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p004_c0002",
+                "source_quote": "Congestion slows buses approaching Eastern Pkwy"
+              }
+            ]
+          }
+        ],
+        "rationale": "p004_c0002 states 'Congestion slows buses approaching Eastern Pkwy' under 'B46 Bus Service'. The claim is about roadway conditions on the Utica Avenue corridor approaching Eastern Parkway.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p004_c0002",
+            "source_quote": "Congestion slows buses approaching Eastern Pkwy"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-utica-high-injury",
+        "local_observation_id": "claim_utica_high_injury_rate",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_utica-ave-carroll-to-church",
+            "object_id": "claim_utica-high-injury-rate",
+            "description": "Utica Ave has among the highest rate of injury from motor vehicle crashes in Brooklyn",
+            "evidence_refs": [
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p005_c0002",
+                "source_quote": "Utica has among the highest rate of injury from motor vehicle crashes in Brooklyn"
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0002 states 'Utica has among the highest rate of injury from motor vehicle crashes in Brooklyn', explicitly naming the Utica Avenue corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p005_c0002",
+            "source_quote": "Utica has among the highest rate of injury from motor vehicle crashes in Brooklyn"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-congestion-eastern-pkwy",
+        "local_observation_id": "claim_traffic_congestion_worst_eastern_pkwy",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_utica-ave-carroll-to-church",
+            "object_id": "claim_traffic-congestion-worst-eastern-pkwy",
+            "description": "Traffic congestion is worst on Utica Ave approaches to Eastern Parkway",
+            "evidence_refs": [
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p006_c0004",
+                "source_quote": "Traffic congestion is worst on approaches to Eastern Parkway"
+              }
+            ]
+          }
+        ],
+        "rationale": "p006_c0004 states 'Traffic congestion is worst on approaches to Eastern Parkway'. The slide context ('Existing Conditions') and the study area map on the same page make clear this refers to Utica Avenue approaches to Eastern Parkway.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p006_c0004",
+            "source_quote": "Traffic congestion is worst on approaches to Eastern Parkway"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-fall-2011-cb-meeting",
+        "local_observation_id": "event_fall_2011_community_board_meeting",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "event_fall-2011-community-board-meeting",
+            "description": "Fall 2011 community board meeting for the Utica study",
+            "evidence_refs": [
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p011_c0003",
+                "source_quote": "Fall 2011 - DOT met with representatives of Community Boards to present the Utica study"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0003 explicitly states 'Fall 2011 - DOT met with representatives of Community Boards to present the Utica study'. The event is part of the Utica Avenue Bus Priority and Safety Study project timeline.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p011_c0003",
+            "source_quote": "Fall 2011 - DOT met with representatives of Community Boards to present the Utica study"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-winter-2012-analysis",
+        "local_observation_id": "event_winter_2012_analysis_outreach",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "event_winter-2012-analysis-outreach",
+            "description": "Winter 2012 traffic and safety analysis and merchant outreach",
+            "evidence_refs": [
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p011_c0003",
+                "source_quote": "Winter 2012 - Traffic and safety analysis; outreach to Utica merchant community"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0003 states 'Winter 2012 - Traffic and safety analysis; outreach to Utica merchant community'. This is part of the project timeline.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p011_c0003",
+            "source_quote": "Winter 2012 - Traffic and safety analysis; outreach to Utica merchant community"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-spring-2012-recommendations",
+        "local_observation_id": "event_spring_2012_recommendations",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "event_spring-2012-recommendations",
+            "description": "Spring 2012 presentation of study recommendations to Community Boards",
+            "evidence_refs": [
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p011_c0003",
+                "source_quote": "Spring 2012 – Presentation of study recommendations to Community Boards and other stakeholders; plan revisions"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0003 states 'Spring 2012 – Presentation of study recommendations to Community Boards and other stakeholders; plan revisions'. Part of the project timeline.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p011_c0003",
+            "source_quote": "Spring 2012 – Presentation of study recommendations to Community Boards and other stakeholders; plan revisions"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-summer-2012-implementation",
+        "local_observation_id": "event_summer_2012_implementation_target",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "event_summer-2012-implementation-target",
+            "description": "Summer 2012 target for implementation of study recommendations",
+            "evidence_refs": [
+              {
+                "source_id": "2012_01_24_sbs_utica_merchants",
+                "block_id": "p011_c0003",
+                "source_quote": "Target for implementation: summer 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0003 states 'Target for implementation: summer 2012'. This is the final milestone in the project timeline.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_01_24_sbs_utica_merchants",
+            "block_id": "p011_c0003",
+            "source_quote": "Target for implementation: summer 2012"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-19-43-118Z_2111393-08f44c72_canonicalize_2026-06-10t23-01-15-160z-1976810-7fae13a5-ingest-2012-01-24-sbs-utica-merchants-relation-linker"
+}

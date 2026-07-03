@@ -1,0 +1,109 @@
+{
+  "note_id": "codex-relation-assertion-publication-timeline-treatment-2026-07-01",
+  "date": "2026-07-01",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "banned_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed model calls"
+  ],
+  "bucket": "relation assertion_status unknown cleanup",
+  "baseline": {
+    "relation_assertion_unknown_total": 8495,
+    "publication_role_delivered_report_unknown": 10,
+    "timeline_context_has_timeline_event_unknown": 323,
+    "treatment_context_has_treatment_unknown": 82,
+    "validate_issues": 0
+  },
+  "implemented_rules": [
+    {
+      "name": "publication_role.delivered_report delivered inference",
+      "file": "packages/pipeline/src/records/assertion-qualifiers.ts",
+      "status": "delivered",
+      "guards": [
+        "relation_family is publication_role",
+        "relation_kind is delivered_report",
+        "subject is entity",
+        "object is source, event, claim, or entity",
+        "subject and object are not the same record",
+        "relation/evidence/endpoint text has no future, uncertain, former, or to_be/will_be token"
+      ],
+      "effect": {
+        "unknown_before": 10,
+        "unknown_after": 0,
+        "moved": 10
+      }
+    },
+    {
+      "name": "meeting agenda authorization request timeline inference",
+      "file": "packages/pipeline/src/records/assertion-qualifiers.ts",
+      "status": "planned",
+      "guards": [
+        "timeline_context.has_timeline_event",
+        "entity subject and event object",
+        "event_family approval and event_kind authorization",
+        "event has date_normalized",
+        "citing source is meeting agenda, agenda items, staff summary, or staff summary packet",
+        "citing source is not a work plan",
+        "relation/evidence/event text requests authorization",
+        "reject no-items, no-meeting, postponed, deferred, cancelled, withdrawn, denied, lack-of-quorum, and past-tense approval/adoption/execution wording"
+      ],
+      "source_subagent": "019f1b15-aa3e-7363-bb2a-b9a9719727ad",
+      "effect": {
+        "unknown_before": 323,
+        "unknown_after": 311,
+        "moved": 12
+      }
+    },
+    {
+      "name": "future treatment evidence planned inference",
+      "file": "packages/pipeline/src/records/assertion-qualifiers.ts",
+      "status": "planned",
+      "guards": [
+        "treatment_context.has_treatment",
+        "corridor or route subject and treatment_component object",
+        "lifecycle key uses relation, object, and evidence text only",
+        "matches explicit future treatment patterns for DOT offset bus lanes, bus lanes in effect, bus bulbs/sidewalks extending to bus lanes, or TSP extended green",
+        "reject proposed/draft/concept/candidate/potential and already-delivered wording"
+      ],
+      "source_subagent": "019f1b15-b275-7c60-8ffb-360f68a0b344",
+      "effect": {
+        "unknown_before": 82,
+        "unknown_after": 77,
+        "moved": 5
+      }
+    }
+  ],
+  "post_materialize": {
+    "relation_assertion_unknown_total": 8468,
+    "publication_role_delivered_report_unknown": 0,
+    "timeline_context_has_timeline_event_unknown": 311,
+    "treatment_context_has_treatment_unknown": 77,
+    "publication_role_unknown": 61,
+    "timeline_context_unknown": 443,
+    "treatment_context_unknown": 98,
+    "validate_issues": 0
+  },
+  "verification": {
+    "focused_tests": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts passed: 53 tests, 275 expect calls",
+    "typecheck": "bun run typecheck passed",
+    "materialize": "bun packages/cli/src/cli.ts materialize completed cleanly; Materialized 93092/98102 submissions; retired submissions skipped: 243; SQLite FTS quick_check: ok",
+    "validate": "bun packages/cli/src/cli.ts validate reported Issues: 0"
+  },
+  "intentionally_unresolved": [
+    "metric_context.has_metric remains the largest residual bucket and needs a separate value/date semantics rule before bulk classification",
+    "work-plan No Items / No Meetings Held timeline rows remain unknown by design",
+    "generic treatment headings, map legends, ambiguous proposed/delivered treatment rows, and delivered Flatbush TSP evidence remain separate rules",
+    "identity-review duplicate project/route pressure remains at zero and was not reopened in this slice"
+  ],
+  "next_lanes": [
+    "consume the metric_context.has_metric scout when complete and implement only a provenance-safe metric rule",
+    "audit publication_role.published_by/prepared_by residuals for source-vs-entity endpoint contamination",
+    "continue small timeline/treatment status slices with exact text guards"
+  ]
+}

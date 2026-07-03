@@ -1,0 +1,33 @@
+{"decision_id":"relate-off-board-fare","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p005_c0010","2010_04_29_brt_1st2nd_cac4#p018_c0007"]}
+{"decision_id":"relate-low-floor-buses","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p005_c0010","2010_04_29_brt_1st2nd_cac4#p018_c0008"]}
+{"decision_id":"relate-dedicated-bus-lanes","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p005_c0010","2010_04_29_brt_1st2nd_cac4#p018_c0009"]}
+{"decision_id":"relate-tsp","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p005_c0010"]}
+{"decision_id":"relate-bike-ped","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p005_c0010"]}
+{"decision_id":"relate-offset-bus-lane","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p017_c0007","2010_04_29_brt_1st2nd_cac4#p017_c0008","2010_04_29_brt_1st2nd_cac4#p017_c0009"]}
+{"decision_id":"relate-curb-bike-lane","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p017_c0006"]}
+{"decision_id":"rel-m15-weekday-riders","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p005_c0010"]}
+{"decision_id":"rel-corridor-length","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p005_c0010"]}
+{"decision_id":"rel-residents-quarter-mile","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p005_c0010"]}
+{"decision_id":"rel-households-no-car","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p005_c0010"]}
+{"decision_id":"rel-commute-transit-pct","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p005_c0010"]}
+{"decision_id":"rel-over-10-miles-facilities-metric","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p003_c0006"]}
+{"decision_id":"rel-28th-st-stations","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p009_c0007","2010_04_29_brt_1st2nd_cac4#p014_c0007","2010_04_29_brt_1st2nd_cac4#p017_c0005"]}
+{"decision_id":"rel-curbside-bike-lane","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p016_c0005","2010_04_29_brt_1st2nd_cac4#p016_c0006","2010_04_29_brt_1st2nd_cac4#p016_c0007","2010_04_29_brt_1st2nd_cac4#p016_c0008"]}
+{"decision_id":"rel-water-st-wall-st","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p007_c0008","2010_04_29_brt_1st2nd_cac4#p007_c0009"]}
+{"decision_id":"rel-grand-st-allen-st","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p008_c0009","2010_04_29_brt_1st2nd_cac4#p008_c0010"]}
+{"decision_id":"rel-42nd-st-un","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p010_c0006","2010_04_29_brt_1st2nd_cac4#p010_c0007"]}
+{"decision_id":"rel-57th-st-trees","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p011_c0006","2010_04_29_brt_1st2nd_cac4#p011_c0007"]}
+{"decision_id":"rel-116th-st-bus-bulb","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p012_c0006","2010_04_29_brt_1st2nd_cac4#p012_c0007"]}
+{"decision_id":"rel-106th-st-bus-bulb","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p013_c0006","2010_04_29_brt_1st2nd_cac4#p013_c0007"]}
+{"decision_id":"rel-offset-bus-lane-regs","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p022_c0006","2010_04_29_brt_1st2nd_cac4#p022_c0007","2010_04_29_brt_1st2nd_cac4#p022_c0008"]}
+{"decision_id":"rel-curb-bus-lane-hours","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p024_c0005","2010_04_29_brt_1st2nd_cac4#p024_c0006"]}
+{"decision_id":"rel-outreach-businesses","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p005_c0006","2010_04_29_brt_1st2nd_cac4#p005_c0008"]}
+{"decision_id":"rel-over-10-miles-facilities-claim","verdict":"fail","failure_reason":"Cited block p003_c0006 only states the claim text ('Over 10 miles of new and improved bus and bicycle facilities') without naming or referencing the First Avenue/Second Avenue SBS project. The connection relies on co-occurrence within the same source document, which is not a relation.","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p003_c0006"]}
+{"decision_id":"rel-protected-bike-path-parking","verdict":"fail","failure_reason":"Cited blocks p023_c0005 and p023_c0006 describe parking regulations where protected bike paths are applied but do not name the First Avenue/Second Avenue SBS project. The connection relies on co-occurrence in the document.","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p023_c0005","2010_04_29_brt_1st2nd_cac4#p023_c0006"]}
+{"decision_id":"rel-construction-sequencing","verdict":"fail","failure_reason":"Cited blocks p020_c0006 and p020_c0007 describe construction activities and a starting point (First Avenue and Houston Street) but do not name the SBS project. Geographical suggestion is insufficient; the connection relies on co-occurrence.","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p020_c0006","2010_04_29_brt_1st2nd_cac4#p020_c0007"]}
+{"decision_id":"rel-construction-timeline","verdict":"fail","failure_reason":"Cited block p020_c0010 is a color-coded legend (Yellow May-June, etc.) with no project name. The connection to project_first-second-ave-sbs relies on co-occurrence in the document.","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p020_c0010"]}
+{"decision_id":"rel-m15-sbs-launch","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p003_c0005"]}
+{"decision_id":"rel-construction-begins","verdict":"fail","failure_reason":"Cited block p003_c0007 states 'Construction begins in May' — generic text with no project name. The connection relies on co-occurrence in the document.","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p003_c0007"]}
+{"decision_id":"rel-cac-5-midsummer","verdict":"fail","failure_reason":"Cited block p028_c0008 states 'CAC #5 – Mid-summer 2010' but does not specify which Community Advisory Committee. The connection to project_first-second-ave-sbs relies on co-occurrence in the document.","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p028_c0008"]}
+{"decision_id":"rel-open-house-2-sept","verdict":"fail","failure_reason":"Cited block p028_c0009 states 'Open House #2 – September 2010' but does not specify which project. The connection relies on co-occurrence in the document.","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p028_c0009"]}
+{"decision_id":"rel-cac-4-april-29","verdict":"pass","evidence_checked":["2010_04_29_brt_1st2nd_cac4#p001_c0001","2010_04_29_brt_1st2nd_cac4#p001_c0002"]}

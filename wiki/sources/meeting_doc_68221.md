@@ -1,0 +1,3497 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-68221"
+record_kind: "source"
+display_name: "NYCT Committee Book December 2021"
+source_id: "meeting_doc_68221"
+source_ids:
+  - "meeting_doc_68221"
+local_observation_id: "source_nyct_committee_book_dec2021"
+local_observation_ids:
+  - "source_nyct_committee_book_dec2021"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-22T20:16:53.833Z"
+raw_text: "Transit and Bus Committee Meeting December 2021 - NYCT Committee Book"
+submission_ids:
+  - "sub_ebaa04370c67522d"
+payload:
+  authority_tier: "board_material"
+  content_type: "committee book"
+  date_text: "December 13, 2021"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2021-12-13"
+    precision: "day"
+    raw_text: "December 13, 2021"
+  description: "New York City Transit and Bus Committee Meeting book for December 13, 2021 meeting including meeting minutes, executive summary, president's report, subway/bus/paratransit reports, procurements, and service changes for Bronx Local Bus Network Redesign and SIM23/24 route assumption."
+  document_type: "Transit and Bus Committee Meeting Book"
+  published_date_normalized: "2021-12-13"
+  published_date_precision: "day"
+  publisher: "Metropolitan Transportation Authority"
+  title: "NYCT Committee Book"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_68221#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_68221"
+    source_path: "raw/sources/meeting_doc_68221/blocks.jsonl"
+    text_sha256: "sha256:1e8ff953e582c3e65a64c083230cf858eca9d098c7d8f61cad83184ee2fd0449"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0001"
+    evidence_id: "meeting_doc_68221#p002_c0001"
+    page_number: 2
+    source_id: "meeting_doc_68221"
+    source_path: "raw/sources/meeting_doc_68221/blocks.jsonl"
+    text_sha256: "sha256:3bbd00b360173eb6a370c2239d7e2aeecdcb8a6bb26fd73629d348b66b15c173"
+    text_source: "raw_text"
+---
+
+# NYCT Committee Book
+
+source_id: meeting_doc_68221
+citation: cite block ids exactly as shown in square brackets
+document: 2119 block(s)
+
+## Page 1
+
+### [p001_c0001] Transit and Bus Committee Meeting December 2021
+### [p001_c0002] Committee Members
+[p001_c0003] H. Mihaltses (Chair)
+[p001_c0004] V. Calise (Vice Chair)
+[p001_c0005] A. Albert
+[p001_c0006] J. Barbas
+[p001_c0007] N. Brown
+[p001_c0008] L. Cortès-Vázquez
+[p001_c0009] R. Glucksman
+[p001_c0010] D. Jones
+[p001_c0011] R. Linn
+[p001_c0012] D. Mack
+[p001_c0013] R. Mujica
+[p001_c0014] J. Samuelsen
+[p001_c0015] L. Schwartz
+> [p001_c0016] A group of people in various costumes, including a man in a top hat and a woman in a sequined dress, posing on a subway train car. The text "THE ONLY SURE WAY TO MAKE IT TO BROADWAY" is overlaid at the top. The MTA logo and "welcome back new york" text are in the bottom right corner.
+[p001_c0017] The Metropolitan Transportation Authority (MTA) and Broadway advertising agency RPM collaborated to recreate a classic 1977 advertisement that welcomes new generations of people back to New York City and Broadway. The ad's reboot is part of MTA's 'Welcome Back New York' campaign that touts the many customer benefits of our mass transit system and encourages riders to see all that New York City has to offer.
+
+## Page 2
+
+### [p002_c0001] New York City Transit and Bus Committee Meeting
+[p002_c0002] 2 BROADWAY, 20TH FLOOR BOARDROOM, NY, NY 10004
+[p002_c0003] Monday, 12/13/2021
+[p002_c0004] 11:00 AM - 1:00 PM ET
+### [p002_c0005] 1. PUBLIC COMMENT PERIOD
+### [p002_c0006] 2. SUMMARY OF ACTIONS
+[p002_c0007] Summary of Actions - Page 4
+### [p002_c0008] 3. APPROVAL OF MINUTES – NOVEMBER 15, 2021
+[p002_c0009] Minutes - November 15, 2021 - Page 5
+### [p002_c0010] 4. COMMITTEE WORK PLAN
+[p002_c0011] Dec 2021 Work Plan - Page 19
+### [p002_c0012] 5. EXECUTIVE SUMMARY
+[p002_c0013] Executive Summary December - Page 26
+### [p002_c0014] 6. PRESIDENT'S REPORT
+### [p002_c0015] a. Customer Service Report
+### [p002_c0016] i. Subway Report
+[p002_c0017] Subway Report - Page 35
+### [p002_c0018] ii. NYCT, MTA Bus Report
+[p002_c0019] Bus Report - Page 61
+### [p002_c0020] iii. Paratransit Report
+[p002_c0021] Paratransit Report - Page 82
+### [p002_c0022] iv. Strategy & Customer Experience
+[p002_c0023] Strategy & Customer Experience Report - Page 93
+### [p002_c0024] b. Safety Report
+[p002_c0025] Safety Report - Page 98
+### [p002_c0026] c. Crime Report
+[p002_c0027] Crime Report - December - Page 103
+### [p002_c0028] 7. PROCUREMENTS
+[p002_c0029] Procurement Cover, Staff Summary, and Resolution - Page 111
+### [p002_c0030] a. Non-Competitive (none)
+### [p002_c0031] b. Competitive
+[p002_c0032] Competitive - Page 116
+### [p002_c0033] c. Ratifications (none)
+
+## Page 3
+
+### [p003_c0001] d. C&D Procurements
+[p003_c0002] C&D Procurement Package - Page 121
+### [p003_c0003] 8. INFORMATIONAL ITEMS
+### [p003_c0004] a. NYCT 2021 Budget and 2021-2024 Financial Plan Adoption
+[p003_c0005] NYCT 2021 Budget and 2021-2024 Financial Plan Adoption - Page 142
+### [p003_c0006] b. SIR 2021 Budget and 2021-2024 Financial Plan Adoption
+[p003_c0007] SIR 2021 Budget and 2021-2024 Financial Plan Adoption - Page 154
+### [p003_c0008] c. MTA Bus 2021 Budget and 2021-2024 Financial Plan Adoption
+[p003_c0009] MTA Bus 2021 Budget and 2021-2024 Financial Plan Adoption - Page 165
+### [p003_c0010] 9. SERVICE CHANGES
+### [p003_c0011] a. Service Changes: Bronx Local Bus Network Redesign
+[p003_c0012] Bronx Local Bus Network Redesign Staff Summary - Page 176
+### [p003_c0013] b. Assumption of and Service Revisions to SIM 23/24 Routes on the South Shore of Staten Island
+[p003_c0014] Assumption of and Service Revisions to SIM 23/24 Routes on the South Shore of Staten Island - Page 229
+### [p003_c0015] 10. REVIEW OF NYCT AND MTA BUS COMMITTEE CHARTER
+[p003_c0016] NYCTA MTA Bus Committee Charter - Page 235
+### [p003_c0017] 11. EXECUTIVE OFFICE CONTACT INFORMATION
+[p003_c0018] Contact Page - Page 238
+
+## Page 4
+
+[p004_c0001]
+
+```text
+Responsible Department Vendor Name Total Amount Summary of action Procurement & Supply Chain Nova Bus (US) Inc. $87.5M Furnish and Deliver 135 Low-Floor 40-Foot Diesel Buses Procurement & Supply Chain Gramercy Park Physical Therapy, P.C. Feigi Taub Halberstam Audiology & Speech Pathology, P.C., d/b/a Omni Rehab Therodynamics Rehab Management, LLC $23.2M Award of three, 5-year estimated quantity miscellaneous service contracts for Eligibility Assessment Services. C&D Contracts Mitsubishi Electric Power Products Inc. $62,653,936 MTA Construction and Development requests Board approval to award a non-competitive contract (S48017) for Communication Based Train Control Equipment for the Queens Boulevard Line East Project C&D Contracts MLJ Contracting Corp./TC Electric JV $242,400,000 MTA Construction & Development requests Board approval to award a publicly advertised and competitively solicited contract (A37135) for the design and construction of accessibility upgrades at eight stations throughout New York City. C&D Contracts Modern Elevator Installations, Inc. $9,069,985 MTA Construction and Development requests Board approval to award a long-term elevator maintenance contract connected to Contract A37135. C&D Contracts Forte-Citnalta JV (A Joint Venture consisting of Forte Construction Company and Citnalta Construction Corp.) $101,750,000 MTA Construction and Development requests Board approval to award a publicly advertised and competitively solicited contract (A36164) for the Design and Construction of Accessibility upgrades at the 68th Street-Hunter College Station in the Borough of Manhattan. C&D Contracts Mid-American Elevator Company, Inc. $3,027,395 MTA Construction and Development requests Board approval to award a long-term elevator maintenance contract connected to Contract A36134. C&D Contracts Citnalta-Forte JV (A Joint Venture consisting of Citnalta Construction Corp and Forte Construction Company) $72,272,272 MTA Construction and Development requests Board approval to award a publicly advertised and competitively solicited contract (A37679) for the design and construction of Grand Central Subway Station mezzanine finishes, escalator replacement & structural repairs. C&D Contracts ECCO III Enterprises, Inc. $30,381,000 MTA Construction and Development requests Board approval to award a publicly advertised and competitively solicited contract (A37691) for the design and construction of Flushing-Main Street Station circulation improvements. C&D Contracts Forte Construction Corp. $28,420,000 MTA Construction and Development requests Board approval to award a publicly advertised and competitively solicited contract (E30643) for design-build services to replace two escalators at 161 Street-Yankee Stadium Station and two escalators at DeKalb Avenue Station. Operations Planning Service Changes: Bronx Local Bus Network Redesign ~ $2,700,000 The proposed Bronx Local Bus Network Redesign focuses on reimagining New York City's bus network to provide customer-focused routes, and faster and more reliable travel times. The redesigned Bronx local, limited, and Select Bus Service (SBS) bus network aims to meet the following network redesign strategies: simpler, more direct routes, balanced bus stops, enhanced connectivity, improved frequency on key routes, and expanded bus priority, with ten key corridors identified in the Bronx for bus priority street improvements.
+```
+[p004_c0002] _Master Page # 4 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 5
+
+### [p005_c0001] Minutes of Regular Meeting Committee on Operations of the MTA New York City Transit Authority, Manhattan and Bronx Surface Transit Operating Authority, Staten Island Rapid Transit Operating Authority, MTA Construction & Development and MTA Bus Company November 15, 2021
+[p005_c0002] Meeting Held at: Metropolitan Transportation Authority Two Broadway New York, New York 10004 11:00 AM
+[p005_c0003] The following Board Members attended in person or by videoconference:
+[p005_c0004] Hon. Haeda Mihaltses, Committee Chair Hon. Victor Calise Hon. Andrew Albert Hon. Jamey Barbas Hon. Randolph Glucksman Hon. David Jones Hon. Robert Linn Hon. Lawrence Schwartz Hon. David Mack
+[p005_c0005] The following Staff Members attended in person or by videoconference:
+[p005_c0006] Janno Lieber, Acting Chair and Chief Executive Officer, MTA Craig Cipriano, Interim President, NYCT Demetrius Crichlow, Senior Vice President, NYCT Department of Subways Mark Roche, Deputy Chief Development Officer, Delivery, C&D Zafira Lateef, Chief Officer, Business Strategies, NYCT Quemuel Arroyo, MTA Chief Accessibility Officer Robert Diehl, Senior Vice President, Safety and Security, NYCT Vincent Coogan, Assistant Chief, NYPD Transit Bureau Louis Montanti, Deputy Chief Procurement Officer, Operations, MTA David Cannon, Vice President, Contracts, C&D Monica Murray, Chief Administrative Officer, NYCT Raymond Porteus, Inspector, NYPD Transit Bureau David Farber, General Counsel, NYCT and MTA Bus Stephen Plochochi, Senior Vice President, Contracts, C&D Chris Papandreou, Senior Director, Customer Services, MTA Judith McClain, Chief, Operations Planning, NYCT Jaibala Patel, Deputy Chief Financial Officer, MTA Lucille Songhai (moderator) Patrick Warren, Chief Safety Officer, MTA, Acting Chief Operating Officer, NYCT
+[p005_c0007] _1_
+[p005_c0008] _Master Page # 5 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 6
+
+### [p006_c0001] I. Committee Chair Haeda Mihaltses Opened the Meeting
+### [p006_c0002] II. Public Speakers
+[p006_c0003] There were three public speakers. The following is a list of the public speakers:
+[p006_c0004] Jason Anthony, Amazon Labor Union Bradley Brashears, Permanent Citizens Advisory Committee Charlton Dsouza, Passengers United
+[p006_c0005] A video recording of the meeting produced by the MTA and maintained in MTA records includes the content of speakers' statements.
+### [p006_c0006] III. Committee Chair Haeda Mihaltses's Remarks
+[p006_c0007] Chair Mihaltses thanked everyone for their presence at the meeting. She said she wanted to remind everyone to consider all the public transportation options available in New York City.
+[p006_c0008] She noted the best way to get around the city is to take a bus or the subway, and the best way to get into the city is to take Metro-North or Long Island Rail Road. She added if someone is going out of town, the subways, buses, and Long Island Rail Road go to the airport.
+[p006_c0009] Chair Mihaltses further noted the Q70 Bus that runs to LaGuardia Airport is free from November 23 rd through November 28 th and is also free from Christmas through New Year's Day. She highly recommended saving some aggravation this holiday season by taking public transportation.
+[p006_c0010] Veteran's Day was last week. Chair Mihaltses recognized the approximately 2,300 MTA employees who are veterans of the armed forces, noting that almost half of those veterans are New York City Transit employees. She stated she was proud of them and thanked them and their families for their service on behalf of the Committee.
+[p006_c0011] She also thanked the New York City Transit employees who have supported the recent ridership growth. She stated she is proud of the progress and increased ridership she sees when using the system, and she is pleased with the subway performance reports this month.
+### [p006_c0012] IV. Approval of Meeting Minutes
+[p006_c0013] Upon motion duly made and seconded, the Committee approved the minutes of the October 2021 meeting.
+### [p006_c0014] V. Work Plan
+[p006_c0015] Interim President Craig Cipriano reported there were no changes to the Work Plan.
+[p006_c0016] _2_
+[p006_c0017] _Master Page # 6 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 7
+
+### [p007_c0001] VI. President's Report
+[p007_c0002] Interim President Cipriano stated he first wanted to address a few matters from the October Committee meeting.
+[p007_c0003] In response to Board Member Calise's inquiry about planning with DOT regarding accessibility, Interim President Cipriano stated that as part of the Bus Plan that was announced in August, DOT committed to making twenty-five additional bus stops accessible and to establish capital program to improve bus stops. NYCT continues to cooperate with DOT on this.
+[p007_c0004] Regarding an inquiry about the Jamaica Avenue and Archer Avenue busways, Interim President Cipriano stated there are a total of twenty-six routes operating on Jamaica and Archer Avenues. The Jamaica Avenue busway runs between Sutphin and 168th St and operates in both directions and the Archer Avenue busway runs between 153rd Street and 160th Street, eastbound only.
+[p007_c0005] In response to Board Member Jones' inquiry regarding how OMNY works with the Fair Fares program and about overall Fair Fares usage, Interim President Cipriano explained that NYCT provides Fair Fares MetroCards in bulk to NYC Department of Social Services (DSS) and DSS is responsible for qualifying and distributing the cards to participants. He stated as of last week, the Fair Fares website reflected a total of over 248,000 participants and that about 99,000 customers actually used their Fair Fares cards in October. DSS is expected to begin transitioning the Fair Fares clients over to OMNY next fall (2022).
+[p007_c0006] Interim President Cipriano thanked everyone for these questions and stated he appreciated the engaging and open exchange of ideas with the Committee.
+[p007_c0007] Interim President Cipriano stated he was proud to report some great progress on recent initiatives at NYCT. He noted that at September's meeting, he described his core priorities and plans and in the three months since then, - NYCT has made significant strides in growing ridership and improving customer service. He stated that progress has been made on other fronts as well, including performance, operations and hiring.
+[p007_c0008] He stated first and foremost, NYCT has been focused on growing ridership numbers. He noted NYCT is doing that, in part, by providing first-class, safe and reliable service to the customers. He noted that the latest total weekday ridership for buses, subways and paratransit is approximately 4.8 million, or 60% of the approximately 8 million average daily pre-pandemic trips.
+[p007_c0009] Interim President Cipriano noted with these increased ridership numbers, NYCT is seeing strong results in customer focused metrics. He further noted these improvements are across the board, on both the A and B divisions. He highlighted that the October subway results show improvement over September in every single metric. He noted, in particular, that Weekday Service Delivered was up to 91% from 89.5% in September. He stated Major Incidents were down and on time performance rose almost 3 points to 83.3%. He further stated customer journey time performance was at 83.2%, reflecting an improvement from September when it was at 81.9%, and notably, with more riders.
+[p007_c0010] _3_
+[p007_c0011] _Master Page # 7 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 8
+
+[p008_c0001] Interim President Cipriano indicated that while Bus and Paratransit performance has plateaued, largely due to the ongoing challenges of growing traffic and operator vacancies, service delivery and wait assessments, which measures how regularly trains are spaced, have improved even as ridership increased. He stated he expected to see performance improve as NYCT continues to onboard bus operators and other key employees in operations and service delivery positions. Further, he stated his team remains laser focused on hiring for these critical positions.
+[p008_c0002] Interim President Cipriano noted that over the last 100 days, NYCT made a significant push towards improving bus priority. He stated that, together with our partner, NYCDOT, NYCT announced an ambitious plan to improve bus service, which includes a commitment for more bus lanes and busways, more cameras to enforce the right of way for buses, more transit signal priority, better real time information, and greater accessibility. He noted NYCT has already seen progress over the last month, including launching two new busways in Queens for a total of four new busways this year alone. He said he is delighted that NYCT restarted the bus network redesigns in September, beginning with the local bus network in the Bronx. He noted all of these initiatives will significantly improve bus service that is vital to the lives of daily customers.
+[p008_c0003] Interim President Cipriano reported that starting Monday, January 3, the MTA will assume operation of the SIM23 and SIM24 bus routes. He noted these routes are currently operated by Academy Bus under a contract with the City which it decided not to renew. He explained that pursuant to a MOU with the City, all costs of operating these two lines will be paid by the City.
+[p008_c0004] Interim President Cipriano stated that, while NYCT will be slightly modifying the routes in Staten Island, the initial frequency will be unchanged. He indicated that each route will have five trips in the morning and six trips in the evening. He noted that a Staff Summary will be submitted for the December Board meeting.
+[p008_c0005] Turning to Paratransit, Interim President Cipriano noted that Paratransit customers have returned faster than all other transit customers. He stated NYCT is working hard to increase capacity and mitigate the impact of industry-wide driver shortages. He explained that over the last 100 days, NYCT has onboarded two new brokers, including its first minority/women owned broker. He added that over the summer, NYCT reimplemented shared ride services to increase capacity for both primary and broker contractors. He noted that last month, NYCT also onboarded Leap, a certified MWBE, as a new provider in the E-Hail On-Demand Pilot program.
+[p008_c0006] Interim President Cipriano thanked the employees. First, he recognized the extraordinary efforts of the Human Resources team for their tremendous efforts in recent on-boarding of new employees. He noted the workload has been intense, but they are getting needed positions filled and NYCT couldn't do it without them.
+[p008_c0007] He noted that NYCT has asked all employees, time and again, to step up and meet big challenges. He stated he knows he speaks on behalf of MTA and Transit leadership when he extends his appreciation to all colleagues who are helping NYCT meet its commitment to this great city by delivering first in class transit service.
+[p008_c0008] _4_
+[p008_c0009] _Master Page # 8 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 9
+
+[p009_c0001] Interim President Cipriano thanked Assistant Chief Vincent Coogan of the NYPD Transit Bureau, who will be retiring at the end of the month after 41 years of dedicated service to the people of New York City. He stated that Assistant Chief Coogan represented some of the best of NYC's Finest.
+### [p009_c0002] i. Subway Report
+[p009_c0003] Demetrius Crichlow, Senior Vice President, NYCT Department of Subways, delivered the Subway Report. He stated he was pleased to report that subway performance was strong in October, noting that every metric improved from last month and that many metrics have improved even from pre-pandemic levels two years ago.
+[p009_c0004] He stated that weekday on-time performance was 83.3%. This, he stated, was 2.7% higher than in September 2021 and 1.8% higher than in October 2019. He noted major incidents decreased to 28, down from 38 last month and 43 during the same month two years ago. He noted that on average, we have reduced 200 daily delays from September to October, particularly delays that are attributable to internal causes such as track and signal failures. He noted that Acting Chairman Janno Lieber has expressed his commitment to continued improvements in service quality, and the positive results demonstrate our efforts in support of this goal.
+[p009_c0005] Senior Vice President Crichlow stated that customer-focused metrics show that average customer trips are faster than pre-pandemic. He noted that when compared to October 2019, NYCT recorded a 40-second lower Additional Train Time, which was a net improvement to customers, even when considering a 15-second increase in Additional Platform Time. He stated that customers are, on average, waiting slightly longer for trains than two years ago, but this time is made up, on average, because travel times are faster.
+[p009_c0006] Displaying a slide, Senior Vice President Crichlow illustrated his point by showing how much faster the trains have gotten since October 2019. He noted the percentage improvement on median running times at peak hours, independent of schedule changes. He added that almost every line is faster at peak hours than before the pandemic. Further, he stated that some lines have made significant gains, like the 3 and 4 lines, which are more than 5% faster than in October 2019. He noted the only line to not show improvement was the N line, whose median trip lost one minute due to construction-related anomalies. He noted these gains were made not just because there are fewer riders, but also because NYCT has reduced track delays by 60%, signals delays by 37%, and subway car delays by 26% since October 2019, and fewer incidents means faster trips.
+[p009_c0007] Senior Vice President Crichlow noted there was also progress in reducing delays caused by crew availability. He stated that on average, these delays were down about 10% in October compared to September, with improvements in each division. He noted this was a result of ongoing efforts to maximize the utilization of the existing workforce while continuing to hire and train new crews. He added NYCT has initiated an aggressive program to increase staffing, including increasing class sizes, adjusting the time for training without sacrificing safety, hiring additional trainers, bringing back retired trainers, bringing back retired employees, re-evaluating assignment procedures, and increasing overtime coverage. He noted that these efforts are already yielding
+[p009_c0008] _5_
+[p009_c0009] _Master Page # 9 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 10
+
+[p010_c0001] great results, and that NYCT remains on target to fully resolve the crew shortages in the first half of 2022.
+[p010_c0002] Senior Vice President Crichlow stated ridership increased significantly in October 2021, with over 10% more average weekday riders than in September and over 75% more riders compared to one year ago. He stated compliance with mask requirements continues to be above 90%. He expressed appreciation that so many riders were returning and doing their part to keep each other safe. He noted NYCT was continuing daily disinfecting of subway cars and twice-daily disinfecting of stations to ensure a clean and healthy environment. He stated that he is extremely proud of the Subways team as they continue to show that they can overcome any challenge to deliver for the customers.
+[p010_c0003] In response to Chair Mihaltses' request for elaboration regarding the cause of the N train construction delays, Senior Vice President Crichlow responded that the N Line had some construction going on at the Coney Island shop and that some short line service has caused some delays. He stated he would report back on the anticipated construction completion date.
+[p010_c0004] Board Member Schwartz requested a recalibration of the on-time performance metric. He noted it was unclear what factors were taken into consideration regarding this metric and stated it is important for the riding public to be able to anticipate when a train will arrive at its destination. He noted the Subway Action Plan was successful because it prioritized where the problems were. He suggested on-time performance be broken down by peak and off-peak. Interim President Cipriano indicated that at the next committee meeting this specific metric will be reviewed. Board Member Schwartz reiterated that the public needs to know what to expect regarding their journey time.
+[p010_c0005] Senior Vice President Crichlow noted that on-time performance under the Subway Action Plan had peaked at 84% pre-pandemic. He indicated that last month, that metric was at 83.3% despite all of the crew availability issues, which demonstrates strong performance. He emphasized that specific problem areas are identified and prioritized.
+[p010_c0006] Board Member Linn requested a tutorial for Board Members regarding the on-time performance metrics.
+[p010_c0007] Board Member Albert asked if there was a more equitable way to distribute crew members since it appears the C and F lines operate with the most reduced crews. Senior Vice President Crichlow stated that crews have the right to pick specific lines. He added that a challenge is day-to-day unpredictability of crew availability. He stated that NYCT tries to coordinate in advance and to have crews on stand-by should people not report to work. He said they are working with their union partners to address these issues. Board Member Albert noted the A line seems to have major issues and asked why. Senior Vice President Crichlow said when you look at the data it shows that the C, E, and Q have been facing the worst performance issues since October 2019, tied to crew availability. He noted that the A and the C lines are generally tied pretty closely in nature to each other, but Subways has been supplementing the C line with A line crews because of C's reduced crew availability, and this may be contributing to the statistics.
+[p010_c0008] _6_
+[p010_c0009] _Master Page # 10 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 11
+
+### [p011_c0001] ii. Bus Report
+[p011_c0002] Zafira Lateef, Chief Officer, Business Strategies, delivered the Bus Report. She stated NYCT continues to see promising ridership trends system-wide, with average daily bus ridership remaining strong at approximately 1.5 million, or approximately 65% of pre-pandemic levels. She reported NYCT also continues to aggressively onboard new bus operators into the system and anticipates returning to pre-pandemic vacancy levels by the end of the year.
+[p011_c0003] She reported that despite the significant challenges of increasing traffic and construction and ongoing operator vacancies, performance has remained steady since last month. She also indicated that there have been improvements in service delivered and wait assessment.
+[p011_c0004] Chief Officer Lateef stated that one thing is clear, well-enforced bus priority is the most effective way to increase bus speeds and improve travel times for customers. She reported busways and bus lanes have continued to see real improvements in speeds against pre-pandemic levels with respect to almost all corridors and time periods. She gave a few examples, speed improvements of up to 49% on the Main Street busway in Queens, a 32% improvement on the 181 st street busway in Manhattan, and a 42% improvement on the Jay Street busway in downtown Brooklyn.
+[p011_c0005] Chief Officer Lateef reported that this month NYCT celebrated the launch of two new busways in Queens on Jamaica and Archer Avenues. She stated they are the third and fourth busways launched in 2021 alone. She reported that these busways will ultimately benefit over 250,000 daily bus customers across 26 routes, serving customers in Queens, Brooklyn, and the Bronx. She noted preliminary data already shows speed improvements of up to 25% on Jamaica Avenue and up to 7% on Archer Avenue.
+[p011_c0006] Chief Officer Lateef commented that NYCT is very excited about the restart of the Bronx Local Bus Network Redesign and noted there was a public meeting last week on November 9th. She reported that there have been very few changes to the redesign since the release of the proposed Final Plan in the Fall of 2019. She reported that after listening to feedback from the public, community members and elected officials, NYCT reassessed existing conditions and determined that the Bx28 and Bx34 route alignments will remain as they are today. She said that NYCT is continuing to evaluate feedback.
+[p011_c0007] Chief Officer Lateef indicated that a small fleet of the latest Nova hybrid buses had been taken out of service due to an abundance of caution following two reports of potential safety concerns regarding the exit doors. She reported that since then, NYCT thoroughly investigated the incidents with the vendors and determined that the root cause of the failures was a software related issue. She stated the team was able to test and develop the necessary software changes. She noted NYCT is making those changes and is slowly incorporating the buses back into revenue service.
+[p011_c0008] She noted there will be a request for Board approval for the federally funded purchase of 60 low-floor, 40-foot all-electric buses. She stated she is very excited about this deployment, which represents many “firsts” for the organization, as well as an important milestone towards a commitment to a zero emissions fleet by 2040. She stated the buses will be the organization’s first
+[p011_c0009] _7_
+[p011_c0010] _Master Page # 11 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 12
+
+[p012_c0001] fully owned, 40-foot all-electric buses. She concluded she expects the first buses to be in service towards the end of 2022, subject to Board approval of the procurement.
+### [p012_c0002] iii. Paratransit Report
+[p012_c0003] Chief Officer Lateef presented the Paratransit report. She reported that Paratransit has maintained the highest ridership during the pandemic, now at 80% of pre-pandemic levels. She reported that on October 28 th there were over 24,800 scheduled paratransit trips, the highest daily trip count since the pandemic began.
+[p012_c0004] Chief Officer Lateef stated that against this backdrop of high demand, Paratransit continues to contend with the combined impact of traffic issues, local road construction, and industry-wide surging demand for taxis and for-hire vehicles, which has posed a challenge at the national and local levels. She said that while there has been a recent uptick in drivers in New York, driver availability continues to remain well below pre-pandemic levels. Chief Officer Lateef commented that paratransit customers are experiencing a challenge that is confronting many regular taxis and for-hire riders, including longer than usual wait times and limited availability at certain days and times. She emphasized that we recognize the significant impact these issues have had on customers, and that Paratransit will continue to work with brokers and carriers to find innovative solutions to deliver the level of service customers deserve.
+[p012_c0005] Chief Officer Lateef stated that some of the incentives implemented by NYCT's carriers and brokers include driver sign-on bonuses, payment of driver licensing fees and driver training, as well as extra bonuses when training is completed and for driver trip volume. She said they have launched extensive hiring campaigns, including TV commercials, and have reached out to previous drivers. She noted that the incentives provided above are expected to continue to alleviate the driver shortage. Chief Officer Lateef said these initiatives have resulted in clear service improvements, with 94% of trips on dedicated carriers having on-time pick-ups in the 30-minute window, and a trending down in no-show rates per 1,000 trips. She said that driver vacancies for dedicated carrier service providers continue to improve, from a high of 22% in August to around 16 % today.
+[p012_c0006] Chief Officer Lateef said Paratransit is also working aggressively to increase vehicle capacity, especially within the broker fleet. She expressed that there was excitement about onboarding two new broker companies and adding thousands of additional vehicles for customers at a time when that capacity is needed more than ever. She reported that Arro came onboard in September, and Sentry began operating trips this October. She noted that while there are still some growing pains, Paratransit is working closely and deliberately with these new brokers and is confident that they will help improve our service.
+[p012_c0007] Chief Officer Lateef stated that as Lou Montanti will detail later in the meeting, NYCT is seeking Board approval this month to exercise the option years for NYCT's Staten Island broker contract with Islander Transportation, which recently became certified as a women-owned business enterprise. She said Islander has been serving our Staten Island customers since November 2019, providing excellent door-to-door service and wheelchair accessible trips. She reported that their
+[p012_c0008] _8_
+[p012_c0009] _Master Page # 12 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 13
+
+[p013_c0001] current on-time performance is 96% in the 30-minute window, and no-shows are 0.2 or less per 1,000 scheduled trips.
+[p013_c0002] Chief Officer Lateef thanked the 18,000 plus women and men in our Paratransit and Buses teams for their dedication and sacrifice throughout this pandemic and the amazing work they continue to do every day.
+[p013_c0003] Board Member Victor Calise commented on several issues. He said while he understood the problem with driver shortages, he thinks Paratransit could be doing more in terms of advertising and getting the word out better for dedicated service providers, such as social media blasts, notices and buses and trains. He said that in regard to the broker service, he thinks there should be a focus on what we are paying drivers and asked whether NYCT was doing enough to find available brokers. He also encouraged a quicker roll-out of OMNY for people with disabilities.
+[p013_c0004] Interim President Cipriano responded that he recognized that on-time performance in Paratransit needs to improve, and that we were doing a number of things on the dedicated side but will continue to see how they can advertise for drivers better. He said that on the broker side, he agreed we needed to come together and figure out some of the challenges brokers have in onboarding. He recognized the need for more capacity and stated that we have met with Arro and Sentry to work on an accelerated ramp up plan and we are all working diligently to address challenges. He commented that with respect to OMNY related issues, we will continue to work hard to make sure OMNY is offered with Paratransit services.
+[p013_c0005] Board Member Calise commented that he wondered if any of the recent infrastructure funding monies could be used for disability related reasons.
+[p013_c0006] Board Member David Mack reported that there have been a number of complaints about non-working elevators and escalators, noting in particular at 72 nd Street and 2 nd Ave where a new elevator keeps breaking down. Cipriano responded that NYCT would take a look at that specifically.
+### [p013_c0007] iv. Strategy & Customer Experience
+[p013_c0008] Sarah Meyer, MTA Chief Customer Officer, delivered the Strategy & Customer Experience Report. She stated that on October 19 th , NYCT had its largest mask force ever and handed out over 46,000 pink masks in support of breast cancer awareness month.
+[p013_c0009] Chief Customer Officer Meyer noted that on October 27 th , the MTA celebrated the 117th birthday of the subway and formally launched the MetroCard Bulk Sales Program. She reported that the MTA has now processed over $300,000 in bulk sales, and she thanked companies from across the city for buying bulk metrocards to give out to their employees.
+[p013_c0010] Chief Customer Officer Meyer reported that with growing ridership, NYCT's contact center team has been busy assisting customers and worked hard last month to reduce call wait times by 39% versus September. She said they also increased the calls answered rate by 12.7 percentage points.
+[p013_c0011] _9_
+[p013_c0012] _Master Page # 13 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 14
+
+[p014_c0001] She indicated that the MTA will continue to focus efforts to further improve call center performance in the coming months.
+[p014_c0002] Chief Customer Officer Meyer reported the results of the Customers Count surveys for Access-a-Ride, Subways and Buses, Local and Express. She said she was thrilled with the overwhelming response of 122,000 customers who filled out the surveys, noting that 60% of those responses were NYCT related. She thanked the customers, who she noted spent on average 15-20 minutes filling them out. She remarked that this effort is a testament to all the vital and important work the MTA is doing every day. She also noted that the survey was administered in nine languages and was also offered over the phone for AAR users in addition to online.
+[p014_c0003] Chief Customer Officer Meyer reported that city employers are gradually sending employees back to work, who are taking buses and subways to work more often. She said that many customers reported that their workplaces had already re-opened and that many never closed, although our customers are not traveling as often as they did pre-pandemic. She explained that the steady and gradual return to work will increase ridership on all transit modes. She reported that the current survey revealed that before COVID-19, about 1 in 10 subway customers teleworked all or sometimes. She said according to the current survey results, 7 in 10 lapsed customers, or those customers who have not been in the system since the pandemic, are teleworking, compared to only 4 in 10 of current customers who are teleworking all or most of the time. She said that subway customers are using the system more for discretionary travel such as shopping, dining and recreation now as compared to prior to the pandemic, when work trips dominated. She remarked that she was happy to see people coming back for all of these reasons.
+[p014_c0004] Chief Customer Officer Meyer reported that current customers recognized the work the NYCT has been doing over the past 6 months. She said customers reported that they believed subway vehicles and stations were cleaner, and asked NYCT to maintain that cleanliness. She reported that bus customers conveyed appreciation for bus drivers. She indicated that bus and subway customers reported that their perception of crime and harassment improved, which she said was the direct result of MTA and NYPD efforts to increase staffing and install cameras throughout the system. She reported that Staten Island customers lauded NYCT for wait and travel times, demonstrating that getting on the train is better than waiting in traffic. She reported that customers felt that paratransit drivers were exceeding their expectations with safe driving, courtesy, professionalism and mask wearing, but asked to improve on-time pick up performance.
+[p014_c0005] Chief Customer Officer Meyer commented that NYCT has a lot of work to do to get back lapsed customers, or those who had not ridden with NYCT before the pandemic. She said lapsed customers report concerns such as health and safety, personal security, cleaning and disinfecting and social distancing as the reasons for being reluctant to return to transit. She said NYCT will continue to focus on these important priorities through various initiatives to improve the experience for lapsed customers.
+[p014_c0006] Ms. Meyer noted that NYCT's findings were also measured according to the Partnership For New York City survey. Those results showed that 80% of employers expect a permanent change in remote work policies, and 47% expect that a portion of NYC employees will continue to work remotely after the pandemic for more than 3 days per week. She said that based this information
+[p014_c0007] _10_
+[p014_c0008] _Master Page # 14 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 15
+
+[p015_c0001] and with NYCT's own survey information, there will be a gradual return to the system as opposed to a dramatic return in a short amount of time.
+### [p015_c0002] v. Accessibility Update
+[p015_c0003] Quemuel Arroyo, MTA Chief Accessibility Officer, reported that as part of the Systemwide Accessibility team's vision for a more universal definition of accessibility, NYCT is excited to share that, as of November 1st, the AutoGates at approximately 200 subway stations are now available to all customers who need them. He said that previously, only the small number of customers who have a Reduced-Fare AutoGate MetroCard could dip their card at an AutoGate reader to automatically open the gate for entry or exit. He said that other customers, including those with temporary disabilities, customers with strollers, luggage, or bikes, required assistance from an agent or from another staff member or customer to use the gate, sometimes without paying a fare. Chief Accessibility Officer Arroyo said that as AutoGate OMNY validators were activated at the start of this month, AutoGate use was made available to all customers who requires additional access to the system. He noted that this change provides a consistent customer experience that improves accessibility and independence for thousands of customers for whom using the turnstiles was never a good option. He reported that the MTA is rolling out this change as a proof-of-concept to gather data on use and customer response, and to ensure all hardware and software works as intended before making the change permanent. He commented that we are encouraged by the early numbers of usage and will report back next month on the data and feedback collected during this proof-of-concept phase.
+[p015_c0004] Chief Accessibility Officer Arroyo reported that NYCT has a goal of installing wide-aisle fare gates at all stations to deliver enhanced access to the network. He said there is a budget of $25M in the current capital plan to start to install wide-aisle gates at about 200 stations, and the team is working closely with its fare payment system partner to ensure a successful test and installation of gates in 2022.
+[p015_c0005] Chief Accessibility Officer Arroyo stated that the MTA is continuing the OMNY Reduced-Fare soft launch. He said that OMNY soft launch participants who are used to using the AutoGate with their MetroCards are now able to test the AutoGate OMNY validators for the first time, and some participants who had not had access now have AutoGate access with OMNY. He said he was happy to share that after the first month of the OMNY Reduced-Fare soft launch, the majority of participants had a seamless experience transitioning to OMNY on subways and buses. He noted that we are getting extensive feedback from the approximately one hundred participants which will prove invaluable as we prepare to start the rollout of OMNY for the full Reduced-Fare customer base in the coming months.
+[p015_c0006] Board Member Calise commented that rolling out the wider fare gates is very important to giving everyone an opportunity to use the system. He noted that visitors with disabilities, with strollers, and others will have better access to the system. He asked if there were any new monies coming in through the infrastructure bill that could be used for this purpose and also noted the importance of consulting with the disabled community when rolling out this test pilot.
+[p015_c0007] _11_
+[p015_c0008] _Master Page # 15 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 16
+
+### [p016_c0001] vi. Special Announcement by Acting Chairman Lieber
+[p016_c0002] Acting Chairman Lieber joined the meeting to make an important announcement about two significant budget plan changes that he said were reflected in the Board materials and will be proposed at the Board meeting for Board approval, including: (i) deferring any fare increase for at least six (6) months; and (ii) deferring all service cuts indefinitely as part of the financial plan. Chairman Lieber said he wanted to make sure the Board was aware of these two major steps because Governor Hochul has underscored her commitment to these two actions. He stated that the MTA is responsible for making sure there is a balanced budget and will be working closely with our partners in Albany to address the MTA's emerging needs brought on by the pandemic.
+### [p016_c0003] vii. Safety and Security Report
+[p016_c0004] Robert Diehl, Senior Vice President, Safety & Security, reported that the safety statistics comparing the most recent 12-month period to the previous one show an increase in Subway Customer Accident Rates. He said that monthly rates, however, have seen a decrease for each of the last six months compared to the same months a year ago.
+[p016_c0005] Senior Vice President Diehl reported that Bus Collisions and Customer Accidents increased and that bus collision injuries increased slightly when comparing the most recent 12-month period to the previous one. He said that Employee Lost Time Accidents have shown a decrease from last year.
+[p016_c0006] Senior Vice President Diehl reported that although we have seen an increase in subway fires when comparing the two most recent 12-month periods to the corresponding period before that the measures that have been implemented by the Department of Subways appear to be effective as we have seen a decrease in fires in two out of the last four months.
+### [p016_c0007] viii. Crime Report
+[p016_c0008] Assistant Chief Coogan provided the crime report. He said that as the Committee materials reflect, there were seven additional incidents reported in October compared to the same time last year. He said this increase was driven almost exclusively by larcenies, but that thanks to strategic deployments, incidents are down compared to last month. He reported that overall crime in the subway system is down, with 180 fewer incidents. He said that felony assaults are the only category of crime experiencing year-to-date upticks as of this month, with 34 felony assaults compared 38. He said that maintaining the deployment of patrolers in the subway has continued to result in the arrest of several people who have committed crimes. He reported two separate instances, one on October 26 th and another on October 12 th , where someone was arrested and charged with a felony assault. He said that officers on transit patrol arrested a man for committing a lewd act, and later learned that he was also wanted for a forceful touching incident in transit several weeks prior. Assistant Chief Coogan emphasized that a varied deployment of uniformed and plain clothes officers remains at the core of our efforts to keep the subway system safe.
+[p016_c0009] He also described an incident on October 11 th in which transit district patrol officers arrested a man who assaulted a woman and threatened her with a knife, and charged him with felony assault as a hate crime. He said that on October 17 th a plainclothes officer from Transit District 20
+[p016_c0010] _12_
+[p016_c0011] _Master Page # 16 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 17
+
+[p017_c0001] observed a man removing items from a sleeping passenger on a 7-line car in Queens and charged him with grand larceny. He reported that a similar arrest was made by patrol officers in Transit District 2 who tracked and apprehended a man who removed a victim's cell phone as the victim slept on the C train in Manhattan.
+[p017_c0002] Assistant Chief Coogan commented that he and several members of Transit Bureau team and had the opportunity to join members of the MTA and members of security teams from other transit agencies at the annual security and emergency management round table last week. He said he appreciates the partnerships the Transit Bureau has with transit police agencies and transit operators nationally, and that they all engaged in a productive discussion. He noted that he is retiring from the NYPD after 41 years, with the last 8 years spent in the Transit Bureau. He acknowledged the great work that is done by the MTA and NYCT workers in the system and commented on how big of a job it is given the size of the system. He thanked Craig Cipriano and all MTA chairs, Presidents, and Board members and the IG, among others.
+[p017_c0003] Committee Chair Mihaltses asked if there were still 1100 officers deployed throughout the system. Assistant Chief Coogan responded that they were deployed throughout the system and they look at changing circumstances to help determine deployment locations. Committee Chair Mihaltses commented that she wants riders to feel safe and to come back to the system and emphasized the importance of NYPD presence.
+[p017_c0004] Board Member David Mack highlighted the importance of police presence and thanked Assistant Chief Coogan for his diligence and help. Board Member Robert Linn wished him the best on his retirement.
+[p017_c0005] On the separate topic of vaccinations, Board Member Linn commented that it would be helpful to see data concerning employee vaccinations on either a monthly or weekly basis.
+### [p017_c0006] VII. Procurements
+[p017_c0007] Louis Montanti, Vice President, Material reported that the NYCT Transit Procurement Package includes two competitive items for approximately $68 million including: i) the award of a federally funded contract resulting from a Request for Proposals for 60 low-floor 40-foot all-electric buses to New Flyer of America, Inc., for a total price of $64.5 Million; and ii) the approval to exercise the option years of a contract with Bel-Linda Inc. d/b/a Islander Transportation, a NYS certified WBE, for the continued provision of Broker Car Service for Paratransit Access-A-Ride customers in Staten Island.
+[p017_c0008] Board Member Albert asked if Buses has identified on the newest buses the cause of the doors opening and whether this was an issue to bring to New Flyer of America, Inc.'s attention should they be awarded the contract. Interim President Cipriano responded that this was addressed in Chief Officer Lateef's report but noted that it was a software issue that has been identified and updated and that NYCT slowly testing it alongside New Flyer America, Inc. He said they expect the issue will be resolved.
+[p017_c0009] _13_
+[p017_c0010] _Master Page # 17 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 18
+
+[p018_c0001] A motion was duly made and seconded to approve the above procurements requiring a two-thirds vote (Schedule C in the Agenda) and a majority vote (Schedule G in the Agenda).
+[p018_c0002] Details of the above items are set forth in staff summaries, copies of which are on file with the records of the meeting of the Committee of MTA NYC Transit /Staten Island Rapid Transit Operating Authority/MTA Bus Company.
+### [p018_c0003] MTA Construction & Development: Procurements
+[p018_c0004] David Cannon, Vice President Contracts, C&D, presented Construction & Development procurements comprised of one non-competitive and two competitive procurements totaling $198.2M (i) to obtain approval pursuant to PAL Section 1265-a.4d and Article III(B)(4)(b) of the All Agency General Procurement Guidelines to utilize a non-competitive procurement process to evaluate the Communications Based Train Control equipment supplied by a newly approved CBTC Supplier in revenue service on the Queens Boulevard Line East Project; (ii) to obtain approval for the award of a contract for the Design and Construction of Accessibility Upgrades at the 14 th Street Complex in the borough of Manhattan and to award a long-term elevator maintenance contract to Mid-American Elevator Company, Inc.
+[p018_c0005] A motion was duly made and seconded to approve the non-competitive procurements requiring a two-thirds vote (Schedule A in the Agenda).
+[p018_c0006] A motion was duly made and seconded to approve the competitive procurements requiring a two-thirds vote (Schedule C in the Agenda).
+[p018_c0007] Details of the above items are set forth in staff summaries, copies of which are on file with the records of the meeting of the Committee of MTA NYC Transit /Staten Island Rapid Transit Operating Authority/MTA Bus Company.
+### [p018_c0008] VII. Adjournment
+[p018_c0009] Upon motion duly made and seconded, the meeting of the Committee was adjourned.
+[p018_c0010] Respectfully submitted, /s/Kristen Nolan Assistant Secretary
+[p018_c0011] _14_
+[p018_c0012] _Master Page # 18 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 19
+
+### [p019_c0001] Metropolitan Transportation Authority
+### [p019_c0002] 2021 Proposed Transit & Bus Committee Work Plan
+### [p019_c0003] I. RECURRING AGENDA ITEMS
+[p019_c0004]
+
+```text
+Responsibility Approval of Minutes Committee Chair & Members NYCT Committee Work Plan Committee Chair & Members Operations Performance Summary Presentation (including Financial/Ridership, Capital Program Status, Crime & Safety) NYCT President & MTA Bus Co. President Procurements Procurement & Supply Chain Service Changes (if any) Operations Planning Tariff Changes (if any) Management & Budget Capital Budget Modifications (if any) Capital Planning & Budget Action Items (if any) As Listed
+```
+### [p019_c0005] II. SPECIFIC AGENDA ITEMS
+[p019_c0006]
+
+```text
+Responsibility December 2021 NYCT 2022 Adopted Budget/Financial Plan 2022-2025 Management & Budget SIR 2022 Adopted Budget/Financial Plan 2022-2025 Management & Budget MTA Bus 2022 Adopted Budget/Financial Plan 2022-2025 Management & Budget Charter for Transit Committee Corporate Compliance January 2022 Approval of 2022 NYCT Committee Work Plan Committee Chair & Members Preliminary Review of NYCT 2021 Operating Results Management & Budget Preliminary Review of SIR 2021 Operating Results Management & Budget Preliminary Review of MTA Bus 2021 Operating Results Management & Budget February 2022 NYCT Adopted Budget/Financial Plan 2022-2025 Management & Budget SIR Adopted Budget/Financial Plan 2022-2025 Management & Budget MTA Bus Adopted Budget/Financial Plan 2022-2025 Management & Budget ADA Compliance Report Capital Program Management Transit Adjudication Bureau Report, 4th Qtr, 2021 Law NYCT & MTA Bus EEO & Diversity Report, 2021 Yr End Rpt EEO & Human Resources Fare Evasion Report, 4th Qtr, 2021 Management & Budget
+```
+### [p019_c0007] SPECIFIC AGENDA ITEMS (con't)
+### [p019_c0008] Responsibility
+[p019_c0009] _Master Page # 19 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 20
+
+### [p020_c0001] March 2022
+[p020_c0002] No Items
+### [p020_c0003] April 2022
+[p020_c0004] Final Review of NYCT 2021 Operating Results Final Review of SIR 2021 Operating Results Final Review of MTA Bus 2021 Operating Results
+[p020_c0005] Management & Budget Management & Budget Management & Budget
+### [p020_c0006] May 2022
+[p020_c0007] Biannual Customer Satisfaction Report Transit Adjudication Bureau Report, 1st Qtr, 2022 Fare Evasion Report, 1st Qtr, 2022 NYCT & MTA Bus EEO & Diversity Report, 1st Qtr, 2022
+[p020_c0008] Strategy & Customer Experience Law Management & Budget EEO & Human Resources
+### [p020_c0009] June 2022
+[p020_c0010] No Items
+### [p020_c0011] July 2022
+[p020_c0012] No Items
+### [p020_c0013] August 2022
+[p020_c0014] No Meetings Held
+### [p020_c0015] September 2022
+[p020_c0016] Public comment/Committee Review of Budget 2021 NYCT Mid-Year Forecast Monthly Allocation 2021 SIR Mid-Year Forecast Monthly Allocation 2021 MTA Bus Mid-Year Forecast Monthly Allocation 2022 Preliminary NYCT Budget 2022 Preliminary SIR Budget 2022 Preliminary MTA Bus Budget Transit Adjudication Bureau Report, 2nd Qtr, 2021 NYCT & MTA Bus EEO & Diversity Report, 2nd Qtr, 2021 Fare Evasion Report, 2nd Qtr, 2021
+[p020_c0017] Management & Budget Management & Budget Management & Budget Management & Budget Management & Budget Management & Budget Management & Budget Law EEO & Human Resources Management & Budget
+### [p020_c0018] October 2022
+[p020_c0019] Public Comment/Committee Review of Budget 2023 Preliminary NYCT Budget 2023 Preliminary SIR Budget 2023 Preliminary MTA Bus Budget
+[p020_c0020] Management & Budget Management & Budget Management & Budget
+### [p020_c0021] November 2022
+[p020_c0022] Biannual Customer Satisfaction Report Transit Adjudication Bureau Report, 3rd Qtr, 2022 Fare Evasion Report, 3rd Qtr, 2022
+[p020_c0023] Strategy & Customer Experience Law Management & Budget
+[p020_c0024] _Metropolitan Transportation Authority_
+[p020_c0025] _Master Page # 20 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 21
+
+### [p021_c0001] 2021 Transit & Bus Committee Work Plan
+### [p021_c0002] Detailed Summary
+### [p021_c0003] I. RECURRING
+### [p021_c0004] Approval of Minutes
+[p021_c0005] An official record of proceedings which occurred during the previous month's Committee meeting.
+### [p021_c0006] NYCT Work Plan
+[p021_c0007] A monthly update of any edits and/or changes in the work plan.
+### [p021_c0008] Operations Performance Summary
+[p021_c0009] Summary presentation on the performance of Subway Service, including a discussion on Safety, Finance and Ridership and Capital Program Plan achievements.
+[p021_c0010] Information includes discussion on key indicators such as Subway MDBF, On-Time Performance, Subway accident rates; and Capital Plan awards, design starts and completions.
+### [p021_c0011] Procurements
+[p021_c0012] List of procurement action items requiring Board approval and items for Committee and Board information. The Non-Competitive items will be first, followed by the Competitive items and then the Ratifications. The list will include items that need a 2/3 vote of the Board for approval.
+### [p021_c0013] Service Changes
+[p021_c0014] Service proposals presented for Committee information and for Board approval, when required. Proposals outline various subway service initiatives.
+### [p021_c0015] Tariff Changes
+[p021_c0016] Proposals presented to the Board for approval of changes affecting NYCT fare policy structure.
+### [p021_c0017] Capital Budget Modifications
+[p021_c0018] Proposals presented to the Board for approval of changes to NYCT's 5-Year Capital Program.
+### [p021_c0019] Action Items
+[p021_c0020] Staff summary documents presented to the Board for approval of items affecting business standards and practices.
+[p021_c0021] _Master Page # 21 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 22
+
+### [p022_c0001] II. SPECIFIC AGENDA ITEMS
+### [p022_c0002] DECEMBER 2021
+### [p022_c0003] NYCT 2022 Adopted Budget/Financial Plan 2022-2025
+[p022_c0004] NYCT will present its revised 2022-2025 Financial Plan. This plan will reflect the 2021 Adopted Budget and an updated Financial Plan for 2022-2025 reflecting the out-year impact of any changes incorporated into the 2021 Adopted Budget. The documents will also include a monthly allocation of planned expenditures for 2021 by category.
+### [p022_c0005] SIR 2022 Adopted Budget/Financial Plan 2022-2025
+[p022_c0006] SIR will present its revised 2022-2025 Financial Plan. This plan will reflect the 2021 Adopted Budget and an updated Financial Plan for 2021-2025 reflecting the out-year impact of any changes incorporated into the 2021 Adopted Budget. The documents will also include a monthly allocation of planned expenditures for 2021 by category.
+### [p022_c0007] MTA Bus 2021 Adopted Budget/Financial Plan 2022-2025
+[p022_c0008] MTA Bus will present its revised 2022-2025 Financial Plan. This plan will reflect the 2021 Adopted Budget and an updated Financial Plan for 2022-2025 reflecting the out- year impact of any changes incorporated into the 2022 Adopted Budget. The documents will also include a monthly allocation of planned expenditures for 2021 by category.
+### [p022_c0009] EEO & Diversity Report, 3 rd Qtr, 2021
+[p022_c0010] Quarterly report to the Committee providing data on key EEO and Human Resources indicators relating to NYCT's and MTA Bus' Equal Employment Opportunity and Diversity efforts.
+### [p022_c0011] Charter for Transit Committee
+[p022_c0012] Once annually, the NYC Transit Committee will be presented with the Committee Charter and will be asked to formally adopt it for use.
+### [p022_c0013] JANUARY 2022
+### [p022_c0014] Approval of Committee Work Plan
+[p022_c0015] The Committee will be provided with the work plan for 2021 and will be asked to approve its use for the year.
+### [p022_c0016] Preliminary Review of NYCT's 2021 Operating Results
+[p022_c0017] NYCT will present a brief review of its 2021 Budget results.
+### [p022_c0018] Preliminary Review of SIR 2021 Operating Results
+[p022_c0019] SIR will present a brief review of SIR's 2021 Budget results.
+### [p022_c0020] Preliminary Review of MTA Bus 2021 Operating Results
+[p022_c0021] MTA Bus will present a brief review of its 2021 Budget results.
+### [p022_c0022] FEBRUARY 2022
+### [p022_c0023] Adopted Budget/Financial Plan 2022-2025
+[p022_c0024] NYCT will present its revised 2022-2025 Financial Plan. This plan will reflect the 2021
+[p022_c0025] _Master Page # 22 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 23
+
+### [p023_c0001] II. SPECIFIC AGENDA ITEMS
+[p023_c0002] Adopted Budget and an updated Financial Plan for 2022-2025 reflecting the out-year impact of any changes incorporated into the 2021 Adopted Budget. The documents will also include a monthly allocation of planned expenditures for 2022 by category.
+### [p023_c0003] SIR Adopted Budget/Financial Plan 2022-2025
+[p023_c0004] NYCT will present SIR's revised 2022-2025 Financial Plan. This plan will reflect the 2021 Adopted Budget and an updated Financial Plan for 2022-2025 reflecting the out-year impact of any changes incorporated into the 2021 Adopted Budget. The documents will also include a monthly allocation of planned expenditures for 2022 by category.
+### [p023_c0005] MTA Bus Adopted Budget/Financial Plan 2022-2025
+[p023_c0006] MTA Bus will present its revised 2022-2025 Financial Plan. This plan will reflect the 2021 Adopted Budget and an updated Financial Plan for 2022-2025 reflecting the out-year impact of any changes incorporated into the 2021 Adopted Budget. The documents will also include a monthly allocation of planned expenditures for 2021 by category.
+### [p023_c0007] ADA Compliance Report
+[p023_c0008] The annual update to the NYCT Committee on the status of compliance with the Americans with Disabilities Act (ADA) at New York City Transit. The report summarizes activities for compliance including, rehabilitation of key stations and ADA requirements in bus and subway transportation.
+### [p023_c0009] Transit Adjudication Bureau Report, 4 th Qtr, 2021
+[p023_c0010] Quarterly report to the Committee on Transit Adjudication Bureau financial and operating indicators including collection activities and data on revenue and expenses.
+### [p023_c0011] EEO & Diversity Report- 2021 Year-End Report
+[p023_c0012] A detailed year-end 2021 report to the committee providing data on key EEO and Human Resources indicators relating to NYCT's and MTA Bus' Equal Employment Opportunity and Diversity efforts.
+### [p023_c0013] Fare Evasion Report, 4 th Qtr, 2021
+[p023_c0014] Quarterly report to the Committee which provides estimated revenue lost to fare evasion on subways and buses based on staff surveys of stations and routes.
+### [p023_c0015] MARCH 2022
+### [p023_c0016] No Items
+### [p023_c0017] APRIL 2022
+### [p023_c0018] Final Review of NYCT 2021 Operating Results
+[p023_c0019] NYCT will review the prior year's budget results and their implications for current and future budget performance will be presented to the Committee.
+### [p023_c0020] Final Review of SIR 2021 Operating Results
+[p023_c0021] NYCT will review SIR's prior year's budget results and their implications for current and future budget performance will be presented to the Committee.
+[p023_c0022] _Master Page # 23 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 24
+
+### [p024_c0001] II. SPECIFIC AGENDA ITEMS
+### [p024_c0002] Final Review of MTA Bus 2021 Operating Results
+[p024_c0003] MTA Bus will review its prior year's budget results and their implications for current and future budget performance will be presented to the Committee.
+### [p024_c0004] MAY 2022
+### [p024_c0005] Transit Adjudication Bureau Report, 1 st Qtr, 2022
+[p024_c0006] Quarterly report to the Committee on Transit Adjudication Bureau financial and operating indicators including collection activities and data on revenue and expenses.
+### [p024_c0007] Fare Evasion report, 1 st Qtr, 2022
+[p024_c0008] Quarterly report to the Committee which provides estimated revenue lost to fare evasion on subways and buses based on staff surveys of stations and routes.
+### [p024_c0009] EEO & Diversity Report, 1 st Qtr, 2022
+[p024_c0010] Quarterly report to the Committee providing data on key EEO and Human Resources indicators relating to NYCT's and MTA Bus' Equal Employment Opportunity and Diversity efforts.
+### [p024_c0011] Biannual Customer Satisfaction Report, Spring 2022
+[p024_c0012] Quarterly presentation of customer satisfaction ratings about NYCT's bus, subway, and paratransit services. Report will identify trends from customer surveys results about key indicators and attributes that define the customer experience.
+### [p024_c0013] JUNE 2022
+[p024_c0014] No Items
+### [p024_c0015] JULY 2022
+[p024_c0016] No Items
+### [p024_c0017] AUGUST 2022
+[p024_c0018] No Meetings Held
+### [p024_c0019] SEPTEMBER 2022
+### [p024_c0020] 2022 NYCT Mid-Year Forecast Monthly Allocation
+[p024_c0021] NYCT will present a monthly allocation of its 2021 Mid-Year Forecast including revenues/receipts, expenses/expenditures, ridership and positions to the Committee.
+### [p024_c0022] 2022 SIR Mid-Year Forecast Monthly Allocation
+[p024_c0023] NYCT will present a monthly allocation of SIR's 2021 Mid-Year Forecast including revenues/receipts, expenses/expenditures, ridership and positions to the Committee.
+### [p024_c0024] 2022 MTA Bus Mid-Year Forecast Monthly Allocation
+[p024_c0025] MTA Bus will present its monthly allocation of MTA Bus' 2021 Mid-Year Forecast including revenues/receipts, expenses/expenditures, ridership and positions to the Committee.
+[p024_c0026] _Master Page # 24 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 25
+
+### [p025_c0001] II. SPECIFIC AGENDA ITEMS
+### [p025_c0002] 2023 NYCT Preliminary Budget
+[p025_c0003] Public comments will be accepted on the 2022 Preliminary Budget.
+### [p025_c0004] 2023 SIR Preliminary Budget
+[p025_c0005] Public comments will be accepted on the 2022 Preliminary Budget.
+### [p025_c0006] 2023 MTA Bus Preliminary Budget
+[p025_c0007] Public comments will be accepted on the 2022 Preliminary Budget.
+### [p025_c0008] Transit Adjudication Bureau Report, 2 nd Qtr, 2022
+[p025_c0009] Quarterly report to the Committee on Transit Adjudication Bureau financial and operating indicators including collection activities and data on revenue and expenses.
+### [p025_c0010] Fare Evasion report, 2 nd Qtr, 2022
+[p025_c0011] Quarterly report to the Committee which provides estimated revenue lost to fare evasion on subways and buses based on staff surveys of stations and routes.
+### [p025_c0012] EEO & Diversity Report, 2 nd Qtr, 2022
+[p025_c0013] Quarterly report to the Committee providing data on key EEO and Human Resources indicators relating to NYCT's and MTA Bus' Equal Employment Opportunity and Diversity efforts.
+### [p025_c0014] OCTOBER 2022
+### [p025_c0015] 2023 NYCT Preliminary Budget
+[p025_c0016] Public comments will be accepted on the 2022 Preliminary Budget.
+### [p025_c0017] 2023 SIR Preliminary Budget
+[p025_c0018] Public comments will be accepted on the SIR 2022 Preliminary Budget.
+### [p025_c0019] 2023 MTA Bus Preliminary Budget
+[p025_c0020] Public comments will be accepted on the MTA Bus 2022 Preliminary Budget.
+### [p025_c0021] NOVEMBER 2022
+### [p025_c0022] Biannual Customer Satisfaction Report, Fall 2022
+[p025_c0023] Recurring presentation of customer satisfaction ratings about NYCT's bus, subway, and paratransit services. Report will identify trends from customer surveys results about key indicators and attributes that define the customer experience.
+### [p025_c0024] Transit Adjudication Bureau Report, 3 rd Qtr, 2022
+[p025_c0025] Quarterly report to the Committee on Transit Adjudication Bureau financial and operating indicators including collection activities and data on revenue and expenses.
+### [p025_c0026] Fare Evasion Report, 3 rd Qtr, 2022
+[p025_c0027] Quarterly report to the Committee which provides estimated revenue lost to fare evasion on subways and buses based on staff surveys of stations and routes.
+[p025_c0028] _Master Page # 25 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 26
+
+> [p026_c0001] The MTA logo, consisting of the letters "MTA" in white, bold, sans-serif font, set against a solid blue circular background.
+### [p026_c0002] Transit and Bus Committee Report: December 2021 Executive Summary
+[p026_c0003] President's Message Subways Buses Paratransit Accessibility Strategy and Customer Experience Safety Financial & Ridership
+[p026_c0004] _Master Page # 26 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 27
+
+### [p027_c0001] President's Message
+[p027_c0002] Craig Cipriano, Interim President, NYCT
+[p027_c0003] As we close out 2021 and go into the new year, our team remains laser focused on continuing to improve performance for both Bus and Paratransit. This month, we are asking the Transit and Bus Committee to approve the Bronx Bus Network Redesign. The redesign is one tool to help us improve performance.
+[p027_c0004] Our Transit team accomplished a lot this year. We worked to bring back ridership while prioritizing safety and security in our system. Before she left, President Feinberg directed the agency to ensure we have cameras installed in every station and Stations and Security delivered in record time. We worked closely with the City to expand 311 reporting to the subway system, helping us to address issues as they arise. We also worked closely with the NYPD to focus on safety for our riders- this remains a top priority for 2022. I look forward to continuing these priorities in collaboration with the new mayor and his administration.
+[p027_c0005] In 2021, we rolled out our new R211 Subway fleet and we began testing NYCT's first open gangway cars. Under the direction of the Chairman, we refocused our efforts on our SPEED program and the on-time performance results speak for themselves.
+[p027_c0006] In 2021 we rolled out our new R211 Subway fleet and we began testing NYCT's first open gangway cars. Under the direction of the Chairman, we refocused our efforts on our SPEED program and the on-time performance results speak for themselves.
+[p027_c0007] We started a proof-of-concept at the AutoGate, allowing all our customers to pay at the gate to enter the system and thereby improving access for those who need it. We worked closely with Stations on signage, security measures, gate calibration, and AFC reader maintenance to be ready for this initiative. Paid usage has steadily increased and as of last week, weekday usage was about 3,500 a day.
+[p027_c0008] Furthermore, our Bus team worked diligently to improve the Bus experience with wider ramps and doors on all new buses and additional flip seats. We expanded our camera use on buses to help enforce bus stop blocking and double parking in bus lanes.
+[p027_c0009] We did all this while managing a pandemic and making every effort to get our work force tested, vaccinated and ready for duty.
+[p027_c0010] I want to extend my personal and sincere appreciation to all my colleagues at New York City Transit for all their hard work throughout the year. They worked with discipline and determination through snowstorms, icy conditions, hurricanes, flooding, heat waves, and the pandemic. I admire your dedication and willingness to meet every challenge. I would like to offer you my best wishes and happiness to you and your families this holiday season and I look forward to an even better 2022! I would like to offer you my best wishes and happiness to you and your families this holiday season, and I look forward to an even better 2022!
+[p027_c0011] _Master Page # 27 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 28
+
+### [p028_c0001] Subways
+[p028_c0002] Demetrius Crichlow, Senior Vice President
+[p028_c0003] We continued strong subway performance in November 2021, with weekday on-time performance of 83.4%, 0.1% higher than October 2021 and 1.6% higher than November 2019. Although major incidents increased to 35, this was driven by additional external (e.g., Police/Medical/Person on Roadbed) incidents. Similarly, we saw significantly fewer daily delays caused by crew availability mostly offset by increased delays related to external factors. We are proud to see the improvements in performance and are carefully evaluating the external delays to understand if this is a change in trend or part of normal fluctuations in these types of delays.
+[p028_c0004] I am especially pleased to see the reduction in delays caused by crew availability. I challenged my team to improve coverage while we hire and train new crews, and they stepped up with creative new ways to maximize the utilization of our existing workforce. So far in 2021, we've hired over 300 Train Operators and 300 Conductors, with more planned in December and into 2022. Our Training teams are working hard to ensure these new crew members are well prepared to provide safe, reliable service as they graduate and begin operating trains. We've made great progress reducing delays and look forward to being back at pre-pandemic crew staffing levels by mid-2022.
+> [p028_c0005] A bar chart titled "Avg Daily Crew Availability Delays" showing the average daily delays caused by crew availability for four months. The y-axis represents the number of delays, ranging from 0 to 700 in increments of 100. The x-axis lists the months: August, September, October, and November. The bars show a consistent decrease in delays from August to November. Month Avg Daily Crew Availability Delays August 613 September 569 October 506 November 384
+[p028_c0006] December is one of the best months to enjoy all New York City has to offer, and the subway is the best way to get to all to the holiday fun. Ridership has been increasing on weekdays as more customers return to jobs in offices, and weekend ridership has grown even more. There has been strong ridership for major events like Halloween and the New York City marathon, and we're ready for a busy December. New Yorkers and visitors alike can expect disinfected stations and trains when going to shows, holiday displays, shopping, and enjoying time with friends and family in the City. We appreciate that nearly all of our customers are complying with the requirement to wear a face covering over their nose and mouth at all times on trains and in indoor and underground portions of the system.
+[p028_c0007] _Master Page # 28 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 29
+
+[p029_c0001] I am extremely proud of everything the Subways team has accomplished throughout this very challenging year. I wish our team and customers a very safe, happy, and healthy holiday season.
+### [p029_c0002] Buses
+[p029_c0003] Frank Annicaro, Acting MTA Bus President / Acting Senior Vice President NYCT Buses
+[p029_c0004] Overall bus performance has improved since last month, despite the significant challenges posed by increasing traffic and construction, coupled with ongoing operator vacancies. One thing remains clear: well-enforced bus priority is the most effective way to increase bus speeds and improve travel times for our customers.
+[p029_c0005] We continue to be laser focused on bus priority projects and onboarding new operators. This year we made an aggressive effort to hire 1,300 operators to return us to pre-pandemic vacancy levels. Also, in August, alongside our partners at NYC DOT we announced an ambitious plan to speed up buses and improve service. This strategy builds upon several previous achievements, including some big strides made in 2021.
+[p029_c0006] Some recent highlights include additional bus lane enforcement measures. In September, the city activated bus lane cameras on the Merrick Boulevard corridor between Hillside Avenue and Springfield Boulevard, serving customers on the Q4, Q5, Q84, Q85, N4 and N4X bus routes. In November, the Jay Street busway on the 0.4-mile stretch from Tillary to Livingston Streets launched in August 2020, was made permanent. The busway banned private car through-traffic from on weekdays from 7 am to 7 pm and saw bus speeds increase up by as much as 47% in 2021 compared to pre-pandemic levels in 2019. The busway serves some 47,000 straphangers across seven bus routes, including the B26, B54, B57, B61, B62, B65 and B67.
+[p029_c0007] Also, just this month DOT completed the conversion of major thoroughfares in the Soundview neighborhood of the Bronx into bus-priority corridors. The Bronx network redesign process had flagged these major Soundview corridors serving the MTA's Bx5, Bx36 and Bx39 routes as especially congested, with slow and unreliable service averaging as little as 5 MPH. The new bus lanes and other improvements such as transit signal priority along more than three miles of major Soundview streets – including Story Avenue, Bronx River Avenue and White Plains Road – will improve the commute of 45,000 daily bus riders. Other bus lane projects in the Bronx have increased bus speeds by up to 20%. In addition, Vision Zero pedestrian improvements have been implemented, including painted curb extensions to calm traffic and improve safety for pedestrians at five intersections.
+[p029_c0008] We are also very excited about the restart of network redesign. This month we will be requesting board approval for the Bronx Local Bus Network Redesign. The plan aims to simplify the local bus network while enhancing connectivity and building an all-day frequent network of transit for 635,000 customers who used the system pre-pandemic.
+[p029_c0009] Finally, effective Monday, January 3, 2022, New York City Transit will be assuming operation of the SIM23 and SIM24 express bus routes providing service between the South Shore of Staten Island and Midtown Manhattan. The SIM23 and SIM24 have been operated by
+[p029_c0010] _Master Page # 29 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 30
+
+[p030_c0001] Academy Bus under contract to the City of New York. We will operate the same number of trips on each route currently operated by Academy Bus with some small revisions to the routes. The City will fund the capital and operating expenses incurred, net of revenue.
+[p030_c0002] As the holidays are upon us and the year comes to an end, we are heartened by all we have accomplished this year. While we will continue to face many challenges in 2022, it will be a banner year for Buses, as we remain as committed to speeding up buses and bringing more New Yorkers back to the bus system. I want to thank my Buses team for their unwavering commitment and extraordinary efforts.
+### [p030_c0003] Paratransit
+[p030_c0004] Frank Annicaro, Acting MTA Bus President / Acting Senior Vice President NYCT Buses
+[p030_c0005] Paratransit ridership, which returned faster than all other transit services, remains at approximately 80% of pre-pandemic levels. We continue to contend with increased traffic volumes and construction across the city, combined with industrywide driver shortages that have posed a challenge at the national and local levels. We recognize the significant impact these issues have on our service performance and our customers, and we continue to work with our brokers and carriers daily to find innovative solutions to deliver the level of service our customers deserve.
+[p030_c0006] As a result of recent Primary Carrier hiring campaigns, there has been an uptick in drivers, vacancy rates are down to 16% from a summer high of 22%. We also saw some incremental improvements in primary carrier performance between September and October, with No Show rates decreasing from 6.60 per 1,000 scheduled trips to 4.68 and on-time performance up slightly.
+[p030_c0007] Recognizing our immediate challenges, we are implementing action plans to address service issues and have declared an immediate operating need to quickly enact contractual initiatives designed to improve service. We are also working closely with our newer brokers to help mentor and train them so that they can ramp up service faster. We will leave no stone unturned to address these service performance issues.
+[p030_c0008] This month we will also extend our E-hail pilot as we continue to evaluate the future of the E-hail pilot program. In addition, we are seeking Board approval to award three five-year service contracts for Eligibility Assessment Services. These contracts provide an independent eligibility assessment of an applicant's disability and how it may, or may not, prevent their use of fixed-route transportation. Assessment Centers will be located in Staten Island, Brooklyn, Queens, and the Bronx. While we were unable to award a contract for an Assessment Center in Manhattan, we will continue our efforts to secure a Manhattan location. It should be noted that NYCT provides transportation for applicants to and from these Assessment Centers where eligibility for reduced fare MetroCard is also performed.
+[p030_c0009] In November we saw our highest ever usage of the MY AAR trip planner on the MYmta app. We continue to encourage our customers to book their trips through both these platforms.
+[p030_c0010] Finally, this month the Paratransit team also wants to recognize the contributions of one of our long term and original Paratransit Advisory Committee (PAC) members, Stanley
+[p030_c0011] _Master Page # 30 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 31
+
+[p031_c0001] Weinblatt, who sadly passed away in November. Stan was an Access-A-Ride customer since its inception in 1990. He was an inspiring person who proudly supported the Paratransit Division and made many valuable contributions. He will be greatly missed.
+[p031_c0002] As this year comes to an end, I want to thank my dedicated paratransit team who have worked tirelessly throughout this year and the pandemic to improve service under unprecedented circumstances.
+### [p031_c0003] Accessibility
+[p031_c0004] Quemuel Arroyo, Chief Accessibility Officer
+[p031_c0005] Last month, we shared that accessible entry gates (AutoGates) at subway stations are now available to all customers who need them. As we activated the AutoGate OMNY validators in the beginning of November, we also made the AutoGate available for MetroCard users who need gate access, to provide a consistent customer experience that improves accessibility. We initiated this change in November to gather data on use and customer response, and ensure all hardware and software works as intended, before making the change permanent. We are happy to report that throughout the month of November, we saw several thousand customers using AutoGates system wide each day, with more than 1,000 daily uses of both MetroCard and OMNY. Each day, thousands of customers who previously needed assistance from stations staff or other customers to enter the system are now able to seamlessly -and independently- pay their fare and enter stations at AutoGates.
+[p031_c0006] New signage on AutoGates and card readers include graphics of the International Symbol for accessibility, a person with a suitcase, a person with a stroller, and a bicycle. Signs read “Tap with OMNY or dip MetroCard to enter.”
+[p031_c0007] In other expanded subway access news, we are already seeing the positive results of the Zoning for Accessibility (ZFA) program, which was approved by the City Council earlier this fall. In November, the City Planning Commission unanimously approved a developer plan that will make the 57 St station on the F line in Manhattan fully accessible, with the installation of street and platform elevators, among other improvements to the station. This is the first transit improvement bonus under ZFA, and there are already more projects in the pipeline, including in the outer boroughs. Zoning for Accessibility improvements all come in addition to
+[p031_c0008] _Master Page # 31 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 32
+
+[p032_c0001] the MTA's Capital Plan investments, helping us achieve our systemwide accessibility goals more quickly than we could through MTA investment alone.
+[p032_c0002] Lastly, we are very excited to share that we have expanded the MTA Accessibility team with the hiring of two new Senior Accessibility Officers, Howard Levine and Yuvraj Ramsaywack. Building out the team will help us further our goals to ensure accessibility is at the forefront of our minds across the MTA. We are excited to grow the team and engage with more of our colleague departments and divisions as we return to the office full time, resuming many of our training sessions, customer testing and other exciting initiatives.
+### [p032_c0003] Strategy and Customer Experience
+[p032_c0004] Sarah Meyer, Chief Customer Officer
+[p032_c0005] The Strategy and Customer Experience team coordinated our second subway station renaming in as many years. On November 18, Haitian-New Yorkers had two reasons to celebrate: it was Battle of Vertières Day, which commemorates the Haitian victory over the French, and the official renaming ceremony for Brooklyn's Newkirk Avenue-Little Haiti 2 5 Station. The station is found in the Little Haiti Business and Cultural District, which, designated in 2018 by the City Council, serves as the center of Haitian-American life and culture. A lot goes into renaming a station: new signage, alterations to maps and audio systems in stations and on subway cars, revisions to many customer-facing systems and coordination with third parties like Google Maps. The proposal to rename the station is a result of legislation included in the FY2021-22 Enacted State Budget sponsored by Assembly Member Rodneyse Bichotte Hermelyn and State Senator Kevin Parker, who both represent the neighborhood in Brooklyn.
+> [p032_c0006] A group of people, including MTA officials and community members, standing in front of the Newkirk Avenue-Little Haiti Station entrance. The station sign is visible, showing the name and the 2 and 5 bus line logos.
+> [p032_c0007] A large group of people, many holding Haitian flags and signs, celebrating the renaming of Newkirk Avenue-Little Haiti Station. The signs also display the station name and the 2 and 5 bus line logos.
+[p032_c0008] This month, we launched an online Reduced Fare MetroCard application form ( reducedfare.mta.info ) to make it easier and quicker for city residents, commuters, and visitors to qualify for reduced fare travel on subway and buses. This will pave the way for when reduced fare rolls out on OMNY in the coming months.
+[p032_c0009] We're working to improve customer convenience in other ways. Our Lost & Found office now offers an improved shipping option for found items. It's quick and easy, saving customers a trip in to visit Lost & Found in 34 Street-Penn Station A C E . And we have more in store for customer convenience in 2022.
+[p032_c0010] _Master Page # 32 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 33
+
+[p033_c0001] We continue to closely monitor contact center performance. November saw a 5% increase in average daily incoming call volume, and unfortunately a corresponding increase in call wait time (up 17% from last month) and decrease in calls answered rate (to 72.4%).
+[p033_c0002] Customer complaints about subway service again decreased last month, to 3.51 per 100,000 journeys, down 10% versus October 2021 and 19% versus November 2020. Bus complaints also decreased to 12.20, 8% lower than October. Access-A-Ride complaints stabilized at 1109.3, up only 1.5% versus October.
+### [p033_c0003] Safety
+[p033_c0004] Robert Diehl, Senior Vice President, Safety & Security
+[p033_c0005] Subway Customer Accident Rates increased when comparing the most recent 12-month period to the previous one.
+[p033_c0006] Bus Collisions, Customer Accidents and Injuries also increased when comparing the most-recent 12-month period to the previous one.
+[p033_c0007] Employee Lost Time Accidents have shown a decrease when comparing the most recent 12-month period to the previous one.
+[p033_c0008] When comparing figures from the two most-recent 12-month periods, Subway Fires increased.
+[p033_c0009] The most-recent data on incidents of assaults and harassment within the Transit system is displayed in this month's Safety section.
+[p033_c0010] Although we meet the regulatory requirements for Drug and Alcohol testing, we also recognize that we can improve. We have an app in development that will prompt managers on scene to provide more detailed information via dropdowns. This will eliminate the administrative burden of manually transcribing free-form field notes into a database since the application will automatically do so, and also provide information that we can use to identify and address delays to the testing process. _
+### [p033_c0011] Financial & Ridership
+[p033_c0012] Jaibala Patel, Deputy Chief Financial Officer, MTA
+### [p033_c0013] NYCT & MTA Bus – November Ridership Highlights
+[p033_c0014] Full Financial results package for November and December to be presented in January meeting
+- [p033_c0015] • Subway ridership in the month moved slightly higher, hitting a new pandemic-era record on Thursday, 11/18/21, at 3.4 million , surpassing the 10/27/21 record of 3.3 million.
+[p033_c0016] _Master Page # 33 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 34
+
+- [p034_c0001] NYCT and MTA Bus ridership remains steady week-by-week reaching 1.5 million on Wednesday, 11/09/21
+> [p034_c0002] NYCT RIDERSHIP REBOUND - PERCENTAGE OF 2019 BASELINE Prelim The chart displays the percentage of the 2019 baseline for three transit modes: Subway, NYC Bus, and MTA Bus. The Y-axis ranges from 25.0% to 75.0% in 5% increments. The X-axis shows months from DEC-20 to NOV-21. Subway ridership (blue line with diamonds) starts at 30.6% in Jan-21 and rises to 58.5% in Nov-21. NYC Bus ridership (red line with squares) starts at 46.6% in Jan-21 and rises to 63.7% in Nov-21. MTA Bus ridership (green line with triangles) starts at 46.4% in Jan-21 and rises to 70.3% in Nov-21. All three modes show a significant increase starting in June 2021, with MTA Bus showing the highest rebound. Month Subway vs '19 NYC Bus vs '19 MTA Bus vs'19 DEC-20 50.0% 50.0% 50.0% JAN-21 30.6% 46.6% 46.4% FEB-21 30.8% 44.5% 45.5% MAR-21 36.0% 50.5% 51.5% APR-21 37.0% 52.5% 53.0% MAY-21 39.0% 52.5% 53.0% JUN-21 46.3% 58.8% 63.5% JUL-21 47.5% 57.5% 60.5% AUG-21 48.0% 58.0% 62.0% SEP-21 51.0% 60.0% 64.0% OCT-21 53.5% 61.5% 66.0% NOV-21 58.5% 63.7% 70.3%
+[p034_c0003] *NOTE: the 2019 November calendar includes five Saturdays compared with four in 2021, raising rebound vs baseline metrics slightly in November.
+### [p034_c0004] NYCT & MTA Bus – Recent Trends
+- [p034_c0005] Subway ridership has risen from 30.6% of the 2019 baseline in January, up to 46.3% in June, and 58.5% in November. ~Similarly, NYC Bus ridership has risen from 46.6% of the 2019 baseline in January, up to 58.8% in June, and 63.7% in November. And MTA Bus Company ridership has risen from 46.4% in January, up to 63.5% in June, and 70.3% in November.
+[p034_c0006] _Master Page # 34 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 35
+
+### [p035_c0001] Customer Service Report: Subways
+[p035_c0002] Demetrius Crichlow, Senior Vice President, Department of Subways
+> [p035_c0003] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+> [p035_c0004] A photograph of four people standing on a city sidewalk. From left to right: a man in a black suit and glasses, a woman in a dark blue uniform holding a "Certificate of Commendation", a woman in a dark blue jacket holding a "Certificate of Commendation", and a woman in a brown coat. They are standing in front of a large digital billboard that says "REALITY IT WILL GET YOU THERE DMV". The background shows a city street with buildings and a traffic light.
+[p035_c0005] New York City Transit leadership commended Conductor Mandy Harford and Train Operator Tamika Waller for exceptional performance during an incident involving an unauthorized person on the tracks on the L line. Both followed their training to protect the person on the tracks from harm, as well as the customers on their trains. A customer on Harford's train posted a video of her outstanding communication skills as she went car-to-car ensuring everyone on the train was kept informed and stayed calm. Congratulations and thank you to both crew members, and all of the subways professionals who work hard to take care of our customers every day.
+[p035_c0006] _Master Page # 35 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 36
+
+### [p036_c0001] Subway Report (Weekday & Full Month)
+[p036_c0002]
+
+```text
+Subway Report Performance Indicators Performance Indicator November 2021 12-Month Average This Year Last Year Change This Year Last Year Change Weekday Customer-Focused Metrics Weekday Major Incidents (Chart 1) Unplanned incidents delaying 50+ trains 35 24 +45.8% 34.0 25.2 +34.9% Weekday Service Delivered (Chart 3) % of scheduled trains operated Weekday rush hours (7-10a and 4-7p) 92.4% 96.0% -3.6% 92.6% 96.5% -3.9% Additional Platform Time (h:mm:ss) (Chart 7) Average added time spent waiting for trains, compared with scheduled wait time 0:01:28 0:01:07 +0:00:21 0:01:24 0:01:11 0:00:13 Additional Train Time (h:mm:ss) (Chart 9) Average additional unanticipated time spent onboard train compared to scheduled travel time 0:00:19 -0:00:03 0:00:22 0:00:11 0:00:24 -0:00:14 Customer Journey Time Performance (Chart 11) % of customers whose journeys are completed within five minutes of schedule. 83.4% 86.6% -3.2% 84.1% 85.3% -1.2% Inputs to Operations Mean Distance Between Failures (Chart 13) Revenue car miles divided by the number of incidents attributed to car-related causes 156,511 151,809 +3.1% 149,595 144,282 +3.7% Elevator Availability* (Chart 14) % of time elevators are operational systemwide 97.3% 97.1% +0.2% 96.6% 96.8% -0.2% Escalator Availability* (Chart 14) % of time escalators are operational systemwide 93.2% 93.3% -0.1% 91.3% 92.3% -1.0% Weekday Legacy Indicators Weekday Wait Assessment (Chart 15) 68.1% 74.8% -6.7% 69.2% 75.6% -6.4% Weekday Terminal On-Time Performance (Chart 17) 83.4% 90.0% -6.6% 85.2% 87.8% -2.6% Weekday Trains Delayed Per Day (Chart 19) 1,370 797 +71.9% 1,157 1,006 +15.0%
+```
+[p036_c0003] * Availability measures the percent of time that a unit is running and available for customer service. All service outages, regardless of cause, count as downtime in the availability calculation. (Note: Units out of service for capital rehabilitation are excluded from the calculations.)
+[p036_c0004] Change values for time- and percentage-based metrics are calculated as absolute values. All other change values are calculated as percentage changes.
+[p036_c0005] _Master Page # 36 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 37
+
+### [p037_c0001] Subway Report (Weekend)
+[p037_c0002]
+
+```text
+Subway Report Performance Indicators Performance Indicator November 2021 12-Month Average This Year Last Year Change This Year Last Year Change Weekend Customer-Focused Metrics Weekend Major Incidents (Chart 2) Unplanned incidents delaying 50+ trains 4 3 +33.3% 4.6 3.7 +24.3% Weekend Service Delivered (Chart 5) % of scheduled trains operated during Weekends (10a-6p) 92.5% 96.0% -3.5% 92.7% 96.5% -3.8% Weekend Legacy Indicators Weekend Wait Assessment (Chart 16) 73.7% 76.4% -2.7% 73.5% 80.7% -7.2% Weekend Terminal On-Time Performance (Chart 18) 83.4% 90.2% -6.8% 85.4% 88.0% -2.6% Weekend Trains Delayed Per Day (Chart 20) 893 608 +46.9% 781 613 +27.4%
+```
+[p037_c0003] 12-month averages include partial month averages for March and April 2020.
+### [p037_c0004] Subway Report (Staten Island Railway)
+[p037_c0005]
+
+```text
+Subway Report Performance Indicators Performance Indicator November 2021 12-Month Average This Year Last Year Change This Year Last Year Change 24 Hour On-Time Performance % of scheduled trains arriving within six minutes of their scheduled arrival time during a 24-hour period 92.4% 93.4% -1.0% 96.8% 97.1% -0.3% AM Rush On-Time Performance % of scheduled trains arriving within six minutes of their scheduled arrival time 91.0% 91.3% -0.3% 97.0% 98.6% -1.6% PM Rush On-Time Performance % of scheduled trains arriving within six minutes of their scheduled arrival time 85.0% 97.3% -12.3% 93.1% 96.8% -3.7% Percentage of Completed Trips Percentage of Completed Trips 97.7% 99.6% -1.9% 99.0% 99.8% -0.8% Mean Distance Between Failures Revenue car miles divided by the number of incidents attributed to car-related causes 15,195 45,965 -66.9% 27,726 72,101 -61.5%
+```
+[p037_c0006] Staten Island Railway On-Time Performance excludes delays from trains purposely held for connecting passengers from the Staten Island Ferry.
+[p037_c0007] _Master Page # 37 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 38
+
+### [p038_c0001] Section 1: Customer-Focused Metrics
+[p038_c0002] The metrics in this section measure subway performance as it affects our passengers. By focusing on how many disruptive incidents have occurred in the subway, how closely actual service matches schedules, and how much longer passengers must wait and ride compared to schedules, these measures collectively reflect the customer experience.
+### [p038_c0003] Performance Indicator Definitions
+### [p038_c0004] Major Incidents (Weekday and Weekend)
+[p038_c0005] An unplanned incident that delays 50 or more trains. Major incidents are separated into six categories: Track, Signals, Persons on Trackbed/Police/Medical, Stations & Structures, Subway Car and Other.
+### [p038_c0006] Service Delivered (Weekday and Weekend)
+[p038_c0007] Measures NYCT's ability to deliver the service that's scheduled. Service Delivered is measured along the busiest part of the line, which reflects service across the entire line, and is reported as the percentage of scheduled trains that are provided from 7 a.m. to 10 a.m. and 4 p.m. to 7 p.m. on weekdays and from 10 a.m. to 6 p.m. on weekends.
+### [p038_c0008] Additional Platform Time (APT)
+[p038_c0009] The estimated average extra time that customers spend waiting on the platform for a train, compared with their scheduled wait time. This estimate is for each individual train a customer uses in their journey (i.e., unlinked trip), not all trains in their journey combined.
+### [p038_c0010] Additional Train Time (ATT)
+[p038_c0011] The estimated average extra time that customers spend onboard a train, compared to the time they would have spent onboard a train if trains were running according to schedule. This estimate is for each individual train a customer uses in their journey (i.e., unlinked trip), not all trains in their journey combined.
+### [p038_c0012] Customer Journey Time Performance (CJTP)
+[p038_c0013] The percentage of customer trips with total travel times within 5 minutes of the scheduled time. It is equivalent to the percentage of customer trips with APT plus ATT of 5 minutes or less. Like APT and ATT, CJTP is estimated for each individual train a customer uses in their journey (i.e., unlinked trip), not all trains in their journey combined.
+[p038_c0014] APT, ATT, and CJTP are measured using MetroCard/OMNY entry data, subway schedules (including adjustments for planned work), and actual train arrival and departure times. These metrics are considered to be in beta and are expected to be refined as data sources and methodologies change, especially with the integration of new more precise train-tracking technologies and the re-calibration of existing data sources. They are reported for trips starting from 6 a.m. to 11 p.m. on weekdays. For more detail, see http://dashboard.mta.info/Help
+[p038_c0015] _Master Page # 38 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 39
+
+### [p039_c0001] Subway Weekday Major Incidents (24 hours)
+[p039_c0002] Desired trend
+> [p039_c0003] Subway Weekday Major Incidents Data Month Monthly 12-Month Average Nov-20 24 33.0 Dec-20 39 29.0 Jan-21 24 29.0 Feb-21 44 29.0 Mar-21 25 29.0 Apr-21 26 29.0 May-21 36 29.0 Jun-21 55 30.0 Jul-21 40 30.0 Aug-21 24 30.0 Sep-21 34 32.0 Oct-21 26 33.0 Nov-21 35 34.0
+[p039_c0004]
+
+```text
+Categories Monthly 12-Month Average Nov 21 Nov 20 % Change Nov 21 Nov 20 % Change Track 4 1 +300.0% 4.1 3.1 +32.3% Signals 11 10 +10.0% 12.5 8.2 +52.4% Persons on Trackbed/Police/Medical 14 6 +133.3% 9.1 7.7 +18.2% Stations & Structures 1 1 0.0% 2.3 0.9 +155.6% Subway Car 3 1 +200.0% 3.1 2.2 +40.9% Other 2 5 -60.0% 2.9 3.1 -6.5% Subdivision A 16 12 +33.3% 13.6 12.2 +11.5% Subdivision B 19 12 +58.3% 20.4 13.0 +56.9% Systemwide 35 24 +45.8% 34.0 25.2 +34.9% Avg Incident Duration (h:mm:ss) 0:18:42 0:19:18 -3.1% 0:22:36 0:23:53 -5.4% Avg Trains Delayed per Incident 88 126 -30.2% 106 113 -6.2%
+```
+### [p039_c0005] Major Incidents Discussion
+- [p039_c0006] Major incidents increased compared to last month and one year ago, but was only 1 incident higher than the 12-month average. Every category decreased compared to the 12-month average except Persons on Trackbed/Police/Medical.
+[p039_c0007] Note: 12-month category averages do not include the months of March and April 2020.
+[p039_c0008] _Chart 1_
+[p039_c0009] _Master Page # 39 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 40
+
+### [p040_c0001] Subway Weekend Major Incidents
+[p040_c0002] (24 hours)
+[p040_c0003] Desired trend
+> [p040_c0004] Subway Weekend Major Incidents Data Month Monthly Incidents 12-Month Average Nov-20 3 3.5 Dec-20 6 4.0 Jan-21 8 4.5 Feb-21 7 4.5 Mar-21 2 4.5 Apr-21 3 4.5 May-21 7 4.5 Jun-21 4 4.5 Jul-21 4 4.5 Aug-21 7 5.0 Sep-21 2 5.0 Oct-21 2 4.5 Nov-21 4 4.0
+[p040_c0005]
+
+```text
+Categories Monthly 12-Month Average Nov 21 Nov 20 % Change Nov 21 Nov 20 % Change Track 0 0 0.0% 0.3 0.4 -25.0% Signals 1 1 0.0% 1.2 0.9 +33.3% Persons on Trackbed/Police/Medical 3 2 +50.0% 1.4 1.7 -17.6% Stations & Structure 0 0 0.0% 0.7 0.0 N/A Subway Car 0 0 0.0% 0.6 0.0 N/A Other 0 0 0.0% 0.5 0.7 -28.6% Subdivision A 3 2 +50.0% 2.0 1.4 +42.9% Subdivision B 1 1 0.0% 2.6 2.3 +13.0% Systemwide 4 3 +33.3% 4.6 3.7 +24.3% Avg Incident Duration (h:mm:ss) 0:46:30 0:19:00 +144.7% 0:27:18 0:24:48 +10.1% Avg Trains Delayed per Incident 96 81 +18.5% 105 145 -27.6%
+```
+### [p040_c0006] Major Incidents Discussion
+- [p040_c0007] In November 2021, there were 4 weekend major incidents.
+[p040_c0008] Note: 12-month category averages do not include the months of March and April 2020.
+[p040_c0009] _Chart 2_
+[p040_c0010] _Master Page # 40 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 41
+
+### [p041_c0001] Subway Weekday % Service Delivered (Peak Hours)
+[p041_c0002] Desired trend
+> [p041_c0003] Subway Weekday % Service Delivered (Peak Hours) Data Month Monthly (%) 12-Month Average (%) Nov-20 96.0% 96.0% Dec-20 95.5% 96.0% Jan-21 96.5% 96.0% Feb-21 90.0% 95.8% Mar-21 95.0% 95.8% Apr-21 96.4% 95.8% May-21 93.6% 95.5% Jun-21 91.0% 95.0% Jul-21 90.8% 94.5% Aug-21 89.2% 94.0% Sep-21 89.5% 93.5% Oct-21 91.0% 93.0% Nov-21 92.4% 92.6%
+[p041_c0004]
+
+```text
+Monthly 12-Month Average Nov 21 Nov 20 Change Nov 21 Nov 20 Change Subdivision A 95.9% 96.4% -0.5% 93.6% 96.7% -3.1% Subdivision B 90.0% 95.8% -5.8% 91.9% 96.4% -4.5% Systemwide 92.4% 96.0% -3.6% 92.6% 96.5% -3.9%
+```
+### [p041_c0005] Weekday Service Delivered Discussion
+- [p041_c0006] • Service Delivered decreased by 3.6% compared to November 2020, and the 12-month average decreased by 3.9%. • Service Delivered improved month-over-month in each of the past three months as we worked to mitigate the effects of the crew shortage.
+[p041_c0007] _Chart 3_
+[p041_c0008] _Master Page # 41 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 42
+
+### [p042_c0001] Subway Weekday % Service Delivered
+[p042_c0002] Monthly (Peak Hours)
+[p042_c0003] Desired trend
+[p042_c0004]
+
+```text
+Line Nov 21 Nov 20 Change 1 96.2% 98.3% -2.1% 2 95.9% 96.4% -0.5% 3 97.3% 96.5% +0.8% 4 96.1% 95.9% +0.2% 5 94.5% 92.6% +1.9% 6 95.5% 95.5% 0.0% 7 93.4% 97.8% -4.4% S 42nd 99.3% 99.5% -0.2% Subdivision A 95.9% 96.4% -0.5% A 89.0% 93.4% -4.4% B 87.7% 95.5% -7.8% C 87.2% 97.6% -10.4% D 85.1% 96.5% -11.4% E 92.4% 99.4% -7.0% F 88.7% 98.8% -10.1% S Fkln 100.0% 99.6% +0.4% G 96.8% 98.3% -1.5% S Rock 101.1% 97.4% +3.7% JZ 95.6% 98.2% -2.6% L 95.5% 99.1% -3.6% M 90.0% 95.2% -5.2% N 90.0% 92.8% -2.8% Q 84.7% 92.9% -8.2% R 89.4% 92.9% -3.5% W 85.5% 90.8% -5.3% Subdivision B 90.0% 95.8% -5.8% Systemwide 92.4% 96.0% -3.6%
+```
+[p042_c0005] _Chart 4_
+[p042_c0006] _Master Page # 42 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 43
+
+### [p043_c0001] Subway Weekend % Service Delivered (10 a.m. to 6 p.m.)
+[p043_c0002] Desired trend
+> [p043_c0003] Subway Weekend % Service Delivered Data Month Monthly (%) 12-Month Average (%) Nov-20 96.0% 96.0% Dec-20 95.2% 95.8% Jan-21 96.5% 96.0% Feb-21 90.2% 95.5% Mar-21 95.0% 95.5% Apr-21 96.0% 95.8% May-21 93.5% 95.5% Jun-21 91.0% 95.0% Jul-21 90.8% 94.8% Aug-21 89.2% 94.5% Sep-21 89.5% 94.0% Oct-21 90.8% 93.5% Nov-21 92.5% 93.0%
+[p043_c0004]
+
+```text
+Monthly 12-Month Average Nov 21 Nov 20 % Change Nov 21 Nov 20 % Change Subdivision A 95.9% 96.4% -0.5% 93.6% 96.7% -3.1% Subdivision B 90.1% 95.8% -5.7% 92.0% 96.4% -4.4% Systemwide 92.5% 96.0% -3.5% 92.7% 96.5% -3.8%
+```
+### [p043_c0005] Weekend Service Delivered Discussion
+- [p043_c0006] Weekend Service Delivered in November 2021 was 3.5% lower than November 2020, and the 12-month average was 3.8% lower. Service Delivered improved month-over-month in each of the past three months as we worked to mitigate the effects of the crew shortage.
+[p043_c0007] _Chart 5_
+[p043_c0008] _Master Page # 43 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 44
+
+### [p044_c0001] Subway Weekend % Service Delivered Monthly (10 a.m. to 6 p.m.)
+[p044_c0002] Desired trend
+[p044_c0003]
+
+```text
+Line Nov 21 Nov 20 % Change 1 96.2% 98.3% -2.1% 2 95.9% 96.4% -0.5% 3 97.3% 96.5% +0.8% 4 96.1% 95.9% +0.2% 5 94.5% 92.6% +1.9% 6 95.5% 95.5% +0.0% 7 93.4% 97.8% -4.4% S 42nd 99.3% 99.5% -0.2% Subdivision A 95.9% 96.4% -0.5% A 89.0% 93.4% -4.4% C 87.2% 97.6% -10.4% D 85.1% 96.5% -11.4% E 92.4% 99.4% -7.0% F 88.7% 98.8% -10.1% S Fkln 100.0% 99.6% +0.4% G 96.8% 98.3% -1.5% S Rock 101.1% 97.4% +3.7% J 95.6% 98.2% -2.6% L 95.5% 99.1% -3.6% M 90.0% 95.2% -5.2% N 90.0% 92.8% -2.8% Q 84.7% 92.9% -8.2% R 89.4% 92.9% -3.5% Subdivision B 90.1% 95.8% -5.7% Systemwide 92.5% 96.0% -3.5%
+```
+[p044_c0004] Notes:
+[p044_c0005] B and W lines do not operate on weekends.
+[p044_c0006] _Chart 6_
+[p044_c0007] _Master Page # 44 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 45
+
+### [p045_c0001] Subway Weekday Average Additional Platform Time Monthly (Trips Starting 6 a.m. - 11 p.m.) (h:mm:ss)
+[p045_c0002] Desired trend
+> [p045_c0003] Subway Weekday Average Additional Platform Time Data Month Systemwide Subdivision A Subdivision B Nov-20 0:01:07 0:01:07 0:01:12 Dec-20 0:01:13 0:01:13 0:01:13 Jan-21 0:01:10 0:01:10 0:01:10 Feb-21 0:01:30 0:01:30 0:01:40 Mar-21 0:01:13 0:01:13 0:01:13 Apr-21 0:01:12 0:01:12 0:01:12 May-21 0:01:16 0:01:16 0:01:28 Jun-21 0:01:28 0:01:28 0:01:38 Jul-21 0:01:30 0:01:30 0:01:44 Aug-21 0:01:30 0:01:30 0:01:40 Sep-21 0:01:38 0:01:38 0:01:46 Oct-21 0:01:28 0:01:28 0:01:38 Nov-21 0:01:28 0:01:28 0:01:28
+[p045_c0004]
+
+```text
+Monthly 12-Month Average Nov 21 Nov 20 Change Nov 21 Nov 20 Change Subdivision A 0:01:13 0:01:04 +0:00:09 0:01:12 0:01:04 +0:00:08 Subdivision B 0:01:38 0:01:10 +0:00:28 0:01:32 0:01:15 +0:00:17 Systemwide 0:01:28 0:01:07 +0:00:21 0:01:24 0:01:11 +0:00:13
+```
+### [p045_c0005] Additional Platform Time Discussion
+- [p045_c0006] • November 2021 APT worsened by 21 seconds compared to November 2020, and the 12-month average worsened by 13 seconds. • The largest increase in APT was on the C line, due in part to the effects of a different schedule operated in November 2020 than in November 2021.
+[p045_c0007] Note: This metric uses electronic data made available systemwide by the MTA's investments in new train tracking technology and in more robust methods for determining how customers use the subway. It is likely that this measure will be refined and enhanced as the MTA gains experience integrating the latest technology and information.
+[p045_c0008] _Chart 7_
+[p045_c0009] _Master Page # 45 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 46
+
+### [p046_c0001] Subway Weekday Average Additional Platform Time Monthly (Trips Starting 6 a.m. - 11 p.m.) (h:mm:ss)
+[p046_c0002] Desired trend
+[p046_c0003]
+
+```text
+Line Nov 21 Nov 20 Change 1 0:01:02 0:00:59 +0:00:03 2 0:01:17 0:01:18 -0:00:01 3 0:01:15 0:01:09 +0:00:06 4 0:01:10 0:01:06 +0:00:04 5 0:01:12 0:01:13 -0:00:01 6 0:01:02 0:01:02 +0:00:00 7 0:01:36 0:00:54 +0:00:42 S 42nd 0:01:31 0:00:26 +0:01:05 Subdivision A 0:01:13 0:01:04 +0:00:09 A 0:01:32 0:01:04 +0:00:28 B 0:02:04 0:01:30 +0:00:34 C 0:02:05 0:00:40 +0:01:25 D 0:02:15 0:01:27 +0:00:48 E 0:01:14 0:00:26 +0:00:48 F 0:01:36 0:00:50 +0:00:46 S Fkln 0:00:18 0:00:30 -0:00:12 G 0:01:10 0:01:00 +0:00:10 S Rock 0:00:37 0:00:28 +0:00:09 JZ 0:01:24 0:00:57 +0:00:27 L 0:01:00 0:01:05 -0:00:05 M 0:01:52 0:01:29 +0:00:23 N 0:01:37 0:01:30 +0:00:07 Q 0:01:52 0:01:23 +0:00:29 R 0:01:53 0:01:42 +0:00:11 W 0:01:12 0:01:14 -0:00:02 Subdivision B 0:01:38 0:01:10 +0:00:28 Systemwide 0:01:28 0:01:07 +0:00:21
+```
+[p046_c0004] _Chart 8_
+[p046_c0005] _Master Page # 46 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 47
+
+### [p047_c0001] Subway Weekday Average Additional Train Time Monthly (Trips Starting 6 a.m. - 11 p.m.) (h:mm:ss)
+[p047_c0002] Desired trend
+> [p047_c0003] Subway Weekday Average Additional Train Time Data Month Systemwide Subdivision A Subdivision B Nov-20 0:00:03 0:00:00 0:00:03 Dec-20 0:00:04 0:00:00 0:00:06 Jan-21 0:00:04 0:00:00 0:00:06 Feb-21 0:00:16 0:00:06 0:00:23 Mar-21 0:00:01 0:00:00 0:00:00 Apr-21 0:00:01 0:00:00 0:00:02 May-21 0:00:09 0:00:00 0:00:20 Jun-21 0:00:10 0:00:00 0:00:23 Jul-21 0:00:10 0:00:00 0:00:22 Aug-21 0:00:07 0:00:00 0:00:19 Sep-21 0:00:19 0:00:04 0:00:32 Oct-21 0:00:15 0:00:04 0:00:23 Nov-21 0:00:19 0:00:08 0:00:26
+[p047_c0004]
+
+```text
+Monthly 12-Month Average Nov 21 Nov 20 Change Nov 21 Nov 20 Change Subdivision A 0:00:09 -0:00:08 +0:00:17 -0:00:01 0:00:13 -0:00:14 Subdivision B 0:00:26 0:00:01 +0:00:25 0:00:19 0:00:32 -0:00:14 Systemwide 0:00:19 -0:00:03 +0:00:22 +0:00:11 0:00:24 -0:00:14
+```
+### [p047_c0005] Additional Train Time Discussion
+- [p047_c0006] • November 2021 ATT worsened by 22 seconds compared to November 2020, while the 12 month average improved by 14 seconds. • The largest increases in ATT were on the 7, A, and E lines due in part to particularly impactful major incidents affecting these lines in November 2021
+[p047_c0007] Note: This metric uses electronic data made available systemwide by the MTA's investments in new train tracking technology and in more robust methods for determining how customers use the subway. It is likely that this measure will be refined and enhanced as the MTA gains experience integrating the latest technology and information.
+[p047_c0008] _Chart 9_
+[p047_c0009] _Master Page # 47 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 48
+
+### [p048_c0001] Subway Weekday Average Additional Train Time Monthly (Trips Starting 6 a.m. - 11 p.m.) (h:mm:ss)
+[p048_c0002] Desired trend
+[p048_c0003]
+
+```text
+Line Nov 21 Nov 20 Change 1 0:00:25 0:00:10 +0:00:15 2 -0:00:12 -0:00:26 +0:00:14 3 -0:00:12 -0:00:25 +0:00:13 4 -0:00:12 -0:00:28 +0:00:16 5 -0:00:17 -0:00:31 +0:00:14 6 0:00:23 0:00:13 +0:00:10 7 0:00:46 0:00:06 +0:00:40 S 42nd -0:00:07 0:00:09 -0:00:16 Subdivision A 0:00:09 -0:00:08 +0:00:17 A 0:01:02 0:00:07 +0:00:55 B 0:00:32 -0:00:02 +0:00:34 C 0:00:24 0:00:05 +0:00:19 D 0:00:48 0:00:26 +0:00:22 E 0:00:49 -0:00:19 +0:01:08 F 0:00:03 -0:00:25 +0:00:28 S Fkln 0:00:04 0:00:04 +0:00:00 G 0:00:29 0:00:30 -0:00:01 S Rock -0:00:36 -0:00:16 -0:00:20 JZ 0:00:29 0:00:18 +0:00:11 L 0:00:08 -0:00:03 +0:00:11 M 0:00:21 -0:00:13 +0:00:34 N 0:00:31 0:00:38 -0:00:07 Q 0:00:16 -0:00:09 +0:00:25 R -0:00:01 -0:00:08 +0:00:07 W 0:00:11 0:00:12 -0:00:01 Subdivision B 0:00:26 0:00:01 +0:00:25 Systemwide 0:00:19 -0:00:03 +0:00:22
+```
+[p048_c0004] _Chart 10_
+[p048_c0005] _Master Page # 48 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 49
+
+### [p049_c0001] Subway Weekday Customer Journey Time Performance
+[p049_c0002] Monthly (Trips Starting 6 a.m. - 11 p.m.)
+[p049_c0003] Desired trend
+> [p049_c0004] Subway Weekday Customer Journey Time Performance Data Month Systemwide Subdivision A Subdivision B Nov-20 86.6% 88.6% 84.7% Dec-20 85.5% 88.0% 84.0% Jan-21 86.2% 88.5% 84.5% Feb-21 83.0% 85.5% 81.5% Mar-21 86.5% 88.5% 84.5% Apr-21 86.2% 88.5% 84.5% May-21 85.0% 88.8% 82.5% Jun-21 83.5% 88.5% 80.0% Jul-21 83.5% 88.0% 80.0% Aug-21 83.2% 88.0% 80.0% Sep-21 82.0% 87.5% 78.5% Oct-21 83.2% 88.0% 80.0% Nov-21 83.4% 88.2% 80.1%
+[p049_c0005]
+
+```text
+Monthly 12-Month Average Nov 21 Nov 20 Change Nov 21 Nov 20 Change Subdivision A 88.2% 89.2% -1.0% 88.1% 88.6% -0.5% Subdivision B 80.1% 84.7% -4.6% 81.4% 83.0% -1.6% Systemwide 83.4% 86.6% -3.2% 84.1% 85.3% -1.2%
+```
+### [p049_c0006] Weekday Customer Journey Time Performance Discussion
+- [p049_c0007] • November 2021 CJTP worsened by 3.2% compared to November 2020, and the 12-month average worsened by 1.2%. • The largest worsening was on the C line, due in part to the effects of a different schedule operated in November 2020 than in November 2021.
+[p049_c0008] _Chart 11_
+[p049_c0009] _Master Page # 49 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 50
+
+### [p050_c0001] Subway Weekday Customer Journey Time Performance Monthly (Trips Starting 6 a.m. - 11 p.m.)
+[p050_c0002] Desired trend
+[p050_c0003]
+
+```text
+Line Nov 21 Nov 20 Change 1 89.2% 90.1% -0.9% 2 86.9% 87.3% -0.4% 3 89.5% 89.5% 0.0% 4 87.0% 88.0% -1.0% 5 87.5% 87.8% -0.3% 6 89.7% 89.4% +0.3% 7 86.3% 90.7% -4.4% S 42nd 94.7% 97.7% -3.0% Subdivision A 88.2% 89.2% -1.0% A 77.1% 84.8% -7.7% B 75.4% 81.5% -6.1% C 77.3% 89.3% -12.0% D 72.5% 79.9% -7.4% E 80.7% 90.0% -9.3% F 82.1% 86.0% -3.9% S Fkln 98.9% 96.0% +2.9% G 83.3% 85.0% -1.7% S Rock 90.9% 93.8% -2.9% JZ 83.4% 86.5% -3.1% L 92.9% 93.9% -1.0% M 79.1% 83.0% -3.9% N 79.0% 78.9% +0.1% Q 76.6% 81.9% -5.3% R 79.4% 80.9% -1.5% W 86.4% 86.5% -0.1% Subdivision B 80.1% 84.7% -4.6% Systemwide 83.4% 86.6% -3.2%
+```
+[p050_c0004] _Chart 12_
+[p050_c0005] _Master Page # 50 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 51
+
+### [p051_c0001] Section 2: Inputs to Operations
+[p051_c0002] The metrics in this section address how NYCT provides service to its customers, by measuring the reliability of key assets, reflecting the effectiveness of maintenance practices, as well as age and condition. Historically, the only such measures that NYCT has provided to the Transit Committee and to the public are car fleet and elevator and escalator measures, defined below. NYCT is examining additional such measures to bring forward in coming months.
+### [p051_c0003] Performance Indicator Definitions
+### [p051_c0004] Mean Distance Between Failures (MDBF)
+[p051_c0005] Subway MDBF is a measure of car fleet reliability. It is calculated as revenue car miles divided by the number of delay incidents attributed to car-related causes.
+### [p051_c0006] Elevator and Escalator Availability
+[p051_c0007] The percent of time that elevators or escalators are operational system wide. Most elevators and escalators in the subway are maintained by New York City Transit and are electronically monitored 24-hours a day. Some elevators and escalators in the subway are owned and maintained by outside parties; these are inspected by NYCT personnel multiple times daily.
+[p051_c0008] _Master Page # 51 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 52
+
+### [p052_c0001] Subway Mean Distance Between Failures
+[p052_c0002] Desired trend
+> [p052_c0003] Monthly Mean Distance Between Failures (MDBF) Data Month Monthly (Miles) 12-Month Average (Miles) Nov-20 151,809 143,213 Dec-20 158,000 144,000 Jan-21 155,000 144,000 Feb-21 143,000 144,000 Mar-21 160,000 145,000 Apr-21 177,830 145,000 May-21 145,000 145,000 Jun-21 145,000 145,000 Jul-21 135,000 145,000 Aug-21 145,000 145,000 Sep-21 135,000 145,000 Oct-21 140,000 145,000 Nov-21 156,511 156,511
+[p052_c0004]
+
+```text
+Monthly # of Cars Nov '21 Nov '20 % Change Subdivision A 2,890 177,830 217,311 -18.2% Subdivision B 3,565 143,213 124,473 +15.1% Systemwide 6,455 156,511 151,809 +3.1%
+```
+[p052_c0005]
+
+```text
+12-Month Average Car Class # of Cars Nov '21 Nov '20 % Change R46 748 55,979 59,689 -6.2% R62 315 239,463 212,630 +12.6% R62A 824 149,739 144,547 +3.6% R68 425 109,998 106,270 +3.5% R68A 200 91,798 67,633 +35.7% R142 1,025 256,140 248,902 +2.9% R142A 220 134,849 139,856 -3.6% R143 212 197,810 166,019 +19.1% R160 1,662 305,546 273,723 +11.6% R179 318 168,040 130,847 +28.4% R188 - New 126 396,906 248,902 +59.5% R188 - Conversion 380 241,196 307,930 -21.7% Subdivision A 2,890 200,730 195,881 +2.5% Subdivision B 3,565 125,829 121,036 +4.0% Systemwide 6,455 149,595 144,282 +3.7%
+```
+[p052_c0006] MDBF Discussion November 2021 MDBF was 156,511, an increase of 3.1% from one year ago. 12-month average MDBF was 149,595 in November 2021, an increase of 3.7% from one year ago. The largest improvements in MDBF (12-month average) were on the R188 (New), R68A, and R179 fleets.
+[p052_c0007] _Chart 13_
+[p052_c0008] _Master Page # 52 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 53
+
+### [p053_c0001] Elevator and Escalator Availability (24 Hours)
+[p053_c0002] Desired trend
+> [p053_c0003] Monthly and 12-Month Average Availability Data Month Monthly Elevator Availability 12-Month Average Elevator Availability Monthly Escalator Availability 12-Month Average Escalator Availability Nov-20 97.1% 96.8% 93.3% 92.3% Dec-20 96.8% 96.8% 92.3% 92.3% Jan-21 97.3% 96.6% 92.3% 92.3% Feb-21 95.3% 96.6% 91.3% 91.3% Mar-21 96.8% 96.6% 90.3% 91.3% Apr-21 96.8% 96.6% 90.3% 91.3% May-21 97.1% 96.6% 91.3% 91.3% Jun-21 96.3% 96.6% 91.3% 91.3% Jul-21 96.8% 96.6% 89.8% 91.3% Aug-21 95.8% 96.6% 90.3% 91.3% Sep-21 95.8% 96.6% 90.3% 91.3% Oct-21 96.8% 96.6% 91.8% 91.3% Nov-21 97.3% 96.6% 93.2% 91.3%
+[p053_c0004]
+
+```text
+Monthly 12-Month Average Nov 21 Nov 20 % Change Nov 21 Nov 20 % Change Elevator Availability 97.3% 97.1% +0.2% 96.6% 96.8% -0.2% Escalator Availability 93.2% 93.3% -0.1% 91.3% 92.3% -1.0%
+```
+### [p053_c0005] Elevator and Escalator Availability Discussion
+- [p053_c0006] • November 2021 elevator availability increased by 0.2% compared to November 2020, while the 12-month average decreased by 0.2%. • November 2021 escalator availability decreased by 0.1%, compared to September 2020, while the 12-month average decreased by 1%.
+[p053_c0007] _Chart 14_
+[p053_c0008] _Master Page # 53 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 54
+
+### [p054_c0001] Section 3: Legacy Indicators
+[p054_c0002] The metrics in this section have been shared with the public for many years. While less reflective of the customer experience, they are included here for continuity purposes.
+### [p054_c0003] Performance Indicator Definitions
+### [p054_c0004] Wait Assessment (Weekday and Weekend)
+[p054_c0005] Wait Assessment (WA) measures how regularly the trains are spaced at selected timepoints on each line. To meet the standard, the headway (time between trains) can be no greater than 25% more than the scheduled headway. Minor gaps are more than 25% to 50% over the scheduled headway, medium gaps are more than 50% to 100% over the scheduled headway, and major gaps are more than 100% over the scheduled headway, or missed intervals. WA is reported from 6 a.m. to midnight.
+### [p054_c0006] Terminal On-Time Performance (Weekday and Weekend)
+[p054_c0007] Terminal On-Time Performance is the percentage of scheduled trains arriving at the terminal locations within five minutes of their scheduled arrival time during a 24-hour period. An on-time train is defined as a train arriving at its destination terminal on time, early, or no more than five minutes late, and that has not skipped any planned station stops.
+### [p054_c0008] Train Delays (Weekday and Weekend)
+[p054_c0009] Train delays are the number of trains that arrived at terminal locations more than five minutes late, or that have skipped any planned station stops during a 24-hour period.
+[p054_c0010] _Master Page # 54 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 55
+
+### [p055_c0001] Subway Weekday Wait Assessment (6 a.m. - midnight)
+[p055_c0002]
+
+```text
+Line Nov 21 Nov 20 Desired trend Monthly Monthly Gap 12 month Monthly Monthly Gap 12 month Monthly Meets Meets Meets Meets Standard Standard Minor Medium Major Standard Standard Minor Medium Major Standard Change 1 76.2% 10.0% 8.1% 3.7% 73.5% 82.3% 7.9% 5.1% 2.5% 82.2% -6.1% 2 69.4% 11.1% 10.4% 6.3% 65.8% 68.2% 11.2% 11.1% 6.5% 69.9% 1.2% 3 72.0% 12.2% 9.9% 3.9% 65.8% 72.1% 11.8% 10.0% 3.9% 74.5% -0.1% 4 70.0% 10.3% 9.2% 6.9% 67.0% 72.7% 10.0% 8.6% 5.8% 71.5% -2.7% 5 68.1% 10.4% 9.9% 7.7% 66.1% 69.6% 9.9% 9.8% 7.0% 70.9% -1.5% 6 75.1% 9.5% 7.4% 5.2% 73.4% 75.5% 9.4% 7.5% 4.9% 78.0% -0.4% 7 75.1% 10.7% 7.8% 3.9% 74.3% 80.5% 10.6% 6.0% 1.9% 78.4% -5.4% S 42nd 98.0% 0.4% 0.4% 0.6% 94.6% 96.4% 0.6% 1.2% 1.3% 94.2% 1.6% Subdivision A 72.6% 10.4% 8.8% 5.4% 69.9% 74.9% 9.7% 8.1% 4.7% 75.2% -2.3% A 57.1% 11.8% 14.4% 10.5% 61.6% 67.7% 11.9% 10.7% 5.8% 70.1% -10.6% B 56.8% 15.4% 16.2% 7.6% 64.5% 72.4% 12.8% 9.8% 3.2% 75.1% -15.6% C 53.6% 18.1% 18.8% 6.2% 65.6% 81.8% 11.1% 5.4% 0.9% 78.1% -28.2% D 55.0% 13.6% 16.4% 10.4% 65.0% 72.6% 12.1% 9.4% 3.9% 74.1% -17.6% E 66.0% 11.6% 12.2% 6.7% 67.5% 74.3% 9.8% 8.1% 4.9% 74.4% -8.3% F 60.4% 11.4% 13.9% 9.3% 64.3% 76.1% 11.7% 8.2% 2.7% 74.9% -15.7% S Fkln 98.5% 0.3% 0.4% 0.7% 98.6% 97.9% 1.2% 0.3% 0.3% 98.2% 0.6% G 76.9% 12.2% 7.8% 1.9% 76.6% 79.7% 11.4% 6.5% 1.4% 79.5% -2.8% S Rock 89.3% 5.5% 3.1% 1.1% 92.9% 94.2% 2.9% 1.5% 0.9% 95.5% -4.9% JZ 77.9% 11.3% 7.1% 2.3% 79.3% 83.5% 10.0% 4.8% 0.9% 81.8% -5.6% L 72.8% 11.6% 9.3% 4.0% 75.0% 78.1% 11.0% 7.2% 2.6% 79.5% -5.3% M 67.2% 12.4% 11.6% 5.0% 70.3% 76.6% 11.5% 7.1% 3.0% 76.8% -9.4% N 64.3% 13.0% 12.6% 6.7% 67.4% 70.0% 12.7% 9.7% 4.8% 72.6% -5.7% Q 53.8% 15.3% 16.4% 9.6% 64.9% 70.2% 12.5% 10.1% 4.5% 75.4% -16.4% R 62.8% 13.1% 13.3% 7.0% 68.1% 72.1% 11.7% 9.6% 4.1% 74.3% -9.3% W 73.1% 11.7% 7.5% 3.8% 68.5% 69.7% 12.0% 9.7% 5.1% 73.0% 3.4% Subdivision B 64.4% 12.6% 12.6% 6.7% 68.7% 74.7% 11.4% 8.3% 3.5% 75.8% -10.3% Systemwide 68.1% 11.6% 10.9% 6.1% 69.2% 74.8% 10.6% 8.2% 4.0% 75.6% -6.7%
+```
+### [p055_c0003] Weekday Wait Assessment Discussion
+- [p055_c0004] • Wait Assessment for November 2021 decreased by 6.7% compared to November 2020. • Wait Assessment is very sensitive to changes in headway, and the decrease was caused both by trips cancelled due to crew shortages and adjustments to reduce gaps on adjacent trips.
+[p055_c0005] _Chart 15_
+[p055_c0006] _Master Page # 55 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 56
+
+### [p056_c0001] Subway Weekend Wait Assessment (6 a.m. - midnight)
+[p056_c0002]
+
+```text
+Line Nov 21 Nov 20 Desired trend Monthly Monthly Gap 12 month Monthly Monthly Gap 12 month Monthly Meets Meets Meets Meets Standard Standard Minor Medium Major Standard Standard Minor Medium Major Standard Change 1 85.9% 8.1% 4.2% 0.8% 73.5% 72.4% 13.4% 10.0% 2.1% 86.5% +13.5% 2 69.8% 13.2% 11.2% 3.9% 65.2% 71.1% 12.4% 10.4% 4.0% 74.9% -1.3% 3 83.6% 9.9% 4.2% 1.1% 73.7% 73.3% 11.3% 9.4% 4.0% 82.9% +10.3% 4 75.0% 10.5% 7.6% 4.2% 69.7% 68.9% 11.3% 12.1% 5.1% 75.3% +6.1% 5 84.5% 9.4% 3.7% 1.1% 77.8% 86.0% 7.4% 2.7% 2.1% 85.0% -1.5% 6 80.4% 8.9% 6.5% 2.6% 71.1% 69.5% 10.3% 9.7% 6.4% 81.4% +10.9% 7 82.5% 9.6% 5.4% 1.2% 80.0% 80.3% 10.5% 6.4% 1.3% 83.8% +2.2% S 42nd 90.6% 0.4% 3.5% 4.4% 95.3% 89.4% 0.3% 4.3% 5.4% 94.8% +1.2% Subdivision A 78.8% 10.1% 6.8% 2.6% 72.6% 73.4% 10.9% 9.4% 4.0% 80.6% +5.4% A 63.0% 12.9% 14.0% 7.2% 63.7% 72.4% 10.9% 8.4% 3.9% 76.1% -9.4% C 58.4% 19.1% 16.6% 3.6% 67.6% 75.6% 12.2% 9.0% 2.2% 79.9% -17.2% D 60.2% 14.7% 16.6% 5.2% 70.1% 75.1% 12.5% 8.2% 2.4% 78.1% -14.9% E 70.3% 14.6% 10.6% 2.4% 78.6% 82.8% 9.3% 5.1% 1.4% 85.0% -12.5% F 73.6% 14.8% 8.6% 1.8% 72.2% 78.2% 11.7% 7.1% 1.8% 79.6% -4.6% S Fkln 99.3% 0.2% 0.0% 0.3% 97.9% 98.4% 0.8% 0.5% 0.1% 98.7% +0.9% G 85.6% 9.1% 3.5% 0.8% 82.7% 85.5% 8.8% 3.6% 1.3% 85.5% +0.1% S Rock 93.4% 3.5% 1.9% 1.1% 92.8% 96.0% 2.6% 0.4% 0.6% 96.4% -2.6% J 76.6% 11.1% 8.7% 2.3% 80.1% 85.3% 9.4% 4.1% 0.6% 84.7% -8.7% L 79.2% 11.7% 6.8% 1.4% 78.7% 79.7% 11.0% 7.0% 1.4% 83.6% -0.5% M 81.6% 11.5% 5.1% 0.5% 88.0% 95.7% 3.3% 0.7% 0.1% 81.2% -14.1% N 55.2% 16.9% 16.0% 7.3% 68.7% 77.0% 12.7% 7.2% 1.8% 75.4% -21.8% Q 65.9% 15.0% 12.7% 3.9% 71.0% 73.7% 13.2% 9.5% 1.9% 78.2% -7.8% R 67.2% 15.9% 10.9% 3.4% 75.0% 79.4% 11.8% 6.7% 1.2% 80.4% -12.2% Subdivision B 69.8% 13.7% 10.8% 3.5% 74.2% 78.8% 10.9% 6.9% 1.9% 80.7% -9.0% Systemwide 73.7% 12.1% 9.1% 3.1% 73.5% 76.4% 10.9% 8.0% 2.8% 80.7% -2.7%
+```
+### [p056_c0003] Weekend Wait Assessment Discussion
+- [p056_c0004] November 2021 Wait Assessment worsened by 2.7% compared to November 2020.
+[p056_c0005] Note: B and W lines do not operate on weekends.
+[p056_c0006] _Chart 16_
+[p056_c0007] _Master Page # 56 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 57
+
+### [p057_c0001] Subway Weekday Terminal On-Time Performance
+[p057_c0002] Monthly (24 hours)
+[p057_c0003] Desired trend
+[p057_c0004]
+
+```text
+Line Nov 21 Nov 20 Change 1 88.5% 91.2% -2.7% 2 84.3% 82.6% +1.7% 3 89.7% 90.2% -0.5% 4 83.3% 90.7% -7.4% 5 83.9% 88.5% -4.6% 6 85.8% 89.3% -3.5% 7 90.3% 95.9% -5.6% S 42nd 99.8% 99.7% +0.1% Subdivision A 88.9% 91.8% -2.9% A 60.9% 82.5% -21.6% B 71.2% 86.7% -15.5% C 64.6% 91.1% -26.5% D 66.4% 82.1% -15.7% E 75.1% 88.2% -13.1% F 76.2% 84.1% -7.9% S Fkln 99.4% 99.5% -0.1% G 88.6% 90.6% -2.0% S Rock 95.6% 97.3% -1.7% JZ 90.7% 94.1% -3.4% L 91.5% 95.1% -3.6% M 79.7% 93.4% -13.7% NW 76.8% 78.7% -1.9% Q 75.9% 87.9% -12.0% R 77.4% 86.1% -8.7% Subdivision B 79.2% 88.6% -9.4% Systemwide 83.4% 90.0% -6.6%
+```
+### [p057_c0005] Weekday Terminal On-Time Performance Discussion
+- [p057_c0006] • November weekday OTP worsened by 6.6% compared to the prior year. • The lowest OTP was on the A and C lines due in part to several major incidents that affected service, and on the D line due in part to a major construction project near Coney Island.
+[p057_c0007] _Chart 17_
+[p057_c0008] _Master Page # 57 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 58
+
+### [p058_c0001] Subway Weekend Terminal On-Time Performance
+[p058_c0002] Monthly (24 hours)
+[p058_c0003] Desired trend
+[p058_c0004]
+
+```text
+Line Nov 21 Nov 20 Change 1 91.8% 93.6% -1.8% 2 63.4% 77.1% -13.7% 3 78.6% 75.6% +3.0% 4 80.7% 82.9% -2.2% 5 72.3% 99.0% -26.7% 6 80.6% 87.3% -6.7% 7 91.7% 95.2% -3.5% S 42nd 96.8% 99.5% -2.7% Subdivision A 84.0% 89.6% -5.6% A 62.0% 84.5% -22.5% C 69.8% 81.6% -11.8% D 69.4% 94.3% -24.9% E 77.9% 80.0% -2.1% F 84.5% 85.0% -0.5% S Fkln 99.6% 100.0% -0.4% G 90.1% 91.8% -1.7% S Rock 97.2% 99.0% -1.8% J 87.9% 92.2% -4.3% L 95.1% 97.9% -2.8% M 94.5% 99.2% -4.7% N 68.2% 80.8% -12.6% Q 75.9% 88.7% -12.8% R 81.0% 89.7% -8.7% Subdivision B 83.0% 90.6% -7.6% Systemwide 83.4% 90.2% -6.8%
+```
+### [p058_c0005] Weekend Terminal On-Time Performance Discussion
+- [p058_c0006] • November 2021 weekend OTP worsened by 6.8% compared to the prior year.
+[p058_c0007] Note: B and W Lines do not operate on weekends.
+[p058_c0008] _Chart 18_
+[p058_c0009] _Master Page # 58 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 59
+
+### [p059_c0001] Subway Weekday Trains Delayed Monthly - November 2021 (24 hours)
+[p059_c0002]
+
+```text
+Delay Categories Trains Delayed Delayed Trains Per Day (21) % of Delayed Trains Track Failures and Emergency Remediation 998 48 3.5% Rail and Roadbed 739 35 2.6% Fire, Smoke, Debris 259 12 0.9% Signal Failures and Emergency Remediation 3,350 160 11.7% Subway Car 1,272 61 4.5% Door-Related 353 17 1.2% Propulsion 273 13 0.9% Braking 313 15 1.1% Other 333 16 1.2% Stations and Structure 348 17 1.2% Other Internal 9,050 431 31.5% Service Delivery (e.g. crew performance) 441 21 1.5% Crew Availability (e.g. operator vacancy) 8,096 386 28.2% Train Brake Activation - cause unknown 338 16 1.2% Other Internal Disruptions (e.g. IT system failure) 175 8 0.6% External 6,406 305 22.3% Public Conduct, Crime, Police Response 3,541 169 12.3% Sick/Injured Customer 698 33 2.4% Persons on Roadbed (including persons struck by train) 1,552 74 5.4% External Debris on Roadbed (e.g., trees, shopping cart) 228 11 0.8% Inclement Weather 49 2 0.1% External Agency or Utility 338 16 1.2% Operating Environment 3,562 170 12.4% Planned Right-of-Way Work 3,789 180 13.1% Total Trains Delayed 28,775 1,370 100%
+```
+[p059_c0003] _Chart 19_
+[p059_c0004] _Master Page # 59 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 60
+
+### [p060_c0001] Subway Weekend Trains Delayed Monthly - November 2021 (24 hours)
+[p060_c0002]
+
+```text
+Delay Categories Trains Delayed Delayed Trains Per Day (9) % of Delayed Trains Track Failures and Emergency Remediation 221 25 2.8% Rail and Roadbed 124 14 1.5% Fire, Smoke, Debris 97 11 1.2% Signal Failures and Emergency Remediation 387 43 4.8% Subway Car 145 16 1.8% Door-Related 40 4 0.5% Propulsion 20 2 0.2% Braking 14 2 0.2% Other 71 8 0.9% Stations and Structure 33 4 0.4% Other Internal 2,455 273 30.6% Service Delivery (e.g. crew performance) 62 7 0.8% Crew Availability (e.g. operator vacancy) 2,284 254 28.4% Train Brake Activation - cause unknown 25 3 0.3% Other Internal Disruptions (e.g. IT system failure) 84 9 1.0% External 1,685 187 21.0% Public Conduct, Crime, Police Response 971 108 12.1% Sick/Injured Customer 254 28 3.2% Persons on Roadbed (including persons struck by train) 291 32 3.6% External Debris on Roadbed (e.g., trees, shopping cart) 95 11 1.2% Inclement Weather 3 0 0.0% External Agency or Utility 71 8 0.9% Operating Environment 1,385 154 17.2% Planned Right-of-Way Work 1,724 192 21.5% Total Trains Delayed 8,035 893 100%
+```
+[p060_c0003] _Chart 20_
+[p060_c0004] _Master Page # 60 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 61
+
+### [p061_c0001] Customer Service Report: Buses
+[p061_c0002] Frank Annicaro , Acting President, MTA Bus Company/ Senior Vice President, NYCT Department of Buses
+> [p061_c0003] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+> [p061_c0004] A group of approximately 15 bus operators, both men and women, are posing for a group photo in a training facility. They are all wearing light blue button-down shirts, dark trousers, and dark caps. Most are wearing face masks. They are holding up certificates of completion. They are standing in front of a white bus, which is partially visible. The room has a blue and white checkered floor, a clock on the wall, and a glass door to the right.
+[p061_c0005] The Buses family congratulated another successful operator class on December 2 nd , 2021 at the Zerega Training Facility. The agency is intensely focused to onboard new bus operators to bring service delivery customers deserved.
+[p061_c0006] _Master Page # 61 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 62
+
+### [p062_c0001] Bus Report
+[p062_c0002]
+
+```text
+Bus Report Performance Indicators Category Performance Indicator Current Month: November 2021 12-Month Average This Year Last Year Change This Year Last Year Change Customer Focused Metrics Service Delivered (Chart 1) 93.8% 96.3% -2.5% 93.9% 96.4% -2.5% Additional Bus Stop Time (h:mm:ss) (Chart 3)* 0:02:05 0:01:28 0:00:37 0:01:53 0:01:35 0:00:18 Additional Travel Time (h:mm:ss) (Chart 5)* 0:00:35 -0:00:36 0:01:11 -0:00:06 0:00:14 -0:00:20 Customer Journey Time Performance (Chart 7)* 71.3% 80.8% -9.5% 76.3% 76.0% 0.3% Inputs To Operations Mean Distance Between Failures (Chart 9) 8,133 8,703 -6.6% 7,461 8,206 -9.1% Speed (MPH) (Chart 11) 8.1 8.3 -2.4% 8.2 8.3 -1.2% Legacy Indicators Wait Assessment (Chart 13) 73.7% 81.2% -7.5% 76.4% 80.0% -3.6% System MDBSI (Chart 16) 3,126 3,378 -7.5% 3,209 3,530 -9.1% NYCT Bus 3,064 3,178 -3.6% 3,145 3,349 -6.1% MTA Bus 3,344 4,237 -21.1% 3,430 4,240 -19.1% System Trips Completed (Chart 17)* 96.2% 97.7% -1.5% 95.6% 98.2% -2.6% NYCT Bus 96.2% 98.0% -1.8% 95.6% 98.3% -2.7% MTA Bus 95.9% 96.4% -0.5% 95.7% 97.7% -2.0% System AM Pull Out (Chart 18)* 95.7% 97.7% -2.0% 95.7% 98.5% -2.8% NYCT Bus 96.1% 98.2% -2.1% 95.7% 98.7% -3.0% MTA Bus 94.5% 95.9% -1.4% 95.4% 97.9% -2.5% System PM Pull Out (Chart 19)* 96.7% 98.4% -1.7% 96.7% 98.8% -2.1% NYCT Bus 97.1% 98.8% -1.7% 96.8% 99.0% -2.2% MTA Bus 95.4% 97.0% -1.6% 96.1% 98.3% -2.2% System Buses>=12 years 26.0% 20.0% NYCT Bus 15.5% 8.1% MTA Bus 63.0% 60.0% System Fleet Age 8.3 7.9 NYCT Bus 7.3 6.9 MTA Bus 11.9 11.7
+```
+[p062_c0003] System refers to the combined results of NYCT Bus and MTA Bus. Change values for time- and percentage-based metrics are calculated as absolute values. All other change values are calculated as percentage changes.
+[p062_c0004] *NOTE: Due to severe disruptions in bus ridership and service associated with the COVID-19 pandemic, this report includes the following adjustments:
+- [p062_c0005] - 12-month averages for Trips Completed, AM Pull Out, and PM Pull Out metrics exclude April and May 2020 - 12-month averages for ABST, ATT, and CJTP metrics exclude April - August 2020
+[p062_c0006] Note: The metrics in this report are preliminary
+[p062_c0007] _Master Page # 62 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 63
+
+### [p063_c0001] Section 1: Customer Focused Metrics
+[p063_c0002] The metrics in this section measure bus performance as it affects our passengers. By focusing on how closely actual service matches schedules and how much longer passengers must wait and ride compared to schedules, these measures collectively reflect customer experience.
+### [p063_c0003] Performance Indicator Definitions
+### [p063_c0004] Service Delivered
+[p063_c0005] Service Delivered (sometimes referred to as throughput) measures our ability to deliver the scheduled service. It is calculated as the percentage of scheduled bus trips that are actually provided during peak hours (7-9am and 4-7pm on weekdays). Service Delivered is measured at the peak load point, which is the stop on the route where the bus is most crowded, using GPS tracking data from buses as well as bus depot operations records.
+### [p063_c0006] Additional Bus Stop Time (ABST)
+[p063_c0007] Additional Bus Stop Time (ABST) is the estimated average extra time that customers wait at a stop for a bus, compared with their scheduled wait time. The measure assumes customers arrive at the bus stop at a uniform rate, except for routes with longer headways, where customers arrive more closely aligned to the schedule. ABST (sometimes referred to as Excess Wait Time) is a new indicator for the MTA, and is considered an industry best practice worldwide. ABST is estimated using customers' MetroCard swipes and OMNY taps on buses combined with GPS tracking data from Bus Time. This indicator is likely to be refined and enhanced over time as the MTA gains experience integrating the latest technology. ABST is reported for trips starting between 4am to 11pm on weekdays.
+### [p063_c0008] Additional Travel Time (ATT)
+[p063_c0009] Additional Travel Time (ATT) is the estimated average extra time customers are onboard the bus compared to their scheduled onboard time. ATT (sometimes referred to as Excess In-Vehicle Travel Time) is a new indicator for the MTA, and is considered an industry best practice worldwide. ATT is estimated using customers' MetroCard swipes and OMNY taps on buses combined with GPS tracking data from Bus Time. This indicator is likely to be refined and enhanced over time as the MTA gains experience integrating the latest technology. ATT is reported for trips starting between 4am to 11pm on weekdays.
+### [p063_c0010] Customer Journey Time Performance (CJTP)
+[p063_c0011] Customer Journey Time Performance (CJTP) estimates the percentage of customers who complete their journey (ABST + ATT) within 5 minutes of the scheduled time. This is a new indicator for the MTA, but is used by other transit agencies to measure service. CJTP is measured using customers' MetroCard swipes and OMNY taps on buses combined with GPS tracking data from Bus Time. This indicator is likely to be refined and enhanced over time as the MTA gains experience integrating the latest technology. CJTP is reported for trips starting between 4am to 11pm on weekdays.
+[p063_c0012] _Note: The metrics in this report are preliminary_
+[p063_c0013] _Master Page # 63 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 64
+
+### [p064_c0001] Service Delivered (Peak Hours)
+[p064_c0002] Desired trend
+> [p064_c0003] Service Delivered Data (Peak Hours) Month Monthly (%) 12-Month Average (%) Nov-20 96.3% 96.3% Dec-20 94.5% 96.0% Jan-21 96.8% 96.0% Feb-21 90.2% 95.5% Mar-21 95.0% 95.5% Apr-21 95.0% 95.5% May-21 94.8% 95.5% Jun-21 93.8% 95.5% Jul-21 93.8% 95.5% Aug-21 93.5% 95.5% Sep-21 92.8% 95.5% Oct-21 93.2% 95.5% Nov-21 93.8% 95.5%
+[p064_c0004] _Chart 1_
+[p064_c0005]
+
+```text
+Monthly 12-Month Average Nov 21 Nov 20 Change (Pts) Nov 21 Nov 20 Change (Pts) Bronx 95.7% 97.9% -2.2% 94.9% 97.6% -2.7% Brooklyn 92.7% 96.2% -3.5% 93.8% 96.6% -2.8% Manhattan 96.1% 98.7% -2.6% 96.4% 97.1% -0.7% Queens 93.8% 95.3% -1.5% 93.6% 95.5% -1.9% Staten Island 90.2% 94.5% -4.3% 91.0% 95.7% -4.7% Systemwide 93.8% 96.3% -2.5% 93.9% 96.4% -2.5%
+```
+### [p064_c0006] Service Delivered Discussion
+- [p064_c0007] Service Delivered in November 2021 decreased by 2.5 percentage points to 93.8 percent compared to November 2020, and decreased by 2.5 percentage points to 93.9 percent on a 12-month average basis.
+[p064_c0008] Note: The metrics in this report are preliminary
+[p064_c0009] _Master Page # 64 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 65
+
+### [p065_c0001] Service Delivered Monthly (Peak Hours)
+[p065_c0002] Desired trend
+[p065_c0003]
+
+```text
+Borough Nov 21 Nov 20 Change (Pts) Bronx 95.7% 97.9% -2.2% Local/Limited 95.7% 97.4% -1.7% Select Bus Service 94.8% 99.4% -4.6% Express 96.3% 100.3% -4.0% Brooklyn 92.7% 96.2% -3.5% Local/Limited 92.4% 96.0% -3.6% Select Bus Service 93.7% 95.7% -2.0% Express 94.2% 98.3% -4.1% Manhattan 96.1% 98.7% -2.6% Local/Limited 96.8% 98.5% -1.7% Select Bus Service 94.6% 98.9% -4.3% Express N/A N/A N/A Queens 93.8% 95.3% -1.5% Local/Limited 93.8% 94.9% -1.1% Select Bus Service 96.3% 97.5% -1.2% Express 93.0% 97.5% -4.5% Staten Island 90.2% 94.5% -4.3% Local/Limited 90.8% 95.4% -4.6% Select Bus Service 88.8% 95.7% -6.9% Express 89.7% 93.5% -3.8% Systemwide 93.8% 96.3% -2.5% Local/Limited 94.0% 96.1% -2.1% Select Bus Service 94.4% 98.1% -3.7% Express 92.4% 96.4% -4.0%
+```
+[p065_c0004] Note: The metrics in this report are preliminary
+[p065_c0005] _Master Page # 65 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 66
+
+### [p066_c0001] Additional Bus Stop Time
+[p066_c0002] (4 a.m. - 11 p.m.)
+[p066_c0003] (h:mm:ss)
+[p066_c0004] Desired trend
+[p066_c0005] _Chart 2_
+[p066_c0006]
+
+```text
+Monthly 12-Month Average Nov 21 Nov 20 Change Nov 21 Nov 20 Change Bronx 0:01:53 0:01:21 +0:00:32 0:01:49 0:01:37 +0:00:12 Brooklyn 0:02:34 0:01:46 +0:00:48 0:02:13 0:01:46 +0:00:27 Manhattan 0:01:36 0:01:07 +0:00:29 0:01:21 0:01:12 +0:00:09 Queens 0:01:59 0:01:24 +0:00:35 0:01:48 0:01:32 +0:00:16 Staten Island 0:02:55 0:02:00 +0:00:55 0:02:47 0:02:00 +0:00:47 Systemwide 0:02:05 0:01:28 +0:00:37 0:01:53 0:01:35 +0:00:18
+```
+### [p066_c0007] Additional Bus Stop Time Discussion
+- [p066_c0008] • Additional Bus Stop Time in November 2021 increased by 37 seconds compared to November 2020, and increased by 18 seconds on a 12-month average basis. • Note that due to severe disruptions in ridership due to the Covid-19 pandemic, ABST was not available from April - August 2020 and is excluded from the 12-month average.
+[p066_c0009] Note: The metrics in this report are preliminary
+[p066_c0010] _Master Page # 66 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 67
+
+### [p067_c0001] Additional Bus Stop Time
+[p067_c0002] (4 a.m. - 11 p.m.)
+[p067_c0003] (h:mm:ss)
+[p067_c0004] Desired trend
+[p067_c0005]
+
+```text
+Borough Nov 21 Nov 20 Change Bronx 0:01:53 0:01:21 0:00:32 Local/Limited 0:01:54 0:01:22 0:00:32 Select Bus Service 0:01:32 0:01:05 0:00:27 Express 0:02:58 0:02:02 0:00:56 Brooklyn 0:02:34 0:01:46 0:00:48 Local/Limited 0:02:39 0:01:48 0:00:51 Select Bus Service 0:01:56 0:01:21 0:00:35 Express 0:03:32 0:02:13 0:01:19 Manhattan 0:01:36 0:01:07 0:00:29 Local/Limited 0:01:51 0:01:14 0:00:37 Select Bus Service 0:01:06 0:00:49 0:00:17 Express N/A N/A N/A Queens 0:01:59 0:01:24 0:00:35 Local/Limited 0:02:03 0:01:24 0:00:39 Select Bus Service 0:01:17 0:01:19 -0:00:02 Express 0:02:58 0:01:57 0:01:01 Staten Island 0:02:55 0:02:00 0:00:55 Local/Limited 0:03:12 0:02:09 0:01:03 Select Bus Service 0:02:16 0:01:09 0:01:07 Express 0:02:07 0:01:39 0:00:28 Systemwide 0:02:05 0:01:28 0:00:37 Local/Limited 0:02:12 0:01:31 0:00:41 Select Bus Service 0:01:25 0:01:04 0:00:21 Express 0:02:42 0:01:53 0:00:49
+```
+[p067_c0006] Note: The metrics in this report are preliminary
+[p067_c0007] _Master Page # 67 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 68
+
+### [p068_c0001] Additional Travel Time
+[p068_c0002] (4 a.m. - 11 p.m.)
+[p068_c0003] (h:mm:ss)
+[p068_c0004] Desired trend
+> [p068_c0005] Additional Travel Time Data (Estimated from Chart) Month Monthly (h:mm:ss) 12-Month Average (h:mm:ss) Nov-20 -0:00:36 0:00:17 Dec-20 -0:00:25 0:00:00 Jan-21 -0:00:55 -0:00:15 Feb-21 -0:00:15 -0:00:25 Mar-21 -0:00:35 -0:00:30 Apr-21 -0:00:25 -0:00:30 May-21 -0:00:15 -0:00:25 Jun-21 0:00:00 -0:00:20 Jul-21 -0:00:10 -0:00:15 Aug-21 -0:00:15 -0:00:10 Sep-21 0:00:40 -0:00:05 Oct-21 0:00:55 -0:00:05 Nov-21 0:00:35 -0:00:05
+[p068_c0006] _Chart 3_
+[p068_c0007]
+
+```text
+Monthly 12-Month Average Nov 21 Nov 20 Change Nov 21 Nov 20 Change Bronx 0:00:43 -0:00:12 +0:00:55 0:00:13 0:00:32 -0:00:19 Brooklyn 0:00:41 -0:00:31 +0:01:12 -0:00:02 0:00:17 -0:00:19 Manhattan 0:00:12 -0:00:48 +0:01:00 -0:00:24 -0:00:04 -0:00:20 Queens 0:00:44 -0:00:41 +0:01:25 -0:00:03 0:00:18 -0:00:21 Staten Island -0:00:11 -0:02:11 +0:02:00 -0:01:25 -0:00:45 -0:00:40 Systemwide 0:00:35 -0:00:36 +0:01:11 -0:00:06 0:00:14 -0:00:20
+```
+### [p068_c0008] Additional Travel Time Discussion
+- [p068_c0009] • Additional Travel Time in November 2021 increased by 1 minute and 11 seconds compared to November 2020, and decreased by 20 seconds on a 12-month average basis. • Note that due to severe disruptions in ridership due to the Covid-19 pandemic, ABST was not available from April - August 2020 and is excluded from the 12-month average.
+[p068_c0010] Note: The metrics in this report are preliminary
+[p068_c0011] _Master Page # 68 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 69
+
+### [p069_c0001] Additional Travel Time Monthly (4 a.m. - 11 p.m.) (h:mm:ss)
+[p069_c0002] Desired trend
+[p069_c0003]
+
+```text
+Borough Nov 21 Nov 20 Change Bronx 0:00:43 -0:00:12 +0:00:55 Local/Limited 0:00:34 -0:00:12 +0:00:46 Select Bus Service 0:01:07 -0:00:05 +0:01:12 Express 0:05:20 -0:01:17 +0:06:37 Brooklyn 0:00:41 -0:00:31 +0:01:12 Local/Limited 0:00:35 -0:00:31 +0:01:06 Select Bus Service 0:01:18 -0:00:15 +0:01:33 Express 0:02:29 -0:03:22 +0:05:51 Manhattan 0:00:12 -0:00:48 +0:01:00 Local/Limited 0:00:12 -0:00:48 +0:01:00 Select Bus Service 0:00:13 -0:00:48 +0:01:01 Express N/A N/A N/A Queens 0:00:44 -0:00:41 +0:01:25 Local/Limited 0:00:41 -0:00:42 +0:01:23 Select Bus Service 0:00:26 0:00:20 +0:00:06 Express 0:06:57 -0:02:30 +0:09:27 Staten Island -0:00:11 -0:02:11 +0:02:00 Local/Limited -0:00:13 -0:01:12 +0:00:59 Select Bus Service 0:00:16 -0:00:51 +0:01:07 Express -0:00:18 -0:07:47 +0:07:29 Systemwide 0:00:35 -0:00:36 +0:01:11 Local/Limited 0:00:32 -0:00:33 +0:01:05 Select Bus Service 0:00:39 -0:00:24 +0:01:03 Express 0:02:50 -0:04:44 +0:07:34
+```
+[p069_c0004] Note: The metrics in this report are preliminary
+[p069_c0005] _Master Page # 69 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 70
+
+### [p070_c0001] Customer Journey Time Performance
+[p070_c0002] (4 a.m. - 11 p.m.)
+[p070_c0003] Desired trend
+> [p070_c0004] Customer Journey Time Performance Data (Estimated) Month Monthly (%) 12-Month Average (%) Nov-20 80.8% 76.0% Dec-20 77.5% 77.0% Jan-21 84.7% 78.0% Feb-21 75.0% 78.5% Mar-21 80.5% 79.0% Apr-21 79.0% 79.0% May-21 77.5% 79.0% Jun-21 75.5% 79.0% Jul-21 76.5% 79.0% Aug-21 76.5% 79.0% Sep-21 70.5% 78.5% Oct-21 69.0% 78.0% Nov-21 71.3% 76.3%
+[p070_c0005] _Chart 4_
+[p070_c0006]
+
+```text
+Monthly 12-Month Average Nov 21 Nov 20 Change (Pts) Nov 21 Nov 20 Change (Pts) Bronx 71.2% 79.5% -8.3% 75.0% 74.4% +0.6% Brooklyn 67.4% 77.6% -10.2% 73.3% 74.1% -0.8% Manhattan 77.2% 84.7% -7.5% 81.7% 80.7% +1.0% Queens 71.5% 82.6% -11.1% 77.3% 76.5% +0.8% Staten Island 71.0% 82.9% -11.9% 76.9% 76.0% +0.9% Systemwide 71.3% 80.8% -9.5% 76.3% 76.0% +0.3%
+```
+### [p070_c0007] Customer Journey Time Performance Discussion
+- [p070_c0008] • Customer Journey Time Performance in November 2021 decreased by 9.5 percentage points to 71.3 percent compared to November 2020, and increased by 0.3 percentage points to 76.3 percent on a 12-month average basis. • Note that due to severe disruptions in ridership due to the Covid-19 pandemic, ABST was not available from April - August 2020 and is excluded from the 12-month average.
+[p070_c0009] Note: The metrics in this report are preliminary
+[p070_c0010] _Master Page # 70 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 71
+
+### [p071_c0001] Customer Journey Time Performance Monthly
+[p071_c0002]
+
+```text
+Borough Nov 21 Nov 20 Change (Pts) Bronx 71.2% 79.5% -8.3% Local/Limited 72.1% 79.7% -7.6% Select Bus Service 68.8% 79.2% -10.4% Express 47.7% 70.4% -22.7% Brooklyn 67.4% 77.6% -10.2% Local/Limited 67.6% 77.5% -9.9% Select Bus Service 67.1% 78.8% -11.7% Express 54.7% 78.0% -23.3% Manhattan 77.2% 84.7% -7.5% Local/Limited 74.9% 83.2% -8.3% Select Bus Service 81.4% 88.1% -6.7% Express N/A N/A N/A Queens 71.5% 82.6% -11.1% Local/Limited 71.8% 83.2% -11.4% Select Bus Service 72.4% 72.8% -0.4% Express 40.3% 74.6% -34.3% Staten Island 71.0% 82.9% -11.9% Local/Limited 72.0% 82.1% -10.1% Select Bus Service 71.2% 81.1% -9.9% Express 66.5% 88.3% -21.8% Systemwide 71.3% 80.8% -9.5% Local/Limited 71.1% 80.6% -9.5% Select Bus Service 74.1% 82.2% -8.1% Express 55.3% 80.3% -25.0%
+```
+[p071_c0003] Desired trend
+[p071_c0004] Note: The metrics in this report are preliminary
+[p071_c0005] _Master Page # 71 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 72
+
+### [p072_c0001] Section 2: Inputs to Operations
+[p072_c0002] The metrics in this section address how NYCT provides service to its customers by measuring the reliability of bus performance and the impact of bus speed on operations.
+### [p072_c0003] Performance Indicator Definitions
+### [p072_c0004] Mean Distance Between Failures (MDBF)
+[p072_c0005] Mean Distance Between Failures (MDBF) reports how frequently mechanical problems such as engine failures or electrical malfunctions cause delays. It is calculated by dividing the number of miles buses run in service by the number of incidents due to mechanical problems.
+[p072_c0006] MDBF numbers include weekdays and weekends. This borough and trip-type combinations (Chart 10) are reported as a 12-month average.
+### [p072_c0007] Bus Speeds
+[p072_c0008] Bus speeds measure how quickly buses travel along their routes. The average end-to-end speed is the total distance traveled along a route divided by the total time, using bus GPS data.
+[p072_c0009] _Note: The metrics in this report are preliminary_
+[p072_c0010] _Master Page # 72 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 73
+
+### [p073_c0001] Mean Distance Between Failures
+[p073_c0002] (24 Hours)
+[p073_c0003] Miles
+[p073_c0004] Desired trend
+> [p073_c0005] Mean Distance Between Failures Data (Estimated from Chart) Month Monthly (Miles) 12-Month Average (Miles) Nov-20 8,703 8,000 Dec-20 8,400 8,000 Jan-21 8,800 8,000 Feb-21 7,800 8,000 Mar-21 8,600 8,000 Apr-21 8,700 8,000 May-21 7,900 8,000 Jun-21 6,300 7,800 Jul-21 6,400 7,800 Aug-21 6,100 7,700 Sep-21 6,600 7,600 Oct-21 7,200 7,500 Nov-21 8,133 7,461
+[p073_c0006] _Chart 5_
+[p073_c0007]
+
+```text
+Monthly 12-Month Average Nov 21 Nov 20 % Change Nov 21 Nov 20 % Change Bronx 6,423 6,188 +3.8% 5,319 6,085 -12.6% Brooklyn 8,421 9,211 -8.6% 8,202 8,548 -4.1% Manhattan 4,709 5,323 -11.5% 4,617 5,400 -14.5% Queens 7,954 8,855 -10.2% 7,334 8,063 -9.1% Staten Island 26,029 29,090 -10.5% 23,184 24,816 -6.6% Systemwide 8,133 8,703 -6.6% 7,461 8,206 -9.1%
+```
+### [p073_c0008] Mean Distance Between Failures Discussion
+- [p073_c0009] Mean Distance Between Failures in November 2021 decreased by 6.6 percent to 8,133 miles compared to November 2020, and decreased by 9.1 percent to 7,461 miles on a 12-month average basis.
+[p073_c0010] Note: The metrics in this report are preliminary
+[p073_c0011] _Master Page # 73 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 74
+
+### [p074_c0001] Mean Distance Between Failures 12 Month Rolling Average (24 Hours) Miles
+[p074_c0002] Desired trend
+[p074_c0003]
+
+```text
+Borough Nov 21 Nov 20 % Change Bronx 5,319 6,085 -12.6% Local/Limited 4,651 5,225 -11.0% Select Bus Service 6,308 9,690 -34.9% Express 9,305 10,797 -13.8% Brooklyn 8,202 8,548 -4.1% Local/Limited 8,074 8,156 -1.0% Select Bus Service 9,842 13,881 -29.1% Express 8,999 10,846 -17.0% Manhattan 4,617 5,400 -14.5% Local/Limited 4,261 4,632 -8.0% Select Bus Service 6,218 10,150 -38.7% Express N/A N/A N/A Queens 7,334 8,063 -9.1% Local/Limited 6,982 7,825 -10.8% Select Bus Service 7,236 7,704 -6.1% Express 9,623 9,642 -0.2% Staten Island 23,184 24,816 -6.6% Local/Limited 23,245 22,811 +1.9% Select Bus Service 34,103 83,233 -59.0% Express 22,428 24,791 -9.5% Systemwide 7,461 8,206 -9.1% Local/Limited 6,683 7,221 -7.4% Select Bus Service 7,675 10,690 -28.2% Express 12,990 13,947 -6.9%
+```
+[p074_c0004] Note: The metrics in this report are preliminary
+[p074_c0005] _Master Page # 74 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 75
+
+### [p075_c0001] Bus Speeds (24 Hours) (MPH)
+[p075_c0002] Desired trend
+> [p075_c0003] Bus Speed Data (MPH) Month Monthly (MPH) 12-Month Average (MPH) Nov-20 8.3 8.3 Dec-20 8.3 8.3 Jan-21 8.4 8.4 Feb-21 8.2 8.4 Mar-21 8.3 8.4 Apr-21 8.2 8.3 May-21 8.2 8.3 Jun-21 8.1 8.3 Jul-21 8.2 8.3 Aug-21 8.2 8.3 Sep-21 7.9 8.3 Oct-21 7.9 8.3 Nov-21 8.1 8.3
+[p075_c0004] _Chart 6_
+[p075_c0005]
+
+```text
+Monthly 12-Month Average Nov 21 Nov 20 % Change Nov 21 Nov 20 % Change Bronx 7.5 7.7 -2.6% 7.6 7.7 -1.3% Brooklyn 7.2 7.5 -4.0% 7.4 7.5 -1.3% Manhattan 6.2 6.4 -3.1% 6.3 6.4 -1.6% Queens 9.0 9.5 -5.3% 9.2 9.4 -2.1% Staten Island 14.0 14.3 -2.1% 14.2 14.1 +0.7% Systemwide 8.1 8.3 -2.4% 8.2 8.3 -1.2%
+```
+### [p075_c0006] Speed Discussion
+- [p075_c0007] Bus Speeds in November 2021 decreased by 2.4 percent to 8.1 mph compared to November 2020, and decreased by 1.2 percent to 8.2 mph on a 12-month average basis.
+[p075_c0008] Note: The metrics in this report are preliminary
+[p075_c0009] _Master Page # 75 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 76
+
+### [p076_c0001] Bus Speeds Monthly (24 Hours) MPH
+[p076_c0002] Desired trend
+[p076_c0003]
+
+```text
+Borough Nov 21 Nov 20 % Change Bronx 7.5 7.7 -2.6% Local/Limited 6.9 7.1 -2.8% Select Bus Service 8.7 9.1 -4.4% Express 11.4 12.5 -8.8% Brooklyn 7.2 7.5 -4.0% Local/Limited 6.9 7.3 -5.5% Select Bus Service 8.4 8.8 -4.5% Express 12.5 13.9 -10.1% Manhattan 6.2 6.4 -3.1% Local/Limited 5.9 6.1 -3.3% Select Bus Service 7.2 7.5 -4.0% Express N/A N/A N/A Queens 9.0 9.5 -5.3% Local/Limited 8.7 9.2 -5.4% Select Bus Service 11.1 11.7 -5.1% Express 12.7 14.4 -11.8% Staten Island 14.0 14.3 -2.1% Local/Limited 12.1 12.6 -4.0% Select Bus Service 14.6 15.2 -3.9% Express 17.2 18.9 -9.0% Systemwide 8.1 8.3 -2.4% Local/Limited 7.6 7.9 -3.8% Select Bus Service 9.1 9.5 -4.2% Express 13.7 14.8 -7.4%
+```
+[p076_c0004] Note: The metrics in this report are preliminary
+[p076_c0005] _Master Page # 76 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 77
+
+### [p077_c0001] Section 3: Legacy Indicators
+[p077_c0002] The metrics in this section have been shared with the public for many years. While less reflective of the customer experience, they are included here for continuity purposes.
+### [p077_c0003] Performance Indicator Definitions
+### [p077_c0004] Wait Assessment
+[p077_c0005] Wait Assessment (WA) measures how evenly buses are spaced at selected timepoints along each route. It is defined as the percentage of actual intervals between buses that are no more than three minutes over the scheduled interval for the morning (7-9am) and afternoon (4-7pm) peak periods and no more than five minutes over the scheduled interval for the rest of the day. This measure provides a percentage of buses passing the standard, but it does not account for extra service operated, it is not weighted to how many customers are waiting for buses at different stops, it does not distinguish between relatively minor gaps in service and major delays, and it is not a true measurement of time customers spend waiting at stops.
+### [p077_c0006] Bus Mean Distance Between Service Interruptions
+[p077_c0007] Bus Mean Distance Between Service Interruptions is the average distance traveled by a bus between all delays and/or inconveniences to customers within a 12-month period. All road calls caused by both mechanical and non-mechanical failures are included.
+### [p077_c0008] Bus Percentage of Completed Trips
+[p077_c0009] Bus Percentage of Completed Trips is the percent of trips completed system wide for the 12-month period. The systemwide metric is the combined results of NYCT Bus and MTA Bus.
+### [p077_c0010] Bus AM Weekday Pull Out Performance
+[p077_c0011] Bus AM Weekday Pull Out Performance is the percent of required buses and operators available in the AM peak period. The systemwide metric is the combined results of NYCT Bus and MTA Bus.
+### [p077_c0012] Bus PM Weekday Pull Out Performance
+[p077_c0013] Bus PM Weekday Pull Out Performance is the percent of required buses and operators available in the PM peak period. The systemwide metric is the combined results of NYCT Bus and MTA Bus.
+[p077_c0014] _Note: The metrics in this report are preliminary_
+[p077_c0015] _Master Page # 77 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 78
+
+### [p078_c0001] Wait Assessment
+[p078_c0002] Desired trend
+> [p078_c0003] Wait Assessment Data (Estimated from Chart) Month Monthly (%) 12-Month Average (%) Nov-20 81.2% 80.0% Dec-20 77.0% 80.0% Jan-21 83.5% 80.0% Feb-21 72.8% 79.8% Mar-21 79.8% 79.5% Apr-21 79.0% 79.2% May-21 77.0% 79.0% Jun-21 75.6% 78.8% Jul-21 76.0% 78.5% Aug-21 75.6% 78.2% Sep-21 71.5% 77.8% Oct-21 72.0% 77.5% Nov-21 73.7% 77.0%
+[p078_c0004] _Chart 7_
+[p078_c0005]
+
+```text
+Monthly 12-Month Average Nov 21 Nov 20 Change (Pts) Nov 21 Nov 20 Change (Pts) Bronx 74.7% 81.2% -6.5% 75.6% 79.7% -4.1% Brooklyn 68.7% 77.5% -8.8% 72.8% 76.9% -4.1% Manhattan 76.1% 83.5% -7.4% 79.8% 80.6% -0.8% Queens 76.1% 83.0% -6.9% 78.5% 81.8% -3.3% Staten Island 72.8% 81.9% -9.1% 75.4% 82.0% -6.6% Systemwide 73.7% 81.2% -7.5% 76.4% 80.0% -3.6%
+```
+[p078_c0006] Note: The metrics in this report are preliminary
+[p078_c0007] _Master Page # 78 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 79
+
+### [p079_c0001] Wait Assessment Monthly
+[p079_c0002] Desired trend
+[p079_c0003]
+
+```text
+Borough Nov 21 Nov 20 Change (Pts) Bronx 74.7% 81.2% -6.5% Local/Limited 74.5% 80.9% -6.4% Select Bus Service 74.1% 82.3% -8.2% Express 79.5% 87.4% -7.9% Brooklyn 68.7% 77.5% -8.8% Local/Limited 68.5% 77.4% -8.9% Select Bus Service 74.1% 80.4% -6.3% Express 73.2% 79.6% -6.4% Manhattan 76.1% 83.5% -7.4% Local/Limited 75.7% 82.9% -7.2% Select Bus Service 79.0% 87.5% -8.5% Express N/A N/A N/A Queens 76.1% 83.0% -6.9% Local/Limited 75.9% 83.0% -7.1% Select Bus Service 82.8% 83.6% -0.8% Express 77.2% 84.5% -7.3% Staten Island 72.8% 81.9% -9.1% Local/Limited 72.5% 81.4% -8.9% Select Bus Service 71.9% 84.3% -12.4% Express 74.3% 83.3% -9.0% Systemwide 73.7% 81.2% -7.5% Local/Limited 73.4% 81.0% -7.6% Select Bus Service 77.9% 84.9% -7.0% Express 76.1% 83.9% -7.8%
+```
+[p079_c0004] Note: The metrics in this report are preliminary
+[p079_c0005] _Master Page # 79 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 80
+
+### [p080_c0001] Bus Mean Distance Between Service Interruptions
+[p080_c0002] Desired trend
+> [p080_c0003] Month Monthly (Miles) 12-Month Average (Miles) Nov-20 3,245 3,473 Dec-20 3,350 3,473 Jan-21 3,280 3,473 Feb-21 3,520 3,473 Mar-21 3,180 3,473 Apr-21 3,580 3,473 May-21 3,580 3,473 Jun-21 3,450 3,473 Jul-21 3,080 3,473 Aug-21 2,980 3,473 Sep-21 2,980 3,473 Oct-21 2,900 3,473 Nov-21 3,126 3,209
+[p080_c0004] _Chart 8_
+[p080_c0005]
+
+```text
+Monthly 12-Month Average Nov 21 Nov 20 % Change Nov 21 Nov 20 % Change Systemwide 3,126 3,245 -3.7% 3,209 3,473 -7.6%
+```
+### [p080_c0006] Bus Percentage of Completed Trips
+[p080_c0007] Desired trend
+> [p080_c0008] Month Monthly (%) 12-Month Average (%) Nov-20 97.6% 98.6% Dec-20 97.7% 98.6% Jan-21 96.7% 98.6% Feb-21 98.0% 98.6% Mar-21 95.6% 98.6% Apr-21 96.2% 98.6% May-21 95.5% 98.6% Jun-21 95.0% 98.6% Jul-21 94.3% 98.6% Aug-21 94.9% 98.6% Sep-21 94.3% 98.6% Oct-21 94.7% 98.6% Nov-21 96.2% 95.6%
+[p080_c0009] _Chart 9_
+[p080_c0010]
+
+```text
+Monthly 12-Month Average Nov 21 Nov 20 Change (Pts) Nov 21 Nov 20 Change (Pts) Systemwide 96.2% 97.6% -1.4% 95.6% 98.6% -3.0%
+```
+[p080_c0011] Note: The metrics in this report are preliminary
+[p080_c0012] _Master Page # 80 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 81
+
+### [p081_c0001] Bus AM Weekday Pull Out Performance
+[p081_c0002] Desired trend
+> [p081_c0003] Bus AM Weekday Pull Out Performance Data Month Monthly (%) 12-Month Average (%) Nov-20 98.2% 99.0% Dec-20 97.8% 98.8% Jan-21 96.3% 98.6% Feb-21 98.0% 98.4% Mar-21 95.7% 98.2% Apr-21 96.0% 98.0% May-21 95.9% 97.8% Jun-21 95.4% 97.6% Jul-21 95.0% 97.4% Aug-21 94.8% 97.2% Sep-21 94.7% 97.0% Oct-21 94.9% 96.8% Nov-21 95.7% 96.7%
+[p081_c0004] _Chart 10_
+[p081_c0005]
+
+```text
+Systemwide Monthly 12-Month Average Nov 21 Nov 20 Change (Pts) Nov 21 Nov 20 Change (Pts) 95.7% 98.2% -2.5% 95.7% 99.0% -3.3%
+```
+### [p081_c0006] Bus PM Weekday Pull Out Performance
+[p081_c0007] Desired trend
+> [p081_c0008] Bus PM Weekday Pull Out Performance Data Month Monthly (%) 12-Month Average (%) Nov-20 98.3% 99.1% Dec-20 98.4% 98.9% Jan-21 97.3% 98.7% Feb-21 98.6% 98.5% Mar-21 97.2% 98.3% Apr-21 97.3% 98.1% May-21 96.9% 97.9% Jun-21 96.3% 97.7% Jul-21 96.0% 97.5% Aug-21 96.0% 97.3% Sep-21 95.7% 97.1% Oct-21 95.8% 96.9% Nov-21 96.7% 96.7%
+[p081_c0009] _Chart 11_
+[p081_c0010]
+
+```text
+Systemwide Monthly 12-Month Average Nov 21 Nov 20 Change (Pts) Nov 21 Nov 20 Change (Pts) 96.7% 98.3% -1.6% 96.7% 99.1% -2.4%
+```
+[p081_c0011] _Note: The metrics in this report are preliminary_
+[p081_c0012] _Master Page # 81 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 82
+
+### [p082_c0001] Customer Service Report: Paratransit
+[p082_c0002] Frank Annicaro , Acting President, MTA Bus Company/ Senior Vice President, NYCT Department of Buses
+> [p082_c0003] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+> [p082_c0004] A photograph of a training session in a classroom. A group of about ten people are seated at long wooden tables, facing a presentation screen on the right. A man in a blue shirt and khaki pants stands at the front, pointing at the screen. The room has a drop ceiling with fluorescent lights and various posters on the walls.
+[p082_c0005] Paratransit has been working very hard and closely with stakeholders to address driver shortage challenges. We continue to hire and provide training classes to onboard drivers to deliver the level of service to Access-A-Ride (AAR) customers. As pictured above, a new driver training class at one of our Primary Carriers. The training consists of classroom training, ADA training, wheelchair securement, and in vehicle training.
+[p082_c0006] _Master Page # 82 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 83
+
+### [p083_c0001] Paratransit Report
+[p083_c0002] Statistical results for the month of October 2021 are shown below.
+[p083_c0003]
+
+```text
+Paratransit Operations - Monthly Operations Report Service Indicators Category Performance Indicator Current Month: October 2021 12-Month Average This Year Last Year % Change This Year Last Year % Change Ridership Total Trips Completed* 508,278 522,536 -2.7% 477,034 481,441 -0.9% Total Ridership 712,855 708,229 +0.7% 658,843 643,435 +2.4% On-Time Performance Pick-up Primary 30 Minute 91.0% 98.0% -7.0% 94.8% 97.4% -2.7% Pick-up Primary 15 Minute 78.0% 91.0% -13.0% 85.4% 89.4% -4.0% Pick-up Broker 30 Minute 83.0% 97.0% -14.0% 92.8% 97.5% -4.7% Pick-up Broker 15 Minute 67.0% 90.0% -23.0% 79.3% 90.2% -10.9% Appointment OTP Trips Primary - 30 Min Early to <1 Late (On-Time)* n/a n/a n/a n/a 46.3% n/a Appointment OTP Trips Primary - Early* n/a n/a n/a n/a 46.3% n/a Appointment OTP Trips Broker - 30 Min Early to <1 Late (On-Time)* n/a n/a n/a n/a 32.3% n/a Appointment OTP Trips Broker - Early* n/a n/a n/a n/a 59.8% n/a Ride Time Ride Time Variance Performance: Actual Trip Duration vs. Planned Trip Duration - At or Better Than Plan 77.0% 87.0% -10.0% 84.3% 85.2% -0.9% Average Actual Trip Duration in Minutes 38 29 +31.0% 31 31 +0.3% Max Ride Time Performance Primary 98.0% 99.0% -1.0% 98.8% 98.8% 0.0% Max Ride Time Performance Broker 99.0% 99.0% 0.0% 99.0% 99.8% +0.1% Customer Experience Frequent Rider Experience Primary* n/a n/a n/a n/a 76.0% n/a Frequent Rider Experience Broker* n/a n/a n/a n/a 70.0% n/a Provider No-Shows Provider No-Shows per 1,000 Schedule Trips Primary 4.68 0.76 +515.8% 2.40 0.64 +277.2% Provider No-Shows per 1,000 Schedule Trips Broker 6.07 0.48 +1,164.6% 2.86 0.79 +262.8% Customer Complaints Passenger Complaints - Transportation Service Quality Per 1000 Completed Trips 7.1 1.5 +373.3% 4.0 1.9 +114.4% Passenger Complaints - Non-Transportation Service Quality Per 1000 Completed Trips 3.8 1.0 +280.0% 2.0 1.3 +57.8% Call Center Percent of Calls Answered 87.0% 96.0% -9.0% 91.6% 96.9% -5.3% Average Call Answer Speed in Seconds 200 45 +344.4% 124 40 +212.4% Eligibility Total Registrants 163,757 161,461 +1.4% 163,034 162,298 +0.5%
+```
+[p083_c0004] *NOTE:
+[p083_c0005] The Drop-off On-Time Performance and Customer Experience metrics are not available to present monthly data comparison due to the temporary suspension of appointment time booking of trips associated with the COVID-19 pandemic which started in March 2020. Consequently, the current 12-Month Average rate for these two metrics cannot be calculated.
+[p083_c0006] Note: 1) The percentage comparisons are the percentage point change instead of the percentage change. 2) Trip data and resulting metrics are preliminary and subject to adjustments.
+[p083_c0007] _Master Page # 83 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 84
+
+### [p084_c0001] PARATRANSIT PERFORMANCE INDICATOR DEFINITIONS
+### [p084_c0002] Ridership by Provider Type
+[p084_c0003] Total Trips is the count of trips provided to registered Access-A-Ride clients in a given month. Total Ridership includes the count of personal care attendants (PCAs) and guests who join clients on the trips. Ridership is presented by the type of provider:
+- [p084_c0004] 1) Primary providers are the blue and white Access-A-Ride branded vehicles, operated by contractors. They provide service with lift and ramp-equipped vans. 2) Brokers provide for-hire vehicles (FHV), metered taxis, and some wheelchair accessible vehicles. 3) E-Hails provide web or app-based trip booking and furnish FHV and metered taxis, including wheelchair accessible vehicles (WAVs). 4) Street Hails are services provided by the traditional FHV, or yellow or green taxis for customers that Access-A-Ride authorized for customer reimbursement. 5) All Others are mostly services provided by local car services or livery providers in Staten Island, otherwise known as the Voucher Program. This service has been replaced by Enhanced Broker Service since November 2019.
+### [p084_c0005] On-Time Performance for Primary and Broker Providers
+[p084_c0006] Pick-up OTP compares actual to promised pick-up time. It is measured on both 15-minute and 30-minute windows. Access-A-Ride's goal is that no less than 94% of all trips arrive at the pick-up location no more than 30 minutes after the promised time, and that no less than 85% of all trips arrive at the pick-up location no more than 15 minutes after the promised time.
+[p084_c0007] Drop-off OTP compares actual to customer-requested drop-off time for trips scheduled with an appointment time. Such trips comprise about half of Access-A-Ride's service plan. An on-time trip is one that arrives at the drop-off location no more than 30 minutes early, and no later than the appointment time.
+### [p084_c0008] Provider No-Shows Per 1,000 Scheduled Trips for Primary and Broker Providers
+[p084_c0009] The Provider No-Show rate measures the frequency with which primary providers do not arrive at the pick-up location within 30 minutes of the promised time and the trip is not provided. For broker providers, customers can call for replacement service after 15 minutes.
+### [p084_c0010] Ride Time Performance for Primary and Broker Providers
+[p084_c0011] Ride Time measures customer trip duration in three different ways:
+[p084_c0012] Actual vs Scheduled presents travel time variance.
+[p084_c0013] Average Travel Time presents the average actual trip duration by trip distance category.
+[p084_c0014] Max Ride Time Performance presents the percentage of trips performed within Access-A-Ride's established max ride time standards.
+[p084_c0015] 0 up to 3 miles: max ride time is 50 minutes >3 up to 6 miles: max ride time is 65 minutes >6 up to 9 miles: max ride time is 95 minutes >9 up to 12 miles: max ride time is 115 minutes >12 up to 14 miles: max ride time is 135 minutes >14 miles: max ride time is 155 minutes
+[p084_c0016] _Master Page # 84 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 85
+
+### [p085_c0001] PARATRANSIT PERFORMANCE INDICATOR DEFINITIONS
+### [p085_c0002] Customer Experience
+[p085_c0003] Customer Experience measures trip results against multiple standards. Trip experience is counted as positive if all of the following standards are met:
+- [p085_c0004] • Pick-up OTP: actual pick-up time is 30 minutes or less past the promise time. • Drop-off OTP: for trips scheduled with a specific drop-off time, drop-off is no more than 30 minutes early and no later than the requested time. • Max Ride Time: actual trip duration is within max ride time standards established by Access-A-Ride. • Provider No-Show: trip does not result in a provider no-show.
+### [p085_c0005] Customer Complaints Per 1,000 Completed Trips
+[p085_c0006] Customers can comment on Access-A-Ride service quality by phone, writing, and website. The number of complaints is measured as a rate per 1,000 completed trips.
+[p085_c0007] Transportation Service Quality measures service delivery, which covers complaints about no-shows, lateness, long ride durations, drivers and vehicles. Access-A-Ride's goal is 3.0 or fewer Transportation Service Quality complaints per 1,000 trips.
+[p085_c0008] Non-Transportation Service Quality measures complaints about the reservation process, eligibility certification experience, customer service agent helpfulness and politeness, and all other complaints. Access-A-Ride's goal is 1.0 or fewer Non-Transportation Service Quality complaints per 1,000 trips.
+[p085_c0009] The phone number customers call to make complaints and other comments is the same familiar number they use for reservations. Access-A-Ride reviews all complaints received and works to resolve all specific customer concerns.
+### [p085_c0010] Call Center
+[p085_c0011] Access-A-Ride Call Center performance is measured as the percent of calls that are answered and the average speed with which those calls are answered. The call center handles reservation and day-of service status calls from customers.
+[p085_c0012] The goal for percent of calls answered is 95% and the goal for average answer speed is 60 seconds.
+[p085_c0013] _Master Page # 85 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 86
+
+### [p086_c0001] Total Trips
+> [p086_c0002] Month Primary Broker E-Hail Street Hail All Others Total Oct-20 144 335 30 523 Nov-20 136 301 29 477 Dec-20 137 299 30 473 Jan-21 128 285 27 450 Feb-21 109 228 22 368 Mar-21 143 314 27 495 Apr-21 141 314 24 490 May-21 145 315 24 494 Jun-21 147 302 30 489 Jul-21 144 309 37 502 Aug-21 142 306 36 496 Sep-21 136 296 37 482 Oct-21 138 315 41 508 Legend: Primary (dark blue), Broker (light blue), E-Hail (black), Street Hail (dark grey), All Others (light grey) Chart 1
+### [p086_c0003] Total Ridership
+> [p086_c0004] Month Primary Broker E-Hail Street Hail All Others Total Oct-20 204 446 37 708 Nov-20 192 403 35 649 Dec-20 195 400 36 644 Jan-21 180 385 30 614 Feb-21 152 299 28 496 Mar-21 203 412 33 670 Apr-21 201 412 30 665 May-21 207 417 30 675 Jun-21 213 420 43 699 Jul-21 215 416 45 703 Aug-21 213 413 44 696 Sep-21 201 409 46 683 Oct-21 204 427 52 713 Legend: Primary (dark blue), Broker (light blue), E-Hail (black), Street Hail (dark grey), All Others (light grey) Chart 2
+### [p086_c0005] Total Trips Discussion
+- [p086_c0006] Total Trips in October 2021 increased by 26K (or 5%) when compared to September 2021, and decreased by 15K (or -3%) when compared to October 2020.
+### [p086_c0007] Total Ridership Discussion
+- [p086_c0008] Total Ridership in October 2021 increased by 30K (or 4%) when compared to September 2021, and increased by 5K (or 1%) when compared to October 2020.
+[p086_c0009] Note: Monthly totals may not be exact due to rounding.
+[p086_c0010] _Master Page # 86 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 87
+
+### [p087_c0001] OTP <= 30 Minutes Primary and Broker
+[p087_c0002] Desired trend
+> [p087_c0003] Month Primary <= 30 Mins Goal Broker <= 30 Mins Oct-20 98% 94% 97% Nov-20 98% 94% 98% Dec-20 98% 94% 98% Jan-21 99% 94% 98% Feb-21 97% 94% 94% Mar-21 98% 94% 95% Apr-21 96% 94% 95% May-21 94% 94% 95% Jun-21 92% 94% 94% Jul-21 92% 94% 89% Aug-21 92% 94% 90% Sep-21 90% 94% 87% Oct-21 91% 94% 83% Legend: Primary <= 30 Mins (blue line), Goal (grey line), Broker <= 30 Mins (black line) Chart 3
+### [p087_c0004] OTP <= 15 Minutes Primary and Broker
+[p087_c0005] Desired trend
+> [p087_c0006] Month Primary <= 15 Mins Goal Broker <= 15 Mins Oct-20 91% 85% 90% Nov-20 92% 85% 92% Dec-20 91% 85% 90% Jan-21 94% 85% 91% Feb-21 90% 85% 81% Mar-21 90% 85% 82% Apr-21 88% 85% 82% May-21 84% 85% 79% Jun-21 80% 85% 74% Jul-21 81% 85% 72% Aug-21 80% 85% 70% Sep-21 77% 85% 71% Oct-21 78% 85% 67% Legend: Primary <= 15 Mins (blue line), Goal (grey line), Broker <= 15 Mins (black line) Chart 4
+### [p087_c0007] <= 30 Minutes Pick Up On-Time Performance Discussion
+- [p087_c0008] • October 2021 Primary 30 minute P/U, OTP result of 91% improved by 1 percentage points when compared to September 2021, and declined by 7 percentage points when compared to October 2020. • October 2021 Broker 30 minute P/U, OTP result of 83% declined by 4 percentage points when compared to September 2021, and declined by 15 percentage points when compared to October 2020.
+### [p087_c0009] <= 15 Minutes Pick Up On-Time Performance Discussion
+- [p087_c0010] • October 2021 Primary 15 minute P/U, OTP result of 78% improved by 1 percentage point when compared to September 2021, and declined by 13 percentage points when compared to October 2020. • October 2021 Broker 15 minute P/U, OTP result of 67% declined by 4 percentage points when compared to September 2021, and declined by 23 percentage points when compared to October 2020.
+[p087_c0011] _Master Page # 87 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 88
+
+### [p088_c0001] Ride Time Variance Performance: Actual Trip Duration vs. Planned Trip Duration
+> [p088_c0002] Month At or better than plan 100 to 125% of plan 125 to 150% of plan 150 to 200% of plan over 200% of plan Oct-20 87% 5% 3% 3% 2% Nov-20 87% 5% 3% 3% 2% Dec-20 88% 5% 3% 3% 1% Jan-21 89% 5% 3% 2% 1% Feb-21 87% 6% 4% 2% 1% Mar-21 87% 5% 4% 3% 1% Apr-21 86% 6% 4% 3% 1% May-21 85% 6% 4% 4% 1% Jun-21 83% 6% 5% 4% 2% Jul-21 81% 6% 5% 5% 3% Aug-21 82% 6% 5% 4% 3% Sep-21 79% 7% 6% 5% 3% Oct-21 77% 8% 7% 5% 3% Legend: At or better than plan (green), 100 to 125% of plan (orange), 125 to 150% of plan (yellow), 150 to 200% of plan (purple), over 200% of plan (red) Chart 7
+### [p088_c0003] Average Actual Trip Duration in Minutes
+[p088_c0004] Desired trend
+> [p088_c0005] Month Average Actual Trip Duration (Minutes) Oct-20 29 Nov-20 28 Dec-20 28 Jan-21 26 Feb-21 28 Mar-21 29 Apr-21 29 May-21 31 Jun-21 33 Jul-21 34 Aug-21 34 Sep-21 37 Oct-21 38 Chart 8
+### [p088_c0006] Ride Time Variance Performance: Actual Trip Duration vs. Planned Trip Duration Discussion
+- [p088_c0007] 77% of trips in October 2021 performed within the scheduled time or better which declined by 2 percentage points when compared to September 2021, and declined by 10 percentage points when compared to October 2020.
+### [p088_c0008] Average Actual Trip Duration in Minutes Discussion
+- [p088_c0009] Actual Trip Duration in October 2021 increased 1 minute (or 2.7%) when compared to September 2021, and increased by 9 minutes (or 31.0%) when compared to October 2020.
+[p088_c0010] Note: Percentages may not be exact due to rounding.
+[p088_c0011] _Master Page # 88 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 89
+
+### [p089_c0001] Max Ride Time Performance
+[p089_c0002] Desired trend
+> [p089_c0003] The chart displays the percentage of trips completed within the Max Ride Time parameters for two categories: Primary and Broker. The Y-axis represents the percentage, ranging from 88% to 100% in 2% increments. The X-axis shows the months from October 2020 to October 2021. The Broker performance (black line) remains consistently at 99% throughout the period. The Primary performance (blue line) starts at 99% in October 2020 and remains flat until August 2021. In September 2021, it drops to 98%, and in October 2021, it remains at 98%. A text box in the center provides details on the Max Ride Time parameters for different distance ranges. Month Primary (%) Broker (%) Oct-20 99% 99% Nov-20 99% 99% Dec-20 99% 99% Jan-21 99% 99% Feb-21 99% 99% Mar-21 99% 99% Apr-21 99% 99% May-21 99% 99% Jun-21 99% 99% Jul-21 99% 99% Aug-21 99% 99% Sep-21 98% 99% Oct-21 98% 99% 0 up to 3 miles: max ride time is 50 minutes >3 up to 6 miles: max ride time is 65 minutes >6 up to 9 miles: max ride time is 95 minutes >9 up to 12 miles: max ride time is 115 minutes >12 up to 14 miles: max ride time is 135 minutes >14 miles: max ride time is 155 minutes Legend: Primary (blue line), Broker (black line) Chart 9
+### [p089_c0004] Max Ride Time Performance Discussion
+- [p089_c0005] • In the month of October 2021, 98% of Primary trips were completed within the Max Ride Time parameters. Performance remained flat compared to September 2021 and declined 1% compared to October 2020. • In the month of October 2021, 99% of Broker trips were completed within the Max Ride Time parameters. Performance remained flat when compared to September 2021 and October 2020.
+[p089_c0006] _Master Page # 89 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 90
+
+### [p090_c0001] Provider No Shows Per 1,000 Scheduled Trips
+[p090_c0002] Desired trend
+> [p090_c0003] Chart 11 Data: Month Primary Broker Goal Oct-20 0.76 0.48 3.00 Nov-20 0.69 0.45 3.00 Dec-20 1.13 0.41 3.00 Jan-21 0.32 0.42 3.00 Feb-21 0.60 0.92 3.00 Mar-21 0.74 1.19 3.00 Apr-21 1.05 0.80 3.00 May-21 1.88 2.77 3.00 Jun-21 3.55 6.64 3.00 Jul-21 3.31 5.45 3.00 Aug-21 4.23 2.85 3.00 Sep-21 6.60 6.31 3.00 Oct-21 4.68 6.07 3.00 Legend: Primary (Blue line), Broker (Black line), Goal (Grey line at 3.00)
+### [p090_c0004] Provider No Shows Per 1000 Scheduled Trips Discussion
+- [p090_c0005] Primary No-Shows decreased by 1.92 per 1,000 trips (or -29.1%) in October 2021 when compared to September 2021, and increased by 3.9 per 1,000 trips (or 515.8%) when compared to the same month last year. Broker No-Shows decreased by 0.24 per 1,000 trips (or -3.8%) in October 2021 when compared to September 2021, and increased by 5.59 per 1,000 trips (or 1,164.6%) when compared to the same month last year.
+[p090_c0006] _Master Page # 90 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 91
+
+### [p091_c0001] Passenger Complaints Related to Transportation Service Quality Per 1,000 Completed Trips
+> [p091_c0002] Chart 12 Month Service Delivery Vehicles Drivers Series4 Total Oct-20 0.8 0.6 0.1 0.0 1.5 Nov-20 0.8 0.6 0.0 0.0 1.4 Dec-20 0.8 0.6 0.1 0.0 1.5 Jan-21 0.7 0.5 0.1 0.0 1.3 Feb-21 1.5 0.7 0.1 0.0 2.3 Mar-21 1.3 0.4 0.0 0.0 1.7 Apr-21 1.9 0.7 0.0 0.0 2.6 May-21 3.0 0.7 0.0 0.0 3.7 Jun-21 6.6 0.6 0.2 0.0 7.4 Jul-21 6.5 0.5 0.1 0.0 7.1 Aug-21 4.6 0.5 0.2 0.0 5.3 Sep-21 5.9 0.4 0.1 0.0 6.4 Oct-21 6.6 0.4 0.1 0.0 7.1
+### [p091_c0003] Passenger Complaints Related to Non-Transportation Service Quality Per 1,000 Completed Trips
+> [p091_c0004] Chart 13 Month Service Delivery Vehicles Drivers Series4 Total Oct-20 1.0 0.0 0.0 0.0 1.0 Nov-20 0.9 0.0 0.0 0.0 0.9 Dec-20 1.0 0.0 0.0 0.0 1.0 Jan-21 1.0 0.0 0.0 0.0 1.0 Feb-21 1.3 0.0 0.0 0.0 1.3 Mar-21 1.0 0.0 0.0 0.0 1.0 Apr-21 1.2 0.0 0.0 0.0 1.2 May-21 1.4 0.0 0.0 0.0 1.4 Jun-21 2.4 0.0 0.0 0.0 2.4 Jul-21 3.3 0.0 0.0 0.0 3.3 Aug-21 3.0 0.0 0.0 0.0 3.0 Sep-21 4.0 0.0 0.0 0.0 4.0 Oct-21 3.8 0.0 0.0 0.0 3.8
+### [p091_c0005] Passenger Complaints Related to Transportation Service Quality Per 1,000 Completed Trips Discussion
+- [p091_c0006] The total Passenger Complaints related to Transportation Service in October 2021 increased by 0.7 per 1,000 trips (or 10.9%) when compared to September 2021, and increased by 5.6 per 1,000 trips (or 373.3%) when compared to October 2020.
+### [p091_c0007] Passenger Complaints Related to Non-Transportation Service Quality Per 1,000 Completed Trips Discussion:
+- [p091_c0008] Passenger Complaints related to Non-Transportation Service in October 2021 decreased by 0.2 per 1,000 trips (or -5.0%) when compared to September 2021, and increased by 2.8 per 1,000 trips (or 280.0%) when compared to October 2020.
+[p091_c0009] Note: Monthly totals may not be exact due to rounding.
+[p091_c0010] _Master Page # 91 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 92
+
+### [p092_c0001] Percent of Calls Answered
+[p092_c0002] Desired trend
+> [p092_c0003] Month Percent of Calls Answered Oct-20 96% Nov-20 95% Dec-20 96% Jan-21 97% Feb-21 98% Mar-21 97% Apr-21 96% May-21 92% Jun-21 78% Jul-21 86% Aug-21 90% Sep-21 87% Oct-21 87% Chart 14
+### [p092_c0004] Average Call Answer Speed in Seconds
+[p092_c0005] Desired trend
+> [p092_c0006] Month Average Call Answer Speed (Seconds) Oct-20 45 Nov-20 58 Dec-20 48 Jan-21 25 Feb-21 24 Mar-21 29 Apr-21 51 May-21 102 Jun-21 344 Jul-21 233 Aug-21 157 Sep-21 219 Oct-21 200 Chart 15
+### [p092_c0007] Percent of Calls Answered Discussion
+- [p092_c0008] The Percent of Calls Answered in October 2021 remained the same when compared to September 2021, and declined by 9 percentage points when compared to October 2020.
+### [p092_c0009] Average Call Answer Speed in Seconds Discussion
+- [p092_c0010] The Average Call Answer Speed in October 2021 decreased by 19 seconds (or 9.0%) when compared to September 2021, and increased by 155 seconds (or 344.0%) when compared to October 2020.
+[p092_c0011] _Master Page # 92 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 93
+
+### [p093_c0001] Strategy and Customer Experience
+[p093_c0002] Sarah Meyer, Chief Customer Officer
+> [p093_c0003] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+> [p093_c0004] A photograph of four people standing in front of a subway station sign. The sign reads "Newkirk Avenue-Little Haiti Station" and "Manhattan & The Bronx" with red and green circles containing the numbers "2" and "5". The people are dressed in business attire and safety vests. The background shows a city street with buildings and trees.
+[p093_c0005] The Strategy and Customer Experience team coordinated our second subway station renaming in as many years. On November 18, MTA held the official renaming ceremony for Brooklyn's Newkirk Avenue-Little Haiti 2 5 Station. The station is found in the Little Haiti Business and Cultural District, which, designated in 2018 by the City Council, serves as the center of Haitian-American life and culture. The proposal to rename the station is a result of legislation included in the 2021-2022 FY Enacted New York State Budget sponsored by Assembly Member Rodneyse Bichotte Hermelyn and State Senator Kevin Parker, who both represent the neighborhood in Brooklyn.
+[p093_c0006] _Master Page # 93 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 94
+
+### [p094_c0001] Customer engagement
+[p094_c0002] 12-month rolling averages through 5/21, throughout this section, reflect the very unusual travel levels and customer service needs between March and June 2020.
+### [p094_c0003] Telephone
+[p094_c0004]
+
+```text
+Nov 2021 Nov 2020 Variance Telephone calls 48,232 41,522 ▲ 16.2% Calls answered 72.4% 88.1% ▼ 17.8% Average time to answer 1 (seconds) 430 99 ▲ 334.3%
+```
+- [p094_c0005] 1. Excludes automated self-service calls 2. Feedback is customers calling with comments or concerns
+> [p094_c0006] Telephone Call Distribution Category Percentage Travel Information ~45% MetroCard ~15% Feedback ~10% Lost & Found ~5% Reduced Fare ~25%
+### [p094_c0007] Telephone: calls received and answered
+> [p094_c0008] Telephone: calls received and answered Date Calls received (per day) Calls answered (%) 11/20 ~1400 90.4% 12/20 ~1600 ~90% 1/21 ~1400 ~88% 2/21 ~1500 ~88% 3/21 ~1600 ~88% 4/21 ~1500 ~85% 5/21 ~1500 ~85% 6/21 ~1500 ~85% 7/21 ~1500 ~75% 8/21 ~1500 ~70% 9/21 ~1500 ~65% 10/21 ~1600 ~75% 11/21 ~1600 80.4%
+### [p094_c0009] Telephone: average time to answer
+> [p094_c0010] Telephone: average time to answer Date Average time to answer (sec) 11/20 137.6 12/20 ~50 1/21 ~50 2/21 ~50 3/21 ~50 4/21 ~100 5/21 ~250 6/21 ~230 7/21 ~350 8/21 ~430 9/21 ~580 10/21 ~350 11/21 256.6
+[p094_c0011] _Master Page # 94 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 95
+
+### [p095_c0001] Customer engagement
+### [p095_c0002] Help Point
+[p095_c0003]
+
+```text
+Nov 2021 Nov 2020 Variance Help Point activations 47,530 40,948 ▲ 16.1% Average time to answer (seconds) 14.1 11.7 ▲ 20.3%
+```
+> [p095_c0004] Help Point Categories Category Percentage MetroCard ~75% Travel Information ~15% Emergency ~5% Other / Uncategorized ~5%
+### [p095_c0005] Help Point: activations and average time to answer
+> [p095_c0006] Help Point Data (11/20 - 11/21) Date Activations (per day) Avg. time to answer (sec.) 11/20 ~1300 11.2 12/20 ~1500 ~11.5 1/21 ~1200 ~11.8 2/21 ~1100 ~12.0 3/21 ~1150 ~12.2 4/21 ~1300 ~12.5 5/21 ~1350 ~12.8 6/21 ~1300 ~13.5 7/21 ~1350 ~13.8 8/21 ~1300 ~13.5 9/21 ~1400 ~14.0 10/21 ~1350 ~13.8 11/21 ~1450 13.1
+### [p095_c0007] Social media
+[p095_c0008]
+
+```text
+Nov 2021 Nov 2020 Variance Social media mentions 1 36,685 23,663 ▲ 55.0% Responses sent 13,225 8,144 ▲ 62.4% Customer satisfaction score 2 3.83 3.76 ▲ 1.9%
+```
+- [p095_c0009] 1. Social media mentions include Tweets, Facebook posts, and comments 2. Customers were asked How would you rate your experience on Twitter with NYCT Subway? using a scale of 1 to 5
+> [p095_c0010] Social Media Mention Categories Category Percentage Real-Time Service 67% MetroCard/AFC 11% Stations 4% Lost and Found 4% Employee 3% Safety 3% Cleanliness 3% Homeless 3% Crime 2% Planned Work 2%
+> [p095_c0011] Social Media Data (11/20 - 11/21) Date Mentions (per day) Responses (per day) Customer satisfaction score 11/20 ~800 ~250 ~3.9 12/20 ~900 ~280 ~4.0 1/21 ~700 ~220 ~4.1 2/21 ~1300 ~300 ~4.0 3/21 ~700 ~220 ~3.8 4/21 ~800 ~220 ~3.6 5/21 ~900 ~280 ~3.7 6/21 ~1000 ~350 ~3.8 7/21 ~1050 ~350 ~3.9 8/21 ~1100 ~400 ~3.8 9/21 ~1500 ~550 ~4.0 10/21 ~1300 ~500 ~4.0 11/21 ~1200 ~450 ~3.9
+[p095_c0012] _Master Page # 95 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 96
+
+### [p096_c0001] Customer engagement
+### [p096_c0002] Web, mobile app, and written feedback
+[p096_c0003]
+
+```text
+Nov 2021 Nov 2020 Variance Received 7,893 3,447 ▲129.0% Responses sent 1 10,830 5,264 ▲105.7%
+```
+[p096_c0004] 1. Includes automated and manual responses
+> [p096_c0005] Customer Engagement Channels Channel Color Travel information Green Other Grey MetroCard Yellow Employees Blue Service Orange Facilities and Vehicles Pink
+### [p096_c0006] Keeping customers informed
+### [p096_c0007] Alerts and service notices
+[p096_c0008]
+
+```text
+Nov 2021 Web 4,081 Twitter 4,267 Kiosks / Digital Displays 1 5,009 Email and text alerts • Service 4,298 • Elevator and escalator status 6,932 Service Notice posters developed 370
+```
+[p096_c0009] 1. Excludes countdown clocks
+### [p096_c0010] Social media followers
+[p096_c0011]
+
+```text
+Nov 2021 Nov 2020 Variance Twitter @NYCTSubway 1,009.1k 1,011.0k ▼0.2% @NYCTBus 32.1k 30.7k ▲4.6% @MTA 1,321.1k 1,325.8k ▼0.4% Facebook MTA 155.6k 155.8k ▼0.1% Instagram @mtanyctransit 48.4k 35.8k ▲35.2%
+```
+[p096_c0012] _Master Page # 96 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 97
+
+### [p097_c0001] Customer feedback
+[p097_c0002] These complaint metrics include COVID-19-related customer concerns and service reports in the context of substantially lower ridership.
+### [p097_c0003] Complaints per 100,000 journeys
+[p097_c0004]
+
+```text
+Nov 2021 Nov 2020 Variance Subway 3.51 4.35 ▼19.3% Bus 12.20 10.46 ▲16.6% MetroCard 0.22 0.26 ▼17.6% Access-A-Ride 1,109.3 228.3 ▲385.9% Non-service issues 1 0.168 0.216 ▼22.1%
+```
+### [p097_c0005] Commendations per 100,000 journeys
+[p097_c0006]
+
+```text
+Nov 2021 Nov 2020 Variance Subway 0.091 0.160 ▼43.2% Bus 0.55 0.50 ▲11.2% Access-A-Ride 65.2 89.4 ▼27.1% Non-service issues incl. MetroCard 0.012 0.035 ▼66.5%
+```
+[p097_c0007] _1. Includes customer experiences related to agency-wide information channels, property, policies, and other actionable, but non-subway or bus service-related issues._
+### [p097_c0008] Complaints per 100,000 journeys: trends
+> [p097_c0009] The figure consists of five vertically stacked line charts, each representing a different category of customer feedback. The x-axis for all charts represents time from November 2020 to November 2021. The y-axis represents the number of complaints per 100,000 journeys. Each chart includes a solid line with markers representing the actual data and a dashed line representing the 12-month rolling average. The charts are labeled as follows: Subway: Actual data (solid blue line) starts at 4.06 and ends at 4.09. The 12-month rolling average (dashed black line) is relatively stable around 4.0. Bus: Actual data (solid green line) starts at 9.87 and ends at 11.59. The 12-month rolling average (dashed black line) is relatively stable around 11. MetroCard: Actual data (solid yellow line) starts at 0.23 and ends at 0.26. The 12-month rolling average (dashed black line) is relatively stable around 0.25. Access-A-Ride: Actual data (solid purple line) starts at 315.9 and ends at 687.2. The 12-month rolling average (dashed black line) is relatively stable around 400. Non-service issues: Actual data (solid orange line) starts at 0.21 and ends at 0.195. The 12-month rolling average (dashed black line) is relatively stable around 0.25. Legend: --- 12-month rolling average
+[p097_c0010] _Master Page # 97 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 98
+
+### [p098_c0001] Safety
+[p098_c0002] Robert Diehl
+[p098_c0003] Senior Vice President, Safety & Security
+> [p098_c0004] A photograph showing a yellow Hyundai forklift in the foreground. To the right of the forklift, a man wearing a blue jacket, a high-visibility orange and yellow safety vest, a black face mask, and black boots is standing and looking at a small notebook or clipboard. The forklift has the word "HYUNDAI" printed on its front. In the background, there is a light-colored brick building with a blue door and a yellow bollard. The ground is paved and appears to be an outdoor industrial or depot area.
+[p098_c0005] _System Safety Specialist Daniel Brodmerkel inspects a forklift at Eastchester Bus Depot._
+[p098_c0006] _Master Page # 98 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 99
+
+### [p099_c0001] Safety
+[p099_c0002] Robert Diehl, Senior Vice President, Safety & Security
+[p099_c0003] Subway Customer Accident Rates increased when comparing the most recent 12-month period to the previous one.
+[p099_c0004] Bus Collisions, Customer Accidents and Injuries increased when comparing the most-recent 12-month period to the previous one.
+[p099_c0005] Employee Lost Time Accidents have shown a decrease when comparing the most recent 12-month period to the previous one.
+[p099_c0006] When comparing figures from the two (2) most-recent 12-month periods, Subway Fires increased.
+[p099_c0007] The most-recent data on incidents of assaults and harassment within the Transit system are displayed in this report below.
+[p099_c0008] _Master Page # 99 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 100
+
+### [p100_c0001] Monthly Operations Report
+[p100_c0002] Statistical results for the 12-Month period are shown below
+[p100_c0003]
+
+```text
+Safety Report Performance Indicators 12-Month Average Dec 18 - Nov 19 Dec 19 - Nov 20 Dec 20 - Nov 21 Subways Subway Customer Accidents per Million Customers 1 2.95 3.85 4.48 Subway Collisions 2 Total 1 2 3 Mainline 0 0 0 Yard 1 2 3 Subway Derailements 2 Total 5 10 10 Mainline 1 5 0 Yard 4 5 10 Subway Fires 2 699 884 1,016 Buses Bus Collisions Per Million Miles Regional 54.42 42.39 51.32 Bus Collision Injuries Per Million Miles Regional 6.11 4.70 5.32 Bus Customer Accidents Per Million Customers 1 Regional* 1.49 1.62 1.94 Total NYCT and MTA Bus Lost Time Accidents per 100 Employees 1 4.23 5.29 4.74
+```
+[p100_c0004] 1 12-month Average data from November through October.
+[p100_c0005] 2 12-month figures shown are totals rather than averages.
+[p100_c0006] * = Due to the implementation of rear door boarding and suspension of fare collection to protect frontline employees from the spread of COVID-19, AFC (MetroCard and OMNY) was not used from March 23, 2020, to August 30, 2020, to determine ridership. During this time, ridership was estimated using Automated Passenger Counter (APC) data.
+[p100_c0007]
+
+```text
+Leading Indicators Subways November YTD Goal YTD as % of Goal Roadway Worker Protection Joint Track Safety Audits -- Actual Count 20 314 340 92.4% Joint Track Safety Audits -- Compliance Rate 99.3% 99.4% 100.0% 99.4% Mainline Collision/Derailement Prevention Continuous Welded Rail Initiative (# of Track Feet) 3,805 26,516 9,999 265.2% Friction Pad Installation 2,836 23,396 22,000 106.3% Buses November YTD Goal YTD as % of Goal Collision Prevention Audible Pedestrian Turn Warning System 40 320 780 41.0% Vision Zero Employee Training 442 5,111 5,800 88.1%
+```
+[p100_c0008] _Master Page # 100 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 101
+
+### [p101_c0001] Monthly Operations Report
+### [p101_c0002] Safety Report Definitions:
+[p101_c0003] Joint Track Safety Audits are conducted by a joint team of personnel from the Office of System Safety, the Transport Workers Union, and the Subway Surface Supervisors Association (SSSA). The teams look at critical items for on-track safety such as flagging, third rail safety and lighting. These reviews are conducted at various Department of Subways, and MTA Construction & Development work sites along the right of way to assess compliance with the rules and procedures, identify deficiencies in training and equipment, and improve on-track safety.
+[p101_c0004] Continuous Welded Rail (CWR) significantly reduces the number of rail joints, which lessens the occurrence of broken rails while also providing a smoother ride. Track Engineering analyzed system-wide broken rail data and set forth a CWR installation plan to help reduce broken rails and improve track conditions. We anticipate expanded use of the Critter Rail Stringer and "E" Clip installer to help us achieve this goal.
+[p101_c0005] Friction Pad Installations will increase resiliency of the rail, resulting in reduced broken rail incidents and, overall, will reduce the potential for development of rail defects.
+[p101_c0006] Audible Pedestrian Warning System technology produces an audible voice alert to pedestrians when a bus is making a left- or a right-hand turn. The system turns on automatically without a bus operator's intervention and alerts pedestrians with a street- and curb-side speaker. Volume automatically adjusts based on outside ambient noise.
+[p101_c0007] Vision Zero Training provides focused Safety Awareness Training to all Bus Operators, which engages them on all aspects of Pedestrian Safety issues, emphasizing the current challenges of managing their buses in an environment with distracted pedestrians, motorists and cyclists. The program incorporates testimonial videos from "Families for Safer Streets" along with a series of videos of serious bus and pedestrian accidents secured from onboard bus cameras as well as external traffic and security cameras. The training, which will be delivered over two years, is in the midst of a new cycle that began in April 2019 and will run through March 2021.
+[p101_c0008] _Master Page # 101 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 102
+
+### [p102_c0001] Subway Fires November 2021
+[p102_c0002] Fire severity is classified as follows:
+[p102_c0003]
+
+```text
+Severity Criteria Low No disruption to service No damage to NYC Transit property No reported injuries No discharge/evacuation of passengers Fire self-extinguished or extinguished without Fire Department Average Delays to service 15 minutes or less Minor damage to NYC Transit property (no structural damage) No reported injuries/fatalities due to fire/smoke Discharge of passengers in station Minor residual smoke present (haze) Above Average Delays to service greater than 15 minutes Moderate to heavy damage to NYC Transit property Four or less injuries due to fire/smoke Discharge of train or transfer of passengers to another train (not in station) Station/platform/train filled with smoke High Major delays in service (over one hour) Major structural damage Five or more reported injuries or one or more fatalities Evacuation of passengers to benchwall or roadbed Mass evacuation of more than one train
+```
+[p102_c0004] Severity & Location of fires during the current month were as follows:
+[p102_c0005]
+
+```text
+Low: 91.0% Train: 17 Average: 9.0% Right-of-way: 40 Above Average: 0.0% Station: 21 High: 0.0% Other: 0 Total: 78
+```
+[p102_c0006] Top Items Burnt by Location during the current month were as follows:
+[p102_c0007]
+
+```text
+Train: Right-of-Way: Station: Debris: 6 Debris: 32 Debris: 18 Brake Shoes: 2 Tie: 5 Electrical: 1 Hot Volt Wiring: 2 Underdetermined: 2 Oil: 1 Hot Wheels: 2 Material: 1 Trolley Lead: 1
+```
+[p102_c0008] _Master Page # 102 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 103
+
+> [p103_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a blue circle.
+### [p103_c0002] December 2021 Crime Report
+[p103_c0003] The purpose of this report is to provide Committee Members with statistical information regarding the number of major felonies including: homicide, robbery, assault, rape in addition to hate crime incidents occurring in the NYCT Subway system. The report is submitted by NYPD's Transit Bureau on a monthly basis for the month ending prior to the reporting period. The report also includes statistics on employee assaults and harassment as well as vandalism, compiled by the NYCT Department of Safety and Security.
+[p103_c0004] _Master Page # 103 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 104
+
+### [p104_c0001] Weekly number of incidents of assault and harassment against transit workers
+[p104_c0002] Below are updated data and statistics on different aspects of our transit system. This page provides recent data on assaults and harassment against our employees.
+[p104_c0003] Updated December 1, 2021
+[p104_c0004] The safety of our workforce and our customers is our top priority. We are hopeful that increased transparency about the number of these incidents in our system will keep everyone safer and more vigilant.
+[p104_c0005] We plan to update the page weekly with the prior week's figures. Each week's update will be based on verified incidents as of the report date. Data for prior weeks may change as additional incidents are verified.
+[p104_c0006] # of incidents of assault & harassment against transit employees by week (Last 6 Months)
+[p104_c0007]
+
+```text
+Week beginning Assault: Subways Assault: Buses Harassment: Subways Harassment: Buses Total 11/22/2021 2 2 5 42 51 11/15/2021 1 0 6 36 43 11/8/2021 1 0 6 43 50 11/1/2021 2 4 8 29 43 10/25/2021 0 3 12 27 42 10/18/2021 1 0 3 51 55 10/11/2021 0 4 6 51 61 10/4/2021 3 3 13 36 55 9/27/2021 1 1 12 39 53 9/20/2021 0 3 7 35 45 9/13/2021 1 0 4 40 45 9/6/2021 4 2 9 24 39 8/30/2021 2 1 8 31 42 8/23/2021 0 1 9 32 42 8/16/2021 0 3 6 41 50 8/9/2021 0 2 6 38 46 8/2/2021 0 1 9 22 32 7/26/2021 0 0 7 43 50 7/19/2021 0 1 14 28 43 7/12/2021 1 3 5 30 39 7/5/2021 2 0 8 31 41 6/28/2021 2 0 12 44 58 6/21/2021 1 3 9 30 43 6/14/2021 0 1 5 36 42 6/7/2021 1 1 8 44 54
+```
+[p104_c0008] _Master Page # 104 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 105
+
+### [p105_c0001] Weekly number of incidents of vandalism in the transit system
+[p105_c0002] Below are updated data and statistics on different aspects of our transit system. This page provides recent New York City Transit data on vandalism of select elements of the transit system.
+[p105_c0003] Source: https://new.mta.info/safety-and-security/nyct-vandalism-data (Updated December 1, 2021)
+[p105_c0004] Vandalism is costly to the MTA and to taxpayers, and can in some cases also lead to a safety issue. We are hopeful that increased transparency about vandalism incidents in our system will keep everyone safer and more vigilant.
+[p105_c0005] We plan to update the page weekly with the prior week's figures. Each week's update will be based on verified incidents as of the report date. Data for prior weeks may change as additional incidents are verified.
+### [p105_c0006] # of units vandalized by week and component (Last 6 Months)
+[p105_c0007]
+
+```text
+Week beginning Graffiti: Subways Graffiti: Buses Liquid Crystal Display (LCD) Screen Metrocard Vending Machine (MVM) OMNY Reader Train Glass Bus Glass Total 11/22/2021 16 0 0 0 0 5 3 24 11/15/2021 27 1 1 0 0 3 0 32 11/8/2021 12 0 1 3 0 6 0 22 11/1/2021 25 0 3 0 0 6 1 35 10/25/2021 16 0 2 1 0 3 1 23 10/18/2021 24 0 1 1 0 5 5 36 10/11/2021 15 1 2 0 0 9 3 30 10/4/2021 7 0 5 1 3 4 2 22 9/27/2021 9 0 6 0 0 9 4 28 9/20/2021 20 0 15 0 5 4 4 48 9/13/2021 7 0 3 1 0 4 0 15 9/6/2021 11 0 6 1 0 4 3 25 8/30/2021 4 0 4 0 0 6 6 20 8/23/2021 9 0 3 4 0 3 0 19 8/16/2021 20 0 0 4 0 4 0 28 8/9/2021 19 0 4 0 0 4 2 29 8/2/2021 27 0 1 0 0 4 2 34 7/26/2021 4 0 3 8 0 12 3 30 7/19/2021 11 0 1 7 0 13 0 32 7/12/2021 15 0 4 1 1 8 2 31 7/5/2021 18 0 2 1 0 8 6 35 6/28/2021 13 0 0 0 0 11 0 24 6/21/2021 3 0 2 6 0 17 1 29 6/14/2021 27 0 8 0 0 2 4 41 6/7/2021 16 0 2 0 2 4 1 25
+```
+[p105_c0008] _Master Page # 105 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 106
+
+[p106_c0001] Police Department City of New York
+### [p106_c0002] MTA Report
+### [p106_c0003] CRIME STATISTICS NOVEMBER
+[p106_c0004]
+
+```text
+2021 2020 Diff % Change MURDER 1 0 1 ***. *% RAPE 0 1 -1 -100.0% ROBBERY 88 39 49 125.6% GL 103 46 57 123.9% FELASSAULT 40 27 13 48.1% BURGLARY 1 1 0 0.0% TOTAL MAJOR FELONIES 235 114 121 106.1%
+```
+[p106_c0005] During November, the daily Robbery average increased from 1.3 to 2.9
+[p106_c0006] During November, the daily Major Felony average increased from 3.8 to 7.8
+### [p106_c0007] CRIME STATISTICS JANUARY THRU NOVEMBER
+[p106_c0008]
+
+```text
+2021 2020 Diff % Change MURDER 6 6 0 0.0% RAPE 4 7 -3 -42.9% ROBBERY 466 534 -68 -12.7% GL 676 747 -71 -9.5% FELASSAULT 423 323 100 31.0% BURGLARY 6 23 -17 -73.9% TOTAL MAJOR FELONIES 1581 1640 -59 -3.6%
+```
+[p106_c0009] Year to date the daily Robbery average decreased from 1.6 to 1.4
+[p106_c0010] Year to date the daily Major Felony average decreased from 4.9 to 4.7
+[p106_c0011] FIGURES ARE PRELIMINARY AND SUBJECT TO FURTHER ANALYSIS AND REVISION
+[p106_c0012] _Master Page # 106 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021 Page 1 of 2_
+
+## Page 107
+
+> [p107_c0001] The logo of the New York City Police Department, featuring a shield with a central emblem, the words "POLICE DEPARTMENT" at the top, and "CITY OF NEW YORK" at the bottom.
+[p107_c0002] Police Department City of New York
+### [p107_c0003] MTA Report
+### [p107_c0004] NOVEMBER ACTIVITY
+[p107_c0005]
+
+```text
+2021 2020 Diff % Change Total Arrests 573 244 329 134.8% TOS Arrests 93 25 68 272.0% Total Summons 5986 3365 2621 77.9% TOS TABs 4720 2868 1852 64.6% TOS C-Summ 75 45 30 66.7%
+```
+### [p107_c0006] JANUARY THRU NOVEMBER ACTIVITY
+[p107_c0007]
+
+```text
+2021 2020 Diff % Change Total Arrests 5472 3586 1886 52.6% TOS Arrests 940 458 482 105.2% Total Summons 69563 33920 35643 105.1% TOS TABs 56759 22960 33799 147.2% TOS C-Summ 891 516 375 72.7%
+```
+[p107_c0008] FIGURES ARE PRELIMINARY AND SUBJECT TO FURTHER ANALYSIS AND REVISION
+[p107_c0009] _Master Page # 107 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021 Page 2 of 2_
+
+## Page 108
+
+### [p108_c0001] Hate Crime Task Force Transit Bureau HCTF Statistical Data (As of 11/30/2021)
+### [p108_c0002] Motivation:
+[p108_c0003]
+
+```text
+Motivation 2021 2020 Diff % Change ASIAN 30 9 21 233% BLACK 4 3 1 33% ETHNIC 3 0 3 *** * GENDER 5 6 -1 -17% HISPANIC 2 0 2 *** * JEWISH 14 22 -8 -36% MUSLIM 1 0 1 *** * SEXUAL ORIENTATION 17 5 12 240% WHITE 8 2 6 300% Grand Total 84 47 37 +79%
+```
+### [p108_c0004] Crime Name:
+[p108_c0005]
+
+```text
+Crime Name 2021 2020 Diff % Change Aggravated Harassment 1 10 19 -9 -47% Aggravated Harassment 2 15 7 8 114% Assault 2 10 1 9 900% Assault 3 26 8 18 225% Criminal Mischief 2 0 1 -1 -100% Criminal Mischief 3 3 0 3 100% Criminal Mischief 4 5 6 -1 -17% Forcible Touching 1 0 1 100% Grand Larceny 1 2 0 2 100% Grand Larceny 4 0 1 -1 -100% Making Graffiti 3 0 3 100% Menacing 2 4 1 3 300% Menacing 3 1 1 0 0% Reckless Endangerment 1 1 0 1 100% Robbery 3 1 2 -1 -50% Strangulation 1 2 0 2 100% Grand Total 84 47 37 +79%
+```
+[p108_c0006] _Master Page # 108 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 109
+
+### [p109_c0001] Police Department City of New York
+### [p109_c0002] REPORT
+### [p109_c0003] JANUARY-NOVEMBER
+[p109_c0004]
+
+```text
+1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 Murder 4 1 5 2 2 2 4 3 5 2 4 2 2 1 1 0 1 2 2 2 0 1 3 6 6 Rape 2 14 1 5 2 0 3 3 3 3 1 2 2 1 3 9 5 5 1 0 7 1 3 6 4 Robbery 2066 1720 1530 1260 1107 1137 1041 993 1026 899 724 718 643 644 709 731 559 397 476 433 410 431 485 531 466 Assault 455 394 386 327 250 266 237 254 202 176 188 165 143 178 184 187 180 201 240 287 306 323 326 321 423 Burglary 29 15 10 12 41 15 7 6 1 5 2 5 1 3 8 26 32 18 19 16 25 11 5 23 6 GL 3242 2297 2185 2315 2075 1953 1634 1705 1627 1382 1186 1194 1051 1125 1407 1539 1564 1430 1529 1481 1509 1525 1405 739 676 TOTAL MAJOR FELONIES 5798 4441 4117 3921 3477 3373 2926 2964 2864 2467 2105 2086 1842 1952 2312 2492 2341 2053 2267 2219 2257 2292 2227 1626 1581 Major Fel Per Day 17.36 13.30 12.33 11.74 10.41 10.10 8.76 8.87 8.57 7.39 6.30 6.25 5.51 5.84 6.92 7.46 7.01 6.15 6.79 6.62 6.76 6.86 6.67 4.87 4.73
+```
+[p109_c0005] _Master Page # 109 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 110
+
+### [p110_c0001] METROPOLITAN TRANSPORTATION AUTHORITY Police Department Staten Island Rapid Transit
+### [p110_c0002] November 2021 vs. 2020
+[p110_c0003]
+
+```text
+2021 2020 Diff % Change Murder 0 0 0 0% Rape 0 0 0 0% Robbery 0 0 0 0% Felony Assault 0 0 0 0% Burglary 1 0 1 100% Grand Larceny 0 0 0 0% Grand Larceny Auto 0 0 0 0% Total Major Felonies 1 0 1 100%
+```
+### [p110_c0004] Year to Date 2021 vs. 2020
+[p110_c0005]
+
+```text
+2021 2020 Diff % Change Murder 0 0 0 0% Rape 0 0 0 0% Robbery 0 3 -3 -100% Felony Assault 0 1 -1 -100% Burglary 2 0 2 100% Grand Larceny 0 0 0 0% Grand Larceny Auto 0 0 0 0% Total Major Felonies 2 4 -2 -50%
+```
+[p110_c0006] _FIGURES ARE PRELIMINARY AND SUBJECT TO FURTHER ANALYSIS AND REVISION_
+[p110_c0007] _Master Page # 110 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 111
+
+> [p111_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p111_c0002] New York City Transit Procurements
+[p111_c0003] Louis A. Montanti, MTA Deputy Chief Procurement – Operations
+> [p111_c0004] A photograph of a New York City Transit Authority (NYCTA) bus, model 8710, parked on a gravel lot. The bus is primarily blue with yellow and white stripes along the side. It features a large front windshield, a black front bumper, and a black door frame. The bus number "8710" is visible on the front and side. The MTA logo is also visible on the front. The bus is parked in front of a blue building under a cloudy sky.
+[p111_c0005] This month, MTA Bus Company proposes the award of 135 low-floor, 40-foot diesel buses to Nova Bus (US) Inc. The buses will be very similar to the bus pictured above from an earlier Nova contract and will feature current customer amenities including USB charging ports, Wi-Fi, and customer information screens. In addition, the buses will comply with all regulatory requirements in regards to safety, emissions, and accessibility. This project is funded with a Federal Transit Administration (FTA) grant.
+[p111_c0006] _Master Page # 111 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 112
+
+### [p112_c0001] PROCUREMENTS
+[p112_c0002] The Procurement Agenda this month includes 2 actions for a proposed expenditure of $110.7M.
+[p112_c0003] _Master Page # 112 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 113
+
+[p113_c0001]
+
+```text
+Subject Request for Authorization to Award Various Procurements Department Procurement & Supply Chain – NYCT Department Head Name Louis A. Montanti Department Head Signature Project Manager Name Rose Davis Board Action Order To Date Approval Info Other 1 Committee 12/13/21 2 Board 12/15/21
+```
+[p113_c0002]
+
+```text
+December 8, 2021 Department Department Head Name Department Head Signature Internal Approvals Approval Approval President NYCT Pres. MTA Bus/SVP DOB Acting COO, NYCT X Subways X Capital Prog. Management X Diversity/Civil Rights X Law
+```
+### [p113_c0003] Internal Approvals (cont.)
+[p113_c0004]
+
+```text
+Order Approval Order Approval Order Approval Order Approval
+```
+### [p113_c0005] PURPOSE
+[p113_c0006] To obtain approval of the Board to award various contracts and purchase orders, and to inform the NYC Transit Committee of these procurement actions.
+### [p113_c0007] DISCUSSION
+[p113_c0008] NYC Transit proposes to award Noncompetitive procurements in the following categories: None
+[p113_c0009] MTA Capital Construction proposes to award Noncompetitive procurements in the following categories: None
+[p113_c0010] MTA Bus Company proposes to award Noncompetitive procurements in the following categories: None
+[p113_c0011] NYC Transit proposes to award Competitive procurements in the following categories:
+[p113_c0012]
+
+```text
+Procurements Requiring Two-Thirds Vote: # of Actions $ Amount Schedule C: Competitive Requests for Proposals (Award of Purchase and Public Work Contracts) 1 $ 87.5 M
+```
+### [p113_c0013] Schedules Requiring Majority Vote:
+[p113_c0014]
+
+```text
+Schedule G: Miscellaneous Service Contracts 1 $ 23.2 M SUBTOTAL 2 $ 110.7 M
+```
+[p113_c0015] MTA Capital Construction proposes to award Competitive procurements in the following categories: None
+[p113_c0016] MTA Bus Company proposes to award Competitive procurements in the following categories: None
+[p113_c0017] NYC Transit proposes to award Ratifications in the following categories: None
+[p113_c0018] MTA Capital Construction proposes to award Ratifications in the following categories: None
+[p113_c0019] MTA Bus Company proposes to award Ratifications in the following categories: None
+[p113_c0020]
+
+```text
+SUBTOTAL 2 $ 110.7 M TOTAL 2 $ 110.7 M
+```
+[p113_c0021] _Master Page # 113 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 114
+
+[p114_c0001] COMPETITIVE BIDDING REQUIREMENTS: The procurement actions in Schedules A, B, C, and D are subject to the competitive bidding requirements of PAL 1209 or 1265-a relating to contracts for the purchase of goods or public work. Procurement actions in the remaining Schedules are not subject to these requirements.
+[p114_c0002] BUDGET IMPACT: The purchases/contracts will result in obligating funds in the amounts listed. Funds are available in the current operating/capital budgets for this purpose.
+[p114_c0003] RECOMMENDATION: That the purchases/contracts be approved as proposed. (Items are included in the resolution of approval at the beginning of the Procurement Section.)
+[p114_c0004] _Master Page # 114 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 115
+
+### [p115_c0001] BOARD RESOLUTION
+[p115_c0002] WHEREAS , in accordance with Sections 1265-a and 1209 of the Public Authorities Law and the All-Agency General Contract Procurement Guidelines, the Board authorizes the award of certain noncompetitive purchase and public work contracts, and the solicitation and award of requests for proposals regarding purchase and public work contracts; and
+[p115_c0003] WHEREAS , in accordance with the All-Agency Service Contract Procurement Guidelines and General Contract Procurement Guidelines the Board authorizes the award of certain noncompetitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts, and
+[p115_c0004] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Service Contract Procurement Guidelines, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p115_c0005] NOW, the Board resolves as follows:
+[p115_c0006] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract.
+[p115_c0007] 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals, and authorizes the solicitation of such proposals.
+[p115_c0008] 3. As to each request for proposals (for purchase and public work contracts) set forth in Schedule C for which a recommendation is made to award the contract, the Board authorizes the execution of said contract.
+[p115_c0009] 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein and ratifies each action for which ratification is requested.
+[p115_c0010] 5. The Board authorizes the execution of each of the following for which Board authorization is required: (i) the miscellaneous procurement contracts set forth in Schedule E; (ii) the personal service contracts set forth in Schedule F; (iii) the miscellaneous service contracts set forth in Schedule G; (iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; (v) the contract modifications to purchase and public work contracts set forth in Schedule I; and (vi) the modifications to miscellaneous procurement contracts set forth in Schedule J.
+[p115_c0011] 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p115_c0012] _Master Page # 115 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 116
+
+### [p116_c0001] DECEMBER 2021
+### [p116_c0002] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p116_c0003] Procurements Requiring Two-Thirds Vote:
+### [p116_c0004] C. Competitive Requests for Proposals (Award of Purchase and Public Work Contracts) (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p116_c0005] 1. Nova Bus (US) Inc. $87,454,071 Staff Summary Attached 76 months from Notice of Award Contract # B40673 Furnish and Deliver 135 Low-Floor 40-Foot Diesel Buses.
+### [p116_c0006] Procurements Requiring Majority Vote:
+### [p116_c0007] G. Miscellaneous Service Contracts
+[p116_c0008] (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p116_c0009] 2. Gramercy Park Physical Therapy, P.C. $3,182,120 Staff Summary Attached 3. Feigi Taub Halberstam Audiology & Speech Pathology, P.C. $7,458,620 ↓ 4. Therodynamics Rehab Management, LLC $12,515,664 ↓ ↓
+[p116_c0010] Five years with an option to extend up to two years
+[p116_c0011] Contract #s TBD
+[p116_c0012] Award of three, 5-year estimated quantity miscellaneous service contracts for Eligibility Assessment Services.
+[p116_c0013] _Master Page # 116 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 117
+
+### [p117_c0001] Staff Summary
+### [p117_c0002] Page 1 of 2
+[p117_c0003]
+
+```text
+Item Number 1 Department, Department Head Name: Office of MTA Deputy Chief Procurement, Louis A. Montanti Internal Approvals Order Approval Order Approval 1 Materiel 2 Law 3 CFO 4 DDCR 5 President
+```
+[p117_c0004]
+
+```text
+SUMMARY INFORMATION Vendor Name Nova Bus (US) Inc. Contract No. B40673 Description Furnish and Deliver 135 Low-Floor 40-Foot Diesel Buses Total Amount: $87,454,071 Contract Term (including Options, if any) 76 Months from Notice of Award (inclusive of delivery of the buses and provision of warranty support) Option(s) included in Total Amount? Yes No N/A Renewal? Yes No Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Funding Source Operating Capital Federal Other:
+```
+### [p117_c0005] Purpose
+[p117_c0006] To request that the Board, pursuant to Public Authorities Law, Section 1265-a, subdivision 4(g), approve the federally funded purchase of 135 low-floor 40-foot diesel buses as well as related items such as spare parts, special tools and equipment, technical documentation, and training from Nova Bus (US) Inc. (“Nova”) in the total estimated amount of $87,454,071 for MTA Bus Company (“MTABC”).
+### [p117_c0007] Discussion
+[p117_c0008] On January 21, 2021, the Board adopted a resolution authorizing the use of the competitive Request for Proposals (“RFP”) in lieu of competitive bidding to award a contract for the purchase of 50 low-floor 40-foot diesel buses with an option for an additional 85 buses for MTABC.
+[p117_c0009] The solicitation was advertised in April 2021, at which time eight bus manufacturers were directly contacted. Pursuant to the statutory framework, the selection criteria, listed in descending order, were as follows: Overall Project Cost, Delivery, Overall Quality of Proposer and Product, and Other Relevant Matters. Selection Committee (“SC”) members were drawn from NYC Transit Department of Buses (“DOB”), Procurement, Office of Management & Budget, and Operations Planning.
+[p117_c0010] Two diesel bus manufacturers, New Flyer of America, Inc. (“New Flyer”); and Nova attended the pre-proposal conference held on April 7, 2021. Initial proposals were received on June 2, 2021, from New Flyer and Nova.
+[p117_c0011] Oral Presentations and negotiations were conducted on a series of dates spanning from August 2021 through September 2021. Negotiations centered on pricing, delivery, alternate proposals, exceptions/deviation/clarifications to the technical specifications, and the terms and conditions. During the negotiation period, funding for the option buses became available; due to MTABC’s urgent need for these buses and in an effort to achieve additional savings, Procurement has combined the base and option bus quantities in the request for Best and Final Offers (“BAFOs”).
+[p117_c0012] _Master Page # 117 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 118
+
+### [p118_c0001] Page 2 of 2
+### [p118_c0002] Staff Summary
+[p118_c0003] BAFOs for 135 low-floor 40-foot diesel buses, were received from Nova and New Flyer on November 29, 2021. The SC reviewed the BAFOs in accordance with the evaluation criteria and unanimously recommended an award of the 135 low-floor 40-foot diesel buses to Nova.
+[p118_c0004] The award to Nova will consist of $86,929,200 ($643,920 per bus) for 135 low-floor 40-foot diesel buses; $49,148 for diagnostic tools, and manuals; $344,551 for an estimated thirty-two (32) training classes; and $131,172 for capital spares for a total award amount of $87,454,071, which is $9,303,385 or 9.62 percent below Nova's initial proposal of $96,757,456 and $1,461,618 or 1.64 percent lower than DOB's estimate of $88,915,689. Procurement, DOB, and NYC Transit's Cost Price Analysis Unit have determined the final price to be fair and reasonable.
+[p118_c0005] The 135 buses are scheduled to begin being delivered in November 2022 and be completed in March 2023, for an overall period of 16 months from Notice of Award. The above delivery schedule is based on the assumption that Notice of Award will be issued on or before December 31, 2021.
+[p118_c0006] Nova will comply with the Federal Transit Administration's ("FTA") Buy America requirement of 70 percent.
+[p118_c0007] The contract resulting from this procurement has been evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state, and local law and regulations. Any applicable cybersecurity requirements, to the extent required, have been included in the contract terms and conditions.
+### [p118_c0008] M/W/DBE Information
+[p118_c0009] Transit Vehicle Manufacturers ("TVM") is a program whereby the FTA pre-approves vehicle manufacturers to bid or propose on federally funded vehicle procurements based on established guidelines to ensure Disadvantaged Business Enterprises participation. As this contract will be federally funded, the TVM program applies. Nova has furnished its TVM Certification of Compliance with DBE Regulations in accordance with FTA guidelines.
+### [p118_c0010] Impact on Funding
+[p118_c0011] This contract will be funded with 80 percent FTA funds and 20 percent New York City funds. Funds for this procurement have been approved in the MTA 2015–2019 and 2020–2024 Capital Programs. A WAR certificate will be secured prior to award.
+### [p118_c0012] Alternatives
+[p118_c0013] There are no alternatives. There is no reason to believe that conducting another solicitation will result in a better outcome.
+### [p118_c0014] Recommendation
+[p118_c0015] It is recommended that the Board, pursuant to Public Authorities Law, Section 1265-a, subdivision 4(g), approve the federally funded purchase of 135 low-floor 40-foot diesel buses as well as related items such as spare parts, special tools and equipment, technical documentation, and training from Nova in the total estimated amount of $87,454,071 for MTABC.
+[p118_c0016] _Master Page # 118 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 119
+
+### [p119_c0001] Schedule G: Miscellaneous Service Contracts
+[p119_c0002] Item Numbers: 2-4
+[p119_c0003]
+
+```text
+Vendor Names (Locations) Gramercy Park Physical Therapy, P.C., Floral Park, NY Feigi Taub Halberstam Audiology & Speech Pathology, P.C., d/b/a Omni Rehab, Brooklyn, NY Therodynamics Rehab Management, LLC, Woodbury, NY Description Eligibility Assessment Services for Paratransit and Reduced-Fare Contract Term (including Options, if any): Five years with an option to extend up to two years Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other:
+```
+[p119_c0004]
+
+```text
+Contract Numbers TBD TBD TBD Renewal? Yes No Total Estimated Amount: Base $16,133,768 Options $ 7,022,636 Total $23,156,404 Gramercy Base: $2,267,800; Options: $914,320 Omni Base: $5,184,608; Options: $2,274,012 Therodynamics Base: $8,681,360; Options: $3,834,304 Funding Source Operating Capital Federal Other: Requesting Dept./Div., Dept./Div. Head Name: Department of Buses, Frank Annicaro Department of Operations Support, Michael Ellinas Division of Revenue Control, Maria Cannizzaro
+```
+### [p119_c0005] Discussion:
+[p119_c0006] NYC Transit is seeking Board approval to award three five-year, estimated quantity, miscellaneous service contracts with each including an option to extend the term for up to two additional years, for Eligibility Assessment Services to Gramercy Park Physical Therapy, P.C. ("Gramercy"), Feigi Taub Halberstam Audiology & Speech Pathology, P.C. D/B/A Omni Rehab ("Omni") and Therodynamics Rehab Management, LLC D/B/A Excellence Rehab & Physical Therapy, P.C. ("Therodynamics"), in the combined total estimated amount of $23,156,404 ($16,133,768 for the base awards and $7,022,636 for the option years). The Board is also requested to authorize the Assistant Deputy Chief Procurement Officer, MTA to approve the exercise of these option years if deemed advantageous to the authority once funding becomes available.
+[p119_c0007] NYC Transit provides origin-to-destination, demand responsive, shared-ride paratransit service for disabled individuals who meet the eligibility criteria set forth in the Americans with Disabilities Act. This service is provided through Access-A-Ride, which is managed and operated by the Paratransit Division of the Department of Buses ("Paratransit"). NYC Transit also operates a reduced-fare program managed and operated by the Operations Support, division of Revenue Control, Reduced Fare Unit ("Reduced-Fare"), that complies with all federal and state regulations regarding special-fare programs for senior citizens and persons with specific disabilities. Both Paratransit and Reduced-Fare share these contracts due to similarities in their respective scopes of work. These contracts provide both groups with an independent eligibility recommendation based on an assessment of an applicant's disability and how it may or may not prevent their use of fixed-route transportation. NYC Transit aims to provide assessment centers throughout the five boroughs of New York City. Licensed medical staff (trained by Paratransit's Eligibility Determination Unit) evaluate applicants via an interview and/or performance of a functional assessment and provide a detailed report to the respective division (Paratransit or Reduced Fare) of their findings.
+[p119_c0008] In July 2021, Request for Proposal ("RFP") 354071 was competitively solicited to continue the eligibility assessment process. A pre-proposal teleconference was held August 11, 2021. Procurement conducted an extensive outreach resulting in a total of 17 firms requesting the RFP. On September 10, 2021, five proposals were received: A.G. Urgent Care, P.C., Gramercy, Icahn School of Medicine at Mount Sinai ("Mount Sinai"), Omni, and Therodynamics.
+[p119_c0009] _Master Page # 119 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 120
+
+### [p120_c0001] Schedule G: Miscellaneous Service Contracts
+[p120_c0002] The evaluation criteria for this RFP, listed in descending order of importance, are as follows: Technical Qualifications including Proposer's knowledge and relevant experience, demonstrated ability of proposed project manager and all other key personnel, quality and size of the proposed facilities including location, Proposer's approach to staffing and workload management, proposed start-up, experience of Proposer's past performance on similar work, Proposer's approach to diversity practices, Overall Price, and Other Relevant Matters. The Selection Committee ("SC") members were drawn from Paratransit, Reduced-Fare, the Department of the Chief Financial Officer, and Procurement.
+[p120_c0003] Following the SC's review of written proposals, A.G. Urgent Care, P.C. was eliminated, as it failed to demonstrate that it possessed the experience and resources necessary to perform the work. Oral Presentations were held with the remaining four proposers during September 2021, followed by site visits during the week ending October 8, 2021. After oral presentation and site visits, the SC determined that the remaining proposers, Gramercy, Mount Sinai, Omni and Therodynamics, were technically qualified and were invited to participate in negotiations.
+[p120_c0004] Negotiations focused on the Proposers' demonstrated ability to perform the work, including experience and project management teams, qualifications of the proposed staffing, quality of the proposed facility and its suitability for the work, as well as overall price.
+[p120_c0005] Pricing for this service is based on a per-assessment rate. Pricing is fixed for the first three years of the base contract, however, Proposers were given the opportunity to provide different pricing for years four and five of the base term, as well as for both Option years. The price proposal was restructured from that of the prior contracts by introducing quantity tiers, mitigating risk for both the Proposer and NYC Transit. Lower quantity tiers allow proposers to be paid a higher per-assessment rate during any period when the Authority might need to decrease the quantity of assessments. Conversely, the higher quantity tiers offer lower pricing, allowing a form of volume discount for the Authority.
+[p120_c0006] Best and Final Offers ("BAFOs") were received from all four proposers on November 17, 2021, and were presented to the SC for consideration on November 19, 2021. The SC unanimously recommended awards to: Gramercy, operating a location in Staten Island; Omni, operating a location in Brooklyn; and Therodynamics, operating locations in the Bronx and Queens. The SC unanimously voted to forgo awarding a Manhattan facility.
+[p120_c0007] Through negotiations, final pricing from Gramercy, Omni and Therodynamics for the base and option periods are considered fair and reasonable.
+[p120_c0008] The Eligibility Assessment Services contract has been evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state and local law and regulations. Any applicable cybersecurity requirements, to the extent required, have been included in the contract terms and conditions.
+[p120_c0009] The Department of Diversity and Civil Rights ("DDCR") has established goals of 15% WBE and 15 % MBE for this contract. All proposers submitted Utilization Plans to meet the required 30% MWBE goal. None of the proposers have completed MTA contract with goals; therefore, no assessment of the MWDBE/SDVOB performance can be determined at this time.
+[p120_c0010] The NYC Transit Controller's Office performed a financial review of all proposers and based on the criteria used found that there is reasonable assurance that Gramercy, Omni, and Therodynamics are financially qualified to perform this contract.
+### [p120_c0011] Impact on Funding
+[p120_c0012] Total funding for Paratransit and Reduced Fare, for the base and option periods, in the amount of $23,156,404 is available in the Operating Budget.
+[p120_c0013] _Master Page # 120 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 121
+
+### [p121_c0001] MTA Construction & Development
+### [p121_c0002] Contracts
+[p121_c0003] David K. Cannon , Vice President
+> [p121_c0004] A 3D architectural rendering of a proposed subway station entrance and elevator at 68th Street. The rendering shows a modern, multi-story glass and metal structure with a green metal fence in the foreground. A 'Subway' sign is visible on the fence. People are walking on the sidewalk and entering the station. A red car is parked on the left. The MTA logo is in the bottom left corner, and the text 'Proposed Stair Entrance and Elevator at 68th Street.' is in the bottom center.
+[p121_c0005] The above rendering depicts a new stairway entrance and elevator for the 68 th Street-Hunter College Station in Manhattan. This month's package includes an item for a new contract for the design and construction of accessibility upgrades that will bring the 68th Street-Hunter College Station on the Lexington Avenue Line in the Borough of Manhattan into ADA compliance.
+[p121_c0006] _Master Page # 121 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 122
+
+### [p122_c0001] The logo for MTA Construction & Development, featuring a blue circle with the white letters "MTA" and the text "Construction & Development" in blue to its right.
+### [p122_c0002] PROCUREMENTS
+[p122_c0003] The Procurement Agenda this month includes eight (8) actions for a proposed expenditure of $550M.
+[p122_c0004] _Master Page # 122 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 123
+
+### [p123_c0001] MTA Construction & Development
+[p123_c0002]
+
+```text
+Subject Request for Authorization to Award Procurement Actions Department Contracts Department Head Name & Title David K. Cannon, Vice President & Chief Procurement Officer Department Head Signature David K. Cannon Board Action Order To Date Approval Info Other 1 NYCT & Bus Committee 12/13/21 X 2 Board 12/15/21 X
+```
+[p123_c0003]
+
+```text
+Date: December 10, 2021 Internal Approvals Approval Approval MK Deputy Chief Development Officer, Delivery JS President (Signature) Deputy Chief Development Officer, Development (Signature) Executive Vice President & General Counsel
+```
+### [p123_c0004] Purpose
+[p123_c0005] To obtain the approval of the Board to award two procurement actions and, to inform the New York City Transit and Bus Committee of these procurement actions.
+### [p123_c0006] Discussion
+[p123_c0007] MTA Construction & Development proposes to award a Non-Competitive Procurement in the following category:
+[p123_c0008]
+
+```text
+Schedules Requiring Two-Thirds Vote # of Actions $ Amount A. Non-Competitive Purchases & Public Work Contracts 1 $ 62,653,936 SUBTOTAL 1 $ 62,653,936
+```
+[p123_c0009] MTA Construction & Development proposes to award Competitive Procurements in the following category:
+[p123_c0010]
+
+```text
+Schedules Requiring Two-Thirds Vote # of Actions $ Amount C. Competitive Requests for Proposals (Award of Purchase/Public Work Contracts) 7 $487,320,652 SUBTOTAL 7 $487,320,652 TOTAL 8 $549,974,588
+```
+### [p123_c0011] Budget Impact
+[p123_c0012] The approval of these procurement actions will obligate capital and operating funds in the amounts listed. Funds are available in the capital and operating budgets for these purposes.
+### [p123_c0013] Recommendation
+[p123_c0014] The procurement actions be approved as proposed. (The items are included in the resolution of approval at the beginning of the Procurement Section.)
+[p123_c0015] _Master Page # 123 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 124
+
+### [p124_c0001] Construction & Development
+### [p124_c0002] MTA Construction & Development
+### [p124_c0003] BOARD RESOLUTION
+[p124_c0004] WHEREAS , in accordance with Sections 1265-a and 1209 of the Public Authorities Law and the All Agency Procurement Guidelines, the Board authorizes the award of certain non-competitive purchase and public works contracts, and the solicitation and award of request for proposals in regard to purchase and public work contracts; and
+[p124_c0005] WHEREAS , in accordance with the All Agency Procurement Guidelines, the Board authorizes the award of certain non-competitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts;
+[p124_c0006] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Guidelines for Procurement of Services, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p124_c0007] NOW, the Board resolves as follows:
+- [p124_c0008] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract. 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals and authorizes the solicitation of such proposals. 3. As to each request for proposals (for purchase and public work contracts set forth in Schedule C for which a recommendation is made to award the contract), the Board authorizes the execution of said contract. 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein, and ratifies each action for which ratification is requested. 5. The Board authorizes the execution of each of the following for which Board authorization is required: i) the miscellaneous procurement contracts set forth in Schedule E; ii) the personal service contracts set forth in Schedule F; iii) the miscellaneous service contracts set forth in Schedule G; iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; v) the contract modifications to purchase and public work contracts set forth in Schedule I; vi) the modifications to miscellaneous procurement contracts set forth in Schedule J. 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p124_c0009] _Master Page # 124 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 125
+
+### [p125_c0001] Construction & Development
+[p125_c0002] DECEMBER 2021
+### [p125_c0003] LIST OF NON-COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p125_c0004] Procurements Requiring Two-Thirds Vote:
+### [p125_c0005] Schedule A. Non-Competitive Purchases and Public Work Contracts (Staff Summaries required for items estimated to be greater than $1M)
+- [p125_c0006] 1. Mitsubishi Electric Power Products Inc. $ 62,653,936 Staff Summary Attached Contract No. S48017 55 Months
+[p125_c0007] MTA Construction and Development requests Board approval to award a Non-Competitive contract for Communication Based Train Control Equipment for the Queens Boulevard Line - East Project.
+[p125_c0008] _Master Page # 125 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 126
+
+### [p126_c0001] Schedule A Non-Competitive Purchases & Public Work Contracts Staff Summary Item Number 1
+### [p126_c0002] MTA Construction & Development
+### [p126_c0003] Page 1 of 2
+[p126_c0004]
+
+```text
+Dept. & Dept Head Signals & Train Control Business Unit/Daniel Creighton, VP & Program Executive Contracts Department David K. Cannon, VP & Chief Procurement Officer Board Reviews Order To Date Approval Info Other 1 NYCT & Bus Committee 12/13/21 X 2 Board 12/15/21 X Internal Approvals Approval Approval Deputy Chief, Development President Deputy Chief, Delivery Executive Vice President & General Counsel
+```
+[p126_c0005]
+
+```text
+SUMMARY INFORMATION Vendor Name Mitsubishi Electric Power Products Inc. Contract Number S48017 Description Communication Based Train Control ("CBTC") Equipment Contract for the Queens Boulevard Line "East" ("QBL East") Project Total Amount $62,653,936 Contract Term 55 Months Option(s) included in Total Amount? Yes No N/A Renewal? Yes No Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Funding Source Operating Capital Federal Other:
+```
+### [p126_c0006] Purpose/Recommendation
+[p126_c0007] MTA Construction & Development ("C&D") requests Board approval to award a Non-Competitive contract for Communication Based Train Control ("CBTC") Equipment for the Queens Boulevard Line - East ("QBL East") Project to Mitsubishi Electric Power Products Inc. ("Mitsubishi") in the amount of $62,653,936 and a duration of 55 months.
+### [p126_c0008] Discussion
+[p126_c0009] Contract S-48017 (the "Contract") is for designing, manufacturing, testing, and commissioning of new CBTC wayside zone controllers (the "CBTC Equipment") at four (4) stations on the Queens Boulevard F line. The signal systems at the four stations, (Jamaica -179th St., 169th St., Parsons Blvd., and Briarwood) will be upgraded from a fixed block relay-based system to a CBTC system with solid state interlockings. The upgrade of the signal system to CBTC will allow trains to run at a greater speed and at closer distances, providing more efficient and responsive service to New York City Transit ("NYCT") passengers on the F line. The CBTC Equipment furnished under this Contract will be supplied to a CBTC installation contractor that will be solicited under a separate competitively bid contract.
+[p126_c0010] Prior to April 2020, NYCT had only two approved suppliers of CBTC equipment, Thales Ground Transportation Systems ("Thales") and Siemens Mobility, Inc. ("Siemens"). In April 2020, Mitsubishi was qualified as a third CBTC supplier after successfully demonstrating its CBTC equipment at the MTA's Integrated Test Facility and Culver Test Track. This Contract will provide NYCT an opportunity to evaluate Mitsubishi's production quality and performance as well as Mitsubishi's ability to efficiently validate and commission its CBTC Equipment in a revenue service environment.
+[p126_c0011] The QBL East Project was selected for Mitsubishi because it is the first CBTC project to be procured after Mitsubishi's qualification as a CBTC supplier and because QBL East is an ideal environment for the evaluation of Mitsubishi's CBTC Equipment. The entire Project consists of four stations at the tail-end of the F line, with no intersecting or adjacent lines. In addition, trains with existing CBTC carbome equipment already run on the F line so the wayside CBTC equipment to be supplied by Mitsubishi under this Contract can be easily tested. In addition to providing NYCT with an opportunity to test and evaluate Mitsubishi's performance on a revenue
+[p126_c0012] _Master Page # 126 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 127
+
+### [p127_c0001] Schedule A Non-Competitive Purchases & Public Work Contracts Staff Summary Item Number 1
+### [p127_c0002] Construction & Development
+### [p127_c0003] Page 2 of 2
+[p127_c0004] service line, this Contract will also provide Mitsubishi with the engineering, project management and track training experience to be able to compete with Siemens and Thales for future NYCT CBTC projects, lowering the cost of future CBTC equipment contracts.
+[p127_c0005] In November 2021, the Board adopted a resolution, pursuant to Public Authorities Law § 1265-a.4.d, authorizing this non-competitive procurement in the public's interest, so that C&D can evaluate this new source for CBTC equipment.
+[p127_c0006] Mitsubishi will be required to adhere to NYCT's CBTC system safety program throughout the duration of the Contract. Prior to substantial completion and deployment of Mitsubishi's CBTC equipment in revenue service, the equipment must obtain full CBTC system safety certification from NYCT.
+[p127_c0007] Mitsubishi initially submitted a cost proposal for this Contract of $98,635,922. Following negotiation that focused on technical scope clarification and significant cost reduction, Mitsubishi submitted a revised cost proposal for $62,653,936. C&D's independent estimate for this Contract is $60,165,771. Based on Mitsubishi's commitment to the 55 month Contract duration and because Mitsubishi's final proposal is only 4% over C&D's independent estimate, Mitsubishi's proposal is fair and reasonable.
+[p127_c0008] In connection with previous contracts awarded to Mitsubishi, Mitsubishi was found to be responsible, notwithstanding significant adverse information pursuant to the All-Agency Responsibility Guidelines and such responsibility finding was approved by the MTA Managing Director in consultation with the MTA General Counsel in March 2019. No new significant adverse information has been found relating to Mitsubishi and Mitsubishi has been found to be responsible.
+### [p127_c0009] D/M/WBE/SDVOB Information
+[p127_c0010] DDCR has established a 0% MBE/WBE/SDVOB goal for this Contract due to the lack of M/WBE/SDVOB firms in the marketplace.
+### [p127_c0011] Funding
+[p127_c0012] The funding source for this Contract is MTA's 2020-2024 Capital Program.
+### [p127_c0013] Alternatives
+[p127_c0014] This project represents the ideal opportunity and location to evaluate Mitsubishi and its newly approved CBTC equipment with the goal of increasing competition by introducing a third supplier into the mix. The alternative is the use of a competitive Request for Proposal process, however, without previous experience with this product on NYCT facilities and because of various non-recurring start-up costs that Mitsubishi would incur, they would be unable to reasonably compete with Siemens and Thales, both of whom have decades of experience on NYCT CBTC projects.
+[p127_c0015] _Master Page # 127 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 128
+
+### [p128_c0001] Construction & Development
+[p128_c0002] DECEMBER 2021
+### [p128_c0003] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p128_c0004] Procurements Requiring Two-Thirds Vote:
+### [p128_c0005] Schedule C. Competitive Requests for Proposals (Award of Purchase/Public Work Contracts) (Staff Summaries required for all items greater than $1M)
+[p128_c0006]
+
+```text
+2&3. MLJ Contracting Corp./TC Electric JV Contract No. A37135 978 Calendar Days $242,400,000 Staff Summary Attached ↓ Modern Elevator Installations, Inc. Contract No. To Be Determined Fifteen Years $ 9,069,985 ↓
+```
+[p128_c0007] MTA Construction & Development requests Board approval to award a publicly advertised and competitively solicited contract for the design and construction of accessibility upgrades at eight stations throughout New York City and the award of a long-term elevator maintenance contract.
+[p128_c0008]
+
+```text
+4&5. Forte-Citnalta JV Contract No. A36164 1,080 Calendar Days $101,750,000 Staff Summary Attached ↓ Mid-American Elevator Company, Inc. Contract No. To Be Determined Fifteen Years $ 3,027,395 ↓
+```
+[p128_c0009] MTA Construction and Development requests Board approval to award a publicly advertised and competitively solicited contract for the design and construction of accessibility upgrades at the 68 th Street-Hunter College Station in the Borough of Manhattan and the award of a long-term elevator maintenance contract.
+[p128_c0010]
+
+```text
+6. Citnalta-Forte, Joint Venture Contract No. A37679 1,308 Calendar Days $ 72,272,272 Staff Summary Attached
+```
+[p128_c0011] MTA Construction and Development requests Board approval to award a publicly advertised and competitively solicited contract for the design and construction of Grand Central Subway Station mezzanine finishes, escalator replacement & structural repairs.
+[p128_c0012]
+
+```text
+7. ECCO III Enterprises, Inc. Contract No. A37691 679 Calendar Days $ 30,381,000 Staff Summary Attached
+```
+[p128_c0013] MTA Construction and Development requests Board approval to award a publicly advertised and competitively solicited contract for design and construction services for Flushing-Main Street Station circulation improvements.
+[p128_c0014] _Master Page # 128 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 129
+
+### [p129_c0001] Construction & Development
+[p129_c0002] DECEMBER 2021
+### [p129_c0003] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+- [p129_c0004] 8. Forte Construction Corp. Contract No. E30643 900 Calendar Days $ 28,420,000 Staff Summary Attached
+[p129_c0005] MTA Construction and Development requests Board approval to award a publicly advertised and competitively solicited contract for the design and construction services to replace two escalators at 161 st Street Yankee Stadium Station and two escalators at DeKalb Avenue Station.
+[p129_c0006] _Master Page # 129 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 130
+
+### [p130_c0001] Schedule C Competitive Requests for Proposals (Award of Purchase/Public Work Contracts)
+### [p130_c0002] Staff Summary
+[p130_c0003] Item Numbers 2 & 3
+[p130_c0004] Page 1 of 3
+[p130_c0005]
+
+```text
+Dept & Dept Head Stations Business Unit/Barney Gray Contracts Department David K. Cannon, Vice President & Chief Procurement Officer David K. Cannon Board Reviews Order To Date Approval Info Other 1 NYCT & Bus Committee 12/13/21 X 2 Board 12/15/21 X Internal Approvals Approval Approval Deputy Chief, Development JK President MK Deputy Chief, Delivery [Signature] Executive Vice President & General Counsel
+```
+[p130_c0006]
+
+```text
+SUMMARY INFORMATION Vendor Name 1. MLJ Contracting Corp./TC Electric JV 2. Modern Elevator Installations, Inc. (Elevator Maintainer) Contract Number A37135 (D/B) TBD (Maintenance) Description Design-Build Services for Accessibility Upgrades – Package 2 Total Amount 1. A37135 Award: $ 242,400,000 2. Maintenance Award: $ 9,069,985 3. Stipend Payments: $ 750,000 Contract Term 1. A37135 978 Calendar Days 2. Maintenance Contract 15 Years Option(s) included in Total Amount? Yes No N/A Renewal? Yes No Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Funding Source Operating** Capital* Federal* MTA**
+```
+[p130_c0007] *Design-Build Contract      **Maintenance Contract
+### [p130_c0008] Purpose/Recommendation
+[p130_c0009] MTA Construction & Development ("C&D") requests Board approval to award a publicly advertised and competitively solicited contract for the design and construction of accessibility upgrades at eight stations throughout New York City (the "Project") to MLJ Contracting Corp./TC Electric JV in the amount of $242,400,000 and a duration of 1,068 calendar days. Board approval is also sought to award a long-term elevator maintenance Contract to Modern Elevator Installations, Inc. in the amount of $9,069,985 and a duration of 15 years. In accordance with MTA policy regarding the use of design-build contracts, and to enhance competition and defray proposal costs, this solicitation includes a stipend of $250,000 to be paid to each unsuccessful proposer whose proposal met the defined proposal standards. Accordingly, approval is also requested to pay stipends totaling $750,000 to the three unsuccessful proposers.
+### [p130_c0010] Discussion
+[p130_c0011] Contract A37135 ("the Contract") is one of a series of Americans with Disabilities Act ("ADA") projects in support of the MTA's commitment to make stations accessible. The Contract includes the installation of eleven (11) new elevators that will provide full accessibility at the following elevated, open cut and below ground subway stations: Westchester Square Station on the Pelham Line (6 train); Eighth Avenue Station on the Sea Beach Line (N train); 181st Street Station on the Eighth Avenue Line (A train); Woodhaven
+[p130_c0012] _Master Page # 130 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 131
+
+### [p131_c0001] Schedule C Competitive Requests for Proposals (Award of Purchase/Public Work Contracts)
+### [p131_c0002] Construction & Development
+### [p131_c0003] Staff Summary
+[p131_c0004] Item Numbers 2 & 3
+[p131_c0005] Page 2 of 3
+[p131_c0006] Boulevard Station on the Jamaica Line (J/Z trains); Court Square Station on the Crosstown Line (G train); and Queensboro Plaza Station on the Astoria and Flushing Lines (N/W/7 trains). Work at each station generally includes the design and construction of one to three new elevators per station; electrical power and station communications systems upgrades where necessary; relocation of existing public and transit utilities; replacement, relocation and/or addition of staircases from street to mezzanines and mezzanines to platforms; and reconstruction of platform edges and/or reconstruction of ADA boarding areas. In addition, the work will include replacement of five existing elevators that have reached the end of their useful lives at the Marcy Avenue Station on the Jamaica Line (J/M/Z trains), and at the Flushing Avenue Station on the Jamaica Line (J/M/Z trains). The work also includes state of good repair scope at Woodhaven Boulevard Station on the Jamaica Line (J/Z trains) and Westchester Square Station on the Pelham Line (6 train).
+[p131_c0007] In addition, C&D will enter into a separate long-term Elevator Maintenance Contract for all maintenance, repairs, tests and inspections, callbacks and emergency services required to ensure optimum performance and longevity for all the elevators and ancillary equipment, except for the single new elevator that will be installed at the Eighth Avenue Station on the Sea Beach Line. The new elevator for the Eighth Avenue Sea Beach Line will be maintained by MTA's in-house forces, as the elevator on the opposite side platform is already maintained by MTA's in-house forces. In order to ensure long-term, optimum performance of the elevators covered by the Maintenance Contract, the procurement was structured to require continuity between the design and installation of the elevator equipment, and the subsequent maintenance thereof. Only the elevator manufacturer or installer is eligible for the award of the Maintenance Contract. The goal is to ensure that the Design-Builder works in concert with its elevator subcontractor to choose sufficiently robust equipment that would not only withstand the rigors of the New York City Transit ("NYCT") system, but that would also take into consideration the elevator subcontractor's ultimate responsibility for a performance-based, long-term maintenance contract. The term of the Maintenance Contract includes a "ramp-up" period during which elevators placed in service prior to Substantial Completion of the Design/Build Contract will be maintained; a fifteen-year maintenance period, commencing with achievement of Substantial Completion of the Design/Build Contract; and finally, two 5-year option periods, exercisable at MTA's discretion.
+[p131_c0008] A two-step procurement process was conducted for these contracts. In Step 1, a Request for Qualifications was advertised resulting in the submission of six (6) Statements of Qualification, which were evaluated against the pre-established Threshold Criteria (addressing completeness, timeliness, capacity, responsibility, and financial capability) and Substantive Evaluation Criteria (addressing key personnel and organization, project approach, prior experience, past performance, financial strength, and diversity compliance). The following four (4) firms were selected to receive the Request for Proposal ("RFP") in Step 2:
+- [p131_c0009] • Citnalta-Scalamandre-Forte (Tri-Venture) ("CSF TV") • ECCO III Enterprises - Railroad Construction, JV ("ECCO III-RCC JV") • MLJ Contracting Corp./TC Electric JV ("MLJTC2") • Skanska USA Civil Northeast, Inc. ("Skanska")
+[p131_c0010] Each of the selected firms submitted a technical and price proposal in response to the RFP. The Selection Committee, consisting of representatives from C&D and New York City Transit, first reviewed the technical proposals and heard oral presentations from each of the respondents. The Selection Committee evaluated the technical proposals using the pre-established selection criteria which assessed proposers' design and construction approach, overall project schedule, maintenance approach for elevators, management plan, experience, record of performance, safety and quality, diversity practices and other relevant matters. The Selection Committee determined that all four teams submitted proposals that were responsive and acceptable.
+[p131_c0011] The Selection Committee next opened the cost proposals which were as follows: CSF TV - $432,444,713 (Maintenance: $10,123,000); ECCO III-RCC JV - $324,255,000 (Maintenance: $8,836,655); MLJTC2 - $242,400,000 (Maintenance: $8,613,875); and Skanska - $284,950,000 (Maintenance: $8,270,245). For the installation and the long-term maintenance of the elevators, CSF TV proposed Mid-American Elevator Co. and the others proposed Modern Elevator Installations, Inc. ("Modern").
+[p131_c0012] Based upon its review of the technical and cost proposals, the Selection Committee determined that the proposals submitted by MLJTC2 and Skanska presented a superior combination of technical approach, cost and schedule and unanimously recommended that both firms be invited in for negotiations.
+[p131_c0013] Negotiations with MLJTC2 and Skanska included discussions of the proposed design and construction approach, project schedule, overall cost and clarification of the design/build requirements. A Post-Proposal Addendum was issued to both firms revising the Elevator Maintenance Terms and Conditions to address the basis for formulating the price proposal and a revised Schedule E-3 was issued. Following negotiations, a Best and Final Offer ("BAFO") was requested from MLJTC2 and Skanska. The results of the BAFOs were as follows:
+[p131_c0014] _Master Page # 131 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 132
+
+### [p132_c0001] Schedule C Competitive Requests for Proposals (Award of Purchase/Public Work Contracts)
+### [p132_c0002] Construction & Development
+### [p132_c0003] Staff Summary
+[p132_c0004] Item Numbers 2 & 3
+[p132_c0005] Page 3 of 3
+- [p132_c0006] • MLJTC2 $242,400,000 (Maintenance: $9,069,985) • Skanska $284,950,000 (Maintenance: $8,746,220)
+[p132_c0007] After review of the BAFOs, the Selection Committee unanimously recommended MLJTC2 for award of the Design-Build Contract and Modern for the award of the long-term Maintenance Contract. The Selection Committee determined that MLJTC2's proposal offered the best overall value considering the strength of their technical proposal, their understanding of the work, their lowest proposed cost and reductions to schedule, which will minimize the impact of the work on MTA's customers. The Contract also includes incentives for the early completion of the Work, as well as liquidated damages for Design-Builder caused delays to achieving Contract milestones including Substantial Completion. MLJTC2 and Modern's prices are considered fair and reasonable.
+[p132_c0008] MLJ Contracting Corp. and Modern have been found to be responsible.
+[p132_c0009] In connection with previous contracts awarded to TC Electric LLC ("TC"), TC was found to be responsible, notwithstanding significant adverse information pursuant to the All-Agency Responsibility Guidelines and such responsibility finding was approved by the MTA Interim Executive Director in consultation with the MTA General Counsel in April 2017. No new significant adverse information has been found relating to TC and TC has been found to be responsible.
+### [p132_c0010] DBE/MBE/WBE/SDVOB Information
+[p132_c0011] The MTA Department of Diversity and Civil Rights ("DDCR") has established a 22.5% DBE goal for the Design/Build Contract. Although this is a design-build contract with some undefined scope, MLJTC2 is projecting to meet the required DBE goal requirements. MLJTC2 has not completed any MTA contracts with DBE/MBE/WBE goals, therefore no assessment of their DBE/MBE/WBE performance can be determined at this time. MLJ and TC have individually achieved their assigned DBE/MBE/WBE goals on previously completed MTA contracts.
+[p132_c0012] DDCR has established a 0% MBE/WBE/SDVOB goal for the Maintenance Contract due to the lack of MWBE/SDVOB firms in the marketplace. Meetings are being coordinated with the MBE/WBE/SDVOB community to establish certified firms in the areas of elevator and escalator maintenance. Modern has not completed any MTA contracts with DBE/MBE/WBE goals, therefore, no assessment of their performance can be determined at this time.
+### [p132_c0013] Impact on Funding
+[p132_c0014] Funding for the design and construction of accessibility upgrades at eight stations throughout New York City, and stipends for the three unsuccessful proposers are included in the NYCT portion of the MTA's 2020-2024 Capital Program. This Contract will be funded, in part, with Federal funds. Funding for the maintenance contract is included in the NYCT operating budget.
+### [p132_c0015] Alternatives
+[p132_c0016] None recommended. Currently, MTA lacks available in-house technical personnel to perform the scope of work associated with this Contract.
+[p132_c0017] _Master Page # 132 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 133
+
+### [p133_c0001] Construction & Development
+### [p133_c0002] Schedule C Competitive Requests for Proposals (Award of Purchase/Public Work Contracts)
+### [p133_c0003] Staff Summary
+[p133_c0004] Item Numbers 4 & 5
+### [p133_c0005] Page 1 of 3
+[p133_c0006]
+
+```text
+Dept & Dept Head Stations Business Unit/Barney Gray
+```
+[p133_c0007]
+
+```text
+Contracts Department David K. Cannon, Vice President & Chief Procurement Officer
+```
+[p133_c0008]
+
+```text
+Board Reviews Order To Date Approval Info Other 1 NYCT & Bus Committee 12/13/21 X 2 Board 12/15/21 X
+```
+[p133_c0009]
+
+```text
+Internal Approvals Approval Approval Deputy Chief, Development President Deputy Chief, Delivery Executive Vice President & General Counsel
+```
+[p133_c0010]
+
+```text
+SUMMARY INFORMATION Vendor Name Contract Number 1. Forte-Citnalta JV 2. Mid-American Elevator Company, Inc. (Elevator Maintainer) A36164 (D/B) TBD (Maintenance) Description Design-Build Services for Accessibility Upgrades at the 68th St-Hunter College Station Total Amount 1. A36164 Award: $ 101,750,000 2. Maintenance Award: $ 3,027,395 3. Stipend Payments: $ 1,200,000 Contract Term 1. A36164 1,080 Calendar Days 2. Maintenance Contract 15 Years Option(s) included in Total Amount? Yes No N/A Renewal? Yes No Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Funding Source Operating** Capital* Federal* MTA*
+```
+[p133_c0011] *Design-Build Contract      **Maintenance Contract
+### [p133_c0012] Purpose/Recommendation
+[p133_c0013] MTA Construction & Development ("C&D") requests Board approval to award a publicly advertised and competitively solicited contract for the Design and Construction of accessibility upgrades at the 68th Street-Hunter College Station in the Borough of Manhattan (the "Project") to Forte-Citnalta JV in the amount of $101,750,000 and a duration of 1,080 calendar days. Board approval is also sought to award a long-term elevator Maintenance Contract to Mid-American Elevator Company, Inc. in the amount of $3,027,395 and a duration of 15 years. In accordance with MTA policy regarding the use of design-build contracts, and to enhance competition and defray proposal costs, this solicitation includes a stipend of $300,000 to be paid to each unsuccessful proposer whose proposal met the defined proposal standards. Accordingly, approval is also requested to pay stipends totaling $1,200,000 to the four unsuccessful proposers.
+### [p133_c0014] Discussion
+[p133_c0015] Contract A36164 ("the Contract") is one in a series of Americans with Disabilities Act ("ADA") projects in support of the MTA's commitment to make stations accessible. The contract includes the installation of three (3) new elevators and other ADA improvements that will bring the 68th Street-Hunter College Station on the Lexington Avenue Line (6 trains) into ADA compliance. The Contract will also include reconstructing existing stairs, constructing new ADA boarding areas and platform edging, extending the platforms to accommodate the new elevators, and repairing walls, floors, beams and ceilings.
+[p133_c0016] _Master Page # 133 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 134
+
+### [p134_c0001] Schedule C Competitive Requests for Proposals (Award of Purchase/Public Work Contracts)
+### [p134_c0002] Construction & Development
+### [p134_c0003] Staff Summary
+[p134_c0004] Item Numbers 4 & 5
+[p134_c0005] Page 2 of 3
+[p134_c0006] In addition, C&D will enter into a separate long-term Elevator Maintenance Contract for all maintenance, repairs, tests and inspections, callbacks and emergency services required to ensure optimum performance and longevity of the elevators and ancillary equipment. In order to ensure long-term, optimum performance of the elevators, the procurement was structured to require continuity between the design and installation of the elevator equipment, and the subsequent maintenance thereof. Only the elevator manufacturer or installer is eligible for the award of the Maintenance Contract. The goal is to ensure that the Design-Builder works in concert with its elevator subcontractor to choose sufficiently robust equipment that would not only withstand the rigors of the New York City Transit ("NYCT") system, but that would also take into consideration the elevator subcontractor's ultimate responsibility for a performance-based, long-term Maintenance Contract. The term of the Maintenance Contract includes a fifteen-year maintenance period, commencing on achievement of Substantial Completion of the Design/Build Contract and two 5-year option periods, exercisable at MTA's discretion.
+[p134_c0007] A two-step procurement process was conducted for these contracts. In Step 1, a Request for Qualifications was advertised resulting in the submission of seven (7) Statements of Qualifications which were evaluated against pre-established Threshold Criteria (addressing completeness, timeliness, capacity, responsibility, and financial capability) and Substantive Evaluation Criteria (addressing key personnel and organization, project approach, prior experience, past performance, financial strength, and diversity compliance). The following five (5) firms were selected to receive the Request for Proposal ("RFP") in Step 2:
+- [p134_c0008] • Forte-Citnalta JV ("FCJV") • John Civetta & Sons, Inc. ("Civetta") • John P. Picone, Inc. ("Picone"). • MLJ Contracting Corp./TC Electric JV ("MLJTC2") • Railroad Construction Company, Inc. ("RCC")
+[p134_c0009] Each of the selected firms submitted a technical and price proposal in response to the RFP. The Selection Committee, consisting of representatives from C&D and NYCT, first reviewed the technical proposals and heard oral presentations from each of the respondents. The Selection Committee evaluated the technical proposals using the pre-established selection criteria which assessed proposers' design and construction approach, overall project schedule, maintenance approach for elevators, management plan, experience, record of performance, safety and quality, diversity practices and other relevant matters.
+[p134_c0010] The Selection Committee next opened the cost proposals which were as follows: FCJV - $98,888,000 (Maintenance: $3,027,395); Civetta - $87,247,500 (Maintenance: $3,027,395); MLJTC2 - $116,270,496 (Maintenance: $1,765,910); Picone - $101,231,234 (Maintenance: $1,765,910); and RCC - $91,500,000 (Maintenance: $1,765,910); For the installation and the long-term maintenance of the elevators, FCJV and Civetta proposed Mid-American Elevator Company, Inc. ("Mid-American") Each of the other three teams proposed Modern Elevator Installations, Inc.
+[p134_c0011] Based upon its review of the technical and cost proposals, the Selection Committee determined that the proposal from FCJV presented a superior combination of technical approach, cost and schedule. The Selection Committee also determined that, due to their lower costs, Civetta and RCC should be invited to a scope clarification meeting in order for the Selection Committee to understand whether their respective proposals contemplated all aspects of the Project and ensure they understood the scope requirements. Upon the conclusion of the scoping meetings, the Selection Committee determined that the proposals of both RCC and Civetta did not demonstrate a thorough understanding of the scope requirements or present suitable prior-project experience when compared to other proposers. Neither Civetta's nor RCC's proposals demonstrated favorable experience in completing similar types of work (as compared to other proposers), their proposed key personnel lacked relevant experience and their proposals did not demonstrate an understanding of the Project requirements. Based on the technical superiority of FCJV's proposal and Civetta's and RCC's shortcomings, the Selection Committee unanimously recommended that FCJV, the highest ranked technical proposer, be invited in for negotiations. MLJTC2 was determined to be out of the competitive range and Picone submitted the lowest ranked technical proposal.
+[p134_c0012] Negotiations with FCJV included discussions of the proposed design and construction approach, project schedule, overall cost and clarification of the design/build requirements. A Post-Proposal Addendum was issued to FCJV clarifying certain areas of the project requirements and design criteria as well as revising the Elevator Maintenance Specifications to address risk sharing. Following negotiations and the scope clarification meetings, a Best and Final Offer ("BAFO") was requested from FCJV who provided a BAFO in the amount of $103,588,000. This increased BAFO reflected FCJV's adjustments regarding utility work clarified during negotiations.
+[p134_c0013] A second round of negotiations was held with FCJV and included extensive discussions on the utility work and the steel repair required under this Contract. Following the second round of negotiations, a revised BAFO was requested from FCJV. C&D and FCJV agreed on a lump sum price of $101,750,000 for the Design-Build Contract and $3,027,395 with Mid-American for the long-term Maintenance Contract.
+[p134_c0014] _Master Page # 134 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 135
+
+### [p135_c0001] Schedule C Competitive Requests for Proposals (Award of Purchase/Public Work Contracts)
+> [p135_c0002] The MTA logo, consisting of the letters 'MTA' inside a dark circle.
+### [p135_c0003] Construction & Development
+### [p135_c0004] Staff Summary
+[p135_c0005] Item Numbers 4 & 5
+[p135_c0006] Page 3 of 3
+[p135_c0007] The Selection Committee unanimously recommended FCJV for award of the Design-Build Contract and Mid-American for the award of the long-term Maintenance Contract. The Selection Committee determined that FCJV's proposal offered the best overall value considering the strength of their technical proposal, their understanding of the work, and the cost of their proposal. The Contract also includes incentives for the early completion of the Work, as well as liquidated damages for Design-Builder caused delays to achieving Substantial Completion. FCJV and Mid-American's prices are considered fair and reasonable.
+[p135_c0008] FCJV and Mid-American has been found to be responsible.
+### [p135_c0009] DBE/MBE/WBE/SDVOB Information
+[p135_c0010] The MTA Department of Diversity and Civil Rights ("DDCR") has established a 22.5% DBE goal for the Design/Build Contract. Although this is a design-build contract with some undefined scope, FCJV is projecting to meet the required DBE goal requirements. FCJV has not completed any MTA contracts with DBE/MBE/WBE goals, therefore no assessment of their DBE/MBE/WBE performance can be determined at this time. Forte and Citnalta have individually achieved their assigned DBE/MBE/WBE goals on previously completed MTA contracts.
+[p135_c0011] DDCR has established a 0% MBE/WBE/SDVOB goal for the Maintenance Contract due to the lack of MBE/WBE/SDVOB firms in the marketplace. Meetings are being coordinated with the MBE/WBE/SDVOB community to establish certified firms in the areas of elevator and escalator maintenance. Mid-American has not completed any MTA contracts with DBE/MBE/WBE goals, therefore, no assessment of their performance can be determined at this time.
+### [p135_c0012] Impact on Funding
+[p135_c0013] Funding for the design and construction of accessibility upgrades at the 68 th Street-Hunter College Station, and stipends for the four unsuccessful proposers are included in the NYCT portion of the MTA's 2020-2024 Capital Program. This Contract will be funded, in part, with Federal funds. Funding for the Maintenance Contract is included in the NYCT operating budget.
+### [p135_c0014] Alternatives
+[p135_c0015] None recommended. Currently, MTA lacks available in-house technical personnel to perform the scope of work associated with this Contract.
+[p135_c0016] _Master Page # 135 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 136
+
+### [p136_c0001] Construction & Development
+### [p136_c0002] Schedule C Competitive Requests for Proposals (Award of Purchase/Public Work Contracts)
+### [p136_c0003] Staff Summary
+[p136_c0004] Item No. 6
+[p136_c0005] Page 1 of 3
+[p136_c0006]
+
+```text
+Dept & Dept Head Name: Stations Business Unit, Delivery/Barney Gray Contracts Department: David K. Cannon, VP & Chief Procurement Officer Board Reviews Order To Date Approval Info Other 1 NYCT & Bus Committee 12/13/2021 X 2 Board 12/15/2021 X Internal Approvals Order Approval Order Approval Deputy Chief, Development President Deputy Chief, Delivery Executive Vice President & General Counsel
+```
+[p136_c0007]
+
+```text
+SUMMARY INFORMATION Vendor Name Citnalta-Forte, Joint Venture Contract Number A37679 Description Design-Build Services for Grand Central Subway Station Mezzanine Finishes, Escalator Replacement & Structural Repairs on the Lexington & Flushing Lines Total Amount 1. A37679 Base: $ 69,638,272 2. A37679 Option: $ 2,634,000 3. Stipend Payments: $ 400,000 Contract Term 1,308 Calendar Days Option(s) included in Total Amount? Yes No N/A Renewal? Yes No Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Funding Source Operating Capital Federal State
+```
+### [p136_c0008] Purpose/Recommendation
+[p136_c0009] MTA Construction and Development ("C&D") requests Board approval to award a publicly advertised and competitively solicited contract for the design and construction of Grand Central Subway Station mezzanine finishes, escalator replacement & structural repairs to Citnalta-Forte, Joint Venture in the amount of $72,272,272 and a duration of 1,308 calendar days. This sum includes an option in the amount of $2,634,000 which C&D intends to exercise concurrently with the issuance of the Notice of Award. In accordance with MTA policy regarding the use of design-build contracts, and to enhance competition and defray proposal costs, this solicitation includes a stipend of $200,000 to be paid to each unsuccessful proposer whose proposal met the defined proposal standards. Accordingly, approval is also requested to pay stipends totaling $400,000 to the two unsuccessful proposers.
+### [p136_c0010] Discussion
+[p136_c0011] Contract A37679 (the "Contract") is for the replacement of eight (8) existing escalators that are at the end of their useful life that service the Flushing Line and Grand Central. In addition, this Contract will address the leaks at the mezzanine level of the Lexington Avenue line at Grand Central. For the adjacent ventilator, which has been the source of the leaks in the mezzanine, work will consist of crack and spall repairs as well as steel beam repairs. To finish the mezzanine, the existing suspended ceiling will be removed, exposing the concrete underneath the ceiling which will be painted and serve as the new ceiling, and new lighting fixtures and new signage will be installed. In addition, the existing fare array will be expanded with new turnstiles and new vending machines. The Contract also includes an option for the demolition of the existing stairwell at the east end of the Flushing Line platform, and construction of a new, widened stairwell. The MTA may exercise the option in its sole discretion within ninety (90) days of NTP, but intends to exercise the option concurrently with the issuance of the Notice of Award.
+[p136_c0012] _Master Page # 136 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 137
+
+### [p137_c0001] Schedule C Competitive Requests for Proposals (Award of Purchase/Public Work Contracts) Construction & Development Staff Summary
+### [p137_c0002] Item No. 6
+### [p137_c0003] Page 2 of 2
+[p137_c0004] A two-step procurement process was used for this Contract. In Step 1, a Request for Qualifications was advertised resulting in the submission of four (4) Statements of Qualifications which were evaluated against preestablished Threshold Criteria (addressing completeness, timeliness, capacity, responsibility, and financial capability) and Substantive Evaluation Criteria (addressing key personnel and organization, project approach, prior experience, past performance, financial strength, and diversity compliance). The following three (3) firms were selected to receive the Request for Proposal (RFP) in Step 2:
+- [p137_c0005] • Citnalta-Forte Joint Venture (“CFJV”), A Joint Venture consisting of Citnalta Construction Corp and Forte Construction Company • Halmar International LLC (“Halmar”) • MLJTC2 (“MLJTC2”), A Joint Venture consisting of MLJ Contracting Corp. and TC Electric LLC
+[p137_c0006] Each of the three (3) selected firms submitted a technical and price proposal in response to the RFP. The Selection Committee, consisting of representatives from C&D and New York City Transit, first reviewed the technical proposals and heard oral presentations from each of the respondents. The Selection Committee evaluated the technical proposals using the pre-established selection criteria which assessed proposers’ design and construction approach, overall project schedule, management plan, experience, record of performance, safety and quality, diversity practices and other relevant matters. The Selection Committee determined that all three teams submitted comprehensive technical proposals that were deemed responsive and acceptable.
+[p137_c0007] The selection committee next opened the cost proposals which were as follows: CFJV – $73,220,001; Halmar – $75,189,437; and MLJTC2 – $100,800,000 inclusive of the option work. Negotiations were conducted with all three proposers and included detailed discussions of the proposed design and construction approach, project schedule, and overall cost. Following negotiations, it was determined that MLJTC2’s proposed cost of $100,800,000 was outside of the competitive range and its price proposal contained price assumptions inconsistent with the RFP documents. Best and Final Offers (“BAFOs”) were requested from CFJV and Halmar. The results of the BAFOs were as follows:
+- [p137_c0008] • CFJV $72,272,272.00 • Halmar $74,213,719.96
+[p137_c0009] These BAFOs included the cost of the option work, which are as follows: CFJV - $2,634,000 and Halmar - $3,460,000.
+[p137_c0010] After review of the BAFOs, the Selection Committee unanimously recommended CFJV for award of the Contract. The Selection Committee determined that CFJV’s proposal offered the best overall value considering the strength of their technical proposal, their lowest proposed cost and reductions to schedule, which will minimize the impact of the work on MTA’s customers. The Contract also includes incentives for the early completion of the Work, as well as liquidated damages for Design-Builder caused delays to achieving Contract milestones, including Substantial Completion. The negotiated cost of $72,272,272 is considered fair and reasonable.
+[p137_c0011] CFJV has been found to be responsible.
+### [p137_c0012] DBE/MBE/WBE/SDVOB Information
+[p137_c0013] The MTA Department of Diversity and Civil Rights (“DDCR”) has established a 22.5% DBE goal for the Design/Build Contract. Although this is a design/build contract with some undefined scope of work, CFJV is projecting to meet the required 22.5% DBE goal. CFJV as a joint venture and individually have achieved their assigned DBE/MBE/WBE goals on previous completed MTA contracts.
+### [p137_c0014] Impact on Funding
+[p137_c0015] Funding for the base contract work is included in the New York City Transit portion of the MTA’s 2020-2024 Capital Program and will be funded, in part, with Federal funds. Funding for the option work is included in the New York City Transit operating budget, and will be reimbursed by a private developer.
+### [p137_c0016] Alternatives
+[p137_c0017] None recommended. Currently, MTA lacks available in-house technical personnel to perform the scope of work associated with the Design/Build Contract.
+[p137_c0018] _Master Page # 137 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 138
+
+### [p138_c0001] Schedule C Competitive Requests for Proposals (Award of Purchase/Public Work Contracts) Staff Summary
+[p138_c0002] Construction & Development
+[p138_c0003] Item No. 7
+[p138_c0004] Page 1 of 2
+[p138_c0005]
+
+```text
+Dept & Dept Head Name: Stations Business Unit, Delivery/Barney Gray SUMMARY INFORMATION Vendor Name ECCO III Enterprises, Inc Contract Number A37691 Contracts Department: David K. Cannon, VP & Chief Procurement Officer Description Design-Build Services for Flushing-Main Street Station Circulation Improvements Board Reviews Total Amount Order To Date Approval Info Other 1. A37691 Award: $ 30,381,000 2. Stipend Payments: $ 300,000 1 NYCT & Bus Committee 12/13/2021 X 2 Board 12/15/2021 X Internal Approvals Order Approval Order Approval Deputy Chief, Development President Deputy Chief, Delivery Executive Vice President & General Counsel Funding Source Operating Capital Federal State
+```
+### [p138_c0006] Purpose/Recommendation
+[p138_c0007] MTA Construction and Development ("C&D") requests Board approval to award a publicly advertised and competitively solicited contract for design and construction services for Flushing-Main Street Station circulation improvements to ECCO III Enterprises, Inc. in the amount of $30,381,000 and a duration of 679 calendar days. In accordance with MTA policy regarding the use of design-build contracts, and to enhance competition and defray proposal costs, this solicitation includes a stipend of $100,000 to be paid to each unsuccessful proposer whose proposal met the defined proposal standards. Accordingly, approval is also requested to pay stipends totaling $300,000 to the three unsuccessful proposers.
+### [p138_c0008] Discussion
+[p138_c0009] Contract A37691 (the "Contract") will rehabilitate four (4) existing street stairwells and add four (4) additional street stairwells which will increase the number of street-to-mezzanine stairwells from five (5) to a total of nine (9) at the Main Street and Roosevelt Avenue entrance to the Flushing-Main Street Station. The Work also includes the reorientation of four (4) existing mezzanine-to-platform stairwells with new stairs and the construction of four (4) new mezzanine-to-platform stairwells for a total of twelve (12) mezzanine-to-platform stairwells at the Main Street mezzanine level. In order to accommodate the new stairwells, the Main Street mezzanine will be expanded and will include a new fare array. In addition, the Work will include state-of-good-repair improvements at the platform level including repairs to the platform edges, walls, ceilings, and column bases. The Flushing-Main Street Station is currently ADA accessible.
+[p138_c0010] A two-step procurement process was conducted for the Contract. In Step 1, a Request for Qualifications was advertised resulting in the submission of seven (7) Statements of Qualification which were evaluated against the pre-established Threshold Criteria (addressing completeness, timeliness, capacity, responsibility, and financial capability) and Substantive Evaluation Criteria (addressing key personnel and organization, project approach, prior experience, past performance, financial strength, and diversity compliance). The following four firms were selected to receive the Request for Proposal (RFP) in Step 2:
+[p138_c0011] _Master Page # 138 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 139
+
+### [p139_c0001] Schedule C Competitive Requests for Proposals (Award of Purchase/Public Work Contracts) Construction & Development Staff Summary
+### [p139_c0002] Item No. 7
+### [p139_c0003] Page 2 of 2
+- [p139_c0004] • ECCO III Enterprises, Inc. ("ECCO") • Fos Development ("Fos") • John Civetta & Sons, Inc. ("Civetta") • J-Track LLC ("J-Track").
+[p139_c0005] Each of the four (4) selected firms submitted a technical and price proposal in response to the RFP. The Selection Committee, consisting of representatives from C&D and New York City Transit, first reviewed the technical proposals and heard oral presentations from each of the respondents. The Selection Committee evaluated the technical proposals using the pre-established selection criteria which assessed proposers' design and construction approach, overall project schedule, management plan, experience, record of performance, safety and quality, diversity practices and other relevant matters, including whether the proposals properly accounted for the New York City Department of Transportation's Office of Construction Mitigation and Coordination stipulations ("DOT OCMC Stipulations") phasing requirements. The selection committee next opened the cost proposals which were as follows: Civetta – $31,413,500; ECCO – $30,576,000; Fos – $29,601,021; and J-Track – $37,888,000.
+[p139_c0006] Although all four proposers submitted technical proposals that were initially deemed acceptable overall, the Selection Committee subsequently determined that the phasing plans submitted by Fos and Civetta were not compliant with the DOT OCMC Stipulations and that ECCO and J-Track's proposals presented the ideal combination of technical approach, cost, and schedule. Accordingly, the Selection Committee recommended that ECCO and J-Track be invited for negotiations.
+[p139_c0007] Negotiations were conducted with ECCO and J-Track and included detailed discussions of the proposed design and construction approach, project schedule, and overall cost. Following negotiations, Best and Final Offers ("BAFOs") were requested from ECCO and J-Track. The results of the BAFOs were as follows:
+- [p139_c0008] • ECCO $30,381,000 • J-Track $32,480,000
+[p139_c0009] After review of the BAFOs, the Selection Committee unanimously recommended ECCO for award of the Contract. The Selection Committee determined that ECCO's proposal offered the best overall value considering the strength of their technical proposal, their lowest proposed cost and reductions to schedule, which will minimize the impact of the work on MTA's customers. C&D and ECCO agreed on ECCO's BAFO lump sum price of $30,381,000 for the Contract. The agreed upon price takes into consideration reduced overhead costs associated with schedule reductions and an alternate approach (through Alternative Technical Concepts) to the configuration of mezzanine-to-platform stairs, which will eliminate the need to construct an independent footing under the existing platform and reconstruction of a portion of the platform. The agreed upon price is considered to be fair and reasonable.
+[p139_c0010] ECCO has been found to be responsible.
+### [p139_c0011] DBE/MBE/WBE/SDVOB Information
+[p139_c0012] The MTA Department of Diversity and Civil Rights ("DDCR") has established a 22.5% DBE goal for the Design/Build Contract. Although this is a design/build contract with some undefined scope of work, ECCO is projecting to meet the required 22.5% DBE goal. ECCO has achieved its DBE/MBE/WBE goals on previously completed MTA contracts.
+### [p139_c0013] Impact on Funding
+[p139_c0014] Funding for the design and construction of circulation improvements and stipend for the three unsuccessful proposers are included in the New York City Transit portion of the MTA's 2020-2024 Capital Program. This Contract will be funded, in part, with Federal funds.
+### [p139_c0015] Alternatives
+[p139_c0016] None recommended. Currently, MTA lacks available in-house technical personnel to perform the scope of work associated with the Design/Build Contract.
+[p139_c0017] _Master Page # 139 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 140
+
+### [p140_c0001] Construction & Development
+### [p140_c0002] Schedule C Competitive Requests for Proposals (Award of Purchase/Public Work Contracts)
+### [p140_c0003] Staff Summary
+[p140_c0004] Items No. 8
+### [p140_c0005] Page 1 of 2
+[p140_c0006]
+
+```text
+Dept & Dept Head Stations Business Unit/Barney Gray Contracts Department David K. Cannon, Vice President & Chief Procurement Officer David K. Cannon Board Reviews Order To Date Approval Info Other 1 NYCT & Bus Committee 12/13/21 X 2 Board 12/15/21 X Internal Approvals Approval Approval DK Deputy Chief, Development DK President MK Deputy Chief, Delivery MK Executive Vice President & General Counsel
+```
+[p140_c0007]
+
+```text
+SUMMARY INFORMATION Vendor Name Contract Number Forte Construction Corp. E30643 Description Design-Build Services for Systemwide Escalator Replacements Total Amount 1. E30643 Award: $ 28,420,000 2. Stipend Payment: $ 150,000 Contract Term 900 Calendar Days Option(s) included in Total Amount? Yes No N/A Renewal? Yes No Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Funding Source Operating Capital Federal MTA
+```
+### [p140_c0008] Purpose/Recommendation
+[p140_c0009] MTA Construction & Development (“C&D”) requests Board approval to award a publicly advertised and competitively solicited contract for the design and construction services to replace two escalators at 161 st Street Yankee Stadium Station and two escalators at DeKalb Avenue Station (the “Project”) to Forte Construction Corp. in the amount of $28,420,000 and a duration of 900 calendar days. In accordance with MTA policy regarding the use of design-build contracts, and to enhance competition and defray proposal costs, this solicitation includes a stipend in the amount of $150,000 to be paid to each unsuccessful proposer whose proposal met the defined proposal standards. Accordingly, C&D requests that the Board also approve the payment of a stipend to the one unsuccessful proposer for a total amount of $150,000.
+### [p140_c0010] Discussion
+[p140_c0011] Contract E30643 (the “Contract”) is for the replacement of escalators at the 161 st Yankee Stadium Station and the Dekalb Avenue Station which have reached the end of their useful lives. The Contract also includes replacing equipment in the escalator machine rooms at each Station and “state of good repair” work in the vicinity of the escalators, such as replacing tile finishes on the walls, adding new handrails to the existing stairwells adjacent to the escalators and replacing existing lighting with new LED lighting.
+[p140_c0012] A two-step procurement process was conducted for this contract. In Step 1, a Request for Qualifications was advertised resulting in the submission of three (3) Statements of Qualification which were evaluated against the pre-established Threshold Criteria (addressing completeness, timeliness, capacity, responsibility, and financial capability) and Substantive Evaluation Criteria (addressing key personnel and organization, project approach, prior experience, past performance, financial strength, and diversity compliance). All three (3) firms were selected to receive the Request for Proposal (“RFP”) in Step 2:
+[p140_c0013] _Master Page # 140 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 141
+
+### [p141_c0001] Schedule C Competitive Requests for Proposals (Award of Purchase/Public Work Contracts)
+### [p141_c0002] Construction & Development
+### [p141_c0003] Staff Summary
+[p141_c0004] Items No. 8
+[p141_c0005] Page 2 of 2
+- [p141_c0006] • AD Tech Enterprises Ltd. ("AD Tech") • Forte Construction Corp. ("Forte") • Navillus Tile, Inc. ("Navillus")
+[p141_c0007] In response to the RFP, two (2) teams, Forte and Navillus submitted technical and price proposals. AD Tech elected not to submit a proposal. The Selection Committee, consisting of representatives from C&D and New York City Transit, first reviewed the technical proposals and heard oral presentations from each of the respondents. The Selection Committee evaluated the technical proposals using the pre-established selection criteria which assessed proposers' design and construction approach, overall project schedule, management plan, experience, record of performance, safety and quality, diversity practices and other relevant matters. The Selection Committee next opened the cost proposals which were as follows: Forte - $28,820,000 and Navillus - $33,475,000
+[p141_c0008] Based upon its review of the technical and cost proposals, the Selection Committee determined that the proposal from Forte presented a superior combination of technical approach, cost and schedule. The Selection Committee determined that Forte displayed a strong understanding of the project objectives, scope of work, design deliverable and the required construction elements. Their past experience on similar projects, including projects containing escalator work, demonstrated that they had the necessary experience and qualifications to complete this project on time and within budget. In contrast, the Selection Committee determined the proposal submitted by Navillus lacked clarity in identifying potential design and construction risks and how to mitigate these risks. Moreover, during the oral presentations, Navillus did not have their Project Management Team present, and their Executive Team was unable to answer specific questions regarding the Work. After review and consideration of both proposals, the Selection Committee unanimously recommended that only Forte be invited for negotiations.
+[p141_c0009] Negotiations with Forte included discussions of the proposed design and construction approach, project schedule, overall cost, and clarification of the key personnel needed on the project. As a result of negotiations, Forte offered a Best and Final Offer ("BAFO") which provided an overall price reduction of $400,000, and the final cost of $28,420,000.
+[p141_c0010] The Selection Committee unanimously recommended Forte for award based on the strength of their technical proposal, which included a strong understanding of the Project, the risks inherent to the Project and how to mitigate those risks and a competitive schedule. The Contract also includes incentives for the early completion of the Work, as well as liquidated damages for Design-Builder caused delays to achieving certain Contract Milestones, including Substantial Completion. Forte's price is considered to be fair and reasonable.
+[p141_c0011] Forte has been found to be responsible.
+### [p141_c0012] DBE/MBE/WBE/SDVOB Information
+[p141_c0013] The MTA Department of Diversity and Civil Rights ("DDCR") has established a 22.5% DBE goal for the Design/Build Contract. Forte has committed to a goal of 11.44% due the lack of DBE firms in the marketplace and the limited sub-contractible elements. Forte has committed to maximize DBE participation on this Contract. Forte has achieved its DBE/MBE/WBE goals on previously completed MTA contracts.
+### [p141_c0014] Impact on Funding
+[p141_c0015] Funding for the design, construction and replacement of two escalators at 161 st Street Yankee Stadium Station and two escalators at DeKalb Avenue Station, and stipends for the one unsuccessful proposer is included in the NYCT portion of the MTA's 2020-2024 Capital Program. This contract will be funded in part, with Federal funds.
+### [p141_c0016] Alternatives
+[p141_c0017] None recommended. Currently, MTA lacks available in-house technical personnel to perform the scope of work associated with this Contract.
+[p141_c0018] _Master Page # 141 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 142
+
+### [p142_c0001] New York City Transit
+[p142_c0002] _Master Page # 142 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 143
+
+### [p143_c0001] Staff Summary
+### [p143_c0002] New York City Transit
+### [p143_c0003] Page 1 of 2
+[p143_c0004]
+
+```text
+Subject NYCT 2022 Budget and 2022-2025 Financial Plan Adoption Department Office of the Chief Financial Officer Department Head Name Robert Foran, Chief Financial Officer Department Head Signature Project Manager Name Jaibala Patel
+```
+[p143_c0005]
+
+```text
+Date December 2, 2021 Vendor Name NA Contract Number NA Contract Manager Name NA Table of Contents Ref #
+```
+[p143_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 TA Committee 12/13/21 X 2 Finance Committee 12/13/21 X 3 MTA Board 12/15/21 X
+```
+[p143_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 OMB 2 Financial Liaison 3 President 4
+```
+### [p143_c0008] Purpose
+[p143_c0009] To secure MTA Board adoption of MTA New York City Transit's 2021 November Forecast, 2022 Final Proposed Budget, and the Four-Year Financial Plan for 2022-2025.
+### [p143_c0010] Discussion
+[p143_c0011] New York City Transit (NYCT) continues to emerge from the COVID-19 pandemic, and ridership has gradually increased in concert with the availability of vaccines and the region's re-opening. Despite the improvement, NYCT's financial outlook remains fragile, with current projections based on the midpoint between the McKinsey "best-case" and "worst-case" scenarios. The Financial Plan assumes that NYCT will only reach 87.5% of pre-pandemic ridership by the start of 2024, resulting in significantly less farebox revenue. This large reduction in farebox revenue makes the agency's financial outlook precarious, which underlines the need for continued efforts to maximize efficiency and reduce costs. The November Plan reflects updates for actions taken as well as several revisions to initiatives to reflect current implementation timelines. NYCT projections do not include the estimated impacts of projected fare increases and MTA consolidated below-the-line adjustments, which are presented as part of MTA consolidated materials.
+### [p143_c0012] November Financial Plan Highlights are summarized as follows:
+- [p143_c0013] • Farebox revenue is projected to surpass the Mid-Year Forecast by $124.6 million in 2021, due to favorable ridership and higher average fares, with minor decreases in the out-years that reflect lower paratransit revenue. • COVID-19 preventative measures are revised lower by $37.9 million in 2021, and $73.8 million in subsequent years reflecting the restoration of overnight subway service with the elimination of auxiliary bus shuttle service and lower costs for fleet and station cleaning and disinfecting. • Paratransit Service projections are revised lower by $30.4 million in 2021 and about $50 million annually in subsequent years reflecting a slower ridership return than previously projected. • Health & Welfare expenses are projected to be lower by $64.3 million over the plan period reflecting a higher trend in inflation offset by savings resulting from the recently approved medical benefits contract.
+### [p143_c0014] Baseline Ridership
+[p143_c0015] The McKinsey midpoint projects ridership reaching 55.5% of the pre-pandemic level for subway and 62.0% for bus during the fourth quarter of 2021. Overall, 2021 ridership recovery, incorporating actuals through August and projections for the remainder of the year, is 44.1% for subway and 54.9% for bus. Subway and bus modes are projected to increase to 85.5% by fourth quarter 2022, before reaching the "new normal" level of 87.5% by the first quarter of 2024.
+[p143_c0016] Paratransit ridership projections in prior plans had assumed a more rapid recovery to pre-pandemic levels than other modes, with total trips reaching 75% of pre-pandemic levels in 2021, and 100% in 2022. The actual return of ridership in 2021 has been notably slower than forecast, and as a result, paratransit ridership is now projected to reach 80% of the pre-pandemic level in fourth quarter 2021, 90% in 2022, and 100% in subsequent years.
+[p143_c0017] _Master Page # 143 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 144
+
+### [p144_c0001] Staff Summary
+### [p144_c0002] 2 of 2
+### [p144_c0003] Programmatic Initiatives
+[p144_c0004] New Needs requests fund initiatives such as: the expansion of automated bus lane enforcement; the launch of an all-electric bus fleet testing program as Transit transitions to a fully zero-emissions fleet by 2040; the expansion of communications-based train control and facilities maintenance; and additional operational employee hiring to address higher employee absenteeism and ensure that scheduled service can be provided.
+[p144_c0005] NYCT continues to manage its Budget Reduction Program (BRP), and also the significant Additional Savings Actions implemented in the 2021 February Financial Plan. The 2021 November Plan also includes several adjustments to savings actions previously implemented. These adjustments include the restoration of Bus Operator and Cleaner positions and additional overtime in support of Station Agent booth hours of operation and staffing, largely due to efforts to maintain service at 100% of the pre-pandemic level. Additionally, there are some adjustments to prior-year BRPs, including those related to the schedule for achieving timekeeping savings, and implementing booth staffing and lunch relief savings.
+### [p144_c0006] 2021 November Forecast-Baseline
+[p144_c0007] Total Non-Reimbursable revenues are projected at $2.751 billion, including $2.281 billion of farebox revenues. Total Non-Reimbursable expenses are projected to be $8.596 billion, consisting of labor expenses of $6.873 billion and non-labor expenses of $1.723 billion. Non-cash depreciation expense is projected at $2.110 billion, GASB 75 other post-employment benefit expenses are projected at $1.232 billion, and GASB 68 pension expenses are projected as a credit of $62.0 million. Projected Reimbursable expenses of $1.082 billion are fully offset by capital reimbursements. Total baseline full-time and full-time equivalent positions are 47,480 including 42,733 Non-Reimbursable positions and 4,747 Reimbursable positions.
+### [p144_c0008] 2022 Final Proposed Budget-Baseline
+[p144_c0009] Total Non-Reimbursable revenues are projected at $4.121 billion, including farebox revenues of $3.603 billion. Total Non-reimbursable expenses are projected to be $9.220 billion, consisting of labor expenses of $7.112 billion and non-labor expenses of $2.108 billion. Non-cash depreciation expense is projected at $2.152 billion, GASB 75 other post-employment benefit expenses are projected at $1.257 billion, and GASB 68 pension expenses are projected as a credit of $63.3 million. Projected Reimbursable expenses of $1.246 billion are fully offset by capital reimbursements. Total end-of-year positions are projected at 48,041 including 43,374 Non-Reimbursable positions and 4,667 Reimbursable positions.
+### [p144_c0010] Impact on Funding
+[p144_c0011] The 2021 November Forecast, the 2022 Final Proposed Budget and the Four-Year Financial Plan for 2022-2025, which are presented in the attached tables, are consistent with the proposed MTA Financial Plan.
+### [p144_c0012] Recommendation
+[p144_c0013] It is recommended that the MTA Board adopt the 2021 November Forecast, the 2022 Final Proposed Budget and the Four-Year Financial Plan for 2022-2025 for MTA New York City Transit and the related authorization to draw down Transit Adjudication Bureau (TAB) receipts and interest consistent with this Final Proposed Budget.
+[p144_c0014] _Master Page # 144 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 145
+
+### [p145_c0001] MTA NEW YORK CITY TRANSIT November Financial Plan 2022 - 2025 Accrual Statement of Operations By Category ($ in millions)
+[p145_c0002]
+
+```text
+Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Non-Reimbursable Operating Revenue Farebox Revenue: Subway $1,529.695 $1,687.187 $2,789.948 $3,111.088 $3,163.411 $3,147.149 Bus 386.430 542.700 739.745 801.307 815.132 810.646 Paratransit 5.650 16.421 20.508 23.426 24.598 25.827 Fare Media Liability 89.706 34.514 52.595 47.100 39.250 39.250 Farebox Revenue $2,011.481 $2,280.821 $3,602.796 $3,982.921 $4,042.391 $4,022.872 Other Operating Revenue: Fare Reimbursement 78.971 89.066 84.016 84.016 84.016 84.016 Paratransit Reimbursement 174.964 216.617 246.370 278.479 295.325 311.503 Other 2,941.750 164.834 187.544 194.771 198.400 201.847 Other Operating Revenue $3,195.685 $470.517 $517.930 $557.266 $577.741 $597.366 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $5,207.166 $2,751.339 $4,120.726 $4,540.187 $4,620.132 $4,620.237 Operating Expense Labor: Payroll $3,476.823 $3,426.024 $3,672.377 $3,722.627 $3,816.808 $3,920.057 Overtime 582.371 629.057 491.660 501.440 511.303 521.000 Total Salaries and Wages $4,059.193 $4,055.081 $4,164.038 $4,224.067 $4,328.111 $4,441.056 Health and Welfare 914.139 1,007.411 1,130.747 1,192.932 1,276.495 1,372.684 OPEB Current Payments 459.200 547.433 583.822 642.132 705.808 776.511 Pension 1,025.846 922.257 926.729 948.512 966.899 985.928 Other Fringe Benefits 416.039 559.292 566.218 593.660 630.409 671.150 Total Fringe Benefits $2,815.224 $3,036.393 $3,207.516 $3,377.235 $3,579.611 $3,806.272 Reimbursable Overhead (211.575) (218.428) (259.657) (243.747) (244.493) (241.769) Total Labor Expenses $6,662.843 $6,873.045 $7,111.896 $7,357.555 $7,663.230 $8,005.559 Non-Labor: Electric Power $239.842 $268.514 $315.653 $311.090 $314.580 $324.308 Fuel 59.026 95.621 125.398 119.014 115.156 116.984 Insurance 75.353 74.592 83.798 107.645 117.676 138.411 Claims 112.089 107.923 213.082 225.810 230.373 235.028 Paratransit Service Contracts 326.316 365.236 423.876 474.888 504.693 527.291 Maintenance and Other Operating Contracts 333.545 326.982 356.966 374.689 380.228 391.996 Professional Services Contracts 146.113 149.429 158.841 163.446 159.968 162.641 Materials and Supplies 292.386 260.239 333.962 336.960 319.394 330.169 Other Business Expenses 50.053 74.387 96.437 103.157 106.967 107.022 Total Non-Labor Expenses $1,634.723 $1,722.923 $2,108.013 $2,216.700 $2,249.035 $2,333.850 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $8,297.566 $8,595.968 $9,219.910 $9,574.255 $9,912.265 $10,339.409 Depreciation $2,069.768 $2,110.201 $2,152.405 $2,195.453 $2,239.362 $2,284.149 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 699.401 1,232.143 1,256.786 1,281.922 1,307.561 1,333.712 GASB 68 Pension Expense Adjustment (96.819) (62.040) (63.281) (64.547) (65.838) (67.154) Environmental Remediation 115.677 0.000 0.000 0.000 0.000 0.000 Total Expenses $11,085.593 $11,876.272 $12,565.820 $12,987.083 $13,393.350 $13,890.116 Net Surplus/(Deficit) ($5,878.426) ($9,124.934) ($8,445.094) ($8,446.896) ($8,773.218) ($9,269.879)
+```
+[p145_c0003] _Master Page # 145 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 146
+
+### [p146_c0001] MTA NEW YORK CITY TRANSIT November Financial Plan 2022 - 2025 Accrual Statement of Operations By Category ($ in millions)
+[p146_c0002]
+
+```text
+Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 1,087.953 1,082.129 1,245.721 1,181.595 1,189.392 1,188.802 Total Revenues $1,087.953 $1,082.129 $1,245.721 $1,181.595 $1,189.392 $1,188.802 Operating Expense Labor: Payroll $417.323 $411.813 $488.802 $460.770 $462.178 $461.187 Overtime 113.180 98.572 122.689 120.513 122.989 124.352 Total Salaries and Wages $530.503 $510.385 $611.491 $581.283 $585.167 $585.539 Health and Welfare 21.774 24.908 27.933 28.300 29.831 31.152 OPEB Current Payments 11.450 14.858 15.692 16.597 17.510 18.469 Pension 34.279 46.808 37.726 35.715 35.875 36.447 Other Fringe Benefits 166.632 159.844 192.755 180.855 181.282 180.192 Total Fringe Benefits $234.136 $246.418 $274.106 $261.467 $264.493 $266.261 Reimbursable Overhead 211.575 218.428 259.657 243.747 244.493 241.769 Total Labor Expenses $976.214 $975.232 $1,145.254 $1,086.498 $1,094.157 $1,093.569 Non-Labor: Electric Power $0.251 $0.252 $0.252 $0.252 $0.252 $0.252 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 38.193 42.463 38.805 33.885 34.772 34.771 Professional Services Contracts 19.974 10.071 10.024 10.024 9.524 9.524 Materials and Supplies 45.161 52.605 51.868 51.418 51.168 51.168 Other Business Expenses 8.160 1.506 (0.482) (0.482) (0.482) (0.482) Total Non-Labor Expenses $111.739 $106.897 $100.467 $95.097 $95.234 $95.233 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $1,087.953 $1,082.129 $1,245.721 $1,181.595 $1,189.392 $1,188.802 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p146_c0003] _Master Page # 146 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 147
+
+### [p147_c0001] MTA NEW YORK CITY TRANSIT November Financial Plan 2022 - 2025 Accrual Statement of Operations By Category ($ in millions)
+[p147_c0002]
+
+```text
+Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue: Subway $1,529,695 $1,687,187 $2,789,948 $3,111,088 $3,163,411 $3,147,149 Bus 386,430 542,700 739,745 801,307 815,132 810,646 Paratransit 5,650 16,421 20,508 23,426 24,598 25,827 Fare Media Liability 89,706 34,514 52,595 47,100 39,250 39,250 Farebox Revenue $2,011,481 $2,280,821 $3,602,796 $3,982,921 $4,042,391 $4,022,872 Other Operating Revenue: Fare Reimbursement 78,971 89,066 84,016 84,016 84,016 84,016 Paratransit Reimbursement 174,964 216,617 246,370 278,479 295,325 311,503 Other 2,941,750 164,834 187,544 194,771 198,400 201,847 Other Operating Revenue $3,195,685 $470,517 $517,930 $557,266 $577,741 $597,366 Capital and Other Reimbursements 1,087,953 1,082,129 1,245,721 1,181,595 1,189,392 1,188,802 Total Revenues $6,295,119 $3,833,468 $5,366,448 $5,721,782 $5,809,524 $5,809,039 Operating Expense Labor: Payroll $3,894,146 $3,837,837 $4,161,179 $4,183,397 $4,278,986 $4,381,243 Overtime 695,551 727,629 614,349 621,953 634,293 645,352 Total Salaries and Wages $4,589,696 $4,565,466 $4,775,528 $4,805,350 $4,913,278 $5,026,595 Health and Welfare 935,913 1,032,318 1,158,680 1,221,232 1,306,326 1,403,836 OPEB Current Payments 470,649 562,292 599,514 658,729 723,317 794,980 Pension 1,060,125 969,065 964,455 984,226 1,002,774 1,022,375 Other Fringe Benefits 582,672 719,136 758,973 774,514 811,691 851,342 Total Fringe Benefits $3,049,360 $3,282,811 $3,481,622 $3,638,702 $3,844,109 $4,072,533 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $7,639,056 $7,848,277 $8,257,151 $8,444,052 $8,757,387 $9,099,128 Non-Labor: Electric Power $240,093 $268,766 $315,905 $311,342 $314,832 $324,560 Fuel 59,026 95,621 125,398 119,014 115,156 116,984 Insurance 75,353 74,592 83,798 107,645 117,676 138,411 Claims 112,089 107,923 213,082 225,810 230,373 235,028 Paratransit Service Contracts 326,316 365,236 423,876 474,888 504,693 527,291 Maintenance and Other Operating Contracts 371,739 369,445 395,771 408,574 415,000 426,767 Professional Services Contracts 166,088 159,500 168,865 173,470 169,492 172,165 Materials and Supplies 337,547 312,844 385,829 388,378 370,562 381,337 Other Business Expenses 58,213 75,894 95,956 102,675 106,485 106,540 Total Non-Labor Expenses $1,746,462 $1,829,821 $2,208,481 $2,311,797 $2,344,270 $2,429,084 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $9,385,519 $9,678,097 $10,465,631 $10,755,850 $11,101,657 $11,528,211 Depreciation $2,069,768 $2,110,201 $2,152,405 $2,195,453 $2,239,362 $2,284,149 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 699,401 1,232,143 1,256,786 1,281,922 1,307,561 1,333,712 GASB 68 Pension Expense Adjustment (96,819) (62,040) (63,281) (64,547) (65,838) (67,154) Environmental Remediation 115,677 0.000 0.000 0.000 0.000 0.000 Total Expenses $12,173,545 $12,958,401 $13,811,541 $14,168,678 $14,582,742 $15,078,918 Net Surplus/(Deficit) ($5,878,426) ($9,124,934) ($8,445,094) ($8,446,896) ($8,773,218) ($9,269,879)
+```
+[p147_c0003] _Master Page # 147 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 148
+
+### [p148_c0001] MTA NEW YORK CITY TRANSIT November Financial Plan 2022 - 2025 Cash Receipts and Expenditures ($ in millions)
+[p148_c0002]
+
+```text
+Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Cash Receipts and Expenditures Receipts Farebox Revenue $1,957.647 $2,286.745 $3,602.996 $3,983.121 $4,042.591 $4,023.072 Other Operating Revenue: Fare Reimbursement 20.201 117.832 70.250 84.016 84.016 84.016 Paratransit Reimbursement 188.333 221.093 246.159 278.273 295.104 311.415 Other Revenue 2,901.606 46.072 56.184 60.988 62.145 63.072 Other Operating Revenue 3,110.140 384.998 372.593 423.277 441.266 458.503 Capital and Other Reimbursements 1,017.801 1,247.755 1,210.686 1,194.443 1,187.256 1,188.415 Total Receipts $6,085.588 $3,919.497 $5,186.274 $5,600.841 $5,671.113 $5,669.989 Expenditures Labor: Payroll $3,894.751 $3,803.139 $4,159.547 $4,145.928 $4,248.611 $4,497.420 Overtime 695.551 727.629 614.349 621.953 634.293 645.352 Total Salaries & Wages $4,590.302 $4,530.768 $4,773.896 $4,767.881 $4,882.903 $5,142.771 Health and Welfare 925.653 1,028.294 1,146.828 1,208.492 1,292.630 1,389.113 OPEB Current Payments 470.649 562.292 599.514 658.729 723.317 794.980 Pension 1,038.120 969.065 964.455 984.226 1,002.774 1,022.375 Other Fringe Benefits 320.305 659.859 665.987 569.479 593.031 628.529 Total Fringe Benefits $2,754.727 $3,219.510 $3,376.785 $3,420.926 $3,611.754 $3,834.997 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $7,345.029 $7,750.278 $8,150.681 $8,188.807 $8,494.657 $8,977.768 Non-Labor: Electric Power $252.324 $279.688 $326.827 $322.264 $325.754 $335.482 Fuel 69.296 88.623 125.398 119.014 115.156 116.984 Insurance 89.018 68.758 93.912 107.598 126.915 152.961 Claims 94.141 70.189 152.942 144.826 149.389 154.044 Paratransit Service Contracts 343.503 363.236 421.876 472.888 502.693 525.291 Maintenance and Other Operating Contracts 343.860 386.139 402.965 415.768 422.194 433.961 Professional Services Contracts 174.139 159.733 159.865 164.470 160.492 163.165 Materials and Supplies 325.338 304.173 384.329 386.878 369.062 379.837 Other Business Expenses 59.387 75.894 95.956 102.675 106.485 106.540 Total Non-Labor Expenditures $1,751.006 $1,796.433 $2,164.071 $2,236.382 $2,278.140 $2,368.266 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $9,096.035 $9,546.710 $10,314.751 $10,425.189 $10,772.797 $11,346.034 Net Cash Balance ($3,010.447) ($5,627.213) ($5,128.477) ($4,824.348) ($5,101.684) ($5,676.044)
+```
+[p148_c0003] _Master Page # 148 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 149
+
+### [p149_c0001] MTA NEW YORK CITY TRANSIT November Financial Plan 2022 - 2025 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p149_c0002]
+
+```text
+Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Cash Flow Adjustments Receipts Farebox Revenue ($53.834) $5.924 $0.200 $0.200 $0.200 $0.200 Other Operating Revenue: Fare Reimbursement (58.770) 28.766 (13.766) 0.000 0.000 0.000 Paratransit Reimbursement 38.509 4.476 (0.211) (0.206) (0.221) (0.088) Other Revenue (65.284) (118.762) (131.361) (133.783) (136.255) (138.775) Other Operating Revenue ($85.545) ($85.520) ($145.337) ($133.989) ($136.475) ($138.863) Capital and Other Reimbursements (70.152) 165.625 (35.036) 12.848 (2.135) (0.387) Total Receipts ($209.531) $86.030 ($180.173) ($120.941) ($138.411) ($139.050) Expenditures Labor: Payroll ($0.606) $34.698 $1.632 $37.469 $30.375 ($116.176) Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Total Salaries and Wages ($0.606) $34.698 $1.632 $37.469 $30.375 ($116.176) Health and Welfare 10.261 4.025 11.852 12.741 13.696 14.723 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 22.005 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 262.367 59.276 92.986 205.036 218.659 222.813 Total Fringe Benefits $294.633 $63.301 $104.838 $217.776 $232.355 $237.536 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $294.027 $97.999 $106.470 $255.245 $262.730 $121.360 Non-Labor: Electric Power ($12.231) ($10.922) (10.922) ($10.922) ($10.922) ($10.922) Fuel (10.270) 6.998 0.000 0.000 0.000 0.000 Insurance (13.665) 5.834 (10.114) 0.047 (9.238) (14.550) Claims 17.948 37.734 60.140 80.984 80.984 80.984 Paratransit Service Contracts (17.187) 2.000 2.000 2.000 2.000 2.000 Maintenance and Other Operating Contracts 27.879 (16.694) (7.194) (7.194) (7.194) (7.194) Professional Services Contracts (8.051) (0.233) 9.000 9.000 9.000 9.000 Materials and Supplies 12.209 8.671 1.500 1.500 1.500 1.500 Other Business Expenses (1.174) 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenditures ($4.544) $33.388 $44.410 $75.415 $66.130 $60.818 Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $289.484 $131.387 $150.880 $330.660 $328.860 $182.178 Total Cash Conversion Adjustments before Depreciation $79.953 $217.417 ($29.293) $209.720 $190.449 $43.127 Depreciation $2,069.768 $2,110.201 $2,152.405 $2,195.453 $2,239.362 $2,284.149 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 699.401 1,232.143 1,256.786 1,281.922 1,307.561 1,333.712 GASB 68 Pension Expense Adjustment (96.819) (62.040) (63.281) (64.547) (65.838) (67.154) Environmental Remediation 115.677 0.000 0.000 0.000 0.000 0.000 Total Cash Conversion Adjustments $2,867.979 $3,497.721 $3,316.617 $3,622.548 $3,671.534 $3,593.834
+```
+[p149_c0003] _Master Page # 149 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 150
+
+### [p150_c0001] MTA NEW YORK CITY TRANSIT November Financial Plan 2022 - 2025 Ridership (Utilization) and Revenue (in millions)
+### [p150_c0002] RIDERSHIP
+[p150_c0003]
+
+```text
+Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Subway 639.541 748.216 1,304.648 1,455.240 1,479.470 1,474.907 Bus 208.847 304.897 431.175 466.973 474.853 473.537 Paratransit 7.117 8.277 9.559 10.918 11.464 12.037 Total Ridership 855.505 1,061.390 1,745.381 1,933.131 1,965.787 1,960.481
+```
+### [p150_c0004] FAREBOX REVENUE (Excluding fare media liability)
+[p150_c0005]
+
+```text
+Subway $1,529.695 $1,687.187 $2,789.948 $3,111.088 $3,163.411 $3,147.149 Bus 386.430 542.700 739.745 801.307 815.132 810.646 Paratransit 5.650 16.421 20.508 23.426 24.598 25.827 Total Revenue $1,921.775 $2,246.307 $3,550.201 $3,935.821 $4,003.141 $3,983.622
+```
+[p150_c0006] _Master Page # 150 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 151
+
+### [p151_c0001] NEW YORK CITY TRANSIT November Financial Plan 2022-2025 2021 Budget Reduction Plan Summary ($ in millions)
+[p151_c0002]
+
+```text
+Favorable/(Unfavorable) Pos. 2021 Pos. 2022 Pos. 2023 Pos. 2024 Pos. 2025 Administration None - 0.000 - 0.000 - 0.000 - 0.000 - 0.000 Subtotal Administration - 0.000 - 0.000 - $0.000 - $0.000 - $0.000 Customer Convenience/Amenities None - 0.000 - 0.000 - 0.000 - 0.000 - 0.000 Subtotal Customer Convenience/Amenities - 0.000 - 0.000 - 0.000 - 0.000 - 0.000 Maintenance SMS Savings (July Plan) 82 9.024 106 12.010 72 5.566 80 7.123 (3) (4.819) Subtotal Maintenance 82 9.024 106 12.010 72 5.566 80 7.123 (3) (4.819) Revenue Enhancement None - 0.000 - 0.000 - 0.000 - 0.000 - 0.000 Subtotal Revenue Enhancement - 0.000 - 0.000 - 0.000 - 0.000 - 0.000 Safety None - 0.000 - 0.000 - 0.000 - 0.000 - 0.000 Subtotal Safety - 0.000 - 0.000 - 0.000 - 0.000 - 0.000 Security None - 0.000 - 0.000 - 0.000 - 0.000 - 0.000 Subtotal Security - 0.000 - 0.000 - 0.000 - 0.000 - 0.000 Service None - 0.000 - 0.000 - 0.000 - 0.000 - 0.000 Subtotal Service - 0.000 - 0.000 - 0.000 - 0.000 - 0.000 Service Support None - 0.000 - 0.000 - 0.000 - 0.000 - 0.000 Subtotal Service Support - 0.000 - 0.000 - 0.000 - 0.000 - 0.000 Other Health & Welfare - CVS Contract Savings (July Plan) - 28.400 - 30.700 - 33.200 - 35.800 - 38.500 Subtotal Other - 28.400 - 30.700 - 33.200 - 35.800 - 38.500 Agency Submission 82 $37.424 106 $42.710 72 $38.766 80 $42.923 (3) $33.681
+```
+[p151_c0003] _Master Page # 151 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 152
+
+### [p152_c0001] MTA New York City Transit November Financial Plan 2022 - 2025 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time/Full-Time Equivalents
+[p152_c0002]
+
+```text
+2020 2021 2022 Actual November Forecast Final Proposed Budget 2023 2024 2025 Administration Office of the President 23 15 15 15 15 15 Law 236 244 247 247 247 247 Office of the EVP 8 19 18 18 18 18 Human Resources 183 200 208 208 208 208 Office of Management and Budget 28 33 33 33 33 33 Capital Planning & Budget 26 - - - - - Strategy & Customer Experience 178 178 170 169 169 169 Non-Departmental - 1 - - - - Labor Relations 76 81 82 82 82 82 Office of People & Business Transformation 11 26 25 25 25 25 Materiel 204 153 172 171 171 171 Controller 101 109 108 107 107 107 Total Administration 1,074 1,059 1,078 1,075 1,075 1,075 Operations Subways Service Delivery 7,868 8,277 8,223 8,109 8,109 8,085 Subways Operation Support /Admin 396 395 395 395 395 395 Subways Stations 2,396 2,322 2,322 2,322 2,322 2,322 Subtotal - Subways 10,660 10,994 10,940 10,826 10,826 10,802 Buses 10,809 10,876 11,032 11,027 11,027 11,027 Paratransit 182 185 188 188 188 188 Operations Planning 335 357 356 354 354 354 Revenue Control 562 541 541 541 541 541 Non-Departmental - - - (98) (98) (98) Total Operations 22,548 22,953 23,057 22,838 22,838 22,814 Maintenance Subways Operation Support /Admin 79 102 119 115 88 88 Subways Engineering 314 329 337 304 281 275 Subways Car Equipment 4,704 4,178 4,794 4,564 4,650 4,943 Subways Infrastructure 1,828 1,869 1,851 1,814 1,814 1,745 Subways Elevator & Escalators 448 470 478 474 474 469 Subways Stations 3,228 3,666 3,309 3,289 3,274 3,274 Subways Track 2,823 3,118 3,201 3,201 3,201 3,201 Subways Power 634 629 631 601 601 601 Subways Signals 1,611 1,706 1,708 1,685 1,685 1,672 Subways Electronics Maintenance 1,462 1,578 1,574 1,493 1,467 1,467 Subtotal - Subways 17,131 17,645 18,002 17,540 17,535 17,735 Buses 3,374 3,385 3,398 3,396 3,442 3,377 Supply Logistics 522 523 523 523 523 523 System Safety 79 85 84 83 83 83 Non-Departmental 14 (102) (9) (81) (87) (62) Total Maintenance 21,120 21,536 21,998 21,461 21,496 21,656 Engineering/Capital Construction and Development 1,129 1,302 1,278 1,253 1,253 1,253 Total Engineering/Capital 1,129 1,302 1,278 1,253 1,253 1,253 Public Safety Security 593 630 630 620 620 620 Total Public Safety 593 630 630 620 620 620 Total Baseline Positions 46,464 47,480 48,041 47,247 47,282 47,418 Non-Reimbursable 42,603 42,733 43,374 43,017 43,115 43,367 Reimbursable 3,861 4,747 4,667 4,230 4,167 4,051 Total Full-Time 46,343 47,326 47,887 47,093 47,128 47,264 Total Full-Time Equivalents 121 154 154 154 154 154
+```
+[p152_c0003] _Master Page # 152 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 153
+
+### [p153_c0001] MTA NEW YORK CITY TRANSIT November Financial Plan 2022 - 2025 Total Positions by Function and Occupational Group Non-Reimbursable and Reimbursable
+[p153_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Administration Managers/Supervisors 362 329 349 349 349 349 Professional/Technical/Clerical 682 698 699 696 696 696 Operational Hourlies 30 32 30 30 30 30 Total Administration Headcount 1,074 1,059 1,078 1,075 1,075 1,075 Operations Managers/Supervisors 2,662 2,815 2,860 2,841 2,841 2,838 Professional/Technical/Clerical 496 467 469 466 466 466 Operational Hourlies 19,390 19,671 19,728 19,531 19,531 19,510 Total Operations Headcount 22,548 22,953 23,057 22,838 22,838 22,814 Maintenance Managers/Supervisors 3,702 3,895 3,935 3,854 3,846 3,865 Professional/Technical/Clerical 836 908 913 827 817 809 Operational Hourlies 16,582 16,733 17,150 16,780 16,833 16,982 Total Maintenance Headcount 21,120 21,536 21,998 21,461 21,496 21,656 Engineering / Capital Managers/Supervisors 278 353 338 321 321 321 Professional/Technical/Clerical 849 947 938 930 930 930 Operational Hourlies 2 2 2 2 2 2 Total Engineering Headcount 1,129 1,302 1,278 1,253 1,253 1,253 Public Safety Managers/Supervisors 242 265 265 265 265 265 Professional/Technical/Clerical 31 32 32 32 32 32 Operational Hourlies 320 333 333 323 323 323 Total Public Safety Headcount 593 630 630 620 620 620 Total Positions Managers/Supervisors 7,246 7,657 7,747 7,630 7,622 7,638 Professional/Technical/ Clerical 2,894 3,052 3,051 2,951 2,941 2,933 Operational Hourlies 36,324 36,771 37,243 36,666 36,719 36,847 Total Positions 46,464 47,480 48,041 47,247 47,282 47,418
+```
+[p153_c0003] _Master Page # 153 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 154
+
+### [p154_c0001] Staten Island Railway
+[p154_c0002] _Master Page # 154 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 155
+
+### [p155_c0001] Staff Summary
+### [p155_c0002] Page 1 of 2
+[p155_c0003]
+
+```text
+Subject SIR 2022 Budget and 2022 – 2025 Financial Plan Adoption Department Office of the Chief Financial Officer Department Head Name Robert Foran, Chief Financial Officer Department Head Signature Project Manager Name Jaibala Patel
+```
+[p155_c0004]
+
+```text
+Date December 2, 2021 Vendor Name NA Contract Number NA Contract Manager Name NA Table of Contents Ref #
+```
+[p155_c0005]
+
+```text
+Board Action Order To Date Approval Info Other 1 TA Committee 12/13/21 2 Finance Committee 12/13/21 3 MTA Board 12/15/21
+```
+[p155_c0006]
+
+```text
+Internal Approvals Order Approval Order Approval 1 OMB 2 Financial Liaison 3 President
+```
+### [p155_c0007] Purpose
+[p155_c0008] To secure MTA Board adoption of MTA Staten Island Railway’s 2021 November Forecast, 2022 Final Proposed Budget, and the Four-Year Financial Plan for 2022-2025.
+### [p155_c0009] Discussion
+[p155_c0010] Staten Island Railway (SIR) has begun to show gradual emergence from the COVID-19 pandemic, and ridership has slowly increased in concert with the availability of vaccines and the region’s reopening. Despite the improvement, the SIR financial outlook remains fragile, with current projections based on the McKinsey “worst case” scenario. The Financial Plan assumes that SIR will only reach 83% of pre-pandemic ridership by the start of 2024, resulting in significantly less farebox revenue. This large reduction in farebox revenue underlines the need for continued efforts to maximize efficiency and reduce costs. The Plan includes the resources to maintain current service levels while upholding the MTA’s commitment to safety and security, and continued support of ongoing capital program work. The SIR projections do not include the estimated impacts of projected fare increases and MTA consolidated below-the-line adjustments, which are presented as part of MTA consolidated materials.
+### [p155_c0011] Operational Highlights:
+- [p155_c0012] • Farebox revenue is projected to exceed the Mid-Year Forecast by $0.164 million in 2021 due to favorable ridership and higher average fares, and no changes for 2022 to 2025. • Revised estimates of actual COVID-19 preventative measures result in a projected increase in expense of $0.381 million in 2021 and $0.150 million annually for 2022 to 2025, mainly due to higher cleaning costs. • New Needs requests include: the retention of 20 positions for two years of continual support of mainline track tie replacement program; the provision of maintenance resources for the new Clifton Shop that replaced an antiquated facility that was severely damaged during SuperStorm Sandy; and one additional line supervisor to oversee repairs of safety related defects in the infrastructure division. • The November Plan assumes the retention of 11 reimbursable positions in 2022 for weekend shutdowns, including work train operators, flagmen, and pilots for on-track equipment in support of contractors performing capital work.
+[p155_c0013] _Master Page # 155 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 156
+
+### [p156_c0001] Staff Summary
+### [p156_c0002] Page 2 of 2
+### [p156_c0003] 2021 November Forecast-Baseline
+[p156_c0004] Total Non-reimbursable revenues are projected at $3.6 million, including farebox revenues of $2.0 million. Total Non-Reimbursable expenses are projected to be $70.3 million, consisting of labor expenses of $53.2 million and non-labor expenses of $17.1 million. Non-cash depreciation expense is projected at $12.0 million, GASB 75 other post-employment benefit expenses are projected at $3.7 million and GASB 68 pension expenses are projected at $1.0 million. Projected Reimbursable expenses of $7.7 million are fully offset by capital reimbursements. Total end-of-year positions are projected at 394, including 341 Non-Reimbursable positions and 53 Reimbursable positions.
+### [p156_c0005] 2022 Final Proposed Budget-Baseline
+[p156_c0006] Total Non-Reimbursable revenues are projected at $7.1 million, including farebox revenues of $4.5 million. Total Non-Reimbursable expenses are projected to be $69.3 million, consisting of labor expenses of $55.0 million and non-labor expenses of $14.3 million. Non-cash depreciation expense is projected at $12.0 million, GASB 75 other post-employment benefit expenses are projected at $1.8 million, and GASB 68 pension expenses are projected at $2.0 million. Projected Reimbursable expenses of $7.8 million are fully offset by capital reimbursements. Total end-of-year positions are projected at 395, including 342 Non-Reimbursable positions and 53 Reimbursable positions.
+### [p156_c0007] Impact on Funding
+[p156_c0008] The 2021 November Forecast, the 2022 Final Proposed Budget and the Four-Year Financial Plan for 2022-2025, which are presented in the attached tables, are consistent with the proposed MTA Financial Plan.
+### [p156_c0009] Recommendation
+[p156_c0010] It is recommended that the MTA Board adopt the 2021 November Forecast, the 2022 Final Proposed Budget and the Four-Year Financial Plan for 2022-2025 for MTA Staten Island Railway.
+[p156_c0011] _Master Page # 156 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 157
+
+### [p157_c0001] MTA STATEN ISLAND RAILWAY November Financial Plan 2022 - 2025 Accrual Statement of Operations By Category ($ in millions)
+[p157_c0002]
+
+```text
+Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Non-Reimbursable Operating Revenue Farebox Revenue $2.343 $2.038 $4.507 $5.439 $5.534 $5.518 Other Operating Revenue 24.429 1.553 2.599 2.605 2.448 2.276 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $26.773 $3.591 $7.106 $8.044 $7.982 $7.794 Operating Expense Labor: Payroll $26.289 $27.467 $28.366 $28.916 $28.231 $29.227 Overtime 2.117 3.065 2.748 2.782 2.717 2.878 Health and Welfare 5.033 7.673 8.224 8.369 8.254 8.780 OPEB Current Payments 2.292 2.802 2.949 3.094 3.245 3.282 Pension 8.055 8.449 8.826 8.930 8.710 8.912 Other Fringe Benefits 4.714 3.740 3.880 4.502 5.172 5.453 Reimbursable Overhead (2.749) 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $45.751 $53.196 $54.993 $56.593 $56.329 $58.532 Non-Labor: Electric Power $3.356 $4.352 $4.660 $4.452 $4.394 $4.460 Fuel 0.245 0.321 0.337 0.322 0.314 0.319 Insurance 0.966 1.307 1.876 2.120 2.543 3.172 Claims 0.887 0.880 0.882 0.873 0.885 0.887 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.856 3.764 2.426 2.526 2.604 2.678 Professional Services Contracts 1.535 2.911 2.358 2.380 2.395 2.432 Materials and Supplies 2.637 2.331 1.713 1.182 1.194 1.283 Other Business Expenses 0.445 1.229 0.023 0.022 0.027 0.029 Total Non-Labor Expenses $10.927 $17.095 $14.275 $13.877 $14.356 $15.261 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $56.678 $70.291 $69.268 $70.470 $70.686 $73.793 Depreciation $10.831 $12.000 $12.000 $17.500 $17.500 $17.500 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 2.916 3.700 1.800 1.800 1.900 1.900 GASB 68 Pension Expense Adjustment 0.224 1.000 2.000 2.700 0.600 1.600 Environmental Remediation 0.831 0.000 0.000 0.000 0.000 0.000 Total Expenses $71.479 $86.991 $85.068 $92.470 $90.686 $94.793 Net Surplus/(Deficit) ($44.706) ($83.400) ($77.962) ($84.426) ($82.704) ($86.999)
+```
+[p157_c0003] _Master Page # 157 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 158
+
+### [p158_c0001] MTA STATEN ISLAND RAILWAY November Financial Plan 2022 - 2025 Accrual Statement of Operations By Category ($ in millions)
+[p158_c0002]
+
+```text
+Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 6.021 7.658 7.803 6.323 4.662 4.323 Total Revenues $6.021 $7.658 $7.803 $6.323 $4.662 $4.323 Operating Expense Labor: Payroll $0.937 $3.969 $4.109 $3.428 $2.529 $2.362 Overtime 2.060 1.118 1.127 0.908 0.908 0.908 Health and Welfare 0.000 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 0.002 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.000 2.570 2.568 1.986 1.225 1.053 Reimbursable Overhead 2.752 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $5.750 $7.658 $7.803 $6.323 $4.662 $4.323 Non-Labor: Electric Power $0.014 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.022 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.236 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $0.271 $0.000 $0.000 $0.000 $0.000 $0.000 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $6.021 $7.658 $7.803 $6.323 $4.662 $4.323 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p158_c0003] _Master Page # 158 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 159
+
+### [p159_c0001] MTA STATEN ISLAND RAILWAY November Financial Plan 2022 - 2025 Accrual Statement of Operations By Category ($ in millions)
+[p159_c0002]
+
+```text
+Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $2.343 $2.038 $4.507 $5.439 $5.534 $5.518 Other Operating Revenue 24.429 1.553 2.599 2.605 2.448 2.276 Capital and Other Reimbursements 6.021 7.658 7.803 6.323 4.662 4.323 Total Revenues $32.794 $11.249 $14.909 $14.367 $12.644 $12.117 Operating Expense Labor: Payroll $27.226 $31.436 $32.475 $32.344 $30.760 $31.589 Overtime 4.176 4.183 3.875 3.690 3.625 3.786 Health and Welfare 5.033 7.673 8.224 8.369 8.254 8.780 OPEB Current Payments 2.294 2.802 2.949 3.094 3.245 3.282 Pension 8.055 8.449 8.826 8.930 8.710 8.912 Other Fringe Benefits 4.714 6.310 6.448 6.488 6.397 6.506 Reimbursable Overhead 0.003 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $51.501 $60.854 $62.796 $62.916 $60.992 $62.855 Non-Labor: Electric Power $3.370 $4.352 $4.660 $4.452 $4.394 $4.460 Fuel 0.245 0.321 0.337 0.322 0.314 0.319 Insurance 0.966 1.307 1.876 2.120 2.543 3.172 Claims 0.887 0.880 0.882 0.873 0.885 0.887 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.856 3.764 2.426 2.526 2.604 2.678 Professional Services Contracts 1.557 2.911 2.358 2.380 2.395 2.432 Materials and Supplies 2.873 2.331 1.713 1.182 1.194 1.283 Other Business Expenses 0.445 1.229 0.023 0.022 0.027 0.029 Total Non-Labor Expenses $11.198 $17.095 $14.275 $13.877 $14.356 $15.261 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $62.699 $77.949 $77.072 $76.793 $75.348 $78.116 Depreciation $10.831 $12.000 $12.000 $17.500 $17.500 $17.500 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 2.916 3.700 1.800 1.800 1.900 1.900 GASB 68 Pension Expense Adjustment 0.224 1.000 2.000 2.700 0.600 1.600 Environmental Remediation 0.831 0.000 0.000 0.000 0.000 0.000 Total Expenses $77.500 $94.649 $92.872 $98.793 $95.348 $99.116 Net Surplus/(Deficit) ($44.706) ($83.400) ($77.963) ($84.426) ($82.704) ($86.999)
+```
+[p159_c0003] _Master Page # 159 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 160
+
+### [p160_c0001] MTA STATEN ISLAND RAILWAY November Financial Plan 2022 - 2025 Cash Receipts and Expenditures ($ in millions)
+[p160_c0002]
+
+```text
+Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Cash Receipts and Expenditures Receipts Farebox Revenue $2.688 $2.038 $4.507 $5.439 $5.534 $5.518 Other Operating Revenue 25.209 1.553 2.599 2.605 2.448 2.276 Capital and Other Reimbursements 6.501 8.079 7.803 6.323 4.662 4.323 Total Receipts $34.398 $11.670 $14.909 $14.367 $12.644 $12.117 Expenditures Labor: Payroll $24.729 $28.842 $39.511 $32.241 $30.571 $32.717 Overtime 3.630 4.183 3.875 3.690 3.625 3.786 Health and Welfare 6.280 7.673 8.224 8.369 8.254 8.780 OPEB Current Payments 1.149 2.802 2.949 3.094 3.245 3.282 Pension 8.055 8.818 8.826 8.930 8.710 8.912 Other Fringe Benefits 2.760 5.509 6.374 5.050 4.954 5.162 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $46.604 $57.827 $69.759 $61.374 $59.359 $62.639 Non-Labor: Electric Power $3.340 $4.352 $4.660 $4.452 $4.394 $4.460 Fuel 0.243 0.321 0.336 0.322 0.314 0.319 Insurance 1.636 1.307 1.876 2.120 2.543 3.172 Claims 0.000 0.496 0.495 0.486 0.498 0.500 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.592 3.764 2.426 2.526 2.604 2.678 Professional Services Contracts 1.260 2.911 2.358 2.380 2.395 2.432 Materials and Supplies 3.819 2.331 1.713 1.183 1.194 1.283 Other Business Expenses 0.184 1.229 0.024 0.022 0.027 0.029 Total Non-Labor Expenditures $11.075 $16.711 $13.888 $13.491 $13.969 $14.873 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $57.679 $74.538 $83.647 $74.865 $73.328 $77.512 Net Cash Balance ($23.282) ($62.868) ($68.738) ($60.498) ($60.684) ($65.395)
+```
+[p160_c0003] _Master Page # 160 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 161
+
+### [p161_c0001] MTA STATEN ISLAND RAILWAY November Financial Plan 2022 - 2025 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p161_c0002]
+
+```text
+Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Cash Flow Adjustments Receipts Farebox Revenue $0.345 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.780 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 0.479 0.421 0.000 0.000 0.000 0.000 Total Receipts $1.604 $0.421 $0.000 $0.000 $0.000 $0.000 Expenditures Labor: Payroll $2.497 $2.594 ($7.036) $0.103 $0.189 ($1.128) Overtime 0.546 0.000 (0.001) 0.000 0.000 0.000 Health and Welfare (1.248) 0.000 0.000 0.000 0.000 0.000 OPEB Current Payments 1.145 0.000 0.000 0.000 0.000 0.000 Pension 0.000 (0.369) 0.000 0.000 0.000 0.000 Other Fringe Benefits 1.954 0.801 0.074 1.438 1.443 1.344 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.003 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $4.897 $3.027 ($6.963) $1.542 $1.633 $0.216 Non-Labor: Electric Power $0.030 $0.000 0.000 $0.000 $0.000 $0.000 Fuel 0.002 0.000 0.001 0.000 0.000 0.000 Insurance (0.670) 0.000 0.000 0.000 0.000 0.000 Claims 0.887 0.384 0.387 0.387 0.387 0.387 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.264 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.297 0.000 0.000 0.000 0.000 0.000 Materials and Supplies (0.946) 0.000 0.000 (0.001) 0.000 0.000 Other Business Expenses 0.261 0.000 (0.001) 0.000 0.000 0.000 Total Non-Labor Expenditures $0.123 $0.384 $0.387 $0.386 $0.387 $0.388 Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $5.020 $3.411 ($6.575) $1.928 $2.020 $0.604 Total Cash Conversion Adjustments before Depreciation $6.624 $3.832 ($6.575) $1.928 $2.020 $0.604 Depreciation $10.831 $12.000 $12.000 $17.500 $17.500 $17.500 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 2.916 3.700 1.800 1.800 1.900 1.900 GASB 68 Pension Expense Adjustment 0.224 1.000 2.000 2.700 0.600 1.600 Environmental Remediation 0.831 0.000 0.000 0.000 0.000 0.000 Total Cash Conversion Adjustments $21.425 $20.532 $9.225 $23.928 $22.020 $21.604
+```
+[p161_c0003] _Master Page # 161 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 162
+
+### [p162_c0001] MTA STATEN ISLAND RAILWAY November Financial Plan 2022 - 2025 Ridership (Utilization) and Revenue (in millions)
+### [p162_c0002] RIDERSHIP
+[p162_c0003]
+
+```text
+Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Fixed Route 1.426 1.262 2.882 3.488 3.547 3.537
+```
+### [p162_c0004] FAREBOX REVENUE
+[p162_c0005]
+
+```text
+Fixed Route Farebox Revenue $2.343 $2.038 $4.507 $5.439 $5.534 $5.518
+```
+[p162_c0006]
+
+```text
+Farebox Revenue $2.343 $2.038 $4.507 $5.439 $5.534 $5.518
+```
+[p162_c0007] _Master Page # 162 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 163
+
+### [p163_c0001] MTA STATEN ISLAND RAILWAY November Financial Plan 2022-2025 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time/Full Time Equivalents
+[p163_c0002]
+
+```text
+FUNCTION/DEPARTMENT 2020 Actual 2021 November Forecast 2022 Final Proposed Budget 2023 2024 2025 Administration Executive 8 6 6 6 6 6 General Office 9 13 13 13 13 13 Purchasing/Stores 4 4 4 4 4 4 Total Administration 21 23 23 23 23 23 Operations Transportation 116 152 152 142 142 142 Maintenance Mechanical 52 54 54 54 54 54 Electronic/Electrical 19 21 21 21 21 21 Power/Signals 30 32 32 31 31 31 Maintenance of Way 73 89 89 89 57 57 Infrastructure 26 17 18 18 18 18 Total Maintenance 200 213 214 213 181 181 Engineering/Capital Capital Project Support 9 6 6 6 6 4 Public Safety Police - Baseline Total Positions 346 394 395 384 352 350 Non-Reimbursable 315 341 342 342 322 322 Reimbursable 31 53 53 42 30 28 Total Full-Time 346 394 395 384 352 350 Total Full-Time Equivalents
+```
+[p163_c0003] _Master Page # 163 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 164
+
+### [p164_c0001] MTA STATEN ISLAND RAILWAY November Financial Plan 2022 - 2025 Total Positions by Function and Occupational Group Non-Reimbursable and Reimbursable
+[p164_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Administration Managers/Supervisors 11 13 13 13 13 13 Professional/Technical/Clerical 10 7 7 7 7 7 Operational Hourlies 0 4 4 4 4 4 Total Administration Headcount 21 24 24 24 24 24 Operations Managers/Supervisors 7 26 26 26 26 26 Professional/Technical/Clerical 1 6 6 6 6 6 Operational Hourlies 108 120 120 110 110 110 Total Operations Headcount 116 152 152 142 142 142 Maintenance Managers/Supervisors 26 25 25 25 22 22 Professional/Technical/Clerical 7 6 6 6 6 6 Operational Hourlies 167 181 182 181 152 152 Total Maintenance Headcount 200 212 213 212 180 180 Engineering / Capital Managers/Supervisors 3 4 4 4 4 4 Professional/Technical/Clerical 0 2 2 2 2 0 Operational Hourlies 6 0 0 0 0 0 Total Engineering Headcount 9 6 6 6 6 4 Public Safety Managers/Supervisors 0 0 0 0 0 0 Professional/Technical/Clerical 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 Total Public Safety Headcount 0 0 0 0 0 0 Total Positions Managers/Supervisors 47 68 68 68 65 65 Professional/Technical/ Clerical 18 21 21 21 21 19 Operational Hourlies 281 305 306 295 266 266 Total Positions 346 394 395 384 352 350
+```
+[p164_c0003] _Master Page # 164 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 165
+
+### [p165_c0001] MTA Bus Company
+[p165_c0002] _Master Page # 165 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 166
+
+### [p166_c0001] Page 1 of 2
+[p166_c0002]
+
+```text
+Subject MTA Bus 2022 Budget and 2022-2025 Financial Plan Adoption Department Office of the Chief Financial Officer Department Head Name Robert Foran, Chief Financial Officer Department Head Signature Project Manager Name Jaibala Patel
+```
+[p166_c0003]
+
+```text
+Date December 1, 2021 Vendor Name NA Contract Number NA Contract Manager Name NA Table of Contents Ref #
+```
+[p166_c0004]
+
+```text
+Board Action Order To Date Approval Info Other 1 NYCT/MTA Bus Committee 12/13/21 x 2 Finance Committee 12/13/21 X 3 MTA Board 12/15/21 X
+```
+[p166_c0005]
+
+```text
+Internal Approvals Order Approval Order Approval 1 OMB Mark Young 2 Financial Liaison OK for JP 3 President JA
+```
+### [p166_c0006] Purpose
+[p166_c0007] To secure MTA Board adoption of MTA Bus Company's 2021 November Forecast, 2022 Final Proposed Budget, and the Four-Year Financial Plan for 2022-2025.
+### [p166_c0008] Discussion
+[p166_c0009] The 2022 Final Proposed Budget, which is consistent with information presented to the Board in November 2021, provides sufficient funding to support MTA Bus Company's planned service levels, as well as MTA's commitment to provide safe, secure, reliable, and cost-efficient transportation service to the metropolitan New York region. The MTA Bus projections do not include the estimated impacts of projected fare increases and MTA consolidated below-the-line adjustments, which are presented as part of MTA consolidated materials. The MTA is reimbursed by the City of New York for the operating deficits of MTA Bus Company (MTABC).
+[p166_c0010] The 2022 Final Proposed Budget includes funding for new and enhanced investments as follows:
+### [p166_c0011] Key Initiatives
+- [p166_c0012] MTABC continues to emerge from the COVID-19 pandemic, and ridership has continued to gradually increase in concert with the availability of COVID vaccines and the region's re-opening. Farebox revenues are projected to increase in 2021 resulting from more favorable ridership projections than previously forecasted. Revenues in the outer years remain the same as the July Financial Plan. Revised estimates of the cost of COVID-19 preventative measures are expected to result in a projected decrease in expenses. This is due to the change in bus sanitizing frequency from twice per day by hand to once per day using electrostatic sprayers, which reduce cleaning time. Security Awareness Training - The Budget contains funding that enables MTABC to comply with newly issued Transportation Security Administration regulations that require the MTA to provide security training for certain security sensitive employees. MTABC continues to manage its program of Additional Savings Actions, which reduced reliance on outside consultants and contractors, reduced non-service-related expenses, and reduced overtime starting in 2020. These reductions were introduced in the 2021 February Financial Plan and provide savings throughout the Plan period.
+[p166_c0013] _Master Page # 166 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 167
+
+### [p167_c0001] Page 2 of 2
+- [p167_c0002] • The 2022 Final Proposed Budget reflects the restoration of 30 Bus Operator positions to meet ridership demands, which is expected to reach a new normal level of 87.5% of pre-pandemic ridership in the first quarter of 2024.
+### [p167_c0003] 2021 November Forecast - Baseline
+[p167_c0004] Total Non-Reimbursable operating revenues are budgeted at $151.8 million, including farebox revenues of $132.9 million. Total Non-Reimbursable expenses before depreciation and GASB adjustments are budgeted to be $879.0 million, consisting of labor expenses of $623.5 million and non-labor expenses of $255.5 million. Non-cash depreciation expense is projected at $54.8 million, GASB 75 OPEB expense adjustment is projected at $69.9 million and GASB 68 Pension expense adjustment is projected at $50.4 million. Projected Reimbursable expenses of $5.6 million are fully offset by capital reimbursements.
+[p167_c0005] Total end-of-year positions are projected at 3,850 consisting of 3,812 non-reimbursable positions and 38 reimbursable positions.
+### [p167_c0006] 2022 Final Proposed Budget - Baseline
+[p167_c0007] Total Non-Reimbursable operating revenues are budgeted at $198.7 million, including farebox revenues of $179.0 million. Total Non-Reimbursable expenses before depreciation and GASB adjustments are budgeted to be $923.7 million in 2022, consisting of labor expenses of $657.5 million and non-labor expenses of $266.1 million. Non-cash depreciation expense is projected at $56.2 million, GASB 75 OPEB expense adjustment is projected at $80.0 million and GASB 68 Pension expense adjustment is projected at $54.9 million. Projected reimbursable expenses of $5.8 million are fully offset by capital reimbursements.
+[p167_c0008] Total end-of-year positions are projected at 4,010 consisting of 3,972 non-reimbursable positions and 38 reimbursable positions.
+### [p167_c0009] Impact on Funding
+[p167_c0010] The 2021 November Forecast, the 2022 Final Proposed Budget, and the Four-Year Financial Plan for 2022-2025, which are presented in the attached tables, are consistent with the proposed MTA Financial Plan.
+### [p167_c0011] Recommendation
+[p167_c0012] It is recommended that the MTA Board adopt the 2021 November Forecast, the 2022 Final Proposed Budget, and the Four-Year Financial Plan for 2022-2025 for MTA Bus Company.
+[p167_c0013] _Master Page # 167 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 168
+
+### [p168_c0001] MTA BUS COMPANY November Financial Plan 2022 - 2025 Accrual Statement of Operations By Category ($ in millions)
+[p168_c0002]
+
+```text
+Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Non-Reimbursable Operating Revenue Farebox Revenue $95.403 $132.865 $178.962 $193.879 $197.203 $196.607 Other Operating Revenue 342.612 18.959 19.785 19.928 21.510 22.900 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $438.015 $151.824 $198.747 $213.807 $218.712 $219.507 Operating Expense Labor: Payroll $308.875 $292.501 $315.344 $306.859 $307.332 $308.116 Overtime 80.345 90.299 91.976 91.889 92.490 91.442 Health and Welfare 76.265 86.158 90.775 94.932 99.281 103.831 OPEB Current Payments 24.855 24.272 25.366 26.507 27.701 28.948 Pension 64.600 59.047 59.710 60.890 61.149 62.206 Other Fringe Benefits 65.013 72.122 75.296 74.449 74.556 74.526 Reimbursable Overhead (1.983) (0.906) (0.935) (0.932) (0.930) (0.928) Total Labor Expenses $617.970 $623.492 $657.532 $654.593 $661.578 $668.142 Non-Labor: Electric Power $1.601 $1.667 $1.759 $1.715 $1.734 $1.797 Fuel 14.035 27.279 30.011 28.765 27.945 28.339 Insurance 4.602 6.567 9.090 10.801 13.300 16.731 Claims 15.639 76.099 77.992 79.909 81.829 83.710 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 29.750 44.597 41.636 39.807 41.093 41.016 Professional Services Contracts 24.413 42.148 43.370 42.966 43.174 43.565 Materials and Supplies 40.724 52.430 57.192 55.664 55.393 55.352 Other Business Expenses 2.531 4.689 5.069 5.160 5.209 5.272 Total Non-Labor Expenses $133.295 $255.478 $266.119 $264.789 $269.678 $275.781 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $751.265 $878.970 $923.651 $919.382 $931.256 $943.924 Depreciation $47.472 $54.778 $56.163 $56.163 $56.163 $56.163 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 50.256 69.900 80.000 89.600 92.500 95.500 GASB 68 Pension Expense Adjustment (11.920) 50.400 54.900 62.900 48.300 57.600 Environmental Remediation 0.715 0.000 0.000 0.000 0.000 0.000 Total Expenses $837.788 $1,054.048 $1,114.714 $1,128.044 $1,128.219 $1,153.186 Net Surplus/(Deficit) ($399.774) ($902.224) ($915.967) ($914.237) ($909.506) ($933.679)
+```
+[p168_c0003] _Master Page # 168 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 169
+
+### [p169_c0001] MTA BUS COMPANY November Financial Plan 2022 - 2025 Accrual Statement of Operations By Category ($ in millions)
+[p169_c0002]
+
+```text
+Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 5.601 5.644 5.823 5.815 5.809 5.801 Total Revenues $5.601 $5.644 $5.823 $5.815 $5.809 $5.801 Operating Expense Labor: Payroll $3.501 $2.230 $2.301 $2.297 $2.294 $2.290 Overtime (0.009) 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 1.374 1.417 1.416 1.415 1.414 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits (0.007) 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 2.116 0.906 0.935 0.932 0.930 0.928 Total Labor Expenses $5.601 $4.510 $4.653 $4.645 $4.640 $4.632 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.244 0.252 0.252 0.252 0.252 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.890 0.918 0.918 0.918 0.918 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $0.000 $1.134 $1.170 $1.170 $1.170 $1.170 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $5.601 $5.644 $5.823 $5.815 $5.810 $5.802 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p169_c0003] _Master Page # 169 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 170
+
+### [p170_c0001] MTA BUS COMPANY November Financial Plan 2022 - 2025 Accrual Statement of Operations By Category ($ in millions)
+[p170_c0002]
+
+```text
+Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $95.403 $132.865 $178.962 $193.879 $197.203 $196.607 Other Operating Revenue 342.612 18.959 19.785 19.928 21.510 22.900 Capital and Other Reimbursements 5.601 5.644 5.823 5.815 5.809 5.801 Total Revenues $443.616 $157.468 $204.570 $219.622 $224.521 $225.308 Operating Expense Labor: Payroll $312.376 $294.731 $317.645 $309.156 $309.626 $310.406 Overtime 80.336 90.299 91.976 91.889 92.490 91.442 Health and Welfare 76.265 87.532 92.192 96.348 100.696 105.245 OPEB Current Payments 24.855 24.272 25.366 26.507 27.701 28.948 Pension 64.600 59.047 59.710 60.890 61.149 62.206 Other Fringe Benefits 65.006 72.122 75.296 74.449 74.556 74.526 Reimbursable Overhead 0.133 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $623.571 $628.002 $662.185 $659.239 $666.217 $672.774 Non-Labor: Electric Power $1.601 $1.667 $1.759 $1.715 $1.734 $1.797 Fuel 14.035 27.279 30.011 28.765 27.945 28.339 Insurance 4.602 6.567 9.090 10.801 13.300 16.731 Claims 15.639 76.099 77.992 79.909 81.829 83.710 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 29.750 44.841 41.888 40.059 41.345 41.268 Professional Services Contracts 24.413 42.148 43.370 42.966 43.174 43.565 Materials and Supplies 40.724 53.320 58.110 56.582 56.311 56.270 Other Business Expenses 2.531 4.689 5.069 5.160 5.209 5.272 Total Non-Labor Expenses $133.295 $256.612 $267.289 $265.959 $270.848 $276.951 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $756.866 $884.614 $929.475 $925.197 $937.066 $949.725 Depreciation $47.472 $54.778 $56.163 $56.163 $56.163 $56.163 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 50.256 69.900 80.000 89.600 92.500 95.500 GASB 68 Pension Expense Adjustment (11.920) 50.400 54.900 62.900 48.300 57.600 Environmental Remediation 0.715 0.000 0.000 0.000 0.000 0.000 Total Expenses $843.389 $1,059.692 $1,120.537 $1,133.860 $1,134.028 $1,158.988 Net Surplus/(Deficit) ($399.774) ($902.224) ($915.967) ($914.238) ($909.507) ($933.680)
+```
+[p170_c0003] _Master Page # 170 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 171
+
+### [p171_c0001] MTA BUS COMPANY November Financial Plan 2022 - 2025 Cash Receipts and Expenditures ($ in millions)
+[p171_c0002]
+
+```text
+Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Cash Receipts and Expenditures Receipts Farebox Revenue $96.735 $132.865 $178.962 $193.879 $197.203 $196.607 Other Operating Revenue 346.283 18.959 19.785 19.928 21.510 22.899 Capital and Other Reimbursements 5.524 5.644 5.823 5.815 5.809 5.801 Total Receipts $448.542 $157.468 $204.570 $219.622 $224.521 $225.308 Expenditures Labor: Payroll $309.987 $294.325 $317.226 $308.737 $309.207 $309.987 Overtime 80.337 90.299 91.977 91.889 92.491 91.443 Health and Welfare 75.157 94.502 92.193 96.349 100.697 105.246 OPEB Current Payments 24.694 24.272 25.365 26.507 27.701 28.948 Pension 61.102 62.369 59.529 60.709 60.967 62.025 Other Fringe Benefits 46.788 58.843 60.111 59.265 59.371 59.342 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $598.065 $624.609 $646.401 $643.455 $650.433 $656.990 Non-Labor: Electric Power $1.567 $1.667 $1.759 $1.715 $1.734 $1.797 Fuel 13.996 27.280 30.012 28.766 27.945 28.340 Insurance 11.033 6.567 9.089 10.801 13.300 16.731 Claims 35.029 36.995 37.878 38.915 39.954 40.974 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 33.122 47.362 41.888 40.060 41.345 41.268 Professional Services Contracts 20.434 72.705 43.371 42.966 43.174 43.565 Materials and Supplies 41.756 58.820 58.110 56.582 56.311 56.270 Other Business Expenses 2.251 4.989 5.069 5.160 5.210 5.273 Total Non-Labor Expenditures $159.188 $256.386 $227.176 $224.965 $228.973 $234.216 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $757.253 $880.995 $873.577 $868.419 $879.407 $891.206 Net Cash Balance ($308.711) ($723.527) ($669.007) ($648.798) ($654.886) ($665.899)
+```
+[p171_c0003] _Master Page # 171 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 172
+
+### [p172_c0001] MTA BUS COMPANY November Financial Plan 2022 - 2025 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p172_c0002]
+
+```text
+Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Cash Flow Adjustments Receipts Farebox Revenue $1.332 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 3.671 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements (0.077) 0.000 0.000 0.000 0.000 0.000 Total Receipts $4.926 $0.000 $0.000 $0.000 $0.000 $0.000 Expenditures Labor: Payroll $2.389 $0.406 $0.419 $0.419 $0.419 $0.419 Overtime (0.001) 0.000 0.000 0.000 0.000 0.000 Health and Welfare 1.108 (6.970) (0.001) (0.001) (0.001) (0.001) OPEB Current Payments 0.161 0.000 0.000 0.000 0.000 0.000 Pension 3.498 (3.322) 0.181 0.181 0.181 0.181 Other Fringe Benefits 18.218 13.279 15.184 15.184 15.184 15.184 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.133 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $25.506 $3.393 $15.784 $15.784 $15.784 $15.784 Non-Labor: Electric Power $0.034 $0.000 0.000 $0.000 $0.000 $0.000 Fuel 0.039 (0.001) 0.000 0.000 0.000 0.000 Insurance (6.431) 0.000 0.000 0.000 0.000 0.000 Claims (19.390) 39.105 40.114 40.994 41.875 42.735 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts (3.372) (2.521) 0.000 0.000 0.000 0.000 Professional Services Contracts 3.979 (30.557) 0.000 0.000 0.000 0.000 Materials and Supplies (1.032) (5.500) 0.001 0.001 0.001 0.001 Other Business Expenses 0.280 (0.300) 0.000 0.000 0.000 0.000 Total Non-Labor Expenditures ($25.893) $0.226 $40.113 $40.994 $41.875 $42.735 Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures ($0.387) $3.619 $55.897 $56.778 $57.659 $58.519 Total Cash Conversion Adjustments before Depreciation $4.539 $3.619 $55.897 $56.778 $57.659 $58.519 Depreciation $47.472 $54.778 $56.163 $56.163 $56.163 $56.163 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 GASB 75 OPEB Expense Adjustment 50.256 69.900 80.000 89.600 92.500 95.500 GASB 68 Pension Expense Adjustment (11.920) 50.400 54.900 62.900 48.300 57.600 Environmental Remediation 0.715 0.000 0.000 0.000 0.000 0.000 Total Cash Conversion Adjustments $91.062 $178.697 $246.960 $265.440 $254.621 $267.781
+```
+[p172_c0003] _Master Page # 172 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 173
+
+### [p173_c0001] MTA BUS COMPANY November Financial Plan 2022 - 2025 Ridership (Utilization) and Revenue (in millions)
+### [p173_c0002] RIDERSHIP
+[p173_c0003]
+
+```text
+Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Fixed Route 45.921 68.126 95.043 103.040 104.767 104.478 Total Ridership 45.921 68.126 95.043 103.040 104.767 104.478
+```
+### [p173_c0004] FAREBOX REVENUE
+[p173_c0005]
+
+```text
+Fixed Route Farebox Revenue $95.403 $132.865 $178.962 $193.879 $197.203 $196.607 Farebox Revenue $95.403 $132.865 $178.962 $193.879 $197.203 $196.607
+```
+[p173_c0006] _Master Page # 173 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 174
+
+### [p174_c0001] MTA BUS COMPANY November Financial Plan 2022-2025 Total Positions by Function & Department Non-Reimbursable/Reimbursable and Full-Time/Full-Time Equivalents
+[p174_c0002]
+
+```text
+FUNCTION/DEPARTMENT Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Administration Office of the EVP 2 3 3 3 3 3 Human Resources 14 16 16 16 16 16 Office of Management and Budget 12 14 14 14 14 14 Materiel 14 15 15 15 15 15 Controller 18 18 18 18 18 18 Office of the President 5 4 4 4 4 4 System Safety Administration 0 0 0 0 0 0 Law 19 20 20 20 20 20 Strategic Office 18 19 19 19 19 19 Non Departmental 0 2 7 1 1 1 Total Administration 102 111 116 110 110 110 Operations Buses 2,292 2,298 2,328 2,328 2,328 2,328 Office of the Executive Vice President, Regional 4 6 6 6 6 6 Safety & Training 63 68 68 68 68 68 Road Operations 140 141 141 141 141 141 Transportation Support 22 25 25 25 25 25 Operations Planning 31 34 34 33 33 33 Revenue Control 6 6 6 6 6 6 Total Operations 2,558 2,578 2,608 2,607 2,607 2,607 Maintenance Buses 730 723 723 723 723 723 Maintenance Support/CMF 222 210 335 227 227 227 Facilities 74 76 76 76 76 76 Supply Logistics 95 104 104 104 104 104 Total Maintenance 1,121 1,113 1,238 1,130 1,130 1,130 Engineering/Capital Capital Program Management 23 35 35 35 35 35 Public Safety Office of the Senior Vice President 11 13 13 13 13 13 Total Positions 3,815 3,850 4,010 3,895 3,895 3,895 Non-Reimbursable 3,779 3,812 3,972 3,857 3,857 3,857 Reimbursable 36 38 38 38 38 38 Total Full-Time 3,804 3,832 3,992 3,877 3,877 3,877 Total Full-Time Equivalents 11 18 18 18 18 18
+```
+[p174_c0003] _Master Page # 174 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 175
+
+### [p175_c0001] MTA BUS COMPANY November Financial Plan 2022 - 2025 Total Positions by Function and Occupational Group Non-Reimbursable and Reimbursable
+[p175_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual 2020 November Forecast 2021 Final Proposed Budget 2022 2023 2024 2025 Administration Managers/Supervisors 41 46 46 46 46 46 Professional/Technical/Clerical 61 63 63 63 63 63 Operational Hourlies 0 2 7 1 1 1 Total Administration Headcount 102 111 116 110 110 110 Operations Managers/Supervisors 310 319 319 318 318 318 Professional/Technical/Clerical 46 45 45 45 45 45 Operational Hourlies 2,202 2,214 2,244 2,244 2,244 2,244 Total Operations Headcount 2,558 2,578 2,608 2,607 2,607 2,607 Maintenance Managers/Supervisors 234 241 241 241 241 241 Professional/Technical/Clerical 35 35 35 35 35 35 Operational Hourlies 852 837 962 854 854 854 Total Maintenance Headcount 1,121 1,113 1,238 1,130 1,130 1,130 Engineering / Capital Managers/Supervisors 12 21 21 21 21 21 Professional/Technical/Clerical 11 14 14 14 14 14 Operational Hourlies 0 0 0 0 0 0 Total Engineering Headcount 23 35 35 35 35 35 Public Safety Managers/Supervisors 5 8 8 8 8 8 Professional/Technical/Clerical 6 5 5 5 5 5 Operational Hourlies 0 0 0 0 0 0 Total Public Safety Headcount 11 13 13 13 13 13 Total Positions Managers/Supervisors 602 635 635 634 634 634 Professional/Technical/ Clerical 159 162 162 162 162 162 Operational Hourlies 3,054 3,053 3,213 3,099 3,099 3,099 Total Positions 3,815 3,850 4,010 3,895 3,895 3,895
+```
+[p175_c0003] _Master Page # 175 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 176
+
+### [p176_c0001] Staff Summary
+### [p176_c0002] MTA Bus Company
+### [p176_c0003] MTA New York City Transit
+### [p176_c0004] Service Changes: Bronx Local Bus Network Redesign
+[p176_c0005] Judith McClain , Chief, Operations Planning, NYCT
+### [p176_c0006] Service Issue
+[p176_c0007] The proposed Bronx Local Bus Network Redesign focuses on reimagining New York City's bus network to provide customer-focused routes, and faster and more reliable travel times. The redesigned Bronx local, limited, and Select Bus Service (SBS) bus network aims to meet the following network redesign strategies: simpler, more direct routes, balanced bus stops, enhanced connectivity, improved frequency on key routes, and expanded bus priority, with ten key corridors identified in the Bronx for bus priority street improvements.
+[p176_c0008] More details, including the addendum to the proposed Final Plan and individual route profiles can be viewed at https://new.mta.info/bronxbusredesign .
+### [p176_c0009] Recommendation
+[p176_c0010] Implement the Bronx Local Bus Network Redesign for local, limited, and SBS bus service.
+### [p176_c0011] Budget Impact
+[p176_c0012] The Bronx Local Bus Redesign will increase the net annual operating cost of Bronx bus service by approximately $2.7 million. This includes $1.4 million of NYCT operating costs and $738,000 of MTA Bus operating costs that will be implemented in the summer of 2022, and $568,000 of NYCT annual operating costs that will be implemented in 2023. In addition, there will be one-time costs of $1.6 million to train staff on the new routes and $255,000 to change the bus stops.
+### [p176_c0013] Implementation Date
+[p176_c0014] Implementation of most routing and schedule changes is proposed for summer 2022 with the following exceptions:
+[p176_c0015] Due to the 18-month pause caused by the COVID-19 pandemic, Bx6 SBS implementation will be delayed until 2023 to coincide with the retirement of MetroCard, the full deployment of OMNY across the city, and the implementation of all-door boarding in 2023. The logistics and expense associated with installing and then uninstalling SBS off-board fare collection machines along the future alignment in Soundview for just one year would not be a prudent use of limited resources. The associated changes to the Bx5 and Bx6 Local schedules will also be postponed until 2023 when the Bx6 SBS realignment is implemented.
+[p176_c0016] Some bus stop changes have been made in advance of the Bronx Local Bus Network Redesign Plan being implemented in conjunction with NYCDOT's bus priority projects. Additionally, bus stop changes will begin prior to the actual implementation date, as time is required for NYCDOT staff make the necessary changes for the proposed implementation date.
+[p176_c0017] _Master Page # 176 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 177
+
+### [p177_c0001] Staff Summary
+[p177_c0002] Bus Company
+[p177_c0003] New York City Transit
+[p177_c0004]
+
+```text
+Subject Bronx Bus Network Redesign Department Operations Planning Department Head Name Judith McClain Department Head Signature Project Manager Name Sarah J. Wyss
+```
+[p177_c0005]
+
+```text
+Date December 9, 2021 Vendor Name N/A Contract Number N/A Contract Manager Name N/A Table of Contents Ref # N/A
+```
+[p177_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 President X 2 NYCT Comm X 3 Board X
+```
+[p177_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 8 President 4 VP General Counsel 7 CFO 3 Dpty Chief, Mgmt & Budget 6 Acting SVP Buses 2 Director GCR 5 Chief Cust. Officer 1 Chief OP
+```
+### [p177_c0008] Purpose
+[p177_c0009] The purpose of this staff summary is to attain Board approval to implement the Bronx Local Bus Network Redesign for local, limited and SBS bus service. The redesigned bus network will better serve ridership demand while improving customers' commutes and overall service reliability via customer focused routes, and faster and more reliable travel times. The redesigned Bronx bus network has simpler, more direct routes, improved bus stop spacing, enhanced connectivity, improved frequency on key routes, and expanded bus priority. Each of these network redesign strategies will be explained in further detail under the Discussion section of this staff summary. More specifically, we have further strengthened our partnership with NYCDOT and have identified ten key corridors in the Bronx for bus priority improvements. Some corridors have already received priority treatments, some are underway, and others are forthcoming.
+### [p177_c0010] Discussion
+[p177_c0011] Approximately 1.5 million residents live in the Bronx, with the borough's population increasing by just over six percent since 2010.
+[p177_c0012] Prior to the COVID-19 pandemic the Bronx experienced roughly 675,000 bus boardings on an average weekday. Nearly 60 percent of Bronx residents rely on public transit for their daily commutes and at least 16 percent commute primarily by bus. There are 46 local, limited and SBS bus routes in the Bronx, with two operated by MTA Bus Company, the Bx23 and Q50 Limited.
+[p177_c0013] An Existing Conditions Report was completed in February 2019. This report included market and service analyses that provided an in-depth examination of the following key data elements: population and employment demographics, travel patterns, ridership, transfer information, stop spacing, slow bus speeds, productivity performance metrics, financial performance, and service
+[p177_c0014] _Master Page # 177 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 178
+
+### [p178_c0001] Staff Summary
+[p178_c0002] Bus Company
+[p178_c0003] New York City Transit
+[p178_c0004] reliability metrics. The Report, along with valuable information gathered from our customers through public outreach, was used to inform the decision making and overall process that created the Draft Plan.
+[p178_c0005] This plan proposed 14 route alignment changes and two new routes. There were several key redesign strategies that were employed when developing the Draft Plan that have remained omnipresent through development and revisions to the proposed Final Plan:
+- [p178_c0006] • Simplify the network – more direct routes bring bus customers to key destinations faster, while routes that make a lot of turns and take roundabout paths are slower and less useful for customers. Streamlining routes may include shortening or splitting routes if customer volumes are low and multiple bus service options exist. Streamlined routes are often more reliable and efficient because they avoid congested areas and are easier to manage. • Enhance connectivity – many bus customers, especially those in the Bronx, make transfers to reach their final destinations. This plan works to enhance east-west connectivity across the borough as well as inter-borough travel by facilitating transfers and reducing wait times for buses. Four routes will be extended and three will make key connections to subway stations. • Improve frequencies – prioritizing an all-day frequent network is critical to getting customers to their destinations while allowing for easy, flexible travel. Frequent service allows customers to change plans and rely on the transportation network. This plan improves frequency on 11 routes along nine corridors. • Balance bus stops - Each bus stop removed from a route saves an average of 20 seconds, but depending on location and time of day, each stop removed might save a minute or more travel time for everyone on the bus and makes bus service more reliable. These savings stem from buses not having to exit and re-enter traffic so often. New York City's bus stops are closer together than most other cities across the country and around the world, so the added travel time to the next closest bus stop is not typically long (averaging less than two extra minutes to reach). This plan proposes removing about 400 bus stops. Careful consideration has been given to each stop regarding ridership, distance between stops, transfers, community facilities, and local demographics. • Expand bus priority – buses move hundreds of thousands of customers in the Bronx. Because of their importance in transporting people to/from and within the borough, NYCDOT has done extensive work to give buses preferential treatment on streets where appropriate to improve bus speeds and reliability. NYCDOT analyzed 46 corridors in the Bronx and Manhattan and selected ten of the highest-ranking corridors to implement a variety of bus priority treatments that speed up buses and allow the MTA to operate more frequent service. These improvements include new bus lanes, transit signal priority (TSP), bus boarders, and curb management.
+[p178_c0007] The Draft Plan was released in May 2019 and was followed by an extensive round of outreach from June through September 2019. Public feedback was solicited via in-person open houses, in-person on-street pop up events, the MTA website, interactive surveys online, community board presentations, presentations to elected officials and other key stakeholders, and via our social media platforms. Multiple iterations and significant revisions were made to the Plan in response to feedback from the public, elected officials, and labor unions, resulting in the proposed Final Plan in October of 2019. The proposed Final Plan maintained most of the benefits of the original recommendations while responding to our customers' needs. Public input was solicited on the proposed Final Plan and adjustments to the Plan were shared with the public prior to the public hearing held in February 2020. One key change made prior to the
+[p178_c0008] _Master Page # 178 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 179
+
+### [p179_c0001] Staff Summary
+> [p179_c0002] The logo for the MTA Bus Company, featuring the MTA logo in a circle followed by the words "Bus Company".
+> [p179_c0003] The logo for the MTA New York City Transit, featuring the MTA logo in a circle followed by the words "New York City Transit".
+[p179_c0004] public hearing was to remove changes to Express Bus Service from the proposed Final Plan. We will revisit Express Bus Service Redesign at a later time.
+[p179_c0005] Due to the COVID-19 pandemic, the decision was made in March 2020 to pause the Bus Network Redesign initiative to ensure that resources were concentrated where they were needed most, specifically moving our essential workers as quickly and safely as possible. The project remained paused for approximately 18 months. In August 2021, Acting MTA Chair and CEO Janno Lieber and Interim New York City Transit President Craig Cipriano joined New York City Department of Transportation (NYCDOT) Commissioner Hank Gutman to announce many exciting bus initiatives, including the restart of the Bronx Bus Network Redesign. Since then, outreach efforts have included: a presentation to Bronx Borough President Ruben Diaz, Jr. and elected officials, a briefing for the Bronx Borough Board, sharing updates to the proposed Final Plan with transit advocates, presentations to interested community boards, and a virtual public meeting to culminate this customer-led project.
+[p179_c0006] After constructive feedback from customers who attended the February 2020 public hearing or submitted written comments, and from those customers who spoke at our November 9, 2021, virtual public meeting or submitted written comments, we have completed the new Bronx Local Bus Network Final Plan, which includes alignment changes to 16 regular bus routes, two being new routes, to make them simpler and more direct, while expanding connectivity and strengthening key east-west corridors in the Bronx.
+[p179_c0007] Originally, the proposed Final Plan called for alignment changes to the Bx28 and Bx34, making it more direct by avoiding circuitous segments and narrow, one-way streets when possible. However, strong community opposition demonstrated that the current alignments of the Bx28 and Bx34 are valuable and most preferred by existing bus customers. After field visits from agency staff members and hearing from members of the community during our February 2020 public hearing, it was agreed that these routes would no longer change and remain as-is. The proposed frequency improvements to the Bx28 are still planned.
+[p179_c0008] The two new local bus routes are the Bx25 and the M125. The Bx25 will provide service from northern Co-op City to Allerton Avenue and Bedford Park. It will share the Allerton Avenue corridor with the Bx26, ensuring that Allerton Avenue maintains the same frequency levels it has today. The M125 is a new route being proposed with changes to the Bx15 and M100. The Bx15 will be shortened, terminating at The Hub, with the new M125 operating from The Hub to 125 th Street in Manhattan, terminating in Manhattanville. The M100 will be shortened, terminating at Amsterdam Avenue and 125 th Street. The new M125 will ensure customers have access between the Bronx and Manhattan, while reducing overall bus-on-bus congestion on 125 th Street.
+[p179_c0009] In addition to alignment changes, the Plan proposes bus stop removals to improve bus stop spacing, balancing the need to improve travel times with the need to serve our riders with mobility issues. Bus stop balancing changes will allow us to better match peer systems and improve spacing from every 882 feet to every 1,100 feet. The improved bus stop spacing will increase the time buses spend moving and, in turn, improve customers' commutes.
+[p179_c0010] Schedule changes include frequency increases and decreases and extended service spans for certain routes. In the Central Bronx, where ridership is most concentrated, frequency increases are proposed on the following bus routes: Bx4, Bx4A, Bx6 Local, Bx11, Bx13, Bx18, and Bx41 SBS. In the Northeast Bronx, where ridership is also strong, frequency increases are proposed
+[p179_c0011] _Master Page # 179 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 180
+
+### [p180_c0001] Staff Summary
+> [p180_c0002] The logo for the MTA Bus Company, featuring the MTA logo (a circle with 'MTA' inside) followed by the text 'Bus Company'.
+> [p180_c0003] The logo for the MTA New York City Transit, featuring the MTA logo (a circle with 'MTA' inside) followed by the text 'New York City Transit'.
+[p180_c0004] on the following bus routes: Bx23, Bx28, Bx29, and Bx38. Frequency decreases are proposed for the following bus routes due to route alignment changes and ridership patterns: Bx5, Bx15, Bx15 Ltd, Bx26.
+[p180_c0005] More specifically, the Bx5 operates along the Story Avenue corridor, which is proposed to also have Bx6 SBS service. The introduction of SBS service along the Story Avenue corridor will provide better service for customers traveling between Soundview and the western Bronx. As addressed earlier, due to the 18-month pause caused by the COVID-19 pandemic, Bx6 SBS implementation has been delayed until 2023 to coincide with the retirement of MetroCard, the full deployment of OMNY across the city, and all-door boarding on all bus routes in 2023. The logistics and expense associated with installing and then uninstalling SBS off-board fare machines along the future alignment in Soundview for just one year of use is not a prudent use of limited resources. The associated changes to the Bx5 and Bx6 Local schedules will also be postponed until 2023 when the Bx6 SBS realignment is implemented.
+[p180_c0006] Similarly, Bx15 local and limited service is being adjusted to better meet ridership patterns with the route proposed to terminate at The Hub. The frequency of the Bx26 will decrease in Co-op City to enable the introduction of the new Bx25 that would serve northern Co-op City, better meeting the needs of customers.
+[p180_c0007] Transfers are a crucial component of the redesign process. Two direct routes that work together to connect customers to their destinations are far more efficient than one meandering route that serves as a one-seat ride to the same destinations. Interconnected routes provide faster travel times and enable increased frequency. The Bronx Bus Network Redesign will result in some riders requiring an additional transfer to complete their trip. To ensure that these passengers do not have to pay an additional fare to transfer, we will seek to strategically add additional free transfers to the system.
+[p180_c0008] A service equity analysis, conducted in accordance with Title VI of the Civil Rights Act of 1964 and related Federal Transit Administration guidance materials, found that the Bronx Bus Network Redesign proposal would not result in a disproportionate impact on either minority or below-poverty populations. More details, including updates since the Proposed Final Plan can be viewed at https://new.mta.info/bronxbusredesign .
+### [p180_c0009] Recommendation
+[p180_c0010] Implement the Bronx Bus Network Redesign for regular bus service.
+[p180_c0011] _Master Page # 180 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 181
+
+### [p181_c0001] Staff Summary
+> [p181_c0002] The logo for the MTA Bus Company, featuring the MTA logo (a circle with 'MTA' inside) followed by the text 'Bus Company'.
+> [p181_c0003] The logo for the MTA New York City Transit, featuring the MTA logo (a circle with 'MTA' inside) followed by the text 'New York City Transit'.
+### [p181_c0004] Alternatives
+- [p181_c0005] 1. Do nothing. The status quo would be maintained, missing an opportunity to modernize the bus network and improve speed and reliability. 2. Modify bus stops but not routes. Maintain the existing route network but increase bus stop spacing as recommended by the Bronx Bus Network Redesign project. Some speed and reliability benefits would be gained from more efficient bus stop spacing, but no improvements would be made to the route structure. 3. Modify routes but not bus stops. Implement the new Bronx Bus Network for regular bus service and maintain existing average bus stop spacing. Some speed and reliability benefits would be gained from improved routing, but trips would continue to be slowed by excessive stopping. 4. Consider less comprehensive changes. Further study would be required to identify less impactful changes that could be made to individual routes without fundamentally altering the overall bus network.
+### [p181_c0006] Budget Impact
+[p181_c0007] The Bronx Local Bus Redesign will increase the net annual operating cost of Bronx bus service by approximately $2.7 million. This includes $1.4 million of NYCT operating costs and $738,000 of MTA Bus operating costs that will be implemented in the summer of 2022, and $568,000 of NYCT annual operating costs that will be implemented in 2023. In addition, there will be one-time costs of $1.6 million to train staff on the new routes and $255,000 to change the bus stops. The additional operating budget will enable increased frequency on key routes, allowing for an extensive, all-day frequent network. The budget will also allow for expanded access, specifically extended service spans and route alignment changes that provide new connections.
+### [p181_c0008] Implementation Date
+[p181_c0009] Implementation is planned for summer 2022.
+[p181_c0010] _Master Page # 181 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 182
+
+### [p182_c0001] Staff Summary
+### [p182_c0002] MTA Bus Company
+### [p182_c0003] MTA New York City Transit
+### [p182_c0004] Attachment 1:
+### [p182_c0005] Major Revisions to Bronx Bus Network Redesign Proposal for Regular Bus Service
+### [p182_c0006] Proposed Draft Plan (Released May 2019)
+- [p182_c0007] • Bx4 ○ Increase weekday frequency to 15 minutes or better all-day, allowing for Westchester Avenue to be an 8 minutes or better corridor where the Bx4 and Bx4A overlap • Bx4A ○ Shorten route to improve reliability where customers are riding most ○ Route would travel from Westchester Square to Southern Boulevard, using its current routing via Metropolitan Avenue and Westchester Avenue ○ Increase weekday frequency of Bx4A to 15 minutes or better all-day, allowing for Westchester Avenue to be an 8 minutes or better corridor where the Bx4 and Bx4A overlap • Bx6 Local ○ Increase weekday frequency to 8 minutes or better all-day to maintain the current level of service to Hunts Point, with the proposed Bx6 SBS route no longer serving the area • Bx6 SBS ○ Reroute to operate along Bruckner Boulevard, Bronx River Avenue, and Story Avenue, terminating at Turnbull Avenue and Pugsley Avenue ○ Bx6 SBS would no longer serve Hunts Point ○ The proposed routing change would make service more direct and would introduce additional connections for Bx6 customers ○ The addition of SBS to Story Avenue would provide a new, faster crosstown service for Soundview residents • Bx8 ○ Shorten route, moving its southern terminal to Layton Avenue and Dean Avenue ○ Discontinued southern segment of the route would be covered by a proposed extension of the Bx24 • Bx11 ○ Streamline route to provide simpler, more direct service while improving crosstown connections ○ Route would serve East 174 th Street (replacing a segment of the Bx36) and would terminate at the Parkchester 6 station, providing a new connection to the 6 train from Morrisania and giving customers along East 174 th Street more direct crosstown service ○ Service near Jennings Street and West Farms Road would be provided by a proposed extension of the Bx35
+[p182_c0008] _Master Page # 182 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 183
+
+### [p183_c0001] Staff Summary
+[p183_c0002] Bus Company
+[p183_c0003] New York City Transit
+- [p183_c0004] ○ Route would avoid the circuitous segments on Shakespeare Avenue, West 168 th Street, and Ogden/Plimpton Avenue by traveling directly into Manhattan via Edward L. Grant Highway ○ Service in this area would be provided by an extended Bx18 ○ Increase weekday frequency to 8 minutes or better all-day ● Bx13 ○ Increase weekday frequency to 8 minutes or better all-day ● Bx15 ○ Split into two routes ○ Bx15 Local would operate between The Hub and Fordham Plaza at all times, as it currently does on weekdays ○ Discontinued southern segment of the route would be covered by new M125 bus route, operating between The Hub and Manhattanville ● Bx18 ○ Extend route to serve new section along West 168 th Street and Shakespeare Avenue, replacing a segment of the Bx11 ○ Increase weekday frequency to 20 minutes or better all-day ● Bx22 ○ Increase weekday frequency to 8 minutes or better all-day ● Bx23 ○ Increase weekday frequency to 8 minutes or better all-day, with a frequency of 3 minutes in the AM and PM peak periods ● Bx24 ○ Streamline route in Country Club with new routing along Kennelworth Place, Ampere Avenue, and Stadium Avenue ○ Extend route to Locust Point, replacing southern segment of shortened Bx8 ● Bx26 ○ Terminate route at Asch Loop in Co-op City, with service between Asch Loop and Section 5 via the more frequent Bx23 ● Bx28 ○ Streamline route, with changes to both the eastern and western ends of route ○ In Co-op City, terminate route at Bay Plaza Mall, operating via Asch Loop ○ In Norwood and Bedford Park, discontinue service on Mosholu Parkway and Paul Avenue, streamlining the route by operating on Bainbridge Avenue and Bedford Park Boulevard ○ Increase weekday frequency to 8 minutes or better all-day ● Bx29 ○ Shorten route, moving its northern terminal to Pelham Bay Park 6 station ○ Service between Co-op City and Pelham Bay Park would be provided by more frequent Bx23 ● Bx30 ○ Streamline route, with changes to both the eastern and western ends of route ○ In Co-op City, route would terminate at Dreiser Loop ○ Western routing would operate southbound via Boston Road, south of Gun Hill Road to the Pelham Parkway 2 5 station, providing service along a corridor not previously served by NYCT
+[p183_c0005] _Master Page # 183 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 184
+
+### [p184_c0001] Staff Summary
+[p184_c0002] Bus Company
+[p184_c0003] New York City Transit
+- [p184_c0004] • Bx34 ○ Streamline route by discontinuing service along southern Bainbridge and Valentine Avenues ○ Service would be rerouted onto East 204 th Street and Webster Avenue, with access to Fordham Road still provided • Bx35 ○ Extend route to bypass bus-congested Gladstone Square (less than 500 feet away) and serve West Farms Road, Jennings Street, and Bryant Avenue ○ This route alignment change would ensure customers on segment of current Bx11 still have coverage • Bx36 ○ Streamline route to travel from Soundview to Washington Heights via East Tremont Avenue instead of East 174 th Street and East 180 th Street ○ Route would still serve the West Farms and East Tremont neighborhoods, but without meandering via Boston Road • Bx38 ○ Discontinue route ○ Service between Sections 1-4 and Bartow Avenue in Co-op City would be provided via more frequent Bx23 ○ Discontinuing this route will allow for these resources to be shifted to the Bx28 • Bx40 ○ Streamline route to operate from Throgs Neck to Morris Heights via East Tremont Avenue and East 180 th Street, allowing for a new connection to the ADA accessible E 180 St 2 5 express station ○ Discontinued segment of route on East Tremont Avenue between Rosedale and Webster Avenues would be covered by a proposed reroute of the Bx36 the Bx36 Limited ○ Routing would allow most customers along East Tremont Avenue and East 180 th Street to have simpler, more direct service, while avoiding some of the congestion of the West Farms Square area ○ Route would no longer meander through Throgs Neck, but would instead terminate at East Tremont and Harding Avenues ○ Increase weekday frequency to eight minutes or better all-day • Bx41 SBS ○ Increase weekday frequency to eight minutes or better all-day ○ No alignment changes or stop removals are proposed for route • Bx42 ○ Route would no longer completely duplicate the Bx40 service along the Tremont Avenue and Burnside Avenue corridors ○ Its western terminal would be changed to Westchester Square ○ Service west of Westchester Square would be provided by increase all-day frequency on the Bx40 ○ In Throgs Neck, the route would provide coverage service to Balcom and Pennyfield Avenues via one single route instead of two ○ Increase weekday frequency to 15 minutes or better all-day • Q50 Limited
+[p184_c0005] _Master Page # 184 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 185
+
+### [p185_c0001] Staff Summary
+[p185_c0002] Bus Company
+[p185_c0003] New York City Transit
+- [p185_c0004] ○ Shorten route, moving its northern terminal to Pelham Bay Park 6 station ○ Service between Co-op City and Pelham Bay Park would be provided by an enhanced Bx23 with increased frequency ● M100 ○ Shorten route, moving its southern terminal to Amsterdam Avenue and West 125 th Street ○ Discontinued segment of the route would be covered by the M60 SBS, M101, and newly proposed M125 ● M125 ○ Introduce new route that serves southern segment of current Bx15 ○ Route would operate from The Hub to Manhattanville via 125 Street ○ Operate route at weekday frequency of 8 minutes or better all-day with same service span as Bx15 (24 hours)
+### [p185_c0005] Proposed Final Plan – Revisions following Draft Plan (released October 2019)
+- [p185_c0006] ● Bx4 ○ Move forward with Draft Plan proposal ○ Increase Saturday frequency to 20 minutes or better all-day ○ Increase Sunday frequency to 20 minutes or better all-day ● Bx4A ○ Move forward with Draft Plan proposal ○ Extend weekday service span to 5:30 AM – 12:00 Midnight in southwest direction and 5:30 AM – 1:00 AM in northeast direction ○ Increase Saturday frequency to 24 minutes or better all-day ○ Extend Saturday service span to 6:15 AM – 12:15 AM in southwest direction and 6:45 AM – 1:00 AM in northeast direction ○ Increase Sunday service to 24 minutes or better all-day ○ Extend Sunday service span to 7:15 AM – 12:15 AM in southwest direction and 6:45 AM – 1:00 AM in northeast direction ● Bx5 ○ Decrease weekday frequency to 12 minutes or better all-day, due to introduction of Bx6 SBS service on Story Avenue ○ Decrease Saturday frequency to 13 minutes or better all-day, due to introduction of Bx6 SBS service on Story Avenue ○ Decrease Sunday frequency to 20 minutes or better all-day, due to introduction of Bx6 SBS service on Saturday Avenue ● Bx6 Local ○ Move forward with Draft Plan proposal ● Bx6 SBS ○ Move forward with Draft Plan proposal ● Bx8 ○ Maintain route alignment as-is ● Bx11 ○ Move forward with Draft Plan proposal
+[p185_c0007] _Master Page # 185 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 186
+
+### [p186_c0001] Staff Summary
+[p186_c0002] Bus Company
+[p186_c0003] New York City Transit
+- [p186_c0004] ○ Introduce 40-minute overnight service on weekdays, Saturdays, and Sundays, allowing for 24-hour service, seven days a week • Bx13 ○ Move forward with Draft Plan proposal • Bx15 ○ Move forward with Draft Plan proposal ○ Reduce midday and overnight weekday frequencies and increase evening frequency ○ Reduce Saturday overnight frequency ○ Reduce Sunday PM Peak and overnight frequencies • Bx18 ○ Move forward with Draft Plan proposal ○ Extend weekday service span to 5:00 AM – 1:00 AM in clockwise direction and 5:00 AM – 12:45 AM in counter-clockwise direction ○ Increase Saturday frequency to 20 minutes or better all-day ○ Extend Saturday service span to 5:00 AM – 12:30 AM in clockwise direction and 5:00 AM – 12:00 AM in counter-clockwise direction ○ Increase Sunday midday, PM Peak, and evening frequencies to 20 minutes or better ○ Extend Sunday service span to 5:00 AM – 12:45 AM in clockwise direction and 5:00 AM – 12:30 AM in counter-clockwise direction • Bx22 ○ Maintain route as-is • Bx23 ○ Increase weekday frequency to 6 minutes or better in peak periods and 20 minutes or better in off-peak periods ○ Increase Saturday frequency to 20 minutes or better in midday, PM Peak, and evening ○ Increase Sunday frequency to 20 minutes or better in midday and PM Peak • Bx24 ○ Maintain majority of existing alignment, with a minor change, eliminating a short, meandering segment within Country Club along Ohm Avenue, Griswold Drive, and Spencer Drive • Bx25 ○ Introduce new route serving Co-op City and the eastern Bronx ○ Outside Co-op City, the Bx25 will follow the same routing as the Bx26 along Allerton Avenue ○ Within Co-op City, the Bx25 will follow the same routing as the Bx38, traveling on Baychester Avenue and Co-op City Boulevard before terminating at the Bay Plaza Shopping Center in the eastbound direction ○ Route will split frequencies with Bx26, providing same frequency levels as today on Allerton Avenue ▪ Weekdays at 24 minutes or better all-day ▪ Saturdays at 30 minutes or better all-day ▪ Sundays at 30 minutes or better all-day ○ Route will have same service spans as Bx26
+[p186_c0005] _Master Page # 186 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 187
+
+### [p187_c0001] Staff Summary
+[p187_c0002] Bus Company
+[p187_c0003] New York City Transit
+- [p187_c0004] ▪ Weekdays from 5:45 AM – 10:45 PM in westbound direction and 6:30 AM – 11:30 PM in eastbound direction ▪ Saturdays from 6:00 AM – 10:45 PM in westbound direction and 7:00 AM – 11:45 PM in eastbound direction ▪ Sundays from 6:30 AM – 10:15 PM in westbound direction and 7:15 AM – 11:15 PM in eastbound direction • Bx26 ○ Maintain route alignment as-is ○ Route will split service with Bx25, providing same frequency levels as today on Allerton Avenue and decreased frequency in Co-op City to accommodate introduction of the Bx25 in northern Co-op City • Bx28 ○ Maintain route alignment as-is in Co-op City and move forward with Draft Plan proposal in Norwood ○ Increase weekday frequency to 13 minutes or better all-day ○ When combined with maintained Bx38, weekday frequency is 8 minutes or better along Gun Hill Road • Bx29 ○ Move forward with Draft Plan proposal • Bx30 ○ Maintain route alignment as-is in Co-op City and move forward with Draft Plan proposal along Boston Road • Bx34 ○ Move forward with Draft Plan proposal • Bx35 ○ Move forward with Draft Plan proposal • Bx36 ○ Move forward with Draft Plan proposal • Bx38 ○ Maintain route as-is ○ Increase weekday frequency to 13 minutes or better all-day ○ When combined with maintained Bx28, weekday frequency is 8 minutes or better along Gun Hill Road • Bx40 ○ Streamline route to operate from Throgs Neck to Morris Heights via East Tremont Avenue and East 180th Street, allowing for a new connection to the ADA accessible E 180 St 2 5 express station ○ Route would still operate as it does today along its southeastern portion ○ The schedule will not change, and it will have the same service span and frequency as today • Bx41 SBS ○ Move forward with Draft Plan proposal • Bx42 ○ Streamline route to operate from Throgs Neck to Morris Heights via East Tremont Avenue and East 180th Street, allowing for a new connection to the ADA accessible E 180 St 2 5 express station
+[p187_c0005] _Master Page # 187 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 188
+
+### [p188_c0001] Staff Summary
+> [p188_c0002] The logo for the MTA Bus Company, featuring the MTA logo in a circle followed by the text "Bus Company".
+> [p188_c0003] The logo for the MTA New York City Transit, featuring the MTA logo in a circle followed by the text "New York City Transit".
+- [p188_c0004] ○ Route would still operate as it does today along its southeastern portion ○ The schedule will not change, and it will have the same service span and frequency as today ● Q50 Limited ○ Maintain route alignment as-is during peak periods only ○ During off-peak periods route will terminate at Pelham Bay Park 6 station ● M100 ○ Move forward with Draft Plan proposal ● M125 ○ Move forward with Draft Plan proposal ○ Route will operate 24 hours at following frequencies: ▪ Weekdays at 8 minutes or better all-day ▪ Saturdays at 10 minutes or better all-day ▪ Sundays at 12 minutes or better all-day
+### [p188_c0005] Final Plan – Implementation – Revisions Following Proposed Final Plan (released November 2021)
+- [p188_c0006] ● Bx5, Bx6 Local, Bx6 SBS ○ Due to the 18-month pause caused by the COVID-19 pandemic, Bx6 SBS implementation has been delayed until 2023 to coincide with the retirement of the MetroCard and the full deployment of OMNY across the city ○ All-door boarding will be launched on all bus routes in 2023 ○ The logistics and expense associated with installing and then uninstalling SBS off-board fare machines along the future alignment in Soundview for just one year of use is not a prudent use of limited resources ○ The associated changes to the Bx5 and Bx6 Local schedules will also be postponed until 2023 when the Bx6 SBS realignment is implemented ● Bx28 ○ Maintain route as-is ○ Increase weekday frequency to 13 minutes or better all-day ○ When combined with maintained Bx38, weekday frequency is 8 minutes or better along Gun Hill Road ● Bx34 ○ Maintain route as-is
+[p188_c0007] _Master Page # 188 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 189
+
+### [p189_c0001] Bronx Local Bus Network Redesign – Staff Summary Attachment 2
+### [p189_c0002] Summary of Public Comments from February 2020 Public Hearing Regarding Bronx Bus Network Redesign for Regular Bus Service
+[p189_c0003] From October through December 2019, MTA NYC Transit presented the Bronx Bus Network Redesign Proposed Final Plan to all Bronx community boards and to those Manhattan community boards with service changes in their districts. A public hearing was held on February 20, 2020. Below is summary of the most common comments and concerns expressed by the public:
+[p189_c0004] Comment: Increase service on the Bx10 bus route. The Bx10 regularly experiences overcrowding with buses often arriving bunched, two or more at a time. This issue has been observed during all times of day. The concern has been raised by customers and elected officials.
+[p189_c0005] Response: Although at times individual Bx10 buses may be overcrowded, average loads do not indicate a need to increase service. Therefore, the Bx10 schedule will not change for now, although we will continue to monitor service levels. The Bx10 will have the same service frequency and span as it currently does. However, we will consolidate three percent (2 of 80) of the Bx10 stops, the average distance between stops from 977 to 989 feet. By removing these stops, we'll improve travel times and reliability along the route. We will continue to monitor ridership on the Bx10 as part of our regular bus schedule review process. If and whenever you observe bus bunching, please note the bus route, bus stop, and time of day, and contact us by calling 511 or providing the information on our website at https://new.mta.info/customer-feedback so that we can investigate the incident further.
+[p189_c0006] Comment: Is my express bus service changing?
+[p189_c0007] Response: Express buses are not included in the current proposed Bronx Bus Network Redesign; we will revisit the Express Bus network at a later time.
+[p189_c0008] Comment: Why is my stop(s) being removed?
+[p189_c0009] Response:
+[p189_c0010] Bus stop balancing, which involves removing bus stops for better spacing between stops, will speed up bus service by reducing the number of times a bus must slow down, pull out of traffic, and stop, and then merge back into traffic. Bus stops that are spaced closely and underutilized were considered for bus stop consolidation, while paying attention to and with our main concern focus on minimizing inconvenience to customers. In making bus stop balancing proposals, we considered major employment, shopping, and medical centers, schools, ridership, topography, transfers to other buses and trains, resident demographics including concentrations of seniors and persons with disabilities, and other local conditions such as bus stop shelters and other amenities.
+[p189_c0011] Comment: Maintain the Bx28 bus route as is.
+[p189_c0012] Response: The proposed Final Plan called for streamlining of the Bx28, making it more direct by avoiding circuitous segments. However, customers and community members expressed strong value in the existing routing of the Bx28 over the proposed alignment change that was
+[p189_c0013] _Master Page # 189 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 190
+
+[p190_c0001] outlined in the Draft and proposed Final Plans. After field visits from agency staff members and hearing from members of the community during our February 2020 public hearing, it was determined that the Bx28 routing will remain as-is. However, the proposed frequency improvements to the Bx28 are still planned.
+### [p190_c0002] Comment: Maintain the Bx34 bus route as-is
+[p190_c0003] Response: The proposed Final Plan called for streamlining of the Bx34, making it more direct by avoiding circuitous segments and narrow, one-way streets. However, customers and community members expressed strong value in the existing routing of the Bx34 over the proposed alignment change that was outlined in the Draft and proposed Final Plans. After field visits from agency staff members and hearing from members of the community during our February 2020 public hearing, it was determined that the Bx34 routing will remain as-is.
+### [p190_c0004] Comment: Bx12 Service from Fordham Plaza to Webster Ave is overcrowded
+[p190_c0005] Response: Although at times individual buses may be overcrowded, our ridership analysis of average loads on the Bx12 does not indicate a need to increase service. Therefore, the Bx12 routing and schedule will not change. However, the Final plan will consolidate two percent of Bx12 stops, which will improve the average distance between stops from 1,091 feet to 1,115 feet. By removing these stops, we'll improve travel times and reliability along the route. We will continue to monitor ridership on the Bx12 as part of our regular bus schedule review process. In addition, we are working with NYC DOT on a project to improve bus priority on Fordham Road, which will help improve service on the Bx12.
+### [p190_c0006] Comment: Bx35 and Bx11 wait times seem to have increased
+[p190_c0007] Response: The Bx11 weekday schedule will be improved to 8 minutes or better all day. Additionally, due to the new route alignment along East 174 Street to Parkchester, the Bx11 will now have overnight service on both weeknights and weekends. Due to the routing change, ridership will be closely monitored, and schedules will be adjusted accordingly. The Bx35 schedule will not change. The Bx35 will have the same service frequency and span as it currently does. After the routing changes on these routes, ridership will be closely monitored, and schedules will be adjusted accordingly.
+### [p190_c0008] Comment: Why is there no SBS on Bx19?
+[p190_c0009] Response: The SBS program is not currently expanding, as the SBS fare payment system will be replaced by OMNY by 2023. However, improvements are happening that bring SBS-like features to the Bx19. Bus lanes were installed on 149th Street in 2020, helping bus speeds on that busy part of the route. We have proposed to remove 11 stops along the Bx19 to improve both speed and reliability as part of the Redesign plan. Finally, all-door boarding with OMNY will begin on all local bus routes in 2023, which will greatly speed up boarding.
+### [p190_c0010] Comment: Why is there no SBS on Bx1/2
+[p190_c0011] Response: The SBS program is not currently expanding, as the SBS fare payment system will be replaced by OMNY by 2023. Eight stops along the Bx1 and Bx2 will be removed, improving the average distance between stops from 861 feet to 890 feet for the Bx1 Local, from 1,523 feet to 1,584 feet for the Bx1 LTD, and from 821 feet to 848 feet for the Bx2. Together with the rollout of all-door boarding on all local buses in 2023, these bus stop improvements will give the
+[p190_c0012] _Master Page # 190 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 191
+
+[p191_c0001] Bx1 and Bx2 more SBS-like features that should make the routes faster and more reliable for our customers.
+### [p191_c0002] Comment: What is or can be done to in regard to bus connections to Queens
+[p191_c0003] Response: There are additional Bronx-Queens connections being considered as part of the Queens Bus Network Redesign Draft Plan.
+### [p191_c0004] Comment: Congestion on 149th and 3rd Ave is an issue
+[p191_c0005] Response: In October 2020, NYCDOT completed a bus priority project on East 149 St, which included new bus lanes and transit signal priority. This project has helped speed up buses on that corridor.
+### [p191_c0006] Comment: Extend the Bx12 LCL from Sedgwick Ave/Webb Ave to Bailey/Heath Av
+[p191_c0007] Response: There are no safe and accessible locations for a bus stop at Bailey Ave/Heath Ave.
+### [p191_c0008] Comment: Extend the Bx12 LCL to the business district on 225 St.
+[p191_c0009] Response: This extension of about one mile would negatively impact reliability on the Bx12. Customers can transfer from the Bx12 to the Bx9 to reach 225 St.
+### [p191_c0010] Comment: Instead of rerouting Bx35 to West Farms Road, it should still serve 2/5 train at Simpson St station and merge with Bx27.
+[p191_c0011] Response: The Bx35 routing will change as part of the larger redesign effort to improve crosstown service by streamlining the Bx11, Bx35, Bx36, Bx40, and Bx42. The new Bx35 will bypass the congestion at Gladstone Square to better serve West Farms Road, Jennings Street, and Bryant Avenue. This reroute supports the Bx11 service changes while improving reliability and coverage across all of the affected routes. The Bx27 routing will not change. The existing route connects to several important destinations and performs well.
+### [p191_c0012] Comment: Extend Bx5 to Crotona Avenue/Claremont Parkway via Bx11 routing along West Farms Rd.
+[p191_c0013] Response: The Bx5 routing will not change. Extending this route via Bx11 routing along West Farms Rd would add more distance, turns, and stops, making the buses slower and more unreliable than existing conditions. The existing route is relatively direct, operates in neighborhoods that are far from subway service, and connects to several important transfer points.
+### [p191_c0014] Comment: “Regarding transfer issues for former BX11 passengers, three legged transfers should be given between the westbound BX5 route and the westbound BX11 route and vice versa as well as between the eastbound BX5 route and my suggested proposed BX35/BX27 combo in both directions and vice-versa or if not combined than between the BX5 route and the BX35 westbound route and between the BX5 and the eastbound BX27 route as well as vice-versa.”
+[p191_c0015] Response: We employ multiple strategies that ensure that some transfer connections remain “free.” In some cases, we can program our MetroCard technology to recognize trips that require an additional transfer. In other cases, we would train bus operators to provide transfers free-of-charge to or from specific routes. Our policy is that no rider should have to pay an additional transfer fare as result of the Bronx Bus Network Redesign.
+[p191_c0016] _Master Page # 191 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 192
+
+### [p192_c0001] Comment: Extend Bx11 further east to Westchester Square
+[p192_c0002] Response: The Bx11 routing will change as part of an effort to simplify the Bx11, Bx18, Bx35, Bx36, Bx40, and Bx42 routes. The Bx11 will now serve East 174 Street and terminate in the eastbound direction at the Parkchester 6 Station. Customers can transfer to Bx4, Bx4A or 6 train to get to Westchester Square.
+### [p192_c0003] Comment: Extend Bx6 SBS proposed route from Pugsley Avenue/Lafayette Avenue to Lafayette Avenue/Hutchinson River Parkway (South) to provide connection to Q44 SBS and Q50 LTD at Hutchinson River Parkway and Bx22 at Castle Hill Ave.
+[p192_c0004] Response: Doing this extension will add more turns, stops, and running time to Bx6 SBS, which goes against Redesign goals of creating straight direct routes with All Day frequent services. Customers will have the option of transferring to the Bx5 along Story Avenue to connect to Q44 SBS and Q50 LTD.
+### [p192_c0005] Comment: Extend proposed Bx29 to Westchester Square
+[p192_c0006] Response: The Bx29 routing will change. The route will be shortened, with its western terminal moved to the Pelham Bay Park 6 station. Customers can transfer to Bx24 to reach Westchester Square.
+### [p192_c0007] Comment: The Final Plan does not include investments in better frequency or new service.
+[p192_c0008] Response: This statement is not correct; the plan includes service investments in routing changes and greater frequency.
+### [p192_c0009] Comment: The Bronx needs better East-West Connection and Services
+[p192_c0010] Response: One of the Bronx Network Redesign strategies is to enhance connectivity, which includes improving east-west connections in the Bronx. The Final Plan includes the following six route changes that help achieve this goal: Bx6 SBS to Soundview, Bx11 to Parkchester, Bx35 to West Farms, Bx25 from Northern Co-op City to Bedford Park, Bx30 to Boston Rd, and Bx40/42 to E 180 St.
+### [p192_c0011] Comment: There needs to be more service on the Bx7 and Bx10 buses due to overcrowding
+[p192_c0012] Response: While there can be a gap in service that results in an overcrowded bus, average hourly loads on the Bx7 and Bx10 do not indicate there is problems with overcrowding. However, we conduct regular reviews of bus ridership, and we adjust service levels up or down in response to changing ridership patterns, including overcrowding where it is found.
+### [p192_c0013] Comment: The Bx30 does not need to serve Boston Rd south of Gun Hill Rd, because the Westchester Bee Line routes already provide local service there. Instead, the Bx30 should provide new service to Burke Ave and then to Gun Hill Rd which to maintain service to an ADA accessible subway station.
+[p192_c0014] Response: The proposed routing of the Bx30 on Boston Rd will serve the ADA-accessible Pelham Parkway station, as well as provide new connections for Bx30 customers to the high-frequency Bx12 local and SBS routes.
+[p192_c0015] _Master Page # 192 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 193
+
+[p193_c0001] Comment: Extend proposed Bx30 from Pelham Parkway/White Plains Road to Fordham Road/Grand Concourse at Fordham Plaza
+[p193_c0002] Response: Customers can transfer to Bx12, Bx12SBS, and Bx22 to get to Fordham Plaza.
+[p193_c0003] Comment: Merge Bx13 and Bx46 via East 149th St and Westchester Avenue, providing connections to the Hub
+[p193_c0004] Response: Bx13 customers can transfer to Bx19 to reach the Hub, and Bx46 customers can transfer to the Bx4 or 2 5 trains to reach the Hub. Merging these routes would add significant running time and turns, which would not adhere to Redesign goals of creating and maintaining straight, direct routes.
+[p193_c0005] Comment: Keep the Q50 service to Co-op city as is.
+[p193_c0006] Response: The Q50 Limited will now operate to and from Co-op City during weekday peak hours only (6:00 AM to 9:00 AM and 4:00 PM to 7:00 PM). During off-peak hours, the route will only operate to and from the Pelham Bay Park 6 station, where Co-op City bound customers can transfer to Bx12 or Bx23 to reach their destination.
+[p193_c0007] Comment: Bx3 Short turn at West Kingsbridge Rd/University Ave extend to VA Hospital
+[p193_c0008] Response: The Bx3 routing will not change. The route is already straight, direct, and connects to several important transfer points. Customers can transfer to Bx32 for service to the VA Hospital.
+[p193_c0009] Comment: Shorten Bx9 by setting northern terminus at W 225 St/Broadway
+[p193_c0010] Response: The Bx9 routing will not change. The Bx9 route already maintains high ridership and connects to several important destinations and transfer points.
+[p193_c0011] Comment: Bx3 is unreliable and Bx9 has delays. Both need treatments
+[p193_c0012] Response: Both routes have bus stop consolidation proposals which will help speed up buses and improve reliability. In addition, NYCDOT will implement bus priority treatments to University Ave and Fordham Rd in the future, which will help improve the bus operations of the Bx3 and Bx9, respectively.
+[p193_c0013] Comment: More Service is needed for Northeast and Northwest Bronx areas
+[p193_c0014] Response: There are multiple routing and schedule improvements proposed for service in the Northeast and Northwest Bronx, including on the Bx25, Bx28, Bx30, and Bx38.
+[p193_c0015] Comment: The Bx15 is a reliable way for customers to get to Manhattan, especially when there are problems with the 2 and 5 trains on weekends. The route should continue to serve Manhattan, rather than creating the proposed M125 route for Manhattan service.
+[p193_c0016] Response: The Bx15 currently experiences poor service reliability, with an average on-time performance of 40 percent, wait assessment of 67 percent, and Customer Journey Performance Time of 64 percent. This is largely due to congestion on the Bx15 as it travels on the 3 rd and Willis Avenue Bridges and along 125 th Street. The majority of current Bx15 customers (approximately 85 percent of pre-pandemic riders) travel solely along Third Avenue and do not travel beyond The Hub. These customers are impacted by the poor service that results from congestion south of the Hub. With the new M125 providing service to 125 th Street instead of the
+[p193_c0017] _Master Page # 193 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 194
+
+[p194_c0001] Bx15, the majority of Bx15 customers will benefit with improved reliability, while those riding to Manhattan will still have service.
+### [p194_c0002] Comment: Buses need better frequencies
+[p194_c0003] Response: A major goal for this redesign was to create an all-day frequent bus network, especially on major corridors. We recognize that even though traditional rush hours still see our highest volume of riders, people go to work, school, and events at all different hours. This new network reflects that reality.
+### [p194_c0004] Comment: Why are there no more printed schedules at the bus stops?
+[p194_c0005] Response: We made the decision to not post schedules in the Guide-A-Ride boxes at bus stops because our real-time data is much more accurate than printed schedules, especially with traffic conditions delaying buses and our dispatchers making adjustments in real-time in response. By not spending resources on updating bus stop schedules at thousands of stops city-wide, we can reallocate funds to maintain and improve bus service for our customers.
+[p194_c0006] Surveys have found that 96% of New Yorkers have cell phones, with 80% owning smart phones. Therefore, the vast majority of customers are able to access real-time information via smartphone apps, by scanning a QR code at the bus stop, or by texting the bus stop code displayed at the stop. Customers may also call 511 to obtain real-time information. Those who prefer to view (and print out) the schedule can do so on the MTA website at https://new.mta.info/schedules/bus , or call 511 to request that a printed schedule be mailed to them.
+### [p194_c0007] Comment What is the MTA doing to keep the buses clean and enforce cleanliness standards?
+[p194_c0008] Response: Our crews remove trash, clean spills and biohazards, spot-clean seats, floors, and other surfaces, and disinfect common touchpoints. We use disinfectants that are Environmental Protection Agency registered.
+### [p194_c0009] Comment: Maintain all Bx29 bus stops
+[p194_c0010] Response: The Bx29 is proposed to have 8 of 29 stops removed in order to improve bus stop spacing. For every bus stop removed, an average of 20 seconds of travel time is saved, improving bus service for the majority of customers.
+### [p194_c0011] Comment: Expand Select Bus Service (SBS) and bus priority
+[p194_c0012] Response: The SBS program is not currently expanding, as the SBS fare payment system will be replaced by OMNY by 2023, when all-door boarding is also extended to all local buses. To continue to improve bus service, we are working with our partners at NYC DOT to expand bus priority on key Bronx corridors where it is most needed. These corridors include: West 181st Street/Washington Bridge, E.L. Grant Highway, University Avenue, 149th Street, Story Avenue, Tremont Avenue, Fordham Road, Gun Hill Road, and the Pelham Bay Park Station Area.
+### [p194_c0013] Comment: Improve bus stop amenities at every stop. Customers want the expansion of countdown clocks, bus shelters, and printed schedules at all stops serving Bronx bus routes.
+[p194_c0014] _Master Page # 194 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 195
+
+[p195_c0001] Response: Countdown clocks and bus shelters are installed and maintained by NYC DOT, with input from local communities.
+### [p195_c0002] Comment: Enforce fares better
+[p195_c0003] Response: Fare enforcement is an ongoing process and is not part of this proposal. However, with the full rollout of the OMNY system and retirement of the MetroCard in 2023, onboard fare enforcement will expand and improve because fare enforcement staff will be able to check all customers for proof of payment.
+### [p195_c0004] Comment: Buy newer buses/keep buses cleaner
+[p195_c0005] Response: The MTA continues to purchase vehicles to update and upgrade its fleet. In addition, our crews remove trash, clean spills and biohazards, spot-clean seats, floors, and other surfaces, and disinfect common touchpoints. We use disinfectants that are Environmental Protection Agency registered.
+### [p195_c0006] Comment: Extend the Bx39 to the Soundview ferry terminal, like the Bx27.
+[p195_c0007] Response: There is not sufficient room for articulated buses used on the Bx39 to layover and turnaround at the Soundview ferry terminal. Furthermore, there are no restroom facilities at the ferry terminal for operators to use. The MTA will continue to work with its partners at NYCDOT to make changes in the future if they become possible.
+### [p195_c0008] Comment: provide continuous service across 233 St with the Bx16. Replace the Bx16 in northern Wakefield with an eastward extension of the Bx34, and replace service on Baychester Avenue with a northern extension of the Bx19.
+[p195_c0009] Response: There is not a strong enough demand for a direct route along E 233 St, which would require reconfiguring multiple other routes.
+### [p195_c0010] Comment: Extend the Bx46 to E 163 St to connect to the Bx6 SBS.
+[p195_c0011] Response: The Bx46 is designed to provide service between the 6 subway and southern Hunts Point. There isn't sufficient ridership or demand to justify an extension anywhere beyond the subway.
+### [p195_c0012] Comment: Restore Bx20 service beyond just peak periods on weekdays.
+[p195_c0013] Response: There is not sufficient ridership to justify expanding Bx20 service beyond the weekday peak periods.
+### [p195_c0014] Comment: Make the first northbound stop of the Bx13 at 149 St and Exterior Street/River Avenue, for an easier transfer from the Bx19.
+[p195_c0015] Response: This idea will be considered as part of regular bus service planning.
+### [p195_c0016] Comment: Make various route extensions and alignment changes to the Bx1, Bx2, Bx3, Bx4, Bx7, Bx10, Bx11, Bx13, Bx20, Bx22, Bx32, and Bx34 routes as well as extend the span of these routes to run at all times.
+[p195_c0017] Response: The changes do not match customer demand nor do they support where customers have told us they would like new bus connections and service. Furthermore, several recommendations would require a significant increase in resources the agency does not currently possess. Therefore, these routes will remain as they have been proposed in the Bronx Network Redesign Final Plan and Addendum Document. For more information about these routes, see the route profile page: https://new.mta.info/bronxbusredesign/routes .
+[p195_c0018] _Master Page # 195 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 196
+
+[p196_c0001] Comment: Initiate a feasibility study of local shuttle bus service.
+[p196_c0002] Response: The Bronx Road Operations team examines current traffic and bus service conditions to make decisions about when and where to “short turn” buses to ensure that adequate service is being provided along all routes in the Bronx.
+[p196_c0003] Comment: Give more consideration to Bx1 bus schedules.
+[p196_c0004] Response: Bx1 buses are scheduled to be every 12 minutes or more frequent on weekdays. For scheduled Bx1 frequencies see the Bx1 route profile: https://new.mta.info/document/63121 or the current Bx1 schedule: http://web.mta.info/nyct/bus/schedule/bronx/bx001cur.pdf .
+[p196_c0005] Comment: Maintain the current Bx29 route alignment.
+[p196_c0006] Response: The Bx29 route alignment is being shortened at Pelham Bay Park because most customers get off the bus there to transfer to the 6 train or other buses. With this change, the Bx29 will be more reliable for City Island customers. Based on discussions with the community, we agreed to re-invest the savings made by this route alignment into providing overnight service on the Bx29, and into more frequent service on the Bx23 to make up for the loss of the Bx29 in Co-op City. For more information about the Bx29 route alignment changes, see the Bx29 route profile: https://new.mta.info/bronxbusredesign/routes/bx29
+[p196_c0007] _Master Page # 196 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 197
+
+### [p197_c0001] Bronx Local Bus Network Redesign – Staff Summary Attachment 3
+### [p197_c0002] Summary of Public Comments from November 2021 Virtual Public Meeting Regarding Bronx Bus Network Redesign for Regular Bus Service
+### [p197_c0003] Comment: Restore my bus stop(s).
+[p197_c0004] Response: When analyzing each bus stop, the following factors were considered:
+- [p197_c0005] • In-depth analysis of bus stop usage ○ The number of customers boarding and alighting at the bus stop on an average weekday ○ Whether the stop is a key transfer point to other bus routes or nearby subway or rail services • Demographics of customers ○ The density of seniors or persons with mobility issues • Examination of surrounding land uses ○ the presence of community facilities, educational institutions, and/or medical facilities adjacent to the stop • Identification of potential improvements to remaining bus stops to better accommodate customers
+[p197_c0006] Bus stop balancing helps to speed up buses and increase reliability. Too many bus stops too close together dramatically slows the bus and worsens reliability. Improved spacing between stops will speed up bus service by reducing the number of times a bus must slow down, pull out of traffic, and stop, and then merge back into traffic. Bus stops that are spaced closely together and underutilized were considered for bus stop consolidation, while paying attention to and keeping our focus on minimizing inconvenience to customers.
+### [p197_c0007] Comment: Expand the Bx23 service span by starting service at 3:30 AM on weekdays and 4:30 AM on Saturdays to be consistent with the Q50 Limited start time and 24/7 Bx29 service.
+[p197_c0008] Response: Overnight service to the Pelham Bay Park 6 Station and Co-op City will continue to be provided by Bx12 Local bus service. Due to proposed changes, ridership will be closely monitored, and schedules will be adjusted accordingly.
+### [p197_c0009] Comment: Express Bus Plan Proposals.
+[p197_c0010] Response: Changes to Express Bus Service have been removed from the proposed Final Plan and will not move forward at this phase of the project. The Bronx Express Bus Redesign will be revised at a later time.
+### [p197_c0011] Comment: I would ask that you reconsider the stop at Pelham Bay 6 station as it's being moved and it might be better to leave it is for safety issues. There have been safety concerns in the past few months.
+[p197_c0012] Response: The Bx12 SBS eastbound bus stop at the Pelham Bay Park 6 station will be safer for many customers, as those transferring from the subway station will not have to cross the street, as they do today to access the current stop.
+[p197_c0013] _Master Page # 197 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 198
+
+### [p198_c0001] Comment: Timelines on NYCDOT Bus Priority Projects.
+[p198_c0002] Response: Below is a status update on those NYCDOT bus priority projects that directly benefit key bus corridors in the Bronx and Upper Manhattan:
+- [p198_c0003] • Completed ○ 149 th Street ○ 181 st Street ○ E.L. Grant Highway • In Implementation ○ University Avenue (southern half) ○ Story Avenue ○ Pelham Bay Park 6 Station Area • Forthcoming ○ University Avenue (northern half) ○ Fordham Road ○ Tremont Avenue ○ Gun Hill Road ○ Washington Bridge
+[p198_c0004] For more information on these projects, please see pages five and six in the Final Plan Addendum or visit NYCDOT's Better Buses homepage .
+### [p198_c0005] Comment: Concern that M125 will have the same issues as the current Bx15.
+[p198_c0006] Response: The Bx15 is a major north-south route that operates in the Bronx and Upper Manhattan. It carried 34,300 customers on an average weekday pre-pandemic (currently 19,940), placing it as the fifth highest ridership route in the Bronx. The route currently experiences poor service reliability with an average on-time performance of 40 percent, wait assessment of 67 percent, and Customer Journey Performance Time of 64 percent. When operating southwest, the route experiences congestion as it travels from The Hub to the 3 rd Avenue Bridge and again when it reaches 125th Street where there is significant bus-on-bus congestion. The Bx15 experiences the same congestion when operating northeast, traveling to the Bronx via the Willis Avenue Bridge.
+[p198_c0007] We proposed with the Draft Plan and maintained in our Proposed Final Plan that the Bx15 should terminate at The Hub. The majority of current Bx15 customers (approximately 85 percent of pre-pandemic riders) travel solely along Third Avenue and do not travel beyond The Hub. The new M125 would continue to provide service between The Hub and 125th Street in Manhattan. Under the Proposed Final Plan, customers traveling to La Guardia Airport could take the M125 from The Hub to the M60 SBS or, the fastest option, customers could board a 2 or 5 train and transfer to the M60 SBS. There are additional options being considered as part of the Queens Bus Network Redesign Draft Plan, with information to come.
+[p198_c0008] Additionally, under the Proposed Final Plan we have improved the frequency of service between The Hub and 125 St by providing an all-day frequency of 8-minutes for the M125 (southern segment of current Bx15).
+[p198_c0009] _Master Page # 198 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 199
+
+[p199_c0001] By splitting the route in two and improving frequency, service reliability should improve and speed up travel times, while maintaining existing service for the majority of current Bx15 customers who do not travel beyond The Hub today.
+[p199_c0002] Comment: Extend buses that travel along E 233rd Street in Woodlawn by moving the terminus in Norwood to Riverdale.
+[p199_c0003] Response: The Bx16 and Bx34 bus routes operate along E 233rd Street and share a terminal adjacent to the Norwood-205 St D station in Norwood where key connections are available to the D train as well as the Bx10, Bx28, and Bx38 bus routes. Customers traveling between Woodlawn and Riverdale can do so by taking either the Bx16 or Bx34 and transferring to the Bx10.
+[p199_c0004] Comment: Reverting the Bx28 and Bx34 bus routes to their original alignment will cause delays.
+[p199_c0005] Response: The proposed Final Plan called for streamlining of the Bx28 and Bx34 bus routes, making the each more direct by avoiding circuitous segments and narrow, one-way streets. However, customers and community members expressed strong value in the existing routing of the Bx28 and Bx34 bus routes over the proposed alignment changes that were outlined in the Draft Plan and proposed Final Plan. After field visits from agency staff members and hearing from members of the community during our February 2020 public hearing, it was determined that the Bx28 and Bx34 routings will remain as-is.
+[p199_c0006] Comment: Restore Draft Plan proposal of rerouting the Bx40 and Bx42 bus routes along Balcom Avenue.
+[p199_c0007] Response: The Draft Plan proposal to realign the Bx40 and Bx42 bus routes in Throg's Neck was not included in the proposed Final Plan after hearing community concerns, investigating, and identifying operational challenges in providing through access on Balcom Avenue.
+[p199_c0008] Comment: Q50 Limited plans are different under the Bronx and Queens Bus Network Redesigns.
+[p199_c0009] Response: The Q50 Limited is an interborough bus route that has been examined under the Bronx Bus Network Redesign and will be built upon in the Queens Bus Network Redesign. The proposal to terminate the Q50 Limited at the Pelham Bay Park 6 station during off-peak periods (midday, overnight, and weekends) will be maintained with potential alignment changes proposed to the route along the portion that operates within Queens.
+[p199_c0010] Comment: Concern about the Bx36 being removed from 174th Street.
+[p199_c0011] Response: The Bx36 routing will change as part of the larger redesign effort to improve crosstown service by streamlining the Bx11, Bx35, Bx36, Bx40, and Bx42. The new Bx36 will still travel between Soundview and Washington Heights but will now operate on East Tremont Avenue instead of East 174 and East 180 Streets. The new routing will continue to serve the West Farms and East Tremont neighborhoods. However, it will avoid its existing indirect routing along Boston Road. Modified Bx11 and Bx40 routings will provide new crosstown service to riders on East 174 Street and on East 180 Street, respectively. For those customers that live in the Bronx River Houses, a rerouted Bx11 will serve East 174 Street and provide a new connection to the Parkchester 6 Station. If traveling from East 174 Street to East Tremont, customers can transfer from the Bx11 to the Bx19.
+[p199_c0012] _Master Page # 199 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 200
+
+### [p200_c0001] Comment: Leave Bx6 SBS alignment as it is today.
+[p200_c0002] Response: To improve crosstown connections, Bx6 SBS service will be rerouted along Bruckner Boulevard, Bronx River Avenue, and Story Avenue to a new eastern terminal at Turnbull and Pugsley Avenues in Soundview. The route will no longer serve Hunts Point, which will continue to be served by Bx6 Local bus service. This new routing will introduce additional connections for Bx5 customers and will provide faster crosstown service along Story Avenue for Soundview residents.
+[p200_c0003] To make up for the loss of the Bx6 SBS on Hunts Point Avenue, service on the Bx6 will increase from the Hunts Point Av 6 Station to Hunts Point Market. Frequencies along the rest of the route will remain the same as they are today. Where the Bx6 and Bx6 SBS overlap, the combined weekday frequency will also remain the same. Due to the Bx6 SBS routing change, ridership will be closely monitored, and schedules will be adjusted accordingly.
+### [p200_c0004] Comment: Leave Bx40 and Bx42 alignments as they are today (along Tremont all the way)
+[p200_c0005] Response: The Bx40 and Bx42 routing will change as part of the larger redesign effort to improve crosstown service by streamlining the Bx11, Bx35, Bx36, Bx40, and Bx42. The Bx40 and Bx42 will still travel between Throgs Neck and Morris Heights but will now do so via East Tremont Avenue and East 180 Street. The rerouted Bx36 and Bx36 Limited service will replace the existing Bx40 routing on Rosedale and Webster avenues. This redesigned routing will provide more direct service along East Tremont Avenue and East 180 Street, while avoiding the congestion around West Farms Square. A new connection to the E 180 St 25 station—an accessible station—will provide access to subway service. Due to the routing changes, ridership will be closely monitored and schedules will be adjusted accordingly.
+### [p200_c0006] Comment: Increase Service on Bx7 (frequently used for 168 th Hospital).
+[p200_c0007] Response: Our ridership analysis for the Bx7 indicates that an increase in services is not warranted. The Bx7 schedule will not change. The Bx7 will have the same service frequency and span as it currently does. We will continue to monitor ridership on the Bx7 as part of our regular bus schedule review process.
+### [p200_c0008] Comment: M 100 should terminate near A B C D lines to connect to an accessible station.
+[p200_c0009] Response: This option is being investigated, considering the constraints of street conditions and land use on the ability to operate service and lay over buses at a terminal.
+### [p200_c0010] Comment: The Bx5 experiences overcrowding.
+[p200_c0011] Ridership: We will coordinate with our Road Control team to identify and monitor any operational challenges the Bx5 is experiencing, including overcrowding. Under the proposed Final Plan, Bx5 weekday and weekend service will receive a slight decrease in frequency to reallocate resources for the new Bx6 SBS extension along Story Avenue. With both the Bx5 and Bx6 SBS combined along Story Avenue during the weekday, service frequencies will be increased. Story Avenue will now have a bus scheduled every 3 minutes in the weekday AM peak, every 6 minutes in the midday, and every 4 minutes in the PM peak. Ridership will be closely monitored, and schedules will be adjusted accordingly.
+[p200_c0012] _Master Page # 200 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 201
+
+[p201_c0001] Comment: Increase rush hour service for M100 and Bx7 from 168 to East 220 th or Riverdale due to overcrowding during rush hours.
+[p201_c0002] Response: Based on average hourly ridership numbers, an increase in rush hour service on the Bx7 and M100 is not warranted. These routes will continue to have the same service frequency and span as they currently do. We will coordinate with our Road Control team to identify and monitor any operational challenges the Bx7, M5, and M100 may be experiencing, including overcrowding due to unreliable service. Due to the routing change, ridership will be closely monitored, and schedules will be adjusted accordingly.
+[p201_c0003] Comment: M 100 should be extended along 125 th street to 2 nd Ave or at least 120 th St.
+[p201_c0004] Response: The new southbound terminal of the M100 will be at Amsterdam and West 125 Street. Due to congestion on 125 Street, which causes reliability issues throughout the route, and that fact that service on the 125 Street segment is duplicated by the M60 Select Bus Service, M101, and new M125 routes; the M100 routing along 125 Street will be discontinued. After the route change, ridership will be closely monitored, and schedules will be adjusted accordingly.
+[p201_c0005] Comment: NYPD vehicles are parked illegally in bus lanes in the 52 Precinct, blocking the Bx41 Local and Bx41 SBS routes. This might happen with Bx6 SBS on Story Avenue.
+[p201_c0006] Response: If and whenever you observe cars and other vehicles double parking at a particular stop on a bus route in a bus lane, please note the bus route, bus stop, and time of day and contact us by calling 511 or providing the information on our website at https://new.mta.info/customer-feedback so that we can investigate the incident further. We can work with our partners at NYPD to resolve the issue.
+[p201_c0007] Comment: Bx30 map on page 120 of proposed Final Plan is upside down
+[p201_c0008] Response: Please refer to our Route Profile page for the latest update.
+[p201_c0009] https://new.mta.info/bronxbusredesign/routes
+[p201_c0010] Comment: Need better connection between 13 Metro-North Stations and Bronx buses.
+[p201_c0011] Response: Bronx local buses currently do and will continue to connect to Metro-North stations in the Bronx, including those newly proposed Metro-North stations in Co-op City, Morris Park, Parkchester/Van Nest, and Hunts Point. For more information about further Metro-North stations, please visit https://pennstationaccess.info/overview .
+[p201_c0012] Comment: There should be a direct Bronx bus to LaGuardia Airport
+[p201_c0013] Response: Under the proposed Final Plan, customers traveling to La Guardia Airport could take the M125 from The Hub to the M60 SBS or, the fastest option, taking any subway line in the Bronx and transferring to the M60 SBS. There are additional options being considered as part of the Queens Bus Network Redesign Draft Plan, with information to come.
+[p201_c0014] Comment: Extend Bx2 and Bx17 to Jackson Heights via Woodside across the JFK Bridge
+[p201_c0015] Response: The Bx2 and Bx17 route alignments will not change. The Bx2 bus route is already straight, direct, and connects to several important destinations and transfer points. Similarly, the Bx17 bus route connects to several important destinations and transfer points, including Fordham Plaza. Both bus routes provide north-south service to central Bronx customers and to
+[p201_c0016] _Master Page # 201 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 202
+
+[p202_c0001] lengthen either route further would directly conflict with Network Redesign strategies and may lead to service reliability and performance issues. Presently, the Bx17 is among the more reliable bus routes in the Bronx system.
+[p202_c0002] Comment: There should be a better connection between Bronx, Manhattan, and Queens by the JFK Bridge. Provide better transportation from the South Bronx to Randall's Island and extend to Queens.
+[p202_c0003] Response: Connections to Randall's Island and Queens are made possible through the 125 th Street corridor via transfer to the M35 and M60 SBS routes.
+[p202_c0004] The following questions and answers are the summary of the questions asked and answered via Zoom Chat.
+[p202_c0005] Comment: Will there be improvement on scheduling on the BX39 bus line? This line service is horrible
+[p202_c0006] Response: Our ridership analysis for the Bx39 indicates that increased services is not warranted. The Bx39 schedule will not change. The Bx39 will have the same service frequency and span as it currently does. If you would like more information about the Bx39 route, please see this webpage on the Bx39: https://new.mta.info/bronxbusredesign/routes/bx39 or this route profile describing the route and its bus stops: https://new.mta.info/document/63761 . If you have specific concerns about the route you can comment here: https://mta-nyc.custhelp.com/app/comments_bronxbus
+[p202_c0007] Comment: Why is the Redesign being done from a cost neutral perspective?
+[p202_c0008] Response: It is not cost neutral. We will be investing in Bronx Bus Service.
+[p202_c0009] Comment: Will the area of Hunts Point Avenue station on the (6) will have bus priority
+[p202_c0010] Response: No, but the Bx6 SBS will benefit from new bus lanes that are coming to Story Avenue once the Bx6 SBS is rerouted to Story Av in 2023. The Bx6 and Bx6 SBS will continue to benefit from the existing bus lanes along the rest of the route.
+[p202_c0011] Comment: Would there be an additional transfer from the Q50 to the Bx23 like if I take the Bx40 to the Q50 then the Bx23?
+[p202_c0012] Response: We have heard from our customers that they are willing to transfer for faster, more reliable service but they are concerned over having to pay a second fare or take a crowded bus.
+[p202_c0013] We also want to stress that we employ multiple strategies that ensure that some transfer connections remain "free." In some cases, we can program our MetroCard technology to recognize trips that require an additional transfer. In other cases, we would train bus operators to provide transfers free-of-charge to or from specific routes. Our policy: No rider should have to pay an additional transfer fare as result of the Bronx Bus Network Redesign.
+[p202_c0014] Comment: With the 30 being on Boston, would the W60, 61 and 62 only have drop off to Fordham and pick up to White Plains and Portchester?
+[p202_c0015] Response: The W60, W61, and W62 are Bee Line Bus routes and changes to those bus routes are the responsibility of Bee Line Bus Transit.
+[p202_c0016] _Master Page # 202 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 203
+
+[p203_c0001] Comment: The BX11 is losing access to the Highbridge area where many seniors live. What will compensate for this loss?
+[p203_c0002] Response: The Bx11 routing will change as part of an effort to simplify the Bx11, Bx18, Bx35, Bx36, Bx40, and Bx42 routes. By streamlining routes, reducing the number of turns, avoiding slow speed segments, and improving stop spacing, customers will see improved reliability and bus speed. The Bx11 will now serve East 174 Street and terminate in the eastbound direction at the Parkchester 6 Station. The extended Bx35 will serve Jennings Street and West Farms Road. To allow the Bx11 to travel directly into Manhattan via Edward L. Grant Highway, the extended Bx18 will replace the existing Bx11 service to Shakespeare Avenue, West 168 Street, Ogden Avenue, and Plimpton Avenue. If you would like more information about the Bx11 route, please see this webpage on the Bx11: https://new.mta.info/bronxbusedesign/routes/bx11 : or this route profile describing the route and its bus stops: https://new.mta.info/document/63536 .
+[p203_c0003] Comment: Why is the Bx15 bus being split the new M125 bus is going to have the same issue as the Bx15 bus?
+[p203_c0004] Response: The Bx15 is a major north-south route in the Bronx that carried more than 30,000 customers on an average weekday pre-pandemic (currently about 20,000). The route currently suffers from poor service reliability with an average on-time performance of 40 percent, wait assessment of 67 percent, and Customer Journey Performance Time of 64 percent. The route experiences congestion as it travels from The Hub to the 3rd Avenue Bridge and again when it reaches 125th Street where there is significant bus-on-bus congestion. It experiences the same congestion heading back to the Bronx via the Willis Avenue Bridge.
+[p203_c0005] We proposed with the Draft Plan and maintain in our Proposed Final Plan that the Bx15 would terminate at The Hub. The new M125 would provide service between The Hub and 125th Street in Manhattan. Under the Proposed Final Plan, customers traveling to La Guardia Airport could take the M125 from The Hub to the M60 SBS or, the fastest option, taking the 2 or 5 train and transfer to the M60 SBS. There are additional options being considered as part of the Queens Bus Network Redesign Draft Plan, with good things to be shared soon. Under the Proposed Final Plan, we have improved the frequency for the M125 (southern segment of current Bx15). By splitting the route in two and improving frequency, service reliability should improve and speed up travel times. In addition, the majority of current Bx15 customers (approximately 85 percent pre-pandemic and currently approximately 58 percent) do not travel beyond The Hub today.
+[p203_c0006] Comment: Were further routes considered to Queens and Brooklyn, such as buses targeting LaGuardia Airport employees?
+[p203_c0007] Response: Under the Proposed Final Plan, customers traveling to La Guardia Airport could take the M125 from The Hub to the M60 SBS or, the fastest option, is to catch the 2 or 5 train and transfer to the M60 SBS. There are additional options being considered as part of the Queens Bus Network Redesign Draft Plan, with good things to be shared soon.
+[p203_c0008] Comment: Will the Bx36 stops be removed from 180th stops between west farms and Webster Avenue?
+[p203_c0009] Response: Yes, under the proposed plan the Bx36 will still travel on East Tremont Avenue instead of East 174 and East 180 Streets. The new routing will continue to serve the West
+[p203_c0010] _Master Page # 203 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 204
+
+[p204_c0001] Farms and East Tremont neighborhoods. However, it will avoid its existing indirect routing along Boston Road. Modified Bx11 and Bx40 routings will provide new crosstown service to riders on East 174 Street and on East 180 Street, respectively. The plan is subject to MTA Board approval. If you would like more information about the Bx36 route, please see this webpage on the Bx36 https://new.mta.info/bronxbusredesign/routes/bx36 : or this route profile describing the route and its bus stops: https://new.mta.info/document/63756 . Information on the Bx40 can be found here https://new.mta.info/bronxbusredesign/routes/bx40 and on the Bx11 here https://new.mta.info/bronxbusredesign/routes/bx11
+### [p204_c0002] Comment: What changes are being proposed for the BX 28 and BX38 on Gun Hill Road?
+[p204_c0003] Response: After field visits from agency staff members and hearing from members of the community during our February 2020 public hearing, it was agreed that Bx28 would no longer change and remain as-is. The proposed frequency improvements to the Bx28 are still planned. Additionally, the Draft Proposal to discontinue Bx38 service will not be implemented. More information can be found here https://new.mta.info/bronxbusredesign/routes/bx28 and here https://new.mta.info/bronxbusredesign/routes/bx38
+### [p204_c0004] Comment: Is there a route redesign affecting the Bx11 and Bx18 lines?
+[p204_c0005] Response: Yes, both Bx11 and Bx18 will be rerouted. More information can be found here https://new.mta.info/bronxbusredesign/routes/bx11 and here https://new.mta.info/bronxbusredesign/routes/bx18
+### [p204_c0006] Comment: What are the enforcement practices for keeping bus lanes clear? Every time I am on the bus on Fordham or 125th there are always double parked cars and electric scooters, rendering the bus lanes inoperable and negating any potential times savings.
+[p204_c0007] Response: We work closely with our partners at NYCDOT and NYPD to improve bus lane enforcement. City streets, including bus lanes and bus stops, are managed by NYCDOT. They use stationary cameras to help enforce bus lanes along SBS routes. Meanwhile, NYPD uses Traffic Enforcement Agents to enforce the rules of the road. In addition, MTA has a program of on-bus cameras to enforce bus lanes, called ABLE. ABLE is currently active on seven routes, but in the next two years we will be greatly expanding the program. In conjunction with new NYCDOT cameras, 85% of existing bus lanes will be camera-enforced by the end of 2023.
+[p204_c0008] If you observe cars and other vehicles double parking at a particular stop on a bus route, please note the bus route, bus stop, and time of day and contact us by calling 511 or providing the information on our website at https://new.mta.info/customer-feedback so that we can investigate the incident further. We can work with our partners at NYPD to resolve the issue.
+[p204_c0009] _Master Page # 204 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 205
+
+### [p205_c0001] Bronx Bus Network Redesign Staff Summary
+> [p205_c0002] The MTA logo, consisting of the letters "MTA" in white, bold, sans-serif font, set against a solid blue circular background.
+### [p205_c0003] Attachment 4: Maps
+### [p205_c0004] Full Borough System Map
+[p205_c0005] _Master Page # 205 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 206
+
+### [p206_c0001] Bronx Local Bus Map - Post Redesign Implementation
+> [p206_c0002] The MTA logo, consisting of a blue circle with the letters 'MTA' in white.
+> [p206_c0003] A detailed map of the Bronx area showing the local bus network after a redesign. The map features a dense grid of streets with numerous colored lines representing different bus routes. Each route is marked with small colored squares indicating stops. The map includes geographical labels such as 'HUDSON RIVER' to the west, 'HARLEM RIVER' to the south, 'EAST RIVER' to the east, and 'LONG ISLAND SOUND' to the northeast. A scale bar and a north arrow are located in the lower right corner. The map also shows some green areas representing parks or undeveloped land.
+[p206_c0004] _Master Page # 206 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 207
+
+### [p207_c0001] Bronx Bus Network Redesign
+> [p207_c0002] The MTA logo, consisting of the letters "MTA" in white, bold, sans-serif font, set against a solid blue circular background.
+### [p207_c0003] Neighborhood Maps
+[p207_c0004] _Master Page # 207 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 208
+
+> [p208_c0001] This map illustrates the Central Bronx Crosstown Routes, highlighting various bus service changes. The map covers a large area of the Bronx, including the Harlem River, Bronx River, Westchester Creek, and Rogers's Creek. Major landmarks such as Pelham Parkway, Morris Park, and the Bronx Zoo are visible. The routes are color-coded and numbered: Existing service: Represented by solid blue lines, including routes 11, 18, 35, 36, 40, and 42. Changed service: Represented by solid green lines, primarily following route 36. Discontinued service: Represented by dashed red lines, including routes 11, 18, 35, and 36. A legend in the bottom right corner defines these symbols, and a north arrow is also present. The map title 'Central Bronx Crosstown Routes' is prominently displayed in the lower right area.
+[p208_c0002] _Master Page # 208 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 209
+
+> [p209_c0001] Co-op City Area Northeast Bronx Legend: Existing service (Blue line) Changed service (Green line) Discontinued service (Red dashed line) North Arrow (N) The map displays a detailed view of the Northeast Bronx, including the Bronx River, Pelham Parkway, and various residential and commercial areas. Bus routes are indicated by colored lines with route numbers. Existing services are shown in blue, changed services in green, and discontinued services in red dashed lines. Key locations include the Bronx Zoo, Pelham Park, and the New York University at Bronx Campus. The map also shows major highways and local streets.
+[p209_c0002] _Master Page # 209 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 210
+
+> [p210_c0001] Soundview/Parkchester Southeast Bronx —— Existing service —— Changed service —— Discontinued service * To avoid the cost and construction of on-street fare machines that would only be needed for approximately one year, Bx6 SBS route extension to Soundview, along with Bx5 frequency reductions and Bx6 Local frequency improvements, will be implemented in 2023 when MetroCards are retired and OMNY is fully deployed.
+[p210_c0002] _Master Page # 210 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 211
+
+> [p211_c0001] This map illustrates the 125th Street Corridor in Harlem, New York City. The corridor is highlighted with three distinct line styles: blue for existing service, green for changed service, and red for discontinued service. The blue line (M 100) runs along 125th Street from the Harlem River to Third Avenue. The green line (M 125) follows 125th Street from the Harlem River to Martin Luther King Blvd, and then continues along Willis Avenue. The red line (15) follows 125th Street from the Harlem River to Martin Luther King Blvd, and then continues along Willis Avenue. The map also shows the Harlem River, surrounding neighborhoods (Washington Heights, University Heights, Morris Heights, Tremont, Melrose, Harlem, Mott Haven), and various landmarks and facilities. A legend in the bottom right corner defines the line styles: a blue line for 'Existing service', a green line for 'Changed service', and a red line for 'Discontinued service'. A north arrow is also present in the legend.
+### [p211_c0002] 125th Street Corridor Harlem
+- [p211_c0003] ——— Existing service ——— Changed service ——— Discontinued service
+[p211_c0004] _Master Page # 211 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 212
+
+### [p212_c0001] Bronx Bus Network Redesign
+> [p212_c0002] The MTA logo, consisting of the letters "MTA" in white, bold, sans-serif font, set against a solid blue circular background.
+### [p212_c0003] Individual Route Maps with Alignment Changes
+[p212_c0004] _Master Page # 212 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 213
+
+> [p213_c0001] Bx4A Westchester Avenue / Metropolitan Avenue Legend: Existing service (Blue line) Added service (Light blue line) Discontinued service (Black line) Map details: The map shows the Bx4A route starting at the Bronx Zoo and Central Park, heading south through Westchester, and ending in the Bronx near the Bronx River. Major landmarks like the Bronx Zoo, Central Park, and various parks are labeled. The map also shows major highways like the I-95 and I-495.
+[p213_c0002] _Master Page # 213 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 214
+
+> [p214_c0001] *Bx6SBS 161st Street / Story Avenue █ Existing service █ Added service █ Discontinued service
+[p214_c0002] *Bx6SBS route changes have been postponed until 2023 when MetroCards are retired and OMNY is fully deployed.
+[p214_c0003] _Master Page # 214 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 215
+
+> [p215_c0001] This map illustrates the Bx11 bus route in New York City, connecting Parkchester to Washington Heights via 170 Street. The route is highlighted in blue, with solid blue lines for existing service and dashed blue lines for discontinued service. The map shows the route starting at Parkchester (near 170th St and 171st St), heading south on 170th St, crossing the Harlem River, and ending at Washington Heights (near 181st St and 182nd St). The map also shows various bus stops, including the Bx11 stop at 170th St and the Bx11 stop at 181st St. The map includes a legend in the top right corner, a north arrow, and a title box in the bottom right corner.
+### [p215_c0002] Bx11 Parkchester- Washington Heights via 170 Street
+[p215_c0003] Existing service Added service Discontinued service
+[p215_c0004] _Master Page # 215 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 216
+
+> [p216_c0001] Bx15 3 rd Avenue Existing service Added service Discontinued service N
+[p216_c0002] _Master Page # 216 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 217
+
+> [p217_c0001] Bx18 High Bridge-Morris Heights Circulator Legend: Existing service (Solid Blue Line) Added service (Solid Light Blue Line) Discontinued service (Dashed Grey Line) Map details: The route starts at Washington Heights station (181 St), travels south along Washington Avenue, crosses the Harlem River at the Washington Bridge, and continues east along Broadway. It then turns north along Morris Heights Road, passing through Morris Heights and ending at the High Bridge. The route is marked with bus stop numbers and letters (A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z) and street names such as W 181 St, W 179 St, W 178 St, W 176 St, W 168 St, W 166 St, W 165 St, W 157 St, W 155 St, W 153 St, W 151 St, W 149 St, W 147 St, W 145 St, W 143 St, W 141 St, W 139 St, W 137 St, W 135 St, W 133 St, W 131 St, W 129 St, W 127 St, W 125 St, W 123 St, W 121 St, W 119 St, W 117 St, W 115 St, W 113 St, W 111 St, W 109 St, W 107 St, W 105 St, W 103 St, W 101 St, W 99 St, W 97 St, W 95 St, W 93 St, W 91 St, W 89 St, W 87 St, W 85 St, W 83 St, W 81 St, W 79 St, W 77 St, W 75 St, W 73 St, W 71 St, W 69 St, W 67 St, W 65 St, W 63 St, W 61 St, W 59 St, W 57 St, W 55 St, W 53 St, W 51 St, W 49 St, W 47 St, W 45 St, W 43 St, W 41 St, W 39 St, W 37 St, W 35 St, W 33 St, W 31 St, W 29 St, W 27 St, W 25 St, W 23 St, W 21 St, W 19 St, W 17 St, W 15 St, W 13 St, W 11 St, W 9 St, W 7 St, W 5 St, W 3 St, W 1 St, W 100, W 101, W 102, W 103, W 104, W 105, W 106, W 107, W 108, W 109, W 110, W 111, W 112, W 113, W 114, W 115, W 116, W 117, W 118, W 119, W 120, W 121, W 122, W 123, W 124, W 125, W 126, W 127, W 128, W 129, W 130, W 131, W 132, W 133, W 134, W 135, W 136, W 137, W 138, W 139, W 140, W 141, W 142, W 143, W 144, W 145, W 146, W 147, W 148, W 149, W 150, W 151, W 152, W 153, W 154, W 155, W 156, W 157, W 158, W 159, W 160, W 161, W 162, W 163, W 164, W 165, W 166, W 167, W 168, W 169, W 170, W 171, W 172, W 173, W 174, W 175, W 176, W 177, W 178, W 179, W 180, W 181, W 182, W 183, W 184, W 185, W 186, W 187, W 188, W 189, W 190, W 191, W 192, W 193, W 194, W 195, W 196, W 197, W 198, W 199, W 200, W 201, W 202, W 203, W 204, W 205, W 206, W 207, W 208, W 209, W 210, W 211, W 212, W 213, W 214, W 215, W 216, W 217, W 218, W 219, W 220, W 221, W 222, W 223, W 224, W 225, W 226, W 227, W 228, W 229, W 230, W 231, W 232, W 233, W 234, W 235, W 236, W 237, W 238, W 239, W 240, W 241, W 242, W 243, W 244, W 245, W 246, W 247, W 248, W 249, W 250, W 251, W 252, W 253, W 254, W 255, W 256, W 257, W 258, W 259, W 260, W 261, W 262, W 263, W 264, W 265, W 266, W 267, W 268, W 269, W 270, W 271, W 272, W 273, W 274, W 275, W 276, W 277, W 278, W 279, W 280, W 281, W 282, W 283, W 284, W 285, W 286, W 287, W 288, W 289, W 290, W 291, W 292, W 293, W 294, W 295, W 296, W 297, W 298, W 299, W 300, W 301, W 302, W 303, W 304, W 305, W 306, W 307, W 308, W 309, W 310, W 311, W 312, W 313, W 314, W 315, W 316, W 317, W 318, W 319, W 320, W 321, W 322, W 323, W 324, W 325, W 326, W 327, W 328, W 329, W 330, W 331, W 332, W 333, W 334, W 335, W 336, W 337, W 338, W 339, W 340, W 341, W 342, W 343, W 344, W 345, W 346, W 347, W 348, W 349, W 350, W 351, W 352, W 353, W 354, W 355, W 356, W 357, W 358, W 359, W 360, W 361, W 362, W 363, W 364, W 365, W 366, W 367, W 368, W 369, W 370, W 371, W 372, W 373, W 374, W 375, W 376, W 377, W 378, W 379, W 380, W 381, W 382, W 383, W 384, W 385, W 386, W 387, W 388, W 389, W 390, W 391, W 392, W 393, W 394, W 395, W 396, W 397, W 398, W 399, W 400, W 401, W 402, W 403, W 404, W 405, W 406, W 407, W 408, W 409, W 410, W 411, W 412, W 413, W 414, W 415, W 416, W 417, W 418, W 419, W 420, W 421, W 422, W 423, W 424, W 425, W 426, W 427, W 428, W 429, W 430, W 431, W 432, W 433, W 434, W 435, W 436, W 437, W 438, W 439, W 440, W 441, W 442, W 443, W 444, W 445, W 446, W 447, W 448, W 449, W 450, W 451, W 452, W 453, W 454, W 455, W 456, W 457, W 458, W 459, W 460, W 461, W 462, W 463, W 464, W 465, W 466, W 467, W 468, W 469, W 470, W 471, W 472, W 473, W 474, W 475, W 476, W 477, W 478, W 479, W 480, W 481, W 482, W 483, W 484, W 485, W 486, W 487, W 488, W 489, W 490, W 491, W 492, W 493, W 494, W 495, W 496, W 497, W 498, W 499, W 500, W 501, W 502, W 503, W 504, W 505, W 506, W 507, W 508, W 509, W 510, W 511, W 512, W 513, W 514, W 515, W 516, W 517, W 518, W 519, W 520, W 521, W 522, W 523, W 524, W 525, W 526, W 527, W 528, W 529, W 530, W 531, W 532, W 533, W 534, W 535, W 536, W 537, W 538, W 539, W 540, W 541, W 542, W 543, W 544, W 545, W 546, W 547, W 548, W 549, W 550, W 551, W 552, W 553, W 554, W 555, W 556, W 557, W 558, W 559, W 560, W 561, W 562, W 563, W 564, W 565, W 566, W 567, W 568, W 569, W 570, W 571, W 572, W 573, W 574, W 575, W 576, W 577, W 578, W 579, W 580, W 581, W 582, W 583, W 584, W 585, W 586, W 587, W 588, W 589, W 590, W 591, W 592, W 593, W 594, W 595, W 596, W 597, W 598, W 599, W 600, W 601, W 602, W 603, W 604, W 605, W 606, W 607, W 608, W 609, W 610, W 611, W 612, W 613, W 614, W 615, W 616, W 617, W 618, W 619, W 620, W 621, W 622, W 623, W 624, W 625, W 626, W 627, W 628, W 629, W 630, W 631, W 632, W 633, W 634, W 635, W 636, W 637, W 638, W 639, W 640, W 641, W 642, W 643, W 644, W 645, W 646, W 647, W 648, W 649, W 650, W 651, W 652, W 653, W 654, W 655, W 656, W 657, W 658, W 659, W 660, W 661, W 662, W 663, W 664, W 665, W 666, W 667, W 668, W 669, W 670, W 671, W 672, W 673, W 674, W 675, W 676, W 677, W 678, W 679, W 680, W 681, W 682, W 683, W 684, W 685, W 686, W 687, W 688, W 689, W 690, W 691, W 692, W 693, W 694, W 695, W 696, W 697, W 698, W 699, W 700, W 701, W 702, W 703, W 704, W 705, W 706, W 707, W 708, W 709, W 710, W 711, W 712, W 713, W 714, W 715, W 716, W 717, W 718, W 719, W 720, W 721, W 722, W 723, W 724, W 725, W 726, W 727, W 728, W 729, W 730, W 731, W 732, W 733, W 734, W 735, W 736, W 737, W 738, W 739, W 740, W 741, W 742, W 743, W 744, W 745, W 746, W 747, W 748, W 749, W 750, W 751, W 752, W 753, W 754, W 755, W 756, W 757, W 758, W 759, W 760, W 761, W 762, W 763, W 764, W 765, W 766, W 767, W 768, W 769, W 770, W 771, W 772, W 773, W 774, W 775, W 776, W 777, W 778, W 779, W 780, W 781, W 782, W 783, W 784, W 785, W 786, W 787, W 788, W 789, W 790, W 791, W 792, W 793, W 794, W 795, W 796, W 797, W 798, W 799, W 800, W 801, W 802, W 803, W 804, W 805, W 806, W 807, W 808, W 809, W 810, W 811, W 812, W 813, W 814, W 815, W 816, W 817, W 818, W 819, W 820, W 821, W 822, W 823, W 824, W 825, W 826, W 827, W 828, W 829, W 830, W 831, W 832, W 833, W 834, W 835, W 836, W 837, W 838, W 839, W 840, W 841, W 842, W 843, W 844, W 845, W 846, W 847, W 848, W 849, W 850, W 851, W 852, W 853, W 854, W 855, W 856, W 857, W 858, W 859, W 860, W 861, W 862, W 863, W 864, W 865, W 866, W 867, W 868, W 869, W 870, W 871, W 872, W 873, W 874, W 875, W 876, W 877, W 878, W 879, W 880, W 881, W 882, W 883, W 884, W 885, W 886, W 887, W 888, W 889, W 890, W 891, W 892, W 893, W 894, W 895, W 896, W 897, W 898, W 899, W 900, W 901, W 902, W 903, W 904, W 905, W 906, W 907, W 908, W 909, W 910, W 911, W 912, W 913, W 914, W 915, W 916, W 917, W 918, W 919, W 920, W 921, W 922, W 923, W 924, W 925, W 926, W 927, W 928, W 929, W 930, W 931, W 932, W 933, W 934, W 935, W 936, W 937, W 938, W 939, W 940, W 941, W 942, W 943, W 944, W 945, W 946, W 947, W 948, W 949, W 950, W 951, W 952, W 953, W 954, W 955, W 956, W 957, W 958, W 959, W 960, W 961, W 962, W 963, W 964, W 965, W 966, W 967, W 968, W 969, W 970, W 971, W 972, W 973, W 974, W 975, W 976, W 977, W 978, W 979, W 980, W 981, W 982, W 983, W 984, W 985, W 986, W 987, W 988, W 989, W 990, W 991, W 992, W 993, W 994, W 995, W 996, W 997, W 998, W 999, W 1000.
+[p217_c0002] _Master Page # 217 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 218
+
+> [p218_c0001] Bx24 Hutchinson Metro Center-Locust Point Existing service Added service Discontinued service N
+[p218_c0002] _Master Page # 218 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 219
+
+### [p219_c0001] Bx25 Bedford Park Boulevard / Allerton Avenue
+[p219_c0002] Legend: Existing service (Dark Blue line) Added service (Light Blue line) Discontinued service (Dashed Grey line) North Arrow: N
+[p219_c0003] _Master Page # 219 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 220
+
+> [p220_c0001] This map illustrates the Bx29 bus route in New York City, specifically focusing on the City Island and surrounding areas. The route is highlighted in blue, with different shades indicating service status: dark blue for existing service, light blue for added service, and dashed black for discontinued service. The route starts at the Pelham Bay Park station in the Bronx, travels south along Shore Road, and then turns east along City Island Avenue, terminating at the end of the island. The map also shows various local landmarks, parks, and neighborhoods, including Pelham Bay Park, Pelham-Split Rock Golf Course, Hunter Island, Orchard Beach, and City Island. Major roads like Pelham Bridge Road, Hutchinson River Parkway, and City Island Avenue are clearly marked. A legend in the bottom right corner defines the route segments, and a north arrow is also present.
+### [p220_c0002] Bx29 City Island Avenue
+- [p220_c0003] ■ Existing service ■ Added service ■ Discontinued service
+[p220_c0004] _Master Page # 220 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 221
+
+> [p221_c0001] Bx30 Boston Road Existing service Added service Discontinued service N
+[p221_c0002] _Master Page # 221 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 222
+
+### [p222_c0001] Bx35 East 167 Street/West 181st Street
+[p222_c0002] Existing service Added service Discontinued service
+> [p222_c0003] The map illustrates the Bx35 bus route, which primarily follows East 167 Street and East 168 Street. The route is color-coded to show service status: Existing service: Represented by a thick blue line, covering most of the route from Washington Heights to Melrose. Added service: Represented by a thin blue line, notably on the segment between West Farms Rd and Bryant Av. Discontinued service: Represented by a dashed black line, visible on the segment between West Farms Rd and Bryant Av. The map also shows various bus stops marked with colored circles and numbers (e.g., 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000).
+[p222_c0004] _Master Page # 222 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 223
+
+> [p223_c0001] Bx36 Tremont Avenue Existing service (Solid Blue Line) Added service (Light Blue Line) Discontinued service (Dashed Black Line) The map displays the Bx36 Tremont Avenue bus route in New York City. The route is primarily located along Tremont Avenue, extending from the Bronx in the west to White Plains in the east. The map includes the following details: Existing Service: Represented by a solid blue line, covering the main route along Tremont Avenue from approximately W 181 St to E 174 St. Added Service: Represented by a light blue line, showing additional routes branching off the main line, such as the segment between W 181 St and W 161 St. Discontinued Service: Represented by a dashed black line, indicating routes that are no longer in service, including the segment between W 161 St and E 174 St. Geographic Features: The Bronx River and Harlem River are shown, along with major parks like Central Park, Prospect Park, and the Bronx Zoo. Transit Hubs: Major subway stations are marked with 'H' (for the 6, 7, and 8 trains) and bus stops are marked with colored circles. Streets: A dense network of streets is shown, including Tremont Avenue, University Avenue, and various cross streets.
+[p223_c0002] _Master Page # 223 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 224
+
+> [p224_c0001] The map displays the Bx40 bus route in the Bronx, New York City. The route is primarily shown as a solid blue line, indicating existing service. It runs along Tremont Avenue, starting from the Bronx River area and extending towards the East River. The map includes numerous street names, landmarks, and bus stops. A legend in the bottom right corner defines the line styles: a solid blue line for 'Existing service', a dashed blue line for 'Added service', and a dashed grey line for 'Discontinued service'. A north arrow is also present in the legend.
+### [p224_c0002] Bx40 Tremont Avenue / Burnside Avenue
+[p224_c0003] N Existing service Added service Discontinued service
+[p224_c0004] _Master Page # 224 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 225
+
+> [p225_c0001] This map illustrates the Bx42 bus route in New York City, connecting Tremont Avenue in the Bronx to Throgs Neck in Queens. The route is highlighted in blue, with a dashed line indicating discontinued service. The map includes numerous street names, landmarks, and bus stops. A legend in the bottom right corner defines the route types: Existing service (solid blue line), Added service (light blue line), and Discontinued service (dashed black line). A north arrow is also present. Legend: Existing service (Solid blue line) Added service (Light blue line) Discontinued service (Dashed black line) North Arrow: N
+### [p225_c0002] Bx42 Throgs Neck-Westchester Square via Tremont Avenue
+[p225_c0003] _Master Page # 225 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 226
+
+### [p226_c0001] M100 Broadway / Amsterdam Av
+[p226_c0002] ——— Existing service ——— Added service - - - Discontinued service
+[p226_c0003] _Master Page # 226 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 227
+
+### [p227_c0001] M125 The Hub-Manhattanville via 125 Street
+[p227_c0002] Existing service
+[p227_c0003] Added service
+[p227_c0004] Discontinued service
+> [p227_c0005] The map illustrates the M125 bus route in Manhattan, connecting the Hub area to Manhattanville via 125 Street. The route is shown in blue, with solid blue indicating existing service and light blue indicating added service. The map includes a legend in the top left corner, a north arrow, and various street names and landmarks. The route starts at the Hub (34th St & Broadway) and travels south on 125 Street, passing through Central Park North and ending at the Port Morris Bridge. The map also shows the subway system, including the 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 17, 19, 21, 23, 25, 27, 29, 33, 35, 36, 37, 38, 39, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000.
+[p227_c0006] _Master Page # 227 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 228
+
+> [p228_c0001] The map displays the Q50 Ltd Flushing-Pelham Bay route, which traverses the New York City metropolitan area. The route is color-coded to indicate service status: dark blue for existing service, light blue for added service, and grey for discontinued service. The route starts at the Pelham Bay Park station in Queens, travels south through Pelham Bay Park, then west through the Bronx, and finally south through Manhattan to the Flushing-Corona station. Key landmarks and facilities shown include Hospital Eastchester, Co-op City, Pelham Bay Park, Pelham-Split Rock Golf Course, Pelham Park, Pelham Bridge Road, Barton-Pell Mansion, Pelham Plaza Shopping Center, Baychester Gardens, Morris Park, Bronx Municipal Hospital Center, Bronx State Hospital, Westchester Square, Westchester So. Medical Center, Hutchinson Metro Center, Pelham Bay Park Station, Pelham Stadium, and the Country Club. Major highways such as I-95, I-295, I-495, I-90, I-287, I-29, I-23, I-25, I-26, I-28, I-30, I-31, I-36, I-37, I-40, I-42, I-43, I-44, I-48, I-49, I-50, I-55, I-58, I-59, I-60, I-65, I-66, I-67, I-68, I-69, I-70, I-71, I-72, I-73, I-74, I-75, I-76, I-77, I-78, I-79, I-80, I-81, I-82, I-83, I-84, I-85, I-86, I-87, I-88, I-89, I-91, I-92, I-93, I-94, I-95, I-96, I-97, I-98, I-99, I-100, I-101, I-102, I-103, I-104, I-105, I-106, I-107, I-108, I-109, I-110, I-111, I-112, I-113, I-114, I-115, I-116, I-117, I-118, I-119, I-120, I-121, I-122, I-123, I-124, I-125, I-126, I-127, I-128, I-129, I-130, I-131, I-132, I-133, I-134, I-135, I-136, I-137, I-138, I-139, I-140, I-141, I-142, I-143, I-144, I-145, I-146, I-147, I-148, I-149, I-150, I-151, I-152, I-153, I-154, I-155, I-156, I-157, I-158, I-159, I-160, I-161, I-162, I-163, I-164, I-165, I-166, I-167, I-168, I-169, I-170, I-171, I-172, I-173, I-174, I-175, I-176, I-177, I-178, I-179, I-180, I-181, I-182, I-183, I-184, I-185, I-186, I-187, I-188, I-189, I-190, I-191, I-192, I-193, I-194, I-195, I-196, I-197, I-198, I-199, I-200, I-201, I-202, I-203, I-204, I-205, I-206, I-207, I-208, I-209, I-210, I-211, I-212, I-213, I-214, I-215, I-216, I-217, I-218, I-219, I-220, I-221, I-222, I-223, I-224, I-225, I-226, I-227, I-228, I-229, I-230, I-231, I-232, I-233, I-234, I-235, I-236, I-237, I-238, I-239, I-240, I-241, I-242, I-243, I-244, I-245, I-246, I-247, I-248, I-249, I-250, I-251, I-252, I-253, I-254, I-255, I-256, I-257, I-258, I-259, I-260, I-261, I-262, I-263, I-264, I-265, I-266, I-267, I-268, I-269, I-270, I-271, I-272, I-273, I-274, I-275, I-276, I-277, I-278, I-279, I-280, I-281, I-282, I-283, I-284, I-285, I-286, I-287, I-288, I-289, I-290, I-291, I-292, I-293, I-294, I-295, I-296, I-297, I-298, I-299, I-300, I-301, I-302, I-303, I-304, I-305, I-306, I-307, I-308, I-309, I-310, I-311, I-312, I-313, I-314, I-315, I-316, I-317, I-318, I-319, I-320, I-321, I-322, I-323, I-324, I-325, I-326, I-327, I-328, I-329, I-330, I-331, I-332, I-333, I-334, I-335, I-336, I-337, I-338, I-339, I-340, I-341, I-342, I-343, I-344, I-345, I-346, I-347, I-348, I-349, I-350, I-351, I-352, I-353, I-354, I-355, I-356, I-357, I-358, I-359, I-360, I-361, I-362, I-363, I-364, I-365, I-366, I-367, I-368, I-369, I-370, I-371, I-372, I-373, I-374, I-375, I-376, I-377, I-378, I-379, I-380, I-381, I-382, I-383, I-384, I-385, I-386, I-387, I-388, I-389, I-390, I-391, I-392, I-393, I-394, I-395, I-396, I-397, I-398, I-399, I-400, I-401, I-402, I-403, I-404, I-405, I-406, I-407, I-408, I-409, I-410, I-411, I-412, I-413, I-414, I-415, I-416, I-417, I-418, I-419, I-420, I-421, I-422, I-423, I-424, I-425, I-426, I-427, I-428, I-429, I-430, I-431, I-432, I-433, I-434, I-435, I-436, I-437, I-438, I-439, I-440, I-441, I-442, I-443, I-444, I-445, I-446, I-447, I-448, I-449, I-450, I-451, I-452, I-453, I-454, I-455, I-456, I-457, I-458, I-459, I-460, I-461, I-462, I-463, I-464, I-465, I-466, I-467, I-468, I-469, I-470, I-471, I-472, I-473, I-474, I-475, I-476, I-477, I-478, I-479, I-480, I-481, I-482, I-483, I-484, I-485, I-486, I-487, I-488, I-489, I-490, I-491, I-492, I-493, I-494, I-495, I-496, I-497, I-498, I-499, I-500, I-501, I-502, I-503, I-504, I-505, I-506, I-507, I-508, I-509, I-510, I-511, I-512, I-513, I-514, I-515, I-516, I-517, I-518, I-519, I-520, I-521, I-522, I-523, I-524, I-525, I-526, I-527, I-528, I-529, I-530, I-531, I-532, I-533, I-534, I-535, I-536, I-537, I-538, I-539, I-540, I-541, I-542, I-543, I-544, I-545, I-546, I-547, I-548, I-549, I-550, I-551, I-552, I-553, I-554, I-555, I-556, I-557, I-558, I-559, I-560, I-561, I-562, I-563, I-564, I-565, I-566, I-567, I-568, I-569, I-570, I-571, I-572, I-573, I-574, I-575, I-576, I-577, I-578, I-579, I-580, I-581, I-582, I-583, I-584, I-585, I-586, I-587, I-588, I-589, I-590, I-591, I-592, I-593, I-594, I-595, I-596, I-597, I-598, I-599, I-600, I-601, I-602, I-603, I-604, I-605, I-606, I-607, I-608, I-609, I-610, I-611, I-612, I-613, I-614, I-615, I-616, I-617, I-618, I-619, I-620, I-621, I-622, I-623, I-624, I-625, I-626, I-627, I-628, I-629, I-630, I-631, I-632, I-633, I-634, I-635, I-636, I-637, I-638, I-639, I-640, I-641, I-642, I-643, I-644, I-645, I-646, I-647, I-648, I-649, I-650, I-651, I-652, I-653, I-654, I-655, I-656, I-657, I-658, I-659, I-660, I-661, I-662, I-663, I-664, I-665, I-666, I-667, I-668, I-669, I-670, I-671, I-672, I-673, I-674, I-675, I-676, I-677, I-678, I-679, I-680, I-681, I-682, I-683, I-684, I-685, I-686, I-687, I-688, I-689, I-690, I-691, I-692, I-693, I-694, I-695, I-696, I-697, I-698, I-699, I-700, I-701, I-702, I-703, I-704, I-705, I-706, I-707, I-708, I-709, I-710, I-711, I-712, I-713, I-714, I-715, I-716, I-717, I-718, I-719, I-720, I-721, I-722, I-723, I-724, I-725, I-726, I-727, I-728, I-729, I-730, I-731, I-732, I-733, I-734, I-735, I-736, I-737, I-738, I-739, I-740, I-741, I-742, I-743, I-744, I-745, I-746, I-747, I-748, I-749, I-750, I-751, I-752, I-753, I-754, I-755, I-756, I-757, I-758, I-759, I-760, I-761, I-762, I-763, I-764, I-765, I-766, I-767, I-768, I-769, I-770, I-771, I-772, I-773, I-774, I-775, I-776, I-777, I-778, I-779, I-780, I-781, I-782, I-783, I-784, I-785, I-786, I-787, I-788, I-789, I-790, I-791, I-792, I-793, I-794, I-795, I-796, I-797, I-798, I-799, I-800, I-801, I-802, I-803, I-804, I-805, I-806, I-807, I-808, I-809, I-810, I-811, I-812, I-813, I-814, I-815, I-816, I-817, I-818, I-819, I-820, I-821, I-822, I-823, I-824, I-825, I-826, I-827, I-828, I-829, I-830, I-831, I-832, I-833, I-834, I-835, I-836, I-837, I-838, I-839, I-840, I-841, I-842, I-843, I-844, I-845, I-846, I-847, I-848, I-849, I-850, I-851, I-852, I-853, I-854, I-855, I-856, I-857, I-858, I-859, I-860, I-861, I-862, I-863, I-864, I-865, I-866, I-867, I-868, I-869, I-870, I-871, I-872, I-873, I-874, I-875, I-876, I-877, I-878, I-879, I-880, I-881, I-882, I-883, I-884, I-885, I-886, I-887, I-888, I-889, I-890, I-891, I-892, I-893, I-894, I-895, I-896, I-897, I-898, I-899, I-900, I-901, I-902, I-903, I-904, I-905, I-906, I-907, I-908, I-909, I-910, I-911, I-912, I-913, I-914, I-915, I-916, I-917, I-918, I-919, I-920, I-921, I-922, I-923, I-924, I-925, I-926, I-927, I-928, I-929, I-930, I-931, I-932, I-933, I-934, I-935, I-936, I-937, I-938, I-939, I-940, I-941, I-942, I-943, I-944, I-945, I-946, I-947, I-948, I-949, I-950, I-951, I-952, I-953, I-954, I-955, I-956, I-957, I-958, I-959, I-960, I-961, I-962, I-963, I-964, I-965, I-966, I-967, I-968, I-969, I-970, I-971, I-972, I-973, I-974, I-975, I-976, I-977, I-978, I-979, I-980, I-981, I-982, I-983, I-984, I-985, I-986, I-987, I-988, I-989, I-990, I-991, I-992, I-993, I-994, I-995, I-996, I-997, I-998, I-999, I-1000.
+### [p228_c0002] Q50 Ltd Flushing-Pelham Bay
+- [p228_c0003] ■ Existing service ■ Added service ■ Discontinued service
+[p228_c0004] * Service to Co-op City will be provided during peak periods only. All other times, service will terminate at Pelham Bay Park 6 Station.
+[p228_c0005] _Master Page # 228 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 229
+
+> [p229_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p229_c0002] Assumption of and Service Revisions to SIM 23/24 Routes on the South Shore of Staten Island
+[p229_c0003] Judith McClain , Chief, Operations Planning
+### [p229_c0004] Service Issue
+[p229_c0005] The SIM23 and SIM24 are express bus routes that both provide weekday peak period, peak direction service between the South Shore of Staten Island and Midtown Manhattan. These routes are currently operated by Academy Bus under contract with the City of New York. The MTA will be assuming operation of these routes on Monday, January 3, 2022 under an agreement between the MTA and the City.
+[p229_c0006] The City and Academy had revised the routing of the SIM23 and SIM24 in Staten Island in January 2020 to serve the Outerbridge Park and Ride. However, ridership at the park and ride is extremely low and the SIM23 and SIM24 would better serve the residential neighborhoods by resuming their previous travel paths in Staten Island.
+### [p229_c0007] Recommendation
+[p229_c0008] It is recommended to assume operation of the SIM23 and SIM24 and to revise their travel paths in Staten Island. The SIM24 would no longer serve the very lightly used Outerbridge Park and Ride. The SIM23 and SIM24 would instead be restored to the travel paths operated in Staten Island prior to 2020, and as implemented under the 2018 NYCT Staten Island Express Bus Redesign. The SIM23 and SIM24 travel paths and bus stops would remain unchanged in Manhattan operating crosstown via 34 th Street. The City is in agreement with these route revisions.
+### [p229_c0009] Budget Impact
+[p229_c0010] There would be no budget impact to NYCT as a result of the assumption of these lines and these service changes. The City will be funding the capital and operating expenses incurred by NYCT for these routes, net of the farebox revenue and other revenue sources (such as advertising).
+### [p229_c0011] Proposed Implementation Date
+[p229_c0012] January 2022
+[p229_c0013] _Master Page # 229 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 230
+
+### [p230_c0001] Staff Summary
+[p230_c0002]
+
+```text
+Subject Assumption of and Revisions To SIM 23/24 Routes on the South Shore of Staten Island Department Operations Planning Department Head Name Judith McClain Department Head Signature Project Manager Name Sarah Wyss
+```
+[p230_c0003]
+
+```text
+Date November 23, 2021 Vendor Name N/A Contract Number N/A Contract Manager Name N/A Table of Contents Ref # N/A
+```
+[p230_c0004]
+
+```text
+Board Action Order To Date Approval Info Other 1 President X 2 NYCT Comm X 3 Board X
+```
+[p230_c0005]
+
+```text
+Internal Approvals Order Approval Order Approval 8 Interim President 4 VP General Counsel 7 CFO 3 Dpty Chief, Mgmt & Budget 6 Acting SVP Buses 2 Director GCR 5 Chief Cust. Officer 1 Chief OP
+```
+### [p230_c0006] Purpose
+[p230_c0007] To obtain presidential approval for and to inform the New York City Transit (NYCT) and MTA Bus Committee of a proposal to assume and make revisions to the SIM23 and SIM24 express bus routes in Staten Island.
+### [p230_c0008] Discussion
+[p230_c0009] The SIM23 and SIM24 are express bus routes that both provide weekday peak period, peak direction service between the South Shore of Staten Island and Midtown Manhattan. These routes are currently operated by Academy Bus under contract with the City of New York, and they are overseen by the NYC Economic Development Corporation and the NYC Department of Transportation. The MTA will be assuming operation of these routes, effective Monday, January 3, 2022, under an agreement between the MTA and the City where the City will fund the capital and operating expenses incurred by NYCT for these routes, net of farebox revenue and other revenue sources (such as advertising). NYCT will fully incorporate the SIM23 and SIM24 into the NYCT network and operate them as any other NYCT express bus route.
+[p230_c0010] The SIM23 will operate between Annadale and Midtown Manhattan via Arden Avenue, a one-way travel distance of approximately 31 miles. The SIM23 currently transports an average of approximately 220 customers per weekday. The SIM24 will operate between Prince's Bay and Midtown Manhattan via Huguenot Avenue, a one-way travel distance of approximately 31 miles. The SIM24 currently transports an average of approximately 250 customers per weekday. The SIM23 and SIM24 will each operate 5 morning Manhattan-bound trips and 6 afternoon/evening Staten Island-bound, the same numbers of trips that are currently operated by Academy.
+[p230_c0011] _Master Page # 230 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 231
+
+### [p231_c0001] Staff Summary
+> [p231_c0002] The logo for the Metropolitan Transportation Authority (MTA) New York City Transit. It features a black circle with the white letters "MTA" inside, followed by the text "New York City Transit" in a bold, black, sans-serif font.
+[p231_c0003] It is recommended that NYCT assume operations and that the SIM23 and SIM24 routes be slightly revised in Staten Island to use the travel path and bus stops that were recommended by the 2018 NYCT Staten Island Express Bus Network Redesign and were implemented by the City and Academy Bus in August 2018. The SIM23 and SIM24 routes were revised in January 2020 in order to serve the Outerbridge Park and Ride. To do so, the SIM24 was rerouted at Huguenot Avenue and Drumgoole Road to travel to and from the park and ride instead of traveling south to and from Hylan Boulevard at Luten Avenue, and the SIM23 was extended along Hylan Boulevard to serve the SIM24's bus stop on Hylan Boulevard at Luten Avenue (adding a bus stop on Hylan Boulevard at Poillon Avenue along the way).
+[p231_c0004] Ridership at the Outerbridge Park and Ride is very low. It is currently used by a total of approximately 2 customers per weekday (total of both directions). This low ridership is consistent with past experience when the NYCT X17 and X22A express bus routes had previously served it. Additionally, the only access to the park and ride is via highways (West Shore Expressway and Korean War Veterans Parkway). There is no pedestrian access. The SIM24 would be revised to no longer serve the Outerbridge Park and Ride, and instead operate to and from Hylan Boulevard at Luten Avenue with a bus stop added on Huguenot Avenue at Amboy Road, which would provide more direct service to residential neighborhoods. The revision to the SIM24 would allow the SIM23 to be shortened back to Hylan Boulevard at Barclay Avenue, as recommended by the 2018 NYCT Staten Island Express Bus Network Redesign.
+[p231_c0005] The SIM23 would be shortened by approximately 1.17 miles. It would start service on Hylan Boulevard at Barclay Avenue and operate along Arden Avenue to and from the West Shore Expressway. The SIM24 would be revised to start service on Hylan Boulevard at Luten Avenue and operate along Huguenot Avenue to and from the West Shore Expressway, the travel distance would be shortened by a net of approximately 0.27 miles. See the attached Map 1.
+[p231_c0006] The SIM23 and SIM24 would continue to operate to and from Manhattan via the West Shore Expressway, the Goethals Bridge, the New Jersey Turnpike, NJ Route 495, and the Lincoln Tunnel. In Manhattan, they would continue to utilize their current travel paths and bus stops in Midtown, along 5 th Avenue southbound and Madison Avenue northbound, and east-west on 34 th Street. See the attached Map 2.
+[p231_c0007] These revisions would discontinue SIM23 and SIM24 service to total of approximately 6 customers per weekday (total of both directions). There are approximately 2 customers per weekday currently using the Outerbridge Park and Ride bus stop who would be able to drive to another SIM24 bus stop. The closest alternative bus stop would be the Huguenot Park and Ride, which would continue to be served by the SIM24. The Huguenot Park and Ride is located on Drumgoole Road East at Huguenot Avenue, and is approximately 1.7 miles from the Outerbridge Park and Ride along the Korean War Veterans Parkway. There are approximately 4 customers per day currently using the SIM23 bus stop on Hylan Boulevard at Poillon Avenue. These customers may walk approximately 2,100 feet east or ride the S59 or S78 to or from Hylan Boulevard at Barclay Avenue to transfer to or from the SIM23.
+[p231_c0008] The City is in agreement with these route revisions.
+### [p231_c0009] Recommendation
+[p231_c0010] It is recommended that NYCT assumes operation of and revise the travel paths of the SIM23 and SIM24 in Staten Island. The SIM24 would no longer serve the very lightly used Outerbridge Park and Ride. The SIM23 and SIM24 would instead be restored to the travel paths operated in Staten Island prior to 2020, and
+[p231_c0011] _Master Page # 231 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 232
+
+### [p232_c0001] Staff Summary
+> [p232_c0002] The logo for the Metropolitan Transportation Authority (MTA) New York City Transit. It features a black circle with the white letters "MTA" inside, followed by the text "New York City Transit" in a bold, black, sans-serif font.
+[p232_c0003] as implemented under the 2018 NYCT Staten Island Express Bus Redesign. The SIM23 and SIM24 travel paths and bus stops would remain unchanged in Manhattan operating crosstown via 34 th Street. The City is in agreement with these route revisions.
+### [p232_c0004] Alternatives
+- [p232_c0005] 1. Do Nothing. This would end operation of the SIM23 and SIM24 routes if not assumed by the MTA, negatively impacting approximately 470 current weekday bus customers. 2. Assume operation but do not revise. This would continue operation to the very lightly used Outerbridge Park and Ride and would forego the opportunity to better directly serve the residential neighborhoods of the South Shore.
+### [p232_c0006] Budget Impact
+[p232_c0007] There would be no budget impact to NYCT as a result of the assumption of these routes and these route changes. The City will be funding the capital and operating expenses incurred by NYCT for these routes, net of the farebox revenue and other revenue sources (such as advertising).
+### [p232_c0008] Implementation Date
+[p232_c0009] January 2022
+[p232_c0010] _Master Page # 232 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 233
+
+> [p233_c0001] Map 1: SIM23/24 in Staten Island Legend: ○ SIM 23/24 Existing Stop to Remain ⊗ SIM 23/24 Discontinued Stop ● SIM 23/24 New Stop — SIM23/24 - - - SIM23/24 Discontinued Service — Other Express Bus Routes Callout: to/from Midtown via W Shore Expy, NJTpk, Lincoln Tunnel Map Labels: Annadale: Eltingville, Mosley Av, Arden Av, Koch Blvd, Bathgate St, Barclay Av, Poillon Av, Hylan Bl, Luten Av. Huguenot: Staten Island Railway, Annadale, Woodrow Rd, Drumgoole Rd, Huguenot, Amboy Rd, Huguenot, Amboy Rd, Ramona Av, Forster Rd, Drumgoole Rd W, Drumgoole Rd E, Pleasant Plains, Richmond Valley, Outbridge Park & Ride, Bloomingdale Rd. Prince's Bay: Prince's Bay, Luten Av, Hylan Bl, Poillon Av, Barclay Av, Bathgate St, Koch Blvd, Arden Av, Annadale Rd, Drumgoole Rd, Huguenot Av, Woodrow Rd, Avon Green, Lombard Ct, West Shore Expy, Arthur Kill Rd, Hampton Green.
+[p233_c0002] _Master Page # 233 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 234
+
+> [p234_c0001] Map 2: SIM23/24 In Manhattan ○ SIM23/SIM24 Existing Bus Stop to Remain ■ SIM 23/24 ▬ Other Staten Island Express Bus Routes to from Staten Island via Lincoln Tunnel, NITPK, Goethals Bridge, W Shore Exp
+[p234_c0002] _Master Page # 234 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 235
+
+> [p235_c0001] The logo of the Metropolitan Transportation Authority (MTA) is a blue circle with the letters "MTA" in white, bold, sans-serif font.
+### [p235_c0002] THE METROPOLITAN TRANSPORTATION AUTHORITY
+### [p235_c0003] COMMITTEE ON OPERATIONS OF THE NEW YORK CITY TRANSIT AUTHORITY, THE MANHATTAN AND BRONX SURFACE TRANSIT OPERATING AUTHORITY, THE STATEN ISLAND RAPID TRANSIT OPERATING AUTHORITY AND THE MTA BUS COMPANY
+[p235_c0004] This Charter for the Committee on Operations of the New York City Transit Authority, the Manhattan and Bronx Surface Transit Operating Authority, the Staten Island Rapid Transit Operating Authority and the MTA Bus Company was adopted by the Board Chair and a majority of the members of Board of the Metropolitan Transportation Authority, a public benefit corporation established under the laws of the State of New York (together with any other entity or corporation for which the members of the Metropolitan Transportation Authority serve as a board of directors, the "MTA"), as amended on November 17, 2021.
+### [p235_c0005] I. PURPOSE
+[p235_c0006] The Committee on Operations of the New York City Transit Authority, the Manhattan and Bronx Surface Transit Operating Authority, and the Staten Island Rapid Transit Operating Authority and the MTA Bus Company (the "Committee") shall assist the Board Chair and the Board in fulfilling their responsibility to monitor and oversee the operations of the New York City Transit Authority, the Manhattan and Bronx Surface Transit Operating Authority and the Staten Island Rapid Transit Operating Authority (collectively, "NYCT") and of the MTA Bus Company ("MTA Bus").
+### [p235_c0007] II. COMMITTEE AUTHORITY
+[p235_c0008] In discharging its role, the Committee is empowered to investigate any matter brought to its attention. To facilitate any such investigation, the chairperson of the Committee shall have access to all books, records, facilities and staff of the MTA, NYCT and/or MTA Bus. The foregoing is not intended to alter or curtail existing rights of individual Board members to access books, records or staff in connection with the performance of their fiduciary duties as Board members.
+### [p235_c0009] III. COMMITTEE MEMBERSHIP
+[p235_c0010] The Committee shall consist of 3 or more members of the Board, appointed by the Board Chair. If not otherwise a member of the Committee, each Vice-Chair of the Board shall be an ex officio member of the Committee. The Board Chair shall appoint the chairperson and the vice-chairperson of the Committee. The vice-chairperson of the Committee shall be a person recommended to the Board by the Mayor of the City of New York. In the absence of the chairperson at a meeting of the Committee, the vice chairperson shall chair such meeting. In the absence of the chairperson and the vice chairperson, the Board Chair
+[p235_c0011] _Page 1 of 4_
+[p235_c0012] _Master Page # 235 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 236
+
+### [p236_c0001] New York City Transit Authority, Manhattan and Bronx Surface Transit Operating Authority, Staten Island Rapid Transit Operating Authority and MTA Bus Company Committee Charter
+[p236_c0002] shall appoint a temporary chairperson to chair such meeting. A member of the Committee may be removed, for cause or without cause, by the Board Chair.
+### [p236_c0003] IV. COMMITTEE MEETINGS
+[p236_c0004] The Committee shall meet on a regularly-scheduled basis at least 11 times per year, and more frequently as circumstances dictate. The Committee shall cause to be kept adequate minutes of all its proceedings, which shall include records of any action taken. Committee members will be furnished with copies of the minutes of each meeting. Meetings of the Committee shall be open to the public, and the Committee shall be governed by the rules regarding public meetings set forth in the applicable provisions of the Public Authorities Law and Article 7 of the Public Officers Law that relate to public notice, public speaking and the conduct of executive session. The Committee may form and assign responsibilities to subcommittees when appropriate.
+[p236_c0005] The Committee may request that any member of the Board, the Auditor General, any officer or staff of the MTA, the NYCT, MTA Bus or any other person whose advice and counsel are sought by the Committee, attend any meeting of the Committee to provide such pertinent information as the Committee requests. The President of NYCT and the President of MTA Bus, and shall each (1) furnish the Committee with all material information pertinent to matters appearing on the Committee agenda relating to his or her respective organization, (2) provide the chairperson of the Committee with all information regarding the affairs of his or her respective organization that is material to the Committee's monitoring and oversight of the operations of such organization, and (3) inform the chairperson of the Committee of any matters not already on the Committee agenda that should be added to the agenda in order for the Committee to be adequately monitoring and overseeing the operations of his or her organization.
+### [p236_c0006] V. COMMITTEE REPORTS
+[p236_c0007] The chairperson of the Committee shall report on the Committee's proceedings, and any recommendations made.
+### [p236_c0008] VI. KEY RESPONSIBILITIES
+[p236_c0009] The following responsibilities are set forth as a guide with the understanding that the Committee may diverge as appropriate given the circumstances. The Committee is authorized to carry out these and such other responsibilities assigned by the Board Chair or the Board from time to time, and take any actions reasonably related to the mandate of this Charter.
+[p236_c0010] To fulfill its purpose, the Committee shall, with respect to NYCT and MTA Bus:
+- [p236_c0011] 1. monitor and update the Board Chair and the Board on the operating performance of NYCT and MTA Bus, including information on subway, bus and paratransit service;
+[p236_c0012] _Page 2 of 3_
+[p236_c0013] _Master Page # 236 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 237
+
+### [p237_c0001] New York City Transit Authority, Manhattan and Bronx Surface Transit Operating Authority, Staten Island Rapid Transit Operating Authority and MTA Bus Company Committee Charter
+- [p237_c0002] 2. monitor and update the Board Chair and the Board on the safety record of NYCT and MTA Bus; such monitoring shall include reviewing and monitoring customer and employee safety as well as crime statistics; 3. monitor and update the Board Chair and the Board on the implementation of security programs pertaining to NYCT and MTA Bus operations and facilities; 4. monitor and update the Board Chair and the Board on the finances of NYCT and MTA Bus, including financial reports, ridership reports, and the use of funds by NYCT and MTA Bus; 5. review and make recommendations to the Board Chair and the Board regarding proposed procurement contracts, other than Capital Program construction, consultant and related contracts and solicitations, of NYCT and MTA Bus that require Board approval; 6. review and make recommendations to the Board Chair and the Board regarding NYCT and MTA Bus service and policy changes that require Board approval; 7. facilitate the identification of approaches and solutions that address NYCT and MTA Bus security issues, including best practices in national and international security respecting transportation operations and facilities and review and make recommendations to the Board Chair and the Board regarding NYCT and MTA Bus security issues; and 8. review periodically with the Counsel of the MTA, the Chief Compliance Officer, and the Counsel of NYCT and MTA Bus: (i) legal and regulatory matters that may have a material impact on NYCT; and (ii) the scope and effectiveness of compliance policies and programs.
+[p237_c0003] In addition, the Committee shall have the following responsibilities:
+- [p237_c0004] 1. set the annual work plan for the committee; 2. conduct an annual self-evaluation of the performance of the Committee, including its effectiveness and compliance with this Charter; 3. review and assess the adequacy of this Charter annually; and 4. report regularly to the Board Chair and the Board on Committee findings and recommendations and any other matters the Committee deems appropriate or the Board Chair or the Board requests, and maintain minutes or other records of Committee meetings and activities.
+[p237_c0005] _Page 3 of 3_
+[p237_c0006] _Master Page # 237 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_
+
+## Page 238
+
+> [p238_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a blue circle.
+### [p238_c0002] New York City Transit
+[p238_c0003] Craig Cipriano
+[p238_c0004] Interim President New York City Transit
+> [p238_c0005] The MTA logo, consisting of the letters 'MTA' in white inside a blue circle.
+### [p238_c0006] Bus Company
+[p238_c0007] Frank Annicaro
+[p238_c0008] Acting President MTA Bus Company
+[p238_c0009] 2 Broadway New York, NY 10004-2207
+[p238_c0010] _Master Page # 238 of 238 - New York City Transit and Bus Committee Meeting 12/13/2021_

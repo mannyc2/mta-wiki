@@ -1,0 +1,152 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-192251"
+record_kind: "source"
+display_name: "Minutes of the MTA Finance Committee Meeting - October 27, 2025"
+source_id: "meeting_doc_192251"
+source_ids:
+  - "meeting_doc_192251"
+local_observation_id: "source_meeting_doc_192251"
+local_observation_ids:
+  - "source_meeting_doc_192251"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T20:40:49.234Z"
+raw_text: "Minutes of the Metropolitan Transportation Authority Finance Committee Meeting 2 Broadway, 20th Floor Board Room New York, NY 10004 Monday, October 27, 2025 2:15 p.m."
+submission_ids:
+  - "sub_b18463d41926daee"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting minutes"
+  date_text: "Monday, October 27, 2025"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2025-10-27"
+    precision: "day"
+    raw_text: "Monday, October 27, 2025"
+  published_date_normalized: "2025-10-27"
+  published_date_precision: "day"
+  publisher: "MTA"
+  source_url: "https://www.mta.info/transparency/board-and-committee-meetings/october-2025"
+  title: "Minutes of the Metropolitan Transportation Authority Finance Committee Meeting"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_192251#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_192251"
+    source_path: "raw/sources/meeting_doc_192251/blocks.jsonl"
+    text_sha256: "sha256:e52b286fd3f272e2aa04bb513a3f28a78b19ce9aba051ee560d594a8b990022a"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0009"
+    evidence_id: "meeting_doc_192251#p001_c0009"
+    page_number: 1
+    source_id: "meeting_doc_192251"
+    source_path: "raw/sources/meeting_doc_192251/blocks.jsonl"
+    text_sha256: "sha256:4c611384a159053bbf2d774f40da46f3fc91f890a1cabbeeb0766f48a2233ef1"
+    text_source: "raw_text"
+---
+
+# Minutes
+
+source_id: meeting_doc_192251
+citation: cite block ids exactly as shown in square brackets
+document: 82 block(s)
+
+## Page 1
+
+### [p001_c0001] Minutes of the Metropolitan Transportation Authority Finance Committee Meeting 2 Broadway, 20 th Floor Board Room 1 New York, NY 10004 Monday, October 27, 2025 2:15 p.m.
+### [p001_c0002] The following Finance Committee Members were present:
+[p001_c0003] Hon. Neal Zuckerman, Chair Hon. Samuel Chu Hon. Marc Herbst Hon. Christopher Leathers Hon. Haeda Mihaltses Hon. Melva M. Miller Hon. Edward Valente
+### [p001_c0004] The following Finance Committee Members were absent:
+[p001_c0005] Hon. Andrew Albert Hon. David R. Jones Hon. John Samuelsen
+### [p001_c0006] The following staff members attended:
+[p001_c0007] Jaibala Patel, Chief Financial Officer Paige Graves, General Counsel Lisette Camilo, Chief Administrative Officer Olga Chernat, Deputy Chief, Financial Services David Florio, Chief Real Estate Transactions and Operations Officer Jake Luce, Deputy Chief, Management & Budget
+[p001_c0008] To hear the content of public comments, details of Committee presentations, and Committee Members' comments and questions as well as any part of the Finance Committee meeting, please refer to the video recording of the meeting produced by the MTA, available and maintained on the MTA website:
+[p001_c0009] https://www.mta.info/transparency/board-and-committee-meetings/october-2025
+### [p001_c0010] 1. CALL TO ORDER
+[p001_c0011] Chair Neal Zuckerman called the meeting of the Finance Committee to order.
+### [p001_c0012] 2. PUBLIC COMMENTS (*attended remotely)
+[p001_c0013] There were 5 public speakers:
+[p001_c0014] Christopher D. Greif, ADA Accessibility Transportation Group
+[p001_c0015] Jason Anthony, LIRR ADA Task Force
+[p001_c0016] Mr. X
+[p001_c0017] Matty Buchys Hyland*
+[p001_c0018] Carl Perra*
+### [p001_c0019] 3. EXECUTIVE SESSION
+[p001_c0020] Chair Zuckerman convened the Finance Committee meeting into Executive Session.
+
+## Page 2
+
+### [p002_c0001] 4. MINUTES
+[p002_c0002] The minutes of the meeting held on September 29, 2025, were approved.
+### [p002_c0003] 5. FINANCIAL PERFORMANCE REPORT
+[p002_c0004] Highlights of the Financial Performance Report were presented.
+### [p002_c0005] Finance Summary
+[p002_c0006] Jake Luce, Deputy Chief, Management & Budget reported that preliminary operating results through September YTD were $274 million favorable compared to the mid-year forecast.
+[p002_c0007] This was driven by favorable results both on revenues and on expenses. Operating revenues and subsidies were favorable by $162 million, and operating expenses and debt service were favorable by $112 million.
+[p002_c0008] For September alone, preliminary results were unfavorable by $9 million. This was due to timing of receipts for Station Maintenance and Local Operating Assistance. Unfavorability of these subsidies by $29 million offset favorable results for September in operating revenue, expenses, and debt service.
+[p002_c0009] Going further into revenues: Operating revenue from farebox, tolls and other sources was favorable by $10 million in September, and $34 million year-to-date. Despite that overall favorability, Transit Bus and MTA Bus farebox revenue was unfavorable by $3 million YTD with lower average yield per passenger despite higher ridership.
+[p002_c0010] Operating subsidies, including investment income, were favorable by $128 million YTD. This is largely driven by favorability in the Payroll Mobility Tax of $76 million. As mentioned earlier, results for September alone were unfavorable by $29 million due to timing. Capital subsidies were favorable by $17 million in September, and $57 million year-to-date.
+[p002_c0011] On the expense side: Operating expenses were favorable by $6 million in September and $56 million year-to-date. Unfavorable results for Bus and Subways, driven by higher-than-budgeted overtime, were offset by favorable results for other modes.
+[p002_c0012] Debt service expenses were favorable by $4 million in September and $56 million year-to-date.
+### [p002_c0013] Congestion Pricing Summary
+[p002_c0014] Jaibala Patel, Chief Financial Officer, presented that for the nine months ending September 30, 2025 the Congestion Relief Zone Revenue and Expenses were on budget. In addition, traffic patterns were also performing on target.
+[p002_c0015] Ms. Patel further stated that the Total Revenue for the nine months was $507 million, while Total Expenses for the same period were $96.4 million. Generating Total Net Revenue of $411 million.
+### [p002_c0016] 6. MTA HEADQUARTERS AND ALL-AGENCY ITEMS ACTION ITEMS
+[p002_c0017] Olga Chernat, Deputy Chief of Financial Services, presented an action item for approval: the submission of the proposed Congestion Relief Zone Toll Revenue Obligation Resolution (“CRZ Bond Resolution”) to the Capital Program Review Board (CPRB). Approval from CPRB is a required legal step before formal adoption by the TBTA Board.
+[p002_c0018] Ms. Chernat further commented that MTA Construction and Development is actively working on the $55 billion 2020 to 2024 Capital Program. That capital program includes $15 billion of funding from
+
+## Page 3
+
+[p003_c0001] the CRZ Program. This CRZ Bond Resolution enables TBTA to issue bonds and notes secured by CRZ revenues to fund that $15 billion portion of the capital program for key transit and commuter rail capital projects included in that program.
+[p003_c0002] Ms. Chernat continued that while there will be a mix of bonds and PayGo funding to complete the $15 billion funding, CRZ bonds and notes will be essential in fulfilling it.
+[p003_c0003] Ms. Chernat stated that over $4 billion of 2020 to 2024 key projects were already committed to CRZ funds, which include rolling stock purchases, and Second Avenue Subway Phase 2 and ADA upgrades. In addition to these funding needs, $1.4 billion in short-term debt will need to be refinanced or repaid, including notes issued under other MTA credits and a short-term loan secured by CRZ revenues.
+[p003_c0004] The resolution establishes two types of bonds, senior and subordinate lien credits, which is a similar structure used for many of other MTA bond credits. CRZ bonds will be paid from CRZ Net Revenues, which means CRZ revenue will first go to fund operations and then they will be available to pay debt service on CRZ bonds and any necessary reserves.
+[p003_c0005] The CRZ resolution also sets an aggregate debt service coverage requirement and a rate covenant ensuring sufficient revenue generation without requiring toll increases during the phase-in period.
+[p003_c0006] It was recommended that approval be granted for the CRZ Bond Resolution submission to the CPRB to maintain momentum on funding critical transit and commuter rail projects through CRZ revenues, with final TBTA Board adoption to follow CPRB approval.
+[p003_c0007] Hon. Mihaltses commented on the progress of the CRZ program.
+[p003_c0008] Upon motion duly made and seconded, the Committee voted to approve the action item.
+[p003_c0009] Lisette Camilo, Chief Administrative Officer, presented two MTA Headquarters items for Finance Committee approval for a total value of $296 million.
+[p003_c0010] The first item included three actions with a total contract price of $209.9 million. The first two actions were requests that the Board approve awards of competitively negotiated personal service contracts to (1) Metropolitan Life Insurance Company (“MetLife”) and (2) Dentcare Delivery Systems, Inc (“Dentcare”) to provide dental benefits services to the MTA on behalf of its affiliate agencies, comprised of 33,000 non-represented and represented employees and retirees.
+[p003_c0011] The Preferred Provider Organization (“PPO”), valued at $200.4 million, will be awarded to MetLife; and the Dental Health Maintenance Organization (“DHMO”), valued at $2.02 million, will be awarded to Dentcare.
+[p003_c0012] The period of performance for these awards is five years (January 1, 2026–December 31, 2030), which includes two 1-year options. The Board was also requested to authorize the MTA Assistant Deputy Chief Procurement Officer to approve the exercise of Options 1 and 2.
+[p003_c0013] The current contract for PPO and DHMO plans ends December 31, 2025.
+[p003_c0014] The third action was to add $7.4 million in additional funding to the current MetLife contract for the continued provision of PPO dental benefits for the remainder of year 2025, to cover the premiums of additional enrollees.
+[p003_c0015] A two-step RFP was publicly advertised to identify firms eligible to meet the MTA’s minimum requirements for a contract award of dental benefits in both, or either, fully insured and/or self-insured
+
+## Page 4
+
+[p004_c0001] plans. Following reviews of proposals, negotiations and Best and Final Offers, the Selection Committee recommended that fully insured PPO plans be awarded to MetLife and the DHMO plan be awarded to Dentcare.
+[p004_c0002] MetLife submitted the highest-ranked proposal for the PPO plan with all evaluation criteria taken into consideration and therefore determined to offer the best value for the MTA. Dentcare was the only proposer for the DHMO plan. Both firms' proposals met geographic coverage, matched plan designs as required by MTA, had high member access, and limited member disruption.
+[p004_c0003] Both MetLife and Dentcare are incumbent suppliers, so no additional MTA resources will be needed to implement the plans.
+[p004_c0004] The second and final item is a request that the Board approve an award of a noncompetitive miscellaneous service contract for the continuation of maintenance and management support services for a number of MTA data center operating environments that house critical applications, as well as implementation work to upgrade one of those environments to the zCloud. The estimated amount of this contract is $85.7 million.
+[p004_c0005] The contract term is 4½ years (September 2025–February 2030) with two, 1-year renewal options (March 2030–February 2032), which the Board is requested to authorize the MTA Deputy Chief Procurement Officer to approve, pending availability of funding.
+[p004_c0006] MTA's mainframe infrastructure, one of the data center environments managed by Kyndryl, is reaching the end of its useful life, and timely migration to the zCloud platform is crucial in order to maintain functionality of critical systems and ensure compliance with MTA's operational standards and cybersecurity requirements. An Immediate Operating Need was issued for the upgrade and migration to Kyndryl's zCloud platform and work began last month.
+[p004_c0007] Post implementation of zCloud, this procurement action would allow Kyndryl to continue full managed services of MTA's data center operations over a four-year term, including maintaining all infrastructure, systems, applications, monitoring system health, capacity and performance standards and providing on-going system management, security and compliance, backup and recovery on three data center environments: zCloud, Peoplesoft and iSeries, all of which host significant systems critical to our business.
+[p004_c0008] To maintain continuity and performance levels, it is necessary to retain Kyndryl as the services provider to maintain and operate these three data center environments.
+[p004_c0009] Upon motion duly made and seconded, the Committee voted to approve the three action items.
+### [p004_c0010] 7. INFORMATION ITEMS
+[p004_c0011] Ms. Chernat stated that two information items were being presented to the Committee. The first was a report on the fuel hedge program and the second item was the 2025 Semi-Annual Investment Report.
+[p004_c0012] Chair Zuckerman provided a brief overview and background of the fuel hedge program and the investment program.
+[p004_c0013] Ms. Camilo presented two information items for NYC Transit, as follows:
+[p004_c0014] The first item was a request that the Board approve the award of a one-year estimated quantity contract for sole-source replacement parts required for the Agencies to operate and maintain their respective
+
+## Page 5
+
+[p005_c0001] fleets of buses manufactured by New Flyer to The Aftermarket Parts Company, LLC dba NFI Parts.
+[p005_c0002] The second item was a request for Board approval to exercise the Option of the contract for the purchase and delivery of 25 Diesel-Battery Hybrid Locomotives awarded to MotivePower, Inc. and procure 45 additional diesel-battery hybrid locomotives.
+[p005_c0003] There were no information items for Long Island Rail Road, Metro-North Railroad, or Bridges and Tunnels.
+### [p005_c0004] 8. REAL ESTATE AGENDA
+[p005_c0005] David Florio, Chief Real Estate Transactions and Operations Officer, presented four transactional action items for consideration and approval.
+[p005_c0006] The first item was for the Metropolitan Transportation Authority and it was a lease renewal with 1-10 Bush Terminal Owner LLC, for MTA and New York City Transit Museum archives at 882 Third Avenue in Brooklyn.
+[p005_c0007] The second and third items were for MTA Long Island Rail Road and were lease renewals for the Office of Health Services. Part 1 is with Marsah Properties LLC and Part 2 is with Dasso LLC, both located in 300 Old Country Road in Mineola.
+[p005_c0008] The fourth item was for MTA Metro-North Railroad and it was the disposition of property to the Tarrytown Municipal Housing Authority located adjacent to the Tarrytown Station.
+[p005_c0009] Finally, there was one information item, which was the report on agreements entered into directly by the Real Estate Department pursuant to board policy.
+[p005_c0010] Mr. Florio addressed Chair Zuckerman's question about the fourth transactional action item.
+[p005_c0011] Upon motion duly made and seconded, the Committee voted to approve the action items.
+### [p005_c0012] 9. ADJOURNMENT
+[p005_c0013] Upon motion duly made and seconded the Committee voted to adjourn the meeting.
+[p005_c0014] Respectfully submitted,
+[p005_c0015] Patrick Isom, Senior Manager, Finance and Debt Management

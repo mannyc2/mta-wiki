@@ -1,0 +1,172 @@
+{
+  "note_id": "codex-metric-other-tail-context-2026-06-30-ae",
+  "created_at": "2026-06-30T00:00:00.000Z",
+  "author": "codex",
+  "kind": "deterministic_normalization_checkpoint",
+  "status": "validated_clean",
+  "scope": "Reduced the remaining metric_claim unit_family=other tail with exact aliases and payload-gated context rules while preserving explicit holds for employment scale/date/rate ambiguity.",
+  "constraints": {
+    "external_or_provider_llms_used": false,
+    "forbidden_commands_run": [],
+    "canonical_jsonl_hand_edited": false,
+    "mutation_path": "deterministic code changes plus bun packages/cli/src/cli.ts materialize"
+  },
+  "subagents": [
+    {
+      "agent_id": "019f19fc-83e3-7cb2-806b-bd52fe90c6b2",
+      "role": "read-only metric unit-family other scout",
+      "status": "closed",
+      "finding_summary": "Found 98 current metric other records, recommended 61 safe moves and 37 holds. The implementation adopted the exact/count-rate/context-safe subset, pulled back employment-scale and individuals aliases, and left the policy-held tail unresolved."
+    }
+  ],
+  "before": {
+    "metric_total": 36534,
+    "unit_family_other": 98,
+    "unit_family_count": 2882,
+    "unit_family_money": 11855,
+    "unit_family_count_rate": 186,
+    "unit_family_engagement": 90,
+    "top_other_units": {
+      "thousands": 23,
+      "year": 4,
+      "rate": 3,
+      "trains per day": 2,
+      "summons per quarter": 2,
+      "seats per car": 2
+    }
+  },
+  "implemented": {
+    "files": [
+      "packages/pipeline/src/ontology/normalizers.ts",
+      "packages/pipeline/test/ontology/normalizers.test.ts"
+    ],
+    "exact_aliases": {
+      "count": [
+        "proposers",
+        "proposals",
+        "recommendations",
+        "remarketing agents",
+        "scenarios",
+        "seats",
+        "service updates",
+        "shops_and_yards",
+        "sites",
+        "submissions",
+        "time periods",
+        "transports",
+        "venues",
+        "work plans",
+        "zones"
+      ],
+      "count_rate": [
+        "requests per month",
+        "rows per day",
+        "spaces per hour",
+        "stations per month",
+        "summons per quarter",
+        "taps per day",
+        "track_outages_per_year",
+        "trains per day",
+        "trains per peak period",
+        "trains_per_week",
+        "transfers per day"
+      ],
+      "other_families": [
+        "M engagements -> engagement scale 1000000",
+        "USD x1000 -> money scale 1000",
+        "USD/square_foot -> money_rate",
+        "index points/index_points -> scale",
+        "percent_of_gross_sales -> percentage",
+        "percent_point_increase -> percentage_point",
+        "proportion -> ratio",
+        "percentile -> rating",
+        "per 1 million vehicles/per 1,000 residents -> rate",
+        "no-shows per trip -> rate",
+        "days per injury -> duration_rate",
+        "people severely injured -> severe_injuries safety",
+        "robberies -> safety",
+        "pounds -> mass",
+        "track feet/revenue car miles -> distance",
+        "person-hours -> duration",
+        "violators -> enforcement",
+        "personnel -> workforce"
+      ]
+    },
+    "context_gated_rules": [
+      "billions maps to money scale 1000000000 only when payload proves funding/relief/federal context",
+      "Uillions maps to money scale 1000000 only for finance metric names such as gross_subsidies",
+      "crossings per hour maps to pedestrians_per_hour only for pedestrian_crossings metrics",
+      "daily crossings maps to vehicle_crossings_per_day only with MTA Bridges and Tunnels context",
+      "per 1M riders maps to felonies_per_million_riders only for major_felonies metrics",
+      "weekends maps to count only when metric_name proves count or above-baseline-count context",
+      "year maps to years/duration only for agreement/license term payloads",
+      "x maps to multiple/ratio only for market_share_change"
+    ],
+    "held_by_policy_or_ambiguity": [
+      "thousands employment/job rows",
+      "Millions of jobs",
+      "thousand jobs",
+      "date-like year rows",
+      "generic rate rows",
+      "seats per car",
+      "days per employee",
+      "2027 $M",
+      "malformed agent text: million dollars... wait, the table shows amounts in millions. Let me re-read.",
+      "individuals"
+    ]
+  },
+  "after": {
+    "metric_total": 36534,
+    "unit_family_other": 37,
+    "unit_family_count": 2898,
+    "unit_family_money": 11858,
+    "unit_family_count_rate": 201,
+    "unit_family_engagement": 93,
+    "unit_family_scale": 667,
+    "unit_family_safety": 384,
+    "unit_family_safety_rate": 293,
+    "unit_family_rate": 248,
+    "unit_family_ratio": 198,
+    "unit_family_money_rate": 772,
+    "top_other_units": {
+      "thousands": 23,
+      "year": 3,
+      "rate": 3,
+      "seats per car": 2,
+      "thousand jobs": 1,
+      "million dollars... wait, the table shows amounts in millions. Let me re-read.": 1,
+      "individuals": 1,
+      "days per employee": 1,
+      "Millions of jobs": 1,
+      "2027 $M": 1
+    },
+    "delta": {
+      "unit_family_other": -61,
+      "unit_family_count": 16,
+      "unit_family_count_rate": 15,
+      "unit_family_money": 3,
+      "unit_family_engagement": 3
+    }
+  },
+  "verification": {
+    "focused_tests": "bun test packages/pipeline/test/ontology/normalizers.test.ts: 276 pass, 0 fail, 4567 expect() calls",
+    "typecheck": "bun run typecheck passed",
+    "materialize": "bun packages/cli/src/cli.ts materialize completed; Materialized 93092/98102 submissions; retired skipped 243; SQLite FTS quick_check ok",
+    "sqlite_quick_check": "sqlite3 data/canonical.db 'PRAGMA quick_check;': ok",
+    "validate": "bun packages/cli/src/cli.ts validate: Issues 0; submissions 98102; canonical records 84040; wiki pages 7334"
+  },
+  "remaining_lanes": [
+    "Metric other tail now 37; largest remaining bucket is employment/job scale policy at 25 records including thousands, Millions of jobs, and thousand jobs.",
+    "Remaining date/rate units require policy or more payload-specific rules: year date fields, generic rate rows, seats per car, days per employee, 2027 $M, and malformed agent text.",
+    "Continue the post-ingest cleanup loop on the next highest measurable bucket rather than broad audit paperwork."
+  ],
+  "commands_not_run": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed commands"
+  ]
+}

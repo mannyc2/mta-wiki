@@ -1,0 +1,111 @@
+{
+  "note_id": "codex-route-normalization-campaign-2026-06-24-results",
+  "date": "2026-06-24",
+  "scope": "Codex-only route normalization, dedupe, and canonicalization guardrails",
+  "constraints": {
+    "external_llms_used": false,
+    "provider_backed_harness_commands_used": false,
+    "canonical_jsonl_hand_edited": false
+  },
+  "baseline": {
+    "validate_issues": 0,
+    "canonical_route_records": 321,
+    "identity_review_validation_issues_total": 156,
+    "route_identity_review_validation_issues": 0,
+    "route_merge_aliases": 146,
+    "route_do_not_merge_pairs": 64
+  },
+  "subagent_lanes": [
+    {
+      "agent_id": "019ef970-e041-7962-9439-5e3aa0ecd637",
+      "lane": "route identity-key audit",
+      "status": "completed",
+      "findings": [
+        "S shuttle records need context-qualified keys rather than bare route_s.",
+        "Single-letter subway routes are weakly keyed and should be a future lane.",
+        "Broad base aliases can survive on variant-specific records and should not be merge-authority keys.",
+        "Multi-route labels such as Bx40/42 should produce bundle/context keys instead of member-route keys."
+      ]
+    },
+    {
+      "agent_id": "019ef971-0023-70f1-9ffd-a66e1c611a3b",
+      "lane": "bundled / aggregate route audit",
+      "status": "completed",
+      "findings": [
+        "Use a taxonomy of true multi-route aggregates, branch-pair records, local/limited variant bundles, and variant-specific siblings.",
+        "Aggregate records should use routes arrays and must not masquerade as a scalar member route.",
+        "Local/limited bundles should not present as pure local, limited_stop, or sbs variants."
+      ]
+    },
+    {
+      "agent_id": "019ef971-1e77-7b20-b316-c2e16dea0567",
+      "lane": "route denormalization audit",
+      "status": "completed",
+      "findings": [
+        "B46/Utica, Q52/Q53, Webster/Bx41, and M34/M34A remain split-candidate or contamination hotspots.",
+        "Bx12, B44, and M60 are mostly healthy evidence accumulation with lifecycle context.",
+        "Slash-pair anchoring and cross-variant collapse are the highest-confidence deterministic risks."
+      ]
+    },
+    {
+      "agent_id": "019ef971-39da-7a92-a653-69c6bccde754",
+      "lane": "override / code-path audit",
+      "status": "completed",
+      "findings": [
+        "Route key fixes belong in packages/db/src/identity.ts.",
+        "Local/limited and slash-combined variant guardrails belong in packages/pipeline/src/records/submissions.ts.",
+        "Bundle page/data-only policy is a separate materializer/schema lane and was not changed in this pass."
+      ]
+    }
+  ],
+  "implemented_changes": [
+    {
+      "path": "packages/db/src/identity.ts",
+      "summary": "Added deterministic exact two-route bundle keys, context-qualified S shuttle keys, limited/local-limited route suffix handling, and pruning of generic base keys from route record identity keys."
+    },
+    {
+      "path": "packages/db/test/identity.test.ts",
+      "summary": "Added route identity tests for 42 St versus Rockaway Park S shuttles, slash-paired route labels not emitting member-route keys, and large route lists not collapsing to the first two listed routes."
+    },
+    {
+      "path": "packages/pipeline/src/records/submissions.ts",
+      "summary": "Extended route submission validation so Local/Limited bundle text in identity fields or source_route_type_phrase is rejected as one pure route identity."
+    },
+    {
+      "path": "packages/pipeline/test/records/submissions.test.ts",
+      "summary": "Added regression coverage for local-limited bundle rejection."
+    }
+  ],
+  "intentionally_unresolved": [
+    "Existing canonical JSONL route records were not hand-edited or split.",
+    "Single-letter subway route identity keys need a separate mode-qualified key pass.",
+    "Large aggregate route records may need route_scope or data-only materializer policy.",
+    "B46/Utica, Q52/Q53, M34/M34A, Webster/Bx41, and Bx40/42 need bounded follow-up lanes for deterministic split or bundle representation."
+  ],
+  "verification": {
+    "focused_tests": [
+      {
+        "command": "bun test packages/db/test/identity.test.ts",
+        "result": "3 pass, 0 fail"
+      },
+      {
+        "command": "bun test packages/pipeline/test/records/submissions.test.ts",
+        "result": "29 pass, 0 fail"
+      }
+    ],
+    "typecheck": {
+      "command": "bun run typecheck",
+      "result": "passed"
+    },
+    "validation": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "Issues: 0"
+    }
+  },
+  "next_lanes": [
+    "Mode-qualified identity keys for single-letter subway routes.",
+    "Route_scope/schema and materializer policy for large route aggregates and service bundles.",
+    "Deterministic split plan for B46/Utica and M34/M34A denormalization hotspots.",
+    "Review whether source-specific route aliases should be excluded from merge-authority identity keys more broadly."
+  ]
+}

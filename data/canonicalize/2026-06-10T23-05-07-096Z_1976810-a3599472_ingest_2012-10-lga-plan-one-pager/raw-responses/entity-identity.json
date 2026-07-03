@@ -1,0 +1,67 @@
+{
+  "run_id": "2026-06-10T23-05-07-096Z_1976810-a3599472_ingest_2012-10-lga-plan-one-pager",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:58:26.390Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "d001-nyc-dot-2012-lga",
+        "local_observation_id": "entity_nyc_dot_2012_lga_handout",
+        "decision": "new",
+        "rationale": "base_record_id 'entity_nyc-dot' already matches the canonical registry record for New York City Department of Transportation (entity_type: agency). Observation resolves to the correct record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0003",
+            "source_quote": "This study has been a partnership among New York City Department of Transportation, MTA New York City Transit, MTA Bus Company and Port Authority of New York and New Jersey."
+          }
+        ]
+      },
+      {
+        "decision_id": "d002-mta-nyct-2012-lga",
+        "local_observation_id": "entity_mta_nyct_2012_lga_handout",
+        "decision": "new",
+        "rationale": "base_record_id 'entity_mta-nyct' already matches the canonical registry record for MTA New York City Transit (entity_type: agency). Observation resolves to the correct record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0003",
+            "source_quote": "This study has been a partnership among New York City Department of Transportation, MTA New York City Transit, MTA Bus Company and Port Authority of New York and New Jersey."
+          }
+        ]
+      },
+      {
+        "decision_id": "d003-mta-bus-company-2012-lga",
+        "local_observation_id": "entity_mta_bus_company_2012_lga_handout",
+        "decision": "new",
+        "rationale": "base_record_id 'entity_mta-bus-company' already matches the canonical registry record for MTA Bus Company (entity_type: transit agency division). Observation resolves to the correct record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0003",
+            "source_quote": "This study has been a partnership among New York City Department of Transportation, MTA New York City Transit, MTA Bus Company and Port Authority of New York and New Jersey."
+          }
+        ]
+      },
+      {
+        "decision_id": "d004-port-authority-2012-lga",
+        "local_observation_id": "entity_port_authority_ny_nj_2012_lga_handout",
+        "decision": "new",
+        "rationale": "base_record_id 'entity_port-authority-ny-nj' already matches the canonical registry record for Port Authority of New York and New Jersey (entity_type: transportation_authority). Observation resolves to the correct record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0003",
+            "source_quote": "This study has been a partnership among New York City Department of Transportation, MTA New York City Transit, MTA Bus Company and Port Authority of New York and New Jersey."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-56-09-413Z_2111393-6005380b_canonicalize_2026-06-10t23-05-07-096z-1976810-a3599472-ingest-2012-10-lga-plan-one-pager-entity-identity"
+}

@@ -1,0 +1,21 @@
+{
+  "run_id": "2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop",
+  "generated_at": "2026-06-11T05:00:30.768Z",
+  "dry_run": false,
+  "wrote": true,
+  "decision_count": 15,
+  "reviewed_count": 7,
+  "alias_additions": [],
+  "aliases_already_present": [],
+  "do_not_merge_additions": [],
+  "relation_submissions": 3,
+  "quarantined": 3,
+  "conflicts": [],
+  "paths": {
+    "merges": "data/identity-overrides/merges.json",
+    "do_not_merge": "data/identity-overrides/do-not-merge.json",
+    "relation_submissions_jsonl": "data/submissions/2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop_canonicalize.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop/apply-quarantine.jsonl",
+    "apply_report": "data/canonicalize/2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop/apply-report.json"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "run_id": "2026-06-10T23-03-13-561Z_1976810-31a3769a_ingest_2012-06-25-brt-woodhaven-publicworkshop2-presentation",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:43:53.186Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d_mta_woodhaven",
+        "local_observation_id": "entity_mta_woodhaven_workshop2",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_mta-entity-update-2025 already exists in the registry as the canonical MTA record. The observation resolves to its own base — no different target to link to. MTA logo on presentation title page confirms the entity.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p001_c0004",
+            "source_quote": "The logo for the Metropolitan Transportation Authority (MTA), featuring the letters 'MTA' in a stylized font inside a circle."
+          }
+        ]
+      },
+      {
+        "decision_id": "d_nycdot_woodhaven",
+        "local_observation_id": "entity_nyc_dot_woodhaven_workshop2",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_nyc-dot already exists in the registry as the canonical NYC DOT record. The observation resolves to its own base — no different target to link to. NYC DOT logo on presentation title page confirms the entity.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p001_c0006",
+            "source_quote": "The logo for the New York City Department of Transportation (NYC DOT), featuring the words 'NEW YORK CITY' above 'DOT' and a stylized graphic of a road or bridge."
+          }
+        ]
+      },
+      {
+        "decision_id": "d_mta_bus_woodhaven",
+        "local_observation_id": "entity_mta_bus_woodhaven_workshop2",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_mta-bus-company already exists in the registry as the canonical MTA Bus Company record. The observation resolves to its own base — no different target to link to. Record_id encodes a part-of-agency relation to MTA; proposing that as a relation.",
+        "proposed_relations": [
+          {
+            "relation_kind": "part_of",
+            "subject_id": "entity_mta-bus-company",
+            "object_id": "entity_mta-entity-update-2025",
+            "description": "MTA Bus Company is a division of the Metropolitan Transportation Authority (MTA).",
+            "evidence_refs": [
+              {
+                "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+                "block_id": "p009_c0005",
+                "source_quote": "MTA Bus and DOT develop designs based on today's input"
+              },
+              {
+                "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+                "block_id": "p001_c0004",
+                "source_quote": "The logo for the Metropolitan Transportation Authority (MTA), featuring the letters 'MTA' in a stylized font inside a circle."
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_25_brt_woodhaven_publicworkshop2_presentation",
+            "block_id": "p009_c0005",
+            "source_quote": "MTA Bus and DOT develop designs based on today's input"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-42-08-827Z_2111393-ccbe7385_canonicalize_2026-06-10t23-03-13-561z-1976810-31a3769a-ingest-2012-06-25-brt-woodhaven-publicworkshop2-presentation-entity-identity"
+}

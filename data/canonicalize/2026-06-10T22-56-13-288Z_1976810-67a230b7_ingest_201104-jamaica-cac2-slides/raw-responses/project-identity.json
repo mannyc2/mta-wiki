@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T22-56-13-288Z_1976810-67a230b7_ingest_201104-jamaica-cac2-slides",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T01:30:00.336Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d001",
+        "local_observation_id": "project_jamaica_bus_improvement_study_cac2",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'project_jamaica-bus-improvement-study' exactly matches the existing registry record with the same record_id. The registry record already captures this project (same project_name, borough, and description of the Jamaica Bus Improvement Study as a joint NYCT/DOT study). The observation does not require linking to any different record; it already resolves to its own base_record_id. Per canonicalization rules, when the closest match IS the observation's own base_record_id, the decision is 'new'.",
+        "evidence_refs": [
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p003_c0001",
+            "source_quote": "Outgrowth of New York City Bus Rapid Transit study"
+          },
+          {
+            "source_id": "201104_jamaica_cac2_slides",
+            "block_id": "p003_c0003",
+            "source_quote": "Response to community concerns about bus movement in Jamaica CBD"
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-29-26-662Z_2111393-6b64c6c8_canonicalize_2026-06-10t22-56-13-288z-1976810-67a230b7-ingest-201104-jamaica-cac2-slides-project-identity"
+}

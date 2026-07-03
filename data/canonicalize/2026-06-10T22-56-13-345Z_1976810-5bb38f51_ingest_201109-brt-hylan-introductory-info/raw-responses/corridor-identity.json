@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T22-56-13-345Z_1976810-5bb38f51_ingest_201109-brt-hylan-introductory-info",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T01:38:25.752Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "dec_hylan_blvd_new",
+        "local_observation_id": "corridor_hylan_blvd_staten_island",
+        "decision": "new",
+        "rationale": "Observation base_record_id corridor_hylan-boulevard-brt matches the existing registry record and is already the correct canonical resolution. Observation is already canonicalized; no link to a different record needed.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p002_c0001",
+            "source_quote": "Hylan Boulevard/ Richmond Avenue Select Bus Service - Proposed SBS Route"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-37-50-100Z_2111393-829d29ec_canonicalize_2026-06-10t22-56-13-345z-1976810-5bb38f51-ingest-201109-brt-hylan-introductory-info-corridor-identity"
+}

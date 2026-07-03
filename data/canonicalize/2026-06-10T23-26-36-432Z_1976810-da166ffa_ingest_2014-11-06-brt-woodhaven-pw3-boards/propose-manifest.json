@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T23-26-36-432Z_1976810-da166ffa_ingest_2014-11-06-brt-woodhaven-pw3-boards",
+  "generated_at": "2026-06-11T04:05:15.149Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 56,
+  "validated_decision_count": 0,
+  "quarantined_decision_count": 6,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T23-26-36-432Z_1976810-da166ffa_ingest_2014-11-06-brt-woodhaven-pw3-boards",
+    "manifest": "data/canonicalize/2026-06-10T23-26-36-432Z_1976810-da166ffa_ingest_2014-11-06-brt-woodhaven-pw3-boards/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T23-26-36-432Z_1976810-da166ffa_ingest_2014-11-06-brt-woodhaven-pw3-boards/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-26-36-432Z_1976810-da166ffa_ingest_2014-11-06-brt-woodhaven-pw3-boards/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T23-26-36-432Z_1976810-da166ffa_ingest_2014-11-06-brt-woodhaven-pw3-boards/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-26-36-432Z_1976810-da166ffa_ingest_2014-11-06-brt-woodhaven-pw3-boards/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-11-855Z_2111393-7d88d66b_canonicalize_2026-06-10t23-26-36-432z-1976810-da166ffa-ingest-2014-11-06-brt-woodhaven-pw3-boards-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-26-36-432Z_1976810-da166ffa_ingest_2014-11-06-brt-woodhaven-pw3-boards/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-11-855Z_2111393-9dbbcb63_canonicalize_2026-06-10t23-26-36-432z-1976810-da166ffa-ingest-2014-11-06-brt-woodhaven-pw3-boards-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-26-36-432Z_1976810-da166ffa_ingest_2014-11-06-brt-woodhaven-pw3-boards/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-11-855Z_2111393-bb9d53f7_canonicalize_2026-06-10t23-26-36-432z-1976810-da166ffa-ingest-2014-11-06-brt-woodhaven-pw3-boards-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-26-36-432Z_1976810-da166ffa_ingest_2014-11-06-brt-woodhaven-pw3-boards/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-11-855Z_2111393-333dc6b4_canonicalize_2026-06-10t23-26-36-432z-1976810-da166ffa-ingest-2014-11-06-brt-woodhaven-pw3-boards-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-26-36-432Z_1976810-da166ffa_ingest_2014-11-06-brt-woodhaven-pw3-boards/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-11-855Z_2111393-1f3bc2fb_canonicalize_2026-06-10t23-26-36-432z-1976810-da166ffa-ingest-2014-11-06-brt-woodhaven-pw3-boards-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-26-36-432Z_1976810-da166ffa_ingest_2014-11-06-brt-woodhaven-pw3-boards/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-05-11-855Z_2111393-8a4f1599_canonicalize_2026-06-10t23-26-36-432z-1976810-da166ffa-ingest-2014-11-06-brt-woodhaven-pw3-boards-relation-linker"
+    }
+  ]
+}

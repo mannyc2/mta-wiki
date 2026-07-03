@@ -1,0 +1,14 @@
+{"decision_id":"rel-b46-weekday-ridership-49000","verdict":"pass","evidence_checked":["2011_09_15_sbs_utica_cb8_9_17#p004_c0002"]}
+{"decision_id":"rel-speeding-63-percent-utica","verdict":"pass","evidence_checked":["2011_09_15_sbs_utica_cb8_9_17#p005_c0002"]}
+{"decision_id":"rel-crashes-total-1682-2005-2009","verdict":"pass","evidence_checked":["2011_09_15_sbs_utica_cb8_9_17#p005_c0002"]}
+{"decision_id":"rel-crashes-fatalities-9-2005-2009","verdict":"pass","evidence_checked":["2011_09_15_sbs_utica_cb8_9_17#p005_c0002"]}
+{"decision_id":"rel-crashes-severe-injuries-114-2005-2009","verdict":"pass","evidence_checked":["2011_09_15_sbs_utica_cb8_9_17#p005_c0002"]}
+{"decision_id":"rel-utica-high-injury-rate-brooklyn","verdict":"pass","evidence_checked":["2011_09_15_sbs_utica_cb8_9_17#p005_c0002"]}
+{"decision_id":"rel-most-utica-residents-no-subway","verdict":"pass","evidence_checked":["2011_09_15_sbs_utica_cb8_9_17#p004_c0002"]}
+{"decision_id":"rel-congestion-slows-buses-eastern-pkwy","verdict":"pass","evidence_checked":["2011_09_15_sbs_utica_cb8_9_17#p004_c0002"]}
+{"decision_id":"rel-traffic-congestion-worst-eastern-pkwy","verdict":"fail","failure_reason":"Cited block p006_c0004 raw text is solely '• Traffic congestion is worst on approaches to Eastern Parkway' — it never mentions Utica Avenue. The connection to corridor_utica-av relies entirely on document-level co-occurrence, not on block-level evidence that ties the claim to Utica Avenue.","evidence_checked":["2011_09_15_sbs_utica_cb8_9_17#p006_c0004"]}
+{"decision_id":"rel-b46-second-busiest-route","verdict":"pass","evidence_checked":["2011_09_15_sbs_utica_cb8_9_17#p004_c0002"]}
+{"decision_id":"rel-presentation-cb8-9-17-20110915","verdict":"pass","evidence_checked":["2011_09_15_sbs_utica_cb8_9_17#p001_c0003","2011_09_15_sbs_utica_cb8_9_17#p001_c0004"]}
+{"decision_id":"rel-utica-study-fall2011-winter2012","verdict":"fail","failure_reason":"Cited block p008_c0004 raw text describes study goals and a study in fall/winter 2011-2012 but never mentions 'Utica Avenue' or the 'Utica Avenue Improvements' project by name. The connection to project_utica-avenue-improvements-2011 rests solely on document-level context, not on block-level evidence.","evidence_checked":["2011_09_15_sbs_utica_cb8_9_17#p008_c0004"]}
+{"decision_id":"rel-utica-spring2012-presentation","verdict":"pass","evidence_checked":["2011_09_15_sbs_utica_cb8_9_17#p011_c0003","2011_09_15_sbs_utica_cb8_9_17#p011_c0002","2011_09_15_sbs_utica_cb8_9_17#p001_c0002"]}
+{"decision_id":"rel-utica-implementation-summer2012","verdict":"pass","evidence_checked":["2011_09_15_sbs_utica_cb8_9_17#p011_c0003","2011_09_15_sbs_utica_cb8_9_17#p011_c0002","2011_09_15_sbs_utica_cb8_9_17#p001_c0002"]}

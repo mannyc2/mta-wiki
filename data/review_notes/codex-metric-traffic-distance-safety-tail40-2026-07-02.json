@@ -1,0 +1,98 @@
+{
+  "id": "codex-metric-traffic-distance-safety-tail40-2026-07-02",
+  "date": "2026-07-02",
+  "lane": "metric missing-unit-family deterministic cleanup",
+  "bucket": "traffic crossings, track miles, and crash-injury tail rows",
+  "constraints": {
+    "external_provider_llms_used": false,
+    "forbidden_repo_agent_commands_used": false,
+    "canonical_jsonl_hand_edited": false
+  },
+  "subagents": [
+    {
+      "id": "019f20d8-c133-73d2-a1d2-d3765925fa23",
+      "role": "read-only safety/incident audit",
+      "status": "closed",
+      "finding": "Crash-injury rows are safe only with non-name injury wording; bare numeric fire/derailment rows require source-context plumbing and should remain unresolved for now."
+    }
+  ],
+  "before": {
+    "missing_unit_family": 50,
+    "finite_missing_unit_family": 44,
+    "distinct_missing_metric_names": 38,
+    "other_unit_family": 4
+  },
+  "changes": [
+    {
+      "slice": "traffic crossing and distance rows",
+      "records_resolved": 5,
+      "rules": [
+        "Exact traffic metric names ezpass_traffic, paid_traffic_volume, tolls_by_mail_traffic, and total_paid_traffic normalize to crossings/count only when value is a nonnegative integer and raw_value_text contains that stored count.",
+        "track_miles normalizes to track_miles/distance only when payload text outside the metric name contains track-mile wording."
+      ]
+    },
+    {
+      "slice": "crash injury rows",
+      "records_resolved": 5,
+      "rules": [
+        "crash_injuries normalizes to injuries/safety only when payload text contains injury/injured wording.",
+        "Bare numeric crash_injuries rows remain unresolved.",
+        "Composite fatality, KSI, killed, severe-injury, or severely-injured crash_injuries rows remain unresolved."
+      ]
+    }
+  ],
+  "after": {
+    "metric_claims_total": 36534,
+    "missing_unit_family": 40,
+    "finite_missing_unit_family": 34,
+    "distinct_missing_metric_names": 32,
+    "other_unit_family": 4,
+    "targeted_missing_count": 0
+  },
+  "verification": {
+    "focused_tests": {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "result": "pass",
+      "tests": 278,
+      "expect_calls": 4965
+    },
+    "typecheck": {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    "materialize": {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "pass",
+      "materialized_submissions": "93067/98115",
+      "retired_submissions_skipped": 265,
+      "pages": 7335,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass",
+      "issues": 0,
+      "submissions": 98115,
+      "canonical_records": 84027,
+      "wiki_pages": 7331
+    }
+  },
+  "remaining": {
+    "missing_unit_family": 40,
+    "finite_missing_unit_family": 34,
+    "other_unit_family": 4,
+    "top_missing_examples": [
+      ["ridership", 3],
+      ["Secondary Screening Score", 3],
+      ["major_felony_change", 2],
+      ["total_arrests_change", 2],
+      ["total_major_felonies_change", 2],
+      ["vacancies", 2]
+    ],
+    "explicit_deferrals": [
+      "subway_fires, subway_fires_12mo_rolling, and train_derailments bare numeric rows need source-context-aware normalization or payload enrichment before safe inference.",
+      "traffic_fatalities_and_injuries has mixed value/value_min semantics and should not be fixed by unit normalization alone.",
+      "score, date, change, and broad ridership/vacancy rows need separate policy/gates."
+    ]
+  }
+}

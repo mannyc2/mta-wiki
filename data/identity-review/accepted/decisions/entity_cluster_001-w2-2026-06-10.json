@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "review_state": "accepted",
+  "accepted_at": "2026-06-10T21:42:17.724582Z",
+  "reviewer": "claude-w2-canon-validation-2026-06-10",
+  "source": "llm_suggestion_scored_against_w2-dedup-expected",
+  "cluster_id": "entity_cluster_001-w2-2026-06-10",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_001.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_001.json",
+  "source_review_run_id": "2026-06-10T21-39-01-072Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Pro",
+  "action_summary": {
+    "merge_group_count": 1,
+    "do_not_merge_count": 2,
+    "weak_alias_count": 1,
+    "missing_field_count": 1,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [
+    [
+      "entity_mta-2012",
+      "entity_mta-entity-update-2025"
+    ]
+  ],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "entity_mta-2012",
+        "entity_mta-nyct"
+      ],
+      "reason": "Authority vs subsidiary never merge (Entities per-kind rule). entity_mta-2012 represents the Metropolitan Transportation Authority (the parent authority); entity_mta-nyct represents MTA New York City Transit (a subsidiary operating agency). Decisive identity field: entity_name \u2014 'Metropolitan Transportation Authority' vs 'MTA New York City Transit'. The relation_context confirms NYCT is owned_by the MTA parent."
+    },
+    {
+      "record_ids": [
+        "entity_mta-entity-update-2025",
+        "entity_mta-nyct"
+      ],
+      "reason": "Authority vs subsidiary never merge (Entities per-kind rule). entity_mta-entity-update-2025 is the Metropolitan Transportation Authority parent (owns MTA Bus Company and MTA NYCT per relation_context); entity_mta-nyct is MTA New York City Transit, a subsidiary operating agency. Decisive identity field: entity_name \u2014 'Metropolitan Transportation Authority' vs 'MTA New York City Transit'. The relation_context on both records shows a reciprocal owned_by/ownership relationship confirming the parent-subsidiary structure."
+    }
+  ],
+  "weak_aliases": [
+    {
+      "record_id": "entity_mta-nyct",
+      "aliases": [
+        "MTA",
+        "entity_mta",
+        "entity_metropolitan-transportation-authority",
+        "entity_metropolitan-transportation-authority-mta"
+      ],
+      "reason": "Sources and payload fields (short_name, acronym) use 'MTA' as shorthand for MTA New York City Transit. These aliases appear in identity_keys and source_labels but refer to the subsidiary, not the parent authority. Useful for search disambiguation, not merge authority."
+    }
+  ],
+  "missing_fields": [
+    {
+      "record_id": "entity_mta-2012",
+      "fields": [
+        "description",
+        "relation_context",
+        "entity_type (needs reconciliation: 'agency' vs 'transit_authority' after merge)"
+      ]
+    }
+  ],
+  "ambiguous": [],
+  "suggested_rules": [
+    "Entity_type values 'agency' and 'transit_authority' are overlapping taxonomies, not mutually exclusive categories. A transit authority IS an agency. The contradiction test (test 1) should treat entity_type as contradictory only when the values represent fundamentally different entity kinds (org vs person, agency vs project, parent vs subsidiary), not when they are taxonomic variations describing the same kind of organization. The canon's examples ('org vs person, parent vs subsidiary') support this reading, but the rule text listing 'entity_type' without qualification may cause false do_not_merge decisions on cases like this."
+  ],
+  "rationale": "Three records, three pairwise decisions. (1) entity_mta-2012 \u2194 entity_mta-entity-update-2025: MERGE per same-object test (test 2). Both have entity_name 'Metropolitan Transportation Authority', acronym 'MTA'. The entity_type difference ('agency' vs 'transit_authority') is taxonomic, not an identity contradiction \u2014 MTA is both. The '-2012' and '-entity-update-2025' suffixes are lifecycle markers of the same durable entity. (2) entity_mta-2012 \u2194 entity_mta-nyct: DO_NOT_MERGE per authority-vs-subsidiary rule. MTA parent vs MTA New York City Transit operating agency. (3) entity_mta-entity-update-2025 \u2194 entity_mta-nyct: DO_NOT_MERGE, same authority-vs-subsidiary reasoning, confirmed by reciprocal owned_by relations in both records' relation_context."
+}

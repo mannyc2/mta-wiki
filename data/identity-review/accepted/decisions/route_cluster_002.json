@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "review_state": "corrected",
+  "accepted_at": "2026-06-09T02:29:27.000Z",
+  "reviewer": "codex-audit-2026-06-09",
+  "source": "corrected_from_audit_verdict",
+  "cluster_id": "route_cluster_002",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_002.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_002.json",
+  "source_review_run_id": "2026-06-09T02-15-06-732Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-pro",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 2,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "route_b82-tsp-2017",
+        "route_southern-brooklyn-sbs"
+      ],
+      "reason": "Distinct service variants on the same B82 corridor. route_b82-tsp-2017 is the local/TSP-development B82 record, while route_southern-brooklyn-sbs is the B82 SBS record. The shared base route label identifies related corridor context, not same-route identity."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [
+    {
+      "record_id": "route_b82-tsp-2017",
+      "fields": [
+        "streets",
+        "description"
+      ]
+    },
+    {
+      "record_id": "route_southern-brooklyn-sbs",
+      "fields": [
+        "service_variant",
+        "route_type"
+      ]
+    }
+  ],
+  "ambiguous": [],
+  "suggested_rules": [
+    "Do not merge local/TSP route records with SBS route records solely because they share the same base route number.",
+    "Shared base route aliases such as route_b82 must not be preserved as identity aliases on both local and SBS records when they are the source of duplicate-identity validation failures.",
+    "Use SBS-specific aliases only when they do not collide with local/base-route identity keys."
+  ],
+  "rationale": "The do-not-merge decision is correct, but the model's weak alias guidance would preserve the duplicate identity collision by keeping route_b82 on the SBS record. No weak aliases are accepted for this cluster."
+}

@@ -1,0 +1,343 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch050-prep",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "batch_id": "relation050",
+  "batch": "batch050",
+  "input_artifact": "data/review_notes/codex-relation-rule-or-data-next23-prep.json",
+  "scope": "Codex-only deterministic/manual relation cleanup prep; no provider-backed commands, post-ingest LLM harnesses, materialize/export-jsonl/full validate/DB publish, generated-output edits, durable retirements, replacement submissions, LOG edits, manifest edits, canonical/generated edits, or code edits applied",
+  "checkpoint_context": {
+    "reported_validate_backlog_after_identity078_relation048": {
+      "issue_count": 1473,
+      "unexpected_relation_endpoint_shape": 18,
+      "duplicate_global_identity": 1455
+    },
+    "selected_next23_bucket": "implemented_by entity->entity",
+    "selected_rows_cleared": 1,
+    "replacement_rows_added": 1,
+    "expected_endpoint_shape_delta": -1,
+    "expected_remaining_unexpected_relation_endpoint_shape_after_apply": 17,
+    "not_repeated": "This prep uses relation050 as requested and does not repeat relation049."
+  },
+  "durable_mechanism_prepared_not_applied": {
+    "retire_originals_via": "data/submission-overrides/retired.json",
+    "replacement_journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch050.jsonl",
+    "mutation_status": "not_applied_by_this_prep",
+    "only_file_written_by_this_task": "data/review_notes/codex-relation-cleanup-batch050-prep.json"
+  },
+  "summary_counts": {
+    "prepared_count": 1,
+    "retire_replace_count": 1,
+    "accepted_replacement_count": 1,
+    "issue_count": 0,
+    "expected_endpoint_shape_delta": -1
+  },
+  "bucket": {
+    "name": "implemented_by entity-to-entity row that should be organization hierarchy",
+    "original_relation_kind": "implemented_by",
+    "original_endpoint_shape": "entity -> entity",
+    "replacement_relation_kind": "part_of_agency",
+    "replacement_endpoint_shape": "entity -> entity",
+    "prepared_original_count": 1,
+    "cleanup_direction": "data cleanup only; keep implemented_by scoped to project -> entity",
+    "rationale": "The source presents Maintenance of Way Division under Metro-North Railroad context. That is agency/division hierarchy semantics, not a project implemented_by agency relation. Current endpoint rules already admit part_of_agency entity -> entity."
+  },
+  "guards": {
+    "all_pass": true,
+    "original_accepted_not_retired": {
+      "status": "pass",
+      "selected_original_submission_id": "sub_1d0e25e441bdce13",
+      "selected_original_record_id": "relation_98266-mow-division-programs",
+      "selected_original_journal": "data/submissions/2026-06-22T22-06-40-014Z_413689-e7b402a9_ingest_meeting-doc-98266.jsonl:51",
+      "current_validation_state": "accepted",
+      "retired_hits": []
+    },
+    "replacement_absent": {
+      "status": "pass",
+      "replacement_submission_id": "sub_4434bcbaa1864353",
+      "replacement_submission_id_hits": [],
+      "same_replacement_relation_kind_canonical_hits": []
+    },
+    "local_observation_id_not_colliding": {
+      "status": "pass",
+      "replacement_local_observation_id": "relation_98266_mow_division_part_of_metro_north",
+      "local_observation_id_hits": []
+    },
+    "endpoint_shape_valid_under_packages_pipeline_src_records_relations_ts": {
+      "status": "pass",
+      "original_endpoint_shape_issue": "Relation kind implemented_by expects project -> entity, got entity -> entity.",
+      "replacement_endpoint_shape_issue": null,
+      "replacement_relation_kind": "part_of_agency",
+      "replacement_subject_kind": "entity",
+      "replacement_object_kind": "entity",
+      "current_valid_part_of_agency_subject_kinds": [
+        "entity"
+      ],
+      "current_valid_part_of_agency_object_kinds": [
+        "entity"
+      ]
+    },
+    "endpoint_local_ids_known": {
+      "status": "pass",
+      "source_id": "meeting_doc_98266",
+      "known_local_observation_ids": [
+        {
+          "local_observation_id": "entity_98266_metro_north_railroad",
+          "submission_id": "sub_89a60cd01dc9328f",
+          "observation_kind": "entity",
+          "validation_state": "accepted",
+          "journal": "data/submissions/2026-06-22T22-06-40-014Z_413689-e7b402a9_ingest_meeting-doc-98266.jsonl:3"
+        },
+        {
+          "local_observation_id": "entity_98266_maintenance_of_way_division",
+          "submission_id": "sub_a7146060c9bcd9b5",
+          "observation_kind": "entity",
+          "validation_state": "accepted",
+          "journal": "data/submissions/2026-06-22T22-06-40-014Z_413689-e7b402a9_ingest_meeting-doc-98266.jsonl:4"
+        }
+      ]
+    },
+    "evidence_supports_agency_hierarchy_semantics": {
+      "status": "pass",
+      "summary": "The cited source blocks place a Maintenance of Way Division heading immediately above a Metro-North Railroad line naming Track, Structures, Stations and Facilities. The accepted entity record for Maintenance of Way Division also carries organization: Metro-North Railroad. This supports part_of_agency hierarchy semantics and does not support implemented_by project semantics.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_98266",
+          "evidence_id": "meeting_doc_98266#p001_c0002",
+          "source_path": "raw/sources/meeting_doc_98266/blocks.jsonl",
+          "page_number": 1,
+          "block_id": "p001_c0002",
+          "text_sha256": "sha256:7817a6c8e543d52e23718a922af9850fdc285ddb3fde2c7d833a2723af0b67ab",
+          "text_source": "raw_text",
+          "source_quote": "2022 3 rd Quarter Maintenance of Way Division"
+        },
+        {
+          "source_id": "meeting_doc_98266",
+          "evidence_id": "meeting_doc_98266#p001_c0003",
+          "source_path": "raw/sources/meeting_doc_98266/blocks.jsonl",
+          "page_number": 1,
+          "block_id": "p001_c0003",
+          "text_sha256": "sha256:f510e845c89c5e83cbcbe20a049885a745c20208c315154ef35f246f5155852c",
+          "text_source": "raw_text",
+          "source_quote": "Track, Structures, Stations and Facilities Metro-North Railroad"
+        }
+      ]
+    },
+    "no_generated_files_edited": {
+      "status": "pass_for_this_task",
+      "note": "The shared worktree already contains generated-output and other edits owned by others. This task writes only data/review_notes/codex-relation-cleanup-batch050-prep.json and does not edit retired.json, submissions, canonical JSONL, materialized data, wiki output, LOG, manifest, code, or generated files."
+    }
+  },
+  "local_validation": {
+    "clean": true,
+    "tooling": "Read-only rg/jq/sed inspection plus bun --eval createSubmissionEntry/relationEndpointIssues/relationEndpointShapeIssue dry-run using direct local imports; no appendSubmission, materialize, export-jsonl, full validate, DB publish, provider-backed command, post-ingest LLM harness, generated-output command, or durable data edit run.",
+    "summary": {
+      "original_submission_id": "sub_1d0e25e441bdce13",
+      "replacement_submission_id": "sub_4434bcbaa1864353",
+      "replacement_tool_args_sha256": "sha256:4434bcbaa18643538b5e901577837dbb6bcea0cf455bb7a1b8b07ca158faf5a6",
+      "replacement_validation_state": "accepted",
+      "replacement_validation_issues": [],
+      "relation_endpoint_issues": []
+    }
+  },
+  "prepared_changes": [
+    {
+      "original": {
+        "submission_id": "sub_1d0e25e441bdce13",
+        "run_id": "2026-06-22T22-06-40-014Z_413689-e7b402a9_ingest_meeting-doc-98266",
+        "journal": "data/submissions/2026-06-22T22-06-40-014Z_413689-e7b402a9_ingest_meeting-doc-98266.jsonl:51",
+        "record_id": "relation_98266-mow-division-programs",
+        "source_id": "meeting_doc_98266",
+        "local_observation_id": "relation_98266_mow_division_programs",
+        "label": "Maintenance of Way Division oversees track programs",
+        "malformed_shape": "implemented_by entity -> entity",
+        "tool_args": {
+          "source_id": "meeting_doc_98266",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_98266_mow_division_programs",
+          "label": "Maintenance of Way Division oversees track programs",
+          "raw_text": "2022 3rd Quarter Maintenance of Way Division",
+          "payload": {
+            "relation_kind": "implemented_by",
+            "subject_local_observation_id": "entity_98266_maintenance_of_way_division",
+            "object_local_observation_id": "entity_98266_metro_north_railroad",
+            "description": "Maintenance of Way Division implements track programs for Metro-North Railroad",
+            "relation_family": "agency_role"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_98266",
+              "evidence_id": "meeting_doc_98266#p001_c0002",
+              "source_path": "raw/sources/meeting_doc_98266/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0002",
+              "text_sha256": "sha256:7817a6c8e543d52e23718a922af9850fdc285ddb3fde2c7d833a2723af0b67ab",
+              "text_source": "raw_text",
+              "source_quote": "2022 3 rd Quarter Maintenance of Way Division"
+            },
+            {
+              "source_id": "meeting_doc_98266",
+              "evidence_id": "meeting_doc_98266#p001_c0003",
+              "source_path": "raw/sources/meeting_doc_98266/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0003",
+              "text_sha256": "sha256:f510e845c89c5e83cbcbe20a049885a745c20208c315154ef35f246f5155852c",
+              "text_source": "raw_text",
+              "source_quote": "Track, Structures, Stations and Facilities Metro-North Railroad"
+            }
+          ]
+        },
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_1d0e25e441bdce13",
+          "reason": "Codex relation cleanup batch050 replaces malformed implemented_by entity -> entity relation relation_98266-mow-division-programs with validator-compatible part_of_agency entity -> entity relation preserving the Maintenance of Way Division / Metro-North Railroad hierarchy evidence.",
+          "source_decision": "data/review_notes/codex-relation-cleanup-batch050-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch050",
+          "reviewed_at": "2026-06-23T00:00:00Z"
+        },
+        "reason": "The cited blocks support agency hierarchy, not project implementation.",
+        "expected_endpoint_shape_delta": -1,
+        "confidence": "high"
+      },
+      "replacement": {
+        "run_id": "2026-06-23_codex_relation_cleanup_batch050",
+        "journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch050.jsonl",
+        "id_generation": {
+          "method": "createSubmissionEntry(runId, rawToolArgs, '2026-06-23T00:00:00.000Z') with relationEndpointIssues added; stable hash is over normalized tool_args.",
+          "deterministic_submission_id": "sub_4434bcbaa1864353",
+          "tool_args_sha256": "sha256:4434bcbaa18643538b5e901577837dbb6bcea0cf455bb7a1b8b07ca158faf5a6",
+          "conductor_required": false
+        },
+        "replacement_entries": [
+          {
+            "role": "corrected relation replacement",
+            "tool_name": "submit_observation",
+            "review_state": "accepted",
+            "deterministic_submission_id": "sub_4434bcbaa1864353",
+            "tool_args_sha256": "sha256:4434bcbaa18643538b5e901577837dbb6bcea0cf455bb7a1b8b07ca158faf5a6",
+            "proposed_relation_kind": "part_of_agency",
+            "proposed_endpoint_shape": "entity -> entity",
+            "entry": {
+              "submission_id": "sub_4434bcbaa1864353",
+              "run_id": "2026-06-23_codex_relation_cleanup_batch050",
+              "submitted_at": "2026-06-23T00:00:00.000Z",
+              "tool_args_sha256": "sha256:4434bcbaa18643538b5e901577837dbb6bcea0cf455bb7a1b8b07ca158faf5a6",
+              "schema_version": 2,
+              "tool_args": {
+                "source_id": "meeting_doc_98266",
+                "observation_kind": "relation",
+                "local_observation_id": "relation_98266_mow_division_part_of_metro_north",
+                "label": "Maintenance of Way Division part of Metro-North Railroad",
+                "raw_text": "2022 3rd Quarter Maintenance of Way Division; Track, Structures, Stations and Facilities Metro-North Railroad",
+                "payload": {
+                  "relation_kind": "part_of_agency",
+                  "subject_local_observation_id": "entity_98266_maintenance_of_way_division",
+                  "object_local_observation_id": "entity_98266_metro_north_railroad",
+                  "description": "Maintenance of Way Division is presented as part of the Metro-North Railroad Track, Structures, Stations and Facilities context.",
+                  "relation_family": "organization_hierarchy"
+                },
+                "evidence_refs": [
+                  {
+                    "source_id": "meeting_doc_98266",
+                    "evidence_id": "meeting_doc_98266#p001_c0002",
+                    "source_path": "raw/sources/meeting_doc_98266/blocks.jsonl",
+                    "page_number": 1,
+                    "block_id": "p001_c0002",
+                    "text_sha256": "sha256:7817a6c8e543d52e23718a922af9850fdc285ddb3fde2c7d833a2723af0b67ab",
+                    "text_source": "raw_text",
+                    "source_quote": "2022 3 rd Quarter Maintenance of Way Division"
+                  },
+                  {
+                    "source_id": "meeting_doc_98266",
+                    "evidence_id": "meeting_doc_98266#p001_c0003",
+                    "source_path": "raw/sources/meeting_doc_98266/blocks.jsonl",
+                    "page_number": 1,
+                    "block_id": "p001_c0003",
+                    "text_sha256": "sha256:f510e845c89c5e83cbcbe20a049885a745c20208c315154ef35f246f5155852c",
+                    "text_source": "raw_text",
+                    "source_quote": "Track, Structures, Stations and Facilities Metro-North Railroad"
+                  }
+                ]
+              },
+              "validation": {
+                "state": "accepted",
+                "issues": []
+              }
+            },
+            "raw_tool_args_for_replay": {
+              "source_id": "meeting_doc_98266",
+              "observation_kind": "relation",
+              "local_observation_id": "relation_98266_mow_division_part_of_metro_north",
+              "label": "Maintenance of Way Division part of Metro-North Railroad",
+              "raw_text": "2022 3rd Quarter Maintenance of Way Division; Track, Structures, Stations and Facilities Metro-North Railroad",
+              "payload": {
+                "relation_kind": "part_of_agency",
+                "subject_local_observation_id": "entity_98266_maintenance_of_way_division",
+                "object_local_observation_id": "entity_98266_metro_north_railroad",
+                "description": "Maintenance of Way Division is presented as part of the Metro-North Railroad Track, Structures, Stations and Facilities context."
+              },
+              "evidence_refs": [
+                {
+                  "source_id": "meeting_doc_98266",
+                  "evidence_id": "meeting_doc_98266#p001_c0002",
+                  "block_id": "p001_c0002",
+                  "source_quote": "2022 3 rd Quarter Maintenance of Way Division"
+                },
+                {
+                  "source_id": "meeting_doc_98266",
+                  "evidence_id": "meeting_doc_98266#p001_c0003",
+                  "block_id": "p001_c0003",
+                  "source_quote": "Track, Structures, Stations and Facilities Metro-North Railroad"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "apply_instructions": {
+    "conductor_can_apply_immediately": true,
+    "steps": [
+      "Add the proposed_retired_json_entry for sub_1d0e25e441bdce13 to data/submission-overrides/retired.json.",
+      "Append the replacement entry sub_4434bcbaa1864353 to data/submissions/2026-06-23_codex_relation_cleanup_batch050.jsonl.",
+      "Do not change relation endpoint-shape rules for implemented_by."
+    ]
+  },
+  "commands_run": [
+    "pwd && rg -n \"sub_1d0e25e441bdce13|relation049|next23|createSubmissionEntry|part_of_agency|implemented_by\" data/review_notes packages data -g '!data/materialized/**' -g '!data/transcripts/**'",
+    "sed -n '1,240p' packages/pipeline/src/records/relations.ts",
+    "git status --short",
+    "rg -n \"sub_1d0e25e441bdce13\" data/submissions data/submission-overrides data/review_notes data/canonical/relations.jsonl",
+    "sed -n '1,260p' data/review_notes/codex-relation-rule-or-data-next23-prep.json",
+    "sed -n '160,280p' packages/pipeline/src/records/relations.ts && rg -n \"function createSubmissionEntry|const createSubmissionEntry|createSubmissionEntry\" packages -S",
+    "test -f data/review_notes/codex-relation-cleanup-batch050-prep.json && sed -n '1,240p' data/review_notes/codex-relation-cleanup-batch050-prep.json || true",
+    "sed -n '360,470p' packages/pipeline/src/records/submissions.ts",
+    "sed -n '1,120p' packages/pipeline/src/records/submissions.ts",
+    "sed -n '120,260p' packages/pipeline/src/records/submissions.ts",
+    "jq -c 'select(.record_id==\"entity_98266-maintenance-of-way-division\" or .record_id==\"entity_metro-north-railroad\")' data/canonical/entities.jsonl && jq -c 'select(.block_id==\"p001_c0002\" or .block_id==\"p001_c0003\")' raw/sources/meeting_doc_98266/blocks.jsonl",
+    "rg -n \"relationEndpointShapeIssue|relationEndpointIssues|export .*RELATION_ENDPOINT\" packages/pipeline/src/records/relations.ts packages/pipeline/src/records/submissions.ts",
+    "sed -n '280,430p' packages/pipeline/src/records/relations.ts",
+    "find . -maxdepth 3 -name tsconfig.json -o -name package.json | sed -n '1,120p'",
+    "cat package.json",
+    "sed -n '240,340p' data/review_notes/codex-relation-cleanup-batch049-prep.json",
+    "sed -n '1,120p' data/review_notes/codex-relation-cleanup-batch049-prep.json",
+    "sed -n '1,120p' data/review_notes/codex-relation-cleanup-batch048-prep.json",
+    "sed -n '1,80p' data/submission-overrides/retired.json",
+    "rg -n \"relation_98266_mow_division_part_of_metro_north|sub_1d0e25e441bdce13|part_of_agency.*entity_98266_maintenance_of_way_division|entity_98266_maintenance_of_way_division.*entity_98266_metro_north_railroad\" data/submissions data/canonical/relations.jsonl data/submission-overrides/retired.json data/review_notes -g '*.json' -g '*.jsonl'",
+    "bun --eval '<createSubmissionEntry dry-run for relation050 replacement using direct local imports; no appendSubmission>'"
+  ],
+  "commands_not_run": [
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts materialize",
+    "export-jsonl",
+    "DB publish",
+    "canonicalize",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "any --profile/provider-backed command",
+    "appendSubmission"
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch061-prep",
+  "batch_id": "relation061",
+  "created_at": "2026-06-23T02:49:34Z",
+  "author": "codex",
+  "scope": "Codex-only relation endpoint-shape cleanup prep; deterministic inspection only; no durable relation inputs mutated",
+  "baseline": {
+    "reported_after": "relation060",
+    "reported_unexpected_relation_endpoint_shape": 3,
+    "remaining_visible_records": [
+      "relation_meeting-doc-121091-psa-bronx-stations",
+      "relation_procurement-metronorth-circuit-breakers",
+      "relation_rel-ace-starts-at-manhattan-brooklyn"
+    ]
+  },
+  "summary_counts": {
+    "prepared_change_count": 3,
+    "retire_only_count": 3,
+    "retire_replace_count": 0,
+    "proposed_replacement_submission_count": 0,
+    "expected_unexpected_relation_endpoint_shape_delta": -3,
+    "expected_remaining_unexpected_relation_endpoint_shape_after_apply": 0
+  },
+  "guard_checks": {
+    "retired_json_not_edited": true,
+    "submission_journals_not_edited": true,
+    "canonical_jsonl_not_edited": true,
+    "canonical_db_not_edited": true,
+    "generated_outputs_not_touched": true,
+    "log_not_edited": true,
+    "replacement_journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch061.jsonl",
+    "replacement_journal_action": "none proposed",
+    "existing_retirement_hits_for_selected_submissions": [],
+    "prior_prep_artifact_hits": [
+      {
+        "submission_id": "sub_a0a60967ae6b4493",
+        "hits": [
+          "data/review_notes/codex-relation-rule-or-data-next19-prep.json",
+          "data/review_notes/codex-relation-rule-or-data-next20-prep.json",
+          "data/review_notes/codex-relation-rule-or-data-next21-prep.json"
+        ],
+        "note": "Prior rule/data triage identified it as a data error, but no cleanup prep artifact retired it."
+      },
+      {
+        "submission_id": "sub_724ffb54454bb964",
+        "hits": [
+          "data/review_notes/codex-relation-rule-or-data-next20-prep.json",
+          "data/review_notes/codex-relation-cleanup-batch030-prep.json"
+        ],
+        "note": "Prior cleanup batch030 explicitly deferred it because the source did not name a clean route target."
+      },
+      {
+        "submission_id": "sub_700e95b86f5f821d",
+        "hits": [],
+        "note": "No prior cleanup prep artifact found for this submission."
+      }
+    ],
+    "current_validator_rules_checked": {
+      "file": "packages/pipeline/src/records/relations.ts",
+      "serves_route": "project|corridor -> route",
+      "operated_by": "project|route|corridor -> entity",
+      "operates_on_corridor": "route|entity -> corridor"
+    },
+    "commands_not_run": [
+      "external/provider LLM commands",
+      "canonicalize*",
+      "campaign dedup",
+      "identity-review",
+      "write",
+      "ask",
+      "schema",
+      "ontology-normalize",
+      "--profile/provider commands",
+      "materialize",
+      "export",
+      "validate"
+    ]
+  },
+  "prepared_changes": [
+    {
+      "record_id": "relation_meeting-doc-121091-psa-bronx-stations",
+      "source_id": "meeting_doc_121091",
+      "submission_id": "sub_724ffb54454bb964",
+      "classification": "retire_only",
+      "current_shape": {
+        "relation_kind": "serves_route",
+        "subject_id": "project_annual-2021-penn-station-access",
+        "subject_kind": "project",
+        "object_id": "entity_mta-metro-north-2015-webster-map",
+        "object_kind": "entity",
+        "validator_result": "unexpected_relation_endpoint_shape: serves_route expects project|corridor -> route, got project -> entity"
+      },
+      "source_evidence": {
+        "evidence_id": "meeting_doc_121091#p002_c0004",
+        "source_path": "raw/sources/meeting_doc_121091/blocks.jsonl",
+        "page_number": 2,
+        "block_id": "p002_c0004",
+        "text_sha256": "sha256:17906d6c0e0f3606e4b04323e0b39fc4ab14f01ff65ff8c139496e27607bc2cc",
+        "short_quote": "thanked the Metro-North workers who got service back up and running quickly",
+        "evidence_read": "The cited public-comment block discusses Metro-North storm recovery, resiliency funding, congestion pricing, and fare increases. It does not mention Penn Station Access, Bronx stations, or a route endpoint."
+      },
+      "existing_coverage": [
+        {
+          "record_id": "relation_batch030-penn-station-access-serves-new-haven-line",
+          "relation_kind": "serves_route",
+          "endpoint_shape": "project -> route",
+          "note": "Existing valid route-scope coverage links Penn Station Access to the New Haven Line."
+        },
+        {
+          "record_ids": [
+            "relation_meeting-doc-104796-psa-metronorth",
+            "relation_meeting-doc-115181-psa-metro-north",
+            "relation_meeting-doc-115186-project-implemented-by-metro-north",
+            "relation_meeting-doc-127701-psa-metronorth",
+            "relation_meeting-doc-147251-psa-mnr",
+            "relation_mnpsa-serves-metro-north",
+            "relation_psa-implemented-by-metro-north"
+          ],
+          "relation_kind": "implemented_by",
+          "endpoint_shape": "project -> entity",
+          "note": "Existing valid agency-role coverage already associates Penn Station Access with Metro-North in better-supported sources."
+        }
+      ],
+      "why_no_replacement": "A serves_route replacement would require a route object not named in the cited block. A project -> entity replacement would duplicate existing valid Metro-North/PSA coverage and would still not be supported by this evidence block.",
+      "proposed_retired_json_entry": {
+        "submission_id": "sub_724ffb54454bb964",
+        "reason": "Codex relation cleanup batch061 retires malformed serves_route project -> entity relation relation_meeting-doc-121091-psa-bronx-stations. serves_route requires a route object, but the submitted object is a Metro-North entity and the cited meeting_doc_121091#p002_c0004 public-comment block does not mention Penn Station Access, Bronx stations, or a route endpoint. Existing valid PSA route and Metro-North role coverage remains in other records.",
+        "source_decision": "data/review_notes/codex-relation-cleanup-batch061-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch061",
+        "reviewed_at": "2026-06-23T02:49:34Z"
+      },
+      "proposed_replacement_submission_json": null
+    },
+    {
+      "record_id": "relation_procurement-metronorth-circuit-breakers",
+      "source_id": "meeting_doc_102686",
+      "submission_id": "sub_700e95b86f5f821d",
+      "classification": "retire_only",
+      "current_shape": {
+        "relation_kind": "operated_by",
+        "subject_id": "treatment_meeting-doc-circuit-breaker-replacement-new-haven-line",
+        "subject_kind": "treatment_component",
+        "object_id": "entity_mta-metro-north-2015-webster-map",
+        "object_kind": "entity",
+        "validator_result": "unexpected_relation_endpoint_shape: operated_by expects project|route|corridor -> entity, got treatment_component -> entity"
+      },
+      "source_evidence": {
+        "evidence_id": "meeting_doc_102686#p012_c0012",
+        "source_path": "raw/sources/meeting_doc_102686/blocks.jsonl",
+        "page_number": 12,
+        "block_id": "p012_c0012",
+        "text_sha256": "sha256:6868108574bddaa8eb1dd0672d7b4aab17a8fe12d7f7f4b6311464c9ea4a921b",
+        "short_quote": "Approval was requested to award a five year non-competitive estimated quantities contract",
+        "evidence_read": "The block states that Metro-North procurement requested approval to award a contract to Powell Electric Systems. It supports the treatment/procurement record, but not a treatment_component operated_by Metro-North relation."
+      },
+      "existing_coverage": [
+        {
+          "record_id": "treatment_meeting-doc-circuit-breaker-replacement-new-haven-line",
+          "record_kind": "treatment_component",
+          "display_name": "New Haven Line Substation Circuit Breaker Replacement",
+          "note": "The accepted treatment component already preserves the source-backed New Haven Line substation circuit-breaker replacement scope, locations, and procurement nature."
+        }
+      ],
+      "why_no_replacement": "A validator-compatible operated_by replacement would need a project, route, or corridor subject. The source currently has only a treatment_component endpoint for this procurement, and creating a broader project endpoint is outside this bounded relation-only prep. A relation to Powell would also require a resolved Powell entity endpoint not present in the current canonical same-source endpoint set.",
+      "proposed_retired_json_entry": {
+        "submission_id": "sub_700e95b86f5f821d",
+        "reason": "Codex relation cleanup batch061 retires malformed operated_by treatment_component -> entity relation relation_procurement-metronorth-circuit-breakers. operated_by requires a project, route, or corridor subject, but the submitted subject is a treatment_component. The cited meeting_doc_102686#p012_c0012 block supports a Metro-North procurement contract fact already preserved on the treatment component, and it does not provide a high-confidence validator-compatible replacement relation.",
+        "source_decision": "data/review_notes/codex-relation-cleanup-batch061-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch061",
+        "reviewed_at": "2026-06-23T02:49:34Z"
+      },
+      "proposed_replacement_submission_json": null
+    },
+    {
+      "record_id": "relation_rel-ace-starts-at-manhattan-brooklyn",
+      "source_id": "meeting_doc_201621",
+      "submission_id": "sub_a0a60967ae6b4493",
+      "classification": "retire_only",
+      "current_shape": {
+        "relation_kind": "operates_on_corridor",
+        "subject_id": "project_ace-automated-camera-enforcement",
+        "subject_kind": "project",
+        "object_id": "entity_mta-entity-update-2025",
+        "object_kind": "entity",
+        "validator_result": "unexpected_relation_endpoint_shape: operates_on_corridor expects route|entity -> corridor, got project -> entity"
+      },
+      "source_evidence": {
+        "evidence_id": "meeting_doc_201621#p029_c0006",
+        "source_path": "raw/sources/meeting_doc_201621/blocks.jsonl",
+        "page_number": 29,
+        "block_id": "p029_c0006",
+        "text_sha256": "sha256:5713360354f1823a3e6ecbbeffce73332aa7e8c3860cbdd7b74e5f9741680861",
+        "short_quote": "The ABLE program began on a small scale with 123 buses across 8 routes",
+        "evidence_read": "The block states ABLE/ACE rollout facts: initial 123 buses across 8 routes in Manhattan and Brooklyn, first M15 SBS launch in October 2019, 2023 legislative expansion, and growth to 58 routes."
+      },
+      "existing_coverage": [
+        {
+          "record_id": "relation_rel-ace-has-event-able-established",
+          "relation_kind": "has_timeline_event",
+          "endpoint_shape": "project -> event",
+          "note": "Same-source valid relation already links ACE to the ABLE Program Established event."
+        },
+        {
+          "record_id": "relation_rel-ace-has-event-m15-launch",
+          "relation_kind": "has_timeline_event",
+          "endpoint_shape": "project -> event",
+          "note": "Same-source valid relation already links ACE to the M15 SBS ACE/ABLE launch event using the same p029_c0006 block."
+        },
+        {
+          "record_id": "relation_rel-ace-has-event-leg-expansion-2023",
+          "relation_kind": "has_timeline_event",
+          "endpoint_shape": "project -> event",
+          "note": "Same-source valid relation covers the 2023 legislative expansion context from the same ACE section."
+        },
+        {
+          "record_id_prefix": "relation_rel-ace-serves-*",
+          "relation_kind": "serves_route",
+          "endpoint_shape": "project -> route",
+          "note": "A broader ACE source already carries route-level coverage for many concrete ACE routes; this malformed row's borough/entity endpoint does not add a valid corridor fact."
+        }
+      ],
+      "why_no_replacement": "The cited phrase names routes and boroughs, not a corridor record. Same-source project -> event relations already preserve the establishment and launch semantics, so adding a looser replacement would duplicate valid coverage or invent a corridor endpoint.",
+      "proposed_retired_json_entry": {
+        "submission_id": "sub_a0a60967ae6b4493",
+        "reason": "Codex relation cleanup batch061 retires malformed operates_on_corridor project -> entity relation relation_rel-ace-starts-at-manhattan-brooklyn. operates_on_corridor requires route|entity -> corridor, but the submitted endpoints are the ACE project and the MTA entity. The cited meeting_doc_201621#p029_c0006 block supports ACE/ABLE rollout facts already covered by valid same-source has_timeline_event relations, not a project-to-entity corridor relation.",
+        "source_decision": "data/review_notes/codex-relation-cleanup-batch061-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch061",
+        "reviewed_at": "2026-06-23T02:49:34Z"
+      },
+      "proposed_replacement_submission_json": null
+    }
+  ],
+  "expected_delta": {
+    "baseline_unexpected_relation_endpoint_shape": 3,
+    "selected_rows_cleared": 3,
+    "replacement_rows_added": 0,
+    "replacement_rows_expected_to_be_endpoint_shape_valid": 0,
+    "unexpected_relation_endpoint_shape_delta": -3,
+    "expected_remaining_after_cleanup": 0,
+    "caveat": "Assumes no concurrent relation endpoint-shape work lands before conductor applies relation061."
+  },
+  "apply_recommendation": {
+    "conductor_action": "retire_only_submissions",
+    "retirements_target": "data/submission-overrides/retired.json",
+    "retired_submission_ids": [
+      "sub_724ffb54454bb964",
+      "sub_700e95b86f5f821d",
+      "sub_a0a60967ae6b4493"
+    ],
+    "replacement_journal": null,
+    "replacement_submission_ids": [],
+    "recommended_audit_reason": "Retire three remaining malformed endpoint-shape relations without replacement because source-backed facts are either unsupported by the cited block or already covered by valid canonical records."
+  },
+  "commands_run_read_only": [
+    "pwd && rg -n selected relation ids in data/canonical/relations.jsonl data/submissions data/submission-overrides/retired.json data/review_notes",
+    "git status --short",
+    "jq read of data/submission-overrides/retired.json structure",
+    "sed reads of prior relation cleanup and rule-or-data prep artifacts",
+    "rg searches for selected submission ids and record ids in data/review_notes, data/submissions, and retired.json",
+    "sed read of packages/pipeline/src/records/relations.ts endpoint rules",
+    "sqlite3 read-only endpoint-kind joins for selected relation ids",
+    "sqlite3 read-only same-source endpoint and existing-coverage checks",
+    "jq targeted source block reads for meeting_doc_121091, meeting_doc_102686, and meeting_doc_201621",
+    "date -u +%Y-%m-%dT%H:%M:%SZ"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T17-48-04-600Z_1496766-6452eb74_ingest_2009-05-13-brt-1st2nd-cac1",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-10T21:04:08.325Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "route_m15_2009_05_13_self",
+        "local_observation_id": "route_m15_2009_05_13",
+        "decision": "new",
+        "rationale": "The observation's base_record_id route_m15-local-limited is the same as its own registry record. The registry record already captures this observation under alias route_m15-2009-05-13 and source 2009_05_13_brt_1st2nd_cac1. No different record is a better match; linking to self is prohibited.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p021_c0005",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p021_c0006",
+            "source_quote": ""
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T21-03-44-590Z_1774507-034fb115_canonicalize_2026-06-10t17-48-04-600z-1496766-6452eb74-ingest-2009-05-13-brt-1st2nd-cac1-route-identity"
+}

@@ -1,0 +1,59 @@
+{
+  "run_id": "2026-06-10T23-09-24-918Z_1976810-40faa314_ingest_2013-02-sbs-webster-bx-cb1",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T03:21:22.587Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "new-entity-mta-nyct-2013-02-cb1",
+        "local_observation_id": "entity_mta_nyct_2013_02_cb1",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_mta-nyct, which has matching entity_name (MTA New York City Transit), entity_type (agency), and already includes source 2013_02_sbs_webster_bx_cb1 in its registry card. The closest match IS its own base_record_id, so new per identity rules.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p001_c0001",
+            "source_quote": "New York City Transit"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p002_c0003",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "new-entity-nyc-dot-2013-02-cb1",
+        "local_observation_id": "entity_nyc_dot_2013_02_cb1",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_nyc-dot, which has matching entity_name (New York City Department of Transportation), entity_type (agency), and already includes source 2013_02_sbs_webster_bx_cb1 in its registry card. The closest match IS its own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p003_c0004",
+            "source_quote": "The New York City Department of Transportation logo"
+          }
+        ]
+      },
+      {
+        "decision_id": "new-entity-cb1-bronx-2013-02",
+        "local_observation_id": "entity_community_board_1_bronx_2013_02",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_community-board-1-bronx-2012-02, which has matching entity_name (Community Board 1), entity_type (community board), and already includes source 2013_02_sbs_webster_bx_cb1 in its registry card. The closest match IS its own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb1",
+            "block_id": "p001_c0003",
+            "source_quote": "Presentation to Community Board 1 | February 11, 2013"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-20-31-701Z_2111393-224c7e0c_canonicalize_2026-06-10t23-09-24-918z-1976810-40faa314-ingest-2013-02-sbs-webster-bx-cb1-entity-identity"
+}

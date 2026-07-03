@@ -1,0 +1,509 @@
+{
+  "note_id": "codex-identity-batch120-prep",
+  "batch_id": "identity120",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "scope": {
+    "description": "Codex-only deterministic identity cleanup prep for global corridor and route records only.",
+    "author": "codex",
+    "included_global_kinds": [
+      "corridor",
+      "route"
+    ],
+    "excluded_global_kinds": [
+      "entity",
+      "project",
+      "treatment_component",
+      "claim",
+      "metric_claim",
+      "event",
+      "source_gap"
+    ],
+    "selection_policy": "Only high-confidence same-route or same-corridor-geography aliases were queued. Route aliases require exact route_id match and compatible blank/local service typing; corridor aliases require exact street, limits, and borough after abbreviation normalization. Local/SBS/LTD/express/subway variant conflicts, different corridor limits, uncertain boroughs, and phase-specific false friends were excluded."
+  },
+  "batch": "identity120",
+  "global_kinds": [
+    "corridor",
+    "route"
+  ],
+  "prepared_count": 8,
+  "aliases": [
+    {
+      "kind": "route",
+      "global_kind": "route",
+      "canonical_id": "route_bx11",
+      "target_id": "route_bx11",
+      "alias_id": "route_bx11-oct2022",
+      "canonical_name": "MTA Bus Bx11",
+      "alias_name": "Bx11",
+      "reason": "Same Bronx Bx11 bus route. Both records have route_id Bx11 and Bronx borough context; the canonical record is the fuller MTA Bus Bx11 route record, while the alias is an October 2022 Bronx redesign mention with no conflicting service variant.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "route_bx11",
+          "record_kind": "route",
+          "route_id": "Bx11",
+          "display_name": "MTA Bus Bx11",
+          "borough_normalized": "bronx",
+          "source_ids": [
+            "181st_street_jun2022",
+            "bx_cb4_projects_feb052020",
+            "bx_cb5_projects_dec032019",
+            "meeting_doc_37081"
+          ],
+          "evidence_refs": [
+            "181st_street_jun2022#p016_c0006",
+            "bx_cb4_projects_feb052020#p011_c0002",
+            "bx_cb5_projects_dec032019#p020_c0003",
+            "meeting_doc_37081#p041_c0004"
+          ]
+        },
+        "alias": {
+          "record_id": "route_bx11-oct2022",
+          "record_kind": "route",
+          "route_id": "Bx11",
+          "display_name": "Bx11",
+          "borough_normalized": "bronx",
+          "source_ids": [
+            "meeting_doc_98311"
+          ],
+          "evidence_refs": [
+            "meeting_doc_98311#p005_c0008"
+          ],
+          "source_quote": "The simplified routes (Bx11, Bx24, Bx36, and Bx40/Bx42) have seen reduced travel times."
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact route_id match, same borough, and no local/SBS/LTD/express/subway conflict. Alias was absent from data/identity-overrides/merges.json and visible identity prep through identity119; pair was absent from do-not-merge."
+    },
+    {
+      "kind": "route",
+      "global_kind": "route",
+      "canonical_id": "route_bx36",
+      "target_id": "route_bx36",
+      "alias_id": "route_bx36-oct2022",
+      "canonical_name": "BX36 - ABLE route",
+      "alias_name": "Bx36",
+      "reason": "Same Bronx Bx36 bus route. The canonical record has route_id BX36/Bx36, local bus service typing, and extensive Tremont Avenue/ABLE source coverage; the alias is a Bronx redesign mention of Bx36 with the same borough and no conflicting service variant.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "route_bx36",
+          "record_kind": "route",
+          "route_id": "BX36",
+          "service_variant": "local",
+          "route_type_normalized": "local",
+          "display_name": "BX36 - ABLE route",
+          "borough_normalized": "bronx",
+          "source_ids": [
+            "ace_routes_dataset_dictionary",
+            "bus_lane_camera_report_2024",
+            "busway_tremontavenue",
+            "mta_automated_camera_enforcement",
+            "tremont_ave_bus_priority_cb5_mar2024"
+          ],
+          "evidence_refs": [
+            "ace_routes_dataset_dictionary#p001_b0049",
+            "busway_tremontavenue#p001_b0001",
+            "bus_lane_camera_report_2024#p008_c0004"
+          ],
+          "source_quote": "over 39,000 daily bus riders on the Bx36"
+        },
+        "alias": {
+          "record_id": "route_bx36-oct2022",
+          "record_kind": "route",
+          "route_id": "Bx36",
+          "display_name": "Bx36",
+          "borough_normalized": "bronx",
+          "source_ids": [
+            "meeting_doc_98311"
+          ],
+          "evidence_refs": [
+            "meeting_doc_98311#p005_c0008"
+          ],
+          "source_quote": "The simplified routes (Bx11, Bx24, Bx36, and Bx40/Bx42) have seen reduced travel times."
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: route_id differs only by case, alias has no variant/type that conflicts with canonical local bus typing, and both records are Bronx bus route records. Alias was absent from applied merges and visible identity prep through identity119; pair was absent from do-not-merge."
+    },
+    {
+      "kind": "route",
+      "global_kind": "route",
+      "canonical_id": "route_bx38-ace",
+      "target_id": "route_bx38-ace",
+      "alias_id": "route_meeting-doc-79331-bx38",
+      "canonical_name": "Bx38 bus route",
+      "alias_name": "Bx38",
+      "reason": "Same Bronx Bx38 local bus route. Both records have route_id Bx38, local service typing, and Bronx/Co-op City context; the canonical record carries the fuller ACE/automated enforcement route context.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "route_bx38-ace",
+          "record_kind": "route",
+          "route_id": "Bx38",
+          "service_variant": "local",
+          "route_type_normalized": "local",
+          "display_name": "Bx38 bus route",
+          "borough_normalized": "bronx",
+          "streets": "E Gun Hill Rd / Co-op City Blvd",
+          "source_ids": [
+            "meeting_doc_127471",
+            "meeting_doc_160441",
+            "mta_automated_camera_enforcement"
+          ],
+          "evidence_refs": [
+            "mta_automated_camera_enforcement#p001_b0001",
+            "meeting_doc_127471#p005_c0007",
+            "meeting_doc_160441#p004_c0004"
+          ],
+          "source_quote": "Bx38, E Gun Hill Rd / Co-op City Blvd"
+        },
+        "alias": {
+          "record_id": "route_meeting-doc-79331-bx38",
+          "record_kind": "route",
+          "route_id": "Bx38",
+          "service_variant": "local",
+          "route_type_normalized": "local",
+          "display_name": "Bx38",
+          "borough_normalized": "bronx",
+          "source_ids": [
+            "meeting_doc_79331"
+          ],
+          "evidence_refs": [
+            "meeting_doc_79331#p053_c0005"
+          ],
+          "supporting_source_block": {
+            "evidence_ref": "meeting_doc_79331#p053_c0004",
+            "source_quote": "Below it are blue signs for \"Bx25\" and \"Bx38\"."
+          }
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact route_id match and exact local service typing. The adjacent source figure block confirms Bx38 is present in the same page context despite the canonical evidence text emphasizing Bx25. Alias was absent from applied merges and visible identity prep through identity119; pair was absent from do-not-merge."
+    },
+    {
+      "kind": "route",
+      "global_kind": "route",
+      "canonical_id": "route_bx40-bx42-tremont-cb5-2024",
+      "target_id": "route_bx40-bx42-tremont-cb5-2024",
+      "alias_id": "route_bx40-bx42-oct2022",
+      "canonical_name": "Bx40/Bx42",
+      "alias_name": "Bx40/Bx42",
+      "reason": "Same paired Bronx Bx40/Bx42 route identity. Both records use route_id Bx40/Bx42 and Bronx borough context; the canonical record explicitly types the pair as local service on Tremont Avenue, while the alias is an October 2022 Bronx redesign mention with no conflicting variant.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "route_bx40-bx42-tremont-cb5-2024",
+          "record_kind": "route",
+          "route_id": "Bx40/Bx42",
+          "service_variant": "local",
+          "route_type_normalized": "local",
+          "display_name": "Bx40/Bx42",
+          "borough_normalized": "bronx",
+          "routes": [
+            "Bx40",
+            "Bx42"
+          ],
+          "source_ids": [
+            "tremont_ave_bus_priority_cb5_mar2024"
+          ],
+          "evidence_refs": [
+            "tremont_ave_bus_priority_cb5_mar2024#p006_c0002"
+          ]
+        },
+        "alias": {
+          "record_id": "route_bx40-bx42-oct2022",
+          "record_kind": "route",
+          "route_id": "Bx40/Bx42",
+          "display_name": "Bx40/Bx42",
+          "borough_normalized": "bronx",
+          "source_ids": [
+            "meeting_doc_98311"
+          ],
+          "evidence_refs": [
+            "meeting_doc_98311#p005_c0008"
+          ],
+          "source_quote": "The simplified routes (Bx11, Bx24, Bx36, and Bx40/Bx42) have seen reduced travel times."
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact paired route_id match and no service-variant conflict. This proposal preserves the paired Bx40/Bx42 identity and does not merge individual Bx40-only or Bx42-only records. Alias was absent from applied merges and visible identity prep through identity119; pair was absent from do-not-merge."
+    },
+    {
+      "kind": "route",
+      "global_kind": "route",
+      "canonical_id": "route_q43",
+      "target_id": "route_q43",
+      "alias_id": "route_q43-jamaica-cac2",
+      "canonical_name": "Q43 - ABLE route",
+      "alias_name": "Q43",
+      "reason": "Same Queens Q43 local bus route. Both records have route_id Q43 and Queens context; the canonical record has local service typing and multiple ABLE/automated enforcement sources, while the alias is a Jamaica CAC2 Q43 mention with no conflicting service variant.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "route_q43",
+          "record_kind": "route",
+          "route_id": "Q43",
+          "service_variant": "local",
+          "route_type_normalized": "local",
+          "display_name": "Q43 - ABLE route",
+          "borough_normalized": "queens",
+          "streets": "Sutphin Blvd / Hillside Av",
+          "source_ids": [
+            "201106_jamaica_cb12_slides",
+            "ace_routes_dataset_dictionary",
+            "bus_lane_camera_report_2024",
+            "mta_automated_camera_enforcement"
+          ],
+          "evidence_refs": [
+            "ace_routes_dataset_dictionary#p001_b0069",
+            "mta_automated_camera_enforcement#p001_b0001"
+          ],
+          "source_quote": "Q43, Sutphin Blvd / Hillside Av"
+        },
+        "alias": {
+          "record_id": "route_q43-jamaica-cac2",
+          "record_kind": "route",
+          "route_id": "Q43",
+          "display_name": "Q43",
+          "borough_normalized": "queens",
+          "source_ids": [
+            "201104_jamaica_cac2_slides"
+          ],
+          "evidence_refs": [
+            "201104_jamaica_cac2_slides#p028_c0006"
+          ],
+          "source_quote": "Q43"
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact route_id match, same borough, and alias has no conflicting local/SBS/LTD/express/subway variant. Alias was absent from applied merges and visible identity prep through identity119; pair was absent from do-not-merge."
+    },
+    {
+      "kind": "route",
+      "global_kind": "route",
+      "canonical_id": "route_q66-flushing",
+      "target_id": "route_q66-flushing",
+      "alias_id": "route_q66-oct2022",
+      "canonical_name": "Q66 bus route",
+      "alias_name": "Q66",
+      "reason": "Same Queens Q66 local bus route. Both records have route_id Q66 and Queens context; the canonical record is typed local and carries Flushing/Main Street and MTA Bus Company route context, while the alias is an October 2022 21st Street bus lane mention with no conflicting service variant.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "route_q66-flushing",
+          "record_kind": "route",
+          "route_id": "Q66",
+          "service_variant": "local",
+          "route_type_normalized": "local",
+          "display_name": "Q66 bus route",
+          "borough_normalized": "queens",
+          "operator": "MTA Bus Company",
+          "source_ids": [
+            "brt_flushing_main_st_aug2018",
+            "meeting_doc_113986",
+            "meeting_doc_121046",
+            "meeting_doc_160441"
+          ],
+          "evidence_refs": [
+            "brt_flushing_main_st_aug2018#p021_c0003",
+            "meeting_doc_113986#p015_c0011"
+          ],
+          "source_quote": "two routes (the Q66 and the B41) have seen over a 3% increase in CJTP"
+        },
+        "alias": {
+          "record_id": "route_q66-oct2022",
+          "record_kind": "route",
+          "route_id": "Q66",
+          "display_name": "Q66",
+          "borough_normalized": "queens",
+          "source_ids": [
+            "meeting_doc_98311"
+          ],
+          "evidence_refs": [
+            "meeting_doc_98311#p005_c0002"
+          ],
+          "source_quote": "New bus lanes along 21st Street in western Queens, running from Long Island City to Astoria, will serve the Q66, Q69 and Q100 routes"
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact route_id match, same borough, and no variant conflict. This does not merge Q69 or Q100 records from the same 21st Street source sentence. Alias was absent from applied merges and visible identity prep through identity119; pair was absent from do-not-merge."
+    },
+    {
+      "kind": "route",
+      "global_kind": "route",
+      "canonical_id": "route_q69-ace",
+      "target_id": "route_q69-ace",
+      "alias_id": "route_q69-oct2022",
+      "canonical_name": "Q69 (MTA Bus)",
+      "alias_name": "Q69",
+      "reason": "Same Queens Q69 local bus route. Both records have route_id Q69 and Queens context; the canonical record is typed local and carries 21st Street/Ditmars and automated enforcement context, while the alias is an October 2022 21st Street bus lane mention with no conflicting service variant.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "route_q69-ace",
+          "record_kind": "route",
+          "route_id": "Q69",
+          "service_variant": "local",
+          "route_type_normalized": "local",
+          "display_name": "Q69 (MTA Bus)",
+          "borough_normalized": "queens",
+          "streets": "21 St / Ditmars Blvd",
+          "operator": "MTA Bus Company",
+          "source_ids": [
+            "meeting_doc_160441",
+            "meeting_doc_167241",
+            "mta_automated_camera_enforcement",
+            "speeding_up_slowly_2025"
+          ],
+          "evidence_refs": [
+            "mta_automated_camera_enforcement#p001_b0001",
+            "speeding_up_slowly_2025#p014_c0007"
+          ],
+          "source_quote": "Q69, 21 St / Ditmars Blvd"
+        },
+        "alias": {
+          "record_id": "route_q69-oct2022",
+          "record_kind": "route",
+          "route_id": "Q69",
+          "display_name": "Q69",
+          "borough_normalized": "queens",
+          "source_ids": [
+            "meeting_doc_98311"
+          ],
+          "evidence_refs": [
+            "meeting_doc_98311#p005_c0002"
+          ],
+          "source_quote": "New bus lanes along 21st Street in western Queens, running from Long Island City to Astoria, will serve the Q66, Q69 and Q100 routes"
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact route_id match, same borough, and no variant conflict. This does not merge Q66 or Q100 records from the same 21st Street source sentence. Alias was absent from applied merges and visible identity prep through identity119; pair was absent from do-not-merge."
+    },
+    {
+      "kind": "corridor",
+      "global_kind": "corridor",
+      "canonical_id": "corridor_pa-ave-flatlands-to-seaview",
+      "target_id": "corridor_pa-ave-flatlands-to-seaview",
+      "alias_id": "corridor_pennsylvania-ave-brt-2017",
+      "canonical_name": "Pennsylvania Ave (Flatlands Ave to Seaview Ave)",
+      "alias_name": "Pennsylvania Avenue",
+      "reason": "Same Pennsylvania Avenue corridor segment in Brooklyn. Both records use corridor_name Pennsylvania Ave, limits Flatlands Ave to Seaview Ave, from Flatlands Ave, to Seaview Ave, and Brooklyn borough context; the alias is a December 2017 B82/Southern Brooklyn BRT source-specific duplicate.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "corridor_pa-ave-flatlands-to-seaview",
+          "record_kind": "corridor",
+          "corridor_name": "Pennsylvania Ave",
+          "limits": "Flatlands Ave to Seaview Ave",
+          "from": "Flatlands Ave",
+          "to": "Seaview Ave",
+          "display_name": "Pennsylvania Ave (Flatlands Ave to Seaview Ave)",
+          "borough_normalized": "brooklyn",
+          "source_ids": [
+            "brt_south_brooklyn_b82",
+            "brt_south_brooklyn_b82_jan2018"
+          ],
+          "evidence_refs": [
+            "brt_south_brooklyn_b82#p020_c0001",
+            "brt_south_brooklyn_b82#p020_c0002",
+            "brt_south_brooklyn_b82_jan2018#p017_c0001"
+          ],
+          "source_quote": "Existing: Pennsylvania Ave (Flatlands Ave to Seaview Ave)"
+        },
+        "alias": {
+          "record_id": "corridor_pennsylvania-ave-brt-2017",
+          "record_kind": "corridor",
+          "corridor_name": "Pennsylvania Ave",
+          "limits": "Flatlands Ave to Seaview Ave",
+          "from": "Flatlands Ave",
+          "to": "Seaview Ave",
+          "display_name": "Pennsylvania Avenue",
+          "borough_normalized": "brooklyn",
+          "source_ids": [
+            "brt_south_brooklyn_b82_dec2017"
+          ],
+          "evidence_refs": [
+            "brt_south_brooklyn_b82_dec2017#p022_c0006",
+            "brt_south_brooklyn_b82_dec2017#p023_c0001",
+            "brt_south_brooklyn_b82_dec2017#p023_c0002"
+          ],
+          "source_quote": "Pennsylvania Ave from Flatlands Ave to Seaview Ave"
+        }
+      },
+      "guard_notes": "Corridor merge guard satisfied: exact same street, exact same limits/from/to, and same Brooklyn borough. This does not merge broader Pennsylvania Avenue references or adjacent Flatlands Avenue records. Alias was absent from applied merges and visible identity prep through identity119; pair was absent from do-not-merge."
+    }
+  ],
+  "guard_summary": {
+    "global_kinds_limited_to": [
+      "corridor",
+      "route"
+    ],
+    "prepared_count": 8,
+    "applied_merge_shape_checked": "data/identity-overrides/merges.json stores alias_id -> target_id entries under aliases.<kind>.",
+    "exclusion_checks": [
+      "Selected alias IDs had no hits in data/identity-overrides/merges.json.",
+      "Selected alias IDs had no hits in visible data/review_notes/codex-identity-batch047-prep.json through codex-identity-batch117-prep.json; no visible identity118 or identity119 prep file or body mention was found.",
+      "Selected target/alias pairs had no hits in data/identity-overrides/do-not-merge.json."
+    ],
+    "route_guards": [
+      "Exact route_id match required, allowing case-only differences.",
+      "Blank route service typing was allowed only when paired with a local canonical record and no contrary local/SBS/LTD/express/subway signal.",
+      "No local/SBS/LTD/express/subway variant conflict was included.",
+      "Paired route identities such as Bx40/Bx42 were kept as paired identities and not merged with single-route records."
+    ],
+    "corridor_guards": [
+      "Exact same corridor street, limits/from/to, and borough required.",
+      "Abbreviation normalization was limited to Avenue/Ave, Street/St, and Road/Rd for deterministic matching.",
+      "Different limits, uncertain boroughs, broader geography, adjacent corridors, and phase-only labels were excluded."
+    ]
+  },
+  "command_evidence": {
+    "deterministic_only": true,
+    "commands_run": [
+      {
+        "command": "rg --files data | rg '(^data/identity-overrides/merges\\\\.json$|^data/review_notes/.*identity.*|^data/canonical/.*(corridor|route).*)'",
+        "purpose": "Locate applied merge overrides, identity prep notes, and canonical corridor/route files."
+      },
+      {
+        "command": "find data/review_notes -maxdepth 1 -type f -name '*identity*' | sort",
+        "purpose": "Confirm visible identity prep files; highest visible prep file was codex-identity-batch117-prep.json."
+      },
+      {
+        "command": "jq '.aliases | type, length, (to_entries[0:5])' data/identity-overrides/merges.json",
+        "purpose": "Confirm merges.json alias map shape and inspect corridor/route alias_id -> target_id entries."
+      },
+      {
+        "command": "rg -n 'identity(118|119)|batch118|batch119|identity-batch118|identity-batch119' data/review_notes data/identity-overrides",
+        "purpose": "Check for visible identity118/identity119 prepared or applied references; no hits."
+      },
+      {
+        "command": "node read-only candidate grouping over data/canonical/routes.jsonl and data/canonical/corridors.jsonl",
+        "purpose": "Group route records by route_id, borough, and compatible service variant; group corridor records by normalized corridor_name, limits, and borough; exclude aliases already in merges or prior visible prep."
+      },
+      {
+        "command": "jq -c select(.record_id in selected ids) over data/canonical/routes.jsonl and data/canonical/corridors.jsonl",
+        "purpose": "Inspect selected target/alias record payloads, source_ids, and evidence_refs."
+      },
+      {
+        "command": "rg -n selected block ids and route/corridor literals in raw/sources/*/blocks.jsonl",
+        "purpose": "Confirm source-block support for selected evidence, including Bx38 adjacent figure evidence and Pennsylvania Avenue limits."
+      },
+      {
+        "command": "node read-only selected alias exclusion check against merges.json, prior visible identity prep files through identity119, and do-not-merge.json",
+        "purpose": "Confirm selected aliases were not already applied/prepared and selected pairs were not do-not-merge pairs."
+      }
+    ]
+  },
+  "forbidden_commands_not_run": [
+    "canonicalize",
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema-propose",
+    "ontology-normalize-run",
+    "ingest --profile",
+    "write --profile",
+    "materialize",
+    "validate",
+    "export-jsonl",
+    "DB publish",
+    "DB repair"
+  ]
+}

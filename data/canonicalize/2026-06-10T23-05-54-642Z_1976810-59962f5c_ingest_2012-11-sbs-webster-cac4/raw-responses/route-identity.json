@@ -1,0 +1,119 @@
+{
+  "run_id": "2026-06-10T23-05-54-642Z_1976810-59962f5c_ingest_2012-11-sbs-webster-cac4",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T03:06:19.737Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "d-bx41-sbs-webster-2012-new",
+        "local_observation_id": "route_bx41_sbs_webster_2012",
+        "decision": "new",
+        "rationale": "Observation's base_record_id route_webster-ave-sbs already exists in registry with matching payload: Bx41 SBS, Bronx, select_bus_service variant. Registry aliases include route_bx41-sbs-2012-11-webster linking this 2012-11 CAC4 source. No different record is a closer match.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p008_c0002",
+            "source_quote": "Bx41 Select Bus Service"
+          }
+        ]
+      },
+      {
+        "decision_id": "d-bx41-local-webster-2012-new",
+        "local_observation_id": "route_bx41_local_webster_2012",
+        "decision": "new",
+        "rationale": "Observation's base_record_id route_bx41-local-webster-2012 exists in registry with matching Bx41 Local, local variant, Bronx. Exact record match; no link needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p031_c0002",
+            "source_quote": "Bx41 Local"
+          }
+        ]
+      },
+      {
+        "decision_id": "d-bx15-local-webster-2012-new",
+        "local_observation_id": "route_bx15_local_webster_2012",
+        "decision": "new",
+        "rationale": "Observation's base_record_id route_bx15-ace exists in registry (Bx15, local, Bronx) with alias route_bx15-local-webster-2012. Bx15 local variant distinct from Bx15 LTD. Already correctly resolved.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p032_c0002",
+            "source_quote": "Bx15 Local"
+          }
+        ]
+      },
+      {
+        "decision_id": "d-bx15-ltd-webster-2012-new",
+        "local_observation_id": "route_bx15_ltd_webster_2012",
+        "decision": "new",
+        "rationale": "Observation's base_record_id route_bx15-ltd-webster-2012 exists in registry with matching Bx15 LTD, limited, Bronx. Exact record match.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p032_c0002",
+            "source_quote": "Bx15 LTD"
+          }
+        ]
+      },
+      {
+        "decision_id": "d-bx55-limited-webster-2012-new",
+        "local_observation_id": "route_bx55_limited_webster_2012",
+        "decision": "new",
+        "rationale": "Observation's base_record_id route_bx55-limited-webster-2012 exists in registry with matching Bx55 Limited, limited, Bronx. Exact record match.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p029_c0003",
+            "source_quote": "Bx55 Limited"
+          }
+        ]
+      },
+      {
+        "decision_id": "d-bx34-webster-2012-new",
+        "local_observation_id": "route_bx34_webster_2012",
+        "decision": "new",
+        "rationale": "Observation's base_record_id route_bx34 exists in registry (Bx34, local, Bronx) with alias route_bx34-webster-2012. Already correctly resolved.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p029_c0007",
+            "source_quote": "Bx34 Local"
+          }
+        ]
+      },
+      {
+        "decision_id": "d-sbs-laguardia-2012-new",
+        "local_observation_id": "route_sbs_to_laguardia_2012",
+        "decision": "new",
+        "rationale": "Observation's base_record_id route_sbs-to-laguardia-2012 exists in registry with matching SBS to LGA, SBS variant, boroughs Bronx+Queens. Exact record match; distinct from M60 SBS (route_125th-laguardia-sbs).",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p030_c0003",
+            "source_quote": "SBS to LaGuardia Airport"
+          }
+        ]
+      },
+      {
+        "decision_id": "d-bx41-ltd-webster-2012-new",
+        "local_observation_id": "route_bx41_ltd_webster_2012",
+        "decision": "new",
+        "rationale": "Observation's base_record_id route_bx41-ltd-webster-2012 exists in registry with matching Bx41 Limited, limited, Bronx. Exact record match.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p029_c0003",
+            "source_quote": "Bx41 Limited"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-04-53-325Z_2111393-830ebe3a_canonicalize_2026-06-10t23-05-54-642z-1976810-59962f5c-ingest-2012-11-sbs-webster-cac4-route-identity"
+}

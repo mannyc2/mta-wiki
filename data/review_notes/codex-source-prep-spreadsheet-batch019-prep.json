@@ -1,0 +1,100 @@
+{
+  "note_id": "codex-source-prep-spreadsheet-batch019-prep",
+  "created_at": "2026-06-23T17:40:23.659Z",
+  "author": "codex",
+  "kind": "source_prep_spreadsheet_batch_applied_and_ingest_started",
+  "status": "applied_wave45_detached_running",
+  "scope": "Applied subagent-reviewed deterministic spreadsheet preview sidecars for 10 not-ready spreadsheet sources after a clean wave44 generated-output checkpoint, refreshed readiness, and started the reopened ready pool as detached wave45.",
+  "reviewed_by_subagent": {
+    "agent_id": "019ef58b-8a84-7b70-a20b-bb55a7c10029",
+    "mode": "read_only",
+    "confirmation": "No edits, provider-backed commands, Chandra/vLLM/OCR touches."
+  },
+  "mutation_mechanism": "bun packages/cli/src/cli.ts source-prep-apply-preview <source_id> --run-id spreadsheet-backlog-20260623; writes raw/sources/<source_id>/text.txt and blocks.jsonl from reviewed data/source-prep sidecars",
+  "sources": [
+    {
+      "source_id": "meeting_doc_197021",
+      "blocks": 83,
+      "hazard": "formulas present: 125"
+    },
+    {
+      "source_id": "meeting_doc_198956",
+      "blocks": 121,
+      "hazard": "none found"
+    },
+    {
+      "source_id": "meeting_doc_198961",
+      "blocks": 83,
+      "hazard": "formulas present: 270"
+    },
+    {
+      "source_id": "meeting_doc_198966",
+      "blocks": 157,
+      "hazard": "none found"
+    },
+    {
+      "source_id": "meeting_doc_201661",
+      "blocks": 123,
+      "hazard": "none found"
+    },
+    {
+      "source_id": "meeting_doc_201676",
+      "blocks": 157,
+      "hazard": "none found"
+    },
+    {
+      "source_id": "meeting_doc_201686",
+      "blocks": 83,
+      "hazard": "formulas present: 270"
+    },
+    {
+      "source_id": "meeting_doc_205316",
+      "blocks": 121,
+      "hazard": "none found"
+    },
+    {
+      "source_id": "meeting_doc_205321",
+      "blocks": 83,
+      "hazard": "formulas present: 126"
+    },
+    {
+      "source_id": "meeting_doc_205331",
+      "blocks": 157,
+      "hazard": "none found"
+    }
+  ],
+  "verification": {
+    "source_prep_tests": "bun test packages/pipeline/test/sources/source-prep.test.ts: 6 pass, 0 fail",
+    "blocks_line_counts_checked": true,
+    "repo_secret_scan_after_launch": "rg for Pioneer key fragments returned no matches"
+  },
+  "readiness_after_apply": {
+    "command": "bun packages/cli/src/cli.ts campaign readiness --id validation-2026-06",
+    "total": 2566,
+    "ready": 2482,
+    "ready_never_ingested": 10,
+    "already_ingested": 2480,
+    "quarantined": 84,
+    "interpretation": "The reopened 10-source pool came from batch019 and was launched as wave45."
+  },
+  "ingest_started": {
+    "wave": 45,
+    "pid": 1467305,
+    "source_count": 10,
+    "concurrency": 10,
+    "materialize_cadence": "MTA_MATERIALIZE_EVERY=100000",
+    "profile": "pioneer-deepseek-flash",
+    "command_template": "PIONEER_API_KEY='<PIONEER_API_KEY>' MTA_MATERIALIZE_EVERY=100000 setsid -f bun packages/cli/src/cli.ts campaign ingest --wave 45 --id validation-2026-06 --size 10 --concurrency 10 --timeout-min 300 --profile pioneer-deepseek-flash",
+    "secret_persisted": false
+  },
+  "commands_not_run": [
+    "campaign dedup",
+    "canonicalize*",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "write",
+    "ask",
+    "schema",
+    "generated-output materialize/export/validate while wave45 active"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "entity_cluster_28bb2b1630",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_28bb2b1630.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_28bb2b1630.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "entity_meeting-doc-189756-eap",
+        "entity_meeting-doc-79466-lirr-eap"
+      ],
+      "reason": "Authority vs subsidiary never merge. MTA (the authority) and LIRR (its operating agency) are distinct entities per identity merge canon. The records refer to different Employee Assistance Programs: one under MTA, one under LIRR, as shown by entity_names 'MTA Employee Assistance Program (EAP)' vs 'LIRR Employee Assistance Program (EAP)'. Strong identity field entity_name differs in the sponsoring agency scope, which is a contradiction test failure (test 1)."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "Both records are EAP programs with the same acronym but belong to different parent entities: MTA and LIRR. The identity merge canon explicitly states authority vs subsidiary never merge. The entity names differ in the agency prefix, making them distinct canonical records. The relation context of the first record links it to MTA; the second has no such link but its name includes 'LIRR'. Therefore, do_not_merge. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

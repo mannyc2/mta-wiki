@@ -1,0 +1,63 @@
+{
+  "run_id": "2026-06-10T22-56-13-190Z_1976810-e4e24de9_ingest_2011-05-02-brt-1st2nd-cb6",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T01:10:40.888Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d_first_second_ave_sbs_identity",
+        "local_observation_id": "project_first_second_ave_sbs_2011_05_02",
+        "decision": "new",
+        "proposed_relations": [
+          {
+            "relation_kind": "are_same_project",
+            "subject_id": "project_first-second-ave-sbs",
+            "object_id": "project_m15-sbs-first-second-aves",
+            "description": "Both records refer to the M15 Select Bus Service implementation on First and Second Avenues in Manhattan. The project_first-second-ave-sbs record captures planning-phase sources (2009-2011), while project_m15-sbs-first-second-aves captures the post-implementation progress report (November 2011). The observation's source document explicitly names the M15 SBS and confirms operational status as of October 10, 2010.",
+            "evidence_refs": [
+              {
+                "source_id": "2011_05_02_brt_1st2nd_cb6",
+                "block_id": "p001_c0001",
+                "source_quote": "First Avenue/Second Avenue Select Bus Service Community Board 6 Transportation Committee Meeting May 2, 2011"
+              },
+              {
+                "source_id": "2011_05_02_brt_1st2nd_cb6",
+                "block_id": "p003_c0005",
+                "source_quote": "M15 Select Bus Service launched October 10, 2010"
+              },
+              {
+                "source_id": "2011_05_02_brt_1st2nd_cb6",
+                "block_id": "p003_c0006",
+                "source_quote": "- Over 10 miles of dedicated bus lanes - NYPD and camera enforcement - off-board fare payment - revised station spacing - low-floor, three-door buses"
+              }
+            ]
+          }
+        ],
+        "rationale": "The observation's base_record_id project_first-second-ave-sbs already exists in the registry and is the correct identity match — the observation resolves to the same First Avenue/Second Avenue SBS project. Per rules, when the closest match IS the observation's own base_record_id, the decision is 'new' (no link to a different record needed). A relation is proposed to project_m15-sbs-first-second-aves, which is a separate registry record for the same M15 SBS project drawn from a different source (the November 2011 progress report).",
+        "evidence_refs": [
+          {
+            "source_id": "2011_05_02_brt_1st2nd_cb6",
+            "block_id": "p001_c0001",
+            "source_quote": "First Avenue/Second Avenue Select Bus Service Community Board 6 Transportation Committee Meeting May 2, 2011"
+          },
+          {
+            "source_id": "2011_05_02_brt_1st2nd_cb6",
+            "block_id": "p003_c0005",
+            "source_quote": "M15 Select Bus Service launched October 10, 2010"
+          },
+          {
+            "source_id": "2011_05_02_brt_1st2nd_cb6",
+            "block_id": "p003_c0006",
+            "source_quote": "- Over 10 miles of dedicated bus lanes - NYPD and camera enforcement - off-board fare payment - revised station spacing - low-floor, three-door buses"
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-09-14-408Z_2111393-221a851d_canonicalize_2026-06-10t22-56-13-190z-1976810-e4e24de9-ingest-2011-05-02-brt-1st2nd-cb6-project-identity"
+}

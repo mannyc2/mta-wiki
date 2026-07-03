@@ -1,0 +1,12 @@
+{
+  "run_id": "2026-06-10T17-13-30-798Z_1462165-08f79ec1_ingest_116-st-morningside-ave-pleasant-ave-cb11-may2025",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-21T15:08:08.029Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "assistant_text",
+  "parse_error": "JSON Parse error: Unexpected identifier \"I\"",
+  "raw_response": "I can see from the existing_relation_keys in the packet that all 7 treatments already have `has_treatment` relations from `project_116th-st-bus-pedestrian-priority`. The evidence (source `116_st_morningside_ave_pleasant_ave_cb11_may2025` and quotes referencing 116th Street from 5th Avenue to Pleasant Avenue) supports these attachments — this is a presentation for the 116th Street Bus & Pedestrian Priority Project. I'll propose `relate` for all seven.\n\n",
+  "transcript_dir": "data/transcripts/runs/2026-06-21T15-03-59-177Z_2836603-d1e9dcf2_canonicalize_2026-06-10t17-13-30-798z-1462165-08f79ec1-ingest-116-st-morningside-ave-pleasant-ave-cb11-may2025-treatment-relations"
+}

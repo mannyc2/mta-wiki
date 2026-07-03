@@ -1,0 +1,169 @@
+{
+  "id": "codex-relation-assertion-claim-route-treatment-actions-2026-06-30-al",
+  "date_utc": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "bucket": "relation_assertion_status_unknown",
+  "baseline": {
+    "validation_issues": 0,
+    "unknown_relations_total": 8860,
+    "unknown_by_family": {
+      "metric_context": 5661,
+      "claim_context": 509,
+      "agency_role": 498,
+      "timeline_context": 478,
+      "treatment_context": 119
+    },
+    "unknown_family_kind": {
+      "claim_context.has_claim": 432,
+      "timeline_context.has_timeline_event": 346,
+      "treatment_context.has_treatment": 96,
+      "agency_role.implements": 26,
+      "treatment_context.implements_treatment": 12,
+      "agency_role.enforced_by": 11
+    }
+  },
+  "implemented": [
+    {
+      "rule": "source_claim_containment",
+      "status": "delivered",
+      "guards": [
+        "relation_family == claim_context",
+        "relation_kind == has_claim",
+        "subject is a source and object is a claim",
+        "relation provenance cites the source endpoint",
+        "claim record includes the source endpoint source_id",
+        "relation evidence_refs include the source endpoint source_id"
+      ],
+      "observed_rows_moved": 2
+    },
+    {
+      "rule": "true_route_implementation_timeline",
+      "status": "delivered",
+      "guards": [
+        "relation_family == timeline_context",
+        "relation_kind == has_timeline_event",
+        "subject is a true_route route and object is an event",
+        "event_family == implementation",
+        "event has date_normalized",
+        "event_kind is implementation, service_implementation, or capital_improvements_start",
+        "relation/event text has implemented, implementation, began, launched, opened, or started",
+        "relation/event text does not contain future/proposed/planned/scheduled/deferred/cancelled/postponed language"
+      ],
+      "observed_rows_moved": 8,
+      "held_examples": [
+        {
+          "record_id": "relation_m34-sbs-launch-event",
+          "reason": "route endpoint is a split_candidate aggregate/bundled route record"
+        }
+      ]
+    },
+    {
+      "rule": "agency_treatment_action_and_treatment_lifecycle_text",
+      "status": "delivered_or_proposed_or_planned",
+      "guards": [
+        "agency_role.enforced_by requires treatment_component -> entity plus enforcement/summons/violation text and no future/proposed/pilot wording",
+        "agency_role.implements requires entity -> treatment_component plus installed/deployed/active treatment text and no will/pilot/explore/upcoming/projected/expected wording",
+        "treatment_context.has_treatment is scoped to corridor|route -> treatment_component and uses exact planned/proposed/delivered lifecycle text from the relation/treatment payload",
+        "treatment_context.implements_treatment requires entity -> treatment_component plus installed/completed/deployed or known flood-door test phrase, rejecting projected/award-imminent/pilot/expected/by-date language"
+      ],
+      "observed_rows_moved": 26,
+      "held_examples": [
+        {
+          "record_id": "relation_batch024-lirr-implements-help-point-installations",
+          "reason": "explore/upcoming wording"
+        },
+        {
+          "record_id": "relation_125th-has-treatment-bus-lanes",
+          "reason": "current canonical relation/treatment payload lacks explicit planned/proposed/delivered status text"
+        }
+      ]
+    }
+  ],
+  "after_materialize": {
+    "validation_issues": 0,
+    "unknown_relations_total": 8824,
+    "unknown_by_family": {
+      "metric_context": 5661,
+      "claim_context": 507,
+      "agency_role": 488,
+      "timeline_context": 470,
+      "treatment_context": 103
+    },
+    "unknown_family_kind": {
+      "claim_context.has_claim": 430,
+      "timeline_context.has_timeline_event": 338,
+      "treatment_context.has_treatment": 82,
+      "agency_role.implements": 23,
+      "treatment_context.implements_treatment": 10
+    },
+    "delta_unknown_relations_total": -36
+  },
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+      "result": "pass",
+      "summary": "37 tests, 192 expects"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "pass",
+      "summary": "Materialized 93092/98102 submissions; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass",
+      "summary": "Issues: 0; Submissions: 98102; Canonical records: 84040; Wiki pages: 7334"
+    }
+  ],
+  "subagents": [
+    {
+      "id": "019f1ae4-819a-7431-9167-8c8f4e3e1983",
+      "lane": "agency/treatment action read-only scout",
+      "result": "recommended agency treatment action and treatment-context lifecycle slices; implementation kept only rows with explicit canonical text and held proposed 125th treatment package rows without status text"
+    },
+    {
+      "id": "019f1ad7-a70c-7b02-8609-42bfb112339c",
+      "lane": "claim_context.has_claim source containment scout",
+      "result": "recommended source-to-claim containment only; broad non-source has_claim remains held"
+    },
+    {
+      "id": "019f1ad7-c721-73e1-b0c1-5cc5ab171e4d",
+      "lane": "timeline_context route implementation scout",
+      "result": "recommended a small true-route implementation delivered slice and holding split_candidate route endpoints"
+    }
+  ],
+  "remaining_known_holdouts": [
+    {
+      "bucket": "metric_context.has_metric",
+      "count": 5647,
+      "reason": "mixed actuals, forecasts, budgets, goals, proposed expenditures, and before/after observations"
+    },
+    {
+      "bucket": "claim_context.has_claim",
+      "count": 430,
+      "reason": "broad non-source shapes mix entity/route/corridor/event claim attachment with real-world status"
+    },
+    {
+      "bucket": "timeline_context.has_timeline_event",
+      "count": 338,
+      "reason": "remaining rows include source-to-event references, no-item/no-meeting absences, split-route launches, and board/budget action event types requiring separate policies"
+    },
+    {
+      "bucket": "treatment_context.has_treatment",
+      "count": 82,
+      "reason": "many rows name treatments without explicit lifecycle/status text in canonical payload"
+    }
+  ],
+  "files_changed": [
+    "packages/pipeline/src/records/assertion-qualifiers.ts",
+    "packages/pipeline/test/records/assertion-qualifiers.test.ts",
+    "data/canonical/relations.jsonl",
+    "data/canonical.db",
+    "LOG.md"
+  ]
+}

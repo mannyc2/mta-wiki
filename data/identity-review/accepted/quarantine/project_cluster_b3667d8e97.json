@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "project_cluster_b3667d8e97",
+  "kind": "project",
+  "packet_path": "data/identity-review/packets/project_cluster_b3667d8e97.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/project_cluster_b3667d8e97.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "quarantined",
+  "quarantine": {
+    "blocker": "do_not_merge project_34th-st-transitway-phase1-2009 <> project_downtown-jamaica-bus-study-phase1: reason does not cite a strong identity field | do_not_merge project_34th-st-transitway-phase1-2009 <> project_hylan-blvd-sbs-phase1: reason does not cite a strong identity field | do_not_merge project_34th-st-transitway-phase1-2009 <> project_m15-sbs-first-second-ave-phase1: reason does not cite a strong identity field | do_not_merge project_34th-st-transitway-phase1-2009 <> project_nostrand-rogers-ave-b44-sbs-phase1: reason does not cite a strong identity field | do_not_merge project_bx12-sbs-fordham-rd-phase1 <> project_downtown-jamaica-bus-study-phase1: reason does not cite a strong identity field | do_not_merge project_bx12-sbs-fordham-rd-phase1 <> project_m15-sbs-first-second-ave-phase1: reason does not cite a strong identity field | (+7 more rejections)",
+    "note": "Partial: structurally clean actions were auto-accepted in the decisions file with the same cluster_id."
+  },
+  "original_merge_groups": [],
+  "original_do_not_merge": [
+    {
+      "record_ids": [
+        "project_34th-st-transitway-phase1-2009",
+        "project_downtown-jamaica-bus-study-phase1"
+      ],
+      "reason": "Different project name and type (transitway vs study), different location (34th Street, Manhattan vs Downtown Jamaica, Queens); program BRT Phase I is relation context (Contradiction test 1)."
+    },
+    {
+      "record_ids": [
+        "project_34th-st-transitway-phase1-2009",
+        "project_hylan-blvd-sbs-phase1"
+      ],
+      "reason": "Different project name and type (transitway vs SBS), different location (34th Street, Manhattan vs Hylan Boulevard, Staten Island); program BRT Phase I is relation context (Contradiction test 1)."
+    },
+    {
+      "record_ids": [
+        "project_34th-st-transitway-phase1-2009",
+        "project_m15-sbs-first-second-ave-phase1"
+      ],
+      "reason": "Different project name and type (transitway vs SBS), different location (34th Street vs First/Second Avenue, both Manhattan but distinct corridors); program BRT Phase I is relation context (Contradiction test 1)."
+    },
+    {
+      "record_ids": [
+        "project_34th-st-transitway-phase1-2009",
+        "project_nostrand-rogers-ave-b44-sbs-phase1"
+      ],
+      "reason": "Different project name and type (transitway vs SBS), different location (34th Street, Manhattan vs Nostrand/Rogers Avenues, Brooklyn); program BRT Phase I is relation context (Contradiction test 1)."
+    },
+    {
+      "record_ids": [
+        "project_bx12-sbs-fordham-rd-phase1",
+        "project_downtown-jamaica-bus-study-phase1"
+      ],
+      "reason": "Different project name and type (SBS vs study), different location (Fordham Road, Bronx vs Downtown Jamaica, Queens); program BRT Phase I is relation context (Contradiction test 1)."
+    },
+    {
+      "record_ids": [
+        "project_bx12-sbs-fordham-rd-phase1",
+        "project_m15-sbs-first-second-ave-phase1"
+      ],
+      "reason": "Different project name and location (Fordham Road, Bronx vs First/Second Avenue, Manhattan); both SBS but distinct corridors; program BRT Phase I is relation context (Contradiction test 1)."
+    },
+    {
+      "record_ids": [
+        "project_bx12-sbs-fordham-rd-phase1",
+        "project_nostrand-rogers-ave-b44-sbs-phase1"
+      ],
+      "reason": "Different project name and location (Fordham Road, Bronx vs Nostrand/Rogers Avenues, Brooklyn); both SBS but distinct corridors; program BRT Phase I is relation context (Contradiction test 1)."
+    },
+    {
+      "record_ids": [
+        "project_downtown-jamaica-bus-study-phase1",
+        "project_hylan-blvd-sbs-phase1"
+      ],
+      "reason": "Different project name, type (study vs SBS), and location (Jamaica, Queens vs Hylan Boulevard, Staten Island); program BRT Phase I is relation context (Contradiction test 1)."
+    },
+    {
+      "record_ids": [
+        "project_downtown-jamaica-bus-study-phase1",
+        "project_m15-sbs-first-second-ave-phase1"
+      ],
+      "reason": "Different project name, type (study vs SBS), and location (Jamaica, Queens vs First/Second Avenue, Manhattan); program BRT Phase I is relation context (Contradiction test 1)."
+    },
+    {
+      "record_ids": [
+        "project_downtown-jamaica-bus-study-phase1",
+        "project_nostrand-rogers-ave-b44-sbs-phase1"
+      ],
+      "reason": "Different project name, type (study vs SBS), and location (Jamaica, Queens vs Nostrand/Rogers Avenues, Brooklyn); program BRT Phase I is relation context (Contradiction test 1)."
+    },
+    {
+      "record_ids": [
+        "project_hylan-blvd-sbs-phase1",
+        "project_m15-sbs-first-second-ave-phase1"
+      ],
+      "reason": "Different project name and location (Hylan Boulevard, Staten Island vs First/Second Avenue, Manhattan); both SBS but distinct corridors; program BRT Phase I is relation context (Contradiction test 1)."
+    },
+    {
+      "record_ids": [
+        "project_hylan-blvd-sbs-phase1",
+        "project_nostrand-rogers-ave-b44-sbs-phase1"
+      ],
+      "reason": "Different project name and location (Hylan Boulevard, Staten Island vs Nostrand/Rogers Avenues, Brooklyn); both SBS but distinct corridors; program BRT Phase I is relation context (Contradiction test 1)."
+    },
+    {
+      "record_ids": [
+        "project_m15-sbs-first-second-ave-phase1",
+        "project_nostrand-rogers-ave-b44-sbs-phase1"
+      ],
+      "reason": "Different project name and location (First/Second Avenue, Manhattan vs Nostrand/Rogers Avenues, Brooklyn); both SBS but distinct corridors; program BRT Phase I is relation context (Contradiction test 1)."
+    }
+  ]
+}

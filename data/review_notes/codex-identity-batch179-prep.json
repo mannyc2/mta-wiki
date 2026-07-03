@@ -1,0 +1,273 @@
+{
+  "note_id": "codex-identity-batch179-prep",
+  "batch": "identity179",
+  "created_at": "2026-06-23T09:25:26Z",
+  "scope": {
+    "global_kind": "route/corridor",
+    "selection_note": "Codex-only post-ingest identity cleanup prep for ROUTE and CORRIDOR duplicate_global_identity rows only. Inputs were current data/canonical/routes.jsonl, data/canonical/corridors.jsonl, data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, and allowed in-process validateRepo duplicate_global_identity output.",
+    "write_limit": "Only this review note was written. No identity overrides, LOG.md, manifest, canonical JSONL, DB, wiki, submissions, or other files were edited.",
+    "validator_duplicate_counts_latest_allowed_run": {
+      "total_issues": 519,
+      "duplicate_global_identity": 519,
+      "route_and_corridor_duplicate_global_identity": 53,
+      "guard_safe_route_or_corridor_directions": 51
+    }
+  },
+  "prepared_count": 2,
+  "proposed_aliases": [
+    {
+      "global_kind": "route",
+      "alias_id": "route_q52-ltd-woodhaven-2014",
+      "target_id": "route_q52-sbs-queens",
+      "canonical_id": "route_q52-sbs-queens",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global route records route_q52-ltd-woodhaven-2014 and route_q52-sbs-queens share identity key route_q52.",
+        "validateRepo duplicate_global_identity: Global route records route_q52-ltd-woodhaven-2014 and route_q52-sbs-queens share identity key route_q52-sbs."
+      ],
+      "canonical_evidence": {
+        "alias": {
+          "record_id": "route_q52-ltd-woodhaven-2014",
+          "display_name": "Q52 LTD",
+          "route_id": "Q52",
+          "route_name": "Q52 Limited",
+          "route_label": "Q52 LTD",
+          "route_type_normalized": "limited_stop",
+          "service_variant": "limited_stop",
+          "record_aliases_include": [
+            "route_q52",
+            "route_q52-ltd-woodhaven-2015-05",
+            "route_q52-sbs"
+          ],
+          "merged_values_include": {
+            "description": [
+              "Existing limited-stop bus route on Woodhaven/Cross Bay corridor, proposed for conversion to Select Bus Service",
+              "Limited-stop bus route along Woodhaven/Cross Bay corridor that would be replaced by Select Bus Service.",
+              "Part of the Q52/53 Limited bus route that is the basis for the Woodhaven/Cross Bay SBS corridor. Q52 Extension planned for 2017. Q52/53 SBS launch in Fall 2017."
+            ]
+          },
+          "source_ids_sample": [
+            "2014_10_22_brt_woodhaven_cac2_presentation",
+            "2015_03_woodhaven_sbs",
+            "2015_06_09_brt_woodhaven_cb9",
+            "brt_woodhaven_cb14_jan2017"
+          ]
+        },
+        "target": {
+          "record_id": "route_q52-sbs-queens",
+          "display_name": "Q52 SBS bus route",
+          "route_id": "Q52 SBS",
+          "route_name": "Q52 SBS",
+          "route_label": "Q52 SBS",
+          "route_type_normalized": "select_bus_service",
+          "service_variant": "sbs",
+          "record_aliases_include": [
+            "route_q52",
+            "route_q52-sbs",
+            "route_q52-sbs-queens"
+          ],
+          "merged_values_include": {
+            "description": [
+              "Proposed SBS service replacing Q52 LTD along Woodhaven/Cross Bay corridor; extension under consideration",
+              "Woodhaven Q52/Q53 SBS launched November 2017",
+              "Select Bus Service on Woodhaven / Cross Bay corridor, based on existing Q52 LTD route"
+            ]
+          },
+          "source_ids_sample": [
+            "brt_woodhaven_after_fall2018",
+            "brt_woodhaven_faq",
+            "brt_woodhaven_openhouses_boards_may2016",
+            "tsp_status_2017"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "route_q52-ltd-woodhaven-2014",
+          "evidence_id": "2014_10_22_brt_woodhaven_cac2_presentation#p010_c0002",
+          "quote": "Based on the existing Q52/53 LTD bus route"
+        },
+        {
+          "record_id": "route_q52-sbs-queens",
+          "evidence_id": "brt_woodhaven_after_fall2018#p008_c0002",
+          "quote": "Converted to SBS on November 12 th , 2017"
+        },
+        {
+          "record_id": "route_q52-sbs-queens",
+          "evidence_id": "brt_woodhaven_after_fall2018#p019_c0002",
+          "quote": "82% to 87% of respondents believe the SBS is better than the Q52/Q53 Limited service it replaced."
+        },
+        {
+          "record_id": "route_q52-sbs-queens",
+          "evidence_id": "tsp_status_2017#p001_b0001",
+          "quote": "Q52/Q53 SBS on Woodhaven Boulevard"
+        }
+      ],
+      "reason": "The Q52 LTD record is the pre-launch/limited-stop identity for the same Q52 service that became Q52 SBS on the Woodhaven/Cross Bay corridor. This is included despite being a route-variant-looking collision because the canonical descriptions and source blocks explicitly state conversion/replacement from Q52/Q53 Limited to Q52/Q53 SBS.",
+      "guards": {
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "alias_is_not_current_merge_target": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "stale_id_hit": false,
+        "route_variant_guard": "accepted because source evidence explicitly states Q52/Q53 Limited was converted/replaced by Q52/Q53 SBS",
+        "partial_overlap_guard": "not_applicable_route"
+      }
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_m14-brt-phase2",
+      "target_id": "route_m14-ad-sbs",
+      "canonical_id": "route_m14-ad-sbs",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global route records route_m14-ad-sbs and route_m14-brt-phase2 share identity key route_m14."
+      ],
+      "canonical_evidence": {
+        "alias": {
+          "record_id": "route_m14-brt-phase2",
+          "display_name": "M14 (14th Street)",
+          "route_id": "M14",
+          "route_label": "M14",
+          "borough_normalized": "manhattan",
+          "note": "Existing bus route on 14th Street; carries 39,000 trips a day",
+          "record_aliases_include": [
+            "route_m14"
+          ],
+          "source_ids": [
+            "brt_intro_to_phase2"
+          ]
+        },
+        "target": {
+          "record_id": "route_m14-ad-sbs",
+          "display_name": "M14 A/D Select Bus Service",
+          "route_id": "M14 A SBS",
+          "route_label": "M14 A/D SBS",
+          "route_type_normalized": "select_bus_service",
+          "service_variant": "sbs",
+          "record_aliases_include": [
+            "route_m14",
+            "route_m14-ad-sbs-fall2019",
+            "route_m14-sbs"
+          ],
+          "merged_values_include": {
+            "description": [
+              "Select Bus Service routes on 14th Street, part of the TTP Pilot Project. M14 A/D SBS services started in July 2019.",
+              "Select Bus Service on 14th Street, operated by NYCT; began July 1, 2019; serves approximately 28,000 daily riders",
+              "M14 A/D SBS services started in July 2019. Operates on 14th Street between 3rd Avenue and 8th Avenue (TTP corridor)."
+            ],
+            "route_id": [
+              "M14 A/D SBS",
+              "M14A/D",
+              "M14-SBS"
+            ]
+          },
+          "source_ids_sample": [
+            "14th_street_busway",
+            "14th_street_busway_brochure",
+            "brt_route_index",
+            "mta_automated_camera_enforcement"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "route_m14-brt-phase2",
+          "evidence_id": "brt_intro_to_phase2#p034_c0004",
+          "quote": "Existing M14 bus route carries a 39,000 trips a day"
+        },
+        {
+          "record_id": "route_m14-ad-sbs",
+          "evidence_id": "14th_street_busway#p001_b0001",
+          "quote": "M14A/D Select Bus Service, which began on July 1, 2019"
+        },
+        {
+          "record_id": "route_m14-ad-sbs",
+          "evidence_id": "brt_route_index#p001_b0001",
+          "quote": "Coinciding with the launch of Select Bus Service for the M14A and M14D buses"
+        },
+        {
+          "record_id": "route_m14-ad-sbs",
+          "evidence_id": "mta_automated_camera_enforcement#p001_b0001",
+          "quote": "M14-SBS, 14 St"
+        }
+      ],
+      "reason": "The alias record is the earlier BRT Phase II M14/14th Street route identity, while the target is the implemented M14A/D SBS route identity on the same 14th Street service. This is included under the route-variant guard because the target/source evidence explicitly describes the M14A/D Select Bus Service launch for the M14 buses rather than merely sharing a route number.",
+      "guards": {
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "alias_is_not_current_merge_target": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "stale_id_hit": false,
+        "route_variant_guard": "accepted because source evidence explicitly ties the existing M14 route to the launch of M14A/D Select Bus Service",
+        "partial_overlap_guard": "not_applicable_route"
+      }
+    }
+  ],
+  "exclusions_and_guards": {
+    "input_files_read": [
+      "data/canonical/routes.jsonl",
+      "data/canonical/corridors.jsonl",
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json"
+    ],
+    "proposal_guards": [
+      "Each proposed alias_id and target_id exists in current canonical JSONL.",
+      "No proposed alias_id is already present as a merge alias in current data/identity-overrides/merges.json.",
+      "No proposed alias_id is currently a merge target in current data/identity-overrides/merges.json.",
+      "No proposed target_id is currently a merge alias in current data/identity-overrides/merges.json.",
+      "No proposed pair appears in current data/identity-overrides/do-not-merge.json.",
+      "No stale ids, alias==target pairs, unproven route variants, compound-route traps, or ambiguous same-street-only corridor collisions were included."
+    ],
+    "excluded_current_duplicate_classes": [
+      "Excluded corridor rows where the only guard-safe direction would collapse a richer current corridor into a broad BRT Phase II candidate target, including 125th Street, 14th Street, Webster/Third Avenue, and Utica Avenue Phase II target cases.",
+      "Excluded Broadway, Church Avenue, Cross Bay Boulevard, Flatlands Avenue, Kings Highway, Lexington Avenue, Montauk Branch, Third Avenue, Woodhaven Boulevard, and Cropsey/Bay Parkway rows because current evidence shows adjacent limits, partial overlap, borough/scope differences, or one segment of a larger corridor rather than source-backed same corridor identity.",
+      "Excluded B44, B46, B82, B103, Bx40/Bx42, Bx55, M23, Q53, and remaining Q52 route rows where local/limited/SBS/express variants, compound routes, or retained local service made the route identity unsafe for this conservative batch.",
+      "Excluded possible broad BRT Phase II route aliases when the candidate was only a base route number and source evidence did not prove the whole base route should collapse into an SBS variant."
+    ],
+    "corridor_prepared_count": 0,
+    "route_prepared_count": 2
+  },
+  "command_evidence": [
+    {
+      "command": "bun --eval 'import { validateRepo } from \"./packages/pipeline/src/validate.ts\"; ... print duplicate_global_identity route/corridor issues'",
+      "purpose": "Read-only local validateRepo inspection; observed 519 duplicate_global_identity issues total and 53 route/corridor duplicate_global_identity messages without running the forbidden validate CLI."
+    },
+    {
+      "command": "bun --eval '<read current route/corridor canonical JSONL, current merges, current do-not-merge, and validateRepo issues; print guard-safe directions>'",
+      "purpose": "Checked stale ids, existing aliases, aliases that are merge targets, targets that are aliases, alias==target, and do-not-merge hits before selecting proposals."
+    },
+    {
+      "command": "jq over data/canonical/routes.jsonl and data/canonical/corridors.jsonl",
+      "purpose": "Inspected canonical payloads, record_aliases, source_ids, merged field values, and evidence refs for selected and excluded route/corridor candidates."
+    },
+    {
+      "command": "jq/rg over raw/sources/*/blocks.jsonl",
+      "purpose": "Read local source blocks for selected lifecycle evidence quotes without running provider-backed commands."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed commands",
+    "canonicalize",
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "--profile",
+    "provider",
+    "materialize",
+    "validate CLI",
+    "export-jsonl"
+  ],
+  "blockers": [
+    "A read-only validateRepo rerun briefly hit a transient SQLite busy lock in the shared workspace; a later retry succeeded and no data was written by the failed read-only command.",
+    "No high-confidence corridor alias survived the requested guards; remaining corridor rows are mostly partial-overlap, adjacent-segment, broad-candidate-target, or same-street-only collisions."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "run_id": "2026-06-10T17-48-04-564Z_1496766-9d5cfd47_ingest_14th-street-preliminary-report-fall-2019-corrected",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-10T19:19:37.075Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "assistant_text",
+  "parse_error": "JSON Parse error: Unexpected EOF",
+  "raw_response": "",
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-553Z_1609878-d2f47bd4_canonicalize_2026-06-10t17-48-04-564z-1496766-9d5cfd47-ingest-14th-street-preliminary-report-fall-2019-corrected-treatment-relations"
+}

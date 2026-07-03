@@ -1,0 +1,513 @@
+{
+  "batch_id": "identity087",
+  "prepared_count": 8,
+  "all_pass": true,
+  "proposed_aliases": [
+    {
+      "kind": "project",
+      "alias_id": "project_bay-pkwy-cropsey-bus-priority-safety-cb12-jun2025",
+      "target_id": "project_bay-parkway-cropsey-avenue-brooklyn",
+      "reason": "Both records identify the same Bay Parkway and Cropsey Avenue Bus Priority and Safety Improvements project in Brooklyn. The alias source is a later CB12 draft-proposal presentation for the same project name and the same Bay Parkway/Cropsey Avenue limits; status wording differs by document time, not by project identity.",
+      "evidence": [
+        {
+          "record_id": "project_bay-pkwy-cropsey-bus-priority-safety-cb12-jun2025",
+          "display_name": "Bay Parkway and Cropsey Avenue Bus Priority and Safety Improvements",
+          "project_name": "Bay Parkway and Cropsey Avenue Bus Priority and Safety Improvements",
+          "project_family": "bus_priority",
+          "project_type": "Bus Priority and Safety Improvements",
+          "status": "Draft Proposal",
+          "source_ids": [
+            "bay_pkwy_cropsey_ave_cb12_jun2025"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "bay_pkwy_cropsey_ave_cb12_jun2025",
+              "block_id": "p001_c0001",
+              "evidence_id": "bay_pkwy_cropsey_ave_cb12_jun2025#p001_c0001",
+              "source_quote": "Bay Parkway and Cropsey Avenue Bus Priority and Safety Improvements Draft Proposal"
+            }
+          ]
+        },
+        {
+          "record_id": "project_bay-parkway-cropsey-avenue-brooklyn",
+          "display_name": "Bay Parkway and Cropsey Avenue Bus Priority and Safety Improvements, Brooklyn",
+          "project_name": "Bay Parkway and Cropsey Avenue Bus Priority and Safety Improvements",
+          "project_family": "bus_priority",
+          "project_type": "bus priority and safety improvements",
+          "status": "proposed",
+          "source_ids": [
+            "better_buses",
+            "bay_pkwy_cropsey_ave_jan2025",
+            "bay_pkwy_cropsey_ave_nov2024"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "better_buses",
+              "block_id": "p001_b0001",
+              "evidence_id": "better_buses#p001_b0001",
+              "source_quote": "NYC DOT, in collaboration with the MTA, is proposing bus priority and safety improvements on Bay Parkway from Avenue J to Shore Parkway as well as Cropsey Avenue from Bay Parkway to 26th Avenue."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_lex-ave-60-st-52-st-offset-bus-lane",
+      "target_id": "project_lexington-ave-60th-52nd-offset-bus-lane",
+      "reason": "Both records identify the same Lexington Avenue bus-lane upgrade project from 60th Street to 52nd Street. The project names match exactly and both describe converting the existing curbside bus lane to a 24/7 offset bus lane on the same segment.",
+      "evidence": [
+        {
+          "record_id": "project_lex-ave-60-st-52-st-offset-bus-lane",
+          "display_name": "Lexington Avenue Bus Lane Upgrades 60th Street to 52nd Street",
+          "project_name": "Lexington Avenue Bus Lane Upgrades 60th Street to 52nd Street",
+          "project_family": "bus_lane",
+          "project_type": "bus lane upgrade",
+          "status": "proposed",
+          "source_ids": [
+            "lexington_ave_60_st_52_st_sept2025"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "lexington_ave_60_st_52_st_sept2025",
+              "block_id": "p001_c0001",
+              "evidence_id": "lexington_ave_60_st_52_st_sept2025#p001_c0001",
+              "source_quote": "Lexington Avenue Bus Lane Upgrades 60 th Street to 52 nd Street"
+            },
+            {
+              "source_id": "lexington_ave_60_st_52_st_sept2025",
+              "block_id": "p007_c0002",
+              "evidence_id": "lexington_ave_60_st_52_st_sept2025#p007_c0002",
+              "source_quote": "Improve bus service by upgrading existing curbside bus lane to 24/7 offset bus lane"
+            }
+          ]
+        },
+        {
+          "record_id": "project_lexington-ave-60th-52nd-offset-bus-lane",
+          "display_name": "Lexington Avenue Bus Lane Upgrades 60th Street to 52nd Street",
+          "project_name": "Lexington Avenue Bus Lane Upgrades 60th Street to 52nd Street",
+          "project_family": "bus_lane",
+          "project_type": "offset bus lane",
+          "status": "proposed",
+          "source_ids": [
+            "lexington_ave_60_st_52_st_cb8_oct2025"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "lexington_ave_60_st_52_st_cb8_oct2025",
+              "block_id": "p007_c0002",
+              "evidence_id": "lexington_ave_60_st_52_st_cb8_oct2025#p007_c0002",
+              "source_quote": "Improve bus service by upgrading existing curbside bus lane to 24/7 offset bus lane"
+            },
+            {
+              "source_id": "lexington_ave_60_st_52_st_cb8_oct2025",
+              "block_id": "p012_c0003",
+              "evidence_id": "lexington_ave_60_st_52_st_cb8_oct2025#p012_c0003",
+              "source_quote": "Convert existing curbside bus lanes to offset for improved bus speeds and reliability throughout the corridor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_dekalb-lafayette-bus-safety",
+      "target_id": "project_dekalb-lafayette-bus-safety-improvements",
+      "reason": "Both records identify the same Dekalb-Lafayette Aves Bus and Safety Improvements study for B38 service. The records share the exact project name and the same source-backed purpose statement; the CB2/CB3 source distinction is meeting audience context, not a separate project scope.",
+      "evidence": [
+        {
+          "record_id": "project_dekalb-lafayette-bus-safety",
+          "display_name": "Dekalb-Lafayette Aves Bus and Safety Improvements",
+          "project_name": "Dekalb-Lafayette Aves Bus and Safety Improvements",
+          "project_family": "planning_or_report",
+          "project_type": "study",
+          "status": "Existing Conditions Meeting",
+          "source_ids": [
+            "dekalb_lafayette_cb3_dec2024"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "dekalb_lafayette_cb3_dec2024",
+              "block_id": "p001_c0001",
+              "evidence_id": "dekalb_lafayette_cb3_dec2024#p001_c0001",
+              "source_quote": "Dekalb-Lafayette Aves Bus and Safety Improvements"
+            },
+            {
+              "source_id": "dekalb_lafayette_cb3_dec2024",
+              "block_id": "p004_c0002",
+              "evidence_id": "dekalb_lafayette_cb3_dec2024#p004_c0002",
+              "source_quote": "NYC DOT and MTA seeks to improve bus service along the B38 route"
+            }
+          ]
+        },
+        {
+          "record_id": "project_dekalb-lafayette-bus-safety-improvements",
+          "display_name": "Dekalb-Lafayette Aves Bus and Safety Improvements",
+          "project_name": "Dekalb-Lafayette Aves Bus and Safety Improvements",
+          "project_family": "accessibility_or_safety",
+          "project_type": "bus and safety improvements",
+          "status": "Existing Conditions / Community Outreach",
+          "source_ids": [
+            "dekalb_lafayette_cb2_dec2024"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "dekalb_lafayette_cb2_dec2024",
+              "block_id": "p001_c0001",
+              "evidence_id": "dekalb_lafayette_cb2_dec2024#p001_c0001",
+              "source_quote": "Dekalb-Lafayette Aves Bus and Safety Improvements"
+            },
+            {
+              "source_id": "dekalb_lafayette_cb2_dec2024",
+              "block_id": "p004_c0002",
+              "evidence_id": "dekalb_lafayette_cb2_dec2024#p004_c0002",
+              "source_quote": "NYC DOT and MTA seeks to improve bus service along the B38 route"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_tremont-ave-bus-priority",
+      "target_id": "project_tremont-av-bus-priority",
+      "reason": "Both records identify the same Tremont Av Bus Priority Project. The title is identical, both records scope the project from University Avenue to Bronx River Parkway, and both cite the same package of bus queue jump, busway, and offset-lane treatments; document-time status differs across presentations.",
+      "evidence": [
+        {
+          "record_id": "project_tremont-ave-bus-priority",
+          "display_name": "Tremont Av Bus Priority Project",
+          "project_name": "Tremont Av Bus Priority Project",
+          "project_family": "bus_priority",
+          "project_type": "bus priority",
+          "status": "proposed",
+          "source_ids": [
+            "tremont_ave_bus_priority_cb6_nov2024"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "tremont_ave_bus_priority_cb6_nov2024",
+              "block_id": "p001_c0001",
+              "evidence_id": "tremont_ave_bus_priority_cb6_nov2024#p001_c0001",
+              "source_quote": "Tremont Av Bus Priority Project"
+            },
+            {
+              "source_id": "tremont_ave_bus_priority_cb6_nov2024",
+              "block_id": "p004_c0002",
+              "evidence_id": "tremont_ave_bus_priority_cb6_nov2024#p004_c0002",
+              "source_quote": "University Av to Bronx River Pkwy"
+            }
+          ]
+        },
+        {
+          "record_id": "project_tremont-av-bus-priority",
+          "display_name": "Tremont Av Bus Priority Project",
+          "project_name": "Tremont Av Bus Priority Project",
+          "project_family": "busway",
+          "project_type": "busway",
+          "status": "final proposal",
+          "source_ids": [
+            "tremont_ave_bus_priority_cb6_feb2025",
+            "tremont_ave_bus_priority_cb5_nov2024",
+            "tremont_ave_bus_priority_cb6_jun2024",
+            "tremont_ave_bus_priority_cb5_jun2024"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "tremont_ave_bus_priority_cb6_feb2025",
+              "block_id": "p001_c0001",
+              "evidence_id": "tremont_ave_bus_priority_cb6_feb2025#p001_c0001",
+              "source_quote": "Tremont Av Bus Priority Project"
+            },
+            {
+              "source_id": "tremont_ave_bus_priority_cb6_feb2025",
+              "block_id": "p004_c0002",
+              "evidence_id": "tremont_ave_bus_priority_cb6_feb2025#p004_c0002",
+              "source_quote": "University Av to Bronx River Pkwy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_bx6-sbs-brt-bx6-cb4-may2022",
+      "target_id": "project_bx6-sbs-brt-bx6-cb12-may2022",
+      "reason": "Both records identify the same Bx6 Select Bus Service project. The source blocks share the exact project title and launch date, and the CB4/CB12 distinction reflects separate community-board presentations for the same Bx6 SBS project.",
+      "evidence": [
+        {
+          "record_id": "project_bx6-sbs-brt-bx6-cb4-may2022",
+          "display_name": "Bx6 Select Bus Service",
+          "project_name": "Bx6 Select Bus Service",
+          "project_family": "sbs_or_brt",
+          "project_type": "Select Bus Service",
+          "status": "launched and operating; capital improvements proposed",
+          "source_ids": [
+            "brt_bx6_cb4_may2022"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_bx6_cb4_may2022",
+              "block_id": "p004_c0001",
+              "evidence_id": "brt_bx6_cb4_may2022#p004_c0001",
+              "source_quote": "Bx6 Select Bus Service"
+            },
+            {
+              "source_id": "brt_bx6_cb4_may2022",
+              "block_id": "p004_c0002",
+              "evidence_id": "brt_bx6_cb4_may2022#p004_c0002",
+              "source_quote": "Launched on September 3, 2017"
+            }
+          ]
+        },
+        {
+          "record_id": "project_bx6-sbs-brt-bx6-cb12-may2022",
+          "display_name": "Bx6 Select Bus Service Project",
+          "project_name": "Bx6 Select Bus Service",
+          "project_family": "sbs_or_brt",
+          "project_type": "SBS",
+          "status": "Implemented; capital improvements in design/procurement phase",
+          "source_ids": [
+            "brt_bx6_cb12_may2022"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_bx6_cb12_may2022",
+              "block_id": "p004_c0001",
+              "evidence_id": "brt_bx6_cb12_may2022#p004_c0001",
+              "source_quote": "Bx6 Select Bus Service"
+            },
+            {
+              "source_id": "brt_bx6_cb12_may2022",
+              "block_id": "p004_c0002",
+              "evidence_id": "brt_bx6_cb12_may2022#p004_c0002",
+              "source_quote": "Launched on September 3, 2017"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_q44-sbs-flushing-jamaica-bronx-cb9",
+      "target_id": "project_q44-sbs-launch-2015",
+      "reason": "Both records identify the same Q44 Select Bus Service project between Jamaica and the Bronx Zoo. The alias record is the planning-stage CB9 presentation; the target record carries launch/replacement evidence for the same route and corridor. This is a source-time status difference, not a separate project.",
+      "evidence": [
+        {
+          "record_id": "project_q44-sbs-flushing-jamaica-bronx-cb9",
+          "display_name": "Q44 Select Bus Service",
+          "project_name": "Q44 Select Bus Service",
+          "project_family": "sbs_or_brt",
+          "project_type": "Select Bus Service",
+          "status": "Proposed - Step 3: Develop corridor plan (Winter/Spring 2015)",
+          "source_ids": [
+            "2015_04_02_brt_flushing_jamaica_cb9_presentation"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "2015_04_02_brt_flushing_jamaica_cb9_presentation",
+              "block_id": "p001_c0001",
+              "evidence_id": "2015_04_02_brt_flushing_jamaica_cb9_presentation#p001_c0001",
+              "source_quote": "Q44 Select Bus Service"
+            },
+            {
+              "source_id": "2015_04_02_brt_flushing_jamaica_cb9_presentation",
+              "block_id": "p013_c0003",
+              "evidence_id": "2015_04_02_brt_flushing_jamaica_cb9_presentation#p013_c0003",
+              "source_quote": "Step 3: Develop corridor plan (Winter/Spring 2015)"
+            }
+          ]
+        },
+        {
+          "record_id": "project_q44-sbs-launch-2015",
+          "display_name": "Q44 Select Bus Service",
+          "project_name": "Q44 Select Bus Service",
+          "project_family": "sbs_or_brt",
+          "project_type": "SBS",
+          "status": "proposed",
+          "source_ids": [
+            "2015_09_22_brt_flushing_jamaica_cb7_presentation",
+            "brt_flushing_main_st_aug2018"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "2015_09_22_brt_flushing_jamaica_cb7_presentation",
+              "block_id": "p007_c0001",
+              "evidence_id": "2015_09_22_brt_flushing_jamaica_cb7_presentation#p007_c0001",
+              "source_quote": "Q44 SBS Overview"
+            },
+            {
+              "source_id": "2015_09_22_brt_flushing_jamaica_cb7_presentation",
+              "block_id": "p007_c0004",
+              "evidence_id": "2015_09_22_brt_flushing_jamaica_cb7_presentation#p007_c0004",
+              "source_quote": "Q44 LTD will be replaced by Q44 SBS, operating at all times"
+            },
+            {
+              "source_id": "2015_09_22_brt_flushing_jamaica_cb7_presentation",
+              "block_id": "p007_c0005",
+              "evidence_id": "2015_09_22_brt_flushing_jamaica_cb7_presentation#p007_c0005",
+              "source_quote": "SBS will follow same route as LTD from Merrick Blvd in Jamaica to the Bronx Zoo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "treatment_component",
+      "alias_id": "treatment_offset-bus-lane-lex-ave-60-52",
+      "target_id": "treatment_offset-bus-lane-lex-ave-60th-52nd_2",
+      "reason": "Both treatment records describe the same Lexington Avenue offset bus lane conversion between 60th Street and 52nd Street. The descriptions and locations match; the target also carries an implementation timing note from a later source.",
+      "evidence": [
+        {
+          "record_id": "treatment_offset-bus-lane-lex-ave-60-52",
+          "display_name": "Offset bus lane conversion - Lexington Ave 60th St to 52nd St",
+          "treatment_kind": "offset bus lane",
+          "treatment_family": "bus_lane",
+          "location_text": "Lexington Avenue, 60th Street to 52nd Street, Manhattan",
+          "source_ids": [
+            "lexington_ave_60_st_52_st_sept2025"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "lexington_ave_60_st_52_st_sept2025",
+              "block_id": "p007_c0002",
+              "evidence_id": "lexington_ave_60_st_52_st_sept2025#p007_c0002",
+              "source_quote": "Improve bus service by upgrading existing curbside bus lane to 24/7 offset bus lane"
+            },
+            {
+              "source_id": "lexington_ave_60_st_52_st_sept2025",
+              "block_id": "p012_c0003",
+              "evidence_id": "lexington_ave_60_st_52_st_sept2025#p012_c0003",
+              "source_quote": "Convert existing curbside bus lanes to offset for improved bus speeds and reliability throughout the corridor"
+            }
+          ]
+        },
+        {
+          "record_id": "treatment_offset-bus-lane-lex-ave-60th-52nd_2",
+          "display_name": "24/7 offset bus lane on Lexington Avenue 60th-52nd",
+          "treatment_kind": "offset_bus_lane",
+          "treatment_family": "bus_lane",
+          "location_text": "Lexington Avenue between 60th Street and 52nd Street",
+          "source_ids": [
+            "lexington_ave_60_st_52_st_oct2025"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "lexington_ave_60_st_52_st_oct2025",
+              "block_id": "p007_c0002",
+              "evidence_id": "lexington_ave_60_st_52_st_oct2025#p007_c0002",
+              "source_quote": "Improve bus service by upgrading existing curbside bus lane to 24/7 offset bus lane"
+            },
+            {
+              "source_id": "lexington_ave_60_st_52_st_oct2025",
+              "block_id": "p012_c0003",
+              "evidence_id": "lexington_ave_60_st_52_st_oct2025#p012_c0003",
+              "source_quote": "Convert existing curbside bus lanes to offset for improved bus speeds and reliability throughout the corridor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "treatment_component",
+      "alias_id": "treatment_flatlands-ralph-intersection_2",
+      "target_id": "treatment_flatlands-ralph-intersection",
+      "reason": "Both treatment records identify the same Flatlands/Ralph intersection redesign treatment. The alias and target have the same description, same treatment kind, and equivalent location text for Flatlands Ave at Ralph Ave.",
+      "evidence": [
+        {
+          "record_id": "treatment_flatlands-ralph-intersection_2",
+          "display_name": "Flatlands/Ralph intersection redesign",
+          "treatment_kind": "intersection redesign",
+          "treatment_family": "capital_or_infrastructure",
+          "location_text": "Flatlands Ave at Ralph Ave",
+          "source_ids": [
+            "brt_south_brooklyn_b82_dec2017"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_south_brooklyn_b82_dec2017",
+              "block_id": "p021_c0002",
+              "evidence_id": "brt_south_brooklyn_b82_dec2017#p021_c0002",
+              "source_quote": "Flatlands/Ralph intersection redesign"
+            }
+          ]
+        },
+        {
+          "record_id": "treatment_flatlands-ralph-intersection",
+          "display_name": "Flatlands/Ralph intersection redesign",
+          "treatment_kind": "intersection redesign",
+          "treatment_family": "capital_or_infrastructure",
+          "location_text": "Flatlands/Ralph",
+          "source_ids": [
+            "brt_south_brooklyn_b82_cb11_apr2017"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_south_brooklyn_b82_cb11_apr2017",
+              "block_id": "p015_c0002",
+              "evidence_id": "brt_south_brooklyn_b82_cb11_apr2017#p015_c0002",
+              "source_quote": "Flatlands/Ralph intersection redesign"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guard_checks": {
+    "mutation_scope": "prep artifact only; no canonical JSONL, canonical.db, identity-overrides, LOG.md, manifest, wiki, materialized, generated-output, or submission files intentionally changed",
+    "candidate_limit": {
+      "max_allowed": 8,
+      "proposed_count": 8,
+      "pass": true
+    },
+    "non_entity_scope": {
+      "allowed_kinds": [
+        "corridor",
+        "project",
+        "route",
+        "treatment_component",
+        "claim",
+        "metric_claim",
+        "source_gap"
+      ],
+      "proposed_kinds": [
+        "project",
+        "treatment_component"
+      ],
+      "entity_records_included": false,
+      "pass": true
+    },
+    "override_shape": {
+      "intended_apply_path": "data/identity-overrides/merges.json aliases.<kind>",
+      "flat_aliases": false,
+      "pass": true
+    },
+    "existing_alias_conflicts": {
+      "checked_with": "sqlite3 data/canonical.db identity_aliases and record_aliases plus jq data/identity-overrides/merges.json aliases",
+      "conflicts": [],
+      "pass": true
+    },
+    "do_not_merge_conflicts": {
+      "checked_with": "sqlite3 data/canonical.db do_not_merge and jq data/identity-overrides/do-not-merge.json pairs",
+      "conflicts": [],
+      "pass": true
+    },
+    "prior_prep_conflicts": {
+      "checked_with": "jq over data/review_notes/codex-identity-batch0*-prep.json proposed_aliases through identity085; no identity086 prep artifact present in data/review_notes",
+      "conflicts": [],
+      "pass": true
+    },
+    "record_existence": {
+      "checked_with": "sqlite3 data/canonical.db records",
+      "missing_record_ids": [],
+      "pass": true
+    },
+    "candidate_basis": {
+      "method": "deterministic local inspection of canonical.db records, per-kind tables, evidence_refs, blocks_fts raw source text, identity_aliases, record_aliases, do_not_merge, identity-overrides JSON, and prior prep artifacts",
+      "external_or_provider_llm_used": false,
+      "canonicalize_dedup_identity_review_write_ask_schema_ontology_commands_run": false,
+      "materialize_export_jsonl_validate_run": false,
+      "profile_or_provider_commands_run": false,
+      "pass": true
+    }
+  }
+}

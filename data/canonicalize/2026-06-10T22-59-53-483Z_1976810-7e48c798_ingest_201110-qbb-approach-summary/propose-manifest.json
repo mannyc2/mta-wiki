@@ -1,0 +1,70 @@
+{
+  "run_id": "2026-06-10T22-59-53-483Z_1976810-7e48c798_ingest_201110-qbb-approach-summary",
+  "generated_at": "2026-06-11T02:06:35.285Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 5,
+  "completed": 5,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 56,
+  "validated_decision_count": 56,
+  "quarantined_decision_count": 0,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T22-59-53-483Z_1976810-7e48c798_ingest_201110-qbb-approach-summary",
+    "manifest": "data/canonicalize/2026-06-10T22-59-53-483Z_1976810-7e48c798_ingest_201110-qbb-approach-summary/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T22-59-53-483Z_1976810-7e48c798_ingest_201110-qbb-approach-summary/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T22-59-53-483Z_1976810-7e48c798_ingest_201110-qbb-approach-summary/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T22-59-53-483Z_1976810-7e48c798_ingest_201110-qbb-approach-summary/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 21,
+      "validated_decision_count": 21,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-59-53-483Z_1976810-7e48c798_ingest_201110-qbb-approach-summary/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-02-00-994Z_2111393-efe1d1a0_canonicalize_2026-06-10t22-59-53-483z-1976810-7e48c798-ingest-201110-qbb-approach-summary-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-59-53-483Z_1976810-7e48c798_ingest_201110-qbb-approach-summary/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-02-00-995Z_2111393-dfee8382_canonicalize_2026-06-10t22-59-53-483z-1976810-7e48c798-ingest-201110-qbb-approach-summary-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-59-53-483Z_1976810-7e48c798_ingest_201110-qbb-approach-summary/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-02-00-995Z_2111393-58861c82_canonicalize_2026-06-10t22-59-53-483z-1976810-7e48c798-ingest-201110-qbb-approach-summary-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-59-53-483Z_1976810-7e48c798_ingest_201110-qbb-approach-summary/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-02-00-995Z_2111393-652886f4_canonicalize_2026-06-10t22-59-53-483z-1976810-7e48c798-ingest-201110-qbb-approach-summary-corridor-identity"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 32,
+      "validated_decision_count": 32,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-59-53-483Z_1976810-7e48c798_ingest_201110-qbb-approach-summary/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-02-00-995Z_2111393-55a4a3ba_canonicalize_2026-06-10t22-59-53-483z-1976810-7e48c798-ingest-201110-qbb-approach-summary-relation-linker"
+    }
+  ]
+}

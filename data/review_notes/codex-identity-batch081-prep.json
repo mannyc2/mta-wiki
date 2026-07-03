@@ -1,0 +1,597 @@
+{
+  "note_id": "codex-identity-batch081-prep",
+  "batch_id": "identity081",
+  "created_at": "2026-06-23T00:00:00.000Z",
+  "lane": "codex-only deterministic/manual post-ingest cleanup prep",
+  "scope": "Prepare high-confidence duplicate_global_identity alias decisions only; no override, generated, canonical, submission, manifest, LOG, materialize, export, validate, provider, or post-ingest LLM harness mutation was performed.",
+  "status": "ready_for_conductor_apply",
+  "prepared_count": 8,
+  "all_pass": true,
+  "baseline_context": {
+    "reported_checkpoint": "User-supplied current checkpoint after identity080/relation052: validate backlog 1444 issues, duplicate_global_identity=1431, unexpected_relation_endpoint_shape=13.",
+    "latest_completed_identity_batch": "identity080",
+    "read_only_duplicate_scan_rows_seen": 970,
+    "scan_note": "Read-only duplicate row scan replicated validate's global identity loop against the current canonical DB and existing do-not-merge suppressions; it was used only to verify row presence for the selected pairs."
+  },
+  "intended_mutation_path": "aliases.entity",
+  "intended_mutation": {
+    "aliases": {
+      "entity": {
+        "entity_dept-of-paratransit-meeting-doc-164791": "entity_department-of-paratransit",
+        "entity_long-island-committee-95241": "entity_long-island-committee",
+        "entity_meeting-doc-102751-li-committee": "entity_long-island-committee",
+        "entity_meeting-doc-104751-long-island-committee": "entity_long-island-committee",
+        "entity_meeting-doc-102826-hate-crime-task-force": "entity_hate-crime-task-force-transit-bureau",
+        "entity_meeting-doc-104786-hate-crime-task-force": "entity_hate-crime-task-force-transit-bureau",
+        "entity_finance-committee-november-2022-members": "entity_finance-committee-mta",
+        "entity_fordham-rd-cab-feb2021": "entity_fordham-rd-cab"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "alias_id": "entity_dept-of-paratransit-meeting-doc-164791",
+      "target_id": "entity_department-of-paratransit",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify the same MTA NYCT Department of Paratransit entity. The alias is a one-source meeting-doc shard with entity_name Department of Paratransit and entity_type department; the target carries the same name/type across nine current sources.",
+      "evidence": {
+        "shared_identity_keys": [
+          "entity_department-of-paratransit"
+        ],
+        "canonical_alias": {
+          "record_id": "entity_dept-of-paratransit-meeting-doc-164791",
+          "display_name": "MTA NYCT Department of Paratransit",
+          "entity_name": "Department of Paratransit",
+          "entity_type": "department",
+          "source_id_count": 1,
+          "source_ids_sample": [
+            "meeting_doc_164791"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_164791#p009_c0006"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_164791/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_department-of-paratransit",
+          "display_name": "Department of Paratransit",
+          "entity_name": "Department of Paratransit",
+          "entity_type": "department",
+          "source_id_count": 9,
+          "source_ids_sample": [
+            "meeting_doc_102801",
+            "meeting_doc_138436",
+            "meeting_doc_154986",
+            "meeting_doc_155111",
+            "meeting_doc_164966",
+            "meeting_doc_176421"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_102801#p009_c0003",
+            "meeting_doc_138436#p009_c0004",
+            "meeting_doc_138436#p010_c0004",
+            "meeting_doc_154986#p006_c0007"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_102801/blocks.jsonl",
+            "raw/sources/meeting_doc_138436/blocks.jsonl",
+            "raw/sources/meeting_doc_154986/blocks.jsonl",
+            "raw/sources/meeting_doc_155111/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_department-of-paratransit and entity_dept-of-paratransit-meeting-doc-164791 share identity key entity_department-of-paratransit."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_long-island-committee-95241",
+      "target_id": "entity_long-island-committee",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify the same Long Island Committee. The alias is a single meeting_doc_95241 shard with matching entity_name/entity_type; the target aggregates the same committee across thirty-three sources.",
+      "evidence": {
+        "shared_identity_keys": [
+          "entity_long-island-committee"
+        ],
+        "canonical_alias": {
+          "record_id": "entity_long-island-committee-95241",
+          "display_name": "Long Island Committee",
+          "entity_name": "Long Island Committee",
+          "entity_type": "committee",
+          "source_id_count": 1,
+          "source_ids_sample": [
+            "meeting_doc_95241"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_95241#p001_c0004"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_95241/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_long-island-committee",
+          "display_name": "Long Island Committee",
+          "entity_name": "Long Island Committee",
+          "entity_type": "committee",
+          "source_id_count": 33,
+          "source_ids_sample": [
+            "meeting_doc_100336",
+            "meeting_doc_107636",
+            "meeting_doc_109341",
+            "meeting_doc_111736",
+            "meeting_doc_111781",
+            "meeting_doc_113926"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_100336#p001_c0005",
+            "meeting_doc_107636#p001_c0004",
+            "meeting_doc_111736#p001_c0002",
+            "meeting_doc_111736#p001_c0003"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_100336/blocks.jsonl",
+            "raw/sources/meeting_doc_107636/blocks.jsonl",
+            "raw/sources/meeting_doc_111736/blocks.jsonl",
+            "raw/sources/meeting_doc_111781/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_long-island-committee and entity_long-island-committee-95241 share identity key entity_long-island-committee."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-102751-li-committee",
+      "target_id": "entity_long-island-committee",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify the same Long Island Committee. The alias is a one-source meeting_doc_102751 shard and shares the exact committee name/type and identity key with the multi-source target.",
+      "evidence": {
+        "shared_identity_keys": [
+          "entity_long-island-committee"
+        ],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-102751-li-committee",
+          "display_name": "Long Island Committee",
+          "entity_name": "Long Island Committee",
+          "entity_type": "committee",
+          "source_id_count": 1,
+          "source_ids_sample": [
+            "meeting_doc_102751"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_102751#p001_c0005"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_102751/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_long-island-committee",
+          "display_name": "Long Island Committee",
+          "entity_name": "Long Island Committee",
+          "entity_type": "committee",
+          "source_id_count": 33,
+          "source_ids_sample": [
+            "meeting_doc_100336",
+            "meeting_doc_107636",
+            "meeting_doc_109341",
+            "meeting_doc_111736",
+            "meeting_doc_111781",
+            "meeting_doc_113926"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_100336#p001_c0005",
+            "meeting_doc_107636#p001_c0004",
+            "meeting_doc_111736#p001_c0002",
+            "meeting_doc_111736#p001_c0003"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_100336/blocks.jsonl",
+            "raw/sources/meeting_doc_107636/blocks.jsonl",
+            "raw/sources/meeting_doc_111736/blocks.jsonl",
+            "raw/sources/meeting_doc_111781/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_long-island-committee and entity_meeting-doc-102751-li-committee share identity key entity_long-island-committee."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-104751-long-island-committee",
+      "target_id": "entity_long-island-committee",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify the same Long Island Committee. The alias is a one-source meeting_doc_104751 shard and shares the exact committee name/type and identity key with the multi-source target.",
+      "evidence": {
+        "shared_identity_keys": [
+          "entity_long-island-committee"
+        ],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-104751-long-island-committee",
+          "display_name": "Long Island Committee",
+          "entity_name": "Long Island Committee",
+          "entity_type": "committee",
+          "source_id_count": 1,
+          "source_ids_sample": [
+            "meeting_doc_104751"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_104751#p001_c0004"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_104751/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_long-island-committee",
+          "display_name": "Long Island Committee",
+          "entity_name": "Long Island Committee",
+          "entity_type": "committee",
+          "source_id_count": 33,
+          "source_ids_sample": [
+            "meeting_doc_100336",
+            "meeting_doc_107636",
+            "meeting_doc_109341",
+            "meeting_doc_111736",
+            "meeting_doc_111781",
+            "meeting_doc_113926"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_100336#p001_c0005",
+            "meeting_doc_107636#p001_c0004",
+            "meeting_doc_111736#p001_c0002",
+            "meeting_doc_111736#p001_c0003"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_100336/blocks.jsonl",
+            "raw/sources/meeting_doc_107636/blocks.jsonl",
+            "raw/sources/meeting_doc_111736/blocks.jsonl",
+            "raw/sources/meeting_doc_111781/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_long-island-committee and entity_meeting-doc-104751-long-island-committee share identity key entity_long-island-committee."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-102826-hate-crime-task-force",
+      "target_id": "entity_hate-crime-task-force-transit-bureau",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify the same Hate Crime Task Force Transit Bureau. The alias is a one-source meeting_doc_102826 shard with matching entity_name/entity_type; the target carries the same task-force identity across three sources.",
+      "evidence": {
+        "shared_identity_keys": [
+          "entity_hate-crime-task-force-transit-bureau"
+        ],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-102826-hate-crime-task-force",
+          "display_name": "Hate Crime Task Force Transit Bureau",
+          "entity_name": "Hate Crime Task Force Transit Bureau",
+          "entity_type": "task force",
+          "source_id_count": 1,
+          "source_ids_sample": [
+            "meeting_doc_102826"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_102826#p005_c0001"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_102826/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_hate-crime-task-force-transit-bureau",
+          "display_name": "Hate Crime Task Force Transit Bureau",
+          "entity_name": "Hate Crime Task Force Transit Bureau",
+          "entity_type": "task force",
+          "source_id_count": 3,
+          "source_ids_sample": [
+            "meeting_doc_105916",
+            "meeting_doc_107526",
+            "meeting_doc_98316"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_105916#p004_c0001",
+            "meeting_doc_107526#p005_c0001",
+            "meeting_doc_98316#p005_c0001"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_105916/blocks.jsonl",
+            "raw/sources/meeting_doc_107526/blocks.jsonl",
+            "raw/sources/meeting_doc_98316/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_hate-crime-task-force-transit-bureau and entity_meeting-doc-102826-hate-crime-task-force share identity key entity_hate-crime-task-force-transit-bureau."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_meeting-doc-104786-hate-crime-task-force",
+      "target_id": "entity_hate-crime-task-force-transit-bureau",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify the same Hate Crime Task Force Transit Bureau. The alias is a one-source meeting_doc_104786 shard with matching entity_name/entity_type; the target carries the same task-force identity across three sources.",
+      "evidence": {
+        "shared_identity_keys": [
+          "entity_hate-crime-task-force-transit-bureau"
+        ],
+        "canonical_alias": {
+          "record_id": "entity_meeting-doc-104786-hate-crime-task-force",
+          "display_name": "Hate Crime Task Force Transit Bureau",
+          "entity_name": "Hate Crime Task Force Transit Bureau",
+          "entity_type": "task force",
+          "source_id_count": 1,
+          "source_ids_sample": [
+            "meeting_doc_104786"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_104786#p005_c0001"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_104786/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_hate-crime-task-force-transit-bureau",
+          "display_name": "Hate Crime Task Force Transit Bureau",
+          "entity_name": "Hate Crime Task Force Transit Bureau",
+          "entity_type": "task force",
+          "source_id_count": 3,
+          "source_ids_sample": [
+            "meeting_doc_105916",
+            "meeting_doc_107526",
+            "meeting_doc_98316"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_105916#p004_c0001",
+            "meeting_doc_107526#p005_c0001",
+            "meeting_doc_98316#p005_c0001"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_105916/blocks.jsonl",
+            "raw/sources/meeting_doc_107526/blocks.jsonl",
+            "raw/sources/meeting_doc_98316/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_hate-crime-task-force-transit-bureau and entity_meeting-doc-104786-hate-crime-task-force share identity key entity_hate-crime-task-force-transit-bureau."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_finance-committee-november-2022-members",
+      "target_id": "entity_finance-committee-mta",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify the MTA Finance Committee. The alias is a November 2022 one-source shard with entity_name Finance Committee and entity_type committee; the target is the multi-source MTA Finance Committee record.",
+      "evidence": {
+        "shared_identity_keys": [
+          "entity_finance-committee"
+        ],
+        "canonical_alias": {
+          "record_id": "entity_finance-committee-november-2022-members",
+          "display_name": "MTA Finance Committee (November 2022)",
+          "entity_name": "Finance Committee",
+          "entity_type": "committee",
+          "source_id_count": 1,
+          "source_ids_sample": [
+            "meeting_doc_102786"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_102786#p005_c0001"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_102786/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_finance-committee-mta",
+          "display_name": "MTA Finance Committee",
+          "entity_name": "Finance Committee",
+          "entity_type": "committee",
+          "source_id_count": 72,
+          "source_ids_sample": [
+            "meeting_doc_100276",
+            "meeting_doc_111901",
+            "meeting_doc_112226",
+            "meeting_doc_115371",
+            "meeting_doc_129051",
+            "meeting_doc_131646"
+          ],
+          "evidence_refs_sample": [
+            "meeting_doc_100276#p001_c0006",
+            "meeting_doc_112226#p001_c0002",
+            "meeting_doc_115371#p001_c0002",
+            "meeting_doc_115371#p011_c0002"
+          ],
+          "source_paths_sample": [
+            "raw/sources/meeting_doc_100276/blocks.jsonl",
+            "raw/sources/meeting_doc_112226/blocks.jsonl",
+            "raw/sources/meeting_doc_115371/blocks.jsonl",
+            "raw/sources/meeting_doc_111901/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_finance-committee-mta and entity_finance-committee-november-2022-members share identity key entity_finance-committee."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    },
+    {
+      "alias_id": "entity_fordham-rd-cab-feb2021",
+      "target_id": "entity_fordham-rd-cab",
+      "mutation_path": "aliases.entity",
+      "kind": "duplicate_global_identity",
+      "reason": "Both records identify the Fordham Road Community Advisory Board. The alias is the February 2021 CAB shard; the target is the June 2021 Fordham Road CAB record, with the same entity_name/entity_type and shared community-advisory-board identity key.",
+      "evidence": {
+        "shared_identity_keys": [
+          "entity_fordham-rd-community-advisory-board"
+        ],
+        "canonical_alias": {
+          "record_id": "entity_fordham-rd-cab-feb2021",
+          "display_name": "Fordham Road Community Advisory Board",
+          "entity_name": "Fordham Road Community Advisory Board",
+          "entity_type": "advisory board",
+          "source_id_count": 1,
+          "source_ids_sample": [
+            "fordham_rd_major_deegan_expwy_boston_rd_cab_feb2021"
+          ],
+          "evidence_refs_sample": [
+            "fordham_rd_major_deegan_expwy_boston_rd_cab_feb2021#p001_c0002"
+          ],
+          "source_paths_sample": [
+            "raw/sources/fordham_rd_major_deegan_expwy_boston_rd_cab_feb2021/blocks.jsonl"
+          ]
+        },
+        "canonical_target": {
+          "record_id": "entity_fordham-rd-cab",
+          "display_name": "Fordham Road Community Advisory Board",
+          "entity_name": "Fordham Road Community Advisory Board",
+          "entity_type": "advisory board",
+          "source_id_count": 1,
+          "source_ids_sample": [
+            "fordham_rd_major_deegan_expwy_boston_rd_jun2021"
+          ],
+          "evidence_refs_sample": [
+            "fordham_rd_major_deegan_expwy_boston_rd_jun2021#p021_c0001",
+            "fordham_rd_major_deegan_expwy_boston_rd_jun2021#p021_c0002"
+          ],
+          "source_paths_sample": [
+            "raw/sources/fordham_rd_major_deegan_expwy_boston_rd_jun2021/blocks.jsonl"
+          ]
+        },
+        "validator_rows": [
+          "validate: duplicate_global_identity | Global entity records entity_fordham-rd-cab and entity_fordham-rd-cab-feb2021 share identity key entity_fordham-rd-community-advisory-board."
+        ]
+      },
+      "guards": {
+        "alias_id_materializes_currently": true,
+        "target_id_materializes_currently": true,
+        "alias_is_not_already_overridden_under_aliases_entity": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_is_not_itself_an_alias_under_aliases_entity": true,
+        "target_not_in_identity_aliases_table_as_alias": true,
+        "pair_is_not_in_do_not_merge": true,
+        "evidence_source_paths_exist": true,
+        "source_ids_exist": true,
+        "current_validator_duplicate_row_exists": true
+      },
+      "all_pass": true
+    }
+  ],
+  "blockers": [],
+  "verification": {
+    "commands_run": [
+      "jq read of data/review_notes/codex-identity-batch080-prep.json for prior artifact shape",
+      "jq read of data/identity-overrides/merges.json and data/identity-overrides/do-not-merge.json for guard shape",
+      "sqlite3 schema inspection for records, identity_aliases, do_not_merge, record_sources, and evidence_refs",
+      "bun --eval read-only duplicate_global_identity scan using packages/db/src/identity.ts identityKeysForRecord/isGlobalRecordKind against data/canonical.db",
+      "bun --eval read-only guard/evidence extraction for selected identity081 decisions"
+    ],
+    "provider_backed_commands_run": false,
+    "post_ingest_llm_harness_commands_run": false,
+    "materialize_or_export_or_validate_commands_run": false,
+    "mutated_files": [
+      "data/review_notes/codex-identity-batch081-prep.json"
+    ]
+  }
+}

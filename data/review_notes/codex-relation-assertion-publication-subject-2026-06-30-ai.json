@@ -1,0 +1,141 @@
+{
+  "note_id": "codex-relation-assertion-publication-subject-2026-06-30-ai",
+  "created_at": "2026-06-30T00:00:00.000Z",
+  "author": "codex",
+  "kind": "deterministic_relation_assertion_status_checkpoint",
+  "status": "validated_clean",
+  "scope": "Reduced relation payload assertion_status=unknown with narrow delivered-status inference for source publication subject relations.",
+  "constraints": {
+    "external_or_provider_llms_used": false,
+    "forbidden_commands_run": [],
+    "canonical_jsonl_hand_edited": false,
+    "mutation_path": "deterministic assertion qualifier/test changes plus bun packages/cli/src/cli.ts materialize"
+  },
+  "subagents": [
+    {
+      "agent_id": "019f1abd-8508-7bc3-b7c9-a76c2c858164",
+      "nickname": "Arendt",
+      "role": "read-only funding_award assertion-status scout",
+      "status": "closed",
+      "finding_summary": "Rebaselined 360 unknown funding_award relations. Found only one very small 3-record awarded_to slice, but the decisive award wording is in raw source block text rather than canonical relation description/source_quote fields for those records, so this turn held the slice instead of hardcoding record ids into assertion qualifiers."
+    }
+  ],
+  "before": {
+    "relation_total": 20650,
+    "assertion_status_counts": {
+      "cancelled": 2,
+      "deferred": 22,
+      "delivered": 3839,
+      "in_progress": 1600,
+      "planned": 2853,
+      "proposed": 3104,
+      "unknown": 9230
+    },
+    "unknown_by_relation_family": {
+      "metric_context": 5661,
+      "agency_role": 636,
+      "timeline_context": 603,
+      "claim_context": 509,
+      "partnership_engagement": 361,
+      "funding_award": 360,
+      "corridor_scope": 308,
+      "publication_role": 199,
+      "treatment_context": 119,
+      "governance_legal": 112,
+      "organization_hierarchy": 109,
+      "route_scope": 93,
+      "dependency_or_reference": 85,
+      "location_scope": 35,
+      "program_project_scope": 22,
+      "data_reporting": 16,
+      "ownership_role": 2
+    }
+  },
+  "implemented": {
+    "files": [
+      "packages/pipeline/src/records/assertion-qualifiers.ts",
+      "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+    ],
+    "rules": [
+      {
+        "name": "source_subject_publication_relations",
+        "guard": "relation_family publication_role; relation_kind about, about_entity, or covers; subject is source; object is entity; relation source_id/source_ids includes the source endpoint source_id",
+        "normalization": "assertion_status delivered",
+        "rows_moved": 45,
+        "negative_guards": [
+          "prepared_for",
+          "wrong endpoint kinds such as source->claim",
+          "wrong relation family",
+          "provenance mismatch between relation source and source endpoint"
+        ]
+      }
+    ],
+    "held": [
+      {
+        "name": "funding_award_awarded_to_text_slice",
+        "reason": "The scout found 3 high-confidence award records, but live canonical relation records lack the decisive source_quote/description text. The proof is present in raw source block text such as OAS/UDI/WAYE was awarded a contract. The pure assertion qualifier fold should not hardcode record ids, and broader description-only awarded_to rules would incorrectly catch approval-request records such as relation_exp-urbahn-contract-design-services."
+      },
+      {
+        "name": "timeline_agenda_relations",
+        "reason": "Local sampling showed agenda relations mix no-items/no-meetings, planned work-plan agenda entries, and actual meetings, so they need a separate exact guard pass."
+      }
+    ]
+  },
+  "after": {
+    "relation_total": 20650,
+    "assertion_status_counts": {
+      "cancelled": 2,
+      "deferred": 22,
+      "delivered": 3884,
+      "in_progress": 1600,
+      "planned": 2853,
+      "proposed": 3104,
+      "unknown": 9185
+    },
+    "unknown_by_relation_family": {
+      "metric_context": 5661,
+      "agency_role": 636,
+      "timeline_context": 603,
+      "claim_context": 509,
+      "partnership_engagement": 361,
+      "funding_award": 360,
+      "corridor_scope": 308,
+      "publication_role": 154,
+      "treatment_context": 119,
+      "governance_legal": 112,
+      "organization_hierarchy": 109,
+      "route_scope": 93,
+      "dependency_or_reference": 85,
+      "location_scope": 35,
+      "program_project_scope": 22,
+      "data_reporting": 16,
+      "ownership_role": 2
+    },
+    "delta": {
+      "unknown": -45,
+      "delivered": 45,
+      "publication_role_unknown": -45
+    }
+  },
+  "verification": {
+    "focused_tests": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts: 31 pass, 0 fail, 111 expect() calls",
+    "typecheck": "bun run typecheck passed",
+    "materialize": "bun packages/cli/src/cli.ts materialize completed; Materialized 93092/98102 submissions; retired skipped 243; SQLite FTS quick_check ok",
+    "sqlite_quick_check": "sqlite3 data/canonical.db 'PRAGMA quick_check;': ok",
+    "validate": "bun packages/cli/src/cli.ts validate: Issues 0; submissions 98102; canonical records 84040; wiki pages 7334"
+  },
+  "remaining_lanes": [
+    "Relation assertion_status unknown remains 9185, dominated by metric_context 5661, agency_role 636, timeline_context 603, claim_context 509, partnership_engagement 361, funding_award 360, and corridor_scope 308.",
+    "Funding_award needs either source-block text available to assertion qualifiers or a separate deterministic materializer context pass before the 3-record awarded_to slice can be encoded without hardcoded ids.",
+    "Timeline agenda/no-items and corridor proposed/current operation surfaces remain promising but require exact negative guards."
+  ],
+  "commands_not_run": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed commands"
+  ]
+}

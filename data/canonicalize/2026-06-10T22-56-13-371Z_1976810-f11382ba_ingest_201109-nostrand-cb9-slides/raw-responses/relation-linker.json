@@ -1,0 +1,668 @@
+{
+  "run_id": "2026-06-10T22-56-13-371Z_1976810-f11382ba_ingest_201109-nostrand-cb9-slides",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T01:48:08.456Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "d01-b44-weekday-ridership",
+        "local_observation_id": "metric_b44_weekday_ridership_201109",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_b44-sbs",
+            "object_id": "metric_b44-weekday-ridership-201109",
+            "description": "B44 weekday ridership: 41,000 riders",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p002_c0004",
+                "source_quote": "41,000 weekday riders – 7th busiest bus route in city"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric describes B44 bus route ridership; evidence block is from CB9 presentation about B44/Nostrand SBS.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p002_c0004",
+            "source_quote": "41,000 weekday riders – 7th busiest bus route in city"
+          }
+        ]
+      },
+      {
+        "decision_id": "d02-b44-avg-speed",
+        "local_observation_id": "metric_b44_avg_speed_201109",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_b44-sbs",
+            "object_id": "metric_b44-avg-speed-201109",
+            "description": "B44 average speed: 7-8 mph",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p002_c0004",
+                "source_quote": "Buses travel at an average speed of 7-8 mph"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric describes B44 bus route speed; evidence block is from CB9 presentation about B44/Nostrand SBS.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p002_c0004",
+            "source_quote": "Buses travel at an average speed of 7-8 mph"
+          }
+        ]
+      },
+      {
+        "decision_id": "d03-cb9-boardings",
+        "local_observation_id": "metric_cb9_boardings_b44_201109",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_b44-sbs",
+            "object_id": "metric_cb9-boardings-b44-201109",
+            "description": "CB9 boardings on B44: 5,500 people",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p002_c0004",
+                "source_quote": "5,500 people board in CB9"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric describes B44 boardings in CB9; evidence block is from CB9 presentation about B44/Nostrand SBS.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p002_c0004",
+            "source_quote": "5,500 people board in CB9"
+          }
+        ]
+      },
+      {
+        "decision_id": "d04-residents-quarter-mile",
+        "local_observation_id": "metric_residents_within_quarter_mile_201109",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "metric_residents-within-quarter-mile-201109",
+            "description": "300,000 residents within 1/4 mile of Nostrand corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p002_c0006",
+                "source_quote": "300,000 residents"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric describes population within quarter mile of Nostrand Ave/Rogers Ave corridor; evidence block is from CB9 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p002_c0006",
+            "source_quote": "300,000 residents"
+          }
+        ]
+      },
+      {
+        "decision_id": "d05-sbs-trip-time-improvement",
+        "local_observation_id": "metric_sbs_trip_time_improvement_201109",
+        "decision": "uncertain",
+        "rationale": "Metric describes SBS trip time improvement on Fordham Rd, 1st and 2nd Aves — not about Nostrand/Rogers corridor or B44 route. The cited text does not name any subject in the Nostrand project scope.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p006_c0003",
+            "source_quote": "15% to 20% faster trips"
+          }
+        ]
+      },
+      {
+        "decision_id": "d06-sbs-ridership-increase",
+        "local_observation_id": "metric_sbs_ridership_increase_201109",
+        "decision": "uncertain",
+        "rationale": "Metric describes ridership increase on SBS routes generally (Fordham Rd, 1st/2nd Aves), not about B44 or Nostrand corridor. The cited text does not name any Nostrand-related subject.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p006_c0003",
+            "source_quote": "10% ridership increase on the entire route, including SBS and local"
+          }
+        ]
+      },
+      {
+        "decision_id": "d07-delivery-10am-1pm",
+        "local_observation_id": "metric_delivery_10am_1pm_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "metric_delivery-10am-1pm-pct",
+            "description": "31% of deliveries on Nostrand Ave occur 10 AM - 1 PM",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p018_c0006",
+                "source_quote": "31% for 10 AM - 1 PM"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric from merchant survey about deliveries on Nostrand Ave corridor; evidence block is from CB9 presentation about Nostrand Ave.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p018_c0006",
+            "source_quote": "31% for 10 AM - 1 PM"
+          }
+        ]
+      },
+      {
+        "decision_id": "d08-delivery-1to4pm",
+        "local_observation_id": "metric_delivery_1to4pm_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "metric_delivery-1to4pm-pct",
+            "description": "26% of deliveries on Nostrand Ave occur 1-4 PM",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p018_c0006",
+                "source_quote": "26% for 1 to 4 PM"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric from merchant survey about deliveries on Nostrand Ave corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p018_c0006",
+            "source_quote": "26% for 1 to 4 PM"
+          }
+        ]
+      },
+      {
+        "decision_id": "d09-delivery-4to7pm",
+        "local_observation_id": "metric_delivery_4to7pm_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "metric_delivery-4to7pm-pct",
+            "description": "13% of deliveries on Nostrand Ave occur 4-7 PM",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p018_c0006",
+                "source_quote": "13% for 4-7 PM"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric from merchant survey about deliveries on Nostrand Ave corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p018_c0006",
+            "source_quote": "13% for 4-7 PM"
+          }
+        ]
+      },
+      {
+        "decision_id": "d10-delivery-7to10am",
+        "local_observation_id": "metric_delivery_7to10am_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "metric_delivery-7to10am-pct",
+            "description": "19% of deliveries on Nostrand Ave occur 7-10 AM",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p018_c0006",
+                "source_quote": "19% for 7-10 AM"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric from merchant survey about deliveries on Nostrand Ave corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p018_c0006",
+            "source_quote": "19% for 7-10 AM"
+          }
+        ]
+      },
+      {
+        "decision_id": "d11-critical-parking-4to7pm",
+        "local_observation_id": "metric_critical_parking_4to7pm",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "metric_critical-parking-4to7pm",
+            "description": "38% of Nostrand Ave merchants consider parking most critical 4-7 PM",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p018_c0008",
+                "source_quote": "38% for 4-7 PM"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric from merchant survey about parking on Nostrand Ave corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p018_c0008",
+            "source_quote": "38% for 4-7 PM"
+          }
+        ]
+      },
+      {
+        "decision_id": "d12-merchant-delivery-zone",
+        "local_observation_id": "metric_merchant_delivery_zone_preference",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "metric_merchant-delivery-zone-preference",
+            "description": "46% of Nostrand Ave merchants prefer delivery zone in front of store",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p019_c0003",
+                "source_quote": "Delivery zone in front of the store, 2-3 hours per day 46%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric from merchant survey about delivery zone preferences on Nostrand Ave corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p019_c0003",
+            "source_quote": "Delivery zone in front of the store, 2-3 hours per day 46%"
+          }
+        ]
+      },
+      {
+        "decision_id": "d13-merchant-3plus-deliveries",
+        "local_observation_id": "metric_merchant_deliveries_3plus_per_day",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "metric_merchant-deliveries-3plus-per-day",
+            "description": "36% of Nostrand Ave businesses get 3+ deliveries per day",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p024_c0004",
+                "source_quote": "3-5 or more 36%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric from merchant survey about delivery frequency on Nostrand Ave corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p024_c0004",
+            "source_quote": "3-5 or more 36%"
+          }
+        ]
+      },
+      {
+        "decision_id": "d14-delivery-duration-10to30min",
+        "local_observation_id": "metric_delivery_duration_10to30min",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "metric_delivery-duration-10to30min",
+            "description": "37% of deliveries on Nostrand Ave take 10-30 minutes",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p024_c0007",
+                "source_quote": "10-30 minutes 37%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about delivery duration on Nostrand Ave corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p024_c0007",
+            "source_quote": "10-30 minutes 37%"
+          }
+        ]
+      },
+      {
+        "decision_id": "d15-sbs-customer-satisfaction",
+        "local_observation_id": "claim_sbs_customer_satisfaction_201109",
+        "decision": "uncertain",
+        "rationale": "Claim about SBS customer satisfaction on Fordham Rd, 1st and 2nd Aves — not about Nostrand/Rogers project. The cited text does not name any Nostrand-related subject.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p006_c0003",
+            "source_quote": "Over 90% customer satisfaction"
+          }
+        ]
+      },
+      {
+        "decision_id": "d16-fare-evasion-declined",
+        "local_observation_id": "claim_fare_evasion_declined_sbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_bx12-plus",
+            "object_id": "claim_fare-evasion-declined-sbs_2",
+            "description": "Fare evasion on Bx12 SBS declined after pre-payment introduced",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p005_c0002",
+                "source_quote": "Fare evasion on Bx12 SBS and M15 SBS declined after pre-payment introduced"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_m15-sbs",
+            "object_id": "claim_fare-evasion-declined-sbs_2",
+            "description": "Fare evasion on M15 SBS declined after pre-payment introduced",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p005_c0002",
+                "source_quote": "Fare evasion on Bx12 SBS and M15 SBS declined after pre-payment introduced"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim explicitly names Bx12 SBS and M15 SBS routes in the cited text.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "Fare evasion on Bx12 SBS and M15 SBS declined after pre-payment introduced"
+          }
+        ]
+      },
+      {
+        "decision_id": "d17-sbs-fine-100",
+        "local_observation_id": "claim_sbs_fine_100",
+        "decision": "uncertain",
+        "rationale": "Claim about SBS fare evasion fine ($100) is generic SBS policy information. The cited text does not name any specific Nostrand-related subject, route, or project.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "$100 fine for passengers without a receipt"
+          }
+        ]
+      },
+      {
+        "decision_id": "d18-merchant-delivery-midday",
+        "local_observation_id": "claim_merchant_delivery_midday",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "claim_merchant-delivery-midday",
+            "description": "More than half of deliveries on Nostrand Ave occur midday",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p018_c0002",
+                "source_quote": "More than half of deliveries occur midday, 10 AM to 4 PM"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim from merchant survey about delivery patterns along Nostrand Ave corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p018_c0002",
+            "source_quote": "More than half of deliveries occur midday, 10 AM to 4 PM"
+          }
+        ]
+      },
+      {
+        "decision_id": "d19-shopper-walked-from-home",
+        "local_observation_id": "claim_shopper_walked_from_home",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "claim_shopper-walked-from-home",
+            "description": "69% of shoppers at Nostrand Ave & Empire Blvd walked from home",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p017_c0002",
+                "source_quote": "Walked from Home 69%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim explicitly names Nostrand Ave in its label; evidence from shopper survey at Nostrand Ave & Empire Blvd.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p017_c0002",
+            "source_quote": "Walked from Home 69%"
+          }
+        ]
+      },
+      {
+        "decision_id": "d20-household-car-ownership",
+        "local_observation_id": "claim_household_car_ownership_corridor",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "claim_household-car-ownership-corridor",
+            "description": "62% of households within 1/4 mile of Nostrand corridor do not own a car",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p002_c0006",
+                "source_quote": "62% of households do not own a car (65% in CB9)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim about households near Nostrand corridor; evidence block is from CB9 presentation about corridor demographics.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p002_c0006",
+            "source_quote": "62% of households do not own a car (65% in CB9)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d21-transit-commute-rate",
+        "local_observation_id": "claim_transit_commute_rate_corridor",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "claim_transit-commute-rate-corridor",
+            "description": "60% of residents near Nostrand corridor commute by transit",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p002_c0006",
+                "source_quote": "60% of residents commute by transit (67% in CB9, compared to 22% by car, truck, or van)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim about transit commute rate in Nostrand corridor area; evidence block is from CB9 presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p002_c0006",
+            "source_quote": "60% of residents commute by transit (67% in CB9, compared to 22% by car, truck, or van)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d22-final-design-complete",
+        "local_observation_id": "event_final_design_complete_dec2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_final-design-complete-dec2011",
+            "description": "Final design complete milestone for Nostrand/Rogers SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p021_c0002",
+                "source_quote": "Final Design Complete – December 2011"
+              }
+            ]
+          }
+        ],
+        "rationale": "Timeline event explicitly part of the Nostrand/Rogers SBS project schedule; evidence block is from project timeline slide.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p021_c0002",
+            "source_quote": "Final Design Complete – December 2011"
+          }
+        ]
+      },
+      {
+        "decision_id": "d23-start-construction",
+        "local_observation_id": "event_start_construction_mid2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_start-construction-mid2012",
+            "description": "Start of construction milestone for Nostrand/Rogers SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p021_c0002",
+                "source_quote": "Start of Construction – Mid 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "Timeline event explicitly part of the Nostrand/Rogers SBS project schedule.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p021_c0002",
+            "source_quote": "Start of Construction – Mid 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "d24-start-service",
+        "local_observation_id": "event_start_service_late2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_start-service-late2012",
+            "description": "Start of SBS service milestone for Nostrand/Rogers project",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p021_c0002",
+                "source_quote": "Start of Service – Late 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "Timeline event explicitly part of the Nostrand/Rogers SBS project schedule.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p021_c0002",
+            "source_quote": "Start of Service – Late 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "d25-cb-meetings-fall2011",
+        "local_observation_id": "event_cb_meetings_fall2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "event_cb-meetings-fall2011",
+            "description": "Community Board Meetings milestone for Nostrand/Rogers SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "201109_nostrand_cb9_slides",
+                "block_id": "p021_c0002",
+                "source_quote": "Community Board Meetings – Fall 2011"
+              }
+            ]
+          }
+        ],
+        "rationale": "Timeline event explicitly part of the Nostrand/Rogers SBS project schedule.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p021_c0002",
+            "source_quote": "Community Board Meetings – Fall 2011"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-44-43-797Z_2111393-24098df2_canonicalize_2026-06-10t22-56-13-371z-1976810-f11382ba-ingest-201109-nostrand-cb9-slides-relation-linker"
+}

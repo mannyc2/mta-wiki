@@ -1,0 +1,250 @@
+{
+  "run_id": "2026-06-10T22-56-13-279Z_1976810-d212e19e_ingest_20110314-34th-cac4-slides",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T01:28:34.308Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-offboard-m34m16-to-34th-sbs",
+        "local_observation_id": "treatment_off_board_fare_m34_m16_20110314",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_off-board-fare-m34-m16-20110314",
+            "description": "Off-board fare collection on M34/M16 as 2011 planned improvement under 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p007_c0002",
+                "source_quote": "2011 planned improvements – Off-board fare collection on M34 and M16"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "treatment_off-board-fare-m34-m16-20110314",
+            "description": "Off-board fare collection on M34/M16 bus stops on 34th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p007_c0002",
+                "source_quote": "2011 planned improvements – Off-board fare collection on M34 and M16"
+              },
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p008_c0001",
+                "source_quote": "2011 Improvements: Off-Board Fare Collection on M34/M16"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source is the 34th Street Project CAC #4 slide deck. P007 is titled '34th Street SBS design' and explicitly lists off-board fare collection on M34/M16 as a 2011 planned improvement. P008 details the fare machines. Clear evidence this treatment belongs to both the 34th Street SBS project and the 34th Street busway corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p007_c0002",
+            "source_quote": "2011 planned improvements – Off-board fare collection on M34 and M16"
+          },
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p008_c0001",
+            "source_quote": "2011 Improvements: Off-Board Fare Collection on M34/M16"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-lane-cam-to-34th-sbs",
+        "local_observation_id": "treatment_bus_lane_camera_enforcement_20110314",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_bus-lane-camera-enforcement-20110314",
+            "description": "Bus lane camera enforcement as 2011 planned improvement under 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p007_c0002",
+                "source_quote": "Bus lane camera enforcement"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "treatment_bus-lane-camera-enforcement-20110314",
+            "description": "Bus lane camera enforcement on 34th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p007_c0002",
+                "source_quote": "Bus lane camera enforcement"
+              }
+            ]
+          }
+        ],
+        "rationale": "P007 of the 34th Street Project CAC #4 slides lists bus lane camera enforcement under '2011 planned improvements' in the '34th Street SBS design' section. Explicitly part of the 34th Street project and corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p007_c0002",
+            "source_quote": "Bus lane camera enforcement"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-offset-bus-lanes-to-34th-sbs",
+        "local_observation_id": "treatment_offset_bus_lanes_20110314",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_offset-bus-lanes-20110314",
+            "description": "Offset bus lanes as 2012 proposed design under 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p007_c0002",
+                "source_quote": "2012 proposed design – Offset bus lanes"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "treatment_offset-bus-lanes-20110314",
+            "description": "Offset bus lanes on 34th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p007_c0002",
+                "source_quote": "2012 proposed design – Offset bus lanes"
+              },
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p009_c0001",
+                "source_quote": "2012 Proposed Plan: Offset Bus Lane"
+              }
+            ]
+          }
+        ],
+        "rationale": "P007 lists offset bus lanes under '2012 proposed design' in the '34th Street SBS design' section. P009 provides a dedicated slide titled '2012 Proposed Plan: Offset Bus Lane'. Explicitly part of the 34th Street SBS project and corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p007_c0002",
+            "source_quote": "2012 proposed design – Offset bus lanes"
+          },
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p009_c0001",
+            "source_quote": "2012 Proposed Plan: Offset Bus Lane"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-bulbs-to-34th-sbs",
+        "local_observation_id": "treatment_bus_bulbs_sidewalk_extensions_20110314",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_bus-bulbs-sidewalk-extensions-20110314",
+            "description": "Bus bulbs and sidewalk extensions as 2012 proposed design under 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p007_c0002",
+                "source_quote": "Bus bulbs and sidewalk extensions"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "treatment_bus-bulbs-sidewalk-extensions-20110314",
+            "description": "Bus bulbs and sidewalk extensions on 34th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p007_c0002",
+                "source_quote": "Bus bulbs and sidewalk extensions"
+              },
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p010_c0001",
+                "source_quote": "2012 Proposed Plan: Bus Bulbs"
+              }
+            ]
+          }
+        ],
+        "rationale": "P007 lists bus bulbs and sidewalk extensions under '2012 proposed design' in the '34th Street SBS design' section. P010 provides a dedicated slide titled '2012 Proposed Plan: Bus Bulbs'. Explicitly part of the 34th Street SBS project and corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p007_c0002",
+            "source_quote": "Bus bulbs and sidewalk extensions"
+          },
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p010_c0001",
+            "source_quote": "2012 Proposed Plan: Bus Bulbs"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-loading-zones-to-34th-sbs",
+        "local_observation_id": "treatment_expanded_loading_zones_20110314",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-st-sbs-2012",
+            "object_id": "treatment_expanded-loading-zones-20110314",
+            "description": "Expanded loading zones as 2012 proposed design under 34th Street SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p007_c0002",
+                "source_quote": "Expanded loading zones"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_34th-st-busway",
+            "object_id": "treatment_expanded-loading-zones-20110314",
+            "description": "Expanded loading zones on 34th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p007_c0002",
+                "source_quote": "Expanded loading zones"
+              }
+            ]
+          }
+        ],
+        "rationale": "P007 lists expanded loading zones under '2012 proposed design' in the '34th Street SBS design' section. Explicitly part of the 34th Street SBS project and corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p007_c0002",
+            "source_quote": "Expanded loading zones"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-26-39-809Z_2111393-d97654f0_canonicalize_2026-06-10t22-56-13-279z-1976810-d212e19e-ingest-20110314-34th-cac4-slides-treatment-relations"
+}

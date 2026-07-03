@@ -1,0 +1,391 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-22-endpoint-shape-batch023-prep",
+  "created_at": "2026-06-22T00:00:00.000Z",
+  "author": "codex",
+  "scope": "relation endpoint-shape cleanup prep only; no durable retire/apply writes",
+  "batch": "batch023",
+  "run_id_for_replacements": "2026-06-22_codex_relation_cleanup_batch023",
+  "submitted_at_for_dry_run": "2026-06-22T00:00:00.000Z",
+  "bucket": {
+    "name": "treatment components linked directly to timeline events",
+    "original_relation_kind": "has_timeline_event",
+    "original_endpoint_shape": "treatment_component -> event",
+    "replacement_relation_kind": "related_to",
+    "replacement_endpoint_shape": "treatment_component -> event",
+    "why_coherent": "All five originals use has_timeline_event from a treatment component to an event. Current endpoint rules allow has_timeline_event only from project, route, corridor, entity, source, or event subjects. The source text supports a looser treatment/event association, but not a project-owned timeline edge, so related_to preserves the association without requiring a validator rule change."
+  },
+  "exclusions_and_guards": {
+    "retired_json_not_edited": true,
+    "submission_journals_not_edited": true,
+    "generated_outputs_not_edited": true,
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": []
+    },
+    "original_submission_guard": {
+      "retired_hits": [],
+      "prior_relation_batch_hits": []
+    }
+  },
+  "relationEndpointIssues_dry_run_acceptance": {
+    "tooling": "createSubmissionEntry plus relationEndpointIssues using accepted local observation ids by source",
+    "summary": {
+      "prepared_count": 5,
+      "accepted_count": 5,
+      "issue_count": 0,
+      "endpoint_shape_issue_count": 0
+    }
+  },
+  "prepared": [
+    {
+      "retire": {
+        "submission_id": "sub_adf0e006fa7dfe4f",
+        "original_record_id": "relation_montauk-crossing-timetable-133331",
+        "original_local_observation_id": "relation_montauk_crossing_timetable_133331",
+        "malformed_shape": "has_timeline_event treatment_component -> event",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_kind": "treatment_component",
+        "original_subject_id": "treatment_montauk-crossing-renewal-133331",
+        "original_subject_local_observation_id": "treatment_montauk_crossing_renewal_133331",
+        "original_object_kind": "event",
+        "original_object_id": "event_march-4-timetable-change-133331",
+        "original_object_local_observation_id": "event_march_4_timetable_change_133331",
+        "reason": "The original has_timeline_event relation uses a treatment_component subject, which is outside the current allowed subject kinds. The evidence says the Montauk Branch crossing-renewal work occurs within the March 4 timetable-change/service-adjustment context."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_c8820d95f5dee855",
+        "proposed_relation_kind": "related_to",
+        "proposed_endpoint_shape": "treatment_component -> event",
+        "input": {
+          "source_id": "meeting_doc_133331",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch023_montauk_crossing_related_to_march4_timetable",
+          "label": "Montauk Branch Crossing Renewal related to March 4 timetable change",
+          "raw_text": "Montauk Branch Crossing Renewal related to March 4 timetable change",
+          "payload": {
+            "relation_kind": "related_to",
+            "subject_local_observation_id": "treatment_montauk_crossing_renewal_133331",
+            "object_local_observation_id": "event_march_4_timetable_change_133331",
+            "description": "Montauk Branch Crossing Renewal is a construction activity within the March 4 timetable period."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_133331",
+              "evidence_id": "meeting_doc_133331#p002_c0006",
+              "source_path": "raw/sources/meeting_doc_133331/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0006",
+              "text_sha256": "sha256:f7c854ef4acdb0ac704df82bcfe028a3f7a2d3e07535bfab4307005b26e687f8",
+              "text_source": "raw_text"
+            },
+            {
+              "source_id": "meeting_doc_133331",
+              "evidence_id": "meeting_doc_133331#p003_c0002",
+              "source_path": "raw/sources/meeting_doc_133331/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0002",
+              "text_sha256": "sha256:ad1a0b6e4b8d18a970c0d46e8b792bd127a2f1ede0e2804480799d9312a79228",
+              "text_source": "raw_text"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_2f6e8617d7a63cea",
+        "original_record_id": "relation_pj-crossing-timetable-133331",
+        "original_local_observation_id": "relation_pj_crossing_timetable_133331",
+        "malformed_shape": "has_timeline_event treatment_component -> event",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_kind": "treatment_component",
+        "original_subject_id": "treatment_pj-crossing-renewal-133331",
+        "original_subject_local_observation_id": "treatment_pj_crossing_renewal_133331",
+        "original_object_kind": "event",
+        "original_object_id": "event_march-4-timetable-change-133331",
+        "original_object_local_observation_id": "event_march_4_timetable_change_133331",
+        "reason": "The original has_timeline_event relation uses a treatment_component subject, which is outside the current allowed subject kinds. The evidence ties Port Jefferson Branch crossing-renewal work to the same March timetable-change/service-adjustment context."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_6142f2aebbb40b79",
+        "proposed_relation_kind": "related_to",
+        "proposed_endpoint_shape": "treatment_component -> event",
+        "input": {
+          "source_id": "meeting_doc_133331",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch023_pj_crossing_related_to_march4_timetable",
+          "label": "Port Jefferson Branch Crossing Renewal related to March 4 timetable change",
+          "raw_text": "Port Jefferson Branch Crossing Renewal related to March 4 timetable change",
+          "payload": {
+            "relation_kind": "related_to",
+            "subject_local_observation_id": "treatment_pj_crossing_renewal_133331",
+            "object_local_observation_id": "event_march_4_timetable_change_133331",
+            "description": "Port Jefferson Branch Crossing Renewal is a construction activity within the March 4 timetable period."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_133331",
+              "evidence_id": "meeting_doc_133331#p002_c0006",
+              "source_path": "raw/sources/meeting_doc_133331/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0006",
+              "text_sha256": "sha256:f7c854ef4acdb0ac704df82bcfe028a3f7a2d3e07535bfab4307005b26e687f8",
+              "text_source": "raw_text"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_458c019b472da5ad",
+        "original_record_id": "relation_pw-trackwork-timetable-133331",
+        "original_local_observation_id": "relation_pw_trackwork_timetable_133331",
+        "malformed_shape": "has_timeline_event treatment_component -> event",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_kind": "treatment_component",
+        "original_subject_id": "treatment_pw-track-maintenance-133331",
+        "original_subject_local_observation_id": "treatment_pw_track_maintenance_133331",
+        "original_object_kind": "event",
+        "original_object_id": "event_march-4-timetable-change-133331",
+        "original_object_local_observation_id": "event_march_4_timetable_change_133331",
+        "reason": "The original has_timeline_event relation uses a treatment_component subject, which is outside the current allowed subject kinds. The evidence ties Port Washington Branch track maintenance to the March timetable-change/service-adjustment context."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_26a2b1cad13f15b3",
+        "proposed_relation_kind": "related_to",
+        "proposed_endpoint_shape": "treatment_component -> event",
+        "input": {
+          "source_id": "meeting_doc_133331",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch023_pw_trackwork_related_to_march4_timetable",
+          "label": "Port Washington track maintenance related to March 4 timetable change",
+          "raw_text": "Port Washington track maintenance related to March 4 timetable change",
+          "payload": {
+            "relation_kind": "related_to",
+            "subject_local_observation_id": "treatment_pw_track_maintenance_133331",
+            "object_local_observation_id": "event_march_4_timetable_change_133331",
+            "description": "Port Washington Branch Track Maintenance is a construction activity within the March 4 timetable period."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_133331",
+              "evidence_id": "meeting_doc_133331#p002_c0006",
+              "source_path": "raw/sources/meeting_doc_133331/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0006",
+              "text_sha256": "sha256:f7c854ef4acdb0ac704df82bcfe028a3f7a2d3e07535bfab4307005b26e687f8",
+              "text_source": "raw_text"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_e1ef0f75bf3efa53",
+        "original_record_id": "relation_treatment-has-event-bus-only-signals",
+        "original_local_observation_id": "relation_treatment_has_event_bus_only_signals",
+        "malformed_shape": "has_timeline_event treatment_component -> event",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_kind": "treatment_component",
+        "original_subject_id": "treatment_bus-only-signals-flatbush-2024",
+        "original_subject_local_observation_id": "treatment_bus_only_signals_flatbush_2024",
+        "original_object_kind": "event",
+        "original_object_id": "event_bus-only-signals-install-summer2024",
+        "original_object_local_observation_id": "event_bus_only_signals_install_summer2024",
+        "reason": "The original has_timeline_event relation uses a treatment_component subject, which is outside the current allowed subject kinds. The evidence supports that the Bus Only Signals treatment is related to a Summer 2024 installation event."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_54c3d032b48a16bd",
+        "proposed_relation_kind": "related_to",
+        "proposed_endpoint_shape": "treatment_component -> event",
+        "input": {
+          "source_id": "flatbush_ave_cb8_jun2024",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch023_bus_only_signals_related_to_summer2024_installation",
+          "label": "Bus Only Signals related to Summer 2024 installation",
+          "raw_text": "Bus Only Signals related to Summer 2024 installation",
+          "payload": {
+            "relation_kind": "related_to",
+            "subject_local_observation_id": "treatment_bus_only_signals_flatbush_2024",
+            "object_local_observation_id": "event_bus_only_signals_install_summer2024",
+            "description": "Bus Only Signals installation planned for Summer 2024"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "flatbush_ave_cb8_jun2024",
+              "evidence_id": "flatbush_ave_cb8_jun2024#p008_c0003",
+              "source_path": "raw/sources/flatbush_ave_cb8_jun2024/blocks.jsonl",
+              "page_number": 8,
+              "block_id": "p008_c0003",
+              "text_sha256": "sha256:6de405704b1b391ff7c9c606dcf2e096205b96b50e19bf6c6d4acae4d39783cf",
+              "text_source": "raw_text",
+              "source_quote": "3 Bus Only Signals are planned for Summer 2024 installation along Flatbush Ave"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_1b2698c8556cd74e",
+        "original_record_id": "relation_treatment-has-event-tsp-installation",
+        "original_local_observation_id": "relation_treatment_has_event_tsp_installation",
+        "malformed_shape": "has_timeline_event treatment_component -> event",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_kind": "treatment_component",
+        "original_subject_id": "treatment_tsp-flatbush-ave-2022_2",
+        "original_subject_local_observation_id": "treatment_tsp_flatbush_ave_2022",
+        "original_object_kind": "event",
+        "original_object_id": "event_tsp-installation-2022",
+        "original_object_local_observation_id": "event_tsp_installation_2022",
+        "reason": "The original has_timeline_event relation uses a treatment_component subject, which is outside the current allowed subject kinds. The evidence supports that the TSP treatment is related to the 2022 installation event."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_b1c70799ca95fe0e",
+        "proposed_relation_kind": "related_to",
+        "proposed_endpoint_shape": "treatment_component -> event",
+        "input": {
+          "source_id": "flatbush_ave_cb8_jun2024",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch023_tsp_related_to_2022_installation",
+          "label": "Flatbush TSP related to 2022 installation",
+          "raw_text": "Flatbush TSP related to 2022 installation",
+          "payload": {
+            "relation_kind": "related_to",
+            "subject_local_observation_id": "treatment_tsp_flatbush_ave_2022",
+            "object_local_observation_id": "event_tsp_installation_2022",
+            "description": "Transit Signal Priority installed at 37 intersections on Flatbush Ave in 2022"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "flatbush_ave_cb8_jun2024",
+              "evidence_id": "flatbush_ave_cb8_jun2024#p008_c0005",
+              "source_path": "raw/sources/flatbush_ave_cb8_jun2024/blocks.jsonl",
+              "page_number": 8,
+              "block_id": "p008_c0005",
+              "text_sha256": "sha256:ac55f7dca698b78b9596de9aedeeb86d6af9996e72f38e18b4f2895d41ee3b7f",
+              "text_source": "raw_text",
+              "source_quote": "In 2022, NYC DOT installed Transit Signal Priority (TSP) at 37 intersections on Flatbush Ave."
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    }
+  ],
+  "deferred_rule_gaps_considered": [
+    {
+      "bucket": "has_metric claim -> metric_claim",
+      "remaining_count_in_local_inventory": 8,
+      "classification": "deferred_rule_gap",
+      "reason": "These records often say a claim carries or is quantified by a metric. Forcing them to an unshaped relation would lose useful metric context; if the ontology wants claim-owned metrics, the safer fix is a reviewed validator rule admitting claim subjects for has_metric."
+    }
+  ],
+  "source_evidence_blocks_checked": [
+    {
+      "source_id": "meeting_doc_133331",
+      "block_id": "p002_c0006",
+      "page_number": 2,
+      "text_sha256": "sha256:f7c854ef4acdb0ac704df82bcfe028a3f7a2d3e07535bfab4307005b26e687f8",
+      "evidence_summary": "Lists Port Washington track maintenance, Port Jefferson crossing renewal, and Montauk crossing renewal with March 2024 outages and service adjustments."
+    },
+    {
+      "source_id": "meeting_doc_133331",
+      "block_id": "p003_c0002",
+      "page_number": 3,
+      "text_sha256": "sha256:ad1a0b6e4b8d18a970c0d46e8b792bd127a2f1ede0e2804480799d9312a79228",
+      "evidence_summary": "Continues the Montauk Branch service-adjustment description: all tracks out of service and bus replacement for 24 hours."
+    },
+    {
+      "source_id": "flatbush_ave_cb8_jun2024",
+      "block_id": "p008_c0003",
+      "page_number": 8,
+      "text_sha256": "sha256:6de405704b1b391ff7c9c606dcf2e096205b96b50e19bf6c6d4acae4d39783cf",
+      "evidence_summary": "States that three Bus Only Signals are planned for Summer 2024 installation along Flatbush Ave."
+    },
+    {
+      "source_id": "flatbush_ave_cb8_jun2024",
+      "block_id": "p008_c0005",
+      "page_number": 8,
+      "text_sha256": "sha256:ac55f7dca698b78b9596de9aedeeb86d6af9996e72f38e18b4f2895d41ee3b7f",
+      "evidence_summary": "States that NYC DOT installed Transit Signal Priority at 37 Flatbush Ave intersections in 2022."
+    }
+  ],
+  "conductor_application_plan": {
+    "only_after_conflict_free_checkpoint": true,
+    "retire_submission_ids": [
+      "sub_adf0e006fa7dfe4f",
+      "sub_2f6e8617d7a63cea",
+      "sub_458c019b472da5ad",
+      "sub_e1ef0f75bf3efa53",
+      "sub_1b2698c8556cd74e"
+    ],
+    "append_replacement_entries_to": "data/submissions/2026-06-22_codex_relation_cleanup_batch023.jsonl",
+    "replacement_submission_ids": [
+      "sub_c8820d95f5dee855",
+      "sub_6142f2aebbb40b79",
+      "sub_26a2b1cad13f15b3",
+      "sub_54c3d032b48a16bd",
+      "sub_b1c70799ca95fe0e"
+    ]
+  },
+  "blockers": [],
+  "commands_run": [
+    "rg -n \"unexpected_relation_endpoint_shape|relation022|endpoint_shape|review_notes|relation-cleanup\" -S data packages docs AGENTS.md",
+    "find data/review_notes -maxdepth 1 -type f | sort",
+    "git status --short",
+    "sed -n '180,390p' packages/pipeline/src/records/relations.ts",
+    "sed -n '1,520p' data/review_notes/codex-relation-cleanup-batch022-prep.json",
+    "node - <<'NODE' <local endpoint-shape inventory from canonical JSONL, excluding retired submissions>",
+    "node - <<'NODE' <inspect high-count malformed-shape buckets>",
+    "node - <<'NODE' <inspect has_timeline_event treatment_component->event rows and evidence blocks>",
+    "bun --eval '<createSubmissionEntry plus relationEndpointIssues dry run for five related_to replacements>'",
+    "rg -n '<replacement ids/local ids>' data packages docs -S",
+    "rg -n '<original ids>' data/submission-overrides/retired.json data/submissions/2026-06-22_codex_relation_cleanup_batch0*.jsonl data/review_notes -S",
+    "git status --short -- data/review_notes/codex-relation-cleanup-batch023-prep.json data/submission-overrides/retired.json data/submissions/2026-06-22_codex_relation_cleanup_batch023.jsonl data/canonical/relations.jsonl packages/pipeline/src/records/relations.ts"
+  ],
+  "commands_intentionally_not_run": [
+    "materialize",
+    "validate",
+    "export-jsonl",
+    "canonicalize",
+    "campaign dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "provider/profile-backed commands"
+  ]
+}

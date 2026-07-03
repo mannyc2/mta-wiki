@@ -1,0 +1,183 @@
+{
+  "run_id": "2026-06-10T17-48-04-824Z_1496766-1c7fdb21_ingest_2010-06-22-brt-nostrand-cb9",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-10T19:49:39.607Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-offset-bus-lanes-nostrand",
+        "local_observation_id": "treatment_offset_bus_lanes_nostrand_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs-cb9-2010",
+            "object_id": "treatment_offset-bus-lanes-nostrand-2010",
+            "description": "Offset bus lanes for 5 miles as project feature",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_22_brt_nostrand_cb9",
+                "block_id": "p008_c0003",
+                "source_quote": "Offset bus lanes for 5 miles, with bus bulbs at stations from DeKalb to Church Aves"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 8 'Project Features' section explicitly lists offset bus lanes as a BRT project feature.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_22_brt_nostrand_cb9",
+            "block_id": "p008_c0003",
+            "source_quote": "Offset bus lanes for 5 miles, with bus bulbs at stations from DeKalb to Church Aves"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-tsp-nostrand",
+        "local_observation_id": "treatment_tsp_nostrand_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs-cb9-2010",
+            "object_id": "treatment_tsp-nostrand-2010",
+            "description": "Transit Signal Priority for 3.8 miles as project feature",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_22_brt_nostrand_cb9",
+                "block_id": "p008_c0004",
+                "source_quote": "Transit Signal Priority for 3.8 miles from Flatbush Avenue to Sheepshead Bay"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 8 'Project Features' section explicitly lists TSP as a BRT project feature.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_22_brt_nostrand_cb9",
+            "block_id": "p008_c0004",
+            "source_quote": "Transit Signal Priority for 3.8 miles from Flatbush Avenue to Sheepshead Bay"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-new-low-floor-buses-nostrand",
+        "local_observation_id": "treatment_new_low_floor_buses_nostrand_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs-cb9-2010",
+            "object_id": "treatment_new-low-floor-buses-nostrand-2010",
+            "description": "New low-floor buses for entire route as project feature",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_22_brt_nostrand_cb9",
+                "block_id": "p008_c0006",
+                "source_quote": "• New low-floor buses • Next generation fare collection • Branding of stations and buses • Local Buses Serve the Full Route at All Times"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 8 'For the Entire Route' list under Project Features explicitly includes new low-floor buses.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_22_brt_nostrand_cb9",
+            "block_id": "p008_c0006",
+            "source_quote": "• New low-floor buses • Next generation fare collection • Branding of stations and buses • Local Buses Serve the Full Route at All Times"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-next-gen-fare-collection-nostrand",
+        "local_observation_id": "treatment_next_gen_fare_collection_nostrand_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs-cb9-2010",
+            "object_id": "treatment_next-gen-fare-collection-nostrand-2010",
+            "description": "Next generation fare collection for entire route as project feature",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_22_brt_nostrand_cb9",
+                "block_id": "p008_c0006",
+                "source_quote": "• New low-floor buses • Next generation fare collection • Branding of stations and buses • Local Buses Serve the Full Route at All Times"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 8 'For the Entire Route' list under Project Features explicitly includes next generation fare collection.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_22_brt_nostrand_cb9",
+            "block_id": "p008_c0006",
+            "source_quote": "• New low-floor buses • Next generation fare collection • Branding of stations and buses • Local Buses Serve the Full Route at All Times"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-branding-nostrand",
+        "local_observation_id": "treatment_branding_stations_buses_nostrand_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs-cb9-2010",
+            "object_id": "treatment_branding-stations-buses-nostrand-2010",
+            "description": "Branding of stations and buses for entire route as project feature",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_22_brt_nostrand_cb9",
+                "block_id": "p008_c0006",
+                "source_quote": "• New low-floor buses • Next generation fare collection • Branding of stations and buses • Local Buses Serve the Full Route at All Times"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 8 'For the Entire Route' list under Project Features explicitly includes branding of stations and buses.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_22_brt_nostrand_cb9",
+            "block_id": "p008_c0006",
+            "source_quote": "• New low-floor buses • Next generation fare collection • Branding of stations and buses • Local Buses Serve the Full Route at All Times"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-bulbs-nostrand",
+        "local_observation_id": "treatment_bus_bulbs_stations_nostrand_2010",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs-cb9-2010",
+            "object_id": "treatment_bus-bulbs-stations-nostrand-2010",
+            "description": "Bus bulbs at SBS stations as project benefit",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_22_brt_nostrand_cb9",
+                "block_id": "p014_c0004",
+                "source_quote": "Bus bulbs at SBS stations would allow easy, level boarding, with more pedestrian space and greenery."
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 14 'Project Benefits' explicitly describes bus bulbs at SBS stations as part of the project.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_22_brt_nostrand_cb9",
+            "block_id": "p014_c0004",
+            "source_quote": "Bus bulbs at SBS stations would allow easy, level boarding, with more pedestrian space and greenery."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-47-25-736Z_1663150-85d52f77_canonicalize_2026-06-10t17-48-04-824z-1496766-1c7fdb21-ingest-2010-06-22-brt-nostrand-cb9-treatment-relations"
+}

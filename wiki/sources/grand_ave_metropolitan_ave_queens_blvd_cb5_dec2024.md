@@ -1,0 +1,360 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_grand-ave-metropolitan-ave-queens-blvd-cb5-dec2024"
+record_kind: "source"
+display_name: "Grand St/Grand Av Safety & Bus Priority Improvements - Queens CB5 Dec 2024"
+source_id: "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024"
+source_ids:
+  - "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024"
+local_observation_id: "source_grand_ave_cb5_dec2024"
+local_observation_ids:
+  - "source_grand_ave_cb5_dec2024"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T18:42:14.801Z"
+raw_text: "Grand St/Grand Av Safety & Bus Priority Improvements, Queens Community Board 5 Transportation Committee, December 17, 2024"
+submission_ids:
+  - "sub_3d2ebbaff2894e72"
+payload:
+  authority_tier: "board_material"
+  content_type: "presentation"
+  date_text: "December 17, 2024"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2024-12-17"
+    precision: "day"
+    raw_text: "December 17, 2024"
+  description: "Presentation to Queens Community Board 5 on Grand Street/Grand Avenue safety and bus priority improvements from Metropolitan Avenue to Queens Boulevard"
+  document_date: "December 17, 2024"
+  document_date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2024-12-17"
+    precision: "day"
+    raw_text: "December 17, 2024"
+  prepared_for: "Queens Community Board 5 Transportation Committee"
+  published_date_normalized: "2024-12-17"
+  published_date_precision: "day"
+  publisher: "MTA, NYC DOT, BETTERBUSES"
+  title: "Grand St/Grand Av Safety & Bus Priority Improvements"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024"
+    source_path: "raw/sources/grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024/blocks.jsonl"
+    text_sha256: "sha256:99c5ec22f3eea630ec75fc5646358ec82f955b40528e30b702b13446f27ac768"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024#p001_c0002"
+    page_number: 1
+    role: "presented_to"
+    source_id: "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024"
+    source_path: "raw/sources/grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024/blocks.jsonl"
+    text_sha256: "sha256:c5b6dd199eed69fac50242742ae96355d0af73922974c9e23420a45edec57dce"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024#p001_c0003"
+    page_number: 1
+    role: "date"
+    source_id: "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024"
+    source_path: "raw/sources/grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024/blocks.jsonl"
+    text_sha256: "sha256:3bc900ce0841424ad04fb6538de565c13123652719fd8bbffb0a7b2355dbb77d"
+    text_source: "raw_text"
+---
+
+# Grand Street/Grand Avenue, Metropolitan Avenue to Queens Boulevard - presented to Queens Community Board 5 in December 2024 (pdf)
+
+source_id: grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024
+citation: cite block ids exactly as shown in square brackets
+document: 202 block(s)
+
+## Page 1
+
+### [p001_c0001] Grand St/Grand Av Safety & Bus Priority Improvements
+[p001_c0002] Queens Community Board 5 Transportation Committee
+[p001_c0003] December 17, 2024
+[p001_c0004] BETTERBUSES
+
+## Page 2
+
+### [p002_c0001] Table of Contents
+- [p002_c0002] 1. Introduction & Existing Conditions 2. Toolkit 3. Next Steps 4. Design Options & Open Discussion
+[p002_c0003] _2_
+[p002_c0004] _The MTA logo, consisting of the letters 'MTA' in white inside a black circle._
+[p002_c0005] _The BETTERBUSES logo, with 'BETTER' in blue and 'BUSES' in green._
+[p002_c0006] _The NEW YORK CITY DOT logo, featuring the text 'NEW YORK CITY' above 'DOT' and a stylized graphic of a bus._
+
+## Page 3
+
+### [p003_c0001] Introduction & Existing Conditions
+[p003_c0002] _3_
+[p003_c0003] _The MTA logo, consisting of the letters 'MTA' in white inside a black circle._
+[p003_c0004] _The BETTERBUSES logo, featuring a stylized blue and green graphic followed by the text 'BETTERBUSES' in blue and green._
+[p003_c0005] _The New York City Department of Transportation (NYC DOT) logo, which includes the text 'NEW YORK CITY' above a stylized graphic of a bus and the letters 'DOT'._
+
+## Page 4
+
+### [p004_c0001] Why Grand St/Grand Av?
+- [p004_c0002] • Study area: Metropolitan Av to Queens Blvd • Over 51,000 daily bus passengers on the Q54, Q58, and Q59 – Q58 is the highest ridership route in Queens • Critical crosstown service with connections to • MTA Grand Av Bus Depot & Central Maintenance Facility serve 10 routes
+> [p004_c0003] A map of the Grand St/Grand Av corridor in Queens. A thick blue line traces the route from Metropolitan Avenue in the west to Queens Boulevard in the east. The route follows the path of Grand Street, which runs parallel to the Long Island Expressway. Various local streets and landmarks are labeled, including Lindenhurst, Flushing Av, and the Long Island Expressway.
+> [p004_c0004] A photograph of a blue MTA bus, number 7823, parked at the Grand Av Bus Depot. The bus is a modern articulated model. In the background, there are other vehicles, including a green bus and several white vans, on a street with overhead power lines and buildings. The scene is set in an urban environment.
+[p004_c0005] _Grand Av Bus Depot_
+[p004_c0006] _4_
+[p004_c0007] _The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark circle._
+[p004_c0008] _The 'BETTERBUSES' logo, with 'BETTER' in blue and 'BUSES' in green, separated by a stylized graphic of a bus._
+[p004_c0009] _The logo for the New York City Department of Transportation (NYC DOT), featuring the text 'NEW YORK CITY' above 'DOT' in a stylized font._
+
+## Page 5
+
+### [p005_c0001] NYC Streets Plan and Transit Goals
+[p005_c0002] Transit goals of the Streets Plan:
+- [p005_c0003] 1. Increase sustainable travel modes by reconfiguring streets 2. Expand access to job opportunities through faster and more reliable transportation options 3. Allow all New Yorkers to get around the city in multiple ways without encountering barriers to travel
+[p005_c0004] In addition to the Streets Plan and bus priority corridors, NYC DOT and MTA are working together on automated enforcement & transit signal priority
+> [p005_c0005] A map of a portion of New York City, specifically the Queens and Brooklyn areas. The map highlights various bus lanes and priority corridors. Existing bus lanes are shown as green lines, while future bus priority corridors are shown as thicker green lines. Priority Investment Areas are color-coded: Tier 1 (dark purple), Tier 2 (medium purple), and Tier 3 (light purple). 2022 project locations are marked with orange dots. A red oval highlights a specific area in the center of the map, near the intersection of Williamsburg and Ridgewood. Major streets like Woodside, 111th Street, Broadway Triangle, Glendale, and Forest Park are labeled. Highway shields for 22, 19, and 20 are also visible. Legend: EXISTING BUS LANES (Green line) FUTURE BUS PRIORITY CORRIDORS (Thick green line) PRIORITY INVESTMENT AREA TIER 1 (Dark purple) PRIORITY INVESTMENT AREA TIER 2 (Medium purple) PRIORITY INVESTMENT AREA TIER 3 (Light purple) 2022 PROJECT LOCATIONS (Orange dots)
+[p005_c0006] Source: NYC Streets Plan
+[p005_c0007] _3_
+[p005_c0008] _5_
+
+## Page 6
+
+### [p006_c0001] Queens Bus Network Redesign
+- [p006_c0002] • MTA's borough-wide plan to improve bus service – Launched in 2019 • Coordinating with NYC DOT on targeted corridors, including Grand Av/Grand St • DOT is working to support MTA's Proposed Final Plan • MTA published the Proposed Final Plan in December 2023, which incorporated concerns and needs expressed by riders, labor partners, and other stakeholders • QBNR team has participated in over 60 engagements since publishing the Proposed Final Plan, including: – 22 Community Board presentations – 22 engagements with elected officials, civic groups, community groups, institutions, and other stakeholders – 18 pop-up events throughout the system – 5 open houses – 1 public hearing
+> [p006_c0003] NYC DOT Queens Bus Priority Corridors Primary corridors Completed projects Upcoming projects 1 Northern Blvd West 1 Union St 1 Queens Blvd 2 Queens Blvd 2 Roosevelt Av East 2 Grand St/Grand Av 3 69 St 3 Main St/Kissena Blvd 3 Woodhaven Blvd 4 Roosevelt Av West 4 Jamaica Av 4 Hillside Av 5 Corona Av/Broadway 5 Archer Av 6 Junction Blvd/94 St 6 Merrick Blvd/186 St 7 102 St/37 Av/104th St 8 108 St 9 College Point Blvd 10 Sanford Av West 11 Main St 12 Union St 13 Kissena Blvd 14 Sanford Av East 15 Union Tpke 16 Parsons Blvd 17 169 St 18 Jamaica Av 19 Archer Av 20 Sulphur Blvd 21 Merrick Blvd 22 Merrick Blvd *NYC DOT Brooklyn Bus Priority Corridors pictured in gray. For more information, please consult the Brooklyn Bus Redesign Draft Plan.
+[p006_c0004] _6_
+
+## Page 7
+
+### [p007_c0001] Grand Avenue Bus Depot
+> [p007_c0002] A photograph showing a long line of buses and trucks on Grand Avenue, illustrating traffic congestion. A bus in the foreground has 'NOT IN' on its destination sign. A utility pole with a 'NO PARKING ANY TIME' sign is visible on the left.
+[p007_c0003] _Traffic congestion looking east on Grand Avenue from 47 th St_
+[p007_c0004] Source: [MTA]
+- [p007_c0005] • Operates 10 bus routes, including the B38, B47, B57, B60, B62, and Q59 • 1,032 buses pulling in and out of the depot every weekday , including over 80 movements during the busiest hour • Significant operational difficulties for pull-in and pull-out due to truck traffic and congestion from Grand St Bridge, resulting in longer wait times and less reliable service for riders • Improvements along Grand Avenue that prioritize bus service and depot access will result in more reliable, faster buses in an area lacking direct subway service
+[p007_c0006] _7_
+
+## Page 8
+
+### [p008_c0001] Grand Ave/St Bus Speeds
+- [p008_c0002] • Buses speeds are as low as 4 MPH in some sections • Slow speeds concentrated near Grand St L, Grand Ave Depot, and Long Island Expressway • Traffic congestion, double parking, and high volumes of commercial vehicles cause slowdowns
+> [p008_c0003] AM Peak Bus Speeds This map shows the bus speed distribution during the AM Peak on the Grand Ave/St L route. The route is highlighted with four colored lines representing different speed ranges: <6 MPH (dark red), 6-8 MPH (orange), 8-10 MPH (yellow), and >10 MPH (light yellow). The map shows the route starting from the Long Island Expressway (I-495) and heading south towards Grand St L. The slowest speeds (<6 MPH) are concentrated in the southernmost section of the route, near the Grand Ave Depot. As the route progresses north, the speeds generally increase, with the >10 MPH range becoming more prominent. Major streets shown include Grand Ave, St L, Metropolitan Ave, and others. Speed Range <6 MPH 6-8 MPH 8-10 MPH >10 MPH
+> [p008_c0004] PM Peak Bus Speeds This map shows the bus speed distribution during the PM Peak on the Grand Ave/St L route. The route is highlighted with four colored lines representing different speed ranges: <6 MPH (dark red), 6-8 MPH (orange), 8-10 MPH (yellow), and >10 MPH (light yellow). The map shows the route starting from the Long Island Expressway (I-495) and heading south towards Grand St L. The slowest speeds (<6 MPH) are concentrated in the southernmost section of the route, near the Grand Ave Depot. As the route progresses north, the speeds generally increase, with the >10 MPH range becoming more prominent. Major streets shown include Grand Ave, St L, Metropolitan Ave, and others. Speed Range <6 MPH 6-8 MPH 8-10 MPH >10 MPH
+[p008_c0005] Source: MTA NYCT, May 2024
+[p008_c0006] _8_
+
+## Page 9
+
+### [p009_c0001] Demographics
+### [p009_c0002] Census Tracts – Grand Av (Metropolitan Av bridge to Queens Blvd)
+- [p009_c0003] • 38,000 residents • Around 1/3 of households do not have access to a private vehicle • More than half commute to work via public transit, walking, or biking • 43 minute average travel time to work – Above the city average of 41 minutes
+> [p009_c0004] A map of Manhattan showing census tracts along Grand Avenue. The map is color-coded with various shades of blue, green, and yellow. Key landmarks and cemeteries labeled include SUNNYSIDE, CALVARY & MOUNT ZION CEMETERIES, ELIZABETH ARDEN CEMETERIES, MIDDLE WILLESLEY CEMETERIES, and ST. JOHN'S CEMETERIES. The map also shows street names and tract numbers.
+### [p009_c0005] Travel to Work
+> [p009_c0006] Method Percentage Transit 50% Car 37% No Travel 6% Walk 5% Other 2%
+### [p009_c0007] Vehicle Access by Household
+> [p009_c0008] Access Level Percentage 1 Vehicle 44% No Vehicles 35% 2 or More 21%
+[p009_c0009] Source: 2018-2022 American Community Survey
+[p009_c0010] _9_
+
+## Page 10
+
+### [p010_c0001] Safety
+- [p010_c0002] From 2019-2023, 359 people were injured in crashes on Grand Av between Metropolitan Av and Queens Blvd Average of more than 1 injury every week 25 people severely injured 3 people were killed Vision Zero Priority Corridor, with one Vision Zero Priority Intersection: Grand Av & Queens Blvd In the top 1/3 most dangerous corridors in Queens
+### [p010_c0003] Bicycle Injury Emergency Visits
+[p010_c0004] Estimated annual rate
+[p010_c0005] _Source: EH Data Portal_
+[p010_c0006]
+
+```text
+Grand St/Grand Av, 2019-2023 (5 years) Total Injuries Severe Injuries Fatalities KSI Pedestrian 73 8 2 10 Bicyclists 77 5 0 5 Motor Vehicle Occupant 189 10 1 11 Other Motorized 20 2 0 2 Total 359 25 3 28
+```
+[p010_c0007] KSI = Killed or Severely Injured. Source: NYC DOT
+[p010_c0008] _10_
+
+## Page 11
+
+### [p011_c0001] Existing Conditions: Land Use
+> [p011_c0002] A map of the Maspeth and Ridgewood area in Queens, New York. The map highlights three land use zones: an Industrial Business Zone (blue line) running along Grand St and 54th St; a Dense Commercial Activity zone (red line) running along 56th Ave and 57th Rd; and a Downtown Maspeth zone (red line) centered around Mount Olivet Cemetery. The map includes street names such as Grand St, 54th St, 55th St, 56th Ave, 57th Rd, 58th Ave, 59th St, 60th Ave, 61st Rd, 62nd Ave, 63rd St, 64th St, 65th Ave, 66th Ave, 67th Ave, 68th Ave, 69th St, 70th St, 71st Ave, 72nd Pl, 73rd Ave, 74th St, 75th Ave, 76th St, 77th St, 78th St, 79th St, 80th St, 81st St, 82nd St, 83rd St, 84th St, 85th Ave, 86th St, 87th St, 88th St, 89th St, 90th St, 91st St, 92nd St, 93rd St, 94th St, 95th St, 96th St, 97th St, 98th St, 99th St, 100th St, 101st St, 102nd St, 103rd St, 104th St, 105th St, 106th St, 107th St, 108th St, 109th St, 110th St, 111th St, 112th St, 113th St, 114th St, 115th St, 116th St, 117th St, 118th St, 119th St, 120th St, 121st St, 122nd St, 123rd St, 124th St, 125th St, 126th St, 127th St, 128th St, 129th St, 130th St, 131st St, 132nd St, 133rd St, 134th St, 135th St, 136th St, 137th St, 138th St, 139th St, 140th St, 141st St, 142nd St, 143rd St, 144th St, 145th St, 146th St, 147th St, 148th St, 149th St, 150th St, 151st St, 152nd St, 153rd St, 154th St, 155th St, 156th St, 157th St, 158th St, 159th St, 160th St, 161st St, 162nd St, 163rd St, 164th St, 165th St, 166th St, 167th St, 168th St, 169th St, 170th St, 171st St, 172nd St, 173rd St, 174th St, 175th St, 176th St, 177th St, 178th St, 179th St, 180th St, 181st St, 182nd St, 183rd St, 184th St, 185th St, 186th St, 187th St, 188th St, 189th St, 190th St, 191st St, 192nd St, 193rd St, 194th St, 195th St, 196th St, 197th St, 198th St, 199th St, 200th St, 201st St, 202nd St, 203rd St, 204th St, 205th St, 206th St, 207th St, 208th St, 209th St, 210th St, 211st St, 212nd St, 213rd St, 214th St, 215th St, 216th St, 217th St, 218th St, 219th St, 220th St, 221st St, 222nd St, 223rd St, 224th St, 225th St, 226th St, 227th St, 228th St, 229th St, 230th St, 231st St, 232nd St, 233rd St, 234th St, 235th St, 236th St, 237th St, 238th St, 239th St, 240th St, 241st St, 242nd St, 243rd St, 244th St, 245th St, 246th St, 247th St, 248th St, 249th St, 250th St, 251st St, 252nd St, 253rd St, 254th St, 255th St, 256th St, 257th St, 258th St, 259th St, 260th St, 261st St, 262nd St, 263rd St, 264th St, 265th St, 266th St, 267th St, 268th St, 269th St, 270th St, 271st St, 272nd St, 273rd St, 274th St, 275th St, 276th St, 277th St, 278th St, 279th St, 280th St, 281st St, 282nd St, 283rd St, 284th St, 285th St, 286th St, 287th St, 288th St, 289th St, 290th St, 291st St, 292nd St, 293rd St, 294th St, 295th St, 296th St, 297th St, 298th St, 299th St, 300th St, 301st St, 302nd St, 303rd St, 304th St, 305th St, 306th St, 307th St, 308th St, 309th St, 310th St, 311st St, 312nd St, 313rd St, 314th St, 315th St, 316th St, 317th St, 318th St, 319th St, 320th St, 321st St, 322nd St, 323rd St, 324th St, 325th St, 326th St, 327th St, 328th St, 329th St, 330th St, 331st St, 332nd St, 333rd St, 334th St, 335th St, 336th St, 337th St, 338th St, 339th St, 340th St, 341st St, 342nd St, 343rd St, 344th St, 345th St, 346th St, 347th St, 348th St, 349th St, 350th St, 351st St, 352nd St, 353rd St, 354th St, 355th St, 356th St, 357th St, 358th St, 359th St, 360th St, 361st St, 362nd St, 363rd St, 364th St, 365th St, 366th St, 367th St, 368th St, 369th St, 370th St, 371st St, 372nd St, 373rd St, 374th St, 375th St, 376th St, 377th St, 378th St, 379th St, 380th St, 381st St, 382nd St, 383rd St, 384th St, 385th St, 386th St, 387th St, 388th St, 389th St, 390th St, 391st St, 392nd St, 393rd St, 394th St, 395th St, 396th St, 397th St, 398th St, 399th St, 400th St, 401st St, 402nd St, 403rd St, 404th St, 405th St, 406th St, 407th St, 408th St, 409th St, 410th St, 411st St, 412nd St, 413rd St, 414th St, 415th St, 416th St, 417th St, 418th St, 419th St, 420th St, 421st St, 422nd St, 423rd St, 424th St, 425th St, 426th St, 427th St, 428th St, 429th St, 430th St, 431st St, 432nd St, 433rd St, 434th St, 435th St, 436th St, 437th St, 438th St, 439th St, 440th St, 441st St, 442nd St, 443rd St, 444th St, 445th St, 446th St, 447th St, 448th St, 449th St, 450th St, 451st St, 452nd St, 453rd St, 454th St, 455th St, 456th St, 457th St, 458th St, 459th St, 460th St, 461st St, 462nd St, 463rd St, 464th St, 465th St, 466th St, 467th St, 468th St, 469th St, 470th St, 471st St, 472nd St, 473rd St, 474th St, 475th St, 476th St, 477th St, 478th St, 479th St, 480th St, 481st St, 482nd St, 483rd St, 484th St, 485th St, 486th St, 487th St, 488th St, 489th St, 490th St, 491st St, 492nd St, 493rd St, 494th St, 495th St, 496th St, 497th St, 498th St, 499th St, 500th St, 501st St, 502nd St, 503rd St, 504th St, 505th St, 506th St, 507th St, 508th St, 509th St, 510th St, 511st St, 512nd St, 513rd St, 514th St, 515th St, 516th St, 517th St, 518th St, 519th St, 520th St, 521st St, 522nd St, 523rd St, 524th St, 525th St, 526th St, 527th St, 528th St, 529th St, 530th St, 531st St, 532nd St, 533rd St, 534th St, 535th St, 536th St, 537th St, 538th St, 539th St, 540th St, 541st St, 542nd St, 543rd St, 544th St, 545th St, 546th St, 547th St, 548th St, 549th St, 550th St, 551st St, 552nd St, 553rd St, 554th St, 555th St, 556th St, 557th St, 558th St, 559th St, 560th St, 561st St, 562nd St, 563rd St, 564th St, 565th St, 566th St, 567th St, 568th St, 569th St, 570th St, 571st St, 572nd St, 573rd St, 574th St, 575th St, 576th St, 577th St, 578th St, 579th St, 580th St, 581st St, 582nd St, 583rd St, 584th St, 585th St, 586th St, 587th St, 588th St, 589th St, 590th St, 591st St, 592nd St, 593rd St, 594th St, 595th St, 596th St, 597th St, 598th St, 599th St, 600th St, 601st St, 602nd St, 603rd St, 604th St, 605th St, 606th St, 607th St, 608th St, 609th St, 610th St, 611st St, 612nd St, 613rd St, 614th St, 615th St, 616th St, 617th St, 618th St, 619th St, 620th St, 621st St, 622nd St, 623rd St, 624th St, 625th St, 626th St, 627th St, 628th St, 629th St, 630th St, 631st St, 632nd St, 633rd St, 634th St, 635th St, 636th St, 637th St, 638th St, 639th St, 640th St, 641st St, 642nd St, 643rd St, 644th St, 645th St, 646th St, 647th St, 648th St, 649th St, 650th St, 651st St, 652nd St, 653rd St, 654th St, 655th St, 656th St, 657th St, 658th St, 659th St, 660th St, 661st St, 662nd St, 663rd St, 664th St, 665th St, 666th St, 667th St, 668th St, 669th St, 670th St, 671st St, 672nd St, 673rd St, 674th St, 675th St, 676th St, 677th St, 678th St, 679th St, 680th St, 681st St, 682nd St, 683rd St, 684th St, 685th St, 686th St, 687th St, 688th St, 689th St, 690th St, 691st St, 692nd St, 693rd St, 694th St, 695th St, 696th St, 697th St, 698th St, 699th St, 700th St, 701st St, 702nd St, 703rd St, 704th St, 705th St, 706th St, 707th St, 708th St, 709th St, 710th St, 711st St, 712nd St, 713rd St, 714th St, 715th St, 716th St, 717th St, 718th St, 719th St, 720th St, 721st St, 722nd St, 723rd St, 724th St, 725th St, 726th St, 727th St, 728th St, 729th St, 730th St, 731st St, 732nd St, 733rd St, 734th St, 735th St, 736th St, 737th St, 738th St, 739th St, 740th St, 741st St, 742nd St, 743rd St, 744th St, 745th St, 746th St, 747th St, 748th St, 749th St, 750th St, 751st St, 752nd St, 753rd St, 754th St, 755th St, 756th St, 757th St, 758th St, 759th St, 760th St, 761st St, 762nd St, 763rd St, 764th St, 765th St, 766th St, 767th St, 768th St, 769th St, 770th St, 771st St, 772nd St, 773rd St, 774th St, 775th St, 776th St, 777th St, 778th St, 779th St, 780th St, 781st St, 782nd St, 783rd St, 784th St, 785th St, 786th St, 787th St, 788th St, 789th St, 790th St, 791st St, 792nd St, 793rd St, 794th St, 795th St, 796th St, 797th St, 798th St, 799th St, 800th St, 801st St, 802nd St, 803rd St, 804th St, 805th St, 806th St, 807th St, 808th St, 809th St, 810th St, 811st St, 812nd St, 813rd St, 814th St, 815th St, 816th St, 817th St, 818th St, 819th St, 820th St, 821st St, 822nd St, 823rd St, 824th St, 825th St, 826th St, 827th St, 828th St, 829th St, 830th St, 831st St, 832nd St, 833rd St, 834th St, 835th St, 836th St, 837th St, 838th St, 839th St, 840th St, 841st St, 842nd St, 843rd St, 844th St, 845th St, 846th St, 847th St, 848th St, 849th St, 850th St, 851st St, 852nd St, 853rd St, 854th St, 855th St, 856th St, 857th St, 858th St, 859th St, 860th St, 861st St, 862nd St, 863rd St, 864th St, 865th St, 866th St, 867th St, 868th St, 869th St, 870th St, 871st St, 872nd St, 873rd St, 874th St, 875th St, 876th St, 877th St, 878th St, 879th St, 880th St, 881st St, 882nd St, 883rd St, 884th St, 885th St, 886th St, 887th St, 888th St, 889th St, 890th St, 891st St, 892nd St, 893rd St, 894th St, 895th St, 896th St, 897th St, 898th St, 899th St, 900th St, 901st St, 902nd St, 903rd St, 904th St, 905th St, 906th St, 907th St, 908th St, 909th St, 910th St, 911st St, 912nd St, 913rd St, 914th St, 915th St, 916th St, 917th St, 918th St, 919th St, 920th St, 921st St, 922nd St, 923rd St, 924th St, 925th St, 926th St, 927th St, 928th St, 929th St, 930th St, 931st St, 932nd St, 933rd St, 934th St, 935th St, 936th St, 937th St, 938th St, 939th St, 940th St, 941st St, 942nd St, 943rd St, 944th St, 945th St, 946th St, 947th St, 948th St, 949th St, 950th St, 951st St, 952nd St, 953rd St, 954th St, 955th St, 956th St, 957th St, 958th St, 959th St, 960th St, 961st St, 962nd St, 963rd St, 964th St, 965th St, 966th St, 967th St, 968th St, 969th St, 970th St, 971st St, 972nd St, 973rd St, 974th St, 975th St, 976th St, 977th St, 978th St, 979th St, 980th St, 981st St, 982nd St, 983rd St, 984th St, 985th St, 986th St, 987th St, 988th St, 989th St, 990th St, 991st St, 992nd St, 993rd St, 994th St, 995th St, 996th St, 997th St, 998th St, 999th St, 1000th St.
+- [p011_c0003] Industrial Businesses Dense Commercial Corridor
+[p011_c0004] _11_
+
+## Page 12
+
+### [p012_c0001] Existing Conditions: Street Width
+- [p012_c0002] • Street width is around 50 feet for the length of the corridor • Between Metropolitan Av and the Long Island Expressway, each direction has a 25-foot combined moving and parking lane • Painted bike lanes between 74th Street and Queens Boulevard – No bike facilities or sharrows in other sections
+> [p012_c0003] A diagram illustrating a typical street layout. It shows a cross-section of a street with a total width of 50 feet. The street is divided into two 25-foot sections, each labeled '25' Travel Lane/ Parking Lane'. On the left side, there is a 'North Sidewalk' with a person and a dog. On the right side, there is a 'South Sidewalk' with a person. The street contains a white truck, a grey truck, a grey bus, and a white car. A box in the top right corner is labeled 'Typical'.
+> [p012_c0004] A diagram illustrating a street layout for 74th St - Qns Blvd. It shows a cross-section of a street with a total width of 50 feet. The street is divided into six lanes: 9' Parking Lane, 5' Bike Lane, 11' Travel Lane, 11' Travel Lane, 5' Bike Lane, and 9' Parking Lane. On the left side, there is a 'North Sidewalk' with a person and a dog. On the right side, there is a 'South Sidewalk' with a person. The street contains a white truck, a person on a bicycle, a grey truck, a grey bus, a person on a bicycle, and a white car. A box in the top right corner is labeled '74th St - Qns Blvd'.
+[p012_c0005] _12_
+
+## Page 13
+
+### [p013_c0001] DOT Projects
+- [p013_c0002] • Queens Boulevard Capital Project – Pedestrian, bike, and bus improvements – Starting construction in Fall 2026 • Grand St, Metropolitan Av, Morgan Av Street Improvement Project – Improvements to address blocked bike lanes, bus stops, and sidewalks; poor visibility for pedestrians, cyclists, and drivers; and slow bus speeds • Grand St Bridge Reconstruction – Formal environmental review process expected to begin in 2025
+> [p013_c0003] A photograph of a city street intersection. A red flatbed truck is in the foreground, followed by a white SUV. The street has a crosswalk and traffic lights. Buildings and trees are visible in the background.
+[p013_c0004] _Grand St and Lorimer St_
+> [p013_c0005] A photograph of a green steel truss bridge. The bridge has a paved road and a pedestrian path. A person is seen walking on the bridge. The sky is blue with some clouds.
+[p013_c0006] _Grand St Bridge_
+[p013_c0007] _13_
+[p013_c0008] _The MTA logo, which consists of the letters 'MTA' in a bold, sans-serif font inside a dark circle._
+[p013_c0009] _The BETTERBUSES logo, featuring the word 'BETTER' in blue and 'BUSES' in green, with a stylized blue and green graphic to the left._
+[p013_c0010] _The NEW YORK CITY DOT logo, which includes the text 'NEW YORK CITY' above the letters 'DOT' in a stylized font._
+
+## Page 14
+
+### [p014_c0001] Vision & Challenges
+### [p014_c0002] Vision:
+- [p014_c0003] • Make bus service fast, reliable and on-time – Improve bus operations around the Grand Av Bus Depot • Make Grand Av safer to walk, bike & drive • Ensure access to businesses & loading activity
+### [p014_c0004] Challenges:
+- [p014_c0005] • Traffic congestion • Double parking & business access needs • Space for bikes and buses
+[p014_c0006] _Grand Av in front of the bus depot_
+[p014_c0007] _Grand Av and 47 th Street Bus Stop_
+[p014_c0008] _14_
+
+## Page 15
+
+### [p015_c0001] Toolkit
+[p015_c0002] _15_
+[p015_c0003] _The MTA logo, consisting of the letters 'MTA' in white inside a black circle._
+[p015_c0004] _The BETTERBUSES logo, with 'BETTER' in blue and 'BUSES' in green, separated by a stylized blue and green graphic._
+[p015_c0005] _The New York City Department of Transportation (NYC DOT) logo, featuring the text 'NEW YORK CITY' above 'DOT' and a stylized graphic of a bus and a train._
+
+## Page 16
+
+### [p016_c0001] Transit Toolkit
+> [p016_c0002] A photograph showing a New York City MTA bus in a dedicated, red-painted bus lane. The lane is offset from the curb, with a white line marking its edge. A dark-colored SUV is stopped at the curb in front of the bus. The bus's destination sign reads "021 BUNCEY POINT/ST. ST".
+[p016_c0003] _Offset Bus Lane_
+[p016_c0004] Woodhaven Blvd, QN
+> [p016_c0005] A photograph of a center bus lane on 161st St in Brooklyn. The lane is red-painted and separated from the adjacent traffic lane by a row of white plastic bollards. Several vehicles, including a white pickup truck and an ambulance, are visible in the lane. The bus lane is marked with "ONLY" and "BUS" painted on the pavement.
+[p016_c0006] _Center Bus Lane/ Physical Protection_
+[p016_c0007] 161st St, BX
+> [p016_c0008] A photograph of a bus and a truck on 14th St in Minnesota. The bus is a blue and green "M46 SOURCE BUS" and is in the left lane. A large blue "UNITED" truck is in the right lane. The road has double yellow lines. A "BUS" sign is visible on a pole. The NYC DOT logo is in the bottom right corner.
+[p016_c0009] _Busway/Transit & Truck Priority_
+[p016_c0010] 14th St, MN
+> [p016_c0011] A photograph of a bus in a curbside bus lane on Hylan Blvd in Illinois. The bus is blue and white, with a destination sign for "679 SI HALL". The bus lane is red-painted and adjacent to the curb. A bus stop shelter is visible on the left. The "BETTERBUSES" logo is in the bottom right corner.
+[p016_c0012] _Curbside Bus Lane_
+[p016_c0013] Hylan Blvd, SI
+> [p016_c0014] A photograph of a bus at a queue jump signal on Broadway in Queens. The bus is blue and white. A "BUSES ONLY SIGNAL" sign is visible on a pole. The bus lane is red-painted. The "BETTERBUSES" logo is in the bottom right corner.
+[p016_c0015] _Queue Jump Signal_
+[p016_c0016] Broadway, QN
+[p016_c0017] _16_
+
+## Page 17
+
+### [p017_c0001] Bus Stop Toolkit
+> [p017_c0002] A photograph of a bus stop shelter. Three people are standing on a raised platform, leaning against a metal railing. The shelter has a glass front and a sign. The background shows a street with a car and buildings. A copyright notice for NYC DOT is visible in the bottom right corner.
+[p017_c0003] _Leaning Bars_
+[p017_c0004] Nostrand Av, BK
+> [p017_c0005] A photograph of a bus stop shelter. An elderly woman is sitting on a metal bench. Other people are standing nearby. The shelter has a glass front and a sign. The background shows a street with a car and buildings. A copyright notice for NYC DOT is visible in the bottom right corner.
+[p017_c0006] _CityBenches_
+[p017_c0007] 86th St, MN
+> [p017_c0008] A photograph of a bus stop shelter. The shelter has a glass front and a sign. A ramp leads to the shelter. The background shows a street with a car and buildings. A copyright notice for NYC DOT is visible in the bottom right corner.
+[p017_c0009] _Physical Accessibility_
+[p017_c0010] Hylan Blvd, SI
+> [p017_c0011] A photograph of a bus stop shelter. A person is walking towards the shelter. A bus is visible in the background. The shelter has a glass front and a sign. The background shows a street with a car and buildings.
+[p017_c0012] _Bus Boarders_
+[p017_c0013] Utica Av, BK
+[p017_c0014] _17_
+
+## Page 18
+
+### [p018_c0001] Pedestrian Safety Toolkit
+> [p018_c0002] A photograph showing a pedestrian island at a street intersection. The island is a raised concrete structure with a red-painted area. Pedestrians are crossing the street, and a cyclist is visible on the left. The street has multiple lanes with cars and a bus. A traffic light is visible on the right. The image is labeled "Pedestrian Island" in a white box.
+[p018_c0003] _Fordham Rd, BK_
+> [p018_c0004] A photograph of a bus boarding island. A blue bus is stopped at the island, which is a raised concrete structure with a red-painted area. People are waiting for the bus. A bus stop sign is visible, showing bus numbers 87, 882, and 882. The image is labeled "Bus Boarding Island" in a white box.
+[p018_c0005] _Kings Hwy, BK_
+> [p018_c0006] A photograph of a median extension at a street intersection. The median is a raised concrete structure with a red-painted area. Pedestrians are walking on the median. The street has multiple lanes with cars. The image is labeled "Median Extension" in a white box.
+[p018_c0007] _149 th St, BX_
+> [p018_c0008] A photograph of a painted curb extension at a street intersection. The curb extension is a raised concrete structure with a red-painted area. Pedestrians are crossing the street. The image is labeled "Painted Curb Extension" in a white box. The NYC DOT logo is visible in the bottom right corner.
+[p018_c0009] _Southern Blvd, BX_
+[p018_c0010] _18_
+
+## Page 19
+
+### [p019_c0001] Parking Toolkit
+### [p019_c0002] Truck Loading Zones
+> [p019_c0003] A photograph of a city street where a white box truck is stopped with its rear doors open, loading or unloading boxes. A person in a blue uniform is visible inside the truck. Other vehicles, including a car and a motorcycle, are on the street. A yellow traffic light is visible in the background. A signpost with a 'No Parking' symbol is also visible. The image is credited to NYC DOT.
+### [p019_c0004] Parking Meters
+> [p019_c0005] A photograph of a black parking meter on a sidewalk. The meter has a blue sign at the top with 'Zone# 107011' and a large blue circle with a white 'P' for parking. Below the meter, there is a sticker that says 'Zone# 107011' and 'PARKNYC' with a phone number. The background shows a street with trees and other vehicles.
+### [p019_c0006] Short-Term Parking
+> [p019_c0007] A photograph of a parking signpost. The top sign is a 'No Parking' symbol (a 'P' with a red circle and slash) with a red arrow pointing right. Below it is a sign for '1 hour metered parking' with a green arrow pointing left, valid '8am - 7pm Except Sunday'. Below that is a sign for '15 minute parking' with a green arrow pointing right. The bottom sign is a blue sign with 'Zone# 336789' and a 'P' symbol. The background shows a brick building.
+### [p019_c0008] No Parking/ No Standing
+> [p019_c0009] A photograph of a parking signpost. The top sign is a red sign that says 'NO STANDING Anytime' with a red arrow pointing right. Below it is a sign for 'No Parking' (a 'P' with a red circle and slash) valid 'Monday - Frid 8am - 8:30am' with a red arrow pointing left. Below that is a sign for '2 hour metered parking' with a green arrow pointing left, valid 'Monday - Friday 8:30am - 7pm'. The background shows a brick building.
+[p019_c0010] _19_
+[p019_c0011] _The MTA logo, which consists of the letters 'MTA' in a bold, sans-serif font inside a black circle._
+[p019_c0012] _The BETTERBUSES logo, which consists of the word 'BETTERBUSES' in a stylized, sans-serif font with a blue and green gradient._
+[p019_c0013] _The NEW YORK CITY DOT logo, which consists of the words 'NEW YORK CITY' above 'DOT' in a stylized, sans-serif font._
+
+## Page 20
+
+### [p020_c0001] Other Tools
+- [p020_c0002] • Traffic signal timing • Transit Signal Priority (TSP) • Bus lane camera enforcement – DOT stationary cameras – MTA on-bus cameras (ACE) • Left & right turn bays • Trees & streetscape improvements
+[p020_c0003] _20_
+[p020_c0004] _BETTERBUSES_
+
+## Page 21
+
+### [p021_c0001] Next Steps
+[p021_c0002] _21_
+[p021_c0003] _The MTA logo, consisting of the letters 'MTA' in white inside a black circle._
+[p021_c0004] _The BETTERBUSES logo, with 'BETTER' in blue and 'BUSES' in green, separated by a stylized blue and green graphic._
+[p021_c0005] _The New York City Department of Transportation (NYC DOT) logo, featuring the text 'NEW YORK CITY' above a stylized 'DOT' with horizontal lines._
+
+## Page 22
+
+### [p022_c0001] Next Steps
+- [p022_c0002] • Fall 2024 – Discuss existing conditions, needs, and wants with community boards, elected officials, and stakeholders – Feedback will help shape DOT's draft proposal – Merchant Survey – Site visits & data collection • Winter/Spring 2025: – Continue public outreach w/ CBs , elected officials, and stakeholders – Develop & share draft plans; feedback will help refine proposal – Share refined plan • Implementation in late 2025 or 2026
+[p022_c0003] Note: Schedule may vary depending on feedback and analysis
+[p022_c0004] _22_
+[p022_c0005] _The MTA logo, consisting of the letters 'MTA' in white inside a black circle._
+[p022_c0006] _The BETTERBUSES logo, with 'BETTER' in blue and 'BUSES' in green._
+[p022_c0007] _The NEW YORK CITY DOT logo, featuring the text 'NEW YORK CITY' above 'DOT' and a stylized graphic of a bus._
+
+## Page 23
+
+### [p023_c0001] Discussion
+[p023_c0002] _23_
+[p023_c0003] _The MTA logo, consisting of the letters 'MTA' in white inside a black circle._
+[p023_c0004] _The BETTERBUSES logo, with 'BETTER' in blue and 'BUSES' in green, separated by a stylized blue and green graphic._
+[p023_c0005] _The New York City Department of Transportation (NYC DOT) logo, featuring the text 'NEW YORK CITY' above a stylized 'DOT' with horizontal lines._
+
+## Page 24
+
+### [p024_c0001] Bus Lane Design Options
+> [p024_c0002] This diagram illustrates a 'Single Offset Lane' design for a 50-foot wide street. The street is divided into six lanes: an 8-foot North Sidewalk, an 8-foot Parking Lane, a 12-foot Offset Bus Lane (highlighted in red), an 11-foot Travel Lane, an 11-foot Travel Lane, an 8-foot Parking Lane, and a South Sidewalk. Vehicles shown include a truck, a bus, a car, a truck, and a car. Pedestrians are shown on the sidewalks. A dimension line below the street indicates a total width of 50'. North Sidewalk 8' Parking Lane 12' Offset Bus Lane 11' Travel Lane 11' Travel Lane 8' Parking Lane South Sidewalk 50' Single Offset Lane
+> [p024_c0003] This diagram illustrates a 'Single Curbside Lane' design for a 50-foot wide street. The street is divided into five lanes: a North Sidewalk, a 14-foot Curbside Bus Lane (highlighted in red), an 11-foot Travel Lane, an 11-foot Travel Lane, a 9-foot Parking Lane, and a South Sidewalk. Vehicles shown include a bus, a car, a truck, and a car. Pedestrians are shown on the sidewalks. A dimension line below the street indicates a total width of 50'. North Sidewalk 14' Curbside Bus Lane 11' Travel Lane 11' Travel Lane 9' Parking Lane South Sidewalk 50' Single Curbside Lane
+[p024_c0004] _24_
+
+## Page 25
+
+### [p025_c0001] Bus Lane Design Options, pt. 2
+> [p025_c0002] A cross-section diagram of a street with two curbside lanes. From left to right, the components are: North Sidewalk, a 14' Curbside Bus Lane (red), an 11' Travel Lane (black), an 11' Travel Lane (black), and a 14' Curbside Bus Lane (red). The South Sidewalk is on the far right. A double yellow line separates the two travel lanes. A dimension line below the travel lanes indicates a total width of 50'. Various vehicles including a bus, a car, and a truck are shown on the lanes. Pedestrians are shown on the sidewalks. North Sidewalk 14' Curbside Bus Lane 11' Travel Lane 11' Travel Lane 14' Curbside Bus Lane South Sidewalk 50' Two Curbside Lanes
+> [p025_c0003] A cross-section diagram of a street with one curbside lane and one offset lane. From left to right, the components are: North Sidewalk, a 10' Curbside Bus Lane (red), an 11' Travel Lane (black), an 11' Travel Lane (black), a 10' Offset Bus Lane (red), and an 8' Parking Lane (black). The South Sidewalk is on the far right. A double yellow line separates the two travel lanes. A dimension line below the travel lanes indicates a total width of 50'. Various vehicles including a bus, a truck, a car, and a bus are shown on the lanes. Pedestrians are shown on the sidewalks. North Sidewalk 10' Curbside Bus Lane 11' Travel Lane 11' Travel Lane 10' Offset Bus Lane 8' Parking Lane South Sidewalk 50' One Curbside, One Offset Lane
+[p025_c0004] _25_
+
+## Page 26
+
+### [p026_c0001] Open Discussion
+- [p026_c0002] • How does Grand Av operate right now? What works & doesn't work? • Which DOT and MTA tools sound most useful? Less useful? – Are any of the bus lane design options preferable? Why? • Who else should we reach out to about this project? Any groups or specific individuals? • What would a successful project look like? • What tradeoffs are acceptable? • What role can DOT and MTA take to make Grand Av work better?
+[p026_c0003] _26_
+[p026_c0004] _The MTA logo, featuring the letters 'MTA' in white on a black circular background._
+[p026_c0005] _The BETTERBUSES logo, with 'BETTER' in blue and 'BUSES' in green, separated by a stylized blue and green graphic._
+[p026_c0006] _The New York City Department of Transportation (NYC DOT) logo, featuring the text 'NEW YORK CITY' above 'DOT' and a stylized graphic of a bus and a road._
+
+## Page 27
+
+[p027_c0001] Thank You!
+[p027_c0002] Questions?
+> [p027_c0003] The logo for the New York City Department of Transportation (NYC DOT). It features the words "NEW YORK CITY" in a bold, sans-serif font at the top. Below this, the letters "DOT" are displayed in a large, stylized font. The "D" and "O" are green and contain horizontal white lines, while the "T" is green and has a white square at its base.
+> [p027_c0004] The Facebook logo, which is a lowercase letter "f" in white.
+[p027_c0005] NYC DOT
+> [p027_c0006] The Twitter logo, which is a white bird in flight.
+[p027_c0007] NYC DOT
+> [p027_c0008] The Instagram logo, which is a white camera icon.
+[p027_c0009] nyc_dot
+> [p027_c0010] The YouTube logo, which consists of the word "You" above the word "Tube" in white.
+[p027_c0011] NYC DOT
+[p027_c0012] _27_
+[p027_c0013] _The MTA logo, which is a black circle with the letters "MTA" in white._
+[p027_c0014] _The "BETTERBUSES" logo, which features the word "BETTER" in blue and "BUSES" in green, with a stylized blue and green graphic to the left._
+[p027_c0015] _A smaller version of the New York City DOT logo, showing the text "NEW YORK CITY" above the stylized "DOT" letters._

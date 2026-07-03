@@ -1,0 +1,157 @@
+{
+  "batch_id": "identity131",
+  "global_kind": "project",
+  "prepared_count": 10,
+  "proposed_aliases": [
+    {
+      "alias_id": "project_webster-avenue-bridge-replacement",
+      "target_id": "project_webster-ave-bridge-replacement",
+      "confidence": "high",
+      "reason": "Both records describe the same Webster Avenue Bridge Replacement in Manhasset over the LIRR Port Washington Branch. The alias record captures the award/removal-and-reconstruction scope; the target record already aggregates board approval, award, construction/completion, Manhasset location, and Port Washington Branch context.",
+      "evidence_refs": [
+        "meeting_doc_129196#p021_c0006",
+        "meeting_doc_129196#p021_c0009",
+        "meeting_doc_129101#p091_c0009",
+        "meeting_doc_131811#p011_c0014",
+        "meeting_doc_176346#p014_c0002",
+        "meeting_doc_189841#p021_c0002"
+      ],
+      "guard_notes": "Merge only the durable Webster Avenue Bridge Replacement project, not other Webster Avenue bus-priority or bridge records. Alias is absent from current project merges and no matching project do-not-merge pair was found."
+    },
+    {
+      "alias_id": "project_webster-ave-bridge-manhasset",
+      "target_id": "project_webster-ave-bridge-replacement",
+      "confidence": "high",
+      "reason": "Both records refer to the Webster Avenue Bridge replacement in Manhasset. The alias is an implemented/completion mention of the same 128-year-old bridge replacement, while the target holds the broader multi-source durable project record.",
+      "evidence_refs": [
+        "meeting_doc_192146#p006_c0005",
+        "meeting_doc_131811#p011_c0014",
+        "meeting_doc_189841#p021_c0002",
+        "meeting_doc_189841#p021_c0003"
+      ],
+      "guard_notes": "Document-time completion wording is lifecycle status, not a separate project phase. Alias is absent from current project merges and no matching project do-not-merge pair was found."
+    },
+    {
+      "alias_id": "project_cb-scour-protect",
+      "target_id": "project_cb18-scour-protection",
+      "confidence": "high",
+      "reason": "Both records use the same CB-18 scour protection / CB-MP pier fender project label and describe scour protection plus pier fender repair/replacement at Cross Bay and Marine Parkway bridges. The different completion percentages are progress snapshots of the same capital project.",
+      "evidence_refs": [
+        "meeting_doc_33241#p051_c0003",
+        "meeting_doc_52711#p085_c0003",
+        "meeting_doc_52711#p085_c0005"
+      ],
+      "guard_notes": "Keep separate from unrelated bridge capital projects on the same source tables. Alias is absent from current project merges and no matching project do-not-merge pair was found."
+    },
+    {
+      "alias_id": "project_cb18-scour-protect-repair-replace-cb-mp-pier-fender",
+      "target_id": "project_cb18-scour-protection",
+      "confidence": "high",
+      "reason": "The alias and target are the same CB-18 scour protection / CB-MP pier fender repair-replacement project. Both cite Cross Bay and Marine Parkway Bridges and the same $65.9 million project context; September 2021 and percentage-complete language are progress fields.",
+      "evidence_refs": [
+        "meeting_doc_42391#p049_c0003",
+        "meeting_doc_52711#p085_c0003",
+        "meeting_doc_52711#p085_c0005"
+      ],
+      "guard_notes": "Merge as one durable capital project, not as a generic bridge program. Alias is absent from current project merges and no matching project do-not-merge pair was found."
+    },
+    {
+      "alias_id": "project_39651-cb18-scour-protection",
+      "target_id": "project_cb18-scour-protection",
+      "confidence": "high",
+      "reason": "The alias uses the same project name, 'CB Scour Protect/Repair/Replace CB/MP Pier Fender,' and the same Cross Bay / Marine Parkway scour and pier fender scope as the target. It is an earlier progress-table mention of the same capital project.",
+      "evidence_refs": [
+        "meeting_doc_39651#p051_c0003",
+        "meeting_doc_52711#p085_c0003",
+        "meeting_doc_52711#p085_c0005"
+      ],
+      "guard_notes": "Shared table block also mentions other capital projects; only this CB-18 scour/fender row should merge. Alias is absent from current project merges and no matching project do-not-merge pair was found."
+    },
+    {
+      "alias_id": "project_m9a-passenger-railcars",
+      "target_id": "project_meeting-doc-177171-m9a-railcars",
+      "confidence": "high",
+      "reason": "Both records are the same M-9A Passenger Railcars Procurement: 316 self-powered base-order cars split between LIRR and MNR, with options for additional cars, awarded to Alstom/advanced from Board approval to award. Status differs by document time only.",
+      "evidence_refs": [
+        "meeting_doc_176501#p003_c0006",
+        "meeting_doc_177171#p053_c0006",
+        "meeting_doc_177171#p054_c0012",
+        "meeting_doc_206191#p007_c0005"
+      ],
+      "guard_notes": "Do not merge into generic new-bus or railcar programs; this is specifically the M-9A passenger railcar procurement. Alias is absent from current project merges and no matching project do-not-merge pair was found."
+    },
+    {
+      "alias_id": "project_energy-management-system-tango",
+      "target_id": "project_meeting-doc-177171-ems-tango",
+      "confidence": "high",
+      "reason": "Both records describe furnishing and implementing the MTA-wide Energy Management System for utility billing and energy-use management, replacing SourceOne/current EMS and associated with Tango Analytics. Pending Board approval versus awarded is a lifecycle/status distinction.",
+      "evidence_refs": [
+        "meeting_doc_176501#p010_c0006",
+        "meeting_doc_177171#p060_c0007",
+        "meeting_doc_177171#p060_c0008"
+      ],
+      "guard_notes": "Merge the MTA-wide EMS/Tango implementation only; do not fold in unrelated energy projects. Alias is absent from current project merges and no matching project do-not-merge pair was found."
+    },
+    {
+      "alias_id": "project_meeting-doc-111896-mnr-ada-3-bronx",
+      "target_id": "project_metro-north-ada-improvements-three-bronx-stations",
+      "confidence": "high",
+      "reason": "Both records identify the Metro-North ADA improvements at the same three Bronx Harlem Line stations: Williams Bridge, Botanical Garden(s), and Woodlawn. The alias focuses on property acquisition/easements, while the target is the durable multi-source project record.",
+      "evidence_refs": [
+        "meeting_doc_111896#p113_c0007",
+        "meeting_doc_124206#p003_c0008",
+        "meeting_doc_124206#p003_c0009",
+        "meeting_doc_124346#p089_c0003"
+      ],
+      "guard_notes": "Property-acquisition language is an implementation facet, not a separate project identity. Alias is absent from current project merges and no matching project do-not-merge pair was found."
+    },
+    {
+      "alias_id": "project_mnr-ada-3-bronx-stations-may2023",
+      "target_id": "project_metro-north-ada-improvements-three-bronx-stations",
+      "confidence": "high",
+      "reason": "Both records name the Metro-North ADA Improvements Project at three Bronx stations and list the same station set: Williams Bridge, Botanical Garden(s), and Woodlawn. The May 2023 record is a progress/status mention of the same Harlem Line project.",
+      "evidence_refs": [
+        "meeting_doc_112036#p082_c0007",
+        "meeting_doc_124206#p003_c0008",
+        "meeting_doc_124206#p003_c0009",
+        "meeting_doc_192191#p003_c0002"
+      ],
+      "guard_notes": "Do not merge with broader ADA station rehabilitation packages outside this three-Bronx-station Harlem Line scope. Alias is absent from current project merges and no matching project do-not-merge pair was found."
+    },
+    {
+      "alias_id": "project_mnr-ada-bronx-stations-oct2023",
+      "target_id": "project_metro-north-ada-improvements-three-bronx-stations",
+      "confidence": "high",
+      "reason": "Both records describe ADA station improvements at Botanical Garden, Williams Bridge, and Woodlawn on Metro-North's Harlem Line in the Bronx. The October 2023 eminent-domain/status record is the same durable project as the target's multi-source project page-bearing record.",
+      "evidence_refs": [
+        "meeting_doc_124731#p061_c0009",
+        "meeting_doc_124731#p063_c0008",
+        "meeting_doc_124206#p003_c0008",
+        "meeting_doc_124346#p089_c0003"
+      ],
+      "guard_notes": "Status and eminent-domain determination should remain fields/events on the project, not separate canonical project identities. Alias is absent from current project merges and no matching project do-not-merge pair was found."
+    }
+  ],
+  "commands_run": [
+    "pwd && rg --files data | rg 'review_notes|merges|canonical|identity|do-not|do_not'",
+    "git status --short",
+    "ls -la data/review_notes && find data/review_notes -maxdepth 1 -type f | sort | tail -40",
+    "jq 'keys, {batch_id, global_kind, prepared_count, first: .proposed_aliases[0]}' data/review_notes/codex-identity-batch129-prep.json",
+    "jq '{merge_keys: (keys|length), sample: (to_entries[:5])}' data/identity-overrides/merges.json && jq '{dnm_keys: (keys|length), sample: (to_entries[:5])}' data/identity-overrides/do-not-merge.json",
+    "test -e data/review_notes/codex-identity-batch131-prep.json; echo exists:$?",
+    "head -3 data/canonical/projects.jsonl | jq '.'",
+    "jq -r '.aliases.project // {} | to_entries[] | [.key,.value] | @tsv' data/identity-overrides/merges.json | sort | tail -80",
+    "ls data/identity-review/packets/project_cluster_*.md data/identity-review/llm-suggestions/project_cluster_*.json 2>/dev/null",
+    "bun --eval '<read-only project duplicate scan over data/canonical/projects.jsonl, merges, do-not-merge, and prior review notes>'",
+    "jq 'keys, .project?, .aliases?.project?' data/identity-overrides/do-not-merge.json",
+    "rg -n '<candidate project ids>' data/review_notes/codex-identity-batch*-prep.json data/identity-overrides/merges.json data/identity-overrides/do-not-merge.json",
+    "jq -c 'select(.record_id|test(\"<candidate project ids>\")) | {record_id,display_name,payload,source_ids,evidence_refs:[.evidence_refs[]?.evidence_id][0:5]}' data/canonical/projects.jsonl",
+    "jq -r '.pairs.project[]? | .record_ids | @tsv' data/identity-overrides/do-not-merge.json | rg '<candidate terms>' || true"
+  ],
+  "commands_not_run": [
+    "No provider-backed commands or agent harness commands were run.",
+    "No canonicalize, campaign dedup, identity-review, write, ask, schema, ontology-normalize, or --profile/provider commands were run.",
+    "No materialize, export-jsonl, or full validate commands were run.",
+    "No edits were made to canonical JSONL, wiki pages, DB, LOG.md, manifests, retired submissions, submissions, or merges.json."
+  ]
+}

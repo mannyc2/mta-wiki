@@ -1,0 +1,158 @@
+{
+  "run_id": "2026-06-10T17-48-04-786Z_1496766-71799552_ingest_2010-06-08-brt-nostrand-cb1",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-10T19:47:04.622Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-offset-bus-lanes-nostrand",
+        "local_observation_id": "treatment_offset_bus_lanes_nostrand",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_offset-bus-lanes-nostrand_2",
+            "description": "Offset bus lanes for 5 miles, with bus bulbs at stations from DeKalb to Church Aves on Nostrand/Rogers SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_08_brt_nostrand_cb1",
+                "block_id": "p008_c0003",
+                "source_quote": "Offset bus lanes for 5 miles, with bus bulbs at stations from DeKalb to Church Aves"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "treatment_offset-bus-lanes-nostrand_2",
+            "description": "Offset bus lanes for 5 miles from DeKalb to Church Aves along Nostrand Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_08_brt_nostrand_cb1",
+                "block_id": "p008_c0003",
+                "source_quote": "Offset bus lanes for 5 miles, with bus bulbs at stations from DeKalb to Church Aves"
+              }
+            ]
+          }
+        ],
+        "rationale": "p008_c0003 explicitly lists 'Offset bus lanes for 5 miles, with bus bulbs at stations from DeKalb to Church Aves' as a Project Feature of the Nostrand/Rogers SBS project presented to CB1 on 2010-06-08.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_08_brt_nostrand_cb1",
+            "block_id": "p008_c0003",
+            "source_quote": "Offset bus lanes for 5 miles, with bus bulbs at stations from DeKalb to Church Aves"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-tsp-nostrand-rogers",
+        "local_observation_id": "treatment_tsp_nostrand_rogers",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_tsp-nostrand-rogers",
+            "description": "Transit Signal Priority for 3.8 miles from Flatbush Avenue to Sheepshead Bay, and 5 miles from DeKalb to Church Aves on Nostrand/Rogers SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_08_brt_nostrand_cb1",
+                "block_id": "p008_c0004",
+                "source_quote": "Transit Signal Priority for 3.8 miles from Flatbush Avenue to Sheepshead Bay"
+              },
+              {
+                "source_id": "2010_06_08_brt_nostrand_cb1",
+                "block_id": "p008_c0007",
+                "source_quote": "TSP for 5 miles from DeKalb to Church Aves"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "treatment_tsp-nostrand-rogers",
+            "description": "TSP along Nostrand Avenue southbound for 5 miles and Rogers Avenue northbound for 3.8 miles",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_08_brt_nostrand_cb1",
+                "block_id": "p008_c0004",
+                "source_quote": "Transit Signal Priority for 3.8 miles from Flatbush Avenue to Sheepshead Bay"
+              },
+              {
+                "source_id": "2010_06_08_brt_nostrand_cb1",
+                "block_id": "p008_c0007",
+                "source_quote": "TSP for 5 miles from DeKalb to Church Aves"
+              }
+            ]
+          }
+        ],
+        "rationale": "p008_c0004 and p008_c0007 both list Transit Signal Priority as a Project Feature of the Nostrand/Rogers SBS project, with p008_c0004 giving TSP for 3.8 miles Flatbush to Sheepshead Bay and p008_c0007 also noting TSP for 5 miles DeKalb to Church Aves.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_08_brt_nostrand_cb1",
+            "block_id": "p008_c0004",
+            "source_quote": "Transit Signal Priority for 3.8 miles from Flatbush Avenue to Sheepshead Bay"
+          },
+          {
+            "source_id": "2010_06_08_brt_nostrand_cb1",
+            "block_id": "p008_c0007",
+            "source_quote": "TSP for 5 miles from DeKalb to Church Aves"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-stations-nostrand-sbs",
+        "local_observation_id": "treatment_stations_nostrand_sbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_stations-nostrand-sbs",
+            "description": "BRT stations with bus bulbs along the Nostrand/Rogers SBS route, from DeKalb to Church Aves",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_08_brt_nostrand_cb1",
+                "block_id": "p008_c0003",
+                "source_quote": "bus bulbs at stations from DeKalb to Church Aves"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "treatment_stations-nostrand-sbs",
+            "description": "BRT stations with bus bulbs along Nostrand Avenue from DeKalb to Church Aves",
+            "evidence_refs": [
+              {
+                "source_id": "2010_06_08_brt_nostrand_cb1",
+                "block_id": "p008_c0003",
+                "source_quote": "bus bulbs at stations from DeKalb to Church Aves"
+              }
+            ]
+          }
+        ],
+        "rationale": "p008_c0003 explicitly mentions 'bus bulbs at stations from DeKalb to Church Aves' as part of the Nostrand/Rogers SBS project features. While p005_c0012 is only the 'Stations' caption label, p008_c0003 provides project-level evidence that stations with bus bulbs are a treatment on this corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_06_08_brt_nostrand_cb1",
+            "block_id": "p008_c0003",
+            "source_quote": "bus bulbs at stations from DeKalb to Church Aves"
+          },
+          {
+            "source_id": "2010_06_08_brt_nostrand_cb1",
+            "block_id": "p005_c0012",
+            "source_quote": "Stations"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-43-26-095Z_1656125-aaa94859_canonicalize_2026-06-10t17-48-04-786z-1496766-71799552-ingest-2010-06-08-brt-nostrand-cb1-treatment-relations"
+}

@@ -1,0 +1,64 @@
+{
+  "run_id": "2026-06-10T22-56-13-345Z_1976810-5bb38f51_ingest_201109-brt-hylan-introductory-info",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T01:39:44.653Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "tr-skip-traffic-safety-toolbox",
+        "local_observation_id": "treatment_hylan_traffic_safety_toolbox",
+        "decision": "skip",
+        "rationale": "The cited block p003_c0003 merely lists treatment types under 'Traffic and Safety' heading (Left-Turn Lane Improvement Projects, Signal Timing Optimization, Advanced Signals, Pedestrian Islands, Sidewalks, Wider Medians) as part of a 'Toolbox of Improvements' slide. The block text does not explicitly state that these treatments are attached to a specific project or corridor. A mere listing of treatments is not evidence of attachment.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p003_c0003",
+            "source_quote": "▪ Left-Turn Lane Improvement Projects ▪ Signal Timing Optimization ▪ Advanced Signals ▪ Pedestrian Islands ▪ Sidewalks ▪ Wider Medians"
+          }
+        ]
+      },
+      {
+        "decision_id": "tr-skip-bus-service-toolbox",
+        "local_observation_id": "treatment_hylan_bus_service_toolbox",
+        "decision": "skip",
+        "rationale": "The cited blocks p003_c0007 ('Bus Service' heading) and p003_c0008 (listing 'Curb Bus Lane or Offset Bus Lane, Simplified Service Pattern, Longer Stop Spacing, Streamlined Route Path') merely enumerate bus service treatment types within the 'Toolbox of Improvements' slide. The block text does not explicitly state an attachment to a specific project or corridor. A mere listing of treatments is not evidence of attachment.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p003_c0007",
+            "source_quote": "Bus Service"
+          },
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p003_c0008",
+            "source_quote": "▪ Curb Bus Lane or Offset Bus Lane ▪ Simplified Service Pattern ▪ Longer Stop Spacing ▪ Streamlined Route Path"
+          }
+        ]
+      },
+      {
+        "decision_id": "tr-skip-technology-toolbox",
+        "local_observation_id": "treatment_hylan_technology_toolbox",
+        "decision": "skip",
+        "rationale": "The cited blocks p003_c0012 ('Technology' heading) and p003_c0013 (listing 'Transit Signal Priority, Real-time Bus Information, Advanced Payment System') merely enumerate technology treatment types within the 'Toolbox of Improvements' slide. The block text does not explicitly state an attachment to a specific project or corridor. A mere listing of treatments is not evidence of attachment.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p003_c0012",
+            "source_quote": "Technology"
+          },
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p003_c0013",
+            "source_quote": "▪ Transit Signal Priority ▪ Real-time Bus Information ▪ Advanced Payment System"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-37-50-109Z_2111393-6c7981a5_canonicalize_2026-06-10t22-56-13-345z-1976810-5bb38f51-ingest-201109-brt-hylan-introductory-info-treatment-relations"
+}

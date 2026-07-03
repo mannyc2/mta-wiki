@@ -1,0 +1,455 @@
+{
+  "schema_proposal_run_id": "2026-06-08T23-52-42-494Z_schema-proposal-run",
+  "proposed_at": "2026-06-08T23:53:24.012Z",
+  "observation_kind": "relation",
+  "profile_name": "deepseek-pro",
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "audit_packet": {
+    "observation_kind": "relation",
+    "submission_count": 370,
+    "accepted_count": 354,
+    "rejected_count": 16,
+    "declared_anchor_fields": [
+      "object_local_observation_id",
+      "relation_kind",
+      "subject_local_observation_id"
+    ],
+    "enum_candidates": [
+      {
+        "field": "raw_relation_kind",
+        "occurrences": 4,
+        "accepted_occurrences": 4,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 22,
+        "coverage": 0.01,
+        "distinct_values": 1,
+        "accepted_distinct_values": 1,
+        "canonical_distinct_values": 3,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "affects_route"
+        ],
+        "accepted_values": [
+          "affects_route"
+        ],
+        "canonical_values_observed": [
+          "affects_route",
+          "has_corridor",
+          "has_treatment_component"
+        ],
+        "value_counts": [
+          {
+            "value": "affects_route",
+            "count": 4
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "affects_route",
+            "count": 4
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "has_treatment_component",
+            "count": 16
+          },
+          {
+            "value": "affects_route",
+            "count": 4
+          },
+          {
+            "value": "has_corridor",
+            "count": 2
+          }
+        ]
+      }
+    ],
+    "additional_keys": [
+      {
+        "field": "contractor",
+        "occurrences": 1,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 0,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "empty",
+        "classification": "sparse",
+        "sample_values": [
+          "Skanska"
+        ],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "description",
+        "occurrences": 97,
+        "accepted_occurrences": 90,
+        "rejected_occurrences": 7,
+        "canonical_occurrences": 90,
+        "coverage": 0.26,
+        "accepted_coverage": 0.25,
+        "canonical_coverage": 0.25,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "ACE program expanded to five new bus routes",
+          "MTA Data & Analytics team publishes blog posts including Curious customers, cool tools, and open data",
+          "MTA released subway hourly ridership and bus hourly ridership datasets in 2023",
+          "The MTA Open Data Program held the Budget Press Tour public engagement events in 2024",
+          "14th Street bus boarding platform installation",
+          "14th Street Busway was made permanent in June 2020",
+          "14th Street is a Vision Zero Priority Corridor",
+          "14th Street TTP Pilot Project implemented by NYCDOT"
+        ],
+        "accepted_sample_values": [
+          "14th Street bus boarding platform installation",
+          "14th Street Busway was made permanent in June 2020",
+          "14th Street is a Vision Zero Priority Corridor",
+          "14th Street TTP Pilot Project implemented by NYCDOT",
+          "16 traffic enforcement agents deployed Oct 24-Nov",
+          "168th St Interim Terminal serves 10 MTA bus routes and 5 NICE bus routes, nearly 10,000 daily riders",
+          "20-Year Needs Assessment datasets include first-ever public data on asset condition",
+          "2019 bus priority project on Lexington Ave corridor"
+        ],
+        "canonical_sample_values": [
+          "14th Street bus boarding platform installation",
+          "14th Street Busway was made permanent in June 2020",
+          "14th Street is a Vision Zero Priority Corridor",
+          "14th Street TTP Pilot Project implemented by NYCDOT",
+          "16 traffic enforcement agents deployed Oct 24-Nov",
+          "168th St Interim Terminal serves 10 MTA bus routes and 5 NICE bus routes, nearly 10,000 daily riders",
+          "20-Year Needs Assessment datasets include first-ever public data on asset condition",
+          "2019 bus priority project on Lexington Ave corridor"
+        ]
+      },
+      {
+        "field": "hotline",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "(929) 380-5778"
+        ],
+        "accepted_sample_values": [
+          "(929) 380-5778"
+        ],
+        "canonical_sample_values": [
+          "(929) 380-5778"
+        ]
+      },
+      {
+        "field": "new_location",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "90th Avenue"
+        ],
+        "accepted_sample_values": [
+          "90th Avenue"
+        ],
+        "canonical_sample_values": [
+          "90th Avenue"
+        ]
+      },
+      {
+        "field": "new_location_normalized",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "object_id",
+        "occurrences": 0,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 353,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 1,
+        "value_kind": "empty",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": [
+          "entity_mta-nyct",
+          "entity_nyc-dot",
+          "corridor_14th-street-ttp",
+          "corridor_34th-st-busway",
+          "corridor_jamaica-ave-busway",
+          "project_mta-open-data-law-2021",
+          "project_open-data-plan-2022",
+          "route_b60"
+        ]
+      },
+      {
+        "field": "old_location",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Merrick Boulevard"
+        ],
+        "accepted_sample_values": [
+          "Merrick Boulevard"
+        ],
+        "canonical_sample_values": [
+          "Merrick Boulevard"
+        ]
+      },
+      {
+        "field": "old_location_normalized",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "routes",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Bx5",
+          "M100",
+          "M2",
+          "M4",
+          "M42"
+        ],
+        "accepted_sample_values": [
+          "Bx5",
+          "M100",
+          "M2",
+          "M4",
+          "M42"
+        ],
+        "canonical_sample_values": [
+          "Bx5",
+          "M100",
+          "M2",
+          "M4",
+          "M42"
+        ]
+      },
+      {
+        "field": "routes_affected",
+        "occurrences": 2,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Bx5",
+          "M100",
+          "M2",
+          "M4",
+          "M42"
+        ],
+        "accepted_sample_values": [
+          "Bx5",
+          "M100",
+          "M2",
+          "M4",
+          "M42"
+        ],
+        "canonical_sample_values": [
+          "Bx5",
+          "M100",
+          "M2",
+          "M4",
+          "M42"
+        ]
+      },
+      {
+        "field": "subject_id",
+        "occurrences": 0,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 353,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 1,
+        "value_kind": "empty",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": [
+          "project_ace-automated-camera-enforcement",
+          "project_14th-street-transit-truck-priority-pilot",
+          "project_mta-open-data-program",
+          "entity_mta-nyct",
+          "project_b44-sbs-implementation",
+          "project_jamaica-bus-improvement-study",
+          "project_bronx-bus-network-redesign",
+          "project_east-161st-st-bx6-capital"
+        ]
+      }
+    ]
+  },
+  "closure_policy": "deferred",
+  "closure_signals": [
+    {
+      "field": "raw_relation_kind",
+      "closure_readiness": "open",
+      "occurrences": 4,
+      "accepted_occurrences": 4,
+      "canonical_occurrences": 22,
+      "coverage": 0.01
+    }
+  ],
+  "valid": true,
+  "schema_issues": [],
+  "warnings": [],
+  "proposal": {
+    "observation_kind": "relation",
+    "field_proposals": [
+      {
+        "field": "raw_relation_kind",
+        "decision": "needs_more_data",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "raw_relation_kind_other"
+        },
+        "rationale": "Only one distinct value observed (affects_route) across 4 occurrences, while canonical system shows three distinct relation kinds. Sample too thin to propose enum normalization."
+      }
+    ],
+    "key_dispositions": [
+      {
+        "key": "contractor",
+        "disposition": "drop",
+        "rationale": "Single rejected occurrence; too sparse and rejected to include in payload."
+      },
+      {
+        "key": "description",
+        "disposition": "promote_field",
+        "target": "description",
+        "rationale": "Free-text field with moderate coverage (0.25); useful for human-readable context."
+      },
+      {
+        "key": "hotline",
+        "disposition": "drop",
+        "rationale": "Single occurrence, sparse; phone number not suitable as a repeated payload field."
+      },
+      {
+        "key": "new_location",
+        "disposition": "drop",
+        "rationale": "Single occurrence, sparse; unstructured location string superseded by new_location_normalized."
+      },
+      {
+        "key": "new_location_normalized",
+        "disposition": "needs_more_data",
+        "rationale": "Structured object field with only 1 occurrence; too sparse to promote now but could be valuable with more data."
+      },
+      {
+        "key": "object_id",
+        "disposition": "drop",
+        "rationale": "Not present in raw submissions; derived canonical identifier, already covered by anchor field object_local_observation_id."
+      },
+      {
+        "key": "old_location",
+        "disposition": "drop",
+        "rationale": "Single occurrence, sparse; unstructured location string superseded by old_location_normalized."
+      },
+      {
+        "key": "old_location_normalized",
+        "disposition": "drop",
+        "rationale": "Single occurrence, sparse; not enough data to promote as structured field."
+      },
+      {
+        "key": "routes",
+        "disposition": "relation_context",
+        "target": "routes",
+        "rationale": "Array of route identifiers (e.g., Bx5, M100); represents routes involved in the relation, suitable as relation context."
+      },
+      {
+        "key": "routes_affected",
+        "disposition": "drop",
+        "rationale": "Very sparse and appears redundant with 'routes'; prefer promoting the cleaner 'routes' field."
+      },
+      {
+        "key": "subject_id",
+        "disposition": "drop",
+        "rationale": "Not present in raw submissions; derived canonical identifier, already covered by anchor field subject_local_observation_id."
+      }
+    ],
+    "notes": "Most additional keys are extremely sparse. Only description and routes show enough signal to consider promotion. Relation kind enum candidate is immature; future audit cycles should revisit once more distinct raw values emerge."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T23-52-42-504Z_3609302-bd8e47fe_schema-proposal-run_relation",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-52-42-504Z_2026-06-08T23-52-42-504Z_3609302-bd8e47fe_schema-proposal-run_relation.jsonl"
+}

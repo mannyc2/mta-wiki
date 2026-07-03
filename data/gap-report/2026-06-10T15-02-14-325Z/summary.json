@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-06-10T15-02-14-325Z",
+  "total": 4731,
+  "by_class": {
+    "dangling_reference": 358,
+    "date_unnormalized": 27,
+    "lifecycle_incomplete": 21,
+    "lifecycle_unanchored": 13,
+    "orphan_record": 1935,
+    "registry_uncovered": 307,
+    "single_source_fact": 1924,
+    "source_undated": 7,
+    "treatment_gap": 21,
+    "unresolved_source_gap": 5,
+    "value_conflict": 113
+  }
+}

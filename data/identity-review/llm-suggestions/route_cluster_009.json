@@ -1,0 +1,31 @@
+{
+  "review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "reviewed_at": "2026-06-08T21:07:57.856Z",
+  "packet_path": "data/identity-review/packets/route_cluster_009.md",
+  "cluster_id": "route_cluster_009",
+  "kind": "route",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "suggestion": {
+    "cluster_id": "route_cluster_009",
+    "kind": "route",
+    "merge_groups": [
+      [
+        "route_m57-ace",
+        "route_m57-nyct-2025"
+      ]
+    ],
+    "do_not_merge": [],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [
+      "When two route records share the same route_id, route_label, and borough, and neither has a variant suffix, they represent the same canonical route and should be merged."
+    ],
+    "confidence": "high",
+    "rationale": "Both records describe the M57 bus route in Manhattan with identical route_id 'M57' and route_label 'M57', same borough 'Manhattan', no variant distinctions, and both reference the ACE program. The shared identity key 'route_m57' confirms duplicate global identity. The negative signal 'variant mismatch: unknown vs unknown' is not a real conflict since neither record has a variant. These are the same canonical route from different sources."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T21-07-18-033Z_3449211-ac80ef8d_identity-review-run_route-cluster-009",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-07-18-033Z_2026-06-08T21-07-18-033Z_3449211-ac80ef8d_identity-review-run_route-cluster-009.jsonl"
+}

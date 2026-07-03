@@ -1,0 +1,322 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-52696"
+record_kind: "source"
+display_name: "Safety Committee Meeting September 2021"
+source_id: "meeting_doc_52696"
+source_ids:
+  - "meeting_doc_52696"
+local_observation_id: "source_meeting_doc_52696"
+local_observation_ids:
+  - "source_meeting_doc_52696"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T23:35:41.578Z"
+raw_text: "Safety Committee Meeting September 2021 - Meeting book and minutes from the MTA Safety Committee"
+submission_ids:
+  - "sub_15d80f8ddb86568f"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting book"
+  date_text: "September 2021; Monday, 9/13/2021"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2021-09"
+    precision: "month"
+    raw_text: "September 2021; Monday, 9/13/2021"
+  description: "MTA Safety Committee meeting book containing minutes from July 21, 2021 meeting, September 2021 agenda, work plan, and safety metrics for MNR, LIRR, B&T, and NYCT for July 2021."
+  document_type: "Safety Committee Meeting Book and Minutes"
+  published_date_normalized: "2021-09"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "Safety Committee Meeting September 2021"
+evidence_refs:
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_52696#p001_c0003"
+    page_number: 1
+    role: "document_title"
+    source_id: "meeting_doc_52696"
+    source_path: "raw/sources/meeting_doc_52696/blocks.jsonl"
+    source_quote: "Safety Committee Meeting September 2021"
+    text_sha256: "sha256:1ff4e3f1a6bd60249c4c1397a7b31413203f8da57a0f96a85051205ce884fad7"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0003"
+    evidence_id: "meeting_doc_52696#p002_c0003"
+    page_number: 2
+    role: "meeting_date"
+    source_id: "meeting_doc_52696"
+    source_path: "raw/sources/meeting_doc_52696/blocks.jsonl"
+    source_quote: "Monday, 9/13/2021"
+    text_sha256: "sha256:b068a1e58b0ee4a8c48f861e5e269fb1146e72fdf5b72fcd6d40bf08399939e2"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0002"
+    evidence_id: "meeting_doc_52696#p002_c0002"
+    page_number: 2
+    role: "location"
+    source_id: "meeting_doc_52696"
+    source_path: "raw/sources/meeting_doc_52696/blocks.jsonl"
+    source_quote: "2 BROADWAY, 20TH FLOOR BOARD ROOM NEW YORK, NY 10004"
+    text_sha256: "sha256:e7f44dc9862f4864130ba52732e34cd76361bc75317005dc51e2c004772582e3"
+    text_source: "raw_text"
+---
+
+# Safety Committee Meeting Book
+
+source_id: meeting_doc_52696
+citation: cite block ids exactly as shown in square brackets
+document: 187 block(s)
+
+## Page 1
+
+> [p001_c0001] The logo for the Metropolitan Transportation Authority (MTA) is a black circle containing the white letters "MTA" in a bold, sans-serif font.
+[p001_c0002] Metropolitan Transportation Authority
+### [p001_c0003] Safety Committee Meeting September 2021
+### [p001_c0004] Committee Members
+[p001_c0005] J. Lieber, Chair
+[p001_c0006] A. Albert
+[p001_c0007] N. Brown
+[p001_c0008] L. Cortes-Vazquez
+[p001_c0009] M. Fleischer
+[p001_c0010] R. Herman
+[p001_c0011] K. Law
+[p001_c0012] R. Linn
+[p001_c0013] H. Mihaltses
+[p001_c0014] J. Samuelsen
+[p001_c0015] V. Tessitore
+[p001_c0016] N. Zuckerman
+
+## Page 2
+
+### [p002_c0001] Safety Committee Meeting
+[p002_c0002] 2 BROADWAY, 20TH FLOOR BOARD ROOM NEW YORK, NY 10004
+[p002_c0003] Monday, 9/13/2021
+[p002_c0004] 8:30 - 9:00 AM ET
+### [p002_c0005] 1. Public Comments
+### [p002_c0006] 2. Approval of Minutes -
+[p002_c0007] Safety Committee Minutes - Page 3
+### [p002_c0008] 3. Safety Committee Work Plan
+[p002_c0009] 2021 Safety Committee Work Plan - Page 6
+### [p002_c0010] 4. Safety Metrics - In Progress
+### [p002_c0011] July
+[p002_c0012] MNR Safety Metrics - Page 8
+[p002_c0013] LIRR Safety Metrics - Page 9
+[p002_c0014] B&T Safety Metrics - Page 10
+[p002_c0015] NYCT Safety Metrics - Page 11
+### [p002_c0016] 5. Safety & Security Policy:
+[p002_c0017] COVID-19 Vaccination or Test Program
+[p002_c0018] Security Statistics Update
+[p002_c0019] Homeless Report
+[p002_c0020] Next Meeting: TBD
+
+## Page 3
+
+### [p003_c0001] Metropolitan Transportation Authority Minutes of Safety Committee Meeting 2 Broadway, 20 th Floor New York, NY 10004
+[p003_c0002] Wednesday, July 21, 2021 9:00 AM
+[p003_c0003] The following members were present:
+[p003_c0004] Hon. Pat Foye, Chair Hon. Andrew Albert Hon. Lorraine Cortes-Vazquez Hon. Vincent Tessitore Hon. Robert Linn Hon. Norman Brown Hon. Neal Zuckerman
+[p003_c0005] The following agency safety officers were present (in person or virtual): Patrick Warren, Metropolitan Transportation Authority, Headquarters (“MTAHQ”) Carl Hamann, Metropolitan Transportation Authority, Headquarters (“MTAHQ”) Tim Doddo, MTA New York City Transit (“NYCT”) Loretta Ebbighausen, MTA Long Island Rail Road (“LIRR”) Matt Peloso, Metro-North Railroad (“MNR”) Eric Osnes, MTA Bridges and Tunnels (“B&T”) Peter Kohner, MTA Capital Construction (“CC”)
+[p003_c0006] Cathy Rinaldi, President, Metro-North Railroad (“MNR”); was also in attendance.
+### [p003_c0007] Chairman Foye chaired the July meeting, and called the meeting to order.
+[p003_c0008] Chairman Foye asked Patrick Warren if there were any public speakers.
+### [p003_c0009] PUBLIC SPEAKERS
+[p003_c0010] There was one public speaker, Jason Anthony.
+### [p003_c0011] APPROVAL OF MINUTES
+[p003_c0012] Upon motion duly made and seconded, the minutes of the April 2021 Safety Committee were approved.
+### [p003_c0013] SAFETY COMMITTEE WORK PLAN
+[p003_c0014] Chair Foye asked if there any changes to the work plan. Patrick Warren stated there were no changes to the work plan.
+[p003_c0015] Chair Foye turned it over to Patrick Warren to start the Safety Committee meeting briefing.
+[p003_c0016] _Master Page # 3 of 11 - Safety Committee Meeting 9/13/2021_
+
+## Page 4
+
+[p004_c0001] Mr. Warren commented on some of the recent Safety leadership changes across the agencies. Armstrong, Doddo and Hamann.
+### [p004_c0002] SAFETY RISK MANAGEMENT:
+[p004_c0003] Mr. Warren briefly went over the meeting's agenda to include the NYCT Agency Safety Plan, NTSB Recommendations and the MTA's drug and alcohol program. Mr. Warren introduced Tim Doddo to discuss the NYCT agency safety plan. Please refer to the video recording of the meeting produced by the MTA and maintained in MTA records for the content of the speaker's presentation.
+[p004_c0004] Mr. Warren stated that the recent Safety Statistics are in the Committee Book and were presented in the Agency Committee meetings.
+[p004_c0005] Commissioner Albert asked a question about Metro-North safety statistics. Cathy Rinaldi responded to commissioner Albert's question. Mr. Warren also commented on the statistics.
+[p004_c0006] Patrick Warren discussed the status of the NTSB Safety Recommendations. Mr. Warren stated there were no current open investigations with the NTSB. He discussed the seven recommendations still listed at "Open" with the NTSB. Please refer to the video recording of the meeting produced by the MTA and maintained in MTA records for the content of the speaker's presentation.
+[p004_c0007] Commissioner Linn expressed concern on some of the Safety statistics regarding per capita analysis. Mr. Warren responded to Commissioner Linn's comments and what is being done to address Safety concerns. Please refer to the video recording of the meeting produced by the MTA and maintained in MTA records for the content of the speaker's presentation.
+[p004_c0008] Commissioner Brown asked why the crime statistics are not discussed at Safety Committee. Mr. Warren agreed and stated that is something the group is looking to include going forward.
+[p004_c0009] Mr. Warren turned the presentation over to Dr. Luisi to discuss the MTA's Drug and Alcohol program. Please refer to the video recording of the meeting produced by the MTA and maintained in MTA records for the content of the speaker's presentation.
+[p004_c0010] Chairman Foye made a motion to bring the transit Safety Plan to full board.
+[p004_c0011] Commissioner Zuckerman made some comments about the Safety Committee and its ongoing purpose and how it can continue to help the Operating Agencies. Mr. Warren responded to Commissioner Zuckerman's comments.
+[p004_c0012] Commissioner Albert asked if this was Safety & Security Committee. Mr. Warren responded to Commissioner Albert's comments. Please refer to the video recording of the meeting produced by the MTA and maintained in MTA records for the content of the speaker's presentation.
+[p004_c0013] Commissioner Brown commented on the Drug & Alcohol testing statistics as well as preemployment testing including vaccines. Dr. Luisi responded to Commissioner Brown's comments. Please refer to the video recording of the meeting produced by the MTA and maintained in MTA records for the content of the speaker's presentation.
+[p004_c0014] Commissioner Linn commented on his desire for Committees to deal with substantive issues. Mr. Warren took Commissioner Linn's note on Committee goals.
+[p004_c0015] _Master Page # 4 of 11 - Safety Committee Meeting 9/13/2021_
+
+## Page 5
+
+[p005_c0001] Commissioner Albert asked a question about a vaccination mandate. Dr. Luisi and Mr. Warren responded. Please refer to the video recording of the meeting produced by the MTA and maintained in MTA records for the content of the speaker's presentation.
+[p005_c0002] Commissioner Tessitore asked a question about testing regarding the interview after a positive test. Dr. Luisi responded about the one on one with an MRO. Please refer to the video recording of the meeting produced by the MTA and maintained in MTA records for the content of the speaker's presentation.
+[p005_c0003] Commissioner Brown asked if there are any plans to replace to Mr. Warren as head of Safety Committee. Mr. Warren responded to Commissioner Brown's question.
+[p005_c0004] Commissioner Albert asked about Navigational Apps and how they are updated when a grade crossing is added or removed. Mr. Warren responded that the initial data was given to the app developers and he will find out how they are updated going forward.
+### [p005_c0005] ADJOURNMENT
+[p005_c0006] Chair Foye asked for a motion to adjourn the meeting. A motion was made and seconded and the meeting was adjourned.
+[p005_c0007] _Master Page # 5 of 11 - Safety Committee Meeting 9/13/2021_
+
+## Page 6
+
+### [p006_c0001] 2021 Safety Committee Work Plan
+### [p006_c0002] I. RECURRING AGENDA ITEMS
+### [p006_c0003] Topic
+[p006_c0004] Public Comments Approval of Minutes Committee Work Plan
+### [p006_c0005] Responsibility
+[p006_c0006] Committee Chair & Members Committee Chair & Members Committee Chair & Members
+### [p006_c0007] II. SPECIFIC AGENDA ITEMS
+### [p006_c0008] Responsibility
+### [p006_c0009] January 2021
+### [p006_c0010] Safety Policy
+- [p006_c0011] - Approval of 2021 Work Plan
+[p006_c0012] MTA Chief Safety Officer
+### [p006_c0013] Safety Risk Management
+- [p006_c0014] - Agency Safety Statistics - COVID-19 Update
+[p006_c0015] Agency Safety Leads MTA Chief Safety Officer
+### [p006_c0016] April 2021
+### [p006_c0017] Safety Promotion
+- [p006_c0018] - Agency Safety Statistics
+[p006_c0019] Agency Safety Leads
+### [p006_c0020] Safety Risk Management
+- [p006_c0021] - Transformation
+[p006_c0022] MTA Chief Safety Officer
+### [p006_c0023] July 2021
+### [p006_c0024] Safety Risk Management
+- [p006_c0025] - NTSB Recommendation Status Review - Agency Safety Statistics - Drug & Alcohol Program Overview
+[p006_c0026] MTA Chief Safety Officer Agency Safety Leads MTA Corporate Health Officer
+### [p006_c0027] September 2021
+### [p006_c0028] Safety Policy
+- [p006_c0029] - COVID-19 Vaccination or Test Program update - Agency Safety & Security Statistics - Homeless Report
+[p006_c0030] MTA Corporate Health Officer MTA Chief Safety Officer MTA Chief Safety Officer/ Agency Safety Leads MTA Chief Safety Officer
+[p006_c0031] _1_
+[p006_c0032] _Master Page # 6 of 11 - Safety Committee Meeting 9/13/2021_
+
+## Page 7
+
+### [p007_c0001] Detailed Summary
+### [p007_c0002] I. RECURRING AGENDA ITEMS
+### [p007_c0003] Approval of Minutes
+[p007_c0004] The Committee Chair will request a motion to approve the minutes of the prior meeting of the Safety Committee.
+### [p007_c0005] Committee Work Plan
+[p007_c0006] The Work Plan will list, by meeting, the topics scheduled for review. The Committee will be advised if any changes have been made to the plan.
+### [p007_c0007] II. SPECIFIC AGENDA ITEMS
+[p007_c0008] Note: The SMS framework has four pillars: Safety Policy, Safety Risk Management, Safety Assurance, and Safety Promotion. To facilitate general oversight of SMS activities at the MTA and its agencies, each agenda items will generally pertain to one of these pillars.
+### [p007_c0009] January 2021
+### [p007_c0010] Safety Policy – Approval of the 2021 workplan
+[p007_c0011] The committee will receive a discussion on the 2021 workplan and asked to approve.
+### [p007_c0012] Safety Risk Management
+[p007_c0013] The committee will receive 2020 safety metrics and the continuing Covid-19 related efforts.
+### [p007_c0014] April 2021
+### [p007_c0015] Safety Promotion & Safety Risk Management
+[p007_c0016] The committee will receive updated safety metrics and a briefing on Transformation.
+### [p007_c0017] July 2021
+### [p007_c0018] Safety Risk Management
+[p007_c0019] The committee will receive a midyear report on safety metrics as well as a briefing on NTSB recommendations and an overview of the drug and alcohol program.
+### [p007_c0020] September 2021
+### [p007_c0021] Safety Policy
+[p007_c0022] The committee will receive a briefing on the Vax or Test program. The committee will receive an update on agency safety & security metrics. The chief safety officer will brief on Homeless Outreach.
+[p007_c0023] _2_
+[p007_c0024] _Master Page # 7 of 11 - Safety Committee Meeting 9/13/2021_
+
+## Page 8
+
+### [p008_c0001] Metro-North Railroad Office of System Safety
+### [p008_c0002] July 2021 Safety Report
+[p008_c0003]
+
+```text
+Performance Performance Indicator 12-Month Average August 2018 –July 2019 August 2019 –July 2020 August 2020 –July 2021 FRA Reportable Customer Accident Rate per Million Customers 1.06 1.01 1.93 FRA Reportable Employee Lost Time Injury Rate per 200,000 worker hours 2.14 2.05 1.98 2020 2021 July Year to Date July Year to Date Grade Crossing Incidents 1 0 1 0 0 Mainline FRA Reportable Train Derailments 0 0 0 0 Mainline FRA Reportable Train Collisions 0 0 0 0
+```
+[p008_c0004] 1 Per FRA - Any impact between railroad on-track equipment and a highway user at a highway-rail grade crossing. The term “highway user” includes automobiles, buses, trucks, motorcycles, bicycles, farm vehicles, pedestrians, and all other modes of surface transportation motorized and un-motorized.
+[p008_c0005]
+
+```text
+Leading Indicators Safety Training 2020 2021 July Year to Date July Year to Date First Responders Trained 0 815 184 1,045 Employee Safety Training Courses 110 271 145 269 Employees Trained 1,423 4,096 1,681 4,924 Employee Safety Training Hours 12,075 115,144 14,874 109,801 Customer and Community: Focus on Grade Crossings 2020 2021 July Year to Date July Year to Date Broken Gates 2 13 1 8 MTA Police Details 18 165 46 216 Summons 79 383 92 480 Warnings 31 118 26 165 Community Education and Outreach* 460 32,463 13,742 64,769 Cars Equipped with Cameras Fleet Size Total Cars Equipped % Complete Inward / Outward Facing Cab Cameras 956 956 100.00% Passenger Compartment Cameras 1,084 1,084 100.00%
+```
+[p008_c0006] *Due to the COVID-19 pandemic , community outreach events are held virtually, as a result TRACKS numbers are lower than previous years.
+### [p008_c0007] Definitions:
+[p008_c0008] First Responders Trained - The number of first responders trained by MNR's Emergency Management to assist in crisis events, such as train evacuation.
+[p008_c0009] Employee Safety Training Courses - The number of distinct safety-related courses offered, including technical courses that have a safety element. Repeats are excluded so that each course is counted only once.
+[p008_c0010] Employees Trained - The number of unique employees that attended one or more of these safety-related courses.
+[p008_c0011] Employee Safety Training Hours - The total hours of training completed by employees in all safety-related courses attended.
+[p008_c0012] Broken Gates - The number of events at grade crossing locations where a vehicle struck a crossing gate.
+[p008_c0013] MTA Police Detail - The number of details specifically for the purpose of monitoring behavior at Grade Crossings.
+[p008_c0014] Summons - The number of violations issued to a motorist for going around a crossing gate or due to behavior that put the motorist at risk (i.e. cell phone use, etc.).
+[p008_c0015] Warnings - The number of warnings issued to motorists due to behavior that put the motorist at risk (i.e. cell phone use, etc.).
+[p008_c0016] Community Education and Outreach - The number of individuals reached at a TRACKS event.
+[p008_c0017] Cars Equipped with Cameras - Number of complete inward/outward and passenger compartment camera installations on rolling stock.
+[p008_c0018] _Master Page # 8 of 11 - Safety Committee Meeting 9/13/2021_
+
+## Page 9
+
+### [p009_c0001] July 2021 Safety Report
+[p009_c0002] Statistical results for the 12-Month period are shown below.
+[p009_c0003]
+
+```text
+Performance Performance Indicator 12-Month Average August 2018 - July 2019 August 2019 - July 2020 August 2020 - July 2021 FRA Reportable Customer Accident Rate per Million Customers 2.12 4.45 3.57 FRA Reportable Employee Lost Time Injury Rate per 200,000 worker hours 3.24 3.07 3.73 2020 2021 July Year to Date July Year to Date Grade Crossing Incidents 1 0 2 0 3 Mainline FRA Reportable Train Derailments 0 1 0 1 Mainline FRA Reportable Train Collisions 0 0 0 2
+```
+[p009_c0004] 1 Per FRA - Any impact between railroad on-track equipment and a highway user at a highway-rail grade crossing. The term "highway user" includes automobiles, buses, trucks, motorcycles, bicycles, farm vehicles, pedestrians, and all other modes of surface transportation motorized and un-motorized.
+[p009_c0005]
+
+```text
+Leading Indicators Focus on Safety Training 2020 2021 July Year to Date July Year to Date First Responders Trained 0 174 0 264 Employee Safety Training Courses 76 441 71 434 Employees Trained 571 4,100 661 4,738 Employee Safety Training Hours 14,939 90,175 13,583 71,152 Customer and Community: July Year to Date July Year to Date Broken Gates 1 47 3 49 MTA Police Details 54 267 46 491 Summons 217 1,153 243 1,652 Warnings 88 383 63 681 Arrests 0 0 0 1 Community Education and Outreach 2 21,741 1,642 28,520 Community Education via Social Media 2 61 65,170 472,311
+```
+### [p009_c0006] Definitions:
+[p009_c0007] First Responders Trained - The number of first responders trained to assist in crisis events.
+[p009_c0008] Employee Safety Training Courses - The number of distinct safety-related courses offered, including technical courses that have a safety element. Repeats are excluded so that each course is counted only once.
+[p009_c0009] Employees Trained - The number of unique employees that attended one or more of these safety-related courses.
+[p009_c0010] Employee Safety Training Hours - The total hours of training completed by employees in all safety-related courses attended.
+[p009_c0011] Broken Gates - The number of events at grade crossing locations where a vehicle broke a crossing gate.
+[p009_c0012] MTA Police Detail - The number of details specifically for the purpose of monitoring behavior at Grade Crossings.
+[p009_c0013] Summons for Grade Crossing Violation and other Infractions - The number of violations issued to a motorist for going around a crossing gate or due to behavior that put the motorist at risk (i.e. cell phone use, etc.).
+[p009_c0014] Warnings - The number of warnings issued to motorists due to behavior that put the motorist at risk (i.e. cell phone use, etc.).
+[p009_c0015] Community Education and Outreach - The number of participants who attended a TRACKS, Operation LifeSaver, or Railroad Safety Awareness Event.
+[p009_c0016] _Master Page # 9 of 11 - Safety Committee Meeting 9/13/2021_
+
+## Page 10
+
+### [p010_c0001] Bridges and Tunnels
+### [p010_c0002] July 2021 Safety Report
+[p010_c0003] Statistical results for the 12-Month period are shown below.
+[p010_c0004]
+
+```text
+Performance Indicator Performance Indicator 12-Month Average August 2018 -July 2019 August 2019 - July 2020 August 2020 -July 2021 Customer Collisions Rate per Million Vehicles 6.60 5.12 4.03 Customer Injury Collisions Rate per Million Vehicles 0.90 0.81 0.63 Employee Accident Reports 251 159 163 Employee Lost Time Injuries Rate per 200,000 Hours Worked 6.3 5.7 6.1 Construction Injuries per 200,000 Hours Worked 1.54 2.44 2.12
+```
+[p010_c0005]
+
+```text
+Leading Indicators Roadway Safety 2020 2021 July Year End July Year to Date Workforce Development (# of Participants) 44 270 0 0 Fleet Preventative Maintenance Insp. 160 1463 167 885 Safety Taskforce Inspections 0 0* 3 10 Construction Safety July Year End July Year to Date Construction Safety Inspections 131 1621 121 635 Fire Safety July Year End July Year to Date Fire Code Audits Completed 3 14 1 7 FDNY Liaison Visits 0 12 0 17
+```
+[p010_c0006] * Safety Manager evaluations at each B&T facility supersedes task force inspections due to COVID 19.
+[p010_c0007] ** Conditions beginning Mid-March 2020 reflect an intra-pandemic period and therefore, is not indicative of prior history.
+### [p010_c0008] Definitions:
+[p010_c0009] Workforce Development provides for focused safety and skills training to all operations, maintenance and staff personnel. Classes feature OSHA 10 and 30 Classes, operations mandatory safety and skills instruction and retraining and specialty training (TIMS, CDL, FDNY instruction, Wrecker Driver Instruction and Roadway Safety Rules).
+[p010_c0010] Fleet Preventative Maintenance Inspections are conducted at each location to improve the customer and worker safety environment. Inspections identify potential hazardous roadway or facility conditions and prescribe corrective actions to eliminate hazards.
+[p010_c0011] Safety Taskforce Inspections are conducted by the joint Labor and Management Committee at each facility throughout the year on a rotating basis. The inspections consist of reviewing past accident and incident experiences/reports and facility safety reports. The Taskforce meets with location management and union representatives and makes a complete tour of the facility. The Taskforce is comprised of representatives of the Safety and Operations groups and has representation from each of the represented unions.
+[p010_c0012] Construction Safety Inspections are conducted by an independent safety monitor to ensure that the necessary components for a safe construction are present. Inspections include review of safety organization, job hazard analysis, safe work plans for specific high risk activities, personal protective equipment, fire protection, industrial hygiene, and training.
+[p010_c0013] Fire Code Audits are required by the NYS Uniform Fire Prevention Code. They are conducted by the Safety and Health Department at each building and facility throughout the Agency. They feature a review of fire prevention activities and the condition of fire fighting and suppression equipment.
+[p010_c0014] FDNY Liaison Visits are conducted on a regular basis (typically twice a year) whereby local fire companies visit and tour the facilities to become familiar with the structures and buildings and the fire equipment provided. This facilitates the development of strategies for fighting fires and responding to emergencies. Additionally, special drills and training exercises are conducted to drill on communications and special rescue operations should they be required.
+[p010_c0015] _Master Page # 10 of 11 - Safety Committee Meeting 9/13/2021_
+
+## Page 11
+
+### [p011_c0001] Monthly Operations Report
+[p011_c0002] Statistical results for the 12-Month period are shown below
+[p011_c0003]
+
+```text
+Safety Report Performance Indicators 12-Month Average Aug 18 - Jul 19 Aug 19 - Jul 20 Aug 20 - Jul 21 Subways Subway Customer Accidents per Million Customers 1 3.00 3.09 5.04 Subway Collisions 2 Total 0 3 2 Mainline 0 0 0 Yard 0 3 2 Subway Derailments 2 Total 5 8 12 Mainline 0 4 2 Yard 5 4 10 Subway Fires 2 720 847 983 Buses Bus Collisions Per Million Miles Regional 54.69 45.82 46.51 Bus Collision Injuries Per Million Miles Regional 5.94 5.41 4.94 Bus Customer Accidents Per Million Customers 1 Regional* 1.42 1.56 1.88 Total NYCT and MTA Bus Lost Time Accidents per 100 Employees 1 4.02 5.25 4.88
+```
+[p011_c0004] 1 12-month Average data from July through June.
+[p011_c0005] 2 12-month figures shown are totals rather than averages.
+[p011_c0006] * = Due to the implementation of rear door boarding and suspension of fare collection to protect frontline employees from the spread of COVID-19, AFC (MetroCard and OMNY) was not used from March 23, 2020, to August 30, 2020, to determine ridership. During this time, ridership was estimated using Automated Passenger Counter (APC) data.
+[p011_c0007]
+
+```text
+Leading Indicators Subways July YTD Goal YTD as % of Goal Roadway Worker Protection Joint Track Safety Audits -- Actual Count 29 217 340 63.8% Joint Track Safety Audits -- Compliance Rate 99.3% 99.6% 100.0% 99.6% Mainline Collision/Derailment Prevention Continuous Welded Rail Initiative (# of Track Feet) 1,645 15,620 9,999 156.2% Friction Pad Installation 1,797 13,592 22,000 61.8% Buses July YTD Goal YTD as % of Goal Collision Prevention Audible Pedestrian Turn Warning System 53 168 780 21.5% Vision Zero Employee Training 482 3,201 5,800 55.2%
+```
+[p011_c0008] _Master Page # 11 of 11 - Safety Committee Meeting 9/13/2021_

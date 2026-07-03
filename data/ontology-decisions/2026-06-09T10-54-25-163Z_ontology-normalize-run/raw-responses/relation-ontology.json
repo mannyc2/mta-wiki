@@ -1,0 +1,510 @@
+{
+  "ontology_normalize_run_id": "2026-06-09T10-54-25-163Z_ontology-normalize-run",
+  "normalized_at": "2026-06-09T10:57:52.588Z",
+  "agent_id": "relation-ontology",
+  "packet_path": "data/ontology-review/packets/relation-ontology.md",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "parsed_response": {
+    "agent_id": "relation-ontology",
+    "audit": {
+      "packet_quality": "good",
+      "notes": "Packet contains 7 candidates with clear evidence counts and examples. Relation kind inventory shows 113 distinct values across 472 records with identifiable alias patterns. Raw relation kind aliases have clear canonical mappings. Context fields are single-record payload fields needing review."
+    },
+    "decisions": [
+      {
+        "decision_id": "rel-kind-alias-lead-agency",
+        "candidate_id": "relation-ontology:relation-kind-inventory",
+        "decision_type": "canonical_id",
+        "summary": "Consolidate lead_agency, has_lead_agency, has_lead_entity under canonical lead_agency",
+        "rationale": "lead_agency (6), has_lead_agency (3), and has_lead_entity (2) all express the same concept of which entity leads a project. Consolidate to lead_agency as the canonical form with highest usage.",
+        "record_kind": "relation",
+        "canonical_id": "lead_agency",
+        "aliases": [
+          "has_lead_agency",
+          "has_lead_entity"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-kind-inventory",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-kind-alias-partner",
+        "candidate_id": "relation-ontology:relation-kind-inventory",
+        "decision_type": "canonical_id",
+        "summary": "Consolidate partner, partner_agency, has_partner under canonical has_partner",
+        "rationale": "has_partner (6), partner (2), and partner_agency (2) all express partnership relations. Consolidate to has_partner as the canonical form with highest usage.",
+        "record_kind": "relation",
+        "canonical_id": "has_partner",
+        "aliases": [
+          "partner",
+          "partner_agency"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-kind-inventory",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-kind-alias-enactment",
+        "candidate_id": "relation-ontology:relation-kind-inventory",
+        "decision_type": "canonical_id",
+        "summary": "Consolidate enacted and enacted_by under canonical enacted",
+        "rationale": "enacted (3) and enacted_by (2) express the same enactment concept. Consolidate to enacted as the canonical form with higher usage.",
+        "record_kind": "relation",
+        "canonical_id": "enacted",
+        "aliases": [
+          "enacted_by"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-kind-inventory",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-kind-alias-publish",
+        "candidate_id": "relation-ontology:relation-kind-inventory",
+        "decision_type": "canonical_id",
+        "summary": "Consolidate publishes, published_by, releases under canonical publishes",
+        "rationale": "publishes (3), published_by (3), and releases (5) all express publication/release actions. Consolidate to publishes as the canonical form.",
+        "record_kind": "relation",
+        "canonical_id": "publishes",
+        "aliases": [
+          "published_by",
+          "releases"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-kind-inventory",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-kind-alias-operates",
+        "candidate_id": "relation-ontology:relation-kind-inventory",
+        "decision_type": "canonical_id",
+        "summary": "Consolidate operates, operated_by under canonical operates",
+        "rationale": "operates (4) and operated_by (2) express the same operation relationship from different directions. Consolidate to operates as the canonical form with higher usage.",
+        "record_kind": "relation",
+        "canonical_id": "operates",
+        "aliases": [
+          "operated_by"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-kind-inventory",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-kind-alias-corridor-spatial",
+        "candidate_id": "relation-ontology:relation-kind-inventory",
+        "decision_type": "canonical_id",
+        "summary": "Consolidate operates_on_corridor, operates_on, uses_corridor under canonical uses_corridor",
+        "rationale": "uses_corridor (14), operates_on_corridor (9), and operates_on (3) all express spatial corridor relationships. Consolidate to uses_corridor as the canonical form with highest usage.",
+        "record_kind": "relation",
+        "canonical_id": "uses_corridor",
+        "aliases": [
+          "operates_on_corridor",
+          "operates_on"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-kind-inventory",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-kind-alias-implement",
+        "candidate_id": "relation-ontology:relation-kind-inventory",
+        "decision_type": "canonical_id",
+        "summary": "Consolidate implements, implemented_by under canonical implements",
+        "rationale": "implements (3) and implemented_by (4) express the same implementation relationship. Consolidate to implements as the canonical form.",
+        "record_kind": "relation",
+        "canonical_id": "implements",
+        "aliases": [
+          "implemented_by"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-kind-inventory",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-kind-alias-enforcement",
+        "candidate_id": "relation-ontology:relation-kind-inventory",
+        "decision_type": "canonical_id",
+        "summary": "Consolidate enforces, enforced_by under canonical enforces",
+        "rationale": "enforces (1) and enforced_by (2) express the same enforcement relationship. Consolidate to enforces as the canonical form.",
+        "record_kind": "relation",
+        "canonical_id": "enforces",
+        "aliases": [
+          "enforced_by"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-kind-inventory",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-kind-alias-route-service",
+        "candidate_id": "relation-ontology:relation-kind-inventory",
+        "decision_type": "canonical_id",
+        "summary": "Consolidate serves, serves_route under canonical serves_route",
+        "rationale": "serves_route (82) is the dominant form; serves (6) is a shorter variant of the same concept. Consolidate to serves_route as the canonical form with highest usage.",
+        "record_kind": "relation",
+        "canonical_id": "serves_route",
+        "aliases": [
+          "serves"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-kind-inventory",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-kind-alias-route-coverage",
+        "candidate_id": "relation-ontology:relation-kind-inventory",
+        "decision_type": "canonical_id",
+        "summary": "Consolidate includes_route, covers_route, will_serve_route under canonical includes_route",
+        "rationale": "includes_route (5), covers_route (3), and will_serve_route (2) all express route coverage relationships. Consolidate to includes_route as the canonical form with highest usage.",
+        "record_kind": "relation",
+        "canonical_id": "includes_route",
+        "aliases": [
+          "covers_route",
+          "will_serve_route"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-kind-inventory",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-kind-alias-application",
+        "candidate_id": "relation-ontology:relation-kind-inventory",
+        "decision_type": "canonical_id",
+        "summary": "Consolidate applies_to, applied_on_corridor under canonical applies_to",
+        "rationale": "applies_to (2) and applied_on_corridor (2) express the same application relationship. Consolidate to applies_to as the canonical form.",
+        "record_kind": "relation",
+        "canonical_id": "applies_to",
+        "aliases": [
+          "applied_on_corridor"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-kind-inventory",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-kind-alias-membership",
+        "candidate_id": "relation-ontology:relation-kind-inventory",
+        "decision_type": "canonical_id",
+        "summary": "Consolidate part_of, part_of_project, part_of_program under canonical part_of",
+        "rationale": "part_of (2), part_of_project (2), and part_of_program (1) all express membership/composition. Consolidate to part_of as the canonical form with highest usage.",
+        "record_kind": "relation",
+        "canonical_id": "part_of",
+        "aliases": [
+          "part_of_project",
+          "part_of_program"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-kind-inventory",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-kind-alias-outreach",
+        "candidate_id": "relation-ontology:relation-kind-inventory",
+        "decision_type": "canonical_id",
+        "summary": "Consolidate community_outreach, consulted under canonical community_outreach",
+        "rationale": "community_outreach (2) and consulted (2) express the same outreach/consultation relationship. Consolidate to community_outreach as the canonical form.",
+        "record_kind": "relation",
+        "canonical_id": "community_outreach",
+        "aliases": [
+          "consulted"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-kind-inventory",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-kind-alias-data-source",
+        "candidate_id": "relation-ontology:relation-kind-inventory",
+        "decision_type": "canonical_id",
+        "summary": "Consolidate data_source, data_collection_partner under canonical data_source",
+        "rationale": "data_source (4) and data_collection_partner (1) express the same data sourcing relationship. Consolidate to data_source as the canonical form with higher usage.",
+        "record_kind": "relation",
+        "canonical_id": "data_source",
+        "aliases": [
+          "data_collection_partner"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-kind-inventory",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-kind-alias-complement",
+        "candidate_id": "relation-ontology:relation-kind-inventory",
+        "decision_type": "canonical_id",
+        "summary": "Consolidate complementary_program, complementary_project under canonical complementary_project",
+        "rationale": "complementary_program (1) and complementary_project (1) express the same complement relationship. Consolidate to complementary_project as the canonical form.",
+        "record_kind": "relation",
+        "canonical_id": "complementary_project",
+        "aliases": [
+          "complementary_program"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-kind-inventory",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-kind-alias-location",
+        "candidate_id": "relation-ontology:relation-kind-inventory",
+        "decision_type": "canonical_id",
+        "summary": "Consolidate located_in, located_on, located_on_corridor under canonical located_in",
+        "rationale": "located_in (2), located_on (1), and located_on_corridor (1) all express spatial location. Consolidate to located_in as the canonical form with highest usage.",
+        "record_kind": "relation",
+        "canonical_id": "located_in",
+        "aliases": [
+          "located_on",
+          "located_on_corridor"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-kind-inventory",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-kind-alias-project-corridor",
+        "candidate_id": "relation-ontology:relation-kind-inventory",
+        "decision_type": "canonical_id",
+        "summary": "Consolidate includes_corridor, improves_corridor under canonical uses_corridor",
+        "rationale": "includes_corridor (2) and improves_corridor (2) express project-corridor spatial relationships that are variants of uses_corridor. Consolidate to uses_corridor.",
+        "record_kind": "relation",
+        "canonical_id": "uses_corridor",
+        "aliases": [
+          "includes_corridor",
+          "improves_corridor"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-kind-inventory",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "raw-alias-has-treatment-component",
+        "candidate_id": "relation-ontology:raw-relation-kind-aliases",
+        "decision_type": "relation_alias",
+        "summary": "Map raw_relation_kind has_treatment_component to canonical has_treatment",
+        "rationale": "16 records with raw_relation_kind=has_treatment_component already have canonical relation_kind=has_treatment. This is a confirmed alias mapping from pre-normalization label to canonical form.",
+        "record_kind": "relation",
+        "field": "raw_relation_kind",
+        "from": "has_treatment_component",
+        "to": "has_treatment",
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "raw-relation-kind-aliases",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "raw-alias-affects-route",
+        "candidate_id": "relation-ontology:raw-relation-kind-aliases",
+        "decision_type": "relation_alias",
+        "summary": "Map raw_relation_kind affects_route to canonical affects_route (identity mapping)",
+        "rationale": "4 records with raw_relation_kind=affects_route have canonical relation_kind=affects_route. This is an identity mapping confirming the raw value matches the canonical value.",
+        "record_kind": "relation",
+        "field": "raw_relation_kind",
+        "from": "affects_route",
+        "to": "affects_route",
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "raw-relation-kind-aliases",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "raw-alias-has-corridor",
+        "candidate_id": "relation-ontology:raw-relation-kind-aliases",
+        "decision_type": "relation_alias",
+        "summary": "Map raw_relation_kind has_corridor to canonical uses_corridor",
+        "rationale": "2 records with raw_relation_kind=has_corridor have canonical relation_kind=uses_corridor. This is a confirmed alias mapping from pre-normalization label to canonical form.",
+        "record_kind": "relation",
+        "field": "raw_relation_kind",
+        "from": "has_corridor",
+        "to": "uses_corridor",
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "raw-relation-kind-aliases",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "context-hotline-needs-more-data",
+        "candidate_id": "relation-ontology:relation-context:relation.hotline",
+        "decision_type": "needs_more_data",
+        "summary": "Relation payload field hotline needs more data to determine endpoint shape",
+        "rationale": "Only 1 record (relation_rel-jamaica-depot-skanska-hotline) has a hotline field with value '(929) 380-5778'. Insufficient evidence to determine whether this should become a relation_candidate, keep_passthrough, or alias_field. Needs more records or context.",
+        "record_kind": "relation",
+        "field": "hotline",
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-context:relation.hotline",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "context-new-location-needs-more-data",
+        "candidate_id": "relation-ontology:relation-context:relation.new_location",
+        "decision_type": "needs_more_data",
+        "summary": "Relation payload field new_location needs more data to determine endpoint shape",
+        "rationale": "Only 1 record (relation_rel-jamaica-terminal-old-new-locations) has a new_location field with value '90th Avenue'. Insufficient evidence to determine whether this should become a relation_candidate, keep_passthrough, or alias_field.",
+        "record_kind": "relation",
+        "field": "new_location",
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-context:relation.new_location",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "context-old-location-needs-more-data",
+        "candidate_id": "relation-ontology:relation-context:relation.old_location",
+        "decision_type": "needs_more_data",
+        "summary": "Relation payload field old_location needs more data to determine endpoint shape",
+        "rationale": "Only 1 record (relation_rel-jamaica-terminal-old-new-locations) has an old_location field with value 'Merrick Boulevard'. Insufficient evidence to determine whether this should become a relation_candidate, keep_passthrough, or alias_field.",
+        "record_kind": "relation",
+        "field": "old_location",
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-context:relation.old_location",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "context-routes-needs-more-data",
+        "candidate_id": "relation-ontology:relation-context:relation.routes",
+        "decision_type": "needs_more_data",
+        "summary": "Relation payload field routes needs more data to determine endpoint shape",
+        "rationale": "Only 1 record (relation_rel-ace-expanded-routes-m2-m4-m42-m100-bx5) has a routes array field with values ['M2','M4','M42','M100','Bx5']. This appears to be route identifiers that could become separate relations, but single-record evidence is insufficient for a definitive decision.",
+        "record_kind": "relation",
+        "field": "routes",
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-context:relation.routes",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      },
+      {
+        "decision_id": "context-routes-affected-needs-more-data",
+        "candidate_id": "relation-ontology:relation-context:relation.routes_affected",
+        "decision_type": "needs_more_data",
+        "summary": "Relation payload field routes_affected needs more data to determine endpoint shape",
+        "rationale": "Only 1 record (relation_rel-ace-routes-expansion) has a routes_affected field with value 'M2'. Insufficient evidence to determine whether this should become a relation_candidate, keep_passthrough, or alias_field.",
+        "record_kind": "relation",
+        "field": "routes_affected",
+        "evidence_refs": [
+          {
+            "source_id": "relation-ontology",
+            "block_id": "relation-context:relation.routes_affected",
+            "page_number": 1,
+            "role": "supporting"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-09T10-54-25-164Z_27345-7e719f68_ontology-normalize-run_relation-ontology",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-09T10-54-25-164Z_2026-06-09T10-54-25-164Z_27345-7e719f68_ontology-normalize-run_relation-ontology.jsonl"
+}

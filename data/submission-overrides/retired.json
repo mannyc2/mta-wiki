@@ -1,0 +1,1619 @@
+{
+  "version": 1,
+  "retired": [
+    {
+      "submission_id": "sub_0235de316db67914",
+      "reason": "Codex relation cleanup codex-relation-cleanup-2026-06-22-batch015-endpoint-repair retires batch015 replacement relation_batch015-metro-north-has-claim-universal-train-spotting because direct endpoint IDs did not resolve; batch017 appends same-source local-endpoint replacement preserving evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-batch015-endpoint-repair",
+      "reviewed_at": "2026-06-22T19:54:00Z"
+    },
+    {
+      "submission_id": "sub_0513750833300123",
+      "reason": "Codex relation cleanup batch013 replaces a malformed has_timeline_event relation whose object is a claim with a valid has_claim relation preserving source-backed endpoints.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch013",
+      "reviewed_at": "2026-06-22T18:59:47Z"
+    },
+    {
+      "submission_id": "sub_07401127e414fd4f",
+      "reason": "Codex relation cleanup batch018 replaces malformed operated_by entity -> entity relation relation_meeting-doc-124166-nj-transit-operates-woh with validator-compatible operates entity->entity relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch018",
+      "reviewed_at": "2026-06-22T20:43:00Z"
+    },
+    {
+      "submission_id": "sub_082e2ea41961bb04",
+      "reason": "Codex relation cleanup batch024 replaces a malformed implemented_by treatment_component->entity relation with an inverse implements entity->treatment_component relation preserving source-backed implementation semantics without widening implemented_by.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch024",
+      "reviewed_at": "2026-06-22T21:12:00Z"
+    },
+    {
+      "submission_id": "sub_09565ca22f579c3f",
+      "reason": "Codex backlog-zero cleanup retires contaminated relation_alliant_ocip_sas_phase2: the label describes Alliant Insurance Services providing OCIP for Second Avenue Subway Phase II, but the accepted payload endpoints resolve to Metro-North Railroad and Penn Station Access. A clean same-source Alliant/SAS2 contracted_by relation already exists as sub_f90d721b5e2cb3c7.",
+      "source_decision": "data/review_notes/codex-route-normalization-phase3-adjacent-2026-06-24.md#latest-slice-treatment-and-relation-tail-zero",
+      "reviewed_at": "2026-06-29T13:00:00Z"
+    },
+    {
+      "submission_id": "sub_0acae7130916a5c4",
+      "reason": "Codex relation cleanup batch009 replaces a malformed part_of_program relation whose object is a claim; the same endpoints and cited block support a validator-compatible project -> claim has_claim relation for Track 1 Times Square Shuttle under Strengthen & Expand Network.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch009",
+      "reviewed_at": "2026-06-22T18:01:07Z"
+    },
+    {
+      "submission_id": "sub_0cfa6a0e8c21e6d8",
+      "reason": "Codex relation cleanup batch004 replaces a malformed affects_route relation whose subject was treatment_component -> route; the cited Hylan Boulevard Transportation Improvement Study TSP evidence supports a project -> S79 affects_route edge.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-jamaica-hylan-route-scope",
+      "reviewed_at": "2026-06-22T16:34:50Z"
+    },
+    {
+      "submission_id": "sub_1025ac039bce4d2c",
+      "reason": "Reviewed batch 2 splits Bx6 SBS postponement text out of the durable Bx6 SBS route identity.",
+      "source_decision": "docs/migration-decision-matrix.md",
+      "reviewed_at": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_11ebb95205802b82",
+      "reason": "Codex relation cleanup batch027 replaces a malformed published_by claim->entity relation with a has_claim entity->claim relation preserving source-backed attribution without widening published_by to claims.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch027",
+      "reviewed_at": "2026-06-22T21:34:00Z"
+    },
+    {
+      "submission_id": "sub_1341ac6d8b803a0e",
+      "reason": "Codex relation cleanup batch018 replaces malformed operated_by entity -> entity relation relation_mnr-operated-by-njtransit-west-hudson with validator-compatible operates entity->entity relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch018",
+      "reviewed_at": "2026-06-22T20:43:00Z"
+    },
+    {
+      "submission_id": "sub_1403fd8fe157af0f",
+      "reason": "Reviewed batch 2 normalizes the Bx6 TSP development route-state id to the durable Bx6 Local route.",
+      "source_decision": "docs/migration-decision-matrix.md",
+      "reviewed_at": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_144290e0a3313d4d",
+      "reason": "Codex relation cleanup batch021 replaces malformed has_timeline_event event -> event relation relation_may-timetable-has-event-sunday-montauk-penn with validator-compatible includes event->event relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch021",
+      "reviewed_at": "2026-06-22T20:15:00Z"
+    },
+    {
+      "submission_id": "sub_15be12ac12d8f53c",
+      "reason": "Codex relation cleanup batch022 replaces a malformed has_metric relation whose subject is a source with an includes source-to-metric relation preserving source-contained metric evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch022",
+      "reviewed_at": "2026-06-22T20:45:00Z"
+    },
+    {
+      "submission_id": "sub_15f5c00d09bac31e",
+      "reason": "Codex project identity cleanup retargets this Woodhaven Boulevard 2017 Street Improvement Project row away from the unrelated 79th Street/M79 project. Replacement sub_580b14fa60241bb5 preserves the same source-backed CB10 evidence on project_2017-sip-woodhaven-blvd-cb5-sept2024.",
+      "source_decision": "data/review_notes/codex-project-identity-2017-sip-woodhaven-retarget-2026-07-01.json#project-identity-2017-sip-woodhaven-retarget",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_17257510bbc1870d",
+      "reason": "Codex relation cleanup batch029 retires a malformed implemented_by entity->entity relation where source evidence does not support a high-confidence replacement edge.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch029",
+      "reviewed_at": "2026-06-22T21:50:00Z"
+    },
+    {
+      "submission_id": "sub_1784665c44e4ab70",
+      "reason": "Codex relation cleanup batch021 replaces malformed has_timeline_event event -> event relation relation_may-timetable-has-event-513pm-montauk with validator-compatible includes event->event relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch021",
+      "reviewed_at": "2026-06-22T20:15:00Z"
+    },
+    {
+      "submission_id": "sub_18e5172cc0c99b2a",
+      "reason": "Reviewed batch 2 normalizes the B82 TSP development route-state id to the durable B82 Local route.",
+      "source_decision": "docs/migration-decision-matrix.md",
+      "reviewed_at": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_192c4cb9301859ee",
+      "reason": "Codex relation endpoint cleanup batch220 replaces malformed implemented_by event -> entity relation relation_cbdtp-fhwa-fonsi-implemented-by-bt. The cited paragraph supports Central Business District Tolling Program project -> MTA Bridges and Tunnels agency-role context; the FHWA FONSI is a separate approval event and should not be the implemented_by subject.",
+      "source_decision": "data/review_notes/codex-relation-endpoint-batch220-prep.json#codex-relation-endpoint-batch220-prep",
+      "reviewed_at": "2026-06-23T14:05:00Z"
+    },
+    {
+      "submission_id": "sub_194ce95de6779630",
+      "reason": "Reviewed batch 2 moves the ACE B82-SBS route surface to the route_b82-sbs canonical route id.",
+      "source_decision": "docs/migration-decision-matrix.md",
+      "reviewed_at": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_1b2698c8556cd74e",
+      "reason": "Codex relation cleanup batch023 replaces a malformed has_timeline_event treatment_component->event relation with a related_to treatment/event relation preserving the source-backed association without widening timeline-event subjects.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch023",
+      "reviewed_at": "2026-06-22T20:50:00Z"
+    },
+    {
+      "submission_id": "sub_1bcfef5201faca44",
+      "reason": "Codex relation cleanup batch057 retires malformed has_timeline_event source -> entity relation relation_meeting-doc-194171-publication-date. has_timeline_event requires an event object, but the submitted object is MTA, an entity. The cited 'December 2025' block is already represented on source_meeting_doc_194171 as date_text/published_date_normalized, and MTA publication context is already covered by valid published_by source -> entity relation relation_meeting-doc-194171-published-by.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch057-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch057",
+      "reviewed_at": "2026-06-23T02:31:48.350Z"
+    },
+    {
+      "submission_id": "sub_1c9cc33bcc15df63",
+      "reason": "Codex relation cleanup batch028 replaces a malformed operated_by entity->entity relation with a related_to entity->entity association preserving source-backed context without widening operated_by.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch028",
+      "reviewed_at": "2026-06-22T21:44:00Z"
+    },
+    {
+      "submission_id": "sub_1d0419543e567c34",
+      "reason": "Codex relation cleanup batch024 replaces a malformed implemented_by treatment_component->entity relation with an inverse implements entity->treatment_component relation preserving source-backed implementation semantics without widening implemented_by.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch024",
+      "reviewed_at": "2026-06-22T21:12:00Z"
+    },
+    {
+      "submission_id": "sub_1d0e25e441bdce13",
+      "reason": "Codex relation cleanup batch050 replaces malformed implemented_by entity -> entity relation relation_98266-mow-division-programs with validator-compatible part_of_agency entity -> entity relation preserving the Maintenance of Way Division / Metro-North Railroad hierarchy evidence.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch050-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch050",
+      "reviewed_at": "2026-06-23T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_1d6c6b19726fd423",
+      "reason": "Codex relation cleanup batch011 replaces a malformed operated_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_lirr-operates-new-years-day-service.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch011",
+      "reviewed_at": "2026-06-22T18:24:45Z"
+    },
+    {
+      "submission_id": "sub_1e3da7df51269b6f",
+      "reason": "Codex relation cleanup batch036 replaces malformed has_metric source -> metric_claim relation relation_budgetwatch-has-metric-oper-rev with validator-compatible includes source -> metric_claim preserving source-backed evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch036",
+      "reviewed_at": "2026-06-22T23:18:00Z"
+    },
+    {
+      "submission_id": "sub_1f27f7e3f34b0d93",
+      "reason": "Codex relation cleanup batch034 replaces malformed part_of_program project -> event relation relation_westbury-garage-main-line-expansion with validator-compatible part_of_program project -> project preserving source-backed evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch034",
+      "reviewed_at": "2026-06-22T23:01:00Z"
+    },
+    {
+      "submission_id": "sub_1f4ecf47594aa73f",
+      "reason": "Codex relation cleanup batch013 replaces a malformed has_timeline_event relation whose object is a claim with a valid has_claim relation preserving source-backed endpoints.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch013",
+      "reviewed_at": "2026-06-22T18:59:47Z"
+    },
+    {
+      "submission_id": "sub_21ce597aaf9ca2cd",
+      "reason": "Codex relation cleanup batch021 replaces malformed has_timeline_event event -> event relation relation_may-timetable-has-event-early-morning-gcm with validator-compatible includes event->event relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch021",
+      "reviewed_at": "2026-06-22T20:15:00Z"
+    },
+    {
+      "submission_id": "sub_221342e6cd5025dc",
+      "reason": "Codex relation cleanup batch007 replaces a malformed related_route relation whose subject is a project and object is a route; same-source replacement sub_3b2c209bfa1280bf preserves the Bx6 local service-plan evidence as project -> route serves_route.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch007",
+      "reviewed_at": "2026-06-22T17:28:30Z"
+    },
+    {
+      "submission_id": "sub_237181693bb9f558",
+      "reason": "Codex relation cleanup batch012 replaces a malformed implemented_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_cbdtp_implemented_by_tbta.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch012",
+      "reviewed_at": "2026-06-22T18:44:36Z"
+    },
+    {
+      "submission_id": "sub_23c8b2bd009849cf",
+      "reason": "Codex relation cleanup batch012 replaces a malformed implemented_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_laz_parking_agency_mnr.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch012",
+      "reviewed_at": "2026-06-22T18:44:36Z"
+    },
+    {
+      "submission_id": "sub_23f0488224aee5e3",
+      "reason": "Codex relation cleanup batch030 replaces a malformed serves_route endpoint-shape relation with a source-backed validator-compatible relation preserving the same context without widening serves_route.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch030",
+      "reviewed_at": "2026-06-22T21:58:00Z"
+    },
+    {
+      "submission_id": "sub_24b93bf0a6f08046",
+      "reason": "Codex relation cleanup batch011 replaces a malformed operated_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_m186726-mnr-operates-thanksgiving.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch011",
+      "reviewed_at": "2026-06-22T18:24:45Z"
+    },
+    {
+      "submission_id": "sub_2551d2d3eb65e056",
+      "reason": "Reviewed batch 1 splits the composite Q10/Q80 ACE route surface into separate route records.",
+      "source_decision": "docs/migration-decision-matrix.md",
+      "reviewed_at": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_2633a1103169c2c4",
+      "reason": "Codex relation cleanup batch014 replaces malformed metric relation relation_cashless-tolling-bt with validator-compatible has_metric context preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch014",
+      "reviewed_at": "2026-06-22T19:09:48Z"
+    },
+    {
+      "submission_id": "sub_263d89015d32523c",
+      "reason": "Codex relation cleanup batch001 replaces the malformed Mueller/MTAPD relation: the original used a source-local person id as subject_id and mixed subject/object endpoint fields, leaving a missing subject target and no subject_local_observation_id.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-mueller-mtapd",
+      "reviewed_at": "2026-06-22T14:23:46Z"
+    },
+    {
+      "submission_id": "sub_26f07eed31466c37",
+      "reason": "Codex relation cleanup batch022 replaces a malformed has_metric relation whose subject is a source with an includes source-to-metric relation preserving source-contained metric evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch022",
+      "reviewed_at": "2026-06-22T20:45:00Z"
+    },
+    {
+      "submission_id": "sub_277e20d4a49fbf0b",
+      "reason": "Codex relation cleanup batch015 replaces malformed implemented_by claim->entity relation relation_metro-north-universal-train-spotting-201601 with validator-compatible has_claim entity->claim relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch015",
+      "reviewed_at": "2026-06-22T19:17:23Z"
+    },
+    {
+      "submission_id": "sub_29d615318aa71ccd",
+      "reason": "Codex relation cleanup batch032 replaces malformed has_timeline_event metric_claim -> event relation relation_meeting91591-nova-has-timeline-event-delivery with validator-compatible supports event -> metric_claim preserving source-backed evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch032",
+      "reviewed_at": "2026-06-22T22:22:00Z"
+    },
+    {
+      "submission_id": "sub_2c63d193107bfc99",
+      "reason": "Codex relation cleanup batch027 replaces a malformed published_by claim->entity relation with a has_claim entity->claim relation preserving source-backed attribution without widening published_by to claims.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch027",
+      "reviewed_at": "2026-06-22T21:34:00Z"
+    },
+    {
+      "submission_id": "sub_2db52e67cd18151c",
+      "reason": "Codex relation cleanup batch022 replaces a malformed has_metric relation whose subject is a source with an includes source-to-metric relation preserving source-contained metric evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch022",
+      "reviewed_at": "2026-06-22T20:45:00Z"
+    },
+    {
+      "submission_id": "sub_2dc9ac13ae00f770",
+      "reason": "Codex relation cleanup batch031 replaces malformed part_of_program corridor -> entity relation relation_corridor-vision-zero with validator-compatible related_to corridor -> entity preserving source-backed evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch031",
+      "reviewed_at": "2026-06-22T22:14:00Z"
+    },
+    {
+      "submission_id": "sub_2dedf75980350dd9",
+      "reason": "Codex relation cleanup batch038 replaces malformed part_of_program event -> entity relation relation_budget_event_committee_133306 with validator-compatible has_timeline_event entity -> event preserving source-backed work-plan agenda evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch038",
+      "reviewed_at": "2026-06-22T23:27:02Z"
+    },
+    {
+      "submission_id": "sub_2efe85667d701032",
+      "reason": "Malformed has_metric relation_mnr-farebox-metrics pointed entity -> source; batch228 replaces it with entity -> metric_claim relations for MNR farebox recovery and operating metrics.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch228-prep.json#relation228",
+      "reviewed_at": "2026-06-23T16:38:00.000Z"
+    },
+    {
+      "submission_id": "sub_2f6e8617d7a63cea",
+      "reason": "Codex relation cleanup batch023 replaces a malformed has_timeline_event treatment_component->event relation with a related_to treatment/event relation preserving the source-backed association without widening timeline-event subjects.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch023",
+      "reviewed_at": "2026-06-22T20:50:00Z"
+    },
+    {
+      "submission_id": "sub_3046d4210758a71b",
+      "reason": "Codex relation cleanup batch012 replaces a malformed implemented_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_meeting_doc_105931_cops_cameras_care_nypd.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch012",
+      "reviewed_at": "2026-06-22T18:44:36Z"
+    },
+    {
+      "submission_id": "sub_30d5c582a9cdb298",
+      "reason": "Codex relation cleanup batch019 replaces malformed operated_by entity -> entity relation relation_operated-rfk with validator-compatible operates entity->entity relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch019",
+      "reviewed_at": "2026-06-22T19:56:30Z"
+    },
+    {
+      "submission_id": "sub_34102fc01bccfcff",
+      "reason": "Codex relation cleanup batch014 replaces malformed metric relation relation_beb-purchase-nyct with validator-compatible has_metric context preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch014",
+      "reviewed_at": "2026-06-22T19:09:48Z"
+    },
+    {
+      "submission_id": "sub_34f18817532344d1",
+      "reason": "Codex relation cleanup batch011 replaces a malformed operated_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_meeting-doc-124256-salt-point-mnr.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch011",
+      "reviewed_at": "2026-06-22T18:24:45Z"
+    },
+    {
+      "submission_id": "sub_37237b7e593ddd20",
+      "reason": "Codex relation cleanup batch033 replaces malformed implemented_by metric_claim -> entity relation relation_meeting91591-wsp-mta-procurement with validator-compatible related_to entity -> metric_claim preserving source-backed evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch033",
+      "reviewed_at": "2026-06-22T22:43:00Z"
+    },
+    {
+      "submission_id": "sub_37ae717ca7ac214d",
+      "reason": "Malformed has_metric relation_sir-farebox-metrics_2 pointed entity -> source; batch228 replaces it with entity -> metric_claim relations for SIR farebox recovery and operating metrics.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch228-prep.json#relation228",
+      "reviewed_at": "2026-06-23T16:38:00.000Z"
+    },
+    {
+      "submission_id": "sub_3b10f72e125c69a5",
+      "reason": "Codex relation cleanup batch011 replaces a malformed operated_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_meeting-doc-124256-playa-bowls-mnr.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch011",
+      "reviewed_at": "2026-06-22T18:24:45Z"
+    },
+    {
+      "submission_id": "sub_3bd1215592595d96",
+      "reason": "Codex relation cleanup batch036 replaces malformed has_metric source -> metric_claim relation relation_budgetwatch-has-metric-overtime with validator-compatible includes source -> metric_claim preserving source-backed evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch036",
+      "reviewed_at": "2026-06-22T23:18:00Z"
+    },
+    {
+      "submission_id": "sub_3c1591c0787cf0b9",
+      "reason": "Codex relation cleanup batch030 replaces a malformed serves_route endpoint-shape relation with a source-backed validator-compatible relation preserving the same context without widening serves_route.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch030",
+      "reviewed_at": "2026-06-22T21:58:00Z"
+    },
+    {
+      "submission_id": "sub_3c9282ecf0523bf6",
+      "reason": "Codex relation cleanup batch022 replaces a malformed has_metric relation whose subject is a source with an includes source-to-metric relation preserving source-contained metric evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch022",
+      "reviewed_at": "2026-06-22T20:45:00Z"
+    },
+    {
+      "submission_id": "sub_3fab7a286d7bf864",
+      "reason": "Codex relation cleanup batch020 replaces malformed has_timeline_event claim -> event relation relation_m7-contract-issuance-event with validator-compatible supports event->claim relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch020",
+      "reviewed_at": "2026-06-22T20:04:00Z"
+    },
+    {
+      "submission_id": "sub_41409bcac8bad651",
+      "reason": "Codex relation cleanup batch047 replaces malformed has_treatment event -> treatment_component relation relation_meeting-doc-128866-winter-trackwork-2024-has-treatment-switch-installations with a source-backed Winter Trackwork Programs project endpoint and a validator-compatible project -> treatment_component relation preserving the West Side Yard switch-installation evidence.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch047-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch047-prep",
+      "reviewed_at": "2026-06-23T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_43dff2957deac7b0",
+      "reason": "Malformed has_metric relation_mtabus-farebox-metrics pointed entity -> source; batch228 replaces it with entity -> metric_claim relations for MTA Bus Company farebox recovery and operating metrics.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch228-prep.json#relation228",
+      "reviewed_at": "2026-06-23T16:38:00.000Z"
+    },
+    {
+      "submission_id": "sub_45293f85d121ad03",
+      "reason": "Codex relation cleanup batch011 replaces a malformed operated_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_lirr-operates-holiday-services.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch011",
+      "reviewed_at": "2026-06-22T18:24:45Z"
+    },
+    {
+      "submission_id": "sub_458c019b472da5ad",
+      "reason": "Codex relation cleanup batch023 replaces a malformed has_timeline_event treatment_component->event relation with a related_to treatment/event relation preserving the source-backed association without widening timeline-event subjects.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch023",
+      "reviewed_at": "2026-06-22T20:50:00Z"
+    },
+    {
+      "submission_id": "sub_46261cf07800e6b0",
+      "reason": "Codex relation cleanup batch016 replaces malformed implemented_by project->source relation relation_jci-implemented-by-lirr with validator-compatible implemented_by project->entity relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch016",
+      "reviewed_at": "2026-06-22T19:37:00Z"
+    },
+    {
+      "submission_id": "sub_462acda14c6a05fc",
+      "reason": "Codex relation cleanup batch030 replaces a malformed serves_route endpoint-shape relation with a source-backed validator-compatible relation preserving the same context without widening serves_route.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch030",
+      "reviewed_at": "2026-06-22T21:58:00Z"
+    },
+    {
+      "submission_id": "sub_46d5c285f88cc468",
+      "reason": "Codex relation cleanup batch016 replaces malformed implemented_by entity->project relation relation_cd-14th-st-ada with validator-compatible implemented_by project->entity relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch016",
+      "reviewed_at": "2026-06-22T19:37:00Z"
+    },
+    {
+      "submission_id": "sub_47e3e3640fbfdf6b",
+      "reason": "Codex relation cleanup batch030 replaces a malformed serves_route endpoint-shape relation with a source-backed validator-compatible relation preserving the same context without widening serves_route.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch030",
+      "reviewed_at": "2026-06-22T21:58:00Z"
+    },
+    {
+      "submission_id": "sub_47edac229f4563f0",
+      "reason": "Codex relation cleanup batch039 retires malformed implemented_by route -> entity relation relation_meeting-doc-179556-mnrr-implements-fare-increase. The source describes Metro-North implementing CTDOT fare increases, while same-source route timeline/event and fare-claim records already preserve the New Haven Line fare-increase context without using route as an implemented_by subject.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch039",
+      "reviewed_at": "2026-06-22T23:39:38Z"
+    },
+    {
+      "submission_id": "sub_4838e9db75fae419",
+      "reason": "Codex relation cleanup batch008 replaces a malformed operates_on_corridor relation whose subject is project -> corridor; the cited Grand St/Grand Av CB4 blocks support a project -> corridor uses_corridor relation.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch008",
+      "reviewed_at": "2026-06-22T17:41:43Z"
+    },
+    {
+      "submission_id": "sub_4ad91b175d24d4ac",
+      "reason": "Codex relation cleanup batch011 replaces a malformed operated_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_meeting-doc-124256-joey-bats-mnr.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch011",
+      "reviewed_at": "2026-06-22T18:24:45Z"
+    },
+    {
+      "submission_id": "sub_4bc1ba5d6a55200e",
+      "reason": "Codex relation cleanup batch001 replaces a contaminated Mueller/MTAPD entity submission: the original targeted John J. Mueller to the MTAPD organization record, while the cited blocks separate the MTA Police Department heading from John J. Mueller as Chief of Police.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-mueller-mtapd",
+      "reviewed_at": "2026-06-22T14:23:46Z"
+    },
+    {
+      "submission_id": "sub_4c4a1b1e5951045c",
+      "reason": "Malformed implemented_by relation_meeting-doc-127596-mta-implements-hedge pointed project -> project; batch228 adds a local MTA entity and replaces it with project -> entity implemented_by.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch228-prep.json#relation228",
+      "reviewed_at": "2026-06-23T16:38:00.000Z"
+    },
+    {
+      "submission_id": "sub_4c78458e6d77e10a",
+      "reason": "Codex relation cleanup batch024 replaces a malformed implemented_by treatment_component->entity relation with an inverse implements entity->treatment_component relation preserving source-backed implementation semantics without widening implemented_by.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch024",
+      "reviewed_at": "2026-06-22T21:12:00Z"
+    },
+    {
+      "submission_id": "sub_4fdadacde220e3aa",
+      "reason": "Codex relation cleanup batch031 replaces malformed part_of_program project -> claim relation relation_gun-hill-faster-cleaner-safer with validator-compatible has_claim project -> claim preserving source-backed evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch031",
+      "reviewed_at": "2026-06-22T22:14:00Z"
+    },
+    {
+      "submission_id": "sub_516dca7aa29a1cf5",
+      "reason": "Codex relation cleanup batch022 replaces a malformed has_metric relation whose subject is a source with an includes source-to-metric relation preserving source-contained metric evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch022",
+      "reviewed_at": "2026-06-22T20:45:00Z"
+    },
+    {
+      "submission_id": "sub_51b0eca227549197",
+      "reason": "Codex relation cleanup batch012 replaces a malformed implemented_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_meeting_doc_138616_congestion_pricing_tbta.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch012",
+      "reviewed_at": "2026-06-22T18:44:36Z"
+    },
+    {
+      "submission_id": "sub_52c73a5e56abe886",
+      "reason": "Codex relation cleanup batch043 replaces malformed has_timeline_event event -> source relation relation_mnr-2026-jan-event-workplan with validator-compatible source -> event relation preserving the 2026 MNR work-plan schedule evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch043",
+      "reviewed_at": "2026-06-23T01:09:00Z"
+    },
+    {
+      "submission_id": "sub_537500ee9d1cccb1",
+      "reason": "Reviewed batch 2 removes the year suffix from the historical M86 Local route identity.",
+      "source_decision": "docs/migration-decision-matrix.md",
+      "reviewed_at": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_53d64154e12f6591",
+      "reason": "Codex relation cleanup batch022 replaces a malformed has_metric relation whose subject is a source with an includes source-to-metric relation preserving source-contained metric evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch022",
+      "reviewed_at": "2026-06-22T20:45:00Z"
+    },
+    {
+      "submission_id": "sub_54844f41b339d69c",
+      "reason": "Codex relation cleanup batch049 replaces malformed has_treatment entity -> metric_claim relation relation_gct-has-elevator-t7 with validator-compatible has_metric entity -> metric_claim relation preserving the Grand Central Terminal T-7 elevator availability evidence.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch049-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch049",
+      "reviewed_at": "2026-06-23T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_565c4e79e446427b",
+      "reason": "Codex relation cleanup batch012 replaces a malformed implemented_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for rel_meeting_doc_199126_agreement4_mnr.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch012",
+      "reviewed_at": "2026-06-22T18:44:36Z"
+    },
+    {
+      "submission_id": "sub_5826a6108a9111eb",
+      "reason": "Codex relation cleanup batch011 replaces a malformed operated_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_meeting-doc-115156-lirr-operates-timetable.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch011",
+      "reviewed_at": "2026-06-22T18:24:45Z"
+    },
+    {
+      "submission_id": "sub_5949be908b812e03",
+      "reason": "Codex relation cleanup codex-relation-cleanup-2026-06-22-batch015-endpoint-repair retires batch015 replacement relation_batch015-mta-real-estate-has-claim-construction-access-policy because direct endpoint IDs did not resolve; batch017 appends same-source local-endpoint replacement preserving evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-batch015-endpoint-repair",
+      "reviewed_at": "2026-06-22T19:54:00Z"
+    },
+    {
+      "submission_id": "sub_59d0d4795e5d3a9c",
+      "reason": "Codex relation cleanup batch015 replaces malformed implemented_by claim->entity relation relation_mta-real-estate-construction-access-policy with validator-compatible has_claim entity->claim relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch015",
+      "reviewed_at": "2026-06-22T19:17:23Z"
+    },
+    {
+      "submission_id": "sub_5a8c3e903d9a70b9",
+      "reason": "Codex relation cleanup batch011 replaces a malformed operated_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_tbta-operates-cbdtp.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch011",
+      "reviewed_at": "2026-06-22T18:24:45Z"
+    },
+    {
+      "submission_id": "sub_5d04512e0ab539f9",
+      "reason": "Codex relation cleanup batch054 replaces malformed has_claim claim -> claim relation relation_23-stations-has-claim with source-backed supports claim -> claim relation preserving the ADA station-list support for the aggregate 23-stations count.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch054-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch054",
+      "reviewed_at": "2026-06-23T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_5ddeb3c4a2bd87c7",
+      "reason": "Codex relation cleanup batch024 replaces a malformed implemented_by treatment_component->entity relation with an inverse implements entity->treatment_component relation preserving source-backed implementation semantics without widening implemented_by.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch024",
+      "reviewed_at": "2026-06-22T21:12:00Z"
+    },
+    {
+      "submission_id": "sub_601170659eb5f193",
+      "reason": "Codex relation cleanup batch031 replaces malformed part_of_program project -> source relation relation_meeting-doc-115221-psa-capital-program with validator-compatible related_to project -> source preserving source-backed evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch031",
+      "reviewed_at": "2026-06-22T22:14:00Z"
+    },
+    {
+      "submission_id": "sub_633b5a4311a0b628",
+      "reason": "Codex relation cleanup batch011 replaces a malformed operated_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_heritage-loco-operated-by-metro-north.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch011",
+      "reviewed_at": "2026-06-22T18:24:45Z"
+    },
+    {
+      "submission_id": "sub_6468dc97fa431ffe",
+      "reason": "Codex relation cleanup batch014 replaces malformed metric relation relation_bus-camera-nyct with validator-compatible has_metric context preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch014",
+      "reviewed_at": "2026-06-22T19:09:48Z"
+    },
+    {
+      "submission_id": "sub_6709ec4242235de3",
+      "reason": "Codex relation cleanup batch016 replaces malformed implemented_by project->project self-edge relation relation_webster-bridge-implemented-by-cd with validator-compatible implemented_by project->entity relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch016",
+      "reviewed_at": "2026-06-22T19:37:00Z"
+    },
+    {
+      "submission_id": "sub_687fd4513ffda23a",
+      "reason": "Codex relation cleanup batch055 retires malformed published_by claim -> entity relation relation_meeting-doc-177271-rpa-published-findings. The evidence supports RPA report context on page 13, but the submitted subject endpoint is the separate NYT findings claim; current canonical data already preserves the NYT claim via a valid has_claim entity -> claim relation and preserves the RPA page facts as separate metric claims.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch055-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch055",
+      "reviewed_at": "2026-06-23T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_69102bf0c780f965",
+      "reason": "Codex relation cleanup batch060 retires malformed serves_route project -> project self-link relation_a-rockaways-affects-a-s-lines; next28 prepared source-backed route-scope replacements to A line and S Shuttle route endpoints.",
+      "source_decision": "data/review_notes/codex-relation-rule-or-data-next28-prep.json#codex-relation-rule-or-data-next28-prep",
+      "reviewed_at": "2026-06-23T02:42:38.317Z"
+    },
+    {
+      "submission_id": "sub_6928ce8ad1da539b",
+      "reason": "Codex relation cleanup batch013 replaces a malformed has_timeline_event relation whose object is a claim with a valid has_claim relation preserving source-backed endpoints.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch013",
+      "reviewed_at": "2026-06-22T18:59:47Z"
+    },
+    {
+      "submission_id": "sub_700e95b86f5f821d",
+      "reason": "Codex relation cleanup batch061 retires malformed operated_by treatment_component -> entity relation relation_procurement-metronorth-circuit-breakers. operated_by requires a project, route, or corridor subject, but the submitted subject is a treatment_component. The cited meeting_doc_102686#p012_c0012 block supports a Metro-North procurement contract fact already preserved on the treatment component, and it does not provide a high-confidence validator-compatible replacement relation.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch061-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch061",
+      "reviewed_at": "2026-06-23T02:49:34Z"
+    },
+    {
+      "submission_id": "sub_7016900affdbe84b",
+      "reason": "Codex relation cleanup batch019 replaces malformed operated_by entity -> entity relation relation_operated-cross-bay with validator-compatible operates entity->entity relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch019",
+      "reviewed_at": "2026-06-22T19:56:30Z"
+    },
+    {
+      "submission_id": "sub_710cc7d848b51680",
+      "reason": "Codex relation cleanup batch039 replaces malformed implemented_by route -> entity relation relation_nyc-dot-mta-launched-bx12-sbs with validator-compatible project -> entity implemented_by replacements for the Bx12 Select Bus Service launch context.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch039",
+      "reviewed_at": "2026-06-22T23:39:38Z"
+    },
+    {
+      "submission_id": "sub_715ed96817f52c7f",
+      "reason": "Codex relation cleanup batch010 replaces a reversed published_by relation whose subject is the Staten Island Railway entity and object is the source; same-source replacement sub_54f29d8ee38ffece uses the validator-compatible source -> entity published_by direction.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch010",
+      "reviewed_at": "2026-06-22T18:10:38Z"
+    },
+    {
+      "submission_id": "sub_71d7b4dd1ae9d13b",
+      "reason": "Codex relation cleanup batch030 replaces a malformed serves_route endpoint-shape relation with a source-backed validator-compatible relation preserving the same context without widening serves_route.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch030",
+      "reviewed_at": "2026-06-22T21:58:00Z"
+    },
+    {
+      "submission_id": "sub_7203db313e9c6538",
+      "reason": "Codex relation cleanup batch025 replaces a malformed has_timeline_event claim->event relation with a supports event->claim relation preserving timeline context without widening claim-owned timeline subjects.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch025",
+      "reviewed_at": "2026-06-22T21:22:00Z"
+    },
+    {
+      "submission_id": "sub_724ffb54454bb964",
+      "reason": "Codex relation cleanup batch061 retires malformed serves_route project -> entity relation relation_meeting-doc-121091-psa-bronx-stations. serves_route requires a route object, but the submitted object is a Metro-North entity and the cited meeting_doc_121091#p002_c0004 public-comment block does not mention Penn Station Access, Bronx stations, or a route endpoint. Existing valid PSA route and Metro-North role coverage remains in other records.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch061-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch061",
+      "reviewed_at": "2026-06-23T02:49:34Z"
+    },
+    {
+      "submission_id": "sub_728eb15fb4afa310",
+      "reason": "Codex source-id cleanup batch001 replaces accepted event submission whose tool_args.source_id was truncated to meeting_doc_166 while its run, evidence refs, and staged source point to meeting_doc_166936.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-source-id-cleanup-plan-only-scope-2026-06-24",
+      "reviewed_at": "2026-06-24T02:35:00.000Z"
+    },
+    {
+      "submission_id": "sub_747bec455952ba70",
+      "reason": "Codex relation cleanup batch018 replaces malformed operated_by entity -> entity relation relation_njtransit-operates-woh with validator-compatible operates entity->entity relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch018",
+      "reviewed_at": "2026-06-22T20:43:00Z"
+    },
+    {
+      "submission_id": "sub_791037d8aaf60354",
+      "reason": "Codex relation cleanup batch011 replaces a malformed operated_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_us-open-extra-service-operated-by-lirr.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch011",
+      "reviewed_at": "2026-06-22T18:24:45Z"
+    },
+    {
+      "submission_id": "sub_79410d5bbfe08442",
+      "reason": "Codex relation cleanup batch057 retires malformed has_timeline_event project -> entity relation relation_meeting-doc-194171-scalise-fm-swap. has_timeline_event requires an event object, but the submitted object is Patrick Scalise, an entity. The cited page 15 evidence supports the existing F/M swap project, Patrick Scalise entity, and F/M swap outreach claim, but does not identify a discrete event endpoint for a valid replacement.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch057-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch057",
+      "reviewed_at": "2026-06-23T02:31:48.350Z"
+    },
+    {
+      "submission_id": "sub_79d4a8b2ecb72d93",
+      "reason": "Codex relation cleanup batch006 replaces a malformed operates_on_corridor relation whose subject was project -> corridor; the cited Broadway block supports a project -> corridor uses_corridor relation.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch006",
+      "reviewed_at": "2026-06-22T17:06:30Z"
+    },
+    {
+      "submission_id": "sub_7cdd2729e42cc2c6",
+      "reason": "Codex relation cleanup batch015 replaces malformed implemented_by claim->entity relation relation_meeting-doc-138616-able-nyct with validator-compatible has_claim entity->claim relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch015",
+      "reviewed_at": "2026-06-22T19:17:23Z"
+    },
+    {
+      "submission_id": "sub_7db7f43c73a8ea43",
+      "reason": "Codex relation cleanup batch006 retires a malformed has_metric relation whose object is a claim; already-accepted submission sub_427939fc5f8e0284 preserves the same Increase Ridership evidence as a project -> claim has_claim relation.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch006",
+      "reviewed_at": "2026-06-22T17:06:30Z"
+    },
+    {
+      "submission_id": "sub_7e500fcbda984783",
+      "reason": "Codex relation cleanup batch021 replaces malformed has_timeline_event event -> event relation relation_may-timetable-has-event-744pm-lynbrook with validator-compatible includes event->event relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch021",
+      "reviewed_at": "2026-06-22T20:15:00Z"
+    },
+    {
+      "submission_id": "sub_8039b0ffae1727b9",
+      "reason": "Codex relation cleanup batch026 replaces a malformed has_timeline_event metric_claim->event relation with a supports event->metric_claim relation preserving timeline context without widening metric-claim-owned timeline subjects.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch026",
+      "reviewed_at": "2026-06-22T21:45:00Z"
+    },
+    {
+      "submission_id": "sub_82ab91e91dca7622",
+      "reason": "Codex relation cleanup batch012 replaces a malformed implemented_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for rel_meeting_doc_199126_agreement2_nyct.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch012",
+      "reviewed_at": "2026-06-22T18:44:36Z"
+    },
+    {
+      "submission_id": "sub_83d15542af72b5fa",
+      "reason": "Codex relation cleanup batch012 replaces a malformed implemented_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_lirr_implements_timetable_133331.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch012",
+      "reviewed_at": "2026-06-22T18:44:36Z"
+    },
+    {
+      "submission_id": "sub_83fcf7f0ec569f5c",
+      "reason": "Codex relation cleanup batch011 replaces a malformed operated_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_albany-extension-mn-operated.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch011",
+      "reviewed_at": "2026-06-22T18:24:45Z"
+    },
+    {
+      "submission_id": "sub_846aa09d0c94920e",
+      "reason": "Codex relation cleanup batch012 replaces a malformed implemented_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for rel_meeting_doc_199126_agreement3_nyct.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch012",
+      "reviewed_at": "2026-06-22T18:44:36Z"
+    },
+    {
+      "submission_id": "sub_84e91bbfabc83676",
+      "reason": "Codex relation cleanup batch003 replaces a published_by relation with reversed endpoints. The original used entity_nypd -> source_meeting-doc-170911; the cited blocks support source_meeting-doc-170911 -> entity_nypd publication context.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-nypd-published-report",
+      "reviewed_at": "2026-06-22T16:20:00Z"
+    },
+    {
+      "submission_id": "sub_850ba72aef82d6a6",
+      "reason": "Codex relation cleanup batch008 replaces a malformed operates_on_corridor relation whose subject is project -> corridor; the cited Woodhaven/Cross Bay blocks support a project -> corridor uses_corridor relation.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch008",
+      "reviewed_at": "2026-06-22T17:41:43Z"
+    },
+    {
+      "submission_id": "sub_864069570657c1e1",
+      "reason": "Codex relation cleanup batch008 replaces a malformed operates_on_corridor relation whose subject is project -> corridor; the cited Fordham Road blocks support a project -> corridor uses_corridor relation.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch008",
+      "reviewed_at": "2026-06-22T17:41:43Z"
+    },
+    {
+      "submission_id": "sub_86875f64af742f8e",
+      "reason": "Reviewed batch 2 moves the M15 local/limited reference to route_m15-local-limited.",
+      "source_decision": "docs/migration-decision-matrix.md",
+      "reviewed_at": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_86f5c96117b0a103",
+      "reason": "Codex relation cleanup batch020 replaces malformed has_timeline_event claim -> event relation relation_subcommittee-approvals-m7 with validator-compatible supports event->claim relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch020",
+      "reviewed_at": "2026-06-22T20:04:00Z"
+    },
+    {
+      "submission_id": "sub_8a68d427e6db5675",
+      "reason": "Codex relation cleanup batch048 replaces malformed operated_by entity -> event relation relation_nanuet-shelter-metronorth with validator-compatible has_timeline_event entity -> event relation preserving the Metro-North/Nanuet shelter opening evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-23.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch048",
+      "reviewed_at": "2026-06-23T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_8b1dc41f5fa93999",
+      "reason": "Codex relation cleanup batch020 replaces malformed has_timeline_event claim -> event relation relation_replacement-parts-issuance-event with validator-compatible supports event->claim relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch020",
+      "reviewed_at": "2026-06-22T20:04:00Z"
+    },
+    {
+      "submission_id": "sub_8c46f2c816d59acb",
+      "reason": "Codex relation cleanup batch019 replaces malformed operated_by entity -> entity relation relation_operated-queens-midtown with validator-compatible operates entity->entity relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch019",
+      "reviewed_at": "2026-06-22T19:56:30Z"
+    },
+    {
+      "submission_id": "sub_8d13f6c7ef4144be",
+      "reason": "Codex relation cleanup batch001 replaces the malformed Van Wyck support relation: the original used object_id entity_meeting_doc_127506_mtacd, pointing LIRR's support edge at a co-supporting agency and leaving the project endpoint unresolved. The cited blocks support LIRR/MTA C&D supporting the Van Wyck widening and bridge replacement project.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-van-wyck-supports",
+      "reviewed_at": "2026-06-22T14:31:51Z"
+    },
+    {
+      "submission_id": "sub_8e454f6f34a6ec9a",
+      "reason": "Codex relation cleanup batch033 retires malformed implemented_by metric_claim -> entity relation relation_meeting-doc-111896-fuel-hedge-mta without replacement because source evidence does not support the current metric endpoint.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch033",
+      "reviewed_at": "2026-06-22T22:43:00Z"
+    },
+    {
+      "submission_id": "sub_91fa011b15966b44",
+      "reason": "Codex relation cleanup batch011 replaces a malformed operated_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_lirr-operates-christmas-eve-day-service.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch011",
+      "reviewed_at": "2026-06-22T18:24:45Z"
+    },
+    {
+      "submission_id": "sub_92fe7a22892140e2",
+      "reason": "Codex relation cleanup batch027 replaces a malformed published_by claim->entity relation with a has_claim entity->claim relation preserving source-backed attribution without widening published_by to claims.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch027",
+      "reviewed_at": "2026-06-22T21:34:00Z"
+    },
+    {
+      "submission_id": "sub_9403099b29b08d32",
+      "reason": "Codex relation cleanup batch009 replaces a malformed part_of_program relation whose object is a claim; the same endpoints and cited block support a validator-compatible project -> claim has_claim relation for Advancing Congestion Pricing under Strengthen & Expand Network.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch009",
+      "reviewed_at": "2026-06-22T18:01:07Z"
+    },
+    {
+      "submission_id": "sub_94089143e30d525a",
+      "reason": "Codex relation cleanup batch037 replaces malformed has_timeline_event metric_claim -> event relation relation_meeting_doc_95301_procurement_board_meeting with validator-compatible supports event -> metric_claim preserving source-backed procurement schedule evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch037",
+      "reviewed_at": "2026-06-22T23:07:53Z"
+    },
+    {
+      "submission_id": "sub_947dc40fdcdf16b2",
+      "reason": "Codex relation cleanup batch059 retires malformed implemented_by source -> entity relation relation_meeting-doc-133291-proposal-implemented-by-nyct-mtabus. implemented_by requires project -> entity, but the submitted subject is source_meeting-doc-133291. The cited staff-summary block supports approval/informational context for proposed B82, Bx19, Q3, and Q29 schedule changes; valid route agency context and April 2024 implementation timing are already represented separately, and the block does not provide a deterministic project endpoint for replacement.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch059-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch059",
+      "reviewed_at": "2026-06-23T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_948f5370843055b4",
+      "reason": "Reviewed batch 2 moves Southern Brooklyn SBS to the route_b82-sbs canonical route id.",
+      "source_decision": "docs/migration-decision-matrix.md",
+      "reviewed_at": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_955bdb6577872b30",
+      "reason": "Codex relation cleanup batch051 replaces malformed published_by metric_claim -> source relation relation_tbta-green-bonds-mta with validator-compatible includes_data source -> metric_claim relation preserving the source-contained TBTA green-bonds metric evidence.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch051-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch051",
+      "reviewed_at": "2026-06-23T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_98132bef60809a07",
+      "reason": "Codex relation cleanup batch042 replaces malformed related_route project -> route relation relation_project-q44-sbs-has-q44-ltd with validator-compatible serves_route project -> route relation preserving Q44 SBS/Q44 LTD route-scope evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch042",
+      "reviewed_at": "2026-06-23T00:47:00Z"
+    },
+    {
+      "submission_id": "sub_98f679d832db408e",
+      "reason": "Codex project identity cleanup retargets this Woodhaven Boulevard 2017 Street Improvement Project row away from the unrelated 79th Street/M79 project. Replacement sub_3c9e5dcdd684b0bc preserves the same source-backed CB6 evidence on project_2017-sip-woodhaven-blvd-cb5-sept2024.",
+      "source_decision": "data/review_notes/codex-project-identity-2017-sip-woodhaven-retarget-2026-07-01.json#project-identity-2017-sip-woodhaven-retarget",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_99058a3d97857160",
+      "reason": "Malformed has_metric relation_lirr-farebox-metrics_2 pointed entity -> source; batch228 replaces it with entity -> metric_claim relations for LIRR farebox recovery and operating metrics.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch228-prep.json#relation228",
+      "reviewed_at": "2026-06-23T16:38:00.000Z"
+    },
+    {
+      "submission_id": "sub_994381ba030a44b3",
+      "reason": "Reviewed batch 2 removes the ACE suffix from the durable M101 route identity.",
+      "source_decision": "docs/migration-decision-matrix.md",
+      "reviewed_at": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_9b92fbe8bcd68afa",
+      "reason": "Codex relation cleanup batch012 replaces a malformed implemented_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for rel_meeting_doc_199126_agreement5_mnr.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch012",
+      "reviewed_at": "2026-06-22T18:44:36Z"
+    },
+    {
+      "submission_id": "sub_9c7f87794ca04b4a",
+      "reason": "Codex relation cleanup batch044 replaces malformed part_of_program project -> claim relation relation_hudson-line-next-up-planning with a source-backed Next Up: Planning project/program endpoint and a validator-compatible project -> project relation.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch044",
+      "reviewed_at": "2026-06-23T01:36:00Z"
+    },
+    {
+      "submission_id": "sub_9ca03c5fcc235759",
+      "reason": "Codex relation cleanup batch034 retires malformed part_of_program project -> event relation relation_gcsip-part-of-grade-xing-improvement-program without replacement because an existing valid relation already preserves the timeline semantics.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch034",
+      "reviewed_at": "2026-06-22T23:01:00Z"
+    },
+    {
+      "submission_id": "sub_9dbc513a02a1d227",
+      "reason": "Codex relation direction cleanup batch 002 replaces the malformed NYCT published_by relation whose endpoints were entity -> source with a source -> entity relation.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl",
+      "reviewed_at": "2026-06-22T14:08:00Z"
+    },
+    {
+      "submission_id": "sub_9ddb8086e0dc4531",
+      "reason": "Codex relation cleanup batch011 replaces a malformed operated_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_lirr-operates-new-years-eve-service.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch011",
+      "reviewed_at": "2026-06-22T18:24:45Z"
+    },
+    {
+      "submission_id": "sub_9e51ef484cc836e5",
+      "reason": "Codex relation cleanup batch052 retires malformed operated_by entity -> entity relation relation_access-a-ride-operated-by-nyct because the only accepted relation evidence is an agenda heading for the Paratransit Report and same-source inspection found no sufficiently source-backed valid replacement.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch052-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch052",
+      "reviewed_at": "2026-06-23T02:05:00Z"
+    },
+    {
+      "submission_id": "sub_9e8be9591b70b5c4",
+      "reason": "Codex relation cleanup batch008 replaces a malformed operates_on_corridor relation whose subject is project -> corridor; the cited CBDTP block supports a project -> corridor uses_corridor relation.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch008",
+      "reviewed_at": "2026-06-22T17:41:43Z"
+    },
+    {
+      "submission_id": "sub_9edc7f349f40a400",
+      "reason": "Codex relation cleanup batch032 replaces malformed has_timeline_event metric_claim -> event relation relation_meeting91591-wsp-has-timeline-event-extension with validator-compatible supports event -> metric_claim preserving source-backed evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch032",
+      "reviewed_at": "2026-06-22T22:22:00Z"
+    },
+    {
+      "submission_id": "sub_a07e9c7a830c72c7",
+      "reason": "Codex relation cleanup batch027 replaces a malformed published_by claim->entity relation with a has_claim entity->claim relation preserving source-backed attribution without widening published_by to claims.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch027",
+      "reviewed_at": "2026-06-22T21:34:00Z"
+    },
+    {
+      "submission_id": "sub_a0a60967ae6b4493",
+      "reason": "Codex relation cleanup batch061 retires malformed operates_on_corridor project -> entity relation relation_rel-ace-starts-at-manhattan-brooklyn. operates_on_corridor requires route|entity -> corridor, but the submitted endpoints are the ACE project and the MTA entity. The cited meeting_doc_201621#p029_c0006 block supports ACE/ABLE rollout facts already covered by valid same-source has_timeline_event relations, not a project-to-entity corridor relation.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch061-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch061",
+      "reviewed_at": "2026-06-23T02:49:34Z"
+    },
+    {
+      "submission_id": "sub_a4601ac513054b3e",
+      "reason": "Codex relation cleanup batch009 replaces a malformed part_of_program relation whose object is a claim; the same endpoints and cited blocks support a validator-compatible project -> claim has_claim relation for the L Train Tunnel Project under Strengthen & Expand Network.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch009",
+      "reviewed_at": "2026-06-22T18:01:07Z"
+    },
+    {
+      "submission_id": "sub_a4fb1ea880cfb8d4",
+      "reason": "Codex relation cleanup batch028 replaces a malformed operated_by entity->entity relation with a related_to entity->entity association preserving source-backed context without widening operated_by.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch028",
+      "reviewed_at": "2026-06-22T21:44:00Z"
+    },
+    {
+      "submission_id": "sub_a8a82cc677fdee10",
+      "reason": "Codex source-id cleanup batch001 replaces accepted claim submission whose tool_args.source_id was truncated to meeting_doc_1246 while its local_observation_id and evidence refs point to staged source meeting_doc_124306.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-source-id-cleanup-plan-only-scope-2026-06-24",
+      "reviewed_at": "2026-06-24T02:35:00.000Z"
+    },
+    {
+      "submission_id": "sub_a8ed12323e94c4a6",
+      "reason": "Reviewed batch 1 replaces the Lexington relation with a project-to-corridor uses_corridor relation.",
+      "source_decision": "docs/migration-decision-matrix.md",
+      "reviewed_at": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_a908bb1e54abe963",
+      "reason": "Codex relation cleanup batch019 replaces malformed operated_by entity -> entity relation relation_operated-throgs-neck with validator-compatible operates entity->entity relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch019",
+      "reviewed_at": "2026-06-22T19:56:30Z"
+    },
+    {
+      "submission_id": "sub_a94547f7c9ad41bb",
+      "reason": "Codex relation cleanup batch012 replaces a malformed implemented_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_fare_free_bus_implemented_by_nyct.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch012",
+      "reviewed_at": "2026-06-22T18:44:36Z"
+    },
+    {
+      "submission_id": "sub_aac2258f0cba9ba5",
+      "reason": "Codex relation cleanup batch004 replaces a malformed serves_route relation whose subject was treatment_component -> route; the cited Jamaica Bus Improvement Study bus-stop reconfiguration evidence supports a project -> Q20A/Q20B route_scope edge.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-jamaica-hylan-route-scope",
+      "reviewed_at": "2026-06-22T16:34:50Z"
+    },
+    {
+      "submission_id": "sub_ad6fca48f6a5da4a",
+      "reason": "Codex relation cleanup batch006 replaces a malformed related_route relation whose subject was project -> route; the cited Bx6 service-plan diagram supports a project -> Bx6 SBS serves_route relation.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch006",
+      "reviewed_at": "2026-06-22T17:06:30Z"
+    },
+    {
+      "submission_id": "sub_adf0e006fa7dfe4f",
+      "reason": "Codex relation cleanup batch023 replaces a malformed has_timeline_event treatment_component->event relation with a related_to treatment/event relation preserving the source-backed association without widening timeline-event subjects.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch023",
+      "reviewed_at": "2026-06-22T20:50:00Z"
+    },
+    {
+      "submission_id": "sub_b16bea66477abac6",
+      "reason": "Codex relation cleanup batch030 replaces a malformed serves_route endpoint-shape relation with a source-backed validator-compatible relation preserving the same context without widening serves_route.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch030",
+      "reviewed_at": "2026-06-22T21:58:00Z"
+    },
+    {
+      "submission_id": "sub_b1cb2dcba32d15d1",
+      "reason": "Codex relation direction cleanup batch 002 replaces the malformed published_by relation whose endpoints were entity -> source with a source -> entity relation.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl",
+      "reviewed_at": "2026-06-22T12:35:33Z"
+    },
+    {
+      "submission_id": "sub_b26e44c58df74644",
+      "reason": "Codex relation cleanup batch016 replaces malformed implemented_by entity->project relation relation_cd-rockaway-resiliency with validator-compatible implemented_by project->entity relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch016",
+      "reviewed_at": "2026-06-22T19:37:00Z"
+    },
+    {
+      "submission_id": "sub_b2b4ab00d355b629",
+      "reason": "Codex relation cleanup batch025 replaces a malformed has_timeline_event claim->event relation with a supports event->claim relation preserving timeline context without widening claim-owned timeline subjects.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch025",
+      "reviewed_at": "2026-06-22T21:22:00Z"
+    },
+    {
+      "submission_id": "sub_b7860762eca2c595",
+      "reason": "Codex relation cleanup batch032 replaces malformed has_timeline_event metric_claim -> event relation relation_meeting91591-sprague-has-timeline-event-extension with validator-compatible supports event -> metric_claim preserving source-backed evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch032",
+      "reviewed_at": "2026-06-22T22:22:00Z"
+    },
+    {
+      "submission_id": "sub_b9f578f5ceef797c",
+      "reason": "Codex relation cleanup batch031 replaces malformed part_of_program entity -> project relation relation_meeting-doc-114216-aar-ehail-pilot with validator-compatible part_of_program project -> entity preserving source-backed evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch031",
+      "reviewed_at": "2026-06-22T22:14:00Z"
+    },
+    {
+      "submission_id": "sub_ba06afe6a894a67f",
+      "reason": "Codex relation cleanup batch032 replaces malformed has_timeline_event metric_claim -> event relation relation_meeting91591-nova-has-timeline-event-inservice with validator-compatible supports event -> metric_claim preserving source-backed evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch032",
+      "reviewed_at": "2026-06-22T22:22:00Z"
+    },
+    {
+      "submission_id": "sub_ba53c6cee7cbe7ae",
+      "reason": "Codex relation cleanup batch045 replaces malformed implemented_by corridor -> entity relation relation_rel-mta-implements-crz with a source-backed congestion pricing implementation project endpoint and a validator-compatible implemented_by project -> entity relation.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-23.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch045",
+      "reviewed_at": "2026-06-23T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_bcf0ee0ff8bd10e3",
+      "reason": "Reviewed batch 2 retargets the B44 draft-plan local proposal from B44 Limited to B44 Local.",
+      "source_decision": "docs/migration-decision-matrix.md",
+      "reviewed_at": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_bdc6d70f631896a5",
+      "reason": "Malformed has_metric relation_nyct-farebox-metrics pointed entity -> source; batch228 replaces it with entity -> metric_claim relations for NYCT farebox recovery and operating metrics.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch228-prep.json#relation228",
+      "reviewed_at": "2026-06-23T16:38:00.000Z"
+    },
+    {
+      "submission_id": "sub_be8f2756fb9d81f5",
+      "reason": "Codex relation cleanup batch053 retires malformed related_route project -> project self-relation relation_gct-albany-amtrak-cause. The cited block supports the accepted Grand Central Terminal to Albany roundtrip project description, including the Amtrak East River Tunnel capacity-loss cause, but does not support a route-to-route relation or a project self-edge.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch053-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch053",
+      "reviewed_at": "2026-06-23T02:10:00Z"
+    },
+    {
+      "submission_id": "sub_beb07f0cdca54426",
+      "reason": "Codex relation cleanup batch012 replaces a malformed implemented_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_meeting_doc_112146_hochul_budget.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch012",
+      "reviewed_at": "2026-06-22T18:44:36Z"
+    },
+    {
+      "submission_id": "sub_c020155a49dc36c5",
+      "reason": "Codex relation cleanup batch031 replaces malformed part_of_program entity -> project relation relation_meeting-doc-114216-aar-ehail-phase2 with validator-compatible part_of_program project -> entity preserving source-backed evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch031",
+      "reviewed_at": "2026-06-22T22:14:00Z"
+    },
+    {
+      "submission_id": "sub_c0c4227185a192da",
+      "reason": "Reviewed batch 1 retargets the Jay Street program relation to Better Buses Restart.",
+      "source_decision": "docs/migration-decision-matrix.md",
+      "reviewed_at": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_c1181b8442a10c0e",
+      "reason": "Codex relation cleanup batch026 replaces a malformed has_timeline_event metric_claim->event relation with a supports event->metric_claim relation preserving timeline context without widening metric-claim-owned timeline subjects.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch026",
+      "reviewed_at": "2026-06-22T21:45:00Z"
+    },
+    {
+      "submission_id": "sub_c18efe02a3ab1819",
+      "reason": "Codex relation cleanup batch029 retires a malformed implemented_by entity->entity relation where source evidence does not support a high-confidence replacement edge.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch029",
+      "reviewed_at": "2026-06-22T21:50:00Z"
+    },
+    {
+      "submission_id": "sub_c1f48c3e4bc60c39",
+      "reason": "Codex relation cleanup batch020 replaces malformed has_timeline_event claim -> event relation relation_subcommittee-approvals-replacement with validator-compatible supports event->claim relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch020",
+      "reviewed_at": "2026-06-22T20:04:00Z"
+    },
+    {
+      "submission_id": "sub_c200c8870d115a0b",
+      "reason": "Codex relation cleanup batch015 replaces malformed implemented_by claim->entity relation relation_mta-real-estate-licensing-out-policy with validator-compatible has_claim entity->claim relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch015",
+      "reviewed_at": "2026-06-22T19:17:23Z"
+    },
+    {
+      "submission_id": "sub_c2c125c9df1f1ebb",
+      "reason": "Codex residual route cleanup retires route_34th-st-bus-priority because the submitted route payload describes a 34th Street Bus Priority/Hot Spot project surface, not a public transit route. The same source already has project_34th-street-bus-priority preserving the structured project, corridor, treatment, timeline, and metric context.",
+      "source_decision": "data/review_notes/codex-residual-normalizer-burst-2026-06-30-b.json#route_34th_st_bus_priority_retirement",
+      "reviewed_at": "2026-06-30T08:25:13Z"
+    },
+    {
+      "submission_id": "sub_c2aa9765e250e252",
+      "reason": "Codex relation cleanup batch041 replaces malformed published_by event -> entity relation relation_safety-committee-published-by-mta with validator-compatible source -> entity published_by relation preserving the Safety Committee Meeting July 2022 document publisher context.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch041",
+      "reviewed_at": "2026-06-23T00:10:00Z"
+    },
+    {
+      "submission_id": "sub_c326c53312321b3d",
+      "reason": "Codex relation cleanup batch025 replaces a malformed has_timeline_event claim->event relation with a supports event->claim relation preserving timeline context without widening claim-owned timeline subjects.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch025",
+      "reviewed_at": "2026-06-22T21:22:00Z"
+    },
+    {
+      "submission_id": "sub_c32e857ebd3fbec0",
+      "reason": "Codex relation cleanup batch005 retires a malformed serves_route relation whose subject and object both resolved to the Hammels Y Reconstruction project; already-accepted submissions sub_33ffd0964ce5e821 and sub_abcc388b71d9789f preserve the same evidence as project -> A line and project -> S Rockaway Shuttle route relations.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-retire-existing-replacements-batch005",
+      "reviewed_at": "2026-06-22T16:48:38Z"
+    },
+    {
+      "submission_id": "sub_c3e911a46d99f6c0",
+      "reason": "Codex relation cleanup batch040 replaces malformed published_by entity -> source relation relation_mta-published-source_5 with validator-compatible source -> entity published_by relation preserving the Monthly Pulse Survey publisher context.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch040",
+      "reviewed_at": "2026-06-22T23:50:15Z"
+    },
+    {
+      "submission_id": "sub_c4967db60f6f5fa9",
+      "reason": "Codex relation cleanup batch014 replaces malformed metric relation relation_raina-base-rent-to-lease with validator-compatible has_metric context preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch014",
+      "reviewed_at": "2026-06-22T19:09:48Z"
+    },
+    {
+      "submission_id": "sub_c6099bc616313b90",
+      "reason": "Codex relation cleanup batch004 replaces a malformed serves_route relation whose subject was treatment_component -> route; the cited Jamaica Bus Improvement Study bus-stop reconfiguration evidence supports a project -> Q43 route_scope edge.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-jamaica-hylan-route-scope",
+      "reviewed_at": "2026-06-22T16:34:50Z"
+    },
+    {
+      "submission_id": "sub_c621889d18837a7c",
+      "reason": "Codex relation cleanup batch031 replaces malformed part_of_program project -> source relation relation_meeting-doc-112141-grand-central-part-of-20yr with validator-compatible related_to project -> source preserving source-backed evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch031",
+      "reviewed_at": "2026-06-22T22:14:00Z"
+    },
+    {
+      "submission_id": "sub_c744ce63f9b7d506",
+      "reason": "Codex relation cleanup batch045 replaces malformed implemented_by event -> entity relation relation_ort-tbta-project with a source-backed ORT conversion project endpoint and a validator-compatible implemented_by project -> entity relation.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-23.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch045",
+      "reviewed_at": "2026-06-23T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_c7b955f9f3ea642b",
+      "reason": "Codex relation cleanup batch026 replaces a malformed has_timeline_event metric_claim->event relation with a supports event->metric_claim relation preserving timeline context without widening metric-claim-owned timeline subjects.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch026",
+      "reviewed_at": "2026-06-22T21:45:00Z"
+    },
+    {
+      "submission_id": "sub_c85ca73f5e3f3e5b",
+      "reason": "Codex relation cleanup batch031 replaces malformed part_of_program project -> source relation relation_meeting-doc-112141-zerobus-part-of-20yr with validator-compatible related_to project -> source preserving source-backed evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch031",
+      "reviewed_at": "2026-06-22T22:14:00Z"
+    },
+    {
+      "submission_id": "sub_c8aa507817429065",
+      "reason": "Codex relation cleanup batch018 replaces malformed operated_by entity -> entity relation relation_meeting-doc-199051-nj-transit-west-hudson with validator-compatible operates entity->entity relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch018",
+      "reviewed_at": "2026-06-22T20:43:00Z"
+    },
+    {
+      "submission_id": "sub_ca4fd626fbe1e6be",
+      "reason": "Codex relation cleanup batch011 replaces a malformed operated_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_199066-st-patricks-day-lirr-service.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch011",
+      "reviewed_at": "2026-06-22T18:24:45Z"
+    },
+    {
+      "submission_id": "sub_cb1b43447977bfe1",
+      "reason": "Codex relation cleanup batch011 replaces a malformed operated_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_lirr-operates-new-years-early-getaway.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch011",
+      "reviewed_at": "2026-06-22T18:24:45Z"
+    },
+    {
+      "submission_id": "sub_cbd76512b4b82cf1",
+      "reason": "Codex relation cleanup codex-relation-cleanup-2026-06-22-batch015-endpoint-repair retires batch015 replacement relation_batch015-nyct-has-claim-able-to-ace because direct endpoint IDs did not resolve; batch017 appends same-source local-endpoint replacement preserving evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-batch015-endpoint-repair",
+      "reviewed_at": "2026-06-22T19:54:00Z"
+    },
+    {
+      "submission_id": "sub_cc4afbb3972f607e",
+      "reason": "Codex relation cleanup batch056 retires malformed has_timeline_event event -> entity relation relation_finance-committee-dec16; next26 prepared a same-source replacement pointing from the Finance Committee event to the existing MTA Board adoption event.",
+      "source_decision": "data/review_notes/codex-relation-rule-or-data-next26-prep.json#codex-relation-rule-or-data-next26-prep",
+      "reviewed_at": "2026-06-23T02:22:37.062Z"
+    },
+    {
+      "submission_id": "sub_cca1467ba3eeb22f",
+      "reason": "Codex relation cleanup batch033 replaces malformed implemented_by metric_claim -> entity relation relation_meeting91591-sprague-department-of-buses with validator-compatible related_to entity -> metric_claim preserving source-backed evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch033",
+      "reviewed_at": "2026-06-22T22:43:00Z"
+    },
+    {
+      "submission_id": "sub_cd47b4d829e6712a",
+      "reason": "Codex relation cleanup batch030 replaces a malformed serves_route endpoint-shape relation with a source-backed validator-compatible relation preserving the same context without widening serves_route.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch030",
+      "reviewed_at": "2026-06-22T21:58:00Z"
+    },
+    {
+      "submission_id": "sub_cd86f0d84b46bccd",
+      "reason": "Codex relation cleanup batch027 replaces a malformed published_by claim->entity relation with a has_claim entity->claim relation preserving source-backed attribution without widening published_by to claims.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch027",
+      "reviewed_at": "2026-06-22T21:34:00Z"
+    },
+    {
+      "submission_id": "sub_cda92d1344140822",
+      "reason": "Codex relation cleanup batch059 retires malformed owned_by event -> entity relation relation_app-update-owned-by-mta. owned_by requires entity|project|corridor -> entity, but the submitted subject is event_mta-app-update-march-2026. The cited title and feature bullets support existing event and claim records for the MTA App update, but do not provide source-backed valid ownership endpoints.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch059-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch059",
+      "reviewed_at": "2026-06-23T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_cdc51b4a9858505c",
+      "reason": "Reviewed batch 1 replaces the composite Q10/Q80 ACE relation with separate route relations.",
+      "source_decision": "docs/migration-decision-matrix.md",
+      "reviewed_at": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_d20be9bc14fc6381",
+      "reason": "Codex missing-target repair replaces a published_by relation whose subject_id used the source local_observation_id source_mta_feb2022_adopted_budget_positions instead of the canonical source record id source_meeting-doc-85476.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-missing-target-repair001",
+      "reviewed_at": "2026-06-22T21:38:00Z"
+    },
+    {
+      "submission_id": "sub_d247498d8f91d7fd",
+      "reason": "Codex relation cleanup batch014 replaces malformed metric relation relation_monsey-fee-to-license with validator-compatible has_metric context preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch014",
+      "reviewed_at": "2026-06-22T19:09:48Z"
+    },
+    {
+      "submission_id": "sub_d376a3603bfcec81",
+      "reason": "Reviewed batch 2 moves the generic M15 segment-speed reference away from M15 SBS to local/limited context.",
+      "source_decision": "docs/migration-decision-matrix.md",
+      "reviewed_at": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_d4773131ed994696",
+      "reason": "Codex relation cleanup batch007 replaces a reversed implemented_by relation whose subject is MTA C&D and object is the Interborough Express project; same-source replacement sub_a3923b8c0acb3b10 uses project -> entity endpoints.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch007",
+      "reviewed_at": "2026-06-22T17:28:30Z"
+    },
+    {
+      "submission_id": "sub_d566368d505b8736",
+      "reason": "Codex relation cleanup batch024 replaces a malformed implemented_by treatment_component->entity relation with an inverse implements entity->treatment_component relation preserving source-backed implementation semantics without widening implemented_by.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch024",
+      "reviewed_at": "2026-06-22T21:12:00Z"
+    },
+    {
+      "submission_id": "sub_d6ceef0adcada40a",
+      "reason": "Codex relation cleanup batch004 replaces a malformed serves_route relation whose subject was treatment_component -> route; the cited Jamaica Bus Improvement Study bus-stop reconfiguration evidence supports a project -> Q44 route_scope edge.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-jamaica-hylan-route-scope",
+      "reviewed_at": "2026-06-22T16:34:50Z"
+    },
+    {
+      "submission_id": "sub_d7171d25ec973ff3",
+      "reason": "Codex relation cleanup batch003 replaces a project-to-metric relation mislabeled has_claim/claim_context with has_metric/metric_context. The cited block supports linking the Faster, Cleaner, Safer initiative to the Penn Station customer-satisfaction metric.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-fcs-gsm-wiltshire",
+      "reviewed_at": "2026-06-22T15:45:00Z"
+    },
+    {
+      "submission_id": "sub_d80ab7620978599f",
+      "reason": "Codex relation cleanup batch011 replaces a malformed operated_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_meeting-doc-199051-lirr-operated-by-lirr.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch011",
+      "reviewed_at": "2026-06-22T18:24:45Z"
+    },
+    {
+      "submission_id": "sub_da5e43202dc357bb",
+      "reason": "Codex relation cleanup batch029 retires a malformed implemented_by entity->entity relation where source evidence does not support a high-confidence replacement edge.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch029",
+      "reviewed_at": "2026-06-22T21:50:00Z"
+    },
+    {
+      "submission_id": "sub_db215be60186c9c7",
+      "reason": "Codex relation cleanup batch030 replaces a malformed serves_route endpoint-shape relation with a source-backed validator-compatible relation preserving the same context without widening serves_route.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch030",
+      "reviewed_at": "2026-06-22T21:58:00Z"
+    },
+    {
+      "submission_id": "sub_db7fc16a63375073",
+      "reason": "Codex relation cleanup batch019 replaces malformed operated_by entity -> entity relation relation_operated-henry-hudson with validator-compatible operates entity->entity relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch019",
+      "reviewed_at": "2026-06-22T19:56:30Z"
+    },
+    {
+      "submission_id": "sub_dba1e3d103d6d685",
+      "reason": "Codex relation cleanup batch014 replaces malformed metric relation relation_capital-strengthen-expand with validator-compatible has_metric context preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch014",
+      "reviewed_at": "2026-06-22T19:09:48Z"
+    },
+    {
+      "submission_id": "sub_dc761ff547163533",
+      "reason": "Codex relation cleanup batch028 replaces a malformed operated_by entity->entity relation with a related_to entity->entity association preserving source-backed context without widening operated_by.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch028",
+      "reviewed_at": "2026-06-22T21:44:00Z"
+    },
+    {
+      "submission_id": "sub_dcb73cfdab54f987",
+      "reason": "Codex relation cleanup batch038 replaces malformed part_of_program event -> entity relation relation_ridership_event_committee_133306 with validator-compatible has_timeline_event entity -> event preserving source-backed work-plan agenda evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch038",
+      "reviewed_at": "2026-06-22T23:27:02Z"
+    },
+    {
+      "submission_id": "sub_dddebad747ffb201",
+      "reason": "Codex relation cleanup batch009 replaces a malformed part_of_program relation whose object is a claim; the same endpoints and cited block support a validator-compatible project -> claim has_claim relation for Penn Station LIRR Concourse under Strengthen & Expand Network.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch009",
+      "reviewed_at": "2026-06-22T18:01:07Z"
+    },
+    {
+      "submission_id": "sub_de8832d429b2f79f",
+      "reason": "Codex relation cleanup batch034 replaces malformed part_of_program project -> event relation relation_gcm-east-side-access with validator-compatible part_of_program project -> project preserving source-backed evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch034",
+      "reviewed_at": "2026-06-22T23:01:00Z"
+    },
+    {
+      "submission_id": "sub_de6bdd730c42d572",
+      "reason": "Codex project identity cleanup retargets this Jamaica Capacity Improvement Phase 2 row away from the broader parent Jamaica Capacity Improvement Project. Replacement sub_b94c93591fecf207 preserves the same meeting_doc_121326 source evidence on project_jamaica-capacity-improvement-phase2.",
+      "source_decision": "data/review_notes/codex-project-identity-jci-phase2-retarget-2026-07-01.json#project-identity-jci-phase2-retarget",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_e0378f5f0be48d1e",
+      "reason": "Codex relation cleanup batch059 retires malformed owned_by source -> entity relation relation_bt-committee-workplan-2026-owned-by. owned_by requires entity|project|corridor -> entity, but the submitted subject is source_meeting-doc-192216. The cited blocks are Bridges and Tunnels Committee Work Plan title/entity-label evidence already represented on source and entity records, and they do not support a source ownership edge or a deterministic valid replacement relation.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch059-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch059",
+      "reviewed_at": "2026-06-23T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_e0a876b760de7c90",
+      "reason": "Codex relation cleanup batch019 replaces malformed operated_by entity -> entity relation relation_operated-marine-parkway with validator-compatible operates entity->entity relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch019",
+      "reviewed_at": "2026-06-22T19:56:30Z"
+    },
+    {
+      "submission_id": "sub_e1a22d5484b9abac",
+      "reason": "Reviewed batch 1 retypes the Jay Street Better Buses endpoint from entity to project/program.",
+      "source_decision": "docs/migration-decision-matrix.md",
+      "reviewed_at": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_e1ef0f75bf3efa53",
+      "reason": "Codex relation cleanup batch023 replaces a malformed has_timeline_event treatment_component->event relation with a related_to treatment/event relation preserving the source-backed association without widening timeline-event subjects.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch023",
+      "reviewed_at": "2026-06-22T20:50:00Z"
+    },
+    {
+      "submission_id": "sub_e2877debbde3f88b",
+      "reason": "Codex relation cleanup batch008 replaces a malformed operates_on_corridor relation whose subject is project -> corridor; the cited Train Shed scope block supports a project -> corridor uses_corridor relation.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch008",
+      "reviewed_at": "2026-06-22T17:41:43Z"
+    },
+    {
+      "submission_id": "sub_e35b8c75c3c17450",
+      "reason": "Codex relation cleanup batch014 replaces malformed metric relation relation_penn-station-cd with validator-compatible has_metric context preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch014",
+      "reviewed_at": "2026-06-22T19:09:48Z"
+    },
+    {
+      "submission_id": "sub_e38ca2e1f6405d00",
+      "reason": "Codex relation cleanup batch035 replaces malformed has_timeline_event claim -> event relation relation_meeting-doc-79466-event-policy-mnr with validator-compatible has_claim event -> claim preserving source-backed evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch035",
+      "reviewed_at": "2026-06-22T23:12:00Z"
+    },
+    {
+      "submission_id": "sub_e3dacb50a35c909a",
+      "reason": "Codex relation cleanup batch019 replaces malformed operated_by entity -> entity relation relation_operated-bronx-whitestone with validator-compatible operates entity->entity relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch019",
+      "reviewed_at": "2026-06-22T19:56:30Z"
+    },
+    {
+      "submission_id": "sub_e55bf62624751083",
+      "reason": "Codex relation cleanup batch028 replaces a malformed operated_by entity->entity relation with a related_to entity->entity association preserving source-backed context without widening operated_by.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch028",
+      "reviewed_at": "2026-06-22T21:44:00Z"
+    },
+    {
+      "submission_id": "sub_e5ae71879861651a",
+      "reason": "Codex relation cleanup batch026 replaces a malformed has_timeline_event metric_claim->event relation with a supports event->metric_claim relation preserving timeline context without widening metric-claim-owned timeline subjects.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch026",
+      "reviewed_at": "2026-06-22T21:45:00Z"
+    },
+    {
+      "submission_id": "sub_e688683abfd90042",
+      "reason": "Codex relation cleanup batch035 replaces malformed has_timeline_event claim -> event relation relation_meeting-doc-79466-event-policy-lirr with validator-compatible has_claim event -> claim preserving source-backed evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch035",
+      "reviewed_at": "2026-06-22T23:12:00Z"
+    },
+    {
+      "submission_id": "sub_e745425af5c96ad9",
+      "reason": "Codex relation cleanup batch012 replaces a malformed implemented_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_gct_venue_to_mnr.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch012",
+      "reviewed_at": "2026-06-22T18:44:36Z"
+    },
+    {
+      "submission_id": "sub_e89670dffd7d2c1f",
+      "reason": "Codex relation cleanup batch019 replaces malformed operated_by entity -> entity relation relation_operated-carey-tunnel with validator-compatible operates entity->entity relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch019",
+      "reviewed_at": "2026-06-22T19:56:30Z"
+    },
+    {
+      "submission_id": "sub_e8e775939bfbb6de",
+      "reason": "Codex relation cleanup batch013 replaces a malformed has_timeline_event relation whose object is a claim with a valid has_claim relation preserving source-backed endpoints.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch013",
+      "reviewed_at": "2026-06-22T18:59:47Z"
+    },
+    {
+      "submission_id": "sub_e9da8479c21e0686",
+      "reason": "Codex relation cleanup batch046 replaces malformed has_treatment claim -> treatment_component relation relation_accessibility-has-treatment-elevator with validator-compatible has_claim treatment_component -> claim relation preserving the Livonia Av & Rockaway Parkway elevator evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-23.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch046",
+      "reviewed_at": "2026-06-23T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_ea92e424842b3a19",
+      "reason": "Codex relation cleanup batch033 replaces malformed implemented_by metric_claim -> entity relation relation_meeting91591-nova-department-of-buses-v2 with validator-compatible related_to entity -> metric_claim preserving source-backed evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch033",
+      "reviewed_at": "2026-06-22T22:43:00Z"
+    },
+    {
+      "submission_id": "sub_ed65399ad3324e0c",
+      "reason": "Codex relation cleanup batch045 replaces malformed implemented_by treatment_component -> entity relation relation_ada-elevators-nyct with a source-backed Grand Street ADA elevator project endpoint and a validator-compatible implemented_by project -> entity relation.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-23.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch045",
+      "reviewed_at": "2026-06-23T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_ef22269e6f953ed8",
+      "reason": "Codex relation cleanup batch007 replaces a reversed implemented_by relation whose subject is LIRR and object is the partial demolition project; same-source replacement sub_82e75ad3769efeba uses project -> entity endpoints.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch007",
+      "reviewed_at": "2026-06-22T17:28:30Z"
+    },
+    {
+      "submission_id": "sub_f0b5f134f7fdd789",
+      "reason": "Codex relation cleanup batch029 retires a malformed implemented_by entity->entity relation where source evidence does not support a high-confidence replacement edge.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch029",
+      "reviewed_at": "2026-06-22T21:50:00Z"
+    },
+    {
+      "submission_id": "sub_f345b31df31ea1f8",
+      "reason": "Codex relation cleanup batch012 replaces a malformed implemented_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_meeting_doc_111756_lirr_pilot_lirr.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch012",
+      "reviewed_at": "2026-06-22T18:44:36Z"
+    },
+    {
+      "submission_id": "sub_f3d230792c9c68c1",
+      "reason": "Codex relation cleanup batch013 replaces a malformed has_timeline_event relation whose object is a claim with a valid has_claim relation preserving source-backed endpoints.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch013",
+      "reviewed_at": "2026-06-22T18:59:47Z"
+    },
+    {
+      "submission_id": "sub_f403ec213c977c5b",
+      "reason": "Codex relation cleanup batch001 replaces the malformed rail-grinding relation: the original used object_id entity_meeting_doc_121091_mta and left the object endpoint unresolved, while the cited block supports an implemented_by relation from the Rail Grinding Services project to LIRR.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-rail-grinding-lirr",
+      "reviewed_at": "2026-06-22T14:16:16Z"
+    },
+    {
+      "submission_id": "sub_f42e47a7fb71f6b9",
+      "reason": "Codex relation cleanup batch012 replaces a malformed implemented_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for rel_meeting_doc_199126_mnr_agreement5.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch012",
+      "reviewed_at": "2026-06-22T18:44:36Z"
+    },
+    {
+      "submission_id": "sub_f5017acf7e5d88a1",
+      "reason": "Reviewed batch 2 replaces the Bx6 Local addendum suffix route with a durable Bx6 Local route plus lifecycle event.",
+      "source_decision": "docs/migration-decision-matrix.md",
+      "reviewed_at": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_f633e76c7c4da4b0",
+      "reason": "Codex relation cleanup batch008 replaces a malformed operates_on_corridor relation whose subject is project -> corridor; the cited Grand St/Grand Av study-area block supports a project -> corridor uses_corridor relation.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch008",
+      "reviewed_at": "2026-06-22T17:41:43Z"
+    },
+    {
+      "submission_id": "sub_f66641833f5cbc0b",
+      "reason": "Codex relation cleanup batch025 replaces a malformed has_timeline_event claim->event relation with a supports event->claim relation preserving timeline context without widening claim-owned timeline subjects.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch025",
+      "reviewed_at": "2026-06-22T21:22:00Z"
+    },
+    {
+      "submission_id": "sub_f848c7ea03825a65",
+      "reason": "Codex relation cleanup batch024 replaces a malformed implemented_by treatment_component->entity relation with an inverse implements entity->treatment_component relation preserving source-backed implementation semantics without widening implemented_by.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch024",
+      "reviewed_at": "2026-06-22T21:12:00Z"
+    },
+    {
+      "submission_id": "sub_f87a5b5b2ee076ca",
+      "reason": "Codex relation cleanup batch005 retires a malformed serves_route relation whose subject and object both resolved to the Penn Station Access project; already-accepted submission sub_395df4934f9bc161 preserves the same evidence as a project -> New Haven Line route relation.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-retire-existing-replacements-batch005",
+      "reviewed_at": "2026-06-22T16:48:38Z"
+    },
+    {
+      "submission_id": "sub_f890593b92a095b9",
+      "reason": "Codex relation cleanup batch011 correction retires the first Thanksgiving replacement because it used subject_local_observation_id entity_meeting_doc_124881_mnr, which is not local to meeting_doc_186726 and therefore did not materialize; replacement sub_1962466982299af6 uses canonical subject_id entity_meeting-doc-124881-mnr plus the same-source event local id.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch011-correction",
+      "reviewed_at": "2026-06-22T18:30:03Z"
+    },
+    {
+      "submission_id": "sub_f8bba07b611b93bf",
+      "reason": "Codex relation cleanup batch010 replaces a reversed published_by relation whose subject is the MTA Bus Company entity and object is the source; same-source replacement sub_164638f650f19853 uses the validator-compatible source -> entity published_by direction.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch010",
+      "reviewed_at": "2026-06-22T18:10:38Z"
+    },
+    {
+      "submission_id": "sub_f97201932a97d96b",
+      "reason": "Codex relation cleanup batch012 replaces a malformed implemented_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for rel_meeting_doc_199126_agreement1_nyct.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch012",
+      "reviewed_at": "2026-06-22T18:44:36Z"
+    },
+    {
+      "submission_id": "sub_f9db6ab4364cfbea",
+      "reason": "Codex relation cleanup batch019 replaces malformed operated_by entity -> entity relation relation_operated-verrazzano with validator-compatible operates entity->entity relation preserving source evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch019",
+      "reviewed_at": "2026-06-22T19:56:30Z"
+    },
+    {
+      "submission_id": "sub_fb604596fd499a14",
+      "reason": "Codex relation cleanup batch037 replaces malformed has_timeline_event metric_claim -> event relation relation_meeting_doc_95301_procurement_committee_meeting with validator-compatible supports event -> metric_claim preserving source-backed procurement schedule evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch037",
+      "reviewed_at": "2026-06-22T23:07:53Z"
+    },
+    {
+      "submission_id": "sub_fc748faa39eb80af",
+      "reason": "Codex relation cleanup batch049 replaces malformed has_timeline_event entity -> metric_claim relation relation_meeting-doc-133551-tbta-surplus-transfer with validator-compatible has_metric entity -> metric_claim relation preserving the TBTA fiscal year 2023 operating surplus evidence.",
+      "source_decision": "data/review_notes/codex-relation-cleanup-batch049-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch049",
+      "reviewed_at": "2026-06-23T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_fd46d643847d7e41",
+      "reason": "Codex relation cleanup batch011 replaces a malformed operated_by relation whose subject is an event and object is an entity; same-source replacement uses validator-compatible entity -> event has_timeline_event endpoints for relation_grand-central-madison-combo-ticket-lirr-mnr.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch011",
+      "reviewed_at": "2026-06-22T18:24:45Z"
+    },
+    {
+      "submission_id": "sub_fdb128c62c2f304e",
+      "reason": "Reviewed batch 1 retypes the Lexington Avenue surface from route to corridor.",
+      "source_decision": "docs/migration-decision-matrix.md",
+      "reviewed_at": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "submission_id": "sub_ff3c3606743df3de",
+      "reason": "Codex relation cleanup batch025 replaces a malformed has_timeline_event claim->event relation with a supports event->claim relation preserving timeline context without widening claim-owned timeline subjects.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch025",
+      "reviewed_at": "2026-06-22T21:22:00Z"
+    },
+    {
+      "submission_id": "sub_fff5432b978c8fd4",
+      "reason": "Codex relation cleanup codex-relation-cleanup-2026-06-22-batch015-endpoint-repair retires batch015 replacement relation_batch015-mta-real-estate-has-claim-licensing-out-policy because direct endpoint IDs did not resolve; batch017 appends same-source local-endpoint replacement preserving evidence.",
+      "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-batch015-endpoint-repair",
+      "reviewed_at": "2026-06-22T19:54:00Z"
+    },
+    {
+      "submission_id": "sub_0e6db777ac9da362",
+      "reason": "Codex route context contamination cleanup retires an 86th Street presentation figure-caption/context row that incorrectly added Bronx geography to the B44 SBS canonical route; the source is not primary evidence for the B44 route record.",
+      "source_decision": "data/review_notes/codex-route-context-contamination-cleanup-2026-07-01.json#route-context-contamination-cleanup",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_0ee29daf6c3b4a32",
+      "reason": "Codex route context contamination cleanup retires a B82 South Brooklyn connection-list mention that was incorrectly materialized as evidence for the B46 Utica SBS route record.",
+      "source_decision": "data/review_notes/codex-route-context-contamination-cleanup-2026-07-01.json#route-context-contamination-cleanup",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_1da20083cb946f2f",
+      "reason": "Codex route context contamination cleanup retires an 86th Street presentation figure-caption/context row that incorrectly added Bronx/Brooklyn geography to the M34/M34A SBS split-candidate route record.",
+      "source_decision": "data/review_notes/codex-route-context-contamination-cleanup-2026-07-01.json#route-context-contamination-cleanup",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_6aea115924eba8b4",
+      "reason": "Codex route context contamination cleanup retires an 86th Street presentation figure-caption/context row that incorrectly added Westchester County geography to the Bx12 SBS canonical route.",
+      "source_decision": "data/review_notes/codex-route-context-contamination-cleanup-2026-07-01.json#route-context-contamination-cleanup",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_98afac6b362465d8",
+      "reason": "Codex route context contamination cleanup retires a Webster Avenue SBS planning observation that targeted M60/125th-LaGuardia but source evidence names the separate proposed SBS to LaGuardia Airport service; same-source replacement retargets it to route_sbs-to-laguardia-2012.",
+      "source_decision": "data/review_notes/codex-route-context-contamination-cleanup-2026-07-01.json#route-context-contamination-cleanup",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_bce1ef1b1f9722a2",
+      "reason": "Codex route context contamination cleanup retires a B82 South Brooklyn connection-list mention that was incorrectly materialized as evidence for the B46 Utica SBS route record.",
+      "source_decision": "data/review_notes/codex-route-context-contamination-cleanup-2026-07-01.json#route-context-contamination-cleanup",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_be87e29a320b5c89",
+      "reason": "Codex route context contamination cleanup retires a Webster Avenue SBS planning observation that targeted M60/125th-LaGuardia but source evidence names the separate proposed SBS to LaGuardia Airport service; same-source replacement retargets it to route_sbs-to-laguardia-2012.",
+      "source_decision": "data/review_notes/codex-route-context-contamination-cleanup-2026-07-01.json#route-context-contamination-cleanup",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_f26152aeb9e3363c",
+      "reason": "Codex route context contamination cleanup retires an 86th Street presentation figure-caption/context row that incorrectly added Bronx geography to the M60/125th-LaGuardia SBS canonical route.",
+      "source_decision": "data/review_notes/codex-route-context-contamination-cleanup-2026-07-01.json#route-context-contamination-cleanup",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_5d77a0ea670435f1",
+      "reason": "Codex Webster route context cleanup retires a Bx6 South Bronx source context-map/connection-list route observation so Bx6 planning evidence does not inflate the canonical Webster Avenue Bx41 SBS route record; same-source direct-endpoint relation replacement preserves the Bx6-to-Bx41 connection evidence.",
+      "source_decision": "data/review_notes/codex-route-webster-context-cleanup-2026-07-01.json#route-webster-context-cleanup",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_90643d8fd672399b",
+      "reason": "Codex Webster route context cleanup retires a Bx6 South Bronx source connection-list route observation that targeted Bx41/Webster from Bx6 context rather than primary Webster route evidence.",
+      "source_decision": "data/review_notes/codex-route-webster-context-cleanup-2026-07-01.json#route-webster-context-cleanup",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_aa82b0c6313f737b",
+      "reason": "Codex Webster route context cleanup retires a South Brooklyn kickoff-board existing-SBS map mention so non-Webster project context does not inflate the canonical Webster Avenue Bx41 SBS route record.",
+      "source_decision": "data/review_notes/codex-route-webster-context-cleanup-2026-07-01.json#route-webster-context-cleanup",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_bdfc0f2eee9d5a18",
+      "reason": "Codex Webster route context cleanup retires an 86th Street presentation figure-caption/context row that incorrectly added Brooklyn geography to the canonical Webster Avenue Bx41 SBS route record.",
+      "source_decision": "data/review_notes/codex-route-webster-context-cleanup-2026-07-01.json#route-webster-context-cleanup",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_c01ac84f875a756f",
+      "reason": "Codex Webster route context cleanup retires a South Bronx Crosstown/Bx6 source context-map/connection-list route observation so Bx6 planning evidence does not inflate the canonical Webster Avenue Bx41 SBS route record; same-source direct-endpoint relation replacement preserves the Bx6-to-Bx41 connection evidence.",
+      "source_decision": "data/review_notes/codex-route-webster-context-cleanup-2026-07-01.json#route-webster-context-cleanup",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_ead442a06dc90e55",
+      "reason": "Codex Webster route context cleanup retires a Bx6 River Terrace source connection-list route observation that cites Bx41 SBS only as Bx6 corridor context.",
+      "source_decision": "data/review_notes/codex-route-webster-context-cleanup-2026-07-01.json#route-webster-context-cleanup",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_f0268e80a2ee80d8",
+      "reason": "Codex Webster route context cleanup retires a Woodhaven project board existing-SBS list mention so non-Webster project context does not inflate the canonical Webster Avenue Bx41 SBS route record.",
+      "source_decision": "data/review_notes/codex-route-webster-context-cleanup-2026-07-01.json#route-webster-context-cleanup",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_efbe69099083f712",
+      "reason": "Codex Webster route context cleanup replaces a Bx6-to-Bx41 relation that depended on the retired context-only Webster route local id with a direct canonical endpoint relation preserving the same source evidence.",
+      "source_decision": "data/review_notes/codex-route-webster-context-cleanup-2026-07-01.json#route-webster-context-cleanup",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_fa2e5fa3e8d33c47",
+      "reason": "Codex Webster route context cleanup replaces a Bx6 corridor-to-Bx41 relation that depended on the retired context-only Webster route local id with a direct canonical endpoint relation preserving the same source evidence.",
+      "source_decision": "data/review_notes/codex-route-webster-context-cleanup-2026-07-01.json#route-webster-context-cleanup",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_177d00b4035ba1b9",
+      "reason": "Codex project pseudo-heading cleanup retires a singleton project record created from the one-line checkmark heading 'Increase Ridership \u2713'. The cited block and nearby page context show an accomplishment/slide heading about one billion subway rides, not a source-scoped project record with scope, type, or project status.",
+      "source_decision": "data/review_notes/codex-project-pseudo-heading-retirements-2026-07-01.json#project-pseudo-heading-retirements",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_2decaa7513a169a6",
+      "reason": "Codex project pseudo-heading cleanup retires a singleton project record created from the one-line checkmark heading 'Incredible Advocates \u2713'. The cited block and nearby page context show a recognition/slide heading, not a source-scoped project record with scope, type, or project status.",
+      "source_decision": "data/review_notes/codex-project-pseudo-heading-retirements-2026-07-01.json#project-pseudo-heading-retirements",
+      "reviewed_at": "2026-07-01T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_43b8ba85c893df5e",
+      "reason": "Codex metric date-event repair retires a metric_claim that modeled the OMNY NYCT substantial-completion month as a numeric year/unit metric; same-source event replacement preserves the status-table milestone date.",
+      "source_decision": "data/review_notes/codex-metric-date-event-repair-2026-07-03.json#metric-date-event-repair",
+      "reviewed_at": "2026-07-03T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_6453fca20a63f4f2",
+      "reason": "Codex metric date-event repair retires a metric_claim that modeled the OMNY Railroads Q2 2026 substantial-completion date as a numeric metric; same-source event replacement preserves the status-table milestone date.",
+      "source_decision": "data/review_notes/codex-metric-date-event-repair-2026-07-03.json#metric-date-event-repair",
+      "reviewed_at": "2026-07-03T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_dd7a6cf869f023de",
+      "reason": "Codex metric date-event repair retires a metric_claim that modeled the Second Avenue Subway Phase 2 revenue-service target year as a metric; same-source event replacement preserves the planned revenue-service target.",
+      "source_decision": "data/review_notes/codex-metric-date-event-repair-2026-07-03.json#metric-date-event-repair",
+      "reviewed_at": "2026-07-03T00:00:00Z"
+    },
+    {
+      "submission_id": "sub_da031007e8a55666",
+      "reason": "Codex metric date-event repair retires a metric_claim that modeled the Second Avenue Subway Phase 2 forecasted revenue-service date as a metric; same-source event replacement preserves the September 2032 forecast date.",
+      "source_decision": "data/review_notes/codex-metric-date-event-repair-2026-07-03.json#metric-date-event-repair",
+      "reviewed_at": "2026-07-03T00:00:00Z"
+    }
+  ]
+}

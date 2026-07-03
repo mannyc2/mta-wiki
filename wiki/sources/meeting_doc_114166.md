@@ -1,0 +1,2508 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-114166"
+record_kind: "source"
+display_name: "MTA Board Action Items June 2023"
+source_id: "meeting_doc_114166"
+source_ids:
+  - "meeting_doc_114166"
+local_observation_id: "source_mta_board_meeting_june_2023"
+local_observation_ids:
+  - "source_mta_board_meeting_june_2023"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T12:14:12.690Z"
+submission_ids:
+  - "sub_cb47f04fe5de22e5"
+payload:
+  authority_tier: "board_material"
+  content_type: "board meeting materials"
+  date_text: "June 2023"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2023-06"
+    precision: "month"
+    raw_text: "June 2023"
+  description: "MTA Board Meeting materials including board action items, procurement packages, real estate items, capital program amendments, fare-free bus pilot program, and e-hail program Phase 2 Expansion"
+  published_date_normalized: "2023-06"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "MTA Board Action Items"
+evidence_refs:
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_114166#p001_c0003"
+    page_number: 1
+    source_id: "meeting_doc_114166"
+    source_path: "raw/sources/meeting_doc_114166/blocks.jsonl"
+    text_sha256: "sha256:71e46d2dd13e5e1c65c329c049c6f83b6368b7d1b54beac406c75fffcf422ece"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_114166#p001_c0004"
+    page_number: 1
+    source_id: "meeting_doc_114166"
+    source_path: "raw/sources/meeting_doc_114166/blocks.jsonl"
+    text_sha256: "sha256:5f9cd9ce531d6511df2421ee46214de32e778d30511a3e4407e407cd96421065"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0002"
+    evidence_id: "meeting_doc_114166#p002_c0002"
+    page_number: 2
+    source_id: "meeting_doc_114166"
+    source_path: "raw/sources/meeting_doc_114166/blocks.jsonl"
+    text_sha256: "sha256:484a7ff36ac38b851337d2bf02ebc8af19d7295c7475776c8fe312b9f9dc3609"
+    text_source: "raw_text"
+---
+
+# Board Book
+
+source_id: meeting_doc_114166
+citation: cite block ids exactly as shown in square brackets
+document: 1554 block(s)
+
+## Page 1
+
+### [p001_c0001] OS19014_16MTA_board_action_MTA Board Action covers 1/9/19 3:46 PM Page 6
+> [p001_c0002] The logo for the Metropolitan Transportation Authority (MTA) is located at the top left. It consists of a white circle containing the letters "MTA" in blue, followed by the text "Metropolitan Transportation Authority" in a white sans-serif font.
+[p001_c0003] June 2023
+[p001_c0004] MTA Board Action Items
+> [p001_c0005] A large, stylized graphic of the MTA logo is centered on the page. It features the letters "MTA" in a bold, white, sans-serif font, set against a dark blue circular background. The letters are slightly slanted to the right.
+
+## Page 2
+
+### [p002_c0001] MTA Board Meeting
+[p002_c0002] 2 Broadway 20th Floor Board Room New York, NY 10004 Tuesday, 6/27/2023 10:00 AM - 12:00 PM ET
+### [p002_c0003] 1. PUBLIC COMMENT PERIOD
+### [p002_c0004] 2. APPROVAL OF MINUTES
+### [p002_c0005] MTA and MTA Agencies Regular Joint Committee and Board Meeting Minutes - May 24, 2023
+[p002_c0006] MTAHQ
+[p002_c0007] NYCT/MaBSTOA/SIRTOA/MTA Bus Company
+[p002_c0008] MTA Metro-North Railroad
+[p002_c0009] MTA Long Island Rail Road
+[p002_c0010] MTA Triborough Bridge and Tunnel Authority
+[p002_c0011] MTA Construction & Development
+[p002_c0012] MTA and MTA Agencies Regular Joint Committee and Board Meeting Minutes - May 24, 2023 - Page 4
+### [p002_c0013] 3. PRESENTATIONS
+### [p002_c0014] 4. COMMITTEE ON CAPITAL PROGRAM
+### [p002_c0015] C&D Procurements
+[p002_c0016] C&D Procurements - Page 17
+### [p002_c0017] 5. COMMITTEE ON METRO-NORTH RAILROAD & LONG ISLAND RAIL
+### [p002_c0018] Procurement Report
+### [p002_c0019] i. MNR Procurement Item
+[p002_c0020] MNR Procurement - Page 32
+### [p002_c0021] 6. COMMITTEE ON NYCT & BUS (no items)
+### [p002_c0022] 7. COMMITTEE ON MTA BRIDGES & TUNNELS OPERATIONS (no items)
+### [p002_c0023] 8. COMMITTEE ON FINANCE
+### [p002_c0024] Action Item
+### [p002_c0025] i. 2023 State PWEF Assessment
+[p002_c0026] 2023 PWEF Assessment - Page 38
+
+## Page 3
+
+### [p003_c0001] MTAHQ Procurements Report
+[p003_c0002] MTAHQ Procurement Report - Page 39
+### [p003_c0003] i. Competitive Procurement
+[p003_c0004] MTAHQ Competitive Procurement - Page 43
+### [p003_c0005] Real Estate Items
+### [p003_c0006] i. Real Estate Agenda and Staff Summaries
+[p003_c0007] Real Estate Agenda and Staff Summaries - Page 46
+### [p003_c0008] 9. MTA OTHER BUSINESS
+### [p003_c0009] Capital Plan Amendment
+[p003_c0010] Capital Plan Amendment Staff Summary - Page 141
+### [p003_c0011] Fare-Free Bus Pilot Program
+[p003_c0012] Fare-Free Bus Pilot Program Staff Summary - Page 144
+### [p003_c0013] E-hail Program Phase 2 Expansion
+[p003_c0014] E-Hail Program Phase 2 Expansion Staff Summary - Page 147
+### [p003_c0015] 10. FIRST MUTUAL TRANSPORTATION ASSURANCE CO (FMTAC) (no items)
+### [p003_c0016] 11. EXECUTIVE SESSION
+
+## Page 4
+
+### [p004_c0001] Joint Minutes of the Metropolitan Transportation Authority, the New York City Transit Authority, the Manhattan and Bronx Surface Transit Operating Authority, the Staten Island Rapid Transit Operating Authority, the Metropolitan Suburban Bus Authority, the Triborough Bridge and Tunnel Authority, the Long Island Rail Road Company, Metro-North Commuter Railroad Company, MTA Construction and Development Company, the MTA Bus Company and the First Mutual Transportation Assurance Company Regular Board Meeting 2 Broadway New York, NY 10004 Wednesday, May 24, 2023 10:00 a.m.
+[p004_c0002] The following Board Members were present ( *Attended remotely ):
+[p004_c0003] Hon. Janno Lieber, Chair & CEO Hon. Andrew Albert Hon. Jamey Barbas Hon. Frank Borelli, Jr. Hon. Samuel Chu Hon. Michael Fleischer Hon. David Jones* Hon. Blanca Lopez Hon. David Mack Hon. Haeda B. Mihaltses Hon Frankie Miranda* Hon Sheriff Soliman Hon. Isabel Midori Valdivia Espino Hon. Elizabeth Velez
+[p004_c0004] The following alternate non-voting members were present:
+[p004_c0005] Hon. Gerard Bringmann Hon. Norman Brown Hon. Randolph Glucksman Hon. Vincent Tessitore, Jr.*
+[p004_c0006] The following Board Members were absent:
+[p004_c0007] Hon. John Samuelsen Hon Lisa Sorin Hon. Neal Zuckerman
+[p004_c0008] _Master Page # 4 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 5
+
+[p005_c0001] Paige Graves, General Counsel, Lisette Camilo, Chief Administrative Officer, Kevin Willens, Chief Financial Officer, Patrick Warren, Chief Safety and Security Officer, Richard Davey, President, NYCTA, Frank Annicaro, Acting Chief Operating Officer, NYCT and Acting President, MTA Bus Company, Catherine Rinaldi, President, Metro-North Railroad/LIRR Interim President, Catherine Sheridan, Interim President, TBTA, Jamie Torres-Springer, President, MTA C&D, Chris Pangilinan, Vice President, Paratransit, Hugo Pizzaro, Chief People Officer, Shanifah Rieara, Senior Advisor for Communications and Policy/Interim Chief Customer Officer, Meagan Molina, Assistant Director, Government & Community Relations, also attended the meeting.
+[p005_c0002] The Board of the Metropolitan Transportation Authority also met as the Boards of the New York City Transit Authority, the Manhattan and Bronx Surface Transit Operating Authority, the Staten Island Rapid Transit Operating Authority, the Metropolitan Suburban Bus Authority, the Triborough Bridge and Tunnel Authority, the Long Island Rail Road Company, Metro-North Commuter Railroad Company, the MTA Construction and Development Company, the MTA Bus Company, and the First Mutual Transportation Assurance Company.
+[p005_c0003] Unless otherwise indicated, these minutes reflect items on the agenda of the Board of the Metropolitan Transportation Authority, the New York City Transit Authority, the Manhattan and Bronx Surface Transit Operating Authority, the Staten Island Rapid Transit Operating Authority, the Metropolitan Suburban Bus Authority, the Triborough Bridge and Tunnel Authority, the Long Island Rail Road Company, Metro-North Commuter Railroad Company, the MTA Construction and Development Company, and the First Mutual Transportation Assurance Company.
+[p005_c0004] Chair Lieber called to order the May 2023 Board meeting and announced that this meeting serves as the annual Board meeting of the First Mutual Transportation Assurance Company's (FMTAC).
+[p005_c0005] General Counsel Paige Graves confirmed a quorum of the Board members in attendance.
+[p005_c0006] A recorded audio public safety announcement was played.
+### [p005_c0007] 1. PUBLIC SPEAKERS' SESSION.
+[p005_c0008] The MTA Moderator announced that the following public speakers will speak either live virtually or in-person.
+[p005_c0009] The MTA Moderator reminded public speakers of the rules of conduct and the two-minute speaking limit. The Moderator reminded speakers of the warning beep when 30 seconds remain to conclude their remarks. The Moderator advised that the public comments will be recorded, published to the MTA website, and available for MTA Board Members' review.
+[p005_c0010] The following public speakers commented (*live virtual comments):
+[p005_c0011] Jean Ryan, Disabled in Action ("DIA") Monica Bartley, Disabled in Action ("DIA") Miriam Fisher, private citizen* Michael Ring, DIA/Riders Alliance/Fair Fares Now
+[p005_c0012] _MTA and Agencies' Regular Board Meeting Joint Minutes May 24, 2023_
+[p005_c0013] _Master Page # 5 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 6
+
+[p006_c0001] Iris Kelly, Disabled in Action (“DIA”) Aleta Dupree, private citizen* Jack Nierenberg, Passengers United Gian Pedulla, private citizen Charles Munez, Transit Employee, TWU Local 100* Sally Wolf, private citizen* Joe Rappaport, Brooklyn Center for the Independence for the Disabled (“BCID”) Lisa Daglian, Executive Director, PCAC Jason Rabinowitz, private citizen* Lucy Koteen, private citizen* Sue Aung, Riders Alliance Jason Anthony, Amazon Labor Union Glen Baksh, Riders Alliance Charlton D’Souza, President, Passengers United Michael Howard, private citizen Elizabeth Valdez, Brooklyn Center for the Independence for the Disabled (“BCID”) Jennifer VanDyck, Elevator Action Group Pedro Valdez-Rivera, Riders Alliance Jacqueline Feliz-Thomas, Riders Alliance Edward Valente, MNR Conductor Danna Dennis, Riders Alliance
+[p006_c0002] The Moderator announced that the allotted time for the public speakers’ comments session has been reached and asked the remaining registered speakers to standby as the agency transitions to a separate live recording session. Remote public speakers participating via Zoom were advised to standby and wait for further instructions from the Moderator. Public speakers in attendance were advised to assemble in conference room #4. As a reminder, the Moderator stated that recorded comments will be distributed to the MTA Board and posted to the Board meeting web page and on YouTube.
+[p006_c0003] Refer to the video recording of the meeting produced by the MTA and maintained in MTA records for the content of speakers’ statements.
+[p006_c0004] Chair Lieber announced that a short video will be played showing the Station Agents’ new role and responsibilities.
+### [p006_c0005] 2. CHAIR INTRODUCTION OF GOVERNOR HOCHUL.
+[p006_c0006] Chair Lieber thanked the public speakers and introduced Governor Kathy Hochul.
+[p006_c0007] Chair Lieber thanked the Governor for her leadership during the budget season. The Chair noted that the stakes were really high this budget season, and the MTA was facing an annual budget deficit of $200 billion that threatened the possibility of service reductions, layoffs, and a massive fare increase. Chair Lieber stated that, because of the Governor’s leadership, the MTA is celebrating a budget deal that addresses the agency’s funding needs for four years. Chair Lieber stated that the biggest factor in this outcome was the high bar that the Governor set with her
+[p006_c0008] _MTA and Agencies’ Regular Board Meeting Joint Minutes May 24, 2023_
+[p006_c0009] _Master Page # 6 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 7
+
+[p007_c0001] executive budget proposal, and by challenging the legislature to sign onto a new model of financing transit and building consensus on new and recurring revenue for the MTA, the legislature responded to the Governor's challenge. The Governor also challenged the MTA to find $400 million in recurring savings, and the MTA has stepped up to the challenge.
+[p007_c0002] Chair Lieber, on behalf of everyone, expressed gratitude to the Governor for understanding the importance of mass transit for the New York City region and the entire State of New York.
+[p007_c0003] Governor Kathy Hochul acknowledged and thanked Chair Lieber for his leadership during the pandemic and beyond and for his ability to innovate different ideas in support of mass transit. The Governor acknowledged and thanked the Board members, CFO Kevin Willens, President Jamie Torres-Springer, President Catherine Rinaldi, TWU President John Samuelsen and the TWU team and she thanked the State Legislature for their support of the budget plan.
+[p007_c0004] In her remarks, Governor Hochul expressed why she pushed so hard to fully fund transit in the New York State budget this year. The Governor also reiterated her support for Congestion Pricing and highlighted some of the major initiatives currently underway at the MTA, including the launch of a fare-free bus route pilot program in New York City.
+[p007_c0005] Governor Hochul stated that the success of the MTA is non-negotiable and her commitment to the MTA is a commitment to the future of New York. The Governor stated that there are unlimited possibilities to contribute to the customer experience, and the investment in mass transportation, and she expressed her appreciation for the support of the public advocates and to everyone for the incredible work being done to keep New York City running.
+[p007_c0006] Refer to the video recording of the meeting produced by the MTA and maintained in MTA records for the details of Chair Lieber's and the Governor's remarks.
+[p007_c0007] General Counsel Paige Graves announced that the Board will take a 15-minute recess.
+[p007_c0008] A video was played showing the role and responsibilities of various agency employees.
+### [p007_c0009] 3. CHAIR LIEBER'S REMARKS.
+[p007_c0010] Chair Lieber thanked everyone for joining this month's meeting.
+[p007_c0011] Chair Lieber, acknowledging the Governor's second appearance at an MTA Board meeting, stated that this is a historic moment because prior to Governor Hochul MTA had never had a Governor attend an MTA Board meeting. Chair Lieber expressed his gratitude for the leadership that the Governor has shown.
+[p007_c0012] The Chair stated that the MTA has had another amazing month since the Board last met. Last week was the single biggest week across the MTA in terms of ridership, marking four million customers on the subway seven times in the last month. Weekend ridership routinely exceeds 80% of pre-COVID levels -- more like 90% due to an uptick in fare evasion on the weekends
+[p007_c0013] _MTA and Agencies' Regular Board Meeting Joint Minutes May 24, 2023_
+[p007_c0014] _Master Page # 7 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 8
+
+[p008_c0001] of pre-COVID -- which the Chair stated is proof that New Yorkers, when they have discretion and thinking about somewhere to go, are choosing the transit system.
+[p008_c0002] Long Island Rail Road, hitting records, had its best week ever last week; and Metro-North set another record yesterday -- 214,000 riders.
+[p008_c0003] Chair Lieber stated that last time the Board met the MTA was waiting on a budget, and as discussed by the Governor a budget was approved and is a great deal—a four-year deal, which is a game-changing vote of confidence in the MTA and in the importance of transit to the riders. The Chair acknowledge the transit advocates represented at today's meeting, who he said are passionate about the MTA.
+[p008_c0004] Chair Lieber stated that the budget did not just save current service for bus, subway, commuter rail, and paratransit, but it achieved what many in the transit advocacy community had been pushing for, which is more subway service in the midday period and on nights and weekends, which are the times when the agency really sees what discretionary ridership is like and is reaching its best numbers. Chair Lieber stated that providing more service and making it even more attractive is really where the agency wants to go.
+[p008_c0005] Chair Lieber acknowledged the advocacy community, and he stated that it is not just Governor Hochul and the Legislature who led the MTA to this positive outcome, but the advocacy ecosystem in New York. Chair Lieber stated that the riders, environmental community, people who worry about urban planning, civic groups, labor are all a source of strength for transit, and the reason New York gained more attention and more public investment than virtually any other American city, and as a result, the MTA will continue to work to maintain, improve and grow service.
+[p008_c0006] Chair Lieber thanked members of the MTA team who helped deliver the result. The Chair thanked CFO Kevin Willens and acknowledged Jaibala Patel, Chief, Office of the CFO, who he said did an amazing job developing the blueprint for what we were able to accomplish with the Governor and the Legislature. CFO Willens' plan restructured the MTA's debt and showed how the agency could reduce the deficit with some creative approaches that involved being honest about how to reduce the borrowing costs and take advantage of this opportunity that created an opening for the Legislature and the Governor to act.
+[p008_c0007] Chair Lieber also thanked his immediate team – John McCarthy, Chief, External Relations, Shanifah Rieara, Senior Advisor for Communications and Policy/Interim Chief Customer Officer, Laura Wiles, Chief of Staff and Juliette Michaelson, Deputy Chief, MTA External Relations, who the Chair stated set in motion, over a year ago, a policy making and outreach effort that is referred to as The New Transit Compact, and which the MTA was able to execute on. The Chair acknowledged the amount of work that his staff does every day, and he thanked them for their dedication. Chair Lieber also acknowledged William Schwartz, Deputy Chief, Government and Community Relations, for the work he does in Albany on behalf of the MTA.
+[p008_c0008] _MTA and Agencies' Regular Board Meeting Joint Minutes May 24, 2023_
+[p008_c0009] _Master Page # 8 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 9
+
+[p009_c0001] Chair Lieber acknowledged that the credibility of the MTA's budget request was dramatically strengthened by the strong operations and performance of all the agency's systems, including paratransit. The Chair stated that there will always be discussions about subways, buses, and commuter rail, but paratransit has gotten dramatically better.
+[p009_c0002] Chair Lieber stated that the budget was a vote of confidence in not just the leaders of the organization but in all the MTA's workforce and what they do every day, and he applauded the staff.
+[p009_c0003] Chair Lieber stated that in addition to increasing off-peak and weekend frequencies, the good news is that the budget included the provision mentioned by the Governor, which is the ABLE legislation -- part of a serious strategy to improve bus speeds and performance. This legislation will not only subject people who block bus lanes to automatic ticketing that comes from a camera but will also apply to drivers who are doubled parked in a bus stop for an extended period of time.
+[p009_c0004] Chair Lieber stated that dealing with speed is especially important when trying to handle fare and toll evasion and he noted that last week the blue-ribbon panel released its report outlining wide-ranging recommendations to reduce losses. The Chair stated that the MTA is losing close to $700 million a year right now to fare and toll evasion, which is revenue that the organization could invest in more service and better infrastructure and deliver better service.
+[p009_c0005] Chair Lieber stated that the panel is such a credible group that consist of not just law enforcement professionals but social justice professionals. Rose Pierre-Louis, one of the co-chairs, heads an anti-poverty center at NYU and has made it her life's work. Roger Maldonado, first Latino chair of the New York City Bar, is a co-chair on the panel. Chair Lieber stated that this was a credible group, made up of distinguished and balanced New Yorkers in terms of background who made it clear that this is a serious issue, a social equity issue as well as being, to some extent, an enforcement issue and requires comprehensive solutions.
+[p009_c0006] Chair Lieber stated that Fair Fares, which we heard about a lot today, is part of the solution, and the MTA is looking forward to working with all its stakeholders to implement the panel's recommendations. The MTA will continue working with some short-term approaches like the unarmed guards who are discouraging people from going out the slam gate, which once opened becomes the superhighway of fare evasion; working with its city partners and the advocates on strategies to make sure that fare evasion is never a crime of poverty because we are dealing with the issue of discounting for people who need it. Chair Lieber expressed his excitement about what the agency has accomplished on the Fare Fares front and what remains to be done to implement it.
+[p009_c0007] The other big news is obviously congestion pricing – the release of the Final Environmental Assessment ("EA"). Chair Lieber stated that the MTA is moving closer to final approval of its version of the Central Business District Tolling ("CBDT") program -- a long and winding road after unprecedented public outreach.
+[p009_c0008] _MTA and Agencies' Regular Board Meeting Joint Minutes May 24, 2023_
+[p009_c0009] _Master Page # 9 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 10
+
+[p010_c0001] Chair Lieber noted that when Patrick Foye was Chair and was questioned about the CBDT program during the Trump administration when the MTA could not get any answers about what the environmental process would need to be in order to get the approval, his response was that the MTA intends to always have a robust outreach program, and the agency did that by involving 23 government agencies, five tribal agencies, and by having almost 100 different outreach sessions. The MTA dealt with 22,000 comments and 50,000 form letters in the EA. Chair Lieber stated that when people say to you that MTA did not take comments, bear in mind the federal government said we did take account of comments, we have responded, and now we deserve to go forward.
+[p010_c0002] Chair Lieber acknowledged Dr. Allison L. C. de Cerreño, Chief Operating Officer, Office of the President, MTA B&T, who has done an amazing job leading the team to this point. The Chair acknowledged Michael Wojnar, Senior Advisor Innovation and Policy, who has done an amazing job working in the executive office on these efforts as well. Chair Lieber stated that the MTA now looks forward to what the Traffic Mobility Review Board is going to achieve and the recommendations that they develop relating to some of the specifics.
+[p010_c0003] The Chair stated that everyone knows the MTA is counting on congestion pricing to fund a hefty portion of the current 2020-2024 $55 billion Capital Program, and lately he has been thinking more about the MTA's future capital programs following his recent visit to Livonia Rail Yard -- a maintenance shop in East New York. Chair Lieber stated that the agency needs to keep up or increase the level of investment it is making in capital so it can bring places like Livonia into the 21 st century -- a 100-year-old facility that looks like the set for a Netflix docudrama about the 19 th century Industrial Revolution. Chair Lieber, describing the Livonia Rail Yard as backwards with dilapidated conditions, stated that the rail yard was designed for trains of a different era and a different configuration, and the trenches underneath where people try to work on the car bodies are too shallow for them to work standing up. Chair Lieber stated that the mechanics at the rail yard cannot do their work efficiently and there is no room for a crane or proper equipment to move the cars around, resulting in a ton of time being wasted on bringing professionals in from the yard to the shop to move the trains around. Chair Lieber noted that places like Livonia exist all over the MTA system, very much in use despite their age and decrepit, outdated physical condition, and it is time that the agency behave like a responsible employer -- MTA oversees a trillion-dollar-plus asset, and must upgrade facilities like Livonia.
+[p010_c0004] Chair Lieber stated that when he visits the sites the workforce who spent their lives in these facilities are full of ideas on how to improve the conditions allowing them to work much more efficiently and productively -- staff are improvising locker rooms and bathrooms for women that are not appropriate facilities for the workforce. The Chair stated that the labor partners know that he is passionate about this issue, and it is important that the workers feel like they are coming to a modern workplace where their employer respects them enough to give them a proper bathroom and locker room.
+[p010_c0005] On a more positive note, and also related to Livonia, Chair Lieber stated that he saw crews working on R68 cars, the very trains whose arrival in the early 1980s signaled to many New Yorkers the beginning of the subway system turnaround that took place under leadership of
+[p010_c0006] _MTA and Agencies' Regular Board Meeting Joint Minutes May 24, 2023_
+[p010_c0007] _Master Page # 10 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 11
+
+[p011_c0001] former Chairs Richard Ravitch and Robert Kiley, and for those who grew up in New York fondly remember those cars rolling into the system. Chair Lieber stated that the R68 cars are still old friends still operating on the #3 line and the Shuttle. When the cars came into service 40 years ago, they were new, they were stainless steel, and Transit had adopted a principle that they were not going to let cars roll if they were hit with graffiti, which was a revelation.
+[p011_c0002] Chair Lieber stated that the R68 cars are what first got him excited about what the MTA was doing and sparked his interest in a transit career, and the first time he saw the cars roll into stations it felt like the subway, which for many people is the defining feature of New York as a place -- a symbol of New York's revival rather than of its decline. In the 1980s when these cars were placed in service -- a time when cars broke down an average of every 6,000 miles, the equivalent statistic today is 120,000 miles—the Mean Distance Between Failures (“MDBF”) of transit subway cars. Chair Lieber stated that seeing the old R68s, still in service and needing to be replaced, reminds him of the progress that the agency has made and the possibility that continued capital investment -- responsible continued investment at a high level -- can make a difference.
+[p011_c0003] Chair Lieber stated that as discussed on Monday at the Committee meeting all the cars that the agency is currently purchasing and have purchased since the year 2000 are operating at 220,000 miles MDBF -- 6,000 miles in the 70s when the R68s showed up to 120,000 miles—investment makes a difference.
+[p011_c0004] Chair Lieber, in connection with the Capital Program, introduced Frederica Cuenca, Deputy Chief Development Officer, who heads the planning operation, and Alyssa Cobb-Konon, Senior Vice President, Capital Strategy and Planning, who will present some of the important State of Good Repair work that the MTA has in the pipeline as it plans for the 2025-29 program, which – State of Good Repair, as well as expansion and upgrades, is where the MTA needs to be focusing its investment.
+[p011_c0005] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for the details of Chair Lieber's remarks.
+### [p011_c0006] 4. 20-YEAR NEEDS ASSESSMENT PROGRESS UPDATE.
+[p011_c0007] Fredericka Cuenca, Deputy Chief Development Officer, Planning, and Alyssa Cobb-Konon, Senior Vice President, Capital Strategy and Planning provided an update on the progress made on the 20-Year Needs Assessment.
+[p011_c0008] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for the details of Fredericka Cuenca's and Alyssa Cobb-Konon's presentations and the Chair's and Board members' comments and discussion.
+[p011_c0009] _MTA and Agencies' Regular Board Meeting Joint Minutes May 24, 2023_
+[p011_c0010] _Master Page # 11 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 12
+
+### [p012_c0001] 5. APPROVAL OF MINUTES.
+[p012_c0002] Upon motion duly made and seconded, the Board approved the Joint Minutes of the MTA and MTA Agencies Regular Board meeting held on April 26, 2023.
+[p012_c0003] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records for the details.
+### [p012_c0004] 6. MTA BRIDGES AND TUNNELS COMMITTEE.
+[p012_c0005] Board Member Mack stated that there are no items to report for Board approval for the MTA B&T Committee.
+### [p012_c0006] 7. JOINT LONG ISLAND RAIL ROAD/METRO-NORTH RAILROAD COMMITTEE.
+### [p012_c0007] A. MNR Procurement Item.
+[p012_c0008] Upon motion duly made and seconded, the Board approved the following item:
+- [p012_c0009] 1. approved the Metro-North and Staten Island Rapid Transit Operating Authority procurement of a non-competitive negotiated service contract in the not-to-exceed amount of $5,511,300 to the firm Laser Tribology BV for the lease of laser modules. The two-year lease with a one-year option allows for the use of laser technology to conduct railhead-based cleaning for removal of leaf debris and contaminants from the top of rail surfaces.
+[p012_c0010] Refer to the staff summary and documentation filed with the records of this meeting for the details on this item.
+### [p012_c0011] 8. NEW YORK CITY TRANSIT AND BUS COMMITTEE.
+### [p012_c0012] A. Procurement Item.
+[p012_c0013] Upon motion duly made and seconded, the Board approved the following item:
+- [p012_c0014] 1. Staff summary declaring competitive bidding impractical or inappropriate pursuant to Public Authorities Law Section 1209, subsection 9(b) due to the existence of a single responsible source and approved the award of an estimated value contract to Plasser American Corporation for the upgrade of critical systems on two NYC Transit-owned Track Geometry Cars (TGCs): TGC3 and TGC4. The sole-source advertisement for this requirement did not receive any responses.
+[p012_c0015] Refer to the staff summary and documentation filed with the records of this meeting for the details on this item.
+[p012_c0016] _MTA and Agencies' Regular Board Meeting Joint Minutes May 24, 2023_
+[p012_c0017] _Master Page # 12 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 13
+
+### [p013_c0001] 9. CAPITAL PROGRAM COMMITTEE.
+### [p013_c0002] A. Procurement Items.
+[p013_c0003] Upon motion duly made and seconded, the Board approved the following items:
+- [p013_c0004] 1. Approved a modification to the contract with Henningson, Durham & Richardson, Architectural and Engineering P.C. (Contract No. PSC-16-2991G.4), for the continuation of program and construction management and inspection services for the Central Business Tolling Program and a two and a half year time extension. 2. Approved a modification to the contract with L3Harris Technologies, Inc. (Contract No. 6155.16) for additional work to address system and cyber security upgrades and upgrades to the Operation and Maintenance plan. 3&4. Approved two modifications to the contract with TC Electric/J-Track JV (Contract No. P36444.45 & .51) to address deterioration and corrosion of existing electrical systems and equipment for the 53 rd Street Tube, as well as a contract time extension and associated impact costs. 5. Approved a modification to the contract with EJ Electric Installation Company (Contract No. RK-66.9) for the replacement of critical components to the cooling plant at the Robert Moses Building at the Robert F. Kennedy Bridge Facility. 6. Ratified a modification to the contract with Paul J. Scariano Incorporated (Contract No. CM030.183) for an excusable time extension of 405 calendar days and associated impact costs. 7. Ratified a modification to the contract with JTTC, JV (Contract No. C-48704.03) to replace an additional forty-two interior steel columns between 161 st and 167 th Streets.
+[p013_c0005] Refer to the staff summaries and documentation filed with the records of this meeting for the details on these items.
+### [p013_c0006] 10. MTA COMMITTEE ON FINANCE.
+### [p013_c0007] A. Action Item.
+[p013_c0008] Upon a motion duly made and seconded the Board approved the action item listed below. The specifics are set forth in the staff summary and documentation filed with the meeting materials.
+- [p013_c0009] 1. 2022 Annual Investment Report and MTA All Agency Investment Guidelines. Approve the MTA's submission of the 2022 Annual Investment Report, which includes the Investment Guidelines previously adopted by the Board, revision March 2020.
+[p013_c0010] _MTA and Agencies' Regular Board Meeting Joint Minutes May 24, 2023_
+[p013_c0011] _Master Page # 13 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 14
+
+### [p014_c0001] B. Information Item.
+- [p014_c0002] 1. Annual Pension Fund Report. The Board was provided a copy of the Annual Pension Fund Report.
+### [p014_c0003] C. Procurement Items.
+[p014_c0004] Upon a motion duly made and seconded the Board approved the procurement items listed below. The specifics are set forth in the staff summaries and documentation filed with the meeting materials.
+- [p014_c0005] 1. TEOCO Corporation – Maintenance and Support for SONET/ATM Network Management System – No 06%3309 AWO 8. Approval to extend a non-competitive miscellaneous service contract with TEOCO Corporation to continue to provide maintenance and support services for SONET/ATM (Synchronous Optical Networking/Asynchronous Transfer Mode) Network Management System for NYC Transit for one year (June 1, 2023-May 31, 2024) in the total amount of $1,690,289, to allow for transition to a new vendor/system. 2. Sprague Operating Resources LLC & Global Montello Group Corp – Transportation and Heating Fuels and Related Services - No. 15691. Approved the award of estimated quantity purchase contracts for the as-needed supply and delivery of Transportation and Heating Fuels and related services pursuant to a competitively negotiated All-Agency Request for Proposals to Sprague Operating Resources LLC and Global Montello Group Corp., for a five-year period with two 12-month options to be exercised at the MTA's discretion for a total duration of seven years, in a total amount of $1,450,841,653 (Sprague: $1,084,951,441 and Global $365,890,212).
+### [p014_c0006] D. Real Estate Items.
+[p014_c0007] Upon a motion duly made and seconded the Board approved the real estate items listed below. The specifics are set forth in the staff summaries and documentation filed with the meeting materials.
+### [p014_c0008] Metropolitan Transportation Authority
+- [p014_c0009] 1. Early termination of a lease agreement with Russell Cellular, Inc. for retail space on the Beaver Street side of 2 Broadway, New York, N.Y. 2. Approval of Determination and Findings under the New York Eminent Domain Procedure Law for the acquisition of fee interest and permanent and temporary easements in property interests for contracts 2, 3 and 4 of Phase 2 of the Second Avenue Subway Project.
+[p014_c0010] _MTA and Agencies' Regular Board Meeting Joint Minutes May 24, 2023_
+[p014_c0011] _Master Page # 14 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 15
+
+### [p015_c0001] New York City Transit
+- [p015_c0002] 3. Lease agreement with Khaled Hajahmed (or an entity to be formed owned and controlled by said individual) for the operation of a fast-food restaurant located at 1581 Myrtle Avenue, Brooklyn, N.Y.
+### [p015_c0003] Metro-North Railroad
+- [p015_c0004] 4. Approval of Determination and Findings under the New York Eminent Domain Procedure Law with respect to the acquisition of property interests needed to facilitate the Automotive Fuel System Project, North White Plains, N.Y. 5. Authorization to acquire permanent and temporary easements (Block 3357, Lot 247 & 216, Block 3360, Lot 120 in the Bronx, N.Y.) from American Pen, by negotiated settlement or eminent domain for ADA station improvements at Williams Bridge Station, Bronx, N.Y. 6. Permanent Easement with New York State Parks, Recreation and Historical Preservation and New York City Department of Environmental Protection for a recreational trail and bridge south of Breakneck Ridge station on Metro-North's Hudson Line, Town of Fishkill in Dutchess County, N.Y (Section 5953, Block 0, p/o Lot 530330). E. FIRST MUTUAL TRANSPORTATION ASSURANCE COMPANY (FMTAC) . This meeting serves as FMTAC's annual Board meeting. Information concerning FMTAC's activities and operations are contained in the Finance Committee book and the Board book.
+### [p015_c0005] A. Action Item.
+[p015_c0006] Upon motion duly made and seconded, the Board approved the following items:
+- [p015_c0007] 1. Business Continuity Plan and Disaster Response Plan for FMTAC . Approved updates made to the Business Continuity Plan and Disaster Recovery Plan for FMTAC, the MTA's captive insurance company.
+[p015_c0008] Refer to the staff summary and documentation filed with the records of this meeting for the details on this item.
+### [p015_c0009] 11. AUDIT COMMITTEE
+### [p015_c0010] A. Action Items.
+[p015_c0011] Upon motion duly made and seconded, the Board approved the following items:
+- [p015_c0012] 1. 2022 Year End Financial Statements 2. 2022 MTA Investment Compliance Report
+[p015_c0013] _MTA and Agencies' Regular Board Meeting Joint Minutes May 24, 2023_
+[p015_c0014] _Master Page # 15 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 16
+
+[p016_c0001] Refer to the Audit Committee Book and the MTA Board Exhibit book of this date for the details of these items.
+### [p016_c0002] 12. OTHER MTA BUSINESS.
+### [p016_c0003] A. Action Item.
+[p016_c0004] Upon motion duly made and seconded, the Board approved the following items:
+- [p016_c0005] 1. Federal Drug and Alcohol Policy. Approved the revised Federal Drug and Alcohol Policy.
+### [p016_c0006] 13. ADJOURNMENT.
+[p016_c0007] Upon motion duly made and seconded, the Board voted to adjourn the meeting at 12:45 p.m.
+[p016_c0008] Respectfully submitted,
+[p016_c0009] Susan Sarch Vice President, General Counsel and Secretary Metro-North Railroad
+[p016_c0010] Haley Stein Vice President, General Counsel and Secretary Long Island Rail Road Company
+[p016_c0011] Mariel A. Thompson Assistant Secretary NYCT
+[p016_c0012] Evan Eisland General Counsel and Secretary MTA C&D
+[p016_c0013] Paul Friman General Counsel and Corporate Secretary TBTA
+[p016_c0014] Victoria Clement Assistant Secretary MTAHQ
+[p016_c0015] _MTA and Agencies' Regular Board Meeting Joint Minutes May 24, 2023_
+[p016_c0016] _Master Page # 16 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 17
+
+### [p017_c0001] Construction & Development
+### [p017_c0002] Contracts Department
+[p017_c0003] Stephen Plochochi, Senior Vice President, Contracts
+### [p017_c0004] PROCUREMENT PACKAGE June 2023
+[p017_c0005] _Master Page # 17 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 18
+
+### [p018_c0001] Construction & Development
+### [p018_c0002] PROCUREMENTS
+[p018_c0003] The Procurement Agenda this month includes 13 actions for a proposed expenditure of $30.5 M.
+[p018_c0004] _Master Page # 18 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 19
+
+### [p019_c0001] Staff Summary
+### [p019_c0002] Page 1 of 1
+[p019_c0003]
+
+```text
+Subject Request Authorization to Award Several Procurement Actions Contracts Department Stephen Plochochi, Senior Vice President Board Action Order To Date Approval Info Other 1 Capital Program Committee 6/26/23 X 2 Board 6/27/23 X
+```
+[p019_c0004]
+
+```text
+Date: June 22, 2023 Internal Approvals Approval Approval X Deputy Chief Development Officer, Delivery X President X Deputy Chief Development Officer, Development X Executive Vice President & General Counsel
+```
+### [p019_c0005] Purpose
+[p019_c0006] To obtain the approval of the Board to award several procurement actions and to inform the Capital Program Committee of these procurement actions.
+### [p019_c0007] Discussion
+[p019_c0008] MTA Construction & Development proposes to award Competitive Procurements in the following categories:
+[p019_c0009]
+
+```text
+Schedules Requiring Majority Vote # of Actions $ Amount F. Personal Service Contracts 4 $ 10,118,821 I. Modifications to Purchase and Public Work Contracts 1 $ 2,875,000 SUBTOTAL 5 $ 12,993,821
+```
+[p019_c0010] MTA Construction & Development proposes to award Ratifications in the following category:
+[p019_c0011]
+
+```text
+Schedules Requiring Majority Vote # of Actions $ Amount K. Ratification of Completed Procurement Actions 8 $ 17,527,646 SUBTOTAL 8 $ 17,527,646 TOTAL 13 $ 30,521,467
+```
+### [p019_c0012] Budget Impact
+[p019_c0013] The approval of these procurement actions will obligate capital and operating funds in the amounts listed. Funds are available in the capital program and operating budget for these purposes.
+### [p019_c0014] Recommendation
+[p019_c0015] That the procurement actions be approved as proposed. (The items are included in the resolution of approval at the beginning of the Procurement Section.)
+[p019_c0016] _Master Page # 19 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 20
+
+### [p020_c0001] Construction & Development
+### [p020_c0002] MTA Construction & Development
+### [p020_c0003] BOARD RESOLUTION
+[p020_c0004] WHEREAS , in accordance with Sections 559, 2879, 1209 and 1265-a of the Public Authorities Law and the All Agency General Contract Procurement Guidelines, the Board authorizes the award of certain non-competitive purchase and public works contracts, and the solicitation and award of request for proposals in regard to purchase and public work contracts; and
+[p020_c0005] WHEREAS , in accordance with the All Agency Service Contract Procurement Guidelines and the All Agency General Contract Procurement Guidelines, the Board authorizes the award of certain non-competitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts;
+[p020_c0006] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Guidelines for Procurement of Services, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p020_c0007] NOW, the Board resolves as follows:
+- [p020_c0008] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract. 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals and authorizes the solicitation of such proposals. 3. As to each request for proposals (for purchase and public work contracts set forth in Schedule C for which a recommendation is made to award the contract), the Board authorizes the execution of said contract. 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein, and ratifies each action for which ratification is requested. 5. The Board authorizes the execution of each of the following for which Board authorization is required: i) the miscellaneous procurement contracts set forth in Schedule E; ii) the personal service contracts set forth in Schedule F; iii) the miscellaneous service contracts set forth in Schedule G; iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; v) the contract modifications to purchase and public work contracts set forth in Schedule I; vi) the modifications to miscellaneous procurement contracts set forth in Schedule J. 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p020_c0009] _Master Page # 20 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 21
+
+[p021_c0001] June 2023
+### [p021_c0002] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p021_c0003] Procurements Requiring Majority Vote:
+### [p021_c0004] Schedule F. Personal Service Contracts
+[p021_c0005] (Staff Summaries required for all items greater than $1M)
+- [p021_c0006] 1-4. Various Contracts Nos. CS00011B-CS00014B $ 10,118,820.41 Staff Summary Attached a. Stantec Consulting Services b. HNTB New York Engineering and Architecture, PC c. HNTB New York Engineering and Architecture, PC d. LOZIER, INC.
+[p021_c0007] MTA Construction & Development requests Board approval to award four publicly advertised and competitively solicited personal services contracts for MTA Bridges & Tunnels' 2023 Biennial Bridge Inspections as follows: Group A - Throgs Neck Bridge to Stantec Consulting Services Inc. in the NTE amount of $3,087,750.26; Group B – Bronx-Whitestone Bridge to HNTB New York Engineering and Architecture, P.C. in the NTE amount of $2,689,739.37; Group C – Marine Parkway and Cross Bay Bridges to HNTB New York Engineering and Architecture, P.C. in the NTE amount of $2,210,498.84; and Group D – Henry Hudson Bridge, Queens Midtown Tunnel Approach Bridge, and Hugh L. Carey Tunnel Approach Bridge to LOZIER, INC. in the NTE amount of $2,130,831.94.
+### [p021_c0008] Schedule I. Modifications to Purchase and Public Work Contracts
+[p021_c0009] (Staff Summaries required for all items greater than $1M)
+- [p021_c0010] 5. L.K. Comstock & Company, Inc. Contract No. S48006.16 $ 2,875,000 Staff Summary Attached
+[p021_c0011] MTA Construction and Development Company requests Board approval to award Modification No. 16 to the Contract to mitigate a design risk identified by the Independent Safety Assessor.
+[p021_c0012] _Master Page # 21 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 22
+
+### [p022_c0001] Staff Summary
+### [p022_c0002] Schedule F: Personal Service Contracts
+[p022_c0003] Items Numbers: 1-4
+[p022_c0004] Page 1 of 2
+[p022_c0005]
+
+```text
+Dept. & Dept. Head: B&T Business Unit, Joe Keane, VP & Chief Engineer SUMMARY INFORMATION Vendor Name Stantec Consulting Services Inc. HNTB New York Engineering and Architecture, P.C. HNTB New York Engineering and Architecture, P.C. LOZIER, INC. Contract Number CS00011B Group A CS00012B Group B CS00013B Group C CS00014B Group D Contracts Department Laura A. Smith, Vice President Description 2023 Biennial Bridge Inspection and Design of Miscellaneous Structural Repairs at the Throgs Neck Bridge; Bronx-Whitestone Bridge; Marine Parkway and Cross Bay Bridges; Henry Hudson Bridge, Queens Midtown Tunnel Approach Bridge, and Hugh L. Carey Tunnel Approach Bridge Board Reviews Total Amount: $10,118,820.41 Order To Date Approval Info Other CS00011B Group A $3,087,750.26 CS00012B Group B $2,689,739.37 CS00013B Group C $2,210,498.84 CS00014B Group D $2,130,831.94 1 Capital Program Committee 6/26/23 X Contract Term Two (2) Years, Nine (9) Months 2 Board 6/27/23 X Option(s) included in Total Amount? Yes No N/A Renewal? Yes No Internal Approvals Procurement Type Competitive Non-competitive Approval Approval Solicitation Type RFP Bid Other: X Deputy Chief, Development X President X Deputy Chief, Delivery X Executive Vice President & General Counsel Funding Source Operating Capital Federal Other:
+```
+### [p022_c0006] Purpose/Recommendation
+[p022_c0007] MTA Construction & Development (“C&D”) requests Board approval to award four publicly advertised and competitively solicited personal services contracts for MTA Bridges & Tunnels’ 2023 Biennial Bridge Inspections as follows: Group A - Throgs Neck Bridge to Stantec Consulting Services Inc. in the not-to-exceed (“NTE”) amount of $3,087,750.26; Group B – Bronx-Whitestone Bridge to HNTB New York Engineering and Architecture, P.C. in the NTE amount of $2,689,739.37; Group C – Marine Parkway and Cross Bay Bridges to HNTB New York Engineering and Architecture, P.C. in the NTE amount of $2,210,498.84; and Group D – Henry Hudson Bridge, Queens Midtown Tunnel Approach Bridge, and Hugh L. Carey Tunnel Approach Bridge to LOZIER, INC. in the NTE amount of $2,130,831.94. Each contract will be for a duration of approximately two years and nine months.
+### [p022_c0008] Discussion
+[p022_c0009] This contract solicitation is for the services of engineering consultant firms to perform biennial bridge inspections and miscellaneous engineering and design services at the Throgs Neck Bridge; the Bronx-Whitestone Bridge; Marine Parkway and Cross Bay Bridges; and the Henry Hudson Bridge, Queens Midtown Tunnel Approach Bridge, and Hugh L. Carey Tunnel Approach Bridge. For purposes of this solicitation, the bridges were divided into four groups and proposals were requested for each of the groups. The scope of services for each group includes inspection and examination of all structural components of the bridges in a group, and their appurtenances, as well as ancillary tasks. The biennial inspections are required by the Federal Highway Administration and the New York State Department of Transportation.
+[p022_c0010] _Master Page # 22 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 23
+
+### [p023_c0001] Construction & Development Page 2 of 2
+[p023_c0002] Selection was determined by utilizing a “Best Value” procurement process. A one-step solicitation was publicly advertised in the New York State Contractor Reporter, Daily News, Minority Commerce Weekly, and on the MTA website. In addition, notice of the Request For Proposals (“RFP”) was sent to 57 prequalified firms on the MTA’s General Engineering Consultant list. In response to the RFP, proposals were received on March 21, 2023, from the following six firms:
+- [p023_c0003] 1. AI Engineers, Inc. (“AIE”) 2. HNTB New York Engineering and Architecture, P.C. (“HNTB”) 3. LOZIER, INC. (“LOZIER”) 4. MP Engineers and Architects, P.C. (“MP”) 5. KB Group of NY, dba PRIME AE Group of NY (“PRIME AE”) 6. Stantec Consulting Services Inc. (“Stantec”)
+[p023_c0004] During the selection committee’s review of the technical proposals, PRIME AE withdrew its proposal and advised that it was discontinuing its bridge inspection and engineering support operations within New York City. The remaining five proposals were evaluated and scored by a selection committee consisting of representatives from C&D, utilizing the following pre-established selection criteria: Technical Work Proposed and Plan of Approach; Depth of Understanding of Project; Qualifications of Firm and Experience in Relevant Areas; Experience of Project Team/Key Personnel; Availability of Resources and Current Workload of Consultant and Sub-Consultants; Management Approach; Quality Assurance Plan; Diversity Practices; and Other Relevant Matters.
+[p023_c0005] Oral presentations were conducted with the remaining five firms and four firms were then shortlisted for further consideration. MP was not shortlisted because it was unable to demonstrate that it had sufficient resources to perform the work. The selection committee reviewed the cost proposals from the four shortlisted firms and then ranked each of the proposers considering both their technical and cost proposals in accordance with the evaluation criteria. The selection committee deemed all four firms to be both technically qualified and in the competitive range and recommended these firms be invited for negotiations. Several rounds of negotiations were conducted, focusing on levels of effort, staffing, hourly rates, overhead rates and contract terms and conditions. During negotiations, AIE withdrew its proposal advising that it also did not have sufficient resources available to perform the work.
+[p023_c0006] Best and Final Offers (“BAFO”) were requested and received from the remaining three firms and evaluated against C&D’s in-house budget estimate based on hours distributed among various titles and tasks, and the selection committee’s review of the technical proposals and oral presentations. The selection committee recommended awards to all three firms: HNTB, LOZIER, and Stantec. Stantec, an experienced engineering firm that has successfully performed prior biennial bridge inspections at various locations for the MTA, was unanimously recommended for the award of Group A as they were considered the technically superior firm with the lowest price for Group A. HNTB, a strong firm that has also successfully performed multiple biennial bridge inspection services at various locations for the MTA, was unanimously recommended for the award of Group B, despite their pricing being slightly ($117,633) higher than the lowest price proposal for Group B, as they were ranked the technically superior firm in Group B and the selection committee determined their offer provided the best value. HNTB was also unanimously recommended for the award of Group C as they were ranked the technically superior firm in the Group and provided the lowest pricing. In regard to Group D, LOZIER, a certified Disadvantaged Business Enterprise, was unanimously recommended for the award based on their technical capabilities and providing the lowest pricing. While Stantec was rated technically higher than LOZIER in Group D, during negotiations Stantec stated that they did not have the resources to receive an award for more than one Group. Accordingly, the selection committee determined that awarding Group A to Stantec and Group D to LOZIER provided the best value to MTA.
+[p023_c0007] The recommended NTE Contract amounts have been reviewed and are considered fair and reasonable.
+### [p023_c0008] D/M/WBE Information
+[p023_c0009] The MTA’s Department of Diversity and Civil Rights has established a Minority Owned Business Enterprise (“MBE”) goal of 15%, a Women Owned Business Enterprise (“WBE”) goal of 15%, and a Service-Disabled Veteran-Owned Business (“SDVOB”) goal of 6% for this contract series. DDCR has determined that all three firms’ utilization plans meet the MBE/WBE/SDVOB requirements established for the contracts.
+[p023_c0010] HNTB and Stantec have achieved MBE/WBE/SDVOB goals on recently completed MTA contracts. LOZIER has not completed any MTA contracts with MBE/WBE/SDVOB goals; therefore, no assessment of the firm’s MBE/WBE/SDVOB performance can be determined at this time.
+### [p023_c0011] Impact on Funding
+[p023_c0012] Funding in the amount of $10,118,820.41 is available in the Operating Budget under GFM-546, General Ledger #711101.
+[p023_c0013] _Master Page # 23 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 24
+
+### [p024_c0001] Staff Summary
+### [p024_c0002] Schedule I: Modifications to Purchase and Public Works Contracts
+[p024_c0003] Item Number: 5
+[p024_c0004] Page 1 of 1
+[p024_c0005]
+
+```text
+Vendor Name (Location) L.K. Comstock & Company, Inc. (Bronx, NY) Contract Number S-48006 Mod. # 16 Description CBTC 8th Avenue (59th Street to High Street) in the Boroughs of Manhattan and Brooklyn Original Amount: $ 245,798,000 Contract Term (including Options, if any) January 11, 2020 – January 10, 2025 Prior Modifications: $ 12,204,524 Option(s) included in Total Amt? Yes No n/a Prior Budgetary Increases: $ 0 Procurement Type Competitive Noncompetitive Current Amount: $ 258,002,524 Solicitation Type RFP Bid Other: Modification This Request: $ 2,875,000 Funding Source Operating Capital Federal Other: % of This Request to Current Amt.: 1.1% Requesting Dept./Div., Dept./Div. Head Name: Delivery/Mark Roche % of Modifications (including This Request) to Original Amount: 6.1%
+```
+### [p024_c0006] Discussion:
+[p024_c0007] Contract S-48006 is for a Communications Based Train Control ("CBTC") signal system on the 8th Avenue Line from south of the 59th Street Interlocking in Manhattan to the High Street Station in Brooklyn, including the installation of two solid state interlockings at 34th Street and 42nd Street in Manhattan. MTA Construction and Development Company ("C&D") requests Board approval to award Modification No. 16 to the Contract to mitigate a design risk identified by the Independent Safety Assessor ("ISA").
+[p024_c0008] A design review by the ISA identified a risk of non-CBTC-equipped (e.g., work trains) or improperly functioning CBTC-equipped trains operating within the 34 th St. and 42 nd St. interlockings. To address this issue and to ensure that these trains are accurately tracked in this area after activation of the CBTC system, this modification will provide for updates to the Programmable Logic Controller and the circuit design, signal modifications, relocation of stop machines and axel counters, associated cable, terminations and trenching and related simulator and training updates.
+[p024_c0009] The Contractor submitted a proposal in the amount of $3,230,669. Negotiations resulted in agreement of a lump sum price of $2,875,000 which is considered fair and reasonable.
+[p024_c0010] _Master Page # 24 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 25
+
+[p025_c0001] JUNE 2023
+### [p025_c0002] LIST OF RATIFICATIONS FOR BOARD APPROVAL
+### [p025_c0003] Procurements Requiring Majority Vote:
+### [p025_c0004] Schedule K. Ratification of Completed Procurement Actions (Involving Schedule E – J) (Staff Summaries required for all items)
+- [p025_c0005] 6. Banton Construction Company Contract No. 82133.75 $ 1,879,228.01 Staff Summary Attached MTA Construction & Development requests that the Board ratify Modification No. 75 to address changed conditions and an unanticipated method for installing the new fiber optic cable. 7. Parsons Transportation Group of New York, Inc. Contract No. CM1236.02 $ 2,278,418 Staff Summary Attached MTA Construction & Development requests that the Board ratify Modification No. 2, to provide additional construction phase support services for the Culver Line Communication Based Train Control Contract and to extend the PTG Contract term by nine months, until December 31, 2024. 8-9. Parsons Transportation Group of New York, Inc. Contract No. W32366.59 & 115 $ 6,450,000 Staff Summary Attached MTA Construction & Development requests that the Board ratify Modification Nos. 59 and 115 which, respectively, provide for (i) the design and construction of a new radio base station equipment shelter at the East New York Train Yard and (ii) additional prototyping work associated with additional bus types identified after Contract award. 10-13. Walsh Construction Company II, LLC Contract No. C34838.105, 107, 132 & 142 $ 6,920,000 Staff Summary Attached MTA Construction & Development requests that the Board ratify Modification Nos. 105, 107, 132 and 142, which provide for the implementation of re-designed pile foundations and additional floodwall (Nos. 105 & 107) and the reconfiguration of new wayside equipment to comply with the Limiting Line of Line Equipment train clearance envelope for tracks in the Yard (Nos. 132 & 142).
+[p025_c0006] _Master Page # 25 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 26
+
+### [p026_c0001] Staff Summary
+### [p026_c0002] Schedule K: Ratification of Completed Procurement Actions
+[p026_c0003] Item Number: 6
+[p026_c0004] Page 1 of 1
+[p026_c0005]
+
+```text
+Vendor Name (& Location) Banton Construction Company (North Haven, CT) Description Hudson Line Wayside Communications & Signal System Express Cable Installation Contract Term (including Options, if any) 59.7 Months Option(s) included in Total Amount? Yes No N/A Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Dept/Div & Dept/Div Head Name: Delivery/Mark Roche
+```
+[p026_c0006]
+
+```text
+Contract Number AWO/Modification 82133 75 Original Amount: $ 51,099,329.60 Prior Modifications: $ 26,899,943.71 Prior Budgetary Increases: $ Current Amount: $ 77,999,273.31 This Request $1,879,228.01 % of This Request to Current Amount: 2.4% % of Modifications (including This Request) to Original Amount: 56.3%
+```
+### [p026_c0007] Discussion:
+[p026_c0008] Contract 82133 (the "Contract") provides for, among other things, the replacement of express fiber optic cable along approximately 52 miles of track on Metro-North Railroad's Hudson Line, from Control Post 33 to the Amtrak Division Post near Mile Post 75.8. MTA Construction and Development ("C&D") requests that the Board ratify Modification No. 75 to address changed conditions and an unanticipated method for installing the new fiber optic cable in the net amount of $1,879,228.01.
+[p026_c0009] The Contract contains unit prices for the items of work to be performed, including the installation of the new fiber optic cable using a cable plow. The cable plow is a piece of equipment that cuts a trench, lays the cable, and backfills the trench in a single operation. Based on the unit quantities included in the contract, the plan was to install most of the new cable with a cable plow.
+[p026_c0010] Award of the Contract, however, and based on concerns that the cable plow might cause damage to existing underground fiber cable bundles, Metro-North Railroad modified its requirements such that a cable plow could no longer be used within five feet of buried fiber cable bundles. As a result, at numerous locations totaling approximately 55,000 linear feet, the Contractor was required to install the new fiber optic cable using more traditional excavation methods. For the excavation methods required for approximately 30,000 linear feet, there is no unit price included in the contract. Furthermore, because conditions varied at each location, it was difficult to estimate and thus negotiate an accurate linear foot cost for this extra work.
+[p026_c0011] For those reasons, the Contractor was directed to perform the changed work on a time and material basis. The project inspector in the field tracked the labor, equipment, and material that the Contractor used to perform the work, then reconciled the Contractor's time and material tickets against the inspector's records. For the period from April 2022 through April 2023, the period covered by this change order, and based on the reconciled time and material records, the Contractor is entitled to $2,553,446.02 for this changed work. However, C&D is concurrently deleting from the contract approximately 55,000 linear feet of cable plow work at the contract unit price for that work. Accordingly, the net cost of this modification is $1,879,228.01.
+[p026_c0012] A previous modification was issued to the Contractor in the amount of $231,569.04 to address this issue during the period between September 2021 and March 2022. The installation of the new fiber optic cable is now complete, and no further modifications are necessary to address the direct cost of this work. However, we are currently working on a time impact analysis and expect to issue another modification to address the time impacts associated with this change.
+[p026_c0013] _Master Page # 26 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 27
+
+### [p027_c0001] Staff Summary
+### [p027_c0002] Schedule K: Ratification of Completed Procurement Actions
+[p027_c0003] Item Number: 7
+[p027_c0004] Page 1 of 2
+[p027_c0005]
+
+```text
+Vendor Name (& Location) Parsons Transportation Group of New York, Inc. (New York, New York) Contract Number CM1236 AWO/Modification # 2 Description Consultant Services – Design, Procurement and Construction Phase Support for Communications-Based Train Control and Auxiliary Wayside Signal Systems for the Culver Line Original Amount: $ 4,948,157 Contract Term (including Options, if any) December 27, 2017 – March 26, 2024 Prior Modifications: $ (438,228) Option(s) included in Total Amount? Yes No N/A Options: $ Procurement Type Competitive Non-competitive Current Amount: $ 4,509,929 Solicitation Type RFP Bid Other: Modification This Request $2,278,418 Funding Source Operating Capital Federal Other: % of This Request to Current Amount: 50.5% Requesting Dept/Div & Dept/Div Head Name: Delivery/Mark Roche % of Modifications (including This Request) to Original Amount: 46%
+```
+### [p027_c0006] Discussion
+[p027_c0007] Contract CM1236 (the “PTG Contract”) is for consultant services for design, procurement, and construction phase support for the Communication Based Train Control (“CBTC”) element of the Work under the Culver Line CBTC contract S-47009 (the “Culver Line Project”). MTA Construction & Development (“C&D”) requests that the Board ratify Modification No. 2, to provide additional construction phase support services for the CBTC Contract and to extend the PTG Contract term by nine months, until December 31, 2024, for the not-to-exceed amount of $2,278,418.
+[p027_c0008] Under the PTG Contract, Parsons Transportation Group of New York, Inc. (“PTG”) is required to provide CBTC related design services, technical specification development and procurement support services for the Culver Line Project. In addition, PTG is required to support the project during the construction phase, specifically with regard to the CBTC work. However, after award of the PTG Contract, the project management team determined that it required PTG to provide additional services in support of the Culver Line Project that were not included in the PTG Contract. Thus, PTG was directed to, among other things: (i) provide support for the Data Communication System contract, a separate contract for a critical component of the CBTC system; (ii) provide coordination with the Queens Boulevard West project with regard to software certification and completion of the Automatic Train Supervision database; (iii) provide support for the reconfiguration of the CBTC layout between West 8 th Street and Neptune Avenue to account for a safety related scope change; and (iv) provide review, analysis and coordination for a revised cutover plan necessitated by a change to the available work outages.
+### [p027_c0009] Extension of the Contract Duration
+[p027_c0010] The PTG Contract is currently scheduled to end on March 26, 2024. However, the Culver Line Project track work has been delayed and is currently planned to be completed in the fourth quarter of 2024. PTG’s engineering support is required through final acceptance testing of the CBTC equipment which cannot occur until the delayed track work is completed. Accordingly, this Modification will extend the PTG Contract by nine months to December 31, 2024.
+[p027_c0011] _Master Page # 27 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 28
+
+### [p028_c0001] Construction & Development
+### [p028_c0002] Page 2 of 2
+### [p028_c0003] Cost
+[p028_c0004] PTG's proposal for Modification No. 2 was submitted in the amount of $2,527,416. The C&D negotiation team conducted a detailed analysis of PTG's cost proposal and engaged in several scope clarification meetings with PTG, followed by negotiations resulting in the agreed upon amount of $2,278,418 for Modification No. 2 which was deemed to be fair and reasonable.
+[p028_c0005] _Master Page # 28 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 29
+
+### [p029_c0001] Staff Summary
+### [p029_c0002] Schedule K: Ratification of Completed Procurement Actions
+[p029_c0003] Item Number: 8-9
+[p029_c0004] Page 1 of 1
+[p029_c0005]
+
+```text
+Vendor Name (Location) Parsons Transportation Group of New York, Inc. (New York, New York) Contract Number W-32366 Mod. #s 59 & 115 Description 700/800 MHz Bus Radio System for New York City Transit Original Amount: $ 202,100,000 Contract Term (including Options, if any) March 2, 2016–January 2, 2021 Prior Modifications: $ 12,756,758 Option(s) included in Total Amount? Yes No n/a Prior Budgetary Increases: $ 0 Procurement Type Competitive Noncompetitive Current Amount: $ 214,856,758 Solicitation Type RFP Bid Other: Modification Modification No. 59 $ 1,550,000 Funding Source Operating Capital Federal Other: Modification No. 115 $ 4,900,000 Requesting Dept./Div., Dept./Div. Head Name: Delivery/Mark Roche This Request: $ 6,450,000 % of This Request to Current Amount: 3% % of Modifications (including This Request) to Original Amount: 9.5%
+```
+### [p029_c0006] Discussion:
+[p029_c0007] Contract W-32366 (the “Contract”) provides for the design, furnishing, and installation of a new land mobile digital Bus Radio System (“BRS”) servicing both the NYC Transit Department of Buses (“DOB”) and the MTA Bus Company (“MTABC”). MTA Construction and Development Company (“C&D”) requests that the Board ratify Modification Nos. 59 and 115 which, respectively, provide for (i) the design and construction of a new radio base station equipment shelter at the East New York (“ENY”) Train Yard and (ii) additional prototyping work associated with additional bus types identified since Contract award.
+### [p029_c0008] Modification No. 59
+[p029_c0009] The Contract requires the construction of numerous radio sites across the five boroughs of New York City and the City of Yonkers, as well as one site in New Jersey. The new radio base station at the ENY Yard was to utilize an existing equipment shelter and an existing tower for the new radio and microwave antennas. However, a study of the existing tower by the Contractor determined that the tower was not capable of supporting the additional load of the new BRS antennas. A new tower was constructed pursuant to Modification No. 12. Initially, it was believed that the existing equipment shelter could be used for equipment for the new tower, but it was subsequently determined that the existing shelter was not suitable. This Modification will provide for the design and construction of a new radio base station equipment shelter adjacent to the new tower to accommodate the new BRS electronic equipment. The Contractor submitted a proposal in the amount of $2,079,251. Negotiations resulted in agreement of a lump sum price of $1,550,000 which is considered fair and reasonable.
+### [p029_c0010] Modification No. 115
+[p029_c0011] The Contract identifies 14 bus types that are required to be prototyped by the Contractor for the installation of BRS equipment on NYCT’s and MTABC’s entire bus fleet. Since Contract award, it has been determined that there are variations within the bus types identified in the Contract that require separate prototyping. As a consequence, 18 additional bus types have been identified as requiring prototyping. However, three of the original 14 bus types identified in the Contract are no longer required to be prototyped. This Modification provides for the prototyping of the 18 additional bus types, consisting of survey, design and revised installation of BRS equipment including radio antenna mounting, equipment power feeds and cable routing, as well as manuals for each additional bus type. This Modification also contains a credit for the deletion of prototyping work that is no longer required for three bus types originally identified in the Contract. The Contractor submitted a proposal in the amount of $5,719,700. Negotiations resulted in agreement of a lump sum price of $4,900,000 which is considered fair and reasonable.
+[p029_c0012] The schedule impact of both modifications is the subject of ongoing discussions regarding overall project delays and will be addressed, if necessary, in a subsequent modification.
+[p029_c0013] _Master Page # 29 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 30
+
+### [p030_c0001] Staff Summary
+### [p030_c0002] Schedule K: Ratification of Completed Procurement Actions
+[p030_c0003] Items Numbers: 10-13
+[p030_c0004] Page 1 of 2
+[p030_c0005]
+
+```text
+Vendor Name (Location) Walsh Construction Company II, LLC (Little Falls, New Jersey) Description: Sandy Repair and Flood Mitigation at 207th Street Yard, Perimeter Wall, Portal, Signals, Track and Power Work, 8th Avenue Line (IND) Division in Manhattan Contract Term (including Options, if any) September 4, 2018 – November 4, 2023 Option(s) included in Total Amt? Yes No n/a Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Dept./Div., Dept./Div. Head Name: Delivery/Mark Roche
+```
+[p030_c0006]
+
+```text
+Contract Number C-34838 Mod. #s 105, 107, 132 & 142 Original Amount: $ 383,564,083 Prior Modifications: $ 12,229,384 Prior Budgetary Increases: $ 0.00 Current Amount: $ 395,739,467 Modification No. 105 $ 2,316,000 Modification No. 107 $ 1,925,000 Modification No. 132 $ 1,240,000 Modification No. 142 $ 1,439,000 This Request: $ 6,920,000 % of This Request to Current Amt.: 1.75% % of Modifications (including This Request) to Original Amount: 5%
+```
+### [p030_c0007] Discussion:
+[p030_c0008] Contract C34838 (the “Contract”) is for Sandy repairs and flood mitigation at the 207 th Street Yard (the “Yard”) in Manhattan. MTA Construction and Development Company (“C&D”) requests that the Board ratify retroactive Modification Nos. 105, 107, 132 and 142, which provide for the implementation of re-designed pile foundations and additional floodwall (Nos. 105 & 107) and the reconfiguration of new wayside equipment to comply with the Limiting Line of Line Equipment (“LLE”) train clearance envelope for tracks in the Yard (Nos. 132 & 142).
+### [p030_c0009] Modification No. 105
+[p030_c0010] The Contract requires the installation of a floodwall and deployable flood gate (Gate 3) at the 9th Avenue entrance to the Yard, which borders the Harlem River. The Contract originally provided for installing uncased concrete piles approximately 75ft below grade and pouring a pile cap foundation on top of the piles to support the flood gate. Post-award investigations by the Contractor revealed the existence of an old concrete foundation running beneath the 9th Avenue entrance into the Yard. This field condition, which was not known at the time of design, obstructs the drilling path for the concrete piles and precluded the use of uncased concrete piles. Modification No. 105 implements a redesigned/reconfigured pile cap foundation, including the elimination of three of sixteen contractually required piles and installation of thirteen cased piles that are larger in diameter and longer than originally designed. In addition, the Contract provided for the use of sandbags for erosion and flood control in the area immediately adjacent to the flood gate rather than the installation of a permanent floodwall. To provide a longer term, maintainable solution, this Modification also provides for an additional 16.5 feet of new reinforced concrete floodwall, in lieu of the contractually specified sandbags. The Contractor submitted a proposal in the amount $2,786,494.89. Negotiations resulted in agreement of a lump sum price of $2,316,000 which is considered fair and reasonable. In order to permit this work to proceed without delay, approval to direct the contractor to proceed with the work was received from the President of MTA C&D on June 2, 2021.
+### [p030_c0011] Modification No. 107
+[p030_c0012] The Contract requires the installation of a floodwall around the Con Edison Vault, located in the Yard along the Harlem River. The design for the floodwall required a pile cap foundation supported by 34 uncased deep foundation piles. After installing and grouting one of the piles, the Contractor observed that the level of the liquid grout pumped into the pile earlier that day had dropped significantly. The uncased drilled shaft for the pile was suspected to be leaking liquid grout into the surrounding soil. Subsequent borings and soil samples taken by the Contractor in the area determined that the pile design
+[p030_c0013] _Master Page # 30 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 31
+
+### [p031_c0001] MTA Construction & Development
+### [p031_c0002] Page 2 of 2
+[p031_c0003] provided in the Contract was not suitable for 20 of the 34 piles due to existing soil conditions. Modification No. 107 addresses this issue for 14 of the 20 piles by implementing a redesigned pile cap foundation that is suitable for the existing soil conditions, including the installation of fourteen cased foundation piles that are larger in diameter and longer than originally designed. The remaining six piles, that required a slightly different solution, will be addressed under a separate modification. The Contractor submitted a proposal in the amount of $2,217,260.29. Negotiations resulted in agreement of a lump sum price of $1,925,000 which is considered fair and reasonable. In order to permit this work to proceed without delay, approval to direct the contractor to proceed with the work was received from the President of MTA C&D on July 26, 2021.
+### [p031_c0004] Modification Nos. 132 and 142
+[p031_c0005] The Contract requires the installation of new wayside equipment on existing concrete foundations near tracks located at the Yard. Post-award investigations by the Contractor discovered numerous locations where planned installation of wayside equipment will encroach upon the LLLE train clearance envelope. The LLLE is the minimum clearance around a track required to safely move trains along the rails. Any material or equipment installed along the wayside must be located outside of the LLLE. These modifications address this issue by extending existing concrete foundations, shifting wayside equipment resting on the foundations away from tracks, including associated cabling and conduit, and reducing the height of several pull boxes. In order to permit this work to proceed without delay, approval to direct the contractor to proceed with the work of Modification 142 was received from the President of MTA C&D on June 1, 2022 and for the work of Modification 132, from the C&D Contracts and Delivery Business Unit Leads on December 7, 2021.
+[p031_c0006] Modification No. 132 addresses locations from Tracks 26 thru 41. The Contractor submitted a proposal in the amount $1,407,551.87. Negotiations resulted in agreement of a lump sum price of $1,240,000 which is considered fair and reasonable. Modification No. 142 addresses locations from Tracks 1 through 24. The Contractor submitted a proposal in the amount $1,912,119.15. Negotiations resulted in agreement of a lump sum price of $1,439,000 which is considered fair and reasonable.
+[p031_c0007] Modification Nos. 107, 132 and 142 appear to be the result of design errors or omissions. These issues are being reviewed by C&D and, if appropriate, will be addressed with the consultant designer of record.
+[p031_c0008] _Master Page # 31 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 32
+
+### [p032_c0001] Metro-North Railroad
+### [p032_c0002] Metro-North Railroad Procurements
+[p032_c0003] Christine Loo , Acting Assistant Deputy Chief Procurement Officer – MTA Office of the Chief Procurement Officer
+[p032_c0004] _Master Page # 32 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 33
+
+### [p033_c0001] Metro-North Railroad
+### [p033_c0002] PROCUREMENTS
+[p033_c0003] The Procurement Agenda this month includes 1 action for a proposed estimated expenditure of $78.8M.
+[p033_c0004] _Master Page # 33 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 34
+
+[p034_c0001]
+
+```text
+Subject Request for Authorization to Award Various Procurements Department MTA Procurement Department Head Name Lisette Camilo, Acting Department Head Signature Project Manager Name Joseph Reynolds Board Action Order To Date Approval Info Other 1 Committee 06/26/23 2 Board 06/27/23
+```
+[p034_c0002]
+
+```text
+June 21, 2023 Department Department Head Name Department Head Signature Internal Approvals Approval For C. Ringoldi Approval President VP & General Counsel
+```
+[p034_c0003]
+
+```text
+Internal Approvals (cont.) Order Approval Order Approval Order Approval Order Approval
+```
+### [p034_c0004] PURPOSE
+[p034_c0005] To obtain approval of the Board to award a modification to an existing contract, and to seek a recommendation from the Metro-North Committee of this procurement action.
+### [p034_c0006] DISCUSSION
+[p034_c0007] Metro-North proposes to award Noncompetitive procurements in the following categories: None
+[p034_c0008] Metro-North proposes to award Competitive procurements in the following categories:
+### [p034_c0009] Schedules Requiring Majority Vote:
+[p034_c0010]
+
+```text
+Schedule I: Modifications to Purchase and Public Works Contracts 1 $ 78.8 M SUBTOTAL 1 $ 78.8 M
+```
+[p034_c0011] Metro-North proposes to award Ratifications in the following categories: None
+[p034_c0012]
+
+```text
+TOTAL 1 $ 78.8 M
+```
+[p034_c0013] COMPETITIVE BIDDING REQUIREMENTS: The procurement actions in Schedules A, B, C, and D are subject to the competitive bidding requirements of PAL 1209 or 1265-a relating to contracts for the purchase of goods or public work. Procurement actions in the remaining Schedules are not subject to these requirements.
+[p034_c0014] BUDGET IMPACT: The purchases/contracts will result in obligating funds in the amounts listed. Funds are available in the current operating/capital budgets for this purpose.
+[p034_c0015] RECOMMENDATION: That the purchases/contracts be approved as proposed. (Items are included in the resolution of approval at the beginning of the Procurement Section.)
+[p034_c0016] _Master Page # 34 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 35
+
+### [p035_c0001] BOARD RESOLUTION
+[p035_c0002] WHEREAS , in accordance with Sections 1265-a and 1209 of the Public Authorities Law and the All-Agency General Contract Procurement Guidelines, the Board authorizes the award of certain noncompetitive purchase and public work contracts, and the solicitation and award of requests for proposals regarding purchase and public work contracts; and
+[p035_c0003] WHEREAS , in accordance with the All-Agency Service Contract Procurement Guidelines and General Contract Procurement Guidelines the Board authorizes the award of certain noncompetitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts, and
+[p035_c0004] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Service Contract Procurement Guidelines, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p035_c0005] NOW, the Board resolves as follows:
+[p035_c0006] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract.
+[p035_c0007] 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals, and authorizes the solicitation of such proposals.
+[p035_c0008] 3. As to each request for proposals (for purchase and public work contracts) set forth in Schedule C for which a recommendation is made to award the contract, the Board authorizes the execution of said contract.
+[p035_c0009] 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein and ratifies each action for which ratification is requested.
+[p035_c0010] 5. The Board authorizes the execution of each of the following for which Board authorization is required: (i) the miscellaneous procurement contracts set forth in Schedule E; (ii) the personal service contracts set forth in Schedule F; (iii) the miscellaneous service contracts set forth in Schedule G; (iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; (v) the contract modifications to purchase and public work contracts set forth in Schedule I; and (vi) the modifications to miscellaneous procurement contracts set forth in Schedule J.
+[p035_c0011] 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p035_c0012] _Master Page # 35 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 36
+
+### [p036_c0001] Metro-North Railroad
+[p036_c0002] JUNE 2023
+### [p036_c0003] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p036_c0004] Procurements Requiring Majority Vote:
+### [p036_c0005] I. Modifications to Purchase and Public Work Contracts
+[p036_c0006] (Staff Summaries required for items estimated to be greater than $1,000,000.)
+- [p036_c0007] 2. Siemens Mobility, Inc. Seven years Contract# 244941 $78,828,018 Staff Summary Attached Exercise of an Option for the design, manufacturing, testing, and delivery of six dual-mode locomotives and related equipment for the Connecticut Department of Transportation.
+[p036_c0008] _Master Page # 36 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 37
+
+### [p037_c0001] Schedule I: Modifications to Purchase and Public Work Contracts
+### [p037_c0002] Item Number:
+[p037_c0003]
+
+```text
+Vendor Name (Location) Siemens Mobility, Inc. (Sacramento, California) Description Design, Manufacture, Test, and Delivery of New Dual-Mode Locomotives – Option Election Contract Term (including Options, if any) February 2021–February 2028 Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: CDOT Requesting Department: Maintenance of Equipment, Joseph E. Reynolds
+```
+[p037_c0004]
+
+```text
+Contract Number 244941 AWO/Mod. # 7 Original Amount: $ 252,768,764 Prior Modifications: $ 82,770,284 Prior Budgetary Increases: $ 0 Current Amount: $ 335,539,048 This Request: $ 78,828,018 % of This Request to Current Amount: 23.49% % of Modifications (including This Request) to Original Amount: 63.93%
+```
+### [p037_c0005] Discussion:
+[p037_c0006] Metro-North Railroad (“Metro-North”), on behalf of the Connecticut Department of Transportation (“CDOT”), requests Board approval to exercise an option to a contract with Siemens Mobility, Inc. (“Siemens”) in the amount of $78,828,018 for the design, manufacturing, testing, and delivery of six dual-mode locomotives and related equipment (“CDOT Option”). The Option is fully funded by CDOT.
+[p037_c0007] The base contract, resulting from a competitive Request for Proposal (“RFP”) and approved by the Board in December 2020, is for the purchase of 19 dual-mode locomotives, as well as related equipment, and includes options for additional locomotives, including (1) up to 40 locomotives for Metro-North; (2) up to 20 locomotives in an alternate configuration for CDOT; (3) up to 66 locomotives in an alternate configuration for Long Island Rail Road; and (4) up to 26 locomotives in an alternate configuration for the New York State Department of Transportation. Immediately after award, Metro-North exercised its first option for eight additional dual-mode locomotives (“Option 1”), which was also approved by the December 2020 Board. Siemens is scheduled to complete delivery of the 27 locomotives (19 under the base contract and eight under Option 1) in the first quarter of 2027.
+[p037_c0008] The six dual-mode locomotives under this CDOT Option will replace the CDOT locomotives that are beyond their 25-year service life. Based on the current contract schedule and continuous production, the delivery of the six dual-mode locomotives is scheduled to begin in the second quarter of 2027 and be completed in the fall of 2027 for an overall delivery period of 78 months from Notice of Award.
+[p037_c0009] Throughout the course of this contract, modifications were made, which in some instances impacted the cost of the option locomotives. The price for this modification is for the locomotives only and does not include spare parts, etc.
+[p037_c0010] The price for the CDOT Option locomotives, established at the time of award, is subject to a price adjustment based on a formula that incorporates a number of price indices. Negotiations were conducted to potentially minimize the impact of projected escalation. Ultimately, a fixed price of $78,828,018 was agreed upon, contingent upon award of the CDOT Option by July 31, 2023. The agreed-to fixed price is based on a review of historical and projected escalation in consultation with the Cost Price Analysis group as well as a review of projections provided by the MTA’s financial consultant. This approach provides a favorable price, price certainty, and a potential savings of between $3 million and $7 million as compared to the projection of the escalated pricing.
+[p037_c0011] Siemens has the experience, technical capability, resources, and facilities to perform the work required. The Controller’s Office found that there is reasonable assurance Siemens can perform the work under this option.
+[p037_c0012] This contract has been evaluated to determine the necessity and appropriate scope, if any, of cybersecurity requirements, including any requirements under federal, state, and local law and regulations. Any applicable cybersecurity requirements, to the extent required, have been included in the contract terms and conditions.
+[p037_c0013] Siemens has certified that pursuant to EO 16, it is not doing business in Russia.
+### [p037_c0014] MBE/WBE/TVM
+[p037_c0015] Because the base contract is FTA funded, federal terms and conditions apply. Therefore, the FTA Transit Vehicle Manufacturer program applies. Siemens complies with this FTA program.
+### [p037_c0016] Impact on Funding
+[p037_c0017] This option will be fully funded by CDOT.
+[p037_c0018] _6/20/2023_
+[p037_c0019] _Master Page # 37 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 38
+
+### [p038_c0001] Staff Summary
+### [p038_c0002] Page 1 of 1
+[p038_c0003]
+
+```text
+Subject 2023 State PWEF Assessment Department Chief Financial Officer Department Head Name Kevin Willens Department Head Signature Project Manager Name David E. Keller
+```
+[p038_c0004]
+
+```text
+Date June 27, 2023 Vendor Name Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p038_c0005]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Comm. 6/26 X 2 Board 6/27 X
+```
+[p038_c0006]
+
+```text
+Internal Approvals Order Approval Order Approval 2 Legal 3 Chief of Staff 1 Chief Financial Officer
+```
+[p038_c0007] Purpose: To authorize actions relating to the payment of the State assessment on the MTA and its constituent agencies for the Public Work Enforcement Fund for calendar 2023.
+[p038_c0008] Discussion: Chapter 511 of the Laws of 1995, as amended, requires State agencies and authorities to pay to the State Comptroller an assessment based upon 1/10 of 1% of the value of public work (construction) contracts entered into (excluding rolling stock contracts). The assessments are deposited in the State Public Work Enforcement Fund to reimburse the State Department of Labor for its costs in enforcing the State's prevailing-wage law. The State and the MTA have entered into a simple annual estimate-and-settlement procedure agreement. Payments are made each year based upon the estimated amount of public works contracts and are adjusted to reflect the actual experience from the prior year. The 2023 payment, therefore, is based upon a 2023 estimate and an adjustment for 2022.
+[p038_c0009] Based on the actual average spending rates, it is assumed that in calendar year 2023, MTA's constituent agencies are projected to let $5.192 billion worth of construction and design-build contracts.
+[p038_c0010] In 2022, the estimated 2022 assessment of $3,661,083 was less than the actual assessment of $6,171,365 by $2,510,282. This underpayment, when added to the estimated 2023 assessment of $5,192,127 requires a total payment of $7,702,409.
+[p038_c0011] Financial Implications: The 2023 MTAHQ Budget contains sufficient funds for this payment.
+[p038_c0012] Recommendation: The Board should authorize staff to remit the 2023 assessment, including the adjustment for the 2022 underpayment, to the State Department of Labor.
+[p038_c0013] _Master Page # 38 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 39
+
+> [p039_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p039_c0002] MTA Headquarters Procurements
+[p039_c0003] Lisette Camilo , Chief Administrative Officer/Interim Chief Procurement Officer
+[p039_c0004] _Master Page # 39 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 40
+
+### [p040_c0001] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle containing the white letters "MTA", followed by the text "Metropolitan Transportation Authority" in a black, sans-serif font.
+### [p040_c0002] PROCUREMENTS
+[p040_c0003] The Procurement Agenda this month includes 1 action for a proposed estimated expenditure of $17.6M.
+[p040_c0004] _Master Page # 40 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 41
+
+[p041_c0001]
+
+```text
+Subject Request for Authorization to Award Various Procurements Department MTA Procurement Department Head Name Lisette Camilo Department Head Signature Project Manager Name Rose Davis Board Action Order To Date Approval Info Other 1 Committee 06/26/23 2 Board 06/27/23
+```
+[p041_c0002]
+
+```text
+June 23, 2023 Department Department Head Name Department Head Signature Internal Approvals Approval CAO Legal CFO
+```
+[p041_c0003]
+
+```text
+Internal Approvals (cont.) Order Approval Order Approval Order Approval Order Approval
+```
+### [p041_c0004] PURPOSE
+[p041_c0005] To obtain approval of the Board to award various contracts and purchase orders, and to inform the MTA Headquarters Committee of these procurement actions.
+### [p041_c0006] DISCUSSION
+[p041_c0007] MTA Headquarters proposes to award Noncompetitive procurements in the following categories: None
+[p041_c0008] MTA Headquarters proposes to award Competitive procurements in the following categories:
+### [p041_c0009] Schedules Requiring Majority Vote:
+[p041_c0010]
+
+```text
+Schedule H: Modifications to Personal/Miscellaneous Service Contracts 1 $ 17.6 M SUBTOTAL 1 $ 17.6 M
+```
+[p041_c0011] MTA Headquarters proposes to award Ratifications in the following categories: None
+[p041_c0012]
+
+```text
+TOTAL 1 $ 17.6 M
+```
+[p041_c0013] COMPETITIVE BIDDING REQUIREMENTS: The procurement actions in Schedules A, B, C, and D are subject to the competitive bidding requirements of PAL 1209 or 1265-a relating to contracts for the purchase of goods or public work. Procurement actions in the remaining Schedules are not subject to these requirements.
+[p041_c0014] BUDGET IMPACT: The purchases/contracts will result in obligating funds in the amounts listed. Funds are available in the current operating/capital budgets for this purpose.
+[p041_c0015] RECOMMENDATION: That the purchases/contracts be approved as proposed. (Items are included in the resolution of approval at the beginning of the Procurement Section.)
+[p041_c0016] _Master Page # 41 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 42
+
+### [p042_c0001] BOARD RESOLUTION
+[p042_c0002] WHEREAS , in accordance with Sections 1265-a and 1209 of the Public Authorities Law and the All-Agency General Contract Procurement Guidelines, the Board authorizes the award of certain noncompetitive purchase and public work contracts, and the solicitation and award of requests for proposals regarding purchase and public work contracts; and
+[p042_c0003] WHEREAS , in accordance with the All-Agency Service Contract Procurement Guidelines and General Contract Procurement Guidelines the Board authorizes the award of certain noncompetitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts, and
+[p042_c0004] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Service Contract Procurement Guidelines, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p042_c0005] NOW, the Board resolves as follows:
+[p042_c0006] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract.
+[p042_c0007] 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals, and authorizes the solicitation of such proposals.
+[p042_c0008] 3. As to each request for proposals (for purchase and public work contracts) set forth in Schedule C for which a recommendation is made to award the contract, the Board authorizes the execution of said contract.
+[p042_c0009] 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein and ratifies each action for which ratification is requested.
+[p042_c0010] 5. The Board authorizes the execution of each of the following for which Board authorization is required: (i) the miscellaneous procurement contracts set forth in Schedule E; (ii) the personal service contracts set forth in Schedule F; (iii) the miscellaneous service contracts set forth in Schedule G; (iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; (v) the contract modifications to purchase and public work contracts set forth in Schedule I; and (vi) the modifications to miscellaneous procurement contracts set forth in Schedule J.
+[p042_c0011] 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p042_c0012] _Master Page # 42 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 43
+
+### [p043_c0001] Metropolitan Transportation Authority
+[p043_c0002] JUNE 2023
+### [p043_c0003] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p043_c0004] Procurements Requiring Majority Vote:
+### [p043_c0005] H. Modifications to Personal Service Contracts and Miscellaneous Service Contracts Awarded as Contracts for Services (Staff Summaries required for items estimated to be greater than $1,000,000.)
+[p043_c0006] Cubic Transportation Systems, Inc. $17,619,309 Staff Summary Attached Nine Years, 7 months Contract# 11043-0200 AWO 8 Modification to extend the contract to provide in-depot maintenance services for the BusCIS Hardware Subsystem and add additional services for four years.
+[p043_c0007] _Master Page # 43 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 44
+
+### [p044_c0001] Schedule H: Modifications to Personal Service & Miscellaneous Service Contracts
+### [p044_c0002] Item Number: 1
+[p044_c0003]
+
+```text
+Vendor Name (Location) Cubic Transportation Systems, Inc. (New York, New York) Description: Bus Customer Information System Hardware Subsystems (BHS) In-Depot Warranty and Maintenance Services Contract Term (including Options, if any) February 19, 2013–July 31, 2023 Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Department: Department of Buses, Sunil Nair
+```
+[p044_c0004]
+
+```text
+Contract Number 11043-0200 AWO/Mod. # 8 Original Amount: $ 26,930,747 Prior Modifications: $ 23,918,401 Current Amount: $ 50,849,147 This Request: $ 17,619,309 % of This Request to Current Amount: 35% % of Modifications (including This Request) to Original Amount: 154%
+```
+### [p044_c0005] Discussion:
+[p044_c0006] MTA Headquarters is seeking Board approval to extend a competitively solicited miscellaneous service contract with Cubic Transportation Systems, Inc. (“Cubic”) to provide in-depot maintenance services for the BusCIS Hardware Subsystem (“BHS”) for four years (two years plus two 1-year options, August 1, 2023–July 31, 2027) for the estimated amount of $17,619,309.
+[p044_c0007] The BHS, located onboard the buses, is the hardware portion of the MTA’s vehicle location system that provides real-time bus locations critical to many bus information systems including Bus Time, Bus Trek, Fleetview, Transit Signal Priority, Digital Signs, Automatic Passenger Counting, and fleet performance analysis by Operations Planning. The BHS must therefore be diligently maintained to support these systems.
+[p044_c0008] In July 2011, the MTA Board approved a competitively negotiated contract to design, deliver, and install BHS units on all MTA buses (today, more than 5,800). Two firms, Verifone Systems Inc. (“Verifone”) and Cubic, were selected to design, furnish, install, and service their distinct BHS designs for approximately one-third and two-thirds of the fleet, respectively. The MTA did not renew its service agreement with Verifone. Instead, in January 2019, the MTA obtained Board approval to modify Cubic’s contract to have Cubic maintain all BHS units, including VeriFone’s, and to add funds to extend these services through July 31, 2023. Cubic is the sole manufacturer of spare parts for its BHS units in need of repair or replacement. However, since 2019, new buses are delivered with the BHS+, an in-house designed unit manufactured by OnLogic Corp. Cubic handles on-bus replacement and product return for the BHS+, but the BHS+ does not rely on Cubic for parts. The MTA recently engaged Sintrones Technology Corp. (“Sintrones”) as a new competing BHS+ manufacturer, which Cubic will also maintain.
+[p044_c0009] In February 2019, the BHS was implemented as support for the One Metro New York (“OMNY”) Project to transmit fare payment data to OMNY’s backend servers. OMNY has more stringent availability needs than BusCIS, therefore the DoB has requested additional services beginning with this period of performance.
+[p044_c0010] This $17.6 million modification will provide:
+- [p044_c0011] 1. Continuous in-depot maintenance services of BHS plus decommissioning of retiring buses as requested by the MTA for up to four additional years (the prior scope), plus the additional services below. 2. Validation and integration of a BHS+ manufactured by Sintrones. 3. Diagnostic onboard holistic network health check. 4. Return Merchandising Agreement handling for OMNY-dedicated modems. 5. Improved service level agreement response time from 48 to 24 hours to support OMNY requirements.
+[p044_c0012] Currently, the MTA relies on Cubic as the sole supplier of BHS spare parts for almost 5,000 of its 5,800+ bus fleet. However, as new buses are being delivered with the upgraded BHS+ units, older buses are being decommissioned, reducing this reliance going forward.
+[p044_c0013] _Master Page # 44 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 45
+
+### [p045_c0001] Metropolitan Transportation Authority
+### [p045_c0002] Schedule H: Modifications to Personal Service & Miscellaneous Service Contracts
+[p045_c0003] The first two years of this extension will allow the MTA time to develop a longer-term strategy for a competitive procurement.
+[p045_c0004] Cubic has agreed to continue offering the same labor rates as negotiated in the prior modification established in 2019. The total cost for this four-year extension is estimated at $18,152,947. However, Cubic has provided a reduction of $533,638, which yields a total estimate of $17,619,309 for the four-year period. Procurement finds the price to be fair and reasonable.
+[p045_c0005] Cubic has certified that pursuant to EO 16, it is not doing business in Russia.
+[p045_c0006] The contract is being evaluated to determine the necessity and scope for applicable cybersecurity requirements, including any requirements under federal, state, and local law and regulations. The Authority is working with the contractor to negotiate the applicable cybersecurity requirements, which shall be included prior to issuance of the extension.
+### [p045_c0007] Impact on Funding
+[p045_c0008] This extension is funded by NYC Transit and MTA Bus Company operating funds.
+[p045_c0009] _Master Page # 45 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 46
+
+### [p046_c0001] JUNE 2023 MTA REAL ESTATE AGENDA ITEMS FOR BOARD APPROVAL
+### [p046_c0002] METROPOLITAN TRANSPORTATION AUTHORITY
+[p046_c0003] Lease amendment with Premium Brands OPCO LLC for retail space at 2 Broadway,
+[p046_c0004] Amendment to the agreement with BP 347 Madison Developer LLC
+[p046_c0005] Modification to the Madison Avenue development agreement with Boston Properties
+[p046_c0006] Agreements with Amtrak to permit the construction of its Hudson Tunnel Concrete Casing under the LIRR Western Rail Yard, New York, NY
+### [p046_c0007] MTA METRO-NORTH RAILROAD
+[p046_c0008] Sale of development rights at 180 East 135 th Street, Port Morris, Bronx, NY
+[p046_c0009] _Master Page # 46 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 47
+
+### [p047_c0001] Staff Summary
+### [p047_c0002] Metropolitan Transportation Authority
+### [p047_c0003] Page 1 of 1
+[p047_c0004]
+
+```text
+Subject LEASE AMENDMENT WITH PREMIUM BRANDS OPCO LLC FOR RETAIL SPACE AT 2 BROADWAY, NEW YORK, NEW YORK Department REAL ESTATE Department Head Name DAVID FLORIO Department Head Signature Project Manager Name JASON ORTIZ
+```
+[p047_c0005]
+
+```text
+Date JUNE 27, 2023 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p047_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 06/26/23 X 2 Board 06/27/23 X
+```
+[p047_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Administrative Officer 3 Chief Financial Officer
+```
+[p047_c0008] AGENCY: Metropolitan Transportation Authority ("MTA") LESSEE: Premium Brands OPCO LLC LOCATION: 2 Broadway, New York, New York ACTIVITY: Continued operation of an Ann Taylor Loft retail store ACTION REQUESTED: Authorization to enter into a lease amendment SPACE: 6,310± square feet; Retail Space B RENT: $360,000.00 per annum for the additional first lease year, with three percent (3%) per annum increases compounded annually for the remainder of the additional five (5) year lease term COMMENTS:
+[p047_c0009] MTA Real Estate issued a Request for Proposals ("RFP") dated January 11, 2023, covering three (3) street level retail units at 2 Broadway in Manhattan. One of the retail units ("Retail Space B"), is currently operated by Ann Taylor Loft who has been a tenant since 12/15/2001. The only proposal received for Retail Space B was from Premium Brands Opco LLC who is the parent company of Ann Taylor Loft. Premium Brands Opco LLC is proposing to continue operating at Retail Space B as an Ann Taylor Loft retail store for an additional five (5) year lease term at an annual rental compensation of $360,000 for the additional first lease year, with three percent (3%) per annum increases compounded annually for the remainder of the additional five-year lease term.
+[p047_c0010] The proposed rental compensation being offered by Premium Brands Opco LLC falls below the rental compensation, as determined by an independent appraisal, however the proposed rental compensation being offered by Premium Brands Opco LLC represents a 51% increase over the existing rent currently being paid by Premium Brands Opco LLC. In light of the foregoing, and taking into consideration the existing retail market conditions, that no other bidders submitted a proposal, that no concessions have been offered by the MTA, that no lost revenue was had by the MTA in any downtime, and also taking into consideration that Premium Brands Opco LLC is a current tenant in good standing with uninterrupted rental payments, it was determined that MTA Real Estate should proceed with Premium Brands Opco LLC's proposal.
+[p047_c0011] Based on the foregoing, MTA Real Estate is requesting authorization to enter into a lease amendment with Premium Brands Opco LLC for the continued operation of an Ann Taylor Loft retail store located in Retail Space B.
+[p047_c0012] _Master Page # 47 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 48
+
+### [p048_c0001] Staff Summary
+[p048_c0002]
+
+```text
+Subject AMENDMENT TO THE AGREEMENT WITH BP 347 MADISON ASSOCIATES LLC Department TRANSIT-ORIENTED DEVELOPMENT Department Head Name ROBERT PALEY Department Head Signature Project Manager Name HELENE CINQUE
+```
+[p048_c0003]
+
+```text
+Date JUNE 27, 2023 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p048_c0004]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 06/26/23 X 2 Board 06/27/23 X
+```
+[p048_c0005]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p048_c0006] AGENCY: Metropolitan Transportation Authority (“MTA”) PERMITTEE: BP 347 Madison Associates, LLC (“Project Manager”), an affiliate of Boston Properties (“BXP”) LOCATION: 341, 345, and 347 Madison Avenue, New York, New York (the “MTA Property” and the buildings thereon, the “Buildings”) ACTIVITY: Amendment to project management agreement with BXP/Project Manager to include additional work related to the settlement of a dispute with the adjacent owner of property located at 52 Vanderbilt (“52 Vanderbilt Owner”) and related settlement work and construction access license agreements with 52 Vanderbilt Owner ACTION REQUESTED: Approval of terms and authorization to enter into amendment to project management agreement for the demolition of the Buildings on the terms described below. COMMENTS:
+[p048_c0007] MTA engaged BXP to manage the demolition of the Buildings that had previously served as the MTA Headquarters pursuant to a project management agreement dated November 1, 2019, as amended and restated as of May 3, 2021 (as amended and restated, the “Project Management Agreement”) (see January 2021 and November 2018 staff summaries, attached).
+[p048_c0008] The completion of the demolition has been delayed by a dispute with 52 Vanderbilt Owner over its rights to continue to occupy and use portions of the MTA Property for a rerouted freight corridor (including utilities) serving 52 Vanderbilt and a shared stair. The shared stair and rerouted freight corridor were constructed by the former owner/ground lessee of 347 Madison pursuant to a 1927 agreement that had been entered into between the then owners/ground lessees of the buildings located at 347 Madison and 52 Vanderbilt and established the shared, reciprocal access rights of the parties and their successors.
+[p048_c0009] MTA and 52 Vanderbilt Owner have reached agreement on the terms for the termination of the 1927 agreement of record (which is a closing condition to the overall redevelopment of the site with BXP and necessary to clear title to the MTA Property) and the scope of the additional work (the “Settlement Work”) that will need to be performed by MTA at its cost in order to restore the 52 Vanderbilt property to a self-contained condition as contemplated by the 1927 agreement, with a freight corridor, utilities and a new stairway providing ingress and egress between the basement and street levels of the
+[p048_c0010] _Master Page # 48 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 49
+
+### [p049_c0001] Staff Summary
+### [p049_c0002] Metropolitan Transportation Authority
+### [p049_c0003] Page 2 of 5
+[p049_c0004] 52 Vanderbilt building all being situated within the 52VB Building. In addition, the settlement includes the granting by 52 Vanderbilt Owner of necessary construction access license agreements for access and temporary protections on the 52 Vanderbilt property that will be necessary in connection with the redevelopment of the site to enable the further demolition and construction and redevelopment of the site to proceed, and that are also conditions to the closing of the overall ground lease redevelopment. Upon completion of the Settlement Work to a point where the freight corridor area within the MTA Property is no longer providing any purpose and 52 Vanderbilt Owner has legal and beneficial use of the relocated freight corridor, utilities and related improvements, 52 Vanderbilt Owner will surrender possession of the portion of the freight corridor within the MTA Property and the demolition work on the MTA Property will be able to continue to completion.
+[p049_c0005] The budgeted cost for the Settlement Work necessary to complete the demolition and permit the overall redevelopment of the MTA Property is estimated to be 12 million dollars. Because BXP/Project Manager is keenly familiar with the project site, having already been engaged by MTA to serve as the project manager on behalf of MTA for the demolition of the Buildings, MTA seeks approval to amend the Project Management Agreement to utilize BXP for an expanded scope of project services under the Project Management Agreement pertaining to all of the additional work to be performed in settlement and resolution of the dispute with 52 Vanderbilt Owner. The Project Management Agreement provides for all trades to be bid pursuant to MTA guidelines and participation and will continue to require that in connection with the additional work that is the subject of this Board action item.
+[p049_c0006] In addition to the direct and indirect costs associated with the Settlement Work, the resolution of this dispute with 52 Vanderbilt Owner has imposed a protracted delay on the ability to complete the demolition of the Buildings, which delay has increased the overall cost of the demolition of the Buildings to an aggregate amount (inclusive of the Settlement Work) so that the budget for the demolition is now estimated to be $50 million and has extended the projected completion date for the demolition of the Buildings to second quarter 2024. Although BXP will remain obligated in the redevelopment ground lease to reimburse MTA for the costs related to the demolition of the Buildings, it will not be obligated to reimburse MTA for the incremental costs for the demolition attributable to the delays caused by the settlement of the dispute or for the reimbursement of the Settlement Work costs, other than for $2.35 million that BXP has agreed to contribute towards that cost under the agreement to enter into the ground lease for the ground lease redevelopment of the MTA Property.
+[p049_c0007] The increased costs for the demolition of the Buildings (including the completion of the Settlement Work) will be paid for out of the existing capital project under category N811 of the MTA Interagency section of the 2020-2024 Capital Program, subject to Board approval of an increase in that Capital Program which is being sought be separate staff summary being presented to the Board concurrently, and to affirmation by the Public Authorities Control Board.
+[p049_c0008] Based on the foregoing, TOD requests Board authorization for MTA to amend the project management agreement with BXP/Project Manager to include additional scope of work that is required in order for the demolition of the Buildings to be completed, on the material terms set forth above and such other terms and conditions as the Chair and Chief Executive Officer of the MTA, the Chief Development Officer of MTA and/or the Senior Director, Transit Oriented Development of MTA, or a designee of any of the foregoing officers, deems necessary or appropriate, and to enter into such other documents and instruments and take all other actions as shall be necessary or desirable consistent with the foregoing for the completion of the work associated with resolution of the dispute with 52 Vanderbilt Owner and the demolition of the Buildings.
+### [p049_c0009] Attachments:
+[p049_c0010] Staff Summary dated November 2018
+[p049_c0011] Staff Summary Update dated January 2021
+[p049_c0012] _Master Page # 49 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 50
+
+### [p050_c0001] Staff Summary
+[p050_c0002] Metropolitan Transportation Authority
+[p050_c0003] Page 1 of 1
+[p050_c0004]
+
+```text
+Subject UPDATE TO AGREEMENT WITH BP 347 MADISON ASSOCIATES Department REAL ESTATE Department Head Name JOHN N. LIEBER Department Head Signature Project Manager Name ROBERT PALEY and DAVID FLORIO
+```
+[p050_c0005]
+
+```text
+Date JANUARY 21, 2021 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p050_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 1/21/2021 X
+```
+[p050_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p050_c0008] AGENCY: Metropolitan Transportation Authority ("MTA") PERMITTEE: BP 347 Madison Associates, LLC, d/b/a Boston Properties ("BP") LOCATION: 341, 345, 347 Madison Avenue, New York, New York (the "Buildings") ACTIVITY: Update of agreement to facilitate demolition of the Buildings
+### [p050_c0009] COMMENTS:
+[p050_c0010] MTA engaged BP to demolish the former MTA Headquarters Buildings prior to redevelopment due to the deterioration of the vacated Buildings, life safety considerations arising from the deteriorated Buildings and the prohibitive costs to repair and maintain the Buildings. The Board authorized entering into a single source personal services contract with BP, MTA's designated developer for 347 Madison to manage the demolition with all trade contracts being bid pursuant to MTA guidelines and participation. (See November 2018, staff summary, attached.) After closing of the redevelopment ground lease, BP would reimburse MTA for the full cost of the demolition. The initial budget estimate at that time was $25 million with demolition anticipated to be completed in 2020.
+[p050_c0011] After a thorough demolition design and bidding process (including extensive testing and evaluation of abatement requirements) the final budget is now set at $34 million. BP will remain obligated in the redevelopment ground lease to reimburse MTA for all costs related to the demolition of the Buildings. The revised schedule projects that demolition should be completed in the 2 nd quarter of 2022.
+[p050_c0012] _Master Page # 130 of 133 - Finance Committee Meeting 1/21/2021_
+[p050_c0013] _Master Page # 50 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 51
+
+### [p051_c0001] Staff Summary
+### [p051_c0002] Page 1 of 2
+[p051_c0003]
+
+```text
+Subject AGREEMENT WITH BP 347 ASSOCIATES, LLC Department REAL ESTATE Department Head Name JOHN N. LIEBER Department Head Signature [Signature] Project Manager Name ROBERT PALEY & DAVID FLORIO
+```
+[p051_c0004]
+
+```text
+Date NOVEMBER 13, 2018 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p051_c0005]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 11/13/18 X 2 Board 11/15/18 X
+```
+[p051_c0006]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal TG 2 Chief Development Officer BM 3 Chief Financial Officer BM 4 Chief of Staff NF
+```
+[p051_c0007] AGENCY: Metropolitan Transportation Authority ("MTA") PERMITTEE: BP 347 Madison Associates, LLC, d/b/a Boston Properties ("BP") LOCATION: 341, 345, 347 Madison Avenue, New York, New York (the "Buildings") ACTIVITY: Entry into a single source procurement of qualified personal service contractor to oversee demolition activities for the Buildings. ACTION REQUESTED: Approval for a single source procurement and creation of a new capital project in the 2015-2019 Capital Program to allow for access to and demolition of the Buildings. TERM: Eighteen (18) months COMPENSATION: Not to exceed $1,000,000 plus a direct pass-through of actual cost of demolition of the Buildings based upon competitively bid contracts for the work, will be paid out of MTA Capital Budget.
+### [p051_c0008] COMMENTS:
+[p051_c0009] The redevelopment of the former MTA Headquarters Buildings on Madison Avenue was anticipated to be undertaken shortly after the MTA relocated its headquarters to 2 Broadway in late 2014. BP, the designated developer selected through a 2013 Request For Proposals ("RFP"), was to have demolished the Buildings at its cost immediately after securing approval by the City and MTA of the redevelopment project for the Buildings (the "Project") and executing a long-term triple net ground lease with the MTA (the "Ground Lease") as contemplated by the 2013 RFP. However, the Project has been delayed, and the Buildings, already in substandard condition at that time, are now substantially vacant and have continued to deteriorate due to deferred maintenance as cost savings initiatives. In addition, the Buildings may soon be in non-compliance with updated life-safety codes, which will go into effect in June 2019.
+[p051_c0010] Concern about the safety and cost of maintaining the largely vacant Buildings prompted MTA Real Estate to have them evaluated in the summer of 2018 by Syaka Hennessy Group, Inc. Syaka's Property Conditions Assessment Report outlines work required to make the Buildings safe for the immediate future and to meet code and life safety requirements. Syaka estimated the cost of the work required to address "Priority One Deficiencies" which include facade repairs, sprinkler system installation and life safety updates at approximately $30 Million. These improvements must be completed by mid-2019. Priority Two work totaling $7.7 million must be completed by 2020. MTA Real estate has determined that these costs make the Buildings, which, even if brought to code and life safety standards, substandard as office space, and unmarketable in the foreseeable future.
+[p051_c0011] _Master Page # 131 of 133 - Finance Committee Meeting 1/21/2021_
+[p051_c0012] _Master Page # 51 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 52
+
+### [p052_c0001] Staff Summary
+> [p052_c0002] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a circular emblem with the letters 'MTA' inside, followed by the full name 'Metropolitan Transportation Authority' in a serif font.
+[p052_c0003] Page 2 of 2
+### [p052_c0004] FINANCE COMMITTEE MEETING AGREEMENT WITH BP 347 ASSOCIATES, LLC
+[p052_c0005] The estimated demolition cost of $25 Million is less than the investment required to make the Buildings code compliant in the immediate future and significantly less than the cost of continuing to maintain them over even a modest period of time. The most prudent path, for both public safety and fiscal responsibility, is to demolish the Buildings as quickly as possible.
+[p052_c0006] The MTA has no expertise overseeing a demolition project of this size. Under the proposed arrangement, BP, under a personal services contract would act as a construction manager, hire all professionals required (i.e. architects, engineers, expeditors etc.), to produce a demolition documentation package and bid out that package pursuant to MTA guidelines to a qualified general contractor, who will manage the demolition and bid out to all subcontractors.
+[p052_c0007] The benefits to the MTA contemplated in the Ground Lease would be preserved to the greatest extent possible. Upon closing of the Ground Lease for the Project, BP will reimburse the MTA for all costs related to the demolition. This proposed arrangement aligns BP's and the MTA's interests in keeping costs as low as possible since the ultimate responsibility for costs will rest with BP if the Project and Ground Lease move forward. If the Project is not ultimately approved by the City and MTA, the demolition of the Buildings will still relieve MTA of the approximately $37 Million in repair costs it would otherwise be required to invest to maintain the buildings.
+[p052_c0008] Upon approval of the work contemplated hereunder, BP would undertake an approximately six-month design and permitting process and bid the trade contracts with an anticipated start date for demolition in Q2 2019 with completion of demolition anticipated for Q2 2020.
+[p052_c0009] Although BP, as a redeveloper, would normally not initiate demolition until after the completion of all public approvals related to the Project (2020 at the earliest), segmenting the demolition from the balance of the redevelopment project through a contract with BP independent of the Ground Lease would preserve the benefits to the MTA anticipated for the Project. This will ensure that 1) the demolition of deteriorating and non-compliant Buildings is timely and efficient, 2) the demolition is undertaken in a manner that leaves the site in a condition that would provide BP a seamless transition to its Project, 3) the demolition will provide the MTA the assurance that it is getting the best pricing since it will ultimately be BP's cost if and when the Project proceeds and 4) the MTA is relieved of the burden of overseeing a demolition project, which it is not properly staffed to handle.
+[p052_c0010] The design of the demolition is particularly important with respect to an East Side Access ("ESA") entrance, which is to be included as part of the Project. The design of the foundation removal, required underpinning, and utility removal will ensure that BP coordinates demolition with the future planned construction that includes an ESA entrance. For this reason, BP will retain the same architecture, engineering and geotechnical consultants for the demolition as it would for the Project.
+[p052_c0011] Segmenting the demolition from the Project is permissible under these circumstances since the Project has been delayed and the Buildings, already in substandard condition, continue to deteriorate and will soon be out of compliance with updated life-safety codes. An Environmental Assessment has been performed in accordance with Article 8 of the New York State Environmental Conservation Law, and the demolition will not result in any significant adverse environmental impact. The environmental review for the Project will take note of the Buildings demolition and be no less protective of the environment than if they had remained in their current condition.
+[p052_c0012] To support this work, a new capital project will be created under category N711 of the MTA Interagency section of the 2015-2019 Capital Program. Budget authority will be transferred from the existing Capital Program Support project (N7110103).
+[p052_c0013] _Master Page # 132 of 133 - Finance Committee Meeting 1/21/2021_
+[p052_c0014] _Master Page # 52 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 53
+
+### [p053_c0001] Staff Summary
+### [p053_c0002] Metropolitan Transportation Authority
+### [p053_c0003] Page 1 of 2
+[p053_c0004]
+
+```text
+Subject MODIFICATION TO THE MADISON AVENUE DEVELOPMENT AGREEMENT WITH BOSTON PROPERTIES Department TRANSIT-ORIENTED DEVELOPMENT Department Head Name ROBERT PALEY Department Head Signature Project Manager Name HELENE CINQUE
+```
+[p053_c0005]
+
+```text
+Date JUNE 27, 2023 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p053_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 06/26/23 X 2 Board 06/27/23 X
+```
+[p053_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p053_c0008] AGENCY: Metropolitan Transportation Authority (“MTA”) DEVELOPER: BP 347 Madison Associates, LLC (“Developer”), a special purpose entity owned by Boston Properties Limited Partnership (“BXP”) LOCATION: 341-347 Madison Avenue (between East 44 th and 45 th Streets), New York, New York (the “MTA Property”) ACTIVITY: Modification of certain terms for the 347 Madison Avenue development transaction with BXP to address delays attributable to resolving dispute with adjacent property owner ACTION REQUESTED: Approval of terms and authorization to enter into an amendment to agreement to enter into lease with Developer on the terms described below.
+### [p053_c0009] COMMENTS:
+[p053_c0010] Pursuant to Board authorization dated February 24, 2022 (see February 2022 staff summary and resolution, attached) regarding the overall ground lease development of the MTA Property by Developer (the “Development”), MTA and Developer entered into an Agreement to Enter into Lease, dated as of February 24, 2022 (the “Pre-Lease Agreement”), to which the negotiated and agreed upon forms of the material transaction documents including the form of 99-year triple net ground lease (the “Ground Lease”) were attached. The Development will include the construction, operation and maintenance by Developer of a new MTA entrance to Madison Grand Central Terminal at 45 th and Madison, which will be integrated into the future office building to be constructed, operated and maintained by Developer. The closing under the Pre-Lease Agreement was anticipated to occur by no later than July 31, 2023 after demolition of the former headquarters buildings (the “Buildings”) at the MTA Property, which MTA undertook to perform because of concerns over safety and cost of maintaining the largely vacant buildings. MTA engaged 347 Madison Associates, LLC (“Project Manager”), an affiliate of BXP/Developer, to manage the demolition of the Buildings pursuant to a project management agreement dated May 3, 2021.
+[p053_c0011] The completion of the demolition has been delayed as a result of a dispute with the adjacent owner (“52 Vanderbilt Owner”) of the property and building located at 52 Vanderbilt, New York, NY (“52 Vanderbilt”) over the rights of 52 Vanderbilt Owner to continue to occupy and use a freight corridor (including utilities) located wholly within the MTA Property but exclusively serving 52 Vanderbilt. A shared stair and the freight corridor were constructed by the former owner/ground lessee of 347 Madison pursuant to a 1927 agreement that had been entered into between the then
+[p053_c0012] _Master Page # 53 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 54
+
+### [p054_c0001] Staff Summary
+### [p054_c0002] Metropolitan Transportation Authority
+### [p054_c0003] Page 2 of 2
+[p054_c0004] owners/ground lessees of the buildings located at 347 Madison and 52 Vanderbilt. This dispute delayed the closing of the Development transaction under the Pre-Lease Agreement and to be entered into Ground Lease and consequential delays to the commencement of the construction of the New Entrance and future office tower by BXP/Developer.
+[p054_c0005] MTA and 52 Vanderbilt have reached agreement on the terms of a settlement and resolution of the dispute, and MTA Board approval for such action is being sought concurrently herewith by separate staff summary.
+[p054_c0006] The satisfactory resolution of the dispute with 52 Vanderbilt Owner and the removal of record of the 1927 agreement, as well as the completion of the demolition were all conditions of closing the Ground Lease and Development under the Pre-Lease Agreement. The protracted delays associated with the settlement and resolution of the dispute with 52 Vanderbilt Owner necessitate modification of certain material terms outlined in the February 2022 staff summary for the Ground Lease and the Development:
+- [p054_c0007] (i) the outside closing date for the execution and delivery of the Ground Lease will be extended from July 31, 2022 to July 31, 2023, subject to further extension by MTA or Developer for up to 90 days, or due to force majeure or mutual agreement; (ii) similarly, the outside date for Developer to exercise its option to terminate the Ground Lease will be extended by one-year through July 31, 2025; (iii) the incremental costs for the demolition of the Buildings directly resulting from the delay in achieving a resolution with the 52 Vanderbilt Owner that would enable the demolition of the Buildings to be completed will not be treated as demolition costs reimbursable by BXP; (iv) the aggregate sum capped for amounts to be reimbursed to Developer in the event Developer elects terminate the Ground Lease pursuant to its termination option for the costs incurred by Developer to obtain the land use approvals and to construct the MTA new entrance will be increased by from $80M to $92M; and (v) the completion of demolition (following completion of the settlement work) will no longer be conditions to closing. This will accelerate the closing of the execution and delivery of the Ground Lease, which will result in an acceleration of the base rent commencement date by the time that it takes to complete the settlement work.
+[p054_c0008] Other than the proposed modifications outlined above, the material terms outlined in the February 2022 staff summary for the transaction remain substantially the same.
+[p054_c0009] Based on the foregoing, TOD requests Board authorization for MTA to modify and amend the Pre-Lease Agreement and the form of Ground Lease attached thereto on the material terms set forth above and in furtherance thereof to negotiate, execute and deliver the amendment to agreement to enter into lease and such other documents and instruments deemed necessary or appropriate to effectuate the foregoing on such terms and conditions as the Chair and Chief Executive Officer of the MTA, the Chief Development Officer of MTA and/or the Senior Director, Transit Oriented Development of MTA, or a designee of any of the foregoing officers, deems necessary or appropriate, and to take all other actions as shall be necessary or desirable consistent with the foregoing.
+[p054_c0010] Attachment
+[p054_c0011] Staff Summary dated February 24, 2022
+[p054_c0012] _Master Page # 54 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 55
+
+### [p055_c0001] Staff Summary
+### [p055_c0002] Metropolitan Transportation Authority
+### [p055_c0003] Page 1 of 6
+[p055_c0004]
+
+```text
+Subject 347 MADISON AVE DEVELOPMENT Department TRANSIT-ORIENTED DEVELOPMENT Department Head Name ROBERT PALEY Department Head Signature Project Manager Name ROBERT PALEY
+```
+[p055_c0005]
+
+```text
+Date FEBRUARY 24, 2022 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p055_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 2/22/22 X 2 Board 2/24/22 X
+```
+[p055_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p055_c0008] AGENCY: Metropolitan Transportation Authority ("MTA") DEVELOPER: BP 347 Madison Associates, LLC or another to be formed special purpose entity ("Developer"), which is owned by Boston Properties Limited Partnership ("Boston Properties"), a subsidiary of Boston Properties, Inc., a Delaware corporation and publicly traded real estate investment trust LOCATION: 341-347 Madison Avenue between East 44 th and 45 th Streets, New York, NY ACTIVITY: Adoption of the attached State Environmental Quality Review Act ("SEQRA") Findings Statement Approval to enter into a 99-year triple net lease (the "Lease") PROPERTY TO BE LEASED: Approximately 25,051 square feet of land comprising Manhattan Block 1279, Lots 23, 24, 25 and 48 (the "Land"), and all existing and future improvements thereon except for the East Side Access vent plant that MTAC&D constructed on Lot 48 (the "Vent Plant") but including the air space over a 30' elevation above the Vent Plant. Such Land and improvements (exclusive of the Vent Plant other than the air space) are referred to herein as the "Property". COMPENSATION: (a) Upfront Payment: $25 million, payable at Lease execution; plus a second upfront payment equal to $21,794,500.00, adjusted based on the zoning square footage of the New Building in the same manner as Annual Base Rent is to be adjusted, as set forth in Schedule A attached to this Staff Summary, will be payable on July 31, 2024 if Tenant does not elect to terminate pursuant to the limited termination right described below. (b) Annual Base Rent: to be calculated based on the zoning square footage of the New Building, as set forth in Schedule A attached to this Staff Summary, commencing 3 years after Lease execution. (c) Percentage Rent: For each lease year, commencing when subtenants under subleases covering at least 90% of the rentable area of the New Building have commenced making payments of regularly scheduled rent, 5.0% of the excess of (i) Developer's gross revenue for such year, net of the Base Rent and payments in lieu of real property taxes for such year, over a breakpoint. The breakpoint for the first 30 years after the Rent Commencement Date will be based on a $60/rsf per year threshold. For each Base Rent Adjustment Year (i.e., every 30 th year
+[p055_c0009] _Master Page # 55 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 56
+
+### [p056_c0001] Staff Summary
+### [p056_c0002] FINANCE COMMITTEE MEETING 347 MADISON AVENUE DEVELOPMENT (Cont'd.)
+[p056_c0003] Page 2 of 6
+[p056_c0004] during the term) until the next Base Rent Adjustment Year, annual percentage rent will be reduced by the yearly average percentage rent paid for the 5 years prior to the immediately preceding Base Rent Adjustment Year.
+- [p056_c0005] (d) PILOT/PILOST: Payments in lieu of real property taxes, equal to the full, unabated real property taxes that will be payable with respect to the Property if Developer owned the fee interest in the Property; and payment in lieu of sales taxes, equal to the sales tax Developer would incur with respect to its construction costs if it were the owner of such fee interest. (e) On-site Transit Improvements: A new public entrance at 45 th and Madison Avenue within the Property to be constructed and maintained by Developer at its own cost and expense, on an accelerated completion schedule, in exchange for the limited termination right, as described below. The new entrance will connect to the Madison Concourse of the East Midtown Terminal serving The Long Island Rail Road Company, constructed beneath Grand Central Terminal as part of the East Side Access ("ESA") project.
+### [p056_c0006] LEASE TERM:
+[p056_c0007] 99 years from rent commencement, which is 3 years after lease execution, subject to a limited one-time Developer early termination right, as discussed below.
+### [p056_c0008] BACKGROUND
+[p056_c0009] The MTA Board, by resolution dated February 26, 2016, conditionally designated Developer, a special purpose entity owned by Boston Properties, as the developer to redevelop the former MTA headquarters on Madison Avenue between 44 th and 45 th Streets and authorized MTA to enter into a pre-lease agreement with Developer on the terms outlined in the February 26, 2016 staff summary (see copy attached) (the "2016 Staff Summary") and such other terms or conditions deemed necessary or appropriate, with forms of the proposed 99-year ground lease and other operative documents to be negotiated and attached, and to be subject to further approval by the MTA Board of the final material terms of the Lease transaction documents, following review and compliance by MTA and all other involved governmental agencies with SEQRA. Developer was required to seek a special permit from the City Planning Commission for bonus floor area as provided for in the Vanderbilt Corridor special zoning subdistrict. Revenues from the ongoing base rent and PILOT will be used to support the MTA capital program including providing alternative non-tax-levy revenue sources to fulfill a portion of New York City's obligations to the MTA's 2015-2019 Capital Program.
+[p056_c0010] Since the 2016 MTA Board approval for the conditional designation and pre-lease agreement for the proposed redevelopment, the following has occurred:
+- [p056_c0011] (1) A 2018 conditions assessment prepared for MTA determined that the substantially vacant headquarters buildings were significantly deteriorated, and it would not be prudent to wait until the redevelopment to begin demolition. In November 2018 the MTA Board approved the demolition of the vacant buildings at MTA's cost under the direction of Boston Properties as project manager for MTA, with the cost of demolition ultimately to be repaid by Developer in the ground lease transaction. (2) In November 2021 Developer successfully completed the City's Uniform Land Use Review Procedure obtained a Special Permit allowing the site to be developed to its highest potential pursuant to the Vanderbilt Corridor zoning subdistrict. In connection with the Special Permit, MTA will be required to construct off-site improvements that would improve flows from the 7 line platform at the Grand Central 42 nd Street Station to be financed by project revenues, and to have the developer construct an onsite improvement, a new entrance to the new concourse and terminal constructed as part of the ESA project to be
+[p056_c0012] _Master Page # 56 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 57
+
+### [p057_c0001] Staff Summary
+### [p057_c0002] FINANCE COMMITTEE MEETING 347 MADISON AVENUE DEVELOPMENT (Cont'd.)
+> [p057_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle containing the white letters 'MTA', followed by the text 'Metropolitan Transportation Authority' in a black sans-serif font.
+[p057_c0004] Page 3 of 6
+[p057_c0005] known as the Madison Concourse of the East Midtown Terminal. A Restrictive Declaration committing to develop the Land in conformance with approved plans and committing to construct these specific public realm improvements, was executed by MTA and recorded.
+- [p057_c0006] (3) A Pre-lease Agreement and the form of the Lease to be attached to it, subject to adoption of environmental findings and further MTA board approval, reflecting the terms set forth in the 2016 Staff Summary with certain modified terms as described below has been fully negotiated.
+[p057_c0007] It is now necessary for the MTA Board to take two sequential actions:
+- [p057_c0008] 1. First, to comply with SEQRA, the MTA Board must adopt a SEQRA Findings Statement. 2. Second, following adoption of the SEQRA Findings Statement, the MTA must authorize MTA to execute and deliver the Lease and the other related transaction documents on the material terms set forth in this Staff Summary.
+### [p057_c0009] Environmental Findings
+[p057_c0010] An Environmental Impact Statement was prepared in conjunction with the review of the special zoning permit. On September 10, 2021, the New York City Department of City Planning, on behalf of the City Planning Commission ("CPC") as lead agency, issued a Notice of Completion for the Final Environmental Impact statement for the 343 Madison Avenue proposal. Based on that analysis, MTA staff have prepared the attached SEQRA Findings Statement pursuant to the State Environmental Quality Review Act and its implementing regulations codified at 6 NYCRR Part 617.
+[p057_c0011] Because the Environmental Impact Statement for the project indicated that there would be a small number of site specific traffic and pedestrian environmental impacts that could be partially mitigated by future mitigation measures, the CPC conditioned its approval of the project's special permits on commitments in a restrictive declaration for the Developer to carry out those measures, including consulting with the City's Department of Transportation concerning the final width of adjacent sidewalks and the operation of the project's loading docks.
+[p057_c0012] Restrictive Declaration. In addition to mitigation measures, the restrictive declaration also describes procedures for the issuance by the City of temporary and permanent occupancy certificates for the project based on Developer's completion of the On-Site Transit Improvements and MTA's completion of the following off-site transit improvements included as part of the project:
+- [p057_c0013] 1. Widening of 2 stairs (U2 and U6) that connect the Lexington Avenue platform to the #7 Flushing Line platform. 2. Widening of 2 Flushing Line stairs (PL8 and PL9) located at the east end of the platform. 3. New stair and passageway located on Flushing Line platform center core.
+[p057_c0014] As per the declaration, a temporary certificate of occupancy will not be issued for the portion of the proposed building utilizing the Bonus Floor Area until the transit improvements are substantially complete. And the permanent certificate of occupancy will not be issued for the portion of the proposed building utilizing the Bonus Floor Area until the transit improvements are complete.
+### [p057_c0015] Material Business Terms
+[p057_c0016] The business terms remain substantially the same as the terms presented to the MTA Board in 2016. The compensation and financial terms are unchanged, but the timing has been modified to address the force majeure impacts of the COVID pandemic. In exchange for a significant acceleration of the Developer's obligation to construct and deliver a new east side access entrance at its cost (subject to repayment only if it elects to terminate), Developer has been given the right to terminate the Lease following completion of the on-site transit improvements to provide some protection to Developer against the uncertainties of post-pandemic market recovery. Were Developer to elect to terminate, MTA would be
+[p057_c0017] _Master Page # 57 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 58
+
+### [p058_c0001] Staff Summary
+### [p058_c0002] FINANCE COMMITTEE MEETING 347 MADISON AVENUE DEVELOPMENT (Cont'd.)
+> [p058_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle containing the white letters 'MTA', followed by the text 'Metropolitan Transportation Authority' in a black sans-serif font.
+[p058_c0004] Page 4 of 6
+[p058_c0005] obligated to repay to Developer the costs of constructing the new entrance (including costs to obtain the special permit) capped at $80M plus the initial Upfront Payment, by July 31, 2029 with no interest prior to July 31, 2027, as described below.
+[p058_c0006] Compensation: Upfront Payment, Base Rent, PILOT, PILOST, and construction and perpetual maintenance of on-site GCT Public Realm Improvements, as summarized above, all of which is consistent with the economic terms as outlined in the 2016 Staff Summary, but subject to Developer's right to elect to terminate as described in this Staff Summary and, if Developer does not elect to terminate, upon expiration or waiver of its termination right Developer will be required to pay to MTA as an additional Upfront Payment an amount equal to the annual base rent that was otherwise payable during the first 2 years following the rent commencement date. Developer will be required to reimburse MTA for the costs of demolition upon expiration or waiver of its termination right, as noted below. Annual base rent payable, in monthly installments per Schedule A hereto, commencing 5 years after Ground Lease execution. PILOT and PILOST accrue from Ground Lease execution but payment of the same is tolled until the expiration or waiver of Developer's termination right when the same will become payable retroactively to the date of execution, as well as prospectively during the term of the Lease. Boston Properties will provide a guaranty of rent that will cover the second Upfront Payment, plus base rent and PILOT payments under the Lease for the period ending on the second anniversary of substantial completion of the new building, or such earlier date as the new building is deemed to be stabilized, i.e., when either 70% of the new building has been subleased to subtenants paying fixed or base rent (after rent abatements) or such lesser percentage of space has been subleased under subleases that would generate aggregate monthly subrent sufficient to cover the monthly payment of base rent and PILOT under the Lease.
+[p058_c0007] Term: 99-years from the rent commencement date, which is 3 years following lease execution, subject to Developer's right to elect to terminate as described in this Staff Summary.
+[p058_c0008] Demolition. In 2016 it was contemplated that Developer would demolish the existing buildings after ULURP completion and vertical construction would commence approximately, a year and a half later. However, in 2019 MTA RED determined that due to the deteriorating condition of the vacant existing buildings and the ongoing costs to maintain the same in a legally compliant condition, it would be in MTA's best interest to commence demolition. As such with MTA Board approval, MTA engaged Developer as MTA's project manager to oversee demolition of the existing buildings. Demolition has commenced but it is not anticipated to be completed prior to Lease execution, and Developer in its capacity as project manager for MTA will continue to oversee and complete the demolition of the existing buildings after execution of the Ground Lease. MTA will continue to pay the demolition project costs pursuant to the project management agreement. However, Developer will be obligated to repay to MTA the cost of demolition that it would have been responsible for pursuant to the 2016 Staff Summary upon the expiration of its termination right assuming that Developer does not elect to terminate. It is expected that demolition will be completed by Q1 2023.
+[p058_c0009] Ground Lease closing. No later than July 31, 2022, subject to receipt of final and un-appealable ULURP approvals. The good faith deposit equal to the Upfront Payment deposited by Developer at the time of execution of the Pre-Lease Agreement to be released and applied to the Upfront Payment upon execution of the Ground Lease.
+[p058_c0010] On-Site Transit Improvements. The new entrance to the Madison Concourse of the East Midtown Terminal is required to be completed (subject to unavoidable delays) within 27 months of the later of Ground Lease execution or completion of demolition. Completion of the on-site transit improvements will be guaranteed by Boston Properties.
+[p058_c0011] Vertical construction. Developer is permitted to construct a building of not less than 28 zoning floor area ratio ("FAR"), and Developer must commence vertical construction of the building within 4 years of Ground Lease execution rather than 2 years under the previous arrangement. Developer has the right to extend commencement of the vertical construction for up to 2 additional years with extension payments of $10 million for the first year and $15 million for the second year. Completion of the vertical construction of the building will be guaranteed by Boston Properties.
+[p058_c0012] Termination Right. Developer will have the right to elect to terminate the Ground Lease to be exercised or waived no later than July 31, 2024.
+[p058_c0013] If Developer elects to terminate, Developer must complete and deliver the new entrance to the Madison Concourse within the 27-month required timeframe. MTA would be obligated to repay Developer the cost of the new entrance capped at
+[p058_c0014] _Master Page # 58 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 59
+
+### [p059_c0001] Staff Summary
+### [p059_c0002] FINANCE COMMITTEE MEETING 347 MADISON AVENUE DEVELOPMENT (Cont'd.)
+> [p059_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle containing the white letters "MTA", followed by the text "Metropolitan Transportation Authority" in a black sans-serif font.
+[p059_c0004] Page 5 of 6
+[p059_c0005] $80M plus the Upfront Payment by July 31, 2029 and will deliver to Developer at the time that the new entrance is completed and the cost of same is fixed, a promissory note for the lesser of the actual cost of the new entrance plus the initial Upfront Payment, or $105M (the "MTA Termination Promissory Note"). MTA would have up to three years interest free to repay (with two additional years at 4% and 5% per annum respectively) the Termination Promissory Note, with the expectation that this period would provide a sufficient remarketing period for a new developer to step in and repay this cost as part of its bid. Upon completion of the new entrance MTA will own all plans and will be able to remarket a fully entitled development project in which the key public improvement will already have been completed. If the Developer elects to terminate, the Developer's leasehold interest in the Property will continue until MTA repays in full the Termination Payment Note as security for such repayment.
+[p059_c0006] Broker Commission. Cushman and Wakefield ("C&W") represented MTA in the transaction. At closing, C&W will get paid a commission based on Developer base rent for a 24 FAR building calculated according to the master brokerage agreement between the MTA and C&W in effect for this transaction (the "Base Commission"). If Developer does not elect to terminate, then MTA will pay C&W an additional commission based on Developer base rent for a building with the actual FAR it will build less the Base Commission. If Developer terminates, then C&W will keep the Base Commission and will re-market the property if requested by MTA. C&W will not be entitled to any additional commission payment in the re-market scenario.
+### [p059_c0007] Discussion of modified terms in response to COVID Force Majeure event
+[p059_c0008] Since the 2016 MTA Board conditional designation, the real estate market was substantially impacted by the COVID pandemic creating an unprecedented disruption in normal functioning of the city and its economy, a force majeure event which necessitated consideration of alternative responses.
+[p059_c0009] Developer initially requested an indeterminate transaction "pause" in its obligations with respect to the timing of closing on the ground lease and constructing a new building until certain market milestones were achieved. MTA consulted with C&W to assist in determining the extent of the market impact of COVID, in order to respond to Developer's initial proposal. C&W provided the following data and input: 1) as of February 2021 the market for new land deals had dropped significantly compared with pre-COVID levels; as such C&W believed that it was unlikely there would be market support in the short term to rebid the deal at this time were Developer to decide not to proceed; 2) in C&W's opinion at least two years would be needed before the site could be rebid and that a rebidding at that time would still likely be with a 10% loss in value based upon their market projections and models. C&W opinion regarding the forecast for when the commercial office market would likely rebound post-pandemic supported the Developer's view that the original timeline for the construction of an office building upon closing was no longer feasible in a market environment where tenants were not committing to new space (a predicate to any developer's ability to obtain financing).
+[p059_c0010] After carefully considering Developer's proposal, MTA staff determined that it would be in MTA's best interest to preserve the original economics, limit the pause requested by Developer to the two years projected by C&W necessary to be in a post-COVID market, provided that the Developer proceed expeditiously to pay for and complete the process necessary to obtain the land use approvals and commence, pay for and complete the new entrance within 27 months following demolition, a significant acceleration of delivery of this important transit improvement. Developer was willing to proceed on this basis, as long as during the first two years, Developer would retain the right to terminate the ground lease, and be repair for the cost incurred by it for the land use approvals and construction of the new entrance once completed, capped at $80M. Developer further agreed to MTA's having 5 years to repay the same from the exercise of the termination, 3 of which would be on an interest free basis and the other 2 at fixed rates of 4% and 5% per annum. Lastly, Developer agreed to pay an amount equivalent to what would have been the first 2 years of annual base rent payable in the first 2 years following rent commencement as an additional upfront payment upon expiration of Developer's limited termination right, if Developer does not elect to terminate, thus accelerating the timing of MTA's receipt of this revenue.
+[p059_c0011] MTA Transit-Oriented Development has determined that this arrangement for addressing the still unforeseeable impacts of COVID, will best preserve value for MTA, because:
+- [p059_c0012] • The economics of the project would remain unchanged or more favorable with respect to the upfront payment, ongoing base rent, percentage rent and PILOT/PILOST.
+[p059_c0013] _Master Page # 59 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 60
+
+### [p060_c0001] Staff Summary
+### [p060_c0002] FINANCE COMMITTEE MEETING 347 MADISON AVENUE DEVELOPMENT (Cont'd.)
+> [p060_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle containing the white letters 'MTA', followed by the text 'Metropolitan Transportation Authority' in a black sans-serif font.
+[p060_c0004] Page 6 of 6
+- [p060_c0005] • The important new entrance to the Madison Concourse would be delivered several years earlier than contemplated by the original arrangement, and its completion is assured even in the event construction of the commercial tower is postponed. • There would be no loss in timing of redevelopment inasmuch as remarketing the site pursuant to a new competitive bidding process would require at least 2 years in any event. If Developer were to exercise its termination right within the first 2 years, MTA will be able to remarket the re-development of the Property with a fully entitled site, 1 and a completed transit improvement which generates a significant portion of the zoning bonus, and full architectural drawings for the proposed new office tower all at a fixed/capped cost. All of which will make remarketing in the future more desirable. • According to C&W's estimates, there would likely be no material difference to MTA in the loss of present value it would sustain by proceeding on this basis should Developer elect to terminate within 2 years when compared to the present value loss MTA would likely sustain at this time if the project were terminated by Developer at this time, which C&W estimated to be approximately $100 million (reflecting its assumptions for the time to remarket and obtain approvals, and projected future land values). • The modifications to the transaction preserving the original economics accelerating the delivery of the transit improvement and allowing Developer the right to terminate in 2 years was preferable to both an indefinite pause or permitting Developer to walk at this time as a result of the unforeseen impacts of COVID.
+### [p060_c0006] RECOMMENDATION
+[p060_c0007] Based on the foregoing, MTA Transit-Oriented Development requests:
+- [p060_c0008] 1) that the MTA Board adopt the attached SEQRA Findings Statement; and 2) if the Board adopts the attached SEQRA Findings Statement, authorization, pursuant to the attached resolution, for MTA to enter into the Lease with Developer on the above-described material terms and conditions and such other terms or conditions as the Chair and Chief Executive Officer of MTA or the Chair's/CEO's designee deems necessary or appropriate, and to execute and deliver any and all other necessary and appropriate agreements, documents, writings, and other instruments, including modifications and supplements, and to take all such actions as shall be necessary or desirable, including without limitation, the payment of the aforesaid brokerage commission to C&W, the delivery to Developer of the Termination Payment Note if Developer elects to terminate the Lease, in order to close and consummate the above long-term lease and development transaction on the material terms and conditions set forth herein.
+### [p060_c0009] Attachments
+[p060_c0010] SEQRA Findings Statement Rent Schedule – Schedule A Board Resolution Staff Summary February 22, 2016
+[p060_c0011] _Master Page # 60 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 61
+
+### [p061_c0001] FINDINGS STATEMENT ADOPTING AND INCORPORATING ENVIRONMENTAL FINDINGS FOR THE 341-347 MADISON AVENUE PROJECT
+[p061_c0002] This Findings Statement has been prepared in accordance with Article 8 of the Environmental Conservation Law, the State environmental Quality Review Act (“SEQRA”) and its implementing regulations codified at 6 NYCRR Part 617.
+[p061_c0003] Nature of Action: Long-term lease of property interests and related agreements for the development of 341-347 Madison Avenue, MTA’s former headquarters, by BP 343 Madison Associates, LLC and adoption of SEQRA Findings Statement in connection with proposed lease and related agreements.
+### [p061_c0004] INTRODUCTION
+[p061_c0005] The action covered by these Findings is the lease for 99 years by the Metropolitan Transportation authority (“MTA”) of its former headquarters site at 341-347 Madison Avenue to BP 343 Madison Associates, LLC (“Developer”), an affiliate of Boston Properties, for the construction of a new commercial office building with an overall height of approximately 1,050 feet and approximately 925,630 square feet of gross floor area, together with the extensive transit improvements to facilitate pedestrian circulation for the Long Island Railroad’s East Side Access (“ESA”) and NYCT’s Flushing Line at the Lexington Avenue/42 nd Street station (the “Project”). The Developer was selected by MTA following an extensive RFP process that considered both the Developer’s construction capability, the overall return to MTA under the lease and the transit improvements associated with the Project.
+[p061_c0006] The Project has been reviewed and approved by the New York City Planning (“CPC”) and New York City Council pursuant to the City’s Uniform Land-Use Review Procedure (“ULURP”), for which both the Developer and MTA were co-applicants. The CPC also served as lead agency for the Project’s environmental review under both SEQRA and the City’s Environmental Quality Review (“CEQR”) and, as such, was responsible for the preparation and issuance of a Draft Environmental Impact Statement for the Project (“DEIS”) on May 3, 2021, holding the required public hearing on the DEIS on August 18, 2021, preparation and issuance of the Final Environmental Impact Statement (“FEIS”) on September 10, 2021 and making all required Environmental Findings for the Project (the “Lead Agency Findings”) on September 22, 2021. The Lead Agency Findings are attached hereto as Exhibit A.
+[p061_c0007] MTA has reviewed the DEIS, FEIS and the Lead Agency Findings. MTA finds that the SEQRA process for the Project was undertaken properly and appropriately and considered all potential impacts, including those of particular importance to MTA/NYCT. Accordingly, MTA is adopting the Lead Agency Findings and incorporating them into these Findings with respect to the Project’s environmental impacts and their mitigation.
+[p061_c0008] _Master Page # 61 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 62
+
+### [p062_c0001] PROJECT DESCRIPTION
+[p062_c0002] As required by MTA, the Project would include, in addition to first-class office space, an on-site transit entrance to the ESA concourse below grade and off-site improvements to improve the Flushing Line platform and passages at the Lexington Avenue/42 nd Street station. The on-site escalators, stairways and elevators providing access to and egress from the ESA will be constructed by the Developer at its expense pursuant to plans approved by NYCT and MTA. The off-site improvements have been designed, and will be carried out, by NYCT with the proceeds from the long-term lease with the Developer. These improvements, described in more detail in the Lead Agency Findings, include two sets of widened stairs (U2/U4 and U6/U8) connecting the Lexington Line platform to an existing passageway, two new stairs (PL7 and PL8) to the Flushing Line platform and two widened platform stairs (PL9-A/B) at the east end of the Flushing Line platform that connect to the existing building at 150 East 42 nd Street. In addition, the developer will be responsible for widened sidewalk areas on 44 th and 45 th streets to improve pedestrian access to Grand Central Terminal. The existing ESA vent shaft on 44 th would remain, with a portion of the new building occupying air space over that structure.
+[p062_c0003] Independently of the Project, MTA previously authorized demolition of the obsolete office structures on the site, and that process is currently under way. Once begun, construction of the Project is projected to take approximately four years.
+### [p062_c0004] ENVIRONMENTAL IMPACTS AND MITIGATION
+[p062_c0005] The FEIS examined the full range of potential environmental impacts from the proposed Project, including the Project's purpose and need and potential impacts relating to (1) land use, zoning and public policy; (2) open space; (3) shadows; (4) historic resources; (5) urban design and visual resources; (6) hazardous materials; (7) water and sewer infrastructure; (8) transportation; (9) air quality; (10) greenhouse gas emissions; (11) noise; (12) public health; (13) neighborhood character; and (14) construction. The FEIS also considered feasible mitigation measures for any significant impacts from the Project, reasonable alternatives to the Project, any unavoidable significant adverse impacts from the Project, growth-inducing aspects of the Project and any irreversible and irrevocable commits of resources from the Project and its construction.
+[p062_c0006] On the basis of this review, the FEIS found that any adverse impact relating to hazardous materials, air quality and noise would be avoided through placing an "E" designation on the site in accordance with CPC practice. The FEIS also found that a small number of adverse impacts identified in the FEIS with respect to traffic, pedestrians and transit could be partially but not fully mitigated, as more described in the FEIS (chapter 16, "Mitigation"), but that those impacts would be outweighed by the transit and other benefits of the Project. As indicated in the Lead Agency Findings, the "E" designation on the site and the feasible mitigation measures for such impacts identified in the FEIS are included in a Restrictive Declaration which has been placed on the site by MTA and the Developer as part of the CPC approval.
+[p062_c0007] In addition to the SEQRA/CEQR review undertaken for the Project by the CPC, MTA consulted with the New York State Office of Historic Preservation ("SHPO") in accordance with MTA's
+[p062_c0008] _2_
+[p062_c0009] _Master Page # 62 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 63
+
+[p063_c0001] obligations under the State Historic Preservation Act. Following such consultations, SHPO concurred that the Project would not have an adverse effect on historic properties and requested that MTA consult with it in the future as detailed plans for the Project are developed to review the feasibility or appropriateness of screening or other design treatment of the space over the ESA vent shaft.
+### [p063_c0002] ENVIRONMENTAL FINDINGS
+[p063_c0003] Having considered the FEIS and the Lead Agency Findings, MTA finds and certifies that:
+- [p063_c0004] 1. MTA hereby adopts and incorporates the Lead Agency Findings. 2. The SEQRA environmental review for the Project took the appropriate hard look at all potential environmental impacts of the Project, the requirements of 6 NYCRR Part 617 have been met with respect to the Project and the environmental impacts disclosed in the FEIS were evaluated in relation to the social, economic and other considerations associated with the Project as set forth in the FEIS and the Lead Agency Findings; and 3. Consistent with social, economic and other essential considerations, from among the reasonable alternatives available, the Project is one that avoids or minimizes adverse environmental impacts to the maximum extent practicable, and that the adverse environmental impacts identified in the FEIS will be minimized or avoided to the maximum extent practicable by incorporating as conditions to the approval, pursuant to the Restrictive Declaration, deemed incorporated herein, those environmental mitigation measures that were identified as practicable and the placement of "E" designations as set forth in the FEIS and the Lead Agency Findings.
+[p063_c0005] Date: January 26, 2022
+[p063_c0006] Metropolitan Transportation Authority
+[p063_c0007] Signature of Responsible Official
+[p063_c0008] _3_
+[p063_c0009] _Master Page # 63 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 64
+
+### [p064_c0001] EXHIBIT A
+### [p064_c0002] NYC CEQR FINDINGS
+[p064_c0003] FOR REFERENCE PURPOSES ONLY
+[p064_c0004] _Master Page # 64 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 65
+
+### [p065_c0001] CITY PLANNING COMMISSION
+### [p065_c0002] September 22, 2021/ Calendar No. 22
+### [p065_c0003] C 210370 ZSM
+[p065_c0004] IN THE MATTER OF an application submitted by BP 347 Madison Associates, LLC and the Metropolitan Transportation Authority pursuant to Sections 197-c and 201 of the New York City Charter for the grant of a special permit pursuant to Section 81-633 of the Zoning Resolution, to allow an increase in floor area in excess of the basic maximum floor area ratio established in the Table in Section 81-63 (Special Floor Area Provisions for the Vanderbilt Corridor Subarea) up to a maximum floor area as set forth in such Table, in connection with a proposed commercial development, on property located at 343 Madison Avenue (Block 1279, Lots 23, 24, 25 & 48), in a C5-3 District, within the Special Midtown District (Vanderbilt Corridor Subarea), Borough of Manhattan, Community District 5.
+[p065_c0005] This application (C 210370 ZSM) for a zoning special permit pursuant to Section 81-633 of the Zoning Resolution (ZR), was filed by BP 343 Madison Associates, LLC and the Metropolitan Transportation Authority (MTA) on April 15, 2021. The special permit, along with the related action would allow additional floor area through the provision of improvements to the pedestrian mass transit circulation network. The special permit, along with the related action, would enable the development of a commercial building on the property at 317-341 Madison Avenue (Block 1279, Lots 23, 24, 25 and 48), in the East Midtown neighborhood of Manhattan Community District 5.
+### [p065_c0006] RELATED ACTIONS
+[p065_c0007] In addition to the special permit the subject of this report (C 210370 ZSM), the following applications are being considered concurrently with this application:
+### [p065_c0008] C 210369 ZSM
+[p065_c0009] Zoning special permit pursuant to ZR Section 81-634 to modify certain district plan elements, street wall, height and setback, loading and curb cut regulations.
+[p065_c0010] _Master Page # 65 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 66
+
+### [p066_c0001] BACKGROUND
+[p066_c0002] In 2014, the Department of City Planning (DCP) proposed a plan for the area bound by East 47 th Street to the north, Vanderbilt Avenue to the east, 42 nd Street to the south and Madison Avenue to the west, in Manhattan. The plan, adopted in May 2015 (N 150127 ZRM), sought to facilitate commercial development in this high density corridor, improve pedestrian circulation within Grand Central Terminal and its vicinity and allow greater opportunity for area landmarks to transfer unused development rights. The corridor was identified due to its aging building stock, high density surroundings and excellent connectivity to transit. The adoption of the plan created the Vanderbilt Corridor, which would later become known as the ‘Vanderbilt Corridor Subarea’, following the consequent adoption of the zoning framework for Greater East Midtown in August 2017 (N 170186A ZRM).
+[p066_c0003] The Vanderbilt Corridor Subarea is mapped with a C5-3 zoning district, with a permitted as-of-right floor area ratio (FAR) of 15.0 for commercial development. The zoning resolution permits the floor area of buildings within these boundaries to be increased via special permit up to a maximum FAR of 30.0 for commercial development. This increase may occur via special permit where either development rights are transferred from an eligible landmark (ZR Section 81-632), or transit improvements are being made in parallel with the development (ZR Section 81-633). The text also provides a special permit in anticipation of the need for waivers to street wall, height and setback and various mandatory district plan elements, where arranging the maximum FAR on a site may be prevented by such regulations, and where a better site plan may be otherwise facilitated (ZR Section 81-634). This ability to use waivers for certain regulations also allows for specific consideration of site context that may otherwise result in an impractical or inferior design outcome.
+[p066_c0004] The area surrounding the development site (Block 1279, Lots 23, 24, 25 and 48) is located in the East Midtown area of Manhattan. Land uses within the area include a mix of commercial, residential, institutional, and transportation uses. The area is densely developed and is characterized by a mix of office towers and mid-rise office buildings located around Grand Central Terminal. The terminal, located immediately to the east of the Vanderbilt Corridor, is
+[p066_c0005] _2_
+[p066_c0006] _C 210370 ZSM_
+[p066_c0007] _Master Page # 66 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 67
+
+[p067_c0001] served by both subway and Metro North commuter train lines. A new concourse known as East Side Access (ESA), located 50 feet beneath Vanderbilt Avenue, will bring Long Island Railroad (LIRR) commuter service to the area upon opening, currently expected in 2022. Open space is provided at Bryant Park and at several privately owned public spaces interspersed throughout the area. Pershing Square, located directly south of Grand Central Terminal, includes a pedestrian plaza, approved by the New York City Department of Transportation, within the roadway between East 41st and East 42nd streets.
+[p067_c0002] The development site and much of the surrounding area is mapped with a C5-3 zoning district, which has a base maximum FAR of 15.0 for non-residential use and 10.0 for residential use. C5-2.5 zoning districts are mapped north and west of the development site, with a base maximum FAR of 12.0 for non-residential use and 10.0 for residential use. In the Vanderbilt Corridor Subarea, the maximum commercial floor area may be increased up to an FAR of 30.0 by special permit. Within the East Midtown Subdistrict, the maximum commercial floor area may be increased by certification up to an FAR of 25.0 in the Park Avenue Subarea, 21.6 in the Southern Subarea, and 27.0 in the Grand Central Transit Improvement Zone Subarea, among others. In both C5-3 and C5-2.5 zoning districts within the East Midtown Subdistrict, the maximum residential floor area may be increased to a maximum FAR of 12.0 by providing publicly accessible recreation space.
+[p067_c0003] The development site is located centrally within the zoning subarea known as the Vanderbilt Corridor, immediately to the west of Grand Central Terminal. The block containing the development site is bounded by 45 th Street to the north, Vanderbilt Avenue to the east, 44 th Street to the south and Madison Avenue to the west. The site is situated one block north of the recently completed 1 Vanderbilt, a 1401-foot-tall, 1,299,000-square-foot commercial office development that was the first to utilize the Vanderbilt Corridor's Grand Central public realm improvement special permit.
+[p067_c0004] The development site comprises the eastern half of the block. The remainder of the block is shared with 50 and 52 Vanderbilt Avenue, both adjoining to the east. The building at 50
+[p067_c0005] _3_
+[p067_c0006] _C 210370 ZSM_
+[p067_c0007] _Master Page # 67 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 68
+
+[p068_c0001] Vanderbilt Avenue is known as The Yale Club, a 22-story mixed use building that was constructed in 1915, in the renaissance revival style. The building has a distinctive green cornice framing the top of the street wall and is a listed New York City landmark (LP-2579). The building at 52 Vanderbilt is a 20-story commercial office building.
+[p068_c0002] The development site has a lot area of 25,104 square feet, with primary frontage on Madison Avenue and secondary frontages on 44 th and 45 th streets. The Madison Avenue frontage of the site (Lots 23, 24 and 48) is currently occupied by three commercial buildings ranging between 13 and 20 stories in height. The three buildings were formerly used by the MTA as their headquarters between 1974 and 2014. The MTA vacated the buildings in 2014 and they have not been occupied since. All three buildings are currently undergoing demolition, which was approved separately by the Department of Buildings, independent of the current application. Also occupying part of the development site (lot 25) is a five-story ventilation structure, with frontage along 44 th Street. The structure functions as a ventilation outlet in case of emergencies occurring on the ESA concourse below. It was constructed in 2014 and is the only existing structure on the zoning lot that will remain as part of the proposed development.
+[p068_c0003] The project area includes the development site at 341 – 347 Madison Avenue (Block 1279, Lots 23, 24, 25 and 48), in addition to three locations where the applicant proposes offsite improvements to the subgrade transit network as part of the proposed development. Those three locations include: a stair at the western-most end of the Flushing (7) Line subway platform at the 42 nd Street / Grand Central station, located subgrade, below the level of 42 nd Street; the center of the Flushing Line subway platform and a corresponding pedestrian corridor, at the 42 nd Street / Grand Central station, located subgrade, below the level of 42 nd Street; and a stair at the eastern-most end of the Flushing Line subway platform at the 42 nd Street / Grand Central station, located subgrade, below the level of 42 nd Street.
+### [p068_c0004] The proposed development
+[p068_c0005] The MTA, the owner of the development site, intends to enter into a 99-year ground lease with its development partner, Boston Properties, who was selected via a public tender process. The
+[p068_c0006] _4_
+[p068_c0007] _C 210370 ZSM_
+[p068_c0008] _Master Page # 68 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 69
+
+[p069_c0001] two parties propose to construct a new commercial office building with an overall height of 1050 feet and 753,560 square feet of zoning floor area on the development site, accompanied by extensive improvements to the pedestrian circulation network in the vicinity of Grand Central Terminal.
+[p069_c0002] The building program planned for construction on the development site would contain 748,618 square feet of office space, 2,130 square feet of retail uses and 2,372 square feet assigned to an onsite mass-transit entrance hall with connection to the ESA concourse below grade. In addition to works on the development site, the applicant proposes to make offsite improvements in connection with the project to the Flushing Line platform at the 42 nd Street, Grand Central station, located a short distance to the south-east of the development site.
+[p069_c0003] As part of facilitating the proposed development, a number of waivers are requested to enable the proposed design and its arrangement of bulk on the site, in the interest of a better site plan. Specifically, the design is inclusive of a street wall height reaching 321 feet, where the regulation of ZR Section 81-43 permits 150 feet. Height and setback waivers are also requested to ZR Section 81-27, in connection with the design's performance against the daylight evaluation criteria. The proposed lobby entrance and retail frontage on Madison Avenue, a designated retail street, provides a balance that results in a longer lobby length and shorter retail length than the regulation of ZR Section 81-42 permits. Additionally, servicing the site is a loading dock with three truck bays accessed from 44 th Street. Waivers are requested to enable the loading bay's curb cut, which exceeds the length of the regulation of ZR 81-675(b) and 81-44, as well as the direction in which vehicles would enter the site, which necessitates reversing into the loading bay rather than a head-in, head-out arrangement called for by ZR Section 81-675(a).
+### [p069_c0004] Improvements to the pedestrian circulation network
+[p069_c0005] Onsite improvements to be constructed in connection with the proposed building include a 2,372-square-foot, double height entrance hall within the ground floor for ESA. The space would serve as one of several entry and exit points for the concourse, allowing a high volume ADA
+[p069_c0006] _5_
+[p069_c0007] _C 210370 ZSM_
+[p069_c0008] _Master Page # 69 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 70
+
+[p070_c0001] pedestrian connection direct from Madison Avenue to the new concourse, with the construction of three new escalators, a stair and elevator.
+[p070_c0002] Offsite improvements to the surrounding pedestrian and transit network would also be undertaken in connection with the proposed development. Improvements are located on and in the vicinity of the Flushing Line platform of the 42nd Street / Grand Central station, serviced by the 7 train. The proposed offsite improvements can be categorized into three individual components.
+[p070_c0003] The first offsite improvement would involve widening two sets of stairs, (known as U2/U4 and U6/U8), that connect the uptown Lexington Line platform to an existing passageway that provides access to the existing Flushing Line platform stairs. The proposed widening would increase the aggregate number of pedestrian lanes from two to three.
+[p070_c0004] The second offsite improvement would involve constructing a new extension of the existing Flushing Line transfer passageway and constructing two new five-foot wide stairs (PL7 and PL8) between the passageway extension and the Flushing Line platform. The new stairs would land centrally on the platform, approximately 100 feet east of the eastern-most existing platform stair, significantly reducing the distance between the platform stairs and stairs PL-9A/B/C at the eastern end of the platform.
+[p070_c0005] The third proposed improvement offsite would involve widening two platform stairs, (known as PL-9A/B), at the east end of the Flushing Line platform, with associated structural modifications to support the widened stairs. These stairs connect to an at-grade subway entrance within the existing building at 150 East 42nd Street. The proposed widening would increase the aggregate number of pedestrian lanes from four to six.
+### [p070_c0006] Requested actions
+[p070_c0007] To facilitate the proposed development discussed above, the applicant is requesting two special permits that apply to the Vanderbilt Corridor Subarea.
+[p070_c0008] _6_
+[p070_c0009] _C 210370 ZSM_
+[p070_c0010] _Master Page # 70 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 71
+
+[p071_c0001] The first special permit is proposed pursuant to ZR Section 81-633, for Grand Central Public Realm Improvements. The special permit would allow an increase in the maximum permitted FAR from 15.0 allowed as-of-right, to a total FAR of 30.0, or 753,560 square feet of floor area, on the development site. This increase would be granted in connection with the on-site and off-site improvements to the pedestrian mass transit circulation network described above. This action is the subject of this report (C 210370 ZSM).
+[p071_c0002] The second special permit is proposed pursuant to ZR Section 81-634, for modifications in conjunction with additional floor area to allow flexibility in height and setback, building entrance, curb cut, loading berth and mandatory district plan regulations. The request for these waivers, discussed in more detail above, is associated with the design of the proposed development, enabling a response to surrounding context and specific site constraints that would enable a better site plan. This related action is the subject of the supplemental report (C 210369 ZSM).
+### [p071_c0003] ENVIRONMENTAL REVIEW
+[p071_c0004] The application (C 210370 ZSM), along with the related application (C 210369 ZSM), was reviewed pursuant to the New York State Environmental Quality Review Act (SEQRA), and the SEQRA regulations set forth in Volume 6 of the New York Code of Rules and Regulations, Section 617.00 et seq. and the New York City Environmental Quality Review (CEQR) Rules of Procedure of 1991 and Executive Order No. 91 of 1977. The designated CEQR number is 21DCP020M. The lead is the City Planning Commission ('the Commission').
+[p071_c0005] It was determined that the proposed actions may have a significant effect on the environment. A Positive Declaration was issued on July 23, 2020, and distributed, published and filed. Together with the Positive Declaration, a Draft Scope of Work for the Draft Environmental Impact Statement (DEIS) was issued on July 24, 2020. A public scoping meeting was held on August 27, 2020. A Final Scope of Work was issued on May 3, 2021.
+[p071_c0006] _7_
+[p071_c0007] _C 210370 ZSM_
+[p071_c0008] _Master Page # 71 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 72
+
+[p072_c0001] A DEIS was prepared and a Notice of Completion for the DEIS was issued on May 3, 2021. On August 18, 2021, a public hearing was held on the DEIS pursuant to SEQRA and other relevant statutes. A Final Environmental Impact Statement (FEIS) reflecting the comments made during scoping and the public hearing on the DEIS was completed and a Notice of Completion for the FEIS was issued on September 10, 2021.
+[p072_c0002] Significant adverse impacts related to hazardous materials, air quality, and noise would be avoided through the placement of an (E) designation (E-584) on the Development Site as specified in Chapters 7, 10 and 12.
+[p072_c0003] The Proposed Development as analyzed in the FEIS identified significant adverse impacts with respect to transportation (traffic, transit and pedestrians). The identified significant adverse impacts and proposed mitigation measures are summarized in Chapter 16, Mitigation. To ensure implementation of the mitigation measures identified in the FEIS, the mitigation measures are included in the Restrictive Declaration.
+### [p072_c0004] UNIFORM LAND USE REVIEW PROCEDURE
+[p072_c0005] This application (C 210370 ZSM), in conjunction with the application for the related action (C 210369 ZSM), was certified as complete by DCP on May 3, 2021, and was duly referred to Community Boards 5 and 6 and the Manhattan Borough President, in accordance with Title 62 of the Rules of the City of New York, Section 2-02(b), in accordance with the procedures for ULURP matters.
+### [p072_c0006] Community Board Public Hearing
+[p072_c0007] Manhattan Community Boards 5 and 6 both considered the application (C 210370 ZSM) and the related action (C 210369 ZSM). The development site is located within the geography of Community Board 5, however the proposed improvements to the Flushing Line at the 42 nd Street / Grand Central station sit within the geographies of both Community Board 5 and Community Board 6.
+[p072_c0008] _8_
+[p072_c0009] _C 210370 ZSM_
+[p072_c0010] _Master Page # 72 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 73
+
+[p073_c0001] Community Board 5 considered the application and the related action at its Land Use Committee Meeting of May 5, 2021, and on June 10, 2021, by a vote of 35 in favor, none opposed and one abstaining, voted to disapprove the application with conditions.
+[p073_c0002] Community Board 6 considered the application at its Land Use and Waterfront Committee Meeting of May 24, 2021, and on June 9, 2021, by a vote of 40 in favor, none opposed and five abstaining, voted to disapprove the application with conditions.
+[p073_c0003] The community boards provided separate statements outlining their concerns with the proposal to support their recommendation. The overall concerns can be categorized as: the sufficiency of transit improvements being provided, and the extent of waivers proposed with respect to the building bulk controls such as daylight evaluation criteria and street wall. Concerns were also raised regarding the proposed lobby width on Madison Avenue, which was requested to be reduced in favor of more retail. It was also expressed that the building enclosure should surpass the requirements of the 2020 NYC Energy Code and additionally, rental income collected from the project for the MTA should be used for improvements in the immediate area of the project.
+[p073_c0004] Both recommendations are appended to this report.
+### [p073_c0005] Borough Board Recommendation
+[p073_c0006] The Manhattan Borough Board considered the application (C 210370 ZSM) and the related action (C 210369 ZSM). On July 15, 2021, the Borough Board adopted a resolution to disapprove the applications with conditions. The Borough Board's conditions echoed those put forward by Community Boards 5 and 6.
+[p073_c0007] The full recommendation is appended to this report.
+### [p073_c0008] Borough President Recommendation
+[p073_c0009] The application (C 210370 ZSM) and the related action (C 210369 ZSM) were considered by the Manhattan Borough President. The Borough President provided a recommendation of support
+[p073_c0010] _9_
+[p073_c0011] _C 210370 ZSM_
+[p073_c0012] _Master Page # 73 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 74
+
+[p074_c0001] with conditions for the application, on August 3, 2021. The recommendation expresses the following:
+[p074_c0002] “This recommendation is contingent upon the Applicants’ completion of the following commitments:
+- [p074_c0003] • Work with DOT to fund and, at the discretion of DOT, design and construct a sidewalk widening along the north side of 44th Street between Vanderbilt and Madison Avenues as consistent with the East Midtown Governing Group Concept Plan and in consideration of the needs of the Yale Club; • Provide opportunities for artists to gain exposure through installations in the on-site transit entrance, under MTA’s Arts for Transit Program; • Provide free “pop-up” space for artists within available retail space prior to rent-up; and • Provide space within the building for use by artists or New York-based arts organizations, at a cost to the tenant equivalent to the local commercial tax rate in addition to utility expenses. The space will be at least 500 square feet if at grade or 1,000 square feet in other locations, to be offered for a period of five years from initial rent up of the building.
+[p074_c0004] In addition to these conditions, I urge the Applicants to consider the following recommendations put forth by the Manhattan Borough Board in their resolution dated June 17, 2021:
+- [p074_c0005] • That the proposed building meet the daylighting, street wall, and setback requirements of the current zoning; • That the Applicants enhance the proposed transit improvements on-site and off-site to justify the requested additional floor area; • That the Applicants reduce the width of the proposed lobby to accommodate retail frontage requirements along Madison Avenue in the Vanderbilt Corridor Subarea; • That the proposed building meet or exceed the 2020 New York City Energy Code; • That the proposed loading facilities be relocated to maintain consistent retail frontage; and
+[p074_c0006] _10_
+[p074_c0007] _C 210370 ZSM_
+[p074_c0008] _Master Page # 74 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 75
+
+- [p075_c0001] • That any rent generated on site be committed to local transit improvements.”
+[p075_c0002] The full recommendation is appended to this report.
+### [p075_c0003] City Planning Commission Public Hearing
+[p075_c0004] On July 28, 2021 (Calendar No. 20), the City Planning Commission scheduled August 18, 2021, for a public hearing on the application (C 210370 ZSM). The hearing was duly held on August 18, 2021 (Calendar No. 56). Nine speakers testified in favor of the application and none in opposition.
+[p075_c0005] The applicant team, comprised of the land use attorney, a representative from the MTA, a representative of the developer, and the project architect, presented an overview of the project, and provided a description of the site. The team described the proposed development and the need for the requested special permits. The team described the attributes of the site that have been the catalyst for the design, including the relatively small size of this site for office floor plates, the presence of the vent building on 44 th Street, and the need for the ESA entrance hall on Madison Avenue and 45 th Street, and explained how these attributes have informed the approach to site planning. As a result of these unique site factors, the applicant stated that the building would cantilever above the vent building, use a side core on the eastern edge of the building and specifically recess the building to the Madison Avenue and 45 th Street corner, in order to emphasize the new ESA entrance.
+[p075_c0006] The proposed transit improvements were described by the representative of the MTA as having been long planned for in conjunction with the redevelopment of this site. In describing the improvements, the new ESA entrance was noted for the uniquely beneficial location this site presents to facilitating access for commuters. The proposed connection would allow the only direct line of connection from Madison Avenue to the new concourse, and would be in line with the largest bank of escalators connecting the concourse to the southern-most end of the train at the platform 160 feet below Park Avenue. The line of travel is consequently the most direct and desirable for many commuters. The complexity involved in the connection's construction,
+[p075_c0007] _11_
+[p075_c0008] _C 210370 ZSM_
+[p075_c0009] _Master Page # 75 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 76
+
+[p076_c0001] including excavation through bedrock to 50 feet below grade, was emphasized. In addition to the improvements, the MTA highlighted their Request For Proposals (RFP) and competitive bidding process, explaining that the redevelopment of this asset would create a critical ongoing funding mechanism to support the MTA's capital budget via the lease and collection of taxes.
+[p076_c0002] The Manhattan Borough President testified in favor of the project. The Borough President noted the proposed density would be capable of being absorbed by transit-rich areas like East Midtown and further, the project's proposed improvements to the transit network would be pivotal. It was also noted that, through separate conversations with the applicant, the Borough President had received commitments to widen the 44th Street sidewalk between Madison and Vanderbilt avenues as part of the project. Additionally, the developer had agreed to provide art installation opportunities for local artists in both the on-site transit and retail spaces, as well as dedicated, affordable arts space on-site for New York-based arts organizations. The Borough President's testimony further encouraged the applicant to provide opportunities for local retail at the ground floor, with accessible, small plan and affordable office layouts in the office space above. A desire for a dedicated funding stream for the proposed on-site improvements was also expressed.
+[p076_c0003] Representatives from the Grand Central Partnership, Building and Construction Trades Council of Greater New York and 32BJ all described support for the pandemic recovery component of the project, which would include additional capacity for several thousand jobs on the development site, as well as many construction jobs. They also underscored how the project's accompanying transit improvements would benefit the transit and pedestrian experience throughout the area.
+[p076_c0004] A representative for 335 Madison Avenue, the building located to the south of the development site across 44 th Street, indicated support for the project, however raised questions with the respect to the transportation analysis from the DEIS and the potential for vehicular and pedestrian traffic implications to arise on 44 th Street. The southern neighbor has a commercial parking garage entry and a loading dock opposite the proposed loading dock location.
+[p076_c0005] _12_
+[p076_c0006] _C 210370 ZSM_
+[p076_c0007] _Master Page # 76 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 77
+
+[p077_c0001] There were no other speakers and the hearing was closed.
+[p077_c0002] Subsequent to the hearing, additional written testimony was provided by six members of the public.
+[p077_c0003] Supportive written testimony was received from the Association for a Better New York, the Riders Alliance, the New York Building Congress, and the Building and Construction Trades Council of Greater New York. Each described support for the transit improvement, employment and economic recovery aspects of the proposal.
+[p077_c0004] The Commission also received written correspondence from neighboring properties 335 Madison Avenue to the south, and 50 Vanderbilt Avenue, also known as The Yale Club, to the east. The testimony on behalf of 335 Madison Avenue elaborated on verbal testimony made at the hearing, again supporting the project but raising questions about the transportation analysis undertaken in respect of the complex loading, pedestrian and traffic conditions on 44 th Street, the unique traffic and pedestrian conditions on Vanderbilt and Madison avenues, and the need for alternatives or mitigations to address potential transportation impacts created by these conditions.
+[p077_c0005] Correspondence from The Yale Club outlined concerns over the need for active retail on the corner of 44 th Street and Madison Avenue, the need to widen the sidewalk on 44 th Street and the need to coordinate deliveries at the proposed loading dock to minimize interruptions to The Yale Club's operations.
+### [p077_c0006] CONSIDERATION
+[p077_c0007] The Commission believes that this application for a special permit (C 210370 ZSM), along with the related action (C 210369 ZSM), is appropriate.
+[p077_c0008] The project is located in the heart of East Midtown, in close proximity to Grand Central Terminal. The area is rich in public transit access and characterized by some of the city's largest commercial office buildings. The Commission believes that this project will contribute to and be consistent with many of the City's goals associated with the rezoning of the Vanderbilt Corridor,
+[p077_c0009] _13_
+[p077_c0010] _C 210370 ZSM_
+[p077_c0011] _Master Page # 77 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 78
+
+[p078_c0001] including promoting the principle of transit oriented development via provision of contemporary office stock in the immediate vicinity of the Grand Central Terminal transit hub.
+### [p078_c0002] Transit improvements
+[p078_c0003] The proposed development is inclusive of a variety of much needed improvements to pedestrian circulation in the transit network serving the area. The improvements stand to significantly improve the safety, access and navigability experience for commuters using both the future ESA concourse, as well as the Flushing Line platform at 42 nd Street / Grand Central Station, serving the 7 line. The improvements have all been specifically identified by the MTA as high priority projects.
+[p078_c0004] Specific to the onsite improvements, the redevelopment of 343 Madison Avenue is inclusive of a major new transit connection to the ESA concourse, at the corner of Madison Avenue and 45 th Street. The entrance hall has been designed as a generous space of double height, offering high volume ADA access to the ESA concourse, deep below the site. The new hall will fulfill an important connection function for commuters, while presenting an inviting space to the general public complete with high quality finishes, amenities and signage.
+[p078_c0005] The location of 343 Madison Avenue is uniquely positioned to provide this significant new connection to the new ESA concourse, offering direct access to the southern-most end of the LIRR platforms. The provision of this necessary connection would be prohibitive without the participation of this site, given its position relative to the concourse. Testimony from the MTA confirmed that the connection of a new elevator, three custom escalators and a stair represents a significant level of complexity that the Commission considers to merit a substantial amount of the discretionary floor area bonus the applicant is seeking as part of the special permit.
+[p078_c0006] Substantial improvements are also proposed offsite, concentrated on alleviating congestion on the Flushing Line, with upgrades to the 42 nd Street Grand Central Station platform serving the 7 train. This platform has been identified by the MTA as a priority for upgrade, attributed to its increasingly high volume of commuters. The improvements target difficult pinch-points
+[p078_c0007] _14_
+[p078_c0008] _C 210370 ZSM_
+[p078_c0009] _Master Page # 78 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 79
+
+[p079_c0001] identified by the MTA, that include widening the two primary points of access to the platform at the eastern and western ends, as well as enabling better distribution of commuters across the length of the platform through the addition of a new tunnel and mid-platform stair. Each of these improvements is a delicate and complex construction and engineering exercise within the below-grade network, which would prove difficult and costly for the MTA without the direct assistance of this project.
+[p079_c0002] As required by the ZR, the proposed building will also see a widening of the sidewalk on Madison Avenue and 45 th Street adjacent the building, achieving 20 feet and 15 feet in total sidewalk width, respectively. The Commission also notes the applicant has committed to working with the Borough President to widen the sidewalk on 44 th Street. While this is not required by zoning, the Commission encourages this improvement in the interest of further enhancing pedestrian mobility around the future building.
+### [p079_c0003] Building density and design
+[p079_c0004] The proposed special permit involves additional density, amounting to an FAR of 15.0 or 376,560 square feet, for a total FAR of 30.0. This level of density is comparable to recent development in the surrounding area and is consistent with the density envisioned for the Vanderbilt Corridor. The recently completed 1 Vanderbilt development, the first to utilize this special permit, is built to a total FAR of 30.0. 1 Vanderbilt is a substantially larger and taller building than that proposed, as its lot size is much larger than 343 Madison Avenue's lot.
+[p079_c0005] The location and spatial attributes of the site, in conjunction with major surrounding built form elements, are complementary. The proposed tower will benefit from separation provided by its immediate neighbors from the existing dominant features of the skyline, such as 383 Madison Avenue and the future 270 Park Avenue to the north, the landmark former Pan Am building at 200 Park Avenue to the east and 1 Vanderbilt to the south. Some of the most notable buildings of East Midtown encompass a variety of architectural styles, from the flat-topped Seagram Building and Lever House to the spired crowns of the Chrysler Building and the new One Vanderbilt. The design of the proposed development will integrate with this cluster of larger commercial
+[p079_c0006] _15_
+[p079_c0007] _C 210370 ZSM_
+[p079_c0008] _Master Page # 79 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 80
+
+[p080_c0001] buildings that surround Grand Central Terminal, contributing a distinct variation in height, form and materials to the Midtown skyline that frames it.
+[p080_c0002] The proposed development will be designed to achieve LEED Platinum Certification, will exceed the requirements of the New York City Energy Conservation Code and comply with the provisions enacted under Local Law 97. Additionally, the building design will include a number of design features that exceed the benchmarks set by recent developments such as 1 Vanderbilt and the Special Hudson Yards District, reflecting advances in sustainable building design. These measures include high efficiency HVAC systems with heat recovery and demand control ventilation through CO2 monitoring; energy efficient LED lighting with motion activation, vacancy sensors and automatic timing controls; water efficient landscaping with storm water reclamation; high efficiency boilers; and variable frequency drives on base building machines.
+### [p080_c0003] Waivers
+[p080_c0004] Pursuant to ZR Section 81-634, and as proposed by the related action (C 210369 ZSM), the Commission may grant waivers to the Mandatory District Plan elements, the street wall requirements, and height and setback controls required for as-of-right buildings in the Special Midtown District. The proposed design seeks waivers to each of these attributes so as to effectively arrange the proposed density on the site for a better site plan. The Vanderbilt Corridor text created this mechanism recognizing that incentivizing the renewal of commercial office buildings in the area accompanied by public benefits would necessitate a level of density that the underlying Special Midtown District regulations did not anticipate at the time of drafting. With this in mind, the Vanderbilt Corridor text provides this mechanism for new development to vary certain regulations in order to efficiently arrange floor area on the site and respond to the built context.
+### [p080_c0005] UPC modification to the proposed street wall
+[p080_c0006] The Commission heard testimony regarding building bulk and shares the concerns expressed by DCP, the Borough President and Community Boards regarding the proposed street wall height.
+[p080_c0007] _16_
+[p080_c0008] _C 210370 ZSM_
+[p080_c0009] _Master Page # 80 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 81
+
+[p081_c0001] At 321 feet, the building's street wall is not informed by any prominent physical attribute of the surrounding built context.
+[p081_c0002] In response to these concerns, the applicant submitted modified plans dated September 20, 2021. The modified plans seek a reduced street wall of 295 feet, a height that is directly informed by the cornice of the Yale Club, a prominent and landmarked feature adjoining the proposed development immediately to the east. The modification will ensure the development presents a generally consistent street wall height to 44 th Street when viewed from Vanderbilt and Madison avenues. This height is also similar to the cornice of 52 Vanderbilt, allowing the entire block to be perceived with a consistent bulk when viewed from surrounding streetscapes.
+[p081_c0003] The street wall will still require a waiver at this height, which the Commission believes is appropriate, as it results in a better distribution of bulk on the site. The applicable street wall regulations are reflective of a prevailing street wall height across the greater Midtown area. Madison Avenue in this location is defined by a much stronger street wall than is typical of Midtown. It is noted that in providing a strong street wall to integrate with the prevailing context of Madison Avenue, the design sees increasing non-compliance with the height and setback regulations, resulting in the request for a waiver. The need for this waiver is an outcome that is typical of the area, where the existing character and zoning promote large floor plate commercial office buildings. It is in this context that the proposed building design will contribute to the harmonious relationship with its surroundings, with a massing that reflects the features of the existing built form. The Commission supports the modified plan that amends the distribution of bulk across the site to ensure it is integrated with the physical built form characteristics of the neighborhood.
+[p081_c0004] The Commission also notes that the building's program includes a mix of uses harmonious with the type of uses prevalent in the surrounding area. The proposed commercial uses, comprising office and retail, are consistent with the City's goal of strengthening the commercial core of Midtown Manhattan, activating the streetscape and promoting job creation.
+[p081_c0005] _17_
+[p081_c0006] _C 210370 ZSM_
+[p081_c0007] _Master Page # 81 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 82
+
+[p082_c0001] Various modifications to the regulations at ground floor level are proposed to facilitate the project, including building entrance, retail, curb cut and loading requirements. These modifications will facilitate access and servicing while ensuring streetscape activation.
+[p082_c0002] The ground floor level program balances lobby, retail, mass transit entrance and building servicing, all within a constrained footprint. In doing so, the design significantly improves circulation on the sidewalk with widenings proposed to Madison Avenue and 45 th Street adjacent to the building. The plan integrates the new ESA pedestrian hall on the prominent corner of Madison Avenue and 45 th Street that will activate the adjacent streetscape, while creating a generous new transit connection through the site. Retail will occupy the midblock on 45 th Street and the alternate corner of Madison Avenue and 44 th Street. This corner tenancy will provide activation to both street frontages as well as within the lobby, where it is designed to bleed into the movement and function of the lobby, with a porous footprint that projects retail activity into the lobby beyond its physical footprint, one that is otherwise confined by the essential functions of access to and servicing of the building. The recessed lobby and internal space for occupants of the building seek to provide sufficient entry space for the building occupants, with consideration provided to expected post-pandemic needs of queuing, temperature checking and health screening of workers before entering elevators. Each component is effectively balanced in the floor plan and will contribute to what the Commission considers to be a better site plan, that enables a lively streetscape with improved access around, through and within the building.
+### [p082_c0003] Building servicing and loading
+[p082_c0004] With respect to curb cut and loading attributes of the proposal, waivers are also sought to facilitate the practical servicing of the building. The Commission considered testimony from the neighboring properties regarding the use of 44 th Street for these functions and concerns around disruption to their own operations. The location proposed on 44 th Street is noted as the only viable place for this site to be practically serviced, including in the as-of-right scenario. The ZR prohibits the use of Madison Avenue and 45 th Street for this function, and requires curb cuts to be at least 50 feet from the avenue, leaving only the proposed location. Further, for the site to support head-in, head-out loading requires dimensions large enough to support the turning circle
+[p082_c0005] _18_
+[p082_c0006] _C 210370 ZSM_
+[p082_c0007] _Master Page # 82 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 83
+
+[p083_c0001] of vehicles that will service it. The site is not large enough for such a turning circle, particularly once a building core is accounted for.
+[p083_c0002] The loading and curb cut waivers proposed will facilitate the efficient servicing of the future building from a lower intensity street, where it will be co-located with the loading and vehicular access arrangements of the southern neighbor. The proposed curb cut width and loading direction waivers are not expected to result in significant impacts on the pedestrian environment of 44 th Street and are a reasonable expectation of the centralized servicing that occurs with any commercial building that is characteristic of the area. The ZR requires a sidewalk width of 15 feet, which is achieved in the existing circumstance. The associated impacts upon the traffic flow of 44 th Street were studied as part of the EIS prepared for the project and no impacts requiring mitigation were identified. It is appropriate that the applicant and neighbors work together on how each may service its site in a fashion that is coordinated to minimize disruption to the operations of the other, and the neighborhood.
+[p083_c0003] The Commission heard testimony from the Community Boards and Borough President regarding the proposed transit improvements, suggesting that they do not merit the amount of bonus floor area requested, drawing parallels with the benchmarks set within the more recent Greater East Midtown text. The Commission understands that the independent and discretionary nature of the Vanderbilt Corridor Special Permit requested is designed to take into account the immediate context of the Vanderbilt Corridor Subarea, with its specific density and transit-oriented characteristics. The proposed combination of on and offsite improvements stands to have an outsized impact on access in the area in which the project is being undertaken. The MTA has attested to the necessity and complexity of the improvements, along with the urgency of the upgrades. It is noted that the applicant will be required to complete the proposed improvements before the bonus floor area can be occupied.
+[p083_c0004] It is within this consideration that the Commission believes the proposed development and accompanying improvements are appropriate. The realization of these improvements represents a level of public benefit that merits the proposed 376,560 square feet in additional floor area
+[p083_c0005] _19_
+[p083_c0006] _C 210370 ZSM_
+[p083_c0007] _Master Page # 83 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 84
+
+[p084_c0001] sought via the proposed action (C 210370 ZSM). The Commission further believes the project, bringing new class A office space, will have significant beneficial effects on the East Midtown area and the City's pandemic recovery efforts.
+### [p084_c0002] FINDINGS
+[p084_c0003] The City Planning Commission hereby makes the following findings pursuant to Section 81-533 of the Zoning Resolution:
+- [p084_c0004] 1) For a development or enlargement not located on two wide streets, the amount of additional floor area being granted is appropriate based on the extent to which any or all of the following physical factors are present in the development or enlargement: i) Direct access to subway stations and other rail mass transit stations ii) The size of the zoning lot iii) The amount of wide street frontage; and iv) Adjacency of open area above Grand Central Terminal. 2) For above-grade improvements to the pedestrian circulation network that are located: i) on-site, the proposed improvements will, to the extent practicable, consist of a prominent space or generous proportions and quality design that is inviting to the public; improve pedestrian circulation and provide suitable amenities for the occupants; front upon a street or a pedestrian circulation space in close proximity to and within view of and accessible from an adjoining sidewalk; provide or be surrounded by active uses; be surrounded by transparent materials; provide connections to pedestrian circulation spaces in the immediate vicinity; and be designed in a manner that combines the separate elements within such space into a cohesive and harmonious site plan, resulting in a high-quality public space; or ii) [This finding is not applicable; no above-grade improvements are proposed off-site.]
+[p084_c0005] _20_
+[p084_c0006] _C 210370 ZSM_
+[p084_c0007] _Master Page # 84 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 85
+
+- [p085_c0001] 3) Below-grade improvements to the pedestrian circulation network provide: i) Significant and generous connections from the above grade pedestrian circulation network to the below grade pedestrian circulation network. ii) Major improvements to the below grade pedestrian circulation network within a subway station in the vicinity of Grand Central Terminal, through the provision of new connections and the enhancement of existing connections. iii) [This finding is not applicable; improvements to the environment within subway stations are not proposed.] 4) The public benefit derived from the proposed above and below grade improvements to the pedestrian mass transit circulation network is substantial and merits the amount of additional floor area being granted to the proposed development. 5) The design of the ground floor level of the building: i) Will contribute to a lively streetscape through a combination of retail uses that enliven the pedestrian experience, ample amounts of transparency and pedestrian connections that facilitate fluid movement between the building and adjoining public spaces. The proposal demonstrates consideration for the location of pedestrian circulation space, building entrances and the types of uses fronting upon the street. ii) Will substantially improve the accessibility of the overall pedestrian circulation networks, helping reduce points of pedestrian congestion and will establish more direct and generous pedestrian connections to Grand Central Terminal, via connection to the East Side Access concourse. iii) Will be well integrated with on-site above and below grade improvements being provided in conjunction with this section. 6) The design of the proposed building: i) Ensures light and air to the surrounding streets and public spaces through the use of setbacks, recesses and other forms of articulation, and the tower top
+[p085_c0002] _21_
+[p085_c0003] _C 210370 ZSM_
+[p085_c0004] _Master Page # 85 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 86
+
+- [p086_c0001] produces a distinct addition to the midtown Manhattan skyline which is well integrated with the remainder of the building; ii) Demonstrates an integrated and well-designed façade, taking into account factors such as street wall articulation and fenestration, that creates a prominent and distinctive building, which complements the character of the surrounding area, especially Grand Central Terminal; iii) Involves a program that involves an intensity and mix of uses that are harmonious with the type of uses in the surrounding area. 7) The proposed development comprehensively integrates sustainable design measures into the building and site design that: i) Meet or exceed best practices in sustainable design and; ii) Will substantially reduce energy usage for the building, as compared to comparable buildings. 8) In addition: i) The increase in floor area being proposed in the development will not unduly increase the bulk and density of population or intensity of uses to the detriment of the surrounding area. ii) All of the separate elements within the proposed development includes above and below grade improvements, the ground floor level building design, and sustainable design measures are well integrated and will advance the applicable goals of the Special Midtown District described in Section 81-00 (GENERAL PURPOSES).
+### [p086_c0002] RESOLUTION
+[p086_c0003] RESOLVED , that having considered the Final Environmental Impact Statement (FEIS), for which a Notice of Completion was issued on September 10, 2021, with respect to this application (CEQR No. 21DCP020M), the City Planning Commission finds that the requirements of the New York State Environmental Quality Review Act and Regulations have been met and that:
+[p086_c0004] _22_
+[p086_c0005] _C 210370 ZSM_
+[p086_c0006] _Master Page # 86 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 87
+
+- [p087_c0001] 1) The environmental impacts disclosed in the FEIS were evaluated in relation to the social, economic, and other considerations associated with the actions that are set forth in this report; and 2) The adverse environmental impacts identified in the FEIS will be minimized or avoided to the maximum extent practicable by incorporating as conditions to the approval pursuant to the Restrictive Declaration, attached as Exhibit A hereto, all as acceptable to Counsel to the Department, is executed by BP 347 Madison Associates LLC and the Metropolitan Transit Authority, or its successors, and such Restrictive Declaration shall have been recorded and filed in the Office of the Register of the City of New York, County of New York, those project components related to the environmental and mitigation measures that were identified as practicable and the placement of (E) designations (E-357) for Hazardous Materials, Air Quality, and Noise, which form part of the action. 3) No development pursuant to this resolution shall be permitted until the Restrictive Declaration attached as Exhibit A, as same may be modified with any necessary administrative or technical changes, all as acceptable to Counsel to the Department of City Planning, is executed by BP 347 Madison Associates, LLC, or its successor, and such Restrictive Declaration shall have been recorded and filed in the Office of the Register of the City of New York, County of New York.
+[p087_c0002] The report of the City Planning Commission, together with the FEIS constitutes the written statement of facts, and of social, economic and other factors and standards, that form the basis of the decision, pursuant to Section 617.11(d) of the SEQRA regulations; and be it further
+[p087_c0003] RESOLVED , by the City Planning Commission, pursuant to Sections 197-c and 200 of the New York City Charter, that based on the environmental determination and consideration and findings described in this report, the application submitted by BP 347 Madison Associates, LLC and Metropolitan Transportation Authority pursuant to Sections 197-c and 200 of the New York City Charter for the grant of a special permit pursuant to Section 81-633 of the Zoning Resolution to allow an increase in floor area in excess of the basic maximum floor area ratio established in the Table in Section 81-63 (Special Floor Area Provisions for the Vanderbilt
+[p087_c0004] _23_
+[p087_c0005] _C 210370 ZSM_
+[p087_c0006] _Master Page # 87 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 88
+
+[p088_c0001] Corridor Subarea) up to a maximum floor area as set forth in such Table, in connection with a proposed commercial development, on property located at 343 Madison Avenue (Block 1279, Lots 23, 24, 25 & 48), in a C5-3 District, within the Special Midtown District (Vanderbilt Corridor Subarea), Borough of Manhattan, Community District 5, is approved as modified subject to the following terms and conditions:
+- [p088_c0002] 1. The property that is the subject of this application (C 210370 ZSM) shall be developed in size and arrangement substantially in accordance with the dimensions, specifications, and zoning computations indicated on the following approved plans, prepared by Kohn, Pedersen, Fox Associates, PC and Stantec, filed with this application and incorporated into this resolution:
+[p088_c0003]
+
+```text
+Drawing No. Title Last Date Revised Z-101 Zoning Calculations 9/20/2021 Z-102 Zoning Lot Site Plan 9/20/2021 Z-103 Waiver Plan 9/20/2021 Z-104 Ground Floor Waiver Plan 12/15/2020 Z-105 Pedestrian Circulation Space Plan 12/15/2020 Z-200 Building Sections 9/20/2021 Z-300 Daylight Evaluation Analysis 9/20/2021 Z-301 Daylight Evaluation Analysis 9/20/2021 Z-302 Daylight Evaluation Analysis – VP1 9/20/2021 Z-303 Daylight Evaluation Analysis – VP2 9/20/2021 Z-304 Daylight Evaluation Analysis – VP3 9/20/2021 Z-305 Daylight Evaluation Analysis – VP4 9/20/2021 Z-306 Daylight Evaluation Analysis – VP5 9/20/2021 Z-307 Daylight Evaluation Analysis – VP6 9/20/2021 KP-1 Key Plan Street Level 12/9/2020 KP-2 Key Plan ESA Concourse & Lexington Line Platform Level 12/9/2020 KP-3 Key Plan Flushing Line Platform & Passageway Level 12/9/2020 PM-1 On-site Ground Level 12/9/2020 PM-2 On-Site Cellar 1 Level 1 12/9/2020 PM-3 On Site ESA Concourse Level 12/9/2020 PM-4 On-Site Sections 1 of 2 12/9/2020 PM-5 On-Site Section 2 of 2 12/9/2020 XE-1 Off-Site East End Existing Flushing Line Platform Level 12/9/2020
+```
+[p088_c0004] _24_
+[p088_c0005] _C 210370 ZSM_
+[p088_c0006] _Master Page # 88 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 89
+
+[p089_c0001]
+
+```text
+XE-2 Off-Site East End Existing Sections 12/9/2020 XC-1 Off-Site Center Core Existing Flushing Line Passageway Level 12/9/2020 XC-2 Off-Site Center Core Existing Flushing Line Platform Level 12/9/2020 XC-3 Off-Site Center Core Existing Sections 12/9/2020 XU-1 Off-Site “U” Stairs Existing Lexington Line Platform Level 12/9/2020 XU-2 Off-Site “U” Stairs Existing Flushing Line Passageway Level 12/9/2020 XU-3 Off-Site “U” Stairs Existing Sections 12/9/2020 PE-1 Off-Site East End Proposed Flushing Line Platform Level 12/9/2020 PE-2 Off-Site East End Proposed Sections 12/9/2020 PC-1 Off-Site Center Core Proposed Flushing Line Passageway Level 12/9/2020 PC-2 Off-Site Center Core Proposed Flushing Line Platform Level 12/9/2020 PC-3 Off-Site Center Core Proposed Sections 12/9/2020 PU-1 Off-Site “U” Stairs Proposed Lexington Line Platform Level 12/9/2020 PU-2 Off-Site “U” Stairs Proposed Flushing Line Passageway Level 12/9/2020 PU-3 Off-Site “U” Stairs Proposed Sections 12/9/2020
+```
+- [p089_c0002] 2. Such development shall conform to all applicable provisions of the Zoning Resolution except for the modifications specifically granted in this resolution and shown on the plans listed above which have been filed with this application. All zoning computations are subject to verification and approval by the New York City Department of Buildings. 3. Such development shall conform to all applicable laws and regulations relating to its construction, operation, and maintenance. 4. Development pursuant to this resolution shall be allowed only after the restrictive declaration attached herein as Exhibit A to this report, with such administrative changes as are acceptable to Counsel to the Department of City Planning, has been executed and recorded in the Office of the City Register, New York County. Such restrictive declaration shall be deemed incorporated herein as a condition of this resolution.
+[p089_c0003] _25_
+[p089_c0004] _C 210370 ZSM_
+[p089_c0005] _Master Page # 89 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 90
+
+- [p090_c0001] 5. The Development shall include those mitigation measures listed in the Final Environmental Impact Statement (CEQR No. 21DCP020M) issued on September 10, 2020 and identified as practicable. 6. All leases, subleases, or other agreements for use or occupancy of space at the subject property shall give actual notice of this special permit to the lessee, sublessee, or occupant. 7. Upon failure of any party having any right, title, or interest in the property that is the subject of this application, or the failure of any heir, successor, assign, or legal representative of such party, to observe any of the covenants, restrictions, agreement, terms or conditions of this resolution whose provisions shall constitute conditions of the special permit hereby granted, the City Planning Commission may, without the consent of any other party, revoke any portion of or all of said special permit. Such power of revocation shall be in addition to and not limited to any other powers of the City Planning Commission, or of any other agency of government, or any private person or entity. Any such failure as stated above, or any alteration in the development that is the subject of this application that departs from any of the conditions listed above, is grounds for the City Planning Commission or the City Council, as applicable to disapprove any application for modification, cancellation or amendment of the special permit hereby granted. 8. Neither the City of New York nor its employees or agents shall have any liability for money damage by reason of the City's or such employee's or agent's failure to act in accordance with the provisions of this special permit.
+[p090_c0002] The above resolution (C 210370 ZSM), duly adopted by the City Planning Commission on September 22, 2021 (Calendar No. 22), is filed with the Office of the Speaker, City Council, and the Borough President together with a copy of the plans of the development, in accordance with the requirements of Section 197-d of the New York City Charter.
+[p090_c0003] KENNETH J. KNUCKLES, ESQ., Vice Chairman DAVID BURNEY, RICHARD W. EADDY, HOPE KNIGHT, ANNA HAYES LEVIN, ORLANDO MARIN, LARISA ORTIZ, RAJ RAMPERSHAD Commissioners
+[p090_c0004] ALLEN P. CAPPELLI, ESQ., ALFRED C. CERULLO, III, Commissioners, Recused.
+[p090_c0005] _26_
+[p090_c0006] _C 210370 ZSM_
+[p090_c0007] _Master Page # 90 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 91
+
+### [p091_c0001] BOROUGH PRESIDENT RECOMMENDATION
+[p091_c0002] Project Name: 343 Madison Avenue / MTA HQ
+[p091_c0003] Applicant: Boston Properties
+[p091_c0004] Applicant's Administrator: Zachary Bernstein
+[p091_c0005] Application # 210370ZSM
+[p091_c0006] Borough: Manhattan
+[p091_c0007] CEQR Number: 21DCP020M
+[p091_c0008] Validated Community Districts: M05
+### [p091_c0009] Docket Description:
+[p091_c0010] CD 05 C 210370 ZSM IN THE MATTER OF an application submitted by BP 347 Madison Associates, LLC and Metropolitan Transportation Authority pursuant to Sections 197-c and 201 of the New York City Charter for the grant of a special permit pursuant to Section 81-633 of the Zoning Resolution to allow an increase in floor area in excess of the basic maximum floor area ratio established in the Table in Section 81-63 (Special Floor Area Provisions for the Vanderbilt Corridor Subarea) up to a maximum floor area as set forth in such Table, in connection with a proposed commercial development, on property located at 343 Madison Avenue (Block 1279, Lots 23, 24, 25 & 48), in a C5-3 District within the Special Midtown District (Vanderbilt Corridor Subarea). Plans for this proposal are on file with the City Planning Commission and may be seen at 120 Broadway, 31st Floor, New York, N.Y. 10271-0001.
+[p091_c0011] Please use the above application number on all correspondence concerning this application
+[p091_c0012] RECOMMENDATION: Conditional Favorable
+[p091_c0013] Please attach any further explanation of the recommendation on additional sheets as necessary
+### [p091_c0014] CONSIDERATION:
+[p091_c0015] Recommendation submitted by MN BP
+[p091_c0016] Date: 8/3/2021 11:10 AM
+[p091_c0017] _Master Page # 91 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 92
+
+### [p092_c0001] OFFICE OF THE PRESIDENT BOROUGH OF MANHATTAN THE CITY OF NEW YORK
+[p092_c0002] 1 Centre Street, 19th floor, New York, NY 10007 (212) 669-8300 p (212) 669-4306 f 431 West 125th Street, New York, NY 10027 (212) 531-1609 p (212) 531-4615 f www.manhattanbp.nyc.gov
+[p092_c0003] Gale A. Brewer, Borough President
+[p092_c0004] August 3, 2021
+### [p092_c0005] Recommendation on ULURP Application Nos. C210369ZSM and C210370ZSM 343 Madison Avenue – Metropolitan Transportation Authority Headquarters By Boston Properties and the Metropolitan Transportation Authority
+### [p092_c0006] PROPOSED ACTIONS
+[p092_c0007] Boston Properties and the Metropolitan Transportation Authority (“the Applicants”) are seeking two Zoning Special Permits from the City Planning Commission (“CPC”) to facilitate the redevelopment of a site located at 341-347 Madison Avenue (“the Project Site”). The special permits follow provisions of the Vanderbilt Corridor Subarea within the East Midtown Subdistrict of the Special Midtown District, allowing both additional floor area and related modifications of certain district plan requirements and zoning restrictions in exchange for on-site and off-site improvements to the mass transit circulation network of Grand Central Terminal. These special permits are pursuant to ZR § 81-633 and ZR § 81-634 respectively.
+[p092_c0008] Pursuant to ZR § 81-633, a development or enlargement may be granted floor area in excess of the maximum base floor area ratio (“FAR”) up to an FAR of 30.0 if improvements are made to the pedestrian or mass transit circulation network above- or below-grade, as well as to the ground floor level of the building, with particular attention paid to building design and sustainable design measures. Any floor area in excess of the maximum base FAR is subject to a special permit by the CPC with specific findings laid out in ZR § 81-633(b).
+[p092_c0009] Pursuant to ZR § 81-634, a development or enlargement may also be granted certain modifications related to the additional floor area, including modifications to street walls, height, and setback regulations as well as mandatory plan elements. Any such modifications are subject to an additional special permit by the CPC with specific findings laid out in ZR § 81-634(c).
+### [p092_c0010] BACKGROUND
+### [p092_c0011] Area Context
+[p092_c0012] The Project Site is located within the Vanderbilt Corridor Subarea of the East Midtown Subdistrict of the Special Midtown District. The Vanderbilt Corridor was established in 2015 (Application No. N150127ZRM) in order to facilitate the development of modern commercial
+[p092_c0013] _Master Page # 92 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 93
+
+### [p093_c0001] Nos. C210369ZSM and C210370ZSM – 343 Madison Avenue Page 2 of 9
+[p093_c0002] space around Grand Central Terminal while also addressing transit and pedestrian infrastructure challenges, and allowing transfers of unused development rights of landmark buildings within the special district. In 2017, the Vanderbilt Corridor was incorporated into the East Midtown Subdistrict without substantive changes to its original provisions.
+[p093_c0003] The Project Site is located in Manhattan Community Board 5, while part of the proposed transit improvements are located in Community Board 6. The surrounding area is characterized by high-density commercial office buildings, consistent retail and street walls, transit infrastructure centered around Grand Central Terminal, and some scattered institutional and residential uses. Nearby building heights average several hundred feet, with some reaching a maximum of up to 800 feet, and One Vanderbilt reaching 1,400 feet in height.
+[p093_c0004] Much of the surrounding East Midtown Subdistrict is zoned as C5-3, a commercial district with a base maximum FAR of 15.0 for non-residential use and 10.0 for residential use. C5-2.5 is also mapped west of the Project Site, with a base maximum FAR of 12.0 for non-residential use and 10.0 for residential use, with options for floor area increases in exchange for recreation space. Floor area may be increased within the Vanderbilt Corridor Subarea through improvements to adjacent subway stations, transfer of development rights from landmark buildings, or through the provision of transit and public realm improvements.
+### [p093_c0005] Site Description
+[p093_c0006] The Project Site, currently owned by the Metropolitan Transportation Authority (“MTA”), is located on the western portion of Manhattan Block 1279, bounded by Madison Avenue, East 44 th Street, Vanderbilt Avenue, and East 45 th Street, and consists of four tax lots, numbered 23, 24, 25, and 48. The Project Site has a lot area of 25,104 square feet, and is zoned C5-3, allowing as-of-right a total zoned floor area of 376,560 square feet. Current uses of the site include a 13-story office building on Lot 23, a 19-story office building on Lot 24, a 5-story utility building on Lot 25, and a 20-story office building on Lot 48. The eastern portion of the block also includes a 22-story landmarked building containing the Yale Club of New York City, and a 20-story office building.
+[p093_c0007] In addition to the Project Site, the proposal includes off-site improvements to the Flushing Line platform at the Grand Central / 42 nd Street subway station located beneath Grand Central Terminal. The Flushing Line currently serves the 7 train, with transfer access at this station to the 4, 5, 6, and S trains, as well as Metro North lines running through Grand Central Terminal.
+### [p093_c0008] Project Description
+[p093_c0009] The Applicants are seeking to construct a 1,050-foot-tall commercial building with a total floor area of 925,630 square feet and a total zoned floor area of 753,120 square feet (or 30.0 FAR). The base of the building would be 321 feet, with a setback on all frontages and a cantilever over the utility building on Lot 25. The building’s lobby as well as ground floor retail spaces would
+[p093_c0010] _Master Page # 93 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 94
+
+### [p094_c0001] Nos. C210369ZSM and C210370ZSM – 343 Madison Avenue Page 3 of 9
+[p094_c0002] front Madison Avenue, while the proposed East Side Access transit entrance will be located at the corner of Madison Avenue and East 45 th Street.
+[p094_c0003] On-site transit improvements, pursuant to ZR § 81-633, would consist of the following:
+- [p094_c0004] • Three new 40-inch wide escalators connecting the corner entry at street level to the East Side Access concourse level; • A new 6-foot wide stair adjacent to the new escalators; • A new elevator connecting the corner entry at street level to the East Side Access concourse level, in full compliance with the Americans with Disabilities Act; • A new MTA back-of-house space beneath the Project Site accessible by the new elevator; and • A new double-height, 2,372-square-foot entrance area at the northwest corner of the Project Site.
+[p094_c0005] Off-site transit improvements, pursuant to ZR § 81-633, would consist of the following:
+- [p094_c0006] • Widening two platform stairs at the east end of the Flushing Line platform at Grand Central Terminal by approximately four feet and nine inches; • Widening two sets of stairs that connect the uptown Lexington Line platform to an existing passageway providing access to the existing Flushing Line platform stairs by approximately one foot and three inches each; and • Constructing a new extension of the existing Flushing Line transfer passageway, as well as two new 5-foot-wide stairs and a 10-foot, 8-inch wide stair connecting the passageway extension and the Flushing Line platform.
+[p094_c0007] Pursuant to the request for proposals (“RFP”), originally issued by the MTA in June of 2013, the MTA will ground lease the property to Boston Properties, who in exchange will pay the MTA both a base rent and a payment in lieu of taxes (“PILOT”), both negotiated between the MTA and Boston Properties. While the PILOT will go directly to the MTA, revenue generated through the base rent will be used to fund the off-site transit improvements listed above. The base rent was calculated by the MTA in order to both meet a reasonable rent price as well as incorporate expected costs of the off-site transit improvements.
+### [p094_c0008] COMMUNITY BOARD RECOMMENDATIONS
+[p094_c0009] Manhattan Community Boards 5 and 6 were both briefed by the Applicants during May and June of 2021. Both boards were given a 60-day referral period to opine and present a resolution recommending approval or disapproval of the application with or without conditions.
+[p094_c0010] Manhattan Community Board 5 was briefed at their Joint Land Use, Housing, and Zoning and Transportation and Environment Committee meetings during May and June of 2021. At these two meetings, several concerns were raised, including the increase in shadows and decrease in
+[p094_c0011] _Master Page # 94 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 95
+
+### [p095_c0001] Nos. C210369ZSM and C210370ZSM – 343 Madison Avenue Page 4 of 9
+[p095_c0002] sky exposure caused by the proposed development, the height of the street wall as proposed, increases in traffic and pedestrian volume that would come with this project, funding coming from revenue on the site and not separately from the developer, and the improvements as not commensurate with the bonus granted. On June 10, 2021, Manhattan Community Board 5 submitted a resolution recommending disapproval of the application with the following conditions:
+- [p095_c0003] • Require the project to meet the daylighting requirements of the current zoning; • Enhance the proposed below-grade public transit improvements so as to justify the additional floor area requested; • Lower the street wall height of the proposed building; and • Reduce the width of the proposed lobby to accommodate the required retail frontage on Madison Avenue.
+[p095_c0004] Manhattan Community Board 6 was briefed at their May Land Use and Waterfront meeting, where several concerns were raised, including the increase in shadows and decrease in sky exposure caused by the proposed development, funding coming from revenue on the site and not separately from the developer, and the improvements as not commensurate with the bonus granted. On June 10, 2021, Manhattan Community Board 6 submitted a resolution recommending disapproval of the application with the following conditions:
+- [p095_c0005] • Require the project to meet the daylighting requirements of the current zoning; • Require the project to meet the street wall and setback requirements of the current zoning; • Ensure that the revenue generated from rent on the site be used for improvements to transit infrastructure benefiting the community where the building is located; • Relocate the loading facilities on East 45 th Street to maintain retail frontage and pedestrian interest at street level; and • Require the project team to develop a building enclosure that surpasses the requirements of the 2020 New York City Energy Code.
+### [p095_c0006] BOROUGH BOARD RECOMMENDATION
+[p095_c0007] The Manhattan Borough Board received a presentation from the Applicants about this application at its July 15, 2021 meeting. Manhattan Borough Board members raised questions and concerns which were fielded by representatives of the Applicants.
+[p095_c0008] Informed by this discussion, as well as by the meetings and resolutions of individual Manhattan community boards, the Manhattan Borough Board voted to recommend disapproval of the application with the following conditions:
+- [p095_c0009] • Require the proposed building to meet the daylighting, street wall, and setback requirements of the current zoning;
+[p095_c0010] _Master Page # 95 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 96
+
+### [p096_c0001] Nos. C210369ZSM and C210370ZSM – 343 Madison Avenue Page 5 of 9
+- [p096_c0002] • Enhance the proposed transit improvements on-site and off-site to justify the requested additional floor area; • Reduce the width of the proposed lobby to accommodate retail frontage requirements along Madison Avenue in the Vanderbilt Corridor Subarea; • Require the proposed building to meet or exceed the 2020 New York City Energy Code; • Require the proposed loading facilities on East 45 th Street to be relocated to maintain consistent retail frontage; and • Commit any rent generated on site to local transit improvements.
+### [p096_c0003] BOROUGH PRESIDENT’S COMMENTS
+[p096_c0004] I believe the Applicants have presented a thorough and thoughtful proposal for a development that will provide transit improvements that are pivotal for East Midtown, a crucial transit hub. However, the local community boards have raised substantive issues with the proposed project. I have considered every concern raised by both Manhattan Community Boards 5 and 6, as well as by the Manhattan Borough Board, and conveyed their issues and others with the MTA and the developer in numerous discussions. On July 27, 2021, I visited the sites of the off-site improvements at Grand Central Terminal with the MTA to fully understand the scope of these projects, the logic behind the original RFP, and the continued commitment by the MTA to mass transit infrastructure in East Midtown.
+[p096_c0005] I still have several concerns:
+### [p096_c0006] Floor Area Bonus Rationale
+[p096_c0007] The Applicants have laid out a clear rationale for the floor area bonus they are proposing. However, aspects of the argument extend a rationale of the Zoning Resolution beyond its intended purpose, leaving room for debate as to whether the proposed transit improvements are truly commensurate with the bonus being sought. As the local community boards have recognized, I find that a further assessment is needed to determine whether such a proposal is consistent and justifiable.
+[p096_c0008] The provision allowing such a floor area bonus through CPC special permit is found in ZR § 81-633, where certain findings are required to be met in order for the CPC to approve of such an application. These findings include appropriateness related to mass transit access, zoning lot size, wide street frontage, and adjacency to open areas above Grand Central Terminal; significance and quality of both above- and below-grade circulation improvements; significance of the public benefit created by the project; and quality of design of the building. While the proposed project poses concerns regarding light and air quality on adjacent streets, I believe the Applicants have made a case for meeting these requirements. Whether the public benefit merits the floor area bonus, however, requires further analysis.
+[p096_c0009] The rationale of the Applicants primarily references the Priority Improvement List found in ZR § 81-682. While the site in question is located in the Vanderbilt Corridor Subarea, and this list
+[p096_c0010] _Master Page # 96 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 97
+
+### [p097_c0001] Nos. C210369ZSM and C210370ZSM – 343 Madison Avenue Page 6 of 9
+[p097_c0002] technically applies only to sites located in either the Grand Central Transit Improvement Zone Subarea or the Other Transit Improvement Zone Subarea, the application proposes transit improvements which are specifically laid out in the list with equivalent floor area bonuses for each by type. For the project's off-site improvements, the Applicants have proposed 160,000 square feet in bonus floor area as is consistent with the list. The Applicants then argue that the rationale of this list should be extended to the on-site improvements proposed. The similarities between the East Side Access entrance and those within the Priority Improvement List may be reasonably understood as similar. The Applicants propose that the East Side Access entrance consists of three "Type 1" improvements and one "Type 3" improvement, totaling 240,000 square feet in bonus floor area.
+[p097_c0003] A variety of factors were considered in developing the Priority Improvement List. To extend such a rationale to a separate on-site improvement was certainly not the intention of this provision. Not only is the East Side Access entrance not relevant to the list, but as an on-site improvement, it provides a public benefit valued differently from improvements to existing off-site transit infrastructure. As this improvement does not exist within the Priority Improvement List, the Applicants can argue for any number of equivalent floor area bonuses. For example, as "Type 1" improvements include "new or expanded off-street entrances," one may argue that only 40,000 bonus square feet should be awarded for this improvement. The 240,000 bonus square feet proposed is arguably overgenerous given the extent of the East Side Access improvement.
+[p097_c0004] There is a plethora of existing needs in the local mass transit system and public realm. These needs include items listed on the Priority Improvement List, as well as the list of projects identified by the East Midtown Governing Group Concept Plan. Given the significance of this project and the floor area bonus being sought, I believe that the public benefit to the local community should be maximized to be fully justified.
+[p097_c0005] The Applicants have made the following commitment to my office regarding improvement to the public realm:
+- [p097_c0006] • Work with the New York City Department of Transportation ("DOT") to fund and, at the discretion of DOT, design and construct a sidewalk widening along the north side of 44 th Street between Vanderbilt and Madison Avenues as consistent with the East Midtown Governing Group Concept Plan and in consideration of the needs of the Yale Club.
+### [p097_c0007] Dedicated On-Site Space for the Arts
+[p097_c0008] I strongly believe that new developments like this one offer unique opportunities to support and highlight the New York arts community. Too often we miss that opportunity. This project should contain a significant art component accessible to the public, and commensurate with the scale of the proposed building and its site.
+[p097_c0009] _Master Page # 97 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 98
+
+### [p098_c0001] Nos. C210369ZSM and C210370ZSM – 343 Madison Avenue Page 7 of 9
+[p098_c0002] The Applicants have made the following commitments to my office regarding arts in the building:
+- [p098_c0003] • Provide opportunities for artists to gain exposure through installations in the on-site transit entrance, under MTA's Arts for Transit Program; • Provide free "pop-up" space for artists within available retail space prior to rent-up; and • Provide space within the building for use by artists or New York-based arts organizations, at a cost to the tenant equivalent to the local commercial tax rate in addition to utility expenses. The space will be at least 500 square feet if at grade or 1,000 square feet in other locations, to be offered for a period of five years from initial rent up of the building.
+### [p098_c0004] Accessible Office Layouts
+[p098_c0005] Related to a commitment to the arts, this office tower could better support smaller businesses and nonprofit tenants. Not every business can afford floorplates as large as the ones proposed in this project. Availability of office space in this city is an ongoing issue, and a proactive strategy to facilitate use of these spaces by smaller tenants is essential. Programs like Durst Ready, an initiative of the Durst Organization, work to support tenants in office buildouts and through other services that ensure the success of small and large businesses alike. Continuing an innovative approach to commercial development, property owners must do more to support their tenants and recognize the symbiotic nature of their relationships.
+[p098_c0006] I urge the Applicants to divide floorplates and price spaces in ways that invite and support small businesses and nonprofits struggling in a competitive real estate environment.
+### [p098_c0007] Rent and PILOT Structure
+[p098_c0008] As this project involves proposed on- and off-site transit improvements, funding on the part of the developer must be allocated to cover these improvement costs. It is my understanding that when a private developer is required through a special permit like this one to provide any public benefit as part of the proposal, the developer must allocate dedicated funds for those improvements. However, in this case, the RFP distributed by the MTA proposes a funding stream that is not set aside but built into the rent structure for the ground lease on this site. Therefore, part of the rent generated at 343 Madison Avenue will be used to fund the off-site improvements proposed at Grand Central Terminal.
+[p098_c0009] I understand that the base rent for the site was calculated to incorporate this cost, and that it would be lower if funding for the improvements were not included. I also understand that a payment in lieu of taxes ("PILOT") structure is required by the RFP, and that both the PILOT- and rent-generated revenue that is not already dedicated to the off-site improvements will be directed to the MTA's Capital Program, covering capital project costs across the MTA system. However, I remain concerned that the funding for these off-site improvements is conflated with
+[p098_c0010] _Master Page # 98 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 99
+
+### [p099_c0001] Nos. C210369ZSM and C210370ZSM – 343 Madison Avenue Page 8 of 9
+[p099_c0002] the rent generated through the ground lease, and I believe that special permits like this one intend for a separate pot of money to go toward any public benefits attached to a project. This is a unique project in that the MTA remains owner of the property, and I recognize that the revenue structure was developed by the MTA and not Boston Properties. I agree that the MTA should carry out the construction of these improvements, as they are best suited to oversee improvements to their own system, and I urge the Applicants to consider a revenue structure that separates funds generated through rent dedicated to the Capital Program, and funds intended for off-site improvements specific to this project.
+### [p099_c0003] BOROUGH PRESIDENT’S RECOMMENDATION
+[p099_c0004] I therefore recommend approval of the application with conditions . This recommendation is contingent on the Applicants’ completion of the following commitments:
+- [p099_c0005] • Work with DOT to fund and, at the discretion of DOT, design and construct a sidewalk widening along the north side of 44 th Street between Vanderbilt and Madison Avenues as consistent with the East Midtown Governing Group Concept Plan and in consideration of the needs of the Yale Club; • Provide opportunities for artists to gain exposure through installations in the on-site transit entrance, under MTA’s Arts for Transit Program; • Provide free “pop-up” space for artists within available retail space prior to rent-up; and • Provide space within the building for use by artists or New York-based arts organizations, at a cost to the tenant equivalent to the local commercial tax rate in addition to utility expenses. The space will be at least 500 square feet if at grade or 1,000 square feet in other locations, to be offered for a period of five years from initial rent up of the building.
+[p099_c0006] In addition to these conditions, I urge the Applicants to consider the following recommendations put forth by the Manhattan Borough Board in their resolution dated June 17, 2021:
+- [p099_c0007] • That the proposed building meet the daylighting, street wall, and setback requirements of the current zoning; • That the Applicants enhance the proposed transit improvements on-site and off-site to justify the requested additional floor area; • That the Applicants reduce the width of the proposed lobby to accommodate retail frontage requirements along Madison Avenue in the Vanderbilt Corridor Subarea;
+[p099_c0008] _Master Page # 99 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 100
+
+### [p100_c0001] Nos. C210369ZSM and C210370ZSM – 343 Madison Avenue Page 9 of 9
+- [p100_c0002] • That the proposed building meet or exceed the 2020 New York City Energy Code; • That the proposed loading facilities be relocated to maintain consistent retail frontage; and • That any rent generated on site be committed to local transit improvements.
+[p100_c0003] _Gale A. Brewer Manhattan Borough President_
+[p100_c0004] FOR REFERENCE PURPOSES ONLY
+[p100_c0005] _Master Page # 100 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 101
+
+### [p101_c0001] COMMUNITY/BOROUGH BOARD RECOMMENDATION
+[p101_c0002]
+
+```text
+Project Name: 343 Madison Avenue / MTA HQ Applicant: Boston Properties Applicant's Primary Contact: Zachary Bernstein Application # 210369ZSM Borough: CEQR Number: 21DCP020M Validated Community Districts: M05
+```
+### [p101_c0003] Docket Description:
+[p101_c0004] IN THE MATTER OF an application submitted by BP 347 Madison Associates, LLC and Metropolitan Transportation Authority pursuant to Sections 197-c and 201 of the New York City Charter for, in conjunction with the grant of a special permit pursuant to 81-633 of the Zoning Resolution (Special permit for Grand Central public realm improvements), the grant of a special permit pursuant to Section 81-634 to modify:
+- [p101_c0005] 1. the street wall requirements of Sections 81-43 (Street Wall Continuity along Designated Streets) and 81-671 (Special Street Wall Requirements); 2. the height and setback requirements of Section 81-27 (Alternative Height and Setback Regulations - Daylight Evaluation); and 3. the mandatory district plan elements of Section 81-42 (Retail Continuity Along Designated Streets), Section 81-45 (Pedestrian Circulation Space), Section 37-50 (REQUIREMENTS FOR PEDESTRIAN CIRCULATION SPACE), Sections 81-47 (Major Building Entrances), Section 81-674 (Ground floor use provisions), Section 81-44 (Curb Cut Restrictions), and Section 81-675 (Curb cut restrictions and loading berth requirements); in connection with a proposed commercial development, on property located at 343 Madison Avenue (Block 1279, Lots 23, 24, 25 & 48), in a C5-3 District, within the Special Midtown District (Vanderbilt Corridor Subarea).
+[p101_c0006] Plans for this proposal are on file with the City Planning Commission and may be seen at 120 Broadway, 31st Floor, New York, N.Y. 10271.
+[p101_c0007] Please use the above application number on all correspondence concerning this application
+[p101_c0008]
+
+```text
+RECOMMENDATION: Conditional Unfavorable # In Favor: 35 # Against: 0 # Abstaining: 1 Total members appointed to the board: 43 Date of Vote: 6/10/2021 12:00 AM Vote Location: Virtual
+```
+[p101_c0009] Please attach any further explanation of the recommendation on additional sheets as necessary
+[p101_c0010]
+
+```text
+Date of Public Hearing: 6/10/2021 3:00 PM Was a quorum present? Yes A public hearing requires a quorum of 20% of the appointed members of the board but in no event fewer than seven such members Public Hearing Location: Virtual
+```
+[p101_c0011]
+
+```text
+CONSIDERATION: CB5 Resolution attached. Recommendation submitted by MN CB5 Date: 7/1/2021 4:44 PM
+```
+[p101_c0012] _Master Page # 101 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 102
+
+### [p102_c0001] MANHATTAN COMMUNITY BOARD FIVE
+[p102_c0002] Vikki Barbero, Chair
+[p102_c0003] 450 Seventh Avenue, Suite 2109 New York, NY 10123-2199 212.465.0907 f-212.465.1628
+[p102_c0004] Marisa Maack, District Manager
+[p102_c0005] June 14, 2021
+[p102_c0006] Marisa Lago Chair of the City Planning Commission 22 Reade Street New York, NY 10007
+[p102_c0007] Re: 341-347 Madison Ave, an application by BP 343 Madison Associates LLC, in partnership with the MTA, for two Vanderbilt Corridor Special Permits to facilitate the redevelopment of the site at 341-347 Madison Ave..
+[p102_c0008] Dear Chair Lago:
+[p102_c0009] At the regularly scheduled monthly Community Board Five meeting on Thursday, June 10, 2021, the following resolution passed with a vote of 35 in favor; 0 opposed; 1 abstaining:
+[p102_c0010] WHEREAS, BP 347 Madison Associates LLC (the developer of the site and an affiliate of Boston Properties) and the Metropolitan Transportation Authority (MTA), jointly the applicant (the "Applicant"), have applied for a set of waivers and special permits related to the redevelopment of the properties at 341-347 Madison Avenue between East 44th and 45th Streets, collectively known as 343 Madison Avenue, aka MTA HQ; and
+[p102_c0011] WHEREAS, The current building on the site was constructed in 1917, and beginning in 1979 served as the headquarters for the MTA that subsequently moved out of the buildings in 2014 with a request for proposals (RFP) in 2013, seeking a partner to redevelop the site for the purpose of generating revenue to the MTA; and
+[p102_c0012] WHEREAS, In 2016, after a bidding process, the MTA selected Boston Properties for a 99 years ground lease and to develop the site; and
+[p102_c0013] WHEREAS, In 2020, in accordance with the rules of the Vanderbilt Corridor subdistrict, the Applicant put forward this proposal to obtain special permits and waivers to facilitate the development; and
+[p102_c0014] WHEREAS, The proposed building would comprise approximately 753,120 square feet, with a base 15 FAR and a 15 FAR bonus for transit and public realm improvements, reaching the maximum authorized density of 30.0 FAR on a 25,104 square foot parcel, with a height of approximately 1,050 feet; and
+[p102_c0015] WHEREAS, To qualify for a bonus FAR, the Applicant is proposing the following transit upgrades:
+- [p102_c0016] • On site site improvements: ○ Construction of 1 stair, 3 escalators and an elevator from corner of Madison Avenue and East 45th Street to East Side Access (ESA) concourse • Off site improvements: ○ Widening two platform stairs at the east end of the Flushing Line (7) platform
+[p102_c0017] _www.cb5.org_
+[p102_c0018] _cb5_
+[p102_c0019] _OFFICE@CB5.ORG_
+[p102_c0020] _Master Page # 102 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 103
+
+- [p103_c0001] ○ Widening two sets of stairs that connect the Uptown Lexington Line to an existing passageway that provides access to existing Flushing Line platform stairs ○ Constructing a new extension of the existing Flushing Line passageway and three new stairs that would connect the passageway extension and the Flushing Line platform; and
+[p103_c0002] WHEREAS, On-site transit improvements would be performed at the expense of Boston Properties; and
+[p103_c0003] WHEREAS, Off-site transit improvements would be funded via bonds issued by the MTA, and the MTA would service these new bonds with the monies the agency receives from the developer in the form of ground lease payments and payments in lieu of taxes (PILOT); and
+[p103_c0004] WHEREAS, The Applicant proposes to widen the sidewalk on East 45th Street from approximately 10 feet to 15 feet wide; and
+[p103_c0005] WHEREAS, The proposed building would abut two buildings to the east, the Yale Club and 52 Vanderbilt Avenue, a commercial building, and would cantilever over the East Side Access vent building along East 44th Street next to the Yale Club; and
+[p103_c0006] WHEREAS, The Applicant has recently engaged the Yale Club in substantive discussions to address concerns about the impact of the proposed new building on the Club's operations and representatives of the Club testified to the progress of those discussions; and
+[p103_c0007] WHEREAS, The proposed project would produce important economic benefits for New York City as it recovers from the pandemic in both the construction and operations of the building, as was testified to in the public hearing; and
+[p103_c0008] WHEREAS, The building as proposed could not be constructed as of right and would require the following special permits and waivers in order to do so:
+- [p103_c0009] • Special permit pursuant to ZR Section 81-633 to authorize: Bonus floor area of 376,560 sf (15.0 FAR) for on-site and off-site improvements to the mass transit circulation network in the vicinity of Grand Central Terminal. • Special permit pursuant to ZR Section 81-634 to modify: • Street wall regulations; • Height and setback regulations; • Retail continuity requirements; • Ground floor use provisions; • Building entrance and recess requirements; • Curb cut and loading berth provisions; and
+[p103_c0010] WHEREAS, A special permit is requested to increase the base 15.0 FAR to 30.0 FAR in connection with the on-site and off-site public transit improvements; and
+[p103_c0011] WHEREAS, The proposed off-site transit improvements under the East Midtown Special District would qualify for a 6.4 additional FAR bonus, which leaves 8.6 FAR for consideration beyond the bonus generated by these off-site transit improvements; and
+[p103_c0012] WHEREAS, Community Board Five recognizes that development around major transit hubs such as Grand Central is generally appropriate in principle and that the proposed transit improvements are essential additions to the area; and
+[p103_c0013] WHEREAS, Community Board Five, however, does not believe these improvements as proposed are sufficient to justify the additional FAR requested given the substantial density the building will bring to
+[p103_c0014] _www.cb5.org_
+[p103_c0015] _cb5_
+[p103_c0016] _OFFICE@CB5.ORG_
+[p103_c0017] _Master Page # 103 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 104
+
+[p104_c0001] the area and the resulting increased demands on public transit in a corridor that already is experiencing a significant increase in density from the East Midtown and Vanderbilt Corridor rezonings; and
+[p104_c0002] WHEREAS, the building massing is not compliant with the Vanderbilt Corridor daylight evaluation requirements, causing the sidewalks to be darker than a compliant massing would, and Community Board Five believes the building massing should comply with the requirements of the existing zoning, to minimize the encroachment on the sky exposure plane; and
+[p104_c0003] WHEREAS, Retail frontage on Madison Avenue is a priority to maintain a vibrant and welcoming street experience for pedestrians, and the proposed lobby width is unnecessary and should be reduced to comply with the existing zoning; and
+[p104_c0004] WHEREAS, CB5 recognizes that a street wall height in excess of the compliant 150 feet may be appropriate, the proposed 321 foot street wall height is excessive and should be lowered; and
+[p104_c0005] WHEREAS, CB5 does not object to the special permits requested related to entrance recess, curb cut, loading berth, and street wall design to accommodate the entrance to East Side Access; therefore be it
+[p104_c0006] RESOLVED , Community Board Five recommends denial of the special permits requested in this application unless the above concerns are addressed, specifically enhanced below grade public transit improvements, a lower street wall height, compliant daylight evaluation score, and a reduction in lobby width to accommodate the required retail frontage on Madison Avenue.
+[p104_c0007] Thank you for the opportunity to comment on this matter.
+[p104_c0008] Sincerely,
+[p104_c0009] _Vikki Barbero Chair_
+[p104_c0010] _Layla Law-Gisiko Chair, Land Use, Housing and Zoning Committee Committee_
+[p104_c0011] _E.J. Kalafarski Chair, Transportation/Environment_
+[p104_c0012] CC: Hon. Corey Johnson, Council Speaker Hon. Brad Hoylman, State Senate, District 27 Hon. Liz Krueger, State Senator, District 28 Hon. Keith Powers, Councilmember, District 4 Manhattan Borough President, Gale Brewer Sarah Carroll, Chair, Landmarks Preservation Commission Edward Pincar Jr., Department of Transportation Alfred C. Cerullo, III, President/CEO Grand Central Partnership Sarah Feinberg, MTA New York City Transit
+[p104_c0013] _www.cb5.org OFFICE@CB5.ORG Master Page # 104 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 105
+
+### [p105_c0001] COMMUNITY/BOROUGH BOARD RECOMMENDATION
+[p105_c0002]
+
+```text
+Project Name: 343 Madison Avenue / MTA HQ Applicant: Boston Properties Applicant's Primary Contact: Zachary Bernstein Application # 210369ZSM Borough: CEQR Number: 21DCP020M Validated Community Districts: M05
+```
+### [p105_c0003] Docket Description:
+[p105_c0004] IN THE MATTER OF an application submitted by BP 347 Madison Associates, LLC and Metropolitan Transportation Authority pursuant to Sections 197-c and 201 of the New York City Charter for, in conjunction with the grant of a special permit pursuant to 81-633 of the Zoning Resolution (Special permit for Grand Central public realm improvements), the grant of a special permit pursuant to Section 81-634 to modify:
+- [p105_c0005] 1. the street wall requirements of Sections 81-43 (Street Wall Continuity along Designated Streets) and 81-671 (Special Street Wall Requirements); 2. the height and setback requirements of Section 81-27 (Alternative Height and Setback Regulations - Daylight Evaluation); and 3. the mandatory district plan elements of Section 81-42 (Retail Continuity Along Designated Streets), Section 81-45 (Pedestrian Circulation Space), Section 37-50 (REQUIREMENTS FOR PEDESTRIAN CIRCULATION SPACE), Sections 81-47 (Major Building Entrances), Section 81-674 (Ground floor use provisions), Section 81-44 (Curb Cut Restrictions), and Section 81-675 (Curb cut restrictions and loading berth requirements); in connection with a proposed commercial development, on property located at 343 Madison Avenue (Block 1279, Lots 23, 24, 25 & 48), in a C5-3 District, within the Special Midtown District (Vanderbilt Corridor Subarea).
+[p105_c0006] Plans for this proposal are on file with the City Planning Commission and may be seen at 120 Broadway, 31st Floor, New York, N.Y. 10271.
+[p105_c0007] Please use the above application number on all correspondence concerning this application
+[p105_c0008]
+
+```text
+RECOMMENDATION: Conditional Unfavorable # In Favor: 40 # Against: 0 # Abstaining: 5 Total members appointed to the board: 45 Date of Vote: 6/9/2021 12:00 AM Vote Location: On Zoom
+```
+[p105_c0009] Please attach any further explanation of the recommendation on additional sheets as necessary
+[p105_c0010]
+
+```text
+Date of Public Hearing: 5/24/2021 6:30 PM Was a quorum present? Yes A public hearing requires a quorum of 20% of the appointed members of the board but in no event fewer than seven such members Public Hearing Location: On Zoom, see https://cbsix.org/meetings-calendar/ for link
+```
+[p105_c0011] CONSIDERATION: Please see attached resolution for more details, but the gist of the comment is as follows:
+[p105_c0012] Manhattan Community Board Six disapproves of this application unless the following are addressed:
+- [p105_c0013] · that the project meet the daylighting requirements of the current zoning · that the project meet the current zoning requirements for street wall and setback requirements · that the rental monies generated be used for improvements to transit infrastructure benefiting the community where the building is located · that the loading facilities on East 45th Street be relocated to maintain retail frontage and pedestrian interest at street level · that the project team develop a building enclosure that surpasses the requirements of the 2020 New York City Energy Code;
+[p105_c0014] BE IT FURTHER RESOLVED that even though CB6 is supportive of the transit improvements, CB6 requests an updated design that addresses the community's concerns enumerated above.
+[p105_c0015]
+
+```text
+Recommendation submitted by MN CB6 Date: 6/14/2021 2:34 PM
+```
+[p105_c0016] _Master Page # 105 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 106
+
+[p106_c0001] KYLE ATHAYDE CHAIR
+[p106_c0002] SANDRO SHERROD, FIRST VICE CHAIR MARK THOMPSON, SECOND VICE CHAIR
+> [p106_c0003] The seal of the City of New York, featuring an eagle with a shield, holding a sword and arrows, surrounded by the text 'SIGILLUM CIVITATIS NOVI Eboraci' and the year '1625'.
+[p106_c0004] THE CITY OF NEW YORK MANHATTAN COMMUNITY BOARD SIX 211 EAST 43RD STREET, SUITE 1404 NEW YORK, NY 10017
+[p106_c0005] JESÚS PÉREZ DISTRICT MANAGER
+[p106_c0006] BRIAN VAN NIEUWENHOVEN, TREASURER BEATRICE DISMAN, ASST. TREASURER SEEMA SHAH, SECRETARY MATT BONDY, ASST. SECRETARY
+### [p106_c0007] VIA E-MAIL
+[p106_c0008] June 10, 2021
+[p106_c0009] Marisa Lago, Chair City Planning Commission 120 Broadway, 31st Floor New York, NY 10271
+### [p106_c0010] Resolution on a ULURP application by BP 343 Madison Associates LLC and the MTA for two Vanderbilt Corridor special permits (ZR 81-633 and 81-634) to redevelop 341-347 Madison Ave
+[p106_c0011] At the June 9, 2021 Full Board meeting of Manhattan Community Board Six, the Board adopted the following resolution:
+[p106_c0012] WHEREAS , at the May 24, 2021 Land Use meeting of Manhattan Community Board Six, the committee was presented with the application for 343 Madison Avenue;
+[p106_c0013] WHEREAS , this is an application by BP 343 Madison Associates LLC, in partnership with the MTA, for two Vanderbilt Corridor special permits (ZR 81-633 and 81-634) to facilitate the redevelopment of the site with a maximum 30.0 FAR commercial building located at 341-347 Madison Ave, in the East Midtown neighborhood of Manhattan Community District 5, with transit improvements located in Community Districts 5 and 6;
+[p106_c0014] WHEREAS , the Applicant is requesting a Special Permit for Grand Central Public Realm Improvements based on transit improvements;
+[p106_c0015] WHEREAS , improvements on site include a double-height entrance to the LIRR East Side Access terminal at the intersection of Madison Avenue and East 45th Street, with three new escalators, a new stair, and an elevator providing public access from street level to the East Side Access mezzanine;
+[p106_c0016] WHEREAS , the project includes the following off-site transit improvements: widening the existing platform stairs at the eastern end of the Flushing Line Platform; widening two stairs that lead from the uptown Lexington Line (4/5/6) platform to a passageway connecting to the Flushing Line platform via two existing stairs; and constructing a new transfer passageway as an extension of the existing passageway and constructing two
+[p106_c0017] _Master Page # 106 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 107
+
+[p107_c0001] new 5-foot wide Flushing Line platform stairs and a 10-foot, 8-inch wide stair connecting the platform and the passageway extension;
+[p107_c0002] WHEREAS , the Applicant seeks a special permit under 81-633 that would increase the maximum permitted floor area from the 15 FAR allowed as of right to 30 FAR;
+[p107_c0003] WHEREAS , the Applicant seeks a special permit under 81-634 that would modify certain mandatory district plan elements, street wall height, height and setback regulations, and curb cut regulations;
+[p107_c0004] WHEREAS , the proposed street wall will rise to nearly 322 feet at the street line prior to setback, more than double the street wall maximum of 150', before setback required without a special permit;
+[p107_c0005] WHEREAS , the proposed project will have a weighted daylight score of -108.9, whereas a daylight score of 75 is required without a special permit;
+[p107_c0006] WHEREAS , the City Planning Commission must find that "street wall or height and setback regulations will result in an improved distribution of bulk on the zoning lot that is harmonious with the height and setback goals of the Special Midtown District" (ZR 81-634 (c)(2));
+[p107_c0007] WHEREAS , the purpose of these regulations "is to offer maximum design flexibility while setting reasonable but firm standards to protect access of light and air to public streets and adjacent buildings" (ZR 81-254);
+[p107_c0008] WHEREAS , the proposed daylight evaluation score of -108.9 constitutes a substantial variation from the "reasonable but firm" daylighting standard and will severely impair access to light and air in the surrounding area;
+[p107_c0009] WHEREAS , in 2017 the passing score for daylighting in East Midtown outside the Vanderbilt Corridor was weakened to 66 and this proposal significantly fails either measure;
+[p107_c0010] WHEREAS , the project intends to lease the land for 99 years, and instead of paying taxes proposes a Payment in Lieu of Taxes (PILOT); where funds from the PILOT will be used to fund the proposed transit improvements;
+[p107_c0011] WHEREAS , the substantial transit improvements proposed by this project will ultimately be paid for through a PILOT, and not from developer's funds, which brings into question the purpose of providing the additional 15 FAR allowed by Special Permit;
+[p107_c0012] WHEREAS , "reasonable but firm standards" that can be so easily waived are not standards at all;
+[p107_c0013] _2_
+[p107_c0014] _Master Page # 107 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 108
+
+[p108_c0001] WHEREAS , a higher daylight evaluation score can be achieved with a lower street wall, standard setback, smaller floor plate or some combination thereof, and still provide a desirable building that is less impactful to the character of the area;
+[p108_c0002] WHEREAS , the language of the proposed City Planning Commission findings that justifies the substantial variance from the daylighting standard is unconvincing and could be used to justify nearly any building that produces any daylighting score;
+[p108_c0003] THEREFORE, BE IT RESOLVED that Manhattan Community Board Six disapproves of this application unless the following are addressed:
+- [p108_c0004] • that the project meet the daylighting requirements of the current zoning • that the project meet the current zoning requirements for street wall and setback requirements • that the rental monies generated be used for improvements to transit infrastructure benefiting the community where the building is located • that the loading facilities on East 45th Street be relocated to maintain retail frontage and pedestrian interest at street level • that the project team develop a building enclosure that surpasses the requirements of the 2020 New York City Energy Code;
+[p108_c0005] BE IT FURTHER RESOLVED that even though CB6 is supportive of the transit improvements, CB6 requests an updated design that addresses the community's concerns enumerated above.
+[p108_c0006] VOTE: 40 In Favor 0 Opposed 5 Abstention 1 Not Entitled
+[p108_c0007] Best regards,
+[p108_c0008] _Jesus Perez District Manager_
+[p108_c0009] Cc: Hon. Gale Brewer, Manhattan Borough President Hon. Keith Powers Council Member Adam Hartke, Chair, CB6 Land Use & Waterfront Committee Azka Mohyuddin, City Planner, NYC Department of City Planning Scott Williamson, City Planner, NYC Department of City Planning Applicant
+[p108_c0010] _3_
+[p108_c0011] _Master Page # 108 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 109
+
+### [p109_c0001] COMMUNITY/BOROUGH BOARD RECOMMENDATION
+[p109_c0002]
+
+```text
+Project Name: 343 Madison Avenue / MTA HQ Applicant: Boston Properties Applicant's Primary Contact: Zachary Bernstein Application # C210370ZSM Borough: Manhattan CEQR Number: 21DCP020M Validated Community Districts: M05
+```
+[p109_c0003]
+
+```text
+Docket Description:
+```
+[p109_c0004] Please use the above application number on all correspondence concerning this application
+[p109_c0005]
+
+```text
+RECOMMENDATION: Conditional Unfavorable # In Favor: # Against: # Abstaining: Total members appointed to the board: Date of Vote: 7/15/2021 7:00 PM Vote Location:
+```
+[p109_c0006] Please attach any further explanation of the recommendation on additional sheets as necessary
+[p109_c0007]
+
+```text
+Date of Public Hearing: Was a quorum present? No A public hearing requires a quorum of 20% of the appointed members of the board but in no event fewer than seven such members Public Hearing Location:
+```
+[p109_c0008]
+
+```text
+CONSIDERATION: Recommendation submitted by MN BP Date:
+```
+[p109_c0009] _Master Page # 109 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 110
+
+### [p110_c0001] MANHATTAN BOROUGH BOARD RESOLUTION July 15, 2021
+### [p110_c0002] RECOMMENDING DISAPPROVAL FOR AN APPLICATION BY BOSTON PROPERTIES AND THE METROPOLITAN TRANSPORTATION AUTHORITY FOR TWO SPECIAL PERMITS: APPLICATIONS NUMBER C210369ZSM AND C210370ZSM – 343 MADISON AVENUE, THE METROPOLITAN TRANSPORTATION AUTHORITY HEADQUARTERS
+[p110_c0003] WHEREAS, Boston Properties and the Metropolitan Transportation Authority (“MTA”) (“the Applicants”) seek two special permits from the City Planning Commission (“CPC”) pursuant to Sections 81-633 and 81-634 of the Zoning Resolution (“ZR”), facilitating the development of a 1,050-foot-tall office, retail, and residential tower at 341-347 Madison Avenue, the site of the former MTA headquarters, accompanied by on-site and off-site transit improvements relating to accessibility and circulation of the East Side Access and Flushing Line stations connected to Grand Central Terminal; and
+[p110_c0004] WHEREAS, at their May 5 and June 2, 2021 meetings, the Applicants briefed the Joint Land Use, Housing, and Zoning and Transportation and Environment Committees of Manhattan Community Board 5 on the application, where several issues were raised, including: the increase in shadows and decrease in sky exposure caused by the proposed development, the height of the street wall, increases in traffic and pedestrian volume that would come with this project, funding coming from revenue on the site and not separately from the developer, and the improvements as not commensurate with the bonus granted; and
+[p110_c0005] WHEREAS, at their May 24, 2021 meeting, the Applicants briefed the Land Use and Waterfront Committee of Manhattan Community Board 6, where several issues were raised, including: the increase in shadows and decrease in sky exposure caused by the proposed development, funding coming from revenue on the site and not separately from the developer, and the improvements as not commensurate with the bonus granted; and
+[p110_c0006] WHEREAS, on June 10, 2021, Manhattan Community Board 5 adopted a resolution recommending disapproval of the application with conditions, including: enforcement of daylighting requirements under the current zoning, enhancement to the proposed below-grade public transit improvements so as to justify the additional floor area requested, lowering the street wall height of the proposed building, and reduction of the width of the proposed lobby to accommodate the required retail frontage on Madison Avenue; and
+[p110_c0007] WHEREAS, on June 10, 2021, Manhattan Community Board 6 adopted a resolution recommending disapproval of the application with conditions, including: enforcement of daylighting requirements under the current zoning, enforcement of street wall and setback requirements under the current zoning, a requirement that the revenue generated from rent generated on the site be used for improvements to transit infrastructure benefiting the community where the building is located, relocation of the loading facilities on East 45 th Street to maintain retail frontage and pedestrian interest at street level, and a requirement that the project team
+[p110_c0008] _Master Page # 110 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 111
+
+[p111_c0001] develop a building enclosure that surpasses the requirements of the 2020 New York City Energy Code; and
+[p111_c0002] WHEREAS, on July 15, 2021, the Applicants briefed the Manhattan Borough Board, followed by discussion and a vote on the application.
+[p111_c0003] THEREFORE, BE IT RESOLVED, that the Manhattan Borough Board supports all recommendations made by Manhattan Community Boards 5 and 6 in their respective resolutions and recommends disapproval of Land Use Application C210370ZSM unless the following conditions are met:
+- [p111_c0004] 1. That the proposed building meet the daylighting, street wall, and setback requirements of the current zoning; 2. That the Applicants enhance the proposed transit improvements on-site and off-site to justify the requested additional floor area; 3. That the Applicants reduce the width of the proposed lobby to accommodate retail frontage requirements along Madison Avenue in the Vancorbin Corridor Subarea; 4. That the proposed building meet or exceed the 2020 New York City Energy Code; 5. That the proposed loading facilities on East 45 th Street be relocated to maintain consistent retail frontage; and 6. That any rent generated on site be committed to local transit improvements.
+[p111_c0005] _Gale A. Brewer Manhattan Borough President Chair of the Manhattan Borough Board_
+[p111_c0006] _Master Page # 111 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 112
+
+### [p112_c0001] Staff Summary
+### [p112_c0002] Metropolitan Transportation Authority
+### [p112_c0003] Schedule A
+### [p112_c0004] Schedule A Upfront Payments and Base Rent
+[p112_c0005]
+
+```text
+Upfront Payment $25 million, to be paid upon lease execution Second Upfront Payment $21,794,500.00, 1 to be paid upon the earlier of the Termination Expiration Date and the date that Lessee irrevocably waives the termination right Termination Expiration Date July 31, 2024 Rent Commencement Date 3 years following lease execution Years 1 – 2 $0.00 per annum* $0.00 per month Years 3 – 5 $10,897,250.00 per annum* $908,104.17 per month Years 6 – 10 $11,986,975.00 per annum* $998,914.58 per month Years 11 – 15 $13,185,672.50 per annum* $1,098,806.04 per month Years 16 – 20 $14,504,239.75 per annum* $1,208,686.65 per month Years 21 – 25 $15,954,663.73 per annum* $1,329,555.31 per month Years 26 – 30 $17,550,130.10 per annum* $1,462,510.84 per month Year 31 (30 th Anniversary of the Rent Commencement Date) On the 30th, 60th and 90th anniversaries of the Rent Commencement Date (each, a “Base Rent Adjustment”), the Base Rent will be reset to be the highest of (i) the scheduled Base Rent for such date (i.e., 110% of the Base Rent payable for the immediately preceding five-year period), (ii) 15% of the average annual actual gross revenues for the New Building for the preceding five years (including operating expense pass-throughs) plus PILOT escalations solely in the year of the Base Rent Adjustment, less PILOT solely in the year of the Base Rent Adjustment, and (iii) the prior year’s Base Rent plus the average Percentage Rent for the preceding five years. Following each Base Rent Adjustment, annual Base Rent payments (as adjusted for actual FAR) will increase by ten percent (10.0%) every five years.
+```
+[p112_c0006] * Numbers assume a 28 FAR New Building (Lessee will pay $18 per year for each zoning square foot above 28 FAR, to be increased by ten percent (10.0%) every five years from the Rent Commencement Date)
+[p112_c0007] _1 To be increased by $36 per additional zoning square foot above 28X based on the actual FAR included in the New Building._
+[p112_c0008] _Master Page # 112 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 113
+
+### [p113_c0001] 347 MADISON BOARD RESOLUTION METROPOLITAN TRANSPORTATION AUTHORITY
+[p113_c0002] WHEREAS, MTA (capitalized terms are defined in the staff summary accompanying this Resolution (the " Staff Summary ")) owns the Land and the existing office buildings located at 341, 345 and 347 Madison Avenue (the " Former HQ Property "), as well as the Vent Plant constructed as part of the East Side Access project on 44 th Street between Madison and Vanderbilt Avenues; and
+[p113_c0003] WHEREAS, the existing office buildings on the Former HQ Property are functionally obsolete and do not take advantage of the full zoning envelope that the City deems to be appropriate for commercial properties located in the new "Vanderbilt Corridor" zoning sub-district -- comprised of the five blocks bounded by 42 nd Street on the south, 47 th Street to the north, and Madison and Vanderbilt Avenues to the east and west -- that was established pursuant to the Vanderbilt Corridor Zoning; and
+[p113_c0004] WHEREAS, following an extensive RFP process that considered the proposed developer's construction capability, the overall return to MTA and the transit improvements associated with the proposed transaction, the MTA Board on February 22, 2016, pursuant to a Staff Summary and 347 Madison Board Resolution attached thereto (the " 2016 Staff Summary "), approved selection of BP 347 Madison Associates, LLC (" Developer "), an affiliate of Boston Properties Limited Partnership (" Boston Properties "), as the conditionally designated developer with whom MTA would proceed to negotiate the terms (consistent with the material terms set forth in the 2016 Staff Summary) of a 99-year triple net lease (the " Lease ") and related agreements, including guarantees of completion and pre-stabilization, revenue (the " Transaction Documents "), and authorized MTA to enter into a Pre-Lease Agreement with the negotiated forms of Transaction Documents attached (the " Pre-Lease Agreement "), subject to approval of the Transaction and Transaction Documents by the MTA Board following compliance by MTA with the State Environmental Quality Review Act (" SEQRA ") requirements for the proposed development project; and
+[p113_c0005] WHEREAS, the Developer proposes to construct a new commercial office building with an overall height of approximately 1,050 feet and approximately 925,630 square feet of gross floor area, and to include a new public entrance at 45 th and Madison Avenue within the Property providing escalators, stairways and elevators connecting to the ESA concourse, which new entrance will be constructed by Developer in accordance with plans and specifications that will be submitted to and approved by MTA pursuant to the Transaction Documents, and will be maintained by Developer at its own cost and expense;
+[p113_c0006] WHEREAS, the City has issued the special permit and completed the New York City Uniform Land-Use Review Procedure (" ULURP ") for the Project (as defined in the Findings Statement attached to the Staff Summary (the " Findings Statement ")); and
+[p113_c0007] WHEREAS, an Environmental Impact Statement was prepared in conjunction with the review of the special zoning permit, and on September 10, 2021, the New York City Department
+[p113_c0008] _1_
+[p113_c0009] _02.24.22 (FINAL)_
+[p113_c0010] _Master Page # 113 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 114
+
+[p114_c0001] of City Planning, on behalf of the City Planning Commission as lead agency, issued a Notice of Completion for the Final Environmental Impact Statement (“FEIS”) for proposed Project and made all required Environmental Findings for the Project (the “ Lead Agency Findings ”); and
+[p114_c0002] WHEREAS, MTA has reviewed the Draft Environmental Impact Study for the Project, the FEIS and the Lead Agency Findings, and has prepared the Findings Statement with respect to the Project’s environmental impacts and their mitigation in accordance with Article 8 of the Environmental Conservation Law, SEQRA and its implementing regulations codified at 6 NYCRR Part 617, and the MTA Board, pursuant to the Staff Summary and this Resolution, desires to adopt the Findings Statement;
+[p114_c0003] WHEREAS, the form of Lease attached to the Pre-Lease Agreement provides for economic terms as set forth in the Staff Summary that are consistent with or better than the material economic terms set forth in the 2016 Staff Summary, which were tested and evaluated through a competitive selection process and were consistent with an independent appraisal that MTA Real Estate obtained from Landauer and Associates; and
+[p114_c0004] WHEREAS, the proposed disposition of the Property pursuant to the Lease is for not less than fair market value and is proposed to be made upon proper terms and conditions, and an appraisal of the value of such property rights has been made by an independent appraiser as set forth in the 2016 Staff Summary and included in the record of the transaction; and
+[p114_c0005] WHEREAS, pursuant to the Lease, Developer will provide a valuable new entrance to the new East Midtown Terminal’s Madison Concourse at 45 th and Madison and will bring important revenues into MTA for its current and future capital plan needs; and
+[p114_c0006] WHEREAS, the disposition of the Property pursuant to the Lease and other Transaction Documents as described in the Staff Summary is intended to further the public welfare and to advance the transportation interests of MTA by, inter alia , enhancing the ability of MTA to develop and improve commuter transportation and other services related to the same within the metropolitan commuter transportation district and creating substantial sources of revenue to MTA, and that, in addition, the disposal of the property rights in question is intended to advance the economic development interest of the State and City as well as the interest of MTA in transit-oriented development, by furthering the purposes embraced by the Vanderbilt Corridor Zoning in revitalizing currently obsolete office and retail space in midtown east and providing much needed Grand Central Public Realm Improvements, which is expected to result in the creation and retention of substantial number of job opportunities and the creation or retention of substantial sources of revenues to the State, City and MTA; and
+[p114_c0007] NOW THEREFORE, BE IT
+[p114_c0008] RESOLVED, that:
+- [p114_c0009] 1. This Board hereby adopts the Findings Statement.
+[p114_c0010] _2_
+[p114_c0011] _02.24.22 (FINAL)_
+[p114_c0012] _Master Page # 114 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 115
+
+- [p115_c0001] 2. The Chair and Chief Executive Officer of MTA, the Chief Development Officer of MTA, the Deputy Chief Development Officer of MTA or the Senior Director, Transit Oriented Development of MTA/MTA Construction and Development, or any designee of any of the foregoing senior officers, acting alone, are authorized to execute and deliver the Lease and the other Transaction Documents with Developer on the material terms and conditions described in the Staff Summary, substantially in the forms attached to the Pre-Lease Agreement, and such other terms or conditions as such authorized signatory deems necessary or appropriate, and to execute and deliver any and all other necessary or appropriate agreements, documents, writings and other instruments, including modifications and supplements, and to take all such actions as shall be necessary or desirable in order to pursue satisfaction of the pre-conditions to Lease execution and term commencement described above and in the Staff Summary. 3. The Chair and Chief Executive Officer, the Chief Development Officer of MTA, the Deputy Chief Development Officer of MTA or the Senior Director, Transit Oriented Development of MTA/MTA Construction and Development, or any designee of any of the foregoing senior officers, acting alone, are hereby further authorized to take any and all actions as may be necessary, desirable or convenient to satisfy applicable legal or regulatory requirements in connection with the foregoing actions.
+[p115_c0002] This Resolution shall take effect immediately upon its adoption.
+[p115_c0003] Dated: February 24, 2022
+[p115_c0004] _3_
+[p115_c0005] _02.24.22 (FINAL)_
+[p115_c0006] _Master Page # 115 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 116
+
+### [p116_c0001] Staff Summary
+### [p116_c0002] MTA Metropolitan Transportation Authority
+### [p116_c0003] Page 1 of 7
+[p116_c0004]
+
+```text
+Subject 347 MADISON AVE DEVELOPMENT Department REAL ESTATE Department Head Name JEFFREY B. ROSEN Department Head Signature Project Manager Name JEFFREY B. ROSEN
+```
+[p116_c0005]
+
+```text
+Date FEBRUARY 22, 2016 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p116_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 2/22/16 X 2 Board 2/24/16 X
+```
+[p116_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 3 Chief of Staff 2 Chief Financial Officer
+```
+[p116_c0008] AGENCY: Metropolitan Transportation Authority ("MTA"). DEVELOPER: BP 347 Madison Associates, LLC ("Developer"), a special purpose entity owned by Boston Properties Limited Partnership ("Boston Properties"). LOCATION: 341-347 Madison Avenue and 45 East 44th Street, New York, NY. ACTIVITY: Conditional designation of Developer to re-develop the Property pursuant to a 99-year triple net lease (the "Lease"), the agreed-upon form of which will be appended as an exhibit to the agreement to enter into lease by which such designation will be effected (the "Pre-Lease Agreement"). PREMISES TO BE LEASED: Approximately 25,051 square feet of land comprising Manhattan Block 1279, Lots 23, 24, 25 and 43 (the "Land"), and all existing and future improvements thereon except for the East Side Access vent plant that MTACC is constructing on Lot 48 (the "Vent Plant"). Such Land and improvements (exclusive of the Vent Plant) are referred to herein as the "Property". COMPENSATION: (a) Upfront Payment: $25 million, payable at Lease execution. (b) Ongoing Base Rent: To be calculated based on the zoning square footage of the New Building, as set forth in the attached Schedule A . (c) Percentage Rent: For each lease year, commencing when subtenants under subleases covering at least 90% of the rentable area of the New Building have commenced making payments of regularly scheduled rent, 5.0% of (i) Developer's gross revenue for such year, net of the Base Rent and payments in lieu of real property taxes for such year, over (ii) a $60/rsf threshold. Percentage Rent to be reset to $0 for each Base Rent Adjustment Year (i.e., every 30th year during the term).
+[p116_c0009] _Master Page 38 10/16/07 14:18 MTA Board Meeting 2/22/2016_
+
+## Page 117
+
+### [p117_c0001] Staff Summary
+### [p117_c0002] Metropolitan Transportation Authority
+### [p117_c0003] Page 2 of 7
+- [p117_c0004] (d) PILOT: Payments in lieu of real property taxes, equal to the full, unabated real property taxes that would be payable with respect to the Leased Premises; Developer owned the fee interest in the Leased Premises; and payments in lieu of sales taxes, equal to the sales tax Developer would incur with respect to its construction costs if it were the owner of such fee interest. (e) On-Site Transit Improvements: To be constructed and maintained by Developer at its own cost and expense as described below.
+### [p117_c0005] PRE-CONDITIONS TO LEASE EXECUTION AND TERM COMMENCEMENT:
+[p117_c0006] The conditions to the execution and delivery of the Lease pursuant to the Pre-Lease Agreement will include the following:
+- [p117_c0007] (a) issuance by the NYC City Planning Commission (" CPC ") of a special permit to authorize the construction by the Developer of an office building, with ancillary retail, having a floor area ratio (" FAR ") of at least 24.0 (the " Special Permit "), as envisioned by the Vanderbilt Corridor zoning text amendments that were adopted by the NYC City Council on May 27, 2015 (the " Vanderbilt Corridor Zoning ") and as more particularly described below; (b) agreement between the MTA and the City of New York (the " City ") as to the infrastructure improvements in and around Grand Central Terminal (" GCT ") that will be required in connection with the Special Permit, as envisioned by the Vanderbilt Corridor Zoning (the " GCT Public Realm Improvements "); (c) compliance by the MTA and all other involved governmental agencies with the State Environmental Quality Review Act (" SEQRA "), as it relates to the Lease and the Special Permit; and (d) approval of the overall transaction by the MTA Board, following such SEQRA compliance, including such agreement with respect to GCT Public Realm Improvements.
+[p117_c0008] The parties will target mid-2017 for the satisfaction of such conditions. The Pre-Lease Agreement will be subject to termination if they haven't been satisfied within 36 months after execution of the Pre-Lease Agreement. In addition, conditions to the commencement of the Lease term under the Lease pursuant to the Pre-Lease Agreement will include delivery by the MTA of vacant possession of the Property and completion by MTA of certain work adjacent to the Property to permit Developer to commence demolition work at the Property.
+### [p117_c0009] GCT PUBLIC REALM IMPROVEMENTS:
+[p117_c0010] The Lease will require Developer, at its own cost, to preserve and to enhance (by means of an ADA-compliant elevator) a connection to the existing passageway
+[p117_c0011] _Master Page Page 139 of 171 of 148 in MTA Board Meeting 6/27/2016_
+
+## Page 118
+
+### [p118_c0001] Staff Summary
+### [p118_c0002] Metropolitan Transportation Authority
+### [p118_c0003] Page 3 of 7
+[p118_c0004] between 347 Madison Avenue and Grand Central Terminal (known as the Roosevelt Passageway) and to provide a new street-level entrance and multi-level below-grade connection to the new East Side Access concourse that the MTA is currently building beneath the properties that adjoin the eastern side of the Property (the “Required New Building Elements” ).
+[p118_c0005] As contemplated by the Vanderbilt Corridor Zoning, and in reliance upon the revenues it will receive pursuant to the Lease, the MTA, as fee owner, will fund and perform such remaining (off-site) GCT Public Realm Improvements as the Special Permit shall require in accordance with the aforementioned agreement between the MTA and the City.
+### [p118_c0006] SECURITY FOR DEVELOPER PERFORMANCE:
+- [p118_c0007] (a) Good faith deposit : $15 million letter of credit to be delivered to MTA, upon execution of the Pre-Lease Agreement, refundable if the Pre-Lease Agreement terminates other than by reason of Developer non-performance, but otherwise to be applied at Lease execution to the aforementioned $25 million upfront payment. The Pre-Lease Agreement will set forth deadlines by which the Developer will be required to complete various steps relating to the ULURP process (subject to delays attributable to the MTA or the City), with limited periods within which such deadlines may be extended if the Developer increases the amount of such good faith deposit. (b) MTA expense deposit : Upon execution of the Pre-Lease Agreement, Developer is required to reimburse MTA for its expenses incurred prior to entering into the Pre-Lease Agreement in connection with the targeted negotiations with Developer incurred since November 2, 2015, as well as to deposit an additional sum to be agreed upon to cover expenses which MTA will incur during the period (the “Pre-Lease Period” ) prior to execution of the Lease. Such expense deposit may be drawn upon during the Pre-Lease Period in the event of Developer's failure of performance or, otherwise, following adoption of SEQRA findings by the MTA Board and subsequent MTA Board approval of the Lease. Any unapplied balance in such expense deposit, will be returned to Developer. (c) Ownership of work product : If the Pre-Lease Agreement terminates by reason of Developer's failure to perform, MTA will own and have the right to use all work product prepared for Developer relating to the Property (other than customary exceptions for confidential and proprietary information). (d) Boston Properties guarantees : Upon Lease execution, Boston Properties will provide a guaranty of payment of Base Rent and PILOT under the Lease for the period commencing on term commencement and ending on the earlier of (i) the second anniversary of substantial completion of the New Building and (ii) the first date that the New Building is 70% subleased with tenants in actual occupancy. In addition, upon commencement of demolition of the Existing Office Buildings (as defined below), Boston Properties will provide a guaranty of lien-free completion of the New Building (excluding subtenant improvements) and payment of all contractors, subcontractors and materialmen performing the work.
+[p118_c0008] _Master Page Page 40 of 148 in MTA Board Meeting 7/27/2016_
+
+## Page 119
+
+### [p119_c0001] Staff Summary
+### [p119_c0002] Metropolitan Transportation Authority
+### [p119_c0003] Page 4 of 7
+### [p119_c0004] BACKGROUND:
+[p119_c0005] In addition to the Vent Plant, the Land currently contains three pre-war office buildings, respectively known as 341, 345 and 347 Madison Avenue (the " Existing Office Buildings "), which formerly housed the headquarters of the MTA and its affiliate Metro-North Commuter Railroad. Having successfully consolidated such headquarters functions at 2 Broadway and 420 Lexington Avenue -- in accordance with the "Office Space Right-Sizing Business Plan" that has previously been reviewed with and endorsed by the Board -- the MTA is now in a position to dispose of the Property, and thereby avoid significant costs and generate substantial revenues in support of its capital programs as envisioned by such business plan.
+[p119_c0006] The Existing Office Buildings (which, were built separately, and therefore contain redundant lobbies, corridors and central plants) are functionally obsolete and do not take advantage of the full zoning envelope that the City of New York (the " City ") deems to be appropriate for commercial properties located in the "Vanderbilt Corridor" adjoining Grand Central Terminal. Accordingly, achieving the highest and best use of the Property will entail replacement of the Existing Office Buildings with an entirely new building.
+[p119_c0007] The Property is located in zoning district C5-3, within the new "Vanderbilt Corridor" zoning sub-district -- comprised of the five blocks bounded by 42nd Street on the south, 47th Street to the north, Madison and Vanderbilt Avenues to the east and west -- that was established pursuant to the Vanderbilt Corridor Zoning. Accordingly, the Developer will be eligible to apply for the Special Permit, which could authorize the Developer to build a building on the Land with an FAR of as much as 30.0 (which is to say zoning floor area of up to 30 times the applicable zoning lot area, twice the FAR of 15.0 that is permitted "as-of-right"), in consideration of the provision by the Developer and/or the MTA, as owner of such zoning lot, of GCT Public Realm Improvements.
+[p119_c0008] The amount of the FAR bonus that will be available in connection with the redevelopment of the Property will be determined through the City's Uniform Land Use Review Process (" ULURP "), based on the GCT Public Realm Improvements that such redevelopment will engender, as well as the building's ground floor level, massing and energy performance. Thus, application for the Special Permit will be subject to review by the applicable Community Board, the Manhattan Borough President, the City Planning Commission and the NYC City Council, as well as compliance with SEQRA by the City and the MTA.
+### [p119_c0009] SELECTION PROCESS:
+[p119_c0010] Request for Proposals. On June 19, 2013, the MTA, assisted by its advisors at Cushman & Wakefield, Inc. (" C&W "), issued an initial request for proposals from prospective lessee/developers (as amended, the " RFP "). Such RFP stipulated that the selected developer would be required, at its own cost, to demolish the Existing Office Buildings, and to erect in their stead a new building (the " New Building ") that would (a) utilize the full zoning floor area authorized pursuant to the then current zoning, (b) cantilever over, and thereby accommodate, the Vent Building and (c) incorporate the Required New Building Elements. The RFP was subsequently amended by a First Addendum dated September 23, 2013 to address the implications of the East Midtown Rezoning proposal promulgated by the Bloomberg administration (which contemplated that proposed developers would contribute to a fund that could be used by MTA to make improvements); by a Second Addendum dated September 17, 2014 and a Third Addendum dated April 24, 2015, both of which addressed the implications of the Vanderbilt Corridor Zoning proposal promulgated by the de Blasio administration; and by a Fourth Addendum dated October 19, 2015, which set forth revised requirements with respect to the Required New Building Elements.
+[p119_c0011] The Third Addendum also attached proposed drafts of a Pre-Lease Agreement Term Sheet and Net Lease Term Sheet (the " Term Sheets "), which set forth anticipated transaction terms and conditions, and called for proposers to identify any such terms and conditions to which they took exception.
+[p119_c0012] Short List. The MTA received proposals from nine entities. However, two of such entities, Macklowe Properties and Equity Residential, withdrew from competition; and Blue Rock Properties' two-page proposal, which continued to lack material information required by the RFP despite multiple requests by C&W for such information, was deemed to have been non-responsive and abandoned. Thus, as of August 2015, proposals from the following six entities remained under consideration:
+[p119_c0013] _Master Page 44 | 10/16/14 | MTA Board Meeting 7/27/2016_
+
+## Page 120
+
+### [p120_c0001] Staff Summary
+### [p120_c0002] Metropolitan Transportation Authority
+### [p120_c0003] Page 5 of 7
+- [p120_c0004] 1. Hines Limited Partnership/SL Green Realty Corp. (“ Hines/SLG ”) – office and/or hotel, with retail. 2. SJP Properties/Sumitomo Mitsui Financial (“ SJP/Mitsui ”) – office, with retail. 3. Boston Properties – office, with retail. 4. Argent Ventures (“ Argent ”) – hotel and residential (fee above a plane condominium). 5. Extell Development Company (“ Extell ”) – alternatively, office with retail or hotel and residential (cond-op), with retail. 6. Property Markets Group (“ PMG ”) – office, hotel and residential (cond-op), with retail.
+[p120_c0005] On August 11, 2015, C&W informed each of such proposers that the MTA would be narrowing the number of proposals under consideration to a “short list” within the following few weeks, and requesting that any revisions or supplemental information be submitted by Friday, August 21, 2015. Only PMG availed itself of such opportunity to supplement its submission.
+[p120_c0006] MTA Real Estate thereupon tasked C&W with the preparation of summaries of the six proposals remaining under consideration as of September, 2015, together with detailed financial analyses comparing their respective financial terms. C&W calculated the present values of guaranteed rent using a discount rate of 5.10% and rent sensitivities varying such discount rate up and down by 15%. Insofar as percentage rents and payments in lieu of real property taxes and were concerned, C&W created, and uniformly applied for the benefit of all proposers, ARUC models to estimate future performance of spaces devoted to various uses (office, hotel, residential, etc.) and take into account standard City practices with respect to real property assessment and taxation.
+[p120_c0007] Based on such analyses, the estimated present values to the MTA of the compensation proposed by the various proposers (assuming, alternatively, buildings of 24 FAR and 30 FAR) were as follows:
+[p120_c0008]
+
+```text
+24 FAR Hines/SLG SJP/Mitsui BP PMG Argent Extell Base Rent $238.7 $187.8 $190.3 $193 $125.6 $263.8 PILOT $769.3 $789.6 $676.6 $468.8 $323.3 $237.6 Resi. Sales Fee $0.0 $0.0 $0.0 $11.2 $0.0 $0.0 Total $1,008.0 $977.4 $866.9 $673.0 $448.9 $501.4
+```
+[p120_c0009]
+
+```text
+30 FAR SJP/Mitsui Hines/SLG BP PMG Argent Extell Base Rent $255.6 $250.0 $235.7 $226.6 $125.6 $329.7 PILOT $982.5 $941.3 $869.2 $650.3 $497.5 $297 Resi. Sales Fee $0.0 $0.0 $0.0 $11.2 $0.0 $0.0 Total $1,238.1 $1,191.3 $1,104.9 $888.1 $623.1 $626.7
+```
+[p120_c0010] The evaluation criteria for the RFP were:
+- [p120_c0011] 1. The present value of guaranteed income to be received by the MTA over the Lease term, including any proposed upfront payments. 2. The potential present value of proposed percentage rents and PILOT. 3. Proposers’ ability and willingness to provide assurances that they could and would timely undertake and complete construction of the development, and otherwise perform in accordance with the requirements of the Lease.
+[p120_c0012] _Master Page Page 42 12/01/07 14:58 MTA Board Meeting 6/27/2016_
+
+## Page 121
+
+### [p121_c0001] Staff Summary
+### [p121_c0002] Metropolitan Transportation Authority
+### [p121_c0003] Page 6 of 7
+[p121_c0004] The MTA's selection committee for this RFP (the " MTA Selection Committee ") was comprised of three individuals representing MTA Real Estate and MTA Strategic Initiatives.
+[p121_c0005] Based on such analysis, on September 22, 2015 the MTA Selection Committee unanimously agreed to narrow the field to a short list of Hines/SLG, SJP/Mitsui and Boston Properties. The MTA Selection Committee determined that the others' proposals were outside of the competitive range for the following reasons, among others: (a) although Extell had proposed a relatively high base rent, it proposed to make only fixed, artificially low PILOT payments, so that the total payments it proposed fell outside the competitive range; (b) Argent proposed to pay far less base rent than any of the other five proposers, and proposed to market residential condominium units such that the MTA would be deprived of ongoing PILOT revenue; and (c) although PMG offered base rent comparable to that offered by the three short-listed proposers, C&W advised (based on research conducted by C&W) that an all-office building would yield substantially more PILOT to the MTA than would a mixed-use building of the kind proposed by PMG.
+[p121_c0006] All three of the short-listed proposers were determined to be highly-qualified and experienced developers with the expertise and resources necessary to successfully redevelop the Property.
+[p121_c0007] Best and Final Offers. Beginning in October, 2015, members of the MTA Selection Committee, C&W, in-house MTA legal counsel and MTA's outside counsel, Paul Weiss (transactional), and Carter Levard (environmental and land use), held a series of meetings to discuss, evaluate and consider proposed responses to the three remaining proposers' comments to the Term Sheets. The Term Sheets were revised uniformly for all three of such proposers in an effort to address comments that the team deemed to be acceptable; and such revised Term Sheets were then sent to such proposers on October 23, 2015, together with a request for best and final financial offers and fully completed Term Sheets, including all requested exhibits, addenda and schedules marked to indicate any remaining comments. The proposers were advised at such time that targeted negotiations would commence with the proposer that submitted the most compelling best and final offer.
+[p121_c0008] All three proposers responded with increased rent offers, the estimated present values of which (again, assuming, alternatively, buildings of 24 FAR and 30 FAR) were as follows:
+[p121_c0009]
+
+```text
+24 FAR BP Hines/SLG SJP/Mitsui 30 FAR BP SJP/Mitsui Hines/SLG Base Rent $255.9 $233.9 $206.9 Base Rent $316 $277.2 $246.7 PILOT $770.4 $763.6 $770.2 PILOT $960.9 $963.6 $956.8 Contingent Rent $15.9 $1.5 $4.5 Contingent Rent $19.9 $5.6 $3.4 Total $1,042.2 MM $999.0 MM $981.6 MM Total $1,296.8 MM $1,246.4 MM $1,206.9 MM
+```
+[p121_c0010] All three proposers also responded with further or renewed comments to the revised Term Sheets.
+[p121_c0011] Having determined that Boston Properties' proposal provided the highest economic value to the MTA, and was the most competitive with respect to other proposed terms and conditions reflected in the Term Sheets, the team commenced targeted negotiations with Boston Properties, in the course of which resolutions satisfactory to the MTA Selection Committee were reached with respect to all Term Sheet issues.
+[p121_c0012] The compensation proposed by Boston Properties is consistent with an independent appraisal that MTA Real Estate has obtained from Landauer and Associates.
+[p121_c0013] _Master Page Page 143 12/11/07 14:18 MTA Board Meeting 2/20/2016_
+
+## Page 122
+
+### [p122_c0001] Staff Summary
+### [p122_c0002] Metropolitan Transportation Authority
+### [p122_c0003] Page 7 of 7
+### [p122_c0004] RECOMMENDATION:
+[p122_c0005] Based on the foregoing, MTA Real Estate requests authorization, pursuant to the attached resolution, to enter into a Pre-Lease Agreement with Developer on the above-described material terms and conditions and such other terms or conditions as the Chairman and Chief Executive Officer of the MTA or his designee deems necessary or appropriate, and to execute and deliver any and all other necessary or appropriate agreements, documents, writings and other instruments, including modifications and supplements, and to take all such actions as shall be necessary or desirable in order to pursue satisfaction of the above-described pre-conditions to Lease execution, it being understood that the Lease itself and the proposed GCT Public Realm Improvements related to the redevelopment of the Property will be presented to the Board as described above for approval following review and compliance by the MTA and all other involved governmental agencies with SEQRA as it relates to the Lease and the Special Permit.
+[p122_c0006] FOR REFERENCE PURPOSES ONLY
+[p122_c0007] _Master Page Page 44102107148 MTA Board Meeting 2/27/2016_
+
+## Page 123
+
+### [p123_c0001] BOARD RESOLUTION
+[p123_c0002] WHEREAS, MTA (capitalized terms are defined in the staff summary accompanying this Resolution (the "Staff Summary") owns the Property (i.e., the Land and the Existing Office Buildings located at 341, 345 and 347 Madison Avenue), as well as the East Side Access Vent Plant under construction by MTACC on 44th Street between Madison and Vanderbilt Avenues; and
+[p123_c0003] WHEREAS, as a result of the successful consolidation and relocation of the headquarters of MTA and its subsidiary Metro-North Commuter Railroad to 2 Broadway and 420 Lexington Avenue, MTA is now in a position to dispose of the Property, and thereby avoid significant costs and generate substantial revenues in support of its capital programs;
+[p123_c0004] WHEREAS, the Existing Office Buildings are functionally obsolete and do not take advantage of the full zoning envelope that the City deems to be appropriate for commercial properties located in the new "Vanderbilt Corridor" zoning sub-district -- comprised of the five blocks bounded by 42nd Street on the south, 47th Street to the north, and Madison and Vanderbilt Avenues to the east and west -- that was established pursuant to the Vanderbilt Corridor Zoning, and accordingly, achieving the highest and best use of the Property will entail replacement of the Existing Office Buildings with an entirely New Building;
+[p123_c0005] WHEREAS, on June 19, 2013, MTA, with the assistance of its advisor C&W, issued and thereafter publicly advertised an initial RFP (as subsequently modified or supplemented pursuant to four addenda), from prospective lessee/developers for a proposed 99-year triple net lease transaction, which RFP stipulated that the selected lessee/developer would be required, at its own cost, to demolish the Existing Office Buildings, and to erect in their stead a New Building that would utilize the full zoning floor area authorized pursuant to the then current zoning, cantilever over, and thereby accommodate, the Vent Building, and incorporate the Required New Building Elements at its own cost;
+[p123_c0006] WHEREAS, the fair market value of a long-term triple net lease of the Property was tested and evaluated through a competitive selection process that is summarized in detail in the Staff Summary, the methods, terms and conditions of which permitted full and free competition, involving public advertisement for proposals, the receipt of proposals, the conduct of discussions and negotiations with the proposers in order to maximize value;
+[p123_c0007] WHEREAS, the compensation proposed by Boston Properties as summarized in the Staff Summary is consistent with an independent appraisal that MTA Real Estate has obtained from Landauer and Associates;
+[p123_c0008] WHEREAS, the Pre-Lease Agreement, upon execution by the MTA and Boston Properties, (1) will serve to designate Boston Properties as the exclusive developer with whom MTA will enter into a Lease for the Property (the form of which will be annexed to the Pre-Lease Agreement), upon the terms and conditions set forth in the Pre-Lease Agreement, and (2) will provide that (A) the execution of the Lease is conditioned upon, among other things, the pre-lease execution conditions set forth in the Staff Summary, including (i) issuance by CPC of the Special Permit for the construction of a New Building having FAR of not less than 24.0, (ii) agreement between MTA and the City as to the scope and description of the GCT Public Realm Improvements to be performed by, and at the cost of, MTA which when added to the Required Building Elements required to be constructed by the successful developer, would be sufficient to permit a New Building of not less than 24.0 FAR, (iii) compliance by MTA and all other involved governmental agencies with SEQRA and relates to the Lease and the Special Permit (the "Proposed Action"); and (iv) approval of the overall transaction by the MTA Board, following such SEQRA compliance, and (B) term commencement is conditioned upon, among other things, delivery by MTA of vacant possession of the Property and completion by MTA of certain work adjacent to the Property to permit developer commencement of demolition work at the Property; and
+[p123_c0009] WHEREAS, the proposed disposition of the Property pursuant to the Lease is for not less than fair market value and is proposed to be made upon proper terms and conditions, and an appraisal of the value of such property rights has been made by an independent appraiser as set forth in the Staff Summary and included in the record of the transaction; and
+[p123_c0010] WHEREAS, based upon the recommendation of the MTA Selection Committee, the proposal of the recommended designated developer is the most advantageous to MTA, rent and other factors set forth in the RFP having been considered; and
+[p123_c0011] _Master Page Page 45 of 148 MTA Board Meeting 7/27/2016_
+
+## Page 124
+
+[p124_c0001] WHEREAS, the disposition of the Property on terms and conditions consistent with the proposal of the recommended designated developer is intended to further the public welfare and to advance the transportation interests of MTA by, inter alia, enhancing the ability of MTA to develop and improve commuter transportation and other services related to the same within the Metropolitan Commuter Transportation District and creating substantial sources of revenue to MTA, and that, in addition, the disposal of the property rights in question is intended to advance the economic development interest of the State and City as well as the interest of MTA in transit-oriented development, by furthering the purposes embraced by the Vanderbilt Corridor Zoning in revitalizing currently obsolete office and retail space in midtown east and providing much needed Grand Central Public Realm Improvements, which is expected to result in the creation and retention of substantial number of job opportunities and the creation or retention of substantial sources of revenues to the State, City and MTA; and
+[p124_c0002] NOW THEREFORE, BE IT RESOLVED, that:
+- [p124_c0003] 1. The Chairman and Chief Executive Officer of MTA or his designee is authorized to negotiate, execute and deliver the Pre-Lease Agreement with Developer on the material terms and conditions described above and in the Staff Summary and such other terms or conditions as he or his designee deems necessary or appropriate, and to execute and deliver any and all other necessary or appropriate agreements, documents, writings and other instruments, including modifications and supplements, and to take all such actions as shall be necessary or desirable in order to pursue satisfaction of the pre-conditions to Lease execution and term commencement described above and in the Staff Summary, provided that the Pre-Lease Agreement shall provide that such other project documents relating thereto shall not be binding on the MTA unless and until (a) CPC shall have completed the environmental review of the proposed action in accordance with the requirements of SEQRA and CEQR, (b) on the basis of that review, the MTA Board shall have made written findings concerning the environmental impacts of the proposed action in accordance with the requirements of SEQRA and its implementing regulations, 6 NYCRR, Part 617, and (c) thereafter, the MTA Board shall have approved the material terms of the Lease and other project documents. 2. The Chairman and Chief Executive Officer and his designees are hereby further authorized to take any and all actions as may be necessary, desirable or convenient to satisfy applicable legal or regulatory requirements in connection with the foregoing actions.
+[p124_c0004] This Resolution shall take effect immediately upon its adoption.
+[p124_c0005] Dated: February 26, 2016
+[p124_c0006] _Master Page 46124167148 MTA Board Meeting 2/27/2016_
+
+## Page 125
+
+### [p125_c0001] Staff Summary
+### [p125_c0002] Metropolitan Transportation Authority
+### [p125_c0003] Schedule A – Page 1 of 2
+### [p125_c0004] Schedule A Base Rent for As-of-Right FAR (15.0X)
+[p125_c0005]
+
+```text
+Upfront Payment $15 million (the Good Faith Deposit Under the Pre-Lease Agreement), applied on the Term Commencement Date Additional Consideration $10 million, paid on the Term Commencement Date Rent Commencement Date 2 years following the Term Commencement Date Years 1 – 5 $6,378,350.00 per annum $531,529.17 per month Years 6 – 10 $7,016,185.00 per annum $584,682.08 per month Years 11 – 15 $7,717,803.50 per annum $643,150.29 per month Years 16 – 20 $8,489,583.85 per annum $707,465.32 per month Years 21 – 25 $9,338,542.24 per annum $773,211.85 per month Years 26 – 30 $10,272,396.46 per annum $856,033.04 per month Year 31 (30 th Anniversary of the Rent Commencement Date) On the 30th, 60th and 90th anniversaries of the Rent Commencement Date (each, a “Base Rent Adjustment”), the Base Rent will be reset to be the greater of (i) the scheduled Base Rent for such date, taking into account the scheduled annual increases set forth in Schedule A and (ii) 15% of the average annual actual gross revenues for the New Building for the preceding five years (including operating expense pass-throughs) plus PILOT escalations solely in the year of the Base Rent Adjustment, less PILOT solely in the year of the Base Rent Adjustment. Notwithstanding the foregoing, in no event will a Base Rent Adjustment be less than the prior year’s Base Rent plus the average Percentage Rent for the preceding five years.
+```
+[p125_c0006] Monthly Base Rent payments will increase by ten percent (10.0%) every five years from the Rent Commencement Date
+[p125_c0007] _Master Page Page 147 of 148 in MTA Board Meeting 6/27/2016_
+
+## Page 126
+
+### [p126_c0001] Staff Summary
+### [p126_c0002] Metropolitan Transportation Authority
+### [p126_c0003] Schedule A – Page 2 of 2
+### [p126_c0004] Schedule A
+### [p126_c0005] Formulas for Determining the Basic Rent Increases attributable to Utilization of Additional Development Rights
+[p126_c0006]
+
+```text
+FAR Cost Per Annum As-of-Right FAR: 15.0X As described in Base Rent table above Bonus FAR Onsite Improvements FAR: 3.0X Building Size = 18.0X To be compensated by means of construction of the Required New Building Elements at Lessee's cost. Minimum Special Permit FAR: 6.0X Building Size = up to 24.0X Commencing on the Rent Commencement Date (i.e., two years after the Term Commencement Date), Lessee will pay $18 per year for each zoning square foot of Minimum Special Permit FAR. Such rent will increase by 10.0% every 5 years in accordance with the Basic Rent Schedule for the As-of-Right FAR. Maximum Special Permit FAR: 6.0X Building Size = up to 30.0X Lessee will pay $18 per year for each zoning square foot of Maximum Special Permit FAR. Rent abatements applicable to increments of Maximum Special FAR are set forth below and the abatement periods shall apply to all of the Maximum Special Permit FAR. Such rent will increase by 10.0% every 5 years in accordance with the Base Rent Schedule for the As-of-Right FAR.
+```
+### [p126_c0007] Additional Rent Abatements applicable to Maximum Special FAR:
+[p126_c0008]
+
+```text
+Incremental FAR 1.0X 2.0X 3.0X 4.0X 5.0X 6.0X Incremental FAR SF 25,105 50,210 75,315 100,420 125,525 150,630 Cumulative FAR 25.0X 26.0X 27.0X 28.0X 29.0X 30.0X Additional Free Rent (mos.) 10 months 16 months 23 months 30 months 37 months 48 months
+```
+[p126_c0009] _Master Page # 148 | 12/16/17 | 148 | MTA Board Meeting 12/7/2016_
+
+## Page 127
+
+### [p127_c0001] Staff Summary
+### [p127_c0002] Metropolitan Transportation Authority
+### [p127_c0003] Page 1 of 5
+[p127_c0004]
+
+```text
+Subject Agreements with Amtrak to permit the construction of its Hudson Tunnel Concrete Casing under the LIRR Western Rail Yard, NY, NY Department TRANSIT ORIENTED DEVELOPMENT Department Head Name ROBERT PALEY Department Head Signature Project Manager Name
+```
+[p127_c0005]
+
+```text
+Date JUNE 27, 2023 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p127_c0006]
+
+```text
+Board Action /Order To Date Approval Info Other 1 Finance Committee 06/26/23 X 2 Board 06/27/23 X
+```
+[p127_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p127_c0008] AGENCY/LESSOR: Metropolitan Transportation Authority (“MTA”) MTA Long Island Rail Road (“LIRR”) LICENSEE: AMTRAK LOCATION: John D. Caemmerer West Side Storage Yard ACTIVITY: Grant of construction license and permanent easement to construct within the Western Rail Yard (“WRY”) portion of the John D. Caemmerer West Side Storage Yard ACTION REQUESTED: Approval of Agreements COMPENSATION: Fair Market Value for the Permanent Easement BACKGROUND:
+[p127_c0009] In April 2013, the Board authorized the MTA and LIRR to enter into certain agreements with the National Railroad Passenger Corporation (“Amtrak”) to permit Amtrak to construct a segment (“Segment 1”) of an underground concrete casing underneath the Eastern Rail Yard (“ERY”) section of the John D. Caemmerer West Side Storage Yard (“West Side Yard”) in order to protect and preserve a future subsurface rights of way (the “ROW Preservation”) beneath the ERY so that Amtrak can, in the future, connect to a new rail tunnel under the Hudson River to Penn Station, New York (the “Hudson Tunnel Project”).
+[p127_c0010] In December 2020, the Board also authorized the MTA and LIRR to enter into an agreement with Amtrak to permit Amtrak to perform certain early work (“Early Work”) in advance of the third segment of concrete casing for the Hudson Tunnel Project (“Segment 3”) in the Western Rail Yard (“WRY”) section of the West Side Yard. The Early Work involved the relocation of existing facilities in the WRY for the Segment 3 right-of-way path of the concrete casing. The December 2020 MTA Board authorization was limited to the construction of the Early Work, which involved the relocation of utilities within the WRY, including the infrastructure housed within LIRR’s Emergency Services Building (“ESB”) to a new Interim ESB and out of the way of the path of planned alignment for the Segment 3 concrete casing for the Hudson Tunnel Project.
+[p127_c0011] _Master Page # 127 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 128
+
+### [p128_c0001] Staff Summary
+### [p128_c0002] Metropolitan Transportation Authority
+### [p128_c0003] AMTRAK HUDSON TUNNEL CASING WORK IN THE WESTERN RAIL YARD (cont'd.)
+[p128_c0004] Page 2 of 5
+[p128_c0005] Amtrak has completed “Segment 1” of the concrete casing under the ERY, as well as “Segment 2” underneath the 11 th Avenue roadway bridge, comprising approximately 900 feet of casing from beneath 10 th Avenue through and under the 11 th Avenue viaduct at 30 th Street, and has commenced the Early Work. Amtrak is now preparing to begin construction of the Segment 3 concrete casing for the Hudson Tunnel Project under the WRY and has been in negotiations with The Related Companies, L.P. (the “Developer”), the selected developer of the mixed-used commercial Hudson Yards overbuild projects at the West Side, to prepare for and allow the Segment 3 concrete casing to be built, including a significant portion of such casing underneath property that is currently ground leased by the Developer adjacent to LIRR’s operating maintenance yard.
+[p128_c0006] In line with this, Amtrak also approached the MTA and LIRR for a temporary construction license and, ultimately a permanent easement, for the Segment 3 concrete casing under the WRY. MTA and LIRR have been negotiating a temporary construction license agreement to permit the construction of Segment 3 of the concrete casing for the Hudson Tunnel Project. The permanent easement rights would be granted to Amtrak upon substantial completion of the applicable work.
+[p128_c0007] The MTA also anticipates that it will perform certain Superstorm Sandy related mitigation work (including a flood wall, drainage and other improvements, the “Sandy Work”) around the Western Rail Yard, which may be undertaken concurrently with a some or all of the Segment 3 concrete casing work and, as a result, Amtrak has agreed to assume certain risks and contractor delay costs in the event that Amtrak causes delays to the MTA’s Sandy Work. Additionally, as part of the negotiations with Amtrak on the types and amounts of insurances that Amtrak will be required to put into place prior to and through completion of the Segment 3 concrete casing work, Amtrak and MTA utilized the opportunity to concurrently develop and pre-negotiate certain insurance-related provisions, including standardized terms, for: (1) work that will be performed by MTA Construction and Development in Harold Interlocking in the near future, as well as (2) for certain future temporary work agreements where either Amtrak or MTA (including its subsidiaries and affiliates) may be performing work on the property of the other, which the MTA anticipates will result in cost savings and/or efficiencies to the MTA.
+[p128_c0008] Based on the foregoing, MTA Transit Oriented Development requests authorization to enter into such agreements as are necessary and desirable to effectuate the Segment 3 concrete casing for the Hudson Tunnel Project (including, without limitation, a temporary construction license for the construction of the Concrete Casing and permanent easement(s)) with Amtrak, which shall be consistent with the following:
+- [p128_c0009] 1. The Segment 3 concrete casing work will be performed without financial contribution by the MTA or LIRR. 2. Amtrak will pay or reimburse the MTA and LIRR for costs and expenses incurred as a result of MTA/LIRR’s support of the Amtrak’s Segment 3 concrete casing work. 3. Amtrak will be required to pay or reimburse the MTA for certain costs incurred by the MTA as a result of delays caused by Amtrak to the Sandy Work. 4. The types and limits of insurances required to be maintained for the Segment 3 concrete casing work on MTA owned property will be reviewed and approved by MTA Risk Management. 5. Developer will waive any and all claims it might otherwise have against the MTA resulting from the MTA’s and LIRR’s cooperation with the Hudson Tunnel Project and the Segment 3 concrete casing work.
+### [p128_c0010] RECOMMENDATION:
+[p128_c0011] Based on the foregoing, MTA Transit Oriented Development requests that the MTA Board approve the attached resolution authorizing the MTA to grant to Amtrak a Construction License Agreement and a permanent easement
+[p128_c0012] _Master Page # 128 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 129
+
+### [p129_c0001] Staff Summary
+### [p129_c0002] AMTRAK HUDSON TUNNEL CASING WORK IN THE WESTERN RAIL YARD (cont'd.)
+[p129_c0003] Page 3 of 5
+[p129_c0004] to Amtrak for Segment 3 of the Hudson Tunnel concrete casing under the Western Rail Yard, and to execute and delivery any and all other agreements, documents, writings, and other instruments, and to take all such actions, as deemed necessary, desirable or convenient in order to effectuate Segment 3 of the concrete casing.
+### [p129_c0005] Attachments
+[p129_c0006] Staff Summary dated April 2013
+[p129_c0007] Staff Summary dated December 2020
+[p129_c0008] _Master Page # 129 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 130
+
+### [p130_c0001] Staff Summary
+### [p130_c0002] AMTRAK HUDSON TUNNEL CASING WORK IN THE WESTERN RAIL YARD (cont'd.)
+[p130_c0003] Page 4 of 5
+### [p130_c0004] RESOLUTION
+### [p130_c0005] BOARDS OF THE METROPOLITAN TRANSPORTATION AUTHORITY LONG ISLAND RAIL ROAD COMPANY
+[p130_c0006] WHEREAS, the Board previously authorized the MTA and LIRR to enter into certain agreements with the National Railroad Passenger Corporation ("Amtrak") to permit Amtrak to construct a segment ("Segment 1") of an underground concrete casing underneath the Eastern Rail Yard ("ERY") section of the John D. Caemmerer West Side Storage Yard ("West Side Yard") in order to protect and preserve and alignment for the future rail tunnel beneath the West Side Yard;
+[p130_c0007] WHEREAS, in December 2020, the Board also authorized the MTA and LIRR to enter into an agreement with Amtrak to permit Amtrak to perform certain early work ("Early Work") in advance of the planned third segment of concrete casing for the Hudson Tunnel Project ("Segment 3") in the Western Rail Yard ("WRY") section of the West Side Yard;
+[p130_c0008] WHEREAS, Amtrak has completed "Segment 1" of the concrete casing under the ERY, as well as "Segment 2" underneath the 11 th Avenue roadway bridge, comprising approximately 900 feet of casing from beneath 10 th Avenue through and under the 11 th Avenue viaduct at 30 th Street;
+[p130_c0009] WHEREAS, Segment 1 and Segment 2 of the concrete casing work were undertaken in order to preserve a future subsurface right-of-way (the "ROW Preservation") that Amtrak will ultimately connect to a new rail tunnel under the Hudson River to Penn Station, New York (the "Hudson Tunnel Project");
+[p130_c0010] WHEREAS, Amtrak has requested MTA and LIRR cooperation and consent to construct Segment 3 of the concrete casing under the WRY;
+[p130_c0011] WHEREAS, the West Side Yard is also the location for the Hudson Yards mixed-use commercial overbuild project that a joint venture between affiliates of The Related Companies, L.P. and Oxford Properties ("Developer") is progressing pursuant to existing agreements with MTA/LIRR ("the Overbuild Project");
+[p130_c0012] WHEREAS, given the regional importance of the proposed Hudson Tunnel Project to commuter transportation, and so as to avoid the Overbuild Project precluding the ROW Preservation in the WRY, MTA and LIRR have been cooperating with this effort;
+[p130_c0013] WHEREAS, the MTA and LIRR will further facilitate the Hudson Tunnel Project, by agreeing, among other things, to grant a temporary construction license and subsequently, a permanent easement to accommodate the placement of the Segment 3 concrete casing in the WRY (the "Segment 3 Project");
+[p130_c0014] WHEREAS, as part of MTA/LIRR's participation, MTA/LIRR will require Amtrak to pay or reimburse MTA and LIRR for its activities in support of the Segment 3 Project;
+[p130_c0015] WHEREAS, MTA and LIRR will enter into one or more agreements with Developer to ensure that the existing Overbuild Project agreements between MTA/LIRR and Developer are not adversely affected by MTA's and LIRR's participation in the Segment 3 Project;
+[p130_c0016] WHEREAS, in furtherance of the Segment 3 Project and in compliance with the Public Authorities Law, an appraisal of the value of any permanent easement rights required by the Segment 3 concrete casing will be undertaken, and MTA will require that Amtrak provide consideration not less than the fair market value of such
+[p130_c0017] _Master Page # 130 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 131
+
+### [p131_c0001] Staff Summary
+### [p131_c0002] AMTRAK HUDSON TUNNEL CASING WORK IN THE WESTERN RAIL YARD (cont'd.)
+[p131_c0003] Page 5 of 5
+[p131_c0004] easement rights, prior to or as part of granting permanent easement rights in connection with the Segment 3 Project concrete casing;
+[p131_c0005] WHEREAS, any transaction with Amtrak and/or Developer to effectuate the Segment 3 Project concrete casing shall be consistent with the terms and conditions set forth in this resolution and the accompanying staff summary; and
+[p131_c0006] WHEREAS, the Boards of the MTA and LIRR find the terms and conditions set forth herein and in the attached staff summary to be advantageous to the MTA and LIRR, and that the actions proposed are necessary to preserve the potential Hudson Tunnel Project, a program of regional importance and significance to the development and improvement of commuter transportation.
+[p131_c0007] NOW, THEREFORE, the Boards of the MTA and LIRR resolve as follows:
+- [p131_c0008] 1. The Chair and Chief Executive Officer (CEO) of the MTA and the designees of the Chair and CEO, acting singly, are hereby authorized to negotiate, execute and deliver contracts, agreements, and/or other instruments as are necessary, desirable and convenient to effectuate the Segment 3 Project, including, without limitation, a temporary construction license and permanent easement(s), in conformity with the terms and conditions set forth in this in the accompanying staff summary and such other terms as deemed necessary, desirable or convenient by the Chair and CEO and the designees of the Chair and CEO, in order to effectuate the Segment 3 Project. 2. The Chair and CEO of the MTA and the designees of the Chair and CEO, acting singly, are hereby authorized to take any and all actions as may be necessary, desirable or convenient to satisfy all applicable legal or regulatory requirements in connection with the foregoing actions.
+[p131_c0009] _Master Page # 131 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 132
+
+### [p132_c0001] Staff Summary
+### [p132_c0002] Page 1 of 4
+[p132_c0003]
+
+```text
+Subject CONSTRUCTION LICENSE AGREEMENT WITH AMTRAK - WESTERN RAIL YARD, WEST SIDE STORAGE YARD Department REAL ESTATE Department Head Name JOHN N. LIEBER Department Head Signature Project Manager Name ROBERT PALEY
+```
+[p132_c0004]
+
+```text
+Date DECEMBER 16, 2020 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p132_c0005]
+
+```text
+Board Action Order To Date Approval Info Other 1 Finance Committee 12/16/20 X 2 Board 12/16/20 X
+```
+[p132_c0006]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p132_c0007] AGENCIES: Metropolitan Transportation Authority (“MTA”) MTA Long Island Rail Road (“LIRR”) LICENSEE: AMTRAK ACTIVITY: Grant of construction license to relocate certain facilities within the Western Rail Yard (“WRY”) portion of the John D. Caemmerer West Side Storage Yard ACTION REQUESTED: Approval of Terms
+### [p132_c0008] COMMENTS:
+[p132_c0009] In April 2013, the Board authorized the MTA and LIRR to enter into certain agreements with the National Railroad Passenger Corporation (“Amtrak”) to permit Amtrak to construct a segment (“Segment 1”) of an underground concrete casing underneath the Eastern Rail Yard (“ERY”) section of the John D. Caemmerer West Side Storage Yard (“West Side Yard”) so that Amtrak preserves a future subsurface Right of Way (“ROW Preservation”) for the proposed Gateway Tunnel (a/k/a the “Hudson Tunnel Project”), which will allow Amtrak to ultimately connect a new rail tunnel under the Hudson River to Penn Station, New York. Amtrak has completed “Segment 1” of the concrete casing under the ERY, as well as “Segment 2”, which passes underneath the bed of the 11 th Avenue Road Bridge.
+[p132_c0010] Although Amtrak is not at this time seeking approval from the MTA to permit construction of an additional segment (“Segment 3”) of concrete casing under the WRY, Amtrak has instead proposed to perform certain early work involving the relocation of existing facilities out of the way of what would be the path for the “Segment 3” concrete casing (“Early Work”). Since the West Side Yard is the site of an overbuild development project (the “Overbuild Project”) by the Related Companies (“Related”) and provided that Related permits Amtrak to conduct such Early Work now so as to avoid any potential undue delay of its Overbuild Project, the MTA and LIRR are also willing to allow Amtrak to conduct such Early Work. Amtrak’s Early Work will be coordinated with Related’s Overbuild Project pursuant to a separate agreement between Amtrak and Related.
+[p132_c0011] As such, MTA and LIRR will permit Amtrak to perform the Early Work, at its sole cost and expense, including to relocate certain of LIRR’s existing utilities and infrastructure currently housed within LIRR’s Emergency Services Building (“ESB”) and within the WRY out of the way of the path of planned alignment for the concrete casing segment in the WRY, a portion of which facilities will be relocated to a new “Interim ESB”. No concrete casing work will be permitted under the Early Work Construction License Agreement. Any future approval of the concrete casing work will require authorization by this Board.
+[p132_c0012] _Master Page # 832 of 944 MTA Board Meeting 12/16/2020_
+
+## Page 133
+
+### [p133_c0001] Staff Summary
+### [p133_c0002] Metropolitan Transportation Authority
+### [p133_c0003] FINANCE COMMITTEE MEETING
+### [p133_c0004] Construction License Agreement with Amtrak for the WRY, West Side Yard (Cont'd.)
+[p133_c0005] Page 2 of 2
+[p133_c0006] Amtrak has bid out this work and has contracted with Skanska to perform the work. The types and limits of insurances required to be maintained for the work on MTA property will be reviewed and approved by MTA Risk Management. In order to avoid any disruptions to LIRR operations, the current ESB will not be decommissioned until the Interim ESB is finally constructed and approval is obtained from LIRR to transfer the utilities. The current ESB will be replaced with the Interim ESB because it is contemplated that Related, at its cost and expense, will later move the Interim ESB to a final, permanent location in order to make way for the overbuild development. If, however, within five (5) years after completion of the Interim ESB, Related has not yet permanently relocated the Interim ESB, Amtrak will undertake, at its sole cost and expense, certain further infrastructure enhancements to the Interim ESB, as directed by LIRR, in order to ensure long-term use and sustainability of the facilities. LIRR will have the right to review and approve all Amtrak work and any changes proposed to such designs and work plans by Amtrak (the initial design for the relocation has already been reviewed and approved by LIRR). Furthermore, Amtrak will pay or reimburse the MTA and LIRR for any costs and expenses incurred in relation to Amtrak's work.
+### [p133_c0007] RECOMMENDATION:
+[p133_c0008] Based on the foregoing, the Real Estate Department requests authorization to enter into a Construction License Agreement with Amtrak to perform the Early Work pursuant to the outlined terms and conditions.
+[p133_c0009] _Master Page # 133 of 148 MTA Board Meeting 12/17/2023_
+
+## Page 134
+
+### [p134_c0001] Metropolitan Transportation Authority
+### [p134_c0002] Staff Summary
+### [p134_c0003] Page 1 of 3
+[p134_c0004]
+
+```text
+Subject Gateway Project Department Real Estate Department Head Name Jeffrey Rosen Department Head Signature Project Manager/Division Head Jeffrey Rosen
+```
+[p134_c0005]
+
+```text
+Date April 19, 2013 Vendor Name Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p134_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 LI Committee 4/22 x 2 Finance 4/22 x 3 MTA Board 4/24 x
+```
+[p134_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 LIRR President 4 MTA Chief Financial Officer 2 LIRR Legal 3 MTA Legal
+```
+### [p134_c0008] Purpose:
+[p134_c0009] To obtain Board approval of the annexed resolution, authorizing negotiation and execution of agreements by MTA and LIRR to facilitate the construction of a concrete casing to preserve the future subsurface Right of Way (“ROW”) for Amtrak’s proposed Gateway Tunnel, underneath the LIRR’s Eastern Rail Yard (the “ Tunnel Casing Project ”), including the granting of permanent easements with respect to such Project and the preserved ROW, consistent with the parameters as provided in this Staff Summary and the resolution.
+### [p134_c0010] Discussion:
+[p134_c0011] Numerous planning studies indicate that the existing two 100-year-old, single-track tunnels under the Hudson River, connecting New Jersey and New York City, currently operate at maximum capacity and are insufficient to meet the projected increase in demand. As a key part of its planning for future service to and from New York City, Amtrak has developed a conceptual program, known as the “Gateway Program,” to build a new tunnel under the Hudson River from New Jersey through the west side of Manhattan to connect with Penn Station. The Gateway Program would support expanded rail services to meet future demand as well as improve intercity and commuter rail system safety and reliability. In addition, the Gateway Program would be expected to further create resiliency in the passenger rail system in response to disasters, and particularly flooding, as new construction could be designed to withstand flood levels at new standards, using criteria that would have prevented the flooding caused by Superstorm Sandy.
+[p134_c0012] Amtrak has evaluated potential options for locating the new tunnel between the Hudson River and Penn Station and determined that only a single underground alignment under the LIRR Hudson Yards facility between 10th and 11th Avenues in Manhattan can achieve a direct connection to the majority of Penn Station’s existing tracks. Hudson Yards is also the location of the mixed-use commercial overbuild project that a joint venture between affiliates of The Related Companies and Oxford Properties ( “ Developer ”) is progressing pursuant to existing agreements with MTA/LIRR (the “ Overbuild Project ”). Amtrak is proposing to undertake the design and construction of an underground rectangular structure 800 feet long, 50 feet wide, and approximately 35 feet tall (the “ Concrete Casing ”), to be constructed within the ROW to allow for the potential future development of the Gateway Tunnel. The construction of the Concrete Casing, in advance of the completion of the Overbuild Project, will prevent the permanent loss of this ROW.
+[p134_c0013] _Master Page # 834 of 9448 MTA Board Meeting 6/26/2013_
+
+## Page 135
+
+### [p135_c0001] Staff Summary
+### [p135_c0002] Metropolitan Transportation Authority
+### [p135_c0003] Page 2 of 3
+[p135_c0004] The Concrete Casing is the subject of an Environmental Assessment being undertaken by the FRA and Amtrak under NEPA. At the same time, Amtrak is in negotiations with Developer concerning agreements that will allow the construction of the Concrete Casing by a design/builder so as to ensure coordination of the construction of the Concrete Casing and the Overbuild Project, without unduly delaying or burdening the Overbuild Project. Amtrak, in cooperation with Developer, has requested that MTA and LIRR facilitate the Tunnel Casing Project, by agreeing, among other things, to (a) temporarily relocate certain LIRR Maintenance of Equipment ("MoE") functions; (b) permit the demolition and subsequent rebuilding of the MoE facility at the Eastern Rail Yard; and (c) grant a temporary construction license in the Yards Parcel portion of the Eastern Rail Yard for construction of the Concrete Casing and subsequently, a permanent easement for the location of the Concrete Casing in the ROW.
+[p135_c0005] Given the regional importance of the Gateway Program, its inclusion in Governor Cuomo's 2100 Commission Report following Superstorm Sandy, and the need to preserve the ROW so as not to have the Overbuild Project preclude the Gateway Program from going forward, MTA and LIRR have been cooperating with this effort, with the understanding that, as fundamental principles of MTA/LIRR's participation, (1) MTA/LIRR will not incur any financial obligations or liabilities as a result of the Tunnel Casing Project, and (2) the Tunnel Casing Project will not adversely affect MTA/LIRR's rights under its existing agreements with Developer in any material respect.
+[p135_c0006] In furtherance of the Tunnel Casing Project, and preservation of the ROW, MTA and LIRR accordingly request Board approval of the accompanying resolution, authorizing the entry into such agreements as are necessary and desirable to effectuate the Tunnel Casing Project (including a temporary construction license for the construction of the Concrete Casing Work and permanent easement(s) and/or covenants in favor of Amtrak and/or Related, as their interests may lie), in accordance with the fundamental principles as stated above and consistent with the following terms:
+- [p135_c0007] (1) LIRR will arrange for the expedited vacating of the MoE facility, and subsequently allow the demolition of that facility and certain tracks therefor, provided that Amtrak agrees to pay directly, or as necessary to reimburse LIRR for, LIRR's incremental increased operational expense of performing MoE operations at an alternate location, and all costs and expenses associated with (1) LIRR's relocation out of the MoE, (2) the rebuilding of the MoE, (3) LIRR's relocation back into the MoE once such rebuilding is completed, (4) LIRR's review and approval of plans and specifications for the demolition of the MoE, the construction of the Concrete Casing and the rebuilding of the MoE, and (5) LIRR force account and field personnel required by LIRR in connection with the demolition of the MoE, the construction of the Concrete Casing and the rebuilding of the MoE. (2) Amtrak or Developer agrees to complete the reconstruction of the MoE facility, to the same specifications as the existing MoE facility, as will be approved by LIRR, entirely at Amtrak's or Developer's own cost, to be completed within 26 months of the demolition of such facility, together with any upgrades to facilities as may be necessary in order to comply with current building codes. (3) Amtrak will reimburse all other costs incurred by MTA/LIRR in connection with the Tunnel Casing Project, including but not limited to legal fees incurred in the drafting and negotiating of all agreements. (4) Amtrak and Developer will waive any and all claims they might otherwise have against MTA/LIRR based upon its cooperation with or participation in the Tunnel Casing Project, such that MTA/LIRR will have no liability to Amtrak or Developer and neither Amtrak nor Developer will be excused from any monetary obligation to MTA/LIRR (under the agreements relating to the Tunnel Casing Project and/or
+[p135_c0008] _Master Page # 1835 of 9448 MTA Board Meeting 2/26/2023_
+
+## Page 136
+
+### [p136_c0001] Staff Summary
+### [p136_c0002] Metropolitan Transportation Authority
+### [p136_c0003] Page 3 of 3
+[p136_c0004] the Overbuild Project or otherwise) by reason of any act or omission other than willful misconduct of MTA/LIRR relating to the Tunnel Casing Project, or by reason of any act or omission whatsoever of Amtrak or any other Tunnel Casing Project participant apart from MTA/LIRR.
+- [p136_c0005] (5) In addition, such agreements will provide MTA/LIRR with rights to approve and inspect elements of the work affecting LIRR operations, and such other rights and protections as are deemed prudent. In order to facilitate the timely completion of the Tunnel Casing Project, MTA/LIRR agree to provide specification, design review or other approvals in accordance with a schedule agreed to by the parties, and at an agreed point in the development of plans and specifications for both the MoE replacement facility and the Concrete Casing, LIRR will agree to limit any further design comments, and/or requirements for any stoppages of work, to instances where public safety, service reliability or legal compliance are implicated.
+### [p136_c0006] Recommendation:
+[p136_c0007] It is recommended that the Board authorize the annexed resolution, authorizing entry into agreements necessary to effectuate the Tunnel Casing Project in conformity with the terms as set forth in this Staff Summary.
+[p136_c0008] _Master Page # 1876 of 9448 MTA Board Meeting 2/16/2023_
+
+## Page 137
+
+### [p137_c0001] RESOLUTION
+[p137_c0002] BOARDS OF THE
+[p137_c0003] METROPOLITAN TRANSPORTATION AUTHORITY
+[p137_c0004] LONG ISLAND RAIL ROAD COMPANY
+[p137_c0005] WHEREAS, Amtrak has developed a conceptual program, known as the "Gateway Program", to build a new tunnel under the Hudson River from New Jersey through the west side of Manhattan to connect with Penn Station; and
+[p137_c0006] WHEREAS, Amtrak has evaluated potential options for locating the new tunnel between the Hudson River and Penn Station and determined that only a single underground alignment under the LIRR Hudson Yards facility between 10 th and 11 th Avenues in Manhattan (the East Rail Yard) can achieve this direct connection; and
+[p137_c0007] WHEREAS, the Hudson Yards is also the location for the mixed-use commercial overbuild project that a joint venture between affiliates of The Related Companies and Oxford Properties is progressing pursuant to existing agreements with MTA/LIRR ("the Overbuild Project"); and
+[p137_c0008] WHEREAS, subject to the ongoing environmental review being progressed by Amtrak and the Federal Railroad Administration pursuant to NEPA, Amtrak is proposing to undertake the design and construction of an underground rectangular structure under the East Rail Yard, to be constructed within the future subsurface Right of Way ("ROW") (the "Tunnel Casing Project"), to allow for the potential future development of the Gateway Tunnel; and
+[p137_c0009] WHEREAS, given the regional importance of the proposed Gateway Program to commuter transportation, and the need to preserve the ROW, so as not to have the Overbuild Project preclude the Gateway Program from going forward, MTA and LIRR have been cooperating with this effort; and
+[p137_c0010] WHEREAS, Amtrak's plans for the Tunnel Casing Project would require the LIRR to vacate the Maintenance of Equipment facility in an expedited manner to allow for the demolition of that facility and certain tracks therefor, and that MTA and LIRR further facilitate the Tunnel Casing Project, by agreeing, among other things, to grant a temporary construction license and subsequently, a permanent easement to accommodate the placement of a concrete casing in the Eastern Rail Yard; and
+[p137_c0011] WHEREAS, as fundamental principles of MTA/LIRR's participation, MTA/LIRR will require Amtrak and/or the Developer to incur (or reimburse MTA/LIRR for) any financial obligations that result from the Tunnel Casing Project, and that the existing Overbuild Project agreements between MTA/LIRR and Related not be adversely affected by participation in the Tunnel Casing Project; and
+[p137_c0012] _Master Page # 1887 of 19448 MTA Board Meeting 2/26/2023_
+
+## Page 138
+
+[p138_c0001] WHEREAS, in furtherance of the Tunnel Casing Project and in compliance with the Public Authorities Law, an appraisal of the value of any permanent easement rights required by the Tunnel Casing Project will be undertaken, and MTA will require that Amtrak provide consideration not less than the fair market value of such easement rights, prior to granting permanent easement rights in connection with the Tunnel Casing Project; and,
+[p138_c0002] WHEREAS, any transaction with Amtrak to effectuate the Tunnel Casing Project shall be consistent with the terms and conditions set forth in this resolution and the accompanying staff summary; and
+[p138_c0003] WHEREAS, the Boards of the MTA and LIRR find the terms and conditions set forth herein and in the attached Staff Summary to be advantageous to the MTA and LIRR, and that the actions proposed are necessary to preserve the potential effectuation of the Gateway Program, a program of regional importance and significance to the development and improvement of commuter transportation;
+[p138_c0004] NOW, THEREFORE, the Boards of the MTA and LIRR resolve as follows:
+- [p138_c0005] 1. The Chairman, Vice Chairman and/or Interim Executive Director, and their designees, acting singly, are hereby authorized to negotiate, execute and deliver contracts and any other necessary or appropriate agreements or instruments as are necessary and desirable to effectuate the Tunnel Casing Project, in conformity with the terms and conditions set forth in this resolution and the attached Staff Summary, including but not limited to a temporary construction license for the construction of the Concrete Casing Work and permanent easement(s) and/or covenants in favor of Amtrak and/or Related, as their interests may lie, in accordance with the terms set forth in this resolution and attached Staff Summary. 2. The Chairman, Vice Chairman and/or Interim Executive Director, and their designees, acting singly, are hereby authorized to take any and all actions as may be necessary, desirable or convenient to satisfy all applicable legal or regulatory requirements in connection with the foregoing actions.
+[p138_c0006] Dated: April 24, 2013
+[p138_c0007] _Master Page # 188 of 948 MTA Board Meeting 2/16/2013_
+
+## Page 139
+
+### [p139_c0001] Staff Summary
+### [p139_c0002] Metropolitan Transportation Authority
+### [p139_c0003] Page 1 of 2
+[p139_c0004]
+
+```text
+Subject SALE OF DEVELOPMENT RIGHTS IN PORT MORRIS, BRONX, NY Department TRANSIT ORIENTED DEVELOPMENT Department Head Name ROBERT PALEY Department Head Signature Project Manager Name NICHOLAS ROBERTS
+```
+[p139_c0005]
+
+```text
+Date JUNE 27, 2023 Vendor Name Contract Number Contract Manager Name Table of Contents Ref. #
+```
+[p139_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 MNR Committee 06/26/23 X 2 Finance Committee 06/26/23 X 3 Board 06/27/23 X
+```
+[p139_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 Legal 2 Chief Development Officer 3 Chief Financial Officer
+```
+[p139_c0008] AGENCY: Metropolitan Transportation Authority (“MTA”) and MTA Metro-North Railroad (“MNR”) GRANTEE: Waterfront Living II, LLC (the “Developer”) LOCATION: East 135 Street and Park Avenue, The Bronx, New York Block 2323, Lot 18 (the “Subject Property”) ACTIVITY: Sale of ± 55,174 square feet of excess transferrable development rights appurtenant to the Subject Property (the “Excess TDR’s”) ACTION REQUESTED: Authorization to (i) conditionally designate the Developer as the successful proposer to the RFP described below, and (ii) enter into: a purchase and sale agreement with the Developer for the purchase and sale of the Excess TDR’s (the “Purchase and Sale Agreement”) for the compensation set forth below, and a declaration of zoning lot restrictions and zoning lot development agreement (collectively, the “ZLDA”) to effectuate the merger of the Subject Property with the adjacent property owned by the Developer located at 188 East 135 Street (the “Development Site”) into a single zoning lot and the transfer of the Excess TDR’s to the Development Site. COMPENSATION: ± $2,483,300.00 ($45 per zoning square foot of Excess TDR’s)
+### [p139_c0009] COMMENTS:
+[p139_c0010] The Subject Property is a single tax lot owned by the MTA located in the Port Morris section of the Bronx on the eastern edge of the Harlem River with frontage along East 135 Street. The Subject Property is improved with footings and tracks for the Harlem River Lift Bridge (“HRLB”), a vertical lift bridge that carries MNR’s Hudson, Harlem, and New Haven lines across the Harlem River between Manhattan and the Bronx.
+[p139_c0011] The Developer is the fee owner of the Development Site which is located directly south of the Subject Property. The Developer intends to improve the Development Site with a multi-family rental building that will be developed on an “as-of-right” basis under applicable zoning law. The Developer approached MTA with a request to purchase all the Subject Property’s transferable development rights.
+[p139_c0012] _Master Page # 139 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 140
+
+### [p140_c0001] Staff Summary
+> [p140_c0002] The logo for the Metropolitan Transportation Authority (MTA) is located in the top right corner. It consists of a black circle with the white letters "MTA" inside, followed by the text "Metropolitan Transportation Authority" in a black, sans-serif font.
+### [p140_c0003] SALE OF DEVELOPMENT RIGHTS IN PORT MORRIS, THE BRONX, NY (cont'd)
+[p140_c0004] Page 2 of 2
+[p140_c0005] Upon receipt of the proposal from the Developer, MTA Transit Oriented Development ("TOD") submitted the proposed disposition of the transferable development rights to MNR for its review and approval. MNR determined that the proposed disposition would not impact the operation or maintenance of the HRLB, or the MNR infrastructure located at the Subject Property, either now or in the future. In any event, TOD and MNR will be reserving 3,500 square feet of zoning floor area under the ZLDA to allow for the possibility of a future structure at the Subject Property that would require the use of zoning floor area under the local zoning law. Based on the foregoing, TOD issued a request for proposals ("RFP") for the Excess TDR's. The Developer was the only respondent to the Request for Proposals ("RFP"). In its response to the RFP, the Developer offered to pay a total of $1,875,916 for the Excess TDR's ($34 per zoning square foot). Following extensive negotiations between TOD and the Developer, the parties negotiated a "Purchase Price" of $2,483,300 ($45 per zoning square foot) for the Excess TDR's. The proposed Purchase Price exceeds the valuation of the Excess TDR's provided by an independent appraisal obtained by TOD.
+[p140_c0006] Based on the foregoing, TOD requests Board authorization for MTA (for itself and on behalf of MNR) to (i) conditionally designate the Developer as the successful proposer to the RFP, (ii) negotiate, execute and deliver the Purchase and Sale Agreement, the ZLDA and such other transaction documents and instruments deemed necessary or appropriate to effectuate and consummate the sale and transfer of the Excess TDR's on the terms set forth above and such other terms and conditions as the Chair and Chief Executive Officer of the MTA or a designee deem necessary or appropriate, and to take all other actions as shall be necessary or desirable consistent with the foregoing to consummate the sale and transfer of the Excess TDR's to the Developer for use at the Development Site.
+[p140_c0007] _Master Page # 140 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 141
+
+### [p141_c0001] Metropolitan Transportation Authority
+### [p141_c0002] Staff Summary
+### [p141_c0003] Page 1 of 1
+[p141_c0004]
+
+```text
+Subject MTA 2015-2019 Capital Program Funding Amendment Department MTA C&D Department Head Name Tim Mulligan, Deputy Chief Development Officer Department Head Signature Project Manager/Division Head Stephen A. Berrang, Senior VP, C&D Program Oversight Project Manager/Division Head Signature
+```
+[p141_c0005]
+
+```text
+Date June 27, 2023 Department MTA HQ Financial Services Department Head Name Olga Chernat, Deputy Chief, Financial Services Department Head Signature Project Manager/Division Head Tiana Grimes, Acting Dir. Capital Program Funding Project Manager/Division Head Signature
+```
+[p141_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 2 Board 6/27/23
+```
+[p141_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 5 Chair and CEO 4 Chief of Staff 3 Chief Development Officer 2 Chief Financial Officer 1 Legal
+```
+### [p141_c0008] Purpose:
+[p141_c0009] To obtain MTA Board approval of a proposed change in the funding mix (with no change in the total funding amount) contained in the MTA 2015-2019 Capital Program, last amended September 25, 2019 (Amendment #4), with a total funding amount of $33.913 billion and to authorize the MTA to submit the $30.977 billion Capital Program Review Board (CPRB) portion of it to the CPRB for its review and approval in accordance with the Public Authorities Law §1269-b.
+### [p141_c0010] Discussion:
+[p141_c0011] The program was last amended in September 2019 (Amendment #4) when the plan increased by $643 million from $33.270 billion to $33.913 billion. The current proposed amendment (Amendment #5) proposes changes in the funding components to the approved plan and does not propose any change in the aggregate funding nor any capital element budget changes for the MTA 2015-2019 Capital Program.
+### [p141_c0012] Impacts on Funding:
+[p141_c0013] The net funding envelope for the 2015-2019 Capital Program remains unchanged. The amendment increases Federal New Starts funding by $900 million and MTA Bonds by $643 million through transfers from the 2020-2024 Capital Program. Such funding increases are offset by decreases of Federal Formula by $1,237 million and of Federal Flexible funds by $306 million; all or a portion of such funding is transferred to the 2020-2024 Capital Program to keep the net funding envelope for the 2020-2024 Capital Program unchanged.
+[p141_c0014] These proposed changes will allow MTA to best meet the funding requirements of the Second Avenue Subway Phase 2 Project ("SAS2"), whose capital cost is included in both the 2015-2019 Capital Program and 2020-2024 Capital Program. The offsetting re-allocation of the above amounts of federal and MTA bond sources between the two Capital Programs will facilitate funding both the $1,735 million of budgeted SAS2 costs set forth in the 2015-2019 Capital Program and the $5,223 million of budgeted SAS2 costs in the 2020-2024 Capital Program.
+### [p141_c0015] Recommendation:
+[p141_c0016] That the MTA Board approve the proposed MTA 2015-2019 Capital Program funding amendment in the amount of $33.913 billion, with the funding changes outlined above and authorize the MTA to submit the $30.977 billion CPRB portion to the CPRB for its review and approval.
+[p141_c0017] _Master Page # 141 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 142
+
+### [p142_c0001] Staff Summary
+### [p142_c0002] Page 1 of 2
+[p142_c0003]
+
+```text
+Subject MTA 2020-2024 Capital Program Amendment #3 Department MTA C&D Department Head Name Tim Mulligan, Deputy Chief Development Officer Department Head Signature Project Manager/Division Head Stephen A. Berrang, Senior VP, C&D Program Oversight Project Manager/Division Head Signature
+```
+[p142_c0004]
+
+```text
+Date June 27, 2023 Department MTA HQ Financial Services Department Head Name Olga Chernat, Deputy Chief, Financial Services Department Head Signature Project Manager/Division Head Tiana Grimes, Acting Director, Capital Program Funding Project Manager/Division Head Signature
+```
+[p142_c0005]
+
+```text
+Board Action Order To Date Approval Info Other 2 Board 6/27/23
+```
+[p142_c0006]
+
+```text
+Internal Approvals Order Approval Order Approval 5 Chair and CEO 4 Chief of Staff 3 Chief Development Officer 2 Chief Financial Officer 1 Legal
+```
+### [p142_c0007] Purpose:
+[p142_c0008] To obtain MTA Board approval of the proposed changes contained in this Amendment #3 to the MTA 2020-2024 Capital Program with a total funding amount of $55.442 billion and to authorize the MTA to submit the $52.116 billion Capital Program Review Board (CPRB) portion of it, including the revisions discussed herein, to the CPRB for its review and approval, consistent with the recommendations of the Crowe Forensic Audit and in accordance with the Public Authorities Law §1269-b
+### [p142_c0009] Discussion:
+[p142_c0010] The program was last amended in July 2022 (Amendment #2) when the plan increased by $108 million from $55.334 billion to $55.442 billion. Amendment #2 addressed budget moves made under the December 2021 letter amendment (Amendment #1) for the $921 million Penn Station Access award and subsequent agency adjustments for related fleet purchases and the New Rochelle Yard. Amendment #2 also added a new category under MTA Expansion for the New York State funded Penn Station Reconstruction project and addressed Long Island Rail Road's accelerated ADA stations needs while establishing a new Metro North's state-of-good-repair project on the Port Jervis line and increasing that agency's envelope by $8 million, via a Connecticut Department of Transportation (CDOT) disbursement. Proposed Capital Program Amendment (Amendment #3) keeps the overall budget unchanged. Amendment #3 moves $878 million from "core" CPRB agencies to Network Expansion, with $678 million going to Second Avenue Subway Phase 2 ("SAS2") and $200 million going to the Penn Station Access project. Several core projects have been added to address safety, resiliency, and critical state-of-good repair needs. In addition, this amendment reflects right-sizing of project estimates based on scope and schedule revisions, bid results, and market conditions. Finally, in accordance with Public Authorities Law, the amendment identifies elements in the CPRB portion of the program that exceeded the 10% budget threshold and require CPRB approval. MTA Bridges and Tunnel's $3.326 billion program includes a small administrative transfer and the addition of an important extension of useful life project. B&T does not require CPRB approval to amend its program. On the funding side, Amendment #3 aligns the mix of funding with SAS2 requirements and gives recognition to the additional Federal and state funding while keeping the overall funding envelope of the 2020-2024 Capital Program unchanged.
+[p142_c0011] CPRB Core Program: $41.825 billion. Agencies continue to make investments that renew and enhance the networks of New York City Transit, Long Island Rail Road, Metro-North, MTA Bus Company and MTA Interagency. Overall, the Core Program decreases from $42.703 billion to $41.825 billion. Reductions to New York City Transit, the Commuter Rails, and MTA Bus are addressing emerging MTA Expansion program needs and adjustments to Interagency. Amendment #3 includes the following notable changes:
+[p142_c0012] New York City Transit (NYCT) $33.964 billion. Overall, NYCT's program is reduced by $646 million since the approval of amendment #2. Project scope and timelines were re-evaluated in the Subway Cars, Stations, and Power categories with the ensuing decreases primarily going to fund the agency's share of transfers made on behalf of Second Avenue Subway Phase 2, Penn Station Access railcar needs, and ongoing Interagency activities. Note that the resequencing of projects in the Power category does not affect any state-of-good repair ACEPs. Notable intra-agency changes include increases to the Line Structures, Depots, and Miscellaneous categories and a reduction in Shops and Yards.
+[p142_c0013] Long Island Rail Road (LIRR) $3.446 billion. In Amendment #3, the LIRR's program reduction of $176 million will support MTA Expansion and Interagency needs. Re-evaluations of work plans and schedule coordination at the category level have resulted in decreases to the Stations, Track, and Power categories. The changes do not affect current ongoing work in those categories. In addition, $30 million is being transferred from the Line Structures category to the Shops and Yards category to fund resiliency improvements at the West Side Yard in Manhattan.
+[p142_c0014] _Master Page # 142 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 143
+
+### [p143_c0001] Staff Summary
+[p143_c0002] Page 2 of 2
+[p143_c0003] Metro-North Railroad (Metro-North) $3.408 billion. Amendment #3 reduces Metro-North's overall program by $50 million to meet the aforementioned MTA Expansion and Interagency needs. This amendment adds $250 million to the ongoing Park Avenue Viaduct Replacement, which will now be extended north to 132 nd Street. It also right-sizes the Southeast Station Parking Facility, where accessibility enhancements have been added to the scope of work. Phase 2 of the Harmon to Poughkeepsie Signal System project, added in Amendment #2, has now been re-programmed into 2025-29, in alignment with its revised schedule.
+[p143_c0004] MTA Expansion Program: $10.291 billion. Increases to the MTA Expansion budget total $878 million, coming from the Core agencies. $200 million will address the fleet purchases required by Penn Station Access. $678 million will fund the re-evaluated Second Avenue Subway Phase 2 need, which includes a $379 million increase to the project contingency as mandated by the Federal Transit Administration. Overall budgets for East Side Access Long Island Rail Road Expansion, and the NY State funded Penn Station Reconstruction remain unchanged.
+[p143_c0005] MTA Bus Company (MTAB): $839.3 million. The revised program contains a net decrease of $31 million from Amendment #2. The decrease, coming primarily from the Miscellaneous Depots Investments project, went to address the Second Avenue Subway Phase 2 need.
+[p143_c0006] Interagency: $167.8 million. The Core agencies transferred a total of $26 million to fund an additional $15 million for the project addressing the ongoing demolition of the MTA's former headquarters at 347 Madison Avenue. The balance will go to meet additional interagency administration needs.
+[p143_c0007] CPRB 10% Element Issues. This amendment also identifies capital program elements that require CPRB approval to advance work in elements where the budget has increased greater than 10% from the last CPRB approved level. These elements are identified in the body of the book. CPRB approval is required to advance work in these elements.
+[p143_c0008] MTA Bridge & Tunnels (B&T): $3.326 billion. B&T's program value remains essentially unchanged from amendment #2. Budget adjustments at the project level reflect the timing of awards, bid results, and refinement of scope. Some projects have been deferred to 2025-29 in favor of advancing the Main Cable De-humidification at the Verrazzano Bridge, ensuring this facility's long-term preservation. The $503 million budget for the Central Business District Tolling program is unchanged since its award in late 2019. B&T's program does not require CPRB approval.
+### [p143_c0009] Impacts on Funding:
+[p143_c0010] The 2020-2024 Capital Program funding mix is proposed to be adjusted to allow MTA best meet the funding requirements of the Second Avenue Subway Phase 2 project, capital costs for which are included in both the 2015-2019 Capital Program and 2020-2024 Capital Program, and to reflect additional Federal and State funds, while keeping the overall funding envelopes for both the 2020-2024 Capital Program and the 2015-2019 Capital Programs unchanged at $55.442 billion and $33.913 billion, respectively. In the 2020-2024 Capital Program, the amendment increases Federal Formula funding by $813 million and Federal Flexible & Other funds by $306 million because of transfers from the 2015-2019 Capital Program. In addition, the funding is increased to reflect $424 million of net additional Federal Flexible funding and $0.6 million of additional funds from the State of New York, for an aggregate funding increase of $1.544 billion. Such funding increase is fully offset by transfers of Federal New Starts funding of $900 million and reduction of MTA Bonds by $644 million ($643 million of which will be transferred to the 2015-2019 Capital Program, keeping the funding envelope for the 2015-2019 Capital Program unchanged.)
+### [p143_c0011] Alternatives:
+[p143_c0012] The amendment is critical to continue renewing, enhancing, and expanding the MTA's network to meet the mobility needs of the region. Pursuant to the Public Authorities Law, program element increases exceeding 10% require CPRB approval. Without CPRB approval of the changes, certain projects may not advance as planned, including Second Avenue Subway Phase 2 and the fleet purchase needed for Penn Station Access.
+### [p143_c0013] Recommendation:
+[p143_c0014] That the MTA Board approve the proposed 2020-2024 Capital Program amendment in the amount of $55.442 billion, with the changes outlined above and detailed in the Capital Program book and authorize the MTA to submit the $52.116 billion CPRB portion to the CPRB for its review and approval.
+[p143_c0015] _Master Page # 143 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 144
+
+### [p144_c0001] Staff Summary
+### [p144_c0002] MTA Bus Company
+### [p144_c0003] MTA New York City Transit
+### [p144_c0004] Fare-Free Bus Pilot program and Fare Free-Paratransit Pilot Program
+[p144_c0005] Judith McClain , Chief, Operations Planning, NYCT
+[p144_c0006] Chris Pangilinan , Vice President, Paratransit
+### [p144_c0007] Fare-Free Bus Pilot Program
+[p144_c0008] A. Fare-Free Bus Pilot Program. Part NN of Chapter 56 of the New York Laws of 2023 requires the MTA to establish and implement a fare-free bus pilot program within New York City and requires Board approval therefor. The fare-free bus pilot program is required to begin within ninety (90) days after board approval therefor, and to operate for a minimum of six months and a maximum of one year.
+[p144_c0009] In accordance with such legislation, the MTA shall establish one fare-free bus route in each county of the City, and shall take the following factors into account, without limitation, in selecting the bus routes to include in the fare-free bus pilot program: fare evasion, ridership, service adequacy and equity for low-income and economically disadvantaged communities, and access to employment and commercial activity.
+### [p144_c0010] B. Fare-Free Paratransit Pilot Program
+[p144_c0011] As a companion to the fare-free bus pilot program, MTA will also provide fare-free paratransit trips for customers who begin and end their trips within \frac{3}{4} of a mile of the fare-free bus routes.
+### [p144_c0012] Recommendation
+[p144_c0013] Implement the fare-free bus pilot and companion fare-free paratransit trips, as described above, no later than 90 days after Board adoption.
+### [p144_c0014] Budget Impact
+[p144_c0015] The net operating costs of the fare-free bus pilot program is legally mandated not to exceed Fifteen Million Dollars ($15,000,000).
+[p144_c0016] The net operating costs of the fare-free paratransit pilot program is not expected to exceed $700,000
+### [p144_c0017] Implementation Date
+[p144_c0018] The fare-free bus pilot program and the fare-free paratransit pilot program will begin on or before September 25, 2023.
+[p144_c0019] _Master Page # 144 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 145
+
+### [p145_c0001] Staff Summary
+[p145_c0002]
+
+```text
+Subject Fare-Free Bus Pilot Program and Fare-Free Paratransit Pilot Program Department Operations Planning and Paratransit Department Head Name Judith McClain – Ops Planning Chris Pangilinan - Paratransit Department Head Signature Project Manager Name Sarah J. Wyss – Ops Planning Simone Harvard -NYCT
+```
+[p145_c0003]
+
+```text
+Date June 27, 2023 Vendor Name N/A Contract Number N/A Contract Manager Name N/A Table of Contents Ref # N/A
+```
+[p145_c0004]
+
+```text
+Board Action Order To Date Approval Info Other 1 Board X
+```
+[p145_c0005]
+
+```text
+Internal Approvals Order Approval Order Approval 1 President 2 CFO 3 General Counsel
+```
+### [p145_c0006] Purpose
+[p145_c0007] To obtain Board approval, in accordance with Part NN of Chapter 56 of the New York Laws of 2023, for the establishment and implementation of a fare-free bus pilot program within the City New York as described herein.
+[p145_c0008] In connection with the fare-free bus pilot program, there shall also be established and implemented a fare-free paratransit pilot program as described herein.
+### [p145_c0009] Discussion
+[p145_c0010] A. Fare-Free Bus Pilot Program . Part NN of Chapter 56 of the New York Laws of 2023 requires the MTA to establish and implement a fare-free bus pilot program within New York City and requires Board approval therefor. The fare-free bus pilot program is required to begin within ninety (90) days after board approval therefor, and to operate for a minimum of six months and a maximum of one year.
+[p145_c0011] In accordance with such legislation, the MTA shall establish one fare-free bus route in each county of the City, and shall take the following factors into account, without limitation, in selecting the bus routes to include in the fare-free bus pilot program: fare evasion, ridership, service adequacy and equity for low-income and economically disadvantaged communities, and access to employment and commercial activity.
+[p145_c0012] The net operating costs of the fare-free bus route program shall not exceed Fifteen Million Dollars ($15,000,000).
+[p145_c0013] _Master Page # 145 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 146
+
+### [p146_c0001] Staff Summary
+> [p146_c0002] The logo for the MTA Bus Company, featuring the MTA logo (a circle with 'MTA' inside) followed by the text 'Bus Company'.
+> [p146_c0003] The logo for the MTA New York City Transit, featuring the MTA logo (a circle with 'MTA' inside) followed by the text 'New York City Transit'.
+[p146_c0004] B. Fare-Free Paratransit Pilot Program. In connection with the fare-free bus pilot program, the MTA will establish and implement a fare-free paratransit pilot program. In accordance with FTA Circular 4710.1, the fare-free paratransit trips shall be those trips with an origin within 3/4 mile of a fare-free bus route and a destination within 3/4 mile of the same fare-free bus route.
+[p146_c0005] The fare-free paratransit pilot program shall commence on the same date as the fare-free bus pilot program and shall remain in effect for the same period of time as the fare-free bus pilot program.
+### [p146_c0006] Recommendation
+[p146_c0007] It is recommended that the Board approve the establishment and implementation of a fare-free bus and paratransit pilot program as described herein.
+### [p146_c0008] Alternative
+[p146_c0009] None. The fare-free bus pilot program is legally mandated.
+### [p146_c0010] Budget Impact
+[p146_c0011] The net operating costs of the fare-free bus pilot program is legally mandated not to exceed Fifteen Million Dollars ($15,000,000).
+[p146_c0012] The net operating costs of the fare-free paratransit pilot program is not expected to exceed $700,000.
+### [p146_c0013] Implementation Date
+[p146_c0014] The fare-free bus pilot program and the fare-free paratransit pilot program will begin on or before September 25, 2023.
+[p146_c0015] _Master Page # 146 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 147
+
+### [p147_c0001] MTA Metropolitan Transportation Authority
+### [p147_c0002] Staff Summary
+### [p147_c0003] Page 1 of 1
+[p147_c0004]
+
+```text
+Subject Board Approval for E-hail program Phase 2 Expansion Department NYCT Paratransit Department Head Name C. Pangilinan Project Manager/Division Head
+```
+[p147_c0005]
+
+```text
+Date June 27, 2023
+```
+[p147_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 Board 6/27/23 x
+```
+[p147_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 President NYCT 2 General Counsel 3 CFO
+```
+### [p147_c0008] Purpose
+[p147_c0009] To obtain Board approval for a second pilot phase of an E-hail program (“Phase 2 Expansion”).
+### [p147_c0010] Discussion
+[p147_c0011] E-hail is a premium service for people with disabilities. It provides more flexibility than dedicated or non-dedicated Access-A-Ride (“AAR”) service by enabling customers to book taxi or FHV rides using a ride-share app.
+[p147_c0012] The first pilot phase of the E-hail program (“Phase 1”) began in October 2017. It included 1,200 customers of the AAR program and did not contain any limitations on the number of rides or the subsidized cost of each ride.
+[p147_c0013] Based on the results of Phase 1, the MTA has restructured the E-hail Program, as described herein, and is proposing to end Phase 1 and transition to Phase 2 Expansion on or about August 2023.
+[p147_c0014] Phase 2 Expansion will triple enrollment in the E-hail program from 1,200 to 3,600 customers, significantly increasing the number of customers who have the opportunity to benefit from the additional flexibility of the E-hail program. All currently enrolled E-hail customers who are in compliance with AAR’s Paratransit Conduct Policy will continue to Phase 2 Expansion, together with an additional 2,400 AAR customers. Unlike the Phase 1 cohort, the additional 2,400 for Phase 2 Expansion will be selected at random, but in a manner that reasonably ensures that they are reflective of the diversity of the customers in the AAR program.
+[p147_c0015] In order to expand the number of customers in the E-hail program in a financially sustainable way, Phase 2 Expansion will introduce certain limits on the number of rides per customer that will be subsidized on a monthly basis, and the subsidized amount of each ride. To obtain a fuller understanding of customer usage, customers will be randomly assigned to one of two options of the Phase 2 Expansion program: one with a greater per trip subsidy (the “Distance” option), and the other with a greater number of subsidized trips per month (the “High-Volume” option).
+[p147_c0016] _Master Page # 147 of 148 - MTA Board Meeting 6/27/2023_
+
+## Page 148
+
+[p148_c0001] In both options, the customer will be responsible for the first $4 of the cost of every trip.
+[p148_c0002] In the Distance option, the MTA subsidy will apply to up to 25 trips per month. After the first $4 of trip cost, MTA will be responsible for the next $40 of trip cost, and the customer will be responsible for any trip cost beyond $44.
+[p148_c0003] In the High-Volume option, the MTA subsidy will apply to up to 40 trips per month. After the first $4 of trip cost, the MTA will be responsible for the next $25 of trip cost, and the customer will be responsible for any trip cost beyond $29.
+[p148_c0004] Both of these approaches reflect best practices with respect to premium on-demand services for paratransit eligible customers with disabilities offered by other transportation providers, including in San Francisco, Boston and Las Vegas.
+### [p148_c0005] Recommendation
+[p148_c0006] It is recommended that the Board approve the establishment and implementation of the Phase 2 Expansion E-hail Program as described herein.
+### [p148_c0007] Alternative
+[p148_c0008] Discontinue the E-hail program.
+### [p148_c0009] Budget Impact
+[p148_c0010] The current annual budget for E-hail Phase 1 is $16,000,000 for 1,200 enrollees and Phase 2 Expansion is projected to cost an additional $1.6 million more for 3,600 enrollees given the introduction of the pricing structure described herein. This will be covered under the existing paratransit cost sharing agreement with the City of New York.
+### [p148_c0011] Implementation Date
+[p148_c0012] E-hail Phase 2 Expansion will begin on or around August 1, 2023.
+[p148_c0013] _Master Page # 148 of 148 - MTA Board Meeting 6/27/2023_

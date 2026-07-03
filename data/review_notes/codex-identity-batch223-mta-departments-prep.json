@@ -1,0 +1,410 @@
+{
+  "note_id": "codex-identity-batch223-mta-departments-prep",
+  "batch": "identity223",
+  "author": "codex",
+  "created_at": "2026-06-23T00:00:00Z",
+  "scope": "Codex-only prep artifact for remaining MTA parent/department/person contamination after identity222. Focused on high-confidence alias_merge or do_not_merge decisions involving MTA parent, NYCT, MTA Bus, Access-a-Ride, MTA Corporate Compliance, MTA Real Estate, procurement office, Department of Buses, and Frank Annicaro/Farrell person contamination.",
+  "prepared_count": 10,
+  "decision_type_counts": {
+    "alias_merge": 2,
+    "do_not_merge": 8
+  },
+  "proposed_durable_decisions": [
+    {
+      "decision_id": "identity223-mta-departments-001",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-64066-mta",
+        "entity_mta-nyct"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys_or_reasons": [
+          "shared_entity_name:mta",
+          "shared_entity_name:nyct",
+          "negative:different entity_type: transit_authority/agency contamination"
+        ],
+        "packet": "data/identity-review/packets/entity_cluster_696351ea7c.md"
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-64066-mta",
+          "display_name": "Metropolitan Transportation Authority",
+          "record_identity": "parent agency",
+          "evidence_ref": "meeting_doc_64066#p001_c0002",
+          "quote": "Metropolitan Transportation Authority"
+        },
+        {
+          "record_id": "entity_mta-nyct",
+          "display_name": "MTA NYCT Reference",
+          "record_identity": "NYCT agency/operator reference",
+          "evidence_ref": "m86_sbs_progress_report_2017#p003_c0003",
+          "quote": "MTA New York City Transit"
+        }
+      ],
+      "reason": "The first record is the parent Metropolitan Transportation Authority, while the second is New York City Transit / NYCT. NYCT may be part of or operate under MTA, but it is not the same entity.",
+      "guard_notes": "Do not let generic 'MTA' labels or MTA-NYCT joint project labels collapse parent MTA into NYCT. Use part_of, operator, publisher, or partner relations instead."
+    },
+    {
+      "decision_id": "identity223-mta-departments-002",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-154986-aar",
+        "entity_mta-entity-update-2025"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys_or_reasons": [
+          "AAR cluster carries parent-MTA aliases",
+          "negative: service program vs parent transit authority"
+        ],
+        "packet": "data/identity-review/packets/entity_cluster_696351ea7c.md"
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-154986-aar",
+          "display_name": "MTA Access-a-Ride",
+          "record_identity": "paratransit service program",
+          "evidence_ref": "annual_report_narrative_2021#p012_c0002",
+          "quote": "MTA Access-a-Ride"
+        },
+        {
+          "record_id": "entity_mta-entity-update-2025",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "parent transit authority",
+          "evidence_ref": "better_buses_action_plan_2019#p002_c0004",
+          "quote": "Metropolitan Transportation Authority (MTA)"
+        }
+      ],
+      "reason": "Access-a-Ride is a paratransit service program managed within the transit organization; parent MTA is the authority. Program ownership/management is not identity.",
+      "guard_notes": "Keep AAR/MyAAR/service-program aliases together, but remove generic parent-MTA aliases from the AAR identity surface."
+    },
+    {
+      "decision_id": "identity223-mta-departments-003",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-154986-aar",
+        "entity_mta-bus-company"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys_or_reasons": [
+          "AAR described as managed by DOB",
+          "MTA Bus Company is a transit agency division/company"
+        ],
+        "packet": "data/identity-review/packets/entity_cluster_696351ea7c.md"
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-154986-aar",
+          "display_name": "MTA Access-a-Ride",
+          "record_identity": "paratransit service program",
+          "evidence_ref": "annual_report_narrative_2021#p012_c0002",
+          "quote": "Paratransit service managed by MTA NYCT Department of Buses"
+        },
+        {
+          "record_id": "entity_mta-bus-company",
+          "display_name": "MTA Bus Company",
+          "record_identity": "transit agency division",
+          "evidence_ref": "behind_schedule_2025#p010_c0003",
+          "quote": "MTA Bus Company"
+        }
+      ],
+      "reason": "AAR is a paratransit service/program; MTA Bus Company is a bus operating company/division. They are related in bus/paratransit governance but not the same identity.",
+      "guard_notes": "Prefer relations such as managed_by, part_of_agency, or related_to for AAR/DOB/MTA Bus context."
+    },
+    {
+      "decision_id": "identity223-mta-departments-004",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_mta-chief-procurement-officer",
+        "entity_mta-entity-update-2025"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys_or_reasons": [
+          "office name includes MTA",
+          "negative: office vs parent transit authority"
+        ],
+        "packet": "data/identity-review/packets/entity_cluster_696351ea7c.md"
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_mta-chief-procurement-officer",
+          "display_name": "Office of the Chief Procurement Officer",
+          "record_identity": "office",
+          "evidence_ref": "meeting_doc_100276#p009_c0002",
+          "quote": "Chief Procurement Officer"
+        },
+        {
+          "record_id": "entity_mta-entity-update-2025",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "parent transit authority",
+          "evidence_ref": "better_buses_action_plan_2019#p002_c0004",
+          "quote": "Metropolitan Transportation Authority (MTA)"
+        }
+      ],
+      "reason": "The Office of the Chief Procurement Officer is an MTA office/procurement function, not the parent authority itself.",
+      "guard_notes": "Do not merge officer/office/procurement-department aliases into parent MTA. Preserve office-to-parent relations separately."
+    },
+    {
+      "decision_id": "identity223-mta-departments-005",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-135596-mta-corporate-compliance",
+        "entity_mta-corporate-compliance-125256"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys_or_reasons": [
+          "shared_entity_name:mtacorporatecompliance",
+          "same display name",
+          "same office/agency department function"
+        ],
+        "packet": "data/identity-review/packets/entity_cluster_696351ea7c.md"
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-135596-mta-corporate-compliance",
+          "display_name": "MTA Corporate Compliance",
+          "record_identity": "office",
+          "evidence_ref": "meeting_doc_135596#p067_c0004",
+          "quote": "Additional copies may be obtained from MTA Corporate Compliance"
+        },
+        {
+          "record_id": "entity_mta-corporate-compliance-125256",
+          "display_name": "MTA Corporate Compliance",
+          "record_identity": "agency department",
+          "evidence_ref": "meeting_doc_131481#p006_c0007",
+          "quote": "MTA Corporate Compliance"
+        }
+      ],
+      "reason": "Both records name the same MTA Corporate Compliance office/department, with matching identity key entity_mta-corporate-compliance and evidence of the same compliance function.",
+      "guard_notes": "Alias only these Corporate Compliance office/department records. Do not merge Corporate Compliance into parent MTA or into the individual Chief Compliance Officer."
+    },
+    {
+      "decision_id": "identity223-mta-departments-006",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-135596-mta-corporate-compliance",
+        "entity_mta-entity-update-2025"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys_or_reasons": [
+          "office name includes MTA",
+          "negative: office vs parent transit authority"
+        ],
+        "packet": "data/identity-review/packets/entity_cluster_696351ea7c.md"
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-135596-mta-corporate-compliance",
+          "display_name": "MTA Corporate Compliance",
+          "record_identity": "office",
+          "evidence_ref": "meeting_doc_135596#p068_c0005",
+          "quote": "reach out to MTA Corporate Compliance for guidance"
+        },
+        {
+          "record_id": "entity_mta-entity-update-2025",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "parent transit authority",
+          "evidence_ref": "better_buses_action_plan_2019#p002_c0004",
+          "quote": "Metropolitan Transportation Authority (MTA)"
+        }
+      ],
+      "reason": "Corporate Compliance is a named MTA compliance office/department. It should not be identified as the whole parent authority.",
+      "guard_notes": "Represent Corporate Compliance as an internal office of MTA, not as an alias of MTA."
+    },
+    {
+      "decision_id": "identity223-mta-departments-007",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_167646-mta-real-estate",
+        "entity_mta-real-estate"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys_or_reasons": [
+          "shared_entity_name:mtarealestatedepartment",
+          "record_aliases include entity_mta-real-estate-department",
+          "same MTA Real Estate/RED department"
+        ],
+        "packet": "data/identity-review/packets/entity_cluster_696351ea7c.md"
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_167646-mta-real-estate",
+          "display_name": "MTA Real Estate Department",
+          "record_identity": "MTA real estate department",
+          "evidence_ref": "meeting_doc_167646#p088_c0005",
+          "quote": "MTA Real Estate"
+        },
+        {
+          "record_id": "entity_mta-real-estate",
+          "display_name": "MTA Real Estate",
+          "record_identity": "MTA real estate agency department",
+          "evidence_ref": "meeting_doc_105786#p004_c0012",
+          "quote": "MTA Real Estate will provide an annual report on leasing and construction opportunities"
+        }
+      ],
+      "reason": "Both records refer to the same MTA Real Estate / Real Estate Department identity. The 167646 record is a narrow source-specific instance of the same department.",
+      "guard_notes": "Alias MTA Real Estate Department into MTA Real Estate, but do not merge it into parent MTA or into its subgroups such as TOM/RED or Transit-Oriented Development unless independently reviewed."
+    },
+    {
+      "decision_id": "identity223-mta-departments-008",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_mta-real-estate",
+        "entity_mta-entity-update-2025"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys_or_reasons": [
+          "MTA Real Estate aliases include generic entity_mta",
+          "negative: agency department vs parent transit authority"
+        ],
+        "packet": "data/identity-review/packets/entity_cluster_696351ea7c.md"
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_mta-real-estate",
+          "display_name": "MTA Real Estate",
+          "record_identity": "agency department",
+          "evidence_ref": "meeting_doc_105786#p004_c0012",
+          "quote": "MTA Real Estate will provide an annual report"
+        },
+        {
+          "record_id": "entity_mta-entity-update-2025",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "parent transit authority",
+          "evidence_ref": "better_buses_action_plan_2019#p002_c0004",
+          "quote": "Metropolitan Transportation Authority (MTA)"
+        }
+      ],
+      "reason": "MTA Real Estate is an internal real-estate department/function, not the whole Metropolitan Transportation Authority.",
+      "guard_notes": "Strip or quarantine generic entity_mta aliases on MTA Real Estate records; preserve department-to-parent relation."
+    },
+    {
+      "decision_id": "identity223-mta-departments-009",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_frank-annicaro",
+        "entity_department-of-buses"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys_or_reasons": [
+          "Frank Annicaro record carries Department of Buses role labels",
+          "negative:different entity_type: person vs department"
+        ],
+        "packet": "data/identity-review/packets/entity_cluster_696351ea7c.md"
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_frank-annicaro",
+          "display_name": "Frank Annicaro, Senior Vice President, Buses, NYCT",
+          "record_identity": "person",
+          "evidence_ref": "meeting_doc_105931#p001_c0010",
+          "quote": "Frank Annicaro"
+        },
+        {
+          "record_id": "entity_department-of-buses",
+          "display_name": "Department of Buses",
+          "record_identity": "department",
+          "evidence_ref": "meeting_doc_105946#p007_c0003",
+          "quote": "Requesting Department: Department of Buses, Frank Annicaro"
+        }
+      ],
+      "reason": "Frank Annicaro is a person/executive associated with the Department of Buses. The department is the organizational unit; the person is not the same entity.",
+      "guard_notes": "Role-title aliases such as 'SVP Buses' can stay on the person only when the personal name is present. Department-only DOB aliases belong on Department of Buses."
+    },
+    {
+      "decision_id": "identity223-mta-departments-010",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_frank-annicaro",
+        "entity_frank-farrell-mta-acting-evp-buses"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys_or_reasons": [
+          "both records are Department of Buses executives",
+          "negative: different named persons"
+        ],
+        "packet": "data/identity-review/packets/entity_cluster_696351ea7c.md"
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_frank-annicaro",
+          "display_name": "Frank Annicaro, Senior Vice President, Buses, NYCT",
+          "record_identity": "person",
+          "evidence_ref": "meeting_doc_105931#p001_c0010",
+          "quote": "Frank Annicaro"
+        },
+        {
+          "record_id": "entity_frank-farrell-mta-acting-evp-buses",
+          "display_name": "Frank Farrell",
+          "record_identity": "person",
+          "evidence_ref": "meeting_doc_201776#p286_c0001",
+          "quote": "MTA Acting Executive Vice President of Department of Buses/MTA Bus Company"
+        }
+      ],
+      "reason": "Frank Annicaro and Frank Farrell are different people who both appear in Department of Buses/MTA Bus leadership contexts.",
+      "guard_notes": "Do not merge people based on first name, shared DOB roles, or shared bus-executive titles. Keep person-to-department employment/leadership relations separate."
+    }
+  ],
+  "skipped_review_only": [
+    {
+      "candidate": "entity_meeting-doc-64066-mta <> entity_mta-entity-update-2025",
+      "confidence": "medium",
+      "reason": "Both appear to be parent-MTA records, but both clusters carry contamination from people, officers, committees, and subsidiary/department labels. Prefer a later parent-MTA alias-hygiene pass before a durable alias_merge."
+    },
+    {
+      "candidate": "entity_meeting-doc-154986-aar <> entity_mta-nyct",
+      "confidence": "medium",
+      "reason": "AAR is described as managed by NYCT Department of Buses and is likely not NYCT itself, but the AAR cluster carries generic MTA/NYCT management labels. Leave for a dedicated AAR/DOB service-program cleanup."
+    },
+    {
+      "candidate": "entity_frank-annicaro <> entity_mta-bus-company",
+      "confidence": "medium",
+      "reason": "Frank Annicaro is a person and MTA Bus Company is an organization, so DNM is likely, but this artifact already covers the clearest person-vs-department and person-vs-person guardrails."
+    }
+  ],
+  "blockers": [],
+  "commands_run": [
+    "pwd && rg --files | rg '(^data/review_notes/|data/canonical/|wiki/|raw/sources/|LOG.md$)' | head -200",
+    "git status --short",
+    "ls -la data/review_notes 2>/dev/null || true",
+    "jq 'keys, .decisions[0]?' data/review_notes/codex-identity-batch222-mta-parent-prep.json",
+    "jq 'keys, .decisions[0]?' data/review_notes/codex-identity-batch222-early-entity-prep.json",
+    "rg -n \"entity_meeting-doc-64066-mta|entity_mta-entity-update-2025|entity_mta-nyct|entity_meeting-doc-154986-aar|entity_mta-chief-procurement-officer|entity_meeting-doc-135596-mta-corporate-compliance|entity_167646-mta-real-estate|entity_mta-real-estate|entity_frank-annicaro|Frank Farrell|frank-farrell|Farrell\" data/identity-review data/canonical wiki/entities wiki/sources | head -300",
+    "jq '.proposed_durable_decisions[0:2], .skipped_review_only[0:2]' data/review_notes/codex-identity-batch222-mta-parent-prep.json",
+    "sed -n '1,220p' data/identity-review/packets/entity_cluster_696351ea7c.md",
+    "sed -n '220,460p' data/identity-review/packets/entity_cluster_696351ea7c.md",
+    "rg -n \"^### entity_(meeting-doc-64066-mta|mta-entity-update-2025|mta-nyct|meeting-doc-154986-aar|mta-chief-procurement-officer|meeting-doc-135596-mta-corporate-compliance|mta-corporate-compliance-125256|167646-mta-real-estate|mta-real-estate|frank-annicaro|frank-farrell-mta-acting-evp-buses|mta-bus-company|department-of-buses|new-york-city-transit-authority)$\" data/identity-review/packets/entity_cluster_696351ea7c.md",
+    "jq -c 'select((.record_id|test(\"mta-real-estate|frank-annicaro|frank-farrell|mta-chief-procurement|corporate-compliance|meeting-doc-64066-mta|meeting-doc-154986-aar|mta-nyct|mta-entity-update-2025|mta-bus-company|department-of-buses\")) or ((.display_name//\"\")|test(\"Frank Farrell|Frank Annicaro|MTA Real Estate|Corporate Compliance|Chief Procurement|Access-A-Ride|MTA Bus Company|Department of Buses|New York City Transit|Metropolitan Transportation Authority\";\"i\"))) | {record_id, display_name, type:.payload.entity_type, evidence:(.evidence_refs[0].evidence_id), quote:(.evidence_refs[0].quote // .evidence_refs[0].source_quote // .evidence_refs[0].text)}' data/canonical/entities.jsonl | head -120",
+    "sed -n '7041,7115p' data/identity-review/packets/entity_cluster_696351ea7c.md && sed -n '9942,10035p' data/identity-review/packets/entity_cluster_696351ea7c.md && sed -n '10721,10805p' data/identity-review/packets/entity_cluster_696351ea7c.md",
+    "sed -n '6530,6615p' data/identity-review/packets/entity_cluster_696351ea7c.md && sed -n '8918,9005p' data/identity-review/packets/entity_cluster_696351ea7c.md && sed -n '1480,1565p' data/identity-review/packets/entity_cluster_696351ea7c.md",
+    "sed -n '5901,5975p' data/identity-review/packets/entity_cluster_696351ea7c.md && sed -n '9721,9795p' data/identity-review/packets/entity_cluster_696351ea7c.md && sed -n '9230,9310p' data/identity-review/packets/entity_cluster_696351ea7c.md",
+    "sed -n '2722,2815p' data/identity-review/packets/entity_cluster_696351ea7c.md && sed -n '2978,3055p' data/identity-review/packets/entity_cluster_696351ea7c.md && sed -n '11426,11515p' data/identity-review/packets/entity_cluster_696351ea7c.md",
+    "jq '{prepared_count, decision_type_counts, decisions:(.proposed_durable_decisions|length), skipped:(.skipped_review_only|length), blockers}' data/review_notes/codex-identity-batch223-mta-departments-prep.json",
+    "git status --short data/review_notes/codex-identity-batch223-mta-departments-prep.json"
+  ],
+  "commands_not_run": [
+    "provider-backed commands",
+    "materialize",
+    "validate",
+    "export"
+  ]
+}

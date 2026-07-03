@@ -1,0 +1,16 @@
+{
+  "run_id": "2026-06-10T17-48-04-377Z_1496766-74d645bd_ingest_120418-brt-cb4-34th-street",
+  "generated_at": "2026-06-10T19:30:28.393Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "reviewed_decision_count": 15,
+  "pass_count": 0,
+  "fail_count": 15,
+  "unsure_count": 0,
+  "paths": {
+    "verdicts_jsonl": "data/canonicalize/2026-06-10T17-48-04-377Z_1496766-74d645bd_ingest_120418-brt-cb4-34th-street/verdicts.jsonl",
+    "manifest": "data/canonicalize/2026-06-10T17-48-04-377Z_1496766-74d645bd_ingest_120418-brt-cb4-34th-street/review-manifest.json"
+  }
+}

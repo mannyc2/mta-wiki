@@ -1,0 +1,283 @@
+{
+  "run_id": "2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T02:52:05.333Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "rel-s79-becomes-sbs",
+        "local_observation_id": "claim_s79_becomes_sbs_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_able-s79-sbs",
+            "object_id": "claim_s79-becomes-sbs-2012",
+            "description": "S79 will become S79 SBS and will only stop at SBS stations",
+            "evidence_refs": [
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p001_c0002",
+                "source_quote": "S79 will become S79 SBS and will only stop at SBS stations marked"
+              },
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0013",
+                "source_quote": "All S79 service becomes Select Bus Service, stopping only at SBS stations"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim text names S79 becoming S79 SBS; evidence blocks explicitly refer to S79 SBS conversion.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p001_c0002",
+            "source_quote": "S79 will become S79 SBS and will only stop at SBS stations marked"
+          },
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0013",
+            "source_quote": "All S79 service becomes Select Bus Service, stopping only at SBS stations"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-s59-s78-local-stops",
+        "local_observation_id": "claim_s59_s78_serve_local_stops_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_s59-hylan-2011",
+            "object_id": "claim_s59-s78-serve-local-stops-2012",
+            "description": "S59 will continue to serve local stops with added service",
+            "evidence_refs": [
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p001_c0002",
+                "source_quote": "S59 and S78 will continue to serve local stops with added service"
+              },
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0013",
+                "source_quote": "Local stops will continue to be served by the S59 and S78, with added service"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_s78-hylan-2010",
+            "object_id": "claim_s59-s78-serve-local-stops-2012",
+            "description": "S78 will continue to serve local stops with added service",
+            "evidence_refs": [
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p001_c0002",
+                "source_quote": "S59 and S78 will continue to serve local stops with added service"
+              },
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0013",
+                "source_quote": "Local stops will continue to be served by the S59 and S78, with added service"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim text explicitly names S59 and S78 continuing local stop service. Both route records exist in the registry.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p001_c0002",
+            "source_quote": "S59 and S78 will continue to serve local stops with added service"
+          },
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0013",
+            "source_quote": "Local stops will continue to be served by the S59 and S78, with added service"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-sbs-fare-local",
+        "local_observation_id": "claim_sbs_fare_equal_local_fare_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_able-s79-sbs",
+            "object_id": "claim_sbs-fare-equal-local-fare-2012",
+            "description": "SBS fare equals local bus fare on the S79 SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0013",
+                "source_quote": "SBS fare = local bus fare"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block p002_c0013 states SBS fare equals local bus fare under BUS RIDERS section for S79 SBS.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0013",
+            "source_quote": "SBS fare = local bus fare"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-express-bus-lanes",
+        "local_observation_id": "claim_express_buses_use_bus_lanes_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "claim_express-buses-use-bus-lanes-2012",
+            "description": "Express buses can also use bus lanes on Hylan Boulevard",
+            "evidence_refs": [
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0013",
+                "source_quote": "Express buses can also use bus lanes"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block states express buses can use bus lanes; this flyer is specifically about Hylan Boulevard corridor improvements.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0013",
+            "source_quote": "Express buses can also use bus lanes"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-sbs-rerouting",
+        "local_observation_id": "claim_sbs_rerouting_staten_island_mall_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_able-s79-sbs",
+            "object_id": "claim_sbs-rerouting-staten-island-mall-2012",
+            "description": "S79 SBS rerouted straight on Richmond Avenue instead of Forest Hill Road/Yukon Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p001_c0004",
+                "source_quote": "SBS goes straight on Richmond Avenue instead of along Forest Hill Road/Yukon Avenue"
+              },
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p001_c0006",
+                "source_quote": "Rerouting of Staten Island Mall-bound S79"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence explicitly names SBS rerouting on Richmond Avenue for Staten Island Mall-bound S79.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p001_c0004",
+            "source_quote": "SBS goes straight on Richmond Avenue instead of along Forest Hill Road/Yukon Avenue"
+          },
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p001_c0006",
+            "source_quote": "Rerouting of Staten Island Mall-bound S79"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-lane-fines",
+        "local_observation_id": "claim_bus_lane_fines_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "claim_bus-lane-fines-2012",
+            "description": "Fine amount for driving, parking, or standing in an active bus lane on Hylan Boulevard",
+            "evidence_refs": [
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0023",
+                "source_quote": "$115 - $150 fine if you drive, park, or stand in an active bus lane."
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence block states the bus lane fine amounts; source is the Hylan Boulevard SBS flyer describing bus lanes on this corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0023",
+            "source_quote": "$115 - $150 fine if you drive, park, or stand in an active bus lane."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-lane-enforcement",
+        "local_observation_id": "claim_bus_lane_enforcement_methods_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_hylan-boulevard-brt",
+            "object_id": "claim_bus-lane-enforcement-methods-2012",
+            "description": "NYC enforces bus lanes with video cameras and increased police enforcement",
+            "evidence_refs": [
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0021",
+                "source_quote": "NYC enforces bus lanes with:"
+              },
+              {
+                "source_id": "2012_08_hylan_start_of_service_flyer",
+                "block_id": "p002_c0022",
+                "source_quote": "Video cameras ▪ Increased police enforcement"
+              }
+            ]
+          }
+        ],
+        "rationale": "Evidence blocks name NYC bus lane enforcement methods; source is the Hylan Boulevard SBS flyer.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0021",
+            "source_quote": "NYC enforces bus lanes with:"
+          },
+          {
+            "source_id": "2012_08_hylan_start_of_service_flyer",
+            "block_id": "p002_c0022",
+            "source_quote": "Video cameras ▪ Increased police enforcement"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-event-s79-start",
+        "local_observation_id": "event_s79_sbs_start_sep2_2012",
+        "decision": "skip",
+        "rationale": "Already linked via existing relation: has_timeline_event project_s79-sbs-launch-2012 -> event_s79-sbs-start-sep2-2012",
+        "evidence_refs": []
+      },
+      {
+        "decision_id": "skip-event-tsp-2013",
+        "local_observation_id": "event_tsp_coming_2013",
+        "decision": "skip",
+        "rationale": "Already linked via existing relation: has_timeline_event project_s79-sbs-launch-2012 -> event_tsp-coming-2013",
+        "evidence_refs": []
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-47-35-394Z_2111393-457971a5_canonicalize_2026-06-10t23-03-18-639z-1976810-d330c4c4-ingest-2012-08-hylan-start-of-service-flyer-relation-linker"
+}

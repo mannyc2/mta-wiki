@@ -1,0 +1,28 @@
+{
+  "campaign_id": "validation-2026-06",
+  "wave": 21,
+  "generated_at": "2026-06-22T13:06:22.504Z",
+  "sources_selected": [
+    "meeting_doc_178481"
+  ],
+  "ingested": [
+    "meeting_doc_178481"
+  ],
+  "skipped_already_done": [],
+  "quarantined": [],
+  "run_ids": [
+    "/mnt/models/dev/mta-wiki/data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-22T13-06-22-492Z_2026-06-22T13-06-22-398Z_3991866-d024b03a_ingest_meeting-doc-178481.jsonl"
+  ],
+  "telemetry": {
+    "concurrency": 1,
+    "timeout_min": 1,
+    "wall_clock_s": 1,
+    "rate_limit": [],
+    "materialize": {
+      "completed_ingests": 0,
+      "runs": 0,
+      "total_seconds": 0,
+      "every_k": 10
+    }
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "note_id": "codex-relation-rule-or-data-next29-prep",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "scope": "Codex-only validator/rule-or-data triage for the next current unexpected_relation_endpoint_shape bucket after relation060; deterministic inspection only; no provider-backed commands, generated-output commands, durable data edits, code edits, LOG edits, manifest edits, submissions edits, retired.json edits, canonical edits, or wiki edits",
+  "current_count_if_observed": {
+    "unexpected_relation_endpoint_shape": 3,
+    "baseline_source": "User-provided current baseline after relation060.",
+    "read_only_inventory_basis": "Read-only SQLite/JQ/RG inspection of the three visible relation records named by the user, joined to endpoint record kinds in data/canonical.db and data/canonical/relations.jsonl. Did not run validate/materialize/export.",
+    "remaining_visible_records": [
+      "relation_meeting-doc-121091-psa-bronx-stations",
+      "relation_procurement-metronorth-circuit-breakers",
+      "relation_rel-ace-starts-at-manhattan-brooklyn"
+    ],
+    "observed_singleton_buckets": [
+      "serves_route project->entity",
+      "operated_by treatment_component->entity",
+      "operates_on_corridor project->entity"
+    ]
+  },
+  "bucket": {
+    "name": "serves_route project->entity",
+    "count": 1,
+    "selected_record_id": "relation_meeting-doc-121091-psa-bronx-stations",
+    "selected_submission_id": "sub_724ffb54454bb964",
+    "source_id": "meeting_doc_121091",
+    "current_relation_kind": "serves_route",
+    "current_endpoint_shape": {
+      "subject_kind": "project",
+      "subject_record_id": "project_annual-2021-penn-station-access",
+      "subject_local_observation_id": "project_meeting_doc_121091_penn_station_access",
+      "subject_display_name": "Penn Station Access",
+      "object_kind": "entity",
+      "object_record_id": "entity_mta-metro-north-2015-webster-map",
+      "object_local_observation_id": "entity_meeting_doc_121091_metronorth",
+      "object_display_name": "MTA Metro-North Connection"
+    },
+    "validator_expectation": "Current serves_route allows project|corridor -> route. It should not be widened to allow project -> entity because the entity endpoint is an operator/agency context, not a route endpoint."
+  },
+  "recommendation": {
+    "classification": "data_cleanup",
+    "recommended_action": "Retire the malformed serves_route project -> entity submission. Do not add a new replacement in this batch because relation cleanup batch030 already added a valid project -> route serves_route replacement for Penn Station Access to the New Haven Line.",
+    "why_data_cleanup": "The cited source says Penn Access will bring Metro-North service into Penn with four new Bronx stations. That supports Penn Station Access service/route scope, but the submitted object endpoint is a Metro-North entity. A serves_route relation should point to a route, not the operating agency/entity.",
+    "why_not_validator_code_gap": "Allowing serves_route project -> entity would blur route scope with agency role/context. Existing shaped alternatives already cover project -> entity agency facts, such as operated_by or unshaped associated-entity relations; serves_route should remain constrained to route objects.",
+    "bad_submission_ids": [
+      {
+        "submission_id": "sub_724ffb54454bb964",
+        "run_id": "2026-06-20T12-13-52-877Z_1885472-e1b1b89f_ingest_meeting-doc-121091",
+        "submission_path": "data/submissions/2026-06-20T12-13-52-877Z_1885472-e1b1b89f_ingest_meeting-doc-121091.jsonl",
+        "submission_line": 56,
+        "record_id": "relation_meeting-doc-121091-psa-bronx-stations",
+        "local_observation_id": "relation_meeting_doc_121091_psa_bronx_stations",
+        "relation_kind": "serves_route",
+        "endpoint_kinds": "project -> entity",
+        "retire_reason": "Malformed serves_route endpoint: subject is the Penn Station Access project, but object is a Metro-North entity. The source-backed route-scope fact is already preserved by batch030 as Penn Station Access serves New Haven Line."
+      }
+    ],
+    "replacement_direction": {
+      "new_replacement_needed": false,
+      "reuse_existing_replacement": true,
+      "existing_replacement_record_id": "relation_batch030-penn-station-access-serves-new-haven-line",
+      "existing_replacement_submission_id": "sub_72a55ab1f5540f9f",
+      "existing_replacement_run_id": "2026-06-22_codex_relation_cleanup_batch030",
+      "relation_kind": "serves_route",
+      "endpoint_kinds": "project -> route",
+      "subject_record_id": "project_annual-2021-penn-station-access",
+      "object_record_id": "route_meeting-doc-106021-new-haven-line",
+      "object_display_name": "New Haven Line",
+      "replacement_shape_valid_under_current_rules": true
+    }
+  },
+  "evidence": {
+    "selected_relation_submission": {
+      "submission_id": "sub_724ffb54454bb964",
+      "tool_args_sha256": "sha256:724ffb54454bb96493f872897c68dd794634815a3277ef801f9f878332935a76",
+      "label": "Penn Station Access - Brings Metro-North to Penn Station",
+      "payload_relation_kind": "serves_route",
+      "payload_subject_local_observation_id": "project_meeting_doc_121091_penn_station_access",
+      "payload_object_id": "entity_mta-metro-north-2015-webster-map",
+      "payload_object_local_observation_id": "entity_meeting_doc_121091_metronorth",
+      "evidence_refs": [
+        "meeting_doc_121091#p002_c0004"
+      ]
+    },
+    "source_block": {
+      "source_id": "meeting_doc_121091",
+      "source_path": "raw/sources/meeting_doc_121091/blocks.jsonl",
+      "page_number": 2,
+      "block_id": "p002_c0004",
+      "text_sha256": "sha256:17906d6c0e0f3606e4b04323e0b39fc4ab14f01ff65ff8c139496e27607bc2cc",
+      "summary": "Public comment says PCAC looked forward to Penn Access updates and describes bringing Metro-North service into Penn with four new Bronx stations.",
+      "short_quote": "Bringing Metro-North service into Penn"
+    },
+    "endpoint_records_checked": [
+      {
+        "record_id": "project_annual-2021-penn-station-access",
+        "record_kind": "project",
+        "display_name": "Penn Station Access",
+        "payload_route_context": [
+          "New Haven Line",
+          "Metro-North Railroad"
+        ]
+      },
+      {
+        "record_id": "entity_mta-metro-north-2015-webster-map",
+        "record_kind": "entity",
+        "display_name": "MTA Metro-North Connection",
+        "why_wrong_for_serves_route_object": "Entity/agency endpoint, not a route endpoint."
+      },
+      {
+        "record_id": "route_meeting-doc-106021-new-haven-line",
+        "record_kind": "route",
+        "display_name": "New Haven Line",
+        "why_existing_replacement_is_valid": "Current serves_route rule accepts project -> route."
+      }
+    ],
+    "prior_work_and_collision_checks": {
+      "batch030_deferred_original": "data/review_notes/codex-relation-cleanup-batch030-prep.json noted this row as deferred because the cited block named Metro-North service rather than a single durable route target.",
+      "existing_valid_replacement_found": {
+        "record_id": "relation_batch030-penn-station-access-serves-new-haven-line",
+        "submission_id": "sub_72a55ab1f5540f9f",
+        "relation_kind": "serves_route",
+        "endpoint_shape": "project -> route",
+        "subject_id": "project_annual-2021-penn-station-access",
+        "object_id": "route_meeting-doc-106021-new-haven-line"
+      },
+      "retired_json_hits_for_bad_submission": 0
+    },
+    "current_validator_files_checked": [
+      {
+        "file": "packages/pipeline/src/records/relations.ts",
+        "relevant_rule": "RELATION_ENDPOINT_SHAPES.serves_route subject project|corridor, object route"
+      }
+    ]
+  },
+  "expected_delta": {
+    "baseline_unexpected_relation_endpoint_shape": 3,
+    "selected_rows_cleared": 1,
+    "replacement_rows_added": 0,
+    "replacement_rows_expected_to_be_endpoint_shape_valid": 0,
+    "unexpected_relation_endpoint_shape_delta": -1,
+    "expected_remaining_after_cleanup": 2,
+    "caveat": "Assumes no concurrent relation endpoint-shape work lands before conductor applies this retire-only cleanup. The useful route-scope fact is already present via batch030."
+  },
+  "apply_or_patch_plan": {
+    "conductor_action": "apply_data_cleanup",
+    "data_cleanup_steps": [
+      "Retire submission sub_724ffb54454bb964 with a reason tying the malformed serves_route project -> entity endpoint to this prep artifact.",
+      "Do not append another replacement relation for this row; rely on existing relation_batch030-penn-station-access-serves-new-haven-line / sub_72a55ab1f5540f9f.",
+      "Run only the conductor-owned materialize/export/validate lane after applying, outside this bounded prep task."
+    ],
+    "code_patch_plan": {
+      "needed": false,
+      "files": [
+        "packages/pipeline/src/records/relations.ts",
+        "packages/pipeline/test/records/relations.test.ts"
+      ],
+      "reason": "No validator patch is recommended. Keep serves_route object endpoints constrained to route records; the current row is a data endpoint mistake."
+    }
+  },
+  "commands_run_read_only": [
+    "rg -n 'unexpected_relation_endpoint_shape|endpoint_shape|relation endpoint|relation.*endpoint' packages data docs -g '!data/transcripts/**' -g '!data/materialized/**' -g '!wiki/**'",
+    "jq '.' data/review_notes/codex-relation-rule-or-data-next28-prep.json",
+    "rg -n 'relation_meeting-doc-121091-psa-bronx-stations|relation_procurement-metronorth-circuit-breakers|relation_rel-ace-starts-at-manhattan-brooklyn' data/canonical/relations.jsonl data/submissions -S",
+    "rg -n 'relation060|batch060|relation_meeting-doc-121091-psa-bronx-stations|relation_procurement-metronorth-circuit-breakers|relation_rel-ace-starts-at-manhattan-brooklyn' data/review_notes data/submissions data/submission-overrides/retired.json -S",
+    "sed -n '206,380p' packages/pipeline/src/records/relations.ts",
+    "sqlite3 schema inspection of data/canonical.db tables used for records, relations, evidence_refs, record_submissions, record_sources, and record_local_observations",
+    "sqlite3 targeted join for the three remaining visible relation ids to endpoint record kinds and submission ids",
+    "rg targeted lookup of sub_724ffb54454bb964, sub_700e95b86f5f821d, and sub_a0a60967ae6b4493 in data/submissions",
+    "jq targeted read of raw/sources/meeting_doc_121091/blocks.jsonl page 2 / p002_c0004",
+    "sqlite3 same-source and project relation inventory for meeting_doc_121091 and project_annual-2021-penn-station-access",
+    "sqlite3 route lookup for New Haven Line and existing Penn Station Access serves_route relations",
+    "rg targeted prior-work lookup for relation_batch030-penn-station-access-serves-new-haven-line and sub_724ffb54454bb964",
+    "test ! -e data/review_notes/codex-relation-rule-or-data-next29-prep.json"
+  ],
+  "commands_not_run": [
+    "external/provider LLM commands",
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "--profile/provider commands",
+    "materialize",
+    "export",
+    "validate"
+  ]
+}

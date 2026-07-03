@@ -1,0 +1,356 @@
+{
+  "note_id": "codex-canonical-cleanup-2026-06-22-identity-alias-batch-054-prep",
+  "created_at": "2026-06-22T20:55:18Z",
+  "author": "codex",
+  "status": "ready_for_conductor_apply",
+  "lane": "identity_prep_only",
+  "batch": "identity-batch054",
+  "scope": "Codex-only identity alias preparation after identity053; no generated output, validation CLI, materialization, export, DB repair, publish, or provider-backed commands run",
+  "context": {
+    "starting_point": "unresolved duplicate_global_identity backlog after current identity overrides, including identity053 aliases present in data/identity-overrides/merges.json",
+    "candidate_mining_summary": {
+      "entity_duplicate_groups_after_alias_and_do_not_merge_filters": 315,
+      "selected_high_confidence_candidates": 10,
+      "selection_policy": "Exact entity names for people or legal/vendor/company identities only; broad agencies, programs, committees, hierarchy-style identities, target churn, already-mapped aliases, and do-not-merge pairs were excluded."
+    },
+    "write_scope_used_for_this_task": [
+      "data/review_notes/codex-identity-batch054-prep.json"
+    ],
+    "paths_intentionally_not_edited": [
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json",
+      "data/submission-overrides/retired.json",
+      "data/canonical/",
+      "data/canonical.db",
+      "data/materialized/",
+      "data/submissions/",
+      "wiki/",
+      "LOG.md"
+    ]
+  },
+  "intended_mutation": {
+    "path": "data/identity-overrides/merges.json",
+    "operation": "add_aliases",
+    "aliases": {
+      "entity": {
+        "entity_meeting-doc-72536-aecom": "entity_aecom-jan2018",
+        "entity_meeting143381-arturo-espinoza": "entity_arturo-espinoza-meeting-doc-133406",
+        "entity_safety-officer-amstrong-mnr-jan2022": "entity_clyde-armstrong-vp-system-safety-39691",
+        "entity_meeting-doc-138396-christopher-pangilinan": "entity_christopher-pangilinan-ops-planning",
+        "entity_meeting-doc-171381-siemens": "entity_meeting-doc-111791-siemens",
+        "entity_meeting-doc-171381-sovereign": "entity_meeting-doc-171011-sovereign-hydroseal-east",
+        "entity_ssdc-services-corporation-meeting-doc-155151": "entity_ssdc-services-corp-157686",
+        "entity_standard-steel-llc-nov2025": "entity_standard-steel-llc-192241",
+        "entity_meeting-doc-129041-staples": "entity_meeting-doc-127956-staples-contract",
+        "entity_meeting-doc-rite-aid": "entity_rite-aid-corp"
+      }
+    }
+  },
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "all_pass": true,
+    "canonical_records_present": true,
+    "target_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "targets_not_aliases_in_merges_json": true,
+    "targets_not_aliases_in_identity_aliases_table": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 20,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 20,
+    "source_page_blocks_missing": [],
+    "confidence": "high"
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-72536-aecom",
+      "target": "entity_aecom-jan2018",
+      "validator_duplicate_key": "entity_aecom-usa-inc",
+      "reason": "Exact company/vendor identity for AECOM USA, Inc. The alias cites AECOM USA, Inc. in an MTA procurement table, and the target includes AECOM, USA, Inc. / AECOM USA, Inc. as the same consultant/company identity.",
+      "evidence_refs": [
+        "meeting_doc_72536#p073_c0008",
+        "lower_montauk_final_report_jan2018#p001_c0005"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_aecom-usa-inc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting143381-arturo-espinoza",
+      "target": "entity_arturo-espinoza-meeting-doc-133406",
+      "validator_duplicate_key": "entity_arturo-espinoza",
+      "reason": "Exact person identity for Arturo Espinoza. Both records identify Arturo Espinoza as an MTA Real Estate project manager in real-estate agreement materials; the target carries the broader merged person payload.",
+      "evidence_refs": [
+        "meeting_doc_143381#p009_c0004",
+        "meeting_doc_133406#p008_c0004"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_arturo-espinoza"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_safety-officer-amstrong-mnr-jan2022",
+      "target": "entity_clyde-armstrong-vp-system-safety-39691",
+      "validator_duplicate_key": "entity_clyde-armstrong",
+      "reason": "Exact person identity for Clyde Armstrong. The alias names Clyde Armstrong for Metro-North Railroad in a safety-officer context, and the target names Clyde Armstrong as Vice President, Office of System Safety.",
+      "evidence_refs": [
+        "meeting_doc_72581#p003_c0006",
+        "meeting_doc_39691#p020_c0011"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_clyde-armstrong"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-138396-christopher-pangilinan",
+      "target": "entity_christopher-pangilinan-ops-planning",
+      "validator_duplicate_key": "entity_christopher-pangilinan",
+      "reason": "Exact person identity for Christopher Pangilinan. The alias names him as Vice President, Paratransit, NYCT, while the target includes the same person in later Operations Planning context; the title change is role chronology, not a separate identity.",
+      "evidence_refs": [
+        "meeting_doc_138396#p001_c0011",
+        "meeting_doc_146846#p001_c0003"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_christopher-pangilinan",
+          "entity_christopher-pangilinan-vice-president-paratransit-nyct"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-171381-siemens",
+      "target": "entity_meeting-doc-111791-siemens",
+      "validator_duplicate_key": "entity_siemens-industry-inc",
+      "reason": "Exact company/vendor identity for Siemens Industry, Inc. The alias names Siemens Industry, Inc. as a CBTC vendor, and the target includes Siemens / Siemens Industry Inc. as a transit equipment supplier.",
+      "evidence_refs": [
+        "meeting_doc_171381#p021_c0005",
+        "meeting_doc_111791#p036_c0002"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_siemens-industry-inc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-171381-sovereign",
+      "target": "entity_meeting-doc-171011-sovereign-hydroseal-east",
+      "validator_duplicate_key": "entity_sovereign-hydroseal-east-inc",
+      "reason": "Exact company/vendor identity for Sovereign Hydroseal East Inc. Both records identify the same Essex Street cementitious grouting contractor/vendor.",
+      "evidence_refs": [
+        "meeting_doc_171381#p029_c0003",
+        "meeting_doc_171011#p005_c0007"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_sovereign-hydroseal-east-inc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_ssdc-services-corporation-meeting-doc-155151",
+      "target": "entity_ssdc-services-corp-157686",
+      "validator_duplicate_key": "entity_ssdc-services-corporation",
+      "reason": "Exact corporation/vendor identity for SSDC Services Corporation. Both records cite SSDC Services Corporation as the Disability and Medicare Coordination Services vendor; the target carries the richer merged vendor payload.",
+      "evidence_refs": [
+        "meeting_doc_155151#p001_c0001",
+        "meeting_doc_157686#p003_c0011"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_ssdc-services-corporation"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_standard-steel-llc-nov2025",
+      "target": "entity_standard-steel-llc-192241",
+      "validator_duplicate_key": "entity_standard-steel-llc",
+      "reason": "Exact LLC/vendor identity for Standard Steel LLC. Both records name Standard Steel LLC of Burnham, Pennsylvania as the subway-car wheel supplier; the target preserves the fuller QPL/vendor context.",
+      "evidence_refs": [
+        "meeting_doc_192276#p032_c0003",
+        "meeting_doc_192241#p012_c0003"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_standard-steel-llc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-129041-staples",
+      "target": "entity_meeting-doc-127956-staples-contract",
+      "validator_duplicate_key": "entity_staples-contract-and-commercial-llc",
+      "reason": "Exact LLC/vendor identity for Staples Contract & Commercial LLC. Both records cite the same office-supplies and copy-paper vendor; the target has the clearer contract-summary payload.",
+      "evidence_refs": [
+        "meeting_doc_129041#p003_c0008",
+        "meeting_doc_127956#p036_c0006"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_staples-contract-and-commercial-llc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-rite-aid",
+      "target": "entity_rite-aid-corp",
+      "validator_duplicate_key": "entity_rite-aid-corporation",
+      "reason": "Exact corporation/company identity for Rite-Aid Corporation. Both records refer to Rite-Aid/Rite-Aid Corporation as the Grand Central Terminal tenant in the same lease termination context.",
+      "evidence_refs": [
+        "meeting_doc_102911#p095_c0008",
+        "meeting_doc_102786#p085_c0010"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_rite-aid-corporation"
+        ]
+      },
+      "confidence": "high"
+    }
+  ],
+  "deferred_low_confidence_or_scope_review": [
+    "Skipped broad or hierarchy-sensitive agencies and service identities such as MTA Bridges and Tunnels, MTA Bus Company, Access-A-Ride, Commuter Railroads, and committee/workplan clusters.",
+    "Skipped contaminated person records where payloads already mixed names, including Richard Davey/Catherine Rinaldi and Sofia Hubscher/Shanifah Riera surfaces.",
+    "Skipped initials-only person pairs such as B. Lopez and S. Chu because exact identity is not source-obvious from initials alone.",
+    "Skipped target-churn chains where either endpoint was already an alias in data/identity-overrides/merges.json or canonical identity_aliases."
+  ],
+  "commands_run_for_this_prep": [
+    "jq '{version, alias_counts: (.aliases|to_entries|map({kind:.key,count:(.value|length)})), batch053_hits:{...}}' data/identity-overrides/merges.json",
+    "sqlite3 data/canonical.db read-only schema/count inspection for records, record_aliases, identity_aliases, do_not_merge, and evidence_refs",
+    "bun - <<'EOF' <read-only duplicate candidate miner over records, record_aliases, identity_aliases, do_not_merge, merges.json, and do-not-merge.json> EOF",
+    "sqlite3 -json data/canonical.db selected candidate payload/evidence/identity-key inspection",
+    "jq raw/sources/*/blocks.jsonl checks for the 20 selected evidence refs",
+    "rg wiki/sources/*.md block-id checks for the 20 selected evidence refs",
+    "bun - <<'EOF' <deterministic final exact guard script for all intended batch054 aliases> EOF"
+  ],
+  "commands_not_run": [
+    "materialize",
+    "validate CLI",
+    "export-jsonl",
+    "DB repair",
+    "publish",
+    "provider-backed post-ingest commands",
+    "canonicalize",
+    "identity-review-run",
+    "campaign dedup"
+  ],
+  "conductor_apply_note": "This prep artifact intentionally does not edit data/identity-overrides/merges.json or generated outputs. Re-run the deterministic guards immediately before conductor application because the worktree is active and canonical generated outputs are changing in other lanes."
+}

@@ -1,0 +1,552 @@
+{
+  "note_id": "codex-identity-batch191-prep",
+  "created_at": "2026-06-23T10:32:54Z",
+  "batch": "identity191",
+  "prepared_count": 0,
+  "scope": {
+    "global_kind": "project",
+    "selection_note": "Codex-only identity cleanup prep after identity187-189. Scope is project aliases only. Current live validation leaves only project duplicate identity pairs that fail project-vs-program, phase/date/location, support-bundle, amendment/contract, or same-name-different-agency guards.",
+    "write_limit": "Exactly one artifact was written: data/review_notes/codex-identity-batch191-prep.json. No merges.json, LOG.md, manifest, submissions, canonical JSONL, canonical DB, materialized outputs, wiki files, or provider-backed commands were edited or used.",
+    "deterministic_inspection": {
+      "method": "Read-only validateRepo() via bun --eval plus canonical JSONL and current identity override inspection.",
+      "validation_issue_count": 451,
+      "duplicate_project_rows": 18,
+      "unique_project_duplicate_pairs": 13,
+      "project_alias_overrides_present": 349,
+      "project_do_not_merge_overrides_present": 1
+    },
+    "candidate_limit": {
+      "requested": "up to 8 high-confidence project aliases if possible",
+      "prepared_count": 0,
+      "pass": true,
+      "note": "No current project duplicate pair cleared semantic review. The safe batch is intentionally empty rather than padding with low-confidence aliases."
+    }
+  },
+  "proposed_aliases": [],
+  "blockers": [
+    {
+      "kind": "no_safe_project_aliases",
+      "detail": "All 13 current project duplicate identity pairs are already known semantic traps or newly re-confirmed traps. Shared identity keys are caused by broad labels or aliases embedded in records, not enough evidence for same-project identity."
+    },
+    {
+      "kind": "do_not_force_alias_chain_collapse",
+      "detail": "Several deferred pairs include one or both ids that are existing merge targets. Because the underlying project identity is not proven, no acyclic chain collapse is proposed."
+    }
+  ],
+  "aggregate_guard_results": {
+    "candidate_count": 0,
+    "live_guard_passed_count": 0,
+    "deferred_pair_count": 13,
+    "all_deferred_records_present": true,
+    "raw_do_not_merge_hits": 0,
+    "provider_backed_commands_run": false
+  },
+  "inspections": [
+    {
+      "command": "bun --eval 'import { validateRepo } from \"./packages/agents/src/index.ts\"; ...'",
+      "purpose": "Read-only live validation scan for duplicate_global_identity issues restricted to Global project records."
+    },
+    {
+      "command": "bun --eval '<canonical projects JSONL summaries for the 13 current project duplicate pairs>'",
+      "purpose": "Collected source-backed canonical summaries, aliases, payload fields, and evidence refs for semantic review."
+    },
+    {
+      "command": "bun --eval '<project override guard scan over merges.json and do-not-merge.json>'",
+      "purpose": "Checked record presence, current alias targets, existing merge-target status, and raw do-not-merge status without editing overrides."
+    }
+  ],
+  "deferred": [
+    {
+      "record_ids": [
+        "project_2017-sip-woodhaven-blvd-cb5-sept2024",
+        "project_2017-street-improvement-79th"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "Global project records project_2017-sip-woodhaven-blvd-cb5-sept2024 and project_2017-street-improvement-79th share identity key project_2017-st-improvement-project.",
+        "Global project records project_2017-sip-woodhaven-blvd-cb5-sept2024 and project_2017-street-improvement-79th share identity key project_2017-st-improvement-project-woodhaven-blvd."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "project_2017-sip-woodhaven-blvd-cb5-sept2024",
+          "evidence_id": "capital_woodhaven_blvd_capital_projects_cb5_sept2024#p005_c0001",
+          "canonical_summary": "Woodhaven Boulevard Queens street improvement project; 6.85 miles of bus lanes installed with Q52/Q53 SBS launch."
+        },
+        {
+          "record_id": "project_2017-street-improvement-79th",
+          "evidence_id": "79_st_riverside_dr_fdr_dr_cb8_apr2025#p005_c0002",
+          "quote": "Launched the M79 Select Bus Service to replace the M79 Local"
+        }
+      ],
+      "reason": "Location and route scope mismatch: Woodhaven Boulevard/Q52-Q53 in Queens versus 79th Street/M79 in Manhattan. The shared 2017 Street Improvement Project wording is too broad.",
+      "guard_checks": {
+        "records_present": true,
+        "current_alias_targets": [
+          null,
+          null
+        ],
+        "safe_project_identity": false,
+        "failed_guards": [
+          "location_mismatch",
+          "route_scope_mismatch",
+          "broad_shared_label"
+        ]
+      }
+    },
+    {
+      "record_ids": [
+        "project_2017-sip-woodhaven-blvd-cb5-sept2024",
+        "project_79th-st-2017-improvement-cb7-apr2025"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "Global project records project_2017-sip-woodhaven-blvd-cb5-sept2024 and project_79th-st-2017-improvement-cb7-apr2025 share identity key project_2017-st-improvement-project."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "project_2017-sip-woodhaven-blvd-cb5-sept2024",
+          "evidence_id": "capital_woodhaven_blvd_capital_projects_cb5_sept2024#p005_c0002",
+          "canonical_summary": "Completed Woodhaven Boulevard bus-lane work in Queens."
+        },
+        {
+          "record_id": "project_79th-st-2017-improvement-cb7-apr2025",
+          "evidence_id": "79_st_riverside_dr_fdr_dr_cb7_apr2025#p005_c0002",
+          "canonical_summary": "Completed 79th Street/M79 SBS street improvement project in Manhattan."
+        }
+      ],
+      "reason": "Location mismatch: Woodhaven Boulevard in Queens versus 79th Street in Manhattan. Same-year generic project wording is not same-project evidence.",
+      "guard_checks": {
+        "records_present": true,
+        "current_alias_targets": [
+          null,
+          null
+        ],
+        "safe_project_identity": false,
+        "failed_guards": [
+          "location_mismatch",
+          "broad_shared_label"
+        ]
+      }
+    },
+    {
+      "record_ids": [
+        "project_able-camera-expansion-2022",
+        "project_able-program"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "Global project records project_able-camera-expansion-2022 and project_able-program share identity key project_automated-bus-lane-enforcement-able.",
+        "Global project records project_able-camera-expansion-2022 and project_able-program share identity key project_automated-bus-lane-enforcement-able-expansion."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "project_able-camera-expansion-2022",
+          "evidence_id": "meeting_doc_121271#p004_c0001",
+          "quote": "Automated Bus Lane Enforcement (ABLE) had been activated on an additional twelve routes"
+        },
+        {
+          "record_id": "project_able-program",
+          "evidence_id": "bus_lane_camera_report_2024#p009_c0001",
+          "canonical_summary": "Operational on-bus mobile camera system under the ABLE program."
+        }
+      ],
+      "reason": "Program-vs-expansion trap: a 2022/2023 camera expansion is related to but not identical to the broader operational ABLE program.",
+      "guard_checks": {
+        "records_present": true,
+        "existing_merge_target_for": {
+          "project_able-camera-expansion-2022": [
+            "project_able-expansion-q44-sbs-sep2022",
+            "project_able-expansion-2023"
+          ],
+          "project_able-program": [
+            "project_able-program-nov2022"
+          ]
+        },
+        "safe_project_identity": false,
+        "failed_guards": [
+          "project_vs_program_scope",
+          "phase_or_expansion_scope"
+        ]
+      }
+    },
+    {
+      "record_ids": [
+        "project_annual-2021-cbdtp",
+        "project_cbd-tolling-transcore-mod"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "Global project records project_annual-2021-cbdtp and project_cbd-tolling-transcore-mod share identity key project_central-business-district-tolling-program-transcore-contract-modification."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "project_annual-2021-cbdtp",
+          "evidence_id": "annual_report_narrative_2021#p038_c0003",
+          "canonical_summary": "Central Business District Tolling Program, a Manhattan congestion pricing program."
+        },
+        {
+          "record_id": "project_cbd-tolling-transcore-mod",
+          "evidence_id": "meeting_doc_124731#p050_c0009",
+          "canonical_summary": "TransCore contract modification adding funds and extending a CBDTP contract."
+        }
+      ],
+      "reason": "Program-vs-contract-modification trap: a TransCore contract modification is an implementing action under CBDTP, not safely the same canonical project identity.",
+      "guard_checks": {
+        "records_present": true,
+        "existing_merge_target_for": {
+          "project_annual-2021-cbdtp": [
+            "project_congestion-relief",
+            "project_congestion-relief-zone-toll-revenue-obligation"
+          ]
+        },
+        "safe_project_identity": false,
+        "failed_guards": [
+          "project_vs_contract_action",
+          "program_scope_mismatch"
+        ]
+      }
+    },
+    {
+      "record_ids": [
+        "project_annual-2021-east-side-access",
+        "project_east-side-access-support"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "Global project records project_annual-2021-east-side-access and project_east-side-access-support share identity key project_east-side-access-support.",
+        "Global project records project_annual-2021-east-side-access and project_east-side-access-support share identity key project_east-side-access-support-projects.",
+        "Global project records project_annual-2021-east-side-access and project_east-side-access-support share identity key project_meeting-doc-east-side-access-support."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "project_annual-2021-east-side-access",
+          "evidence_id": "annual_report_narrative_2021#p088_c0002",
+          "canonical_summary": "East Side Access rail expansion bringing LIRR into Grand Central Terminal."
+        },
+        {
+          "record_id": "project_east-side-access-support",
+          "evidence_id": "meeting_doc_104756#p005_c0023",
+          "quote": "The Committee will be briefed on the status of the East Side Access Support Projects."
+        }
+      ],
+      "reason": "Project-vs-support-bundle trap: East Side Access Support Projects are related support work, not safely identical to the East Side Access project.",
+      "guard_checks": {
+        "records_present": true,
+        "existing_merge_target_for": {
+          "project_east-side-access-support": [
+            "project_meeting-doc-east-side-access-support"
+          ]
+        },
+        "safe_project_identity": false,
+        "failed_guards": [
+          "support_bundle_scope",
+          "project_vs_program_scope"
+        ]
+      }
+    },
+    {
+      "record_ids": [
+        "project_fordham-rd-bus-priority",
+        "project_fordham-rd-bus-priority-cb5-may2026"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "Global project records project_fordham-rd-bus-priority and project_fordham-rd-bus-priority-cb5-may2026 share identity key project_fordham-rd-bus-priority."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "project_fordham-rd-bus-priority",
+          "evidence_id": "fordham_rd_inwood_cab_mar2022#p024_c0003",
+          "canonical_summary": "Fordham Road-Inwood Bx12 corridor study with multiple alternatives."
+        },
+        {
+          "record_id": "project_fordham-rd-bus-priority-cb5-may2026",
+          "evidence_id": "fordham_rd_sedgwick_ave_bronx_river_pkwy_cb6_may2026#p001_c0002",
+          "quote": "Sedgwick Av to Bronx River Parkway"
+        }
+      ],
+      "reason": "Scope/location narrowing trap: the older Fordham Road-Inwood corridor study spans a broader Bx12 corridor context, while the 2026 record is specifically Sedgwick Avenue to Bronx River Parkway.",
+      "guard_checks": {
+        "records_present": true,
+        "existing_merge_target_for": {
+          "project_fordham-rd-bus-priority": [
+            "project_fordham-rd-bus-priority-cb7-jun2023",
+            "project_fordham-rd-inwood-bus-priority",
+            "project_fordham-rd-bus-priority-cab"
+          ],
+          "project_fordham-rd-bus-priority-cb5-may2026": [
+            "project_fordham-rd-bus-priority-cb6",
+            "project_fordham-road-bus-priority-cb7-may2026"
+          ]
+        },
+        "safe_project_identity": false,
+        "failed_guards": [
+          "scope_narrowing",
+          "date_phase_mismatch"
+        ]
+      }
+    },
+    {
+      "record_ids": [
+        "project_jamaica-capacity-improvement",
+        "project_jamaica-capacity-improvement-phase2"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "Global project records project_jamaica-capacity-improvement and project_jamaica-capacity-improvement-phase2 share identity key project_jamaica-capacity-improvement-project.",
+        "Global project records project_jamaica-capacity-improvement and project_jamaica-capacity-improvement-phase2 share identity key project_jamaica-capacity-improvement-project-phase-2."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "project_jamaica-capacity-improvement",
+          "evidence_id": "meeting_doc_100336#p001_c0005",
+          "canonical_summary": "Switch installations near Jamaica in support of the Jamaica Capacity Improvement Project."
+        },
+        {
+          "record_id": "project_jamaica-capacity-improvement-phase2",
+          "evidence_id": "meeting_doc_102786#p012_c0005",
+          "quote": "Acquisition of property interests for Phase 2 of the Jamaica Capacity Improvement Project"
+        }
+      ],
+      "reason": "Phase trap: Phase 2/property-interest actions may be a subphase under the broader Jamaica Capacity Improvement Project, not the same project record.",
+      "guard_checks": {
+        "records_present": true,
+        "existing_merge_target_for": {
+          "project_jamaica-capacity-improvement": [
+            "project_meeting-doc-jamaica-capacity-improvement"
+          ],
+          "project_jamaica-capacity-improvement-phase2": [
+            "project_jci-phase-ii"
+          ]
+        },
+        "safe_project_identity": false,
+        "failed_guards": [
+          "phase_scope_mismatch",
+          "subproject_or_action_scope"
+        ]
+      }
+    },
+    {
+      "record_ids": [
+        "project_hall-interlocking-expansion",
+        "project_jamaica-capacity-improvements"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "Global project records project_hall-interlocking-expansion and project_jamaica-capacity-improvements share identity key project_hall-interlocking-expansion."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "project_hall-interlocking-expansion",
+          "evidence_id": "meeting_doc_115156#p001_c0006",
+          "quote": "Hall Interlocking Expansion"
+        },
+        {
+          "record_id": "project_jamaica-capacity-improvements",
+          "evidence_id": "meeting_doc_102686#p009_c0005",
+          "quote": "the work they are doing to finish up the first phase of the Jamaica Capacity Improvements"
+        }
+      ],
+      "reason": "Component/subproject trap: Hall Interlocking Expansion is described as part of JCI Phase 2, but that relationship is not same-project identity with Jamaica Capacity Improvements.",
+      "guard_checks": {
+        "records_present": true,
+        "existing_merge_target_for": {
+          "project_jamaica-capacity-improvements": [
+            "project_meeting-doc-jamaica-capacity-improvements"
+          ]
+        },
+        "safe_project_identity": false,
+        "failed_guards": [
+          "component_vs_parent_project",
+          "phase_scope_mismatch"
+        ]
+      }
+    },
+    {
+      "record_ids": [
+        "project_01-lexington-ave",
+        "project_lexington-ave-60th-52nd-offset-bus-lane"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "Global project records project_01-lexington-ave and project_lexington-ave-60th-52nd-offset-bus-lane share identity key project_lexington-ave-bus-lane-upgrades-60th-st-to-52nd-st."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "project_01-lexington-ave",
+          "evidence_id": "better_buses_action_plan_2019#p024_c0001",
+          "canonical_summary": "Lexington Avenue bus lane enhancement from 96th Street to 60th Street."
+        },
+        {
+          "record_id": "project_lexington-ave-60th-52nd-offset-bus-lane",
+          "evidence_id": "lexington_ave_60_st_52_st_cb8_oct2025#p007_c0002",
+          "quote": "Improve bus service by upgrading existing curbside bus lane to 24/7 offset bus lane"
+        }
+      ],
+      "reason": "Adjacent/narrower-location trap: 96th-60th Street and 60th-52nd Street are compatible bus-lane work on Lexington Avenue but not safely the same project scope.",
+      "guard_checks": {
+        "records_present": true,
+        "existing_merge_target_for": {
+          "project_lexington-ave-60th-52nd-offset-bus-lane": [
+            "project_lex-ave-60-st-52-st-offset-bus-lane"
+          ]
+        },
+        "safe_project_identity": false,
+        "failed_guards": [
+          "location_scope_mismatch",
+          "date_phase_mismatch"
+        ]
+      }
+    },
+    {
+      "record_ids": [
+        "project_east-side-access-support",
+        "project_main-line-second-track"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "Global project records project_east-side-access-support and project_main-line-second-track share identity key project_main-line-second-track-construction."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "project_east-side-access-support",
+          "evidence_id": "meeting_doc_104756#p005_c0022",
+          "quote": "East Side Access Support Projects Update"
+        },
+        {
+          "record_id": "project_main-line-second-track",
+          "evidence_id": "meeting_doc_104756#p004_c0026",
+          "quote": "Main Line Second Track construction"
+        }
+      ],
+      "reason": "Support-bundle versus specific construction project trap. A support projects bundle can mention Main Line Second Track without being the same project identity.",
+      "guard_checks": {
+        "records_present": true,
+        "existing_merge_target_for": {
+          "project_east-side-access-support": [
+            "project_meeting-doc-east-side-access-support"
+          ],
+          "project_main-line-second-track": [
+            "project_meeting-doc-main-line-second-track"
+          ]
+        },
+        "safe_project_identity": false,
+        "failed_guards": [
+          "support_bundle_scope",
+          "component_vs_parent_project"
+        ]
+      }
+    },
+    {
+      "record_ids": [
+        "project_park-ave-viaduct-phase1",
+        "project_park-avenue-viaduct-repair"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "Global project records project_park-ave-viaduct-phase1 and project_park-avenue-viaduct-repair share identity key project_park-ave-viaduct-replacement-phase-1."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "project_park-ave-viaduct-phase1",
+          "evidence_id": "meeting_doc_102911#p031_c0009",
+          "canonical_summary": "Park Avenue Viaduct Replacement Phase 1 design-build work, awarded."
+        },
+        {
+          "record_id": "project_park-avenue-viaduct-repair",
+          "evidence_id": "meeting_doc_102681#p027_c0009",
+          "canonical_summary": "Broader Park Avenue Viaduct state-of-good-repair effort including phases and interim repairs."
+        }
+      ],
+      "reason": "Phase/broader-program trap: Phase 1 replacement may be part of the broader Park Avenue Viaduct SOGR effort, but not safely identical to the broader repair/replacement program.",
+      "guard_checks": {
+        "records_present": true,
+        "existing_merge_target_for": {
+          "project_park-ave-viaduct-phase1": [
+            "project_park-ave-viaduct-phase1-2022"
+          ],
+          "project_park-avenue-viaduct-repair": [
+            "project_meeting-doc-park-avenue-viaduct",
+            "project_park-avenue-viaduct"
+          ]
+        },
+        "safe_project_identity": false,
+        "failed_guards": [
+          "phase_scope_mismatch",
+          "project_vs_program_scope"
+        ]
+      }
+    },
+    {
+      "record_ids": [
+        "project_penn-reconstruction-2020-2024",
+        "project_penn-station-reconstruction-design"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "Global project records project_penn-reconstruction-2020-2024 and project_penn-station-reconstruction-design share identity key project_penn-reconstruction-amendment2."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "project_penn-reconstruction-2020-2024",
+          "evidence_id": "meeting_doc_91706#p002_c0006",
+          "quote": "Penn Reconstruction. The State of New York is advancing a new project to address the reconstruction of Penn Station."
+        },
+        {
+          "record_id": "project_penn-station-reconstruction-design",
+          "evidence_id": "meeting_doc_91711#p087_c0003",
+          "quote": "A new $100 million project is included in this proposed amendment to advance initial preparations for the Penn Station Reconstruction effort"
+        }
+      ],
+      "reason": "Capital-program amendment/design-services trap: design services and amendment records are related to Penn Reconstruction but not safely the same project identity as the broader capital-program project.",
+      "guard_checks": {
+        "records_present": true,
+        "current_alias_targets": [
+          null,
+          null
+        ],
+        "safe_project_identity": false,
+        "failed_guards": [
+          "project_vs_design_services",
+          "capital_program_amendment_scope"
+        ]
+      }
+    },
+    {
+      "record_ids": [
+        "project_lirr-security-initiatives",
+        "project_security-initiatives-nyct"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "Global project records project_lirr-security-initiatives and project_security-initiatives-nyct share identity key project_security-initiatives."
+      ],
+      "source_evidence": [
+        {
+          "record_id": "project_lirr-security-initiatives",
+          "evidence_id": "meeting_doc_102711#p001_c0011",
+          "quote": "Security- Funding was added to monitor security cameras at several additional locations to retrieve electronic data for video distribution to law enforcement agencies"
+        },
+        {
+          "record_id": "project_security-initiatives-nyct",
+          "evidence_id": "meeting_doc_102816#p002_c0014",
+          "quote": "Security Initiatives: Additional staffing in the Security Command Center to respond to requests for video stemming from Laser Intrusion Detection Sensor System alarms and the formation of a Deployable Camera Unit"
+        }
+      ],
+      "reason": "Same-name different operating-agency/scope trap: LIRR security initiatives and NYCT security initiatives use a generic label but describe distinct agency-specific work.",
+      "guard_checks": {
+        "records_present": true,
+        "current_alias_targets": [
+          null,
+          null
+        ],
+        "safe_project_identity": false,
+        "failed_guards": [
+          "same_name_different_agency",
+          "generic_shared_label"
+        ]
+      }
+    }
+  ],
+  "conductor_apply_note": "Do not apply any project aliases from this artifact. Re-run validation after other identity work; if these pairs remain, they are better candidates for do-not-merge review or identity-key cleanup than merge overrides."
+}

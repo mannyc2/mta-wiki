@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "review_state": "quarantined",
+  "accepted_at": "2026-06-08T21:22:09.109Z",
+  "reviewer": "codex-audit-2026-06-08",
+  "source": "audit_plus_route_policy_hold",
+  "cluster_id": "route_cluster_005",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_005.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_005.json",
+  "source_review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Flash",
+  "quarantine": {
+    "blocker": "route_plus_policy_required",
+    "note": "Suggestion likely has the right B46+ to B46-SBS merge, but all plus-route decisions are held until the explicit ACE/MTA plus-route policy is implemented."
+  },
+  "original_action_summary": {
+    "merge_group_count": 1,
+    "do_not_merge_count": 0,
+    "weak_alias_count": 1,
+    "missing_field_count": 1,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "original_merge_groups": [
+    [
+      "route_b46-plus",
+      "route_utica-ave-sbs"
+    ]
+  ],
+  "original_do_not_merge": [],
+  "original_rationale": "Both records refer to the B46 Select Bus Service on Utica Avenue in Brooklyn. The ACE dataset dictionary uses 'B46+' as its internal naming convention for SBS routes (same pattern as B44+, M15+, BX12+, Q44+, BX41+, etc. which are all SBS routes). The MTA Automated Camera Enforcement page explicitly lists 'B46-SBS, Utica Av / Malcolm X Blvd' as an ACE route, confirming B46-SBS is the official name. The route_utica-ave-sbs record has richer payload (borough, streets, description, program) that complements the sparse route_b46-plus record. The variant mismatch is merely a labeling convention difference ('+' vs '-SBS'), not a genuine route variant distinction.",
+  "required_follow_up": [
+    "Implement and validate explicit ACE/MTA plus-route identity policy before promoting this decision.",
+    "Do not apply this packet directly to data/identity-overrides/merges.json."
+  ]
+}

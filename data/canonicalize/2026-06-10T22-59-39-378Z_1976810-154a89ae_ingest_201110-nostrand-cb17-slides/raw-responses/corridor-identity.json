@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T22-59-39-378Z_1976810-154a89ae_ingest_201110-nostrand-cb17-slides",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T02:03:37.392Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "nostrand-rogers-201110-cb17-resolution",
+        "local_observation_id": "corridor_nostrand_rogers_201110_cb17",
+        "decision": "new",
+        "rationale": "The observation's base_record_id is corridor_nostrand-avenue. The observation's source (201110_nostrand_cb17_slides) is already listed in the registry record corridor_nostrand-avenue's source_ids. This observation resolves to its own base_record_id — the matching record is itself (corridor_nostrand-avenue covers Nostrand Avenue/Rogers Avenue from Williamsburg Bridge to Sheepshead Bay at 9.3 miles). Per the rules, when the closest match is the observation's own base_record_id, the decision is 'new' — the observation already belongs there.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb17_slides",
+            "block_id": "p002_c0001",
+            "source_quote": "Nostrand Ave/Rogers Ave Corridor. 9.3 miles from Williamsburg Bridge to Sheepshead Bay."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-01-46-074Z_2111393-405ef971_canonicalize_2026-06-10t22-59-39-378z-1976810-154a89ae-ingest-201110-nostrand-cb17-slides-corridor-identity"
+}

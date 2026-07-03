@@ -1,0 +1,74 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:33:48.215Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_0bf953c6a3.md",
+  "cluster_id": "entity_cluster_0bf953c6a3",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_0bf953c6a3",
+    "kind": "entity",
+    "merge_groups": [
+      [
+        "entity_community-board-5-queens-2015",
+        "entity_queens-cb5-grand-ave-2024"
+      ]
+    ],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "entity_bronx-cb5-2012-11-webster",
+          "entity_cb5-brooklyn-brt-sbs-jan2018"
+        ],
+        "reason": "Contradiction test: borough differs (Bronx vs Brooklyn) in description/identity context; both are distinct community boards despite shared name 'Community Board 5'."
+      },
+      {
+        "record_ids": [
+          "entity_bronx-cb5-2012-11-webster",
+          "entity_community-board-5-manhattan-20110118"
+        ],
+        "reason": "Contradiction test: borough differs (Bronx vs Manhattan) in description/identity context; distinct community boards."
+      },
+      {
+        "record_ids": [
+          "entity_bronx-cb5-2012-11-webster",
+          "entity_community-board-5-queens-2015"
+        ],
+        "reason": "Contradiction test: borough differs (Bronx vs Queens) in description; distinct community boards. Queens record represents same entity as entity_queens-cb5-grand-ave-2024."
+      },
+      {
+        "record_ids": [
+          "entity_cb5-brooklyn-brt-sbs-jan2018",
+          "entity_community-board-5-manhattan-20110118"
+        ],
+        "reason": "Contradiction test: borough differs (Brooklyn vs Manhattan) in description; distinct community boards."
+      },
+      {
+        "record_ids": [
+          "entity_cb5-brooklyn-brt-sbs-jan2018",
+          "entity_community-board-5-queens-2015"
+        ],
+        "reason": "Contradiction test: borough differs (Brooklyn vs Queens) in description; distinct community boards. Queens record represents same entity as entity_queens-cb5-grand-ave-2024."
+      },
+      {
+        "record_ids": [
+          "entity_community-board-5-manhattan-20110118",
+          "entity_community-board-5-queens-2015"
+        ],
+        "reason": "Contradiction test: borough differs (Manhattan vs Queens) in description; distinct community boards. Queens record represents same entity as entity_queens-cb5-grand-ave-2024."
+      }
+    ],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "All records are community boards named 'Community Board 5' but descriptions indicate different boroughs (Bronx, Brooklyn, Manhattan, Queens). The borough is a strong identity field per entity kind; cross-borough pairs fail the contradiction test and are distinct objects. The two Queens records (entity_community-board-5-queens-2015 and entity_queens-cb5-grand-ave-2024) share the same borough and identity key 'entity_queens-community-board-5'; one is a lifecycle variant (date-suffixed) of the other, so they merge under the same-object test. No other merges are justified."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-33-30-584Z_1282984-d3ef32a7_identity-review-run_entity-cluster-0bf953c6a3",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-33-30-584Z_2026-06-23T14-33-30-584Z_1282984-d3ef32a7_identity-review-run_entity-cluster-0bf953c6a3.jsonl"
+}

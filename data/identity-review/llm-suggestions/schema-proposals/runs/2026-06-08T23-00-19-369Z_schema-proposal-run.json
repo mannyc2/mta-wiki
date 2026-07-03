@@ -1,0 +1,157 @@
+{
+  "run_id": "2026-06-08T23-00-19-369Z_schema-proposal-run",
+  "generated_at": "2026-06-08T23:00:19.369Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "concurrency": 3,
+  "audit_manifest": "data/identity-review/schema-audit/latest.json",
+  "kind_count": 12,
+  "completed": 12,
+  "skipped": 0,
+  "failed": 0,
+  "invalid": 2,
+  "paths": {
+    "proposals_dir": "data/identity-review/llm-suggestions/schema-proposals",
+    "runs_dir": "data/identity-review/llm-suggestions/schema-proposals/runs",
+    "manifest": "data/identity-review/llm-suggestions/schema-proposals/runs/2026-06-08T23-00-19-369Z_schema-proposal-run.json",
+    "latest": "data/identity-review/llm-suggestions/schema-proposals/runs/latest.json"
+  },
+  "results": [
+    {
+      "observation_kind": "metric_claim",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/metric_claim.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-00-19-370Z_3558847-a7115622_schema-proposal-run_metric-claim",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-00-19-371Z_2026-06-08T23-00-19-370Z_3558847-a7115622_schema-proposal-run_metric-claim.jsonl"
+    },
+    {
+      "observation_kind": "claim",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/claim.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-00-19-371Z_3558847-592e4847_schema-proposal-run_claim",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-00-19-371Z_2026-06-08T23-00-19-371Z_3558847-592e4847_schema-proposal-run_claim.jsonl"
+    },
+    {
+      "observation_kind": "relation",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/relation.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-00-19-371Z_3558847-5d42e3d7_schema-proposal-run_relation",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-00-19-371Z_2026-06-08T23-00-19-371Z_3558847-5d42e3d7_schema-proposal-run_relation.jsonl"
+    },
+    {
+      "observation_kind": "route",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/route.json",
+      "status": "completed",
+      "valid": false,
+      "schema_issues": [
+        "program.value_mapping[0].to \"able\" is not in canonical_values",
+        "operator.value_mapping[0].to \"mta\" is not in canonical_values",
+        "route_type_proposed.value_mapping[0].to \"local\" is not in canonical_values",
+        "agency.value_mapping[0].to \"bee_line_bus_system\" is not in canonical_values",
+        "corridors.value_mapping[0].to \"guy_r_brewer_blvd\" is not in canonical_values",
+        "corridors.value_mapping[1].to \"merrick_blvd\" is not in canonical_values"
+      ],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-00-38-615Z_3558847-494b30b8_schema-proposal-run_route",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-00-38-615Z_2026-06-08T23-00-38-615Z_3558847-494b30b8_schema-proposal-run_route.jsonl",
+      "error": "proposal failed schema validation with 6 issue(s)"
+    },
+    {
+      "observation_kind": "event",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/event.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-00-48-554Z_3558847-722b964a_schema-proposal-run_event",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-00-48-554Z_2026-06-08T23-00-48-554Z_3558847-722b964a_schema-proposal-run_event.jsonl"
+    },
+    {
+      "observation_kind": "entity",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/entity.json",
+      "status": "completed",
+      "valid": false,
+      "schema_issues": [
+        "buses.value_mapping[0].to \"5,800\" is not in canonical_values",
+        "executive_director.value_mapping[0].to \"Ben Furnas\" is not in canonical_values",
+        "executive_director.value_mapping[1].to \"Betsy Plum\" is not in canonical_values",
+        "subway_cars.value_mapping[0].to \"nearly 6,700\" is not in canonical_values"
+      ],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-00-50-652Z_3558847-22092702_schema-proposal-run_entity",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-00-50-652Z_2026-06-08T23-00-50-652Z_3558847-22092702_schema-proposal-run_entity.jsonl",
+      "error": "proposal failed schema validation with 4 issue(s)"
+    },
+    {
+      "observation_kind": "table",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/table.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-00-58-288Z_3558847-44be4841_schema-proposal-run_table",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-00-58-288Z_2026-06-08T23-00-58-288Z_3558847-44be4841_schema-proposal-run_table.jsonl"
+    },
+    {
+      "observation_kind": "treatment_component",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/treatment_component.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-01-10-532Z_3558847-188a4d38_schema-proposal-run_treatment-component",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-01-10-532Z_2026-06-08T23-01-10-532Z_3558847-188a4d38_schema-proposal-run_treatment-component.jsonl"
+    },
+    {
+      "observation_kind": "project",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/project.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-01-11-073Z_3558847-a792bc66_schema-proposal-run_project",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-01-11-073Z_2026-06-08T23-01-11-073Z_3558847-a792bc66_schema-proposal-run_project.jsonl"
+    },
+    {
+      "observation_kind": "corridor",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/corridor.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-02-18-437Z_3558847-fcba3c7a_schema-proposal-run_corridor",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-02-18-437Z_2026-06-08T23-02-18-437Z_3558847-fcba3c7a_schema-proposal-run_corridor.jsonl"
+    },
+    {
+      "observation_kind": "source",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/source.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-02-34-001Z_3558847-fda4b9f9_schema-proposal-run_source",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-02-34-001Z_2026-06-08T23-02-34-001Z_3558847-fda4b9f9_schema-proposal-run_source.jsonl"
+    },
+    {
+      "observation_kind": "source_gap",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/source_gap.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T23-02-56-362Z_3558847-1ea01885_schema-proposal-run_source-gap",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-02-56-370Z_2026-06-08T23-02-56-362Z_3558847-1ea01885_schema-proposal-run_source-gap.jsonl"
+    }
+  ]
+}

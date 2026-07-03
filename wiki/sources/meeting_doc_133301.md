@@ -1,0 +1,204 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-133301"
+record_kind: "source"
+display_name: "Minutes of the Regular Meeting Joint LIRR and Metro-North Committees January 29, 2024"
+source_id: "meeting_doc_133301"
+source_ids:
+  - "meeting_doc_133301"
+local_observation_id: "source_meeting_doc_133301"
+local_observation_ids:
+  - "source_meeting_doc_133301"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T14:43:49.279Z"
+raw_text: "Minutes of the Regular Meeting Joint Long Island Rail Road and Metro-North Railroad Committees Monday, January 29, 2024"
+submission_ids:
+  - "sub_b28550aef2f7f16c"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting minutes"
+  date: "January 29, 2024"
+  date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2024-01-29"
+    precision: "day"
+    raw_text: "January 29, 2024"
+  published_date_normalized: "2024-01-29"
+  published_date_precision: "day"
+  publisher: "MTA"
+  title: "Minutes of the Regular Meeting Joint Long Island Rail Road and Metro-North Railroad Committees Monday, January 29, 2024"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_133301#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_133301"
+    source_path: "raw/sources/meeting_doc_133301/blocks.jsonl"
+    text_sha256: "sha256:442bf6688ad9c83966c20444c231132d7e8eba6f51449a824cdc07abc213f5fe"
+    text_source: "raw_text"
+---
+
+# Minutes
+
+source_id: meeting_doc_133301
+citation: cite block ids exactly as shown in square brackets
+document: 122 block(s)
+
+## Page 1
+
+### [p001_c0001] Minutes of the Regular Meeting Joint Long Island Rail Road and Metro-North Railroad Committees Monday, January 29, 2024
+[p001_c0002] Meeting held at 2 Broadway – 20 th Floor New York, New York 10004 9:30 a.m.
+[p001_c0003] The following Committee Members were present in person:
+[p001_c0004] Hon. Samuel Chu, Co-Chair Hon. Gerard Bringmann Hon. David Mack Hon. Vincent Tessitore, Jr. Hon. Midori Valdivia Hon. Neal Zuckerman
+[p001_c0005] The following Committee Members attended via video:
+[p001_c0006] Hon. Michael Fleischer Hon. Randolph Glucksman
+[p001_c0007] The following Committee Members were not present:
+[p001_c0008] Hon. Norman Brown Hon. Blanca López, Co-Chair
+[p001_c0009] The following Board Member also attended in person:
+[p001_c0010] Hon. Lisa Sorin
+### [p001_c0011] Representing Metro-North Railroad:
+[p001_c0012] Justin Vonashek – Senior Vice President, Operations Shelley Prettyman – Vice President, System Safety Michael Loney - Vice President, Maintenance of Way
+### [p001_c0013] Representing Long Island Rail Road:
+[p001_c0014] Robert Free – Acting President Thomas Kost – Acting Senior Vice President, Operations Lori Ebbighausen – Vice President, Corporate Safety Paul Dietlin – Vice President, Maintenance of Way Haley Stein – Vice President, General Counsel & Secretary
+### [p001_c0015] Representing MTA Police Department:
+[p001_c0016] Alexander Lindsay – Assistant Chief, Internal Affairs Bureau
+### [p001_c0017] Representing MTA Construction and Development:
+[p001_c0018] Anthony Tufano – Senior Vice President, Railroads Business Unit
+
+## Page 2
+
+### [p002_c0001] 2 | Joint LIRR and Metro-North Committees Meeting Minutes January 29, 2024
+[p002_c0002] The members of the Metro-North Railroad (“Metro-North”) Committee met jointly with the members of the Long Island Rail Road (“LIRR”) Committee.
+### [p002_c0003] 1. OPENING MEETING:
+[p002_c0004] Co-Chair Chu called the joint meeting to order.
+### [p002_c0005] 2. PUBLIC COMMENTS:
+[p002_c0006] The following public speakers commented:
+[p002_c0007] Matty W. Buchys-Hyland (via video) spoke about railroad accessibility and safety, as well as the fare hikes on NJ Transit.
+[p002_c0008] Jack Nierenberg, Passengers United Vice President (in person) spoke about LIRR schedule changes for the Brooklyn shuttle, issues with transfers at Jamaica to and from Brooklyn, and requested reduced fares or other fare incentives for riders.
+[p002_c0009] Ravi Chanmugam (via video) spoke about LIRR’s lack of express trains on the weekends from Jamaica to Penn Station.
+[p002_c0010] Murray Bodin, Concerned Grandparents (in person) requested to meet in person with LIRR and Metro-North to discuss safety issues.
+[p002_c0011] Andy Pollack, Passengers United (via video) complained that LIRR has only one peak train from Atlantic Terminal to Far Rockaway.
+[p002_c0012] Joseph Morales (in person) noted LIRR’s steMTA program in schools, increase in employee lost time rates, and requested crime statistics from local and state municipalities.
+[p002_c0013] Sally Wolf (via video) requested masked area(s) on car(s) on both railroads.
+[p002_c0014] Jack Connors, PCAC Research and Communications Associate (in person) spoke of the need for transit equity on LIRR and Metro-North by bringing fair fares to the railroads.
+[p002_c0015] Charlton D’Souza, Passengers United President (via video) complained about LIRR schedule changes and transfers at Jamaica for Brooklyn, insufficient LIRR late night local trains, restoration of weekly CityTicket, and need for Hollis Station improvements.
+[p002_c0016] Jason Anthony (in person) complained that LIRR fails to announce the link to LaGuardia Airport via Select Bus Service at Woodside, complained about insufficient service to Brooklyn, Hunterspoint Avenue, and Long Island City, and suggested a unified Metro-North and LIRR ticketing system with reduced weekend ticket fares.
+[p002_c0017] Aleta Dupree, Team Folds (via video) noted improved ridership on both railroads.
+[p002_c0018] The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of the public comments.
+
+## Page 3
+
+### [p003_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 3 January 29, 2024
+### [p003_c0002] 3. LIRR PRESIDENT’S REPORT:
+[p003_c0003] LIRR Acting President Rob Free (“President Free”) stated that 2023 was well known as a year of many achievements. LIRR witnessed a significant increase in ridership. Looking at preliminary data on ticket sales for 2023, LIRR transported over 65,000,000 customers last year equating to a 24.4% ridership increase over 2022. Undoubtedly, the increased numbers were due in large part to the significant increase in service and the opening of Grand Central Madison. For the month of December, ridership slightly decreased as compared to November which is normal during the holiday season. However, ridership increased by over 34.8% as compared to December of 2022. Noncommutation ridership continues to impress as December marks the fourth month in a row where noncommutation ridership exceeded the same month in 2019.
+[p003_c0004] President Free stated that train service increased by 41% last year. In real terms, it means that LIRR operated over 302,000 trains in 2023, which is over 77,000 more trains than 2022. LIRR increased peak service by 56%, which amounts to about 151 trains a day alone. President Free stated that the challenge is to provide reliable service with this dramatic increase in service. President Free stated that LIRR met this challenge. LIRR accomplished on-time performance of 93.95% for the year, only five one-hundredths of a percentage below the goal of 94%, which is about 154 trains. Under normal circumstances, this is reliable service and the envy of many transit operators in the industry. President Free stated that we still have work to do and will continue to do so. President Free stated that service is extremely reliable considering the magnitude of what was implemented last year, including the massive service increase, completely overhauling our schedule, changing the way we operate, and opening a major terminal. President Free indicated that the reliable service provided by the LIRR is a testament to the employees’ dedication and pride in what they do. President Free thanked all the employees for their hard work.
+[p003_c0005] President Free reported that on January 23, 2024, he joined MTA Chair and CEO Janno Lieber and Metro-North President and former Interim LIRR President Catherine Rinaldi to greet customers at Grand Central Madison in celebration of the one-year anniversary of its opening day. President Free recalled that service to Grand Central Madison commenced on January 25, 2023 with shuttle service followed by full service on February 27, 2023. President Free noted that the event had a real festive atmosphere, and featured musician Eganam Segbefia playing a great version of “New York, New York” on the trumpet.
+[p003_c0006] President Free also noted that LIRR Manager Steve Terracciano and his daughter made their media debut at the event. Steve has been recognized as MTA Hero of the Week. Steve has worked for the railroad for 16 years and started as a Car Appearance Maintainer. He worked his way up through the organization and is currently Director of Station Operations – Manhattan, overseeing both Penn Station and Grand Central Madison. President Free thanked and congratulated Steve.
+[p003_c0007] President Free reported that ridership numbers show how customers are realizing the benefits of Grand Central Madison. President Free stated that for the very first time, on January 18, 2024, LIRR reached a 60/40 split between Penn Station and Grand Central Madison during the
+
+## Page 4
+
+### [p004_c0001] 4 | Joint LIRR and Metro-North Committees Meeting Minutes January 29, 2024
+[p004_c0002] AM peak hour. President Free stated that there is no way to overstate the importance of Grand Central Madison to our region in terms of mobility and economically.
+[p004_c0003] President Free invited those at Grand Central Madison to view the artwork at the south end of the Main Concourse where MTA Arts and Design displays various exhibits. President Free stated that on display now is Stephen Wilkes's photographic series entitled "Day and Light." This new exhibit displays iconic New York landmarks and captures their essence from dawn until dark.
+[p004_c0004] President Free reported on the status of efforts to reduce fare evasion following the Blue-Ribbon Panel's report and recommendations. The commuter railroads have been working collaboratively and have established a joint task force including representatives from the MTAPD to review the recommendations and to design plans for implementation. LIRR has piloted various gating programs at Penn Station. For one pilot, after an event on a mezzanine level, physical barriers were placed at entrance points to the platform levels with train personnel at each location to validate tickets before customers descend to platform level. In another pilot, during the PM rush hour, train personnel were strategically positioned on the platform level to validate tickets before customers boarded their train. Both programs were supported by MTAPD and were very successful. President Free stated that the pilot programs allow the LIRR to determine the most effective and sustainable methods that can be utilized moving forward. President Free stated that the group is also working on reviewing ticket validity periods and activation policies.
+[p004_c0005] President Free stated that on January 23, 2024, the Vegas Golden Knights and then on January 27, 2024 the Florida Panthers utilized LIRR from Penn Station to UBS Arena for their respective ice hockey games against the Islanders. These events are a testament to the marketing team's efforts to promote LIRR.
+[p004_c0006] President Free concluded this month's report with a story of life-saving heroism. On December 27, 2023, the 11:40 AM train from Port Washington to Grand Central Madison was operating west of Manhasset when engineer Andy Fox noticed a female walking on the same track towards the train. He immediately stopped the train and notified the Operation Center requesting the third rail power be de-energized. Meanwhile, conductor Mark Flynn descended to the track level as the woman continually went on top of the third rail protection board. Thankfully third rail power was de-energized already. Assistant conductor Casey Langone kept customers informed as to what was going on. Conductor Flynn managed to convince the disoriented woman to climb aboard the train. After doing so, they proceeded to Great Neck where they were met by the MTAPD who assisted with taking her to the hospital. Employees Fox, Flynn and Langone recognized the immediacy and weight of the situation and knew exactly what to do. President Free commended them for their quick thinking, composure, and know how. They are true professionals of the LIRR.
+[p004_c0007] The complete presentation is filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of President Free's remarks.
+
+## Page 5
+
+### [p005_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 5 January 29, 2024
+### [p005_c0002] 4. METRO-NORTH PRESIDENT’S REPORT AND OPERATING REPORT:
+[p005_c0003] Metro-North Senior Vice President of Operations Justin Vonashek (“Senior Vice President Vonashek”) stated that he will combine this month’s operating report and the President’s report on behalf of President Catherine Rinaldi, who was not able to attend the Committee meeting.
+[p005_c0004] Senior Vice President Vonashek began with heartbreaking news of the January 10, 2024 passing of beloved employee Lew Hoens of Metro-North’s Maintenance of Equipment department. In 2008, Lew crossed over to Metro-North after nine years as a mechanical engineer for New York City Transit. As a member of the capital rolling stock group, he overhauled the West of Hudson locomotive fleet, and was instrumental in the development of specifications for the next generation locomotive procurement. In 2016, Lew moved over to the equipment engineering group where he managed rebuilds, overhauls, and various engineering investigations. But in addition to his many responsibilities, what he looked forward to most was mentoring the next generation of rolling stock engineers. In 2021, Lew moved back to finish what he started in capital rolling stock as the Project Director for the Siemens Charger Dual Mode Locomotive procurement. Lew left us tragically at the far too young age of 49. His expertise and dedication were evident in all that he accomplished, and he will be sorely missed not only within the MTA and Metro-North family but by the transit industry as a whole. Senior Vice President Vonashek expressed his deepest condolences to his grieving family and asked for a moment of silence in Lew’s memory.
+[p005_c0005] Senior Vice President Vonashek stated that Metro-North service delivery rate for December 2023 was 99.9% with 99.7% for the year. System-wide on time performance (“OTP”) for December was 97.8% above our goal of 94%. Total 2023 OTP came in at 97.4%, marking the 4th consecutive year Metro-North has exceeded the 97% OTP mark. This is only the second time in the history of the railroad that we have accomplished this level of performance. The mean distance between failures (“MDBF”) for the fleet was over 263,000 miles in November, above the goal of 175,000 miles. The year-to-date MDBF remains above goal at 328,000.
+[p005_c0006] Senior Vice President Vonashek reported that Metro-North’s total 2023 ridership east and west of the Hudson was 60.1 million, which is 23.4% higher than 2022’s total and roughly 69% of the total for 2019. December’s ridership was 5.4 million and seasonal ridership was very encouraging in comparison to pre-pandemic ridership. It was boosted by recovering tourism and very strong pre-holiday travel. The first two weeks of the month reached 77% of average ridership compared to December 2019, and weekday ridership during the span reached 75% of 2019 levels, a new high for us. Weekend ridership was also robust with a new one-day record of 149,000 set on Saturday, December 15. Christmas Eve ridership at Grand Central Terminal was 22% higher than 2017, the last time Christmas Eve fell on a Sunday. New Year’s Eve ridership was also 22% higher than the last time New Year’s Eve fell on a Sunday, which was in 2017.
+[p005_c0007] Senior Vice President Vonashek stated that on January 12, 2024, Metro-North began a replacement program in Grand Central Terminal focused on three critical double-slip switches and a diamond switch that allows trains to operate from any track in the Park Avenue tunnel to any platform in Grand Central Terminal. These switches have been in service since 2000 and are in need of replacement. Crews will work through late March, and while this work is ongoing, trains
+
+## Page 6
+
+### [p006_c0001] 6 | Joint LIRR and Metro-North Committees Meeting Minutes January 29, 2024
+[p006_c0002] will be limited to specific platforms depending on their track assignments within the tunnel. Metro-North has analyzed its operating plan and identified key trains to remove to reduce peak train traffic. This reduces significant tunnel congestion and delays while work is being performed. Train schedules have been developed and publicized, and they include cancellations and combinations with added cars to handle additional ridership. Senior Vice President Vonashek advised riders to consult mta.info or the TrainTime app before heading out.
+[p006_c0003] Senior Vice President Vonashek stated that there's been a bit of decline in ridership thus far in January, which is a typically low month. Though snow lovers might consider this month so far to be a bit of a letdown, there's been nothing settled about January to date with flooding, intense rainfalls, high winds pushing tides above Hudson Line rails, and snowfalls reaching 10 to 12 inches across the northern reaches of our territory on January 6th and 7th. Metro-North ridership fluctuations reflect riders who are likely working from home due to the weather and who may also be dealing with downed trees and damaged property. The good news thus far is that none of this has created any major or widespread delays for the operation. Metro-North's Maintenance of Way forces handled several inclement weather days without issue this month.
+[p006_c0004] Senior Vice President Vonashek stated that Metro-North and LIRR are teaming up to combat fare evasion in accordance with the recommendations of the MTA's Blue-Ribbon Panel. Given the solid and diverse expertise of its participants, Metro-North is confident that this joint task force will produce positive results in the fight against this very costly trend. As Metro-North prepares to conduct its third pre-boarding visual inspection pilot at Grand Central Terminal tomorrow, Senior Vice President Vonashek happily reported that some of the already established methods have led to significant fare collection improvements in 2023. For example, Metro-North's fare collection rate outperformed its 4% goal and the total revenue losses were down 35% from 21.4 million to 13.9 million. These successes can be attributed to three primary drivers: increased management, focus and oversight through use of onboard video for follow up with train crews, and what is probably the most important, Metro-North's collaboration among management, union leadership, train crews and the MTAPD. As per the Blue-Ribbon Panel's recommendations, Metro-North will continue pre-boarding visual inspection pilots at Grand Central Terminal to encourage increased awareness of customer responsibilities and the importance of paying the fare. Metro-North is working actively on other recommendations, all of which will be analyzed for their respective effectiveness.
+[p006_c0005] Senior Vice President Vonashek stated that the MTA has been adding accessible stations to its roster faster than ever these days. The ribbon was cut earlier this month on the two latest success stories, both of which benefited the Harlem Line. Both Scarsdale and Hartsdale Stations have been made fully accessible with Scarsdale receiving a second elevator serving the Grand Central bound platform and Hartsdale getting two new lifts, one for each platform serving street, platform, and overpass levels. Both of these exciting projects came with a host of new customer amenities like new ADA compliant sidewalks and walkways as well as overpass enhancements including benches, new LED lighting, and heaters.
+[p006_c0006] Senior Vice President Vonashek stated that Purdy's Station, already accessible with two elevators, is scheduled to have its accessibility improvements completed later this year. The MTA
+
+## Page 7
+
+### [p007_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 7 January 29, 2024
+[p007_c0002] is also moving forward with ADA upgrades for three Metro-North stations in the Bronx as part of the current Capital Plan. New station platforms, new elevators, and other amenities are in store for both Woodlawn and Williams Bridge. The Botanical Garden Station will be rehabilitated, and station elevators will be upgraded. True to Metro-North's core mission, these current and future projects help us deliver superb customer service while enhancing regional mobility.
+[p007_c0003] Senior Vice President Vonashek said that rail operators around the globe, including Metro-North, share a special bond and willingness to share what they know with their fellow carriers for the benefit of the railroading world. Senior Vice President Vonashek reported that last week, he along with several other representatives from the operations maintenance teams at New York City Transit, Metro-North, and the LIRR traveled to Munich, Germany and Zurich, Switzerland to seek and identify ways to innovate, reduce operating costs and improve efficiencies from our international peers. When gleaning best practices on things like data, procurement, AI, and maintenance optimization for shops and yards, you could do a lot worse than Munich S-Bahn and Zurich SBB, two strong international railroads in areas of fleet maintenance standards, workflow management, process standardization, innovation, and data benchmarking. In both locations, they learned a number of things that will benefit Metro-North and potentially benefit all MTA agencies. Specific to Metro-North, they reviewed a throughput mathematical model for optimized shop and yard workflows and management, learned methods for optimized materials management procedures, discussed cost benefit analysis for the expansion of work facilities, and explored innovative concepts and wheel assessment technology and predictive data, including but not limited to artificial intelligence considerations including next generation robotics for undercarriage inspections. Ultimately, Metro-North expects that programs of this nature will help ensure the optimization of its maintenance processes, leading to increased cost savings, cost avoidance, and critical improvements under the fiscal baseline reset operations efficiency umbrella.
+[p007_c0004] Senior Vice President Vonashek noted that the Transit Tech Lab, co-founded by the MTA and the Partnership Fund for New York City, is currently seeking submissions for its annual challenge competition. The lab is a program that allows transit agencies to source, evaluate, and pilot new innovations from early to growth-stage companies to help solve public transportation challenges and needs across the MTA. Each year, the transit lab publicly announces challenges that address our regional transit agencies' most pressing issues, and in the process, further cement New York's place as the global leader in public transit. This year's competition seeks entries from companies around the world to improve the customer experience, build a more resilient and adaptive transit system, and maximize the City's curb space. Besides the MTA, Transit Tech Lab participants include the Port Authority of New York and New Jersey, New Jersey Transit, and New York City Department of Transportation. Applications are open until Wednesday, February 28, 2024, and we can't wait to see the great ideas that flow in. For more information or to apply visit transitinnovation.org .
+[p007_c0005] In response to a question from Board Member Zuckerman regarding anticipated expenses such as overtime in connection with climate change, Senior Vice President Vonashek stated that due to the numerous weather events in January, the overtime budget will be exceeded for the month. Vice President of Maintenance of Way Michael Loney stated that they have been covering two to three events per week since late December. Board Member Zuckerman stated that Metro-
+
+## Page 8
+
+### [p008_c0001] 8 | Joint LIRR and Metro-North Committees Meeting Minutes January 29, 2024
+[p008_c0002] North should start tracking the past few years to gauge the financial impact of climate change. Board Member Valdivia seconded the request for LIRR as well.
+[p008_c0003] In response to a question from Board Member Bringmann regarding whether there was any discussion of rolling stock while in Germany, Senior Vice President Vonashek stated in the negative.
+[p008_c0004] The complete presentation and operating report are filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of Senior Vice President Vonashek's remarks.
+### [p008_c0005] 5. LIRR OPERATING REPORT:
+[p008_c0006] LIRR Acting Senior Vice President of Operations Tom Kost ("Senior Vice President Kost") reported that LIRR's OTP for December was 94.6%, above the goal of 94%. LIRR finished the year of 2023 at 93.95% OTP, slightly below goal of 94%. For December, seven branches operated at or above goal and for 2023 five branches operated at or above goal. There were 18 incidents which resulted in 10 or more late trains in the month of December. The most significant event occurred on December 30, 2023, when there was a loss of the signal supervisory system at Penn Station Central Control caused by an Amtrak network communication issue. This incident caused 58 delays and reduced our monthly OTP by 0.2%.
+[p008_c0007] Senior Vice President Kost reported that for fleet performance, the MDBF for the month of November was 143,264 miles below the goal of 170,000 miles. YTD MDBF as of November was 170,227 miles above the goal of 170,000 miles. One component which was a driver in MDBF reduction was worn parts on the dual mode engines. However, our mechanical team has introduced a specialized test to identify and correct the issue, which should be completed in the next three months.
+[p008_c0008] Senior Vice President Kost stated that for service delivery, LIRR completed 99.4% of its trips for the month of December and for the year 2023, the total was 99.6%. For upcoming work that will impact service, there are four weekends in February where state of good repair will be performed on switches. During that work, Far Rockaway Branch trains will be diverted to Grand Central Madison for each of those weekends for approximately 48 hours. Senior Vice President Kost reminded everyone to check the website and TrainTime app for updated schedules.
+[p008_c0009] The complete LIRR operating report is filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of the presentation.
+### [p008_c0010] 6. APPROVAL OF MINUTES:
+[p008_c0011] Upon motion duly made and seconded, the Committee approved the minutes of the December 18, 2023 Joint LIRR and Metro-North Committee meeting.
+
+## Page 9
+
+### [p009_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 9 January 29, 2024
+### [p009_c0002] 7. METRO-NORTH AND LIRR 2024 WORK PLANS:
+[p009_c0003] President Free stated that LIRR Work Plans for 2024 were modified, which include removing PTC and the East Side Access Readiness Project. An operations update will be provided in July, and a security and safety update will be provided in September.
+[p009_c0004] Senior Vice President Vonashek stated that the Metro-North Work Plans for 2024 were modified similar to LIRR's modifications.
+[p009_c0005] Upon motion duly made and seconded, the Committee approved the 2024 Metro-North and LIRR Work Plans. The 2024 Metro-North and LIRR Work Plans are filed with the records of this meeting.
+### [p009_c0006] 8. SAFETY REPORT:
+[p009_c0007] LIRR Vice President of Corporate Safety Lori Ebbighausen ("Vice President Ebbighausen") said that LIRR's safety report begins on page 16 of the Key Performance Metrics book. The reportable customer injury rate increased from 2.43 to 2.57 per one million customers in the current 12-month reporting period (ending in November 2023) compared to the prior 12 months. The reportable employee lost time injury rate was increased from 4.27 to 4.4 per 200,000 working hours, compared to the prior 12 months.
+[p009_c0008] Vice President Ebbighausen thanked the Long Island Crisis Center and Response Long Island for their long-standing partnership with LIRR since 2009. Vice President Ebbighausen noted that for 2024, in addition to featuring their crisis intervention information, LIRR will be adding the 988 national hotline to LIRR signage, as LIRR seeks to increase engagement with individuals in our communities to help connect them with services they need. Vice President Ebbighausen also thanked the MTA Police for targeting outreach at locations and for their assistance in enforcement due to concerns at grade crossings put forward by LIRR train crews as well as broken gates. Vice President Ebbighausen stated that on the employee side, LIRR has launched a new employee contest initiative in December called "Why BEE Safe?" to encourage employees to share photos and videos about who and what are motivating them to be safe at work.
+[p009_c0009] Metro-North Vice President of System Safety Shelley Prettyman ("Vice President Prettyman") stated that Metro-North's safety report is found on page 30 of the Key Performance Metrics book. The customer employee injury rate for the 12-month reporting period ending November 2023 compared to the prior twelve months ending November 2022 decreased from 2.42 to 1.97 per one million customers. The reportable employee lost time injury rate decreased from 2.16 to 1.97 per 200,000 hours worked compared to the prior twelve months.
+[p009_c0010] Vice President Prettyman highlighted some of the environmental work completed in 2023. The Office of System Safety's Environmental Compliance and Services team performed over 300 environmental field inspections and audits across Metro-North's territory last year. Vice President Prettyman noted one key project was a partnership with the Power Department to remove 91
+
+## Page 10
+
+### [p010_c0001] 10 | Joint LIRR and Metro-North Committees Meeting Minutes January 29, 2024
+[p010_c0002] obsolete oil fill transformers throughout the territory. This included performing in-house sampling for PCB analysis and arranging for safe removal of equipment from Metro-North property to prevent potential environmental impacts including recycling of non-PCB transformers. Vice President Prettyman thanked the partners in Operations for their support.
+[p010_c0003] The full LIRR and Metro-North safety reports are filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of the presentations.
+### [p010_c0004] 9. MTAPD REPORT:
+[p010_c0005] MTAPD Internal Affairs Bureau Assistant Chief Alexander Lindsay (“Chief Lindsay”) reported that for the month of December, there were thirty major felonies across both railroads. In the major crime categories, there were three robberies, eleven assaults, and thirteen grand larcenies. Of the thirteen grand larcenies, eleven involved unattended property. The MTAPD is continuing to reinforce that people should not leave their property unattended, such as iPhones and bags. Of the assaults, six were committed against police officers making arrests and one was against a railroad conductor that was closed by arrest. Of the three robberies, one was closed by arrest and one incident involved a suspect that was stealing a conductor’s keys after assaulting him. MTAPD continues to monitor and manage the daily protests in our terminals, in collaboration with NYPD and communicating with our railroad security partners. Chief Lindsey stated that while these protests can be planned, there is no way to know how many people are going to show up due to social media. Chief Lindsay stated that regarding fare evasion, on the LIRR system, the MTAPD issued 96 criminal summonses for fare evasion and on Metro-North, 21 summonses were issued for fare evasion.
+[p010_c0006] Co-chair Chu stated that it is disturbing that there are still attacks on our conductors and staff and encouraged prosecutors to act accordingly to emphasize that this is not acceptable.
+[p010_c0007] The full MTAPD report is filed with the records of this meeting. The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of Chief Lindsay’s presentation.
+### [p010_c0008] 10. FALL 2023 CUSTOMERS COUNT SURVEY
+[p010_c0009] MTA Chief of Strategic Initiatives Jon Kaufman (“Chief of Strategic Initiatives Kaufman”) presented the findings of the Fall 2023 Customers Count Survey results for both railroads. Chief of Strategic Initiatives Kaufman provided that the survey was more robust than in spring 2023 with 11% more respondents for LIRR and 12% more respondents for Metro-North.
+[p010_c0010] For LIRR, there was an overall increase in customer satisfaction from spring to fall at 70% overall satisfaction in the fall, up from 68% in the spring. Stations also showed an increase in satisfaction, including Penn Station. Grand Central Madison has an overall high score of 97%.
+
+## Page 11
+
+### [p011_c0001] Joint LIRR and Metro-North Committees Meeting Minutes | 11 January 29, 2024
+[p011_c0002] LIRR customers ranked “quality of the transfer” and “peak service frequency” as important factors.
+[p011_c0003] Chief of Strategic Initiatives Kaufman said Metro-North maintains a very high overall level of satisfaction at 86%, down slightly from the spring, likely resulting from recent weather incidents in October and November. West of Hudson passenger satisfaction surveys are administered by New Jersey Transit, who will provide the results later this spring.
+[p011_c0004] Chief of Strategic Initiatives Kaufman said both railroads have similar key drivers for customer satisfaction, such as “service reliability,” “on time performance,” and “peak service frequency.” Dissatisfied customers for both railroads requested “shorter wait times on weekdays,” “more reliable service,” and “better fare incentives.”
+[p011_c0005] In response to a question from Board Member Zuckerman regarding the methodology of the survey, Senior Director of Customer and Market Research Tatyana Levina stated that the survey was conducted online with outside consultants to maintain impartiality. They used a large database of emails, marketing on screens, ads on trains and the TrainTime app to reach as many customers as possible. The data is then weighted by census adjustment and minority status to ensure fair representation. Board Member Zuckerman requested that the information provided should show how those who responded reflects or doesn’t reflect the riding population. Levina stated that the response came from over 108,000 people for both railroads and transit, which is an extremely large sample. They are pretty confident that they represent the ridership. Chief of Strategic Initiatives Kaufman stated that frequent riders are more likely to respond to the survey than those who ride only once a week, but there were efforts to obtain feedback from those customers as well.
+[p011_c0006] In response to a question from Board Member Valdivia regarding the length of the survey, Levina stated that they provided alternative options for taking the survey such as by telephone and counted those customers who completed most of the survey.
+[p011_c0007] In response to a further question from Board Member Valdivia regarding the service between New Jersey and New York and the impact on Penn Station as New Jersey Transit fare increases are in process, MTA Chief of External Relations John J. McCarthy noted that many respondents were those coming through from New Jersey Transit to Penn Station so the survey captures those riders as well. Chief of Strategic Initiatives Kaufman stated that for the Transit survey, the satisfaction has increased for the A/C line at Penn Station.
+[p011_c0008] In response to a request from Board Member Tessitore for more specific survey items such as cleanliness and customer service on board trains that can be targeted to make the system better, Chief of Strategic Initiatives Kaufman stated that while today’s presentation was limited in scope due to time constraints, the survey did capture some information such as cleanliness, station bathrooms, and announcements, which was provided to the railroads for review.
+
+## Page 12
+
+### [p012_c0001] 12 | Joint LIRR and Metro-North Committees Meeting Minutes January 29, 2024
+[p012_c0002] The video recording of the meeting produced by the MTA and maintained in the MTA records contains a complete record of Chief of Strategic Initiatives Kaufman's presentation.
+### [p012_c0003] 11. INFORMATION ITEMS:
+[p012_c0004] President Free noted the following LIRR information item: (i) Winter Trackwork Programs.
+[p012_c0005] The following is the Metro-North information item: (i) Acquisition of property interest for Metro-North Brewster Yard Improvement Program.
+[p012_c0006] The details of the information items are contained in reports filed with the records of this meeting.
+### [p012_c0007] 12. FINANCE:
+[p012_c0008] The finance reports for both railroads are contained in the meeting material.
+### [p012_c0009] 13. ACTION ITEMS/ PROCUREMENTS:
+[p012_c0010] There were no action items or procurements for LIRR or Metro-North.
+### [p012_c0011] 14. ADJOURNMENT:
+[p012_c0012] Upon motion duly made and seconded, the Committee unanimously voted to adjourn the meeting.
+[p012_c0013] Respectfully submitted,
+[p012_c0014] _Susan Sarch Vice President, General Counsel & Secretary Metro-North Commuter Railroad Company_
+[p012_c0015] _Haley Stein Vice President, General Counsel & Secretary The Long Island Rail Road Company_

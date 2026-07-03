@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "review_state": "accepted",
+  "accepted_at": "2026-06-08T21:21:36.731Z",
+  "reviewer": "codex-audit-2026-06-08",
+  "source": "audit_safe_to_promote",
+  "cluster_id": "corridor_cluster_009",
+  "kind": "corridor",
+  "packet_path": "data/identity-review/packets/corridor_cluster_009.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_009.json",
+  "source_review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Flash",
+  "action_summary": {
+    "merge_group_count": 1,
+    "do_not_merge_count": 0,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [
+    [
+      "corridor_university-ave",
+      "corridor_university-avenue"
+    ]
+  ],
+  "do_not_merge": [],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [
+    "When corridor_name, street, limits (from/to), and routes_served are identical across records, merge despite minor variant in record id naming."
+  ],
+  "rationale": "Both records describe University Avenue from Kingsbridge Road to Cross Bronx Expressway serving Bx3, Bx18, Bx36. The first record uses a 'limits' string, the second splits into 'from' and 'to' with identical endpoints. Routes match exactly. The only difference is the record identifier suffix ('-ave' vs '-avenue') and the source document (2019 plan vs 2021 addendum). The addendum evidence snippet does not list this corridor directly but the payload and identity keys (including shared key corridor_university-ave) confirm the same corridor. This is a duplicate global identity."
+}

@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T23-09-19-253Z_1976810-6248d0ff_ingest_2013-01-webster-sbs-newsletter",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T03:23:13.556Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "webster-ave-2013-01-new",
+        "local_observation_id": "corridor_webster_ave_2013_01",
+        "decision": "new",
+        "rationale": "The observation's base_record_id (corridor_webster-ave-bronx) is the closest matching registry record — it already lists the source 2013_01_webster_sbs_newsletter and the cited evidence block p001_c0007 in its source_ids and evidence_refs. The observation resolves to its own base_record_id. No other registry record contains this 2013 source or matches more closely. Per identity rules, when the closest match IS the observation's own base_record_id, decision is 'new' (the observation already resolves to that id).",
+        "evidence_refs": [
+          {
+            "source_id": "2013_01_webster_sbs_newsletter",
+            "block_id": "p001_c0007",
+            "source_quote": "Webster Avenue Corridor Design"
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-19-12-525Z_2111393-587dd4be_canonicalize_2026-06-10t23-09-19-253z-1976810-6248d0ff-ingest-2013-01-webster-sbs-newsletter-corridor-identity"
+}

@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "project_cluster_ecbd44e7ea",
+  "kind": "project",
+  "packet_path": "data/identity-review/packets/project_cluster_ecbd44e7ea.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/project_cluster_ecbd44e7ea.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 6,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "project_gct-fire-standpipe-phase2",
+        "project_park-avenue-viaduct-repair"
+      ],
+      "reason": "Shared program (MTA 2020-2024 Capital Program) is relation context, not merge authority. Identity fields differ: distinct project names, types, and scopes (fire standpipe replacement vs. viaduct repair). Contradiction test: strong identity field project_name and project_type differ, so they are distinct projects."
+    },
+    {
+      "record_ids": [
+        "project_gct-fire-standpipe-phase2",
+        "project_prevost-express-buses-oct2023"
+      ],
+      "reason": "Shared program is not merge authority. Identity fields differ: project_name, project_type, scope. Contradiction test: strong identity fields differ, so distinct projects."
+    },
+    {
+      "record_ids": [
+        "project_gct-fire-standpipe-phase2",
+        "project_ronkonkoma-parking-garage-rehab"
+      ],
+      "reason": "Shared program is not merge authority. Identity fields differ: project_name, project_type, scope. Contradiction test: distinct projects."
+    },
+    {
+      "record_ids": [
+        "project_park-avenue-viaduct-repair",
+        "project_prevost-express-buses-oct2023"
+      ],
+      "reason": "Shared program is not merge authority. Identity fields differ: project_name, project_type. Contradiction test: distinct projects."
+    },
+    {
+      "record_ids": [
+        "project_park-avenue-viaduct-repair",
+        "project_ronkonkoma-parking-garage-rehab"
+      ],
+      "reason": "Shared program is not merge authority. Identity fields differ: project_name, project_type, scope. Contradiction test: distinct projects."
+    },
+    {
+      "record_ids": [
+        "project_prevost-express-buses-oct2023",
+        "project_ronkonkoma-parking-garage-rehab"
+      ],
+      "reason": "Shared program is not merge authority. Identity fields differ: project_name, project_type, scope. Contradiction test: distinct projects."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "All four projects share only the capital program, which is explicitly noted as not merge authority. Each project has distinct identity fields (name, type, scope, description). No contradicting identity fields exist between any pair that would allow merge; all pairs satisfy the contradiction test (different project_name and project_type). Therefore all pairs are do_not_merge. No merges are warranted. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

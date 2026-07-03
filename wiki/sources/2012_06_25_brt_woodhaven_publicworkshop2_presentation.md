@@ -1,0 +1,168 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_2012-06-25-brt-woodhaven-publicworkshop2-presentation"
+record_kind: "source"
+display_name: "Woodhaven / Cross Bay Boulevards Public Workshop #2"
+source_id: "2012_06_25_brt_woodhaven_publicworkshop2_presentation"
+source_ids:
+  - "2012_06_25_brt_woodhaven_publicworkshop2_presentation"
+local_observation_id: "source_2012_06_25_brt_woodhaven_publicworkshop2"
+local_observation_ids:
+  - "source_2012_06_25_brt_woodhaven_publicworkshop2"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-10T23:04:42.410Z"
+submission_ids:
+  - "sub_0e5de4dd77cbf71d"
+payload:
+  authority_tier: "plan_document"
+  content_type: "presentation"
+  date_text: "June 25, 2014"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2014-06-25"
+    precision: "day"
+    raw_text: "June 25, 2014"
+  published_date_normalized: "2014-06-25"
+  published_date_precision: "day"
+  publisher: "MTA New York City Transit / NYC DOT"
+  title: "Woodhaven / Cross Bay Boulevards Public Workshop # 2"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "2012_06_25_brt_woodhaven_publicworkshop2_presentation#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "2012_06_25_brt_woodhaven_publicworkshop2_presentation"
+    source_path: "raw/sources/2012_06_25_brt_woodhaven_publicworkshop2_presentation/blocks.jsonl"
+    text_sha256: "sha256:283859972942fe02b0a86fd9a24cfadb466b756af1eab4dd90320824be4c0c06"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "2012_06_25_brt_woodhaven_publicworkshop2_presentation#p001_c0002"
+    page_number: 1
+    role: "date"
+    source_id: "2012_06_25_brt_woodhaven_publicworkshop2_presentation"
+    source_path: "raw/sources/2012_06_25_brt_woodhaven_publicworkshop2_presentation/blocks.jsonl"
+    text_sha256: "sha256:b935867cfd0281da9772dbb3987a06c9d7f47b390235b21ff9021178be755766"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "2012_06_25_brt_woodhaven_publicworkshop2_presentation#p001_c0004"
+    page_number: 1
+    role: "publisher_logo"
+    source_id: "2012_06_25_brt_woodhaven_publicworkshop2_presentation"
+    source_path: "raw/sources/2012_06_25_brt_woodhaven_publicworkshop2_presentation/blocks.jsonl"
+    text_sha256: "sha256:1e04955884c6ccec66fc45a1f70dad64c452a8f0f6233e7fe8106205f0cf5ade"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0006"
+    evidence_id: "2012_06_25_brt_woodhaven_publicworkshop2_presentation#p001_c0006"
+    page_number: 1
+    role: "publisher_logo"
+    source_id: "2012_06_25_brt_woodhaven_publicworkshop2_presentation"
+    source_path: "raw/sources/2012_06_25_brt_woodhaven_publicworkshop2_presentation/blocks.jsonl"
+    text_sha256: "sha256:115de1255104597a6bd08d36415144e9b4dad2ea40f25492b234f6fc5651ea17"
+    text_source: "raw_text"
+---
+
+# Download the presentation (pdf)
+
+source_id: 2012_06_25_brt_woodhaven_publicworkshop2_presentation
+citation: cite block ids exactly as shown in square brackets
+document: 65 block(s)
+
+## Page 1
+
+### [p001_c0001] Woodhaven / Cross Bay Boulevards
+[p001_c0002] Public Workshop # 2 June 25, 2014
+> [p001_c0003] A wide-angle photograph of a residential street in Woodhaven, New York City. The street is lined with mature trees, houses, and parked cars. The sky is clear and blue.
+[p001_c0004] _The logo for the Metropolitan Transportation Authority (MTA), featuring the letters 'MTA' in a stylized font inside a circle._
+[p001_c0005] _+selectbusservice_
+[p001_c0006] _The logo for the New York City Department of Transportation (NYC DOT), featuring the words 'NEW YORK CITY' above 'DOT' and a stylized graphic of a road or bridge._
+
+## Page 2
+
+### [p002_c0001] Agenda
+[p002_c0002] Presentation
+[p002_c0003] Breakout Session Part 1: SBS Design Puzzle
+[p002_c0004] Breakout Session Part 2: SBS Stop Selection
+[p002_c0005] Full Group Discussion and Recap
+[p002_c0006] _+selectbusservice_
+
+## Page 3
+
+### [p003_c0001] First Public Workshop – April 23
+### [p003_c0002] Introduction to Bus Rapid Transit and Select Bus Service
+### [p003_c0003] Major comments:
+- [p003_c0004] • Buses very slow and unreliable in rush hours • Pedestrian crossings difficult and dangerous • Service in Rockaways should be extended • Rockaway Branch is important to consider
+> [p003_c0005] A group of approximately seven people are gathered around a large table, focused on a map of a transit system. They appear to be in a workshop or meeting setting. One man in a blue shirt and cap is in the foreground, looking towards the map. Others are leaning in, some with pens, suggesting they are taking notes or discussing the map. The map shows various colored lines and stations, likely representing a bus or transit network.
+> [p003_c0006] A group of people are seated around a table, engaged in a discussion. They are looking at a map and some documents. The scene is similar to the first image, showing a collaborative workshop environment. The participants are diverse, and their attention is focused on the materials on the table. The map and documents are spread out, and some people are pointing at specific areas, indicating active participation in the discussion.
+[p003_c0007] _+selectbuservice_
+
+## Page 4
+
+### [p004_c0001] 2014 Implementation
+[p004_c0002] Bus lanes improve bus speeds by about 10%. Plans include:
+[p004_c0003] Offset Bus Lanes between Eliot and Metropolitan Avenues
+[p004_c0004] Curbside Bus Lanes approaching Rockaway Boulevard
+> [p004_c0005] A map of Queens, New York, highlighting bus lane implementation plans. The map shows the LIRR Woodside station and the 7 bus line. Two specific areas are circled in red and connected by dashed orange arrows to the text on the left. The first red circle is located on the offset bus lane between Eliot and Metropolitan Avenues. The second red circle is located on the curbside bus lane approaching Rockaway Boulevard. Other visible landmarks include Flushing Meadows Corona Park, Forest Hills, Glendale, and Richmond Hill. Major roads like Woodhaven Blvd, 80th St, and Atlantic Ave are shown.
+[p004_c0006] _+selectbusservice_
+
+## Page 5
+
+### [p005_c0001] 2014 Implementation
+### [p005_c0002] EXISTING
+> [p005_c0003] The diagram illustrates an existing street layout with the following details: West Sidewalk: Located on the left side of the street. East Sidewalk: Located on the right side of the street. Vehicle Positions: Represented by car icons above the lanes. There are 14 vehicles in total, with 3 in the first lane, 3 in the second, 3 in the third, 3 in the fourth, 3 in the fifth, 3 in the sixth, 3 in the seventh, 3 in the eighth, 3 in the ninth, 3 in the tenth, 3 in the eleventh, 3 in the twelfth, and 3 in the thirteenth lane. Lane Widths: Indicated by numerical values above the lanes: 14', 11', 6', 10', 10', 10', 4', 10', 10', 10', 6', 11', and 14'. Lane Types: Indicated by text below the lanes: Pkg/ Bus Stop, Travel Lane, Travel Lane, Travel Lane, Travel Lane, Travel Lane, Travel Lane, Travel Lane, Travel Lane, Travel Lane, Travel Lane, Travel Lane, and Pkg/ Bus Stop. Total Length: Indicated by a double-headed arrow at the bottom, labeled 126'. Vehicle Count Lane Width Lane Type 3 14' Pkg/ Bus Stop 3 11' Travel Lane 3 6' Travel Lane 3 10' Travel Lane 3 10' Travel Lane 3 10' Travel Lane 3 4' Travel Lane 3 10' Travel Lane 3 10' Travel Lane 3 10' Travel Lane 3 6' Travel Lane 3 11' Travel Lane 3 14' Pkg/ Bus Stop
+[p005_c0004] _+selectbusservice_
+
+## Page 6
+
+### [p006_c0001] 2014 Implementation
+### [p006_c0002] EXISTING
+> [p006_c0003] The diagram shows a street layout with a total width of 126'. It features a West Sidewalk on the left and an East Sidewalk on the right. The street is divided into several lanes and parking areas, each with a specific width and designated use. Car icons are placed above the parking areas to indicate their intended use. Width Designation 14' Pkg/ Bus Stop 11' Travel Lane 6' 10' Travel Lane 10' Travel Lane 10' Travel Lane 4' 10' Travel Lane 10' Travel Lane 10' Travel Lane 6' 11' Travel Lane 14' Travel Lane, Pkg/ Bus Stop West Sidewalk (Left) | East Sidewalk (Right) Total Width: 126'
+### [p006_c0004] PROPOSED
+### [p006_c0005] IMPLEMENTATION SCHEDULED FOR 2014
+> [p006_c0006] The diagram shows a proposed street layout with a total width of 126'. It features a West Sidewalk on the left and an East Sidewalk on the right. The street is divided into several lanes and parking areas, each with a specific width and designated use. Car icons are placed above the parking areas to indicate their intended use. Two areas are highlighted with yellow diagonal hatching, indicating they are being converted from travel lanes to parking areas. Width Designation 9' Pkg/ Bus Stop 11' Travel Lane 5' Travel Lane (Proposed Parking) 6' 10' Travel Lane 10' Travel Lane 10' Travel Lane 4' 10' Travel Lane 10' Travel Lane 10' Travel Lane 6' 5' Travel Lane (Proposed Parking) 11' Travel Lane 9' Pkg/ Bus Stop West Sidewalk (Left) | East Sidewalk (Right) Total Width: 126'
+[p006_c0007] _+selectbuservice_
+
+## Page 7
+
+### [p007_c0001] Long Term: Select Bus Service
+[p007_c0002] Many corridor issues need to be addressed in a capital project
+[p007_c0003] SBS project will look at all potential changes, focusing on:
+- [p007_c0004] • Faster bus service • Safer streets for pedestrians and drivers • Maintaining appropriate traffic flow for local and through drivers
+[p007_c0005] SBS Corridor
+> [p007_c0006] A map of the SBS Corridor in Queens, New York. The route is highlighted with a dashed blue line, starting from Woodside (near LIRR) and ending at Rockaway Beach. The route passes through Elmhurst, Rego Park, Middle Village, Woodhaven, Ozone Park, Howard Beach, and Rockaway Park. Major streets shown include Broadway, Roosevelt Ave, Queens Blvd, Woodhaven Blvd, Myrtle Ave, Metropolitan Ave, Atlantic Ave, Rockaway Blvd, Belt Parkway, and Cross Bay Blvd. The map also shows the Jamaica Bay and the Broad Channel. A blue arrow points from the text 'SBS Corridor' to the dashed blue line representing the route. Other bus routes are marked with numbers like 1, 2, 4, 5, 6, 7, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000.
+[p007_c0007] _+selectbusservice_
+
+## Page 8
+
+### [p008_c0001] SBS and Traffic Flow
+[p008_c0002] Most of Woodhaven & Cross Bay have 4-5 lanes/direction. The highest volume is at Union Tpke, where just 3 lanes go over the bridge.
+### [p008_c0003] Proposed
+[p008_c0004] Continue to provide sufficient lanes for general traffic
+[p008_c0005] Reconfigure roadway to better use “extra” space without creating merges (bus lanes, medians, narrowed crossing distances)
+[p008_c0006] Redesign complex intersections such as Park Lane South
+[p008_c0007] Use service roads in appropriate ways
+[p008_c0008] Study local, limited, and express bus services
+[p008_c0009] _+selectbuservice_
+
+## Page 9
+
+### [p009_c0001] Next Steps
+### [p009_c0002] Today:
+[p009_c0003] Design and SBS station ideas
+### [p009_c0004] Summer 2014:
+[p009_c0005] MTA Bus and DOT develop designs based on today's input
+[p009_c0006] Fall 2014: Meetings to present draft plans and get community input
+### [p009_c0007] Late 2014:
+[p009_c0008] Selection of Preferred Design
+[p009_c0009] 2015: Develop details for Preferred Design, plan capital project
+> [p009_c0010] A map of the Rockaway Peninsula, Queens, New York, showing the proposed SBS (Select Bus Service) route. The route is marked with a dashed blue line and arrows, starting from the LIRR station in Woodside and ending at Rockaway Park. The route follows Broadway, Roosevelt Ave, Queens Blvd, Woodhaven Blvd, Atlantic Ave, and Rockaway Blvd. Key locations labeled include Jackson Heights, Elmhurst, Middle Village, Woodhaven, Ozone Park, Howard Beach, and Rockaway Park. The map also shows the Metropolitan Avenue, Belt Parkway, Jamaica Bay, and the Broad Channel. The SBS route is numbered with stations 1 through 53. The map also shows the LIRR station in Woodside and the MTA bus and DOT routes.
+[p009_c0011] _+selectbuservice_
+
+## Page 10
+
+### [p010_c0001] Next: Breakout Sessions
+[p010_c0002] _+selectbusservice_

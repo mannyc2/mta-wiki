@@ -1,0 +1,41 @@
+{
+  "run_id": "2026-06-10T23-05-54-642Z_1976810-59962f5c_ingest_2012-11-sbs-webster-cac4",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T03:05:22.624Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "entity-mta-nyct-2012-11-new",
+        "local_observation_id": "entity_mta_nyct_2012_11_webster",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-nyct already matches the existing canonical registry record entity_mta-nyct (MTA New York City Transit, agency, acronym NYCT). The observation resolves to its own base_record_id; no different target record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p001_c0001",
+            "source_quote": "MTA New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-nyc-dot-2012-11-new",
+        "local_observation_id": "entity_nyc_dot_2012_11_webster",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot already matches the existing canonical registry record entity_nyc-dot (New York City Department of Transportation, agency, acronym NYC DOT). The observation resolves to its own base_record_id; no different target record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4",
+            "block_id": "p028_c0004",
+            "source_quote": "New York City Department of Transportation"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-04-53-326Z_2111393-ba3e4069_canonicalize_2026-06-10t23-05-54-642z-1976810-59962f5c-ingest-2012-11-sbs-webster-cac4-entity-identity"
+}

@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T22-56-13-371Z_1976810-f11382ba_ingest_201109-nostrand-cb9-slides",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T01:45:28.985Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "nos201109-nostrand-rogers-sbs",
+        "local_observation_id": "project_nostrand_rogers_sbs_201109",
+        "decision": "new",
+        "rationale": "Observation source 201109_nostrand_cb9_slides is already in project_nostrand-rogers-sbs source_ids; base_record_id matches, project name matches Nostrand Ave / Rogers Ave SBS, corridor matches Williamsburg Bridge to Sheepshead Bay. Per rules, the closest match is the observation's own base_record_id, so link is not applicable — this is a new decision confirming the observation already resolves to its base record.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_nostrand_cb9_slides",
+            "block_id": "p001_c0004",
+            "source_quote": "Nostrand Avenue / Rogers Avenue Select Bus Service Presentation to Community Board 9"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-44-43-789Z_2111393-d2e4dbb2_canonicalize_2026-06-10t22-56-13-371z-1976810-f11382ba-ingest-201109-nostrand-cb9-slides-project-identity"
+}

@@ -1,0 +1,106 @@
+{
+  "run_id": "2026-06-10T23-03-20-805Z_1976810-5b1cc97e_ingest_2012-09-19-125th-st-sbs-public-workshop-summary",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T02:49:18.943Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "d-m100-new",
+        "local_observation_id": "route_125th_st_m100",
+        "decision": "new",
+        "rationale": "Observation already resolves to route_m100-ace (M100 local Manhattan). Same base_record_id is the closest match; no other M100 record exists in registry.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_19_125th_st_sbs_public_workshop_summary",
+            "block_id": "p004_c0009",
+            "source_quote": "M100 and M101 buses operate rather infrequently."
+          }
+        ]
+      },
+      {
+        "decision_id": "d-m101-new",
+        "local_observation_id": "route_125th_st_m101",
+        "decision": "new",
+        "rationale": "Observation already resolves to route_m101 (M101 local Manhattan). Same base_record_id is the closest match; no other M101 record exists in registry.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_19_125th_st_sbs_public_workshop_summary",
+            "block_id": "p004_c0009",
+            "source_quote": "M100 and M101 buses operate rather infrequently."
+          }
+        ]
+      },
+      {
+        "decision_id": "d-m2-new",
+        "local_observation_id": "route_125th_st_m2",
+        "decision": "new",
+        "rationale": "Observation already resolves to route_m2-ace (M2 local Manhattan). Same base_record_id is the closest match; no other M2 record exists in registry.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_19_125th_st_sbs_public_workshop_summary",
+            "block_id": "p005_c0004",
+            "source_quote": "Slow boarding/disembarking of disabled/wheelchair and elderly passengers delay buses at stops (particularly a problem on the M2 around Adam Clayton Powell Boulevard)."
+          }
+        ]
+      },
+      {
+        "decision_id": "d-m60-new",
+        "local_observation_id": "route_125th_st_m60",
+        "decision": "new",
+        "rationale": "Observation already resolves to route_125th-st-m60 (M60 local Manhattan). route_125th-laguardia-sbs is M60-SBS, a different service variant (SBS vs local); per do_not_merge_pairs principle different variants never merge. Base record is the correct local M60 identity.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_19_125th_st_sbs_public_workshop_summary",
+            "block_id": "p004_c0009",
+            "source_quote": "Bus bunching is an issue. It occurs often on the M60 (during the AM peak period)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d-m103-new",
+        "local_observation_id": "route_125th_st_m103",
+        "decision": "new",
+        "rationale": "Observation already resolves to route_m103-segment-speed (M103 Local Manhattan). Same base_record_id is the closest match; no other M103 record exists in registry.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_19_125th_st_sbs_public_workshop_summary",
+            "block_id": "p004_c0009",
+            "source_quote": "The M103 duplicates route of other buses on 125th Street and contributes to the congestions."
+          }
+        ]
+      },
+      {
+        "decision_id": "d-m35-new",
+        "local_observation_id": "route_125th_st_m35",
+        "decision": "new",
+        "rationale": "Observation already resolves to route_125th-st-m35 (M35 local Manhattan). Same base_record_id is the closest match; no other M35 record exists in registry.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_19_125th_st_sbs_public_workshop_summary",
+            "block_id": "p005_c0004",
+            "source_quote": "Disorderly conduct and slow movement of passengers boarding and disembarking the bus (cited on the M35)."
+          }
+        ]
+      },
+      {
+        "decision_id": "d-m15-new",
+        "local_observation_id": "route_125th_st_m15",
+        "decision": "new",
+        "rationale": "Observation already resolves to route_125th-st-m15 (M15 local Manhattan). Other M15 records (route_m15-sbs, route_m15-limited-2010-06-09, route_m15-local-2010-09-14, route_m15-local-limited) are different service variants separated by do_not_merge_pairs. Base record is correct local M15 identity.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_09_19_125th_st_sbs_public_workshop_summary",
+            "block_id": "p005_c0004",
+            "source_quote": "Connecting to bus routes operating on 125th Street from the M15 is an inconvenience."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-48-16-632Z_2111393-e9d9ed52_canonicalize_2026-06-10t23-03-20-805z-1976810-5b1cc97e-ingest-2012-09-19-125th-st-sbs-public-workshop-summary-route-identity"
+}

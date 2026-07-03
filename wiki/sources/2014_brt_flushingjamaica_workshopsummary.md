@@ -1,0 +1,154 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_2014-brt-flushingjamaica-workshopsummary"
+record_kind: "source"
+display_name: "Flushing to Jamaica Select Bus Service Workshop Summary"
+source_id: "2014_brt_flushingjamaica_workshopsummary"
+source_ids:
+  - "2014_brt_flushingjamaica_workshopsummary"
+local_observation_id: "source_2014_brt_flushingjamaica_workshopsummary"
+local_observation_ids:
+  - "source_2014_brt_flushingjamaica_workshopsummary"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T17:54:48.158Z"
+raw_text: "Flushing to Jamaica Select Bus Service Workshop Summary | September 30 and October 7, 2014"
+submission_ids:
+  - "sub_1a0af9b69eede844"
+payload:
+  content_type: "workshop summary"
+  date_text: "September 30 and October 7, 2014"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2014-10-07"
+    precision: "day"
+    raw_text: "September 30 and October 7, 2014"
+  description: "Workshop summary gathering initial feedback from community members on two corridors being considered for Select Bus Service between Downtown Flushing and Jamaica—Main Street and Kissena/Parsons Boulevards."
+  published_date_normalized: "2014-10-07"
+  published_date_precision: "day"
+  publisher: "NYC Department of Transportation and MTA"
+  title: "Flushing to Jamaica Select Bus Service Workshop Summary"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "2014_brt_flushingjamaica_workshopsummary#p001_c0001"
+    page_number: 1
+    source_id: "2014_brt_flushingjamaica_workshopsummary"
+    source_path: "raw/sources/2014_brt_flushingjamaica_workshopsummary/blocks.jsonl"
+    source_quote: "Flushing to Jamaica Select Bus Service"
+    text_sha256: "sha256:80b90bc6ac3c7b6e0bc507e52a890c2d04fe0352cf5744943970176023e93710"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "2014_brt_flushingjamaica_workshopsummary#p001_c0002"
+    page_number: 1
+    source_id: "2014_brt_flushingjamaica_workshopsummary"
+    source_path: "raw/sources/2014_brt_flushingjamaica_workshopsummary/blocks.jsonl"
+    source_quote: "Workshop Summary | September 30 and October 7, 2014"
+    text_sha256: "sha256:494d0a86da9b954ceb1cf873c80841a7ce167528673566ef59f12b6eca3ee44d"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0001"
+    evidence_id: "2014_brt_flushingjamaica_workshopsummary#p002_c0001"
+    page_number: 2
+    source_id: "2014_brt_flushingjamaica_workshopsummary"
+    source_path: "raw/sources/2014_brt_flushingjamaica_workshopsummary/blocks.jsonl"
+    source_quote: "The New York City Department of Transportation (DOT) and the Metropolitan Transportation Authority (MTA) kicked off the public outreach process"
+    text_sha256: "sha256:ba2221ce1189b1a849eddafc512f29fa28cfcc6e3eb41bcaffbc5bbea171a1a9"
+    text_source: "raw_text"
+---
+
+# Download the workshop summary (pdf)
+
+source_id: 2014_brt_flushingjamaica_workshopsummary
+citation: cite block ids exactly as shown in square brackets
+document: 74 block(s)
+
+## Page 1
+
+### [p001_c0001] Flushing to Jamaica Select Bus Service
+[p001_c0002] Workshop Summary | September 30 and October 7, 2014
+[p001_c0003] _+selectbusservice Flushing to Jamaica_
+
+## Page 2
+
+[p002_c0001] The New York City Department of Transportation (DOT) and the Metropolitan Transportation Authority (MTA) kicked off the public outreach process for the Flushing to Jamaica Select Bus Service (SBS) project to gather initial feedback from community members on the two corridors being considered for Select Bus Service between Downtown Flushing and Jamaica—Main Street and Kissena/Parsons Boulevards.
+[p002_c0002] Two public workshops were held, one at York College in Downtown Jamaica and one at PS244 in Downtown Flushing. These workshops brought together 42 residents, bus riders, community board members, transit advocates, and elected official representatives to learn about the SBS program and to share their experiences as bus riders, drivers, and pedestrians traveling in and between Flushing and Jamaica.
+[p002_c0003] Each workshop consisted of three parts: 1) a presentation about Select Bus Service and related transit initiatives; 2) two mapping exercises: one used to discuss travel patterns between Flushing and Jamaica and the other to discuss localized transit, pedestrian, bike, and general safety concerns in the downtown cores; and 3) questions and answers.
+### [p002_c0004] 1) Select Bus Service Presentation
+[p002_c0005] DOT and MTA staff began the workshop with a presentation, providing an overview of Select Bus Service, preliminary data and analysis showing a snapshot of the existing conditions along the corridor, and information about related transit initiatives.
+### [p002_c0006] An overview of Select Bus Service
+[p002_c0007] Select Bus Service is New York City's version of Bus Rapid Transit: an improved bus service that offers fast, frequent, and reliable service on high-ridership bus routes. Select Bus Service brings quick and cost-effective improvements to New York City's transit network, benefiting the entire city through improved mobility, cleaner air, reduced greenhouse gas emissions, and reduced congestion.
+[p002_c0008] Designed to provide rail-like service, Select Bus Service uses techniques and technologies such as dedicated bus lanes, off-board fare collection and transit signal priority to improve the quality and performance of transit and, in turn, to improve mobility and access in the neighborhoods that it serves. SBS projects are designed to make bus service easier to use, through features like bus bulbs, high quality passenger information, and overall attention to pedestrian and vehicular safety.
+### [p002_c0009] Flushing to Jamaica Select Bus Service
+[p002_c0010] The New York City Bus Rapid Transit Phase I (2006) and Phase II (2009) studies identified Main Street and Kissena/Parsons Boulevards between Flushing and Jamaica as corridors that could support and greatly benefit from Select Bus Service. Bus trips on the Q20A/B and Q44LTD on Main Street and the Q25 LTD and Q34 on Kissena/Parsons Boulevards were characterized by the community as being very long and slow, a hindrance for the 68,000 daily riders that use these four bus lines.
+[p002_c0011] _Current Corridor Ridership_
+> [p002_c0012] Bus Line Ridership Percentage Q25 19,324 28% Q34 7,054 8% Q20 13,609 20% Q44 28,689 42%
+[p002_c0013] Notably, the limited service that runs on Main Street and Kissena/Parsons Boulevards, the Q44LTD and Q25LTD, are delayed during AM and PM peak periods nearly 50% of their travel time. In both cases, the majority of the delays (29%) can be attributed to the buses being stuck in traffic or at red lights. While both corridors face congestion throughout with overall bus speeds averaging less than 10mph, particular hot spots of congestion showed up in the data analysis. These hot spots include: Main Street in Downtown Flushing, Sutphin Blvd, Parsons Blvd, and Hillside Av.
+[p002_c0014] In addition to congestion hot spots, the data analysis revealed several prime locations where safety is a considerable concern. Crash data pinpointed locations along the route where bike and pedestrian crashes occurred between 2008 and 2012, the top six locations being: Roosevelt Av, Archer Av, Jamaica Av, Hillside Av, Sanford Av, and Union Turnpike.
+[p002_c0015] _+selectbusservice Flushing to Jamaica_
+
+## Page 3
+
+[p003_c0001] Through the planning process for Flushing to Jamaica Select Bus Service, the DOT and MTA will continue to collect and analyze data to understand traffic patterns, evaluate street and service design along the entirety of the corridors, including College Point and the Bronx, and gather feedback from the community to select the corridor(s) for SBS implementation.
+### [p003_c0002] Related Initiatives
+[p003_c0003] In addition to Select Bus Service, DOT is working on a traffic control system known as “Flushing in Motion” which will enable traffic signals to be adjusted in response to real-time traffic congestion monitoring. A similar system, “Midtown in Motion,” is used in midtown Manhattan and has led to a 10% travel time reduction in the area.
+> [p003_c0004] A photograph of a modern control room. Two people are seated at a long desk in the foreground, looking at multiple computer monitors. The wall behind them is covered with a large array of smaller monitors displaying various traffic maps, real-time data, and surveillance feeds. A sign on the wall reads 'NEW YORK CITY'.
+[p003_c0005] Additionally, to address pedestrian crowding on the streets of Downtown Flushing, the Department of Design and Construction has begun its detailed design process for a capital project which will widen the sidewalks on Main Street between 38th Av and 41st Av.
+[p003_c0006] Download the presentation (pdf).
+### [p003_c0007] 2) Breakout Session: Travel Patterns
+[p003_c0008] Following the presentation, attendees gathered in small groups where they discussed how they travel between the two downtown areas and their experiences as pedestrians, bus riders, bikers, and drivers. Participants were asked to note some of their frequent travels on a map, using different color stickers to identify which mode of travel they used: bus, subway, railroad, car, bike, or foot. Participants used a mix of all modes of travel and many used more than one mode per trip. Discussions about participant's travel experiences revolved around four main topics:
+- [p003_c0009] 1) Inter-borough service between Queens and Bronx 2) Crowding during school start and end times 3) Slow bus service 4) Traffic congestion
+[p003_c0010] The following are some of the comments shared related to each topic:
+### [p003_c0011] Inter-borough service between Queens and Bronx
+- [p003_c0012] • Q44 is vital link between Queens and the Bronx • It is faster to take the bus than to take subway to Flushing or Bronx • There should be more buses connecting Queens and the Bronx as right now only the Q44 and Q50 connect the two boroughs
+### [p003_c0013] School-hour crowding
+- [p003_c0014] • School-aged children crowd the Q44, impacting the decision to take bus, especially during after school rush • The school rush makes buses too packed, even the longer articulated buses • Bus bunching is mainly a problem during school start and end times • Need more buses during school start and end times
+### [p003_c0015] Slow bus service
+- [p003_c0016] • Q76 is faster than Q44 from Jamaica to Flushing sometimes because it hits less traffic • The Q44 bus stops are too close together • Q25 between Flushing and Queens College encounters heavy congestion from Sanford Avenue into downtown Flushing • Buses get very congested at the LIE crossing going in and out of Flushing • People race to buses because they are so crowded
+> [p003_c0017] A photograph of a breakout session in a meeting room. Several people are seated around small tables, engaged in discussion. Some are looking at papers, while others are listening. The room has a casual, collaborative atmosphere.
+[p003_c0018] _+selectbusservice Flushing to Jamaica_
+
+## Page 4
+
+- [p004_c0001] • Walking is more efficient than trying to take a bus from Main Street to Skyview Mall • Buses to Queens College are very slow due to congestion and there are many choke-points
+### [p004_c0002] Traffic congestion
+- [p004_c0003] • Major consideration when deciding whether to drive is traffic on bridge and gas money • Parking in Jamaica is not too hard • Driving on Jamaica Av used to be hard because the road was in very bad condition (too many potholes), but it is better now • Double parking is an issue on Kissena Boulevard and Main Street, especially near the botanical garden and hospital • Major congestion along Northern Blvd • Main street has heavy traffic and is too crowded • Heading into Flushing, traffic backs up around Franklin Av
+### [p004_c0004] Breakout Session: Downtown Activity and Safety
+[p004_c0005] The second part of the breakout session focused on the two downtown areas and the ways participants move within and through them. Participants shared their experiences as pedestrians, transit users, cyclists, and drivers and noted specific locations of concerns on maps of Downtown Jamaica and Downtown Flushing. Participants were asked to consider three main categories:
+### [p004_c0006] Traffic
+- [p004_c0007] • Heavy traffic • Cars/buses blocking the intersection • Double-parking
+### [p004_c0008] Transit
+- [p004_c0009] • Poor reliability (delays in the bus reaching the bus stop) • Bus not pulling all the way to the curb (trouble boarding) • Bus bunching (multiple of the same bus coming at once) • Difficulty boarding for persons with disabilities/ elderly
+### [p004_c0010] Safety
+- [p004_c0011] • Difficulty crossing the street • Poor driving / pedestrian / bike behavior • Difficult/unsafe bike conditions • Overcrowded sidewalks
+[p004_c0012] The feedback given during this exercise centered largely on three topics, pedestrian activity and safety, bus stop issues, and commuter vans and private buses. Some of the feedback included:
+### [p004_c0013] Pedestrian/cyclist issues
+- [p004_c0014] • Too many people on the sidewalk • Kissena and Main Street crossings are dangerous • Buses crowding to pick-up/drop-off make it difficult to cross the street in Flushing • Bus often stops in the middle of the crosswalk at Parsons and Jamaica • Bus stops near Horace Harding Expressway are dangerous for pedestrians to get to and for those who are waiting • Traffic moves too fast along Parsons Blvd and sidewalks are not wide enough • Frequent pedestrian/motorist turning conflicts • Archer Avenue and Sutphin Boulevard are very dangerous for drivers and should be considered for a road redesign • Sutphin Blvd can be congested especially during lunch rush hour when many people are on the street • Lots of college students ride bikes to campus, but Kissena Boulevard is very dangerous for bikes
+[p004_c0015] _+selectbusservice Flushing to Jamaica_
+
+## Page 5
+
+### [p005_c0001] Bus stop issues
+- [p005_c0002] • Long bus lines in Flushing, people fear they won't make the bus • Often have to walk long distances because there is not enough room on the bus to board at preferred/closest stop • Signs at bus stops in Downtown Jamaica are old and in bad shape/not clear • Congestion is caused by too many buses terminating and turning around in Jamaica • There are too many buses picking-up/ dropping-off at same bus stop • Buses double park and you have to walk into the street to board
+### [p005_c0003] Commuter vans and private buses
+- [p005_c0004] • Commuter vans lead to congestion on Parsons between Jamaica and Archer • Commuter vans act illegally, often speeding and driving dangerously • In some cases the commuter vans are helpful, mostly at night, because they can be tracked down before a bus comes • There are a lot of private buses in Flushing that operate to Chinatown in Manhattan and Sunset Park in Brooklyn • Queens College Flushing started their own bus route which is a source of congestion
+### [p005_c0005] 3) Question/Answers
+[p005_c0006] Following the breakout sessions, all participants reconvened for a recap of the discussions that took place throughout the night and to ask questions:
+### [p005_c0007] How is road capacity being studied and how valid is the analysis to this project?
+[p005_c0008] DOT prepares a full traffic analysis for every Select Bus Service project, and always seeks to balance existing and projected traffic volumes with any street design changes.
+### [p005_c0009] Who will maintain streetscape improvements tied to SBS stations?
+[p005_c0010] DOT works to build partnerships with local communities and organizations for any streetscape improvements that require regular maintenance.
+### [p005_c0011] How does proof of payment work?
+[p005_c0012] The base cost of riding a Select Bus Service bus is $2.50, the same as riding the subway or the local or limited-stop bus. Select Bus Service is faster and more reliable than local and limited-stop buses in part
+[p005_c0013] because of off-board fare payment on most routes.
+[p005_c0014] Upon paying the fare, customers will be issued a proof-of-payment ticket from the fare collection vending machine, which they must keep for the entire length of their trip. At random, MTA fare inspectors request to view proof of payment tickets. Tickets are valid for one hour from the time of purchase on the same Select Bus Service line, and in the same direction, for which it was purchased.
+[p005_c0015] Anyone who does not have a valid receipt will be issued a fare evasion summons by the fare inspector.
+### [p005_c0016] Is there a time frame for completion of the Flushing traffic signal control improvements?
+[p005_c0017] The traffic signal control upgrades are under development and will likely be implemented in Summer 2015.
+### [p005_c0018] What's next?
+[p005_c0019] The DOT and MTA will use the feedback gathered at the public workshops to help inform a decision for which corridor(s), Main Street and/or Kissena/Parsons Boulevards, will be chosen as future Select Bus Service routes. The project team will continue to collect and analyze relevant data and begin initial planning for the route(s). The project team will share information with the community at future workshops and presentations.
+> [p005_c0020] A photograph showing a group of approximately ten people seated around a long table in a workshop or meeting room. They appear to be engaged in a discussion or presentation. One man in a white shirt and tie is standing at the head of the table, gesturing while speaking. The others are listening attentively, some with their hands clasped or resting on the table. The room has light-colored walls and fluorescent lighting.
+### [p005_c0021] Stay in touch!
+[p005_c0022] For more information, please visit us at www.nyc.gov/brt or contact Krystin Hence, NYCDOT Outreach Coordinator, at brt@nyc.dot.com or (212) 839-6684.
+[p005_c0023] _+selectbusservice Flushing to Jamaica_

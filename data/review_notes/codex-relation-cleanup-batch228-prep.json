@@ -1,0 +1,62 @@
+{
+  "note_id": "codex-relation-cleanup-batch228-prep",
+  "created_at": "2026-06-23T16:38:00Z",
+  "author": "codex",
+  "kind": "relation_endpoint_shape_cleanup_prep",
+  "status": "applied_pending_generated_checkpoint",
+  "scope": "Current validate unexpected_relation_endpoint_shape rows after wave34 checkpoint.",
+  "mutation_mechanism": "Retire malformed accepted submissions in data/submission-overrides/retired.json and append corrected accepted submissions to data/submissions/2026-06-23_codex_relation_cleanup_batch228.jsonl; no generated canonical JSONL hand edits.",
+  "retired_submission_ids": [
+    "sub_99058a3d97857160",
+    "sub_2efe85667d701032",
+    "sub_43dff2957deac7b0",
+    "sub_bdc6d70f631896a5",
+    "sub_37ae717ca7ac214d",
+    "sub_4c4a1b1e5951045c"
+  ],
+  "replacement_journal": "data/submissions/2026-06-23_codex_relation_cleanup_batch228.jsonl",
+  "replacement_count": 32,
+  "decisions": [
+    {
+      "decision_id": "relation228-farebox-has-metric",
+      "action": "retire_and_replace",
+      "confidence": "high",
+      "old_relation_ids": [
+        "relation_lirr-farebox-metrics_2",
+        "relation_mnr-farebox-metrics",
+        "relation_mtabus-farebox-metrics",
+        "relation_nyct-farebox-metrics",
+        "relation_sir-farebox-metrics_2"
+      ],
+      "reason": "The malformed relations used has_metric from agency entity to source. The same source already has per-agency metric_claim records for recovery and operating ratios, so batch228 replaces each aggregate entity->source relation with six entity->metric_claim relations.",
+      "evidence": [
+        "meeting_doc_196971#p001_b0013",
+        "meeting_doc_196971#p001_b0014",
+        "meeting_doc_196971#p001_b0015",
+        "meeting_doc_196971#p001_b0016",
+        "meeting_doc_196971#p001_b0017",
+        "meeting_doc_196971#p001_b0024",
+        "meeting_doc_196971#p001_b0025",
+        "meeting_doc_196971#p001_b0026",
+        "meeting_doc_196971#p001_b0027",
+        "meeting_doc_196971#p001_b0028"
+      ]
+    },
+    {
+      "decision_id": "relation228-fuel-hedge-implemented-by",
+      "action": "retire_and_replace",
+      "confidence": "high",
+      "old_relation_id": "relation_meeting-doc-127596-mta-implements-hedge",
+      "reason": "The malformed implemented_by relation pointed project->project. Batch228 adds a local MTA entity observation for the same source and replaces it with project->entity implemented_by.",
+      "evidence": [
+        "meeting_doc_127596#p001_b0033",
+        "meeting_doc_127596#p001_b0008"
+      ]
+    }
+  ],
+  "verification": {
+    "json_parse": "jq empty data/submission-overrides/retired.json and per-line jq over batch228 journal: ok",
+    "submit_input_validation": "bun --eval validateSubmitInput over data/submissions/2026-06-23_codex_relation_cleanup_batch228.jsonl: ok",
+    "generated_checkpoint": "pending until wave36 generated-output lane is clear"
+  }
+}

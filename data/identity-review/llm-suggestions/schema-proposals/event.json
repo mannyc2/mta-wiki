@@ -1,0 +1,658 @@
+{
+  "schema_proposal_run_id": "2026-06-08T23-52-42-494Z_schema-proposal-run",
+  "proposed_at": "2026-06-08T23:54:48.543Z",
+  "observation_kind": "event",
+  "profile_name": "deepseek-pro",
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "audit_packet": {
+    "observation_kind": "event",
+    "submission_count": 207,
+    "accepted_count": 200,
+    "rejected_count": 7,
+    "declared_anchor_fields": [
+      "date",
+      "date_text",
+      "description",
+      "event_date",
+      "event_kind"
+    ],
+    "enum_candidates": [
+      {
+        "field": "details",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "16 agents deployed",
+          "55 agents deployed"
+        ],
+        "accepted_values": [
+          "16 agents deployed",
+          "55 agents deployed"
+        ],
+        "canonical_values_observed": [
+          "16 agents deployed",
+          "55 agents deployed"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      }
+    ],
+    "additional_keys": [
+      {
+        "field": "affected_boroughs",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Manhattan",
+          "Queens"
+        ],
+        "accepted_sample_values": [
+          "Manhattan",
+          "Queens"
+        ],
+        "canonical_sample_values": [
+          "Manhattan",
+          "Queens"
+        ]
+      },
+      {
+        "field": "affected_routes",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "E",
+          "F",
+          "M",
+          "R"
+        ],
+        "accepted_sample_values": [
+          "E",
+          "F",
+          "M",
+          "R"
+        ],
+        "canonical_sample_values": [
+          "E",
+          "F",
+          "M",
+          "R"
+        ]
+      },
+      {
+        "field": "affected_stations",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "date_normalized",
+        "occurrences": 30,
+        "accepted_occurrences": 30,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 30,
+        "coverage": 0.14,
+        "accepted_coverage": 0.15,
+        "canonical_coverage": 0.15,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "date_text_normalized",
+        "occurrences": 190,
+        "accepted_occurrences": 185,
+        "rejected_occurrences": 5,
+        "canonical_occurrences": 185,
+        "coverage": 0.92,
+        "accepted_coverage": 0.93,
+        "canonical_coverage": 0.93,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "end_date_text",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "April 27, 2020"
+        ],
+        "accepted_sample_values": [
+          "April 27, 2020"
+        ],
+        "canonical_sample_values": [
+          "April 27, 2020"
+        ]
+      },
+      {
+        "field": "end_date_text_normalized",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "event_date_normalized",
+        "occurrences": 26,
+        "accepted_occurrences": 26,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 26,
+        "coverage": 0.13,
+        "accepted_coverage": 0.13,
+        "canonical_coverage": 0.13,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "event_family",
+        "occurrences": 0,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 200,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 1,
+        "value_kind": "empty",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": [
+          "launch",
+          "public_engagement",
+          "implementation",
+          "milestone",
+          "publication",
+          "construction",
+          "data_release",
+          "enforcement"
+        ]
+      },
+      {
+        "field": "event_name",
+        "occurrences": 13,
+        "accepted_occurrences": 12,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 12,
+        "coverage": 0.06,
+        "accepted_coverage": 0.06,
+        "canonical_coverage": 0.06,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Budget Press Tour",
+          "168th St/Jamaica Interim Bus Terminal Opens",
+          "CUNY Macaulay Honors College Datathon",
+          "Customer Ambassador Program Start",
+          "GTFS real-time Service Alerts dataset release",
+          "MTA Open Data Challenge",
+          "Open Data Steering Committee creation",
+          "Operating Budget open data release"
+        ],
+        "accepted_sample_values": [
+          "168th St/Jamaica Interim Bus Terminal Opens",
+          "Budget Press Tour",
+          "CUNY Macaulay Honors College Datathon",
+          "Customer Ambassador Program Start",
+          "GTFS real-time Service Alerts dataset release",
+          "MTA Open Data Challenge",
+          "Open Data Steering Committee creation",
+          "Operating Budget open data release"
+        ],
+        "canonical_sample_values": [
+          "168th St/Jamaica Interim Bus Terminal Opens",
+          "Budget Press Tour",
+          "CUNY Macaulay Honors College Datathon",
+          "Customer Ambassador Program Start",
+          "GTFS real-time Service Alerts dataset release",
+          "MTA Open Data Challenge",
+          "Open Data Steering Committee creation",
+          "Operating Budget open data release"
+        ]
+      },
+      {
+        "field": "location",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Washington, DC"
+        ],
+        "accepted_sample_values": [
+          "Washington, DC"
+        ],
+        "canonical_sample_values": [
+          "Washington, DC"
+        ]
+      },
+      {
+        "field": "location_normalized",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "month",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "organizers",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "MTA",
+          "NYC DOT"
+        ],
+        "accepted_sample_values": [
+          "MTA",
+          "NYC DOT"
+        ],
+        "canonical_sample_values": [
+          "MTA",
+          "NYC DOT"
+        ]
+      },
+      {
+        "field": "participants",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "CM De La Rosa's office",
+          "NYC DOT",
+          "WHBID"
+        ],
+        "accepted_sample_values": [
+          "CM De La Rosa's office",
+          "NYC DOT",
+          "WHBID"
+        ],
+        "canonical_sample_values": [
+          "CM De La Rosa's office",
+          "NYC DOT",
+          "WHBID"
+        ]
+      },
+      {
+        "field": "riders_affected",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "start_date_text",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "April 2019"
+        ],
+        "accepted_sample_values": [
+          "April 2019"
+        ],
+        "canonical_sample_values": [
+          "April 2019"
+        ]
+      },
+      {
+        "field": "start_date_text_normalized",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "stations_affected",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Atlantic Av-Barclays Ctr (2345)",
+          "W 4 St-Wash Sq (ACEBDFM)"
+        ],
+        "accepted_sample_values": [
+          "Atlantic Av-Barclays Ctr (2345)",
+          "W 4 St-Wash Sq (ACEBDFM)"
+        ],
+        "canonical_sample_values": [
+          "Atlantic Av-Barclays Ctr (2345)",
+          "W 4 St-Wash Sq (ACEBDFM)"
+        ]
+      },
+      {
+        "field": "year",
+        "occurrences": 23,
+        "accepted_occurrences": 22,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 22,
+        "coverage": 0.11,
+        "accepted_coverage": 0.11,
+        "canonical_coverage": 0.11,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      }
+    ]
+  },
+  "closure_policy": "deferred",
+  "closure_signals": [
+    {
+      "field": "details",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0.01
+    }
+  ],
+  "valid": true,
+  "schema_issues": [],
+  "warnings": [],
+  "proposal": {
+    "observation_kind": "event",
+    "field_proposals": [
+      {
+        "field": "details",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": null
+        },
+        "rationale": "Contains free-text descriptions of agent deployment numbers; not an enumerable category."
+      }
+    ],
+    "key_dispositions": [
+      {
+        "key": "affected_boroughs",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Only one observation; too sparse to determine if enum or relation context."
+      },
+      {
+        "key": "affected_routes",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence; insufficient data to support enumeration or relation context decision."
+      },
+      {
+        "key": "affected_stations",
+        "disposition": "promote_field",
+        "target": "affected_stations",
+        "rationale": "Numeric count of affected stations, useful as a metric."
+      },
+      {
+        "key": "date_normalized",
+        "disposition": "promote_field",
+        "target": "date_normalized",
+        "rationale": "Structured normalized date object."
+      },
+      {
+        "key": "date_text_normalized",
+        "disposition": "promote_field",
+        "target": "date_text_normalized",
+        "rationale": "Structured normalized text date object, high coverage (0.93)."
+      },
+      {
+        "key": "end_date_text",
+        "disposition": "promote_field",
+        "target": "end_date_text",
+        "rationale": "Free-text end date string."
+      },
+      {
+        "key": "end_date_text_normalized",
+        "disposition": "promote_field",
+        "target": "end_date_text_normalized",
+        "rationale": "Structured normalized end date text."
+      },
+      {
+        "key": "event_date_normalized",
+        "disposition": "promote_field",
+        "target": "event_date_normalized",
+        "rationale": "Structured normalized event date object."
+      },
+      {
+        "key": "event_family",
+        "disposition": "promote_enum",
+        "target": "event_family",
+        "rationale": "Derived event classification with 8 observed values, appears to be a stable enum (launch, public_engagement, implementation, etc.)."
+      },
+      {
+        "key": "event_name",
+        "disposition": "promote_field",
+        "target": "event_name",
+        "rationale": "Free-text event name, acts as a human-readable title."
+      },
+      {
+        "key": "location",
+        "disposition": "promote_field",
+        "target": "location",
+        "rationale": "Free-text location description."
+      },
+      {
+        "key": "location_normalized",
+        "disposition": "promote_field",
+        "target": "location_normalized",
+        "rationale": "Structured normalized location object."
+      },
+      {
+        "key": "month",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Redundant with date parsing; use date field instead."
+      },
+      {
+        "key": "organizers",
+        "disposition": "relation_context",
+        "target": "organizers",
+        "rationale": "List of organizing agencies/entities, relation context."
+      },
+      {
+        "key": "participants",
+        "disposition": "relation_context",
+        "target": "participants",
+        "rationale": "List of participants, relation context."
+      },
+      {
+        "key": "riders_affected",
+        "disposition": "promote_field",
+        "target": "riders_affected",
+        "rationale": "Numeric count of affected riders."
+      },
+      {
+        "key": "start_date_text",
+        "disposition": "promote_field",
+        "target": "start_date_text",
+        "rationale": "Free-text start date string."
+      },
+      {
+        "key": "start_date_text_normalized",
+        "disposition": "promote_field",
+        "target": "start_date_text_normalized",
+        "rationale": "Structured normalized start date text."
+      },
+      {
+        "key": "stations_affected",
+        "disposition": "relation_context",
+        "target": "stations_affected",
+        "rationale": "List of station identifiers, relation context."
+      },
+      {
+        "key": "year",
+        "disposition": "drop",
+        "target": null,
+        "rationale": "Redundant with date parsing; use date field instead."
+      }
+    ],
+    "notes": "event_family is a derived canonical field with no direct submissions; enumerates event categories. Date-related normalized fields are structured objects likely generated by a parsing pipeline."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T23-53-51-777Z_3609302-861dcd28_schema-proposal-run_event",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-53-51-777Z_2026-06-08T23-53-51-777Z_3609302-861dcd28_schema-proposal-run_event.jsonl"
+}

@@ -1,0 +1,351 @@
+{
+  "note_id": "codex-canonical-cleanup-2026-06-22-identity-alias-batch-051-prep",
+  "created_at": "2026-06-22T22:20:00Z",
+  "status": "ready_for_conductor_apply",
+  "lane": "identity_cleanup",
+  "batch": "identity-batch051",
+  "context": {
+    "current_checkpoint_from_conductor": {
+      "validation_issues": 1672,
+      "unexpected_relation_endpoint_shape": 77,
+      "duplicate_global_identity": 1595,
+      "identity_batch048": "applied_durably_by_conductor_but_pending_generated-output_checkpoint_behind_wave24",
+      "identity_batch049": "applied_durably_by_conductor_but_pending_generated-output_checkpoint_behind_wave24",
+      "identity_batch050": "applied_durably_by_conductor_but_pending_generated-output_checkpoint_behind_wave24"
+    },
+    "write_scope_used_for_this_task": [
+      "data/review_notes/codex-identity-batch051-prep.json"
+    ],
+    "paths_intentionally_not_edited": [
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json",
+      "data/canonical/",
+      "data/materialized/",
+      "wiki/"
+    ]
+  },
+  "intended_mutation": {
+    "path": "data/identity-overrides/merges.json",
+    "operation": "add_aliases",
+    "aliases": {
+      "entity": {
+        "entity_meeting-doc-131691-rl-controls": "entity_meeting-doc-131566-rl-controls",
+        "entity_meeting-doc-131686-dirad": "entity_meeting-doc-131656-dirad-technologies",
+        "entity_meeting-doc-133236-seon-design": "entity_seon-design-usa-corp",
+        "entity_meeting-doc-133551-web-food": "entity_meeting-doc-133366-web-food-products-inc",
+        "entity_meeting-doc-206081-web-food": "entity_meeting-doc-133366-web-food-products-inc",
+        "entity_web-food-products-inc-meeting-doc-133406": "entity_meeting-doc-133366-web-food-products-inc",
+        "entity_mitsubishi-electric-power-jan2026": "entity_mitsubishi-electric-power-products",
+        "entity_meeting-doc-133551-meppi": "entity_mitsubishi-electric-power-products",
+        "entity_meeting-doc-154986-oas": "entity_oas-meeting-doc-155111",
+        "entity_meeting-doc-129051-lic-northern": "entity_meeting-doc-129081-lic-northern-blvd-owner"
+      }
+    }
+  },
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "all_pass": true,
+    "canonical_records_present": true,
+    "target_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "targets_not_aliases_in_merges_json": true,
+    "targets_not_aliases_in_identity_aliases_table": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 20,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 20,
+    "source_page_blocks_missing": [],
+    "confidence": "high"
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-131691-rl-controls",
+      "target": "entity_meeting-doc-131566-rl-controls",
+      "validator_duplicate_key": "entity_rl-controls-llc",
+      "reason": "Exact vendor identity for RL Controls LLC. Both records identify RL Controls LLC as a proposer/vendor in Bus Camera Security System maintenance procurement context; the target has the richer merged vendor payload.",
+      "evidence_refs": [
+        "meeting_doc_131691#p001_c0010",
+        "meeting_doc_131566#p007_c0010"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_rl-controls-llc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-131686-dirad",
+      "target": "entity_meeting-doc-131656-dirad-technologies",
+      "validator_duplicate_key": "entity_dirad-technologies-inc",
+      "reason": "Exact corporation/vendor identity for DIRAD/DiRAD Technologies, Inc. Both records identify the Contact Center as a Service vendor; capitalization variation is non-substantive.",
+      "evidence_refs": [
+        "meeting_doc_131686#p005_c0010",
+        "meeting_doc_131656#p001_c0003"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_dirad-technologies-inc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-133236-seon-design",
+      "target": "entity_seon-design-usa-corp",
+      "validator_duplicate_key": "entity_seon-design-usa-corporation",
+      "reason": "Exact company/contractor identity for Seon Design (USA) Corporation/Corp. Both records identify the Bus Camera Security System maintenance/support vendor, and the target is the richer long-lived Seon vendor record.",
+      "evidence_refs": [
+        "meeting_doc_133236#p005_c0008",
+        "meeting_doc_105946#p007_c0003"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_seon-design-usa-corporation"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-133551-web-food",
+      "target": "entity_meeting-doc-133366-web-food-products-inc",
+      "validator_duplicate_key": "entity_web-food-products-inc",
+      "reason": "Exact company identity for Web Food Products, Inc. Both records identify the same licensor for MTA Police Department vehicle parking at 143-19 94th Avenue.",
+      "evidence_refs": [
+        "meeting_doc_133551#p046_c0008",
+        "meeting_doc_133366#p001_c0003"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_web-food-products-inc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-206081-web-food",
+      "target": "entity_meeting-doc-133366-web-food-products-inc",
+      "validator_duplicate_key": "entity_web-food-products-inc",
+      "reason": "Exact company identity for Web Food Products, Inc. The alias and target identify the same parking licensor and share the same normalized legal-name identity key.",
+      "evidence_refs": [
+        "meeting_doc_206081#p045_c0008",
+        "meeting_doc_133366#p001_c0003"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_web-food-products-inc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_web-food-products-inc-meeting-doc-133406",
+      "target": "entity_meeting-doc-133366-web-food-products-inc",
+      "validator_duplicate_key": "entity_web-food-products-inc",
+      "reason": "Exact company identity for Web Food Products, Inc. Both records name the same licensor in MTA parking-license context; the target has broader merged evidence.",
+      "evidence_refs": [
+        "meeting_doc_133406#p005_c0008",
+        "meeting_doc_133366#p001_c0003"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_web-food-products-inc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_mitsubishi-electric-power-jan2026",
+      "target": "entity_mitsubishi-electric-power-products",
+      "validator_duplicate_key": "entity_mitsubishi-electric-power-products-inc",
+      "reason": "Exact vendor/company identity for Mitsubishi Electric Power Products, Inc. The alias and target identify the same MEPPI legal entity; the target has the richer manufacturer/vendor payload.",
+      "evidence_refs": [
+        "meeting_doc_197456#p019_c0005",
+        "meeting_doc_133351#p005_c0006"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_mitsubishi-electric-power-products-inc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-133551-meppi",
+      "target": "entity_mitsubishi-electric-power-products",
+      "validator_duplicate_key": "entity_mitsubishi-electric-power-products-inc",
+      "reason": "Exact company identity for Mitsubishi Electric Power Products, Inc. The MEPPI alias record and target share the full legal-name identity key.",
+      "evidence_refs": [
+        "meeting_doc_133551#p027_c0003",
+        "meeting_doc_133351#p005_c0006"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_mitsubishi-electric-power-products-inc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-154986-oas",
+      "target": "entity_oas-meeting-doc-155111",
+      "validator_duplicate_key": "entity_oas-inc",
+      "reason": "Exact vendor/company identity for OAS, Inc. Both records identify OAS, Inc. in paratransit AVLM procurement context, with the target carrying acronym and hardware-provider description.",
+      "evidence_refs": [
+        "meeting_doc_154986#p005_c0006",
+        "meeting_doc_155111#p005_c0006"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_oas-inc"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-129051-lic-northern",
+      "target": "entity_meeting-doc-129081-lic-northern-blvd-owner",
+      "validator_duplicate_key": "entity_lic-northern-blvd-owner-llc",
+      "reason": "Exact LLC identity for LIC Northern Boulevard Owner, LLC. Both records identify the same lessor in the NYCT Northern Boulevard office/warehouse lease context.",
+      "evidence_refs": [
+        "meeting_doc_129051#p001_c0003",
+        "meeting_doc_129081#p046_c0008"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_lic-northern-blvd-owner-llc"
+        ]
+      },
+      "confidence": "high"
+    }
+  ],
+  "deferred_low_confidence_or_scope_review": [
+    "Skipped broad MTA/LIRR/NYCT/agency/committee/program/team/office labels and government-body clusters.",
+    "Skipped person-role clusters such as Donna Mason and Sarah Wyss because nearby prior-batch target churn or role/time ambiguity makes them less ideal for this vendor-focused batch.",
+    "Skipped corporate hierarchy cases where short names could refer to a parent, subsidiary, brand, or exact legal entity without owner review.",
+    "Kept this batch to exact legal/business names with direct source blocks and non-alias targets."
+  ],
+  "commands_run_for_this_prep": [
+    "git status --short -- data/identity-overrides/merges.json data/identity-overrides/do-not-merge.json data/review_notes/codex-identity-batch050-prep.json data/review_notes/codex-identity-batch051-prep.json",
+    "jq '{entity_alias_count:(.aliases.entity|length), batch050_aliases:{\"entity_meeting-doc-206081-beer-table\":.aliases.entity[\"entity_meeting-doc-206081-beer-table\"],\"entity_meeting-doc-133366-birrialandia-corp\":.aliases.entity[\"entity_meeting-doc-133366-birrialandia-corp\"],\"entity_meeting-doc-206081-dover-greens\":.aliases.entity[\"entity_meeting-doc-206081-dover-greens\"],\"entity_meeting-doc-206081-east-harlem-collaborators\":.aliases.entity[\"entity_meeting-doc-206081-east-harlem-collaborators\"],\"entity_meeting157646-ge-grid-solutions\":.aliases.entity[\"entity_meeting157646-ge-grid-solutions\"],\"entity_meeting-doc-155486-ge-grid\":.aliases.entity[\"entity_meeting-doc-155486-ge-grid\"],\"entity_meeting-doc-104796-gjdc\":.aliases.entity[\"entity_meeting-doc-104796-gjdc\"],\"entity_meeting-doc-129081-greater-jamaica-dev\":.aliases.entity[\"entity_meeting-doc-129081-greater-jamaica-dev\"],\"entity_scheidt-bachmann-usa\":.aliases.entity[\"entity_scheidt-bachmann-usa\"],\"entity_meeting-doc-129051-terwilliger-bartone\":.aliases.entity[\"entity_meeting-doc-129051-terwilliger-bartone\"]}}' data/identity-overrides/merges.json",
+    "jq '{entity_do_not_merge_count:(.pairs.entity|length), last_entity_pairs:.pairs.entity[-12:]}' data/identity-overrides/do-not-merge.json",
+    "sqlite3 data/canonical.db \"select count(*) as identity_aliases from identity_aliases; select count(*) as do_not_merge from do_not_merge; pragma quick_check;\"",
+    "bun - <<'EOF' <deterministic DB-backed compact duplicate candidate miner over records, record_aliases, identity_aliases, do_not_merge, do-not-merge.json, and merges.json> EOF",
+    "sqlite3 -json data/canonical.db \"with selected(id) as (values ('entity_meeting-doc-131691-rl-controls'),('entity_meeting-doc-131566-rl-controls'),('entity_meeting-doc-131686-dirad'),('entity_meeting-doc-131656-dirad-technologies'),('entity_meeting-doc-133236-seon-design'),('entity_seon-design-usa-corp'),('entity_meeting-doc-133551-web-food'),('entity_meeting-doc-206081-web-food'),('entity_web-food-products-inc-meeting-doc-133406'),('entity_meeting-doc-133366-web-food-products-inc'),('entity_mitsubishi-electric-power-jan2026'),('entity_meeting-doc-133551-meppi'),('entity_mitsubishi-electric-power-products'),('entity_meeting-doc-154986-oas'),('entity_oas-meeting-doc-155111'),('entity_meeting-doc-129051-lic-northern'),('entity_meeting-doc-129081-lic-northern-blvd-owner')) select r.record_id,r.display_name,json(r.payload) as payload,(select json_group_array(source_id||'#'||block_id) from evidence_refs er where er.record_id=r.record_id) as refs,(select json_group_array(alias) from record_aliases ra where ra.record_id=r.record_id) as identity_keys from records r join selected s on s.id=r.record_id order by r.record_id;\"",
+    "for ref in meeting_doc_131691#p001_c0010 meeting_doc_131566#p007_c0010 meeting_doc_131686#p005_c0010 meeting_doc_131656#p001_c0003 meeting_doc_133236#p005_c0008 meeting_doc_105946#p007_c0003 meeting_doc_133551#p046_c0008 meeting_doc_133366#p001_c0003 meeting_doc_206081#p045_c0008 meeting_doc_133366#p001_c0003 meeting_doc_133406#p005_c0008 meeting_doc_133366#p001_c0003 meeting_doc_197456#p019_c0005 meeting_doc_133351#p005_c0006 meeting_doc_133551#p027_c0003 meeting_doc_133351#p005_c0006 meeting_doc_154986#p005_c0006 meeting_doc_155111#p005_c0006 meeting_doc_129051#p001_c0003 meeting_doc_129081#p046_c0008; do src=${ref%%#*}; block=${ref#*#}; printf '%s\\\\t' \"$ref\"; jq -r --arg block \"$block\" 'select(.block_id==$block) | ((.text // .content // .raw_text // \"\") | gsub(\"[\\\\r\\\\n]+\"; \" \") | .[0:260])' \"raw/sources/$src/blocks.jsonl\"; done",
+    "jq -r 'select(.block_id==\"p001_c0003\") | .raw_text' raw/sources/meeting_doc_131656/blocks.jsonl | rg -i 'DiRAD|DIRAD|Technologies'",
+    "jq -r 'select(.block_id==\"p001_c0003\") | .raw_text' raw/sources/meeting_doc_133366/blocks.jsonl | rg -i 'Web Food Products'",
+    "jq -r 'select(.block_id==\"p001_c0003\") | .raw_text' raw/sources/meeting_doc_129051/blocks.jsonl | rg -i 'LIC Northern Boulevard Owner'",
+    "bun - <<'EOF' <deterministic final exact guard script for all intended batch051 aliases: canonical record presence, aliases not already in merges or identity_aliases, targets not aliases, do-not-merge hits, shared identity keys, raw blocks, and source-page blocks> EOF"
+  ],
+  "commands_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts export-jsonl --verify",
+    "bun packages/cli/src/cli.ts validate",
+    "canonicalize/dedup/identity-review/write/ask/schema/ontology-normalize provider-backed or post-ingest commands",
+    "full materialize/export/full validate"
+  ],
+  "conductor_apply_note": "This prep artifact intentionally does not edit data/identity-overrides/merges.json or generated outputs. Re-run the deterministic guards immediately before conductor application because batches048-050 are applied durably but still pending generated-output checkpoint behind wave24."
+}

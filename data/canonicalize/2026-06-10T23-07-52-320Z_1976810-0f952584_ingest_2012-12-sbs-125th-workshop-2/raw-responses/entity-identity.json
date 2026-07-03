@@ -1,0 +1,41 @@
+{
+  "run_id": "2026-06-10T23-07-52-320Z_1976810-0f952584_ingest_2012-12-sbs-125th-workshop-2",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T03:10:54.015Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1-nyct-125th-workshop",
+        "local_observation_id": "entity_nyct_2012_12_125th_workshop_2",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_mta-nyct, which matches the canonical registry record for MTA New York City Transit (entity_type: agency, acronym: NYCT). The closest match is the observation's own base_record_id, so this is new (not link).",
+        "evidence_refs": [
+          {
+            "source_id": "2012_12_sbs_125th_workshop_2",
+            "block_id": "p001_c0003",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "d2-nycdot-125th-workshop",
+        "local_observation_id": "entity_nyc_dot_2012_12_125th_workshop_2",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_nyc-dot, which matches the canonical registry record for New York City Department of Transportation (entity_type: agency, acronym: NYC DOT). The closest match is the observation's own base_record_id, so this is new (not link).",
+        "evidence_refs": [
+          {
+            "source_id": "2012_12_sbs_125th_workshop_2",
+            "block_id": "p002_c0012",
+            "source_quote": ""
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-10-17-201Z_2111393-7c761437_canonicalize_2026-06-10t23-07-52-320z-1976810-0f952584-ingest-2012-12-sbs-125th-workshop-2-entity-identity"
+}

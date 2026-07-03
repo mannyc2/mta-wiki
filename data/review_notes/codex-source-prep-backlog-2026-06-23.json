@@ -1,0 +1,405 @@
+{
+  "reviewed_at": "2026-06-23T00:00:00Z",
+  "scope": "Read-only source-prep backlog review artifact. No raw blocks, canonical records, submissions, manifests, LOG, materialized output, or generated validation output were mutated.",
+  "inputs_verified": [
+    "data/campaigns/validation-2026-06/readiness.jsonl",
+    "raw/sources/*/metadata.json",
+    "raw/sources/*/blocks.jsonl",
+    "raw/sources/*/source.pdf",
+    "raw/sources/*/source.xls",
+    "raw/sources/*/source.xlsx",
+    "raw/sources/*/chandra/manifest.json",
+    "raw/sources/*/chandra/pages/*.json",
+    "packages/pipeline/src/sources/source-prep.ts",
+    "packages/pipeline/src/sources/chandra.ts",
+    "packages/pipeline/src/sources/source-intake.ts",
+    "packages/cli/src/commands/sources.ts"
+  ],
+  "classification_counts": {
+    "readiness_jsonl": {
+      "total": 2566,
+      "ready": 2276,
+      "ingested": 2276,
+      "ready_not_ingested": 0,
+      "not_ready": 290
+    },
+    "raw_sources_cross_check": {
+      "total_source_dirs": 2566,
+      "not_ready_classified": {
+        "pdf": 23,
+        "spreadsheet": 267,
+        "other": 0
+      },
+      "pdf_status_counts": {
+        "zero": 2,
+        "partial": 21
+      },
+      "spreadsheet_status_counts": {
+        "zero_blocks": 267,
+        "partial_blocks": 0
+      }
+    },
+    "note": "The not-ready readiness rows have failure reasons but omit block_count fields; zero/partial status was verified from raw/sources block files and Chandra cache state."
+  },
+  "pdf_backlog": [
+    {
+      "source_id": "better_buses_pdf_better_buses_broadway_improvements_cb8_2019",
+      "title": "Broadway Transit Improvements- presented to Bronx Community Board 8 in September 2019 (pdf)",
+      "status": "zero",
+      "raw_block_count": 0,
+      "page_count": null,
+      "healthy_chandra_pages": 0,
+      "missing_page_count": null,
+      "first_missing_pages": [],
+      "readiness_reason": "PDF source evidence blocks are required before ingest for better_buses_pdf_better_buses_broadway_improvements_cb8_2019. source.pdf=present pages=unknown completed=0 source_blocks=0."
+    },
+    {
+      "source_id": "bx_cb3_projects_feb112020",
+      "title": "Link to Presentation – presented to Bronx Community Board 3 Municipal Services Committee on February 11, 2020",
+      "status": "zero",
+      "raw_block_count": 0,
+      "page_count": null,
+      "healthy_chandra_pages": 0,
+      "missing_page_count": null,
+      "first_missing_pages": [],
+      "readiness_reason": "PDF source evidence blocks are required before ingest for bx_cb3_projects_feb112020. source.pdf=present pages=unknown completed=0 source_blocks=0."
+    },
+    {
+      "source_id": "meeting_doc_107711",
+      "title": "Finance Committee Exhibit Book",
+      "status": "partial",
+      "raw_block_count": 2369,
+      "page_count": 405,
+      "healthy_chandra_pages": 261,
+      "missing_page_count": 144,
+      "first_missing_pages": [64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83]
+    },
+    {
+      "source_id": "meeting_doc_107796",
+      "title": "Board Exhibit Book",
+      "status": "partial",
+      "raw_block_count": 3008,
+      "page_count": 467,
+      "healthy_chandra_pages": 332,
+      "missing_page_count": 135,
+      "first_missing_pages": [2, 3, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 19, 20, 21, 22, 23, 24]
+    },
+    {
+      "source_id": "meeting_doc_135346",
+      "title": "Annual procurement report",
+      "status": "partial",
+      "raw_block_count": 26,
+      "page_count": 35,
+      "healthy_chandra_pages": 26,
+      "missing_page_count": 9,
+      "first_missing_pages": [1, 2, 5, 11, 17, 20, 29, 32, 35]
+    },
+    {
+      "source_id": "meeting_doc_135596",
+      "title": "Board Exhibit Book",
+      "status": "partial",
+      "raw_block_count": 786,
+      "page_count": 141,
+      "healthy_chandra_pages": 132,
+      "missing_page_count": 9,
+      "first_missing_pages": [7, 8, 19, 24, 26, 28, 31, 33, 36]
+    },
+    {
+      "source_id": "meeting_doc_146831",
+      "title": "Audit Committee Book",
+      "status": "partial",
+      "raw_block_count": 5297,
+      "page_count": 530,
+      "healthy_chandra_pages": 529,
+      "missing_page_count": 1,
+      "first_missing_pages": [500]
+    },
+    {
+      "source_id": "meeting_doc_167316",
+      "title": "Exhibit book",
+      "status": "partial",
+      "raw_block_count": 2449,
+      "page_count": 265,
+      "healthy_chandra_pages": 186,
+      "missing_page_count": 79,
+      "first_missing_pages": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+    },
+    {
+      "source_id": "meeting_doc_167646",
+      "title": "Board Exhibit Book",
+      "status": "partial",
+      "raw_block_count": 2496,
+      "page_count": 265,
+      "healthy_chandra_pages": 202,
+      "missing_page_count": 63,
+      "first_missing_pages": [2, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 21, 22, 24, 25, 26, 27]
+    },
+    {
+      "source_id": "meeting_doc_199181",
+      "title": "Department of Subways agency safety plan revisions",
+      "status": "partial",
+      "raw_block_count": 2219,
+      "page_count": 285,
+      "healthy_chandra_pages": 284,
+      "missing_page_count": 1,
+      "first_missing_pages": [232]
+    },
+    {
+      "source_id": "meeting_doc_201521",
+      "title": "Diversity Committee Exhibit Book",
+      "status": "partial",
+      "raw_block_count": 13480,
+      "page_count": 1629,
+      "healthy_chandra_pages": 1628,
+      "missing_page_count": 1,
+      "first_missing_pages": [235]
+    },
+    {
+      "source_id": "meeting_doc_201721",
+      "title": "All-agency annual procurement report",
+      "status": "partial",
+      "raw_block_count": 29,
+      "page_count": 108,
+      "healthy_chandra_pages": 14,
+      "missing_page_count": 94,
+      "first_missing_pages": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+    },
+    {
+      "source_id": "meeting_doc_201776",
+      "title": "Exhibit book",
+      "status": "partial",
+      "raw_block_count": 2693,
+      "page_count": 496,
+      "healthy_chandra_pages": 332,
+      "missing_page_count": 164,
+      "first_missing_pages": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+    },
+    {
+      "source_id": "meeting_doc_201926",
+      "title": "Board Exhibit Book",
+      "status": "partial",
+      "raw_block_count": 2011,
+      "page_count": 431,
+      "healthy_chandra_pages": 280,
+      "missing_page_count": 151,
+      "first_missing_pages": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+    },
+    {
+      "source_id": "meeting_doc_33871",
+      "title": "Finance Committee Exhibit Book",
+      "status": "partial",
+      "raw_block_count": 4477,
+      "page_count": 604,
+      "healthy_chandra_pages": 478,
+      "missing_page_count": 126,
+      "first_missing_pages": [289, 290, 291, 292, 293, 295, 296, 297, 298, 300, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311]
+    },
+    {
+      "source_id": "meeting_doc_33906",
+      "title": "Board Exhibit Book",
+      "status": "partial",
+      "raw_block_count": 4506,
+      "page_count": 603,
+      "healthy_chandra_pages": 475,
+      "missing_page_count": 128,
+      "first_missing_pages": [224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 238, 239, 240, 241, 242, 243, 244]
+    },
+    {
+      "source_id": "meeting_doc_58631",
+      "title": "Joint MNR and LIRR Committee Meeting Book",
+      "status": "partial",
+      "raw_block_count": 1990,
+      "page_count": 245,
+      "healthy_chandra_pages": 244,
+      "missing_page_count": 1,
+      "first_missing_pages": [82]
+    },
+    {
+      "source_id": "meeting_doc_73241",
+      "title": "Platform Door Feasibility Study",
+      "status": "partial",
+      "raw_block_count": 40366,
+      "page_count": 3920,
+      "healthy_chandra_pages": 3917,
+      "missing_page_count": 3,
+      "first_missing_pages": [228, 1003, 3795]
+    },
+    {
+      "source_id": "meeting_doc_76741",
+      "title": "Joint MNR/LIRR Committee Book",
+      "status": "partial",
+      "raw_block_count": 1581,
+      "page_count": 204,
+      "healthy_chandra_pages": 203,
+      "missing_page_count": 1,
+      "first_missing_pages": [118]
+    },
+    {
+      "source_id": "meeting_doc_79346",
+      "title": "Finance Committee Exhibit Book",
+      "status": "partial",
+      "raw_block_count": 2040,
+      "page_count": 309,
+      "healthy_chandra_pages": 220,
+      "missing_page_count": 89,
+      "first_missing_pages": [30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 43, 45, 46, 47, 49, 50, 51, 52, 53]
+    },
+    {
+      "source_id": "meeting_doc_85841",
+      "title": "Capital Program Committee Book",
+      "status": "partial",
+      "raw_block_count": 636,
+      "page_count": 72,
+      "healthy_chandra_pages": 71,
+      "missing_page_count": 1,
+      "first_missing_pages": [57]
+    },
+    {
+      "source_id": "meeting_doc_87726",
+      "title": "Finance Committee Exhibit Book",
+      "status": "partial",
+      "raw_block_count": 3063,
+      "page_count": 453,
+      "healthy_chandra_pages": 449,
+      "missing_page_count": 4,
+      "first_missing_pages": [34, 37, 40, 128]
+    },
+    {
+      "source_id": "meeting_doc_87841",
+      "title": "Board Exhibit Book",
+      "status": "partial",
+      "raw_block_count": 1240,
+      "page_count": 287,
+      "healthy_chandra_pages": 285,
+      "missing_page_count": 2,
+      "first_missing_pages": [16, 19]
+    }
+  ],
+  "spreadsheet_backlog": {
+    "source_count": 267,
+    "extension_counts": {
+      ".xlsx": 266,
+      ".xls": 1
+    },
+    "status": "All spreadsheet backlog sources have staged spreadsheet files and zero source blocks.",
+    "xls_source_ids": [
+      {
+        "source_id": "meeting_doc_26731",
+        "title": "November 2020 Mid-Year Forecast Actuals (2 of 2)",
+        "file": "source.xls",
+        "bytes": 44544
+      }
+    ],
+    "small_xlsx_examples": [
+      {
+        "source_id": "meeting_doc_51956",
+        "title": "July 2021 Fuel Hedge Program",
+        "file": "source.xlsx",
+        "bytes": 11654
+      },
+      {
+        "source_id": "meeting_doc_33681",
+        "title": "February 2021 Fuel Hedge Program",
+        "file": "source.xlsx",
+        "bytes": 11673
+      },
+      {
+        "source_id": "meeting_doc_127571",
+        "title": "October 2023 Farebox Ratios",
+        "file": "source.xlsx",
+        "bytes": 11718
+      }
+    ]
+  },
+  "existing_code_paths": {
+    "cli_prepare_source": {
+      "path": "packages/cli/src/commands/sources.ts",
+      "summary": "The prepare-source command calls prepareSource(sourceDir, { sourceId }) and prints copied files, optional text path, and block count."
+    },
+    "prepare_source": {
+      "path": "packages/pipeline/src/sources/source-prep.ts",
+      "summary": "prepareSource copies top-level files into raw/sources/<source_id>, writes staged metadata, then writes blocks from Chandra OCR for PDFs or from a readable text surface for non-PDFs."
+    },
+    "non_pdf_text_surface": {
+      "path": "packages/pipeline/src/sources/source-prep.ts",
+      "summary": "extractTextSurface only accepts existing non-empty text.txt, source.json rendered as JSON text, or source.html rendered through htmlToText."
+    },
+    "text_block_generation": {
+      "path": "packages/pipeline/src/sources/source-prep.ts",
+      "summary": "buildSourceBlocksFromText splits text by form feed into pages and by line into text/list/heading blocks with source-relative raw offsets."
+    },
+    "pdf_block_generation": {
+      "path": "packages/pipeline/src/sources/source-prep.ts",
+      "summary": "writeSourceBlocks writes Chandra OCR blocks for any source with source.pdf; rebuildSourceBlocks repeats the same deterministic write from cached Chandra pages."
+    },
+    "chandra_queue_run": {
+      "path": "packages/pipeline/src/sources/chandra.ts",
+      "summary": "queueChandraOcr classifies PDFs as queued, partial, complete, or skipped from source.pdf, chandra/manifest.json, and healthy page JSON files. runChandraOcr can call an external command, so it was not run for this review."
+    },
+    "source_intake_stageable_surface": {
+      "path": "packages/pipeline/src/sources/source-intake.ts",
+      "summary": "hasStageableSurface accepts text.txt, source.pdf, source.html, or source.json. Existing staged spreadsheets are present in raw/sources, but source-prep has no spreadsheet text-surface branch."
+    },
+    "spreadsheet_support": {
+      "xls_supported": false,
+      "xlsx_supported": false,
+      "csv_supported": false,
+      "dependency_check": "No xlsx/sheetjs/read-excel/spreadsheet parser dependency or spreadsheet-specific source-prep code was found in package.json files or TypeScript sources."
+    }
+  },
+  "smallest_safe_next_mutation_mechanism": {
+    "spreadsheets": {
+      "proposal": "Add a deterministic, opt-in spreadsheet text extraction path that writes reviewable sidecar prep artifacts before touching raw blocks.",
+      "safe_sequence": [
+        "Introduce a source-prep command or option that reads raw/sources/<source_id>/source.xlsx or source.xls and writes data/source-prep/<run_id>/<source_id>/spreadsheet-preview.json plus spreadsheet-preview.md.",
+        "Represent workbooks as sheets, used ranges, rows, columns, cell values, formulas, merged ranges, and a bounded Markdown/TSV preview; record parser version and file hash.",
+        "Run the preview generator on 3-5 pilots and review output quality without modifying raw/sources.",
+        "After review, add a separate explicit apply step that converts approved previews into text.txt and blocks.jsonl, preserving raw cell addresses in block metadata or raw text."
+      ],
+      "notes": [
+        "Because no spreadsheet parser exists today, the first mutation should be a small dependency and sidecar-only artifact, not direct raw/sources block generation.",
+        "Prefer xlsx first because 266 of 267 spreadsheet sources are .xlsx; handle the lone .xls as either a separate parser path or explicit unsupported/quarantined status until tested."
+      ]
+    },
+    "pdfs": {
+      "proposal": "Use a dry-run/sidecar repair manifest for the 23 PDFs, splitting zero-cache PDFs from partial-cache PDFs.",
+      "safe_sequence": [
+        "For zero PDFs, write a data/source-prep/<run_id>/pdf-queue-preview.json entry with source id, PDF hash, page_count unknown, and required OCR action; do not call external OCR in this lane.",
+        "For partial PDFs, write a data/source-prep/<run_id>/pdf-repair-preview.json entry with missing/unhealthy page numbers, existing block count, and candidate repair action.",
+        "When provider/external OCR commands are allowed, rerun only missing pages for partials and full OCR for the two zero PDFs, then rebuild source blocks from Chandra cache in a separate explicit apply step.",
+        "Do not relax assertSourceReadyForIngest to accept partial PDFs; the current all-pages-ready gate prevents evidence gaps."
+      ],
+      "notes": [
+        "Several partial PDFs are one to four pages short and are good repair candidates.",
+        "Very large partial PDFs, especially meeting_doc_73241, should be treated as repair-only for the missing pages rather than full reruns."
+      ]
+    }
+  },
+  "pilot_source_ids": [
+    {
+      "source_id": "meeting_doc_51956",
+      "lane": "spreadsheet_xlsx",
+      "rationale": "Smallest observed xlsx backlog item, a compact Fuel Hedge Program workbook, useful for validating basic workbook-to-preview extraction."
+    },
+    {
+      "source_id": "meeting_doc_26731",
+      "lane": "spreadsheet_xls",
+      "rationale": "The only .xls source in the 267-spreadsheet backlog; include it early to decide whether legacy Excel support is in scope or should be quarantined."
+    },
+    {
+      "source_id": "better_buses_pdf_better_buses_broadway_improvements_cb8_2019",
+      "lane": "pdf_zero",
+      "rationale": "One of two PDF sources with no Chandra manifest/pages and zero blocks; validates zero-cache queue/preview handling."
+    },
+    {
+      "source_id": "meeting_doc_85841",
+      "lane": "pdf_partial",
+      "rationale": "Manageable 72-page PDF with 71 healthy pages and only page 57 missing; good smallest repair-flow pilot."
+    },
+    {
+      "source_id": "meeting_doc_146831",
+      "lane": "pdf_partial",
+      "rationale": "Large PDF with exactly one missing page, testing whether single-page repair scales without rerunning hundreds of healthy pages."
+    }
+  ]
+}

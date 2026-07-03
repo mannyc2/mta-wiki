@@ -1,0 +1,1125 @@
+{
+  "schema_proposal_run_id": "2026-06-08T23-52-42-494Z_schema-proposal-run",
+  "proposed_at": "2026-06-08T23:55:26.132Z",
+  "observation_kind": "table",
+  "profile_name": "deepseek-pro",
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "audit_packet": {
+    "observation_kind": "table",
+    "submission_count": 151,
+    "accepted_count": 149,
+    "rejected_count": 2,
+    "declared_anchor_fields": [],
+    "enum_candidates": [
+      {
+        "field": "period",
+        "occurrences": 4,
+        "accepted_occurrences": 4,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.03,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "empty",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "January to May 2025",
+          "May 2025"
+        ],
+        "accepted_values": [
+          "January to May 2025",
+          "May 2025"
+        ],
+        "canonical_values_observed": [],
+        "value_counts": [
+          {
+            "value": "May 2025",
+            "count": 3
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "May 2025",
+            "count": 3
+          }
+        ],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "entities",
+        "occurrences": 3,
+        "accepted_occurrences": 3,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.02,
+        "distinct_values": 3,
+        "accepted_distinct_values": 3,
+        "canonical_distinct_values": 0,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "empty",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "MTA Bus",
+          "New York City Transit",
+          "Staten Island Rail"
+        ],
+        "accepted_values": [
+          "MTA Bus",
+          "New York City Transit",
+          "Staten Island Rail"
+        ],
+        "canonical_values_observed": [],
+        "value_counts": [
+          {
+            "value": "MTA Bus",
+            "count": 3
+          },
+          {
+            "value": "New York City Transit",
+            "count": 3
+          },
+          {
+            "value": "Staten Island Rail",
+            "count": 3
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "MTA Bus",
+            "count": 3
+          },
+          {
+            "value": "New York City Transit",
+            "count": 3
+          },
+          {
+            "value": "Staten Island Rail",
+            "count": 3
+          }
+        ],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "demographic",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "empty",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "pedestrians",
+          "seniors (62+) and persons with disabilities"
+        ],
+        "accepted_values": [
+          "pedestrians",
+          "seniors (62+) and persons with disabilities"
+        ],
+        "canonical_values_observed": [],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      }
+    ],
+    "additional_keys": [
+      {
+        "field": "caption",
+        "occurrences": 22,
+        "accepted_occurrences": 21,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 0,
+        "coverage": 0.15,
+        "accepted_coverage": 0.14,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "empty",
+        "classification": "free_text",
+        "sample_values": [
+          "Datasets published to support the launch of the Congestion Relief Zone",
+          "If you enter 34th Street from a given avenue, you must turn right to exit at the indicated avenue",
+          "Average bus speeds on 181st St, Broadway to Amsterdam, by time period (6am-10am, 10am-3pm, 3pm-7pm). Busway launched Apr 26, 2021. Source: MTA.",
+          "Average time in commercial vehicle metered parking (minutes)",
+          "Average Weekend (Saturday+Sunday) and Average Weekday ridership 2014-2018",
+          "Customer Journey Time Performance is the percentage of customers whose journeys are completed within 5 minutes of the scheduled time",
+          "Entire route travel time change before and after SBS",
+          "Figure 31"
+        ],
+        "accepted_sample_values": [
+          "If you enter 34th Street from a given avenue, you must turn right to exit at the indicated avenue",
+          "Average bus speeds on 181st St, Broadway to Amsterdam, by time period (6am-10am, 10am-3pm, 3pm-7pm). Busway launched Apr 26, 2021. Source: MTA.",
+          "Average time in commercial vehicle metered parking (minutes)",
+          "Average Weekend (Saturday+Sunday) and Average Weekday ridership 2014-2018",
+          "Customer Journey Time Performance is the percentage of customers whose journeys are completed within 5 minutes of the scheduled time",
+          "Datasets published to support the launch of the Congestion Relief Zone",
+          "Entire route travel time change before and after SBS",
+          "Figure 31"
+        ],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "chair",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "empty",
+        "classification": "sparse",
+        "sample_values": [
+          "Haeda Mihaltses"
+        ],
+        "accepted_sample_values": [
+          "Haeda Mihaltses"
+        ],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "column_count",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "empty",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "columns",
+        "occurrences": 116,
+        "accepted_occurrences": 114,
+        "rejected_occurrences": 2,
+        "canonical_occurrences": 0,
+        "coverage": 0.77,
+        "accepted_coverage": 0.77,
+        "canonical_coverage": 0,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "empty",
+        "classification": "free_text",
+        "sample_values": [
+          "Route",
+          "Month",
+          "Percentage",
+          "Year",
+          "Pilot",
+          "Pre-Pilot",
+          "Category",
+          "Change (pp)"
+        ],
+        "accepted_sample_values": [
+          "Route",
+          "Month",
+          "Percentage",
+          "Year",
+          "Pilot",
+          "Pre-Pilot",
+          "Category",
+          "Change (pp)"
+        ],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "committee",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "empty",
+        "classification": "sparse",
+        "sample_values": [
+          "New York City Transit Committee"
+        ],
+        "accepted_sample_values": [
+          "New York City Transit Committee"
+        ],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "date_range",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "empty",
+        "classification": "sparse",
+        "sample_values": [
+          "June 2020 - May 2022"
+        ],
+        "accepted_sample_values": [
+          "June 2020 - May 2022"
+        ],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "description",
+        "occurrences": 13,
+        "accepted_occurrences": 13,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.09,
+        "accepted_coverage": 0.09,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "empty",
+        "classification": "free_text",
+        "sample_values": [
+          "Board action approval routing table",
+          "Dataset dictionary defining three columns for the MTA ACE Routes dataset",
+          "Entry-to-exit mapping for the Jamaica Ave Busway",
+          "Existing vs Proposed weekday frequency categories (7am to 9pm, peak direction) for all Bronx bus routes",
+          "Internal approvals routing table",
+          "Monthly share of scheduled trains actually provided during peak hours, Dec 2022 to Nov 2025",
+          "Monthly share of trains delayed by category",
+          "Service frequencies for Bx18A/B (Bronx) and B60 (Brooklyn) per time period"
+        ],
+        "accepted_sample_values": [
+          "Board action approval routing table",
+          "Dataset dictionary defining three columns for the MTA ACE Routes dataset",
+          "Entry-to-exit mapping for the Jamaica Ave Busway",
+          "Existing vs Proposed weekday frequency categories (7am to 9pm, peak direction) for all Bronx bus routes",
+          "Internal approvals routing table",
+          "Monthly share of scheduled trains actually provided during peak hours, Dec 2022 to Nov 2025",
+          "Monthly share of trains delayed by category",
+          "Service frequencies for Bx18A/B (Bronx) and B60 (Brooklyn) per time period"
+        ],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "governing_body",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "empty",
+        "classification": "sparse",
+        "sample_values": [
+          "MTA Board of Directors"
+        ],
+        "accepted_sample_values": [
+          "MTA Board of Directors"
+        ],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "location",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "empty",
+        "classification": "sparse",
+        "sample_values": [
+          "181st St, Broadway to Amsterdam"
+        ],
+        "accepted_sample_values": [
+          "181st St, Broadway to Amsterdam"
+        ],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "location_normalized",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "empty",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "members",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "empty",
+        "classification": "sparse",
+        "sample_values": [
+          "Andrew Albert",
+          "Dan Garodnick",
+          "David Jones",
+          "John Ross 'JR' Rizzo",
+          "John Samuelsen",
+          "Lisa Sorin",
+          "Meera Joshi",
+          "Midori Valdivia"
+        ],
+        "accepted_sample_values": [
+          "Andrew Albert",
+          "Dan Garodnick",
+          "David Jones",
+          "John Ross 'JR' Rizzo",
+          "John Samuelsen",
+          "Lisa Sorin",
+          "Meera Joshi",
+          "Midori Valdivia"
+        ],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "notes",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "empty",
+        "classification": "free_text",
+        "sample_values": [
+          "Bx6 to be implemented in 2023 with Bx6 SBS alignment and Bx5 schedule changes. Q50 LTD schedule improvement during off-peak periods only.",
+          "Table indicates which improvements apply to each route"
+        ],
+        "accepted_sample_values": [
+          "Bx6 to be implemented in 2023 with Bx6 SBS alignment and Bx5 schedule changes. Q50 LTD schedule improvement during off-peak periods only.",
+          "Table indicates which improvements apply to each route"
+        ],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "nyct_non_reimbursable_actual",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "empty",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "nyct_total_positions_actual",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "empty",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "page",
+        "occurrences": 4,
+        "accepted_occurrences": 4,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.03,
+        "accepted_coverage": 0.03,
+        "canonical_coverage": 0,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "empty",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "record_count",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "empty",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "row_count",
+        "occurrences": 4,
+        "accepted_occurrences": 4,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.03,
+        "accepted_coverage": 0.03,
+        "canonical_coverage": 0,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "empty",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "rows",
+        "occurrences": 122,
+        "accepted_occurrences": 120,
+        "rejected_occurrences": 2,
+        "canonical_occurrences": 0,
+        "coverage": 0.81,
+        "accepted_coverage": 0.81,
+        "canonical_coverage": 0,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "empty",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "rows_count",
+        "occurrences": 8,
+        "accepted_occurrences": 8,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.05,
+        "accepted_coverage": 0.05,
+        "canonical_coverage": 0,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "empty",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "rows_description",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "empty",
+        "classification": "free_text",
+        "sample_values": [
+          "Weekday AM (8-9 AM) and Weekday PM (5-6 PM) travel times for east-west streets including 23rd St, 19th St, 18th St, 17th St, 16th St, 15th St, 13th St, 12th St, Houston St",
+          "Weekday AM and PM travel times for 8th Ave, 7th Ave, 6th Ave, 5th Ave, 3rd Ave/Bowery, 2nd Ave, 1st Ave"
+        ],
+        "accepted_sample_values": [
+          "Weekday AM (8-9 AM) and Weekday PM (5-6 PM) travel times for east-west streets including 23rd St, 19th St, 18th St, 17th St, 16th St, 15th St, 13th St, 12th St, Houston St",
+          "Weekday AM and PM travel times for 8th Ave, 7th Ave, 6th Ave, 5th Ave, 3rd Ave/Bowery, 2nd Ave, 1st Ave"
+        ],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "rows_partial_sample",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "empty",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "source",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "empty",
+        "classification": "sparse",
+        "sample_values": [
+          "MTA"
+        ],
+        "accepted_sample_values": [
+          "MTA"
+        ],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "source_note",
+        "occurrences": 4,
+        "accepted_occurrences": 4,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.03,
+        "accepted_coverage": 0.03,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "empty",
+        "classification": "free_text",
+        "sample_values": [
+          "Bus Lanes – Local Streets (NYC Open Data)",
+          "Mayor's Management Report and NYC Streets Plan Update 2024",
+          "MTA Bus Speeds: 2015-2019 and MTA Bus Speeds: 2020 – 2024",
+          "MTA Monthly Ridership / Traffic Data: Beginning January 2008"
+        ],
+        "accepted_sample_values": [
+          "Bus Lanes – Local Streets (NYC Open Data)",
+          "Mayor's Management Report and NYC Streets Plan Update 2024",
+          "MTA Bus Speeds: 2015-2019 and MTA Bus Speeds: 2020 – 2024",
+          "MTA Monthly Ridership / Traffic Data: Beginning January 2008"
+        ],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "systemwide_average",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "empty",
+        "classification": "sparse",
+        "sample_values": [
+          "86.1%"
+        ],
+        "accepted_sample_values": [
+          "86.1%"
+        ],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "table_name",
+        "occurrences": 6,
+        "accepted_occurrences": 6,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.04,
+        "accepted_coverage": 0.04,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "empty",
+        "classification": "free_text",
+        "sample_values": [
+          "Bus Lanes",
+          "eastbound_access",
+          "express_bus_route_improvements",
+          "regular_bus_route_improvements",
+          "weekday_frequency_categories",
+          "westbound_access"
+        ],
+        "accepted_sample_values": [
+          "Bus Lanes",
+          "eastbound_access",
+          "express_bus_route_improvements",
+          "regular_bus_route_improvements",
+          "weekday_frequency_categories",
+          "westbound_access"
+        ],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "table_number",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "empty",
+        "classification": "numeric",
+        "sample_values": [
+          "1",
+          "2"
+        ],
+        "accepted_sample_values": [
+          "1",
+          "2"
+        ],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "table_title",
+        "occurrences": 151,
+        "accepted_occurrences": 149,
+        "rejected_occurrences": 2,
+        "canonical_occurrences": 0,
+        "coverage": 1,
+        "accepted_coverage": 1,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "empty",
+        "classification": "free_text",
+        "sample_values": [
+          "Bus Customer Journey Time Performance by Borough",
+          "Congestion Relief Zone Supporting Datasets (2024)",
+          "Experience crossing down 181st Street feels...",
+          "Jamaica Ave Busway - Percentage Speed Change Pre-Busway and Post-Busway (May 2019 vs. May 2022)",
+          "14th Street Turning Movements - Peak Hour Data",
+          "2025 Operating Revenue & Expenses, August Year-to-Date",
+          "2025 Operating Revenue & Expenses, May Year-to-Date",
+          "Additional Bus Stop & Travel Time – School Months (Sep–May)"
+        ],
+        "accepted_sample_values": [
+          "Bus Customer Journey Time Performance by Borough",
+          "Experience crossing down 181st Street feels...",
+          "14th Street Turning Movements - Peak Hour Data",
+          "2025 Operating Revenue & Expenses, August Year-to-Date",
+          "2025 Operating Revenue & Expenses, May Year-to-Date",
+          "Additional Bus Stop & Travel Time – School Months (Sep–May)",
+          "Additional Bus Stop & Travel Time – Summer Months (Jun–Aug)",
+          "Annual bus ridership (2018-2024)"
+        ],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "title",
+        "occurrences": 3,
+        "accepted_occurrences": 3,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.02,
+        "accepted_coverage": 0.02,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "empty",
+        "classification": "free_text",
+        "sample_values": [
+          "Finding Your New Route - Route Relationship Chart",
+          "NYC DOT Brooklyn Bus Priority Corridors",
+          "Open Data by the Numbers 2023"
+        ],
+        "accepted_sample_values": [
+          "Finding Your New Route - Route Relationship Chart",
+          "NYC DOT Brooklyn Bus Priority Corridors",
+          "Open Data by the Numbers 2023"
+        ],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "top_ranked_count",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "empty",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "total_corridors_studied",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "empty",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "unit",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "empty",
+        "classification": "sparse",
+        "sample_values": [
+          "percent"
+        ],
+        "accepted_sample_values": [
+          "percent"
+        ],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "values",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 0,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "empty",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      }
+    ]
+  },
+  "closure_policy": "deferred",
+  "closure_signals": [
+    {
+      "field": "period",
+      "closure_readiness": "open",
+      "occurrences": 4,
+      "accepted_occurrences": 4,
+      "canonical_occurrences": 0,
+      "coverage": 0.03
+    },
+    {
+      "field": "entities",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "accepted_occurrences": 3,
+      "canonical_occurrences": 0,
+      "coverage": 0.02
+    },
+    {
+      "field": "demographic",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 0,
+      "coverage": 0.01
+    }
+  ],
+  "valid": true,
+  "schema_issues": [],
+  "warnings": [],
+  "proposal": {
+    "observation_kind": "table",
+    "field_proposals": [
+      {
+        "field": "period",
+        "decision": "enum",
+        "canonical_values": [
+          "january_to_may_2025",
+          "may_2025"
+        ],
+        "value_mapping": [
+          {
+            "from": "January to May 2025",
+            "to": "january_to_may_2025"
+          },
+          {
+            "from": "May 2025",
+            "to": "may_2025"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "period_other"
+        },
+        "rationale": "Two distinct time period strings observed; open enum with escape hatch for future values."
+      },
+      {
+        "field": "entities",
+        "decision": "relation_context",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Agency names (MTA Bus, NYCT, SIR) are relation‑context, not an enumeration."
+      },
+      {
+        "field": "demographic",
+        "decision": "needs_more_data",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": null,
+        "rationale": "Only two occurrences (pedestrians, seniors) – too thin to define a responsible enum."
+      }
+    ],
+    "key_dispositions": [
+      {
+        "key": "caption",
+        "disposition": "promote_field",
+        "target": "caption",
+        "rationale": "Descriptive caption for the table."
+      },
+      {
+        "key": "chair",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence – insufficient to determine schema role."
+      },
+      {
+        "key": "column_count",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single numeric occurrence – too sparse."
+      },
+      {
+        "key": "columns",
+        "disposition": "promote_field",
+        "target": "columns",
+        "rationale": "Column headers, present in most submissions."
+      },
+      {
+        "key": "committee",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence of committee name."
+      },
+      {
+        "key": "date_range",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Only one observed date range."
+      },
+      {
+        "key": "description",
+        "disposition": "promote_field",
+        "target": "description",
+        "rationale": "Free‑text description used across 13 submissions."
+      },
+      {
+        "key": "governing_body",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence."
+      },
+      {
+        "key": "location",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence of a location string."
+      },
+      {
+        "key": "location_normalized",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence of a structured object."
+      },
+      {
+        "key": "members",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single array occurrence – too sparse."
+      },
+      {
+        "key": "notes",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Only two occurrences of free‑text notes."
+      },
+      {
+        "key": "nyct_non_reimbursable_actual",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single numeric value – too sparse."
+      },
+      {
+        "key": "nyct_total_positions_actual",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single numeric value – too sparse."
+      },
+      {
+        "key": "page",
+        "disposition": "promote_field",
+        "target": "page",
+        "rationale": "Page number used in several submissions."
+      },
+      {
+        "key": "record_count",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single numeric occurrence."
+      },
+      {
+        "key": "row_count",
+        "disposition": "promote_field",
+        "target": "row_count",
+        "rationale": "Explicit count of data rows, seen multiple times."
+      },
+      {
+        "key": "rows",
+        "disposition": "promote_field",
+        "target": "rows",
+        "rationale": "Core table data present in 81% of submissions."
+      },
+      {
+        "key": "rows_count",
+        "disposition": "alias",
+        "target": "row_count",
+        "rationale": "Synonym for row_count."
+      },
+      {
+        "key": "rows_description",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Only two occurrences."
+      },
+      {
+        "key": "rows_partial_sample",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence of a partial sample object."
+      },
+      {
+        "key": "source",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence."
+      },
+      {
+        "key": "source_note",
+        "disposition": "promote_field",
+        "target": "source_note",
+        "rationale": "Source citation seen in several submissions."
+      },
+      {
+        "key": "systemwide_average",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence of a percentage string."
+      },
+      {
+        "key": "table_name",
+        "disposition": "promote_field",
+        "target": "table_name",
+        "rationale": "Internal table identifier used in 6 submissions."
+      },
+      {
+        "key": "table_number",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Only two occurrences."
+      },
+      {
+        "key": "table_title",
+        "disposition": "promote_field",
+        "target": "table_title",
+        "rationale": "Title of the table, present in every submission."
+      },
+      {
+        "key": "title",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Only three occurrences."
+      },
+      {
+        "key": "top_ranked_count",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single numeric occurrence."
+      },
+      {
+        "key": "total_corridors_studied",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single numeric occurrence."
+      },
+      {
+        "key": "unit",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence."
+      },
+      {
+        "key": "values",
+        "disposition": "needs_more_data",
+        "target": null,
+        "rationale": "Single occurrence of a structured object."
+      }
+    ],
+    "notes": "Enum proposals for period and entities based on observed values; demographic held for more data. Many sparse numeric/text fields deferred to needs_more_data. Core fields (caption, columns, description, page, row_count, rows, source_note, table_name, table_title) promoted, with rows_count aliased to row_count."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T23-54-34-895Z_3609302-b912c336_schema-proposal-run_table",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-54-34-895Z_2026-06-08T23-54-34-895Z_3609302-b912c336_schema-proposal-run_table.jsonl"
+}

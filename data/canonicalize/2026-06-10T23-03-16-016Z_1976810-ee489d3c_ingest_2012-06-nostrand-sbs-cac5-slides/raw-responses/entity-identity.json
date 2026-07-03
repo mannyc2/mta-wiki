@@ -1,0 +1,69 @@
+{
+  "run_id": "2026-06-10T23-03-16-016Z_1976810-ee489d3c_ingest_2012-06-nostrand-sbs-cac5-slides",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:46:44.117Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "canon-mta-nyct-2012-nostrand",
+        "local_observation_id": "entity_mta_nyct_2012_06_nostrand_cac5",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id entity_mta-nyct, which already exists in the registry with matching entity_name 'MTA New York City Transit', entity_type 'agency', and source_id 2012_06_nostrand_sbs_cac5_slides in its source_ids list. No different target record needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p001_c0002",
+            "source_quote": "MTA New York City Transit"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p003_c0008",
+            "source_quote": "MTA New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "canon-nyc-dot-2012-nostrand",
+        "local_observation_id": "entity_nyc_dot_2012_06_nostrand_cac5",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id entity_nyc-dot, which already exists in the registry with matching entity_name 'New York City Department of Transportation', entity_type 'agency', and source_id 2012_06_nostrand_sbs_cac5_slides in its source_ids list. No different target record needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p001_c0003",
+            "source_quote": "NEW YORK CITY Department of Transportation"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p016_c0004",
+            "source_quote": "NEW YORK CITY Department of Transportation"
+          }
+        ]
+      },
+      {
+        "decision_id": "canon-nyc-ddc-2012-nostrand",
+        "local_observation_id": "entity_nyc_ddc_2012_06_nostrand_cac5",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id entity_nyc-ddc, which already exists in the registry with matching entity_name 'NYC Department of Design and Construction', entity_type 'government_agency', and source_id 2012_06_nostrand_sbs_cac5_slides in its source_ids list. No different target record needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p011_c0008",
+            "source_quote": "NEW YORK CITY DDC (Department of Design and Construction)"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p012_c0008",
+            "source_quote": "NEW YORK CITY DDC (Department of Design and Construction)"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-46-00-322Z_2111393-ec096094_canonicalize_2026-06-10t23-03-16-016z-1976810-ee489d3c-ingest-2012-06-nostrand-sbs-cac5-slides-entity-identity"
+}

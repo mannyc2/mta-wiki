@@ -1,0 +1,138 @@
+{
+  "id": "codex-reset-window-aggressive-normalizer-burst-2026-06-30",
+  "date": "2026-06-30",
+  "mode": "codex_only_deterministic",
+  "provider_backed_llm_commands_used": false,
+  "prohibited_commands_used": false,
+  "summary": "Aggressive reset-window cleanup burst using read-only Codex scouts plus a serial deterministic write, materialize, and validate gate.",
+  "baseline": {
+    "validation_issues": 0,
+    "event_family_other": 342,
+    "project_document_time_status_missing": 91,
+    "project_document_time_status_other": 4,
+    "project_family_other": 13,
+    "project_family_missing": 6,
+    "source_gap_kind_other": 16,
+    "source_gap_pending_analysis": 19,
+    "source_gap_data_not_collected": 2,
+    "relation_family_other": 0,
+    "treatment_family_other": 0,
+    "route_type_unresolved": 1
+  },
+  "final": {
+    "validation_issues": 0,
+    "event_family_other": 321,
+    "project_document_time_status_missing": 82,
+    "project_document_time_status_other": 4,
+    "project_family_other": 10,
+    "project_family_missing": 6,
+    "source_gap_kind_other": 13,
+    "source_gap_pending_analysis": 21,
+    "source_gap_data_not_collected": 3
+  },
+  "implemented_slices": [
+    {
+      "bucket": "project_family",
+      "records": ["project_access-a-ride-primary-carrier-options"],
+      "change": "AAR primary-carrier option-year contract modification maps from other to service_change."
+    },
+    {
+      "bucket": "project_document_time_status",
+      "records": ["project_nyct-stormwater-flooding-mitigation", "project_bt-bike-pedestrian-accessibility"],
+      "change": "Exact added-funding payloads map to approved."
+    },
+    {
+      "bucket": "event_family",
+      "records": [
+        "event_201536-safety-suicide-prevention",
+        "event_bx6-sbs-online-portal-launch",
+        "event_career-discovery-week-zerega",
+        "event_cb9-cb10-cb11-consultation-summer-2012",
+        "event_customer-ambassador-program",
+        "event_employer-interviews-fall2011",
+        "event_feedback-sessions-sept-2025",
+        "event_meeting-doc-154976-older-adult-resource-fair",
+        "event_meeting-doc-199231-career-day-ps278",
+        "event_metrocard-to-omny-trade-in-week-meeting",
+        "event_project-kickoff-summer-2015",
+        "event_project-kickoff-summer-2015_2",
+        "event_stemta-babylon"
+      ],
+      "change": "Exact-kind and payload-proof public/customer engagement tails map to public_engagement."
+    },
+    {
+      "bucket": "source_gap_kind",
+      "records": ["gap_east-rockaway-continues-2023", "gap_station-sgr-continues-2023"],
+      "change": "Raw work_continuation maps to pending_analysis."
+    },
+    {
+      "bucket": "event_family",
+      "records": ["event_meeting-doc-201746-brs-ntp-dec2025", "event_meeting-doc-201746-ecitation-ion-dec2025"],
+      "change": "ION declaration records with approval, ratification, or notice-to-proceed proof map to approval."
+    },
+    {
+      "bucket": "project_family_and_status",
+      "records": [
+        "project_a-shuttle",
+        "project_201556-harlem-line-track-outage",
+        "project_university-ave-el-grant-dedicated-bus-lane",
+        "project_beacon-track-3-platform-restoration-meeting-doc-105771"
+      ],
+      "change": "Exact A Shuttle and Harlem outage service-change family/status rules plus exact University Ave and Beacon Track 3 status rules."
+    },
+    {
+      "bucket": "source_gap_kind",
+      "records": ["gap_no-site-visits-covid"],
+      "change": "Explicit no-site-visits-performed caveat maps to data_not_collected."
+    },
+    {
+      "bucket": "event_family",
+      "records": [
+        "event_great-neck-signal-cutover-commissioning",
+        "event_gun-hill-road-elevators-service",
+        "event_item1-m7-original-service-date",
+        "event_lirr-atlantic-branch-cellular-service",
+        "event_polycarbonate-barrier-installation-complete",
+        "event_rrs-proof-of-concept-2024"
+      ],
+      "change": "Exact-kind implementation tails with canonical replay proof map to implementation."
+    },
+    {
+      "bucket": "project_document_time_status",
+      "records": [
+        "project_local-law-195-2019",
+        "project_meeting-doc-140411-tbta-payroll-mobility-tax-bonds",
+        "project_purchase-475-be-buses-nyct",
+        "project_purchase-92-express-buses-nyct"
+      ],
+      "change": "Exact Local Law, planned bond issuance, and bus-procurement amendment payloads map to approved or planned."
+    }
+  ],
+  "subagents": [
+    {"id": "019f176f-2e45-7d91-be44-ba7a969b1950", "lane": "event public engagement scout", "result": "implemented"},
+    {"id": "019f176f-4c55-7222-92dd-6a7f62628349", "lane": "project added-funding status scout", "result": "implemented"},
+    {"id": "019f1776-6339-7840-a265-8e1e9ab2a0ee", "lane": "source-gap work-continuation scout", "result": "implemented"},
+    {"id": "019f1776-5c7f-7793-aac6-7f7616a3d8b5", "lane": "event ION approval scout", "result": "implemented"},
+    {"id": "019f1776-5ff6-7033-8433-8e47bb2afe79", "lane": "project shuttle/outage/status scout", "result": "implemented"},
+    {"id": "019f1776-667c-7ed1-8914-5eecdf920e15", "lane": "identity pressure scout", "result": "deferred; live candidate pressure was zero"},
+    {"id": "019f1780-a142-7c01-a907-9dfab7dba43b", "lane": "source-gap no-site-visits scout", "result": "implemented"},
+    {"id": "019f1780-a529-7692-aad1-5eea65039d65", "lane": "event implementation-tail scout", "result": "implemented"},
+    {"id": "019f1780-aa10-7260-adf8-161ce5cde72d", "lane": "project exact-status scout", "result": "implemented"}
+  ],
+  "verification": {
+    "focused_tests": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+    "focused_tests_result": "256 pass, 3724 expect() calls",
+    "typecheck": "bun run typecheck",
+    "typecheck_result": "passed",
+    "materialize": "bun packages/cli/src/cli.ts materialize",
+    "materialize_result": "Materialized 93093/98102 submissions; SQLite FTS quick_check ok",
+    "validate": "bun packages/cli/src/cli.ts validate",
+    "validate_result": "Issues: 0; canonical records: 84043; wiki pages: 7339"
+  },
+  "remaining_lanes": [
+    "Continue event_family other from 321 with exact high-frequency groups: public event, private event, generic event, infrastructure_project, fare increase, employee_resource_group_event.",
+    "Continue project document_time_status missing from 82 and project_family other from 10 with exact-name and payload-proof rules only.",
+    "Continue source_gap kind other from 13; avoid broad caveat/scope/partial_extraction rules unless payload proof is exact.",
+    "Identity review live candidates remain zero; stale do-not-merge cleanup is lower priority than visible residual buckets."
+  ]
+}

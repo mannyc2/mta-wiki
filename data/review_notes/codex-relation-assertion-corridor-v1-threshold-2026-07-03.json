@@ -1,0 +1,97 @@
+{
+  "note_id": "codex-relation-assertion-corridor-v1-threshold-2026-07-03",
+  "date": "2026-07-03",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed profiles",
+    "Pioneer/OpenAI/DeepSeek/vLLM/chandra model calls"
+  ],
+  "bucket": "v1_route_scoped_assertion_status_corridor_scope",
+  "implemented_change": {
+    "summary": "Drive corridor_scope under the v1 10% unknown threshold with a deterministic route-corridor source-context lane.",
+    "code_paths": [
+      "packages/pipeline/src/records/assertion-qualifiers.ts",
+      "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+    ],
+    "rule": {
+      "relation_family": "corridor_scope",
+      "relation_kind": "operates_on_corridor",
+      "subject": "route",
+      "object": "corridor",
+      "status": "delivered",
+      "required_signals": [
+        "citing source record exists",
+        "subject is a true bus route, either by route descriptor or by true-route plus bus/SBS source context",
+        "object is a corridor",
+        "route/relation/source-title context has bus, route, or corridor signal",
+        "no draft/proposed/proposal/future/will/would/could/may/candidate/potential/planned/service-plan/final-plan/redesign-plan text in the source-title/relation/endpoint context"
+      ],
+      "guardrails": [
+        "split-candidate and aggregate routes remain unknown",
+        "subway, rail, commuter, LIRR, MNR, and train route descriptors remain unknown",
+        "source description text is not used as a proposal veto because mixed update decks often describe observed operations and proposed follow-up work together",
+        "explicit relation lifecycle wording still runs first and can classify planned/proposed rows before this delivered-only lane"
+      ]
+    }
+  },
+  "baseline": {
+    "corridor_scope_total": 1286,
+    "corridor_scope_unknown": 276,
+    "corridor_scope_unknown_pct": 21.5,
+    "operates_on_corridor_unknown": 269
+  },
+  "after": {
+    "validate_issues": 0,
+    "relation_assertion_unknown_total": 3044,
+    "corridor_scope_total": 1286,
+    "corridor_scope_unknown": 120,
+    "corridor_scope_unknown_pct": 9.3,
+    "operates_on_corridor_unknown": 113,
+    "operates_on_corridor_delivered": 581
+  },
+  "delta": {
+    "relation_assertion_unknown_total": -156,
+    "corridor_scope_unknown": -156,
+    "corridor_scope_unknown_pct_points": -12.2,
+    "operates_on_corridor_unknown": -156
+  },
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+      "result": "passed: 91 tests, 473 expect calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "passed"
+    },
+    {
+      "command": "bun run materialize",
+      "result": "passed: Materialized 93067/98119 submissions; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "bun run validate",
+      "result": "passed: Issues 0"
+    },
+    {
+      "command": "threshold SQL",
+      "result": "corridor_scope 120/1286 unknown, 9.3%"
+    }
+  ],
+  "intentionally_unresolved": [
+    "Draft/proposed/service-plan/final-plan source-context route-corridor rows remain unknown unless an explicit relation lifecycle rule already classifies them.",
+    "Split-candidate, aggregate/list, subway, rail, and commuter route subjects remain unknown.",
+    "Non-route subject corridor_scope rows remain outside this lane.",
+    "Non-operates_on_corridor residuals remain outside this lane because they are below the v1 threshold once the main route-corridor family is handled."
+  ],
+  "next_candidate_lanes": [
+    "Continue Plan 004 with timeline_context and claim_context, which remain above 10%.",
+    "Do not broaden corridor_scope further for v1 unless downstream consumers expose a specific residual route-timeline gap."
+  ]
+}

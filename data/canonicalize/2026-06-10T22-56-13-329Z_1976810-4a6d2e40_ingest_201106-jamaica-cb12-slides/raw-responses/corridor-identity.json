@@ -1,0 +1,97 @@
+{
+  "run_id": "2026-06-10T22-56-13-329Z_1976810-4a6d2e40_ingest_201106-jamaica-cb12-slides",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T01:37:53.913Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "archer-ave-cb12-2011-new",
+        "local_observation_id": "corridor_archer_ave_jamaica_cb12_2011",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'corridor_archer-ave-busway' is an existing canonical registry record (aliases include 'corridor_archer-ave-jamaica-cb12-2011'). The observation already resolves to this record — same corridor (Archer Avenue, Queens), same source, same description of busiest local bus corridor with up to 180 buses/hr.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p014_c0003",
+            "source_quote": "Busiest local bus corridor in NYC (up to 180 buses/hr per direction)"
+          },
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p012_c0003",
+            "source_quote": "Archer Avenue Improved Bus Lanes"
+          }
+        ]
+      },
+      {
+        "decision_id": "jamaica-ave-cb12-2011-new",
+        "local_observation_id": "corridor_jamaica_ave_cb12_2011",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'corridor_jamaica-ave-busway' is an existing canonical registry record (aliases include 'corridor_jamaica-ave-cb12-2011'). The observation already resolves to this record — same corridor (Jamaica Avenue, Queens), same limits (Parsons Blvd to 168th St with west extension), same source.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p019_c0003",
+            "source_quote": "Jamaica Avenue - Up to 90 buses/hr per direction - Congestion delays due to pedestrians, turning vehicles, deliveries"
+          },
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p020_c0003",
+            "source_quote": "Jamaica Avenue"
+          },
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p022_c0003",
+            "source_quote": "Jamaica Avenue"
+          }
+        ]
+      },
+      {
+        "decision_id": "merrick-blvd-cb12-2011-new",
+        "local_observation_id": "corridor_merrick_blvd_cb12_2011",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'corridor_merrick-blvd-cb12-2011' is an existing canonical registry record with the same source, same limits (Hillside Avenue to Archer Avenue), same description. The observation already resolves to this record.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p024_c0003",
+            "source_quote": "Merrick Boulevard Bus Lane - Hillside Avenue to Archer Avenue - High-visibility, 24-hour bus lane would improve access to the 165th Street Bus Terminal"
+          },
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p024_c0005",
+            "source_quote": "Merrick Boulevard Bus Lane"
+          },
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p024_c0006",
+            "source_quote": "Merrick Boulevard Bus Lane"
+          }
+        ]
+      },
+      {
+        "decision_id": "165th-st-cb12-2011-new",
+        "local_observation_id": "corridor_165th_st_cb12_2011",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'corridor_165th-st-cb12-2011' is an existing canonical registry record with the same source, same limits (Hillside Avenue to 89th Avenue), same description. The observation already resolves to this record.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p025_c0003",
+            "source_quote": "165th Street Bus Lane - Hillside Avenue to 89th Avenue - Prioritizes bus movements exiting from 165th Street Bus Terminal"
+          },
+          {
+            "source_id": "201106_jamaica_cb12_slides",
+            "block_id": "p025_c0005",
+            "source_quote": "165th Street Bus Lane"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-35-46-826Z_2111393-432351fb_canonicalize_2026-06-10t22-56-13-329z-1976810-4a6d2e40-ingest-201106-jamaica-cb12-slides-corridor-identity"
+}

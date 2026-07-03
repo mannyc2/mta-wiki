@@ -1,0 +1,34 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:38:09.267Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_4e85d36238.md",
+  "cluster_id": "entity_cluster_4e85d36238",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_4e85d36238",
+    "kind": "entity",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "entity_meeting-doc-104796-nice-bus",
+          "entity_nice-systems"
+        ],
+        "reason": "Contradiction test (rule 1): strong identity field entity_type differs — 'bus operator' vs 'company'. Shared acronym 'NICE' is insufficient to override."
+      }
+    ],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "The two records share the acronym 'NICE' but have different entity_type values: one is a bus operator (Nassau Inter-County Express) and the other is a company (NICE Systems, Inc.). Under the Identity Merge Canon's contradiction test, differing strong identity fields force do_not_merge regardless of name similarity."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-38-03-954Z_1282984-3d361a3c_identity-review-run_entity-cluster-4e85d36238",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-38-03-954Z_2026-06-23T14-38-03-954Z_1282984-3d361a3c_identity-review-run_entity-cluster-4e85d36238.jsonl"
+}

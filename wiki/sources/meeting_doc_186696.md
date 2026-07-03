@@ -1,0 +1,154 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-186696"
+record_kind: "source"
+display_name: "MTA Long Island Rail Road July Financial Plan – 2025 Mid-Year Forecast"
+source_id: "meeting_doc_186696"
+source_ids:
+  - "meeting_doc_186696"
+local_observation_id: "source_mta_lirr_2025_midyear_forecast"
+local_observation_ids:
+  - "source_mta_lirr_2025_midyear_forecast"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T20:12:37.483Z"
+raw_text: "MTA Long Island Rail Road July Financial Plan – 2025 Mid-Year Forecast BY MONTH"
+submission_ids:
+  - "sub_94fc3bb5c89a04f6"
+payload:
+  authority_tier: "plan_document"
+  content_type: "financial_plan"
+  date_text: "2025"
+  date_text_normalized:
+    confidence: "submitted_iso"
+    normalized_date: "2025"
+    precision: "year"
+    raw_text: "2025"
+  description: "MTA Long Island Rail Road July Financial Plan – 2025 Mid-Year Forecast accrual statement of operations, cash receipts and expenditures, ridership and traffic volume, and position counts by category"
+  document_type: "Financial Plan"
+  published_date_normalized: "2025"
+  published_date_precision: "year"
+  publisher: "MTA Long Island Rail Road"
+  title: "July Financial Plan – 2025 Mid-Year Forecast"
+  year: 2025
+evidence_refs:
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_186696#p001_c0002"
+    page_number: 1
+    role: "header"
+    source_id: "meeting_doc_186696"
+    source_path: "raw/sources/meeting_doc_186696/blocks.jsonl"
+    source_quote: "Long Island Rail Road"
+    text_sha256: "sha256:b8ae0da2bc74d75523eb0f5a5502253b0183373a0cc3b70d7891a451a10ddee3"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_186696#p001_c0003"
+    page_number: 1
+    role: "header"
+    source_id: "meeting_doc_186696"
+    source_path: "raw/sources/meeting_doc_186696/blocks.jsonl"
+    source_quote: "July Financial Plan – 2025 Mid-Year Forecast"
+    text_sha256: "sha256:64bb462f8c8d0297fff7772dba16bf25892e514c94aab019dd21c767a74ae173"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0001"
+    evidence_id: "meeting_doc_186696#p002_c0001"
+    page_number: 2
+    role: "table_header"
+    source_id: "meeting_doc_186696"
+    source_path: "raw/sources/meeting_doc_186696/blocks.jsonl"
+    source_quote: "MTA LONG ISLAND RAIL ROAD July Financial Plan - 2025 Mid-Year Forecast Accrual Statement of Operations By Category"
+    text_sha256: "sha256:2458fef45b90e6ec1781d0e72c691320597c941abfd0a0f53d778cb72ac52862"
+    text_source: "raw_text"
+---
+
+# 2025 mid-year forecast
+
+source_id: meeting_doc_186696
+citation: cite block ids exactly as shown in square brackets
+document: 24 block(s)
+
+## Page 1
+
+> [p001_c0001] The MTA logo, consisting of the letters "MTA" in white inside a dark blue circle.
+[p001_c0002] Long Island Rail Road
+[p001_c0003] July Financial Plan – 2025 Mid-Year Forecast
+[p001_c0004] BY MONTH
+
+## Page 2
+
+### [p002_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan - 2025 Mid-Year Forecast Accrual Statement of Operations By Category
+[p002_c0002]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Total Non-Reimbursable Operating Revenue Forebox Revenue $51,274 $47,767 $54,665 $55,781 $59,338 $62,025 $61,529 $61,451 $59,904 $62,240 $59,743 $58,543 $694,260 Other Operating Revenue 2,972 6,265 5,802 2,829 3,019 4,971 2,989 2,803 3,043 3,234 3,135 4,087 45,149 Total Revenues $54,245 $54,032 $60,467 $58,610 $62,357 $66,996 $64,517 $64,254 $62,947 $65,474 $62,878 $62,630 $739,409 Operating Expenses Labor: Payroll $66,982 $53,982 $58,057 $53,501 $63,405 $61,226 $60,787 $63,441 $58,257 $69,319 $51,960 $95,904 $746,593 Overtime 14,924 16,307 11,963 15,933 12,009 12,788 15,630 13,454 14,973 13,307 13,008 16,942 171,118 Health and Welfare 15,158 18,188 14,115 15,593 15,915 15,995 15,226 15,825 14,978 15,924 16,174 15,314 163,381 OPEB Current Payments 6,777 6,530 6,558 6,465 6,617 6,617 6,617 6,617 6,617 6,617 6,617 6,617 79,186 Pension 16,582 16,672 15,373 14,379 16,426 16,582 15,828 16,413 15,900 16,653 17,000 15,886 193,398 Other Fringe Benefits 17,969 16,087 14,303 17,770 16,669 16,864 19,123 16,385 17,470 15,361 12,110 16,540 201,112 Reimbursable Overhead (2,500) (2,516) (3,988) (4,519) (2,905) (2,777) (3,415) (2,915) (3,609) (2,728) (2,437) (3,405) (37,510) Total Labor Expenses $135,637 $124,250 $116,264 $117,326 $128,078 $127,245 $129,796 $129,227 $124,268 $134,958 $114,332 $165,770 $1,537,757 Non-Labor: Electric Power $9,080 $9,451 $10,449 $9,025 $9,378 $10,110 $9,680 $10,313 $10,432 $10,370 $9,318 $11,048 $118,653 Fuel 2,722 1,991 2,381 2,004 1,979 1,863 1,898 1,903 1,775 1,704 1,820 2,864 24,903 Insurance 0,515 2,574 2,530 2,529 2,528 2,528 2,528 2,528 2,528 2,528 2,528 2,528 30,388 Claims 0,000 0,119 0,076 0,139 0,399 0,399 0,399 0,399 0,399 0,399 0,399 0,399 3,937 Paratransit Service Contracts 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 Maintenance and Other Operating Contracts 10,666 5,867 7,859 8,197 9,737 10,084 10,005 9,711 9,716 10,599 10,969 23,487 126,896 Professional Services Contracts 4,597 2,643 3,383 4,163 3,224 7,815 5,501 2,944 3,267 3,407 3,267 8,379 53,041 Materials and Supplies 10,834 12,428 17,778 14,910 14,092 14,224 11,391 10,080 10,947 7,605 6,646 15,329 140,462 Other Business Expenses 1,679 1,584 4,079 1,929 1,998 1,740 2,189 2,141 1,800 2,075 2,094 2,469 25,766 Total Non-Labor Expenses $42,523 $36,657 $48,535 $37,092 $43,324 $48,762 $43,591 $40,019 $41,313 $38,695 $37,040 $66,503 $524,046 Other Expense Adjustments: Other Expense Adjustments $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 Total Other Expense Adjustments $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 Total Expenses $178,155 $160,907 $164,799 $154,418 $171,402 $176,007 $173,387 $169,240 $165,599 $173,643 $151,373 $222,273 $2,061,203 Depreciation $46,384 $46,384 $46,384 $49,216 $47,962 $47,962 $46,404 $46,404 $46,404 $46,404 $46,404 $46,404 $562,717 GASB 49 Environmental Remediation 0,167 0,167 0,468 0,167 0,133 0,133 0,133 0,133 0,133 0,133 0,133 0,100 2,000 GASB 68 Pension Expense Adjustment 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,480 4,480 GASB 75 OPEB Expense Adjustment 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 0,000 35,000 350,000 GASB 87 Lease Adjustment 6,918 (0,760) (0,348) (0,830) (0,052) (0,052) (0,052) (0,052) (0,052) (0,052) (0,052) (0,052) 4,547 GASB 86 SBITA Adjustment 0,288 0,289 0,289 0,290 0,050 0,050 0,050 0,050 0,050 0,050 0,050 0,050 1,556 Total Non-Cash Liability Adjustments $53,757 $46,059 $46,793 $48,842 $48,093 $48,093 $46,536 $46,536 $46,536 $46,536 $46,536 $81,982 $606,300 Total Expenses After Non-Cash Liability Adjs. $231,911 $206,966 $211,592 $203,261 $219,495 $224,101 $219,923 $215,776 $212,135 $220,179 $197,909 $304,256 $2,667,503 Net Surplus/(Deficit) ($177,666) ($152,934) ($151,125) ($144,650) ($157,139) ($157,104) ($155,406) ($151,522) ($148,189) ($154,705) ($135,030) ($241,626) ($1,928,094) Cash Conversion Adjustments: Depreciation $46,384 $46,384 $46,384 $49,216 $47,962 $47,962 $46,404 $46,404 $46,404 $46,404 $46,404 $46,404 $562,717 Operating/Capital (0,054) (0,709) (0,331) (0,842) (2,315) (2,214) (1,234) (0,752) (1,167) (0,468) (0,601) (11,681) (22,435) Other Cash Adjustments 36,198 21,764 35,967 13,073 (6,517) 25,575 13,317 11,335 23,960 1,662 8,610 53,268 240,202 Net Cash Surplus/(Deficit) ($93,149) ($85,495) ($69,105) ($83,204) ($118,067) ($85,782) ($96,918) ($94,534) ($79,961) ($107,123) ($80,617) ($153,634) ($1,147,509)
+```
+[p002_c0003] _-- Differences are due to rounding._
+
+## Page 3
+
+### [p003_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan - 2025 Mid-Year Forecast Accrual Statement of Operations By Category
+[p003_c0002]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Total Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 27.533 23.294 41.444 45.796 34.983 33.633 37.420 33.375 38.883 31.412 28.605 46.607 422.986 Total Revenues $27.533 $23.294 $41.444 $45.796 $34.983 $33.633 $37.420 $33.375 $38.883 $31.412 $28.605 $46.607 $422.986 Operating Expenses Labor: Payroll $9.062 $8.442 $11.615 $12.863 $11.806 $11.449 $13.933 $11.817 $14.457 $11.330 $10.558 $14.159 $141.490 Overtime 2.233 2.068 5.977 6.332 3.832 3.634 3.486 3.886 3.768 3.458 2.969 2.992 44.637 Health and Welfare 2.060 1.894 2.962 3.313 2.787 2.691 3.155 2.795 3.296 2.647 2.434 3.131 33.166 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 2.657 2.577 3.874 4.257 4.529 4.372 5.126 4.542 5.355 4.301 3.955 5.087 50.632 Other Fringe Benefits 2.110 1.961 3.097 3.443 2.850 2.752 3.227 2.858 3.370 2.707 2.489 3.202 34.066 Reimbursable Overhead 2.600 2.516 3.988 4.319 2.905 2.777 3.415 2.915 3.609 2.724 2.437 3.405 37.610 Total Labor Expenses $20.722 $19.459 $31.512 $34.527 $28.709 $27.675 $32.343 $28.813 $33.855 $27.169 $24.842 $37.976 $341.607 Non-Labor: Electric Power $0.033 $0.026 $0.030 $0.295 $0.030 $0.030 $0.030 $0.030 $0.030 $0.030 $0.030 $0.030 $0.623 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.582 0.479 0.906 0.931 0.924 0.869 1.006 0.923 1.070 0.855 0.745 0.929 10.219 Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 2.377 0.814 2.941 5.687 1.554 1.532 1.595 1.545 1.590 1.530 1.452 1.576 24.190 Professional Services Contracts 0.092 (0.058) 0.597 0.288 0.074 0.072 0.070 0.072 0.069 0.073 0.064 0.554 1.966 Materials and Supplies 3.697 2.544 5.388 4.014 3.653 3.418 2.333 1.955 2.223 1.719 1.439 11.500 43.882 Other Business Expenses 0.031 0.031 0.070 0.055 0.039 0.037 0.044 0.039 0.046 0.037 0.034 0.043 0.504 Total Non-Labor Expenses $6.811 $3.835 $9.932 $11.269 $6.274 $5.958 $5.078 $4.562 $5.027 $4.244 $3.763 $14.632 $81.385 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses $27.533 $23.294 $41.444 $45.796 $34.983 $33.633 $37.420 $33.375 $38.883 $31.412 $28.605 $46.607 $422.986 Net Surplus/(Deficit) $0.000 $0.000 ($0.003) $0.000 $0.003 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p003_c0003] -- Differences are due to rounding.
+
+## Page 4
+
+### [p004_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan - 2025 Mid-Year Forecast Accrual Statement of Operations By Category
+[p004_c0002]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Total Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $51,274 $47,767 $54,665 $55,781 $59,338 $62,025 $61,529 $61,451 $59,904 $62,240 $69,743 $68,643 $694,260 Other Operating Revenue 2,972 6,265 5,802 2,829 3,019 4,971 2,989 2,803 3,043 3,234 3,135 4,087 45,149 Capital and Other Reimbursements 27,533 23,294 41,444 45,796 34,983 39,633 37,420 33,375 38,883 31,412 28,605 46,607 422,988 Total Revenues $81,779 $77,326 $101,911 $104,407 $97,340 $100,629 $101,937 $97,630 $101,829 $96,887 $91,484 $109,237 $1,162,395 Operating Expenses Labor: Payroll $75,914 $62,424 $69,672 $66,364 $75,211 $72,675 $74,720 $75,258 $72,715 $80,649 $62,418 $100,053 $888,072 Overtime 17,157 18,375 17,840 22,266 15,841 16,402 19,116 17,340 18,741 16,766 15,977 19,934 215,755 Health and Welfare 17,218 17,082 17,077 16,909 18,704 18,656 18,381 18,621 18,273 18,571 18,608 18,445 216,547 OPEB Current Payments 6,717 6,530 6,538 6,465 6,617 6,617 6,617 6,617 6,617 6,617 6,617 6,617 79,186 Pension 19,249 19,249 18,637 20,955 20,955 20,955 20,955 20,955 20,955 20,955 20,955 20,955 244,020 Other Fringe Benefits 20,099 20,048 17,400 21,213 19,460 19,615 22,349 19,243 20,841 18,569 14,599 21,742 235,179 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $156,354 $143,709 $147,776 $151,853 $156,787 $154,920 $162,138 $158,034 $158,741 $162,126 $139,175 $187,746 $1,878,759 Non-Labor: Electric Power $9,114 $9,477 $10,479 $9,320 $9,408 $10,140 $9,710 $10,343 $10,462 $10,400 $9,348 $11,078 $119,277 Fuel 2,722 1,991 2,381 2,004 1,979 1,863 1,898 1,903 1,775 1,704 1,820 2,864 24,903 Insurance 3,113 3,053 3,436 3,436 3,452 3,397 3,534 3,451 3,598 3,394 3,273 3,457 40,608 Claims 0.415 0.119 0.076 0.139 0.399 0.399 0.399 0.399 0.399 0.399 0.399 0.399 3,937 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 13,043 6,691 10,799 13,883 11,291 11,616 11,601 11,255 11,305 12,129 12,420 25,063 151,096 Professional Services Contracts 4,689 2,595 3,980 4,451 3,298 7,887 5,571 3,016 3,766 3,479 3,331 8,933 55,006 Materials and Supplies 14,530 14,972 23,166 13,121 17,745 17,642 13,724 12,035 13,170 9,324 8,095 26,829 184,344 Other Business Expenses 1,710 1,615 4,149 1,983 2,026 1,777 2,232 2,180 1,845 2,112 2,128 2,513 26,270 Total Non-Labor Expenses $49,334 $40,492 $58,467 $48,361 $49,597 $54,720 $48,669 $44,382 $46,341 $42,929 $40,803 $81,135 $605,431 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses $205,688 $184,201 $206,243 $200,215 $206,384 $209,640 $210,807 $202,616 $204,482 $205,055 $179,978 $268,881 $2,484,198 Depreciation GASB 49 Environmental Remediation $46,384 $46,384 $46,384 $49,216 $47,962 $47,962 $46,404 $46,404 $46,404 $46,404 $46,404 $46,404 $562,717 GASB 68 Pension Expense Adjustment 0.167 0.167 0.468 0.167 0.133 0.133 0.133 0.133 0.133 0.133 0.133 0.100 2,000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.480 0.480 GASB 87 Lease Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 35,000 35,000 GASB 96 SBSTA Adjustment 6,918 (0.780) (0.345) (0.830) (0.055) (0.052) (0.052) (0.052) (0.052) (0.052) (0.052) (0.052) 4,547 GASB 96 SBSTA Adjustment 0.288 0.289 0.289 0.290 0.050 0.050 0.050 0.050 0.050 0.050 0.050 0.050 1,556 Total Non-Cash Liability Adjustments $53,757 $46,059 $46,796 $48,842 $48,090 $48,093 $46,536 $46,536 $46,536 $46,536 $46,536 $81,982 $606,300 Total Expenses After Non-Cash Liability Adj. $259,445 $230,260 $253,039 $249,057 $254,475 $257,733 $257,343 $249,152 $251,018 $251,591 $226,514 $350,863 $3,090,489 Total Surplus/(Deficit) ($177,666) ($152,934) ($151,128) ($144,650) ($157,135) ($157,104) ($155,406) ($151,522) ($149,189) ($154,709) ($135,030) ($241,626) ($1,928,094) Cash Conversion Adjustments: Depreciation $46,384 $46,384 $46,384 $49,216 $47,962 $47,962 $46,404 $46,404 $46,404 $46,404 $46,404 $46,404 $562,717 Operating/Capital (0.054) (0.709) (0.331) (0.842) (2.375) (2,214) (1,234) (0.752) (1,157) (0.485) (0.601) (11,681) (22,435) Other Cash Adjustments 38,188 21,764 35,987 13,073 (6,517) 25,575 13,317 11,335 23,960 1,662 8,610 53,268 240,202 Net Cash Surplus/(Deficit) ($93,149) ($85,495) ($69,108) ($83,204) ($118,064) ($85,782) ($96,918) ($94,534) ($79,981) ($107,123) ($80,617) ($153,634) ($1,147,609)
+```
+[p004_c0003] _-- Differences are due to rounding._
+
+## Page 5
+
+### [p005_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan - 2025 Mid-Year Forecast Cash Receipts and Expenditures ($ in millions)
+[p005_c0002]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Total Cash Receipts and Expenditures Receipts Farebox Revenue $51,515 $47,335 $55,047 $55,700 $59,898 $62,610 $62,109 $62,031 $60,469 $62,827 $60,307 $59,095 $698,941 Other Operating Revenue 5,563 1,520 10,168 2,171 2,892 4,851 2,864 2,685 2,915 3,099 3,004 3,922 45,654 Capital and Other Reimbursements 38,437 34,508 33,533 29,043 34,996 33,715 38,745 34,904 40,386 33,062 29,944 38,110 419,384 Total Receipts $95,514 $83,364 $98,749 $86,913 $97,786 $101,176 $103,718 $99,620 $103,770 $98,987 $93,255 $101,128 $1,163,979 Expenditures Labor: Payroll $77,669 $63,376 $65,904 $62,305 $85,416 $70,731 $82,511 $77,236 $72,047 $88,566 $71,602 $91,268 $906,631 Overtime 19,333 17,841 16,826 18,013 20,348 16,966 18,698 19,154 15,111 21,615 16,526 22,277 222,706 Health and Welfare 16,323 16,564 16,470 16,437 19,018 18,970 18,690 18,934 18,581 18,883 18,921 18,755 216,547 OPEB Current Payments 6,284 6,363 6,296 6,202 6,755 6,755 6,755 6,755 6,755 6,755 6,755 6,755 79,186 Pension 0.000 (0.037) (0.011) 0.000 0.497 0.497 0.497 0.497 0.497 0.497 0.497 0.497 3,930 Other Fringe Benefits 21,162 17,760 17,848 19,146 23,146 19,432 18,982 22,547 17,168 22,003 14,413 24,032 237,640 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $140,771 $121,868 $123,333 $122,103 $155,181 $133,351 $146,133 $145,122 $130,159 $158,319 $128,715 $163,585 $1,668,639 Non-Labor: Electric Power $10,051 $9,881 $9,859 $9,977 $9,408 $10,140 $9,710 $10,343 $10,462 $10,400 $9,348 $9,698 $119,277 Fuel 2,202 2,836 2,116 2,325 1,979 1,863 1,898 1,903 1,775 1,704 1,820 2,747 25,168 Insurance 0.000 0.012 0.015 2.008 4.786 4.710 4.900 4.784 4.989 4.692 4.303 4.557 39,755 Claims 0.004 (0.047) 0.068 (0.285) 0.597 0.597 0.597 0.597 0.597 0.597 0.597 0.597 4,504 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 12,140 11,167 13,384 16,273 12,227 12,561 12,566 12,193 12,247 13,135 13,441 27,141 168,476 Professional Services Contracts 1,629 2,063 1,205 2,532 8,391 1,297 5,774 2,319 5,569 3,827 3,232 13,421 51,279 Materials and Supplies 19,628 19,008 15,650 12,914 19,663 19,032 15,200 13,089 14,485 9,691 8,687 28,918 195,966 Other Business Expenses 1,981 2,073 2,227 2,281 2,517 2,268 2,723 2,671 2,336 2,602 2,618 3,003 29,300 Total Non-Labor Expenditures $47,636 $46,991 $44,524 $48,015 $59,568 $52,466 $53,369 $47,899 $52,480 $46,648 $44,047 $90,083 $633,726 Other Expenditure Adjustments: Other $0,256 $0,000 $0,000 $0,000 $1,104 $1,140 $1,133 $1,132 $1,112 $1,143 $1,110 $1,094 $9,224 Total Other Expenditure Adjustments $0,256 $0,000 $0,000 $0,000 $1,104 $1,140 $1,133 $1,132 $1,112 $1,143 $1,110 $1,094 $9,224 Total Expenditures $188,663 $168,859 $167,856 $170,118 $215,853 $186,957 $200,636 $194,154 $183,751 $206,110 $173,871 $254,762 $2,311,589 Net Cash Balance ($93,149) ($85,495) ($69,108) ($83,204) ($118,064) ($85,782) ($96,918) ($94,534) ($79,981) ($107,123) ($80,617) ($153,634) ($1,147,609) Cash Timing and Availability Adjustment $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 Net Cash Balance after Cash Timing & Availability Adj ($93,149) ($85,495) ($69,108) ($83,204) ($118,064) ($85,782) ($96,918) ($94,534) ($79,981) ($107,123) ($80,617) ($153,634) ($1,147,609)
+```
+
+## Page 6
+
+### [p006_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan - 2025 Mid-Year Forecast Cash Conversion (Cash Flow Adjustments) Favorable/(Unfavorable) ($ in millions)
+[p006_c0002]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Total Cash Flow Adjustments Receipts Farebox Revenue $0.241 ($0.432) $0.382 ($0.082) $0.560 $0.585 $0.580 $0.580 $0.565 $0.587 $0.563 $0.552 $4.681 Other Operating Revenue 2.591 (4.744) 4.365 (0.658) (0.127) (0.120) (0.125) (0.118) (0.128) (0.136) (0.132) (0.165) 0.505 Capital and Other Reimbursements 10.904 11.214 (7.910) (16.753) 0.013 0.082 1.325 1.528 1.504 1.649 1.339 (8.497) (3.602) Total Receipts $13.736 $6.038 ($3.162) ($17.493) $0.446 $0.547 $1.780 $1.990 $1.941 $2.101 $1.771 ($8.110) $1.584 Expenditures Labor: Payroll ($1.755) ($0.952) $3.768 $4.060 ($10.205) $1.943 ($7.911) ($1.977) $0.668 ($7.917) ($9.184) $8.784 ($20.558) Overtime (2.177) 0.534 1.015 4.253 (4.507) (0.563) 0.418 (1.814) 3.630 (4.849) (0.549) (2.342) (6.951) Health and Welfare 0.895 0.518 0.607 0.472 (0.314) (0.309) (0.309) (0.313) (0.307) (0.312) (0.313) (0.310) 0.000 OPEB Current Payments 0.433 0.167 0.242 0.262 (0.138) (0.138) (0.138) (0.138) (0.138) (0.138) (0.138) (0.138) 0.000 Pension 19.249 19.286 19.260 18.637 20.457 20.457 20.457 20.457 20.457 20.457 20.457 20.457 240.090 Other Fringe Benefits (1.063) 2.288 (0.448) 2.067 (3.686) 0.183 3.367 (3.303) 3.673 (3.434) 0.186 (2.280) (2.461) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursement Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $15.582 $21.841 $24.443 $29.751 $1.606 $21.569 $16.005 $12.912 $27.983 $3.807 $10.460 $24.161 $210.120 Non-Labor: Electric Power ($0.938) ($0.404) $0.620 ($0.658) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $1.380 $0.000 Fuel 0.520 (0.845) 0.264 (0.321) 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 (0.265) Insurance 3.113 3.042 3.422 1.452 (1.334) (1.313) (1.366) (1.194) (1.380) (1.308) (1.030) (1.100) 0.852 Claims 0.411 0.166 0.008 0.433 (0.198) (0.198) (0.198) (0.198) (0.198) (0.198) (0.198) (0.198) (0.567) Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.903 (4.486) (2.584) (2.390) (0.936) (0.945) (0.966) (0.938) (0.942) (1.007) (1.021) (2.078) (17.390) Professional Services Contracts 3.060 0.522 2.774 1.920 (5.094) 6.590 (0.203) 0.687 (1.803) (0.348) 0.099 (4.487) 3.727 Materials and Supplies (5.098) (4.036) 7.517 0.207 (1.918) (1.389) (1.054) (1.054) (1.315) (0.368) (0.602) (2.089) (11.622) Other Business Expenses (0.271) (0.458) 1.922 (0.298) (0.491) (0.491) (0.491) (0.491) (0.491) (0.491) (0.491) (0.491) (3.030) Total Non-Labor Expenditures $1.698 ($6.499) $13.943 $0.346 ($9.971) $2.253 ($4.700) ($3.317) ($8.139) ($3.719) ($3.243) ($8.948) ($28.299) Other Expenditure Adjustments: Other ($0.256) $0.000 $0.000 $0.000 ($1.104) ($1.140) ($1.133) ($1.132) ($1.112) ($1.143) ($1.110) ($1.094) ($9.224) Total Other Expenditure Adjustments ($0.256) $0.000 $0.000 $0.000 ($1.104) ($1.140) ($1.133) ($1.132) ($1.112) ($1.143) ($1.110) ($1.094) ($9.224) Total Expenditures $17.025 $15.342 $38.396 $30.097 ($9.469) $22.683 $10.171 $8.462 $20.732 ($1.055) $6.107 $14.119 $172.600 Total Cash Conversion before Non-Cash Liability Adjs. $30.761 $21.380 $35.224 $12.604 ($9.022) $23.229 $11.952 $10.452 $22.673 $1.046 $7.878 $6.009 $174.184 Depreciation $46.384 $46.384 $46.384 $49.216 $47.962 $47.962 $46.404 $46.404 $46.404 $46.404 $46.404 $46.404 $562.717 GASB 49 Environmental Remediation 0.167 0.167 0.468 0.167 0.133 0.133 0.133 0.133 0.133 0.133 0.133 0.100 2.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.460 0.460 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 35.000 35.000 GASB 87 Lease Adjustment 6.918 (0.780) (0.345) (0.630) (0.052) (0.052) (0.052) (0.052) (0.052) (0.052) (0.052) (0.052) 4.547 GASB 96 SBMTA Adjustment 0.288 0.289 0.289 0.290 0.050 0.050 0.050 0.050 0.050 0.050 0.050 0.050 1.556 Total Non-Cash Liability Adjustments $53.757 $46.059 $46.796 $48.842 $48.093 $48.093 $46.538 $46.536 $46.536 $46.536 $46.536 $87.992 $606.300 Total Cash Conversion Adjustments $84.517 $67.439 $82.020 $61.446 $39.071 $71.322 $58.487 $55.988 $69.208 $47.582 $54.413 $87.991 $780.484 Cash Timing and Availability $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Cash Conversion Adjustments $84.517 $67.439 $82.020 $61.446 $39.071 $71.322 $58.487 $55.988 $69.208 $47.582 $54.413 $87.991 $780.484
+```
+[p006_c0003] -- Differences are due to rounding.
+
+## Page 7
+
+### [p007_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan - 2025 Mid-Year Forecast Ridership and Traffic Volume (Utilization) (in millions)
+[p007_c0002]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Total RIDERSHIP Total Commutation 2,452 2,270 2,612 2,729 2,634 2,873 2,892 2,874 2,851 3,064 2,692 2,831 32,774 Total Non-Commutation 3,655 3,289 3,973 4,064 4,390 4,277 4,306 4,278 4,243 4,561 4,007 4,214 49,256 Total Ridership 6,107 5,559 6,585 6,793 7,024 7,150 7,198 7,152 7,094 7,624 6,699 7,045 82,030 FAREBOX REVENUE Baseline Total Farebox Revenue $51,274 $47,767 $54,665 $55,781 $59,338 $62,025 $61,529 $61,451 $59,904 $62,240 $59,743 $58,543 $694,260
+```
+
+## Page 8
+
+### [p008_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan - 2025 Mid-Year Forecast Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time/Full-Time Equivalents
+[p008_c0002]
+
+```text
+FUNCTION/DEPARTMENT Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Administration President 12 12 12 11 15 15 15 15 15 15 15 15 Market Dev & Mailroom 14 15 15 14 14 14 14 14 14 14 14 14 Security 12 12 12 12 14 14 14 14 14 14 14 14 Safety 54 54 54 54 55 55 55 55 55 55 55 55 Training 69 68 68 67 72 72 72 72 72 72 72 72 Rolling Stock Programs 10 10 10 10 17 17 17 17 17 17 17 17 VP Ops Support & Org Res 4 4 4 4 4 4 4 4 4 4 4 4 Communications 56 56 57 57 54 54 54 54 54 54 54 54 Labor Relations 13 13 12 12 13 13 13 13 13 13 13 13 Diversity 2 2 2 2 2 2 2 2 2 2 2 2 Legal 27 27 27 27 25 25 25 25 25 25 25 25 Procurement & Mail Mgmt 139 135 139 140 144 144 144 144 144 144 144 144 Finance 54 55 56 55 58 58 58 58 58 58 58 58 People 35 35 36 36 37 37 37 37 37 37 37 37 Security Pass Office 3 3 2 2 3 3 3 3 3 3 3 3 Total Administration 504 501 506 503 527 527 527 527 527 527 527 527 Operations Service Planning 31 31 31 31 28 28 28 28 28 28 28 28 Sr Vice President - Operations 3 3 3 3 4 4 4 4 4 4 4 4 Enterprise Asset Management 7 7 7 7 9 9 9 9 9 9 9 9 Transportation 2,362 2,350 2,347 2,362 2,267 2,267 2,267 2,267 2,267 2,265 2,264 2,264 Stations 543 546 535 539 539 539 539 539 539 538 538 538 Total Operations 2,946 2,937 2,923 2,942 2,847 2,847 2,847 2,847 2,847 2,844 2,843 2,843 Maintenance Sr. Vice President - Engineering 1 1 1 1 1 1 1 1 1 1 1 1 Maintenance of Way 2,122 2,115 2,111 2,102 2,197 2,197 2,197 2,197 2,197 2,197 2,197 2,249 Maintenance of Equipment 2,201 2,188 2,208 2,220 2,226 2,216 2,209 2,203 2,166 2,187 2,205 2,212 Railroad Program Support 44 43 43 42 52 52 52 52 52 52 52 52 Total Maintenance 4,368 4,347 4,363 4,365 4,476 4,466 4,459 4,453 4,416 4,437 4,455 4,514 Engineering/Capital Special Projects 33 33 32 31 46 46 46 46 46 46 46 46 Construction & Development 84 84 83 82 128 128 128 128 128 128 128 128 Total Engineering/Capital 117 117 115 113 174 174 174 174 174 174 174 174 Total Positions 7,935 7,902 7,907 7,923 8,023 8,014 8,007 8,001 7,964 7,982 7,999 8,058 Non-Reimbursable 7,067 7,055 6,947 6,920 6,800 6,858 6,863 6,808 6,778 6,840 6,936 6,924 Reimbursable 868 847 960 1,003 1,223 1,156 1,144 1,193 1,186 1,142 1,063 1,134 Total Full-Time 7,935 7,902 7,907 7,923 8,023 8,014 8,007 8,001 7,964 7,982 7,999 8,058 Total Full-Time-Equivalents - - - - - - - - - - - -
+```
+
+## Page 9
+
+### [p009_c0001] MTA LONG ISLAND RAIL ROAD July Financial Plan - 2025 Mid-Year Forecast Total Positions by Function and Occupation
+[p009_c0002]
+
+```text
+FUNCTION / OCCUPATION Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Administration Managers/Supervisors 249 250 250 247 259 259 259 259 259 259 259 259 Professional/Technical/Clerical 145 145 145 146 155 155 155 155 155 155 155 155 Operational Hourlies 110 106 111 110 113 113 113 113 113 113 113 113 Total Administration Headcount 504 501 506 503 527 527 527 527 527 527 527 527 Operations Managers/Supervisors 379 377 374 372 395 395 395 395 395 394 394 394 Professional/Technical/Clerical 148 146 145 146 151 151 151 151 151 149 148 148 Operational Hourlies 2,419 2,414 2,404 2,424 2,301 2,301 2,301 2,301 2,301 2,301 2,301 2,301 Total Operations Headcount 2,946 2,937 2,923 2,942 2,847 2,847 2,847 2,847 2,847 2,844 2,843 2,843 Maintenance Managers/Supervisors 921 913 915 920 1,033 1,022 1,015 1,021 1,032 1,034 1,013 1,037 Professional/Technical/Clerical 228 238 241 236 267 267 267 267 250 250 260 260 Operational Hourlies 3,219 3,196 3,207 3,209 3,176 3,177 3,178 3,165 3,134 3,153 3,182 3,217 Total Maintenance Headcount 4,368 4,347 4,363 4,365 4,476 4,466 4,459 4,453 4,416 4,437 4,455 4,514 Engineering / Capital Managers/Supervisors 105 105 104 102 118 118 118 118 118 118 118 118 Professional/Technical/Clerical 12 12 11 11 56 56 56 56 56 56 56 56 Operational Hourlies 0 0 0 0 0 0 0 0 0 0 0 0 Total Engineering Headcount 117 117 115 113 174 174 174 174 174 174 174 174 Public Safety Managers/Supervisors 0 0 0 0 0 0 0 0 0 0 0 0 Professional, Technical, Clerical 0 0 0 0 0 0 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 0 0 0 0 0 0 Total Public Safety Headcount 0 0 0 0 0 0 0 0 0 0 0 0 Total Positions Managers/Supervisors 1,654 1,645 1,643 1,641 1,805 1,794 1,787 1,793 1,804 1,805 1,784 1,808 Professional, Technical, Clerical 533 541 542 539 628 628 628 628 611 609 618 619 Operational Hourlies 5,748 5,716 5,722 5,743 5,590 5,591 5,592 5,579 5,548 5,568 5,596 5,631 Total Positions 7,935 7,902 7,907 7,923 8,023 8,014 8,007 8,001 7,964 7,982 7,999 8,058
+```

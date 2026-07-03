@@ -1,0 +1,84 @@
+{
+  "run_id": "2026-06-10T22-56-13-151Z_1976810-216ae5f7_ingest_201011-nostrand-handout",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T01:04:39.548Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "d1-nostrand-rogers-sbs",
+        "local_observation_id": "corridor_nostrand_rogers_sbs_201011",
+        "decision": "new",
+        "rationale": "Observation maps to its own base_record_id corridor_nostrand-avenue, which is the canonical registry record for Nostrand Avenue. No different target exists.",
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p004_c0004",
+            "source_quote": "The map illustrates the SBS corridor from Williamsburg Bridge Plaza Station in Queens to Avenue U Station in Brooklyn."
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "paired-sbs-corridor",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "corridor_rogers-avenue",
+            "description": "Nostrand Avenue carries southbound SBS service; Rogers Avenue carries northbound SBS service. Together they form the paired B44 SBS corridor from Williamsburg Bridge to Sheepshead Bay.",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p001_c0006",
+                "source_quote": "Northbound on Rogers Av, Southbound on Nostrand Av"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "d2-rogers-avenue",
+        "local_observation_id": "corridor_rogers_avenue_201011",
+        "decision": "new",
+        "rationale": "Observation maps to its own base_record_id corridor_rogers-avenue, which is the canonical registry record for Rogers Avenue. No different target exists.",
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p001_c0006",
+            "source_quote": "Northbound SBS will travel on Rogers instead of New York Ave, for faster and more direct service"
+          }
+        ]
+      },
+      {
+        "decision_id": "d3-bedford-avenue",
+        "local_observation_id": "corridor_bedford_avenue_201011",
+        "decision": "new",
+        "rationale": "Observation maps to its own base_record_id corridor_bedford-avenue-201011, which is the canonical registry record for Bedford Avenue in the Nostrand/Rogers SBS project area. No different target exists.",
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p001_c0004",
+            "source_quote": "Select Bus Service (SBS) is coming to Nostrand, Rogers, and Bedford Avenues"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same-project-area",
+            "subject_id": "corridor_bedford-avenue-201011",
+            "object_id": "corridor_nostrand-avenue",
+            "description": "Bedford Avenue is part of the same SBS project area as Nostrand and Rogers Avenues, as mentioned together in the Nostrand/Rogers SBS handout.",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p001_c0004",
+                "source_quote": "Select Bus Service (SBS) is coming to Nostrand, Rogers, and Bedford Avenues"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-47-190Z_2111393-1d1cfbab_canonicalize_2026-06-10t22-56-13-151z-1976810-216ae5f7-ingest-201011-nostrand-handout-corridor-identity"
+}

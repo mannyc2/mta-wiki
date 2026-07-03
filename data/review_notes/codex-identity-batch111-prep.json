@@ -1,0 +1,263 @@
+{
+  "batch_id": "codex-identity-batch111",
+  "created_at": "2026-06-23T04:43:35Z",
+  "scope": {
+    "record_kinds": [
+      "route"
+    ],
+    "note": "CORRIDOR/ROUTE ONLY request; this prep found eight high-confidence route duplicates and selected no corridor aliases because remaining same-name corridor groups carried scope/limit ambiguity."
+  },
+  "prepared_count": 8,
+  "all_pass": true,
+  "expected_delta": {
+    "duplicate_global_identity": -8
+  },
+  "proposed_aliases": [
+    {
+      "kind": "route",
+      "alias_id": "route_qm15-201110-qbb",
+      "target_id": "route_qm15-qbb-study",
+      "reason": "Same global route in the Queensboro Bridge bus priority study context. Both records identify QM15 express service, with exact route_id match and express service variant/type agreement.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "QM15",
+          "service_variant": "express",
+          "route_type_normalized": "express",
+          "display_name": "QM15 Express Bus Route"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "QM15",
+          "service_variant": "express",
+          "route_type_normalized": "express",
+          "display_name": "QM15"
+        }
+      },
+      "source_evidence_refs": [
+        "201110_qbb_approach_summary#p008_c0003",
+        "201110_qbb_summary_recommendations#p010_c0005"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_qm16-201110-qbb",
+      "target_id": "route_qm16-qbb-study",
+      "reason": "Same global route in the Queensboro Bridge bus priority study context. Both records identify QM16 express service, with exact route_id match and express service variant/type agreement.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "QM16",
+          "service_variant": "express",
+          "route_type_normalized": "express",
+          "display_name": "QM16 Express Bus Route"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "QM16",
+          "service_variant": "express",
+          "route_type_normalized": "express",
+          "display_name": "QM16"
+        }
+      },
+      "source_evidence_refs": [
+        "201110_qbb_approach_summary#p008_c0003",
+        "201110_qbb_summary_recommendations#p010_c0005"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_qm17-201110-qbb",
+      "target_id": "route_qm17-qbb-study",
+      "reason": "Same global route in the Queensboro Bridge bus priority study context. Both records identify QM17 express service, with exact route_id match and express service variant/type agreement.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "QM17",
+          "service_variant": "express",
+          "route_type_normalized": "express",
+          "display_name": "QM17 Express Bus Route"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "QM17",
+          "service_variant": "express",
+          "route_type_normalized": "express",
+          "display_name": "QM17"
+        }
+      },
+      "source_evidence_refs": [
+        "201110_qbb_approach_summary#p008_c0003",
+        "201110_qbb_summary_recommendations#p010_c0005"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_qm21-201110-qbb",
+      "target_id": "route_qm21-qbb-study",
+      "reason": "Same global route in the Queensboro Bridge bus priority study context. Both records identify QM21 express service, with exact route_id match and express service variant/type agreement.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "QM21",
+          "service_variant": "express",
+          "route_type_normalized": "express",
+          "display_name": "QM21 Express Bus Route"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "QM21",
+          "service_variant": "express",
+          "route_type_normalized": "express",
+          "display_name": "QM21"
+        }
+      },
+      "source_evidence_refs": [
+        "201110_qbb_approach_summary#p008_c0003",
+        "201110_qbb_summary_recommendations#p010_c0005"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_qm24-201110-qbb",
+      "target_id": "route_qm24-qbb-study",
+      "reason": "Same global route in the Queensboro Bridge bus priority study context. Both records identify QM24 express service, with exact route_id match and express service variant/type agreement.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "QM24",
+          "service_variant": "express",
+          "route_type_normalized": "express",
+          "display_name": "QM24 Express Bus Route"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "QM24",
+          "service_variant": "express",
+          "route_type_normalized": "express",
+          "display_name": "QM24"
+        }
+      },
+      "source_evidence_refs": [
+        "201110_qbb_approach_summary#p008_c0003",
+        "201110_qbb_summary_recommendations#p010_c0005"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_qm4-201110-qbb",
+      "target_id": "route_qm4-qbb-study",
+      "reason": "Same global route in the Queensboro Bridge bus priority study context. Both records identify QM4 express service, with exact route_id match and express service variant/type agreement.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "QM4",
+          "service_variant": "express",
+          "route_type_normalized": "express",
+          "display_name": "QM4 Express Bus Route"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "QM4",
+          "service_variant": "express",
+          "route_type_normalized": "express",
+          "display_name": "QM4"
+        }
+      },
+      "source_evidence_refs": [
+        "201110_qbb_approach_summary#p008_c0003",
+        "201110_qbb_summary_recommendations#p010_c0005"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_meeting-doc-79331-bx25",
+      "target_id": "route_bx25-dec2021",
+      "reason": "Same global route. Both records identify the Bx25 local route/new route serving northern Co-op City to Allerton Avenue/Bedford Park, with exact route_id match and local service variant/type agreement.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "Bx25",
+          "service_variant": "local",
+          "route_type_normalized": "local",
+          "display_name": "Bx25"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "Bx25",
+          "service_variant": "local",
+          "route_type_normalized": "local",
+          "display_name": "Bx25 - new route"
+        }
+      },
+      "source_evidence_refs": [
+        "meeting_doc_79331#p053_c0005",
+        "meeting_doc_68306#p037_c0008"
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_m23-local-cb5",
+      "target_id": "route_m23-local-cb4-apr2016",
+      "reason": "Same global route. Both records identify M23 local Manhattan Crosstown service in the M23 SBS planning context, with exact route_id match and local service variant/type agreement.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "M23",
+          "service_variant": "local",
+          "route_type_normalized": "local",
+          "display_name": "M23"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "M23",
+          "service_variant": "local",
+          "route_type_normalized": "local",
+          "display_name": "M23"
+        }
+      },
+      "source_evidence_refs": [
+        "brt_m23_cb5_mar2016#p006_c0002",
+        "brt_m23_cb4_apr2016#p006_c0002"
+      ]
+    }
+  ],
+  "guard_summary": {
+    "candidate_discovery": {
+      "route_group_command": "sqlite3 -header -column data/canonical.db \"select upper(coalesce(routes.route_id,'')) as route_id, coalesce(json_extract(records.payload,'$.service_variant'),'') as service_variant, coalesce(routes.route_type_normalized,'') as route_type_normalized, count(*) as n, group_concat(records.record_id, ' | ') as ids from records join routes on records.record_id=routes.record_id where records.record_kind='route' and coalesce(routes.route_id,'') != '' group by upper(routes.route_id), coalesce(json_extract(records.payload,'$.service_variant'),''), coalesce(routes.route_type_normalized,'') having n > 1 order by n desc, route_id limit 120;\"",
+      "corridor_group_command": "sqlite3 -header -column data/canonical.db \"select lower(coalesce(corridors.corridor_name, corridors.name, corridors.street, records.display_name,'')) as name_key, count(*) as n, group_concat(records.record_id, ' | ') as ids from records join corridors on records.record_id=corridors.record_id where records.record_kind='corridor' and coalesce(corridors.corridor_name, corridors.name, corridors.street, records.display_name,'') != '' group by lower(coalesce(corridors.corridor_name, corridors.name, corridors.street, records.display_name,'')) having n > 1 order by n desc, name_key limit 120;\"",
+      "result_summary": "Route groups yielded the safest remaining candidates. Six selected pairs are exact Queensboro Bridge express-route duplicates left after earlier QBB route batches; two additional selected pairs have exact route_id and local service variant/type agreement. Corridor groups were inspected but skipped because remaining same-name candidates had materially different or ambiguous limits/scope risk."
+    },
+    "record_existence_and_kind": {
+      "command": "sqlite3 -header -column data/canonical.db \"select r.record_id, r.record_kind, r.display_name, routes.route_id, json_extract(r.payload,'$.service_variant') as service_variant, routes.route_type_normalized, routes.route_name, routes.route_label, r.primary_source_id, (select count(*) from record_sources rs where rs.record_id=r.record_id) as source_count from records r join routes on r.record_id=routes.record_id where r.record_id in ('route_qm15-201110-qbb','route_qm15-qbb-study','route_qm16-201110-qbb','route_qm16-qbb-study','route_qm17-201110-qbb','route_qm17-qbb-study','route_qm21-201110-qbb','route_qm21-qbb-study','route_qm24-201110-qbb','route_qm24-qbb-study','route_qm4-201110-qbb','route_qm4-qbb-study','route_meeting-doc-79331-bx25','route_bx25-dec2021','route_m23-local-cb5','route_m23-local-cb4-apr2016') order by r.record_id;\"",
+      "count_command": "sqlite3 data/canonical.db \"select count(*) from records where record_id in ('route_qm15-201110-qbb','route_qm15-qbb-study','route_qm16-201110-qbb','route_qm16-qbb-study','route_qm17-201110-qbb','route_qm17-qbb-study','route_qm21-201110-qbb','route_qm21-qbb-study','route_qm24-201110-qbb','route_qm24-qbb-study','route_qm4-201110-qbb','route_qm4-qbb-study','route_meeting-doc-79331-bx25','route_bx25-dec2021','route_m23-local-cb5','route_m23-local-cb4-apr2016') and record_kind='route';\"",
+      "count_result": "16",
+      "result_summary": "16/16 selected alias and target records exist as record_kind=route. Route IDs and service variants/types match within each pair: QM15/express, QM16/express, QM17/express, QM21/express, QM24/express, QM4/express, Bx25/local, and M23/local."
+    },
+    "existing_alias_conflicts": {
+      "merges_json_command": "CAND=\"route_qm15-201110-qbb route_qm16-201110-qbb route_qm17-201110-qbb route_qm21-201110-qbb route_qm24-201110-qbb route_qm4-201110-qbb route_meeting-doc-79331-bx25 route_m23-local-cb5\"; for id in $CAND; do jq -r --arg id \"$id\" '(.aliases[\"route\"][$id] // empty) | $id + \" -> \" + .' data/identity-overrides/merges.json; done",
+      "merges_json_result": "no output; none of the proposed aliases are already present in data/identity-overrides/merges.json",
+      "identity_aliases_command": "sqlite3 -header -column data/canonical.db \"select kind, alias, target from identity_aliases where kind='route' and alias in ('route_qm15-201110-qbb','route_qm16-201110-qbb','route_qm17-201110-qbb','route_qm21-201110-qbb','route_qm24-201110-qbb','route_qm4-201110-qbb','route_meeting-doc-79331-bx25','route_m23-local-cb5');\"",
+      "identity_aliases_result": "no output; none of the proposed aliases are already present in canonical identity_aliases",
+      "target_alias_guard_command": "CAND=\"route_qm15-qbb-study route_qm16-qbb-study route_qm17-qbb-study route_qm21-qbb-study route_qm24-qbb-study route_qm4-qbb-study route_bx25-dec2021 route_m23-local-cb4-apr2016\"; for id in $CAND; do jq -r --arg id \"$id\" '(.aliases[\"route\"][$id] // empty) | $id + \" -> \" + .' data/identity-overrides/merges.json; done; sqlite3 -header -column data/canonical.db \"select kind, alias, target from identity_aliases where kind='route' and alias in ('route_qm15-qbb-study','route_qm16-qbb-study','route_qm17-qbb-study','route_qm21-qbb-study','route_qm24-qbb-study','route_qm4-qbb-study','route_bx25-dec2021','route_m23-local-cb4-apr2016');\"",
+      "target_alias_guard_result": "no output from both checks; selected targets are not themselves registered aliases"
+    },
+    "do_not_merge_conflicts": {
+      "db_command": "sqlite3 -header -column data/canonical.db \"with pairs(alias,target) as (values ('route_qm15-201110-qbb','route_qm15-qbb-study'),('route_qm16-201110-qbb','route_qm16-qbb-study'),('route_qm17-201110-qbb','route_qm17-qbb-study'),('route_qm21-201110-qbb','route_qm21-qbb-study'),('route_qm24-201110-qbb','route_qm24-qbb-study'),('route_qm4-201110-qbb','route_qm4-qbb-study'),('route_meeting-doc-79331-bx25','route_bx25-dec2021'),('route_m23-local-cb5','route_m23-local-cb4-apr2016')) select d.* from do_not_merge d join pairs p on d.kind='route' and ((d.record_id_a=p.alias and d.record_id_b=p.target) or (d.record_id_a=p.target and d.record_id_b=p.alias));\"",
+      "db_result": "no output; no selected pair is present in canonical do_not_merge",
+      "json_command": "jq -r '.pairs[\"route\"][]? | select((.record_ids | index(\"route_qm15-201110-qbb\") and index(\"route_qm15-qbb-study\")) or (.record_ids | index(\"route_qm16-201110-qbb\") and index(\"route_qm16-qbb-study\")) or (.record_ids | index(\"route_qm17-201110-qbb\") and index(\"route_qm17-qbb-study\")) or (.record_ids | index(\"route_qm21-201110-qbb\") and index(\"route_qm21-qbb-study\")) or (.record_ids | index(\"route_qm24-201110-qbb\") and index(\"route_qm24-qbb-study\")) or (.record_ids | index(\"route_qm4-201110-qbb\") and index(\"route_qm4-qbb-study\")) or (.record_ids | index(\"route_meeting-doc-79331-bx25\") and index(\"route_bx25-dec2021\")) or (.record_ids | index(\"route_m23-local-cb5\") and index(\"route_m23-local-cb4-apr2016\"))) | .record_ids | @tsv' data/identity-overrides/do-not-merge.json",
+      "json_result": "no output; no selected pair is present in data/identity-overrides/do-not-merge.json"
+    },
+    "prior_prep_conflicts_through_identity108": {
+      "command": "for f in data/review_notes/codex-identity-batch0*-prep.json data/review_notes/codex-identity-batch10[0-8]-prep.json; do jq -r --arg f \"$f\" '.proposed_aliases[]? | select(.kind==\"route\" or .kind==\"corridor\") | select(.alias_id as $a | [\"route_qm15-201110-qbb\",\"route_qm16-201110-qbb\",\"route_qm17-201110-qbb\",\"route_qm21-201110-qbb\",\"route_qm24-201110-qbb\",\"route_qm4-201110-qbb\",\"route_meeting-doc-79331-bx25\",\"route_m23-local-cb5\"] | index($a)) | [$f,.kind,.alias_id,.target_id] | @tsv' \"$f\" 2>/dev/null; done",
+      "result": "no output; none of the proposed aliases appear in prior codex identity prep artifacts through batch108"
+    },
+    "source_evidence_spot_check": {
+      "command": "jq -r 'select(.record_id|IN(\"route_qm15-201110-qbb\",\"route_qm15-qbb-study\",\"route_qm16-201110-qbb\",\"route_qm16-qbb-study\",\"route_qm17-201110-qbb\",\"route_qm17-qbb-study\",\"route_qm21-201110-qbb\",\"route_qm21-qbb-study\",\"route_qm24-201110-qbb\",\"route_qm24-qbb-study\",\"route_qm4-201110-qbb\",\"route_qm4-qbb-study\",\"route_meeting-doc-79331-bx25\",\"route_bx25-dec2021\",\"route_m23-local-cb5\",\"route_m23-local-cb4-apr2016\")) | [.record_id, (.payload.route_id // \"\"), (.payload.service_variant // \"\"), (.payload.route_type_normalized // \"\"), (.evidence_refs[0].evidence_id // \"\"), ((.evidence_refs[0].source_quote // .evidence_refs[0].role // .raw_text // \"\") | gsub(\"[\\n\\r\\t]\"; \" \") | .[0:220])] | @tsv' data/canonical/routes.jsonl",
+      "result_summary": "Selected records carry source evidence for the same route labels and compatible service types: QM15/QM16/QM17/QM21/QM24/QM4 express routes in QBB documents, Bx25 local route/new route, and M23 local Manhattan Crosstown."
+    },
+    "forbidden_command_compliance": {
+      "result": "No external/provider-backed commands or profiles/providers were used. No canonicalize, canonicalize-wave, canonicalize-review, campaign dedup, identity-review-run, write, ask, schema-propose, ontology-normalize-run, materialize, export-jsonl, or validate commands were run. Inspection used local deterministic commands only: pwd, git status, find, sed/head, test, date, rg, jq, and sqlite3; the only write was this prep artifact."
+    }
+  }
+}

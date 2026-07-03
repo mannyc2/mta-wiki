@@ -1,0 +1,3307 @@
+{
+  "version": 1,
+  "pairs": {
+    "entity": [
+      {
+        "record_ids": [
+          "entity_167646-mta-real-estate",
+          "entity_mta-real-estate-department"
+        ],
+        "reason": "Contradiction test: entity_type agency vs department. The real estate department is a sub-unit of MTA, not an agency.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_696351ea7c.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_alexander-lindsay-mtapd",
+          "entity_annual-report-2021-mtapd"
+        ],
+        "reason": "Person versus agency. Alexander Lindsay is a person affiliated with the MTA Police Department; the MTA Police Department is the agency.",
+        "source_decision": "data/review_notes/codex-identity-batch217-prep.json#identity217",
+        "reviewed_at": "2026-06-23T13:11:36.611Z"
+      },
+      {
+        "record_ids": [
+          "entity_annual-report-2021-lirr",
+          "entity_lirr-committee-meeting-doc-131511"
+        ],
+        "reason": "Agency versus board committee. The MTA Long Island Rail Road agency is distinct from the Long Island Rail Road Committee.",
+        "source_decision": "data/review_notes/codex-identity-batch217-prep.json#identity217",
+        "reviewed_at": "2026-06-23T13:11:36.611Z"
+      },
+      {
+        "record_ids": [
+          "entity_annual-report-2021-lirr",
+          "entity_lirr-office-of-security"
+        ],
+        "reason": "Parent agency versus internal office. MTA Long Island Rail Road / The Long Island Rail Road Company is not the same canonical entity as the LIRR Office of Security.",
+        "source_decision": "data/review_notes/codex-identity-batch216-prep.json#identity216",
+        "reviewed_at": "2026-06-23T12:56:17.895Z"
+      },
+      {
+        "record_ids": [
+          "entity_annual-report-2021-lirr",
+          "entity_long-island-committee"
+        ],
+        "reason": "The Long Island Rail Road agency and the Long Island Committee are related but distinct. Committee references are oversight/meeting context, not the railroad agency identity.",
+        "source_decision": "data/review_notes/codex-identity-batch222-early-entity-prep.json#identity222-early-entity-005",
+        "reviewed_at": "2026-06-23T14:33:13.359Z"
+      },
+      {
+        "record_ids": [
+          "entity_annual-report-2021-lirr",
+          "entity_meeting-doc-124881-mnr"
+        ],
+        "reason": "Different railroad agencies. MTA Long Island Rail Road and MTA Metro-North Railroad are sibling agencies, not the same entity; shared LIRR aliases on the Metro-North record are contamination.",
+        "source_decision": "data/review_notes/codex-identity-batch217-prep.json#identity217",
+        "reviewed_at": "2026-06-23T13:11:36.611Z"
+      },
+      {
+        "record_ids": [
+          "entity_annual-report-2021-lirr",
+          "entity_meeting-doc-128981-nyct"
+        ],
+        "reason": "Different operating agencies. The Long Island Rail Road Company / MTA Long Island Rail Road is distinct from New York City Transit Authority / NYCT; shared LIRR aliases on the NYCT record are contamination.",
+        "source_decision": "data/review_notes/codex-identity-batch217-prep.json#identity217",
+        "reviewed_at": "2026-06-23T13:11:36.611Z"
+      },
+      {
+        "record_ids": [
+          "entity_annual-report-2021-lirr",
+          "entity_meeting-doc-143306-mta-hq"
+        ],
+        "reason": "LIRR is a railroad agency/subsidiary; MTA Headquarters is an administrative/HQ unit. The LIRR key on HQ is contamination.",
+        "source_decision": "data/review_notes/codex-identity-batch224-local-prep.json#identity224-local-008",
+        "reviewed_at": "2026-06-23T15:02:49.178Z"
+      },
+      {
+        "record_ids": [
+          "entity_annual-report-2021-lirr",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Long Island Rail Road is an MTA subsidiary/railroad entity, not the parent MTA authority.",
+        "source_decision": "data/review_notes/codex-identity-batch222-mta-parent-prep.json#identity222-mta-parent-007",
+        "reviewed_at": "2026-06-23T14:31:50.430Z"
+      },
+      {
+        "record_ids": [
+          "entity_annual-report-2021-mtapd",
+          "entity_meeting-doc-113891-john-mueller"
+        ],
+        "reason": "MTAPD is an agency; John Mueller is a person/Chief of Police. The person-name keys on the agency record are contamination from leadership mentions.",
+        "source_decision": "data/review_notes/codex-identity-batch222-early-entity-prep.json#identity222-early-entity-006",
+        "reviewed_at": "2026-06-23T14:33:13.359Z"
+      },
+      {
+        "record_ids": [
+          "entity_audit-committee-charter",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "The Audit Committee is a board committee of MTA, not the parent Metropolitan Transportation Authority itself. The shared Audit Committee keys on the parent record are committee-contamination aliases.",
+        "source_decision": "data/review_notes/codex-identity-batch222-mta-parent-prep.json#identity222-mta-parent-001",
+        "reviewed_at": "2026-06-23T14:31:50.430Z"
+      },
+      {
+        "record_ids": [
+          "entity_audit-committee-sorin",
+          "entity_catherine-sheridan-115226"
+        ],
+        "reason": "The shared Lisa Sorin key is contamination on the Catherine Sheridan record. Lisa Sorin and Catherine Sheridan are distinct people with separate board/agency contexts.",
+        "source_decision": "data/review_notes/codex-identity-batch222-early-entity-prep.json#identity222-early-entity-001",
+        "reviewed_at": "2026-06-23T14:33:13.359Z"
+      },
+      {
+        "record_ids": [
+          "entity_bloomberg-news-org",
+          "entity_meeting-doc-155136-bloomberg"
+        ],
+        "reason": "Contradiction test (test 1): strong identity field entity_type differs (news_organization vs organization). The second record's description 'Provider of terminals, communication lines, PeopleSoft data licenses, and MTM pricing to MTA' identifies Bloomberg L.P., not the news organization. Shared name 'Bloomberg' alone is insufficient; different entity types force distinct canonical records.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_d14ef228a2.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_bronx-cb5-2012-11-webster",
+          "entity_cb5-brooklyn-brt-sbs-jan2018"
+        ],
+        "reason": "Shared generic Community Board 5 key but different borough/scope: Bronx versus Brooklyn.",
+        "source_decision": "conductor-live-validation-identity214",
+        "reviewed_at": "2026-06-23T12:28:36Z"
+      },
+      {
+        "record_ids": [
+          "entity_bronx-cb5-2012-11-webster",
+          "entity_brooklyn-cb5-linden-blvd-2025"
+        ],
+        "reason": "Canonical alias-collapse guard: Bronx Community Board 5 and Brooklyn Community Board 5 are distinct borough-scoped community boards. This supplements the stale alias guard through entity_cb5-brooklyn-brt-sbs-jan2018.",
+        "source_decision": "data/review_notes/codex-identity-cb5-dnm-hygiene-2026-07-01.json#identity-cb5-dnm-hygiene",
+        "reviewed_at": "2026-07-01T00:00:00Z"
+      },
+      {
+        "record_ids": [
+          "entity_bronx-cb5-2012-11-webster",
+          "entity_community-board-5-manhattan-20110118"
+        ],
+        "reason": "Shared generic Community Board 5 key but different borough/scope: Bronx versus Manhattan.",
+        "source_decision": "conductor-live-validation-identity214",
+        "reviewed_at": "2026-06-23T12:28:36Z"
+      },
+      {
+        "record_ids": [
+          "entity_bronx-cb5-2012-11-webster",
+          "entity_community-board-5-queens-2015"
+        ],
+        "reason": "Shared generic Community Board 5 key but different borough/scope: Bronx versus Queens.",
+        "source_decision": "conductor-live-validation-identity214",
+        "reviewed_at": "2026-06-23T12:28:36Z"
+      },
+      {
+        "record_ids": [
+          "entity_bronx-cb5-2012-11-webster",
+          "entity_manhattan-community-board-5"
+        ],
+        "reason": "Shared generic Community Board 5 key but different borough-scoped boards: Bronx CB5 versus Manhattan CB5. These are distinct real-world community boards and should not merge.",
+        "source_decision": "data/review_notes/codex-identity-community-board-dnm-218-prep.json#identity-community-board-dnm-218",
+        "reviewed_at": "2026-06-23T13:20:30Z"
+      },
+      {
+        "record_ids": [
+          "entity_bronx-cb6-2012-11-webster",
+          "entity_brooklyn-cb6-flatbush-ave-oct2025"
+        ],
+        "reason": "Shared generic Community Board 6 key but different borough/scope: Bronx versus Brooklyn.",
+        "source_decision": "conductor-live-validation-identity214",
+        "reviewed_at": "2026-06-23T12:28:36Z"
+      },
+      {
+        "record_ids": [
+          "entity_bronx-cb6-2012-11-webster",
+          "entity_manhattan-community-board-6"
+        ],
+        "reason": "Shared generic Community Board 6 and Transportation Committee keys but different borough-scoped boards: Bronx CB6 versus Manhattan CB6. These are distinct real-world community boards and should not merge.",
+        "source_decision": "data/review_notes/codex-identity-community-board-dnm-218-prep.json#identity-community-board-dnm-218",
+        "reviewed_at": "2026-06-23T13:20:30Z"
+      },
+      {
+        "record_ids": [
+          "entity_bronx-cb6-2012-11-webster",
+          "entity_queens-community-board-6"
+        ],
+        "reason": "Shared generic Community Board 6 key but different borough/scope: Bronx versus Queens.",
+        "source_decision": "data/review_notes/codex-identity-community-committee-219-prep.json#identity-community-committee-219",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      },
+      {
+        "record_ids": [
+          "entity_bronx-cb7-2012-11-webster",
+          "entity_brt-flushing-main-st-aug2018-cb7-queens"
+        ],
+        "reason": "Shared generic Community Board 7 key but different borough/scope: Bronx versus Queens.",
+        "source_decision": "conductor-live-validation-identity214",
+        "reviewed_at": "2026-06-23T12:28:36Z"
+      },
+      {
+        "record_ids": [
+          "entity_bronx-cb7-2012-11-webster",
+          "entity_manhattan-community-board-7"
+        ],
+        "reason": "Shared generic Community Board 7 key but different borough-scoped boards: Bronx CB7 versus Manhattan CB7. These are distinct real-world community boards and should not merge.",
+        "source_decision": "data/review_notes/codex-identity-community-board-dnm-218-prep.json#identity-community-board-dnm-218",
+        "reviewed_at": "2026-06-23T13:20:30Z"
+      },
+      {
+        "record_ids": [
+          "entity_brooklyn-cb3-2011",
+          "entity_community-board-3-bronx-2012"
+        ],
+        "reason": "Shared generic Community Board 3 key but different borough/scope: Brooklyn vs Bronx.",
+        "source_decision": "data/review_notes/codex-identity-batch210-prep.json#identity210",
+        "reviewed_at": "2026-06-23T12:17:47Z"
+      },
+      {
+        "record_ids": [
+          "entity_brooklyn-cb3-2011",
+          "entity_staten-island-community-board-3"
+        ],
+        "reason": "Shared generic Community Board 3 key but different borough/scope: Brooklyn versus Staten Island.",
+        "source_decision": "data/review_notes/codex-identity-community-committee-219-prep.json#identity-community-committee-219",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      },
+      {
+        "record_ids": [
+          "entity_brooklyn-community-board-1",
+          "entity_community-board-1-bronx-2012-02"
+        ],
+        "reason": "Shared generic Community Board 1 key but different borough/scope: Brooklyn versus Bronx.",
+        "source_decision": "data/review_notes/codex-metric-relation-identity-tail-2026-06-30-v.json#identity-cb1-guards",
+        "reviewed_at": "2026-06-30T00:00:00Z"
+      },
+      {
+        "record_ids": [
+          "entity_brooklyn-community-board-1",
+          "entity_community-board-1-manhattan-2013-06"
+        ],
+        "reason": "Shared generic Community Board 1 key but different borough/scope: Brooklyn versus Manhattan.",
+        "source_decision": "conductor-live-validation-identity214",
+        "reviewed_at": "2026-06-23T12:28:36Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-board-1-bronx-2012-02",
+          "entity_community-board-1-manhattan-2013-06"
+        ],
+        "reason": "Shared generic Community Board 1 key but different borough/scope: Bronx versus Manhattan.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_d021833ba0.json",
+        "reviewed_at": "2026-06-30T00:00:00Z"
+      },
+      {
+        "record_ids": [
+          "entity_brooklyn-community-board-1",
+          "entity_staten-island-community-board-1"
+        ],
+        "reason": "Precise borough-scoped community board collision: Brooklyn CB1 and Staten Island CB1 share a generic numbered board key but are distinct borough entities.",
+        "source_decision": "data/review_notes/codex-identity-batch213-prep.json#identity213",
+        "reviewed_at": "2026-06-23T12:29:13Z"
+      },
+      {
+        "record_ids": [
+          "entity_bt-committee-members-sep2024",
+          "entity_meeting-doc-205631-committee-chair-members"
+        ],
+        "reason": "Strong identity field entity_type differs: 'committee' vs 'committee_role'. Test 1 (Contradiction test) forces do_not_merge. The relation_context shows a part_of_agency link from the role record to the committee, confirming they are related but distinct objects.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_1ef0d75fb7.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_bt-committee-members-sep2024",
+          "entity_mta-bridges-and-tunnels"
+        ],
+        "reason": "Bridges and Tunnels Committee/Members is a board committee context; MTA Bridges and Tunnels / TBTA is the operating agency.",
+        "source_decision": "data/review_notes/codex-identity-community-committee-219-prep.json#identity-community-committee-219",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      },
+      {
+        "record_ids": [
+          "entity_capital-program-committee-charter",
+          "entity_mta-construction-and-development"
+        ],
+        "reason": "Contradiction test: different entity_type (committee vs public benefit corporation subsidiary).",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_696351ea7c.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_capital-program-committee-charter",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Capital Program Committee is a committee record. Parent MTA is a transit authority record. Shared committee keys on the parent record are not evidence of same identity.",
+        "source_decision": "data/review_notes/codex-identity-batch222-mta-parent-prep.json#identity222-mta-parent-002",
+        "reviewed_at": "2026-06-23T14:31:50.430Z"
+      },
+      {
+        "record_ids": [
+          "entity_catherine-rinaldi",
+          "entity_richard-davey-nyct-president"
+        ],
+        "reason": "Person false-positive/contamination. The shared key comes from Catherine Rinaldi leaked into the Richard Davey record; they are different people and should be guarded with DNM rather than merged.",
+        "source_decision": "data/review_notes/codex-identity-batch213-prep.json#identity213",
+        "reviewed_at": "2026-06-23T12:29:13Z"
+      },
+      {
+        "record_ids": [
+          "entity_catherine-sheridan-115226",
+          "entity_mta-bridges-and-tunnels"
+        ],
+        "reason": "Catherine Sheridan is a person/official; MTA Bridges and Tunnels/TBTA is an agency. Role text naming a president of the agency is affiliation evidence, not identity.",
+        "source_decision": "data/review_notes/codex-identity-batch222-early-entity-prep.json#identity222-early-entity-002",
+        "reviewed_at": "2026-06-23T14:33:13.359Z"
+      },
+      {
+        "record_ids": [
+          "entity_cb14-queens-2015",
+          "entity_community-board-14-brooklyn-20111130"
+        ],
+        "reason": "Shared generic Community Board 14 key but different borough/scope: Queens versus Brooklyn.",
+        "source_decision": "conductor-live-validation-identity214",
+        "reviewed_at": "2026-06-23T12:28:36Z"
+      },
+      {
+        "record_ids": [
+          "entity_cb5-brooklyn-brt-sbs-jan2018",
+          "entity_community-board-5-manhattan-20110118"
+        ],
+        "reason": "Contradiction test: borough differs (Brooklyn vs Manhattan) in description; distinct community boards.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_0bf953c6a3.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_cb5-brooklyn-brt-sbs-jan2018",
+          "entity_community-board-5-queens-2015"
+        ],
+        "reason": "Contradiction test: borough differs (Brooklyn vs Queens) in description; distinct community boards. Queens record represents same entity as entity_queens-cb5-grand-ave-2024.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_0bf953c6a3.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_brooklyn-cb5-linden-blvd-2025",
+          "entity_community-board-5-queens-2015"
+        ],
+        "reason": "Canonical alias-collapse guard: Brooklyn Community Board 5 and Queens Community Board 5 are distinct borough-scoped community boards. This supplements the stale alias guard through entity_cb5-brooklyn-brt-sbs-jan2018.",
+        "source_decision": "data/review_notes/codex-identity-cb5-dnm-hygiene-2026-07-01.json#identity-cb5-dnm-hygiene",
+        "reviewed_at": "2026-07-01T00:00:00Z"
+      },
+      {
+        "record_ids": [
+          "entity_christopher-pangilinan-ops-planning",
+          "entity_department-of-paratransit"
+        ],
+        "reason": "Person-versus-department: Chris Pangilinan is affiliated with/requesting through Department of Paratransit, not identical to it.",
+        "source_decision": "data/review_notes/codex-identity-batch219-prep.json#identity219-entity-006",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      },
+      {
+        "record_ids": [
+          "entity_christopher-pangilinan-ops-planning",
+          "entity_mta-nyct"
+        ],
+        "reason": "Christopher Pangilinan is a person (Chief of Operations Planning) who works at MTA NYCT. entity_mta-nyct is the agency itself. Different entity types (person vs agency). The shared identity key 'entity_mta-nyct' is an incorrectly assigned alias on the person record.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_001.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "entity_christopher-pangilinan-ops-planning",
+          "entity_mta-nyct-evp-frank-farrell"
+        ],
+        "reason": "Two different people (Christopher Pangilinan and Frank Farrell) who both work at MTA NYCT. The shared identity key 'entity_mta-nyct' is an agency affiliation alias, not a personal identity field.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_001.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "entity_commissioner-polly-trottenberg-tsp-2017",
+          "entity_nyc-dot"
+        ],
+        "reason": "Different entity_type and identity: Polly Trottenberg is a person/commissioner affiliated with NYC DOT, while entity_nyc-dot is the New York City Department of Transportation agency. The shared NYC DOT key is affiliation context, not person-agency identity.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_001.json",
+        "reviewed_at": "2026-06-09T02:29:27.000Z"
+      },
+      {
+        "record_ids": [
+          "entity_commissioner-polly-trottenberg-tsp-2017",
+          "entity_scott-gastel-alana-morales-tsp-2017"
+        ],
+        "reason": "Different people/contact mentions in tsp_status_2017. Polly Trottenberg is identified as commissioner, while Scott Gastel and Alana Morales appear as press contacts. A shared NYC DOT affiliation key is not personal identity.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_001.json",
+        "reviewed_at": "2026-06-09T02:29:27.000Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-advisory-committee-2015",
+          "entity_community-advisory-committee-flushing-jamaica"
+        ],
+        "reason": "Project scope differs: Woodhaven/Cross Bay vs Flushing to Jamaica SBS. Contradiction test — strong identity field (description/project affiliation) differs.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_0858889973.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-advisory-committee-2015",
+          "entity_community-advisory-committee-webster"
+        ],
+        "reason": "Project scope differs: Woodhaven/Cross Bay vs Webster Avenue SBS. Same contradiction test.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_0858889973.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-advisory-committee-flushing-jamaica",
+          "entity_community-advisory-committee-webster"
+        ],
+        "reason": "Generic CAC label across different project scopes; not a same-identity committee without project-specific name alignment.",
+        "source_decision": "data/review_notes/codex-identity-batch210-prep.json#identity210",
+        "reviewed_at": "2026-06-23T12:17:47Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-advisory-committee-flushing-jamaica",
+          "entity_hylan-cac"
+        ],
+        "reason": "Generic CAC key across different project scopes; Flushing-Jamaica and Hylan CACs are not same identity.",
+        "source_decision": "conductor-live-validation-identity214",
+        "reviewed_at": "2026-06-23T12:28:36Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-advisory-committee-flushing-jamaica",
+          "entity_woodhaven-cac-2014"
+        ],
+        "reason": "Project scope differs: Flushing to Jamaica vs Woodhaven/Cross Bay SBS. Contradiction test.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_0858889973.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-advisory-committee-webster",
+          "entity_woodhaven-cac-2014"
+        ],
+        "reason": "Project scope differs: Webster Avenue vs Woodhaven/Cross Bay SBS. Contradiction test.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_0858889973.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-board-10-manhattan",
+          "entity_community-board-10-queens-2014"
+        ],
+        "reason": "Shared generic Community Board 10 key but different borough/scope: Manhattan versus Queens.",
+        "source_decision": "conductor-live-validation-identity214",
+        "reviewed_at": "2026-06-23T12:28:36Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-board-11-brooklyn",
+          "entity_community-board-11-manhattan"
+        ],
+        "reason": "Shared generic Community Board 11 Transportation Committee key but different borough/scope: Brooklyn versus Manhattan.",
+        "source_decision": "conductor-live-validation-identity214",
+        "reviewed_at": "2026-06-23T12:28:36Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-board-3-bronx-2012",
+          "entity_staten-island-community-board-3"
+        ],
+        "reason": "Different boroughs (Bronx vs Staten Island) indicate distinct community boards. The shared entity_name 'Community Board 3' is insufficient to override this strong identity field per Identity Merge Canon contradiction test.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_3458a364a4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-board-4-bronx-2013",
+          "entity_community-board-4-brooklyn-2015"
+        ],
+        "reason": "Shared generic Community Board 4 key but different borough/scope: Bronx versus Brooklyn.",
+        "source_decision": "conductor-live-validation-identity214",
+        "reviewed_at": "2026-06-23T12:28:36Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-board-4-bronx-2013",
+          "entity_community-board-4-manhattan-20110118"
+        ],
+        "reason": "Shared generic Community Board 4 key but different borough/scope: Bronx versus Manhattan.",
+        "source_decision": "conductor-live-validation-identity214",
+        "reviewed_at": "2026-06-23T12:28:36Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-board-4-bronx-2013",
+          "entity_manhattan-community-board-4"
+        ],
+        "reason": "Shared generic Community Board 4 key but different borough-scoped boards: Bronx CB4 versus Manhattan CB4. These are distinct real-world community boards and should not merge.",
+        "source_decision": "data/review_notes/codex-identity-community-board-dnm-218-prep.json#identity-community-board-dnm-218",
+        "reviewed_at": "2026-06-23T13:20:30Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-board-4-brooklyn-2015",
+          "entity_community-board-4-manhattan-20110118"
+        ],
+        "reason": "Contradiction test: borough differs between Brooklyn and Manhattan. Same reasoning.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_fbe09c916a.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-board-5-manhattan-20110118",
+          "entity_community-board-5-queens-2015"
+        ],
+        "reason": "Contradiction test: borough differs (Manhattan vs Queens) in description; distinct community boards. Queens record represents same entity as entity_queens-cb5-grand-ave-2024.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_0bf953c6a3.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-board-5-queens-2015",
+          "entity_queens-cb5-fresh-pond-rd"
+        ],
+        "reason": "Queens Community Board 5 and its Transportation/Public Transit Committee are related parent/committee entities, not the same identity.",
+        "source_decision": "data/review_notes/codex-identity-community-committee-219-prep.json#identity-community-committee-219",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-board-8-brooklyn",
+          "entity_manhattan-community-board-8"
+        ],
+        "reason": "Shared generic Community Board 8 and Transportation Committee keys but different borough-scoped boards: Brooklyn CB8 versus Manhattan CB8. These are distinct real-world community boards and should not merge.",
+        "source_decision": "data/review_notes/codex-identity-community-board-dnm-218-prep.json#identity-community-board-dnm-218",
+        "reviewed_at": "2026-06-23T13:20:30Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-board-9-brooklyn-brt-nostrand",
+          "entity_community-board-9-manhattan"
+        ],
+        "reason": "Shared generic Community Board 9 key but different borough/scope: Brooklyn versus Manhattan.",
+        "source_decision": "conductor-live-validation-identity214",
+        "reviewed_at": "2026-06-23T12:28:36Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-board-9-brooklyn-brt-nostrand",
+          "entity_community-board-9-queens-2015"
+        ],
+        "reason": "Shared generic Community Board 9 key but different borough/scope: Brooklyn versus Queens.",
+        "source_decision": "conductor-live-validation-identity214",
+        "reviewed_at": "2026-06-23T12:28:36Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-board-9-brooklyn-brt-nostrand",
+          "entity_queens-cb9-2015-01-brt-woodhaven"
+        ],
+        "reason": "Shared generic Community Board 9 key but different borough/scope: Brooklyn versus Queens.",
+        "source_decision": "data/review_notes/codex-identity-community-committee-219-prep.json#identity-community-committee-219",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      },
+      {
+        "record_ids": [
+          "entity_community-board-9-manhattan",
+          "entity_queens-cb9-2015-01-brt-woodhaven"
+        ],
+        "reason": "Contradiction test: borough is a strong identity field and differs (Manhattan vs Queens). These are distinct community boards; shared acronym 'CB9' is insufficient for merge.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_6afe85bf7c.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_ddc-acting-commissioner-eduardo-del-valle",
+          "entity_nyc-ddc"
+        ],
+        "reason": "Records represent distinct entity types: 'government_official' (person: Eduardo del Valle, DDC Acting Commissioner) vs 'government_agency' (NYC Department of Design and Construction). The shared identity keys and aliases (entity_nyc-ddc, entity_nyc-department-of-design-and-construction) were incorrectly assigned to the person record. An agency and a person who works for that agency are related but not the same canonical identity.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_002.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "entity_dekalb-lafayette-cb2-brooklyn",
+          "entity_staten-island-community-board-2"
+        ],
+        "reason": "Precise borough-scoped community board collision: Brooklyn CB2 and Staten Island CB2 share a generic numbered board key but are distinct borough entities.",
+        "source_decision": "data/review_notes/codex-identity-batch213-prep.json#identity213",
+        "reviewed_at": "2026-06-23T12:29:13Z"
+      },
+      {
+        "record_ids": [
+          "entity_department-of-buses",
+          "entity_dept-of-subways-crichlow"
+        ],
+        "reason": "Department of Buses and Department of Subways/Demetrius Crichlow are different NYCT organizational/person-context records. The broad NYCT key is parent-agency contamination.",
+        "source_decision": "data/review_notes/codex-identity-batch222-early-entity-prep.json#identity222-early-entity-003",
+        "reviewed_at": "2026-06-23T14:33:13.359Z"
+      },
+      {
+        "record_ids": [
+          "entity_department-of-buses",
+          "entity_meeting-doc-128981-nyct"
+        ],
+        "reason": "Contradiction test: different entity_type (department vs agency). Department of Buses is a sub-unit of NYCT, not the same canonical identity.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_696351ea7c.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_department-of-buses",
+          "entity_mta-nyct"
+        ],
+        "reason": "NYCT Department of Buses is a subunit/context under NYCT, not the same canonical identity as the New York City Transit Authority.",
+        "source_decision": "data/review_notes/codex-identity-batch222-early-entity-prep.json#identity222-early-entity-004",
+        "reviewed_at": "2026-06-23T14:33:13.359Z"
+      },
+      {
+        "record_ids": [
+          "entity_department-of-buses",
+          "entity_mta-nyct-evp-frank-farrell"
+        ],
+        "reason": "Department of Buses is an organization/unit; Frank Farrell EVP record is a person/officer context. The NYCT key is affiliation contamination.",
+        "source_decision": "data/review_notes/codex-identity-batch224-local-prep.json#identity224-local-006",
+        "reviewed_at": "2026-06-23T15:02:49.178Z"
+      },
+      {
+        "record_ids": [
+          "entity_department-of-buses",
+          "entity_nyct-mta-bus-committee-charter"
+        ],
+        "reason": "Department of Buses is an NYCT department; the Committee on Operations is a board committee overseeing NYCT/MaBSTOA/SIRTOA/MTA Bus. They are distinct despite the shared NYCT/MTA key.",
+        "source_decision": "data/review_notes/codex-identity-batch222-mta-parent-prep.json#identity222-mta-parent-012",
+        "reviewed_at": "2026-06-23T14:31:50.430Z"
+      },
+      {
+        "record_ids": [
+          "entity_dept-of-subways-crichlow",
+          "entity_meeting-doc-128981-nyct"
+        ],
+        "reason": "Contradiction test: different entity_type (department vs agency).",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_696351ea7c.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_dept-of-subways-crichlow",
+          "entity_meeting-doc-196901-nyct-track-engineering"
+        ],
+        "reason": "Department-versus-division false positive. Track Engineering Division is a more specific subunit under the Department of Subways, not the same entity as the department-level record.",
+        "source_decision": "data/review_notes/codex-identity-batch215-prep.json#identity215",
+        "reviewed_at": "2026-06-23T12:46:59.828Z"
+      },
+      {
+        "record_ids": [
+          "entity_dept-of-subways-crichlow",
+          "entity_nyct-dos-dob-mtabc-201766"
+        ],
+        "reason": "Department of Subways is a specific NYCT department, while the paired record is a bundled Department of Subways / Department of Buses / MTA Bus Company scope surface. Shared DOS acronym alone is insufficient for same entity identity.",
+        "source_decision": "data/review_notes/codex-route-normalization-phase3-adjacent-2026-06-24.json#identity-review-remaining14-2026-06-25",
+        "reviewed_at": "2026-06-25T02:50:00Z"
+      },
+      {
+        "record_ids": [
+          "entity_finance-committee-mta",
+          "entity_meeting-doc-111901-mta-finance"
+        ],
+        "reason": "Finance Committee is an MTA Board committee; MTA Finance Department/Office of Financial Services is a distinct administrative department.",
+        "source_decision": "data/review_notes/codex-identity-batch219-prep.json#identity219-entity-007",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      },
+      {
+        "record_ids": [
+          "entity_finance-committee-mta",
+          "entity_meeting-doc-124881-mnr"
+        ],
+        "reason": "The MTA Finance Committee is a board committee; Metro-North Railroad is an operating agency. Shared Finance Committee key on the Metro-North record is approval-workflow contamination.",
+        "source_decision": "data/review_notes/codex-identity-batch222-early-entity-prep.json#identity222-early-entity-007",
+        "reviewed_at": "2026-06-23T14:33:13.359Z"
+      },
+      {
+        "record_ids": [
+          "entity_finance-committee-mta",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "The Finance Committee is a committee of the MTA Board. It is not identical to the parent MTA transit authority.",
+        "source_decision": "data/review_notes/codex-identity-batch222-mta-parent-prep.json#identity222-mta-parent-003",
+        "reviewed_at": "2026-06-23T14:31:50.430Z"
+      },
+      {
+        "record_ids": [
+          "entity_first-mutual-transportation-assurance",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Contradiction test: different entity_type (agency vs transit_authority). FMTAC is a captive insurer, not the MTA itself.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_696351ea7c.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_frank-annicaro",
+          "entity_mta-nyct"
+        ],
+        "reason": "Contradiction test: person vs agency. A person cannot merge with an agency.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_696351ea7c.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_frank-farrell-mta-acting-evp-buses",
+          "entity_mta-nyct-evp-frank-farrell"
+        ],
+        "reason": "Contradiction test: different entity_type (person vs government_official). Both represent Frank Farrell but the entity_type differs; canon treats these as distinct strong fields.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_696351ea7c.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_grand-central-madison-127546",
+          "entity_meeting-doc-121001-gcmoc"
+        ],
+        "reason": "Facility versus operating company. Grand Central Madison is a station/facility; Grand Central Madison Operating Company is an MTA agency/company responsible for the LIRR-operating portion, not the station itself.",
+        "source_decision": "data/review_notes/codex-identity-batch217-prep.json#identity217",
+        "reviewed_at": "2026-06-23T13:11:36.611Z"
+      },
+      {
+        "record_ids": [
+          "entity_janno-lieber-2025",
+          "entity_meeting-doc-64066-mta"
+        ],
+        "reason": "Person versus agency. Janno Lieber is an individual MTA chair/CEO, while Metropolitan Transportation Authority is the agency; shared Janno Lieber aliases on the MTA record are person-field contamination.",
+        "source_decision": "data/review_notes/codex-identity-batch217-prep.json#identity217",
+        "reviewed_at": "2026-06-23T13:11:36.611Z"
+      },
+      {
+        "record_ids": [
+          "entity_janno-lieber-2025",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Janno Lieber is a person/officer; MTA is an organization. The shared Lieber key on the parent cluster is officer-name contamination.",
+        "source_decision": "data/review_notes/codex-identity-batch222-mta-parent-prep.json#identity222-mta-parent-006",
+        "reviewed_at": "2026-06-23T14:31:50.430Z"
+      },
+      {
+        "record_ids": [
+          "entity_mabstoa",
+          "entity_mta-bus-company"
+        ],
+        "reason": "MaBSTOA and MTA Bus Company are distinct MTA bus-operating entities; shared Manhattan/Bronx surface transit keys on MTA Bus are contamination.",
+        "source_decision": "data/review_notes/codex-identity-batch224-local-prep.json#identity224-local-005",
+        "reviewed_at": "2026-06-23T15:02:49.178Z"
+      },
+      {
+        "record_ids": [
+          "entity_markys-caviar-meeting-doc-201706",
+          "entity_markys-caviar-meeting-doc-205666"
+        ],
+        "reason": "Different entity_type (organization vs tenant) is a strong identity field contradiction per the Identity Merge Canon test 1, forcing do_not_merge regardless of shared entity name.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_325295622c.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_mckissack-iec",
+          "entity_meeting-doc-111791-michael-baker"
+        ],
+        "reason": "Shared IEC/Independent Engineering Consultant role acronym is not entity identity. McKissack and Michael Baker International are distinct consultant organizations that both served as MTA independent engineering consultants.",
+        "source_decision": "data/review_notes/codex-route-normalization-phase3-adjacent-2026-06-24.json#identity-review-remaining14-2026-06-25",
+        "reviewed_at": "2026-06-25T02:50:00Z"
+      },
+      {
+        "record_ids": [
+          "entity_mckissack-iec",
+          "entity_meeting-doc-164901-iec"
+        ],
+        "reason": "Different entity_type: consultant vs organization. Also entity_name differs (McKissack vs Independent Engineering Consultant). Contradiction test: entity_type differs (test 1).",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_813df798c6.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-100241-staten-island-railway",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Staten Island Railway/SIRTOA operating entity is distinct from parent MTA authority.",
+        "source_decision": "data/review_notes/codex-identity-batch224-local-prep.json#identity224-local-016",
+        "reviewed_at": "2026-06-23T15:02:49.178Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-100361-nypd-transit-bureau",
+          "entity_nypd"
+        ],
+        "reason": "Bureau versus parent agency. NYPD's Transit Bureau is a bureau within the New York City Police Department, not the same canonical entity as NYPD itself.",
+        "source_decision": "data/review_notes/codex-identity-batch217-prep.json#identity217",
+        "reviewed_at": "2026-06-23T13:11:36.611Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-102746-board",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Board versus parent authority. The Board of the Metropolitan Transportation Authority is a governing board, not the Metropolitan Transportation Authority entity itself.",
+        "source_decision": "data/review_notes/codex-identity-batch216-prep.json#identity216",
+        "reviewed_at": "2026-06-23T12:56:17.895Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-102746-committee",
+          "entity_meeting-doc-124881-mnr"
+        ],
+        "reason": "The Metro-North operations committee oversees/monitors the railroad; it is not the same entity as Metro-North Railroad itself.",
+        "source_decision": "data/review_notes/codex-identity-batch222-early-entity-prep.json#identity222-early-entity-008",
+        "reviewed_at": "2026-06-23T14:33:13.359Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-102746-committee",
+          "entity_mta-nyct"
+        ],
+        "reason": "Metro-North committee context and NYCT agency are distinct; shared Metro-North railroad key on NYCT is cross-record contamination.",
+        "source_decision": "data/review_notes/codex-identity-batch224-local-prep.json#identity224-local-007",
+        "reviewed_at": "2026-06-23T15:02:49.178Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-104796-nice-bus",
+          "entity_nice-systems"
+        ],
+        "reason": "Contradiction test (rule 1): strong identity field entity_type differs — 'bus operator' vs 'company'. Shared acronym 'NICE' is insufficient to override.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_4e85d36238.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-111791-michael-baker",
+          "entity_meeting-doc-164901-iec"
+        ],
+        "reason": "Michael Baker International is a named firm; the one-source IEC record is a generic Independent Engineering Consultant role/context with a program director mention. The shared IEC key is role contamination, not proof of the same named firm.",
+        "source_decision": "data/review_notes/codex-identity-batch222-early-entity-prep.json#identity222-early-entity-009",
+        "reviewed_at": "2026-06-23T14:33:13.359Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-111791-siemens",
+          "entity_meeting-doc-113916-siemens"
+        ],
+        "reason": "Different Siemens legal entities. Siemens Industry Inc. / generic Siemens should not be collapsed into Siemens Mobility, Inc.; the shared Siemens key is a parent/brand token, not sufficient same-entity evidence.",
+        "source_decision": "data/review_notes/codex-identity-batch218-prep.json#identity218",
+        "reviewed_at": "2026-06-23T13:23:56.922Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-113946-norman-grandstaff",
+          "entity_nypd"
+        ],
+        "reason": "Person-versus-agency false positive. Norman Grandstaff is an individual in the NYPD Transit Bureau, while entity_nypd is the police department agency record with leaked person/title fields.",
+        "source_decision": "data/review_notes/codex-identity-batch213-prep.json#identity213",
+        "reviewed_at": "2026-06-23T12:29:13Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-121001-gcmoc",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Grand Central Madison Operating Company/GCMOC is a specific operating company; it is not the parent MTA authority.",
+        "source_decision": "data/review_notes/codex-identity-batch224-local-prep.json#identity224-local-015",
+        "reviewed_at": "2026-06-23T15:02:49.178Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-124881-mnr",
+          "entity_meeting-doc-128981-nyct"
+        ],
+        "reason": "Do not merge sibling/related agencies: MTA Metro-North Railroad and New York City Transit Authority are distinct; shared Metro-North keys on NYCT are contamination.",
+        "source_decision": "data/review_notes/codex-identity-batch220-prep.json#identity220-entity-010",
+        "reviewed_at": "2026-06-23T14:32:00Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-124881-mnr",
+          "entity_meeting-doc-mnr-committee"
+        ],
+        "reason": "Metro-North Railroad agency is distinct from the Metro-North Railroad Committee.",
+        "source_decision": "data/review_notes/codex-identity-batch219-prep.json#identity219-entity-008",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-124881-mnr",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Metro-North Railroad is an operating agency/subsidiary context within MTA; it is not the parent Metropolitan Transportation Authority record.",
+        "source_decision": "data/review_notes/codex-identity-batch223-mnr-nyct-prep.json#identity223-mnr-nyct-007",
+        "reviewed_at": "2026-06-23T14:46:42.194Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-128981-nyct",
+          "entity_meeting-doc-143306-mta-hq"
+        ],
+        "reason": "Different entity_type: agency vs agency (NYCT vs MTA Headquarters). Also different identity: NYCT is a subsidiary, MTA HQ is a support unit.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_696351ea7c.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-128981-nyct",
+          "entity_meeting-doc-154986-aar"
+        ],
+        "reason": "Different entity_type: agency vs paratransit service program. Access-a-Ride is a program under NYCT, not the same entity.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_696351ea7c.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-128981-nyct",
+          "entity_mta-bus-company"
+        ],
+        "reason": "NYCT and MTA Bus Company are related MTA bus-operating entities but are not the same agency identity. Shared parent-MTA or bus-company aliases are sibling/subsidiary contamination.",
+        "source_decision": "data/review_notes/codex-identity-batch222-mta-parent-prep.json#identity222-mta-parent-011",
+        "reviewed_at": "2026-06-23T14:31:50.430Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-128981-nyct",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Subsidiary agency versus parent authority. NYCT is an operating agency under MTA; it should not merge into the Metropolitan Transportation Authority parent record.",
+        "source_decision": "data/review_notes/codex-identity-batch217-prep.json#identity217",
+        "reviewed_at": "2026-06-23T13:11:36.611Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-128981-nyct",
+          "entity_nyct-svp-safety-security-mtg-doc-193916"
+        ],
+        "reason": "Agency-versus-role/person false positive. The NYCT agency record is not the same entity as an NYCT SVP Safety & Security role extraction.",
+        "source_decision": "data/review_notes/codex-identity-batch215-prep.json#identity215",
+        "reviewed_at": "2026-06-23T12:46:59.828Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-128981-nyct",
+          "entity_richard-davey-nyct-president"
+        ],
+        "reason": "Different entity_type: agency vs person.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_696351ea7c.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-129041-robert-free",
+          "entity_rose-davis"
+        ],
+        "reason": "Strong identity field entity_name differs ('Rob Free' vs 'Rose Davis'); both are distinct persons. The shared agency 'Long Island Rail Road' is a relation, not identity. Under Merge Canon test 1 (contradiction test), differing entity_name forces do_not_merge.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_c8c2813d7d.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-131651-mta-chief-investment-officer",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Generic office-vs-agency collision. The MTA Chief Investment Officer is an office/role within MTA, not the Metropolitan Transportation Authority entity itself.",
+        "source_decision": "data/review_notes/codex-identity-batch212-prep.json#identity212",
+        "reviewed_at": "2026-06-23T12:29:53Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-131651-mta-risk-insurance",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "MTA Risk and Insurance Management is a division/function within MTA, not the parent authority itself.",
+        "source_decision": "data/review_notes/codex-identity-batch222-mta-parent-prep.json#identity222-mta-parent-008",
+        "reviewed_at": "2026-06-23T14:31:50.430Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-135596-mta-corporate-compliance",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Corporate Compliance is a named MTA compliance office/department. It should not be identified as the whole parent authority.",
+        "source_decision": "data/review_notes/codex-identity-batch223-mta-departments-prep.json#identity223-mta-departments-006",
+        "reviewed_at": "2026-06-23T14:46:42.194Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-140491-mercer",
+          "entity_mercer-health-benefits"
+        ],
+        "reason": "Contradiction test (test 1): strong identity field entity_type differs (organization vs vendor). The records denote distinct real-world entities despite sharing the base name 'Mercer'.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_70609b70c4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-143191-sofia-hubscher",
+          "entity_meeting-doc-199231-shanifah-riera-cso"
+        ],
+        "reason": "Clear contamination/false-positive key: one record is primarily Sofia Hubscher with a leaked Shanifah Riera alias, while the other is Shanifah Riera. Do not merge these person identities.",
+        "source_decision": "data/review_notes/codex-identity-batch211-prep.json#identity211",
+        "reviewed_at": "2026-06-23T12:17:47Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-143306-mta-hq",
+          "entity_meeting-doc-154986-aar"
+        ],
+        "reason": "MTA Headquarters and Access-A-Ride/paratransit service context are distinct; shared MTA key is parent-acronym contamination.",
+        "source_decision": "data/review_notes/codex-identity-batch224-local-prep.json#identity224-local-009",
+        "reviewed_at": "2026-06-23T15:02:49.178Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-143306-mta-hq",
+          "entity_meeting-doc-64066-mta"
+        ],
+        "reason": "MTA Headquarters is an HQ/administrative unit cluster; the other record is parent Metropolitan Transportation Authority. Do not collapse unit into parent.",
+        "source_decision": "data/review_notes/codex-identity-batch224-local-prep.json#identity224-local-011",
+        "reviewed_at": "2026-06-23T15:02:49.178Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-143306-mta-hq",
+          "entity_meeting-doc-ddcr"
+        ],
+        "reason": "MTA Headquarters and DDCR/diversity-civil-rights context are distinct units/contexts; shared MTA acronym is not identity.",
+        "source_decision": "data/review_notes/codex-identity-batch224-local-prep.json#identity224-local-012",
+        "reviewed_at": "2026-06-23T15:02:49.178Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-143306-mta-hq",
+          "entity_mta-bridges-and-tunnels"
+        ],
+        "reason": "MTA Headquarters and MTA Bridges and Tunnels/TBTA are distinct MTA entities.",
+        "source_decision": "data/review_notes/codex-identity-batch224-local-prep.json#identity224-local-013",
+        "reviewed_at": "2026-06-23T15:02:49.178Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-143306-mta-hq",
+          "entity_mta-bus-company"
+        ],
+        "reason": "MTA Headquarters and MTA Bus Company are distinct MTA entities.",
+        "source_decision": "data/review_notes/codex-identity-batch224-local-prep.json#identity224-local-014",
+        "reviewed_at": "2026-06-23T15:02:49.178Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-143306-mta-hq",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "MTA Headquarters is an HQ/administrative unit cluster. It should not collapse into the parent MTA authority solely because HQ appears as an MTA unit.",
+        "source_decision": "data/review_notes/codex-identity-batch222-mta-parent-prep.json#identity222-mta-parent-005",
+        "reviewed_at": "2026-06-23T14:31:50.430Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-143306-mta-hq",
+          "entity_mta-metropolitan-transportation-authority"
+        ],
+        "reason": "MTA Headquarters is an HQ/administrative unit; MTA Metropolitan Transportation Authority is the parent corporation/authority.",
+        "source_decision": "data/review_notes/codex-identity-batch225-live-parent-prep.json#identity225-live-parent-002",
+        "reviewed_at": "2026-06-23T15:09:48.507Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-143306-mta-hq",
+          "entity_mta-overall"
+        ],
+        "reason": "MTA Headquarters is an HQ/administrative unit; MTA Overall is umbrella MTA entity.",
+        "source_decision": "data/review_notes/codex-identity-batch225-live-parent-prep.json#identity225-live-parent-005",
+        "reviewed_at": "2026-06-23T15:09:48.507Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-143306-mta-hq",
+          "entity_mta-real-estate"
+        ],
+        "reason": "MTA Headquarters and MTA Real Estate are distinct MTA units/functions.",
+        "source_decision": "data/review_notes/codex-identity-batch225-live-parent-prep.json#identity225-live-parent-006",
+        "reviewed_at": "2026-06-23T15:09:48.507Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-154986-aar",
+          "entity_meeting-doc-64066-mta"
+        ],
+        "reason": "Access-A-Ride/paratransit service context is not the parent Metropolitan Transportation Authority record.",
+        "source_decision": "data/review_notes/codex-identity-batch224-local-prep.json#identity224-local-010",
+        "reviewed_at": "2026-06-23T15:02:49.178Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-154986-aar",
+          "entity_mta-bus-company"
+        ],
+        "reason": "AAR is a paratransit service/program; MTA Bus Company is a bus operating company/division. They are related in bus/paratransit governance but not the same identity.",
+        "source_decision": "data/review_notes/codex-identity-batch223-mta-departments-prep.json#identity223-mta-departments-003",
+        "reviewed_at": "2026-06-23T14:46:42.194Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-154986-aar",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Different entity_type: paratransit service program vs transit_authority.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_696351ea7c.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-154986-aar",
+          "entity_mta-metropolitan-transportation-authority"
+        ],
+        "reason": "AAR is a service program; this MTA record is the parent authority/corporation.",
+        "source_decision": "data/review_notes/codex-identity-batch225-live-parent-prep.json#identity225-live-parent-001",
+        "reviewed_at": "2026-06-23T15:09:48.507Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-154986-aar",
+          "entity_mta-nyct"
+        ],
+        "reason": "Access-A-Ride/service program context should not merge with NYCT agency identity.",
+        "source_decision": "data/review_notes/codex-identity-batch224-mta-parent-prep.json#normalized-mta-nyct-do-not-merge-guardrail",
+        "reviewed_at": "2026-06-24T03:10:00.000Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-154986-aar",
+          "entity_mta-overall"
+        ],
+        "reason": "AAR is a service program; the MTA Overall record is the umbrella public benefit corporation.",
+        "source_decision": "data/review_notes/codex-identity-batch225-live-parent-prep.json#identity225-live-parent-004",
+        "reviewed_at": "2026-06-23T15:09:48.507Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-155486-cprb",
+          "entity_meeting-doc-160251-cprb"
+        ],
+        "reason": "Different entity_type: first record is 'agency', second is 'board'. Per Identity Merge Canon test 1, contradiction in strong identity field forces do_not_merge, regardless of shared name 'CPRB'.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_4cbe44c64e.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-189756-eap",
+          "entity_meeting-doc-79466-lirr-eap"
+        ],
+        "reason": "Authority vs subsidiary never merge. MTA (the authority) and LIRR (its operating agency) are distinct entities per identity merge canon. The records refer to different Employee Assistance Programs: one under MTA, one under LIRR, as shown by entity_names 'MTA Employee Assistance Program (EAP)' vs 'LIRR Employee Assistance Program (EAP)'. Strong identity field entity_name differs in the sponsoring agency scope, which is a contradiction test failure (test 1).",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_28bb2b1630.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-205631-president-bt-position",
+          "entity_mnr-president-192151"
+        ],
+        "reason": "Generic title key collision across different MTA agencies. These are separate agency leadership roles.",
+        "source_decision": "data/review_notes/codex-identity-batch211-prep.json#identity211",
+        "reviewed_at": "2026-06-23T12:17:47Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-64066-mta",
+          "entity_meeting-doc-95001-mta-total"
+        ],
+        "reason": "The first record is the parent Metropolitan Transportation Authority agency; the second is a table aggregate measure labeled MTA Total Agency Average for farebox ratios, not an organization identity.",
+        "source_decision": "data/review_notes/codex-identity-batch227-wave34-prep.json#identity227-wave34-003",
+        "reviewed_at": "2026-06-23T16:33:00Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-64066-mta",
+          "entity_meeting-doc-ddcr"
+        ],
+        "reason": "Parent agency versus department. Metropolitan Transportation Authority is the parent agency/public authority; MTA Department of Diversity and Civil Rights is a department within the MTA, not the same entity. Shared MTA acronym/parent organization keys are hierarchy context.",
+        "source_decision": "data/review_notes/codex-route-normalization-phase3-adjacent-2026-06-24.json#adjacent-identity-ontology-001",
+        "reviewed_at": "2026-06-24T00:00:00.000Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-64066-mta",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Contradiction test: different entity_type (agency vs transit_authority) for the same real-world MTA entity. Canon forces do_not_merge despite shared identity keys.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_696351ea7c.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-64066-mta",
+          "entity_mta-metropolitan-transportation-authority"
+        ],
+        "reason": "Both are MTA parent-shaped records but remain separate current canonical records; direct merge would need source review because prior MTA parent aliases have caused cycles. Guard as DNM for this cleanup checkpoint.",
+        "source_decision": "data/review_notes/codex-identity-batch225-live-parent-prep.json#identity225-live-parent-003",
+        "reviewed_at": "2026-06-23T15:09:48.507Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-64066-mta",
+          "entity_mta-nyct"
+        ],
+        "reason": "The first record is the parent Metropolitan Transportation Authority, while the second is New York City Transit / NYCT. NYCT may be part of or operate under MTA, but it is not the same entity.",
+        "source_decision": "data/review_notes/codex-identity-batch223-mta-departments-prep.json#identity223-mta-departments-001",
+        "reviewed_at": "2026-06-23T14:46:42.194Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-64066-mta",
+          "entity_mta-overall"
+        ],
+        "reason": "Contradiction test: different entity_type (agency vs public benefit corporation).",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_696351ea7c.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-64066-mta",
+          "entity_sarah-meyer-cco-mta"
+        ],
+        "reason": "Sarah Meyer is a person/officer. The Metropolitan Transportation Authority is an organization. Shared Sarah Meyer keys on the MTA record are signer/officer contamination.",
+        "source_decision": "data/review_notes/codex-identity-batch222-mta-parent-prep.json#identity222-mta-parent-010",
+        "reviewed_at": "2026-06-23T14:31:50.430Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-ddcr",
+          "entity_mta-nyct"
+        ],
+        "reason": "NYCT is an operating agency; DDCR is a department/division context, not the same entity.",
+        "source_decision": "data/review_notes/codex-identity-batch224-mta-parent-prep.json#normalized-mta-nyct-do-not-merge-guardrail",
+        "reviewed_at": "2026-06-24T03:10:00.000Z"
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-twu",
+          "entity_twu-local-100"
+        ],
+        "reason": "The generic Transport Workers Union/TWU record and the specific TWU Local 100 record are related labor-union identities but not the same canonical entity. Local 100 is a local affiliate, not necessarily identical to the parent/generic TWU mention.",
+        "source_decision": "data/review_notes/codex-identity-batch221-entity-prep.json#identity221-entity-009",
+        "reviewed_at": "2026-06-23T14:19:10.488Z"
+      },
+      {
+        "record_ids": [
+          "entity_mnr-chief-safety-officer-192151",
+          "entity_mta-chief-safety-officer-128901"
+        ],
+        "reason": "Generic role key collision. Metro-North Chief Safety Officer and MTA Chief Safety Officer are scope-specific offices/roles, not necessarily the same entity.",
+        "source_decision": "data/review_notes/codex-identity-batch211-prep.json#identity211",
+        "reviewed_at": "2026-06-23T12:17:47Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-2012",
+          "entity_mta-nyct"
+        ],
+        "reason": "Authority vs subsidiary never merge (Entities per-kind rule). entity_mta-2012 represents the Metropolitan Transportation Authority (the parent authority); entity_mta-nyct represents MTA New York City Transit (a subsidiary operating agency). Decisive identity field: entity_name — 'Metropolitan Transportation Authority' vs 'MTA New York City Transit'. The relation_context confirms NYCT is owned_by the MTA parent.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_001-w2-2026-06-10.json",
+        "reviewed_at": "2026-06-10T21:42:17.724582Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-2019",
+          "entity_mta-customer-experience"
+        ],
+        "reason": "entity_mta-2019 is the MTA transit authority. entity_mta-customer-experience is an internal team within MTA. Different entity types (transit_authority vs internal team). The shared identity key 'entity_mta' is an overbroad alias.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_001.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-2019",
+          "entity_mta-hq-data-analytics"
+        ],
+        "reason": "entity_mta-2019 is the MTA transit authority. entity_mta-hq-data-analytics is an internal team within MTA. Different entity types (transit_authority vs internal team). The shared identity key 'entity_mta' is an overbroad alias.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_001.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-2019",
+          "entity_mta-nyct"
+        ],
+        "reason": "entity_mta-2019 is the parent Metropolitan Transportation Authority (transit_authority) while entity_mta-nyct is the subsidiary MTA New York City Transit operating agency (agency). Different entity types and different organizational levels. The negative signal 'different entity_type: transit_authority vs agency' confirms they are distinct.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_001.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-2019",
+          "entity_mta-open-data-team"
+        ],
+        "reason": "entity_mta-2019 is the MTA transit authority. entity_mta-open-data-team is a team within MTA. Different entity types (transit_authority vs team). The shared identity key 'entity_mta' is an overbroad alias.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_001.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-board-drug-alcohol",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Different entity_type: board vs transit_authority. The board governs the MTA but is a distinct entity.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_696351ea7c.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-board-open-data-plan",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Different entity_type: governing body vs transit_authority.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_696351ea7c.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-bridges-and-tunnels",
+          "entity_mta-nyct"
+        ],
+        "reason": "NYCT and MTA Bridges and Tunnels are sibling/related MTA entities, not aliases.",
+        "source_decision": "data/review_notes/codex-identity-batch224-mta-parent-prep.json#normalized-mta-nyct-do-not-merge-guardrail",
+        "reviewed_at": "2026-06-24T03:10:00.000Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-bus-company",
+          "entity_mta-nyct"
+        ],
+        "reason": "MTA Bus Company and NYCT are related bus operators but distinct entities.",
+        "source_decision": "data/review_notes/codex-identity-batch224-mta-parent-prep.json#normalized-mta-nyct-do-not-merge-guardrail",
+        "reviewed_at": "2026-06-24T03:10:00.000Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-chief-procurement-officer",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Different entity_type: office vs transit_authority.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_696351ea7c.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-chief-procurement-officer",
+          "entity_mta-procurement"
+        ],
+        "reason": "Related but not identical MTA procurement entities. The Office of the Chief Procurement Officer is a specific office/role context, while MTA Procurement is the broader department/division.",
+        "source_decision": "data/review_notes/codex-identity-batch212-prep.json#identity212",
+        "reviewed_at": "2026-06-23T12:29:53Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-construction-and-development",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "MTA Construction & Development is a distinct MTA subsidiary/affiliate identity, not the parent MTA authority.",
+        "source_decision": "data/review_notes/codex-identity-batch222-mta-parent-prep.json#identity222-mta-parent-004",
+        "reviewed_at": "2026-06-23T14:31:50.430Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-customer-experience",
+          "entity_mta-hq-data-analytics"
+        ],
+        "reason": "Distinct internal teams within MTA. MTA Customer Experience previously held the Open Data Program before it transferred to the Data & Analytics team. They are related but distinct entities with different names and roles.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_001.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-customer-experience",
+          "entity_mta-nyct"
+        ],
+        "reason": "entity_mta-customer-experience is an internal team within MTA. entity_mta-nyct is the MTA New York City Transit operating agency. Different entity types and organizational levels.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_001.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-customer-experience",
+          "entity_mta-open-data-team"
+        ],
+        "reason": "Distinct teams within MTA. MTA Customer Experience is a different team from the MTA Open Data team. Different names and responsibilities.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_001.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-entity-update-2025",
+          "entity_mta-metropolitan-transportation-authority"
+        ],
+        "reason": "Contradiction test: different entity_type (transit_authority vs agency).",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_696351ea7c.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-entity-update-2025",
+          "entity_mta-nyct"
+        ],
+        "reason": "entity_mta-entity-update-2025 is the parent Metropolitan Transportation Authority (transportation_authority) while entity_mta-nyct is the subsidiary MTA New York City Transit operating agency (agency). Different entity types and organizational levels.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_001.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-entity-update-2025",
+          "entity_mta-overall"
+        ],
+        "reason": "Contradiction test: different entity_type (transit_authority vs public benefit corporation).",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_696351ea7c.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-entity-update-2025",
+          "entity_mta-real-estate"
+        ],
+        "reason": "MTA Real Estate is an agency department/function, not the parent MTA authority. The shared MTA Real Estate aliases on the parent are department contamination.",
+        "source_decision": "data/review_notes/codex-identity-batch222-mta-parent-prep.json#identity222-mta-parent-009",
+        "reviewed_at": "2026-06-23T14:31:50.430Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-entity-update-2025",
+          "entity_safety-committee-charter"
+        ],
+        "reason": "Parent authority versus board committee. The Safety Committee is an MTA committee, not the same entity as the Metropolitan Transportation Authority itself.",
+        "source_decision": "data/review_notes/codex-identity-batch213-prep.json#identity213",
+        "reviewed_at": "2026-06-23T12:29:13Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-hq-data-analytics",
+          "entity_mta-nyct"
+        ],
+        "reason": "entity_mta-hq-data-analytics is an internal team at MTA HQ. entity_mta-nyct is the MTA New York City Transit operating agency. Different entities. The relation context shows Data & Analytics 'manages' something related to NYCT, confirming they are distinct.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_001.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-hq-data-analytics",
+          "entity_mta-open-data-team"
+        ],
+        "reason": "Distinct teams within MTA. The Data & Analytics team manages the Open Data program, while the MTA Open Data team is the team that publishes the Open Data Plan. Related but distinct entities.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_001.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-metropolitan-transportation-authority",
+          "entity_mta-nyct"
+        ],
+        "reason": "NYCT is a subsidiary/agency context and should not merge into parent MTA authority.",
+        "source_decision": "data/review_notes/codex-identity-batch224-mta-parent-prep.json#normalized-mta-nyct-do-not-merge-guardrail",
+        "reviewed_at": "2026-06-24T03:10:00.000Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-nyct",
+          "entity_mta-nyct-evp-frank-farrell"
+        ],
+        "reason": "Frank Farrell is a person (EVP of Buses) who works at MTA NYCT. entity_mta-nyct is the agency itself. Different entity types (government_official vs agency). The shared identity key 'entity_mta-nyct' is an incorrectly assigned alias on the person record.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_001.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-nyct",
+          "entity_mta-open-data-team"
+        ],
+        "reason": "entity_mta-open-data-team is a team within MTA. entity_mta-nyct is the MTA New York City Transit operating agency. The relation context shows Open Data team is 'part_of' NYCT, confirming they are distinct entities with a hierarchical relationship.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_001.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-nyct",
+          "entity_mta-overall"
+        ],
+        "reason": "NYCT-specific records should not merge with MTA Overall aggregate reporting context.",
+        "source_decision": "data/review_notes/codex-identity-batch224-mta-parent-prep.json#normalized-mta-nyct-do-not-merge-guardrail",
+        "reviewed_at": "2026-06-24T03:10:00.000Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-nyct",
+          "entity_mta-real-estate"
+        ],
+        "reason": "NYCT and MTA Real Estate are distinct organizational contexts.",
+        "source_decision": "data/review_notes/codex-identity-batch224-mta-parent-prep.json#normalized-mta-nyct-do-not-merge-guardrail",
+        "reviewed_at": "2026-06-24T03:10:00.000Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-nyct",
+          "entity_nyc-transit-law-department"
+        ],
+        "reason": "Agency versus department. MTA New York City Transit is the operating agency, while NYC Transit Law Department is a department within NYCT.",
+        "source_decision": "data/review_notes/codex-identity-batch216-prep.json#identity216",
+        "reviewed_at": "2026-06-23T12:56:17.895Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-real-estate",
+          "entity_mta-real-estate-department"
+        ],
+        "reason": "Contradiction test: entity_type department vs agency department. Both represent the same department but types differ; cannot merge.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_696351ea7c.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-real-estate-tod",
+          "entity_mta-tod-meeting-doc-160301"
+        ],
+        "reason": "Test 1 contradiction: entity_type differs (department vs program). Strong identity field conflict forces do_not_merge regardless of name/alias overlap.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_5030c9f1d5.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_mta-tod-meeting-doc-160301",
+          "entity_mta-transit-oriented-development"
+        ],
+        "reason": "Test 1 contradiction: entity_type differs (program vs department). Strong identity field conflict forces do_not_merge.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_5030c9f1d5.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "entity_ny-sdod-lga-aa",
+          "entity_ny-state-dot"
+        ],
+        "reason": "entity_ny-sdod-lga-aa is the NYSDOT agency cluster, while entity_ny-state-dot has a role-shaped display name/evidence for Commissioner of Transportation despite an NYSDOT payload. Until the role-shaped record is corrected or retired, it should not be merged into the agency cluster.",
+        "source_decision": "data/review_notes/codex-identity-batch221-entity-prep.json#identity221-entity-010",
+        "reviewed_at": "2026-06-23T14:19:10.488Z"
+      },
+      {
+        "record_ids": [
+          "entity_nyc-dot",
+          "entity_nycdot-commissioner-mike-flynn"
+        ],
+        "reason": "entity_nyc-dot represents the NYC Department of Transportation (an agency, entity_type: agency). entity_nycdot-commissioner-mike-flynn represents Mike Flynn, a government official at NYC DOT (entity_type: government_official). The shared identity key 'entity_nyc-dot' appears in the commissioner's record's identity_keys and aliases, but the payload_identity_fields clearly distinguish entity_type ('agency' vs 'government_official') and entity_name ('New York City Department of Transportation' vs 'Mike Flynn'). The commissioner's record has agency_name 'NYC Department of Transportation' confirming affiliation, not identity. These are related but distinct entities — a person and their employer — and should not be merged.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_005.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "entity_nyc-dot",
+          "entity_scott-gastel-alana-morales-tsp-2017"
+        ],
+        "reason": "Different entity_type and identity: entity_nyc-dot is the NYC DOT agency, while Scott Gastel and Alana Morales are press contacts affiliated with the agency. The shared NYC DOT key is affiliation context, not identity.",
+        "source_decision": "data/identity-review/accepted/decisions/entity_cluster_001.json",
+        "reviewed_at": "2026-06-09T02:29:27.000Z"
+      },
+      {
+        "record_ids": [
+          "entity_nyct-dept-of-subways",
+          "entity_nyct-dos-dob-mtabc-201766"
+        ],
+        "reason": "Component versus aggregate distinction. The combined Department of Subways, Department of Buses, and MTA Bus Company record should not collapse into the Department of Subways alone.",
+        "source_decision": "data/review_notes/codex-identity-batch211-prep.json#identity211",
+        "reviewed_at": "2026-06-23T12:17:47Z"
+      }
+    ],
+    "project": [
+      {
+        "record_ids": [
+          "project_01-lexington-ave",
+          "project_lexington-ave-60th-52nd-offset-bus-lane"
+        ],
+        "reason": "Parent/adjacent-segment distinction: the 2019 Lexington Ave 96th-60th project and the later 60th-52nd offset-lane project are linked corridor segments, not the same project record.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch200-prep.json#codex-identity-dnm-batch200-prep",
+        "reviewed_at": "2026-06-23T11:18:39Z"
+      },
+      {
+        "record_ids": [
+          "project_06-42nd-st",
+          "project_12-webster-ave"
+        ],
+        "reason": "Strong identity fields differ: different project_name (42nd St vs Webster Ave), different corridor/geographic scope (42nd St, 12th Ave to FDR Dr vs Webster Ave, 176th St to 174th St), and different routes_served (M42, SIM8 etc. vs Bx41 SBS, Bx41). Shared program membership (Better Buses Action Plan) is relation context, not merge authority, per identity merge canon test 1 (contradiction test).",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_a35902fc28.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_06-42nd-st",
+          "project_17-fresh-pond-rd"
+        ],
+        "reason": "Strong identity fields differ: different project_name (42nd St vs Fresh Pond Rd), different corridor/geographic scope (42nd St, 12th Ave to FDR Dr vs Fresh Pond Rd, Metropolitan Ave to Putnam Ave), and different routes_served (M42, SIM8 etc. vs Q58, QM24 etc.). Shared program membership is not merge authority. Test 1 applies.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_a35902fc28.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_06-42nd-st",
+          "project_21-malcolm-x-blvd"
+        ],
+        "reason": "Strong identity fields differ: different project_name (42nd St vs Malcolm X Blvd / Utica Ave), different geographic scope (42nd St vs Chauncey St to Atlantic Ave), different routes_served (M42 etc. vs B46 SBS, B46). Shared program membership is not merge authority. Test 1 applies.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_a35902fc28.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_12-webster-ave",
+          "project_17-fresh-pond-rd"
+        ],
+        "reason": "Strong identity fields differ: different project_name (Webster Ave vs Fresh Pond Rd), different geographic scope (Webster Ave, 176th St to 174th St vs Fresh Pond Rd, Metropolitan Ave to Putnam Ave), different routes_served (Bx41 SBS, Bx41 vs Q58, QM24 etc.). Shared program membership is not merge authority. Test 1 applies.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_a35902fc28.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_12-webster-ave",
+          "project_21-malcolm-x-blvd"
+        ],
+        "reason": "Strong identity fields differ: different project_name (Webster Ave vs Malcolm X Blvd / Utica Ave), different geographic scope (Webster Ave, 176th St to 174th St vs Chauncey St to Atlantic Ave), different routes_served (Bx41 SBS, Bx41 vs B46 SBS, B46). Shared program membership is not merge authority. Test 1 applies.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_a35902fc28.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_17-fresh-pond-rd",
+          "project_21-malcolm-x-blvd"
+        ],
+        "reason": "Strong identity fields differ: different project_name (Fresh Pond Rd vs Malcolm X Blvd / Utica Ave), different geographic scope (Fresh Pond Rd, Metropolitan Ave to Putnam Ave vs Chauncey St to Atlantic Ave), different routes_served (Q58, QM24 etc. vs B46 SBS, B46). Shared program membership is not merge authority. Test 1 applies.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_a35902fc28.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_2017-sip-woodhaven-blvd-cb5-sept2024",
+          "project_2017-street-improvement-79th"
+        ],
+        "reason": "Strong location and route-scope conflict: Woodhaven Boulevard/Q52-Q53 work in Queens is not the 79th Street/M79 SBS improvement in Manhattan. The shared '2017 Street Improvement Project' label is generic and should not carry project identity.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch200-prep.json#codex-identity-dnm-batch200-prep",
+        "reviewed_at": "2026-06-23T11:18:39Z"
+      },
+      {
+        "record_ids": [
+          "project_2017-sip-woodhaven-blvd-cb5-sept2024",
+          "project_79th-st-2017-improvement-cb7-apr2025"
+        ],
+        "reason": "Strong location and route-scope conflict: Woodhaven Boulevard/Q52-Q53 work in Queens is not the 79th Street/M79 SBS street improvement in Manhattan. The shared 2017 Street Improvement Project label is too generic to carry project identity.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch197-prep.json#codex-identity-dnm-batch197-prep",
+        "reviewed_at": "2026-06-23T11:20:00Z"
+      },
+      {
+        "record_ids": [
+          "project_34th-st-transitway-phase1-2009",
+          "project_bx12-sbs-fordham-rd-phase1"
+        ],
+        "reason": "Different project name (34th Street Transitway Concept vs Bx12 Select Bus Service) and geographic scope (34th Street, Manhattan vs Fordham Road, Bronx); program BRT Phase I is relation context, not merge authority (Contradiction test 1, project_name and location differ).",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_b3667d8e97.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_able-camera-expansion-2022",
+          "project_able-program"
+        ],
+        "reason": "Program/subproject distinction: an ABLE camera expansion deployment is related to, but not identical with, the broader ABLE enforcement program.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch197-prep.json#codex-identity-dnm-batch197-prep",
+        "reviewed_at": "2026-06-23T11:20:00Z"
+      },
+      {
+        "record_ids": [
+          "project_annual-2021-cbdtp",
+          "project_cbd-tolling-transcore-mod"
+        ],
+        "reason": "Program/contract-action distinction: a vendor contract modification under CBDTP is not the same canonical project identity as the Central Business District Tolling Program itself.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch197-prep.json#codex-identity-dnm-batch197-prep",
+        "reviewed_at": "2026-06-23T11:20:00Z"
+      },
+      {
+        "record_ids": [
+          "project_annual-2021-east-side-access",
+          "project_east-side-access-support"
+        ],
+        "reason": "Parent/support-package distinction: the East Side Access megaproject and a set of support projects are related, but the support package should remain a separate project identity from the parent expansion program.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch200-prep.json#codex-identity-dnm-batch200-prep",
+        "reviewed_at": "2026-06-23T11:18:39Z"
+      },
+      {
+        "record_ids": [
+          "project_bb28w-hct-standpipe",
+          "project_rk21ph2-rfk-standpipe"
+        ],
+        "reason": "Distinct projects: different project names ('BB-28W: Hugh L. Carey Tunnel Brooklyn Plaza Standpipe Replacement' vs 'RK-21Ph2: Fire Standpipe Acceleration Ph.2 at the Robert F. Kennedy Bridge'), different locations (Hugh L. Carey Tunnel vs Robert F. Kennedy Bridge), and different budgets ($3M vs $4.9M). The only shared attribute is program 'Moving NY Forward', which is relation context, not merge authority (per review reason and Test 1 of the merge canon: program membership is relation/payload, not identity).",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_3c5de35fa5.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_bb28w-hct-standpipe",
+          "project_rk81-rfk-interoperability"
+        ],
+        "reason": "Distinct projects: different project names ('BB-28W: Hugh L. Carey Tunnel Brooklyn Plaza Standpipe Replacement' vs 'RK-81: Facility Interoperability Improvements (Demo of Old Structure) at the Robert F. Kennedy Bridge'), different locations (Hugh L. Carey Tunnel vs Robert F. Kennedy Bridge), and different budgets ($3M vs $8.8M). Shared program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_3c5de35fa5.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_bb28w-hct-standpipe",
+          "project_vnb-brooklyn-approach-reconstruction"
+        ],
+        "reason": "Distinct projects: different project names ('BB-28W: Hugh L. Carey Tunnel Brooklyn Plaza Standpipe Replacement' vs 'Brooklyn Approach Reconstruction' at Verrazzano-Narrows Bridge), different locations (Hugh L. Carey Tunnel vs Verrazzano-Narrows Bridge), different scopes and budgets ($3M vs $26.1M, standpipe vs approach reconstruction). Shared program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_3c5de35fa5.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_better-buses-restart-2021",
+          "project_jamaica-busway"
+        ],
+        "reason": "The shared identity key 'project_better-buses-restart' is a broad program label, not an authoritative identity field. Better Buses Restart is a citywide 2021 NYC DOT initiative (project_type: 'bus improvement initiative', status: 'implemented') that launched multiple bus lanes and busways. Jamaica Busway is a specific busway project on Jamaica Avenue and Archer Avenue in Queens (project_type: 'busway', status: 'monitoring') that is explicitly described as 'part of the Better Buses Restart program' in its payload. The Jamaica Busway has its own distinct project_name ('Jamaica Busway'), distinct corridors, distinct launch_date_text ('October 24, 2021'), and distinct relation_context linking to specific corridor records. The colon-notation evidence 'Better Buses Restart: Jamaica Busway' reinforces a parent-program/child-project relationship, not identity equivalence.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_002.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "project_brewster-yard-union-depot-reorganization-meeting-doc-171486",
+          "project_climate-resilience-hudson-line-design-stabilization-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_brewster-yard-union-depot-reorganization-meeting-doc-171486",
+          "project_climate-resilience-hudson-line-road-protections-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_brewster-yard-union-depot-reorganization-meeting-doc-171486",
+          "project_grand-central-artery-improvements-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_brewster-yard-union-depot-reorganization-meeting-doc-171486",
+          "project_grand-central-terminal-improvements-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_brewster-yard-union-depot-reorganization-meeting-doc-171486",
+          "project_infrastructure-refurb-hudson-line-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_brewster-yard-union-depot-reorganization-meeting-doc-171486",
+          "project_mott-haven-yard-fueling-improvements-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_brewster-yard-union-depot-reorganization-meeting-doc-171486",
+          "project_signal-renewal-hudson-line-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_bx12-sbs-fordham-rd-phase1",
+          "project_hylan-blvd-sbs-phase1"
+        ],
+        "reason": "Different project name and location (Fordham Road, Bronx vs Hylan Boulevard, Staten Island); both SBS but distinct corridors; program BRT Phase I is relation context (Contradiction test 1, project_name and scope differ).",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_b3667d8e97.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_climate-resilience-hudson-line-design-stabilization-meeting-doc-171486",
+          "project_climate-resilience-hudson-line-road-protections-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_climate-resilience-hudson-line-design-stabilization-meeting-doc-171486",
+          "project_grand-central-artery-improvements-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_climate-resilience-hudson-line-design-stabilization-meeting-doc-171486",
+          "project_grand-central-terminal-improvements-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_climate-resilience-hudson-line-design-stabilization-meeting-doc-171486",
+          "project_infrastructure-refurb-hudson-line-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_climate-resilience-hudson-line-design-stabilization-meeting-doc-171486",
+          "project_mott-haven-yard-fueling-improvements-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_climate-resilience-hudson-line-design-stabilization-meeting-doc-171486",
+          "project_signal-renewal-hudson-line-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_climate-resilience-hudson-line-road-protections-meeting-doc-171486",
+          "project_grand-central-artery-improvements-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_climate-resilience-hudson-line-road-protections-meeting-doc-171486",
+          "project_grand-central-terminal-improvements-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_climate-resilience-hudson-line-road-protections-meeting-doc-171486",
+          "project_infrastructure-refurb-hudson-line-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_climate-resilience-hudson-line-road-protections-meeting-doc-171486",
+          "project_mott-haven-yard-fueling-improvements-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_climate-resilience-hudson-line-road-protections-meeting-doc-171486",
+          "project_signal-renewal-hudson-line-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_east-side-access-support",
+          "project_main-line-second-track"
+        ],
+        "reason": "Different project/workstream distinction: Main Line Second Track construction is a separate LIRR construction project/workstream from the East Side Access Support Projects package, even when the same work-plan text mentions both.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch200-prep.json#codex-identity-dnm-batch200-prep",
+        "reviewed_at": "2026-06-23T11:18:39Z"
+      },
+      {
+        "record_ids": [
+          "project_fordham-rd-bus-priority",
+          "project_fordham-rd-bus-priority-cb5-may2026"
+        ],
+        "reason": "The records are related Fordham Road work but not a same-identity duplicate: the first is the broader Fordham/Inwood study and alternatives record, while the second is a later Bronx-only Sedgwick-to-Bronx-River segment/design phase. This is a parent/segment or phase distinction, so the duplicate key should be suppressed with DNM rather than an alias.",
+        "source_decision": "data/review_notes/codex-identity-route-project-batch204-prep.json#codex-identity-route-project-batch204-prep",
+        "reviewed_at": "2026-06-23T11:33:57Z"
+      },
+      {
+        "record_ids": [
+          "project_gct-fire-standpipe-phase2",
+          "project_park-avenue-viaduct-repair"
+        ],
+        "reason": "Shared program (MTA 2020-2024 Capital Program) is relation context, not merge authority. Identity fields differ: distinct project names, types, and scopes (fire standpipe replacement vs. viaduct repair). Contradiction test: strong identity field project_name and project_type differ, so they are distinct projects.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_ecbd44e7ea.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_gct-fire-standpipe-phase2",
+          "project_prevost-express-buses-oct2023"
+        ],
+        "reason": "Shared program is not merge authority. Identity fields differ: project_name, project_type, scope. Contradiction test: strong identity fields differ, so distinct projects.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_ecbd44e7ea.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_gct-fire-standpipe-phase2",
+          "project_ronkonkoma-parking-garage-rehab"
+        ],
+        "reason": "Shared program is not merge authority. Identity fields differ: project_name, project_type, scope. Contradiction test: distinct projects.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_ecbd44e7ea.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_grand-central-artery-improvements-meeting-doc-171486",
+          "project_grand-central-terminal-improvements-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_grand-central-artery-improvements-meeting-doc-171486",
+          "project_infrastructure-refurb-hudson-line-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_grand-central-artery-improvements-meeting-doc-171486",
+          "project_mott-haven-yard-fueling-improvements-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_grand-central-artery-improvements-meeting-doc-171486",
+          "project_signal-renewal-hudson-line-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_grand-central-artery-initiative",
+          "project_interborough-express-2020-2024"
+        ],
+        "reason": "Do not merge: the records share only a program/funding context. Program membership is relation context, not project identity, and the project names/scopes differ.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_15471d97c3.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_grand-central-terminal-improvements-meeting-doc-171486",
+          "project_infrastructure-refurb-hudson-line-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_grand-central-terminal-improvements-meeting-doc-171486",
+          "project_mott-haven-yard-fueling-improvements-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_grand-central-terminal-improvements-meeting-doc-171486",
+          "project_signal-renewal-hudson-line-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_hall-interlocking-expansion",
+          "project_jamaica-capacity-improvements"
+        ],
+        "reason": "Component/parent distinction: Hall Interlocking Expansion is a component or subproject within Jamaica Capacity Improvements, not the same project identity as the broader JCI program.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch197-prep.json#codex-identity-dnm-batch197-prep",
+        "reviewed_at": "2026-06-23T11:20:00Z"
+      },
+      {
+        "record_ids": [
+          "project_infrastructure-refurb-hudson-line-meeting-doc-171486",
+          "project_mott-haven-yard-fueling-improvements-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_infrastructure-refurb-hudson-line-meeting-doc-171486",
+          "project_signal-renewal-hudson-line-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_jamaica-capacity-improvement",
+          "project_jamaica-capacity-improvement-phase2"
+        ],
+        "reason": "Parent/phase distinction: Phase 2 property-interest actions are within the Jamaica Capacity Improvement effort but should not be collapsed into the broader parent project record.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch197-prep.json#codex-identity-dnm-batch197-prep",
+        "reviewed_at": "2026-06-23T11:20:00Z"
+      },
+      {
+        "record_ids": [
+          "project_lirr-security-initiatives",
+          "project_security-initiatives-nyct"
+        ],
+        "reason": "Agency/scope distinction: the shared 'Security Initiatives' label is generic. LIRR security-camera/electronic-data work and NYCT security command/deployable-camera work are distinct agency-specific initiatives.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch197-prep.json#codex-identity-dnm-batch197-prep",
+        "reviewed_at": "2026-06-23T11:20:00Z"
+      },
+      {
+        "record_ids": [
+          "project_meeting-doc-155026-laurelton-accessibility",
+          "project_signal-modernization-fulton-ac-line"
+        ],
+        "reason": "Do not merge: the records share only a program/funding context. Program membership is relation context, not project identity, and the project names/scopes differ.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_5374bac3ce.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_meeting-doc-160316-dual-mode-loco-option3",
+          "project_rail-vacuum-services-contract"
+        ],
+        "reason": "Do not merge: the records share only a program/funding context. Program membership is relation context, not project identity, and the project names/scopes differ.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_34157302e3.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_mott-haven-yard-fueling-improvements-meeting-doc-171486",
+          "project_signal-renewal-hudson-line-meeting-doc-171486"
+        ],
+        "reason": "Different project_name (strong identity field) - contradicting per test 1. Program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_park-ave-viaduct-phase1",
+          "project_park-avenue-viaduct-repair"
+        ],
+        "reason": "Phase/umbrella distinction: Phase 1 is a bounded design-build contract within the broader Park Avenue Viaduct repair/replacement effort, not the same durable project identity as the overall multi-phase program.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch200-prep.json#codex-identity-dnm-batch200-prep",
+        "reviewed_at": "2026-06-23T11:18:39Z"
+      },
+      {
+        "record_ids": [
+          "project_park-avenue-viaduct-repair",
+          "project_prevost-express-buses-oct2023"
+        ],
+        "reason": "Shared program is not merge authority. Identity fields differ: project_name, project_type. Contradiction test: distinct projects.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_ecbd44e7ea.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_park-avenue-viaduct-repair",
+          "project_ronkonkoma-parking-garage-rehab"
+        ],
+        "reason": "Shared program is not merge authority. Identity fields differ: project_name, project_type, scope. Contradiction test: distinct projects.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_ecbd44e7ea.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_penn-reconstruction-2020-2024",
+          "project_penn-station-reconstruction-design"
+        ],
+        "reason": "Program/funding-action versus design-contract distinction: a 2020-2024 Capital Program funding record for Penn Reconstruction is related to, but not identical with, the architectural/engineering design services contract modification.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch200-prep.json#codex-identity-dnm-batch200-prep",
+        "reviewed_at": "2026-06-23T11:18:39Z"
+      },
+      {
+        "record_ids": [
+          "project_prevost-express-buses-oct2023",
+          "project_ronkonkoma-parking-garage-rehab"
+        ],
+        "reason": "Shared program is not merge authority. Identity fields differ: project_name, project_type, scope. Contradiction test: distinct projects.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_ecbd44e7ea.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_rk21ph2-rfk-standpipe",
+          "project_rk81-rfk-interoperability"
+        ],
+        "reason": "Distinct projects even though both are at Robert F. Kennedy Bridge: different project names ('RK-21Ph2: Fire Standpipe Acceleration Ph.2' vs 'RK-81: Facility Interoperability Improvements (Demo of Old Structure)'), different project numbers (RK-21Ph2 vs RK-81), and different budgets ($4.9M vs $8.8M). They are separate capital acceleration initiatives. Shared program and bridge location do not make them the same project (Test 1: different project scope/name is a strong identity difference).",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_3c5de35fa5.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_rk21ph2-rfk-standpipe",
+          "project_vnb-brooklyn-approach-reconstruction"
+        ],
+        "reason": "Distinct projects: different project names and locations (Robert F. Kennedy Bridge vs Verrazzano-Narrows Bridge), different scopes (fire standpipe vs approach reconstruction), different budgets ($4.9M vs $26.1M). Shared program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_3c5de35fa5.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_rk81-rfk-interoperability",
+          "project_vnb-brooklyn-approach-reconstruction"
+        ],
+        "reason": "Distinct projects: different project names and locations (Robert F. Kennedy Bridge vs Verrazzano-Narrows Bridge), different scopes (facility interoperability improvements vs approach reconstruction), different budgets ($8.8M vs $26.1M). Shared program is not merge authority.",
+        "source_decision": "data/identity-review/accepted/decisions/project_cluster_3c5de35fa5.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "project_2020-2024-mta-capital-program",
+          "project_meeting-151656-capital-program-2025-2029"
+        ],
+        "reason": "Different capital-program periods and scopes: the 2020-2024 MTA Capital Program is not the 2025-2029 Capital Program. Shared capital-program wording is program-category context, not same project identity.",
+        "source_decision": "data/review_notes/codex-project-route-collision-dnm-2026-07-02.json#project-display-collision-dnm",
+        "reviewed_at": "2026-07-02T00:00:00Z"
+      },
+      {
+        "record_ids": [
+          "project_2024-nyct-committee-work-plan",
+          "project_2025-nyct-committee-work-plan"
+        ],
+        "reason": "Distinct annual NYCT committee work plans. The shared work-plan title is recurring document context, while the year is part of the durable project/plan identity.",
+        "source_decision": "data/review_notes/codex-project-route-collision-dnm-2026-07-02.json#project-display-collision-dnm",
+        "reviewed_at": "2026-07-02T00:00:00Z"
+      },
+      {
+        "record_ids": [
+          "project_2024-nyct-committee-work-plan",
+          "project_2026-nyct-committee-work-plan"
+        ],
+        "reason": "Distinct annual NYCT committee work plans. The shared work-plan title is recurring document context, while the year is part of the durable project/plan identity.",
+        "source_decision": "data/review_notes/codex-project-route-collision-dnm-2026-07-02.json#project-display-collision-dnm",
+        "reviewed_at": "2026-07-02T00:00:00Z"
+      },
+      {
+        "record_ids": [
+          "project_2025-nyct-committee-work-plan",
+          "project_2026-nyct-committee-work-plan"
+        ],
+        "reason": "Distinct annual NYCT committee work plans. The shared work-plan title is recurring document context, while the year is part of the durable project/plan identity.",
+        "source_decision": "data/review_notes/codex-project-route-collision-dnm-2026-07-02.json#project-display-collision-dnm",
+        "reviewed_at": "2026-07-02T00:00:00Z"
+      },
+      {
+        "record_ids": [
+          "project_victory-blvd-transit-safety-cb1",
+          "project_victory-blvd-transit-safety-cb2"
+        ],
+        "reason": "Same corridor family but distinct community-board/segment scopes. The CB1 and CB2 Victory Boulevard transit-safety records should remain separate scoped project records unless a later source-backed policy explicitly collapses them.",
+        "source_decision": "data/review_notes/codex-project-route-collision-dnm-2026-07-02.json#project-display-collision-dnm",
+        "reviewed_at": "2026-07-02T00:00:00Z"
+      }
+    ],
+    "corridor": [
+      {
+        "record_ids": [
+          "corridor_125th-st-manhattan",
+          "corridor_125th-street-manhattan"
+        ],
+        "reason": "Both records describe 125th Street in Manhattan, but their canonical corridor limits differ: corridor_125th-st-manhattan is keyed to Morningside Avenue to Second Avenue, while corridor_125th-street-manhattan is keyed to Amsterdam Avenue to Second Avenue. Under the corridor identity canon, street name and borough alone are insufficient and differing limits force a do-not-merge guardrail.",
+        "source_decision": "codex-manual-canonical-cleanup-2026-06-21#125th-st-corridor-limits",
+        "reviewed_at": "2026-06-21T23:59:00.000Z"
+      },
+      {
+        "record_ids": [
+          "corridor_125th-st-manhattan",
+          "corridor_stationary-manhattan"
+        ],
+        "reason": "stationary-manhattan is a list of multiple corridors; it has no single street+limits identity. A compound record aggregating many segments is not the same canonical identity as a specific corridor segment. No strong identity fields match.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_e833feb14e.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_125th-street-manhattan",
+          "corridor_stationary-manhattan"
+        ],
+        "reason": "Same reasoning as above: stationary-manhattan is a collection, not a specific corridor with defined limits. Distinct identities.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_e833feb14e.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_79th-street",
+          "corridor_m79-crosstown-street"
+        ],
+        "reason": "Do not merge: the records share a street/corridor label but have different or only partially overlapping limits. Corridor identity requires matching limits/scope.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_745cc01e16.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_archer-ave-busway",
+          "corridor_stationary-queens"
+        ],
+        "reason": "The two records are fundamentally different in scope and granularity. corridor_archer-ave-busway represents a single specific busway corridor on Archer Avenue with defined limits (153rd St to 160th St eastbound), operational rules (24/7 bus/emergency only), ridership (189K), and bus routes (19). corridor_stationary-queens is an aggregate record listing 14 different Queens streets that had stationary bus lane cameras, functioning as a borough-level index rather than a single physical corridor. The shared street name 'Archer Avenue' is merely one item in a list of 14 streets, not an identity field indicating the same entity. Missing scope (limits, operations, ridership) in stationary-queens and lack of borough-grouping or list semantics in archer-ave-busway confirm they are distinct records serving different purposes.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_010.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "corridor_b82-southern-brooklyn",
+          "corridor_brt-b82-mar2018-kings-highway"
+        ],
+        "reason": "Whole-corridor/subsegment mismatch: the B82 Southern Brooklyn corridor spans Kings Highway plus Flatlands Avenue and other limits, while the second record is a bounded Kings Highway section. A shared street segment should not collapse the whole corridor into the subsegment.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch201-prep.json#codex-identity-dnm-batch201-prep",
+        "reviewed_at": "2026-06-23T11:18:39Z"
+      },
+      {
+        "record_ids": [
+          "corridor_b82-southern-brooklyn",
+          "corridor_kings-highway-brooklyn"
+        ],
+        "reason": "Whole-corridor/subsegment mismatch. The B82 Southern Brooklyn corridor spans Kings Highway plus Flatlands Avenue and other streets; the other record is a Kings Highway-specific treatment/location record.",
+        "source_decision": "data/review_notes/codex-identity-corridor-batch203-prep.json#codex-identity-corridor-batch203-prep",
+        "reviewed_at": "2026-06-23T11:33:57Z"
+      },
+      {
+        "record_ids": [
+          "corridor_b82-southern-brooklyn",
+          "corridor_kings-hwy-brooklyn-b82-cb11"
+        ],
+        "reason": "Whole-corridor/subsegment mismatch. The CB 11 Kings Highway section is a bounded segment inside the larger B82 Southern Brooklyn corridor, not a same-identity corridor record.",
+        "source_decision": "data/review_notes/codex-identity-corridor-batch203-prep.json#codex-identity-corridor-batch203-prep",
+        "reviewed_at": "2026-06-23T11:33:57Z"
+      },
+      {
+        "record_ids": [
+          "corridor_bay-parkway-cropsey",
+          "corridor_cropsey-ave-brooklyn-b82"
+        ],
+        "reason": "Shared Cropsey Avenue street identity hides a compound Bay Parkway/Cropsey corridor versus a B82 route segment. The broader Bay Parkway/Cropsey study area should not collapse into the B82 Cropsey segment.",
+        "source_decision": "data/review_notes/codex-identity-corridor-batch203-prep.json#codex-identity-corridor-batch203-prep",
+        "reviewed_at": "2026-06-23T11:33:57Z"
+      },
+      {
+        "record_ids": [
+          "corridor_bedford-avenue-201011",
+          "corridor_stationary-brooklyn"
+        ],
+        "reason": "Contradiction test: strong identity fields differ. corridor_bedford-avenue-201011 has street='Bedford Avenue' with specific limits 'Between DeKalb Ave and Flushing Ave (bus lane)'; corridor_stationary-brooklyn has a multi-street array (including Bedford Avenue among 13 streets) and no limits. These are not the same canonical corridor. Per-kind rule: a broad study corridor (collection of camera corridors) and a specific segment are distinct.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_1e0690eb14.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_broadway-manhattan-upper",
+          "corridor_broadway-queens"
+        ],
+        "reason": "Shared broad label 'Broadway' is insufficient because these records describe physically distinct corridors in different boroughs (Manhattan vs Queens) with non-overlapping limits (157th–220th St vs 69th St–Roosevelt Ave). The source evidence explicitly distinguishes them by borough, and the only shared identity key is the generic `corridor_broadway` alias, which is a weak label not an authoritative identity field. Borough and limits are strong identity fields that decisively separate these records.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_004.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "corridor_broadway-manhattan-upper",
+          "corridor_bus-fwd-2-broadway-bronx-local"
+        ],
+        "reason": "Shared street name Broadway is a weak key. The records are in different boroughs with different physical limits, so this should be a durable do-not-merge suppression.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch198-prep.json#codex-identity-dnm-batch198-prep",
+        "reviewed_at": "2026-06-23T11:20:00Z"
+      },
+      {
+        "record_ids": [
+          "corridor_broadway-manhattan-upper",
+          "corridor_woodhaven-cross-bay-blvds"
+        ],
+        "reason": "Different street name (Broadway vs Woodhaven/Cross Bay Boulevards) and different limits/borough scope; strong identity fields 'street' and 'borough' contradict, per Decision Test 1 and corridor rule.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_ea099a9e1f.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_broadway-queens",
+          "corridor_bus-fwd-2-broadway-bronx-local"
+        ],
+        "reason": "Different boroughs (Queens vs Bronx) per contradictory strong identity field 'borough', per Decision Test 1 and corridor rule.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_ea099a9e1f.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_broadway-queens",
+          "corridor_woodhaven-cross-bay-blvds"
+        ],
+        "reason": "Different street name (Broadway vs Woodhaven/Cross Bay Boulevards) and different limits; strong identity fields 'street' and 'limits' contradict, per Decision Test 1 and corridor rule.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_ea099a9e1f.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_brt-b82-mar2018-kings-highway",
+          "corridor_kings-highway-bay-pkwy-to-ocean-ave"
+        ],
+        "reason": "Decision test 1 (contradiction): strong identity field 'limits' differs. Record 1 has limits 'Bay Pkwy to Ocean Ave and E 23 St to Ave K'; record 2 has limits 'Bay Pkwy to Ocean Ave'. Different limits on same street and borough never merge per corridor rule.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_8830130a36.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_brt-b82-mar2018-kings-highway",
+          "corridor_kings-highway-brooklyn"
+        ],
+        "reason": "Decision test 1 (contradiction): limits differ. Record 1 has composite limits; record 3 has limits 'at E 34th Street, E 35th Street, and Avenue M' (a point, not a segment).",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_8830130a36.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_brt-b82-mar2018-kings-highway",
+          "corridor_kings-highway-e23-st-to-ave-k"
+        ],
+        "reason": "Decision test 1 (contradiction): limits differ. Record 1 has composite limits including both Bay Pkwy-Ocean Ave and E 23 St-Ave K; record 4 is only the latter segment.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_8830130a36.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_brt-b82-mar2018-kings-highway",
+          "corridor_kings-hwy-brooklyn-b82-cb11"
+        ],
+        "reason": "Decision test 1 (contradiction): limits differ. Record 1 has composite limits; record 5 has limits 'Bay Pkwy to McDonald Ave in CB 11'.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_8830130a36.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_bus-fwd-2-broadway-bronx-local",
+          "corridor_woodhaven-cross-bay-blvds"
+        ],
+        "reason": "Different boroughs (Bronx vs Queens) and different street name; per Decision Test 1 and corridor rule: same street name with differing borough never merges.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_ea099a9e1f.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_bus-fwd-2-church-av-brooklyn-local",
+          "corridor_church-av"
+        ],
+        "reason": "Shared Church Avenue street identity hides adjacent but distinct corridor limits: Coney Island Avenue to Flatbush Avenue versus Flatbush Avenue to Ocean Parkway. The pair should be guarded as DNM rather than collapsed.",
+        "source_decision": "data/review_notes/codex-identity-corridor-batch206-prep.json#codex-identity-corridor-batch206-prep",
+        "reviewed_at": "2026-06-23T11:48:37Z"
+      },
+      {
+        "record_ids": [
+          "corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate",
+          "corridor_church-av"
+        ],
+        "reason": "Sparse Bus Forward 2 Church Avenue SBS-candidate shell lacks limits, while corridor_church-av is the later Flatbush Ave to Ocean Pkwy segment; same street/borough identity key is not enough to merge without explicit source linkage, especially because Bus Forward 2 separately lists an adjacent Church Av local corridor from Coney Island Av to Flatbush Av.",
+        "source_decision": "data/review_notes/codex-identity-corridor-batch209-triage.json#deferred-corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate--corridor_church-av",
+        "reviewed_at": "2026-06-23T18:55:00Z"
+      },
+      {
+        "record_ids": [
+          "corridor_buslane-brochure-161st-street",
+          "corridor_bx6-south-bronx"
+        ],
+        "reason": "Contradiction test: strong identity fields differ. corridor_buslane-brochure-161st-street has corridor_name '161st Street' with no limits, just a single street example, while corridor_bx6-south-bronx has corridor_name 'South Bronx Crosstown', a defined limits (Riverside Drive West to Hunts Point), and a street list including several streets (161st Street as one component). A specific street segment example is distinct from a multi-street corridor; per corridor identity rule, scope and limits differ, so they are not the same canonical identity.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_fb44e6b89a.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_cross-bay-blvd-2015",
+          "corridor_cross-bay-blvd-liberty-109av-2015"
+        ],
+        "reason": "Physical-extent mismatch: 'north of 165 Av' and discrete draft-plan points at Liberty Avenue and 109 Av are not the same corridor extent. Shared Cross Bay Boulevard street name is too broad for identity.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch201-prep.json#codex-identity-dnm-batch201-prep",
+        "reviewed_at": "2026-06-23T11:18:39Z"
+      },
+      {
+        "record_ids": [
+          "corridor_cross-bay-blvd-2015",
+          "corridor_cross-bay-blvd-sbs-spring2015"
+        ],
+        "reason": "The records share Cross Bay Boulevard but carry different physical extents: a north-of-165-Av design segment versus the later 107 Av to N Conduit Av bus-lane segment. Shared street name is not enough for corridor identity.",
+        "source_decision": "data/review_notes/codex-identity-corridor-batch206-prep.json#codex-identity-corridor-batch206-prep",
+        "reviewed_at": "2026-06-23T11:48:37Z"
+      },
+      {
+        "record_ids": [
+          "corridor_cross-bay-blvd-2015",
+          "corridor_cross-bay-boulevard-rockaway-to-165"
+        ],
+        "reason": "Adjacent/different Cross Bay Boulevard extents should stay distinct: one is north of 165 Av, the other is Rockaway Boulevard to 165 Avenue.",
+        "source_decision": "data/review_notes/codex-identity-corridor-batch203-prep.json#codex-identity-corridor-batch203-prep",
+        "reviewed_at": "2026-06-23T11:33:57Z"
+      },
+      {
+        "record_ids": [
+          "corridor_cross-bay-blvd-2015",
+          "corridor_woodhaven-cross-bay-blvds"
+        ],
+        "reason": "Whole-corridor/subsegment mismatch. A Cross Bay Boulevard segment north of 165 Av should not merge with the full Woodhaven/Cross Bay corridor from Woodside to the Rockaways.",
+        "source_decision": "data/review_notes/codex-identity-corridor-batch203-prep.json#codex-identity-corridor-batch203-prep",
+        "reviewed_at": "2026-06-23T11:33:57Z"
+      },
+      {
+        "record_ids": [
+          "corridor_cross-bay-blvd-liberty-109av-2015",
+          "corridor_cross-bay-blvd-sbs-spring2015"
+        ],
+        "reason": "corridor_cross-bay-blvd-liberty-109av-2015 has specific limits 'at Liberty Avenue and 109 Avenue'; corridor_cross-bay-blvd-sbs-spring2015 is a broad study corridor without limits. Per per-kind rule: broad and specific are distinct.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_9907417194.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_cross-bay-blvd-liberty-109av-2015",
+          "corridor_cross-bay-boulevard-rockaway-to-165"
+        ],
+        "reason": "Different limits: 'at Liberty Avenue and 109 Avenue' vs 'between Rockaway Boulevard and 165 Avenue'. Limits contradict (Decision Test 1).",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_9907417194.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_cross-bay-blvd-sbs-spring2015",
+          "corridor_cross-bay-boulevard-rockaway-to-165"
+        ],
+        "reason": "corridor_cross-bay-boulevard-rockaway-to-165 has specific limits; corridor_cross-bay-blvd-sbs-spring2015 is a broad study corridor. Distinct per per-kind rule.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_9907417194.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_flatlands-ave-brooklyn-b82",
+          "corridor_flatlands-avenue-brooklyn-oct2018"
+        ],
+        "reason": "Both are Flatlands Avenue/B82 corridor records, but the limits are different named segments. A durable DNM keeps the street-name key from merging E 103 St to Pennsylvania Ave with Ave I to Ralph Ave.",
+        "source_decision": "data/review_notes/codex-identity-corridor-batch203-prep.json#codex-identity-corridor-batch203-prep",
+        "reviewed_at": "2026-06-23T11:33:57Z"
+      },
+      {
+        "record_ids": [
+          "corridor_fordham-road",
+          "corridor_pelham-fordham-207"
+        ],
+        "reason": "Shared street name 'Fordham Road' is insufficient because corridor_fordham-road is a single-street segment (Fordham Road, Major Deegan to Boston Road, Bronx) while corridor_pelham-fordham-207 is a multi-street corridor spanning Pelham Parkway, Fordham Road, and West 207 Street from Eastchester Avenue to Broadway — different geographic scope, different limits, and different identity.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_002.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "corridor_fulton-st",
+          "corridor_fulton-st-busway"
+        ],
+        "reason": "Contradiction test: limits differ. `corridor_fulton-st` is a broad study corridor without specified limits, while `corridor_fulton-st-busway` is a specific busway segment with limits 'Adams Street to Flatbush Avenue'. Per corridor decision rules: 'A broad study corridor and a specific segment of it are distinct; relate with subsegment_of, never alias.' Street name and borough alone are insufficient for merge.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_4ac8a7cd38.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_hylan-boulevard-brt",
+          "corridor_stationary-staten-island"
+        ],
+        "reason": "Strong identity fields differ: corridor_hylan-boulevard-brt has specific limits (Lincoln Avenue to Steuben Street) and is a single BRT corridor; corridor_stationary-staten-island has no limits and represents a set of stationary camera corridors in Staten Island. Per per-kind rules for corridors, identity = street(s) + borough + limits. The second record lacks limits and its name and description indicate a grouping, not a single scoped corridor, so test 1 (contradiction) applies.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_9523db7ca6.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_kings-highway-bay-pkwy-to-ocean-ave",
+          "corridor_kings-highway-brooklyn"
+        ],
+        "reason": "Decision test 1 (contradiction): limits differ. Record 2 is segment 'Bay Pkwy to Ocean Ave'; record 3 is a point location at specific streets.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_8830130a36.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_kings-highway-bay-pkwy-to-ocean-ave",
+          "corridor_kings-highway-e23-st-to-ave-k"
+        ],
+        "reason": "Decision test 1 (contradiction): limits differ. Record 2 covers west segment (Bay Pkwy to Ocean Ave); record 4 covers east segment (E 23 St to Ave K). They are adjacent but distinct segments.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_8830130a36.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_kings-highway-bay-pkwy-to-ocean-ave",
+          "corridor_kings-hwy-brooklyn-b82-cb11"
+        ],
+        "reason": "Decision test 1 (contradiction): limits differ. Record 2 is 'Bay Pkwy to Ocean Ave'; record 5 is 'Bay Pkwy to McDonald Ave' – overlapping but not identical endpoint (Ocean Ave vs McDonald Ave). Different limits.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_8830130a36.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_kings-highway-brooklyn",
+          "corridor_kings-highway-e23-st-to-ave-k"
+        ],
+        "reason": "Decision test 1 (contradiction): limits differ. Record 3 is a point; record 4 is a segment.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_8830130a36.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_kings-highway-brooklyn",
+          "corridor_kings-hwy-brooklyn-b82-cb11"
+        ],
+        "reason": "Decision test 1 (contradiction): limits differ. Record 3 is a point; record 5 is a segment.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_8830130a36.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_kings-highway-e23-st-to-ave-k",
+          "corridor_kings-hwy-brooklyn-b82-cb11"
+        ],
+        "reason": "Decision test 1 (contradiction): limits differ. Record 4 is 'E 23 St to Ave K'; record 5 is 'Bay Pkwy to McDonald Ave' – different geographic coverage.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_8830130a36.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_lexington-ave-2015-01-06",
+          "corridor_lexington-ave-96th-to-60th"
+        ],
+        "reason": "Same Manhattan avenue but non-overlapping corridor limits. A 125th Street/Lexington intersection treatment should not merge with the 96th-to-60th Street bus-forward corridor.",
+        "source_decision": "data/review_notes/codex-identity-corridor-batch203-prep.json#codex-identity-corridor-batch203-prep",
+        "reviewed_at": "2026-06-23T11:33:57Z"
+      },
+      {
+        "record_ids": [
+          "corridor_lexington-ave-2015-01-06",
+          "corridor_lexington-avenue"
+        ],
+        "reason": "Same Manhattan avenue but clearly distinct limits: 125th Street intersection context versus the 60th-to-52nd Street offset bus lane segment.",
+        "source_decision": "data/review_notes/codex-identity-corridor-batch203-prep.json#codex-identity-corridor-batch203-prep",
+        "reviewed_at": "2026-06-23T11:33:57Z"
+      },
+      {
+        "record_ids": [
+          "corridor_lexington-ave-96th-to-60th",
+          "corridor_lexington-avenue"
+        ],
+        "reason": "Different limits: '96th St to 60th St' vs '60th Street to 52nd Street'. Even though they share the 60th St boundary, they are distinct segments covering different ranges. Per canon, differing borough or limits never merge. Here both Manhattan but limits differ.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_563584ec3d.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_manhattan-av-110th-116th-cb9-jun2025",
+          "corridor_manhattan-av-cb9-feb2025"
+        ],
+        "reason": "Do not merge: the records share a street/corridor label but have different or only partially overlapping limits. Corridor identity requires matching limits/scope.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_e2b5809961.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_meeting-doc-109341-montauk-branch-amityville-babylon",
+          "corridor_meeting-doc-109341-montauk-branch-babylon-sayville"
+        ],
+        "reason": "Both records are on the Montauk Branch, but they are separate bounded branch segments with different endpoints and work scopes.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch198-prep.json#codex-identity-dnm-batch198-prep",
+        "reviewed_at": "2026-06-23T11:20:00Z"
+      },
+      {
+        "record_ids": [
+          "corridor_third-ave-36th-to-55th",
+          "corridor_third-ave-55th-to-57th"
+        ],
+        "reason": "The records are adjacent but distinct Third Avenue sections. Shared street name should not collapse section-specific corridor records with different limits and section labels.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch198-prep.json#codex-identity-dnm-batch198-prep",
+        "reviewed_at": "2026-06-23T11:20:00Z"
+      },
+      {
+        "record_ids": [
+          "corridor_utica-ave-b46-2015-04-06",
+          "corridor_utica-ave-st-johns-carroll-2013"
+        ],
+        "reason": "Do not merge a whole B46/Utica corridor with a bounded St. Johns Place-to-Carroll Street segment. The latter is a segment/variant inside the Utica planning geography, not the same durable corridor identity.",
+        "source_decision": "data/review_notes/codex-identity-corridor-batch209-triage.json#codex-identity-corridor-batch209-triage",
+        "reviewed_at": "2026-06-23T12:00:54Z"
+      },
+      {
+        "record_ids": [
+          "corridor_utica-ave-b46-2015-04-06",
+          "corridor_utica-ave-st-johns-pl-church-ave-2013"
+        ],
+        "reason": "Do not merge the broad B46/Utica corridor with the St. Johns/Carroll-to-Church design segment. They share borough and street and are related in project lifecycle, but the canonical limits and source evidence separate whole-corridor identity from a bounded segment/variant.",
+        "source_decision": "data/review_notes/codex-identity-corridor-batch209-triage.json#codex-identity-corridor-batch209-triage",
+        "reviewed_at": "2026-06-23T12:00:54Z"
+      },
+      {
+        "record_ids": [
+          "corridor_washington-bridge",
+          "corridor_washington-bridge-181st"
+        ],
+        "reason": "The records have different corridor limits: Washington Bridge alone runs from Amsterdam Avenue to University Avenue, while Washington Bridge and West 181 Street runs University Avenue to Broadway. These are partially overlapping but distinct segments, and the corridor_name differs (Washington Bridge vs Washington Bridge and West 181 Street). The shared street 'Washington Bridge' is a weak overlap; the different or partially different limits negative signal is decisive.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_011.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "corridor_webster-ave-bronx",
+          "corridor_webster-avenue-sbs"
+        ],
+        "reason": "Do not merge: the records share a street/corridor label but have different or only partially overlapping limits. Corridor identity requires matching limits/scope.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_8ad85f1523.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "corridor_woodhaven-blvd-dry-harbor-to-metropolitan",
+          "corridor_woodhaven-blvd-union-tpke-to-81st-rd"
+        ],
+        "reason": "Same boulevard, different bounded project segments. The shared Woodhaven Boulevard key should not merge Dry Harbor-to-Metropolitan with Union Turnpike-to-81st Road.",
+        "source_decision": "data/review_notes/codex-identity-corridor-batch203-prep.json#codex-identity-corridor-batch203-prep",
+        "reviewed_at": "2026-06-23T11:33:57Z"
+      },
+      {
+        "record_ids": [
+          "corridor_woodhaven-blvd-dry-harbor-to-metropolitan",
+          "corridor_woodhaven-boulevard"
+        ],
+        "reason": "The records describe different Woodhaven Boulevard extents. The Dry Harbor-to-Metropolitan bus-lane segment should remain separate from the broader Queens Boulevard-to-107th Avenue corridor/capital-project record.",
+        "source_decision": "data/review_notes/codex-identity-corridor-batch203-prep.json#codex-identity-corridor-batch203-prep",
+        "reviewed_at": "2026-06-23T11:33:57Z"
+      },
+      {
+        "record_ids": [
+          "corridor_woodhaven-blvd-union-tpke-to-81st-rd",
+          "corridor_woodhaven-boulevard"
+        ],
+        "reason": "Different limits: Union Turnpike to 81st Road vs Queens Boulevard to Union Turnpike. The first begins at Union Turnpike and goes south; the second ends at Union Turnpike (or extends to 107th Avenue per display). Distinct corridors.",
+        "source_decision": "data/identity-review/accepted/decisions/corridor_cluster_43406c6cbd.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      }
+    ],
+    "route": [
+      {
+        "record_ids": [
+          "route_23rd-st-sbs",
+          "route_m23-local-cb4-apr2016"
+        ],
+        "reason": "The records preserve different M23 service variants: local crosstown route versus Select Bus Service. Upgrade/replacement context should remain relational, not a route identity merge.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch201-prep.json#codex-identity-dnm-batch201-prep",
+        "reviewed_at": "2026-06-23T11:18:39Z"
+      },
+      {
+        "record_ids": [
+          "route_34th-st-sbs",
+          "route_m14-ad-sbs"
+        ],
+        "reason": "Distinct routes on different streets: route_34th-st-sbs is the 34th Street SBS (Manhattan crosstown on 34th St) while route_m14-ad-sbs is the M14 A/D SBS (14th Street M14A/M14D). The identity key collision (route_34th-st-sbs assigned to both) is an ingestion artifact from the brt_route_index source page listing many SBS routes in one block; both routes happen to appear in the same source block. Payload identity fields confirm different names ('34th Street Select Bus Service' vs 'M14 A Select Bus Service'), different streets ('34th Street' vs '14 St'), and different route numbers (none vs 'M14'). Relation contexts also differ: 34th St SBS has capital improvements in 2014 and off-board fare in 2011, while M14 A/D SBS started in July 2019 on the 14th Street TTP corridor.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_012.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "route_able-m15-sbs",
+          "route_m15-reference"
+        ],
+        "reason": "Distinct service variants on the M15 corridor. route_able-m15-sbs is the SBS/plus-coded M15+ record, while route_m15-reference is the local/limited M15 record. The source distinguishes the pair as M15/M15 SBS; the shared base route label is corridor context, not same-route identity.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_001.json",
+        "reviewed_at": "2026-06-09T02:29:27.000Z"
+      },
+      {
+        "record_ids": [
+          "route_able-s79-sbs",
+          "route_s79-hylan-2010"
+        ],
+        "reason": "S79 SBS/plus service and historical S79 local service have different service_variant values. Lifecycle or replacement context is not same-route identity.",
+        "source_decision": "data/review_notes/codex-route-normalization-phase3-adjacent-2026-06-24.json#identity-review-remaining14-2026-06-25",
+        "reviewed_at": "2026-06-25T02:50:00Z"
+      },
+      {
+        "record_ids": [
+          "route_b103-ltd-proposed-draft",
+          "route_b103e-express-cb18-jun2017"
+        ],
+        "reason": "Shared base label B103 is not enough to merge a proposed limited-stop B103 LTD route with a distinct B103E express route label and express service variant.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch198-prep.json#codex-identity-dnm-batch198-prep",
+        "reviewed_at": "2026-06-23T11:20:00Z"
+      },
+      {
+        "record_ids": [
+          "route_b3-2015-sbk-corridor",
+          "route_b3-draft-plan"
+        ],
+        "reason": "Route service variant mismatch: route_b3-2015-sbk-corridor has no determinable variant (unknown), while route_b3-draft-plan is explicitly a Local variant. Per merge canon for routes, different variants never merge with each other or with a variant-unspecified base record by key alone (contradiction test: route service variant differs).",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_71710b1a18.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "route_b44-brt-phase2",
+          "route_b44-limited"
+        ],
+        "reason": "The Phase II B44 record is a generic existing-route/source-context mention for the Nostrand SBS planning corridor, while route_b44-limited is the specific limited-stop service variant. Shared base label B44 is not enough to collapse the generic planning mention into the limited-stop route identity.",
+        "source_decision": "data/review_notes/codex-identity-route-project-batch204-prep.json#codex-identity-route-project-batch204-prep",
+        "reviewed_at": "2026-06-23T11:33:57Z"
+      },
+      {
+        "record_ids": [
+          "route_b44-brt-phase2",
+          "route_b44-local"
+        ],
+        "reason": "Contradiction test: Different service_variant. route_b44-brt-phase2 has no service_variant (unknown) while route_b44-local has local. Variant mismatch forces do_not_merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_bee6b940f4.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "route_b44-brt-phase2",
+          "route_b44-sbs"
+        ],
+        "reason": "This is a predecessor/planning-context route mention versus the later SBS service variant. The source itself distinguishes existing B44 bus service from planned Nostrand Avenue SBS, so it should not be treated as the same route identity.",
+        "source_decision": "data/review_notes/codex-identity-route-project-batch204-prep.json#codex-identity-route-project-batch204-prep",
+        "reviewed_at": "2026-06-23T11:33:57Z"
+      },
+      {
+        "record_ids": [
+          "route_b44-limited",
+          "route_b44-local"
+        ],
+        "reason": "Distinct B44 variants: route_b44-limited is the historical limited-stop/pre-SBS service on Nostrand Avenue, while route_b44-local is the local B44 service. Shared base route B44 and stale aliases are not merge authority.",
+        "source_decision": "docs/identity-semantics.md",
+        "reviewed_at": "2026-06-08T22:30:00.000Z"
+      },
+      {
+        "record_ids": [
+          "route_b44-limited",
+          "route_b44-sbs"
+        ],
+        "reason": "Distinct B44 variants: route_b44-limited is a predecessor limited-stop service, while route_b44-sbs is the Select Bus Service variant. The relationship is predecessor/replacement, not canonical identity.",
+        "source_decision": "docs/identity-semantics.md",
+        "reviewed_at": "2026-06-08T22:30:00.000Z"
+      },
+      {
+        "record_ids": [
+          "route_b44-local",
+          "route_b44-sbs"
+        ],
+        "reason": "Distinct B44 variants: route_b44-local is the local bus service, while route_b44-sbs is the Select Bus Service variant. Official plus-id policy maps B44+ to B44-SBS only, not to B44 Local.",
+        "source_decision": "docs/identity-semantics.md",
+        "reviewed_at": "2026-06-08T22:30:00.000Z"
+      },
+      {
+        "record_ids": [
+          "route_b46-local-2012",
+          "route_b46-local-limited-20110915"
+        ],
+        "reason": "B46 local is a single local service variant, while the paired B46 record is a local-and-limited bundled route surface. Bundle-versus-variant records should remain distinct.",
+        "source_decision": "data/review_notes/codex-route-normalization-phase3-adjacent-2026-06-24.json#identity-review-remaining14-2026-06-25",
+        "reviewed_at": "2026-06-25T02:50:00Z"
+      },
+      {
+        "record_ids": [
+          "route_b46-local-2012",
+          "route_utica-ave-sbs"
+        ],
+        "reason": "Strong identity field service_variant differs: local vs sbs. Test 1 (contradiction test) forces do_not_merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_3a8ac6ac4f.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "route_b46-local-limited-20110915",
+          "route_utica-ave-sbs"
+        ],
+        "reason": "The pair is a local/limited predecessor or bundle record versus the B46 SBS route. The shared B46 base label is lifecycle/corridor context, not durable same-route identity.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch201-prep.json#codex-identity-dnm-batch201-prep",
+        "reviewed_at": "2026-06-23T11:18:39Z"
+      },
+      {
+        "record_ids": [
+          "route_b82-limited-brt-south-brooklyn-2017",
+          "route_b82-local"
+        ],
+        "reason": "The pair represents different B82 service variants: existing limited-stop service versus local service. The source context explicitly preserves local stop coverage separately from limited/SBS conversion.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch198-prep.json#codex-identity-dnm-batch198-prep",
+        "reviewed_at": "2026-06-23T11:20:00Z"
+      },
+      {
+        "record_ids": [
+          "route_b82-limited-brt-south-brooklyn-2017",
+          "route_b82-sbs"
+        ],
+        "reason": "Different service variants (limited_stop vs sbs) on the same base route B82. Per per-kind route rule: different variants never merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_afaf670d79.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "route_b82-limited-brt-south-brooklyn-2017",
+          "route_b82e-express-cb18-jun2017"
+        ],
+        "reason": "Shared base label B82 is not enough to merge a limited-stop route with the distinct B82E express service label and express service variant.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch201-prep.json#codex-identity-dnm-batch201-prep",
+        "reviewed_at": "2026-06-23T11:18:39Z"
+      },
+      {
+        "record_ids": [
+          "route_b82-local",
+          "route_b82-sbs"
+        ],
+        "reason": "Distinct service variants on the same B82 corridor. route_b82-local is the local/TSP-development B82 record, while route_b82-sbs is the B82 SBS record. The shared base route label identifies related corridor context, not same-route identity.",
+        "source_decision": "docs/migration-decision-matrix.md",
+        "reviewed_at": "2026-06-09T00:00:00.000Z"
+      },
+      {
+        "record_ids": [
+          "route_b82-tsp-2017",
+          "route_southern-brooklyn-sbs"
+        ],
+        "reason": "Distinct service variants on the same B82 corridor. route_b82-tsp-2017 is the local/TSP-development B82 record, while route_southern-brooklyn-sbs is the B82 SBS record. The shared base route label identifies related corridor context, not same-route identity.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_002.json",
+        "reviewed_at": "2026-06-09T02:29:27.000Z"
+      },
+      {
+        "record_ids": [
+          "route_bronx-flushing-jamaica-sbs",
+          "route_q44-cb12-2011"
+        ],
+        "reason": "The records distinguish Q44 SBS from the pre/SBS local-limited Q44 record. Replacement or upgrade context should remain a relation, not a route identity merge.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch198-prep.json#codex-identity-dnm-batch198-prep",
+        "reviewed_at": "2026-06-23T11:20:00Z"
+      },
+      {
+        "record_ids": [
+          "route_bx12-local-2015-webster-map",
+          "route_bx12-plus"
+        ],
+        "reason": "Different service variants (local vs sbs). Under the Route per-kind rule of the Identity Merge Canon, different variants never merge. The payload identity fields confirm service_variant 'local' for the first record and 'sbs' for the second, which are strong identity fields that differ.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_90e096b39d.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "route_bx40-bx42-tremont-cb5-2024",
+          "route_bx42-tremont-cab1"
+        ],
+        "reason": "A bundled Bx40/Bx42 corridor-service record should not be collapsed into the single-route Bx42 record just because the bundle contains Bx42.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch198-prep.json#codex-identity-dnm-batch198-prep",
+        "reviewed_at": "2026-06-23T11:20:00Z"
+      },
+      {
+        "record_ids": [
+          "route_bx41-limited-2012",
+          "route_bx41-local-2012-02-brt-webster-cac1"
+        ],
+        "reason": "The pair is a direct local-versus-limited service-variant mismatch on the same base route. The source explicitly treats Bx41 Local and Bx41 Limited as separate services.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch201-prep.json#codex-identity-dnm-batch201-prep",
+        "reviewed_at": "2026-06-23T11:18:39Z"
+      },
+      {
+        "record_ids": [
+          "route_bx41-limited-2012",
+          "route_webster-ave-sbs"
+        ],
+        "reason": "The records are predecessor limited-stop service versus the SBS replacement. Replacement evidence is a relation, not proof of same canonical route identity.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch201-prep.json#codex-identity-dnm-batch201-prep",
+        "reviewed_at": "2026-06-23T11:18:39Z"
+      },
+      {
+        "record_ids": [
+          "route_bx41-local-2012-02-brt-webster-cac1",
+          "route_webster-ave-sbs"
+        ],
+        "reason": "Different service variants (local vs sbs). Test 1: strong identity field (service_variant) contradicts, so do_not_merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_739e0ddf41.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "route_bx55-2012",
+          "route_bx55-lga-2012"
+        ],
+        "reason": "The LGA record is a workshop access-alternatives route idea using the Bx55 label, while the Webster record is the actual/historical Bx55 Limited/Webster service context. They are distinct route/proposal contexts despite sharing the base Bx55 key.",
+        "source_decision": "data/review_notes/codex-identity-route-project-batch204-prep.json#codex-identity-route-project-batch204-prep",
+        "reviewed_at": "2026-06-23T11:33:57Z"
+      },
+      {
+        "record_ids": [
+          "route_bx6-local",
+          "route_bx6-sbs"
+        ],
+        "reason": "Distinct route variants: Bx6 Local vs Bx6 SBS. The source text explicitly distinguishes them, including Bx6 Local schedule changes being postponed until Bx6 SBS realignment is implemented. Shared base route Bx6 is insufficient to merge different service variants.",
+        "source_decision": "docs/migration-decision-matrix.md",
+        "reviewed_at": "2026-06-09T00:00:00.000Z"
+      },
+      {
+        "record_ids": [
+          "route_bx6-local-addendum-update",
+          "route_bx6-sbs"
+        ],
+        "reason": "Distinct route variants: Bx6 Local vs Bx6 SBS. The source text explicitly distinguishes them ('Bx6 Local schedules...postponed until 2023 when the Bx6 SBS realignment is implemented'). Per instructions, preserve variant distinctions for local vs SBS.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_003.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "route_bx6-local-addendum-update",
+          "route_bx6-sbs-addendum-update"
+        ],
+        "reason": "Distinct route variants: Bx6 Local vs Bx6 SBS. Both from the same source document which treats them as separate services. Shared base route BX6 is insufficient to merge different service variants.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_003.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "route_lexington-ave-corridor",
+          "route_m101-ace"
+        ],
+        "reason": "The first record is a multi-route corridor (Lexington Ave corridor serving M98, M101, M102, M103 over a 1.8-mile segment from 96th St to 60th St), while the second record is the individual M101 bus route (as used in the ACE program). A corridor spanning multiple routes and a specific route are fundamentally different scopes — corridor is a street-segment planning concept, route is a discrete service line. Shared base route label 'M101' is merely one of several routes served by the corridor and is not a strong identity field indicating the same canonical entity. No evidence shows the corridor record was ever intended to stand for the M101 route alone.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_014.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "route_m101",
+          "route_sim11-lex-ave-oct2025"
+        ],
+        "reason": "Contradiction test: route_id differs (M101 vs SIM11) and service_variant differs (local vs express). These are distinct routes per identity merge canon.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_88f99f53c6.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "route_m101",
+          "route_sim22-42nd-st"
+        ],
+        "reason": "Contradiction test: route_id differs (M101 vs SIM22) and service_variant differs (local vs express). Distinct routes.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_88f99f53c6.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "route_m101",
+          "route_sim26-42nd-st"
+        ],
+        "reason": "Contradiction test: route_id differs (M101 vs SIM26) and service_variant differs (local vs express). Distinct routes.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_88f99f53c6.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "route_m101",
+          "route_sim6-lex-ave-oct2025"
+        ],
+        "reason": "Contradiction test: route_id differs (M101 vs SIM6) and service_variant differs (local vs express). Distinct routes.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_88f99f53c6.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "route_m14-ad-sbs",
+          "route_m14-brt-phase2"
+        ],
+        "reason": "The Phase II record is a pre-SBS/generic M14 route mention for a potential corridor, while route_m14-ad-sbs is the later Select Bus Service variant. This is predecessor-versus-SBS context, not same route identity.",
+        "source_decision": "data/review_notes/codex-identity-route-project-batch204-prep.json#codex-identity-route-project-batch204-prep",
+        "reviewed_at": "2026-06-23T11:33:57Z"
+      },
+      {
+        "record_ids": [
+          "route_m15-cb8-2010",
+          "route_m15-limited-2010-06-09"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'local' vs 'limited_stop'. Different variants never merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10.json",
+        "reviewed_at": "2026-06-10T21:42:17.724582Z"
+      },
+      {
+        "record_ids": [
+          "route_m15-cb8-2010",
+          "route_m15-limited-2010-09-14"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'local' vs 'limited_stop'. Different variants never merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10.json",
+        "reviewed_at": "2026-06-10T21:42:17.724582Z"
+      },
+      {
+        "record_ids": [
+          "route_m15-cb8-2010",
+          "route_m15-local-limited"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' (payload) vs 'local'. Different variants never merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10.json",
+        "reviewed_at": "2026-06-10T21:42:17.724582Z"
+      },
+      {
+        "record_ids": [
+          "route_m15-cb8-2010",
+          "route_m15-sbs"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'local' vs 'sbs'. Different variants never merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10.json",
+        "reviewed_at": "2026-06-10T21:42:17.724582Z"
+      },
+      {
+        "record_ids": [
+          "route_m15-limited-2010-06-09",
+          "route_m15-local-2010-06-09-v2"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' vs 'local'. Different variants never merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10.json",
+        "reviewed_at": "2026-06-10T21:42:17.724582Z"
+      },
+      {
+        "record_ids": [
+          "route_m15-limited-2010-06-09",
+          "route_m15-local-2010-09-14"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' vs 'local'. Different variants never merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10.json",
+        "reviewed_at": "2026-06-10T21:42:17.724582Z"
+      },
+      {
+        "record_ids": [
+          "route_m15-limited-2010-06-09",
+          "route_m15-local-20100607"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' vs 'local'. Different variants never merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10.json",
+        "reviewed_at": "2026-06-10T21:42:17.724582Z"
+      },
+      {
+        "record_ids": [
+          "route_m15-limited-2010-06-09",
+          "route_m15-local-limited"
+        ],
+        "reason": "Bundled/compound record: route_m15-local-limited agglomerates generic M15 mentions from 6 sources (2009-2010 existing-service references, 2024 segment-speed methodology, 2025 Local/Limited ridership discussion); its limited_stop variant comes from a single merged observation. Per canon bundled-variant rule it must not fold into any single variant. Flagged as a future split candidate, not the same object as the 2010 M15 Limited service.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10-ambiguous-resolution.json",
+        "reviewed_at": "2026-06-10T21:49:43.803774Z"
+      },
+      {
+        "record_ids": [
+          "route_m15-limited-2010-06-09",
+          "route_m15-sbs"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' vs 'sbs'. Different variants never merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10.json",
+        "reviewed_at": "2026-06-10T21:42:17.724582Z"
+      },
+      {
+        "record_ids": [
+          "route_m15-limited-2010-09-14",
+          "route_m15-local-2010-06-09-v2"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' vs 'local'. Different variants never merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10.json",
+        "reviewed_at": "2026-06-10T21:42:17.724582Z"
+      },
+      {
+        "record_ids": [
+          "route_m15-limited-2010-09-14",
+          "route_m15-local-2010-09-14"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' vs 'local'. Different variants never merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10.json",
+        "reviewed_at": "2026-06-10T21:42:17.724582Z"
+      },
+      {
+        "record_ids": [
+          "route_m15-limited-2010-09-14",
+          "route_m15-local-20100607"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' vs 'local'. Different variants never merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10.json",
+        "reviewed_at": "2026-06-10T21:42:17.724582Z"
+      },
+      {
+        "record_ids": [
+          "route_m15-limited-2010-09-14",
+          "route_m15-local-limited"
+        ],
+        "reason": "Bundled/compound record: route_m15-local-limited agglomerates generic M15 mentions from 6 sources (2009-2010 existing-service references, 2024 segment-speed methodology, 2025 Local/Limited ridership discussion); its limited_stop variant comes from a single merged observation. Per canon bundled-variant rule it must not fold into any single variant. Flagged as a future split candidate, not the same object as the 2010 M15 Limited service.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10-ambiguous-resolution.json",
+        "reviewed_at": "2026-06-10T21:49:43.803774Z"
+      },
+      {
+        "record_ids": [
+          "route_m15-limited-2010-09-14",
+          "route_m15-sbs"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' vs 'sbs'. Different variants never merge. Despite shared_base_route:M15, the source evidence ('M15 SBS replaces M15 Limited') confirms they are distinct service variants.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10.json",
+        "reviewed_at": "2026-06-10T21:42:17.724582Z"
+      },
+      {
+        "record_ids": [
+          "route_m15-local-2010-06-09-v2",
+          "route_m15-local-limited"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' (payload) vs 'local'. Different variants never merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10.json",
+        "reviewed_at": "2026-06-10T21:42:17.724582Z"
+      },
+      {
+        "record_ids": [
+          "route_m15-local-2010-06-09-v2",
+          "route_m15-sbs"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'local' vs 'sbs'. Different variants never merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10.json",
+        "reviewed_at": "2026-06-10T21:42:17.724582Z"
+      },
+      {
+        "record_ids": [
+          "route_m15-local-2010-09-14",
+          "route_m15-local-limited"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' (payload) vs 'local'. Different variants never merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10.json",
+        "reviewed_at": "2026-06-10T21:42:17.724582Z"
+      },
+      {
+        "record_ids": [
+          "route_m15-local-2010-09-14",
+          "route_m15-sbs"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'local' vs 'sbs'. Different variants never merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10.json",
+        "reviewed_at": "2026-06-10T21:42:17.724582Z"
+      },
+      {
+        "record_ids": [
+          "route_m15-local-20100607",
+          "route_m15-local-limited"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' (payload) vs 'local'. Different variants never merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10.json",
+        "reviewed_at": "2026-06-10T21:42:17.724582Z"
+      },
+      {
+        "record_ids": [
+          "route_m15-local-20100607",
+          "route_m15-sbs"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'local' vs 'sbs'. Different variants never merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10.json",
+        "reviewed_at": "2026-06-10T21:42:17.724582Z"
+      },
+      {
+        "record_ids": [
+          "route_m15-local-limited",
+          "route_m15-sbs"
+        ],
+        "reason": "Distinct service variants on the M15 corridor. route_m15-sbs is the Select Bus Service record, while route_m15-local-limited is the local/limited M15 record/reference. The source distinguishes the pair as M15/M15 SBS; the shared base route label is corridor context, not same-route identity.",
+        "source_decision": "docs/migration-decision-matrix.md",
+        "reviewed_at": "2026-06-09T00:00:00.000Z"
+      },
+      {
+        "record_ids": [
+          "route_m34-local-2011",
+          "route_m34-sbs"
+        ],
+        "reason": "The records are different M34 service variants: local bus versus Select Bus Service. The shared base route key is lifecycle/corridor context, not durable same-route identity.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch198-prep.json#codex-identity-dnm-batch198-prep",
+        "reviewed_at": "2026-06-23T11:20:00Z"
+      },
+      {
+        "record_ids": [
+          "route_m34-local-2011",
+          "route_m34a-sbs"
+        ],
+        "reason": "This is both a branch mismatch and a service-variant mismatch: M34 local is not the M34A SBS branch created from the M16 rename.",
+        "source_decision": "data/review_notes/codex-identity-dnm-batch201-prep.json#codex-identity-dnm-batch201-prep",
+        "reviewed_at": "2026-06-23T11:18:39Z"
+      },
+      {
+        "record_ids": [
+          "route_m34-sbs",
+          "route_m34a-sbs"
+        ],
+        "reason": "M34 SBS and M34A SBS are distinct 34th Street branches. Shared M34/M34A bundle wording is route-list context, not same-route identity.",
+        "source_decision": "data/review_notes/codex-route-normalization-campaign-2026-06-24.json#validate-route_m34-m34a",
+        "reviewed_at": "2026-06-24T11:49:14Z"
+      },
+      {
+        "record_ids": [
+          "route_m79-local-cb8-oct2016",
+          "route_m79-sbs"
+        ],
+        "reason": "Contradiction test: strong identity field 'service_variant' differs (local vs sbs). Per route merge canon, different service variants never merge.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_b9e9449867.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "route_m86-local",
+          "route_m86-sbs"
+        ],
+        "reason": "Distinct service variants on the M86 corridor. route_m86-local preserves the historical/pre-SBS local route record, while route_m86-sbs is the Select Bus Service route record. The replacement relationship is lifecycle context, not same-route identity.",
+        "source_decision": "docs/migration-decision-matrix.md",
+        "reviewed_at": "2026-06-09T00:00:00.000Z"
+      },
+      {
+        "record_ids": [
+          "route_q10-ace",
+          "route_q10-queens"
+        ],
+        "reason": "route_q10-ace is an ACE enforcement grouping of both Q10 and Q80 routes under the combined label 'Q10/Q80' on Lefferts Blvd, as evidenced by the ACE source page listing 'Q10/Q80, Lefferts Blvd (in 60-day warning period)'. route_q10-queens is specifically the Q10 bus route in Queens with multiple service patterns (Kew Gardens-JFK Airport) as described in the Queens bus network redesign. The queens addendum explicitly distinguishes Q10 from Q80 as separate routes. They share the identity key 'route_q10' only because the ACE label contains 'Q10' as part of the composite 'Q10/Q80' designation, which is insufficient evidence for merging distinct canonical routes.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_010.json",
+        "reviewed_at": "2026-06-08T21:21:36.731Z"
+      },
+      {
+        "record_ids": [
+          "route_q26-lga-2012",
+          "route_q48-serves-lga-2011"
+        ],
+        "reason": "Do not merge: the packet carries a route contradiction (different route_id, service variant, or source route context). A shared base-route string is not merge authority for distinct route records.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_c30f25548f.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "route_q52-q53-sbs-proposed-2015-05",
+          "route_q52-sbs-queens"
+        ],
+        "reason": "The proposed Q52/53 SBS record is a combined corridor/route-bundle surface, while route_q52-sbs-queens is the individual Q52 SBS route branch. Bundle-versus-branch should remain distinct rather than aliasing the combined Q52/53 proposal to Q52 alone.",
+        "source_decision": "data/review_notes/codex-identity-route-project-batch204-prep.json#codex-identity-route-project-batch204-prep",
+        "reviewed_at": "2026-06-23T11:33:57Z"
+      },
+      {
+        "record_ids": [
+          "route_q53-lga-2012",
+          "route_q53-sbs-ace"
+        ],
+        "reason": "The LGA workshop Q53 record is an airport-access route idea, while route_q53-sbs-ace is the actual Q53 SBS service on the Woodhaven/Cross Bay corridor. Shared Q53 numbering is not sufficient for route identity.",
+        "source_decision": "data/review_notes/codex-identity-route-project-batch204-prep.json#codex-identity-route-project-batch204-prep",
+        "reviewed_at": "2026-06-23T11:33:57Z"
+      },
+      {
+        "record_ids": [
+          "route_q53-lga-2012",
+          "route_q58"
+        ],
+        "reason": "Do not merge: the packet carries a route contradiction (different route_id, service variant, or source route context). A shared base-route string is not merge authority for distinct route records.",
+        "source_decision": "data/identity-review/accepted/decisions/route_cluster_a6d89c367d.json",
+        "reviewed_at": "2026-06-23T14:41:02.863Z"
+      },
+      {
+        "record_ids": [
+          "route_sim23-madison-ave-cb6-jun2025",
+          "route_sim23-sim24-express-bus"
+        ],
+        "reason": "SIM23 is an individual express route, while SIM23/SIM24 is a bundled express-route scope record. Shared SIM23 route number is insufficient for merging a branch with an aggregate bundle.",
+        "source_decision": "data/review_notes/codex-route-normalization-phase3-adjacent-2026-06-24.json#identity-review-remaining14-2026-06-25",
+        "reviewed_at": "2026-06-25T02:50:00Z"
+      }
+    ]
+  }
+}

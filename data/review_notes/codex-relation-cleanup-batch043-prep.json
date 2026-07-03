@@ -1,0 +1,318 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch043-prep",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "batch_id": "relation043",
+  "batch": "batch043",
+  "scope": "Codex-only relation endpoint-shape cleanup prep; no durable retirements or replacement submissions applied",
+  "bucket": {
+    "name": "has_timeline_event event-to-source reversed work-plan row",
+    "original_relation_kind": "has_timeline_event",
+    "original_endpoint_shape": "event -> source",
+    "replacement_relation_kind": "has_timeline_event",
+    "replacement_endpoint_shape": "source -> event",
+    "prepared_original_count": 1,
+    "cleanup_direction": "data cleanup only; keep has_timeline_event endpoint rule as subject scope/source/event -> event",
+    "rationale": "The original relation says the January 2026 work-plan item is scheduled in the 2026 Metro-North Railroad Committee Work Plan, but it places the event as the subject and the source as the object. Current endpoint rules accept source -> event for has_timeline_event, and the same accepted source and event local ids already exist with direct evidence in the source."
+  },
+  "checkpoint_context": {
+    "reported_checkpoint": {
+      "unexpected_relation_endpoint_shape": 27,
+      "context": "Fresh baseline after relation042/identity074/next18 checkpoint supplied in task."
+    },
+    "read_only_probe_count": 27,
+    "read_only_probe_note": "Local canonical JSONL in the shared dirty worktree currently shows 27 shaped relation issues under current endpoint rules.",
+    "selected_bucket_count": 1,
+    "expected_endpoint_shape_issue_delta": -1,
+    "endpoint_shape_issue_count_after_replacement_estimate": 26,
+    "endpoint_shape_probe": {
+      "has_timeline_event event->source": "Relation kind has_timeline_event expects project|route|corridor|entity|source|event -> event, got event -> source.",
+      "has_timeline_event source->event": "accepted by current endpoint-shape rules"
+    }
+  },
+  "durable_mechanism_prepared_not_applied": {
+    "retire_originals_via": "data/submission-overrides/retired.json",
+    "replacement_journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch043.jsonl",
+    "mutation_status": "not_applied_by_this_prep",
+    "only_file_written_by_this_task": "data/review_notes/codex-relation-cleanup-batch043-prep.json"
+  },
+  "exclusions_and_guards": {
+    "excluded_prior_relation_batches": [
+      "batch037",
+      "batch038",
+      "batch039",
+      "batch040",
+      "batch041",
+      "batch042"
+    ],
+    "missing_target_repairs_excluded": true,
+    "schema_or_ontology_invention_candidates_excluded": true,
+    "guarded_files_not_edited": [
+      "data/submission-overrides/retired.json",
+      "data/submissions/*.jsonl",
+      "data/canonical/*.jsonl",
+      "data/canonical.db",
+      "wiki/*",
+      "LOG.md",
+      "manifest files",
+      "identity overrides",
+      "code"
+    ],
+    "original_submission_guard": {
+      "selected_original_submission_id": "sub_52c73a5e56abe886",
+      "selected_original_record_id": "relation_mnr-2026-jan-event-workplan",
+      "retired_hits_for_selected_originals": [],
+      "prior_relation_batches_037_042_hits_for_selected_originals": [],
+      "canonical_original_present": true
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": [],
+      "canonical_record_collision_hits_for_new_batch043_locals": []
+    },
+    "known_endpoint_local_ids_confirmed": [
+      "source_mnr_2026_workplan",
+      "event_mnr_2026_jan_ops_year_review"
+    ],
+    "nearby_existing_relation_context": [
+      {
+        "record_id": "relation_mnr-2026-jan-event-committee",
+        "local_observation_id": "relation_mnr_2026_jan_event_committee",
+        "relation_kind": "part_of_committee_schedule",
+        "subject_local_observation_id": "event_mnr_2026_jan_ops_year_review",
+        "object_local_observation_id": "entity_meeting_doc_196951_mnr_committee",
+        "note": "Adjacent open-world relation says the January item is part of the committee schedule. Batch043 only repairs the malformed timeline edge that should connect the source work plan to the event."
+      },
+      {
+        "record_id": "relation_mta-publishes-workplan",
+        "local_observation_id": "relation_mta_publishes_workplan",
+        "relation_kind": "published_by",
+        "subject_local_observation_id": "source_mnr_2026_workplan",
+        "object_local_observation_id": "entity_meeting_doc_196951_mta",
+        "note": "Existing valid publication relation confirms the source local id is already used as a source-side relation subject."
+      }
+    ]
+  },
+  "local_validation": {
+    "clean": true,
+    "tooling": "Read-only endpoint-shape inventory over canonical JSONL using current relation endpoint rules; stable-hash calculation over normalized replacement tool_args; rg collision checks; accepted source/event local ids verified in existing accepted submissions and canonical JSONL.",
+    "summary": {
+      "prepared_count": 1,
+      "retire_replace_count": 1,
+      "retire_only_count": 0,
+      "replacement_submission_count": 1,
+      "accepted_replacement_count": 1,
+      "issue_count": 0,
+      "warning_count": 0,
+      "relation_endpoint_issue_count": 0,
+      "endpoint_shape_issue_count_after_replacement": 0,
+      "endpoint_shape_issue_count_after_replacement_estimate": 26
+    }
+  },
+  "prepared_count": 1,
+  "retire_replace_count": 1,
+  "accepted_replacement_count": 1,
+  "issue_count": 0,
+  "endpoint_shape_issue_count_after_replacement_estimate": 26,
+  "all_pass": true,
+  "decisions": [
+    {
+      "action": "retire_and_replace",
+      "retire": {
+        "submission_id": "sub_52c73a5e56abe886",
+        "run_id": "2026-06-21T21-15-46-209Z_3137823-f04a90cc_ingest_meeting-doc-196951",
+        "original_record_id": "relation_mnr-2026-jan-event-workplan",
+        "original_local_observation_id": "relation_mnr_2026_jan_event_workplan",
+        "malformed_shape": "has_timeline_event event -> source",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_id": "event_mnr-2026-jan-ops-year-review",
+        "original_subject_kind": "event",
+        "original_subject_local_observation_id": "event_mnr_2026_jan_ops_year_review",
+        "original_subject_name": "January 2026 - 2025 Operations Year in Review",
+        "original_object_id": "source_meeting-doc-196951",
+        "original_object_kind": "source",
+        "original_object_local_observation_id": "source_mnr_2026_workplan",
+        "original_object_name": "2026 Metro-North Railroad Committee Work Plan",
+        "current_args": {
+          "source_id": "meeting_doc_196951",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_mnr_2026_jan_event_workplan",
+          "label": "January event has timeline to source",
+          "payload": {
+            "description": "The January 2026 item is scheduled in the 2026 work plan.",
+            "object_local_observation_id": "source_mnr_2026_workplan",
+            "relation_kind": "has_timeline_event",
+            "subject_local_observation_id": "event_mnr_2026_jan_ops_year_review",
+            "relation_family": "timeline_context"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_196951",
+              "evidence_id": "meeting_doc_196951#p003_c0007",
+              "source_path": "raw/sources/meeting_doc_196951/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0007",
+              "text_sha256": "sha256:31ef5cfd3bdbc042b98b6f9669af1ff7340c7c048245606feb4d1acadaaa0caa",
+              "text_source": "raw_text",
+              "role": "context"
+            },
+            {
+              "source_id": "meeting_doc_196951",
+              "evidence_id": "meeting_doc_196951#p003_c0008",
+              "source_path": "raw/sources/meeting_doc_196951/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0008",
+              "text_sha256": "sha256:1a5f73a0e1e841d15165c273287d3316726ced5e8910b79b2cb4670f2a48834c",
+              "text_source": "raw_text",
+              "role": "context"
+            }
+          ]
+        },
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_52c73a5e56abe886",
+          "reason": "Codex relation cleanup batch043 replaces malformed has_timeline_event event -> source relation relation_mnr-2026-jan-event-workplan with validator-compatible source -> event relation preserving the 2026 MNR work-plan schedule evidence.",
+          "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch043",
+          "reviewed_at": "2026-06-23T00:00:00Z"
+        },
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_196951",
+            "evidence_id": "meeting_doc_196951#p003_c0007",
+            "source_path": "raw/sources/meeting_doc_196951/blocks.jsonl",
+            "page_number": 3,
+            "block_id": "p003_c0007",
+            "text_sha256": "sha256:31ef5cfd3bdbc042b98b6f9669af1ff7340c7c048245606feb4d1acadaaa0caa",
+            "text_source": "raw_text",
+            "source_quote": "JANUARY 2026"
+          },
+          {
+            "source_id": "meeting_doc_196951",
+            "evidence_id": "meeting_doc_196951#p003_c0008",
+            "source_path": "raw/sources/meeting_doc_196951/blocks.jsonl",
+            "page_number": 3,
+            "block_id": "p003_c0008",
+            "text_sha256": "sha256:1a5f73a0e1e841d15165c273287d3316726ced5e8910b79b2cb4670f2a48834c",
+            "text_source": "raw_text",
+            "source_quote": "2025 Operations Year in Review"
+          },
+          {
+            "source_id": "meeting_doc_196951",
+            "evidence_id": "meeting_doc_196951#p003_c0009",
+            "source_path": "raw/sources/meeting_doc_196951/blocks.jsonl",
+            "page_number": 3,
+            "block_id": "p003_c0009",
+            "text_sha256": "sha256:e68e95dd6e7a1d110eb1177fce4d220075eb789cc9510f12c8da6d3c14588f9c",
+            "text_source": "raw_text",
+            "source_quote": "A review of the prior year's performance of railroad will be provided to the Committee."
+          }
+        ],
+        "reason": "has_timeline_event is valid when the event is the object. The accepted source record is the 2026 MNR work plan, the accepted event record is the January 2026 Operations Year in Review agenda item, and the original description says the item is scheduled in the work plan. Reversing the endpoints preserves the source-backed fact without schema or ontology invention.",
+        "expected_endpoint_shape_delta": -1,
+        "confidence": "high"
+      },
+      "replacement": {
+        "run_id": "2026-06-23_codex_relation_cleanup_batch043",
+        "journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch043.jsonl",
+        "replacement_entries": [
+          {
+            "role": "corrected relation replacement",
+            "deterministic_submission_id": "sub_097e38ff5a06b140",
+            "tool_args_sha256": "sha256:097e38ff5a06b140d0663a92ed4d5341104c1b000f6dec082836c677d741e185",
+            "proposed_relation_kind": "has_timeline_event",
+            "proposed_endpoint_shape": "source -> event",
+            "tool_args": {
+              "source_id": "meeting_doc_196951",
+              "observation_kind": "relation",
+              "local_observation_id": "relation_batch043_mnr_2026_workplan_has_jan_event",
+              "label": "2026 MNR work plan has January Operations Year in Review event",
+              "raw_text": "JANUARY 2026; 2025 Operations Year in Review; A review of the prior year performance of railroad will be provided to the Committee.",
+              "payload": {
+                "relation_kind": "has_timeline_event",
+                "subject_local_observation_id": "source_mnr_2026_workplan",
+                "object_local_observation_id": "event_mnr_2026_jan_ops_year_review",
+                "description": "Replacement for malformed event-to-source timeline relation; the 2026 Metro-North Railroad Committee Work Plan schedules the January 2026 2025 Operations Year in Review item.",
+                "relation_family": "timeline_context"
+              },
+              "evidence_refs": [
+                {
+                  "source_id": "meeting_doc_196951",
+                  "evidence_id": "meeting_doc_196951#p003_c0007",
+                  "source_path": "raw/sources/meeting_doc_196951/blocks.jsonl",
+                  "page_number": 3,
+                  "block_id": "p003_c0007",
+                  "text_sha256": "sha256:31ef5cfd3bdbc042b98b6f9669af1ff7340c7c048245606feb4d1acadaaa0caa",
+                  "text_source": "raw_text",
+                  "role": "month_header",
+                  "source_quote": "JANUARY 2026"
+                },
+                {
+                  "source_id": "meeting_doc_196951",
+                  "evidence_id": "meeting_doc_196951#p003_c0008",
+                  "source_path": "raw/sources/meeting_doc_196951/blocks.jsonl",
+                  "page_number": 3,
+                  "block_id": "p003_c0008",
+                  "text_sha256": "sha256:1a5f73a0e1e841d15165c273287d3316726ced5e8910b79b2cb4670f2a48834c",
+                  "text_source": "raw_text",
+                  "role": "agenda_item",
+                  "source_quote": "2025 Operations Year in Review"
+                },
+                {
+                  "source_id": "meeting_doc_196951",
+                  "evidence_id": "meeting_doc_196951#p003_c0009",
+                  "source_path": "raw/sources/meeting_doc_196951/blocks.jsonl",
+                  "page_number": 3,
+                  "block_id": "p003_c0009",
+                  "text_sha256": "sha256:e68e95dd6e7a1d110eb1177fce4d220075eb789cc9510f12c8da6d3c14588f9c",
+                  "text_source": "raw_text",
+                  "role": "agenda_description"
+                }
+              ]
+            },
+            "local_validation": {
+              "state": "accepted",
+              "issues": [],
+              "warnings": [],
+              "relationEndpointIssues": [],
+              "endpoint_shape_issue_after_replacement": null,
+              "known_local_observation_ids_confirmed": [
+                "source_mnr_2026_workplan",
+                "event_mnr_2026_jan_ops_year_review"
+              ]
+            }
+          }
+        ],
+        "confidence": "high"
+      }
+    }
+  ],
+  "command_evidence": [
+    {
+      "command": "bun --eval '<read canonical JSONL plus endpoint shape inventory copied from packages/pipeline/src/records/relations.ts>'",
+      "output_excerpt": "Local current probe found 27 shaped relation issues; selected row relation_mnr-2026-jan-event-workplan is has_timeline_event with event subject and source object."
+    },
+    {
+      "command": "rg -n 'sub_52c73a5e56abe886|relation_mnr_2026_jan_event_workplan|source_mnr_2026_workplan|event_mnr_2026_jan_ops_year_review' data/submissions data/canonical/*.jsonl raw/sources/meeting_doc_196951/blocks.jsonl data/submission-overrides/retired.json data/review_notes/codex-relation-cleanup-batch0{37,38,39,40,41,42}-prep.json",
+      "output_excerpt": "Original accepted submission and canonical relation are present; accepted source and event local ids are present; no retired.json or prior relation batch037-042 prep hit for the selected original."
+    },
+    {
+      "command": "jq -c 'select(.block_id==\"p003_c0007\" or .block_id==\"p003_c0008\" or .block_id==\"p003_c0009\")' raw/sources/meeting_doc_196951/blocks.jsonl",
+      "output_excerpt": "Confirmed page 3 blocks: JANUARY 2026; 2025 Operations Year in Review; review description for the Committee."
+    },
+    {
+      "command": "bun --eval '<stable-json hash calculation over normalized replacement tool_args>'",
+      "output_excerpt": "Generated deterministic replacement submission sub_097e38ff5a06b140 with sha256:097e38ff5a06b140d0663a92ed4d5341104c1b000f6dec082836c677d741e185."
+    },
+    {
+      "command": "rg -n 'sub_097e38ff5a06b140|relation_batch043_mnr_2026_workplan_has_jan_event|relation_mnr_2026_workplan_has_jan_event' data/submissions data/review_notes data/submission-overrides/retired.json data/canonical/*.jsonl",
+      "output_excerpt": "No existing replacement submission id, replacement local id, or canonical relation collision."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed ingest/write/ask commands",
+    "canonicalize/campaign dedup/identity-review/schema/ontology-normalize commands",
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts export-jsonl",
+    "database publish commands"
+  ]
+}

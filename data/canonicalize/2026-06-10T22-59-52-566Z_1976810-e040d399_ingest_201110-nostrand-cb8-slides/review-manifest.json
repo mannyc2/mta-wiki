@@ -1,0 +1,16 @@
+{
+  "run_id": "2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides",
+  "generated_at": "2026-06-11T02:10:08.156Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "reviewed_decision_count": 5,
+  "pass_count": 0,
+  "fail_count": 0,
+  "unsure_count": 5,
+  "paths": {
+    "verdicts_jsonl": "data/canonicalize/2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides/verdicts.jsonl",
+    "manifest": "data/canonicalize/2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides/review-manifest.json"
+  }
+}

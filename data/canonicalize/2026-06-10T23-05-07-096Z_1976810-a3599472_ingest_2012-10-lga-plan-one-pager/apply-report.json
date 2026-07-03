@@ -1,0 +1,21 @@
+{
+  "run_id": "2026-06-10T23-05-07-096Z_1976810-a3599472_ingest_2012-10-lga-plan-one-pager",
+  "generated_at": "2026-06-11T05:02:49.545Z",
+  "dry_run": false,
+  "wrote": true,
+  "decision_count": 27,
+  "reviewed_count": 22,
+  "alias_additions": [],
+  "aliases_already_present": [],
+  "do_not_merge_additions": [],
+  "relation_submissions": 5,
+  "quarantined": 8,
+  "conflicts": [],
+  "paths": {
+    "merges": "data/identity-overrides/merges.json",
+    "do_not_merge": "data/identity-overrides/do-not-merge.json",
+    "relation_submissions_jsonl": "data/submissions/2026-06-10T23-05-07-096Z_1976810-a3599472_ingest_2012-10-lga-plan-one-pager_canonicalize.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-05-07-096Z_1976810-a3599472_ingest_2012-10-lga-plan-one-pager/apply-quarantine.jsonl",
+    "apply_report": "data/canonicalize/2026-06-10T23-05-07-096Z_1976810-a3599472_ingest_2012-10-lga-plan-one-pager/apply-report.json"
+  }
+}

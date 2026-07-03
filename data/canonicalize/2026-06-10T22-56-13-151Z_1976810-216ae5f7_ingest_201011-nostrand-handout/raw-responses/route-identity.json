@@ -1,0 +1,69 @@
+{
+  "run_id": "2026-06-10T22-56-13-151Z_1976810-216ae5f7_ingest_201011-nostrand-handout",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T01:05:11.198Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "b44-sbs-201011-new",
+        "local_observation_id": "route_b44_sbs_201011",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_b44-sbs matches existing registry record route_b44-sbs exactly — same route variant (SBS), same corridor (Nostrand/Rogers/Bedford Aves, Brooklyn). The do_not_merge_pairs confirm route_b44-sbs is distinct from route_b44-local and route_b44-limited. The source 201011_nostrand_handout is already listed in route_b44-sbs source_ids. No different target record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p001_c0006",
+            "source_quote": "▪ B44 SBS replaces the B44 Limited ▪ B44 local route remains the same ▪ Northbound SBS will travel on Rogers instead of New York Ave, for faster and more direct service ▪ SBS fare = local bus fare"
+          }
+        ]
+      },
+      {
+        "decision_id": "b44-local-201011-new",
+        "local_observation_id": "route_b44_local_201011",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_b44-local matches existing registry record route_b44-local exactly — same service variant (local), same corridor (Nostrand/Rogers/Bedford Aves, Brooklyn). The do_not_merge_pairs confirm route_b44-local is distinct from both route_b44-sbs and route_b44-limited. The source 201011_nostrand_handout is already listed in route_b44-local source_ids.",
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p001_c0006",
+            "source_quote": "▪ B44 SBS replaces the B44 Limited ▪ B44 local route remains the same"
+          }
+        ]
+      },
+      {
+        "decision_id": "b44-limited-201011-new",
+        "local_observation_id": "route_b44_limited_201011",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_b44-limited matches existing registry record route_b44-limited exactly — same service variant (Limited/limited-stop), same corridor (B44 Nostrand Ave, Brooklyn). The do_not_merge_pairs confirm route_b44-limited is distinct from route_b44-sbs (predecessor/replacement) and route_b44-local. The source 201011_nostrand_handout is already listed in route_b44-limited source_ids.",
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p001_c0006",
+            "source_quote": "▪ B44 SBS replaces the B44 Limited"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "replaces",
+            "subject_id": "route_b44-sbs",
+            "object_id": "route_b44-limited",
+            "description": "B44 SBS replaced the B44 Limited service on Nostrand/Rogers/Bedford Avenues; the 201011 handout announces this replacement.",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p001_c0006",
+                "source_quote": "▪ B44 SBS replaces the B44 Limited"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-47-190Z_2111393-768ddd04_canonicalize_2026-06-10t22-56-13-151z-1976810-216ae5f7-ingest-201011-nostrand-handout-route-identity"
+}

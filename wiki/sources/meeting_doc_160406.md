@@ -1,0 +1,215 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-160406"
+record_kind: "source"
+display_name: "MTA Bus 2025 Budget and 2025-2028 Financial Plan Adoption"
+source_id: "meeting_doc_160406"
+source_ids:
+  - "meeting_doc_160406"
+local_observation_id: "source_meeting_doc_160406"
+local_observation_ids:
+  - "source_meeting_doc_160406"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T20:35:52.471Z"
+submission_ids:
+  - "sub_b89041a7038243d1"
+payload:
+  authority_tier: "board_material"
+  content_type: "staff summary"
+  date_text: "December 9, 2024"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2024-12-09"
+    precision: "day"
+    raw_text: "December 9, 2024"
+  description: "Staff summary to secure MTA Board adoption of MTA Bus Company's 2024 November Forecast, 2025 Final Proposed Budget, and the Four-Year Financial Plan for 2025-2028"
+  document_date: "December 9, 2024"
+  document_date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2024-12-09"
+    precision: "day"
+    raw_text: "December 9, 2024"
+  published_date_normalized: "2024-12-09"
+  published_date_precision: "day"
+  publisher: "Metropolitan Transportation Authority"
+  title: "MTA Bus 2025 Budget and 2025-2028 Financial Plan Adoption"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_160406#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "meeting_doc_160406"
+    source_path: "raw/sources/meeting_doc_160406/blocks.jsonl"
+    text_sha256: "sha256:edb6ecac401fbe542450c24c81c922170a1c646501310015b0f5b6863a3586f9"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_160406#p001_c0002"
+    page_number: 1
+    role: "publisher"
+    source_id: "meeting_doc_160406"
+    source_path: "raw/sources/meeting_doc_160406/blocks.jsonl"
+    text_sha256: "sha256:ec4da331c09e2061578a1964b23a90bdb7edf5115e31a65c01ad04c21487f1e4"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0005"
+    evidence_id: "meeting_doc_160406#p001_c0005"
+    page_number: 1
+    role: "date"
+    source_id: "meeting_doc_160406"
+    source_path: "raw/sources/meeting_doc_160406/blocks.jsonl"
+    source_quote: "Date December 9, 2024"
+    text_sha256: "sha256:1522ed4fec8798c5806a1eaa6465e63e1d9b926d8d455e01cf299226ec6f5643"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0009"
+    evidence_id: "meeting_doc_160406#p001_c0009"
+    page_number: 1
+    role: "purpose"
+    source_id: "meeting_doc_160406"
+    source_path: "raw/sources/meeting_doc_160406/blocks.jsonl"
+    text_sha256: "sha256:9890c93a8fdc07a1f3186ba4c66303aadfe6cdff050dbfb263a07a7505cd39be"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0008"
+    evidence_id: "meeting_doc_160406#p001_c0008"
+    page_number: 1
+    role: "purpose"
+    source_id: "meeting_doc_160406"
+    source_path: "raw/sources/meeting_doc_160406/blocks.jsonl"
+    text_sha256: "sha256:28aa6ffcd51a4ad115e71b513291e4953ceb4155c07b8cd5dcf76ad235129f6c"
+    text_source: "raw_text"
+---
+
+# MTA Bus Company 2025 budget
+
+source_id: meeting_doc_160406
+citation: cite block ids exactly as shown in square brackets
+document: 43 block(s)
+
+## Page 1
+
+### [p001_c0001] Staff Summary
+### [p001_c0002] Metropolitan Transportation Authority
+### [p001_c0003] Page 1 of 2
+[p001_c0004]
+
+```text
+Subject MTA Bus 2025 Budget and 2025-2028 Financial Plan Adoption Department Office of the Chief Financial Officer Department Head Name Kevin Willens, Chief Financial Officer Department Head Signature Project Manager/Division Head David Keller, OMB
+```
+[p001_c0005]
+
+```text
+Date December 9, 2024 Vendor Name Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p001_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 NYCT Comm. 12/16 X 2 Finance Comm. 12/16 X 3 Board 12/18 X
+```
+[p001_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 OMB 2 Financial Liaison 3 NYCT President
+```
+### [p001_c0008] Purpose:
+[p001_c0009] To secure MTA Board adoption of MTA Bus Company's 2024 November Forecast, 2025 Final Proposed Budget, and the Four-Year Financial Plan for 2025-2028.
+### [p001_c0010] Discussion:
+[p001_c0011] The 2025 Final Proposed Budget, which is consistent with information presented to the Board in November 2024, provides sufficient funding to support MTA Bus Company's planned service levels, as well as MTA's commitment to provide safe, secure, reliable, and cost-efficient transportation service to the metropolitan New York region. The MTA Bus projections do not include the estimated impacts of projected fare increases and MTA consolidated below-the-line adjustments which are presented as part of MTA consolidated materials. The MTA is reimbursed by the City of New York for the operating deficits of MTA Bus Company.
+[p001_c0012] The 2025 Final Proposed Budget includes funding for new and enhanced investments as follows:
+- [p001_c0013] • Queens Bus network redesign focused simplifying and improving service for customers with more reliable service, faster travel, better connections, and improved ease of use. • East New York Central Maintenance Facility lease. • Jamaica Terminal relocation, including expenses for construction, rent for terminal and swing room space, utilities, and janitorial services.
+### [p001_c0014] 2024 November Forecast – Baseline
+[p001_c0015] Total Non-Reimbursable operating revenues are budgeted at $201.1 million, including farebox revenues of $181.2 million and $19.9 million of Other Operating Revenue. Total Non-Reimbursable expenses are projected to be $958.0 million, consisting of labor expenses of $728.8 million and non-labor expenses of $229.2 million, with non-cash liability adjustments of $187.6 million. Projected Reimbursable expenses of $7.5 million are fully offset by capital reimbursements. Total end-of-year positions are projected at 3,935 consisting of 3,897 non-reimbursable positions and 38 reimbursable positions.
+
+## Page 2
+
+### [p002_c0001] Staff Summary
+### [p002_c0002] Metropolitan Transportation Authority
+### [p002_c0003] Page 2 of 2
+### [p002_c0004] 2025 Final Proposed Budget – Baseline
+[p002_c0005] Total Non-Reimbursable operating revenues are budgeted at $211.0 million, including farebox revenues of $191.0 million and $20.0 million of Other Operating Revenue. Total non-reimbursable expenses are projected to be $976.6 million in 2025, consisting of labor expenses of $746.4 million and non-labor expenses of $230.2 million, with non-cash liability adjustments of $192.2 million. Projected reimbursable expenses of $7.7 million are fully offset by capital reimbursements. Total end-of-year positions are projected at 4,018 consisting of 3,980 non-reimbursable positions and 38 reimbursable positions.
+### [p002_c0006] Impact on Funding
+[p002_c0007] The 2024 November Forecast, the 2025 Final Proposed Budget, and the Four-Year Financial Plan for 2025-2028, which are presented in the attached tables, are consistent with the proposed MTA Financial Plan.
+### [p002_c0008] Recommendation:
+[p002_c0009] It is recommended that the MTA Board adopt the 2024 November Forecast, the 2025 Final Proposed Budget, and the Four-Year Financial Plan for 2025-2028 for MTA Bus Company.
+
+## Page 3
+
+### [p003_c0001] MTA BUS COMPANY November Financial Plan 2025 - 2028 Accrual Statement of Operations By Category ($ in millions)
+[p003_c0002]
+
+```text
+Actual 2023 November Forecast 2024 Final Proposed Budget 2025 2026 2027 2028 Non-Reimbursable Operating Revenue Farebox Revenue $178,571 $181,180 $191,013 $198,760 $205,977 $209,144 Other Operating Revenue 14,474 19,917 19,993 20,035 19,790 19,871 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $193,045 $201,098 $211,007 $218,794 $225,767 $229,015 Operating Expense Labor: Payroll $316,731 $331,440 $344,355 $356,509 $363,241 $370,414 Overtime 90,977 100,858 96,532 99,920 102,573 104,625 Health and Welfare 91,135 116,028 118,013 126,306 134,725 143,753 OPEB Current Payments 33,782 42,053 41,917 44,986 48,060 51,356 Pension 62,189 63,090 68,684 70,774 70,413 69,243 Other Fringe Benefits 76,710 76,591 78,187 79,701 80,565 81,565 Reimbursable Overhead (2,222) (1,249) (1,269) (1,278) (1,285) (1,292) Total Labor Expenses $669,302 $728,810 $746,419 $776,919 $798,293 $819,664 Non-Labor: Electric Power $2,309 $2,510 $2,902 $3,153 $3,228 $3,298 Fuel 33,217 30,383 28,781 29,510 29,265 29,773 Insurance 5,621 8,308 7,872 8,028 8,458 9,186 Claims 58,409 57,577 58,838 60,115 61,516 62,863 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 25,431 41,861 36,446 35,761 35,790 35,781 Professional Services Contracts 30,032 35,611 42,768 47,458 50,068 43,817 Materials and Supplies 40,195 44,994 44,274 45,430 45,973 46,937 Other Business Expenses 7,820 8,164 8,324 8,435 8,505 8,583 Total Non-Labor Expenses $203,035 $229,209 $230,206 $237,891 $242,804 $239,938 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $872,336 $958,019 $976,624 $1,014,810 $1,041,097 $1,059,602 Depreciation $53,357 $62,163 $62,163 $62,163 $62,163 $62,163 GASB 49 Environmental Remediation 0.759 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 15,326 57,500 59,800 69,100 78,100 49,900 GASB 75 OPEB Expense Adjustment 31,092 67,969 70,261 72,607 74,985 77,485 GASB 87 Lease Adjustment (0.037) 0.001 0.001 0.001 0.001 0.001 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $100,496 $187,633 $192,226 $203,871 $215,249 $189,549 Total Expenses $972,832 $1,145,652 $1,168,849 $1,218,680 $1,256,346 $1,249,150 Net Surplus/(Deficit) ($779,788) ($944,554) ($957,842) ($999,886) ($1,030,579) ($1,020,136)
+```
+
+## Page 4
+
+### [p004_c0001] MTA BUS COMPANY November Financial Plan 2025 - 2028 Accrual Statement of Operations By Category ($ in millions)
+[p004_c0002]
+
+```text
+Actual 2023 November Forecast 2024 Final Proposed Budget 2025 2026 2027 2028 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 4.338 7.487 7.663 7.786 7.895 8.006 Total Revenues $4.338 $7.487 $7.663 $7.786 $7.895 $8.006 Operating Expense Labor: Payroll $2.493 $4.589 $4.729 $4.837 $4.933 $5.032 Overtime 0.002 0.000 0.000 0.000 0.000 0.000 Health and Welfare 0.000 1.649 1.664 1.672 1.677 1.682 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension 0.000 0.000 0.000 0.000 0.000 0.000 Other Fringe Benefits 0.001 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 1.842 1.249 1.269 1.278 1.285 1.292 Total Labor Expenses $4.338 $7.487 $7.663 $7.786 $7.895 $8.006 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Professional Services Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $4.338 $7.487 $7.663 $7.786 $7.895 $8.006 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+
+## Page 5
+
+### [p005_c0001] MTA BUS COMPANY November Financial Plan 2025 - 2028 Accrual Statement of Operations By Category ($ in millions)
+[p005_c0002]
+
+```text
+Actual 2023 November Forecast 2024 Final Proposed Budget 2025 2026 2027 2028 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $178,571 $181,180 $191,013 $198,760 $205,977 $209,144 Other Operating Revenue 14,474 19,917 19,993 20,035 19,790 19,871 Capital and Other Reimbursements 4,338 7,487 7,863 7,786 7,895 8,006 Total Revenues $197,383 $208,585 $218,869 $226,580 $233,662 $237,021 Operating Expense Labor: Payroll $319,224 $336,028 $349,084 $361,346 $368,175 $375,446 Overtime 90,979 100,858 96,532 99,920 102,573 104,625 Health and Welfare 91,135 117,677 119,678 127,978 136,402 145,434 OPEB Current Payments 33,782 42,053 41,917 44,986 48,060 51,356 Pension 62,189 63,090 68,684 70,774 70,413 69,243 Other Fringe Benefits 76,711 76,591 78,187 79,701 80,565 81,565 Reimbursable Overhead (0,380) 0,000 0,000 0,000 0,000 0,000 Total Labor Expenses $673,640 $736,298 $754,081 $784,705 $806,198 $827,670 Non-Labor: Electric Power $2,309 $2,510 $2,802 $3,153 $3,228 $3,298 Fuel 33,217 30,383 28,781 29,510 29,285 29,773 Insurance 5,621 8,308 7,872 8,028 8,458 9,186 Claims 58,409 57,577 58,838 60,115 61,516 62,863 Paratransit Service Contracts 0,000 0,000 0,000 0,000 0,000 0,000 Maintenance and Other Operating Contracts 25,431 41,681 36,446 35,781 35,790 35,781 Professional Services Contracts 30,032 35,611 42,768 47,458 50,068 43,817 Materials and Supplies 40,195 44,994 44,274 45,430 45,973 46,637 Other Business Expenses 7,820 8,164 8,324 8,436 8,505 8,593 Total Non-Labor Expenses $203,035 $229,209 $230,206 $237,891 $242,804 $239,938 Other Expense Adjustments: Other Expense Adjustments $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 Total Other Expense Adjustments $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 Total Expenses Before Depreciation and GASB Adjs. $876,674 $965,507 $984,287 $1,022,596 $1,048,992 $1,067,608 Depreciation $53,357 $62,163 $62,163 $62,163 $62,163 $62,163 GASB 49 Environmental Remediation 0,759 0,000 0,000 0,000 0,000 0,000 GASB 68 Pension Expense Adjustment 15,326 57,500 59,800 69,100 78,100 49,900 GASB 75 OPEB Expense Adjustment 31,092 67,969 70,281 72,607 74,985 77,485 GASB 87 Lease Adjustment (0,037) 0,001 0,001 0,001 0,001 0,001 GASB 96 SBITA Adjustment 0,000 0,000 0,000 0,000 0,000 0,000 Total Non-Cash Liability Adjustments $100,496 $187,633 $192,225 $203,871 $215,249 $189,549 Total Expenses $977,171 $1,153,139 $1,176,512 $1,226,466 $1,264,241 $1,257,156 Net Surplus/(Deficit) ($779,788) ($944,554) ($957,842) ($999,886) ($1,030,579) ($1,020,136)
+```
+
+## Page 6
+
+### [p006_c0001] MTA BUS COMPANY November Financial Plan 2025 - 2028 Cash Receipts and Expenditures ($ in millions)
+[p006_c0002]
+
+```text
+Actual 2023 November Forecast 2024 Final Proposed Budget 2025 2026 2027 2028 Cash Receipts and Expenditures Receipts Farebox Revenue $177.046 $181.180 $191.013 $198.760 $205.977 $209.144 Other Operating Revenue 148.123 181.193 226.241 77.368 19.790 19.871 Capital and Other Reimbursements 4.284 7.487 7.662 7.785 7.894 8.005 Total Receipts $329.453 $369.860 $424.917 $283.913 $233.661 $237.020 Expenditures Labor: Payroll $307.791 $352.209 $348.665 $380.927 $367.756 $375.027 Overtime 90.978 100.858 96.532 99.920 102.574 104.625 Health and Welfare 97.129 122.178 119.678 127.978 138.403 145.435 OPEB Current Payments 34.750 42.053 41.916 44.986 48.059 51.356 Pension 122.760 0.000 67.494 70.774 70.413 69.243 Other Fringe Benefits 61.629 62.206 63.002 64.517 65.380 66.381 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $715.037 $679.505 $737.288 $769.101 $790.584 $812.067 Non-Labor: Electric Power $2.280 $2.511 $2.902 $3.153 $3.228 $3.298 Fuel 33.023 30.384 28.782 29.511 29.265 29.773 Insurance 0.740 8.308 7.872 8.028 8.458 9.185 Claims 35.698 41.618 35.580 36.352 37.199 38.014 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 26.168 44.347 37.278 36.611 36.660 36.669 Professional Services Contracts 25.841 57.211 41.938 46.609 49.199 42.929 Materials and Supplies 42.147 45.893 44.274 45.429 45.973 46.637 Other Business Expenses 6.972 8.664 8.324 8.436 8.506 8.584 Total Non-Labor Expenditures $172.869 $238.935 $206.948 $214.129 $218.488 $215.089 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $887.906 $918.440 $944.236 $983.230 $1,009.072 $1,027.156 Net Cash Balance ($558.453) ($548.580) ($519.319) ($699.317) ($775.411) ($790.136)
+```
+
+## Page 7
+
+### [p007_c0001] MTA BUS COMPANY November Financial Plan 2025 - 2028 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p007_c0002]
+
+```text
+Actual 2023 November Forecast 2024 Final Proposed Budget 2025 2026 2027 2028 Cash Flow Adjustments Receipts Farebox Revenue ($1,525) $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 133.649 161.276 206.248 57.333 0.000 0.000 Capital and Other Reimbursements (0.054) 0.000 0.000 0.000 (0.001) 0.000 Total Receipts $132.070 $161.275 $206.248 $57.333 ($0.001) ($0.001) Expenditures Labor: Payroll $11.433 ($16.181) $0.419 $0.419 $0.419 $0.419 Overtime 0.001 0.000 0.000 0.000 0.000 0.000 Health and Welfare (5.994) (4.501) (0.001) (0.001) (0.001) (0.001) OPEB Current Payments (0.968) 0.000 0.000 0.001 0.001 0.000 Pension (60.571) 63.090 1.190 0.000 0.000 0.000 Other Fringe Benefits 15.082 14.384 15.184 15.184 15.184 15.184 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead (0.380) 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures ($41.397) $56.793 $16.793 $15.603 $15.604 $15.603 Non-Labor: Electric Power $0.029 $0.000 0.000 $0.000 $0.000 $0.000 Fuel 0.194 0.000 0.000 0.000 0.000 0.000 Insurance 4.881 0.000 0.000 0.000 0.000 0.000 Claims 22.711 15.960 23.258 23.763 24.317 24.849 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts (0.737) (2.686) (0.831) (0.850) (0.870) (0.888) Professional Services Contracts 4.191 (21.600) 0.831 0.850 0.869 0.888 Materials and Supplies (1.952) (0.899) 0.001 0.001 0.001 0.001 Other Business Expenses 0.848 (0.500) 0.000 0.000 0.000 0.000 Total Non-Labor Expenditures $30.166 ($9.727) $23.258 $23.762 $24.316 $24.849 Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures ($11.232) $47.066 $40.051 $39.366 $39.920 $40.452 Total Cash Conversion Adjustments before Depreciation $120.838 $208.341 $246.298 $96.698 $39.919 $40.451 Depreciation $53.357 $62.163 $62.163 $62.163 $62.163 $62.163 GASB 49 Environmental Remediation 0.759 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 15.326 57.500 59.800 69.100 78.100 49.900 GASB 75 OPEB Expense Adjustment 31.092 67.969 70.261 72.607 74.985 77.485 GASB 87 Lease Adjustment (0.037) 0.001 0.001 0.001 0.001 0.001 GASB 96 SBITA Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $100.496 $187.633 $192.225 $203.871 $215.249 $189.549 Total Cash Conversion Adjustments $221.335 $395.974 $438.523 $300.569 $255.167 $230.000
+```
+
+## Page 8
+
+### [p008_c0001] MTA BUS COMPANY November Financial Plan 2025 - 2028 Ridership (Utilization) and Revenue (in millions)
+### [p008_c0002] RIDERSHIP
+[p008_c0003]
+
+```text
+Actual 2023 November Forecast 2024 Final Proposed Budget 2025 2026 2027 2028 Fixed Route 86,217 84,259 89,061 92,673 96,036 97,513 Total Ridership 86,217 84,259 89,061 92,673 96,036 97,513
+```
+### [p008_c0004] FAREBOX REVENUE
+[p008_c0005]
+
+```text
+Fixed Route Farebox Revenue $178,571 $181,180 $191,013 $198,760 $205,977 $209,144 Farebox Revenue $178,571 $181,180 $191,013 $198,760 $205,977 $209,144
+```
+
+## Page 9
+
+### [p009_c0001] MTA BUS COMPANY November Financial Plan 2025-2028 Total Positions by Function & Department Non-Reimbursable/Reimbursable and Full-Time/Full-Time Equivalents
+[p009_c0002]
+
+```text
+FUNCTION/DEPARTMENT Actual 2023 November Forecast 2024 Final Proposed Budget 2025 2026 2027 2028 Administration Office of the EVP 3 3 3 3 3 3 Human Resources 6 13 13 13 13 13 Office of Management and Budget 11 16 16 16 16 16 Materiel 10 15 15 15 15 15 Controller 15 19 19 19 19 19 Office of the President 2 12 12 12 12 12 Law 13 20 20 20 20 20 Strategic Office 16 17 21 21 21 21 Non Departmental 0 1 1 1 1 1 Total Administration 76 116 120 120 120 120 Operations Buses 2,264 2,360 2,432 2,432 2,432 2,432 Office of the Executive Vice President, Regional 3 4 4 4 4 4 Safety & Training 86 68 68 68 68 68 Road Operations 129 132 134 134 132 132 Transportation Support 32 33 33 33 33 33 Operations Planning 26 32 33 33 33 33 Revenue Control 5 6 6 6 6 6 Total Operations 2,545 2,635 2,710 2,710 2,708 2,708 Maintenance Buses 667 725 731 731 730 730 Maintenance Support/CMF 195 229 227 227 227 227 Facilities 60 87 87 87 87 87 Supply Logistics 88 104 104 104 104 104 Total Maintenance 1,010 1,145 1,149 1,149 1,148 1,148 Engineering/Capital Capital Program Management 21 26 26 26 26 26 Public Safety Office of the Senior Vice President 11 13 13 13 13 13 Total Positions 3,663 3,935 4,018 4,018 4,015 4,015 Non-Reimbursable 3,629 3,897 3,980 3,980 3,977 3,977 Reimbursable 34 38 38 38 38 38 Total Full-Time 3,648 3,917 4,000 4,000 3,997 3,997 Total Full-Time Equivalents 15 18 18 18 18 18
+```
+
+## Page 10
+
+### [p010_c0001] MTA BUS COMPANY November Financial Plan 2025 - 2028 Total Positions By Function and Occupational Group
+[p010_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual November Final 2023 Forecast 2024 Proposed Budget 2025 2026 2027 2028 Administration Managers/Supervisors 29 51 56 56 56 56 Professional/Technical/Clerical 47 64 64 64 64 64 Operational Hourlies 0 1 1 1 1 1 Total Administration Headcount 76 116 121 121 121 121 Operations Managers/Supervisors 308 316 318 318 316 316 Professional/Technical/Clerical 36 45 45 45 45 45 Operational Hourlies 2,201 2,274 2,346 2,346 2,346 2,346 Total Operations Headcount 2,545 2,635 2,709 2,709 2,707 2,707 Maintenance Managers/Supervisors 222 252 250 250 250 250 Professional/Technical/Clerical 29 38 38 38 38 38 Operational Hourlies 759 855 861 861 860 860 Total Maintenance Headcount 1,010 1,145 1,149 1,149 1,148 1,148 Engineering / Capital Managers/Supervisors 12 15 15 15 15 15 Professional/Technical/Clerical 9 11 11 11 11 11 Operational Hourlies 0 0 0 0 0 0 Total Engineering Headcount 21 26 26 26 26 26 Public Safety Managers/Supervisors 6 8 8 8 8 8 Professional/Technical/Clerical 5 5 5 5 5 5 Operational Hourlies 0 0 0 0 0 0 Total Public Safety Headcount 11 13 13 13 13 13 Total Positions Managers/Supervisors 577 642 647 647 645 645 Professional/Technical/ Clerical 126 163 163 163 163 163 Operational Hourlies 2,960 3,130 3,208 3,208 3,207 3,207 Total Positions 3,663 3,935 4,018 4,018 4,015 4,015
+```

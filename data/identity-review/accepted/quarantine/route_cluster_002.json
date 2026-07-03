@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "review_state": "quarantined",
+  "accepted_at": "2026-06-08T21:21:36.731Z",
+  "reviewer": "codex-audit-2026-06-08",
+  "source": "audit_needs_correction_before_promotion",
+  "cluster_id": "route_cluster_002",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_002.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_002.json",
+  "source_review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Flash",
+  "quarantine": {
+    "blocker": "route_plus_policy_required",
+    "note": "Revisit route_q44-plus because ACE/MTA plus route ids may be SBS-coded dataset route ids; do not promote do-not-merge against Q44-SBS yet."
+  },
+  "original_action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 3,
+    "weak_alias_count": 3,
+    "missing_field_count": 2,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "original_merge_groups": [],
+  "original_do_not_merge": [
+    {
+      "record_ids": [
+        "route_bronx-flushing-jamaica-sbs",
+        "route_q44-plus"
+      ],
+      "reason": "Distinct route variants sharing base route Q44: route_bronx-flushing-jamaica-sbs is Q44-SBS (Select Bus Service) while route_q44-plus is Q44+ (plus-label). The ACE dataset dictionary lists Q44+ as a distinct item from Q44-SBS. Negative signals explicitly flag 'variant mismatch: ace-dataset,sbs vs plus-label'. The shared identity key 'route_q44' is a weak alias derived from the base route number, not evidence of same canonical identity."
+    },
+    {
+      "record_ids": [
+        "route_bronx-flushing-jamaica-sbs",
+        "route_q44-queens"
+      ],
+      "reason": "Distinct route variants sharing base route Q44: route_bronx-flushing-jamaica-sbs is Q44-SBS (Select Bus Service with specific Bronx-Flushing-Jamaica corridor) while route_q44-queens is the plain Q44 local bus route (referenced in queens_addendum_equity_evaluation_appendix_d with 'Q44 Extension to Fordham Plaza'). Negative signals flag 'variant mismatch: ace-dataset,sbs vs unknown'. The shared identity key 'route_q44' is a weak alias."
+    },
+    {
+      "record_ids": [
+        "route_q44-plus",
+        "route_q44-queens"
+      ],
+      "reason": "Distinct route variants sharing base route Q44: route_q44-plus is Q44+ (plus-label variant from ACE dataset dictionary) while route_q44-queens is the plain Q44 local bus route. Negative signals flag 'variant mismatch: plus-label vs unknown'. No evidence connects Q44+ to the Q44 local route described in the queens addendum."
+    }
+  ],
+  "original_rationale": "All three records share base route Q44 but represent distinct service variants: Q44-SBS (Select Bus Service on Bronx-Flushing-Jamaica corridor), Q44+ (plus-label variant from ACE dataset), and Q44 (plain local route from queens addendum). The packet's own negative signals confirm variant mismatches. The validator duplicate_global_identity flags are based on the weak shared alias 'route_q44' which is a base-route label, not evidence of same canonical identity. No evidence connects any two records as the same route variant.",
+  "required_follow_up": [
+    "Resolve blocker before creating accepted merge/do-not-merge overrides.",
+    "Do not apply this packet directly to data/identity-overrides/merges.json."
+  ]
+}

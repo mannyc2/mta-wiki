@@ -1,0 +1,421 @@
+{
+  "note_id": "codex-identity-batch219-prep",
+  "batch": "identity219",
+  "created_at": "2026-06-23T13:55:00Z",
+  "author": "codex",
+  "scope": {
+    "operation": "prepare_identity_cleanup_artifact_only",
+    "issue_type": "duplicate_global_identity",
+    "allowed_global_kinds": [
+      "entity"
+    ],
+    "source_backlog_context": "Current 144 duplicate_global_identity validation backlog after identity218, per owner instruction.",
+    "selection_note": "High-confidence entity duplicates from the first current validation issues and nearby entity clusters. Excluded Church Avenue corridor work and anything already present in current merges/DNM.",
+    "provider_backed_commands_run": false,
+    "generated_output_commands_run": false,
+    "forbidden_commands_run": [],
+    "write_limit": "Exactly one artifact was written: data/review_notes/codex-identity-batch219-prep.json. No override files, LOG.md, manifests, generated canonical JSONL, DB, wiki, materialized outputs, exports, or validation outputs were mutated."
+  },
+  "proposed_decisions": [
+    {
+      "decision_id": "identity219-entity-001",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias_id": "entity_brooklyn-cb11-bay-pkwy-cropsey-jun2025",
+      "target_id": "entity_community-board-11-brooklyn",
+      "identity_keys": [
+        "entity_brooklyn-community-board-11",
+        "entity_community-board-11-brooklyn"
+      ],
+      "confidence": "high",
+      "reason": "Exact same borough-scoped community board. The alias record and target record both represent Brooklyn Community Board 11; the target is richer and already carries CB11 transportation-committee evidence.",
+      "source_evidence": [
+        {
+          "record_id": "entity_brooklyn-cb11-bay-pkwy-cropsey-jun2025",
+          "evidence_ref": "bay_pkwy_cropsey_ave_cb12_jun2025#p017_c0003",
+          "quote": "Present draft proposal to elected officials, CBs 11 & 12, and other stakeholders"
+        },
+        {
+          "record_id": "entity_community-board-11-brooklyn",
+          "evidence_ref": "bay_pkwy_cropsey_ave_cb11_jun2025#p001_c0002",
+          "quote": "Brooklyn Community Board 11 Transportation Committee"
+        }
+      ],
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_merge_alias_absent": true,
+        "current_direct_do_not_merge_row_absent": true,
+        "church_avenue_corridor_related": false,
+        "same_borough_scope": "Brooklyn",
+        "same_entity_type_or_compatible_committee_context": true
+      },
+      "proposed_durable_mutation_row": {
+        "alias_id": "entity_brooklyn-cb11-bay-pkwy-cropsey-jun2025",
+        "target_id": "entity_community-board-11-brooklyn",
+        "reason": "Exact same borough-scoped community board: Brooklyn Community Board 11.",
+        "source_decision": "data/review_notes/codex-identity-batch219-prep.json#identity219-entity-001",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      }
+    },
+    {
+      "decision_id": "identity219-entity-002",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias_id": "entity_joint-lirr-mnr-committee-108051",
+      "target_id": "entity_joint-lirr-metronorth-committee",
+      "identity_keys": [
+        "entity_joint-lirr-and-metro-north-committee",
+        "entity_joint-lirr-and-metro-north-railroad-committee",
+        "entity_joint-long-island-rail-rd-and-metro-north-railroad-committee"
+      ],
+      "confidence": "high",
+      "reason": "Exact same MTA Board committee. One record spells Long Island Rail Road and Metro-North Railroad with an ampersand; the other spells the same committee name with 'and'.",
+      "source_evidence": [
+        {
+          "record_id": "entity_joint-lirr-mnr-committee-108051",
+          "evidence_ref": "meeting_doc_108051#p001_c0001",
+          "quote": "JOINT LONG ISLAND RAIL ROAD & METRO-NORTH RAILROAD COMMITTEE"
+        },
+        {
+          "record_id": "entity_joint-lirr-metronorth-committee",
+          "evidence_ref": "meeting_doc_121141#p032_c0005",
+          "quote": "Members of the Joint Long Island Rail Road and Metro-North Railroad Committee include:"
+        }
+      ],
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_merge_alias_absent": true,
+        "current_direct_do_not_merge_row_absent": true,
+        "both_entity_type_committee": true,
+        "same_parent_board_context": "MTA Board committee"
+      },
+      "proposed_durable_mutation_row": {
+        "alias_id": "entity_joint-lirr-mnr-committee-108051",
+        "target_id": "entity_joint-lirr-metronorth-committee",
+        "reason": "Same Joint Long Island Rail Road and Metro-North Railroad Committee; ampersand/name spelling variant only.",
+        "source_decision": "data/review_notes/codex-identity-batch219-prep.json#identity219-entity-002",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      }
+    },
+    {
+      "decision_id": "identity219-entity-003",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias_id": "entity_gcmcoc-2023-adopted-budget",
+      "target_id": "entity_meeting-doc-121001-gcmoc",
+      "identity_keys": [
+        "entity_grand-central-madison-operating-company"
+      ],
+      "confidence": "high",
+      "reason": "Same Grand Central Madison operating company. The candidate uses 'Concourse Operating Company' and acronym GCMCOC in some extracted fields, but its aliases and evidence include the same Grand Central Madison Operating Company/GCMOC identity carried by the target.",
+      "source_evidence": [
+        {
+          "record_id": "entity_gcmcoc-2023-adopted-budget",
+          "evidence_ref": "meeting_doc_176491#p011_c0006",
+          "quote": "GCMOC - Grand Central Madison Operating Company"
+        },
+        {
+          "record_id": "entity_meeting-doc-121001-gcmoc",
+          "evidence_ref": "meeting_doc_121001#p001_c0007",
+          "quote": "Grand Central Madison Operating Company (GCMOC), which is responsible for the LIRR-operating portion of Grand Central Terminal"
+        }
+      ],
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_merge_alias_absent": true,
+        "current_direct_do_not_merge_row_absent": true,
+        "compatible_entity_type": "agency/operating company",
+        "same_acronym_family": [
+          "GCMOC",
+          "GCMCOC"
+        ]
+      },
+      "proposed_durable_mutation_row": {
+        "alias_id": "entity_gcmcoc-2023-adopted-budget",
+        "target_id": "entity_meeting-doc-121001-gcmoc",
+        "reason": "Same Grand Central Madison Operating Company/GCMOC entity.",
+        "source_decision": "data/review_notes/codex-identity-batch219-prep.json#identity219-entity-003",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      }
+    },
+    {
+      "decision_id": "identity219-entity-004",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-143306-nyct-committee",
+      "target_id": "entity_meeting-doc-140466-nyct-committee-members",
+      "identity_keys": [
+        "entity_new-york-city-transit-committee"
+      ],
+      "confidence": "high",
+      "reason": "Exact same New York City Transit Committee member-list entity. Both records cite the same MTA Board committee wording and the same member list.",
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-140466-nyct-committee-members",
+          "evidence_ref": "meeting_doc_140466#p014_c0004",
+          "quote": "Members of the New York City Transit Committee include:"
+        },
+        {
+          "record_id": "entity_meeting-doc-143306-nyct-committee",
+          "evidence_ref": "meeting_doc_143306#p032_c0004",
+          "quote": "Members of the New York City Transit Committee include:"
+        },
+        {
+          "record_id": "entity_meeting-doc-143306-nyct-committee",
+          "evidence_ref": "meeting_doc_143306#p032_c0005",
+          "quote": "Haeda Mihaltses, Chair; Andrew Albert; Samuel Chu; Dan Garodnick; David Jones; Meera Joshi; John Ross \"JR\" Rizzo; John Samuelson; Lisa Sorin; Midori Valdivia"
+        }
+      ],
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_merge_alias_absent": true,
+        "current_direct_do_not_merge_row_absent": true,
+        "both_entity_type_committee": true,
+        "same_member_list": true
+      },
+      "proposed_durable_mutation_row": {
+        "alias_id": "entity_meeting-doc-143306-nyct-committee",
+        "target_id": "entity_meeting-doc-140466-nyct-committee-members",
+        "reason": "Same New York City Transit Committee/member-list record from matching MTA Board committee evidence.",
+        "source_decision": "data/review_notes/codex-identity-batch219-prep.json#identity219-entity-004",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      }
+    },
+    {
+      "decision_id": "identity219-entity-005",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-72551-mta-cd",
+      "target_id": "entity_mta-construction-and-development",
+      "identity_keys": [
+        "entity_mta-construction-and-development-company"
+      ],
+      "confidence": "high",
+      "reason": "Exact same MTA Construction and Development entity. The alias record names the legal/company form; the target is the richer global MTA C&D entity.",
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-72551-mta-cd",
+          "evidence_ref": "meeting_doc_72551#p040_c0012",
+          "quote": "MTA Construction and Development Company (\"MTA Construction and Development\"), formerly called MTA Capital Construction Company"
+        },
+        {
+          "record_id": "entity_mta-construction-and-development",
+          "evidence_ref": "meeting_doc_102686#p009_c0005",
+          "quote": "MTA Construction & Development (\"C&D\") President Jamie Torres Springer"
+        }
+      ],
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_merge_alias_absent": true,
+        "current_direct_do_not_merge_row_absent": true,
+        "same_acronym_or_short_name": [
+          "MTA C&D",
+          "C&D"
+        ],
+        "compatible_entity_type": "subsidiary/agency/company"
+      },
+      "proposed_durable_mutation_row": {
+        "alias_id": "entity_meeting-doc-72551-mta-cd",
+        "target_id": "entity_mta-construction-and-development",
+        "reason": "Same MTA Construction and Development Company / MTA C&D entity.",
+        "source_decision": "data/review_notes/codex-identity-batch219-prep.json#identity219-entity-005",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      }
+    },
+    {
+      "decision_id": "identity219-entity-006",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_christopher-pangilinan-ops-planning",
+        "entity_department-of-paratransit"
+      ],
+      "identity_keys": [
+        "entity_department-of-paratransit"
+      ],
+      "confidence": "high",
+      "reason": "Person-versus-department collision. Christopher/Chris Pangilinan is a person and Paratransit executive; Department of Paratransit is the NYCT department. The shared key comes from affiliation/requesting-department context, not identity.",
+      "source_evidence": [
+        {
+          "record_id": "entity_christopher-pangilinan-ops-planning",
+          "evidence_ref": "meeting_doc_113986#p007_c0005",
+          "quote": "Paratransit Vice President Chris Pangilinan"
+        },
+        {
+          "record_id": "entity_department-of-paratransit",
+          "evidence_ref": "meeting_doc_102801#p009_c0003",
+          "quote": "Requesting Department: Department of Paratransit, Chris Pangilinan"
+        }
+      ],
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_merge_alias_absent": true,
+        "current_direct_do_not_merge_row_absent": true,
+        "different_entity_types": [
+          "person",
+          "department"
+        ],
+        "source_text_separates_department_and_person": true
+      },
+      "proposed_durable_mutation_row": {
+        "record_ids": [
+          "entity_christopher-pangilinan-ops-planning",
+          "entity_department-of-paratransit"
+        ],
+        "reason": "Person-versus-department: Chris Pangilinan is affiliated with/requesting through Department of Paratransit, not identical to it.",
+        "source_decision": "data/review_notes/codex-identity-batch219-prep.json#identity219-entity-006",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      }
+    },
+    {
+      "decision_id": "identity219-entity-007",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_finance-committee-mta",
+        "entity_meeting-doc-111901-mta-finance"
+      ],
+      "identity_keys": [
+        "entity_mta-finance",
+        "entity_mta-finance-workplan-2025"
+      ],
+      "confidence": "high",
+      "reason": "Committee-versus-department collision. The Finance Committee is an MTA Board committee; MTA Finance Department / Office of Financial Services is an administrative department that prepares or presents materials to the committee.",
+      "source_evidence": [
+        {
+          "record_id": "entity_finance-committee-mta",
+          "evidence_ref": "meeting_doc_102786#p005_c0001",
+          "quote": "Minutes of the Metropolitan Transportation Authority Finance Committee Meeting"
+        },
+        {
+          "record_id": "entity_meeting-doc-111901-mta-finance",
+          "evidence_ref": "meeting_doc_111901#p026_c0003",
+          "quote": "MTA Finance Department Office of Financial Services"
+        },
+        {
+          "record_id": "entity_meeting-doc-111901-mta-finance",
+          "evidence_ref": "meeting_doc_111901#p026_c0004",
+          "quote": "Finance Committee Meeting 5/22/2023"
+        }
+      ],
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_merge_alias_absent": true,
+        "current_direct_do_not_merge_row_absent": true,
+        "different_entity_types": [
+          "committee",
+          "department"
+        ],
+        "source_text_shows_department_material_inside_committee_meeting_context": true
+      },
+      "proposed_durable_mutation_row": {
+        "record_ids": [
+          "entity_finance-committee-mta",
+          "entity_meeting-doc-111901-mta-finance"
+        ],
+        "reason": "Finance Committee is an MTA Board committee; MTA Finance Department/Office of Financial Services is a distinct administrative department.",
+        "source_decision": "data/review_notes/codex-identity-batch219-prep.json#identity219-entity-007",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      }
+    },
+    {
+      "decision_id": "identity219-entity-008",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-124881-mnr",
+        "entity_meeting-doc-mnr-committee"
+      ],
+      "identity_keys": [
+        "entity_metro-north-railroad-committee"
+      ],
+      "confidence": "high",
+      "reason": "Agency-versus-committee collision. MTA Metro-North Railroad / Metro-North Commuter Railroad Company is the operating railroad agency; Metro-North Railroad Committee is the MTA Board committee overseeing/reviewing Metro-North matters.",
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-124881-mnr",
+          "evidence_ref": "meeting_doc_124881#p004_c0011",
+          "quote": "Metro-North Commuter Railroad Company (\"MTA Metro-North Railroad\") provides passenger transportation"
+        },
+        {
+          "record_id": "entity_meeting-doc-mnr-committee",
+          "evidence_ref": "meeting_doc_102726#p001_c0002",
+          "quote": "Proposed 2023 Metro-North Railroad Committee Work Plan"
+        }
+      ],
+      "guard_checks": {
+        "both_records_present_in_current_canonical_entities_jsonl": true,
+        "current_merge_alias_absent": true,
+        "current_direct_do_not_merge_row_absent": true,
+        "different_entity_types": [
+          "agency",
+          "committee"
+        ],
+        "committee_is_oversight_context_not_operating_agency": true
+      },
+      "proposed_durable_mutation_row": {
+        "record_ids": [
+          "entity_meeting-doc-124881-mnr",
+          "entity_meeting-doc-mnr-committee"
+        ],
+        "reason": "Metro-North Railroad agency is distinct from the Metro-North Railroad Committee.",
+        "source_decision": "data/review_notes/codex-identity-batch219-prep.json#identity219-entity-008",
+        "reviewed_at": "2026-06-23T13:55:00Z"
+      }
+    }
+  ],
+  "skipped_review_only": [
+    {
+      "records": [
+        "entity_bloomberg-news-org",
+        "entity_meeting-doc-155136-bloomberg"
+      ],
+      "identity_keys": [
+        "entity_bloomberg"
+      ],
+      "reason": "Likely related Bloomberg identity, but one source only says Bloomberg as a news organization/date context while the other describes terminals, communication lines, PeopleSoft data licenses, and MTM pricing. Left for human review instead of proposing a durable merge."
+    },
+    {
+      "records": [
+        "entity_annual-report-2021-lirr",
+        "entity_long-island-committee"
+      ],
+      "identity_keys": [
+        "entity_long-island-rail-rd-committee",
+        "entity_mta-long-island-rail-rd"
+      ],
+      "reason": "The collision mixes a large LIRR agency record with Long Island Committee records. It is likely a committee-versus-agency DNM, but the large LIRR record is heavily contaminated and needs a separate focused review."
+    },
+    {
+      "records": [
+        "entity_community-advisory-committee-2015",
+        "entity_community-advisory-committee-webster"
+      ],
+      "identity_keys": [
+        "entity_community-advisory-committee-cac"
+      ],
+      "reason": "Generic CAC identity-key collision. Prior current DNM rows already guard some CAC cross-corridor pairs; this one needs focused corridor/source review before deciding merge or DNM."
+    }
+  ],
+  "counts": {
+    "proposed_decisions_total": 8,
+    "proposed_alias_merges": 5,
+    "proposed_do_not_merge_guards": 3,
+    "skipped_review_only": 3
+  },
+  "exclusions": {
+    "already_present_in_current_merges_or_dnm": true,
+    "church_avenue_corridor_avoided": true,
+    "override_files_mutated": false,
+    "generated_outputs_mutated": false
+  },
+  "inspection_inputs": [
+    "data/identity-review/validation_issues.jsonl",
+    "data/canonical/entities.jsonl",
+    "data/identity-overrides/merges.json",
+    "data/identity-overrides/do-not-merge.json",
+    "data/review_notes/codex-identity-batch218-prep.json",
+    "data/review_notes/codex-identity-community-board-dnm-218-prep.json",
+    "raw/sources/*/blocks.jsonl"
+  ]
+}

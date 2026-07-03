@@ -1,0 +1,39 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:36:28.211Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_2bf99eced0.md",
+  "cluster_id": "entity_cluster_2bf99eced0",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_2bf99eced0",
+    "kind": "entity",
+    "merge_groups": [
+      [
+        "entity_193976-andrew-albert",
+        "entity_safety-committee-member-albert-jan2022"
+      ]
+    ],
+    "do_not_merge": [],
+    "weak_aliases": [
+      {
+        "record_id": "entity_193976-andrew-albert",
+        "aliases": [
+          "A. Albert"
+        ],
+        "reason": "Abbreviation used in source label; useful for search."
+      }
+    ],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "Both records are persons with entity_name 'Andrew Albert' vs 'A. Albert'. The difference is an abbreviation (test 2). No contradicting strong identity fields. The second record is a meeting-snapshot lifecycle record (id includes 'jan2022') that should merge into the durable entity."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-36-17-004Z_1282984-a51ba1d7_identity-review-run_entity-cluster-2bf99eced0",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-36-17-005Z_2026-06-23T14-36-17-004Z_1282984-a51ba1d7_identity-review-run_entity-cluster-2bf99eced0.jsonl"
+}

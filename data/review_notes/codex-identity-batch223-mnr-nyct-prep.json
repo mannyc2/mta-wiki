@@ -1,0 +1,508 @@
+{
+  "note_id": "codex-identity-batch223-mnr-nyct-prep",
+  "batch": "identity223",
+  "author": "Codex",
+  "created_at": "2026-06-23",
+  "scope": "Codex-only preparation for remaining duplicate_global_identity cleanup after identity222, focused on Metro-North / NYCT / MTA sibling-agency collisions. No provider-backed commands, materialize, validate, export, canonical/generated output edits, DB edits, override edits, wiki edits, or LOG edits were performed.",
+  "prepared_count": 12,
+  "decision_type_counts": {
+    "alias_merge": 2,
+    "do_not_merge": 10
+  },
+  "proposed_durable_decisions": [
+    {
+      "decision_id": "identity223-mnr-nyct-001",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias": "entity_meeting-doc-124881-mnr",
+      "target": "entity_metro-north-railroad",
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_metro-north-railroad",
+          "entity_metro-north-railroad-mnr",
+          "entity_mnr",
+          "entity_mta-metro-north-2015-webster-map",
+          "entity_mta-metro-north-railroad"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-124881-mnr and entity_metro-north-railroad share identity key entity_metro-north-railroad.",
+          "Global entity records entity_meeting-doc-124881-mnr and entity_metro-north-railroad share identity key entity_metro-north-railroad-mnr.",
+          "Global entity records entity_meeting-doc-124881-mnr and entity_metro-north-railroad share identity key entity_mnr.",
+          "Global entity records entity_meeting-doc-124881-mnr and entity_metro-north-railroad share identity key entity_mta-metro-north-railroad."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-124881-mnr",
+          "display_name": "MTA Metro-North Railroad",
+          "record_identity": "agency",
+          "evidence_ref": "meeting_doc_124881#p004_c0011",
+          "quote": "the MTA is comprised of the following... Metro-North Commuter Railroad Company"
+        },
+        {
+          "record_id": "entity_metro-north-railroad",
+          "display_name": "Metro-North Railroad",
+          "record_identity": "agency",
+          "evidence_ref": "meeting_doc_163201#p005_c0008",
+          "quote": "Metro-North Railroad Committee"
+        }
+      ],
+      "reason": "Both records represent the Metro-North Railroad agency. The meeting-doc record is a source-specific agency record, while the target is the canonical Metro-North Railroad agency record.",
+      "guard_notes": "Alias only the agency record into the agency target; do not absorb Metro-North committee records or source-specific 'Metro-North Connection' records through this alias."
+    },
+    {
+      "decision_id": "identity223-mnr-nyct-002",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias": "entity_meeting-doc-128981-nyct",
+      "target": "entity_mta-nyct",
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_mta",
+          "entity_mta-new-york-city-transit",
+          "entity_mta-new-york-city-transit-authority",
+          "entity_mta-new-york-city-transit-authority-nyct",
+          "entity_new-york-city-transit-authority-nyct",
+          "entity_new-york-city-transit-nyct",
+          "entity_nyc-transit",
+          "entity_nyct-new-york-city-transit"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-128981-nyct and entity_mta-nyct share identity key entity_mta-new-york-city-transit.",
+          "Global entity records entity_meeting-doc-128981-nyct and entity_mta-nyct share identity key entity_mta-new-york-city-transit-authority.",
+          "Global entity records entity_meeting-doc-128981-nyct and entity_mta-nyct share identity key entity_new-york-city-transit-authority-nyct.",
+          "Global entity records entity_meeting-doc-128981-nyct and entity_mta-nyct share identity key entity_nyc-transit."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-128981-nyct",
+          "display_name": "New York City Transit Authority (NYCT)",
+          "record_identity": "agency",
+          "evidence_ref": "meeting_doc_128981#p033_c0004",
+          "quote": "Due to New York City Transit Authority"
+        },
+        {
+          "record_id": "entity_mta-nyct",
+          "display_name": "MTA NYCT Reference",
+          "record_identity": "agency",
+          "evidence_ref": "m86_sbs_progress_report_2017#p003_c0003",
+          "quote": "MTA New York City Transit (NYCT)"
+        }
+      ],
+      "reason": "Both records refer to the New York City Transit / NYCT agency identity. Shared plain MTA keys are contaminated, but the NYCT-specific keys and names support an agency alias.",
+      "guard_notes": "Do not use this alias to merge NYCT with MTA Bus Company, Department of Buses, MTA parent, MTAHQ, MTA Real Estate, or MTA Bridges and Tunnels."
+    },
+    {
+      "decision_id": "identity223-mnr-nyct-003",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-102746-committee",
+        "entity_meeting-doc-128981-nyct"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_metro-north-commuter-railroad-company"
+        ],
+        "message": "Global entity records entity_meeting-doc-102746-committee and entity_meeting-doc-128981-nyct share identity key entity_metro-north-commuter-railroad-company."
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-102746-committee",
+          "display_name": "Committee on the Operations of the Metro-North Commuter Railroad",
+          "record_identity": "board committee",
+          "evidence_ref": "meeting_doc_102746#p001_c0004",
+          "quote": "Committee on the Operations of the Metro-North Commuter Railroad"
+        },
+        {
+          "record_id": "entity_meeting-doc-128981-nyct",
+          "display_name": "New York City Transit Authority (NYCT)",
+          "record_identity": "agency",
+          "evidence_ref": "meeting_doc_128981#p033_c0004",
+          "quote": "Due to New York City Transit Authority"
+        }
+      ],
+      "reason": "A Metro-North operations committee and the NYCT agency are distinct entities; the shared Metro-North key is cross-record contamination.",
+      "guard_notes": "Preserve committee-vs-agency separation and sibling-agency separation even when meeting books include multiple MTA operating agencies."
+    },
+    {
+      "decision_id": "identity223-mnr-nyct-004",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-102746-committee",
+        "entity_metro-north-railroad"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_metro-north-commuter-railroad-company"
+        ],
+        "message": "Global entity records entity_meeting-doc-102746-committee and entity_metro-north-railroad share identity key entity_metro-north-commuter-railroad-company."
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-102746-committee",
+          "display_name": "Committee on the Operations of the Metro-North Commuter Railroad",
+          "record_identity": "board committee",
+          "evidence_ref": "meeting_doc_102746#p001_c0004",
+          "quote": "Committee on the Operations of the Metro-North Commuter Railroad"
+        },
+        {
+          "record_id": "entity_metro-north-railroad",
+          "display_name": "Metro-North Railroad",
+          "record_identity": "agency",
+          "evidence_ref": "meeting_doc_163201#p005_c0008",
+          "quote": "Metro-North Railroad Committee"
+        }
+      ],
+      "reason": "The committee oversees or handles Metro-North operations context but is not the Metro-North Railroad agency itself.",
+      "guard_notes": "Represent committee-to-agency connections with relations, not identity merges."
+    },
+    {
+      "decision_id": "identity223-mnr-nyct-005",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-102746-committee",
+        "entity_mta-metro-north-2015-webster-map"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_metro-north-commuter-railroad-company",
+          "entity_metro-north-commuter-railroad-company-metro-north"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-102746-committee and entity_mta-metro-north-2015-webster-map share identity key entity_metro-north-commuter-railroad-company.",
+          "Global entity records entity_meeting-doc-102746-committee and entity_mta-metro-north-2015-webster-map share identity key entity_metro-north-commuter-railroad-company-metro-north."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-102746-committee",
+          "display_name": "Committee on the Operations of the Metro-North Commuter Railroad",
+          "record_identity": "board committee",
+          "evidence_ref": "meeting_doc_102746#p001_c0004",
+          "quote": "Committee on the Operations of the Metro-North Commuter Railroad"
+        },
+        {
+          "record_id": "entity_mta-metro-north-2015-webster-map",
+          "display_name": "MTA Metro-North Connection",
+          "record_identity": "agency-or-connection reference",
+          "evidence_ref": "2015_07_webster_sbs_service_plan#p001_c0010",
+          "quote": "Metro-North Connection"
+        }
+      ],
+      "reason": "A Metro-North operations committee is not a Webster Avenue 'Metro-North Connection' reference; shared Metro-North agency keys are too broad for identity.",
+      "guard_notes": "Keep source-specific connection/map records out of committee clusters unless a later review proves the record is purely an agency alias."
+    },
+    {
+      "decision_id": "identity223-mnr-nyct-006",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-124881-mnr",
+        "entity_mta-metro-north-2015-webster-map"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_metro-north",
+          "entity_metro-north-commuter-railroad",
+          "entity_metro-north-railroad",
+          "entity_metro-north-railroad-mnr",
+          "entity_mnr",
+          "entity_mta-metro-north-railroad"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-124881-mnr and entity_mta-metro-north-2015-webster-map share identity key entity_metro-north.",
+          "Global entity records entity_meeting-doc-124881-mnr and entity_mta-metro-north-2015-webster-map share identity key entity_metro-north-railroad.",
+          "Global entity records entity_meeting-doc-124881-mnr and entity_mta-metro-north-2015-webster-map share identity key entity_mta-metro-north-railroad."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-124881-mnr",
+          "display_name": "MTA Metro-North Railroad",
+          "record_identity": "agency",
+          "evidence_ref": "meeting_doc_124881#p004_c0011",
+          "quote": "Metro-North Commuter Railroad Company"
+        },
+        {
+          "record_id": "entity_mta-metro-north-2015-webster-map",
+          "display_name": "MTA Metro-North Connection",
+          "record_identity": "agency-or-connection reference",
+          "evidence_ref": "2015_07_webster_sbs_service_plan#p001_c0010",
+          "quote": "Metro-North Connection"
+        }
+      ],
+      "reason": "The first record is the Metro-North Railroad agency; the second is a 2015 Webster source-specific Metro-North connection/reference record. The overlap is likely broad agency-key contamination rather than exact identity.",
+      "guard_notes": "Prefer DNM until the connection/map record is manually reclassified or explicitly proven to be the agency record."
+    },
+    {
+      "decision_id": "identity223-mnr-nyct-007",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-124881-mnr",
+        "entity_mta-entity-update-2025"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_metro-north-railroad",
+          "entity_metro-north-railroad-mnr"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-124881-mnr and entity_mta-entity-update-2025 share identity key entity_metro-north-railroad.",
+          "Global entity records entity_meeting-doc-124881-mnr and entity_mta-entity-update-2025 share identity key entity_metro-north-railroad-mnr."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-124881-mnr",
+          "display_name": "MTA Metro-North Railroad",
+          "record_identity": "agency",
+          "evidence_ref": "meeting_doc_124881#p004_c0011",
+          "quote": "Metro-North Commuter Railroad Company"
+        },
+        {
+          "record_id": "entity_mta-entity-update-2025",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "parent transit authority",
+          "evidence_ref": "better_buses_action_plan_2019#p002_c0004",
+          "quote": "Buses are a critical transportation option for New Yorkers..."
+        }
+      ],
+      "reason": "Metro-North Railroad is an operating agency/subsidiary context within MTA; it is not the parent Metropolitan Transportation Authority record.",
+      "guard_notes": "Keep subsidiary/operator agencies separate from parent-MTA records; use relations for organizational hierarchy."
+    },
+    {
+      "decision_id": "identity223-mnr-nyct-008",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-128981-nyct",
+        "entity_mta-bridges-and-tunnels"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_mta"
+        ],
+        "message": "Global entity records entity_meeting-doc-128981-nyct and entity_mta-bridges-and-tunnels share identity key entity_mta."
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-128981-nyct",
+          "display_name": "New York City Transit Authority (NYCT)",
+          "record_identity": "agency",
+          "evidence_ref": "meeting_doc_128981#p033_c0004",
+          "quote": "Due to New York City Transit Authority"
+        },
+        {
+          "record_id": "entity_mta-bridges-and-tunnels",
+          "display_name": "MTA Bridges and Tunnels",
+          "record_identity": "sibling agency",
+          "evidence_ref": "201103_34th_cac_summary#p003_c0001",
+          "quote": "MTA Bridges and Tunnels"
+        }
+      ],
+      "reason": "NYCT and MTA Bridges and Tunnels are distinct MTA agencies; the shared 'entity_mta' key is a parent acronym collision.",
+      "guard_notes": "Do not merge sibling agencies on the bare MTA acronym."
+    },
+    {
+      "decision_id": "identity223-mnr-nyct-009",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-128981-nyct",
+        "entity_mta-metropolitan-transportation-authority"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_mta"
+        ],
+        "message": "Global entity records entity_meeting-doc-128981-nyct and entity_mta-metropolitan-transportation-authority share identity key entity_mta."
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-128981-nyct",
+          "display_name": "New York City Transit Authority (NYCT)",
+          "record_identity": "agency",
+          "evidence_ref": "meeting_doc_128981#p033_c0004",
+          "quote": "Due to New York City Transit Authority"
+        },
+        {
+          "record_id": "entity_mta-metropolitan-transportation-authority",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "parent transit authority",
+          "evidence_ref": "meeting_doc_201776#p001_c0001",
+          "quote": "Exhibit Book Finance Committee Meeting"
+        }
+      ],
+      "reason": "NYCT is not the parent Metropolitan Transportation Authority. The shared key is only the broad MTA acronym.",
+      "guard_notes": "Parent MTA and NYCT should remain separate even where documents use MTA as umbrella branding."
+    },
+    {
+      "decision_id": "identity223-mnr-nyct-010",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-128981-nyct",
+        "entity_mta-overall"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_mta"
+        ],
+        "message": "Global entity records entity_meeting-doc-128981-nyct and entity_mta-overall share identity key entity_mta."
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-128981-nyct",
+          "display_name": "New York City Transit Authority (NYCT)",
+          "record_identity": "agency",
+          "evidence_ref": "meeting_doc_128981#p033_c0004",
+          "quote": "Due to New York City Transit Authority"
+        },
+        {
+          "record_id": "entity_mta-overall",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "public benefit corporation",
+          "evidence_ref": "meeting_doc_179691#p003_c0009",
+          "quote": "The Metropolitan Transportation Authority (\"MTA\" or \"MTA Group\") was established under the New York Public Authorities Law"
+        }
+      ],
+      "reason": "NYCT is an operating agency, while entity_mta-overall is the umbrella public benefit corporation.",
+      "guard_notes": "Keep parent/umbrella corporate identity separate from component agency records."
+    },
+    {
+      "decision_id": "identity223-mnr-nyct-011",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-128981-nyct",
+        "entity_mta-real-estate"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_mta"
+        ],
+        "message": "Global entity records entity_meeting-doc-128981-nyct and entity_mta-real-estate share identity key entity_mta."
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-128981-nyct",
+          "display_name": "New York City Transit Authority (NYCT)",
+          "record_identity": "agency",
+          "evidence_ref": "meeting_doc_128981#p033_c0004",
+          "quote": "Due to New York City Transit Authority"
+        },
+        {
+          "record_id": "entity_mta-real-estate",
+          "display_name": "MTA Real Estate",
+          "record_identity": "agency department",
+          "evidence_ref": "meeting_doc_105786#p004_c0012",
+          "quote": "MTA Real Estate will provide an annual report on leasing and construction opportunities"
+        }
+      ],
+      "reason": "NYCT and MTA Real Estate are distinct organizational entities; sharing the umbrella MTA acronym is not identity.",
+      "guard_notes": "Do not merge operating agencies with MTA departments or business units on broad parent acronyms."
+    },
+    {
+      "decision_id": "identity223-mnr-nyct-012",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_mta-bus-company",
+        "entity_mta-nyct"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_mta-bus-woodhaven-workshop2"
+        ],
+        "message": "Global entity records entity_mta-bus-company and entity_mta-nyct share identity key entity_mta-bus-woodhaven-workshop2."
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_mta-bus-company",
+          "display_name": "MTA Bus Company",
+          "record_identity": "transit agency division",
+          "evidence_ref": "behind_schedule_2025#p010_c0003",
+          "quote": "Two divisions within the MTA are responsible for managing these routes. New York City Bus, a division of New York City Transit..."
+        },
+        {
+          "record_id": "entity_mta-nyct",
+          "display_name": "MTA NYCT Reference",
+          "record_identity": "agency",
+          "evidence_ref": "m86_sbs_progress_report_2017#p003_c0003",
+          "quote": "MTA New York City Transit (NYCT)"
+        }
+      ],
+      "reason": "MTA Bus Company and NYCT are separate MTA bus-operating entities/divisions in the evidence. The shared Woodhaven workshop key is source-specific contamination, not exact identity.",
+      "guard_notes": "Keep MTA Bus Company distinct from NYCT/New York City Bus; represent shared bus-network work with project/source relations."
+    }
+  ],
+  "skipped_review_only": [
+    {
+      "candidate": "entity_meeting-doc-102746-committee <> entity_meeting-doc-124881-mnr",
+      "reason": "High-confidence DNM but already prepared as identity222-early-entity-008; not repeated as a durable decision in identity223."
+    },
+    {
+      "candidate": "entity_finance-committee-mta <> entity_meeting-doc-124881-mnr",
+      "reason": "High-confidence DNM but already prepared as identity222-early-entity-007; not repeated as a durable decision in identity223."
+    },
+    {
+      "candidate": "entity_meeting-doc-128981-nyct <> entity_mta-bus-company",
+      "reason": "High-confidence DNM but already prepared as identity222-mta-parent-011; not repeated as a durable decision in identity223."
+    },
+    {
+      "candidate": "entity_department-of-buses <> entity_mta-nyct",
+      "reason": "High-confidence department-vs-agency DNM but already prepared as identity222-early-entity-004."
+    },
+    {
+      "candidate": "entity_mta-metro-north-2015-webster-map -> entity_metro-north-railroad",
+      "reason": "Low confidence as an alias because current evidence labels the source-specific record 'Metro-North Connection'; prepared DNMs around it instead."
+    },
+    {
+      "candidate": "entity_mabstoa <> entity_mta-bus-company",
+      "reason": "Likely distinct related bus-operator/legal-entity cleanup, but outside this MNR/NYCT sibling-agency slice and previously noted as reviewer-only."
+    }
+  ],
+  "blockers": [],
+  "commands_run": [
+    "pwd && rg --files data/review_notes data/canonical data/materialized wiki raw | head -200",
+    "ls -la data/review_notes && rg -n \"identity222|identity221|duplicate_global_identity|alias_merge|do_not_merge|skipped_review_only\" data/review_notes data/materialized data/canonical | head -200",
+    "git status --short",
+    "jq 'keys, {note_id, prepared_count, decision_type_counts, skipped_count:(.skipped_review_only|length), first_decision:.proposed_durable_decisions[0]}' data/review_notes/codex-identity-batch222-mta-parent-prep.json",
+    "jq '{note_id, prepared_count, decision_type_counts, skipped_count:(.skipped_review_only|length), first_decision:.proposed_durable_decisions[0]}' data/review_notes/codex-identity-batch222-early-entity-prep.json",
+    "rg -n \"entity_meeting-doc-102746-committee|entity_meeting-doc-128981-nyct|entity_meeting-doc-124881-mnr|entity_metro-north-railroad|entity_mta-metro-north-2015-webster-map|entity_mta-bus-company|entity_mta-nyct|entity_mta-entity-update-2025|entity_metropolitan-transportation-authority|entity_mta-bridges\" data/identity-review/validation_issues.jsonl data/review_notes/codex-identity-batch22*.json data/canonical/entities.jsonl wiki/entities/*.md | head -400",
+    "jq -r 'select(.code==\"duplicate_global_identity\" and (.message|test(\"entity_meeting-doc-102746-committee|entity_meeting-doc-128981-nyct|entity_meeting-doc-124881-mnr|entity_metro-north-railroad|entity_mta-metro-north-2015-webster-map|entity_mta-bus-company|entity_mta-nyct|entity_mta-entity-update-2025|entity_mta-real-estate|entity_mta-bridges-and-tunnels|entity_nycta|entity_mta-overall|entity_mta-metropolitan\"))) | .message' data/identity-review/validation_issues.jsonl",
+    "jq -r 'select(.record_id|IN(\"entity_meeting-doc-102746-committee\",\"entity_meeting-doc-128981-nyct\",\"entity_meeting-doc-124881-mnr\",\"entity_metro-north-railroad\",\"entity_mta-metro-north-2015-webster-map\",\"entity_mta-bus-company\",\"entity_mta-nyct\",\"entity_mta-entity-update-2025\",\"entity_mta-real-estate\",\"entity_mta-bridges-and-tunnels\",\"entity_nycta\",\"entity_department-of-buses\",\"entity_finance-committee-mta\",\"entity_mta-overall\",\"entity_mta-metropolitan-transportation-authority\",\"entity_mta-metropolitan-transportation-authority-2025\",\"entity_meeting-doc-64066-mta\")) | {record_id,display_name,source_ids,identity_keys,record_aliases, payload:.payload_identity_fields, evidence_samples:(.evidence_samples[0:4]|map({evidence_id,source_quote,snippet}))}' data/identity-review/records.jsonl",
+    "jq -r 'select(.record_id|IN(\"entity_meeting-doc-102746-committee\",\"entity_meeting-doc-128981-nyct\",\"entity_meeting-doc-124881-mnr\",\"entity_metro-north-railroad\",\"entity_mta-metro-north-2015-webster-map\",\"entity_mta-bus-company\",\"entity_mta-nyct\",\"entity_mta-entity-update-2025\",\"entity_mta-real-estate\",\"entity_mta-bridges-and-tunnels\",\"entity_nycta\",\"entity_department-of-buses\",\"entity_finance-committee-mta\",\"entity_mta-overall\",\"entity_mta-metropolitan-transportation-authority\",\"entity_mta-metropolitan-transportation-authority-2025\",\"entity_meeting-doc-64066-mta\")) | {record_id,kind,display_name,source_ids,aliases,evidence:(.evidence[0:3])}' data/canonical/entities.jsonl",
+    "jq -r 'select(.record_id|IN(\"entity_meeting-doc-102746-committee\",\"entity_meeting-doc-124881-mnr\",\"entity_metro-north-railroad\",\"entity_mta-metro-north-2015-webster-map\",\"entity_meeting-doc-128981-nyct\",\"entity_mta-nyct\",\"entity_mta-bus-company\",\"entity_mta-bridges-and-tunnels\",\"entity_meeting-doc-143306-mta-hq\",\"entity_meeting-doc-154986-aar\",\"entity_meeting-doc-64066-mta\",\"entity_meeting-doc-ddcr\",\"entity_mta-metropolitan-transportation-authority\",\"entity_mta-overall\",\"entity_mta-real-estate\")) | [.record_id,.display_name,(.payload_identity_fields.entity_type // .payload_identity_fields.description // \"\"),(.evidence_samples[0].evidence_id // \"\"),(.evidence_samples[0].source_quote // .evidence_samples[0].snippet // \"\")] | @tsv' data/identity-review/records.jsonl",
+    "jq -r '.proposed_durable_decisions[] | select((.record_ids // [ .alias, .target ]) as $ids | ($ids|index(\"entity_meeting-doc-128981-nyct\")) or ($ids|index(\"entity_meeting-doc-124881-mnr\")) or ($ids|index(\"entity_meeting-doc-102746-committee\")) or ($ids|index(\"entity_mta-bus-company\")) or ($ids|index(\"entity_mta-nyct\"))) | [.decision_id,.decision_type,((.record_ids // [ .alias, .target ])|join(\" <> \"))] | @tsv' data/review_notes/codex-identity-batch222-*.json data/review_notes/codex-identity-batch221-*.json",
+    "jq '{note_id, prepared_count, actual_decisions:(.proposed_durable_decisions|length), decision_type_counts, skipped_count:(.skipped_review_only|length), blockers}' data/review_notes/codex-identity-batch223-mnr-nyct-prep.json",
+    "git status --short data/review_notes/codex-identity-batch223-mnr-nyct-prep.json"
+  ],
+  "commands_not_run": [
+    "provider-backed commands",
+    "bun run materialize",
+    "bun run validate",
+    "export commands",
+    "canonical/generated output edits",
+    "identity override edits",
+    "wiki edits",
+    "LOG.md edits"
+  ]
+}

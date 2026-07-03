@@ -1,0 +1,322 @@
+{
+  "note_id": "codex-relation-rule-or-data-next15-prep",
+  "created_at": "2026-06-22T23:35:08Z",
+  "author": "codex",
+  "scope": {
+    "question": "After identity070 and relation038, and assuming next14's implemented_by route->entity bucket is used for batch039, identify the next best independent data-cleanup bucket or scoped validator rule patch for the remaining relation endpoint-shape backlog.",
+    "write_scope_observed": "Created exactly data/review_notes/codex-relation-rule-or-data-next15-prep.json.",
+    "read_only_lane": true,
+    "exclusions": [
+      "relation cleanup prep/applied batches017-038 original relation submissions/records",
+      "missing-target repair submissions/retired originals already absent from the current DB issue set",
+      "likely batch039 candidates from next14: relation_meeting-doc-179556-mnrr-implements-fare-increase and relation_nyc-dot-mta-launched-bx12-sbs"
+    ],
+    "current_checkpoint_context": "LOG.md records relation038 applied and checkpointed with duplicate_global_identity=1545 and unexpected_relation_endpoint_shape=36. Excluding the two next14 implemented_by route->entity records simulates the after-batch039 backlog at 34 rows."
+  },
+  "remaining_bucket_counts_after_exclusions": {
+    "unexpected_relation_endpoint_shape_total_after_relation038": 36,
+    "likely_batch039_excluded_count": 2,
+    "unexpected_relation_endpoint_shape_total_after_likely_batch039": 34,
+    "likely_batch039_record_ids": [
+      "relation_meeting-doc-179556-mnrr-implements-fare-increase",
+      "relation_nyc-dot-mta-launched-bx12-sbs"
+    ],
+    "buckets": [
+      {
+        "bucket": "has_claim claim->claim",
+        "count": 1
+      },
+      {
+        "bucket": "has_claim treatment_component->claim",
+        "count": 1
+      },
+      {
+        "bucket": "has_timeline_event entity->metric_claim",
+        "count": 1
+      },
+      {
+        "bucket": "has_timeline_event event->entity",
+        "count": 1
+      },
+      {
+        "bucket": "has_timeline_event event->source",
+        "count": 1
+      },
+      {
+        "bucket": "has_timeline_event project->entity",
+        "count": 1
+      },
+      {
+        "bucket": "has_timeline_event source->entity",
+        "count": 1
+      },
+      {
+        "bucket": "has_treatment claim->treatment_component",
+        "count": 1
+      },
+      {
+        "bucket": "has_treatment entity->metric_claim",
+        "count": 1
+      },
+      {
+        "bucket": "has_treatment event->treatment_component",
+        "count": 1
+      },
+      {
+        "bucket": "has_treatment route->treatment_component",
+        "count": 1
+      },
+      {
+        "bucket": "implemented_by corridor->entity",
+        "count": 1
+      },
+      {
+        "bucket": "implemented_by entity->entity",
+        "count": 1
+      },
+      {
+        "bucket": "implemented_by event->entity",
+        "count": 1
+      },
+      {
+        "bucket": "implemented_by source->entity",
+        "count": 1
+      },
+      {
+        "bucket": "implemented_by treatment_component->entity",
+        "count": 1
+      },
+      {
+        "bucket": "operated_by corridor->entity",
+        "count": 1
+      },
+      {
+        "bucket": "operated_by entity->entity",
+        "count": 1
+      },
+      {
+        "bucket": "operated_by entity->event",
+        "count": 1
+      },
+      {
+        "bucket": "operated_by treatment_component->entity",
+        "count": 1
+      },
+      {
+        "bucket": "operates_on_corridor entity->corridor",
+        "count": 1
+      },
+      {
+        "bucket": "operates_on_corridor project->entity",
+        "count": 1
+      },
+      {
+        "bucket": "owned_by corridor->entity",
+        "count": 1
+      },
+      {
+        "bucket": "owned_by event->entity",
+        "count": 1
+      },
+      {
+        "bucket": "owned_by source->entity",
+        "count": 1
+      },
+      {
+        "bucket": "part_of_program project->claim",
+        "count": 1
+      },
+      {
+        "bucket": "published_by claim->entity",
+        "count": 1
+      },
+      {
+        "bucket": "published_by entity->source",
+        "count": 1
+      },
+      {
+        "bucket": "published_by event->entity",
+        "count": 1
+      },
+      {
+        "bucket": "published_by metric_claim->source",
+        "count": 1
+      },
+      {
+        "bucket": "related_route project->project",
+        "count": 1
+      },
+      {
+        "bucket": "related_route project->route",
+        "count": 1
+      },
+      {
+        "bucket": "serves_route project->entity",
+        "count": 1
+      },
+      {
+        "bucket": "serves_route project->project",
+        "count": 1
+      }
+    ],
+    "tie_note": "After excluding likely batch039, every remaining exact endpoint-shape bucket is a singleton. The recommendation therefore prioritizes semantic rule quality and independence rather than count."
+  },
+  "recommendation": {
+    "type": "validator_rule_patch",
+    "bucket": "owned_by corridor->entity",
+    "confidence": "medium_high",
+    "recommended_patch": "Add corridor to RELATION_ENDPOINT_SHAPES.owned_by.subject and add a focused relationEndpointShapeIssue test for owned_by corridor->entity.",
+    "reason": "The selected row is a clean infrastructure-ownership fact: the source says the MTA Long Island Rail Road owns the Lower Montauk Branch. The subject is already modeled as a corridor, the object is an entity, and owned_by is the exact relation family. Retiring or retargeting the row would lose a valid corridor ownership assertion, while a scoped rule patch would preserve a reusable ontology shape without weakening unrelated relation boundaries.",
+    "why_rule_change": "Current owned_by accepts entity|project -> entity. Corridors can represent rail branches, busways, or other right-of-way/corridor assets with source-backed owners. Allowing corridor -> entity is narrower than admitting event/source/claim/treatment subjects and matches the existing object constraint.",
+    "why_not_data_cleanup": "This row does not look like a malformed endpoint selection. The evidence explicitly names the Branch and says LIRR owns it. There is no more precise current relation kind for corridor ownership, and converting the corridor to an entity would blur the corridor record's spatial/route-infrastructure role.",
+    "why_not_broader_rule_change": "Do not use this patch to admit owned_by event->entity or owned_by source->entity. Those remaining singleton buckets look like publication/stewardship or event-context mistakes, not ownership of durable infrastructure assets."
+  },
+  "representative_records": [
+    {
+      "record_id": "relation_corridor-owned-by-lirr",
+      "source_id": "lower_montauk_final_report_jan2018",
+      "submission_ids": [
+        "sub_73e7661f63536ee1"
+      ],
+      "malformed_shape": "owned_by corridor->entity",
+      "relation_kind": "owned_by",
+      "subject": {
+        "record_id": "corridor_lower-montauk-branch",
+        "record_kind": "corridor",
+        "display_name": "Lower Montauk Branch",
+        "local_observation_id": "corridor_lower_montauk_branch"
+      },
+      "object": {
+        "record_id": "entity_annual-report-2021-lirr",
+        "record_kind": "entity",
+        "display_name": "MTA Long Island Rail Road",
+        "local_observation_id": "entity_annual_report_2021_lirr"
+      },
+      "evidence": [
+        {
+          "source_id": "lower_montauk_final_report_jan2018",
+          "evidence_id": "lower_montauk_final_report_jan2018#p003_c0007",
+          "source_path": "raw/sources/lower_montauk_final_report_jan2018/blocks.jsonl",
+          "page_number": 3,
+          "block_id": "p003_c0007",
+          "text_sha256": "sha256:b13a98286accd2c069dede49e7a907acb94232b1b52bd066305e9b108a01473a",
+          "quote": "the MTA Long Island Rail Road (LIRR - which owns the Branch)"
+        }
+      ],
+      "triage_read": "Valid corridor infrastructure ownership; keep the relation and adjust the endpoint table."
+    },
+    {
+      "record_id": "relation_corridor-operated-by-nya",
+      "source_id": "lower_montauk_final_report_jan2018",
+      "malformed_shape": "operated_by corridor->entity",
+      "relation_kind": "operated_by",
+      "evidence": [
+        {
+          "source_id": "lower_montauk_final_report_jan2018",
+          "evidence_id": "lower_montauk_final_report_jan2018#p004_c0004",
+          "page_number": 4,
+          "block_id": "p004_c0004",
+          "quote": "the line has subsequently been leased out to the New York and Atlantic (NY&A) Railway"
+        },
+        {
+          "source_id": "lower_montauk_final_report_jan2018",
+          "evidence_id": "lower_montauk_final_report_jan2018#p026_c0003",
+          "page_number": 26,
+          "block_id": "p026_c0003",
+          "quote": "The Branch currently only serves freight trains operated by the New York and Atlantic Railway."
+        }
+      ],
+      "triage_read": "A plausible later rule-patch candidate for operated_by corridor->entity, but less direct than owned_by because the source language can also be read as freight trains/service operated by NY&A rather than corridor operation."
+    },
+    {
+      "record_id": "relation_bx36-able-treatment",
+      "source_id": "meeting_doc_113986",
+      "malformed_shape": "has_treatment route->treatment_component",
+      "relation_kind": "has_treatment",
+      "evidence": [
+        {
+          "source_id": "meeting_doc_113986",
+          "evidence_id": "meeting_doc_113986#p014_c0011",
+          "page_number": 14,
+          "block_id": "p014_c0011",
+          "quote": "we activate enforcement on the Bx36 route"
+        }
+      ],
+      "triage_read": "Another plausible rule/data decision, but route-level treatment ownership overlaps with project/corridor treatment modeling and should be examined separately."
+    }
+  ],
+  "simulated_impact": {
+    "baseline_after_relation038": 36,
+    "after_likely_batch039_data_cleanup": 34,
+    "selected_rule_patch_rows_cleared": 1,
+    "expected_remaining_after_patch": 33,
+    "percent_of_after_batch039_backlog": 2.94,
+    "durable_benefit": "Prevents future source-backed corridor ownership rows from being flagged while leaving noisier owned_by event/source shapes invalid."
+  },
+  "validator_probe_summary": {
+    "owned_by corridor->entity": "currently rejected: Relation kind owned_by expects entity|project -> entity, got corridor -> entity.",
+    "owned_by project->entity": "accepted",
+    "owned_by entity->entity": "accepted",
+    "operated_by corridor->entity": "currently rejected; possible future triage, not part of this recommendation",
+    "has_treatment route->treatment_component": "currently rejected; possible future triage, not part of this recommendation"
+  },
+  "command_evidence": [
+    {
+      "command": "rg -n \"unexpected_relation_endpoint_shape|relation038|identity070|batch039|implemented_by route\" LOG.md data/review_notes data/submissions data/submission-overrides/retired.json -g '*.md' -g '*.json' -g '*.jsonl'",
+      "allowed_mode": "read-only rg inspection",
+      "output_excerpt": "LOG.md records identity070 applied, then relation038 applied and checkpointed with duplicate_global_identity=1545 and unexpected_relation_endpoint_shape=36; next action notes the remaining implemented_by route -> entity bucket."
+    },
+    {
+      "command": "sqlite3 -json data/canonical.db '<endpoint-shape inventory query over relations joined to subject/object records, excluding next14 likely batch039 record ids>'",
+      "allowed_mode": "read-only sqlite inspection",
+      "output_excerpt": "Returned 34 rows after excluding relation_meeting-doc-179556-mnrr-implements-fare-increase and relation_nyc-dot-mta-launched-bx12-sbs. All remaining exact buckets are count 1; bucket owned_by corridor->entity has count 1."
+    },
+    {
+      "command": "sqlite3 -json data/canonical.db '<selected relation detail query for relation_corridor-owned-by-lirr>'",
+      "allowed_mode": "read-only sqlite inspection",
+      "output_excerpt": "Confirmed relation_corridor-owned-by-lirr is owned_by corridor_lower-montauk-branch -> entity_annual-report-2021-lirr with submission sub_73e7661f63536ee1."
+    },
+    {
+      "command": "sqlite3 -json data/canonical.db '<evidence query for relation_corridor-owned-by-lirr>'",
+      "allowed_mode": "read-only sqlite inspection",
+      "output_excerpt": "Evidence ref is lower_montauk_final_report_jan2018#p003_c0007 on page 3."
+    },
+    {
+      "command": "rg -n 'owned|operated|Long Island Rail Road|New York and Atlantic|Lower Montauk' raw/sources/lower_montauk_final_report_jan2018/blocks.jsonl | head -60",
+      "allowed_mode": "read-only rg inspection",
+      "output_excerpt": "Block p003_c0007 says LIRR owns the Branch; block p004_c0004 says the line was leased to NY&A Railway; block p026_c0003 says the Branch currently serves freight trains operated by NY&A."
+    },
+    {
+      "command": "bun --eval 'import { relationEndpointShapeIssue } from \"./packages/pipeline/src/records/relations.ts\"; ...'",
+      "allowed_mode": "read-only relationEndpointShapeIssue probe",
+      "output_excerpt": "owned_by corridor->entity is currently rejected; owned_by project->entity and owned_by entity->entity are accepted."
+    },
+    {
+      "command": "sqlite3 data/canonical.db '.schema records' && sqlite3 data/canonical.db '.schema relations'",
+      "allowed_mode": "read-only sqlite inspection",
+      "output_excerpt": "Confirmed relation endpoint data lives in the relations table in the current SQLite store; inventory used relation columns joined to records rather than payload-only relation fields."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "allowed_mode": "local clock read",
+      "output": "2026-06-22T23:35:08Z"
+    }
+  ],
+  "commands_intentionally_not_run": [
+    "canonicalize",
+    "campaign dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "materialize",
+    "export-jsonl",
+    "full validate CLI",
+    "DB repair/publish",
+    "any command with --profile or provider-backed model access",
+    "validator code edits",
+    "canonical JSONL/data/wiki/submission/retired/LOG/manifest edits"
+  ],
+  "blockers": []
+}

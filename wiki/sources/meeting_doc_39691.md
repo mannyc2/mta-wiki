@@ -1,0 +1,2664 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-39691"
+record_kind: "source"
+display_name: "Joint MNR and LIRR Committee Meeting Book - May 2021"
+source_id: "meeting_doc_39691"
+source_ids:
+  - "meeting_doc_39691"
+local_observation_id: "source_meeting_doc_39691"
+local_observation_ids:
+  - "source_meeting_doc_39691"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T23:22:48.847Z"
+submission_ids:
+  - "sub_70585cbb9c8c8c67"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting book"
+  date: "May 2021"
+  date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2021-05"
+    precision: "month"
+    raw_text: "May 2021"
+  date_text: "May 2021"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2021-05"
+    precision: "month"
+    raw_text: "May 2021"
+  publication_date: "5/26/2021"
+  publication_date_normalized:
+    confidence: "unparsed"
+    precision: "unknown"
+    raw_text: "5/26/2021"
+  published_date_normalized: "2021-05"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "Joint Long Island and Metro-North Committees Meeting"
+evidence_refs:
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_39691#p001_c0004"
+    page_number: 1
+    role: "document_date"
+    source_id: "meeting_doc_39691"
+    source_path: "raw/sources/meeting_doc_39691/blocks.jsonl"
+    text_sha256: "sha256:35ca9c66bd57284cfe24e4b074e9c9c232908b41a6082e3b990278841daf5c2c"
+    text_source: "raw_text"
+---
+
+# Joint MNR and LIRR Committee Meeting Book
+
+source_id: meeting_doc_39691
+citation: cite block ids exactly as shown in square brackets
+document: 1579 block(s)
+
+## Page 1
+
+> [p001_c0001] The logo for the Metropolitan Transportation Authority (MTA) is a black circle with the letters "MTA" in white, bold, sans-serif font.
+[p001_c0002] Metropolitan Transportation Authority
+### [p001_c0003] Joint Long Island and Metro-North Committees Meeting
+[p001_c0004] May 2021
+### [p001_c0005] Members
+[p001_c0006] K. Law (Co-Chair) R. Herman (Co-Chair) F. Borelli N. Brown M. Fleischer R. Glucksmann R. Linn D. Mack V. Tessitore N. Zuckerman
+
+## Page 2
+
+### [p002_c0001] Joint Metro-North and Long Island Committees Meeting
+[p002_c0002] 2 Broadway 20th Floor Board Room New York, NY Wednesday, 5/26/2021 10:00 AM - 5:00 PM ET
+### [p002_c0003] 1. Public Comments Period
+### [p002_c0004] 2. Summary of Actions
+[p002_c0005] LIRR Summary of Actions - (None)
+[p002_c0006] MNR Summary of Actions (None)
+[p002_c0007] MTA C&D Summary of Actions - (None)
+### [p002_c0008] 3. Approval of Minutes - April 21, 2021
+[p002_c0009] Minutes - Page 5
+### [p002_c0010] 4. 2021 Work Plans
+### [p002_c0011] LIRR 2021 Work Plan
+[p002_c0012] LIRR 2021 Work Plan - Page 6
+### [p002_c0013] MNR 2021 Work Plan
+[p002_c0014] MNR Work Plan - Page 11
+### [p002_c0015] 5. AGENCY PRESIDENTS'/CHIEF'S REPORTS
+### [p002_c0016] LIRR Report
+- [p002_c0017] • LIRR Safety Report
+[p002_c0018] LIRR Safety Report - Page 17
+### [p002_c0019] MNR Report
+- [p002_c0020] • MNR Safety Report
+[p002_c0021] MNR Safety Report - Page 20
+### [p002_c0022] MTA C&D Report (None)
+### [p002_c0023] MTA Police Report
+[p002_c0024] MTA Police Report - Page 23
+### [p002_c0025] 6. AGENCY INFORMATION ITEMS
+### [p002_c0026] Joint Information Items
+- [p002_c0027] • LIRR/MNR PTC Implementation Update
+[p002_c0028] LIRR/MNR PTC Implementation Update - Page 32
+### [p002_c0029] 7. AGENCY INFORMATION ITEMS
+
+## Page 3
+
+### [p003_c0001] LIRR Information Items
+- [p003_c0002] • June Timetable Change & Trackwork Programs June Timetable Change & Trackwork Programs - Page 38 • Diversity & EEO Report - 1st Quarter 2021 Diversity & EEO Report - 1st Quarter 2021 - Page 43
+### [p003_c0003] MNR Information Items
+- [p003_c0004] • Track Program Quarterly Update Track Program Quarterly Update - Page 59 • Diversity & EEO Report - 1st Quarter 2021 Diversity & EEO Report - 1st Quarter 2021 - Page 72
+### [p003_c0005] 8. PROCUREMENTS
+[p003_c0006] MNR Procurements (None)
+[p003_c0007] LIRR Procurements - (None)
+[p003_c0008] MTA C&D Procurements - (None)
+### [p003_c0009] 9. AGENCY REPORTS ON OPERATIONS, FINANCE, RIDERSHIP AND CAPITAL PROGRAM
+### [p003_c0010] LIRR Performance Summaries
+- [p003_c0011] • LIRR Operations Report LIRR Operations Report - Page 88 • LIRR Performance Metrics Report LIRR Performance Metrics Report - Page 98 • LIRR Finance Report LIRR Finance Report - Page 104 • LIRR Ridership Report LIRR Ridership Report - Page 126 • LIRR Capital Program Report LIRR Capital Program Report - Page 134
+### [p003_c0012] MNR Reports
+- [p003_c0013] • MNR Operations Report MNR Operations Report - Page 138 • MNR Performance Metrics Report MNR Performance Metrics Report - Page 146 • MNR Finance Report MNR Finance Report - Page 151 • MNR Ridership Report
+
+## Page 4
+
+[p004_c0001] MNR Ridership Report - Page 172
+### [p004_c0002] • MNR Capital Program Report
+[p004_c0003] MNR Capital Program Report - Page 183
+
+## Page 5
+
+### [p005_c0001] Minutes of the Joint MNR/LIRR Committee Meeting
+[p005_c0002] April 21, 2021
+[p005_c0003] 2 Broadway, 20th Floor Board Room
+[p005_c0004] New York, NY 10004
+[p005_c0005] Because of the ongoing COVID-19 public health crisis, the MTA Chairman convened a one-day, virtual Board and Committee meeting session on April 21, 2021, which included the following committees:
+- [p005_c0006] • Long Island Rail Road and Metro-North Railroad; • New York City Transit; • MTA Bridges and Tunnels; • Finance; • Capital Program Oversight; • Safety
+[p005_c0007] To see a summary of the meeting and the actions taken by the Joint MNR/LIRR Committee, please refer to the April 21, 2021 Board minutes in the April Board Book available here on the Board materials website: https://new.mta.info/transparency/board-and-committee-meetings/April-2021
+[p005_c0008] _Master Page # 5 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 6
+
+### [p006_c0001] Metropolitan Transportation Authority
+### [p006_c0002] Long Island Rail Road Committee Work Plan
+### [p006_c0003] I. RECURRING AGENDA ITEMS
+[p006_c0004]
+
+```text
+Responsibility Approval of Minutes Committee Chair & Members 2021 Committee Work Plan Committee Chair & Members Agency President's/Chief's Reports President/Senior Staff Safety Report Chief Safety Officer MTA Capital Construction Report MTA Capital Construction MTA Police Report MTA Police Information Items (if any) Action Items (if any) Procurements Procurement & Logistics Performance Summaries President/Senior Staff Status of Operations Sr. VP – Operations Performance Metrics Report President/Senior Staff Financial/Ridership Report VP & CFO Capital Program Report SVP - Engineering
+```
+### [p006_c0005] II. SPECIFIC AGENDA ITEMS
+### [p006_c0006] May 2021
+[p006_c0007]
+
+```text
+June Timetable Change & Trackwork Programs Service Planning Diversity/EOO Report – 1 st Q 2021 Administration/Diversity PTC Status Report President
+```
+### [p006_c0008] June 2021
+[p006_c0009]
+
+```text
+Track Work Programs Service Planning
+```
+### [p006_c0010] July 2021
+[p006_c0011]
+
+```text
+September Timetable Change & Trackwork Programs Service Planning
+```
+### [p006_c0012] September 2021
+[p006_c0013]
+
+```text
+2021 Preliminary Budget (Public Comment) 2021 Mid-Year Forecast Management & Budget Fall Trackwork Programs Service Planning Diversity/EOO Report – 2 nd Quarter 2021 Administration/Diversity
+```
+### [p006_c0014] October 2021
+[p006_c0015]
+
+```text
+2021 Preliminary Budget (Public Comment) LIRR/MNR PTC Project Update President November Timetable Change & Trackwork Programs Service Planning
+```
+### [p006_c0016] November 2021
+[p006_c0017]
+
+```text
+East Side Access Support Projects Update President/Sr. Staff Year-End Trackwork Programs Service Planning
+```
+[p006_c0018] _Master Page # 6 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 7
+
+### [p007_c0001] December 2021
+[p007_c0002] 2022 Final Proposed Budget 2022 Proposed Committee Work Plan Diversity/EO Report – 3 rd Q 2021 Winter Trackwork Program Review of Committee Charter
+[p007_c0003] Management & Budget Committee Chair & Members Administration/Diversity Service Planning Committee Chair & Members
+### [p007_c0004] January 2022
+[p007_c0005] Winter Trackwork Programs & Schedule Adjustments      Service Planning
+### [p007_c0006] February 2022
+[p007_c0007] Adopted Budget/Financial Plan 2022 2021 Annual Operating Results Diversity/EO Report – 4 th Q 2021 March Timetable and Trackwork Programs Management & Budget Operations Administration/Diversity Service Planning
+### [p007_c0008] March 2022
+[p007_c0009] Annual Elevator/Escalator Report Spring Trackwork Programs Engineering Service Planning
+### [p007_c0010] April 2022
+[p007_c0011] Final Review of 2021 Operating Budget Results 2021 Annual Ridership Report Spring Trackwork Programs Management & Budget Finance/Marketing Service Planning
+### [p007_c0012] LONG ISLAND RAIL ROAD COMMITTEE WORK PLAN
+### [p007_c0013] DETAILED SUMMARY
+### [p007_c0014] I. RECURRING AGENDA ITEMS
+### [p007_c0015] Approval of Minutes
+[p007_c0016] The Committee Chair will request a motion to approve the minutes of the prior month's meeting.
+### [p007_c0017] 2021 Work Plan
+[p007_c0018] The Work Plan will list, by month, the topics scheduled for review. The Committee will be advised if any changes have been made to the plan.
+### [p007_c0019] President's Report
+[p007_c0020] A Monthly report will be provided highlighting major accomplishments and progress on key initiatives and performance indicators.
+### [p007_c0021] Safety Report
+[p007_c0022] A monthly report will be given highlighting key safety performance statistics and indicators
+### [p007_c0023] Capital Construction Report
+[p007_c0024] A monthly project update report will be provided for the month reported.
+### [p007_c0025] Police Report
+[p007_c0026] MTA Police will highlight the significant police activities incurred during the month reported.
+[p007_c0027] _Master Page # 7 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 8
+
+### [p008_c0001] Action Items (if any)
+[p008_c0002] Staff summary documents presented to the Board for approval of items affecting business standards and practices.
+### [p008_c0003] Information Items (if any)
+[p008_c0004] Materials presented to the Committee for review pertaining to certain agency initiatives and functions.
+### [p008_c0005] Procurements
+[p008_c0006] List of procurement action items requiring Board approval and items for Committee and Board information. The Non-Competitive items will be first, followed by the Competitive items and then the Ratifications. The list will include items that need a 2/3 vote of the Board for approval.
+### [p008_c0007] Police Activity Report
+[p008_c0008] MTA Police will highlight the significant police activities incurred during the month reported.
+### [p008_c0009] PERFORMANCE SUMMARIES
+### [p008_c0010] Operations Report
+[p008_c0011] A monthly report will be given highlighting key operating performance statistics and indicators.
+### [p008_c0012] Financial Report
+[p008_c0013] A monthly report will be provided that compares the Railroad's actual financial performance against its budget and/or forecast.
+### [p008_c0014] Ridership Report
+[p008_c0015] A monthly report will be provided that compares actual monthly ticket sales, ridership and revenues against prior year results.
+### [p008_c0016] Capital Program Report
+[p008_c0017] A report will be provided highlighting significant capital program accomplishment in the month reported.
+### [p008_c0018] II. SPECIFIC AGENDA ITEMS
+### [p008_c0019] MAY 2021
+### [p008_c0020] Summer Trackwork Programs
+[p008_c0021] The Committee will be advised of Agency plans to adjust schedules to support construction projects during the summer of 2021.
+### [p008_c0022] Diversity & EEO Report– 1 st Quarter 2021
+[p008_c0023] Quarterly report to the Committee providing data on key EEO and Human Resources indicators relating to LIRR's Equal Employment Opportunity and Diversity efforts, such as composition of the agency's workforce, new hires, and discrimination complaints. In alternating quarters, the report will include additional information on diversity initiatives
+### [p008_c0024] PTC Status Report
+[p008_c0025] A monthly status report will be provided that highlights the accomplishments, schedule, challenges and risk associated with the PTC implementation.
+### [p008_c0026] JUNE 2021
+### [p008_c0027] Track Work Programs
+[p008_c0028] _Master Page # 8 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 9
+
+[p009_c0001] This is to inform the Long Island Committee of the MTA Long Island Rail Road's plans to adjust schedules to support various trackwork programs, Main Line Second Track construction and East Side Access Readiness projects
+### [p009_c0002] JULY 2021
+### [p009_c0003] September Timetable Change & Trackwork Programs
+[p009_c0004] The Committee will be advised of Agency plans to adjust schedules to support construction projects during the fall of 2021.
+### [p009_c0005] SEPTEMBER 2021
+### [p009_c0006] 2021 Preliminary Budget
+[p009_c0007] Public comment will be accepted on the 2020 Budget.
+### [p009_c0008] 2020 Mid-Year Forecast
+[p009_c0009] The agency will provide the 2019 Mid-Year Forecast financial information for revenue and expense by month.
+### [p009_c0010] Diversity & EEO Report– 2 nd Quarter 2019
+[p009_c0011] Quarterly report to the Committee providing data on key EEO and Human Resources indicators relating to LIRR's Equal Employment Opportunity and Diversity efforts, such as composition of the agency's workforce, new hires, and discrimination complaints. In alternating quarters, the report will include additional information on diversity initiatives.
+### [p009_c0012] OCTOBER 2021
+### [p009_c0013] 2021 Preliminary Budget
+[p009_c0014] Public comment will be accepted on the 2021 Budget.
+### [p009_c0015] Project Update on PTC
+[p009_c0016] The Committee will be briefed on the status of PTC, including activities to date and the current strategy to meet critical milestones identified in the Rail Safety Improvement Act of 2008 and as amended by the "Positive Train Control Enforcement and Implementation Act of 2015". Highlights to include cost of PTC along with operation and implementation risks.
+### [p009_c0017] NOVEMBER 2021
+### [p009_c0018] East Side Access Support Projects Update
+[p009_c0019] The Committee will be briefed on the status of the East Side Access Support Projects.
+### [p009_c0020] Year-End Schedule
+[p009_c0021] The Committee will be informed of Agency's service plans for the Thanksgiving and Christmas/New Year's holiday periods..
+### [p009_c0022] DECEMBER 2021
+### [p009_c0023] Diversity & EEO Report– 3 rd Quarter 2021
+[p009_c0024] Quarterly report to the Committee providing data on key EEO and Human Resources indicators relating to LIRR's Equal Employment Opportunity and Diversity efforts, such as
+[p009_c0025] composition of the agency's workforce, new hires, and discrimination complaints. In alternating quarters, the report will include additional information on diversity initiatives.
+### [p009_c0026] 2022 Final Proposed Budget
+[p009_c0027] The Committee will recommend action to the Board on the Final Proposed Budget for 2021.
+### [p009_c0028] Proposed 2022 Committee Work Plan
+[p009_c0029] _Master Page # 9 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 10
+
+[p010_c0001] The Committee Chair will present a draft Long Island Rail Road Committee Work Plan for 2019 that will address initiatives to be reported throughout the year.
+### [p010_c0002] Review Committee Charter
+[p010_c0003] Annual review of Long Island Committee Charter for Committee revision/approval.
+### [p010_c0004] JANUARY 2022
+### [p010_c0005] FEBRUARY 2022
+### [p010_c0006] Adopted Budget/Financial Plan 2022
+[p010_c0007] The Agency will present its revised 2022 Financial Plan. These plans will reflect the 2022 Adopted Budget and an updated Financial Plan for 2022 reflecting the out-year impact of any changes incorporated into the 2022 Adopted Budget.
+### [p010_c0008] 2021 Annual Operating Results
+[p010_c0009] A review of the prior year's performance of railroad service will be provided to the Committee.
+### [p010_c0010] Diversity & EEO Report– 4 th Quarter 2021
+[p010_c0011] Quarterly report to the Committee providing data on key EEO and Human Resources indicators relating to LIRR's Equal Employment Opportunity and Diversity efforts, such as composition of the agency's workforce, new hires, and discrimination complaints. In alternating quarters, the report will include additional information on diversity initiatives.
+### [p010_c0012] March Timetable/Spring Trackwork Programs
+[p010_c0013] The Committee will be advised of plans to adjust schedules.
+### [p010_c0014] MARCH 2022
+### [p010_c0015] Annual Elevator/Escalator Report
+[p010_c0016] Annual report to the Committee on system-wide availability for elevators and escalators throughout the system.
+### [p010_c0017] Spring Trackwork Programs
+[p010_c0018] The Committee will be advised of Agency plans to adjust schedules to support construction projects during the Spring of 2022.
+### [p010_c0019] APRIL 2022
+### [p010_c0020] Final Review of 2021 Operating Results
+[p010_c0021] A review of the prior year's budget results and their implications for current and future budget performance will be presented to the Committee.
+### [p010_c0022] 2021 Annual Ridership Report
+[p010_c0023] A report will be presented to the Committee on Agency ridership trends during 2019 based on monthly ticket sales data and the results of train ridership counts conducted by the Agency.
+### [p010_c0024] Spring Trackwork Programs
+[p010_c0025] The Committee will be advised of Agency plans to adjust schedules to support construction projects during the Spring of 2022.
+[p010_c0026] _Master Page # 10 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 11
+
+### [p011_c0001] 2021 Metro-North Railroad Committee Work Plan
+### [p011_c0002] I. RECURRING AGENDA ITEMS
+[p011_c0003] Approval of Minutes 2021 Committee Work Plan President's Report Safety Report MTA Police Report Information Items (if any) Action Items (if any) Procurements Agency Reports Operations Finance Ridership Capital Program
+[p011_c0004] Responsibility Committee Chairs & Members Committee Chairs & Members President/Senior Staff
+[p011_c0005] Senior Staff
+### [p011_c0006] II. SPECIFIC AGENDA ITEMS
+[p011_c0007] May 2021 Track Program Quarterly Update LIRR/MNR PTC Implementation Update Diversity/EEO Report – 1 st Quarter 2021
+[p011_c0008] Responsibility Engineering President Diversity and EEO
+[p011_c0009] June 2021 Progress on Way Ahead Strategic Plan
+[p011_c0010] Strategic Initiatives
+[p011_c0011] July 2021 Grand Central Terminal Retail Development Track Program Quarterly Update
+[p011_c0012] MTA Real Estate Engineering
+[p011_c0013] September 2021 2022 Preliminary Budget (Public Comment) 2021 Mid-Year Forecast Diversity/EEO Report – 2 nd Quarter 2021
+[p011_c0014] Finance Finance Diversity and EEO
+[p011_c0015] October 2021 2022 Preliminary Budget (Public Comment) LIRR/MNR PTC Implementation Update Track Program Quarterly Update
+[p011_c0016] Finance President Engineering
+[p011_c0017] November 2021 Progress on Way Ahead Strategic Plan
+[p011_c0018] Strategic Initiatives
+[p011_c0019] _Master Page # 11 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 12
+
+### [p012_c0001] December 2021
+[p012_c0002] 2022 Final Proposed Budget 2022 Proposed Committee Work Plan Diversity/EEO Report – 3 rd Quarter 2021 Review of Committee Charter
+[p012_c0003] Finance Committee Chairs & Members Diversity and EEO Committee Chair & Members
+### [p012_c0004] January 2022
+[p012_c0005] Approval of 2022 Committee Work Plan Track Program Quarterly Update
+[p012_c0006] Committee Chairs & Members Engineering
+### [p012_c0007] February 2022
+[p012_c0008] Adopted Budget/Financial Plan 2022 2021 Annual Operating Results Diversity/EEO Report – 4 th Quarter 2020
+[p012_c0009] Finance Operations Diversity and EEO
+### [p012_c0010] March 2022
+[p012_c0011] Annual Elevator & Escalator Report
+[p012_c0012] Engineering
+### [p012_c0013] April 2022
+[p012_c0014] Final Review of 2021 Operating Budget Results 2021 Annual Ridership Report
+[p012_c0015] Finance Operations Planning & Analysis
+[p012_c0016] _Master Page # 12 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 13
+
+### [p013_c0001] METRO-NORTH RAILROAD COMMITTEE WORK PLAN
+### [p013_c0002] DETAILED SUMMARY
+### [p013_c0003] I. RECURRING AGENDA ITEMS
+### [p013_c0004] Approval of Minutes
+[p013_c0005] The Committee Chair will request a motion to approve the minutes of the prior month's meeting.
+### [p013_c0006] 2021 Work Plan
+[p013_c0007] The Work Plan will list, by month, the topics scheduled for review. The Committee will be advised if any changes have been made to the plan.
+### [p013_c0008] President's Report
+[p013_c0009] A monthly report will be provided highlighting major accomplishments and progress on key initiatives and performance indicators.
+### [p013_c0010] Safety
+[p013_c0011] A monthly report will be provided highlighting key safety performance statistics and indicators.
+### [p013_c0012] Police Activity Report
+[p013_c0013] MTA Police will highlight the significant police activities incurred during the month reported.
+### [p013_c0014] Information Items (if any)
+[p013_c0015] Materials presented to the Committee for review pertaining to certain agency initiatives and functions.
+### [p013_c0016] Action Items (if any)
+[p013_c0017] Staff summary documents presented to the Board for approval of items affecting business standards and practices.
+### [p013_c0018] Procurements
+[p013_c0019] List of procurement action items requiring Board approval. The Non-Competitive items will be first, followed by the Competitive items and then the Ratifications. The list will include items that need a 2/3 vote of the Board for approval.
+### [p013_c0020] Operations
+[p013_c0021] A monthly report will be provided highlighting key operating and performance statistics and indicators.
+### [p013_c0022] Finance
+[p013_c0023] A monthly report will be provided that compares the Railroad's actual financial performance against its budget and/or forecast both on an accrual and cash basis.
+### [p013_c0024] Ridership
+[p013_c0025] A monthly report will be provided that includes a comparison of actual monthly ticket sales, ridership and revenues with the budget and prior year results.
+### [p013_c0026] Capital Program
+[p013_c0027] A monthly report will be provided highlighting significant capital program accomplishments in the month reported.
+[p013_c0028] _Master Page # 13 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 14
+
+### [p014_c0001] II. SPECIFIC AGENDA ITEMS
+### [p014_c0002] MAY 2021
+### [p014_c0003] Track Program Quarterly Update
+[p014_c0004] A quarterly report will be provided that highlights the progress made on track maintenance work to bring the infrastructure to a state of good repair.
+### [p014_c0005] LIRR/MNR PTC Project Update
+[p014_c0006] The Committee will be briefed on the status of project implementation and close-out following full Positive Train Control functionality for both railroads going into effect in December 2020.
+### [p014_c0007] Diversity & EEO Report– 1 st Quarter 2021
+[p014_c0008] A quarterly report to the Committee providing data on key Equal Employment Opportunity (EEO) and Human Resources indicators relating to MNR's EEO and Diversity efforts, such as composition of the agency's workforce, new hires, and discrimination complaints. In alternating quarters, the report will include additional information on diversity initiatives.
+### [p014_c0009] JUNE 2021
+### [p014_c0010] Progress on Way Ahead Strategic Plan
+[p014_c0011] A biannual report to the Committee on Metro-North's progress in setting the standard for safety, reliability and innovation in the delivery of excellent customer service.
+### [p014_c0012] JULY 2021
+### [p014_c0013] Grand Central Terminal Retail Development
+[p014_c0014] MTA Real Estate will provide an annual report on leasing and construction opportunities and financial and marketing information related to retail development in Grand Central Terminal.
+### [p014_c0015] Track Program Quarterly Update
+[p014_c0016] A quarterly report will be provided that highlights the progress made on track maintenance work to bring the infrastructure to a state of good repair.
+### [p014_c0017] SEPTEMBER 2021
+### [p014_c0018] 2022 Preliminary Budget
+[p014_c0019] Public comment will be accepted on the 2022 Budget.
+### [p014_c0020] 2021 Mid-Year Forecast
+[p014_c0021] The agency will provide the 2021 Mid-Year Forecast financial information for revenue and expense by month.
+### [p014_c0022] Diversity & EEO Report– 2 nd Quarter 2021
+[p014_c0023] A quarterly report to the Committee providing data on key Equal Employment Opportunity (EEO) and Human Resources indicators relating to MNR's EEO and Diversity efforts, such as composition of the agency's workforce, new hires, and discrimination complaints. In alternating quarters, the report will include additional information on diversity initiatives.
+### [p014_c0024] OCTOBER 2021
+### [p014_c0025] 2022 Preliminary Budget
+[p014_c0026] Public comment will be accepted on the 2022 Budget.
+[p014_c0027] _Master Page # 14 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 15
+
+### [p015_c0001] LIRR/MNR PTC Project Update
+[p015_c0002] The Committee will be briefed on the status of project implementation and close-out following full Positive Train Control functionality for both railroads going into effect in December 2020.
+### [p015_c0003] Track Program Quarterly Update
+[p015_c0004] A quarterly report will be provided that highlights the progress made on track maintenance work to bring the infrastructure to a state of good repair.
+### [p015_c0005] NOVEMBER 2021
+### [p015_c0006] Progress on Way Ahead Strategic Plan
+[p015_c0007] A biannual report to the Committee on Metro-North's progress in setting the standard for safety, reliability and innovation in the delivery of excellent customer service.
+### [p015_c0008] DECEMBER 2021
+### [p015_c0009] 2022 Final Proposed Budget
+[p015_c0010] The Committee will recommend action to the Board on the Final Proposed Budget for 2022.
+### [p015_c0011] 2022 Proposed Committee Work Plan
+[p015_c0012] The Committee Chair will present a draft Metro-North Committee Work Plan for 2022 that will address initiatives to be reported throughout the year.
+### [p015_c0013] Diversity & EEO Report– 3 rd Quarter 2021
+[p015_c0014] A quarterly report to the Committee providing data on key Equal Employment Opportunity (EEO) and Human Resources indicators relating to MNR's EEO and Diversity efforts, such as composition of the agency's workforce, new hires, and discrimination complaints. In alternating quarters, the report will include additional information on diversity initiatives.
+### [p015_c0015] Review of Committee Charter
+[p015_c0016] Annual review and approval of the MNR Committee Charter.
+### [p015_c0017] JANUARY 2022
+### [p015_c0018] Approval of 2022 Committee Work Plan
+[p015_c0019] The Committee will approve the Proposed Metro-North Railroad Committee Work Plan for 2022 that will address initiatives to be reported on throughout the year.
+### [p015_c0020] Track Program Quarterly Update
+[p015_c0021] A quarterly report will be provided that highlights the progress made on track maintenance work to bring the infrastructure to a state of good repair.
+### [p015_c0022] FEBRUARY 2022
+### [p015_c0023] Adopted Budget/Financial Plan 2022
+[p015_c0024] The Agency will present its revised 2022 Financial Plan. These plans will reflect the 2022 Adopted Budget and an updated Financial Plan for 2022 reflecting the out-year impact of any changes incorporated into the 2022 Adopted Budget.
+### [p015_c0025] 2021 Annual Operating Results
+[p015_c0026] A review of the prior year's performance of railroad service will be provided to the Committee.
+[p015_c0027] _Master Page # 15 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 16
+
+### [p016_c0001] Diversity & EEO Report– 4 th Quarter 2021
+[p016_c0002] A quarterly report to the Committee providing data on key Equal Employment Opportunity (EEO) and Human Resources indicators relating to MNR's EEO and Diversity efforts, such as composition of the agency's workforce, new hires, and discrimination complaints. In alternating quarters, the report will include additional information on diversity initiatives.
+### [p016_c0003] MARCH 2022
+### [p016_c0004] Annual Elevator/Escalator Report
+[p016_c0005] Annual report to the Committee on system-wide reliability and availability for elevators and escalators throughout the system.
+### [p016_c0006] APRIL 2022
+### [p016_c0007] Final Review of 2021 Operating Results
+[p016_c0008] A review of the prior year's budget results and their implications for current and future budget performance will be presented to the Committee.
+### [p016_c0009] 2021 Annual Ridership Report
+[p016_c0010] A report will be presented to the Committee on Metro-North's ridership trends during 2021 based on monthly ticket sales data and the results of train ridership counts conducted by Metro-North.
+[p016_c0011] _Master Page # 16 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 17
+
+> [p017_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p017_c0002] Long Island Rail Road
+### [p017_c0003] Safety Report Highlights
+> [p017_c0004] Two firefighters in full gear are on a set of train tracks. One is using a long-handled tool to move a stretcher or equipment across the tracks.
+> [p017_c0005] A wide shot of an emergency scene at a train station. Firefighters and other personnel are gathered on the tracks. A red tent in the background is labeled "FBNY FAC UNIT".
+> [p017_c0006] A group of firefighters are gathered around a stretcher on a metal platform. They appear to be preparing to move a person or equipment.
+> [p017_c0007] A white van with "T.R.A.C.K.S." and "OPERATION LIFESAVER" branding. A person in an orange safety vest stands next to the van, which is parked in front of a building.
+> [p017_c0008] A group of five people, including staff in safety vests and face masks, are standing in front of a train station ticket booth. A sign above them indicates "LIRR Platform A, Track 4 Transfer at Jamaica for Points East (except Pt. Washington)".
+> [p017_c0009] A group of approximately ten people, including police officers and staff in safety vests, are posing for a group photo in front of a large window at a station.
+[p017_c0010] _Master Page # 17 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 18
+
+> [p018_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a blue circle.
+### [p018_c0002] Long Island Rail Road
+[p018_c0003] The Long Island Rail Road Emergency Responder Training Division in conjunction with the Corporate Safety Department Fire Marshal Office provides Emergency Responder Training to emergency response organizations including volunteer Fire and Emergency Medical Services (EMS) Departments in Nassau, Suffolk and New York City; the Fire Department of New York (FDNY); and various law enforcement agencies. Training includes track safety, hazard awareness, entry and evacuation procedures, rescue techniques, communication and command, and equipment stabilization. The training is presented in two parts: 1. Classroom session including multimedia presentation and 2. Hands on application conducted in various yards for familiarization. We also work closely with the Nassau and Suffolk County Fire Academies.
+[p018_c0004] Due to COVID, training was reduced in 2020. We resumed training in 2021, conducting 15 classes to date with a total of 270 emergency responders trained. Emergency responders from MTA Police Department, FDNY, Wyandanch Fire Department, West Hempstead Fire Department, and Forest Hills Ambulance have participated in training this year. The program is provided at no cost to the emergency responder community.
+[p018_c0005] On Thursday April 22, 2021 LIRR participated in Mask Force for Earth Day. Corporate Safety partnered with the LIRR Stations Department, MTA Police, and MTA Police Eastern Region Explorers Post #2245 handing out personal size hand sanitizers and face masks at Penn Station, Atlantic Terminal, Hicksville, Ronkonkoma, Port Washington, and Babylon. Our TRACKS Program in partnership with MTA Police continues weekly outreach at stations. Every Friday our Community Relations Specialist and two dedicated TRACKS MTA Police Officers can be found at a station handing out masks and hand sanitizer while engaging in safety conversations with our customers. To date, we visited 14 stations reaching over 2,300 customers.
+[p018_c0006] For the reporting period ending March 2021, the average Reportable Customer Injury Rate was 5.61 injuries per million customers as compared to 2.35 injuries per million customers over the same period 2019-2020. The actual number of customer injuries is down sixty-three percent from 2019 to 2020. Ridership however, is also down by seventy-seven percent, which impacts the rate. Slips, trips, and falls account for most injuries reported.
+[p018_c0007] During this reporting period, the average Reportable Employee Lost Time Injury Rate was 3.34 injuries per 200,000 hours worked as compared to 3.41 injuries per 200,000 hours worked during the same period in 2019-2020. Soft tissue injuries are the greatest type of injury sustained.
+[p018_c0008] Lori Ebbighausen Vice President Corporate Safety
+[p018_c0009] _Master Page # 18 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 19
+
+### [p019_c0001] March Safety Report
+[p019_c0002] Statistical results for the 12-Month period are shown below.
+[p019_c0003]
+
+```text
+Performance Performance Indicator 12-Month Average April 2018 - March 2019 April 2019 - March 2020 April 2020 - March 2021 FRA Reportable Customer Accident Rate per Million Customers 2.01 2.35 5.61 FRA Reportable Employee Lost Time Injury Rate per 200,000 worker hours 2.87 3.41 3.34 2020 2021 Grade Crossing Incidents 1 1 2 0 3 Mainline FRA Reportable Train Derailments 0 0 0 0 Mainline FRA Reportable Train Collisions 0 0 0 0
+```
+[p019_c0004] 1 Per FRA - Any impact between railroad on-track equipment and a highway user at a highway-rail grade crossing. The term "highway user" includes automobiles, buses, trucks, motorcycles, bicycles, farm vehicles, pedestrians, and all other modes of surface transportation motorized and un-motorized.
+[p019_c0005]
+
+```text
+Leading Indicators Focus on Safety Training 2020 2021 March Year to Date March Year to Date First Responders Trained 75 174 4 54 Employee Safety Training Courses 65 239 65 165 Employees Trained 600 2,815 703 1,588 Employee Safety Training Hours 8,658 50,665 10,445 22,963 Customer and Community: March Year to Date March Year to Date Broken Gates 7 24 7 21 MTA Police Details 38 129 98 265 Summons 172 601 316 771 Warnings 63 187 149 374 Arrests 0 0 0 1 Community Education and Outreach 3,009 21,464 3816 8,261 Community Education and Outreach via Social Media 49,435 236,427
+```
+### [p019_c0006] Definitions:
+[p019_c0007] First Responders Trained - The number of first responders trained to assist in crisis events.
+[p019_c0008] Employee Safety Training Courses - The number of distinct safety-related courses offered, including technical courses that have a safety element. Repeats are excluded so that each course is counted only once.
+[p019_c0009] Broken Gates - The number of events at grade crossing locations where a vehicle broke a crossing gate.
+[p019_c0010] MTA Police Detail - The number of details specifically for the purpose of monitoring behavior at grade crossings.
+[p019_c0011] Summons for Grade Crossing Violation and other Infractions - The number of violations issued to a motorist for going around a crossing gate or due to behavior that put the motorist at risk (i.e. cell phone use, etc.).
+[p019_c0012] Warnings - The number of warnings issued to motorists due to behavior that put the motorist at risk (i.e. cell phone use, etc.).
+[p019_c0013] _Master Page # 19 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 20
+
+### [p020_c0001] Metro-North Railroad
+### [p020_c0002] A safety reminder from Metro-North:
+[p020_c0003] Always wear a mask that covers your nose and mouth*
+[p020_c0004] Wash or sanitize your hands several times a day
+[p020_c0005] Keep at least 6 ft. distance from others
+[p020_c0006] If you're sick or have a fever, stay home
+[p020_c0007] Please respect the health of your fellow passengers
+[p020_c0008] *Please follow CDC requirements for mask type and usage.
+[p020_c0009] Your safety is always our first priority.
+[p020_c0010] Metro-North Railroad COVID-19 Safety Reminder Poster
+[p020_c0011] Clyde Armstrong Vice President Office of System Safety
+[p020_c0012] _Master Page # 20 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 21
+
+> [p021_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p021_c0002] Metro-North Railroad
+### [p021_c0003] Safety Highlights:
+[p021_c0004] Metro-North Railroad (MNR) is proactively making every effort to keep our customers and employees safe during the ongoing COVID-19 pandemic. Since the beginning of the pandemic, MNR has implemented the following initiatives:
+- [p021_c0005] • Promote social distancing and good hygiene • Require anyone traveling on MNR trains to wear a face covering • Require employees and contractors to wear face coverings in all MNR facilities • Provide enhanced cleaning at Metro-North stations, on trains and in employee facilities • Established employee temperature screening stations in MNR facilities • Provided on-site COVID-19 Antibody Testing for employees • Distributed personal protective equipment to employees (masks/face coverings, face shields, gloves, personal thermometers, hand sanitizer, etc.) • Offer seasonal flu shots to employees • Offer free onsite Polymerase Chain Reaction (PCR) COVID-19 testing to employees • Launched face covering campaign "We Wear Because We Care" featuring MNR employees sharing why they are committed to wearing face coverings • Frontline MNR employees are being offered the opportunity to receive the COVID-19 vaccination under Phase 1b of distribution.
+[p021_c0006] Metro-North continues to support the MTA Employee Vaccination center in Vanderbilt Hall in Grand Central Terminal to provide an alternative site to accommodate employees interested in receiving the COVID-19 vaccination to combat the virus.
+[p021_c0007] Our 1 st Quarter 2021 Safety Focus Week was held March 8 th -14 th . Throughout this week, employees focused on important safety topics such as COVID-19 Updates, Drug and Alcohol Education, Environmental Spill Reporting and Response, and Tips for Effective Communication.
+[p021_c0008] Updated COVID-19 safety posters are displayed on board trains and at stations as a reminder to promote mask wearing, good health and hygiene to customers when on our trains and platforms.
+[p021_c0009] For the current 12-month period (April 2020 – March 2021) versus the previous 12-month period (April 2019 – March 2020), employee lost time injuries per 200,000 working hours were increased by 4.1%.
+[p021_c0010] For the current 12-month period (April 2020 – March 2021) versus the previous 12-month period (April 2019 – March 2020), customer reportable injury rate per one million customers were increased by 108.9%.
+[p021_c0011] Clyde Armstrong Vice President Office of System Safety
+[p021_c0012] _Master Page # 21 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 22
+
+### [p022_c0001] March 2021 Safety Report
+[p022_c0002]
+
+```text
+Performance Performance Indicator 12-Month Average April 2018 -March 2019 April 2019 -March 2020 April 2020 -March 2021 FRA Reportable Customer Accident Rate per Million Customers 0.99 1.01 2.11 FRA Reportable Employee Lost Time Injury Rate per 200,000 worker hours 2.47 1.94 2.02 2020 2021 March Year to Date March Year to Date Grade Crossing Incidents 1 0 1 0 0 Mainline FRA Reportable Train Derailments 0 0 0 0 Mainline FRA Reportable Train Collisions 0 0 0 0
+```
+[p022_c0003] 1 Per FRA - Any impact between railroad on-track equipment and a highway user at a highway-rail grade crossing. The term "highway user" includes automobiles, buses, trucks, motorcycles, bicycles, farm vehicles, pedestrians, and all other modes of surface transportation motorized and un-motorized.
+[p022_c0004]
+
+```text
+Leading Indicators Safety Training 2020 2021 March Year to Date March Year to Date First Responders Trained 246 815 145 202 Employee Safety Training Courses 116 233 119 160 Employees Trained 875 2,931 1,472 2,653 Employee Safety Training Hours 12,147 77,830 16,288 38,386 Customer and Community: Focus on Grade Crossings 2020 2021 March Year to Date March Year to Date Broken Gates 2 6 2 2 MTA Police Details 31 113 47 79 Summons 74 218 89 163 Warnings 11 42 26 49 Community Education and Outreach* 505 20,875 10,176 12,347 Cars Equipped with Cameras Fleet Size Total Cars Equipped % Complete Inward / Outward Facing Cab Cameras 956 956 100.00% Passenger Compartment Cameras 1,084 1,084 100.00%
+```
+[p022_c0005] *Due to the COVID-19 pandemic , community outreach events are held virtually, as a result TRACKS numbers are lower than previous years.
+### [p022_c0006] Definitions:
+[p022_c0007] First Responders Trained - The number of first responders trained by MNR's Emergency Management to assist in crisis events, such as train evacuation.
+[p022_c0008] Employee Safety Training Courses - The number of distinct safety-related courses offered, including technical courses that have a safety element. Repeats are excluded so that each course is counted only once.
+[p022_c0009] Employees Trained - The number of unique employees that attended one or more of these safety-related courses.
+[p022_c0010] Employee Safety Training Hours - The total hours of training completed by employees in all safety-related courses attended.
+[p022_c0011] Broken Gates - The number of events at grade crossing locations where a vehicle struck a crossing gate.
+[p022_c0012] MTA Police Detail - The number of details specifically for the purpose of monitoring behavior at Grade Crossings.
+[p022_c0013] Summons - The number of violations issued to a motorist for going around a crossing gate or due to behavior that put the motorist at risk (i.e. cell phone use, etc.).
+[p022_c0014] Warnings - The number of warnings issued to motorists due to behavior that put the motorist at risk (i.e. cell phone use, etc.).
+[p022_c0015] Community Education and Outreach - The number of individuals reached at a TRACKS event.
+[p022_c0016] Cars Equipped with Cameras - Number of complete inward/outward and passenger compartment camera installations on rolling stock.
+[p022_c0017] _Master Page # 22 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 23
+
+> [p023_c0001] The MTA logo, consisting of the letters "MTA" in white, bold, sans-serif font, set against a solid blue circular background.
+### [p023_c0002] POLICE REPORT
+[p023_c0003] _Master Page # 23 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 24
+
+> [p024_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p024_c0002] Long Island Rail Road
+### [p024_c0003] April 2021 Highlights: MTA Police Report
+- [p024_c0004] • Long Island Rail Road experienced an increase in the amount of major felonies (9 vs 6) for the month of April compared to the same period last year. • Year to date Long Island Rail Road is down 2 crimes (23 vs 25). • There were zero (0) Hate Crime on Long Island Rail Road for the month of April.
+[p024_c0005] Joseph P. McGrann Chief of Police
+[p024_c0006] _Master Page # 24 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 25
+
+### [p025_c0001] METROPOLITAN TRANSPORTATION AUTHORITY Police Department Long Island Rail Road
+### [p025_c0002] April 2021 vs. 2020
+[p025_c0003]
+
+```text
+2021 2020 Diff % Change Murder 0 0 0 0% Rape 0 0 0 0% Robbery 1 4 -3 -75% Felony Assault 1 0 1 100% Burglary 3 0 3 100% Grand Larceny 3 2 1 50% Grand Larceny Auto 1 0 1 100% Total Major Felonies 9 6 3 50%
+```
+### [p025_c0004] Year to Date 2021 vs. 2020
+[p025_c0005]
+
+```text
+2021 2020 Diff % Change Murder 0 0 0 0% Rape 0 0 0 0% Robbery 3 7 -4 -57% Felony Assault 6 4 2 50% Burglary 6 3 3 100% Grand Larceny 7 11 -4 -36% Grand Larceny Auto 1 0 1 100% Total Major Felonies 23 25 -2 -8%
+```
+[p025_c0006] _FIGURES ARE PRELIMINARY AND SUBJECT TO FURTHER ANALYSIS AND REVISION_
+[p025_c0007] _Master Page # 25 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 26
+
+> [p026_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+[p026_c0002] Metro-North Railroad
+### [p026_c0003] April 2021 Highlights: MTA Police Report
+- [p026_c0004] • Metro-North Railroad experienced an increase in the amount of major felonies (3 vs 0) for the month of April compared to the same period last year. • Year to date Metro-North Railroad is up 1 crime (17 vs 16). • There were zero (0) Hate Crime on Metro-North Railroad for the month of April.
+[p026_c0005] Joseph P. McGrann Chief of Police
+[p026_c0006] _Master Page # 26 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 27
+
+### [p027_c0001] METROPOLITAN TRANSPORTATION AUTHORITY Police Department Metro North Railroad
+### [p027_c0002] April 2021 vs. 2020
+[p027_c0003]
+
+```text
+2021 2020 Diff % Change Murder 0 0 0 0% Rape 0 0 0 0% Robbery 0 0 0 0% Felony Assault 2 0 2 100% Burglary 0 0 0 0% Grand Larceny 1 0 1 100% Grand Larceny Auto 0 0 0 0% Total Major Felonies 3 0 3 100%
+```
+### [p027_c0004] Year to Date 2021 vs. 2020
+[p027_c0005]
+
+```text
+2021 2020 Diff % Change Murder 0 0 0 0% Rape 0 0 0 0% Robbery 4 4 0 0% Felony Assault 5 2 3 150% Burglary 5 1 4 400% Grand Larceny 2 9 -7 -78% Grand Larceny Auto 1 0 1 100% Total Major Felonies 17 16 1 6%
+```
+[p027_c0006] _FIGURES ARE PRELIMINARY AND SUBJECT TO FURTHER ANALYSIS AND REVISION_
+[p027_c0007] _Master Page # 27 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 28
+
+> [p028_c0001] The logo of the Metropolitan Transportation Authority Police Department, featuring a shield with the word "POLICE" at the top, a central emblem with a train and a bridge, and the text "METROPOLITAN TRANSPORTATION AUTHORITY" and "NEW YORK STATE" around the bottom.
+### [p028_c0002] METROPOLITAN TRANSPORTATION AUTHORITY Police Department System Wide
+### [p028_c0003] April 2021 vs. 2020
+[p028_c0004]
+
+```text
+2021 2020 Diff % Change Murder 0 0 0 0% Rape 0 0 0 0% Robbery 1 4 -3 -75% Felony Assault 3 0 3 100% Burglary 3 0 3 100% Grand Larceny 4 2 2 100% Grand Larceny Auto 1 0 1 100% Total Major Felonies 12 6 6 100%
+```
+### [p028_c0005] Year to Date 2021 vs. 2020
+[p028_c0006]
+
+```text
+2021 2020 Diff % Change Murder 0 0 0 0% Rape 0 0 0 0% Robbery 7 12 -5 -42% Felony Assault 11 6 5 83% Burglary 11 4 7 175% Grand Larceny 9 20 -11 -55% Grand Larceny Auto 2 0 2 100% Total Major Felonies 40 42 -2 -5%
+```
+[p028_c0007] FIGURES ARE PRELIMINARY AND SUBJECT TO FURTHER ANALYSIS AND REVISION
+[p028_c0008] _Master Page # 28 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 29
+
+### [p029_c0001] INDEX CRIME REPORT Per Day Average April 2021
+[p029_c0002]
+
+```text
+Systemwide LIRR MNRR SIRT Murder 0 0 0 0 Rape 0 0 0 0 Robbery 1 1 0 0 Fel. Assault 3 1 2 0 Burglary 3 3 0 0 Grand Larceny 4 3 1 0 GLA 1 1 0 0 Total 12 9 3 0 Crimes Per Day 0.40 0.30 0.10 0.00
+```
+[p029_c0003] _Master Page # 29 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 30
+
+### [p030_c0001] Metropolitan Transportation Authority Police Department
+### [p030_c0002] Hate Crimes Report (January - April 2021)
+[p030_c0003]
+
+```text
+Motivation 2021 2020 Diff % Change Asian 0 0 0 0 % Black 2 1 1 100 % Ethnic 0 0 0 0 % Gender 0 0 0 0 % Hispanic 0 0 0 0 % Muslim 0 0 0 0 % Other 0 0 0 0 % Anti-Semitic 2 4 -2 -50 % Sexual Orientation 0 0 0 0 % White 0 1 -1 -100 % Motivation Total 4 6 -2 -33 %
+```
+[p030_c0004]
+
+```text
+Crime Name 2021 2020 Diff % Change Aggravated Harassment #1 0 0 0 0 % Aggravated Harassment #2 0 0 0 0 % Felony Assault 0 1 -1 -100 % Misdemeanor Assault 0 0 0 0 % Criminal Mischief #3 0 0 0 0 % Criminal Mischief #4 4 5 -1 -20 % Grand Larceny #4 0 0 0 0 % Menacing #2 0 0 0 0 % Robbery #2 0 0 0 0 % Crime Total 4 6 -2 -33 %
+```
+[p030_c0005] _Master Page # 30 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 31
+
+### [p031_c0001] MTA Police Department Arrest Summary: Department Totals
+[p031_c0002] 1/1/2021 to 4/30/2021
+### [p031_c0003] Arrest Classification
+### [p031_c0004] Total Arrests
+[p031_c0005]
+
+```text
+2021 2020 Robbery 7 11 Felony Assault 10 7 Burglary 6 1 Grand Larceny 7 9 Grand Larceny Auto 2 0 Aggravated Harassment 3 2 Aggravated Unlicensed Operator 1 3 Assault-Misdemeanor 21 10 Breach of Peace 0 2 Child Endangerment 1 2 Criminal Contempt 1 5 Criminal Impersonation 1 1 Criminal Mischief 20 13 Criminal Possession Stolen Property 0 4 Criminal Tampering 2 0 Criminal Trespass 4 14 Disorderly Conduct 0 1 Drug Offenses 8 21 DUI Offenses 3 2 Falsely Reporting an Incident 1 2 Forgery 1 12 Graffiti 24 9 Harassment 1 0 Menacing 2 3 Obstruct Government 3 2 Petit Larceny 14 28 Public Lewdness 11 5 Reckless Endangerment 3 3 Resisting Arrest 5 10 Sex Offenses 0 2 Stalking 0 1 Theft of Services 9 36 VTL Offenses 0 1 Warrant Arrest 9 15 Weapons Offenses 2 2 Total Arrests 182 239
+```
+[p031_c0006] _Master Page # 31 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 32
+
+> [p032_c0001] The MTA logo, consisting of the letters 'MTA' in white, bold, sans-serif font, set against a dark blue circular background.
+[p032_c0002] Long Island Rail Road
+> [p032_c0003] The MTA logo, consisting of the letters 'MTA' in white, bold, sans-serif font, set against a dark blue circular background.
+[p032_c0004] Metro-North Railroad
+### [p032_c0005] JOINT INFORMATION ITEMS
+[p032_c0006] _Master Page # 32 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 33
+
+### [p033_c0001] Joint MNR/LIRR PTC Committee Meeting Update May 26, 2021
+> [p033_c0002] The MTA logo, consisting of the letters 'MTA' in white on a blue circular background.
+> [p033_c0003] A photograph of three men in a control room. The man on the left, wearing a pink polo shirt and glasses, stands with his arms crossed. The man in the middle, wearing a black and white plaid shirt, is seated and looking towards the camera. The man on the right, wearing a blue plaid shirt, is also seated and looking towards the camera. They are surrounded by several computer monitors displaying data, including a large screen on the right showing a map or interface and two smaller screens on the left showing data plots.
+> [p033_c0004] The MTA logo, consisting of the letters 'MTA' in white on a blue circular background.
+[p033_c0005] _Master Page # 33 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 34
+
+### [p034_c0001] Master Page # 34 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p034_c0002] LIRR PTC Update – Base Contract
+> [p034_c0003] The MTA logo, consisting of the letters 'MTA' in white inside a blue circle.
+### [p034_c0004] Implementation Summary
+[p034_c0005] All trains are operating with full PTC functionality on entire LIRR territory and monitored daily with any issues mitigated.
+### [p034_c0006] Progress on Installation and Testing
+[p034_c0007] Completed new Office subsystem software updates and continue testing and closeout of NCRs and variances.
+[p034_c0008] Harold Interlocking work:
+- [p034_c0009] • Freight Speed transponder adjustments completed. • D2 Amtrak on-board software updates completed, which avoided LIRR WIU changes and use of shadow TSR for operational mitigations. • D3 – Siemens Amtrak onboard software updates for adjusting WIU D3 Back-to-Back (nested signals) issues, including: • Completed LIRR WIU D3 updates mitigation through Harold. • Amtrak D3 Solution OBC 11.6 Siemens software release is scheduled for field testing in 3 rd quarter 2021 • Finalizing agreement with Alstom/Siemens to start warranty for all PTC software and hardware. • Commenced work with other NEC host Railroads to address FRA conditions in Safety Plans. • New functions required to provide Keypad to override Positive Train Stop, and to develop an on-board database, remain under review for action moving forward.
+> [p034_c0010] The MTA logo, consisting of the letters 'MTA' in white inside a grey circle.
+
+## Page 35
+
+### [p035_c0001] Master Page # 35 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p035_c0002] LIRR PTC Timeline – Look Ahead Plan 2021/2022
+> [p035_c0003] The MTA logo, consisting of the letters 'MTA' in white on a blue circular background.
+### [p035_c0004] 2021
+- [p035_c0005] • 2 nd Quarter • Harold – Freight Speeds & D2 operational mitigations • 3 rd Quarter • Harold – D3 B2B field testing with Amtrak Rolling Stock • Final System software release • 4 th Quarter • Amtrak OBC implementation for D3 • NCRs & Variances Closeout • PTC Lab and Software Data Maintenance Facility (SDMF) delivery • Obtain Final PTC documentation (CDRLs, O&M Manuals and As-Builts) • Closeout PTC contract requirements
+### [p035_c0006] 2022
+- [p035_c0007] • 1 st Quarter • Deploy Onboard Software OBC 7.2 fleetwide • Award PTC Technical Support Services Contract to PTC SI • 2 nd Quarter • Complete Onboard Field Modifications • 4 th Quarter • PTC Testing on Base Project Infrastructure Projects • Complete all outstanding maintenance training • Complete Warranty Program, ARDT (Availability Reliability Demonstration Test) • Achieve Substantial Completion
+> [p035_c0008] The MTA logo, consisting of the letters 'MTA' in white on a grey circular background.
+
+## Page 36
+
+### [p036_c0001] MNR Project Update
+> [p036_c0002] The MTA logo, consisting of the letters 'MTA' in white on a blue circular background.
+### [p036_c0003] PTC Implementation Summary
+[p036_c0004] All trains are operating with full PTC Functionality on entire MNR territory except the Waterbury Branch which is currently operating under PTC Exemption (Main Line Track Exclusion Addendum). A project is underway to have PTC operational on the Waterbury Branch by the end of 2021.
+### [p036_c0005] Design & Installation Updates and Testing
+- [p036_c0006] • PTC design and Installations for New Haven Line and Waterbury branch Signal upgrades are ongoing • Continue to test software releases for closing non-critical NCRs and variances across subsystems • Office STS database update completed to remove operational mitigations associated with M8 fleet • M8 fleet has been experiencing in-service PTC anomalies due to hardware and software defects. MNR actively working with Alstom and Kawasaki to address these variances. • OBC Software 1.2 update is expected in June 2021 to resolve priority variances and Software 1.3 in Nov 2021 expected to close all remaining variances • Additional ATC/ACSES functional software modifications planned to address FRA Conditions • Operational mitigations are put in place for Amtrak/Freight Onboard Software Anomaly 'D2' • The software update on Hudson fleet is completed, New Haven line fleet is expected by end of May. • Continue to define the Scope of Work and schedule for the Positive Train Stop Override Keypad and Onboard Database functions as required by the FRA Conditions to the PTC Safety Plan in coordination with NEC Railroads
+> [p036_c0007] The MTA logo, consisting of the letters 'MTA' in white on a grey circular background.
+[p036_c0008] _Master Page # 36 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 37
+
+### [p037_c0001] Master Page # 37 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p037_c0002] MNR PTC Timeline
+> [p037_c0003] The MTA logo, consisting of the letters 'MTA' in white on a blue circular background.
+### [p037_c0004] 2021
+- [p037_c0005] ✓ Office STS Database Change for M8 Distance to Radio mitigation – April 2021 • PTC Changes for CP 121 Switch Replacement – May 2021 • Amtrak and Freight D2 Software Update on MNR Territory – May 2021 • M8 OBC 1.2 Software Release – June 2021 • Develop Plan for addressing FRA Condition on M8 functional differences – Sept 2021 • M8 OBC 1.3 Software Release – Nov 2021 • Waterbury Branch Cab Signal/PTC Commissioning – Dec 2021 • Wayside and Office updates for operational improvements – Ongoing
+### [p037_c0006] 2022
+- [p037_c0007] • System Baseline 3.7 update – Jan 2022 • Positive Train Stop Release Keypad Design – 1 st Q 2022 • HMAC Security Key Exchange and Management Services – Sept 2022 • Operational & Maintenance Manuals and As-Builts – June 2022 • Requirements Closeout and Outstanding Training – Sept 2022 • PTC Changes for New Haven Line Signal Upgrades - 4 th Q 2022 • ARDT (Availability Reliability Demonstration Test) Program –Dec 2022
+> [p037_c0008] The MTA logo, consisting of the letters 'MTA' in white on a blue circular background.
+
+## Page 38
+
+> [p038_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a blue circle.
+### [p038_c0002] Long Island Rail Road
+### [p038_c0003] INFORMATION ITEMS
+[p038_c0004] _Master Page # 38 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 39
+
+### [p039_c0001] Staff Summary
+[p039_c0002]
+
+```text
+Subject JUNE TIMETABLE CHANGE & TRACKWORK PROGRAMS Date April 27, 2021 Departments SR. VICE PRESIDENT – OPERATIONS Vendor Name Department Head Names R. FREE Contract Number Department Head Signature Contract Manager Signature Board Action Internal Approval Order To Date Approval Info Other Order Approval Order Approval 1 MTA Joint & Committee Board 5/26/21 3 VP – Corp Comm 1 President 2 CTO (Acting)
+```
+### [p039_c0003] PURPOSE:
+[p039_c0004] This is to inform the Long Island Committee of the MTA Long Island Rail Road’s plan to adjust schedules beginning June 14, 2021, through September 6, 2021.
+[p039_c0005] Projects supported during this timetable include Main Line Expansion, Third Rail Maintenance and Babylon Interlocking Construction on the Montauk Branch and Beaver Interlocking Construction on the Atlantic Branch. Continuing projects include DOT Atlantic Avenue repairs on the Atlantic Branch, East Side Access work in Harold Interlocking, Mid-Suffolk Yard Construction, Elmont Station Construction, West Side Yard Overbuild, Long Beach Branch Hurricane Sandy Restoration Work, and Jamaica Capacity Improvements.
+[p039_c0006] Additionally, schedules will be temporarily adjusted for the removal of the 12 th Street Grade Crossing in New Hyde Park, and a Special Program will support the 153 rd running of the Belmont Stakes on Saturday, June 5 th .
+### [p039_c0007] SUMMER SERVICE CHANGES
+### [p039_c0008] Annual Summer Service Schedule Adjustments
+- [p039_c0009] • Summer service will partially resume on May 1 st with the seasonal restoration of one additional weekend roundtrip to Montauk and two additional weekend Ronkonkoma-Greenport roundtrips, additional summer service will begin May 24 th . Key changes include: ○ Extra Friday getaway trains, including the famed Cannonball which will operate as a limited-stop express train to Montauk, along with two additional extra trains to Montauk, one additional train to Greenport, and one additional midday train to Speonk. On Thursdays, one additional train will operate to Montauk.
+[p039_c0010] _Master Page # 39 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 40
+
+- [p040_c0001] ○ An extra Friday night train from Greenport, making stops from Greenport to Ronkonkoma, then Jamaica, where connections to Western terminals will be available. ○ On Fridays, two extra trains will operate to Patchogue making stops at Bay Shore and Sayville in advance of two through Montauk trains. ○ Four additional westbound service opportunities from the Hamptons/Montauk on Sundays and Holidays, including the westbound Cannonball to Penn Station. ○ One additional westbound service opportunity on Monday mornings from Montauk to Hunterspoint Avenue. This additional train will also operate on Tuesday, June 1 st , Tuesday, July 6 th and Tuesday, September 7 th . ○ One extra weekend beach roundtrip between Penn Station and Long Beach. ○ Weekend Freeport extra trains will operate. ○ An early morning weekday eastbound train from Ronkonkoma to Greenport, which operates as an equipment train during the off-season, will carry passengers for the summer travel season, allowing an additional service opportunity for those going out to the fishing boats or spending a morning on the North Fork.
+### [p040_c0002] JUNE 14 TIMETABLE CHANGE
+### [p040_c0003] Construction Activities
+- [p040_c0004] • Montauk Branch, Amityville to Babylon – Babylon Interlocking Construction and Third Rail State of Good Repair – One of two main tracks will be out of service on midday weekdays between Amityville and Babylon for construction activities within Babylon Interlocking and for Third Rail State of Good Repair work to be performed. ○ Temporary Service Adjustments: With one of two main tracks out of service on midday/weekdays between Amityville and Babylon, westbound trains will be adjusted up to 11 minutes earlier. Additionally, service at Amityville, Copiague and Lindenhurst will be reduced to hourly in both directions. • Long Beach Branch, Valley Stream to Long Beach – Hurricane Sandy Restoration – One of two main tracks will be out of service on midday weekdays between Valley Stream and Long Beach for maintenance relating to Hurricane Sandy Restoration. ○ Temporary Service Adjustments: With one of two main tracks out of service on midday/weekdays between Valley Stream and Long Beach, trains in both directions will be adjusted up to 12 minutes later.
+### [p040_c0005] SPECIAL EVENT PROGRAM
+[p040_c0006] (Short-term event requiring a special program)
+- [p040_c0007] • Belmont Stakes Race – Belmont Park, June 5, 2021 – The Belmont Stakes, the third race in the series that makes up racing’s famed “Triple Crown,” takes place on Saturday, June 5. The LIRR will run extra trains to serve patrons of the event. Some adjustments to regularly scheduled service may be implemented as necessary to accommodate extra Belmont Stakes service.
+[p040_c0008] _Master Page # 40 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 41
+
+### [p041_c0001] TRACK WORK PROGRAMS
+[p041_c0002] Construction Activities (Short-term trackwork items requiring a special program)
+- [p041_c0003] • Main Line – 12 th Street Grade Crossing Removal – On the weekend of June 12-13, both main tracks on the Main Line will be out of service for 48 hours between New Hyde Park and Hicksville to support the removal of the 12 th Street Grade Crossing in New Hyde Park as part of the Main Line Expansion Project. ○ Temporary Service Adjustments: ▪ Eastbound, no MU service will operate between Penn Station and Hicksville, and two-hourly Oyster Bay Branch diesel service will operate between East Williston and Oyster Bay. For Eastbound customers from western terminals traveling to Ronkonkoma Branch stations Farmingdale through Ronkonkoma, and to Port Jefferson Branch stations Hicksville through Huntington/Port Jefferson, customers will board electric MU express service to Babylon, where they will transfer to diesel shuttle trains operating between Babylon and Hicksville via the Central Branch, then transfer at Hicksville to trains operating to either Ronkonkoma or Huntington/Port Jefferson. Eastbound Bethpage customers will board the electric MU express service to Babylon, then transfer to the diesel shuttle train, which will stop at Bethpage on its way to Hicksville. ▪ Westbound, no electric MU service will operate between Hicksville and Penn Station, and two-hourly Oyster Bay Branch diesel service will operate between Oyster Bay and East Williston. For Westbound customers on the Ronkonkoma Branch travelling from stations Ronkonkoma through Farmingdale, and on the Port Jefferson Branch for stations Port Jefferson/Huntington through Hicksville, customers will board trains at their station to Hicksville, where they will transfer to diesel shuttle trains operating between Hicksville and Babylon via the Central Branch, then transfer at Babylon to express trains for western terminals. Westbound Bethpage customers will board the diesel shuttle train to Babylon, then transfer at Babylon to express trains for western terminals. ▪ Extra trains will be added between New York and Babylon to connect with shuttle trains between Babylon and Hicksville. ▪ Extra trains will be added between Hempstead and Penn Station to serve as an alternative service option for customers traveling to/from New Hyde Park, Merillon Avenue, Mineola, Carle Place, and Westbury. ▪ Bus service will be provided for Mineola customers between Mineola and Hempstead for connections to and from points west. ▪ Bus service will also be provided between Mineola and Hicksville. ▪ Oyster Bay Branch trains will operate between Oyster Bay and East Williston, with bus service provided between East Williston and Hempstead for connections to and from points west. ▪ There will be normal weekend service intervals on the Montauk, Long Beach, Far Rockaway, Port Washington, and West Hempstead Greenport Branches, but on
+[p041_c0004] _Master Page # 41 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 42
+
+[p042_c0001] adjusted schedules. Train service will operate between Ronkonkoma and Greenport, but on adjusted schedules.
+[p042_c0002] As part of our communication campaign for these service changes, public timetables will be issued, and additional information will be shared via our website, e-mail alerts, and social media messaging. Stay connected. Find real-time LIRR service status information on www.mta.info , by signing up for E-Alerts at www.MyMTAAlerts.com , or call the LIRR's Customer Service Center at 511 or 718-217-LIRR (718-217-5477).
+### [p042_c0003] IMPACT ON FUNDING
+[p042_c0004] Funding for these projects is contained in the Long Island Rail Road Operating and Capital budgets.
+[p042_c0005] _Master Page # 42 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 43
+
+### [p043_c0001] MTA Long Island Rail Road (LIRR)
+### [p043_c0002] EEO Report – 1 st Quarter 2021
+[p043_c0003] May 26, 2021
+> [p043_c0004] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+[p043_c0005] _Master Page # 43 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 44
+
+### [p044_c0001] Master Page # 44 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p044_c0002] Executive Summary
+### [p044_c0003] □ EEO
+[p044_c0004] As of March 31, 2021 , LIRR's workforce included 7,318 total employees. This represents a 3% decrease from the first quarter 2020 (1Q20) workforce.
+- [p044_c0005] □ Females represent 15% (1006) of our workforce, remaining constant, when compared to 1Q20, due to hiring activity restrictions combined with attrition. □ Females were hired above their current representation due to recruitment efforts. □ Minorities represent 37% (2,715) of our workforce, remaining constant, when compared to 1Q20, despite hiring activity restrictions and attrition. □ Minorities were hired above their current representation due to recruitment efforts.
+[p044_c0006] *Note: There were a minimal number of new hires, due to the MTA-wide firing freeze.
+> [p044_c0007] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+
+## Page 45
+
+### [p045_c0001] Master Page # 45 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p045_c0002] Executive Summary
+[p045_c0003] MTA LIRR conducted a utilization analysis* of females and minorities in its workforce as of March 31, 2021. Based on the analysis, the majority of underrepresentation for females and minorities occurred in the following EEO categories:
+### [p045_c0004] Females:
+- [p045_c0005] Officials & Administrators – Black Professionals – Black and White Technicians – Hispanic, Asian and White Administrative Support – Hispanic, Asian and White Skilled Craft– Black, Hispanic and 2+ Races Service Maintenance – Hispanic, Asian and White
+### [p045_c0006] Minorities:
+- [p045_c0007] Officials & Administrators – Black Professionals – Black Technicians – Black, Hispanic and Asian Administrative Support – Hispanic and Asian Skilled Craft – Black, Hispanic, NHOPi and 2+ Races Service Maintenance – Hispanic and Asian
+[p045_c0008] *The utilization analysis compares the percentages of females and minorities employed in each job group to 80 percent of the females and minorities available within the relevant labor market.
+> [p045_c0009] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+
+## Page 46
+
+### [p046_c0001] Master Page # 46 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p046_c0002] Executive Summary
+### [p046_c0003] ❑ Diversity Initiatives to increasing representation
+- [p046_c0004] ❑ Initiatives/challenges to address underrepresentation for females and minorities ❑ Female – HR participated in the City Talk Panel: Women in City Government– a virtual panel discussion to encourage women to pursue careers in government agencies, including the LIRR. Janie Chen, Director of Program Management in Special Projects/East Side Access Department, was a panelist. ❑ Minority – HR participated in an MTA Information Session for NYC CTE (Career & Technical Education) Schools—providing the very diverse school body with information about entry-level positions at all the MTA agencies. ❑ Initiatives to increase representation for veterans and persons with disabilities ❑ Continue partnership with MTA Office of Veterans Affairs to promote employment opportunities for veterans. ❑ Continue coordination with the NYC Mayor's Office for People with Disabilities to promote employment opportunities for persons with disabilities.
+> [p046_c0005] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+
+## Page 47
+
+[p047_c0001] MTA LIRR
+### [p047_c0002] Workforce
+[p047_c0003] as of March 31, 2021
+> [p047_c0004] The MTA logo, consisting of the letters 'MTA' in white inside a dark grey circle.
+[p047_c0005] _Master Page # 47 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 48
+
+### [p048_c0001] Master Page # 48 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p048_c0002] Definitions of EEO Job Categories
+### [p048_c0003] Officials & Administrators
+[p048_c0004] Occupations in which employees set broad policies, exercise overall responsibility for execution of these policies, or direct individual departments or special phases of the agency's operations, or provide specialized consultation on a regional, district or area basis.
+### [p048_c0005] Professionals
+[p048_c0006] Occupations which require specialized and theoretical knowledge which is usually acquired through college training or through work experience and other training which provides comparable knowledge.
+### [p048_c0007] Technicians
+[p048_c0008] Occupations which require a combination of basic scientific or technical knowledge and manual skill which can be obtained through specialized post-secondary school education or through equivalent on-the-job training.
+### [p048_c0009] Protective Services
+[p048_c0010] Occupations in which workers are entrusted with public safety, security and protection from destructive forces.
+### [p048_c0011] Paraprofessionals
+[p048_c0012] Occupations in which workers perform some of the duties of a professional or technician in a supportive role, which usually require less formal training and/or experience normally required for professional or technical status.
+### [p048_c0013] Administrative Support
+[p048_c0014] Occupations in which workers are responsible for internal and external communication, recording and retrieval of data and/or information and other paperwork required in an office.
+### [p048_c0015] Skilled Craft
+[p048_c0016] Occupations in which workers perform jobs which require special manual skill and a thorough and comprehensive knowledge of the process involved in the work which is acquired through on-the-job training and experience or through apprenticeship or other formal training programs.
+### [p048_c0017] Service Maintenance
+[p048_c0018] Occupations in which workers perform duties which result in or contribute to the comfort, convenience, hygiene or safety of the general public or which contribute to the upkeep and care of buildings, facilities or grounds of public property.
+> [p048_c0019] The MTA logo is a circular emblem with the letters 'MTA' in a bold, sans-serif font. The letters are white and set against a dark grey background. The circle has a slight gradient and a thin white border.
+
+## Page 49
+
+### [p049_c0001] Master Page # 49 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p049_c0002] MTA LIRR Workforce
+[p049_c0003]
+
+```text
+JOB CATEGORY TOTAL Minorities WHITES BLACKS HISPANICS ASIANS AI/AN* NHOP1** 2+ RACES VETERANS # % # % # % # % # % # % # % # % # % # % Officials & Administrators 1,381 503 36% 878 64% 181 13% 152 11% 86 6% 6 0% 0 0% 78 6% 91 7% F 256 19% 130 9% 126 57% 57 4% 33 2% 23 2% 0 0% 0 0% 17 1% 7 8% M 1,125 81% 373 27% 752 54% 124 9% 119 9% 63 5% 6 0% 0 0% 61 4% 84 92% Professionals 299 145 48% 154 52% 45 15% 36 12% 47 16% 0 0% 1 0% 16 5% 17 6% F 51 17% 28 9% 23 8% 6 2% 6 2% 12 4% 0 0% 1 0% 3 1% 0 0% M 248 83% 117 39% 131 44% 39 13% 30 10% 35 12% 0 0% 0 0% 13 4% 17 100% Technicians 13 7 54% 6 46% 2 15% 2 15% 1 8% 1 8% 0 0% 1 8% 1 8% F 1 8% 1 8% 0 0% 1 8% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% M 12 92% 6 46% 6 46% 1 8% 2 15% 1 8% 1 8% 0 0% 1 8% 1 100% Administrative Support 367 181 49% 186 51% 109 30% 38 10% 14 4% 1 0% 0 0% 19 5% 10 3% F 186 51% 112 31% 74 20% 72 20% 23 6% 8 2% 1 0% 0 0% 8 2% 2 20% M 181 49% 69 19% 112 31% 37 10% 15 4% 6 2% 0 0% 0 0% 11 3% 8 80% Skilled Craft 4,412 1466 33% 2,946 67% 660 15% 501 11% 145 3% 8 0% 2 0% 150 3% 322 7% F 427 10% 192 4% 235 5% 126 3% 35 1% 16 0% 0 0% 0 0% 15 0% 9 3% M 3,985 90% 1274 29% 2,711 61% 534 12% 466 11% 129 3% 8 0% 2 0% 135 3% 313 97% Service Maintenance 846 413 49% 433 51% 236 28% 125 15% 18 2% 5 1% 1 0% 28 3% 42 5% F 145 17% 102 12% 43 5% 67 8% 26 3% 0 0% 1 0% 0 0% 8 1% 2 5% M 701 83% 311 37% 390 46% 169 20% 99 12% 18 2% 4 0% 1 0% 20 2% 40 95% Total 7,318 2,715 37.1% 4,603 62.9% 1,233 17% 854 12% 311 4% 21 0% 4 0% 292 4% 483 7%
+```
+[p049_c0004] * American Indian/Alaskan Native
+[p049_c0005] **Native Hawaiian Other Pacific Islander
+[p049_c0006] Note: All percentages have been rounded up to the nearest whole number.
+
+## Page 50
+
+### [p050_c0001] Master Page # 50 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p050_c0002] MTA LIRR Workforce
+[p050_c0003] _Workforce by Gender_
+> [p050_c0004] Gender Percentage Males 85% Females 15%
+[p050_c0005] _Workforce by Race/Ethnicity_
+> [p050_c0006] Race/Ethnicity Percentage Whites 63% Blacks 17% Hispanics 12% 2+ Races 4% Asians 4% AI/AN 0% NHOPi 0%
+[p050_c0007] LIRR's workforce consists of 7,318 employees
+- [p050_c0008] ❑ 15% females, 37% minorities, and 7% veterans. ❑ The percentage of females has remained constant when compared to 1Q20. ❑ The percentage of minorities has remained constant when compared to 1Q20.
+
+## Page 51
+
+### [p051_c0001] Underutilization Analysis Overview
+[p051_c0002] A utilization analysis was conducted to determine whether there is underutilization of females and minorities in its workforce. This analysis consists of comparing March 31, 2021 workforce percentages for females and minorities to the 2021 80 percent estimated availability of the females and minorities available within the relevant labor market. Underutilization exists if the percentage of females or minorities in a job category is less than 80% of their expected estimated availability.
+[p051_c0003] The following chart provide shaded/bolded areas that represent below 80 percent of the Census availability or underutilization: (1) the female and minority workforce percentages for this agency; (2) 80% of the females and minorities available for work based on the 2010 Census by job category; and (3) whether or not the estimated availability percentages were met for females and minorities within each of the job categories.
+> [p051_c0004] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+[p051_c0005] _Master Page # 51 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 52
+
+### [p052_c0001] Master Page # 52 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p052_c0002] MTA LIRR Underutilization Analysis
+[p052_c0003]
+
+```text
+JOB CATEGORY Gender BLACKS HISPANIC ASIANS AI/AN NHOPI 2+ RACES WHITES Est Avail Actual % Est Avail Actual % Est Avail Actual % Est Avail Actual % Est Avail Actual % Est Avail Actual % Est Avail Actual % Officials & Administrators F 5% 4% 2% 2% 1% 2% 0% 0% 0% 0% 1% 1% 9% 9% M 8% 9% 6% 9% 3% 5% 0% 0% 0% 0% 2% 4% Professionals F 3% 2% 2% 2% 2% 4% 0% 0% 0% 0% 0% 1% 12% 8% M 7% 13% 6% 10% 5% 12% 0% 0% 0% 0% 1% 4% Technicians F 3% 8% 2% 0% 1% 0% 0% 0% 0% 0% 0% 0% 6% 0% M 10% 8% 8% 15% 5% 8% 0% 8% 0% 0% 1% 8% Administrative Support F 13% 20% 8% 6% 3% 2% 0% 0% 0% 0% 1% 2% 21% 20% M 6% 10% 4% 4% 2% 2% 0% 0% 0% 0% 2% 3% Skilled Craft F 5% 3% 2% 1% 0% 0% 0% 0% 0% 0% 1% 0% 5% 5% M 13% 12% 10% 11% 3% 3% 0% 0% 1% 0% 3% 3% Service Maintenance F 6% 8% 4% 3% 1% 0% 0% 0% 0% 0% 0% 1% 6% 5% M 12% 20% 15% 12% 2% 2% 0% 0% 0% 0% 2% 2%
+```
+[p052_c0004] *American Indian/Alaskan Native
+[p052_c0005] **Native Hawaiian Other Pacific Islander
+[p052_c0006] Est Avail – Based on 2021 estimated availability
+[p052_c0007] Note: Pursuant to FTA Circular 4704.1A, EEO requirements and guideline, white males have been excluded from the underutilization analysis.
+[p052_c0008] The shaded areas represent underutilization.
+
+## Page 53
+
+[p053_c0001] MTA LIRR
+### [p053_c0002] New Hires and Veterans
+[p053_c0003] January 1, 2021 – March 31, 2021
+> [p053_c0004] The MTA logo, consisting of the letters 'MTA' in white inside a dark grey circle.
+[p053_c0005] _Master Page # 53 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 54
+
+### [p054_c0001] Master Page # 54 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p054_c0002] MTA LIRR New Hires and Veterans
+[p054_c0003] _NEW HIRE BY GENDER_
+> [p054_c0004] A 3D pie chart divided into two equal halves. The left half is blue and labeled 'Males 50%'. The right half is pink and labeled 'Females 50%'. Gender Percentage Males 50% Females 50%
+[p054_c0005] _NEW HIRE BY RACE/ETHNICITY_
+> [p054_c0006] A 3D pie chart divided into several segments. The largest segment is dark blue, labeled '2+ Races, 50%'. The next largest is light blue, labeled 'Asians, 25%'. A grey segment is labeled 'Whites, 25%'. Three very thin segments are labeled 'NHOPi, 0%', 'AI/AN, 0%', and 'Blacks, 0%'. A small orange segment is labeled 'Hispanics, 0%'. Race/Ethnicity Percentage 2+ Races 50% Whites 25% Asians 25% NHOPi 0% AI/AN 0% Blacks 0% Hispanics 0%
+[p054_c0007] LIRR added 4 employees, none of whom were a veteran;
+- [p054_c0008] ❑ 50% females ❑ Female hire percentage was above their current percentage of workforce representation. ❑ 75% minority ❑ Minorities were hired above their current percentage of workforce representation.
+> [p054_c0009] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a grey circle.
+
+## Page 55
+
+[p055_c0001] MTA LIRR
+### [p055_c0002] Complaints and Lawsuits
+[p055_c0003] January 1, 2021 – March 31, 2021
+> [p055_c0004] The MTA logo, consisting of the letters 'MTA' in white inside a dark grey circle.
+[p055_c0005] _Master Page # 55 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 56
+
+### [p056_c0001] Master Page # 56 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p056_c0002] MTA LIRR Internal/External EEO Complaints and Lawsuits
+### [p056_c0003] INTERNAL EEO COMPLAINTS
+> [p056_c0004] Basis Percentage Race/Color 28% Sexual Harassment 26% Other 12% Gender 16% Retaliation 9% National Origin 2% Age 7% Disability 0% Religion 0%
+### [p056_c0005] EXTERNAL EEO COMPLAINTS
+> [p056_c0006] Basis Percentage Disability 50% Race/Color 25% Retaliation 25% Other 0% Age 0% Gender 0% Religion 0% Sexual Harassment 0% National Origin 0%
+[p056_c0007] LIRR handled 28 EEO complaints, citing 47 separate allegations, and 10 lawsuits.
+- [p056_c0008] ❑ 25 internal complaints. ❑ 3 external complaints. ❑ The most frequently cited basis internally was Race/Color. ❑ The most frequently cited basis externally was Disability.
+[p056_c0009] These charts include all pending matters as of the date of the report; including matters filed prior to the reporting period. "Other" contains all EEO categories not otherwise specifically mentioned on the chart (i.e. Retaliation, Sexual Orientation, Military status, or Marital Status etc.).
+
+## Page 57
+
+### [p057_c0001] Master Page # 57 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p057_c0002] MTA LIRR EEO Complaints and Lawsuits Dispositions
+[p057_c0003] _OVERALL EEO COMPLAINTS AND LAWSUITS DISPOSITIONS_
+> [p057_c0004] Disposition Percentage DECIDED IN FAVOR OF COMPLAINANT 56% DECIDED IN FAVOR OF AGENCY 44% ADMINISTRATIVE CLOSURE 0% RESOLVED/SETTLEMENT 0% DISMISSED 0% WITHDRAWN 0%
+[p057_c0005] _EEO COMPLAINTS AND LAWSUITS DISPOSITIONS_
+> [p057_c0006] Disposition EEO Internal (%) EEO External (%) EEO Lawsuits (%) DECIDED IN FAVOR OF AGENCY 32 2 100 DECIDED IN FAVOR OF COMPLAINANT 75 2 0 ADMINISTRATIVE CLOSURE 2 0 0 WITHDRAWN 2 0 0 DISMISSED 2 0 0 RESOLVED/SETTLEMENT 2 0 0
+[p057_c0007] LIRR disposed 7 EEO complaints and 2 EEO lawsuits. ☐ 44% complaints/lawsuits were decided in favor of the agency. ☐ 56% complaints/lawsuits were decided in favor of the complainant.
+
+## Page 58
+
+### [p058_c0001] Master Page # 58 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p058_c0002] MTA LIRR Title VI Discrimination Complaints, Lawsuits and Dispositions
+> [p058_c0003] TITLE VI DISCRIMINATION COMPLAINTS Category Percentage RACE 40% COLOR 40% NATIONAL ORIGIN 20%
+> [p058_c0004] TITLE VI DISPOSITIONS Disposition Percentage DECIDED IN FAVOR OF AGENCY 100% ADMINISTRATIVE CLOSURE 0% RESOLVED/SETTLEMENT 0% WITHDRAWN 0% DISMISSED 0% DECIDED IN FAVOR OF COMPLAINANT 0%
+[p058_c0005] LIRR handled 3 Title VI Complaints, citing 5 separate allegations and no Title VI lawsuits. Agency disposed of 2 complaints.
+- [p058_c0006] ☐ 100% of the complaints were decided in favor of the agency.
+
+## Page 59
+
+### [p059_c0001] Master Page # 59 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+> [p059_c0002] The MTA logo, consisting of the letters 'MTA' in white inside a blue circle, is centered at the top of the slide.
+### [p059_c0003] 2021 1 st Quarter Maintenance of Way Division
+[p059_c0004] Track, Structures, Stations and Facilities Metro-North Railroad
+[p059_c0005] May 7, 2021
+
+## Page 60
+
+### [p060_c0001] Master Page # 60 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p060_c0002] Track Projects Systemwide
+### [p060_c0003] ■ Production Tie Replacement – 1,758,250 systemwide wood ties (67,500 ties planned)
+[p060_c0004]
+
+```text
+▣ Hudson Line 13,500 ties planned 0 installed 0% ▣ Harlem 17,200 ties planned 0 installed 0% ▣ New Haven 2,000 ties planned 0 installed 0% ▣ Waterbury 13,000 ties planned 0 installed 0% ▣ Port Jervis 11,600 ties planned 0 installed 0% 57,300 ties planned 0 installed 0% of goal ▣ Hudson (SmarTrack) 5,000 ties planned 0 installed 0% ▣ New Haven (SmarTrack) 5,200 ties planned 3,459 installed 67% 10,200 ties planned 3,459 installed 34% of goal Total 2021 67,500 ties planned 3,459 installed 5% of goal
+```
+[p060_c0005] * All subject to change due to current events
+
+## Page 61
+
+### [p061_c0001] Master Page # 61 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p061_c0002] ■ Rail Vac (Wood Ties) – 4,000 ties planned
+[p061_c0003]
+
+```text
+■ GCT 0 ties installed ■ Hudson 21 ties installed ■ Harlem 12 ties installed ■ New Haven 64 ties installed ■ Danbury 0 ties installed ■ Waterbury 0 ties installed Total 2021 97 ties installed 2% of goal
+```
+### [p061_c0004] ■ Rail Replacement – 1,508 rail miles systemwide (8.3 miles planned)
+[p061_c0005]
+
+```text
+■ Hudson Line 3 miles planned 0.0 installed 0% complete ■ New Haven 5.3 miles planned 5.0 installed 94% complete Total 2021 8.3 miles planned 5.0 installed 60% of goal
+```
+[p061_c0006] _* All subject to change due to current events_
+
+## Page 62
+
+### [p062_c0001] Master Page # 62 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+> [p062_c0002] The MTA logo, consisting of the letters 'MTA' in white on a blue circular background.
+### [p062_c0003] ■ Welds (2,000 joints planned)
+[p062_c0004]
+
+```text
+■ GCT 4 joints completed ■ Hudson Line 14 joints completed ■ Harlem Line 16 joints completed ■ New Haven 58 joints completed ■ West Of Hudson 0 joints completed ■ Port Jervis 0 joints completed Total 2021 92 joints completed 5% of goal
+```
+### [p062_c0005] ■ Loram Rail Grinder (82 miles planned)
+[p062_c0006]
+
+```text
+■ Hudson Line 13.4 miles planned 0 miles complete 0% ■ Harlem 7.5 miles planned 4 miles complete 47% ■ New Haven 61.5 miles planned 54 miles complete 88% Total 2021 82.4 miles planned 58 miles complete 70% of goal
+```
+[p062_c0007] _* All subject to change due to current events_
+
+## Page 63
+
+### [p063_c0001] Master Page # 63 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+> [p063_c0002] The MTA logo, consisting of the letters 'MTA' in white inside a blue circle.
+### [p063_c0003] ■ Switch Renewal - 1,500 Switches systemwide (35 switches planned)
+[p063_c0004]
+
+```text
+■ GCT 8 switches planned 8 switches completed 100% complete ■ Hudson 6 switches planned 0 switches completed 0% complete ■ Harlem 4 switches planned 1 switches completed 0% complete ■ New Haven 16 switches planned 5 switches completed 31% complete ■ Waterbury 1 switch planned 0 switches completed 0% complete Total 2021 35 switches planned 14 switches completed 40% of goal
+```
+[p063_c0005] * All subject to change due to current events
+
+## Page 64
+
+### [p064_c0001] Master Page # 64 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p064_c0002] ■ Grade Crossing Renewal – 111 Grade Crossings systemwide (4 crossings planned)
+[p064_c0003]
+
+```text
+▫ Harlem Line 2 crossings planned 0 complete 0% ▫ New Haven ▫ ▫ Waterbury 1 crossings planned 0 complete 0% ▫ West of Hudson 1 crossings planned 0 complete 0% Total 2021 4 crossings plan 0 complete 0% of goal
+```
+### [p064_c0004] ■ Surfacing - 754 track miles systemwide (46.4 miles planned)
+[p064_c0005]
+
+```text
+▫ Hudson Line 1.5 miles planned 0.5 completed ▫ Harlem Line 8.0 miles planned 9.8 completed ▫ New Haven - NY 13.0 miles planned 2.4 completed ▫ New Haven - CT 23.9 miles planned 5.8 completed Total 2021 46.4 miles planned 18.4 completed 40% of goal
+```
+[p064_c0006] _* All subject to change due to current events_
+
+## Page 65
+
+### [p065_c0001] Master Page # 65 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+> [p065_c0002] The MTA logo, consisting of the letters 'MTA' in white on a blue circular background, is centered at the top of the slide.
+- [p065_c0003] ■ Ultrasonic Rail Testing (1,480 miles planned, 2 runs per year) ■ 415 miles completed ■ Total defects found from testing: 51 ■ EnSCO Geometry (2x per year) Contracted for 6 tests over 3 years ■ 1 st run – April 2021 ■ GCT Station Track Rehabilitation (44 Platforms systemwide, 2 Platforms Planned) ■ Track 114 (100% complete) ■ 56 bracket ties, 672 block ties, 1,300 ft. of rail ■ Track 39 (0% complete)
+[p065_c0004] * All subject to change due to current events
+
+## Page 66
+
+### [p066_c0001] Master Page # 66 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+> [p066_c0002] The MTA logo, consisting of the letters 'MTA' in white on a blue circular background, is centered at the top of the slide.
+### [p066_c0003] ■ Overhead Bridge Program (NY) Bridge Flag Repairs (Harlem, Hudson New Haven-NY/Port Jervis Line)
+- [p066_c0004] ■ Typical repairs include replacing deteriorated members, rebuilding deteriorated bridge seats, repairing abutment walls, repairing load bearing supports timber deck replacements. ■ HUD 5.19 East 144 th Street - Steel Repairs (0% complete) ■ HUD 14.43 Ludlow Street – Flag Repairs (0% complete) ■ HUD 21.05 Bible Factory Truss – Flag Repairs (33% complete) ■ HUD 31.20 Westerly Road – Flag Repairs (100% complete) ■ HUD 38.90 Montrose Station Road – Flag Repairs (0% complete) ■ NH 12.85 South Street – flag Repairs (0% complete) ■ NH 16.37 Centre Ave – Flag Repair (75% complete) ■ NH 20.73 Hillside Ave – Flag Repairs (0% complete) ■ NH 20.89 North Barry – Flag Repairs (50% complete)
+
+## Page 67
+
+### [p067_c0001] Master Page # 67 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p067_c0002] ■ Bridge Timbers (NY only – 887 Timbers planned)
+[p067_c0003]
+
+```text
+■ NH 25.54 Westchester Ave Tks 2 60 timbers 100% complete ■ NH 25.68 Kings Street Tk 2 67 timbers 100% complete ■ NH 25.94 North Main Street Trk 2 115 timbers 100% complete ■ PJ – JS 32.06 Ramapo River Tk 1 & 2 212 timbers 0% complete ■ PJ – JS 39.16 Wildcat Run Tk 1 27 timbers 0% complete ■ PJ – JS 39.55 Stream Tk 1 21 timbers 0% complete ■ PJ – JS 47.88 Smith Clove Road 35 timbers 0% complete ■ PJ – JS 55.03 Moodna Viaduct Tk 1 180 timbers 0% complete ■ PJ - JS 64.79 Wappingers Creek 170 timbers 0% complete Total 2021 887 Timbers planned 33% complete
+```
+[p067_c0004] _* All subject to change due to current events_
+
+## Page 68
+
+### [p068_c0001] Master Page # 68 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+> [p068_c0002] The MTA logo, consisting of the letters 'MTA' in white on a blue circular background.
+### [p068_c0003] ■ NY Undergrade Bridge Repair Program
+- [p068_c0004] ■ Hudson ■ Grand Central Terminal (MP 1.0) – Flag Repairs (40% complete) ■ Park Ave Viaduct (MP 3.01) – Masonry Arch Repairs, Waterproofing (60% complete) ■ Park Ave Viaduct (MP 3.01) – Flag Repair (49 Flags Total: 35% complete) ■ Wappinger Falls (MP 64.79) – Flag Repairs (40% complete) ■ Harlem ■ Bronx River (MP19.35) – Flag Repairs (0% complete) ■ Port Jervis ■ Pond Brook (MP 33.94 JS) – Flag Repairs (100% complete) ■ Ramapo River (MP 42.77 JS – Flag Repairs (25% complete) ■ Laura Lane (MP 47.73) – Replacement (5% complete) ■ Woodbury Creek – (MP 50.17) – Flag Repairs (85% complete) ■ Moodna Creek – MP50.17 Flag Repairs (95% complete) ■ Shea Road (MP 63.04) – Masonry Repairs (70% complete)
+
+## Page 69
+
+### [p069_c0001] Master Page # 69 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p069_c0002] CT Bridge Projects
+### [p069_c0003] ■ Bridge Timbers (CT only – 721 ties planned)
+[p069_c0004]
+
+```text
+■ NH 33.75 Elm St. Tks 3 & 4 106 timbers 0% complete ■ NH 34.17 East Main St. Tk 3& 5 181 timbers 0% complete ■ NH 40.89 Franklin (Spring Street) Tks 1 & 2 86 timbers 0% complete ■ NH 53.84 Howard Avenue Tk 2 53 timbers 0% complete ■ NH 54.77 Warren Street Tk 2 48 timbers 0% complete ■ NH 54.84 Lafayette Street Tk 2 50 timbers 0% complete ■ NH 56.20 East Main Street Tk 3 56 timbers 0% complete ■ NH 57.46 Bishop Ave Tk 3 48 timbers 0% complete ■ NH 57.62 Bruce Ave Tk 3 31 timbers 0% complete ■ NH 59.96 East Main Street Tk 3 39 timbers 0% complete ■ NH 63.83 Gulf Street Tk 4 23 timbers 0% complete Total 2021 721 Timbers planned 0% complete
+```
+[p069_c0005] * All subject to change due to current events
+
+## Page 70
+
+### [p070_c0001] Master Page # 70 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+> [p070_c0002] The MTA logo, consisting of the letters 'MTA' in white on a blue circular background, is centered at the top of the slide.
+### [p070_c0003] ■ S-Program (New Haven – CT only)
+- [p070_c0004] ■ East Main Street (NH 34.17) – Steel Repairs (100% complete) ■ Elm Street (NH 33.75) – Steel repairs (60% complete) ■ Mill River (NH 49.66) – Steel repairs (50% complete) ■ Park Ave (NH 54.58) – Steel repairs (70% complete) ■ Pembroke Ave (NH 56.35) – Steel repairs (85% complete) ■ Naugatuck River (WB 10.3) – Steel repairs (80% complete)
+[p070_c0005] * All subject to change due to current events
+
+## Page 71
+
+### [p071_c0001] Master Page # 71 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+> [p071_c0002] The MTA logo, consisting of the letters 'MTA' in white inside a blue circle, is centered on a dark grey horizontal bar.
+### [p071_c0003] ■ Cos Cob NH 29.90 (Greenwich, CT)
+- [p071_c0004] ■ Complete construction of 1,200' new Track 3 walkway (90% complete)
+### [p071_c0005] ■ Saga NH 44.32 (Westport, CT)
+- [p071_c0006] ■ Fabricated/install steel ties, install expansion and thick web miter rails on Track 2 (100% complete)
+### [p071_c0007] ■ Right of Way Fence
+- [p071_c0008] ■ Install/repair 400' ft of fence throughout systemwide (50% complete)
+### [p071_c0009] ■ Graffiti Removal Program
+- [p071_c0010] ■ Hudson & Harlem - cleaned graffiti off various buildings, bridges, retaining walls & rock cuts
+[p071_c0011] * All subject to change due to current events
+
+## Page 72
+
+### [p072_c0001] METRO-NORTH RAILROAD MNR
+### [p072_c0002] EEO Report – 1 st Quarter 2021
+[p072_c0003] May 26, 2021
+> [p072_c0004] The MTA logo, consisting of the letters 'MTA' in white inside a dark grey circle.
+[p072_c0005] _Master Page # 72 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 73
+
+### [p073_c0001] Master Page # 73 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p073_c0002] Executive Summary
+### [p073_c0003] □ EEO
+[p073_c0004] As of March 31, 2021 , MNR's workforce included 6,276 total employees. This represents a 5% decrease from the first quarter 2020 (1Q20) workforce.
+- [p073_c0005] □ Females represent 13% (802) of our workforce, remaining constant, when compared to 1Q20 due to limited hiring and recruitment activity. □ There were no New Hires in the first quarter 2021 (1Q21). □ Minorities represent 39% (2,474) of our workforce, remaining constant, when compared to 1Q20 due to limited hiring and recruitment activity.
+> [p073_c0006] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+
+## Page 74
+
+### [p074_c0001] Master Page # 74 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p074_c0002] Executive Summary
+[p074_c0003] MNR conducted a utilization analysis* of females and minorities in its workforce as of March 31, 2021. Based on the analysis, the majority of underrepresentation for females and minorities occurred in the following EEO categories:
+### [p074_c0004] Females:
+- [p074_c0005] Technicians – Asians
+### [p074_c0006] Minorities:
+- [p074_c0007] Professionals – Blacks Technicians – Hispanics and Asians Administrative Support – Blacks and Hispanics Skilled Craft – AI/AN Service Maintenance – Hispanics
+[p074_c0008] *The utilization analysis compares the percentages of females and minorities employed in each job group to 80 percent of the females and minorities available within the relevant labor market.
+> [p074_c0009] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+
+## Page 75
+
+### [p075_c0001] Master Page # 75 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p075_c0002] Executive Summary
+### [p075_c0003] □ Diversity Initiatives to increasing representation*
+[p075_c0004] □ Initiatives/challenges to address underrepresentation for females and minorities.
+- [p075_c0005] □ Female In celebration of Women's History Month, MNR President Rinaldi engaged in a virtual appearance with Manhattan Borough President Gale Brewer where they discussed female mentoring, building relationships, and strategies to help women prosper during the COVID-19 pandemic. In a joint initiative with the Internal/External Communications Department, MNR featured several of our female employees in MTA Today , highlighting their work achievements and job histories. HR continued its initiative to recruit females by engaging in virtual events, including those sponsored by the CTE Industry Connection, the NYC DOE and NYC DCAS CityTalk Panel Discussion: "Women in City Government". □ Minority As Black History Month employee engagement, MNR produced a series of video presentations featuring multi-generational Black families that work at MNR, to honor this year's theme "The Black Family: Representation, Identity and Diversity". The videos were presented through MTA Today and MNR's other digital platforms. □ Veteran HR participated in the following events focused on veterans: New York National Guard Employment Support Program Virtual Event, US Chamber of Commerce's Hiring Our Heroes - Virtual Hiring Fair: Transportation, Supply Chain & Logistics, US Chamber of Commerce's Hiring Our Heroes Virtual Career Fair: Public Sector. □ Persons with disability HR participated in the following web events: National Business & Disability Council at the Viscardi Center; NYU Business Advisory Council; 2021 CUNY Neurodiversity Conference
+[p075_c0006] * Due to COVID-19, the recruitment efforts for the period of January 1 st to March 31 st were performed virtually.
+> [p075_c0007] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark grey circle.
+
+## Page 76
+
+[p076_c0001] MNR's
+### [p076_c0002] Workforce
+[p076_c0003] as of March 31, 2021
+> [p076_c0004] The MTA logo, consisting of the letters 'MTA' in white inside a dark grey circle.
+[p076_c0005] _Master Page # 76 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 77
+
+### [p077_c0001] Master Page # 77 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p077_c0002] Definitions of EEO Job Categories
+### [p077_c0003] Officials & Administrators
+[p077_c0004] Occupations in which employees set broad policies, exercise overall responsibility for execution of these policies, or direct individual departments or special phases of the agency's operations, or provide specialized consultation on a regional, district or area basis.
+### [p077_c0005] Professionals
+[p077_c0006] Occupations which require specialized and theoretical knowledge which is usually acquired through college training or through work experience and other training which provides comparable knowledge.
+### [p077_c0007] Technicians
+[p077_c0008] Occupations which require a combination of basic scientific or technical knowledge and manual skill which can be obtained through specialized post-secondary school education or through equivalent on-the-job training.
+### [p077_c0009] Protective Services
+[p077_c0010] Occupations in which workers are entrusted with public safety, security and protection from destructive forces.
+### [p077_c0011] Paraprofessionals
+[p077_c0012] Occupations in which workers perform some of the duties of a professional or technician in a supportive role, which usually require less formal training and/or experience normally required for professional or technical status.
+### [p077_c0013] Administrative Support
+[p077_c0014] Occupations in which workers are responsible for internal and external communication, recording and retrieval of data and/or information and other paperwork required in an office.
+### [p077_c0015] Skilled Craft
+[p077_c0016] Occupations in which workers perform jobs which require special manual skill and a thorough and comprehensive knowledge of the process involved in the work which is acquired through on-the-job training and experience or through apprenticeship or other formal training programs.
+### [p077_c0017] Service Maintenance
+[p077_c0018] Occupations in which workers perform duties which result in or contribute to the comfort, convenience, hygiene or safety of the general public or which contribute to the upkeep and care of buildings, facilities or grounds of public property.
+> [p077_c0019] The logo for the Metropolitan Transportation Authority (MTA) is located in the bottom left corner. It consists of a dark grey circle with the letters 'MTA' in white, bold, sans-serif font.
+
+## Page 78
+
+### [p078_c0001] Master Page # 78 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p078_c0002] MNR's Workforce
+[p078_c0003]
+
+```text
+JOB CATEGORY TOTAL Minorities Est Avail WHITES Est Avail BLACKS Est Avail HISPANICS Est Avail ASIANS Est Avail AI/AN* Est Avail NHOPi** Est Avail 2+ RACES Est Avail VETERANS PWD*** # % # % % # % # % % # % % # % # % % # % % # % % # % % # % % # % % # % Officials & Administrators 746 286 38% 30% 460 62% 50% 102 14% 14% 72 10% 8% 72 10% 5% 2 0% 0% 0 0% 0% 38 5% 4% 51 7% 13 2% F 182 24% 107 14% 10% 75 10% 7% 37 5% 5% 28 4% 2% 32 4% 2% 1 0% 0% 0 0% 0% 9 1% 1% 2 4% 2 15% M 564 76% 179 24% 20% 385 52% 43% 65 9% 9% 44 6% 6% 40 5% 3% 1 0% 0% 0 0% 0% 29 4% 3% 49 96% 11 85% Professionals 242 128 53% 35% 114 47% 45% 48 20% 16% 35 14% 10% 31 13% 6% 1 0% 0% 0 0% 0% 13 5% 3% 4 2% 3 1% F 82 34% 57 24% 14% 25 10% 9% 28 12% 7% 15 6% 4% 11 5% 2% 1 0% 0% 0 0% 0% 2 1% 1% 0 0% 1 33% M 160 66% 71 29% 21% 89 37% 35% 20 8% 9% 20 8% 6% 20 8% 4% 0 0% 0% 0 0% 0% 11 5% 3% 4 100% 2 67% Technicians 129 58 45% 32% 71 55% 48% 29 22% 15% 12 9% 10% 9 7% 3% 1 1% 0% 0 0% 0% 7 5% 3% 19 15% 3 2% F 13 10% 9 7% 4% 4 3% 3% 5 4% 2% 2 2% 1% 0 0% 1% 0 0% 0% 0 0% 0% 2 2% 0% 2 11% 0 0% M 116 90% 49 38% 28% 67 52% 45% 24 19% 13% 10 8% 9% 9 7% 3% 1 1% 0% 0 0% 0% 5 4% 3% 17 89% 3 100% Protective Services F M Paraprofessionals 11 3 27% 20% 8 73% 60% 1 9% 7% 1 9% 7% 0 0% 0% 0 0% 0% 0 0% 0% 1 9% 7% 0 0% 0 0% F 6 55% 2 18% 13% 4 36% 33% 1 9% 7% 1 9% 7% 0 0% 0% 0 0% 0% 0 0% 0% 0 0% 0% 0 0% 0 0% M 5 45% 1 9% 7% 4 36% 27% 0 0% 0% 0 0% 0% 0 0% 0% 0 0% 0% 0 0% 0% 1 9% 7% 0 0% 0 0% Administrative Support 318 191 60% 43% 127 40% 37% 114 36% 25% 47 15% 12% 9 3% 2% 1 0% 0% 1 0% 0% 19 6% 4% 18 6% 8 3% F 132 42% 104 33% 15% 28 9% 4% 66 21% 9% 21 7% 3% 5 2% 1% 1 0% 0% 1 0% 0% 10 3% 1% 2 11% 2 25% M 186 58% 87 27% 29% 99 31% 33% 48 15% 16% 26 8% 9% 4 1% 1% 0 0% 0% 0 0% 0% 9 3% 3% 16 89% 6 75% Skilled Craft 3,215 1082 34% 29% 2,133 66% 51% 543 17% 15% 338 11% 9% 46 1% 1% 15 0% 1% 0 0% 0% 140 4% 3% 303 9% 28 1% F 57 2% 36 1% 1% 21 1% 1% 28 1% 1% 6 0% 0% 0 0% 0% 0 0% 0% 0 0% 0% 2 0% 0% 5 2% 1 4% M 3,158 98% 1046 33% 28% 2,112 66% 50% 515 16% 14% 332 10% 9% 46 1% 1% 15 0% 1% 0 0% 0% 138 4% 3% 298 98% 27 96% Service Maintenance 1,615 726 45% 41% 889 55% 37% 402 25% 22% 220 14% 16% 29 2% 2% 4 0% 0% 0 0% 0% 71 4% 3% 69 4% 9 1% F 330 20% 210 13% 7% 120 7% 2% 135 8% 5% 48 3% 3% 5 0% 0% 1 0% 0% 0 0% 0% 21 1% 1% 6 9% 5 56% M 1,285 80% 516 32% 34% 769 48% 34% 267 17% 17% 172 11% 13% 24 1% 1% 3 0% 0% 0 0% 0% 50 3% 3% 63 91% 4 44% Total 6,276 2,474 39% 3,802 61% 1,239 20% 725 12% 196 3% 24 0% 1 0% 289 5% 464 7% 64 1%
+```
+[p078_c0004] * American Indian/Alaskan Native
+[p078_c0005] **Native Hawaiian Other Pacific Islander
+[p078_c0006] Note: All percentages have been rounded up to the nearest whole number.
+
+## Page 79
+
+### [p079_c0001] Master Page # 79 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p079_c0002] MNR's Workforce
+[p079_c0003] _WORKFORCE BY GENDER_
+> [p079_c0004] A 3D pie chart titled 'WORKFORCE BY GENDER'. The chart is divided into two segments: a large orange segment representing 'Males' at 87% and a smaller light green segment representing 'Females' at 13%. Labels with leader lines point to each segment. Gender Percentage Males 87% Females 13%
+[p079_c0005] _WORKFORCE BY RACE/ETHNICITY_
+> [p079_c0006] A 3D pie chart titled 'WORKFORCE BY RACE/ETHNICITY'. The chart is divided into five segments: a large yellow segment for 'Whites' at 61%, a light blue segment for 'Blacks' at 20%, an orange segment for 'Hispanics' at 11%, a light green segment for '2+ Races' at 5%, and a small dark blue segment for 'Asians' at 3%. Labels with leader lines point to each segment. Race/Ethnicity Percentage Whites 61% Blacks 20% Hispanics 11% 2+ Races 5% Asians 3%
+[p079_c0007] MNR's workforce consists of 6,276 employees
+- [p079_c0008] ❑ 13% females, 39% minorities, and 7% veterans. ❑ The percentage of females employed remained constant when compared to 1Q20. ❑ The percentage of minorities employed remained constant as it relates to race and ethnicity when compared to 1Q20.
+> [p079_c0009] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark grey circle.
+
+## Page 80
+
+### [p080_c0001] Underutilization Analysis Overview
+[p080_c0002] A utilization analysis was conducted to determine whether there is underutilization of females and minorities in its workforce. This analysis consists of comparing March 31, 2021 workforce percentages for females and minorities to 80 percent of the females and minorities available within the relevant labor market. Underutilization exists if the percentage of females or minorities in a job category is less than 80 percent of their expected estimated availability.
+[p080_c0003] The following chart provide shaded/bolded areas that represent below 80 percent of the Census availability or underutilization: (1) the female and minority workforce percentages for this agency; (2) 80 percent of the females and minorities available for work based on the 2010 Census by job category; and (3) whether or not the estimated availability percentages were met for females and minorities within each of the job categories.
+> [p080_c0004] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark grey circle.
+[p080_c0005] _Master Page # 80 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 81
+
+### [p081_c0001] Master Page # 81 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p081_c0002] MNR Underutilization Analysis
+[p081_c0003]
+
+```text
+JOB CATEGORY Gender BLACKS HISPANIC ASIANS AI/AN NHOPI 2+ RACES WHITES Est Avail Actual % Est Avail Actual % Est Avail Actual % Est Avail Actual % Est Avail Actual % Est Avail Actual % Est Avail Actual % Officials & Administrators F 5% 5% 2% 4% 2% 4% 0% 0% 0% 0% 1% 1% 7% 10% M 9% 9% 6% 6% 3% 5% 0% 0% 0% 0% 3% 4% Professionals F 7% 12% 4% 6% 2% 5% 0% 0% 0% 0% 1% 1% 9% 10% M 9% 8% 6% 8% 4% 8% 0% 0% 0% 0% 3% 5% Technicians F 2% 4% 1% 2% 1% 0% 0% 0% 0% 0% 0% 2% 3% 3% M 13% 19% 9% 8% 3% 7% 0% 1% 0% 0% 3% 4% Protective Services F M Paraprofessionals F 7% 9% 7% 9% 0% 0% 0% 0% 0% 0% 0% 0% 33% 36% M 0% 0% 0% 0% 0% 0% 0% 0% 0% 0% 7% 9% Administrative Support F 9% 21% 3% 7% 1% 2% 0% 0% 0% 0% 1% 3% 4% 9% M 16% 15% 9% 8% 1% 1% 0% 0% 0% 0% 3% 3% Skilled Craft F 1% 1% 0% 0% 0% 0% 0% 0% 0% 0% 0% 0% 1% 1% M 14% 16% 9% 10% 1% 1% 1% 0% 0% 0% 3% 4% Service Maintenance F 5% 8% 3% 3% 0% 0% 0% 0% 0% 0% 1% 1% 2% 7% M 17% 17% 13% 11% 1% 1% 0% 0% 0% 0% 3% 3%
+```
+[p081_c0004] *American Indian/Alaskan Native
+[p081_c0005] **Native Hawaiian Other Pacific Islander
+[p081_c0006] Note: Pursuant to FTA Circular 4704.1A, EEO requirements and guideline, white males have been excluded from the underutilization analysis. The shaded areas represent underutilization.
+
+## Page 82
+
+[p082_c0001] MNR's
+### [p082_c0002] New Hires and Veterans
+[p082_c0003] January 1, 2021 – March 31, 2021
+> [p082_c0004] The MTA logo, consisting of the letters 'MTA' in white inside a dark grey circle.
+[p082_c0005] _Master Page # 82 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 83
+
+### [p083_c0001] MNR's New Hires and Veterans
+[p083_c0002] There were no New Hires in the first quarter 2021 (1Q21).
+> [p083_c0003] The MTA logo, consisting of the letters 'MTA' in white inside a dark grey circle.
+[p083_c0004] _Master Page # 83 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 84
+
+[p084_c0001] MNR's
+### [p084_c0002] Complaints and Lawsuits
+[p084_c0003] January 1, 2021 – March 31, 2021
+> [p084_c0004] The MTA logo, consisting of the letters 'MTA' in white inside a dark grey circle.
+[p084_c0005] _Master Page # 84 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 85
+
+### [p085_c0001] Master Page # 85 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p085_c0002] MNR's Internal/External EEO Complaints and Lawsuits
+### [p085_c0003] INTERNAL EEO COMPLAINTS
+> [p085_c0004] Basis Percentage Race/Color 40% Sexual Harassment 9% Gender 15% Religion 6% National Origin 12% Disability 12% Retaliation 6%
+### [p085_c0005] EXTERNAL EEO COMPLAINTS
+> [p085_c0006] Basis Percentage Disability 28% Retaliation 28% Other 8% Race/Color 16% Age 12% Gender 4% National Origin 4%
+[p085_c0007] MNR handled 41 EEO complaints, citing 58 separate allegations, and 7 lawsuits.
+- [p085_c0008] ☐ Handled 26 internal complaints. ☐ Handled 15 external complaints. ☐ The most frequently cited basis internally was race/color and externally were retaliation and disability.
+[p085_c0009] These charts include all pending matters as of the date of the report; including matters filed prior to the reporting period.
+[p085_c0010] "Other" contains all EEO categories not otherwise specifically mentioned on the chart (i.e. Retaliation, Sexual Orientation, Military status, or Marital Status etc.).
+
+## Page 86
+
+### [p086_c0001] Master Page # 86 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p086_c0002] MNR's EEO Complaints and Lawsuits Dispositions
+[p086_c0003] _OVERALL EEO COMPLAINTS AND LAWSUITS DISPOSITIONS_
+> [p086_c0004] A 3D pie chart with a single green slice. Below the slice, text reads: "DECIDED IN FAVOR OF AGENCY 100%".
+[p086_c0005] _EEO COMPLAINTS AND LAWSUITS DISPOSITIONS_
+> [p086_c0006] A bar chart comparing EEO Internal (green) and EEO External (orange) dispositions across six categories. The y-axis ranges from 0% to 100% in 20% increments. The x-axis categories are: DECIDED IN FAVOR OF AGENCY, DECIDED IN FAVOR OF COMPLAINANT, ADMINISTRATIVE CLOSURE, WITHDRAWN, DISMISSED, and RESOLVED/SETTLEMENT. A legend at the bottom indicates: EEO Internal (green), EEO External (orange), and EEO Lawsuits (yellow). The bars for EEO Internal and EEO External are nearly identical, showing 100% for 'DECIDED IN FAVOR OF AGENCY' and 0% for all other categories. Disposition EEO Internal (%) EEO External (%) EEO Lawsuits (%) DECIDED IN FAVOR OF AGENCY 100 100 0 DECIDED IN FAVOR OF COMPLAINANT 0 0 0 ADMINISTRATIVE CLOSURE 0 0 0 WITHDRAWN 0 0 0 DISMISSED 0 0 0 RESOLVED/SETTLEMENT 0 0 0
+[p086_c0007] MNR disposed 4 EEO complaints and 0 EEO lawsuits.
+- [p086_c0008] ☐ 100% complaints/lawsuits decided in favor of the agency. ☐ 0% complaints/lawsuits decided in favor of the complainant. ☐ 0% complaints/lawsuits were administrative closures. ☐ 0% complaints/lawsuits were resolved/settled. ☐ 0% of complaints/lawsuits were withdrawn.
+> [p086_c0009] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark grey circle.
+
+## Page 87
+
+### [p087_c0001] Master Page # 87 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p087_c0002] MNR's Title VI Discrimination Complaints, Lawsuits and Dispositions
+### [p087_c0003] TITLE VI DISCRIMINATION COMPLAINTS
+> [p087_c0004] A 3D pie chart representing the breakdown of Title VI Discrimination Complaints. The chart is entirely green, indicating 100% for the category 'RACE'. A label 'RACE 100%' is positioned below the chart with a line pointing to the green surface.
+### [p087_c0005] TITLE VI DISPOSITIONS
+> [p087_c0006] A 3D pie chart representing the dispositions of Title VI complaints and lawsuits. The chart is entirely green, indicating 100% for the category 'DECIDED IN FAVOR OF AGENCY'. A label 'DECIDED IN FAVOR OF AGENCY 100%' is positioned below the chart with a line pointing to the green surface.
+[p087_c0007] MNR handled 9 Title VI Complaints, citing 9 separate allegations and 0 Title VI lawsuits. Agency disposed of 1 complaints and 0 lawsuits.
+- [p087_c0008] 100% complaints/lawsuits decided in favor of the agency. 0% complaints/lawsuits were administrative closures. 0% complaints/lawsuits decided in favor of the complainant. 0% complaints/lawsuits were resolved/settled.
+> [p087_c0009] The logo for the Metropolitan Transportation Authority (MTA), featuring the letters 'MTA' in a bold, sans-serif font inside a dark grey circle.
+
+## Page 88
+
+> [p088_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a blue circle.
+### [p088_c0002] Long Island Rail Road
+### [p088_c0003] April 2021 Performance Summary
+[p088_c0004] Robert Free, Senior Vice President – Operations
+### [p088_c0005] BEFORE
+> [p088_c0006] A photograph of the interior of Jamaica Station before the April 2021 improvements. The signage is small and lacks clear, large fonts. A prominent sign at the top right points to the 'LIRR Ticket Lobby' and 'Buses, Taxis'. Other signs point to 'Elevator to LIRR Tracks' and 'Subway'. The overall appearance is cluttered and less legible.
+### [p088_c0007] AFTER
+> [p088_c0008] A photograph of the same area in Jamaica Station after the April 2021 improvements. The signage is now much larger and more vibrant. A large sign at the top left clearly displays '2 Track'. Other signs for 'Track 2', 'Long Island Rail Road', and '1 Track' are also prominent. The 'Subway' and 'Elevators' signs are also larger and more distinct. The overall appearance is cleaner and more modern.
+[p088_c0009] April 2021: The Long Island Rail Road unveiled improvements to signage throughout Jamaica Station. Larger fonts and vibrant colors now make it easier for customers to find their train, subway, bus, or way to JFK Airport AirTrain.
+[p088_c0010] _Master Page # 88 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 89
+
+> [p089_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p089_c0002] Long Island Rail Road
+### [p089_c0003] April 2021 Performance Summary
+### [p089_c0004] Highlights
+[p089_c0005] On-Time Performance (OTP) for the month of April closed at 96.5% , which is above the monthly goal of 94.0%. 2021 year-to-date OTP is 96.1% , which is an increase of 1.0 percentage point as compared to last year.
+### [p089_c0006] Branch Performances
+[p089_c0007] Nine out of eleven branches on the Long Island Rail Road operated above goal for the month of April, while all branches are at or above goal year to date.
+### [p089_c0008] Delays
+[p089_c0009] There were six incidents this month that resulted in ten or more late/cancelled/terminated trains, which unfavorably impacted our On-Time Performance by 0.7%. Customers were delayed on average 19.8 minutes due to these incidents.
+### [p089_c0010] Consist Compliance
+[p089_c0011] 100% of our trains met established consist requirements during the peak periods for the month of April.
+### [p089_c0012] Equipment Performance
+[p089_c0013] The LIRR fleet MDBF operated at 229,202 in March and exceeded the goal. It also performed better, year to date, than the same period last year.
+[p089_c0014] _Master Page # 89 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 90
+
+### [p090_c0001] OPERATING REPORT FOR MONTH OF APRIL 2021
+### [p090_c0002] Performance Summary
+[p090_c0003]
+
+```text
+2021 Data 2020 Data Annual YTD thru YTD thru Goal April April April April On Time Performance (Trains that arrive at their final destination within 5 minutes 59 seconds of scheduled arrival time) System Overall 94.0% 96.5% 96.1% 98.3% 95.1% AM Peak 98.1% 96.2% 0.0% 92.2% PM Peak 96.4% 97.1% 0.0% 92.1% Total Peak 97.3% 96.6% 0.0% 92.2% Off Peak Weekday 96.3% 95.5% 98.1% 95.7% Weekend 96.2% 97.1% 98.9% 96.3% Babylon Branch Overall 93.9% 97.8% 96.9% 99.0% 95.3% AM Peak 99.5% 96.1% 0.0% 92.5% PM Peak 98.4% 98.3% 0.0% 92.7% Total Peak 99.0% 97.2% 0.0% 92.6% Off Peak Weekday 98.7% 97.1% 99.1% 96.7% Weekend 94.0% 96.3% 98.8% 95.0% Far Rockaway Branch Overall 96.6% 97.9% 98.0% 99.0% 97.6% AM Peak 99.5% 98.6% 0.0% 94.8% PM Peak 98.1% 99.1% 0.0% 96.7% Total Peak 98.9% 98.8% 0.0% 95.7% Off Peak Weekday 97.3% 97.3% 98.9% 97.8% Weekend 98.6% 99.0% 99.4% 98.5% Huntington Branch Overall 92.5% 97.4% 95.7% 98.7% 94.1% AM Peak 97.9% 95.5% 0.0% 92.1% PM Peak 98.2% 97.1% 0.0% 84.8% Total Peak 98.1% 96.3% 0.0% 88.7% Off Peak Weekday 97.7% 94.8% 98.6% 95.2% Weekend 95.4% 97.1% 98.9% 95.7% Hempstead Branch Overall 96.5% 95.1% 96.6% 99.3% 95.2% AM Peak 98.7% 97.9% 0.0% 94.7% PM Peak 94.7% 98.0% 0.0% 85.6% Total Peak 96.9% 97.9% 0.0% 90.4% Off Peak Weekday 92.5% 95.0% 99.3% 95.8% Weekend 98.7% 98.5% 99.4% 97.3% Long Beach Branch Overall 95.9% 98.1% 97.5% 96.9% 94.5% AM Peak 99.1% 98.0% 0.0% 93.6% PM Peak 100.0% 99.1% 0.0% 92.0% Total Peak 99.5% 98.5% 0.0% 92.8% Off Peak Weekday 97.7% 96.7% 96.3% 94.5% Weekend 97.2% 98.2% 98.5% 96.0% Montauk Branch Overall 90.8% 93.4% 94.0% 98.5% 94.2% AM Peak 96.8% 95.4% 0.0% 87.9% PM Peak 95.5% 96.5% 0.0% 94.9% Total Peak 96.2% 95.8% 0.0% 91.2% Off Peak Weekday 95.0% 93.5% 98.7% 96.5% Weekend 88.3% 93.8% 98.2% 91.5% Oyster Bay Branch Overall 94.1% 98.0% 95.9% 97.8% 95.7% AM Peak 99.1% 96.7% 0.0% 92.9% PM Peak 100.0% 99.4% 0.0% 92.8% Total Peak 99.5% 97.9% 0.0% 92.8% Off Peak Weekday 97.5% 94.5% 97.5% 96.2% Weekend 97.3% 97.1% 98.6% 98.0%
+```
+[p090_c0004] _Master Page # 90 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 91
+
+### [p091_c0001] OPERATING REPORT FOR MONTH OF APRIL 2021
+[p091_c0002]
+
+```text
+Performance Summary 2021 Data 2020 Data Annual YTD thru YTD thru Goal April April April April Port Jefferson Branch Overall 90.9% 95.5% 94.1% 96.6% 91.2% AM Peak 98.7% 94.7% 0.0% 89.4% PM Peak 93.5% 94.7% 0.0% 87.1% Total Peak 96.1% 94.7% 0.0% 88.3% Off Peak Weekday 94.7% 93.5% 96.4% 90.0% Weekend 97.1% 94.7% 97.5% 96.5% Port Washington Branch Overall 95.3% 91.8% 95.3% 98.5% 97.2% AM Peak 89.9% 93.2% 0.0% 94.4% PM Peak 85.1% 92.6% 0.0% 95.8% Total Peak 87.3% 92.9% 0.0% 95.1% Off Peak Weekday 90.9% 94.7% 98.1% 97.3% Weekend 99.7% 98.3% 99.8% 98.9% Ronkonkoma Branch Overall 91.6% 97.7% 95.1% 98.1% 93.4% AM Peak 99.1% 95.6% 0.0% 89.1% PM Peak 99.2% 97.3% 0.0% 93.2% Total Peak 99.2% 96.4% 0.0% 90.9% Off Peak Weekday 97.0% 93.6% 97.9% 93.4% Weekend 97.4% 96.9% 98.7% 96.1% West Hempstead Branch Overall 95.8% 98.8% 98.4% 93.2% 96.3% AM Peak 100.0% 98.4% 0.0% 92.3% PM Peak 100.0% 98.2% 0.0% 95.6% Total Peak 100.0% 98.3% 0.0% 94.1% Off Peak Weekday 98.2% 98.1% 92.2% 96.7% Weekend 98.6% 99.2% 98.7% 97.9% Operating Statistics Trains Scheduled 17,224 69,943 15,667 76,782 Avg. Delay per Late Train (min) -12.3 -12.6 -12.8 -11.2 excluding trains canceled or terminated Trains Over 15 min. Late 87 417 54 512 excluding trains canceled or terminated Trains Canceled 27 180 17 140 Trains Terminated 56 201 19 100 Percent of Scheduled Trips Completed 99.5% 99.5% 99.8% 99.7% Consist Compliance (Percent of trains where the number of seats provided was greater than or equal to the required number of seats per loading standards) AM Peak 100.0% PM Peak 100.0% Total Peak 100.0%
+```
+[p091_c0003] _Master Page # 91 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 92
+
+### [p092_c0001] OPERATING REPORT FOR MONTH OF APRIL 2021
+[p092_c0002]
+
+```text
+System Categories Of Delay % Total 2021 2021 Data 2020 Data YTD 2021 Vs 2020 Mar Apr YTD Thru Apr Apr YTD Thru Apr Engineering (Scheduled) 7.3% 43 44 147 13 205 (58) Engineering (Unscheduled) 16.3% 116 98 457 57 624 (167) Maintenance of Equipment 11.7% 78 70 283 25 356 (73) Transportation 2.8% 21 17 64 14 171 (107) Capital Projects 22.0% 280 132 510 31 352 158 Weather and Environmental 0.8% 26 5 307 61 205 102 Police 16.5% 45 99 281 35 392 (111) Customers 7.7% 56 46 168 14 800 (632) Special Events 0.8% 1 5 6 - 30 (24) Other 10.5% 108 63 228 18 303 (75) 3rd Party Operations 3.5% 47 21 245 3 333 (88) Total 100.0% 821 600 2,696 271 3,771 (1,075)
+```
+[p092_c0003] _Master Page # 92 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 93
+
+### [p093_c0001] Long Island Rail Road
+### [p093_c0002] OPERATING REPORT FOR MONTH OF APRIL 2021
+### [p093_c0003] EVENTS RESULTING IN 10 or MORE LATE (L), CANCELED (C) OR TERMINATED (T) TRAINS
+[p093_c0004]
+
+```text
+Date Day DESCRIPTION OF EVENT AM Peak PM Peak Off Peak TOTAL L C T L C T L C T Late Cold Term 2-Apr Fri Scheduled track work on the Port Washington Branch 6 6 7 19 20-Apr Tue Trespasser strike at Greenlawn Station 3 3 3 1 6 1 3 21-Apr Wed Scheduled track work on the Port Washington Branch 1 2 7 10 21-Apr Wed Track condition east of Garden City Station 1 5 25 1 30 24-Apr Sat Trespasser strike at Merrick Station 32 3 1 32 3 1 24-Apr Sat Train 8774 delayed in Valley Interlocking with equipment trouble 8 4 8 4 TOTAL FOR MONTH 7 0 0 11 1 8 57 8 26 75 9 34 118
+```
+[p093_c0005] _Master Page # 93 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 94
+
+### [p094_c0001] Long Island Rail Road
+### [p094_c0002] MEAN DISTANCE BETWEEN FAILURES - MARCH 2021
+[p094_c0003]
+
+```text
+Equipment Type Total Fleet Owned 2021 Data 2020 Data MDBF Goal (miles) March MDBF (miles) March No. of Primary Failures YTD MDBF thru March (miles) 12 month MDBF Rolling Avg (miles) March MDBF (miles) March No. of Primary Failures YTD MDBF thru March (miles) Mean Distance Between Failures M-3 142 60,000 0 0 0 - 92,341 5 71,064 M-7 836 360,000 432,851 9 371,050 441,152 750,309 7 447,278 M-9 78 180,000 113,802 2 176,538 248,196 145,308 0 215,489 C-3 134 103,000 111,179 5 159,140 119,901 104,865 7 166,254 DE 24 19,000 21,713 3 20,442 21,040 45,251 2 22,643 DM 21 19,000 34,473 2 27,048 24,584 79,743 1 36,200 Diesel 179 51,000 68,998 10 74,646 66,278 90,430 10 85,491 Fleet 1,235 170,000 229,202 21 230,340 243,741 307,431 22 224,784
+```
+[p094_c0004] Mean Distance Between Failures (MDBF) is the average number of miles a railcar or locomotive travels before breaking down and causing a delay. The higher the MDBF, the more reliable the equipment and the service.
+[p094_c0005] Note: M3 was not in service in 2021 M-T-D. M9 had no mechanical primary failures in Mar-20.
+### [p094_c0006] ALL FLEETS Mean Distance Between Failure 2017 - 2021
+> [p094_c0007] Thousands Approximate Data from Chart (Thousands) Year MDBF (Bar) Monthly MDBF (Bar) Target 12 Month MDBF (Line) 2017 205 2018 185 2019 185 2020 240 2021 230 Apr-20 385 160 195 May-20 265 160 195 Jun-20 195 160 195 Jul-20 230 160 205 Aug-20 330 160 215 Sep-20 275 160 225 Oct-20 230 160 235 Nov-20 225 160 240 Dec-20 215 160 245 Jan-21 245 170 250 Feb-21 215 170 250 Mar-21 230 170 245 ■ MDBF ■ Monthly MDBF — Target —●— 12 Month MDBF
+[p094_c0008] _Master Page # 94 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 95
+
+### [p095_c0001] Long Island Rail Road
+### [p095_c0002] OPERATING REPORT FOR MONTH OF APRIL 2021
+### [p095_c0003] Standee Report
+### [p095_c0004] East Of Jamaica
+[p095_c0005]
+
+```text
+2021 Data April AM Peak PM Peak Daily Average Babylon Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 Far Rockaway Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 Huntington Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 Hempstead Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 Long Beach Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 Montauk Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 Oyster Bay Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 Port Jefferson Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 Port Washington Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 Ronkonkoma Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 West Hempstead Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 System Wide PEAK 0 0
+```
+### [p095_c0006] Definitions
+[p095_c0007] Weekday standees are calculated based on the most recent average weekday customer counts
+[p095_c0008] "Program Standees" is the average number of customers in excess of programmed seating capacity.
+[p095_c0009] "Additional Standees" reflect the impact of reduced train car consists (as reported in the weekday equipment reports).
+[p095_c0010] Note: These statistics do not include the effects of daily ridership variation or uneven distribution of customers within trains.
+[p095_c0011] Holidays and Special Events for which there are special equipment programs are not included.
+[p095_c0012] _Master Page # 95 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 96
+
+### [p096_c0001] Long Island Rail Road
+### [p096_c0002] Standee Report
+### [p096_c0003] West Of Jamaica
+### [p096_c0004] OPERATING REPORT FOR MONTH OF APRIL 2021
+[p096_c0005]
+
+```text
+2021 Data April AM Peak PM Peak Daily Average Babylon Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 Far Rockaway Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 Huntington Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 Hempstead Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 Long Beach Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 Montauk Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 Oyster Bay Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 Port Jefferson Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 Port Washington Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 Ronkonkoma Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 West Hempstead Branch Program Standees 0 0 Add'l Standees 0 0 Total Standees 0 0 System Wide PEAK 0 0
+```
+### [p096_c0006] Definitions
+[p096_c0007] Weekday standees are calculated based on the most recent average weekday customer counts
+[p096_c0008] "Program Standees" is the average number of customers in excess of programmed seating capacity.
+[p096_c0009] "Additional Standees" reflect the impact of reduced train car consists (as reported in the weekday equipment reports).
+[p096_c0010] Note: These statistics do not include the effects of daily ridership variation or uneven distribution of customers within trains.
+[p096_c0011] Holidays and Special Events for which there are special equipment programs are not included.
+[p096_c0012] _Master Page # 96 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 97
+
+### [p097_c0001] Long Island Rail Road
+### [p097_c0002] OPERATING REPORT FOR THE MONTH OF APRIL 2021
+### [p097_c0003] ELEVATOR AND ESCALATOR OPERATING REPORT FOR THE MONTH OF APRIL 2021
+[p097_c0004]
+
+```text
+Elevator Availability 2021 2020 April Year to Date April Year to Date Branch Babylon Branch 99.5% 99.3% 99.4% 99.5% Far Rockaway Branch 99.0% 99.3% 99.6% 99.6% Hempstead Branch 99.4% 99.6% 99.6% 99.7% Long Beach Branch 99.7% 99.6% 99.5% 99.6% Port Jefferson Branch 99.6% 99.1% 99.2% 98.9% Port Washington Branch 98.9% 98.9% 98.6% 99.5% Ronkonkoma Branch 99.3% 99.3% 93.1% 98.2% City Terminal Branch 97.1% 96.5% 99.4% 99.0% Overall Average 98.7% 98.5% 98.0% 98.7%
+```
+[p097_c0005]
+
+```text
+Escalator Availability 2021 2020 April Year to Date April Year to Date Branch Babylon Branch 96.7% 97.3% 98.1% 98.9% Far Rockaway Branch 91.1% 84.6% 99.0% 98.3% Hempstead Branch 98.9% 98.9% 99.2% 99.2% Long Beach Branch 97.4% 98.3% 78.2% 92.1% Port Jefferson Branch 99.0% 97.9% 99.1% 99.0% City Terminal Branch 94.4% 93.3% 95.3% 95.7% Overall Average 95.7% 95.1% 96.4% 97.4%
+```
+[p097_c0006] _Master Page # 97 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 98
+
+### [p098_c0001] MTA Long Island Rail Road
+### [p098_c0002] Long Island Rail Road Performance Metrics Report
+> [p098_c0003] A photograph of a Long Island Rail Road train car, number 7776, stopped at a station platform. The train is black and yellow with the MTA logo and 'Long Island Rail Road' text. A pedestrian bridge is visible in the background.
+[p098_c0004] _Master Page # 98 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 99
+
+### [p099_c0001] On Time Performance
+[p099_c0002] The percentage of trains that arrive at their final destination within 5 minutes and 59 seconds of their scheduled arrival time.
+[p099_c0003]
+
+```text
+Goal 2021 2020 April YTD April YTD 94.0% 96.5% 96.2% 98.3% 95.1%
+```
+> [p099_c0004] On-Time Performance by Month Month 2018 2019 2020 2021 January 83.4% 92.7% 97.2% 97.2% February 93.2% 92.1% 94.3% 95.6% March 88.1% 94.6% 95.3% 95.3% April 94.0% 95.3% 98.3% 96.5% May 92.3% 94.8% 98.5% 98.5% June 92.1% 91.4% 97.5% 97.5% July 88.9% 89.8% 96.2% 96.2% August 87.4% 92.1% 93.3% 93.3% September 92.4% 90.5% 97.7% 97.7% October 93.2% 91.8% 97.2% 97.2% November 86.9% 90.7% 95.2% 95.2% December 93.5% 92.7% 95.6% 95.6%
+### [p099_c0005] Number of Track Circuit Failures
+[p099_c0006] The number of track circuit malfunctions that result in at least one train delay.
+[p099_c0007]
+
+```text
+Goal 2021 2020 April YTD April YTD 44 2 3 3 5
+```
+> [p099_c0008] Track Circuit Failures by Month Month 2018 2019 2020 2021 January 4 8 1 1 February 5 5 0 0 March 4 8 1 1 April 5 3 3 2 May 7 7 1 1 June 8 3 2 1 July 14 2 1 1 August 12 1 3 1 September 5 3 3 1 October 9 1 3 1 November 9 1 4 1 December 4 4 4 4
+[p099_c0009] _Master Page # 99 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 100
+
+### [p100_c0001] Number of Short Trains*
+[p100_c0002] The total number of AM and PM peak trains that operate with fewer cars than planned.
+[p100_c0003]
+
+```text
+2021 2020 Goal April YTD April YTD 2,828 annually 49 297 0 440
+```
+> [p100_c0004] Short Trains by Month Data Month 2018 2019 2020 2021 January 587 474 177 83 February 212 144 81 0 March 303 189 119 0 April 228 126 0 0 May 205 0 0 0 June 253 172 172 0 July 294 237 137 0 August 385 220 187 0 September 191 139 139 0 October 219 130 130 0 November 477 326 123 0 December 420 274 141 0
+[p100_c0005] * The LIRR did not record any short trains in April or May 2020 (and a reduced number in March) due to the fact that this metric measures peak trains, and peak train service was suspended at the height of the COVID-19 pandemic. This renders the 2019, 2020 and 2021 YTD comparisons less meaningful.
+[p100_c0006] _Master Page # 100 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 101
+
+### [p101_c0001] Fare Not Collected Rate
+[p101_c0002] The percent of instances that an MTA Auditor's ticket was not collected.
+[p101_c0003]
+
+```text
+Goal 2021 2020 April YTD April YTD 5.0% 2.1% 3.3% - 6.8%
+```
+> [p101_c0004] Fare Not Collected Rate by Month Year: 2018 (Green), 2019 (Blue), 2020 (Teal), 2021 (Grey) Month 2018 2019 2020 2021 January 8.60% 5.70% 5.20% 2.60% February 5.20% 7.10% 7.60% 2.90% March 7.20% 5.80% 5.10% 5.10% April 6.00% 4.70% 2.10% 2.10% May 9.60% 2.80% 2.80% 2.80% June 5.10% 6.10% 6.10% 6.10% July 6.10% 7.60% 2.10% 2.10% August 8.00% 5.60% 3.30% 3.30% September 6.60% 4.60% 3.30% 3.30% October 4.50% 5.70% 1.50% 1.50% November 6.60% 4.10% 2.80% 2.80% December 6.40% 5.80% 2.80% 2.80% Goal: 5.0%
+- [p101_c0005] • In July 2020, the LIRR resumed its onboard revenue compliance program utilizing MTA Auditors after suspending it due to the ongoing COVID-19 pandemic March through June. In April 2021, the LIRR reported a Fare Not Collected Rate of 2.1%. There is no available data to compare this to from April 2020 as the onboard revenue compliance program was suspended in March 2020. • Since Auditor observations were suspended between March and June, the comparisons between 2019, 2020 and 2021 YTD are therefore less meaningful.
+[p101_c0006] _Master Page # 101 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 102
+
+### [p102_c0001] Incorrect Fare Collected Rate
+[p102_c0002] The percent of instances that an MTA Auditor was encountered by a conductor who either sold an incorrect type of ticket or accepted the incorrect type of ticket.
+[p102_c0003]
+
+```text
+Goal 2021 2020 April YTD April YTD 10.0% 10.0% 8.7% - 13.7%
+```
+> [p102_c0004] Incorrect Fare Collected by Month Monthly Incorrect Fare Collected Rate Data Month 2018 2019 2020 2021 January 14.50% 9.70% 14.50% 10.00% February 11.90% 10.10% 11.90% 10.00% March 10.60% 28.10% 10.60% 4.00% April 9.10% 17.30% 9.10% 10.00% May 14.30% 16.70% 14.30% 10.00% June 36.70% 20.80% 36.70% 10.00% July 17.50% 20.90% 17.50% 10.00% August 37.10% 17.10% 37.10% 10.00% September 35.00% 17.70% 35.00% 10.00% October 17.50% 13.80% 17.50% 10.00% November 17.60% 13.20% 17.60% 3.30% December 15.80% 15.50% 15.80% 10.00%
+- [p102_c0005] • In July 2020, the LIRR resumed its onboard revenue compliance program utilizing MTA Auditors after suspending it due to the ongoing COVID-19 pandemic March through June. In April 2021, the LIRR reported an Incorrect Fare Collected Rate of 10.0%. There is no available data to compare this to from April 2020 as the onboard revenue compliance program was suspended in March 2020. • Additionally, since no peak fares are in effect it is less likely that auditors will observe instances of incorrect fare collection, so current month and year-to year comparisons are less meaningful.
+[p102_c0006] _Master Page # 102 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 103
+
+### [p103_c0001] Credit Card Chargeback Rate
+[p103_c0002] The percent of instances that a credit card transaction is disputed by the card holder including fraud.
+[p103_c0003]
+
+```text
+Goal 2021 2020 April YTD April YTD 0.10% 0.02% 0.04% 2.63% 0.18%
+```
+> [p103_c0004] Credit Card Chargeback Rate by Month Year: 2018 (Green), 2019 (Blue), 2020 (Teal), 2021 (Grey) Estimated Chargeback Rates by Month Month 2018 2019 2020 2021 January 0.11% 0.72% 0.12% 0.12% February 0.12% 0.84% 0.12% 0.12% March 0.16% 0.70% 0.12% 0.12% April 0.17% 0.85% 2.63% 0.17% May 0.17% 0.62% 0.62% 0.17% June 0.21% 0.21% 0.21% 0.21% July 0.29% 0.29% 0.29% 0.29% August 0.39% 0.39% 0.39% 0.39% September 0.47% 0.47% 0.47% 0.47% October 0.47% 0.47% 0.47% 0.47% November 0.60% 0.60% 0.60% 0.60% December 0.69% 0.69% 0.69% 0.69% Goal: 0.10%
+[p103_c0005] _Master Page # 103 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 104
+
+> [p104_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p104_c0002] Long Island Rail Road
+### [p104_c0003] Financial Report Highlights
+[p104_c0004] April 2021
+> [p104_c0005] A photograph of a Long Island Rail Road train, specifically a R152A model, traveling along a track. The train is silver with a yellow front and has the number "7032" on its front. It is moving towards the viewer on a set of tracks. In the background, there are green trees, a brick building, and a city skyline with several skyscrapers, including the One Vanderbilt building under construction. The sky is a warm, hazy orange, suggesting either sunrise or sunset.
+[p104_c0006] _Master Page # 104 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 105
+
+### [p105_c0001] Long Island Rail Road
+### [p105_c0002] Financial Report Highlights
+[p105_c0003] The Long Island Rail Road's Monthly Financial Report provides year-to-date fiscal information comparing actual revenues, expenses and staffing levels to the Adopted Budget and key financial performance indicators.
+### [p105_c0004] April 2021 Highlights
+- [p105_c0005] • Total revenue of $200.8 million was $24.7 million higher than the budget. This was primarily due to higher farebox revenue and the timing of reimbursements for capital activity. • Through April 2021 ridership was 7.6 million, which was (55.2)% below 2020 and (73.6)% below 2019 pre-COVID levels (adjusted for the same number of work days), and 36.0% above the budget. Commutation ridership of 2.5 million was (74.2)% below 2020 and (22.6)% below the budget. Non-Commutation ridership of 5.1 million was (29.4)% below 2020 and 118.2% above the budget. Consequently, farebox revenue of $62.3 million was $15.5 million higher than the budget. • Total expenses before non-cash liability adjustments of $615.5 million were $65.8 million or 9.7% favorable to the budget. The primary drivers of this favorable variance are vacant positions and associated fringe costs, the timing of expenses for material usage and maintenance services, and lower OPEB current, other business expenses, overtime and electric expenses.
+[p105_c0006] Financial results for Year-to-Date (YTD) April 2021 are presented in the table below and compared to the budget.
+[p105_c0007]
+
+```text
+Category ($ in Millions) Budget Actual Variance Total Revenue $176.1 $200.8 $24.7 Total Expenses Before Non-Cash Liabilities 681.4 615.5 65.8 Net Surplus/(Deficit) Before Non-Cash Liabilities ($505.2) ($414.7) $90.5 Other Non-Cash Liabilities 146.3 155.0 (8.6) Net Surplus/(Deficit) After Non-Cash Liabilities ($651.6) ($569.7) $81.9 Cash Adjustments 109.6 107.4 (2.2) Net Cash Surplus/(Deficit) ($542.0) ($462.3) $79.6
+```
+[p105_c0008] Mark Young
+[p105_c0009] Vice President, Management and Finance
+[p105_c0010] _Master Page # 105 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 106
+
+> [p106_c0001] The logo for the Metropolitan Transportation Authority (MTA) is a blue circle with the letters "MTA" in white, bold, sans-serif font.
+### [p106_c0002] Long Island Rail Road
+### [p106_c0003] Financial Report Highlights
+### [p106_c0004] NON-REIMBURSABLE SUMMARY
+[p106_c0005] April YTD operating results were favorable by $81.9 or 12.6% lower than the budget.
+[p106_c0006] Non-Reimbursable revenues through April were $16.4 favorable to the budget. Farebox Revenue was favorable as a result of higher ridership, partially offset by lower yield per passenger. Other Operating Revenues were favorable to budget due to the timing of rental revenue and higher miscellaneous revenues, partially offset by lower advertising revenue. Total Non-Reimbursable expenses were $65.5 favorable due to vacant positions and associated fringe costs, the timing of materials, maintenance and professional services, and lower OPEB current, electric and other business expenses.
+[p106_c0007] YTD capital and other reimbursable expenditures (and reimbursements) were $8.3 higher than the budget due to timing of capital and other reimbursements.
+### [p106_c0008] REVENUE/RIDERSHIP
+[p106_c0009] Year-to-Date Total Revenues (including Capital and Other Reimbursements) of $200.8 were $24.7 or 14.0% favorable to the budget.
+- [p106_c0010] • Y-T-D Farebox Revenues were $15.5 favorable to the budget due to higher ridership, partially offset by lower yield per passenger. Ridership through April was 7.6 million. This was (55.2)% lower than 2020 (adjusted for same number of calendar work days) and 36.0% higher than the budget. • Y-T-D Other Operating Revenues were $0.8 favorable to the budget due to the timing of rental revenue and higher miscellaneous revenues, partially offset by lower advertising revenue. • Y-T-D Capital and Other Reimbursements were $8.3 favorable due to timing of capital activity and interagency reimbursements.
+### [p106_c0011] EXPENSES
+[p106_c0012] Year-to Date Total Expenses (including depreciation and other) of $770.5 were favorable to the budget by $57.2 or 6.9%.
+[p106_c0013] Labor Expenses , $35.1 favorable Y-T-D.
+- [p106_c0014] • Payroll , $15.4 favorable Y-T-D (primarily vacant positions). • Overtime , $4.8 favorable Y-T-D (primarily lower maintenance overtime, capital project activity and scheduled/unscheduled service, partially offset by higher vacancy/absentee coverage and weather-related overtime). • Health & Welfare , $5.2 favorable Y-T-D (vacant positions). • OPEB Current Payment , $5.4 favorable Y-T-D (fewer retirees/beneficiaries than projected). • Other Fringe , $3.9 favorable Y-T-D (primarily lower Railroad Retirement Taxes due to vacant positions, partially offset by higher Railroad Unemployment Insurance and the timing of FELA indemnity reserves).
+[p106_c0015] _Master Page # 106 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 107
+
+> [p107_c0001] The MTA logo consists of the letters "MTA" in a bold, white, sans-serif font, set against a dark blue circular background.
+### [p107_c0002] Long Island Rail Road
+### [p107_c0003] Financial Report Highlights
+### [p107_c0004] Non-Labor Expenses , $30.7 favorable Y-T-D.
+- [p107_c0005] • Electric Power , $4.0 favorable Y-T-D (lower usage). • Fuel , $(1.2) unfavorable Y-T-D (higher rates). • Insurance , $2.2 favorable Y-T-D (lower liability and force account insurance). • Maintenance and Other Operating Contracts , $6.3 favorable Y-T-D (primarily the timing of elevator & escalator services and vehicle purchases, the timing of invoices for other maintenance services and lower joint facility services, partially offset by the timing of Moynihan Train Hall expenses). • Professional Services , $1.3 favorable Y-T-D (primarily the timing of inspections, rolling stock decommissioning, fiber optic invoices and MTA Chargebacks, partially offset by higher project expense). • Materials and Supplies , $13.7 favorable Y-T-D (primarily timing of fleet maintenance and modifications, and right of way initiatives). • Other Business Expenses , $3.7 favorable Y-T-D (primarily due to a reduction in bad debt reserves and lower credit/debit card fees and miscellaneous expenses).
+### [p107_c0006] Depreciation and Other , $(8.6) unfavorable Y-T-D depreciation and environmental remediation.
+### [p107_c0007] CASH DEFICIT SUMMARY
+[p107_c0008] The Cash Deficit through April of $(462.3) was $79.6 favorable to the budget due to the timing of capital and other reimbursements, higher farebox revenue and lower expenditures, partially offset by prior year Railroad Retirement tax payments and the timing of other operating revenue.
+### [p107_c0009] FINANCIAL PERFORMANCE MEASURES
+- [p107_c0010] • The year-to-date April Farebox Operating Ratio was 12.7%, 4.4 percentage points above the budget resulting from higher farebox revenue and lower expenses. • The April Adjusted Farebox Operating Ratio was 16.1%, which is above the budget due to higher farebox revenue and lower expenses. • The April Adjusted Cost per Passenger was $58.89, which is lower than the budget due to higher ridership and lower expenses. • The April Revenue per Passenger was $8.18, which was $(0.17) below the budget.
+[p107_c0011] _Master Page # 107 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 108
+
+### [p108_c0001] Master Page # 108 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+[p108_c0002] _TABLE 1_
+### [p108_c0003] MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET ACCRUAL STATEMENT of OPERATIONS by CATEGORY APRIL 2021 ($ in millions)
+[p108_c0004]
+
+```text
+Nonreimbursable Reimbursable Total Budget Actual Favorable (Unfavorable) Budget Actual Favorable (Unfavorable) Budget Actual Favorable (Unfavorable) Variance Percent Variance Percent Variance Percent Revenue Farebox Revenue $14,938 $17,982 $3,045 20.4 $0.000 $0.000 $0.000 - $14,938 $17,982 $3,045 20.4 Vehicle Toll Revenue 0.000 0.000 0.000 - 0.000 0.000 0.000 - 0.000 0.000 0.000 - Other Operating Revenue 2,421 1,878 (0.543) (22.4) 0.000 0.000 0.000 - 2,421 1,878 (0.543) (22.4) Capital & Other Reimbursements 0.000 0.000 0.000 - 32,656 37,330 4,673 14.3 32,656 37,330 4,673 14.3 Total Revenue $17,359 $19,861 $2,502 14.4 $32,656 $37,330 $4,673 14.3 $50,015 $57,190 $7,175 14.3 Expenses Labor: Payroll $53,079 $49,166 $3,914 7.4 $11,139 $10,802 $0,337 3.0 $64,219 $59,968 $4,251 6.6 Overtime 10,746 8,794 1,952 18.2 4,804 4,130 0,674 14.0 15,550 12,924 2,626 16.9 Health and Welfare 11,055 9,539 1,516 13.7 2,657 2,660 (0.003) (0.1) 13,712 12,199 1,513 11.0 OPEB Current Payment 6,521 5,094 1,427 21.9 0.000 0.000 0.000 - 6,521 5,094 1,427 21.9 Pensions 13,980 15,154 (1,174) (8.4) 4,317 3,143 1,174) 27.2 18,297 18,297 0.000 0.0 Other Fringe Benefits 13,815 12,291 1,524 11.0 2,717 2,885 (0.168) (6.2) 16,532 15,176 1,356 8.2 Reimbursable Overhead (1,051) (2,889) 1,838 * 1,051 2,889 (1,838) * 0.000 0.000 0.000 - Total Labor Expenses $108,146 $97,149 $10,997 10.2 $26,686 $26,509 $0,177 0.7 $134,832 $123,658 $11,174 8.3 Non-Labor: Electric Power $6,518 $4,658 $1,860 28.5 $0.022 $0.026 ($0.004) (17.4) $6,540 $4,684 $1,857 28.4 Fuel 1,212 2,004 (0.792) (65.3) 0.000 0.000 0.000 - 1,212 2,004 (0.792) (65.3) Insurance 2,019 1,602 0.416 20.6 0.637 0.617 0.020 3.1 2,655 2,219 0.436 16.4 Claims 0.384 0.057 0.328 85.2 0.000 0.000 0.000 - 0.384 0.057 0.328 85.2 Paratransit Service Contracts 0.000 0.000 0.000 - 0.000 0.000 0.000 - 0.000 0.000 0.000 - Maintenance and Other Operating Contracts 7,458 6,327 1,130 15.2 1,244 1,784 (0.540) (43.5) 8,701 8,111 0.590 6.8 Professional Service Contracts 3,196 3,040 0.156 4.9 0.063 1,536 (1.473) * 3,259 4,576 (1.317) (40.4) Materials & Supplies 12,789 21,370 (8,581) (67.1) 3,969 6,804 (2,835) (71.4) 16,758 28,174 (11,416) (68.1) Other Business Expenses 1,110 0.723 0.387 34.9 0.037 0.054 (0.017) (46.3) 1,146 0.776 0.370 32.3 Total Non-Labor Expenses $34,686 $39,781 ($5,095) (14.7) $5,970 $10,821 ($4,850) (81.2) $40,657 $50,602 ($9,945) (24.5) Other Expense Adjustments: Other $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - Total Other Expense Adjustments $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - Total Expenses before Depreciation & Other Post Employment Benefits $142,832 $136,930 $5,902 4.1 $32,656 $37,330 ($4,673) (14.3) $175,488 $174,260 $1,228 0.7 Depreciation $34,792 $38,510 ($3,718) (10.7) $0.000 $0.000 $0.000 - $34,792 $38,510 ($3,718) (10.7) GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 - 0.000 0.000 0.000 - 0.000 0.000 0.000 - GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 - 0.000 0.000 0.000 - 0.000 0.000 0.000 - Environmental Remediation 0.167 0.167 0.000 0.0 0.000 0.000 0.000 - 0.167 0.167 0.000 0.0 Total Expenses $177,790 $175,607 $2,184 1.2 $32,656 $37,330 ($4,673) (14.3) $210,447 $212,937 ($2,490) (1.2) Net Surplus/(Deficit) ($160,432) ($155,746) $4,685 2.9 $0.000 $0.000 $0.000 - ($160,432) ($155,746) $4,685 2.9 Cash Conversion Adjustments Depreciation $34,792 $38,510 $3,718 10.7 $0.000 $0.000 $0.000 - 34,792 $38,510 $3,718 10.7 Operating/Capital (1,816) (0.792) 1,024 56.4 0.000 0.000 0.000 - (1,816) (0.792) 1,024 56.4 Other Cash Adjustments (22,691) (8,543) 14,148 62.3 0.000 0.000 0.000 - (22,691) (8,543) 14,148 62.3 Total Cash Conversion Adjustments $10,285 $29,175 $18,890 * 0.000 $0.000 $0.000 - $10,285 $29,175 $18,890 * Net Cash Surplus/(Deficit) ($150,147) ($126,572) $23,575 15.7 $0.000 $0.000 $0.000 - ($150,147) ($126,572) $23,575 15.7
+```
+[p108_c0005] _Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current months' actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results._
+
+## Page 109
+
+### [p109_c0001] Master Page # 109 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+[p109_c0002] _TABLE 2_
+### [p109_c0003] MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET ACCRUAL STATEMENT of OPERATIONS by CATEGORY APRIL Year-To-Date ($ in millions)
+[p109_c0004]
+
+```text
+Nonreimbursable Reimbursable Total Budget Actual Favorable (Unfavorable) Budget Actual Favorable (Unfavorable) Budget Actual Favorable (Unfavorable) Variance Percent Variance Percent Variance Percent Revenue Farebox Revenue $46,739 $62,270 $15,530 33.2 $0,000 $0,000 $0,000 - $46,739 $62,270 $15,530 33.2 Vehicle Toll Revenue 0,000 0,000 0,000 - 0,000 0,000 0,000 - 0,000 0,000 0,000 - Other Operating Revenue 9,022 9,853 0,831 9.2 0,000 0,000 0,000 - 9,022 9,853 0,831 9.2 Capital & Other Reimbursements 0,000 0,000 0,000 - 120,346 128,676 8,331 6.9 120,346 128,676 8,331 6.9 Total Revenue $55,761 $72,122 $16,361 29.3 $120,346 $128,676 $8,331 6.9 $176,107 $200,799 $24,692 14.0 Expenses Labor: Payroll $199,550 $182,258 $17,292 8.7 $42,858 $44,796 ($1,938) (4.5) $242,408 $227,054 $15,354 6.3 Overtime 43,082 40,130 2,952 6.9 16,758 14,909 1,849 11.0 59,840 55,039 4,801 8.0 Health and Welfare 44,559 38,975 5,584 12.5 10,022 10,449 (0,427) (4.3) 54,581 49,424 5,157 9.4 OPEB Current Payment 26,085 20,684 5,401 20.7 0,000 0,000 0,000 - 26,085 20,684 5,401 20.7 Pensions 56,905 60,219 (3,313) (5.8) 16,283 12,454 3,828 23.5 73,188 72,673 0,515 0.7 Other Fringe Benefits 55,098 50,162 4,935 9.0 10,248 11,332 (1,084) (10.6) 65,346 61,495 3,851 5.9 Reimbursable Overhead (4,309) (12,118) 7,809 * 4,309 12,118 (7,809) * 0,000 0,000 0,000 - Total Labor Expenses $420,970 $380,310 $40,660 9.7 $100,478 $106,059 ($5,581) (5.6) $521,448 $486,369 $35,079 6.7 Non-Labor: Electric Power $28,046 $24,056 $3,989 14.2 $0,084 $0,087 ($0,004) (4.4) $28,129 $24,144 $3,985 14.2 Fuel 5,483 6,650 (1,167) (21.3) 0,000 0,000 0,000 - 5,483 $6,650 (1,167) (21.3) Insurance 8,006 6,231 1,774 22.2 2,274 1,866 0,409 18.0 10,280 $8,097 2,183 21.2 Claims 1,537 0,829 0,709 46.1 0,000 0,000 0,000 - 1,537 $0,829 0,709 46.1 Paratransit Service Contracts 0,000 0,000 0,000 - 0,000 0,000 0,000 - 0,000 0,000 0,000 - Maintenance and Other Operating Contracts 30,419 23,801 6,618 21.8 4,772 5,138 (0,365) (7.7) 35,191 $28,938 6,253 17.8 Professional Service Contracts 13,190 10,083 3,107 23.6 0,222 1,994 (1,772) * 13,412 $12,077 1,335 10.0 Materials & Supplies 48,890 34,231 14,659 30.0 12,377 13,322 (0,945) (7.6) 61,267 $47,553 13,714 22.4 Other Business Expenses 4,463 0,672 3,791 84.9 0,139 0,211 (0,073) (52.2) 4,602 $0,884 3,719 80.8 Total Non-Labor Expenses $140,034 $106,554 $33,480 23.9 $19,868 $22,617 ($2,750) (13.8) $159,902 $129,171 $30,731 19.2 Other Expense Adjustments Other $0,000 $0,000 $0,000 - $0,000 $0,000 $0,000 - 0,000 $0,000 $0,000 - Total Other Expense Adjustments $0,000 $0,000 $0,000 - $0,000 $0,000 $0,000 - $0,000 $0,000 $0,000 - Total Expenses before Depreciation & Other Post Employment Benefits $561,004 $486,864 $74,141 13.2 $120,346 $128,676 ($8,331) (6.9) $681,350 $615,540 $65,810 9.7 Depreciation $145,667 $153,567 (7,900) (5.4) $0,000 $0,000 $0,000 - $145,667 $153,567 (7,900) (5.4) GASB 75 OPEB Expense Adjustment 0,000 0,000 0,000 - 0,000 0,000 0,000 - 0,000 0,000 0,000 - GASB 68 Pension Expense Adjustment 0,000 0,000 0,000 - 0,000 0,000 0,000 - 0,000 0,000 0,000 - Environmental Remediation 0,667 1,393 (0,727) * 0,000 0,000 0,000 - 0,667 1,393 (0,727) * Total Expenses $707,338 $641,824 $65,514 9.3 $120,346 $128,676 ($8,331) (6.9) $827,683 $770,500 $57,184 6.9 Net Surplus/(Deficit) ($651,577) ($569,701) $81,875 12.6 $0,000 $0,000 $0,000 - ($651,577) ($569,701) $81,875 12.6 Cash Conversion Adjustments Depreciation $145,667 $153,567 $7,900 5.4 $0,000 $0,000 $0,000 - 145,667 $153,567 $7,900 5.4 Operating/Capital (5,068) (1,965) 3,103 61.2 0,000 0,000 0,000 - (5,068) (1,965) 3,103 61.2 Other Cash Adjustments (31,001) (44,249) (13,248) (42.7) 0,000 0,000 0,000 - (31,001) (44,249) (13,248) (42.7) Total Cash Conversion Adjustments $109,598 $107,353 ($2,245) (2.0) $0,000 $0,000 $0,000 - $109,598 $107,353 ($2,245) (2.0) Net Cash Surplus/(Deficit) ($541,979) ($462,349) $79,630 14.7 $0,000 $0,000 $0,000 0.0 ($541,979) ($462,349) $79,630 14.7
+```
+[p109_c0005] _Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current months' actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results._
+
+## Page 110
+
+[p110_c0001] _TABLE 3_
+### [p110_c0002] MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET EXPLANATION OF VARIANCES BETWEEN ADOPTED BUDGET AND ACTUAL: ACCRUAL BASIS ($ in millions)
+[p110_c0003]
+
+```text
+April 2021 Year-to-Date April 2021 Generic Revenue or Expense Category Non Reimb. Or Reimb. Favorable/ (Unfavorable) Variance Reason for Variance Favorable/ (Unfavorable) Variance Reason for Variance $ % $ % Revenue Farebox Revenue Non Reimb. 3.045 20.4 Higher ridership $2.597 and higher yield per passenger $0.448. 15.530 33.2 Higher ridership $16.813, partially offset by lower yield per passenger $(1.283). Other Operating Revenue Non Reimb. (0.543) (22.4) Primarily due to lower advertising revenue and the timing of miscellaneous revenue, partially offset by the timing of rental revenue. 0.831 9.2 Primarily due to the timing of rental revenue and higher miscellaneous revenue, partially offset by lower advertising revenue. Capital & Other Reimbursements Reimb. 4.673 14.3 Timing of capital project activity and interagency reimbursements. 8.331 6.9 Timing of capital project activity and interagency reimbursements. Expenses Payroll Non Reimb. 3.914 7.4 Primarily vacant positions. 17.292 8.7 Primarily vacant positions. Reimb. 0.337 3.0 Primarily due to timing of project activity. (1.938) (4.5) Primarily due to timing of project activity. Overtime Non Reimb. 1.952 18.2 Lower programmatic/routine maintenance, scheduled/unscheduled service and vacancy/absentee coverage. 2.952 6.9 Lower programmatic/routine maintenance and scheduled/ unscheduled service, partially offset by vacancy/absentee coverage, unscheduled maintenance and weather-related overtime. Reimb. 0.674 14.0 Lower capital reimbursable activity. 1.849 11.0 Lower capital reimbursable activity. Health and Welfare Non Reimb. 1.516 13.7 Vacant positions. 5.584 12.5 Vacant positions. Reimb. (0.003) (0.1) Primarily due to timing of project activity. (0.427) (4.3) Primarily due to timing of project activity. OPEB Current Payment Non Reimb. 1.427 21.9 Fewer retirees/beneficiaries. 5.401 20.7 Fewer retirees/beneficiaries. Pensions Non Reimb. (1.174) (8.4) Total pension is on plan. However the estimated percentage of pension allocated to reimbursable was over-estimated. (3.313) (5.8) The estimated percentage of pension allocated to reimbursable was over-estimated, partially offset by the timing of payments. Reimb. 1.174 27.2 Total pension is on plan. However the estimated percentage of pension allocated to reimbursable was over-estimated. 3.828 23.5 The estimated percentage of pension allocated to reimbursable was over-estimated.
+```
+[p110_c0004] _Master Page # 110 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 111
+
+[p111_c0001] _TABLE 3_
+### [p111_c0002] MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET EXPLANATION OF VARIANCES BETWEEN ADOPTED BUDGET AND ACTUAL: ACCRUAL BASIS ($ in millions)
+[p111_c0003]
+
+```text
+Generic Revenue or Expense Category Non Reimb. Or Reimb. April 2021 Reason for Variance Year-to-Date April 2021 Favorable/ (Unfavorable) Variance Favorable/ (Unfavorable) Variance Reason for Variance $ % $ % Other Fringe Benefits Non Reimb. 1,524 11.0 Lower Railroad Retirement Taxes due to vacant positions, partially offset by the timing of FELA Indemnity reserves and higher Railroad Unemployment Insurance. 4,935 9.0 Lower Railroad Retirement Taxes due to vacant positions, partially offset by higher Railroad Unemployment Insurance and the timing of FELA indemnity reserves. Reimb. (0.168) (6.2) Primarily due to timing of project activity. (1.084) (10.6) Primarily due to timing of project activity. Reimbursable Overhead Non Reimb. 1,838 * Primarily due to timing of project activity. 7,809 * Primarily due to timing of project activity. Reimb. (1,838) * Primarily due to timing of project activity. (7,809) * Primarily due to timing of project activity. Electric Power Non Reimb. 1,860 28.5 Primarily due to lower usage, partially offset by higher rates. 3,989 14.2 Primarily due to lower usage. Reimb. (0.004) (17.4) (0.004) (4.4) Fuel Non Reimb. (0.792) (65.3) Primarily due to higher rates. (1.167) (21.3) Primarily due to higher rates. Insurance Non Reimb. 0.416 20.6 Lower liability insurance. 1,774 22.2 Lower liability insurance. Reimb. 0.020 3.1 Force Account Insurance associated with project activity. 0.409 18.0 Force Account Insurance associated with project activity. Claims Non Reimb. 0.328 85.2 Primarily decrease in Corporate Reserves. 0.709 46.1 Primarily decrease in Corporate Reserves.
+```
+[p111_c0004] _Master Page # 111 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 112
+
+### [p112_c0001] TABLE 3
+### [p112_c0002] MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET EXPLANATION OF VARIANCES BETWEEN ADOPTED BUDGET AND ACTUAL: ACCRUAL BASIS ($ in millions)
+[p112_c0003]
+
+```text
+Generic Revenue or Expense Category Non Reimb. Or Reimb. April 2021 Reason for Variance Year-to-Date April 2021 Favorable/ (Unfavorable) Variance Favorable/ (Unfavorable) Variance Reason for Variance $ % $ % Maintenance & Other Operating Contracts Non Reimb. 1.130 15.2 Primarily due to the timing of elevator & escalator and facility maintenance & repair services, partially offset by the timing of security system maintenance invoices and snow removal services. 6.618 21.8 Primarily due to timing of elevator & escalator services and timing of invoices for construction, security, maintenance & repair and other maintenance services, delayed vehicle purchases and lower joint facility expenses, partially offset by the timing of Moynihan Train Hall maintenance expenses. Reimb. (0.540) (43.5) Primarily due to timing of project activity. (0.365) (7.7) Primarily due to timing of project activity. Professional Service Contracts Non Reimb. 0.156 4.9 Primarily the timing of rail inspections, rolling stock decommissioning and MTA Chargebacks, partially offset by the timing of laser railhead testing invoices. 3.107 23.6 Primarily the timing of rail inspections, rolling stock decommissioning, fiber optic invoices and MTA Chargebacks. Reimb. (1.473) * Primarily due to timing of project activity. (1.772) * Primarily due to timing of project activity. Materials & Supplies Non Reimb. (8.581) (67.1) Primarily a true-up of reclaimed material from inventory, partially offset by the timing of modifications and RCM/RR activity for revenue fleet. 14.659 30.0 Primarily timing of modifications and RCM activity for revenue fleet and right of way material. Reimb. (2.835) (71.4) Primarily due to timing of project activity. (0.945) (7.6) Primarily due to timing of project activity. Other Business Expenses Non Reimb. 0.387 34.9 Primarily lower credit/debit card fees and the timing of miscellaneous expenses. 3.791 84.9 Primarily reduction of bad debt, lower credit/debit card fees, higher restitution of property damages and the timing of miscellaneous expenses. Reimb. (0.017) (46.3) Primarily due to timing of project activity. (0.073) (52.2) Primarily due to timing of project activity. Depreciation Non Reimb. (3.718) (10.7) Based on certain capital assets being fully depreciated. (7.900) (5.4) Based on certain capital assets being fully depreciated.
+```
+[p112_c0004] _Master Page # 112 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 113
+
+### [p113_c0001] Master Page # 113 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+[p113_c0002] _Table 4_
+[p113_c0003]
+
+```text
+MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET CASH RECEIPTS and EXPENDITURES April 2021 ($ in millions) Month Year-to-Date Favorable (Unfavorable) Favorable (Unfavorable) Budget Actual Variance Percent Budget Actual Variance Percent Receipts Farebox Revenue $15,513 $18,031 $2,518 16.2 $48,539 $62,966 $14,427 29.7 Vehicle Toll Revenue 0.000 0.000 0.000 - 0.000 0.000 0.000 - Other Operating Revenue 0.747 1.100 0.352 47.1 11.029 5.613 (5.416) (49.1) Capital & Other Reimbursements 22.679 13.787 (8.892) (39.2) 90.579 116.827 26.248 29.0 Total Receipts $38.939 $32.917 ($6.022) (15.5) $150.147 $185.406 $35.259 23.5 Expenditures Labor: Payroll $70,248 $61,145 $9,103 13.0 $239,370 $216,242 $23,128 9.7 Overtime 19,207 14,588 4,620 24.1 62,431 52,008 10,424 16.7 Health and Welfare 13,712 11,110 2,602 19.0 54,581 46,670 7,911 14.5 OPEB Current Payment 6,521 4,858 1,664 25.5 26,085 19,921 6,164 23.6 Pensions 18,297 18,035 0.262 1.4 73,188 72,189 0.999 1.4 Other Fringe Benefits 20,208 17,175 3,033 15.0 70,204 115,161 (44,957) (64.0) Contribution to GASB Fund 0.000 0.000 0.000 - 0.000 0.000 0.000 - Reimbursable Overhead 0.000 0.000 0.000 - 0.000 0.000 0.000 - Total Labor Expenditures $148.194 $126.910 $21.284 14.4 $525.860 $522.191 $3.669 0.7 Non-Labor: Electric Power $6.540 $5.620 $0.920 14.1 $28.129 $23.900 $4.229 15.0 Fuel 1.212 1.658 (0.446) (36.8) 5.483 6.291 (0.808) (14.7) Insurance 4.656 0.288 4.368 93.8 15.739 (4.460) 20.200 * Claims 0.153 0.395 (0.242) * 0.612 0.851 (0.239) (39.0) Paratransit Service Contracts 0.000 0.000 0.000 - 0.000 0.000 0.000 - Maintenance and Other Operating Contracts 8.701 6.909 1.793 20.6 35.191 30.622 4.569 13.0 Professional Service Contracts 1.218 2.657 (1.439) * 7.958 7.992 (0.034) (0.4) Materials & Supplies 16.411 13.825 2.585 15.8 65.813 55.957 9.856 15.0 Other Business Expenses 1.426 0.974 0.451 31.7 5.541 3.524 2.016 36.4 Total Non-Labor Expenditures $40.317 $32.327 $7.990 19.8 $164.466 $124.677 $39.789 24.2 Other Expenditure Adjustments: Other $0.575 $0.252 $0.323 56.2 $1.799 $0.886 $0.913 50.7 Total Other Expenditure Adjustments $0.575 $0.252 $0.323 56.2 $1.799 $0.886 $0.913 50.7 Total Expenditures $189.086 $159.489 $29.598 15.7 $692.125 $647.755 $44.371 6.4 Net Cash Surplus/(Deficit) ($150.147) ($126.572) $23.575 15.7 ($541.979) ($462.349) $79.630 14.7 MTA Subsidy 150.147 49.050 (101.096) (67.3) 541.979 314.171 (227.808) (42.0) Cash Timing and Availability Adjustment 0.000 0.058 0.058 - 0.000 52.389 52.389 -
+```
+
+## Page 114
+
+### [p114_c0001] Master Page # 114 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p114_c0002] MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET EXPLANATION OF VARIANCES BETWEEN FEBRUARY BUDGET AND ACTUAL CASH BASIS
+[p114_c0003] _Table 5_
+[p114_c0004]
+
+```text
+Generic Revenue or Expense Category April 2021 Year-to-Date as of April 2021 Favorable/ (Unfavorable) Variance Reason for Variance Favorable/ (Unfavorable) Variance Reason for Variance $ % $ % Receipts Farebox Revenue 2.518 16.2 Higher ridership $2.597 and higher yields $0.448, partially offset by lower MetroCard/AirTrain sales $(0.302) and lower advance sales impact $(0.225). 14.427 29.7 Higher ridership $16.813, partially offset by lower yields $(1.283), lower MetroCard/AirTrain sales $(0.866) and lower advance sales impact $(0.237). Other Operating Revenue 0.352 47.1 Primarily due to the timing of rental revenue. (5.416) (49.1) Primarily due to the timing of an annual rental payment, partially offset by higher miscellaneous revenue. Capital and Other Reimbursements (8.892) (39.2) Timing of activity and reimbursement for capital and other reimbursements. 26.248 29.0 Timing of activity and reimbursement for capital and other reimbursements. Expenditures Labor: Payroll 9.103 13.0 Primarily due to vacant positions and rates. 23.128 9.7 Primarily due to vacant positions and rates. Overtime 4.620 24.1 Primarily due to lower programmatic/routine maintenance, project overtime, scheduled/unscheduled service and vacancy/absentee coverage. 10.424 16.7 Primarily due to lower programmatic/routine maintenance, project overtime and scheduled/unscheduled service, partially offset by higher vacancy/absentee coverage, unscheduled maintenance and weather-related overtime. Health and Welfare 2.602 19.0 Primarily due to vacant positions, the timing of payments and intercompany reimbursements. 7.911 14.5 Primarily due to vacant positions, intercompany reimbursements and the timing of payments. OPEB Current Payment 1.664 25.5 Primarily due to fewer retirees/beneficiaries. 6.164 23.6 Primarily due to fewer retirees/beneficiaries.
+```
+
+## Page 115
+
+### [p115_c0001] Master Page # 115 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p115_c0002] MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET EXPLANATION OF VARIANCES BETWEEN FEBRUARY BUDGET AND ACTUAL CASH BASIS
+[p115_c0003] _Table 5_
+[p115_c0004]
+
+```text
+Generic Revenue or Expense Category April 2021 Year-to-Date as of April 2021 Favorable/ (Unfavorable) Variance Reason for Variance Favorable/ (Unfavorable) Variance Reason for Variance $ % $ % Pensions 0.262 1.4 Due to intercompany reimbursements. 0.999 1.4 Due to intercompany reimbursements. Other Fringe Benefits 3.033 15.0 Primarily due to lower Railroad Retirement Tax payments and the timing of FELA payments, partially offset by higher Railroad Unemployment Insurance payments. (44.957) (64.0) Primarily due to the payment of Railroad Retirement Taxes which were deferred in 2020, higher Railroad Unemployment Insurance and the timing of FELA payments, partially offset by lower Railroad Retirement Tax payments for 2021. Non-Labor: Electric Power 0.920 14.1 Lower usage, partially offset by the timing of payments and higher rates. 4.229 15.0 Primarily due to lower usage. Fuel (0.446) (36.8) Primarily due to higher rates. (0.808) (14.7) Primarily due to higher rates. Insurance 4.368 93.8 Timing of insurance premium payments. 20.200 * Timing of insurance premium payments and prior year audit credits. Claims (0.242) * Timing of payments for claims. (0.239) (39.0) Timing of payments for claims. Maintenance and Other Operating Contracts 1.793 20.6 Timing of payments. 4.569 13.0 Timing of payments. Professional Service Contracts (1.439) * Timing of payments. (0.034) (0.4) Timing of payments. Materials and Supplies 2.585 15.8 Primarily the timing of program, production plan, and operating funded capital material and supplies. 9.856 15.0 Primarily the timing of program, production plan, and operating funded capital material and supplies.
+```
+
+## Page 116
+
+### [p116_c0001] Master Page # 116 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p116_c0002] MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET EXPLANATION OF VARIANCES BETWEEN FEBRUARY BUDGET AND ACTUAL CASH BASIS
+[p116_c0003] _Table 5_
+[p116_c0004]
+
+```text
+Generic Revenue or Expense Category April 2021 Year-to-Date as of April 2021 Favorable/ (Unfavorable) Variance Reason for Variance Favorable/ (Unfavorable) Variance Reason for Variance $ % $ % Other Business Expenses 0.451 31.7 Primarily lower credit/debit fees and the timing of miscellaneous expense payments. 2.016 36.4 Primarily lower credit/debit fees, higher restitution of property damages and the timing of miscellaneous expenses. Other Expenditure Adjustments 0.323 56.2 Lower MetroCard/AirTrain pass through payments. 0.913 50.7 Lower MetroCard/AirTrain pass through payments.
+```
+
+## Page 117
+
+[p117_c0001] _Table 6_
+### [p117_c0002] MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET CASH CONVERSION (CASH FLOW ADJUSTMENTS) April 2021 ($ in millions)
+[p117_c0003]
+
+```text
+Month Year-to-Date Budget Actual Favorable (Unfavorable) Budget Actual Favorable (Unfavorable) Variance Percent Variance Percent Receipts Farebox Revenue $0.575 $0.048 ($0.527) (91.6) $1.799 $0.696 ($1.103) (61.3) Vehicle Toll Revenue 0.000 0.000 0.000 - 0.000 0.000 0.000 - Other Operating Revenue (1.673) (0.778) 0.895 53.5 2.007 (4.240) (6.247) * Capital & Other Reimbursements (9.978) (23.543) (13.565) * (29.767) (11.849) 17.918 60.2 Total Receipts ($11.076) ($24.273) ($13.197) * ($25.960) ($15.393) $10.567 40.7 Expenditures Labor: Payroll ($6.029) ($1.177) $4.852 80.5 $3.038 $10.812 $7.774 * Overtime (3.657) (1.664) 1.993 54.5 (2.591) 3.031 5.622 * Health and Welfare 0.000 1.089 1.089 * 0.000 2.754 2.754 * OPEB Current Payment 0.000 0.237 0.237 - 0.000 0.763 0.763 - Pensions 0.000 0.262 0.262 - 0.000 0.484 0.484 - Other Fringe Benefits (3.677) (2.000) 1.677 45.6 (4.858) (53.666) (48.808) * Contribution to GASB Fund 0.000 0.000 0.000 - 0.000 0.000 0.000 - Reimbursable Overhead 0.000 0.000 0.000 - 0.000 0.000 0.000 - Total Labor Expenditures ($13.362) ($3.252) $10.110 75.7 ($4.412) ($35.823) ($31.411) * Non-Labor: Electric Power $0.000 ($0.937) ($0.937) - $0.000 $0.244 $0.244 * Fuel 0.000 0.346 0.346 - 0.000 0.359 0.359 * Insurance (2.001) 1.931 3.932 * (5.459) 12.557 18.016 * Claims 0.231 (0.339) (0.570) * 0.925 (0.023) (0.948) * Paratransit Service Contracts 0.000 0.000 0.000 - 0.000 0.000 0.000 - Maintenance and Other Operating Contracts 0.000 1.203 1.203 - (0.000) (1.683) (1.683) * Professional Service Contracts 2.042 1.920 (0.122) (6.0) 5.454 4.085 (1.369) (25.1) Materials & Supplies 0.347 14.349 14.002 * (4.546) (8.404) (3.858) (84.9) Other Business Expenses (0.279) (0.198) 0.081 29.1 (0.938) (2.641) (1.702) * Total Non-Labor Expenditures $0.340 $18.275 $17.936 * ($4.564) $4.494 $9.059 * Other Expenditure Adjustments: Other ($0.575) ($0.252) $0.323 56.2 ($1.799) ($0.886) $0.913 50.7 Total Other Expenditure Adjustments ($0.575) ($0.252) $0.323 56.2 ($1.799) ($0.886) $0.913 50.7 Total Expenditures ($13.598) $14.771 $28.369 * ($10.776) ($32.215) ($21.439) * Depreciation Adjustment $34.792 $38.510 $3.718 10.7 $145.667 $153.567 $7.900 5.4 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 - 0.000 0.000 0.000 - GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 - 0.000 0.000 0.000 - Environmental Remediation 0.167 0.167 0.000 0.0 0.667 1.393 0.727 * Total Expenditures After Non-Cash Liabilities $21.361 $53.448 $32.087 * $135.558 $122.745 ($12.813) (9.5) Total Cash Conversion Adjustments $10.285 $29.175 $18.890 * $109.598 $107.353 ($2.245) (2.0)
+```
+[p117_c0004] _Master Page # 117 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 118
+
+### [p118_c0001] Master Page # 118 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p118_c0002] LIRR – Non-Reimbursable Overtime Variance
+### [p118_c0003] April 2021 and 2021 Adopted Budget vs. variance
+> [p118_c0004] $M 2021 Adopted Budget FY $146M Favorable (Green) Unfavorable (Red) Budget (Blue)
+### [p118_c0005] Overview (YTD)
+- [p118_c0006] Year over Year non-reimbursable overtime expenses remained flat as compared to April 2020 -$3M below the 2021 Adopted Budget mainly driven by controlled Maintenance partially offset by Vacancy/Absentee Coverage. Management actions including the introduction of a more rigorous approval process, tightened procedures and a comprehensive project prioritization effort helped produce a reduction in overtime spending.
+> [p118_c0007] Category Apr'20 Budget Apr'20 Actual Apr'20 Variance Apr'21 Budget Apr'21 Actual Apr'21 Variance YTD Apr'20 Budget YTD Apr'20 Actual YTD Apr'20 Variance YTD Apr'21 Budget YTD Apr'21 Actual YTD Apr'21 Variance Overall $11 $5 -$6 (-57%) $11 $9 -$2 (-18%) $47 $40 -$7 (-15%) $146M $143M -$3M (-2%) EQP -MOE Transportation ENG-MOW Stations Other Depts YTD Apr'21
+[p118_c0008] Overrun of $2.4M driven by $3.7M unfavorable vacancy/absentee coverage due to increase in use of sick leave. 1.1M higher Covid-19 cleaning efforts, $0.7M unfavorable weather patterns in Jan/Feb and pay rate differences $0.6M offset by -$3.8M lower maintenance efforts due to MU Car Shop (impact of fire protection systems impairment).
+[p118_c0009] Underrun of -$1.9M driven by -$0.8M vacancy/absentee coverage related to fewer tours as a result of the efficient management of the current train service plan, -$0.8M scheduled service (less Train & Engine hours), -$0.4M unscheduled service as a result less incidents offset by $0.1M unfavorable weather patterns.
+[p118_c0010] Underrun of -$1.7M driven by -$2.0M controlled maintenance efforts and favorable weather-related -$0.5M overtime partially offset by $0.7M pay rate/accrual differences
+[p118_c0011] Underrun of -$1.6M attributed to -$0.8M as a result of effective cost management of Covid-19 cleaning efforts, -$0.9M vacancy/absentee coverage related to Covid-19.
+[p118_c0012] _Source: Adopted (restated) budget. GL actuals for actual overtime spending._
+
+## Page 119
+
+### [p119_c0001] Master Page # 119 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p119_c0002] LIRR – Reimbursable Overtime Variance
+### [p119_c0003] April 2021 and 2021 Adopted Budget vs. variance
+[p119_c0004] $M
+- [p119_c0005] ■ Favorable ■ Unfavorable ■ Budget
+[p119_c0006] 2021 Adopted Budget FY $56M
+### [p119_c0007] Overview (YTD)
+- [p119_c0008] • Overall decrease of -$5M or -27% compared to April 2020 • -$2M or -11% below 2021 Adopted Budget.
+> [p119_c0009] April 2020 vs April 2021 Category Apr'20 Apr'21 Variance Budget $5 $5 0% Actual $6 $4 -28% (-$2) Variance $1 (10%) -$1 (-14%) YTD April 2020 vs April 2021 Category YTD Apr'20 YTD Apr'21 Variance Budget $15 $17 13% Actual $20 $15 -27% (-$5) Variance $6 (37%) -$2 (-11%) YTD Variance by Division Division Variance ($M) Notes Transportation Stations $0.2 Overrun $0.2M mainly driven by increase in Third Track Main Line Expansion flagging expenses. Transportation Stations $0.2 Overrun $0.2M mainly driven by increase in Third Track expenses. ENG-MOW -$2.1 Underrun -$2.1M less reimbursable project related to annual track program efforts. EQP-MOE -$0.2 Underrun -$0.2M less MU Car Shop Out-front Media Digital work than planned.
+[p119_c0010] _Source: Adopted (restated) budget. GL actuals for actual overtime spending._
+
+## Page 120
+
+### [p120_c0001] Master Page # 120 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p120_c0002] LIRR – Total Overtime Variance
+### [p120_c0003] April 2021 and 2021 Adopted Budget vs. variance
+[p120_c0004] $M
+- [p120_c0005] ■ Favorable ■ Unfavorable ■ Budget
+[p120_c0006] 2021 Adopted Budget FY $202M
+> [p120_c0007] Period Budget Actual Variance % Change Apr'20 $16 $10 -$6 (-35%) Apr'21 $16 $13 -$3 (-17%) YTD Apr'20 $62 $61 -$2 (-3%) YTD Apr'21 $60 $55 -$5 (-8%)
+### [p120_c0008] Overview (YTD)
+- [p120_c0009] • Overall decrease of -$6M or -9% compared to April 2020 • -$5M or -8% below 2021 Adopted Budget • Non-Reimbursable underrun of -$3M • Reimbursable underrun of -$2M • Management actions including the introduction of a more rigorous approval process, tightened procedures and a comprehensive project prioritization effort helped produce a reduction in overtime spending.
+### [p120_c0010] YTD variance by division
+[p120_c0011] $M
+> [p120_c0012] Division Variance ($M) EQP-MOE $2.2 ENG-MOW -$3.8 Transportation -$1.7 Stations -$1.5 Other Depts $0.0 YTD Apr'21 -$2.2
+[p120_c0013] _Source: Adopted (revised) budget. GL actuals for actual overtime spending._
+
+## Page 121
+
+### [p121_c0001] Master Page # 121 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p121_c0002] MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET TOTAL POSITIONS BY FUNCTION AND DEPARTMENT NON-REIMBURSABLE/REIMBURSABLE AND FULL-TIME/FULL-TIME EQUIVALENTS END-of-MONTH APRIL 2021
+[p121_c0003]
+
+```text
+Budget Actual Favorable/ (Unfavorable) Administration Executive VP 1 1 0 Enterprise Asset Management 6 5 1 Sr. Vice President - Engineering 2 1 1 Labor Relations 14 14 0 Procurement & Logistics (excl. Stores) 62 45 17 Human Resources 35 32 3 Sr VP Administration 2 2 0 Strategic Investments 12 12 0 President 8 6 2 VP & CFO 2 2 0 Controller 42 41 1 Management & Budget 16 13 3 BPM, Controls & Compliance 4 4 0 Market Dev. & Public Affairs 65 65 0 Gen. Counsel & Secretary 28 26 2 Diversity Management 3 2 1 Security 15 12 3 System Safety 46 39 7 Training 68 65 3 Service Planning 28 27 1 Rolling Stock Programs 17 9 8 Sr Vice President - Operations 2 2 0 Total Administration 478 425 53 Operations Transportation Services - Train Operations 2,356 2,266 90 Customer Services 384 308 76 Total Operations 2,740 2,574 166 Maintenance Engineering 1,956 1,919 37 Equipment 2,208 2,048 160 Procurement (Stores) 95 99 (4) Total Maintenance 4,259 4,066 193 Engineering/Capital Department of Program Management 144 116 28 Special Projects 59 47 12 Positive Train Control 2 12 (10) Total Engineering/Capital 205 175 30 Baseline Total Positions 7,682 7,240 442 Non-Reimbursable 6,391 6,002 389 Reimbursable 1,291 1,239 52 Total Full-Time 7,682 7,240 442 Total Full-Time-Equivalents
+```
+[p121_c0004] Note: Totals may not add due to rounding
+
+## Page 122
+
+### [p122_c0001] MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET FULL-TIME POSITIONS and FULL-TIME EQUIVALENTS NON-REIMBURSABLE and REIMBURSABLE END-of-MONTH APRIL 2021
+[p122_c0002]
+
+```text
+Explanation of Variances NON-REIMBURSABLE POSITIONS - Favorable 389 positions due to vacancies in Maintenance of Equipment, Stations, Engineering and other administrative departments. REIMBURSABLE POSITIONS - Favorable 52 positions due to vacancies in Train Operations, Project Management, Procurement & Logistics, Special Projects and other administrative departments, partially offset by increased project activity in Engineering.
+```
+[p122_c0003] _Master Page # 122 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 123
+
+### [p123_c0001] Master Page # 123 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p123_c0002] MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET TOTAL FULL-TIME POSITIONS and FULL-TIME EQUIVALENTS by FUNCTION and OCCUPATION END-of-MONTH APRIL 2021
+[p123_c0003]
+
+```text
+Budget Actual Favorable/ (Unfavorable) Variance Administration Managers/Supervisors 258 232 26 Professional, Technical, Clerical 116 84 32 Operational Hourlies 104 109 (5) Total Administration 478 425 53 Operations Managers/Supervisors 354 298 56 Professional, Technical, Clerical 118 93 25 Operational Hourlies 2,268 2,183 85 Total Operations 2,740 2,574 166 Maintenance Managers/Supervisors 882 768 114 Professional, Technical, Clerical 294 216 78 Operational Hourlies 3,083 3,082 1 Total Maintenance 4,259 4,066 193 Engineering/Capital Managers/Supervisors 145 133 12 Professional, Technical, Clerical 60 42 18 Operational Hourlies 0 0 0 Total Engineering/Capital 205 175 30 Total Positions Managers/Supervisors 1,639 1,431 208 Professional, Technical, Clerical 588 435 153 Operational Hourlies 5,455 5,374 81 Total Positions 7,682 7,240 442
+```
+[p123_c0004] Note: Totals may not add due to rounding
+
+## Page 124
+
+### [p124_c0001] Master Page # 124 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p124_c0002] MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET RIDERSHIP (In Millions)
+### [p124_c0003] RIDERSHIP
+[p124_c0004]
+
+```text
+APRIL 2021 Month Variance Adopted Budget** Actual 2021 Adjusted* 2020 Adopted Budget** Adjusted* 2020 # % # % Monthly 1.039 0.654 0.162 (0.384) -37.0% 0.493 304.5% Weekly 0.049 0.041 0.006 (0.008) -16.1% 0.035 573.8% Total Commutation 1.088 0.696 0.168 (0.392) -36.0% 0.528 314.3% One-Way Full Fare 0.188 0.156 0.018 (0.032) -17.2% 0.138 771.0% One-Way Off-Peak 0.363 0.785 0.040 0.423 116.6% 0.746 1875.9% All Other 0.235 0.563 0.028 0.327 139.2% 0.535 1909.4% Total Non-Commutation 0.786 1.504 0.086 0.718 91.3% 1.418 1656.0% Total 1.874 2.200 0.254 0.326 17.4% 1.946 767.5%
+```
+[p124_c0005]
+
+```text
+APRIL YEAR TO DATE 2021 YTD Variance Adopted Budget** Actual 2021 Adjusted* 2020 Adopted Budget** Adjusted* 2020 # % # % Monthly 3.132 2.378 9.332 (0.755) -24.1% (6.954) -74.5% Weekly 0.136 0.153 0.474 0.017 12.6% (0.321) -67.7% Total Commutation 3.269 2.531 9.806 (0.738) -22.6% (7.275) -74.2% One-Way Full Fare 0.564 0.535 1.902 (0.028) -5.0% (1.367) -71.9% One-Way Off-Peak 1.078 2.596 3.239 1.518 140.9% (0.643) -19.9% All Other 0.686 1.946 2.049 1.260 183.8% (0.103) -5.0% Total Non-Commutation 2.327 5.078 7.191 2.751 118.2% (2.113) -29.4% Total 5.596 7.609 16.997 2.013 36.0% (9.388) -55.2%
+```
+[p124_c0006] _*Prior year adjusted to reflect current year calendar._
+
+## Page 125
+
+### [p125_c0001] Master Page # 125 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p125_c0002] MTA LONG ISLAND RAIL ROAD FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET MONTHLY PERFORMANCE INDICATORS April 2021
+[p125_c0003]
+
+```text
+MONTH VARIANCE Actual Budget Actual vs. vs. 2021 2021 2020 Budget 2020 Farebox Operating Ratio Standard (1) 13.1% 10.3% 2.1% 2.8% 11.0% Adjusted (2) 15.6% 13.0% 4.4% 2.6% 11.2% Cost Per Passenger Standard (1) $62.61 $77.19 $441.03 $14.58 $378.42 Adjusted (2) $58.00 $71.23 $403.64 $13.23 $345.64 Passenger Revenue/Passenger (3) $8.18 $7.97 $9.07 $0.21 ($0.89) YEAR-TO-DATE VARIANCE Actual Budget Actual vs. vs. 2021 2021 2020 Budget 2020 Farebox Operating Ratio Standard (1) 12.7% 8.3% 33.2% 4.4% -20.5% Adjusted (2) 16.1% 10.7% 38.0% 5.4% -21.9% Cost Per Passenger Standard (1) $64.25 $101.16 $28.56 $36.91 ($35.69) Adjusted (2) $58.89 $93.11 $26.37 $34.22 ($32.52) Passenger Revenue/Passenger (3) $8.18 $8.35 $9.49 ($0.17) ($1.31)
+```
+[p125_c0004] (1) The Standard Farebox Operating Ratio and Cost Per Passenger indicators reflect MTA-wide adopted calculations that exclude non-cash liability adjustments: Depreciation, Other Post Employment Benefits and Environmental Remediation (GASB-49).
+[p125_c0005] (2) Adjusted Fare Box Operating Ratio and Cost Per Passenger indicators have been adjusted for comparability between the Long Island Rail Road and Metro-North Railroad and are being presented only at the railroad operating committees. These adjustments are not being used MTA-wide. Adjustments have been made to reflect all operating revenue and significant financial impacts that are outside management's control. These adjustments include: Inclusion of Other Operating Revenue, Removal of OPEB Current Payment expenses for retirees, and Removal of the UAAL associated with the LIRR's closed pension plan.
+[p125_c0006] (3) Passenger Revenue/Passenger includes Hampton Seat Reservations.
+
+## Page 126
+
+> [p126_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p126_c0002] Long Island Rail Road
+### [p126_c0003] Ridership Report Highlights
+### [p126_c0004] April 2021 vs. 2020
+- [p126_c0005] • Total ridership increased +767.5% compared to April 2020 (2,199,648 passengers in April 2021 vs. 253,571 passengers in April 2020, which reflected the period of the pandemic lockdown). When compared to April 2019, total ridership decreased -71.5% (2,199,648 passengers in April 2021 vs. 7,724,038 passengers in April 2019). • Commutation ridership increased +314.3% compared to April 2020 • Non-Commutation ridership increased +1,656.0% compared to April 2020
+### [p126_c0006] 2021 vs. 2020 YTD
+- [p126_c0007] • Total YTD ridership is -55.2% below 2020 and +36.0% above Budget • YTD Commutation ridership is -74.2% below 2020 • YTD Non-Commutation ridership is -29.4% below 2020
+[p126_c0008] Mark Young
+[p126_c0009] Vice President
+[p126_c0010] Management & Finance and Chief Financial Officer
+[p126_c0011] _Master Page # 126 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 127
+
+### [p127_c0001] MTA LONG ISLAND RAIL ROAD
+### [p127_c0002] MONTHLY RIDERSHIP REPORT
+[p127_c0003] April 2021
+[p127_c0004] _Master Page # 127 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 128
+
+### [p128_c0001] April 2021 RIDERSHIP & REVENUE REPORT MTA LONG ISLAND RAIL ROAD
+### [p128_c0002] EXECUTIVE SUMMARY
+### [p128_c0003] April Ridership and Revenue (millions)
+[p128_c0004]
+
+```text
+April 2021 % Change vs. 2020 Total Rail Ridership 2.200 767.5% ▲ Commutation Ridership 0.696 314.3% ▲ Non-Commutation Ridership 1.504 1656.0% ▲ Rail Revenue $18.0 682.1% ▲
+```
+### [p128_c0005] Year-to-Date through April Prelim. Ridership and Revenue (millions)
+[p128_c0006]
+
+```text
+April 2021 % Change vs. 2020 Comparison to Budget Total Rail Ridership 7.609 -55.2% ▼ 36.0% ▲ Commutation Ridership 2.531 -74.2% ▼ -22.6% ▼ Non-Commutation Ridership 5.078 -29.4% ▼ 118.2% ▲ Rail Revenue $62.3 -62.2% ▼ 33.2% ▲
+```
+[p128_c0007] Please Note: Ridership is based on ticket sales data.
+[p128_c0008] _Master Page # 128 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 129
+
+### [p129_c0001] Master Page # 129 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p129_c0002] April RIDERSHIP
+- [p129_c0003] April Total Ridership was 767.5% above '20 and 17.4% above 2021 Budget.
+> [p129_c0004] Monthly Ridership Data (Millions) Month 2021 2020 Jan 1.7 6.8 Feb 1.6 6.6 Mar 2.1 3.3 Apr 2.2 0.3 May 0.5 Jun 1.1 Jul 1.6 Aug 1.8 Sep 2.0 Oct 2.1 Nov 1.9 Dec 1.9 Y-T-D Total 7.6 17.0
+[p129_c0005]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Y-T-D Total 2021 1.7 1.6 2.1 2.2 7.6 2020 6.8 6.6 3.3 0.3 0.5 1.1 1.6 1.8 2.0 2.1 1.9 1.9 17.0 PCT CHG. -74.7% -76.0% -36.1% 767.5% -55.2%
+```
+[p129_c0006] Please Note: Ridership is based on ticket sales data.
+
+## Page 130
+
+### [p130_c0001] Master Page # 130 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p130_c0002] April COMMUTATION RIDERSHIP
+- [p130_c0003] April Commutation Ridership was 314.3% above '20 and -36.0% below 2021 Budget.
+> [p130_c0004] April Commutation Ridership Data (Estimated from Chart) Month 2021 (Millions) 2020 (Millions) Jan 0.6 3.8 Feb 0.5 3.8 Mar 0.7 1.9 Apr 0.7 0.2 May 0.1 0.1 Jun 0.3 0.3 Jul 0.5 0.5 Aug 0.6 0.6 Sep 0.6 0.6 Oct 0.7 0.7 Nov 0.7 0.7 Dec 0.6 0.6
+[p130_c0005]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Y-T-D Total 2021 0.6 0.5 0.7 0.7 2.5 2020 3.9 3.8 1.9 0.2 0.1 0.3 0.5 0.6 0.6 0.7 0.7 0.6 9.8 PCT CHG. -84.8% -86.1% -63.0% 314.3% -74.2%
+```
+[p130_c0006] Please Note: Ridership is based on ticket sales data.
+
+## Page 131
+
+### [p131_c0001] Master Page # 131 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p131_c0002] April NON-COMMUTATION RIDERSHIP
+[p131_c0003] • April Non-Commutation Ridership was 1,656.0% above '20 and 91.3% above 2021 Budget.
+> [p131_c0004] Ridership Data by Month Month 2021 (Millions) 2020 (Millions) Jan 1.1 3.0 Feb 1.0 2.8 Mar 1.4 1.3 Apr 1.5 0.1 May 0.4 Jun 0.8 Jul 1.1 Aug 1.2 Sep 1.4 Oct 1.4 Nov 1.3 Dec 1.2
+[p131_c0005]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Y-T-D Total 2021 1.1 1.1 1.4 1.5 5.1 2020 3.0 2.8 1.3 0.1 0.4 0.8 1.1 1.2 1.4 1.4 1.3 1.2 7.2 PCT CHG. -61.7% -62.1% 2.5% 1656.0% -29.4%
+```
+[p131_c0006] Please Note: Ridership is based on ticket sales data.
+
+## Page 132
+
+### [p132_c0001] Master Page # 132 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p132_c0002] April REVENUE
+- [p132_c0003] • April Total Revenue was 682.1% above '20 and 20.4% above 2021 Budget.
+> [p132_c0004] April Revenue Data (Estimated from Chart) Month 2021 ($M) 2020 ($M) Jan 14.7 60.4 Feb 12.9 58.3 Mar 16.7 43.6 Apr 18.0 2.3 May - 4.2 Jun - 9.3 Jul - 13.7 Aug - 14.9 Sep - 17.2 Oct - 17.7 Nov - 16.0 Dec - 15.1 Y-T-D Total 62.3 164.6
+[p132_c0005]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Y-T-D Total 2021 $14.7 $12.9 $16.7 $18.0 $62.3 2020 $60.4 $58.3 $43.6 $2.3 $4.2 $9.3 $13.7 $14.9 $17.2 $17.7 $16.0 $15.1 $164.6 PCT CHG. -75.7% -77.8% -61.7% 682.1% -62.2%
+```
+[p132_c0006] Please Note: Ridership is based on ticket sales data.
+
+## Page 133
+
+### [p133_c0001] MTA LONG ISLAND RAIL ROAD RIDERSHIP SUMMARY April 2021
+[p133_c0002]
+
+```text
+TICKET TYPE/SERVICE April 2021 *April 2020 CHANGE VS. 2020 NUMBER PERCENT COMMUTATION RIDERSHIP 695,791 167,932 527,858 314.3% NON-COMMUTATION RIDERSHIP 1,503,857 85,639 1,418,218 1656.0% TOTAL RIDERSHIP 2,199,648 253,571 1,946,076 767.5%
+```
+### [p133_c0003] MTA LONG ISLAND RAIL ROAD RIDERSHIP SUMMARY 2021 YEAR-TO-DATE
+[p133_c0004]
+
+```text
+TICKET TYPE/SERVICE April 2021 *April 2020 CHANGE VS. 2020 NUMBER PERCENT COMMUTATION RIDERSHIP 2,530,856 9,805,799 (7,274,943) -74.2% NON-COMMUTATION RIDERSHIP 5,077,803 7,190,802 (2,112,999) -29.4% TOTAL RIDERSHIP 7,608,659 16,996,601 (9,387,942) -55.2%
+```
+[p133_c0005] * 2020 ridership numbers were adjusted using 2021 factors.
+### [p133_c0006] MTA LONG ISLAND RAIL ROAD REVENUE SUMMARY April 2021
+[p133_c0007]
+
+```text
+REVENUE April 2021 April 2020 CHANGE VS. 2020 AMOUNT PERCENT COMMUTATION REVENUE $5,145,930 $1,563,148 $3,582,781 229.2% NON-COMMUTATION REVENUE $12,836,542 $736,096 $12,100,446 1643.9% TOTAL REVENUE $17,982,471 $2,299,244 $15,683,227 682.1%
+```
+### [p133_c0008] MTA LONG ISLAND RAIL ROAD REVENUE SUMMARY 2021 YEAR-TO-DATE
+[p133_c0009]
+
+```text
+REVENUE April 2021 April 2020 CHANGE VS. 2020 AMOUNT PERCENT COMMUTATION REVENUE $19,511,230 $96,482,566 ($76,971,337) -79.8% NON-COMMUTATION REVENUE $42,758,559 $68,123,463 ($25,364,904) -37.2% TOTAL REVENUE $62,269,788 $164,606,029 ($102,336,241) -62.2%
+```
+[p133_c0010] _Master Page # 133 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 134
+
+> [p134_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a dark blue circle.
+[p134_c0002] Long Island Rail Road
+### [p134_c0003] CAPITAL PROGRAM REPORT
+[p134_c0004] _Master Page # 134 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 135
+
+### [p135_c0001] LONG ISLAND RAIL ROAD - CAPITAL PROGRAM HIGHLIGHTS APRIL 2021
+### [p135_c0002] L80204/DD ADA ACCESSIBILITY AND COMPONENTS DESIGN
+### [p135_c0003] Milestone: Contract Award $3,279,074
+[p135_c0004] Project Budget: $10.00M
+[p135_c0005] A Design Contract to prepare conceptual design reports and preliminary engineering documents to bring various stations into code and ADA compliance was awarded to Dewberry/Gannett Fleming, J.V for $3,279,074. These documents will be used for the procurement of a single or several Design/Build Contract. Design goals consist of improved customer experience including accessibility improvements required to meet current ADA and code requirements which include ADA/code compliant: curb cuts, restrooms, signage, tactile, walkways, elevators, doorways and parking.
+### [p135_c0006] L70206/VP PENN STATION ELEVATOR/ESCALATOR REPLACEMENT
+### [p135_c0007] Milestone: Contract Complete $8,688,999
+[p135_c0008] Project Budget: $11.45M
+[p135_c0009] A Design-Build Contract to refurbish and modernize existing elevators and escalators at Penn Station Concourse Level under 100% LIRR control was completed by Nouveau Elevator Industries, Inc. for $8,688,999. Five (5) elevators (4 elevators at the central corridor and 1 at the 34th street exit) out of 6 units, were upgraded to meet all applicable codes, standards and regulations including the provision of alternate recall programming in accordance with NFPA 13 (2016 ed). These elevators are now provided with telephone and video cameras. All fourteen (14) escalators were upgraded with the replacement of old parts with new modern controls, chains, bull gears, tracks and handrails while re-using structural components which are still in good conditions. These escalators are now equipped with safety enhancements and sleep mode technology.
+### [p135_c0010] EL0502/ZC LONG BEACH BRANCH – SYSTEMS RESTORATION
+### [p135_c0011] Milestone: Beneficial Use
+[p135_c0012] Project Budget: $68.67
+[p135_c0013] The replacement of various systems along the Long Beach Branch that were damaged by Superstorm Sandy is complete. The Long Beach Systems Restoration project included a majority of Comm, Power, and Signal work. New overhead Comm and Signal lines with equipment drops were added. Power replacement of cables, third rail brackets, and boards, as well as new impedance bonds and IJs. New Signal (Elevated) huts with Micro Processor based Signal equipment with reverse signaling on both tracks and new Supervisory Control and Data Administration (SCADA) software and hardware at Lead and Valley Towers as well as JCC.
+### [p135_c0014] L70701/XC 3 rd RAIL – 2000 MILLION CUBIC METER CABLE
+### [p135_c0015] Milestone: Beneficial Use
+[p135_c0016] Project Budget: $2.40M
+[p135_c0017] The replacement and upgrade of 6,800 LF of third rail cables and 750 LF of ducts in selected locations to maintain a State of Good Repair and to properly support the electric fleet on crossings, side leads, and gaps is complete. Replacement of deteriorated / deficient third rail cable ensures capacity to handle current and future operating plans and future service enhancements, as well as facilitate service reliability by reducing equipment failures.
+### [p135_c0018] L70701/XD 3 rd RAIL – DISCONNECT SWITCHES
+### [p135_c0019] Milestone: Beneficial Use
+[p135_c0020] Project Budget: $1.60M
+[p135_c0021] The replacement and upgrade of third rail disconnect switches [68] in select locations to maintain a State of Good Repair in critical areas including substations, yards, and sectionalizing locations is complete. Replacement of deteriorated / deficient third rail disconnect switches ensures capacity to handle the increased power load of current and future operating plans, including the future M-9 fleet and future service enhancements.
+### [p135_c0022] L70701/XE 3 rd RAIL – PROTECTION BOARD
+### [p135_c0023] Milestone: Beneficial Use
+[p135_c0024] Project Budget: $6.35M
+[p135_c0025] The replacement of the Third Rail Protection Board in selected locations systemwide to a State of Good Repair is complete. Replacement of the deteriorated / deficient third rail protection board ensures capacity to handle the increased power load of current and future operating plans, as well as the future M-9 fleet and future service enhancements.
+### [p135_c0026] L70701/XF 3 rd RAIL – COMPOSITE RAIL
+### [p135_c0027] Milestone: Beneficial Use
+[p135_c0028] Project Budget: $11.60M
+[p135_c0029] The replacement and upgrade of approximately 76,990 LF of new aluminum third rail at various locations to maintain the rail
+[p135_c0030] _Master Page # 135 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 136
+
+[p136_c0001] in a State of Good Repair is complete. Replacing deteriorated / deficient composite rail helps mitigate lack of contact from train shoes.
+### [p136_c0002] L70701/XH 3 rd RAIL – FEEDER CABLE REPLACEMENT
+### [p136_c0003] Milestone: Beneficial Use
+[p136_c0004] Project Budget: $3.20M
+[p136_c0005] The replacement and upgrade of 12,800 LF of third rail feeder cables to maintain a State of Good Repair and support the electric fleet is complete. Replacing deteriorated / deficient third rail feeder cables ensures capacity to handle the increased power load of current and future operating plans, including the future M-9 fleet and future service expansions
+### [p136_c0006] L70701/XH NEGATIVE REACTOR UPGRADE
+### [p136_c0007] Milestone: Beneficial Use
+[p136_c0008] Project Budget: $3.20M
+[p136_c0009] The replacement of aged, deteriorated, and inadequate negative reactors and associated negative return cables systemwide where they are beyond their useful life, to bring them to a State of Good Repair is complete. Replacing deteriorated / deficient negative reactors ensures capacity to handle the increased power load of the future M-9 fleet and address traction power needs associated with the present and future operating plans. Replacement protects service reliability by reducing traction power system failures, thus supporting on-time performance goals
+### [p136_c0010] L70701/XP ATLANTIC AVENUE TUNNEL LIGHTING
+### [p136_c0011] Milestone: Beneficial Use
+[p136_c0012] Project Budget: $5.00M
+[p136_c0013] Design and Construction elements for replacement of the existing Tunnel Lighting System is complete. Work included replacement of light fixtures, wire, cable, conduit, distribution equipment, primary power, transformers, and switches between East New York Station and Atlantic Terminal in Brooklyn, N.Y.
+### [p136_c0014] SMALL BUSINESS DEVELOPMENT PROGRAM
+[p136_c0015] No contracts awarded this month.
+[p136_c0016] No contracts completed this month.
+[p136_c0017] _Master Page # 136 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 137
+
+### [p137_c0001] Master Page # 137 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p137_c0002] 2021 LIRR Capital Program Goals
+> [p137_c0003] A bar chart comparing 2021 Plan (red bars) and Actual as of April 2021 (blue bars) across four categories: Infrastructure Commitments, Starts, Completions, and Closeouts. The chart shows that while the 2021 Plan for Infrastructure Commitments is significantly higher than the actual, the actual number of starts and completions is higher than planned. The actual closeouts are also lower than planned. Category 2021 Plan Actual as of April 2021 INFRASTRUCTURE COMMITMENTS $484.6 $70.6 STARTS 17 5 COMPLETIONS 25 9 CLOSEOUTS $450.7M $168.1M ■ 2021 PLAN      ■ ACTUAL as of APRIL 2021
+
+## Page 138
+
+### [p138_c0001] Operations Report
+[p138_c0002] Justin R. Vonashek
+[p138_c0003] Senior Vice President, Operations
+> [p138_c0004] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+> [p138_c0005] A photograph of an M7 EMU train, which is a blue and white double-decker train, traveling on tracks. The train has a distinctive blue and white pattern on its front.
+[p138_c0006] _M7 EMU_
+> [p138_c0007] A photograph of an M8 EMU train, which is a red and white double-decker train, stopped at a station platform. The train has a red front and white sides.
+[p138_c0008] _M8 EMU_
+> [p138_c0009] A photograph of a Comet 5 Cab Car, which is a silver-colored train car, traveling on tracks. The car has a silver front with a blue MTA logo and the text "Metro-North Railroad".
+[p138_c0010] _Comet 5 Cab Car_
+[p138_c0011] _Master Page # 138 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 139
+
+### [p139_c0001] April 2021 Highlights: Operations Report
+[p139_c0002] April service delivery operated above goal at 97.6% with YTD at 98.1%.
+[p139_c0003] We continued operation of a reduced schedule due to reduced ridership.
+[p139_c0004] Hudson Line – 98.8%            YTD: 98.8%
+[p139_c0005] 4 train (0.1%) cancelled or terminated
+[p139_c0006] Harlem Line – 98.5%            YTD: 99.1%
+[p139_c0007] 4 trains (0.1%) cancelled or terminated
+[p139_c0008] New Haven Line – 96.2%            YTD: 97.1%
+[p139_c0009] 1 trains (0.1%) cancelled or terminated
+[p139_c0010] Consist Compliance: 100%
+[p139_c0011] We disinfected passenger cars every 24 hours when they were operated in service.
+[p139_c0012] West of Hudson Service operated above goal at 95.2% with YTD at 93.5%.
+[p139_c0013] Pascack Valley – 95.7%            YTD: 93.5%
+[p139_c0014] Port Jervis – 94.6%            YTD: 93.5%
+[p139_c0015] 11 trains (0.2%) PVL: 5, PJL: 6, cancelled or terminated. All were due to equipment related issues.
+### [p139_c0016] Equipment Performance
+[p139_c0017] Fleet Availability was good during March.
+[p139_c0018] Fleet MDBF in March operated below goal at 152,397 against the goal of 175,000.
+[p139_c0019] Excluding the 13 M8 PTC failures MDBF operated above goal at 268,936 miles.
+[p139_c0020] _Master Page # 139 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 140
+
+### [p140_c0001] Metro-North Railroad
+### [p140_c0002] OPERATING REPORT April 2021
+[p140_c0003]
+
+```text
+Performance Summary 2021 Data 2020 Data Annual Goal April YTD thru April April YTD thru April On Time Performance (Trains that arrive at their final destination within 5 minutes 59 seconds of scheduled arrival time) System Overall 94.0% 97.6% 98.1% 98.6% 97.9% AM Peak 94.0% 96.6% AM Reverse Peak 94.0% 97.8% PM Peak 94.0% 98.2% Total Peak 94.0% 97.5% Off Peak Weekday 94.0% 97.5% 98.0% 98.5% 97.5% Weekend 94.0% 97.8% 98.4% 98.9% 99.0% Hudson Line Overall 94.0% 98.8% 98.8% 98.6% 98.2% AM Peak 94.0% 96.2% AM Reverse Peak 94.0% 98.2% PM Peak 94.0% 98.8% Total Peak 94.0% 97.5% Off Peak Weekday 94.0% 99.2% 98.9% 98.6% 98.1% Weekend 94.0% 97.4% 98.3% 98.3% 99.2% Harlem Line Overall 94.0% 98.5% 99.1% 98.7% 97.9% AM Peak 94.0% 96.9% AM Reverse Peak 94.0% 96.8% PM Peak 94.0% 97.9% Total Peak 94.0% 97.2% Off Peak Weekday 94.0% 98.5% 99.0% 98.4% 97.5% Weekend 94.0% 98.6% 99.4% 99.5% 99.4% New Haven Line Overall 94.0% 96.2% 97.1% 98.6% 97.7% AM Peak 94.0% 96.7% AM Reverse Peak 94.0% 98.6% PM Peak 94.0% 98.2% Total Peak 94.0% 97.6% Off Peak Weekday 94.0% 95.8% 96.8% 98.5% 97.2% Weekend 94.0% 97.6% 98.0% 98.8% 98.7% Operating Statistics Trains Scheduled 12,689 49,258 10,537 66,622 Avg. Delay per Late Train (min) excluding trains cancelled or terminated 13.3 13.7 16.2 12.7 Trains Over 15 min. Late excluding trains cancelled or terminated 2,300 68 219 54 306 Trains Canceled 230 1 13 4 27 Trains Terminated 230 8 37 12 56 Percent of Scheduled Trips Completed 99.8% 99.9% 99.9% 99.8% 99.9% Consist Compliance (Percent of trains where the number of seats provided was greater than or equal to the required number of seats per loading standards) System Overall 99.0% 100.0% 100.0% 100.0% 99.9% AM Peak 99.0% 99.2% AM Reverse Peak 99.0% 100.0% PM Peak 99.0% 99.8% Total Peak 99.0% 99.5% Off Peak Weekday 99.0% 100.0% 100.0% 100.0% 100.0% Weekend 99.0% 100.0% 100.0% 100.0% 100.0% Hudson Line AM Peak 99.0% 99.7% PM Peak 99.0% 100.0% Harlem Line AM Peak 99.0% 99.6% PM Peak 99.0% 99.7% New Haven Line AM Peak 99.0% 98.4% PM Peak 99.0% 99.7%
+```
+[p140_c0004] _Master Page # 140 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 141
+
+### [p141_c0001] Metro-North Railroad
+### [p141_c0002] OPERATING REPORT April 2021
+### [p141_c0003] SYSTEM Category of Delay
+[p141_c0004] Delay Minutes / Delay Threshold
+[p141_c0005]
+
+```text
+Delay Minutes / Delay Threshold % Total March 2021 Data 2020 Data YTD 2021 Vs 2020 April YTD thru April April YTD thru April Engineering (Scheduled) 9.5% 21 66 156 15 108 48 Engineering (Unscheduled) 14.8% 92 103 325 50 777 -452 Maintenance of Equipment 27.5% 195 192 788 55 692 96 Transportation 3.6% 16 25 112 6 115 -4 Capital Projects 3.2% 7 22 36 1 55 -20 Weather and Environmental 8.2% 38 57 209 123 297 -89 Police 25.8% 52 180 348 51 401 -54 Customers 1.6% 13 11 49 5 89 -40 Other 5.8% 25 40 162 45 338 -176 3rd Party Operations 0.0% 0 0 0 0 4 -4 TOTAL 100.0% 459 697 2,184 351 2,877 -693 HUDSON LINE % Total March April YTD thru April April YTD thru April YTD 2021 Vs 2020 Engineering (Scheduled) 2.6% 4 3 10 14 26 -16 Engineering (Unscheduled) 0.0% 24 0 43 22 111 -68 Maintenance of Equipment 23.5% 14 27 102 5 172 -70 Transportation 0.9% 1 1 8 1 28 -20 Capital Projects 10.4% 0 12 16 0 20 -4 Weather and Environmental 0.0% 2 0 86 8 43 43 Police 53.9% 19 62 115 30 92 23 Customers 1.7% 2 2 7 2 29 -22 Other 7.0% 6 8 26 13 115 -89 3rd Party Operations 0.0% 0 0 0 0 0 0 TOTAL 100.0% 72 115 413 95 636 -223 HARLEM LINE % Total March April YTD thru April April YTD thru April YTD 2021 Vs 2020 Engineering (Scheduled) 10.2% 2 16 20 0 28 -8 Engineering (Unscheduled) 10.2% 4 16 34 6 297 -263 Maintenance of Equipment 6.4% 20 10 73 23 149 -76 Transportation 7.6% 8 12 25 3 50 -25 Capital Projects 1.3% 2 2 5 0 12 -7 Weather and Environmental 31.2% 5 49 66 32 60 6 Police 30.6% 7 48 74 18 126 -52 Customers 1.9% 3 3 7 3 29 -22 Other 0.6% 10 1 38 18 79 -41 3rd Party Operations 0.0% 0 0 0 0 0 0 TOTAL 100.0% 61 157 342 103 830 -488 NEW HAVEN LINE % Total March April YTD thru April April YTD thru April YTD 2021 Vs 2020 Engineering (Scheduled) 11.3% 14 42 104 0 54 50 Engineering (Unscheduled) 16.9% 31 63 184 22 369 -185 Maintenance of Equipment 36.5% 115 136 526 27 356 170 Transportation 3.2% 7 12 78 2 36 42 Capital Projects 2.1% 4 8 15 1 22 -7 Weather and Environmental 2.1% 30 8 56 82 193 -137 Police 17.4% 23 65 152 2 182 -30 Customers 1.9% 7 7 27 0 31 -4 Other 8.6% 8 32 86 14 144 -58 3rd Party Operations 0.0% 0 0 0 0 0 0 TOTAL 100.0% 239 373 1,228 150 1,387 -159
+```
+[p141_c0006] _Master Page # 141 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 142
+
+[p142_c0001]
+
+```text
+Equipment Type Total Fleet Size 2021 Data 2020 Data MDBF Goal (miles) Mar MDBF (miles) Primary Failure Goal Mar No. of Primary Failures YTD MDBF thru Mar (miles) 12 month MDBF Rolling Avg (miles) Mar MDBF (miles) Mar No. of Primary Failures YTD MDBF thru Mar (miles) Mean Distance Between Failures M8 405 290,000 110,191 5 15* 98,050 275,388 506,846 5 364,116 M3 138 80,000 87,383 2 2 121,193 143,473 96,068 3 113,461 M7 334 340,000 356,231 5 4 668,257 524,109 490,473 4 529,879 Coach 207 210,000 564,965 5 2 356,966 401,593 471,382 3 265,107 P-32 31 21,000 28,186 6 5 36,741 34,834 30,666 6 37,104 BL-20 12 13,000 24,251 3 2 21,812 15,924 15,100 3 18,454 Fleet 1127 175,000 152,397 26 30 154,824 240,448 267,823 24 247,567 M8 290,000 110,191 5 15 98,050 275,388 506,846 5 364,116 M3/7 235,000 266,615 7 6 449,432 415,356 321,442 7 354,545 Diesel/Coach 85,000 146,596 14 9 144,143 142,669 136,953 12 129,670
+```
+[p142_c0002] *13 M8 PTC Software Failures
+[p142_c0003] Mean Distance Between Failures (MDBF) is the average number of miles a railcar or locomotive travels in revenue service before breaking down and causing a delay. The higher the MDBF, the more reliable the equipment and the service.
+### [p142_c0004] ALL FLEETS Mean Distance Between Failures 2016 - 2021
+> [p142_c0005] Mean Distance Between Failures (MDBF) Data Year Month MDBF (miles) 2016 Jan 215,000 2017 Jan 195,000 2018 Jan 145,000 2019 Jan 240,000 2020 Jan 280,000 2021 Jan 155,000 2020 Mar 265,107 2020 Apr 440,000 2020 May 205,000 2020 Jun 535,000 2020 Jul 335,000 2020 Aug 230,000 2020 Sep 430,000 2020 Oct 405,000 2020 Nov 250,000 2020 Dec 205,000 2021 Jan 125,000 2021 Feb 220,000 2021 Mar 155,000
+[p142_c0006] _Master Page # 142 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 143
+
+### [p143_c0001] Metro-North Railroad
+### [p143_c0002] OPERATING REPORT April 2021
+[p143_c0003]
+
+```text
+West of Hudson Performance Summary 2021 Data 2020 Data Annual Goal April YTD thru April April YTD thru April On Time Performance (Trains that arrive at their final destination within 5 minutes 59 seconds of scheduled arrival time) West of Hudson Total Overall 94.0% 95.2% 93.5% 95.4% 95.9% AM Peak 94.0% 96.9% 93.8% 95.2% PM Peak 94.0% 97.6% 97.0% 95.7% Total Peak 94.0% 97.2% 95.4% 95.5% Off Peak Weekday 94.0% 94.7% 91.7% 96.4% 95.7% Weekend 94.0% 92.9% 94.1% 92.8% 96.5% Pascack Line Overall 94.0% 95.7% 93.5% 95.0% 96.6% AM Peak 94.0% 99.4% 96.6% 96.4% PM Peak 94.0% 98.1% 98.1% 96.4% Total Peak 94.0% 98.7% 97.3% 96.4% Off Peak Weekday 94.0% 93.9% 90.5% 96.4% 96.4% Weekend 94.0% 94.9% 93.9% 91.1% 97.0% Port Jervis Line Overall 94.0% 94.6% 93.5% 96.1% 94.9% AM Peak 94.0% 93.9% 90.6% 93.9% PM Peak 94.0% 97.0% 95.8% 94.8% Total Peak 94.0% 95.5% 93.2% 94.4% Off Peak Weekday 94.0% 95.8% 93.4% 96.3% 94.7% Weekend 94.0% 89.3% 94.5% 95.5% 95.8% Operating Statistics Trains Scheduled 1,651 6,493 1,184 5,943 Avg. Delay per Late Train (min) excluding trains cancelled or terminated 18.9 18.6 22.1 21.6 Trains Over 15 min. Late excluding trains cancelled or terminated 300 25 178 14 99 Trains Canceled 60 5 18 22 34 Trains Terminated 60 6 12 6 25 Percent of Scheduled Trips Completed 99.4% 99.3% 99.5% 97.6% 99.0% Consist Compliance* (Percent of trains where the number of coaches provided met the scheduled requirement) System - AM 99.0% 93.7% 93.8% 100.0% 99.7% Pascack Valley - AM 99.0% 94.4% 92.1% 100.0% 99.9% Port Jervis - AM 99.0% 93.0% 89.6% 100.0% 99.5%
+```
+[p143_c0004] *Consist Compliance Reporting for West of Hudson PM Peak trains is currently unavailable.
+[p143_c0005] _Master Page # 143 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 144
+
+### [p144_c0001] Metro-North Railroad
+### [p144_c0002] APRIL 2021 STANDEE REPORT
+### [p144_c0003] East of Hudson
+[p144_c0004]
+
+```text
+APR 2020 YTD 2020 APR 2021 YTD 2021 Daily Average Hudson Line Program Standees 0 0 0 0 AM Peak Add'l Standees 0 6 0 0 Total Standees 0 6 0 0 Harlem Line Program Standees 0 0 0 0 Add'l Standees 0 8 0 0 Total Standees 0 8 0 0 New Haven Line Program Standees 0 0 0 0 Add'l Standees 0 29 0 0 Total Standees 0 29 0 0 EAST OF HUDSON TOTAL - AM PEAK 0 43 0 0 Daily Average Hudson Line Program Standees 0 0 0 0 PM Peak Add'l Standees 0 0 0 0 Total Standees 0 0 0 0 Harlem Line Program Standees 0 0 0 0 Add'l Standees 0 1 0 0 Total Standees 0 1 0 0 New Haven Line Program Standees 0 0 0 0 Add'l Standees 0 4 0 0 Total Standees 0 4 0 0 EAST OF HUDSON TOTAL - PM PEAK 0 5 0 0
+```
+### [p144_c0005] West of Hudson
+[p144_c0006]
+
+```text
+APR 2020 YTD 2020 APR 2021 YTD 2021 Daily Average Port Jervis Program Standees 0 0 0 0 AM Peak Line Add'l Standees 0 0 0 0 Total Standees 0 0 0 0 Pascack Valley Line Program Standees 0 0 0 0 Add'l Standees 0 0 0 0 Total Standees 0 0 0 0 WEST OF HUDSON TOTAL - AM PEAK 0 0 0 0
+```
+[p144_c0007] * Consist compliance and Standee Reporting for the West of Hudson PM Peak trains is currently unavailable .
+### [p144_c0008] Definitions
+[p144_c0009] Weekday standees are calculated based on the most recent average weekday customer counts for the train's maximum load point. For Hudson, Harlem and most New Haven Line trains, this point occurs at GCT/125th St.. However, for certain New Haven Line trains, this maximum load point is east of Stamford.
+[p144_c0010] "Program Standees" is the average number of customers in excess of programmed seating capacity.
+[p144_c0011] "Additional Standees" reflect the impact of reduced train car consists reported as consist compliance less than 100%.
+[p144_c0012] Note: These statistics do not include the effects of daily ridership variation or uneven distribution of customers within trains. Holidays and Special Events for which there are special equipment programs are not included.
+[p144_c0013] Operations Planning and Analysis/jc
+[p144_c0014] _Master Page # 144 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 145
+
+### [p145_c0001] Master Page # 145 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+[p145_c0002]
+
+```text
+Elevator Availability 2021 2020 April Year to Date April Year to Date Grand Central Terminal 99.78% 99.25% 100.00% 98.10% Harlem 99.97% 99.98% 99.98% 99.20% Hudson 99.96% 99.97% 99.64% 99.54% New Haven 99.95% 99.96% 99.97% 97.43% Overall Average 99.91% 99.79% 99.90% 98.57%
+```
+[p145_c0003] PLEASE NOTE: The NE-1 Elevator (the 47th St cross passageway) is Out of Service due to East Side Access construction and is excluded from this report.
+[p145_c0004]
+
+```text
+Escalator Availability 2021 2020 April Year to Date April Year to Date Grand Central Terminal 100.00% 99.64% 100.00% 99.90% White Plains 100.00% 100.00% 100.00% 100.00% Overall Average 100.00% 99.82% 100.00% 99.95%
+```
+[p145_c0005] PLEASE NOTE: Escalator #11 (47th St crosspassage to 47th & Madison) is Out of Service for scheduled upgrade work and is excluded from this report. Escalators 1 & 2 were Returned To Service on 4/9/21.
+
+## Page 146
+
+> [p146_c0001] The logo for the Metropolitan Transportation Authority (MTA) and Metro-North Railroad. It features a blue circle on the left containing the white letters "MTA". To the right of the circle, the words "Metro-North Railroad" are written in a bold, blue, sans-serif font.
+### [p146_c0002] Performance Metrics Report
+[p146_c0003] _Master Page # 146 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 147
+
+### [p147_c0001] Metro-North Railroad
+### [p147_c0002] On-Time Performance
+[p147_c0003] The percentage of trains that arrive at their final destination within 5'59" of schedule.
+[p147_c0004]
+
+```text
+2021 2020 Goal April YTD April YTD 94.0% 97.6% 98.1% 98.6% 97.9%
+```
+> [p147_c0005] On-Time Performance by Month On-Time Performance by Month Data Month 2019 2020 2021 January 95.9 98.2 98.2 February 96.3 98 98 March 95.2 98.5 98.5 April 95.3 98.6 98.6 May 94.2 98.4 98.4 June 94.4 98.1 98.1 July 92.4 98.3 98.3 August 93.1 95.7 95.7 September 92.3 98.5 98.5 October 93.8 98.3 98.3 November 94 97.4 97.4 December 95.7 97.4 97.4
+### [p147_c0006] Short Trains
+[p147_c0007] The number of AM trains that operate with fewer than the scheduled number of cars.
+[p147_c0008]
+
+```text
+2021 2020 Goal April YTD April YTD 1138 0 0 0 70
+```
+> [p147_c0009] Short Trains (Cumulative Goal < 1138) Short Trains (Cumulative Goal < 1138) Data Month 2019 2020 2021 January 130 43 0 February 50 27 0 March 31 0 0 April 31 0 0 May 28 0 0 June 15 0 0 July 37 0 0 August 17 0 0 September 24 0 0 October 25 0 0 November 40 0 0 December 51 0 0
+[p147_c0010] _Master Page # 147 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 148
+
+### [p148_c0001] Metro-North Railroad
+### [p148_c0002] Switch/Signal Delays
+[p148_c0003] The number of trains that arrive at their final destination later than 5'59" of schedule due to Switch/Signal causes.
+[p148_c0004]
+
+```text
+2021 2020 Goal April YTD April YTD 1896 7 39 19 112
+```
+> [p148_c0005] Switch/Signal Delays by Month Year: 2019 (Green), 2020 (Blue), 2021 (Cyan) Month 2019 2020 2021 January 70 29 10 February 67 43 13 March 79 21 9 April 28 19 7 May 80 20 June 87 17 July 160 11 August 129 20 September 41 17 October 46 22 November 34 15 December 32 26 Goal: 1896
+[p148_c0006] _Master Page # 148 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 149
+
+### [p149_c0001] Metro-North Railroad
+### [p149_c0002] Fare Not Collected Rate
+[p149_c0003] The percentage of instances an MTA Audit Operative's fare is not collected.
+[p149_c0004]
+
+```text
+2021 2020 Goal Apr YTD Apr YTD 4.0% 1.6% 2.8% N/A 3.2%
+```
+> [p149_c0005] Fare Not Collected Rate by Month Month 2020 (%) 2021 (%) January 4.5 3.0 February 2.9 4.5 March 1.7 2.4 April 1.6 May June July 5.3 August 7.8 September 2.0 October 5.4 November 3.7 December 1.6
+- [p149_c0006] • Due to Coronavirus pandemic, MTA Audit suspended their on-board fare collection review efforts in March 2020 and resumed Fare Not Collected audits in July 2020.
+### [p149_c0007] Incorrect Fare Collected Rate
+[p149_c0008] The percentage of instances an incorrect fare is sold to or accepted from an MTA Audit Operative by a conductor.
+[p149_c0009]
+
+```text
+2021 2020 Goal Apr YTD Apr YTD 14.3% 5.7% 10.6% N/A 11.9%
+```
+> [p149_c0010] Incorrect Fare Collected by Month Month 2020 (%) 2021 (%) January 11.6 19.4 February 12.3 5.0 March 11.8 9.8 April 5.7 May June July August 14.3 September 10.0 October 11.8 November 15.0 December 10.0
+- [p149_c0011] • Due to Coronavirus pandemic, MTA Audit suspended their on-board fare collection review efforts in March 2020 and resumed Incorrect Fare Collected audits in August 2020.
+[p149_c0012] _Master Page # 149 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 150
+
+### [p150_c0001] Metro-North Railroad
+### [p150_c0002] Credit Card Chargeback Rate
+[p150_c0003] The percentage of credit card sales in dollars that are rejected due to fraud.
+[p150_c0004]
+
+```text
+2021 2020 Goal Apr YTD Apr YTD 0.088% 0.033% 0.041% 1.521% 0.096%
+```
+> [p150_c0005] Credit Card Chargeback Rate by Month Month 2020 (%) 2021 (%) January 0.082 0.074 February 0.073 0.025 March 0.094 0.038 April 1.521 0.033 May 0.163 June 0.214 July 0.127 August 0.122 September 0.102 October 0.056 November 0.036 December 0.074
+- [p150_c0006] April 2020 increase is due to a significant decrease in sales relative to chargebacks and the timing of chargebacks processed pertaining to prior periods.
+[p150_c0007] _Master Page # 150 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 151
+
+> [p151_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a blue circle.
+### [p151_c0002] Metro-North Railroad
+### [p151_c0003] Finance Report
+[p151_c0004] Steven Weiss
+[p151_c0005] Executive Director, Management & Budget
+> [p151_c0006] A Metro-North train is stopped at the platform of the Yankees-E. 153rd Street station. The train is white with a blue and red stripe. The text 'Yankees-E. 153rd Street' and the MTA logo are visible on the side of the train.
+> [p151_c0007] A view of the station platform. A sign above the platform reads 'To E. 153rd Street Garage' and 'To Stadium & Macombs Dam Park'. People are walking on the platform.
+> [p151_c0008] Two fans wearing New York Yankees jerseys (numbers 99 and 2) are standing in front of the Yankee Stadium. The stadium is visible in the background.
+> [p151_c0009] A group of fans, some wearing New York Yankees jerseys and face masks, are walking along the station platform.
+> [p151_c0010] Cathy Rinaldi, the Metro-North President, is speaking into a microphone. She is wearing a light-colored jacket and a colorful scarf. A 'WNYC' logo is visible on the microphone.
+> [p151_c0011] A fan wearing a black jacket with 'RALPH LAURE' and a Yankees logo on the back is standing in front of the Yankee Stadium.
+> [p151_c0012] A group of fans are cheering and waving their hands as they walk along the station platform.
+> [p151_c0013] A group of fans, some wearing New York Yankees jerseys (one with number 42), are walking along the station platform.
+> [p151_c0014] Two fans wearing New York Yankees jerseys and face masks are walking along the station platform.
+[p151_c0015] On Thursday, April 1st, 2021, Metro-North President Cathy Rinaldi made her way, like hundreds of our customers, to Yankees-E. 153rd Street station in the Bronx to celebrate Opening Day using our Train to the Game service.
+[p151_c0016] _Master Page # 151 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 152
+
+### [p152_c0001] Metro-North Railroad
+### [p152_c0002] April 2021 Highlights: Financial Report
+[p152_c0003] The Metro-North Railroad's Monthly Financial Report provides year-to-date fiscal information comparing actual revenues, expenses and staffing levels to the Adopted Budget (Budget) and key financial performance indicators.
+### [p152_c0004] Summary of Non-Reimbursable Year-to-Date (YTD) April 2021 Financial Results
+[p152_c0005] Ridership and accrual results, versus the Budget, are summarized as follows:
+- [p152_c0006] • Ridership of 6.3 million was 60.9% unfavorable vs. 2020 and 77.1% unfavorable vs. 2019 pre-COVID levels. Compared to the Budget, Ridership was 20.3% favorable vs. Budget primarily due to higher Non-Commutation ridership. Consequently, farebox revenue of $49.5 million was $3.6 million higher than Budget. • Total revenue of $59.2 million was $1.9 million or 3.1% lower than Budget primarily due to lower advertising, net GCT Retail Income and parking revenue partially offset by higher farebox revenue. • Total expenses of $426.0 million were $0.7 million or 0.2% favorable vs. Budget primarily due to timing of contractual costs and consulting and engineering services partially offset by higher labor costs.
+[p152_c0007] Financial results for Year-to-Date (YTD) April 2021 are presented in the table below and compared to the Adopted Budget.
+[p152_c0008] _MTA Metro-North Railroad April 2021 Year-to-Date Results ($ in Millions)_
+[p152_c0009]
+
+```text
+Adopted Budget Actual Fav/(Unfav) Variance $ Var % Var Total Revenue $61.1 $59.2 ($1.9) -3.1% Total Expenses before Non-Cash Liability Adjs. 426.7 426.0 0.7 0.2% Operating Surplus/(Deficit) (365.6) (366.8) (1.2) -0.3% Other Non-Cash Liabilities 84.1 88.2 (4.1) -4.9% Net Surplus/(Deficit) after Non-Cash Liability Adjs. (449.7) (455.0) (5.3) -1.2% Cash Adjustments 86.3 54.1 (32.3) -37.4% Net Cash Surplus/(Deficit) ($363.4) ($400.9) ($37.5) -10.3%
+```
+### [p152_c0010] Steven Weiss
+[p152_c0011] Executive Director, Management & Budget
+[p152_c0012] _Master Page # 152 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 153
+
+### [p153_c0001] NON-REIMBURSABLE and REIMBURSABLE SUMMARY
+[p153_c0002] April 2021 YTD Net Deficit (Non-Reimbursable and Reimbursable) of $455.0 million was $5.3 million or 1.2% unfavorable vs. the Budget.
+[p153_c0003] Major drivers of the April 2021 YTD unfavorable result of $5.3 million include higher Non-Reimbursable Expenses of $3.4 million mainly due to higher labor costs and non-cash liability adjustments partially offset by lower contractual costs and consulting and engineering services. Non-Reimbursable Revenues were unfavorable by $1.9 million, primarily driven by lower advertising, net GCT Retail Income and parking revenue partially offset by higher farebox revenue.
+[p153_c0004] April 2021 YTD Reimbursable Expenses of $64.8 million were $56.5 million favorable vs. the Budget primarily due to the timing of several projects including the Waterbury Branch Cab Signal, Power Infrastructure Restoration, Connecticut Positive Train Control, Devon Supply Transformer Replacement, Connecticut Track Program, Signal Replacement from Greenwich to South Norwalk, and other various projects.
+### [p153_c0005] REVENUE/RIDERSHIP
+- [p153_c0006] • Farebox Revenue – YTD results were $3.6 million higher vs. the Budget primarily due to higher East of Hudson non-commutation ridership partially offset by East of Hudson commutation ridership. ▪ YTD Ridership of 6.3 million was 20.3% favorable vs. the Budget, 60.9% unfavorable vs 2020 and 77.1% unfavorable vs pre-COVID 2019 levels. • Other Operating Revenue – YTD was $5.5 million unfavorable vs. the Budget primarily due to lower advertising, net GCT Retail Income and parking revenue. • Capital and Other Reimbursements – YTD was $56.5 million or 46.6% unfavorable vs. the Budget primarily due to scheduling and timing changes noted above.
+### [p153_c0007] TOTAL EXPENSES (Non-Reimbursable and Reimbursable)
+[p153_c0008] Total Expenses – YTD expenses of $578.9 million were $53.1 million or 8.4% favorable vs. the Budget.
+[p153_c0009] Labor Expenses (including fringes and overhead recoveries) of $367.9 million YTD were $0.4 million unfavorable vs. the Budget.
+- [p153_c0010] • Payroll – YTD was $1.5 million favorable vs. the Budget primarily due to lower train & engine crew payments partially offset by the timing of retiree payouts. • Overtime – YTD was $3.6 million favorable vs. the Budget primarily due to reduced train and engine crew overtime resulting from the June 2020 revised service schedule.
+[p153_c0011] Non-Labor Expenses of $122.9 million YTD were $57.6 million favorable vs. the Budget.
+- [p153_c0012] • Electric Power – YTD results were $0.3 million unfavorable vs. the Budget primarily due to higher rates partially offset by lower usage. • Fuel – YTD expenses were $0.5 million favorable vs. the Budget primarily due to lower usage partially offset by higher rates. • Maintenance & Other Operating Contracts – YTD was $8.7 million favorable vs. the Budget due to the timing Non-Reimbursable expenses for BL-20 locomotive overhauls, infrastructure maintenance and miscellaneous maintenance and operating contracts as well as the timing of Reimbursable project activity primarily for the Signal Replacement from Greenwich to South Norwalk project.
+[p153_c0013] _Master Page # 153 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 154
+
+- [p154_c0001] • Professional Services – YTD was $9.8 million favorable vs. the Budget due to the timing of Reimbursable project activity primarily related to the Connecticut Positive Train Control , Sasco Creek Power Supply Station and Waterbury Branch Cab Signal projects and timing of Non-Reimbursable expenses for consulting and engineering services. • Materials & Supplies – YTD was $38.8 million favorable vs. the Budget primarily due to the timing of Reimbursable project activity for the Waterbury Branch Cab Signal, Power Infrastructure Restoration, Devon Supply Transformer Replacement and the Connecticut Track Program as well as the timing of rolling stock maintenance events and material usage partially offset by miscellaneous inventory adjustments. • Other Business Expenses – YTD was $0.7 million unfavorable vs. the Budget primarily due to higher subsidy payments to New Jersey Transit resulting from year to date revenue true-ups and lower Amtrak recoveries partially offset by lower credit card fees.
+[p154_c0002] Depreciation and Other Non-Cash Liability Adjustments were $4.1 million unfavorable vs. the YTD Budget primarily due to higher depreciation expense reflecting the capitalization of the Positive Train Control (PTC) project partially offset by lower GASB 68 expense, which reflects adjustments to account for MNR's net pension liability as well as lower environmental remediation expenses.
+### [p154_c0003] CASH DEFICIT SUMMARY
+[p154_c0004] April YTD Net Cash Deficit of $400.9 million was $37.5 million or 10.3% unfavorable to the Budget primarily due to the partial payment of 2020 deferred payroll taxes.
+### [p154_c0005] FINANCIAL PERFORMANCE MEASURES
+- [p154_c0006] • Adjusted Farebox Operating Ratio of 15.0% was 0.1 percentage points unfavorable vs. the Budget. • Adjusted Cost per Passenger of $64.71 was $15.24 favorable vs. the Budget. • Revenue per Passenger of $7.84 was $0.90 unfavorable vs. the Budget.
+[p154_c0007] _Master Page # 154 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 155
+
+### [p155_c0001] Master Page # 155 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p155_c0002] MTA METRO-NORTH RAILROAD FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET ACCRUAL STATEMENT of OPERATIONS by CATEGORY APRIL 2021 ($ in millions)
+[p155_c0003] SCHEDULE I - A
+[p155_c0004]
+
+```text
+Nonreimbursable Reimbursable Total Adopted Budget Actual Favorable (Unfavorable) Adopted Budget Actual Favorable (Unfavorable) Adopted Budget Actual Favorable (Unfavorable) Variance Percent Variance Percent Variance Percent Revenue Farebox Revenue $15.418 $15.100 ($0.318) (2.1) $0.000 $0.000 $0.000 - $15.418 $15.100 ($0.318) (2.1) Vehicle Toll Revenue 0.000 0.000 0.000 - 0.000 0.000 0.000 - 0.000 0.000 0.000 - Other Operating Revenue 4.152 2.835 (1.317) (31.7) 0.000 0.000 0.000 - 4.152 2.835 (1.317) (31.7) Capital & Other Reimbursements: MTA 0.000 0.000 0.000 - 14.821 11.489 (3.332) (22.5) 14.821 11.489 (3.332) (22.5) CDOT 0.000 0.000 0.000 - 10.547 9.282 (1.265) (12.0) 10.547 9.282 (1.265) (12.0) Other 0.000 0.000 0.000 - 1.128 0.242 (0.886) (78.5) 1.128 0.242 (0.886) (78.5) Total Capital and Other Reimbursements 0.000 0.000 0.000 - 26.497 21.013 (5.483) (20.7) 26.497 21.013 (5.483) (20.7) Total Revenue $19.570 $17.935 ($1.635) (8.4) $26.497 $21.013 ($5.483) (20.7) $46.066 $38.948 ($7.118) (15.5) Expenses Labor: Payroll $42.884 $44.844 ($1.960) (4.6) $4.804 $4.676 $0.128 2.7 $47.688 $49.520 ($1.831) (3.8) Overtime 6.716 6.194 0.522 7.8 2.694 2.864 (0.170) (6.3) 9.411 9.058 0.352 3.7 Health and Welfare 8.517 9.510 (0.993) (11.7) 1.673 1.610 0.063 3.8 10.191 11.120 (0.930) (9.1) OPEB Current Payment 3.083 3.504 (0.420) (13.6) 0.000 0.000 0.000 - 3.083 3.504 (0.420) (13.6) Pensions 9.901 14.062 (4.161) (42.0) 1.322 1.357 (0.035) (2.7) 11.223 15.419 (4.196) (37.4) Other Fringe Benefits 10.069 11.192 (1.123) (11.1) 1.259 1.307 (0.047) (3.8) 11.328 12.498 (1.170) (10.3) Reimbursable Overhead (6.557) (6.013) (0.544) (8.3) 6.339 5.950 0.389 6.1 (0.218) (0.062) (0.156) (71.4) Total Labor $74.614 $83.293 ($8.679) (11.6) $18.093 $17.765 $0.328 1.8 $92.706 $101.058 ($8.351) (9.0) Non-Labor: Electric Power $3.848 $3.937 ($0.089) (2.3) $0.000 $0.000 $0.000 - $3.848 $3.937 ($0.089) (2.3) Fuel 1.379 1.242 0.137 9.9 0.000 0.000 0.000 - 1.379 1.242 0.137 9.9 Insurance 1.657 1.423 0.234 14.1 0.000 0.172 (0.172) - 1.657 1.595 0.061 3.7 Claims 0.096 0.041 0.054 56.7 0.000 0.000 0.000 - 0.096 0.041 0.054 56.7 Paratransit Service Contracts 0.000 0.000 0.000 - 0.000 0.000 0.000 - 0.000 0.000 0.000 - Maintenance and Other Operating Contracts 10.156 8.382 1.773 17.5 0.342 1.091 (0.749) * 10.497 9.473 1.024 9.8 Professional Service Contracts 3.549 3.122 0.427 12.0 1.544 0.975 0.569 36.8 5.093 4.097 0.996 19.6 Materials & Supplies 8.721 9.148 (0.427) (4.9) 6.486 0.984 5.502 84.8 15.207 10.131 5.075 33.4 Other Business Expenses 1.531 2.009 (0.477) (31.2) 0.033 0.026 0.006 19.4 1.564 2.035 (0.471) (30.1) Total Non-Labor $30.935 $29.303 $1.632 5.3 $8.404 $3.249 $5.155 61.3 $39.339 $32.552 $6.788 17.3 Other Adjustments: Other 0.000 0.000 0.000 - 0.000 0.000 0.000 - 0.000 0.000 0.000 - Total Other Adjustments $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - Total Expenses before Non-Cash Liability Adjs. $105.549 $112.596 ($7.047) (6.7) $26.497 $21.013 $5.483 20.7 $132.046 $133.609 ($1.564) (1.2) Depreciation 20.542 31.159 (10.617) (51.7) 0.000 0.000 0.000 - 20.542 31.159 (10.617) (51.7) OPEB Obligation 0.000 0.000 0.000 - 0.000 0.000 0.000 - 0.000 0.000 0.000 - GASB68 Pension Adjustment 0.000 0.000 0.000 - 0.000 0.000 0.000 - 0.000 0.000 0.000 - Environmental Remediation 0.333 0.000 0.333 100.0 0.000 0.000 0.000 - 0.333 0.000 0.333 100.0 GASB75 Adjustment 0.000 0.000 0.000 - 0.000 0.000 0.000 - 0.000 0.000 0.000 - Total Expenses $126.425 $143.755 ($17.330) (13.7) $26.497 $21.013 $5.483 20.7 $152.921 $164.768 ($11.847) (7.7) Net Surplus/(Deficit) ($106.855) ($125.820) ($18.965) (17.7) $0.000 $0.000 $0.000 - ($106.855) ($125.820) ($18.965) (17.7) Cash Conversion Adjustments: Depreciation 20.542 31.159 10.617 51.7 0.000 0.000 0.000 - 20.542 31.159 10.617 51.7 Operating/Capital (3.993) (4.622) (0.629) (15.7) 0.000 0.000 0.000 - (3.993) (4.622) (0.629) (15.7) Other Cash Adjustments (9.573) 18.930 28.502 * 0.000 0.000 0.000 - (9.573) 18.930 28.502 * Total Cash Conversion Adjustments $6.976 $45.467 $38.490 * $0.000 $0.000 $0.000 - $6.976 $45.467 $38.490 * Net Cash Surplus/(Deficit) ($99.878) ($80.353) $19.525 19.5 $0.000 $0.000 $0.000 - ($99.878) ($80.353) $19.525 19.5
+```
+### [p155_c0005] Notes:
+[p155_c0006] -- Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current months' actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results.
+[p155_c0007] -- Differences are due to rounding.
+[p155_c0008] * Variance exceeds 100%.
+
+## Page 156
+
+### [p156_c0001] Master Page # 156 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p156_c0002] MTA METRO-NORTH RAILROAD FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET ACCRUAL STATEMENT OF OPERATIONS by CATEGORY APRIL YEAR-TO-DATE ($ in millions)
+[p156_c0003] SCHEDULE I - B
+[p156_c0004]
+
+```text
+Nonreimbursable Reimbursable Total Adopted Budget Actual Favorable (Unfavorable) Adopted Budget Actual Favorable (Unfavorable) Adopted Budget Actual Favorable (Unfavorable) Variance Percent Variance Percent Variance Percent Revenue Farebox Revenue $45,880 $49,502 $3,622 7.9 $0,000 $0,000 $0,000 - $45,880 $49,502 $3,622 7.9 Vehicle Toll Revenue 0.000 0.000 0.000 - 0.000 0.000 0.000 - 0.000 0.000 0.000 - Other Operating Revenue 15.183 9.690 (5.493) (36.2) 0.000 0.000 0.000 - 15.183 9.690 (5.493) (36.2) Capital & Other Reimbursements: MTA 0.000 0.000 0.000 - 51.425 31.552 (19.873) (38.6) 51.425 31.552 (19.873) (38.6) CDOT 0.000 0.000 0.000 - 65.462 29.123 (36.339) (55.5) 65.462 29.123 (36.339) (55.5) Other 0.000 0.000 0.000 - 4.331 4.076 (0.255) (5.9) 4.331 4.076 (0.255) (5.9) Total Capital and Other Reimbursements 0.000 0.000 0.000 - 121.218 64.751 (56.467) (46.6) 121.218 64.751 (56.467) (46.6) Total Revenue/Receipts $61,063 $59,193 ($1,870) (3.1) $121,218 $64,751 ($56,467) (46.6) $182,281 $123,943 ($58,337) (32.0) Expenses Labor: Payroll $171,443 $172,608 ($1,165) (0.7) $17,417 $14,729 $2,689 15.4 $188,860 $187,337 $1,523 0.8 Overtime 27,867 25,119 2,748 9.9 9,263 8,459 0,804 8.7 37,130 33,578 3,553 9.6 Health and Welfare 34,274 36,553 (2,279) (6.6) 5,961 4,981 0,980 16.4 40,235 41,534 (1,299) (3.2) OPEB Current Payment 12,333 13,776 (1,443) (11.7) 0.000 0.000 0.000 - 12,333 13,776 (1,443) (11.7) Pensions 39,700 42,718 (3,018) (7.6) 4,733 4,209 0,525 11.1 44,433 46,926 (2,493) (5.6) Other Fringe Benefits 40,693 40,988 (0,295) (0.7) 4,486 4,030 0,456 10.2 45,180 45,018 0,162 0.4 Reimbursable Overhead (23,089) (18,652) (4,417) (19.1) 22,368 18,360 4,008 17.9 (0,702) (0,292) (0,409) (58.3) Total Labor $303,240 $313,109 ($9,869) (3.3) $64,229 $54,767 $9,462 14.7 $367,470 $367,876 ($0,407) (0.1) Non-Labor: Electric Power $17,596 $17,772 ($0,177) (1.0) $0,000 $0,140 ($0,140) - $17,596 $17,912 ($0,316) (1.8) Fuel 5,714 5,234 0,480 8.4 0.000 0.000 0.000 - 5,714 5,234 0,480 8.4 Insurance 6,525 5,541 0,984 15.1 0.000 0,533 (0,533) - 6,525 6,075 0,451 6.9 Claims 0,382 0,090 0,292 76.4 0.000 0.000 0.000 - 0,382 0,090 0,292 76.4 Paratransit Service Contracts 0.000 0.000 0.000 - 0.000 0.000 0.000 - 0.000 0.000 0.000 - Maintenance and Other Operating Contracts 39,431 32,865 6,566 16.7 5,189 2,996 2,174 42.1 44,600 35,861 8,740 19.6 Professional Service Contracts 14,146 10,527 3,619 25.6 7,960 1,825 6,135 77.1 22,106 12,352 9,754 44.1 Materials & Supplies 33,882 34,362 (0,480) (1.4) 43,729 4,417 39,312 89.9 77,610 38,779 38,831 50.0 Other Business Expenses 5,793 6,503 (0,710) (12.3) 0,130 0,072 0,058 44.5 5,924 6,576 (0,652) (11.0) Total Non-Labor $123,469 $112,895 $10,574 8.6 $56,989 $9,983 $47,005 82.5 $180,458 $122,878 $57,580 31.9 Other Adjustments Other 0.000 0.000 0.000 - 0.000 0.000 0.000 - 0.000 0.000 0.000 - Total Other Adjustments $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - Total Expenses before Non-Cash Liability Adjs. $426,710 $426,004 $0,706 0.2 $121,218 $64,751 $56,467 46.6 $547,927 $490,755 $57,173 10.4 Depreciation 82,169 91,721 (9,552) (11.6) 0.000 0.000 0.000 - 82,169 91,721 (9,552) (11.6) OPEB Obligation 0.000 0.000 0.000 - 0.000 0.000 0.000 - 0.000 0.000 0.000 - GASB68 Pension Adjustment 0,568 (3,755) 4,323 * 0.000 0.000 0.000 - 0,568 (3,755) 4,323 * Environmental Remediation 1,333 0,060 1,274 95.5 0.000 0.000 0.000 - 1,333 0,060 1,274 95.5 GASB75 Adjustment 0.000 0,144 (0,144) - 0.000 0.000 0.000 - 0.000 0,144 (0,144) - Total Expenses $510,779 $514,174 ($3,394) (0.7) $121,218 $64,751 $56,467 46.6 $631,997 $578,924 $53,073 8.4 Net Surplus/(Deficit) ($449,716) ($454,981) ($5,265) (1.2) $0.000 $0.000 $0.000 - ($449,716) ($454,981) ($5,265) (1.2) Cash Conversion Adjustments: Depreciation 82,169 91,721 9,552 11.6 0.000 0.000 0.000 - 82,169 91,721 9,552 11.6 Operating/Capital (17,409) (9,196) 8,213 47.2 0.000 0.000 0.000 - (17,409) (9,196) 8,213 47.2 Other Cash Adjustments 21,583 (28,442) (50,025) * 0.000 0.000 0.000 - 21,583 (28,442) (50,025) * Total Cash Conversion Adjustments $86,343 $54,083 ($32,260) (37.4) $0.000 $0.000 $0.000 - $86,343 $54,083 ($32,260) (37.4) Net Cash Surplus/(Deficit) ($363,374) ($400,898) ($37,524) (10.3) $0.000 $0.000 $0.000 - ($363,374) ($400,898) ($37,524) (10.3)
+```
+### [p156_c0005] Notes:
+[p156_c0006] -- Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current months' actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results.
+[p156_c0007] -- Differences are due to rounding.
+[p156_c0008] * Variance exceeds 100%.
+
+## Page 157
+
+### [p157_c0001] Master Page # 157 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p157_c0002] MTA METRO-NORTH RAILROAD ACCRUAL STATEMENT OF OPERATIONS BY CATEGORY EXPLANATION OF VARIANCE BETWEEN ADOPTED BUDGET AND ACTUAL RESULTS FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET April 2021 ($ in millions)
+[p157_c0003]
+
+```text
+Generic Revenue or Expense Category Non-Reimb. or Reimb. Current Month vs. Adopted Budget Year to Date vs. Adopted Budget Variance Fav (Unfav) Reason for Variance Variance Fav (Unfav) Reason for Variance $ % $ % FAREBOX REVENUE Non-Reimb ($0.318) (2.1%) $3.622 7.9% Reflects higher East of Hudson non-commutation ridership partially offset by lower East of Hudson commutation ridership. OTHER OPERATING REVENUE Non-Reimb ($1.317) (31.7%) Lower advertising and GCT retail revenues. ($5.493) (36.2%) Lower advertising, GCT retail, and parking revenues. CAPITAL AND OTHER REIMBURSEMENTS Reimb ($5.483) (20.7%) Lower reimbursements reflect scheduling and timing changes in capital project expenditures. ($56.467) (46.6%) Lower reimbursements reflect scheduling and timing changes in capital project expenditures. PAYROLL Non-Reimb ($1.960) (4.6%) Primarily reflects the timing of retiree payouts. ($1.165) (0.7%) Reimb $0.128 2.7% $2.689 15.4% Primarily reflects lower activity on the Positive Train Control (NY), Cyclical Track Program, GCT/ESA Unified Trash Facility and Signal Replacement from Greenwich to South Norwalk Projects. OVERTIME Non-Reimb $0.522 7.8% See overtime charts. $2.748 9.9% See overtime charts. Reimb ($0.170) (6.3%) See overtime charts. $0.804 8.7% See overtime charts. HEALTH AND WELFARE Non-Reimb ($0.993) (11.7%) Primarily reflects a YTD catch-up adjustment for higher than budgeted Health & Welfare rates. ($2.279) (6.6%) Reflects higher than budgeted rates. Reimb $0.063 3.8% $0.980 16.4% Primarily reflects lower activity on the Positive Train Control (NY), Signal Replacement from Greenwich to South Norwalk and Positive Train Control (CT) Projects as well as Connecticut Track and Cyclical Track Programs. OPEB CURRENT PAYMENT Non-Reimb ($0.420) (13.6%) Primarily reflects a higher than budgeted number of retirees receiving healthcare premiums. ($1.443) (11.7%) Primarily reflects a higher than budgeted number of retirees receiving healthcare premiums. Reimb PENSIONS Non-Reimb ($4.161) (42.0%) Primarily reflects a catch-up adjustment for the Actuarially Defined Contribution (ADC) and an increase in the provision for COVID-19 Death Benefits. ($3.018) (7.6%) Primarily reflects a catch-up adjustment for the Actuarially Defined Contribution (ADC) and an increase in the provision for COVID-19 Death Benefits. Reimb ($0.035) (2.7%) $0.525 11.1% Primarily reflects lower activity on the Positive Train Control (NY), GCT Building Component Repairs, Signal Replacement from Greenwich to South Norwalk and Positive Train Control (CT) Projects as well as Connecticut Track and Cyclical Track Programs.
+```
+
+## Page 158
+
+### [p158_c0001] Master Page # 158 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p158_c0002] MTA METRO-NORTH RAILROAD ACCRUAL STATEMENT OF OPERATIONS BY CATEGORY EXPLANATION OF VARIANCE BETWEEN ADOPTED BUDGET AND ACTUAL RESULTS FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET April 2021 ($ in millions)
+[p158_c0003]
+
+```text
+Generic Revenue or Expense Category Non Reimb. or Reimb. Current Month vs. Adopted Budget Year to Date vs. Adopted Budget Variance Fav (Unfav) Reason for Variance Variance Fav (Unfav) Reason for Variance $ % $ % OTHER FRINGE BENEFITS Non-Reimb ($1.123) (11.1%) Primarily reflects a higher employee claim provision, rates and labor costs than budgeted. ($0.295) (0.7%) Primarily reflects lower activity on the Positive Train Control (NY), GCT Building Component Repairs, Positive Train Control (CT), and Signal Replacement from Greenwich to South Norwalk Projects as well as Connecticut Track and Cyclical Track Programs partially offset by higher activity on the Universal Interlock Project. Reimb ($0.047) (3.8%) $0.456 10.2% REIMBURSABLE OVERHEAD Non-Reimb ($0.544) (8.3%) The non-reimbursable and reimbursable variances reflect lower activity for several projects. ($4.417) (19.1%) The non-reimbursable and reimbursable variances reflect lower activity for several projects. Reimb $0.389 6.1% $4.008 17.9% FUEL Non-Reimb $0.137 9.9% Lower than budgeted revenue diesel usage partially offset by higher than budgeted revenue diesel rates. $0.480 8.4% Lower fuel usage partially offset by higher revenue diesel rates. INSURANCE Non-Reimb $0.234 14.1% Primarily reflects lower than budgeted premiums. $0.984 15.1% Primarily reflects lower than budgeted premiums. Reimb ($0.172) - Primarily reflects higher activity on the Connecticut Track Program, Turnouts Replacement, Waterbury Branch Cab Signal, Turnouts Replacement and Power Infrastructure Restoration Projects. ($0.533) - Primarily reflects higher activity on the Connecticut Track Program, Turnouts Replacement, Power Infrastructure Restoration, West of Hudson Signal Improvement and Waterbury Branch Cab Signal Projects. CLAIMS Non-Reimb $0.054 56.7% Reflects a lower passenger claims provision than budgeted. $0.292 76.4% Reflects a lower passenger claims provision than budgeted. MAINTENANCE AND OTHER OPERATING CONTRACTS Non-Reimb $1.773 17.5% Reflects timing of expenses for the BL-20 locomotive overhaul, infrastructure maintenance, and miscellaneous maintenance and operating contracts. $6.566 16.7% Reflects timing of expenses for the BL-20 locomotive overhaul, infrastructure maintenance, and miscellaneous maintenance and operating contracts. Reimb ($0.749) * Primarily reflects higher activity on the Cyclical Track Program. $2.174 42.1% Primarily reflects lower activity on the Signal Replacement from Greenwich to South Norwalk and Waterbury Branch Cab Signal Projects partially offset by higher activity on the Cyclical Track Program. PROFESSIONAL SERVICE CONTRACTS Non-Reimb $0.427 12.0% Primarily reflects timing of consulting and engineering services. $3.619 25.6% Primarily reflects timing of consulting and engineering services. Reimb $0.569 36.8% Reflects lower activity on the Positive Train Control (CT) and Sasco Creek Traction Power Supply Station Projects partially offset by higher activity on the Waterbury Branch Cab Signal Projects. $6.135 77.1% Reflects lower activity on the Positive Train Control (CT), Sasco Creek Traction Power Supply Station and Waterbury Branch Cab Signal Projects.
+```
+
+## Page 159
+
+### [p159_c0001] Master Page # 159 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p159_c0002] MTA METRO-NORTH RAILROAD ACCRUAL STATEMENT OF OPERATIONS BY CATEGORY EXPLANATION OF VARIANCE BETWEEN ADOPTED BUDGET AND ACTUAL RESULTS FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET April 2021 ($ in millions)
+[p159_c0003]
+
+```text
+Generic Revenue or Expense Category Non Reimb. or Reimb. Current Month vs. Adopted Budget Year to Date vs. Adopted Budget Variance Fav (Unfav) Reason for Variance Variance Fav (Unfav) Reason for Variance $ % $ % MATERIALS AND SUPPLIES Reimb $5.502 84.8% Reflects lower activity on the Waterbury Branch Cab Signal, Power Infrastructure Restoration, Harmon Shop Replacement - Phase V, and Turnouts Replacement Projects as well as the Cyclical Track Program. $39.312 89.9% Reflects lower activity on the Waterbury Branch Cab Signal, Power Infrastructure Restoration, Devon Supply Transformer Replacement, Harmon Shop Replacement - Phase V, Positive Train Control (CT), and Turnouts Replacement Projects as well as the Connecticut Track Program. OTHER BUSINESS EXPENSES Non-Reimb ($0.477) (31.2%) Primarily due to higher subsidy payments to New Jersey Transit resulting from inflationary adjustments partially offset by lower credit card fees. ($0.710) (12.3%) Primarily due to higher subsidy payments to New Jersey Transit resulting from first quarter revenue true-ups and lower Amtrak recoveries partially offset by lower credit card fees. Reimb $0.006 19.4% Primarily reflects lower activity on the Program Scope Development Project. $0.058 44.5% Primarily reflects lower activity on the Program Scope Development Project. DEPRECIATION Non-Reimb ($10.617) (51.7%) Primarily represents a YTD catch-up adjustment for capitalized assets now deemed complete and starting their beneficial life (most notably Positive Train Control). The July Financial Plan will be adjusted to reflect this increase in capitalized assets. ($9.552) (11.6%) Primarily represents a YTD catch-up adjustment for capitalized assets now deemed complete and starting their beneficial life (most notably Positive Train Control). The July Financial Plan will be adjusted to reflect this increase in capitalized assets. GASB68 PENSION ADJUSTMENT Non-Reimb $0.000 100.0% $4.323 100.0% Reflects adjustments to account for MNR's net pension liability. ENVIRONMENTAL REMEDIATION Non-Reimb $0.333 100.0% Reflects timing of projects requiring remediation. $1.274 95.5% Reflects timing of projects requiring remediation. GASB75 ADJUSTMENT Non-Reimb $0.000 - ($0.144) - Reflects adjustments to account for MNR's net OPEB (Other Post Employment Benefits) liability. OPERATING CAPITAL Non-Reimb ($0.629) (15.7%) Primarily reflects timing for the Track Geometry Car partially offset by the Upper Harlem Pole Replacement and Snowmelter Cabinets Projects. $8.213 47.2% Primarily reflects timing for the following projects: Upper Harlem Pole Replacement, Vehicle Replacement Program, GCT Exhaust Duct Repair, Design/Reconfiguration of the Station Master's Office, GCT Air Handling Units/Glycol Cooling, GCT Escalator Replacement and GCT ADA Compliant Signage.
+```
+[p159_c0004] _* Variance exceeds 100%._
+
+## Page 160
+
+### [p160_c0001] Master Page # 160 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p160_c0002] METRO-NORTH RAILROAD – Non-Reimbursable Overtime Variance
+### [p160_c0003] April 2021 and YTD Budget vs. variance
+> [p160_c0004] Period Budget ($M) Actual ($M) Variance ($M) Variance % APR 20 $5.9 $7.7 ($1.8) APR 21 $6.2 $6.7 ($0.5) +4.6% YTD APR 20 $28.7 $32.8 ($4.1) YTD APR 21 $25.1 $27.9 ($2.7) -12.5% Annual Adopted Budget: $85.2M
+### [p160_c0005] Overview
+- [p160_c0006] Overall decrease of $3.6M or 12.5% compared to YTD April 2020 9.9% below 2021 Adopted Budget Snow and Winter conditions response and higher vacancy coverage in Maintenance of Way offset by revised crew needs in Transportation and lower vacancy coverage in Customer Service Connecticut paid $6.4M of total $25.1M; Connecticut's share of YTD Variance is favorable $1.1M of the favorable $2.7M
+### [p160_c0007] YTD variance by division
+[p160_c0008] ($2.7M), (9.9%)
+> [p160_c0009] Division Variance ($M) Notes Maintenance of Way $0.1 Snow and Winter conditions and higher vacancy coverage Transportation ($2.4) Reduced train & engine crew overtime resulting from implementation of revised schedules effective in June 2020 in addition to increased employee availability. Customer Service ($0.3) Lower vacancy coverage requirements Maintenance of Equipment ($0.2) Total ($2.7)
+[p160_c0010] _Source: 2021 Adopted Budget. General Ledger actuals for actual overtime spending._
+
+## Page 161
+
+### [p161_c0001] Master Page # 161 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p161_c0002] METRO-NORTH RAILROAD –Reimbursable Overtime Variance
+### [p161_c0003] April 2021 and YTD Budget vs. variance $M
+- [p161_c0004] ■ Favorable ■ Unfavorable ■ Adopted Budget
+[p161_c0005] Annual Adopted Budget: $29.8M
+> [p161_c0006] Period Adopted Budget ($M) Variance ($M) Favorable ($M) Unfavorable ($M) APR 20 2.7 1.7 (1.1) 0.6 APR 21 2.7 2.9 (0.2) 2.7 YTD APR 20 8.3 0.2 (0.8) 8.1 YTD APR 21 9.3 0.2 (0.8) 8.3
+### [p161_c0007] Overview
+- [p161_c0008] Overall decrease of $0.1M or 1.1% compared to YTD April 2020 8.7% below 2021 Adopted Budget Main cause for favorable variance is less than planned work on MTA 5-Year projects and CT Capital projects Connecticut paid $3.5M of total $8.5M; Connecticut's share of YTD Variance is favorable $0.2M of the favorable $0.8M
+### [p161_c0009] YTD variance by division ($0.8M), (8.7%)
+> [p161_c0010] Division Variance ($M) Maintenance of Equipment 0.0 Customer Service 0.0 Transportation 0.0 Maintenance of Way (0.8) Total (0.8) Various MTA 5-Year and CT Reimbursable projects Track Programs Signal Programs
+[p161_c0011] _Source: 2021 Adopted Budget General Ledger actuals for actual overtime spending_
+
+## Page 162
+
+### [p162_c0001] Master Page # 162 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p162_c0002] METRO-NORTH RAILROAD – Non-Reimbursable and Reimbursable Overtime Variance
+### [p162_c0003] April 2021 and YTD Budget v.s. variance
+[p162_c0004] $M
+> [p162_c0005] Annual Adopted Budget: $114.9M Category April 2021 YTD April 2021 November Forecast Unfavorable $9.1 $37.1 $37.3 Favorable $7.6 $33.6 $41.2 Total $10.5 $33.6 $41.2 Variance +$19.6% -9.9%
+### [p162_c0006] Overview
+- [p162_c0007] • Overall decrease of $3.7M or 9.9% compared to YTD April 2020 • 9.6% below 2021 Adopted Budget • Revised crew needs in Transportation, lower Reimbursable Project activity in Maintenance of Way and lower vacancy coverage in Customer Service • Connecticut paid $9.8M of total $33.6M; Connecticut's share of YTD Variance is a favorable $1.4M of the overall favorable $3.6M
+### [p162_c0008] YTD variance by division
+[p162_c0009] ($3.6M), (9.6%)
+> [p162_c0010] Division Variance ($M) Maintenance of Equipment ($0.2) Customer Service ($0.3) Maintenance of Way ($0.7) Transportation ($2.4) Total ($3.6)
+[p162_c0011] _Source: 2021 Adopted Budget General Ledger actuals for actual overtime spending_
+
+## Page 163
+
+### [p163_c0001] Master Page # 163 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p163_c0002] MTA METRO-NORTH RAILROAD FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET CASH RECEIPTS AND EXPENDITURES ($ in millions)
+[p163_c0003] SCHEDULE III
+[p163_c0004]
+
+```text
+APRIL 2021 Year-to-Date Adopted Budget Actual Favorable (Unfavorable) Adopted Budget Actual Favorable (Unfavorable) Variance Percent Variance Percent Receipts Farebox Revenue $14.749 $14.738 ($0.011) (0.1) $44.123 $47.968 $3.845 8.7 Vehicle Toll Revenue 0.000 0.000 0.000 - 0.000 0.000 0.000 - Other Operating Revenue 6.715 5.029 (1.686) (25.1) 26.122 22.579 (3.543) (13.6) Capital & Other Reimbursements: MTA 11.780 9.626 (2.154) (18.3) 47.348 24.476 (22.872) (48.3) CDOT 10.547 20.455 9.908 93.9 65.462 43.800 (21.662) (33.1) Other 1.128 0.548 (0.580) (51.4) 4.331 5.150 0.819 18.9 Total Capital and Other Reimbursements 23.456 30.629 7.173 30.6 117.141 73.426 (43.715) (37.3) Total Receipts $44.920 $50.396 $5.476 12.2 $187.385 $143.973 ($43.412) (23.2) Expenditures Labor: Payroll $54.394 $51.454 $2.940 5.4 $185.766 $180.172 $5.594 3.0 Overtime 10.962 9.167 1.795 16.4 36.883 32.974 3.909 10.6 Health and Welfare 11.203 11.313 (0.110) (1.0) 44.200 43.870 0.330 0.7 OPEB Current Payment 3.083 3.579 (0.496) (16.1) 12.333 13.816 (1.483) (12.0) Pensions 11.309 11.458 (0.149) (1.3) 45.237 45.742 (0.505) (1.1) Other Fringe Benefits 12.743 17.260 (4.517) (35.4) 42.965 95.176 (52.211) * GASB Account 0.000 0.000 0.000 - 0.000 0.000 0.000 - Reimbursable Overhead 0.000 0.000 0.000 - 0.000 0.000 0.000 - Total Labor $103.695 $104.231 ($0.536) (0.5) $367.385 $411.750 ($44.365) (12.1) Non-Labor: Electric Power $4.007 $4.736 ($0.729) (18.2) $18.233 $20.444 ($2.211) (12.1) Fuel 1.336 1.113 0.223 16.7 5.545 5.170 0.375 6.8 Insurance 2.764 0.000 2.764 100.0 2.764 0.000 2.764 100.0 Claims 0.096 0.120 (0.025) (25.7) 0.886 0.414 0.472 53.3 Paratransit Service Contracts 0.000 0.000 0.000 - 0.000 0.000 0.000 - Maintenance and Other Operating Contracts 9.805 6.956 2.849 29.1 43.517 42.556 0.961 2.2 Professional Service Contracts 3.582 2.227 1.355 37.8 15.824 9.032 6.792 42.9 Materials & Supplies 15.757 8.973 6.784 43.1 81.025 39.527 41.498 51.2 Other Business Expenditures 3.756 2.393 1.363 36.3 15.582 15.978 (0.396) (2.5) Total Non-Labor $41.104 $26.518 $14.586 35.5 $183.374 $133.121 $50.253 27.4 Other Adjustments: Other 0.000 0.000 0.000 - 0.000 0.000 0.000 - Total Other Adjustments $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - Total Expenditures $144.798 $130.749 $14.049 9.7 $550.759 $544.871 $5.888 1.1 Net Cash Deficit ( excludes Opening Cash Balance) ($99.878) ($80.353) $19.525 19.5 ($363.374) ($400.898) ($37.524) (10.3) Subsidies MTA 76.520 51.483 (25.037) (32.7) 262.254 232.518 (29.736) (11.3) CDOT 23.359 29.581 6.222 26.6 101.120 139.150 38.030 37.6 Total Subsidies $99.878 $81.064 ($18.814) (18.8) $363.374 $371.668 $8.294 2.3 Cash Timing and Availability Adjustment $0.000 $4.627 $4.627 - $0.000 $45.616 $45.616 -
+```
+### [p163_c0005] Notes:
+- [p163_c0006] -- Results are preliminary and subject to audit review. -- Differences are due to rounding. * Variance exceeds 100%.
+
+## Page 164
+
+### [p164_c0001] Master Page # 164 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p164_c0002] MTA METRO-NORTH RAILROAD FEBRUARY FINANCIAL PLAN - 2021 BUDGET CASH RECEIPTS AND EXPENDITURES EXPLANATION OF VARIANCE BETWEEN ADOPTED BUDGET AND ACTUAL RESULTS ($ in millions)
+[p164_c0003]
+
+```text
+Generic Receipt or Expense Category April Month vs Budget Year-to-Date as of April 30th, 2021 vs. Budget Variance Fav (Unfav) Reason for Variance Variance Fav (Unfav) Reason for Variance $ % $ % FARE REVENUE (0.011) (0.1%) 3.845 8.7% Primarily reflects higher non-commutation ridership partially offset by lower commutation ridership on the East of Hudson line. OTHER OPERATING REVENUE (1.686) (25.1%) Primarily reflects lower GCT retail revenues due to the COVID-19 pandemic. (3.543) (13.6%) Primarily reflects lower GCT retail, advertising and station revenues partially offset by a refund of insurance premiums. CAPITAL AND OTHER REIMBURSEMENTS: MTA (2.154) (18.3%) Primarily reflects lower capital related project activity partially offset by higher cash receipts than budgeted. (22.872) (48.3%) Primarily reflects lower cash receipts than budgeted. CDOT 9.908 93.9% Primarily reflects higher cash receipts partially offset by lower capital related project activity than budgeted. (21.662) (33.1%) Primarily reflects lower capital related project activity partially offset by higher cash receipts than budgeted. OTHER (0.580) (51.4%) Primarily reflects lower reimbursable related project activity than budgeted. 0.819 18.9% Reflects higher reimbursable related project activity partially offset by lower cash receipts than budgeted. PAYROLL 2.940 5.4% Primarily reflects timing of RWA payments, pay periods and remittance payments for the employee portion of withheld income taxes partially offset by inter-agency payroll. 5.594 3.0% Primarily reflects timing of RWA payments and pay periods partially offset by inter-agency payroll. OVERTIME 1.795 16.4% Primarily reflects reduced train & engine crew overtime resulting from the reduced service schedule. 3.909 10.6% Primarily reflects reduced train & engine crew overtime resulting from the reduced service schedule. OPEB CURRENT PAYMENT (0.496) (16.1%) Primarily reflects higher number of retirees receiving healthcare premiums than budgeted. (1.483) (12.0%) Primarily reflects higher number of retirees receiving healthcare premiums than budgeted. OTHER FRINGE BENEFITS (4.517) (35.4%) Primarily reflects higher employee claim payments combined with the timing of payroll taxes. (52.211) * Primarily due to the partial payment of Railroad Retirement Taxes which were deferred in 2020 and higher employee claim payments than budgeted. ELECTRIC POWER (0.729) (18.2%) Primarily reflects timing of payments. (2.211) (12.1%) Primarily reflects timing of payments combined with higher rates than budgeted. FUEL 0.223 16.7% Primarily reflects lower fuel usage. 0.375 6.8% Reflects lower fuel usage partially offset by timing of payments. INSURANCE 2.764 100.0% Primarily reflects the timing of insurance premiums payments. 2.764 100.0% Primarily reflects the timing of insurance premiums payments. CLAIMS (0.025) (25.7%) Reflects higher than budgeted passenger injury settlements. 0.472 53.3% Reflects lower than budgeted passenger injury settlements.
+```
+
+## Page 165
+
+### [p165_c0001] Master Page # 165 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p165_c0002] MTA METRO-NORTH RAILROAD FEBRUARY FINANCIAL PLAN - 2021 BUDGET CASH RECEIPTS AND EXPENDITURES EXPLANATION OF VARIANCE BETWEEN ADOPTED BUDGET AND ACTUAL RESULTS ($ in millions)
+[p165_c0003]
+
+```text
+Generic Receipt or Expense Category April Month vs Budget Reason for Variance Year-to-Date as of April 30th, 2021 vs. Budget Reason for Variance Variance Fav (Unfav) Variance Fav (Unfav) $ % $ % MAINTENANCE & OTHER OPERATING CONTRACTS 2.849 29.1% Primarily reflects the timing of expenses for the BL-20 locomotive overhaul, infrastructure maintenance and miscellaneous maintenance and operating contracts. 0.961 2.2% PROFESSIONAL SERVICE CONTRACTS 1.355 37.8% Primarily reflects the timing of engineering services for capital related projects (Positive Train Control (CT)) as well as lower than anticipated consulting and other engineering services. 6.792 42.9% Primarily reflects the timing of engineering services for capital related projects (Positive Train Control (CT)) and a refund of an overpayment of 2019 New Haven Line share of MTA IT costs. MATERIALS & SUPPLIES 6.784 43.1% Primarily reflects lower project activity on the Waterbury Branch Cab Signal and Power Infrastructure Restoration Projects combined with the timing of rolling stock maintenance events. 41.498 51.2% Primarily reflects lower project activity on the Waterbury Branch Cab Signal, Power Infrastructure Restoration, Devon Supply Transformer Replacement and Connecticut Track Program Projects. OTHER BUSINESS EXPENSES 1.363 36.3% Primarily reflects timing of New Jersey Transit subsidy payments combined with lower miscellaneous expenses. (0.396) (2.5%) MTA SUBSIDY RECEIPTS (25.037) (32.7%) Reflects lower cash deficit and higher CDOT subsidy partially offset by available cash balance. (29.736) (11.3%) Reflects higher CDOT subsidy and available cash balance partially offset by higher cash deficit. CDOT SUBSIDY RECEIPTS 6.222 26.6% Primarily reflects the timing of the receipt of the estimated 2020 Q4 Administrative Asset invoice. 38.030 37.6% Primarily reflects a higher CDOT share of estimated deficits than budgeted combined with the timing of the receipt of the estimated 2020 Q4 Administrative Asset invoice.
+```
+[p165_c0004] _* Variance exceeds 100%_
+
+## Page 166
+
+### [p166_c0001] Master Page # 166 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p166_c0002] MTA METRO-NORTH RAILROAD FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET CASH CONVERSION (CASH FLOW ADJUSTMENT) ($ in millions)
+[p166_c0003]
+
+```text
+APRIL 2021 Year-to-Date Adopted Budget Actual Favorable (Unfavorable) Adopted Budget Actual Favorable (Unfavorable) Variance Percent Variance Percent Receipts Farebox Revenue ($0.669) ($0.362) $0.306 45.8 ($1.758) ($1.534) $0.223 12.7 Vehicle Toll Revenue 0.000 0.000 0.000 - 0.000 0.000 0.000 - Other Operating Revenue 2.563 2.194 (0.369) (14.4) 10.939 12.889 1.950 17.8 Capital & Other Reimbursements: MTA (3.041) (1.863) 1.178 38.7 (4.077) (7.076) (2.999) (73.6) CDOT 0.000 11.173 11.173 - 0.000 14.677 14.677 - Other 0.000 0.306 0.306 - 0.000 1.074 1.074 - Total Capital and Other Reimbursements (3.041) 9.616 12.657 * (4.077) 8.675 12.752 * Total Revenue/Receipts ($1.147) $11.448 $12.594 * $5.105 $20.030 $14.925 * Expenditures Labor: Payroll ($6.705) ($1.934) $4.771 71.2 $3.094 $7.165 $4.071 * Overtime (1.552) (0.109) 1.443 93.0 0.247 0.604 0.356 * Health and Welfare (1.013) (0.193) 0.820 81.0 (3.965) (2.336) 1.629 41.1 OPEB Current Payment 0.000 (0.075) 0.000 - 0.000 (0.040) (0.040) - Pensions (0.086) 3.961 4.048 * (0.804) 1.184 1.988 * Other Fringe Benefits (1.414) (4.762) (3.347) * 2.214 (50.158) (52.372) * GASB Account 0.000 0.000 0.000 - 0.000 0.000 0.000 - Reimbursable Overhead (0.218) (0.062) 0.156 71.4 (0.702) (0.292) 0.409 58.3 Total Labor ($10.988) ($3.173) $7.815 71.1 $0.085 ($43.874) ($43.958) * Non-Labor: Electric Power ($0.160) ($0.799) ($0.640) * ($0.637) ($2.532) ($1.895) * Fuel 0.042 0.129 0.086 * 0.170 0.064 (0.106) (62.2) Insurance (1.108) 1.595 2.703 * 3.761 6.075 2.314 61.5 Claims 0.000 (0.079) (0.079) - (0.504) (0.324) 0.180 35.7 Paratransit Service Contracts 0.000 0.000 0.000 - 0.000 0.000 0.000 - Maintenance and Other Operating Contracts 0.692 2.517 1.825 * 1.083 (6.695) (7.779) * Professional Service Contracts 1.511 1.870 0.360 23.8 6.282 3.320 (2.962) (47.2) Materials & Supplies (0.550) 1.158 1.709 * (3.414) (0.748) 2.666 78.1 Other Business Expenses (2.192) (0.358) 1.834 83.7 (9.658) (9.402) 0.256 2.6 Total Non-Labor ($1.764) $6.034 $7.798 * ($2.916) ($10.243) ($7.326) * Other Adjustments: Other 0.000 0.000 0.000 - 0.000 0.000 0.000 - Total Other Adjustments $0.000 $0.000 $0.000 - $0.000 $0.000 $0.000 - Total Expenditures before Non-Cash Liability Adjs. ($12.752) $2.860 $15.613 * ($2.832) ($54.116) ($51.285) * Depreciation 20.542 31.159 10.617 51.7 82.169 91.721 9.552 11.6 OPEB Obligation 0.000 0.000 0.000 - 0.000 0.000 0.000 - GASB68 Pension Adjustment 0.000 0.000 0.000 - 0.568 (3.755) (4.323) * Environmental Remediation 0.333 0.000 (0.333) (100.0) 1.333 0.060 (1.274) 95.5 GASB75 Adjustment 0.000 0.000 0.000 - 0.000 0.144 0.144 - Total Expenditures Adjustments $8.123 $34.019 $25.896 * $81.238 $34.053 ($47.185) (58.1) Total Cash Conversion Adjustments $6.976 $45.467 $38.490 * $86.343 $54.083 ($32.260) (37.4)
+```
+[p166_c0004] Notes: -- Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the current months' actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results.
+[p166_c0005] -- Differences are due to rounding. * Variance exceeds 100%.
+
+## Page 167
+
+### [p167_c0001] Master Page # 167 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p167_c0002] MTA METRO-NORTH RAILROAD FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET RIDERSHIP/UTILIZATION APRIL 2021 (in millions)
+[p167_c0003]
+
+```text
+MONTH VARIANCE Fav(Unfav) YTD VARIANCE Fav(Unfav) ADOPTED BUDGET 2021 2020 (A) ADOPTED BUDGET 2020 ADOPTED BUDGET 2021 2020 (A) ADOPTED BUDGET 2020 FAREBOX REVENUE Harlem Line - Commutation 2,371 1,150 0,732 (1,222) -51.5% 0,417 57.0% 7,431 4,265 28,606 (3,167) -42.6% (24,341) -85.1% Harlem Line - Non-Commutation 2,064 3,086 0,505 1,021 49.5% 2,580 510.7% 5,840 9,868 19,116 4,028 69.0% (9,248) -48.4% TOTAL HARLEM LINE $4,436 $4,235 $1,238 ($0,200) -4.5% $2,998 242.2% $13,271 $14,133 $47,722 $0,861 6.5% ($33,590) -70.4% Hudson Line - Commutation 1,627 0,804 0,489 (0,822) -50.6% 0,316 64.6% 5,141 3,080 19,114 (2,062) -40.1% (16,034) -83.9% Hudson Line - Non-Commutation 1,813 3,030 0,475 1,217 67.1% 2,555 537.5% 5,015 9,524 16,120 4,509 89.9% (6,596) -40.9% TOTAL HUDSON LINE $3,440 $3,835 $0,964 $0,395 11.5% $2,871 297.8% $10,157 $12,604 $35,234 $2,448 24.1% ($22,630) -64.2% New Haven Line - Commutation 3,300 1,196 0,891 (2,104) -63.7% 0,305 34.2% 10,310 4,597 38,981 (5,713) -55.4% (34,384) -88.2% New Haven Line - Non-Commutation 3,945 5,477 0,629 1,532 38.8% 4,848 770.4% 11,249 16,941 35,296 5,692 50.6% (18,355) -52.0% TOTAL NEW HAVEN LINE $7,245 $6,674 $1,521 ($0,572) -7.9% $5,153 338.9% $21,559 $21,538 $74,277 ($0,021) -0.1% ($52,739) -71.0% All Lines - Commutation 7,298 3,151 2,113 (4,148) -56.8% 1,038 49.1% 22,882 11,941 86,701 (10,941) -47.8% (74,760) -86.2% All Lines - Non-Commutation 7,823 11,593 1,610 3,771 48.2% 9,983 620.1% 22,105 36,334 70,532 14,229 64.4% (34,198) -48.5% TOTAL EAST OF HUDSON LINES $15,121 $14,744 $3,723 ($0,377) -2.5% $11,021 296.1% $44,987 $48,275 $157,233 $3,288 7.3% ($108,958) -69.3% West of Hudson (B) $0,297 $0,356 $0,108 $0,059 19.9% $0,248 229.7% $0,893 $1,227 $2,938 0,334 37.4% (1,711) -58.2% TOTAL FAREBOX REVENUE $15,418 $15,100 $3,831 ($0,318) -2.1% $11,269 294.2% $45,880 $49,502 $160,171 $3,622 7.9% ($110,669) -69.1% RIDERSHIP Harlem Line - Commutation 0,349 0,213 0,105 (0,136) -39.0% 0,108 103.3% 1,031 0,761 3,175 (0,271) -26.2% (2,414) -76.0% Harlem Line - Non-Commutation 0,227 0,392 0,058 0,165 72.8% 0,335 581.8% 0,647 1,282 2,027 0,635 98.2% (0,745) -36.7% TOTAL HARLEM LINE 0,576 0,605 0,162 0,029 5.1% 0,443 273.1% 1,679 2,043 5,202 0,365 21.7% (3,159) -60.7% Hudson Line - Commutation 0,200 0,113 0,055 (0,087) -43.6% 0,058 106.7% 0,594 0,408 1,819 (0,186) -31.3% (1,410) -77.5% Hudson Line - Non-Commutation 0,163 0,292 0,036 0,130 79.7% 0,256 712.2% 0,450 0,929 1,361 0,480 106.7% (0,431) -31.7% TOTAL HUDSON LINE 0,363 0,405 0,091 0,042 11.6% 0,314 346.8% 1,044 1,338 3,179 0,294 28.1% (1,842) -57.9% New Haven Line - Commutation 0,460 0,232 0,110 (0,228) -49.5% 0,122 111.0% 1,362 0,841 4,122 (0,522) -38.3% (3,281) -79.6% New Haven Line - Non-Commutation 0,370 0,611 0,072 0,241 65.3% 0,539 750.0% 1,062 1,963 3,285 0,901 84.9% (1,322) -40.2% TOTAL NEW HAVEN LINE 0,830 0,844 0,182 0,014 1.6% 0,662 363.5% 2,424 2,804 7,407 0,380 15.7% (4,603) -62.1% Total Ridership East of Hudson 1,009 0,558 0,269 (0,451) -44.7% 0,289 107.1% 2,988 2,010 9,116 (0,978) -32.7% (7,106) -78.0% All Lines - Commutation 0,759 1,296 0,165 0,536 70.6% 1,130 683.3% 2,159 4,175 6,673 2,016 93.4% (2,498) -37.4% All Lines - Non-Commutation 1,769 1,854 0,435 0,085 4.8% 1,419 326.3% 5,147 6,184 15,788 1,038 20.2% (9,604) -60.8% TOTAL EAST OF HUDSON LINES 0,035 0,034 0,014 (0,000) -1.0% 0,020 142.2% 0,102 0,130 0,348 0,028 27.9% (0,218) -62.6% TOTAL EAST & WEST OF HUDSON LINES 1,803 1,888 0,449 0,084 4.7% 1,439 320.5% 5,248 6,315 16,136 1,066 20.3% (9,822) -60.9%
+```
+[p167_c0004] _(A) 2020 Ridership figures have been restated to simulate the 2021 calendar._
+[p167_c0005] _(B) West of Hudson current year actuals are preliminary and prior year actuals are stated as received from New Jersey Transit._
+
+## Page 168
+
+### [p168_c0001] MTA METRO-NORTH RAILROAD 2021 ADOPTED BUDGET VS. ACTUALS TOTAL FULL-TIME POSITIONS AND FULL-TIME EQUIVALENTS April 30, 2021
+[p168_c0002]
+
+```text
+Department Adopted Budget Actual Favorable (Unfavorable) Variance Notes Administration President 3 2 1 Labor Relations 10 10 0 Safety 51 48 3 Security 18 17 1 Office of the Executive VP 7 6 1 Corporate & Public Affairs 15 13 2 Customer Service 48 43 5 Legal 10 9 1 Claims 6 5 1 Human Resources 35 34 1 Training 78 69 9 Employee Relations & Diversity 4 4 - VP Planning 2 1 1 Operations Planning & Analysis 19 - 19 B Capital Planning & Programming 10 10 - Long Range Planning 5 5 - Controller 67 54 13 C Budget 16 16 - Procurement & Material Mgmt 21 20 1 Total Administration 425 365 60 Operations Operations Support 39 55 (16) B Rolling Stock & EAM 15 14 1 Transportation 1,658 1,587 71 A Customer Service 369 351 19 A, C Metro-North West 29 31 (2) Total Operations 2,110 2,038 72 Maintenance Maintenance of Equipment 1,570 1,509 61 A Maintenance of Way 2,142 2,041 101 A Procurement & Material Mgmt 112 111 1 Total Maintenance 3,824 3,661 163 Engineering/Capital Construction Management 19 19 0 Engineering & Design 59 54 5 Total Engineering/Capital 78 73 5 Total Positions 6,437 6,137 300 Non-Reimbursable 5,705 5,581 124 Reimbursable 732 556 176 Total Full-Time 6,436 6,136 300 Total Full-Time-Equivalents 1 1 - (of part-time positions) - - -
+```
+### [p168_c0003] Notes
+- [p168_c0004] (A) Variance reflects higher attrition than planned. (B) Reflects the transfer of the Operations Planning & Analysis group to Operations Support. (C) Reflects the transfer of the Mail & Ride group to Customer Service.
+[p168_c0005] _Master Page # 168 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 169
+
+### [p169_c0001] Master Page # 169 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p169_c0002] MTA METRO-NORTH RAILROAD 2021 ADOPTED BUDGET VS. ACTUALS TOTAL FULL-TIME POSITIONS AND FULL-TIME EQUIVALENTS April 30, 2021
+[p169_c0003]
+
+```text
+FUNCTION/OCCUPATION Adopted Budget Actual Favorable (Unfavorable) Variance Administration Managers/Supervisors 148 130 18 Professional, Technical, Clerical 277 236 41 Operational Hourlies - - - Total Administration 425 365 60 Operations Managers/Supervisors 234 231 3 Professional, Technical, Clerical 251 260 (9) Operational Hourlies 1,625 1,547 78 Total Operations 2,110 2,038 72 Maintenance Managers/Supervisors 645 629 16 Professional, Technical, Clerical 482 472 10 Operational Hourlies 2,697 2,560 137 Total Maintenance 3,824 3,661 163 Engineering/Capital Managers/Supervisors 30 27 3 Professional, Technical, Clerical 48 46 2 Operational Hourlies - - - Total Positions 78 73 5 Total Positions Managers/Supervisors 1,057 1,017 40 Professional, Technical, Clerical 1,058 1,013 45 Operational Hourlies 4,322 4,107 215 Total Positions 6,437 6,137 300
+```
+
+## Page 170
+
+### [p170_c0001] Master Page # 170 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p170_c0002] MTA METRO-NORTH RAILROAD 2021 ADOPTED BUDGET VS. ACTUALS April 30, 2021
+[p170_c0003]
+
+```text
+Agency-wide (Non-Reimbursable and Reimbursable) Adopted Budget Actual Favorable (Unfavorable) Variance Explanation of Variances Functional Classification: Administration 425 365 60 Primarily reflects the transfer of the Operations Planning & Analysis and Mail & Ride groups to Operations Operations 2,110 2,038 72 Primarily reflects higher attrition than planned, partially offset by the transfer of the Operations Planning & Analysis and Mail & Ride groups from Administration Maintenance 3,824 3,661 163 Primarily reflects higher attrition than planned Engineering / Capital 78 73 5 Total Agency-wide Headcount 6,437 6,137 300 Non-Reimbursable 5,705 5,581 124 Reimbursable 732 556 176
+```
+
+## Page 171
+
+### [p171_c0001] MTA METRO-NORTH RAILROAD FEBRUARY FINANCIAL PLAN - 2021 ADOPTED BUDGET MONTHLY PERFORMANCE INDICATORS (A) APRIL 2021
+[p171_c0002]
+
+```text
+MONTH VARIANCE BUD 2021 2020* Fav/(Unfav) BUD 2020 Farebox Operating Ratio Standard (B) 14.6% 13.3% 3.7% -1.3% 9.6% Adjusted (C) 19.5% 16.7% 11.2% -2.8% 5.6% Cost per Passenger Standard (B) $58.70 $60.16 $228.43 ($1.46) $168.28 Adjusted (C) $57.24 $58.55 $237.53 ($1.31) $178.98 Passenger Revenue/Passenger $8.55 $8.00 $8.53 ($0.55) ($0.53) YEAR-TO-DATE VARIANCE BUD 2021 2020* Fav/(Unfav) BUD 2020 Farebox Operating Ratio Standard (B) 10.7% 11.8% 38.7% 1.1% -26.9% Adjusted (C) 15.1% 15.0% 46.6% -0.1% -31.5% Cost per Passenger Standard (B) $81.81 $66.56 $25.18 $15.24 ($41.38) Adjusted (C) $79.95 $64.71 $24.53 $15.24 ($40.18) Passenger Revenue/Passenger $8.74 $7.84 $9.75 ($0.90) ($1.91)
+```
+[p171_c0003] (A) Monthly Performance Indicators include both East and West of Hudson revenue and expenses.
+[p171_c0004] (B) The Standard Farebox Operating Ratio and Cost Per Passenger indicators reflect MTA-wide adopted calculations that exclude non-cash liability adjustments: Depreciation, OPEB Expense (GASB 75), Pension Expense (GASB 68) and Environmental Remediation (GASB-49) as well as the NHL share of MTA Police, Business Service Center and IT costs.
+[p171_c0005] (C) Adjusted Fare Operating Ratio and Cost Per Passenger indicators have been adjusted for comparability between Metro-North and the LIRR and are being presented only at the railroad operating committees. These adjustments are not being used MTA-wide. Adjustments have been made to reflect all operating revenues and significant financial impacts that are outside management's control. These adjustments include: Inclusion of Other Operating Revenue, Removal of OPEB retiree expenses, and Inclusion of estimated farebox revenue from an equalization of the Connecticut fare structure.
+[p171_c0006] *2020 YTD results include a reclass of Maybrook Trailway expense from Operating Capital to Reimbursable Capital.
+[p171_c0007] _Master Page # 171 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 172
+
+### [p172_c0001] Monthly Ridership Report
+[p172_c0002] Ben Cornelius
+[p172_c0003] Director – Operations Planning & Analysis
+> [p172_c0004] A photograph of a blue MTA train, specifically a locomotive with the number 224 on its front, approaching a station. The train's headlights are on, creating a starburst effect. In the foreground, there are several yellow daffodils in bloom. The background features a bridge and a wooded area with bare trees, suggesting a spring setting.
+[p172_c0005] April 2021
+[p172_c0006] Spring Flowers and the Harlem Line.
+[p172_c0007] Image courtesy of Luis Rodriguez
+> [p172_c0008] The MTA logo, which consists of a blue circle with the letters "MTA" in white, bold, sans-serif font.
+[p172_c0009] _Master Page # 172 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 173
+
+> [p173_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a blue circle.
+### [p173_c0002] Metro-North Railroad
+### [p173_c0003] April 2021 Highlights: Ridership Report
+[p173_c0004] (Note: April West of Hudson ridership is preliminary)
+### [p173_c0005] April 2021 vs. 2020
+[p173_c0006] The large increases in April 2021 ridership is attributed to April 2020's full-month of stay-at-home measures and closures from the COVID-19 pandemic that affected ridership significantly, unlike March which had a partial impact as ridership declined throughout that month before bottoming at the end of the month.
+- [p173_c0007] • East of Hudson ridership increased 326.3% vs. April 2020 and was 4.8% above the forecast. • East of Hudson Commutation ridership increased by 107.1%. • East of Hudson Non-Commutation ridership increased by 683.3%.
+[p173_c0008] East of Hudson Ridership by Line:
+- [p173_c0009] • Hudson Line Ridership increased by 273.1%. • Harlem Line Ridership increased by 346.8%. • New Haven Line Ridership increased by 363.5%.
+### [p173_c0010] April 2021 vs. 2019
+[p173_c0011] Total Rail Ridership decreased -74.6%
+- [p173_c0012] • East of Hudson ridership decreased -74.7%. • West of Hudson ridership decreased -70.9%.
+### [p173_c0013] Note:
+[p173_c0014] April ridership Includes Mail & Ride returned and unused refund adjustments.
+### [p173_c0015] Ben Cornelius
+[p173_c0016] Director
+[p173_c0017] Operations Planning & Analysis
+[p173_c0018] _Master Page # 173 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 174
+
+### [p174_c0001] APRIL 2021 RIDERSHIP & REVENUE REPORT MTA METRO-NORTH RAILROAD
+### [p174_c0002] RIDERSHIP SUMMARY
+[p174_c0003] _April Ridership and Revenue (millions)_
+[p174_c0004]
+
+```text
+April 2021 % Change vs. 2020 Total Rail Ridership 1.888 ▲ 320.53% Commutation Ridership 0.575 ▲ 105.50% Non-Commutation Ridership 1.313 ▲ 675.79% Connecting Service Ridership 0.006 ▲ 262.50% Total MNR System Ridership 1.894 ▲ 320.32% Rail Revenue $15.10 ▲ 294.20%
+```
+[p174_c0005] _Year-to-Date to April Ridership and Revenue (millions)_
+[p174_c0006]
+
+```text
+YTD 2021 % Change vs. 2020 Comparison to Forecast Total Rail Ridership 6.315 ▼ -60.87% ▲ 20.32% Commutation Ridership 2.078 ▼ -77.73% ▼ -31.76% Non-Commutation Ridership 4.237 ▼ -37.76% ▲ 92.30% Connecting Service Ridership 0.020 ▼ -82.34% ▲ 3.44% Total MNR System Ridership 6.335 ▼ -61.02% ▲ 20.25% Rail Revenue $49.50 ▼ -69.09% ▲ 7.89%
+```
+[p174_c0007] _Master Page # 174 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 175
+
+### [p175_c0001] Master Page # 175 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p175_c0002] APRIL 2021 RAIL RIDERSHIP (1)
+[p175_c0003] • April's Total Rail Ridership was 320.5% above 2020 and 4.7% above forecast.
+> [p175_c0004] The chart displays monthly rail ridership in millions for the years 2021 and 2020. The y-axis represents ridership in millions, ranging from 0.0 to 8.0. The x-axis shows the months from January to December. The 2021 data is represented by a blue line with circular markers, and the 2020 data is represented by a green line with square markers. The 2020 data shows a sharp decline from approximately 6.5 million in January to 0.4 million in April, followed by a gradual recovery to about 1.5 million by December. The 2021 data remains relatively stable, fluctuating between 1.3 and 1.9 million throughout the year. Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Y-T-D Total 2021 1.4 1.3 1.7 1.9 6.3 2020 6.5 6.2 3.0 0.4 0.5 0.8 1.3 1.4 1.7 1.8 1.6 1.5 16.1 PCT CHG. -78.8% -79.0% -41.1% 320.5% -60.9%
+[p175_c0005] _1) Includes East and West of Hudson._
+
+## Page 176
+
+### [p176_c0001] Master Page # 176 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p176_c0002] APRIL 2021 RAIL COMMUTATION RIDERSHIP (1)
+- [p176_c0003] April's Rail Commutation Ridership was 105.5% above 2020 and -44.1% below forecast.
+> [p176_c0004] The chart displays monthly rail commutation ridership in millions for the years 2021 and 2020. The 2021 data (blue line with circles) shows a steady increase from 0.5 million in January to 0.6 million in April, then remains flat through December. The 2020 data (green line with squares) starts at 3.7 million in January, drops to 3.6 million in February, then falls sharply to 1.7 million in March and 0.3 million in April. It then recovers to 0.5 million by October and remains stable through December. Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Y-T-D Total 2021 0.5 0.5 0.6 0.6 2.1 2020 3.7 3.6 1.7 0.3 0.2 0.2 0.4 0.5 0.6 0.6 0.6 0.5 9.3 PCT CHG. -87.4% -87.5% -66.0% 105.5% -77.7%
+[p176_c0005] _1) Includes East and West of Hudson._
+
+## Page 177
+
+### [p177_c0001] Master Page # 177 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p177_c0002] APRIL 2021 RAIL NON-COMMUTATION RIDERSHIP (1)
+- [p177_c0003] April's Rail Non-Commutation Ridership was 675.8% above 2020 and 69.5% above forecast.
+> [p177_c0004] Monthly Ridership Data (Millions) Month 2021 2020 Jan 0.9 2.6 Feb 0.8 2.5 Mar 1.2 1.2 Apr 1.3 0.2 May 0.3 Jun 0.6 Jul 0.9 Aug 0.9 Sep 1.2 Oct 1.2 Nov 1.0 Dec 0.9
+[p177_c0005]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Y-T-D Total 2021 0.9 0.8 1.2 1.3 4.2 2020 2.8 2.6 1.2 0.2 0.3 0.6 0.9 0.9 1.2 1.2 1.0 0.9 6.8 PCT CHG. -67.6% -66.9% -7.1% 675.8% -37.8%
+```
+[p177_c0006] _1) Includes East and West of Hudson._
+
+## Page 178
+
+### [p178_c0001] Master Page # 178 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p178_c0002] APRIL 2021 RAIL REVENUE (1)
+- [p178_c0003] April's Total Rail Revenue was 294.2% above 2020 and -2.1% below forecast.
+> [p178_c0004] Monthly Rail Revenue Data ($ in Millions) Month 2021 2020 Jan $11.0 $59.7 Feb $10.2 $58.0 Mar $13.3 $38.6 Apr $15.1 $3.8 May $3.4 $3.4 Jun $6.8 $6.8 Jul $10.1 $10.1 Aug $11.1 $11.1 Sep $13.5 $13.5 Oct $14.8 $14.8 Nov $12.5 $12.5 Dec $11.0 $11.0
+[p178_c0005]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Y-T-D Total 2021 $11.0 $10.2 $13.3 $15.1 $49.5 2020 $59.7 $58.0 $38.6 $3.8 $3.4 $6.8 $10.1 $11.1 $13.5 $14.8 $12.5 $11.0 $160.2 PCT CHG. -81.6% -82.5% -65.7% 294.2% -69.1%
+```
+[p178_c0006] _1) Includes East and West of Hudson._
+
+## Page 179
+
+### [p179_c0001] Master Page # 179 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p179_c0002] MTA METRO-NORTH RAILROAD RIDERSHIP SUMMARY APRIL 2021
+[p179_c0003]
+
+```text
+TICKET TYPE/SERVICE APRIL 2021 APRIL 2021 VARIANCE VS. FORECAST APRIL 2020 CHANGE FROM 2020 ACTUAL FORECAST AMOUNT PERCENT RESTATED (1) AMOUNT PERCENT RAIL COMMUTATION RIDERSHIP East of Hudson 557,911 1,009,352 (451,440) -44.7% 269,364 288,547 107.1% West of Hudson 16,724 19,385 (2,661) -13.7% 10,269 6,455 62.9% Total Rail Commutation Ridership 574,635 1,028,737 (454,101) -44.1% 279,633 295,002 105.5% RAIL NON-COMMUTATION RIDERSHIP East of Hudson 1,295,596 759,377 536,219 70.6% 165,403 1,130,193 683.3% West of Hudson 17,484 15,179 2,305 15.2% 3,854 13,630 353.7% Total Rail Non-Commutation Ridership 1,313,080 774,556 538,524 69.5% 169,257 1,143,823 675.8% TOTAL RAIL RIDERSHIP East of Hudson 1,853,507 1,768,729 84,779 4.8% 434,767 1,418,740 326.3% West of Hudson (2) 34,208 34,564 (356) -1.0% 14,123 20,085 142.2% TOTAL RAIL RIDERSHIP 1,887,715 1,803,292 84,423 4.7% 448,890 1,438,825 320.5% CONNECTING SERVICES RIDERSHIP 5,916 5,023 893 17.8% 1,632 4,284 262.5% TOTAL MNR SYSTEM RIDERSHIP 1,893,631 1,808,315 85,316 4.7% 450,522 1,443,109 320.3%
+```
+### [p179_c0004] Notes:
+- [p179_c0005] 1) 2020 ridership figures have been restated to eliminate calendar impacts on ridership. 2) West of Hudson ridership figures are preliminary.
+
+## Page 180
+
+### [p180_c0001] Master Page # 180 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p180_c0002] MTA METRO-NORTH RAILROAD RIDERSHIP SUMMARY 2021 YEAR-TO-DATE
+[p180_c0003]
+
+```text
+TICKET TYPE/SERVICE 2021 2021 VARIANCE VS. 2020 CHANGE FROM 2020 YTD ACTUAL YTD FORECAST FORECAST YTD AMOUNT PERCENT RESTATED (1) AMOUNT PERCENT RAIL COMMUTATION RIDERSHIP East of Hudson 2,009,698 2,987,881 (978,182) -32.7% 9,115,537 (7,105,839) -78.0% West of Hudson 68,471 57,368 11,103 19.4% 214,485 (146,014) -68.1% Total Rail Commutation Ridership 2,078,169 3,045,249 (967,079) -31.8% 9,330,022 (7,251,853) -77.7% RAIL NON-COMMUTATION RIDERSHIP East of Hudson 4,174,776 2,158,665 2,016,112 93.4% 6,672,906 (2,498,130) -37.4% West of Hudson 61,731 44,457 17,274 38.9% 133,386 (71,655) -53.7% Total Rail Non-Commutation Ridership 4,236,507 2,203,122 2,033,385 92.3% 6,806,292 (2,569,785) -37.8% TOTAL RAIL RIDERSHIP East of Hudson 6,184,475 5,146,545 1,037,930 20.2% 15,788,443 (9,603,968) -60.8% West of Hudson 130,202 101,825 28,377 27.9% 347,871 (217,669) -62.6% TOTAL RAIL RIDERSHIP 6,314,677 5,248,370 1,066,306 20.3% 16,136,314 (9,821,637) -60.9% CONNECTING SERVICES RIDERSHIP 20,302 19,627 675 3.4% 114,966 (94,664) -82.3% TOTAL MNR SYSTEM RIDERSHIP 6,334,979 5,267,997 1,066,981 20.3% 16,251,280 (9,916,301) -61.0%
+```
+### [p180_c0004] Notes:
+[p180_c0005] 1) 2020 ridership figures have been restated to eliminate calendar impacts on ridership.
+
+## Page 181
+
+### [p181_c0001] Master Page # 181 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p181_c0002] MTA METRO-NORTH RAILROAD RIDERSHIP BY LINE APRIL 2021
+[p181_c0003]
+
+```text
+LINE APRIL 2021 APRIL 2020 CHANGE FROM 2020 ACTUAL RESTATED (1) AMOUNT PERCENT EAST OF HUDSON Harlem Line 604,696 162,080 442,616 273.1% Hudson Line 405,149 90,669 314,480 346.8% New Haven Line 843,662 182,018 661,644 363.5% Total East of Hudson 1,853,507 434,767 1,418,740 326.3% WEST OF HUDSON Port Jervis Line 20,955 7,986 12,969 162.4% Pascack Valley Line 13,253 6,137 7,116 116.0% Total West of Hudson (2) 34,208 14,123 20,085 142.2% TOTAL RAIL RIDERSHIP 1,887,715 448,890 1,438,825 320.5% CONNECTING SERVICES PROVIDED BY METRO-NORTH CONTRACTORS Hudson Rail Link 5,916 1,048 4,868 464.5% Haverstraw-Ossining Ferry NA 335 (335) NA Newburgh-Beacon Ferry NA 249 (249) NA Total Connecting Services 5,916 1,632 4,284 262.5% TOTAL MNR SYSTEM 1,893,631 450,522 1,443,109 320.3%
+```
+### [p181_c0004] Notes:
+- [p181_c0005] 1) 2020 ridership figures have been restated to eliminate calendar impacts on ridership. 2) West of Hudson ridership figures are preliminary.
+
+## Page 182
+
+### [p182_c0001] Master Page # 182 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p182_c0002] MTA METRO-NORTH RAILROAD RIDERSHIP BY LINE 2021 YEAR-TO-DATE
+[p182_c0003]
+
+```text
+TICKET TYPE/SERVICE 2021 2020 CHANGE FROM 2020 YTD ACTUAL YTD RESTATED (1) AMOUNT PERCENT EAST OF HUDSON Harlem Line 2,043,135 5,202,435 (3,159,300) -60.7% Hudson Line 1,337,602 3,179,391 (1,841,789) -57.9% New Haven Line 2,803,738 7,406,617 (4,602,879) -62.1% Total East of Hudson 6,184,475 15,788,443 (9,603,968) -60.8% WEST OF HUDSON Port Jervis Line 83,972 201,170 (117,198) -58.3% Pascack Valley Line 46,230 146,701 (100,471) -68.5% Total West of Hudson 130,202 347,871 (217,669) -62.6% TOTAL RAIL RIDERSHIP 6,314,677 16,136,314 (9,821,637) -60.9% CONNECTING SERVICES PROVIDED BY METRO-NORTH CONTRACTORS Hudson Rail Link 20,302 80,474 (60,172) -74.8% Haverstraw-Ossining Ferry NA 23,296 (23,296) NA Newburgh-Beacon Ferry NA 11,196 (11,196) NA Total Connecting Services 20,302 114,966 (94,664) -82.3% TOTAL MNR SYSTEM 6,334,979 16,251,280 (9,916,301) -61.0%
+```
+### [p182_c0004] Notes:
+[p182_c0005] 1) 2020 ridership figures have been restated to eliminate calendar impacts on ridership.
+
+## Page 183
+
+> [p183_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p183_c0002] Metro-North Railroad
+### [p183_c0003] April 2021 Highlights: Capital Program Status Report
+> [p183_c0004] A photograph showing a green utility pole at a train station platform. The pole has a large, circular, green outdoor light fixture at the top. A white rectangular box, likely Wi-Fi equipment, is mounted on the pole. Below it, a silver, cylindrical outdoor speaker is also mounted. In the background, there are train tracks, a "Track 4" sign, and a blue sign with the number "8". The sky is clear and blue.
+### [p183_c0005] Customer Service Initiative (CSI)
+[p183_c0006] Port Chester - Installation of Wi-Fi equipment on track 4 platform
+[p183_c0007] Ziona Rubin Acting Vice President Capital Programs
+[p183_c0008] _Master Page # 183 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 184
+
+> [p184_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a blue circle.
+### [p184_c0002] Metro-North Railroad
+### [p184_c0003] April 2021 Highlights: Capital Program Status Report
+[p184_c0004] The purpose of the Capital Program Status Report is to provide a monthly and year-to-date overview of the progress of Metro-North's Capital Program including a brief discussion of the current month's project highlights. The report focuses primarily on providing a summary of achievements regarding design and construction awards, project completions and contract closeouts. The point of contact for the report is Ziona Rubin, Acting Vice President, Capital Program Management.
+[p184_c0005] During the month of April, Metro-North committed task totaling $5.5 million including the Support tasks for the GCT Train Shed. Metro-North had completions totaling $92 million including the Customer Communication project. Metro-North had contract closeouts totaling $7 million including the Undergrade Bridge Structural painting project.
+[p184_c0006] Metro-North's performance against its 2021 Capital Project Goal was:
+[p184_c0007]
+
+```text
+($ in Millions) Annual Planned Planned thru 4/30 Achieved thru 4/30 % thru 4/30 Design Awards* $25.1 $4.12 $0 0% Construction Awards* $49.6 $0 $0 0% Substantial Completions $963 $240.5 $272.3 113% Closeouts* $278 $119 $40 34%
+```
+[p184_c0008] *Does not include support costs
+[p184_c0009] Ziona Rubin Acting Vice President Capital Programs
+[p184_c0010] _Master Page # 184 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 185
+
+### [p185_c0001] CAPITAL PROGRAM HIGHLIGHTS April 2021
+### [p185_c0002] CONTRACT AWARDS:
+[p185_c0003] No contract awards in April 2021.
+### [p185_c0004] PROJECT COMPLETIONS:
+### [p185_c0005] M7030207 Customer Communications – Outlying Stations
+### [p185_c0006] Milestone: Substantial Completion
+[p185_c0007] Project Budget: $85,274,005
+[p185_c0008] This project enhanced the customers' experience and improved operations with a system-wide upgrade of the public address, visual information and video surveillance/access control systems at twenty (20) Metro-North stations and facilities throughout New York. This project also included upgrades to elevator monitoring providing network connectivity for new and existing equipment and real-time data improvements.
+### [p185_c0009] M7050106 3 Fixed Substations
+### [p185_c0010] Milestone: Substantial Completion
+[p185_c0011] Project Budget: $2,356,087
+[p185_c0012] This project designed three new traction power substations in the Upper Harlem Line. The three new fixed permanent substations are B-43 (Golden's Bridge), B-47 (Croton Falls) and B-41 (Katonah). Adding three new traction substations on the upper Harlem line will harden Metro-North's power infrastructure and make electric train service more reliable and resilient to maintenance outages, weather events, and other disruptions.
+### [p185_c0013] M7030102 Cyclical Replacement Insulated Joint
+### [p185_c0014] Milestone: Substantial Completion
+[p185_c0015] Project Budget: $2,000,000
+[p185_c0016] This project replaced insulated joints in Grand Central Terminal. Typically, the useful life of an insulated joint is 25 years but can be reduced by heavy traffic or poor track conditions. The replacement was done in conjunction with the cyclical tie replacement work to negate the need for a stand-alone track outage and as insulated joints fail. All work was performed by Metro-North forces.
+[p185_c0017] _Master Page # 185 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 186
+
+### [p186_c0001] M7040106 Upgrade Grade Crossings
+### [p186_c0002] Milestone: Substantial Completion
+[p186_c0003] Project Budget: $1,500,000
+[p186_c0004] This project upgraded grade crossings to allow Metro-North to safely operate its current service at the high speeds and service frequencies our customers require, all while maintaining a safe operation of the roads which it crosses.
+### [p186_c0005] MAJOR ON-GOING PROJECT STATUS:
+### [p186_c0006] M7020207 Customer Service Initiative (CSI) - Outlying Stations Public Announcement/ Visual Information and Surveillance/ Access Control Systems
+[p186_c0007] The CSI project will enhance the customers' experience and improve operations with a system-wide upgrade of the public address, visual information and video surveillance/access control systems at twenty (20) Metro-North stations and facilities throughout New York. This project also includes upgrades to elevator monitoring providing network connectivity for new and existing equipment and real-time data improvements.
+[p186_c0008] The Design-Builder has completed 100% design drawings for all five groups of stations that include: first group (Mt. Vernon East, Larchmont, Pelham, Riverdale and North White Plains IT room); second group (Harlem-125 th Street, Rye, Harrison and New Rochelle); third group (Mamaroneck, Port Chester, Melrose and Tremont); fourth group (Ossining, Morris Heights, Spuyten Duyvil and Tarrytown) and fifth group (Poughkeepsie, Harriman and Nanuet).
+[p186_c0009] Site work is substantially complete at the Riverdale, Pelham, Larchmont, Wakefield, Mount Vernon East, Morris Heights, Mamaroneck, Tarrytown, Harlem-125 th Street, Harrison, Melrose, New Rochelle, Ossining, Tremont, Spuyten Duyvil, Rye and Port Chester stations. Site work continues at Poughkeepsie, Harriman and Nanuet Stations. Wi-Fi installation completed at Port Chester and continues at Harlem-125 th Street and Riverdale stations. Electrical, BMS integration, fire suppression system, HVAC and communication testing and commissioning work at North White Plains Room 217 are substantially complete. Final punch list completion is ongoing at North White Plains Room 217.
+[p186_c0010] 100% design development and factory acceptance testing for facility enhancements including video, access control, elevator & escalator management and security systems is complete. Completed the installation and testing procedures and equipment configuration. Continued supporting equipment testing at various stations and the on-site testing and verification of the headend system at the NWP location.
+### [p186_c0011] EM050206/EM040205 Power, C&S Infrastructure Restoration – Sandy
+[p186_c0012] The purpose of this project is to replace and restore to a state of good repair through a design-build contract the power and communication and signal (C&S) equipment and infrastructure that were destroyed, damaged and/or compromised by Superstorm Sandy on over 30 miles of railroad along the Hudson Line from CP 5 (Bronx) to CP 35 (Croton-Harmon).
+[p186_c0013] _Master Page # 186 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 187
+
+- [p187_c0001] • CP19 to CP35 (Phase 1) - Achieved substantial completion in May 2019. • CP5 to CP19 (Phase 2) - Continued conduit installation for C&S; transformers; fiber; snow melters; sectionalizing switches and track lateral/crossings at different areas; load break elbows at platforms; splicing signal power cables; terminating and pulling control cables for snow melters. Continued installation of signal power and sectionalizing switches at interlocking area; stainless steel trays at platform; negative feeders and pull boxes as well as conduit tie-ins at manholes; fencing; concrete forms for platform foundation and performing jumper work; site survey and punch list work.
+[p187_c0002] Overall project substantial completion is anticipated in the fourth quarter 2021.
+### [p187_c0003] EM050208 Power Infrastructure Restoration – Substations – Sandy
+- [p187_c0004] • Tarrytown – In the first attempt, performed short circuit and train tests with unsatisfactory test results, a revised coordination study for the rectifier relay's setting of the transformers followed. Short circuit and train tests as well as disconnection of temporary feeder from the substation completed along with the cutover/commissioning that followed. This substation is online and currently running revenue service. • Croton-Harmon – Substation energization and short circuit testing are pending Metro-North installation and connection of the 15kV feeder cables to the new substation as well as the completion of energization and system cut-over of Brewster Substation. This substation is scheduled to complete required various manhole cable splices by MNR Power by June 2021, with substation cutover & commissioning to follow. • Riverdale – Completed removal of electrical equipment as well as disconnection of the track feeders of the existing substation with lead abatement and demolition of the existing substation to follow This substation is online and currently running revenue service. • The Brewster Substation (under Project M6050103) – Continued testing of the substation's rectifier relays. Substation energization; short circuit testing and disconnection of the temporary feeder from the substation are scheduled for May 2021. This substation is scheduled for completion in June 2021.
+### [p187_c0005] M7060101 Harmon Shop Improvements
+[p187_c0006] Phase V, Stage II Design-Build - The scope of this work includes the demolition of the remainder of Building 6 Maintenance Shop, the associated Building 5 storeroom and the construction of the balance of the Phase V Electric Car Shop and Support Shop facilities.
+- [p187_c0007] • 100% design of the Running Repair Support Shop is complete. • Completed installation of concrete pads, underground electrical duct banks, manholes, fences and SCADA equipment and continued with the installation of cable, electric equipment and startup testing for the site transformers. Completed installation of oil water separator and continued installation of other utilities in south yard north of overpass and in the available portion of north yard. Continued installation of building foundations, beams, car hoist pits, caissons and utilities in the Running Repair and Support Shop area. Continued demolition of tracks and installation of utilities in available portion of north yard.
+[p187_c0008] _Master Page # 187 of 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021_
+
+## Page 188
+
+### [p188_c0001] Master Page # 188 - Joint Metro-North and Long Island Committees Meeting 5/26/2021
+### [p188_c0002] 2021 MNR Capital Program Goals As of April 30th, 2021 In Millions
+> [p188_c0003] The chart displays three categories of capital program goals: Commitments, Completions, and Closeouts. For each category, two bars are shown: a solid grey bar representing the 2021 Annual Goal and a stacked bar representing the actual performance as of April 30, 2021. The stacked bar consists of a grey bottom section representing actual performance and a white top section representing the remaining gap to the goal. The percentage of the goal achieved is indicated above the stacked bar. Category 2021 Annual Goal Actual 2021 (as of April 30, 2021) Actual 2021 (% of Goal) Commitments $776 $362.9 47% Completions $963 $272.4 28% Closeouts $278 $40.1 14% Legend: ■ 2021 Goals ▤ Actual as of April 30, 2021

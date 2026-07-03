@@ -1,0 +1,367 @@
+{
+  "note_id": "codex-relation-rule-or-data-next14-prep",
+  "created_at": "2026-06-22T23:21:24Z",
+  "author": "codex",
+  "scope": {
+    "question": "After relation037 and identity069, triage the remaining unexpected_relation_endpoint_shape backlog and choose the next best data-cleanup bucket versus a scoped validator rule/test patch.",
+    "write_scope_observed": "Created exactly data/review_notes/codex-relation-rule-or-data-next14-prep.json.",
+    "read_only_lane": true,
+    "exclusions": [
+      "relation cleanup prep/applied batches017-037 original relation submissions/records",
+      "missing-target repair submissions/retired originals",
+      "retired overrides whose reason/source_decision matched relation batches017-037 or missing-target repair"
+    ],
+    "identity069_context": "identity069 was applied after relation037; it is identity cleanup and does not change the relation endpoint-shape bucket selection."
+  },
+  "remaining_bucket_counts_after_exclusions": {
+    "unexpected_relation_endpoint_shape_total": 38,
+    "excluded_submission_count": 97,
+    "excluded_record_count": 92,
+    "buckets": [
+      {
+        "bucket": "implemented_by route->entity",
+        "count": 2
+      },
+      {
+        "bucket": "part_of_program event->entity",
+        "count": 2
+      },
+      {
+        "bucket": "has_claim claim->claim",
+        "count": 1
+      },
+      {
+        "bucket": "has_claim treatment_component->claim",
+        "count": 1
+      },
+      {
+        "bucket": "has_timeline_event entity->metric_claim",
+        "count": 1
+      },
+      {
+        "bucket": "has_timeline_event event->entity",
+        "count": 1
+      },
+      {
+        "bucket": "has_timeline_event event->source",
+        "count": 1
+      },
+      {
+        "bucket": "has_timeline_event project->entity",
+        "count": 1
+      },
+      {
+        "bucket": "has_timeline_event source->entity",
+        "count": 1
+      },
+      {
+        "bucket": "has_treatment claim->treatment_component",
+        "count": 1
+      },
+      {
+        "bucket": "has_treatment entity->metric_claim",
+        "count": 1
+      },
+      {
+        "bucket": "has_treatment event->treatment_component",
+        "count": 1
+      },
+      {
+        "bucket": "has_treatment route->treatment_component",
+        "count": 1
+      },
+      {
+        "bucket": "implemented_by corridor->entity",
+        "count": 1
+      },
+      {
+        "bucket": "implemented_by entity->entity",
+        "count": 1
+      },
+      {
+        "bucket": "implemented_by event->entity",
+        "count": 1
+      },
+      {
+        "bucket": "implemented_by source->entity",
+        "count": 1
+      },
+      {
+        "bucket": "implemented_by treatment_component->entity",
+        "count": 1
+      },
+      {
+        "bucket": "operated_by corridor->entity",
+        "count": 1
+      },
+      {
+        "bucket": "operated_by entity->entity",
+        "count": 1
+      },
+      {
+        "bucket": "operated_by entity->event",
+        "count": 1
+      },
+      {
+        "bucket": "operated_by treatment_component->entity",
+        "count": 1
+      },
+      {
+        "bucket": "operates_on_corridor entity->corridor",
+        "count": 1
+      },
+      {
+        "bucket": "operates_on_corridor project->entity",
+        "count": 1
+      },
+      {
+        "bucket": "owned_by corridor->entity",
+        "count": 1
+      },
+      {
+        "bucket": "owned_by event->entity",
+        "count": 1
+      },
+      {
+        "bucket": "owned_by source->entity",
+        "count": 1
+      },
+      {
+        "bucket": "part_of_program project->claim",
+        "count": 1
+      },
+      {
+        "bucket": "published_by claim->entity",
+        "count": 1
+      },
+      {
+        "bucket": "published_by entity->source",
+        "count": 1
+      },
+      {
+        "bucket": "published_by event->entity",
+        "count": 1
+      },
+      {
+        "bucket": "published_by metric_claim->source",
+        "count": 1
+      },
+      {
+        "bucket": "related_route project->project",
+        "count": 1
+      },
+      {
+        "bucket": "related_route project->route",
+        "count": 1
+      },
+      {
+        "bucket": "serves_route project->entity",
+        "count": 1
+      },
+      {
+        "bucket": "serves_route project->project",
+        "count": 1
+      }
+    ]
+  },
+  "recommendation": {
+    "type": "data_cleanup",
+    "bucket": "implemented_by route->entity",
+    "confidence": "high",
+    "reason": "This tied for the largest remaining exact endpoint-shape bucket, and both rows are route-subject implementation edges with evidence that points to more specific fare-action or SBS launch context. The current validator intentionally reserves implemented_by for project -> entity; routes already have operated_by for agency operation, while launches and fare changes should be modeled through project/event/claim context rather than making the route itself the implementation owner.",
+    "why_rule_change": "A scoped rule patch adding route to RELATION_ENDPOINT_SHAPES.implemented_by.subject would remove these two issues and would make one source sentence about launching an SBS route pass.",
+    "why_not_rule_change": "The two-row bucket is semantically mixed: one row says Metro-North implements CTDOT fare increases on the New Haven Line, and the other says MTA/DOT launched the first SBS route on the Bx12. Admitting route -> entity for implemented_by would bless fare-change and launch-action target errors, overlap with operated_by route -> entity, and weaken the existing project -> entity boundary that prior implemented_by cleanups preserved.",
+    "proposed_cleanup_direction": [
+      "For relation_meeting-doc-179556-mnrr-implements-fare-increase, retire the malformed route -> entity implemented_by row; inspect existing same-source fare-increase events/claims and prefer an event/claim-context replacement only if the cleanup pass can validate a precise endpoint pair.",
+      "For relation_nyc-dot-mta-launched-bx12-sbs, retire the malformed route -> entity implemented_by row; inspect existing Fordham Road SBS / Select Bus Service project records and prefer project -> entity implemented_by or event/source context if local endpoints are available and source-backed."
+    ],
+    "tie_not_selected": {
+      "bucket": "part_of_program event->entity",
+      "count": 2,
+      "reason": "Also data-cleanup-shaped, but prior batch031 already flagged these agenda/work-plan event -> entity rows as needing committee-agenda/event-context modeling. The implemented_by route->entity bucket has a clearer validator-boundary answer for this rule-vs-data triage pass."
+    }
+  },
+  "representative_records": [
+    {
+      "record_id": "relation_meeting-doc-179556-mnrr-implements-fare-increase",
+      "source_id": "meeting_doc_179556",
+      "malformed_shape": "implemented_by route->entity",
+      "relation_kind": "implemented_by",
+      "subject": {
+        "record_id": "route_meeting-doc-106021-new-haven-line",
+        "record_kind": "route",
+        "display_name": "New Haven Line"
+      },
+      "object": {
+        "record_id": "entity_mta-metro-north-railroad",
+        "record_kind": "entity",
+        "display_name": "MTA Metro-North Railroad"
+      },
+      "submission_ids": [
+        "sub_47edac229f4563f0"
+      ],
+      "evidence": [
+        {
+          "source_id": "meeting_doc_179556",
+          "block_id": "p001_c0009",
+          "quote": "Metro-North will also implement CTDOT's Connecticut Branch Line fare increases at the same times as the New Haven Main Line increases."
+        },
+        {
+          "source_id": "meeting_doc_179556",
+          "block_id": "p002_c0010",
+          "quote": "the MTA Board hereby approves implementation of the increases proposed by CTDOT"
+        }
+      ],
+      "nearby_cleanup_candidates": [
+        "claim_meeting-doc-179556-branch-line-fares",
+        "event_meeting-doc-179556-fare-increase-sept-2025",
+        "event_meeting-doc-179556-fare-increase-july-2026",
+        "event_meeting-doc-179556-mta-board-approval"
+      ],
+      "triage_read": "The source is about fare increases and board authorization, not a route being implemented by an agency."
+    },
+    {
+      "record_id": "relation_nyc-dot-mta-launched-bx12-sbs",
+      "source_id": "fordham_rd_major_deegan_expwy_boston_rd_jun2021",
+      "malformed_shape": "implemented_by route->entity",
+      "relation_kind": "implemented_by",
+      "subject": {
+        "record_id": "route_bx12-plus",
+        "record_kind": "route",
+        "display_name": "BX12-SBS - ABLE route"
+      },
+      "object": {
+        "record_id": "entity_nyc-dot",
+        "record_kind": "entity",
+        "display_name": "NYC DOT"
+      },
+      "submission_ids": [
+        "sub_710cc7d848b51680"
+      ],
+      "evidence": [
+        {
+          "source_id": "fordham_rd_major_deegan_expwy_boston_rd_jun2021",
+          "block_id": "p029_c0002",
+          "quote": "In 2008, MTA and DOT launched the first Select Bus Service (SBS) route on the Bx12"
+        }
+      ],
+      "nearby_cleanup_candidates": [
+        "project_fordham-road-sbs-2010-01-14",
+        "project_select-bus-service",
+        "route_bx12-plus"
+      ],
+      "triage_read": "The source-backed fact is an SBS launch/project history. A cleanup pass should retarget to project/event context if supported, not widen implemented_by for route subjects."
+    },
+    {
+      "record_id": "relation_budget-event-committee-133306",
+      "source_id": "meeting_doc_133306",
+      "malformed_shape": "part_of_program event->entity",
+      "relation_kind": "part_of_program",
+      "evidence": [
+        {
+          "source_id": "meeting_doc_133306",
+          "block_id": "p003_c0010",
+          "quote": "Adopted Budget/Financial Plan 2024"
+        }
+      ],
+      "triage_read": "Runner-up bucket. This is committee work-plan agenda context, not evidence that an event is part of an entity/program."
+    },
+    {
+      "record_id": "relation_ridership-event-committee-133306",
+      "source_id": "meeting_doc_133306",
+      "malformed_shape": "part_of_program event->entity",
+      "relation_kind": "part_of_program",
+      "evidence": [
+        {
+          "source_id": "meeting_doc_133306",
+          "block_id": "p003_c0022",
+          "quote": "2023 Annual Ridership Report"
+        }
+      ],
+      "triage_read": "Runner-up bucket. This is also agenda/work-plan context, so no part_of_program event-subject rule should be added."
+    }
+  ],
+  "simulated_impact": {
+    "current_filtered_unexpected_relation_endpoint_shape": 38,
+    "selected_bucket_rows": 2,
+    "expected_remaining_after_selected_bucket_cleanup": 36,
+    "percent_of_remaining_endpoint_shape_issues": 5.26,
+    "rule_patch_same_count_but_wrong_signal": "Adding implemented_by route->entity would also clear two issues, but would make route implementation edges pass for mixed fare-change and launch-action rows."
+  },
+  "validator_probe_summary": {
+    "implemented_by route->entity": "rejected: Relation kind implemented_by expects project -> entity, got route -> entity.",
+    "implemented_by project->entity": "accepted",
+    "operated_by route->entity": "accepted by current endpoint table",
+    "has_timeline_event route->event": "accepted by current endpoint table",
+    "part_of_program event->entity": "rejected: Relation kind part_of_program expects project|route -> project|entity, got event -> entity.",
+    "part_of_program project->entity": "accepted",
+    "part_of_program route->entity": "accepted"
+  },
+  "command_evidence": [
+    {
+      "command": "test ! -e data/review_notes/codex-relation-rule-or-data-next14-prep.json && echo artifact_missing || echo artifact_exists",
+      "output": "artifact_missing"
+    },
+    {
+      "command": "git status --short",
+      "output_excerpt": "Worktree was already very dirty across generated/canonical/wiki/code files; this task did not revert or edit those files."
+    },
+    {
+      "command": "rg -n \"batch037|relation037|identity069|codex-identity-batch069|missing[_ -]target|missing-target|target repair|repair001\" data/review_notes data/submissions data/submission-overrides/retired.json LOG.md -g '*.json' -g '*.jsonl' -g '*.md'",
+      "output_excerpt": "LOG notes relation037 materialized/validated with unexpected_relation_endpoint_shape=38, then identity069 applied and checkpointed. retired.json contains relation037 retired originals; missing_target_repair001 is present."
+    },
+    {
+      "command": "jq '{note_id, created_at, scope, recommendation, remaining_bucket_counts, simulated_impact, command_evidence, commands_intentionally_not_run, blockers}' data/review_notes/codex-relation-rule-or-data-next13-prep.json",
+      "output_excerpt": "next13 recommended has_timeline_event metric_claim->event data cleanup with simulated 40 -> 38 impact."
+    },
+    {
+      "command": "jq '{note_id, created_at, bucket, command_evidence}' data/review_notes/codex-relation-cleanup-batch037-prep.json",
+      "output_excerpt": "batch037 prepared two has_timeline_event metric_claim -> event rows for supports event -> metric_claim replacements."
+    },
+    {
+      "command": "bun --eval '<readCanonicalRecords + relationEndpointShapeIssue inventory with refined exclusions for cleanup batches017-037 originals and missing-target repairs>'",
+      "output_excerpt": "excluded_submission_count=97; excluded_record_count=92; total=38; top buckets implemented_by route->entity=2 and part_of_program event->entity=2, followed by singleton buckets."
+    },
+    {
+      "command": "bun --eval '<raw current relationEndpointShapeIssue inventory without extra exclusions>'",
+      "output_excerpt": "total=38, matching the refined filtered total and LOG checkpoint after relation037."
+    },
+    {
+      "command": "rg -n \"implemented_by:|implemented_by|RELATION_ENDPOINT_SHAPES|part_of_program\" packages/pipeline/src/records/relations.ts packages/pipeline/test/records/relations.test.ts data/review_notes -g '*.ts' -g '*.json' | head -n 200",
+      "output_excerpt": "Current endpoint table has implemented_by project -> entity, operated_by project|route -> entity, and part_of_program project|route -> project|entity. Prior notes repeatedly treat implemented_by non-project subjects as cleanup."
+    },
+    {
+      "command": "rg -n '\"block_id\":\"p001_c0009\"|\"block_id\":\"p002_c0010\"' raw/sources/meeting_doc_179556/blocks.jsonl && rg -n '\"block_id\":\"p029_c0002\"' raw/sources/fordham_rd_major_deegan_expwy_boston_rd_jun2021/blocks.jsonl",
+      "output_excerpt": "meeting_doc_179556 evidence says Metro-North implements CTDOT branch-line fare increases and the MTA Board approves implementation of fare increases; Fordham evidence says MTA and DOT launched the first SBS route on Bx12."
+    },
+    {
+      "command": "bun --eval '<canonical inspection for selected implemented_by route->entity records and nearby source-local event/claim/project candidates>'",
+      "output_excerpt": "Confirmed relation_meeting-doc-179556-mnrr-implements-fare-increase and relation_nyc-dot-mta-launched-bx12-sbs are current canonical implemented_by route->entity rows; found same-source fare-increase claims/events and existing Fordham/SBS project candidates for cleanup review."
+    },
+    {
+      "command": "bun --eval '<relationEndpointShapeIssue probes for implemented_by, operated_by, part_of_program, supports, related_to, and has_timeline_event shapes>'",
+      "output_excerpt": "implemented_by route->entity rejected; implemented_by project->entity accepted; operated_by route->entity accepted; has_timeline_event route->event accepted; part_of_program event->entity rejected."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "output": "2026-06-22T23:21:24Z"
+    }
+  ],
+  "commands_intentionally_not_run": [
+    "canonicalize",
+    "campaign dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "materialize",
+    "export-jsonl",
+    "full validate CLI",
+    "DB repair/publish",
+    "any command with --profile or provider-backed model access",
+    "validator code edits",
+    "canonical JSONL/data/wiki/submission/retired/LOG/manifest edits"
+  ],
+  "blockers": []
+}

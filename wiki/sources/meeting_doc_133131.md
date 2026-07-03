@@ -1,0 +1,430 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-133131"
+record_kind: "source"
+display_name: "MTA Safety Committee Key Safety/Security Metrics Feb 2024"
+source_id: "meeting_doc_133131"
+source_ids:
+  - "meeting_doc_133131"
+local_observation_id: "source_meeting_doc_133131"
+local_observation_ids:
+  - "source_meeting_doc_133131"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T14:24:30.284Z"
+submission_ids:
+  - "sub_dd16655c6d67307a"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting presentation"
+  date: "February 26, 2024"
+  date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2024-02-26"
+    precision: "day"
+    raw_text: "February 26, 2024"
+  date_text: "February 26, 2024"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2024-02-26"
+    precision: "day"
+    raw_text: "February 26, 2024"
+  description: "MTA Safety Committee presentation covering key safety and security performance metrics across MTA agencies including LIRR, Metro-North, NYCT, Bridges & Tunnels, Construction & Development, and MTA Police Department"
+  published_date_normalized: "2024-02-26"
+  published_date_precision: "day"
+  publisher: "Metropolitan Transportation Authority (MTA)"
+  title: "Key Safety Metrics / Key Security Metrics"
+evidence_refs:
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_133131#p001_c0002"
+    page_number: 1
+    role: "source_metadata"
+    source_id: "meeting_doc_133131"
+    source_path: "raw/sources/meeting_doc_133131/blocks.jsonl"
+    text_sha256: "sha256:aa99ffa40206be0d927ee61af416ad7efdaefecc52c760b91112ccf528ae6854"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_133131#p001_c0004"
+    page_number: 1
+    source_id: "meeting_doc_133131"
+    source_path: "raw/sources/meeting_doc_133131/blocks.jsonl"
+    text_sha256: "sha256:943218313dc0154b0c2aa23385579740a24b9c5a7b084d8663c0a976fa46b89b"
+    text_source: "raw_text"
+  -
+    block_id: "p015_c0002"
+    evidence_id: "meeting_doc_133131#p015_c0002"
+    page_number: 15
+    role: "source_metadata"
+    source_id: "meeting_doc_133131"
+    source_path: "raw/sources/meeting_doc_133131/blocks.jsonl"
+    text_sha256: "sha256:aa99ffa40206be0d927ee61af416ad7efdaefecc52c760b91112ccf528ae6854"
+    text_source: "raw_text"
+---
+
+# Key performance metrics
+
+source_id: meeting_doc_133131
+citation: cite block ids exactly as shown in square brackets
+document: 234 block(s)
+
+## Page 1
+
+> [p001_c0001] The logo for the Metropolitan Transportation Authority (MTA) is located in the top left corner. It consists of a blue circle containing the white letters "MTA" in a bold, sans-serif font. To the right of the circle, the words "Metropolitan Transportation Authority" are written in a blue, sans-serif font.
+[p001_c0002] MTA Safety Committee
+### [p001_c0003] Key Safety Metrics
+[p001_c0004] February 26, 2024
+
+## Page 2
+
+### [p002_c0001] MTA Long Island Rail Road
+### [p002_c0002] Long Island Rail Road
+[p002_c0003] The Corporate Safety Department continues to work collaboratively with our partners, including the Operating Departments, Employee Training Department, and Labor Organizations; to address the unique hazards present in our railroad operating environment. In compliance with regulatory requirements and industry standards, including the Federal Railroad Administration mandated System Safety Program Plan and Safety Management System principles; we develop and implement policies, procedures, and programs as well as strategically conduct audits, inspections, observations, and investigations to mitigate risk and optimize safety performance for our employees, customers, contractors, and the communities we serve. We also focus on ensuring safety throughout the life cycle of design and build of both capital and operating funded construction projects.
+[p002_c0004] During 2023, the Corporate Safety Department:
+- [p002_c0005] • The Operations Division performed 211 inspections in yards, facilities, and along the right of way; conducted 5,335 employee observations for safety and operating rules compliance; investigated nine on track safety incidents; conducted 22 training programs for new employees; and lead 12 Confidential Close Call Reporting Labor Management Partnership Peer Review Team Meetings. • The Investigations and Analysis Division conducted 36 rail investigations; closed 37 recommendations; and issued three Safety Bulletins. • The Occupational Safety Division conducted 89 Occupational/Industrial Hygiene assessments and 25 new job task hazard analyses. • The Environmental Safety Division performed 521 inspections of tanks, hazardous material storage facilities, erosion and sediment control measures, and treatment systems while supporting document reviews and site safety inspections for 25 construction projects. • The Capital Project Safety Compliance Division supported 57 construction projects through document review and performing 92 site safety inspections. • The Office of the Fire Marshal trained 1,492 emergency responders; conducted 912 code compliance inspections of LIRR employee and tenant occupied spaces; supported 370 capital project document reviews and site inspections for conformance to code requirements; and responded to 832 emergency call outs. In addition, for the federally mandated emergency preparedness exercise, the Office of the Fire Marshal worked with the Employee Training and Operating Departments to conduct a simulated train versus vehicle collision mass casualty event. • The TRACKS Community Education and Outreach Program partnership with the MTA Police conducted 282 classroom training programs reaching 23,435 participants and 167 special events reaching 55,455 individuals - including Operation LifeSaver events at grade crossings.
+
+## Page 3
+
+### [p003_c0001] Long Island Rail Road
+### [p003_c0002] Performance Metrics
+### [p003_c0003] Customer Accident Rate
+[p003_c0004] The number of reportable customer accidents per one million customers (12-month rolling average).
+> [p003_c0005] Customer Accident Rate Data (Estimated) Month Rate Dec-20 3.3 Feb-21 4.0 Apr-21 5.0 Jun-21 4.5 Aug-21 4.2 Oct-21 3.5 Dec-21 2.7 Feb-22 3.0 Apr-22 2.8 Jun-22 2.6 Aug-22 2.5 Oct-22 2.4 Dec-22 2.5 Feb-23 2.1 Apr-23 2.1 Jun-23 2.3 Aug-23 2.3 Oct-23 2.6 Dec-23 2.6
+### [p003_c0006] Employee Lost Time Accident Rate
+[p003_c0007] The number of reportable employee lost time accidents per 200,000 hours worked (12-month rolling average).
+> [p003_c0008] Employee Lost Time Accident Rate Data (Estimated) Month Rate Dec-20 3.3 Feb-21 3.4 Apr-21 3.5 Jun-21 4.0 Aug-21 3.9 Oct-21 4.0 Dec-21 4.0 Feb-22 4.1 Apr-22 4.0 Jun-22 4.0 Aug-22 4.1 Oct-22 4.1 Dec-22 4.3 Feb-23 4.1 Apr-23 4.2 Jun-23 4.4 Aug-23 4.4 Oct-23 4.3 Dec-23 4.4
+### [p003_c0009] Train Derailments and Collisions
+[p003_c0010] The number of mainline train derailments and mainline train collisions.
+[p003_c0011]
+
+```text
+2020 2021 2022 2023 YTD Train Derailments 1 1 1 4 Train Collisions 1 2 0 0
+```
+
+## Page 4
+
+### [p004_c0001] Long Island Rail Road
+### [p004_c0002] Prevention Metrics (Leading Indicators)
+### [p004_c0003] Training for First Responders and Employees, and Customer & Community Outreach
+[p004_c0004] The number of first responders trained to assist in crisis events, unique LIRR employees who completed certain federally mandated qualification refresher courses, and customer and community members who attended in-person or virtual safety outreach events.
+[p004_c0005]
+
+```text
+2021 2022 2023 YTD Target Actual First Responders 568 1,561 879 1,492 Employees 3,866 4,764 5,026 6,592 Customers and Community Members 36,058 59,213 44,900 78,890
+```
+### [p004_c0006] Grade Crossing Safety Metrics
+### [p004_c0007] Grade Crossing Incidents and Broken Gates
+[p004_c0008] Grade crossing incidents occur when railroad on-track equipment and vehicles or pedestrians collide. Broken gates happen when a vehicle breaks a grade crossing gate.
+> [p004_c0009] Grade Crossing Incidents and Broken Gates Data Month Grade Crossing Incidents Broken Gates Dec-20 8 7 Feb-21 8 7 Apr-21 7 5 Jun-21 10 12 Aug-21 3 4 Oct-21 11 10 Dec-21 10 6 Feb-22 11 5 Apr-22 7 3 Jun-22 3 7 Aug-22 17 16 Oct-22 11 9 Dec-22 10 5 Feb-23 7 6 Apr-23 10 8 Jun-23 14 18 Aug-23 14 10 Oct-23 10 6 Dec-23 9 7
+### [p004_c0010] Summons, Warnings, and MTA Police Details
+[p004_c0011] The number of summonses and warnings issued to motorists for going around a grade crossing and/or for behavior that puts motorists at risk, and the number of MTA Police details deployed specifically to monitor behavior at grade crossings.
+> [p004_c0012] Summons, Warnings, and MTA Police Details Data Month Summons Warnings MTA Police Details Dec-20 300 100 90 Feb-21 200 100 40 Apr-21 250 200 90 Jun-21 200 100 60 Aug-21 150 150 50 Oct-21 180 120 60 Dec-21 150 100 50 Feb-22 120 80 30 Apr-22 150 100 50 Jun-22 150 100 40 Aug-22 200 150 60 Oct-22 350 100 80 Dec-22 350 100 70 Feb-23 300 100 60 Apr-23 250 100 50 Jun-23 250 100 60 Aug-23 250 100 70 Oct-23 100 100 30 Dec-23 100 100 40
+
+## Page 5
+
+### [p005_c0001] Metro-North Railroad
+### [p005_c0002] Metro-North Railroad
+### [p005_c0003] Metro-North Railroad
+[p005_c0004] For the current 12-month reporting period, January 2023 through December 2023, the reportable customer injury rate decreased from 2.38 to 2.00 per one million customers, compared to the prior reporting period of January 2022 through December 2022. The reportable employee lost time injury rate decreased from 2.14 to 1.93 per 200,000 working hours, compared to the prior reporting period. There were 5 reportable grade crossing incidents in 2023, compared to 2 in 2022. There were no mainline reportable train derailments in 2023, compared to 2 in 2022, and there were no mainline reportable train collisions in 2022 or 2023. Slips, Trips and Falls were the most frequent injury type for both customers and employees in 2023.
+[p005_c0005] Metro-North has continued to take steps to enhance customer and employee safety; highlights of efforts during 2023 include the following examples.
+- [p005_c0006] • The Office of System Safety (OSS) Field Safety team completed over 1,350 safety audits and inspections systemwide at shops, yards, stations, and along the right-of-way. Findings are shared with the operating departments for corrective action; examples include yard cleanups and coordination with the Metro-North Right of Way Task Force on concerns regarding trespasser activity and access along the right-of-way. • Under the Roadway Worker Protection Audit program, operations and safety managers conducted 21 group audits, in which they scheduled a full shift to audit work on or about the tracks to ensure compliance with operating and safety rules and engage with field employees. • Customer and community outreach through the Together Railroads and Communities Keeping Safe (TRACKS) program totaled 69,984 in-person contacts for the year, including outreach at grade crossings, stations, and community events. QPR (Question, Persuade, Refer) suicide prevention awareness training was delivered to 163 employees in 2023. • The OSS Industrial Hygiene and Hazard Analysis team conducted 37 reviews of chemicals and safety related/personal protective equipment items, performed 39 job safety analyses, and issued 47 Safety Alerts, Red Alerts, Bulletins, and Notices to support safe operations. • The OSS Safety Engineering team completed the first annual internal assessment of the Metro-North System Safety Program Plan and developed the Fatigue Risk Management Program for submittal to the FRA. The team also supported beneficial use/substantial completion reviews, conducted and supported hazard analysis risk assessments, and performed reviews of employee safety challenges throughout the year. • The OSS Environmental Compliance Services team performed over 300 field inspections and audits. One key project entailed supporting the Power Department in the removal of 91 obsolete oil-filled transformers throughout the system territory. This included in-house sampling of transformers for polychlorinated biphenyl (PCB) analysis and coordinating the safe removal of all equipment from the property. • Metro-North held its federally mandated annual emergency preparedness exercise in Norwalk, CT; the exercise simulated a construction accident on the Norwalk River Railroad Bridge. The OSS Emergency Management team also delivered 73 Public Safety Passenger Train Emergency Preparedness (PTEP) classes systemwide, with 1,459 first responders attending. These classes provide emergency response, safety, and railroad familiarization training for local Police, Fire, and EMS departments. • The Grand Central Terminal Fire Brigade, which monitors fire life safety systems and responds to fire and EMS alerts throughout the Grand Central Terminal complex 24/7, responded to 2,024 fire and EMS callouts in 2023, with an average response time of 2 minutes 24 seconds. This represents a 79% increase over 2022, due in part to the opening of Grand Central Madison as well as increased post-Covid ridership levels.
+
+## Page 6
+
+### [p006_c0001] Metro-North Railroad
+### [p006_c0002] Performance Metrics
+### [p006_c0003] Customer Accident Rate
+[p006_c0004] The number of reportable customer accidents per one million customers (12-month rolling average).
+> [p006_c0005] Month Rate Dec-20 1.4 Feb-21 2.0 Apr-21 2.5 Jun-21 2.4 Aug-21 2.1 Oct-21 2.0 Dec-21 2.0 Feb-22 1.9 Apr-22 2.0 Jun-22 2.0 Aug-22 2.1 Oct-22 2.4 Dec-22 2.3 Feb-23 2.2 Apr-23 2.0 Jun-23 2.1 Aug-23 2.2 Oct-23 2.0 Dec-23 2.0
+### [p006_c0006] Employee Lost Time Accident Rate
+[p006_c0007] The number of reportable employee lost time accidents per 200,000 hours worked (12-month rolling average).
+> [p006_c0008] Month Rate Dec-20 2.0 Feb-21 1.9 Apr-21 1.9 Jun-21 2.0 Aug-21 1.9 Oct-21 1.8 Dec-21 2.0 Feb-22 2.0 Apr-22 2.1 Jun-22 2.2 Aug-22 2.1 Oct-22 2.2 Dec-22 2.1 Feb-23 2.2 Apr-23 2.2 Jun-23 2.0 Aug-23 2.1 Oct-23 1.9 Dec-23 1.9
+### [p006_c0009] Train Derailments and Collisions
+[p006_c0010] The number of mainline train derailments and mainline train collisions.
+[p006_c0011]
+
+```text
+2020 2021 2022 2023 YTD Train Derailments 0 0 2 0 Train Collisions 0 0 0 0
+```
+
+## Page 7
+
+### [p007_c0001] Metro-North Railroad
+### [p007_c0002] Prevention Metrics (Leading Indicators)
+### [p007_c0003] Training for First Responders and Employees, and Customer & Community Outreach
+[p007_c0004] The number of first responders trained to assist in crisis events, unique Metro-North employees who completed certain federally mandated qualification refresher courses, and customer and community members who attended in-person or virtual safety outreach events.
+[p007_c0005]
+
+```text
+2021 2022 2023 YTD Target Actual First Responders 1,656 1,868 1,500 1,459 Employees 2,787 3,080 2,800 3,185 Customers and Community Members 17,605 52,606 35,000 69,984
+```
+### [p007_c0006] Grade Crossing Safety Metrics
+### [p007_c0007] Grade Crossing Incidents and Broken Gates
+[p007_c0008] Grade crossing incidents occur when railroad on-track equipment and vehicles or pedestrians collide. Broken gates happen when a vehicle breaks a grade crossing gate.
+> [p007_c0009] Grade Crossing Incidents and Broken Gates Data Month Grade Crossing Incidents Broken Gates Dec-20 0 0 Feb-21 2 0 Apr-21 1 0 Jun-21 1 0 Aug-21 3 0 Oct-21 1 0 Dec-21 2 0 Feb-22 3 0 Apr-22 1 0 Jun-22 5 2 Aug-22 1 0 Oct-22 2 0 Dec-22 1 1 Feb-23 3 0 Apr-23 1 0 Jun-23 2 0 Aug-23 3 0 Oct-23 1 0 Dec-23 2 1
+### [p007_c0010] Summonses, Warnings, and MTA Police Details
+[p007_c0011] The number of summonses and warnings issued to motorists for going around a grade crossing and/or for behavior that puts motorists at risk, and the number of MTA Police details deployed specifically to monitor behavior at grade crossings.
+> [p007_c0012] Summonses, Warnings, and MTA Police Details Data Month Summonses Warnings MTA Police Details Dec-20 20 10 10 Feb-21 30 20 15 Apr-21 40 30 20 Jun-21 50 40 15 Aug-21 60 50 20 Oct-21 70 60 15 Dec-21 80 70 20 Feb-22 90 80 15 Apr-22 100 90 20 Jun-22 110 100 15 Aug-22 120 110 10 Oct-22 130 120 5 Dec-22 140 130 10 Feb-23 150 140 15 Apr-23 160 150 10 Jun-23 170 160 15 Aug-23 180 170 10 Oct-23 190 180 5 Dec-23 200 190 10
+
+## Page 8
+
+> [p008_c0001] The logo for the New York City Transit Authority (NYCTA) is located in the top left corner. It features the letters "MTA" in white inside a blue circle, followed by the text "New York City Transit" in a bold, blue, sans-serif font.
+### [p008_c0002] New York City Transit
+[p008_c0003] Subway Customer Accident Rates decreased when comparing the most recent 12-month period to the previous one. It is worth noting that December 2023 Slip/Trip/Fall accidents were the lowest (187) when comparing to December 2022 (231).
+[p008_c0004] The National Transportation Safety Board investigation into the January 4th, 96th Street subway collision (NTSB) continues. NYCT supported the NTSB investigation with cooperation from multiple departments and fulfilled all requests for information. All State and Federal agencies are updated regularly. The NTSB will next return in March for technical discussions.
+[p008_c0005] Similarly, NYCT continues its investigation into the January 10th, F Line Derailment. The Department of Subways (DOS), Service Delivery Management, is revising the "Other Than Front End Operation with Sectionalized Revenue Cars" procedures and is working with The Office of System Safety on preliminary recommendations until the final report is issued in the coming weeks.
+[p008_c0006] Additionally, on January 18, 2024, the DOS, Maintenance of Way (MOW) Division of Track completed a system-wide reverification of all S2 (Moderate) track alignment defects, as such a defect was present at the derailment. MOW found the condition of these defects had not degraded, and out of an abundance of caution, MOS expedited the remediation of these 103 S2 defects.
+[p008_c0007] Further, regarding the January 10th derailment, there was component of the train car that was found to have missing bolts after the incident. NYCT's Division of Car Equipment inspected approximately 60,000 bolts on this component in the of the R160 and R143 Fleets as well as the R156 locomotives -- which utilize the same component. As a result, the condition identified at the derailment was found only on the incident car.
+[p008_c0008] Bus Collision Injuries and Customer Accidents increased, while Bus Collisions decreased slightly, when comparing the most recent 12-month period to the previous one.
+[p008_c0009] Employee Lost Time Accidents decreased when comparing the most recent 12-month period to the previous one.
+[p008_c0010] For the rolling 12-Month basis, Subway Fires decreased when comparing periods ending January 2024 and January 2023. It is also worth noting that Monthly Fires for January 2024 (75) decreased when compared to the same month in the previous year (77).
+
+## Page 9
+
+### [p009_c0001] New York City Transit
+### [p009_c0002] Performance Metrics
+### [p009_c0003] Subway and Bus Customer Accident Rate
+[p009_c0004] The number of subway and bus customer accidents per million customers (12-month rolling average).
+> [p009_c0005] Month Subway Bus Dec-20 4.3 1.7 Feb-21 5.0 1.8 Apr-21 5.8 1.8 Jun-21 5.2 1.8 Aug-21 4.8 1.8 Oct-21 4.6 1.9 Dec-21 4.1 1.8 Feb-22 3.9 1.8 Apr-22 3.7 1.8 Jun-22 3.5 1.9 Aug-22 3.4 1.9 Oct-22 3.3 1.9 Dec-22 3.1 2.0 Feb-23 2.9 2.1 Apr-23 2.8 2.1 Jun-23 2.7 2.2 Aug-23 2.6 2.2 Oct-23 2.5 2.2 Dec-23 2.5 2.2
+### [p009_c0006] Subway and Bus Employee Lost Time Injury Rate
+[p009_c0007] The number of employee lost time accidents per 100 employees (12-month rolling average).
+> [p009_c0008] Month Subway Bus Dec-20 4.8 7.2 Feb-21 4.8 7.2 Apr-21 4.2 6.8 Jun-21 4.2 7.0 Aug-21 4.2 7.1 Oct-21 4.2 7.3 Dec-21 4.2 7.3 Feb-22 4.3 7.3 Apr-22 4.4 7.3 Jun-22 4.4 7.1 Aug-22 4.4 6.9 Oct-22 4.4 6.8 Dec-22 4.2 6.7 Feb-23 4.1 6.3 Apr-23 4.0 6.1 Jun-23 4.0 6.2 Aug-23 4.0 5.8 Oct-23 4.0 5.6 Dec-23 4.0 5.5
+### [p009_c0009] Bus Collision Rate
+[p009_c0010] The number of bus collisions per million miles.
+> [p009_c0011] Month Bus Collision Rate Dec-20 45 Feb-21 35 Apr-21 45 Jun-21 45 Aug-21 52 Oct-21 52 Dec-21 65 Feb-22 55 Apr-22 52 Jun-22 58 Aug-22 62 Oct-22 55 Dec-22 65 Feb-23 50 Apr-23 55 Jun-23 65 Aug-23 55 Oct-23 62 Dec-23 60
+
+## Page 10
+
+### [p010_c0001] New York City Transit
+### [p010_c0002] Subway Fires
+[p010_c0003] The number of fires in the subway system including along the right-of-way, in stations, and on trains.
+> [p010_c0004] Subway Fires Data (Estimated) Month Fires Dec-20 90 Feb-21 80 Apr-21 100 Jun-21 85 Aug-21 110 Oct-21 60 Dec-21 85 Feb-22 125 Apr-22 150 Jun-22 125 Aug-22 100 Oct-22 95 Dec-22 105 Feb-23 85 Apr-23 75 Jun-23 140 Aug-23 100 Oct-23 75 Dec-23 65
+### [p010_c0005] Subway Derailments and Collisions
+[p010_c0006] The number of subway derailments and collisions on the mainline right-of-way and in rail yards.
+[p010_c0007]
+
+```text
+Year 2020 2021 2022 2023 YTD Mainline Collisions 0 0 0 0 Yard Collisions 2 3 3 0 Mainline Derailments 5 0 1 3 Yard Derailments 4 10 6 3
+```
+### [p010_c0008] Prevention Metrics (Leading Indicators)
+[p010_c0009] Joint track safety audits review critical on-track safety items such as flagging, third rail, and lighting. Continuous welded rail installations significantly reduced the number of rail joints to lessen the occurrence of broken rails. Friction pad installations reduces broken rail incidents and rail defects. Audible Pedestrian Turn Warning Systems produce an audible voice alert to pedestrians when a bus is making a left- or right-hand turn. Vision Zero Employee Training provides pedestrian safety training to all bus operators.
+[p010_c0010]
+
+```text
+2022 2023 YTD Target Actual Joint Track Safety Audits Completed 311 340 314 Continuous Welded Rail Installed (Feet) 23,228 10,758 25,739 Friction Pads Installed 28,122 22,000 49,238 Audible Pedestrian Turn Warning Systems Installed 610 800 222 Vision Zero Employee Trainings Conducted 4,977 4500 6,402
+```
+
+## Page 11
+
+> [p011_c0001] The logo for MTA Bridges and Tunnels, featuring a blue circle with the white letters "MTA" inside, followed by the text "Bridges and Tunnels" in a blue sans-serif font.
+### [p011_c0002] MTA Bridges and Tunnels
+[p011_c0003] As one of our most important Safety Indicators, traffic collisions on our Bridges & Tunnels have continued to show a promising downward trend for the last four years, having reached the lowest point in decades. This trend has been more impressive considering the significant increase in vehicle traffic at our crossings, highlighting long-term safety improvements for our customers. Indeed, preliminary data for 2023 indicates the highest volume ever recorded, reaching an average of more than 920,000 daily crossings. We can say that while our traffic volume was up by 2.7%, the collision counts were down 11.4 %
+[p011_c0004] With respect to injury on duty rates, our year-over-year trends are better than what we experienced during the 2022.
+
+## Page 12
+
+### [p012_c0001] Bridges and Tunnels
+### [p012_c0002] Performance Metrics
+### [p012_c0003] Customer Collision Rate
+[p012_c0004] The number of customer vehicle collisions per one million vehicles.
+> [p012_c0005] Month Rate Dec-20 3.0 Feb-21 3.4 Apr-21 3.4 Jun-21 4.4 Aug-21 5.2 Oct-21 3.8 Dec-21 3.0 Feb-22 2.5 Apr-22 4.6 Jun-22 4.6 Aug-22 4.1 Oct-22 4.2 Dec-22 3.6 Feb-23 4.0 Apr-23 3.8 Jun-23 3.8 Aug-23 4.0 Oct-23 3.6 Dec-23 3.4
+### [p012_c0006] Employee Lost Time Injury Rate
+[p012_c0007] The number of employee lost time accidents per 200,000 hours worked.
+> [p012_c0008] Month Rate Dec-20 4.5 Feb-21 7.5 Apr-21 3.5 Jun-21 10.5 Aug-21 4.0 Oct-21 7.0 Dec-21 2.5 Feb-22 7.5 Apr-22 7.8 Jun-22 0.0 Aug-22 9.5 Oct-22 3.5 Dec-22 3.8 Feb-23 5.0 Apr-23 4.8 Jun-23 5.2 Aug-23 4.5 Oct-23 4.8 Dec-23 4.5
+### [p012_c0009] Prevention Metrics (Leading Indicators)
+[p012_c0010] Workforce development provides safety and skills training to all operations, maintenance, and staff personnel. Safety task force inspections are conducted at each facility to improve customer and worker safety. Fire code audits include reviews of fire prevention activities and firefighting and suppression equipment, as required by the NY Uniform Fire Prevention Code. FDNY liaison visits include FDNY facilities tours to become familiar with fire equipment available in structures and buildings.
+[p012_c0011]
+
+```text
+2021 2022 2023 YTD Target Actual Workforce Development 0 486 486 739 Safety Task Force Audits 14 14 14 17 Fire Code Audits 14 14 14 17 FDNY Liaison Visits 34 29 29 29
+```
+
+## Page 13
+
+### [p013_c0001] Construction & Development
+### [p013_c0002] MTA Construction & Development
+[p013_c0003] Construction & Development (C&D) covers all capital construction across all MTA agencies, including MNR, LIRR, NYCT, B&T, and C&D-integrated mega projects (ESA, 2nd Ave Phase two, Penn Access, Penn Gateway, Harold Interlocking, 3rd Track). C&D Safety monitors all reported contractor incidents, including those classified as lost time and recordable for all capital projects, to identify trends related to work-related occurrences.
+[p013_c0004] The reported Contractor incident information for all of 2023 includes the following: Struck By/Against accounted for the highest number of reported lost time incidents, with a total of 22 occurrences, which equates to 34% overall — Struck By/Against accounted for the highest number of reported recordable incidents, with a total of 25 occurrences, which also equates to 45% overall. The reported Lost Time incidents for 2023 compared to 2022 are currently 1.5% higher (one incident). The reported Recordable incidents for 2023 compared to 2022 are currently 4% lower (4 incidents). Targeted outreach continues with increased inspections of those projects with the scope of work that pose a higher risk and those that may be experiencing multiple incidents.
+[p013_c0005] Overall total inspections YTD 2023 totaled 8131. These inspections consisted of internal inspections/audits, totaling 2427, and external inspections performed by third-party safety Consultants and OCIP, totaling 5704. The safety inspections included general positive and negative observations, including General Safety / Housekeeping, Stairs/Ladders, Fall Protection, Fire Protection/Prevention, and PPE for negative observations. Positive observations included Tools (Hand & Power), Vehicle & Equipment Safety, Supervision/ Organization, Fire Protection, and Electrical. C&D Safety continues to monitor the inspection findings for identified trends. Advisories and communications on these items are being developed and used to provide additional outreach and awareness to staff and Contractors during project and staff safety meetings to align with the C&D Safety Management System.
+[p013_c0006] Initiatives currently being worked on within Construction & Development:
+[p013_c0007] AECOM Safety Assessment Initiative – Advance a multiphase project to audit, evaluate, recommend, and implement a new Safety Management System (SMS) with MTA C&D. The primary focus is improving safety at construction sites and capital improvement projects around operating MTA rail transit, bridge, and tunnel facilities, including an IT platform selection and data management application.
+[p013_c0008] C&D Safety has implemented the Safety Management System – Phase 1 of 3 phases, implementing the new Safety Management System (SMS) throughout the entire agency by rolling out the program in stages to ensure all staff, supporting projects, vendors, and contractors are systematically adopting the new process and protocols. Phase 1 initially focuses on enhancements to current safety practices and procedures, identifying and providing clear roles and responsibilities for all levels, updating levels of safety training requirements, and enhancing meeting best practices for safety meetings. Phase two is being finalized for implementation.
+[p013_c0009] The digital solution portion for the SMS continues progressing with HQ and has been incorporated into an agency-wide ESS. This program is an integral component of the comprehensive Safety Management System (SMS). The ESS program would remove numerous manual processes of collecting field assessments, manually entering the results, storing files in email, SharePoint, or OneDrive locations, which are not often accessible to all staff and allow real-time inspections and submissions to be viewed and tracked, with input from all users (e.g., GC/PMC field safety coordinators and C&D Safety staff). The scope of work (SOW) is being finalized with all stakeholders. C&D has currently created an interim inspection solution.
+[p013_c0010] The C&D Safety unit continues outreach initiatives with Contractors and Construction organizations to discuss C&D Safety trends and lessons learned from current projects. The monthly and quarterly Outreach meetings with the various PMC/CCM consultant companies continue and include discussions on possible areas for additional collaboration and mitigations for ongoing and future projects.
+[p013_c0011] C&D Emergency Management is developing additional tabletop exercises that will be conducted during the first quarter of 2024. The project has been selected, and the Emergency Management team is now working on defining the exercise parameters. These drills help build organizational capacity, help organizations evaluate their business continuity plans, and identify strengths and areas for improvement.
+
+## Page 14
+
+### [p014_c0001] Construction & Development
+### [p014_c0002] Performance Metrics
+### [p014_c0003] Contractor Lost Time and Recordable Incidents
+[p014_c0004] Lost time incidents measure the number of contractor safety-related incidents leading to lost time. Recordable incidents measure the number of safety-related incidents recorded that do not result in contractor lost time.
+> [p014_c0005] Contractor Lost Time and Recordable Incidents Data Month Lost Time Incident Recordable Incident Dec-20 9 4 Feb-21 9 5 Apr-21 10 4 Jun-21 4 3 Aug-21 8 2 Oct-21 10 12 Dec-21 4 6 Feb-22 1 9 Apr-22 4 5 Jun-22 7 9 Aug-22 8 3 Oct-22 6 6 Dec-22 6 4 Feb-23 5 6 Apr-23 3 8 Jun-23 3 4 Aug-23 4 2 Oct-23 8 7 Dec-23 4 4
+### [p014_c0006] Serious Incidents
+[p014_c0007] The number of serious safety-related incidents.
+[p014_c0008]
+
+```text
+2022 2023 YTD Struck by / Against 4 0 Slips, Trips, Falls 5 1 Electrical Shock 1 2 Laceration 2 0
+```
+### [p014_c0009] Prevention Metrics (Leading Indicators)
+### [p014_c0010] Inspections and Audits
+[p014_c0011] The number of inspections and audits performed at construction sites. Inspections are conducted in-house (internal) and by third-party safety consultants and Owner Controlled Insurance Program teams (external).
+[p014_c0012]
+
+```text
+2022 2023 YTD Inspections and Audits - Internal 2,173 2,423 Inspections and Audits - External 6,264 7,282
+```
+
+## Page 15
+
+### [p015_c0001] Metropolitan Transportation Authority
+[p015_c0002] MTA Safety Committee
+### [p015_c0003] Key Security Metrics
+[p015_c0004] February 26, 2024
+
+## Page 16
+
+### [p016_c0001] MTA Long Island Rail Road
+### [p016_c0002] Long Island Rail Road
+[p016_c0003] LIRR Office of Security proactively monitors locations based upon information developed through coordination with MTAPD, LIRR employee, Community complaints/concerns, Quality of Life issues, current trends, as well as information pulled from other sources. OOS is actively involved in the MTA's counter terrorism efforts providing real time surveillance and information as well as providing valuable forensic data during the investigative process.
+[p016_c0004] Currently, major focus is on Terminal and Station public waiting areas utilizing LIRR Security Command Center access to cameras and access control technologies, which are supported by the use of analytics, which assist in the identification of problematic areas where individuals may remain and vandalize areas or present possible threats to customers.
+[p016_c0005] Assist with identification of homeless individuals in need of assistance, using information developed, as outlined previously, Office of Security personnel monitor LIRR locations which have been identified as being prone to homelessness. When Office of Security personnel observes possible undomiciled conditions, LIRR works with MTA PD to address and correct the condition. The LIRR Security Command Center observed a total of Twelve apparently undomiciled individuals, dispatching police to render aide for the 2nd Quarter of 2023, Totaling Thirty for the first half of the year.
+[p016_c0006] Based on trending patterns the LIRR Security Staff conducts security assessments at LIRR properties, such as station buildings, facilities, and yards. Security Personnel use all available information, as previously outlined, applying their intrinsic knowledge of the LIRR and current threat-based trends to determine if current security mitigations are sufficient to address all known security needs. The assessments support the recommended mitigations to address these vulnerabilities.
+[p016_c0007] LIRR Security monitors employee workplace violence incidents and looks for potential enhancements or mitigations to prevent future occurrences. MTA/LIRR is addressing prevention of worker assaults in the following ways:
+- [p016_c0008] • Enhancing Customer Messaging • Deploying Additional Employee training and awareness campaigns • Engaging with Transportation Labor Union on frontline worker issues (our most vulnerable employee population) • Expanding the MTAPD patrol program footprint to touch more trains, especially those during rush hours or with persistent issues. The results have been overwhelmingly positive for both train crews and customers.
+[p016_c0009] LIRR continually researches security technologies to address both physical security devices and security applications to ensure LIRR security systems remain current and viable, keeping in mind the fiscal responsibilities to the agency. LIRR Office of Security continues to push forward procurements that add or enhance camera coverage at our stations, yards, and facilities.
+
+## Page 17
+
+### [p017_c0001] Long Island Rail Road
+### [p017_c0002] Major Crimes Against Customers
+[p017_c0003] The rate of all major crimes (murder, rape, robbery, felony assault, grand larceny) against customers, per million customers
+> [p017_c0004] This combined bar and line chart tracks two metrics over time from December 2020 to December 2023. The left Y-axis represents Ridership in millions, ranging from 0 to 10. The right Y-axis represents the Major Crime Rate per million customers, also ranging from 0 to 10. Ridership is shown as grey bars, and the crime rate is shown as a blue line. Ridership shows a general upward trend, starting around 2 million in Dec-20 and reaching nearly 6 million by Dec-23. The crime rate fluctuates significantly, starting at approximately 3.5 in Dec-20, dropping to a low of about 1.5 in Jun-21, and then generally staying between 2 and 4 until a peak of about 3.5 in Aug-23. Month Ridership (in millions) Major Crime Rate Dec-20 2.0 3.5 Feb-21 2.0 1.5 Apr-21 2.0 4.0 Jun-21 2.5 1.5 Aug-21 3.0 2.5 Oct-21 3.5 1.5 Dec-21 3.5 2.5 Feb-22 3.0 2.0 Apr-22 4.0 2.0 Jun-22 4.5 2.5 Aug-22 4.5 2.5 Oct-22 4.5 1.5 Dec-22 4.5 2.5 Feb-23 4.5 3.5 Apr-23 5.0 2.5 Jun-23 5.5 3.0 Aug-23 5.5 1.5 Oct-23 5.5 3.5 Dec-23 5.5 2.5
+### [p017_c0005] Workplace Violence Against Employees – Penal Law
+[p017_c0006] The number of reported Workplace Violence Cases against LIRR employees, contractors, and other MTA employees on LIRR property, recorded by LIRR Security and MTAPD, per NYS Penal Law (Categorized by Assault, Harassment, Menacing, Forcible Touching, and Other)
+> [p017_c0007] This stacked bar chart displays the number of reported workplace violence cases from November 2022 to December 2023, categorized by type: Assault (blue), Harassment (orange), Menacing (grey), Forcible Touching (yellow), and Other (light blue). The Y-axis represents the number of cases, ranging from 0 to 20. Harassment is the most frequent category, followed by Menacing and Assault. Forcible Touching is only present in November 2022 and December 2023. The total number of cases shows a general upward trend, peaking in March 2023 at approximately 9 cases. Month Assault Harassment Menacing Forcible Touching Other Nov-22 0 0 0 1 0 Dec-22 0 5 1 0 0 Jan-23 0 4 2 0 0 Feb-23 1 2 0 0 0 Mar-23 1 7 1 0 1 Apr-23 1 6 1 0 0 May-23 1 2 1 0 0 Jun-23 4 2 0 0 0 Jul-23 2 4 0 0 0 Aug-23 4 4 1 0 1 Sep-23 1 2 2 0 0 Oct-23 1 5 1 0 0 Nov-23 1 7 1 0 0 Dec-23 3 4 0 1 0
+### [p017_c0008] Workplace Violence Against Employees – Labor Law
+[p017_c0009] The number of reported Workplace Violence Cases against LIRR employees, contractors, and other MTA employees on LIRR property, recorded by LIRR Security and MTAPD, per NYS DOL Law (Categorized by Physical Contact and Non-Contact Incidents)
+> [p017_c0010] This stacked bar chart shows the number of reported workplace violence cases from December 2020 to December 2023, categorized by type: No Contact (blue) and Physical Contact (green). The Y-axis represents the number of cases, ranging from 0 to 20. Physical Contact is the dominant category, with peaks in August 2022 (around 8 cases) and April 2023 (around 9 cases). No Contact incidents are also present, with a notable peak in December 2022 (around 5 cases). Month No Contact Physical Contact Dec-20 1 2 Feb-21 1 4 Apr-21 1 2 Jun-21 2 2 Aug-21 1 4 Oct-21 1 2 Dec-21 2 5 Feb-22 1 2 Apr-22 1 4 Jun-22 1 2 Aug-22 3 5 Oct-22 1 1 Dec-22 5 1 Feb-23 2 4 Apr-23 3 6 Jun-23 1 3 Aug-23 3 5 Oct-23 5 2 Dec-23 3 5
+
+## Page 18
+
+### [p018_c0001] Long Island Rail Road
+### [p018_c0002] Summons and Arrests
+[p018_c0003] The number of criminal summonses issued for fare evasion, the number of criminal summonses issued for other infractions, and the number of arrests made by the MTA Police Department
+> [p018_c0004] A stacked bar chart showing the number of Arrests, Criminal Fare Evasion Summons, and Other Criminal Summons from Dec-20 to Dec-23. The Y-axis represents the count, ranging from 0 to 350. The X-axis shows months from Dec-20 to Dec-23. The legend indicates: Arrests (blue), Criminal Fare Evasion Summons (green), and Other Criminal Summons (orange). Month Other Criminal Summons Criminal Fare Evasion Summons Arrests Total Dec-20 40 10 10 60 Feb-21 30 10 10 50 Apr-21 40 10 10 60 Jun-21 50 10 10 70 Aug-21 80 10 10 100 Oct-21 80 10 10 100 Dec-21 60 10 10 80 Feb-22 40 10 10 60 Apr-22 50 10 10 70 Jun-22 50 10 10 70 Aug-22 100 10 10 120 Oct-22 180 10 10 200 Dec-22 40 10 10 60 Feb-23 80 10 10 100 Apr-23 150 10 10 170 Jun-23 100 10 10 120 Aug-23 100 10 10 120 Oct-23 180 10 10 200 Dec-23 120 10 10 140
+
+## Page 19
+
+> [p019_c0001] The logo for the MTA Metro-North Railroad. It features a blue circle on the left containing the white letters "MTA". To the right of the circle, the words "Metro-North Railroad" are written in a bold, blue, sans-serif font.
+### [p019_c0002] Metro-North Railroad
+[p019_c0003] The Metro-North Railroad (MNR) Security Department (Security) continues to support MNR Operations as well as the MTA Police Department. As the dependency on video surveillance continues to rise, MNR Security expand its video surveillance footprint. On a regular basis, video camera locations are added to MNR Security video network which now exceeds 15,000 cameras. Support of MNR Operations and MTAPD is enhanced through use of a state-of-the-art video management system which allows for immediate video distribution to specific individuals using cloud-based technology. MNR Security's unique and advanced ability to manage and protect video ensures all requested video is secured, archived, and rapidly distributed.
+[p019_c0004] MNR Security takes great pride in managing the Workplace Violence Prevention Plan (WVPP). Since 2016, MNR Security has investigated every instance of Workplace Violence (WPV) that has been reported by MNR employees. MNR Security has identified that WPV incidents onboard the trains involving train crews and passengers are the most prevalent place for WPV to occur. MTA/MNR is addressing prevention of worker assaults in the following ways:
+- [p019_c0005] • Running a de-escalation training program for new and existing conductors. 100% of Conductors will receive this training by the end of 2023. All new MNR employees are given in-person De-escalation techniques training as part of the Security Basics module at New Hire Orientation. • Weekly meetings with MTAPD, MNR Transportation, and Labor Unions to discuss issues regarding operational security. They identify specific trains where MTAPD can deploy officers to address specific trouble-making individuals or specific stations where incidents have occurred that need law enforcement. • Expanding the MTAPD patrol program footprint to touch more trains, especially those during rush hours or with persistent issues. The results have been overwhelmingly positive for both train crews and customers.
+[p019_c0006] MNR Security continues to enhance programs and initiatives related to crime reduction, enhanced customer and employee safety, and improved customer experience.
+
+## Page 20
+
+### [p020_c0001] Metro-North Railroad
+### [p020_c0002] Major Crimes Against Customers
+[p020_c0003] The rate of all major crimes (murder, rape, robbery, felony assault, grand larceny) against customers, per million customers
+> [p020_c0004] This combined bar and line chart tracks two metrics over time from December 2020 to December 2023. The left Y-axis represents Ridership in millions, ranging from 0 to 10. The right Y-axis represents the Major Crime Rate per million customers, also ranging from 0 to 10. Ridership is shown as grey bars, and the Major Crime Rate is shown as a blue line. Ridership shows a general upward trend, starting around 1.5 million in Dec-20 and reaching approximately 5.5 million by Dec-23. The Major Crime Rate starts at about 3.5 in Dec-20, peaks at nearly 8.5 in Feb-21, and then fluctuates between 1.5 and 4.0 for the remainder of the period. Month Ridership (in millions) Major Crime Rate Dec-20 1.5 3.5 Feb-21 1.5 8.5 Apr-21 1.5 1.5 Jun-21 2.5 3.5 Aug-21 2.5 1.5 Oct-21 3.0 2.0 Dec-21 3.5 3.5 Feb-22 2.5 4.0 Apr-22 4.0 2.0 Jun-22 4.5 3.0 Aug-22 4.5 1.5 Oct-22 4.8 2.0 Dec-22 4.8 1.5 Feb-23 4.5 3.0 Apr-23 5.0 1.0 Jun-23 5.5 2.0 Aug-23 5.2 1.5 Oct-23 5.5 2.5 Dec-23 5.5 1.5
+### [p020_c0005] Workplace Violence Against Employees – Penal Law
+[p020_c0006] The number of reported Workplace Violence Cases against MNR employees, contractors, and other MTA employees on MNR property, recorded by MNR Security and MTAPD, per NYS Penal Law (Categorized by Assault, Harassment, Menacing, Forcible Touching, and Other).
+> [p020_c0007] This stacked bar chart displays the number of reported workplace violence cases per month from November 2022 to December 2023. The categories are Assault (blue), Harassment (orange), Menacing (grey), Forcible Touching (yellow), and Other (light blue). Harassment is the most frequent category, peaking at approximately 17 cases in July 2023. Assault cases are also significant, particularly in July 2023. Menacing and Forcible Touching cases are present but less frequent. The total number of cases fluctuates between about 4 and 17 per month. Month Assault Harassment Menacing Forcible Touching Other Nov-22 1 4 0 0 1 Dec-22 1 3 0 0 0 Jan-23 1 7 1 0 1 Feb-23 0 11 0 0 1 Mar-23 0 8 0 0 0 Apr-23 0 10 1 0 1 May-23 1 9 0 0 1 Jun-23 0 8 0 0 0 Jul-23 2 15 0 0 0 Aug-23 1 2 1 0 1 Sep-23 0 11 2 0 1 Oct-23 0 4 0 0 1 Nov-23 0 6 0 0 0 Dec-23 2 10 0 0 1
+### [p020_c0008] Workplace Violence Against Employees – Labor Law
+[p020_c0009] The number of reported Workplace Violence Cases against MNR employees, contractors, and other MTA employees on MNR property, recorded by MNR Security and MTAPD, per NYS DOL Law (Categorized by Physical Contact and Non-Contact Incidents)
+> [p020_c0010] This stacked bar chart shows the number of reported workplace violence cases per month from December 2020 to December 2023, categorized by 'No Contact' (blue) and 'Physical Contact' (green). Physical contact incidents show a significant increase starting in August 2022, reaching a peak of approximately 17 cases in August 2023. No contact incidents remain relatively stable, generally between 1 and 6 cases per month throughout the period. Month No Contact Physical Contact Dec-20 2 1 Feb-21 1 4 Apr-21 1 1 Jun-21 2 1 Aug-21 1 4 Oct-21 2 1 Dec-21 2 4 Feb-22 2 1 Apr-22 1 4 Jun-22 2 4 Aug-22 6 4 Oct-22 10 4 Dec-22 4 2 Feb-23 6 4 Apr-23 1 7 Jun-23 6 5 Aug-23 7 10 Oct-23 7 7 Dec-23 4 6
+
+## Page 21
+
+### [p021_c0001] Metro-North Railroad
+### [p021_c0002] Summons and Arrests
+[p021_c0003] The number of criminal summonses issued for fare evasion, the number of criminal summonses issued for other infractions, and the number of arrests made by the MTA Police Department
+> [p021_c0004] A stacked bar chart showing the monthly count of three categories: Arrests (dark blue), Criminal Fare Evasion Summons (green), and Other Criminal Summons (orange) from December 2020 to December 2023. The y-axis represents the count, ranging from 0 to 200 in increments of 25. The x-axis shows months at two-month intervals. The chart shows a general upward trend in the total number of incidents over the three-year period, with a significant increase starting in late 2022 and accelerating in 2023. Other Criminal Summons consistently represent the largest portion of the total, followed by Arrests, with Criminal Fare Evasion Summons being the smallest portion. Month Arrests Criminal Fare Evasion Summons Other Criminal Summons Total Dec-20 15 5 15 35 Feb-21 20 5 20 45 Apr-21 35 5 25 65 Jun-21 20 5 15 40 Aug-21 25 5 25 55 Oct-21 30 5 35 70 Dec-21 35 5 60 100 Feb-22 25 5 35 65 Apr-22 30 5 35 70 Jun-22 20 5 20 45 Aug-22 20 5 15 40 Oct-22 30 5 25 60 Dec-22 25 5 25 55 Feb-23 30 5 20 55 Apr-23 40 5 35 80 Jun-23 45 5 45 95 Aug-23 55 5 85 145 Oct-23 50 5 75 130 Dec-23 55 5 105 165
+
+## Page 22
+
+> [p022_c0001] The logo for the Metropolitan Transportation Authority (MTA) New York City Transit. It features a blue circle with the white letters "MTA" inside, followed by the text "New York City Transit" in a blue sans-serif font.
+### [p022_c0002] New York City Transit
+[p022_c0003] In January 2024, Major Felony Crime was up 17% from December 2023. Crimes per Million Rides also increased 24% from the previous month. This is largely due to the increase in crime in January paired with a slight dip in ridership. Additionally, crime was up on both count and per rider versus January 2023. Crime was up 19% versus the 2023 monthly average. Fortunately, early February numbers are showing progress on reducing this uptick.
+[p022_c0004] NYPD Arrests are up 42% v. December 2023 and 43% v. January 2023. Summons activity is also up 25% v. December 2023 and 4% v. January 2023. We expect these increased enforcement efforts to show results in the coming months
+[p022_c0005] Employee workplace violence cases in December were down 9% from December 2022 and down 9% from the 2022 monthly average. Employee workplace violence cases in 2023 were up 2% v. 2022. Although employee assaults are up for the year, they are only 9% of our total cases and remain low on a per rider basis. MTA/NYCT is addressing prevention of worker assaults by the following:
+- [p022_c0006] • Implementing On-Board Video Systems • Piloting Bus Operator Physical Protective Measures • Expanding Bus Fare Evasion Prevention • Enhancing Customer Messaging • Obtaining lessons learned from Bus Operators (Focus Groups) • Collaborating with labor management committees • Conducting Employee De-escalation Training • Tracking cases and following-up with District Attorney Offices to ensure worker assault cases are given focus/attention • Banning of offenders from the transit system; • Providing de-escalation training
+[p022_c0007] In addition, NYCT continues to innovate internal programs as well as partner with NYPD and MTAPD on initiatives geared towards overall crime reduction, enhanced customer and employee safety, and improved customer experience.
+
+## Page 23
+
+### [p023_c0001] New York City Transit
+### [p023_c0002] Major Crimes Against Subway Customers
+[p023_c0003] The rate of all major felonies (burglary, murder, rape, robbery, felony assault, grand larceny) against subway customers
+> [p023_c0004] This chart displays two metrics over time from December 2020 to December 2023. The left Y-axis represents 'Total Major Crimes' (0 to 250), shown as grey bars. The right Y-axis represents 'Major Crime Rate (per million customers)' (0 to 3.5), shown as a blue line. The X-axis shows time in two-month intervals. Month Total Major Crimes Major Crime Rate (per million customers) Dec-20 120 2.8 Feb-21 115 2.9 Apr-21 110 2.7 Jun-21 115 2.5 Aug-21 110 2.0 Oct-21 120 2.2 Dec-21 160 2.8 Feb-22 180 3.2 Apr-22 190 2.8 Jun-22 170 2.5 Aug-22 180 2.5 Oct-22 200 2.5 Dec-22 210 2.6 Feb-23 140 2.2 Apr-23 160 2.4 Jun-23 190 2.3 Aug-23 170 2.4 Oct-23 170 2.3 Dec-23 190 2.4
+### [p023_c0005] Workplace Violence Against Subways/SIRTOA Employees – Penal Law
+[p023_c0006] The number of reported Workplace Violence Cases against Subways/SIRTOA Employees recorded by NYCT Security per NYS Penal Law (Categorized by Assault, Harassment, Menacing, Forcible Touching, and Other).
+> [p023_c0007] This stacked bar chart shows the number of reported workplace violence cases from January 2021 to November 2023. The categories are Assault (blue), Harassment (orange), Menacing (grey), Forcible Touching (yellow), and Other (light blue). The Y-axis ranges from 0 to 200. Month Assault Harassment Menacing Forcible Touching Other Jan-21 5 70 5 0 0 Mar-21 5 65 5 0 0 May-21 10 60 5 0 0 Jul-21 5 40 5 0 0 Sep-21 5 60 5 0 0 Nov-21 5 60 5 0 0 Jan-22 5 75 5 0 0 Mar-22 5 65 5 0 0 May-22 5 75 5 0 0 Jul-22 5 45 5 0 0 Sep-22 5 50 5 0 0 Nov-22 5 40 5 0 0 Jan-23 10 50 5 0 0 Mar-23 5 60 5 0 0 May-23 10 65 5 0 0 Jul-23 5 55 5 0 0 Sep-23 10 60 5 0 0 Nov-23 10 65 5 0 0
+### [p023_c0008] Workplace Violence Against Bus Employees – Penal Law
+[p023_c0009] The number of reported Workplace Violence Cases against Bus Employees recorded by NYCT Security per NYS Penal Law (Categorized by Assault, Harassment, Menacing, Forcible Touching, and Other).
+> [p023_c0010] This stacked bar chart shows the number of reported workplace violence cases from December 2020 to December 2023. The categories are Assault (blue), Harassment (orange), Menacing (grey), Forcible Touching (yellow), and Other (light blue). The Y-axis ranges from 0 to 200. Month Assault Harassment Menacing Forcible Touching Other Dec-20 5 145 5 0 0 Feb-21 5 140 5 0 0 Apr-21 5 120 5 0 0 Jun-21 10 135 5 0 0 Aug-21 10 145 5 0 0 Oct-21 10 155 5 0 0 Dec-21 10 165 5 0 0 Feb-22 5 100 5 0 0 Apr-22 5 110 5 0 0 Jun-22 10 130 5 0 0 Aug-22 10 160 5 0 0 Oct-22 10 130 5 0 0 Dec-22 10 140 5 0 0 Feb-23 10 130 5 0 0 Apr-23 10 140 5 0 0 Jun-23 10 145 5 0 0 Aug-23 10 110 5 0 0 Oct-23 10 115 5 0 0 Dec-23 10 120 5 0 0
+
+## Page 24
+
+### [p024_c0001] New York City Transit
+### [p024_c0002] Workplace Violence Against Subways/SIRTOA Employees – Labor Law
+[p024_c0003] The number of reported Workplace Violence Cases against Subways/SIRTOA Employees recorded by NYCT Security per NYS DOL Law (Categorized by Physical Contact and Non-Contact Incidents)
+> [p024_c0004] This stacked bar chart displays the number of reported workplace violence cases against subway and SIRTOA employees from January 2021 to November 2023. The y-axis represents the number of cases, ranging from 0 to 200 in increments of 50. The x-axis shows the months and years. Each bar is divided into two categories: Non-Contact (blue) and Physical Contact (green). The total number of cases generally fluctuates between 50 and 80, with a notable peak in May 2022. Month Non-Contact Physical Contact Total Jan-21 60 15 75 Mar-21 55 15 70 May-21 50 15 65 Jul-21 40 10 50 Sep-21 50 10 60 Nov-21 55 10 65 Jan-22 60 15 75 Mar-22 55 15 70 May-22 60 20 80 Jul-22 35 10 45 Sep-22 40 10 50 Nov-22 30 10 40 Jan-23 35 15 50 Mar-23 40 20 60 May-23 45 30 75 Jul-23 40 15 55 Sep-23 40 25 65 Nov-23 45 25 70
+### [p024_c0005] Workplace Violence Against Bus Employees – Labor Law
+[p024_c0006] The number of reported Workplace Violence Cases against Bus Employees recorded by NYCT Security per NYS DOL Law (Categorized by Physical Contact and Non-Contact Incidents)
+> [p024_c0007] This stacked bar chart displays the number of reported workplace violence cases against bus employees from December 2020 to December 2023. The y-axis represents the number of cases, ranging from 0 to 200 in increments of 50. The x-axis shows the months and years. Each bar is divided into two categories: Non-Contact (blue) and Physical Contact (green). The total number of cases fluctuates between approximately 90 and 180, with a significant peak in October 2021. Month Non-Contact Physical Contact Total Dec-20 110 40 150 Feb-21 100 30 130 Apr-21 105 35 140 Jun-21 110 40 150 Aug-21 125 40 165 Oct-21 145 35 180 Dec-21 115 25 140 Feb-22 85 15 100 Apr-22 95 40 135 Jun-22 100 45 145 Aug-22 110 30 140 Oct-22 90 30 120 Dec-22 110 45 155 Feb-23 120 30 150 Apr-23 90 40 130 Jun-23 115 40 155 Aug-23 90 30 120 Oct-23 80 30 110 Dec-23 90 30 120
+
+## Page 25
+
+### [p025_c0001] New York City Transit
+### [p025_c0002] NYPD Summonses and Arrests
+[p025_c0003] The number of summonses issues for fare evasion (Transit Adjudication Bureau + criminal); the number of summonses issues for other infractions; the number of arrests made by NYPD
+> [p025_c0004] This stacked bar chart displays the monthly volume of NYPD summonses and arrests from December 2020 to December 2023. The Y-axis represents the count, ranging from 0 to 20,000 in increments of 2,000. The X-axis shows months at two-month intervals. The legend identifies three data series: Fare Evasion Summons (blue), All Other Summons (green), and Arrests (orange). The total number of incidents shows a steady increase over the period, with a notable peak in June 2023. Month Fare Evasion Summons All Other Summons Arrests Total Dec-20 6000 1000 1000 8000 Feb-21 5500 1000 1000 7500 Apr-21 7000 1500 1000 9500 Jun-21 5500 1000 1000 7500 Aug-21 4500 1000 1000 6500 Oct-21 5000 1000 1000 7000 Dec-21 4500 1000 1000 6500 Feb-22 5500 1000 1000 7500 Apr-22 8000 1500 1000 10500 Jun-22 8000 1500 1000 10500 Aug-22 7000 1500 1000 9500 Oct-22 8000 1500 1000 10500 Dec-22 8000 1500 1000 10500 Feb-23 10500 1500 1000 13000 Apr-23 9500 1500 1000 12000 Jun-23 12000 1500 1000 14500 Aug-23 10500 1500 1000 13000 Oct-23 11000 1500 1000 13500 Dec-23 9000 1500 1000 11500
+### [p025_c0005] Track Intrusion Incidents
+[p025_c0006] The number of incidents in which a non-authorized person is on or about subway tracks, hindering subway operations
+> [p025_c0007] This bar chart illustrates the monthly frequency of track intrusion incidents from December 2020 to December 2023. The Y-axis shows the count of incidents, ranging from 0 to 180 in increments of 20. The X-axis displays months at two-month intervals. The data shows a significant peak in December 2021, followed by a general decline and subsequent fluctuations throughout 2022 and 2023. Month Incidents Dec-20 105 Feb-21 105 Apr-21 115 Jun-21 90 Aug-21 85 Oct-21 105 Dec-21 170 Feb-22 160 Apr-22 140 Jun-22 100 Aug-22 95 Oct-22 115 Dec-22 115 Feb-23 115 Apr-23 125 Jun-23 120 Aug-23 90 Oct-23 100 Dec-23 135
+
+## Page 26
+
+> [p026_c0001] The logo for MTA Bridges and Tunnels, featuring a blue circle with the white letters "MTA" inside, followed by the text "Bridges and Tunnels" in a blue sans-serif font.
+### [p026_c0002] MTA Bridges and Tunnels
+[p026_c0003] The WPV program at Bridges and Tunnels is a yearlong and continual endeavor. The Internal Security Department promotes the safety and well-being of all people in our workplace through the continual evaluation of the physical environment of our places of work, reviewing workplace violence incident reports to identify trends in the types of incidents reported, and reviewing the effectiveness of the mitigating actions. This will continue to be done in collaboration with Operations, Maintenance, and Safety & Health departments with the support of MTA Headquarters business units such as, MTA Labor Counsel and Law Departments, Office of Security, and in partnership with the labor organizations representing our employees.
+
+## Page 27
+
+### [p027_c0001] Bridges and Tunnels
+### [p027_c0002] Bridges and Tunnels Summonses
+[p027_c0003] All summonses issued by B&T Officers for violations including covered/obstructed plates, moving violations, etc.
+> [p027_c0004] Month Summons Dec-20 1700 Feb-21 1100 Apr-21 350 Jun-21 850 Aug-21 750 Oct-21 1100 Dec-21 750 Feb-22 900 Apr-22 1300 Jun-22 1800 Aug-22 1300 Oct-22 1550 Dec-22 1450 Feb-23 1450 Apr-23 1700 Jun-23 2200 Aug-23 1700 Oct-23 1450 Dec-23 1300
+### [p027_c0005] Bridges and Tunnels License Plate Interdictions
+[p027_c0006] Vehicles remanded for tow due to non-payment of tolls.
+> [p027_c0007] Month License Plate Interdictions Dec-20 30 Feb-21 100 Apr-21 60 Jun-21 75 Aug-21 105 Oct-21 120 Dec-21 175 Feb-22 105 Apr-22 120 Jun-22 175 Aug-22 150 Oct-22 170 Dec-22 160 Feb-23 100 Apr-23 225 Jun-23 265 Aug-23 230 Oct-23 225 Dec-23 170 Jan-24 20 Feb-24 60 Mar-24 25 Apr-24 110
+### [p027_c0008] Workplace Violence Against Employees – Penal Law
+[p027_c0009] The number of reported Workplace Violence Cases against B&T employees, contractors, and other MTA employees on B&T property, recorded by B&T Security and BTOs, per NYS Penal Law (Categorized by Assault, Harassment, Menacing, Forcible Touching, and Other).
+> [p027_c0010] Month Assault Harassment Menacing Forcible Touching Other Dec-20 0 1 0 0 0 Feb-21 0 1 0 0 0 Apr-21 0 0 0 0 0 Jun-21 0 2 0 0 0 Aug-21 0 1 0 0 0 Oct-21 1 0 0 0 0 Dec-21 1 3 0 0 0 Feb-22 0 0 0 0 0 Apr-22 0 1 0 0 0 Jun-22 0 1 0 0 0 Aug-22 0 1 0 0 0 Oct-22 0 1 0 0 0 Dec-22 0 0 0 0 0 Feb-23 0 1 0 0 0 Apr-23 0 1 0 0 0 Jun-23 0 0 0 0 0 Aug-23 0 1 0 0 0 Oct-23 0 1 0 0 0 Dec-23 0 1 0 0 0
+
+## Page 28
+
+### [p028_c0001] Bridges and Tunnels
+### [p028_c0002] Workplace Violence Against Employees – Labor Law
+[p028_c0003] The number of reported Workplace Violence Cases against B&T employees, contractors, and other MTA employees on B&T property, recorded by B&T Security and BTIOs, per NYS DOL Law (Categorized by Physical Contact and Non-Contact Incidents)
+> [p028_c0004] A stacked bar chart showing the number of reported workplace violence cases from December 2020 to December 2023. The y-axis represents the number of cases, ranging from 0 to 3.5 in increments of 0.5. The x-axis shows time in two-year intervals (Dec-20, Feb-21, Apr-21, Jun-21, Aug-21, Oct-21, Dec-21, Feb-22, Apr-22, Jun-22, Aug-22, Oct-22, Dec-22, Feb-23, Apr-23, Jun-23, Aug-23, Oct-23, Dec-23). The legend indicates two categories: Non-Contact (blue) and Physical Contact (green). The data shows a peak in December 2021 with 3 cases (1 Non-Contact, 2 Physical Contact) and a peak in June 2021 with 2 cases (2 Non-Contact). All other months show 1 case, all of which are Non-Contact incidents. Month Non-Contact Physical Contact Total Dec-20 1 0 1 Feb-21 1 0 1 Apr-21 0 0 0 Jun-21 2 0 2 Aug-21 1 0 1 Oct-21 0 1 1 Dec-21 1 2 3 Feb-22 0 0 0 Apr-22 1 0 1 Jun-22 1 0 1 Aug-22 1 0 1 Oct-22 1 0 1 Dec-22 0 0 0 Feb-23 1 0 1 Apr-23 1 0 1 Jun-23 0 0 0 Aug-23 1 0 1 Oct-23 1 0 1 Dec-23 0 0 0
+
+## Page 29
+
+> [p029_c0001] The logo for MTA Bridges and Tunnels, featuring a blue circle with the white letters "MTA" inside, followed by the text "Bridges and Tunnels" in a blue sans-serif font.
+### [p029_c0002] MTA Police Department
+
+## Page 30
+
+### [p030_c0001] Bridges and Tunnels
+### [p030_c0002] Workplace Violence Against Employees – Penal Law
+[p030_c0003] The number of reported Workplace Violence Cases against MTAPD Sworn Officers per NYS Penal Law (Categorized by Assault, Harassment, Menacing, Forcible Touching, and Other).
+> [p030_c0004] Month Assault Harassment Menacing Forcible Touching Other Dec-22 1 0 0 0 0 Jan-23 4 0 0 0 0 Feb-23 0 0 0 0 0 Mar-23 4 0 0 0 0 Apr-23 1 0 1 0 0 May-23 2 0 0 0 0 Jun-23 2 0 0 0 0 Jul-23 2 0 1 0 0 Aug-23 0 0 0 0 0 Sep-23 8 0 0 0 0 Oct-23 3 0 1 0 1 Nov-23 2 0 1 0 0 Dec-23 6 0 1 0 2
+### [p030_c0005] Workplace Violence Against Employees – Labor Law
+[p030_c0006] The number of reported Workplace Violence Cases against MTAPD Sworn Officers per NYS DOL Law (Categorized by Physical Contact and Non-Contact Incidents)
+> [p030_c0007] Month Non-Contact Physical Contact Dec-22 0 1 Jan-23 0 4 Feb-23 0 0 Mar-23 0 4 Apr-23 1 1 May-23 0 2 Jun-23 0 2 Jul-23 1 2 Aug-23 0 0 Sep-23 0 8 Oct-23 2 3 Nov-23 1 2 Dec-23 3 6

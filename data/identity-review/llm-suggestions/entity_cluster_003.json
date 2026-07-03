@@ -1,0 +1,48 @@
+{
+  "review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "reviewed_at": "2026-06-08T21:06:45.644Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_003.md",
+  "cluster_id": "entity_cluster_003",
+  "kind": "entity",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "suggestion": {
+    "cluster_id": "entity_cluster_003",
+    "kind": "entity",
+    "merge_groups": [
+      [
+        "entity_ny-state-legislature",
+        "entity_ny-state-legislature-open-data-plan"
+      ]
+    ],
+    "do_not_merge": [],
+    "weak_aliases": [
+      {
+        "record_id": "entity_ny-state-legislature",
+        "aliases": [
+          "entity_ny-state-legislature-2025",
+          "entity_ny_state_legislature",
+          "entity_ny_state_legislature_2025"
+        ],
+        "reason": "Local observation IDs and dataset-specific aliases useful for search but not merge authority."
+      },
+      {
+        "record_id": "entity_ny-state-legislature-open-data-plan",
+        "aliases": [
+          "entity_ny_state_legislature_open_data_plan"
+        ],
+        "reason": "Local observation ID useful for search but not merge authority."
+      }
+    ],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [
+      "When two entity records share the same entity_name, same display_name, same jurisdiction scope, and share an identity key, merge them even if entity_type has trivial formatting differences (e.g., underscore vs space)."
+    ],
+    "confidence": "high",
+    "rationale": "Both records refer to the New York State Legislature, share the identity key entity_new-york-state-legislature, have identical entity_name and display_name, and the only difference is a trivial formatting variation between 'government_body' and 'government body' (already merged in record 1's _merged_field_values). The validator flagged this as a duplicate_global_identity with score 100. All evidence from three MTA documents references the same government body. No scope or jurisdictional differences exist."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T21-06-25-833Z_3449211-5cfc7e89_identity-review-run_entity-cluster-003",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-06-25-833Z_2026-06-08T21-06-25-833Z_3449211-5cfc7e89_identity-review-run_entity-cluster-003.jsonl"
+}

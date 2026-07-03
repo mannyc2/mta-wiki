@@ -1,0 +1,1292 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-102781"
+record_kind: "source"
+display_name: "Diversity Committee Meeting December 2022"
+source_id: "meeting_doc_102781"
+source_ids:
+  - "meeting_doc_102781"
+local_observation_id: "source_meeting_doc_102781"
+local_observation_ids:
+  - "source_meeting_doc_102781"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T19:31:49.134Z"
+submission_ids:
+  - "sub_eb7642f18e4a9083"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting book/presentation"
+  date_text: "December 2022"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2022-12"
+    precision: "month"
+    raw_text: "December 2022"
+  description: "MTA Diversity Committee Meeting book for December 19, 2022, covering 2022 and 2023 work plans, executive summary, business and diversity initiatives, DBE certification, small business development program, M/W/DBE and SDVOB contract compliance, capital projects, financial services, asset fund managers, and EEO activities."
+  published_date_normalized: "2022-12"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "Diversity Committee Meeting"
+evidence_refs:
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_102781#p001_c0003"
+    page_number: 1
+    role: "title_and_date"
+    source_id: "meeting_doc_102781"
+    source_path: "raw/sources/meeting_doc_102781/blocks.jsonl"
+    text_sha256: "sha256:25429ddb967fefda54daff18251839b92d578756dc8f833e913a2e2a563dd8ea"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0003"
+    evidence_id: "meeting_doc_102781#p002_c0003"
+    page_number: 2
+    role: "meeting_date"
+    source_id: "meeting_doc_102781"
+    source_path: "raw/sources/meeting_doc_102781/blocks.jsonl"
+    text_sha256: "sha256:2fabc5aa104ba87eae30bc8351d451b82fc2bf5d97ba9568c8659be8c912d14d"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0004"
+    evidence_id: "meeting_doc_102781#p002_c0004"
+    page_number: 2
+    role: "meeting_time"
+    source_id: "meeting_doc_102781"
+    source_path: "raw/sources/meeting_doc_102781/blocks.jsonl"
+    text_sha256: "sha256:a4094c3649daced1d032c77705827a913fb6a8fa5f74caba64371b628f831f59"
+    text_source: "raw_text"
+---
+
+# Diversity Committee Book
+
+source_id: meeting_doc_102781
+citation: cite block ids exactly as shown in square brackets
+document: 785 block(s)
+
+## Page 1
+
+> [p001_c0001] The logo for the Metropolitan Transportation Authority (MTA) is located in the top left corner. It consists of a black circle with the white letters "MTA" inside.
+[p001_c0002] Metropolitan Transportation Authority
+### [p001_c0003] Diversity Committee Meeting
+[p001_c0004] December 2022
+### [p001_c0005] Committee Members
+[p001_c0006] E. Velez, Chair F. Miranda M. Valdivia N. Zuckerman
+
+## Page 2
+
+### [p002_c0001] Diversity Committee Meeting
+[p002_c0002] 2 Broadway, 20th Floor Board Room, New York NY 10004
+[p002_c0003] Monday, 12/19/2022
+[p002_c0004] 12:00 - 12:45 PM ET
+### [p002_c0005] 1. PUBLIC COMMENT PERIOD
+### [p002_c0006] 2. APPROVAL OF MINUTES
+[p002_c0007] September 2022 Diversity Committee Meeting Minutes - Page 3
+### [p002_c0008] 3. 2022 AND 2023 DIVERSITY COMMITTEE WORK PLANS
+[p002_c0009] 2022 Diversity Committee Work Plan - Page 6
+[p002_c0010] 2023 Diversity Committee Work Plan - Page 9
+### [p002_c0011] 4. EXECUTIVE SUMMARY
+[p002_c0012] Executive Summary - Page 13
+### [p002_c0013] 5. BUSINESS AND DIVERSITY INITIATIVES
+[p002_c0014] Business and Diversity Initiative - Page 34
+### [p002_c0015] 6. DBE CERTIFICATION ACTIVITY REPORT
+[p002_c0016] DBE Certification - Page 37
+### [p002_c0017] 7. SMALL BUSINESS DEVELOPMENT PROGRAM UPDATE
+[p002_c0018] Small Business Development Program Update - Page 39
+### [p002_c0019] 8. M/W/DBE AND SDVOB CONTRACT COMPLIANCE
+[p002_c0020] M/W/DBE and SDVOB Contract Compliance - Page 56
+### [p002_c0021] 9. M/W/DBE AND SDVOB ON CAPITAL PROJECTS
+[p002_c0022] M/W/DBE and SDVOB on Capital Projects - Page 81
+### [p002_c0023] 10. FINANCIAL SERVICES
+[p002_c0024] Underwriter Fees - Page 83
+### [p002_c0025] 11. ASSET FUND MANAGERS
+[p002_c0026] Asset Fund Managers - Page 85
+### [p002_c0027] 12. EEO 2022
+[p002_c0028] EEO Activities - Page 89
+
+## Page 3
+
+### [p003_c0001] MTA DIVERSITY COMMITTEE
+[p003_c0002] Meeting Minutes
+[p003_c0003] 2 Broadway, 20 th Floor
+[p003_c0004] New York, NY 10004
+[p003_c0005] Monday, September 19, 2022
+[p003_c0006] 11:30 a.m.
+### [p003_c0007] The following Committee Members were present:
+[p003_c0008] Hon. Elizabeth Velez, Chair
+[p003_c0009] Hon. Frankie Miranda
+[p003_c0010] Hon. Midori Valdivia
+[p003_c0011] Hon. Neal Zuckerman
+### [p003_c0012] The following Board Member was present:
+[p003_c0013] Hon. Samuel Chu
+### [p003_c0014] The following staff were also present:
+[p003_c0015] Michael Garner, MTA Chief Diversity and Inclusion Officer, MTA Department of Diversity and Civil Rights ("DDCR")
+[p003_c0016] Dr. Rosalyn Green, Deputy Chief Diversity and Inclusion Officer, EEO and Title VI, DDCR
+[p003_c0017] Ray Burke, Deputy Chief Diversity and Inclusion Officer, Contract Compliance, DDCR
+[p003_c0018] Migdalia Taveras, Manager, Business and Diversity Initiatives, DDCR
+[p003_c0019] Lorraine Warren, Senior Director, DBE Certification, DDCR
+[p003_c0020] Patrick Isom, Manager, Financial Analysis
+[p003_c0021] Maria Amper, Assistant Deputy Chief Diversity Officer, Operations and Technological Support, DDCR
+[p003_c0022] Yvell Stanford, Deputy Chief People Officer, Design and Development
+[p003_c0023] Barbara Cockfield, Senior Director, Diversity and Inclusion Initiatives
+[p003_c0024] Alana Smith, Senior Director, Equal Employment Opportunities
+[p003_c0025] Chair Elizabeth Velez called to order the September 2022 Diversity Committee.
+### [p003_c0026] 1. PUBLIC SPEAKERS' SESSION
+[p003_c0027] There were two public speakers in the public comments portion of the meeting: Charlton D'Souza and Aleda Dupree.
+[p003_c0028] Refer to the video recording of the meeting produced by the MTA and maintained in MTA records for the content of each speaker's statements.
+### [p003_c0029] 2. APPROVAL OF MINUTES
+[p003_c0030] Upon motion duly made and seconded, the Committee approved the Minutes of the MTA Diversity Committee meeting held on June 27, 2022, with corrections to reflect that Chair Velez adjourned the meeting instead of Chair Herman.
+[p003_c0031] _Page 1 of 3 MTA Diversity Committee Meeting Minutes, Monday, September 19, 2022_
+[p003_c0032] _Master Page # 3 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 4
+
+### [p004_c0001] 3. WORK PLAN REPORT
+[p004_c0002] Chair Velez asked if there were any changes to the 2022 Work Plan. Mr. Garner reported no updates.
+### [p004_c0003] 4. EXECUTIVE SUMMARY
+### [p004_c0004] Business and Diversity Initiatives
+[p004_c0005] Mr. Garner reported that the DDCR participated in several outreach events during the period of April to June 2022, which attracted 361 firms. Thirteen certified firms received an approximately $5 million in contract awards and 48 certified firms received approximately $22 million in contract payments.
+### [p004_c0006] Certification Activity Report
+[p004_c0007] Ms. Warren stated that from January to December 2021, 87 new DBE certification applications were received and 57 firms were certified. This year, from January to June, 40 new DBE certification applications were received, and 23 firms were certified.
+### [p004_c0008] Small Business Development Program Update
+[p004_c0009] Mr. Garner provided a quick summary of the Small Business Mentoring Program. The goal for the current year is 70 projects totaling $75 million. To date there are 15 projects awarded totaling $8.9 million, 21 projects in bidding totaling $19.3 million, 10 projects pending an award totaling $7.6 million, 11 projects pending bid opening totaling $11.7 million. All hands are on deck to award these projects prior to December 31, 2022, to successfully meet the goal. Since the inception of the program, the Small Business Development Program has awarded 526 contracts totaling $562 million.
+### [p004_c0010] M/W/DBE and SDVOB Contract Compliance Report
+[p004_c0011] Mr. Burke reported that the MTA's overall MWBE goal is 30%. During the first quarter of the state fiscal year 2022-23, 35% MWBE participation was achieved in contract payments. The MTA's overall SDVOB goal is 6%. For the same period, 7% SDVOB participation was achieved in contract awards, and 3% SDVOB participation was achieved in payments made on ongoing contracts.
+[p004_c0012] Mr. Burke stated that 17% DBE participation was achieved in contract awards, and 19% was achieved in payments on completed projects for the first half of the federal fiscal year 2021-22.
+[p004_c0013] Mr. Burke mentioned DDCR's strategies for improvement include expanding on building relationships with various women, veteran and minority trade groups and associations, designing smaller contracts for greater participation by MWDBE/SDVOBs and hiring additional MWDBE/SDVOB contract compliance staff.
+### [p004_c0014] Capital Projects
+[p004_c0015] Mr. Burke reported that for the first half of the federal fiscal year 2021-22, the DBE goal was 20%, and 6% DBE was achieved in awards for federally funded capital projects. Payments on ongoing contracts achieved a 19% DBE participation. For state-funded capital projects, the goal was 15% and 30% MBE participation was achieved in contract awards. Payments made on ongoing contracts during the first quarter of the state fiscal year 2021-22 have a 25% participation. Regarding WBEs with the goal of 15%, 41% was achieved in awards and 27% in payments. Mr. Burke also reported 8% SDVOB participation in awards and 2% participation in payments on ongoing contracts.
+[p004_c0016] _Page 2 of 3 MTA Diversity Committee Meeting Minutes, Monday, September 19, 2022_
+[p004_c0017] _Master Page # 4 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 5
+
+### [p005_c0001] Legal Fees
+[p005_c0002] Mr. Garner stated that current MWBE participation on legal fees is 18%. He is working internally to make sure that the MTA will achieve and exceed the Governor's 30% MWBE goal on legal fees.
+### [p005_c0003] Financial Services
+[p005_c0004] Mr. Isom provided an update on financial services. For the reporting period, the MTA has achieved 54% on WBE participation, 12% on MBE participation and 6% SDVOB participation on investment banking fees. Mr. Garner commended the Finance department for achieving 66% participation on MWBE investment banking fees.
+### [p005_c0005] 2022 EEO Activities
+[p005_c0006] Dr. Green provided an update on the second quarter EEO activities. The MTA's overall workforce consists of 70,877 employees, of whom 18% are women, 71% are minorities, 3% are veterans, and 1% are employees who self-identified as persons with disabilities. She also mentioned the job categories where the majority of the workforce are concentrated. The MTA hired 3,728 new employees where 52% were in the service maintenance category and 32% were in the bus operator category. When compared to the same quarter of 2021, the overall workforce trend has remained constant.
+[p005_c0007] Ms. Stanford discussed a brief update on the MTA-CUNY Talent Pipeline. She reported on the MTA's student leadership internship program and provided diversity statistics of the program's student population. The MTA has successfully hosted 73 students in the summer youth employment program. In the fall, the People Department has expanded the program to include 150 students.
+[p005_c0008] Ms. Cockfield reported on the recent diversity and inclusion initiatives and highlights on the employee resource groups recent activities.
+[p005_c0009] Ms. Smith provided a detailed report on the workforce utilization including the new hires and separations headcount by race, ethnicity and gender.
+[p005_c0010] Refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for the details of the Executive Summary report and the Diversity Committee members' comments and discussion.
+### [p005_c0011] 5. ADJOURNMENT
+[p005_c0012] Chair Velez thanked special guests CUNY Vice Chair Sandra Wilkins and Jim Harding for their presence. She concluded the meeting, upon motion duly made and seconded, the Diversity Committee voted to adjourn the meeting.
+[p005_c0013] Respectfully submitted, Maria Amper Assistant Deputy Chief Diversity Officer Department of Diversity and Civil Rights
+[p005_c0014] _Page 3 of 3 MTA Diversity Committee Meeting Minutes, Monday, September 19, 2022_
+[p005_c0015] _Master Page # 5 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 6
+
+### [p006_c0001] Metropolitan Transportation Authority
+### [p006_c0002] 2022 Diversity Committee Work Plan
+### [p006_c0003] I. RECURRING AGENDA ITEMS
+### [p006_c0004] Responsibility
+[p006_c0005]
+
+```text
+Approval of Minutes Committee Chair & Members Committee Work Plan Committee Chair & Members MTA Agency-wide Business and Diversity Initiatives and EEO Programs Activities Dept. of Diversity/Civil Rights MTA DBE Certification Program Activities Dept. of Diversity/Civil Rights M/W/DBE and SDVOB Contract Compliance Activities Dept. of Diversity/Civil Rights Action Items (if any) As listed
+```
+### [p006_c0006] II. SPECIFIC AGENDA ITEMS
+### [p006_c0007] Responsibility
+### [p006_c0008] March 2022
+[p006_c0009]
+
+```text
+2022 Departmental Goals Dept. of Diversity/Civil Rights 2021 Year-End Report Dept. of Diversity/Civil Rights Diversity Committee Charter Review Committee Chair and Members
+```
+### [p006_c0010] June 2022
+[p006_c0011]
+
+```text
+1st Quarter 2022 Report Dept. of Diversity/Civil Rights
+```
+### [p006_c0012] September 2022
+[p006_c0013]
+
+```text
+2nd Quarter 2022 Report Dept. of Diversity/Civil Rights Recruitment Strategies for MTAHQ and MTA Agencies Dept. of Diversity/Civil Rights, MTAHQ and Agency Staff
+```
+### [p006_c0014] December 2022
+[p006_c0015]
+
+```text
+3rd Quarter 2022 Report Dept. of Diversity/Civil Rights Status Report on MTA Inter-Agency M/W/DBE and SDVOB Task Force Dept. of Diversity/Civil Rights 2023 Diversity Committee Work Plan Dept. of Diversity/Civil Rights
+```
+[p006_c0016] _Master Page # 6 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 7
+
+### [p007_c0001] Detailed Summary
+### [p007_c0002] I. RECURRING
+### [p007_c0003] Approval of Minutes
+[p007_c0004] Approval of the official proceedings of the previous month's Committee meeting.
+### [p007_c0005] Diversity Committee Work Plan
+[p007_c0006] An update of any edits and/or changes in the work plan.
+### [p007_c0007] MTA Agency-wide Business and Diversity Initiatives Program Activities
+[p007_c0008] The MTA Department of Diversity and Civil Rights update of planned Agency-wide Business and Diversity Initiatives Program activities.
+### [p007_c0009] MTA Agency-wide EEO Program Activities
+[p007_c0010] The MTA Department of Diversity and Civil Rights update of agency-wide workforce analysis, new hires and EEO and Title VI complaints.
+### [p007_c0011] MTA DBE Certification Program Activities
+[p007_c0012] MTA Department of Diversity and Civil Rights update of DBE Certification Program activities.
+### [p007_c0013] M/W/DBE and SDVOB Contract Compliance Activities
+[p007_c0014] MTA Department of Diversity and Civil Rights update of M/W/DBE and SDVOB contract activities and program initiatives.
+### [p007_c0015] Action Items
+[p007_c0016] Staff summary documents presented to the Board for approval of items affecting business standards and practices.
+### [p007_c0017] II. SPECIFIC AGENDA ITEMS
+### [p007_c0018] March 2022
+### [p007_c0019] Overview of 2022 MTA Department of Diversity/Civil Rights Departmental Goals
+[p007_c0020] The MTA Department of Diversity and Civil Rights will present an overview of Departmental goals and objectives for 2022.
+### [p007_c0021] 2021 Year-End Report
+[p007_c0022] The Department of Diversity and Civil Rights will present 2021 year-end update on MTA Agency-wide EEO and M/W/DBE and SDVOB contract compliance activities.
+### [p007_c0023] Recruitment Strategies
+[p007_c0024] Staff from the Department of Diversity and Civil Rights, MTAHQ and MTA Agencies will present recruitment strategies to address underutilization of minorities and women in the workforce.
+[p007_c0025] _Master Page # 7 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 8
+
+### [p008_c0001] Diversity Committee Charter Review
+[p008_c0002] The Diversity Committee will review and assess the adequacy of its charter and recommend changes as necessary.
+### [p008_c0003] June 2022
+### [p008_c0004] 1 st Quarter 2022 Report
+[p008_c0005] The Department of Diversity and Civil Rights will present 1 st quarter 2022 update on MTA Agency-wide EEO, and M/W/DBE and SDVOB contract compliance activities.
+### [p008_c0006] September 2022
+### [p008_c0007] 2 nd Quarter 2022 Report
+[p008_c0008] The Department of Diversity and Civil Rights will present 2 nd quarter 2022 update on MTA Agency-wide EEO, and M/W/DBE and SDVOB contract compliance activities.
+### [p008_c0009] Recruitment Strategies
+[p008_c0010] Staff from the Department of Diversity and Civil Rights, MTAHQ and MTA Agencies will present recruitment strategies to address underutilization of minorities and women in the workforce.
+### [p008_c0011] December 2022
+### [p008_c0012] 3 rd Quarter 2022 Report
+[p008_c0013] The Department of Diversity and Civil Rights will present 3 rd quarter 2022 update on MTA Agency-wide EEO and M/W/DBE and SDVOB contract compliance activities.
+### [p008_c0014] Status Report on MTA Inter-Agency M/W/DBE and SDVOB Task Force
+[p008_c0015] The Department of Diversity and Civil Rights report will address progress made by the Task Force to improve M/W/DBE and SDVOB participation.
+### [p008_c0016] 2023 Diversity Committee Work Plan
+[p008_c0017] The Department of Diversity and Civil Rights will present an updated Diversity Committee Work Plan for 2023.
+[p008_c0018] _Master Page # 8 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 9
+
+### [p009_c0001] Metropolitan Transportation Authority
+### [p009_c0002] 2023 Diversity Committee Work Plan
+### [p009_c0003] I. RECURRING AGENDA ITEMS
+[p009_c0004]
+
+```text
+Responsibility Approval of Minutes Committee Chair & Members Committee Work Plan Committee Chair & Members MTA Agency-wide Business and Diversity Initiatives and EEO Programs Activities Dept. of Diversity/Civil Rights MTA DBE Certification Program Activities Dept. of Diversity/Civil Rights M/W/DBE and SDVOB Contract Compliance Activities Dept. of Diversity/Civil Rights Action Items (if any) As listed
+```
+### [p009_c0005] II. SPECIFIC AGENDA ITEMS
+### [p009_c0006] Responsibility
+### [p009_c0007] March 2023
+[p009_c0008]
+
+```text
+2023 Departmental Goals Dept. of Diversity/Civil Rights 2022 Year-End Report Dept. of Diversity/Civil Rights Diversity Committee Charter Review Committee Chair and Members 2023 EEO, ADA and Sexual and Other Discriminatory Harassment Policy Statements Dept. of Diversity/Civil Rights All Agency Title VI Policy Statement
+```
+### [p009_c0009] June 2023
+[p009_c0010]
+
+```text
+1st Quarter 2023 Report Dept. of Diversity/Civil Rights
+```
+### [p009_c0011] September 2023
+[p009_c0012]
+
+```text
+2nd Quarter 2023 Report Dept. of Diversity/Civil Rights Recruitment Strategies for MTAHQ and MTA Agencies Dept. of Diversity/Civil Rights, MTAHQ and Agency Staff
+```
+### [p009_c0013] December 2023
+[p009_c0014]
+
+```text
+3 rd Quarter 2023 Report Dept. of Diversity/Civil Rights Status Report on MTA Inter-Agency M/W/DBE and SDVOB Task Force Dept. of Diversity/Civil Rights 2024 Diversity Committee Work Plan Dept. of Diversity/Civil Rights
+```
+[p009_c0015] _Master Page # 9 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 10
+
+### [p010_c0001] Detailed Summary
+### [p010_c0002] I. RECURRING
+### [p010_c0003] Approval of Minutes
+[p010_c0004] Approval of the official proceedings of the previous month's Committee meeting.
+### [p010_c0005] Diversity Committee Work Plan
+[p010_c0006] An update of any edits and/or changes in the work plan.
+### [p010_c0007] MTA Agency-wide Business and Diversity Initiatives Program Activities
+[p010_c0008] The MTA Department of Diversity and Civil Rights update of planned Agency-wide Business and Diversity Initiatives Program activities.
+### [p010_c0009] MTA Agency-wide EEO Program Activities
+[p010_c0010] The MTA Department of Diversity and Civil Rights update of agency-wide workforce analysis, new hires and EEO and Title VI complaints.
+### [p010_c0011] MTA DBE Certification Program Activities
+[p010_c0012] MTA Department of Diversity and Civil Rights update of DBE Certification Program activities.
+### [p010_c0013] M/W/DBE and SDVOB Contract Compliance Activities
+[p010_c0014] MTA Department of Diversity and Civil Rights update of M/W/DBE and SDVOB contract activities and program initiatives.
+### [p010_c0015] Action Items
+[p010_c0016] Staff summary documents presented to the Board for approval of items affecting business standards and practices.
+### [p010_c0017] II. SPECIFIC AGENDA ITEMS
+### [p010_c0018] March 2023
+### [p010_c0019] Overview of 2023 MTA Department of Diversity/Civil Rights Departmental Goals
+[p010_c0020] The MTA Department of Diversity and Civil Rights will present an overview of Departmental goals and objectives for 2023.
+### [p010_c0021] 2022 Year-End Report
+[p010_c0022] The Department of Diversity and Civil Rights will present 2022 year-end update on MTA Agency-wide EEO and M/W/DBE and SDVOB contract compliance activities.
+### [p010_c0023] Recruitment Strategies
+[p010_c0024] Staff from the Department of Diversity and Civil Rights, MTAHQ and MTA Agencies will present recruitment strategies to address underutilization of minorities and women in the workforce.
+[p010_c0025] _Master Page # 10 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 11
+
+### [p011_c0001] Diversity Committee Charter Review
+[p011_c0002] The Diversity Committee will review and assess the adequacy of its charter and recommend changes as necessary.
+### [p011_c0003] Recommitment to Equal Employment Opportunity ("EEO")
+[p011_c0004] Each year, the MTA disseminates Policies addressing the Americans with Disabilities Act ("ADA"), Sexual and Other Discriminatory Harassment Prevention and EEO in order to reaffirm MTA's commitment to ensuring a workplace environment free from illegal discrimination and to ensure continued compliance with all applicable laws and regulations. The Department of Diversity and Civil Rights will present the 2024 EEO Policy.
+[p011_c0005] All Agency Title VI Policy Statement presented for approval
+[p011_c0006] All Agency Title VI Procedure presented for approval
+### [p011_c0007] June 2023
+### [p011_c0008] 1 st Quarter 2023 Report
+[p011_c0009] The Department of Diversity and Civil Rights will present 1 st quarter 2023 update on MTA Agency-wide EEO, and M/W/DBE and SDVOB contract compliance activities.
+### [p011_c0010] September 2023
+### [p011_c0011] 2 nd Quarter 2023 Report
+[p011_c0012] The Department of Diversity and Civil Rights will present 2 nd quarter 2023 update on MTA Agency-wide EEO, and M/W/DBE and SDVOB contract compliance activities.
+[p011_c0013] Title VI Program Approval
+### [p011_c0014] Recruitment Strategies
+[p011_c0015] Staff from the Department of Diversity and Civil Rights, MTAHQ and MTA Agencies will present recruitment strategies to address underutilization of minorities and women in the workforce.
+### [p011_c0016] December 2023
+### [p011_c0017] 3 rd Quarter 2023 Report
+[p011_c0018] The Department of Diversity and Civil Rights will present 3 rd quarter 2023 update on MTA Agency-wide EEO and M/W/DBE and SDVOB contract compliance activities.
+### [p011_c0019] Status Report on MTA Inter-Agency M/W/DBE and SDVOB Task Force
+[p011_c0020] The Department of Diversity and Civil Rights report will address progress made by the Task Force to improve M/W/DBE and SDVOB participation.
+[p011_c0021] _Master Page # 11 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 12
+
+### [p012_c0001] 2024 Diversity Committee Work Plan
+[p012_c0002] The Department of Diversity and Civil Rights will present an updated Diversity Committee Work Plan for 2024.
+[p012_c0003] _Master Page # 12 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 13
+
+### [p013_c0001] Metropolitan Transportation Authority Department of Diversity and Civil Rights
+### [p013_c0002] Executive Summary
+[p013_c0003] December 19, 2022
+> [p013_c0004] The MTA logo, consisting of the letters 'MTA' in white inside a dark grey circle.
+[p013_c0005] _Master Page # 13 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 14
+
+### [p014_c0001] Master Page # 14 of 102 - Diversity Committee Meeting 12/19/2022
+### [p014_c0002] Executive Summary
+### [p014_c0003] Fiscal Year Program Highlights
+### [p014_c0004] Largest Awarded MWDBE/SDVOB Contracts
+[p014_c0005] October 1, 2021 - September 30, 2022
+### [p014_c0006] Top Prime Awards*
+[p014_c0007] WBE: PruTech Solutions, Inc. $32M**
+[p014_c0008] MBE: Infinity Contracting Services Corp. $19M***
+[p014_c0009] DBE: ExterNetworks Inc. $8M
+[p014_c0010] SDVOB: American Veteran Enterprise $751K
+### [p014_c0011] Top Subcontract Awards*
+[p014_c0012] DBE: Southeast Bridge FL Corp $41M
+[p014_c0013] WBE: Knowledge Builders Inc. $18M
+[p014_c0014] MBE: Penda Aiken Inc. $14.5M
+[p014_c0015] SDVOB: Disabled Veterans Call Center, LLC $7M
+[p014_c0016] * For MWBE and SDVOB, the reporting period is from April 2022 through September 2022.
+[p014_c0017] For DBE, the reporting period is from October 2021 through September 2022.
+[p014_c0018] ** Approved in the November 2022 MTA Board Meeting
+[p014_c0019] *** This award will be approved in the December 2022 MTA Board Meeting.
+> [p014_c0020] The logo for the Metropolitan Transportation Authority (MTA) is located in the bottom left corner. It consists of a dark grey circle with the letters 'MTA' in white, bold, sans-serif font.
+
+## Page 15
+
+### [p015_c0001] Master Page # 15 of 102 - Diversity Committee Meeting 12/19/2022
+### [p015_c0002] Executive Summary
+### [p015_c0003] MWBE Payments on New York State & FTA Funded Projects
+### [p015_c0004] Fiscal Years 2008-2022
+[p015_c0005]
+
+```text
+FISCAL YEAR BLACK HISPANIC NATIVE AMERICAN ASIAN PACIFIC SUBCONTINENTAL ASIAN NON-MINORITY WOMEN TOTAL MWBE PAYMENTS FY 2008-2009 $22,997,889.00 $10,789,785.00 $409,845.00 $2,613,103.00 $21,791,150.00 $49,466,671.00 $108,068,443.00 FY 2009-2010 $13,412,016.98 $23,004,082.24 $134,944.00 $2,574,829.57 $22,605,045.00 $45,066,780.22 $106,797,698.01 FY 2010-2011 $33,548,374.68 $30,723,577.48 $1,050,303.00 $5,838,404.16 $31,776,113.32 $50,325,274.32 $153,262,046.96 FY 2011-2012 $31,502,828.98 $22,284,252.26 $76,587.28 $11,535,938.01 $26,617,966.47 $66,120,015.69 $158,137,588.69 FY 2012-2013 $37,872,426.77 $40,167,208.84 $304,861.33 $22,837,234.15 $41,808,480.14 $117,661,361.80 $260,651,573.03 FY 2013-2014 $30,937,669.41 $65,149,893.67 $474,918.24 $17,109,952.54 $40,067,463.44 $120,307,202.00 $274,047,099.30 FY 2014-2015 $29,495,620.40 $72,537,019.01 $818,352.99 $17,858,878.26 $44,094,707.18 $80,325,580.03 $245,130,157.87 FY 2015-2016 $30,991,949.73 $59,743,443.71 $1,161,070.94 $17,286,207.25 $81,210,777.69 $125,685,530.90 $316,078,980.22 FY 2016-2017 $50,386,932.00 $72,810,281.00 $917,341.00 $23,633,075.00 $86,404,814.00 $152,928,538.00 $387,080,981.00 FY 2017-2018 $68,751,010.00 $101,464,577.00 $668,029.00 $34,591,552.00 $207,125,876.00 $239,387,497.00 $651,988,541.00 FY 2018-2019 $109,435,377.18 $195,211,228.06 $880,201.48 $56,945,643.83 $240,382,948.95 $339,787,471.61 $942,642,871.11 FY 2019-2020 $140,401,282.17 $259,551,003.34 $203,785.92 $89,687,800.35 $231,675,444.03 $355,171,210.51 $1,076,690,526.32 FY 2020-2021 $136,662,235.65 $230,548,687.62 $128,208.57 $110,994,054.04 $203,712,718.04 $408,741,805.55 $1,090,787,709.47 FY 2021-2022 $126,404,561.79 $243,509,759.32 $380,315.45 $98,595,821.09 $241,340,260.71 $344,056,423.56 $1,054,287,141.92 FY 2022-2023 Quarters 1 & 2 * $45,659,308.16 $118,381,425.48 $143,360.55 $40,837,065.52 $90,843,979.56 $178,774,458.46 $474,639,597.73 TOTALS $908,459,482.90 $1,545,876,224.03 $7,752,124.75 $552,939,558.77 $1,611,457,744.53 $2,673,805,820.65 $7,300,290,955.63
+```
+[p015_c0006] _* First two quarters of FY 2223 (April -September 2022)_
+
+## Page 16
+
+### [p016_c0001] Executive Summary
+### [p016_c0002] □ MWBE and SDVOB Payments
+### [p016_c0003] □ NYS FY 2022/23 (April 2022 – September 2022)
+- [p016_c0004] ▪ MWBE Payments on NYS Funded Projects - $416,160,136 ▪ MWBE Payments on FTA Funded Projects - $58,479,462 ▪ SDVOB Payments - $12,157,719 ▪ MWBE and SDVOB Total Payments: $486,797,317
+### [p016_c0005] □ NYS FY 2021/22 (April 2021 – March 2022)
+- [p016_c0006] ▪ MWBE Payments on NYS Funded Projects - $826,030,448 ▪ MWBE Payments on FTA Funded Projects - $228,256,694 ▪ SDVOB Payments - $39,407,521 ▪ MWBE and SDVOB Total Payments: $1,093,694,663
+[p016_c0007] * The MTA does not receive credit for MWBE payments to FTA projects
+> [p016_c0008] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+[p016_c0009] _Master Page # 16 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 17
+
+### [p017_c0001] Executive Summary
+### [p017_c0002] An Example of MWBE Discretionary Success
+[p017_c0003] IT Discretionary Consulting Contract No. 14357
+[p017_c0004] April 2022 – September 2022
+[p017_c0005] Total Number of Awards- 65
+[p017_c0006] Total Value of Awards- $9.8 million
+[p017_c0007] Inception to Date
+[p017_c0008] Total Number of Awards- 998
+[p017_c0009] Total Value of Awards- $173 million
+> [p017_c0010] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark grey circle.
+[p017_c0011] _Master Page # 17 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 18
+
+### [p018_c0001] Master Page # 18 of 102 - Diversity Committee Meeting 12/19/2022
+### [p018_c0002] Executive Summary
+### [p018_c0003] □ Business & Diversity Initiatives Unit
+[p018_c0004] As a result of DDCR’s outreach efforts during the New York State FY 2021-22, 672 firms were certified and received a total of $196 million in prime awards and $178 million subcontract awards .
+[p018_c0005]
+
+```text
+Firms Certified ** 672 MBE* 390 WBE* 260 DBE* 180 SDVOB* 109
+```
+[p018_c0006]
+
+```text
+Contracts Awarded Prime Contracts Awarded 312 Subcontracts Awarded 164 Total Contracts of Awarded ** 476
+```
+[p018_c0007]
+
+```text
+Contracts Awarded Prime Contracts Awarded $196M Subcontracts Awarded $178M Total Value of Contracts Awarded** $374M
+```
+[p018_c0008] * Firms can have multiple certifications
+[p018_c0009] ** Certifications and Contract Awards until September 2022
+
+## Page 19
+
+### [p019_c0001] Master Page # 19 of 102 - Diversity Committee Meeting 12/19/2022
+### [p019_c0002] Executive Summary
+### [p019_c0003] ❑ DBE Certification Activity Report
+[p019_c0004] During 2021, there was a total of 87 new applications received and a total of 57 firms were certified. The average processing time to certify firms in 2021 is 28.6 days . This year, from January to September, a total of 58 new applications were received and a total of 39 firms were certified. The average processing time to certify firms in 2022 is 54.95 days .
+### [p019_c0005] ❑ Status:
+[p019_c0006] There is a slight decrease in new applications received.
+### [p019_c0007] ❑ Trends
+- [p019_c0008] Upward Constant Downward – A slight decrease in applications received.
+### [p019_c0009] ❑ Strategy for Improvement
+[p019_c0010] Increase outreach events.
+> [p019_c0011] The logo for the Metropolitan Transportation Authority (MTA) is located in the bottom left corner. It consists of a dark grey circle with the letters 'MTA' in white, bold, sans-serif font.
+
+## Page 20
+
+### [p020_c0001] Executive Summary
+### [p020_c0002] □ Small Business Development Program (as of September 30, 2022)
+### [p020_c0003] The Program – Current Status
+- [p020_c0004] □ Program Year 2021, SBDP awarded 67 contracts totaling $70.5 million □ Program Year 2022 Third Quarter, SBDP awarded 20 contracts totaling $12.1 million (currently there are 32 awards totaling $22.5 million through November 23, 2022) □ The Small Business Development Program (SBDP) awarded 536 contracts totaling $570 million . □ SBDP successfully recruited twenty-four (24) Service-Disabled Veteran-Owned Business (SDVOB) certified firms. Five (5) firms were awarded seven (7) contracts totaling $4 million . □ The Small Business Development Loan Program issued 140 loans totaling $19.2 million . □ The Small Business Development Bond Program has assisted Tier 2 and SBFP firms in securing $560 million in surety bonds. □ The Small Business Development Training Program – more than 1,070 firms have participated in the training since the inception of the program.
+> [p020_c0005] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark grey circle.
+
+## Page 21
+
+### [p021_c0001] Executive Summary
+### [p021_c0002] ❑ Small Business Development Program (continued)
+[p021_c0003] ❑ Status: Program is achieving its goals.
+### [p021_c0004] ❑ Trends
+- [p021_c0005] Upward Constant Downward
+[p021_c0006] ❑ Strategies for improvements: n/a
+> [p021_c0007] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+[p021_c0008] _Master Page # 21 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 22
+
+### [p022_c0001] Executive Summary
+### [p022_c0002] ❑ MWDBE and SDVOB Contract Compliance
+### [p022_c0003] ❑ 30% NY State Fiscal Year 2022-2023 MWBE Goal
+- [p022_c0004] ❑ 13% MWBE participation in contract awards* ❑ 36% MWBE participation in contract payments*
+### [p022_c0005] ❑ 6% NY State Fiscal Year 2022-2023 SDVOB Goal
+- [p022_c0006] ❑ 5% SDVOB participation in contract awards* ❑ 3% SDVOB participation in contract payments*
+### [p022_c0007] ❑ 20% Federal Fiscal Year 2021-2022 DBE Goal
+- [p022_c0008] ❑ 17% DBE participation in contract awards ❑ 15% DBE participation in contract payments on ongoing contracts ❑ 18.5% DBE participation on payments on closed contracts
+[p022_c0009] * First two quarters of the NYS Fiscal Year 2022-2023
+> [p022_c0010] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+[p022_c0011] _Master Page # 22 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 23
+
+### [p023_c0001] Executive Summary
+### [p023_c0002] ❑ MWDBE and SDVOB Contract Compliance (Continued)
+- [p023_c0003] ❑ Currently, DDCR monitors more than 1,103 contracts for MWDBE and SDVOB goal compliance. ❑ During the first three quarters of 2022, DDCR conducted 522 site visits for MWDBE and SDVOB contract compliance. ❑ Monthly Average: 58 ❑ During the first three quarters of 2022, DDCR has closed 106 contracts. ❑ Monthly Average: 11.7
+> [p023_c0004] The logo for the Metropolitan Transportation Authority (MTA) is located in the bottom left corner. It consists of a dark grey circle with the letters 'MTA' in white, bold, sans-serif font.
+[p023_c0005] _Master Page # 23 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 24
+
+### [p024_c0001] Master Page # 24 of 102 - Diversity Committee Meeting 12/19/2022
+### [p024_c0002] Executive Summary
+### [p024_c0003] ❑ MWDBE and SDVOB Contract Compliance (Continued)
+[p024_c0004] ❑ Status: DBE/SDVOB goals are not being met
+### [p024_c0005] ❑ Trends
+- [p024_c0006] ☑ Upward: MWBE participation on contract payments ☐ Constant ☑ Downward: DBE participation on contract awards SDVOB participation on contract payments
+### [p024_c0007] ❑ Strategies for Improvement:
+- [p024_c0008] ❑ DDCR is expanding on building relationships with various women, veteran and minority trade groups and associations to identify qualified firms in the minority business community. ❑ Design smaller contracts for greater participation by MWDBE/SDVOBs. ❑ Hired additional MWDBE/SDVOB Contract Compliance staff.
+> [p024_c0009] The logo for the Metropolitan Transportation Authority (MTA) is located in the bottom left corner. It consists of a dark grey circle with the letters 'MTA' in white, bold, sans-serif font.
+
+## Page 25
+
+### [p025_c0001] Master Page # 25 of 102 - Diversity Committee Meeting 12/19/2022
+### [p025_c0002] Executive Summary
+### [p025_c0003] □ Capital Projects
+### [p025_c0004] □ Federal DBE Participation Goal: 20% (Federal Fiscal Year 2022 (October 2021 to September 2022))
+- [p025_c0005] □ Total Awards: $2B □ Total DBE Awards: $160M (7%) ** □ Total Payments: $750M □ Total DBE Payments: $126M (17%)
+### [p025_c0006] □ New York State MBE Participation Goal: 15% (First and Second Quarters of NYS Fiscal Year 2022-2023 (April 2022 – September 2022))
+- [p025_c0007] □ Total Awards: $61M □ Total MBE Awards: 17M (28%) □ Total Payments: $723M □ Total MBE Payments: $108M (15%)
+### [p025_c0008] □ New York State WBE Participation Goal: 15% (First and Second Quarters of NYS Fiscal Year 2022-2023 (April 2022 – September 2022))
+- [p025_c0009] □ Total Awards: $61M □ Total WBE Awards: $4M (7%) □ Total Payments: $723M □ Total WBE Payments: $105M (14%)
+### [p025_c0010] □ Service-Disabled Veteran-Owned Business Participation Goal: 6% (First and Second Quarters of NYS Fiscal Year 2022-2023 (April 2022 – September 2022))
+- [p025_c0011] □ Total Awards: $57M □ Total SDVOB Awards $2M (4%) □ Total Payments: $281M □ Total SDVOB Payments: $4M (1%)
+[p025_c0012] *Report is based on original contract amount provided by MTA Agencies for third-party design and construction contracts (excluding rolling stock and signals).
+[p025_c0013] ** Total does not include TBDs on Design Build contracts. If included the total would increase to $450.8M and 20% DBE inclusion.
+
+## Page 26
+
+### [p026_c0001] Executive Summary
+### [p026_c0002] Capital Projects (Continued)
+- [p026_c0003] ❑ Status: DBE/SDVOB goals are not being met ❑ Trends ❑ Upward ✅ Constant : WBE and SDVOB participation on contract payments ✅ Downward: MBE participation on contract payments DBE participation on contract awards ❑ Strategies for Improvement: ❑ DDCR is expanding on building relationships with various women, veteran and minority trade groups and associations to identify qualified firms in the minority community. ❑ Hired additional MWDBE/SDVOB contract compliance staff ❑ Work with Procurement to identify Prime opportunities for DBEs
+> [p026_c0004] The logo for the Metropolitan Transportation Authority (MTA) is located in the bottom left corner. It consists of a dark grey circle with the letters 'MTA' in white, bold, sans-serif font.
+[p026_c0005] _Master Page # 26 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 27
+
+### [p027_c0001] Master Page # 27 of 102 - Diversity Committee Meeting 12/19/2022
+### [p027_c0002] Executive Summary
+### [p027_c0003] □ MTA All Agency Legal Fees (April 2022 – September 2022)
+> [p027_c0004] A 3D pie chart illustrating the distribution of MTA All Agency Legal Fees from April 2022 to September 2022. The chart is divided into three segments: a large light blue segment representing 'TOTAL LEGAL FEES' at $21,946,897, an orange segment for 'MBE' at 7%, and a light green segment for 'WBE' at 8%. A legend to the right identifies these segments. Below the chart, text indicates the 15% MBE GOAL and 15% WBE GOAL. Category Percentage Amount MBE 7% $1,618,686 WBE 8% $1,648,403 TOTAL LEGAL FEES 85% $21,946,897
+[p027_c0005] Actual MBE Participation = $1,618,686 or 7% Actual WBE Participation = $1,648,403 or 8%
+> [p027_c0006] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark grey circle.
+
+## Page 28
+
+### [p028_c0001] Executive Summary
+### [p028_c0002] MTA All Agency Legal Fees (Continued)
+- [p028_c0003] ❑ Status: MWBE goals are not being met ❑ Trends ✅ Upward: MBE participation ✅ Constant: WBE participation ❑ Downward ❑ Strategies for Improvement: ❑ Work with the MTA's General Counsel in increasing MWBE results.
+> [p028_c0004] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+[p028_c0005] _Master Page # 28 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 29
+
+### [p029_c0001] Master Page # 29 of 102 - Diversity Committee Meeting 12/19/2022
+### [p029_c0002] Executive Summary
+### [p029_c0003] □ Financial Services
+### [p029_c0004] MTA All Agency Underwriter Fees (April 2022 – September 2022)
+> [p029_c0005] A 3D pie chart illustrating the distribution of MTA All Agency Underwriter Fees from April 2022 to September 2022. The chart is divided into four segments: 'ALL OTHER FEES' (orange, 66%), 'WBE' (green, 17%), 'MBE' (blue, 11%), and 'SDVOB' (pink, 5%). A legend to the right of the chart maps these colors to their respective categories. Category Percentage ALL OTHER FEES 66% WBE 17% MBE 11% SDVOB 5%
+[p029_c0006] Actual WBE Participation = $2,289,885 or 17% Actual MBE Participation = $1,495,906 or 11% Actual SDVOB Participation = $738,617 or 5% All Other Underwriting Fees = $8,968,041 or 66% Total Underwriting Fees = $3,226,028
+[p029_c0007] * Numbers may not total to 100% due to rounding
+> [p029_c0008] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark grey circle.
+
+## Page 30
+
+### [p030_c0001] Executive Summary
+### [p030_c0002] Financial Services (Continued)
+- [p030_c0003] ❑ Status: MBE and SDVOB goals are not being met ❑ Trends ☑ Upward: WBE participation ☐ Constant ☑ Downward: MBE and SDVOB participation ❑ Strategies for Improvement: ❑ Work with the MTA's CFO and Deputy Chief, Financial Services in increasing MWBE results.
+> [p030_c0004] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+[p030_c0005] _Master Page # 30 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 31
+
+### [p031_c0001] Executive Summary
+### [p031_c0002] Asset Fund Managers – MWBE Participation Combined Plans (as of September 2022)
+- [p031_c0003] • Total assets managed by MWBEs: $2.1 billion ; or 26% of total assets • Majority of assets are in traditional asset classes • Traditional assets managed by MWBEs: $1.99 billion ; or 36% of traditional assets • MWBE firms manage • 62% of US Equities • 27% of Real Estate • 20% of Non-US Equities • 43% of Fixed Income • 6 % of Opportunistic • Alternative investments managed by MWBE's: $125 million ; or 5% of alternative investments
+> [p031_c0004] The logo for the Metropolitan Transportation Authority (MTA) is located in the bottom left corner. It consists of a dark grey circle with the letters 'MTA' in white, bold, sans-serif font.
+[p031_c0005] _Master Page # 31 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 32
+
+### [p032_c0001] Master Page # 32 of 102 - Diversity Committee Meeting 12/19/2022
+### [p032_c0002] Executive Summary
+- [p032_c0003] ❑ EEO (full report on pages 89-102) ❑ MTA's overall workforce is currently comprised of 71,113 employees; of which 13,394 (19%) are Females,* 51,030 (72%) are Minorities, 2,061 (3%) are Veterans,* and 564 (1%) are People with Disabilities.** A breakdown of the MTA-wide workforce is detailed on page 92. ❑ MTA Agencies hired 5,364 new employees into the organization; of which 1,243 (23%) are females,* 4,317 (80%) are Minorities, 151 (3%) are veterans,** and 38 (1%) are People With Disabilities. ❑ During the third quarter of 2022, MTA Agencies handled a total of 132 EEO complaints filed since January 1 st ; of which 83 were internal and 49 were external. During the same period in 2021, MTA Agencies handled a total of 121 EEO complaints; of which 87 were internal and 34 were external complaints. ❑ As of September 30, 2022, representation of females and the representation of minorities have increased by one percentage point, when compared to September 30, 2021.
+> [p032_c0004] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark grey circle.
+[p032_c0005] *Includes minorities, non-minorities, and veterans
+[p032_c0006] **We believe that there are more people with disabilities in our workforce, but they have not self-identified as such.
+
+## Page 33
+
+### [p033_c0001] Executive Summary
+### [p033_c0002] EEO (Continued)
+- [p033_c0003] ❑ Status: While the workforce size has increased by 2% (1,398) since January 1, 2022, the overall diversity composition of our workforce has slightly increased, yet it has remained constant for some employment groups. ❑ Trends ☑ Upward ❑ Downward ☑ Constant ❑ Strategies for Improvement: ❑ Continue to coordinate with People to identify retention strategies ❑ Continue with position re-classifications to allow for MTA-wide analyses, reporting of employment activities
+> [p033_c0004] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+[p033_c0005] _Master Page # 33 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 34
+
+### [p034_c0001] Metropolitan Transportation Authority Department of Diversity and Civil Rights
+[p034_c0002] Business and Diversity Initiatives
+[p034_c0003] December 19, 2022
+> [p034_c0004] The MTA logo, consisting of the letters 'MTA' in white inside a dark grey circle.
+[p034_c0005] _Master Page # 34 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 35
+
+### [p035_c0001] Master Page # 35 of 102 - Diversity Committee Meeting 12/19/2022
+### [p035_c0002] Business and Diversity Initiatives
+### [p035_c0003] October 2022
+- [p035_c0004] 12 th Annual NYS MWBE Forum, Albany, NY (MJG Panelist) NY/NJ USDOT Bonding Education Program (MJG Speaker) MTA DBE Certification Workshop City & State NY: Government Procurement Conference (MJG Panelist) COMTO NY | Legislative Breakfast: Building Back New York Together Gilbane Event: Capital Projects as Engines of Equity Silicon Harlem's C-Better Foundation's 9 th Annual Next Gen Tech Conference: FuturRE:ADY (MJG Panelist) Engine to Ignite NYC – Marketplace Perspective: M/WBE and Small Business Growth, Certification, & Funding Competitive Edge Conference: Back to Business 2.0 (MJG Panelist)
+### [p035_c0005] November 2022
+- [p035_c0006] Long Island Association Roundtable NAMC 53 rd Annual Conference | Policy Changes in MWBE/DBE Participation – Biden Infrastructure Bill (MJG Panelist) LaGuardia Business Services: Fall 2022 Government & Business Expo (MJG keynote Speaker) SOMOS Puerto Rico Conference Northeast Small Business Transportation Resources Center Regional DBE Opportunity Summit Veterans in Economic Transition Conference (VETCON)
+> [p035_c0007] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+
+## Page 36
+
+### [p036_c0001] Business and Diversity Initiatives
+### [p036_c0002] December 2022
+- [p036_c0003] MTA New Firm Orientation Session New Millennium Virtual Business Matchmaking Event
+> [p036_c0004] The MTA logo, consisting of the letters 'MTA' in white, bold, sans-serif font, is centered within a dark gray circle.
+[p036_c0005] _Master Page # 36 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 37
+
+### [p037_c0001] Metropolitan Transportation Authority Department of Diversity and Civil Rights
+### [p037_c0002] DBE Certification Activity Report
+[p037_c0003] December 19, 2022
+> [p037_c0004] The logo for the Metropolitan Transportation Authority (MTA) is located in the bottom left corner. It consists of a dark grey circle with the letters 'MTA' in white, bold, sans-serif font.
+[p037_c0005] _Master Page # 37 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 38
+
+### [p038_c0001] Master Page # 38 of 102 - Diversity Committee Meeting 12/19/2022
+### [p038_c0002] MTA DBE Certification Unit
+### [p038_c0003] CERTIFICATION ACTIVITY REPORT YEAR 2021 - 2022
+[p038_c0004]
+
+```text
+2021 2022 ** New Applications Received 87 58 DBE Firms Certified in Current Year 57 39 DBE Firms Certified in Subsequent Year 0 0 Denied 0 2 Returned 3 9 Withdrawn 17 8 Application Closed 0 0 Decertified 0 0 Rejected 1 0 Delisted 1 0 Pending* 8* 0
+```
+[p038_c0005] * Applications pending from prior year(s)
+[p038_c0006] ** 2022 Data is up to September 30, 2022
+[p038_c0007]
+
+```text
+2021 2022 ** Annual Submissions Processed (Recertifications) 725 506 Average Day for Firms to be Certified 28.6 54.96
+```
+
+## Page 39
+
+### [p039_c0001] Metropolitan Transportation Authority Department of Diversity and Civil Rights
+[p039_c0002] MTA Small Business Development Program Business Development Initiatives and MWDBE/SDVOB Results
+[p039_c0003] December 19, 2022
+> [p039_c0004] The MTA logo, consisting of the letters 'MTA' in white inside a dark grey circle.
+[p039_c0005] _Master Page # 39 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 40
+
+### [p040_c0001] Small Business Development Program
+### [p040_c0002] Mission Statement
+[p040_c0003] To develop and grow emerging contractors through classes, on-the-job training and technical assistance on prime contracts with MTA Agencies, thereby creating a larger pool of diverse qualified contractors who can compete for, and complete MTA construction projects safely, timely and within budget.
+> [p040_c0004] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+[p040_c0005] _Master Page # 40 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 41
+
+### [p041_c0001] Elements of the SBDP
+- [p041_c0002] ➤ Prime Contract Bid Opportunities up to $3 million ➤ Business Management, Leadership and Technical Training ➤ Access to Working Capital and Surety Bonding ➤ Comprehensive business consulting services ➤ Experience working on MTA Projects up to $3 million ➤ Fast-Track Payments – 10 Business Days
+> [p041_c0003] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+[p041_c0004] _Master Page # 41 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 42
+
+### [p042_c0001] SBDP Represents NY Metro Region
+### [p042_c0002] Small Business Mentoring Program All Tiers
+[p042_c0003]
+
+```text
+Certification MBE 103 WBE 25 DBE 48 SDVOB 13 Non-Certified 72
+```
+[p042_c0004] firms may have multiple certifications
+[p042_c0005] _196 Prequalified Firms (as of September 30, 2022)_
+> [p042_c0006] A 3D pie chart illustrating the distribution of 196 prequalified firms across various New York metropolitan regions. The chart is divided into ten segments, each representing a region or category. The segments are color-coded and labeled with the region name and the number of firms. The largest segment is Queens, followed by Kings, Nassau, and Non-NYS. Other regions include Bronx, Westchester, Richmond, Suffolk, New York, and Orange. Region Number of Firms Queens 61 Kings 38 Nassau 24 Non-NYS 25 Bronx 17 Westchester 7 Richmond 7 Suffolk 7 New York 8 Orange 2
+> [p042_c0007] The logo for the Metropolitan Transportation Authority (MTA), featuring the letters 'MTA' in white on a blue circular background.
+[p042_c0008] _Master Page # 42 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 43
+
+### [p043_c0001] Master Page # 43 of 102 - Diversity Committee Meeting 12/19/2022
+### [p043_c0002] SBDP Tier Participants
+> [p043_c0003] Category Sub-Category Count Emerging Contractors Emerging Contractors 35 Tier 1 35 Tier 1 Tier 1 91 Tier 1 35 Tier 2 Tier 2 40 Tier 2 6 Federal Program Tier 2 & SBFP 18 Tier 2 & SBFP 6 Annotations: - 126 Firms in Tier 1 (Total for Tier 1: 91 + 35 = 126) - 35 Emerging Contractors are in Tier 1 (Total for Emerging Contractors: 35) - 46 Firms in Tier 2 (Total for Tier 2: 40 + 6 = 46) - 24 Firms in SBFP (Total for Federal Program: 18 + 6 = 24) - 5 Contractors are in both Tier 2 & SBFP (Total for Federal Program: 18 + 6 = 24)
+[p043_c0004] as of September 30, 2022
+
+## Page 44
+
+### [p044_c0001] Master Page # 44 of 102 - Diversity Committee Meeting 12/19/2022
+### [p044_c0002] SBDP Tiers are also Diverse
+[p044_c0003] _Ethnicity of Prequalified Contractors in Program Tiers_
+> [p044_c0004] Ethnicity Emerging Contractors Tier 1 Tier 2 Federal Program Total Firms Native American 0 0 0 0 0 Asian Pacific 2 4 3 3 12 Hispanic 4 10 5 5 24 Black 5 8 5 6 34 Caucasian 2 5 4 6 27 Subcontinent Asian 10 30 20 19 99
+[p044_c0005] Emerging Contractors Tier 1 Tier 2 Federal Program
+[p044_c0006] as of September 30, 2022
+
+## Page 45
+
+### [p045_c0001] Master Page # 45 of 102 - Diversity Committee Meeting 12/19/2022
+### [p045_c0002] SBDP Certifications
+### [p045_c0003] Certifications of Prequalified Contractors in Program Tiers
+> [p045_c0004] Program Tier Emerging Contractors Tier 1 Tier 2 Federal Program Total Firms MBE 18 35 30 10 103 WBE 5 10 5 5 25 DBE 5 15 10 8 48 SDVOB 5 5 3 5 13 Non-certified 10 30 20 12 72
+[p045_c0005] firms may have multiple certifications
+[p045_c0006] Emerging Contractors Tier 1 Tier 2 Federal Program
+[p045_c0007] as of September 30, 2022
+
+## Page 46
+
+### [p046_c0001] SBDP is Exceeding MWDBE Goals
+- [p046_c0002] ➤ MTA MWBE SBMP Tier 1/Tier 2 Goal – 30% ➤ MTA DBE Goal – 20% ➤ MTA SDVOB Goal - 6% (Initiated during Program Year 7) ➤ Tier 1 MWBE Achievements ➤ 68% - contracts awarded to NYS-certified MWBEs ➤ 68% - contract dollars awarded to NYS-certified MWBEs ➤ Tier 2 MWBE Achievements ➤ 87% - contracts awarded to NYS-certified MWBEs ➤ 85% - contracts dollars awarded to NYS-certified MWBEs ➤ Federal Program DBE Achievements ➤ 60% - contracts awarded to DBEs ➤ 61% - contracts dollars awarded to DBEs ➤ SDVOB Achievements ➤ 1% - contracts awarded to SDVOBs ➤ 1% - contract dollars awarded to SDVOBs
+> [p046_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the bottom left corner. It consists of a dark grey circle with the letters 'MTA' in white, bold, sans-serif font.
+[p046_c0004] _Master Page # 46 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 47
+
+### [p047_c0001] Master Page # 47 of 102 - Diversity Committee Meeting 12/19/2022
+### [p047_c0002] SBDP Prime Contract Opportunities
+> [p047_c0003] Annual and Cumulative Awards * Period Annual Awards (Millions) Cumulative Awards (Millions) PY01 - $14.6M $15M $15M PY02 - $16.2M $31M $46.2M PY03 - $32.7M $64M $110.2M PY04 - $49.9M $113M $223.1M PY05 - $80.0M $193M $416.1M PY06 - $30.2M $224M $640.1M PY07 - $35.1M $259M $899.1M PY08 - $74.1M $333M $1,232.1M PY09 - $27.0M $360M $1,592.1M PY10 - $91.1M $451M $2,043.1M PY11 - $34.9M $485.8M $2,528.9M PY12 - $70.5M $556.3M $3,085.2M PY13 Q3 - $12.10M $568.4M $3,197.3M * Annual Awards and Cumulative Awards are reported above as the total of all Contract Awards plus all Change Orders
+[p047_c0004] Program Year 1-13 awards through September 30, 2022
+
+## Page 48
+
+### [p048_c0001] Master Page # 48 of 102 - Diversity Committee Meeting 12/19/2022
+### [p048_c0002] SBDP Contract Awards
+### [p048_c0003] Total SBDP Contract Awards by Ethnic Categories
+[p048_c0004]
+
+```text
+Legend Awards Category Subcontinent Asian $317.6M Caucasian $124.8M Black $ 67.2M Hispanic $ 44.2M Asian Pacific $ 14.6M Total SBDP Awards $568.4M (Awards in Millions of Dollars)
+```
+> [p048_c0005] SBDP Contract Awards by Ethnic Categories Category Awards ($M) Percentage Subcontinent Asian 317.6 55.9% Caucasian 124.8 21.9% Black 67.2 11.8% Hispanic 44.2 7.8% Asian Pacific 14.6 2.6%
+[p048_c0006] Contract Awards through September 30, 2022
+
+## Page 49
+
+### [p049_c0001] Master Page # 49 of 102 - Diversity Committee Meeting 12/19/2022
+### [p049_c0002] SBDP Loan Program
+[p049_c0003] Loan values shown are through September 30, 2022
+[p049_c0004]
+
+```text
+Year 1 1 Loan totaling $ 100,000 Year 2 5 Loans totaling $ 687,500 Year 3 9 Loans totaling $ 900,000 Year 4 27 Loans totaling $2,990,000 Year 5 16 Loans totaling $3,020,000 Year 6 14 Loans totaling $2,142,500 Year 7 18 Loans totaling $2,770,500 Year 8 13 Loans totaling $2,155,000 Year 9 8 Loans totaling $ 697,000 Year 10 9 Loans totaling $1,378,000 Year 11 10 Loans totaling $1,391,000 Year 12 10 Loans totaling $ 930,000
+```
+[p049_c0005] Total 140 Loans Totals $19,161,500
+[p049_c0006] Maximum Loan Available: Tier 1 - up to $150,000 SBFP and Tier 2 - up to $900,000
+[p049_c0007] Note: On January 1, 2019, SBDP began reporting on a Calendar year instead of a Fiscal year. Year 9 represents activity from August 1 st 2018 to December 31 st , 2018 Year 12 reflects calendar year January 1 through December 31 st , 2021. Loans for contracts awarded in calendar year 13 were approved after September 30 th , 2022.
+> [p049_c0008] Year Number of Loans 1 1 2 5 3 9 4 27 5 16 6 14 7 18 8 13 9 8 10 9 11 10 12 10
+> [p049_c0009] Year Total Loan Value (K) 1 $100.0 K 2 $687.5 K 3 $900.0 K 4 $2,990.0 K 5 $3,020.0 K 6 $2,142.5 K 7 $2,770.5 K 8 $2,155.0 K 9 $697.0 K 10 $1,378.0 K 11 $1,391.0 K 12 $930.0 K
+
+## Page 50
+
+### [p050_c0001] SBDP Awards
+[p050_c0002]
+
+```text
+➤ Program Year Tier Dollars Awarded ➤ 2010 – 2022 SBMP-Tier 1 Awards total $213.1 Million ➤ 2015 – 2022 SBMP-Tier 2 Awards total $201.2 Million ➤ 2013 – 2022 SBFP Awards total $154.1 Million
+```
+[p050_c0003] Award values shown are through September 30, 2022
+[p050_c0004] All Tiers Awards total $568.4 Million
+> [p050_c0005] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark grey circle.
+[p050_c0006] _Master Page # 50 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 51
+
+### [p051_c0001] SBDP Facilitates Bonding and Growth
+- [p051_c0002] ➤ The Small Business Development Bond Program has assisted Tier 2 and SBFP firms in securing $560 million in surety bonds. ➤ 1,447 bid opportunities in the Tier 2 and Federal programs ➤ 188 contract awards in the Tier 2 and Federal programs ➤ Ongoing consultation with contractors to maximize bidding opportunities by increasing bonding capacity ➤ Engaging Tier 1 contractors 24-36 months before graduation to ensure access to bonding and eligibility for the Tier 2 and the Federal Program
+> [p051_c0003] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+[p051_c0004] _Master Page # 51 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 52
+
+### [p052_c0001] TRAINING IS INTEGRAL TO SUCCESS
+- [p052_c0002] ➤ Over 270 classroom training dates completed from July 2010 through September 2022 ➤ Over 2,050 hours of classroom training provided from July 2010 through September 2022 ➤ More than 1,070 firms have participated in the training since the program's inception ➤ Over 500 of these firms have applied to and prequalified into the SBMP ➤ All prequalified contractors complete a mandatory 18-session training program ➤ Over 25 course attendees were registered for the recent training sessions ➤ Assisting them through the application and pre-qualification process
+> [p052_c0003] The logo for the Metropolitan Transportation Authority (MTA) is located in the bottom left corner. It consists of a dark grey circle with the letters 'MTA' in a bold, white, sans-serif font.
+[p052_c0004] _Master Page # 52 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 53
+
+### [p053_c0001] Training Classes Continue to Evolve
+- [p053_c0002] ➤ Regular review and update of topics, materials and instructors ➤ New topics include Project Management and Strategic Business Development ➤ Mandatory training spans technical, organizational, and business operations ➤ Course topics include: ➤ Doing Business with the MTA and Prime Contractors ➤ Prevailing Wages / Project Management ➤ Estimating and Bidding Strategies at the MTA ➤ Project Scheduling at the MTA ➤ Cash Flow and Financial Management ➤ Safety and Quality Planning at the MTA ➤ Requisition and Change Order Process ➤ Business Communications ➤ Marketing Your Business to the NY Construction Industry ➤ Construction Law ➤ Developing a Profitable Business in the MTA Region ➤ Surety Bonding, Access to Capital, and The CEO Toolkit ➤ Navigating MTA Contracts & MWDBE Compliance / Strategic Business Development ➤ How to be a Prime Contractor
+[p053_c0003] _Master Page # 53 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 54
+
+### [p054_c0001] Assessments Plot a Course of Action
+- [p054_c0002] ➤ Contractor Assessments lead to detailed Action Plans ➤ Identifying existing and future needs ➤ Creating SMART Plans with each contractor ➤ S pecific ➤ M easurable ➤ A greed Upon ➤ R ealistic ➤ T ime-bound ➤ Over 460 In-Person Assessments Completed ➤ Over 440 Action Plans Delivered ➤ Regular follow up with contractors on progress
+[p054_c0003] _Master Page # 54 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 55
+
+### [p055_c0001] Benefits Of The Program
+- [p055_c0002] ➤ Uniform Set of Front-End Bid Documents for All Agencies: NYCT, MNR, B&T, LIRR, MTA BUS, and MTA C&D ➤ Payments – within 10 business days ➤ Awards SBMP & SBFP – within 22 business days ➤ Closeouts SBMP & SBFP – within 20 & 30 business days respectively ➤ Change Orders – within 15 business days ➤ Submittals – within 10 business days ➤ RFIs – within 5 business days
+> [p055_c0003] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+[p055_c0004] _Master Page # 55 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 56
+
+### [p056_c0001] Metropolitan Transportation Authority Department of Diversity and Civil Rights
+[p056_c0002] M/W/DBE and SDVOB Contract Compliance
+[p056_c0003] December 19, 2022
+> [p056_c0004] The logo for the Metropolitan Transportation Authority (MTA) is located in the bottom left corner. It consists of a dark grey circle with the letters "MTA" in white, bold, sans-serif font.
+[p056_c0005] _Master Page # 56 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 57
+
+### [p057_c0001] DBE Participation in Federally Funded Contracts Federal Fiscal Year 2022 (Reporting Period: October 1, 2021 to September 30, 2022)
+- [p057_c0002] • Each year, MTA reports to the Federal Transit Administration on a semi-annual basis DBE participation in federally funded contracts. • Reports are submitted on June 1st -- covering October through March, and December 1st -- covering April through September. The December report also summarizes data for the entire Federal Fiscal Year (“FFY”). • Reports include DBE participation data on new awards and payments on ongoing and completed contracts. • For FFY 2022, MTA’s DBE goal is 20%. • During the FFY 2022, MTA awarded $4 billion in the federally funded portion of contracts, with $686 million (17%) being awarded to certified DBEs. • During the FFY 2022, MTA paid prime contractors approximately $1.55 billion, with payments to certified DBEs totaling $227 million (14.64%). • On contracts closed during the FFY 2022, MTA achieved 18.5% DBE participation.
+[p057_c0003] _Master Page # 57 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 58
+
+### [p058_c0001] FEDERALLY-FUNDED CONTRACTS DBE CONTRACT ACTIVITY FEDERAL FISCAL YEAR 2022(OCTOBER 2021-SEPTEMBER 2022)
+### [p058_c0002] DBE AWARD PARTICIPATION
+> [p058_c0003] A 3D pie chart titled 'DBE AWARD PARTICIPATION'. The chart is divided into two segments: a large light blue segment representing 'Total Awards' and a smaller orange segment representing 'DBE Participation'. The 'Total Awards' segment is labeled with the text 'TOTAL AWARDS = $4,038,017,669'. The 'DBE Participation' segment is labeled with '17%'. A legend to the right of the chart shows a light blue square for 'Total Awards' and an orange square for 'DBE Participation'. Below the chart, the text 'Actual DBE Participation = $686M or 17%' is displayed. To the right of the chart, the text '20% DBE GOAL' is also present. Category Value Percentage Total Awards $4,038,017,669 100% DBE Participation $686M 17%
+### [p058_c0004] DBE PAYMENT PARTICIPATION
+> [p058_c0005] A 3D pie chart titled 'DBE PAYMENT PARTICIPATION'. The chart is divided into two segments: a large light purple segment representing 'Total Payments' and a smaller orange segment representing 'DBE Participation'. The 'Total Payments' segment is labeled with the text 'TOTAL PAYMENTS = $1,552,080,285'. The 'DBE Participation' segment is labeled with '15%'. A legend to the right of the chart shows a light purple square for 'Total Payments' and an orange square for 'DBE Participation'. Below the chart, the text 'Actual DBE Participation = $227M or 15%' is displayed. To the right of the chart, the text '20% DBE GOAL' is also present. Category Value Percentage Total Payments $1,552,080,285 100% DBE Participation $227M 15%
+[p058_c0006] _Master Page # 58 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 59
+
+### [p059_c0001] Master Page # 59 of 102 - Diversity Committee Meeting 12/19/2022
+### [p059_c0002] DBE CONTRACT AWARDS October 2014 - September 2022
+> [p059_c0003] Fiscal Year DBE Contract Awards (%) FFY 2015 21% FFY 2016 17% FFY 2017 16% FFY 2018 16% FFY 2019 26% FFY 2020 15% FFY 2021 25% FFY 2022 17% *
+[p059_c0004] * Please note that 24% DBE participation will be achieved by utilizing the TBD method on design and build projects.
+
+## Page 60
+
+### [p060_c0001] Master Page # 60 of 102 - Diversity Committee Meeting 12/19/2022
+### [p060_c0002] DBE CONTRACT PAYMENTS October 2014 - September 2022
+> [p060_c0003] Fiscal Year DBE Contract Payments (%) FFY 2015 17% FFY 2016 14% FFY 2017 18% FFY 2018 16% FFY 2019 19% FFY 2020 18% FFY 2021 18% FFY 2022 15%
+
+## Page 61
+
+### [p061_c0001] FEDERALLY-FUNDED CONTRACTS DBE CONTRACT ACTIVITY FEDERAL FISCAL YEAR 2022 (OCTOBER 2021-SEPTEMBER 2022)
+### [p061_c0002] AWARDS*
+[p061_c0003]
+
+```text
+CONTRACT AWARDS PRIME AWARDS DBE PARTICIPATION OVERALL FTA GOAL Number of Contracts Award Amount Number of DBE Contracts DBE Award Amount % To Agency Total 1ST SEMI-ANNUAL REPORT 419 $3,138,831,414 278 $528,542,378 17% 20% October 2021- March 2022 2ND SEMI-ANNUAL REPORT 320 $899,186,255 157 $157,853,537 18% 20% April 2022- September 2022 TOTAL **739 $4,038,017,669 435 $686,395,915 17% 20%
+```
+### [p061_c0004] PAYMENTS*
+[p061_c0005]
+
+```text
+CONTRACT PAYMENTS PAYMENTS TO PRIMES DBE PARTICIPATION OVERALL FTA GOAL Number of Contracts Payment Amount Number of DBE Subcontracts DBE Payment Amount % To Agency Total 1ST SEMI-ANNUAL REPORT 798 $735,281,551 582 $93,030,815 13% 20% October 2021- March 2022 2ND SEMI-ANNUAL REPORT 870 $816,798,734 636 $134,236,011 16% 20% April 2022- September 2022 TOTAL 1,668 $1,552,080,285 1,218 $227,266,826 15% 20%
+```
+[p061_c0006] *Dollar amounts represent the federally-funded portion of contracts.
+[p061_c0007] **This figure includes contracts for which no DBE goals were assigned.
+[p061_c0008] _Master Page # 61 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 62
+
+### [p062_c0001] Master Page # 62 of 102 - Diversity Committee Meeting 12/19/2022
+### [p062_c0002] MWBE Participation in State Funded Contracts New York State Fiscal Year 2022-2023* (Reporting Period: April 1, 2022 to September 30, 2022)
+- [p062_c0003] • Each year, the MTA reports to the Empire State Development Corporation on a quarterly basis the MWBE participation on state funded contracts. • Reports are submitted 15 days after the end of each quarter, on January 15, April 15, July 15, and October 15. • Reports include data on contracts with goals and MWBE contract payments. • MTA established an overall MWBE goal of 30% for the New York State fiscal year 2022-2023, starting April 1, 2022. • During the first two quarters of the FY 2022-23, the MTA awarded $957.8 million on New York State funded contracts, with approximately $120.6 million (13%) awarded to certified MWBEs. • During the first two quarters of the FY 2022-23, the MTA paid $1.1 billion on prime contracts, with $416 million (36%) paid to certified MWBEs.
+[p062_c0004] _*The State Fiscal Year runs from April 1 st through March 31 st ._
+
+## Page 63
+
+### [p063_c0001] MWBE CONTRACT ACTIVITY NEW YORK STATE FISCAL YEAR 2022-2023 (APRIL 2022-SEPTEMBER 2022)
+### [p063_c0002] MWBE AWARD PARTICIPATION
+> [p063_c0003] TOTAL AWARDS = $957,844,145 13% MWBE Participation Total Awards 15% MBE GOAL 15% WBE GOAL Category Percentage MWBE Participation 13% Total Awards 87%
+[p063_c0004] Actual MWBE Participation * = $121M or 13%
+### [p063_c0005] MWBE PAYMENT PARTICIPATION
+> [p063_c0006] TOTAL PAYMENTS = $1,147,659,517 36% MWBE Participation Total Payments 15% MBE GOAL 15% WBE GOAL Category Percentage MWBE Participation 36% Total Payments 64%
+[p063_c0007] Actual MWBE Participation * = $416M or 36%
+[p063_c0008] * First and Second Quarter of NYS FY 2022-23
+[p063_c0009] _Master Page # 63 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 64
+
+### [p064_c0001] Master Page # 64 of 102 - Diversity Committee Meeting 12/19/2022
+### [p064_c0002] NYS MWBE AWARDS APRIL 2015 -SEPTEMBER 2022
+> [p064_c0003] Fiscal Year MBE (%) WBE (%) FY 15-16 6% 7% FY 16-17 5% 5% FY 17-18 8% 8% FY 18-19 6% 7% FY 19-20 10% 5% FY20-21 10% 9% FY21-22 11% 6% FY22-23* 7% 6%
+[p064_c0004] * FY 2022-23 First and Second Quarter (April 2022 to September 2022)
+
+## Page 65
+
+### [p065_c0001] Master Page # 65 of 102 - Diversity Committee Meeting 12/19/2022
+### [p065_c0002] NYS MWBE PAYMENTS APRIL 2015 -SEPTEMBER 2022
+> [p065_c0003] Fiscal Year MBE (%) WBE (%) FY 15-16 13% 12% FY 16-17 13% 11% FY 17-18 13% 13% FY 18-19 14% 11% FY 19-20 15% 12% FY 20-21 17% 14% FY 21-22 18% 13% FY 22-23* 19% 17%
+[p065_c0004] * FY 2022-23, First and Second Quarter (April 2022 to September 2022)
+
+## Page 66
+
+### [p066_c0001] NYS CONTRACTS MWBE CONTRACT ACTIVITY APRIL 1, 2022 - SEPTEMBER 30, 2022 *
+[p066_c0002]
+
+```text
+CONTRACT AWARDS PRIME AWARDS MWBE AWARDS NYS Goal Number of Contracts Award Amount Number of MWBE Subcontracts MWBE Award Amount MWBE % FIRST QUARTER (Apr-Jun 2022) 11,215 $259,687,402 1,157 $52,286,219 20% 30% SECOND QUARTER (July-Sept 2022) 10,409 $698,156,743 1,084 $68,363,817 10% 30% TOTAL 21,624 $957,844,145 2,241 $120,650,036 13% 30%
+```
+[p066_c0003]
+
+```text
+CONTRACT PAYMENTS PAYMENTS TO PRIMES MWBE PARTICIPATION NYS Goal Number of Contracts Payment Amount Number of MWBE Contracts MWBE Payment Amount MWBE % FIRST QUARTER (Apr-Jun 2022) 2,061 $606,029,637 2,885 $209,648,445 35% 30% SECOND QUARTER (July-Sept 2022) 2,075 $541,629,880 2,811 $206,511,691 38% 30% TOTAL 4,136 $1,147,659,517 5,696 $416,160,136 36% 30%
+```
+[p066_c0004] *NYS First and Second Quarter FY 2022-23
+[p066_c0005] _Master Page # 66 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 67
+
+### [p067_c0001] SDVOB Participation on State Funded Contracts New York State Fiscal Year 2022-2023* (Reporting Period: April 1, 2022 to September 30, 2022)
+- [p067_c0002] • Each year, the MTA reports to the Office of General Services on a quarterly basis the SDVOB participation on state funded contracts. • Reports are submitted 30 days after the end of each quarter, on January 30, April 30, July 30, and October 30. • Reports include data on contracts with SDVOB goals and payments made to SDVOBs. • MTA established an overall SDVOB goal of 6% for State fiscal year 2022-2023, starting on April 1, 2022. • During the first two quarters of FY 2022-23, the MTA awarded approximately $149 million in contracts with $7.3 million (5%) awarded to certified SDVOBs. • During the first two quarters of FY 2022-23, the MTA paid $383 million on prime contracts with $12 million (3%), paid to certified SDVOBs.
+[p067_c0003] *The State Fiscal Year runs from April 1 st through March 31 st .
+[p067_c0004] _Master Page # 67 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 68
+
+### [p068_c0001] NYS CONTRACTS SDVOB CONTRACT ACTIVITY APRIL 1, 2022 - SEPTEMBER 30, 2022 *
+[p068_c0002]
+
+```text
+Contract Awards Prime Awards SDVOB Awards SDVOB% FIRST QUARTER (Apr-Jun 2022) $44,982,352 $3,045,841 7% SECOND QUARTER (July-Sept 2022) $103,779,528 $4,274,246 4% FY 2022-2023 TOTAL $148,761,881 $7,320,088 5%
+```
+[p068_c0003]
+
+```text
+Contract Payments Prime Disbursements SDVOB Disbursements SDVOB% FIRST QUARTER (Apr-Jun 2022) $190,043,296 $6,420,408 3% SECOND QUARTER (July-Sept 2022) $192,871,789 $5,737,311 3% FY 2022-2023 TOTAL $382,915,085 $12,157,719 3%
+```
+[p068_c0004] *NYS First and Second Quarter FY 2022-23
+[p068_c0005] _Master Page # 68 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 69
+
+### [p069_c0001] MTA ALL AGENCY DISCRETIONARY PROCUREMENTS REPORT* APRIL 2022 - SEPTEMBER 2022
+> [p069_c0002] Discretionary MWBE Awards Agency Amount ($) Percentage MTA C&D $2,255 1% MTA B&T $0 0% MTA LIRR $1,943,345 6% MTA BUS $1,929,587 12% MTA MNR $2,763,162 6% MTA HQ $10,436,655 42% MTA NYCTA $13,881,648 14%
+[p069_c0003] *Discretionary procurements include purchases for goods, miscellaneous procurements, personal or miscellaneous services.
+[p069_c0004] _Master Page # 69 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 70
+
+### [p070_c0001] MTA ALL AGENCY DISCRETIONARY PROCUREMENT REPORT* April 2022 - September 2022
+[p070_c0002]
+
+```text
+Agency Total Awards $1.5M or Less Discretionary MWBE Awards Discretionary MWBE % Discretionary SBC Discretionary SBC % MTA BUS $15,845,574 $1,929,587 12% $59,370 0% MTA HQ $25,044,332 $10,436,655 42% $0 0% MTA NYCTA $96,358,224 $13,881,648 14% $4,263,255 4% MTA MNR $43,230,031 $2,763,162 6% $195,278 0% MTA LIRR $33,474,195 $1,943,345 6% $1,883,604 6% MTA B&T $7,396,475 $0 0% $0 0% MTA C&D $287,799 $2,255 1% $2,096 1% Total $221,636,629 $30,956,652 14% $6,403,603 3%
+```
+[p070_c0003] * Discretionary procurements include purchases for goods, miscellaneous procurements, personal or miscellaneous services.
+[p070_c0004] _Master Page # 70 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 71
+
+### [p071_c0001] MTA ALL AGENCY TOTAL PROCUREMENTS REPORT APRIL 2022 - SEPTEMBER 2022
+> [p071_c0002] Total Procurements MWBE Awards MTA Division Amount ($) Percentage MTA C&D $69,616 0.3% MTA B&T $617,593.00 1% MTA BUS $2,434,536 15% MTA LIRR $9,250,546 24% MTA MNR $6,679,558 11% MTAHQ $14,136,972 9% MTA NYCTA $31,517,530 19%
+[p071_c0003] _Master Page # 71 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 72
+
+### [p072_c0001] MTA ALL AGENCY TOTAL PROCUREMENTS APRIL 2022 - SEPTEMBER 2022
+[p072_c0002]
+
+```text
+Agency Total Award Amount Total MWBE Awards MWBE % MTA HQ $153,617,524 $14,136,972 9% MTA LIRR $39,255,193 $9,250,546 24% MTA NYCTA $170,119,187 $31,517,530 19% MTA BUS $15,845,574 $2,434,536 15% MTA MNR $63,385,972 $6,679,558 11% MTA B&T $91,018,339 $617,593 1% MTA C&D $21,642,755 $69,616 0.3% Total $554,884,544 $64,706,352 12%
+```
+[p072_c0003] _Master Page # 72 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 73
+
+### [p073_c0001] Metropolitan Transportation Authority Department of Diversity and Civil Rights
+[p073_c0002] Discretionary A&E, IT, and Legal
+[p073_c0003] December 19, 2022
+> [p073_c0004] The MTA logo, consisting of the letters 'MTA' in white inside a dark grey circle.
+[p073_c0005] _Master Page # 73 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 74
+
+### [p074_c0001] Master Page # 74 of 102 - Diversity Committee Meeting 12/19/2022
+### [p074_c0002] A/E Awards thru Discretionary Procurement April 2021 - September 2022
+[p074_c0003]
+
+```text
+# Agency Contract Number Project Name & Description Primary Trades Contract Amount Notice of Award Date Contractor Contractor Certification 1 B&T 14073-5600, Work Order No. 29 RIC-2003 for improvements to the Ventilation at the Fleet Garage and RMB 2nd Floor As-Needed Construction Administration, Inspection and Support Services $ 252,137 4/29/21 IH Engineers, P.C. MBE 2 B&T 14073-5600 – Work Order # 36, Senior Project Engineer(s), Staff Augmentation for Project GES-264 As-Needed Construction Administration, Inspection and Support Services $ 313,000 5/28/21 O&S Associates, Inc. MBE 3 B&T 14073-4600 – Work Order # 35 Senior Project Engineer(s), Staff Augmentation for Project GES-264 As-Needed Construction Administration, Inspection and Support Services $ 350,189 6/11/21 Armand Corporation M/WBE 4 B&T 14073-1800 – Work Order # 33 WO 33 Senior Project Engineer (Multi facility)- GES-264 As-Needed Construction Administration, Inspection and Support Services $ 263,191 8/6/21 SJH Engineering MBE 5 B&T 14073-3600 – Work Order # 34 HHM-396, 400, 401, 402 Construction Administration As-Needed Construction Administration, Inspection and Support Services $ 782,847 8/6/21 Hudson Valley Engineering Associates, P.C. WBE 6 B&T 14073-0500 – Work Order # 31 CBM-335, MPM-355 Construction Administration As-Needed Construction Administration, Inspection and Support Services $ 659,000 8/11/21 SI Engineering, P.C. MBE 7 B&T 14073-5000 – Work Order # 38 GFMC-2101 - Climate Control for HCT and QMT Buildings As-Needed Construction Administration, Inspection and Support Services $ 644,095 9/15/21 M&J ENGINEERING, P C MBE
+```
+[p074_c0004] Total : $ 3,264,459
+
+## Page 75
+
+### [p075_c0001] IT Discretionary
+[p075_c0002] IT Discretionary Consulting Contract No. 14357
+[p075_c0003] April 2022 - September 2022
+[p075_c0004] Total Number of Awards- 65
+[p075_c0005] Value of Awards- $ 9.8 million
+[p075_c0006] Value of Cumulative Awards- $173 million
+> [p075_c0007] The MTA logo, consisting of the letters 'MTA' in white inside a dark grey circle.
+[p075_c0008] _Master Page # 75 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 76
+
+### [p076_c0001] MTA ALL AGENCY LEGAL FEES PAID APRIL THROUGH SEPTEMBER 2022
+[p076_c0002]
+
+```text
+AGENCY ALL FEES PAID MBE FEES PAID Agency MBE PARTICIPATION WBE FEES PAID Agency WBE PARTICIPATION MWBE FEES PAID Agency MWBE PARTICIPATION NON-CERTIFIED FEES PAID MTA C&D $ 731,010 $ 131,641 14.59% $ 189,865 41.30% $ 321,505 55.89% $ 409,504 MTA BUS $ 2,358,807 $ 110,149 5.53% $ 673,790 33.19% $ 783,939 38.72% $ 1,574,868 B&T $ 105,747 $ 37,961 33.56% $ - 0.00% $ 37,961 33.56% $ 67,787 FMTAC $ 2,343,937 $ 428,415 29.32% $ 233,410 2.47% $ 661,826 31.78% $ 1,682,112 LIRR $ 743,714 $ 27,907 13.07% $ - 0.00% $ 27,907 13.07% $ 715,807 NYCTA $ 8,034,655 $ 424,968 6.87% $ 307,319 5.94% $ 732,287 12.81% $ 7,302,368 MNR $ 741,803 $ 62,959 9.07% $ 15,039 2.57% $ 77,998 11.64% $ 663,804 MTA HQ $ 6,887,225 $ 394,686 6.26% $ 228,980 0.61% $ 623,666 6.87% $ 6,263,559 Total $ 21,946,897 $ 1,618,686 7% $ 1,648,403 8% $ 3,267,089 15% $ 18,679,808
+```
+[p076_c0003] _Master Page # 76 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 77
+
+### [p077_c0001] Metropolitan Transportation Authority Department of Diversity and Civil Rights
+[p077_c0002] Status of Closed Contracts as of September 30, 2022
+[p077_c0003] December 19, 2022
+[p077_c0004] _Master Page # 77 of 102 - Diversity Committee Meeting 12/19/2022_
+> [p077_c0005] The MTA logo is a circular emblem with the letters "MTA" in a bold, sans-serif font. The letters are white and set against a dark grey background.
+
+## Page 78
+
+### [p078_c0001] Master Page # 78 of 102 - Diversity Committee Meeting 12/19/2022
+### [p078_c0002] MTA Headquarters DDCR Update
+### [p078_c0003] Inactive Contracts – Status as of September 30, 2022
+[p078_c0004]
+
+```text
+Inactive Contracts with Goals # 1. Total Contracts Reviewed and Closed 1,659 2. Contracts Administratively Closed 309 1 Sub-Total 1,968 (97%) 3. Closeouts in Progress 43 4. Contracts Pending Agency Action 8 Total 2,019 (100%)
+```
+[p078_c0005] _1. Contracts administratively closed because of the age of the contract (beyond the established seven-year record retention period)._
+> [p078_c0006] The MTA logo is a circular emblem with the letters 'MTA' in a bold, sans-serif font. The letters are white and set against a dark grey background. The circle has a slight gradient and a thin white border.
+
+## Page 79
+
+### [p079_c0001] MTA Headquarters DDCR Update
+### [p079_c0002] DDCR Contract Closeout Progression 3Q 2017 through 3Q 2022 2
+> [p079_c0003] Quarter Year Closeouts 3Q 2017 1,398 4Q 2017 1,179 1Q 2018 1,219 2Q 2018 1,276 3Q 2018 1,308 4Q 2018 1,340 1Q 2019 1,377 2Q 2019 1,395 3Q 2019 1,422 4Q 2019 1,453 1Q 2020 1,489 2Q 2020 1,507 3Q 2020 1,657 4Q 2020 1,723 1Q 2021 1,759 2Q 2021 1,795 3Q 2021 1,833 4Q 2021 1,862 1Q 2022 1,895 2Q 2022 1,938 3Q 2022 1,968
+- [p079_c0004] 2. The decrease in closeouts between 3Q 2017 and 4Q 2017 is due to approx. 200 contracts being closed out in error, requiring subsequent re-activation.
+[p079_c0005] _Master Page # 79 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 80
+
+### [p080_c0001] MTA Headquarters DDCR Update
+### [p080_c0002] Master Page # 80 of 102 - Diversity Committee Meeting 12/19/2022
+### [p080_c0003] DDCR Project Site Visits: 3Q 2017 – 3Q 2022
+[p080_c0004] Total Site Visits Performed = 4,548
+> [p080_c0005] Quarter Year Visits 3Q 2017 136 4Q 2017 147 1Q 2018 163 2Q 2018 184 3Q 2018 159 4Q 2018 161 1Q 2019 165 2Q 2019 185 3Q 2019 164 4Q 2019 162 1Q 2020 139 2Q 2020 6 3Q 2020 110 4Q 2020 148 1Q 2021 166 2Q 2021 193 3Q 2021 185 4Q 2021 178 1Q 2022 189 2Q 2022 176 3Q 2022 157
+[p080_c0006] 3. No site visits were performed during April & May 2020 due to the COVID-19 pandemic. Virtual site visits began on June 29, 2020.
+
+## Page 81
+
+### [p081_c0001] Metropolitan Transportation Authority Department of Diversity and Civil Rights
+[p081_c0002] M/WBE, DBE, and SDVOB Participation on Capital Projects
+[p081_c0003] December 19, 2022
+> [p081_c0004] The logo for the Metropolitan Transportation Authority (MTA) is located in the bottom left corner. It consists of a dark grey circle with the letters "MTA" in white, bold, sans-serif font.
+[p081_c0005] _Master Page # 81 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 82
+
+### [p082_c0001] Master Page # 82 of 102 - Diversity Committee Meeting 12/19/2022
+### [p082_c0002] MWDBE and SDVOB Participation on MTA Capital Projects with Goals*
+### [p082_c0003] ■ Federal DBE Participation Goal: 20%
+[p082_c0004] (Federal Fiscal Year 2022 (October 2021 to September 2022))
+- [p082_c0005] ■ Total Awards: $2B ■ Total DBE Awards: $160M (7%) ** ■ Total Payments: $750M ■ Total DBE Payments: $126M (17%)
+### [p082_c0006] ■ New York State MBE Participation Goal: 15%
+[p082_c0007] (First and Second Quarters of NYS Fiscal Year 2022-2023 (April 2022 – September 2022))
+- [p082_c0008] ■ Total Awards: $61M ■ Total MBE Awards: 17M (28%) ■ Total Payments: $723M ■ Total MBE Payments: $108M (15%)
+### [p082_c0009] ■ New York State WBE Participation Goal: 15%
+[p082_c0010] (First and Second Quarters of NYS Fiscal Year 2022-2023 (April 2022 – September 2022))
+- [p082_c0011] ■ Total Awards: $61M ■ Total WBE Awards: $4M (7%) ■ Total Payments: $723M ■ Total WBE Payments: $105M (14%)
+### [p082_c0012] ■ Service-Disabled Veteran-Owned Business Participation Goal: 6%
+[p082_c0013] (First and Second Quarters of NYS Fiscal Year 2022-2023 (April 2022 – September 2022))
+- [p082_c0014] ■ Total Awards: $57M ■ Total SDVOB Awards: $2M (4%) ■ Total Payments: $281M ■ Total SDVOB Payments: $4M (1%)
+[p082_c0015] *Report is based on original contract amount provided by MTA Agencies for third-party design and construction contracts (excluding rolling stock and signals).
+[p082_c0016] ** Total does not include TBDs on Design Build contracts. If included the total would increase to $450.8M and 20% DBE inclusion.
+> [p082_c0017] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark grey circle.
+
+## Page 83
+
+### [p083_c0001] Metropolitan Transportation Authority Department of Diversity and Civil Rights
+[p083_c0002] Financial Services
+[p083_c0003] December 19, 2022
+> [p083_c0004] The MTA logo, consisting of the letters "MTA" in white inside a dark grey circle.
+[p083_c0005] _Master Page # 83 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 84
+
+### [p084_c0001] Master Page # 84 of 102 - Diversity Committee Meeting 12/19/2022
+### [p084_c0002] MTA All Agency Underwriter Fees
+[p084_c0003] April 2022 – September 2022
+> [p084_c0004] Category Amount MBE $1,495,906 WBE $2,289,885 SDVOB $738,617 ALL OTHER FEES $8,968,041
+[p084_c0005] Actual WBE Participation = $2,289,885 or 17% Actual MBE Participation = $1,495,906 or 11% Actual SDVOB Participation = $738,617 or 5% All Other Underwriting Fees = $8,968,041 or 66% Total Underwriting Fees = $13,492,449
+
+## Page 85
+
+### [p085_c0001] Metropolitan Transportation Authority Department of Diversity and Civil Rights
+[p085_c0002] Asset Fund Managers
+[p085_c0003] December 19, 2022
+> [p085_c0004] The MTA logo, consisting of the letters 'MTA' in white inside a dark grey circle.
+[p085_c0005] _Master Page # 85 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 86
+
+### [p086_c0001] Master Page # 86 of 102 - Diversity Committee Meeting 12/19/2022
+### [p086_c0002] MTA Sponsored Plans – MWBE Participation
+[p086_c0003] As of September 2022
+[p086_c0004] _Combined Plans - Total Assets_
+> [p086_c0005] Category Value Percentage MWBE Managed Assets $2,122,577,228 26% Non-MWBE Managed Assets $6,068,735,130 74%
+[p086_c0006] _Combined Plans - Traditional Investments_
+> [p086_c0007] Category Value Percentage MWBE Managed Assets (Traditional) $1,997,308,337 36% Non-MWBE Managed Assets (Traditional) $3,556,322,999 64%
+[p086_c0008] _Combined Plans- Alternative Investments_
+> [p086_c0009] Category Value Percentage MWBE Managed Assets (Alternatives) $125,268,892 5% Non-MWBE Managed Assets (Alternatives) $2,512,412,131 95%
+[p086_c0010] _MWBE Managed Assets by Asset Class_
+> [p086_c0011] Asset Class Percentage % of US Equity 62.5% % of Non-US Equity 20% % of Fixed Income 45% % of Credit/Private Debt 5% % of Private Equity 0% % of Real Estate 28%
+
+## Page 87
+
+### [p087_c0001] Master Page # 87 of 102 - Diversity Committee Meeting 12/19/2022
+### [p087_c0002] MTA Sponsored Plans – MWBE Participation
+[p087_c0003] As of September 2022
+[p087_c0004] _MTA Defined Benefit - Total Assets_
+> [p087_c0005] Category Value ($) Percentage MWBE Managed Assets $1,402,617,451 27% Non-MWBE Managed Assets $3,858,533,916 73%
+[p087_c0006] _MTA Defined Benefit - Traditional Investments_
+> [p087_c0007] Category Value ($) Percentage MWBE Managed Assets (Traditional) $1,321,088,071 37% Non-MWBE Managed Assets (Traditional) $2,283,926,790 63%
+[p087_c0008] _MTA Defined Benefit - Alternative Investments_
+> [p087_c0009] Category Value ($) Percentage MWBE Managed Assets (Alternatives) $81,529,381 5% Non-MWBE Managed Assets (Alternatives) $1,574,607,126 95%
+[p087_c0010] _MWBE Managed Assets by Asset Class_
+> [p087_c0011] Asset Class Percentage % of US Equity 62.00% % of Non-US Equity 18.00% % of Fixed Income 36.00% % of Credit/Private Debt 6.00% % of Private Equity 0.00% % of Real Estate 26.00%
+
+## Page 88
+
+### [p088_c0001] Master Page # 88 of 102 - Diversity Committee Meeting 12/19/2022
+### [p088_c0002] MTA Sponsored Plans – MWBE Participation
+[p088_c0003] As of September 2022
+[p088_c0004] _MaBSTOA - Total Assets_
+> [p088_c0005] Category Value ($) Percentage MWBE Managed Assets $719,959,777 25% Non-MWBE Managed Assets $2,210,201,213 75%
+[p088_c0006] _MaBSTOA - Traditional Investments_
+> [p088_c0007] Category Value ($) Percentage MWBE Managed Assets (Traditional) $676,220,266 35% Non-MWBE Managed Assets (Traditional) $1,272,396,209 65%
+[p088_c0008] _MaBSTOA - Alternative Investments_
+> [p088_c0009] Category Value ($) Percentage MWBE Managed Assets (Alternatives) $43,739,511 4% Non-MWBE Managed Assets (Alternatives) $937,805,004 96%
+[p088_c0010] _MWBE Managed Assets by Asset Class_
+> [p088_c0011] Asset Class Percentage % of US Equity 60.00% % of Non-US Equity 15.00% % of Fixed Income 28.00% % of Credit/Private... 5.00% % of Private Equity 0.00% % of Real Estate 25.00%
+
+## Page 89
+
+### [p089_c0001] Metropolitan Transportation Authority Department of Diversity and Civil Rights
+[p089_c0002] MTA-Wide Workforce as of September 30, 2022
+[p089_c0003] December 19, 2022
+> [p089_c0004] The MTA logo, consisting of the letters 'MTA' in white inside a dark grey circle.
+[p089_c0005] _Master Page # 89 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 90
+
+### [p090_c0001] Definitions of EEO Job Categories
+- [p090_c0002] ❑ Officials & Administrators - Occupations in which employees set broad policies, exercise overall responsibility for execution of these policies, or direct individual departments or special phases of the agency's operations, or provide specialized consultation on a regional, district or area basis. ❑ Professionals - Occupations which require specialized and theoretical knowledge which is usually acquired through college training or through work experience and other training which provides comparable knowledge. ❑ Technicians - Occupations which require a combination of basic scientific or technical knowledge and manual skill which can be obtained through specialized post-secondary school education or through equivalent on-the-job training. ❑ Protective Services - Occupations in which workers are entrusted with public safety, security and protection from destructive forces.
+> [p090_c0003] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+[p090_c0004] _Master Page # 90 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 91
+
+### [p091_c0001] Definitions of EEO Job Categories
+- [p091_c0002] ❑ Paraprofessionals - Occupations in which workers perform some of the duties of a professional or technician in a supportive role, which usually require less formal training and/or experience normally required for professional or technical status. ❑ Administrative Support - Occupations in which workers are responsible for internal and external communication, recording and retrieval of data and/or information and other paperwork required in an office. ❑ Skilled Craft - Occupations in which workers perform jobs which require special manual skill and a thorough and comprehensive knowledge of the process involved in the work which is acquired through on-the-job training and experience or through apprenticeship or other formal training programs. ❑ Service Maintenance - Occupations in which workers perform duties which result in or contribute to the comfort, convenience, hygiene or safety of the general public or which contribute to the upkeep and care of buildings, facilities or grounds of public property.
+[p091_c0003] _Master Page # 91 of 102 - Diversity Committee Meeting 12/19/2022_
+> [p091_c0004] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+
+## Page 92
+
+### [p092_c0001] Master Page # 92 of 102 - Diversity Committee Meeting 12/19/2022
+### [p092_c0002] MTA-Wide Workforce as of September 30, 2022
+[p092_c0003]
+
+```text
+JOB CATEGORY TOTAL Minorities WHITES BLACKS HISPANICS ASIANS AI/AN* NHOPi** 2+ RACES VETERANS # % # % # % # % # % # % # % # % # % # % Officials & Administrators 5,502 2925 53% 2,577 47% 1,240 23% 648 12% 698 13% 15 0% 3 0% 321 6% 285 5% F 1,382 25% 958 17% 424 8% 516 9% 174 3% 190 3% 3 0% 0 0% 75 1% 24 0% M 4,120 75% 1967 36% 2,153 39% 724 13% 474 9% 508 9% 12 0% 3 0% 246 4% 261 5% Professionals 4,001 2807 70% 1,194 30% 1,099 27% 505 13% 941 24% 6 0% 3 0% 253 6% 79 2% F 1,496 37% 1198 30% 298 7% 590 15% 221 6% 280 7% 2 0% 2 0% 103 3% 14 0% M 2,505 63% 1609 40% 896 22% 509 13% 284 7% 661 17% 4 0% 1 0% 150 4% 65 2% Technicians 428 206 48% 222 52% 80 19% 56 13% 43 10% 3 1% 1 0% 23 5% 26 6% F 51 12% 40 9% 11 3% 22 5% 9 2% 4 1% 0 0% 0 0% 5 1% 3 1% M 377 88% 166 39% 211 49% 58 14% 47 11% 39 9% 3 1% 1 0% 18 4% 23 5% Protective Services 2,126 1368 64% 758 36% 622 29% 538 25% 127 6% 2 0% 2 0% 77 4% 124 6% F 373 18% 291 14% 82 4% 171 8% 95 4% 5 0% 1 0% 0 0% 19 1% 12 1% M 1,753 82% 1077 51% 676 32% 451 21% 443 21% 122 6% 1 0% 2 0% 58 3% 112 5% Paraprofessionals 60 46 77% 14 23% 24 40% 11 18% 5 8% 0 0% 0 0% 6 10% 0 0% F 38 63% 31 52% 7 12% 15 25% 9 15% 3 5% 0 0% 0 0% 4 7% 0 0% M 22 37% 15 25% 7 12% 9 15% 2 3% 2 3% 0 0% 0 0% 2 3% 0 0% Administrative Support 4,815 4090 85% 725 15% 2,391 50% 649 13% 850 18% 14 0% 2 0% 184 4% 74 2% F 2,311 48% 2098 44% 213 4% 1,519 32% 325 7% 150 3% 8 0% 2 0% 94 2% 20 0% M 2,504 52% 1992 41% 512 11% 872 18% 324 7% 700 15% 6 0% 0 0% 90 2% 54 1% Skilled Craft 26,847 16491 61% 10,356 39% 8,389 31% 3,635 14% 3,232 12% 87 0% 17 0% 1,131 4% 1,015 4% F 1,588 6% 1295 5% 293 1% 972 4% 209 1% 50 0% 3 0% 2 0% 59 0% 32 0% M 25,259 94% 15196 57% 10,063 37% 7,417 28% 3,426 13% 3,182 12% 84 0% 15 0% 1,072 4% 983 4% Service Maintenance 27,334 23097 84% 4,237 16% 14,167 52% 6,250 23% 1,697 6% 75 0% 6 0% 902 3% 458 2% F 6,155 23% 5394 20% 761 3% 3,925 14% 1,195 4% 92 0% 12 0% 1 0% 169 1% 44 0% M 21,179 77% 17703 65% 3,476 13% 10,242 37% 5,055 18% 1,605 6% 63 0% 5 0% 733 3% 414 2% Total 71,113 51,030 72% 20,083 28% 28,012 39% 12,292 17% 7,593 11% 202 0% 34 0% 2,897 4% 2,061 3%
+```
+[p092_c0004] _* Unpaid Interns are Not Included. Due to employee movements, resulting from the transformation, all utilization goals will require recalculation to be provided in 2022_
+[p092_c0005] _*American Indian/Alaskan Native **Native Hawaiian Other Pacific Islander_
+
+## Page 93
+
+### [p093_c0001] Master Page # 93 of 102 - Diversity Committee Meeting 12/19/2022
+### [p093_c0002] MTA Workforce, by Agency as of September 30, 2022
+[p093_c0003]
+
+```text
+MTA Agency TOTAL Minorities WHITES BLACKS HISPANICS ASIANS AI/AN* NHOPI** 2+ RACES VETERANS # % # % # % # % # % # % # % # % # % # % B&T 919 528 57% 391 43% 240 26% 183 20% 53 6% 6 1% 0 0% 46 5% 14 2% F 171 19% 142 15% 29 3% 88 10% 34 4% 11 1% 2 0% 0 0% 7 1% 1 0% M 748 81% 386 42% 362 39% 152 17% 149 16% 42 5% 4 0% 0 0% 39 4% 13 1% BUS 3,867 3257 84% 610 16% 1,795 46% 898 23% 348 9% 16 0% 9 0% 191 5% 67 2% F 503 13% 471 12% 32 1% 297 8% 139 4% 16 0% 2 0% 0 0% 17 0% 5 0% M 3,364 87% 2786 72% 578 15% 1,498 39% 759 20% 332 9% 14 0% 9 0% 174 4% 62 2% C&D 1,569 1014 65% 555 35% 311 20% 147 9% 469 30% 1 0% 0 0% 86 5% 20 1% F 468 30% 333 21% 135 9% 120 8% 61 4% 122 8% 0 0% 0 0% 30 2% 3 0% M 1,101 70% 681 43% 420 27% 191 12% 86 5% 347 22% 1 0% 0 0% 56 4% 17 1% HQ 4,860 2995 62% 1,865 38% 1,199 25% 687 14% 819 17% 11 0% 4 0% 275 6% 156 3% F 1,669 34% 1237 25% 432 9% 648 13% 256 5% 221 5% 2 0% 2 0% 108 2% 27 1% M 3,191 66% 1758 36% 1,433 29% 551 11% 431 9% 598 12% 9 0% 2 0% 167 3% 129 3% LIRR 7,207 2804 39% 4,403 61% 1,257 17% 898 12% 312 4% 21 0% 3 0% 313 4% 451 6% F 1,326 18% 535 7% 791 11% 318 4% 123 2% 49 1% 1 0% 0 0% 44 1% 21 0% M 5,881 82% 2269 31% 3,612 50% 939 13% 775 11% 263 4% 20 0% 3 0% 269 4% 430 6% MNR 5,961 2386 40% 3,575 60% 1,177 20% 695 12% 163 3% 22 0% 3 0% 326 5% 421 7% F 654 11% 431 7% 223 4% 250 4% 100 2% 25 0% 5 0% 2 0% 49 1% 19 0% M 5,307 89% 1955 33% 3,352 56% 927 16% 595 10% 138 2% 17 0% 1 0% 277 5% 402 7% NYCT 46,730 38046 81% 8,684 19% 22,033 47% 8,784 19% 5,429 12% 125 0% 15 0% 1,660 4% 932 2% F 8,603 18% 8156 17% 447 1% 6,009 13% 1,524 3% 330 1% 17 0% 3 0% 273 1% 73 0% M 38,127 82% 29890 64% 8,237 18% 16,024 34% 7,260 16% 5,099 11% 108 0% 12 0% 1,387 3% 859 2% Total 71,113 51,030 72% 20,083 28% 28,012 39% 12,292 17% 7,593 11% 202 0% 34 0% 2,897 4% 2,061 3%
+```
+[p093_c0004] * Unpaid Interns are Not Included. Due to employee movements, resulting from the transformation, all utilization goals will require recalculation to be provided in 2022
+[p093_c0005] *American Indian/Alaskan Native
+[p093_c0006] **Native Hawaiian Other Pacific Islander
+
+## Page 94
+
+### [p094_c0001] MTA-Wide Workforce as of September 30, 2022
+[p094_c0002] _Workforce By Sex_
+> [p094_c0003] Sex Percentage Count Males 81% 57,719 Females 19% 13,394
+[p094_c0004] _Workforce By Race/Ethnicity_
+> [p094_c0005] Race/Ethnicity Percentage Count Blacks 39% 28,012 Whites 28% 20,083 Hispanics 17% 12,292 Asians 11% 7,593 2+ Races 4% 2,897
+[p094_c0006] MTA employed 71,113 people: 19% of the workforce were females, 72% minorities, and veterans comprised 3% .
+- [p094_c0007] ❑ The percentage of females employed in the workforce has increased by one percentage point when compared to Third Quarter 2021. ❑ The percentage of minorities in the workforce has increased by one percentage point when compared to Third Quarter 2021.
+[p094_c0008] _Master Page # 94 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 95
+
+### [p095_c0001] MTA-Wide Representation Overview
+[p095_c0002] To align with our efforts to centralize certain back-office operations, the diversity book will continue to report from One-MTA reporting structure.
+[p095_c0003] This presentation provides a snapshot of the current workforce representation and the hiring and separations activities during the reporting period ending September 30, 2022. The data is displayed by race and/or gender and is expressed in percentages. The hiring and separations data does not count movements on internal transfers between agencies nor does it count temporary workers (e.g. rehired retirees, contingents).
+[p095_c0004] Also shown on the slides are the internal and external complaints filed with the organization, by allegation type (a.k.a. bases) in accordance with applicable non-discriminatory programs.
+[p095_c0005] NOTE: The numbers and information provided do not infer statistical disparities or explain the reasons or provide a root cause analysis for any identified
+> [p095_c0006] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is enclosed within a dark grey circle.
+[p095_c0007] _Master Page # 95 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 96
+
+### [p096_c0001] Metropolitan Transportation Authority Department of Diversity and Civil Rights
+[p096_c0002] MTA-Wide New Hires and Veterans Third Quarter 2022
+[p096_c0003] December 19, 2022
+> [p096_c0004] The MTA logo, consisting of the letters "MTA" in a bold, sans-serif font, is enclosed within a dark grey circle.
+[p096_c0005] _Master Page # 96 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 97
+
+### [p097_c0001] Master Page # 97 of 102 - Diversity Committee Meeting 12/19/2022
+### [p097_c0002] New Hires By Agency January 1, 2022 to September 30, 2022
+[p097_c0003] _MTA Agencies New Hires By Sex_
+> [p097_c0004] Agency Female (%) Male (%) B&T 13% 87% BUS 21% 79% C&D 30% 70% HQ 30% 70% LIRR 13% 87% MNR 12% 88% NYCT 25% 75%
+[p097_c0005] _MTA Agencies New Hires By Race/Ethnicity_
+> [p097_c0006] Agency Asian (%) Hispanic (%) White (%) Black (%) AN/AI (%) NHOPi (%) 2+ Races (%) B&T 17% 10% 57% 10% 0% 0% 0% BUS 10% 30% 6% 48% 0% 0% 0% C&D 37% 18% 36% 12% 0% 0% 0% HQ 22% 18% 36% 17% 0% 0% 0% LIRR 7% 18% 47% 22% 0% 0% 0% MNR 5% 16% 46% 23% 0% 0% 0% NYCT 12% 21% 12% 51% 0% 0% 0%
+[p097_c0007]
+
+```text
+Agency New Hires Females Minorities B&T 30 13% 43% BUS 408 21% 94% C&D 123 30% 76% HQ 385 30% 64% LIRR 567 13% 53% MNR 346 12% 54% NYCT 3505 25% 88%
+```
+[p097_c0008] _*The above agency-specific data does not accurately reflect employee movements resulting from the transformation._
+
+## Page 98
+
+### [p098_c0001] Master Page # 98 of 102 - Diversity Committee Meeting 12/19/2022
+### [p098_c0002] MTA-Wide New Hires and Separations by Sex January 1, 2022 to September 30, 2022
+[p098_c0003] _New Hires By Sex_
+> [p098_c0004] A 3D pie chart titled 'New Hires By Sex'. The chart is divided into two segments: a large blue segment representing males and a smaller pink segment representing females. The blue segment is labeled 'Males 77%' and '4,121'. The pink segment is labeled 'Females 23%' and '1,243'. Sex Percentage Count Males 77% 4,121 Females 23% 1,243
+[p098_c0005] _Separations By Sex_
+> [p098_c0006] A 3D pie chart titled 'Separations By Sex'. The chart is divided into two segments: a large blue segment representing males and a smaller pink segment representing females. The blue segment is labeled 'Males, 78%' and '2,948'. The pink segment is labeled 'Females, 22%' and '815'. Sex Percentage Count Males 78% 2,948 Females 22% 815
+[p098_c0007] During the third quarter 2022, MTA hired 5,364 employees, including 1,243 females and 4,121 males. During this same reporting period, 3,763 employees separated from MTA, including 815 females and 2,948 males
+- [p098_c0008] □ The result was a net increase of 428 female employees and 1,173 male employees. □ There were 25 female veterans hired and 8 female veterans separated during the third quarter 2022.
+> [p098_c0009] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark grey circle.
+
+## Page 99
+
+### [p099_c0001] MTA-Wide New Hires and Separations by Race/Ethnicity January 1, 2022 to September 30, 2022
+[p099_c0002] _New Hires By Race/Ethnicity_
+> [p099_c0003] A 3D pie chart titled 'New Hires By Race/Ethnicity' showing the distribution of new hires. The chart is divided into five segments: Blacks (43%, 2,273), Whites (20%, 1,047), Hispanics (20%, 1,099), Asians (12%, 647), and 2+ Races (5%, 272). The segments are color-coded: Blacks (yellow), Whites (grey), Hispanics (orange), Asians (blue), and 2+ Races (dark blue). Race/Ethnicity Percentage Count Blacks 43% 2,273 Whites 20% 1,047 Hispanics 20% 1,099 Asians 12% 647 2+ Races 5% 272
+[p099_c0004] _Separations By Race/Ethnicity_
+> [p099_c0005] A 3D pie chart titled 'Separations By Race/Ethnicity' showing the distribution of employees who separated from MTA. The chart is divided into five segments: Blacks (40%, 1,488), Whites (31%, 1,170), Hispanics (16%, 588), Asians (10%, 368), and 2+ Races (3%, 104). The segments are color-coded: Blacks (yellow), Whites (grey), Hispanics (orange), Asians (blue), and 2+ Races (dark blue). Race/Ethnicity Percentage Count Blacks 40% 1,488 Whites 31% 1,170 Hispanics 16% 588 Asians 10% 368 2+ Races 3% 104
+[p099_c0006] During the third quarter 2022, MTA hired 5,364 employees, including 4,317 minorities and 1,047 non-minorities. During this same reporting period, 3,763 employees separated from MTA, including 2,593 minorities and 1,170 non-minorities.
+- [p099_c0007] □ The result was a net increase of 1,724 minority employees - Blacks (785), Hispanics (511), Asians (279), 2+ Races (146), AI/AN (4) and NHOPI (-1) and a net decrease of -123 non-minority employees □ A total of 151 veteran employees were hired, including 107 minority veterans and a total of 132 veteran employees separated.
+> [p099_c0008] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark grey circle.
+[p099_c0009] _Master Page # 99 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 100
+
+### [p100_c0001] Metropolitan Transportation Authority Department of Diversity and Civil Rights
+### [p100_c0002] MTA-Wide Complaints and Lawsuits Third Quarter 2022
+[p100_c0003] December 19, 2022
+> [p100_c0004] The MTA logo, consisting of the letters "MTA" in white inside a dark grey circle.
+[p100_c0005] _Master Page # 100 of 102 - Diversity Committee Meeting 12/19/2022_
+
+## Page 101
+
+### [p101_c0001] Master Page # 101 of 102 - Diversity Committee Meeting 12/19/2022
+### [p101_c0002] MTA-Wide EEO Internal/External Discrimination Complaints by Bases January 1, 2022 to September 30, 2022
+[p101_c0003] _INTERNAL EEO COMPLAINTS BY BASES_
+> [p101_c0004] A 3D pie chart titled 'INTERNAL EEO COMPLAINTS BY BASES' showing the distribution of 83 internal EEO complaints. The largest slice is Race/Color at 27%, followed by Gender at 17%, Other at 10%, Retaliation at 11%, Sexual Harassment at 16%, National Origin at 8%, Age at 5%, Disability at 3%, and Religion at 2%. Base Percentage Race/Color 27% Gender 17% Other 10% Retaliation 11% Sexual Harassment 16% National Origin 8% Age 5% Disability 3% Religion 2%
+[p101_c0005] _EXTERNAL EEO COMPLAINTS BY BASES_
+> [p101_c0006] A 3D pie chart titled 'EXTERNAL EEO COMPLAINTS BY BASES' showing the distribution of 49 external EEO complaints. The largest slice is Disability at 20%, followed by Race/Color at 18%, Retaliation at 19%, Other at 12%, Gender at 15%, Age at 5%, National Origin at 5%, Sexual Harassment at 3%, and Religion at 3%. Base Percentage Disability 20% Race/Color 18% Retaliation 19% Other 12% Gender 15% Age 5% National Origin 5% Sexual Harassment 3% Religion 3%
+[p101_c0007] MTA handled 132 EEO complaints*, citing 257 separate bases, and 7 lawsuits.
+- [p101_c0008] ☐ 83 filed internal complaints. ☐ 49 filed external complaints. ☐ The most frequently cited bases internally was race/color .
+[p101_c0009] Note: *Formal complaints can be filed alleging multiple bases. Additionally, numerous incoming matters were also handled during this time
+
+## Page 102
+
+### [p102_c0001] MTA-Wide Title VI and Related Discrimination Complaints by Bases January 1, 2022 to September 30, 2022
+[p102_c0002] _MTA-WIDE TITLE VI AND RELATED COMPLAINTS BY BASES_
+> [p102_c0003] Base Percentage Race 62% National Origin 12% Sex 12% Color 6% Disability 4% Age 4% Religion 2%
+[p102_c0004] MTA handled 40 Title VI and Related complaints, citing 52 separate bases and 0 Title VI lawsuits.
+- [p102_c0005] ☐ 31 Title VI complaints* were filed. ☐ 9 Related discrimination complaints** were filed. ☐ The most frequently cited bases was race .
+[p102_c0006] Notes: *Only Formal complaints filed, which can allege multiple bases, are included.
+[p102_c0007] **Related Discrimination complaints are filed by customers based on age, disability, religion and sex.
+[p102_c0008] _Master Page # 102 of 102 - Diversity Committee Meeting 12/19/2022_

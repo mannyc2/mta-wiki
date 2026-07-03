@@ -1,0 +1,361 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_2011-brt-34th-cb6-slides"
+record_kind: "source"
+display_name: "34th Street SBS Presentation to Manhattan Community Board 6"
+source_id: "2011_brt_34th_cb6_slides"
+source_ids:
+  - "2011_brt_34th_cb6_slides"
+local_observation_id: "source_2011_brt_34th_cb6_slides"
+local_observation_ids:
+  - "source_2011_brt_34th_cb6_slides"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-10T22:56:39.918Z"
+raw_text: "34th Street SBS Presentation to Manhattan Community Board 6, November 7, 2011, New York City Transit and NYC DOT"
+submission_ids:
+  - "sub_f376acff2866db36"
+payload:
+  authority_tier: "board_material"
+  content_type: "presentation"
+  date_text: "November 7, 2011"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2011-11-07"
+    precision: "day"
+    raw_text: "November 7, 2011"
+  description: "Revised plan and traffic analysis presentation for 34th Street Select Bus Service to Manhattan Community Board 6"
+  published_date_normalized: "2011-11-07"
+  published_date_precision: "day"
+  publisher: "New York City Transit"
+  title: "34th Street SBS Presentation to Manhattan Community Board 6"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "2011_brt_34th_cb6_slides#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "2011_brt_34th_cb6_slides"
+    source_path: "raw/sources/2011_brt_34th_cb6_slides/blocks.jsonl"
+    text_sha256: "sha256:c555d25f238b58c6cdc6b32793bc8633c039f352ca3d7c0e87d0a70b1a479480"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "2011_brt_34th_cb6_slides#p001_c0002"
+    page_number: 1
+    role: "date"
+    source_id: "2011_brt_34th_cb6_slides"
+    source_path: "raw/sources/2011_brt_34th_cb6_slides/blocks.jsonl"
+    text_sha256: "sha256:898500eb0dba045a1762e6227fb2a673e2a6c5a4d588b118dacacf59c73d2646"
+    text_source: "raw_text"
+---
+
+# Revised plan and traffic analysis
+
+source_id: 2011_brt_34th_cb6_slides
+citation: cite block ids exactly as shown in square brackets
+document: 196 block(s)
+
+## Page 1
+
+### [p001_c0001] 34 th Street SBS Presentation to Manhattan Community Board 6
+[p001_c0002] November 7, 2011
+[p001_c0003] _New York City Transit_
+
+## Page 2
+
+### [p002_c0001] Agenda
+- [p002_c0002] I. Project Schedule II. Design III. Traffic Analysis Results IV. Fare Pre-Payment
+[p002_c0003] _New York City Transit_
+[p002_c0004] _NEW YORK CITY DOT_
+
+## Page 3
+
+### [p003_c0001] Schedule Update
+### [p003_c0002] 2011
+- [p003_c0003] • Spring: presented revised design • Summer: newsletter on design changes • Fall: presented traffic analysis • November: fare prepayment launches (Nov. 13)
+### [p003_c0004] 2012
+- [p003_c0005] • Winter: complete environmental review • Summer/fall: goal for implementation
+[p003_c0006] _New York City Transit_
+[p003_c0007] _NEW YORK CITY DOT_
+
+## Page 4
+
+### [p004_c0001] 34 th St SBS Design
+[p004_c0002] _New York City Transit_
+[p004_c0003] _NEW YORK CITY DOT_
+
+## Page 5
+
+### [p005_c0001] 34 th Street SBS design
+- [p005_c0002] • 2011 planned improvements – Off-board fare collection – Bus lane camera enforcement • 2012 proposed design – Offset bus lanes – Bus bulbs and sidewalk extensions – Expanded loading zones
+[p005_c0003] _New York City Transit_
+[p005_c0004] _NEW YORK CITY DOT_
+
+## Page 6
+
+### [p006_c0001] 2012 Proposed Plan: Overview
+> [p006_c0002] The map illustrates the proposed subway alignment from Twelfth Avenue to First Avenue. A yellow line represents the proposed alignment, which runs parallel to the existing subway tracks. The map shows the following street names from west to east: Twelfth Ave, Eleventh Ave, Tenth Ave, Ninth Ave, Eighth Ave, Seventh Ave, Sixth Ave, Broadway, Fifth Ave, Madison Ave, Park Ave, Lexington Ave, Third Ave, Second Ave, and First Ave. A blue arrow points to the alignment between Twelfth Ave and Ninth Ave, labeled "60 ft Roadway". Another blue arrow points to the alignment between Ninth Ave and Third Ave, labeled "52 ft Roadway". A third blue arrow points to the alignment between Third Ave and First Ave, labeled "60 ft Roadway". The map also shows the location of 42nd Street and various green-shaded areas representing parks or other land uses.
+[p006_c0003] _MTA New York City Transit_
+[p006_c0004] _NEW YORK CITY DOT_
+
+## Page 7
+
+### [p007_c0001] 2012 Proposed Plan: Overview
+[p007_c0002] 60 ft wide section: East of Third Ave West of Ninth Ave
+> [p007_c0003] The diagram illustrates a 60-foot wide street section divided into six vertical lanes. From left to right, the lanes are: 1. A grey lane labeled 'Curb Access/ Bus Stops' with a black bus icon. 2. A brown lane labeled 'Bus Lane' with a white downward-pointing arrow. 3. A grey lane with a black downward-pointing arrow and a black car icon. 4. A grey lane with a black upward-pointing arrow and a black car icon, separated from the previous lane by two yellow vertical lines. 5. A brown lane labeled 'Bus Lane' with a white upward-pointing arrow. 6. A grey lane labeled 'Curb Access/ Bus Stops' with a black bus icon.
+[p007_c0004] _New York City Transit_
+
+## Page 8
+
+### [p008_c0001] 2012 Proposed Plan: Overview
+[p008_c0002] 52 ft wide section: Third Ave to Ninth Ave
+> [p008_c0003] The diagram illustrates a 52-foot wide street section divided into five vertical lanes. From left to right, the lanes are: Curb Access/ Bus Stops: A light gray lane with a black truck icon at the bottom. Bus Lane: A brown lane with a white downward-pointing arrow and the text "Bus Lane" in white. Two-way Traffic: A light gray lane divided by two yellow lines. The left side has a black downward-pointing arrow and a black car icon. The right side has a black upward-pointing arrow and a black car icon. Bus Lane: A brown lane with a white upward-pointing arrow and the text "Bus Lane" in white.
+[p008_c0004] _New York City Transit_
+
+## Page 9
+
+[p009_c0001] Bus Bulb
+[p009_c0002] General Traffic Lanes
+[p009_c0003] Offset Bus Lane
+[p009_c0004] Offset Bus Lane
+[p009_c0005] Loading Zone
+[p009_c0006] _New York City Transit_
+[p009_c0007] _NEW YORK CITY DOT_
+
+## Page 10
+
+### [p010_c0001] Project Benefits
+- [p010_c0002] • Bus Service : improves bus reliability and increase bus speeds for over 33,000 daily riders • Pedestrians : adds 18,000 sq. ft. of new pedestrian space, reducing crowding and improving safety • Loading : increases daytime loading from 32 to 258 spaces with a loading zone on every block • Design : uses standard bus and pedestrian design elements; emergency vehicles could use the improved bus lanes • Traffic : maintains 2-way traffic from river to river
+[p010_c0003] _New York City Transit_
+[p010_c0004] _NEW YORK CITY DOT_
+
+## Page 11
+
+### [p011_c0001] Design Changes
+> [p011_c0002] Twelfth Avenue Eleventh Avenue Dyer Ave/Tenth Avenue Ninth Avenue Eighth Avenue Seventh Avenue/Penn Station Sixth Avenue/Broadway/Herald Square Madison/Fifth Avenue Park Avenue Third Avenue Second Avenue First Avenue E. 34th Street Ferry Terminal Relocated eastbound stop to Eleventh Avenue providing better connection to the Jacobs Javits Convention Center Relocated westbound stop located at Tenth Avenue to Dyer Avenue better serving this dense residential block Banned westbound left turn to reduce vehicle delays on 34 th Street Banned westbound right turn to improve pedestrian safety across Eight Avenue and reduce vehicle delays on 34 th Street Under evaluation: Reopening 33 rd Street at Broadway/Sixth Avenue to through traffic Right-turn bay reduced to expand length of loading zone serving 7 Park Avenue Express bus stop combined with westbound Third Avenue SBS bus stop to provide improved curb access and reduce total length of bus stop in front of 155 E. 34 th Street Created commercial loading zone on Second Avenue to better improve access to 300 E. 34 th Street Created ambulette parking zone for Medical Arts Center Restored the eastbound left turn at First Avenue KEY SBS Bus Stop Commuter/Express Bus Stop Proposed Bus Lane
+[p011_c0003] _New York City Transit_
+
+## Page 12
+
+### [p012_c0001] Traffic Analysis
+> [p012_c0002] The MTA logo, consisting of the letters 'MTA' inside a blue circle.
+[p012_c0003] _New York City Transit_
+[p012_c0004] _The New York City Department of Transportation (NYC DOT) logo, featuring the words 'NEW YORK CITY' above 'DOT' with a stylized bridge graphic._
+
+## Page 13
+
+### [p013_c0001] Traffic Analysis Process
+- [p013_c0002] • Analyzed project effects on the regional transportation network: – Modeled Midtown from 23 rd Street to 60 th Street with DOT's Manhattan Traffic Model (MTM) • Identified potential traffic effects of 34 th St SBS on: – 34 th Street – Parallel streets – North-south Avenues • Conducted corridor analysis following guidelines of the City Environmental Quality Review (CEQR) handbook: – Intersection based approach – Analyzed all intersections which may be affected by diversions – Determined impact of the project on vehicle delay
+[p013_c0003] _New York City Transit_
+
+## Page 14
+
+### [p014_c0001] Traffic Analysis Area
+### [p014_c0002] 34th St SBS: Study Area
+> [p014_c0003] The diagram illustrates the study area for the 34th Street Subway (SBS) project. It shows a grid of streets with intersections marked by yellow circles. The streets are labeled as follows from left to right: Twelfth Ave./Rt 9A, Eleventh Ave., Tenth Ave., Dyer Ave., Ninth Ave., Eighth Ave., Seventh Ave., Broadway, Sixth Ave., Fifth Ave., Madison Ave., Park Ave., Lexington Ave., Third Ave., Tunnel Exit St., Second Ave., Tunnel Entrance St., First Ave., and FDR Drive. The subway tracks are shown running horizontally through the center of the grid, with labels for 35th St., 34th St., and 33rd St. Arrows indicate the direction of traffic flow on the streets and subway tracks.
+- [p014_c0004] • Created Synchro traffic model • Intersections connected into a network
+[p014_c0005] Three scenarios:
+- [p014_c0006] • Existing Conditions • 2012 without the project: “No Build” • 2012 with the project: “Build”
+[p014_c0007] _MTA New York City Transit_
+[p014_c0008] _NEW YORK CITY DOT_
+
+## Page 15
+
+### [p015_c0001] Findings: AM Peak Hour without the Project (2012)
+### [p015_c0002] 34th St SBS: AM No-Build Traffic Analysis
+> [p015_c0003] The map illustrates the 34th St SBS (Southbound/Southbound) during the AM Peak Hour in 2012, without the project. The grid of streets shown includes Twelfth Ave. / Rt 9A, Eleventh Ave., Tenth Ave., Dyer Ave., Ninth Ave., Eighth Ave., Seventh Ave., Broadway, Sixth Ave., Fifth Ave., Madison Ave., Park Ave., Lexington Ave., Third Ave. Tunnel Exit St., Second Ave. Tunnel Entrance St., First Ave. Tunnel Entrance St., and FDR Drive. The 34th St SBS is highlighted, with its approach levels of service indicated by colored circles at each intersection. The legend for the 34th St SBS Level of Service is as follows: A-B 20 seconds of delay (Dark Blue) C-D 20-45 seconds of delay (Light Blue) D-E 46-80 seconds of delay (Pink) F 80+ seconds of delay (Red)
+### [p015_c0004] 34th St SBS Level of Service
+- [p015_c0005] ● A-B 20 seconds of delay ● C-D 20-45 seconds of delay ● D-E 46-80 seconds of delay ● F 80+ seconds of delay
+[p015_c0006] _MTA New York City Transit_
+[p015_c0007] _NEW YORK CITY DOT_
+
+## Page 16
+
+### [p016_c0001] Findings: PM Peak Hour without the Project (2012)
+### [p016_c0002] 34th St SBS: PM No-Build Traffic Analysis
+> [p016_c0003] The map illustrates the 34th St SBS (Southbound/Southbound) corridor during the PM Peak Hour in 2012, without the project. The streets shown are Twelfth Ave./Rt 9A, Eleventh Ave., Tenth Ave., Dyer Ave., Ninth Ave., Eighth Ave., Seventh Ave., Broadway, Sixth Ave., Fifth Ave., Madison Ave., Park Ave., Lexington Ave., Third Ave., Tunnel Exit St., Second Ave., Tunnel Entrance St., First Ave., and FDR Drive. The map also shows 33rd St., 34th St., and 35th St. Intersections are marked with colored circles representing different levels of service delay. The legend indicates the following levels of service delay: A-B 20 seconds of delay (Dark Blue) C-D 20-45 seconds of delay (Light Blue) D-E 46-80 seconds of delay (Pink) F 80+ seconds of delay (Red) The map shows a high concentration of delays (F level, 80+ seconds) at the intersection of Seventh Ave. and 34th St. Other significant delays (D-E level, 46-80 seconds) are seen at Eleventh Ave., Tenth Ave., Dyer Ave., Ninth Ave., Eighth Ave., Seventh Ave., Broadway, Sixth Ave., Fifth Ave., Madison Ave., Park Ave., Lexington Ave., Third Ave., Tunnel Exit St., Second Ave., Tunnel Entrance St., First Ave., and FDR Drive. The map also shows a high concentration of delays (A-B level, 20 seconds) at the intersection of Eleventh Ave. and 34th St.
+### [p016_c0004] 34th St SBS Level of Service
+- [p016_c0005] ● A-B 20 seconds of delay ● C-D 20-45 seconds of delay ● D-E 46-80 seconds of delay ● F 80+ seconds of delay
+[p016_c0006] _MTA New York City Transit_
+[p016_c0007] _NEW YORK CITY DOT_
+
+## Page 17
+
+### [p017_c0001] 34 th St SBS Traffic Changes
+- [p017_c0002] • Capacity reductions – West bound: 2 general traffic lanes to 1 from Madison Ave to Ninth Ave – Both directions: 2 general traffic lanes to 1 from Eleventh Ave to Ninth Ave and from Third Ave to First Ave • Capacity improvements – Right-turn bays: reduces blockages at busy intersections – Signal timing improvements: more green time for 34 th Street – Offset bus lanes: blocked less often than curbside bus lanes, can carry more buses
+[p017_c0003] _New York City Transit_
+[p017_c0004] _NEW YORK CITY DOT_
+
+## Page 18
+
+### [p018_c0001] Findings: AM Peak Hour with the Project (2012)
+### [p018_c0002] 34th St SBS: AM Build Traffic Analysis
+> [p018_c0003] The map shows the following data points across the grid: Twelfth Ave./Rt 9A: No data points. Eleventh Ave.: No data points. Tenth Ave.: No data points. Dyer Ave.: A blue circle (A-B 20 seconds of delay) with a solid arrow pointing left. Ninth Ave.: A light blue circle (C-D 20-45 seconds of delay) with a dashed arrow pointing left. Eighth Ave.: A light blue circle (C-D 20-45 seconds of delay) with a dashed arrow pointing left. Seventh Ave.: A light blue circle (C-D 20-45 seconds of delay) with a solid arrow pointing left. Broadway: A light blue circle (C-D 20-45 seconds of delay) with a dashed arrow pointing left, and a red circle (F 80+ seconds of delay) with a solid arrow pointing left. Sixth Ave.: A light blue circle (C-D 20-45 seconds of delay) with a dashed arrow pointing left. Fifth Ave.: A light blue circle (C-D 20-45 seconds of delay) with a dashed arrow pointing left, and a light blue circle (C-D 20-45 seconds of delay) with a solid arrow pointing left. Madison Ave.: A light blue circle (C-D 20-45 seconds of delay) with a dashed arrow pointing left. Park Ave.: A light blue circle (C-D 20-45 seconds of delay) with a dashed arrow pointing left. Lexington Ave.: A red circle (F 80+ seconds of delay) with a solid arrow pointing left, and a light blue circle (C-D 20-45 seconds of delay) with a dashed arrow pointing left. Third Ave.: A light blue circle (C-D 20-45 seconds of delay) with a dashed arrow pointing left. Tunnel Exit St.: A light blue circle (C-D 20-45 seconds of delay) with a dashed arrow pointing left. Second Ave.: A light blue circle (C-D 20-45 seconds of delay) with a dashed arrow pointing left, and a blue circle (A-B 20 seconds of delay) with a solid arrow pointing left. Tunnel Entrance St.: A light blue circle (C-D 20-45 seconds of delay) with a dashed arrow pointing left. First Ave.: A light blue circle (C-D 20-45 seconds of delay) with a dashed arrow pointing left. FDR Drive: A light blue circle (C-D 20-45 seconds of delay) with a dashed arrow pointing left.
+### [p018_c0004] 34th St SBS Level of Service
+- [p018_c0005] ● A-B 20 seconds of delay ● C-D 20-45 seconds of delay ● D-E 46-80 seconds of delay ● F 80+ seconds of delay ○ Improvement: delay reduced ⊖ Decline: delay increased
+[p018_c0006] _MTA New York City Transit_
+[p018_c0007] _NEW YORK CITY DOT_
+
+## Page 19
+
+### [p019_c0001] Findings: PM Peak Hour with the Project (2012)
+### [p019_c0002] 34th St SBS: PM Build Traffic Analysis
+### [p019_c0003] 34th St SBS Level of Service
+- [p019_c0004] ● A-B 20 seconds of delay ● C-D 20-45 seconds of delay ● D-E 46-80 seconds of delay ● F 80+ seconds of delay ○ Improvement: delay reduced ⊖ Decline: delay increased
+[p019_c0005] _MTA New York City Transit_
+[p019_c0006] _NEW YORK CITY DOT_
+
+## Page 20
+
+### [p020_c0001] Design Changes in response to Traffic Analysis
+- [p020_c0002] • 34 th St East Bound at Second Ave: added additional traffic lane at intersection • 34 th St East Bound at Madison Ave: added bus only left turn lane and pedestrian island • Corridor wide: added green time to east-west traffic on 34 th Street • Expanded crosswalk widths
+[p020_c0003] _New York City Transit_
+[p020_c0004] _NEW YORK CITY DOT_
+
+## Page 21
+
+### [p021_c0001] Conclusions
+- [p021_c0002] • Overall, traffic delays will remain roughly the same • Some intersections will operate slightly better and a few slightly worse • Some traffic diverted to 35 th Street, number of vehicles is small • MTM shows no effect on traffic beyond the project area
+[p021_c0003] _New York City Transit_
+[p021_c0004] _NEW YORK CITY DOT_
+
+## Page 22
+
+### [p022_c0001] Fare Pre-Payment Update
+[p022_c0002] _New York City Transit_
+
+## Page 23
+
+### [p023_c0001] Fare Pre-Payment Overview
+- [p023_c0002] • Start date: Sunday November 13, 2011 • M34 to be renamed M34 SBS • M16 to be renamed the M34A SBS for clearer passenger communication • Pre-payment will be introduced at all M34 and M34A stops • Service levels and route will remain the same on both M34 SBS and M34A SBS
+[p023_c0003] _New York City Transit_
+[p023_c0004] _NEW YORK CITY DOT_
+
+## Page 24
+
+### [p024_c0001] Station Locations
+> [p024_c0002] A map of Manhattan showing the locations of M34 and M34A bus stops. The map includes a grid of streets, with West 43rd Street to West 34th Street and East 33rd Street to East 23rd Street labeled. Major streets like Broadway, Madison Avenue, Park Avenue, and Lexington Avenue are also shown. The M34 route is indicated by a double red line, and the M34A route is indicated by a single red line. Stops are marked with colored dots: red for M34, blue for M34A, and purple for shared stops. A legend in the bottom left corner defines these symbols. A north arrow is also present in the legend. Legend: M34 Stop (Red dot) M34A Stop (Blue dot) Shared Stop (Purple dot) M34A Route (Single red line) M34 Route (Double red line) Streets labeled on the map: West: W 43 ST, W 42 ST, W 41 ST, W 40 ST, W 39 ST, W 38 ST, W 37 ST, W 36 ST, W 35 ST, W 34 ST East: E 33 ST, E 32 ST, E 31 ST, E 30 ST, E 29 ST, E 28 ST, E 27 ST, E 26 ST, E 25 ST, E 24 ST, E 23 ST Avenues: 12 AV, 11 AV, 10 AV, 9 AV, 8 AV, 7 AV, 6 AV, 5 AV, MADISON AV, PARK AV S, LEXINGTON AV, 3 AV, 2 AV, 1 AV Other: BROADWAY, FORBES, WAC
+[p024_c0003] _MTA New York City Transit_
+[p024_c0004] _NEW YORK CITY DOT_
+
+## Page 25
+
+### [p025_c0001] How Pre-Payment Works: Overview
+- [p025_c0002] 1. Pay before you board by dipping MetroCard at sidewalk MetroCard machine or inserting coins at sidewalk coin machine 2. Take your proof of payment receipt 3. Enter through front or rear door of bus – no need to show receipt to the driver
+> [p025_c0003] A photograph of two sidewalk fare collection machines at a bus stop. The machine in the foreground is a 'MetroCard Fare Collector' with a blue panel that says 'PAY BEFORE YOU BOARD' and 'PAGUE ANTES DE ABORDAR'. It has a coin slot, a card reader, and a receipt slot. The machine in the background is a 'Coin Fare Collector' with a similar 'PAY BEFORE YOU BOARD' sign. Both machines are located on a paved sidewalk next to a bus stop. In the background, there is a tall building with many windows and a large metal pole.
+[p025_c0004] _New York City Transit_
+[p025_c0005] _NEW YORK CITY_
+
+## Page 26
+
+### [p026_c0001] How Pre-Payment Works: MetroCard Machine
+- [p026_c0002] 1. Push the Start button 2. Insert your Metrocard 3. Take your receipt 4. Hold onto receipt for inspection
+- [p026_c0003] • All MetroCards accepted • Transfers accepted - same transfer policies apply
+[p026_c0004] _New York City Transit_
+[p026_c0005] _NEW YORK CITY DOT_
+
+## Page 27
+
+### [p027_c0001] How Pre-Payment Works: Coin Machine
+- [p027_c0002] 1. Press black button to start 2. Insert coins 3. Take your receipt 4. Hold onto receipt for inspection • For reduced fare: press yellow button before inserting coins
+> [p027_c0003] An illustration of a New York City Transit coin machine. The machine is grey with a black front panel. At the top is a digital display showing fare information. Below the display is a coin slot. A yellow circle with the number '1' is placed over the coin slot. Below the coin slot is a row of buttons: a grey button, a white button, a yellow button, a grey button, a black button, and a red button. A yellow circle with the number '2' is placed over the black button. Below the buttons is a receipt slot. A yellow circle with the number '3' is placed over the receipt slot. At the bottom of the machine is a coin return slot.
+[p027_c0004] _New York City Transit_
+[p027_c0005] _NEW YORK CITY DOT_
+
+## Page 28
+
+### [p028_c0001] How Pre-Payment Works: Enforcement
+- [p028_c0002] • Inspector teams conduct random checks of buses • $100 fine for passengers with out a receipt • Fare evasion on Bx12 SBS and M15 SBS declined after pre-payment introduced
+> [p028_c0003] A photograph showing two NYCT Eagle Team officers in dark blue uniforms with 'NYCT' on the back, standing next to a white and blue bus. The bus has '+selectbuservice' written on its side. A text box in the upper left corner of the image area reads 'NYCT Eagle Team'. The bus is parked on a sidewalk with trees in the background.
+[p028_c0004] _New York City Transit_
+[p028_c0005] _NEW YORK CITY DOT_
+
+## Page 29
+
+### [p029_c0001] How Pre-Payment Works: Passenger Communication
+### [p029_c0002] During Start-Up Period
+- [p029_c0003] • Customer Ambassadors at all stops to explain system and help riders • All stops will be staffed by Customer Ambassadors • NYCT will distribute pre-payment guides to all passengers
+> [p029_c0004] A large blue circle with a lighter blue gradient at the bottom. Inside the circle, the text "Ask Me About" is written in white, followed by "+selectbuservice" in a white, lowercase, sans-serif font. At the bottom of the circle, the MTA logo (a white circle with "MTA" in blue) is followed by the text "New York City Transit" in white.
+[p029_c0005] _New York City Transit_
+
+## Page 30
+
+### [p030_c0001] What are the Benefits of Fare Pre-Payment?
+- [p030_c0002] • Faster Boarding – 36% less time spent at stops (M15 SBS) • Fare Evasion Reduced – 37% less fare evasion (M15 SBS)
+> [p030_c0003] A woman wearing a blue beanie and a purple jacket is using a MetroCard at a fare machine. She is holding the card near the 'METRO CARD' slot. The machine has a screen, a 'RECEIPT' slot, a 'PUSH TO START' button, and a 'METRO CARD' slot. The screen shows 'Audio' and 'MetroCard Fare Amount'.
+[p030_c0004] _New York City Transit_
+[p030_c0005] _NEW YORK CITY DOT_
+
+## Page 31
+
+[p031_c0001] Thank You
+> [p031_c0002] The MTA logo, consisting of the letters 'MTA' inside a blue circle.
+[p031_c0003] _New York City Transit_
+[p031_c0004] _The New York City Department of Transportation (NYC DOT) logo, featuring the words 'NEW YORK CITY' above 'DOT' with a stylized bridge graphic._
+
+## Page 32
+
+> [p032_c0001] 966* PARK FERRY TERMINAL BUS STOP RIGHT TURN ONLY OFFSET BUS LANE PARKING / LOADING 401 - 403 ONLY BUS FIRST AVENUE LEFT TURN ONLY GENERAL TRAFFIC RIGHT TURN ONLY FDR SERVICE ROAD
+[p032_c0002] _MTA New York City Transit_
+[p032_c0003] _NEW YORK CITY DOT_
+
+## Page 33
+
+[p033_c0001] _MTA New York City Transit_
+[p033_c0002] _NEW YORK CITY DOT_
+
+## Page 34
+
+> [p034_c0001] The diagram illustrates a street layout with the following features: Streets: Third Avenue (left) and Second Avenue (right). Midtown Tunnel: Located in the center, with arrows indicating traffic flow. Building Footprints: Top row: 201, 207, 209, 211/213, 225, 231, 233, 235, 237-239, 243, 623* Bottom row: 505*, 206-212, 222, 621* Bus Lanes and Stops: Left side (Third Avenue): Features a "RIGHT TURN ONLY" lane, a "CURB BUS LANE", and a "BUS BULB SBS STOP". Right side (Second Avenue): Features a "BUS BULB SBS STOP" and "RIGHT TURNS ALLOWED FROM BUS LANE". Parking and Loading Areas: Labeled "PARKING / LOADING" in several locations. Other Features: "CURB EXTENSION" is shown on both sides of the street. "CURB BUS LANE" and "BUS BULB SBS STOP" are also labeled on the left side.
+[p034_c0002] _MTA New York City Transit_
+[p034_c0003] _NEW YORK CITY DOT_
+
+## Page 35
+
+[p035_c0001] PARK AVENUE
+[p035_c0002] LEXINGTON AVENUE
+[p035_c0003] THIRD AVENUE
+[p035_c0004] 7* EXPRESS BUS STOP
+[p035_c0005] U.S. POST OFFICE
+[p035_c0006] 132*
+[p035_c0007] 105
+[p035_c0008] 115
+[p035_c0009] 127
+[p035_c0010] PARKING / LOADING
+[p035_c0011] OFFSET BUS LANE
+[p035_c0012] CURBSIDE SBS AND EXPRESS BUS STOP
+[p035_c0013] 155
+[p035_c0014] 139
+[p035_c0015] 143
+[p035_c0016] CURBSIDE SBS STOP
+[p035_c0017] GENERAL TRAFFIC
+[p035_c0018] CURBSIDE BUS LANE
+[p035_c0019] NORMAN THOMAS HIGH SCHOOL
+[p035_c0020] 3*
+[p035_c0021] 120
+[p035_c0022] PARKING / LOADING
+[p035_c0023] CURBSIDE BUS LANE GENERAL TRAFFIC OFFSET BUS LANE
+[p035_c0024] NYU CLINICAL CANCER CENTER
+[p035_c0025] 152
+[p035_c0026] 160
+[p035_c0027] 166
+[p035_c0028] 235*
+[p035_c0029] 138 140
+[p035_c0030] 150
+[p035_c0031] _MTA New York City Transit_
+[p035_c0032] _NEW YORK CITY DOT_
+
+## Page 36
+
+[p036_c0001] FIFTH AVENUE
+[p036_c0002] MADISON AVENUE
+[p036_c0003] PARK AVENUE
+[p036_c0004] 355* CUNY GRADUATE CENTER & SCIENCE, INDUSTRY, AND BUSINESS LIBRARY
+[p036_c0005] 20* 185* 45 47 51 53 55 10*
+[p036_c0006] GENERAL TRAFFIC CURBSIDE SBS STOP EXPRESS BUS STOP CURBSIDE BUS LANE BUS ONLY LEFT TURN BUS BULB SBS STOP
+[p036_c0007] PARKING / LOADING BUS BULB SBS STOP CURB EXTENSION
+[p036_c0008] 349* CURB EXTENSION PARKING / LOADING 4 8 14 15 178* OFFSET BUS LANE
+[p036_c0009] 181* OFFSET BUS LANE GENERAL TRAFFIC CURBSIDE BUS LANE 50 56 58 60 64 22*
+[p036_c0010] _MTA New York City Transit_
+[p036_c0011] _NEW YORK CITY DOT_

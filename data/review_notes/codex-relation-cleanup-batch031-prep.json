@@ -1,0 +1,536 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch031-prep",
+  "created_at": "2026-06-23T01:05:00Z",
+  "author": "codex",
+  "scope": "relation endpoint-shape cleanup prep only; durable retire+replace mechanism planned but not applied",
+  "batch": "batch031",
+  "run_id_for_replacements": "2026-06-23_codex_relation_cleanup_batch031",
+  "submitted_at_for_dry_run": "2026-06-23T01:05:00Z",
+  "durable_mechanism_planned_not_applied": {
+    "retirements_target": "data/submission-overrides/retired.json",
+    "replacement_journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch031.jsonl",
+    "applied": false
+  },
+  "bucket": {
+    "name": "part_of_program malformed endpoint repairs with direct program, claim, and document-context replacements",
+    "original_relation_kind": "part_of_program",
+    "prepared_count": 7,
+    "why_coherent": "After excluding retired and prior-batch rows through batch030, part_of_program is the largest remaining endpoint-shape family. This batch selects the high-confidence direct subset: reversed Access-A-Ride project/program rows become valid project -> entity part_of_program relations, project -> claim rows become has_claim, and project/corridor rows aimed at source/entity context become related_to rather than widening part_of_program."
+  },
+  "checkpoint_context": {
+    "method": "Read-only inventory over canonical JSONL and canonical.db with current endpoint-shape rules; excluded retired submissions, prior codex relation cleanup prep originals through batch030, and missing-target repair work. Did not run CLI validate, materialize, export-jsonl, DB repair/publish, or provider-backed commands.",
+    "canonical_db_read_check": {
+      "command": "sqlite3 data/canonical.db select record_id, relation_kind, subject_id, object_id for the seven candidate records",
+      "result": "Confirmed all seven candidate records are current canonical part_of_program rows with the malformed endpoints listed below."
+    },
+    "remaining_endpoint_shape_inventory_after_exclusions": {
+      "total": 47,
+      "selected_bucket_family": "part_of_program",
+      "selected_family_count": 12,
+      "prepared_count": 7,
+      "other_top_buckets": [
+        {
+          "bucket": "part_of_program project->source",
+          "count": 3
+        },
+        {
+          "bucket": "has_metric source->metric_claim",
+          "count": 2
+        },
+        {
+          "bucket": "has_timeline_event claim->event",
+          "count": 2
+        },
+        {
+          "bucket": "implemented_by route->entity",
+          "count": 2
+        },
+        {
+          "bucket": "part_of_program event->entity",
+          "count": 2
+        }
+      ],
+      "deferred_from_selected_family": [
+        {
+          "record_id": "relation_budget-event-committee-133306",
+          "reason": "Agenda/work-plan event -> entity row likely needs a committee-agenda/event-context modeling decision rather than a direct part_of_program repair."
+        },
+        {
+          "record_id": "relation_ridership-event-committee-133306",
+          "reason": "Agenda/work-plan event -> entity row likely needs a committee-agenda/event-context modeling decision rather than a direct part_of_program repair."
+        },
+        {
+          "record_id": "relation_hudson-line-next-up-planning",
+          "reason": "Project -> claim row is plausible, but current cited block is only the 'Next Up: Planning' heading; deferred until the evidence span is reviewed with the adjacent Hudson Line block."
+        },
+        {
+          "record_id": "relation_gcm-east-side-access",
+          "reason": "Project -> event row points at a board-meeting event; deferred because the best durable target may be an East Side Access project/program record rather than the current event."
+        },
+        {
+          "record_id": "relation_westbury-garage-main-line-expansion",
+          "reason": "Project -> event row says Westbury Garage is part of Main Line Expansion but the current object is an opening event; deferred until a durable Main Line Expansion project target is verified."
+        }
+      ]
+    }
+  },
+  "exclusions_and_guards": {
+    "excluded_batches": [
+      "batch017",
+      "batch019",
+      "batch020",
+      "batch021",
+      "batch022",
+      "batch023",
+      "batch024",
+      "batch025",
+      "batch026",
+      "batch027",
+      "batch028",
+      "batch029",
+      "batch030"
+    ],
+    "missing_target_repair_excluded": true,
+    "retired_json_not_edited": true,
+    "submission_journals_not_edited": true,
+    "generated_outputs_not_edited": true,
+    "log_not_edited": true,
+    "manifest_merges_retired_not_edited": true,
+    "wiki_source_pages_not_edited": true,
+    "original_submission_guard": {
+      "retired_hits": [],
+      "prior_relation_batch_hits": []
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": [],
+      "prior_review_note_submission_id_hits": [],
+      "prior_review_note_local_observation_id_hits": []
+    }
+  },
+  "local_validation": {
+    "tooling": "createSubmissionEntry plus relationEndpointIssues using accepted local observation ids by source; relationEndpointShapeIssue checked against canonical endpoint kinds for each replacement",
+    "summary": {
+      "prepared_count": 7,
+      "retire_replace_count": 7,
+      "retire_only_count": 0,
+      "accepted_replacement_count": 7,
+      "issue_count": 0,
+      "warning_count": 0,
+      "endpoint_shape_issue_count_after_replacement": 0
+    }
+  },
+  "prepared": [
+    {
+      "retire": {
+        "submission_id": "sub_2dc9ac13ae00f770",
+        "original_record_id": "relation_corridor-vision-zero",
+        "original_local_observation_id": "relation_corridor_vision_zero",
+        "malformed_shape": "part_of_program corridor -> entity",
+        "original_relation_kind": "part_of_program",
+        "original_subject_id": "corridor_utica-ave-b46-2015-04-06",
+        "original_subject_local_observation_id": "corridor_utica_ave_b46_apr2016",
+        "original_object_id": "entity_vision-zero-utica-apr2016",
+        "original_object_local_observation_id": "entity_vision_zero_utica_apr2016",
+        "reason": "The original row uses corridor as the part_of_program subject, which is not a legal endpoint. The evidence states Utica Avenue is a Vision Zero Priority Corridor, supporting a generic source-backed corridor/entity association without widening part_of_program."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_37ba93ec2507df23",
+        "proposed_relation_kind": "related_to",
+        "proposed_endpoint_shape": "corridor -> entity",
+        "tool_args": {
+          "source_id": "brt_cb17_uticaave_apr2016",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch031_utica_corridor_related_to_vision_zero",
+          "label": "Utica corridor related to Vision Zero",
+          "raw_text": "Utica Avenue is a Vision Zero Priority Corridor",
+          "payload": {
+            "relation_kind": "related_to",
+            "subject_id": "corridor_utica-ave-b46-2015-04-06",
+            "object_id": "entity_vision-zero-utica-apr2016",
+            "description": "Replacement for malformed part_of_program corridor -> entity relation; source identifies Utica Avenue as a Vision Zero Priority Corridor, but corridor is not a legal part_of_program subject.",
+            "relation_family": "dependency_or_reference"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "brt_cb17_uticaave_apr2016",
+              "evidence_id": "brt_cb17_uticaave_apr2016#p033_c0002",
+              "source_path": "raw/sources/brt_cb17_uticaave_apr2016/blocks.jsonl",
+              "page_number": 33,
+              "block_id": "p033_c0002",
+              "text_sha256": "sha256:14c205b606c7e17eb8ba25839a3f74eb18c51a7e923b1cb0ccdfaa81878e4ea8",
+              "text_source": "raw_text",
+              "role": "program_context",
+              "source_quote": "Utica Avenue is a Vision Zero Priority Corridor"
+            },
+            {
+              "source_id": "brt_cb17_uticaave_apr2016",
+              "evidence_id": "brt_cb17_uticaave_apr2016#p003_c0003",
+              "source_path": "raw/sources/brt_cb17_uticaave_apr2016/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0003",
+              "text_sha256": "sha256:3abc7a7a9990d725dc460727d082667854764c299bebda409d344c39eec2c13c",
+              "text_source": "raw_text",
+              "role": "program_context",
+              "source_quote": "Vision Zero Priority Corridor"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_c020155a49dc36c5",
+        "original_record_id": "relation_meeting-doc-114216-aar-ehail-phase2",
+        "original_local_observation_id": "relation_meeting_doc_114216_aar_ehail_phase2",
+        "malformed_shape": "part_of_program entity -> project",
+        "original_relation_kind": "part_of_program",
+        "original_subject_id": "entity_annual-report-2021-accessaride",
+        "original_subject_local_observation_id": "entity_meeting_doc_114216_access_a_ride",
+        "original_object_id": "project_meeting-doc-114216-ehail-phase2",
+        "original_object_local_observation_id": "project_meeting_doc_114216_ehail_phase2",
+        "reason": "The original row reverses the legal part_of_program direction. The evidence frames E-Hail Phase 2 as part of the overall AAR strategic approach, so the project should point to the Access-A-Ride program/entity context."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_5eefca2c22bb236e",
+        "proposed_relation_kind": "part_of_program",
+        "proposed_endpoint_shape": "project -> entity",
+        "tool_args": {
+          "source_id": "meeting_doc_114216",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch031_ehail_phase2_part_of_access_a_ride",
+          "label": "E-Hail Phase 2 part of Access-A-Ride strategy",
+          "raw_text": "Pilot an E-Hail program that is more financially sustainable and more consistent with overall AAR strategic approach",
+          "payload": {
+            "relation_kind": "part_of_program",
+            "subject_id": "project_meeting-doc-114216-ehail-phase2",
+            "object_id": "entity_annual-report-2021-accessaride",
+            "description": "Replacement for malformed part_of_program entity -> project relation; source frames E-Hail Phase 2 as an E-Hail program consistent with the overall AAR strategic approach, so the project should point to the Access-A-Ride program/entity context.",
+            "relation_family": "program_project_scope"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_114216",
+              "evidence_id": "meeting_doc_114216#p008_c0003",
+              "source_path": "raw/sources/meeting_doc_114216/blocks.jsonl",
+              "page_number": 8,
+              "block_id": "p008_c0003",
+              "text_sha256": "sha256:98610679669cdfaa383660ec7e234bac08fa07808bb491057aad4b34f71379ae",
+              "text_source": "raw_text",
+              "role": "program_context",
+              "source_quote": "Pilot an E-Hail program that is more financially sustainable and more consistent with overall AAR strategic approach"
+            },
+            {
+              "source_id": "meeting_doc_114216",
+              "evidence_id": "meeting_doc_114216#p009_c0002",
+              "source_path": "raw/sources/meeting_doc_114216/blocks.jsonl",
+              "page_number": 9,
+              "block_id": "p009_c0002",
+              "text_sha256": "sha256:410998bac1b801861a7db0d01185bc2f309c42ff422ff252bbc8c59580a3f6b4",
+              "text_source": "raw_text",
+              "role": "program_context",
+              "source_quote": "Expanding E-Hail to 3,600 total customers"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_b9f578f5ceef797c",
+        "original_record_id": "relation_meeting-doc-114216-aar-ehail-pilot",
+        "original_local_observation_id": "relation_meeting_doc_114216_aar_ehail_pilot",
+        "malformed_shape": "part_of_program entity -> project",
+        "original_relation_kind": "part_of_program",
+        "original_subject_id": "entity_annual-report-2021-accessaride",
+        "original_subject_local_observation_id": "entity_meeting_doc_114216_access_a_ride",
+        "original_object_id": "project_meeting-doc-114216-ehail-phase1",
+        "original_object_local_observation_id": "project_meeting_doc_114216_ehail_phase1",
+        "reason": "The original row reverses the legal part_of_program direction. The evidence lists expansion of the E-Hail Pilot Program under Improving Access-A-Ride, so the project should point to Access-A-Ride program/entity context."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_704d753030cc9ea6",
+        "proposed_relation_kind": "part_of_program",
+        "proposed_endpoint_shape": "project -> entity",
+        "tool_args": {
+          "source_id": "meeting_doc_114216",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch031_ehail_pilot_part_of_access_a_ride",
+          "label": "E-Hail Pilot part of Access-A-Ride improvements",
+          "raw_text": "Expand E-Hail Pilot Program",
+          "payload": {
+            "relation_kind": "part_of_program",
+            "subject_id": "project_meeting-doc-114216-ehail-phase1",
+            "object_id": "entity_annual-report-2021-accessaride",
+            "description": "Replacement for malformed part_of_program entity -> project relation; source lists expanding the E-Hail Pilot Program under Improving Access-A-Ride, so the project should point to Access-A-Ride program/entity context.",
+            "relation_family": "program_project_scope"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_114216",
+              "evidence_id": "meeting_doc_114216#p007_c0002",
+              "source_path": "raw/sources/meeting_doc_114216/blocks.jsonl",
+              "page_number": 7,
+              "block_id": "p007_c0002",
+              "text_sha256": "sha256:da9248b5562ee9a6c063be75a1d550194c6c41fa28ba376848e316699975c0e7",
+              "text_source": "raw_text",
+              "role": "program_context",
+              "source_quote": "Phase 1 Pilot (2017 - Present)"
+            },
+            {
+              "source_id": "meeting_doc_114216",
+              "evidence_id": "meeting_doc_114216#p005_c0011",
+              "source_path": "raw/sources/meeting_doc_114216/blocks.jsonl",
+              "page_number": 5,
+              "block_id": "p005_c0011",
+              "text_sha256": "sha256:d4f616cd567b3385374ef0a394abc1c388a8de51311a642817ca9188cabd2390",
+              "text_source": "raw_text",
+              "role": "program_context",
+              "source_quote": "Expand E-Hail Pilot Program"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_4fdadacde220e3aa",
+        "original_record_id": "relation_gun-hill-faster-cleaner-safer",
+        "original_local_observation_id": "relation_gun_hill_faster_cleaner_safer",
+        "malformed_shape": "part_of_program project -> claim",
+        "original_relation_kind": "part_of_program",
+        "original_subject_id": "project_gun-hill-road-bus-lanes",
+        "original_subject_local_observation_id": "project_gun_hill_road_bus_lanes",
+        "original_object_id": "claim_faster-cleaner-safer-plan-nyct",
+        "original_object_local_observation_id": "claim_faster_cleaner_safer_plan_nyct",
+        "reason": "The original row uses a claim as the part_of_program object. The source says Gun Hill Road bus lanes will play a role in Transit's Faster, Cleaner, Safer Plan, which is better preserved as project has_claim claim."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_c92185be6381a02d",
+        "proposed_relation_kind": "has_claim",
+        "proposed_endpoint_shape": "project -> claim",
+        "tool_args": {
+          "source_id": "meeting_doc_127471",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch031_gun_hill_has_faster_cleaner_safer_claim",
+          "label": "Gun Hill Road bus lanes has Faster Cleaner Safer Plan claim",
+          "raw_text": "Gun Hill Road bus lanes will play a role in Transit's Faster, Cleaner, Safer Plan",
+          "payload": {
+            "relation_kind": "has_claim",
+            "subject_id": "project_gun-hill-road-bus-lanes",
+            "object_id": "claim_faster-cleaner-safer-plan-nyct",
+            "description": "Replacement for malformed part_of_program project -> claim relation; source says the Gun Hill Road bus lanes initiative will play a role in Transit's Faster, Cleaner, Safer Plan, already represented as a claim record.",
+            "relation_family": "claim_context"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_127471",
+              "evidence_id": "meeting_doc_127471#p015_c0011",
+              "source_path": "raw/sources/meeting_doc_127471/blocks.jsonl",
+              "page_number": 15,
+              "block_id": "p015_c0011",
+              "text_sha256": "sha256:5d341caabe6b1c4265e38f291b8b527ffc02e724a0b5329fdf5167134f302cbf",
+              "text_source": "raw_text",
+              "role": "claim_context",
+              "source_quote": "will play a role in Transit's \"Faster, Cleaner, Safer\" Plan"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_c621889d18837a7c",
+        "original_record_id": "relation_meeting-doc-112141-grand-central-part-of-20yr",
+        "original_local_observation_id": "relation_meeting_doc_112141_grand_central_part_of_20yr",
+        "malformed_shape": "part_of_program project -> source",
+        "original_relation_kind": "part_of_program",
+        "original_subject_id": "project_meeting-doc-112141-grand-central-train-shed",
+        "original_subject_local_observation_id": "project_meeting_doc_112141_grand_central_train_shed",
+        "original_object_id": "source_meeting-doc-112141",
+        "original_object_local_observation_id": "source_meeting_doc_112141",
+        "reason": "The original row uses a source record as the part_of_program object. The evidence is document context presenting Grand Central Train Shed as a next Mega infrastructure project, so related_to preserves the association without treating a source as a program endpoint."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_38a6dcd740aca00f",
+        "proposed_relation_kind": "related_to",
+        "proposed_endpoint_shape": "project -> source",
+        "tool_args": {
+          "source_id": "meeting_doc_112141",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch031_grand_central_train_shed_related_to_20yr_needs_update",
+          "label": "Grand Central Train Shed related to 20-Year Needs update",
+          "raw_text": "The Grand Central Train Shed is one of our next Mega infrastructure projects.",
+          "payload": {
+            "relation_kind": "related_to",
+            "subject_id": "project_meeting-doc-112141-grand-central-train-shed",
+            "object_id": "source_meeting-doc-112141",
+            "description": "Replacement for malformed part_of_program project -> source relation; the source document presents Grand Central Train Shed as a next Mega infrastructure project, but a source record is not a legal part_of_program object.",
+            "relation_family": "dependency_or_reference"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_112141",
+              "evidence_id": "meeting_doc_112141#p014_c0004",
+              "source_path": "raw/sources/meeting_doc_112141/blocks.jsonl",
+              "page_number": 14,
+              "block_id": "p014_c0004",
+              "text_sha256": "sha256:57a4ef668a08895d4c622d1903307e7fe4e4ebb8cbf7f9613d9a1d9331bb63b5",
+              "text_source": "raw_text",
+              "role": "document_context",
+              "source_quote": "The Grand Central Train Shed is one of our next 'Mega' infrastructure projects."
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_c85ca73f5e3f3e5b",
+        "original_record_id": "relation_meeting-doc-112141-zerobus-part-of-20yr",
+        "original_local_observation_id": "relation_meeting_doc_112141_zerobus_part_of_20yr",
+        "malformed_shape": "part_of_program project -> source",
+        "original_relation_kind": "part_of_program",
+        "original_subject_id": "project_meeting-doc-112141-zero-emission-bus-transition",
+        "original_subject_local_observation_id": "project_meeting_doc_112141_zero_emission_bus_transition",
+        "original_object_id": "source_meeting-doc-112141",
+        "original_object_local_observation_id": "source_meeting_doc_112141",
+        "reason": "The original row uses a source record as the part_of_program object. The evidence is document context for zero-emission bus transition investment needs, so related_to preserves the association without treating a source as a program endpoint."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_2135a0cba30d6e0a",
+        "proposed_relation_kind": "related_to",
+        "proposed_endpoint_shape": "project -> source",
+        "tool_args": {
+          "source_id": "meeting_doc_112141",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch031_zero_bus_transition_related_to_20yr_needs_update",
+          "label": "Zero-Emission Bus Transition related to 20-Year Needs update",
+          "raw_text": "To achieve a 100% zero-emissions bus fleet by 2040 requires significant investment.",
+          "payload": {
+            "relation_kind": "related_to",
+            "subject_id": "project_meeting-doc-112141-zero-emission-bus-transition",
+            "object_id": "source_meeting-doc-112141",
+            "description": "Replacement for malformed part_of_program project -> source relation; the source document presents zero-emission bus transition investment needs, but a source record is not a legal part_of_program object.",
+            "relation_family": "dependency_or_reference"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_112141",
+              "evidence_id": "meeting_doc_112141#p019_c0002",
+              "source_path": "raw/sources/meeting_doc_112141/blocks.jsonl",
+              "page_number": 19,
+              "block_id": "p019_c0002",
+              "text_sha256": "sha256:ceac953d1dc6a6b82de2b82e01017cf0bab1443f949154fe56e865f5fd684d73",
+              "text_source": "raw_text",
+              "role": "document_context",
+              "source_quote": "To achieve a 100% zero-emissions bus fleet by 2040 requires significant investment"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_601170659eb5f193",
+        "original_record_id": "relation_meeting-doc-115221-psa-capital-program",
+        "original_local_observation_id": "relation_meeting_doc_115221_psa_capital_program",
+        "malformed_shape": "part_of_program project -> source",
+        "original_relation_kind": "part_of_program",
+        "original_subject_id": "project_annual-2021-penn-station-access",
+        "original_subject_local_observation_id": "project_meeting_doc_115221_penn_station_access",
+        "original_object_id": "source_meeting-doc-115221",
+        "original_object_local_observation_id": "source_meeting_doc_115221",
+        "reason": "The original row uses a source record as the part_of_program object. The evidence says a 2020-2024 Capital Program amendment supported Penn Station Access, so related_to preserves the source-backed context without treating the source document as a program endpoint."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_66cea539f6f66dd2",
+        "proposed_relation_kind": "related_to",
+        "proposed_endpoint_shape": "project -> source",
+        "tool_args": {
+          "source_id": "meeting_doc_115221",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch031_penn_station_access_related_to_audit_committee_book",
+          "label": "Penn Station Access related to Audit Committee capital-program source",
+          "raw_text": "MTA Board approved an amendment to increase the 2020-2024 Capital Program by $535 to support the Penn Station Access project.",
+          "payload": {
+            "relation_kind": "related_to",
+            "subject_id": "project_annual-2021-penn-station-access",
+            "object_id": "source_meeting-doc-115221",
+            "description": "Replacement for malformed part_of_program project -> source relation; source states the capital program amendment supported Penn Station Access, but the source document itself is not a legal part_of_program object.",
+            "relation_family": "dependency_or_reference"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_115221",
+              "evidence_id": "meeting_doc_115221#p025_c0006",
+              "source_path": "raw/sources/meeting_doc_115221/blocks.jsonl",
+              "page_number": 25,
+              "block_id": "p025_c0006",
+              "text_sha256": "sha256:10d1988b0cd2955772e35f7b8d8fc6a44d9e264afe54e310c3b6019455ab2e0c",
+              "text_source": "raw_text",
+              "role": "document_context",
+              "source_quote": "approved an amendment to increase the 2020-2024 Capital Program by $535 to support the Penn Station Access project"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    }
+  ]
+}

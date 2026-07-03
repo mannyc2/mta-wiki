@@ -1,0 +1,1091 @@
+{
+  "note_id": "codex-identity-batch150-prep",
+  "batch": "identity150",
+  "created_at": "2026-06-23T07:23:36Z",
+  "scope": {
+    "global_kind": "project",
+    "allowed_write": "data/review_notes/codex-identity-batch150-prep.json",
+    "durable_inputs_mutated": false,
+    "generated_outputs_mutated": false,
+    "db_mutated": false,
+    "provider_backed_commands_run": false
+  },
+  "prepared_count": 12,
+  "proposed_aliases": [
+    {
+      "global_kind": "project",
+      "alias_id": "project_m60-sbs-125th-street",
+      "target_id": "project_125th-st-sbs-2013",
+      "canonical_id": "project_125th-st-sbs-2013",
+      "confidence": "high",
+      "reason": "Both records identify the proposed M60 Select Bus Service project on 125th Street. The alias is the CB10 source record named \"M60 Select Bus Service on 125th Street\"; the target already aggregates the same M60-on-125th project across six 2013 community-board/workshop sources and carries the same shared identity key.",
+      "validator_duplicate_key": "project_m60-sbs-on-125th-st",
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_m60-sbs-125th-street and project_125th-st-sbs-2013 share identity key project_m60-sbs-on-125th-st.",
+        "shared_identity_keys": [
+          "project_m60-sbs-on-125th-st"
+        ],
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_project_merges": false,
+        "target_is_project_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "M60 Select Bus Service on 125th Street",
+          "source_ids": [
+            "2013_03_13_sbs_125th_cb10"
+          ],
+          "record_aliases": [
+            "project_m60-sbs-on-125th-st"
+          ],
+          "payload_fields": {
+            "project_name": "M60 Select Bus Service on 125th Street",
+            "project_type": "Select Bus Service",
+            "status": "proposed",
+            "description": "Proposed implementation of Select Bus Service on the M60 route along 125th Street corridor, including offset bus lanes, off-board fare collection, limited stops, transit signal priority, and pedestrian safety improvements",
+            "document_time_status": "planned",
+            "project_family": "sbs_or_brt"
+          },
+          "evidence_refs": [
+            "2013_03_13_sbs_125th_cb10#p001_c0001",
+            "2013_03_13_sbs_125th_cb10#p006_c0005",
+            "2013_03_13_sbs_125th_cb10#p006_c0006",
+            "2013_03_13_sbs_125th_cb10#p006_c0007"
+          ],
+          "raw_text": "M60 Select Bus Service on 125th Street"
+        },
+        "target": {
+          "display_name": "125th Street Select Bus Service",
+          "source_ids": [
+            "2013_03_07_sbs_125th_cb9",
+            "2013_03_sbs_125_st_cb11_slides",
+            "2013_04_09_sbs_125th_workshop_3",
+            "2013_06_04_sbs_125th_cb11",
+            "2013_06_05_sbs_125th_cb9",
+            "2013_06_12_sbs_125th_cb10"
+          ],
+          "record_aliases": [
+            "project_125th-st-sbs",
+            "project_m60-sbs-125th-street-2013",
+            "project_m60-sbs-125th-street-2013-06",
+            "project_m60-sbs-on-125th-st"
+          ],
+          "payload_fields": {
+            "project_name": "125th Street Select Bus Service",
+            "project_type": "Select Bus Service",
+            "status": "proposed",
+            "description": "Proposed Select Bus Service improvements on 125th Street for the M60 bus route, including offset bus lanes, off-board fare collection, limited stops, transit signal priority, and pedestrian safety improvements",
+            "lead_agency": "New York City Transit",
+            "document_time_status": "planned",
+            "project_family": "sbs_or_brt"
+          },
+          "evidence_refs": [
+            "2013_03_07_sbs_125th_cb9#p001_c0001",
+            "2013_03_07_sbs_125th_cb9#p006_c0005",
+            "2013_03_07_sbs_125th_cb9#p006_c0006",
+            "2013_04_09_sbs_125th_workshop_3#p001_c0019"
+          ],
+          "raw_text": "M60 Select Bus Service on 125th Street / Select Bus Service on the M60"
+        }
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_vn-safety-fence",
+      "target_id": "project_vn-x4-safety-fence",
+      "canonical_id": "project_vn-x4-safety-fence",
+      "confidence": "high",
+      "reason": "Both records identify the Verrazzano-Narrows Bridge safety-fence installation on the upper and lower roadways/levels. The alias is the board-approval design-build wording; the target is the awarded VN-X4 capital-project record with the same safety-fence project alias and matching bridge scope.",
+      "validator_duplicate_key": "project_vn-operational-improvements-safety-fence",
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_vn-safety-fence and project_vn-x4-safety-fence share identity key project_vn-operational-improvements-safety-fence.",
+        "shared_identity_keys": [
+          "project_vn-operational-improvements-safety-fence"
+        ],
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_project_merges": false,
+        "target_is_project_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "VN - Operational Improvements (Safety Fence)",
+          "source_ids": [
+            "meeting_doc_33241"
+          ],
+          "record_aliases": [
+            "project_vn-operational-improvements-safety-fence"
+          ],
+          "payload_fields": {
+            "project_name": "VN - Operational Improvements (Safety Fence)",
+            "project_type": "Design-Build",
+            "status": "Award pending Board approval",
+            "description": "Design-Build Services for Installation of the Safety Fence on the Upper and Lower Roadways at the Verrazzano-Narrows Bridge",
+            "lead_agency": "MTA Construction & Development",
+            "document_time_status": "other",
+            "project_family": "other"
+          },
+          "evidence_refs": [
+            "meeting_doc_33241#p056_c0007",
+            "meeting_doc_33241#p049_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "VN-X4 - Installation of Safety Fence at Verrazzano-Narrows Bridge",
+          "source_ids": [
+            "meeting_doc_37056",
+            "meeting_doc_52711"
+          ],
+          "record_aliases": [
+            "project_vn-operational-improvements-safety-fence",
+            "project_vn-x4-installation-of-safety-fence-at-verrazzano-narrows-bridge",
+            "project_vn-x4-installation-of-safety-fence-on-the-upper-and-lower-levels-of-the-suspended-spans-at-the-v",
+            "project_vn-x4-vn-operational-improvements-safety-fence"
+          ],
+          "payload_fields": {
+            "project_name": "VN-X4 - Installation of Safety Fence on the Upper and Lower Levels of the Suspended Spans at the Verrazzano-Narrows Bridge",
+            "project_type": "capital project",
+            "status": "awarded",
+            "description": "Installation of Safety Fence on the Upper and Lower Levels of the Suspended Spans at the Verrazzano-Narrows Bridge. Budget $40.0 million, awarded value $34.5 million. Awarded 1 month ahead of schedule.",
+            "document_time_status": "other",
+            "project_family": "capital_or_infrastructure"
+          },
+          "evidence_refs": [
+            "meeting_doc_37056#p071_c0007",
+            "meeting_doc_52711#p081_c0006",
+            "meeting_doc_52711#p083_c0003"
+          ],
+          "raw_text": "Project VN-X4- Installation of Safety Fence on the Upper and Lower Levels of the Suspended Spans at the Verrazzano-Narrows Bridge (ACEP D806VNX1) with a total value of $34.5M, awarded 1 month ahead of schedule."
+        }
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_39651-vn49-paint-suspended-span",
+      "target_id": "project_vn49-paint-suspended-span",
+      "canonical_id": "project_vn49-paint-suspended-span",
+      "confidence": "high",
+      "reason": "Both records identify VN-49 / Paint Suspended Span Upper and Lower Level Steel at the Verrazzano-Narrows Bridge. The alias is a meeting_doc_39651 progress record; the target carries the VN-49 contract-style name, later progress sources, and the same painting scope.",
+      "validator_duplicate_key": "project_paint-suspended-span-upper-and-lower-level-steel",
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_39651-vn49-paint-suspended-span and project_vn49-paint-suspended-span share identity key project_paint-suspended-span-upper-and-lower-level-steel.",
+        "shared_identity_keys": [
+          "project_paint-suspended-span-upper-and-lower-level-steel"
+        ],
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_project_merges": false,
+        "target_is_project_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Paint Suspended Span Upper & Lower Level Steel",
+          "source_ids": [
+            "meeting_doc_39651"
+          ],
+          "record_aliases": [
+            "project_paint-suspended-span-upper-and-lower-level-steel"
+          ],
+          "payload_fields": {
+            "project_name": "Paint Suspended Span Upper & Lower Level Steel",
+            "project_type": "capital project",
+            "status": "in progress",
+            "description": "Painting of suspended span upper and lower level steel at Verrazzano-Narrows Bridge",
+            "document_time_status": "other",
+            "project_family": "capital_or_infrastructure"
+          },
+          "evidence_refs": [
+            "meeting_doc_39651#p051_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "VN-49 Paint Suspended Span Upper & Lower Level Steel",
+          "source_ids": [
+            "meeting_doc_42391",
+            "meeting_doc_52711"
+          ],
+          "record_aliases": [
+            "project_paint-suspended-span-upper-and-lower-level-steel",
+            "project_vn-49-paint-suspended-span-upper-and-lower-level-steel",
+            "project_vn49-paint-suspended-span-upper-lower-level-steel"
+          ],
+          "payload_fields": {
+            "project_name": "VN-49 Paint Suspended Span Upper & Lower Level Steel",
+            "project_type": "capital project",
+            "status": "in progress",
+            "description": "Painting of suspended span upper and lower level steel at Verrazzano-Narrows Bridge. Budget $73.6 million, 58% physically complete, 17% contingency spent.",
+            "agency": "MTA Bridges and Tunnels",
+            "document_time_status": "other",
+            "project_family": "capital_or_infrastructure"
+          },
+          "evidence_refs": [
+            "meeting_doc_42391#p049_c0003",
+            "meeting_doc_52711#p085_c0003"
+          ],
+          "raw_text": "VN-49 D707VN49 Paint Suspended Span Upper & Lower Level Steel $73.6 $73.6 58 17 Dec-21 Dec-21 F"
+        }
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_8ave-cbtc-meeting-doc-135341",
+      "target_id": "project_8th-ave-cbtc",
+      "canonical_id": "project_8th-ave-cbtc",
+      "confidence": "high",
+      "reason": "Both records identify the 8th Avenue Line CBTC project from 59 St in Manhattan through High St in Brooklyn serving A/C/E lines. The alias is a single meeting_doc_135341 construction-status record; the target already aggregates the same 8th Avenue CBTC identity and implementation details across multiple sources.",
+      "validator_duplicate_key": "project_8th-ave-line-cbtc",
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_8ave-cbtc-meeting-doc-135341 and project_8th-ave-cbtc share identity key project_8th-ave-line-cbtc.",
+        "shared_identity_keys": [
+          "project_8th-ave-line-cbtc"
+        ],
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_project_merges": false,
+        "target_is_project_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "8th Avenue Line CBTC",
+          "source_ids": [
+            "meeting_doc_135341"
+          ],
+          "record_aliases": [
+            "project_8th-ave-line-cbtc"
+          ],
+          "payload_fields": {
+            "project_name": "8th Avenue Line CBTC",
+            "status": "in construction",
+            "description": "CBTC from 59 St in Manhattan through High St in Brooklyn. Includes Axle Counter System, R-179 and R-211 CBTC equipment. Serves A, C, E lines. More than 710,000 daily riders pre-COVID.",
+            "document_time_status": "other"
+          },
+          "evidence_refs": [
+            "meeting_doc_135341#p010_c0007",
+            "meeting_doc_135341#p010_c0009",
+            "meeting_doc_135341#p039_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "8th Avenue CBTC",
+          "source_ids": [
+            "meeting_doc_100281",
+            "meeting_doc_113971",
+            "meeting_doc_87691"
+          ],
+          "record_aliases": [
+            "project_8th-ave-cbtc-may-2022-update",
+            "project_8th-ave-cbtc-may2022-update",
+            "project_8th-ave-cbtc-meeting-doc-113971",
+            "project_8th-ave-line-cbtc"
+          ],
+          "payload_fields": {
+            "project_name": "8th Avenue CBTC",
+            "project_type": "Communications Based Train Control",
+            "status": "Under construction, approximately 73% complete",
+            "description": "Provide CBTC from 59 St in Manhattan through High St in Brooklyn for A, C, E services. Includes axle counters, interlockings, and carbone equipment for R179 and R211 cars.",
+            "document_time_status": "under_construction",
+            "project_family": "other"
+          },
+          "evidence_refs": [
+            "meeting_doc_100281#p011_c0012",
+            "meeting_doc_100281#p011_c0013",
+            "meeting_doc_113971#p012_c0006",
+            "meeting_doc_113971#p012_c0008"
+          ],
+          "raw_text": "8th Avenue Line CBTC project - 57% complete, on schedule with completion planned in January 2025. EAC $774M, a $14M increase. First project to feature axle counters."
+        }
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_jamaica-bus-depot-rebuild",
+      "target_id": "project_jamaica-bus-depot-reconstruction",
+      "canonical_id": "project_jamaica-bus-depot-reconstruction",
+      "confidence": "high",
+      "reason": "Both records identify the Jamaica Bus Depot reconstruction/rebuild and expansion in Queens. The alias describes the same depot rebuild for up to roughly 300 buses; the target is the richer reconstruction-project record with acquisition, reconstruction, zero-emission-bus support, and multiple source updates.",
+      "validator_duplicate_key": "project_jamaica-bus-depot-reconstruction-project",
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_jamaica-bus-depot-rebuild and project_jamaica-bus-depot-reconstruction share identity key project_jamaica-bus-depot-reconstruction-project.",
+        "shared_identity_keys": [
+          "project_jamaica-bus-depot-reconstruction-project"
+        ],
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_project_merges": false,
+        "target_is_project_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Jamaica Bus Depot Rebuild and Expansion",
+          "source_ids": [
+            "meeting_doc_104706",
+            "nyct_key_performance_metrics_june2025"
+          ],
+          "record_aliases": [
+            "project_jamaica-bus-depot-rebuild-and-expansion",
+            "project_jamaica-bus-depot-reconstruction-project",
+            "project_meeting-doc-jamaica-bus-depot"
+          ],
+          "payload_fields": {
+            "project_name": "Jamaica Bus Depot Rebuild and Expansion",
+            "project_type": "depot reconstruction and expansion",
+            "status": "under construction",
+            "description": "Reconstruct, expand, and modernize the Jamaica Bus Depot located at 165-18 Tuskegee Airmen Way in Queens, requiring temporary bus parking alternative site during construction",
+            "location": "Queens",
+            "document_time_status": "under_construction",
+            "project_family": "capital_or_infrastructure"
+          },
+          "evidence_refs": [
+            "nyct_key_performance_metrics_june2025#p024_c0002",
+            "nyct_key_performance_metrics_june2025#p024_c0005",
+            "meeting_doc_104706#p026_c0010",
+            "meeting_doc_104706#p025_c0004"
+          ],
+          "raw_text": "The MTA is rebuilding and expanding the Jamaica Bus Depot in Queens to better serve the community and support a modern, growing bus fleet. Once complete, the upgraded depot will handle the operation, maintenance, and storage of up to 300 buses."
+        },
+        "target": {
+          "display_name": "Jamaica Bus Depot Reconstruction Project",
+          "source_ids": [
+            "meeting_doc_100276",
+            "meeting_doc_101026",
+            "meeting_doc_102786",
+            "meeting_doc_104796",
+            "meeting_doc_105971",
+            "meeting_doc_106031",
+            "meeting_doc_133356",
+            "meeting_doc_44266"
+          ],
+          "record_aliases": [
+            "project_jamaica-bus-depot-recon-44266",
+            "project_jamaica-bus-depot-reconstruction-105971",
+            "project_jamaica-bus-depot-reconstruction-board",
+            "project_jamaica-bus-depot-reconstruction-feb2024",
+            "project_jamaica-bus-depot-reconstruction-project",
+            "project_meeting-doc-104796-jamaica-bus-depot-reconstruction",
+            "project_meeting-doc-106031-jamaica-bus-depot-reconstruction"
+          ],
+          "payload_fields": {
+            "project_name": "Jamaica Bus Depot Reconstruction Project",
+            "project_type": "capital project",
+            "status": "proposed action",
+            "description": "Acquisition of property interests for the Jamaica Bus Depot Reconstruction Project",
+            "lead_agency": "MTA New York City Transit",
+            "implementing_agency": "New York City Transit",
+            "location": "Queens",
+            "document_time_status": "planned",
+            "project_family": "capital_or_infrastructure"
+          },
+          "evidence_refs": [
+            "meeting_doc_102786#p012_c0007",
+            "meeting_doc_100276#p117_c0010",
+            "meeting_doc_104796#p068_c0010",
+            "meeting_doc_101026#p087_c0010"
+          ],
+          "raw_text": "The Project will both reconstruct and expand JBD to manage the operation, maintenance, and on-site storage for up to 272 Standard Bus Equivalents... infrastructure support for the operation and maintenance of an entirely zero-emissions bus fleet with a minimum of 60 electric buses assigned to the depot immediately upon completion of the Project."
+        }
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_lirr-babylon-interlocking-signal-v2",
+      "target_id": "project_lirr-babylon-interlocking-signal",
+      "canonical_id": "project_lirr-babylon-interlocking-signal",
+      "confidence": "high",
+      "reason": "Both records identify the LIRR Babylon Interlocking Signal System project. The alias is the design-build award wording for the same signal-system project; the target has the broader existing record with easement and upgrade evidence plus the same validator identity key.",
+      "validator_duplicate_key": "project_lirr-babylon-interlocking-signal-system-project",
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_lirr-babylon-interlocking-signal-v2 and project_lirr-babylon-interlocking-signal share identity key project_lirr-babylon-interlocking-signal-system-project.",
+        "shared_identity_keys": [
+          "project_lirr-babylon-interlocking-signal-system-project"
+        ],
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_project_merges": false,
+        "target_is_project_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "LIRR Babylon Interlocking Signal System Project",
+          "source_ids": [
+            "meeting_doc_86011"
+          ],
+          "record_aliases": [
+            "project_lirr-babylon-interlocking-signal-system-project"
+          ],
+          "payload_fields": {
+            "project_name": "LIRR Babylon Interlocking Signal System Project",
+            "project_type": "design-build",
+            "status": "awarded",
+            "implementing_agency": "MTA",
+            "document_time_status": "other",
+            "project_family": "other"
+          },
+          "evidence_refs": [
+            "meeting_doc_86011#p017_c0015"
+          ],
+          "raw_text": "The award of a publicly advertised and competitively solicited contract (6378) to RailWorks Transit LLC for design-build services for the Long Island Rail Road Babylon Interlocking Signal System Project for the amount of $58,134,000 and a duration of 1,442 calendar days."
+        },
+        "target": {
+          "display_name": "LIRR Babylon Interlocking Signal System and Upgrade Project",
+          "source_ids": [
+            "meeting_doc_157686",
+            "meeting_doc_79491"
+          ],
+          "record_aliases": [
+            "project_babylon-interlocking-signal-system",
+            "project_babylon-interlocking-signal-system-and-upgrade-project",
+            "project_lirr-babylon-interlocking-signal-system-and-upgrade-project",
+            "project_lirr-babylon-interlocking-signal-system-project",
+            "project_long-island-rail-rd-babylon-interlocking-signal-system-project"
+          ],
+          "payload_fields": {
+            "project_name": "Babylon Interlocking Signal System and Upgrade Project",
+            "project_type": "signal upgrade",
+            "status": "approved",
+            "description": "LIRR Babylon Interlocking Signal system and Upgrade Project supported by acquisition of permanent easements from the Town of Islip",
+            "agency": "MTA Long Island Rail Road",
+            "document_time_status": "other",
+            "project_family": "other"
+          },
+          "evidence_refs": [
+            "meeting_doc_157686#p004_c0007",
+            "meeting_doc_79491#p019_c0004",
+            "meeting_doc_79491#p020_c0008",
+            "meeting_doc_79491#p020_c0010"
+          ],
+          "raw_text": "acquisition of permanent easements from the Town of Islip in support of the LIRR's Babylon Interlocking Signal system and Upgrade Project"
+        }
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-197026-market-research",
+      "target_id": "project_market-research-retainer-contracts",
+      "canonical_id": "project_market-research-retainer-contracts",
+      "confidence": "high",
+      "reason": "Both records identify the same Full-Service Market Research Retainer Contracts procurement: eight all-agency market-research contracts with the same 60-month term and not-to-exceed value. The target is the current canonical record from meeting_doc_197456; the alias is the meeting_doc_197026 duplicate with matching procurement purpose.",
+      "validator_duplicate_key": "project_full-service-market-research-retainer-contracts",
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_meeting-doc-197026-market-research and project_market-research-retainer-contracts share identity key project_full-service-market-research-retainer-contracts.",
+        "shared_identity_keys": [
+          "project_full-service-market-research-retainer-contracts"
+        ],
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_project_merges": false,
+        "target_is_project_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Full-Service Market Research Retainer Contracts",
+          "source_ids": [
+            "meeting_doc_197026"
+          ],
+          "record_aliases": [
+            "project_full-service-market-research-retainer-contracts"
+          ],
+          "payload_fields": {
+            "project_name": "Full-Service Market Research Retainer Contracts",
+            "project_type": "personal service contract procurement",
+            "status": "Proposed for Board approval",
+            "description": "Award of eight competitively negotiated all-agency personal services contracts for quantitative market research services on an as-needed basis",
+            "lead_agency": "MTA Headquarters",
+            "document_time_status": "planned",
+            "project_family": "other"
+          },
+          "evidence_refs": [
+            "meeting_doc_197026#p005_c0007",
+            "meeting_doc_197026#p006_c0007",
+            "meeting_doc_197026#p006_c0005"
+          ]
+        },
+        "target": {
+          "display_name": "Full-Service Market Research Retainer Contracts",
+          "source_ids": [
+            "meeting_doc_197456"
+          ],
+          "record_aliases": [
+            "project_full-service-market-research-retainer-contracts"
+          ],
+          "payload_fields": {
+            "project_name": "Full-Service Market Research Retainer Contracts",
+            "project_type": "personal services contract",
+            "status": "proposed for Board approval",
+            "description": "Award of eight contracts to provide full range of quantitative market research services on as-needed basis for 60 months (March 1, 2026 - February 28, 2031)",
+            "agency": "MTA Headquarters",
+            "document_time_status": "planned",
+            "project_family": "other"
+          },
+          "evidence_refs": [
+            "meeting_doc_197456#p036_c0007",
+            "meeting_doc_197456#p037_c0007"
+          ],
+          "raw_text": "Eight competitively negotiated all-agency personal services contracts for full range of quantitative market research services on as-needed basis - $5.7M not-to-exceed"
+        }
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-111786-saga-bridge",
+      "target_id": "project_mnr-saga-bridge-q3-2023",
+      "canonical_id": "project_mnr-saga-bridge-q3-2023",
+      "confidence": "high",
+      "reason": "Both records identify Saga NH 44.32 Interim Repair at Westport, CT, specifically interim repair of bascule support framing, Phase 1. Status differs only by document-time progress; the project name, location, phase, and repair scope match.",
+      "validator_duplicate_key": "project_saga-nh-44-32-interim-repair",
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_meeting-doc-111786-saga-bridge and project_mnr-saga-bridge-q3-2023 share identity key project_saga-nh-44-32-interim-repair.",
+        "shared_identity_keys": [
+          "project_saga-nh-44-32-interim-repair"
+        ],
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_project_merges": false,
+        "target_is_project_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Saga NH 44.32 Interim Repair",
+          "source_ids": [
+            "meeting_doc_111786"
+          ],
+          "record_aliases": [
+            "project_saga-nh-44-32",
+            "project_saga-nh-44-32-interim-repair"
+          ],
+          "payload_fields": {
+            "project_name": "Saga NH 44.32",
+            "status": "5% complete",
+            "description": "Interim repair bascule support framing, Phase 1 (Westport, CT)",
+            "location": "Westport, CT",
+            "document_time_status": "other"
+          },
+          "evidence_refs": [
+            "meeting_doc_111786#p012_c0002"
+          ]
+        },
+        "target": {
+          "display_name": "Saga NH 44.32 (Westport, CT) Interim Repair",
+          "source_ids": [
+            "meeting_doc_124216"
+          ],
+          "record_aliases": [
+            "project_saga-nh-44-32-interim-repair",
+            "project_saga-nh-44-32-westport-ct-interim-repair"
+          ],
+          "payload_fields": {
+            "project_name": "Saga NH 44.32 Interim Repair",
+            "status": "in progress",
+            "description": "Interim repair bascule support framing, Phase 1 at Westport, CT",
+            "document_time_status": "other"
+          },
+          "evidence_refs": [
+            "meeting_doc_124216#p012_c0002"
+          ]
+        }
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-124201-mnr-ptc",
+      "target_id": "project_mnr-ptc-implementation",
+      "canonical_id": "project_mnr-ptc-implementation",
+      "confidence": "high",
+      "reason": "Both records identify Metro-North Positive Train Control implementation. The alias is a meeting_doc_124201 implementation/update record; the target is the established MNR PTC implementation record, and both share the exact MNR PTC implementation identity key.",
+      "validator_duplicate_key": "project_mnr-ptc-implementation",
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_meeting-doc-124201-mnr-ptc and project_mnr-ptc-implementation share identity key project_mnr-ptc-implementation.",
+        "shared_identity_keys": [
+          "project_mnr-ptc-implementation"
+        ],
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_project_merges": false,
+        "target_is_project_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "MNR PTC Implementation",
+          "source_ids": [
+            "meeting_doc_124201"
+          ],
+          "record_aliases": [
+            "project_mnr-ptc-implementation"
+          ],
+          "payload_fields": {
+            "project_name": "MNR PTC Implementation",
+            "status": "All trains are operating with full PTC Functionality on entire MNR territory including East and West of Hudson",
+            "description": "Metro-North Railroad Positive Train Control (PTC) implementation project including system integrator contract closure, software variances, and infrastructure projects",
+            "document_time_status": "other"
+          },
+          "evidence_refs": [
+            "meeting_doc_124201#p004_c0004",
+            "meeting_doc_124201#p004_c0006",
+            "meeting_doc_124201#p005_c0004"
+          ]
+        },
+        "target": {
+          "display_name": "MNR Positive Train Control (PTC) Project",
+          "source_ids": [
+            "meeting_doc_29961"
+          ],
+          "record_aliases": [
+            "project_mnr-positive-train-control-ptc-project",
+            "project_positive-train-control-ptc-implementation-metro-north"
+          ],
+          "payload_fields": {
+            "project_name": "Positive Train Control (PTC) Implementation - Metro-North",
+            "project_type": "safety system implementation",
+            "status": "in progress",
+            "description": "PTC implementation for Metro-North Railroad. 244.3 miles (100% East of Hudson) of track in full PTC protection as of December 2020. On-board, wayside, and communications installations completed. Commenced ERSD on Port Jervis Line in December 2020.",
+            "document_time_status": "other",
+            "project_family": "accessibility_or_safety"
+          },
+          "evidence_refs": [
+            "meeting_doc_29961#p142_c0007"
+          ]
+        }
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-164866-eastbound-reroute-harold",
+      "target_id": "project_eastbound-reroute-harold-133331",
+      "canonical_id": "project_eastbound-reroute-harold-133331",
+      "confidence": "high",
+      "reason": "Both records identify Eastbound Reroute Construction in Harold Interlocking. The alias is a timetable-support mention from meeting_doc_164866; the target is the same Harold Interlocking reroute construction project from meeting_doc_133331.",
+      "validator_duplicate_key": "project_eastbound-reroute-construction-in-harold-interlocking",
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_meeting-doc-164866-eastbound-reroute-harold and project_eastbound-reroute-harold-133331 share identity key project_eastbound-reroute-construction-in-harold-interlocking.",
+        "shared_identity_keys": [
+          "project_eastbound-reroute-construction-in-harold-interlocking"
+        ],
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_project_merges": false,
+        "target_is_project_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Eastbound Reroute Construction in Harold Interlocking",
+          "source_ids": [
+            "meeting_doc_164866"
+          ],
+          "record_aliases": [
+            "project_eastbound-reroute-construction-in-harold-interlocking"
+          ],
+          "payload_fields": {
+            "project_name": "Eastbound Reroute Construction in Harold Interlocking",
+            "project_type": "infrastructure construction",
+            "status": "planned",
+            "location": "Harold Interlocking",
+            "document_time_status": "planned",
+            "project_family": "capital_or_infrastructure"
+          },
+          "evidence_refs": [
+            "meeting_doc_164866#p001_c0006"
+          ],
+          "raw_text": "Projects supported during this timetable include...Eastbound Reroute Construction in Harold Interlocking"
+        },
+        "target": {
+          "display_name": "Eastbound Reroute Construction in Harold Interlocking",
+          "source_ids": [
+            "meeting_doc_133331"
+          ],
+          "record_aliases": [
+            "project_eastbound-reroute-construction-in-harold-interlocking"
+          ],
+          "payload_fields": {
+            "project_name": "Eastbound Reroute Construction in Harold Interlocking",
+            "project_type": "Reroute Construction",
+            "description": "Eastbound reroute construction project in Harold Interlocking supported during the March 4, 2024 - May 19, 2024 timetable period.",
+            "project_family": "capital_or_infrastructure"
+          },
+          "evidence_refs": [
+            "meeting_doc_133331#p001_c0005"
+          ]
+        }
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_student-omny-cards-meeting-doc-147341",
+      "target_id": "project_student-omny-dec2024",
+      "canonical_id": "project_student-omny-dec2024",
+      "confidence": "high",
+      "reason": "Both records identify the Student OMNY Cards / Student OMNY Card Program rollout. The alias is an introductory OMNY card record; the target already aggregates the same student-card program across launch and usage sources and carries matching Student OMNY aliases.",
+      "validator_duplicate_key": "project_student-omny-cards",
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_student-omny-cards-meeting-doc-147341 and project_student-omny-dec2024 share identity key project_student-omny-cards.",
+        "shared_identity_keys": [
+          "project_student-omny-cards"
+        ],
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_project_merges": false,
+        "target_is_project_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "Student OMNY Cards",
+          "source_ids": [
+            "meeting_doc_147341",
+            "meeting_doc_152171"
+          ],
+          "record_aliases": [
+            "project_meeting-doc-152171-student-omny-cards",
+            "project_student-omny-cards"
+          ],
+          "payload_fields": {
+            "project_name": "Student OMNY Cards",
+            "project_type": "fare payment program",
+            "description": "Introducing Student OMNY Cards - Increase Appeal for Customers",
+            "project_family": "fare_program"
+          },
+          "evidence_refs": [
+            "meeting_doc_147341#p020_c0002",
+            "meeting_doc_152171#p008_c0001"
+          ],
+          "raw_text": "Introducing Student OMNY Cards - Increase Appeal for Customers - OMNY - Your tap counts - Student"
+        },
+        "target": {
+          "display_name": "Student OMNY Card Program",
+          "source_ids": [
+            "meeting_doc_151651",
+            "meeting_doc_151656",
+            "meeting_doc_154976",
+            "meeting_doc_160446",
+            "meeting_doc_202096"
+          ],
+          "record_aliases": [
+            "project_meeting-151656-student-omny",
+            "project_meeting-doc-154976-student-omny",
+            "project_meeting151651-student-omny-cards",
+            "project_student-omny",
+            "project_student-omny-card-program",
+            "project_student-omny-cards",
+            "project_student-omny-cards-program",
+            "project_student-omny-meeting-doc-202096",
+            "project_student-omny-program"
+          ],
+          "payload_fields": {
+            "project_name": "Student OMNY Card Program",
+            "project_type": "fare payment",
+            "status": "launched",
+            "description": "Student OMNY cards put into the hands of NYC public school students for the first time, giving millions access to transportation for after-school, weekend, and summer activities.",
+            "document_time_status": "other",
+            "project_family": "fare_program"
+          },
+          "evidence_refs": [
+            "meeting_doc_160446#p005_c0003",
+            "meeting_doc_151651#p004_c0006",
+            "meeting_doc_151656#p004_c0006",
+            "meeting_doc_151656#p004_c0007"
+          ],
+          "raw_text": "Student OMNY cards have been put into the hands of New York City public school students for the first time. Now, millions of students have access to transportation for their after-school, weekend, and summer activities."
+        }
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_meeting-doc-131686-kronos-ukg-dimensions",
+      "target_id": "project_meeting-doc-133361-kronos-systems",
+      "canonical_id": "project_meeting-doc-133361-kronos-systems",
+      "confidence": "high",
+      "reason": "Both records identify Kronos Systems Integration and Implementation for the UKG/Kronos timekeeping platform migration. The alias is the proposed retainer-contract record; the target is the same Kronos systems integration record with matching validator identity key.",
+      "validator_duplicate_key": "project_kronos-systems-integration-and-implementation",
+      "validator_evidence": {
+        "duplicate_issue": "Global project records project_meeting-doc-131686-kronos-ukg-dimensions and project_meeting-doc-133361-kronos-systems share identity key project_kronos-systems-integration-and-implementation.",
+        "shared_identity_keys": [
+          "project_kronos-systems-integration-and-implementation"
+        ],
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "already_merged_in_current_project_merges": false,
+        "target_is_project_merge_alias": false,
+        "do_not_merge_hit": false,
+        "alias_equals_target": false
+      },
+      "source_evidence": {
+        "alias": {
+          "display_name": "project_meeting_doc_131686_kronos_ukg_dimensions",
+          "source_ids": [
+            "meeting_doc_131686"
+          ],
+          "record_aliases": [
+            "project_kronos-systems-integration-and-implementation"
+          ],
+          "payload_fields": {
+            "project_name": "Kronos Systems Integration and Implementation",
+            "project_type": "personal service contract",
+            "status": "proposed for award",
+            "description": "Two competitively negotiated retainer contracts with IBM and Accenture to provide consulting services for UKG Dimensions timekeeping platform migration from UKG Workforce Central (WFC).",
+            "agency": "MTA Headquarters",
+            "implementing_agency": "MTA IT",
+            "document_time_status": "planned",
+            "project_family": "other"
+          },
+          "evidence_refs": [
+            "meeting_doc_131686#p006_c0006",
+            "meeting_doc_131686#p006_c0009",
+            "meeting_doc_131686#p007_c0018"
+          ]
+        },
+        "target": {
+          "display_name": "Kronos Systems Integration and Implementation",
+          "source_ids": [
+            "meeting_doc_133361"
+          ],
+          "record_aliases": [
+            "project_kronos-systems-integration-and-implementation"
+          ],
+          "payload_fields": {
+            "project_name": "Kronos Systems Integration and Implementation",
+            "project_type": "IT consulting",
+            "description": "Consulting services for Kronos Systems Integration and Implementation at MTA",
+            "project_family": "other"
+          },
+          "evidence_refs": [
+            "meeting_doc_133361#p003_c0011"
+          ]
+        }
+      },
+      "guards": {
+        "alias_present_in_current_projects_jsonl": true,
+        "target_present_in_current_projects_jsonl": true,
+        "alias_not_already_merged": true,
+        "target_not_alias_mapped": true,
+        "alias_not_equal_target": true,
+        "do_not_merge_hit": false,
+        "raw_source_evidence_present": true,
+        "excluded_from_prior_project_prep_artifacts": true
+      }
+    }
+  ],
+  "exclusions_and_guards": {
+    "canonical_project_records_scanned": 1954,
+    "current_project_merge_aliases_considered": 252,
+    "current_project_do_not_merge_pairs_considered": 1,
+    "validator_duplicate_global_identity_project_issues_considered": 143,
+    "prior_project_prep_entries_considered": 37,
+    "prior_project_prep_unique_records_excluded": 70,
+    "selection_policy": [
+      "Project-only batch; no entity, route, or corridor aliases proposed.",
+      "Require alias_id and target_id to exist in current data/canonical/projects.jsonl.",
+      "Exclude aliases already present under data/identity-overrides/merges.json aliases.project.",
+      "Exclude targets that are themselves alias-mapped in current project merges to avoid target chains.",
+      "Exclude alias_id == target_id.",
+      "Exclude pairs matching current project do-not-merge guards.",
+      "Exclude records already used as project alias or target in prior codex identity prep artifacts.",
+      "Prefer exact project, procurement, package, contract, or named program duplicates with shared validator identity keys and compatible payload scope.",
+      "Reject same-name-but-different-phase/stage, parent-program/subproject, financing-resolution/program, agency-wide, or cross-location matches even when they share a weak identity key."
+    ],
+    "specific_exclusions": [
+      {
+        "candidate_area": "Better Buses Restart / Jamaica Busway",
+        "reason": "Current project do-not-merge guard documents parent-program versus child-project distinction."
+      },
+      {
+        "candidate_area": "2017 Street Improvement Project / Woodhaven / 79th Street",
+        "reason": "Shared key remains contaminated across distinct locations and project scopes."
+      },
+      {
+        "candidate_area": "MTA 2020-2024 Capital Program amendments",
+        "reason": "Amendments and base capital-program records are stage/version records, not safe identity aliases."
+      },
+      {
+        "candidate_area": "Lexington Avenue 96th-60th versus 60th-52nd bus lane records",
+        "reason": "One record covers the Better Buses Action Plan 96th-60th project while the other is a newer 60th-52nd segment; treated as a segment/stage trap."
+      },
+      {
+        "candidate_area": "Cos Cob Bridge steel repairs",
+        "reason": "Candidate records cite Phase 1 versus Phase 2 repairs, so they were excluded as same-name-but-different-phase traps."
+      },
+      {
+        "candidate_area": "Full-Service Market Research Retainer Contracts alias string",
+        "reason": "project_full-service-market-research-retainer-contracts is stale as a record id in current projects.jsonl and survives only as record_alias text; the current record-to-record duplicate uses project_meeting-doc-197026-market-research."
+      },
+      {
+        "candidate_area": "ABLE Program / ABLE expansion / route-specific camera expansion",
+        "reason": "Some duplicates are parent program, expansion wave, or route-specific expansion records rather than guaranteed same project identity."
+      },
+      {
+        "candidate_area": "Central Business District Tolling / congestion-relief revenue obligations / TransCore modification",
+        "reason": "Records mix program, financing resolution, and contract-modification facets rather than exact project identity."
+      }
+    ],
+    "all_selected_aliases_passed_guards": true
+  },
+  "command_evidence": [
+    {
+      "command": "pwd && git status --short",
+      "purpose": "Confirmed repo root and observed a busy worktree; treated unrelated changes as off-limits."
+    },
+    {
+      "command": "ls data/review_notes && wc -l data/canonical/projects.jsonl data/identity-overrides/merges.json data/identity-overrides/do-not-merge.json",
+      "purpose": "Confirmed available review-note inputs and current canonical/override files."
+    },
+    {
+      "command": "jq '.aliases.project | length' data/identity-overrides/merges.json && jq '.pairs.project | length' data/identity-overrides/do-not-merge.json",
+      "purpose": "Counted current project merge aliases and project do-not-merge guards."
+    },
+    {
+      "command": "jq '.pairs.project' data/identity-overrides/do-not-merge.json",
+      "purpose": "Read the current project do-not-merge guard and preserved the Better Buses Restart/Jamaica Busway exclusion."
+    },
+    {
+      "command": "sed -n '420,470p' packages/db/src/identity.ts && sed -n '280,325p' packages/pipeline/src/validate.ts",
+      "purpose": "Inspected local identity key and validation duplicate logic without running CLI validate."
+    },
+    {
+      "command": "bun --eval import validateRepo and identityKeysForRecord; mine project duplicate candidates with merge, do-not-merge, stale-record, target-chain, and prior-prep filters",
+      "purpose": "Generated deterministic local candidate lists from current canonical project records and validator identity keys."
+    },
+    {
+      "command": "bun --eval selected-pair guard/evidence check over projects.jsonl, merges.json, do-not-merge.json, identityKeysForRecord, and raw/sources/*/blocks.jsonl",
+      "purpose": "Verified selected alias/target records exist, are not currently merge aliases, do not hit project do-not-merge, share validator identity keys, and cite present raw evidence blocks."
+    },
+    {
+      "command": "rg 'project_meeting-doc-197026-market-research|project_full-service-market-research-retainer-contracts|project_market-research-retainer-contracts' data/canonical/projects.jsonl data/identity-overrides/merges.json data/review_notes/codex-identity-batch*.json",
+      "purpose": "Resolved the market-research stale alias-string trap and selected the current record-to-record duplicate instead."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "purpose": "Captured artifact created_at timestamp."
+    },
+    {
+      "command": "node heredoc generator writing only data/review_notes/codex-identity-batch150-prep.json",
+      "purpose": "Created the scoped JSON artifact from the selected, guard-checked project aliases."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "No provider-backed commands were run.",
+    "No materialize command was run.",
+    "No export-jsonl command was run.",
+    "No full CLI validate command was run.",
+    "No write, ask, schema, ontology, identity-review, canonicalize, campaign, or dedup commands were run.",
+    "No data/identity-overrides/merges.json edit was made.",
+    "No data/identity-overrides/do-not-merge.json edit was made.",
+    "No LOG.md, manifest, canonical JSONL, wiki page, DB, generated output, submission, or submission override edit was made."
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "batch_id": "identity136",
+  "global_kind": "entity",
+  "prepared_count": 11,
+  "proposed_aliases": [
+    {
+      "alias_id": "entity_meeting-doc-186836-rachel-cohen",
+      "target_id": "entity_meeting-doc-138391-rachel-cohen",
+      "confidence": "high",
+      "reason": "Same Rachel Cohen person identity. The alias and target both use the exact person name Rachel Cohen; the target evidence identifies Rachel Cohen as Acting Vice President of Paratransit, and the alias record carries Rachel Cohen person evidence from later accessibility/paratransit sources.",
+      "evidence_refs": [
+        "meeting_doc_186836#p009_c0004",
+        "meeting_doc_138391#p018_c0008"
+      ],
+      "guard_notes": "Entity/person merge only. Exact full name and compatible paratransit/accessibility leadership context; does not merge Rachel Cohen with any agency, department, role, or committee. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    },
+    {
+      "alias_id": "entity_meeting151651-rachel-cohen",
+      "target_id": "entity_meeting-doc-138391-rachel-cohen",
+      "confidence": "high",
+      "reason": "Same Rachel Cohen person identity. The alias display context identifies Rachel Cohen as Acting VP, Paratransit at MTA, matching the target's Rachel Cohen / Acting Vice President of Paratransit context.",
+      "evidence_refs": [
+        "meeting_doc_151651#p001_c0010",
+        "meeting_doc_138391#p018_c0008"
+      ],
+      "guard_notes": "Entity/person merge only. Exact full name plus same paratransit executive role context; no agency/person boundary involved. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    },
+    {
+      "alias_id": "entity_rachel-cohen-201601",
+      "target_id": "entity_meeting-doc-138391-rachel-cohen",
+      "confidence": "high",
+      "reason": "Same Rachel Cohen person identity. The alias describes Rachel Cohen as Senior Vice President Paratransit, which is compatible with the target's Rachel Cohen paratransit leadership identity.",
+      "evidence_refs": [
+        "meeting_doc_201601#p005_c0002",
+        "meeting_doc_138391#p018_c0008"
+      ],
+      "guard_notes": "Entity/person merge only. Exact full name and compatible paratransit leadership context; this does not collapse a department or title record. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    },
+    {
+      "alias_id": "entity_meeting-doc-107531-chris-pangilinan",
+      "target_id": "entity_meeting-doc-186836-chris-pangilinan",
+      "confidence": "high",
+      "reason": "Same Chris Pangilinan person identity. The alias names Chris Pangilinan in NYCT paratransit context, and the target is the existing Chris Pangilinan person record with MTA accessibility/operations-planning evidence.",
+      "evidence_refs": [
+        "meeting_doc_107531#p001_c0008",
+        "meeting_doc_186836#p006_c0003"
+      ],
+      "guard_notes": "Entity/person merge only. Exact full name and compatible MTA/NYCT accessibility or paratransit leadership context; no merge with MTA NYCT as an agency. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    },
+    {
+      "alias_id": "entity_meeting-doc-113986-chris-pangilinan",
+      "target_id": "entity_meeting-doc-186836-chris-pangilinan",
+      "confidence": "high",
+      "reason": "Same Chris Pangilinan person identity. Both records use the exact person name Chris Pangilinan and refer to the same MTA/NYCT bus, accessibility, or operations planning official context.",
+      "evidence_refs": [
+        "meeting_doc_113986#p007_c0005",
+        "meeting_doc_186836#p006_c0003"
+      ],
+      "guard_notes": "Entity/person merge only. Exact full name; guarded against agency/person confusion by keeping the target as the person record, not NYCT or MTA. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    },
+    {
+      "alias_id": "entity_meeting-doc-113956-patrick-warren",
+      "target_id": "entity_meeting-doc-127566-patrick-warren",
+      "confidence": "high",
+      "reason": "Same Patrick Warren person identity. The alias identifies Patrick Warren as MTA Chief Security Officer, and the target evidence lists Patrick Warren for MTA Headquarters safety/security officer context.",
+      "evidence_refs": [
+        "meeting_doc_113956#p003_c0004",
+        "meeting_doc_127566#p003_c0007"
+      ],
+      "guard_notes": "Entity/person merge only. Exact full name and compatible MTAHQ safety/security role context; does not merge the person with MTAHQ as an organization. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    },
+    {
+      "alias_id": "entity_patrick-warren-mtahq",
+      "target_id": "entity_meeting-doc-127566-patrick-warren",
+      "confidence": "high",
+      "reason": "Same Patrick Warren person identity. The alias is a Patrick Warren MTAHQ person record, and the target evidence identifies Patrick Warren as the MTA Headquarters safety/security officer.",
+      "evidence_refs": [
+        "meeting_doc_112151#p001_c0003",
+        "meeting_doc_127566#p003_c0007"
+      ],
+      "guard_notes": "Entity/person merge only. Exact full name and MTAHQ context; this is not an MTAHQ organization merge. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    },
+    {
+      "alias_id": "entity_meeting-doc-196846-james-odonnell",
+      "target_id": "entity_193976-james-odonnell",
+      "confidence": "high",
+      "reason": "Same James O'Donnell person identity. Both records use the exact James O'Donnell name and appear in Bridges and Tunnels committee/member contexts.",
+      "evidence_refs": [
+        "meeting_doc_196846#p002_c0005",
+        "meeting_doc_193976#p016_c0005"
+      ],
+      "guard_notes": "Entity/person merge only. Exact full name and compatible committee-member context; does not merge the person with the Bridges and Tunnels Committee entity. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    },
+    {
+      "alias_id": "entity_meeting208036-james-odonnell",
+      "target_id": "entity_193976-james-odonnell",
+      "confidence": "high",
+      "reason": "Same James O'Donnell person identity. The alias and target both carry exact James O'Donnell person mentions in the same Bridges and Tunnels governance/member setting.",
+      "evidence_refs": [
+        "meeting_doc_208036#p002_c0005",
+        "meeting_doc_193976#p016_c0005"
+      ],
+      "guard_notes": "Entity/person merge only. Exact full name and compatible MTA Bridges and Tunnels member context; person remains separate from committee or agency records. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    },
+    {
+      "alias_id": "entity_meeting-doc-131661-fitch-ratings",
+      "target_id": "entity_fitch-ratings",
+      "confidence": "high",
+      "reason": "Same Fitch Ratings organization identity. The alias identifies Fitch Ratings as a credit rating agency, matching the target's Fitch Ratings company/rating-agency record.",
+      "evidence_refs": [
+        "meeting_doc_131661#p008_c0002",
+        "meeting_doc_138286#p003_c0007"
+      ],
+      "guard_notes": "Entity/company merge only. Exact organization name and compatible rating-agency/company type; no broad agency or program label involved. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    },
+    {
+      "alias_id": "entity_meeting-doc-190031-marsah-properties-llc",
+      "target_id": "entity_marsah-properties-llc",
+      "confidence": "high",
+      "reason": "Same Marsah Properties LLC company identity. The alias uses the exact legal LLC name as a vendor record, while the target identifies Marsah Properties LLC as the lessor for LIRR office space at 300 Old Country Road.",
+      "evidence_refs": [
+        "meeting_doc_190031#p001_c0003",
+        "meeting_doc_190011#p006_c0008"
+      ],
+      "guard_notes": "Entity/company merge only. Exact LLC legal name and compatible vendor/lessor real-estate context; not a property/facility merge. Alias is absent from current entity merges and the pair is absent from entity do-not-merge."
+    }
+  ],
+  "commands_run": [
+    "pwd && rg --files data/identity-overrides data/review_notes raw wiki | head -200",
+    "jq 'keys' data/identity-overrides/merges.json",
+    "rg -n 'do.?not.?merge|do_not_merge|dont.?merge|identity136|identity135|global_kind.*entity|\\\"global_kind\\\": \\\"entity\\\"' data/identity-overrides data/review_notes",
+    "jq '.aliases.entity | length, (.aliases.entity | to_entries[-5:])' data/identity-overrides/merges.json",
+    "jq '.pairs.entity | length, .pairs.entity[-10:]' data/identity-overrides/do-not-merge.json",
+    "head -3 data/canonical/entities.jsonl && wc -l data/canonical/entities.jsonl",
+    "jq '{batch_id,global_kind,prepared_count, sample:(.proposed_aliases[:2])}' data/review_notes/codex-identity-batch133-prep.json data/review_notes/codex-identity-batch118-prep.json",
+    "jq 'type, keys, {aliases_type:(.aliases|type), aliases_keys:(.aliases|keys?)}' data/identity-overrides/merges.json",
+    "jq 'type, keys, if type==\"array\" then .[0:3] else . end' data/identity-overrides/do-not-merge.json",
+    "sqlite3 data/canonical.db '.tables'",
+    "sqlite3 data/canonical.db 'pragma table_info(entities); pragma table_info(records); pragma table_info(evidence_refs); pragma table_info(identity_aliases); pragma table_info(do_not_merge);'",
+    "jq '.aliases.entity | to_entries | length, (to_entries? // empty)' data/identity-overrides/merges.json",
+    "bun --eval '<read-only exact-name entity duplicate miner over data/canonical/entities.jsonl, merges.json, do-not-merge.json, and prior prep aliases; strict filters returned no printed candidates>'",
+    "bun --eval '<read-only loosened exact-name entity duplicate miner over data/canonical/entities.jsonl, merges.json, and do-not-merge.json; no printed candidates due script issue>'",
+    "bun --eval 'console.log(\"hello\")'",
+    "sqlite3 -header -column data/canonical.db \"select lower(replace(replace(entity_name,'.',''),',','')) as norm_name, count(*) c, group_concat(record_id, ' | ') ids, group_concat(entity_type, ' / ') types from entities where entity_name is not null and entity_name != '' and record_id not in (select alias from identity_aliases where kind='entity') group by norm_name having c>1 order by c desc, norm_name limit 80;\"",
+    "sqlite3 -header -csv data/canonical.db \"select r.record_id, e.entity_name, e.entity_type, e.description, r.primary_source_id from entities e join records r using(record_id) where lower(e.entity_name) in (select lower(e2.entity_name) from entities e2 group by lower(e2.entity_name) having count(*)>1) order by lower(e.entity_name), r.record_id limit 200;\"",
+    "sqlite3 -header -csv data/canonical.db \"select ia.alias, ia.target from identity_aliases ia where ia.kind='entity' and (...) order by target, alias;\"",
+    "sqlite3 -header -csv data/canonical.db \"with selected(id) as (...) select r.record_id, e.entity_name, e.entity_type, e.description, r.display_name, r.primary_source_id, group_concat(json_extract(er.ref_json,'$.evidence_id'),' | ') evidence from selected s join records r on r.record_id=s.id join entities e on e.record_id=s.id left join evidence_refs er on er.record_id=s.id group by r.record_id order by r.record_id;\"",
+    "sqlite3 -header -column data/canonical.db \"with pairs(alias,target) as (...) select 'existing_identity_alias' check_name, ia.* from identity_aliases ia join pairs p on ia.kind='entity' and ia.alias=p.alias union all select 'do_not_merge', d.kind, d.record_id_a, d.record_id_b, d.source_decision from do_not_merge d join pairs p on d.kind='entity' and ((d.record_id_a=p.alias and d.record_id_b=p.target) or (d.record_id_a=p.target and d.record_id_b=p.alias));\"",
+    "jq -r '.aliases.entity[] | .key' data/identity-overrides/merges.json | rg -x '<selected alias ids>' || true",
+    "jq '.aliases.entity[0:5], .aliases.entity[-5:]' data/identity-overrides/merges.json",
+    "sqlite3 -header -csv data/canonical.db \"select r.record_id, e.entity_name, e.entity_type, e.description, r.primary_source_id, group_concat(json_extract(er.ref_json,'$.evidence_id'),' | ') evidence from records r join entities e using(record_id) left join evidence_refs er using(record_id) where r.record_id in (...) group by r.record_id order by r.record_id;\"",
+    "jq -r '.aliases.entity | type' data/identity-overrides/merges.json && jq -r '.aliases.entity | to_entries[0:5][] | @json' data/identity-overrides/merges.json",
+    "jq -r '.aliases.entity | to_entries[] | .key' data/identity-overrides/merges.json | rg -x '<selected alias ids>' || true",
+    "jq -r '.pairs.entity[] | .record_ids | @tsv' data/identity-overrides/do-not-merge.json | rg '<selected alias ids>' || true",
+    "rg -n '<selected evidence block ids>' raw/sources/<selected sources>/blocks.jsonl | head -80",
+    "test -e data/review_notes/codex-identity-batch136-prep.json; echo $?"
+  ],
+  "commands_not_run": [
+    "No provider-backed commands or agent harness commands were run.",
+    "No canonicalize*, campaign dedup, identity-review, write, ask, schema, ontology-normalize, or --profile/provider command was run.",
+    "No materialize command was run.",
+    "No export-jsonl command was run.",
+    "No full validate command was run.",
+    "No edits were made to canonical JSONL, wiki pages, DB files, LOG.md, manifests, retired submissions, submissions, or data/identity-overrides/merges.json."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "run_id": "2026-06-10T22-56-13-315Z_1976810-4b04cae8_ingest_201106-hylan-slides",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T01:35:27.729Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "entity-mta-nyct-confirm",
+        "local_observation_id": "entity_mta_nyct_hylan_2011",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_mta-nyct, which correctly identifies MTA New York City Transit (entity_name 'MTA New York City Transit', entity_type 'agency'). No different registry record is a better match.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p001_c0001",
+            "source_quote": "MTA New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-nyc-dot-confirm",
+        "local_observation_id": "entity_nyc_dot_hylan_2011",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id entity_nyc-dot, which correctly identifies New York City Department of Transportation (entity_name 'New York City Department of Transportation', entity_type 'agency'). No different registry record is a better match.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p001_c0002",
+            "source_quote": "NEW YORK CITY DOT"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-34-41-887Z_2111393-d3011a56_canonicalize_2026-06-10t22-56-13-315z-1976810-4b04cae8-ingest-201106-hylan-slides-entity-identity"
+}

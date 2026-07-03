@@ -1,0 +1,221 @@
+{
+  "run_id": "2026-06-10T23-15-07-535Z_1976810-1e49fd8b_ingest_2013-09-12-sbs-utica-cb8",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T04:03:41.512Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "relate_bus_lane_st_johns_to_eastern_pkwy",
+        "local_observation_id": "treatment_bus_lane_st_johns_to_eastern_pkwy",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_bus-lane-st-johns-to-eastern-pkwy",
+            "description": "The bus lane from St. John's Place to Eastern Parkway is a treatment component of the Utica Avenue Bus Priority and Safety Study",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_12_sbs_utica_cb8",
+                "block_id": "p009_c0003",
+                "source_quote": "Install bus lane from St. John's Place to Eastern Parkway"
+              }
+            ]
+          }
+        ],
+        "rationale": "Treatment is a bus lane installation proposed in the Utica Avenue Bus Priority and Safety Study presented to Brooklyn CB8 on September 12, 2013",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_12_sbs_utica_cb8",
+            "block_id": "p009_c0003",
+            "source_quote": "Install bus lane from St. John's Place to Eastern Parkway"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate_remove_bus_lane_union_carroll",
+        "local_observation_id": "treatment_remove_bus_lane_union_carroll",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_remove-bus-lane-union-carroll",
+            "description": "The removal of bus lane from Union Street to Carroll Street is a treatment component of the Utica Avenue Bus Priority and Safety Study",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_12_sbs_utica_cb8",
+                "block_id": "p009_c0003",
+                "source_quote": "Remove bus lane Union-Carroll"
+              }
+            ]
+          }
+        ],
+        "rationale": "Treatment is a bus lane removal proposed in the Utica Avenue Bus Priority and Safety Study presented to Brooklyn CB8 on September 12, 2013",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_12_sbs_utica_cb8",
+            "block_id": "p009_c0003",
+            "source_quote": "Remove bus lane Union-Carroll"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate_transit_signal_priority",
+        "local_observation_id": "treatment_transit_signal_priority",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_transit-signal-priority_5",
+            "description": "Transit Signal Priority from Kings Highway to Broadway is a treatment component of the Utica Avenue Bus Priority and Safety Study",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_12_sbs_utica_cb8",
+                "block_id": "p014_c0003",
+                "source_quote": "Implement Transit Signal Priority from Kings Highway to Broadway (with NYCT)"
+              }
+            ]
+          }
+        ],
+        "rationale": "TSP implementation is a treatment component proposed in the Utica Avenue Bus Priority and Safety Study presented to Brooklyn CB8 on September 12, 2013",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_12_sbs_utica_cb8",
+            "block_id": "p014_c0003",
+            "source_quote": "Implement Transit Signal Priority from Kings Highway to Broadway (with NYCT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate_optimize_signal_offsets",
+        "local_observation_id": "treatment_optimize_signal_offsets",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_optimize-signal-offsets",
+            "description": "Optimizing traffic signal offsets is a treatment component of the Utica Avenue Bus Priority and Safety Study",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_12_sbs_utica_cb8",
+                "block_id": "p014_c0003",
+                "source_quote": "Optimize traffic signal offsets for all traffic"
+              }
+            ]
+          }
+        ],
+        "rationale": "Signal offset optimization is a treatment proposed in the Utica Avenue Bus Priority and Safety Study",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_12_sbs_utica_cb8",
+            "block_id": "p014_c0003",
+            "source_quote": "Optimize traffic signal offsets for all traffic"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate_increase_signal_cycle",
+        "local_observation_id": "treatment_increase_signal_cycle",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_increase-signal-cycle",
+            "description": "Increasing signal cycle from 60 to 90-120 seconds is a treatment component of the Utica Avenue Bus Priority and Safety Study",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_12_sbs_utica_cb8",
+                "block_id": "p014_c0003",
+                "source_quote": "Increase signal cycle from 60 seconds to 90-120 seconds"
+              }
+            ]
+          }
+        ],
+        "rationale": "Signal cycle increase is a treatment proposed in the Utica Avenue Bus Priority and Safety Study",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_12_sbs_utica_cb8",
+            "block_id": "p014_c0003",
+            "source_quote": "Increase signal cycle from 60 seconds to 90-120 seconds"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate_left_turn_bays",
+        "local_observation_id": "treatment_left_turn_bays",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_left-turn-bays_2",
+            "description": "Adding left turn bays at some intersections is a treatment component of the Utica Avenue Bus Priority and Safety Study",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_12_sbs_utica_cb8",
+                "block_id": "p012_c0005",
+                "source_quote": "add left turn bays at some intersections, prohibit left turns elsewhere"
+              },
+              {
+                "source_id": "2013_09_12_sbs_utica_cb8",
+                "block_id": "p013_c0003",
+                "source_quote": "Safety Benefits - Reduce conflicts between pedestrians and vehicles - Reduce conflicts between through traffic and turning vehicles • Traffic Benefits - Reduces traffic congestion"
+              }
+            ]
+          }
+        ],
+        "rationale": "Left turn bays are a treatment proposed in the Utica Avenue Bus Priority and Safety Study",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_12_sbs_utica_cb8",
+            "block_id": "p012_c0005",
+            "source_quote": "add left turn bays at some intersections, prohibit left turns elsewhere"
+          },
+          {
+            "source_id": "2013_09_12_sbs_utica_cb8",
+            "block_id": "p013_c0003",
+            "source_quote": "Safety Benefits - Reduce conflicts between pedestrians and vehicles - Reduce conflicts between through traffic and turning vehicles"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate_offset_bus_lane_carroll_to_church",
+        "local_observation_id": "treatment_offset_bus_lane_carroll_to_church",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_offset-bus-lane-carroll-to-church",
+            "description": "Convert one travel lane to offset bus lane from Carroll St. to Church Ave. is a treatment component of the Utica Avenue Bus Priority and Safety Study",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_12_sbs_utica_cb8",
+                "block_id": "p012_c0005",
+                "source_quote": "Convert one travel lane to “offset” bus lane to reduce speeding, maximize parking, and benefit bus service"
+              }
+            ]
+          }
+        ],
+        "rationale": "Offset bus lane from Carroll St. to Church Ave. is a treatment proposed in the Utica Avenue Bus Priority and Safety Study",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_12_sbs_utica_cb8",
+            "block_id": "p012_c0005",
+            "source_quote": "Convert one travel lane to “offset” bus lane to reduce speeding, maximize parking, and benefit bus service"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-57-19-166Z_2111393-984a1bbe_canonicalize_2026-06-10t23-15-07-535z-1976810-1e49fd8b-ingest-2013-09-12-sbs-utica-cb8-treatment-relations"
+}

@@ -1,0 +1,192 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch053",
+  "created_at": "2026-06-23T02:10:00Z",
+  "author": "codex",
+  "batch_id": "relation053",
+  "batch": "batch053",
+  "scope": "Codex-only deterministic/manual relation cleanup prep; no provider-backed commands, post-ingest LLM harnesses, materialize/export-jsonl/full validate/DB publish, durable retirements, replacement submissions, LOG edits, manifest edits, canonical/generated edits, or code edits applied",
+  "checkpoint_context": {
+    "reported_validate_backlog_after_identity080_relation052": {
+      "issue_count": 1444,
+      "unexpected_relation_endpoint_shape": 13,
+      "duplicate_global_identity": 1431
+    },
+    "latest_completed_relation_batch": "relation052",
+    "not_repeated": "This prep selects a remaining singleton and does not repeat relation037 through relation052.",
+    "selected_bucket": "related_route project->project self-edge",
+    "selected_rows_cleared": 1,
+    "replacement_rows_added": 0,
+    "expected_endpoint_shape_delta": -1,
+    "expected_remaining_unexpected_relation_endpoint_shape_after_apply": 12
+  },
+  "durable_mechanism_prepared_not_applied": {
+    "retire_originals_via": "data/submission-overrides/retired.json",
+    "replacement_journal": "none",
+    "mutation_status": "not_applied_by_this_prep",
+    "only_file_written_by_this_task": "data/review_notes/codex-relation-cleanup-batch053-prep.json"
+  },
+  "summary_counts": {
+    "prepared_count": 1,
+    "retire_only_count": 1,
+    "retire_replace_count": 0,
+    "accepted_replacement_count": 0,
+    "issue_count": 0,
+    "expected_endpoint_shape_delta": -1
+  },
+  "bucket": {
+    "name": "GCT-Albany Amtrak cause modeled as related_route project self-edge",
+    "original_relation_kind": "related_route",
+    "original_endpoint_shape": "project -> project",
+    "cleanup_direction": "retire-only data cleanup; keep related_route scoped to route -> route",
+    "rationale": "The submitted relation points the Grand Central Terminal to Albany roundtrip train service project at itself using related_route. Current related_route requires route endpoints, and the source-backed causal statement is already preserved in the accepted project record description."
+  },
+  "guards": {
+    "all_pass": true,
+    "original_accepted_not_retired": {
+      "status": "pass",
+      "selected_original_submission_id": "sub_be8f2756fb9d81f5",
+      "selected_original_record_id": "relation_gct-albany-amtrak-cause",
+      "selected_original_journal": "data/submissions/2026-06-21T20-27-18-634Z_3137823-d5d2382c_ingest_meeting-doc-192146.jsonl:57",
+      "current_validation_state": "accepted",
+      "retired_hits": []
+    },
+    "replacement_absent_or_not_needed": {
+      "status": "pass",
+      "replacement_needed": false,
+      "replacement_submission_ids": [],
+      "replacement_local_observation_ids": [],
+      "reason": "A replacement would either preserve the same self-edge, invent a cross-source link to a separate East River Tunnel project record, or use an unshaped generic relation. None is necessary for endpoint cleanup because the accepted project observation already carries the Amtrak East River Tunnel causal text from the same evidence block."
+    },
+    "local_observation_ids_not_colliding": {
+      "status": "not_applicable",
+      "reason": "No replacement local_observation_id is proposed for this retire-only batch."
+    },
+    "current_related_route_project_to_project_invalid_under_packages_pipeline_src_records_relations_ts": {
+      "status": "pass",
+      "file": "packages/pipeline/src/records/relations.ts",
+      "current_valid_related_route_subjects": [
+        "route"
+      ],
+      "current_valid_related_route_objects": [
+        "route"
+      ],
+      "original_subject_kind": "project",
+      "original_object_kind": "project",
+      "endpoint_shape_issue": "Relation kind related_route expects route -> route, got project -> project."
+    },
+    "evidence_supports_retire_only_semantics": {
+      "status": "pass",
+      "evidence_id": "meeting_doc_192146#p003_c0010",
+      "summary": "The block states that Metro-North will operate a Grand Central Terminal to Albany roundtrip train, that it results from Amtrak East River Tunnel project capacity loss, and that the service extends an existing Hudson Line Poughkeepsie train. It supports the project record but not a route-to-route related_route relation, and not a project self-relation.",
+      "existing_semantic_coverage": [
+        {
+          "submission_id": "sub_c9ea0edba01dadbc",
+          "record_id": "project_gct-albany-roundtrip",
+          "record_kind": "project",
+          "source_id": "meeting_doc_192146",
+          "local_observation_id": "project_gct_albany_roundtrip",
+          "summary": "Accepted project record already says the service is a result of loss of capacity from Amtrak's East River Tunnel project and that it extends an existing Hudson Line Poughkeepsie train."
+        }
+      ]
+    },
+    "no_generated_files_edited": {
+      "status": "pass_for_this_task",
+      "note": "The shared worktree already contains generated-output and other edits owned by others. This task writes only data/review_notes/codex-relation-cleanup-batch053-prep.json and does not edit retired.json, submissions, canonical JSONL, materialized data, wiki output, LOG, manifest, code, or generated files."
+    }
+  },
+  "prepared_changes": [
+    {
+      "original": {
+        "submission_id": "sub_be8f2756fb9d81f5",
+        "run_id": "2026-06-21T20-27-18-634Z_3137823-d5d2382c_ingest_meeting-doc-192146",
+        "submitted_at": "2026-06-21T20:57:15.404Z",
+        "journal": "data/submissions/2026-06-21T20-27-18-634Z_3137823-d5d2382c_ingest_meeting-doc-192146.jsonl:57",
+        "record_id": "relation_gct-albany-amtrak-cause",
+        "source_id": "meeting_doc_192146",
+        "local_observation_id": "relation_gct_albany_amtrak_cause",
+        "label": "GCT-Albany service related to Amtrak East River Tunnel project",
+        "malformed_shape": "related_route project -> project",
+        "tool_args_sha256": "sha256:be8f2756fb9d81f54dbc00804f6f513286f62ad88115f9782f27ecacc46844aa",
+        "tool_args": {
+          "source_id": "meeting_doc_192146",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_gct_albany_amtrak_cause",
+          "label": "GCT-Albany service related to Amtrak East River Tunnel project",
+          "payload": {
+            "relation_kind": "related_route",
+            "subject_local_observation_id": "project_gct_albany_roundtrip",
+            "object_local_observation_id": "project_gct_albany_roundtrip",
+            "description": "This is a result of the loss of capacity as part of Amtrak's East River Tunnel project",
+            "relation_family": "route_scope"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_192146",
+              "evidence_id": "meeting_doc_192146#p003_c0010",
+              "source_path": "raw/sources/meeting_doc_192146/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0010",
+              "text_sha256": "sha256:d06ee4439caa099d83f7b1e1fcfa40598f26f7a033c85c60c2acae09e1384cb2",
+              "text_source": "raw_text"
+            }
+          ]
+        },
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_be8f2756fb9d81f5",
+          "reason": "Codex relation cleanup batch053 retires malformed related_route project -> project self-relation relation_gct-albany-amtrak-cause. The cited block supports the accepted Grand Central Terminal to Albany roundtrip project description, including the Amtrak East River Tunnel capacity-loss cause, but does not support a route-to-route relation or a project self-edge.",
+          "source_decision": "data/review_notes/codex-relation-cleanup-batch053-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch053",
+          "reviewed_at": "2026-06-23T02:10:00Z"
+        },
+        "reason": "The relation uses related_route with project endpoints and points the project at itself; the source-backed causal context is already retained on the project record.",
+        "expected_endpoint_shape_delta": -1,
+        "confidence": "high"
+      },
+      "replacement": null
+    }
+  ],
+  "replacement_ids": [],
+  "accepted_replacements": [],
+  "apply_instructions": {
+    "conductor_can_apply_immediately": true,
+    "steps": [
+      "Add the proposed_retired_json_entry for sub_be8f2756fb9d81f5 to data/submission-overrides/retired.json.",
+      "Do not append a replacement submission journal for batch053.",
+      "Do not change relation endpoint-shape rules for related_route."
+    ]
+  },
+  "local_validation": {
+    "clean": true,
+    "tooling": "Read-only rg/sed/node/sqlite inspection only; no appendSubmission, materialize, export-jsonl, full validate, DB publish, provider-backed command, post-ingest LLM harness, generated-output command, durable data edit, or code edit run.",
+    "summary": {
+      "original_submission_id": "sub_be8f2756fb9d81f5",
+      "original_validation_state": "accepted",
+      "retired_hits": [],
+      "replacement_submission_ids": [],
+      "accepted_replacement_count": 0,
+      "issue_count": 0,
+      "expected_endpoint_shape_delta": -1
+    }
+  },
+  "commands_run": [
+    "read-only rg/sed inspection of prior relation cleanup notes and packages/pipeline/src/records/relations.ts",
+    "read-only SQLite query against data/canonical.db to reconstruct remaining unexpected_relation_endpoint_shape rows",
+    "read-only rg/node inspection of data/submissions/2026-06-21T20-27-18-634Z_3137823-d5d2382c_ingest_meeting-doc-192146.jsonl and raw/sources/meeting_doc_192146/blocks.jsonl",
+    "read-only retired.json hit check for sub_be8f2756fb9d81f5",
+    "test ! -e data/review_notes/codex-relation-cleanup-batch053-prep.json"
+  ],
+  "commands_not_run": [
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts materialize",
+    "export-jsonl",
+    "DB publish",
+    "canonicalize",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "any command with --profile/provider-backed command",
+    "appendSubmission"
+  ]
+}

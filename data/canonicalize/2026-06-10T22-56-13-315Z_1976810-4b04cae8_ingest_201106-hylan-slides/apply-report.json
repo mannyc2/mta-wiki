@@ -1,0 +1,21 @@
+{
+  "run_id": "2026-06-10T22-56-13-315Z_1976810-4b04cae8_ingest_201106-hylan-slides",
+  "generated_at": "2026-06-11T04:26:08.957Z",
+  "dry_run": false,
+  "wrote": true,
+  "decision_count": 30,
+  "reviewed_count": 15,
+  "alias_additions": [],
+  "aliases_already_present": [],
+  "do_not_merge_additions": [],
+  "relation_submissions": 9,
+  "quarantined": 0,
+  "conflicts": [],
+  "paths": {
+    "merges": "data/identity-overrides/merges.json",
+    "do_not_merge": "data/identity-overrides/do-not-merge.json",
+    "relation_submissions_jsonl": "data/submissions/2026-06-10T22-56-13-315Z_1976810-4b04cae8_ingest_201106-hylan-slides_canonicalize.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T22-56-13-315Z_1976810-4b04cae8_ingest_201106-hylan-slides/apply-quarantine.jsonl",
+    "apply_report": "data/canonicalize/2026-06-10T22-56-13-315Z_1976810-4b04cae8_ingest_201106-hylan-slides/apply-report.json"
+  }
+}

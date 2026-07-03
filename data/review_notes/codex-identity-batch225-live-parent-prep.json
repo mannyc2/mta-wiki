@@ -1,0 +1,168 @@
+{
+  "note_id": "codex-identity-batch225-live-parent-prep",
+  "batch": "identity225-live-parent",
+  "created_at": "2026-06-23T15:09:22.053Z",
+  "author": "codex",
+  "scope": {
+    "operation": "conductor_live_rebaseline_for_remaining_parent_pairs",
+    "after_checkpoint": "identity224-local",
+    "issue_type": "duplicate_global_identity",
+    "provider_backed_commands_run": false,
+    "generated_output_commands_run": false
+  },
+  "prepared_count": 6,
+  "decision_type_counts": {
+    "do_not_merge": 6,
+    "alias_merge": 0,
+    "skipped_review_only": 1
+  },
+  "proposed_durable_decisions": [
+    {
+      "decision_id": "identity225-live-parent-001",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-154986-aar",
+        "entity_mta-metropolitan-transportation-authority"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_metropolitan-transportation-authority-mta"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-154986-aar and entity_mta-metropolitan-transportation-authority share identity key entity_metropolitan-transportation-authority-mta."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-154986-aar",
+          "display_name": "MTA Access-a-Ride",
+          "record_identity": "paratransit service program",
+          "evidence_ref": "annual_report_narrative_2021#p028_c0002",
+          "quote": "Access-a-Ride (AAR)"
+        },
+        {
+          "record_id": "entity_mta-metropolitan-transportation-authority",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "parent agency / public benefit corporation",
+          "evidence_ref": "meeting_doc_201776#p351_c0001",
+          "quote": "METROPOLITAN TRANSPORTATION AUTHORITY"
+        }
+      ],
+      "reason": "AAR is a service program; this MTA record is the parent authority/corporation.",
+      "guard_notes": "Do not merge AAR with umbrella MTA records solely because AAR is branded as MTA Access-a-Ride.",
+      "source_prep_original": "data/review_notes/codex-identity-batch224-mta-parent-prep.json#identity224-mta-parent-012"
+    },
+    {
+      "decision_id": "identity225-live-parent-002",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-143306-mta-hq",
+        "entity_mta-metropolitan-transportation-authority"
+      ],
+      "confidence": "high",
+      "reason": "MTA Headquarters is an HQ/administrative unit; MTA Metropolitan Transportation Authority is the parent corporation/authority.",
+      "validator_evidence": "Live duplicate_global_identity for entity_meeting-doc-143306-mta-hq <> entity_mta-metropolitan-transportation-authority"
+    },
+    {
+      "decision_id": "identity225-live-parent-003",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-64066-mta",
+        "entity_mta-metropolitan-transportation-authority"
+      ],
+      "confidence": "high",
+      "reason": "Both are MTA parent-shaped records but remain separate current canonical records; direct merge would need source review because prior MTA parent aliases have caused cycles. Guard as DNM for this cleanup checkpoint.",
+      "validator_evidence": "Live duplicate_global_identity for entity_meeting-doc-64066-mta <> entity_mta-metropolitan-transportation-authority"
+    },
+    {
+      "decision_id": "identity225-live-parent-004",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-154986-aar",
+        "entity_mta-overall"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_metropolitan-transportation-authority-mta"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-154986-aar and entity_mta-overall share identity key entity_metropolitan-transportation-authority-mta."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-154986-aar",
+          "display_name": "MTA Access-a-Ride",
+          "record_identity": "paratransit service program",
+          "evidence_ref": "annual_report_narrative_2021#p028_c0002",
+          "quote": "Access-a-Ride (AAR)"
+        },
+        {
+          "record_id": "entity_mta-overall",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "public benefit corporation",
+          "evidence_ref": "meeting_doc_179691#p003_c0009",
+          "quote": "The Metropolitan Transportation Authority (\"MTA\" or \"MTA Group\")"
+        }
+      ],
+      "reason": "AAR is a service program; the MTA Overall record is the umbrella public benefit corporation.",
+      "guard_notes": "Do not merge branded service programs into umbrella MTA parent records.",
+      "source_prep_original": "data/review_notes/codex-identity-batch224-mta-parent-prep.json#identity224-mta-parent-014"
+    },
+    {
+      "decision_id": "identity225-live-parent-005",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-143306-mta-hq",
+        "entity_mta-overall"
+      ],
+      "confidence": "high",
+      "reason": "MTA Headquarters is an HQ/administrative unit; MTA Overall is umbrella MTA entity.",
+      "validator_evidence": "Live duplicate_global_identity for entity_meeting-doc-143306-mta-hq <> entity_mta-overall"
+    },
+    {
+      "decision_id": "identity225-live-parent-006",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-143306-mta-hq",
+        "entity_mta-real-estate"
+      ],
+      "confidence": "high",
+      "reason": "MTA Headquarters and MTA Real Estate are distinct MTA units/functions.",
+      "validator_evidence": "Live duplicate_global_identity for entity_meeting-doc-143306-mta-hq <> entity_mta-real-estate"
+    }
+  ],
+  "skipped_review_only": [
+    {
+      "decision_id": "identity225-live-parent-review-001",
+      "decision_type": "skipped_review_only",
+      "global_kind": "corridor",
+      "candidate_pair": [
+        "corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate",
+        "corridor_church-av"
+      ],
+      "reason": "Still deferred: sparse Bus Forward 2 Church Avenue SBS candidate has no source-backed limits; bounded Church Ave target is Flatbush Ave to Ocean Pkwy."
+    }
+  ],
+  "source_artifacts_consulted": [
+    "data/review_notes/codex-identity-batch224-mta-parent-prep.json"
+  ],
+  "commands_run": [
+    "validateRepo live baseline",
+    "queued prep artifact inspection",
+    "override conflict inspection"
+  ],
+  "commands_not_run": [
+    "provider-backed commands",
+    "materialize",
+    "export-jsonl"
+  ]
+}

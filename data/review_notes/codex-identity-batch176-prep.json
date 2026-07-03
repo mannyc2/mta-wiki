@@ -1,0 +1,259 @@
+{
+  "note_id": "codex-identity-batch176-prep",
+  "batch": "identity176",
+  "created_at": "2026-06-23T00:00:00Z",
+  "scope": {
+    "global_kind": "route/corridor",
+    "selection_note": "Codex-only prep for ROUTE and CORRIDOR duplicates from current data/canonical/routes.jsonl, data/canonical/corridors.jsonl, data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, and read-only validateRepo duplicate_global_identity output. Selection is intentionally conservative: route service variants, compound routes, adjacent or only partially overlapping corridors, stale ids, existing aliases, targets that are aliases, aliases that are merge targets, and do-not-merge hits were excluded."
+  },
+  "prepared_count": 2,
+  "proposed_aliases": [
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_bay-parkway-avenue-j-to-shore-pkwy",
+      "target_id": "corridor_bay-parkway-cropsey",
+      "canonical_id": "corridor_bay-parkway-cropsey",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global corridor records corridor_bay-parkway-avenue-j-to-shore-pkwy and corridor_bay-parkway-cropsey share identity key corridor_bay-parkway.",
+        "validateRepo duplicate_global_identity: Global corridor records corridor_bay-parkway-avenue-j-to-shore-pkwy and corridor_bay-parkway-cropsey share identity key corridor_bay-parkway-from-ave-j-to-shore-parkway."
+      ],
+      "canonical_evidence": {
+        "alias": {
+          "record_id": "corridor_bay-parkway-avenue-j-to-shore-pkwy",
+          "display_name": "Bay Parkway from Avenue J to Shore Parkway",
+          "corridor_name": "Bay Parkway",
+          "limits": "Avenue J to Shore Parkway",
+          "corridor_length_mi": 2.4,
+          "borough_normalized": "brooklyn",
+          "record_aliases_include": [
+            "corridor_bay-parkway",
+            "corridor_bay-parkway-from-ave-j-to-shore-parkway"
+          ],
+          "source_ids": [
+            "bay_pkwy_cropsey_ave_cb12_jun2025",
+            "bay_pkwy_cropsey_ave_jan2025"
+          ]
+        },
+        "target": {
+          "record_id": "corridor_bay-parkway-cropsey",
+          "display_name": "Bay Parkway and Cropsey Avenue, Brooklyn",
+          "corridor_name": "Bay Parkway and Cropsey Avenue",
+          "limits": "Bay Parkway: Avenue J to Shore Parkway; Cropsey Avenue: Bay Parkway to 26th Avenue",
+          "borough_normalized": "brooklyn",
+          "record_aliases_include": [
+            "corridor_bay-parkway",
+            "corridor_bay-parkway-ave-j-to-shore-pkwy",
+            "corridor_bay-parkway-from-ave-j-to-shore-parkway"
+          ],
+          "merged_values_include": {
+            "limits": [
+              "Avenue J to Shore Parkway",
+              "Bay Parkway: Avenue J to Shore Parkway; Cropsey Avenue: Bay Parkway to 26th Avenue"
+            ],
+            "description": [
+              "Bay Parkway from Avenue J to Shore Parkway (2.4 miles)",
+              "Vision Zero priority corridors identified in NYC Streets Plan and Brooklyn Bus Network Redesign"
+            ]
+          },
+          "source_ids": [
+            "bay_pkwy_cropsey_ave_cb11_jun2025",
+            "bay_pkwy_cropsey_ave_nov2024",
+            "better_buses",
+            "brt_south_brooklyn_b82_feb2018"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "corridor_bay-parkway-avenue-j-to-shore-pkwy",
+          "evidence_id": "bay_pkwy_cropsey_ave_cb12_jun2025#p004_c0002",
+          "quote": "Study areas: Bay Parkway from Avenue J to Shore Parkway (2.4 miles); Cropsey Avenue from Bay Parkway to 26th Avenue (0.6 miles)"
+        },
+        {
+          "record_id": "corridor_bay-parkway-avenue-j-to-shore-pkwy",
+          "evidence_id": "bay_pkwy_cropsey_ave_jan2025#p004_c0002",
+          "quote": "Study areas: Bay Parkway from Avenue J to Shore Parkway (2.4 miles); Cropsey Avenue from Bay Parkway to 26th Avenue (0.6 miles)"
+        },
+        {
+          "record_id": "corridor_bay-parkway-cropsey",
+          "evidence_id": "bay_pkwy_cropsey_ave_cb11_jun2025#p004_c0002",
+          "quote": "Study areas: Bay Parkway from Avenue J to Shore Parkway (2.4 miles); Cropsey Avenue from Bay Parkway to 26th Avenue (0.6 miles)"
+        },
+        {
+          "record_id": "corridor_bay-parkway-cropsey",
+          "evidence_id": "better_buses#p001_b0001",
+          "quote": "Bay Parkway from Avenue J to Shore Parkway as well as Cropsey Avenue from Bay Parkway to 26th Avenue"
+        }
+      ],
+      "reason": "The alias is the Bay Parkway segment of the same Bay Parkway/Cropsey Avenue bus-priority study area. This is not a same-street-only collision: current canonical evidence and multiple local source blocks define the same study area with Bay Parkway from Avenue J to Shore Parkway and Cropsey Avenue from Bay Parkway to 26th Avenue, while the target already carries the exact Bay Parkway limit alias and merged Bay Parkway segment values.",
+      "guards": {
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "alias_is_not_current_merge_target": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "route_variant_guard": "not_applicable_corridor",
+        "partial_overlap_guard": "accepted because source evidence identifies one Bay Parkway/Cropsey Avenue study area and the target carries the exact Bay Parkway Avenue J to Shore Parkway identity alias and merged limits"
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_cropsey-avenue-bay-pkwy-to-26th-ave",
+      "target_id": "corridor_bay-parkway-cropsey",
+      "canonical_id": "corridor_bay-parkway-cropsey",
+      "confidence": "high",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global corridor records corridor_bay-parkway-cropsey and corridor_cropsey-avenue-bay-pkwy-to-26th-ave share identity key corridor_cropsey-ave.",
+        "validateRepo duplicate_global_identity: Global corridor records corridor_bay-parkway-cropsey and corridor_cropsey-avenue-bay-pkwy-to-26th-ave share identity key corridor_cropsey-ave-from-bay-parkway-to-26th-ave."
+      ],
+      "canonical_evidence": {
+        "alias": {
+          "record_id": "corridor_cropsey-avenue-bay-pkwy-to-26th-ave",
+          "display_name": "Cropsey Avenue from Bay Parkway to 26th Avenue",
+          "corridor_name": "Cropsey Avenue",
+          "limits": "Bay Parkway to 26th Avenue",
+          "corridor_length_mi": 0.6,
+          "borough_normalized": "brooklyn",
+          "record_aliases_include": [
+            "corridor_cropsey-ave",
+            "corridor_cropsey-ave-from-bay-parkway-to-26th-ave"
+          ],
+          "source_ids": [
+            "bay_pkwy_cropsey_ave_cb12_jun2025",
+            "bay_pkwy_cropsey_ave_jan2025"
+          ]
+        },
+        "target": {
+          "record_id": "corridor_bay-parkway-cropsey",
+          "display_name": "Bay Parkway and Cropsey Avenue, Brooklyn",
+          "corridor_name": "Bay Parkway and Cropsey Avenue",
+          "limits": "Bay Parkway: Avenue J to Shore Parkway; Cropsey Avenue: Bay Parkway to 26th Avenue",
+          "borough_normalized": "brooklyn",
+          "record_aliases_include": [
+            "corridor_cropsey-ave",
+            "corridor_cropsey-ave-bay-pkwy-to-26th-ave",
+            "corridor_cropsey-ave-from-bay-parkway-to-26th-ave"
+          ],
+          "merged_values_include": {
+            "limits": [
+              "Bay Parkway to 26th Avenue",
+              "Bay Parkway: Avenue J to Shore Parkway; Cropsey Avenue: Bay Parkway to 26th Avenue"
+            ],
+            "description": [
+              "Cropsey Avenue from Bay Parkway to 26th Avenue (0.6 miles)",
+              "Vision Zero priority corridors identified in NYC Streets Plan and Brooklyn Bus Network Redesign"
+            ]
+          },
+          "source_ids": [
+            "bay_pkwy_cropsey_ave_cb11_jun2025",
+            "bay_pkwy_cropsey_ave_nov2024",
+            "better_buses",
+            "brt_south_brooklyn_b82_feb2018"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "corridor_cropsey-avenue-bay-pkwy-to-26th-ave",
+          "evidence_id": "bay_pkwy_cropsey_ave_cb12_jun2025#p004_c0002",
+          "quote": "Study areas: Bay Parkway from Avenue J to Shore Parkway (2.4 miles); Cropsey Avenue from Bay Parkway to 26th Avenue (0.6 miles)"
+        },
+        {
+          "record_id": "corridor_cropsey-avenue-bay-pkwy-to-26th-ave",
+          "evidence_id": "bay_pkwy_cropsey_ave_jan2025#p004_c0002",
+          "quote": "Study areas: Bay Parkway from Avenue J to Shore Parkway (2.4 miles); Cropsey Avenue from Bay Parkway to 26th Avenue (0.6 miles)"
+        },
+        {
+          "record_id": "corridor_bay-parkway-cropsey",
+          "evidence_id": "bay_pkwy_cropsey_ave_cb11_jun2025#p004_c0002",
+          "quote": "Study areas: Bay Parkway from Avenue J to Shore Parkway (2.4 miles); Cropsey Avenue from Bay Parkway to 26th Avenue (0.6 miles)"
+        },
+        {
+          "record_id": "corridor_bay-parkway-cropsey",
+          "evidence_id": "bay_pkwy_cropsey_ave_nov2024#p004_c0002",
+          "quote": "Study areas: Bay Parkway from Avenue J to Shore Parkway (2.4 miles); Cropsey Avenue from Bay Parkway to 26th Avenue (0.6 miles)"
+        }
+      ],
+      "reason": "The alias is the Cropsey Avenue segment of the same Bay Parkway/Cropsey Avenue bus-priority study area. Source blocks for both records use the same paired study-area definition, and the target already carries the exact Cropsey Avenue Bay Parkway-to-26th Avenue identity alias and merged values.",
+      "guards": {
+        "alias_and_target_present_in_current_canonical_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "alias_is_not_current_merge_target": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "route_variant_guard": "not_applicable_corridor",
+        "partial_overlap_guard": "accepted because source evidence identifies one Bay Parkway/Cropsey Avenue study area and the target carries the exact Cropsey Avenue Bay Parkway to 26th Avenue identity alias and merged limits"
+      }
+    }
+  ],
+  "exclusions_and_guards": {
+    "current_duplicate_issue_counts": {
+      "duplicate_global_identity_total": 537,
+      "route_and_corridor_total": 57
+    },
+    "input_files_read": [
+      "data/canonical/routes.jsonl",
+      "data/canonical/corridors.jsonl",
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json"
+    ],
+    "proposal_guards": [
+      "Each proposed alias_id and target_id exists in current canonical JSONL.",
+      "No proposed alias_id is already present as a merge alias in current data/identity-overrides/merges.json.",
+      "No proposed alias_id is currently a merge target in current data/identity-overrides/merges.json.",
+      "No proposed target_id is currently a merge alias in current data/identity-overrides/merges.json.",
+      "No proposed pair appears in current data/identity-overrides/do-not-merge.json.",
+      "No stale ids, alias==target pairs, route variants, compound routes, or ambiguous same-street-only corridor collisions were included."
+    ],
+    "excluded_current_duplicate_classes": [
+      "Excluded all current route duplicate directions because they were local/limited/SBS lifecycle or compound-route traps without sufficiently decisive source evidence for this batch's conservative route-variant guard.",
+      "Excluded corridor_125th-st-manhattan -> corridor_125th-st-crosstown-brt-phase2 because the only guard-safe direction points from a richer current corridor to a broad BRT Phase II candidate target.",
+      "Excluded Broadway, Church Avenue, Cross Bay Boulevard, Flatlands Avenue, Kings Highway, Lexington Avenue, Montauk Branch, Third Avenue, Utica Avenue, Webster/Third Avenue, and Woodhaven Boulevard collisions where the current evidence shows adjacent limits, nested segments, borough conflicts, phase-candidate context, or broad street-name-only overlap.",
+      "Excluded corridor_bay-parkway-cropsey as an alias to either segment-specific target because that would collapse the combined study-area record into only one of its two named study-area components."
+    ]
+  },
+  "command_evidence": [
+    {
+      "command": "bun --eval 'import { validateRepo } from \"./packages/pipeline/src/validate.ts\"; ... print duplicate_global_identity route/corridor issues'",
+      "purpose": "Read-only local validateRepo inspection; observed 537 duplicate_global_identity issues total and 57 route/corridor duplicate_global_identity messages."
+    },
+    {
+      "command": "bun --eval '<read current route/corridor canonical JSONL, current merges, current do-not-merge, and validateRepo issues; print guard-safe directions>'",
+      "purpose": "Checked stale ids, existing aliases, aliases that are merge targets, targets that are aliases, alias==target, and do-not-merge hits before selecting proposals."
+    },
+    {
+      "command": "jq/select via bun over data/canonical/corridors.jsonl",
+      "purpose": "Inspected canonical payloads, record_aliases, source_ids, merged field values, and evidence refs for selected Bay Parkway/Cropsey candidates."
+    },
+    {
+      "command": "jq -r --arg b \"$block_id\" 'select(.block_id==$b) | ...' raw/sources/<source_id>/blocks.jsonl",
+      "purpose": "Read local source blocks for Bay Parkway/Cropsey source evidence quotes without running provider-backed commands."
+    },
+    {
+      "command": "rg -n 'corridor_(bay-parkway-avenue-j-to-shore-pkwy|cropsey-avenue-bay-pkwy-to-26th-ave|bay-parkway-cropsey|...)' data/review_notes/codex-identity-batch*-prep.json data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl",
+      "purpose": "Checked prior prep and cleanup notes for stale/already-applied route/corridor aliases and known exclusions."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed commands",
+    "canonicalize",
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "--profile",
+    "provider",
+    "materialize",
+    "validate CLI",
+    "export-jsonl"
+  ],
+  "blockers": [
+    "A final parallel validateRepo spot-check attempted after the successful validator inspection hit a transient SQLite busy lock; no data was written by that failed read-only command, and the selected proposals are anchored to the earlier successful validateRepo output plus canonical/source evidence."
+  ]
+}

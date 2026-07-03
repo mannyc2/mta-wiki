@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "review_state": "accepted",
+  "accepted_at": "2026-06-08T21:21:36.731Z",
+  "reviewer": "codex-audit-2026-06-08",
+  "source": "audit_safe_to_promote",
+  "cluster_id": "corridor_cluster_002",
+  "kind": "corridor",
+  "packet_path": "data/identity-review/packets/corridor_cluster_002.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_002.json",
+  "source_review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Flash",
+  "action_summary": {
+    "merge_group_count": 1,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 1,
+    "missing_field_count": 1,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [
+    [
+      "corridor_pelham-fordham-207",
+      "corridor_pelham-parkway-fordham-207"
+    ]
+  ],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "corridor_fordham-road",
+        "corridor_pelham-fordham-207"
+      ],
+      "reason": "Shared street name 'Fordham Road' is insufficient because corridor_fordham-road is a single-street segment (Fordham Road, Major Deegan to Boston Road, Bronx) while corridor_pelham-fordham-207 is a multi-street corridor spanning Pelham Parkway, Fordham Road, and West 207 Street from Eastchester Avenue to Broadway — different geographic scope, different limits, and different identity."
+    }
+  ],
+  "weak_aliases": [
+    {
+      "record_id": "corridor_fordham-road",
+      "aliases": [
+        "Fordham Road"
+      ],
+      "reason": "'Fordham Road' appears as a street component of the Pelham Parkway-Fordham-West 207 corridor, but the two are distinct corridors at different scopes. Useful for search lookup, not merge authority."
+    }
+  ],
+  "missing_fields": [
+    {
+      "record_id": "corridor_pelham-parkway-fordham-207",
+      "fields": [
+        "borough",
+        "limits"
+      ]
+    }
+  ],
+  "ambiguous": [],
+  "suggested_rules": [
+    "Do not merge single-street corridor records with multi-street corridor records that merely contain that street as one component, unless limits and scope are identical.",
+    "Merge corridor records that share the same identity key and describe the same multi-street corridor with the same limits."
+  ],
+  "rationale": "Record pair corridor_pelham-fordham-207 and corridor_pelham-parkway-fordham-207 share the identity key corridor_pelham-parkway-fordham-rd-and-west-207-st, the same corridor name 'Pelham Parkway, Fordham Road, and West 207 Street', the same limits 'Eastchester Avenue to Broadway', and describe the same multi-street corridor from two source documents (2019 plan and 2021 addendum) — clear duplicate. Record corridor_fordham-road is a different, narrower corridor: a single street ('Fordham Road') with limits 'Major Deegan Expressway to Boston Road' in the Bronx, which is a portion of Fordham Road that is shorter than the multi-street corridor's span of Fordham Road (which runs from Eastchester to Broadway). The shared street name alone is weak evidence; the limits, scope, and borough context all differ."
+}

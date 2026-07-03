@@ -1,0 +1,1889 @@
+{
+  "version": 1,
+  "generated_at": "2026-06-08T21:21:36.731Z",
+  "source_audit": "data/identity-review/llm-suggestions/audit-2026-06-08.md",
+  "counts": {
+    "accepted": 108,
+    "corrected": 5,
+    "quarantined": 41,
+    "total": 154
+  },
+  "directories": {
+    "decisions": "data/identity-review/accepted/decisions",
+    "quarantine": "data/identity-review/accepted/quarantine"
+  },
+  "accepted": [
+    {
+      "cluster_id": "corridor_cluster_001",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_001.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 0,
+        "weak_alias_count": 2,
+        "missing_field_count": 2,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_002",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_002.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 1,
+        "missing_field_count": 1,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_003",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_003.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 0,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_004",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_004.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 2,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_005",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_005.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 0,
+        "weak_alias_count": 2,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_006",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_006.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 0,
+        "weak_alias_count": 0,
+        "missing_field_count": 2,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_007",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_007.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 0,
+        "weak_alias_count": 2,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_009",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_009.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 0,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_010",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_010.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 2,
+        "missing_field_count": 2,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_011",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_011.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 2,
+        "missing_field_count": 2,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_001",
+      "kind": "entity",
+      "review_state": "corrected",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_001.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 3,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_002",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_002.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_003",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_003.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 0,
+        "weak_alias_count": 2,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_004",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_004.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 0,
+        "weak_alias_count": 2,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_005",
+      "kind": "entity",
+      "review_state": "corrected",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_005.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "project_cluster_001",
+      "kind": "project",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/project_cluster_001.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 0,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "project_cluster_002",
+      "kind": "project",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/project_cluster_002.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 1,
+        "missing_field_count": 2,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_001",
+      "kind": "route",
+      "review_state": "corrected",
+      "path": "data/identity-review/accepted/decisions/route_cluster_001.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 1,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_002",
+      "kind": "route",
+      "review_state": "corrected",
+      "path": "data/identity-review/accepted/decisions/route_cluster_002.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 2,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_003",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_003.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 2,
+        "weak_alias_count": 3,
+        "missing_field_count": 1,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_006",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_006.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 0,
+        "weak_alias_count": 2,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_007",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_007.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 0,
+        "weak_alias_count": 0,
+        "missing_field_count": 2,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_009",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_009.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 0,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_010",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_010.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 1,
+        "missing_field_count": 2,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_011",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_011.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 0,
+        "weak_alias_count": 1,
+        "missing_field_count": 1,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_012",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_012.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 1,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_014",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_014.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 2,
+        "missing_field_count": 2,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_001-w2-2026-06-10",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_001-w2-2026-06-10.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 2,
+        "weak_alias_count": 1,
+        "missing_field_count": 1,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_002-w2-2026-06-10",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_002-w2-2026-06-10.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 0,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "project_cluster_001-w2-2026-06-10",
+      "kind": "project",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/project_cluster_001-w2-2026-06-10.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 0,
+        "weak_alias_count": 4,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "project_cluster_002-w2-2026-06-10",
+      "kind": "project",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/project_cluster_002-w2-2026-06-10.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 0,
+        "weak_alias_count": 1,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_001-w2-2026-06-10",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10.json",
+      "action_summary": {
+        "merge_group_count": 2,
+        "do_not_merge_count": 19,
+        "weak_alias_count": 5,
+        "missing_field_count": 1,
+        "ambiguous_count": 2,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_001-w2-2026-06-10-ambiguous-resolution",
+      "kind": "route",
+      "review_state": "corrected",
+      "path": "data/identity-review/accepted/decisions/route_cluster_001-w2-2026-06-10-ambiguous-resolution.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 2,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_696351ea7c",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_696351ea7c.json",
+      "action_summary": {
+        "merge_group_count": 3,
+        "do_not_merge_count": 28,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "medium"
+      }
+    },
+    {
+      "cluster_id": "project_cluster_69825470e4",
+      "kind": "project",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/project_cluster_69825470e4.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 28,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_afaf670d79",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_afaf670d79.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 4,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_0bf953c6a3",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_0bf953c6a3.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 6,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_5030c9f1d5",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_5030c9f1d5.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 2,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "project_cluster_b3667d8e97",
+      "kind": "project",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/project_cluster_b3667d8e97.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 2,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_88f99f53c6",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_88f99f53c6.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 4,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_739e0ddf41",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_739e0ddf41.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 3,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_48b736c500",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_48b736c500.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_0858889973",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_0858889973.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 5,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_8830130a36",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_8830130a36.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 10,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_3bb73bbedf",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_3bb73bbedf.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 4,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_bee6b940f4",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_bee6b940f4.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 6,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_813df798c6",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_813df798c6.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 2,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_eae8877130",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_eae8877130.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_9907417194",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_9907417194.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 6,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_edccff6599",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_edccff6599.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 0,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_ea099a9e1f",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_ea099a9e1f.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 6,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_d14ef228a2",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_d14ef228a2.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_127fb76a13",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_127fb76a13.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_fbe09c916a",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_fbe09c916a.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 3,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "project_cluster_b6c056e020",
+      "kind": "project",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/project_cluster_b6c056e020.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 2,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_27952469fe",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_27952469fe.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "medium"
+      }
+    },
+    {
+      "cluster_id": "project_cluster_a35902fc28",
+      "kind": "project",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/project_cluster_a35902fc28.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 6,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "project_cluster_3c5de35fa5",
+      "kind": "project",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/project_cluster_3c5de35fa5.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 6,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "project_cluster_ecbd44e7ea",
+      "kind": "project",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/project_cluster_ecbd44e7ea.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 6,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_3a8ac6ac4f",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_3a8ac6ac4f.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "medium"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_3458a364a4",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_3458a364a4.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 3,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_2bf99eced0",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_2bf99eced0.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 0,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_1ef0d75fb7",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_1ef0d75fb7.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_f56843ee2d",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_f56843ee2d.json",
+      "action_summary": {
+        "merge_group_count": 1,
+        "do_not_merge_count": 0,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_e833feb14e",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_e833feb14e.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 3,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_563584ec3d",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_563584ec3d.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 3,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_43406c6cbd",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_43406c6cbd.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 3,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_16c8816338",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_16c8816338.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_0b687ec647",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_0b687ec647.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_d021833ba0",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_d021833ba0.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_b07b249e1b",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_b07b249e1b.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_6afe85bf7c",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_6afe85bf7c.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_15129684bb",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_15129684bb.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_c8c2813d7d",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_c8c2813d7d.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_28bb2b1630",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_28bb2b1630.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "project_cluster_103b7e6ab5",
+      "kind": "project",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/project_cluster_103b7e6ab5.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "medium"
+      }
+    },
+    {
+      "cluster_id": "project_cluster_3162c39e28",
+      "kind": "project",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/project_cluster_3162c39e28.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_30eb52a720",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_30eb52a720.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_67da6e1a68",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_67da6e1a68.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_7d46e2b733",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_7d46e2b733.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_1e0690eb14",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_1e0690eb14.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_fb44e6b89a",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_fb44e6b89a.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_4ac8a7cd38",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_4ac8a7cd38.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_9523db7ca6",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_9523db7ca6.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_325295622c",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_325295622c.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_b57a862fda",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_b57a862fda.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_4e85d36238",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_4e85d36238.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_70609b70c4",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_70609b70c4.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_4cbe44c64e",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_4cbe44c64e.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_43ced84901",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_43ced84901.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "entity_cluster_44cacc7cdb",
+      "kind": "entity",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/entity_cluster_44cacc7cdb.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_ae73bc0dfa",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_ae73bc0dfa.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_0351824b9d",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_0351824b9d.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_71710b1a18",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_71710b1a18.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_90e096b39d",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_90e096b39d.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_c8e62eaf6e",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_c8e62eaf6e.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "medium"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_b138a00bfb",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_b138a00bfb.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "unscored"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_fa77eb873b",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_fa77eb873b.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_b9e9449867",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_b9e9449867.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "high"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_c30f25548f",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_c30f25548f.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "unscored"
+      }
+    },
+    {
+      "cluster_id": "route_cluster_a6d89c367d",
+      "kind": "route",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/route_cluster_a6d89c367d.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "unscored"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_745cc01e16",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_745cc01e16.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "unscored"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_51576e2f75",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_51576e2f75.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "unscored"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_6fa803cc3c",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_6fa803cc3c.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "unscored"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_e2b5809961",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_e2b5809961.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "unscored"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_0a55f247eb",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_0a55f247eb.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "unscored"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_5b54a55adc",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_5b54a55adc.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "unscored"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_a445644335",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_a445644335.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "unscored"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_10a61c45f9",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_10a61c45f9.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "unscored"
+      }
+    },
+    {
+      "cluster_id": "corridor_cluster_8ad85f1523",
+      "kind": "corridor",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/corridor_cluster_8ad85f1523.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "unscored"
+      }
+    },
+    {
+      "cluster_id": "project_cluster_15471d97c3",
+      "kind": "project",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/project_cluster_15471d97c3.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "unscored"
+      }
+    },
+    {
+      "cluster_id": "project_cluster_5374bac3ce",
+      "kind": "project",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/project_cluster_5374bac3ce.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "unscored"
+      }
+    },
+    {
+      "cluster_id": "project_cluster_34157302e3",
+      "kind": "project",
+      "review_state": "accepted",
+      "path": "data/identity-review/accepted/decisions/project_cluster_34157302e3.json",
+      "action_summary": {
+        "merge_group_count": 0,
+        "do_not_merge_count": 1,
+        "weak_alias_count": 0,
+        "missing_field_count": 0,
+        "ambiguous_count": 0,
+        "confidence": "unscored"
+      }
+    }
+  ],
+  "quarantined": [
+    {
+      "cluster_id": "corridor_cluster_008",
+      "kind": "corridor",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/corridor_cluster_008.json",
+      "blocker": "manual_scope_review_required"
+    },
+    {
+      "cluster_id": "route_cluster_001",
+      "kind": "route",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/route_cluster_001.json",
+      "blocker": "route_plus_policy_required"
+    },
+    {
+      "cluster_id": "route_cluster_002",
+      "kind": "route",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/route_cluster_002.json",
+      "blocker": "route_plus_policy_required"
+    },
+    {
+      "cluster_id": "route_cluster_004",
+      "kind": "route",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/route_cluster_004.json",
+      "blocker": "partial_decision_plus_policy_required"
+    },
+    {
+      "cluster_id": "route_cluster_005",
+      "kind": "route",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/route_cluster_005.json",
+      "blocker": "route_plus_policy_required"
+    },
+    {
+      "cluster_id": "route_cluster_008",
+      "kind": "route",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/route_cluster_008.json",
+      "blocker": "route_plus_policy_required"
+    },
+    {
+      "cluster_id": "route_cluster_013",
+      "kind": "route",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/route_cluster_013.json",
+      "blocker": "route_plus_policy_required"
+    },
+    {
+      "cluster_id": "route_cluster_015",
+      "kind": "route",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/route_cluster_015.json",
+      "blocker": "route_plus_policy_and_record_split_required"
+    },
+    {
+      "cluster_id": "entity_cluster_696351ea7c",
+      "kind": "entity",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/entity_cluster_696351ea7c.json",
+      "blocker": "suggestion marks ambiguous: entity_167646-mta-real-estate, entity_frank-farrell-mta-acting-evp-buses, entity_meeting-doc-135596-mta-corporate-compliance, entity_mta-corporate-compliance-125256, entity_mta-nyct-evp-frank-farrell, entity_mta-real-estate, entity_mta-real-estate-department | merge entity_167646-triborough-bridge-tunnel + entity_mta-bridges-and-tunnels: record entity_167646-triborough-bridge-tunnel is not in the current canonical corpus | merge entity_167646-grand-central-madison + entity_meeting-doc-121001-gcmoc + entity_meeting-doc-gcmcoc: record entity_167646-grand-central-madison is not in the current canonical corpus | merge entity_167646-sirtoa + entity_meeting-doc-100241-staten-island-railway: record entity_167646-sirtoa is not in the current canonical corpus | merge entity_nyct-committee-2023 + entity_meeting-doc-140466-nyct-committee-members + entity_nyct-transit-committee-members: entity_nyct-committee-2023 and entity_nyct-transit-committee-members share no strong identity key (canon test 2 shape not met) | do_not_merge entity_mabstoa <> entity_mta-bus-company: reason does not cite a strong identity field | do_not_merge entity_meeting-doc-140466-nyct-committee-members <> entity_nyct-mta-bus-committee-charter: reason does not cite a strong identity field"
+    },
+    {
+      "cluster_id": "route_cluster_afaf670d79",
+      "kind": "route",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/route_cluster_afaf670d79.json",
+      "blocker": "do_not_merge route_b82-local <> route_b82e-express-cb18-jun2017: reason does not cite a strong identity field | do_not_merge route_b82-sbs <> route_b82e-express-cb18-jun2017: reason does not cite a strong identity field | do_not_merge route_b82-limited-brt-south-brooklyn-2017 <> route_bm2-brt-south-brooklyn-2017: reason does not cite a strong identity field | do_not_merge route_b82-local <> route_bm2-brt-south-brooklyn-2017: reason does not cite a strong identity field | do_not_merge route_b82-sbs <> route_bm2-brt-south-brooklyn-2017: reason does not cite a strong identity field | do_not_merge route_b82e-express-cb18-jun2017 <> route_bm2-brt-south-brooklyn-2017: reason does not cite a strong identity field | (+5 more rejections)"
+    },
+    {
+      "cluster_id": "entity_cluster_0bf953c6a3",
+      "kind": "entity",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/entity_cluster_0bf953c6a3.json",
+      "blocker": "merge entity_community-board-5-queens-2015 + entity_queens-cb5-grand-ave-2024: record entity_queens-cb5-grand-ave-2024 is not in the current canonical corpus"
+    },
+    {
+      "cluster_id": "entity_cluster_6496a89f51",
+      "kind": "entity",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/entity_cluster_6496a89f51.json",
+      "blocker": "do_not_merge entity_meeting-doc-113891-pcac <> entity_permanent-citizens-advisory-committee-pcac: record entity_permanent-citizens-advisory-committee-pcac is not in the current canonical corpus"
+    },
+    {
+      "cluster_id": "project_cluster_b3667d8e97",
+      "kind": "project",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/project_cluster_b3667d8e97.json",
+      "blocker": "do_not_merge project_34th-st-transitway-phase1-2009 <> project_downtown-jamaica-bus-study-phase1: reason does not cite a strong identity field | do_not_merge project_34th-st-transitway-phase1-2009 <> project_hylan-blvd-sbs-phase1: reason does not cite a strong identity field | do_not_merge project_34th-st-transitway-phase1-2009 <> project_m15-sbs-first-second-ave-phase1: reason does not cite a strong identity field | do_not_merge project_34th-st-transitway-phase1-2009 <> project_nostrand-rogers-ave-b44-sbs-phase1: reason does not cite a strong identity field | do_not_merge project_bx12-sbs-fordham-rd-phase1 <> project_downtown-jamaica-bus-study-phase1: reason does not cite a strong identity field | do_not_merge project_bx12-sbs-fordham-rd-phase1 <> project_m15-sbs-first-second-ave-phase1: reason does not cite a strong identity field | (+7 more rejections)"
+    },
+    {
+      "cluster_id": "route_cluster_88f99f53c6",
+      "kind": "route",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/route_cluster_88f99f53c6.json",
+      "blocker": "do_not_merge route_sim11-lex-ave-oct2025 <> route_sim22-42nd-st: reason does not cite a strong identity field | do_not_merge route_sim11-lex-ave-oct2025 <> route_sim26-42nd-st: reason does not cite a strong identity field | do_not_merge route_sim11-lex-ave-oct2025 <> route_sim6-lex-ave-oct2025: reason does not cite a strong identity field | do_not_merge route_sim22-42nd-st <> route_sim26-42nd-st: reason does not cite a strong identity field | do_not_merge route_sim22-42nd-st <> route_sim6-lex-ave-oct2025: reason does not cite a strong identity field | do_not_merge route_sim26-42nd-st <> route_sim6-lex-ave-oct2025: reason does not cite a strong identity field"
+    },
+    {
+      "cluster_id": "route_cluster_739e0ddf41",
+      "kind": "route",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/route_cluster_739e0ddf41.json",
+      "blocker": "do_not_merge route_bx41-limited-2012 <> route_sbs-to-laguardia-2012: reason does not cite a strong identity field | do_not_merge route_bx41-local-2012-02-brt-webster-cac1 <> route_sbs-to-laguardia-2012: reason does not cite a strong identity field | do_not_merge route_sbs-to-laguardia-2012 <> route_webster-ave-sbs: reason does not cite a strong identity field"
+    },
+    {
+      "cluster_id": "entity_cluster_0858889973",
+      "kind": "entity",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/entity_cluster_0858889973.json",
+      "blocker": "merge entity_community-advisory-committee-2015 + entity_woodhaven-cac-2014: entity_community-advisory-committee-2015 and entity_woodhaven-cac-2014 share no strong identity key (canon test 2 shape not met)"
+    },
+    {
+      "cluster_id": "route_cluster_3bb73bbedf",
+      "kind": "route",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/route_cluster_3bb73bbedf.json",
+      "blocker": "suggestion marks ambiguous: route_m15-local-limited | do_not_merge route_m15-limited-2010-06-09 <> route_m15-local-limited: cited distinction not supported by the records: both records have service_variant limited_stop | do_not_merge route_m15-local-2010-09-14 <> route_m15-local-limited: reason does not cite a strong identity field"
+    },
+    {
+      "cluster_id": "entity_cluster_813df798c6",
+      "kind": "entity",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/entity_cluster_813df798c6.json",
+      "blocker": "do_not_merge entity_mckissack-iec <> entity_meeting-doc-111791-michael-baker: reason does not cite a strong identity field"
+    },
+    {
+      "cluster_id": "entity_cluster_1b426c94c5",
+      "kind": "entity",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/entity_cluster_1b426c94c5.json",
+      "blocker": "do_not_merge entity_brooklyn-community-board-12 <> entity_community-board-12-brooklyn: record entity_community-board-12-brooklyn is not in the current canonical corpus"
+    },
+    {
+      "cluster_id": "project_cluster_10b02d73f4",
+      "kind": "project",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/project_cluster_10b02d73f4.json",
+      "blocker": "merge project_207th-st-sewer-replacement-33751 + project_207th-st-sewer-replacement-apr2022: record project_207th-st-sewer-replacement-apr2022 is not in the current canonical corpus"
+    },
+    {
+      "cluster_id": "entity_cluster_cd1a3a0ba5",
+      "kind": "entity",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/entity_cluster_cd1a3a0ba5.json",
+      "blocker": "do_not_merge entity_college-point-bus-depot <> entity_college-point-depot: record entity_college-point-bus-depot is not in the current canonical corpus"
+    },
+    {
+      "cluster_id": "entity_cluster_04865957e4",
+      "kind": "entity",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/entity_cluster_04865957e4.json",
+      "blocker": "do_not_merge entity_meeting-doc-111901-mta-treasury <> entity_meeting-doc-87841-mta-treasury: record entity_meeting-doc-87841-mta-treasury is not in the current canonical corpus"
+    },
+    {
+      "cluster_id": "corridor_cluster_27952469fe",
+      "kind": "corridor",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/corridor_cluster_27952469fe.json",
+      "blocker": "suggestion marks ambiguous: corridor_bus-fwd-2-church-av-brooklyn-local, corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate, corridor_church-av"
+    },
+    {
+      "cluster_id": "route_cluster_3a10176b65",
+      "kind": "route",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/route_cluster_3a10176b65.json",
+      "blocker": "do_not_merge route_q20-2014-10-07-flushing-jamaica <> route_q20b-cb12-2011: reason does not cite a strong identity field | do_not_merge route_q20-2014-10-07-flushing-jamaica <> route_q44-cb12-2011: reason does not cite a strong identity field | do_not_merge route_q20b-cb12-2011 <> route_q44-cb12-2011: reason does not cite a strong identity field"
+    },
+    {
+      "cluster_id": "route_cluster_9f24976591",
+      "kind": "route",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/route_cluster_9f24976591.json",
+      "blocker": "do_not_merge route_q52-q53-sbs-proposed-2015-05 <> route_q52-sbs-queens: reason does not cite a strong identity field | do_not_merge route_q52-q53-sbs-proposed-2015-05 <> route_q53-sbs-ace: reason does not cite a strong identity field | do_not_merge route_q52-sbs-queens <> route_q53-sbs-ace: cited distinction not supported by the records: both records have service_variant sbs"
+    },
+    {
+      "cluster_id": "route_cluster_3a8ac6ac4f",
+      "kind": "route",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/route_cluster_3a8ac6ac4f.json",
+      "blocker": "suggestion marks ambiguous: route_b46-local-2012, route_b46-local-limited-20110915, route_utica-ave-sbs"
+    },
+    {
+      "cluster_id": "corridor_cluster_3ff11c6c31",
+      "kind": "corridor",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/corridor_cluster_3ff11c6c31.json",
+      "blocker": "merge corridor_e-167th-e-168th-st + corridor_east-167-168-st: record corridor_e-167th-e-168th-st is not in the current canonical corpus"
+    },
+    {
+      "cluster_id": "entity_cluster_a5b61bab52",
+      "kind": "entity",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/entity_cluster_a5b61bab52.json",
+      "blocker": "merge entity_joint-lirr-metronorth-committee + entity_meeting157646-joint-committee: record entity_meeting157646-joint-committee is not in the current canonical corpus"
+    },
+    {
+      "cluster_id": "entity_cluster_9f28f5d973",
+      "kind": "entity",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/entity_cluster_9f28f5d973.json",
+      "blocker": "merge entity_stv-20100615 + entity_stv-inc: contradicting strong identity field between entity_stv-20100615 and entity_stv-inc: entity_type organization vs consulting firm"
+    },
+    {
+      "cluster_id": "entity_cluster_ec33df2ad5",
+      "kind": "entity",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/entity_cluster_ec33df2ad5.json",
+      "blocker": "merge entity_jose-lasalle-nov2022 + entity_meeting-doc-151646-jose-la-salle: entity_jose-lasalle-nov2022 and entity_meeting-doc-151646-jose-la-salle share no strong identity key (canon test 2 shape not met)"
+    },
+    {
+      "cluster_id": "entity_cluster_8fed1a1d89",
+      "kind": "entity",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/entity_cluster_8fed1a1d89.json",
+      "blocker": "merge entity_lk-comstock-and-company-llc + entity_lk-comstock-cpc-may2022: entity_lk-comstock-and-company-llc and entity_lk-comstock-cpc-may2022 share no strong identity key (canon test 2 shape not met)"
+    },
+    {
+      "cluster_id": "entity_cluster_015834c48e",
+      "kind": "entity",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/entity_cluster_015834c48e.json",
+      "blocker": "merge entity_meeting-doc-127956-hdr + entity_meeting-doc-199016-hdr: entity_meeting-doc-127956-hdr and entity_meeting-doc-199016-hdr share no strong identity key (canon test 2 shape not met)"
+    },
+    {
+      "cluster_id": "entity_cluster_45e252e4cc",
+      "kind": "entity",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/entity_cluster_45e252e4cc.json",
+      "blocker": "merge entity_meeting-doc-176501-21tech + entity_meeting-doc-176516-21tech: entity_meeting-doc-176501-21tech and entity_meeting-doc-176516-21tech share no strong identity key (canon test 2 shape not met)"
+    },
+    {
+      "cluster_id": "entity_cluster_4a306c14cf",
+      "kind": "entity",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/entity_cluster_4a306c14cf.json",
+      "blocker": "merge entity_meeting-doc-196846-romolo-de-santis + entity_romolo-desantis-vp-deputy-chief-engineer-tbta-jul2024: entity_meeting-doc-196846-romolo-de-santis and entity_romolo-desantis-vp-deputy-chief-engineer-tbta-jul2024 share no strong identity key (canon test 2 shape not met)"
+    },
+    {
+      "cluster_id": "project_cluster_3a9dc3c799",
+      "kind": "project",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/project_cluster_3a9dc3c799.json",
+      "blocker": "merge project_grand-central-train-shed + project_grand-central-trainshed: project_grand-central-train-shed and project_grand-central-trainshed share no strong identity key (canon test 2 shape not met)"
+    },
+    {
+      "cluster_id": "route_cluster_4f61a869c0",
+      "kind": "route",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/route_cluster_4f61a869c0.json",
+      "blocker": "merge route_able-s79-sbs + route_hylan-richmond-av-sbs-proposed: route_able-s79-sbs and route_hylan-richmond-av-sbs-proposed share no strong identity key (canon test 2 shape not met)"
+    },
+    {
+      "cluster_id": "route_cluster_2c82efc13a",
+      "kind": "route",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/route_cluster_2c82efc13a.json",
+      "blocker": "do_not_merge route_meeting-doc-129371-s53 <> route_meeting-doc-129371-s93: reason does not cite a strong identity field"
+    },
+    {
+      "cluster_id": "route_cluster_7e8439753a",
+      "kind": "route",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/route_cluster_7e8439753a.json",
+      "blocker": "do_not_merge route_q54 <> route_q59: reason does not cite a strong identity field"
+    },
+    {
+      "cluster_id": "route_cluster_b07de8d064",
+      "kind": "route",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/route_cluster_b07de8d064.json",
+      "blocker": "do_not_merge route_s78-hylan-2010 <> route_s79-hylan-2010: reason does not cite a strong identity field"
+    },
+    {
+      "cluster_id": "entity_cluster_57b869f3be",
+      "kind": "entity",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/entity_cluster_57b869f3be.json",
+      "blocker": "merge entity_nys-office-mental-health + entity_scout-nys-omh: contradicting strong identity field between entity_nys-office-mental-health and entity_scout-nys-omh: entity_type agency vs government agency"
+    },
+    {
+      "cluster_id": "route_cluster_68f78a564f",
+      "kind": "route",
+      "review_state": "quarantined",
+      "path": "data/identity-review/accepted/quarantine/route_cluster_68f78a564f.json",
+      "blocker": "do_not_merge route_q100-oct2022 <> route_q66-flushing: reason does not cite a strong identity field"
+    }
+  ],
+  "updated_at": "2026-06-23T14:41:02.863Z"
+}

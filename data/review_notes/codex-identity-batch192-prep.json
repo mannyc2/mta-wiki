@@ -1,0 +1,371 @@
+{
+  "note_id": "codex-identity-batch192-prep",
+  "batch": "identity192",
+  "created_at": "2026-06-23T00:00:00Z",
+  "scope": {
+    "selection_note": "Codex-only identity cleanup prep after identity187-189. Restricted to route and corridor aliases only. Current data/identity-overrides/merges.json already includes the identity189 route/corridor additions, so this artifact uses the current override state as baseline and does not re-propose already-merged aliases.",
+    "allowed_global_kinds": [
+      "route",
+      "corridor"
+    ],
+    "prepared_global_kinds": [],
+    "write_limit": "Only this review note was written. No merges.json, LOG.md, manifest, submissions, canonical JSONL, canonical DB, materialized outputs, wiki files, or provider-backed commands were intentionally used or edited.",
+    "candidate_limit": {
+      "requested": "up to 6 very high-confidence route/corridor aliases if possible",
+      "prepared_count": 0,
+      "pass": true,
+      "note": "No new route or corridor alias cleared the guard checks after identity187-189 without either duplicating an earlier prep artifact or crossing a route-variant, bundled-route, corridor-extent, branch/direction, or borough/scope guard."
+    }
+  },
+  "deterministic_inspection": {
+    "validate_repo_duplicate_global_identity": {
+      "method": "Read-only validateRepo() via bun --eval over current canonical JSONL plus current identity overrides.",
+      "total_issue_count": 451,
+      "route_or_corridor_duplicate_count": 46,
+      "route_or_corridor_messages_sample": [
+        "Global corridor records corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate and corridor_church-av share identity key corridor_church-ave.",
+        "Global corridor records corridor_cross-bay-blvd-2015 and corridor_cross-bay-blvd-sbs-spring2015 share identity key corridor_cross-bay-blvd.",
+        "Global corridor records corridor_flatlands-ave-brooklyn-b82 and corridor_flatlands-avenue-brooklyn-oct2018 share identity key corridor_flatlands-ave.",
+        "Global route records route_bx55-2012 and route_bx55-lga-2012 share identity key route_bx55.",
+        "Global route records route_m14-ad-sbs and route_m14-brt-phase2 share identity key route_m14."
+      ]
+    },
+    "prior_prep_guard": {
+      "not_repeated": [
+        {
+          "alias_id": "route_m14-brt-phase2",
+          "target_id": "route_m14-ad-sbs",
+          "prior_artifact": "data/review_notes/codex-identity-batch179-prep.json",
+          "reason": "Still absent from current merges.json, but already prepared as a prior Codex alias; not re-proposed in this next batch."
+        },
+        {
+          "alias_id": "route_b44-brt-phase2",
+          "target_id": "route_b44-sbs",
+          "prior_artifact": "data/review_notes/codex-identity-batch182-prep.json",
+          "reason": "Still absent from current merges.json, but already prepared as a prior Codex alias; not re-proposed in this next batch."
+        }
+      ]
+    }
+  },
+  "prepared_count": 0,
+  "proposed_aliases": [],
+  "deferred": [
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_125th-st-crosstown-brt-phase2",
+        "corridor_125th-st-manhattan"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global corridor records corridor_125th-st-crosstown-brt-phase2 and corridor_125th-st-manhattan share identity key corridor_125th-st-crosstown-corridor."
+      ],
+      "source_or_payload_evidence": [
+        "corridor_125th-st-crosstown-brt-phase2 payload: BRT Phase II candidate corridor.",
+        "corridor_125th-st-manhattan payload limits: Morningside Avenue to Second Avenue."
+      ],
+      "reason": "Deferred for corridor extent mismatch risk. The Phase II crosstown candidate is broad, while the existing target has concrete Morningside-to-Second limits.",
+      "guard_checks": {
+        "same_global_kind": true,
+        "same_borough": true,
+        "corridor_extent_match": false,
+        "borough_mismatch": false,
+        "safe_to_alias": false
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_14th-st-crosstown-brt-phase2",
+        "corridor_14th-street-ttp"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: records share corridor_14th-st-crosstown-brt-phase2 and corridor_14th-st-crosstown-corridor identity keys."
+      ],
+      "source_or_payload_evidence": [
+        "corridor_14th-st-crosstown-brt-phase2 payload: BRT Phase II candidate corridor.",
+        "corridor_14th-street-ttp payload limits: 3rd Avenue to 8th Avenue westbound and 9th Avenue to 3rd Avenue eastbound."
+      ],
+      "reason": "Deferred exactly as in identity189: broad 14th Street crosstown candidate versus specific TTP/busway operational limits.",
+      "guard_checks": {
+        "same_global_kind": true,
+        "same_borough": true,
+        "corridor_extent_match": false,
+        "direction_or_operating_rule_mismatch_risk": true,
+        "safe_to_alias": false
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_bus-fwd-2-church-av-brooklyn-local",
+        "corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate",
+        "corridor_church-av"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: corridor_bus-fwd-2-church-av-brooklyn-local and corridor_church-av share corridor_church-av.",
+        "validateRepo duplicate_global_identity: corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate and corridor_church-av share corridor_church-ave."
+      ],
+      "source_or_payload_evidence": [
+        "bus_forward_2#p005_c0001 lists 'G Church Avenue' as a future SBS candidate corridor without limits.",
+        "bus_forward_2#p011_c0002 lists Church Av from Coney Island Av to Flatbush Av as a local bus priority corridor.",
+        "corridor_church-av payload limits and source quotes identify Flatbush Ave to Ocean Pkwy, 0.9 miles."
+      ],
+      "reason": "Deferred because the same source distinguishes a Coney Island-to-Flatbush local segment, while the richer Church Av target is Flatbush-to-Ocean Pkwy. The unlabeled SBS candidate cannot be safely collapsed into the target without stronger extent evidence.",
+      "guard_checks": {
+        "same_global_kind": true,
+        "same_borough": true,
+        "corridor_extent_match": false,
+        "same_source_has_conflicting_segment": true,
+        "safe_to_alias": false
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_cross-bay-blvd-2015",
+        "corridor_cross-bay-blvd-liberty-109av-2015",
+        "corridor_cross-bay-blvd-sbs-spring2015",
+        "corridor_cross-bay-boulevard-rockaway-to-165",
+        "corridor_woodhaven-cross-bay-blvds"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: corridor_cross-bay-blvd-2015 collides with Liberty/109 Av, SBS Spring 2015, Rockaway-to-165, and Woodhaven/Cross Bay records on corridor_cross-bay-blvd."
+      ],
+      "source_or_payload_evidence": [
+        "corridor_cross-bay-blvd-2015 limits: north of 165 Av.",
+        "corridor_cross-bay-blvd-liberty-109av-2015 limits: at Liberty Avenue and 109 Avenue.",
+        "corridor_cross-bay-boulevard-rockaway-to-165 limits: Rockaway Boulevard to 165 Avenue.",
+        "corridor_cross-bay-blvd-sbs-spring2015 includes broader Cross Bay bus-lane / Q52-Q53 corridor context."
+      ],
+      "reason": "Deferred for corridor extent and whole-corridor versus subsegment mismatch. Cross Bay Boulevard appears in multiple Q52/Q53 contexts, but these records do not all describe the same limits.",
+      "guard_checks": {
+        "same_global_kind": true,
+        "same_borough": true,
+        "corridor_extent_match": false,
+        "whole_corridor_vs_subsegment_risk": true,
+        "safe_to_alias": false
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_b82-southern-brooklyn",
+        "corridor_brt-b82-mar2018-kings-highway",
+        "corridor_kings-highway-brooklyn",
+        "corridor_kings-hwy-brooklyn-b82-cb11",
+        "corridor_flatlands-ave-brooklyn-b82",
+        "corridor_flatlands-avenue-brooklyn-oct2018"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: B82 Southern Brooklyn collides with multiple Kings Highway records on corridor_kings-highway.",
+        "validateRepo duplicate_global_identity: corridor_flatlands-ave-brooklyn-b82 and corridor_flatlands-avenue-brooklyn-oct2018 share corridor_flatlands-ave."
+      ],
+      "source_or_payload_evidence": [
+        "corridor_b82-southern-brooklyn limits: Cropsey Avenue/Bay 37 Street to Canarsie area; street: Kings Hwy and Flatlands Ave.",
+        "corridor_brt-b82-mar2018-kings-highway limits: Bay Pkwy to Ocean Ave and E 23 St to Ave K.",
+        "corridor_kings-hwy-brooklyn-b82-cb11 limits: Bay Pkwy to McDonald Ave in CB 11.",
+        "corridor_flatlands-ave-brooklyn-b82 limits: E 103 St to Pennsylvania Ave.",
+        "corridor_flatlands-avenue-brooklyn-oct2018 limits: Ave I to Ralph Ave."
+      ],
+      "reason": "Deferred because the shared street names occur inside larger B82 corridor records and distinct subsegments. Flatlands Oct2018 is wider/different from the already-collapsed E 103-to-Pennsylvania Flatlands segment.",
+      "guard_checks": {
+        "same_global_kind": true,
+        "same_borough": true,
+        "corridor_extent_match": false,
+        "whole_corridor_vs_subsegment_risk": true,
+        "safe_to_alias": false
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_bay-parkway-cropsey",
+        "corridor_cropsey-ave-brooklyn-b82"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global corridor records corridor_bay-parkway-cropsey and corridor_cropsey-ave-brooklyn-b82 share identity key corridor_cropsey-ave."
+      ],
+      "source_or_payload_evidence": [
+        "corridor_bay-parkway-cropsey limits: Bay Parkway from Avenue J to Shore Parkway; Cropsey Avenue from Bay Parkway to 26th Avenue.",
+        "corridor_cropsey-ave-brooklyn-b82 description: B82 corridor segment from Bay 37 St northward."
+      ],
+      "reason": "Deferred because the target is a two-street Bay Parkway/Cropsey study area while the alias candidate is a Cropsey-only B82 corridor segment.",
+      "guard_checks": {
+        "same_global_kind": true,
+        "same_borough": true,
+        "corridor_extent_match": false,
+        "multi_corridor_bundle_risk": true,
+        "safe_to_alias": false
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_lexington-ave-2015-01-06",
+        "corridor_lexington-ave-96th-to-60th",
+        "corridor_lexington-avenue",
+        "corridor_third-ave-36th-to-55th",
+        "corridor_third-ave-55th-to-57th",
+        "corridor_woodhaven-blvd-dry-harbor-to-metropolitan",
+        "corridor_woodhaven-blvd-union-tpke-to-81st-rd",
+        "corridor_woodhaven-boulevard"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity reports shared street identity keys for Lexington Avenue, Third Avenue, and Woodhaven Boulevard records."
+      ],
+      "source_or_payload_evidence": [
+        "Third Avenue records have adjacent but distinct limits: 36th to 55th and 55th to 57th.",
+        "Woodhaven records have distinct limits: Dry Harbor Road to Metropolitan Avenue, Union Turnpike to 81st Road, and Queens Boulevard to 107th Avenue.",
+        "Lexington records were already deferred in identity189 for distinct segment/intersection contexts."
+      ],
+      "reason": "Deferred for segment-boundary mismatch. Shared street labels alone are not enough for corridor aliasing.",
+      "guard_checks": {
+        "same_global_kind": true,
+        "street_name_only_collision": true,
+        "corridor_extent_match": false,
+        "safe_to_alias": false
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_meeting-doc-109341-montauk-branch-amityville-babylon",
+        "corridor_meeting-doc-109341-montauk-branch-babylon-sayville"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global corridor records corridor_meeting-doc-109341-montauk-branch-amityville-babylon and corridor_meeting-doc-109341-montauk-branch-babylon-sayville share identity key corridor_montauk-branch."
+      ],
+      "source_or_payload_evidence": [
+        "One record limits are Amityville to Babylon.",
+        "The other record limits are Babylon to Sayville."
+      ],
+      "reason": "Deferred for branch segment mismatch. Same rail branch, different bounded work segments.",
+      "guard_checks": {
+        "same_global_kind": true,
+        "same_named_branch": true,
+        "corridor_extent_match": false,
+        "safe_to_alias": false
+      }
+    },
+    {
+      "global_kind": "corridor",
+      "record_ids": [
+        "corridor_utica-ave-b46-2015-04-06",
+        "corridor_utica-ave-brt-phase2",
+        "corridor_utica-ave-st-johns-carroll-2013",
+        "corridor_utica-ave-st-johns-pl-church-ave-2013"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity reports multiple Utica Avenue corridor key collisions including corridor_utica-ave, corridor_utica-ave-corridor, and corridor_utica-ave-brt-phase2."
+      ],
+      "source_or_payload_evidence": [
+        "identity189 already deferred the Utica group for broad-corridor versus narrower Carroll/St. Johns-to-Church segment risk."
+      ],
+      "reason": "Deferred for broad BRT/B46 corridor versus narrower bus-priority segment mismatch.",
+      "guard_checks": {
+        "same_global_kind": true,
+        "same_borough": true,
+        "corridor_extent_match": false,
+        "whole_corridor_vs_subsegment_risk": true,
+        "safe_to_alias": false
+      }
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_b103-ltd-proposed-draft",
+        "route_b103e-express-cb18-jun2017",
+        "route_b82-limited-brt-south-brooklyn-2017",
+        "route_b82-local",
+        "route_b82e-express-cb18-jun2017",
+        "route_bx41-limited-2012",
+        "route_bx41-local-2012-02-brt-webster-cac1",
+        "route_webster-ave-sbs",
+        "route_b46-local-limited-20110915",
+        "route_utica-ave-sbs"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity reports shared base route keys for B103, B82, Bx41, and B46 records."
+      ],
+      "source_or_payload_evidence": [
+        "The colliding records explicitly include limited, local, express, local/limited bundle, and SBS variants."
+      ],
+      "reason": "Deferred for route-variant guard. Shared base route number is not enough to merge local, limited, express, SBS, or bundled local/limited records.",
+      "guard_checks": {
+        "same_global_kind": true,
+        "route_number_match": true,
+        "service_variant_match": false,
+        "bundle_or_variant_risk": true,
+        "safe_to_alias": false
+      }
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_bx40-bx42-tremont-cb5-2024",
+        "route_bx42-tremont-cab1"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity: Global route records route_bx40-bx42-tremont-cb5-2024 and route_bx42-tremont-cab1 share identity key route_bx42."
+      ],
+      "source_or_payload_evidence": [
+        "route_bx40-bx42-tremont-cb5-2024 is a Bx40/42 bundled route record.",
+        "route_bx42-tremont-cab1 is a single Bx42 route record."
+      ],
+      "reason": "Deferred for route-bundle guard: do not collapse Bx40/Bx42 bundle into single Bx42.",
+      "guard_checks": {
+        "same_global_kind": true,
+        "route_number_overlap": true,
+        "route_bundle_match": false,
+        "safe_to_alias": false
+      }
+    },
+    {
+      "global_kind": "route",
+      "record_ids": [
+        "route_bx55-2012",
+        "route_bx55-lga-2012",
+        "route_q53-lga-2012",
+        "route_q53-sbs-ace",
+        "route_bronx-flushing-jamaica-sbs",
+        "route_q44-cb12-2011",
+        "route_q52-q53-sbs-proposed-2015-05",
+        "route_q52-sbs-queens"
+      ],
+      "confidence": "low",
+      "validator_evidence": [
+        "validateRepo duplicate_global_identity reports Bx55, Q53, Q44, and Q52/Q53 route key collisions."
+      ],
+      "source_or_payload_evidence": [
+        "2012_04_20_brt_lga_workshop_summary#p003_c0006 lists participant-identified access ideas including 'Bx41/Bx55 from northern Bronx to LGA via Robert F. Kennedy Bridge' and 'Q53 from Rockaway Park to LGA'.",
+        "route_bx55-2012 target is the Webster Avenue Bx55 Limited cluster.",
+        "route_q53-sbs-ace target is the implemented Q53 SBS on Woodhaven/Cross Bay Boulevard.",
+        "identity189 already deferred Q44 SBS versus pre-SBS Q44 and Q52/Q53 bundle versus single Q52 SBS."
+      ],
+      "reason": "Deferred for context and variant mismatch. LaGuardia workshop route ideas are too thin to merge into Webster/Woodhaven implemented-service clusters, and Q44/Q52 collisions remain SBS/pre-SBS or bundle/single-route traps.",
+      "guard_checks": {
+        "same_global_kind": true,
+        "route_number_match": true,
+        "service_variant_or_context_match": false,
+        "participant_idea_vs_canonical_service_risk": true,
+        "safe_to_alias": false
+      }
+    }
+  ],
+  "blockers": [
+    "No new route/corridor alias cleared all guards after identity187-189. Remaining validator collisions are dominated by service-variant traps, route bundles, corridor extent/subsegment mismatches, or broad street-name collisions.",
+    "Two plausible route aliases, route_m14-brt-phase2 -> route_m14-ad-sbs and route_b44-brt-phase2 -> route_b44-sbs, were already prepared in earlier Codex artifacts and are therefore not duplicated here.",
+    "Several corridor aliases that look tempting by street name fail on explicit limits: Church Avenue, Cross Bay Boulevard, Flatlands/Kings Highway, Woodhaven Boulevard, Third Avenue, Lexington Avenue, Utica Avenue, and Montauk Branch segments."
+  ]
+}

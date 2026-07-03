@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T17-48-04-600Z_1496766-6452eb74_ingest_2009-05-13-brt-1st2nd-cac1",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-10T21:04:17.456Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "corridor_first_second_ave_sbs_2009",
+        "decision": "new",
+        "rationale": "The observation's base_record_id (corridor_first-second-avenues-brt) already matches an existing registry record with the same record_id. Per identity rules, when the closest match IS the observation's own base_record_id, the decision is 'new' — the observation already resolves to that canonical record. The registry record corridor_first-second-avenues-brt shares the same streets (First Avenue/Second Avenue), limits (South Ferry to 125th Street), borough (Manhattan), and even lists corridor_first-second-ave-sbs-2009 among its aliases.",
+        "evidence_refs": [
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p021_c0003",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2009_05_13_brt_1st2nd_cac1",
+            "block_id": "p021_c0004",
+            "source_quote": ""
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T21-03-44-591Z_1774507-4ddc67b1_canonicalize_2026-06-10t17-48-04-600z-1496766-6452eb74-ingest-2009-05-13-brt-1st2nd-cac1-corridor-identity"
+}

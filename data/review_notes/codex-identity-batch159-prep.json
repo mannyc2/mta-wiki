@@ -1,0 +1,125 @@
+{
+  "note_id": "codex-identity-batch159-prep",
+  "batch": "identity159",
+  "created_at": "2026-06-23T07:51:35Z",
+  "scope": {
+    "global_kind": "route/corridor"
+  },
+  "prepared_count": 3,
+  "proposed_aliases": [
+    {
+      "global_kind": "route",
+      "alias_id": "route_m16-mentioned",
+      "target_id": "route_m34a-sbs",
+      "canonical_id": "route_m34a-sbs",
+      "confidence": "high",
+      "reason": "The alias record is the former M16 34th Street route record and its evidence says it was renamed to M34A SBS, with service levels and route remaining the same. The target is the current M34A SBS route record and already carries M34A SBS identity fields.",
+      "validator_duplicate_key": "route_m34a-sbs",
+      "validator_evidence": "validateRepo duplicate_global_identity: Global route records route_m16-mentioned and route_m34a-sbs share identity key route_m34a-sbs.",
+      "source_evidence": [
+        {
+          "record_id": "route_m16-mentioned",
+          "evidence_id": "201110_brt_34th_open_house_slides#p028_c0002",
+          "quote": "M16 to be renamed the M34A SBS for clearer passenger communication"
+        },
+        {
+          "record_id": "route_m34a-sbs",
+          "evidence_id": "201110_brt_34th_open_house_slides#p028_c0002",
+          "quote": "Service levels and route will remain the same on both M34 SBS and M34A SBS"
+        }
+      ]
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_q20a-cb12-2011",
+      "target_id": "route_q20-2014-10-07-flushing-jamaica",
+      "canonical_id": "route_q20-2014-10-07-flushing-jamaica",
+      "confidence": "high",
+      "reason": "The alias is a Q20A local-route fragment from the Flushing/Jamaica sources. The target is the current Q20A/Q20B local route record for the same Main Street corridor and already includes route_q20a and Q20A/B aliases.",
+      "validator_duplicate_key": "route_q20a",
+      "validator_evidence": "validateRepo duplicate_global_identity: Global route records route_q20-2014-10-07-flushing-jamaica and route_q20a-cb12-2011 share identity key route_q20a.",
+      "source_evidence": [
+        {
+          "record_id": "route_q20a-cb12-2011",
+          "evidence_id": "2015_06_09_brt_flushing_jamaica_cb12#p006_c0006",
+          "quote": "Q20A/B: Jamaica to College Point"
+        },
+        {
+          "record_id": "route_q20-2014-10-07-flushing-jamaica",
+          "evidence_id": "2014_10_07_brt_flushingjamaica_pw1_presentation#p014_c0003",
+          "quote": "Q20A/B: Jamaica to College Point"
+        }
+      ]
+    },
+    {
+      "global_kind": "route",
+      "alias_id": "route_q44-ltd-2014-10-07-flushing-jamaica",
+      "target_id": "route_q44-cb12-2011",
+      "canonical_id": "route_q44-cb12-2011",
+      "confidence": "high",
+      "reason": "The alias is a Q44 LTD pre-SBS route fragment from the Flushing/Jamaica planning sources. The target is the current pre-SBS Q44 local/limited record and already contains Q44 Limited identity fields and evidence that Q44 LTD would be replaced by Q44 SBS.",
+      "validator_duplicate_key": "route_q44",
+      "validator_evidence": "validateRepo duplicate_global_identity backlog includes Q44 route records sharing identity key route_q44; local inspection shows this alias should resolve to the pre-SBS Q44 record rather than the Q44 SBS target.",
+      "source_evidence": [
+        {
+          "record_id": "route_q44-ltd-2014-10-07-flushing-jamaica",
+          "evidence_id": "2014_10_07_brt_flushingjamaica_pw1_presentation#p014_c0003",
+          "quote": "Q44: Jamaica to Bronx Zoo"
+        },
+        {
+          "record_id": "route_q44-ltd-2014-10-07-flushing-jamaica",
+          "evidence_id": "2014_10_07_brt_flushingjamaica_pw1_presentation#p018_c0001",
+          "quote": "Q44 LTD Sources of Delay"
+        },
+        {
+          "record_id": "route_q44-cb12-2011",
+          "evidence_id": "2015_06_15_brt_flushing_jamaica_cb8_presentation#p009_c0002",
+          "quote": "Q44 LTD will be replaced by Q44 SBS"
+        }
+      ]
+    }
+  ],
+  "exclusions_and_guards": [
+    "Only current canonical route/corridor record ids were considered as alias_id and target_id values.",
+    "Checked current data/identity-overrides/merges.json for existing aliases and target-chain risks; no proposed alias_id is already merged or already a merge target.",
+    "Checked current data/identity-overrides/do-not-merge.json; no proposed pair is covered by a do-not-merge guard.",
+    "Excluded corridor_125th-street-manhattan -> corridor_125th-st-manhattan per explicit task guard and current do-not-merge corridor-limits guard.",
+    "Excluded corridor_14th-st-crosstown-brt-phase2 -> corridor_14th-street-ttp because corridor_14th-st-crosstown-brt-phase2 is already a target in merges.json, so proposing it as an alias would create a target chain.",
+    "Excluded route/corridor duplicate keys that are only shared base route numbers, shared street names, adjacent corridor segments, nested corridor scopes, or local/limited/SBS variant traps."
+  ],
+  "command_evidence": [
+    {
+      "command": "jq '.aliases' data/identity-overrides/merges.json",
+      "purpose": "Read current alias override map and identify already-merged aliases and target-chain risks."
+    },
+    {
+      "command": "jq '.pairs' data/identity-overrides/do-not-merge.json",
+      "purpose": "Read current do-not-merge guards before preparing any route/corridor proposal."
+    },
+    {
+      "command": "bun -e 'import { validateRepo } from \"./packages/pipeline/src/validate.ts\"; const r=validateRepo(); ...'",
+      "purpose": "Read-only validateRepo inspection; confirmed 689 duplicate_global_identity issues and 67 route/corridor duplicate messages."
+    },
+    {
+      "command": "jq -r 'select(.record_id==...) | {record_id, aliases, display_name, source_ids, payload, evidence}' data/canonical/routes.jsonl",
+      "purpose": "Inspected current canonical route records, aliases, payload identity fields, and evidence refs for candidate pairs."
+    },
+    {
+      "command": "for f in data/review_notes/codex-identity-batch144-prep.json data/review_notes/codex-identity-batch147-prep.json data/review_notes/codex-identity-batch151-prep.json data/review_notes/codex-identity-batch155-prep.json; do jq ...; done",
+      "purpose": "Checked recent route/corridor prep batches to avoid repeating stale aliases."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed commands",
+    "materialize",
+    "export-jsonl",
+    "full CLI validate",
+    "write",
+    "ask",
+    "schema",
+    "ontology",
+    "identity-review",
+    "canonicalize",
+    "campaign dedup"
+  ]
+}

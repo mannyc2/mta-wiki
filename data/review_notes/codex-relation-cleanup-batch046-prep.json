@@ -1,0 +1,332 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch046-prep",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "batch_id": "relation046",
+  "batch": "batch046",
+  "scope": "Codex-only relation endpoint-shape cleanup prep; no durable retirements, replacement submissions, generated-output commands, provider-backed commands, or generated canonical edits applied",
+  "input_artifact": "data/review_notes/codex-relation-rule-or-data-next21-prep.json",
+  "bucket": {
+    "name": "has_treatment claim-to-treatment_component row that should be has_claim treatment_component-to-claim",
+    "original_relation_kind": "has_treatment",
+    "original_endpoint_shape": "claim -> treatment_component",
+    "replacement_relation_kind": "has_claim",
+    "replacement_endpoint_shape": "treatment_component -> claim",
+    "prepared_original_count": 1,
+    "cleanup_direction": "data cleanup only; keep has_treatment scoped to project|corridor|route -> treatment_component",
+    "rationale": "The source supports both a new elevator treatment component at Livonia Av & Rockaway Parkway and a source-stated claim about that elevator. It does not support using the claim as the owner/scope of a has_treatment edge. The existing endpoint rules admit has_claim treatment_component -> claim, preserving the relationship without widening has_treatment."
+  },
+  "checkpoint_context": {
+    "reported_checkpoint": {
+      "unexpected_relation_endpoint_shape": 24,
+      "duplicate_global_identity": 1476,
+      "context": "Fresh baseline after next20/relation044/identity076 checkpoint supplied in task."
+    },
+    "input_next21_observed_count": 24,
+    "selected_bucket_count": 1,
+    "expected_selected_rows_cleared": 1,
+    "expected_replacement_rows_added": 1,
+    "expected_endpoint_shape_issue_delta": -1,
+    "endpoint_shape_issue_count_after_replacement_estimate": 23,
+    "endpoint_shape_probe": {
+      "has_treatment claim->treatment_component": "Relation kind has_treatment expects project|corridor|route -> treatment_component, got claim -> treatment_component.",
+      "has_claim treatment_component->claim": "accepted by current endpoint-shape rules in packages/pipeline/src/records/relations.ts"
+    }
+  },
+  "durable_mechanism_prepared_not_applied": {
+    "retire_originals_via": "data/submission-overrides/retired.json",
+    "replacement_journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch046.jsonl",
+    "mutation_status": "not_applied_by_this_prep",
+    "only_file_written_by_this_task": "data/review_notes/codex-relation-cleanup-batch046-prep.json"
+  },
+  "exclusions_and_guards": {
+    "excluded_parallel_or_recent_artifacts": [
+      "identity077",
+      "relation045",
+      "relation044 and earlier applied relation cleanup batches"
+    ],
+    "guarded_files_not_edited_by_this_task": [
+      "data/submission-overrides/retired.json",
+      "data/submissions/*.jsonl",
+      "data/canonical/*.jsonl",
+      "data/canonical.db",
+      "data/materialized/*",
+      "wiki/*",
+      "LOG.md",
+      "identity overrides",
+      "code"
+    ],
+    "original_submission_guard": {
+      "selected_original_submission_id": "sub_e9da8479c21e0686",
+      "selected_original_record_id": "relation_accessibility-has-treatment-elevator",
+      "selected_original_journal": "data/submissions/2026-06-20T12-13-46-165Z_1885472-638c2ec1_ingest_meeting-doc-109976.jsonl",
+      "current_validation_state": "accepted",
+      "retired_hits_for_selected_originals": [],
+      "canonical_original_present": true,
+      "canonical_original_review_state": "unreviewed"
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": [],
+      "canonical_record_collision_hits_for_new_batch046_locals": []
+    },
+    "known_endpoint_local_ids_confirmed": [
+      "treatment_elevator_livonia_rockaway",
+      "claim_new_elevator_livonia_rockaway"
+    ],
+    "replacement_endpoint_shape_guard": {
+      "subject_local_observation_id": "treatment_elevator_livonia_rockaway",
+      "subject_kind": "treatment_component",
+      "object_local_observation_id": "claim_new_elevator_livonia_rockaway",
+      "object_kind": "claim",
+      "relation_kind": "has_claim",
+      "endpoint_shape_issue_after_replacement": null
+    },
+    "evidence_support_guard": {
+      "status": "pass",
+      "summary": "The original relation, accepted claim, accepted treatment component, and canonical records all cite page 13 blocks from meeting_doc_109976. The p013_c0001 block describes the elevator/signage at Livonia Av & Rockaway Parkway and includes the source-stated claim text; p013_c0003 gives the accessibility context. Reusing these evidence refs is justified because the replacement preserves the same source-backed relationship while correcting kind/direction."
+    },
+    "no_generated_canonical_files_edited_guard": {
+      "status": "pass_for_this_task",
+      "note": "The shared worktree already had generated-output edits before this prep. This task only adds data/review_notes/codex-relation-cleanup-batch046-prep.json and does not edit canonical JSONL, canonical DB, materialized data, or wiki output."
+    },
+    "retire_only_fallback": {
+      "available": true,
+      "not_selected_reason": "Replacement is safe: both endpoints already exist as accepted same-source observations, the replacement relation has direct copied evidence, and has_claim treatment_component -> claim is valid under current endpoint rules."
+    }
+  },
+  "local_validation": {
+    "clean": true,
+    "tooling": "Read-only jq/rg inspection plus bun --eval createSubmissionEntry dry-run using direct source imports; no appendSubmission, materialize, export-jsonl, full validate, DB publish, provider-backed command, or generated-output command run.",
+    "summary": {
+      "prepared_count": 1,
+      "retire_replace_count": 1,
+      "retire_only_count": 0,
+      "replacement_submission_count": 1,
+      "accepted_replacement_count": 1,
+      "issue_count": 0,
+      "warning_count": 0,
+      "relation_endpoint_issue_count": 0,
+      "endpoint_shape_issue_count_after_replacement": 0,
+      "endpoint_shape_issue_count_after_replacement_estimate": 23
+    }
+  },
+  "prepared_count": 1,
+  "retire_replace_count": 1,
+  "retire_only_count": 0,
+  "accepted_replacement_count": 1,
+  "issue_count": 0,
+  "endpoint_shape_issue_count_after_replacement_estimate": 23,
+  "all_pass": true,
+  "decisions": [
+    {
+      "action": "retire_and_replace",
+      "retire": {
+        "submission_id": "sub_e9da8479c21e0686",
+        "run_id": "2026-06-20T12-13-46-165Z_1885472-638c2ec1_ingest_meeting-doc-109976",
+        "original_record_id": "relation_accessibility-has-treatment-elevator",
+        "original_local_observation_id": "relation_accessibility_has_treatment_elevator",
+        "malformed_shape": "has_treatment claim -> treatment_component",
+        "original_relation_kind": "has_treatment",
+        "original_subject_id": "claim_new-elevator-livonia-rockaway",
+        "original_subject_kind": "claim",
+        "original_subject_local_observation_id": "claim_new_elevator_livonia_rockaway",
+        "original_subject_name": "New Elevator at Livonia Av & Rockaway Parkway",
+        "original_object_id": "treatment_elevator-livonia-rockaway",
+        "original_object_kind": "treatment_component",
+        "original_object_local_observation_id": "treatment_elevator_livonia_rockaway",
+        "original_object_name": "New elevator at Livonia Av & Rockaway Parkway",
+        "source_ids": [
+          "meeting_doc_109976"
+        ],
+        "current_args": {
+          "source_id": "meeting_doc_109976",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_accessibility_has_treatment_elevator",
+          "label": "Advancing Systemwide Accessibility includes elevator installation",
+          "payload": {
+            "relation_kind": "has_treatment",
+            "subject_local_observation_id": "claim_new_elevator_livonia_rockaway",
+            "object_local_observation_id": "treatment_elevator_livonia_rockaway",
+            "relation_family": "treatment_context"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_109976",
+              "evidence_id": "meeting_doc_109976#p013_c0001",
+              "source_path": "raw/sources/meeting_doc_109976/blocks.jsonl",
+              "page_number": 13,
+              "block_id": "p013_c0001",
+              "text_sha256": "sha256:6d40cc00221b6942c1d1053a53dfd426c9d83c196bb661c49b955221b8b8e21a",
+              "text_source": "raw_text",
+              "source_quote": "Welcome back to a new elevator! Thank you for your patience during construction."
+            },
+            {
+              "source_id": "meeting_doc_109976",
+              "evidence_id": "meeting_doc_109976#p013_c0003",
+              "source_path": "raw/sources/meeting_doc_109976/blocks.jsonl",
+              "page_number": 13,
+              "block_id": "p013_c0003",
+              "text_sha256": "sha256:349cb41153c4af687916965b08da894da5255f5a0d9ab16ba6f758af93a1dd43",
+              "text_source": "raw_text",
+              "source_quote": "Advancing Systemwide Accessibility"
+            }
+          ]
+        },
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_e9da8479c21e0686",
+          "reason": "Codex relation cleanup batch046 replaces malformed has_treatment claim -> treatment_component relation relation_accessibility-has-treatment-elevator with validator-compatible has_claim treatment_component -> claim relation preserving the Livonia Av & Rockaway Parkway elevator evidence.",
+          "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-23.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch046",
+          "reviewed_at": "2026-06-23T00:00:00Z"
+        },
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_109976",
+            "evidence_id": "meeting_doc_109976#p013_c0001",
+            "source_path": "raw/sources/meeting_doc_109976/blocks.jsonl",
+            "page_number": 13,
+            "block_id": "p013_c0001",
+            "text_sha256": "sha256:6d40cc00221b6942c1d1053a53dfd426c9d83c196bb661c49b955221b8b8e21a",
+            "text_source": "raw_text",
+            "source_quote": "Welcome back to a new elevator! Thank you for your patience during construction.",
+            "role": "elevator_treatment_and_claim"
+          },
+          {
+            "source_id": "meeting_doc_109976",
+            "evidence_id": "meeting_doc_109976#p013_c0003",
+            "source_path": "raw/sources/meeting_doc_109976/blocks.jsonl",
+            "page_number": 13,
+            "block_id": "p013_c0003",
+            "text_sha256": "sha256:349cb41153c4af687916965b08da894da5255f5a0d9ab16ba6f758af93a1dd43",
+            "text_source": "raw_text",
+            "source_quote": "Advancing Systemwide Accessibility",
+            "role": "accessibility_context"
+          }
+        ],
+        "reason": "The claim endpoint should not own the treatment through has_treatment. The cited source supports a treatment component and a claim about that treatment; has_claim treatment_component -> claim is the admitted endpoint shape for this semantics.",
+        "expected_endpoint_shape_delta": -1,
+        "confidence": "high"
+      },
+      "replacement": {
+        "run_id": "2026-06-23_codex_relation_cleanup_batch046",
+        "journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch046.jsonl",
+        "id_generation": {
+          "method": "createSubmissionEntry(runId, rawToolArgs, '2026-06-23T00:00:00.000Z') with relationEndpointIssues added; stable hash is over normalized tool_args.",
+          "conductor_required": false
+        },
+        "replacement_entries": [
+          {
+            "role": "corrected relation replacement",
+            "tool_name": "submit_observation",
+            "review_state": "accepted",
+            "deterministic_submission_id": "sub_4441977e3f72b843",
+            "tool_args_sha256": "sha256:4441977e3f72b843b8558010b2b1173c0fdd77838ee6bf77f0745efd9d39d072",
+            "proposed_relation_kind": "has_claim",
+            "proposed_endpoint_shape": "treatment_component -> claim",
+            "entry": {
+              "submission_id": "sub_4441977e3f72b843",
+              "run_id": "2026-06-23_codex_relation_cleanup_batch046",
+              "submitted_at": "2026-06-23T00:00:00.000Z",
+              "tool_args_sha256": "sha256:4441977e3f72b843b8558010b2b1173c0fdd77838ee6bf77f0745efd9d39d072",
+              "schema_version": 2,
+              "tool_args": {
+                "source_id": "meeting_doc_109976",
+                "observation_kind": "relation",
+                "local_observation_id": "relation_elevator_livonia_rockaway_has_claim",
+                "label": "New elevator at Livonia Av & Rockaway Parkway has source claim",
+                "raw_text": "Welcome back to a new elevator! Thank you for your patience during construction.; Advancing Systemwide Accessibility",
+                "payload": {
+                  "relation_kind": "has_claim",
+                  "subject_local_observation_id": "treatment_elevator_livonia_rockaway",
+                  "object_local_observation_id": "claim_new_elevator_livonia_rockaway",
+                  "description": "Replacement for malformed claim-to-treatment has_treatment row; the source-backed elevator treatment carries the source-stated claim about the new elevator.",
+                  "relation_family": "claim_context"
+                },
+                "evidence_refs": [
+                  {
+                    "source_id": "meeting_doc_109976",
+                    "evidence_id": "meeting_doc_109976#p013_c0001",
+                    "source_path": "raw/sources/meeting_doc_109976/blocks.jsonl",
+                    "page_number": 13,
+                    "block_id": "p013_c0001",
+                    "text_sha256": "sha256:6d40cc00221b6942c1d1053a53dfd426c9d83c196bb661c49b955221b8b8e21a",
+                    "text_source": "raw_text",
+                    "role": "elevator_treatment_and_claim",
+                    "source_quote": "Welcome back to a new elevator! Thank you for your patience during construction."
+                  },
+                  {
+                    "source_id": "meeting_doc_109976",
+                    "evidence_id": "meeting_doc_109976#p013_c0003",
+                    "source_path": "raw/sources/meeting_doc_109976/blocks.jsonl",
+                    "page_number": 13,
+                    "block_id": "p013_c0003",
+                    "text_sha256": "sha256:349cb41153c4af687916965b08da894da5255f5a0d9ab16ba6f758af93a1dd43",
+                    "text_source": "raw_text",
+                    "role": "accessibility_context",
+                    "source_quote": "Advancing Systemwide Accessibility"
+                  }
+                ]
+              },
+              "validation": {
+                "state": "accepted",
+                "issues": []
+              }
+            },
+            "local_validation": {
+              "state": "accepted",
+              "issues": [],
+              "warnings": [],
+              "relationEndpointIssues": [],
+              "endpoint_shape_issue_after_replacement": null,
+              "known_local_observation_ids_confirmed": [
+                "treatment_elevator_livonia_rockaway",
+                "claim_new_elevator_livonia_rockaway"
+              ],
+              "collision": false
+            }
+          }
+        ],
+        "confidence": "high"
+      }
+    }
+  ],
+  "command_evidence": [
+    {
+      "command": "jq '.' data/review_notes/codex-relation-rule-or-data-next21-prep.json",
+      "output_excerpt": "Selected has_treatment claim->treatment_component row sub_e9da8479c21e0686; recommended retire-and-replace with has_claim treatment_component->claim using meeting_doc_109976 page-13 evidence."
+    },
+    {
+      "command": "sed -n '1,360p' packages/pipeline/src/records/relations.ts",
+      "output_excerpt": "Current endpoint rules admit has_treatment project|corridor|route -> treatment_component and has_claim project|route|corridor|entity|source|event|treatment_component -> claim."
+    },
+    {
+      "command": "jq -c 'select(.submission_id==\"sub_e9da8479c21e0686\")' data/submissions/2026-06-20T12-13-46-165Z_1885472-638c2ec1_ingest_meeting-doc-109976.jsonl",
+      "output_excerpt": "Original submission is present and accepted with has_treatment claim_new_elevator_livonia_rockaway -> treatment_elevator_livonia_rockaway and evidence refs p013_c0001/p013_c0003."
+    },
+    {
+      "command": "jq -r '[.retired[]? | select(.submission_id==\"sub_e9da8479c21e0686\")] | length' data/submission-overrides/retired.json",
+      "output_excerpt": "0 retired override hits for original submission."
+    },
+    {
+      "command": "bun --eval '<read-only createSubmissionEntry dry-run for relation_elevator_livonia_rockaway_has_claim plus relationEndpointShapeIssue probes>'",
+      "output_excerpt": "Generated deterministic accepted replacement submission sub_4441977e3f72b843 with sha256:4441977e3f72b843b8558010b2b1173c0fdd77838ee6bf77f0745efd9d39d072; issues=[], warnings=[], relationEndpointIssues=[], replacement endpoint-shape issue=null."
+    },
+    {
+      "command": "rg -n 'sub_4441977e3f72b843|relation_elevator_livonia_rockaway_has_claim' data/submissions data/canonical/*.jsonl data/review_notes data/submission-overrides/retired.json -g '!data/review_notes/codex-relation-rule-or-data-next21-prep.json'",
+      "output_excerpt": "No existing replacement submission id or replacement local observation id hits before writing this prep artifact."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed ingest/write/ask commands",
+    "canonicalize/campaign dedup/identity-review/schema/ontology-normalize commands",
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts export-jsonl",
+    "database publish commands",
+    "any command with --profile or provider-backed execution"
+  ],
+  "files_written": [
+    "data/review_notes/codex-relation-cleanup-batch046-prep.json"
+  ],
+  "blockers": []
+}

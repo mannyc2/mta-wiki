@@ -1,0 +1,221 @@
+{
+  "run_id": "2026-06-10T23-18-20-015Z_1976810-160410d7_ingest_2013-09-24-sbs-utica-cb9",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T04:04:13.526Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "relate_bus_lane_relocation_sb_approach",
+        "local_observation_id": "treatment_bus_lane_relocation_sb_approach_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_bus-lane-relocation-sb-approach-2013",
+            "description": "Relocated bus lane to SB approach of Utica Ave between St. Johns Pl and Carroll St as part of Utica Avenue Bus Priority and Safety Study",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_24_sbs_utica_cb9",
+                "block_id": "p009_c0004",
+                "source_quote": "• Relocates bus lane to SB approach • Provides more parking bet Pres. and Carroll Sts • Reduces bus delays on SB approach to Eastern Pkwy. • Net gain: 19 peak period parking spaces"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source p009 explicitly describes relocation of bus lane to SB approach as a proposed improvement on Utica Ave corridor. This is part of the Utica Avenue Bus Priority and Safety Study project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_24_sbs_utica_cb9",
+            "block_id": "p009_c0004",
+            "source_quote": "• Relocates bus lane to SB approach • Provides more parking bet Pres. and Carroll Sts • Reduces bus delays on SB approach to Eastern Pkwy. • Net gain: 19 peak period parking spaces"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate_left_turn_bays_utica",
+        "local_observation_id": "treatment_left_turn_bays_utica_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_left-turn-bays-utica-2013",
+            "description": "Left turn bays at some intersections along Utica Ave as part of the Utica Avenue Bus Priority and Safety Study",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_24_sbs_utica_cb9",
+                "block_id": "p011_c0005",
+                "source_quote": "• Convert one travel lane to \"offset\" bus lane to reduce speeding, maximize parking, and benefit bus service • To improve safety and traffic flow: add left turn bays at some intersections, prohibit left turns elsewhere • Implement Transit Signal Priority, optimize corridor signal timings"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source p011 explicitly states 'add left turn bays at some intersections' as a proposed solution along Utica Ave corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_24_sbs_utica_cb9",
+            "block_id": "p011_c0005",
+            "source_quote": "• Convert one travel lane to \"offset\" bus lane to reduce speeding, maximize parking, and benefit bus service • To improve safety and traffic flow: add left turn bays at some intersections, prohibit left turns elsewhere • Implement Transit Signal Priority, optimize corridor signal timings"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate_left_turn_prohibition_utica",
+        "local_observation_id": "treatment_left_turn_prohibition_utica_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_left-turn-prohibition-utica-2013",
+            "description": "Left turn prohibition at some intersections along Utica Ave as part of the Utica Avenue Bus Priority and Safety Study",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_24_sbs_utica_cb9",
+                "block_id": "p011_c0005",
+                "source_quote": "• Convert one travel lane to \"offset\" bus lane to reduce speeding, maximize parking, and benefit bus service • To improve safety and traffic flow: add left turn bays at some intersections, prohibit left turns elsewhere • Implement Transit Signal Priority, optimize corridor signal timings"
+              },
+              {
+                "source_id": "2013_09_24_sbs_utica_cb9",
+                "block_id": "p016_c0004",
+                "source_quote": "• Lenox Road – community concerns about LT ban • Proposal to create LT bay would require curbside bus lane SB • Would require removing 6 parking spaces in front of post office, Citibank"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source p011 explicitly proposes prohibiting left turns elsewhere as part of the proposed solutions for Utica Ave. p016 discusses potential left turn bans at Lenox Road.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_24_sbs_utica_cb9",
+            "block_id": "p011_c0005",
+            "source_quote": "• Convert one travel lane to \"offset\" bus lane to reduce speeding, maximize parking, and benefit bus service • To improve safety and traffic flow: add left turn bays at some intersections, prohibit left turns elsewhere • Implement Transit Signal Priority, optimize corridor signal timings"
+          },
+          {
+            "source_id": "2013_09_24_sbs_utica_cb9",
+            "block_id": "p016_c0004",
+            "source_quote": "• Lenox Road – community concerns about LT ban • Proposal to create LT bay would require curbside bus lane SB • Would require removing 6 parking spaces in front of post office, Citibank"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate_transit_signal_priority_utica",
+        "local_observation_id": "treatment_transit_signal_priority_utica_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_transit-signal-priority-utica-2013",
+            "description": "Transit Signal Priority from Kings Highway to Broadway along Utica Ave corridor as part of the Utica Avenue Bus Priority and Safety Study",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_24_sbs_utica_cb9",
+                "block_id": "p017_c0003",
+                "source_quote": "• Optimize traffic signal offsets for all traffic • Increase signal cycle from 60 seconds to 90-120 seconds – Increase green time for Utica Avenue while maintaining safe pedestrian crossing times – Better match cycles at Church, Linden, Eastern Parkway • Implement Transit Signal Priority from Kings Highway to Broadway (with NYCT)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source p017 explicitly states 'Implement Transit Signal Priority from Kings Highway to Broadway (with NYCT)' as part of Traffic Signal Changes for this study.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_24_sbs_utica_cb9",
+            "block_id": "p017_c0003",
+            "source_quote": "• Optimize traffic signal offsets for all traffic • Increase signal cycle from 60 seconds to 90-120 seconds – Increase green time for Utica Avenue while maintaining safe pedestrian crossing times – Better match cycles at Church, Linden, Eastern Parkway • Implement Transit Signal Priority from Kings Highway to Broadway (with NYCT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate_signal_timing_optimization_utica",
+        "local_observation_id": "treatment_signal_timing_optimization_utica_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_signal-timing-optimization-utica-2013",
+            "description": "Signal timing optimization for Utica Ave corridor as part of the Utica Avenue Bus Priority and Safety Study",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_24_sbs_utica_cb9",
+                "block_id": "p017_c0003",
+                "source_quote": "• Optimize traffic signal offsets for all traffic • Increase signal cycle from 60 seconds to 90-120 seconds – Increase green time for Utica Avenue while maintaining safe pedestrian crossing times – Better match cycles at Church, Linden, Eastern Parkway • Implement Transit Signal Priority from Kings Highway to Broadway (with NYCT)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source p017 explicitly describes optimizing traffic signal offsets and increasing signal cycle for Utica Avenue as part of the Traffic Signal Changes in this study.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_24_sbs_utica_cb9",
+            "block_id": "p017_c0003",
+            "source_quote": "• Optimize traffic signal offsets for all traffic • Increase signal cycle from 60 seconds to 90-120 seconds – Increase green time for Utica Avenue while maintaining safe pedestrian crossing times – Better match cycles at Church, Linden, Eastern Parkway • Implement Transit Signal Priority from Kings Highway to Broadway (with NYCT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate_bus_bulbs_church_ave",
+        "local_observation_id": "treatment_bus_bulbs_church_ave_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_bus-bulbs-church-ave-2013",
+            "description": "Bus bulbs at Church Ave intersection as part of the Utica Avenue Bus Priority and Safety Study",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_24_sbs_utica_cb9",
+                "block_id": "p012_c0006",
+                "source_quote": "• Busiest single route bus to bus transfer in city • Very high crash location • Proposal for offset bus lanes, bus bulbs, LT prohibition • High traffic volumes"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source p012 explicitly states 'Proposal for offset bus lanes, bus bulbs, LT prohibition' at Utica Ave at Church Ave as part of this study.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_24_sbs_utica_cb9",
+            "block_id": "p012_c0006",
+            "source_quote": "• Busiest single route bus to bus transfer in city • Very high crash location • Proposal for offset bus lanes, bus bulbs, LT prohibition • High traffic volumes"
+          }
+        ]
+      },
+      {
+        "decision_id": "relate_offset_bus_lane_utica",
+        "local_observation_id": "treatment_offset_bus_lane_utica_2013",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_offset-bus-lane-utica-2013",
+            "description": "Offset bus lane from Carroll St to Church Ave on Utica Ave as part of the Utica Avenue Bus Priority and Safety Study",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_24_sbs_utica_cb9",
+                "block_id": "p011_c0005",
+                "source_quote": "• Convert one travel lane to \"offset\" bus lane to reduce speeding, maximize parking, and benefit bus service • To improve safety and traffic flow: add left turn bays at some intersections, prohibit left turns elsewhere • Implement Transit Signal Priority, optimize corridor signal timings"
+              }
+            ]
+          }
+        ],
+        "rationale": "Source p011 explicitly states 'Convert one travel lane to offset bus lane to reduce speeding, maximize parking, and benefit bus service' as part of the proposed solutions for Utica Ave from Carroll St to Church Ave.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_24_sbs_utica_cb9",
+            "block_id": "p011_c0005",
+            "source_quote": "• Convert one travel lane to \"offset\" bus lane to reduce speeding, maximize parking, and benefit bus service • To improve safety and traffic flow: add left turn bays at some intersections, prohibit left turns elsewhere • Implement Transit Signal Priority, optimize corridor signal timings"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T04-00-53-148Z_2111393-e529ba15_canonicalize_2026-06-10t23-18-20-015z-1976810-160410d7-ingest-2013-09-24-sbs-utica-cb9-treatment-relations"
+}

@@ -1,0 +1,157 @@
+{
+  "campaign_id": "validation-2026-06",
+  "wave": 29,
+  "generated_at": "2026-06-23T13:22:36.102Z",
+  "sources_selected": [
+    "better_buses_pdf_better_buses_broadway_improvements_cb8_2019",
+    "bx_cb3_projects_feb112020",
+    "meeting_doc_107711",
+    "meeting_doc_107796",
+    "meeting_doc_135346",
+    "meeting_doc_135596",
+    "meeting_doc_146831",
+    "meeting_doc_167316",
+    "meeting_doc_167646",
+    "meeting_doc_199181",
+    "meeting_doc_201521",
+    "meeting_doc_201721",
+    "meeting_doc_201776",
+    "meeting_doc_201926",
+    "meeting_doc_33871",
+    "meeting_doc_33906",
+    "meeting_doc_51956",
+    "meeting_doc_58631",
+    "meeting_doc_73241",
+    "meeting_doc_76741",
+    "meeting_doc_79346",
+    "meeting_doc_85841",
+    "meeting_doc_87726",
+    "meeting_doc_87841"
+  ],
+  "ingested": [],
+  "skipped_already_done": [],
+  "quarantined": [
+    {
+      "source_id": "better_buses_pdf_better_buses_broadway_improvements_cb8_2019",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "bx_cb3_projects_feb112020",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_107711",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_107796",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_135346",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_135596",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_146831",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_167316",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_167646",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_199181",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_201521",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_201721",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_201776",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_201926",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_33871",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_33906",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_51956",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_58631",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_73241",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_76741",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_79346",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_85841",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_87726",
+      "reason": "401 status code (no body)"
+    },
+    {
+      "source_id": "meeting_doc_87841",
+      "reason": "401 status code (no body)"
+    }
+  ],
+  "run_ids": [],
+  "telemetry": {
+    "concurrency": 24,
+    "timeout_min": 45,
+    "wall_clock_s": 209,
+    "rate_limit": [
+      {
+        "provider": "pioneer",
+        "rate_per_minute": 170,
+        "requests": 0,
+        "requests_per_minute_observed": 0,
+        "rate_limited_429": 0,
+        "circuit_breaker_trips": 0,
+        "wait_ms_p50": 0,
+        "wait_ms_p95": 0,
+        "wait_ms_max": 0,
+        "last_rate_limit_headers": {}
+      }
+    ],
+    "materialize": {
+      "completed_ingests": 0,
+      "runs": 1,
+      "total_seconds": 126,
+      "every_k": 10
+    }
+  }
+}

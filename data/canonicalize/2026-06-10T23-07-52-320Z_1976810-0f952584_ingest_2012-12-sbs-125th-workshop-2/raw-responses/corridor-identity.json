@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T23-07-52-320Z_1976810-0f952584_ingest_2012-12-sbs-125th-workshop-2",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T03:11:34.871Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "c125th-st-manhattan-resolves-to-own-base",
+        "local_observation_id": "corridor_125th_street_manhattan_2012_12",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'corridor_125th-street-manhattan' matches an existing registry record with identical corridor name (125th Street), borough (Manhattan), description (routes Bx15, M60, M100, M101), and source '2012_12_sbs_125th_workshop_2'. The closest match is its own base_record_id; per canonicalizer rules, this yields a 'new' decision (observation already resolves to that id).",
+        "evidence_refs": [
+          {
+            "source_id": "2012_12_sbs_125th_workshop_2",
+            "block_id": "p003_c0003",
+            "source_quote": null
+          },
+          {
+            "source_id": "2012_12_sbs_125th_workshop_2",
+            "block_id": "p003_c0006",
+            "source_quote": null
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-10-17-202Z_2111393-a68242f7_canonicalize_2026-06-10t23-07-52-320z-1976810-0f952584-ingest-2012-12-sbs-125th-workshop-2-corridor-identity"
+}

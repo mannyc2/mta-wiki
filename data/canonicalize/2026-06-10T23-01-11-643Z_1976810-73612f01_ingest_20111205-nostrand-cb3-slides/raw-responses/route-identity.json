@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T23-01-11-643Z_1976810-73612f01_ingest_20111205-nostrand-cb3-slides",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T02:15:05.317Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "b44-sbs-confirm",
+        "local_observation_id": "route_b44_20111205_cb3",
+        "decision": "new",
+        "rationale": "Observation maps to its own base_record_id route_b44-sbs. The source (20111205_nostrand_cb3_slides) confirms B44 SBS service on Nostrand/Rogers corridor: p002_c0003 describes 'Currently served by B44 bus route' and p011_c0003 specifies 'Southbound B44 SBS on Nostrand Ave' and 'Northbound B44 SBS on Bedford Ave'. Registry card route_b44-sbs already represents the B44 Select Bus Service with matching route_id (B44), route_type (select_bus_service), and borough (Brooklyn), and already lists this source among its source_ids. Per canonicalize rules, when the closest match is the observation's own base_record_id, decision is 'new'.",
+        "evidence_refs": [
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p002_c0003",
+            "source_quote": "Currently served by B44 bus route"
+          },
+          {
+            "source_id": "20111205_nostrand_cb3_slides",
+            "block_id": "p011_c0003",
+            "source_quote": "• Southbound B44 SBS on Nostrand Ave in Offset Bus Lane • Northbound B44 SBS on Bedford Ave"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-13-36-852Z_2111393-55baf7bf_canonicalize_2026-06-10t23-01-11-643z-1976810-73612f01-ingest-20111205-nostrand-cb3-slides-route-identity"
+}

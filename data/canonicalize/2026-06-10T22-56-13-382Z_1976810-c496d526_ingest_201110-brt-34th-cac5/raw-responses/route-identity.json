@@ -1,0 +1,82 @@
+{
+  "run_id": "2026-06-10T22-56-13-382Z_1976810-c496d526_ingest_201110-brt-34th-cac5",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T01:48:31.873Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "route_m34_sbs_cac5_2011",
+        "decision": "new",
+        "rationale": "Observation's base_record_id (route_m34-sbs) matches existing registry record route_m34-sbs (M34 SBS, same source 201110_brt_34th_cac5). Observation resolves to that record — no different target needed.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p030_c0002",
+            "source_quote": "M34 to be renamed M34 SBS"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2",
+        "local_observation_id": "route_m34a_sbs_cac5_2011",
+        "decision": "new",
+        "rationale": "Observation's base_record_id (route_m34a-sbs) matches existing registry record route_m34a-sbs (M34A SBS, same source 201110_brt_34th_cac5). Observation resolves to that record — no different target needed.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p030_c0002",
+            "source_quote": "M16 to be renamed the M34A SBS for clearer passenger communication"
+          }
+        ]
+      },
+      {
+        "decision_id": "d3",
+        "local_observation_id": "route_m16_cac5_2011",
+        "decision": "new",
+        "rationale": "Observation's base_record_id (route_m16-mentioned) matches existing registry record route_m16-mentioned (M16, same source 201110_brt_34th_cac5, alias route_m16-cac5-2011). Observation resolves to that record — no different target needed.",
+        "proposed_relations": [
+          {
+            "relation_kind": "renamed_to",
+            "subject_id": "route_m16-mentioned",
+            "object_id": "route_m34a-sbs",
+            "description": "M16 renamed to M34A SBS",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p030_c0002",
+                "source_quote": "M16 to be renamed the M34A SBS for clearer passenger communication"
+              }
+            ]
+          },
+          {
+            "relation_kind": "renamed_to",
+            "subject_id": "route_m34-sbs",
+            "object_id": "route_m34-sbs",
+            "description": "M34 renamed to M34 SBS",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p030_c0002",
+                "source_quote": "M34 to be renamed M34 SBS"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p030_c0002",
+            "source_quote": "M16 to be renamed the M34A SBS for clearer passenger communication"
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-46-45-510Z_2111393-b2953085_canonicalize_2026-06-10t22-56-13-382z-1976810-c496d526-ingest-201110-brt-34th-cac5-route-identity"
+}

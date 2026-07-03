@@ -1,0 +1,213 @@
+{
+  "run_id": "2026-06-10T23-13-57-315Z_1976810-4a9314a7_ingest_2013-06-04-sbs-125th-cb11",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T03:44:32.106Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-offset-lenox-5av",
+        "local_observation_id": "treatment_offset_bus_lane_125th_lenox_5av",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "treatment_offset-bus-lane-125th-lenox-5av",
+            "description": "Offset Bus Lane Eastbound and Westbound from Lenox Av to 5 Av on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_04_sbs_125th_cb11",
+                "block_id": "p011_c0005",
+                "source_quote": "Offset Bus Lane Eastbound and Westbound"
+              }
+            ],
+            "block_id": "p011_c0005",
+            "source_id": "2013_06_04_sbs_125th_cb11"
+          }
+        ],
+        "rationale": "p011_c0005 map shows Offset Bus Lane Eastbound and Westbound from Lenox Av to 5 Av on 125th Street corridor",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_04_sbs_125th_cb11",
+            "block_id": "p011_c0005",
+            "source_quote": "Offset Bus Lane Eastbound and Westbound"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-offset-5av-park",
+        "local_observation_id": "treatment_offset_bus_lane_125th_5av_park",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "treatment_offset-bus-lane-125th-5av-park",
+            "description": "Offset Bus Lane In one direction from 5 Av to Park Av on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_04_sbs_125th_cb11",
+                "block_id": "p011_c0005",
+                "source_quote": "Offset Bus Lane In one direction"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0005 map shows Offset Bus Lane In one direction from 5 Av to Park Av on 125th Street corridor",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_04_sbs_125th_cb11",
+            "block_id": "p011_c0005",
+            "source_quote": "Offset Bus Lane In one direction"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-curbside-park-2av",
+        "local_observation_id": "treatment_curbside_bus_lane_125th_park_2av",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "treatment_curbside-bus-lane-125th-park-2av",
+            "description": "Curbside Bus Lane Eastbound only from Park Av to 2 Av on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_04_sbs_125th_cb11",
+                "block_id": "p011_c0005",
+                "source_quote": "Curbside Bus Lane Eastbound only"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0005 map shows Curbside Bus Lane Eastbound only from Park Av to 2 Av on 125th Street corridor",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_04_sbs_125th_cb11",
+            "block_id": "p011_c0005",
+            "source_quote": "Curbside Bus Lane Eastbound only"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-off-board-fare",
+        "local_observation_id": "treatment_off_board_fare_payment_m60_sbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "treatment_off-board-fare-payment-m60-sbs",
+            "description": "Off-board fare payment for M60 SBS on 125th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_04_sbs_125th_cb11",
+                "block_id": "p005_c0006",
+                "source_quote": "Off-board fare payment"
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0006 lists 'Off-board fare payment' as an SBS treatment for the M60 on 125th Street",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_04_sbs_125th_cb11",
+            "block_id": "p005_c0006",
+            "source_quote": "Off-board fare payment"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-turn-restrictions",
+        "local_observation_id": "treatment_left_turn_restrictions_cb11",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "treatment_left-turn-restrictions-cb11",
+            "description": "New left-turn restrictions at Fifth Av and Lexington Av on 125th Street in CB11",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_04_sbs_125th_cb11",
+                "block_id": "p011_c0008",
+                "source_quote": "New left-turn restrictions in CB11: Fifth Av and Lexington Av"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0008 explicitly states new left-turn restrictions in CB11 at Fifth Av and Lexington Av on 125th Street",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_04_sbs_125th_cb11",
+            "block_id": "p011_c0008",
+            "source_quote": "New left-turn restrictions in CB11: Fifth Av and Lexington Av"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-commercial-loading",
+        "local_observation_id": "treatment_commercial_loading_zones_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "treatment_commercial-loading-zones-125th_2",
+            "description": "AM Commercial Loading zones in selected locations on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_04_sbs_125th_cb11",
+                "block_id": "p011_c0007",
+                "source_quote": "AM Commercial Loading zones in selected locations"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0007 states AM Commercial Loading zones in selected locations on 125th Street",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_04_sbs_125th_cb11",
+            "block_id": "p011_c0007",
+            "source_quote": "AM Commercial Loading zones in selected locations"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-lengthened-stops",
+        "local_observation_id": "treatment_lengthened_bus_stops_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "treatment_lengthened-bus-stops-125th",
+            "description": "Bus stops will be lengthened on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_04_sbs_125th_cb11",
+                "block_id": "p007_c0007",
+                "source_quote": "Bus stops will be lengthened to make it easier for buses to get to the curb"
+              }
+            ]
+          }
+        ],
+        "rationale": "p007_c0007 states bus stops will be lengthened on 125th Street",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_04_sbs_125th_cb11",
+            "block_id": "p007_c0007",
+            "source_quote": "Bus stops will be lengthened to make it easier for buses to get to the curb"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-43-05-309Z_2111393-37210c76_canonicalize_2026-06-10t23-13-57-315z-1976810-4a9314a7-ingest-2013-06-04-sbs-125th-cb11-treatment-relations"
+}

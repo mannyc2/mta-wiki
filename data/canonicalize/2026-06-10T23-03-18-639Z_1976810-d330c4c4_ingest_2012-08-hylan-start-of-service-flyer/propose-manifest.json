@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer",
+  "generated_at": "2026-06-11T02:52:05.337Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 26,
+  "validated_decision_count": 26,
+  "quarantined_decision_count": 0,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer",
+    "manifest": "data/canonicalize/2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 3,
+      "validated_decision_count": 3,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-47-35-385Z_2111393-fa47aed4_canonicalize_2026-06-10t23-03-18-639z-1976810-d330c4c4-ingest-2012-08-hylan-start-of-service-flyer-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 2,
+      "validated_decision_count": 2,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-47-35-386Z_2111393-0cdb7a1f_canonicalize_2026-06-10t23-03-18-639z-1976810-d330c4c4-ingest-2012-08-hylan-start-of-service-flyer-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-47-35-386Z_2111393-4e8a9e33_canonicalize_2026-06-10t23-03-18-639z-1976810-d330c4c4-ingest-2012-08-hylan-start-of-service-flyer-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 3,
+      "validated_decision_count": 3,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-47-35-386Z_2111393-3fb92e6e_canonicalize_2026-06-10t23-03-18-639z-1976810-d330c4c4-ingest-2012-08-hylan-start-of-service-flyer-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 8,
+      "validated_decision_count": 8,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-47-35-386Z_2111393-429b3f30_canonicalize_2026-06-10t23-03-18-639z-1976810-d330c4c4-ingest-2012-08-hylan-start-of-service-flyer-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 9,
+      "validated_decision_count": 9,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-03-18-639Z_1976810-d330c4c4_ingest_2012-08-hylan-start-of-service-flyer/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-47-35-394Z_2111393-457971a5_canonicalize_2026-06-10t23-03-18-639z-1976810-d330c4c4-ingest-2012-08-hylan-start-of-service-flyer-relation-linker"
+    }
+  ]
+}

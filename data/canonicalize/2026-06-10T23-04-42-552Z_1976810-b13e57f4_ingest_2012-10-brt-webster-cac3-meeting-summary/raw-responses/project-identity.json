@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-06-10T23-04-42-552Z_1976810-b13e57f4_ingest_2012-10-brt-webster-cac3-meeting-summary",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T02:57:00.487Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "webster-cac3-2012-identity",
+        "local_observation_id": "project_webster_ave_sbs_cac3_2012",
+        "decision": "new",
+        "rationale": "Observation already correctly resolves to base_record_id project_12-webster-ave. The registry card for project_12-webster-ave includes project_webster-ave-sbs-cac3-2012 as an alias, 2012_10_brt_webster_cac3_meeting_summary in its source_ids, and the same project name 'Webster Avenue Select Bus Service'. Evidence blocks confirm this is the same Webster Avenue SBS CAC #3 meeting from September 2012 discussing offset bus lanes — the identical project. No link to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p001_c0003",
+            "source_quote": "Webster Avenue Select Bus Service Community Advisory Committee Meeting #3 Summary"
+          },
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p001_c0006",
+            "source_quote": "On Thursday, September 27, 2012, The New York City Department of Transportation (NYCDOT) and MTA New York City Transit (NYCT), held the third Community Advisory Committee (CAC) meeting for the Webster Avenue Select Bus Service (SBS) project at The New York Botanical Garden."
+          },
+          {
+            "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+            "block_id": "p001_c0007",
+            "source_quote": "the proposed corridor design – offset bus lanes - was selected"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-55-43-158Z_2111393-f412a24b_canonicalize_2026-06-10t23-04-42-552z-1976810-b13e57f4-ingest-2012-10-brt-webster-cac3-meeting-summary-project-identity"
+}

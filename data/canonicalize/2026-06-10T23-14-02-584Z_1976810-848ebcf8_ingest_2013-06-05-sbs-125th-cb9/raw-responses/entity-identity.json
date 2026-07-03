@@ -1,0 +1,80 @@
+{
+  "run_id": "2026-06-10T23-14-02-584Z_1976810-848ebcf8_ingest_2013-06-05-sbs-125th-cb9",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T03:49:48.427Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d001-nyc-dot-cb9",
+        "local_observation_id": "entity_nyc_dot_2013_06_05_cb9",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot already matches existing registry record entity_nyc-dot (NYC DOT agency). The observation already resolves to this canonical id — never link to own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p001_c0004",
+            "source_quote": "The logo for the New York City Department of Transportation (NYC DOT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d002-mta-nyct-cb9",
+        "local_observation_id": "entity_mta_nyct_2013_06_05_cb9",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-nyct already matches existing registry record entity_mta-nyct (MTA New York City Transit agency). Already resolves to canonical id.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p001_c0005",
+            "source_quote": "The logo for the Metropolitan Transportation Authority (MTA)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d003-cb9-manhattan",
+        "local_observation_id": "entity_cb9_manhattan_2013_06_05",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_community-board-9-manhattan already matches existing registry record entity_community-board-9-manhattan (Manhattan CB9). Already resolves to canonical id.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p001_c0002",
+            "source_quote": "Community Board 9 Update"
+          }
+        ]
+      },
+      {
+        "decision_id": "d004-cb10-manhattan",
+        "local_observation_id": "entity_cb10_manhattan_125th",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_community-board-10-manhattan already matches existing registry record entity_community-board-10-manhattan (Manhattan CB10). Already resolves to canonical id.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p007_c0006",
+            "source_quote": "Summer 2012 Consultation with CB9, CB10 and CB11"
+          }
+        ]
+      },
+      {
+        "decision_id": "d005-cb11-manhattan",
+        "local_observation_id": "entity_cb11_manhattan_125th",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_community-board-11-manhattan already matches existing registry record entity_community-board-11-manhattan (Manhattan CB11). Already resolves to canonical id.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p007_c0006",
+            "source_quote": "Summer 2012 Consultation with CB9, CB10 and CB11"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-49-03-891Z_2111393-c20c7ce0_canonicalize_2026-06-10t23-14-02-584z-1976810-848ebcf8-ingest-2013-06-05-sbs-125th-cb9-entity-identity"
+}

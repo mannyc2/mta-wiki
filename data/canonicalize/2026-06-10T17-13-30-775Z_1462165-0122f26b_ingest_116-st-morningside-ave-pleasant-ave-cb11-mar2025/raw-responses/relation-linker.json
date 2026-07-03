@@ -1,0 +1,921 @@
+{
+  "run_id": "2026-06-10T17-13-30-775Z_1462165-0122f26b_ingest_116-st-morningside-ave-pleasant-ave-cb11-mar2025",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-10T17:41:41.662Z",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "dec_001",
+        "local_observation_id": "metric_116th_daily_bus_passengers_65000",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_116th-street",
+            "object_id": "metric_116th-daily-bus-passengers-65000",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p004_c0002",
+                "source_quote": "Over 65,000+ daily bus passengers across 10 bus routes"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about daily bus passengers across 10 bus routes in 116th Street study area, cited in the CB11 presentation for the corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p004_c0002",
+            "source_quote": "Over 65,000+ daily bus passengers across 10 bus routes"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_002",
+        "local_observation_id": "metric_116th_study_area_length_2_2_miles",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_116th-street",
+            "object_id": "metric_116th-study-area-length-2-2-miles",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p004_c0002",
+                "source_quote": "Total: 2.2 miles"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about the corridor length of the 116th Street study area.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p004_c0002",
+            "source_quote": "Total: 2.2 miles"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_003",
+        "local_observation_id": "metric_116th_m116_daily_delay_hours_785",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_116th-street",
+            "object_id": "metric_116th-m116-daily-delay-hours-785",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p007_c0002",
+                "source_quote": "Weekday congestion causes 785 hours of delay to M116 passengers daily"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about M116 passenger delay hours in the 116th Street corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p007_c0002",
+            "source_quote": "Weekday congestion causes 785 hours of delay to M116 passengers daily"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_004",
+        "local_observation_id": "metric_116th_safety_total_injuries_573",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_116th-street",
+            "object_id": "metric_116th-safety-total-injuries-573",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p013_c0002",
+                "source_quote": "From 2019-2023, 573 people were injured in crashes in the study area"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about total crash injuries in the 116th Street study area.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p013_c0002",
+            "source_quote": "From 2019-2023, 573 people were injured in crashes in the study area"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_005",
+        "local_observation_id": "metric_116th_safety_severe_injuries_34",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_116th-street",
+            "object_id": "metric_116th-safety-severe-injuries-34",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p013_c0002",
+                "source_quote": "34 people severely injured"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about severe injuries in the 116th Street study area.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p013_c0002",
+            "source_quote": "34 people severely injured"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_006",
+        "local_observation_id": "metric_116th_safety_fatalities_4",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_116th-street",
+            "object_id": "metric_116th-safety-fatalities-4",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p013_c0002",
+                "source_quote": "4 people were killed"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about crash fatalities in the 116th Street study area.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p013_c0002",
+            "source_quote": "4 people were killed"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_007",
+        "local_observation_id": "metric_116th_ksi_per_mile_17_6",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_116th-street",
+            "object_id": "metric_116th-ksi-per-mile-17-6",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p013_c0002",
+                "source_quote": "17.6 people killed or severely injured per mile"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about KSI rate per mile in the 116th Street study area.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p013_c0002",
+            "source_quote": "17.6 people killed or severely injured per mile"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_008",
+        "local_observation_id": "metric_116th_residents_quarter_mile_91400",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_116th-street",
+            "object_id": "metric_116th-residents-quarter-mile-91400",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p012_c0003",
+                "source_quote": "91,400 residents within ¼ mile"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about nearby resident population for the 116th Street study area.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p012_c0003",
+            "source_quote": "91,400 residents within ¼ mile"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_009",
+        "local_observation_id": "metric_116th_car_free_households_79pct",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_116th-street",
+            "object_id": "metric_116th-car-free-households-79pct",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p012_c0003",
+                "source_quote": "79% of households are car-free"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about car-free household percentage in the 116th Street study area.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p012_c0003",
+            "source_quote": "79% of households are car-free"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_010",
+        "local_observation_id": "metric_116th_transit_walk_bike_commute_87pct",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_116th-street",
+            "object_id": "metric_116th-transit-walk-bike-commute-87pct",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p012_c0003",
+                "source_quote": "87% commute to work via public transit, walking, or biking"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about sustainable commute mode share in the 116th Street study area.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p012_c0003",
+            "source_quote": "87% commute to work via public transit, walking, or biking"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_011",
+        "local_observation_id": "metric_116th_travel_mode_transit_71pct",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_116th-street",
+            "object_id": "metric_116th-travel-mode-transit-71pct",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p012_c0005",
+                "source_quote": "Transit 71%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about transit commute mode share in the 116th Street study area.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p012_c0005",
+            "source_quote": "Transit 71%"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_012",
+        "local_observation_id": "metric_116th_travel_mode_walk_13pct",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_116th-street",
+            "object_id": "metric_116th-travel-mode-walk-13pct",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p012_c0005",
+                "source_quote": "Walk 13%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about walking commute mode share in the 116th Street study area.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p012_c0005",
+            "source_quote": "Walk 13%"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_013",
+        "local_observation_id": "metric_116th_travel_mode_car_10pct",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_116th-street",
+            "object_id": "metric_116th-travel-mode-car-10pct",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p012_c0005",
+                "source_quote": "Car 10%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about car commute mode share in the 116th Street study area.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p012_c0005",
+            "source_quote": "Car 10%"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_014",
+        "local_observation_id": "metric_116th_travel_mode_bike_3pct",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_116th-street",
+            "object_id": "metric_116th-travel-mode-bike-3pct",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p012_c0005",
+                "source_quote": "Bike 3%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about bike commute mode share in the 116th Street study area.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p012_c0005",
+            "source_quote": "Bike 3%"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_015",
+        "local_observation_id": "metric_116th_car_access_car_free_79pct",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_116th-street",
+            "object_id": "metric_116th-car-access-car-free-79pct",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p012_c0007",
+                "source_quote": "Car-Free 79%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about car-free household percentage from car access data in the study area.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p012_c0007",
+            "source_quote": "Car-Free 79%"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_016",
+        "local_observation_id": "metric_116th_car_access_1_car_18pct",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_116th-street",
+            "object_id": "metric_116th-car-access-1-car-18pct",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p012_c0007",
+                "source_quote": "1 Car 18%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about 1-car household percentage from car access data in the study area.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p012_c0007",
+            "source_quote": "1 Car 18%"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_017",
+        "local_observation_id": "metric_116th_st_roadway_width_60ft",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_116th-street",
+            "object_id": "metric_116th-st-roadway-width-60ft",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p017_c0002",
+                "source_quote": "116 th St. is 60' wide, curb to curb"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about existing roadway width of 116th Street within the study area corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p017_c0002",
+            "source_quote": "116 th St. is 60' wide, curb to curb"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_018",
+        "local_observation_id": "metric_manhattan_av_roadway_width_42ft",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_116th-street",
+            "object_id": "metric_manhattan-av-roadway-width-42ft",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p017_c0002",
+                "source_quote": "Manhattan Av. is 42' wide, curb to curb"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about existing roadway width of Manhattan Avenue, which is part of the 116th Street study area.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p017_c0002",
+            "source_quote": "Manhattan Av. is 42' wide, curb to curb"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_019",
+        "local_observation_id": "metric_pleasant_av_roadway_width_60ft",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_116th-street",
+            "object_id": "metric_pleasant-av-roadway-width-60ft",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p017_c0002",
+                "source_quote": "Pleasant Av. is 60' wide, curb to curb"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about existing roadway width of Pleasant Avenue, which is part of the 116th Street study area.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p017_c0002",
+            "source_quote": "Pleasant Av. is 60' wide, curb to curb"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_020",
+        "local_observation_id": "metric_116th_bus_speed_under_4_mph_v2",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_116th-street",
+            "object_id": "metric_116th-bus-speed-under-4-mph-v2",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p007_c0002",
+                "source_quote": "Buses move slowly all day and less than 4 mph in some segments"
+              }
+            ]
+          }
+        ],
+        "rationale": "Metric about bus speeds on 116th Street within the study area.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p007_c0002",
+            "source_quote": "Buses move slowly all day and less than 4 mph in some segments"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_021",
+        "local_observation_id": "claim_116th_safety_top_10_pct_dangerous",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_116th-street",
+            "object_id": "claim_116th-safety-top-10-pct-dangerous",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p013_c0002",
+                "source_quote": "Study area ranks top 10% most dangerous corridors in Manhattan with 17.6 people killed or severely injured per mile"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim about the 116th Street study area being among the most dangerous corridors.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p013_c0002",
+            "source_quote": "Study area ranks top 10% most dangerous corridors in Manhattan with 17.6 people killed or severely injured per mile"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_022",
+        "local_observation_id": "claim_116th_priority_youth_injury_senior_area",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_116th-street",
+            "object_id": "claim_116th-priority-youth-injury-senior-area",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p012_c0003",
+                "source_quote": "Priority Youth Injury Area & Senior Area"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim that the 116th Street study area is a Priority Youth Injury Area and Senior Area.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p012_c0003",
+            "source_quote": "Priority Youth Injury Area & Senior Area"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_023",
+        "local_observation_id": "claim_116th_vision_zero_priority_corridor",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_116th-street",
+            "object_id": "claim_116th-vision-zero-priority-corridor",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p013_c0002",
+                "source_quote": "Vision Zero Priority Corridor, VZP Zone (between Malcolm X Blvd. and 3 rd Av.), with three VZP Intersections: Malcolm X Blvd. & W. 116 th St. Lexington Av. & E. 116 th St. 1 st Av. and E. 116 th St."
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim about the 116th Street study area being a Vision Zero Priority Corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p013_c0002",
+            "source_quote": "Vision Zero Priority Corridor, VZP Zone (between Malcolm X Blvd. and 3 rd Av.), with three VZP Intersections: Malcolm X Blvd. & W. 116 th St. Lexington Av. & E. 116 th St. 1 st Av. and E. 116 th St."
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_024",
+        "local_observation_id": "claim_116th_subway_connections",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_116th-street",
+            "object_id": "claim_116th-subway-connections",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p004_c0002",
+                "source_quote": "Critical crosstown service with connections to 2 3 6 B C and seven different bus routes"
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim about transit connections available on the 116th Street corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p004_c0002",
+            "source_quote": "Critical crosstown service with connections to 2 3 6 B C and seven different bus routes"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_025",
+        "local_observation_id": "claim_116th_truck_route",
+        "decision": "relate",
+        "target_record_id": "corridor_116th-street",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "corridor_116th-street",
+            "object_id": "claim_116th-truck-route",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p012_c0003",
+                "source_quote": "Truck Route from Adam Clayton Powell Jr. Blvd. to 1st Av."
+              }
+            ]
+          }
+        ],
+        "rationale": "Claim about truck route designation on 116th Street in the study area.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p012_c0003",
+            "source_quote": "Truck Route from Adam Clayton Powell Jr. Blvd. to 1st Av."
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_026",
+        "local_observation_id": "event_cb11_meeting_mar2025",
+        "decision": "relate",
+        "target_record_id": "project_116th-st-bus-priority-review-mar2025",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_116th-st-bus-priority-review-mar2025",
+            "object_id": "event_cb11-meeting-mar2025",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p001_c0002",
+                "source_quote": "CB11's Public Safety & Transportation Committee"
+              },
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p001_c0003",
+                "source_quote": "March 2025"
+              }
+            ]
+          }
+        ],
+        "rationale": "Event is the CB11 meeting where the 116th Street Bus Priority Review was presented, already linked in existing relations to this project.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p001_c0002",
+            "source_quote": "CB11's Public Safety & Transportation Committee"
+          },
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p001_c0003",
+            "source_quote": "March 2025"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_027",
+        "local_observation_id": "event_117th_st_curb_extension_2022",
+        "decision": "relate",
+        "target_record_id": "project_116th-st-bus-priority-review-mar2025",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_116th-st-bus-priority-review-mar2025",
+            "object_id": "event_117th-st-curb-extension-2022",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p006_c0003",
+                "source_quote": "117 th Street Curb Extension, 2022"
+              }
+            ]
+          }
+        ],
+        "rationale": "Event is listed as work to date in the CB11 presentation for the 116th Street Bus Priority Review project.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p006_c0003",
+            "source_quote": "117 th Street Curb Extension, 2022"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_028",
+        "local_observation_id": "event_planter_delivery_early_apr2025",
+        "decision": "relate",
+        "target_record_id": "project_116th-st-bus-priority-review-mar2025",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_116th-st-bus-priority-review-mar2025",
+            "object_id": "event_planter-delivery-early-apr2025",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p006_c0003",
+                "source_quote": "Planter delivery/hardening scheduled for early April 2025"
+              }
+            ]
+          }
+        ],
+        "rationale": "Event is listed as upcoming work within the 116th Street Bus Priority Review project timeline.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p006_c0003",
+            "source_quote": "Planter delivery/hardening scheduled for early April 2025"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_029",
+        "local_observation_id": "event_3rd_ave_complete_street_2025",
+        "decision": "relate",
+        "target_record_id": "project_116th-st-bus-priority-review-mar2025",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_116th-st-bus-priority-review-mar2025",
+            "object_id": "event_3rd-ave-complete-street-2025",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p006_c0003",
+                "source_quote": "3 rd Avenue, E. 96 th to 128 th Streets: 2025 Complete Street Proposal"
+              }
+            ]
+          }
+        ],
+        "rationale": "Event is listed as related work to date in the CB11 presentation for the 116th Street Bus Priority Review.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p006_c0003",
+            "source_quote": "3 rd Avenue, E. 96 th to 128 th Streets: 2025 Complete Street Proposal"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_030",
+        "local_observation_id": "event_cb9_10_11_outreach_feb_mar2025",
+        "decision": "relate",
+        "target_record_id": "project_116th-st-bus-priority-review-mar2025",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_116th-st-bus-priority-review-mar2025",
+            "object_id": "event_cb9-10-11-outreach-feb-mar2025",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p025_c0003",
+                "source_quote": "February/March 2025 • Community Boards 9, 10, & 11: Discuss existing conditions, needs & wants"
+              }
+            ]
+          }
+        ],
+        "rationale": "Event is a next step listed in the CB11 presentation for the 116th Street Bus Priority Review project.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p025_c0003",
+            "source_quote": "February/March 2025 • Community Boards 9, 10, & 11: Discuss existing conditions, needs & wants"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_031",
+        "local_observation_id": "event_public_outreach_winter_spring_2025",
+        "decision": "relate",
+        "target_record_id": "project_116th-st-bus-priority-review-mar2025",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_116th-st-bus-priority-review-mar2025",
+            "object_id": "event_public-outreach-winter-spring-2025",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p025_c0003",
+                "source_quote": "Winter/Spring 2025: • Continue public outreach w/ CBs 9, 10 & 11, elected officials and other stakeholders • Conduct traffic analysis • Develop & share draft plans; feedback will help refine proposal • Share refined plan"
+              }
+            ]
+          }
+        ],
+        "rationale": "Event is a next step listed in the CB11 presentation for the 116th Street Bus Priority Review project.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p025_c0003",
+            "source_quote": "Winter/Spring 2025: • Continue public outreach w/ CBs 9, 10 & 11, elected officials and other stakeholders • Conduct traffic analysis • Develop & share draft plans; feedback will help refine proposal • Share refined plan"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec_032",
+        "local_observation_id": "event_potential_implementation_summer_fall_2025",
+        "decision": "relate",
+        "target_record_id": "project_116th-st-bus-priority-review-mar2025",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_116th-st-bus-priority-review-mar2025",
+            "object_id": "event_potential-implementation-summer-fall-2025_2",
+            "evidence_refs": [
+              {
+                "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+                "block_id": "p025_c0003",
+                "source_quote": "Potential Implementation in Summer/Fall 2025"
+              }
+            ]
+          }
+        ],
+        "rationale": "Event is a next step listed in the CB11 presentation for the 116th Street Bus Priority Review project.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_mar2025",
+            "block_id": "p025_c0003",
+            "source_quote": "Potential Implementation in Summer/Fall 2025"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T17-36-10-621Z_1481967-5239f471_canonicalize_2026-06-10t17-13-30-775z-1462165-0122f26b-ingest-116-st-morningside-ave-pleasant-ave-cb11-mar2025-relation-linker"
+}

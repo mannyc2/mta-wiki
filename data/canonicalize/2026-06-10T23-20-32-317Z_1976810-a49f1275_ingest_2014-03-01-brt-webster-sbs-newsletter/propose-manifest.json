@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T23-20-32-317Z_1976810-a49f1275_ingest_2014-03-01-brt-webster-sbs-newsletter",
+  "generated_at": "2026-06-11T04:04:44.788Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 48,
+  "validated_decision_count": 0,
+  "quarantined_decision_count": 6,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T23-20-32-317Z_1976810-a49f1275_ingest_2014-03-01-brt-webster-sbs-newsletter",
+    "manifest": "data/canonicalize/2026-06-10T23-20-32-317Z_1976810-a49f1275_ingest_2014-03-01-brt-webster-sbs-newsletter/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T23-20-32-317Z_1976810-a49f1275_ingest_2014-03-01-brt-webster-sbs-newsletter/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-20-32-317Z_1976810-a49f1275_ingest_2014-03-01-brt-webster-sbs-newsletter/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T23-20-32-317Z_1976810-a49f1275_ingest_2014-03-01-brt-webster-sbs-newsletter/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-20-32-317Z_1976810-a49f1275_ingest_2014-03-01-brt-webster-sbs-newsletter/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-04-42-418Z_2111393-dfeb1c7e_canonicalize_2026-06-10t23-20-32-317z-1976810-a49f1275-ingest-2014-03-01-brt-webster-sbs-newsletter-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-20-32-317Z_1976810-a49f1275_ingest_2014-03-01-brt-webster-sbs-newsletter/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-04-42-418Z_2111393-1ba12114_canonicalize_2026-06-10t23-20-32-317z-1976810-a49f1275-ingest-2014-03-01-brt-webster-sbs-newsletter-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-20-32-317Z_1976810-a49f1275_ingest_2014-03-01-brt-webster-sbs-newsletter/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-04-42-418Z_2111393-18751d68_canonicalize_2026-06-10t23-20-32-317z-1976810-a49f1275-ingest-2014-03-01-brt-webster-sbs-newsletter-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-20-32-317Z_1976810-a49f1275_ingest_2014-03-01-brt-webster-sbs-newsletter/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-04-42-418Z_2111393-22f6282d_canonicalize_2026-06-10t23-20-32-317z-1976810-a49f1275-ingest-2014-03-01-brt-webster-sbs-newsletter-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-20-32-317Z_1976810-a49f1275_ingest_2014-03-01-brt-webster-sbs-newsletter/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-04-42-418Z_2111393-a77ef84e_canonicalize_2026-06-10t23-20-32-317z-1976810-a49f1275-ingest-2014-03-01-brt-webster-sbs-newsletter-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-20-32-317Z_1976810-a49f1275_ingest_2014-03-01-brt-webster-sbs-newsletter/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T04-04-42-418Z_2111393-a7924ea4_canonicalize_2026-06-10t23-20-32-317z-1976810-a49f1275-ingest-2014-03-01-brt-webster-sbs-newsletter-relation-linker"
+    }
+  ]
+}

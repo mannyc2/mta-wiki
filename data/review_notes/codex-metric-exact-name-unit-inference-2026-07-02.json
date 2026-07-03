@@ -1,0 +1,164 @@
+{
+  "note_id": "codex-metric-exact-name-unit-inference-2026-07-02",
+  "date": "2026-07-02",
+  "mode": "codex_deterministic_post_ingest_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "pioneer",
+    "openai",
+    "deepseek",
+    "vllm",
+    "chandra"
+  ],
+  "bucket": {
+    "name": "metric missing unit-family exact-name clusters",
+    "baseline_after_farebox_ratio_slice": {
+      "metric_claim_records": 36534,
+      "unit_family_missing": 2076,
+      "unit_family_other": 5,
+      "focus_cluster_missing": 467
+    },
+    "after": {
+      "metric_claim_records": 36534,
+      "unit_family_missing": 1609,
+      "unit_family_other": 5,
+      "focus_cluster_missing": 0
+    }
+  },
+  "subagent_inputs": [
+    {
+      "agent_id": "019f2031-ef0b-7b82-bcab-b036e6a3dee3",
+      "lane": "metric missing-family top cluster audit",
+      "result_used": "Audited the top 9 missing metric_name clusters and recommended exact finite-numeric metric-name gates for safety/enforcement count, workforce, and ridership units."
+    }
+  ],
+  "implemented": [
+    {
+      "area": "safety and enforcement count metric unit inference",
+      "files": [
+        "packages/pipeline/src/ontology/normalizers.ts",
+        "packages/pipeline/test/ontology/normalizers.test.ts"
+      ],
+      "summary": "Inferred missing units for exact finite-numeric major_felony_count, major_felonies, hate_crime_count, enforcement_activity, and enforcement_activity_count records only when unit and unit_normalized are absent.",
+      "outputs": {
+        "major_felony_count": {
+          "normalized_unit": "incidents",
+          "unit_family": "count"
+        },
+        "major_felonies": {
+          "normalized_unit": "incidents",
+          "unit_family": "count"
+        },
+        "hate_crime_count": {
+          "normalized_unit": "incidents",
+          "unit_family": "count"
+        },
+        "enforcement_activity_total_or_tos_arrests": {
+          "normalized_unit": "arrests",
+          "unit_family": "enforcement"
+        },
+        "enforcement_activity_summons_tab_or_csumm": {
+          "normalized_unit": "summonses",
+          "unit_family": "enforcement"
+        }
+      },
+      "guardrails": [
+        "Unknown enforcement categories remain unresolved.",
+        "Existing unit or unit_normalized values are not overwritten.",
+        "No broad integer count inference was added."
+      ]
+    },
+    {
+      "area": "workforce and ridership metric unit inference",
+      "files": [
+        "packages/pipeline/src/ontology/normalizers.ts",
+        "packages/pipeline/test/ontology/normalizers.test.ts"
+      ],
+      "summary": "Inferred missing units for exact finite-numeric total_positions, separations, average_weekday_ridership, and revenue_passengers records only when unit and unit_normalized are absent.",
+      "outputs": {
+        "total_positions": {
+          "normalized_unit": "positions",
+          "unit_family": "workforce"
+        },
+        "separations": {
+          "normalized_unit": "employees",
+          "unit_family": "workforce"
+        },
+        "average_weekday_ridership": {
+          "normalized_unit": "riders",
+          "unit_family": "ridership"
+        },
+        "revenue_passengers": {
+          "normalized_unit": "riders",
+          "unit_family": "ridership"
+        }
+      },
+      "guardrails": [
+        "Veteran separations remain unresolved rather than becoming workforce employee counts.",
+        "Existing unit or unit_normalized values are not overwritten.",
+        "No broad name-based ridership or workforce inference was added."
+      ]
+    }
+  ],
+  "after_counts": {
+    "unit_family_missing": 1609,
+    "unit_family_other": 5,
+    "unit_family_count": 3184,
+    "unit_family_enforcement": 283,
+    "unit_family_workforce": 2286,
+    "unit_family_ridership": 2464,
+    "focus_cluster_missing": 0
+  },
+  "verification": {
+    "commands": [
+      "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "bun run typecheck",
+      "bun packages/cli/src/cli.ts materialize",
+      "bun packages/cli/src/cli.ts validate"
+    ],
+    "focused_tests": {
+      "tests_passed": 278,
+      "expect_calls": 4598
+    },
+    "typecheck": "passed",
+    "materialize": {
+      "materialized_submissions": "93067/98115",
+      "retired_submissions_skipped": 265,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "validation": {
+      "submissions": 98115,
+      "canonical_records": 84027,
+      "wiki_pages": 7331,
+      "issues": 0
+    }
+  },
+  "remaining": {
+    "metric_unit_family_missing": 1609,
+    "metric_unit_family_other_records": [
+      "metric_meeting-doc-140311-mn-tracks-outreach",
+      "metric_meeting-doc-182066-sas2-cost-per-rider",
+      "metric_omny-nyct-substantial-completion-dec2025",
+      "metric_sas-phase2-revenue-service-target",
+      "metric_sas2-revenue-service-date-2032-v3"
+    ],
+    "next_lanes": [
+      "Rebaseline the next largest missing metric_name clusters after the top 9 reached zero missing.",
+      "Treat remaining date-shaped year metrics separately; do not force them into a unit family without a date/temporal metric policy.",
+      "Continue exact event-family and duplicate identity cleanup slices with clean validation after each materialization."
+    ]
+  },
+  "follow_on_subagents": {
+    "019f203c-fda3-7f91-8e54-4e74cce7e53f": {
+      "nickname": "Dalton",
+      "lane": "next top 20 metric missing-family clusters",
+      "status_at_note_update": "running"
+    }
+  }
+}

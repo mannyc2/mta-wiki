@@ -1,0 +1,145 @@
+{
+  "run_id": "2026-06-10T17-48-04-564Z_1496766-9d5cfd47_ingest_14th-street-preliminary-report-fall-2019-corrected",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-10T19:21:11.352Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "link-ttp-implementation-to-project",
+        "local_observation_id": "event_ttp_implementation_fall2019",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_14th-street-transit-truck-priority-pilot",
+            "object_id": "event_ttp-implementation-fall2019",
+            "description": "14th Street TTP Pilot Project implementation event on October 3, 2019",
+            "evidence_refs": [
+              {
+                "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+                "block_id": "p003_c0017",
+                "source_quote": "TTP Pilot Project implemented on Thursday, October 3"
+              }
+            ]
+          }
+        ],
+        "rationale": "p003_c0017 explicitly states the TTP Pilot Project was implemented on October 3, linking this event to the project.",
+        "evidence_refs": [
+          {
+            "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+            "block_id": "p003_c0017",
+            "source_quote": "TTP Pilot Project implemented on Thursday, October 3"
+          }
+        ]
+      },
+      {
+        "decision_id": "link-m14-sbs-start-to-route",
+        "local_observation_id": "event_m14_sbs_start_fall2019",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "route_m14-ad-sbs",
+            "object_id": "event_m14-sbs-start-fall2019",
+            "description": "M14 A/D SBS services started in July 2019",
+            "evidence_refs": [
+              {
+                "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+                "block_id": "p005_c0022",
+                "source_quote": "M14 A/D SBS services started in July 2019"
+              },
+              {
+                "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+                "block_id": "p006_c0009",
+                "source_quote": "M14 A/D SBS services started in July 2019"
+              }
+            ]
+          }
+        ],
+        "rationale": "p005_c0022 and p006_c0009 both note that M14 A/D SBS services started in July 2019, directly linking this launch event to the M14 A/D SBS route.",
+        "evidence_refs": [
+          {
+            "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+            "block_id": "p005_c0022",
+            "source_quote": "M14 A/D SBS services started in July 2019"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-l-train-no-subject",
+        "local_observation_id": "event_l_train_reduced_service_fall2019",
+        "decision": "skip",
+        "rationale": "The L Train reduced service is contextual background activity mentioned in p003_c0017. No L Train subway route or related canonical subject exists in the registry; there is no subject to link this event to.",
+        "evidence_refs": [
+          {
+            "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+            "block_id": "p003_c0017",
+            "source_quote": "Since April 2019, L Train has operated with reduced service between Manhattan and Brooklyn, after 8pm on weekdays and all day on weekends"
+          }
+        ]
+      },
+      {
+        "decision_id": "link-prelim-report-to-project",
+        "local_observation_id": "event_preliminary_report_fall2019",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_14th-street-transit-truck-priority-pilot",
+            "object_id": "event_preliminary-report-fall2019",
+            "description": "Preliminary Report released in Fall 2019 for the 14th Street TTP Pilot Project",
+            "evidence_refs": [
+              {
+                "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+                "block_id": "p003_c0009",
+                "source_quote": "Preliminary Report: Fall 2019"
+              }
+            ]
+          }
+        ],
+        "rationale": "p003_c0009 lists 'Preliminary Report: Fall 2019' in the Report Release Schedule within the monitoring plan for the TTP Pilot Project, explicitly tying this report release to the project.",
+        "evidence_refs": [
+          {
+            "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+            "block_id": "p003_c0009",
+            "source_quote": "Preliminary Report: Fall 2019"
+          }
+        ]
+      },
+      {
+        "decision_id": "link-traffic-enforcement-to-project",
+        "local_observation_id": "event_traffic_enforcement_oct2019",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_14th-street-transit-truck-priority-pilot",
+            "object_id": "event_traffic-enforcement-oct2019",
+            "description": "Traffic Enforcement Agent deployment: 55 agents Oct 3–23, 16 agents Oct 24–November 2019",
+            "evidence_refs": [
+              {
+                "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+                "block_id": "p003_c0017",
+                "source_quote": "Traffic Enforcement Agent Presence » October 3 – October 23: 55 agents deployed » October 24 – November: 16 agents deployed"
+              }
+            ]
+          }
+        ],
+        "rationale": "p003_c0017 lists Traffic Enforcement Agent Presence under 'Fall 2019 Study Area Activity' for the TTP Pilot Project, directly linking this enforcement deployment to the project.",
+        "evidence_refs": [
+          {
+            "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+            "block_id": "p003_c0017",
+            "source_quote": "Traffic Enforcement Agent Presence » October 3 – October 23: 55 agents deployed » October 24 – November: 16 agents deployed"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-553Z_1609878-b4600e20_canonicalize_2026-06-10t17-48-04-564z-1496766-9d5cfd47-ingest-14th-street-preliminary-report-fall-2019-corrected-relation-linker"
+}

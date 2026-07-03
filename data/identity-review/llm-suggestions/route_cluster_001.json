@@ -1,0 +1,236 @@
+{
+  "review_run_id": "2026-06-10T21-39-01-072Z_identity-review-run",
+  "reviewed_at": "2026-06-10T21:40:09.561Z",
+  "packet_path": "data/identity-review/packets/route_cluster_001.md",
+  "cluster_id": "route_cluster_001",
+  "kind": "route",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "suggestion": {
+    "cluster_id": "route_cluster_001",
+    "kind": "route",
+    "merge_groups": [
+      [
+        "route_m15-cb8-2010",
+        "route_m15-local-2010-06-09-v2",
+        "route_m15-local-2010-09-14",
+        "route_m15-local-20100607"
+      ],
+      [
+        "route_m15-limited-2010-06-09",
+        "route_m15-limited-2010-09-14"
+      ]
+    ],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "route_m15-cb8-2010",
+          "route_m15-limited-2010-06-09"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'local' vs 'limited_stop'. Different variants never merge."
+      },
+      {
+        "record_ids": [
+          "route_m15-cb8-2010",
+          "route_m15-limited-2010-09-14"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'local' vs 'limited_stop'. Different variants never merge."
+      },
+      {
+        "record_ids": [
+          "route_m15-cb8-2010",
+          "route_m15-sbs"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'local' vs 'sbs'. Different variants never merge."
+      },
+      {
+        "record_ids": [
+          "route_m15-limited-2010-06-09",
+          "route_m15-local-2010-06-09-v2"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' vs 'local'. Different variants never merge."
+      },
+      {
+        "record_ids": [
+          "route_m15-limited-2010-06-09",
+          "route_m15-local-2010-09-14"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' vs 'local'. Different variants never merge."
+      },
+      {
+        "record_ids": [
+          "route_m15-limited-2010-06-09",
+          "route_m15-local-20100607"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' vs 'local'. Different variants never merge."
+      },
+      {
+        "record_ids": [
+          "route_m15-limited-2010-06-09",
+          "route_m15-sbs"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' vs 'sbs'. Different variants never merge."
+      },
+      {
+        "record_ids": [
+          "route_m15-limited-2010-09-14",
+          "route_m15-local-2010-06-09-v2"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' vs 'local'. Different variants never merge."
+      },
+      {
+        "record_ids": [
+          "route_m15-limited-2010-09-14",
+          "route_m15-local-2010-09-14"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' vs 'local'. Different variants never merge."
+      },
+      {
+        "record_ids": [
+          "route_m15-limited-2010-09-14",
+          "route_m15-local-20100607"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' vs 'local'. Different variants never merge."
+      },
+      {
+        "record_ids": [
+          "route_m15-limited-2010-09-14",
+          "route_m15-sbs"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' vs 'sbs'. Different variants never merge. Despite shared_base_route:M15, the source evidence ('M15 SBS replaces M15 Limited') confirms they are distinct service variants."
+      },
+      {
+        "record_ids": [
+          "route_m15-local-2010-06-09-v2",
+          "route_m15-sbs"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'local' vs 'sbs'. Different variants never merge."
+      },
+      {
+        "record_ids": [
+          "route_m15-local-2010-09-14",
+          "route_m15-sbs"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'local' vs 'sbs'. Different variants never merge."
+      },
+      {
+        "record_ids": [
+          "route_m15-local-20100607",
+          "route_m15-sbs"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'local' vs 'sbs'. Different variants never merge."
+      },
+      {
+        "record_ids": [
+          "route_m15-local-limited",
+          "route_m15-cb8-2010"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' (payload) vs 'local'. Different variants never merge."
+      },
+      {
+        "record_ids": [
+          "route_m15-local-limited",
+          "route_m15-local-2010-06-09-v2"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' (payload) vs 'local'. Different variants never merge."
+      },
+      {
+        "record_ids": [
+          "route_m15-local-limited",
+          "route_m15-local-2010-09-14"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' (payload) vs 'local'. Different variants never merge."
+      },
+      {
+        "record_ids": [
+          "route_m15-local-limited",
+          "route_m15-local-20100607"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' (payload) vs 'local'. Different variants never merge."
+      },
+      {
+        "record_ids": [
+          "route_m15-local-limited",
+          "route_m15-sbs"
+        ],
+        "reason": "Test 1 (contradiction): strong identity field service_variant differs — 'limited_stop' (payload) vs 'sbs'. Different variants never merge."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "route_m15-sbs",
+        "aliases": [
+          "M15",
+          "route_m15"
+        ],
+        "reason": "M15+ (SBS variant) shares the M15 base name. The bare 'M15' label is a weak alias for search/discovery but the GTFS '+' suffix and sbs variant are the strong identity. Per canon: GTFS '+' ids are strong aliases for the SBS variant only on official GTFS/ACE surfaces."
+      },
+      {
+        "record_id": "route_m15-cb8-2010",
+        "aliases": [
+          "route_m15"
+        ],
+        "reason": "The bare 'route_m15' key is shared across all M15 variants as a collision-avoidance artifact. Not a merge signal — variant is decisive."
+      },
+      {
+        "record_id": "route_m15-limited-2010-06-09",
+        "aliases": [
+          "route_m15"
+        ],
+        "reason": "Same bare 'route_m15' key shared across variants; not merge authority."
+      },
+      {
+        "record_id": "route_m15-limited-2010-09-14",
+        "aliases": [
+          "route_m15"
+        ],
+        "reason": "Same bare 'route_m15' key shared across variants; not merge authority."
+      },
+      {
+        "record_id": "route_m15-local-limited",
+        "aliases": [
+          "route_m15",
+          "M15"
+        ],
+        "reason": "Bare 'route_m15' and 'M15' keys are ambiguous across variants. This record's own description says 'M15 Local/Limited route reference' — a bundled category label."
+      }
+    ],
+    "missing_fields": [
+      {
+        "record_id": "route_m15-local-limited",
+        "fields": [
+          "determinable service_variant"
+        ],
+        "note": "Payload claims 'limited_stop' but description and source evidence bundle local/limited as a combined category. The record needs a definite variant pin or should remain as a bundled reference record."
+      }
+    ],
+    "ambiguous": [
+      {
+        "record_ids": [
+          "route_m15-local-limited",
+          "route_m15-limited-2010-06-09"
+        ],
+        "needed_context": [
+          "Clarify whether route_m15-local-limited is truly the limited_stop variant or a bundled local/limited reference. Its payload says 'limited_stop' but its description says 'M15 Local/Limited route reference' and its evidence (speeding_up_slowly_2025) discusses 'Local/Limited routes' as a combined MTA service category distinct from SBS and Express. If it is a bundled compound record, per canon it must not be folded into any single variant."
+        ]
+      },
+      {
+        "record_ids": [
+          "route_m15-local-limited",
+          "route_m15-limited-2010-09-14"
+        ],
+        "needed_context": [
+          "Same as above: resolve whether route_m15-local-limited's true variant is limited_stop or a bundled local/limited reference."
+        ]
+      }
+    ],
+    "suggested_rules": [
+      "When a route record's description explicitly acknowledges it bundles multiple variants (e.g. 'Local/Limited route reference'), the description should override a mechanically assigned payload variant for ambiguity purposes — the record should not merge into any single-variant group until the contradiction is resolved."
+    ],
+    "confidence": "high",
+    "rationale": "All records share base route M15 but fall into three distinct service variants: local (4 records), limited_stop (2 records), and sbs (1 record). Per Test 1 of the merge canon, different variants never merge. Within local: route_m15-cb8-2010, route_m15-local-2010-06-09-v2, route_m15-local-2010-09-14, and route_m15-local-20100607 all share same base + 'local' variant with only date/source suffixes — Test 2 merge. Within limited_stop: route_m15-limited-2010-06-09 and route_m15-limited-2010-09-14 share same base + variant with only date suffixes — Test 2 merge. route_m15-sbs stands alone as the sole SBS record (route_id 'M15+' per GTFS convention). route_m15-local-limited is ambiguous: payload says limited_stop but its own description admits it bundles 'Local/Limited' as a combined reference, and its supporting evidence cites the MTA's 'Local/Limited routes' service category alongside SBS and Express — not a specific variant pin. Validator duplicate_identity flags on shared keys like 'route_m15' and 'route_m15-local' are key-collision artifacts from pre-merge ingestion and are overridden by the variant-based identity rules."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T21-39-01-073Z_1822282-d7f6ee9f_identity-review-run_route-cluster-001",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-10T21-39-01-073Z_2026-06-10T21-39-01-073Z_1822282-d7f6ee9f_identity-review-run_route-cluster-001.jsonl"
+}

@@ -1,0 +1,81 @@
+{
+  "run_id": "2026-06-10T23-08-59-359Z_1976810-a7558b5c_ingest_2012-sbs-hylan-winter-newsletter",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T03:12:24.993Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "s79-sbs-winter-2012-new",
+        "local_observation_id": "route_s79_sbs_winter_2012",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_able-s79-sbs' already matches the existing registry record for S79-SBS (aliases include 'route_s79-sbs-winter-2012', source '2012_sbs_hylan_winter_newsletter' already listed). Per rule, own base_record_id match means 'new' — observation already canonically resolves.",
+        "proposed_relations": [
+          {
+            "relation_kind": "replaced_by",
+            "subject_id": "route_s79-hylan-2010",
+            "object_id": "route_able-s79-sbs",
+            "description": "The winter 2012 Hylan Boulevard newsletter documents the S79 SBS as the streamlined replacement for the existing S79 local service. The newsletter headline (p001_c0003) announces 'S79 SELECT BUS SERVICE IMPROVEMENTS' and describes the S79 SBS rerouting at Staten Island Mall (p003_c0009, p003_c0012) while item 1 (p001_c0005) notes the existing S79 would be streamlined with fewer stops.",
+            "evidence_refs": [
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p001_c0003",
+                "source_quote": "S79 SELECT BUS SERVICE IMPROVEMENTS"
+              },
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p001_c0005",
+                "source_quote": "1. Streamlined S79 bus service would operate with fewer stops and a more direct route to save travel time."
+              },
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p003_c0009",
+                "source_quote": "Streamlined Bus Service (Rerouting of Staten Island Mall-bound S79)"
+              },
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p003_c0012",
+                "source_quote": "▲ S79 SBS stays on Staten Island Mall's Ring Road"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p001_c0003",
+            "source_quote": "S79 SELECT BUS SERVICE IMPROVEMENTS"
+          },
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p001_c0005",
+            "source_quote": "1. Streamlined S79 bus service would operate with fewer stops and a more direct route to save travel time."
+          }
+        ]
+      },
+      {
+        "decision_id": "s79-local-winter-2012-new",
+        "local_observation_id": "route_s79_local_winter_2012",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'route_s79-hylan-2010' already matches the existing registry record for S79 local bus (aliases include 'route_s79-local-winter-2012', source '2012_sbs_hylan_winter_newsletter' already listed). Per rule, own base_record_id match means 'new' — observation already canonically resolves.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p001_c0005",
+            "source_quote": "1. Streamlined S79 bus service would operate with fewer stops and a more direct route to save travel time."
+          },
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p003_c0009",
+            "source_quote": "Streamlined Bus Service (Rerouting of Staten Island Mall-bound S79)"
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-10-54-658Z_2111393-aa598e19_canonicalize_2026-06-10t23-08-59-359z-1976810-a7558b5c-ingest-2012-sbs-hylan-winter-newsletter-route-identity"
+}

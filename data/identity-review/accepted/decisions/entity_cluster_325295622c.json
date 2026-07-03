@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "entity_cluster_325295622c",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_325295622c.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_325295622c.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "entity_markys-caviar-meeting-doc-201706",
+        "entity_markys-caviar-meeting-doc-205666"
+      ],
+      "reason": "Different entity_type (organization vs tenant) is a strong identity field contradiction per the Identity Merge Canon test 1, forcing do_not_merge regardless of shared entity name."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "Test 1 of the Identity Merge Canon applies: entity_type differs (organization vs tenant). The first record is an LLC entity_type organization, the second is entity_type tenant. This is a strong identity field contradiction, so the records must not be merged. The shared entity name 'Marky's Caviar' is insufficient to override the contradiction. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

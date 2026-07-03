@@ -1,0 +1,116 @@
+{
+  "run_id": "2026-06-10T23-09-19-079Z_1976810-866cada1_ingest_201205-brt-webster-cac",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T03:22:19.570Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "skip-tx-bx12-curbside",
+        "local_observation_id": "treatment_bx12_curbside_bus_lanes",
+        "decision": "skip",
+        "rationale": "Block p005_c0002 describes Bx12 SBS features on Fordham Road, not Webster Avenue. The Bx12 is a different corridor than the Webster Avenue SBS project that is the subject of this source. No block explicitly states that Bx12 curbside bus lanes are a treatment on the Webster Avenue corridor or project.",
+        "evidence_refs": [
+          {
+            "source_id": "201205_brt_webster_cac",
+            "block_id": "p005_c0002",
+            "source_quote": "▮ New/upgraded bus lanes – Curbside 7am-7pm lanes – Red coloration – Overhead signs for visibility – \"Delivery Windows\" in retail core ▮ Off-board fare collection ▮ Transit Signal Priority ▮ Simplified service pattern ▮ New shelters"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-tx-offboard-fare",
+        "local_observation_id": "treatment_off_board_fare_collection",
+        "decision": "skip",
+        "rationale": "Cited blocks p004_c0007 (image block, no text) and p005_c0002 (Bx12 SBS features, a different corridor) do not explicitly state that off-board fare collection is a treatment on the Webster Avenue corridor or project. Page 4 shows generic SBS features without naming Webster Avenue; page 5 is about Bx12 on Fordham Road.",
+        "evidence_refs": [
+          {
+            "source_id": "201205_brt_webster_cac",
+            "block_id": "p004_c0007",
+            "source_quote": "[image block - no text content]"
+          },
+          {
+            "source_id": "201205_brt_webster_cac",
+            "block_id": "p005_c0002",
+            "source_quote": "▮ New/upgraded bus lanes – Curbside 7am-7pm lanes – Red coloration – Overhead signs for visibility – \"Delivery Windows\" in retail core ▮ Off-board fare collection ▮ Transit Signal Priority ▮ Simplified service pattern ▮ New shelters"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-tx-tsp",
+        "local_observation_id": "treatment_transit_signal_priority",
+        "decision": "skip",
+        "rationale": "Cited block p004_c0008 text is 'Stations' (not about transit signal priority), and p005_c0002 describes Bx12 SBS features on Fordham Road — a different corridor. Neither block explicitly states that transit signal priority is a treatment on the Webster Avenue corridor or project.",
+        "evidence_refs": [
+          {
+            "source_id": "201205_brt_webster_cac",
+            "block_id": "p004_c0008",
+            "source_quote": "Stations"
+          },
+          {
+            "source_id": "201205_brt_webster_cac",
+            "block_id": "p005_c0002",
+            "source_quote": "▮ New/upgraded bus lanes – Curbside 7am-7pm lanes – Red coloration – Overhead signs for visibility – \"Delivery Windows\" in retail core ▮ Off-board fare collection ▮ Transit Signal Priority ▮ Simplified service pattern ▮ New shelters"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-tx-bus-lanes-feature",
+        "local_observation_id": "treatment_bus_lanes_sbs_feature",
+        "decision": "skip",
+        "rationale": "Block p004_c0002 merely lists 'Bus lanes' as a label on a generic 'Features of Select Bus Service' slide. This is a feature listing, not an explicit statement that bus lanes are a treatment on any specific corridor or project.",
+        "evidence_refs": [
+          {
+            "source_id": "201205_brt_webster_cac",
+            "block_id": "p004_c0002",
+            "source_quote": "Bus lanes"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-tx-sbs-stations",
+        "local_observation_id": "treatment_sbs_stations",
+        "decision": "skip",
+        "rationale": "Block p004_c0005 is an image block with no text content. It does not explicitly state that SBS stations are a treatment on any specific corridor or project.",
+        "evidence_refs": [
+          {
+            "source_id": "201205_brt_webster_cac",
+            "block_id": "p004_c0005",
+            "source_quote": "[image block - no text content]"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-tx-sbs-branding",
+        "local_observation_id": "treatment_sbs_branding",
+        "decision": "skip",
+        "rationale": "Block p004_c0003 is an image block with no text content. It does not explicitly state that SBS branding is a treatment on any specific corridor or project.",
+        "evidence_refs": [
+          {
+            "source_id": "201205_brt_webster_cac",
+            "block_id": "p004_c0003",
+            "source_quote": "[image block - no text content]"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-tx-passenger-info",
+        "local_observation_id": "treatment_passenger_info",
+        "decision": "skip",
+        "rationale": "Block p004_c0004 text is 'Branding' — not about passenger information. In any case, this slide shows generic SBS feature labels. A mere label on a features slide does not explicitly state that passenger information is a treatment on any specific corridor or project.",
+        "evidence_refs": [
+          {
+            "source_id": "201205_brt_webster_cac",
+            "block_id": "p004_c0004",
+            "source_quote": "Branding"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-18-19-870Z_2111393-546a6207_canonicalize_2026-06-10t23-09-19-079z-1976810-866cada1-ingest-201205-brt-webster-cac-treatment-relations"
+}

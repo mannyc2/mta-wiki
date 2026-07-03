@@ -1,0 +1,311 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:34:48.969Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_696351ea7c.md",
+  "cluster_id": "entity_cluster_696351ea7c",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_696351ea7c",
+    "kind": "entity",
+    "merge_groups": [
+      [
+        "entity_meeting-doc-128981-nyct",
+        "entity_mta-nyct",
+        "entity_nycta"
+      ],
+      [
+        "entity_meeting-doc-124881-mnr",
+        "entity_metro-north-railroad",
+        "entity_mta-metro-north-2015-webster-map"
+      ],
+      [
+        "entity_167646-triborough-bridge-tunnel",
+        "entity_mta-bridges-and-tunnels"
+      ],
+      [
+        "entity_167646-grand-central-madison",
+        "entity_meeting-doc-121001-gcmoc",
+        "entity_meeting-doc-gcmcoc"
+      ],
+      [
+        "entity_167646-sirtoa",
+        "entity_meeting-doc-100241-staten-island-railway"
+      ],
+      [
+        "entity_long-island-committee",
+        "entity_lirr-committee-meeting-doc-131511"
+      ],
+      [
+        "entity_nyct-committee-2023",
+        "entity_meeting-doc-140466-nyct-committee-members",
+        "entity_nyct-transit-committee-members"
+      ]
+    ],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "entity_meeting-doc-64066-mta",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Contradiction test: different entity_type (agency vs transit_authority) for the same real-world MTA entity. Canon forces do_not_merge despite shared identity keys."
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-64066-mta",
+          "entity_mta-overall"
+        ],
+        "reason": "Contradiction test: different entity_type (agency vs public benefit corporation)."
+      },
+      {
+        "record_ids": [
+          "entity_mta-entity-update-2025",
+          "entity_mta-overall"
+        ],
+        "reason": "Contradiction test: different entity_type (transit_authority vs public benefit corporation)."
+      },
+      {
+        "record_ids": [
+          "entity_mta-entity-update-2025",
+          "entity_mta-metropolitan-transportation-authority"
+        ],
+        "reason": "Contradiction test: different entity_type (transit_authority vs agency)."
+      },
+      {
+        "record_ids": [
+          "entity_department-of-buses",
+          "entity_meeting-doc-128981-nyct"
+        ],
+        "reason": "Contradiction test: different entity_type (department vs agency). Department of Buses is a sub-unit of NYCT, not the same canonical identity."
+      },
+      {
+        "record_ids": [
+          "entity_dept-of-subways-crichlow",
+          "entity_meeting-doc-128981-nyct"
+        ],
+        "reason": "Contradiction test: different entity_type (department vs agency)."
+      },
+      {
+        "record_ids": [
+          "entity_annual-report-2021-lirr",
+          "entity_long-island-committee"
+        ],
+        "reason": "Contradiction test: different entity_type (public benefit corporation subsidiary vs committee). LIRR and its oversight committee are distinct."
+      },
+      {
+        "record_ids": [
+          "entity_audit-committee-charter",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Contradiction test: different entity_type (committee vs transit_authority)."
+      },
+      {
+        "record_ids": [
+          "entity_capital-program-committee-charter",
+          "entity_mta-construction-and-development"
+        ],
+        "reason": "Contradiction test: different entity_type (committee vs public benefit corporation subsidiary)."
+      },
+      {
+        "record_ids": [
+          "entity_finance-committee-mta",
+          "entity_meeting-doc-124881-mnr"
+        ],
+        "reason": "Contradiction test: different entity_type (committee vs agency)."
+      },
+      {
+        "record_ids": [
+          "entity_first-mutual-transportation-assurance",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Contradiction test: different entity_type (agency vs transit_authority). FMTAC is a captive insurer, not the MTA itself."
+      },
+      {
+        "record_ids": [
+          "entity_frank-annicaro",
+          "entity_mta-nyct"
+        ],
+        "reason": "Contradiction test: person vs agency. A person cannot merge with an agency."
+      },
+      {
+        "record_ids": [
+          "entity_frank-farrell-mta-acting-evp-buses",
+          "entity_mta-nyct-evp-frank-farrell"
+        ],
+        "reason": "Contradiction test: different entity_type (person vs government_official). Both represent Frank Farrell but the entity_type differs; canon treats these as distinct strong fields."
+      },
+      {
+        "record_ids": [
+          "entity_janno-lieber-2025",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Contradiction test: person vs transit_authority."
+      },
+      {
+        "record_ids": [
+          "entity_audit-committee-sorin",
+          "entity_catherine-sheridan-115226"
+        ],
+        "reason": "Shared identity key entity_lisa-sorin is erroneous; these are different persons (Lisa Sorin vs Catherine Sheridan). Entity_name differs strongly."
+      },
+      {
+        "record_ids": [
+          "entity_mabstoa",
+          "entity_mta-bus-company"
+        ],
+        "reason": "Different legal entities: MaBSTOA and MTA Bus Company are separate operating authorities. The shared identity key is a collision, not a merge."
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-102746-committee",
+          "entity_meeting-doc-124881-mnr"
+        ],
+        "reason": "Different entity_type: board committee vs agency. The committee oversees Metro-North but is not the railroad itself."
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-128981-nyct",
+          "entity_meeting-doc-143306-mta-hq"
+        ],
+        "reason": "Different entity_type: agency vs agency (NYCT vs MTA Headquarters). Also different identity: NYCT is a subsidiary, MTA HQ is a support unit."
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-128981-nyct",
+          "entity_meeting-doc-154986-aar"
+        ],
+        "reason": "Different entity_type: agency vs paratransit service program. Access-a-Ride is a program under NYCT, not the same entity."
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-128981-nyct",
+          "entity_richard-davey-nyct-president"
+        ],
+        "reason": "Different entity_type: agency vs person."
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-140466-nyct-committee-members",
+          "entity_nyct-mta-bus-committee-charter"
+        ],
+        "reason": "Both are committees, but entity_nyct-mta-bus-committee-charter is the Committee on Operations of NYCT/etc., which is a different committee from the NYC Transit Committee."
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-135596-mta-corporate-compliance",
+          "entity_mta-corporate-compliance-125256"
+        ],
+        "reason": "Contradiction test: different entity_type (office vs agency department). Despite shared name, the types differ."
+      },
+      {
+        "record_ids": [
+          "entity_167646-mta-real-estate",
+          "entity_mta-real-estate-department"
+        ],
+        "reason": "Contradiction test: entity_type agency vs department. The real estate department is a sub-unit of MTA, not an agency."
+      },
+      {
+        "record_ids": [
+          "entity_mta-real-estate-department",
+          "entity_mta-real-estate"
+        ],
+        "reason": "Contradiction test: entity_type department vs agency department. Both represent the same department but types differ; cannot merge."
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-131651-mta-risk-insurance",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Different entity_type: division vs transit_authority. Risk management is a division of MTA, not the MTA itself."
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-64066-mta",
+          "entity_sarah-meyer-cco-mta"
+        ],
+        "reason": "Different entity_type: agency vs person."
+      },
+      {
+        "record_ids": [
+          "entity_mta-board-drug-alcohol",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Different entity_type: board vs transit_authority. The board governs the MTA but is a distinct entity."
+      },
+      {
+        "record_ids": [
+          "entity_mta-board-open-data-plan",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Different entity_type: governing body vs transit_authority."
+      },
+      {
+        "record_ids": [
+          "entity_mta-chief-procurement-officer",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Different entity_type: office vs transit_authority."
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-154986-aar",
+          "entity_mta-entity-update-2025"
+        ],
+        "reason": "Different entity_type: paratransit service program vs transit_authority."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "entity_mta-entity-update-2025",
+        "aliases": [
+          "MTA",
+          "Metropolitan Transportation Authority"
+        ],
+        "reason": "Acronym and legal name merge per canon, but entity_type differences with other MTA records prevent merge. These aliases are valid for search."
+      }
+    ],
+    "missing_fields": [],
+    "ambiguous": [
+      {
+        "record_ids": [
+          "entity_frank-farrell-mta-acting-evp-buses",
+          "entity_mta-nyct-evp-frank-farrell"
+        ],
+        "needed_context": [
+          "Verify if entity_type 'person' vs 'government_official' is a meaningful distinction in the model; if both are treated as natural persons, they should merge."
+        ]
+      },
+      {
+        "record_ids": [
+          "entity_167646-mta-real-estate",
+          "entity_mta-real-estate-department",
+          "entity_mta-real-estate"
+        ],
+        "needed_context": [
+          "Check whether entity_type 'agency', 'department', 'agency department' are interchangeable for MTA subunits; if so, merge."
+        ]
+      },
+      {
+        "record_ids": [
+          "entity_meeting-doc-135596-mta-corporate-compliance",
+          "entity_mta-corporate-compliance-125256"
+        ],
+        "needed_context": [
+          "Determine if 'office' and 'agency department' are considered the same strong identity field for MTA internal units."
+        ]
+      }
+    ],
+    "suggested_rules": [
+      "Consider a rule: for MTA parent entity, entity_type variations (agency/transit_authority/public benefit corporation) should be treated as aliases of the same strong identity, since they all refer to the same legal entity.",
+      "Consider a rule: for MTA internal departments/offices, entity_type differences like department vs agency department vs office should not force do_not_merge if they share the same name and parent."
+    ],
+    "confidence": "medium",
+    "rationale": "Applied Identity Merge Canon strictly. Merge groups consist of records with the same entity_type and shared identity keys. Do_not_merge pairs are primarily due to entity_type contradictions (test 1). Ambiguous cases involve entity_type granularity for MTA subunits; evidence from payload suggests the same real-world objects but different entity_type labels. Suggested rules could refine future handling."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-33-30-583Z_1282984-8e16f483_identity-review-run_entity-cluster-696351ea7c",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-33-30-583Z_2026-06-23T14-33-30-583Z_1282984-8e16f483_identity-review-run_entity-cluster-696351ea7c.jsonl"
+}

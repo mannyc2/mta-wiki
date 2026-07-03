@@ -1,0 +1,73 @@
+{
+  "run_id": "2026-06-09T16-29-18-358Z_358143-7d630e3d_ingest_brooklyn-bus-network-draft-plan-without-route-profiles",
+  "generated_at": "2026-06-09T21:24:17.195Z",
+  "dry_run": true,
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "concurrency": 2,
+  "packet_count": 6,
+  "completed": 0,
+  "failed": 0,
+  "planned": 6,
+  "observation_count": 69,
+  "validated_decision_count": 0,
+  "quarantined_decision_count": 0,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-09T16-29-18-358Z_358143-7d630e3d_ingest_brooklyn-bus-network-draft-plan-without-route-profiles",
+    "manifest": "data/canonicalize/2026-06-09T16-29-18-358Z_358143-7d630e3d_ingest_brooklyn-bus-network-draft-plan-without-route-profiles/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-09T16-29-18-358Z_358143-7d630e3d_ingest_brooklyn-bus-network-draft-plan-without-route-profiles/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-09T16-29-18-358Z_358143-7d630e3d_ingest_brooklyn-bus-network-draft-plan-without-route-profiles/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-09T16-29-18-358Z_358143-7d630e3d_ingest_brooklyn-bus-network-draft-plan-without-route-profiles/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "planned",
+      "decision_count": 0,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 0,
+      "transcript_dir": "data/transcripts/runs/2026-06-09T21-24-17-161Z_598353-482e1677_canonicalize_2026-06-09t16-29-18-358z-358143-7d630e3d-ingest-brooklyn-bus-network-draft-plan-without-route-profiles-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "planned",
+      "decision_count": 0,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 0,
+      "transcript_dir": "data/transcripts/runs/2026-06-09T21-24-17-162Z_598353-8bd5d123_canonicalize_2026-06-09t16-29-18-358z-358143-7d630e3d-ingest-brooklyn-bus-network-draft-plan-without-route-profiles-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "planned",
+      "decision_count": 0,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 0,
+      "transcript_dir": "data/transcripts/runs/2026-06-09T21-24-17-183Z_598353-661f43b0_canonicalize_2026-06-09t16-29-18-358z-358143-7d630e3d-ingest-brooklyn-bus-network-draft-plan-without-route-profiles-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "planned",
+      "decision_count": 0,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 0,
+      "transcript_dir": "data/transcripts/runs/2026-06-09T21-24-17-184Z_598353-8f02ed1a_canonicalize_2026-06-09t16-29-18-358z-358143-7d630e3d-ingest-brooklyn-bus-network-draft-plan-without-route-profiles-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "planned",
+      "decision_count": 0,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 0,
+      "transcript_dir": "data/transcripts/runs/2026-06-09T21-24-17-184Z_598353-4163ab8f_canonicalize_2026-06-09t16-29-18-358z-358143-7d630e3d-ingest-brooklyn-bus-network-draft-plan-without-route-profiles-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "planned",
+      "decision_count": 0,
+      "validated_decision_count": 0,
+      "quarantined_decision_count": 0,
+      "transcript_dir": "data/transcripts/runs/2026-06-09T21-24-17-184Z_598353-8573276b_canonicalize_2026-06-09t16-29-18-358z-358143-7d630e3d-ingest-brooklyn-bus-network-draft-plan-without-route-profiles-relation-linker"
+    }
+  ]
+}

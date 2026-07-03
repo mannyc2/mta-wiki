@@ -1,0 +1,62 @@
+{
+  "review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "reviewed_at": "2026-06-08T21:08:11.103Z",
+  "packet_path": "data/identity-review/packets/route_cluster_008.md",
+  "cluster_id": "route_cluster_008",
+  "kind": "route",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "suggestion": {
+    "cluster_id": "route_cluster_008",
+    "kind": "route",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "route_bx41-plus",
+          "route_webster-ave-sbs"
+        ],
+        "reason": "Distinct service variants on the same base route BX41. route_bx41-plus is the limited-stop '+' variant (BX41+), while route_webster-ave-sbs is the Select Bus Service variant (BX41-SBS) on Webster Avenue in the Bronx. The shared identity key route_bx41 is only the broad base route label, not a variant-specific identifier. The canonical JSONL already keeps analogous pairs distinct (e.g., route_b44-plus vs route_b44-sbs). The negative signal 'variant mismatch: plus-label vs ace-dataset,sbs' confirms these are different service types that should not be merged."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "route_bx41-plus",
+        "aliases": [
+          "route_bx41",
+          "BX41"
+        ],
+        "reason": "References to base route BX41 from the ACE dataset; useful for search but not merge authority because the variant designations (+) differ."
+      },
+      {
+        "record_id": "route_webster-ave-sbs",
+        "aliases": [
+          "route_bx41",
+          "Bx41",
+          "BX41"
+        ],
+        "reason": "References to base route BX41 from BRT route index and ACE sources; useful for search but not merge authority because the variant designation (SBS) differs from the plus variant."
+      }
+    ],
+    "missing_fields": [
+      {
+        "record_id": "route_bx41-plus",
+        "fields": [
+          "borough",
+          "streets",
+          "description",
+          "limits"
+        ]
+      }
+    ],
+    "ambiguous": [],
+    "suggested_rules": [
+      "Do not merge '+' variants (limited-stop) with 'SBS' variants (Select Bus Service) on the same base route; they are distinct service types. Shared base route identity keys (e.g., route_bx41) must be qualified by variant suffix before they are authoritative for merge decisions."
+    ],
+    "confidence": "high",
+    "rationale": "Both records share base route BX41 but represent different service variants: '+'(limited-stop) vs 'SBS' (Select Bus Service). The ACE routes dataset dictionary lists BX41+ as a distinct item alongside other '+' values. The webster-ave-sbs record has full route name 'Webster Avenue Select Bus Service', route label 'BX41-SBS', borough 'Bronx', and streets 'Webster Av'. The canonical JSONL maintains analogous separations (route_b44-plus separate from route_b44-sbs). The validator duplicate_identity alert is a false positive caused by the shared coarse identity key route_bx41."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T21-07-09-663Z_3449211-0e91eb77_identity-review-run_route-cluster-008",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-07-09-663Z_2026-06-08T21-07-09-663Z_3449211-0e91eb77_identity-review-run_route-cluster-008.jsonl"
+}

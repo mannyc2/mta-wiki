@@ -1,0 +1,385 @@
+{
+  "batch_id": "codex-identity-batch099",
+  "created_at": "2026-06-23T03:58:42Z",
+  "prepared_count": 8,
+  "all_pass": true,
+  "scope": {
+    "allowed_kinds": [
+      "corridor",
+      "route"
+    ],
+    "prepared_kinds": [
+      "route"
+    ],
+    "corridor_aliases_prepared": 0,
+    "route_aliases_prepared": 8,
+    "excluded_non_global_kinds": true
+  },
+  "expected_delta": {
+    "duplicate_global_identity": -8
+  },
+  "proposed_aliases": [
+    {
+      "kind": "route",
+      "alias_id": "route_bm5-brt-south-brooklyn-b82",
+      "target_id": "route_bm5-brt-south-brooklyn-2017",
+      "reason": "Both records represent the same global BM5 express bus route in the South Brooklyn/Pennsylvania Avenue B82 corridor material. The records share route_id BM5, route_type_normalized express, service_variant express, and Brooklyn context; the evidence lists BM5 in the same five-route Pennsylvania Avenue service set.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "BM5",
+          "route_type_normalized": "express",
+          "service_variant": "express",
+          "primary_source_id": "brt_south_brooklyn_b82"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "BM5",
+          "route_type_normalized": "express",
+          "service_variant": "express",
+          "primary_source_id": "brt_south_brooklyn_b82_dec2017"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "route_bm5-brt-south-brooklyn-b82",
+          "source_id": "brt_south_brooklyn_b82",
+          "block_id": "p020_c0002",
+          "page_number": 20,
+          "quote": "Serves 5 bus routes (B82 Local, B82 Limited, B83, BM2, BM5)"
+        },
+        {
+          "record_id": "route_bm5-brt-south-brooklyn-2017",
+          "source_id": "brt_south_brooklyn_b82_dec2017",
+          "block_id": "p023_c0002",
+          "page_number": 23,
+          "quote": "Serves 5 bus routes (B82 Local, B82 Limited, B83, BM2, BM5)"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_bm5-brt-south-brooklyn-jan2018",
+      "target_id": "route_bm5-brt-south-brooklyn-2017",
+      "reason": "Both records represent the same global BM5 express bus route. The alias and target share route_id BM5, route_type_normalized express, service_variant express, and South Brooklyn/Pennsylvania Avenue route-list evidence; no local, limited, or SBS variant conflict is present.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "BM5",
+          "route_type_normalized": "express",
+          "service_variant": "express",
+          "primary_source_id": "brt_south_brooklyn_b82_jan2018"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "BM5",
+          "route_type_normalized": "express",
+          "service_variant": "express",
+          "primary_source_id": "brt_south_brooklyn_b82_dec2017"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "route_bm5-brt-south-brooklyn-jan2018",
+          "source_id": "brt_south_brooklyn_b82_jan2018",
+          "block_id": "p017_c0002",
+          "page_number": 17,
+          "quote": "Serves 5 bus routes (B82 Local, B82 Limited, B83, BM2, BM5)"
+        },
+        {
+          "record_id": "route_bm5-brt-south-brooklyn-2017",
+          "source_id": "brt_south_brooklyn_b82_dec2017",
+          "block_id": "p023_c0002",
+          "page_number": 23,
+          "quote": "Serves 5 bus routes (B82 Local, B82 Limited, B83, BM2, BM5)"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_b82-limited-apr2017",
+      "target_id": "route_b82-limited-brt-south-brooklyn-2017",
+      "reason": "Both records represent the same global B82 Limited route, not the separate B82 Local or B82 SBS variants. The alias and target share route_id B82, route_type_normalized limited_stop, service_variant limited_stop, Brooklyn context, and source evidence describing B82 Limited and Local ridership on the same South Brooklyn route.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "B82",
+          "route_type_normalized": "limited_stop",
+          "service_variant": "limited_stop",
+          "primary_source_id": "brt_south_brooklyn_b82_cb11_apr2017"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "B82",
+          "route_type_normalized": "limited_stop",
+          "service_variant": "limited_stop",
+          "primary_source_id": "brt_south_brooklyn_b82_dec2017"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "route_b82-limited-apr2017",
+          "source_id": "brt_south_brooklyn_b82_cb11_apr2017",
+          "block_id": "p003_c0003",
+          "page_number": 3,
+          "quote": "Serves 32,000 daily riders on B82 Limited and Local"
+        },
+        {
+          "record_id": "route_b82-limited-brt-south-brooklyn-2017",
+          "source_id": "brt_south_brooklyn_b82_dec2017",
+          "block_id": "p003_c0003",
+          "page_number": 3,
+          "quote": "Serves 32,000 daily riders on B82 Limited and Local"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_b82-limited-cb15-may2017",
+      "target_id": "route_b82-limited-brt-south-brooklyn-2017",
+      "reason": "Both records represent the same global B82 Limited route. The alias and target share route_id B82, route_type_normalized limited_stop, service_variant limited_stop, and source evidence that explicitly identifies B82 Limited in the South Brooklyn corridor route set; this proposal does not merge the B82 Local or B82 SBS variants.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "B82",
+          "route_type_normalized": "limited_stop",
+          "service_variant": "limited_stop",
+          "primary_source_id": "brt_south_brooklyn_b82_cb15_may2017"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "B82",
+          "route_type_normalized": "limited_stop",
+          "service_variant": "limited_stop",
+          "primary_source_id": "brt_south_brooklyn_b82_dec2017"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "route_b82-limited-cb15-may2017",
+          "source_id": "brt_south_brooklyn_b82_cb15_may2017",
+          "block_id": "p003_c0003",
+          "page_number": 3,
+          "quote": "Serves 32,000 daily riders on B82 Limited and Local"
+        },
+        {
+          "record_id": "route_b82-limited-brt-south-brooklyn-2017",
+          "source_id": "brt_south_brooklyn_b82_dec2017",
+          "block_id": "p003_c0003",
+          "page_number": 3,
+          "quote": "Serves 32,000 daily riders on B82 Limited and Local"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_b82-limited-cb18-jun2017",
+      "target_id": "route_b82-limited-brt-south-brooklyn-2017",
+      "reason": "Both records represent the same global B82 Limited route. The alias and target share route_id B82, route_type_normalized limited_stop, service_variant limited_stop, and matching South Brooklyn B82 Limited evidence; the known B82 Local and B82 SBS records are distinct variants and are not included.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "B82",
+          "route_type_normalized": "limited_stop",
+          "service_variant": "limited_stop",
+          "primary_source_id": "brt_south_brooklyn_b82_cb18_jun2017"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "B82",
+          "route_type_normalized": "limited_stop",
+          "service_variant": "limited_stop",
+          "primary_source_id": "brt_south_brooklyn_b82_dec2017"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "route_b82-limited-cb18-jun2017",
+          "source_id": "brt_south_brooklyn_b82_cb18_jun2017",
+          "block_id": "p003_c0003",
+          "page_number": 3,
+          "quote": "Serves 32,000 daily riders on B82 Limited and Local"
+        },
+        {
+          "record_id": "route_b82-limited-brt-south-brooklyn-2017",
+          "source_id": "brt_south_brooklyn_b82_dec2017",
+          "block_id": "p003_c0003",
+          "page_number": 3,
+          "quote": "Serves 32,000 daily riders on B82 Limited and Local"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_bx41-local-2012-09-webster",
+      "target_id": "route_bx41-local-2012-02-brt-webster-cac1",
+      "reason": "Both records represent the same global Bx41 Local route on Webster Avenue. The alias and target share route_id Bx41, route_type_normalized local, service_variant local, and Bronx/Webster Avenue context; source evidence explicitly distinguishes Bx41 Local from Bx41 Limited/SBS, so this is not a cross-variant merge.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "Bx41",
+          "route_type_normalized": "local",
+          "service_variant": "local",
+          "primary_source_id": "2012_09_webster_sbs_cac3"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "Bx41",
+          "route_type_normalized": "local",
+          "service_variant": "local",
+          "primary_source_id": "2012_02_brt_webster_cac1_summary"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "route_bx41-local-2012-09-webster",
+          "source_id": "2012_09_webster_sbs_cac3",
+          "block_id": "p018_c0002",
+          "page_number": 18,
+          "quote": "Bx41 Local - No change to stop spacing - Service every ~10 minutes"
+        },
+        {
+          "record_id": "route_bx41-local-2012-02-brt-webster-cac1",
+          "source_id": "2014_03_20_brt_webste_cb5",
+          "block_id": "p018_c0002",
+          "page_number": 18,
+          "quote": "Bx41 Local (After 2013)"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_bx41-local-2012-10-webster",
+      "target_id": "route_bx41-local-2012-02-brt-webster-cac1",
+      "reason": "Both records represent the same global Bx41 Local route on Webster Avenue. The alias and target share route_id Bx41, route_type_normalized local, service_variant local, and source evidence stating that the Bx41 local route remains the same while Bx41 SBS replaces the limited variant.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "Bx41",
+          "route_type_normalized": "local",
+          "service_variant": "local",
+          "primary_source_id": "2012_10_webster_sbs_newsletter"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "Bx41",
+          "route_type_normalized": "local",
+          "service_variant": "local",
+          "primary_source_id": "2012_02_brt_webster_cac1_summary"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "route_bx41-local-2012-10-webster",
+          "source_id": "2012_10_webster_sbs_newsletter",
+          "block_id": "p001_c0006",
+          "page_number": 1,
+          "quote": "Bx41 local route remains the same"
+        },
+        {
+          "record_id": "route_bx41-local-2012-02-brt-webster-cac1",
+          "source_id": "2014_04_10_brt_webster_cb7",
+          "block_id": "p017_c0004",
+          "page_number": 17,
+          "quote": "Bx41 Local"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_bx41-local-webster-2012",
+      "target_id": "route_bx41-local-2012-02-brt-webster-cac1",
+      "reason": "Both records represent the same global Bx41 Local route on Webster Avenue. The alias and target share route_id Bx41, route_type_normalized local, service_variant local, and evidence describing Bx41 Local with unchanged stop spacing and about 10-minute service; references to Bx41 LTD/SBS remain variant context, not identity targets.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "Bx41",
+          "route_type_normalized": "local",
+          "service_variant": "local",
+          "primary_source_id": "2012_11_sbs_webster_cac4"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "Bx41",
+          "route_type_normalized": "local",
+          "service_variant": "local",
+          "primary_source_id": "2012_02_brt_webster_cac1_summary"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "route_bx41-local-webster-2012",
+          "source_id": "2012_11_sbs_webster_cac4",
+          "block_id": "p031_c0002",
+          "page_number": 31,
+          "quote": "Bx41 Local - No change to stop spacing - Service every ~10 minutes"
+        },
+        {
+          "record_id": "route_bx41-local-2012-02-brt-webster-cac1",
+          "source_id": "2014_08_25_brt_websteravenue_progressreport",
+          "block_id": "p018_c0004",
+          "page_number": 18,
+          "quote": "The Bx41 Local has also benefited from the bus lanes and traffic improvements on Webster Avenue"
+        }
+      ]
+    }
+  ],
+  "guard_summary": {
+    "record_existence_and_kind": {
+      "command": "sqlite3 -header -csv data/canonical.db \"select r.record_id,r.record_kind,r.display_name,rt.route_id,rt.route_type_normalized,json_extract(r.payload,'$.service_variant') as service_variant,r.primary_source_id from records r join routes rt on rt.record_id=r.record_id where r.record_id in (<selected aliases and targets>) order by rt.route_id,r.record_id;\"",
+      "result": "Returned all 11 selected alias/target records as record_kind=route. BM5 records have route_id BM5, route_type_normalized express, service_variant express. B82 Limited records have route_id B82, route_type_normalized limited_stop, service_variant limited_stop. Bx41 Local records have route_id Bx41, route_type_normalized local, service_variant local."
+    },
+    "existing_alias_conflicts": {
+      "identity_aliases_command": "sqlite3 -header -csv data/canonical.db \"select kind,alias,target from identity_aliases where kind='route' and alias in (<selected aliases and targets>);\"",
+      "identity_aliases_result": "Returned no rows.",
+      "merges_json_command": "jq -r --argjson ids '[<selected aliases and targets>]' '.aliases.route | to_entries[] | select(.key as $k | ($ids | index($k))) | [.key,.value] | @tsv' data/identity-overrides/merges.json",
+      "merges_json_result": "Returned no rows."
+    },
+    "do_not_merge_conflicts": {
+      "db_command": "sqlite3 -header -csv data/canonical.db \"select kind,record_id_a,record_id_b,reason from do_not_merge where kind='route' and (record_id_a in (<selected aliases and targets>) or record_id_b in (<selected aliases and targets>));\"",
+      "db_result": "Returned no rows.",
+      "json_command": "jq -r --argjson ids '[<selected aliases and targets>]' '.pairs.route[] | select(any(.record_ids[]; . as $rid | ($ids | index($rid)))) | [.record_ids[0],.record_ids[1],.reason] | @tsv' data/identity-overrides/do-not-merge.json",
+      "json_result": "Returned no rows."
+    },
+    "prior_prep_conflicts": {
+      "command": "jq -r --argjson ids '[<selected aliases>]' '.proposed_aliases[]? | select((.kind==\"route\" or .kind==\"corridor\") and ($ids | index(.alias_id))) | [.kind,.alias_id,.target_id] | @tsv' data/review_notes/codex-identity-batch0{47..96}-prep.json 2>/dev/null | sort -u",
+      "result": "Returned no rows; none of the selected alias_ids appeared in prior Codex identity prep artifacts through identity096."
+    },
+    "scope_and_variant_checks": {
+      "command": "sqlite3 -header -csv data/canonical.db \"select rt.route_id, rt.route_type_normalized, coalesce(json_extract(r.payload,'$.service_variant'),''), count(*) n, group_concat(r.record_id,' | ') ids from records r join routes rt on rt.record_id=r.record_id where r.record_kind='route' and rt.route_id is not null group by rt.route_id, rt.route_type_normalized, coalesce(json_extract(r.payload,'$.service_variant'),'') having n>1 order by n desc, rt.route_id limit 80;\"",
+      "result": "Selected only route clusters with identical route_id and compatible normalized service variant/type: BM5 express, B82 limited_stop, and Bx41 local. No corridors were proposed, so no corridor-limit ambiguity is introduced."
+    },
+    "source_evidence_commands": [
+      {
+        "command": "sqlite3 -header -csv data/canonical.db \"select source_id,block_id,substr(replace(replace(raw_text,char(10),' '),char(13),' '),1,260) as quote from blocks_fts where (<selected evidence refs>) order by source_id,block_id;\"",
+        "result": "Confirmed BM5 and B82 Limited source blocks explicitly mention BM5 and B82 Limited; confirmed Bx41 Local source blocks explicitly distinguish Bx41 Local from Bx41 LTD/SBS context."
+      },
+      {
+        "command": "sqlite3 -header -csv data/canonical.db \"select e.record_id,e.source_id,e.block_id,e.page_number,json_extract(e.ref_json,'$.source_quote') as source_quote from evidence_refs e where e.record_id in (<selected aliases and targets>) order by e.record_id,e.ordinal;\"",
+        "result": "Confirmed citeable evidence refs exist for each selected alias and target record."
+      }
+    ],
+    "forbidden_command_compliance": {
+      "no_external_or_provider_backed_commands": true,
+      "no_profiles_or_providers": true,
+      "no_canonicalize_or_canonicalize_wave_or_canonicalize_review": true,
+      "no_campaign_dedup_or_identity_review_run": true,
+      "no_write_ask_schema_propose_or_ontology_normalize_run": true,
+      "no_materialize_export_jsonl_or_validate": true,
+      "inspection_commands_used": [
+        "rg",
+        "ls",
+        "sed",
+        "head",
+        "tail",
+        "git status --short",
+        "jq",
+        "sqlite3 data/canonical.db",
+        "date -u"
+      ],
+      "files_written": [
+        "data/review_notes/codex-identity-batch099-prep.json"
+      ]
+    }
+  }
+}

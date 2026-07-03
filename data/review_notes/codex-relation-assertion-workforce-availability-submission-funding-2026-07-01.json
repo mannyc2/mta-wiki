@@ -1,0 +1,100 @@
+{
+  "note_id": "codex-relation-assertion-workforce-availability-submission-funding-2026-07-01",
+  "created_at": "2026-07-01T00:00:00.000Z",
+  "author": "codex",
+  "kind": "deterministic_relation_assertion_status_cleanup",
+  "status": "implemented_materialized_validated",
+  "scope": "Codex-only deterministic relation assertion-status cleanup following the static/officeholder/claim/ridership/funding checkpoint. No external/provider-backed LLM commands, ingest/write/ask/schema commands, identity-review-run, ontology-normalize-run, provider profiles, or hand edits to canonical JSONL were used.",
+  "read_only_subagents": [
+    {
+      "agent_id": "019f1b40-34b3-7822-8d80-197cf269b020",
+      "lane": "metric_context.has_metric residuals",
+      "result_used": "Observed workforce metrics with entity subjects, workforce unit family, allowed normalized workforce units, concrete values, and observed period anchors can be marked delivered while holding estimates, variances, weak anchors, non-entity subjects, and missing evidence."
+    },
+    {
+      "agent_id": "019f1b40-42b9-7100-94f2-82c9dbe9de4e",
+      "lane": "agency_role residuals",
+      "result_used": "Source submitted_by relations should not treat the month token May in source titles as modal uncertainty; temporal guards now use relation-owned text and evidence only."
+    },
+    {
+      "agent_id": "019f1b40-4e0d-7af0-8b26-6859580facd7",
+      "lane": "funding_award residuals",
+      "result_used": "Relation-owned procurement proposal text can classify a narrow set of entity-to-entity award/vendor relations as proposed while holding approval requests, ratification, wrong kinds, and endpoint-description contamination."
+    },
+    {
+      "agent_id": "019f1b40-38b9-7f12-8bed-1f1e5b2c74ba",
+      "lane": "timeline_context residuals",
+      "result_used": "Read-only recommendation captured for a future entity/source implementation timeline rule; not implemented in this slice."
+    }
+  ],
+  "code_changes": {
+    "assertion_qualifiers": [
+      "Added observed elevator/escalator availability metric delivered inference for exact equipment availability metric names with percentage units, concrete values, observed anchors, and future/proposal vetoes.",
+      "Added observed workforce metric delivered inference for entity subjects with workforce unit family, normalized units employees/positions/full_time_equivalents/headcount, concrete values, observed anchors including compact quarter/month-year labels, and estimate/variance/proposal/budget guards.",
+      "Adjusted source submitted_by inference to use relation/evidence text for temporal guards so source titles such as May 2025 do not trigger modal uncertainty.",
+      "Added proposed status inference for narrow relation-owned procurement proposal funding-award text."
+    ],
+    "tests": [
+      "Added equipment availability positive and negative assertion qualifier tests.",
+      "Added workforce metric positive and negative assertion qualifier tests.",
+      "Added source submitted_by May-title positive and future-text negative tests.",
+      "Added proposed procurement funding positive and negative tests."
+    ]
+  },
+  "counts": {
+    "pre_materialize_unknown_total": 6006,
+    "post_materialize_unknown_total": 5606,
+    "net_reduction": 400,
+    "selected_pre_to_post_unknown_counts": {
+      "metric_context.has_metric": {
+        "before": 3277,
+        "after": 2882,
+        "delta": -395
+      },
+      "agency_role.submitted_by": {
+        "before": 4,
+        "after": 2,
+        "delta": -2
+      },
+      "funding_award": {
+        "before": 324,
+        "after": 321,
+        "delta": -3
+      }
+    },
+    "post_materialize_top_unknown_families": {
+      "metric_context": 2896,
+      "timeline_context": 443,
+      "claim_context": 419,
+      "agency_role": 411,
+      "funding_award": 321,
+      "corridor_scope": 276,
+      "partnership_engagement": 244,
+      "governance_legal": 112,
+      "treatment_context": 98,
+      "route_scope": 93,
+      "organization_hierarchy": 91,
+      "dependency_or_reference": 85
+    }
+  },
+  "verification": {
+    "focused_tests": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts: 65 pass, 0 fail, 365 expect() calls",
+    "typecheck": "bun run typecheck passed",
+    "materialize": "bun packages/cli/src/cli.ts materialize: Materialized 93092/98102 submissions; retired submissions skipped 243; pages 7338; SQLite FTS quick_check ok",
+    "validate": "bun packages/cli/src/cli.ts validate: Issues 0; submissions 98102; canonical records 84040; wiki pages 7334"
+  },
+  "remaining_lanes": [
+    "metric_context.has_metric remains the largest residual at 2882 unknown rows; continue exact observed metric families before broad finance/procurement rules.",
+    "timeline_context.has_timeline_event remains 311 unknown rows; the scout's 13-row entity/source implementation timeline rule is the next patch-ready lane.",
+    "funding_award remains 321 unknown rows after the narrow proposed-award rule; broader contract/approval surfaces remain intentionally unresolved.",
+    "agency_role remains 411 unknown rows; reports_to, presented_by, and requesting_department require separate guarded audits."
+  ],
+  "generated_outputs": [
+    "data/canonical/relations.jsonl",
+    "data/canonical.db"
+  ],
+  "source_files_changed": [
+    "packages/pipeline/src/records/assertion-qualifiers.ts",
+    "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+  ]
+}

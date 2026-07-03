@@ -1,0 +1,87 @@
+{
+  "run_id": "2026-06-10T22-56-13-315Z_1976810-4b04cae8_ingest_201106-hylan-slides",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T01:35:47.150Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "s79-local-2011-new",
+        "local_observation_id": "route_s79_hylan_2011",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_s79-hylan-2010 exactly matches existing registry card route_s79-hylan-2010 (S79 local bus, Staten Island). The observation already resolves to this record; no different target exists.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p022_c0006",
+            "source_quote": "Replaces local S79 service"
+          }
+        ]
+      },
+      {
+        "decision_id": "s78-local-2011-new",
+        "local_observation_id": "route_s78_hylan_2011",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_s78-hylan-2010 exactly matches existing registry card route_s78-hylan-2010 (S78 local bus, Staten Island). The observation already resolves to this record; no different target exists.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p022_c0006",
+            "source_quote": "S78 and S59 continue to serve all local stops"
+          }
+        ]
+      },
+      {
+        "decision_id": "s59-local-2011-new",
+        "local_observation_id": "route_s59_hylan_2011",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_s59-hylan-2011 exactly matches existing registry card route_s59-hylan-2011 (S59, local, Staten Island). The observation already resolves to this record; no different target exists.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p022_c0006",
+            "source_quote": "S78 and S59 continue to serve all local stops"
+          }
+        ]
+      },
+      {
+        "decision_id": "hylan-sbs-proposed-2011-new",
+        "local_observation_id": "route_hylan_sbs_proposed_2011",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_hylan-sbs-proposed-2011 exactly matches existing registry card route_hylan-sbs-proposed-2011 (proposed Hylan Boulevard/Richmond Avenue SBS, Staten Island). The observation already resolves to this record; no different target exists.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p022_c0005",
+            "source_quote": "SELECT BUS SERVICE AND LOCAL"
+          },
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p022_c0007",
+            "source_quote": "Hylan Boulevard/Richmond Avenue Select Bus Service — Proposed SBS Route"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "replaces",
+            "subject_id": "route_hylan-sbs-proposed-2011",
+            "object_id": "route_s79-hylan-2010",
+            "description": "Proposed Hylan Boulevard/Richmond Avenue SBS is described as replacing the local S79 service on Staten Island.",
+            "evidence_refs": [
+              {
+                "source_id": "201106_hylan_slides",
+                "block_id": "p022_c0007",
+                "source_quote": "Hylan Boulevard/Richmond Avenue Select Bus Service — Proposed SBS Route — Replaces local S79 service"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-34-41-878Z_2111393-fc633817_canonicalize_2026-06-10t22-56-13-315z-1976810-4b04cae8-ingest-201106-hylan-slides-route-identity"
+}

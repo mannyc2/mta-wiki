@@ -1,0 +1,357 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch047-prep",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "batch_id": "relation047",
+  "batch": "batch047",
+  "scope": "Codex-only deterministic/manual post-ingest relation endpoint-shape cleanup prep; no durable retirements, replacement submissions, generated-output commands, provider-backed commands, code edits, LOG edits, or generated canonical edits applied",
+  "checkpoint_context": {
+    "reported_checkpoint_after_relation046": {
+      "validate_backlog_total": 1483,
+      "unexpected_relation_endpoint_shape": 20,
+      "duplicate_global_identity": 1463
+    },
+    "latest_completed_relation_batch": "relation046",
+    "not_repeated_batches": [
+      "relation037",
+      "relation038",
+      "relation039",
+      "relation040",
+      "relation041",
+      "relation042",
+      "relation043",
+      "relation044",
+      "relation045",
+      "relation046"
+    ],
+    "read_only_inventory_count": 20,
+    "selected_bucket_count": 1,
+    "expected_selected_rows_cleared": 1,
+    "expected_replacement_rows_added": 2,
+    "expected_endpoint_shape_issue_delta": -1,
+    "endpoint_shape_issue_count_after_replacement_estimate": 19
+  },
+  "bucket": {
+    "name": "has_treatment event-to-treatment_component row that should use a source-backed Winter Trackwork Programs project endpoint",
+    "original_relation_kind": "has_treatment",
+    "original_endpoint_shape": "event -> treatment_component",
+    "replacement_relation_kind": "has_treatment",
+    "replacement_endpoint_shape": "project -> treatment_component",
+    "prepared_original_count": 1,
+    "cleanup_direction": "data cleanup only; keep has_treatment scoped to project|corridor|route -> treatment_component",
+    "rationale": "The malformed relation points from the November 2024 East Side Access Support Projects Update event to the Switch Installations in West Side Yard treatment. The same cited source page separately has a Winter Trackwork Programs heading followed by text describing the switch installations. A small source-backed project/program endpoint preserves the authored treatment relationship without widening has_treatment to event subjects."
+  },
+  "durable_mechanism_prepared_not_applied": {
+    "retire_originals_via": "data/submission-overrides/retired.json",
+    "replacement_journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch047.jsonl",
+    "mutation_status": "not_applied_by_this_prep",
+    "only_file_written_by_this_task": "data/review_notes/codex-relation-cleanup-batch047-prep.json"
+  },
+  "prepared_count": 1,
+  "retire_replace_count": 1,
+  "retire_only_count": 0,
+  "accepted_replacement_count": 2,
+  "issue_count": 0,
+  "endpoint_shape_issue_count_after_replacement_estimate": 19,
+  "all_pass": true,
+  "conductor_can_apply_immediately": true,
+  "decisions": [
+    {
+      "action": "retire_and_replace",
+      "retire": {
+        "submission_id": "sub_41409bcac8bad651",
+        "run_id": "2026-06-20T13-19-21-982Z_1885472-f8e858a4_ingest_meeting-doc-128866",
+        "original_record_id": "relation_meeting-doc-128866-winter-trackwork-2024-has-treatment-switch-installations",
+        "original_local_observation_id": "relation_meeting_doc_128866_winter_trackwork_2024_has_treatment_switch_installations",
+        "malformed_shape": "has_treatment event -> treatment_component",
+        "original_relation_kind": "has_treatment",
+        "original_subject_id": "event_meeting-doc-128866-esa-support-nov2024",
+        "original_subject_kind": "event",
+        "original_subject_local_observation_id": "event_meeting_doc_128866_esa_support_nov2024",
+        "original_subject_name": "East Side Access Support Projects Update - November 2024",
+        "original_object_id": "treatment_meeting-doc-128866-switch-installations-west-side-yard",
+        "original_object_kind": "treatment_component",
+        "original_object_local_observation_id": "treatment_meeting_doc_128866_switch_installations_west_side_yard",
+        "original_object_name": "Switch Installations in West Side Yard",
+        "source_ids": [
+          "meeting_doc_128866"
+        ],
+        "current_args": {
+          "source_id": "meeting_doc_128866",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_meeting_doc_128866_winter_trackwork_2024_has_treatment_switch_installations",
+          "label": "Winter Trackwork Programs includes Switch Installations in West Side Yard",
+          "payload": {
+            "relation_kind": "has_treatment",
+            "subject_local_observation_id": "event_meeting_doc_128866_esa_support_nov2024",
+            "object_local_observation_id": "treatment_meeting_doc_128866_switch_installations_west_side_yard",
+            "relation_family": "treatment_context"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_128866",
+              "evidence_id": "meeting_doc_128866#p006_c0010",
+              "source_path": "raw/sources/meeting_doc_128866/blocks.jsonl",
+              "page_number": 6,
+              "block_id": "p006_c0010",
+              "text_sha256": "sha256:263a98fe24dd4eda1772327354fbd77403747a2ea0295f2f008e1d03bb478203",
+              "text_source": "raw_text",
+              "role": "program_name"
+            },
+            {
+              "source_id": "meeting_doc_128866",
+              "evidence_id": "meeting_doc_128866#p006_c0011",
+              "source_path": "raw/sources/meeting_doc_128866/blocks.jsonl",
+              "page_number": 6,
+              "block_id": "p006_c0011",
+              "text_sha256": "sha256:ec150128258b64b01e83fa9c798d56d002a2d45ede608eaf72d32572fbb8d1d4",
+              "text_source": "raw_text",
+              "role": "treatment_details"
+            }
+          ]
+        },
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_41409bcac8bad651",
+          "reason": "Codex relation cleanup batch047 replaces malformed has_treatment event -> treatment_component relation relation_meeting-doc-128866-winter-trackwork-2024-has-treatment-switch-installations with a source-backed Winter Trackwork Programs project endpoint and a validator-compatible project -> treatment_component relation preserving the West Side Yard switch-installation evidence.",
+          "source_decision": "data/review_notes/codex-relation-cleanup-batch047-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch047-prep",
+          "reviewed_at": "2026-06-23T00:00:00Z"
+        },
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_128866",
+            "evidence_id": "meeting_doc_128866#p006_c0010",
+            "source_path": "raw/sources/meeting_doc_128866/blocks.jsonl",
+            "page_number": 6,
+            "block_id": "p006_c0010",
+            "text_sha256": "sha256:263a98fe24dd4eda1772327354fbd77403747a2ea0295f2f008e1d03bb478203",
+            "text_source": "raw_text",
+            "source_quote": "Winter Trackwork Programs",
+            "role": "program_name"
+          },
+          {
+            "source_id": "meeting_doc_128866",
+            "evidence_id": "meeting_doc_128866#p006_c0011",
+            "source_path": "raw/sources/meeting_doc_128866/blocks.jsonl",
+            "page_number": 6,
+            "block_id": "p006_c0011",
+            "text_sha256": "sha256:ec150128258b64b01e83fa9c798d56d002a2d45ede608eaf72d32572fbb8d1d4",
+            "text_source": "raw_text",
+            "source_quote": "Switch Installations in West Side Yard",
+            "role": "treatment_details"
+          }
+        ],
+        "reason": "The event endpoint is a schedule/update item, while the cited treatment belongs under the immediately cited Winter Trackwork Programs heading. Creating that heading as a project/program endpoint and relating it to the switch-installation treatment matches the current has_treatment endpoint contract.",
+        "expected_endpoint_shape_delta": -1,
+        "confidence": "high"
+      },
+      "replacement": {
+        "run_id": "2026-06-23_codex_relation_cleanup_batch047",
+        "journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch047.jsonl",
+        "append_order_required": [
+          "sub_62e2e68756aeea80",
+          "sub_baadf223c36ae4e4"
+        ],
+        "id_generation": {
+          "method": "createSubmissionEntry-style stable hash over normalized tool_args; evidence refs are already normalized from raw/sources/meeting_doc_128866/blocks.jsonl; submitted_at fixed at 2026-06-23T00:00:00.000Z.",
+          "conductor_required": false
+        },
+        "replacement_entries": [
+          {
+            "role": "new valid project/program endpoint",
+            "tool_name": "submit_observation",
+            "review_state": "accepted",
+            "deterministic_submission_id": "sub_62e2e68756aeea80",
+            "tool_args_sha256": "sha256:62e2e68756aeea8090837d63e97cb3864f4f0bf0f8e994eca3393087e6941f7e",
+            "proposed_record_kind": "project",
+            "entry": {
+              "submission_id": "sub_62e2e68756aeea80",
+              "run_id": "2026-06-23_codex_relation_cleanup_batch047",
+              "submitted_at": "2026-06-23T00:00:00.000Z",
+              "tool_args_sha256": "sha256:62e2e68756aeea8090837d63e97cb3864f4f0bf0f8e994eca3393087e6941f7e",
+              "schema_version": 2,
+              "tool_args": {
+                "source_id": "meeting_doc_128866",
+                "observation_kind": "project",
+                "local_observation_id": "project_meeting_doc_128866_winter_trackwork_programs",
+                "label": "Winter Trackwork Programs",
+                "raw_text": "Winter Trackwork Programs; Switch Installations in West Side Yard",
+                "payload": {
+                  "project_name": "Winter Trackwork Programs",
+                  "project_type": "trackwork program",
+                  "status": "planned",
+                  "description": "LIRR winter trackwork program including planned schedule adjustments for switch installations in West Side Yard.",
+                  "document_time_status": "planned",
+                  "project_family": "other"
+                },
+                "evidence_refs": [
+                  {
+                    "source_id": "meeting_doc_128866",
+                    "evidence_id": "meeting_doc_128866#p006_c0010",
+                    "source_path": "raw/sources/meeting_doc_128866/blocks.jsonl",
+                    "page_number": 6,
+                    "block_id": "p006_c0010",
+                    "text_sha256": "sha256:263a98fe24dd4eda1772327354fbd77403747a2ea0295f2f008e1d03bb478203",
+                    "text_source": "raw_text",
+                    "role": "program_name",
+                    "source_quote": "Winter Trackwork Programs"
+                  },
+                  {
+                    "source_id": "meeting_doc_128866",
+                    "evidence_id": "meeting_doc_128866#p006_c0011",
+                    "source_path": "raw/sources/meeting_doc_128866/blocks.jsonl",
+                    "page_number": 6,
+                    "block_id": "p006_c0011",
+                    "text_sha256": "sha256:ec150128258b64b01e83fa9c798d56d002a2d45ede608eaf72d32572fbb8d1d4",
+                    "text_source": "raw_text",
+                    "role": "treatment_details",
+                    "source_quote": "Switch Installations in West Side Yard"
+                  }
+                ]
+              },
+              "validation": {
+                "state": "accepted",
+                "issues": []
+              }
+            }
+          },
+          {
+            "role": "corrected relation replacement",
+            "tool_name": "submit_observation",
+            "review_state": "accepted",
+            "deterministic_submission_id": "sub_baadf223c36ae4e4",
+            "tool_args_sha256": "sha256:baadf223c36ae4e4dd62874e410fa16486241730d9266f9cd78cc10a3817c0fe",
+            "proposed_relation_kind": "has_treatment",
+            "proposed_endpoint_shape": "project -> treatment_component",
+            "entry": {
+              "submission_id": "sub_baadf223c36ae4e4",
+              "run_id": "2026-06-23_codex_relation_cleanup_batch047",
+              "submitted_at": "2026-06-23T00:00:00.000Z",
+              "tool_args_sha256": "sha256:baadf223c36ae4e4dd62874e410fa16486241730d9266f9cd78cc10a3817c0fe",
+              "schema_version": 2,
+              "tool_args": {
+                "source_id": "meeting_doc_128866",
+                "observation_kind": "relation",
+                "local_observation_id": "relation_meeting_doc_128866_winter_trackwork_programs_has_switch_installations",
+                "label": "Winter Trackwork Programs includes Switch Installations in West Side Yard",
+                "raw_text": "Winter Trackwork Programs; Switch Installations in West Side Yard",
+                "payload": {
+                  "relation_kind": "has_treatment",
+                  "subject_local_observation_id": "project_meeting_doc_128866_winter_trackwork_programs",
+                  "object_local_observation_id": "treatment_meeting_doc_128866_switch_installations_west_side_yard",
+                  "description": "The Winter Trackwork Programs agenda item includes switch installations in West Side Yard.",
+                  "relation_family": "treatment_context"
+                },
+                "evidence_refs": [
+                  {
+                    "source_id": "meeting_doc_128866",
+                    "evidence_id": "meeting_doc_128866#p006_c0010",
+                    "source_path": "raw/sources/meeting_doc_128866/blocks.jsonl",
+                    "page_number": 6,
+                    "block_id": "p006_c0010",
+                    "text_sha256": "sha256:263a98fe24dd4eda1772327354fbd77403747a2ea0295f2f008e1d03bb478203",
+                    "text_source": "raw_text",
+                    "role": "program_name",
+                    "source_quote": "Winter Trackwork Programs"
+                  },
+                  {
+                    "source_id": "meeting_doc_128866",
+                    "evidence_id": "meeting_doc_128866#p006_c0011",
+                    "source_path": "raw/sources/meeting_doc_128866/blocks.jsonl",
+                    "page_number": 6,
+                    "block_id": "p006_c0011",
+                    "text_sha256": "sha256:ec150128258b64b01e83fa9c798d56d002a2d45ede608eaf72d32572fbb8d1d4",
+                    "text_source": "raw_text",
+                    "role": "treatment_details",
+                    "source_quote": "Switch Installations in West Side Yard"
+                  }
+                ]
+              },
+              "validation": {
+                "state": "accepted",
+                "issues": []
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "guard_checks": {
+    "originals_accepted_not_retired": {
+      "status": "pass",
+      "accepted_original_submission_ids": [
+        "sub_41409bcac8bad651"
+      ],
+      "retired_hits_for_originals": []
+    },
+    "replacements_absent": {
+      "status": "pass",
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": [],
+      "canonical_record_collision_hits": []
+    },
+    "local_observation_ids_not_colliding": {
+      "status": "pass",
+      "checked_local_observation_ids": [
+        "project_meeting_doc_128866_winter_trackwork_programs",
+        "relation_meeting_doc_128866_winter_trackwork_programs_has_switch_installations"
+      ]
+    },
+    "replacement_endpoint_shapes_valid": {
+      "status": "pass",
+      "relation_kind": "has_treatment",
+      "subject_local_observation_id": "project_meeting_doc_128866_winter_trackwork_programs",
+      "subject_kind": "project",
+      "object_local_observation_id": "treatment_meeting_doc_128866_switch_installations_west_side_yard",
+      "object_kind": "treatment_component",
+      "endpoint_shape_issue_after_replacement": null,
+      "rule_source": "packages/pipeline/src/records/relations.ts has_treatment allows project|corridor|route -> treatment_component"
+    },
+    "evidence_supports_semantics": {
+      "status": "pass",
+      "summary": "Block p006_c0010 is the heading 'Winter Trackwork Programs'. Block p006_c0011 says the Long Island Committee is being informed of LIRR's plan to temporarily adjust schedules for a series of Switch Installations in West Side Yard. These blocks support a Winter Trackwork Programs project/program endpoint and a has_treatment relation to the existing switch-installation treatment component."
+    },
+    "no_generated_files_edited": {
+      "status": "pass_for_this_task",
+      "note": "This prep wrote only data/review_notes/codex-relation-cleanup-batch047-prep.json. Existing worktree modifications to retired.json, submissions, canonical/generated files, code, and LOG.md were not touched."
+    }
+  },
+  "local_validation": {
+    "clean": true,
+    "tooling": "Read-only SQLite/rg/source-block inspection and local stable-hash calculation; no validate CLI, materialize, export-jsonl, DB publish, provider-backed command, post-ingest LLM harness, code edit, submission append, retirement edit, generated-output edit, or LOG edit was run.",
+    "summary": {
+      "prepared_count": 1,
+      "retire_replace_count": 1,
+      "retire_only_count": 0,
+      "replacement_submission_count": 2,
+      "accepted_replacement_count": 2,
+      "issue_count": 0,
+      "warning_count": 0,
+      "relation_endpoint_issue_count": 0,
+      "endpoint_shape_issue_count_after_replacement": 0,
+      "endpoint_shape_issue_count_after_replacement_estimate": 19
+    }
+  },
+  "conductor_application_plan": {
+    "apply_ready": true,
+    "retired_json_additions": [
+      {
+        "submission_id": "sub_41409bcac8bad651",
+        "reason": "Codex relation cleanup batch047 replaces malformed has_treatment event -> treatment_component relation relation_meeting-doc-128866-winter-trackwork-2024-has-treatment-switch-installations with a source-backed Winter Trackwork Programs project endpoint and a validator-compatible project -> treatment_component relation preserving the West Side Yard switch-installation evidence.",
+        "source_decision": "data/review_notes/codex-relation-cleanup-batch047-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch047-prep",
+        "reviewed_at": "2026-06-23T00:00:00Z"
+      }
+    ],
+    "replacement_submission_ids": [
+      "sub_62e2e68756aeea80",
+      "sub_baadf223c36ae4e4"
+    ],
+    "replacement_local_observation_ids": [
+      "project_meeting_doc_128866_winter_trackwork_programs",
+      "relation_meeting_doc_128866_winter_trackwork_programs_has_switch_installations"
+    ],
+    "replacement_journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch047.jsonl",
+    "expected_endpoint_shape_delta": -1,
+    "expected_remaining_unexpected_relation_endpoint_shape": 19
+  }
+}

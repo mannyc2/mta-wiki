@@ -1,0 +1,454 @@
+{
+  "batch_id": "identity083",
+  "prepared_count": 9,
+  "all_pass": true,
+  "proposed_aliases": [
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-206081-elock",
+      "target_id": "entity_meeting-doc-205626-elock",
+      "reason": "Both records identify the same vendor, eLock Technologies LLC, for the secure bike parking pilot.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-206081-elock",
+          "display_name": "eLock Technologies LLC",
+          "entity_name": "eLock Technologies LLC",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_206081"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_206081",
+              "block_id": "p023_c0003",
+              "evidence_id": "meeting_doc_206081#p023_c0003",
+              "source_quote": "Vendor Name (Location) eLock Technologies LLC (Berkeley, California)"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_meeting-doc-205626-elock",
+          "display_name": "eLock Technologies LLC",
+          "entity_name": "eLock Technologies LLC",
+          "entity_type": "vendor",
+          "source_ids": [
+            "meeting_doc_205626"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_205626",
+              "block_id": "p006_c0003",
+              "evidence_id": "meeting_doc_205626#p006_c0003",
+              "source_quote": "Vendor Name (Location) eLock Technologies LLC (Berkeley, California)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-206081-exp-urbahn",
+      "target_id": "entity_exp-urbahn-jv-206071",
+      "reason": "Both records identify the same EXP-Urbahn Joint Venture and cite the same D81760 design-services contract context.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-206081-exp-urbahn",
+          "display_name": "EXP-Urbahn Joint Venture",
+          "entity_name": "EXP-Urbahn Joint Venture",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_206081"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_206081",
+              "block_id": "p037_c0005",
+              "evidence_id": "meeting_doc_206081#p037_c0005",
+              "source_quote": "Vendor Name Contract Number EXP-Urbahn Joint Venture D81760"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_exp-urbahn-jv-206071",
+          "display_name": "EXP-Urbahn Joint Venture",
+          "entity_name": "EXP-Urbahn Joint Venture",
+          "entity_type": "joint venture",
+          "source_ids": [
+            "meeting_doc_206071",
+            "meeting_doc_208006"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_208006",
+              "block_id": "p012_c0006",
+              "evidence_id": "meeting_doc_208006#p012_c0006",
+              "source_quote": "Award of a publicly advertised and competitively solicited contract with EXP-Urbahn Joint Venture (Contract No. D81760)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-171381-gotham-organization",
+      "target_id": "entity_meeting-doc-170991-gotham-org",
+      "reason": "Both records identify Gotham Organization, Inc., a New York corporation, in Westbury Station property-development context.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-171381-gotham-organization",
+          "display_name": "Gotham Organization, Inc.",
+          "entity_name": "Gotham Organization, Inc.",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_171381"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_171381",
+              "block_id": "p048_c0008",
+              "evidence_id": "meeting_doc_171381#p048_c0008",
+              "source_quote": "affiliate of Gotham Organization, Inc. (\"Gotham\"), a New York corporation"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_meeting-doc-170991-gotham-org",
+          "display_name": "Gotham Organization, Inc.",
+          "entity_name": "Gotham Organization, Inc.",
+          "entity_type": "corporation",
+          "source_ids": [
+            "meeting_doc_170991"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_170991",
+              "block_id": "p009_c0008",
+              "evidence_id": "meeting_doc_170991#p009_c0008",
+              "source_quote": "Gotham Organization, Inc. (\"Gotham\"), a New York corporation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_ej-electric-meeting-doc-199076",
+      "target_id": "entity_ej-electric-cpc-may2022",
+      "reason": "Both records identify E-J Electric Installation Co., an electrical contractor.",
+      "evidence": [
+        {
+          "record_id": "entity_ej-electric-meeting-doc-199076",
+          "display_name": "E-J Electric Installation Co.",
+          "entity_name": "E-J Electric Installation Co.",
+          "entity_type": "contractor",
+          "source_ids": [
+            "meeting_doc_199076",
+            "meeting_doc_68196"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_199076",
+              "block_id": "p006_c0008",
+              "evidence_id": "meeting_doc_199076#p006_c0008",
+              "source_quote": "GSH solicited bids from three major electrical contractors: E-J Electric Installation Co. (\"E-J Electric\")"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_ej-electric-cpc-may2022",
+          "display_name": "E-J Electric Installation Co.",
+          "entity_name": "E-J Electric Installation Co.",
+          "entity_type": "contractor",
+          "source_ids": [
+            "meeting_doc_87691"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_87691",
+              "block_id": "p003_c0002",
+              "evidence_id": "meeting_doc_87691#p003_c0002",
+              "source_quote": "Contracts E-J Electric Installation Co. $ 7,099,255"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_sperry-rail-meeting-doc-104741",
+      "target_id": "entity_sperry-rail",
+      "reason": "Both records identify Sperry Rail, Inc., the rail flaw testing and joint bar detection services vendor.",
+      "evidence": [
+        {
+          "record_id": "entity_sperry-rail-meeting-doc-104741",
+          "display_name": "Sperry Rail, Inc.",
+          "entity_name": "Sperry Rail, Inc.",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_104741"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_104741",
+              "block_id": "p011_c0011",
+              "evidence_id": "meeting_doc_104741#p011_c0011",
+              "source_quote": "contract extension to the competitively bid joint Metro-North/LIRR contract with Sperry Rail, Inc."
+            }
+          ]
+        },
+        {
+          "record_id": "entity_sperry-rail",
+          "display_name": "Sperry Rail, Inc.",
+          "entity_name": "Sperry Rail, Inc.",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_102786",
+            "meeting_doc_140621"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_102786",
+              "block_id": "p037_c0002",
+              "evidence_id": "meeting_doc_102786#p037_c0002",
+              "source_quote": "Vendor Name (Location) Sperry Rail, Inc. (Shelton, Connecticut)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-102756-sperry-rail",
+      "target_id": "entity_sperry-rail",
+      "reason": "Both records identify Sperry Rail, Inc. as the LIRR/MNR rail flaw testing and joint bar inspection vendor.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-102756-sperry-rail",
+          "display_name": "Sperry Rail, Inc.",
+          "entity_name": "Sperry Rail, Inc.",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_102756",
+            "meeting_doc_124276",
+            "meeting_doc_138251",
+            "meeting_doc_138331"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_102756",
+              "block_id": "p005_c0007",
+              "evidence_id": "meeting_doc_102756#p005_c0007",
+              "role": "vendor_name"
+            },
+            {
+              "source_id": "meeting_doc_138251",
+              "block_id": "p006_c0005",
+              "evidence_id": "meeting_doc_138251#p006_c0005",
+              "source_quote": "award a public works contract to Sperry Rail, Inc."
+            }
+          ]
+        },
+        {
+          "record_id": "entity_sperry-rail",
+          "display_name": "Sperry Rail, Inc.",
+          "entity_name": "Sperry Rail, Inc.",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_102786",
+            "meeting_doc_140621"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_102786",
+              "block_id": "p037_c0002",
+              "evidence_id": "meeting_doc_102786#p037_c0002",
+              "source_quote": "Vendor Name (Location) Sperry Rail, Inc. (Shelton, Connecticut)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_town-of-oyster-bay-meeting-doc-157721",
+      "target_id": "entity_town-of-oyster-bay",
+      "reason": "Both records identify the Town of Oyster Bay as the licensee/municipality in Hicksville Station real-estate context.",
+      "evidence": [
+        {
+          "record_id": "entity_town-of-oyster-bay-meeting-doc-157721",
+          "display_name": "Town of Oyster Bay",
+          "entity_name": "Town of Oyster Bay",
+          "entity_type": "municipality",
+          "source_ids": [
+            "meeting_doc_157721"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_157721",
+              "block_id": "p001_c0003",
+              "evidence_id": "meeting_doc_157721#p001_c0003",
+              "source_quote": "License agreement with the Town of Oyster Bay"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_town-of-oyster-bay",
+          "display_name": "Town of Oyster Bay",
+          "entity_name": "Town of Oyster Bay",
+          "entity_type": "municipality",
+          "source_ids": [
+            "meeting_doc_157711"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_157711",
+              "block_id": "p003_c0007",
+              "evidence_id": "meeting_doc_157711#p003_c0007",
+              "source_quote": "LICENSEE: Town of Oyster Bay (\"Town\")"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_webster-leasing-llc-meeting-doc-160241",
+      "target_id": "entity_webster-leasing-llc",
+      "reason": "Both records identify Webster Leasing, LLC, the New York limited liability company controlled by Lawrence Blinn, PJ Mazzucca, Kevin Blinn, and Greg Blinn.",
+      "evidence": [
+        {
+          "record_id": "entity_webster-leasing-llc-meeting-doc-160241",
+          "display_name": "Webster Leasing, LLC",
+          "entity_name": "Webster Leasing, LLC",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_160241"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_160241",
+              "block_id": "p001_c0001",
+              "evidence_id": "meeting_doc_160241#p001_c0001",
+              "source_quote": "Webster Leasing, LLC (\"Webster Leasing\"), a New York limited liability company"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_webster-leasing-llc",
+          "display_name": "Webster Leasing, LLC",
+          "entity_name": "Webster Leasing, LLC",
+          "entity_type": "limited liability company",
+          "source_ids": [
+            "meeting_doc_160181"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_160181",
+              "block_id": "p001_c0007",
+              "evidence_id": "meeting_doc_160181#p001_c0007",
+              "source_quote": "GRANTEE: Webster Leasing, LLC (\"Webster Leasing\"), a New York limited liability company"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_webster-leasing-meeting-doc-160301",
+      "target_id": "entity_webster-leasing-llc",
+      "reason": "Both records identify Webster Leasing, LLC in the same Bronx property disposition context.",
+      "evidence": [
+        {
+          "record_id": "entity_webster-leasing-meeting-doc-160301",
+          "display_name": "Webster Leasing, LLC",
+          "entity_name": "Webster Leasing, LLC",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_160301"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_160301",
+              "block_id": "p002_c0007",
+              "evidence_id": "meeting_doc_160301#p002_c0007",
+              "source_quote": "GRANTEE: Webster Leasing, LLC (\"Webster Leasing\"), a New York limited liability company"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_webster-leasing-llc",
+          "display_name": "Webster Leasing, LLC",
+          "entity_name": "Webster Leasing, LLC",
+          "entity_type": "limited liability company",
+          "source_ids": [
+            "meeting_doc_160181"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_160181",
+              "block_id": "p001_c0007",
+              "evidence_id": "meeting_doc_160181#p001_c0007",
+              "source_quote": "GRANTEE: Webster Leasing, LLC (\"Webster Leasing\"), a New York limited liability company"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guard_checks": {
+    "mutation_scope": "prep artifact only; no canonical JSONL, canonical.db, identity-overrides, LOG.md, manifest, wiki, materialized, or generated-output files intentionally changed",
+    "candidate_limit": {
+      "max_allowed": 10,
+      "proposed_count": 9,
+      "pass": true
+    },
+    "override_shape": {
+      "intended_apply_path": "data/identity-overrides/merges.json aliases.entity",
+      "flat_aliases": false,
+      "pass": true
+    },
+    "existing_alias_conflicts": {
+      "checked_with": "sqlite3 data/canonical.db identity_aliases",
+      "conflicts": [],
+      "pass": true
+    },
+    "do_not_merge_conflicts": {
+      "checked_with": "sqlite3 data/canonical.db do_not_merge",
+      "conflicts": [],
+      "pass": true
+    },
+    "candidate_basis": {
+      "method": "deterministic local inspection of canonical.db, evidence_refs, record_sources, identity_aliases, do_not_merge, and cited raw source blocks",
+      "external_or_provider_llm_used": false,
+      "generated_output_commands_run": false,
+      "pass": true
+    }
+  },
+  "skipped_candidates": [
+    {
+      "kind": "entity",
+      "candidate_ids": [
+        "entity_brooklyn-community-board-1",
+        "entity_community-board-1-bronx-2012-02",
+        "entity_community-board-1-manhattan-2013-06"
+      ],
+      "reason": "Skipped despite exact display-name cluster because Community Board 1 is borough-dependent and these records are not the same real-world board."
+    },
+    {
+      "kind": "entity",
+      "candidate_ids": [
+        "entity_community-advisory-committee-2015",
+        "entity_community-advisory-committee-webster"
+      ],
+      "reason": "Skipped because the shared display name is generic and likely project-specific rather than a single durable committee identity."
+    },
+    {
+      "kind": "entity",
+      "candidate_ids": [
+        "entity_better-buses-bay-pkwy-cropsey-jun2025",
+        "entity_better-buses-program"
+      ],
+      "reason": "Skipped because one record may be a program/entity mention in a Bay Parkway-Cropsey source and the other is the broader Better Buses program; not high-confidence exact same identity from current evidence."
+    }
+  ]
+}

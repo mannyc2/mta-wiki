@@ -1,0 +1,413 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch059",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "batch_id": "relation059",
+  "scope": "Codex-only deterministic relation cleanup prep; no provider-backed commands, canonicalize/campaign/identity-review/write/ask/schema/ontology-normalize commands, materialize/export/validate commands, durable retirement edits, submission appends, generated-output edits, LOG edits, manifest edits, canonical edits, or wiki edits applied.",
+  "durable_mechanism_prepared_not_applied": {
+    "retire_originals_via": "data/submission-overrides/retired.json",
+    "replacement_journal_if_needed": "data/submissions/2026-06-23_codex_relation_cleanup_batch059.jsonl",
+    "replacement_append_needed_for_this_batch": false,
+    "mutation_status": "not_applied_by_this_prep",
+    "only_file_written_by_this_task": "data/review_notes/codex-relation-cleanup-batch059-prep.json"
+  },
+  "summary_counts": {
+    "reported_unexpected_relation_endpoint_shape_after_relation058": 7,
+    "remaining_visible_records_named_by_user": 7,
+    "prepared_malformed_submission_count": 3,
+    "retire_only_count": 3,
+    "retire_replace_count": 0,
+    "accepted_replacement_count": 0,
+    "expected_endpoint_shape_delta": -3,
+    "expected_remaining_unexpected_relation_endpoint_shape_after_apply": 4
+  },
+  "bucket": {
+    "name": "document/update/workplan subjects used in agency-role relations",
+    "original_relation_kinds": [
+      "owned_by",
+      "implemented_by"
+    ],
+    "original_endpoint_shapes": [
+      "event -> entity",
+      "source -> entity"
+    ],
+    "cleanup_direction": "retire only",
+    "why_coherent": "All selected rows use a source-like or event-like subject as if it were an owned/implemented project, corridor, or entity. The validator already has narrow agency-role shapes for these relation kinds, and the cited source blocks do not provide a clean replacement project/treatment/corridor/entity endpoint."
+  },
+  "guard_checks": {
+    "all_pass": true,
+    "commands_used": [
+      "rg/jq/sed local inspection only",
+      "canonical relation inspection in data/canonical/relations.jsonl",
+      "canonical source/event/route/claim inspection in data/canonical/*.jsonl",
+      "source block inspection in raw/sources/meeting_doc_202106/blocks.jsonl, raw/sources/meeting_doc_192216/blocks.jsonl, and raw/sources/meeting_doc_133291/blocks.jsonl",
+      "submission and retired override grep probes"
+    ],
+    "forbidden_commands_avoided": {
+      "status": "pass",
+      "avoided": [
+        "external/provider LLM commands",
+        "canonicalize*",
+        "campaign dedup",
+        "identity-review",
+        "write",
+        "ask",
+        "schema",
+        "ontology-normalize",
+        "--profile/provider commands",
+        "materialize",
+        "export",
+        "validate"
+      ]
+    },
+    "selected_originals_accepted_not_retired": {
+      "status": "pass",
+      "selected_original_submission_ids": [
+        "sub_cda92d1344140822",
+        "sub_e0378f5f0be48d1e",
+        "sub_947dc40fdcdf16b2"
+      ],
+      "selected_original_journals": [
+        "data/submissions/2026-06-21T22-19-23-759Z_3137823-f700ff59_ingest_meeting-doc-202106.jsonl:30",
+        "data/submissions/2026-06-21T20-31-50-077Z_3137823-61077e0b_ingest_meeting-doc-192216.jsonl:23",
+        "data/submissions/2026-06-20T14-34-53-600Z_1885472-219043da_ingest_meeting-doc-133291.jsonl:45"
+      ],
+      "current_validation_state": "accepted",
+      "retired_hits": []
+    },
+    "current_canonical_endpoint_shape_invalid": {
+      "status": "pass",
+      "validator_files": [
+        "packages/pipeline/src/records/relations.ts",
+        "packages/pipeline/src/validate.ts"
+      ],
+      "validator_behavior": "validate.ts calls relationEndpointShapeIssue with materialized subject_id/object_id record kinds and emits unexpected_relation_endpoint_shape when the shape is outside RELATION_ENDPOINT_SHAPES.",
+      "relation_kind_shapes": {
+        "owned_by": {
+          "valid_subject_kinds": [
+            "entity",
+            "project",
+            "corridor"
+          ],
+          "valid_object_kinds": [
+            "entity"
+          ]
+        },
+        "implemented_by": {
+          "valid_subject_kinds": [
+            "project"
+          ],
+          "valid_object_kinds": [
+            "entity"
+          ]
+        }
+      },
+      "invalid_rows": [
+        {
+          "record_id": "relation_app-update-owned-by-mta",
+          "relation_kind": "owned_by",
+          "subject_kind": "event",
+          "object_kind": "entity",
+          "validator_evidence": "Relation kind owned_by expects entity|project|corridor -> entity, got event -> entity."
+        },
+        {
+          "record_id": "relation_bt-committee-workplan-2026-owned-by",
+          "relation_kind": "owned_by",
+          "subject_kind": "source",
+          "object_kind": "entity",
+          "validator_evidence": "Relation kind owned_by expects entity|project|corridor -> entity, got source -> entity."
+        },
+        {
+          "record_id": "relation_meeting-doc-133291-proposal-implemented-by-nyct-mtabus",
+          "relation_kind": "implemented_by",
+          "subject_kind": "source",
+          "object_kind": "entity",
+          "validator_evidence": "Relation kind implemented_by expects project -> entity, got source -> entity."
+        }
+      ]
+    },
+    "source_evidence_checked": {
+      "status": "pass",
+      "blocks": [
+        {
+          "evidence_id": "meeting_doc_202106#p001_c0002",
+          "summary": "The block text is the title 'MTA App Update March 2026'. It supports the existing event/update record, not an owned_by edge from an event to an entity."
+        },
+        {
+          "evidence_id": "meeting_doc_202106#p002_c0003",
+          "summary": "The block lists app feature/change claims including rebuilt from the ground up, designed for MTA riders, real-time data focus, and coming OMNY integration. Those facts are already represented by claims and a has_claim edge, but do not identify an ownership relation endpoint pair."
+        },
+        {
+          "evidence_id": "meeting_doc_192216#p001_c0002",
+          "summary": "The block text is 'Bridges and Tunnels'. It is title/source context."
+        },
+        {
+          "evidence_id": "meeting_doc_192216#p001_c0003",
+          "summary": "The block text is 'Committee Work Plan'. It is title/source context."
+        },
+        {
+          "evidence_id": "meeting_doc_192216#p002_c0001",
+          "summary": "The block text is '2026 Bridges and Tunnels Committee Work Plan'. It supports the source title and committee entity label, not source ownership."
+        },
+        {
+          "evidence_id": "meeting_doc_133291#p002_c0007",
+          "summary": "The block says the staff summary seeks the President's approval and informs the New York City Transit and MTA Bus Committee of proposed schedule changes to B82, Bx19, Q3, and Q29. It supports proposal/approval context and affected routes, not a source document implemented_by agency edge."
+        }
+      ]
+    },
+    "replacement_not_prepared": {
+      "status": "pass",
+      "replacement_endpoint_shape_validity": "not_applicable_retire_only",
+      "reason": "No accepted replacement relation is warranted. A valid owned_by replacement would require an entity/project/corridor subject and entity object, and a valid implemented_by replacement would require a project subject and entity object. The selected rows instead cite title/update/workplan/approval-context blocks without source-backed project or entity ownership/implementation endpoints. Retiring preserves validator correctness without inventing semantics.",
+      "existing_valid_or_non_relation_coverage": [
+        {
+          "record_id": "event_mta-app-update-march-2026",
+          "coverage": "Preserves the MTA App Update event with March 2026 date and source title evidence meeting_doc_202106#p001_c0002."
+        },
+        {
+          "record_id": "claim_rebuilt-from-ground-up",
+          "coverage": "Preserves the app rebuild claim from meeting_doc_202106#p002_c0003."
+        },
+        {
+          "record_id": "claim_omny-integration-coming-soon",
+          "coverage": "Preserves the OMNY integration coming-soon claim from meeting_doc_202106#p002_c0003, with relation_omny-integration-claim as existing claim context."
+        },
+        {
+          "record_id": "source_meeting-doc-192216",
+          "coverage": "Preserves the Bridges and Tunnels Committee Work Plan source title and authority metadata."
+        },
+        {
+          "record_id": "entity_bt-committee-members-sep2024",
+          "coverage": "Already merges the B&T committee/workplan entity labels, including meeting_doc_192216 evidence, without requiring a source ownership relation."
+        },
+        {
+          "record_id": "source_meeting-doc-133291",
+          "coverage": "Preserves the staff-summary source description, publisher, date, and proposed bus-schedule-change scope."
+        },
+        {
+          "record_id": "relation_meeting-doc-133291-event-april2024",
+          "coverage": "Valid source -> event has_timeline_event relation preserves the April 2024 proposed implementation date."
+        },
+        {
+          "record_ids": [
+            "relation_meeting-doc-133291-b82-operated-by-nyct",
+            "relation_meeting-doc-133291-bx19-operated-by-nyct",
+            "relation_meeting-doc-133291-q3-operated-by-nyct",
+            "relation_meeting-doc-133291-q29-operated-by-mta-bus"
+          ],
+          "coverage": "Existing valid route -> entity operated_by relations preserve agency context for the named routes where source-backed."
+        }
+      ]
+    },
+    "no_generated_files_edited": {
+      "status": "pass_for_this_task",
+      "note": "The shared worktree already contains unrelated dirty generated and durable files. This task wrote only the prep artifact and did not edit retired.json, submissions, canonical JSONL, materialized data, wiki output, LOG, manifest, or code."
+    }
+  },
+  "prepared_changes": [
+    {
+      "change_type": "retire_only",
+      "confidence": "high",
+      "original": {
+        "submission_id": "sub_cda92d1344140822",
+        "run_id": "2026-06-21T22-19-23-759Z_3137823-f700ff59_ingest_meeting-doc-202106",
+        "submitted_at": "2026-06-21T22:38:26.388Z",
+        "tool_args_sha256": "sha256:cda92d13441408223699e20b1c201eea903f373245f4c82c393c91409d83453d",
+        "journal": "data/submissions/2026-06-21T22-19-23-759Z_3137823-f700ff59_ingest_meeting-doc-202106.jsonl:30",
+        "record_id": "relation_app-update-owned-by-mta",
+        "source_id": "meeting_doc_202106",
+        "local_observation_id": "relation_app_update_owned_by_mta",
+        "label": "MTA App Update March 2026",
+        "malformed_shape": "owned_by event -> entity",
+        "tool_args": {
+          "source_id": "meeting_doc_202106",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_app_update_owned_by_mta",
+          "label": "MTA App Update March 2026",
+          "payload": {
+            "relation_kind": "owned_by",
+            "subject_local_observation_id": "event_mta_app_update_march_2026",
+            "object_local_observation_id": "entity_mta_app_presentation_202106",
+            "relation_family": "ownership_role"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_202106",
+              "evidence_id": "meeting_doc_202106#p001_c0002",
+              "source_path": "raw/sources/meeting_doc_202106/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0002",
+              "text_sha256": "sha256:e49526683c99da3ba0a21aaeae8436508ef9961aef02a84144fc9f04eb477bb2",
+              "text_source": "raw_text",
+              "source_quote": "MTA App Update March 2026"
+            },
+            {
+              "source_id": "meeting_doc_202106",
+              "evidence_id": "meeting_doc_202106#p002_c0003",
+              "source_path": "raw/sources/meeting_doc_202106/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0003",
+              "text_sha256": "sha256:9b8678cd21b3ab04712a5dc190b396e1c0c24f365c29be7fa2c2563ca9c15e47",
+              "text_source": "raw_text",
+              "source_quote": "Rebuilt from the ground up"
+            }
+          ]
+        }
+      },
+      "proposed_retired_json_entry": {
+        "submission_id": "sub_cda92d1344140822",
+        "reason": "Codex relation cleanup batch059 retires malformed owned_by event -> entity relation relation_app-update-owned-by-mta. owned_by requires entity|project|corridor -> entity, but the submitted subject is event_mta-app-update-march-2026. The cited title and feature bullets support existing event and claim records for the MTA App update, but do not provide source-backed valid ownership endpoints.",
+        "source_decision": "data/review_notes/codex-relation-cleanup-batch059-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch059",
+        "reviewed_at": "2026-06-23T00:00:00Z"
+      },
+      "proposed_replacement_submission_json": null,
+      "replacement_decision": {
+        "status": "not_prepared",
+        "replacement_endpoint_shape_validity": "not_applicable_retire_only",
+        "reason": "A valid replacement would need an entity/project/corridor subject and entity object. The evidence supports an app update event and feature claims, not a determinate owned_by relation."
+      },
+      "expected_endpoint_shape_delta": -1
+    },
+    {
+      "change_type": "retire_only",
+      "confidence": "high",
+      "original": {
+        "submission_id": "sub_e0378f5f0be48d1e",
+        "run_id": "2026-06-21T20-31-50-077Z_3137823-61077e0b_ingest_meeting-doc-192216",
+        "submitted_at": "2026-06-21T20:40:36.376Z",
+        "tool_args_sha256": "sha256:e0378f5f0be48d1e2eb73801fc442227c85989d64fef335ffe1b5cd788b3e763",
+        "journal": "data/submissions/2026-06-21T20-31-50-077Z_3137823-61077e0b_ingest_meeting-doc-192216.jsonl:23",
+        "record_id": "relation_bt-committee-workplan-2026-owned-by",
+        "source_id": "meeting_doc_192216",
+        "local_observation_id": "relation_bt_committee_workplan_2026_owned_by",
+        "label": "2026 Work Plan owned by B&T Committee",
+        "malformed_shape": "owned_by source -> entity",
+        "tool_args": {
+          "source_id": "meeting_doc_192216",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_bt_committee_workplan_2026_owned_by",
+          "label": "2026 Work Plan owned by B&T Committee",
+          "payload": {
+            "relation_kind": "owned_by",
+            "subject_local_observation_id": "source_meeting_doc_192216",
+            "object_local_observation_id": "entity_bt_committee_workplan_2026",
+            "relation_family": "ownership_role"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_192216",
+              "evidence_id": "meeting_doc_192216#p001_c0002",
+              "source_path": "raw/sources/meeting_doc_192216/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0002",
+              "text_sha256": "sha256:64c14ffe632558f96a4a2caad34abd74f1e3e3d59b4a7d0f8036f9dc0f9d76c3",
+              "text_source": "raw_text",
+              "role": "entity_label"
+            },
+            {
+              "source_id": "meeting_doc_192216",
+              "evidence_id": "meeting_doc_192216#p001_c0003",
+              "source_path": "raw/sources/meeting_doc_192216/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0003",
+              "text_sha256": "sha256:13fba86185ea035451a89a1c59ce1176e59cfff61cb26b82f5cf05acb8312dbe",
+              "text_source": "raw_text",
+              "role": "entity_label"
+            },
+            {
+              "source_id": "meeting_doc_192216",
+              "evidence_id": "meeting_doc_192216#p002_c0001",
+              "source_path": "raw/sources/meeting_doc_192216/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0001",
+              "text_sha256": "sha256:4d3f496fa3457e618241d076e987ad4d0fd3ea03b2734128353b47cdee219aa5",
+              "text_source": "raw_text",
+              "role": "entity_label"
+            }
+          ]
+        }
+      },
+      "proposed_retired_json_entry": {
+        "submission_id": "sub_e0378f5f0be48d1e",
+        "reason": "Codex relation cleanup batch059 retires malformed owned_by source -> entity relation relation_bt-committee-workplan-2026-owned-by. owned_by requires entity|project|corridor -> entity, but the submitted subject is source_meeting-doc-192216. The cited blocks are Bridges and Tunnels Committee Work Plan title/entity-label evidence already represented on source and entity records, and they do not support a source ownership edge or a deterministic valid replacement relation.",
+        "source_decision": "data/review_notes/codex-relation-cleanup-batch059-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch059",
+        "reviewed_at": "2026-06-23T00:00:00Z"
+      },
+      "proposed_replacement_submission_json": null,
+      "replacement_decision": {
+        "status": "not_prepared",
+        "replacement_endpoint_shape_validity": "not_applicable_retire_only",
+        "reason": "A valid replacement would need an entity/project/corridor subject and entity object. The evidence is title/source context and committee label context, not ownership."
+      },
+      "expected_endpoint_shape_delta": -1
+    },
+    {
+      "change_type": "retire_only",
+      "confidence": "high",
+      "original": {
+        "submission_id": "sub_947dc40fdcdf16b2",
+        "run_id": "2026-06-20T14-34-53-600Z_1885472-219043da_ingest_meeting-doc-133291",
+        "submitted_at": "2026-06-20T16:14:22.855Z",
+        "tool_args_sha256": "sha256:947dc40fdcdf16b211f867322705164f68f98a70c16982e724ddea8ec4f352e2",
+        "journal": "data/submissions/2026-06-20T14-34-53-600Z_1885472-219043da_ingest_meeting-doc-133291.jsonl:45",
+        "record_id": "relation_meeting-doc-133291-proposal-implemented-by-nyct-mtabus",
+        "source_id": "meeting_doc_133291",
+        "local_observation_id": "relation_meeting_doc_133291_proposal_implemented_by_nyct_mtabus",
+        "label": "Schedule changes to be implemented by NYCT and MTA Bus",
+        "malformed_shape": "implemented_by source -> entity",
+        "tool_args": {
+          "source_id": "meeting_doc_133291",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_meeting_doc_133291_proposal_implemented_by_nyct_mtabus",
+          "label": "Schedule changes to be implemented by NYCT and MTA Bus",
+          "payload": {
+            "relation_kind": "implemented_by",
+            "subject_local_observation_id": "source_meeting_doc_133291",
+            "object_local_observation_id": "entity_meeting_doc_133291_mta_nyct",
+            "description": "Schedule changes proposed for approval by NYCT and MTA Bus Committee",
+            "relation_family": "agency_role"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_133291",
+              "evidence_id": "meeting_doc_133291#p002_c0007",
+              "source_path": "raw/sources/meeting_doc_133291/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0007",
+              "text_sha256": "sha256:adb029f5e5fc262360709386db7705f8f04f846b075735e489b7e37231543ec1",
+              "text_source": "raw_text",
+              "role": "relation_evidence"
+            }
+          ]
+        }
+      },
+      "proposed_retired_json_entry": {
+        "submission_id": "sub_947dc40fdcdf16b2",
+        "reason": "Codex relation cleanup batch059 retires malformed implemented_by source -> entity relation relation_meeting-doc-133291-proposal-implemented-by-nyct-mtabus. implemented_by requires project -> entity, but the submitted subject is source_meeting-doc-133291. The cited staff-summary block supports approval/informational context for proposed B82, Bx19, Q3, and Q29 schedule changes; valid route agency context and April 2024 implementation timing are already represented separately, and the block does not provide a deterministic project endpoint for replacement.",
+        "source_decision": "data/review_notes/codex-relation-cleanup-batch059-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch059",
+        "reviewed_at": "2026-06-23T00:00:00Z"
+      },
+      "proposed_replacement_submission_json": null,
+      "replacement_decision": {
+        "status": "not_prepared",
+        "replacement_endpoint_shape_validity": "not_applicable_retire_only",
+        "reason": "A valid implemented_by replacement would need a project subject and entity object. This source has route and timeline coverage, but the cited block names a staff-summary approval purpose rather than a source-backed project endpoint."
+      },
+      "expected_endpoint_shape_delta": -1
+    }
+  ],
+  "expected_delta": {
+    "unexpected_relation_endpoint_shape": -3,
+    "from": 7,
+    "to": 4,
+    "assumption": "Conductor applies exactly the three proposed retired.json entries and no replacement submissions are appended for relation059."
+  },
+  "apply_recommendation": {
+    "recommendation": "apply_retire_only",
+    "steps": [
+      "Add the three proposed_retired_json_entry objects for sub_cda92d1344140822, sub_e0378f5f0be48d1e, and sub_947dc40fdcdf16b2 to data/submission-overrides/retired.json.",
+      "Do not create or append data/submissions/2026-06-23_codex_relation_cleanup_batch059.jsonl for this retire-only batch.",
+      "Then let the conductor run the generated-output lane."
+    ]
+  }
+}

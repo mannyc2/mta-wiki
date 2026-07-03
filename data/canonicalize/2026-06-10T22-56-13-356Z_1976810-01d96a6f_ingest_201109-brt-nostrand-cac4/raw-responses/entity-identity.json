@@ -1,0 +1,54 @@
+{
+  "run_id": "2026-06-10T22-56-13-356Z_1976810-01d96a6f_ingest_201109-brt-nostrand-cac4",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T01:43:57.202Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "entity-mta-nyct-201109-new",
+        "local_observation_id": "entity_mta_nyct_201109",
+        "decision": "new",
+        "rationale": "Observation record_id 'entity_mta-nyct' already exists in the registry as a fully matching canonical record (same entity_name 'MTA New York City Transit', same entity_type 'agency', same source_id '201109_brt_nostrand_cac4' present in the registry record's aliases via 'entity_mta-nyct-201109'). The observation already resolves to its own base_record_id; no linking action needed.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_nostrand_cac4",
+            "block_id": "p001_c0002",
+            "source_quote": "MTA New York City Transit logo and name throughout presentation"
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-nyc-dot-201109-new",
+        "local_observation_id": "entity_nyc_dot_201109",
+        "decision": "new",
+        "rationale": "Observation record_id 'entity_nyc-dot' already exists in the registry as a fully matching canonical record (same entity_name 'New York City Department of Transportation', same entity_type 'agency', same source_id '201109_brt_nostrand_cac4' present in the registry record's aliases via 'entity_nyc-dot-201109'). The observation already resolves to its own base_record_id; no linking action needed.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_nostrand_cac4",
+            "block_id": "p001_c0003",
+            "source_quote": "NYC DOT logo and name throughout presentation"
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-nostrand-merchants-assoc-new",
+        "local_observation_id": "entity_nostrand_ave_merchants_association",
+        "decision": "new",
+        "rationale": "Observation record_id 'entity_nostrand-ave-merchants-association' already exists in the registry as a fully matching canonical record (same entity_name 'Nostrand Ave Merchants Association', same entity_type 'organization', sole source_id '201109_brt_nostrand_cac4' matches). The observation already resolves to its own base_record_id; no linking action needed.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_nostrand_cac4",
+            "block_id": "p023_c0003",
+            "source_quote": "Consultants working with DOT and Nostrand Ave Merchants Association interviewed 192 of the 216 businesses (89%) along Nostrand Ave between Eastern Parkway and Linden Blvd."
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-43-19-855Z_2111393-2197b7d9_canonicalize_2026-06-10t22-56-13-356z-1976810-01d96a6f-ingest-201109-brt-nostrand-cac4-entity-identity"
+}

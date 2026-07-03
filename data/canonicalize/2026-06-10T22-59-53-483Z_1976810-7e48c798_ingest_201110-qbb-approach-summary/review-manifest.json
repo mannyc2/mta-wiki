@@ -1,0 +1,16 @@
+{
+  "run_id": "2026-06-10T22-59-53-483Z_1976810-7e48c798_ingest_201110-qbb-approach-summary",
+  "generated_at": "2026-06-11T02:21:28.565Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "reviewed_decision_count": 32,
+  "pass_count": 25,
+  "fail_count": 6,
+  "unsure_count": 1,
+  "paths": {
+    "verdicts_jsonl": "data/canonicalize/2026-06-10T22-59-53-483Z_1976810-7e48c798_ingest_201110-qbb-approach-summary/verdicts.jsonl",
+    "manifest": "data/canonicalize/2026-06-10T22-59-53-483Z_1976810-7e48c798_ingest_201110-qbb-approach-summary/review-manifest.json"
+  }
+}

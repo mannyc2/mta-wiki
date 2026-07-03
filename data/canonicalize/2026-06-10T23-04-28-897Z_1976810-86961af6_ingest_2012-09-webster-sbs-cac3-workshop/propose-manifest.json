@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop",
+  "generated_at": "2026-06-11T03:03:24.481Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 17,
+  "validated_decision_count": 15,
+  "quarantined_decision_count": 2,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop",
+    "manifest": "data/canonicalize/2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 4,
+      "validated_decision_count": 4,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-55-36-118Z_2111393-1f9f2746_canonicalize_2026-06-10t23-04-28-897z-1976810-86961af6-ingest-2012-09-webster-sbs-cac3-workshop-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-55-36-126Z_2111393-3da05fba_canonicalize_2026-06-10t23-04-28-897z-1976810-86961af6-ingest-2012-09-webster-sbs-cac3-workshop-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 2,
+      "validated_decision_count": 2,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-55-36-126Z_2111393-f1b97db5_canonicalize_2026-06-10t23-04-28-897z-1976810-86961af6-ingest-2012-09-webster-sbs-cac3-workshop-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-55-36-126Z_2111393-dce2ddbd_canonicalize_2026-06-10t23-04-28-897z-1976810-86961af6-ingest-2012-09-webster-sbs-cac3-workshop-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 7,
+      "validated_decision_count": 6,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-55-36-126Z_2111393-59b2b7dd_canonicalize_2026-06-10t23-04-28-897z-1976810-86961af6-ingest-2012-09-webster-sbs-cac3-workshop-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 2,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 1,
+      "raw_response_path": "data/canonicalize/2026-06-10T23-04-28-897Z_1976810-86961af6_ingest_2012-09-webster-sbs-cac3-workshop/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T02-55-36-127Z_2111393-c998a250_canonicalize_2026-06-10t23-04-28-897z-1976810-86961af6-ingest-2012-09-webster-sbs-cac3-workshop-relation-linker"
+    }
+  ]
+}

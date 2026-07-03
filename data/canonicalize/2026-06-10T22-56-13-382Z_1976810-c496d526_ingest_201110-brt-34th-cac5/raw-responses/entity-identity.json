@@ -1,0 +1,61 @@
+{
+  "run_id": "2026-06-10T22-56-13-382Z_1976810-c496d526_ingest_201110-brt-34th-cac5",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T01:47:43.397Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d01-nyct-agency-confirmed",
+        "local_observation_id": "entity_nyct_cac5_2011",
+        "decision": "new",
+        "rationale": "Observation for MTA New York City Transit (agency, acronym NYCT) already resolves to base_record_id entity_mta-nyct. The registry record already lists source 201110_brt_34th_cac5 and matches on entity_name (MTA New York City Transit), entity_type (agency), and acronym (NYCT). No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p001_c0003",
+            "source_quote": "New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "d02-nycdot-agency-confirmed",
+        "local_observation_id": "entity_nycdot_cac5_2011",
+        "decision": "new",
+        "rationale": "Observation for New York City Department of Transportation (agency, acronym NYC DOT) already resolves to base_record_id entity_nyc-dot. The registry record already lists source 201110_brt_34th_cac5 and matches on entity_name (New York City Department of Transportation) and entity_type (agency). No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_brt_34th_cac5",
+            "block_id": "p002_c0004",
+            "source_quote": "NEW YORK CITY DOT"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "collaborated_with",
+            "subject_id": "entity_mta-nyct",
+            "object_id": "entity_nyc-dot",
+            "description": "MTA NYCT was lead agency and NYC DOT was co-presenter/partner agency for the 34th Street SBS project presented at CAC Meeting #5 (October 2011).",
+            "evidence_refs": [
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p001_c0003",
+                "source_quote": "New York City Transit"
+              },
+              {
+                "source_id": "201110_brt_34th_cac5",
+                "block_id": "p002_c0004",
+                "source_quote": "NEW YORK CITY DOT"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-46-45-510Z_2111393-5eacde8d_canonicalize_2026-06-10t22-56-13-382z-1976810-c496d526-ingest-201110-brt-34th-cac5-entity-identity"
+}

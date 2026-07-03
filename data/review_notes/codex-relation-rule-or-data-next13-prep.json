@@ -1,0 +1,464 @@
+{
+  "note_id": "codex-relation-rule-or-data-next13-prep",
+  "created_at": "2026-06-22T23:03:16Z",
+  "author": "codex",
+  "lane": "validator/rule-data triage next13",
+  "scope": {
+    "question": "Against current post-wave28 validation state, after excluding applied relation batches017-036 and missing-target repairs, decide the next best data cleanup bucket versus scoped validator rule patch for remaining unexpected_relation_endpoint_shape rows.",
+    "write_scope_observed": "Created exactly this prep artifact under data/review_notes/.",
+    "forbidden_actions_not_run": [
+      "materialize",
+      "validate CLI",
+      "export-jsonl",
+      "provider-backed commands",
+      "DB repair/publish",
+      "generated canonical/wiki/materialized edits",
+      "code edits",
+      "retired.json edits",
+      "submission journal edits",
+      "LOG.md or manifest edits"
+    ]
+  },
+  "post_wave28_context": {
+    "source": "LOG.md lines 4450-4478 inspected read-only",
+    "summary": "Post-wave28 generated-output checkpoint is complete. LOG reports validate still exits 1 for known backlog issues and remains at 1,609 issues, including duplicate_global_identity=1569 and unexpected_relation_endpoint_shape=40. Wave29 dry-run reports nothing to ingest, so provider ingest lane is idle/pool-exhausted.",
+    "note": "This task did not rerun materialize, export-jsonl, validate, or provider-backed commands."
+  },
+  "exclusion_model": {
+    "excluded_batches": [
+      "relation cleanup batch017",
+      "relation cleanup batch018",
+      "relation cleanup batch019",
+      "relation cleanup batch020",
+      "relation cleanup batch021",
+      "relation cleanup batch022",
+      "relation cleanup batch023",
+      "relation cleanup batch024",
+      "relation cleanup batch025",
+      "relation cleanup batch026",
+      "relation cleanup batch027",
+      "relation cleanup batch028",
+      "relation cleanup batch029",
+      "relation cleanup batch030",
+      "relation cleanup batch031",
+      "relation cleanup batch032",
+      "relation cleanup batch033",
+      "relation cleanup batch034",
+      "relation cleanup batch035",
+      "relation cleanup batch036"
+    ],
+    "excluded_repairs": [
+      "missing target repair submissions matching 2026-06-22_codex_relation_missing_target_repair*.jsonl",
+      "retired override reasons mentioning missing-target or target repair"
+    ],
+    "implementation": "Read canonical records through readCanonicalRecords(), removed known batch017-036 and missing-target repair submission/record ids from retired overrides, batch prep files, and batch submission journals, then ran relationEndpointShapeIssue() in-process against the remaining relation records. This did not invoke the validate CLI.",
+    "excluded_submission_count": 179,
+    "excluded_record_count": 91,
+    "manual_known_exclusion": "relation_85476-published-by-mta-corrected"
+  },
+  "remaining_bucket_counts_after_exclusions": {
+    "unexpected_relation_endpoint_shape_total": 40,
+    "top_buckets": [
+      {
+        "bucket": "has_timeline_event metric_claim->event",
+        "count": 2
+      },
+      {
+        "bucket": "implemented_by route->entity",
+        "count": 2
+      },
+      {
+        "bucket": "part_of_program event->entity",
+        "count": 2
+      },
+      {
+        "bucket": "has_claim claim->claim",
+        "count": 1
+      },
+      {
+        "bucket": "has_claim treatment_component->claim",
+        "count": 1
+      },
+      {
+        "bucket": "has_timeline_event entity->metric_claim",
+        "count": 1
+      },
+      {
+        "bucket": "has_timeline_event event->entity",
+        "count": 1
+      },
+      {
+        "bucket": "has_timeline_event event->source",
+        "count": 1
+      },
+      {
+        "bucket": "has_timeline_event project->entity",
+        "count": 1
+      },
+      {
+        "bucket": "has_timeline_event source->entity",
+        "count": 1
+      },
+      {
+        "bucket": "has_treatment claim->treatment_component",
+        "count": 1
+      },
+      {
+        "bucket": "has_treatment entity->metric_claim",
+        "count": 1
+      },
+      {
+        "bucket": "has_treatment event->treatment_component",
+        "count": 1
+      },
+      {
+        "bucket": "has_treatment route->treatment_component",
+        "count": 1
+      },
+      {
+        "bucket": "implemented_by corridor->entity",
+        "count": 1
+      },
+      {
+        "bucket": "implemented_by entity->entity",
+        "count": 1
+      },
+      {
+        "bucket": "implemented_by event->entity",
+        "count": 1
+      },
+      {
+        "bucket": "implemented_by source->entity",
+        "count": 1
+      },
+      {
+        "bucket": "implemented_by treatment_component->entity",
+        "count": 1
+      },
+      {
+        "bucket": "operated_by corridor->entity",
+        "count": 1
+      },
+      {
+        "bucket": "operated_by entity->entity",
+        "count": 1
+      },
+      {
+        "bucket": "operated_by entity->event",
+        "count": 1
+      },
+      {
+        "bucket": "operated_by treatment_component->entity",
+        "count": 1
+      },
+      {
+        "bucket": "operates_on_corridor entity->corridor",
+        "count": 1
+      },
+      {
+        "bucket": "operates_on_corridor project->entity",
+        "count": 1
+      },
+      {
+        "bucket": "owned_by corridor->entity",
+        "count": 1
+      },
+      {
+        "bucket": "owned_by event->entity",
+        "count": 1
+      },
+      {
+        "bucket": "owned_by source->entity",
+        "count": 1
+      },
+      {
+        "bucket": "part_of_program project->claim",
+        "count": 1
+      },
+      {
+        "bucket": "published_by claim->entity",
+        "count": 1
+      },
+      {
+        "bucket": "published_by entity->source",
+        "count": 1
+      },
+      {
+        "bucket": "published_by event->entity",
+        "count": 1
+      },
+      {
+        "bucket": "published_by metric_claim->source",
+        "count": 1
+      },
+      {
+        "bucket": "related_route project->project",
+        "count": 1
+      },
+      {
+        "bucket": "related_route project->route",
+        "count": 1
+      },
+      {
+        "bucket": "serves_route project->entity",
+        "count": 1
+      },
+      {
+        "bucket": "serves_route project->project",
+        "count": 1
+      }
+    ],
+    "tie_break_note": "Three buckets tie at count 2. The deterministic sorted inventory places has_timeline_event metric_claim->event first, and this shape has direct prior cleanup precedent in relation cleanup batches026 and 032."
+  },
+  "recommendation": {
+    "type": "data_cleanup",
+    "bucket": "has_timeline_event metric_claim->event",
+    "confidence": "high",
+    "reason": "The two remaining rows use a metric_claim as the subject of has_timeline_event. Metric claims are values or measurements, not durable timeline owners. The cited source links a procurement amount metric to committee and board approval dates, so the relationship should be represented as event/context supporting the metric claim rather than widening has_timeline_event to accept metric_claim subjects.",
+    "why_not_validator_rule_change": "A validator rule patch admitting has_timeline_event metric_claim->event would remove the same two issues, but it would validate metric-owned chronology. Prior next7 triage and applied batches026/032 explicitly kept metric_claim out of has_timeline_event subjects and used supports event->metric_claim replacements to preserve source-backed timeline context. Keeping that boundary preserves the validator signal.",
+    "proposed_mechanism": {
+      "retire_original_submissions": [
+        "sub_94089143e30d525a",
+        "sub_fb604596fd499a14"
+      ],
+      "replace_with": "Two relation submissions with relation_kind supports, reversed to event -> metric_claim, preserving the same source-backed approval-date evidence and the metric claim context.",
+      "suggested_run_id": "2026-06-22_codex_relation_cleanup_batch037_or_next_available",
+      "no_code_or_rule_change": true,
+      "expected_replacement_shapes": [
+        "supports event->metric_claim"
+      ]
+    },
+    "simulated_impact": {
+      "remaining_unexpected_relation_endpoint_shape_before": 40,
+      "bucket_rows_removed_or_replaced": 2,
+      "remaining_after_bucket_cleanup": 38,
+      "percent_of_remaining_endpoint_shape_issues": 5.0
+    }
+  },
+  "representative_records": [
+    {
+      "record_id": "relation_meeting-doc-95301-procurement-board-meeting",
+      "submission_ids": [
+        "sub_94089143e30d525a"
+      ],
+      "source_id": "meeting_doc_95301",
+      "display_name": "Procurement action scheduled for Board meeting 9/21/22",
+      "current_relation_kind": "has_timeline_event",
+      "current_shape": "metric_claim->event",
+      "validator_message": "Relation kind has_timeline_event expects project|route|corridor|entity|source|event -> event, got metric_claim -> event.",
+      "subject": {
+        "record_id": "metric_meeting-doc-95301-8-2m-procurement",
+        "record_kind": "metric_claim",
+        "display_name": "Schedule H Procurement Amount - $8.2M",
+        "local_observation_id": "metric_claim_meeting_doc_95301_8_2m_procurement",
+        "payload_summary": {
+          "metric_name": "procurement_expenditure",
+          "raw_value_text": "$8.2M",
+          "description": "Proposed estimated expenditure for 1 action under Schedule H: Modifications to Personal/Miscellaneous Service Contracts.",
+          "value": 8.2,
+          "unit": "million USD"
+        }
+      },
+      "object": {
+        "record_id": "event_meeting-doc-95301-board-20220921",
+        "record_kind": "event",
+        "display_name": "Board Meeting - September 21, 2022",
+        "local_observation_id": "event_meeting_doc_95301_board_20220921",
+        "payload_summary": {
+          "event_kind": "board meeting",
+          "event_date": "9/21/22"
+        }
+      },
+      "evidence": [
+        {
+          "evidence_id": "meeting_doc_95301#p003_c0001",
+          "block_id": "p003_c0001",
+          "page_number": 3,
+          "source_path": "raw/sources/meeting_doc_95301/blocks.jsonl",
+          "block_excerpt": "Board Action Order To Date Approval Info Other 1 Committee 9/19/22 2 Board 9/21/22"
+        },
+        {
+          "evidence_id": "meeting_doc_95301#p002_c0003",
+          "block_id": "p002_c0003",
+          "page_number": 2,
+          "source_path": "raw/sources/meeting_doc_95301/blocks.jsonl",
+          "block_excerpt": "The Procurement Agenda this month includes 1 action for a proposed estimated expenditure of $8.2M."
+        },
+        {
+          "evidence_id": "meeting_doc_95301#p003_c0009",
+          "block_id": "p003_c0009",
+          "page_number": 3,
+          "source_path": "raw/sources/meeting_doc_95301/blocks.jsonl",
+          "block_excerpt": "Schedule H: Modifications to Personal/Miscellaneous Service Contracts 1 $ 8.2 M"
+        }
+      ],
+      "recommended_replacement": {
+        "relation_kind": "supports",
+        "shape": "event->metric_claim",
+        "subject_local_observation_id": "event_meeting_doc_95301_board_20220921",
+        "object_local_observation_id": "metric_claim_meeting_doc_95301_8_2m_procurement",
+        "description": "The September 21, 2022 Board meeting approval context supports the Schedule H $8.2M procurement expenditure metric claim."
+      }
+    },
+    {
+      "record_id": "relation_meeting-doc-95301-procurement-committee-meeting",
+      "submission_ids": [
+        "sub_fb604596fd499a14"
+      ],
+      "source_id": "meeting_doc_95301",
+      "display_name": "Procurement action scheduled for Committee meeting 9/19/22",
+      "current_relation_kind": "has_timeline_event",
+      "current_shape": "metric_claim->event",
+      "validator_message": "Relation kind has_timeline_event expects project|route|corridor|entity|source|event -> event, got metric_claim -> event.",
+      "subject": {
+        "record_id": "metric_meeting-doc-95301-8-2m-procurement",
+        "record_kind": "metric_claim",
+        "display_name": "Schedule H Procurement Amount - $8.2M",
+        "local_observation_id": "metric_claim_meeting_doc_95301_8_2m_procurement",
+        "payload_summary": {
+          "metric_name": "procurement_expenditure",
+          "raw_value_text": "$8.2M",
+          "description": "Proposed estimated expenditure for 1 action under Schedule H: Modifications to Personal/Miscellaneous Service Contracts.",
+          "value": 8.2,
+          "unit": "million USD"
+        }
+      },
+      "object": {
+        "record_id": "event_meeting-doc-95301-committee-20220919",
+        "record_kind": "event",
+        "display_name": "MTAHQ Committee Meeting - September 19, 2022",
+        "local_observation_id": "event_meeting_doc_95301_committee_20220919",
+        "payload_summary": {
+          "event_kind": "committee meeting",
+          "event_date": "9/19/22"
+        }
+      },
+      "evidence": [
+        {
+          "evidence_id": "meeting_doc_95301#p003_c0001",
+          "block_id": "p003_c0001",
+          "page_number": 3,
+          "source_path": "raw/sources/meeting_doc_95301/blocks.jsonl",
+          "block_excerpt": "Board Action Order To Date Approval Info Other 1 Committee 9/19/22 2 Board 9/21/22"
+        },
+        {
+          "evidence_id": "meeting_doc_95301#p002_c0003",
+          "block_id": "p002_c0003",
+          "page_number": 2,
+          "source_path": "raw/sources/meeting_doc_95301/blocks.jsonl",
+          "block_excerpt": "The Procurement Agenda this month includes 1 action for a proposed estimated expenditure of $8.2M."
+        },
+        {
+          "evidence_id": "meeting_doc_95301#p003_c0009",
+          "block_id": "p003_c0009",
+          "page_number": 3,
+          "source_path": "raw/sources/meeting_doc_95301/blocks.jsonl",
+          "block_excerpt": "Schedule H: Modifications to Personal/Miscellaneous Service Contracts 1 $ 8.2 M"
+        }
+      ],
+      "recommended_replacement": {
+        "relation_kind": "supports",
+        "shape": "event->metric_claim",
+        "subject_local_observation_id": "event_meeting_doc_95301_committee_20220919",
+        "object_local_observation_id": "metric_claim_meeting_doc_95301_8_2m_procurement",
+        "description": "The September 19, 2022 MTAHQ Committee meeting context supports the Schedule H $8.2M procurement expenditure metric claim."
+      }
+    }
+  ],
+  "precedent_evidence": {
+    "prior_triage": "data/review_notes/codex-relation-rule-or-data-next7-prep.json",
+    "applied_batches": [
+      "batch026",
+      "batch032"
+    ],
+    "summary": "Earlier triage and applied cleanup batches treated has_timeline_event metric_claim->event as data cleanup, not a validator rule patch. Batches026 and 032 retired malformed metric-claim-owned timeline relations and replaced them with supports event->metric_claim rows.",
+    "why_same_mechanism_applies": "The meeting_doc_95301 rows likewise link an event date to a metric claim rather than making the metric claim a timeline-bearing subject."
+  },
+  "command_evidence": [
+    {
+      "command": "test ! -e data/review_notes/codex-relation-rule-or-data-next13-prep.json && echo ok || echo exists",
+      "output": "ok"
+    },
+    {
+      "command": "rg --files data/review_notes data/submissions data/submission-overrides | sort | rg 'relation.*(035|036)|batch03[56]|missing.*target|target_repair|repair'",
+      "output": "data/review_notes/codex-relation-cleanup-batch035-prep.json\ndata/review_notes/codex-relation-cleanup-batch036-prep.json\ndata/submissions/2026-06-22_codex_relation_cleanup_batch035.jsonl\ndata/submissions/2026-06-22_codex_relation_cleanup_batch036.jsonl\ndata/submissions/2026-06-22_codex_relation_missing_target_repair001.jsonl"
+    },
+    {
+      "command": "rg -n \"batch03[56]|relation03[56]|missing[_ -]target|target_repair|repair00|wave28\" data/review_notes data/submissions data/submission-overrides/retired.json LOG.md -g '*.md' -g '*.json' -g '*.jsonl'",
+      "output_excerpt": "retired.json contains batch035 retire reasons for sub_e688683abfd90042 and sub_e38ca2e1f6405d00, and batch036 retire reasons for sub_1e3da7df51269b6f and sub_3bd1215592595d96. Batch035/036 replacement journals are present. LOG records the wave28 checkpoint and unexpected_relation_endpoint_shape=40."
+    },
+    {
+      "command": "git status --short -- data/review_notes/codex-relation-rule-or-data-next13-prep.json data/review_notes data/submission-overrides/retired.json data/submissions packages/pipeline/src/records/relations.ts packages/pipeline/test/records/relations.test.ts",
+      "output_excerpt": "Very dirty worktree with existing modified retired.json and relation validator files plus many untracked review notes/submissions; data/review_notes/codex-relation-rule-or-data-next13-prep.json did not exist before this task."
+    },
+    {
+      "command": "bun --eval '<readCanonicalRecords + relationEndpointShapeIssue inventory excluding batches017-036 and missing-target repairs>'",
+      "output_excerpt": "excluded_submission_count=179; excluded_record_count=91; total=40; top buckets: has_timeline_event metric_claim->event=2, implemented_by route->entity=2, part_of_program event->entity=2"
+    },
+    {
+      "command": "rg -n '\"block_id\":\"p003_c0001\"|\"block_id\":\"p003_c0002\"|\"block_id\":\"p003_c0003\"|\"block_id\":\"p003_c0004\"|\"block_id\":\"p003_c0005\"' raw/sources/meeting_doc_95301/blocks.jsonl",
+      "output_excerpt": "p003_c0001 contains 'Board Action Order To Date Approval Info Other 1 Committee 9/19/22 2 Board 9/21/22'; p003_c0005 says the purpose is to obtain Board approval and inform the MTAHQ Committee of procurement actions."
+    },
+    {
+      "command": "bun --eval '<print canonical records for relation_meeting-doc-95301-procurement-board-meeting, relation_meeting-doc-95301-procurement-committee-meeting, metric/event/source endpoints>'",
+      "output_excerpt": "Confirmed both relations have relation_kind has_timeline_event with subject metric_meeting-doc-95301-8-2m-procurement and event objects. Metric payload is procurement_expenditure, raw_value_text $8.2M. Event endpoints are Board Meeting - September 21, 2022 and MTAHQ Committee Meeting - September 19, 2022."
+    },
+    {
+      "command": "bun --eval '<relationEndpointShapeIssue probes for has_timeline_event/supports/related_to/has_metric shapes>'",
+      "output": "has_timeline_event metric_claim->event: Relation kind has_timeline_event expects project|route|corridor|entity|source|event -> event, got metric_claim -> event.\nhas_metric event->metric_claim: ok\nrelated_to metric_claim->event: ok\nrelated_to event->metric_claim: ok\nincludes source->metric_claim: ok\nhas_claim event->claim: ok"
+    },
+    {
+      "command": "rg -n 'meeting-doc-95301|95301|metric_claim->event|metric_claim -> event|has_timeline_event metric' data/review_notes data/submissions data/submission-overrides/retired.json",
+      "output_excerpt": "Prior next7 triage says do not widen has_timeline_event to accept metric_claim subjects; batch026 and batch032 retired metric_claim->event timeline rows and replaced them with supports event->metric_claim."
+    },
+    {
+      "command": "bun --eval '<concise bucket-count inventory excluding batches017-036 and missing-target repairs>'",
+      "output_excerpt": "excluded_submission_count=179; excluded_record_count=91; total=40; full sorted bucket list begins has_timeline_event metric_claim->event=2, implemented_by route->entity=2, part_of_program event->entity=2, then thirty-four singleton buckets."
+    },
+    {
+      "command": "rg -n '\"block_id\":\"p002_c0003\"|\"block_id\":\"p003_c0009\"' raw/sources/meeting_doc_95301/blocks.jsonl",
+      "output_excerpt": "p002_c0003: 'The Procurement Agenda this month includes 1 action for a proposed estimated expenditure of $8.2M.' p003_c0009: 'Schedule H: Modifications to Personal/Miscellaneous Service Contracts 1 $ 8.2 M SUBTOTAL 1 $ 8.2 M'"
+    },
+    {
+      "command": "jq '{note_id,batch,bucket,prepared_count:(.prepared|length),recommendation,summary}' data/review_notes/codex-relation-cleanup-batch026-prep.json data/review_notes/codex-relation-cleanup-batch032-prep.json | sed -n '1,220p'",
+      "output_excerpt": "batch026 and batch032 both name the original endpoint shape metric_claim -> event, replacement_relation_kind supports, replacement_endpoint_shape event -> metric_claim, and explain that metric claims are not timeline owners."
+    },
+    {
+      "command": "sed -n '4448,4478p' LOG.md",
+      "output_excerpt": "LOG states the wave28 checkpoint completed and validate remains at 1,609 issues with unexpected_relation_endpoint_shape=40; wave29 dry-run reports nothing to ingest."
+    },
+    {
+      "command": "jq empty data/review_notes/codex-relation-rule-or-data-next13-prep.json && jq '{type:.recommendation.type,bucket:.recommendation.bucket,total:.remaining_bucket_counts_after_exclusions.unexpected_relation_endpoint_shape_total,top:.remaining_bucket_counts_after_exclusions.top_buckets[0],remaining:.recommendation.simulated_impact.remaining_after_bucket_cleanup,commands:(.commands_run|length)}' data/review_notes/codex-relation-rule-or-data-next13-prep.json",
+      "output": "{\n  \"type\": \"data_cleanup\",\n  \"bucket\": \"has_timeline_event metric_claim->event\",\n  \"total\": 40,\n  \"top\": {\n    \"bucket\": \"has_timeline_event metric_claim->event\",\n    \"count\": 2\n  },\n  \"remaining\": 38,\n  \"commands\": 17\n}"
+    },
+    {
+      "command": "git status --short -- data/review_notes/codex-relation-rule-or-data-next13-prep.json",
+      "output": "?? data/review_notes/codex-relation-rule-or-data-next13-prep.json"
+    },
+    {
+      "command": "git diff --no-index --check /dev/null data/review_notes/codex-relation-rule-or-data-next13-prep.json",
+      "output": "No whitespace warnings printed; command exited 1 because --no-index reports differences for the added file."
+    }
+  ],
+  "commands_run": [
+    "test ! -e data/review_notes/codex-relation-rule-or-data-next13-prep.json && echo ok || echo exists",
+    "rg --files data/review_notes data/submissions data/submission-overrides | sort | rg 'relation.*(035|036)|batch03[56]|missing.*target|target_repair|repair'",
+    "rg -n \"batch03[56]|relation03[56]|missing[_ -]target|target_repair|repair00|wave28\" data/review_notes data/submissions data/submission-overrides/retired.json LOG.md -g '*.md' -g '*.json' -g '*.jsonl'",
+    "git status --short -- data/review_notes/codex-relation-rule-or-data-next13-prep.json data/review_notes data/submission-overrides/retired.json data/submissions packages/pipeline/src/records/relations.ts packages/pipeline/test/records/relations.test.ts",
+    "bun --eval '<readCanonicalRecords + relationEndpointShapeIssue inventory excluding batches017-036 and missing-target repairs>'",
+    "rg -n '\"block_id\":\"p003_c0001\"|\"block_id\":\"p003_c0002\"|\"block_id\":\"p003_c0003\"|\"block_id\":\"p003_c0004\"|\"block_id\":\"p003_c0005\"' raw/sources/meeting_doc_95301/blocks.jsonl",
+    "bun --eval '<print canonical records for relation_meeting-doc-95301-procurement-board-meeting, relation_meeting-doc-95301-procurement-committee-meeting, metric/event/source endpoints>'",
+    "bun --eval '<relationEndpointShapeIssue probes for has_timeline_event/supports/related_to/has_metric shapes>'",
+    "rg -n 'meeting-doc-95301|95301|metric_claim->event|metric_claim -> event|has_timeline_event metric' data/review_notes data/submissions data/submission-overrides/retired.json",
+    "bun --eval '<concise bucket-count inventory excluding batches017-036 and missing-target repairs>'",
+    "rg -n '\"block_id\":\"p002_c0003\"|\"block_id\":\"p003_c0009\"' raw/sources/meeting_doc_95301/blocks.jsonl",
+    "jq '{note_id,batch,bucket,prepared_count:(.prepared|length),recommendation,summary}' data/review_notes/codex-relation-cleanup-batch026-prep.json data/review_notes/codex-relation-cleanup-batch032-prep.json | sed -n '1,220p'",
+    "sed -n '4448,4478p' LOG.md",
+    "date -u +%Y-%m-%dT%H:%M:%SZ",
+    "jq empty data/review_notes/codex-relation-rule-or-data-next13-prep.json && jq '{type:.recommendation.type,bucket:.recommendation.bucket,total:.remaining_bucket_counts_after_exclusions.unexpected_relation_endpoint_shape_total,top:.remaining_bucket_counts_after_exclusions.top_buckets[0],remaining:.recommendation.simulated_impact.remaining_after_bucket_cleanup,commands:(.commands_run|length)}' data/review_notes/codex-relation-rule-or-data-next13-prep.json",
+    "git status --short -- data/review_notes/codex-relation-rule-or-data-next13-prep.json",
+    "git diff --no-index --check /dev/null data/review_notes/codex-relation-rule-or-data-next13-prep.json"
+  ],
+  "blockers": [],
+  "next_action": "Prepare a narrow data cleanup batch retiring the two meeting_doc_95301 has_timeline_event metric_claim->event submissions and replacing them with supports event->metric_claim submissions. Do not mutate validator rules for this bucket."
+}

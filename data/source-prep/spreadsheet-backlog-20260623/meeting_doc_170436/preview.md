@@ -1,0 +1,46 @@
+# Spreadsheet source-prep preview: meeting_doc_170436
+
+- Status: ok
+- Run: spreadsheet-backlog-20260623
+- Source: raw/sources/meeting_doc_170436/source.xlsx
+- Title: April 2025 fuel hedges
+
+## Sheet1
+
+- Sheet path: xl/worksheets/sheet1.xml
+- Rows: 31
+- Cells: 156
+
+| Row | Cells |
+| --- | --- |
+| 1 | A1=Fuel Hedging Program: Active Ultra-Low Sulfur Diesel (ULSD) Hedges<br>B1=<br>C1=<br>D1=<br>E1=<br>F1= |
+| 2 | A2=Date<br>B2=Gallons Hedged<br>C2=Percent of Expected Gallons Purchased*<br>D2=Weighted Average Hedge Price for Each Month<br>E2=2025 Adopted Budget (February Plan) Forecasted Commodity Price |
+| 3 | A3=<br>B3=<br>C3=<br>D3=<br>E3= |
+| 4 | A4=45748<br>B4=2443787<br>C4=49.999986072779656<br>D4=2.4630946032530661<br>E4=2.1800000000000002 |
+| 5 | A5=45778<br>B5=2584179<br>C5=49.999985391063227<br>D5=2.4777241661665084<br>E5=2.1800000000000002 |
+| 6 | A6=45809<br>B6=2645466<br>C6=49.999995849156086<br>D6=2.4929635813501294<br>E6=2.1800000000000002 |
+| 7 | A7=45839<br>B7=2556244<br>C7=49.999989958754902<br>D7=2.4746140789376914<br>E7=2.1800000000000002 |
+| 8 | A8=45870<br>B8=2649408<br>C8=49.999991464193094<br>D8=2.4530918433476456<br>E8=2.1800000000000002 |
+| 9 | A9=45901<br>B9=2443308<br>C9=49.999987316145308<br>D9=2.4152655232578124<br>E9=2.1800000000000002 |
+| 10 | A10=45931<br>B10=2466371<br>C10=49.999990939724974<br>D10=2.3865156870154576<br>E10=2.1800000000000002 |
+| 11 | A11=45962<br>B11=2387391<br>C11=49.999995660559833<br>D11=2.3615651238108883<br>E11=2.1800000000000002 |
+| 12 | A12=45992<br>B12=2503697<br>C12=49.99998728764885<br>D12=2.3390759676989674<br>E12=2.1800000000000002 |
+| 13 | A13=46023<br>B13=2648076<br>C13=49.99999026212943<br>D13=2.3211977833717765<br>E13=2.1800000000000002 |
+| 14 | A14=46054<br>B14=2394465<br>C14=49.999998512507801<br>D14=2.3072056795150484<br>E14=2.1800000000000002 |
+| 15 | A15=46082<br>B15=2697726<br>C15=49.999999615774932<br>D15=2.2849440114377817<br>E15=2.1800000000000002 |
+| 16 | A16=46113<br>B16=2240122<br>C16=45.832991501029881<br>D16=2.2687407401918294<br>E16=2.1800000000000002 |
+| 17 | A17=46143<br>B17=2153448<br>C17=41.665986969329268<br>D17=2.2528884955197435<br>E17=2.1800000000000002 |
+| 18 | A18=46174<br>B18=1984046<br>C18=37.498985722944369<br>D18=2.2281215772214957<br>E18=2.1800000000000002 |
+| 19 | A19=46204<br>B19=1704094<br>C19=33.331983523002684<br>D19=2.2143908983894085<br>E19=2.1800000000000002 |
+| 20 | A20=46235<br>B20=1545399<br>C20=29.164982067228806<br>D20=2.2035990964792909<br>E20=2.1800000000000002 |
+| 21 | A21=46266<br>B21=1221556<br>C21=24.997988180761986<br>D21=2.2024430160385604<br>E21=2.1800000000000002 |
+| 22 | A22=46296<br>B22=1027539<br>C22=20.830986372372227<br>D22=2.1937397400001362<br>E22=2.1800000000000002 |
+| 23 | A23=46327<br>B23=795669<br>C23=16.66398446975882<br>D23=2.1933837798129625<br>E23=2.1800000000000002 |
+| 24 | A24=46357<br>B24=625774<br>C24=12.49699625990732<br>D24=2.2055602778319328<br>E24=2.1800000000000002 |
+| 25 | A25=46388<br>B25=441169<br>C25=8.3299896619105258<br>D25=2.1955910197679351<br>E25=2.16 |
+| 26 | A26=46419<br>B26=199363<br>C26=4.1629966207270073<br>D26=2.1769999999999996<br>E26=2.16 |
+| 28 | A28=*MTA’s fuel hedging program mitigates budget risk by dollar cost averaging approximately 50% of projected fuel expenses. The goal of the program is to be 50% hedged for the next 12 months. Monthly hedges are equal to approximately  4% of the projected fuel purchases expected to occur 13-24 months from each hedge execution date. The actual  percentage hedged could be higher or lower than the 50% target depending on the actual levels of fuel consumption. While the fuel heding program includes compressed natrual gas, there are currently no actve hedges.<br>B28=<br>C28=<br>D28=<br>E28= |
+| 29 | A29=<br>B29=<br>C29=<br>D29=<br>E29= |
+| 30 | A30=<br>B30=<br>C30=<br>D30=<br>E30= |
+| 31 | A31=<br>B31=<br>C31=<br>D31=<br>E31= |
+| 32 | A32=<br>B32=<br>C32=<br>D32=<br>E32= |

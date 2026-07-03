@@ -1,0 +1,149 @@
+{
+  "run_id": "2026-06-10T22-15-02-418Z_identity-review-run",
+  "generated_at": "2026-06-10T22:15:02.418Z",
+  "dry_run": true,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 4,
+  "packet_count": 16,
+  "completed": 0,
+  "skipped": 0,
+  "failed": 0,
+  "paths": {
+    "suggestions_dir": "data/identity-review/llm-suggestions",
+    "review_runs_dir": "data/identity-review/llm-suggestions/review-runs",
+    "manifest": "data/identity-review/llm-suggestions/review-runs/2026-06-10T22-15-02-418Z_identity-review-run.json",
+    "latest": "data/identity-review/llm-suggestions/review-runs/latest.json"
+  },
+  "results": [
+    {
+      "cluster_id": "route_cluster_3bb73bbedf",
+      "packet_path": "data/identity-review/packets/route_cluster_3bb73bbedf.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_3bb73bbedf.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T22-15-02-419Z_1943097-34348c1b_identity-review-run_route-cluster-3bb73bbedf",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-10T22-15-02-420Z_2026-06-10T22-15-02-419Z_1943097-34348c1b_identity-review-run_route-cluster-3bb73bbedf.jsonl",
+      "status": "planned"
+    },
+    {
+      "cluster_id": "route_cluster_623c296136",
+      "packet_path": "data/identity-review/packets/route_cluster_623c296136.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_623c296136.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T22-15-02-420Z_1943097-bf9cb81b_identity-review-run_route-cluster-623c296136",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-10T22-15-02-420Z_2026-06-10T22-15-02-420Z_1943097-bf9cb81b_identity-review-run_route-cluster-623c296136.jsonl",
+      "status": "planned"
+    },
+    {
+      "cluster_id": "route_cluster_67da6e1a68",
+      "packet_path": "data/identity-review/packets/route_cluster_67da6e1a68.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_67da6e1a68.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T22-15-02-420Z_1943097-fb7008f6_identity-review-run_route-cluster-67da6e1a68",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-10T22-15-02-420Z_2026-06-10T22-15-02-420Z_1943097-fb7008f6_identity-review-run_route-cluster-67da6e1a68.jsonl",
+      "status": "planned"
+    },
+    {
+      "cluster_id": "route_cluster_b07de8d064",
+      "packet_path": "data/identity-review/packets/route_cluster_b07de8d064.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_b07de8d064.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T22-15-02-420Z_1943097-100e9ae2_identity-review-run_route-cluster-b07de8d064",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-10T22-15-02-420Z_2026-06-10T22-15-02-420Z_1943097-100e9ae2_identity-review-run_route-cluster-b07de8d064.jsonl",
+      "status": "planned"
+    },
+    {
+      "cluster_id": "corridor_cluster_7d46e2b733",
+      "packet_path": "data/identity-review/packets/corridor_cluster_7d46e2b733.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_7d46e2b733.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T22-15-02-443Z_1943097-a74bd262_identity-review-run_corridor-cluster-7d46e2b733",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-10T22-15-02-443Z_2026-06-10T22-15-02-443Z_1943097-a74bd262_identity-review-run_corridor-cluster-7d46e2b733.jsonl",
+      "status": "planned"
+    },
+    {
+      "cluster_id": "corridor_cluster_4ac8a7cd38",
+      "packet_path": "data/identity-review/packets/corridor_cluster_4ac8a7cd38.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_4ac8a7cd38.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T22-15-02-444Z_1943097-243d0730_identity-review-run_corridor-cluster-4ac8a7cd38",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-10T22-15-02-444Z_2026-06-10T22-15-02-444Z_1943097-243d0730_identity-review-run_corridor-cluster-4ac8a7cd38.jsonl",
+      "status": "planned"
+    },
+    {
+      "cluster_id": "corridor_cluster_9523db7ca6",
+      "packet_path": "data/identity-review/packets/corridor_cluster_9523db7ca6.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_9523db7ca6.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T22-15-02-444Z_1943097-a4264a67_identity-review-run_corridor-cluster-9523db7ca6",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-10T22-15-02-444Z_2026-06-10T22-15-02-444Z_1943097-a4264a67_identity-review-run_corridor-cluster-9523db7ca6.jsonl",
+      "status": "planned"
+    },
+    {
+      "cluster_id": "entity_cluster_577b709b51",
+      "packet_path": "data/identity-review/packets/entity_cluster_577b709b51.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_577b709b51.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T22-15-02-444Z_1943097-bcab4912_identity-review-run_entity-cluster-577b709b51",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-10T22-15-02-444Z_2026-06-10T22-15-02-444Z_1943097-bcab4912_identity-review-run_entity-cluster-577b709b51.jsonl",
+      "status": "planned"
+    },
+    {
+      "cluster_id": "route_cluster_36310c6b3a",
+      "packet_path": "data/identity-review/packets/route_cluster_36310c6b3a.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_36310c6b3a.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T22-15-02-445Z_1943097-e7fe609f_identity-review-run_route-cluster-36310c6b3a",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-10T22-15-02-445Z_2026-06-10T22-15-02-445Z_1943097-e7fe609f_identity-review-run_route-cluster-36310c6b3a.jsonl",
+      "status": "planned"
+    },
+    {
+      "cluster_id": "route_cluster_30eb52a720",
+      "packet_path": "data/identity-review/packets/route_cluster_30eb52a720.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_30eb52a720.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T22-15-02-445Z_1943097-75d01cce_identity-review-run_route-cluster-30eb52a720",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-10T22-15-02-445Z_2026-06-10T22-15-02-445Z_1943097-75d01cce_identity-review-run_route-cluster-30eb52a720.jsonl",
+      "status": "planned"
+    },
+    {
+      "cluster_id": "corridor_cluster_35d900266b",
+      "packet_path": "data/identity-review/packets/corridor_cluster_35d900266b.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_35d900266b.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T22-15-02-445Z_1943097-52904f9c_identity-review-run_corridor-cluster-35d900266b",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-10T22-15-02-445Z_2026-06-10T22-15-02-445Z_1943097-52904f9c_identity-review-run_corridor-cluster-35d900266b.jsonl",
+      "status": "planned"
+    },
+    {
+      "cluster_id": "corridor_cluster_6fa803cc3c",
+      "packet_path": "data/identity-review/packets/corridor_cluster_6fa803cc3c.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_6fa803cc3c.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T22-15-02-445Z_1943097-ef4d02c4_identity-review-run_corridor-cluster-6fa803cc3c",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-10T22-15-02-445Z_2026-06-10T22-15-02-445Z_1943097-ef4d02c4_identity-review-run_corridor-cluster-6fa803cc3c.jsonl",
+      "status": "planned"
+    },
+    {
+      "cluster_id": "corridor_cluster_087b312768",
+      "packet_path": "data/identity-review/packets/corridor_cluster_087b312768.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_087b312768.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T22-15-02-446Z_1943097-7fd797ed_identity-review-run_corridor-cluster-087b312768",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-10T22-15-02-446Z_2026-06-10T22-15-02-446Z_1943097-7fd797ed_identity-review-run_corridor-cluster-087b312768.jsonl",
+      "status": "planned"
+    },
+    {
+      "cluster_id": "corridor_cluster_e2b5809961",
+      "packet_path": "data/identity-review/packets/corridor_cluster_e2b5809961.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_e2b5809961.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T22-15-02-446Z_1943097-7153595d_identity-review-run_corridor-cluster-e2b5809961",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-10T22-15-02-446Z_2026-06-10T22-15-02-446Z_1943097-7153595d_identity-review-run_corridor-cluster-e2b5809961.jsonl",
+      "status": "planned"
+    },
+    {
+      "cluster_id": "corridor_cluster_13c596a458",
+      "packet_path": "data/identity-review/packets/corridor_cluster_13c596a458.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_13c596a458.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T22-15-02-446Z_1943097-5c27ad3f_identity-review-run_corridor-cluster-13c596a458",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-10T22-15-02-446Z_2026-06-10T22-15-02-446Z_1943097-5c27ad3f_identity-review-run_corridor-cluster-13c596a458.jsonl",
+      "status": "planned"
+    },
+    {
+      "cluster_id": "corridor_cluster_10a61c45f9",
+      "packet_path": "data/identity-review/packets/corridor_cluster_10a61c45f9.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_10a61c45f9.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-10T22-15-02-446Z_1943097-e421cb12_identity-review-run_corridor-cluster-10a61c45f9",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-10T22-15-02-446Z_2026-06-10T22-15-02-446Z_1943097-e421cb12_identity-review-run_corridor-cluster-10a61c45f9.jsonl",
+      "status": "planned"
+    }
+  ]
+}

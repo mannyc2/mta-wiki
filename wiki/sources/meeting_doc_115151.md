@@ -1,0 +1,223 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-115151"
+record_kind: "source"
+display_name: "RETAIL DEVELOPMENT AT GRAND CENTRAL TERMINAL 2022 ANNUAL REPORT"
+source_id: "meeting_doc_115151"
+source_ids:
+  - "meeting_doc_115151"
+local_observation_id: "source_gct_retail_annual_report_2022"
+local_observation_ids:
+  - "source_gct_retail_annual_report_2022"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T12:17:13.280Z"
+submission_ids:
+  - "sub_2d38d447b5ef49a4"
+payload:
+  authority_tier: "plan_document"
+  content_type: "annual report"
+  date_text: "July 2023"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2023-07"
+    precision: "month"
+    raw_text: "July 2023"
+  description: "2022 annual report on retail development at Grand Central Terminal covering leasing, sales, capital projects, marketing, events, and social media."
+  published_date_normalized: "2023-07"
+  published_date_precision: "month"
+  publisher: "Grand Central Terminal"
+  title: "RETAIL DEVELOPMENT AT GRAND CENTRAL TERMINAL 2022 ANNUAL REPORT"
+evidence_refs:
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_115151#p001_c0003"
+    page_number: 1
+    role: "title"
+    source_id: "meeting_doc_115151"
+    source_path: "raw/sources/meeting_doc_115151/blocks.jsonl"
+    text_sha256: "sha256:36a8d139eedd129e0bb7ec439e370a21c1e0bdec65fc776bea1f84474eb7ee10"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_115151#p001_c0004"
+    page_number: 1
+    role: "date"
+    source_id: "meeting_doc_115151"
+    source_path: "raw/sources/meeting_doc_115151/blocks.jsonl"
+    source_quote: "July 2023"
+    text_sha256: "sha256:7240216fa48cd9b57d018d5d165164dc6517bcef74dc1e420b0bad343d97d3e7"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0008"
+    evidence_id: "meeting_doc_115151#p002_c0008"
+    page_number: 2
+    role: "date_detail"
+    source_id: "meeting_doc_115151"
+    source_path: "raw/sources/meeting_doc_115151/blocks.jsonl"
+    source_quote: "Page 2 July 19, 2023"
+    text_sha256: "sha256:2d01a066eb58ca3aa34c648f2037de1af7efc9d231748101841f1ea0892f6ecb"
+    text_source: "raw_text"
+---
+
+# Grand Central retail development
+
+source_id: meeting_doc_115151
+citation: cite block ids exactly as shown in square brackets
+document: 90 block(s)
+
+## Page 1
+
+> [p001_c0001] The logo is a circular emblem. It features a stylized, interlocking design of the letters 'G' and 'C'. The 'G' is on the left and the 'C' is on the right, with their curves meeting in the center. The design is rendered in a dark color, possibly black or dark blue, against a light background. The entire emblem is enclosed within a thin circular border.
+### [p001_c0002] GRAND CENTRAL
+### [p001_c0003] RETAIL DEVELOPMENT AT GRAND CENTRAL TERMINAL 2022 ANNUAL REPORT
+[p001_c0004] July 2023
+
+## Page 2
+
+### [p002_c0001] GENERAL SUMMARY
+[p002_c0002] 2022 started with Covid-19 Omicron, another pandemic surge that extended the public restrictions, social distancing, and work-from-home policies that directly impacted retail. As the Omicron surge subsided and the City and State began rolling back restrictions, commerce and pedestrian traffic through the city's main transportation centers began to increase. Though tourism increased as people became more comfortable with traveling again, MTA ridership has persistently hovered below pre-Covid numbers. This reduction of regular commuters has made recovery to 2019 retail revenue levels more difficult to achieve.
+[p002_c0003] As MNR neared 70% week-day average ridership and pedestrian patterns at Grand Central Terminal improved gradually throughout the year, the increase in traffic did not necessarily result in a proportionate increase in sales for GCT tenants. In addition to sales that generally lagged behind pre-Covid numbers, inflationary demands drove up tenants' costs of goods and labor shortages impacted tenants' abilities to maintain or increase operating hours. The Board approved Temporary Rent Adjustment Agreement (TRAA) rent relief program was successful in aligning tenant occupancy costs with sales expectations and has played an influential role in tenants' ability to stabilize and recover.
+[p002_c0004] Throughout 2022, GCT continued implementing three-year licenses at competitive rents to both incumbent and prospective tenants. Granting short-term licenses in lieu of long-term leases provided for more flexibility in negotiating new deals, keeps existing tenants open in place, and helps in establishing a higher baseline for soliciting long term deals in the future. The market has been receptive to this approach, and twelve new deals were signed in 2022 with another eight under negotiation at year's end.
+[p002_c0005] There was an 85% year-over-year increase in comparative sales that indicates a healthy rebound for over 2021 sales figures but still remains well below 2019 pre-Covid levels. And while the high cost of both labor and goods has had an impact on the profit margins realized by the tenants, the increased comparative sales are an encouraging sign. However, with the TRAA in effect, vacancies yet to backfill, and 2022 rent commencement dates landing in Q3/Q4, the total gross revenue for 2022 remained stagnant at $19M.
+[p002_c0006] It is expected that GCT will realize a significant increase in gross revenue in 2023 as additional deals are executed, vacancies decrease, and percentage rent payments go up along with rising sales. As we move forward in shaping the retail recovery at GCT, our goal is to complete the transition away from Covid-era encumbrances and return to full vibrancy.
+[p002_c0007] _RETAIL DEVELOPMENT AT GRAND CENTRAL TERMINAL 2022 ANNUAL REPORT_
+[p002_c0008] _Page 2 July 19, 2023_
+
+## Page 3
+
+### [p003_c0001] RETAIL CAPITAL PROJECTS
+[p003_c0002] During 2022, MTA Real Estate and Metro-North continued a pre-existing project to upgrade the duct and ventilation infrastructure supporting the food uses in the Dining Concourse. Originally designed and constructed in the late 1990's as part of the Terminals restoration, the ventilation system requires a material state of good repair (SGR) effort to update its functionality and compliance with updated New York State fire/life safety code.
+[p003_c0003] The phase of this SGR effort noted below is the creation of platforms within the duct risers up to the Terminal's roof. This will facilitate a better cleaning rigor for the ducts to increase effectiveness and prevent fire.
+[p003_c0004]
+
+```text
+Description Amount GCT Grease Duct Platform Project $1,185,515 Total Capital Projects $ 1,185,515
+```
+[p003_c0005] Looking ahead into Phase II of this project, using access made possible by installation of the platforms, a thorough survey and evaluation of the kitchen exhaust duct system will be able to be performed to assess the integrity of the ductwork and determine if repair work is required to maintain a state-of-good-repair status.
+[p003_c0006] _RETAIL DEVELOPMENT AT GRAND CENTRAL TERMINAL 2022 ANNUAL REPORT_
+[p003_c0007] _Page 3 July 19, 2023_
+
+## Page 4
+
+### [p004_c0001] LEASING ACTIVITY
+[p004_c0002] While the end of 2021 had shown some promise in recovering from the store closures of 2020, leasing activity slowed a bit in 2022 with uncertainty rebounding during the early 2022 Omicron surge. Nonetheless, GCT opened 10 new retail units in 2022, and negotiated deals with five new tenants for anticipated 2023 openings. GCT did, however, take a hit with 2 stores closing and a third, Rite-Aid, announcing its plans to close its GCT location in early 2024.
+### [p004_c0003] TRANSACTIONS ENTERED INTO DURING 2022:
+[p004_c0004]
+
+```text
+Leases Signed No leases were signed in 2022 Licenses Signed Karma & Luck March 3, 2022 Leather Spa March 3, 2022 Luke's Lobster March 30, 2022 City Winery May 11, 2022 Zaro's (main concourse) June 13, 2022 Zaro's (dining concourse) June 13, 2022 Blen Cuit August 10, 2022 Damselfly August 24, 2022 Lululemon September 23, 2022 Moleskine (sub-lease) September 13, 2022 Stroopwafel September 23, 2022 Hornblower (Walks) Tours October 28, 2022 Leases in Negotiation None Licenses in Negotiation Veselka (signed February 3, 2023) Frankie's Dogs (signed May 11, 2023) PiQ (signed March 24, 2023) Banana Republic Starbucks Pescatore Seafood El's Bread El's Farm to Table
+```
+[p004_c0005] _RETAIL DEVELOPMENT AT GRAND CENTRAL TERMINAL 2022 ANNUAL REPORT_
+[p004_c0006] _Page 4 July 19, 2023_
+
+## Page 5
+
+### [p005_c0001] TENANT SALES PERFORMANCE – 2022
+[p005_c0002] Total Gross Sales measures the cumulative receipts of all tenants during an entire year. Put another way, it is the sum total of all consumer purchases made in GCT for that year. This data is used to evaluate the overall health of the entire program and can be impacted by a high vacancy rate or influenced by sluggish leasing activity.
+[p005_c0003]
+
+```text
+Total Gross Sales 2022 2021 42 nd St. Retail 4,199,628 2,213,952 Main Concourse 6,019,377 991,549 Shuttle Passage 15,556,062 8,828,769 42 nd St. Passage 4,741,872 3,624,700 Graybar Passage 8,569,094 5,759,639 Lexington Passage 10,216,881 7,255,965 Biltmore 1,519,654 1,107,810 Grand Central Market 11,737,212 8,639,059 Dining Concourse 24,220,497 10,777,216 Restaurants 23,798,759 8,269,885 Total $111,032,548 $ 57,468,544 93%
+```
+[p005_c0004] The total reported retail sales for 2022 equaled $111,032,548, an overall increase of $53,564,004 or 93% from 2021. This increase in sales is indicative of an overall uptick in MNR ridership and return-to-normal consumer activities but is also a reflection of inflationary influences on the overall price of goods. Additionally, 10 new retail tenants opened in 2022, contributing to the overall increase in Total Gross Sales.
+[p005_c0005] All-in-all, however, the Total Gross Sales of 2022 were still 45% below the 2019 threshold of $200,243,578. Heading into 2023, new store openings and continued improvement in market conditions should start to close this gap.
+[p005_c0006] _RETAIL DEVELOPMENT AT GRAND CENTRAL TERMINAL 2022 ANNUAL REPORT_
+[p005_c0007] _Page 5 July 19, 2023_
+
+## Page 6
+
+[p006_c0001] Comparative Sales measures the transaction values of retailers by comparing year-over-year sales of businesses open for two full consecutive years. Comparable sales data provides a picture of how locations are performing and is an indicator of strong or weak retail activity.
+[p006_c0002]
+
+```text
+Comparative Sales 2022/2021 2022 2021 % 42nd St. Retail 3,725,329 2,213,952 68% Main Concourse 4,971,156 991,549 401% Shuttle Passage 14,401,997 8,828,769 63% 42nd St. Passage 4,741,872 3,624,700 31% Graybar Passage 8,569,095 5,759,638 49% Lexington Passage 10,216,881 7,094,218 44% Biltmore 1,289,899 911,746 41% Grand Central Market 11,287,497 8,639,059 31% Dining Concourse 22,867,641 10,777,216 112% Restaurants 23,798,759 8,269,885 188% Total $105,870,126 $57,110,733 85%
+```
+[p006_c0003]
+
+```text
+Average Comparative Sales Per Square Foot 2022 2021 42nd Street Retail $ 586 $348 Main Concourse $1,593 $397 Shuttle Passage $1,413 $867 42nd St. Passage $1,301 $994 Graybar Passage $3,127 $2,740 Lexington Passage $1,694 $1,176 Biltmore $3,042 $2,150 Grand Central Market $2,325 $1,779 Dining Concourse $2,767 $1,304 Restaurants $ 759 $264 All GCT $1,387 $748 All GCT, excluding balcony/restaurants: Oyster Bar, Cipriani Dolci, and The Campbell Apartment. $1,823 $1,085
+```
+[p006_c0004] Total reported comparative sales for 2022 equaled $105,870,126, an increase of $48,759,393 or 85% from 2021. This large increase can be attributed to a few things -- a) the re-opening of several existing businesses that had been closed during due to Covid-related restrictions; b)
+[p006_c0005] _RETAIL DEVELOPMENT AT GRAND CENTRAL TERMINAL 2022 ANNUAL REPORT_
+[p006_c0006] _Page 6 July 19, 2023_
+
+## Page 7
+
+[p007_c0001] substantial increase in pedestrian and ridership traffic throughout the building as the Covid regulatory precautions were eased and; c) a particularly robust media attention surrounding the holiday season.
+[p007_c0002] In relative perspective, though, comparative sales for 2019 would be calculated at $149M, or 30% more than that of 2022. So, while 2022 can certainly be viewed positively as a rebuilding year, we still need to work diligently on drawing attention to Grand Central as a retail venue and focus on opening up the remaining vacancies.
+[p007_c0003] _RETAIL DEVELOPMENT AT GRAND CENTRAL TERMINAL 2022 ANNUAL REPORT_
+[p007_c0004] _Page 7 July 19, 2023_
+
+## Page 8
+
+### [p008_c0001] MARKETING
+[p008_c0002] A distinguished and robust GCT marketing program helps to actively shape the discussion that surrounds GCT, speaking as a singular voice for all that GCT represents and delivering on a transformative promise whereby visitors feel connected to the importance of the property and retail partners believe in their contribution to GCT's continuing success.
+[p008_c0003] Emerging from the pandemic, and with the loss of key personnel, GCT pivoted tactics and engaged a third-party marketing firm to help strengthen the GCT Retail marketing program, support retail tenants in optimizing their GCT business presence, promote GCT as a multi-faceted destination with wide-ranging and convenient retail options, and to promote GCT as a premier NYC public space.
+### [p008_c0004] NEW TENANT MARKETING & COMMUNICATIONS
+[p008_c0005] Ten (10) new retail tenants came online in 2022 and each new tenant was onboarded by the GCT Marketing team via the following marketing activities:
+- [p008_c0006] - Welcome meetings with tenant retail marketing teams (local and/or corporate) - Dedicated directory page on the GCT website - Addition to the GCT maps and digital directories - Custom e-blast newsletter feature announcing GCT retail location - Social media features with photos and videos of GCT retail location - Kiosk posters throughout the terminal - Support from the GCT PR firm in pitching new GCT retail location to press
+### [p008_c0007] ADVERTISING
+[p008_c0008] Throughout the year, new tenants and special events were promoted via paid social media promotions on Facebook and Instagram.
+[p008_c0009] Advertising was placed strategically for tenants throughout the holiday season via two campaigns promoting Grand Central Market and general shopping at Grand Central. These ads included paid social media on Facebook and Instagram to target geographies along with digital advertising via the Hearst network of newspaper and magazine sites.
+### [p008_c0010] TERMINAL SIGNAGE
+[p008_c0011] Many GCT branded posters and temporary signs were updated to provide new messaging and QR codes in time for the holiday season, and advertising kiosk posters for tenant and marketing promotions and events were created, displayed, and refreshed throughout the year.
+[p008_c0012] _RETAIL DEVELOPMENT AT GRAND CENTRAL TERMINAL 2022 ANNUAL REPORT_
+[p008_c0013] _Page 8 July 19, 2023_
+
+## Page 9
+
+### [p009_c0001] TERMINAL EVENTS & PROMOTIONS
+- [p009_c0002] - Little Amal: GCT was lucky to host Little Amal at the beginning of her 50-stop tour of NYC that took place over three weeks. Picked up by the Associated Press, this event brought international news attention to GCT. - Jack O'Lantern Blaze Giveaway: this contest offered one winner 4 free flex tickets to the Great Jack-O-Lantern Blaze in the Hudson Valley, along with round trip Metro-North tickets and treats from GCT retailers including Café Grumpy, Juice Press, Magnolia Bakery, Murray's Cheese, Shake Shack, and Zaro's Family Bakery. The contest succeeded in growing the GCT Instagram account by over 300 followers at zero to no cost in just two weeks, thanks to creative brand partnerships with the Pumpkin Blaze and MTA Away. - Royal Marines Band Services, the musical wing of the Royal Navy representing HMS (His Majesty's Ship) performed in the main concourse, drawing fanfare from those present as well as British media. This event occurred days after HRH Queen Elizabeth passed away, and so carried great significance. - Thanksgiving Market: a one-day pop-up sale was held at the Taxi Stand on Vanderbilt Avenue, providing more visibility for GCT tenants sharing holiday baked goods and flowers for customers to grab on-the-go, the Wednesday before Thanksgiving. - Holiday Wrap-Up: An eight-day event in the Grand Central Market successfully activated a vacant retail space while offering visitors complimentary gift wrapping for purchases made at GCT retailers, as well as the option to bundle food items purchased in the Market in a free Grand Central limited edition wooden gift crate.
+[p009_c0003] _RETAIL DEVELOPMENT AT GRAND CENTRAL TERMINAL 2022 ANNUAL REPORT_
+[p009_c0004] _Page 9 July 19, 2023_
+
+## Page 10
+
+### [p010_c0001] SOCIAL MEDIA
+- [p010_c0002] - Broadening GCT's digital presence attracted a wider and more diverse audience across GCT Instagram, Facebook, and Twitter handles. - The GCT total audience (number of dedicated followers) grew by a combined 7,013 followers: 37.1% more than GCT social media growth in 2021 of a combined 5,114 followers. - Impressions (the number of times a piece of content was displayed to a target audience) across all GCT accounts grew by a combined 19.7%, to over 43M followers reached over the course of 2022 compared to 36M followers reached in 2021. - Engagement rate (people commenting, liking, or sharing posts) across all GCT accounts grew by over 51%, to over 2M engagements in 2022 compared to 1.3M engagements in 2021. - 2022 saw more video reel content shared than ever before, which the GCT followers respond well to, and tenants love.
+### [p010_c0003] PUBLIC RELATIONS
+- [p010_c0004] - GCT press started to pick-up from spring to mid-summer with announcements of future tenants and the opening of multiple tenants including coverage in Crain's NY Business, Pix11, NY1, TimeOut, 1010 Wins, Eater, Patch, and NYTimes. - In May, news of the return of ToC Squash brought coverage from NY1, Inside Hook featured a story about Vanderbilt Tennis Club, and New York Family featured things to do with kids in NY. - In August, Architectural Digest included GCT in a story on the most beautiful train stations in the world and Untapped New York did a feature on hidden places in GCT. The Discover Your Korea event in Vanderbilt Hall drew attention in local listings including doNYC.com, Kid on the Town, and NYCPlugged. The Alma Train Party event, in partnership with MTA Away, drew coverage from Pix11, News12 NY, Patch, and Mommy Poppins, and more. - In September, the Little Amal drew international media coverage including the Associated Press and was one of the biggest PR moments of 2022 for GCT. Coverage spanned geographies from Arab News to the Irish Examiner with PR reaching audiences of top news and pop culture media outlets. - In October, the Regional Plan Association Centennial event drew coverage across real estate and local press including 6sqft, Archpaper.com, Curbed, Gothamist, NY Times, The Observer, and WNYC. - In December, Good Day New York did a live interview from GCT to cover the launch of new GCT tours partner, Walks.
+[p010_c0005] _RETAIL DEVELOPMENT AT GRAND CENTRAL TERMINAL 2022 ANNUAL REPORT_
+[p010_c0006] _Page 10 July 19, 2023_
+
+## Page 11
+
+### [p011_c0001] E-BLAST NEWSLETTER & WEBSITE
+### [p011_c0002] E-BLAST
+[p011_c0003] The GCT eblast newsletter grew from just over 84K subscribers at the beginning of 2022, to over 102K subscribers by the end of December. In total, 40 total eblasts were created and by year's end, weekly, if not 2x weekly eblasts were shared with GCT subscribers -- the most popular eblasts were in December, with open rates of 46.8% for both the Dec. 5 th GCT Holiday Gift Guide eblast and the Dec. 16 th American Greetings Holiday Fair sponsored eblast offering subscribers the chance to download a free digital holiday card. (The average open rate for email newsletters across all industries is approximately 21%, according to MailChimp, the GCT eblast platform provider.)
+### [p011_c0004] WEBSITE
+[p011_c0005] With travel picking up gradually throughout 2022, GCT website sessions (visits to the website, which can contain multiple page views) grew by over 60% from 1.12M sessions in 2021 to 1.79M sessions in 2022. However, an analysis of user experience indicates that improvements are needed in how we communicate via the GCT website to best leverage this communication asset.
+- [p011_c0006] - 11.7% of users in 2022 were returning visitors, compared to 14.7% returning visitors in 2021. This tells us the GCT website could improve in user experience for locals and New Yorkers, and that most visitors are tourists seeking to navigate the Terminal and find shopping and dining options in a seamless fashion. - The bounce rate (percentage of users who enter the GCT website and then leave rather than continuing to view other pages on the site) increased from 72% in 2021 to 74% in 2022. This tells us the GCT website needs to be more engaging to encourage users to explore the website, and that users are not easily finding the answers they are seeking whether looking for F&B options, shopping directories, or transportation and general info. - Demographic info was nearly unchanged in terms of percentage of website visitors from the USA: 89.98% in 2021 and 89.97% in 2022. The next highest percentage of visitors in 2022: 1.97% from the UK, followed by 0.96% from Canada, 0.59% from Japan, 0.58% from France, 0.55% from Germany, 0.43% from China, 0.37% from Spain, and 0.33% from both Brazil and Italy.
+[p011_c0007] _RETAIL DEVELOPMENT AT GRAND CENTRAL TERMINAL 2022 ANNUAL REPORT_
+[p011_c0008] _Page 11 July 19, 2023_
+
+## Page 12
+
+### [p012_c0001] GRAND CENTRAL EVENTS
+### [p012_c0002] EVENT SALES:
+[p012_c0003] Events in 2022 had a slow start. The COVID-19 Omicron surge and the rules surrounding congregating events forced cancellation or postponement of all events in January and February. The annual JPMorgan Squash Tournament of Champions was postponed from January to April and a Palm Beach Tourism event was moved from January to March – otherwise, the first four months of 2022 were extremely quiet as uncertainty surrounding COVID safety protocols and low pedestrian traffic in GCT hampered any efforts to activate Vanderbilt Hall.
+[p012_c0004] As COVID restrictions began to ease and ridership levels began to climb, inquiries increased and things started to pick up in May, starting with a unique Louis Vuitton activation in the Main Concourse. Paired with the ability to negotiate Vanderbilt Hall rental rates for 2022 events longer and more varied activations, such as Barbara Sinatra's Hospital Fight Child Abuse exhibit and the Regional Planning Association's 100 th Anniversary (RPA) celebration, were made possible.
+[p012_c0005] Activations in coordination with the MTA Away program, such as Alma's Way help to support MTA partnerships more broadly, but also help to draw positive attention in promoting GCT. The Kim Shui fashion show in September and the RPA exhibit in October, in particular, both drew impressive press coverage for GCT.
+[p012_c0006] _RETAIL DEVELOPMENT AT GRAND CENTRAL TERMINAL 2022 ANNUAL REPORT_
+[p012_c0007] _Page 12 July 19, 2023_
+
+## Page 13
+
+[p013_c0001]
+
+```text
+Month # Commercial Client Event Days # MNR Event Days (including film shoots) # JLL Managed Event Days Total 2022 Event Revenue March 3 $22,500 April 7 2 $45,500 May 25 2 $808,500 July 8 $45,500 August 3 1 $22,000 September 1 $17,000 October 24 $100,000 November 27 $661,700 December 29 TOTALS 72 5 56 $1,804,200
+```
+[p013_c0002] 2022 ended much stronger than it had started. The ability to negotiate rates helped secure business that otherwise would not have been able to activate at that time. As more and more events took place, there was an increase in interest for 2023 events. Looking ahead to 2023, we would like to activate more days in Vanderbilt Hall as well as other smaller locations around the Terminal, such as the Graybar Passage and the Biltmore Room. These additional spaces will allow for an increase in revenue and in smaller events that create excitement and interest for our customers.
+[p013_c0003] _RETAIL DEVELOPMENT AT GRAND CENTRAL TERMINAL 2022 ANNUAL REPORT_
+[p013_c0004] _Page 13 July 19, 2023_
+
+## Page 14
+
+### [p014_c0001] 2022 GRAND CENTRAL HOLIDAY FAIR:
+[p014_c0002] After two years of a hiatus, the Holiday Fair came back stronger than ever in 2022. In all, 36 vendors and 2 sponsors participated in bringing back the magic that is the Grand Central Holiday Fair. The sponsorship partners from American Greetings and SL Green created strong and engaging activations on the ramp leading into the Holiday Fair, adding to the overall experience for visitors. With the help of MTA Media Relations, the Holiday Fair garnered excellent press, attracting local, national, and international coverage. Additional Holiday Fair advertising included a partnership with MTA Away, social media and Hearst ad buys in addition to print ads in Westchester newspapers and paid eblasts to NYC & Co. and TimeOut NY subscribers.
+[p014_c0003] Successful as it was, securing 36 vendors proved to be an incredible challenge, as many businesses were still hesitant to commit due to an air of uncertainty that lingered after the COVID-19 Omicron surge. In an effort to secure all 36 spots, a one-time discounted rental was offered to incentivize participation in the Fair. This was exactly the boost vendors needed to commit and with that incentive, the Holiday Fair was able to lock-in full participation including more than 12 of the artisans being new to the Fair.
+[p014_c0004] Based on vendor surveys, press, and word-of-mouth, we heard that the 2022 Holiday Fair was one of the best in recent years. The energy was exciting, and vendors, commuters, and visitors were all thrilled to be back after two years away. All-in-all, the re-opening of the Holiday Fair represented a turning point milestone in the overall perception and attitude of GCT's retail recovery – a trajectory that hopefully continues strong into 2023.
+[p014_c0005] _RETAIL DEVELOPMENT AT GRAND CENTRAL TERMINAL 2022 ANNUAL REPORT_
+[p014_c0006] _Page 14 July 19, 2023_

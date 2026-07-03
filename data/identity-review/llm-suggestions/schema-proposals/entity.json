@@ -1,0 +1,2034 @@
+{
+  "schema_proposal_run_id": "2026-06-08T23-52-42-494Z_schema-proposal-run",
+  "proposed_at": "2026-06-08T23:55:37.605Z",
+  "observation_kind": "entity",
+  "profile_name": "deepseek-pro",
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "audit_packet": {
+    "observation_kind": "entity",
+    "submission_count": 194,
+    "accepted_count": 190,
+    "rejected_count": 4,
+    "declared_anchor_fields": [
+      "agency_name",
+      "entity_name",
+      "entity_type",
+      "name",
+      "operator",
+      "owner",
+      "publisher"
+    ],
+    "enum_candidates": [
+      {
+        "field": "publisher",
+        "occurrences": 11,
+        "accepted_occurrences": 10,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 4,
+        "coverage": 0.06,
+        "distinct_values": 3,
+        "accepted_distinct_values": 3,
+        "canonical_distinct_values": 2,
+        "value_kind": "mixed",
+        "accepted_value_kind": "mixed",
+        "canonical_value_kind": "mixed",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "NYC Comptroller",
+          "NYC DOT",
+          "People Oriented Cities"
+        ],
+        "accepted_values": [
+          "NYC Comptroller",
+          "NYC DOT",
+          "People Oriented Cities"
+        ],
+        "canonical_values_observed": [
+          "NYC DOT",
+          "People Oriented Cities"
+        ],
+        "value_counts": [
+          {
+            "value": "NYC DOT",
+            "count": 3
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "NYC DOT",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "jurisdiction",
+        "occurrences": 4,
+        "accepted_occurrences": 4,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 4,
+        "coverage": 0.02,
+        "distinct_values": 1,
+        "accepted_distinct_values": 1,
+        "canonical_distinct_values": 1,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "New York State"
+        ],
+        "accepted_values": [
+          "New York State"
+        ],
+        "canonical_values_observed": [
+          "New York State"
+        ],
+        "value_counts": [
+          {
+            "value": "New York State",
+            "count": 4
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "New York State",
+            "count": 4
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "New York State",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "field": "organization",
+        "occurrences": 4,
+        "accepted_occurrences": 4,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 4,
+        "coverage": 0.02,
+        "distinct_values": 3,
+        "accepted_distinct_values": 3,
+        "canonical_distinct_values": 3,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Metropolitan Transportation Authority",
+          "New York State Assembly",
+          "New York State Senate"
+        ],
+        "accepted_values": [
+          "Metropolitan Transportation Authority",
+          "New York State Assembly",
+          "New York State Senate"
+        ],
+        "canonical_values_observed": [
+          "Metropolitan Transportation Authority",
+          "New York State Assembly",
+          "New York State Senate"
+        ],
+        "value_counts": [
+          {
+            "value": "Metropolitan Transportation Authority",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "Metropolitan Transportation Authority",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "Metropolitan Transportation Authority",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "borough",
+        "occurrences": 3,
+        "accepted_occurrences": 3,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 3,
+        "coverage": 0.02,
+        "distinct_values": 3,
+        "accepted_distinct_values": 3,
+        "canonical_distinct_values": 3,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Brooklyn",
+          "Manhattan",
+          "Queens"
+        ],
+        "accepted_values": [
+          "Brooklyn",
+          "Manhattan",
+          "Queens"
+        ],
+        "canonical_values_observed": [
+          "Brooklyn",
+          "Manhattan",
+          "Queens"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "buses",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "distinct_values": 1,
+        "accepted_distinct_values": 1,
+        "canonical_distinct_values": 0,
+        "value_kind": "mixed",
+        "accepted_value_kind": "mixed",
+        "canonical_value_kind": "number",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "5,800"
+        ],
+        "accepted_values": [
+          "5,800"
+        ],
+        "canonical_values_observed": [],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "executive_director",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Ben Furnas",
+          "Betsy Plum"
+        ],
+        "accepted_values": [
+          "Ben Furnas",
+          "Betsy Plum"
+        ],
+        "canonical_values_observed": [
+          "Ben Furnas",
+          "Betsy Plum"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "office",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "New York City Comptroller",
+          "New York City Council"
+        ],
+        "accepted_values": [
+          "New York City Comptroller",
+          "New York City Council"
+        ],
+        "canonical_values_observed": [
+          "New York City Comptroller",
+          "New York City Council"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "owner",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 2,
+        "accepted_distinct_values": 2,
+        "canonical_distinct_values": 2,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "New York City",
+          "New York State"
+        ],
+        "accepted_values": [
+          "New York City",
+          "New York State"
+        ],
+        "canonical_values_observed": [
+          "New York City",
+          "New York State"
+        ],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      },
+      {
+        "field": "parent_organization",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.01,
+        "distinct_values": 1,
+        "accepted_distinct_values": 1,
+        "canonical_distinct_values": 1,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "Metropolitan Transportation Authority"
+        ],
+        "accepted_values": [
+          "Metropolitan Transportation Authority"
+        ],
+        "canonical_values_observed": [
+          "Metropolitan Transportation Authority"
+        ],
+        "value_counts": [
+          {
+            "value": "Metropolitan Transportation Authority",
+            "count": 2
+          }
+        ],
+        "accepted_value_counts": [
+          {
+            "value": "Metropolitan Transportation Authority",
+            "count": 2
+          }
+        ],
+        "canonical_value_counts": [
+          {
+            "value": "Metropolitan Transportation Authority",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "field": "subway_cars",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "distinct_values": 1,
+        "accepted_distinct_values": 1,
+        "canonical_distinct_values": 0,
+        "value_kind": "mixed",
+        "accepted_value_kind": "mixed",
+        "canonical_value_kind": "number",
+        "closure_readiness": "open",
+        "corpus_values": [
+          "nearly 6,700"
+        ],
+        "accepted_values": [
+          "nearly 6,700"
+        ],
+        "canonical_values_observed": [],
+        "value_counts": [],
+        "accepted_value_counts": [],
+        "canonical_value_counts": []
+      }
+    ],
+    "additional_keys": [
+      {
+        "field": "_merged_field_values",
+        "occurrences": 0,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 19,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0.23,
+        "value_kind": "empty",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "object",
+        "classification": "sparse",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "a_line",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "converted to all R179 and R211 cars"
+        ],
+        "accepted_sample_values": [
+          "converted to all R179 and R211 cars"
+        ],
+        "canonical_sample_values": [
+          "converted to all R179 and R211 cars"
+        ]
+      },
+      {
+        "field": "acronym",
+        "occurrences": 12,
+        "accepted_occurrences": 12,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 8,
+        "coverage": 0.06,
+        "accepted_coverage": 0.06,
+        "canonical_coverage": 0.1,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "MTA",
+          "NYCT",
+          "AAA",
+          "DOF",
+          "DOT",
+          "MTA Bus",
+          "NYPD",
+          "NYS ITS"
+        ],
+        "accepted_sample_values": [
+          "MTA",
+          "NYCT",
+          "AAA",
+          "DOF",
+          "DOT",
+          "MTA Bus",
+          "NYPD",
+          "NYS ITS"
+        ],
+        "canonical_sample_values": [
+          "AAA",
+          "DOF",
+          "DOT",
+          "MTA",
+          "MTA Bus",
+          "NYPD",
+          "NYS ITS",
+          "PANYNJ"
+        ]
+      },
+      {
+        "field": "active_locations",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "over 15 locations across MTA"
+        ],
+        "accepted_sample_values": [
+          "over 15 locations across MTA"
+        ],
+        "canonical_sample_values": [
+          "over 15 locations across MTA"
+        ]
+      },
+      {
+        "field": "active_locations_normalized",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "agency",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.02,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Metropolitan Transportation Authority (MTA)",
+          "MTA New York City Transit"
+        ],
+        "accepted_sample_values": [
+          "Metropolitan Transportation Authority (MTA)",
+          "MTA New York City Transit"
+        ],
+        "canonical_sample_values": [
+          "Metropolitan Transportation Authority (MTA)",
+          "MTA New York City Transit"
+        ]
+      },
+      {
+        "field": "borough_normalized",
+        "occurrences": 0,
+        "accepted_occurrences": 0,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 3,
+        "coverage": 0,
+        "accepted_coverage": 0,
+        "canonical_coverage": 0.04,
+        "value_kind": "empty",
+        "accepted_value_kind": "empty",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": [
+          "brooklyn",
+          "manhattan",
+          "queens"
+        ]
+      },
+      {
+        "field": "bus_depots",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "bus_routes_covered",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Bx12"
+        ],
+        "accepted_sample_values": [
+          "Bx12"
+        ],
+        "canonical_sample_values": [
+          "Bx12"
+        ]
+      },
+      {
+        "field": "c_line",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "converted to all R179 and R211 cars"
+        ],
+        "accepted_sample_values": [
+          "converted to all R179 and R211 cars"
+        ],
+        "canonical_sample_values": [
+          "converted to all R179 and R211 cars"
+        ]
+      },
+      {
+        "field": "chair",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Haeda Mihaltses"
+        ],
+        "accepted_sample_values": [
+          "Haeda Mihaltses"
+        ],
+        "canonical_sample_values": [
+          "Haeda Mihaltses"
+        ]
+      },
+      {
+        "field": "commissioner",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Ydanis Rodriguez"
+        ],
+        "accepted_sample_values": [
+          "Ydanis Rodriguez"
+        ],
+        "canonical_sample_values": [
+          "Ydanis Rodriguez"
+        ]
+      },
+      {
+        "field": "daily_passengers",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "daily_riders",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "nearly 10,000"
+        ],
+        "accepted_sample_values": [
+          "nearly 10,000"
+        ],
+        "canonical_sample_values": [
+          "nearly 10,000"
+        ]
+      },
+      {
+        "field": "data_source",
+        "occurrences": 3,
+        "accepted_occurrences": 3,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 3,
+        "coverage": 0.02,
+        "accepted_coverage": 0.02,
+        "canonical_coverage": 0.04,
+        "value_kind": "boolean",
+        "accepted_value_kind": "boolean",
+        "canonical_value_kind": "boolean",
+        "classification": "boolean",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "description",
+        "occurrences": 36,
+        "accepted_occurrences": 35,
+        "rejected_occurrences": 1,
+        "canonical_occurrences": 27,
+        "coverage": 0.19,
+        "accepted_coverage": 0.18,
+        "canonical_coverage": 0.32,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Automated Camera Enforcement program for bus lane enforcement",
+          "ASL interpretation via QR code for Deaf/hard-of-hearing customers",
+          "Automated Bus Lane Enforcement program",
+          "Blog launched at end of 2023 featuring contributions from the broader Data & Analytics team covering topics related to MTA data",
+          "City's bus shelter franchisee",
+          "Community Advisory Committee formed for the Jamaica Bus Improvement Study, involved in initial meeting and preliminary recommendations",
+          "Created in 2024 to facilitate internal decision-making on open data releases",
+          "Division of MTA managing local, express, and Select Bus Service routes"
+        ],
+        "accepted_sample_values": [
+          "ASL interpretation via QR code for Deaf/hard-of-hearing customers",
+          "Automated Bus Lane Enforcement program",
+          "Automated Camera Enforcement program for bus lane enforcement",
+          "Blog launched at end of 2023 featuring contributions from the broader Data & Analytics team covering topics related to MTA data",
+          "City's bus shelter franchisee",
+          "Community Advisory Committee formed for the Jamaica Bus Improvement Study, involved in initial meeting and preliminary recommendations",
+          "Created in 2024 to facilitate internal decision-making on open data releases",
+          "Division of MTA managing local, express, and Select Bus Service routes"
+        ],
+        "canonical_sample_values": [
+          "ASL interpretation via QR code for Deaf/hard-of-hearing customers",
+          "Automated Bus Lane Enforcement program",
+          "Automated Camera Enforcement program for bus lane enforcement",
+          "Blog launched at end of 2023 featuring contributions from the broader Data & Analytics team covering topics related to MTA data",
+          "City's bus shelter franchisee",
+          "Community Advisory Committee formed for the Jamaica Bus Improvement Study, involved in initial meeting and preliminary recommendations",
+          "Created in 2024 to facilitate internal decision-making on open data releases",
+          "Division of MTA that runs express service to Manhattan and about 40 local routes in the Bronx and Queens"
+        ]
+      },
+      {
+        "field": "employees",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "g_line",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "introducing R211s, entire fleet expected to be R211s later this year"
+        ],
+        "accepted_sample_values": [
+          "introducing R211s, entire fleet expected to be R211s later this year"
+        ],
+        "canonical_sample_values": [
+          "introducing R211s, entire fleet expected to be R211s later this year"
+        ]
+      },
+      {
+        "field": "location",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Jamaica, Queens"
+        ],
+        "accepted_sample_values": [
+          "Jamaica, Queens"
+        ],
+        "canonical_sample_values": [
+          "Jamaica, Queens"
+        ]
+      },
+      {
+        "field": "location_normalized",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "members",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Andrew Albert",
+          "Dan Garodnick",
+          "David Jones",
+          "Haeda Mihaltses",
+          "John Ross Rizzo",
+          "John Samuelsen",
+          "Lisa Sorin",
+          "Melva Miller"
+        ],
+        "accepted_sample_values": [
+          "Andrew Albert",
+          "Dan Garodnick",
+          "David Jones",
+          "Haeda Mihaltses",
+          "John Ross Rizzo",
+          "John Samuelsen",
+          "Lisa Sorin",
+          "Melva Miller"
+        ],
+        "canonical_sample_values": [
+          "Andrew Albert",
+          "Dan Garodnick",
+          "David Jones",
+          "Haeda Mihaltses",
+          "John Ross Rizzo",
+          "John Samuelsen",
+          "Lisa Sorin",
+          "Melva Miller"
+        ]
+      },
+      {
+        "field": "navilens_uses_ytd",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "over 45,000"
+        ],
+        "accepted_sample_values": [
+          "over 45,000"
+        ],
+        "canonical_sample_values": [
+          "over 45,000"
+        ]
+      },
+      {
+        "field": "nearby_subway",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "169th St F Station"
+        ],
+        "accepted_sample_values": [
+          "169th St F Station"
+        ],
+        "canonical_sample_values": [
+          "169th St F Station"
+        ]
+      },
+      {
+        "field": "notable_stations",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Bleecker St/Broadway-Lafayette",
+          "Brooklyn Bridge-City Hall",
+          "Canal St",
+          "Union Sq"
+        ],
+        "accepted_sample_values": [
+          "Bleecker St/Broadway-Lafayette",
+          "Brooklyn Bridge-City Hall",
+          "Canal St",
+          "Union Sq"
+        ],
+        "canonical_sample_values": [
+          "Bleecker St/Broadway-Lafayette",
+          "Brooklyn Bridge-City Hall",
+          "Canal St",
+          "Union Sq"
+        ]
+      },
+      {
+        "field": "parent_entity",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.02,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Metropolitan Transportation Authority (MTA)",
+          "New York City Comptroller Brad Lander"
+        ],
+        "accepted_sample_values": [
+          "Metropolitan Transportation Authority (MTA)",
+          "New York City Comptroller Brad Lander"
+        ],
+        "canonical_sample_values": [
+          "Metropolitan Transportation Authority (MTA)",
+          "New York City Comptroller Brad Lander"
+        ]
+      },
+      {
+        "field": "regions",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Connecticut",
+          "Long Island",
+          "New York City",
+          "southeastern New York State"
+        ],
+        "accepted_sample_values": [
+          "Connecticut",
+          "Long Island",
+          "New York City",
+          "southeastern New York State"
+        ],
+        "canonical_sample_values": [
+          "Connecticut",
+          "Long Island",
+          "New York City",
+          "southeastern New York State"
+        ]
+      },
+      {
+        "field": "replaces",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "165th Street Bus Terminal"
+        ],
+        "accepted_sample_values": [
+          "165th Street Bus Terminal"
+        ],
+        "canonical_sample_values": [
+          "165th Street Bus Terminal"
+        ]
+      },
+      {
+        "field": "role",
+        "occurrences": 23,
+        "accepted_occurrences": 21,
+        "rejected_occurrences": 2,
+        "canonical_occurrences": 9,
+        "coverage": 0.12,
+        "accepted_coverage": 0.11,
+        "canonical_coverage": 0.11,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "ACE program partner",
+          "partner_agency",
+          "publisher",
+          "ACE program administrator",
+          "adjudicates automated camera enforcement violations",
+          "bus_priority_study_partner",
+          "busway_operator_and_publisher",
+          "data provider for bus performance and partner on TTP Pilot Project"
+        ],
+        "accepted_sample_values": [
+          "ACE program partner",
+          "ACE program administrator",
+          "adjudicates automated camera enforcement violations",
+          "bus_priority_study_partner",
+          "busway_operator_and_publisher",
+          "data provider for bus performance and partner on TTP Pilot Project",
+          "enforcement",
+          "implementer and monitor of TTP Pilot Project"
+        ],
+        "canonical_sample_values": [
+          "adjudicates automated camera enforcement violations",
+          "data provider for bus performance and partner on TTP Pilot Project",
+          "enforcement",
+          "implementer and monitor of TTP Pilot Project",
+          "monitoring consultant partnering with Traffic Databank and Public Works Partners",
+          "MTA Chair & CEO",
+          "MTA Open Data Program Manager",
+          "President of New York City Transit"
+        ]
+      },
+      {
+        "field": "role_in_source",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 2,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.02,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "co-lead of Jamaica Bus Improvement Study"
+        ],
+        "accepted_sample_values": [
+          "co-lead of Jamaica Bus Improvement Study"
+        ],
+        "canonical_sample_values": [
+          "co-lead of Jamaica Bus Improvement Study"
+        ]
+      },
+      {
+        "field": "routes_most_recently_added",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Bx5",
+          "M100",
+          "M2",
+          "M4",
+          "M42"
+        ],
+        "accepted_sample_values": [
+          "Bx5",
+          "M100",
+          "M2",
+          "M4",
+          "M42"
+        ],
+        "canonical_sample_values": [
+          "Bx5",
+          "M100",
+          "M2",
+          "M4",
+          "M42"
+        ]
+      },
+      {
+        "field": "routes_served",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "10 MTA bus routes and five Nassau Inter-County Express bus routes"
+        ],
+        "accepted_sample_values": [
+          "10 MTA bus routes and five Nassau Inter-County Express bus routes"
+        ],
+        "canonical_sample_values": [
+          "10 MTA bus routes and five Nassau Inter-County Express bus routes"
+        ]
+      },
+      {
+        "field": "service_area_description",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "serving a population of 15.3 million people across a 5,000-square-mile travel area surrounding New York City through Long Island, southeastern New York State, and Connecticut"
+        ],
+        "accepted_sample_values": [
+          "serving a population of 15.3 million people across a 5,000-square-mile travel area surrounding New York City through Long Island, southeastern New York State, and Connecticut"
+        ],
+        "canonical_sample_values": [
+          "serving a population of 15.3 million people across a 5,000-square-mile travel area surrounding New York City through Long Island, southeastern New York State, and Connecticut"
+        ]
+      },
+      {
+        "field": "service_area_population",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "service_area_sq_miles",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "shops_and_yards",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "short_name",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "MTA"
+        ],
+        "accepted_sample_values": [
+          "MTA"
+        ],
+        "canonical_sample_values": [
+          "MTA"
+        ]
+      },
+      {
+        "field": "stations_with_navilens",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "status",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "operational"
+        ],
+        "accepted_sample_values": [
+          "operational"
+        ],
+        "canonical_sample_values": [
+          "operational"
+        ]
+      },
+      {
+        "field": "subway_line_deployed",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "6 line"
+        ],
+        "accepted_sample_values": [
+          "6 line"
+        ],
+        "canonical_sample_values": [
+          "6 line"
+        ]
+      },
+      {
+        "field": "subway_stations",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "successful_calls",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "over 200 in 3 months"
+        ],
+        "accepted_sample_values": [
+          "over 200 in 3 months"
+        ],
+        "canonical_sample_values": [
+          "over 200 in 3 months"
+        ]
+      },
+      {
+        "field": "teams",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "Customer Communications",
+          "Department of Buses",
+          "Government and Community Relations",
+          "Operations Planning"
+        ],
+        "accepted_sample_values": [
+          "Customer Communications",
+          "Department of Buses",
+          "Government and Community Relations",
+          "Operations Planning"
+        ],
+        "canonical_sample_values": [
+          "Customer Communications",
+          "Department of Buses",
+          "Government and Community Relations",
+          "Operations Planning"
+        ]
+      },
+      {
+        "field": "title",
+        "occurrences": 17,
+        "accepted_occurrences": 17,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 16,
+        "coverage": 0.09,
+        "accepted_coverage": 0.09,
+        "canonical_coverage": 0.19,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "free_text",
+        "sample_values": [
+          "Project Manager",
+          "Acting Chief, Operations Planning",
+          "Chief Customer Officer",
+          "Chief of Operations Planning",
+          "Chief of Strategic Initiatives",
+          "DDC Acting Commissioner",
+          "Governor of New York State",
+          "Manhattan Borough President"
+        ],
+        "accepted_sample_values": [
+          "Project Manager",
+          "Acting Chief, Operations Planning",
+          "Chief Customer Officer",
+          "Chief of Operations Planning",
+          "Chief of Strategic Initiatives",
+          "DDC Acting Commissioner",
+          "Governor of New York State",
+          "Manhattan Borough President"
+        ],
+        "canonical_sample_values": [
+          "Acting Chief, Operations Planning",
+          "Chief Customer Officer",
+          "Chief of Operations Planning",
+          "Chief of Strategic Initiatives",
+          "DDC Acting Commissioner",
+          "Governor of New York State",
+          "Manhattan Borough President",
+          "Mayor of New York City"
+        ]
+      },
+      {
+        "field": "top_locations",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "array_string",
+        "accepted_value_kind": "array_string",
+        "canonical_value_kind": "array_string",
+        "classification": "sparse",
+        "sample_values": [
+          "3 Stone Street",
+          "Penn Station"
+        ],
+        "accepted_sample_values": [
+          "3 Stone Street",
+          "Penn Station"
+        ],
+        "canonical_sample_values": [
+          "3 Stone Street",
+          "Penn Station"
+        ]
+      },
+      {
+        "field": "top_locations_normalized",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "object",
+        "accepted_value_kind": "object",
+        "canonical_value_kind": "object",
+        "classification": "structured",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "track_miles",
+        "occurrences": 2,
+        "accepted_occurrences": 2,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "number",
+        "accepted_value_kind": "number",
+        "canonical_value_kind": "number",
+        "classification": "numeric",
+        "sample_values": [],
+        "accepted_sample_values": [],
+        "canonical_sample_values": []
+      },
+      {
+        "field": "url",
+        "occurrences": 1,
+        "accepted_occurrences": 1,
+        "rejected_occurrences": 0,
+        "canonical_occurrences": 1,
+        "coverage": 0.01,
+        "accepted_coverage": 0.01,
+        "canonical_coverage": 0.01,
+        "value_kind": "scalar_string",
+        "accepted_value_kind": "scalar_string",
+        "canonical_value_kind": "scalar_string",
+        "classification": "sparse",
+        "sample_values": [
+          "data.ny.gov"
+        ],
+        "accepted_sample_values": [
+          "data.ny.gov"
+        ],
+        "canonical_sample_values": [
+          "data.ny.gov"
+        ]
+      }
+    ]
+  },
+  "closure_policy": "deferred",
+  "closure_signals": [
+    {
+      "field": "publisher",
+      "closure_readiness": "open",
+      "occurrences": 11,
+      "accepted_occurrences": 10,
+      "canonical_occurrences": 4,
+      "coverage": 0.06
+    },
+    {
+      "field": "jurisdiction",
+      "closure_readiness": "open",
+      "occurrences": 4,
+      "accepted_occurrences": 4,
+      "canonical_occurrences": 4,
+      "coverage": 0.02
+    },
+    {
+      "field": "organization",
+      "closure_readiness": "open",
+      "occurrences": 4,
+      "accepted_occurrences": 4,
+      "canonical_occurrences": 4,
+      "coverage": 0.02
+    },
+    {
+      "field": "borough",
+      "closure_readiness": "open",
+      "occurrences": 3,
+      "accepted_occurrences": 3,
+      "canonical_occurrences": 3,
+      "coverage": 0.02
+    },
+    {
+      "field": "buses",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 1,
+      "coverage": 0.01
+    },
+    {
+      "field": "executive_director",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "office",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "owner",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "parent_organization",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 2,
+      "coverage": 0.01
+    },
+    {
+      "field": "subway_cars",
+      "closure_readiness": "open",
+      "occurrences": 2,
+      "accepted_occurrences": 2,
+      "canonical_occurrences": 1,
+      "coverage": 0.01
+    }
+  ],
+  "valid": true,
+  "schema_issues": [],
+  "warnings": [],
+  "proposal": {
+    "observation_kind": "entity",
+    "field_proposals": [
+      {
+        "field": "publisher",
+        "decision": "relation_context",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "publisher_other"
+        },
+        "rationale": "publisher names are relation context, not an enum"
+      },
+      {
+        "field": "jurisdiction",
+        "decision": "enum",
+        "canonical_values": [
+          "new_york_state"
+        ],
+        "value_mapping": [
+          {
+            "from": "New York State",
+            "to": "new_york_state"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "jurisdiction_other"
+        },
+        "rationale": "single observed value, treat as open enum"
+      },
+      {
+        "field": "organization",
+        "decision": "relation_context",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "organization_other"
+        },
+        "rationale": "organization names are relation context"
+      },
+      {
+        "field": "borough",
+        "decision": "enum",
+        "canonical_values": [
+          "brooklyn",
+          "manhattan",
+          "queens"
+        ],
+        "value_mapping": [
+          {
+            "from": "Brooklyn",
+            "to": "brooklyn"
+          },
+          {
+            "from": "Manhattan",
+            "to": "manhattan"
+          },
+          {
+            "from": "Queens",
+            "to": "queens"
+          }
+        ],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "borough_other"
+        },
+        "rationale": "observed three NYC boroughs; treat as open enum"
+      },
+      {
+        "field": "buses",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "buses_other"
+        },
+        "rationale": "single numeric string, not an enum"
+      },
+      {
+        "field": "executive_director",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "executive_director_other"
+        },
+        "rationale": "person names, free text"
+      },
+      {
+        "field": "office",
+        "decision": "relation_context",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "office_other"
+        },
+        "rationale": "office names are relation context"
+      },
+      {
+        "field": "owner",
+        "decision": "relation_context",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "owner_other"
+        },
+        "rationale": "owner names are relation context"
+      },
+      {
+        "field": "parent_organization",
+        "decision": "relation_context",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "parent_organization_other"
+        },
+        "rationale": "organization names are relation context"
+      },
+      {
+        "field": "subway_cars",
+        "decision": "free_text",
+        "canonical_values": [],
+        "value_mapping": [],
+        "escape_hatch": {
+          "other_value": "other",
+          "other_text_field": "subway_cars_other"
+        },
+        "rationale": "numeric string, not an enum"
+      }
+    ],
+    "key_dispositions": [
+      {
+        "key": "_merged_field_values",
+        "disposition": "drop",
+        "target": "",
+        "rationale": "internal merged field, not for schema"
+      },
+      {
+        "key": "a_line",
+        "disposition": "drop",
+        "target": "",
+        "rationale": "sparse free text, not a key"
+      },
+      {
+        "key": "acronym",
+        "disposition": "promote_field",
+        "target": "acronym",
+        "rationale": "useful abbreviation field, free text"
+      },
+      {
+        "key": "active_locations",
+        "disposition": "drop",
+        "target": "",
+        "rationale": "sparse free text, not a key"
+      },
+      {
+        "key": "active_locations_normalized",
+        "disposition": "drop",
+        "target": "",
+        "rationale": "derived normalized field, not for submission"
+      },
+      {
+        "key": "agency",
+        "disposition": "relation_context",
+        "target": "agency",
+        "rationale": "agency name, relation context"
+      },
+      {
+        "key": "borough_normalized",
+        "disposition": "drop",
+        "target": "borough",
+        "rationale": "derived normalized form of borough, drop in favor of borough enum"
+      },
+      {
+        "key": "bus_depots",
+        "disposition": "promote_field",
+        "target": "bus_depots",
+        "rationale": "numeric field, count of bus depots"
+      },
+      {
+        "key": "bus_routes_covered",
+        "disposition": "promote_field",
+        "target": "bus_routes_covered",
+        "rationale": "list of bus routes, relation context"
+      },
+      {
+        "key": "c_line",
+        "disposition": "drop",
+        "target": "",
+        "rationale": "sparse free text, not a key"
+      },
+      {
+        "key": "chair",
+        "disposition": "drop",
+        "target": "",
+        "rationale": "sparse person name, not a key"
+      },
+      {
+        "key": "commissioner",
+        "disposition": "drop",
+        "target": "",
+        "rationale": "sparse person name, not a key"
+      },
+      {
+        "key": "daily_passengers",
+        "disposition": "promote_field",
+        "target": "daily_passengers",
+        "rationale": "numeric field, daily passenger count"
+      },
+      {
+        "key": "daily_riders",
+        "disposition": "drop",
+        "target": "",
+        "rationale": "sparse free text, not a key"
+      },
+      {
+        "key": "data_source",
+        "disposition": "promote_field",
+        "target": "data_source",
+        "rationale": "boolean field indicating data source"
+      },
+      {
+        "key": "description",
+        "disposition": "promote_field",
+        "target": "description",
+        "rationale": "descriptive free text"
+      },
+      {
+        "key": "employees",
+        "disposition": "promote_field",
+        "target": "employees",
+        "rationale": "numeric field, employee count"
+      },
+      {
+        "key": "g_line",
+        "disposition": "drop",
+        "target": "",
+        "rationale": "sparse free text, not a key"
+      },
+      {
+        "key": "location",
+        "disposition": "drop",
+        "target": "",
+        "rationale": "sparse location string, too few occurrences"
+      },
+      {
+        "key": "location_normalized",
+        "disposition": "drop",
+        "target": "",
+        "rationale": "derived normalized field, not for submission"
+      },
+      {
+        "key": "members",
+        "disposition": "promote_field",
+        "target": "members",
+        "rationale": "list of member names, relation context"
+      },
+      {
+        "key": "navilens_uses_ytd",
+        "disposition": "drop",
+        "target": "",
+        "rationale": "sparse free text, not a key"
+      },
+      {
+        "key": "nearby_subway",
+        "disposition": "drop",
+        "target": "",
+        "rationale": "sparse station name, not a key"
+      },
+      {
+        "key": "notable_stations",
+        "disposition": "promote_field",
+        "target": "notable_stations",
+        "rationale": "list of station names, relation context"
+      },
+      {
+        "key": "parent_entity",
+        "disposition": "relation_context",
+        "target": "parent_entity",
+        "rationale": "parent entity name, relation context"
+      },
+      {
+        "key": "regions",
+        "disposition": "promote_field",
+        "target": "regions",
+        "rationale": "list of region names, relation context"
+      },
+      {
+        "key": "replaces",
+        "disposition": "drop",
+        "target": "",
+        "rationale": "sparse string, not a key"
+      },
+      {
+        "key": "role",
+        "disposition": "promote_field",
+        "target": "role",
+        "rationale": "role descriptor, free text"
+      },
+      {
+        "key": "role_in_source",
+        "disposition": "promote_field",
+        "target": "role_in_source",
+        "rationale": "role in source, free text"
+      },
+      {
+        "key": "routes_most_recently_added",
+        "disposition": "promote_field",
+        "target": "routes_most_recently_added",
+        "rationale": "list of route IDs, relation context"
+      },
+      {
+        "key": "routes_served",
+        "disposition": "promote_field",
+        "target": "routes_served",
+        "rationale": "description of routes served, free text"
+      },
+      {
+        "key": "service_area_description",
+        "disposition": "promote_field",
+        "target": "service_area_description",
+        "rationale": "description of service area, free text"
+      },
+      {
+        "key": "service_area_population",
+        "disposition": "promote_field",
+        "target": "service_area_population",
+        "rationale": "numeric field, population"
+      },
+      {
+        "key": "service_area_sq_miles",
+        "disposition": "promote_field",
+        "target": "service_area_sq_miles",
+        "rationale": "numeric field, area in square miles"
+      },
+      {
+        "key": "shops_and_yards",
+        "disposition": "promote_field",
+        "target": "shops_and_yards",
+        "rationale": "numeric field, shops and yards count"
+      },
+      {
+        "key": "short_name",
+        "disposition": "drop",
+        "target": "",
+        "rationale": "sparse acronym, drop in favor of acronym field"
+      },
+      {
+        "key": "stations_with_navilens",
+        "disposition": "promote_field",
+        "target": "stations_with_navilens",
+        "rationale": "numeric field, count of stations"
+      },
+      {
+        "key": "status",
+        "disposition": "needs_more_data",
+        "target": "status",
+        "rationale": "single observed value, too thin to propose enum"
+      },
+      {
+        "key": "subway_line_deployed",
+        "disposition": "drop",
+        "target": "",
+        "rationale": "sparse string, not a key"
+      },
+      {
+        "key": "subway_stations",
+        "disposition": "promote_field",
+        "target": "subway_stations",
+        "rationale": "numeric field, station count"
+      },
+      {
+        "key": "successful_calls",
+        "disposition": "drop",
+        "target": "",
+        "rationale": "sparse free text, not a key"
+      },
+      {
+        "key": "teams",
+        "disposition": "promote_field",
+        "target": "teams",
+        "rationale": "list of team names, relation context"
+      },
+      {
+        "key": "title",
+        "disposition": "promote_field",
+        "target": "title",
+        "rationale": "job title, free text"
+      },
+      {
+        "key": "top_locations",
+        "disposition": "promote_field",
+        "target": "top_locations",
+        "rationale": "list of location names, relation context"
+      },
+      {
+        "key": "top_locations_normalized",
+        "disposition": "drop",
+        "target": "",
+        "rationale": "derived normalized field, not for submission"
+      },
+      {
+        "key": "track_miles",
+        "disposition": "promote_field",
+        "target": "track_miles",
+        "rationale": "numeric field, track miles"
+      },
+      {
+        "key": "url",
+        "disposition": "promote_field",
+        "target": "url",
+        "rationale": "URL field, free text"
+      }
+    ],
+    "notes": "All enums are treated as open with an escape hatch. Relation context fields store external entity names and are not treated as enums. Additional keys promoted as free-text fields or relation context as appropriate."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T23-54-20-510Z_3609302-70dbffe7_schema-proposal-run_entity",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T23-54-20-511Z_2026-06-08T23-54-20-510Z_3609302-70dbffe7_schema-proposal-run_entity.jsonl"
+}

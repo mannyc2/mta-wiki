@@ -1,0 +1,952 @@
+{
+  "run_id": "2026-06-10T23-14-02-584Z_1976810-848ebcf8_ingest_2013-06-05-sbs-125th-cb9",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T03:53:34.496Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "rel-m60-eb-speed-27",
+        "local_observation_id": "metric_m60_eastbound_speed_27",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_125th-laguardia-sbs",
+            "object_id": "metric_m60-eastbound-speed-27",
+            "description": "M60 Bus Eastbound speed of 2.7 mph on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p004_c0003",
+                "source_quote": "M60 Bus Eastbound 2.7"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "metric_m60-eastbound-speed-27",
+            "description": "M60 Bus Eastbound speed of 2.7 mph on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p004_c0003",
+                "source_quote": "M60 Bus Eastbound 2.7"
+              }
+            ]
+          }
+        ],
+        "rationale": "The bar chart on page 4 explicitly labels 'M60 Bus Eastbound 2.7' as a speed measurement, naming both the M60 route and 125th Street corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p004_c0003",
+            "source_quote": "M60 Bus Eastbound 2.7"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-nyc-bus-avg-speed-77",
+        "local_observation_id": "metric_nyc_bus_avg_speed_77",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "entity_mta-nyct",
+            "object_id": "metric_nyc-bus-avg-speed-77",
+            "description": "Average New York City Bus speed of 7.7 mph",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p004_c0003",
+                "source_quote": "Average New York City Bus 7.7"
+              }
+            ]
+          }
+        ],
+        "rationale": "The bar chart compares 'Average New York City Bus 7.7' as a system-wide metric, which describes the MTA NYCT bus system overall.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p004_c0003",
+            "source_quote": "Average New York City Bus 7.7"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-driving-eb-63",
+        "local_observation_id": "metric_driving_eastbound_63",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "metric_driving-eastbound-63",
+            "description": "Driving Eastbound across 125th St speed of 6.3 mph",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p004_c0003",
+                "source_quote": "Driving Eastbound across 125th St 6.3"
+              }
+            ]
+          }
+        ],
+        "rationale": "The bar chart explicitly labels 'Driving Eastbound across 125th St 6.3', naming the 125th Street corridor as the scope.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p004_c0003",
+            "source_quote": "Driving Eastbound across 125th St 6.3"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-walking-speed-34",
+        "local_observation_id": "metric_avg_walking_speed_34",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "metric_avg-walking-speed-34",
+            "description": "Average Walking Speed of 3.4 mph shown in the 125th Street speed comparison chart",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p004_c0003",
+                "source_quote": "Average Walking Speed 3.4"
+              }
+            ]
+          }
+        ],
+        "rationale": "The bar chart on page 4 compares travel modes on 125th Street; 'Average Walking Speed 3.4' appears alongside other 125th-Street-specific metrics in the comparison.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p004_c0003",
+            "source_quote": "Average Walking Speed 3.4"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bx15-boardings-8838",
+        "local_observation_id": "metric_bx15_weekday_boardings_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_bx15-ace",
+            "object_id": "metric_bx15-weekday-boardings-125th",
+            "description": "Bx15 weekday bus boardings on 125th Street: 8,838 (2011)",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p002_c0011",
+                "source_quote": "Bx15 M60 M100 M101 Total 8,838 9,682 6,912 7,198 32,630"
+              }
+            ]
+          }
+        ],
+        "rationale": "The table 'Weekday Bus Boardings on 125th Street (2011)' explicitly lists Bx15 with 8,838 boardings.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p002_c0011",
+            "source_quote": "Bx15 M60 M100 M101 Total 8,838 9,682 6,912 7,198 32,630"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m60-boardings-9682",
+        "local_observation_id": "metric_m60_weekday_boardings_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_125th-laguardia-sbs",
+            "object_id": "metric_m60-weekday-boardings-125th",
+            "description": "M60 weekday bus boardings on 125th Street: 9,682 (2011)",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p002_c0011",
+                "source_quote": "Bx15 M60 M100 M101 Total 8,838 9,682 6,912 7,198 32,630"
+              }
+            ]
+          }
+        ],
+        "rationale": "The table 'Weekday Bus Boardings on 125th Street (2011)' explicitly lists M60 with 9,682 boardings.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p002_c0011",
+            "source_quote": "Bx15 M60 M100 M101 Total 8,838 9,682 6,912 7,198 32,630"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m100-boardings-6912",
+        "local_observation_id": "metric_m100_weekday_boardings_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m100-ace",
+            "object_id": "metric_m100-weekday-boardings-125th",
+            "description": "M100 weekday bus boardings on 125th Street: 6,912 (2011)",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p002_c0011",
+                "source_quote": "Bx15 M60 M100 M101 Total 8,838 9,682 6,912 7,198 32,630"
+              }
+            ]
+          }
+        ],
+        "rationale": "The table 'Weekday Bus Boardings on 125th Street (2011)' explicitly lists M100 with 6,912 boardings.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p002_c0011",
+            "source_quote": "Bx15 M60 M100 M101 Total 8,838 9,682 6,912 7,198 32,630"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m101-boardings-7198",
+        "local_observation_id": "metric_m101_weekday_boardings_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_m101",
+            "object_id": "metric_m101-weekday-boardings-125th",
+            "description": "M101 weekday bus boardings on 125th Street: 7,198 (2011)",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p002_c0011",
+                "source_quote": "Bx15 M60 M100 M101 Total 8,838 9,682 6,912 7,198 32,630"
+              }
+            ]
+          }
+        ],
+        "rationale": "The table 'Weekday Bus Boardings on 125th Street (2011)' explicitly lists M101 with 7,198 boardings.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p002_c0011",
+            "source_quote": "Bx15 M60 M100 M101 Total 8,838 9,682 6,912 7,198 32,630"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-total-boardings-32630",
+        "local_observation_id": "metric_total_weekday_boardings_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "metric_total-weekday-boardings-125th",
+            "description": "Total weekday bus boardings on 125th Street: 32,630 (2011)",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p002_c0011",
+                "source_quote": "Bx15 M60 M100 M101 Total 8,838 9,682 6,912 7,198 32,630"
+              }
+            ]
+          }
+        ],
+        "rationale": "The table 'Weekday Bus Boardings on 125th Street (2011)' shows Total 32,630, describing the 125th Street corridor overall.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p002_c0011",
+            "source_quote": "Bx15 M60 M100 M101 Total 8,838 9,682 6,912 7,198 32,630"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m60-boardings-125st-49pct",
+        "local_observation_id": "metric_m60_boardings_125st_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_125th-laguardia-sbs",
+            "object_id": "metric_m60-boardings-125st-pct",
+            "description": "125 ST 49% of M60 boardings",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p003_c0005",
+                "source_quote": "Area Percentage 125 ST 49% MORNINGSIDE HEIGHTS 21% QUEENS 19% AIRPORT 11%"
+              }
+            ]
+          }
+        ],
+        "rationale": "The M60 Ridership pie chart for Boardings by Area labels '125 ST 49%', describing M60 ridership distribution.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p003_c0005",
+            "source_quote": "125 ST 49%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m60-boardings-morningside-21pct",
+        "local_observation_id": "metric_m60_boardings_morningside_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_125th-laguardia-sbs",
+            "object_id": "metric_m60-boardings-morningside-pct",
+            "description": "Morningside Heights 21% of M60 boardings",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p003_c0005",
+                "source_quote": "MORNINGSIDE HEIGHTS 21%"
+              }
+            ]
+          }
+        ],
+        "rationale": "The M60 Ridership pie chart for Boardings by Area labels 'MORNINGSIDE HEIGHTS 21%'.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p003_c0005",
+            "source_quote": "MORNINGSIDE HEIGHTS 21%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m60-boardings-queens-19pct",
+        "local_observation_id": "metric_m60_boardings_queens_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_125th-laguardia-sbs",
+            "object_id": "metric_m60-boardings-queens-pct",
+            "description": "Queens 19% of M60 boardings",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p003_c0005",
+                "source_quote": "QUEENS 19%"
+              }
+            ]
+          }
+        ],
+        "rationale": "The M60 Ridership pie chart for Boardings by Area labels 'QUEENS 19%'.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p003_c0005",
+            "source_quote": "QUEENS 19%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m60-boardings-airport-11pct",
+        "local_observation_id": "metric_m60_boardings_airport_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_125th-laguardia-sbs",
+            "object_id": "metric_m60-boardings-airport-pct",
+            "description": "Airport 11% of M60 boardings",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p003_c0005",
+                "source_quote": "AIRPORT 11%"
+              }
+            ]
+          }
+        ],
+        "rationale": "The M60 Ridership pie chart for Boardings by Area labels 'AIRPORT 11%'.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p003_c0005",
+            "source_quote": "AIRPORT 11%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m60-alightings-125st-51pct",
+        "local_observation_id": "metric_m60_alightings_125st_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_125th-laguardia-sbs",
+            "object_id": "metric_m60-alightings-125st-pct",
+            "description": "125 ST 51% of M60 alightings",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p003_c0007",
+                "source_quote": "Area Percentage 125 ST 51% QUEENS 22% MORNINGSIDE HEIGHTS 17% AIRPORT 10%"
+              }
+            ]
+          }
+        ],
+        "rationale": "The M60 Ridership pie chart for Alightings by Area labels '125 ST 51%'.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p003_c0007",
+            "source_quote": "125 ST 51%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m60-alightings-queens-22pct",
+        "local_observation_id": "metric_m60_alightings_queens_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_125th-laguardia-sbs",
+            "object_id": "metric_m60-alightings-queens-pct",
+            "description": "Queens 22% of M60 alightings",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p003_c0007",
+                "source_quote": "QUEENS 22%"
+              }
+            ]
+          }
+        ],
+        "rationale": "The M60 Ridership pie chart for Alightings by Area labels 'QUEENS 22%'.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p003_c0007",
+            "source_quote": "QUEENS 22%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m60-alightings-morningside-17pct",
+        "local_observation_id": "metric_m60_alightings_morningside_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_125th-laguardia-sbs",
+            "object_id": "metric_m60-alightings-morningside-pct",
+            "description": "Morningside Heights 17% of M60 alightings",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p003_c0007",
+                "source_quote": "MORNINGSIDE HEIGHTS 17%"
+              }
+            ]
+          }
+        ],
+        "rationale": "The M60 Ridership pie chart for Alightings by Area labels 'MORNINGSIDE HEIGHTS 17%'.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p003_c0007",
+            "source_quote": "MORNINGSIDE HEIGHTS 17%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-m60-alightings-airport-10pct",
+        "local_observation_id": "metric_m60_alightings_airport_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_125th-laguardia-sbs",
+            "object_id": "metric_m60-alightings-airport-pct",
+            "description": "Airport 10% of M60 alightings",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p003_c0007",
+                "source_quote": "AIRPORT 10%"
+              }
+            ]
+          }
+        ],
+        "rationale": "The M60 Ridership pie chart for Alightings by Area labels 'AIRPORT 10%'.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p003_c0007",
+            "source_quote": "AIRPORT 10%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-mode-share-transit-57",
+        "local_observation_id": "metric_mode_share_transit",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "metric_mode-share-transit",
+            "description": "Transit mode share to 125th Street: 57%",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p002_c0004",
+                "source_quote": "Transit (Bus, Subway and Metro-North)"
+              },
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p002_c0005",
+                "source_quote": "57%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 2 asks 'How are people getting to 125th Street?' and shows 'Transit (Bus, Subway and Metro-North)' at 57%, explicitly naming 125th Street.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p002_c0004",
+            "source_quote": "Transit (Bus, Subway and Metro-North)"
+          },
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p002_c0005",
+            "source_quote": "57%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-mode-share-walk-34",
+        "local_observation_id": "metric_mode_share_walk",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "metric_mode-share-walk",
+            "description": "Walk mode share to 125th Street: 34%",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p002_c0006",
+                "source_quote": "Walk"
+              },
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p002_c0007",
+                "source_quote": "34%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 2 asks 'How are people getting to 125th Street?' and shows 'Walk' at 34%, explicitly naming 125th Street.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p002_c0006",
+            "source_quote": "Walk"
+          },
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p002_c0007",
+            "source_quote": "34%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-mode-share-drive-9",
+        "local_observation_id": "metric_mode_share_drive",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "metric_mode-share-drive",
+            "description": "Drive mode share to 125th Street: 9%",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p002_c0008",
+                "source_quote": "Drive"
+              },
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p002_c0009",
+                "source_quote": "9%"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 2 asks 'How are people getting to 125th Street?' and shows 'Drive' at 9%, explicitly naming 125th Street.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p002_c0008",
+            "source_quote": "Drive"
+          },
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p002_c0009",
+            "source_quote": "9%"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-m60-stopped-60pct",
+        "local_observation_id": "claim_m60_buses_stopped_60_pct",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_125th-laguardia-sbs",
+            "object_id": "claim_m60-buses-stopped-60-pct",
+            "description": "M60 Buses are stopped over 60% of the time due to congestion on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p004_c0004",
+                "source_quote": "M60 Buses are stopped over 60% of the time"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_m60-sbs-125th-street-2013",
+            "object_id": "claim_m60-buses-stopped-60-pct",
+            "description": "M60 Buses are stopped over 60% of the time, used as rationale for SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p004_c0004",
+                "source_quote": "M60 Buses are stopped over 60% of the time"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 4 states 'M60 Buses are stopped over 60% of the time' directly naming the M60 route as part of the SBS project presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p004_c0004",
+            "source_quote": "M60 Buses are stopped over 60% of the time"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-claim-half-m60-ridership-125th",
+        "local_observation_id": "claim_half_m60_ridership_125th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_125th-laguardia-sbs",
+            "object_id": "claim_half-m60-ridership-125th-st",
+            "description": "Half of M60 ridership is on 125th St; only 11% to airport",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p002_c0012",
+                "source_quote": "Half of M60 ridership is on 125 th St; only 11% to airport"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_m60-sbs-125th-street-2013",
+            "object_id": "claim_half-m60-ridership-125th-st",
+            "description": "Half of M60 ridership is on 125th St; only 11% to airport — supports the SBS project rationale",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p002_c0012",
+                "source_quote": "Half of M60 ridership is on 125 th St; only 11% to airport"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 2 states 'Half of M60 ridership is on 125th St; only 11% to airport' directly naming the M60 route.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p002_c0012",
+            "source_quote": "Half of M60 ridership is on 125 th St; only 11% to airport"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-summer-2012-cb-consultation",
+        "local_observation_id": "event_summer_2012_cb_consultation",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_m60-sbs-125th-street-2013",
+            "object_id": "event_summer-2012-cb-consultation",
+            "description": "Summer 2012 Consultation with CB9, CB10 and CB11 as part of public outreach for 125th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p007_c0006",
+                "source_quote": "Summer 2012 Consultation with CB9, CB10 and CB11"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 7 lists 'Summer 2012 Consultation with CB9, CB10 and CB11' under 'Public Outreach since September 2012' for the 125th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p007_c0006",
+            "source_quote": "Summer 2012 Consultation with CB9, CB10 and CB11"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-sep-2012-public-workshop",
+        "local_observation_id": "event_sep_2012_public_workshop",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_m60-sbs-125th-street-2013",
+            "object_id": "event_sep-2012-public-workshop",
+            "description": "September 2012 Public Workshop for 125th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p007_c0007",
+                "source_quote": "September 2012 Public Workshop"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 7 lists 'September 2012 Public Workshop' under 'Public Outreach since September 2012' for the 125th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p007_c0007",
+            "source_quote": "September 2012 Public Workshop"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-spring-2013-community-meetings",
+        "local_observation_id": "event_spring_2013_community_meetings",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_m60-sbs-125th-street-2013",
+            "object_id": "event_spring-2013-community-meetings",
+            "description": "Spring 2013 Community Meetings with CB9, CB10, CB11 for 125th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p007_c0011",
+                "source_quote": "Spring 2013 Community Meetings with CB9, CB10, CB11"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 7 lists 'Spring 2013 Community Meetings with CB9, CB10, CB11' under 'Public Outreach since September 2012' for the 125th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p007_c0011",
+            "source_quote": "Spring 2013 Community Meetings with CB9, CB10, CB11"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-may-2013-town-hall",
+        "local_observation_id": "event_may_2013_town_hall",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_m60-sbs-125th-street-2013",
+            "object_id": "event_may-2013-town-hall",
+            "description": "May 2013 Town Hall Meeting for 125th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p007_c0014",
+                "source_quote": "May 2013 Town Hall Meeting"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 7 lists 'May 2013 Town Hall Meeting' under 'Public Outreach since September 2012' for the 125th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p007_c0014",
+            "source_quote": "May 2013 Town Hall Meeting"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-cac-meetings-3",
+        "local_observation_id": "event_cac_meetings_3",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_m60-sbs-125th-street-2013",
+            "object_id": "event_cac-meetings-3",
+            "description": "3 Community Advisory Committee Meetings for 125th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p007_c0008",
+                "source_quote": "3 Community Advisory Committee Meetings"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 7 lists '3 Community Advisory Committee Meetings' under 'Public Outreach since September 2012' for the 125th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p007_c0008",
+            "source_quote": "3 Community Advisory Committee Meetings"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-public-open-houses-2",
+        "local_observation_id": "event_public_open_houses_2",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_m60-sbs-125th-street-2013",
+            "object_id": "event_public-open-houses-2",
+            "description": "2 Public Open House Events for 125th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p007_c0009",
+                "source_quote": "2 Public Open House Events"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 7 lists '2 Public Open House Events' under 'Public Outreach since September 2012' for the 125th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p007_c0009",
+            "source_quote": "2 Public Open House Events"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-merchant-open-houses-2",
+        "local_observation_id": "event_merchant_open_houses_2",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_m60-sbs-125th-street-2013",
+            "object_id": "event_merchant-open-houses-2",
+            "description": "2 Merchant Open House Events for 125th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p007_c0010",
+                "source_quote": "2 Merchant Open House Events"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 7 lists '2 Merchant Open House Events' under 'Public Outreach since September 2012' for the 125th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p007_c0010",
+            "source_quote": "2 Merchant Open House Events"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-walking-tours-125th",
+        "local_observation_id": "event_walking_tours_125th",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_m60-sbs-125th-street-2013",
+            "object_id": "event_walking-tours-125th",
+            "description": "Walking tours of 125th Street as part of public outreach for SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p007_c0012",
+                "source_quote": "Walking tours of 125 th Street"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 7 lists 'Walking tours of 125th Street' under 'Public Outreach since September 2012' for the 125th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p007_c0012",
+            "source_quote": "Walking tours of 125 th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-event-public-tour-m15-sbs",
+        "local_observation_id": "event_public_tour_m15_sbs",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_m60-sbs-125th-street-2013",
+            "object_id": "event_public-tour-m15-sbs",
+            "description": "Public tour of M15 Select Bus Service as part of outreach for 125th Street SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2013_06_05_sbs_125th_cb9",
+                "block_id": "p007_c0013",
+                "source_quote": "Public tour of M15 Select Bus Service"
+              }
+            ]
+          }
+        ],
+        "rationale": "Page 7 lists 'Public tour of M15 Select Bus Service' under 'Public Outreach since September 2012' for the 125th Street SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_05_sbs_125th_cb9",
+            "block_id": "p007_c0013",
+            "source_quote": "Public tour of M15 Select Bus Service"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-49-03-891Z_2111393-ba2ab5db_canonicalize_2026-06-10t23-14-02-584z-1976810-848ebcf8-ingest-2013-06-05-sbs-125th-cb9-relation-linker"
+}

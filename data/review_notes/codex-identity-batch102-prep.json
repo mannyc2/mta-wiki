@@ -1,0 +1,382 @@
+{
+  "batch_id": "codex-identity-batch102",
+  "created_at": "2026-06-23T04:10:00Z",
+  "scope": {
+    "record_kinds": [
+      "route"
+    ],
+    "note": "Codex-only identity cleanup prep for global route records. No corridor aliases were needed; no entity, project, or treatment_component records are in scope."
+  },
+  "prepared_count": 8,
+  "all_pass": true,
+  "expected_delta": {
+    "duplicate_global_identity": -8
+  },
+  "proposed_aliases": [
+    {
+      "kind": "route",
+      "alias_id": "route_m34-local-20110118",
+      "target_id": "route_m34-local-2011",
+      "reason": "Both records represent the same global M34 local bus route on 34th Street. The alias and target share route_id M34, route_type_normalized local, and service_variant local; source evidence references M34 station/route context with no SBS, express, or limited-stop variant conflict.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "M34",
+          "route_type_normalized": "local",
+          "service_variant": "local",
+          "primary_source_id": "20110118_34th_cac3_slides"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "M34",
+          "route_type_normalized": "local",
+          "service_variant": "local",
+          "primary_source_id": "2011_34th_sbs_comments_on_proposed_design"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "route_m34-local-20110118",
+          "source_id": "20110118_34th_cac3_slides",
+          "block_id": "p017_c0001",
+          "page_number": 17,
+          "quote": "M34 East Side Station Locations"
+        },
+        {
+          "record_id": "route_m34-local-2011",
+          "source_id": "2011_34th_sbs_comments_on_proposed_design",
+          "block_id": "p006_c0009",
+          "page_number": 6,
+          "quote": "hybrid- electric, low floor buses currently used on M34 and M16 routes"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_m34-local-201103",
+      "target_id": "route_m34-local-2011",
+      "reason": "Both records represent the same global M34 local bus route on 34th Street. The alias and target share route_id M34, route_type_normalized local, and service_variant local; the alias display name explicitly says M34 Bus Route (Local).",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "M34",
+          "route_type_normalized": "local",
+          "service_variant": "local",
+          "primary_source_id": "201103_34th_cac_summary"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "M34",
+          "route_type_normalized": "local",
+          "service_variant": "local",
+          "primary_source_id": "2011_34th_sbs_comments_on_proposed_design"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "route_m34-local-201103",
+          "source_id": "201103_34th_cac_summary",
+          "block_id": "p001_c0006",
+          "page_number": 1,
+          "quote": "reviewed the project schedule"
+        },
+        {
+          "record_id": "route_m34-local-2011",
+          "source_id": "2011_34th_sbs_comments_on_proposed_design",
+          "block_id": "p006_c0009",
+          "page_number": 6,
+          "quote": "hybrid- electric, low floor buses currently used on M34 and M16 routes"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_m34-local-20110314",
+      "target_id": "route_m34-local-2011",
+      "reason": "Both records represent the same global M34 local bus route. The alias and target share route_id M34, route_type_normalized local, and service_variant local; source evidence discusses M34 planned improvements and M34/M16 buses without indicating a different route variant.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "M34",
+          "route_type_normalized": "local",
+          "service_variant": "local",
+          "primary_source_id": "20110314_34th_cac4_slides"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "M34",
+          "route_type_normalized": "local",
+          "service_variant": "local",
+          "primary_source_id": "2011_34th_sbs_comments_on_proposed_design"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "route_m34-local-20110314",
+          "source_id": "20110314_34th_cac4_slides",
+          "block_id": "p007_c0002",
+          "page_number": 7,
+          "quote": "Off-board fare collection on M34 and M16"
+        },
+        {
+          "record_id": "route_m34-local-2011",
+          "source_id": "2011_34th_sbs_comments_on_proposed_design",
+          "block_id": "p006_c0009",
+          "page_number": 6,
+          "quote": "hybrid- electric, low floor buses currently used on M34 and M16 routes"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_bx41-limited-2012-10-webster",
+      "target_id": "route_bx41-limited-2012",
+      "reason": "Both records represent the same global Bx41 Limited route on Webster Avenue. The alias and target share route_id Bx41, route_type_normalized limited_stop, and service_variant limited_stop; the source block says Bx41 SBS replaces the Bx41 Limited while preserving Bx41 local as separate.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "Bx41",
+          "route_type_normalized": "limited_stop",
+          "service_variant": "limited_stop",
+          "primary_source_id": "2012_10_webster_sbs_newsletter"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "Bx41",
+          "route_type_normalized": "limited_stop",
+          "service_variant": "limited_stop",
+          "primary_source_id": "2012_10_brt_webster_cac3_meeting_summary"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "route_bx41-limited-2012-10-webster",
+          "source_id": "2012_10_webster_sbs_newsletter",
+          "block_id": "p001_c0006",
+          "page_number": 1,
+          "quote": "Bx41 SBS replaces the Bx41 Limited"
+        },
+        {
+          "record_id": "route_bx41-limited-2012",
+          "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+          "block_id": "p001_c0009",
+          "page_number": 1,
+          "quote": "comparing them to the current Bx41 Limited stops"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_bx41-ltd-webster-2012",
+      "target_id": "route_bx41-limited-2012",
+      "reason": "Both records represent the same global Bx41 Limited route on Webster Avenue. The alias and target share route_id Bx41, route_type_normalized limited_stop, and service_variant limited_stop; source evidence explicitly lists Bx41 LTD and distinguishes it from Bx41 Local.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "Bx41",
+          "route_type_normalized": "limited_stop",
+          "service_variant": "limited_stop",
+          "primary_source_id": "2012_11_sbs_webster_cac4"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "Bx41",
+          "route_type_normalized": "limited_stop",
+          "service_variant": "limited_stop",
+          "primary_source_id": "2012_10_brt_webster_cac3_meeting_summary"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "route_bx41-ltd-webster-2012",
+          "source_id": "2012_11_sbs_webster_cac4",
+          "block_id": "p029_c0003",
+          "page_number": 29,
+          "quote": "Bx41 LTD"
+        },
+        {
+          "record_id": "route_bx41-limited-2012",
+          "source_id": "2012_10_brt_webster_cac3_meeting_summary",
+          "block_id": "p001_c0009",
+          "page_number": 1,
+          "quote": "comparing them to the current Bx41 Limited stops"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_m1-madison-ave-cb6-jun2025",
+      "target_id": "route_m1-local-madison-ave-may2025",
+      "reason": "Both records represent the same global M1 local bus route in Madison Avenue study-area material. The alias and target share route_id M1, route_type_normalized local, and service_variant local; both evidence blocks list M1 among local buses in the same East 23rd to East 42nd Street study area.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "M1",
+          "route_type_normalized": "local",
+          "service_variant": "local",
+          "primary_source_id": "madison_ave_e23_st_e42_st_cb6_jun2025"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "M1",
+          "route_type_normalized": "local",
+          "service_variant": "local",
+          "primary_source_id": "madison_ave_e23_st_e42_st_cb5_may2025"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "route_m1-madison-ave-cb6-jun2025",
+          "source_id": "madison_ave_e23_st_e42_st_cb6_jun2025",
+          "block_id": "p004_c0002",
+          "page_number": 4,
+          "quote": "M1, M2, M3, M4, Q32 local buses"
+        },
+        {
+          "record_id": "route_m1-local-madison-ave-may2025",
+          "source_id": "madison_ave_e23_st_e42_st_cb5_may2025",
+          "block_id": "p004_c0002",
+          "page_number": 4,
+          "quote": "M1, M2, M3, M4, Q32 local buses"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_m1-madison-ave-may2025",
+      "target_id": "route_m1-local-madison-ave-may2025",
+      "reason": "Both records represent the same global M1 local bus route and cite the same Madison Avenue CB5 May 2025 source block. The alias and target share route_id M1, route_type_normalized local, service_variant local, and primary source.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "M1",
+          "route_type_normalized": "local",
+          "service_variant": "local",
+          "primary_source_id": "madison_ave_e23_st_e42_st_cb5_may2025"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "M1",
+          "route_type_normalized": "local",
+          "service_variant": "local",
+          "primary_source_id": "madison_ave_e23_st_e42_st_cb5_may2025"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "route_m1-madison-ave-may2025",
+          "source_id": "madison_ave_e23_st_e42_st_cb5_may2025",
+          "block_id": "p004_c0002",
+          "page_number": 4,
+          "quote": "M1, M2, M3, M4, Q32 local buses"
+        },
+        {
+          "record_id": "route_m1-local-madison-ave-may2025",
+          "source_id": "madison_ave_e23_st_e42_st_cb5_may2025",
+          "block_id": "p004_c0002",
+          "page_number": 4,
+          "quote": "M1, M2, M3, M4, Q32 local buses"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_bm4-church-ave-oct2019",
+      "target_id": "route_bm4-church-ave-cb12",
+      "reason": "Both records represent the same global BM4 express route in Church Avenue material. The alias and target share route_id BM4, route_type_normalized express, and service_variant express; both source blocks cite BM3 & BM4 express buses with direct Ocean Avenue service.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "route",
+          "route_id": "BM4",
+          "route_type_normalized": "express",
+          "service_variant": "express",
+          "primary_source_id": "church_ave_project_update_oct2019"
+        },
+        "target": {
+          "record_kind": "route",
+          "route_id": "BM4",
+          "route_type_normalized": "express",
+          "service_variant": "express",
+          "primary_source_id": "church_ave_cb12_jun2019"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "route_bm4-church-ave-oct2019",
+          "source_id": "church_ave_project_update_oct2019",
+          "block_id": "p007_c0002",
+          "page_number": 7,
+          "quote": "BM3 & BM4 express buses"
+        },
+        {
+          "record_id": "route_bm4-church-ave-cb12",
+          "source_id": "church_ave_cb12_jun2019",
+          "block_id": "p007_c0002",
+          "page_number": 7,
+          "quote": "BM3 & BM4 express buses"
+        }
+      ]
+    }
+  ],
+  "guard_summary": {
+    "record_existence_and_kind": {
+      "command": "sqlite3 -header -csv data/canonical.db \"select r.record_id,r.record_kind,r.display_name,rt.route_id,rt.route_type_normalized,json_extract(r.payload,'$.service_variant') as service_variant,r.primary_source_id from records r join routes rt on rt.record_id=r.record_id where r.record_id in (<selected aliases and targets>) order by rt.route_id,r.record_id;\"",
+      "result": "Returned all 12 selected alias/target records as record_kind=route. M34, M1 records are local/local; Bx41 records are limited_stop/limited_stop; BM4 records are express/express."
+    },
+    "existing_alias_conflicts": {
+      "identity_aliases_command": "sqlite3 -header -csv data/canonical.db \"select kind,alias,target from identity_aliases where kind in ('route','corridor') and alias in (<selected aliases and targets>);\"",
+      "identity_aliases_result": "Returned no rows.",
+      "merges_json_command": "jq -r --argjson ids '[<selected aliases and targets>]' '.aliases | to_entries[] | .key as $kind | .value | to_entries[] | select(.key as $k | ($ids | index($k))) | [$kind,.key,.value] | @tsv' data/identity-overrides/merges.json",
+      "merges_json_result": "Returned no rows."
+    },
+    "do_not_merge_conflicts": {
+      "db_command": "sqlite3 -header -csv data/canonical.db \"select kind,record_id_a,record_id_b,reason from do_not_merge where kind='route' and (record_id_a in (<selected aliases and targets>) or record_id_b in (<selected aliases and targets>));\"",
+      "db_result": "Returned no rows.",
+      "json_command": "jq -r --argjson ids '[<selected aliases and targets>]' '.pairs | to_entries[] | .key as $kind | .value[] | select(any(.record_ids[]; . as $rid | ($ids | index($rid)))) | [$kind,.record_ids[0],.record_ids[1],.reason] | @tsv' data/identity-overrides/do-not-merge.json",
+      "json_result": "Returned no rows."
+    },
+    "prior_prep_conflicts": {
+      "command": "jq -r --argjson ids '[<selected aliases>]' '.proposed_aliases[]? | select((.kind==\"route\" or .kind==\"corridor\") and ($ids | index(.alias_id))) | [.kind,.alias_id,.target_id] | @tsv' data/review_notes/codex-identity-batch0{47..99}-prep.json 2>/dev/null | sort -u",
+      "result": "Returned no rows; none of the selected alias_ids appeared in prior Codex identity prep artifacts through identity099."
+    },
+    "scope_and_variant_checks": {
+      "command": "sqlite3 -header -csv data/canonical.db \"select rt.route_id, rt.route_type_normalized, coalesce(json_extract(r.payload,'$.service_variant'),''), count(*) n, group_concat(r.record_id,' | ') ids from records r join routes rt on rt.record_id=r.record_id where r.record_kind='route' and rt.route_id is not null group by rt.route_id, rt.route_type_normalized, coalesce(json_extract(r.payload,'$.service_variant'),'') having n>1 order by n desc, rt.route_id limit 120;\"",
+      "result": "Selected only clusters with identical route_id and compatible normalized service variant/type: M34 local, Bx41 limited_stop, M1 local, and BM4 express. No corridors were proposed, so no corridor-limit ambiguity is introduced."
+    },
+    "source_evidence_commands": [
+      {
+        "command": "sqlite3 -header -csv data/canonical.db \"select e.record_id,e.source_id,e.block_id,e.page_number,json_extract(e.ref_json,'$.source_quote') as source_quote from evidence_refs e where e.record_id in (<selected aliases and targets>) order by e.record_id,e.ordinal;\"",
+        "result": "Confirmed citeable evidence refs exist for every selected alias and target record."
+      },
+      {
+        "command": "sqlite3 -header -csv data/canonical.db \"select source_id,block_id,substr(replace(replace(raw_text,char(10),' '),char(13),' '),1,260) as quote from blocks_fts where (<selected evidence refs>) order by source_id,block_id;\"",
+        "result": "Confirmed source blocks explicitly mention M34, Bx41 Limited/LTD, M1 local buses, and BM4 express buses used in the proposed aliases."
+      }
+    ],
+    "candidate_rejection_notes": [
+      "Dropped B69 candidates after inspection because one candidate's citeable source block was a B41 photo despite the route record's B69 description; retained only records with more direct route evidence.",
+      "Did not include corridor candidates; route-only aliases provided a full high-confidence batch and avoided corridor limit/scope ambiguity."
+    ],
+    "forbidden_command_compliance": {
+      "no_external_or_provider_backed_commands": true,
+      "no_profiles_or_providers": true,
+      "no_canonicalize_or_canonicalize_wave_or_canonicalize_review": true,
+      "no_campaign_dedup_or_identity_review_run": true,
+      "no_write_ask_schema_propose_or_ontology_normalize_run": true,
+      "no_materialize_export_jsonl_or_validate": true,
+      "inspection_commands_used": [
+        "pwd",
+        "rg",
+        "ls",
+        "git status --short",
+        "head",
+        "jq",
+        "sqlite3 data/canonical.db",
+        "date -u"
+      ],
+      "files_written": [
+        "data/review_notes/codex-identity-batch102-prep.json"
+      ]
+    }
+  }
+}

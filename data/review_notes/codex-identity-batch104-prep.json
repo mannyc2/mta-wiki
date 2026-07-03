@@ -1,0 +1,174 @@
+{
+  "batch_id": "codex-identity-batch104",
+  "created_at": "2026-06-23T04:20:58Z",
+  "scope": {
+    "kind": "project",
+    "mode": "Codex-only deterministic inspection",
+    "limit": 8
+  },
+  "prepared_count": 8,
+  "all_pass": true,
+  "expected_delta": {
+    "duplicate_global_identity": -8
+  },
+  "proposed_aliases": [
+    {
+      "kind": "project",
+      "alias_id": "project_meeting-doc-gct-retail",
+      "target_id": "project_gct-retail-development",
+      "reason": "Both records are the same Grand Central Terminal Retail Development project: identical project/display name, same retail-development scope at Grand Central Terminal, and compatible ongoing/reporting context.",
+      "source_evidence": [
+        "project_meeting-doc-gct-retail: meeting_doc_100316#p002_c0009, meeting_doc_100316#p002_c0010",
+        "project_gct-retail-development: meeting_doc_105786#p004_c0012; additional matching refs meeting_doc_128871#p004_c0022 and meeting_doc_128871#p004_c0023"
+      ],
+      "validator_evidence": [
+        "sqlite records/projects: alias display_name='Grand Central Terminal Retail Development', project_name='Grand Central Terminal Retail Development', project_type='retail development', primary_source_id='meeting_doc_100316'",
+        "sqlite records/projects: target display_name='Grand Central Terminal Retail Development', project_name='Grand Central Terminal Retail Development', project_type='retail development', status='ongoing', document_time_status='active'"
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_meeting-doc-gct-retail-development",
+      "target_id": "project_gct-retail-development",
+      "reason": "Both records identify the same Grand Central Terminal Retail Development annual retail-development project; the alias evidence repeats the target's project name and description text.",
+      "source_evidence": [
+        "project_meeting-doc-gct-retail-development: meeting_doc_102726#p004_c0017 and meeting_doc_102726#p004_c0018",
+        "project_gct-retail-development: meeting_doc_105786#p004_c0012 and meeting_doc_128871#p004_c0023"
+      ],
+      "validator_evidence": [
+        "sqlite records/projects: alias display_name='Grand Central Terminal Retail Development', project_name='Grand Central Terminal Retail Development', project_type='retail development', primary_source_id='meeting_doc_102726'",
+        "sqlite records/projects: target display_name='Grand Central Terminal Retail Development', project_name='Grand Central Terminal Retail Development', project_type='retail development'"
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_meeting-doc-121101-gct-retail-development",
+      "target_id": "project_gct-retail-development",
+      "reason": "The alias is another source-specific record for the same Grand Central Terminal Retail Development project, with identical project name, location, and annual retail-development scope.",
+      "source_evidence": [
+        "project_meeting-doc-121101-gct-retail-development: meeting_doc_121101#p005_c0015",
+        "project_gct-retail-development: meeting_doc_105786#p004_c0012 and meeting_doc_128871#p004_c0022"
+      ],
+      "validator_evidence": [
+        "sqlite records/projects: alias display_name='Grand Central Terminal Retail Development', project_name='Grand Central Terminal Retail Development', project_type='retail development', primary_source_id='meeting_doc_121101'",
+        "sqlite records/projects: target display_name='Grand Central Terminal Retail Development', project_name='Grand Central Terminal Retail Development', project_type='retail development'"
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_meeting-doc-way-ahead-strategic-plan",
+      "target_id": "project_way-ahead-strategic-plan",
+      "reason": "Both records describe Metro-North's Way Ahead Strategic Plan/progress report, including the same biannual-report description and strategic-plan type; source differences are repeated report instances, not distinct project identities.",
+      "source_evidence": [
+        "project_meeting-doc-way-ahead-strategic-plan: meeting_doc_100316#p003_c0013, meeting_doc_100316#p003_c0014, meeting_doc_98276#p003_c0020, meeting_doc_98276#p003_c0021",
+        "project_way-ahead-strategic-plan: meeting_doc_105786#p004_c0009 and meeting_doc_104761#p004_c0014"
+      ],
+      "validator_evidence": [
+        "sqlite records/projects: alias display_name='Way Ahead Strategic Plan', project_name='Way Ahead Strategic Plan', project_type='strategic plan', status='ongoing', document_time_status='active'",
+        "sqlite records/projects: target display_name='Way Ahead Strategic Plan', project_name='Way Ahead Strategic Plan', project_type='strategic plan', status='ongoing', document_time_status='active'"
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_willis-ave-grade-crossing-40156",
+      "target_id": "project_willis-ave-grade-crossing-elimination",
+      "reason": "Both records are the Willis Avenue Grade Crossing Elimination project, with identical project name and grade-crossing-elimination scope. Status differs only by source-time lifecycle framing.",
+      "source_evidence": [
+        "project_willis-ave-grade-crossing-40156: meeting_doc_40156#p005_c0002 and meeting_doc_40156#p005_c0003",
+        "project_willis-ave-grade-crossing-elimination: meeting_doc_91576#p030_c0014"
+      ],
+      "validator_evidence": [
+        "sqlite records/projects: alias display_name='Willis Avenue Grade Crossing Elimination', project_name='Willis Avenue Grade Crossing Elimination', project_type='grade crossing elimination', status='under construction', document_time_status='under_construction'",
+        "sqlite records/projects: target display_name='Willis Avenue Grade Crossing Elimination', project_name='Willis Avenue Grade Crossing Elimination', project_type='grade crossing elimination', status='ongoing', document_time_status='active'"
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_meeting-doc-104796-jamaica-bus-depot-reconstruction",
+      "target_id": "project_jamaica-bus-depot-reconstruction",
+      "reason": "Both records identify the Jamaica Bus Depot Reconstruction Project in Queens; the alias describes the same reconstruct/expand/modernize scope that is already represented by the broader target record.",
+      "source_evidence": [
+        "project_meeting-doc-104796-jamaica-bus-depot-reconstruction: meeting_doc_104796#p068_c0010",
+        "project_jamaica-bus-depot-reconstruction: meeting_doc_102786#p012_c0007; additional matching refs meeting_doc_106031#p065_c0004 and meeting_doc_44266#p111_c0008..p111_c0011"
+      ],
+      "validator_evidence": [
+        "sqlite records/projects: alias display_name='Jamaica Bus Depot Reconstruction Project', project_name='Jamaica Bus Depot Reconstruction Project', borough='Queens', primary_source_id='meeting_doc_104796'",
+        "sqlite records/projects: target display_name='Jamaica Bus Depot Reconstruction Project', project_name='Jamaica Bus Depot Reconstruction Project', project_type='capital project', status='proposed action', document_time_status='planned'"
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_meeting-doc-great-neck-pocket-track",
+      "target_id": "project_great-neck-pocket-track",
+      "reason": "Both records are the Great Neck Pocket Track ESA-readiness/track-expansion project providing train storage and operational flexibility for Grand Central Madison service; wording and scope match exactly.",
+      "source_evidence": [
+        "project_meeting-doc-great-neck-pocket-track: meeting_doc_102686#p004_c0005",
+        "project_great-neck-pocket-track: meeting_doc_100291#p005_c0001"
+      ],
+      "validator_evidence": [
+        "sqlite records/projects: alias display_name='Great Neck Pocket Track', project_name='Great Neck Pocket Track', project_type='ESA readiness project', status='signal cutover October/November 2022'",
+        "sqlite records/projects: target display_name='Great Neck Pocket Track', project_name='Great Neck Pocket Track', project_type='track expansion', status='under construction', document_time_status='under_construction'"
+      ]
+    },
+    {
+      "kind": "project",
+      "alias_id": "project_meeting-doc-114221-transforming-penn-station",
+      "target_id": "project_transforming-penn-station",
+      "reason": "Both records are the Transforming Penn Station redevelopment project; the alias is a design-phase notice-to-proceed source for the same named station transformation already represented by the target.",
+      "source_evidence": [
+        "project_meeting-doc-114221-transforming-penn-station: meeting_doc_114221#p004_c0002 and meeting_doc_114221#p004_c0003",
+        "project_transforming-penn-station: meeting_doc_109976#p006_c0001 and meeting_doc_109976#p008_c0001"
+      ],
+      "validator_evidence": [
+        "sqlite records/projects: alias display_name='Transforming Penn Station', project_name='Transforming Penn Station', project_type='station redevelopment', status='design phase'",
+        "sqlite records/projects: target display_name='Transforming Penn Station', project_name='Transforming Penn Station', status='in_progress'"
+      ]
+    }
+  ],
+  "guard_summary": {
+    "record_existence_and_kind": {
+      "command": "sqlite3 -header -csv data/canonical.db \"with ids(alias,target) as (...) select count(*) as ids_checked, sum(case when r.record_kind='project' then 1 else 0 end) as project_kind_count, group_concat(case when r.record_kind is null or r.record_kind!='project' then flat.id end, '|') as non_project_or_missing from flat left join records r on r.record_id=flat.id;\"",
+      "result": {
+        "ids_checked": 16,
+        "project_kind_count": 16,
+        "non_project_or_missing": ""
+      }
+    },
+    "existing_alias_conflicts": {
+      "command": "sqlite3 -header -csv data/canonical.db \"with ids(alias,target) as (...) select count(*) as alias_conflicts from ids where exists (select 1 from identity_aliases ia where ia.kind='project' and ia.alias=ids.alias) or exists (select 1 from json_each((select json_extract(readfile('data/identity-overrides/merges.json'),'$.aliases.project'))) ma where ma.key=ids.alias);\"",
+      "result": {
+        "alias_conflicts": 0
+      }
+    },
+    "do_not_merge_conflicts": {
+      "commands": [
+        {
+          "command": "sqlite3 -header -csv data/canonical.db \"with ids(alias,target) as (...) select count(*) as db_do_not_merge_conflicts from ids where exists (select 1 from do_not_merge d where d.kind='project' and ((d.record_id_a=ids.alias and d.record_id_b=ids.target) or (d.record_id_a=ids.target and d.record_id_b=ids.alias)));\"",
+          "result": {
+            "db_do_not_merge_conflicts": 0
+          }
+        },
+        {
+          "command": "jq -r '.pairs.project[]? | [.record_ids[0],.record_ids[1]] | @tsv' data/identity-overrides/do-not-merge.json | rg '<candidate ids>' | wc -l",
+          "result": 0
+        }
+      ]
+    },
+    "prior_prep_conflicts": {
+      "commands": [
+        {
+          "command": "rg --files data/review_notes | rg 'codex-identity-batch(0[0-9][0-9]|10[0-2])-prep\\.json$' | sort | wc -l",
+          "result": 56
+        },
+        {
+          "command": "for f in $(rg --files data/review_notes | rg 'codex-identity-batch(0[0-9][0-9]|10[0-2])-prep\\.json$' | sort); do jq -r --arg f \"$f\" '.proposed_aliases[]? | select(.kind==\"project\") | select(.alias_id==\"<candidate alias>\") | [.alias_id,.target_id,$f] | @tsv' \"$f\"; done",
+          "result": "no output"
+        }
+      ]
+    },
+    "forbidden_command_compliance": {
+      "status": "pass",
+      "evidence": "Preparation used local deterministic inspection only: rg, jq, sqlite3 data/canonical.db, date, test, git status, and apply_patch to create this artifact. No provider/profile-backed commands or forbidden runner commands were run."
+    }
+  }
+}

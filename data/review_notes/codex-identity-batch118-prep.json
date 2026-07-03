@@ -1,0 +1,580 @@
+{
+  "note_id": "codex-identity-batch118-prep",
+  "batch_id": "codex-identity-batch118",
+  "batch": "identity118",
+  "created_at": "2026-06-23T05:18:34Z",
+  "author": "Codex subagent deterministic prep",
+  "scope": {
+    "global_kind": "entity",
+    "record_kind": "entity",
+    "mode": "Codex-only deterministic inspection",
+    "output_only": "data/review_notes/codex-identity-batch118-prep.json"
+  },
+  "global_kind": "entity",
+  "prepared_count": 10,
+  "proposed_aliases": [
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_kawasaki-rail-car-inc",
+      "target_id": "entity_kawasaki-rail-car-inc",
+      "alias_id": "entity_meeting-doc-111791-kawasaki",
+      "canonical_name": "Kawasaki Rail Car, Inc.",
+      "alias_name": "Kawasaki Rail Car, Inc.",
+      "reason": "Both records are the same rolling-stock vendor. The canonical record already aggregates many Kawasaki Rail Car procurement mentions; the alias has the exact same display/entity name, acronym KRC, and describes Kawasaki as the supplier/vendor for M-9 and R211 rolling-stock work.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_kawasaki-rail-car-inc",
+          "entity_name": "Kawasaki Rail Car, Inc.",
+          "entity_type": "vendor",
+          "description": "Sole-source provider of replacement parts for MTA rolling stock fleets; located in Yonkers, New York",
+          "source_ids_sample": [
+            "meeting_doc_100351",
+            "meeting_doc_163126",
+            "meeting_doc_163201"
+          ],
+          "evidence_refs_sample": [
+            {
+              "evidence_id": "meeting_doc_100351#p005_c0005",
+              "source_quote": "exercise an option to purchase 640 additional subway cars ... from Kawasaki Rail Car, Inc."
+            },
+            {
+              "evidence_id": "meeting_doc_163201#p005_c0014",
+              "source_quote": "awarded to Kawasaki Rail Car, Inc."
+            }
+          ]
+        },
+        "alias": {
+          "record_id": "entity_meeting-doc-111791-kawasaki",
+          "entity_name": "Kawasaki Rail Car, Inc.",
+          "entity_type": "company",
+          "acronym": "KRC",
+          "description": "Supplier of rolling stock for M-9, R211 projects",
+          "source_ids": [
+            "meeting_doc_111791",
+            "meeting_doc_160601"
+          ],
+          "evidence_refs_sample": [
+            {
+              "evidence_id": "meeting_doc_111791#p012_c0002",
+              "source_quote": "LIRR M-9 Project ... Supplier: Kawasaki"
+            },
+            {
+              "evidence_id": "meeting_doc_160601#p002_c0003",
+              "role": "entity_details"
+            }
+          ]
+        }
+      },
+      "guard_notes": "Entity-only vendor merge. Exact legal display name match; no person, role, committee, agency/subunit, or office/person boundary involved."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_loduca-associates-inc",
+      "target_id": "entity_loduca-associates-inc",
+      "alias_id": "entity_meeting-doc-157771-loduca-associates",
+      "canonical_name": "Loduca Associates, Inc.",
+      "alias_name": "Loduca Associates, Inc.",
+      "reason": "Both records use the exact same contractor legal name and refer to Contract 217815 / partial demolition of the LIRR Alphapointe building.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_loduca-associates-inc",
+          "entity_name": "Loduca Associates, Inc.",
+          "entity_type": "contractor",
+          "source_ids": [
+            "meeting_doc_157656",
+            "meeting_doc_157696",
+            "meeting_doc_201541"
+          ],
+          "evidence_refs_sample": [
+            {
+              "evidence_id": "meeting_doc_157696#p005_c0006",
+              "source_quote": "Loduca Associates, Inc. $1,298,000 ... Contract # 217815 ... partial demolition of a LIRR Building (Alphapointe)."
+            }
+          ]
+        },
+        "alias": {
+          "record_id": "entity_meeting-doc-157771-loduca-associates",
+          "entity_name": "Loduca Associates, Inc.",
+          "entity_type": "vendor",
+          "description": "Construction contractor for Partial Building Demolition of LIRR building (Alphapointe)",
+          "source_ids": [
+            "meeting_doc_157771"
+          ],
+          "evidence_refs_sample": [
+            {
+              "evidence_id": "meeting_doc_157771#p027_c0003",
+              "source_quote": "Vendor Name Loduca Associates, Inc. Contract No. 217815 Description Partial Demolition of LIRR Building (Alphapointe)"
+            }
+          ]
+        }
+      },
+      "guard_notes": "Entity-only contractor/vendor merge. Exact legal name and same contract/project context."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_meeting-doc-111756-laser-tribology-bv",
+      "target_id": "entity_meeting-doc-111756-laser-tribology-bv",
+      "alias_id": "entity_meeting-doc-113891-laser-tribology",
+      "canonical_name": "Laser Tribology BV",
+      "alias_name": "Laser Tribology BV",
+      "reason": "Both records name Laser Tribology BV as the same vendor/firm for laser modules used for rail-based cleaning; the alias repeats the same LT acronym context.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_meeting-doc-111756-laser-tribology-bv",
+          "entity_name": "Laser Tribology BV",
+          "entity_type": "vendor",
+          "acronym": "LT",
+          "description": "Sole-source vendor providing laser train modules for rail-based cleaning to MNR and LIRR.",
+          "source_ids": [
+            "meeting_doc_111756",
+            "meeting_doc_194091"
+          ],
+          "evidence_refs_sample": [
+            {
+              "evidence_id": "meeting_doc_111756#p006_c0003",
+              "source_quote": "Vendor Name (Location) Laser Tribology BV (Amsterdam, The Netherlands) ... Lease of Laser Modules for Rail-Based Cleaning"
+            }
+          ]
+        },
+        "alias": {
+          "record_id": "entity_meeting-doc-113891-laser-tribology",
+          "entity_name": "Laser Tribology BV",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_113891"
+          ],
+          "evidence_refs_sample": [
+            {
+              "evidence_id": "meeting_doc_113891#p010_c0012",
+              "source_quote": "award ... to the firm Laser Tribology BV (\"LT\") for the lease of laser modules"
+            }
+          ]
+        }
+      },
+      "guard_notes": "Entity-only vendor/company merge. Exact name plus same LT acronym and laser-module service context."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_meeting-doc-167331-monsey-developers",
+      "target_id": "entity_meeting-doc-167331-monsey-developers",
+      "alias_id": "entity_monsey-developers-meeting-doc-167301",
+      "canonical_name": "Monsey Developers and Builders Inc.",
+      "alias_name": "Monsey Developers and Builders Inc.",
+      "reason": "Both records identify the same licensee, Monsey Developers and Builders Inc., for the same MNR Spring Valley / Commerce Street property license.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_meeting-doc-167331-monsey-developers",
+          "entity_name": "Monsey Developers and Builders Inc.",
+          "entity_type": "corporation",
+          "description": "Licensee seeking to license MNR property in Spring Valley, Rockland County, NY",
+          "source_ids": [
+            "meeting_doc_167261",
+            "meeting_doc_167331"
+          ],
+          "evidence_refs_sample": [
+            {
+              "evidence_id": "meeting_doc_167331#p001_c0007",
+              "source_quote": "LICENSEE: Monsey Developers and Builders Inc. LOCATION: Parcel of land located along Commerce Street ... Spring Valley, NY"
+            }
+          ]
+        },
+        "alias": {
+          "record_id": "entity_monsey-developers-meeting-doc-167301",
+          "entity_name": "Monsey Developers and Builders Inc.",
+          "entity_type": "private_company",
+          "source_ids": [
+            "meeting_doc_167301"
+          ],
+          "evidence_refs_sample": [
+            {
+              "evidence_id": "meeting_doc_167301#p009_c0007",
+              "source_quote": "LICENSEE: Monsey Developers and Builders Inc. LOCATION: Parcel of land located along Commerce Street ... Spring Valley, NY"
+            }
+          ]
+        }
+      },
+      "guard_notes": "Entity-only corporation/private-company merge. Exact legal name and same license/location/use context."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_nordic-signals-meeting-doc-170976",
+      "target_id": "entity_nordic-signals-meeting-doc-170976",
+      "alias_id": "entity_meeting-doc-171381-nordic-signals",
+      "canonical_name": "Nordic Signals Consulting ApS",
+      "alias_name": "Nordic Signals Consulting ApS",
+      "reason": "Both records use the exact same vendor name and describe consultant services for New York City Transit's signal modernization / CBTC program.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_nordic-signals-meeting-doc-170976",
+          "entity_name": "Nordic Signals Consulting ApS",
+          "entity_type": "vendor",
+          "description": "Awarded contract for consultant services for NYCT CBTC Signal Modernization Program",
+          "source_ids": [
+            "meeting_doc_170976"
+          ],
+          "evidence_refs_sample": [
+            {
+              "evidence_id": "meeting_doc_170976#p003_c0002",
+              "source_quote": "Nordic Signals Consulting ApS $4,396,032 Award ... consultant services to support New York City Transit's Communication-Based Train Control Signal Modernization Program."
+            }
+          ]
+        },
+        "alias": {
+          "record_id": "entity_meeting-doc-171381-nordic-signals",
+          "entity_name": "Nordic Signals Consulting ApS",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_171381"
+          ],
+          "evidence_refs_sample": [
+            {
+              "evidence_id": "meeting_doc_171381#p017_c0005",
+              "source_quote": "Vendor Name ... Nordic Signals Consulting ApS ... Description Consultant Services for New York City Transit's Subway Signal Modernization Program"
+            }
+          ]
+        }
+      },
+      "guard_notes": "Entity-only vendor/company merge. Exact name and same signal-modernization consultant contract context."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_ps-technology-201766",
+      "target_id": "entity_ps-technology-201766",
+      "alias_id": "entity_meeting-doc-201746-ps-technology",
+      "canonical_name": "PS Technology (PST)",
+      "alias_name": "PS Technology (PST)",
+      "reason": "Both records name PS Technology/PST as the same original developer/incumbent vendor for MNR and LIRR legacy crew management systems.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_ps-technology-201766",
+          "entity_name": "PS Technology",
+          "entity_type": "company",
+          "description": "Original developer and incumbent support vendor for MNR's legacy CMS and LIRR's legacy TEAMS crew management systems.",
+          "source_ids": [
+            "meeting_doc_201766"
+          ],
+          "evidence_refs_sample": [
+            {
+              "evidence_id": "meeting_doc_201766#p002_c0007",
+              "source_quote": "MNR's CMS was originally developed, implemented, and configured 25 years ago by PS Technology (\"PST\")."
+            }
+          ]
+        },
+        "alias": {
+          "record_id": "entity_meeting-doc-201746-ps-technology",
+          "entity_name": "PS Technology",
+          "entity_type": "vendor",
+          "acronym": "PST",
+          "description": "Developer and incumbent of legacy crew management systems for MNR and LIRR",
+          "source_ids": [
+            "meeting_doc_201746"
+          ],
+          "evidence_refs_sample": [
+            {
+              "evidence_id": "meeting_doc_201746#p006_c0007",
+              "source_quote": "MNR's CMS was originally developed, implemented, and configured 25 years ago by PS Technology (\"PST\")."
+            }
+          ]
+        }
+      },
+      "guard_notes": "Entity-only company/vendor merge. Exact display name with acronym and duplicate source sentence."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_parsons-transportation-group",
+      "target_id": "entity_parsons-transportation-group",
+      "alias_id": "entity_meeting-doc-201746-parsons-transportation-group",
+      "canonical_name": "Parsons Transportation Group",
+      "alias_name": "Parsons Transportation Group",
+      "reason": "Both records identify Parsons Transportation Group/PTG as the contractor/design-builder for the bus radio / land mobile digital radio system.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_parsons-transportation-group",
+          "entity_name": "Parsons Transportation Group",
+          "entity_type": "contractor",
+          "description": "Contractor for design, build, furnish, and install of the land mobile digital radio system (Bus Radio System)",
+          "source_ids": [
+            "meeting_doc_201751"
+          ],
+          "evidence_refs_sample": [
+            {
+              "evidence_id": "meeting_doc_201751#p004_c0009",
+              "source_quote": "MTA Board approved an award ... to Parsons Transportation Group (\"PTG\") to design, build, furnish, and install a new land mobile digital radio system"
+            }
+          ]
+        },
+        "alias": {
+          "record_id": "entity_meeting-doc-201746-parsons-transportation-group",
+          "entity_name": "Parsons Transportation Group",
+          "entity_type": "vendor",
+          "acronym": "PTG",
+          "description": "Design-builder of new land mobile digital radio system for DOB and MTABC",
+          "source_ids": [
+            "meeting_doc_201746"
+          ],
+          "evidence_refs_sample": [
+            {
+              "evidence_id": "meeting_doc_201746#p020_c0009",
+              "source_quote": "MTA Board approved an award ... to Parsons Transportation Group (\"PTG\") to design, build, furnish, and install a new land mobile digital radio system"
+            }
+          ]
+        }
+      },
+      "guard_notes": "Entity-only contractor/vendor merge. Exact name, same PTG acronym, and same bus radio system context."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_queens-future-llc-208006",
+      "target_id": "entity_queens-future-llc-208006",
+      "alias_id": "entity_queens-future-may2026",
+      "canonical_name": "Queens Future, LLC",
+      "alias_name": "Queens Future, LLC",
+      "reason": "Both records identify the same Queens Future, LLC joint venture consisting of Hard Rock Casino and Steve Cohen, tied to the downstate gaming license and Mets-Willets Point station commitments.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_queens-future-llc-208006",
+          "entity_name": "Queens Future, LLC",
+          "entity_type": "joint venture",
+          "description": "Joint venture consisting of Hard Rock Casino and Steve Cohen, owner of the New York Mets. Awarded a downstate gaming license by the New York State Gaming Commission.",
+          "source_ids": [
+            "meeting_doc_208006"
+          ],
+          "evidence_refs_sample": [
+            {
+              "evidence_id": "meeting_doc_208006#p044_c0009",
+              "source_quote": "Queens Future, a joint venture consisting of Hard Rock Casino and Steve Cohen, owner of the New York Mets, was awarded one of three downstate gaming licenses"
+            }
+          ]
+        },
+        "alias": {
+          "record_id": "entity_queens-future-may2026",
+          "entity_name": "Queens Future, LLC",
+          "entity_type": "joint venture",
+          "description": "Joint venture consisting of Hard Rock Casino and Steve Cohen, owner of the New York Mets",
+          "source_ids": [
+            "meeting_doc_208146"
+          ],
+          "evidence_refs_sample": [
+            {
+              "evidence_id": "meeting_doc_208146#p026_c0010",
+              "source_quote": "Queens Future, a joint venture consisting of Hard Rock Casino and Steve Cohen, owner of the New York Mets"
+            }
+          ]
+        }
+      },
+      "guard_notes": "Entity-only joint-venture merge. Same legal/display name and same ownership/license context; does not merge the component entities."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_meeting-doc-176501-tango",
+      "target_id": "entity_meeting-doc-176501-tango",
+      "alias_id": "entity_meeting-doc-176516-tango-analytics",
+      "canonical_name": "Tango Analytics LLC",
+      "alias_name": "Tango Analytics LLC",
+      "reason": "Both records name Tango Analytics LLC as the vendor for the MTA-wide Energy Management System / utility billing data management contract.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_meeting-doc-176501-tango",
+          "entity_name": "Tango Analytics LLC",
+          "entity_type": "vendor",
+          "description": "Energy Management System provider for MTA-wide utility billing data management",
+          "source_ids": [
+            "meeting_doc_176501"
+          ],
+          "evidence_refs_sample": [
+            {
+              "evidence_id": "meeting_doc_176501#p010_c0006",
+              "source_quote": "award ... to Tango Analytics LLC (\"Tango\"), to furnish and implement an MTA-wide Energy Management System"
+            }
+          ]
+        },
+        "alias": {
+          "record_id": "entity_meeting-doc-176516-tango-analytics",
+          "entity_name": "Tango Analytics LLC",
+          "entity_type": "vendor",
+          "source_ids": [
+            "meeting_doc_176516"
+          ],
+          "evidence_refs_sample": [
+            {
+              "evidence_id": "meeting_doc_176516#p001_c0003",
+              "source_quote": "Tango Analytics LLC $2,313,338 (est.) Contract award to furnish and implement an MTA-wide Energy Management System"
+            }
+          ]
+        }
+      },
+      "guard_notes": "Entity-only vendor merge. Exact legal/display name and same Energy Management System contract context."
+    },
+    {
+      "kind": "entity",
+      "global_kind": "entity",
+      "canonical_id": "entity_prevost-car-us",
+      "target_id": "entity_prevost-car-us",
+      "alias_id": "entity_meeting-doc-127476-prevost-car",
+      "canonical_name": "Prevost Car (US) Inc.",
+      "alias_name": "Prevost Car (US) Inc.",
+      "reason": "Both records identify Prevost Car (US) Inc. as the bus manufacturer/contractor for over-the-road express diesel buses, including the 250-bus purchase with options.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "entity_prevost-car-us",
+          "entity_name": "Prevost Car (US) Inc.",
+          "entity_type": "company",
+          "description": "Bus manufacturer, the Authority's only qualified source for over-the-road express diesel buses",
+          "source_ids": [
+            "meeting_doc_124311"
+          ],
+          "evidence_refs_sample": [
+            {
+              "evidence_id": "meeting_doc_124311#p006_c0003",
+              "source_quote": "Vendor Name (Location) Prevost Car (US) Inc. (Sainte Claire, Quebec) Description Furnish and Deliver 250 Over-the-Road Express Diesel Buses"
+            }
+          ]
+        },
+        "alias": {
+          "record_id": "entity_meeting-doc-127476-prevost-car",
+          "entity_name": "Prevost Car (US) Inc.",
+          "entity_type": "company",
+          "description": "Contractor for over-the-road express diesel buses",
+          "source_ids": [
+            "meeting_doc_127476",
+            "meeting_doc_127956"
+          ],
+          "evidence_refs_sample": [
+            {
+              "evidence_id": "meeting_doc_127476#p005_c0008",
+              "source_quote": "purchase contract to Prevost Car (US) Inc. for the purchase of 250 over-the-road diesel express buses"
+            },
+            {
+              "evidence_id": "meeting_doc_127956#p009_c0006",
+              "source_quote": "Prevost Car (US) Inc. (Contract No. B40695)"
+            }
+          ]
+        }
+      },
+      "guard_notes": "Entity-only company merge. Exact legal/display name and matching bus-manufacturer/procurement context."
+    }
+  ],
+  "aliases": [
+    {
+      "global_kind": "entity",
+      "target_id": "entity_kawasaki-rail-car-inc",
+      "alias_id": "entity_meeting-doc-111791-kawasaki"
+    },
+    {
+      "global_kind": "entity",
+      "target_id": "entity_loduca-associates-inc",
+      "alias_id": "entity_meeting-doc-157771-loduca-associates"
+    },
+    {
+      "global_kind": "entity",
+      "target_id": "entity_meeting-doc-111756-laser-tribology-bv",
+      "alias_id": "entity_meeting-doc-113891-laser-tribology"
+    },
+    {
+      "global_kind": "entity",
+      "target_id": "entity_meeting-doc-167331-monsey-developers",
+      "alias_id": "entity_monsey-developers-meeting-doc-167301"
+    },
+    {
+      "global_kind": "entity",
+      "target_id": "entity_nordic-signals-meeting-doc-170976",
+      "alias_id": "entity_meeting-doc-171381-nordic-signals"
+    },
+    {
+      "global_kind": "entity",
+      "target_id": "entity_ps-technology-201766",
+      "alias_id": "entity_meeting-doc-201746-ps-technology"
+    },
+    {
+      "global_kind": "entity",
+      "target_id": "entity_parsons-transportation-group",
+      "alias_id": "entity_meeting-doc-201746-parsons-transportation-group"
+    },
+    {
+      "global_kind": "entity",
+      "target_id": "entity_queens-future-llc-208006",
+      "alias_id": "entity_queens-future-may2026"
+    },
+    {
+      "global_kind": "entity",
+      "target_id": "entity_meeting-doc-176501-tango",
+      "alias_id": "entity_meeting-doc-176516-tango-analytics"
+    },
+    {
+      "global_kind": "entity",
+      "target_id": "entity_prevost-car-us",
+      "alias_id": "entity_meeting-doc-127476-prevost-car"
+    }
+  ],
+  "guard_summary": {
+    "global_kind_scope": "entity only",
+    "confidence_policy": "Only high-confidence proposals included.",
+    "shape_reminder": "Durable merge overrides use aliases.entity alias_id -> target_id entries; this prep artifact names both target_id/canonical_id and alias_id explicitly.",
+    "exclusion_policy": "Excluded entity alias IDs already present in data/identity-overrides/merges.json and entity alias IDs already prepared in visible codex-identity-batch047 through codex-identity-batch117 review notes.",
+    "conservative_guards": [
+      "No role/person, committee/member, agency/subunit, office/person, or source-time false-friend candidates included.",
+      "Candidates are exact display-name matches with legal/vendor/company/contractor context and source-backed evidence.",
+      "One candidate with an ASW/AWS source spelling mismatch was intentionally dropped during prep."
+    ]
+  },
+  "command_evidence": [
+    {
+      "command": "rg --files data/review_notes data/identity-overrides data/canonical data/materialized",
+      "purpose": "Inventory visible review notes, overrides, and canonical files."
+    },
+    {
+      "command": "jq '.aliases.entity | keys[]' data/identity-overrides/merges.json",
+      "purpose": "Build durable entity alias exclusion set; observed alias_id -> target_id shape."
+    },
+    {
+      "command": "jq -r '[.aliases[]?, .proposed_aliases[]?, .proposals[]?] | .[] | select((.global_kind // .kind)==\"entity\") | (.alias_id // .alias // .source_id // empty)' data/review_notes/codex-identity-batch0{47..99}-prep.json data/review_notes/codex-identity-batch1{00..17}-prep.json",
+      "purpose": "Build visible prior prepared entity alias exclusion set through identity117."
+    },
+    {
+      "command": "jq duplicate-display-name scans over data/canonical/entities.jsonl with the combined exclusion set",
+      "purpose": "Find exact display-name duplicate entity records, then narrow to legal/vendor/company/contractor candidates."
+    },
+    {
+      "command": "jq selected-record extraction from data/canonical/entities.jsonl and cited raw/sources/*/blocks.jsonl",
+      "purpose": "Collect deterministic source-backed evidence for selected proposed aliases."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "purpose": "Set created_at timestamp."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema-propose",
+    "ontology-normalize-run",
+    "ingest/write with --profile/provider",
+    "materialize",
+    "validate",
+    "export-jsonl",
+    "DB publish/repair",
+    "provider-backed or external LLM commands"
+  ]
+}

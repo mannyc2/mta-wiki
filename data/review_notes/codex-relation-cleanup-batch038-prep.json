@@ -1,0 +1,405 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch038-prep",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "batch": "batch038",
+  "run_id_for_replacements": "2026-06-23_codex_relation_cleanup_batch038",
+  "durable_mechanism_prepared_not_applied": {
+    "retire_originals_via": "data/submission-overrides/retired.json",
+    "replacement_journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch038.jsonl",
+    "mutation_status": "not_applied_by_this_prep",
+    "only_file_written_by_this_task": "data/review_notes/codex-relation-cleanup-batch038-prep.json"
+  },
+  "bucket": {
+    "name": "part_of_program event-to-entity LIRR Committee work-plan agenda rows",
+    "original_relation_kind": "part_of_program",
+    "original_endpoint_shape": "event -> entity",
+    "replacement_relation_kind": "has_timeline_event",
+    "replacement_endpoint_shape": "entity -> event",
+    "prepared_count": 2,
+    "why_coherent": "After relation037 and identity069, the current endpoint-shape backlog has 38 rows. The selected two-row bucket is from one source, meeting_doc_133306, where committee work-plan agenda items were modeled as event -> entity part_of_program relations. Current endpoint rules allow has_timeline_event entity -> event, and the source text names the Long Island Rail Road Committee Work Plan plus the February/April 2024 agenda items. Replacing the rows as committee entity -> agenda event preserves the source-backed meaning without widening part_of_program."
+  },
+  "checkpoint_context": {
+    "reported_checkpoint": "relation037 has been applied/materialized/validated; current remaining unexpected_relation_endpoint_shape backlog is 38 after relation037/identity069.",
+    "read_only_probe": "Computed current shaped relation issues from data/canonical.db with the endpoint shapes in packages/pipeline/src/records/relations.ts.",
+    "remaining_endpoint_shape_inventory_after_relation037_identity069": {
+      "total": 38,
+      "selected_bucket": "part_of_program event->entity",
+      "selected_bucket_count": 2,
+      "top_buckets_observed": [
+        {
+          "bucket": "implemented_by route->entity",
+          "count": 2
+        },
+        {
+          "bucket": "part_of_program event->entity",
+          "count": 2
+        },
+        {
+          "bucket": "has_claim claim->claim",
+          "count": 1
+        },
+        {
+          "bucket": "has_claim treatment_component->claim",
+          "count": 1
+        },
+        {
+          "bucket": "has_timeline_event entity->metric_claim",
+          "count": 1
+        }
+      ]
+    },
+    "endpoint_shape_probe": {
+      "part_of_program event->entity": "Relation kind part_of_program expects project|route -> project|entity, got event -> entity.",
+      "has_timeline_event entity->event": "accepted by current endpoint-shape rules"
+    }
+  },
+  "exclusions_and_guards": {
+    "excluded_prior_relation_batches": [
+      "batch017",
+      "batch018",
+      "batch019",
+      "batch020",
+      "batch021",
+      "batch022",
+      "batch023",
+      "batch024",
+      "batch025",
+      "batch026",
+      "batch027",
+      "batch028",
+      "batch029",
+      "batch030",
+      "batch031",
+      "batch032",
+      "batch033",
+      "batch034",
+      "batch035",
+      "batch036",
+      "batch037"
+    ],
+    "missing_target_repair_excluded": true,
+    "retired_json_not_edited": true,
+    "submission_journals_not_edited": true,
+    "generated_outputs_not_edited": true,
+    "db_not_edited": true,
+    "log_not_edited": true,
+    "manifest_merges_retired_not_edited": true,
+    "wiki_not_edited": true,
+    "original_submission_guard": {
+      "retired_hits": [],
+      "prior_relation_batch_prepared_submission_hits": [],
+      "prior_relation_batch_prepared_record_hits": [],
+      "prior_deferred_mentions_not_prepared": [
+        {
+          "file": "data/review_notes/codex-relation-cleanup-batch031-prep.json",
+          "record_id": "relation_budget-event-committee-133306",
+          "note": "Mentioned only under deferred_from_selected_family, not in prepared decisions."
+        },
+        {
+          "file": "data/review_notes/codex-relation-cleanup-batch031-prep.json",
+          "record_id": "relation_ridership-event-committee-133306",
+          "note": "Mentioned only under deferred_from_selected_family, not in prepared decisions."
+        }
+      ]
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": [],
+      "existing_valid_relation_collision_hits": []
+    }
+  },
+  "local_validation": {
+    "clean": true,
+    "tooling": "createSubmissionEntry dry run for replacement tool_args plus relationEndpointIssues using accepted local ids from meeting_doc_133306; relationEndpointShapeIssue checked for has_timeline_event entity->event.",
+    "summary": {
+      "prepared_count": 2,
+      "retire_replace_count": 2,
+      "retire_only_count": 0,
+      "accepted_replacement_count": 2,
+      "issue_count": 0,
+      "warning_count": 0,
+      "relation_endpoint_issue_count": 0,
+      "endpoint_shape_issue_count_after_replacement": 0,
+      "known_local_ids_present": [
+        "entity_lirr_committee_work_plan_133306",
+        "event_adopted_budget_finplan_2024_133306",
+        "event_2023_annual_ridership_report_133306"
+      ]
+    }
+  },
+  "prepared": [
+    {
+      "retire": {
+        "submission_id": "sub_2dedf75980350dd9",
+        "run_id": "2026-06-20T14-41-02-937Z_1885472-367e3d05_ingest_meeting-doc-133306",
+        "original_record_id": "relation_budget-event-committee-133306",
+        "original_local_observation_id": "relation_budget_event_committee_133306",
+        "malformed_shape": "part_of_program event -> entity",
+        "original_relation_kind": "part_of_program",
+        "original_subject_id": "event_adopted-budget-finplan-2024-133306",
+        "original_subject_local_observation_id": "event_adopted_budget_finplan_2024_133306",
+        "original_subject_name": "Adopted Budget/Financial Plan 2024",
+        "original_object_id": "entity_lirr-committee-meeting-doc-131511",
+        "original_object_local_observation_id": "entity_lirr_committee_work_plan_133306",
+        "original_object_name": "Long Island Rail Road Committee",
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_2dedf75980350dd9",
+          "reason": "Codex relation cleanup batch038 replaces malformed part_of_program event -> entity relation relation_budget-event-committee-133306 with validator-compatible has_timeline_event entity -> event relation preserving LIRR Committee work-plan agenda evidence.",
+          "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch038",
+          "reviewed_at": "2026-06-23T00:00:00Z"
+        },
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_133306",
+            "evidence_id": "meeting_doc_133306#p003_c0010",
+            "source_path": "raw/sources/meeting_doc_133306/blocks.jsonl",
+            "page_number": 3,
+            "block_id": "p003_c0010",
+            "text_sha256": "sha256:76a88ca54f0d278aa15681fae1d438e7b26b385dddae04b7397b7ad9af800a30",
+            "text_source": "raw_text",
+            "source_quote": "Adopted Budget/Financial Plan 2024"
+          }
+        ],
+        "reason": "The original row treats the agenda event as part_of_program of the committee entity. The source supports the reverse contextual relation: the LIRR Committee Work Plan has a February 2024 timeline/agenda event for Adopted Budget/Financial Plan 2024.",
+        "confidence": "high"
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_f00c2906cd092fae",
+        "tool_args_sha256": "sha256:f00c2906cd092fae54bc6bf86d234f9550d93b627b1112c92190e9a6531dc4ce",
+        "proposed_relation_kind": "has_timeline_event",
+        "proposed_endpoint_shape": "entity -> event",
+        "tool_args": {
+          "source_id": "meeting_doc_133306",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch038_lirr_committee_has_timeline_budget_plan_2024",
+          "label": "LIRR Committee has timeline event Adopted Budget/Financial Plan 2024",
+          "raw_text": "The LIRR Committee Work Plan lists Adopted Budget/Financial Plan 2024 as a February 2024 specific agenda item.",
+          "payload": {
+            "relation_kind": "has_timeline_event",
+            "subject_local_observation_id": "entity_lirr_committee_work_plan_133306",
+            "object_local_observation_id": "event_adopted_budget_finplan_2024_133306",
+            "description": "Replacement for malformed part_of_program event -> entity relation; source identifies the Long Island Rail Road Committee Work Plan and lists Adopted Budget/Financial Plan 2024 as a February 2024 specific agenda item.",
+            "relation_family": "timeline_context"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_133306",
+              "evidence_id": "meeting_doc_133306#p002_c0009",
+              "source_path": "raw/sources/meeting_doc_133306/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0009",
+              "text_sha256": "sha256:3b0ecc6c2d3a86a75c04a7b6f96fb3b6e06bcb28bcebb77754508ac9a0e496bc",
+              "text_source": "raw_text",
+              "role": "timeline_owner",
+              "source_quote": "LONG ISLAND RAIL ROAD COMMITTEE WORK PLAN"
+            },
+            {
+              "source_id": "meeting_doc_133306",
+              "evidence_id": "meeting_doc_133306#p003_c0009",
+              "source_path": "raw/sources/meeting_doc_133306/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0009",
+              "text_sha256": "sha256:305b5fa764ef6cfdf86bb5204af5e5b5fcfbdd5b33bf3f391d59400825537f42",
+              "text_source": "raw_text",
+              "role": "event_date_context",
+              "source_quote": "FEBRUARY 2024"
+            },
+            {
+              "source_id": "meeting_doc_133306",
+              "evidence_id": "meeting_doc_133306#p003_c0010",
+              "source_path": "raw/sources/meeting_doc_133306/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0010",
+              "text_sha256": "sha256:76a88ca54f0d278aa15681fae1d438e7b26b385dddae04b7397b7ad9af800a30",
+              "text_source": "raw_text",
+              "role": "timeline_event",
+              "source_quote": "Adopted Budget/Financial Plan 2024"
+            },
+            {
+              "source_id": "meeting_doc_133306",
+              "evidence_id": "meeting_doc_133306#p003_c0011",
+              "source_path": "raw/sources/meeting_doc_133306/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0011",
+              "text_sha256": "sha256:24b77c748f31303f9c18d3e31d8a8f6ad97912fa44456e18ac6cd1d16d942e44",
+              "text_source": "raw_text",
+              "role": "event_description",
+              "source_quote": "The Agency will present its revised 2024 Financial Plan."
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue_after_replacement": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_dcb73cfdab54f987",
+        "run_id": "2026-06-20T14-41-02-937Z_1885472-367e3d05_ingest_meeting-doc-133306",
+        "original_record_id": "relation_ridership-event-committee-133306",
+        "original_local_observation_id": "relation_ridership_event_committee_133306",
+        "malformed_shape": "part_of_program event -> entity",
+        "original_relation_kind": "part_of_program",
+        "original_subject_id": "event_2023-annual-ridership-report-133306",
+        "original_subject_local_observation_id": "event_2023_annual_ridership_report_133306",
+        "original_subject_name": "2023 Annual Ridership Report",
+        "original_object_id": "entity_lirr-committee-meeting-doc-131511",
+        "original_object_local_observation_id": "entity_lirr_committee_work_plan_133306",
+        "original_object_name": "Long Island Rail Road Committee",
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_dcb73cfdab54f987",
+          "reason": "Codex relation cleanup batch038 replaces malformed part_of_program event -> entity relation relation_ridership-event-committee-133306 with validator-compatible has_timeline_event entity -> event relation preserving LIRR Committee work-plan agenda evidence.",
+          "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch038",
+          "reviewed_at": "2026-06-23T00:00:00Z"
+        },
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_133306",
+            "evidence_id": "meeting_doc_133306#p003_c0022",
+            "source_path": "raw/sources/meeting_doc_133306/blocks.jsonl",
+            "page_number": 3,
+            "block_id": "p003_c0022",
+            "text_sha256": "sha256:3e1ada4f6f349d9d347ea6aaece7fa107e3590e5f641aa49ec53a26a40777c5b",
+            "text_source": "raw_text",
+            "source_quote": "2023 Annual Ridership Report"
+          }
+        ],
+        "reason": "The original row treats the agenda event as part_of_program of the committee entity. The source supports the reverse contextual relation: the LIRR Committee Work Plan has an April 2024 timeline/agenda event for the 2023 Annual Ridership Report.",
+        "confidence": "high"
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_b16461bf4deb7a45",
+        "tool_args_sha256": "sha256:b16461bf4deb7a45a9288de18714bcbd5839b514b87ebcdd1f6762d9012b0422",
+        "proposed_relation_kind": "has_timeline_event",
+        "proposed_endpoint_shape": "entity -> event",
+        "tool_args": {
+          "source_id": "meeting_doc_133306",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch038_lirr_committee_has_timeline_ridership_report_2023",
+          "label": "LIRR Committee has timeline event 2023 Annual Ridership Report",
+          "raw_text": "The LIRR Committee Work Plan lists 2023 Annual Ridership Report as an April 2024 specific agenda item.",
+          "payload": {
+            "relation_kind": "has_timeline_event",
+            "subject_local_observation_id": "entity_lirr_committee_work_plan_133306",
+            "object_local_observation_id": "event_2023_annual_ridership_report_133306",
+            "description": "Replacement for malformed part_of_program event -> entity relation; source identifies the Long Island Rail Road Committee Work Plan and lists 2023 Annual Ridership Report as an April 2024 specific agenda item.",
+            "relation_family": "timeline_context"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_133306",
+              "evidence_id": "meeting_doc_133306#p002_c0009",
+              "source_path": "raw/sources/meeting_doc_133306/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0009",
+              "text_sha256": "sha256:3b0ecc6c2d3a86a75c04a7b6f96fb3b6e06bcb28bcebb77754508ac9a0e496bc",
+              "text_source": "raw_text",
+              "role": "timeline_owner",
+              "source_quote": "LONG ISLAND RAIL ROAD COMMITTEE WORK PLAN"
+            },
+            {
+              "source_id": "meeting_doc_133306",
+              "evidence_id": "meeting_doc_133306#p003_c0021",
+              "source_path": "raw/sources/meeting_doc_133306/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0021",
+              "text_sha256": "sha256:0858bc376780d898e04288c81a2bbfedce940541ff2c8d9a25212800f1c93616",
+              "text_source": "raw_text",
+              "role": "event_date_context",
+              "source_quote": "APRIL 2024"
+            },
+            {
+              "source_id": "meeting_doc_133306",
+              "evidence_id": "meeting_doc_133306#p003_c0022",
+              "source_path": "raw/sources/meeting_doc_133306/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0022",
+              "text_sha256": "sha256:3e1ada4f6f349d9d347ea6aaece7fa107e3590e5f641aa49ec53a26a40777c5b",
+              "text_source": "raw_text",
+              "role": "timeline_event",
+              "source_quote": "2023 Annual Ridership Report"
+            },
+            {
+              "source_id": "meeting_doc_133306",
+              "evidence_id": "meeting_doc_133306#p003_c0023",
+              "source_path": "raw/sources/meeting_doc_133306/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0023",
+              "text_sha256": "sha256:0115cfcbf8c657885cdd71aa6b3675c638f7ab766491f35ee59ea604e1d75710",
+              "text_source": "raw_text",
+              "role": "event_description",
+              "source_quote": "A report will be presented to the Committee on Agency ridership trends during 2023"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue_after_replacement": null
+        },
+        "confidence": "high"
+      }
+    }
+  ],
+  "command_evidence": [
+    {
+      "command": "sqlite3 -json data/canonical.db '<endpoint-shape inventory query>'",
+      "allowed_mode": "read-only sqlite inspection",
+      "result": "Current unexpected_relation_endpoint_shape inventory totals 38; selected bucket part_of_program event->entity has count 2."
+    },
+    {
+      "command": "sqlite3 -json data/canonical.db '<selected relation detail query>'",
+      "allowed_mode": "read-only sqlite inspection",
+      "result": "Selected rows are relation_budget-event-committee-133306 and relation_ridership-event-committee-133306, both part_of_program event -> entity, both pointing agenda events at entity_lirr-committee-meeting-doc-131511."
+    },
+    {
+      "command": "rg -n 'p003_c00(10|22)|LONG ISLAND RAIL ROAD COMMITTEE|Adopted Budget|Ridership Report' raw/sources/meeting_doc_133306/blocks.jsonl",
+      "allowed_mode": "read-only rg inspection",
+      "result": "Source blocks confirm the LIRR Committee Work Plan heading and agenda-item headings for Adopted Budget/Financial Plan 2024 and 2023 Annual Ridership Report."
+    },
+    {
+      "command": "bun --eval '<createSubmissionEntry dry run for two batch038 replacements without appending>'",
+      "allowed_mode": "read-only bun dry run",
+      "result": "Both replacements accepted with deterministic submission ids sub_f00c2906cd092fae and sub_b16461bf4deb7a45; issues=[], warnings=[], relationEndpointIssues=[], endpoint_shape_issue_after_replacement=null."
+    },
+    {
+      "command": "rg -n '<original and replacement ids>' data/submission-overrides/retired.json data/submissions data/review_notes",
+      "allowed_mode": "read-only rg inspection",
+      "result": "Original submissions are not retired and are not in prior prepared decisions; replacement submission ids/local ids have no existing hits. The two record ids appear in batch031 only as deferred candidates."
+    },
+    {
+      "command": "sqlite3 -json data/canonical.db '<existing replacement collision query>'",
+      "allowed_mode": "read-only sqlite inspection",
+      "result": "No current has_timeline_event entity_lirr-committee-meeting-doc-131511 -> selected event relation already exists."
+    },
+    {
+      "command": "jq empty data/review_notes/codex-relation-cleanup-batch038-prep.json",
+      "allowed_mode": "local JSON syntax check",
+      "result": "Passed; follow-up jq summary reported batch038, prepared_count=2, blockers=[], local_validation.clean=true."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "bun packages/cli/src/cli.ts canonicalize",
+    "bun packages/cli/src/cli.ts campaign dedup",
+    "bun packages/cli/src/cli.ts identity-review-run",
+    "bun packages/cli/src/cli.ts write",
+    "bun packages/cli/src/cli.ts ask",
+    "bun packages/cli/src/cli.ts schema",
+    "bun packages/cli/src/cli.ts ontology-normalize-run",
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts export-jsonl",
+    "bun packages/cli/src/cli.ts validate",
+    "database repair or publish commands",
+    "any command with --profile or provider-backed execution"
+  ],
+  "blockers": []
+}

@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "review_state": "corrected",
+  "accepted_at": "2026-06-08T21:21:36.731Z",
+  "reviewer": "codex-audit-2026-06-08",
+  "source": "audit_corrected_action_rationale_contradiction",
+  "cluster_id": "entity_cluster_005",
+  "kind": "entity",
+  "packet_path": "data/identity-review/packets/entity_cluster_005.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_005.json",
+  "source_review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "model": "pioneer/deepseek-ai/DeepSeek-V4-Flash",
+  "correction": {
+    "original_issue": "LLM output placed NYC DOT and Mike Flynn in merge_groups while its own rationale said agency and official are distinct.",
+    "applied_fix": "Removed merge_groups and converted the pair to do_not_merge using the LLM rationale."
+  },
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "entity_nyc-dot",
+        "entity_nycdot-commissioner-mike-flynn"
+      ],
+      "reason": "entity_nyc-dot represents the NYC Department of Transportation (an agency, entity_type: agency). entity_nycdot-commissioner-mike-flynn represents Mike Flynn, a government official at NYC DOT (entity_type: government_official). The shared identity key 'entity_nyc-dot' appears in the commissioner's record's identity_keys and aliases, but the payload_identity_fields clearly distinguish entity_type ('agency' vs 'government_official') and entity_name ('New York City Department of Transportation' vs 'Mike Flynn'). The commissioner's record has agency_name 'NYC Department of Transportation' confirming affiliation, not identity. These are related but distinct entities — a person and their employer — and should not be merged."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [
+    "Do not merge entity records where one is a government official and the other is a government agency solely because the official is affiliated with that agency. The entity_type field (government_official vs agency) is a decisive distinguishing identity field."
+  ],
+  "rationale": "entity_nyc-dot represents the NYC Department of Transportation (an agency, entity_type: agency). entity_nycdot-commissioner-mike-flynn represents Mike Flynn, a government official at NYC DOT (entity_type: government_official). The shared identity key 'entity_nyc-dot' appears in the commissioner's record's identity_keys and aliases, but the payload_identity_fields clearly distinguish entity_type ('agency' vs 'government_official') and entity_name ('New York City Department of Transportation' vs 'Mike Flynn'). The commissioner's record has agency_name 'NYC Department of Transportation' confirming affiliation, not identity. These are related but distinct entities — a person and their employer — and should not be merged."
+}

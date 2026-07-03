@@ -1,0 +1,129 @@
+{
+  "id": "codex-source-block-context-project-status-2026-06-30-i",
+  "date": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "provider_backed_commands_used": false,
+  "forbidden_commands_used": false,
+  "summary": "Added bounded source-block normalization context for project/event materialization replay, landed four context-proven project document_time_status gates, and guarded the generated block FTS index after full-corpus trigram population produced malformed SQLite b-trees.",
+  "baseline_before": {
+    "event_family_other": 159,
+    "project_document_time_status_missing": 56,
+    "project_family_unresolved": 10,
+    "relation_family_unresolved": 0,
+    "relation_kind_unresolved": 0,
+    "treatment_family_unresolved": 0,
+    "treatment_kind_unresolved": 0,
+    "route_records": 320
+  },
+  "after": {
+    "event_family_other": 157,
+    "project_document_time_status_missing": 52,
+    "project_family_unresolved": 10,
+    "relation_family_unresolved": 0,
+    "relation_kind_unresolved": 0,
+    "treatment_family_unresolved": 0,
+    "treatment_kind_unresolved": 0,
+    "route_records": 320,
+    "target_project_statuses": {
+      "project_mnrr-white-plains-esi": "implemented",
+      "project_meeting-doc-127476-zero-emission": "active",
+      "project_moodna-viaduct-timber-replacement-inspection": "active",
+      "project_new-canaan-branch-cyclical-trackwork": "active"
+    }
+  },
+  "implemented_changes": [
+    {
+      "area": "materializer_normalization_context",
+      "files": [
+        "packages/pipeline/src/materialize/materialize.ts",
+        "packages/pipeline/test/materialize/materialize.test.ts"
+      ],
+      "details": [
+        "Precomputes exact cited source-block text for project/event submissions whose evidence_refs lack source_quote.",
+        "Caps context at 8 refs, 12000 chars per record, and 4000 chars per ref.",
+        "Uses block text only as read-only NormalizationContext; does not synthesize payload.raw_text, payload.evidence_quotes, or evidence_refs.source_quote."
+      ]
+    },
+    {
+      "area": "project_status_normalization",
+      "files": [
+        "packages/pipeline/src/ontology/normalizers.ts",
+        "packages/pipeline/test/ontology/normalizers.test.ts"
+      ],
+      "details": [
+        "Enhanced Station Initiative at White Plains station maps to implemented only with completed-renovation source context.",
+        "Zero-Emission commitment maps to active only with continued-progress plus charging-infrastructure source context.",
+        "Moodna Viaduct timber replacement and inspection and New Canaan Branch cyclical trackwork map to active only with continuation/funding source context."
+      ]
+    },
+    {
+      "area": "generated_sqlite_fts_guard",
+      "files": [
+        "packages/db/src/fts.ts",
+        "packages/db/test/fts.test.ts"
+      ],
+      "details": [
+        "records_fts remains populated for identity/name search.",
+        "blocks_fts remains schema-only by default because full-corpus Bun/SQLite trigram population produced malformed SQLite FTS b-trees.",
+        "Full block FTS can be opted in with MTA_ENABLE_BLOCKS_FTS=1 after the SQLite stack issue is resolved."
+      ]
+    }
+  ],
+  "subagent_audits": {
+    "event_family": {
+      "baseline_other": 159,
+      "safe_candidate_slice": 16,
+      "implemented_this_slice": "Only the source-block context unlocks landed here; broader event scout slice remains available."
+    },
+    "project_residuals": {
+      "baseline_status_missing": 56,
+      "baseline_family_unresolved": 10,
+      "implemented_this_slice": 4
+    },
+    "relation_taxonomy": {
+      "relation_family_unresolved": 0,
+      "relation_kind_unresolved": 0
+    },
+    "treatment_taxonomy": {
+      "treatment_family_unresolved": 0,
+      "treatment_kind_unresolved": 0,
+      "noisy_actionable_union": 39
+    },
+    "identity_keys": {
+      "entity_raw_duplicate_groups": 2,
+      "entity_unsuppressed_groups": 0,
+      "project_duplicate_key_groups": 0,
+      "route_duplicate_key_groups": 0,
+      "remaining_candidate": "route_far-rockaway-branch-127546 -> route_lirr-far-rockaway-branch-2023"
+    }
+  },
+  "verification": {
+    "focused_tests": [
+      "bun test packages/pipeline/test/materialize/materialize.test.ts packages/pipeline/test/ontology/normalizers.test.ts",
+      "312 pass, 0 fail"
+    ],
+    "typecheck": "bun run typecheck",
+    "materialize": "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+    "sqlite_quick_check": "ok",
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "issues": 0,
+      "submissions": 98102,
+      "canonical_records": 84048,
+      "wiki_pages": 7337
+    },
+    "fts_rows": {
+      "records_fts": 84048,
+      "blocks_fts": 0
+    },
+    "not_completed": [
+      "bun test packages/db/test/fts.test.ts was stopped after several minutes because the live-corpus records_fts equivalence loop was too slow for the burst turn; SQLite quick_check and direct FTS row-count checks passed."
+    ]
+  },
+  "remaining_lanes": [
+    "Implement the safe residual event-family scout slice if desired: expected event_family other 157 -> about 143 after accounting for already-unlocked source-block context records.",
+    "Decide treatment representation policy for the 39-record noisy/actionable union, especially bus_priority bundles, route_type treatment records, pure monitoring/timeline records, and amenity_or_public_art.",
+    "Review the single high-confidence Far Rockaway Branch route merge/key-generation candidate.",
+    "Resolve or replace full-source blocks_fts population before re-enabling MTA_ENABLE_BLOCKS_FTS by default."
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "run_id": "2026-06-10T23-11-38-845Z_1976810-e9238494_ingest_2013-03-sbs-webster-bx-cb5",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T03:36:42.106Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "entity-mta-nyct-new",
+        "local_observation_id": "entity_mta_nyct_2013_03_webster_cb5",
+        "decision": "new",
+        "rationale": "Observation refers to MTA New York City Transit. Its base_record_id 'entity_mta-nyct' matches the existing registry record entity_mta-nyct exactly. The observation is an alternative mention of the same agency in the same source document (2013_03_sbs_webster_bx_cb5). Since the closest match IS the observation's own base_record_id, this is new (the observation already resolves to that id).",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb5",
+            "block_id": "p001_c0001",
+            "source_quote": "New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-nyc-dot-new",
+        "local_observation_id": "entity_nyc_dot_2013_03_webster_cb5",
+        "decision": "new",
+        "rationale": "Observation refers to NYC Department of Transportation. Its base_record_id 'entity_nyc-dot' matches the existing registry record entity_nyc-dot exactly. The observation is an alternative mention of the same agency from the same source document. Since the closest match IS the observation's own base_record_id, this is new (the observation already resolves to that id).",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb5",
+            "block_id": "p003_c0004",
+            "source_quote": "The New York City Department of Transportation logo, which is a small square containing a stylized globe and the text 'NEW YORK CITY' above it."
+          }
+        ]
+      },
+      {
+        "decision_id": "entity-bronx-cb5-new",
+        "local_observation_id": "entity_bronx_cb5_2013_03_webster",
+        "decision": "new",
+        "rationale": "Observation refers to Community Board 5 (Bronx). Its base_record_id 'entity_bronx-cb5-2012-11-webster' matches the existing registry record entity_bronx-cb5-2012-11-webster exactly. The registry record already lists 'entity_bronx-cb5-2013-03-webster' as an alias and includes source_id '2013_03_sbs_webster_bx_cb5'. Since the closest match IS the observation's own base_record_id, this is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_sbs_webster_bx_cb5",
+            "block_id": "p001_c0003",
+            "source_quote": "Presentation to Community Board 5 | March 21, 2013"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-34-56-657Z_2111393-2857f005_canonicalize_2026-06-10t23-11-38-845z-1976810-e9238494-ingest-2013-03-sbs-webster-bx-cb5-entity-identity"
+}

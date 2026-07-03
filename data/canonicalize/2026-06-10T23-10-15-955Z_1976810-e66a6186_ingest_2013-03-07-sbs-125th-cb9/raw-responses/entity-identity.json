@@ -1,0 +1,59 @@
+{
+  "run_id": "2026-06-10T23-10-15-955Z_1976810-e66a6186_ingest_2013-03-07-sbs-125th-cb9",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T03:25:34.732Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "nyc-dot-new",
+        "local_observation_id": "entity_nyc_dot_2013_03_07_125th_cb9",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot already resolves to the canonical NYC DOT agency record. No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p001_c0004",
+            "source_quote": "The logo for the New York City Department of Transportation (NYC DOT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "mta-nyct-new",
+        "local_observation_id": "entity_mta_nyct_2013_03_07_125th_cb9",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-nyct already resolves to the canonical MTA New York City Transit agency record. No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p001_c0005",
+            "source_quote": "The logo for the Metropolitan Transportation Authority (MTA), consisting of a stylized \"MTA\" inside a circle"
+          },
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p001_c0006",
+            "source_quote": "New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "cb9-manhattan-new",
+        "local_observation_id": "entity_cb9_manhattan_2013_03_07",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_community-board-9-manhattan already resolves to the canonical Manhattan Community Board 9 record. No different record to link to.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p001_c0002",
+            "source_quote": "Manhattan Community Board 9 Transportation Committee"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-25-04-899Z_2111393-ab1ebc77_canonicalize_2026-06-10t23-10-15-955z-1976810-e66a6186-ingest-2013-03-07-sbs-125th-cb9-entity-identity"
+}

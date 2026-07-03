@@ -1,0 +1,210 @@
+{
+  "run_id": "2026-06-10T22-56-13-269Z_1976810-085e59e4_ingest_201103-34th-cac-summary",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T01:28:01.836Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "eid-1-nycdot",
+        "local_observation_id": "entity_nycdot_201103_cac4",
+        "decision": "new",
+        "rationale": "Matches existing canonical record entity_nyc-dot. Observation is a new occurrence of the already-registered NYC DOT agency entity.",
+        "evidence_refs": [
+          {
+            "source_id": "201103_34th_cac_summary",
+            "block_id": "p001_c0004",
+            "source_quote": "New York City Department of Transportation (NYCDOT) opens meeting, presents plans for 34th Street corridor improvements"
+          }
+        ]
+      },
+      {
+        "decision_id": "eid-2-mta-nyct",
+        "local_observation_id": "entity_mta_nyct_201103_cac4",
+        "decision": "new",
+        "rationale": "Matches existing canonical record entity_mta-nyct. Observation is a new occurrence of the already-registered MTA New York City Transit agency entity.",
+        "evidence_refs": [
+          {
+            "source_id": "201103_34th_cac_summary",
+            "block_id": "p003_c0004",
+            "source_quote": "MTA New York City Transit is referred to for stop spacing guidelines and bus operations on 34th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "eid-3-34th-partnership",
+        "local_observation_id": "entity_34th_st_partnership_201103",
+        "decision": "new",
+        "rationale": "Matches existing canonical record entity_34th-st-partnership-201103. Observation is a new occurrence of the already-registered 34th Street Partnership BID.",
+        "evidence_refs": [
+          {
+            "source_id": "201103_34th_cac_summary",
+            "block_id": "p004_c0006",
+            "source_quote": "34th Street Partnership concurs with design decisions and provides feedback on loading zones."
+          }
+        ]
+      },
+      {
+        "decision_id": "eid-4-cac",
+        "local_observation_id": "entity_community_advisory_committee_201103",
+        "decision": "new",
+        "rationale": "Matches existing canonical record entity_34th-st-cac-20100921. Observation is a new occurrence of the already-registered 34th Street CAC entity with matching name, acronym, and description.",
+        "evidence_refs": [
+          {
+            "source_id": "201103_34th_cac_summary",
+            "block_id": "p001_c0001",
+            "source_quote": "Community Advisory Committee (CAC) members provide feedback on 34th Street design plans"
+          }
+        ]
+      },
+      {
+        "decision_id": "eid-5-sadik-khan",
+        "local_observation_id": "entity_janette_sadik_khan_201103",
+        "decision": "new",
+        "rationale": "Matches existing canonical record entity_janette-sadik-khan-2009. Registry alias includes entity_janette-sadik-khan-201103. Same person (NYCDOT Commissioner) observed in 201103 source.",
+        "evidence_refs": [
+          {
+            "source_id": "201103_34th_cac_summary",
+            "block_id": "p001_c0004",
+            "source_quote": "New York City Department of Transportation (NYCDOT) Commissioner Janette Sadik-Khan opened the meeting"
+          }
+        ]
+      },
+      {
+        "decision_id": "eid-6-beaton",
+        "local_observation_id": "entity_eric_beaton_201103",
+        "decision": "new",
+        "rationale": "Matches existing canonical record entity_eric-beaton-20100921. Registry alias includes entity_eric-beaton-201103. Same person (Director of Transit Development for NYCDOT) observed in 201103 source.",
+        "evidence_refs": [
+          {
+            "source_id": "201103_34th_cac_summary",
+            "block_id": "p001_c0006",
+            "source_quote": "Eric Beaton, Director of Transit Development of NYCDOT thanked the CAC members"
+          }
+        ]
+      },
+      {
+        "decision_id": "eid-7-schaller",
+        "local_observation_id": "entity_bruce_schaller_201103",
+        "decision": "new",
+        "rationale": "Matches existing canonical record entity_bruce-schaller-20100921. Registry alias includes entity_bruce-schaller-201103. Same person (NYCDOT Deputy Commissioner) observed in 201103 source.",
+        "evidence_refs": [
+          {
+            "source_id": "201103_34th_cac_summary",
+            "block_id": "p001_c0004",
+            "source_quote": "Bruce Schaller, Deputy Commissioner of NYCDOT then thanked the CAC members"
+          }
+        ]
+      },
+      {
+        "decision_id": "eid-8-carry",
+        "local_observation_id": "entity_will_carry_201103",
+        "decision": "new",
+        "rationale": "Matches existing canonical record entity_will-carry-201103. Observation is a new occurrence of the already-registered Will Carry person entity.",
+        "evidence_refs": [
+          {
+            "source_id": "201103_34th_cac_summary",
+            "block_id": "p001_c0006",
+            "source_quote": "Will Carry, NYCDOT's Project Manager of the 34th Street Project"
+          }
+        ]
+      },
+      {
+        "decision_id": "eid-9-stringer",
+        "local_observation_id": "entity_scott_stringer_201103",
+        "decision": "new",
+        "rationale": "Matches existing canonical record entity_scott-stringer-201103. Observation is a new occurrence of the already-registered Scott Stringer person entity.",
+        "evidence_refs": [
+          {
+            "source_id": "201103_34th_cac_summary",
+            "block_id": "p001_c0004",
+            "source_quote": "Manhattan Borough President Scott Stringer thanked the project team, businesses, and stakeholders"
+          }
+        ]
+      },
+      {
+        "decision_id": "eid-10-garodnick",
+        "local_observation_id": "entity_dan_garodnick_201103",
+        "decision": "new",
+        "rationale": "Matches existing canonical record entity_dan-garodnick-201103. Observation is a new occurrence of the already-registered Councilmember Dan Garodnick person entity.",
+        "evidence_refs": [
+          {
+            "source_id": "201103_34th_cac_summary",
+            "block_id": "p001_c0004",
+            "source_quote": "Councilmember Dan Garodnick reaffirmed the need for improved and efficient flows of traffic, buses, and pedestrians on 34th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "eid-11-mendez",
+        "local_observation_id": "entity_rosie_mendez_201103",
+        "decision": "new",
+        "rationale": "Matches existing canonical record entity_rosie-mendez-201103. Observation is a new occurrence of the already-registered Councilmember Rosie Mendez person entity.",
+        "evidence_refs": [
+          {
+            "source_id": "201103_34th_cac_summary",
+            "block_id": "p001_c0004",
+            "source_quote": "Councilmember Rosie Mendez also noted the need for the project and reiterated the need for NYCDOT to continue to work with community"
+          }
+        ]
+      },
+      {
+        "decision_id": "eid-12-nypd",
+        "local_observation_id": "entity_nypd_201103_cac4",
+        "decision": "new",
+        "rationale": "Matches existing canonical record entity_nypd. Registry alias includes entity_nypd-201103-cac4. Same NYPD agency entity observed in 201103 source.",
+        "evidence_refs": [
+          {
+            "source_id": "201103_34th_cac_summary",
+            "block_id": "p007_c0001",
+            "source_quote": "NYPD officers and bus lane cameras would be used to enforce bus lane rules."
+          }
+        ]
+      },
+      {
+        "decision_id": "eid-13-port-authority",
+        "local_observation_id": "entity_port_authority_ny_nj_201103",
+        "decision": "new",
+        "rationale": "Matches existing canonical record entity_port-authority-ny-nj. Registry alias includes entity_port-authority-ny-nj-201103. Same Port Authority agency entity observed in 201103 source.",
+        "evidence_refs": [
+          {
+            "source_id": "201103_34th_cac_summary",
+            "block_id": "p005_c0004",
+            "source_quote": "NYCDOT should discuss closing this entrance to the Lincoln Tunnel with the Port Authority of New York and New Jersey."
+          }
+        ]
+      },
+      {
+        "decision_id": "eid-14-bridges-tunnels",
+        "local_observation_id": "entity_mta_bridges_tunnels_201103",
+        "decision": "new",
+        "rationale": "Matches existing canonical record entity_mta-bridges-tunnels-201103. Observation is a new occurrence of the already-registered MTA Bridges and Tunnels agency entity.",
+        "evidence_refs": [
+          {
+            "source_id": "201103_34th_cac_summary",
+            "block_id": "p003_c0001",
+            "source_quote": "NYCDOT is coordinating the design approach to the QMT with MTA Bridges and Tunnels."
+          }
+        ]
+      },
+      {
+        "decision_id": "eid-15-tlc",
+        "local_observation_id": "entity_nyc_taxi_limousine_commission_201103",
+        "decision": "new",
+        "rationale": "Matches existing canonical record entity_nyc-taxi-limousine-commission-201103. Observation is a new occurrence of the already-registered NYC Taxi and Limousine Commission agency entity.",
+        "evidence_refs": [
+          {
+            "source_id": "201103_34th_cac_summary",
+            "block_id": "p007_c0001",
+            "source_quote": "NYCDOT is working with the Taxi and Limousine Commission and the Police Department regarding bus lane regulations."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-26-24-576Z_2111393-79831e75_canonicalize_2026-06-10t22-56-13-269z-1976810-085e59e4-ingest-201103-34th-cac-summary-entity-identity"
+}

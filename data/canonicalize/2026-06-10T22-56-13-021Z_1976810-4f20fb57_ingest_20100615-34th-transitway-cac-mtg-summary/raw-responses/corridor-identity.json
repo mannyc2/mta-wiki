@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T22-56-13-021Z_1976810-4f20fb57_ingest_20100615-34th-transitway-cac-mtg-summary",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T01:04:42.313Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "canon_34th_st_busway_20100615_cac",
+        "local_observation_id": "corridor_34th_street_manhattan_20100615_cac",
+        "decision": "new",
+        "rationale": "The observation's base_record_id ('corridor_34th-st-busway') already correctly resolves to the existing canonical registry record for the 34th Street Busway corridor. The observation's source_id (20100615_34th_transitway_cac_mtg_summary) is already listed in the registry record's source_ids, and the registry aliases include 'corridor_34th-street-manhattan-20100615-cac' corresponding to this exact observation. The observation already resolves to its canonical record; no additional linking is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20100615_34th_transitway_cac_mtg_summary",
+            "block_id": "p001_c0001",
+            "source_quote": "34 th Street Transitway"
+          },
+          {
+            "source_id": "20100615_34th_transitway_cac_mtg_summary",
+            "block_id": "p001_c0010",
+            "source_quote": "This presentation included background on 34 th Street, what Bus Rapid Transit (BRT) is, and what the next steps for the Transitway are."
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-46-257Z_2111393-01d2792b_canonicalize_2026-06-10t22-56-13-021z-1976810-4f20fb57-ingest-20100615-34th-transitway-cac-mtg-summary-corridor-identity"
+}

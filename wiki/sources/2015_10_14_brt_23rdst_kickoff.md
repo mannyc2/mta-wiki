@@ -1,0 +1,212 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_2015-10-14-brt-23rdst-kickoff"
+record_kind: "source"
+display_name: "M23 Select Bus Service Kickoff Presentation"
+source_id: "2015_10_14_brt_23rdst_kickoff"
+source_ids:
+  - "2015_10_14_brt_23rdst_kickoff"
+local_observation_id: "source_2015_10_14_brt_23rdst_kickoff"
+local_observation_ids:
+  - "source_2015_10_14_brt_23rdst_kickoff"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T17:54:48.451Z"
+submission_ids:
+  - "sub_f2a704ccd3350f42"
+payload:
+  authority_tier: "plan_document"
+  content_type: "presentation"
+  date_text: "October 13, 2015"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2015-10-13"
+    precision: "day"
+    raw_text: "October 13, 2015"
+  description: "Kickoff presentation for proposed M23 Select Bus Service on 23rd Street in Manhattan, covering challenges, opportunities, SBS features, and community engagement"
+  published_date_normalized: "2015-10-13"
+  published_date_precision: "day"
+  publisher: "New York City Department of Transportation (NYC DOT)"
+  title: "M23 Select Bus Service"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "2015_10_14_brt_23rdst_kickoff#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "2015_10_14_brt_23rdst_kickoff"
+    source_path: "raw/sources/2015_10_14_brt_23rdst_kickoff/blocks.jsonl"
+    text_sha256: "sha256:97630b28e70ec38c2d8e3f60c3a23d40b1f97aaab4acae65f2a47e1485664a6e"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "2015_10_14_brt_23rdst_kickoff#p001_c0002"
+    page_number: 1
+    role: "date"
+    source_id: "2015_10_14_brt_23rdst_kickoff"
+    source_path: "raw/sources/2015_10_14_brt_23rdst_kickoff/blocks.jsonl"
+    text_sha256: "sha256:3d094ca1fd3e8daf61d9a30263daf0700df605b550df78025625b28a588052b1"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0006"
+    evidence_id: "2015_10_14_brt_23rdst_kickoff#p001_c0006"
+    page_number: 1
+    role: "publisher"
+    source_id: "2015_10_14_brt_23rdst_kickoff"
+    source_path: "raw/sources/2015_10_14_brt_23rdst_kickoff/blocks.jsonl"
+    source_quote: "The New York City Department of Transportation (NYC DOT) logo"
+    text_sha256: "sha256:0ca63b3c6192407d486f76853f86298f893ec54b652f223017009874e4f87eb5"
+    text_source: "raw_text"
+---
+
+# Download the presentation (pdf)
+
+source_id: 2015_10_14_brt_23rdst_kickoff
+citation: cite block ids exactly as shown in square brackets
+document: 101 block(s)
+
+## Page 1
+
+### [p001_c0001] M23 Select Bus Service
+[p001_c0002] October 13, 2015
+> [p001_c0003] A front-facing photograph of an MTA M23 Select Bus Service bus. The bus is white with a blue stripe across the front. The destination sign above the windshield displays "M23 CROSTOWN" in orange LED letters. The windshield reflects a modern glass skyscraper. The bus number "5295" is visible on the front, along with the MTA logo and a New York City license plate "62712". Several people are walking on the sidewalk to the left of the bus. The background shows a city street with other vehicles and buildings.
+> [p001_c0004] The MTA logo, consisting of the letters "MTA" inside a white circle with a blue border.
+[p001_c0005] +selectbusservice
+> [p001_c0006] The New York City Department of Transportation (NYC DOT) logo, featuring the words "NEW YORK CITY" above "DOT" in a stylized font.
+
+## Page 2
+
+### [p002_c0001] Overview
+- [p002_c0002] • Crosstown travel • M23 overview • Challenges • Opportunity • Select Bus Service • Community engagement • Next steps & how to give input • Questions and discussion
+[p002_c0003] _+selectbusservice_
+[p002_c0004] _2_
+
+## Page 3
+
+### [p003_c0001] Where do you go on 23 rd Street?
+> [p003_c0002] A photograph showing a group of people sitting on a grassy slope in front of a large brick building. The building has a large mural that reads "MO INC BONDED REVS". The people are sitting on the grass, some are looking at the camera, and others are looking away. The building is a multi-story brick structure with many windows.
+> [p003_c0003] A photograph of a modern building with a glass and brick facade. The building has a distinctive shape with a large glass section on the left. A yellow taxi is parked in front of the building. There are people walking on the sidewalk in front of the building. The sky is clear and blue.
+> [p003_c0004] A close-up photograph of yellow daffodils and pink cherry blossoms. The flowers are in the foreground, and a tall building is visible in the background. The sky is clear and blue.
+> [p003_c0005] A photograph of a park with a fountain in the background. There are trees and grass in the foreground. A brick building is visible in the background. People are sitting on the grass in the park.
+> [p003_c0006] An aerial photograph of a harbor with many boats and buildings. The harbor is filled with many small boats and larger vessels. There are buildings and structures around the harbor. The water is dark and calm.
+[p003_c0007] _+selectbusservice_
+[p003_c0008] _3_
+
+## Page 4
+
+### [p004_c0001] How do you get there?
+> [p004_c0002] A front view of a white New York City bus, route M23, heading to Chelsea Piers. The destination sign shows "M23 CHELSEA PIERS 42 AV". The bus number "5530" is visible on the front. A large advertisement for "LATE SHOW stephen colbert" is displayed on the front, featuring a portrait of Stephen Colbert. People are waiting at the bus stop on the left. In the background, a "malgamate bank" sign is visible.
+> [p004_c0003] A view of the Flatiron Building in New York City, a famous triangular-shaped skyscraper. In the foreground, there is a row of blue bicycles parked in a designated area. The street is busy with pedestrians and other vehicles. Tall buildings line the street on both sides.
+> [p004_c0004] A crowded street scene in New York City, likely near a subway station. A large crowd of people is gathered on the sidewalk. In the background, a blue and white bus is visible, and a sign for "23 Street Station" is partially visible. The scene is filled with people walking and standing, some with backpacks.
+> [p004_c0005] A view of a city street in New York City. A large red truck with "Certified" branding is driving on the right side of the road. A yellow taxi is visible in the middle of the street. Pedestrians are walking on the sidewalk on the left. Buildings of various heights line the street, and a blue sky is visible above.
+[p004_c0006] _+selectbuservice_
+[p004_c0007] _4_
+
+## Page 5
+
+### [p005_c0001] 23 rd Street Manhattan Crosstown
+- [p005_c0002] • 15,000 daily M23 passengers • Offers access to PATH and subway lines • Connection to 14 local and SBS buses • 28 express buses utilize corridor for portion of route
+> [p005_c0003] A row of eight colored circles representing subway lines: 1 (red), 6 (green), C (blue), E (blue), F (yellow), M (yellow), N (yellow), and R (yellow).
+> [p005_c0004] A map of the M23 Bus Route in Manhattan. The route is shown as a thick blue line starting at 12 Ave and 26 Street, heading east along 26 Street, then turning south along 1 Ave, and finally heading east along 1 Ave to the waterfront. The map includes street names: 12 Ave, 11 Ave, 10 Ave, 9 Ave, 8 Ave, 7 Ave, 6 Ave, 5 Ave, 4 Ave, 3 Ave, 2 Ave, and 1 Ave. It also shows subway lines: 1 (red), 6 (green), C (blue), E (blue), F (yellow), M (yellow), N (yellow), and R (yellow). The M23 Bus Route is labeled in blue text. The map also shows the PATH and subway lines.
+[p005_c0005] _+selectbusservice_
+[p005_c0006] _5_
+
+## Page 6
+
+### [p006_c0001] Challenges: Bus Movements
+- [p006_c0002] • Slow crosstown service • Over 25% of trip spent boarding passengers • About 90% of trip spent stopped or stuck in traffic
+> [p006_c0003] A pie chart illustrating the distribution of bus movement categories. The chart is divided into five segments: 'At Bus Stop' (blue, 28%), 'Stopped' (red, 23%), 'In-Motion: <5mph' (orange, 16%), 'In-Motion: 5-15mph' (yellow, 24%), and 'In-Motion: 15mph+' (green, 10%). A legend below the chart maps these colors to their respective categories. Category Percentage At Bus Stop 28% Stopped 23% In-Motion: <5mph 16% In-Motion: 5-15mph 24% In-Motion: 15mph+ 10%
+[p006_c0004] _+selectbusservice_
+[p006_c0005] _6_
+
+## Page 7
+
+### [p007_c0001] Challenges: Lane Width
+- [p007_c0002] • Right of way varies from 52' – 66' • Irregular lane widths mean lane changing • Bus stops blocked
+[p007_c0003] _+selectbusservice_
+[p007_c0004] _7_
+
+## Page 8
+
+### [p008_c0001] Challenges: Safety
+- [p008_c0002] • Vision Zero: multiagency effort to reduce traffic fatalities • Manhattan Action Plan – 23 rd Street Priority Corridor; 4 Priority Intersections
+> [p008_c0003] The map shows the 23rd Street Priority Corridor in Manhattan, with the corridor highlighted in red. The corridor runs along 23rd Street, which is labeled '23 ST'. It intersects with 7th Avenue ('7 AV'), 6th Avenue ('6 AV'), and 14th Street ('14 ST'). Red circles are placed at the intersections of 23 St with 7 Av, 6 Av, and 14 St, indicating priority intersections. The map also shows the East River to the east and the Hudson River to the west. The area is labeled 'Park' at the bottom right. 23rd Street Corridor Report (2009-2013) Mode Total Injuries Severe Injuries Fatalities Killed/Seriously Injured (KSI) Ped 226 30 4 34 Bike 88 5 1 6 Vehicle 400 30 30
+[p008_c0004] _+selectbuservice_
+[p008_c0005] _8_
+
+## Page 9
+
+### [p009_c0001] Challenges: Curb Management
+> [p009_c0002] A police officer in a dark uniform and helmet stands on a city street, holding a clipboard and looking at it. He is positioned next to a white van that is parked on the curb. In the background, a bus with the number '12' is visible, and several city buildings are in the distance. A text overlay on the right side of the image lists two challenges: 'Frequent Double Parking' and 'Loading Zone Management'.
+- [p009_c0003] • Frequent Double Parking • Loading Zone Management
+[p009_c0004] _+selectbuservice_
+[p009_c0005] _9_
+
+## Page 10
+
+### [p010_c0001] Opportunities: Select Bus Service
+[p010_c0002] Select Bus Service (SBS) is NYC's brand name for a package of improvements that result in faster and more reliable bus service.
+[p010_c0003] SBS also brings:
+- [p010_c0004] • High customer satisfaction • Improved passenger comfort & convenience • Safer streets and sidewalks • More consistent traffic flow
+> [p010_c0005] A map of New York City and surrounding areas, including Staten Island, Westchester County, Nassau County, and Long Island. The map highlights several Select Bus Service (SBS) routes in blue. Key routes and their locations are labeled: Bx12 (Fordham Rd / Pelham Pkwy), Bx41 (Webster Av), M60 (125 St / Astoria Blvd), M86 (86th St), M34/34A (34th St), M15 (First Av / Second Av), B44 (Nostrand Av / Rogers Av), and S79 (Hylan Blvd). The map also shows major landmarks like The Hub, Williamsburg, and the South Pier. A north arrow is located in the bottom right corner.
+[p010_c0006] _+selectbusservice_
+[p010_c0007] _10_
+
+## Page 11
+
+### [p011_c0001] Select Bus Service Features
+[p011_c0002] _Dedicated Bus Lanes_
+> [p011_c0003] A photograph of a city street with a dedicated bus lane. A bus is visible in the lane, and other cars are in adjacent lanes. The lane is marked with a white line.
+[p011_c0004] _Signal Priority for Buses_
+> [p011_c0005] A photograph of a bus at a signal intersection. The bus is blue and white, with a digital display showing "M15 VIA 1 AV".
+[p011_c0006] Faster bus rides
+[p011_c0007] Reduced traffic conflicts between buses and other traffic
+[p011_c0008] More reliable bus service
+[p011_c0009] Buses spend less time stopped at red lights
+[p011_c0010] _Off-Board Fare Collection_
+> [p011_c0011] A photograph of a person using an off-board fare collection machine. The machine is blue and white, with a sign that says "Get Ticket Here".
+[p011_c0012] _All-Door Boarding_
+> [p011_c0013] A photograph of people boarding a bus at a bus stop. The bus is blue and white, and the people are waiting to board.
+[p011_c0014] Quicker bus boarding
+[p011_c0015] Buses spend less time waiting at bus stops
+[p011_c0016] _+selectbusservice_
+[p011_c0017] _11_
+
+## Page 12
+
+### [p012_c0001] Select Bus Service Features
+> [p012_c0002] Improved Station Amenities
+> [p012_c0003] Real-Time Passenger Information Route Destination Time SBS Avenue U 0 LCL Avenue U 1 LCL Knapp Street 2 SBS Avenue U 2 FRI MAR 21 07:11 AM
+[p012_c0004] More attractive, appealing bus stops
+[p012_c0005] Better trip information for riders to know when the bus is coming
+[p012_c0006] More comfortable wait for the bus
+> [p012_c0007] Pedestrian Safety Improvements
+[p012_c0008] Better visibility for pedestrians, bus operators, and drivers
+[p012_c0009] Clearer, shorter pedestrian crossings
+[p012_c0010] _+selectbusservice_
+[p012_c0011] _12_
+
+## Page 13
+
+### [p013_c0001] SBS Community Engagement
+### [p013_c0002] Engage Stakeholders
+- [p013_c0003] • Brief elected officials & staff • Present to Community Boards • Meet with local institutions and small businesses (loading for deliveries)
+> [p013_c0004] A photograph of two young African American students, a boy and a girl, both wearing school uniforms (white shirts and blue vests). They are smiling and holding a large, colorful model of a bus. The bus model is blue and white, with "selectbussservice" and "B82 | South Freedom" written on the top. The number "5329" and the "MTA" logo are visible on the front. The background shows a chain-link fence and some trees.
+### [p013_c0005] Engage Riders and Residents
+- [p013_c0006] • On the street and on the bus • Public workshop or open house
+[p013_c0007] _+selectbussservice_
+[p013_c0008] _13_
+
+## Page 14
+
+### [p014_c0001] Next Steps
+- [p014_c0002] • Input phase • Gather feedback and suggestions from stakeholders and area residents • Identify issues through end of the year, with other community engagement to follow • Please help us reach your communities! • Who should we speak to or meet with (community groups, local institutions, etc.)? • What community events should we attend? • To invite us to community events, please email us at brt@dot.nyc.gov . And thanks!
+[p014_c0003] _+selectbuservice_
+[p014_c0004] _14_
+
+## Page 15
+
+### [p015_c0001] Questions?
+> [p015_c0002] A white and blue New York City bus (M23) is stopped at a bus stop. The destination sign at the top reads "M23 CHELSEA PIERS 12 AV". The bus number "5530" is visible on the side. A large advertisement for "LATE SHOW stephen colbert" is displayed on the front, featuring a portrait of Stephen Colbert. The bus is surrounded by pedestrians on the sidewalk. In the background, there is an "amalgamate bank" building and a traffic light.
+[p015_c0003] _+selectbuservice_
+[p015_c0004] _15_

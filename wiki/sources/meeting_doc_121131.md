@@ -1,0 +1,247 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-121131"
+record_kind: "source"
+display_name: "Metro-North Railroad Diversity and Equal Opportunity EEO Report – 2nd Quarter 2023"
+source_id: "meeting_doc_121131"
+source_ids:
+  - "meeting_doc_121131"
+local_observation_id: "source_meeting_doc_121131"
+local_observation_ids:
+  - "source_meeting_doc_121131"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T12:14:43.394Z"
+submission_ids:
+  - "sub_7110253391e8c573"
+payload:
+  authority_tier: "plan_document"
+  content_type: "report"
+  publication_date: "September 18, 2023"
+  publication_date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2023-09-18"
+    precision: "day"
+    raw_text: "September 18, 2023"
+  published_date_normalized: "2023-09-18"
+  published_date_precision: "day"
+  publisher: "MTA Metro-North Railroad"
+  title: "Metro-North Railroad Diversity and Equal Opportunity EEO Report – 2nd Quarter 2023"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_121131#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_121131"
+    source_path: "raw/sources/meeting_doc_121131/blocks.jsonl"
+    source_quote: "Metro-North Railroad Diversity and Equal Opportunity"
+    text_sha256: "sha256:f047563858246ab73c989cf3bb8bc28f162b20168f58e97e62604b32d61bfabe"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_121131#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_121131"
+    source_path: "raw/sources/meeting_doc_121131/blocks.jsonl"
+    source_quote: "EEO Report – 2 nd Quarter 2023"
+    text_sha256: "sha256:516d036f1223ae7d56c02a95286347bb4f386370cd122601628626148c46002d"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_121131#p001_c0003"
+    page_number: 1
+    source_id: "meeting_doc_121131"
+    source_path: "raw/sources/meeting_doc_121131/blocks.jsonl"
+    source_quote: "September 18, 2023"
+    text_sha256: "sha256:92159bafcecd7e72271a98f32e9b59a3abbb646732c36dda3598efe5bf06ea60"
+    text_source: "raw_text"
+---
+
+# Metro-North Diversity & EEO Report, 2nd Quarter 2023
+
+source_id: meeting_doc_121131
+citation: cite block ids exactly as shown in square brackets
+document: 110 block(s)
+
+## Page 1
+
+### [p001_c0001] Metro-North Railroad Diversity and Equal Opportunity
+### [p001_c0002] EEO Report – 2 nd Quarter 2023
+[p001_c0003] September 18, 2023
+> [p001_c0004] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is positioned within a dark grey circle. The logo is located in the bottom right corner of the slide.
+
+## Page 2
+
+### [p002_c0001] EEO 2 nd Quarter Executive Summary
+### [p002_c0002] ☐ EEO
+[p002_c0003] As of June 30, 2023 , MNR's workforce consisted of 6,136 employees of which females represented 11% (697) , minorities represented 41% (2,523) , veterans represented 7% (416) and employees identifying as a person with a disability represented 2% (94) of the total workforce.
+[p002_c0004] In comparison with the 2 nd Quarter 2022 (2Q22):
+- [p002_c0005] ☐ MNR's 2 nd Quarter 2023 workforce increased by 224 employees. ☐ Female representation remained constant with a net change of 45 employees. ☐ Minority representation increased by one percentage point with a net change of 175 employees. ☐ There were 3 employees hired who self-identified as a veteran and 16 employees separated that self-identified as a veteran . ☐ MNR handled* a total of 54 EEO complaints; of which 27 were internal and 27 were external (including lawsuits). During 2023, MNR received a total of 28 EEO complaints; of which 20 were internal and 8 were external. ☐ MNR handled 10 Title VI complaints and 0 Title VI lawsuits.
+[p002_c0006] * Complaints handled include incoming 2023 cases and cases that carried over from the prior years.
+
+## Page 3
+
+### [p003_c0001] EEO 2 nd Quarter Executive Summary Cont.
+- [p003_c0002] ❑ D&I in Motion – All Agency Employee Resource Groups Quarterly Highlights - Employee Resource Groups (ERGs) are important pillars of the MTA and contribute to a culture of inclusion and belonging while making a positive impact on the MTA. Ultimately all initiatives and programs should serve and champion members, maximize available resources, align with the MTA strategic priorities as well as the ERG goals and objectives. This quarter we focused on the MTA Strategic Priority “Revive Talent and Culture” with a particular focus on retention. Following are a few of the training and initiatives to support this priority:
+- [p003_c0003] ❑ Latinos & Friends, Shadow Day Initiative - April –June 2023 Latino’s & Friends launched a job shadowing initiative supported by their Executive Sponsors Lisette Camillo and Demetrius Crichlow. The initiative provided employees with a window into career options in the workplace, which is important for employee engagement, career advancement and retention. Latinos & Friends hosted this initiative in direct response to their members requests for engagement in promotional opportunities. ❑ Employee Resource Group Leader Training - July 18, 2023 Employee Resource Groups are integral to the MTA and help foster a diverse and inclusive workplace aligned with our values and strategic priorities. The ERG Leadership Training centered on developing strong leaders. We covered leadership skills for being a responsive leader, alignment of the mission, vision and purpose of the respective ERGs with the MTA Strategic Priorities as well as tools to measure the success of each ERG. ❑ Employee Resource Group All Member Meeting Workshop - August 3, 2023 We continued our Personal Best: New Year, New You theme for 2023 focused on Emotional Intelligence (E.I.). The workshop covered The Importance of Emotional Intelligence, and best practices for elevating E.I. All member meetings allow colleagues of the nine ERGs to network, collaborate, connect, and share which aids in creating inclusivity and increases employees sense of belonging.
+> [p003_c0004] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font inside a dark grey circle.
+[p003_c0005] _MTA Strategic Priority – Revive Talent and Culture_
+
+## Page 4
+
+### [p004_c0001] EEO 2 nd Quarter Executive Summary Cont.
+### [p004_c0002] ■ D&I in Motion – All Agency Employee Resource Groups Quarterly Highlights – Hispanic Heritage Month September 15 – October 15
+[p004_c0003] September 15 Como Yo - Fun and exciting free 4-week program for MTA colleagues to connect, learn, and practice conversational Spanish. Learning conversational Spanish allows employees to gain an appreciation for Spanish culture and allows them to better communicate with Spanish-speaking colleagues and customers.
+[p004_c0004] September 21 Cafecito Chat with Demetrius Criclow (virtual) - An invitation to have coffee and to welcome or get to know a person in the Hispanic community is referred to as a Cafecito chat. Latinos & Friends invited Demetrius Criclow, SVP Subways-NYCT, to a Cafecito chat (an interview) to allow MTA employees to learn about his executive role, heritage and to obtain professional insight.
+[p004_c0005] September 28 Cafecito Chat with Hugo Pizarro (virtual) - An invitation to have coffee and to welcome or get to know a person in the Hispanic community is referred to as a Cafecito chat. Latinos & Friends invited Hugo Pizarro, Chief People Officer to a Cafecito chat (an interview) to allow MTA employees to learn about his executive role, heritage and to obtain professional insight.
+### [p004_c0006] October 6 Discover your History by Latinos and Friends (virtual) -
+[p004_c0007] This workshop will allow employees to acquire the knowledge and tools to conduct family history research. The session will focus on descendants from the Caribbean, Central, South and North America.
+[p004_c0008] _MTA Strategic Priority – Revive Talent and Culture_
+
+## Page 5
+
+### [p005_c0001] EEO 2nd Quarter Executive Summary Cont.
+[p005_c0002] MTA MNR conducted a utilization analysis of females and minorities in its workforce. The utilization analysis consists of comparing MTA MNR's June 30, 2023, workforce percentages for females and minorities to the estimated availability of the females and minorities available within the relevant labor market.
+[p005_c0003] Based on the utilization analysis, MTA MNR's 2023 workforce estimated availability targets are:
+[p005_c0004]
+
+```text
+EEO4 Category Minorities Females Black Hispanic Asian Am Ind/Al Nat NHOPI 2 Races Officials & Administrators 30.4% 13.0% 11.9% 9.0% 5.1% 0.3% 0.1% 4.0% Professionals 36.6% 20.0% 11.4% 11.2% 10.7% 0.1% 0.0% 3.2% Technicians 23.9% 18.7% 8.3% 9.6% 4.5% 0.0% 0.1% 1.3% Protective Services 20.8% 3.0% 7.9% 9.3% 1.4% 0.1% 0.0% 2.2% Paraprofessionals 29.6% 21.7% 10.0% 13.2% 5.2% 0.1% 0.0% 1.1% Administrative Support 41.4% 53.2% 15.1% 17.3% 7.3% 0.1% 0.0% 1.7% Skilled Craft 38.4% 3.0% 12.8% 19.4% 4.3% 0.1% 0.0% 1.8% Service Maintenance 43.5% 13.2% 27.6% 10.3% 3.9% 0.0% 0.0% 1.8%
+```
+
+## Page 6
+
+### [p006_c0001] EEO 2nd Quarter Executive Summary Con't.
+[p006_c0002] Based on the MTA MNR utilization analysis*, the underrepresentation for females and minorities occurred in the following EEO categories:
+### [p006_c0003] All Females:
+- [p006_c0004] Professional– Whites Technicians – Hispanics, Asians and Whites Administrative Support– Hispanics, Asians and Whites Skilled Craft – Hispanics and Whites Service Maintenance – Asians
+### [p006_c0005] Minority Males:
+- [p006_c0006] Officials and Administrators – Hispanics Skilled Craft – Hispanics and Asians Service Maintenance – Blacks and Asians
+[p006_c0007] *The utilization analysis compares the percentages of females and minorities employed in each job group to 80 percent of the females and minorities available within the relevant labor market.
+> [p006_c0008] The MTA logo, consisting of the letters 'MTA' in a bold, sans-serif font, is centered within a dark grey circle.
+
+## Page 7
+
+### [p007_c0001] EEO 2 nd Quarter Executive Summary Cont.
+- [p007_c0002] ■ MTA MNR's action strategy to address areas of underutilization: □ Forecast Future Opportunities □ Identify specific job titles within underutilized EEO categories □ Meet with the People Department to gather historical data and determine windows of opportunities for future hiring □ Departmental Engagement □ Meet with Department Heads to discuss specific areas of underutilization □ Create customized strategies for job titles identified □ Focus on Underutilized Categories □ Predominate areas of underutilization for females is in the Technician and Administrative Support categories. Rail Traffic Controller, Clerk and Cashier/Ticket Seller job titles were identified as areas of greatest opportunities. □ Predominate areas of underutilization for minority males were in the Skilled Craft and Service Maintenance categories. Machinists, Conductors and Yard Masters job titles were identified as areas of greatest opportunities. □ During the next 6 months, relevant stakeholders will meet to develop a plan specifically focused on the job titles within the underutilized categories.
+> [p007_c0003] The MTA logo, consisting of the letters "MTA" in a bold, sans-serif font inside a dark grey circle.
+
+## Page 8
+
+### [p008_c0001] Metro-North Railroad Diversity and Equal Opportunity
+### [p008_c0002] Workforce
+[p008_c0003] as of June 30, 2023
+> [p008_c0004] The MTA logo, consisting of the letters "MTA" in white, bold, sans-serif font, is centered within a dark gray circle.
+
+## Page 9
+
+### [p009_c0001] Definitions of EEO Job Categories
+- [p009_c0002] ❑ Officials & Administrators - Occupations in which employees set broad policies, exercise overall responsibility for execution of these policies, or direct individual departments or special phases of the agency's operations, or provide specialized consultation on a regional, district or area basis. ❑ Professionals - Occupations which require specialized and theoretical knowledge which is usually acquired through college training or through work experience and other training which provides comparable knowledge. ❑ Technicians - Occupations which require a combination of basic scientific or technical knowledge and manual skill which can be obtained through specialized post-secondary school education or through equivalent on-the-job training. ❑ Protective Services - Occupations in which workers are entrusted with public safety, security and protection from destructive forces. ❑ Paraprofessionals - Occupations in which workers perform some of the duties of a professional or technician in a supportive role, which usually require less formal training and/or experience normally required for professional or technical status. ❑ Administrative Support - Occupations in which workers are responsible for internal and external communication, recording and retrieval of data and/or information and other paperwork required in an office. ❑ Skilled Craft - Occupations in which workers perform jobs which require special manual skill and a thorough and comprehensive knowledge of the process involved in the work which is acquired through on-the-job training and experience or through apprenticeship or other formal training programs. ❑ Service Maintenance - Occupations in which workers perform duties which result in or contribute to the comfort, convenience, hygiene or safety of the general public or which contribute to the upkeep and care of buildings, facilities or grounds of public property.
+[p009_c0003] _The logo for the Metropolitan Transportation Authority (MTA) is located in the bottom right corner. It consists of a dark grey circle with the letters 'MTA' in white, bold, sans-serif font._
+
+## Page 10
+
+### [p010_c0001] MTA MNR WORKFORCE
+[p010_c0002] The table below is a snapshot of MTA MNR's workforce by race/ethnicity, gender and veterans as of June 30, 2023.
+[p010_c0003]
+
+```text
+JOB CATEGORY TOTAL Minorities WHITES BLACKS HISPANICS ASIANS AI/AN* NHOPH** 2+ RACES VETERANS PWD*** # % # % # % # % # % # % # % # % # % # % # % Officials & Administrators 619 234 38% 385 62% 87 14% 59 10% 48 8% 3 0% 1 0% 36 6% 38 6% 18 3% F 131 21% 80 13% 51 8% 31 5% 21 3% 16 3% 2 0% 0 0% 10 2% 6 1% 4 1% M 488 79% 154 25% 334 54% 56 9% 38 6% 32 5% 1 0% 1 0% 26 4% 32 5% 14 2% Professionals 193 117 61% 76 39% 41 21% 29 15% 31 16% 1 1% 0 0% 15 8% 5 3% 5 3% F 47 24% 36 19% 11 6% 19 10% 8 4% 5 3% 1 1% 0 0% 3 2% 1 1% 2 1% M 146 76% 81 42% 65 34% 22 11% 21 11% 26 13% 0 0% 0 0% 12 6% 4 2% 3 2% Technicians 158 65 41% 93 59% 29 18% 16 10% 8 5% 0 0% 0 0% 12 8% 17 11% 6 4% F 15 9% 12 8% 3 2% 8 5% 3 2% 0 0% 0 0% 0 0% 1 1% 3 2% 2 1% M 143 91% 53 34% 90 57% 21 13% 13 8% 8 5% 0 0% 0 0% 11 7% 14 9% 4 3% Protective Services 28 7 25% 21 75% 2 7% 2 7% 0 0% 0 0% 0 0% 3 11% 2 7% 0 0% F 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% M 28 100% 7 25% 21 75% 2 7% 2 7% 0 0% 0 0% 0 0% 3 11% 2 7% 0 0% Paraprofessionals 4 1 25% 3 75% 0 0% 1 25% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% F 2 50% 1 25% 1 25% 0 0% 1 25% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% M 2 50% 0 0% 2 50% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% 0 0% Administrative Support 188 122 65% 66 35% 64 34% 29 15% 7 4% 2 1% 1 1% 19 10% 7 4% 3 2% F 81 43% 61 32% 20 11% 34 18% 11 6% 3 2% 1 1% 1 1% 11 6% 1 1% 2 1% M 107 57% 61 32% 46 24% 30 16% 18 10% 4 2% 1 1% 0 0% 8 4% 6 3% 1 1% Skilled Craft 2,828 1,021 36% 1,807 64% 488 17% 332 12% 47 2% 13 0% 0 0% 141 5% 238 8% 38 1% F 48 2% 34 1% 14 0% 25 1% 5 0% 1 0% 0 0% 0 0% 3 0% 3 0% 2 0% M 2,780 98% 987 35% 1,793 63% 463 16% 327 12% 46 2% 13 0% 0 0% 138 5% 235 8% 36 1% Service Maintenance 2,118 956 45% 1,162 55% 518 24% 271 13% 46 2% 3 0% 1 0% 117 6% 109 5% 24 1% F 373 18% 242 11% 131 6% 154 7% 54 3% 5 0% 1 0% 1 0% 27 1% 8 0% 6 0% M 1,745 82% 714 34% 1,031 49% 364 17% 217 10% 41 2% 2 0% 0 0% 90 4% 101 5% 18 1% Total 6,136 2,522 41% 3,613 59% 1,229 20% 739 12% 187 3% 22 0% 3 0% 343 6% 416 7% 94 2%
+```
+[p010_c0004] American Indian/Alaskan Native
+[p010_c0005] **Native Hawaiian Other Pacific Islander
+[p010_c0006] ***Person With Disabilities
+[p010_c0007] NOTE: All percentages have been rounded to the nearest whole number.
+
+## Page 11
+
+### [p011_c0001] MNR Workforce as of June 30, 2023
+[p011_c0002] _WORKFORCE BY SEX_
+> [p011_c0003] Sex Percentage Count Males 89% 5,439 Females 11% 697
+[p011_c0004] _WORKFORCE BY RACE/ETHNICITY_
+> [p011_c0005] Race/Ethnicity Percentage Count Whites 59% 3,613 Blacks 20% 1,229 2+ Races 6% 343 Hispanics 12% 739 Asians 3% 187
+[p011_c0006] MTA MNR employed 6,136 employees, 11% (697) of the workforce were females , 41% (2,523) minorities, 7% (416) veterans, and 2% (94) self identified as a person with a disability .
+- [p011_c0007] □ The percentage of females employed in the workforce remained constant with a net change of 45 employees when compared to 2 nd Quarter 2022. □ The percentage of minorities in the workforce increased by one percentage point with a net change of 175 employees when compared to 2 nd Quarter 2022.
+
+## Page 12
+
+### [p012_c0001] MTA MNR Underutilization Analysis
+[p012_c0002] MTA MNR has conducted an availability analysis of females and minorities in its workforce. The availability analysis consists of comparing MTA MNR's June 30, 2023, workforce percentages for females and minorities to 80 percent of the females and minorities available within the relevant labor market based on the U.S. Census.
+[p012_c0003] * The Whole-Person Rule was used to determine underutilization, where Actual % < Estimated Availability % by 1 whole person
+[p012_c0004]
+
+```text
+JOB CATEGORY SEX BLACKS HISPANIC ASIANS AI/AN** NHOPI*** 2+ RACES WHITES Est. Avail Actual % Est. Avail Actual % Est. Avail Actual % Est. Avail Actual % Est. Avail Actual % Est. Avail Actual % Est. Avail Actual % Officials & Administrators F 3% 5% 2% 3% 1% 3% 0% 0% 0% 0% 1% 2% 6% 8% M 9% 9% 7% 6% 4% 5% 0% 0% 0% 0% 3% 4% Professionals F 4% 10% 3% 4% 2% 3% 0% 1% 0% 0% 1% 2% 9% 6% M 7% 11% 8% 11% 8% 13% 0% 0% 0% 0% 3% 6% Technicians F 4% 5% 3% 2% 2% 0% 0% 0% 0% 0% 0% 1% 10% 2% M 5% 13% 7% 8% 3% 5% 0% 0% 0% 0% 1% 7% Protective Services F 0% 0% 1% 0%* 0% 0% 0% 0% 0% 0% 0% 0% 1% 0%* M 7% 7% 8% 7%* 1% 0%* 0% 0% 0% 0% 2% 11%
+```
+[p012_c0005] **American Indian/Alaskan Native
+[p012_c0006] ***Native Hawaiian Other Pacific Islander
+[p012_c0007] Note: Pursuant to FTA Circular 4704.1A EEO Requirements and Guidelines, white males have been excluded from the availability analysis.
+[p012_c0008] Percentages highlighted in green indicates underutilization
+
+## Page 13
+
+### [p013_c0001] MTA MNR Underutilization Analysis Con't.
+[p013_c0002] * The Whole-Person Rule was used to determine underutilization, where Actual % < Estimated Availability % by 1 whole person
+[p013_c0003]
+
+```text
+JOB CATEGORY SEX BLACKS HISPANIC ASIANS AJ/AN** NHOP1*** 2+ RACES WHITES Est Avail Actual % Est Avail Actual % Est Avail Actual % Est Avail Actual % Est Avail Actual % Est Avail Actual % Est Avail Actual % Paraprofessionals F 4% 0%* 5% 25% 2% 0%* 0% 0% 0% 0% 0% 0% 11% 25% M 6% 0%* 8% 0%* 3% 0%* 0% 0% 0% 0% 1% 0%* Administrative Support F 11% 18% 12% 6% 5% 2% 0% 1% 0% 1% 1% 6% 24% 11% M 4% 16% 5% 10% 3% 2%* 0% 1% 0% 0% 0% 4% Skilled Craft F 1% 1% 1% 0% 0% 0% 0% 0% 0% 0% 0% 0% 1% 0% M 12% 16% 19% 12% 4% 2% 0% 0% 0% 0% 2% 5% Service Maintenance F 7% 7% 2% 3% 1% 0% 0% 0% 0% 0% 1% 1% 3% 6% M 20% 17% 8% 10% 3% 2% 0% 0% 0% 0% 1% 4%
+```
+[p013_c0004] **American Indian/Alaskan Native
+[p013_c0005] ***Native Hawaiian Other Pacific Islander
+[p013_c0006] Note: Pursuant to FTA Circular 4704.1A EEO Requirements and Guidelines, white males have been excluded from the availability analysis.
+[p013_c0007] Percentages highlighted in green indicate underutilization
+
+## Page 14
+
+### [p014_c0001] Metro-North Railroad Diversity and Equal Opportunity
+### [p014_c0002] New Hires and Separation
+[p014_c0003] January 1, 2023 – June 30, 2023
+> [p014_c0004] The MTA logo, consisting of the letters "MTA" in white, bold, sans-serif font, is centered within a dark gray circle.
+
+## Page 15
+
+### [p015_c0001] MTA MNR New Hires and Separations by Sex January 1, 2023 to June 30, 2023
+[p015_c0002] _NEW HIRES BY SEX_
+> [p015_c0003] Sex Count Percentage Males 191 81% Females 46 19%
+[p015_c0004] _SEPARATIONS BY SEX_
+> [p015_c0005] Sex Count Percentage Males 122 88% Females 17 12%
+[p015_c0006] As of the 2nd Quarter 2023, MNR hired 237 employees, 46 females and 191 males. During this same time period 139 employees separated from MTA MNR, 17 females and 122 males.
+- [p015_c0007] □ The result was a net increase 29 female and 69 male employees. □ The number of employees who self-identified as veterans decreased by 13 employees. There were 3 veteran hired and 16 veteran separated during 2023.
+
+## Page 16
+
+### [p016_c0001] MTA MNR New Hires and Separations by Race/Ethnicity
+[p016_c0002] _NEW HIRES BY RACE/ETHNICITY_
+> [p016_c0003] Race/Ethnicity Percentage Count Whites 42% 98 Blacks 25% 59 2+ Races 7% 17 Asians 9% 21 Hispanics 17% 41 AI/AN 1% 2
+[p016_c0004] _SEPARATIONS BY RACE/ETHNICITY_
+> [p016_c0005] Race/Ethnicity Percentage Count Whites 55% 77 Blacks 21% 29 2+ Races 12% 16 Asians 1% 2 Hispanics 10% 14 AI/AN 1% 1
+[p016_c0006] During 2023, MTA MNR hired 237 employees, 139 minorities and 98 non-minorities. During this same time period 139 employees separated from MNR, 62 minorities and 77 non-minorities.
+- [p016_c0007] □ The result was a net increase of 77 minorities employees. □ The number of employees that self identified as a person with a disability decreased by 3 employees. There was 1 person with a disability hired and 4 persons with disabilities separated during 2023.
+
+## Page 17
+
+### [p017_c0001] Metro-North Railroad Diversity and Equal Opportunity
+### [p017_c0002] Complaints and Lawsuits
+[p017_c0003] January 1, 2023 – June 30, 2023
+> [p017_c0004] The MTA logo, consisting of the letters "MTA" in white, bold, sans-serif font, is centered within a dark gray circle.
+
+## Page 18
+
+### [p018_c0001] MTA MNR EEO Internal/External Discrimination Complaints by Bases January 1, 2023, to June 30, 2023
+[p018_c0002] _INTERNAL EEO COMPLAINTS_
+> [p018_c0003] Basis Percentage Count Race/Color 34% 12 Sexual Harassment 26% 9 Age 9% 3 Gender 17% 6 Retaliation 9% 2 Other 8% 3
+[p018_c0004] _EXTERNAL EEO COMPLAINTS_
+> [p018_c0005] Basis Percentage Count Race/Color 22% 4 Age 11% 2 Gender 6% 1 National Origin 17% 3 Disability 17% 3 Retaliation 22% 4 Other 5% 1
+[p018_c0006] 28 EEO complaints were filed* citing 53 separate bases, and 0 lawsuits were filed.
+- [p018_c0007] ❑ 20 filed internal complaints. ❑ 8 filed external complaints. ❑ The most frequently cited basis internally was Race/Color.
+[p018_c0008] Note: *Formal complaints can be filed alleging multiple bases. Additionally, numerous incoming matters were also handled during this time
+
+## Page 19
+
+### [p019_c0001] MTA MNR Title VI and Related Discrimination Complaints by Bases January 1, 2023, to June 30, 2023
+> [p019_c0002] TITLE VI COMPLAINTS BY BASIS Basis Percentage Race 60% Color 20% Sex 10% Disability 10% The pie chart is a 3D representation with four segments. The largest segment, colored light green, is labeled '6' and 'Race 60%'. The second largest, colored orange, is labeled '2' and 'color 20%'. The third, colored blue, is labeled '1' and 'Sex 10%'. The smallest, colored yellow, is labeled '1' and 'Disability 10%'.
+[p019_c0003] 10 Title VI and related discrimination complaints were filed citing 10 separate bases.
+- [p019_c0004] ❑ 8 Title VI complaints were filed. ❑ 2 related discrimination complaint** was filed ❑ The most frequently cited basis was race.
+[p019_c0005] Note: *Formal complaints can be filed alleging multiple bases.
+[p019_c0006] Note: **Related Discrimination complaints are filed by customers based on age, disability, religion and sex.

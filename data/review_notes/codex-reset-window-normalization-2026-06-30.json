@@ -1,0 +1,188 @@
+{
+  "run_id": "codex-reset-window-normalization-2026-06-30",
+  "date": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "provider_backed_llm_commands_used": false,
+  "forbidden_commands_used": [],
+  "baseline": {
+    "validation_issues": 0,
+    "canonical_records": 84043,
+    "wiki_pages": 7339,
+    "events_event_family_other": 395,
+    "projects_project_family_missing": 6,
+    "projects_project_family_other": 20,
+    "projects_document_time_status_missing": 119,
+    "projects_document_time_status_other": 6,
+    "source_gaps_gap_kind_normalized_other": 31,
+    "routes_route_record_scope": {
+      "true_route": 299,
+      "split_candidate": 12,
+      "aggregate_list_context": 9,
+      "data_only_scope": 1
+    },
+    "routes_route_type_normalized_missing": 1,
+    "relation_family_unresolved": 0,
+    "treatment_family_unresolved": 0
+  },
+  "after": {
+    "validation_issues": 0,
+    "canonical_records": 84043,
+    "wiki_pages": 7339,
+    "events_event_family_other": 372,
+    "projects_project_family_missing": 6,
+    "projects_project_family_other": 13,
+    "projects_document_time_status_missing": 110,
+    "projects_document_time_status_other": 4,
+    "source_gaps_gap_kind_normalized_other": 31,
+    "routes_route_record_scope": {
+      "true_route": 300,
+      "split_candidate": 11,
+      "aggregate_list_context": 9,
+      "data_only_scope": 1
+    },
+    "routes_route_type_normalized_missing": 1,
+    "relation_family_unresolved": 0,
+    "treatment_family_unresolved": 0
+  },
+  "implemented_slices": [
+    {
+      "bucket": "projects.project_family",
+      "change": "Added exact payload-gated project-family rules for GCM maintenance, Access-A-Ride primary-carrier option years, Metro-North emergency/scheduled bus services, SBMP, TBTA traffic/revenue toll-related assessments, VNB median-barrier transfer services, and NYPA MCRA energy-efficiency projects.",
+      "count_delta": {
+        "other": -7,
+        "missing": 0
+      }
+    },
+    {
+      "bucket": "projects.document_time_status",
+      "change": "Added exact payload-gated document-time-status rules for conducted/complete/active/approved project surfaces including Customers Count, Tremont safety, Van Wyck bridge replacement, Station ReNEW-vations, PII, Jamaica OTP, Bronx Ambassadors, GCM weekend maintenance, Boldyn connectivity, whistleblower policy review, and targeted lower-performing-route improvements.",
+      "count_delta": {
+        "missing": -9,
+        "other": -2
+      }
+    },
+    {
+      "bucket": "events.event_family",
+      "change": "Added payload-gated milestone rules for rating upgrades, court orders/rulings, lawsuit filings, accessibility settlements, procurement-intake records, debt/refunding/refinancing/remarketing transactions, CMAQ grant endpoints, and concrete rolling-stock delivery/retirement records.",
+      "count_delta": {
+        "other": -23
+      }
+    },
+    {
+      "bucket": "routes.route_record_scope",
+      "change": "Allowed neutral bus classifier artifacts in the local/limited-bus classifier guardrail so Q50 is treated as a true route rather than a split candidate.",
+      "count_delta": {
+        "true_route": 1,
+        "split_candidate": -1
+      }
+    }
+  ],
+  "subagents": [
+    {
+      "agent_id": "019f1733-a3ad-76c2-bb96-2938bd862b32",
+      "lane": "event-family milestone scout",
+      "status": "completed_closed",
+      "result": "Recommended 23 payload-proven milestone mappings; implemented in this slice."
+    },
+    {
+      "agent_id": "019f1735-6245-7e53-b657-79bbaa4b11a3",
+      "lane": "source-gap risk/contingency scout",
+      "status": "completed_closed",
+      "result": "Found 31 source-gap other records and a 13-record risk/contingency slice; deferred because it likely needs a new normalized value/policy."
+    },
+    {
+      "agent_id": "019f1735-7d49-7da2-8943-62a85d06f3bd",
+      "lane": "project/status residual scout",
+      "status": "completed_closed",
+      "result": "Found 13 candidate document-time-status records; partially overlapped with implemented project/status slice, with remaining records needing exact follow-up review."
+    },
+    {
+      "agent_id": "019f1738-e9a4-7030-92a5-9db410b02d81",
+      "lane": "route split/aggregate scout",
+      "status": "completed_closed",
+      "result": "Recommended Q50 local/limited-bus classifier guardrail; implemented in this slice."
+    },
+    {
+      "agent_id": "019f1735-9094-76f2-8bcc-36bda0345f20",
+      "lane": "identity duplicate pressure scout",
+      "status": "completed_closed",
+      "result": "Confirmed current public identity-review pressure remains zero; proposed acronym-only candidate-edge guard for later advisory-path cleanup."
+    }
+  ],
+  "verification": {
+    "focused_ontology_tests": {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "tests_passed": 255,
+      "expects": 3582
+    },
+    "focused_materialize_tests": {
+      "command": "bun test packages/pipeline/test/materialize/materialize.test.ts",
+      "tests_passed": 47,
+      "expects": 818
+    },
+    "typecheck": {
+      "command": "bun run typecheck",
+      "passed": true
+    },
+    "materialize": {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "completed": true,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "issues": 0
+    }
+  },
+  "remaining_lanes": [
+    {
+      "bucket": "events.event_family",
+      "remaining_other": 372,
+      "next_action": "Continue small payload-gated milestone/publication/planning slices from residual examples."
+    },
+    {
+      "bucket": "projects.document_time_status",
+      "remaining_missing": 110,
+      "remaining_other": 4,
+      "next_action": "Review the project/status scout's non-overlapping candidates with exact payload tests."
+    },
+    {
+      "bucket": "projects.project_family",
+      "remaining_missing": 6,
+      "remaining_other": 13,
+      "next_action": "Treat as mostly one-off policy floor unless exact evidence supports a narrow rule."
+    },
+    {
+      "bucket": "source_gaps.gap_kind_normalized",
+      "remaining_other": 31,
+      "next_action": "Decide whether to add a bounded risk_or_contingency normalized value or map to an existing accepted value."
+    },
+    {
+      "bucket": "routes.route_record_scope",
+      "remaining_split_candidate": 11,
+      "next_action": "Leave aggregate/list and direct split candidates unresolved unless a Q50-like deterministic false positive emerges."
+    },
+    {
+      "bucket": "identity_review.raw_heuristic_pressure",
+      "next_action": "Implement acronym-only candidate-edge guard in advisory parser if reducing hidden false-positive pressure becomes a priority."
+    }
+  ],
+  "files_changed_by_this_slice": [
+    "packages/pipeline/src/ontology/normalizers.ts",
+    "packages/pipeline/test/ontology/normalizers.test.ts",
+    "packages/pipeline/src/materialize/materialize.ts",
+    "packages/pipeline/test/materialize/materialize.test.ts",
+    "data/canonical/events.jsonl",
+    "data/canonical/projects.jsonl",
+    "data/canonical/routes.jsonl",
+    "data/canonical.db",
+    "wiki/",
+    "LOG.md",
+    "data/review_notes/codex-reset-window-normalization-2026-06-30.json"
+  ],
+  "notes": [
+    "The worktree was already very dirty from the broader campaign; unrelated dirty files were not reverted.",
+    "Canonical JSONL was updated through deterministic materialization, not hand-edited.",
+    "All subagents were read-only scouts and were closed after completion."
+  ]
+}

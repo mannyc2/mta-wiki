@@ -1,0 +1,12 @@
+{
+  "run_id": "2026-06-10T17-48-04-719Z_1496766-14ac6020_ingest_2010-03-11-brt-1st2nd-cb8",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-10T19:43:50.167Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "assistant_text",
+  "parse_error": "JSON Parse error: Unexpected identifier \"Now\"",
+  "raw_response": "Now I have all the evidence verified from the actual blocks. Let me compile all 41 decisions and submit the final",
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-35-58-157Z_1642176-0c411c89_canonicalize_2026-06-10t17-48-04-719z-1496766-14ac6020-ingest-2010-03-11-brt-1st2nd-cb8-relation-linker"
+}

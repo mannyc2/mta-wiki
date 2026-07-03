@@ -1,0 +1,34 @@
+{
+  "review_run_id": "2026-06-23T14-38-47-609Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:39:01.109Z",
+  "packet_path": "data/identity-review/packets/route_cluster_0351824b9d.md",
+  "cluster_id": "route_cluster_0351824b9d",
+  "kind": "route",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "route_cluster_0351824b9d",
+    "kind": "route",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "route_b103-ltd-proposed-draft",
+          "route_b103e-express-cb18-jun2017"
+        ],
+        "reason": "Contradiction test: service_variant differs (limited_stop vs express). Different service variants never merge (route per-kind rule). Shared base route id 'B103' is insufficient to override variant distinction."
+      }
+    ],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "Both records have explicit and conflicting service_variant fields (limited_stop vs express). This is a decisive strong identity field difference under the contradiction test, and the route per-kind rule explicitly forbids merging different variants. No other evidence overcomes this."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-38-54-408Z_1287237-9dc8cfc3_identity-review-run_route-cluster-0351824b9d",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-38-54-408Z_2026-06-23T14-38-54-408Z_1287237-9dc8cfc3_identity-review-run_route-cluster-0351824b9d.jsonl"
+}

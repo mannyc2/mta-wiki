@@ -1,0 +1,201 @@
+{
+  "note_id": "codex-relation-endpoint-batch220-prep",
+  "created_at": "2026-06-23T14:05:00Z",
+  "author": "codex",
+  "scope": "Codex-only relation endpoint cleanup prep for one current unexpected_relation_endpoint_shape issue; no durable overrides, submissions, generated outputs, LOG, manifest, canonical JSONL, DB, wiki, materialized data, or validation outputs were mutated.",
+  "classification": "data_cleanup",
+  "prepared_count": 1,
+  "retire_replace_count": 1,
+  "retire_only_count": 0,
+  "blockers": [],
+  "issue_before": {
+    "validator_code": "unexpected_relation_endpoint_shape",
+    "record_id": "relation_cbdtp-fhwa-fonsi-implemented-by-bt",
+    "message": "implemented_by expects project -> entity, got event -> entity",
+    "relation_kind": "implemented_by",
+    "endpoint_shape": "event -> entity",
+    "subject_id": "event_fhwa-fonsi-cbdtp-jun2023",
+    "subject_kind": "event",
+    "object_id": "entity_mta-bridges-and-tunnels",
+    "object_kind": "entity"
+  },
+  "expected_after": {
+    "mechanism": "retire_and_replace",
+    "endpoint_shape_delta": -1,
+    "bad_record_absent_after_retirement": "relation_cbdtp-fhwa-fonsi-implemented-by-bt",
+    "replacement_relation_kind": "implemented_by",
+    "replacement_endpoint_shape": "project -> entity",
+    "replacement_subject_id": "project_annual-2021-cbdtp",
+    "replacement_object_id": "entity_mta-bridges-and-tunnels",
+    "replacement_record_expected": "relation_batch220-cbdtp-implemented-by-bt"
+  },
+  "why_data_cleanup_not_validator_gap": {
+    "decision": "Do not widen implemented_by to event -> entity.",
+    "reason": "The cited source sentence supports MTA Bridges and Tunnels as the agency continuing work on the Central Business District Tolling Program. The FHWA FONSI is a separate regulatory approval event within the same paragraph, not the thing implemented by MTA Bridges and Tunnels. Current rules correctly reserve implemented_by for project -> entity."
+  },
+  "bad_relation_details": {
+    "canonical_relation": {
+      "record_id": "relation_cbdtp-fhwa-fonsi-implemented-by-bt",
+      "source_id": "meeting_doc_146831",
+      "local_observation_id": "relation_cbdtp_fhwa_fonsi_implemented_by_bt",
+      "display_name": "CBDTP FHWA FONSI - MTA Bridges and Tunnels",
+      "raw_text": "MTA Bridges and Tunnels continues the work necessary to the Central Business District Tolling Program (CBDTP)",
+      "payload": {
+        "relation_kind": "implemented_by",
+        "subject_local_observation_id": "event_fhwa_fonsi_cbdtp_jun2023",
+        "object_local_observation_id": "entity_mta_bt_audit146831",
+        "description": "MTA Bridges and Tunnels continues work on the CBDTP for which FHWA issued a favorable FONSI",
+        "relation_family": "agency_role",
+        "subject_id": "event_fhwa-fonsi-cbdtp-jun2023",
+        "object_id": "entity_mta-bridges-and-tunnels",
+        "assertion_status": "planned",
+        "as_of_date": "2024-07"
+      },
+      "submission_ids": [
+        "sub_192c4cb9301859ee"
+      ]
+    },
+    "original_submission": {
+      "submission_id": "sub_192c4cb9301859ee",
+      "run_id": "2026-06-23T13-29-58-672Z_1220394-77521fac_ingest_meeting-doc-146831",
+      "submitted_at": "2026-06-23T13:47:34.517Z",
+      "submission_path": "data/submissions/2026-06-23T13-29-58-672Z_1220394-77521fac_ingest_meeting-doc-146831.jsonl",
+      "submission_line": 26,
+      "validation_state": "accepted",
+      "validation_issues": []
+    }
+  },
+  "evidence": {
+    "source_id": "meeting_doc_146831",
+    "evidence_refs": [
+      {
+        "source_id": "meeting_doc_146831",
+        "evidence_id": "meeting_doc_146831#p024_c0011",
+        "source_path": "raw/sources/meeting_doc_146831/blocks.jsonl",
+        "page_number": 24,
+        "block_id": "p024_c0011",
+        "text_sha256": "sha256:2ba892ec8cb100c5dd064acffa909eaebc890b94e3d088151603db96274a191f",
+        "text_source": "raw_text"
+      }
+    ],
+    "quotes": [
+      {
+        "evidence_id": "meeting_doc_146831#p024_c0011",
+        "quote": "MTA Bridges and Tunnels continues the work necessary to the Central Business District Tolling Program (\"CBDTP\")",
+        "supports": "CBDTP project/program implemented_by MTA Bridges and Tunnels"
+      },
+      {
+        "evidence_id": "meeting_doc_146831#p024_c0011",
+        "quote": "On June 26, 2023, after an official 30-day public availability period for the Final EA and draft Finding of No Significant Impact (\"FONSI\"), the FHWA issued a favorable FONSI",
+        "supports": "Separate FHWA FONSI approval event; not the implemented_by subject"
+      }
+    ]
+  },
+  "proposed_retired_rows": [
+    {
+      "target_file": "data/submission-overrides/retired.json",
+      "row": {
+        "submission_id": "sub_192c4cb9301859ee",
+        "reason": "Codex relation endpoint cleanup batch220 replaces malformed implemented_by event -> entity relation relation_cbdtp-fhwa-fonsi-implemented-by-bt. The cited paragraph supports Central Business District Tolling Program project -> MTA Bridges and Tunnels agency-role context; the FHWA FONSI is a separate approval event and should not be the implemented_by subject.",
+        "source_decision": "data/review_notes/codex-relation-endpoint-batch220-prep.json#codex-relation-endpoint-batch220-prep",
+        "reviewed_at": "2026-06-23T14:05:00Z"
+      }
+    }
+  ],
+  "proposed_replacement_submissions": [
+    {
+      "target_file": "data/submissions/2026-06-23_codex_relation_endpoint_cleanup_batch220.jsonl",
+      "jsonl_line": "{\"submission_id\":\"sub_8828f7cc46944e73\",\"run_id\":\"2026-06-23_codex_relation_endpoint_cleanup_batch220\",\"submitted_at\":\"2026-06-23T14:05:00.000Z\",\"tool_args_sha256\":\"sha256:8828f7cc46944e7377ef855daec9b6212b6ed01b5b3ac99c1be4c737a38bfcc8\",\"schema_version\":2,\"tool_args\":{\"source_id\":\"meeting_doc_146831\",\"observation_kind\":\"relation\",\"local_observation_id\":\"relation_batch220_cbdtp_implemented_by_bt\",\"label\":\"CBDTP implemented by MTA Bridges and Tunnels\",\"raw_text\":\"MTA Bridges and Tunnels continues the work necessary to the Central Business District Tolling Program (CBDTP)\",\"payload\":{\"relation_kind\":\"implemented_by\",\"subject_id\":\"project_annual-2021-cbdtp\",\"object_id\":\"entity_mta-bridges-and-tunnels\",\"description\":\"Replacement for malformed implemented_by event -> entity relation; the source-backed agency-role fact is that MTA Bridges and Tunnels continues the work necessary to the Central Business District Tolling Program.\",\"relation_family\":\"agency_role\"},\"evidence_refs\":[{\"source_id\":\"meeting_doc_146831\",\"evidence_id\":\"meeting_doc_146831#p024_c0011\",\"source_path\":\"raw/sources/meeting_doc_146831/blocks.jsonl\",\"page_number\":24,\"block_id\":\"p024_c0011\",\"text_sha256\":\"sha256:2ba892ec8cb100c5dd064acffa909eaebc890b94e3d088151603db96274a191f\",\"text_source\":\"raw_text\",\"role\":\"agency_role\",\"source_quote\":\"MTA Bridges and Tunnels continues the work necessary to the Central Business District Tolling Program\"}]},\"validation\":{\"state\":\"accepted\",\"issues\":[]}}",
+      "entry": {
+        "submission_id": "sub_8828f7cc46944e73",
+        "run_id": "2026-06-23_codex_relation_endpoint_cleanup_batch220",
+        "submitted_at": "2026-06-23T14:05:00.000Z",
+        "tool_args_sha256": "sha256:8828f7cc46944e7377ef855daec9b6212b6ed01b5b3ac99c1be4c737a38bfcc8",
+        "schema_version": 2,
+        "tool_args": {
+          "source_id": "meeting_doc_146831",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch220_cbdtp_implemented_by_bt",
+          "label": "CBDTP implemented by MTA Bridges and Tunnels",
+          "raw_text": "MTA Bridges and Tunnels continues the work necessary to the Central Business District Tolling Program (CBDTP)",
+          "payload": {
+            "relation_kind": "implemented_by",
+            "subject_id": "project_annual-2021-cbdtp",
+            "object_id": "entity_mta-bridges-and-tunnels",
+            "description": "Replacement for malformed implemented_by event -> entity relation; the source-backed agency-role fact is that MTA Bridges and Tunnels continues the work necessary to the Central Business District Tolling Program.",
+            "relation_family": "agency_role"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_146831",
+              "evidence_id": "meeting_doc_146831#p024_c0011",
+              "source_path": "raw/sources/meeting_doc_146831/blocks.jsonl",
+              "page_number": 24,
+              "block_id": "p024_c0011",
+              "text_sha256": "sha256:2ba892ec8cb100c5dd064acffa909eaebc890b94e3d088151603db96274a191f",
+              "text_source": "raw_text",
+              "role": "agency_role",
+              "source_quote": "MTA Bridges and Tunnels continues the work necessary to the Central Business District Tolling Program"
+            }
+          ]
+        },
+        "validation": {
+          "state": "accepted",
+          "issues": []
+        }
+      }
+    }
+  ],
+  "guard_checks": {
+    "original_submission_present": true,
+    "original_submission_accepted": true,
+    "original_submission_not_retired": true,
+    "canonical_bad_relation_present": true,
+    "source_block_present": true,
+    "source_quote_under_280_chars_and_present": true,
+    "replacement_subject_record_present": true,
+    "replacement_subject_record_kind": "project",
+    "replacement_object_record_present": true,
+    "replacement_object_record_kind": "entity",
+    "replacement_shape_valid_under_current_rules": true,
+    "replacement_helper_validation_state": "accepted",
+    "replacement_helper_validation_issues": [],
+    "replacement_submission_id_collision": false,
+    "replacement_local_observation_id_collision": false,
+    "replacement_journal_target_already_exists": false,
+    "artifact_path_already_existed_before_write": false,
+    "forbidden_commands_not_run": [
+      "provider-backed commands",
+      "canonicalize*",
+      "campaign dedup",
+      "identity-review-run",
+      "ontology-normalize-run",
+      "write",
+      "ask",
+      "schema commands",
+      "materialize",
+      "validate CLI",
+      "export-jsonl"
+    ],
+    "mutations_applied_by_this_task": [
+      "data/review_notes/codex-relation-endpoint-batch220-prep.json"
+    ],
+    "mutations_not_applied_by_this_task": [
+      "data/submission-overrides/retired.json",
+      "data/submissions/2026-06-23_codex_relation_endpoint_cleanup_batch220.jsonl",
+      "LOG.md",
+      "canonical JSONL",
+      "DB",
+      "wiki",
+      "materialized outputs",
+      "manifest files"
+    ]
+  },
+  "commands_run_read_only": [
+    "rg exact lookup for relation_cbdtp-fhwa-fonsi-implemented-by-bt in canonical relations and submissions",
+    "jq read-only extraction of meeting_doc_146831 canonical records and p024_c0011 source evidence",
+    "sed read-only inspection of packages/pipeline/src/records/relations.ts and packages/pipeline/src/records/submission-overrides.ts",
+    "bun --eval in-memory createSubmissionEntry dry run for replacement row; no appendSubmission or writer command was run",
+    "rg collision guard for proposed replacement submission id, local_observation_id, journal run id, and bad submission retirement"
+  ]
+}

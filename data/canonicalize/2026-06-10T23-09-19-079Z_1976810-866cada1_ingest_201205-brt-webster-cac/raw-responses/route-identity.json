@@ -1,0 +1,56 @@
+{
+  "run_id": "2026-06-10T23-09-19-079Z_1976810-866cada1_ingest_201205-brt-webster-cac",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T03:22:49.591Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision": "new",
+        "decision_id": "route-bx41-existing-201205",
+        "evidence_refs": [
+          {
+            "block_id": "p008_c0003",
+            "source_id": "201205_brt_webster_cac",
+            "source_quote": "Based on the existing Bx41 route"
+          },
+          {
+            "block_id": "p010_c0002",
+            "source_id": "201205_brt_webster_cac",
+            "source_quote": "Bx41 LTD"
+          },
+          {
+            "block_id": "p013_c0002",
+            "source_id": "201205_brt_webster_cac",
+            "source_quote": "22,000 daily Bx41 riders"
+          }
+        ],
+        "local_observation_id": "route_bx41_201205_webster_cac2",
+        "rationale": "Observation describes the existing (pre-SBS) Bx41 route as background context for the proposed Webster Avenue SBS — includes both the base Bx41 route and LTD service. This is not the same real-world thing as route_webster-ave-sbs (the SBS route BX41+), and no existing registry record captures this generic pre-SBS Bx41 reference. Must be registered as new."
+      },
+      {
+        "decision": "new",
+        "decision_id": "route-bx12-example-201205",
+        "evidence_refs": [
+          {
+            "block_id": "p005_c0001",
+            "source_id": "201205_brt_webster_cac",
+            "source_quote": "Bx12 SBS - Features"
+          },
+          {
+            "block_id": "p006_c0001",
+            "source_id": "201205_brt_webster_cac",
+            "source_quote": "Bx12 SBS - Results"
+          }
+        ],
+        "local_observation_id": "route_bx12_201205_example",
+        "rationale": "Observation refers to Bx12 SBS used as an example of SBS features and results. The observation already resolves to its own base_record_id (route_bx12-plus), which IS the canonical Bx12 SBS record. Per rule: never link to own base_record_id; the closest match IS the observation's own base_record_id, so decision is new."
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-18-19-870Z_2111393-76a49e06_canonicalize_2026-06-10t23-09-19-079z-1976810-866cada1-ingest-201205-brt-webster-cac-route-identity"
+}

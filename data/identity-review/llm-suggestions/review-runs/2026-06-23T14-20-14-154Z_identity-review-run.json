@@ -1,0 +1,30 @@
+{
+  "run_id": "2026-06-23T14-20-14-154Z_identity-review-run",
+  "generated_at": "2026-06-23T14:20:14.154Z",
+  "dry_run": false,
+  "profile_name": "deepseek-pro",
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "concurrency": 1,
+  "packet_count": 1,
+  "completed": 1,
+  "skipped": 0,
+  "failed": 0,
+  "paths": {
+    "suggestions_dir": "data/identity-review/llm-suggestions",
+    "review_runs_dir": "data/identity-review/llm-suggestions/review-runs",
+    "manifest": "data/identity-review/llm-suggestions/review-runs/2026-06-23T14-20-14-154Z_identity-review-run.json",
+    "latest": "data/identity-review/llm-suggestions/review-runs/latest.json"
+  },
+  "results": [
+    {
+      "cluster_id": "entity_cluster_696351ea7c",
+      "packet_path": "data/identity-review/packets/entity_cluster_696351ea7c.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_696351ea7c.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-23T14-20-14-157Z_1268968-c57f0e51_identity-review-run_entity-cluster-696351ea7c",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-20-14-157Z_2026-06-23T14-20-14-157Z_1268968-c57f0e51_identity-review-run_entity-cluster-696351ea7c.jsonl",
+      "status": "completed",
+      "attempts": 1
+    }
+  ]
+}

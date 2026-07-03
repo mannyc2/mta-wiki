@@ -1,0 +1,87 @@
+{
+  "run_id": "2026-06-10T23-10-15-955Z_1976810-e66a6186_ingest_2013-03-07-sbs-125th-cb9",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T03:26:07.421Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "m60-sbs-125th-cb9-new",
+        "local_observation_id": "route_m60_sbs_2013_03_07_125th_cb9",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_125th-laguardia-sbs already matches the canonical registry record (same route_id M60, route_type SBS, Manhattan/Queens boroughs). Registry card already contains source_id 2013_03_07_sbs_125th_cb9 and alias route_m60-sbs-2013-03-07-125th-cb9. Per rule, when the closest match is the observation's own base_record_id, decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p001_c0001",
+            "source_quote": "M60 Select Bus Service on 125 th Street"
+          },
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p013_c0005",
+            "source_quote": "M60 SBS makes limited stops in Manhattan and Queens"
+          }
+        ]
+      },
+      {
+        "decision_id": "bx15-125th-cb9-new",
+        "local_observation_id": "route_bx15_2013_03_07_125th_cb9",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_bx15-ace already matches the canonical registry record (same route_id Bx15, route_type local, Bronx/Manhattan boroughs). Registry card already contains source_id 2013_03_07_sbs_125th_cb9 and alias route_bx15-2013-03-07-125th-cb9. Per rule, when the closest match is the observation's own base_record_id, decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p003_c0005",
+            "source_quote": "Bx15 • M60 • M100 • M101"
+          },
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p013_c0005",
+            "source_quote": "Bx15, M100 and M101 make local stops along 125 th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "m100-125th-cb9-new",
+        "local_observation_id": "route_m100_2013_03_07_125th_cb9",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_m100-ace already matches the canonical registry record (same route_id M100, route_type local). Registry card already contains source_id 2013_03_07_sbs_125th_cb9 and alias route_m100-2013-03-07-125th-cb9. Per rule, when the closest match is the observation's own base_record_id, decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p003_c0005",
+            "source_quote": "Bx15 • M60 • M100 • M101"
+          },
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p013_c0005",
+            "source_quote": "Bx15, M100 and M101 make local stops along 125 th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "m101-125th-cb9-new",
+        "local_observation_id": "route_m101_2013_03_07_125th_cb9",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_m101 already matches the canonical registry record (same route_id M101, route_type local). Registry card already contains source_id 2013_03_07_sbs_125th_cb9 and alias route_m101-2013-03-07-125th-cb9. Per rule, when the closest match is the observation's own base_record_id, decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p003_c0005",
+            "source_quote": "Bx15 • M60 • M100 • M101"
+          },
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p013_c0005",
+            "source_quote": "Bx15, M100 and M101 make local stops along 125 th Street"
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-25-04-899Z_2111393-6a4f9afc_canonicalize_2026-06-10t23-10-15-955z-1976810-e66a6186-ingest-2013-03-07-sbs-125th-cb9-route-identity"
+}

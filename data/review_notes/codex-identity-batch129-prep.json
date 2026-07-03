@@ -1,0 +1,339 @@
+{
+  "note_id": "codex-identity-batch129-prep",
+  "batch_id": "identity129",
+  "batch": "identity129",
+  "created_at": "2026-06-23T05:56:56Z",
+  "author": "Codex deterministic subagent",
+  "scope": {
+    "mode": "Codex-only deterministic local inspection",
+    "global_kinds": [
+      "corridor",
+      "route"
+    ],
+    "proposal_kinds": [
+      "route"
+    ],
+    "excluded_kinds": "All non-corridor and non-route record kinds were out of scope. Corridor lookalikes with missing, different, or phase-specific limits were skipped."
+  },
+  "global_kinds": [
+    "corridor",
+    "route"
+  ],
+  "prepared_count": 5,
+  "proposed_aliases": [
+    {
+      "kind": "route",
+      "global_kind": "route",
+      "canonical_id": "route_lirr-port-jefferson-branch-2023",
+      "target_id": "route_lirr-port-jefferson-branch-2023",
+      "alias_id": "route_port-jefferson-branch",
+      "canonical_name": "Port Jefferson Branch",
+      "alias_name": "Port Jefferson Branch",
+      "reason": "Same LIRR Port Jefferson Branch route identity. Both records use route_id Port Jefferson Branch, describe a rail/LIRR branch, and carry matching Port Jefferson Branch evidence; the target has the broader two-source LIRR branch cluster.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "route_lirr-port-jefferson-branch-2023",
+          "record_kind": "route",
+          "display_name": "Port Jefferson Branch",
+          "route_id": "Port Jefferson Branch",
+          "route_name": "Port Jefferson Branch",
+          "route_type_normalized": "lirr_branch",
+          "agency": "MTA Long Island Rail Road",
+          "source_ids": [
+            "meeting_doc_133321",
+            "meeting_doc_164866"
+          ],
+          "evidence_refs": [
+            "meeting_doc_133321#p004_c0001",
+            "meeting_doc_164866#p001_c0006"
+          ]
+        },
+        "alias": {
+          "record_id": "route_port-jefferson-branch",
+          "record_kind": "route",
+          "display_name": "Port Jefferson Branch",
+          "route_id": "Port Jefferson Branch",
+          "route_name": "Port Jefferson Branch",
+          "route_type_normalized": "branch",
+          "mode": "rail",
+          "source_ids": [
+            "meeting_doc_113926"
+          ],
+          "evidence_refs": [
+            "meeting_doc_113926#p001_c0008"
+          ],
+          "source_quote": "Port Jefferson Branch"
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact route_id match, compatible rail/LIRR branch type, and no local/SBS/LTD/express/subway variant conflict. Alias absent from data/identity-overrides/merges.json route aliases and visible identity prep artifacts through identity128 search; pair absent from do-not-merge."
+    },
+    {
+      "kind": "route",
+      "global_kind": "route",
+      "canonical_id": "route_lirr-montauk-branch-2023",
+      "target_id": "route_lirr-montauk-branch-2023",
+      "alias_id": "route_montauk-branch-lirr",
+      "canonical_name": "Montauk Branch",
+      "alias_name": "Montauk Branch",
+      "reason": "Same LIRR Montauk Branch route identity. Both records use route_id Montauk Branch, name the same branch, and have compatible LIRR branch/rail branch typing; the target has the broader source cluster.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "route_lirr-montauk-branch-2023",
+          "record_kind": "route",
+          "display_name": "Montauk Branch",
+          "route_id": "Montauk Branch",
+          "route_name": "Montauk Branch",
+          "route_type_normalized": "lirr_branch",
+          "source_ids": [
+            "meeting_doc_133321",
+            "meeting_doc_179531"
+          ],
+          "evidence_refs": [
+            "meeting_doc_133321#p003_c0004",
+            "meeting_doc_179531#p009_c0002"
+          ]
+        },
+        "alias": {
+          "record_id": "route_montauk-branch-lirr",
+          "record_kind": "route",
+          "display_name": "Montauk Branch",
+          "route_id": "Montauk Branch",
+          "route_name": "Montauk Branch",
+          "route_type_normalized": "rail_branch",
+          "operator": "MTA Long Island Rail Road",
+          "source_ids": [
+            "meeting_doc_100336"
+          ],
+          "evidence_refs": [
+            "meeting_doc_100336#p001_c0008"
+          ],
+          "description": "LIRR branch between Valley Stream and Rockville Centre where switch maintenance is planned."
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact route_id match and compatible rail/LIRR branch type. Alias absent from data/identity-overrides/merges.json route aliases and visible identity prep artifacts through identity128 search; pair absent from do-not-merge."
+    },
+    {
+      "kind": "route",
+      "global_kind": "route",
+      "canonical_id": "route_meeting-doc-106021-harlem-line",
+      "target_id": "route_meeting-doc-106021-harlem-line",
+      "alias_id": "route_meeting-doc-124206-harlem-line",
+      "canonical_name": "Harlem Line",
+      "alias_name": "Harlem Line",
+      "reason": "Same Metro-North Harlem Line route identity. Both records use route_id Harlem Line, name the Harlem Line, identify commuter rail service, and use compatible Metro-North operator context; the target carries the larger multi-source Harlem Line cluster.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "route_meeting-doc-106021-harlem-line",
+          "record_kind": "route",
+          "display_name": "Harlem Line",
+          "route_id": "Harlem Line",
+          "route_name": "Harlem Line",
+          "route_type_normalized": "commuter_rail",
+          "operator": "MTA Metro-North Railroad",
+          "source_ids": [
+            "meeting_doc_106021",
+            "meeting_doc_138236",
+            "meeting_doc_155001",
+            "meeting_doc_160111",
+            "meeting_doc_170821",
+            "meeting_doc_171491",
+            "meeting_doc_186726",
+            "meeting_doc_196921",
+            "meeting_doc_199096",
+            "meeting_doc_201556"
+          ],
+          "evidence_refs": [
+            "meeting_doc_138236#p001_c0004",
+            "meeting_doc_171491#p003_c0001",
+            "meeting_doc_201556#p002_c0005"
+          ],
+          "source_quotes": [
+            "The Harlem Line rose 22.6% from 2022 with approximately 3.4 million more rides.",
+            "West of Hudson riders have a great alternative: The Hudson and Harlem Lines",
+            "HARLEM LINE"
+          ]
+        },
+        "alias": {
+          "record_id": "route_meeting-doc-124206-harlem-line",
+          "record_kind": "route",
+          "display_name": "Harlem Line",
+          "route_id": "Harlem Line",
+          "route_name": "Harlem Line",
+          "route_type_normalized": "commuter_rail",
+          "operator": "MTA Metro-North Railroad",
+          "borough_normalized": "bronx",
+          "source_ids": [
+            "meeting_doc_124206"
+          ],
+          "evidence_refs": [
+            "meeting_doc_124206#p003_c0008"
+          ]
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact route_id match, same commuter rail route type, and compatible Metro-North operator context. Alias absent from data/identity-overrides/merges.json route aliases and visible identity prep artifacts through identity128 search; pair absent from do-not-merge."
+    },
+    {
+      "kind": "route",
+      "global_kind": "route",
+      "canonical_id": "route_m-nyct-2025",
+      "target_id": "route_m-nyct-2025",
+      "alias_id": "route_meeting-doc-115256-m-subway",
+      "canonical_name": "M Subway Line",
+      "alias_name": "M Subway Line",
+      "reason": "Same NYCT M subway route identity. Both records use route_id M, name the M Subway Line, and identify subway service; the target has the broader NYCT route cluster with M train evidence.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "route_m-nyct-2025",
+          "record_kind": "route",
+          "display_name": "M Subway Line",
+          "route_id": "M",
+          "route_label": "M",
+          "route_name": "M Subway Line",
+          "route_type_normalized": "subway",
+          "mode": "subway",
+          "source_ids": [
+            "meeting_doc_152171",
+            "meeting_doc_186641",
+            "meeting_doc_65171",
+            "nyct_key_performance_metrics_doc194001"
+          ],
+          "evidence_refs": [
+            "meeting_doc_152171#p005_c0006",
+            "meeting_doc_65171#p005_c0006",
+            "nyct_key_performance_metrics_doc194001#p004_c0007"
+          ],
+          "source_quotes": [
+            "14 St F/M/L Upgrades",
+            "the E, F, M and R trains that run along that stretch"
+          ]
+        },
+        "alias": {
+          "record_id": "route_meeting-doc-115256-m-subway",
+          "record_kind": "route",
+          "display_name": "M Subway Line",
+          "route_id": "M",
+          "route_name": "M Subway Line",
+          "route_type_normalized": "subway",
+          "boroughs_normalized": [
+            "brooklyn",
+            "queens",
+            "manhattan"
+          ],
+          "source_ids": [
+            "meeting_doc_115256"
+          ],
+          "evidence_refs": [
+            "meeting_doc_115256#p002_c0004"
+          ]
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact route_id match and same subway route type/mode. Alias absent from data/identity-overrides/merges.json route aliases and visible identity prep artifacts through identity128 search; pair absent from do-not-merge."
+    },
+    {
+      "kind": "route",
+      "global_kind": "route",
+      "canonical_id": "route_r-nyct-2025",
+      "target_id": "route_r-nyct-2025",
+      "alias_id": "route_meeting-doc-65171-r-subway",
+      "canonical_name": "R Subway Line",
+      "alias_name": "R Subway Line",
+      "reason": "Same NYCT R subway route identity. Both records use route_id R and identify the R subway line/train; the target is the broader NYCT R train cluster and the alias is a one-source R subway mention.",
+      "confidence": "high",
+      "evidence": {
+        "canonical": {
+          "record_id": "route_r-nyct-2025",
+          "record_kind": "route",
+          "display_name": "R Subway Line",
+          "route_id": "R",
+          "route_label": "R",
+          "route_name": "R train",
+          "mode": "subway",
+          "source_ids": [
+            "meeting_doc_186641",
+            "meeting_doc_42866",
+            "nyct_key_performance_metrics_doc194001"
+          ],
+          "evidence_refs": [
+            "nyct_key_performance_metrics_doc194001#p009_c0011",
+            "meeting_doc_186641#p002_c0009",
+            "meeting_doc_42866#p004_c0002"
+          ]
+        },
+        "alias": {
+          "record_id": "route_meeting-doc-65171-r-subway",
+          "record_kind": "route",
+          "display_name": "R Subway Line",
+          "route_id": "R",
+          "route_type_normalized": "subway",
+          "borough_normalized": "queens",
+          "source_ids": [
+            "meeting_doc_65171"
+          ],
+          "evidence_refs": [
+            "meeting_doc_65171#p005_c0006"
+          ],
+          "source_quote": "the E, F, M and R trains that run along that stretch"
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact route_id match and compatible subway mode/type. Alias absent from data/identity-overrides/merges.json route aliases and visible identity prep artifacts through identity128 search; pair absent from do-not-merge."
+    }
+  ],
+  "guard_summary": {
+    "applied_alias_exclusion": "Checked data/identity-overrides/merges.json using the durable alias_id -> target_id shape under .aliases.<kind>; none of the proposed alias_ids are present.",
+    "prepared_alias_exclusion": "Searched visible data/review_notes/codex-identity-batch*-prep.json artifacts and explicit identity127/identity128 strings; none of the proposed alias_ids are already prepared. No identity127 or identity128 prep artifact was visible by filename/content search.",
+    "do_not_merge": "Checked data/identity-overrides/do-not-merge.json for the proposed route pairs; no proposed pair appeared. The tempting M15 pair was excluded because do-not-merge explicitly blocks it.",
+    "route_guard": "Every proposal has exact route_id equality and compatible route type/mode. No local/SBS/LTD/express/subway cross-variant bus pair was proposed.",
+    "corridor_guard": "No corridor aliases were proposed because inspected corridor lookalikes had missing limits, different limits, phase-specific candidate records, or otherwise insufficient same-geography evidence for this strict batch."
+  },
+  "command_evidence": [
+    {
+      "purpose": "List relevant artifacts and canonical files without running generated-output commands.",
+      "command": "rg --files data packages docs wiki | rg '(^data/review_notes/|^data/identity-overrides/|^data/canonical/|LOG\\.md$)'"
+    },
+    {
+      "purpose": "Check whether identity127 or identity128 artifacts/content were visible.",
+      "command": "rg -n 'identity12[78]|batch12[78]|identity128|identity127' data/review_notes data/identity-overrides data/submissions 2>/dev/null",
+      "result": "No matches."
+    },
+    {
+      "purpose": "Confirm applied merge override shape and collect applied alias IDs from alias_id -> target_id entries.",
+      "command": "jq -r '.aliases | to_entries[] | .value | keys[]' data/identity-overrides/merges.json | sort -u"
+    },
+    {
+      "purpose": "Collect visible prepared alias IDs from existing identity prep artifacts.",
+      "command": "jq -r '.. | objects | .alias_id? // .aliasId? // .alias? // .alias_record_id? // empty' data/review_notes/codex-identity-batch*-prep.json 2>/dev/null | sort -u"
+    },
+    {
+      "purpose": "Find exact route_id duplicate groups with route type/service variant context.",
+      "command": "jq -r 'select(.record_kind==\"route\") | [(.payload.route_id // \"\"), (.payload.route_type_normalized // .payload.route_type // \"\"), (.payload.service_variant // \"\"), .record_id, .display_name, (.source_ids|length)] | @tsv' data/canonical/routes.jsonl | awk -F '\\t' '$1!=\"\"{k=tolower($1); a[k]=a[k] ORS $0; c[k]++} END{for(k in c) if(c[k]>1) printf \"## %s (%d)%s\\n\", k, c[k], a[k]}'"
+    },
+    {
+      "purpose": "Inspect final candidate route records and evidence refs.",
+      "command": "jq 'select(.record_id|IN(\"route_lirr-port-jefferson-branch-2023\",\"route_port-jefferson-branch\",\"route_lirr-montauk-branch-2023\",\"route_montauk-branch-lirr\",\"route_meeting-doc-106021-harlem-line\",\"route_meeting-doc-124206-harlem-line\",\"route_m-nyct-2025\",\"route_meeting-doc-115256-m-subway\",\"route_r-nyct-2025\",\"route_meeting-doc-65171-r-subway\")) | {record_id, display_name, payload, source_ids, evidence_refs: [.evidence_refs[]? | {evidence_id, page_number, source_quote, role}]}' data/canonical/routes.jsonl"
+    },
+    {
+      "purpose": "Check final candidate IDs against applied/prepared/do-not-merge files.",
+      "command": "rg -n 'route_lirr-port-jefferson-branch-2023|route_port-jefferson-branch|route_lirr-montauk-branch-2023|route_montauk-branch-lirr|route_meeting-doc-106021-harlem-line|route_meeting-doc-124206-harlem-line|route_m-nyct-2025|route_meeting-doc-115256-m-subway|route_r-nyct-2025|route_meeting-doc-65171-r-subway' data/review_notes/codex-identity-batch*-prep.json data/identity-overrides/merges.json data/identity-overrides/do-not-merge.json",
+      "result": "No matches for the final candidate IDs."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema-propose",
+    "ontology-normalize-run",
+    "ingest/write with --profile/provider",
+    "materialize",
+    "validate",
+    "export-jsonl",
+    "DB publish/repair",
+    "provider-backed or external LLM commands"
+  ]
+}

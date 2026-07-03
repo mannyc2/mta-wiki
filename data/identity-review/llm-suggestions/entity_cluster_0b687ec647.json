@@ -1,0 +1,64 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:36:55.498Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_0b687ec647.md",
+  "cluster_id": "entity_cluster_0b687ec647",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_0b687ec647",
+    "kind": "entity",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "entity_bronx-cb7-2012-11-webster",
+          "entity_brt-flushing-main-st-aug2018-cb7-queens"
+        ],
+        "reason": "Contradiction test: despite sharing entity_name 'Community Board 7', the records refer to community boards in different boroughs (Bronx vs Queens). Borough is a strong identity field for community boards, and differing boroughs force do_not_merge per the identity merge canon."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "entity_bronx-cb7-2012-11-webster",
+        "aliases": [
+          "Community Board 7"
+        ],
+        "reason": "Shared name is useful for search but does not indicate same object due to distinct borough."
+      },
+      {
+        "record_id": "entity_brt-flushing-main-st-aug2018-cb7-queens",
+        "aliases": [
+          "Community Board 7"
+        ],
+        "reason": "Same as above."
+      }
+    ],
+    "missing_fields": [
+      {
+        "record_id": "entity_bronx-cb7-2012-11-webster",
+        "fields": [
+          "borough"
+        ]
+      },
+      {
+        "record_id": "entity_brt-flushing-main-st-aug2018-cb7-queens",
+        "fields": [
+          "borough"
+        ]
+      }
+    ],
+    "ambiguous": [],
+    "suggested_rules": [
+      "For community board entities, borough (or equivalent geographic scope) should be treated as a strong identity field, comparable to corridor limits. Records with the same number but different boroughs should never merge."
+    ],
+    "confidence": "high",
+    "rationale": "Both records are Community Board 7, but one is explicitly tied to the Bronx (via description, source labels, and evidence from Webster/Fordham meetings) and the other to Queens (Flushing/39 Ave). Under the contradiction test, differing borough constitutes a difference in strong identity field, making them distinct entities. No merge is possible. The shared entity_name alone is insufficient."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-36-45-078Z_1282984-ebce83dc_identity-review-run_entity-cluster-0b687ec647",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-36-45-078Z_2026-06-23T14-36-45-078Z_1282984-ebce83dc_identity-review-run_entity-cluster-0b687ec647.jsonl"
+}

@@ -1,0 +1,48 @@
+{
+  "run_id": "2026-06-10T23-10-15-955Z_1976810-e66a6186_ingest_2013-03-07-sbs-125th-cb9",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T03:27:47.344Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "d1-125th-st-already-canonical",
+        "local_observation_id": "corridor_125th_st_manhattan_2013_03_07",
+        "decision": "new",
+        "rationale": "Observation maps to base_record_id=corridor_125th-st-manhattan which already exists in the registry and already owns source 2013_03_07_sbs_125th_cb9. The canonical record already represents this observation — no different target record to link to. Evidence confirms same corridor: 'M60 Select Bus Service on 125th Street' with 'All intersections from Morningside Avenue to Second Avenue were analyzed', matching the registry record's limits exactly.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p001_c0001",
+            "source_quote": "M60 Select Bus Service on 125 th Street"
+          },
+          {
+            "source_id": "2013_03_07_sbs_125th_cb9",
+            "block_id": "p015_c0004",
+            "source_quote": "All intersections from Morningside Avenue to Second Avenue were analyzed"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "corridor_125th-st-manhattan",
+            "object_id": "corridor_125th-street-manhattan",
+            "description": "Both records represent the same 125th Street SBS corridor in Manhattan. corridor_125th-st-manhattan has limits Morningside Avenue to Second Avenue; corridor_125th-street-manhattan has limits Amsterdam Avenue to Second Avenue. The one-block difference at the western end (Amsterdam vs Morningside) is a documentation-level boundary variation within the same SBS project corridor serving M60, M100, M101, Bx15.",
+            "evidence_refs": [
+              {
+                "source_id": "2013_03_07_sbs_125th_cb9",
+                "block_id": "p015_c0004",
+                "source_quote": "All intersections from Morningside Avenue to Second Avenue were analyzed"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-25-04-900Z_2111393-cf451824_canonicalize_2026-06-10t23-10-15-955z-1976810-e66a6186-ingest-2013-03-07-sbs-125th-cb9-corridor-identity"
+}

@@ -1,0 +1,140 @@
+{
+  "batch_id": "identity143",
+  "global_kind": "project",
+  "prepared_count": 8,
+  "proposed_aliases": [
+    {
+      "alias_id": "project_meeting-doc-jamaica-capacity-improvement",
+      "target_id": "project_jamaica-capacity-improvement",
+      "confidence": "high",
+      "reason": "Both records name the same Jamaica Capacity Improvement Project and describe switch installations near Jamaica in support of capacity improvements. The target already carries the broader multi-source Jamaica, Queens project record, while the alias is an earlier meeting-doc duplicate with the same project_name and same switch-installation scope.",
+      "evidence_refs": [
+        "meeting_doc_100311#p003_c0020",
+        "meeting_doc_104756#p005_c0025",
+        "meeting_doc_102691#p006_c0007",
+        "meeting_doc_100336#p001_c0005",
+        "meeting_doc_102721#p005_c0012"
+      ],
+      "guard_notes": "Project guard satisfied: same durable project name, same Jamaica switch-installation/capacity-improvement scope, and no phase-number mismatch for this pair. Does not merge the separate Phase 2-only records. Pair is absent from current merges, do-not-merge, and prior identity prep artifacts. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "alias_id": "project_meeting-doc-bellerose-ladder",
+      "target_id": "project_bellerose-ladder-installation",
+      "confidence": "high",
+      "reason": "Both records describe the Bellerose Ladder installation project: a 15-month installation of a ladder/series of switches, completed in October 2022, enabling trains to cross tracks more quickly. The target has the fuller completed project record; the alias has the same project identity with shorter naming.",
+      "evidence_refs": [
+        "meeting_doc_102686#p004_c0006",
+        "meeting_doc_100291#p005_c0002"
+      ],
+      "guard_notes": "Project guard satisfied: same named infrastructure project, same completion timing, and same technical scope. Pair is absent from current merges, do-not-merge, and prior identity prep artifacts. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "alias_id": "project_harmon-shop-replacement-phase5-stage2",
+      "target_id": "project_harmon-shop-phase5-stage2",
+      "confidence": "high",
+      "reason": "Both records refer to Harmon Shop Replacement Phase V Stage 2 at Croton-Harmon. The alias is a contract/modification record for design and construction services under the same Phase V Stage 2 scope; the target is the fuller multi-source project record for the final phase of the Harmon Shop upgrade.",
+      "evidence_refs": [
+        "meeting_doc_155486#p028_c0008",
+        "meeting_doc_127556#p012_c0002",
+        "meeting_doc_127556#p027_c0007",
+        "meeting_doc_33751#p045_c0001"
+      ],
+      "guard_notes": "Project guard satisfied: same facility, same Phase V Stage 2 package, same Croton-Harmon/Harmon Shop replacement scope. This does not merge other Harmon phases or the parent multi-phase program. Pair is absent from current merges, do-not-merge, and prior identity prep artifacts. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "alias_id": "project_pelham-substation-c16-replacement",
+      "target_id": "project_pelham-substation-c16",
+      "confidence": "high",
+      "reason": "Both records describe replacement of Pelham Substation C-16 on the New Haven Line near Willson's Woods Park/Mount Vernon. The wording differs slightly between 'Mobile Substation C-16' and 'Substation C-16', but the shared Pelham C-16 replacement identity, location, and substation-replacement scope match.",
+      "evidence_refs": [
+        "meeting_doc_131676#p003_c0002",
+        "meeting_doc_131676#p003_c0006",
+        "meeting_doc_124291#p041_c0009",
+        "meeting_doc_124291#p042_c0007"
+      ],
+      "guard_notes": "Project guard satisfied: same named substation asset, same replacement scope, same Mount Vernon/Willson's Woods Park area. Pair is absent from current merges, do-not-merge, and prior identity prep artifacts. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "alias_id": "project_escalator-replacement-6-nyct-stations-dec2023",
+      "target_id": "project_escalator-replacement-6-stations",
+      "confidence": "high",
+      "reason": "Both records are the Replacement of Escalators at 6 NYCT Stations project. They match on the six-station list and the 21-escalator replacement scope; the target includes the award/contract detail while the alias is a later December 2023 duplicate naming the same design-build package.",
+      "evidence_refs": [
+        "meeting_doc_129196#p029_c0009",
+        "meeting_doc_129101#p099_c0009",
+        "meeting_doc_129101#p099_c0005"
+      ],
+      "guard_notes": "Project guard satisfied: same station set, same 21-escalator replacement quantity, same NYCT design-build scope. Pair is absent from current merges, do-not-merge, and prior identity prep artifacts. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "alias_id": "project_79336-vnb-upper-level-approach-ph1",
+      "target_id": "project_vnb-upper-level-approach-phase1",
+      "confidence": "high",
+      "reason": "Both records describe Phase 1 replacement of the upper level elevated approach at the Verrazzano-Narrows Bridge. They share the same Brooklyn/Staten Island bridge approach scope, including roadway deck and structural approach work; the target uses the compact VNB identifier while preserving the same full project name as an alias.",
+      "evidence_refs": [
+        "meeting_doc_79336#p013_c0004",
+        "meeting_doc_79336#p013_c0007",
+        "meeting_doc_79336#p013_c0008",
+        "meeting_doc_102776#p012_c0005",
+        "meeting_doc_102776#p012_c0006"
+      ],
+      "guard_notes": "Project guard satisfied: same bridge, same upper-level elevated approach, same Phase 1 package. Status differs by document time only (under construction vs completed), so it should not block identity. Pair is absent from current merges, do-not-merge, and prior identity prep artifacts. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "alias_id": "project_rockaway-line-rehab-resiliency-meeting-doc-160241",
+      "target_id": "project_rockaway-line-rehabilitation-resiliency",
+      "confidence": "high",
+      "reason": "Both records identify the Rockaway Line Rehabilitation & Resiliency Project. The alias references the temporary fare/service outage tied to the project, while the target is the fuller project record for the $393 million Rockaway Line work involving Hammels Wye, South Channel Bridge, and related Rockaway Line resiliency upgrades.",
+      "evidence_refs": [
+        "meeting_doc_160241#p001_c0001",
+        "meeting_doc_160271#p001_c0005",
+        "meeting_doc_163121#p024_c0003",
+        "meeting_doc_163121#p024_c0005",
+        "meeting_doc_160631#p322_c0005"
+      ],
+      "guard_notes": "Project guard satisfied: same named Rockaway Line Rehabilitation and Resiliency project; alias is an outage/fare-promotion mention of the same durable project, not a separate service record. Pair is absent from current merges, do-not-merge, and prior identity prep artifacts. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "alias_id": "project_fmtac-portfolio-manager-blackrock",
+      "target_id": "project_meeting-doc-177171-fmtac-portfolio-mgr",
+      "confidence": "high",
+      "reason": "Both records describe the FMTAC Investment Portfolio Manager contract awarded to BlackRock Financial Management Inc. for portfolio management services for First Mutual Transportation Assurance Company assets. The alias is the pending Board approval version; the target is the awarded contract record for the same service contract.",
+      "evidence_refs": [
+        "meeting_doc_176501#p008_c0006",
+        "meeting_doc_177171#p058_c0006",
+        "meeting_doc_177171#p059_c0003"
+      ],
+      "guard_notes": "Project guard satisfied: same FMTAC portfolio-manager service contract, same BlackRock counterparty, same contract/service scope. Status differs by document time only (pending approval vs awarded). Pair is absent from current merges, do-not-merge, and prior identity prep artifacts. Durable merge direction is alias_id -> target_id."
+    }
+  ],
+  "commands_run": [
+    "pwd && rg --files | rg '(^data/|^wiki/|^raw/|merges\\\\.json$|identity|do-not-merge|review_notes)'",
+    "ls -la data/review_notes 2>/dev/null || true",
+    "git status --short",
+    "jq 'keys, .project? // .projects? // .aliases? // empty' data/identity-overrides/merges.json | head -200",
+    "jq 'keys, .project? // .projects? // empty' data/identity-overrides/do-not-merge.json | head -200",
+    "head -3 data/canonical/projects.jsonl",
+    "jq '{batch_id, global_kind, prepared_count, first: .proposed_aliases[0]}' data/review_notes/codex-identity-batch141-prep.json",
+    "jq '.aliases.project | keys | length, .aliases.project | to_entries[] | select(.key|startswith(\"project_\")) | [.key,.value] | @tsv' data/identity-overrides/merges.json | head -80",
+    "jq '.pairs | length, .pairs[]? | select((.global_kind? == \"project\") or (.kind? == \"project\") or (.record_kind? == \"project\"))' data/identity-overrides/do-not-merge.json | head -120",
+    "jq '{batch_id, global_kind, prepared_count, aliases: [.proposed_aliases[] | {global_kind, alias_id, target_id}]}' data/review_notes/codex-identity-batch139-prep.json data/review_notes/codex-identity-batch140-prep.json data/review_notes/codex-identity-batch141-prep.json",
+    "jq -r '.aliases.project | to_entries[] | [.key,.value] | @tsv' data/identity-overrides/merges.json | rg 'project_' | wc -l",
+    "jq '.aliases | keys, (.aliases.project | type), (.aliases.project | to_entries[0:20])' data/identity-overrides/merges.json",
+    "jq '.pairs[0:10]' data/identity-overrides/do-not-merge.json",
+    "jq -r '.pairs | to_entries[] | [.key, (.value|tostring)] | @tsv' data/identity-overrides/do-not-merge.json | head -40",
+    "jq -r '.proposed_aliases[]? | select((.global_kind // input_filename | test(\"project\")?) or true) | [.alias_id,.target_id] | @tsv' data/review_notes/codex-identity-batch*.json 2>/dev/null | rg '^project_' | sort -u | wc -l",
+    "head -5 data/identity-overrides/merges.json; tail -5 data/identity-overrides/merges.json",
+    "jq -s '.[0] | type, keys, (.aliases.project | to_entries[0:5])' data/identity-overrides/merges.json",
+    "jq -s '.[0].pairs.project // []' data/identity-overrides/do-not-merge.json",
+    "jq -s -r '.[0].aliases.project | to_entries[] | [.key,.value] | @tsv' data/identity-overrides/merges.json | head -30",
+    "bun -e '<read-only duplicate project grouping over data/canonical/projects.jsonl excluding current project merge aliases>'",
+    "for id in <shortlist>; do rg -n \"\\\\\\\"$id\\\\\\\"|$id\" data/review_notes/codex-identity-batch*.json data/identity-overrides/merges.json data/identity-overrides/do-not-merge.json | head -5; done",
+    "bun -e '<read-only compact record/evidence extraction for selected project ids>'"
+  ],
+  "commands_not_run": [
+    "No provider-backed commands or agent harness commands were run.",
+    "No canonicalize, campaign dedup, identity-review, write, ask, schema, ontology-normalize, or --profile/provider commands were run.",
+    "No materialize, export-jsonl, or full validate commands were run.",
+    "No canonical JSONL, wiki pages, DB, LOG.md, manifest, retired submissions, submissions, or merges.json files were edited."
+  ]
+}

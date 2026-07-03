@@ -1,0 +1,56 @@
+{
+  "note_id": "codex-source-prep-spreadsheet-batch026-prep",
+  "created_at": "2026-06-23T18:31:00.000Z",
+  "author": "codex",
+  "kind": "source_prep_spreadsheet_batch_applied",
+  "status": "applied_wave52_detached_running",
+  "scope": "Applied deterministic spreadsheet preview sidecars for 10 not-ready spreadsheet sources after wave51 generated-output checkpoint, then launched reopened ready pool as wave52.",
+  "source_prep_run_id": "spreadsheet-backlog-20260623",
+  "mutation_mechanism": "bun packages/cli/src/cli.ts source-prep-apply-preview <source_id> --run-id spreadsheet-backlog-20260623",
+  "sources": [
+    { "source_id": "meeting_doc_89566", "sheets": 1, "rows": 0, "cells": 0, "blocks": 7 },
+    { "source_id": "meeting_doc_89576", "sheets": 2, "rows": 130, "cells": 1780, "blocks": 113 },
+    { "source_id": "meeting_doc_89581", "sheets": 1, "rows": 59, "cells": 644, "blocks": 63 },
+    { "source_id": "meeting_doc_89586", "sheets": 4, "rows": 407, "cells": 4701, "blocks": 385 },
+    { "source_id": "meeting_doc_91321", "sheets": 2, "rows": 130, "cells": 1780, "blocks": 113 },
+    { "source_id": "meeting_doc_91326", "sheets": 1, "rows": 59, "cells": 644, "blocks": 63 },
+    { "source_id": "meeting_doc_91331", "sheets": 4, "rows": 407, "cells": 4693, "blocks": 385 },
+    { "source_id": "meeting_doc_94881", "sheets": 2, "rows": 130, "cells": 1780, "blocks": 113 },
+    { "source_id": "meeting_doc_94886", "sheets": 1, "rows": 60, "cells": 649, "blocks": 62 },
+    { "source_id": "meeting_doc_94891", "sheets": 4, "rows": 407, "cells": 4694, "blocks": 385 }
+  ],
+  "readiness_after_apply": {
+    "command": "bun packages/cli/src/cli.ts campaign readiness --id validation-2026-06",
+    "total": 2566,
+    "ready": 2552,
+    "ready_never_ingested": 10,
+    "already_ingested": 2550,
+    "quarantined": 14,
+    "interpretation": "The reopened 10-source pool came from batch026 and was launched as wave52."
+  },
+  "ingest_started": {
+    "wave": 52,
+    "pid": 1518171,
+    "source_count": 10,
+    "concurrency": 10,
+    "materialize_cadence": "MTA_MATERIALIZE_EVERY=100000",
+    "profile": "pioneer-deepseek-flash",
+    "command_template": "PIONEER_API_KEY='<PIONEER_API_KEY>' MTA_MATERIALIZE_EVERY=100000 setsid -f bun packages/cli/src/cli.ts campaign ingest --wave 52 --id validation-2026-06 --size 10 --concurrency 10 --timeout-min 300 --profile pioneer-deepseek-flash",
+    "secret_persisted": false
+  },
+  "verification": {
+    "source_prep_tests": "bun test packages/pipeline/test/sources/source-prep.test.ts: 6 pass, 0 fail",
+    "blocks_line_counts_checked": true,
+    "repo_secret_scan_after_launch": "rg for Pioneer key fragments returned no matches"
+  },
+  "commands_not_run": [
+    "campaign dedup",
+    "canonicalize*",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "write",
+    "ask",
+    "schema",
+    "generated-output materialize/export/validate while wave52 active"
+  ]
+}

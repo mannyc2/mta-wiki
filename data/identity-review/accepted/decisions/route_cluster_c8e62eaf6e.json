@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "route_cluster_c8e62eaf6e",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_c8e62eaf6e.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_c8e62eaf6e.json",
+  "source_review_run_id": "2026-06-23T14-38-47-609Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "medium"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "route_bx40-bx42-tremont-cb5-2024",
+        "route_bx42-tremont-cab1"
+      ],
+      "reason": "Contradiction in strong identity fields: Record 1 bundles Bx40 and Bx42 as 'Bx40/42' with variant 'local', while Record 2 is specifically 'Bx42' with no variant. Base route id differs (bundle vs single) and variant mismatch (known vs unknown). Per Decision Test 1 (contradiction), these are distinct records."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "The two records have different base route identities: one bundles Bx40 and Bx42 as a single record with variant 'local', the other is specifically Bx42 with no variant. The Merge Canon for routes requires matching base route id and variant; a bundle does not equal a single route, and a known variant cannot merge with an unknown one. The relation_context already marks them as related_route, not the same object. Missing variant on the Bx42 record further confirms distinctness. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

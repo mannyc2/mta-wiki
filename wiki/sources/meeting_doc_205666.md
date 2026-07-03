@@ -1,0 +1,157 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-205666"
+record_kind: "source"
+display_name: "Minutes of the MTA Finance Committee Meeting - March 23, 2026"
+source_id: "meeting_doc_205666"
+source_ids:
+  - "meeting_doc_205666"
+local_observation_id: "source_meeting_doc_205666"
+local_observation_ids:
+  - "source_meeting_doc_205666"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T22:30:56.514Z"
+submission_ids:
+  - "sub_4775b1098e3d93fb"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting minutes"
+  date_text: "Monday, March 23, 2026 1:45 p.m."
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2026-03-23"
+    precision: "day"
+    raw_text: "Monday, March 23, 2026 1:45 p.m."
+  published_date_normalized: "2026-03-23"
+  published_date_precision: "day"
+  publisher: "MTA"
+  title: "Minutes of the Metropolitan Transportation Authority Finance Committee Meeting"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_205666#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_205666"
+    source_path: "raw/sources/meeting_doc_205666/blocks.jsonl"
+    source_quote: "Minutes of the Metropolitan Transportation Authority Finance Committee Meeting 2 Broadway, 20 th Floor Board Room 1 New York, NY 10004 Monday, March 23, 2026 1:45 p.m."
+    text_sha256: "sha256:9534a66b05772a11e737c39747d382540fa62a86be1571dc2d9533bed8b96171"
+    text_source: "raw_text"
+---
+
+# March 2026 committee minutes
+
+source_id: meeting_doc_205666
+citation: cite block ids exactly as shown in square brackets
+document: 90 block(s)
+
+## Page 1
+
+### [p001_c0001] Minutes of the Metropolitan Transportation Authority Finance Committee Meeting 2 Broadway, 20 th Floor Board Room 1 New York, NY 10004 Monday, March 23, 2026 1:45 p.m.
+### [p001_c0002] The following Finance Committee Members were present (*attended remotely):
+[p001_c0003] Hon. Neal Zuckerman, Chair Hon. Andrew Albert Hon. Samuel Chu Hon. Marc Herbst* Hon. David R. Jones Hon. Christopher Leathers Hon. Haeda Mihaltses Hon. Edward Valente
+### [p001_c0004] The following Finance Committee Members were absent:
+[p001_c0005] Hon. Melva M. Miller Hon. John Samuelsen
+### [p001_c0006] The following staff members attended:
+[p001_c0007] Jaibala Patel, Chief Financial Officer Paige Graves, General Counsel Eric Baez, Chief of Grand Central Terminal Operations Lisette Camilo, Chief Administrative Officer Olga Chernat, Deputy Chief, Financial Services David Florio, Chief Real Estate Transactions and Operations Officer Jake Luce, Deputy Chief, Management & Budget Sergio Paneque, Chief Procurement Officer Kim Trevisan, Director, Grand Central Retail Leasing & Management
+[p001_c0008] To hear the content of public comments, details of Committee presentations, and Committee Members' comments and questions, as well as any part of the Finance Committee meeting, please refer to the video recording of the meeting produced by the MTA, available and maintained on the MTA website:
+[p001_c0009] https://www.mta.info/transparency/board-and-committee-meetings/march-2026
+### [p001_c0010] 1. CALL TO ORDER
+[p001_c0011] Chair Neal Zuckerman called the meeting of the Finance Committee to order.
+### [p001_c0012] 2. PUBLIC COMMENTS (*attended remotely)
+[p001_c0013] There were 3 public speakers:
+[p001_c0014] Christopher D. Greif, ADA Accessibility Transportation Group Aleta Dupree, Team Folds* Jason Anthony, LIRR ADA Task Force
+
+## Page 2
+
+### [p002_c0001] 3. MINUTES
+[p002_c0002] The minutes of the meeting held on February 23, 2026, were approved.
+### [p002_c0003] 4. FINANCIAL PERFORMANCE
+[p002_c0004] Jake Luce, Deputy Chief, Management & Budget, presented operating results through February, which were $138M favorable, compared with the adopted budget.
+[p002_c0005] This was driven primarily by operating subsidies and investment income, which were favorable by $96M. Operating expenses and debt service were also favorable, despite high overtime associated with preparation and response for storms Hernando and Fern. Operating revenues were unfavorable by $27M, as the bad weather resulted in fewer trips.
+[p002_c0006] Mr. Luce went further into revenues:
+[p002_c0007] Favorability in operating subsidies was driven primarily by Urban Taxes, which were favorable by $65M in the month of February and $94M YTD, and reflects the Real Estate performance in the region. Capital subsidies were also favorable – by $10M in the month of February and $30M YTD – primarily due to better-than-expected receipts from Real Property Transfer Taxes.
+[p002_c0008] Due to bad weather, farebox revenue was unfavorable by $15M in February and $22M YTD, while tolls were unfavorable by $11M in February and $2.3M YTD.
+[p002_c0009] Mr. Luce explained the expense side:
+[p002_c0010] Operating expenses were favorable by $74M in February and $59M YTD. Favorability in payroll, timing of prescription drug rebates, professional services costs, and materials and supplies costs was partially offset by higher-than-budgeted overtime driven by major storms. In addition to operating expenses, debt service was favorable by $6.4M in February and $10M YTD.
+[p002_c0011] Mr. Luce further stated that the effects of the United States conflict with Iran on MTA finances are being monitored. For instance, increases in fuel prices, changes in the global credit market, and general economic slowdown in the NYC region could affect both costs and revenues. The board will be updated as trends are monitored in the run-up to the July Financial Plan.
+[p002_c0012] At the request of Chair Zuckerman, Mr. Luce provided a description of what MTA's Urban and Real Estate Taxes Revenues are.
+[p002_c0013] Olga Chernat, Deputy Chief, Financial Services, presented the results of a recent refunding transaction. It was priced in early March, shortly after the start of the conflict in Iran. While interest rates were higher than the prior week, the $764 million Payroll Mobility Bonds transaction still generated strong investor interest.
+[p002_c0014] The transaction locked in $28.5 million in net present value savings, roughly 8% of the Transportation Revenue Bonds refunded par, and addressed upcoming put or repayment dates for other bonds. In the week following the transaction, rates increased even further in response to the conflict.
+[p002_c0015] The main impact of the Iran conflict on the market so far has been higher interest rates, as investors recalibrate their earlier inflation expectations. At the same time, the municipal market benefited from strong technical factors—lower than anticipated bond issuance year-to-date and healthy cash inflows into the market.
+
+## Page 3
+
+[p003_c0001] Ms. Chernat further stated that the Finance Team is actively working on several transactions, including refinancing of the outstanding CRZ loan and replacing an expiring revolving line of credit for working capital purposes.
+[p003_c0002] In response to Hon. Jones' question, Ms. Chernat stated that the recent ratings actions on New York City debt do not have any direct impact on MTA's credit ratings.
+[p003_c0003] Hon. Chu asked about fuel hedging, which Jai Patel, Chief Financial Officer, addressed in her presentation.
+[p003_c0004] For details of the presentation given by Ms. Patel, please refer to the video recording of the meeting produced by the MTA and maintained in MTA records available on the MTA website.
+### [p003_c0005] 5. MTA HEADQUARTERS AND ALL-AGENCY ITEMS ACTION ITEMS
+[p003_c0006] With regard to the 2025 Annual Procurement Report, Mr. Luce stated that as required by the Public Authorities Law, this report details contracts that were awarded, about, or for which payments were made in 2025. The full report is available in the Committee exhibits.
+[p003_c0007] With regard to the Mission Statement, Measurements and Performance Indicators Report, Mr. Luce stated that the Public Authorities Law requires the MTA to annually re-examine its mission statement, reassess its stakeholders, list the MTA's goals, and its associated key performance measurements. The report, included in the committee book, compiles these required elements for 2025.
+[p003_c0008] Mr. Luce addressed Chair Zukerman's question about why this report is a Finance Committee topic. Ms. Patel further addressed this topic by reading the MTA's Mission Statement.
+[p003_c0009] Upon motion duly made and seconded, the Committee voted to recommend the MTA's Mission Statement and corresponding performance standards before the Board for approval.
+[p003_c0010] Sergio Paneque, Chief Procurement Officer, stated that there were six MTA Headquarters items this month for Finance Committee approval, totaling an estimated $345.8 million. These actions could be found in the March 2026 Finance Committee Book.
+[p003_c0011] The first item was a request for the Board to approve an award of an informal competitive miscellaneous service contract to GIRO, Inc. for the delivery and implementation of a HASTUS module, providing a new Crew Dispatch and Management System ("CDMS") under an Immediate Operating Need. This system will support the picking, crew management/dispatching, and time-reporting process for Metro-North Railroad ("MNR") and Long Island Rail Road ("LIRR").
+[p003_c0012] Implementation includes assisting MTA with configuring MTA's non-production and production environments, installing software, providing procedures for testing and acceptance, and training. This eight-year contract has an estimated value of $20.5 million, which is $2.6 million, or 11 percent, below a competitor's pricing and 50 percent below the license fees charged by GIRO to the industry. This contract provides 35 months of implementation, and the outer years of software maintenance and support.
+[p003_c0013] The second item was a request that the Board approve the modification of a noncompetitive miscellaneous service contract, also with GIRO, to extend the existing licensing and support of a HASTUS module, providing a centralized train and bus scheduling system currently being used by NYC Transit Department of Subways ("DOS"), Department of Buses ("DOB"), and MTA Bus Company ("MTABC") in the amount of $4.2 million.
+
+## Page 4
+
+[p004_c0001] This modification also includes upgrading LIRR's HASTUS Train Scheduling system from the 2014 version to the 2027 version, along with five years of licensing and support for $4 million. The total value of this modification is $8.2 million, which reflects the 50 percent below license fees charged by GIRO to the industry, and a reduction of the annual maintenance escalation rate from 4 to 2.5 percent.
+[p004_c0002] This upgrade will take up to 16 months and will streamline LIRR's data and schedule development, strengthening critical quality control processes. Services for the above user agencies will co-terminate in March 2032.
+[p004_c0003] The third item was a request for the Board to approve a competitively negotiated personal services retainer contract to 50 consulting firms to provide as-needed information technology ("IT") consulting services. Contracts will have a zero-dollar value, and specific tasks will be assigned competitively through a mini-RFP process among the selected firms in specific IT consulting categories.
+[p004_c0004] The firms selected offer the best combination of required qualifications, technical expertise, cost-efficiency, and resources to meet the MTA's needs.
+[p004_c0005] Through negotiations, hourly rates were reduced by a range of 9.5 to 19 percent. Negotiated annual escalation rates were reduced from the proposed 5 percent to under 2 percent, which is below the 3.7 percent average Consumer Price Index. All established hourly rates under this contract are ceiling rates for the 10-year term, however qualified vendors can propose lower rates at the time of the task order process.
+[p004_c0006] The contract term is for 10 years with the total estimated value of $300 million.
+[p004_c0007] The fourth item was a request for Board approval to extend 11 competitively solicited all-agency personal services contracts for 12 months (April 1, 2026–March 31, 2027) and increase the aggregate amount of these contracts by an amount not-to-exceed $6 million for the provision of transportation planning and conceptual design services. This extension allows for completing and awarding an active replacement RFP.
+[p004_c0008] The extension and additional funding are necessary to address and support critical initiatives including environmental assessment and impact studies, advancement of promising expansion projects from the 2025–2029 Capital Program, and rail network strategy studies. These contracts, awarded in March 2021, expedite hiring specialized consultants to support these efforts.
+[p004_c0009] To date, 19 work assignments have been awarded for a total amount of $23.6 million. All services performed have been deemed satisfactory and provided value to the MTA. Rates established in the base contract will remain unchanged for this extension.
+[p004_c0010] Upcoming projects planned include 125th Street Subway conceptual designs, Hudson line to Penn Station study, Jamaica station planning, and a Communications-Based Train Control study.
+[p004_c0011] The fifth item was a request that the Board approve the ratification of an ION and approve the award of a miscellaneous service agreement to PowerTrunk, Inc. in the estimated amount of $6 million. Following the issuance of a Notice to Proceed in December 2025, a one-year contract was awarded in January 2026 for comprehensive 24/7 maintenance, support, and infrastructure upgrades for DOB's Bus Command Center Bus Radio System, which supports mission-critical communications for over 6,000 buses and 1,200 portable radios.
+[p004_c0012] A competitive bidding process for a long-term contract will take place during this one-year period. The ION was authorized to prevent a lapse in safety-critical coverage following the expiration of the
+
+## Page 5
+
+[p005_c0001] warranty period in December 2025, and a refusal by the previous vendor to acknowledge a unilateral option exercised by the MTA. PowerTrunk is the Original Equipment Manufacturer responsible for manufacturing 75 percent of the core radio infrastructure, provided as a subcontractor to the previous vendor and has been successfully providing maintenance services under the previous contract since 2016.
+[p005_c0002] Negotiations for pricing for these critical services for the year yielded a 15 percent or $1.1 million reduction from PowerTrunk's original proposal of $7.1 million down to $6 million. This one-year cost is 30 percent or $2.6 million below last year's maintenance cost under the previous contract of $8.6 million, maintaining the same service levels and scope requirements.
+[p005_c0003] The sixth and final item is a request that the Board approve the ratification of an ION and approve the award of a five-year (January 20, 2026–January 19, 2031) noncompetitive miscellaneous service contract to JusticeONE for the urgent implementation of an e-Citation System for electronic summons issuance by the MTA EAGLE Team Special Inspectors and, in the future, MTAPD.
+[p005_c0004] The implementation of e-Citations will streamline the issuance process, cutting processing time by 30 percent and boosting summons volume by 38 percent per EAGLE shift.
+[p005_c0005] JusticeONE currently provides an e-Citation platform used by police departments and municipalities in Georgia, Texas, and the Carolinas, demonstrating a proven operational foundation. Through negotiations, a licensing and co-development model was agreed upon that maintains MTA control, including MTA branding, cloud hosting, full source-code escrow, and a clear exit strategy that provides source code ownership and avoids long-term vendor lock-in.
+[p005_c0006] Included in the contract is one year of implementation followed by four years of recurring licensing, maintenance, and support services. The estimated amount is $5 million.
+[p005_c0007] Mr. Paneque agreed to follow up on Hon. Andrew's question about Communications-Based Train Control.
+[p005_c0008] Mr. Paneque, with assistance from the MTA IT department and Ms. Patel, addressed Hon. Leathers' question regarding JusticeONE.
+[p005_c0009] Mr. Paneque, with assistance from the MTA IT department, addressed Hon. Valente's question regarding the new CDMS System.
+[p005_c0010] Chair Zuckerman recused himself from voting on the third action item.
+[p005_c0011] Upon motion duly made and seconded, the Committee voted to recommend the six action items before the Board for approval.
+### [p005_c0012] 6. INFORMATION ITEMS
+[p005_c0013] Mr. Luce presented information on the Annual Prompt Payment Summary and stated that NY State prompt payment legislation requires MTA to pay contract bills within 30 days, and pay interest in certain cases when payments are delayed beyond that threshold. The prompt payment report for 2025 shows that MTA met this threshold nearly every time: of 799,794 invoices, only 31 were deemed late, or less than one hundredth of one percent.
+[p005_c0014] Ms. Chernat presented information on the annual public hearing on projects proposed for federal funding and stated that the annual public hearing is an important step in securing federal funding for MTA's capital program. The MTA receives over $2 billion annually from the Federal Transit
+
+## Page 6
+
+[p006_c0001] Administration, and these hearings allow customers and stakeholders to review proposed projects and provide feedback.
+[p006_c0002] Last month's FFY 2026 hearing covered approximately $14.4 billion in projects, including rolling stock replacement, bus purchases, ADA improvements, and state of good repair initiatives. While this program is significantly larger than the MTA's typical annual federal funding, it is intentionally structured to provide flexibility in project selection, support multi-year planning, and prioritize critical infrastructure and accessibility improvements. Public comments emphasized accelerating ADA improvements, supporting the Interborough Express, and advancing the next phase of the Second Avenue Subway.
+[p006_c0003] This hearing represents an early step in the FFY 2026 grant process, positioning the MTA to advance projects efficiently and remain eligible for federal support. As this is the final year of the Infrastructure Investment and Jobs Act (IIFA) authorization, MTA expects funding to be generally in line with prior years, allowing continued progress on MTA's capital priorities.
+[p006_c0004] Mr. Paneque presented one information item for Long Island Rail Road: a contract award to seven vendors to provide as-needed construction support of the MTA Grade Crossing Safety Improvement Program; and one information item for Bridges and Tunnels: four contract awards to multiple vendors for miscellaneous Intelligent Transportation System and Operations Systems Consultant Design Services on an as-needed basis.
+[p006_c0005] There were no information items for NYC Transit or Metro-North Railroad.
+### [p006_c0006] 7. REAL ESTATE AGENDA
+[p006_c0007] David Florio, Chief Real Estate Transactions and Operations Officer, had three administrative items and two transactional action items for consideration and approval.
+[p006_c0008] The first three administrative items were for the Metropolitan Transportation Authority and included:
+- [p006_c0009] • The All-Agency Real Property Disposition Guidelines and All-Agency Personal Property Disposition Guidelines required by Public Authorities Law (the guidelines are available in the Exhibit Book and MTA.Info) • The consolidation and amendment of MTA Real Estate policies governing the licensing of MTA agency property to tenants, and the licensing of outside properties by MTA agencies for operational use; and • The re-statement of MTA Real Estate licensing-in policy governing construction access agreements
+[p006_c0010] Upon motion duly made and seconded, the Committee voted to recommend the three administrative action items before the Board for approval.
+[p006_c0011] The fourth and fifth items were both transactional. The fourth item was for MTA Long Island Rail Road, a lease with Holden Rosen Grupp for a café in the East Hampton Station. The fifth item was for MTA Metro-North Railroad, a lease with Marky's Caviar for retail space in Grand Central Terminal.
+[p006_c0012] Upon motion duly made and seconded, the Committee voted to recommend the two transactional action items before the Board for approval.
+
+## Page 7
+
+[p007_c0001] Mr. Florio presented three information items:
+- [p007_c0002] • A presentation of the Grand Central Terminal Annual Report for 2025 • The report on agreements entered into directly by the Real Estate Department pursuant to board policy • And an amendment to the Viaduct Agreement with JP Morgan Chase related to the redevelopment of 270 Park Ave.
+[p007_c0003] Kim Trevisan, Director, Grand Central Retail Leasing & Management-Real Estate, and Eric Baez, Chief of Grand Central Terminal Operations for MNR, presented the Grand Central Terminal Annual Report for 2025.
+[p007_c0004] Ms. Trevisan addressed questions from Hon. Leathers concerning prospective tenants and event rental rates for Grand Central Terminal, and from Hon. Mihaltses concerning Grand Central Terminal's return to 2019 retail revenue levels.
+[p007_c0005] Chair Zuckerman and Hon. Valente requested that a report on Grand Central Madison be given at a later time.
+[p007_c0006] Ms. Patel provided brief highlights on the ridership of both railroads.
+### [p007_c0007] 8. ADJOURNMENT
+[p007_c0008] Upon motion duly made and seconded, the Committee voted to adjourn the meeting.
+[p007_c0009] Respectfully submitted,
+[p007_c0010] Patrick Isom, Senior Manager, Finance and Debt Management

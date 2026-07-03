@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T22-56-13-173Z_1976810-bc7f43c2_ingest_2011-04-27-brt-1st2nd-cac6",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T01:09:22.839Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "decision-p1",
+        "local_observation_id": "project_first_second_ave_sbs_2011_04_27",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'project_first-second-ave-sbs' already resolves to an existing registry record that represents the same real-world project: M15 Select Bus Service on First and Second Avenues in Manhattan. That registry record already includes the observation's source (2011_04_27_brt_1st2nd_cac6) in its source_ids and has the alias 'project_first-second-ave-sbs-2011-04-27'. Per rule, when the closest match IS the observation's own base_record_id, the decision is 'new' — the observation already resolves to that id.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p002_c0002",
+            "source_quote": "+selectbusservice first avenue/second avenue"
+          },
+          {
+            "source_id": "2011_04_27_brt_1st2nd_cac6",
+            "block_id": "p003_c0005",
+            "source_quote": "M15 Select Bus Service launched October 10, 2010"
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-08-44-833Z_2111393-46285f7c_canonicalize_2026-06-10t22-56-13-173z-1976810-bc7f43c2-ingest-2011-04-27-brt-1st2nd-cac6-project-identity"
+}

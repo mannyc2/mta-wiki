@@ -1,0 +1,61 @@
+{
+  "run_id": "2026-06-10T22-56-13-356Z_1976810-01d96a6f_ingest_201109-brt-nostrand-cac4",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T01:44:04.378Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "b44-sbs-proposed-201109-new",
+        "local_observation_id": "route_b44_sbs_proposed_201109",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'route_b44-sbs' already exists as a canonical registry record with a matching alias (route_b44-sbs-proposed-201109) and the same source (201109_brt_nostrand_cac4). The observation already resolves to this canonical record; no linking to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_nostrand_cac4",
+            "block_id": "p003_c0003",
+            "source_quote": "Nostrand Avenue / Rogers Avenue Select Bus Service - currently served by B44 bus route"
+          },
+          {
+            "source_id": "201109_brt_nostrand_cac4",
+            "block_id": "p001_c0004",
+            "source_quote": "Nostrand Avenue / Rogers Avenue Select Bus Service - currently served by B44 bus route"
+          }
+        ]
+      },
+      {
+        "decision_id": "b44-local-201109-new",
+        "local_observation_id": "route_b44_local_201109",
+        "decision": "new",
+        "rationale": "Observation's base_record_id 'route_b44-local' already exists as a canonical registry record with a matching alias (route_b44-local-201109) and the same source (201109_brt_nostrand_cac4). The observation already resolves to this canonical record; no linking to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_nostrand_cac4",
+            "block_id": "p003_c0003",
+            "source_quote": "Currently served by B44 bus route"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_corridor",
+            "subject_id": "route_b44-sbs",
+            "object_id": "route_b44-local",
+            "description": "Both are B44 variants on the Nostrand Avenue/Rogers Avenue corridor in Brooklyn. B44 SBS is the Select Bus Service variant (proposed in this 2011 source), while B44 Local is the existing local bus service. They share the same base route (B44) and corridor but are distinct service variants.",
+            "evidence_refs": [
+              {
+                "source_id": "201109_brt_nostrand_cac4",
+                "block_id": "p003_c0003",
+                "source_quote": "Nostrand Avenue / Rogers Avenue Select Bus Service - currently served by B44 bus route"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-43-19-854Z_2111393-08210f3a_canonicalize_2026-06-10t22-56-13-356z-1976810-01d96a6f-ingest-201109-brt-nostrand-cac4-route-identity"
+}

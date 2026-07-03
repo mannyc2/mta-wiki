@@ -1,0 +1,453 @@
+{
+  "batch_id": "identity090",
+  "prepared_count": 8,
+  "all_pass": true,
+  "proposed_aliases": [
+    {
+      "kind": "corridor",
+      "alias_id": "corridor_bushwick-downtown-bklyn-phase2-candidate",
+      "target_id": "corridor_bushwick-downtown-brooklyn-brt-phase2",
+      "reason": "Both records identify the same BRT Phase II candidate corridor named Bushwick to Downtown Brooklyn Corridor. The canonical corridor name, borough, description, and source table entry match; neither record carries narrower limits that would make them distinct.",
+      "evidence": [
+        {
+          "record_id": "corridor_bushwick-downtown-bklyn-phase2-candidate",
+          "display_name": "Bushwick to Downtown Brooklyn Corridor",
+          "corridor_name": "Bushwick to Downtown Brooklyn Corridor",
+          "borough": "Brooklyn",
+          "description": "BRT Phase II candidate corridor.",
+          "source_ids": [
+            "brt_phase2_future_corridors_rpt"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_phase2_future_corridors_rpt",
+              "block_id": "p004_c0002",
+              "evidence_id": "brt_phase2_future_corridors_rpt#p004_c0002",
+              "source_quote": "BRT Phase II Candidates ... 6 Bushwick to Downtown Brooklyn Corridor"
+            }
+          ]
+        },
+        {
+          "record_id": "corridor_bushwick-downtown-brooklyn-brt-phase2",
+          "display_name": "Bushwick to Downtown Brooklyn Corridor",
+          "corridor_name": "Bushwick to Downtown Brooklyn Corridor",
+          "borough": "Brooklyn",
+          "description": "BRT Phase II candidate corridor.",
+          "source_ids": [
+            "brt_future_corridors"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_future_corridors",
+              "block_id": "p004_c0002",
+              "evidence_id": "brt_future_corridors#p004_c0002",
+              "source_quote": "BRT Phase II Candidates ... 6 Bushwick to Downtown Brooklyn Corridor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "corridor",
+      "alias_id": "corridor_laguardia-east-elmhurst-phase2-candidate",
+      "target_id": "corridor_laguardia-east-elmhurst-brt-phase2",
+      "reason": "Both records identify the same LaGuardia/East Elmhurst Corridor from the BRT Phase II short list. The records share the corridor name, Queens borough, and the same source description that the corridor is made of inter-related travel markets requiring separate alternatives analysis.",
+      "evidence": [
+        {
+          "record_id": "corridor_laguardia-east-elmhurst-phase2-candidate",
+          "display_name": "LaGuardia/East Elmhurst Corridor",
+          "corridor_name": "LaGuardia/East Elmhurst Corridor",
+          "borough": "Queens",
+          "description": "Potential BRT Phase II corridor in Queens comprised of several inter-related travel markets; requires separate alternatives analysis and coordination with Port Authority of NY and NJ.",
+          "source_ids": [
+            "brt_phase2_future_corridors_rpt"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_phase2_future_corridors_rpt",
+              "block_id": "p003_c0005",
+              "evidence_id": "brt_phase2_future_corridors_rpt#p003_c0005",
+              "source_quote": "LaGuardia/East Elmhurst in Queens ... comprised of several inter-related travel markets"
+            },
+            {
+              "source_id": "brt_phase2_future_corridors_rpt",
+              "block_id": "p004_c0002",
+              "evidence_id": "brt_phase2_future_corridors_rpt#p004_c0002",
+              "source_quote": "Short List for Next Select Bus Service Route ... 3 LaGuardia/East Elmhurst Corridor"
+            }
+          ]
+        },
+        {
+          "record_id": "corridor_laguardia-east-elmhurst-brt-phase2",
+          "display_name": "LaGuardia/East Elmhurst Corridor",
+          "corridor_name": "LaGuardia/East Elmhurst Corridor",
+          "borough": "Queens",
+          "description": "Short-listed BRT Phase II corridor comprised of several inter-related travel markets tied together through one or more BRT services. Requires separate alternatives analysis and coordination with the Port Authority of New York and New Jersey.",
+          "source_ids": [
+            "brt_future_corridors"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_future_corridors",
+              "block_id": "p003_c0005",
+              "evidence_id": "brt_future_corridors#p003_c0005",
+              "source_quote": "LaGuardia/East Elmhurst in Queens ... comprised of several inter-related travel markets"
+            },
+            {
+              "source_id": "brt_future_corridors",
+              "block_id": "p004_c0002",
+              "evidence_id": "brt_future_corridors#p004_c0002",
+              "source_quote": "Short List for Next Select Bus Service Route ... 3 LaGuardia/East Elmhurst Corridor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "corridor",
+      "alias_id": "corridor_manhattan-northern-blvd-flushing-phase2-candidate",
+      "target_id": "corridor_manhattan-northern-blvd-flushing-brt-phase2",
+      "reason": "Both records identify the same BRT Phase II candidate corridor named Manhattan-Northern Blvd-Flushing Corridor. The name and table position match exactly, and no conflicting limits are present in either canonical corridor record.",
+      "evidence": [
+        {
+          "record_id": "corridor_manhattan-northern-blvd-flushing-phase2-candidate",
+          "display_name": "Manhattan-Northern Blvd-Flushing Corridor",
+          "corridor_name": "Manhattan-Northern Blvd-Flushing Corridor",
+          "boroughs": [
+            "Manhattan",
+            "Queens"
+          ],
+          "description": "BRT Phase II candidate corridor.",
+          "source_ids": [
+            "brt_phase2_future_corridors_rpt"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_phase2_future_corridors_rpt",
+              "block_id": "p004_c0002",
+              "evidence_id": "brt_phase2_future_corridors_rpt#p004_c0002",
+              "source_quote": "BRT Phase II Candidates ... 16 Manhattan-Northern Blvd-Flushing Corridor"
+            }
+          ]
+        },
+        {
+          "record_id": "corridor_manhattan-northern-blvd-flushing-brt-phase2",
+          "display_name": "Manhattan-Northern Blvd-Flushing Corridor",
+          "corridor_name": "Manhattan-Northern Blvd-Flushing Corridor",
+          "description": "BRT Phase II candidate corridor connecting Manhattan to Flushing via Northern Blvd.",
+          "source_ids": [
+            "brt_future_corridors"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_future_corridors",
+              "block_id": "p004_c0002",
+              "evidence_id": "brt_future_corridors#p004_c0002",
+              "source_quote": "BRT Phase II Candidates ... 16 Manhattan-Northern Blvd-Flushing Corridor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "corridor",
+      "alias_id": "corridor_south-bronx-east-west-hunts-pt-soundview",
+      "target_id": "corridor_south-bronx-east-west-brt-phase2",
+      "reason": "Both records identify the same South Bronx East-West Corridor (Hunts Pt./Soundview) BRT Phase II candidate. The corridor name, Bronx borough, description, and source table entry match, with no narrower conflicting limits.",
+      "evidence": [
+        {
+          "record_id": "corridor_south-bronx-east-west-hunts-pt-soundview",
+          "display_name": "South Bronx East-West Corridor (Hunts Pt./Soundview)",
+          "corridor_name": "South Bronx East-West Corridor (Hunts Pt./Soundview)",
+          "borough": "Bronx",
+          "description": "BRT Phase II candidate corridor.",
+          "source_ids": [
+            "brt_phase2_future_corridors_rpt"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_phase2_future_corridors_rpt",
+              "block_id": "p004_c0002",
+              "evidence_id": "brt_phase2_future_corridors_rpt#p004_c0002",
+              "source_quote": "BRT Phase II Candidates ... 4 South Bronx East-West Corridor (Hunts Pt./Soundview)"
+            }
+          ]
+        },
+        {
+          "record_id": "corridor_south-bronx-east-west-brt-phase2",
+          "display_name": "South Bronx East-West Corridor (Hunts Pt./Soundview)",
+          "corridor_name": "South Bronx East-West Corridor (Hunts Pt./Soundview)",
+          "borough": "Bronx",
+          "description": "BRT Phase II candidate corridor.",
+          "source_ids": [
+            "brt_future_corridors"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_future_corridors",
+              "block_id": "p004_c0002",
+              "evidence_id": "brt_future_corridors#p004_c0002",
+              "source_quote": "BRT Phase II Candidates ... 4 South Bronx East-West Corridor (Hunts Pt./Soundview)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "corridor",
+      "alias_id": "corridor_uwses-ues-crosstown-phase2-candidate",
+      "target_id": "corridor_upper-west-east-side-crosstown-brt-phase2",
+      "reason": "Both records identify the same Upper West Side/Upper East Side Crosstown Corridor from the BRT Phase II candidate list. The canonical name and Manhattan borough match; the target has extra outreach context, but that is additional evidence for the same corridor rather than a different set of limits.",
+      "evidence": [
+        {
+          "record_id": "corridor_uwses-ues-crosstown-phase2-candidate",
+          "display_name": "Upper West Side/Upper East Side Crosstown Corridor",
+          "corridor_name": "Upper West Side/Upper East Side Crosstown Corridor",
+          "borough": "Manhattan",
+          "description": "BRT Phase II candidate corridor.",
+          "source_ids": [
+            "brt_phase2_future_corridors_rpt"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_phase2_future_corridors_rpt",
+              "block_id": "p004_c0002",
+              "evidence_id": "brt_phase2_future_corridors_rpt#p004_c0002",
+              "source_quote": "BRT Phase II Candidates ... 10 Upper West Side/Upper East Side Crosstown Corridor"
+            }
+          ]
+        },
+        {
+          "record_id": "corridor_upper-west-east-side-crosstown-brt-phase2",
+          "display_name": "Upper West Side/Upper East Side Crosstown Corridor",
+          "corridor_name": "Upper West Side/Upper East Side Crosstown Corridor",
+          "borough": "Manhattan",
+          "description": "BRT Phase II candidate corridor.",
+          "source_ids": [
+            "brt_future_corridors",
+            "brt_phase2_outreach_rpt"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_future_corridors",
+              "block_id": "p004_c0002",
+              "evidence_id": "brt_future_corridors#p004_c0002",
+              "source_quote": "BRT Phase II Candidates ... 10 Upper West Side/Upper East Side Crosstown Corridor"
+            },
+            {
+              "source_id": "brt_phase2_outreach_rpt",
+              "block_id": "p020_c0007",
+              "evidence_id": "brt_phase2_outreach_rpt#p020_c0007",
+              "source_quote": "Upper West Side/Upper East Side Crosstown Corridor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "corridor",
+      "alias_id": "corridor_utica-ave-phase2-candidate",
+      "target_id": "corridor_utica-ave-brt-phase2",
+      "reason": "Both records identify the same Utica Avenue Corridor BRT Phase II candidate. The corridor name, Brooklyn borough, description, and table entry match exactly; this pair is distinct from narrower Utica Avenue segment records with specific street limits.",
+      "evidence": [
+        {
+          "record_id": "corridor_utica-ave-phase2-candidate",
+          "display_name": "Utica Avenue Corridor",
+          "corridor_name": "Utica Avenue Corridor",
+          "borough": "Brooklyn",
+          "description": "BRT Phase II candidate corridor.",
+          "source_ids": [
+            "brt_phase2_future_corridors_rpt"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_phase2_future_corridors_rpt",
+              "block_id": "p004_c0002",
+              "evidence_id": "brt_phase2_future_corridors_rpt#p004_c0002",
+              "source_quote": "BRT Phase II Candidates ... 5 Utica Avenue Corridor"
+            }
+          ]
+        },
+        {
+          "record_id": "corridor_utica-ave-brt-phase2",
+          "display_name": "Utica Avenue Corridor",
+          "corridor_name": "Utica Avenue Corridor",
+          "borough": "Brooklyn",
+          "description": "BRT Phase II candidate corridor.",
+          "source_ids": [
+            "brt_future_corridors"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_future_corridors",
+              "block_id": "p004_c0002",
+              "evidence_id": "brt_future_corridors#p004_c0002",
+              "source_quote": "BRT Phase II Candidates ... 5 Utica Avenue Corridor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "corridor",
+      "alias_id": "corridor_webster-third-ave-brx-phase2-candidate",
+      "target_id": "corridor_webster-third-ave-brt-phase2",
+      "reason": "Both records identify the same Webster Avenue/Third Avenue Corridor from the BRT Phase II short list. The corridor name and Bronx borough match, and both cite the same short-list statement naming Webster Avenue/Third Avenue in the Bronx.",
+      "evidence": [
+        {
+          "record_id": "corridor_webster-third-ave-brx-phase2-candidate",
+          "display_name": "Webster Avenue/Third Avenue Corridor",
+          "corridor_name": "Webster Avenue/Third Avenue Corridor",
+          "borough": "Bronx",
+          "description": "Potential BRT Phase II corridor in the Bronx; identified as a short-list candidate for the next BRT planning effort in NYC.",
+          "source_ids": [
+            "brt_phase2_future_corridors_rpt"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_phase2_future_corridors_rpt",
+              "block_id": "p003_c0005",
+              "evidence_id": "brt_phase2_future_corridors_rpt#p003_c0005",
+              "source_quote": "short list of three candidates ... Webster Avenue/Third Avenue in the Bronx"
+            },
+            {
+              "source_id": "brt_phase2_future_corridors_rpt",
+              "block_id": "p004_c0002",
+              "evidence_id": "brt_phase2_future_corridors_rpt#p004_c0002",
+              "source_quote": "Short List for Next Select Bus Service Route 1 Webster Avenue/Third Avenue Corridor"
+            }
+          ]
+        },
+        {
+          "record_id": "corridor_webster-third-ave-brt-phase2",
+          "display_name": "Webster Avenue/Third Avenue Corridor",
+          "corridor_name": "Webster Avenue/Third Avenue Corridor",
+          "borough": "Bronx",
+          "description": "Short-listed BRT Phase II corridor in the Bronx identified as a typical transit corridor with defined limits.",
+          "source_ids": [
+            "brt_future_corridors"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_future_corridors",
+              "block_id": "p003_c0005",
+              "evidence_id": "brt_future_corridors#p003_c0005",
+              "source_quote": "short list of three candidates ... Webster Avenue/Third Avenue in the Bronx"
+            },
+            {
+              "source_id": "brt_future_corridors",
+              "block_id": "p004_c0002",
+              "evidence_id": "brt_future_corridors#p004_c0002",
+              "source_quote": "Short List for Next Select Bus Service Route 1 Webster Avenue/Third Avenue Corridor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "corridor",
+      "alias_id": "corridor_woodhaven-blvd-phase2-candidate",
+      "target_id": "corridor_woodhaven-blvd-brt-phase2",
+      "reason": "Both records identify the same Woodhaven Blvd Corridor BRT Phase II candidate. The corridor name, Queens borough, description, and source table entry match exactly; this pair is distinct from more specific Woodhaven/Cross Bay records with limits such as Woodside to the Rockaways.",
+      "evidence": [
+        {
+          "record_id": "corridor_woodhaven-blvd-phase2-candidate",
+          "display_name": "Woodhaven Blvd Corridor",
+          "corridor_name": "Woodhaven Blvd Corridor",
+          "borough": "Queens",
+          "description": "BRT Phase II candidate corridor.",
+          "source_ids": [
+            "brt_phase2_future_corridors_rpt"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_phase2_future_corridors_rpt",
+              "block_id": "p004_c0002",
+              "evidence_id": "brt_phase2_future_corridors_rpt#p004_c0002",
+              "source_quote": "BRT Phase II Candidates ... 15 Woodhaven Blvd Corridor"
+            }
+          ]
+        },
+        {
+          "record_id": "corridor_woodhaven-blvd-brt-phase2",
+          "display_name": "Woodhaven Blvd Corridor",
+          "corridor_name": "Woodhaven Blvd Corridor",
+          "borough": "Queens",
+          "description": "BRT Phase II candidate corridor.",
+          "source_ids": [
+            "brt_future_corridors"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "brt_future_corridors",
+              "block_id": "p004_c0002",
+              "evidence_id": "brt_future_corridors#p004_c0002",
+              "source_quote": "BRT Phase II Candidates ... 15 Woodhaven Blvd Corridor"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guard_checks": {
+    "mutation_scope": "prep artifact only; no LOG.md, manifest, merges.json, canonical JSONL, wiki, submissions, database, materialized, or generated outputs intentionally changed",
+    "candidate_limit": {
+      "max_allowed": 8,
+      "proposed_count": 8,
+      "pass": true
+    },
+    "global_kind_scope": {
+      "allowed_kinds": [
+        "corridor",
+        "route"
+      ],
+      "proposed_kinds": [
+        "corridor"
+      ],
+      "non_global_records_included": false,
+      "pass": true
+    },
+    "route_variant_guard": {
+      "route_aliases_proposed": 0,
+      "pass": true
+    },
+    "corridor_limits_guard": {
+      "method": "Only proposed same-name Phase II corridor records with matching canonical payload scope and no conflicting from/to/limits fields. Excluded narrower street-segment clusters and route-variant clusters.",
+      "material_limit_conflicts": [],
+      "pass": true
+    },
+    "existing_alias_conflicts": {
+      "checked_with": [
+        "jq .aliases.corridor against data/identity-overrides/merges.json",
+        "sqlite3 data/canonical.db identity_aliases for candidate alias ids",
+        "sqlite3 data/canonical.db record_aliases for candidate alias ids"
+      ],
+      "conflicts": [],
+      "pass": true
+    },
+    "do_not_merge_conflicts": {
+      "checked_with": "sqlite3 data/canonical.db do_not_merge for corridor candidate ids",
+      "conflicts": [],
+      "pass": true
+    },
+    "prior_prep_conflicts": {
+      "checked_with": "jq -s over data/review_notes/codex-identity-batch0*-prep.json proposed_aliases through identity087",
+      "conflicts": [],
+      "pass": true
+    },
+    "record_existence": {
+      "checked_with": "sqlite3 data/canonical.db records",
+      "missing_record_ids": [],
+      "pass": true
+    },
+    "evidence_basis": {
+      "method": "deterministic local inspection of sqlite3 data/canonical.db, data/identity-overrides/merges.json, data/review_notes prior prep artifacts, raw/source evidence, and wiki/source pages",
+      "shared_source_block_hash": "candidate pairs cite p004_c0002 in brt_future_corridors and brt_phase2_future_corridors_rpt with the same text_sha256 sha256:ea3b2b145bc02afb6af5823b1bf61fe19fd8c856ed041c84a385dc80c43fca6c; short-list pairs also cite matching p003_c0005 hashes",
+      "external_or_provider_llm_used": false,
+      "canonicalize_dedup_identity_review_write_ask_schema_ontology_commands_run": false,
+      "materialize_export_jsonl_validate_run": false,
+      "profile_or_provider_commands_run": false,
+      "pass": true
+    }
+  }
+}

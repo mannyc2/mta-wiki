@@ -1,0 +1,558 @@
+{
+  "batch_id": "identity085",
+  "prepared_count": 10,
+  "all_pass": true,
+  "proposed_aliases": [
+    {
+      "kind": "entity",
+      "alias_id": "entity_mabstoa-meeting-doc-201706",
+      "target_id": "entity_mabstoa",
+      "reason": "Both records identify the same Manhattan and Bronx Surface Transit Operating Authority agency; the alias source expands the legal name and MaBSTOA abbreviation, matching the target record's entity_name and acronym.",
+      "evidence": [
+        {
+          "record_id": "entity_mabstoa-meeting-doc-201706",
+          "display_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_201706"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_201706",
+              "block_id": "p002_c0003",
+              "evidence_id": "meeting_doc_201706#p002_c0003",
+              "source_quote": "Manhattan and Bronx Surface Transit Operating Authority is a subsidiary of the New York City Transit Authority (abbreviated as MaBSTOA)."
+            }
+          ]
+        },
+        {
+          "record_id": "entity_mabstoa",
+          "display_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_157711",
+            "meeting_doc_174081",
+            "meeting_doc_179656",
+            "meeting_doc_189751",
+            "meeting_doc_190006",
+            "meeting_doc_85796",
+            "meeting_doc_98296",
+            "nyct_itsp_solicitation_notice_2026"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "nyct_itsp_solicitation_notice_2026",
+              "block_id": "p001_c0010",
+              "evidence_id": "nyct_itsp_solicitation_notice_2026#p001_c0010",
+              "source_quote": "which for purposes hereof shall be deemed to include the Manhattan and Bronx Surface Transit Operating Authority"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-115391-mabstoa",
+      "target_id": "entity_mabstoa",
+      "reason": "Both records identify Manhattan and Bronx Surface Transit Operating Authority / MaBSTOA as the same MTA agency in fare-change materials.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-115391-mabstoa",
+          "display_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_115391"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_115391",
+              "block_id": "p004_c0004",
+              "evidence_id": "meeting_doc_115391#p004_c0004",
+              "source_quote": "the Manhattan and Bronx Surface Transit Operating Authority (\"MaBSTOA\")"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_mabstoa",
+          "display_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_157711",
+            "meeting_doc_174081",
+            "meeting_doc_179656",
+            "meeting_doc_189751",
+            "meeting_doc_190006",
+            "meeting_doc_85796",
+            "meeting_doc_98296",
+            "nyct_itsp_solicitation_notice_2026"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "nyct_itsp_solicitation_notice_2026",
+              "block_id": "p001_c0010",
+              "evidence_id": "nyct_itsp_solicitation_notice_2026#p001_c0010",
+              "source_quote": "which for purposes hereof shall be deemed to include the Manhattan and Bronx Surface Transit Operating Authority"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-39661-mabstoa",
+      "target_id": "entity_mabstoa",
+      "reason": "Both records identify the same Manhattan and Bronx Surface Transit Operating Authority agency, with the alias record citing MaBSTOA as the abbreviation.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-39661-mabstoa",
+          "display_name": "Manhattan and Bronx Surface Transit Operating Authority (MaBSTOA)",
+          "entity_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_39661"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_39661",
+              "block_id": "p226_c0011",
+              "evidence_id": "meeting_doc_39661#p226_c0011",
+              "source_quote": "Manhattan and Bronx Surface Transit Operating Authority (\"MaBSTOA\"), provide subway and public bus service within the five boroughs of New York City."
+            }
+          ]
+        },
+        {
+          "record_id": "entity_mabstoa",
+          "display_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_name": "Manhattan and Bronx Surface Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_157711",
+            "meeting_doc_174081",
+            "meeting_doc_179656",
+            "meeting_doc_189751",
+            "meeting_doc_190006",
+            "meeting_doc_85796",
+            "meeting_doc_98296",
+            "nyct_itsp_solicitation_notice_2026"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "nyct_itsp_solicitation_notice_2026",
+              "block_id": "p001_c0010",
+              "evidence_id": "nyct_itsp_solicitation_notice_2026#p001_c0010",
+              "source_quote": "which for purposes hereof shall be deemed to include the Manhattan and Bronx Surface Transit Operating Authority"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_sirtoa-meeting-doc-201706",
+      "target_id": "entity_staten-island-rapid-transit-operating-authority",
+      "reason": "Both records identify Staten Island Rapid Transit Operating Authority; the alias source states it is the MTA subsidiary popularly called MTA Staten Island Railway.",
+      "evidence": [
+        {
+          "record_id": "entity_sirtoa-meeting-doc-201706",
+          "display_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_201706"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_201706",
+              "block_id": "p002_c0002",
+              "evidence_id": "meeting_doc_201706#p002_c0002",
+              "source_quote": "Staten Island Rapid Transit Operating Authority is a subsidiary of the Metropolitan Transportation Authority. Its popular name is MTA Staten Island Railway (abbreviated as SIR)."
+            }
+          ]
+        },
+        {
+          "record_id": "entity_staten-island-rapid-transit-operating-authority",
+          "display_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_128986",
+            "meeting_doc_133236",
+            "meeting_doc_138396",
+            "meeting_doc_160636",
+            "meeting_doc_164931",
+            "meeting_doc_170981",
+            "meeting_doc_186881"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_128986",
+              "block_id": "p064_c0001",
+              "evidence_id": "meeting_doc_128986#p064_c0001",
+              "source_quote": "BY-LAWS STATEN ISLAND RAPID TRANSIT OPERATING AUTHORITY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-39661-sir",
+      "target_id": "entity_staten-island-rapid-transit-operating-authority",
+      "reason": "The alias record's structured entity_name is Staten Island Rapid Transit Operating Authority and its source explains the MTA Staten Island Railway short name; this is the same agency as the target record.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-39661-sir",
+          "display_name": "MTA Staten Island Railway",
+          "entity_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_39661"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_39661",
+              "block_id": "p226_c0011",
+              "evidence_id": "meeting_doc_39661#p226_c0011",
+              "source_quote": "Staten Island Rapid Transit Operating Authority (\"MTA Staten Island Railway\") provides passenger transportation on Staten Island."
+            }
+          ]
+        },
+        {
+          "record_id": "entity_staten-island-rapid-transit-operating-authority",
+          "display_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_128986",
+            "meeting_doc_133236",
+            "meeting_doc_138396",
+            "meeting_doc_160636",
+            "meeting_doc_164931",
+            "meeting_doc_170981",
+            "meeting_doc_186881"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_128986",
+              "block_id": "p064_c0001",
+              "evidence_id": "meeting_doc_128986#p064_c0001",
+              "source_quote": "BY-LAWS STATEN ISLAND RAPID TRANSIT OPERATING AUTHORITY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-113891-sirtoa",
+      "target_id": "entity_staten-island-rapid-transit-operating-authority",
+      "reason": "Both records identify Staten Island Rapid Transit Operating Authority; the alias source expands SIRTOA in a procurement item for the same operating authority.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-113891-sirtoa",
+          "display_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_type": "transit operating authority",
+          "source_ids": [
+            "meeting_doc_113891"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_113891",
+              "block_id": "p010_c0012",
+              "evidence_id": "meeting_doc_113891#p010_c0012",
+              "source_quote": "Metro-North and Staten Island Rapid Transit Operating Authority (\"SIRTOA\") (collectively, the \"Agencies\")"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_staten-island-rapid-transit-operating-authority",
+          "display_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_name": "Staten Island Rapid Transit Operating Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_128986",
+            "meeting_doc_133236",
+            "meeting_doc_138396",
+            "meeting_doc_160636",
+            "meeting_doc_164931",
+            "meeting_doc_170981",
+            "meeting_doc_186881"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_128986",
+              "block_id": "p064_c0001",
+              "evidence_id": "meeting_doc_128986#p064_c0001",
+              "source_quote": "BY-LAWS STATEN ISLAND RAPID TRANSIT OPERATING AUTHORITY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-192306-tbta",
+      "target_id": "entity_meeting-doc-tbta",
+      "reason": "Both records identify Triborough Bridge and Tunnel Authority / TBTA, the legal entity for MTA Bridges and Tunnels.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-192306-tbta",
+          "display_name": "Triborough Bridge and Tunnel Authority (TBTA)",
+          "entity_name": "Triborough Bridge and Tunnel Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_192306"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_192306",
+              "block_id": "p012_c0007",
+              "evidence_id": "meeting_doc_192306#p012_c0007",
+              "source_quote": "Triborough Bridge and Tunnel Authority Second Subordinate Revenue Bond Anticipation Notes, Series 2025A"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_meeting-doc-tbta",
+          "display_name": "Triborough Bridge and Tunnel Authority (TBTA)",
+          "entity_name": "Triborough Bridge and Tunnel Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_100216",
+            "meeting_doc_100256",
+            "meeting_doc_104711",
+            "meeting_doc_107566",
+            "meeting_doc_115226",
+            "meeting_doc_121016"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_104711",
+              "block_id": "p004_c0001",
+              "evidence_id": "meeting_doc_104711#p004_c0001",
+              "source_quote": "MONTHLY MEETING OF TRIBOROUGH BRIDGE AND TUNNEL AUTHORITY COMMITTEE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_tbta-meeting-doc-107791",
+      "target_id": "entity_meeting-doc-tbta",
+      "reason": "Both records identify Triborough Bridge and Tunnel Authority / TBTA; the alias source lists the full legal authority name in MTA board minutes.",
+      "evidence": [
+        {
+          "record_id": "entity_tbta-meeting-doc-107791",
+          "display_name": "MTA Triborough Bridge and Tunnel Authority",
+          "entity_name": "Triborough Bridge and Tunnel Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_107791"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_107791",
+              "block_id": "p004_c0001",
+              "evidence_id": "meeting_doc_107791#p004_c0001",
+              "source_quote": "the Triborough Bridge and Tunnel Authority, the Long Island Rail Road Company, Metro-North Commuter Railroad Company"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_meeting-doc-tbta",
+          "display_name": "Triborough Bridge and Tunnel Authority (TBTA)",
+          "entity_name": "Triborough Bridge and Tunnel Authority",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_100216",
+            "meeting_doc_100256",
+            "meeting_doc_104711",
+            "meeting_doc_107566",
+            "meeting_doc_115226",
+            "meeting_doc_121016"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_104711",
+              "block_id": "p004_c0001",
+              "evidence_id": "meeting_doc_104711#p004_c0001",
+              "source_quote": "MONTHLY MEETING OF TRIBOROUGH BRIDGE AND TUNNEL AUTHORITY COMMITTEE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_gcmc-meeting-doc-201706",
+      "target_id": "entity_meeting-doc-121001-gcmoc",
+      "reason": "Both records identify the Grand Central Madison Operating Company; the alias source uses the GCMC abbreviation and the target source uses GCMOC for the same MTA operating company.",
+      "evidence": [
+        {
+          "record_id": "entity_gcmc-meeting-doc-201706",
+          "display_name": "Grand Central Madison Operating Company",
+          "entity_name": "Grand Central Madison Operating Company",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_201706"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_201706",
+              "block_id": "p002_c0001",
+              "evidence_id": "meeting_doc_201706#p002_c0001",
+              "source_quote": "MTA Grand Central Madison Operating Company Grand Central Madison GCMC"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_meeting-doc-121001-gcmoc",
+          "display_name": "Grand Central Madison Operating Company (GCMOC)",
+          "entity_name": "Grand Central Madison Operating Company",
+          "entity_type": "operating company",
+          "source_ids": [
+            "meeting_doc_115216",
+            "meeting_doc_121001",
+            "meeting_doc_124126",
+            "meeting_doc_128996",
+            "meeting_doc_138296"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_121001",
+              "block_id": "p001_c0007",
+              "evidence_id": "meeting_doc_121001#p001_c0007",
+              "source_quote": "Grand Central Madison Operating Company (GCMOC), which is responsible for the LIRR-operating portion of Grand Central Terminal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-121011-gcmoc",
+      "target_id": "entity_meeting-doc-121001-gcmoc",
+      "reason": "Both records identify Grand Central Madison Operating Company, with the target record carrying the GCMOC abbreviation and operating-company description.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-121011-gcmoc",
+          "display_name": "Grand Central Madison Operating Company",
+          "entity_name": "Grand Central Madison Operating Company",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_121011"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_121011",
+              "block_id": "p001_c0002",
+              "evidence_id": "meeting_doc_121011#p001_c0002",
+              "source_quote": "Grand Central Madison Operating Company 3 3"
+            }
+          ]
+        },
+        {
+          "record_id": "entity_meeting-doc-121001-gcmoc",
+          "display_name": "Grand Central Madison Operating Company (GCMOC)",
+          "entity_name": "Grand Central Madison Operating Company",
+          "entity_type": "operating company",
+          "source_ids": [
+            "meeting_doc_115216",
+            "meeting_doc_121001",
+            "meeting_doc_124126",
+            "meeting_doc_128996",
+            "meeting_doc_138296"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_121001",
+              "block_id": "p001_c0007",
+              "evidence_id": "meeting_doc_121001#p001_c0007",
+              "source_quote": "Grand Central Madison Operating Company (GCMOC), which is responsible for the LIRR-operating portion of Grand Central Terminal"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guard_checks": {
+    "mutation_scope": "prep artifact only; no canonical JSONL, canonical.db, identity-overrides, LOG.md, manifest, wiki, materialized, or generated-output files intentionally changed",
+    "candidate_limit": {
+      "max_allowed": 10,
+      "proposed_count": 10,
+      "pass": true
+    },
+    "override_shape": {
+      "intended_apply_path": "data/identity-overrides/merges.json aliases.entity",
+      "flat_aliases": false,
+      "pass": true
+    },
+    "existing_alias_conflicts": {
+      "checked_with": "sqlite3 data/canonical.db identity_aliases",
+      "conflicts": [],
+      "pass": true
+    },
+    "do_not_merge_conflicts": {
+      "checked_with": "sqlite3 data/canonical.db do_not_merge",
+      "conflicts": [],
+      "pass": true
+    },
+    "prior_prep_conflicts": {
+      "checked_with": "jq over data/review_notes/codex-identity-batch0*-prep.json proposed_aliases",
+      "conflicts": [],
+      "pass": true
+    },
+    "record_existence": {
+      "checked_with": "sqlite3 data/canonical.db records",
+      "missing_record_ids": [],
+      "pass": true
+    },
+    "candidate_basis": {
+      "method": "deterministic local inspection of canonical.db records/entities/evidence_refs/record_sources/identity_aliases/do_not_merge, prior prep artifacts, and cited raw source blocks",
+      "external_or_provider_llm_used": false,
+      "generated_output_commands_run": false,
+      "validate_materialize_export_run": false,
+      "pass": true
+    }
+  },
+  "skipped_candidates": [
+    {
+      "kind": "entity",
+      "candidate_ids": [
+        "entity_mta-tbta",
+        "entity_meeting-doc-tbta"
+      ],
+      "reason": "Skipped despite matching structured entity_name because entity_mta-tbta's only record evidence ref inspected points to meeting_doc_100276#p021_c0007, which does not itself mention TBTA or Triborough Bridge and Tunnel Authority."
+    },
+    {
+      "kind": "entity",
+      "candidate_ids": [
+        "entity_meeting-doc-171381-tbt",
+        "entity_meeting-doc-tbta"
+      ],
+      "reason": "Likely the same TBTA authority, but left out of this small batch because the selected TBTA candidates have clearer full-name source snippets and this record's id/display mix uses the shorter TBT form."
+    },
+    {
+      "kind": "entity",
+      "candidate_ids": [
+        "entity_meeting-doc-124881-bridges-tunnels",
+        "entity_meeting-doc-tbta"
+      ],
+      "reason": "Likely same legal MTA Bridges and Tunnels / TBTA entity, but skipped to keep the batch small and avoid using a very broad, heavily merged record as an alias candidate in this pass."
+    },
+    {
+      "kind": "entity",
+      "candidate_ids": [
+        "entity_mta-bt-meeting-doc-131666",
+        "entity_meeting-doc-tbta"
+      ],
+      "reason": "High-confidence same legal MTA Bridges and Tunnels / TBTA entity, but held out solely to keep this prep artifact at the requested 10-alias maximum."
+    }
+  ]
+}

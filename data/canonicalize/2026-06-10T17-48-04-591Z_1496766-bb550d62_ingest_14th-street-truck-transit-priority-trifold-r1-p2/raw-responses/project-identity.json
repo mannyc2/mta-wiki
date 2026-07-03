@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T17-48-04-591Z_1496766-bb550d62_ingest_14th-street-truck-transit-priority-trifold-r1-p2",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-10T19:22:47.823Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "d01-14th-st-ttp-trifold",
+        "local_observation_id": "project_14th_street_transit_truck_priority_trifold",
+        "decision": "new",
+        "rationale": "The observation's base_record_id (project_14th-street-transit-truck-priority-pilot) already maps to an existing registry record with the exact same record_id. The source_id 14th_street_truck_transit_priority_trifold_r1_p2 is already listed in that record's source_ids, and the alias project_14th-street-transit-truck-priority-trifold is already present in its record_aliases. The observation is already correctly identified and requires no linking.",
+        "evidence_refs": [
+          {
+            "source_id": "14th_street_truck_transit_priority_trifold_r1_p2",
+            "block_id": "p001_c0001",
+            "source_quote": "14th Street Transit & Truck Priority"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-20-34-670Z_1617604-562a5524_canonicalize_2026-06-10t17-48-04-591z-1496766-bb550d62-ingest-14th-street-truck-transit-priority-trifold-r1-p2-project-identity"
+}

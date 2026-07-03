@@ -1,0 +1,127 @@
+{
+  "note_id": "codex-metric-other-tail-employment-rates-2026-06-30-af",
+  "created_at": "2026-06-30T00:00:00.000Z",
+  "author": "codex",
+  "kind": "deterministic_normalization_checkpoint",
+  "status": "validated_clean",
+  "scope": "Reduced the remaining metric_claim unit_family=other tail from 37 to 6 by normalizing employment scale units, named safety rate units, seats-per-car, and days-per-employee through exact or payload-gated deterministic rules.",
+  "constraints": {
+    "external_or_provider_llms_used": false,
+    "forbidden_commands_run": [],
+    "canonical_jsonl_hand_edited": false,
+    "mutation_path": "deterministic normalizer/test changes plus bun packages/cli/src/cli.ts materialize"
+  },
+  "subagents": [
+    {
+      "agent_id": "019f1a0d-4108-7272-ba6f-a670d17959d9",
+      "role": "read-only remaining metric other policy scout",
+      "status": "closed",
+      "finding_summary": "Confirmed 30 of the 37 current metric other rows were stale relative to safe normalizer rules, endorsed the employment-scale/access convention, exact named safety-rate allowlist, seats-per-car, and days-per-employee rules, and recommended holding the six high-risk date/malformed/ambiguous rows."
+    }
+  ],
+  "before": {
+    "metric_total": 36534,
+    "unit_family_other": 37,
+    "unit_family_access": 26,
+    "unit_family_safety_rate": 293,
+    "unit_family_count_rate": 201,
+    "unit_family_duration_rate": 17,
+    "remaining_other_units": {
+      "thousands": 23,
+      "year": 3,
+      "rate": 3,
+      "seats per car": 2,
+      "thousand jobs": 1,
+      "million dollars... wait, the table shows amounts in millions. Let me re-read.": 1,
+      "individuals": 1,
+      "days per employee": 1,
+      "Millions of jobs": 1,
+      "2027 $M": 1
+    }
+  },
+  "implemented": {
+    "files": [
+      "packages/pipeline/src/ontology/normalizers.ts",
+      "packages/pipeline/test/ontology/normalizers.test.ts"
+    ],
+    "rules": [
+      {
+        "name": "employment_scale_units",
+        "guard": "metric_name token includes employment and raw unit key is thousands, thousand_jobs, or millions_of_jobs",
+        "normalization": "jobs/access with scale 1000 or 1000000",
+        "rows_moved": 25,
+        "rationale": "Existing corpus convention maps jobs to unit_family access; exact employment metric names and units prove a jobs scale rather than a generic scale."
+      },
+      {
+        "name": "named_safety_rate_units",
+        "guard": "raw unit key is rate and metric_name is lost_time_injury_rate, lost_time_incident_rate, or total_recordable_incident_rate",
+        "normalization": "metric-name-specific normalized_unit with unit_family safety_rate",
+        "rows_moved": 3,
+        "rationale": "Exact allowlist prevents broad raw rate normalization while classifying named safety-rate metrics."
+      },
+      {
+        "name": "seats_per_car",
+        "guard": "exact normalized unit key seats_per_car",
+        "normalization": "seats_per_car/count_rate",
+        "rows_moved": 2,
+        "rationale": "Self-describing numerator/denominator unit for railcar seating capacity."
+      },
+      {
+        "name": "days_per_employee",
+        "guard": "exact normalized unit key days_per_employee",
+        "normalization": "days_per_employee/duration_rate",
+        "rows_moved": 1,
+        "rationale": "Self-describing duration denominator unit for employee availability."
+      }
+    ],
+    "intentionally_held": [
+      "date-like year units for substantial completion and revenue-service target/forecast dates",
+      "individuals for outreach count because family could be engagement, participation, or population",
+      "2027 $M because the label mixes price year and cost-per-rider and should not become million-dollar scale",
+      "malformed agent-text unit containing 'wait, the table shows amounts in millions. Let me re-read.'"
+    ]
+  },
+  "after": {
+    "metric_total": 36534,
+    "unit_family_other": 6,
+    "unit_family_access": 51,
+    "unit_family_safety_rate": 296,
+    "unit_family_count_rate": 203,
+    "unit_family_duration_rate": 18,
+    "remaining_other_rows": [
+      "metric_meeting-doc-140311-mn-tracks-outreach: individuals",
+      "metric_meeting-doc-182066-sas2-cost-per-rider: 2027 $M",
+      "metric_omny-nyct-substantial-completion-dec2025: year",
+      "metric_sas-phase2-revenue-service-target: year",
+      "metric_sas2-revenue-service-date-2032-v3: year",
+      "metric_support-to-mass-transit-actual-jan2026: malformed agent-text money unit"
+    ],
+    "delta": {
+      "unit_family_other": -31,
+      "unit_family_access": 25,
+      "unit_family_safety_rate": 3,
+      "unit_family_count_rate": 2,
+      "unit_family_duration_rate": 1
+    }
+  },
+  "verification": {
+    "focused_tests": "bun test packages/pipeline/test/ontology/normalizers.test.ts: 276 pass, 0 fail, 4573 expect() calls",
+    "typecheck": "bun run typecheck passed",
+    "materialize": "bun packages/cli/src/cli.ts materialize completed; Materialized 93092/98102 submissions; retired skipped 243; SQLite FTS quick_check ok",
+    "sqlite_quick_check": "sqlite3 data/canonical.db 'PRAGMA quick_check;': ok",
+    "validate": "bun packages/cli/src/cli.ts validate: Issues 0; submissions 98102; canonical records 84040; wiki pages 7334"
+  },
+  "remaining_lanes": [
+    "Metric unit_family other is now six intentionally-held records; further reduction likely needs date-unit representation policy, source-data repair, or manual submission override path rather than broad unit aliases.",
+    "Continue the direct post-ingest loop on a non-metric bucket with a larger measurable tail, such as source_gap kind residuals, event/source-gap policy holds, relation assertion-status unknowns, or entity/corridor duplicate pressure."
+  ],
+  "commands_not_run": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed commands"
+  ]
+}

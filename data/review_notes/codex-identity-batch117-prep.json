@@ -1,0 +1,390 @@
+{
+  "note_id": "codex-identity-batch117-prep",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "scope": {
+    "description": "Codex-only deterministic identity cleanup prep for global corridor and route records only.",
+    "included_global_kinds": [
+      "corridor",
+      "route"
+    ],
+    "excluded_global_kinds": [
+      "entity",
+      "project",
+      "treatment_component"
+    ],
+    "selection_policy": "Only high-confidence same-route or same-corridor-geography aliases were queued. Low-confidence, phase-specific, different-limit, and local/SBS/LTD/express/subway variant conflicts were excluded."
+  },
+  "batch": "identity117",
+  "global_kinds": [
+    "corridor",
+    "route"
+  ],
+  "prepared_count": 8,
+  "aliases": [
+    {
+      "global_kind": "route",
+      "canonical_id": "route_b47-grand-ave-2024",
+      "alias_id": "route_b47-grand-ave-nov2024",
+      "canonical_name": "B47",
+      "alias_name": "B47 bus",
+      "reason": "Same global B47 bus route in the Grand Avenue / Metropolitan Avenue / Queens Boulevard records. The alias and canonical records have the same route_id B47, Brooklyn route context, and no conflicting service variant; the alias explicitly normalizes to local service while the canonical record carries no contrary variant.",
+      "confidence": "high",
+      "source_or_validator_evidence": {
+        "canonical": {
+          "record_kind": "route",
+          "route_id": "B47",
+          "display_name": "B47",
+          "borough_normalized": "brooklyn",
+          "source_ids": [
+            "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024"
+          ],
+          "evidence_refs": [
+            "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024#p007_c0005"
+          ]
+        },
+        "alias": {
+          "record_kind": "route",
+          "route_id": "B47",
+          "service_variant": "local",
+          "route_type_normalized": "local",
+          "display_name": "B47 bus",
+          "borough_normalized": "brooklyn",
+          "source_ids": [
+            "grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024",
+            "grand_ave_metropolitan_ave_queens_blvd_nov2024"
+          ],
+          "evidence_refs": [
+            "grand_ave_metropolitan_ave_queens_blvd_nov2024#p007_c0004",
+            "grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024#p007_c0005"
+          ]
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact route_id match and no local/SBS/LTD/express/subway conflict. Do not generalize this to other B47 records without checking service variant."
+    },
+    {
+      "global_kind": "route",
+      "canonical_id": "route_b57-grand-ave-2024",
+      "alias_id": "route_b57-grand-ave-nov2024",
+      "canonical_name": "B57",
+      "alias_name": "B57 bus",
+      "reason": "Same global B57 bus route in the Grand Avenue / Metropolitan Avenue / Queens Boulevard records. The alias and canonical records have the same route_id B57, Brooklyn route context, and no conflicting service variant; the alias explicitly normalizes to local service while the canonical record carries no contrary variant.",
+      "confidence": "high",
+      "source_or_validator_evidence": {
+        "canonical": {
+          "record_kind": "route",
+          "route_id": "B57",
+          "display_name": "B57",
+          "borough_normalized": "brooklyn",
+          "source_ids": [
+            "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024"
+          ],
+          "evidence_refs": [
+            "grand_ave_metropolitan_ave_queens_blvd_cb5_dec2024#p007_c0005"
+          ]
+        },
+        "alias": {
+          "record_kind": "route",
+          "route_id": "B57",
+          "service_variant": "local",
+          "route_type_normalized": "local",
+          "display_name": "B57 bus",
+          "borough_normalized": "brooklyn",
+          "source_ids": [
+            "grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024",
+            "grand_ave_metropolitan_ave_queens_blvd_nov2024"
+          ],
+          "evidence_refs": [
+            "grand_ave_metropolitan_ave_queens_blvd_nov2024#p007_c0004",
+            "grand_ave_metropolitan_ave_queens_blvd_cb4_nov2024#p007_c0005"
+          ]
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact route_id match and no local/SBS/LTD/express/subway conflict. Do not merge with any non-B57 route sharing the same corridor."
+    },
+    {
+      "global_kind": "route",
+      "canonical_id": "route_b83-brt-south-brooklyn-2017",
+      "alias_id": "route_b83-brt-south-brooklyn-b82",
+      "canonical_name": "B83",
+      "alias_name": "B83",
+      "reason": "Same global B83 route in Southern Brooklyn B82 context. Both records have route_id B83 and Brooklyn context; the alias identifies local service, while the canonical record has no conflicting service variant and already aggregates December 2017 and January 2018 B82 corridor references.",
+      "confidence": "high",
+      "source_or_validator_evidence": {
+        "canonical": {
+          "record_kind": "route",
+          "route_id": "B83",
+          "display_name": "B83",
+          "borough_normalized": "brooklyn",
+          "source_ids": [
+            "brt_south_brooklyn_b82_dec2017",
+            "brt_south_brooklyn_b82_jan2018"
+          ],
+          "evidence_refs": [
+            "brt_south_brooklyn_b82_dec2017#p023_c0002",
+            "brt_south_brooklyn_b82_jan2018#p017_c0002",
+            "brt_south_brooklyn_b82_jan2018#p019_c0003"
+          ]
+        },
+        "alias": {
+          "record_kind": "route",
+          "route_id": "B83",
+          "service_variant": "local",
+          "route_type_normalized": "local",
+          "display_name": "B83",
+          "borough_normalized": "brooklyn",
+          "source_ids": [
+            "brt_south_brooklyn_b82"
+          ],
+          "evidence_refs": [
+            "brt_south_brooklyn_b82#p020_c0002"
+          ]
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact route_id match and compatible service typing. This does not merge B82 Local, B82 Limited, B82 SBS, BM2, or BM5 records."
+    },
+    {
+      "global_kind": "route",
+      "canonical_id": "route_b67-flatbush-ave-apr2026",
+      "alias_id": "route_b67-flatbush-ave-cb2",
+      "canonical_name": "B67",
+      "alias_name": "B67",
+      "reason": "Same global B67 bus route in Flatbush Avenue records. Both records have route_id B67 and Brooklyn context; the canonical record explicitly normalizes to local service and the alias has no conflicting service variant/type.",
+      "confidence": "high",
+      "source_or_validator_evidence": {
+        "canonical": {
+          "record_kind": "route",
+          "route_id": "B67",
+          "service_variant": "local",
+          "route_type_normalized": "local",
+          "display_name": "B67",
+          "borough_normalized": "brooklyn",
+          "source_ids": [
+            "flatbush_ave_brooklyn_bus_priority_kick_off_june2022",
+            "flatbush_ave_bus_priority_mtp_briefing_apr2026",
+            "flatbush_ave_cab1_nov2022",
+            "flatbush_ave_cb14_jan2023",
+            "flatbush_ave_cb8_jun2024",
+            "flatbush_ave_cb9_sept2022",
+            "meeting_doc_205516"
+          ],
+          "evidence_refs": [
+            "flatbush_ave_bus_priority_mtp_briefing_apr2026#p012_c0003",
+            "flatbush_ave_brooklyn_bus_priority_kick_off_june2022#p011_c0002",
+            "flatbush_ave_cab1_nov2022#p016_c0002",
+            "flatbush_ave_cb9_sept2022#p011_c0002"
+          ]
+        },
+        "alias": {
+          "record_kind": "route",
+          "route_id": "B67",
+          "display_name": "B67",
+          "borough_normalized": "brooklyn",
+          "source_ids": [
+            "flatbush_ave_cb2_jun2024"
+          ],
+          "evidence_refs": [
+            "flatbush_ave_cb2_jun2024#p011_c0004"
+          ]
+        }
+      },
+      "guard_notes": "Route merge guard satisfied: exact route_id match, no service-variant conflict, and same Flatbush Avenue route-list context. Do not use this as evidence to merge B69/B45/B103/Q35 records from the same map."
+    },
+    {
+      "global_kind": "corridor",
+      "canonical_id": "corridor_flatlands-ave-e103-to-pa-ave",
+      "alias_id": "corridor_flatlands-ave-e103-to-pennsylvania-jan2018",
+      "canonical_name": "Flatlands Ave (E 103 St to Pennsylvania Ave)",
+      "alias_name": "Flatlands Ave (E 103 St to Pennsylvania Ave)",
+      "reason": "Same Flatlands Avenue corridor segment in Brooklyn. Both records name Flatlands Ave and carry identical limits, E 103 St to Pennsylvania Ave, with no borough or phase-specific geography conflict.",
+      "confidence": "high",
+      "source_or_validator_evidence": {
+        "canonical": {
+          "record_kind": "corridor",
+          "corridor_name": "Flatlands Ave",
+          "limits": "E 103 St to Pennsylvania Ave",
+          "borough_normalized": "brooklyn",
+          "source_ids": [
+            "brt_south_brooklyn_b82"
+          ],
+          "evidence_refs": [
+            "brt_south_brooklyn_b82#p018_c0001",
+            "brt_south_brooklyn_b82#p018_c0002"
+          ]
+        },
+        "alias": {
+          "record_kind": "corridor",
+          "corridor_name": "Flatlands Ave",
+          "limits": "E 103 St to Pennsylvania Ave",
+          "borough_normalized": "brooklyn",
+          "source_ids": [
+            "brt_south_brooklyn_b82_jan2018"
+          ],
+          "evidence_refs": [
+            "brt_south_brooklyn_b82_jan2018#p013_c0007",
+            "brt_south_brooklyn_b82_jan2018#p014_c0001",
+            "brt_south_brooklyn_b82_jan2018#p015_c0001"
+          ]
+        }
+      },
+      "guard_notes": "Corridor merge guard satisfied: identical named segment and limits. Excludes broader Flatlands Avenue corridor records with different or missing limits."
+    },
+    {
+      "global_kind": "corridor",
+      "canonical_id": "corridor_pa-ave-flatlands-to-seaview",
+      "alias_id": "corridor_pennsylvania-ave-flatlands-to-seaview-jan2018",
+      "canonical_name": "Pennsylvania Ave (Flatlands Ave to Seaview Ave)",
+      "alias_name": "Pennsylvania Ave (Flatlands Ave to Seaview Ave)",
+      "reason": "Same Pennsylvania Avenue corridor segment in Brooklyn. Both records name Pennsylvania Ave and carry identical Flatlands Ave to Seaview Ave limits, with no borough or phase-specific geography conflict.",
+      "confidence": "high",
+      "source_or_validator_evidence": {
+        "canonical": {
+          "record_kind": "corridor",
+          "corridor_name": "Pennsylvania Ave",
+          "limits": "Flatlands Ave to Seaview Ave",
+          "borough_normalized": "brooklyn",
+          "source_ids": [
+            "brt_south_brooklyn_b82"
+          ],
+          "evidence_refs": [
+            "brt_south_brooklyn_b82#p020_c0001",
+            "brt_south_brooklyn_b82#p020_c0002"
+          ]
+        },
+        "alias": {
+          "record_kind": "corridor",
+          "corridor_name": "Pennsylvania Ave",
+          "limits": "Flatlands Ave to Seaview Ave",
+          "borough_normalized": "brooklyn",
+          "source_ids": [
+            "brt_south_brooklyn_b82_jan2018"
+          ],
+          "evidence_refs": [
+            "brt_south_brooklyn_b82_jan2018#p013_c0007",
+            "brt_south_brooklyn_b82_jan2018#p017_c0001",
+            "brt_south_brooklyn_b82_jan2018#p019_c0001"
+          ]
+        }
+      },
+      "guard_notes": "Corridor merge guard satisfied: identical named segment and limits. Excludes broader Pennsylvania Avenue or B82 corridor records without this exact segment scope."
+    },
+    {
+      "global_kind": "corridor",
+      "canonical_id": "corridor_cross-bay-blvd-2015",
+      "alias_id": "corridor_cross-bay-blvd-north-165-2015-05",
+      "canonical_name": "Cross Bay Boulevard (north of 165 Av)",
+      "alias_name": "Cross Bay Boulevard (north of 165 Av)",
+      "reason": "Same Cross Bay Boulevard corridor segment in Queens. Both records identify Cross Bay Boulevard north of 165 Av and carry the same limits, north of 165 Av.",
+      "confidence": "high",
+      "source_or_validator_evidence": {
+        "canonical": {
+          "record_kind": "corridor",
+          "corridor_name": "Cross Bay Boulevard (north of 165 Av)",
+          "limits": "north of 165 Av",
+          "borough_normalized": "queens",
+          "source_ids": [
+            "2015_04_30_brt_woodhaven_dw4_presentation"
+          ],
+          "evidence_refs": [
+            "2015_04_30_brt_woodhaven_dw4_presentation#p013_c0009",
+            "2015_04_30_brt_woodhaven_dw4_presentation#p016_c0008"
+          ]
+        },
+        "alias": {
+          "record_kind": "corridor",
+          "corridor_name": "Cross Bay Blvd (north of 165 Av)",
+          "limits": "north of 165 Av",
+          "borough_normalized": "queens",
+          "source_ids": [
+            "2015_05_13_brt_woodhaven_cb6_presentation"
+          ],
+          "evidence_refs": [
+            "2015_05_13_brt_woodhaven_cb6_presentation#p020_c0009",
+            "2015_05_13_brt_woodhaven_cb6_presentation#p020_c0010"
+          ]
+        }
+      },
+      "guard_notes": "Corridor merge guard satisfied: same borough and same north-of-165-Av segment. Excludes Cross Bay Boulevard records at Liberty/109 Av, Rockaway-to-165, or broader SBS corridor scopes."
+    },
+    {
+      "global_kind": "corridor",
+      "canonical_id": "corridor_utica-ave-carroll-church-2013",
+      "alias_id": "corridor_utica-ave-carroll-to-church",
+      "canonical_name": "Utica Avenue from Carroll Street to Church Avenue",
+      "alias_name": "Utica Ave Corridor Study Area",
+      "reason": "Same Utica Avenue corridor segment in Brooklyn. Both records name Utica Avenue and carry the same Carroll St. to Church Ave. limits; the alias is a study-area phrasing of the same segment.",
+      "confidence": "high",
+      "source_or_validator_evidence": {
+        "canonical": {
+          "record_kind": "corridor",
+          "corridor_name": "Utica Avenue",
+          "limits": "Carroll St. to Church Ave.",
+          "borough_normalized": "brooklyn",
+          "source_ids": [
+            "2013_09_24_sbs_utica_cb9",
+            "2015_04_09_brt_uticaave_cb8_presentation"
+          ],
+          "evidence_refs": [
+            "2013_09_24_sbs_utica_cb9#p010_c0002",
+            "2013_09_24_sbs_utica_cb9#p011_c0005",
+            "2015_04_09_brt_uticaave_cb8_presentation#p003_c0002",
+            "2015_04_09_brt_uticaave_cb8_presentation#p003_c0003"
+          ]
+        },
+        "alias": {
+          "record_kind": "corridor",
+          "corridor_name": "Utica Avenue",
+          "limits": "Carroll St. to Church Ave.",
+          "borough_normalized": "brooklyn",
+          "source_ids": [
+            "2012_01_24_sbs_utica_merchants"
+          ],
+          "evidence_refs": [
+            "2012_01_24_sbs_utica_merchants#p008_c0003"
+          ]
+        }
+      },
+      "guard_notes": "Corridor merge guard satisfied: same named street and same Carroll-to-Church limits. Excludes Utica Avenue records for St. Johns-to-Carroll or Avenue U-to-DeKalb."
+    }
+  ],
+  "exclusions_and_guards": [
+    "Excluded aliases already present in data/identity-overrides/merges.json.",
+    "Excluded aliases already prepared in visible data/review_notes/codex-identity-batch047-prep.json through codex-identity-batch114-prep.json; batch115 and batch116 prep files were not visible in this worktree.",
+    "Excluded entity, project, and treatment_component records entirely.",
+    "Excluded route pairs with explicit local/SBS/LTD/express/subway conflicts, including B44/B46 broad BRT phase records and other route_id-only false friends.",
+    "Excluded corridor pairs with different limits, broader/narrower corridor scope, uncertain borough, or phase/candidate-only scope ambiguity."
+  ],
+  "command_evidence": [
+    "rg --files data/review_notes | rg 'codex-identity-batch[0-9]+-prep\\\\.json$' | sort -V | tail -80",
+    "jq '{version, alias_type:(.aliases|type), alias_count:(.aliases|length), sample:(.aliases|to_entries[0:8])}' data/identity-overrides/merges.json",
+    "node read-only scan over data/canonical/routes.jsonl, data/canonical/corridors.jsonl, data/identity-overrides/merges.json, and visible codex identity prep artifacts to find same-kind candidates not already applied/prepared",
+    "node read-only compact evidence extraction for selected route and corridor records",
+    "node read-only selected-alias conflict check reported in_merges=false and in_prior_prep=false for all 8 selected aliases; visible identity prep range was batch047 through batch114, with batch115 and batch116 not visible"
+  ],
+  "local_validation": {
+    "artifact_type": "json_object",
+    "selected_alias_count": 8,
+    "all_aliases_have_required_fields": true,
+    "all_confidence_values": [
+      "high"
+    ],
+    "selected_aliases_in_existing_merges": 0,
+    "selected_aliases_in_visible_prior_prep_through_identity116": 0,
+    "forbidden_commands_run": false,
+    "notes": "Validation is local/deterministic only. No materialize, validate, provider-backed review, canonicalize, export-jsonl, DB publish, or DB repair commands were run."
+  },
+  "forbidden_commands_not_run": [
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema-propose",
+    "ontology-normalize-run",
+    "ingest/write with --profile/provider",
+    "materialize",
+    "validate",
+    "export-jsonl",
+    "DB publish/repair"
+  ]
+}

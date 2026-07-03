@@ -1,0 +1,323 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "entity_meeting-doc-129041-olga-chernat"
+record_aliases:
+  - "entity_meeting-doc-160261-olga-chernat"
+  - "entity_meeting-doc-197061-olga-chernat"
+  - "entity_olga-chernat"
+  - "entity_olga-chernat-129061"
+  - "entity_olga-chernat-deputy-chief-financial-services"
+  - "entity_olga-chernat-deputy-financial-services"
+record_kind: "entity"
+display_name: "Olga Chernat, Deputy Chief, Financial Services"
+source_id: "meeting_doc_129041"
+source_ids:
+  - "meeting_doc_124351"
+  - "meeting_doc_129041"
+  - "meeting_doc_129061"
+  - "meeting_doc_140496"
+  - "meeting_doc_146966"
+  - "meeting_doc_146976"
+  - "meeting_doc_155131"
+  - "meeting_doc_155146"
+  - "meeting_doc_160251"
+  - "meeting_doc_160256"
+  - "meeting_doc_160261"
+  - "meeting_doc_163201"
+  - "meeting_doc_164926"
+  - "meeting_doc_164971"
+  - "meeting_doc_170986"
+  - "meeting_doc_174011"
+  - "meeting_doc_190026"
+  - "meeting_doc_192261"
+  - "meeting_doc_194136"
+  - "meeting_doc_197006"
+  - "meeting_doc_197061"
+  - "meeting_doc_199131"
+  - "meeting_doc_201756"
+local_observation_id: "entity_meeting_doc_129041_olga_chernat"
+local_observation_ids:
+  - "entity_192261_olga_chernat"
+  - "entity_meeting_doc_124351_olga_chernat"
+  - "entity_meeting_doc_129041_olga_chernat"
+  - "entity_meeting_doc_140496_olga_chernat"
+  - "entity_meeting_doc_160251_olga_chernat"
+  - "entity_meeting_doc_160256_olga_chernat"
+  - "entity_meeting_doc_160261_olga_chernat"
+  - "entity_meeting_doc_164971_olga_chernat"
+  - "entity_meeting_doc_170986_olga_chernat"
+  - "entity_meeting_doc_174011_olga_chernat"
+  - "entity_meeting_doc_190026_olga_chernat"
+  - "entity_meeting_doc_197061_olga_chernat"
+  - "entity_olga_chernat_129061"
+  - "entity_olga_chernat_146966"
+  - "entity_olga_chernat_194136"
+  - "entity_olga_chernat_199131"
+  - "entity_olga_chernat_201756"
+  - "entity_olga_chernat_dec2024"
+  - "entity_olga_chernat_dec2025_deputy"
+  - "entity_olga_chernat_deputy_cfo_sep2024"
+  - "entity_olga_chernat_deputy_financial_services"
+  - "entity_olga_chernat_meeting_doc_155146"
+  - "entity_olga_chernat_meeting_doc_164926"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T22:19:04.752Z"
+raw_text: "MTA Finance Department Olga Chernat Deputy Chief, Financial Services October 23, 2023"
+submission_ids:
+  - "sub_03c9c5bb0b3985d9"
+  - "sub_078142a05d387e45"
+  - "sub_18860b2e56d5120b"
+  - "sub_3431f240833ee5fd"
+  - "sub_3836b6ab4c6a9d71"
+  - "sub_3b64d82a800e8f47"
+  - "sub_40ed0121f82c4a9e"
+  - "sub_7b9b04220eecdfe4"
+  - "sub_8145d52caeed9c1e"
+  - "sub_822273267dee526b"
+  - "sub_82bdb7e99ebb700e"
+  - "sub_8761948a81310e7e"
+  - "sub_8db5d133960524cd"
+  - "sub_9335d6debb3f8527"
+  - "sub_9fee9928845349e3"
+  - "sub_a4cd07743b5050c5"
+  - "sub_ce9ecc12c996638b"
+  - "sub_de4f9dd2934ebfeb"
+  - "sub_e1cc48ae6cbab792"
+  - "sub_e527a5aef1b30a0e"
+  - "sub_ef2c56f7af5493cd"
+  - "sub_f0c532545d1a21eb"
+  - "sub_f81a59236cc892e2"
+payload:
+  _merged_field_values:
+    description:
+      - "Project Manager for the MTA Finance Department staff summary"
+      - "Deputy Chief, Financial Services, MTA Finance Department"
+    organization:
+      - "Metropolitan Transportation Authority"
+      - "MTA Finance Department"
+      - "MTA"
+  description: "Project Manager for the MTA Finance Department staff summary"
+  entity_name: "Olga Chernat"
+  entity_type: "person"
+  name: "Olga Chernat"
+  office: "MTA Finance Department"
+  organization: "Metropolitan Transportation Authority"
+  role: "Deputy Chief, Financial Services"
+  title: "Deputy Chief, Financial Services"
+evidence_refs:
+  -
+    block_id: "p001_c0009"
+    evidence_id: "meeting_doc_129041#p001_c0009"
+    page_number: 1
+    role: "attendance"
+    source_id: "meeting_doc_129041"
+    source_path: "raw/sources/meeting_doc_129041/blocks.jsonl"
+    text_sha256: "sha256:90d3697e6457dec2fc62a2cb19ea9974cf0eb62b75f5c8496e9a3cd1c2088dfd"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_129061#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_129061"
+    source_path: "raw/sources/meeting_doc_129061/blocks.jsonl"
+    text_sha256: "sha256:0ce5960b41bc5deb10f6fb8faa6fec7a3ce7aa94de2ee1f2e28d11987332f6c4"
+    text_source: "raw_text"
+  -
+    block_id: "p157_c0003"
+    evidence_id: "meeting_doc_124351#p157_c0003"
+    page_number: 157
+    source_id: "meeting_doc_124351"
+    source_path: "raw/sources/meeting_doc_124351/blocks.jsonl"
+    source_quote: "MTA Finance Department Olga Chernat Deputy Chief, Financial Services October 23, 2023"
+    text_sha256: "sha256:4fa6dac3a827952dce205026e0fcc41cb275364d216aa648397cf944118f7384"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_140496#p001_c0003"
+    page_number: 1
+    source_id: "meeting_doc_140496"
+    source_path: "raw/sources/meeting_doc_140496/blocks.jsonl"
+    source_quote: "Project Manager Name Olga Chernat, Deputy Chief, Financial Services"
+    text_sha256: "sha256:4c9d1d169e724fa24c718b6bd528df4545b4901d2c795eb218510f1d1d99457c"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_155146#p001_c0003"
+    page_number: 1
+    role: "entity_source"
+    source_id: "meeting_doc_155146"
+    source_path: "raw/sources/meeting_doc_155146/blocks.jsonl"
+    text_sha256: "sha256:abda1d9174f7774f44ac24f2d2d873de46647e07a0f2d1d9aa1685d5e64b994b"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_160256#p001_c0002"
+    page_number: 1
+    role: "project_manager"
+    source_id: "meeting_doc_160256"
+    source_path: "raw/sources/meeting_doc_160256/blocks.jsonl"
+    text_sha256: "sha256:5307443621b4b0f2278bd45a759482a553c39ff6b0d35fa8470d0741fede9374"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_160251#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_160251"
+    source_path: "raw/sources/meeting_doc_160251/blocks.jsonl"
+    text_sha256: "sha256:e8385dc20d4b7aeac219f0f5e7b289689e74629b990ccd26ca6151a8ba8e59e0"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_160261#p001_c0002"
+    page_number: 1
+    role: "person_mentioned"
+    source_id: "meeting_doc_160261"
+    source_path: "raw/sources/meeting_doc_160261/blocks.jsonl"
+    text_sha256: "sha256:1e03abc185e9ee71757f58a71d7056a31dfaaa832e1c5d53a0dab1928dbc7aaf"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0007"
+    evidence_id: "meeting_doc_155131#p001_c0007"
+    page_number: 1
+    role: "staff attendee list"
+    source_id: "meeting_doc_155131"
+    source_path: "raw/sources/meeting_doc_155131/blocks.jsonl"
+    text_sha256: "sha256:b50f5ede0c50bc38391119774c0b8810c728fcaead4a3371a848ce61764edc7b"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_146966#p001_c0003"
+    page_number: 1
+    source_id: "meeting_doc_146966"
+    source_path: "raw/sources/meeting_doc_146966/blocks.jsonl"
+    source_quote: "Olga Chernat, Deputy Chief, Financial Services"
+    text_sha256: "sha256:0deb79e345c9fb0b23a194dfef5b4e2340882f12d2a7fb3443a6736f9601718d"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0003"
+    evidence_id: "meeting_doc_146976#p003_c0003"
+    page_number: 3
+    source_id: "meeting_doc_146976"
+    source_path: "raw/sources/meeting_doc_146976/blocks.jsonl"
+    text_sha256: "sha256:4d0051d338b3a520a07a1b5c280947948d72a0e207c0a843a72bd4bec6303b2b"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0007"
+    evidence_id: "meeting_doc_163201#p001_c0007"
+    page_number: 1
+    source_id: "meeting_doc_163201"
+    source_path: "raw/sources/meeting_doc_163201/blocks.jsonl"
+    source_quote: "Olga Chernat, Deputy Chief, Financial Services"
+    text_sha256: "sha256:4d2531f6d3685224ea241023c84d64fac62d64c1824e76dda642cd07f463f432"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_164971#p001_c0003"
+    page_number: 1
+    source_id: "meeting_doc_164971"
+    source_path: "raw/sources/meeting_doc_164971/blocks.jsonl"
+    source_quote: "MTA Finance Department Olga Chernat Deputy Chief, Financial Services February 24, 2025"
+    text_sha256: "sha256:142992412a2e84e4fb6debe04ae54057a0fc80066fed5cfa627e876e6c5545ed"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_164926#p001_c0002"
+    page_number: 1
+    role: "person_reference"
+    source_id: "meeting_doc_164926"
+    source_path: "raw/sources/meeting_doc_164926/blocks.jsonl"
+    source_quote: "Olga Chernat, Deputy Chief, Financial Services"
+    text_sha256: "sha256:5364f1cc0b4b5950fab4050bb2a06a6df99a8624b0e136c201aa98dc866442d0"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0007"
+    evidence_id: "meeting_doc_170986#p001_c0007"
+    page_number: 1
+    source_id: "meeting_doc_170986"
+    source_path: "raw/sources/meeting_doc_170986/blocks.jsonl"
+    source_quote: "Olga Chernat, Deputy Chief, Financial Services"
+    text_sha256: "sha256:3fbc4042406f9e3ff98b8fb654866b1ecacf751d741c1e1411af7c28317582ad"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_174011#p001_c0004"
+    page_number: 1
+    source_id: "meeting_doc_174011"
+    source_path: "raw/sources/meeting_doc_174011/blocks.jsonl"
+    text_sha256: "sha256:0f87f217df6c5e483bb92a2763593ffeffbd6b7303ff9a202c26c601e17d07ca"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_190026#p001_c0003"
+    page_number: 1
+    role: "cited"
+    source_id: "meeting_doc_190026"
+    source_path: "raw/sources/meeting_doc_190026/blocks.jsonl"
+    text_sha256: "sha256:d7ea0841d814a29994ce1a604b12c84122fd738053bcd5c6222b994dcd350f0b"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_192261#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_192261"
+    source_path: "raw/sources/meeting_doc_192261/blocks.jsonl"
+    text_sha256: "sha256:ccd2c38934ed0eb91eced47c63ea3727d92fdd4de000ae3d97aa61098fac5e94"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_194136#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_194136"
+    source_path: "raw/sources/meeting_doc_194136/blocks.jsonl"
+    text_sha256: "sha256:96a7fcf838096a626cddea37371b554931962c1c501ed00d287405dc3202dd4c"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_197061#p001_c0003"
+    page_number: 1
+    source_id: "meeting_doc_197061"
+    source_path: "raw/sources/meeting_doc_197061/blocks.jsonl"
+    text_sha256: "sha256:f3f26c473101039e62560c9e31a61b77a81cf58f771e1c78c069cce6271ba5bd"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0009"
+    evidence_id: "meeting_doc_197006#p001_c0009"
+    page_number: 1
+    source_id: "meeting_doc_197006"
+    source_path: "raw/sources/meeting_doc_197006/blocks.jsonl"
+    text_sha256: "sha256:32280ddec63ffdd336552f5e90ec18eec5ddf64bf37d7bc684048d759d9f30de"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_199131#p001_c0003"
+    page_number: 1
+    source_id: "meeting_doc_199131"
+    source_path: "raw/sources/meeting_doc_199131/blocks.jsonl"
+    source_quote: "Olga Chernat Deputy Chief, Financial Services"
+    text_sha256: "sha256:c784552b2a0d79d5e0ed7fa577ac800377691a7aac7c8c046eda6cb9d06b98b2"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_201756#p001_c0004"
+    page_number: 1
+    role: "entity_mention"
+    source_id: "meeting_doc_201756"
+    source_path: "raw/sources/meeting_doc_201756/blocks.jsonl"
+    text_sha256: "sha256:a916baaada2a9f16fa175e2ffdaf54295ea2423cbbc62b95a76aa7fcfb17de03"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_201756#p001_c0004"
+    page_number: 1
+    role: "entity_mention"
+    source_id: "meeting_doc_201756"
+    source_path: "raw/sources/meeting_doc_201756/blocks.jsonl"
+    source_quote: "Olga Chernat, Deputy Chief, Financial Services"
+    text_sha256: "sha256:a916baaada2a9f16fa175e2ffdaf54295ea2423cbbc62b95a76aa7fcfb17de03"
+    text_source: "raw_text"
+---
+
+<!-- mta-wiki:writer:start -->
+
+<!-- mta-wiki:writer:end -->

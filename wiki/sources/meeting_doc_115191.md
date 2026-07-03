@@ -1,0 +1,176 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-115191"
+record_kind: "source"
+display_name: "Long Island Rail Road Procurements - July 2023"
+source_id: "meeting_doc_115191"
+source_ids:
+  - "meeting_doc_115191"
+local_observation_id: "source_meeting_doc_115191"
+local_observation_ids:
+  - "source_meeting_doc_115191"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T12:17:24.549Z"
+submission_ids:
+  - "sub_9123f5cdcb4ce547"
+payload:
+  authority_tier: "board_material"
+  content_type: "board meeting procurement document"
+  date_text: "July 13, 2023"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2023-07-13"
+    precision: "day"
+    raw_text: "July 13, 2023"
+  description: "LIRR Procurement Agenda for MTA Board approval - includes 1 action for a proposed estimated expenditure of $56.2M for Rail Grinding Services"
+  published_date_normalized: "2023-07-13"
+  published_date_precision: "day"
+  title: "Long Island Rail Road Procurements"
+  year: 2023
+evidence_refs:
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_115191#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_115191"
+    source_path: "raw/sources/meeting_doc_115191/blocks.jsonl"
+    text_sha256: "sha256:3fa1b61ccea689ec8b33f6b8e77a4674a8b28cf73f39f28b9274a41561148919"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0002"
+    evidence_id: "meeting_doc_115191#p002_c0002"
+    page_number: 2
+    source_id: "meeting_doc_115191"
+    source_path: "raw/sources/meeting_doc_115191/blocks.jsonl"
+    text_sha256: "sha256:66984ebb6a853e7506b8b192debdb2c93d7004b5d9d70c75216d19e467259c16"
+    text_source: "raw_text"
+  -
+    block_id: "p003_c0002"
+    evidence_id: "meeting_doc_115191#p003_c0002"
+    page_number: 3
+    source_id: "meeting_doc_115191"
+    source_path: "raw/sources/meeting_doc_115191/blocks.jsonl"
+    text_sha256: "sha256:6a92254a4f8f0c15eb717cb577821e9d3c982d3f20822819eef94998ce500dfa"
+    text_source: "raw_text"
+---
+
+# Procurements
+
+source_id: meeting_doc_115191
+citation: cite block ids exactly as shown in square brackets
+document: 65 block(s)
+
+## Page 1
+
+> [p001_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p001_c0002] Long Island Rail Road Procurements
+[p001_c0003] Richard Mack , MTA Assistant Deputy Chief Procurement Officer – LIRR Procurements
+
+## Page 2
+
+### [p002_c0001] PROCUREMENTS
+[p002_c0002] The Procurement Agenda this month includes 1 action for a proposed estimated expenditure of $56.2M.
+
+## Page 3
+
+[p003_c0001]
+
+```text
+Subject Request for Authorization to Award Various Procurements Department LIRR Procurement Department Head Name Richard Mack Department Head Signature Project Manager Name Rose Davis Board Action Order To Date Approval Info Other 1 Committee 07/17/23 2 Board 07/19/23
+```
+[p003_c0002]
+
+```text
+July 13, 2023 Department Department Head Name Department Head Signature Internal Approvals Approval Approval 1 SVP Operations 2 Interim President
+```
+[p003_c0003]
+
+```text
+Internal Approvals (cont.) Order Approval Order Approval Order Approval Order Approval
+```
+### [p003_c0004] PURPOSE
+[p003_c0005] To obtain approval of the Board to award various contracts and purchase orders, and to inform the Long Island Rail Road Committee of these procurement actions.
+### [p003_c0006] DISCUSSION
+[p003_c0007] LIRR proposes to award Noncompetitive procurements in the following categories: None
+[p003_c0008] LIRR proposes to award Competitive procurements in the following categories:
+[p003_c0009]
+
+```text
+Procurements Requiring Two-Thirds Vote: # of Actions $ Amount Schedule C: Competitive Requests for Proposals (Award of Purchase and Public Work Contracts) 1 $ 56.2 M SUBTOTAL 1 $ 56.2 M
+```
+[p003_c0010] LIRR proposes to award Ratifications in the following categories: None
+[p003_c0011]
+
+```text
+TOTAL 1 $ 56.2 M
+```
+[p003_c0012] COMPETITIVE BIDDING REQUIREMENTS: The procurement actions in Schedules A, B, C, and D are subject to the competitive bidding requirements of PAL 1209 or 1265-a relating to contracts for the purchase of goods or public work. Procurement actions in the remaining Schedules are not subject to these requirements.
+[p003_c0013] BUDGET IMPACT: The purchases/contracts will result in obligating funds in the amounts listed. Funds are available in the current operating/capital budgets for this purpose.
+[p003_c0014] RECOMMENDATION: That the purchases/contracts be approved as proposed. (Items are included in the resolution of approval at the beginning of the Procurement Section.)
+
+## Page 4
+
+### [p004_c0001] BOARD RESOLUTION
+[p004_c0002] WHEREAS , in accordance with Sections 1265-a and 1209 of the Public Authorities Law and the All-Agency General Contract Procurement Guidelines, the Board authorizes the award of certain noncompetitive purchase and public work contracts, and the solicitation and award of requests for proposals regarding purchase and public work contracts; and
+[p004_c0003] WHEREAS , in accordance with the All-Agency Service Contract Procurement Guidelines and General Contract Procurement Guidelines the Board authorizes the award of certain noncompetitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts, and
+[p004_c0004] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Service Contract Procurement Guidelines, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p004_c0005] NOW, the Board resolves as follows:
+[p004_c0006] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract.
+[p004_c0007] 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals, and authorizes the solicitation of such proposals.
+[p004_c0008] 3. As to each request for proposals (for purchase and public work contracts) set forth in Schedule C for which a recommendation is made to award the contract, the Board authorizes the execution of said contract.
+[p004_c0009] 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein and ratifies each action for which ratification is requested.
+[p004_c0010] 5. The Board authorizes the execution of each of the following for which Board authorization is required: (i) the miscellaneous procurement contracts set forth in Schedule E; (ii) the personal service contracts set forth in Schedule F; (iii) the miscellaneous service contracts set forth in Schedule G; (iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; (v) the contract modifications to purchase and public work contracts set forth in Schedule I; and (vi) the modifications to miscellaneous procurement contracts set forth in Schedule J.
+[p004_c0011] 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+
+## Page 5
+
+### [p005_c0001] The logo for the MTA Long Island Rail Road, featuring the MTA logo and the text "Long Island Rail Road".
+[p005_c0002] JULY 2023
+### [p005_c0003] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p005_c0004] Procurements Requiring Two Thirds Vote:
+### [p005_c0005] C. Competitive Requests for Proposals (Award of Purchase and Public Work Contracts) (Staff Summaries required for all items estimated to be greater than $1,000,000.)
+- [p005_c0006] 1. Loram Maintenance of Way, Inc.                      $56,223,940 (est.) Staff Summary Attached Two Years Base with Three One Year Options Competitive RFP
+[p005_c0007] MTA Long Island Railroad requests Board approval to award a Joint Agency (Long Island Rail Road, Metro-North Railroad, and NYC Transit) publicly advertised and competitively solicited Request for Proposal for Rail Grinding Services.
+
+## Page 6
+
+### [p006_c0001] Staff Summary
+### [p006_c0002] Page 1 of 2
+[p006_c0003]
+
+```text
+Item Number 1 Department, Department Head Name: Procurement & Logistics, Richard Mack Internal Approvals Order Approval Order Approval 1 VP, General Counsel & Secretary 2 VP-Maintenance of Way 3 SVP Operations 4 Interim - President
+```
+[p006_c0004]
+
+```text
+SUMMARY INFORMATION Vendor Name Loram Maintenance of Way, Inc. Contract No. 403042 Description Joint Agency Rail Grinding Services for LIRR/MNR/NYCT Total Amount: Five-Year Estimated Total for LIRR, MNR, NYCT = $56,223,940 2-year base = $22,489,576 Three 1-year Options = $33,734,364 Contract Term (including Options, if any) Two-year base with three 1-year Options Option(s) included in Total Amount? Yes No N/A Renewal? Yes No Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Funding Source Operating Capital Federal Other:
+```
+### [p006_c0005] Purpose
+[p006_c0006] Long Island Rail Road (“LIRR”), on behalf of itself, Metro-North Railroad (“MNR”), and NYC Transit, seeks MTA Board approval, to award a contract to Loram Maintenance of Way, Inc. (“Loram”) for Rail Grinding Services. The contract is for a two-year base term with three 1-year options. This procurement was competitively solicited through a Request for Proposals (“RFPs”). Loram will provide rail grinding services (equipment and personnel) at various points along the agencies right of way in the estimated quantity award amount of $56,223,940 (two-year base; $22,489,576, plus three 1-year Options which total $33,734,364) subject to an adjustment based on a price index formula, as set forth in the contract terms and conditions.
+### [p006_c0007] Discussion
+[p006_c0008] Rail grinding services are needed to optimize wheel-rail interface and maximize wheel-rail life span. This process is the most effective practice to control the effects of rolling contact fatigue on the running rail by restoring the rail profile to maximize the value of the rail. The benefits of a rail grinding program include (1) reduction of broken rails; (2) extension of rail life; (3) extended track components life, and (4) improved ride quality and passenger comfort.
+[p006_c0009] Rail grinding also serves as a maintenance function to control the propagation of rail defects, which lead to broken rails. The grinding services provide an assessment of the rail throughout the system, allowing the operating agencies to optimize the grinding program to target areas of the track system in need of grinding. Rail grinding improves the safety and stability of the rails and reduces the need to perform premature rail replacement. Loram is required to furnish all operating and supervisory personnel, equipment, material, machinery, vehicles, and transportation necessary to perform the work included under this contract along the rights-of-way of LIRR, MNR, and NYC Transit.
+[p006_c0010] A Joint-Agency procurement process was conducted for this contract. MTA Procurement Operations, for the lead agency, LIRR, performed an extensive outreach to the track maintenance industry and published the advertisement for the procurement of these services on January 11, 2023, in the New York State Contract Reporter, the New York Daily News , and on the MTA website. Online advertisements were placed in three leading maintenance of way periodicals: Railway Age , Railway Track and Structures , and Progressive Railroading . The RFP was also sent directly to a list of firms known to perform this type of work in the industry, including Vossloh Track Material, Inc. (“Vossloh”); Delta Railroad Construction (“Delta”); RailWorks Maintenance of Way (“RailWorks”), Plasser American Corporation (“Plasser”); and Loram.
+
+## Page 7
+
+### [p007_c0001] Staff Summary
+### [p007_c0002] Page 1 of 2
+[p007_c0003] On March 13, 2023, a proposal was received from Loram. Four other contractors submitted No Proposal Response Forms, indicating the following reasons:
+- [p007_c0004] • Vossloh: currently does not have the manpower available to meet MTA's grinding needs • Delta: currently does not have the technical resources to meet the contractual requirements • RailWorks: unable to meet the MTA's track and tunnel clearance restrictions • Plasser: currently does not have the technical resources to meet the contractual requirements
+[p007_c0005] On March 29, 2023, the MTA Selection Committee ("SC"), comprised of representatives from LIRR, MNR, and NYC Transit Maintenance of Way user groups, evaluated Loram's proposal utilizing the criteria set forth in the RFP, which included: the contractor's technical approach, qualifications, and experience in meeting the requirements of all three agencies. After a thorough evaluation and discussions of the proposal submitted for each agency, the SC unanimously determined that Loram (the incumbent) was technically qualified to perform the work. Loram's proposal demonstrated successful experience in performing rail grinding services for all three agencies with significant resources. The SC made the recommendation to proceed with the procurement process. LIRR then entered into negotiations with Loram, addressing various cost-savings initiatives.
+[p007_c0006] The agencies combined year-one estimate of $11,266,000 (LIRR: $2 million; MNR: $866,000; NYC Transit: $8.4 million) is based on previous program usage. Loram submitted hourly fixed rates for all the work to be completed in 2023. Its initial cost proposal (Year 1) for all three agencies was $11,359,280 (LIRR: $2,290,668; MNR: $896,532; NYC Transit: $8,172,080). Through negotiations, LIRR was able to secure a final price of $11,244,788. This represents a 1 percent, ($114,492) reduction in price from its initial offer. The total amount for all five years (two-year base with three 1-year options) is $56,223,940. This reflects an approximate amount, as all rates for subsequent years (2024 + option years) will be adjusted in accordance with the price index formula, as set forth in the contract terms and conditions. Loram's proposed pricing is consistent with that provided to the MTA in its most recent agreements with LIRR, MNR, and NYC Transit. Based on the aforementioned, the negotiated pricing is considered fair and reasonable, and the proposal from Loram provides the best value to the MTA.
+[p007_c0007] The SC unanimously recommended award to Loram based on their qualifications, price, and significant resources; and ability to provide best value to the MTA.
+[p007_c0008] In order to streamline processes and realize cost savings, the Agencies will make changes to their operations to maximize actual rail-grinding time in the form of better coordination with Loram. All three agencies have made the decision to explore alternatives to rail grinding. This may include rail milling services, which may be a cost-efficient supplement to rail grinding where practical.
+[p007_c0009] This contract has been evaluated to determine the necessity and appropriate scope, of cybersecurity requirements, including any requirements under federal, state, and local law and regulations. Any applicable cybersecurity requirements, to the extent required, will be included in the contract terms and conditions.
+[p007_c0010] Loram has certified that pursuant to EO 16, it is not doing business in Russia.
+### [p007_c0011] D/M/WBE Information
+[p007_c0012] The MTA Department of Diversity and Civil Rights ("DDCR") has established a zero percent DBE goal for this contract. Loram Maintenance of Way, Inc. has not completed any MTA contracts with goals; therefore, no assessment of their MWDBE/SDVOB is available at this time.
+### [p007_c0013] Impact on Funding
+[p007_c0014] Funding for this project is included in the LIRR and MNR Capital Program Budget. NYC Transit will be utilizing Operating funds for their portion of the contract.
+### [p007_c0015] Alternatives
+[p007_c0016] None available. Currently, the Agencies do not possess the resources to perform the services associated with this contract. Additionally, all three agencies require this work, as Rail Grinding is a vital safety requirement to stop and reduce deformation due to use and friction on the railroad tracks by removing deformations and corrosion on the railway.
+### [p007_c0017] Recommendations
+[p007_c0018] It is recommended that the MTA Board approve the award of Contract 403042 to Loram in the amount of $56,223,940 for Rail Grinding Services.

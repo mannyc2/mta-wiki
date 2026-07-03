@@ -1,0 +1,83 @@
+{
+  "review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "reviewed_at": "2026-06-08T21:06:18.712Z",
+  "packet_path": "data/identity-review/packets/route_cluster_003.md",
+  "cluster_id": "route_cluster_003",
+  "kind": "route",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "suggestion": {
+    "cluster_id": "route_cluster_003",
+    "kind": "route",
+    "merge_groups": [
+      [
+        "route_bx6-sbs",
+        "route_bx6-sbs-addendum-update"
+      ]
+    ],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "route_bx6-local-addendum-update",
+          "route_bx6-sbs"
+        ],
+        "reason": "Distinct route variants: Bx6 Local vs Bx6 SBS. The source text explicitly distinguishes them ('Bx6 Local schedules...postponed until 2023 when the Bx6 SBS realignment is implemented'). Per instructions, preserve variant distinctions for local vs SBS."
+      },
+      {
+        "record_ids": [
+          "route_bx6-local-addendum-update",
+          "route_bx6-sbs-addendum-update"
+        ],
+        "reason": "Distinct route variants: Bx6 Local vs Bx6 SBS. Both from the same source document which treats them as separate services. Shared base route BX6 is insufficient to merge different service variants."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "route_bx6-local-addendum-update",
+        "aliases": [
+          "Bx6 Local",
+          "route_bx6-local"
+        ],
+        "reason": "Useful for search/discovery as a Bx6 variant, but not merge authority with SBS records."
+      },
+      {
+        "record_id": "route_bx6-sbs",
+        "aliases": [
+          "Bx6",
+          "Bx6-SBS",
+          "Bx6 Select Bus Service",
+          "South Bronx Select Bus Service"
+        ],
+        "reason": "Useful for search/discovery as a Bx6 variant, but not merge authority with Local records."
+      },
+      {
+        "record_id": "route_bx6-sbs-addendum-update",
+        "aliases": [
+          "Bx6 SBS",
+          "Bx6 SBS 161st Street / Story Avenue",
+          "route_bx6-sbs"
+        ],
+        "reason": "Useful for search/discovery as a Bx6 variant, but this record should be merged into route_bx6-sbs."
+      }
+    ],
+    "missing_fields": [
+      {
+        "record_id": "route_bx6-local-addendum-update",
+        "fields": [
+          "borough",
+          "streets"
+        ]
+      }
+    ],
+    "ambiguous": [],
+    "suggested_rules": [
+      "Do not merge local and SBS variants of the same base route; preserve variant distinctions (local, limited, SBS, express).",
+      "Records sharing the same identity key (e.g., route_bx6-sbs) and describing the same service variant should be merged."
+    ],
+    "confidence": "high",
+    "rationale": "route_bx6-sbs and route_bx6-sbs-addendum-update share identity key 'route_bx6-sbs', both describe the Bx6 SBS route (161st Street corridor), and the validator flagged duplicate_global_identity. route_bx6-local-addendum-update is a distinct Local variant and should not merge with SBS records per variant preservation rule. The source document itself distinguishes 'Bx6 Local schedules' from 'Bx6 SBS realignment'."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T21-05-06-613Z_3449211-02b9a3b7_identity-review-run_route-cluster-003",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-05-06-613Z_2026-06-08T21-05-06-613Z_3449211-02b9a3b7_identity-review-run_route-cluster-003.jsonl"
+}

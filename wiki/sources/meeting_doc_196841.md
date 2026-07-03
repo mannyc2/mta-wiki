@@ -1,0 +1,175 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-196841"
+record_kind: "source"
+display_name: "MTA Bridges and Tunnels Financial and Ridership Report"
+source_id: "meeting_doc_196841"
+source_ids:
+  - "meeting_doc_196841"
+local_observation_id: "source_meeting_doc_196841"
+local_observation_ids:
+  - "source_meeting_doc_196841"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T21:08:27.665Z"
+raw_text: "MTA BRIDGES AND TUNNELS 2025 ADOPTED BUDGET AND NOVEMBER FORECAST vs. PRELIMINARY ACTUAL"
+submission_ids:
+  - "sub_cd10b385b94dd1ac"
+payload:
+  authority_tier: "plan_document"
+  content_type: "financial report"
+  description: "MTA Bridges and Tunnels 2025 Adopted Budget and November Forecast vs. Preliminary Actual"
+  document_type: "Financial and Ridership Report (Information Item)"
+  publisher: "MTA Bridges and Tunnels"
+  title: "Financial and Ridership Report"
+evidence_refs:
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_196841#p001_c0003"
+    page_number: 1
+    role: "document_title"
+    source_id: "meeting_doc_196841"
+    source_path: "raw/sources/meeting_doc_196841/blocks.jsonl"
+    text_sha256: "sha256:ee590116b6e33d44ed45b02ffe723191e0bfbfd6248b909a943df4111f81251a"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0001"
+    evidence_id: "meeting_doc_196841#p002_c0001"
+    page_number: 2
+    role: "budget_header"
+    source_id: "meeting_doc_196841"
+    source_path: "raw/sources/meeting_doc_196841/blocks.jsonl"
+    text_sha256: "sha256:c50b985db5668dc1cd728c0f1e97655374e094734da67b260a41cad64f178456"
+    text_source: "raw_text"
+---
+
+# Financial and ridership report
+
+source_id: meeting_doc_196841
+citation: cite block ids exactly as shown in square brackets
+document: 49 block(s)
+
+## Page 1
+
+> [p001_c0001] The MTA logo, consisting of the letters 'MTA' in white inside a black circle.
+### [p001_c0002] Bridges and Tunnels
+### [p001_c0003] Financial and Ridership Report (Information Item)
+
+## Page 2
+
+### [p002_c0001] MTA BRIDGES AND TUNNELS 2025 ADOPTED BUDGET AND NOVEMBER FORECAST vs. PRELIMINARY ACTUAL ($ in millions)
+[p002_c0002] NON-REIMBURSABLE/REIMBURSABLE (Page 1 of 2)
+[p002_c0003]
+
+```text
+2025 Favorable/(Unfavorable) Variance Adopted Budget November Forecast Actual 2024 Adopted Budget November Forecast $ % $ % Revenue Vehicle Toll Revenue $2,583.402 $2,584.730 $2,585.174 $1.772 0.0 $0.444 0.0 Other Operating Revenue 27.099 25.352 25.396 (1.703) (6.3) 0.044 0.2 Capital and Other Reimbursements 30.958 30.958 16.248 (14.709) (47.5) (14.709) (47.5) Investment Income 1.240 5.098 13.118 11.877 * 8.019 * Total Revenue $2,642.699 $2,646.138 $2,639.935 ($2.763) (0.1) ($6.203) (0.2) Expenses Labor: Payroll 116.572 111.026 $112.790 $3.782 3.2 ($1.764) (1.6) Overtime 33.262 30.772 $32.494 0.769 2.3 (1.722) (5.6) Health and Welfare 33.482 28.747 28.657 4.825 14.4 0.090 0.3 OPEB Current Payment 38.111 34.830 36.809 1.302 3.4 (1.980) (5.7) Pensions 34.580 39.969 39.777 (5.197) (15.0) 0.192 0.5 Other Fringe Benefits 19.557 16.919 13.202 6.356 32.5 3.717 22.0 Reimbursable Overhead 0.000 0.000 0.000 0.000 - 0.000 - Total Labor Expenses $275.564 $262.262 $263.729 $11.836 4.3 ($1.467) (0.6) Non-Labor: Electricity - Non-Traction 5.527 $4.994 $5.365 $0.162 2.9 ($0.371) (7.4) Fuel 1.861 2.011 2.198 (0.337) (18.1) (0.186) (9.3) Insurance 13.699 14.042 11.454 2.245 16.4 2.589 18.4 Claims 0.000 0.000 0.212 (0.212) - (0.212) - Paratransit Service Contracts 0.000 0.000 0.000 0.000 - 0.000 - Maintenance and Other Operating Contracts 166.910 160.852 145.962 20.948 12.6 14.891 9.3 Professional Service Contracts 27.130 31.309 26.674 0.456 1.7 4.635 14.8 Materials & Supplies 2.712 3.390 4.886 (2.173) (80.1) (1.496) (44.1) Other Business Expenses 59.069 58.705 51.747 7.322 12.4 6.958 11.9 Total Non-Labor Expenses $276.907 $275.305 $248.497 $28.410 10.3 $26.808 9.7 Total Expenses before Depreciation & GASB Adj. $552.472 $537.567 $512.226 $40.246 7.3 $25.341 4.7 Depreciation 220.350 $233.920 231.038 ($10.689) (4.9) $2.882 1.2 Environmental Remediation 0.000 0.000 0.000 0.000 - 0.000 - GASB 68 Pension Adjustment (22.445) (15.045) 0.000 (22.445) (100.0) (15.045) (100.0) GASB 75 OPEB Expense Adjustments 17.161 20.716 0.000 17.161 100.0 20.716 100.0 GASB 87 Net Adjustment 2.324 5.616 8.131 (5.807) * (2.515) (44.8) GASB_96_SBITA_Adjustment 0.002 0.002 (0.005) 0.007 * 0.007 * Total Expenses after Depreciation & GASB Adj. $769.863 $782.776 $751.390 $18.473 2.4 $31.386 4.0 Less: Depreciation $220.350 $233.920 $231.038 ($10.689) (4.9) $2.882 1.2 Less: Environmental Remediation 0.000 0.000 0.000 0.000 - 0.000 - Less: GASB 68 Pension Adjustment (22.445) (15.045) 0.000 (22.445) (100.0) (15.045) (100.0) Less: GASB 75 OPEB Expense Adjustments 17.161 20.716 0.000 17.161 100.0 20.716 100.0 Less: GASB 87 Net Adjustment 2.324 5.616 8.131 (5.807) * (2.515) (44.8) Less: GASB_96_SBITA_Adjustment 0.002 0.002 (0.005) 0.007 * 0.007 * Total Expenses $552.472 $537.567 $512.226 $40.246 7.3 $25.341 4.7 Net Surplus/(Deficit) (Excluding Subsidies and Debt Service) $2,090.227 $2,108.571 $2,127.710 $37.483 1.8 $19.138 0.9
+```
+[p002_c0004] Totals may not add due to rounding
+
+## Page 3
+
+### [p003_c0001] MTA BRIDGES AND TUNNELS 2025 ADOPTED BUDGET AND NOVEMBER FORECAST vs. PRELIMINARY ACTUAL ($ in millions)
+[p003_c0002] NON-REIMBURSABLE/REIMBURSABLE (Page 2 of 2)
+[p003_c0003]
+
+```text
+2025 Favorable/(Unfavorable) Variance Adopted November 2024 Adopted Budget November Forecast Budget Forecast Actual $ % $ % Net Surplus/(Deficit) $2,090.227 $2,108.571 $2,127.710 $37.483 1.8 $19.138 0.9 Deductions from Income: Less: Capitalized Assets $23.213 $25.533 $18.900 $4.313 18.6 $6.633 26.0 Reserves and Prepaid Expenses 0.000 0.000 0.000 0.000 - 0.000 - GASB Reserve 0.000 0.000 0.000 0.000 - 0.000 - Adjusted Baseline Net Surplus/(Deficit) $2,067.014 $2,083.038 $2,108.810 $41.796 2.0 $25.772 1.2 Less: Debt Service 739.159 724.691 758.345 (19.187) (2.6) (33.654) (4.6) Less: Contribution to the Capital Program 0.000 0.000 0.000 0.000 - 0.000 - Income Available for Distribution $1,327.855 $1,358.347 $1,350.464 $22.609 1.7 ($7.882) (0.6) Distributable To: MTA - Investment Income 1.240 5.098 13.118 11.877 * 8.019 * MTA - Distributable Income 691.040 714.850 715.159 24.120 3.5 0.310 0.0 NYCT - Distributable Income 635.575 638.399 622.240 (13.335) (2.1) (16.159) (2.5) Total Distributable Income: $1,327.855 $1,358.347 $1,350.517 $22.662 1.7 ($7.830) (0.6) Actual Cash Transfers: MTA - Investment Income 13.240 11.250 11.250 (1.991) (15.0) 0.000 0.0 MTA - Transfers 697.756 749.146 704.681 6.925 1.0 (44.465) (5.9) NYCT - Transfers 641.252 665.510 609.656 (31.596) (4.9) (55.854) (8.4) Total Cash Transfers: $1,352.248 $1,425.906 $1,325.586 ($26.662) (2.0) ($100.319) (7.0) SUPPORT TO MASS TRANSIT: Total Revenues $2,642.699 $2,646.138 $2,639.935 (2.763) (0.1) (6.203) (0.2) Less: Net Operating Expenses 552.472 537.567 512.226 40.246 7.3 25.341 4.7 Net Surplus/(Deficit) $2,090.227 $2,108.571 $2,127.710 $37.483 1.8 $19.138 0.9 Deductions from Operating Income: B&T Debt Service $523.248 $458.611 $450.660 72.588 13.9 7.951 1.7 Capitalized Assets 23.213 25.533 18.900 4.313 18.6 6.633 26.0 Contribution to Capital Program 0.000 0.000 0.000 0.000 - 0.000 - Reserves and Prepaid Expenses 0.000 0.000 0.000 0.000 - 0.000 - GASB Reserve 0.000 0.000 0.000 0.000 - 0.000 - Total Deductions from Operating Inc. $546.461 $484.144 $469.561 $76.901 14.1 $14.584 3.0 Total Support to Mass Transit: $1,543.766 $1,624.427 $1,658.149 $114.383 7.4 $33.722 2.1
+```
+[p003_c0004] Totals may not add due to rounding
+[p003_c0005] * Variance exceeds 100%.
+
+## Page 4
+
+### [p004_c0001] MTA BRIDGES AND TUNNELS 2025 ADOPTED BUDGET AND NOVEMBER FORECAST vs. PRELIMINARY ACTUAL ($ in millions)
+### [p004_c0002] NON-REIMBURSABLE
+[p004_c0003]
+
+```text
+2025 Favorable/(Unfavorable) Variance Adopted Budget November Forecast Actual 2025 Adopted Budget November Forecast $ % $ % Revenue Vehicle Toll Revenue 2,583.402 2,584.730 2,585.174 1.772 0.0 0.444 0.0 Other Operating Revenue 27.099 25.352 25.396 (1.703) (6.3) 0.044 0.2 Capital and Other Reimbursements - 0.000 - - - 0.000 - Investment Income 1.240 5.098 13.118 11.877 * 8.019 * Total Revenue $2,611.741 $2,615.180 $2,623.687 $11.946 0.5 $8.507 0.3 Expenses Labor: Payroll $102.968 $97.422 $107.042 ($4.074) (4.0) ($9.620) (9.9) Overtime 32.223 29.732 31.712 0.511 1.6 (1.980) (6.7) Health and Welfare 30.666 25.932 26.887 3.780 12.3 (0.955) (3.7) OPEB Current Payment 38.111 34.830 36.809 1.302 3.4 (1.980) (5.7) Pensions 31.156 36.545 38.265 (7.109) (22.8) (1.720) (4.7) Other Fringe Benefits 18.005 15.367 12.503 5.502 30.6 2.864 18.6 Reimbursable Overhead (8.523) (8.523) (5.791) (2.732) (32.1) (2.732) (32.1) Total Labor Expenses $244.607 $231.304 $247.428 ($2.821) (1.2) ($16.123) (7.0) Non-Labor: Electricity - Non-Traction $5.527 $4.994 $5.365 $0.162 2.9 ($0.371) (7.4) Fuel 1.861 2.011 2.198 (0.337) (18.1) (0.186) (9.3) Insurance 13.699 14.042 11.454 2.245 16.4 2.589 18.4 Claims - - 0.212 (0.21) - (0.21) - Paratransit Service Contracts - - - - - - - Maintenance and Other Operating Contracts 166.910 160.852 145.962 20.948 12.6 14.891 9.3 Professional Service Contracts 27.130 31.309 26.674 0.456 1.7 4.635 14.8 Materials & Supplies 2.712 3.390 4.886 (2.173) (80.1) (1.496) (44.1) Other Business Expenses 59.069 58.705 51.747 7.322 12.4 6.958 11.9 Total Non-Labor Expenses $276.907 $275.305 $248.497 $28.410 10.3 $26.808 9.7 Total Expenses before Depreciation & GASB Adj. $521.514 $506.609 $495.925 $25.590 4.9 $10.684 2.1 Depreciation $220.350 $233.920 $231.038 ($10.689) (4.9) $2.882 1.2 Environmental Remediation 0.000 0.000 - 0.000 - - - GASB 68 Pension Adjustment (22.445) (15.045) - (22.445) (100.0) (15.045) (100.0) GASB 75 OPEB Expense Adjustments 17.161 20.716 - 17.161 100.0 20.716 100.0 GASB 87 Net Adjustment 5.616 5.616 8.131 (2.515) (44.8) (2.515) (44.8) GASB_96_SBITA_Adjustment 0.002 0.002 (0.005) 0.007 * 0.007 * GASB_GASB 101 0.000 0.000 - 0.000 - 0.000 - Total Expenses after Depreciation & GASB Adj. $742.198 $751.818 $735.089 $7.109 (44.7) $16.729 (41.4) Less: Depreciation $220.350 $233.920 $231.038 ($10.689) (4.9) $2.882 1.2 Less: Environmental Remediation - - - - - - - Less: GASB 68 Pension Adjustment (22.45) (15.05) - (22.45) (100.00) (15.05) (100.0) Less: GASB 75 OPEB Expense Adjustments 17.16 20.72 - 17.16 100.00 20.72 100.0 Less: GASB 87 Net Adjustment 5.616 5.616 8.131 (2.515) (44.77) (2.515) (44.8) Less: GASB_96_SBITA_Adjustment 0.002 0.002 (0.005) 0.007 * 0.007 * Less: GASB_GASB 101 - - - - - - - Total Expenses $521.514 $506.609 $495.925 $25.590 4.9 $10.684 2.1 Net Surplus/(Deficit) (Excluding Subsidies and Debt Service) $2,090.227 $2,108.571 $2,127.762 $37.535 1.8 $19.191 0.9
+```
+[p004_c0004] Totals may not add due to rounding
+[p004_c0005] * Variance exceeds 100%.
+
+## Page 5
+
+### [p005_c0001] MTA BRIDGES AND TUNNELS 2025 ADOPTED BUDGET AND NOVEMBER FORECAST vs. PRELIMINARY ACTUAL ($ in millions)
+[p005_c0002]
+
+```text
+REIMBURSABLE 2025 Favorable/(Unfavorable) Variance Adopted Budget November Forecast Actual 2025 Adopted Budget November Forecast $ % $ % Revenue Vehicle Toll Revenue 0.000 0.000 0.000 0.000 - 0.000 - Other Operating Revenue 0.000 0.000 0.000 0.000 - 0.000 - Capital and Other Reimbursements 30.958 30.958 16.248 (14.709) (47.5) (14.709) (47.5) Investment Income 0.000 0.000 0.000 0.000 - 0.000 - Total Revenue $30.958 $30.958 $16.248 ($14.709) (47.5) ($14.709) (47.5) Expenses Labor: Payroll $13.603 $13.603 $5.748 $7.856 57.7 $7.856 57.7 Overtime 1.039 $1.039 0.782 0.258 24.8 0.258 24.8 Health and Welfare 2.816 $2.816 1.770 1.045 37.1 1.045 37.1 OPEB Current Payment 0.000 $0.000 - 0.000 - 0.000 - Pensions 3.424 $3.424 1.512 1.912 55.8 1.912 55.8 Other Fringe Benefits 1.552 $1.552 0.699 0.853 55.0 0.853 55.0 Reimbursable Overhead 8.523 $8.523 5.738 2.785 32.7 2.785 32.7 Total Labor Expenses $30.958 $30.958 $16.248 $14.709 47.5 $14.709 47.5 Non-Labor: Electricity - Non-Traction $0.000 $0.000 $0.000 $0.000 - $0.000 - Fuel 0.000 0.000 0.000 0.000 - 0.000 - Insurance 0.000 0.000 0.000 0.000 - 0.000 - Claims 0.000 0.000 0.000 0.000 - 0.000 - Paratransit Service Contracts 0.000 0.000 0.000 0.000 - 0.000 - Maintenance and Other Operating Contracts 0.000 0.000 0.000 0.000 - 0.000 - Professional Service Contracts 0.000 0.000 0.000 0.000 - 0.000 - Materials & Supplies 0.000 0.000 0.000 0.000 - 0.000 - Other Business Expenses 0.000 0.000 0.000 0.000 - 0.000 - Total Non-Labor Expenses $0.000 $0.000 $0.000 $0.000 - $0.000 - Gap Closing Actions Additional Actions for Budget Balance: Expense Impact $0.000 $0.000 $0.000 $0.000 - $0.000 - Total Expenses before Depreciation & GASB Adj. $30.958 $30.958 $16.248 $14.709 47.5 $14.709 47.5 Depreciation $0.000 $0.000 $0.000 $0.000 - $0.000 - Environmental Remediation 0.000 0.000 0.000 0.000 - 0.000 - GASB 68 Pension Adjustment 0.000 0.000 0.000 0.000 - 0.000 - GASB 75 OPEB Expense Adjustments 0.000 0.000 0.000 0.000 - 0.000 - GASB 87 Net Adjustment 0.000 0.000 0.000 0.000 - 0.000 - Total Expenses after Depreciation & GASB Adj. $30.958 $30.958 $16.248 $14.709 47.5 $14.709 47.5 Less: Depreciation $0.000 $0.000 $0.000 $0.000 - $0.000 - Less: OPEB Obligation 0.000 0.000 0.000 0.000 - 0.000 - Total Expenses $30.958 $30.958 $16.248 $14.709 47.5 $14.709 47.5 Net Surplus/(Deficit) (Excluding Subsidies and Debt Service) $0.000 $0.000 $0.000 $0.000 - $0.000 -
+```
+[p005_c0003] Totals may not add due to rounding
+
+## Page 6
+
+### [p006_c0001] MTA BRIDGES AND TUNNELS EXPLANATION OF VARIANCES BETWEEN NOVEMBER FORECAST AND ACTUAL - ACCRUAL BASIS December Year-to-Date 2025 ($ in millions)
+[p006_c0002]
+
+```text
+Generic Revenue or Expense Category Nonreimb or Reimb Favorable (Unfavorable) Variance YEAR-TO-DATE $ Reason for Variance Vehicle Toll Revenue Nonreimb 0.444 0.0 Toll revenue was slightly favorable to the year-end forecast in part due to higher average revenue per vehicle. Other Operating Revenue Nonreimb 0.044 0.2 Other operating revenue was slightly higher primarily due to higher rental income. Investment Income Nonreimb 8.019 * Higher than anticipated short-term investment returns on fund balances. Payroll Nonreimb (9.620) (9.9) Higher Payroll expenses were primarily due to the forecasted allocation mix between non-reimbursable and reimbursable expense in December, and additional labor expenses billed back by Construction & Development for engineering expenses. Overtime Nonreimb (1.980) (6.7) Higher overtime is primarily due to higher attrition and vacancy coverage. Health and Welfare Nonreimb (0.955) (3.7) Higher Health and Welfare expenses were driven primarily by the forecasted allocation mix between non-reimbursable and reimbursable expense in December. OPEB Current Payment Nonreimb (1.980) (5.7) Higher expenses primarily due to higher than forecasted retiree H&W benefits. Pensions Nonreimb (1.720) (4.7) Higher Pension expenses were driven primarily by the forecasted allocation mix between non-reimbursable and reimbursable expense in December. Other Fringe Benefits Nonreimb 2.864 18.6 Lower Other Fringe Benefits expenses were primarily due to lower than anticipated Workman's Compensation costs. Reimbursable Overhead Nonreimb (2.732) (32.1) Lower reimbursable overhead credits was mainly due to less reimbursable labor work required on capital projects. Electricity - Non-Traction Nonreimb (0.371) (7.4) Electric Power is higher than forecast due to higher prices and usage. Fuel Nonreimb (0.186) (9.3) Higher than planned heating fuel expenses. Insurance Claims Nonreimb 2.589 18.4 Lower expenses primarily due to a lower than forecasted property and liability expenses. Maintenance and Other Operating Contracts Nonreimb 14.891 9.3 Lower expenses were primarily due to lower than forecasted costs for E-ZPass Customer Service Center related costs ($6.338M), the timing of Major Maintenance costs ($5.303M), E-ZPass tags ($2.177M), and the maintenance of E-ZPass equipment ($0.848M). Professional Service Contracts Nonreimb 4.635 14.8 Lower expenses primarily due to timing and lower than forecasted expenses for bond issuance fees ($1.449M), engineering services ($1.484M), advertising and marketing, ($0.514M), other outside services ($0.931M), and legal fees ($0.674M), partially offset by miscellaneous professional services ($1.411M). Materials & Supplies Nonreimb (1.496) (44.1) Higher than planned expenses across a variety of small equipment and supply categories, including roadway equipment, automotive materials, and de-icing material. Other Business Expenses Nonreimb 6.958 11.9 Lower than forecasted expenses are mainly due to lower credit card processing and debt collection fees, and restitution for tunnel damage caused by an accident. Capital and Other Reimbursements Reimb (14.709) (47.5) Lower capital reimbursements against the monthly Final Forecast allocation. Payroll Reimb 7.856 7.9 Lower capital reimbursements against the monthly Final Forecast allocation. Overtime Reimb 0.258 0.3 Lower capital reimbursements against the monthly Final Forecast allocation. Health and Welfare Reimb 1.045 1.0 Lower capital reimbursements against the monthly Final Forecast allocation. Pensions Reimb 1.912 1.9 Lower capital reimbursements against the monthly Final Forecast allocation. Other Fringe Benefits Reimb 0.853 0.9 Lower capital reimbursements against the monthly Final Forecast allocation. Reimbursable Overhead Reimb 2.785 2.8 Lower capital reimbursements against the monthly Final Forecast allocation.
+```
+
+## Page 7
+
+### [p007_c0001] MTA BRIDGES AND TUNNELS TRAFFIC VOLUME AND REVENUE (millions)
+### [p007_c0002] Comparison Current Year vs. Prior Year
+[p007_c0003]
+
+```text
+Prior Year Current Year* Percentage Change Traffic Revenue Traffic Revenue Traffic Revenue Bronx-Whitestone 49.6 $420.9 50.4 $427.2 1.6% 1.5% Cross Bay 7.7 22.5 7.8 23.0 0.8% 2.1% Henry Hudson 25.1 107.0 25.2 108.1 0.3% 1.0% Hugh L. Carey 22.4 164.9 21.8 162.1 -2.6% -1.7% Marine Parkway 7.9 22.3 8.0 22.6 1.3% 1.3% Queens Midtown 30.1 237.7 29.7 234.0 -1.4% -1.5% RFK 69.1 564.7 69.5 571.3 0.6% 1.2% Throgs Neck 44.9 429.8 44.9 431.3 0.1% 0.4% Verrazzano-Narrows 80.5 602.4 80.8 605.5 0.3% 0.5% Total 337.3 $2,572.3 338.1 $2,585.2 0.2% 0.5% Revenue Per Vehicle $7,625 $7,646 0.3%
+```
+### [p007_c0004] Comparison Actual vs. Adopted Budget and November Forecast
+[p007_c0005]
+
+```text
+Adopted Budget November Forecast Percentage Change Adopted Budget Prelim Actual November Forecast November Forecast Adopted Budget November Forecast Traffic 339.6 338.1 339.0 338.1 -0.4% -0.3% Toll Revenue $2,583.4 $2,585.2 $2,584.7 $2,585.2 0.1% 0.0% Revenue Per Vehicle $7,607 $7,646 $7,625 $7,646 0.5% 0.3%
+```
+[p007_c0006] _1) Numbers may not add due to rounding._
+[p007_c0007] _2) 2025 December YTD traffic is 0.8M above December YTD 2024, an increase of 0.2%, and December_
+
+## Page 8
+
+### [p008_c0001] MTA Bridges and Tunnels Toll Revenue Collection Rates
+[p008_c0002] Preliminary data subject to final audit
+[p008_c0003]
+
+```text
+Facility Revenue Collection Rate December 2025 Henry Hudson Bridge 93.7% Hugh L. Carey Tunnel 94.5% Queens Midtown Tunnel 95.4% Marine Parkway Bridge 94.6% Cross Bay Bridge 92.4% Robert F. Kennedy Bridge 91.8% Verrazzano-Narrows Bridge 91.3% Bronx-Whitestone Bridge 90.9% Throgs Neck Bridge 92.0% All Facilities 92.2%
+```
+
+## Page 9
+
+### [p009_c0001] MTA BRIDGES AND TUNNELS DECEMBER 2025 PRELIMINARY FINANCIAL REPORT TOTAL POSITIONS BY FUNCTION AND DEPARTMENT NON-REIMBURSABLE/REIMBURSABLE and FULL-TIME POSITIONS/FULL-TIME EQUIVALENTS December 2025
+[p009_c0002]
+
+```text
+Department Adopted Budget Final Forecast Actual Variance Explanation of Variances vs Final Forecast vs Adopted Budget Variance vs Final Forecast Administration Executive 17 17 20 (3) (3) 6 Managerial vacancies partially offset by 9 professional overrun Law (1) 5 5 4 1 1 1 Professional vacancy Budget & Finance (2) 12 12 9 3 3 1 Managerial vacancy and 2 Professional vacancies Administration (3) 26 26 24 2 2 2 Professional vacancies EEO - - - - - Total Administration 60 60 57 3 3 Operations ITS & Tolling 63 63 68 (5) (5) 10 Professional overrun partially offset by 5 Managerial vacancies Operations (Non-Security) 54 54 33 21 21 38 Managerial vacancies partially offset by 17 overrun in Professional Total Operations 117 117 101 16 16 Maintenance Maintenance 205 205 194 11 11 9 Managerial and 10 Hourly vacancies partially offset by 8 overrun in Professional Operations - Maintainers 183 183 155 28 28 29 Maintainer vacancies partially offset by 1 overrun in Professional Total Maintenance 388 388 349 39 39 Engineering/Capital Engineering & Construction 97 97 89 8 8 5 Managerial and 3 Professional vacancies Health & Safety 9 9 6 3 3 4 Managerial vacancies partially offset by 1 overrun in Professional Law (1) 6 6 3 3 3 1 Managerial and 2 Professional vacancy Planning & Budget Capital 6 6 5 1 1 Total Engineering/Capital 118 118 103 15 15 Public Safety Operations (Security) 317 268 232 85 36 12 Managerial and 24 Operational Hourly vacancies Internal Security - Operations 45 45 32 13 13 7 Managerial and 6 Professional vacancies Total Public Safety 362 313 264 98 49 Total Positions 1,045 996 874 171 122 Non-Reimbursable 984 924 802 182 122 Reimbursable 61 72 72 (11) - Total Full-Time 1,045 996 874 171 122
+```
+[p009_c0003] _(1) Includes Legal and Procurement staff. (2) Includes Controller and Operating Budget staff. (3) Includes Human Resources, Labor Relations, and Administration staff._
+
+## Page 10
+
+### [p010_c0001] MTA BRIDGES AND TUNNELS DECEMBER 2025 PRELIMINARY FINANCIAL REPORT TOTAL POSITIONS BY FUNCTION AND OCCUPATION FULL-TIME POSITIONS AND FULL-TIME EQUIVALENTS December 2025
+[p010_c0002]
+
+```text
+Adopted Budget Final Forecast Actual Adopted Budget Variance vs Final Forecast Explanation of Variances vs Final Forecast Administration Managers/Supervisors 20 20 13 7 7 6 vacancies in Executive and 1 in Budget & Finance Professional, Technical, Clerical 40 40 44 (4) (4) 2 vacancies in Administration, 2 in Budget & Finance and 1 in Law, partially offset by 9 overrun in Executive Operational Hourlies - - - - - Total Administration 60 60 57 3 3 Operations Managers/Supervisors 62 62 19 43 43 38 vacancies in Operations (Non-Security) and 5 in ITS & Tolling Professional, Technical, Clerical 55 55 82 (27) (27) 17 overrun in Operations (Non-Security) and 10 in ITS & Tolling Operational Hourlies - - - - - Total Operations 117 117 101 16 16 Maintenance Managers/Supervisors 27 27 18 9 9 9 vacancies in Maintenance Professional, Technical, Clerical 11 11 20 (9) (9) 8 overrun in Maintenance and 1 in Operations Operational Hourlies (1) 350 350 311 39 39 29 vacancies in Operations and 10 in Maintenance Total Maintenance 388 388 349 39 39 Engineering/Capital Managers/Supervisors 23 23 12 11 11 5 vacancies in Engineering, 4 in Health & Safety, 1 in Law, and 1 in Planning & Budget Capital Professional, Technical, Clerical 95 95 91 4 4 3 vacancies in Engineering, and 2 in Law, partially offset by 1 overrun in Health & Safety Operational Hourlies - - - - - Total Engineering/Capital 118 118 103 15 15 Public Safety Managers/Supervisors 117 98 79 38 19 7 vacancies in Internal Security and 12 in Operations Professional, Technical, Clerical 36 36 30 6 6 6 vacancies in Internal Security Operational Hourlies (2) 209 179 155 54 24 24 BTO vacancies in Operations Total Public Safety 362 313 264 98 49 Total Positions Managers/Supervisors 249 230 141 108 89 Professional, Technical, Clerical 237 237 267 (30) (30) Operational Hourlies 559 529 466 93 63 Total Positions 1,045 996 874 171 122
+```
+[p010_c0003] _(1) Represents Maintenance personnel. These positions are paid annually, not hourly._
+[p010_c0004] _(2) Represents Bridge and Tunnel Officers performing public safety. These positions are paid annually, not hourly._
+
+## Page 11
+
+### [p011_c0001] BRIDGES AND TUNNELS - NON-REIMBURSABLE OVERTIME
+### [p011_c0002] Overview
+- [p011_c0003] December 2025 year-to-date overtime is higher than the Final Forecast by $2.0 million (6.7%) primarily due to a rise in employee attrition and higher required vacancy coverage. December year-to-date overtime spending was lower than the Adopted Budget by $0.5 million (1.6%) mainly due to higher availability and less coverage for vacancies.
+### [p011_c0004] Agency Detail
+- [p011_c0005] Vacancy/Absentee Coverage remains above the Final Forecast due to increased vacancy rates resulting from a rise in employee attrition, largely due to the Planned Attrition Initiative, without staffing replenishment, along with needed coverage for unplanned absences. B&T's Operations and Maintenance Department Management Team utilizes discretion regarding the use of overtime to cover operationally vital work assignments when applicable. Scheduling strategies remain dynamic with updated schedules developed and implemented as required to ensure delivery of service needs are met. B&T continually reviews the changing environment and prioritizes the need for the use of overtime to ensure the delivery of service to its customers.
+> [p011_c0006] Budget Performance (all dollars in millions) Non-Reimbursable Overtime - YTD December Period Adopted Budget Final Forecast Actual YTD 2019 $27.3 $27.3 $23.9 YTD 2024 $29.2 $31.0 $31.0 YTD 2025 $32.2 $29.7 $31.7 Legend: ■ Adopted Budget ■ Final Forecast ■ Actual
+
+## Page 12
+
+### [p012_c0001] BRIDGES AND TUNNELS - REIMBURSABLE OVERTIME
+### [p012_c0002] Overview
+- [p012_c0003] December 2025 tear-to-date overtime is $0.3 million (24.8%) lower than both the Final Forecast and Adopted Budget largely due to less capital project activities.
+> [p012_c0004] Budget Performance Reimbursable Overtime- YTD December (all dollars in millions) Year Adopted Budget Final Forecast Actual YTD 2019 $2.0 $0.8 $0.8 YTD 2024 $1.0 $1.0 $0.9 YTD 2025 $1.0 $1.0 $0.8

@@ -1,0 +1,59 @@
+{
+  "run_id": "2026-06-10T23-18-20-015Z_1976810-160410d7_ingest_2013-09-24-sbs-utica-cb9",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T04:02:00.321Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "nycdot-utica-cb9-2013-new",
+        "local_observation_id": "entity_nyc_dot_2013_09_24_utica_cb9",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot already matches the canonical registry record entity_nyc-dot (New York City Department of Transportation, agency). The observation is consistent with that record — NYC DOT is described as presenter and lead agency for the Utica Avenue study. No different record is a better match; the observation already resolves to its own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_24_sbs_utica_cb9",
+            "block_id": "p001_c0001",
+            "source_quote": ""
+          },
+          {
+            "source_id": "2013_09_24_sbs_utica_cb9",
+            "block_id": "p002_c0001",
+            "source_quote": ""
+          }
+        ]
+      },
+      {
+        "decision_id": "cb9-brooklyn-utica-2013-new",
+        "local_observation_id": "entity_community_board_9_brooklyn_2013_09_24",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_community-board-9-brooklyn-brt-nostrand already matches the canonical registry record for Brooklyn Community Board 9. The registry record already includes source 2013_09_24_sbs_utica_cb9 and alias entity_community-board-9-brooklyn-2013-09-24 — confirming this observation is already scoped within that record. No different record is a better match.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_24_sbs_utica_cb9",
+            "block_id": "p001_c0004",
+            "source_quote": "Brooklyn CB 9 September 24, 2013"
+          }
+        ]
+      },
+      {
+        "decision_id": "mta-nyct-utica-2013-new",
+        "local_observation_id": "entity_mta_nyct_2013_09_24_utica_cb9",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_mta-nyct already matches the canonical registry record entity_mta-nyct (MTA New York City Transit, agency). The registry record already lists source 2013_09_24_sbs_utica_cb9 and alias entity_mta-nyct-2013-09-24-utica-cb9. The description as partner agency for Transit Signal Priority on Utica Avenue is consistent. No different record is a better match.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_24_sbs_utica_cb9",
+            "block_id": "p017_c0003",
+            "source_quote": "Implement Transit Signal Priority from Kings Highway to Broadway (with NYCT)"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T04-00-53-147Z_2111393-36e45f19_canonicalize_2026-06-10t23-18-20-015z-1976810-160410d7-ingest-2013-09-24-sbs-utica-cb9-entity-identity"
+}

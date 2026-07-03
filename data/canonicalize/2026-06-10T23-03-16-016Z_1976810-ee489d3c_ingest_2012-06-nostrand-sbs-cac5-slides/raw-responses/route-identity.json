@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T23-03-16-016Z_1976810-ee489d3c_ingest_2012-06-nostrand-sbs-cac5-slides",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T02:47:53.093Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "b44-sbs-cac5-2012",
+        "local_observation_id": "route_b44_sbs_2012_06_nostrand_cac5",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_b44-sbs is the existing canonical record for B44 Select Bus Service. The observation confirms the same SBS route (Nostrand/Rogers, Brooklyn, SBS variant) and already resolves to route_b44-sbs. No different target record needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p003_c0002",
+            "source_quote": "B44 Limited becomes SBS, with fewer stops"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p003_c0004",
+            "source_quote": "B44 SBS will operate northbound on Rogers Ave, B44 local remains on New York Ave"
+          }
+        ]
+      },
+      {
+        "decision_id": "b44-local-cac5-2012",
+        "local_observation_id": "route_b44_local_2012_06_nostrand_cac5",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_b44-local is the existing canonical record for B44 Local service. The observation confirms the same local route (Brooklyn, local variant, remains on New York Ave) and already resolves to route_b44-local. No different target record needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p003_c0004",
+            "source_quote": "B44 local remains on New York Ave"
+          },
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p003_c0005",
+            "source_quote": "Both SBS and local service travels south of Ave U to Emmons Ave"
+          }
+        ]
+      },
+      {
+        "decision_id": "b44-limited-cac5-2012",
+        "local_observation_id": "route_b44_limited_2012_06_nostrand_cac5",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_b44-limited is the existing canonical record for B44 Limited service. The observation confirms the same historical limited-stop variant (being replaced by SBS) and already resolves to route_b44-limited. do_not_merge_pairs confirms B44 Limited is distinct from both B44 SBS and B44 Local.",
+        "proposed_relations": [
+          {
+            "relation_kind": "replaced_by",
+            "subject_id": "route_b44-limited",
+            "object_id": "route_b44-sbs",
+            "description": "B44 Limited predecessor replaced by B44 SBS successor per June 2012 CAC5 slides",
+            "evidence_refs": [
+              {
+                "source_id": "2012_06_nostrand_sbs_cac5_slides",
+                "block_id": "p003_c0002",
+                "source_quote": "B44 Limited becomes SBS, with fewer stops"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2012_06_nostrand_sbs_cac5_slides",
+            "block_id": "p003_c0002",
+            "source_quote": "B44 Limited becomes SBS, with fewer stops"
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-46-00-314Z_2111393-39aac6f1_canonicalize_2026-06-10t23-03-16-016z-1976810-ee489d3c-ingest-2012-06-nostrand-sbs-cac5-slides-route-identity"
+}

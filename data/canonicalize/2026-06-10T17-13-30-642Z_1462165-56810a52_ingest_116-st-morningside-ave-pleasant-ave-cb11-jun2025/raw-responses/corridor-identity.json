@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T17-13-30-642Z_1462165-56810a52_ingest_116-st-morningside-ave-pleasant-ave-cb11-jun2025",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-21T15:04:39.580Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "canon-116th-st-cb11-jun2025",
+        "local_observation_id": "corridor_116th_st_study_area_cb11_jun2025",
+        "decision": "new",
+        "rationale": "The observation describes the CB11 116th Street Study Area (116th St between 5th Ave/Madison Ave and FDR, plus Pleasant Av between 116th and 120th). Its base_record_id is corridor_116th-street, and the existing registry record for corridor_116th-street already lists this observation's source_id (116_st_morningside_ave_pleasant_ave_cb11_jun2025) in its source_ids — confirming the observation was previously resolved to this record. No other registry record is a closer match. Per the rule that when the closest match IS the observation's own base_record_id the decision is `new`, no relinking is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p004_c0002",
+            "source_quote": "CB11 Study area: 116 th St. & Pleasant Av. – Total: 1.1 miles"
+          },
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_jun2025",
+            "block_id": "p005_c0002",
+            "source_quote": "CB11 Study Area: 116 th St. b/n 5 th Ave. and FDR, Pleasant Av b/n 116 th and 120 th"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-21T15-03-56-518Z_2836603-e8ca2f2e_canonicalize_2026-06-10t17-13-30-642z-1462165-56810a52-ingest-116-st-morningside-ave-pleasant-ave-cb11-jun2025-corridor-identity"
+}

@@ -1,0 +1,101 @@
+{
+  "run_id": "2026-06-09T14-56-32-078Z_ontology-review",
+  "generated_at": "2026-06-09T14:56:33.716Z",
+  "output_dir": "data/ontology-review",
+  "selected_agents": [
+    "route-service-identity",
+    "project-corridor-spatial",
+    "entity-source-role",
+    "metric-claim-ontology",
+    "relation-ontology",
+    "lifecycle-intervention-taxonomy",
+    "source-gap-resolution"
+  ],
+  "paths": {
+    "latest": "data/ontology-review/latest.json",
+    "candidates_jsonl": "data/ontology-review/candidates.jsonl",
+    "packets_dir": "data/ontology-review/packets",
+    "agents_json": "data/ontology-review/agents.json",
+    "readme": "data/ontology-review/README.md"
+  },
+  "counts": {
+    "agents": 7,
+    "candidates": 49,
+    "canonical_records": 2991,
+    "submissions": 3393,
+    "accepted_submissions": 3265,
+    "rejected_submissions": 128
+  },
+  "agents": [
+    {
+      "agent_id": "route-service-identity",
+      "name": "Route & Service Identity Agent",
+      "candidate_count": 6,
+      "packet_path": "data/ontology-review/packets/route-service-identity.md",
+      "top_categories": {
+        "relation_context_field": 5,
+        "route_variant_merge_conflict": 1
+      }
+    },
+    {
+      "agent_id": "project-corridor-spatial",
+      "name": "Project/Corridor Spatial Identity Agent",
+      "candidate_count": 7,
+      "packet_path": "data/ontology-review/packets/project-corridor-spatial.md",
+      "top_categories": {
+        "relation_context_field": 6,
+        "identity_cluster": 1
+      }
+    },
+    {
+      "agent_id": "entity-source-role",
+      "name": "Entity & Source-Role Agent",
+      "candidate_count": 9,
+      "packet_path": "data/ontology-review/packets/entity-source-role.md",
+      "top_categories": {
+        "relation_context_field": 7,
+        "entity_type_mapping": 1,
+        "source_publisher_role": 1
+      }
+    },
+    {
+      "agent_id": "metric-claim-ontology",
+      "name": "Metric & Claim Ontology Agent",
+      "candidate_count": 7,
+      "packet_path": "data/ontology-review/packets/metric-claim-ontology.md",
+      "top_categories": {
+        "relation_context_field": 7
+      }
+    },
+    {
+      "agent_id": "relation-ontology",
+      "name": "Relation Ontology Agent",
+      "candidate_count": 6,
+      "packet_path": "data/ontology-review/packets/relation-ontology.md",
+      "top_categories": {
+        "relation_context_field": 5,
+        "relation_kind_inventory": 1
+      }
+    },
+    {
+      "agent_id": "lifecycle-intervention-taxonomy",
+      "name": "Lifecycle & Intervention Taxonomy Agent",
+      "candidate_count": 8,
+      "packet_path": "data/ontology-review/packets/lifecycle-intervention-taxonomy.md",
+      "top_categories": {
+        "family_inventory": 4,
+        "raw_lifecycle_field": 4
+      }
+    },
+    {
+      "agent_id": "source-gap-resolution",
+      "name": "Source Gap & Caveat Resolution Agent",
+      "candidate_count": 6,
+      "packet_path": "data/ontology-review/packets/source-gap-resolution.md",
+      "top_categories": {
+        "source_gap_possible_resolution": 5,
+        "source_gap_kind_inventory": 1
+      }
+    }
+  ]
+}

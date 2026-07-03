@@ -1,0 +1,246 @@
+{
+  "run_id": "2026-06-10T22-56-13-279Z_1976810-d212e19e_ingest_20110314-34th-cac4-slides",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T01:35:58.864Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "decision-entity-mta-nyct-20110314",
+        "local_observation_id": "entity_mta_nyct_20110314",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'entity_mta-nyct' already matches the canonical registry record 'entity_mta-nyct', which includes source 20110314_34th_cac4_slides and alias entity_mta-nyct-20110314. The observation already resolves to its canonical record — no link to a different record needed.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p001_c0004",
+            "source_quote": "New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "decision-entity-nyc-dot-20110314",
+        "local_observation_id": "entity_nyc_dot_20110314",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'entity_nyc-dot' already matches the canonical registry record for New York City Department of Transportation, which includes source 20110314_34th_cac4_slides and alias entity_nyc-dot-20110314. The observation already resolves to its canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p001_c0005",
+            "source_quote": "The New York City Department of Transportation (NYC DOT) logo"
+          }
+        ]
+      },
+      {
+        "decision_id": "decision-entity-cb4-manhattan-20110314",
+        "local_observation_id": "entity_cb4_manhattan_20110314",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'entity_manhattan-community-board-4' matches the canonical registry record for Manhattan Community Board 4, which already includes source 20110314_34th_cac4_slides and alias entity_cb4-manhattan-20110314. The observation already resolves to its canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "Meetings with CB4, CB5, & CB6"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_manhattan-community-board-4",
+            "object_id": "entity_community-board-4-manhattan-20110118",
+            "description": "Both represent Manhattan Community Board 4 in the context of the 34th Street Transitway project. entity_community-board-4-manhattan-20110118 is from 20110118_34th_cac_mtg_minutes (covering Eighth to Twelfth Avenues) and entity_manhattan-community-board-4 has the consolidated Manhattan CB4 with source 20110314_34th_cac4_slides.",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p005_c0002",
+                "source_quote": "Meetings with CB4, CB5, & CB6"
+              }
+            ]
+          },
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_manhattan-community-board-4",
+            "object_id": "entity_community-board-4-manhattan-2011",
+            "description": "Both represent Manhattan Community Board 4. entity_community-board-4-manhattan-2011 is from 2011_34th_sbs_comments_on_proposed_design (same 34th Street project context).",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p005_c0002",
+                "source_quote": "Meetings with CB4, CB5, & CB6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "decision-entity-cb5-manhattan-20110314",
+        "local_observation_id": "entity_cb5_manhattan_20110314",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'entity_manhattan-community-board-5' matches the canonical registry record for Manhattan Community Board 5, which already includes source 20110314_34th_cac4_slides and alias entity_cb5-manhattan-20110314. The observation already resolves to its canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "Meetings with CB4, CB5, & CB6"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_manhattan-community-board-5",
+            "object_id": "entity_community-board-5-manhattan-20110118",
+            "description": "Both represent Manhattan Community Board 5 in the 34th Street Transitway project context. entity_community-board-5-manhattan-20110118 is from 20110118_34th_cac_mtg_minutes (covering Lexington to Eighth Avenues).",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p005_c0002",
+                "source_quote": "Meetings with CB4, CB5, & CB6"
+              }
+            ]
+          },
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_manhattan-community-board-5",
+            "object_id": "entity_community-board-5-manhattan-2011",
+            "description": "Both represent Manhattan Community Board 5. entity_community-board-5-manhattan-2011 is from 2011_34th_sbs_comments_on_proposed_design (same 34th Street project context).",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p005_c0002",
+                "source_quote": "Meetings with CB4, CB5, & CB6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "decision-entity-cb6-manhattan-20110314",
+        "local_observation_id": "entity_cb6_manhattan_20110314",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'entity_manhattan-community-board-6' matches the canonical registry record for Manhattan Community Board 6, which already includes source 20110314_34th_cac4_slides and alias entity_cb6-manhattan-20110314. The observation already resolves to its canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "Meetings with CB4, CB5, & CB6"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_manhattan-community-board-6",
+            "object_id": "entity_community-board-6-manhattan-2011",
+            "description": "Both represent Manhattan Community Board 6. entity_community-board-6-manhattan-2011 is from 2011_34th_sbs_comments_on_proposed_design (same 34th Street project context).",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p005_c0002",
+                "source_quote": "Meetings with CB4, CB5, & CB6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "decision-empire-state-building-20110314",
+        "local_observation_id": "entity_empire_state_building_20110314",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'entity_empire-state-building-20110314' matches the canonical registry record, which already has source 20110314_34th_cac4_slides and alias entity_empire-state-building. The observation already resolves to its canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "NYU, Empire State Building, Javits Center, 34 th St Partnership, Murray Hill Neighborhood Association, and property owners"
+          }
+        ]
+      },
+      {
+        "decision_id": "decision-javits-center-20110314",
+        "local_observation_id": "entity_javits_center_20110314",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'entity_javits-center-20110314' matches the canonical registry record, which already has source 20110314_34th_cac4_slides and alias entity_javits-center. The observation already resolves to its canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "NYU, Empire State Building, Javits Center, 34 th St Partnership, Murray Hill Neighborhood Association, and property owners"
+          }
+        ]
+      },
+      {
+        "decision_id": "decision-34th-st-partnership-20110314",
+        "local_observation_id": "entity_34th_st_partnership_20110314",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'entity_34th-st-partnership-20110314' matches the canonical registry record from source 20110314_34th_cac4_slides. The observation already resolves to its canonical record. Note: a separate registry record entity_34th-st-partnership-201103 also exists for the same 34th Street Partnership from a different source; proposed same_as relation below.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "NYU, Empire State Building, Javits Center, 34 th St Partnership, Murray Hill Neighborhood Association, and property owners"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_34th-st-partnership-20110314",
+            "object_id": "entity_34th-st-partnership-201103",
+            "description": "Both records represent the 34th Street Partnership, a business improvement district along 34th Street. entity_34th-st-partnership-20110314 is from the March 14, 2011 CAC slides; entity_34th-st-partnership-201103 is from the March 2011 CAC summary. Same entity_name, same organization, same project context.",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p005_c0002",
+                "source_quote": "NYU, Empire State Building, Javits Center, 34 th St Partnership, Murray Hill Neighborhood Association, and property owners"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "decision-murray-hill-neighborhood-assn-20110314",
+        "local_observation_id": "entity_murray_hill_neighborhood_assn_20110314",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'entity_murray-hill-neighborhood-assn-20110314' matches the canonical registry record from source 20110314_34th_cac4_slides. The observation already resolves to its canonical record. A separate registry record entity_murray-hill-neighborhood-association exists for the same organization; proposed same_as relation below.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "NYU, Empire State Building, Javits Center, 34 th St Partnership, Murray Hill Neighborhood Association, and property owners"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "entity_murray-hill-neighborhood-assn-20110314",
+            "object_id": "entity_murray-hill-neighborhood-association",
+            "description": "Both records represent the Murray Hill Neighborhood Association. entity_murray-hill-neighborhood-association is from the earlier 34th Street Transitway presentation to CB5 (100503_brt_cb5_34th_street_transitway); entity_murray-hill-neighborhood-assn-20110314 is from the March 2011 CAC slides. Same entity_name, same Manhattan neighborhood, same 34th Street project context.",
+            "evidence_refs": [
+              {
+                "source_id": "20110314_34th_cac4_slides",
+                "block_id": "p005_c0002",
+                "source_quote": "NYU, Empire State Building, Javits Center, 34 th St Partnership, Murray Hill Neighborhood Association, and property owners"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "decision_id": "decision-nyu-20110314",
+        "local_observation_id": "entity_nyu_20110314",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'entity_nyu-20110314' matches the canonical registry record, which already has source 20110314_34th_cac4_slides and aliases entity_new-york-university and entity_nyu. The observation already resolves to its canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "20110314_34th_cac4_slides",
+            "block_id": "p005_c0002",
+            "source_quote": "NYU, Empire State Building, Javits Center, 34 th St Partnership, Murray Hill Neighborhood Association, and property owners"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-26-39-809Z_2111393-04465267_canonicalize_2026-06-10t22-56-13-279z-1976810-d212e19e-ingest-20110314-34th-cac4-slides-entity-identity"
+}

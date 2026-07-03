@@ -1,0 +1,62 @@
+{
+  "review_run_id": "2026-06-08T21-05-06-612Z_identity-review-run",
+  "reviewed_at": "2026-06-08T21:11:00.159Z",
+  "packet_path": "data/identity-review/packets/corridor_cluster_011.md",
+  "cluster_id": "corridor_cluster_011",
+  "kind": "corridor",
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "suggestion": {
+    "cluster_id": "corridor_cluster_011",
+    "kind": "corridor",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "corridor_washington-bridge",
+          "corridor_washington-bridge-181st"
+        ],
+        "reason": "The records have different corridor limits: Washington Bridge alone runs from Amsterdam Avenue to University Avenue, while Washington Bridge and West 181 Street runs University Avenue to Broadway. These are partially overlapping but distinct segments, and the corridor_name differs (Washington Bridge vs Washington Bridge and West 181 Street). The shared street 'Washington Bridge' is a weak overlap; the different or partially different limits negative signal is decisive."
+      }
+    ],
+    "weak_aliases": [
+      {
+        "record_id": "corridor_washington-bridge",
+        "aliases": [],
+        "reason": "No weak aliases identified beyond the record's own display_name and identity keys."
+      },
+      {
+        "record_id": "corridor_washington-bridge-181st",
+        "aliases": [
+          "corridor_washington-bridge-and-west-181-st",
+          "corridor_washington-bridge-and-west-181-st-corridor",
+          "Washington Bridge and West 181 Street (University Avenue to Broadway) - Corridor length: 0.8 miles. Routes served: Bx3, Bx11, Bx13, Bx35, Bx36. Combined daily route ridership: 73,000."
+        ],
+        "reason": "These aliases are useful for search but do not change the identity boundaries."
+      }
+    ],
+    "missing_fields": [
+      {
+        "record_id": "corridor_washington-bridge",
+        "fields": [
+          "borough"
+        ]
+      },
+      {
+        "record_id": "corridor_washington-bridge-181st",
+        "fields": [
+          "borough"
+        ]
+      }
+    ],
+    "ambiguous": [],
+    "suggested_rules": [
+      "For corridors, do not merge records that share only a street name when their stated limits (from/to) are different and the corridor display names differ, unless evidence clearly shows the same contiguous segment is being described with different phrasings."
+    ],
+    "confidence": "high",
+    "rationale": "Both records share the same routes (Bx3, Bx11, Bx13, Bx35, Bx36) and both reference Washington Bridge, but decisive negative signal 'different or partially different limits' shows corridor_washington-bridge runs Amsterdam Avenue to University Avenue while corridor_washington-bridge-181st runs University Avenue to Broadway. The corridor names are also distinct. These are related but distinct corridor segments, not a single canonical identity."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-08T21-10-41-554Z_3449211-72e5ccec_identity-review-run_corridor-cluster-011",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T21-10-41-554Z_2026-06-08T21-10-41-554Z_3449211-72e5ccec_identity-review-run_corridor-cluster-011.jsonl"
+}

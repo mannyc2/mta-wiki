@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-08T22-46-12-184Z_schema-proposal-run",
+  "generated_at": "2026-06-08T22:46:12.184Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "concurrency": 3,
+  "audit_manifest": "data/identity-review/schema-audit/latest.json",
+  "kind_count": 1,
+  "completed": 1,
+  "skipped": 0,
+  "failed": 0,
+  "invalid": 0,
+  "paths": {
+    "proposals_dir": "data/identity-review/llm-suggestions/schema-proposals",
+    "runs_dir": "data/identity-review/llm-suggestions/schema-proposals/runs",
+    "manifest": "data/identity-review/llm-suggestions/schema-proposals/runs/2026-06-08T22-46-12-184Z_schema-proposal-run.json",
+    "latest": "data/identity-review/llm-suggestions/schema-proposals/runs/latest.json"
+  },
+  "results": [
+    {
+      "observation_kind": "project",
+      "proposal_path": "data/identity-review/llm-suggestions/schema-proposals/project.json",
+      "status": "completed",
+      "valid": true,
+      "schema_issues": [],
+      "warnings": [],
+      "transcript_dir": "data/transcripts/runs/2026-06-08T22-46-12-184Z_3545472-d0817937_schema-proposal-run_project",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-08T22-46-12-185Z_2026-06-08T22-46-12-184Z_3545472-d0817937_schema-proposal-run_project.jsonl"
+    }
+  ]
+}

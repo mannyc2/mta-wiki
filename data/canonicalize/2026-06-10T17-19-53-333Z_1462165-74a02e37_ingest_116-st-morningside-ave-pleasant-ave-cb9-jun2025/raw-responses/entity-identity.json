@@ -1,0 +1,67 @@
+{
+  "run_id": "2026-06-10T17-19-53-333Z_1462165-74a02e37_ingest_116-st-morningside-ave-pleasant-ave-cb9-jun2025",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-21T15:06:01.125Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d-1-nyc-dot-new",
+        "local_observation_id": "entity_nyc_dot_cb9_jun2025",
+        "decision": "new",
+        "rationale": "Observation already resolves to its base_record_id entity_nyc-dot. The registry card matches: entity_name 'New York City Department of Transportation', entity_type 'agency'. No different record is a better match.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb9_jun2025",
+            "block_id": "p001_c0007",
+            "source_quote": "The New York City Department of Transportation (NYC DOT) logo"
+          }
+        ]
+      },
+      {
+        "decision_id": "d-2-mta-nyct-new",
+        "local_observation_id": "entity_mta_cb9_jun2025",
+        "decision": "new",
+        "rationale": "Observation already resolves to its base_record_id entity_mta-nyct. The observation entity_type 'agency' matches entity_mta-nyct (agency), not entity_mta-entity-update-2025 (transit_authority). do_not_merge_pairs confirm parent MTA ≠ NYCT subsidiary.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb9_jun2025",
+            "block_id": "p001_c0005",
+            "source_quote": "The MTA logo, consisting of the letters 'MTA' in white inside a black circle."
+          }
+        ]
+      },
+      {
+        "decision_id": "d-3-cb9-manhattan-new",
+        "local_observation_id": "entity_community_board_9_manhattan_cb9_jun2025",
+        "decision": "new",
+        "rationale": "Observation already resolves to its base_record_id entity_community-board-9-manhattan. Other CB9 registry cards are for Brooklyn and Queens boroughs—distinct entities.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb9_jun2025",
+            "block_id": "p001_c0002",
+            "source_quote": "CB9's Uniform Services & Transportation Committee"
+          }
+        ]
+      },
+      {
+        "decision_id": "d-4-betterbuses-new",
+        "local_observation_id": "entity_betterbuses_cb9_jun2025",
+        "decision": "new",
+        "rationale": "Observation already resolves to its base_record_id entity_betterbuses-program-mar2025. Both share entity_name 'BETTERBUSES' and entity_type 'program'. The registry card already lists this source_id and has entity_betterbuses-cb9-jun2025 as an alias.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb9_jun2025",
+            "block_id": "p001_c0006",
+            "source_quote": "BETTER BUSES"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-21T15-04-01-764Z_2836603-9273a0e3_canonicalize_2026-06-10t17-19-53-333z-1462165-74a02e37-ingest-116-st-morningside-ave-pleasant-ave-cb9-jun2025-entity-identity"
+}

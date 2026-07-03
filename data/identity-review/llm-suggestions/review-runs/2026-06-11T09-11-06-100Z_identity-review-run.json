@@ -1,0 +1,30 @@
+{
+  "run_id": "2026-06-11T09-11-06-100Z_identity-review-run",
+  "generated_at": "2026-06-11T09:11:06.100Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-flash",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "concurrency": 1,
+  "packet_count": 1,
+  "completed": 1,
+  "skipped": 0,
+  "failed": 0,
+  "paths": {
+    "suggestions_dir": "data/identity-review/llm-suggestions",
+    "review_runs_dir": "data/identity-review/llm-suggestions/review-runs",
+    "manifest": "data/identity-review/llm-suggestions/review-runs/2026-06-11T09-11-06-100Z_identity-review-run.json",
+    "latest": "data/identity-review/llm-suggestions/review-runs/latest.json"
+  },
+  "results": [
+    {
+      "cluster_id": "corridor_cluster_10a61c45f9",
+      "packet_path": "data/identity-review/packets/corridor_cluster_10a61c45f9.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_10a61c45f9.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T09-11-06-101Z_2585566-e2369e76_identity-review-run_corridor-cluster-10a61c45f9",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T09-11-06-102Z_2026-06-11T09-11-06-101Z_2585566-e2369e76_identity-review-run_corridor-cluster-10a61c45f9.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    }
+  ]
+}

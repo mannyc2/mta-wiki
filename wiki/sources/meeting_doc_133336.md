@@ -1,0 +1,297 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-133336"
+record_kind: "source"
+display_name: "MTA Metro-North Railroad February Financial Plan for 2024-2027"
+source_id: "meeting_doc_133336"
+source_ids:
+  - "meeting_doc_133336"
+local_observation_id: "source_mnr_feb_financial_plan_2024_2027"
+local_observation_ids:
+  - "source_mnr_feb_financial_plan_2024_2027"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T14:50:31.200Z"
+raw_text: "MTA METRO-NORTH RAILROAD FEBRUARY FINANCIAL PLAN FOR 2024-2027 2023 FINAL ESTIMATE AND 2024 ADOPTED BUDGET"
+submission_ids:
+  - "sub_18c830310eacf953"
+payload:
+  authority_tier: "plan_document"
+  content_type: "financial plan"
+  date_text: "February 2024"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2024-02"
+    precision: "month"
+    raw_text: "February 2024"
+  published_date_normalized: "2024-02"
+  published_date_precision: "month"
+  publisher: "MTA Metro-North Railroad"
+  title: "MTA METRO-NORTH RAILROAD FEBRUARY FINANCIAL PLAN FOR 2024-2027 2023 FINAL ESTIMATE AND 2024 ADOPTED BUDGET"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_133336#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_133336"
+    source_path: "raw/sources/meeting_doc_133336/blocks.jsonl"
+    text_sha256: "sha256:6ddd108cec5f7e4c55d6c8547fd2fa5be4f5bc349a44621598d0fca22ef8a009"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_133336#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_133336"
+    source_path: "raw/sources/meeting_doc_133336/blocks.jsonl"
+    text_sha256: "sha256:254b9cd34aa18ac0fbf70f767820b7508ece2929f6907a1ced1ca175001dbe42"
+    text_source: "raw_text"
+---
+
+# 2024-2027 Adopted budget and financial plan
+
+source_id: meeting_doc_133336
+citation: cite block ids exactly as shown in square brackets
+document: 71 block(s)
+
+## Page 1
+
+### [p001_c0001] MTA METRO-NORTH RAILROAD FEBRUARY FINANCIAL PLAN FOR 2024-2027 2023 FINAL ESTIMATE AND 2024 ADOPTED BUDGET
+[p001_c0002] In accordance with MTA-approved budget procedures, the following information presents MTA Metro-North Railroad's (Metro-North) 2023 Final Estimate, 2024 Adopted Budget, and the Financial Plan for 2024-2027. Financials are unchanged from the November Plan, which was adopted by the MTA Board in December 2023. Minor technical adjustments of a non-financial nature have been incorporated into this Plan.
+[p001_c0003] Also included are schedules detailing the monthly allocation of financials, headcount, and utilization based on the 2024 Adopted Budget for the purpose of reporting actual results to the MTA Board.
+
+## Page 2
+
+### [p002_c0001] MTA METRO-NORTH RAILROAD February Financial Plan 2024-2027 Reconciliation to the November Plan (Accrual) Non-Reimbursable ($ in millions)
+[p002_c0002]
+
+```text
+2023 2024 Favorable/(Unfavorable) 2025 2026 2027 Positions Dollars Positions Dollars Positions Dollars Positions Dollars Positions Dollars
+```
+[p002_c0003]
+
+```text
+2023 November Financial Plan: Net Surplus/(Deficit) 5,841 ($1,405,173) 5,932 ($1,388,454) 6,194 ($1,500,312) 6,321 ($1,546,692) 6,377 ($1,615,391)
+```
+### [p002_c0004] Technical Adjustments:
+[p002_c0005]
+
+```text
+Sub-Total Technical Adjustments 0 $0,000 0 $0,000 0 $0,000 0 $0,000 0 $0,000
+```
+### [p002_c0006] MTA Plan Adjustments:
+[p002_c0007] MTA Policy Actions:
+[p002_c0008] MTA Re-estimates:
+[p002_c0009] Other:
+[p002_c0010]
+
+```text
+Sub-Total MTA Plan Adjustments 0 $0,000 0 $0,000 0 $0,000 0 $0,000 0 $0,000 2024 February Financial Plan: Net Surplus/(Deficit) 5,841 ($1,405,173) 5,932 ($1,388,454) 6,194 ($1,500,312) 6,321 ($1,546,692) 6,377 ($1,615,391)
+```
+
+## Page 3
+
+### [p003_c0001] MTA METRO NORTH RAILROAD February Financial Plan 2024-2027 Reconciliation to the November Plan (Accrual) Reimbursable ($ in millions)
+[p003_c0002]
+
+```text
+Favorable/(Unfavorable) 2023 2024 2025 2026 2027 Positions Dollars Positions Dollars Positions Dollars Positions Dollars Positions Dollars
+```
+[p003_c0003]
+
+```text
+2023 November Financial Plan: Net Surplus/(Deficit) 647 $ 0.000 772 $ 0.000 738 $ 0.000 806 $ 0.000 750 $ 0.000
+```
+### [p003_c0004] Technical Adjustments:
+[p003_c0005]
+
+```text
+Sub-Total Technical Adjustments 0 $ 0.000 0 $ 0.000 0 $ 0.000 0 $ 0.000 0 $ 0.000
+```
+### [p003_c0006] MTA Plan Adjustments:
+[p003_c0007] MTA Policy Actions:
+[p003_c0008] MTA Re-estimates:
+[p003_c0009] Other:
+[p003_c0010]
+
+```text
+Sub-Total MTA Plan Adjustments 0 $ 0.000 0 $ 0.000 0 $ 0.000 0 $ 0.000 0 $ 0.000
+```
+[p003_c0011]
+
+```text
+2024 February Financial Plan: Net Surplus/(Deficit) 647 $ 0.000 772 $ 0.000 738 $ 0.000 806 $ 0.000 750 $ 0.000
+```
+
+## Page 4
+
+### [p004_c0001] MTA METRO-NORTH RAILROAD February Financial Plan 2024-2027 Reconciliation to the November Plan - (Cash) ($ in millions)
+[p004_c0002]
+
+```text
+Favorable/(Unfavorable) 2023 2024 2025 2026 Positions Dollars Positions Dollars Positions Dollars Positions Dollars 2023 November Financial Plan: Net Cash Surplus/(Deficit) 6,488 ($912,889) 6,704 ($1,021,144) 6,932 ($946,477) 7,127 ($1,148,929)
+```
+### [p004_c0003] Technical Adjustments:
+[p004_c0004]
+
+```text
+Sub-Total Technical Adjustments 0 $0,000 0 $0,000 0 $0,000 0 $0,000
+```
+### [p004_c0005] MTA Plan Adjustments:
+[p004_c0006] MTA Policy Actions:
+[p004_c0007] MTA Re-estimates:
+[p004_c0008] Other:
+[p004_c0009]
+
+```text
+Sub-Total MTA Plan Adjustments 0 $0,000 0 $0,000 0 $0,000 0 $0,000 2024 February Financial Plan: Net Cash Surplus/(Deficit) 6,488 ($912,889) 6,704 ($1,021,144) 6,932 ($946,477) 7,127 ($1,148,929)
+```
+
+## Page 5
+
+### [p005_c0001] MTA METRO-NORTH RAILROAD February Financial Plan 2024 - 2027 Accrual Statement of Operations By Category ($ in millions)
+[p005_c0002]
+
+```text
+Final Estimate 2023 Adopted Budget 2024 2025 2026 2027 Non-Reimbursable Operating Revenue Farebox Revenue $538.462 $556.228 $563.994 $571.758 $580.913 Other Operating Revenue 63.523 35.811 42.825 47.279 57.420 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 Total Revenues $601.985 $592.039 $606.819 $619.036 $638.332 Operating Expense Labor: Payroll $602.166 $595.595 $629.306 $666.393 $687.602 Overtime 94.728 88.767 89.550 92.118 93.960 Health and Welfare 141.665 153.697 166.876 180.857 193.128 OPEB Current Payments 49.000 50.000 51.000 52.000 53.000 Pension 129.738 120.792 142.162 146.228 147.558 Other Fringe Benefits 143.160 142.012 148.417 155.765 160.273 Reimbursable Overhead (76.192) (94.747) (100.206) (107.800) (104.755) Total Labor Expenses $1,084.265 $1,056.116 $1,127.106 $1,185.561 $1,230.765 Non-Labor: Electric Power $92.027 $106.144 $108.032 $107.987 $108.625 Fuel 26.479 25.458 22.924 21.685 21.834 Insurance 19.010 23.035 25.544 28.813 32.530 Claims 1.000 1.000 1.000 1.000 1.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 122.582 119.582 121.171 119.750 121.424 Professional Services Contracts 47.061 45.783 48.767 44.776 43.607 Materials and Supplies 101.665 115.653 144.396 157.270 164.298 Other Business Expenses 26.424 23.355 24.001 25.102 25.734 Total Non-Labor Expenses $436.249 $460.011 $495.835 $506.382 $519.051 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $1,520.514 $1,516.127 $1,622.941 $1,691.943 $1,749.816 Depreciation $306.305 $298.333 $301.785 $306.369 $315.867 GASB 68 Pension Expense Adjustment 66.010 48.000 60.600 41.430 57.720 GASB 75 OPEB Expense Adjustment 116.518 120.222 123.993 128.176 132.509 GASB 87 Lease Adjustment (6.189) (6.189) (6.189) (6.189) (6.189) Environmental Remediation 4.000 4.000 4.000 4.000 4.000 Total Expenses $2,007.158 $1,980.493 $2,107.131 $2,165.729 $2,253.723 Net Surplus/(Deficit) ($1,405.173) ($1,388.454) ($1,500.312) ($1,546.692) ($1,615.391) Cash Conversion Adjustments Depreciation $306.305 $298.333 $301.785 $306.369 $315.867 Operating/Capital (32.474) (37.019) (33.684) (42.619) (33.538) Other Cash Adjustments 218.453 105.995 285.734 134.014 176.841 Total Cash Conversion Adjustments $492.284 $367.310 $553.835 $397.764 $459.170 Net Cash Surplus/(Deficit) ($912.889) ($1,021.144) ($946.477) ($1,148.929) ($1,156.221)
+```
+
+## Page 6
+
+### [p006_c0001] MTA METRO-NORTH RAILROAD February Financial Plan 2024 - 2027 Accrual Statement of Operations By Category ($ in millions)
+[p006_c0002]
+
+```text
+Final Estimate 2023 Adopted Budget 2024 2025 2026 2027 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 MNR - MTA 125.821 158.683 161.875 178.973 161.749 MNR - CDOT 120.119 104.129 117.324 131.789 131.007 MNR - Other 16.699 27.177 23.580 22.045 21.689 Capital and Other Reimbursements 262.639 289.989 302.779 332.808 314.445 Total Revenues $262.639 $289.989 $302.779 $332.808 $314.445 Operating Expense Labor: Payroll $47.240 $66.694 $70.694 $77.918 $77.133 Overtime 30.049 35.982 36.567 38.324 38.676 Health and Welfare 20.986 27.693 29.200 31.807 31.815 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 Pension 13.206 17.379 18.205 19.807 19.686 Other Fringe Benefits 13.945 18.261 19.156 20.855 20.755 Reimbursable Overhead 76.858 94.508 99.947 107.532 104.481 Total Labor Expenses $202.284 $260.517 $273.769 $296.243 $292.545 Non-Labor: Electric Power $0.017 $0.000 $0.000 $0.000 $0.000 Fuel 0.000 0.000 0.000 0.000 0.000 Insurance 1.090 0.652 0.737 0.820 0.844 Claims 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 23.285 9.635 6.169 4.625 4.110 Professional Services Contracts 11.026 3.947 8.254 16.388 4.169 Materials and Supplies 24.809 15.237 13.850 14.732 12.775 Other Business Expenses 0.128 0.000 0.000 0.000 0.000 Total Non-Labor Expenses $60.355 $29.471 $29.010 $36.564 $21.899 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $262.639 $289.989 $302.779 $332.808 $314.445 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000
+```
+
+## Page 7
+
+### [p007_c0001] MTA METRO-NORTH RAILROAD February Financial Plan 2024 - 2027 Accrual Statement of Operations By Category ($ in millions)
+[p007_c0002]
+
+```text
+Final Estimate 2023 Adopted Budget 2024 2025 2026 2027 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue $538.462 $556.228 $563.994 $571.758 $580.913 Other Operating Revenue 63.523 35.811 42.825 47.279 57.420 MNR - MTA 125.821 158.683 161.875 178.973 161.749 MNR - CDOT 120.119 104.129 117.324 131.789 131.007 MNR - Other 16.699 27.177 23.580 22.045 21.689 Capital and Other Reimbursements 262.639 289.989 302.779 332.808 314.445 Total Revenues $864.624 $882.028 $909.598 $951.844 $952.777 Operating Expense Labor: Payroll $649.405 $662.290 $700.000 $744.311 $764.734 Overtime 124.777 124.748 126.117 130.442 132.635 Health and Welfare 162.651 181.390 196.077 212.664 224.943 OPEB Current Payments 49.000 50.000 51.000 52.000 53.000 Pension 142.944 138.171 160.367 166.035 167.243 Other Fringe Benefits 157.105 160.273 167.572 176.621 181.028 Reimbursable Overhead 0.666 (0.239) (0.258) (0.268) (0.274) Total Labor Expenses $1,286.549 $1,316.633 $1,400.875 $1,481.804 $1,523.311 Non-Labor: Electric Power $92.043 $106.144 $108.032 $107.987 $108.625 Fuel 26.479 25.458 22.924 21.685 21.834 Insurance 20.100 23.688 26.281 29.633 33.374 Claims 1.000 1.000 1.000 1.000 1.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 145.868 129.217 127.340 124.375 125.535 Professional Services Contracts 58.087 49.730 57.021 61.164 47.776 Materials and Supplies 126.474 130.890 158.246 172.002 177.073 Other Business Expenses 26.552 23.355 24.001 25.102 25.734 Total Non-Labor Expenses $496.604 $489.482 $524.845 $542.947 $540.950 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $1,783.153 $1,806.115 $1,925.720 $2,024.751 $2,064.261 Depreciation $306.305 $298.333 $301.785 $306.369 $315.867 GASB 68 Pension Expense Adjustment 66.010 48.000 60.600 41.430 57.720 GASB 75 OPEB Expense Adjustment 116.518 120.222 123.993 128.176 132.509 GASB 87 Lease Adjustment (6.189) (6.189) (6.189) (6.189) (6.189) Environmental Remediation 4.000 4.000 4.000 4.000 4.000 Total Expenses $2,269.797 $2,270.482 $2,409.910 $2,498.536 $2,568.168 Net Surplus/(Deficit) ($1,405.173) ($1,388.454) ($1,500.312) ($1,546.692) ($1,615.391) Cash Conversion Adjustments Depreciation $306.305 $298.333 $301.785 $306.369 $315.867 Operating/Capital (32.474) (37.019) (33.684) (42.619) (33.538) Other Cash Adjustments 218.453 105.995 285.734 134.014 176.841 Total Cash Conversion Adjustments $492.284 $367.310 $553.835 $397.764 $459.170 Net Cash Surplus/(Deficit) ($912.889) ($1,021.144) ($946.477) ($1,148.929) ($1,156.221)
+```
+
+## Page 8
+
+### [p008_c0001] MTA METRO-NORTH RAILROAD February Financial Plan 2024 - 2027 Cash Receipts and Expenditures ($ in millions)
+[p008_c0002]
+
+```text
+Final Estimate 2023 Adopted Budget 2024 2025 2026 2027 Cash Receipts and Expenditures Receipts Farebox Revenue $520.578 $536.025 $543.190 $550.419 $558.982 Other Operating Revenue 345.056 73.437 81.428 87.363 98.166 MNR - MTA 125.821 158.683 161.875 178.973 161.749 MNR - CDOT 120.119 104.129 117.324 131.789 131.007 MNR - Other 16.699 27.177 23.580 22.045 21.689 Capital and Other Reimbursements 262.639 289.989 302.779 332.808 314.445 Total Receipts $1,128.273 $899.450 $927.397 $970.590 $971.593 Expenditures Labor: Payroll $639.032 $697.287 $689.899 $748.384 $753.344 Overtime 129.363 131.221 125.598 132.927 132.622 Health and Welfare 178.057 193.216 208.138 225.094 237.435 OPEB Current Payments 49.000 50.000 51.000 52.000 53.000 Pension 278.815 120.225 37.185 166.095 167.305 Other Fringe Benefits 152.148 165.178 162.135 174.824 175.517 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $1,426.416 $1,357.126 $1,273.955 $1,499.323 $1,519.223 Non-Labor: Electric Power $94.703 $108.519 $110.401 $108.553 $108.830 Fuel 26.479 25.458 22.924 21.685 21.834 Insurance 32.086 23.837 27.273 29.895 33.624 Claims 1.146 1.146 1.146 1.146 1.146 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 178.841 146.970 152.976 144.374 136.466 Professional Services Contracts 103.708 54.173 61.741 65.887 51.804 Materials and Supplies 121.146 154.422 172.109 175.602 180.252 Other Business Expenses 56.636 48.943 51.351 73.054 74.634 Total Non-Labor Expenditures $614.746 $563.467 $599.920 $620.196 $608.590 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 Cash Timing and Availability Adjustment 0.000 0.000 0.000 0.000 0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $2,041.162 $1,920.594 $1,873.874 $2,119.519 $2,127.813 Net Cash Surplus/(Deficit) ($912.889) ($1,021.144) ($946.477) ($1,148.929) ($1,156.221) Subsidies MTA $648.817 $753.608 $653.668 $843.041 $839.666 CDOT 264.072 267.536 292.809 305.888 316.554 Total Subsidies $912.889 $1,021.144 $946.477 $1,148.929 $1,156.221
+```
+
+## Page 9
+
+### [p009_c0001] MTA METRO-NORTH RAILROAD February Financial Plan 2024 - 2027 Cash Conversion (Cash Flow Adjustments) Favorable/(Unfavorable) ($ in millions)
+[p009_c0002]
+
+```text
+Final Estimate 2023 Adopted Budget 2024 2025 2026 2027 Cash Flow Adjustments Receipts Farebox Revenue ($17.884) ($20.203) ($20.804) ($21.338) ($21.930) Other Operating Revenue 281.533 37.625 38.604 40.084 40.746 MNR - MTA 0.000 0.000 0.000 0.000 0.000 MNR - CDOT 0.000 0.000 0.000 0.000 0.000 MNR - Other 0.000 0.000 0.000 0.000 0.000 Total Capital and Other Reimbursements $0.000 $0.000 $0.000 $0.000 $0.000 Total Receipts $263.649 $17.422 $17.799 $18.746 $18.816 Expenditures Labor: Payroll $10.373 ($34.997) $10.101 ($4.073) $11.391 Overtime (4.586) (6.473) 0.519 (2.485) 0.014 Health and Welfare (15.406) (11.825) (12.061) (12.430) (12.492) OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 Pension (135.871) 17.946 123.182 (0.060) (0.062) Other Fringe Benefits 4.956 (4.905) 5.437 1.797 5.510 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.666 (0.239) (0.258) (0.268) (0.274) Total Labor Expenditures ($139.867) ($40.493) $126.920 ($17.519) $4.088 Non-Labor: Electric Power ($2.659) (2.375) ($2.368) ($0.566) ($0.205) Fuel 0.000 0.000 0.000 0.000 0.000 Insurance (11.986) (0.149) (0.992) (0.262) (0.250) Claims (0.146) (0.146) (0.146) (0.146) (0.146) Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts (32.973) (17.753) (25.637) (19.999) (10.932) Professional Services Contracts (45.620) (4.443) (4.720) (4.723) (4.028) Materials and Supplies 5.328 (23.532) (13.863) (3.600) (3.179) Other Business Expenses (30.084) (25.588) (27.350) (47.953) (48.900) Total Non-Labor Expenditures ($118.142) ($73.985) ($75.074) ($77.249) ($67.640) Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures ($258.009) ($114.478) $51.846 ($94.768) ($63.553) Total Cash Conversion Adjustments before Depreciation $5.640 ($97.057) $69.645 ($76.022) ($44.737) Depreciation $306.305 $298.333 $301.785 $306.369 $315.867 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 66.010 48.000 60.600 41.430 57.720 GASB 75 OPEB Expense Adjustment 116.518 120.222 123.993 128.176 132.509 GASB 87 Lease Adjustment (6.189) (6.189) (6.189) (6.189) (6.189) Environmental Remediation 4.000 4.000 4.000 4.000 4.000 Total Cash Conversion Adjustments $492.284 $367.310 $553.835 $397.764 $459.170
+```
+
+## Page 10
+
+### [p010_c0001] MTA METRO-NORTH RAILROAD February Financial Plan 2024 - 2027 Ridership (Utilization) and Revenue (in millions)
+[p010_c0002]
+
+```text
+Final Estimate 2023 Adopted Budget 2024 2025 2026 2027 RIDERSHIP Harlem Line Ridership - Commutation 7.472 6.852 6.932 7.025 7.140 Harlem Line Ridership - Non-Commutation 10.650 12.169 12.312 12.477 12.681 Total Harlem Line 18.122 19.021 19.244 19.502 19.821 Hudson Line Ridership - Commutation 4.038 3.604 3.652 3.708 3.769 Hudson Line Ridership - Non-Commutation 7.686 8.431 8.544 8.675 7.999 Total Hudson Line 11.724 12.034 12.196 12.383 11.768 New Haven Line Ridership - Commutation 9.613 8.238 8.346 8.466 8.605 New Haven Line Ridership - Non-Commutation 17.868 19.364 19.618 19.900 20.226 Total New Haven Line 27.481 27.603 27.964 28.366 28.831 Total Commutation Ridership (East of Hudson) 21.124 18.694 18.931 19.200 19.515 Total Non-Commutation Ridership (East of Hudson) 36.203 39.964 40.474 41.051 40.906 Total East of Hudson Ridership 57.327 58.658 59.405 60.251 60.420 West of Hudson Ridership 1.101 1.130 1.151 1.168 1.188 Total Ridership 58.428 59.788 60.556 61.419 61.608 FAREBOX REVENUE Harlem Line - Commutation Revenue 47.621 37.502 38.131 38.534 39.083 Harlem Line - Non-Commutation Revenue 100.478 116.321 117.697 119.290 121.257 Total Harlem Line Revenue $148.099 $153.822 $155.828 $157.824 $160.340 Hudson Line - Commutation Revenue 31.282 24.883 25.347 25.661 26.027 Hudson Line - Non-Commutation Revenue 88.514 96.816 98.130 99.639 101.287 Total Hudson Line Revenue $119.796 $121.699 $123.477 $125.299 $127.314 New Haven Line - Commutation Revenue 64.337 45.779 46.609 47.137 47.802 New Haven Line - Non-Commutation Revenue 194.662 220.855 223.750 226.963 230.686 Total New Haven Line Revenue $258.999 $266.635 $270.359 $274.100 $278.488 Total Commutation Revenue (East of Hudson) $143.240 $108.164 $110.087 $111.331 $112.912 Total Non-Commutation Revenue (East of Hudson) 383.654 433.992 439.577 445.892 453.230 Total East of Hudson Revenue $526.894 $542.156 $549.664 $557.223 $566.142 West of Hudson Revenue $11.568 $14.072 $14.330 $14.535 $14.770 Total Farebox Revenue $538.462 $556.228 $563.994 $571.758 $580.913
+```
+[p010_c0003] Notes: West of Hudson total ridership is both Pascack Valley and Port Jervis lines.
+
+## Page 11
+
+### [p011_c0001] MTA METRO-NORTH RAILROAD February Financial Plan 2024 - 2027 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time/Full-Time Equivalents
+[p011_c0002]
+
+```text
+FUNCTION/DEPARTMENT 2023 Final Estimate 2024 Adopted Budget 2025 2026 2027 Administration President 5 5 5 5 5 Labor Relations 13 13 13 13 13 Safety 93 92 92 92 92 Security 22 22 22 22 22 VP Ops Support and Org Res 28 27 27 27 27 Corporate & Public Affairs 12 12 12 12 12 Customer Service 52 52 52 52 52 Legal 8 8 8 8 8 Claims 5 5 5 5 5 VP Human Resources 34 34 34 34 34 Training 94 97 97 97 97 Employee Relations & Diversity 5 5 5 5 5 Capital Planning & Programming 10 10 10 10 10 Long Range Planning 4 4 4 4 4 Controller 56 56 56 56 56 Budget 14 14 14 14 14 Procurement & Material Management 15 15 15 15 15 Rolling Stock Delivery & Integration 9 9 9 9 9 Total Administration 479 480 480 480 480 Operations Operations Support 66 70 70 70 70 Enterprise Asset Management 23 23 23 23 23 Transportation 1,735 1,799 1,800 1,798 1,798 Customer Service 395 395 395 395 395 Metro-North West 31 31 31 31 31 Corporate 0 0 0 0 0 Total Operations 2,250 2,318 2,319 2,317 2,317 Maintenance Maintenance of Equipment 1,645 1,721 1,721 1,721 1,721 Maintenance of Way 2,227 2,367 2,367 2,367 2,367 Procurement & Material Management 118 118 118 118 118 Corporate (303) (390) (173) 14 14 Total Maintenance 3,687 3,816 4,033 4,220 4,220 Engineering/Capital Construction Management 17 26 27 32 32 Engineering & Design 55 64 73 78 78 Total Engineering/Capital 72 90 100 110 110 Total Positions 6,488 6,704 6,932 7,127 7,127 Non-Reimbursable 5,841 5,932 6,194 6,321 6,377 Reimbursable 647 772 738 806 750 Total Full-Time 6,487 6,703 6,931 7,126 7,126 Total Full-Time-Equivalents 1 1 1 1 1
+```
+
+## Page 12
+
+### [p012_c0001] MTA METRO-NORTH RAILROAD February Financial Plan 2024 - 2027 Total Positions By Function and Occupational Group
+[p012_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Final Estimate Adopted Budget 2023 2024 2025 2026 2027 Administration Managers/Supervisors 167 168 168 168 168 Professional/Technical/Clerical 312 312 312 312 312 Operational Hourlies 0 0 0 0 0 Total Administration Headcount 479 480 480 480 480 Operations Managers/Supervisors 309 312 313 312 312 Professional/Technical/Clerical 238 244 244 243 243 Operational Hourlies 1,703 1,762 1,762 1,762 1,762 Total Operations Headcount 2,250 2,318 2,319 2,317 2,317 Maintenance Managers/Supervisors 730 726 726 726 726 Professional/Technical/Clerical 531 564 564 564 564 Operational Hourlies 2,426 2,526 2,743 2,930 2,930 Total Maintenance Headcount 3,687 3,816 4,033 4,220 4,220 Engineering / Capital Managers/Supervisors 36 40 47 52 52 Professional/Technical/Clerical 36 50 53 58 58 Operational Hourlies 0 0 0 0 0 Total Engineering Headcount 72 90 100 110 110 Public Safety Managers/Supervisors 0 0 0 0 0 Professional, Technical, Clerical 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 Total Public Safety Headcount 0 0 0 0 0 Total Positions Managers/Supervisors 1,242 1,246 1,254 1,258 1,258 Professional, Technical, Clerical 1,117 1,170 1,173 1,177 1,177 Operational Hourlies 4,129 4,288 4,505 4,692 4,692 Total Positions 6,488 6,704 6,932 7,127 7,127
+```
+
+## Page 13
+
+### [p013_c0001] MTA METRO-NORTH RAILROAD February Financial Plan - 2024 Adopted Budget Accrual Statement of Operations By Category
+[p013_c0002]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Total Non-Reimbursable Operating Revenue Farebox Revenue $43,551 $40,730 $44,899 $46,737 $47,501 $47,380 $47,449 $46,464 $46,553 $49,918 $47,394 $47,603 $556,228 Other Operating Revenue 2,976 2,964 2,980 2,987 2,989 2,986 2,989 2,986 2,984 2,988 2,985 2,988 35,811 Total Revenues $46,526 $43,694 $47,879 $49,724 $50,490 $50,366 $50,437 $49,449 $49,536 $52,916 $50,379 $50,592 $592,039 Operating Expenses Labor: Payroll $52,367 $46,146 $47,072 $47,650 $50,641 $44,015 $51,895 $52,198 $47,440 $54,774 $49,896 $51,522 $596,595 Health and Welfare 8,131 7,107 6,810 7,222 7,455 5,999 7,253 7,797 7,822 8,617 5,315 9,038 88,767 OPEB Current Payments 13,784 11,872 11,925 12,301 13,203 10,898 13,545 13,453 12,258 14,323 12,407 13,787 153,997 Pension 10,682 9,335 9,453 9,167 10,258 8,783 10,477 10,642 9,685 11,257 9,653 10,627 120,792 Other Fringe Benefits 12,473 11,375 11,228 11,454 12,031 10,514 12,250 12,335 11,431 12,944 11,367 12,431 142,072 Reimbursable Overhead (6,556) (6,365) (6,646) (7,815) (8,591) (7,102) (7,553) (9,121) (8,850) (10,231) (8,275) (7,285) (94,747) Total Labor Expenses $95,049 $63,580 $94,048 $94,833 $99,004 $77,284 $97,734 $97,460 $83,983 $93,557 $84,924 $94,287 $1,056,716 Non-Labor: Electric Power $9,307 $10,140 $9,422 $8,689 $8,011 $8,589 $9,213 $8,344 $8,605 $7,960 $8,293 $9,571 $106,144 Fuel 2,498 2,231 2,264 1,972 1,956 1,827 2,016 1,963 2,258 2,251 2,083 2,114 25,458 Insurance 1,813 1,813 1,857 1,878 1,950 1,946 1,945 1,970 1,945 1,945 1,945 1,991 23,035 Claims 0.096 0.096 0.096 0.096 0.096 0.096 0.096 0.096 0.096 0.096 0.096 0.096 (0.060) Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 9,770 9,761 10,306 10,237 10,210 10,253 10,057 10,084 10,214 10,097 10,461 8,121 119,582 Professional Services Contracts 3,969 3,608 3,696 3,859 3,810 4,114 3,783 3,642 3,631 3,779 3,771 4,166 45,783 Materials and Supplies 9,270 9,270 9,406 9,574 9,719 9,607 9,783 9,833 9,854 9,752 9,832 9,746 115,653 Other Business Expenses 1,970 1,848 1,982 2,015 2,013 1,165 2,059 2,023 2,033 2,087 2,066 2,093 23,355 Total Non-Labor Expenses $38,701 $38,766 $39,029 $38,319 $37,765 $37,594 $38,907 $37,984 $38,637 $37,967 $38,591 $37,751 $460,011 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses $133,749 $122,346 $123,077 $123,152 $126,928 $114,878 $130,661 $129,444 $122,619 $133,818 $123,516 $132,037 $1,516,127 Depreciation $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $298,333 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 48,000 48,000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 120,222 120,222 GASB 87 Lease Adjustment (0.516) (0.516) (0.516) (0.516) (0.516) (0.516) (0.516) (0.516) (0.516) (0.516) (0.516) (0.516) (6,189) Environmental Remediation 0.333 0.333 0.333 0.333 0.333 0.333 0.333 0.333 0.333 0.333 0.333 0.333 4,000 Total Expenses After Non-Cash Liability Adjs. $158,428 $147,025 $147,756 $147,831 $151,507 $139,556 $155,339 $154,123 $147,298 $158,437 $148,194 $324,938 $1,980,493 Net Surplus/(Deficit) ($111,902) ($103,331) ($99,877) ($98,057) ($101,018) ($89,190) ($104,902) ($104,674) ($97,762) ($105,581) ($97,316) ($274,346) ($1,388,454) Cash Conversion Adjustments: Depreciation $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $298,333 Operating Capital (0.309) (0.385) (0.682) (0.090) (1.594) (0.093) (0.600) (0.309) (1.978) (1.711) (0.172) (0.085) (37,049) Other Cash Adjustments 8,374 (77,676) (77,753) 1,394 (9,458) (34,447) 25,048 5,242 18,637 7,829 15,547 103,157 105,995 Total Cash Conversion Adjustments $32,536 $6,800 $6,446 $26,394 $13,819 ($19,677) $49,309 $29,795 $41,520 $30,779 $40,536 $108,953 $567,510 Net Cash Surplus/(Deficit) ($79,065) ($96,531) ($93,431) ($71,663) ($87,199) ($108,869) ($55,593) ($74,879) ($56,242) ($74,801) ($57,479) ($165,393) ($1,021,144)
+```
+[p013_c0003] -- Differences are due to rounding
+
+## Page 14
+
+### [p014_c0001] MTA METRO-NORTH RAILROAD February Financial Plan - 2024 Adopted Budget Accrual Statement of Operations By Category
+[p014_c0002]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Total Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 MNR - MTA 10.948 17.731 11.098 12.411 14.076 12.150 13.687 15.252 15.294 16.458 12.912 12.667 158.683 MNR - CDOT 7.250 6.359 7.163 6.795 9.702 7.212 7.804 11.020 9.404 10.760 10.139 6.520 104.129 MNR - Other 2.067 2.001 2.147 2.347 2.612 2.238 2.386 2.353 2.210 2.552 2.148 1.923 21.177 Capital and Other Reimbursements 20.265 20.091 20.408 23.752 26.390 21.600 23.877 28.625 26.909 29.763 25.199 23.110 289.989 Total Revenues $20.265 $20.091 $20.408 $23.752 $26.390 $21.600 $23.877 $28.625 $26.909 $29.763 $25.199 $23.110 $289.989 Operating Expenses Labor: Payroll $4.893 $4.722 $4.905 $5.663 $5.803 $5.077 $5.509 $6.146 $6.070 $7.208 $5.510 $5.187 $66.694 Overtime 2.712 2.541 2.693 3.088 3.293 2.629 3.184 3.262 3.318 3.541 2.994 2.726 35.982 Health and Welfare 2.041 1.950 2.033 2.346 2.435 2.087 2.323 2.564 2.541 2.951 2.296 2.137 27.693 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension 1.286 1.233 1.287 1.481 1.533 1.310 1.464 1.592 1.584 1.828 1.437 1.344 17.379 Other Fringe Benefits 1.346 1.287 1.345 1.553 1.611 1.374 1.535 1.679 1.674 1.935 1.514 1.408 18.261 Reimbursable Overhead 6.537 6.344 6.628 7.796 8.670 7.083 7.812 9.101 8.810 10.208 8.256 7.265 94.508 Total Labor Expenses $18.816 $18.077 $18.890 $21.927 $23.346 $19.559 $21.826 $24.334 $23.996 $27.671 $22.007 $20.068 $260.517 Non-Labor: Electric Power $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Fuel 0.048 0.041 0.047 0.057 0.056 0.046 0.052 0.062 0.062 0.069 0.059 0.055 0.652 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.484 0.996 0.484 0.545 0.535 0.545 0.535 1.775 0.637 0.648 0.637 1.816 9.635 Maintenance and Other Operating Contracts 0.320 0.320 0.323 0.323 0.339 0.323 0.339 0.323 0.339 0.323 0.339 0.336 3.947 Professional Services Contracts 0.598 0.657 0.664 0.901 2.114 1.128 1.124 2.131 1.875 1.053 2.156 0.836 15.237 Materials and Supplies 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Other Business Expenses $1.450 $2.013 $1.518 $1.825 $3.044 $2.041 $2.051 $4.291 $2.913 $2.092 $3.192 $3.042 $29.471 Total Non-Labor Expenses $1.450 $2.013 $1.518 $1.825 $3.044 $2.041 $2.051 $4.291 $2.913 $2.092 $3.192 $3.042 $29.471 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses $20.265 $20.091 $20.408 $23.752 $26.390 $21.600 $23.877 $28.625 $26.909 $29.763 $25.199 $23.110 $289.989 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+[p014_c0003] -- Differences are due to rounding
+
+## Page 15
+
+### [p015_c0001] MTA METRO-NORTH RAILROAD February Financial Plan - 2024 Adopted Budget Accrual Statement of Operations By Category
+[p015_c0002]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Total Non-Reimbursable / Reimbursable Operating Revenue Freeway Revenue $43,551 $40,730 $44,899 $46,787 $47,501 $47,390 $47,449 $46,464 $46,553 $49,918 $47,394 $47,603 $556,228 Other Operating Revenue 2,976 2,964 2,989 2,987 2,989 2,986 2,989 2,986 2,984 2,998 2,985 2,988 35,811 MWR - TMT 10,648 1,731 1,108 12,441 14,676 12,159 13,697 15,252 15,234 16,458 12,912 12,657 158,683 MWR - ODOT 7,265 6,359 7,163 7,795 9,702 7,112 7,804 10,020 9,234 10,769 11,316 10,520 104,129 MWR - Other 2,687 2,004 2,142 2,542 2,612 2,238 2,366 2,353 2,210 2,545 2,148 1,923 22,177 Capital and Other Reimbursements 20,265 20,091 20,108 23,752 26,350 21,601 23,877 26,625 26,309 29,783 25,199 23,110 280,959 Total Revenues $66,792 $63,785 $68,287 $73,526 $76,879 $71,967 $74,314 $78,074 $76,445 $82,680 $75,578 $73,702 $882,028 Operating Expenses Labor: Payroll $57,260 $50,868 $51,977 $53,313 $56,444 $49,032 $57,404 $59,334 $53,510 $61,982 $55,396 $56,710 $662,290 Overtime 10,843 9,648 9,502 10,510 10,749 8,628 10,438 11,059 11,140 12,158 8,309 11,764 124,748 Health and Welfare 15,826 13,763 13,957 14,647 15,638 12,984 15,868 16,006 14,799 17,274 14,703 15,924 181,380 OPEB Current Payments 4,167 4,167 4,167 4,167 4,167 4,167 4,167 4,167 4,167 4,167 4,167 4,167 50,000 Pension 11,968 10,568 10,780 11,157 11,792 10,102 11,941 12,234 11,279 13,085 11,296 13,871 138,171 Other Fringe Benefits 13,820 12,662 12,573 12,987 13,841 11,888 13,784 14,014 13,104 14,879 13,080 13,639 160,273 Reimbursable Overhead (0.019) (0.018) (0.019) (0.019) (0.021) (0.019) (0.021) (0.021) (0.020) (0.023) (0.019) (0.020) (0.239) Total Labor Expenses $113,864 $101,657 $102,938 $106,760 $112,409 $96,842 $113,580 $115,794 $107,979 $123,522 $106,932 $114,334 $1,316,633 Non-Labor: Electric Power $9,307 $10,140 $9,422 $8,869 $8,011 $8,589 $9,213 $8,344 $8,605 $7,960 $8,293 $9,571 $106,144 Fuel 2,498 2,231 2,264 1,972 1,956 1,827 2,016 1,983 2,258 2,251 2,088 2,114 25,458 Insurance 1,861 1,853 1,894 1,935 2,006 1,990 1,997 2,032 2,007 2,014 2,043 2,046 23,688 Claims 0.096 0.096 0.096 0.096 0.096 0.096 0.096 0.096 0.096 0.096 0.096 0.096 1,000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 10,254 10,757 10,790 10,782 10,745 10,798 10,592 11,868 10,851 10,744 11,099 9,937 128,217 Professional Services Contracts 4,289 3,928 4,019 4,182 4,149 4,437 4,976 3,965 3,970 4,102 4,110 4,502 49,730 Materials and Supplies 9,876 9,927 10,070 10,474 11,834 10,735 10,078 11,965 11,729 10,805 11,988 10,562 130,880 Other Business Expenses 1,970 1,848 1,982 2,015 2,013 1,165 2,059 2,023 2,033 2,087 2,066 2,093 23,355 Total Non-Labor Expenses $40,150 $40,779 $40,547 $40,144 $40,809 $39,635 $40,957 $42,275 $41,590 $40,659 $41,783 $40,799 $489,482 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses $154,015 $142,436 $143,485 $146,904 $153,218 $136,478 $154,538 $158,069 $149,528 $163,582 $148,714 $155,147 $1,806,115 Depreciation $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $298,333 OPEB Liability Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 48,000 48,000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 120,222 120,222 GASB 87 Lease Adjustment (0.516) (0.516) (0.516) (0.516) (0.516) (0.516) (0.516) (0.516) (0.516) (0.516) (0.516) (0.516) (6,189) Environmental Remediation 0.333 0.333 0.333 0.333 0.333 0.333 0.333 0.333 0.333 0.333 0.333 0.333 4,000 Total Expenses After Non-Cash Liability Adjs. $178,693 $167,115 $168,164 $171,583 $177,897 $161,157 $179,216 $182,748 $174,207 $188,280 $173,393 $184,048 $2,270,482 Net Surplus/(Deficit) ($111,902) ($103,331) ($99,877) ($98,057) ($101,018) ($89,190) ($104,902) ($104,674) ($97,762) ($105,581) ($97,816) ($274,346) ($1,386,454) Cash Conversion Adjustments: Depreciation $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $298,333 Operating/Capital (0.399) (0.385) (0.662) (0.060) (1.584) (10.093) (0.600) (0.308) (1.978) (1.711) (0.172) (19.065) (37,019) Other Cash Adjustments 8,374 (17,676) (17,753) 1,594 (9,458) (34,447) 25,048 5,242 18,637 7,629 15,647 103,157 105,995 Total Cash Conversion Adjustments $32,836 $6,800 $6,446 $26,394 $13,819 ($19,679) $49,309 $29,795 $41,520 $30,779 $40,336 $108,953 $367,310 Net Cash Surplus/(Deficit) ($79,065) ($96,531) ($93,431) ($71,663) ($87,199) ($108,869) ($55,593) ($74,879) ($56,242) ($74,801) ($57,479) ($165,393) ($1,021,144)
+```
+[p015_c0003] -- Differences are due to rounding
+
+## Page 16
+
+### [p016_c0001] MTA METRO-NORTH RAILROAD February Financial Plan - 2024 Adopted Budget Cash Receipts and Expenditures ($ in millions)
+### [p016_c0002] Cash Receipts and Expenditures
+[p016_c0003]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Total Receipts Farebox Revenue $41,983 $39,294 $43,250 $45,058 $45,731 $45,629 $45,647 $44,687 $44,836 $48,246 $45,751 $45,916 $536,025 Other Operating Revenue 5,913 5,913 6,283 5,913 5,913 7,191 5,913 5,913 6,321 5,913 5,913 6,335 73,437 MNR - MTA 10,948 11,731 11,098 12,411 14,076 12,150 13,687 15,252 15,294 16,458 12,912 12,667 158,683 MNR - CDOT 7,250 6,359 7,163 8,795 9,702 7,212 7,804 11,020 9,404 10,760 10,139 8,520 104,129 MNR - Other 2,067 2,001 2,147 2,547 2,612 2,238 2,386 2,353 2,210 2,545 2,148 1,923 27,177 Capital and Other Reimbursements 20,265 20,091 20,408 23,752 26,390 21,600 23,877 28,625 26,009 29,763 25,199 23,110 289,989 Total Receipts $68,161 $65,298 $69,941 $74,724 $78,034 $74,420 $75,437 $79,225 $78,066 $83,922 $76,863 $75,360 $899,450 Expenditures Labor: Payroll $49,110 $60,270 $59,337 $47,855 $60,691 $48,570 $49,247 $66,609 $50,351 $66,624 $52,152 $67,470 $697,287 Overtime 9,429 11,485 11,653 9,554 11,683 8,628 9,076 12,567 10,810 13,215 7,913 15,406 131,221 Health and Welfare 16,556 14,675 14,886 15,609 16,655 13,857 16,890 17,046 15,761 18,382 15,659 16,939 193,216 OP&E Current Payments 4,167 4,167 4,167 4,167 4,167 4,167 4,167 4,167 4,167 4,167 4,167 4,167 50,000 Pension 19,819 19,819 19,819 19,819 19,819 19,819 19,819 19,819 19,819 19,819 19,819 19,819 190,552 Other Fringe Benefits 11,599 14,408 14,320 11,404 14,478 11,512 11,569 15,600 12,089 15,842 12,075 20,282 165,178 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursement Overhead 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $110,979 $124,824 $124,181 $108,408 $127,493 $106,553 $91,169 $115,207 $93,197 $118,448 $92,184 $144,483 $1,357,126 Non-Labor: Electric Power $9,505 $10,338 $9,621 $8,887 $8,209 $8,787 $9,411 $8,541 $8,803 $8,157 $8,491 $9,768 $108,519 Fuel 2,498 2,231 2,264 1,972 1,956 1,827 2,016 1,983 2,258 2,251 2,088 2,114 25,458 Insurance 0.000 0.000 0.399 2,311 0.759 0.759 2,982 0.999 0.176 3,077 4,763 8,370 23,837 Claims 0.096 0.096 0.096 0.096 0.096 0.096 0.096 0.096 0.096 0.096 0.096 0.096 1,146 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 7,140 7,632 9,879 7,330 8,811 27,749 7,674 8,660 11,348 8,931 7,759 34,057 146,970 Professional Services Contracts 2,281 1,920 2,010 2,174 2,141 15,124 2,070 1,956 1,962 2,094 2,102 18,339 54,173 Materials and Supplies 10,311 10,362 10,600 10,909 12,269 18,127 11,342 12,399 12,164 11,240 12,423 22,278 154,422 Other Business Expenses 4,417 4,426 4,321 4,301 4,257 4,267 4,272 4,261 4,304 4,429 4,438 1,250 48,943 Total Non-Labor Expenditures $36,247 $37,004 $39,190 $37,978 $37,739 $76,736 $39,862 $38,896 $41,111 $40,275 $42,158 $96,270 $563,467 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $147,227 $161,828 $163,372 $146,386 $165,232 $183,289 $131,031 $154,103 $134,307 $158,724 $134,342 $240,753 $1,920,594 Net Cash Balance ($79,065) ($96,531) ($93,431) ($71,663) ($87,199) ($108,869) ($55,593) ($74,879) ($56,242) ($74,801) ($57,479) ($165,393) ($1,021,144) Subsidies MTA Subsidy $54,783 $73,830 $70,615 $50,775 $65,715 $88,923 $32,876 $52,493 $34,526 $51,987 $36,532 $140,553 $753,608 CDOT Subsidy 24,282 22,700 22,816 20,888 21,484 19,946 22,718 22,386 21,715 22,814 20,947 24,840 267,536 Total Subsidies $79,065 $96,531 $93,431 $71,663 $87,199 $108,869 $55,593 $74,879 $56,242 $74,801 $57,479 $165,393 $1,021,144
+```
+
+## Page 17
+
+### [p017_c0001] MTA METRO-NORTH RAILROAD February Financial Plan - 2024 Adopted Budget Cash Conversion (Cash Flow Adjustments) Favorable/(Unfavorable) ($ in millions)
+[p017_c0002]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Total Cash Flow Adjustments Receipts Farebox Revenue ($1,568) ($1,436) ($1,649) ($1,729) ($1,770) ($1,752) ($1,802) ($1,777) ($1,717) ($1,673) ($1,643) ($1,688) ($20,203) Other Operating Revenue 2,938 2,949 3,903 2,927 2,924 4,205 2,925 2,928 3,337 2,915 2,915 3,346 37,625 MNR - MTA 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 MNR - CDOT 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 MNR - Other 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Receipts $1,370 $1,513 $1,654 $1,198 $1,154 $2,453 $1,123 $1,151 $1,620 $1,243 $1,285 $1,658 $17,422 Expenditures Labor: Payroll $8,150 ($9,402) ($7,360) $5,457 ($4,247) $0,521 $8,157 ($7,274) $3,158 ($4,641) $3,244 ($30,760) ($34,997) Overtime 1,414 (1,838) (2,151) 0.955 (0.935) 0.000 1,361 (1,506) 0.530 (1,057) 0.396 (3,642) (6,473) Health and Welfare (10,300) (0.912) (0.929) (0.962) (1,017) (0.873) (1,023) (1,039) (0.962) (1,108) (0.956) (1,015) (11,825) OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Pension (7,850) (9,251) (9,039) (8,662) (8,027) (9,716) 11,722 12,015 11,060 12,867 11,077 17,542 17,946 Other Fringe Benefits 2,221 (1,748) (1,747) 1,583 (0.837) 0.376 2,215 (1,586) 1,015 (0.963) 1,006 (6,442) (4,905) Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead (0.019) (0.018) (0.019) (0.019) (0.021) (0.019) (0.021) (0.021) (0.020) (0.023) (0.019) (0.020) (0.239) Total Labor Expenditures $2,865 ($23,167) ($21,243) ($1,648) ($15,084) ($9,710) $22,412 $0,586 $14,782 $5,074 $14,748 ($30,128) ($40,493) Non-Labor: Electric Power ($0,198) ($0,198) ($0,198) ($0,198) ($0,198) ($0,198) ($0,198) ($0,198) ($0,198) ($0,197) ($0,197) ($0,197) ($2,375) Fuel 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Insurance 1,861 1,853 1,505 (0.376) 2,006 1,231 (0.985) 1,032 1,831 (1,063) (2,720) (6,325) (0,149) Claims 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 (0,146) 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 3,114 3,125 0.911 3,452 1,934 (16,951) 2,918 3,209 (0,497) 1,813 3,340 (24,120) (17,753) Professional Services Contracts 2,008 2,008 2,008 2,008 2,008 (10,687) 2,008 2,008 2,008 2,008 2,008 (13,837) (4,443) Materials and Supplies (0,435) (0,435) (0,530) (0,435) (0,435) (7,392) (0,435) (0,435) (0,435) (0,435) (0,435) (11,696) (23,532) Other Business Expenses (2,446) (2,578) (2,339) (2,286) (2,245) (3,103) (2,213) (2,237) (2,271) (2,342) (2,371) 0,844 (25,588) Total Non-Labor Expenditures $3,903 $3,779 $1,357 $2,166 $3,070 ($37,101) $1,095 $3,379 $0,439 ($0,216) ($0,375) ($55,478) ($73,989) Other Expenditure Adjustments: Other $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 Cash Timing Adjustments 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Total Other Expenditure Adjustments $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 $0,000 Total Expenditures $6,788 ($19,392) ($19,886) $0,518 ($12,014) ($46,811) $23,507 $3,966 $15,221 $4,858 $14,372 ($85,606) ($114,478) Total Cash Conversion before Non-Cash Liability Adjs. $8,158 ($17,879) ($18,233) $1,715 ($10,860) ($44,359) $24,630 $5,116 $16,841 $6,101 $15,658 ($83,947) ($97,057) Depreciation $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $24,861 $298,333 GASB 68 Pension Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 46,000 46,000 GASB 75 OPEB Expense Adjustment 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 120,222 120,222 GASB 87 Lease Adjustment (0,516) (0,516) (0,516) (0,516) (0,516) (0,516) (0,516) (0,516) (0,516) (0,516) (0,516) (0,516) (6,189) Environmental Remediation 0.333 0.333 0.333 0.333 0.333 0.333 0.333 0.333 0.333 0.333 0.333 0.333 4,000 Total Cash Conversion Adjustments $32,836 $6,800 $6,446 $26,394 $13,819 ($19,679) $49,309 $29,795 $41,520 $30,779 $40,336 $108,953 $367,310
+```
+
+## Page 18
+
+### [p018_c0001] MTA METRO-NORTH RAILROAD February Financial Plan - 2024 Adopted Budget Ridership and Traffic Volume (Utilization) (in millions)
+[p018_c0002]
+
+```text
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Total RIDERSHIP Harlem Line Ridership - Commutation 0.538 0.490 0.558 0.583 0.586 0.569 0.577 0.580 0.574 0.642 0.578 0.596 6.852 Harlem Line Ridership - Non-Commutation 0.992 0.885 0.993 1.034 1.039 1.010 1.024 0.995 1.019 1.127 1.026 1.054 12.169 Total Harlem Line 1.501 1.375 1.550 1.617 1.625 1.579 1.601 1.556 1.593 1.770 1.604 1.650 19.021 Hudson Line Ridership - Commutation 0.275 0.252 0.288 0.308 0.314 0.306 0.317 0.312 0.297 0.333 0.300 0.303 3.604 Hudson Line Ridership - Non-Commutation 0.642 0.599 0.675 0.719 0.731 0.714 0.738 0.728 0.698 0.773 0.701 0.708 8.431 Total Hudson Line 0.922 0.852 0.963 1.027 1.045 1.019 1.055 1.041 0.994 1.105 1.001 1.011 12.034 New Haven Line Ridership - Commutation 0.644 0.583 0.663 0.696 0.711 0.703 0.711 0.696 0.680 0.752 0.690 0.710 8.238 New Haven Line Ridership - Non-Commutation 1.523 1.394 1.563 1.633 1.666 1.649 1.686 1.633 1.599 1.753 1.622 1.684 19.364 Total New Haven Line 2.167 1.977 2.225 2.329 2.377 2.352 2.377 2.329 2.279 2.505 2.312 2.374 27.603 Total Commutation (East of Hudson) 1.457 1.326 1.508 1.587 1.611 1.577 1.605 1.568 1.557 1.727 1.568 1.609 18.694 Total Non-Commutation (East of Hudson) 3.132 2.879 3.231 3.396 3.435 3.373 3.428 3.358 3.374 3.652 3.348 3.426 39.964 Total East of Hudson Ridership 4.590 4.205 4.738 4.972 5.046 4.951 5.033 4.926 4.966 5.380 4.917 5.035 58.658 West of Hudson Ridership 0.090 0.082 0.096 0.099 0.101 0.098 0.102 0.102 0.095 0.087 0.087 0.092 1.130 Total Ridership 4.680 4.286 4.834 5.071 5.147 5.049 5.135 5.028 4.961 5.467 5.004 5.127 59.788 FAREBOX REVENUE Harlem Line Revenue - Commutation 2.932 2.912 3.026 3.070 3.084 3.240 3.031 2.920 3.295 3.267 3.470 3.265 37.502 Harlem Line Revenue - Non-Commutation 9.214 8.505 9.496 9.872 9.920 9.659 9.785 9.529 9.738 10.740 9.800 10.060 116.321 Total Harlem Line Revenue 12.146 11.417 12.521 12.943 13.004 12.699 12.816 12.449 13.023 14.007 13.270 13.325 153.822 Hudson Line Revenue - Commutation 1.886 1.891 1.968 2.047 2.085 2.198 2.108 2.068 2.144 2.134 2.264 2.088 24.883 Hudson Line Revenue - Non-Commutation 7.434 6.886 7.758 8.256 8.396 8.197 8.473 8.363 7.998 8.670 8.053 8.131 96.816 Total Hudson Line Revenue 9.320 8.777 9.726 10.303 10.481 10.395 10.581 10.431 10.143 11.004 10.317 10.220 121.699 New Haven Line Revenue - Commutation 3.563 3.510 3.643 3.714 3.804 4.072 3.804 3.698 3.941 3.880 4.202 3.950 45.779 New Haven Line Revenue - Non-Commutation 17.415 16.000 17.845 19.616 18.974 18.792 18.976 18.621 18.244 19.929 18.491 18.954 220.855 Total New Haven Line Revenue 20.978 19.510 21.487 22.330 22.778 22.863 22.780 22.319 22.184 23.808 22.692 22.904 266.635 Total Commutation Revenue (East of Hudson) 8.381 8.313 8.637 8.831 8.973 9.510 8.943 8.687 9.369 9.281 9.936 9.304 108.164 Total Non-Commutation Revenue (East of Hudson) 34.053 31.391 35.098 36.746 37.289 36.648 37.234 36.573 35.987 39.539 36.344 37.145 433.992 Total East of Hudson Revenue 42.444 39.705 43.735 45.577 46.262 46.158 46.177 45.200 45.350 48.820 46.280 46.449 542.156 West of Hudson Revenue $1.107 $1.025 $1.164 $1.210 $1.239 $1.222 $1.271 $1.264 $1.203 $1.098 $1.114 $1.155 $14.072 Total Farebox Revenue $43.551 $40.730 $44.899 $46.787 $47.501 $47.380 $47.449 $46.464 $46.553 $49.918 $47.394 $47.603 $556.228
+```
+[p018_c0003] Note: West of Hudson total ridership reflects both Pascack Valley and Port Jervis lines.
+
+## Page 19
+
+### [p019_c0001] MTA METRO-NORTH RAILROAD February Financial Plan - 2024 Adopted Budget Total Full-time Positions and Full-time Equivalents by Function Non-Reimbursable and Reimbursable
+[p019_c0002]
+
+```text
+FUNCTION/DEPARTMENT Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Administration President 5 5 5 5 5 5 5 5 5 5 5 5 Labor Relations 13 13 13 13 13 13 13 13 13 13 13 13 Finance 92 92 92 92 92 92 92 92 92 92 92 92 Safety 22 22 22 22 22 22 22 22 22 22 22 22 VP Ops Support and Org Res 27 27 27 27 27 27 27 27 27 27 27 27 Corporate & Public Affairs 12 12 12 12 12 12 12 12 12 12 12 12 Customer Service 52 52 52 52 52 52 52 52 52 52 52 52 Legal 8 8 8 8 8 8 8 8 8 8 8 8 Claims 5 5 5 5 5 5 5 5 5 5 5 5 VP Human Resources 34 34 34 34 34 34 34 34 34 34 34 34 Training 96 96 96 96 96 97 97 97 97 97 97 97 Employee Relations & Diversity 5 5 5 5 5 5 5 5 5 5 5 5 Capital Planning & Programming 10 10 10 10 10 10 10 10 10 10 10 10 Long Range Planning 4 4 4 4 4 4 4 4 4 4 4 4 Controller 56 56 56 56 56 56 56 56 56 56 56 56 Budget 14 14 14 14 14 14 14 14 14 14 14 14 Procurement & Material Management 15 15 15 15 15 15 15 15 15 15 15 15 Rolling Stock Delivery & Integration 9 9 9 9 9 9 9 9 9 9 9 9 Total Administration 479 479 479 479 479 480 480 480 480 480 480 480 Operations Operations Support 66 66 70 70 70 70 70 70 70 70 70 70 Enterprise Asset Management 23 23 23 23 23 23 23 23 23 23 23 23 Transportation 1,736 1,736 1,752 1,760 1,754 1,778 1,772 1,778 1,785 1,791 1,791 1,799 Customer Service 395 395 395 395 395 395 395 395 395 395 395 395 Metro-North West 31 31 31 31 31 31 31 31 31 31 31 31 Total Operations 2,251 2,251 2,271 2,279 2,273 2,297 2,291 2,297 2,304 2,310 2,310 2,318 Maintenance Maintenance of Equipment 1,647 1,673 1,688 1,708 1,726 1,720 1,679 1,698 1,721 1,721 1,721 1,721 Maintenance of Way 2,239 2,247 2,267 2,293 2,299 2,334 2,339 2,344 2,373 2,371 2,373 2,367 Procurement & Material Management 118 118 118 118 118 118 118 118 118 118 118 118 Corporate (323) (341) (378) (413) (414) (451) (390) (401) (440) (426) (408) (390) Total Maintenance 3,681 3,697 3,695 3,706 3,729 3,721 3,746 3,759 3,772 3,784 3,804 3,816 Engineering/Capital Construction Management 17 19 20 21 22 23 24 24 24 26 26 26 Engineering & Design 56 58 59 59 61 63 63 64 64 64 64 64 Total Engineering/Capital 73 77 79 80 83 86 87 88 88 90 90 90 Total Positions 6,484 6,504 6,524 6,544 6,564 6,584 6,604 6,624 6,644 6,664 6,684 6,704 Non-Reimbursable 5,875 5,848 5,868 5,798 5,811 5,846 5,863 5,783 5,776 5,784 5,864 5,932 Reimbursable 609 656 656 746 753 738 741 841 868 880 820 772 Total Full-Time 6,483 6,503 6,523 6,543 6,563 6,583 6,603 6,623 6,643 6,663 6,683 6,703 Total Full-Time-Equivalents 1 1 1 1 1 1 1 1 1 1 1 1
+```
+
+## Page 20
+
+### [p020_c0001] MTA METRO-NORTH RAILROAD February Financial Plan - 2024 Adopted Budget Total Positions by Function and Occupation
+[p020_c0002]
+
+```text
+FUNCTION / OCCUPATION Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Administration Managers/Supervisors 168 168 168 168 168 168 168 168 168 168 168 168 Professional/Technical/Clerical 311 311 311 311 311 312 312 312 312 312 312 312 Operational Hourlies 0 0 0 0 0 0 0 0 0 0 0 0 Total Administration Headcount 479 479 479 479 479 480 480 480 480 480 480 480 Operations Managers/Supervisors 310 310 310 310 310 310 310 310 310 310 310 312 Professional/Technical/Clerical 238 238 243 243 243 244 244 244 244 244 244 244 Operational Hourlies 1,703 1,703 1,718 1,726 1,720 1,743 1,737 1,743 1,750 1,756 1,756 1,762 Total Operations Headcount 2,251 2,251 2,271 2,279 2,273 2,297 2,291 2,297 2,304 2,310 2,310 2,318 Maintenance Managers/Supervisors 732 734 735 737 738 738 725 725 726 726 726 726 Professional/Technical/Clerical 541 542 549 552 553 563 563 563 563 564 564 564 Operational Hourlies 2,408 2,420 2,411 2,417 2,438 2,420 2,458 2,471 2,483 2,494 2,514 2,526 Total Maintenance Headcount 3,681 3,697 3,695 3,706 3,729 3,721 3,746 3,759 3,772 3,784 3,804 3,816 Engineering / Capital Managers/Supervisors 37 38 38 38 39 40 40 40 40 40 40 40 Professional/Technical/Clerical 36 39 41 42 44 46 47 48 48 50 50 50 Operational Hourlies 0 0 0 0 0 0 0 0 0 0 0 0 Total Engineering Headcount 73 77 79 80 83 86 87 88 88 90 90 90 Public Safety Managers/Supervisors 0 0 0 0 0 0 0 0 0 0 0 0 Professional, Technical, Clerical 0 0 0 0 0 0 0 0 0 0 0 0 Operational Hourlies 0 0 0 0 0 0 0 0 0 0 0 0 Total Public Safety Headcount 0 0 0 0 0 0 0 0 0 0 0 0 Total Positions Managers/Supervisors 1,247 1,250 1,251 1,253 1,255 1,256 1,243 1,243 1,244 1,244 1,244 1,246 Professional, Technical, Clerical 1,126 1,131 1,144 1,148 1,151 1,165 1,166 1,167 1,167 1,170 1,170 1,170 Operational Hourlies 4,111 4,123 4,129 4,143 4,158 4,163 4,195 4,214 4,233 4,250 4,270 4,288 Total Positions 6,484 6,504 6,524 6,544 6,564 6,584 6,604 6,624 6,644 6,664 6,684 6,704
+```

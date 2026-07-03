@@ -1,0 +1,21 @@
+{
+  "run_id": "2026-06-10T23-03-11-313Z_1976810-8253a411_ingest_2012-04-26-sbs-utica",
+  "generated_at": "2026-06-11T04:51:18.182Z",
+  "dry_run": false,
+  "wrote": true,
+  "decision_count": 55,
+  "reviewed_count": 45,
+  "alias_additions": [],
+  "aliases_already_present": [],
+  "do_not_merge_additions": [],
+  "relation_submissions": 20,
+  "quarantined": 25,
+  "conflicts": [],
+  "paths": {
+    "merges": "data/identity-overrides/merges.json",
+    "do_not_merge": "data/identity-overrides/do-not-merge.json",
+    "relation_submissions_jsonl": "data/submissions/2026-06-10T23-03-11-313Z_1976810-8253a411_ingest_2012-04-26-sbs-utica_canonicalize.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T23-03-11-313Z_1976810-8253a411_ingest_2012-04-26-sbs-utica/apply-quarantine.jsonl",
+    "apply_report": "data/canonicalize/2026-06-10T23-03-11-313Z_1976810-8253a411_ingest_2012-04-26-sbs-utica/apply-report.json"
+  }
+}

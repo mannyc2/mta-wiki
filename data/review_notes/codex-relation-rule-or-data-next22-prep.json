@@ -1,0 +1,231 @@
+{
+  "note_id": "codex-relation-rule-or-data-next22-prep",
+  "batch_id": "next22",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "scope": "Codex-only relation endpoint-shape rule-or-data triage artifact; deterministic local inspection only; no provider-backed commands, post-ingest LLM harnesses, materialize/export-jsonl/full validate/DB publish, durable data edits, code edits, LOG edits, manifest edits, submissions edits, retired.json edits, or canonical/generated edits",
+  "current_checkpoint_context": {
+    "reported_validate_backlog_after_relation046": {
+      "issue_count": 1483,
+      "unexpected_relation_endpoint_shape": 20,
+      "duplicate_global_identity": 1463
+    },
+    "observed_endpoint_shape_issue_count": 20,
+    "recent_work_not_repeated": [
+      "next20 validator patch for operates_on_corridor entity->corridor",
+      "next21 data cleanup applied as relation046 for has_treatment claim->treatment_component",
+      "relation037 through relation046"
+    ],
+    "inspection_method": "Read-only reconstruction from data/canonical/*.jsonl plus data/submission-overrides/retired.json, using the current RELATION_ENDPOINT_SHAPES in packages/pipeline/src/records/relations.ts. No validate/materialize/export/publish/provider command was run."
+  },
+  "remaining_bucket_counts": {
+    "total": 20,
+    "buckets": [
+      { "bucket": "has_claim claim->claim", "count": 1 },
+      { "bucket": "has_timeline_event entity->metric_claim", "count": 1 },
+      { "bucket": "has_timeline_event event->entity", "count": 1 },
+      { "bucket": "has_timeline_event project->entity", "count": 1 },
+      { "bucket": "has_timeline_event source->entity", "count": 1 },
+      { "bucket": "has_treatment entity->metric_claim", "count": 1 },
+      { "bucket": "has_treatment event->treatment_component", "count": 1 },
+      { "bucket": "implemented_by entity->entity", "count": 1 },
+      { "bucket": "implemented_by source->entity", "count": 1 },
+      { "bucket": "operated_by entity->entity", "count": 1 },
+      { "bucket": "operated_by entity->event", "count": 1 },
+      { "bucket": "operated_by treatment_component->entity", "count": 1 },
+      { "bucket": "operates_on_corridor project->entity", "count": 1 },
+      { "bucket": "owned_by event->entity", "count": 1 },
+      { "bucket": "owned_by source->entity", "count": 1 },
+      { "bucket": "published_by claim->entity", "count": 1 },
+      { "bucket": "published_by metric_claim->source", "count": 1 },
+      { "bucket": "related_route project->project", "count": 1 },
+      { "bucket": "serves_route project->entity", "count": 1 },
+      { "bucket": "serves_route project->project", "count": 1 }
+    ],
+    "triage_note": "All remaining exact endpoint-shape buckets are singletons. The selected operated_by entity->event row has a direct valid replacement shape: the source-backed Metro-North entity should have a timeline event for opening the Nanuet station shelter. This preserves the existing entity/event records and evidence without widening operated_by."
+  },
+  "recommendation": "data_cleanup",
+  "recommended_bucket": "operated_by entity->event",
+  "expected_delta": {
+    "baseline_unexpected_relation_endpoint_shape": 20,
+    "selected_rows_cleared": 1,
+    "replacement_rows_added": 1,
+    "replacement_rows_expected_to_be_endpoint_shape_valid": 1,
+    "expected_remaining_after_cleanup": 19
+  },
+  "recommended_data_cleanup": {
+    "mechanism": "retire_and_replace",
+    "why_data_cleanup": "The relation kind is wrong for the endpoints. The source states that Metro-North opened a rebuilt platform shelter, which is event/timeline semantics. The existing endpoint ontology already admits has_timeline_event entity->event, so no validator change is needed.",
+    "why_not_validator_rule_patch": "Allowing operated_by entity->event would make operated_by express agency participation in events, not operation of projects/routes/corridors by an entity. The current operated_by contract should remain project|route|corridor -> entity; event objects should remain invalid for operated_by.",
+    "candidate_submissions_to_retire": [
+      {
+        "submission_id": "sub_8a68d427e6db5675",
+        "run_id": "2026-06-22T20-45-02-305Z_336399-cd4abc10_ingest_meeting-doc-87686",
+        "submission_path": "data/submissions/2026-06-22T20-45-02-305Z_336399-cd4abc10_ingest_meeting-doc-87686.jsonl",
+        "record_id": "relation_nanuet-shelter-metronorth",
+        "source_id": "meeting_doc_87686",
+        "current_relation_kind": "operated_by",
+        "current_shape": "entity -> event",
+        "retire_reason": "Malformed relation kind: Metro-North opening a rebuilt shelter is an entity timeline event, not an operated_by relation with an event object."
+      }
+    ],
+    "proposed_semantic_replacement_direction": {
+      "observation_kind": "relation",
+      "recommended_local_observation_id": "relation_mnr_has_timeline_event_nanuet_shelter_opening",
+      "recommended_label": "Metro-North has Nanuet shelter opening timeline event",
+      "relation_kind": "has_timeline_event",
+      "relation_family": "timeline",
+      "subject_local_observation_id": "entity_mnr_meeting_may2022",
+      "subject_record_id": "entity_meeting-doc-124881-mnr",
+      "subject_kind": "entity",
+      "object_local_observation_id": "event_nanuet_shelter_opening",
+      "object_record_id": "event_nanuet-shelter-opening",
+      "object_kind": "event",
+      "recommended_shape": "entity -> event",
+      "evidence_refs_to_reuse": [
+        "meeting_doc_87686#p009_c0002"
+      ],
+      "raw_text_to_reuse": "This past Thursday, Metro-North opened the rebuilt platform shelter at the Nanuet station in Rockland County."
+    },
+    "replacement_collision_check": "Read-only canonical relation lookup found no existing relation between entity_meeting-doc-124881-mnr and event_nanuet-shelter-opening other than the malformed relation_nanuet-shelter-metronorth. A text search found no existing relation_mnr_has_timeline_event_nanuet_shelter_opening local id."
+  },
+  "representative_records": [
+    {
+      "record_id": "relation_nanuet-shelter-metronorth",
+      "source_id": "meeting_doc_87686",
+      "submission_ids": [
+        "sub_8a68d427e6db5675"
+      ],
+      "current_malformed_shape": "operated_by entity->event",
+      "current_relation": {
+        "relation_kind": "operated_by",
+        "relation_family": "agency_role",
+        "subject": {
+          "record_id": "entity_meeting-doc-124881-mnr",
+          "record_kind": "entity",
+          "display_name": "MTA Metro-North Railroad",
+          "local_observation_id_used_by_relation": "entity_mnr_meeting_may2022"
+        },
+        "object": {
+          "record_id": "event_nanuet-shelter-opening",
+          "record_kind": "event",
+          "display_name": "Nanuet Station Rebuilt Platform Shelter Opening",
+          "local_observation_id": "event_nanuet_shelter_opening"
+        },
+        "payload_summary": {
+          "description": "Metro-North opened the Nanuet station platform shelter",
+          "assertion_status": "delivered",
+          "as_of_date": "2022-05"
+        }
+      },
+      "recommended_replacement_relation": {
+        "relation_kind": "has_timeline_event",
+        "relation_family": "timeline",
+        "subject": {
+          "record_id": "entity_meeting-doc-124881-mnr",
+          "record_kind": "entity",
+          "local_observation_id": "entity_mnr_meeting_may2022"
+        },
+        "object": {
+          "record_id": "event_nanuet-shelter-opening",
+          "record_kind": "event",
+          "local_observation_id": "event_nanuet_shelter_opening"
+        }
+      },
+      "triage_read": "The source-backed event record already captures the opening of the rebuilt Nanuet platform shelter. The relation should attach that event to Metro-North's timeline rather than treating the event as something Metro-North is operated by."
+    }
+  ],
+  "source_and_evidence_summary": {
+    "source_id": "meeting_doc_87686",
+    "source_path": "raw/sources/meeting_doc_87686/blocks.jsonl",
+    "evidence_blocks": [
+      {
+        "evidence_id": "meeting_doc_87686#p009_c0002",
+        "page_number": 9,
+        "block_id": "p009_c0002",
+        "text_sha256": "sha256:74e0b3f85927a70693af18eb6b3baf14b406e1d31e04f2fea8e2fc27433caf01",
+        "summary": "States that Metro-North opened the rebuilt platform shelter at Nanuet station; describes new amenities, ADA redesign, communications/security additions, and dedication in memory of Orrin Goetz.",
+        "short_source_quote": "Metro-North opened the rebuilt platform shelter at the Nanuet station"
+      }
+    ],
+    "endpoint_records": [
+      {
+        "record_id": "entity_meeting-doc-124881-mnr",
+        "record_kind": "entity",
+        "display_name": "MTA Metro-North Railroad",
+        "local_observation_ids_relevant_to_cleanup": [
+          "entity_mnr_meeting_may2022"
+        ],
+        "same_source_support": "The canonical entity includes source_id meeting_doc_87686 and local_observation_id entity_mnr_meeting_may2022 from accepted submission sub_cab015e3bdf99834."
+      },
+      {
+        "record_id": "event_nanuet-shelter-opening",
+        "record_kind": "event",
+        "display_name": "Nanuet Station Rebuilt Platform Shelter Opening",
+        "local_observation_id": "event_nanuet_shelter_opening",
+        "submission_id": "sub_be8b06e56a4e4e49",
+        "payload_summary": {
+          "event_kind": "station improvement opening",
+          "event_family": "implementation",
+          "lifecycle_phase": "launched",
+          "date_normalized": "2022-05"
+        }
+      }
+    ]
+  },
+  "validator_boundary": {
+    "current_valid_operated_by_shapes": [
+      "project->entity",
+      "route->entity",
+      "corridor->entity"
+    ],
+    "current_valid_replacement_shape": "has_timeline_event entity->event",
+    "endpoint_combos_that_must_remain_invalid": [
+      "operated_by entity->event",
+      "operated_by event->entity",
+      "operated_by entity->entity",
+      "operated_by treatment_component->entity",
+      "operated_by source->entity",
+      "operated_by project->event",
+      "operated_by route->event",
+      "operated_by corridor->event"
+    ]
+  },
+  "why_safe": [
+    "The original relation's endpoints are already accepted canonical records in the same source context.",
+    "The proposed replacement uses a currently valid endpoint shape, has_timeline_event entity->event.",
+    "The replacement preserves the same source evidence and assertion meaning: Metro-North opened the Nanuet station platform shelter in May 2022.",
+    "No validator rule expansion is required, and operated_by remains scoped to project/route/corridor subjects with entity objects.",
+    "The cleanup affects one singleton bucket and does not overlap next20, next21, or relation037-relation046 selected buckets."
+  ],
+  "guards": {
+    "non_goals": [
+      "Do not edit packages/pipeline/src/records/relations.ts or tests for next22.",
+      "Do not edit data/submission-overrides/retired.json in this prep lane.",
+      "Do not append replacement submissions in this prep lane.",
+      "Do not edit data/canonical/*.jsonl, data/canonical.db, data/materialized/*, wiki/*, LOG.md, manifests, or campaign/generated-output files.",
+      "Do not run canonicalize, campaign dedup, identity-review, write, ask, schema, ontology-normalize, any provider/profile-backed command, materialize, export-jsonl, full validate, or DB publish."
+    ],
+    "follow_up_apply_ready_relation_worker_needed": true,
+    "follow_up_worker_expected_actions": [
+      "Retire sub_8a68d427e6db5675 with a relation047-style reason referencing this next22 prep artifact.",
+      "Append one accepted replacement relation submission with relation_kind has_timeline_event, subject_local_observation_id entity_mnr_meeting_may2022, object_local_observation_id event_nanuet_shelter_opening, and evidence meeting_doc_87686#p009_c0002.",
+      "Leave validator code unchanged."
+    ]
+  },
+  "commands_run_read_only": [
+    "rg -n 'unexpected_relation_endpoint_shape|relation046|relation045|relation044|relation043|relation042|relation041|relation040|relation039|relation038|relation037' data/review_notes data",
+    "ls -la data/review_notes && rg --files data | rg 'validate|validation|relation|canonical|submissions|retired'",
+    "sed -n '1,260p' data/review_notes/codex-relation-rule-or-data-next21-prep.json",
+    "sed -n '1,260p' data/review_notes/codex-relation-cleanup-batch046-prep.json",
+    "rg -n 'RELATION_ENDPOINT_SHAPES|unexpected_relation_endpoint_shape|relationEndpointShapeIssue|RelationKind|endpoint shape' packages -S",
+    "sed -n '180,380p' packages/pipeline/src/records/relations.ts",
+    "git status --short",
+    "rg -n 'sub_e9da8479c21e0686|sub_4441977e3f72b843|relation_accessibility-has-treatment-elevator|relation_elevator_livonia_rockaway_has_claim|relation046' data/submission-overrides/retired.json data/submissions data/canonical/relations.jsonl data/review_notes -S",
+    "node --input-type=module '<read-only endpoint-shape inventory from canonical JSONL plus retired.json>'",
+    "jq -c 'select(.record_id==\"relation_nanuet-shelter-metronorth\" or .record_id==\"entity_meeting-doc-124881-mnr\" or .record_id==\"event_nanuet-shelter-opening\")' data/canonical/relations.jsonl data/canonical/entities.jsonl data/canonical/events.jsonl",
+    "rg -l 'sub_8a68d427e6db5675' data/submissions && rg -n 'sub_8a68d427e6db5675' data/submissions -S",
+    "jq -c 'select(.block_id==\"p009_c0002\")' raw/sources/meeting_doc_87686/blocks.jsonl",
+    "rg -n 'relation_nanuet_shelter_has_timeline_event|relation_nanuet_shelter_metronorth_timeline|has_timeline_event.*event_nanuet_shelter_opening|event_nanuet_shelter_opening.*has_timeline_event' data/submissions data/canonical/relations.jsonl -S"
+  ]
+}

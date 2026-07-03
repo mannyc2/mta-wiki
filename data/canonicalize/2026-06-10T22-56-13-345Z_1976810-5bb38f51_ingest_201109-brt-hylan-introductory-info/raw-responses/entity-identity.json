@@ -1,0 +1,85 @@
+{
+  "run_id": "2026-06-10T22-56-13-345Z_1976810-5bb38f51_ingest_201109-brt-hylan-introductory-info",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T01:38:32.959Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1-nyct",
+        "local_observation_id": "entity_mta_nyct_hylan_sep2011",
+        "decision": "new",
+        "rationale": "Observation already resolves to entity_mta-nyct (base_record_id). Registry record for entity_mta-nyct matches on entity_name 'MTA New York City Transit', entity_type 'agency', and already lists source 201109_brt_hylan_introductory_info and alias entity_mta-nyct-hylan-sep2011.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p001_c0003",
+            "source_quote": "New York City Transit"
+          },
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p001_c0004",
+            "source_quote": "New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2-nycdot",
+        "local_observation_id": "entity_nyc_dot_hylan_sep2011",
+        "decision": "new",
+        "rationale": "Observation already resolves to entity_nyc-dot (base_record_id). Registry record for entity_nyc-dot matches on entity_name 'New York City Department of Transportation', entity_type 'agency', and already lists source 201109_brt_hylan_introductory_info and alias entity_nyc-dot-hylan-sep2011.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p001_c0006",
+            "source_quote": "New York City Department of Transportation (NYC DOT) logo"
+          }
+        ]
+      },
+      {
+        "decision_id": "d3-cb1",
+        "local_observation_id": "entity_staten_island_community_board_1",
+        "decision": "new",
+        "rationale": "Observation already resolves to entity_staten-island-community-board-1 (base_record_id). Registry record matches on entity_name 'Community Board 1', entity_type 'community_board', description 'Staten Island Community Board 1', and already lists source 201109_brt_hylan_introductory_info.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p005_c0002",
+            "source_quote": "Meeting with Community Boards 1, 2 & 3, and Staten Island Elected Officials (June 18, 2010)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d4-cb2",
+        "local_observation_id": "entity_staten_island_community_board_2",
+        "decision": "new",
+        "rationale": "Observation already resolves to entity_staten-island-community-board-2 (base_record_id). Registry record matches on entity_name 'Community Board 2', entity_type 'community_board', description 'Staten Island Community Board 2', and already lists source 201109_brt_hylan_introductory_info.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p005_c0002",
+            "source_quote": "Meeting with Community Boards 1, 2 & 3, and Staten Island Elected Officials (June 18, 2010)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d5-cb3",
+        "local_observation_id": "entity_staten_island_community_board_3",
+        "decision": "new",
+        "rationale": "Observation already resolves to entity_staten-island-community-board-3 (base_record_id). Registry record matches on entity_name 'Community Board 3', entity_type 'community_board', description 'Staten Island Community Board 3', and already lists source 201109_brt_hylan_introductory_info.",
+        "evidence_refs": [
+          {
+            "source_id": "201109_brt_hylan_introductory_info",
+            "block_id": "p005_c0002",
+            "source_quote": "Meeting with Community Boards 1, 2 & 3, and Staten Island Elected Officials (June 18, 2010)"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-37-50-100Z_2111393-ac5b2a62_canonicalize_2026-06-10t22-56-13-345z-1976810-5bb38f51-ingest-201109-brt-hylan-introductory-info-entity-identity"
+}

@@ -1,0 +1,149 @@
+{
+  "note_id": "codex-metric-exact-name-unit-inference-tail421-2026-07-02",
+  "bucket": "metric missing unit_family exact-name carry-forward tail",
+  "mode": "codex-only deterministic cleanup",
+  "provider_backed_commands_run": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-profile commands"
+  ],
+  "subagent_inputs": [
+    {
+      "agent_id": "019f206b-8437-7912-bf46-3fbcdafa5b01",
+      "name": "Avicenna",
+      "role": "read-only audit of remaining metric missing-unit tail",
+      "summary": "Recommended an exact-name carry-forward slice for finite numeric or finite money-range metric rows with no existing unit/unit_normalized, while deferring same-name conflicts and known traps."
+    }
+  ],
+  "before": {
+    "metric_claims": 36534,
+    "metric_unit_family_missing": 515,
+    "metric_unit_family_other": 5,
+    "missing_finite_no_unit_rows": 512
+  },
+  "after": {
+    "metric_claims": 36534,
+    "metric_unit_family_missing": 421,
+    "metric_unit_family_other": 5,
+    "missing_finite_no_unit_rows": 418
+  },
+  "delta": {
+    "metric_unit_family_missing": -94,
+    "missing_finite_no_unit_rows": -94
+  },
+  "implemented_changes": [
+    {
+      "file": "packages/pipeline/src/ontology/normalizers.ts",
+      "summary": "Added exact-name missing-unit inference for audited count, complaint, money, population, safety, enforcement, ridership, and workforce metric names."
+    },
+    {
+      "file": "packages/pipeline/src/ontology/normalizers.ts",
+      "summary": "Kept existing gates: no overwrite of submitted unit/unit_normalized, finite numeric values required except finite money ranges, money rows require dollar/USD/currency evidence, complaint rows require count-shaped non-percent evidence."
+    },
+    {
+      "file": "packages/pipeline/src/ontology/normalizers.ts",
+      "summary": "Added a population evidence helper for exact population-style names, requiring population, resident, individual, people, KSI, killed, injured, crash, or fatality context."
+    },
+    {
+      "file": "packages/pipeline/test/ontology/normalizers.test.ts",
+      "summary": "Added representative positive coverage for the new exact-name units and negative coverage for audited traps."
+    }
+  ],
+  "target_bucket_recount_after": {
+    "count": {
+      "normalized": 98,
+      "missing": 0
+    },
+    "complaints": {
+      "normalized": 68,
+      "missing": 1
+    },
+    "money": {
+      "normalized": 21,
+      "missing": 0
+    },
+    "population": {
+      "normalized": 37,
+      "missing": 0
+    },
+    "safety": {
+      "normalized": 13,
+      "missing": 0
+    },
+    "enforcement": {
+      "normalized": 22,
+      "missing": 0
+    },
+    "ridership": {
+      "normalized": 15,
+      "missing": 0
+    },
+    "workforce": {
+      "normalized": 159,
+      "missing": 0
+    }
+  },
+  "intentionally_unresolved": [
+    {
+      "metric_name": "internal_eeo_complaints_by_basis",
+      "record_id": "metric_mta-bus-eeo-complaint-bases-internal-1q2023",
+      "reason": "Raw text says 6 EEO complaints and 12 separate bases while stored value is 8, so the complaint count gate correctly leaves it unresolved."
+    },
+    {
+      "metric_names": [
+        "train_derailments",
+        "train_collisions",
+        "crash_injuries",
+        "Secondary Screening Score",
+        "audit_projects_completed",
+        "monthly_ridership",
+        "lost_time_injury_rate",
+        "major_felony_change",
+        "total_revenue",
+        "vacancies",
+        "subway_fires",
+        "robbery"
+      ],
+      "reason": "Deferred because same-name normalized conflicts, rate/percent ambiguity, or insufficient deterministic evidence require a separate audit."
+    },
+    {
+      "metric_names": [
+        "total_arrests_change",
+        "total_major_felonies_change",
+        "hate_crimes_change",
+        "ridership_recovery_rate",
+        "pension_errors_financial_impact",
+        "procurement_amount without finite value or money evidence"
+      ],
+      "reason": "Negative tests assert these do not normalize under this slice."
+    }
+  ],
+  "commands": [
+    {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "result": "pass: 278 tests, 4748 expect() calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "Materialized 93067/98115 submissions; retired submissions skipped 265; Pages 7335; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "Issues: 0; Submissions 98115; Canonical records 84027; Wiki pages 7331"
+    }
+  ],
+  "next_lanes": [
+    "Audit the remaining 421 missing unit-family metric rows for additional exact-name, source-backed groups.",
+    "Prioritize non-other identity backlog next when a duplicate or false-duplicate bucket has a measurable open count.",
+    "Keep train derailment/collision, crash injury, monthly ridership, lost-time injury rate, and revenue/funding ambiguity out of automatic carry-forward until a bounded audit proves a safe rule."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "run_id": "2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:04:41.192Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "assistant_text",
+  "parse_error": "JSON Parse error: Unexpected identifier \"Looking\"",
+  "raw_response": "Looking at the packet, I have three entity observations from the `201110_nostrand_cb8_slides` source. Let me analyze each against the registry.\n\n**Observation 1**: `entity_mta_nyct_presenter_201110_cb8` — base_record_id `entity_mta-nyct`. The registry has `entity_mta-nyct` (MTA New York City Transit, agency). The observation's base_record_id already maps to this exact registry record. The closest match IS the observation's own base_record_id → **new**.\n\n**Observation 2**: `entity_nyc_dot_presenter_201110_cb8` — base_record_id `entity_nyc-dot`. The registry has `entity_nyc-dot` (New York City Department of Transportation, agency). Exact match with own base_record_id → **new**.\n\n**Observation 3**: `entity_community_board_8_brooklyn` — base_record_id `entity_community-board-8-brooklyn`. Registry `entity_community-board-8-brooklyn` has the same source `201110_nostrand_cb8_slides`, same entity_name \"Community Board 8\", same entity_type \"community_board\", same description \"Brooklyn Community Board 8\". Exact match with own base_record_id → **new**.\n\nAll three observations already resolve to their existing registry records; none needs linking to a different record.\n\n",
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-01-59-972Z_2111393-6aa8334e_canonicalize_2026-06-10t22-59-52-566z-1976810-e040d399-ingest-201110-nostrand-cb8-slides-entity-identity"
+}

@@ -1,0 +1,12 @@
+{"decision_id":"relate-34th-st-transitway","verdict":"pass","evidence_checked":["20100921_34th_cac_minutes#p001_c0009","20100921_34th_cac_minutes#p002_c0004"]}
+{"decision_id":"rel-claim-roundtable-topics","verdict":"pass","evidence_checked":["20100921_34th_cac_minutes#p001_c0011"]}
+{"decision_id":"rel-claim-traffic-congestion-safety","verdict":"pass","evidence_checked":["20100921_34th_cac_minutes#p002_c0004"]}
+{"decision_id":"rel-claim-safety-diversions","verdict":"pass","evidence_checked":["20100921_34th_cac_minutes#p002_c0006"]}
+{"decision_id":"rel-claim-disabled-access","verdict":"pass","evidence_checked":["20100921_34th_cac_minutes#p002_c0006"]}
+{"decision_id":"rel-claim-south-side-transitway","verdict":"pass","evidence_checked":["20100921_34th_cac_minutes#p002_c0011"]}
+{"decision_id":"rel-claim-traffic-variations","verdict":"fail","failure_reason":"Cited block p002_c0008 does not mention 'Transitway' anywhere in its raw text — only bullet points about 'non-bus traffic' on 34th Street. The connection to project_34th-street-transitway-concept relies entirely on document co-occurrence (the meeting is about the Transitway), not on the block text explicitly stating the relationship. Co-occurrence in a document is not a relation.","evidence_checked":["20100921_34th_cac_minutes#p002_c0008"]}
+{"decision_id":"rel-claim-outbound-flow-passing","verdict":"pass","evidence_checked":["20100921_34th_cac_minutes#p002_c0002"]}
+{"decision_id":"rel-claim-7-subway-alternative","verdict":"pass","evidence_checked":["20100921_34th_cac_minutes#p003_c0006"]}
+{"decision_id":"rel-claim-buses-vs-light-rail","verdict":"pass","evidence_checked":["20100921_34th_cac_minutes#p003_c0006"]}
+{"decision_id":"rel-claim-non-bus-restriction","verdict":"pass","evidence_checked":["20100921_34th_cac_minutes#p003_c0006"]}
+{"decision_id":"rel-claim-delivery-windows","verdict":"fail","failure_reason":"Cited block p003_c0001 does not mention 'Transitway' anywhere in its raw text. It discusses deliveries, truck loading zones next to 'bus lanes', and '34th Street', but never states a connection to the Transitway project. The rationale appeals to roundtable topic context from p001_c0011, but the cited evidence block itself does not state the relationship. Co-occurrence in a document is not a relation.","evidence_checked":["20100921_34th_cac_minutes#p003_c0001"]}

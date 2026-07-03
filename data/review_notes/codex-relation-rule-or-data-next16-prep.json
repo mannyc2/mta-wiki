@@ -1,0 +1,224 @@
+{
+  "note_id": "codex-relation-rule-or-data-next16-prep",
+  "created_at": "2026-06-22T23:46:08Z",
+  "author": "codex",
+  "scope": "validator rule/data triage only for remaining unexpected_relation_endpoint_shape backlog after identity071, relation039, and the owned_by corridor->entity rule patch; no durable/generated mutations",
+  "current_checkpoint_context": {
+    "reported_unexpected_relation_endpoint_shape_count": 33,
+    "observed_targeted_relationEndpointShapeIssue_count": 33,
+    "prior_batches_excluded": "relation cleanup batches017-039 and missing-target repair work are already absent from the current canonical DB/materialized checkpoint used for this probe",
+    "missing_relation_target_endpoint_count": 0,
+    "owned_by_corridor_entity_rule_status": "Current working tree accepts owned_by corridor->entity and has a focused test, so relation_corridor-owned-by-lirr is no longer in the endpoint-shape backlog."
+  },
+  "remaining_bucket_counts_after_excluding_prior_relation_cleanup_batches017_039_and_missing_target_repairs": {
+    "total": 33,
+    "buckets": [
+      { "bucket": "has_claim claim->claim", "count": 1 },
+      { "bucket": "has_claim treatment_component->claim", "count": 1 },
+      { "bucket": "has_timeline_event entity->metric_claim", "count": 1 },
+      { "bucket": "has_timeline_event event->entity", "count": 1 },
+      { "bucket": "has_timeline_event event->source", "count": 1 },
+      { "bucket": "has_timeline_event project->entity", "count": 1 },
+      { "bucket": "has_timeline_event source->entity", "count": 1 },
+      { "bucket": "has_treatment claim->treatment_component", "count": 1 },
+      { "bucket": "has_treatment entity->metric_claim", "count": 1 },
+      { "bucket": "has_treatment event->treatment_component", "count": 1 },
+      { "bucket": "has_treatment route->treatment_component", "count": 1 },
+      { "bucket": "implemented_by corridor->entity", "count": 1 },
+      { "bucket": "implemented_by entity->entity", "count": 1 },
+      { "bucket": "implemented_by event->entity", "count": 1 },
+      { "bucket": "implemented_by source->entity", "count": 1 },
+      { "bucket": "implemented_by treatment_component->entity", "count": 1 },
+      { "bucket": "operated_by corridor->entity", "count": 1 },
+      { "bucket": "operated_by entity->entity", "count": 1 },
+      { "bucket": "operated_by entity->event", "count": 1 },
+      { "bucket": "operated_by treatment_component->entity", "count": 1 },
+      { "bucket": "operates_on_corridor entity->corridor", "count": 1 },
+      { "bucket": "operates_on_corridor project->entity", "count": 1 },
+      { "bucket": "owned_by event->entity", "count": 1 },
+      { "bucket": "owned_by source->entity", "count": 1 },
+      { "bucket": "part_of_program project->claim", "count": 1 },
+      { "bucket": "published_by claim->entity", "count": 1 },
+      { "bucket": "published_by entity->source", "count": 1 },
+      { "bucket": "published_by event->entity", "count": 1 },
+      { "bucket": "published_by metric_claim->source", "count": 1 },
+      { "bucket": "related_route project->project", "count": 1 },
+      { "bucket": "related_route project->route", "count": 1 },
+      { "bucket": "serves_route project->entity", "count": 1 },
+      { "bucket": "serves_route project->project", "count": 1 }
+    ],
+    "triage_note": "All remaining exact endpoint-shape buckets are singletons, so the recommendation prioritizes semantic correctness and reuse rather than row count."
+  },
+  "recommendation": {
+    "type": "validator_rule_patch",
+    "bucket": "operated_by corridor->entity",
+    "record_ids": [
+      "relation_corridor-operated-by-nya"
+    ],
+    "confidence": "medium_high",
+    "recommended_patch": "Add corridor to RELATION_ENDPOINT_SHAPES.operated_by.subject and add a focused relationEndpointShapeIssue test for operated_by corridor->entity.",
+    "reason": "The selected row is a clean rail-corridor operator fact from the same Lower Montauk source family as the already-handled owned_by corridor->entity rule. The subject is a corridor asset, the object is an operator entity, and the evidence says the line was leased to New York and Atlantic Railway and that the Branch serves freight trains operated by that railway. Retiring or weakening the row would discard useful source-backed operator structure.",
+    "why_rule_change": "Current operated_by accepts project|route -> entity. Corridors also represent durable rail branches, busways, and right-of-way assets that can have source-backed operators distinct from route operators. Admitting only corridor as an additional subject preserves the entity object constraint and matches the existing relation family without opening event, source, claim, metric, or treatment subjects.",
+    "why_not_data_cleanup": "There is no better existing endpoint shape for this fact. Retargeting to a route would require inventing a freight route record not present in the source; replacing with related_to would lose the explicit operator role; retire-only would remove a valid corridor operation assertion.",
+    "why_not_broader_rule_change": "Do not use this patch to admit operated_by entity->entity, entity->event, or treatment_component->entity. Those remaining rows look like agency context, event direction mistakes, or procurement/treatment context and should remain data-cleanup candidates."
+  },
+  "representative_records": [
+    {
+      "record_id": "relation_corridor-operated-by-nya",
+      "source_id": "lower_montauk_final_report_jan2018",
+      "submission_ids": [
+        "sub_5761ed32ad835f3a"
+      ],
+      "malformed_shape": "operated_by corridor->entity",
+      "relation_kind": "operated_by",
+      "subject": {
+        "record_id": "corridor_lower-montauk-branch",
+        "record_kind": "corridor",
+        "display_name": "Lower Montauk Branch",
+        "local_observation_id": "corridor_lower_montauk_branch"
+      },
+      "object": {
+        "record_id": "entity_ny-and-atlantic-railway",
+        "record_kind": "entity",
+        "display_name": "New York and Atlantic Railway (NY&A)",
+        "local_observation_id": "entity_ny_and_atlantic_railway"
+      },
+      "evidence": [
+        {
+          "source_id": "lower_montauk_final_report_jan2018",
+          "evidence_id": "lower_montauk_final_report_jan2018#p004_c0004",
+          "source_path": "raw/sources/lower_montauk_final_report_jan2018/blocks.jsonl",
+          "page_number": 4,
+          "block_id": "p004_c0004",
+          "text_sha256": "sha256:0ef299a4c0879322d326b47dda8ffb64872d4b2890785e75390caa201f18ff06",
+          "quote": "the line has subsequently been leased out to the New York and Atlantic (NY&A) Railway, which provides rail freight service"
+        },
+        {
+          "source_id": "lower_montauk_final_report_jan2018",
+          "evidence_id": "lower_montauk_final_report_jan2018#p026_c0003",
+          "source_path": "raw/sources/lower_montauk_final_report_jan2018/blocks.jsonl",
+          "page_number": 26,
+          "block_id": "p026_c0003",
+          "text_sha256": "sha256:c5c034ab4256f072ab9ec66bc6a729383b7ac45615b855a200235c00112713eb",
+          "quote": "The Branch currently only serves freight trains operated by the New York and Atlantic Railway."
+        }
+      ],
+      "triage_read": "Valid corridor operator assertion; best handled as a scoped validator rule patch."
+    },
+    {
+      "record_id": "relation_access-a-ride-operated-by-nyct",
+      "source_id": "meeting_doc_91586",
+      "malformed_shape": "operated_by entity->entity",
+      "relation_kind": "operated_by",
+      "evidence": [
+        {
+          "source_id": "meeting_doc_91586",
+          "evidence_id": "meeting_doc_91586#p001_c0011",
+          "page_number": 1,
+          "block_id": "p001_c0011",
+          "quote": "iii. Paratransit Report"
+        }
+      ],
+      "triage_read": "Counterexample for a broader operated_by rule. The evidence is committee/report context, not a strong entity-operator assertion."
+    },
+    {
+      "record_id": "relation_procurement-metronorth-circuit-breakers",
+      "source_id": "meeting_doc_102686",
+      "malformed_shape": "operated_by treatment_component->entity",
+      "relation_kind": "operated_by",
+      "evidence": [
+        {
+          "source_id": "meeting_doc_102686",
+          "evidence_id": "meeting_doc_102686#p012_c0012",
+          "page_number": 12,
+          "block_id": "p012_c0012",
+          "quote": "Metro-North Senior Director of Procurement and Material Management Anthony Gardner reported on a Metro-North procurement."
+        }
+      ],
+      "triage_read": "Counterexample for broadening operated_by to treatment components. This looks like procurement/agency context for a contract or asset replacement, not operation of the treatment component."
+    },
+    {
+      "record_id": "relation_bx36-able-treatment",
+      "source_id": "meeting_doc_113986",
+      "malformed_shape": "has_treatment route->treatment_component",
+      "relation_kind": "has_treatment",
+      "evidence": [
+        {
+          "source_id": "meeting_doc_113986",
+          "evidence_id": "meeting_doc_113986#p014_c0011",
+          "page_number": 14,
+          "block_id": "p014_c0011",
+          "quote": "we activate enforcement on the Bx36 route"
+        }
+      ],
+      "triage_read": "Plausible later rule/data decision, but route-level treatment ownership has broader modeling implications and is less independent than the corridor operator row."
+    }
+  ],
+  "simulated_impact": {
+    "baseline_unexpected_relation_endpoint_shape": 33,
+    "selected_rule_patch_rows_cleared": 1,
+    "expected_remaining_after_patch": 32,
+    "percent_of_current_backlog": 3.03,
+    "durable_benefit": "Prevents future source-backed rail/bus corridor operator rows from being flagged while keeping noisier operated_by entity/event/treatment shapes invalid."
+  },
+  "command_evidence": [
+    {
+      "command": "sed -n '190,380p' packages/pipeline/src/records/relations.ts",
+      "allowed_mode": "read-only source inspection",
+      "output_excerpt": "RELATION_ENDPOINT_SHAPES currently allows operated_by subject project|route and object entity; owned_by already includes corridor."
+    },
+    {
+      "command": "rg -n \"owned_by|RELATION_ENDPOINT_SHAPES|function relationEndpointShapeIssue|export function relationEndpointShapeIssue\" packages -S",
+      "allowed_mode": "read-only source inspection",
+      "output_excerpt": "packages/pipeline/test/records/relations.test.ts now expects relationEndpointShapeIssue(\"owned_by\", \"corridor\", \"entity\") to be undefined and owned_by event/source subjects to stay invalid."
+    },
+    {
+      "command": "bun --eval '<readCanonicalRecords plus relationEndpointShapeIssue inventory over relation records>'",
+      "allowed_mode": "read-only relationEndpointShapeIssue probe",
+      "output_excerpt": "total=33; all remaining exact endpoint-shape buckets have count=1; operated_by corridor->entity is one remaining bucket."
+    },
+    {
+      "command": "bun --eval '<readCanonicalRecords missing relation target endpoint probe>'",
+      "allowed_mode": "read-only canonical DB inspection",
+      "output_excerpt": "relation_records=16725; missing_relation_target_endpoint_count=0."
+    },
+    {
+      "command": "jq 'select(.record_id==\"relation_corridor-operated-by-nya\" or .record_id==\"corridor_lower-montauk-branch\" or .record_id==\"entity_ny-and-atlantic-railway\")' data/canonical/relations.jsonl data/canonical/corridors.jsonl data/canonical/entities.jsonl",
+      "allowed_mode": "read-only JSONL inspection",
+      "output_excerpt": "Confirmed relation_corridor-operated-by-nya points from corridor_lower-montauk-branch to entity_ny-and-atlantic-railway with evidence lower_montauk_final_report_jan2018#p004_c0004."
+    },
+    {
+      "command": "jq 'select(.block_id==\"p004_c0004\" or .block_id==\"p026_c0003\" or .block_id==\"p003_c0007\")' raw/sources/lower_montauk_final_report_jan2018/blocks.jsonl",
+      "allowed_mode": "read-only source block inspection",
+      "output_excerpt": "p004_c0004 says the line was leased to NY&A, which provides freight service; p026_c0003 says the Branch currently only serves freight trains operated by NY&A."
+    },
+    {
+      "command": "bun --eval 'relationEndpointShapeIssue probes for operated_by and owned_by shapes'",
+      "allowed_mode": "read-only relationEndpointShapeIssue probe",
+      "output_excerpt": "operated_by corridor->entity still reports an endpoint-shape issue; operated_by route->entity and project->entity are accepted; owned_by corridor->entity is accepted."
+    },
+    {
+      "command": "for f in data/submissions/2026-06-22_codex_relation_cleanup_batch0{17..39}.jsonl data/submissions/2026-06-23_codex_relation_cleanup_batch0{17..39}.jsonl data/submissions/2026-06-22_codex_relation_missing_target_repair*.jsonl data/submissions/2026-06-23_codex_relation_missing_target_repair*.jsonl; do test -e \"$f\" && printf '%s\\t' \"$f\" && wc -l < \"$f\"; done",
+      "allowed_mode": "read-only submission inventory",
+      "output_excerpt": "Found applied cleanup journals through batch039 and missing_target_repair001. The command exited nonzero because some unmatched glob variants had no files, after printing the existing file counts."
+    }
+  ],
+  "commands_intentionally_not_run": [
+    "canonicalize",
+    "campaign dedup",
+    "identity-review-run",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "materialize",
+    "export-jsonl",
+    "full validate",
+    "DB repair/publish",
+    "any command with --profile or provider-backed execution"
+  ],
+  "files_written": [
+    "data/review_notes/codex-relation-rule-or-data-next16-prep.json"
+  ],
+  "blockers": []
+}

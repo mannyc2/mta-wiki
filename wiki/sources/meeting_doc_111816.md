@@ -1,0 +1,297 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-111816"
+record_kind: "source"
+display_name: "MTA Bus Company 2022 Year-End Report Summary"
+source_id: "meeting_doc_111816"
+source_ids:
+  - "meeting_doc_111816"
+local_observation_id: "source_meeting_doc_111816"
+local_observation_ids:
+  - "source_meeting_doc_111816"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T12:14:35.437Z"
+submission_ids:
+  - "sub_e113543d5ce86cb5"
+payload:
+  authority_tier: "plan_document"
+  content_type: "year-end report"
+  document_type: "2022 Year-End Report"
+  title: "MTA BUS COMPANY 2022 YEAR-END REPORT SUMMARY"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_111816#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_111816"
+    source_path: "raw/sources/meeting_doc_111816/blocks.jsonl"
+    text_sha256: "sha256:15942cc1f9aadd62ab37a232c3395bc677942d4d10c16607f9c3ea5dfabffa8a"
+    text_source: "raw_text"
+---
+
+# MTA Bus operating budget results
+
+source_id: meeting_doc_111816
+citation: cite block ids exactly as shown in square brackets
+document: 123 block(s)
+
+## Page 1
+
+### [p001_c0001] MTA BUS COMPANY 2022 YEAR-END REPORT SUMMARY
+[p001_c0002] MTA Bus Company's non-reimbursable financial performance compared to the 2022 Final Estimate was favorable by $239.9 million. This favorable result was due to higher operating revenues and lower expenses before non-cash liabilities.
+[p001_c0003] The cash deficit of $609.2 million was $110.1 million lower than the Final Estimate, primarily due to the timing of professional services, lower material & supplies expenses, maintenance services, payroll, overtime, the timing of insurance, and health insurance premiums, higher farebox revenue, the timing of claims and pension and lower other business expenses. These were partially offset by higher other fringe benefits, lower capital and other reimbursements and lower other operating revenue.
+[p001_c0004] Total Non-Reimbursable Revenues of $734.2 million were $10.7 million or 1.5% higher than the Final Estimate. This was primarily due to higher farebox revenue of $7.1 million or 4.6% and higher other operating revenue of $3.6 million or 0.6%.
+[p001_c0005] Total Non-Reimbursable Expenses Before Depreciation and GASB Adjustments were $843.5 million. This includes labor expenses of $648.2 million, which were $29.8 million or 4.4% favorable versus the Final Estimate, reflecting lower labor expenses.
+[p001_c0006] Non-Labor Expenses of $195.2 million were $91.6 million or 31.9% favorable versus the Final Estimate primarily due to the timing of professional service contracts, claims and insurance, lower maintenance and other operating contracts and materials and supplies.
+[p001_c0007] Non-Cash Liabilities consisting of Depreciation, GASB 87 Lease Adjustment, GASB 75 OPEB Expenses Adjustment, GASB 68 Pension Expense Adjustment, and Environmental Remediation totaling $73.9 million were $107.8 million or 59.3% below the Final Estimate, mainly due to the decrease in depreciation, and the timing of year-end actuarial valuation adjustments.
+[p001_c0008] Total Reimbursable Revenues and Expenses totaling $6.1 million were $0.9 million or 12.7% lower than the Final Estimate primarily due to revised project scope estimates and the timing of several major initiatives.
+[p001_c0009] Cash Deficit of $609.2 million was $110.1 million or 15.3% lower than the Final Estimate, which consisted of a favorable real variance of $79.2 million and a favorable timing variance of $30.8 million. Cash receipts of $227.6 million were $18.3 million or 7.4% lower than the Final Estimate, comprising a $3.8 million favorable real variance combined with a $22.1 million unfavorable timing variance. The real variance is primarily due to higher farebox and other operating revenue of $5.0 million. The timing variance was mainly due to lower advertising revenue, timing student fare revenue reimbursement as well as lower recoveries from other insurance of $22.1 million and an unfavorable real variance of $1.2M for capital and other reimbursements reimbursable projects.
+[p001_c0010] Cash expenditures of $836.8 million were $128.3 million or 13.3% lower than the Final Estimate, of which $54.1 million represents favorable timing and the remaining $74.2 million represents a favorable real variance. The favorable timing variance is primarily due to the timing of the payments for Retro-Active Wage Adjustment (RWA), service contracts, bus technologies and interagency billing. The favorable real variance is primarily due to vacancies, lower overtime expenses, professional services, materials & supplies, maintenance, and the shop program.
+
+## Page 2
+
+### [p002_c0001] MTA BUS COMPANY 2022 YEAR-END REPORT EXPLANATIONS OF REVENUE AND EXPENSES VARIANCES BY GENERIC CATEGORY – ACCRUAL BASIS
+### [p002_c0002] 2022 ACTUALS VS FINAL ESTIMATE
+### [p002_c0003] NON-REIMBURSABLE
+### [p002_c0004] Revenue:
+- [p002_c0005] • Farebox Revenue of $163.4 million was $7.1 million or 4.6% favorable, reflecting higher ridership and higher average fare. • Other Operating Revenue of $570.8 million was $3.6 million higher than the Final Estimate, mainly due to higher student fare revenue reimbursement, partially offset by lower advertising revenue, and recoveries from other insurance.
+### [p002_c0006] Expense:
+- [p002_c0007] • Payroll of $303.0 million was $11.9 million or 3.8% favorable to the Final Estimate, reflecting higher vacancies and attrition. • Overtime of $91.1 million was $7.1 million or 7.3% favorable to the Final Estimate, reflecting lower unscheduled overtime and programmatic maintenance partially offset by lower availability and higher vacancies coverage. • Health and Welfare of $92.6 million was $2.7 million or 2.8% favorable to the Final Estimate primarily due to lower dental expenses, vacancies, and the timing of medical and hospitalization, partially offset by higher prescription drugs expenses, life insurance costs, and timing of H&W reimbursable expenses. • OPEB Current Payment of $31.4 million was $1.8 million or 5.3% below the Final Estimate, due to the latest actuarial estimate. • Pension of $61.4 million was $0.2 million or 0.4% below the Final Estimate, reflecting the latest actuarial estimate. • Other Fringe Benefits expense of $71.6 million was $4.2 million or 5.6% below the Final Estimate due to lower payroll-related expenses and timing of interagency billing, partially offset by higher worker's compensation. • Reimbursable Overhead reflects a credit of $2.8 million, which was $1.9 million favorable to the Final Estimate, due to higher activity on select capital projects. • Electric Power of $2.4 million was $0.2 million or 7.7% unfavorable to the Final Estimate, primarily due to higher rates. • Fuel of $40.7 million was $1.6 million or 3.9% favorable to the Final Estimate, primarily due to favorable diesel fuel consumption and receipt of the CNG tax credit. • Insurance of $5.4 million was $1.9 million or 25.6% favorable to the Final Estimate primarily due to Actuarial adjustment.
+
+## Page 3
+
+- [p003_c0001] • Claims expense of $50.0 million was favorable to the Final Estimate by $28.0 million or 35.9%, due to timing. • Maintenance and Other Operating Contracts of $25.4 million was favorable to the Final Estimate by $18.7 million or 42.4%, mainly due to lower expenses for facility maintenance, bus technology, Shop Program, and vehicle purchases, partially offset by higher vehicle rentals, tolls, security and surveillance equipment, bus transfer services and recycling/hazardous waste disposal. • Professional Service Contracts of $25.6 million was $20.5 million or 44.5% favorable to the Final Estimate, primarily due to the timing of interagency billing, and lower expenses and service contracts. • Materials & Supplies of $40.2 million was $21.3 million or 34.6% favorable to the Final Estimate, mainly due to lower usage of general maintenance material, construction material, and the timing of radio equipment maintenance/repairs, partially offset by higher grease and oil lubrication expenses and tool purchases. • Other Business Expenses of $5.5 million was $0.2 million or 2.9% higher than the Final Estimate, primarily due to higher OMNY credit card fees. • Depreciation of $49.2 million was $7.0 million or 12.4% favorable to the Final Estimate, reflecting lower capitalization of assets than forecasted mainly due to timing differences of project completions and assets reaching beneficial use. • GASB 75 OPEB Adjustment was $41.3 million and $38.7 million or 48.3% favorable to the Final Estimate, based upon the year-end Actuarial Valuation Report. • GASB 68 Pension Adjustment a credit of $16.7 million, which was $62.3 million favorable to the Final Estimate, based upon the year-end actuarial valuation report. • Environmental Remediation of $0.1 million was $0.1 million unfavorable to the Final Estimate, reflecting the timing of projects requiring remediation.
+### [p003_c0002] REIMBURSABLE
+[p003_c0003] Total Capital expenditures (and reimbursements) of $6.1 million were $0.9 million lower than the Final Estimate of $7.0 million. Labor expenses totaling $6.1 million were $0.3 million or 4.9% higher than the Final Estimate, due to higher rates and reduced scope of capital projects. Non-Labor expenditures had no expenses and were $1.2 million favorable compared to the Final Estimate, mainly due to the reduced scope of capital projects.
+
+## Page 4
+
+### [p004_c0001] 2022 ACTUALS vs. ADOPTED BUDGET
+### [p004_c0002] NON-REIMBURSABLE
+[p004_c0003] MTA Bus Company's non-reimbursable financial performance compared to the 2022 Adopted Budget was favorable by $732.8 million. This favorable result was primarily due to the accrued recognition of Federal COVID aid, and lower operating costs, partially offset by lower farebox revenue.
+[p004_c0004] Total non-reimbursable revenue of $734.2 million was $535.5 million favorable to the Adopted Budget. Farebox revenue of $163.4 million was $15.5 million lower than the Adopted Budget, reflecting a lower than projected ridership, partially offset by a higher average fare. Other operating revenue of $570.8 million was $551.0 million higher than the Adopted Budget, primarily reflecting the $547.4 million revenue portion of the Federal American Rescue Plan Act (ARPA).
+[p004_c0005] Non-reimbursable labor expenses of $648.2 million were $9.3 million lower than the Adopted Budget, reflecting lower payroll, overtime cost, other fringe benefits as well as higher reimbursable recoveries due to scheduling and timing changes in capital project expenditures, and partially offset by higher health and welfare, OPEB current payments, and pension.
+[p004_c0006] Non-reimbursable non-labor expenses of $195.2 million were $70.9 million lower than the Adopted Budget, due to lower material expenses, timing of interagency billing, and professional service contracts, and partially offset by higher energy costs.
+[p004_c0007] Non-Cash Liability Adjustments, consisting of Depreciation, GASB 68 Pension Adjustment, Environmental Remediation, GASB 75 OPEB Adjustment, and GASB 87 Lease Adjustment totaled $73.9 million were $117.1 million below the Adopted Budget mainly due to the decrease in depreciation, the timing of year-end actuarial valuation adjustments and the timing of lease accounting adjustments for public sector entities.
+### [p004_c0008] NON-REIMBURSABLE
+### [p004_c0009] Revenue:
+- [p004_c0010] • Farebox Revenue of $163.4 million was $15.5 million or 8.7% lower than the Adopted Budget, primarily due to lower than projected in ridership, partially offset by higher average fare. The Adopted Budget was based on the initial McKinsey ridership assumptions that were subsequently adjusted lower in the 2022 July Plan. • Other Operating Revenue of $570.8 million was $551.0 million higher than the Adopted Budget, primarily due to the receipt of accrued Federal COVID aid.
+### [p004_c0011] Expense:
+- [p004_c0012] • Payroll of $303.0 million was $12.4 million or 3.9% lower than the Adopted Budget, mainly due to vacancies, and higher retiree payouts partially offset by lower attrition. • Overtime of $91.1 million was $0.9 million or 1.0% lower than the Adopted Budget, reflecting lower unscheduled overtime, and programmatic maintenance, partially offset by lower availability and higher vacancy coverage needs. • Health and Welfare of $92.6 million was $1.8 million or 2.0% unfavorable to the Adopted Budget, due to higher rates and partially offset by vacancies. • OPEB Current Payment of $31.4 million was $6.0 million or 23.7% unfavorable to the Adopted Budget, reflecting higher retirees/beneficiaries than projected.
+
+## Page 5
+
+- [p005_c0001] • Pension of $61.4 million was $1.7 million or 2.8% unfavorable to the Adopted Budget, reflecting the latest actuarial estimate. • Other Fringe Benefits of $71.6 million was $3.7 million or 4.9% favorable to the Adopted Budget, reflecting lower payroll-related expenses and the timing of interagency billing, partially offset by higher worker's compensation. • Reimbursable Overhead reflects a credit of $2.8 million, which was $1.9 million favorable to the Adopted Budget, reflecting higher project activity. • Electric Power of $2.4 million was $0.7 million or 38.5% unfavorable to the Adopted Budget, primarily due to higher electric rates. • Fuel of $40.7 million was $10.7 million or 35.5% unfavorable to the Adopted Budget, primarily due to higher fuel cost. • Insurance of $5.4 million was $3.7 million or 40.2% favorable to the Adopted Budget, due to timing of expenses. • Claims of $50.0 million was $28.0 million or 35.9% favorable to the Adopted Budget, due to actuarial adjustment. • Maintenance and Other Operating Contracts of $25.4 million was $16.3 million or 39.1% favorable to the Adopted Budget, mainly due to lower expenses for facility maintenance, bus technology, Shop Program, and vehicle purchases, partially offset by higher vehicle rentals, tolls, security and surveillance equipment, bus transfer services and recycling/hazardous waste disposal. • Professional Service Contracts of $25.6 million was $17.8 million or 40.9% favorable to the Adopted Budget, due to the timing of interagency billing, lower expenses for bus technology, and lower service contracts. • Materials & Supplies of $40.2 million was $17.0 million or 29.7% favorable to the Adopted Budget, mainly due to lower usage of general maintenance material, construction material, and the timing of radio equipment maintenance/repairs, partially offset by higher grease and oil lubrication expenses and tool purchases. • Other Business Expenses of $5.5 million was $0.4 million or 8.8% higher than the Adopted Budget, mainly due to higher OMNY credit card fees. • Depreciation was $7.0 million or 12.4% favorable to the Adopted Budget, reflecting lower capitalization of assets than forecasted due to timing differences in project completions and assets reaching beneficial use. • GASB 75 OPEB Adjustment was $38.7 million or 48.3% favorable to the Adopted Budget, based upon the year-end actuarial valuation report. • GASB 68 Pension Adjustment was $71.6 million favorable to the Adopted Budget, based upon the year-end actuarial valuation report. • Environmental Remediation was $0.1 million unfavorable to the Final Estimate, reflecting remediation costs of work completed during the year.
+
+## Page 6
+
+### [p006_c0001] REIMBURSABLE
+[p006_c0002] Capital and Other Reimbursements were $0.3 million or 4.9% higher than the Adopted Budget. Labor expenses were $1.5 million or 31.2% higher than the Adopted Budget, due to lower payroll assumptions in the Adopted Budget. There were no non-labor expenditures in 2022, which was $1.2 million lower compared to the Adopted Budget, mainly due to the reduced scope of capital projects.
+
+## Page 7
+
+### [p007_c0001] MTA BUS COMPANY Accrual Statement of Operations by Category 2022 Adopted Budget and Final Estimate vs. Preliminary Actual ($ in millions)
+### [p007_c0002] NON-REIMBURSABLE
+[p007_c0003]
+
+```text
+2022 Favorable/(Unfavorable) Variance Adopted Budget Final Estimate Preliminary Actual Adopted Budget Final Estimate $ % $ % Operating Revenue Farebox Revenue $ 178,962 $ 156,300 $ 163,430 $ (15,532) (8.7) $ 7,130 4.6 Other Operating Revenue 19,785 $ 567,209 570,796 551,011 * 3,587 0.6 Capital and Other Reimbursements - - - - - - - Total Revenue $ 198,747 $ 723,509 $ 734,226 $ 535,479 * $ 10,717 1.5 Operating Expenses Labor: Payroll $ 315,344 $ 314,871 $ 302,971 $ 12,373 3.9 $ 11,900 3.8 Overtime 91,976 98,198 91,052 0,924 1.0 7,146 7.3 Health and Welfare 90,775 95,294 92,605 (1,830) (2.0) 2,689 2.8 OPEB Current Payment 25,366 33,144 31,372 (6,006) (23.7) 1,772 5.3 Pensions 59,710 61,614 61,379 (1,669) (2.8) 0,235 0.4 Other Fringe Benefits 75,296 75,851 71,623 3,673 4.9 4,228 5.6 GASB Account 0,000 - - - 0.0 - - Reimbursable Overhead (0,935) (0,935) (2,797) 1,862 * 1,862 * Total Labor Expenses $ 657,532 $ 678,036 $ 648,205 $ 9,327 1.4 $ 29,831 4.4 Non-Labor: Electric Power $1,759 $ 2,263 $ 2,437 $ (0,678) (38.5) $ (0,174) (7.7) Fuel $30,011 42,313 40,677 (10,666) (35.5) 1,636 3.9 Insurance 9,090 7,314 5,439 3,651 40.2 1,875 25.6 Claims 77,992 77,991 50,004 27,988 35.9 27,987 35.9 Maintenance and Other Operating Contracts 41,636 44,025 25,369 16,267 39.1 18,656 42.4 Professional Service Contracts 43,370 46,125 25,613 17,757 40.9 20,512 44.5 Materials & Supplies 57,192 61,477 40,192 17,000 29.7 21,285 34.6 Other Business Expenses 5,069 5,360 5,514 (0,445) (8.8) (0,154) (2.9) Total Non-Labor Expenses $ 266,119 $ 286,869 $ 195,245 $ 70,874 26.6 $ 91,624 31.9 Total Expenses before Non-Cash Liability Ac $ 923,651 $ 964,905 $ 843,450 $ 80,201 8.7 $ 121,455 12.6 Depreciation $ 56,163 $ 56,163 $ 49,206 $ 6,957 12.4 $ 6,957 12.4 GASB 87 Lease Adjustment $ - 0,001 $ 0,001 $ (0,001) - $ 0,000 3.8 GASB 75 OPEB Expense Adjustment 80,000 80,000 41,342 38,658 48.3 38,658 48.3 GASB 68 Pension Expense Adjustment 54,900 45,600 (16,725) 71,625 * 62,325 * Environmental Remediation - - 0,119 (0,119) - (0,119) - Total Expenses $ 1,114,714 $ 1,146,669 $ 917,393 $ 197,321 17.7 $ 229,276 20.0 Baseline Surplus/(Deficit) $ (915,967) $ (423,159) $ (183,167) $ 732,800 80.0 $ 239,992 56.7
+```
+[p007_c0004] Note: 1) Totals may not add due to rounding 2) Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note that the actual amounts do not include post-close adjustments, which will be included in the Final audited YE statements.
+
+## Page 8
+
+### [p008_c0001] MTA BUS COMPANY Accrual Statement of Operations by Category 2022 Adopted Budget and Final Estimate vs. Preliminary Actual ($ in millions)
+[p008_c0002]
+
+```text
+REIMBURSABLE 2022 Favorable/(Unfavorable) Variance Adopted Budget Final Estimate Preliminary Actual Adopted Budget Final Estimate $ % $ % Revenue Farebox Revenue $ - $ - $ - $ - - $ - - Other Operating Revenue Capital and Other Reimbursements 5,823 6,993 6,107 0,284 4.9 (0,886) (12.7) Total Revenue $ 5,823 $ 6,993 $ 6,107 $ 0,284 4.9 $ (0,886) (12.7) Expenses Labor: Payroll $ 2,301 $ 3,471 $ 2,966 $ (0,664) (28.9) $ 0,506 14.6 Overtime - - 0,201 (0,201) - (0,201) - Health and Welfare 1,417 1,417 - 1,417 100.0 1,417 100.0 OPEB Current Payment - - - - - - - Pensions - - - - - - - Other Fringe Benefits - - 0,143 (0,143) - (0,143) - GASB Account - - - - - - - Reimbursable Overhead 0,935 0,935 2,797 (1,862) * (1,862) * Total Labor Expenses $ 4,653 $ 5,823 $ 6,107 $ (1,454) (31.2) $ (0,284) (4.9) Non-Labor: Electric Power $ - $ - $ - $ - - $ - - Fuel - - - - - - - Insurance - - - - - - - Claims - - - - - - - Paratransit Service Contracts - - - - - - - Maintenance and Other Operating Contracts 0,252 0,252 - 0,252 100.0 0,252 100.0 Professional Service Contracts - - - - - - - Materials & Supplies 0,918 0,918 - 0,918 100.0 0,918 100.0 Other Business Expenses - - - - - - - Total Non-Labor Expenses $ 1,170 $ 1,170 $ - $ 1,170 100.0 $ 1,170 100.0 Other Expense Adjustments: Other $ - $ - $ - $ - - $ - - Total Other Expense Adjustments - - - - - - - Total Expenses Before Depreciation $ 5,823 $ 6,993 $ 6,107 $ (0,284) (4.9) $ 0,886 12.7 Depreciation $ - $ - $ - $ - - $ - - GASB 87 Lease Adjustment - - - - - - - GASB 75 OPEB Expense Adjustment - - - - - - - GASB 68 Pension Expense Adjustment - - - - - - - Environmental Remediation - - - - - - - Total Expenses $ 5,823 $ 6,993 $ 6,107 $ (0,284) (4.9) $ 0,886 12.7 Net Surplus/(Deficit) $ - $ (0,000) $ - $ - - $ 0,000 100.0
+```
+[p008_c0003] *Totals may not add due to rounding
+
+## Page 9
+
+### [p009_c0001] MTA BUS COMPANY Accrual Statement of Operations by Category 2022 Adopted Budget and Final Estimate vs. Preliminary Actual ($ in millions)
+[p009_c0002]
+
+```text
+NON-REIMBURSABLE/ REIMBURSABLE 2022 Favorable/(Unfavorable) Variance Adopted Budget Final Estimate Preliminary Actual Adopted Budget Final Estimate $ % $ $ % $ % Revenue Farebox Revenue $ 178,962 $ 156,300 $ 163,430 $ (15,532) (8.7) $ 7,130 4.6 Other Operating Revenue 19,785 567,209 570,796 551,011 * 3,587 0.6 Capital and Other Reimbursements 5,823 6,993 6,107 0,284 4.9 (0,886) (12.7) Total Revenue $ 204,570 $ 730,502 $ 740,333 $ 535,763 * $ 9,831 1.3 Expenses Labor: Payroll $ 317,645 $ 318,342 $ 305,937 $ 11,708 3.7 $ 12,405 3.9 Overtime 91,976 98,198 91,253 0,723 0.8 6,945 7.1 Health and Welfare 92,192 96,711 92,605 (0,413) (0.4) 4,106 4.2 OPEB Current Payment 25,366 33,144 31,372 (6,006) (23.7) 1,772 5.3 Pensions 59,710 61,614 61,379 (1,669) (2.8) 0,235 0.4 Other Fringe Benefits 75,296 75,851 71,766 3,530 4.7 4,085 5.4 Reimbursable Overhead - - - - - - - Total Labor Expenses $ 662,185 $ 683,860 $ 654,312 $ 7,873 1.2 $ 29,548 4.3 Non-Labor: Electric Power $ 1,759 $ 2,263 $ 2,437 $ (0,678) (38.5) $ (0,174) (7.7) Fuel 30,011 42,313 40,677 (10,666) (35.5) 1,636 3.9 Insurance 9,090 7,314 5,439 3,651 40.2 1,875 25.6 Claims 77,992 77,991 50,004 27,988 35.9 27,987 35.9 Maintenance and Other Operating Contracts 41,888 44,277 25,369 16,519 39.4 18,908 42.7 Professional Service Contracts 43,370 46,125 25,613 17,757 40.9 20,512 44.5 Materials & Supplies 58,110 62,395 40,192 17,918 30.8 22,203 35.6 Other Business Expenses 5,069 5,360 5,514 (0,445) (8.8) (0,154) (2.9) Total Non-Labor Expenses $ 267,289 $ 288,039 $ 195,245 $ 72,044 27.0 $ 92,794 32.2 Total Expenses Before Depreciation and GASB Adjs. $ 929,474 $ 971,899 $ 849,557 $ 79,917 8.6 $ 122,342 12.6 Depreciation $ 56,163 $ 56,163 $ 49,206 $ 6,957 12.4 $ 6,957 12.4 GASB 87 Lease Adjustment $ - $ 0,001 $ 0,001 $ (0,001) - $ 0,000 3.8 GASB 75 OPEB Expense Adjustment 80,000 80,000 41,342 38,658 48.3 38,658 48.3 GASB 68 Pension Expense Adjustment 54,900 45,600 (16,725) 71,625 0.0 62,325 * Environmental Remediation - - 0,119 (0,119) - (0,119) - Total Expenses $ 1,120,537 $ 1,153,662 $ 923,500 $ 197,037 17.6 $ 230,162 20.0 Baseline Surplus/(Deficit) $ (915,967) $ (423,160) $ (183,167) $ 732,800 80.0 $ 239,993 56.7
+```
+
+## Page 10
+
+### [p010_c0001] MTA BUS COMPANY Explanation of Variances between 2022 Final Estimate and Preliminary Actual: Accrual December 2022 Year-to-Date
+[p010_c0002]
+
+```text
+Generic Revenue or Expense Category Non Reimb. or Reimb. Variance Reason for Variance $ % Farebox Revenue Non Reimb $7,130 4.6 Higher ridership and higher average fare Other Operating Revenue Non Reimb $3,587 0.6 Mainly due to higher Student fare revenue reimbursement offset by lower advertising revenue, and recoveries from Other Insurance Capital and Other Reimbursements Reimb ($0.886) (12.7) Mainly due to reduced scope of capital projects Payroll Non Reimb $11,900 3.8 reflecting lower hiring and higher attrition Overtime Non Reimb $7,146 7.3 Primarily lower unscheduled overtime, COVID-19 related cleaning, and programmatic maintenance partially offset by lower availability and higher vacancies coverage Health and Welfare Non Reimb $2,689 2.8 Primarily due to the timing of OPEB expenses, lower dental expenses, vacancies and timing of medical and hospitalization offset by higher prescription drugs expenses, life insurance cost and timing of H&W reimbursable expenses OPEB Current Payment Non Reimb $1,772 5.3 Pensions Non Reimb $0,235 0.4 Reflecting the latest actuarial estimate Other Fringe Benefits Non Reimb $4,228 5.6 Due to lower payroll related expenses, and timing of interagency billing partially offset by higher worker's compensation Reimbursable Overhead Non Reimb $1,862 * Electric Power Non Reimb ($0,174) (7.7) Higher rates Fuel Non Reimb $1,636 3.9 Primarily due to favorable diesel fuel consumption and receipt of the CNG tax credit Insurance Non Reimb $1,875 25.6 Timing of expenses Claims Non Reimb $27,987 35.9 Timing of expenses Maintenance and Other Operating Contracts Non Reimb $18,656 42.4 Mainly due to lower expenses for facility maintenance, bus technology, Shop Program, and vehicle purchases partially offset by higher vehicle rentals, tolls, security and surveillance equipment, bus transfer services and recycling/hazardous waste disposal Professional Service Contracts Non Reimb $20,512 44.5 Timing of interagency billing, lower expenses for Bus Technology, and lower service contracts Materials & Supplies Non Reimb $21,285 34.6 Mainly due to lower usage of general maintenance material and construction material as well as timing of radio equipment maintenance/repairs, partially offset by higher grease and oil lubrication expense and tool purchases Other Business Expenses Non Reimb ($0,154) (2.9) Mainly due to higher NFPS credit card fees Depreciation Non Reimb $6,957 12.4 Non cash expense Other Post Employment Benefits Non Reimb $38,658 48.3 Timing, pending actuarial evaluation at year end close GASB 68 Pension Expense Adjustment Non Reimb $62,325 * Timing, pending actuarial evaluation at year end close Environmental Remediation Non Reimb ($0,119) - Not Budgeted Payroll Reimb $0,506 14.6 Timing of reimbursable projects Health and Welfare Reimb $1,417 100.0 Offset to Reimbursable Overhead Expenses Reimbursable Overhead Reimb ($1,862) * Offset to Health and Welfare Expenses Maintenance and Other Operating Contracts Reimb $0,252 - Timing of reimbursable projects Materials & Supplies Reimb $0,918 100.0 Timing of reimbursable projects Total Expense Variance $230,507 Net Variance $240,337
+```
+[p010_c0003] * Variance exceeds 100%.
+[p010_c0004] (a) - Variance less than 5% or below $ threshold
+
+## Page 11
+
+### [p011_c0001] MTA BUS
+### [p011_c0002] NON-REIMBURSABLE OVERTIME
+### [p011_c0003] Overview
+- [p011_c0004] Overall increase of 14.3M or 18.7 percent compared to YTD Dec 2019 due to increase in vacancy ($7.8M), programmatic maintenance and COVID cleaning ($6.9M). Overall increase of $4.8M or 5.5 percent compared to YTD Dec 2022 due to increase in unscheduled service ($2.2M), scheduled service ($1.9M), and programmatic maintenance and ongoing COVID cleaning ($0.8M).
+### [p011_c0005] Agency Detail
+### [p011_c0006] Underrun of $7.1M vs YTD November Forecast
+- [p011_c0007] Maintenance: Underrun of $6.1M, primarily due to favorable COVID cleaning and programmatic maintenance ($3.9M), unscheduled service ($1.6M) and availability ($1.3M); partially offset by weather ($1.2M). Transportation: Underrun of $1.1M, , primarily due to favorable scheduled and unscheduled service ($7.7M) and weather ($1.4M); partially offset by availability ($8.1M).
+> [p011_c0008] Budget Performance Non-Reimbursable Overtime - YTD Dec (all dollars in millions) Period Adopted Bud Nov Forecast Actual YTD 2019 $62 $68 $77 YTD 2021 $100 $90 $86 YTD 2022 $92 $98 $91 Q4 2022 $23 $29 $22
+
+## Page 12
+
+### [p012_c0001] MTA BUS COMPANY 2022 YEAR-END REPORT EXPLANATIONS OF CASH RECEIPT AND EXPENDITURE VARIANCES
+### [p012_c0002] 2022 ACTUALS VS FINAL ESTIMATE
+### [p012_c0003] RECEIPTS
+- [p012_c0004] • Farebox Revenue of $161.3 million was $5.0 million or 3.2% higher than the Final Estimate, primarily reflecting higher ridership and higher average fare. • Other Operating Revenue of $60.6 million was $22.1 million or 26.7% below the Final Estimate, mainly due to lower advertising revenue, the timing of student fare revenue reimbursement and lower recoveries from other insurance. • Capital and Other Reimbursements of $5.8 million was $1.2 million or 17.4% lower than the Final Estimate, due to reduced scope capital projects.
+### [p012_c0005] EXPENDITURES
+- [p012_c0006] • Payroll of $305.0 million was $12.9 million or 4.1% favorable to the Final Estimate due to a timing variance of $7.7 million reflecting wage adjustments for pending union agreements combined with a real variance of $5.2 million primarily due to vacancies. • Overtime of $91.3 million was $6.9 million or 7.1% favorable to the Final Estimate, reflecting a real variance due to lower unscheduled overtime, and programmatic maintenance partially offset by higher vacancy coverage requirements. • Health and Welfare of $93.7 million was $3.0 million or 3.1% favorable to the Final Estimate reflecting lower dental expenses, the timing of medical and hospitalization and vacancies, partially offset by higher prescription drug expenses, life insurance costs and the timing of reimbursable expenses. • OPEB Current Payment of $29.9 million was $4.8 million or 13.9% favorable to the Final Estimate, primarily due to a real variance of $3.2 million and a timing variance of $1.6 million. • Pension of $60.9 million was $1.6 million or 2.5% favorable to the Final Estimate, due to a timing variance of $1.8 million, offset by $0.2 million unfavorable real variances. • Other Fringe Benefits of $71.5 million was $9.9 million or 16.0% unfavorable to the Final Estimate, representing a real unfavorable variance of $10.4 million driven by higher employee claim payments, partially offset by $0.6 million in timing due to fringe benefits associated with retroactive wage adjustments. • Electric Power of $2.5 million was $0.2 million or 8.9% unfavorable due to higher rates. • Fuel of $42.7 million was $0.4 million or 1.0% unfavorable due to retroactive ConEd CNG billing adjustments. • Insurance of $5.3 million was $2.0 million or 27.4% favorable to the Final Estimate, due to the timing of premium payments. • Claims of $29.4 million was $8.5 million or 22.5% favorable to the Final Estimate, due to the timing of payments.
+
+## Page 13
+
+- [p013_c0001] • Maintenance and Other Operating Contracts of $30.1 million was $19.2 million or 39.0% favorable to the Final Estimate, reflecting a real variance of $14.2 million due to lower expenses for the Shop Program, and the timing of $5.0 million due to delayed facility maintenance, bus technology and vehicle purchases, partially offset by higher vehicle rentals, tolls, security and surveillance equipment, bus transfer services and recycling/hazardous waste disposal. • Professional Service Contracts of $33.0 million was $47.6 million or 59.1% favorable to the Final Estimate, reflecting a favorable timing variance of $19.9 million, which represents the timing of interagency payments, expenses for bus technology, and service contracts and a real variance of $27.7 million due to lower expenses. • Materials and Supplies of $37.3 million was $30.6 million or 45.1% favorable to the Final Estimate, reflecting a $25.1 million real variance due to lower general maintenance material usage, construction material, and the timing of $5.5 million due to radio equipment maintenance/repairs and shop program, partially offset by higher grease and oil lubrication expense and tool purchases. • Other Business Expenses of $4.3 million was $1.5 million or 26.0% favorable to the Final Estimate, reflecting the timing of $1.5 million due to lower Automatic Fare Collection (AFC) fees and mobility tax payments, partially offset by OMNY credit card fees.
+[p013_c0002] The cash receipts and expenditures activity noted above resulted in a net cash deficit of $609.2 million, which was $110.1 million or 15.3% favorable to the Final Estimate. ARPA impact was $15.5 million and the cash deficit variance without ARPA would have been $125.5 million or 17.1%
+### [p013_c0003] 2022 ACTUALS vs. ADOPTED BUDGET
+### [p013_c0004] RECEIPTS
+- [p013_c0005] • Farebox Revenue of $161.3 million was $17.7 million or 9.9% unfavorable to the Adopted Budget, primarily due to lower ridership and partially offset by higher average fare. • Other Operating Revenue of $60.6 million was $6.6 million or 9.8% unfavorable to the Adopted Budget, primarily due to lower student reimbursement, other contract services, and advertising revenue, partially offset by higher recoveries from other insurance. • Capital and Other Reimbursements of $5.8 million remained flat compared to the Adopted Budget.
+### [p013_c0006] EXPENDITURES
+- [p013_c0007] • Payroll of $305.0 million was $12.2 million or 3.9% favorable to the Adopted Budget, primarily due to a favorable timing variance of $7.7 million reflecting wage adjustments for pending union agreements combined with a favorable real variance of $5.2 million mainly due to vacancies. • Overtime of $91.3 million was $0.7 million or 0.8% favorable to the Adopted Budget, reflecting a real variance primarily due to lower unscheduled overtime, and programmatic maintenance, partially offset by lower availability.
+
+## Page 14
+
+- [p014_c0001] • Health & Welfare of $93.7 million was $1.5 million or 1.6% unfavorable to the Adopted Budget, primarily reflecting higher rates. • OPEB Current Payment of $29.9 million was $4.6 million or 18.0% unfavorable to the Adopted Budget, primarily due to more retirees/beneficiaries than projected. • Pension of $60.9 million was $1.4 million or 2.3% higher than the Adopted Budget, reflecting higher pension expenses. • Other Fringe Benefits of $71.5 million was $11.4 million or 19.0% higher than the Adopted Budget, primarily due to higher employee claim payments. • Electric Power of $2.5 million was $0.7 million or 40.2% higher than the Adopted Budget, primarily due to higher electric rates. • Fuel of $42.7 million was $12.7 million or 42.3% higher than the Adopted Budget, primarily due to higher diesel fuel rates. • Insurance of $5.3 million was $3.8 million or 41.6% favorable to the Adopted Budget, primarily due to the timing of premium payments. • Claims expense of $29.4 million was $8.5 million or 22.5% lower than the Adopted Budget, due to the timing of settlements. • Maintenance and Other Operating Contracts of $30.1 million was $11.8 million or 28.2% lower than the Adopted Budget, primarily due to lower expenses for Shop Program, and the timing of facility maintenance, bus technology and vehicle purchases, partially offset by higher vehicle rentals, tolls, security and surveillance equipment, bus transfer services and recycling/hazardous waste disposal. • Professional Service Contracts of $33.0 million was $10.4 million or 23.9% favorable to the Adopted Budget, reflecting the timing of interagency billing, and lower expenses for bus technology, and service contracts. • Materials and Supplies of $37.3 million was $20.9 million or 35.9% lower than the Adopted Budget, mainly due to lower usage of general maintenance material, lower construction material and the timing of radio equipment maintenance/repairs and shop programs, partially offset by higher grease and oil lubrication expense and tool purchases. • Other Business Expenses of $4.3 million was $0.7 million or 14.4% favorable to the Adopted Budget, reflecting lower Automatic Fare Collection fees, and mobility tax payments, partially offset by OMNY credit card fees.
+[p014_c0002] The cash receipts and expenditures activity noted above resulted in a net cash deficit of $609.2 million, which was $12.5 million or 2.0% lower than the Adopted Budget.
+
+## Page 15
+
+### [p015_c0001] MTA BUS COMPANY Cash Receipts and Expenditures 2022 Adopted Budget and Final Estimate vs. Preliminary Actual ($ in millions)
+[p015_c0002]
+
+```text
+2022 Favorable/(Unfavorable) Variance Adopted Final Preliminary Adopted Budget Final Estimate Budget Estimate Actual $ % $ % Receipts Farebox Revenue $ 178,962 $ 156,300 $ 161,289 $ (17,673) (9.9) $ 4,989 3.2 Other Operating Revenue 67,138 82,607 60,555 (6,582) (9.8) (22,052) (26.7) Capital and Other Reimbursements 5,823 6,993 5,779 (0,044) (0.8) (1,214) (17.4) Total Receipts $ 251,923 $ 245,900 $ 227,623 $ (24,299) (9.6) $ (18,277) (7.4) Expenditures Labor: Payroll $ 317,226 $ 317,924 $ 305,009 $ 12,217 3.9 $ 12,914 4.1 Overtime 91,977 98,196 91,252 0,725 0.8 6,944 7.1 Health and Welfare 92,192 96,712 93,667 (1,475) (1.6) 3,045 3.1 OPEB Current Payment 25,367 34,758 29,923 (4,556) (18.0) 4,835 13.9 Pensions 59,529 62,433 60,879 (1,350) (2.3) 1,554 2.5 Other Fringe Benefits 60,111 61,666 71,516 (11,404) (19.0) (9,849) (16.0) GASB Account - - - - - - - Reimbursable Overhead - - - - - - - Total Labor Expenditures $ 646,402 $ 671,689 $ 652,246 $ (5,844) (0.9) $ 19,443 2.9 Non-Labor: Electric Power $ 1,759 $ 2,264 $ 2,466 $ (0,707) (40.2) $ (0,202) (8.9) Fuel 30,012 42,313 42,719 (12,707) (42.3) (0,406) (1.0) Insurance 9,089 7,313 5,310 3,779 41.6 2,003 27.4 Claims 37,878 37,877 29,370 8,508 22.5 8,507 22.5 Maintenance and Other Operating Contracts 41,888 49,278 30,071 11,817 28.2 19,207 39.0 Professional Service Contracts 43,370 80,644 33,014 10,355 23.9 47,630 59.1 Materials & Supplies 58,110 67,895 37,253 20,857 35.9 30,642 45.1 Other Business Expenses 5,070 5,861 4,339 0,731 14.4 1,522 26.0 Total Non-Labor Expenditures $ 227,176 $ 293,445 $ 184,542 $ 42,634 18.8 $ 108,903 37.1 Total Expenditures Before Depreciation $ 873,578 $ 965,134 $ 836,788 $ 36,790 4.2 $ 128,346 13.3 Total Expenditures $ 873,578 $ 965,134 $ 836,788 $ 36,790 4.2 $ 128,346 13.3 Baseline Cash Deficit $ (621,655) $ (719,234) $ (609,165) $ 12,490 2.0 $ 110,069 15.3
+```
+[p015_c0003] *Totals may not add due to rounding
+
+## Page 16
+
+### [p016_c0001] MTA BUS COMPANY Explanation of Variances between 2022 Final Estimate and Preliminary Actual: Cash December 2022 Year-to-Date
+[p016_c0002]
+
+```text
+Generic Revenue or Expense Category Variance Fav (Unfav) Reason for Variance $ % Farebox Revenue $4,989 3.2 Higher ridership and higher average fare Other Operating Revenue ($22,052) (26.7) Mainly due to timing of lower advertising revenue, timing Student fare revenue reimbursement as well as lower recoveries from Other Insurance Capital and Other Reimbursements ($1,214) (17.4) Mainly due to reduced scope of capital projects Payroll $12,914 4.1 Mainly due to a favorable timing variance reflecting wage adjustments for pending union agreements combined with a favorable real variance reflecting the net impact of hiring Overtime $6,944 7.1 Primarily lower unscheduled overtime, COVID-19 related cleaning, and programmatic maintenance partially offset by lower availability and higher vacancies coverage Health and Welfare $3,045 3.1 Primarily due to the timing of OPEB expenses, lower dental expenses and timing of medical and hospitalization offset by higher prescription drugs expenses, life insurance cost and timing of H&W reimbursable expenses OPEB Current Payment $4,835 13.9 Pensions $1,554 2.5 Timing of Payments Other Fringe Benefits ($9,849) (16.0) primarily due to a real variance driven by higher employee claim payments partially offset by a favorable timing variance for fringe benefits associated with RWA Reimbursable Overhead $0.000 - (a) GASB account $0.000 - (a) Electric Power ($0,202) (8.9) Higher expenses Fuel ($0,406) (1.0) Primarily due to retroactive ConEd CNG billing adjustments Insurance $2,003 27.4 Timing of Payments Claims $8,507 22.5 Timing of Payments Maintenance and Other Operating Contracts $19,207 39.0 Mainly due to lower expenses for facility maintenance, bus technology, Shop Program, and vehicle purchases partially offset by higher vehicle rentals, tolls, security and surveillance equipment, bus transfer services and recycling/hazardous waste disposal Professional Service Contracts $47,630 59.1 Timing of interagency billing, lower expenses for Bus Technology, and lower service contracts Materials & Supplies $30,642 45.1 Mainly due to lower usage of general maintenance material and construction material as well as timing of radio equipment maintenance/repairs, partially offset by higher grease and oil lubrication expense and tool purchases Other Business Expenses $1,522 26.0 Primarily favorable Print and Stationery Supplies, lower Automatic Fare Collection (AFC) fees, Mobility tax and timing of Other Miscellaneous expenses offset by NFPS credit card fees
+```
+[p016_c0003] Total Expense Variance $128,346
+[p016_c0004] Net Variance $110,069
+[p016_c0005] * Variance exceeds 100%.
+[p016_c0006] (a) - Variance less than 5% or below $ threshold
+
+## Page 17
+
+### [p017_c0001] MTA BUS COMPANY 2022 Adopted Budget and November Forecast vs. Preliminary Actual Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p017_c0002]
+
+```text
+2022 Favorable/(Unfavorable) Variance Adopted Preliminary Adopted Budget Final Estimate Budget Final Estimate Actual $ % $ % Receipts Farebox Revenue $ - $ (0.000) $ (2.141) $ (2.141) - $ (2.141) * Other Operating Revenue 47.353 (484.602) (510.241) (557.594) * (25.639) (5.3) Capital and Other Reimbursements - - (0.328) (0.328) - (0.328) - Total Receipts $ 47.353 $ (484.602) $ (512.710) $ (560.063) * $ (28.108) (5.8) Expenditures Labor: Payroll $ 0.419 $ 0.418 $ 0.928 $ 0.509 * $ 0.510 * Overtime (0.001) 0.001 0.001 0.002 * (0.000) (29.9) Health and Welfare 0.000 (0.001) (1.062) (1.062) * (1.061) * OPEB Current Payment (0.001) (1.614) 1.449 1.450 * 3.063 * Pensions 0.181 (0.819) 0.500 0.319 * 1.319 * Other Fringe Benefits 15.185 14.185 0.250 (14.935) (98.4) (13.935) (98.2) GASB Account - - - - - - - Reimbursable Overhead - - - - - - - Total Labor Expenditures $ 15.783 $ 12.171 $ 2.066 $ (13.717) (86.9) $ (10.105) (83.0) Non-Labor: Electric Power $ - $ (0.001) $ (0.029) $ 0.029 - $ 0.028 * Fuel (0.001) - (2.042) (2.041) * (2.042) - Insurance 0.001 0.001 0.129 0.128 * 0.128 * Claims 40.114 40.114 20.634 (19.480) (48.6) (19.480) (48.6) Maintenance and Other Operating - (5.001) (4.702) (4.702) - 0.299 6.0 Professional Service Contracts - (34.519) (7.401) (7.401) - 27.118 78.6 Materials & Supplies - (5.500) 2.939 2.939 - 8.439 * Other Business Expenses (0.001) (0.501) 1.175 1.176 * 1.676 * Total Non-Labor Expenditures $ 40.113 $ (5.406) $ 10.703 $ (29.410) (73.3) $ 16.109 * Total Cash Conversion Adjustments before Depreciation and GASB Adjs. $ 55.896 $ 6.765 $ 12.769 $ (43.127) (77.2) $ 6.004 88.8 Depreciation $ 56.163 $ 56.163 $ 49.206 $ (6.957) (12.4) $ (6.957) (12.4) GASB 87 Lease Adjustment $ - $ 0.001 $ 0.001 $ 0.001 - $ (0.000) (3.8) GASB 75 OPEB Expense Adjustm 80.000 80.000 41.342 (38.658) (48.3) (38.658) (48.3) GASB 68 Pension Expense Adjustr 54.900 45.600 (16.725) (71.625) * (62.325) * Environmental Remediation - - 0.119 (0.119) - 0.119 - Total Expenditures $246.959 $188.528 $86.712 $160.247 64.9 $ (101.816) (54.0) Baseline Total Cash Conversion $ 294.312 $ (296.074) $ (425.998) $ (720.310) * $ (129.924) (43.9)
+```
+[p017_c0003] *Totals may not add due to rounding
+
+## Page 18
+
+### [p018_c0001] MTA BUS COMPANY 2022 YEAR-END REPORT EXPLANATIONS OF VARIANCES ON RIDERSHIP (UTILIZATION)
+### [p018_c0002] 2022 FINAL ESTIMATE vs. ACTUALS
+[p018_c0003] Ridership of 82.6 million was 1.8 million, or 2.3% higher than the Final Estimate.
+### [p018_c0004] 2022 ADOPTED BUDGET vs. ACTUALS
+[p018_c0005] Ridership of 82.6 million was 12.4 million, or 13.1% lower than the Adopted Budget. Ridership projections in the Adopted Budget were based on the initial McKinsey ridership assumptions that were subsequently adjusted lower in the 2022 July Plan.
+
+## Page 19
+
+### [p019_c0001] MTA BUS COMPANY 2022 Adopted Budget and November Forecast vs. Preliminary Actual UTILIZATION (in millions)
+[p019_c0002]
+
+```text
+December Year-to-Date Favorable/(Unfavorable) Variance 2022 Preliminary Adopted Budget Final Estimate Actual 2022 Adopted Budget 2022 Final Estimate $ $ % % Farebox Revenue Fixed Route $ 178.962 $ 156.300 $ 163.430 $ (15.532) $ 7.129 (8.7) 4.6 Total Farebox Revenue $ 178.962 $ 156.300 $ 163.430 $ (15.532) $ 7.129 (8.7) 4.6 Ridership Fixed Route 95.043 80.768 82.609 (12.434) 1.840 (13.1) 2.3 Total Ridership 95.043 80.768 82.609 (12.434) 1.840 (13.1) 2.3
+```
+
+## Page 20
+
+### [p020_c0001] YTD Non-Rmb Revenue and Expenses vs Forecast
+[p020_c0002] ($ in Millions)
+[p020_c0003]
+
+```text
+MTA Bus Budget Actual Variance Total Revenue $723.509 $734.226 $10.717 Farebox Revenue $156.300 $163.430 $7.130 Other Revenue $567.209 $570.796 $3.587 Total Expense $1,146.669 $917.393 $229.276 Labor Expenses $678.036 $648.205 $29.831 Non-Labor Expenses $286.869 $195.245 $91.624 Non-Cash Liabilities $181.764 $73.943 $107.821 Net Surplus/(Deficit) - Accrued ($423.159) ($183.167) $239.992
+```
+
+## Page 21
+
+### [p021_c0001] MTA BUS COMPANY 2022 YEAR-END REPORT EXPLANATION OF VARIANCES ON NON-REIMBURSABLE AND REIMBURSABLE POSITIONS By FUNCTION and DEPARTMENT
+### [p021_c0002] 2022 ACTUALS vs. FINAL ESTIMATE
+[p021_c0003] MTA Bus Company's employee staff count of 3,738 positions was 276 lower than the Final Estimate of 4,014 positions.
+[p021_c0004] The 276 positions were in Administration (41), Operations (-1), Maintenance (230), Engineering/Capital (4) and Public Safety (2)
+
+## Page 22
+
+### [p022_c0001] MTA BUS COMPANY NON-REIMBURSABLE AND REIMBURSABLE BY FUNCTION AND DEPARTMENT FULL - TIME POSITIONS AND FULL - TIME EQUIVALENTS
+[p022_c0002]
+
+```text
+December 31, 2022 Favorable (Unfavorable) Variance Adopted Final Adopted Budget Final Estimate Budget Estimate Actual Variance Percent Variance Percent Administration Office of the EVP 3 3 3 - - - - Human Resources 16 16 9 7 43.8 7 43.8 Office of Management and Budget 14 15 8 6 42.9 7 46.7 Material 15 15 9 6 40.0 6 40.0 Controller 18 18 16 2 11.1 2 11.1 Office of the President 4 4 - 4 100.0 4 100.0 System Safety Administration - - - - - - - Law 20 20 13 7 35.0 7 35.0 Corporate Communications - - - - - - - Labor Relations - - - - - - - Strategic Office 19 19 14 5 26.3 5 26.3 Non-Departmental 7 3 - 7 100.0 3 100.0 Total Administration 116 113 72 44 37.9 41 36.3 Operations Buses 2,328 2,335 2,369 (41) (1.8) (34) (1.5) Office of the Executive VP 6 5 1 5 83.3 4 80.0 Safety & Training 68 66 48 20 29.4 18 27.3 Road Operations 141 133 129 12 8.5 4 3.0 Transportation Support 25 31 32 (7) (28.0) (1) (3.2) Operations Planning 34 34 26 8 23.5 8 23.5 Revenue Control 6 6 6 - - - - Total Operations 2,608 2,610 2,611 (3) (0.1) (1) - Maintenance Buses 723 724 678 45 6.2 46 6.4 Maintenance Support/CMF 335 339 192 143 42.7 147 43.4 Facilities 76 85 63 13 17.1 22 25.9 Supply Logistics 104 104 89 15 14.4 15 14.4 Total Maintenance 1,238 1,252 1,022 216 17.4 230 18.4 Capital Program Management Total Engineering/Capital 35 26 22 13 37.1 4 15.4 Security Total Public Safety 13 13 11 2 15.4 2 15.4 Total Positions 4,010 4,014 3,738 272 6.8 276 6.9 Non-Reimbursable 3,972 3,976 3,704 268 6.7 272 6.8 Reimbursable 38 38 34 4 10.5 4 10.5 Total Full-Time 3,992 3,996 3,723 269 6.7 273 6.8 Total Full-Time Equivalents 18 18 15 3 16.7 3 16.7
+```
+
+## Page 23
+
+### [p023_c0001] MTA BUS COMPANY 2022 YEAR-END REPORT EXPLANATIONS of VARIANCES on FULL-TIME POSITIONS AND FULL-TIME EQUIVALENTS By OCCUPATIONAL GROUP
+### [p023_c0002] 2022 ACTUALS vs. FINAL ESTIMATE
+[p023_c0003] Effective December 31, 2022, MTA Bus Company's employee staff count of 3,738 positions was 276 lower than the Final Estimate of 4,014 positions.
+[p023_c0004] The 276 positions consisted of Operational Hourlies (176), Professional (37), and Managers/Supervisors (63) titles.
+
+## Page 24
+
+### [p024_c0001] MTA BUS COMPANY NON-REIMBURSABLE AND REIMBURSABLE BY FUNCTION AND DEPARTMENT TOTAL FULL - TIME POSITIONS AND FULL - TIME EQUIVALENTS
+[p024_c0002]
+
+```text
+December 31, 2022 Favorable (Unfavorable) Variance Adopted Final Adopted Budget Final Estimate Budget Estimate Actual Variance Percent Variance Percent Administration Managers/Supervisors 46 47 27 19 41.3 20 42.6 Professional, Technical, Clerical 63 63 45 18 28.6 18 28.6 Operational Hourlies 7 3 - 7 100.0 3 100.0 Total Administration 116 113 72 44 37.9 41 36.3 Operations Managers/Supervisors 319 318 316 3 0.9 2 0.6 Professional, Technical, Clerical 45 45 35 10 22.2 10 22.2 Operational Hourlies 2,244 2,247 2,260 (16) (0.7) (13) (0.6) Total Operations 2,608 2,610 2,611 (3) (0.1) (1) - Maintenance Managers/Supervisors 241 248 212 29 12.0 36 14.5 Professional, Technical, Clerical 35 38 30 5 14.3 8 21.1 Operational Hourlies 962 966 780 182 18.9 186 19.3 Total Maintenance 1,238 1,252 1,022 216 17.4 230 18.4 Engineering/Capital Managers/Supervisors 21 15 12 9 42.9 3 20.0 Professional, Technical, Clerical 14 11 10 4 28.6 1 9.1 Operational Hourlies - - - - - - - Total Engineering/Capital 35 26 22 13 37.1 4 15.4 Public Safety Managers/Supervisors 8 8 6 2 25.0 2 25.0 Professional, Technical, Clerical 5 5 5 0 - - - Operational Hourlies - - - - - - - Total Public Safety 13 13 11 2 15.4 2 15.4 Total Baseline Positions Managers/Supervisors 635 636 573 62 9.8 63 9.9 Professional, Technical, Clerical 162 162 125 37 22.8 37 22.8 Operational Hourlies 3,213 3,216 3,040 173 5.4 176 5.5 Total Baseline Positions 4,010 4,014 3,738 272 6.8 276 6.9
+```
+
+## Page 25
+
+### [p025_c0001] MTA Bus Company Preliminary 2020 Overtime Results Non-Reimbursable/Reimbursable Overtime ($ in millions)
+[p025_c0002]
+
+```text
+2022 Adopted Budget 2022 Final Estimate Actuals 2022 Adopted vs. Actuals 2021 Final Estimate vs. Actuals Hours $ Hours $ Hours $ Var. - Fav./(Unfav) Var. - Fav./(Unfav) Var. - Fav./(Unfav) Hours $ Hours $ Hours $ NON-REIMBURSABLE OVERTIME Scheduled Service 696,565 $30,494 696,565 $32,844 585,663 $30,218 110,902 $0,275 110,902 $2,626 110,902 $2,626 15.9% 0.9% 15.9% 8.0% 15.9% 8.0% Unscheduled Service 235,051 $11,537 239,351 $13,354 124,633 $6,264 110,418 $5,273 114,718 $7,091 47.9% 53.1% 47.0% 45.7% 47.9% 53.1% 47.9% 53.1% Programmatic/Routine Maintenance 600,023 $30,559 604,439 $30,578 506,108 $26,633 93,915 $3,925 98,331 $3,945 16.3% 12.9% 15.7% 12.8% 16.3% 12.9% 16.3% 12.9% Unscheduled Maintenance 0 $0,000 0 $0,000 0 $0,000 - $0,000 - $0,000 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% 0.0% Vacancy/Absentee Coverage 316,671 $17,524 316,671 $19,309 476,629 $26,106 (159,957) ($8,582) (159,957) ($6,796) -50.5% -35.2% -50.5% -49.0% -50.5% -35.2% -50.5% -35.2% Weather Emergencies 45,129 $1,735 45,129 $1,975 29,538 $1,726 15,591 $0,009 15,591 $0,248 34.5% 12.6% 34.5% 0.5% 34.5% 12.6% 34.5% 12.6% Safety/Security/Law Enforcement 2,641 $0,128 2,641 $0,136 1,291 $0,100 1,350 $0,028 1,350 $0,036 51.1% 26.3% 51.1% 21.8% 51.1% 26.3% 51.1% 26.3% Other 0 $0,000 0 $0,000 66 $0,005 (66) ($0,005) (66) ($0,005) #DIV/0! #DIV/0! #DIV/0! #DIV/0! #DIV/0! #DIV/0! #DIV/0! #DIV/0! TOTAL NON-REIMBURSABLE OVERTIME: 1,896,080 $91,976 1,904,796 $98,197 1,723,928 $91,052 172,152 $0,925 180,868 $7,145 9.1% 7.5% 9.1% 1.0% 9.5% 7.5% 9.1% 7.5% REIMBURSABLE OVERTIME 1 0 $0,000 0 $0,000 2,800 $0,201 (2,800) ($0,201) (2,800) ($0,201) TOTAL OVERTIME 1,896,080 $91,976 1,904,796 $98,197 1,726,728 $91,253 169,352 $0,724 178,068 $6,944 9.3% 7.1%
+```
+[p025_c0003] _1 All other & reimbursable budget and actual includes PTE $'s only. Does not include hours._
+[p025_c0004] _* Above 100%_
+[p025_c0005] _91.3_
+[p025_c0006] _0.7_
+[p025_c0007] _6.9_
+[p025_c0008] _1_
+
+## Page 26
+
+### [p026_c0001] MTA Bus Company Preliminary 2020 Overtime Results Non-Reimbursable/Reimbursable Overtime ($ in millions)
+[p026_c0002] December 2022 Year-to-Date vs. Final Estimate
+[p026_c0003]
+
+```text
+Var. - Fav./(Unfav) Explanations Hours $ Scheduled Service 110,902 15.9% $2,626 8.0% Favorable scheduled service and running time/traffic Unscheduled Service 114,718 47.9% $7,091 53.1% Lower unscheduled service and running time/traffic Programmatic/Routine Maintenance 98,331 16.3% 3,945 12.9% Favorable Programmatic Maintenance and COVID-19 cleaning Unscheduled Maintenance - 0.0% - 0.0% Vacancy/Absentee Coverage (159,957) -50.5% ($6,796) -35.2% Vacancy/Absentee Coverage due to poor availability Weather Emergencies 15,591 34.5% $0,248 12.6% Lower than budgeted weather events Safety/Security/Law Enforcement 1,350 51.1% $0,036 26.3% Other (66) #DIV/0! ($0,005) #DIV/0! Total Unscheduled TOTAL NON-REIMBURSABLE OVERTIME: 180,868 9.5% $7,145 7.3% REIMBURSABLE OVERTIME 1 (4,153) ($0,196) TOTAL OVERTIME 209,295 10.9% $3,926 4.2%
+```
+[p026_c0004] _1 All other & reimbursable budget and actual includes PTE $'s only. Does not include hours._
+[p026_c0005] _* Above 100%_
+[p026_c0006] _1_
+
+## Page 27
+
+### [p027_c0001] MTA Bus Company 2022 Overtime Reporting Overtime legend
+### [p027_c0002] Type
+### [p027_c0003] Definition
+[p027_c0004]
+
+```text
+Scheduled Service Crew book/Regular Run/Shift hours (above 8 hours) required by train crews, bus/tower/block operators, transportation supervisors/dispatchers, fare sales and collection, Train & Engineers, as well as non-transportation workers whose work is directly related to providing service (includes coverage for holidays). Unscheduled Service Service coverage resulting from extraordinary events not related to weather, such as injuries, mechanical breakdowns, unusual traffic, tour length, late tour relief, and other requirements that arise that are non-absence related. Programmatic/Routine Maintenance Program Maintenance work for which overtime is planned (e.g. Railroad Tie Replacement, Sperry Rail Testing, Running Board Replacement Programs). This also includes Routine Maintenance work for which OT has been planned, as well as all other maintenance not resulting from extraordinary events, including running repairs. Program/Routine maintenance work is usually performed during hours that are deemed more practical in order to minimize service disruptions, and includes contractual scheduled pay over 8 hours. Unscheduled Maintenance Resulting from an extraordinary event (not weather-related) requiring the use of unplanned maintenance to perform repairs on trains, buses, subway and bus stations, depots, tracks and administrative and other facilities, including derailments, tour length and weekend coverage. Vacancy/Absentee Coverage Provides coverage for an absent employee or a vacant position. Weather Emergencies Coverage necessitated by extreme weather conditions (e.g. snow, flooding, hurricane, and tornadoes), as well as preparatory and residual costs. Safety/Security/Law Enforcement Coverage required to provide additional customer & employee protection and to secure MTA fleet facilities, transportation routes, and security training. Other Includes overtime coverage for clerical, administrative positions that are eligible for overtime. Reimbursable Overtime Overtime incurred to support projects that are reimbursed from the MTA Capital Program and other funding sources.
+```

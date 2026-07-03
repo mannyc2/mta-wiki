@@ -1,0 +1,165 @@
+{
+  "run_id": "2026-06-10T22-56-13-249Z_1976810-1c537fb6_ingest_20110118-34th-cac-mtg-minutes",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T01:23:27.062Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-offboard-fare-34th-transitway",
+        "local_observation_id": "treatment_off_board_fare_34th_st_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "treatment_off-board-fare-34th-st-2011",
+            "description": "Off-board fare collection discussed at 34th Street Transitway CAC meeting",
+            "evidence_refs": [
+              {
+                "source_id": "20110118_34th_cac_mtg_minutes",
+                "block_id": "p001_c0009",
+                "source_quote": "Mr. Orosz also discussed NYCT plans to introduce off-board fare collection along 34 th Street this year (preceding Transitway implementation)"
+              }
+            ]
+          }
+        ],
+        "rationale": "Direct evidence from CAC meeting minutes: Mr. Orosz discussed NYCT plans for off-board fare collection along 34th Street preceding Transitway implementation, explicitly linked to the 34th Street Transitway concept.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p001_c0009",
+            "source_quote": "Mr. Orosz also discussed NYCT plans to introduce off-board fare collection along 34 th Street this year (preceding Transitway implementation)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-sbs-stations-34th-transitway",
+        "local_observation_id": "treatment_sbs_stations_34th_st_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "treatment_sbs-stations-34th-st-2011",
+            "description": "SBS station locations discussed at 34th Street Transitway CAC meeting",
+            "evidence_refs": [
+              {
+                "source_id": "20110118_34th_cac_mtg_minutes",
+                "block_id": "p001_c0009",
+                "source_quote": "Ted Orosz continued the presentation, identifying potential Select Bus Service (SBS) station locations between Fifth and Third Avenues"
+              }
+            ]
+          }
+        ],
+        "rationale": "Direct evidence from CAC meeting minutes: Ted Orosz identified potential SBS station locations between Fifth and Third Avenues as part of the Transitway presentation.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p001_c0009",
+            "source_quote": "Ted Orosz continued the presentation, identifying potential Select Bus Service (SBS) station locations between Fifth and Third Avenues"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-lanes-34th-transitway",
+        "local_observation_id": "treatment_bus_lanes_34th_st_2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "treatment_bus-lanes-34th-st-2011",
+            "description": "Future bus lanes on 34th Street discussed at Transitway CAC meeting",
+            "evidence_refs": [
+              {
+                "source_id": "20110118_34th_cac_mtg_minutes",
+                "block_id": "p001_c0015",
+                "source_quote": "Consideration needs to be given to the snow removal process in the future bus lanes."
+              },
+              {
+                "source_id": "20110118_34th_cac_mtg_minutes",
+                "block_id": "p002_c0001",
+                "source_quote": "Clarify whether all buses operating on 34 th Street are allowed to use the bus lanes."
+              }
+            ]
+          }
+        ],
+        "rationale": "Direct evidence from CAC meeting minutes: discussion of snow removal in future bus lanes and clarifying which buses may use the lanes are part of the 34th Street Transitway concept planning.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p001_c0015",
+            "source_quote": "Consideration needs to be given to the snow removal process in the future bus lanes."
+          },
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p002_c0001",
+            "source_quote": "Clarify whether all buses operating on 34 th Street are allowed to use the bus lanes."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-signal-priority-34th-transitway",
+        "local_observation_id": "treatment_signal_prioritization_34th_st",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "treatment_signal-prioritization-34th-st",
+            "description": "Signal prioritization for buses along 34th Street discussed at Transitway CAC meeting",
+            "evidence_refs": [
+              {
+                "source_id": "20110118_34th_cac_mtg_minutes",
+                "block_id": "p005_c0001",
+                "source_quote": "The use of signal prioritization for buses along 34 th Street."
+              }
+            ]
+          }
+        ],
+        "rationale": "Direct evidence from CAC meeting minutes: signal prioritization for buses was discussed as part of the Transitway operations along 34th Street.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p005_c0001",
+            "source_quote": "The use of signal prioritization for buses along 34 th Street."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-transitway-config-ideas",
+        "local_observation_id": "treatment_transitway_configuration_ideas",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_34th-street-transitway-concept",
+            "object_id": "treatment_transitway-configuration-ideas",
+            "description": "Transitway configuration design concepts discussed at Transitway CAC meeting",
+            "evidence_refs": [
+              {
+                "source_id": "20110118_34th_cac_mtg_minutes",
+                "block_id": "p003_c0004",
+                "source_quote": "Regarding the configuration of the Transitway: - Consider a center median along the entire corridor or along sections of 34 th Street where sidewalks are not at maximum capacity."
+              }
+            ]
+          }
+        ],
+        "rationale": "Direct evidence from CAC meeting minutes: Transitway configuration ideas including center median and elevated busway were discussed as design concepts for the 34th Street Transitway.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac_mtg_minutes",
+            "block_id": "p003_c0004",
+            "source_quote": "Regarding the configuration of the Transitway: - Consider a center median along the entire corridor or along sections of 34 th Street where sidewalks are not at maximum capacity."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-22-11-499Z_2111393-43d1a2ef_canonicalize_2026-06-10t22-56-13-249z-1976810-1c537fb6-ingest-20110118-34th-cac-mtg-minutes-treatment-relations"
+}

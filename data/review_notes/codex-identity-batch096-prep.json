@@ -1,0 +1,220 @@
+{
+  "batch_id": "codex-identity-batch096",
+  "prepared_count": 8,
+  "all_pass": true,
+  "proposed_aliases": [
+    {
+      "kind": "route",
+      "alias_id": "route_bm2-brt-south-brooklyn-b82",
+      "target_id": "route_bm2-brt-south-brooklyn-2017",
+      "reason": "Both records represent the same global BM2 express bus route. The alias and target have route_id BM2, route_type_normalized express, service_variant express, Brooklyn borough context, and South Brooklyn/Pennsylvania Avenue evidence; no conflicting route variant is present.",
+      "evidence": [
+        {
+          "record_id": "route_bm2-brt-south-brooklyn-b82",
+          "source_id": "brt_south_brooklyn_b82",
+          "block_id": "p020_c0002",
+          "quote": "Serves 5 bus routes (B82 Local, B82 Limited, B83, BM2, BM5)"
+        },
+        {
+          "record_id": "route_bm2-brt-south-brooklyn-2017",
+          "source_id": "brt_south_brooklyn_b82_dec2017",
+          "block_id": "p023_c0002",
+          "quote": "Serves 5 bus routes (B82 Local, B82 Limited, B83, BM2, BM5)"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_bm2-brt-south-brooklyn-jan2018",
+      "target_id": "route_bm2-brt-south-brooklyn-2017",
+      "reason": "Both records represent the same global BM2 express bus route. The alias and target have route_id BM2, route_type_normalized express, service_variant express, Brooklyn borough context, and matching South Brooklyn/Pennsylvania Avenue route-list evidence.",
+      "evidence": [
+        {
+          "record_id": "route_bm2-brt-south-brooklyn-jan2018",
+          "source_id": "brt_south_brooklyn_b82_jan2018",
+          "block_id": "p017_c0002",
+          "quote": "Serves 5 bus routes (B82 Local, B82 Limited, B83, BM2, BM5)"
+        },
+        {
+          "record_id": "route_bm2-brt-south-brooklyn-2017",
+          "source_id": "brt_south_brooklyn_b82_dec2017",
+          "block_id": "p023_c0002",
+          "quote": "Serves 5 bus routes (B82 Local, B82 Limited, B83, BM2, BM5)"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_bm2-express-cb18-jun2017",
+      "target_id": "route_bm2-brt-south-brooklyn-2017",
+      "reason": "Both records represent the same global BM2 express bus route. The alias display name is BM2 Express and its structured fields match the target on route_id BM2, route_type_normalized express, service_variant express, and Brooklyn context; the source evidence places BM2 in the same South Brooklyn bus-priority route set.",
+      "evidence": [
+        {
+          "record_id": "route_bm2-express-cb18-jun2017",
+          "source_id": "brt_south_brooklyn_b82_cb18_jun2017",
+          "block_id": "p037_c0004",
+          "quote": "a green sign for \"BM2\", and a white sign for \"Flatlands Av & E 105 St\""
+        },
+        {
+          "record_id": "route_bm2-brt-south-brooklyn-2017",
+          "source_id": "brt_south_brooklyn_b82_dec2017",
+          "block_id": "p023_c0002",
+          "quote": "Serves 5 bus routes (B82 Local, B82 Limited, B83, BM2, BM5)"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_bm3-church-ave-cb14",
+      "target_id": "route_bm3-church-ave-cb12",
+      "reason": "Both records represent the same global BM3 express bus route. The alias and target have route_id BM3, route_type_normalized express, service_variant express, Brooklyn borough context, and the same Church Avenue source block text describing BM3 and BM4 express buses with direct Ocean Avenue service.",
+      "evidence": [
+        {
+          "record_id": "route_bm3-church-ave-cb14",
+          "source_id": "church_ave_cb14_tc_may2019",
+          "block_id": "p007_c0002",
+          "quote": "BM3 & BM4 express buses ... Direct service along Ocean Ave to Midtown & Downtown"
+        },
+        {
+          "record_id": "route_bm3-church-ave-cb12",
+          "source_id": "church_ave_cb12_jun2019",
+          "block_id": "p007_c0002",
+          "quote": "BM3 & BM4 express buses ... Direct service along Ocean Ave to Midtown & Downtown"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_bm3-church-ave-forum",
+      "target_id": "route_bm3-church-ave-cb12",
+      "reason": "Both records represent the same global BM3 express bus route. The alias and target have route_id BM3, route_type_normalized express, service_variant express, Brooklyn borough context, and the same Church Avenue source block text describing BM3 and BM4 express buses with direct Ocean Avenue service.",
+      "evidence": [
+        {
+          "record_id": "route_bm3-church-ave-forum",
+          "source_id": "church_ave_public_forum_jul2019",
+          "block_id": "p007_c0002",
+          "quote": "BM3 & BM4 express buses ... Direct service along Ocean Ave to Midtown & Downtown"
+        },
+        {
+          "record_id": "route_bm3-church-ave-cb12",
+          "source_id": "church_ave_cb12_jun2019",
+          "block_id": "p007_c0002",
+          "quote": "BM3 & BM4 express buses ... Direct service along Ocean Ave to Midtown & Downtown"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_bm3-church-ave-oct2019",
+      "target_id": "route_bm3-church-ave-cb12",
+      "reason": "Both records represent the same global BM3 express bus route. The alias and target have route_id BM3, route_type_normalized express, service_variant express, Brooklyn borough context, and the same Church Avenue source block text describing BM3 and BM4 express buses with direct Ocean Avenue service.",
+      "evidence": [
+        {
+          "record_id": "route_bm3-church-ave-oct2019",
+          "source_id": "church_ave_project_update_oct2019",
+          "block_id": "p007_c0002",
+          "quote": "BM3 & BM4 express buses ... Direct service along Ocean Ave to Midtown & Downtown"
+        },
+        {
+          "record_id": "route_bm3-church-ave-cb12",
+          "source_id": "church_ave_cb12_jun2019",
+          "block_id": "p007_c0002",
+          "quote": "BM3 & BM4 express buses ... Direct service along Ocean Ave to Midtown & Downtown"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_bm4-church-ave-cb14",
+      "target_id": "route_bm4-church-ave-cb12",
+      "reason": "Both records represent the same global BM4 express bus route. The alias and target have route_id BM4, route_type_normalized express, service_variant express, Brooklyn borough context, and the same Church Avenue source block text describing BM3 and BM4 express buses with direct Ocean Avenue service.",
+      "evidence": [
+        {
+          "record_id": "route_bm4-church-ave-cb14",
+          "source_id": "church_ave_cb14_tc_may2019",
+          "block_id": "p007_c0002",
+          "quote": "BM3 & BM4 express buses ... Direct service along Ocean Ave to Midtown & Downtown"
+        },
+        {
+          "record_id": "route_bm4-church-ave-cb12",
+          "source_id": "church_ave_cb12_jun2019",
+          "block_id": "p007_c0002",
+          "quote": "BM3 & BM4 express buses ... Direct service along Ocean Ave to Midtown & Downtown"
+        }
+      ]
+    },
+    {
+      "kind": "route",
+      "alias_id": "route_bm4-church-ave-forum",
+      "target_id": "route_bm4-church-ave-cb12",
+      "reason": "Both records represent the same global BM4 express bus route. The alias and target have route_id BM4, route_type_normalized express, service_variant express, Brooklyn borough context, and the same Church Avenue source block text describing BM3 and BM4 express buses with direct Ocean Avenue service.",
+      "evidence": [
+        {
+          "record_id": "route_bm4-church-ave-forum",
+          "source_id": "church_ave_public_forum_jul2019",
+          "block_id": "p007_c0002",
+          "quote": "BM3 & BM4 express buses ... Direct service along Ocean Ave to Midtown & Downtown"
+        },
+        {
+          "record_id": "route_bm4-church-ave-cb12",
+          "source_id": "church_ave_cb12_jun2019",
+          "block_id": "p007_c0002",
+          "quote": "BM3 & BM4 express buses ... Direct service along Ocean Ave to Midtown & Downtown"
+        }
+      ]
+    }
+  ],
+  "guard_checks": {
+    "scope": {
+      "allowed_kinds": [
+        "corridor",
+        "route"
+      ],
+      "proposed_kinds": [
+        "route"
+      ],
+      "excluded_non_global_kinds": true,
+      "treatment_component_included": false,
+      "corridor_aliases_prepared": 0,
+      "route_aliases_prepared": 8
+    },
+    "commands": [
+      {
+        "cmd": "sqlite3 data/canonical.db '.tables'",
+        "result": "Confirmed local DB tables include records, corridors, routes, identity_aliases, do_not_merge, evidence_refs, and blocks_fts."
+      },
+      {
+        "cmd": "sqlite3 -header -csv data/canonical.db \"select record_kind, count(*) as n from records where record_kind in ('corridor','route') group by record_kind; select kind, count(*) as n from identity_aliases where kind in ('corridor','route') group by kind; select kind, count(*) as n from do_not_merge where kind in ('corridor','route') group by kind;\"",
+        "result": "Found 278 corridor records, 421 route records, 38 corridor aliases, 45 route aliases, 5 corridor do-not-merge rows, and 34 route do-not-merge rows."
+      },
+      {
+        "cmd": "jq -r '.proposed_aliases[]? | select(.kind==\"corridor\" or .kind==\"route\") | [.kind,.alias_id,.target_id] | @tsv' data/review_notes/codex-identity-batch0*-prep.json | sort -u",
+        "result": "Prior Codex prep files through identity093 had corridor/route proposals for batch093 corridor pairs and earlier route proposals; none of the batch096 alias_ids appeared."
+      },
+      {
+        "cmd": "sqlite3 -header -csv data/canonical.db \"select kind,alias,target from identity_aliases where kind='route' and alias in (<batch096 aliases>);\"",
+        "result": "Returned no rows; none of the batch096 alias_ids are already mapped in identity_aliases."
+      },
+      {
+        "cmd": "jq -r '.aliases.route | to_entries[] | select((.key|test(\"route_bm2|route_bm3|route_bm4\")) or (.value|test(\"route_bm2|route_bm3|route_bm4\"))) | [.key,.value] | @tsv' data/identity-overrides/merges.json",
+        "result": "Returned no rows for the batch096 BM2/BM3/BM4 alias or target families; none are already mapped in merges.json."
+      },
+      {
+        "cmd": "sqlite3 -header -csv data/canonical.db \"select kind, record_id_a, record_id_b from do_not_merge where kind='route' and (record_id_a in (<batch096 records>) or record_id_b in (<batch096 records>));\"",
+        "result": "Returned no rows; none of the selected alias/target records participate in route do-not-merge guards."
+      },
+      {
+        "cmd": "sqlite3 -header -csv data/canonical.db \"select r.record_id,r.display_name,rt.route_id,rt.route_type_normalized,json_extract(r.payload,'$.service_variant') as service_variant,r.primary_source_id from records r join routes rt on rt.record_id=r.record_id where r.record_id in (<batch096 records>) order by rt.route_id,r.record_id;\"",
+        "result": "All selected records materialize as route records. BM2 records have route_id BM2 and express service_variant; BM3 records have route_id BM3 and express service_variant; BM4 records have route_id BM4 and express service_variant."
+      }
+    ],
+    "policy_checks": {
+      "no_external_provider_llm_calls": true,
+      "no_canonicalize_dedup_identity_review_write_ask_schema_ontology_commands": true,
+      "no_profile_or_provider_commands": true,
+      "no_materialize_export_jsonl_validate": true,
+      "no_route_variant_merges_without_same_variant_evidence": true,
+      "no_materially_different_corridor_limits_merged": true
+    }
+  }
+}

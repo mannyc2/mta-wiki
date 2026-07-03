@@ -1,0 +1,344 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-111721"
+record_kind: "source"
+display_name: "MTA Long Island Rail Road 2022 Year-End Report Summary"
+source_id: "meeting_doc_111721"
+source_ids:
+  - "meeting_doc_111721"
+local_observation_id: "source_lirr_2022_year_end_report"
+local_observation_ids:
+  - "source_lirr_2022_year_end_report"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-19T20:28:57.573Z"
+submission_ids:
+  - "sub_b0fccf437db52d03"
+payload:
+  authority_tier: "plan_document"
+  content_type: "year-end report"
+  publisher: "MTA Long Island Rail Road"
+  title: "MTA LONG ISLAND RAIL ROAD 2022 YEAR-END REPORT SUMMARY"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_111721#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "meeting_doc_111721"
+    source_path: "raw/sources/meeting_doc_111721/blocks.jsonl"
+    text_sha256: "sha256:86fb542b9515b351d09b3907965368d1621a0cb22837045e3e44eb8315e69597"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_111721#p001_c0002"
+    page_number: 1
+    role: "summary"
+    source_id: "meeting_doc_111721"
+    source_path: "raw/sources/meeting_doc_111721/blocks.jsonl"
+    text_sha256: "sha256:b4ce076fae4eb2bda66451daa1e4c635733e0cab06d788e5a0bd394a29c6dee9"
+    text_source: "raw_text"
+---
+
+# 2022 operating budget results
+
+source_id: meeting_doc_111721
+citation: cite block ids exactly as shown in square brackets
+document: 160 block(s)
+
+## Page 1
+
+### [p001_c0001] MTA LONG ISLAND RAIL ROAD 2022 YEAR-END REPORT SUMMARY
+[p001_c0002] The MTA Long Island Rail Road's financial performance compared to the 2022 Final Estimate was favorable. This favorable result was due to the actual 2022 non-reimbursable expenses before non-cash liabilities of $1,613.2 million, which were $66.2 million lower than the Final Estimate, and Operating Revenues of $1,443.7 million, which were $6.2 million higher than the Final Estimate.
+[p001_c0003] LIRR's Cash Deficit of $990.3 million was $118.8 million lower than the Final Estimate, primarily due to lower payroll expenses as a result of the existence of vacancies, overtime, Other Post Employee Benefits (OPEB) current payment, electric expenditures, higher capital and other reimbursements, and the timing of professional services and maintenance services. These were partially offset by higher material payments. Excluding timing-related items, the LIRR cash position was $41.8 million favorable compared with the Final Estimate.
+[p001_c0004] Total Non-Reimbursable Revenues were $6.2 million higher than the Final Estimate primarily due to Farebox Revenue, which was higher than projected due to higher ridership and yield per passenger. Overall, ridership was 50% higher than 2021 ridership and 42.3% lower than 2019 pre-COVID-19 levels (adjusted for the same number of workdays). Ridership of 52.5 million was 0.2 million or 0.4% higher than the Final Estimate.
+[p001_c0005] Total Non-Reimbursable Expenses Before Depreciation and GASB Adjustments were $66.2 million lower than the Final Estimate. Labor expenses of $1,196.9 million were $57.3 million lower than the Final Estimate primarily due to the existence of vacant positions and associated fringe costs, lower maintenance overtime, vacancy/absentee coverage overtime, scheduled/unscheduled service overtime, pension, OPEB current payment, and higher Reimbursable Overhead due to increased capital project activity. This was partially offset by a higher Federal Employers Liability Act (FELA) indemnity reserve.
+[p001_c0006] Non-Labor Expenses of $416.3 million were $8.9 million lower than the Final Estimate due to the timing of maintenance and professional service contracts, and lower electric expenses, partially offset by higher claims, and materials usage.
+[p001_c0007] Non-Cash Liabilities of $543.3 million were $106.4 million below the Final Estimate primarily due to the timing of GASB 75, partially offset by higher depreciation, and environmental remediation.
+[p001_c0008] Total Reimbursable Revenues and Expenses were $21.6 million higher than the Final Estimate, resulting from increased capital project activity.
+[p001_c0009] Cash Deficit of $990.3 million was $118.8 million lower than the Final Estimate, which consisted of a favorable real variance of $41.8 million and favorable timing variance of $77.0 million. Cash Receipts of $1,034.9 million were higher than the Final Estimate by $13.4 million, comprised of $12.3 million in real variances and $1.1 million in timing variances. The real variance was primarily due to favorable capital reimbursements resulting from higher project activity. The timing variance is attributed to advance ticket sale receipts.
+[p001_c0010] Cash expenditures of $2,025.2 million were $105.4 million lower than the Final Estimate, comprised of $29.5 million in favorable real variances and $75.9 million in favorable timing-related variances. Favorable real variances are primarily attributed to lower payroll and associated fringe due to vacant positions, lower overtime, OPEB current payment, pension, and electric expenses,
+
+## Page 2
+
+[p002_c0001] partially offset by higher material, maintenance and other operating contract service payments, claims, and fuel. The timing variance is primarily attributed to retroactive wage payments and associated fringe costs, maintenance and other operating contract payments, and claims.
+
+## Page 3
+
+### [p003_c0001] MTA LONG ISLAND RAIL ROAD 2022 YEAR-END REPORT EXPLANATIONS OF REVENUE AND EXPENSE VARIANCES ACCRUAL BASIS
+### [p003_c0002] 2022 Final Estimate vs. Actual
+### [p003_c0003] Non-Reimbursable
+### [p003_c0004] Revenue:
+- [p003_c0005] • Farebox Revenue was $6.2 million above the Final Estimate due to higher ridership and yield per passenger. Ridership of 52.5 million was 0.4% above the Final Estimate. • Other Operating Revenue was slightly above the Final Estimate primarily due to higher advertising and rental revenue, partially offset by lower miscellaneous revenue.
+### [p003_c0006] Expenses:
+- [p003_c0007] • Payroll was $28.7 million or 4.7% below the Final Estimate primarily due to vacant positions. • Overtime was $6.9 million or 4.5% below the Final Estimate primarily due to lower maintenance, scheduled/unscheduled service, and weather-related emergencies. • Health & Welfare was $4.8 million or 3.7% below the Final Estimate due to vacant positions. • OPEB Current Payment was $6.3 million or 8.5% below the Final Estimate due to fewer retirees/beneficiaries than Final Estimate. • Pension was $1.9 million or 1.2% below the Final Estimate pending the final actuarial report. • Other Fringe Benefits were $2.0 million or 1.2% below Final Estimate due to lower Railroad Retirement taxes, partially offset by higher Federal Employers' Liability Act (FELA) indemnity reserves. • Reimbursable Overhead was $6.8 million or 16.7% above the Final Estimate as a result of higher project activity. • Electric Power was $3.6 million or 3.4% below the Final Estimate primarily due to lower consumption, partially offset by higher rates. • Fuel was on forecast. • Insurance was $1.2 million or 5.4% below Final Estimate due to lower liability insurance, partially offset by higher property insurance. • Claims were $8.2 million above Final Estimate based on the latest actuarial Final Estimate. • Maintenance and Other Operating Contracts were $6.4 million or 7.8% below Final Estimate primarily due to lower real estate rental costs, facility maintenance costs, scheduled bussing and other maintenance contracts, partially offset by higher vegetation management, elevator & escalator maintenance, janitorial and custodial services, and emergency buses. • Professional Service Contracts were $7.9 million or 19.4% below the Final Estimate, primarily due to lower write-offs of project work expenses that are not capital eligible.
+
+## Page 4
+
+- [p004_c0001] • Materials & Supplies were $3.7 million or 3.1% above Final Estimate due to higher miscellaneous inventory adjustments and right-of-way material, partially offset by the timing of modifications and the RCM program for the revenue fleet. • Other Business Expenses were $1.8 million or 11.2% below Final Estimate primarily due to lower bad debt reserves, office supplies, and higher restitution on property damages. • Depreciation was $33.0 million or 7.0% above Final Estimate due to certain assets being fully depreciated. • GASB 75 OPEB Expense Adjustment was $150.7 million below the Final Estimate based on the latest actuarial report. • GASB 68 Pension Adjustment was $2.7 million below the Final Estimate based on the latest actuarial Final Estimate. • GASB 87 Lease Adjustment was on forecast. • Environmental Remediation was $14.1 million above the Final Estimate based on higher expenses for environmental remediation.
+### [p004_c0002] Reimbursable:
+[p004_c0003] Total Capital and Other Reimbursements were higher than the Final Estimate by $21.6 million or 4.8%, primarily due to higher 3 rd Track Expansion, Annual Track Program, Grant Central Madison, and Jamaica Capacity Improvement project activities.
+
+## Page 5
+
+### [p005_c0001] 2022 Adopted Budget vs. Actual
+[p005_c0002] The MTA Long Island Rail Road's financial performance compared to the 2022 Adopted Budget was favorable. Actual non-reimbursable 2022 expenses before non-cash liabilities of $1,613.2 million were $239.5 million or 12.9% lower than the Adopted Budget. The operating cash deficit of $990.3 million was $216.3 million or 17.9% favorable to Adopted Budget. Favorable results reflect the accrued recognition of Federal COVID aid in addition to the variances cited below.
+### [p005_c0003] Non-Reimbursable
+### [p005_c0004] Revenue:
+- [p005_c0005] • Farebox Revenue was $97.4 million or 17.5% below the Adopted Budget due to lower ridership, partially offset by higher yield per passenger. Ridership was 52.5 million or 19.4% below the Adopted Budget, which was based on the initial McKinsey ridership assumptions that were subsequently adjusted lower in the 2022 July Plan. • Other Operating Revenue was $957.1 million higher than Adopted Budget primarily due to the receipt of accrued Federal COVID aid of $954.8 million.
+### [p005_c0006] Expenses:
+- [p005_c0007] • Payroll was $58.4 million or 9.1% below Adopted Budget primarily due to vacant positions. • Overtime was $14.6 million or 9.2% below Adopted Budget primarily due to lower scheduled maintenance and scheduled/unscheduled service, partially offset by higher vacancy/absentee coverage. • Health & Welfare was $2.7 million or 2.1% below Adopted Budget primarily due to vacant positions, partially offset by higher rates. • OPEB Current Payment was $13.2 million or 16.5% below Adopted Budget due to fewer retirees/beneficiaries than Final Estimate, partially offset by higher rates. • Pension was $11.6 million or 7.0% below Adopted Budget based on the latest actuarial estimate. • Other Fringe Benefits were $9.6 million or 6.1% above Adopted Budget due to higher FELA indemnity reserves and Railroad Unemployment Insurance, partially offset by lower Railroad Retirement Taxes. • Reimbursable Overhead was $15.8 million or 49.7% above the Adopted Budget as a result of higher project activity. • Electric Power was $3.4 million or 3.5% above Adopted Budget due to higher rates, partially offset by lower consumption. • Fuel was $15.0 million or 68.4% above Adopted Budget due to higher rates and consumption. • Insurance was $3.1 million or 12.9% below Adopted Budget due to lower liability and property insurance. • Claims were $8.2 million above the Adopted Budget based on the latest actuarial estimate.
+
+## Page 6
+
+- [p006_c0001] • Maintenance and Other Operating Contracts were $52.3 million or 41.0% below Adopted Budget due to lower maintenance and repairs, elevator & escalator maintenance, janitorial & custodial services, joint facility expenses, real estate rental expenses and other maintenance services, partially offset by higher equipment rentals, and vegetation management. • Professional Service Contracts were $15.0 million or 31.5% below Adopted Budget primarily due to lower write-off of non-capitalized costs, and the timing of professional service contracts, partially offset by higher legal fees, and engineer services. • Materials & Supplies were $82.9 million or 40.2% below Adopted Budget. The favorable variance is primarily due to lower RCM activity for the revenue fleet, partially offset by higher miscellaneous inventory adjustments. • Other Business Expense was $5.9 million or 29.2% below Adopted Budget due to lower bad debt reserves, credit card fees, office supplies, travel meetings and conventions, and higher restitution of property damages. • Depreciation was $90.4 million or 21.8% above Adopted Budget due to certain assets being fully depreciated. • GASB 75 OPEB Expense Adjustment was $79.8 million or 73.1% below Adopted Budget based on the latest actuarial estimate. • GASB 68 Pension Expense Adjustment was $21.8 million below Adopted Budget based on the latest actuarial estimate. • GASB 87 Lease Adjustment was $0.6 million below Adopted Budget based on the latest actuarial estimate. • Environmental Remediation was $14.1 million above Adopted Budget based on the latest actuarial estimate.
+### [p006_c0002] Reimbursable:
+[p006_c0003] Total Capital and Other Reimbursements were higher than Adopted Budget by $0.9 million or 0.2%, primarily due to Yard Improvements at Various Locations, delays in purchasing M9 cars, and Positive Train Control (PTC).
+
+## Page 7
+
+### [p007_c0001] MTA LONG ISLAND RAIL ROAD 2022 YEAR-END REPORT 2022 ADOPTED BUDGET AND FINAL ESTIMATE vs. ACTUAL ACCRUAL STATEMENT of OPERATIONS by CATEGORY ($ in millions)
+[p007_c0002]
+
+```text
+NON-REIMBURSABLE 2022 Favorable/(Unfavorable) Variance Adopted Final Actual Adopted Budget Final Estimate Budget Estimate Actual $ % $ % Revenue Farebox Revenue $554.949 $451.398 $457.583 ($97.367) (17.5) $6.184 1.4 Vehicle Toll Revenue 0.000 0.000 0.000 0.000 - 0.000 - Other Operating Revenue 29.024 986.068 986.102 957.078 * 0.034 0.0 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 - 0.000 - Total Revenue $583.973 $1,437.466 $1,443.685 $859.712 * $6.219 0.4 Expenses Labor: Payroll $644.445 $614.726 $586.022 $58.423 9.1 $28.704 4.7 Overtime 159.181 151.395 144.544 14.637 9.2 6.850 4.5 Health and Welfare 129.233 131.319 126.515 2.718 2.1 4.804 3.7 OPEB Current Payment 80.401 73.414 67.155 13.246 16.5 6.259 8.5 Pensions 166.376 156.711 154.778 11.598 7.0 1.934 1.2 Other Fringe Benefits 155.884 167.452 165.450 (9.566) (6.1) 2.002 1.2 Reimbursable Overhead (31.767) (40.769) (47.564) 15.797 49.7 6.795 16.7 Total Labor Expenses $1,303.753 $1,254.248 $1,196.900 $106.853 8.2 $57.347 4.6 Non-Labor: Electric Power $96.693 $103.664 $100.095 ($3.402) (3.5) $3.569 3.4 Fuel 21.916 36.903 36.909 (14.994) (68.4) (0.006) 0.0 Insurance 23.725 21.834 20.655 3.070 12.9 1.179 5.4 Claims 4.682 4.682 12.861 (8.178) * (8.178) * Paratransit Service Contracts 0.000 0.000 0.000 0.000 - 0.000 - Maintenance and Other Operating Contracts 127.522 81.644 75.256 52.266 41.0 6.388 7.8 Professional Service Contracts 47.776 40.619 32.748 15.027 31.5 7.871 19.4 Materials & Supplies 206.482 119.792 123.533 82.949 40.2 (3.741) (3.1) Other Business Expenses 20.107 16.042 14.241 5.866 29.2 1.801 11.2 Total Non-Labor Expenses $548.903 $425.182 $416.299 $132.604 24.2 $8.883 2.1 Other Expense Adjustments: Other $0.000 $0.000 $0.000 $0.000 - $0.000 - Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 - $0.000 - Total Expenses Before Depreciation $1,852.656 $1,679.429 $1,613.199 $239.457 12.9 $66.230 3.9 Depreciation $415.234 $472.622 $505.618 ($90.384) (21.8) ($32.995) (7.0) GASB 75 OPEB Expense Adjustment 109.140 180.000 $29.309 79.831 73.1 150.691 83.7 GASB 68 Pension Expense Adjustment 14.700 (4.350) (7.097) 21.797 * 2.747 63.2 GASB 87 Lease Compliance 0.000 (0.620) (0.632) 0.632 - 0.012 1.9 Environmental Remediation 2.000 2.000 16.065 (14.065) * (14.065) * Total Expenses $2,393.730 $2,329.082 $2,156.461 $237.268 9.9 $172.621 7.4 Net Surplus/(Deficit) (Excluding Subsidies and Debt Service) ($1,809.756) ($891.616) ($712.776) $1,096.980 60.6 $178.840 20.1 Cash Depreciation Adjustments Depreciation $415.234 $472.622 $505.618 $90.384 21.8 $32.995 7.0 Operating/Capital (25.576) ($8.277) (9.742) 15.834 61.9 (1.464) (17.7) Other Cash Adjustments 213.506 ($681.838) (773.424) (986.930) * (91.586) (13.4) Total Cash Conversion Adjustments $603.164 ($217.493) ($277.548) ($880.712) * ($60.055) (27.6) Net Cash Surplus/(Deficit) ($1,206.593) ($1,109.109) ($990.324) $216.269 17.9 $118.784 10.7
+```
+[p007_c0003] Totals may not add due to rounding
+[p007_c0004] Results are based on the preliminary close of the general ledger and are subject to review and adjustment.
+
+## Page 8
+
+### [p008_c0001] MTA LONG ISLAND RAIL ROAD 2022 YEAR-END REPORT 2022 ADOPTED BUDGET AND FINAL ESTIMATE vs. ACTUAL ACCRUAL STATEMENT OF OPERATIONS by CATEGORY ($ in millions)
+[p008_c0002]
+
+```text
+REIMBURSABLE 2022 Favorable/(Unfavorable) Variance Adopted Final Actual Adopted Budget Final Estimate Budget Estimate Actual $ % $ % Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 - $0.000 - Vehicle Toll Revenue 0.000 0.000 0.000 0.000 - 0.000 - Other Operating Revenue 0.000 0.000 0.000 0.000 - 0.000 - Capital and Other Reimbursements 471.788 451.120 472.733 0.945 0.2 21.613 4.8 Total Revenue $471.788 $451.120 $472.733 $0.945 0.2 $21.613 4.8 Expenses Labor: Payroll $155.927 $144.991 $135.234 $20.692 13.3 $9.757 6.7 Overtime 62.372 55.190 57.184 5.187 8.3 (1.994) (3.6) Health and Welfare 40.928 37.425 35.136 5.792 14.2 2.289 6.1 OPEB Current Payment 0.000 0.000 0.000 0.000 - 0.000 - Pensions 66.497 66.439 67.012 (0.515) (0.8) (0.573) (0.9) Other Fringe Benefits 41.852 38.550 36.501 5.351 12.8 2.049 5.3 Reimbursable Overhead 31.767 40.769 47.564 (15.797) (49.7) (6.795) (16.7) Total Labor Expenses $399.342 $383.364 $378.631 $20.712 5.2 $4.733 1.2 Non-Labor: Electric Power $0.268 $0.363 $0.391 ($0.123) (45.9) ($0.028) (7.8) Fuel 0.000 0.000 0.000 0.000 - 0.000 - Insurance 8.266 7.007 6.546 1.721 20.8 0.461 6.6 Claims 0.000 0.000 0.000 0.000 - 0.000 - Paratransit Service Contracts 0.000 0.000 0.000 0.000 - 0.000 - Maintenance and Other Operating Contracts 16.902 21.063 31.587 (14.685) (86.9) (10.523) (50.0) Professional Service Contracts 0.871 2.720 7.270 (6.400) * (4.550) * Materials & Supplies 45.571 35.909 47.404 (1.832) (4.0) (11.495) (32.0) Other Business Expenses 0.567 0.694 0.905 (0.337) (59.5) (0.211) (30.4) Total Non-Labor Expenses $72.445 $67.756 $94.102 ($21.657) (29.9) ($26.346) (38.9) Other Expense Adjustments: Other $0.000 $0.000 $0.000 $0.000 - $0.000 - Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 - $0.000 - Total Expenses Before Depreciation $471.788 $451.120 $472.733 ($0.945) (0.2) ($21.613) (4.8) Depreciation $0.000 $0.000 $0.000 $0.000 - $0.000 - Other Post Employee Benefits 0.000 0.000 0.000 0.000 - 0.000 - Environmental Remediation 0.000 0.000 0.000 0.000 - 0.000 - Total Expenses $471.788 $451.120 $472.733 ($0.945) (0.2) ($21.613) (4.8) Net Surplus/(Deficit) (Excluding Subsidies and Debt Service) $0.000 ($0.000) $0.000 $0.000 - $0.000 100.0 Cash Depreciation Adjustments Depreciation $0.000 $0.000 $0.000 $0.000 - $0.000 - Operating/Capital 0.000 0.000 0.000 0.000 - 0.000 - Other Cash Adjustments 0.000 0.000 0.000 0.000 - 0.000 - Total Cash Conversion Adjustments $0.000 $0.000 $0.000 $0.000 - $0.000 - Net Cash Surplus/(Deficit) $0.000 ($0.000) $0.000 $0.000 - $0.000 100.0
+```
+[p008_c0003] Totals may not add due to rounding
+[p008_c0004] Results are based on the preliminary close of the general ledger and are subject to review and adjustment.
+
+## Page 9
+
+### [p009_c0001] MTA LONG ISLAND RAIL ROAD 2022 YEAR-END REPORT 2022 ADOPTED BUDGET AND FINAL ESTIMATE vs. ACTUAL ACCRUAL STATEMENT of OPERATIONS by CATEGORY ($ in millions)
+[p009_c0002]
+
+```text
+NON-REIMBURSABLE/ REIMBURSABLE 2022 Favorable/(Unfavorable) Variance Adopted Final Actual Adopted Budget Final Estimate Budget Estimate Actual $ % $ % Revenue Farebox Revenue $554.949 $451.398 $457.583 ($97.367) (17.5) $6.184 1.4 Vehicle Toll Revenue 0.000 0.000 0.000 0.000 - 0.000 - Other Operating Revenue 29.024 986.068 986.102 957.078 * 0.034 0.0 Capital and Other Reimbursements 471.788 451.120 472.733 0.945 0.2 21.613 4.8 Total Revenue $1,055.761 $1,888.586 $1,916.418 $860.657 81.5 $27.832 1.5 Expenses Labor: Payroll $800.372 $759.717 $721.257 $79.115 9.9 $38.461 5.1 Overtime 221.552 206.584 201.728 19.824 8.9 4.856 2.4 Health and Welfare 170.161 168.743 161.651 8.510 5.0 7.093 4.2 OPEB Current Payment 80.401 73.414 67.155 13.246 16.5 6.259 8.5 Pensions 232.873 223.150 221.789 11.084 4.8 1.361 0.6 Other Fringe Benefits 197.736 206.002 201.951 (4.214) (2.1) 4.052 2.0 Reimbursable Overhead 0.000 0.000 0.000 0.000 - 0.000 - Total Labor Expenses $1,703.096 $1,637.611 $1,575.531 $127.565 7.5 $62.080 3.8 Non-Labor: Electric Power $96.961 $104.027 $100.487 ($3.525) (3.6) $3.540 3.4 Fuel 21.916 36.903 36.909 (14.994) (68.4) (0.006) 0.0 Insurance 31.991 28.842 27.201 4.790 15.0 1.641 5.7 Claims 4.682 4.682 12.861 (8.178) * (8.178) * Paratransit Service Contracts 0.000 0.000 0.000 0.000 - 0.000 - Maintenance and Other Operating Contracts 144.424 102.708 106.842 37.582 26.0 (4.135) (4.0) Professional Service Contracts 48.646 43.340 40.019 8.627 17.7 3.321 7.7 Materials & Supplies 252.053 155.701 170.937 81.116 32.2 (15.235) (9.8) Other Business Expenses 20.675 16.735 15.146 5.529 26.7 1.590 9.5 Total Non-Labor Expenses $621.348 $492.938 $510.401 $110.947 17.9 ($17.463) (3.5) Other Expense Adjustments: Other $0.000 $0.000 $0.000 $0.000 - $0.000 - Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 - $0.000 - Total Expenses Before Depreciation $2,324.444 $2,130.549 $2,085.932 $238.512 10.3 $44.618 2.1 Depreciation $415.234 $472.622 $505.618 ($90.384) (21.8) ($32.995) (7.0) GASB 75 OPEB Expense Adjustment 109.140 180.000 29.309 79.831 73.1 150.691 83.7 GASB 68 Pension Expense Adjustment 14.700 (4.350) (7.097) 21.797 * 2.747 63.2 GASB 87 Lease Compliance 0.000 (0.620) (0.632) 0.632 - 0.012 1.9 Environmental Remediation 2.000 2.000 16.065 (14.065) * (14.065) * Total Expenses $2,865.517 $2,780.202 $2,629.194 $236.324 8.2 $151.008 5.4 Net Surplus/(Deficit) (Excluding Subsidies and Debt Service) ($1,809.756) ($891.616) ($712.776) $1,096.980 60.6 $178.840 20.1 Cash Depreciation Adjustments Depreciation $415.234 $472.622 $505.618 $90.384 21.8 $32.995 7.0 Operating/Capital (25.576) (8.277) (9.742) 15.834 61.9 (1.464) (17.7) Other Cash Adjustments 213.506 (681.838) (773.424) (986.930) * (91.586) (13.4) Total Cash Conversion Adjustments $603.164 ($217.493) ($277.548) ($880.712) * ($60.055) (27.6) Net Cash Surplus/(Deficit) ($1,206.593) ($1,109.109) ($990.324) $216.269 17.9 $118.784 10.7
+```
+[p009_c0003] Totals may not add due to rounding
+[p009_c0004] Results are based on the preliminary close of the general ledger and are subject to review and adjustment.
+
+## Page 10
+
+### [p010_c0001] LONG ISLAND RAIL ROAD
+### [p010_c0002] NON-REIMBURSABLE OVERTIME
+### [p010_c0003] THE BIG PICTURE
+- [p010_c0004] • YTD December overtime underspend of $6.9M 4.5% vs Final Estimate due to continued efficiencies with Fleet maintenance, Right of Way maintenance, Vacancy/Absentee coverage, Unscheduled/Scheduled Train Service and sanitizing/cleaning. • YTD December overtime is Flat vs YTD 2019 and 18% higher than YTD 2021 mainly due to Fleet & Right of Way maintenance, Vacancy/Absentee coverage and Scheduled Train Service, partially offset by lower sanitizing/cleaning and weather-related emergencies. • Total non-reimbursable labor expenses were $57.3M or 4.6% below Final Estimate forecast
+### [p010_c0005] AGENCY DETAIL
+### [p010_c0006] Maintenance of Equipment:
+- [p010_c0007] • Maintenance of Equipment Overtime of $77.1M is 53% of 2022 YTD Actuals. • $2.4M favorable vs Final Estimate driven by lower Fleet maintenance partially offset by vacancy/absentee coverage. • Maintenance of Way (MOW):
+- [p010_c0008] • MOW of $22.7M is 16% of 2022 YTD Actuals. • $0.3M unfavorable vs Final Estimate driven by higher flight of Way Maintenance partially offset by weather related overtime and vacancy/absentee coverage.
+### [p010_c0009] Transportation:
+- [p010_c0010] • Transportation Overtime of $37.6M is 26% of 2022 YTD Actuals. • $5.1M favorable vs Final Estimate driven by lower unscheduled service as a result of less incidents and vacancy/absentee coverage related to current train service plan.
+### [p010_c0011] Stations:
+- [p010_c0012] • Stations Overtime of $4.9M is 3% of 2022 YTD Actuals. • $0.1M unfavorable vs Final Estimate driven by higher vacancy/absentee coverage.
+> [p010_c0013] Budget Performance Non-Reimbursable Overtime - YTD December (all dollars in millions) Period Adopted Budget Final Estimate Actual YTD 2019 $136.2 $153.4 $145.1 YTD 2021 $146.2 $141.6 $123.1 YTD 2022 $159.2 $151.4 $144.5 Legend: ■ Adopted Budget ■ Final Estimate ■ Actual
+
+## Page 11
+
+### [p011_c0001] LONG ISLAND RAIL ROAD
+### [p011_c0002] REIMBURSABLE OVERTIME
+### [p011_c0003] THE BIG PICTURE
+- [p011_c0004] • YTD overtime is 3.6% above the 2022 Final Estimate. • YTD overtime is 2.5% higher than 2019 and 10% higher than 2021 mainly due to various capital projects and other reimbursements.
+> [p011_c0005] Budget Performance Reimbursable Overtime - YTD December (all dollars in millions) Year Budget Final Estimate Actuals YTD 2019 $32.7 $45.8 $55.8 YTD 2021 $55.5 $55.4 $51.9 YTD 2022 $62.4 $55.2 $57.2
+### [p011_c0006] Agency Detail
+- [p011_c0007] • MOW: • MOW Overtime of $42.6M is 74% of 2022 YTD Actuals. • $0.4M unfavorable vs Final Estimate driven by various capital project and other reimbursements. • Transportation: • Transportation Overtime of $11.9M is 21% of 2022 YTD Actuals. • $0.7M unfavorable vs Final Estimate driven by various capital project and other reimbursements related to flagging needs. • MOE • MOE Overtime of $1.4M is 3% of 2022 YTD Actuals. • $0.4M unfavorable vs Final Estimate. • Stations • Station Overtime of $1.1M is 2% of 2022 YTD Actuals. • $0.4M unfavorable vs Final Estimate.
+
+## Page 12
+
+### [p012_c0001] MTA LONG ISLAND RAIL ROAD 2022 YEAR-END REPORT EXPLANATIONS OF CASH RECEIPTS AND EXPENDITURE VARIANCES
+### [p012_c0002] 2022 Final Estimate vs. Actual
+[p012_c0003] The favorable total cash deficit variance of $118.8 million was the net of a real favorable variance of $41.8 million and a favorable timing variance of $77.0 million. The timing variance was primarily attributed to retroactive wage payments and associated fringe costs, maintenance and other operating contracts, and professional services. The real variances were primarily attributed to lower payroll and associated fringe due to the existence of vacant positions, lower overtime, OPEB current payment, pension, and electric power, partially offset by higher materials, and maintenance and other operating contract service payments.
+### [p012_c0004] Receipts
+- [p012_c0005] • Farebox Revenue was $5.1 million or 1.1% above the Final Estimate as a result of higher advance sales, ridership, and yield per passenger, partially offset by lower MetroCard/AirTrain sales. • Other Operating Revenue was $2.4 million or 1.9% below the Final Estimate primarily due to the timing of rental and freight revenue, and lower miscellaneous revenue. • Capital and Other Reimbursements were $10.7 million or 2.4% above the Final Estimate primarily due to the timing of capital activity and other reimbursements.
+### [p012_c0006] Expenditures
+- [p012_c0007] • Payroll was $58.8 million or 7.7% below the Final Estimate due to vacant positions, and lower rates due to the timing of retroactive payments for settled labor agreements, partially offset by the timing of interagency reimbursements. • Overtime was $20.0 million or 9.5% below the Final Estimate due to lower maintenance, scheduled/unscheduled service, and lower rates due to the timing of retroactive payments for settled labor agreements, partially offset by reimbursable project overtime. • Health and Welfare was $1.2 million or 0.8% lower than the Final Estimate primarily due to vacant positions. • OPEB Current Payment was $2.7 million or 3.9% lower than the Final Estimate due to fewer retirees/beneficiaries. • Pension was $4.0 million or 1.8% lower than the Final Estimate due to the timing of pension payments. • Other Fringe Benefits were $15.0 million or 6.7% lower than the Final Estimate due to lower Railroad Retirement Tax, partially offset by the timing of FELA payments, and miscellaneous employee expenses. • Electric Power was $4.2 million or 4.1% lower than the Final Estimate primarily due to lower consumption, partially offset by higher rates.
+
+## Page 13
+
+- [p013_c0001] • Fuel was $0.4 million or 1.0% higher than the Final Estimate primarily due to higher consumption and rates. • Insurance was $1.6 million or 6.3% lower than the Final Estimate primarily due to lower liability and property insurance. • Claims were $0.5 million or 27.1% lower due to the timing of payments. • Maintenance and Other Operating Contracts were $9.7 million or 8.6% lower than the Final Estimate primarily due to the timing and scheduling of maintenance services and payments. • Professional Service Contracts were $6.9 million or 19.1% lower than the Final Estimate primarily due to the timing of MTA chargebacks and other professional service payments. • Materials and Supplies were $23.6 million or 17.7% higher than the Final Estimate due to higher reimbursable project work and the timing of materials. • Other Business Expenses were $2.4 million or 12.2% lower than the Final Estimate, primarily due to lower office supplies and restitution on property damages. • Other Expense Adjustments were $2.3 million or 29.9% lower than the Final Estimate due to lower MetroCard/AirTrain sales pass-through payments.
+### [p013_c0002] 2022 Adopted Budget vs. Actual
+### [p013_c0003] Receipts
+- [p013_c0004] • Farebox Revenue was $104.3 million or 18.5% below the Adopted Budget due to lower ridership, and Metro Card/AirTrain sales, partially offset by higher advance sales, and yield per passenger. • Other Operating Revenue was $1.8 million or 1.5% above Adopted Budget due to higher rental revenue, partially offset by the timing of freight revenue, and lower miscellaneous revenue. • Capital and Other Reimbursements were $7.4 million or 1.6% higher than Adopted Budget due to the timing of capital activity and other reimbursements.
+### [p013_c0005] Expenditures
+- [p013_c0006] • Payroll was $87.9 million or 11.1% lower than Adopted Budget due to vacant positions, and lower rates due to unsettled labor agreements, partially offset the timing of interagency reimbursements. • Overtime was $30.9 million or 13.9% lower than Adopted Budget primarily due to lower scheduled maintenance, scheduled/unscheduled service, reimbursable project overtime, and lower rates due to unsettled labor agreements, partially offset by higher vacancy/absentee coverage. • Health and Welfare was $13.0 million or 7.7% lower than Adopted Budget primarily due to vacant positions and the timing of New York State Health Insurance Program (NYSHIP) insurance payments.
+
+## Page 14
+
+- [p014_c0001] • OPEB Current Payment was $13.0 million or 16.2% lower than Adopted Budget due to fewer retirees/beneficiaries and the timing of NYSHIP insurance payments. • Pension was $12.7 million or 5.5% lower than Adopted Budget due to lower pension costs and the timing of payments. • Other Fringe Benefits were $4.3 million or 2.0% lower than Adopted Budget primarily due to lower Railroad Retirement Tax, partially offset by higher Railroad Unemployment Insurance, FELA payments, and miscellaneous employee expenses. • Electric Power was $2.8 million or 2.9% higher than the Adopted Budget due to higher consumption and higher rates. • Fuel was $15.4 million or 70.2% higher than the Adopted Budget primarily due to higher rates and consumption. • Insurance was $8.4 million or 25.8% lower than Adopted Budget primarily due to lower liability and property insurance. • Claims were $0.5 million or 27.1% lower than Adopted Budget due to the timing of payments. • Maintenance and Other Operating Contracts were $41.4 million or 28.7% lower than Adopted Budget primarily due to the timing and scheduling of maintenance services and payments. • Professional Service Contracts were $5.5 million or 15.8% lower than Adopted Budget due to the timing of MTA chargebacks and other professional service payments. • Materials and Supplies were $101.6 million or 39.3% lower than Adopted Budget primarily due to lower RCM activity for the revenue fleet. • Other Business Expenses were $6.1 million or 26.4% lower than Adopted Budget primarily due to lower credit card fees, office supplies, travel meetings and conventions, and restitution of property damages. • Other Expense Adjustments were $4.3 million or 44.6% lower than Adopted Budget due to lower MetroCard/AirTrain sales pass-through payments.
+
+## Page 15
+
+### [p015_c0001] MTA LONG ISLAND RAIL ROAD 2022 YEAR-END REPORT 2022 ADOPTED BUDGET AND FINAL ESTIMATE vs. ACTUAL CASH RECEIPTS AND EXPENDITURES ($ in millions)
+[p015_c0002]
+
+```text
+2022 Favorable/(Unfavorable) Variance Adopted Final Actual 2022 Adopted Budget Final Estimate Budget Estimate $ % $ % Receipts Farebox Revenue $564.509 $455.133 $460.196 ($104.313) (18.5) $5.064 1.1 Vehicle Toll Revenue 0.000 0.000 0.000 0.000 - 0.000 - Other Operating Revenue 119.808 124.014 121.631 1.823 1.5 (2.383) (1.9) Capital and Other Reimbursements 445.744 442.375 453.095 7.351 1.6 10.721 2.4 Total Receipts $1,130.061 $1,021.521 $1,034.923 ($95.138) (8.4) $13.402 1.3 Expenditures Labor: Payroll $794.948 $765.919 $707.085 $87.864 11.1 $58.834 7.7 Overtime 221.552 210.615 190.659 30.894 13.9 19.957 9.5 Health and Welfare 170.161 158.321 157.120 13.041 7.7 1.202 0.8 OPEB Current Payment 80.401 70.098 67.364 13.037 16.2 2.734 3.9 Pensions 232.873 224.150 220.170 12.703 5.5 3.980 1.8 Other Fringe Benefits 212.952 223.682 208.680 4.272 2.0 15.002 6.7 GASB Account 0.000 0.000 0.000 0.000 - 0.000 - Reimbursable Overhead 0.000 0.000 0.000 0.000 - 0.000 - Total Labor Expenditures $1,712.888 $1,652.786 $1,551.078 $161.810 9.4 $101.709 6.2 Non-Labor: Electric Power $96.961 $104.027 $99.790 ($2.829) (2.9) $4.237 4.1 Fuel 21.916 36.903 37.290 (15.374) (70.2) (0.387) (1.0) Insurance 32.374 25.623 24.017 8.357 25.8 1.606 6.3 Claims 1.852 1.852 1.350 0.502 27.1 0.502 27.1 Paratransit Service Contracts 0.000 0.000 0.000 0.000 - 0.000 - Maintenance and Other Operating Contracts 144.424 112.698 102.989 41.435 28.7 9.708 8.6 Professional Service Contracts 34.996 36.401 29.461 5.535 15.8 6.939 19.1 Materials & Supplies 258.503 133.336 156.904 101.600 39.3 (23.567) (17.7) Other Business Expenses 23.180 19.441 17.070 6.110 26.4 2.372 12.2 Total Non-Labor Expenditures $614.206 $470.281 $468.870 $145.336 23.7 $1.411 0.3 Other $9.560 $7.563 $5.299 $4.261 44.6 $2.263 29.9 Total Other Expenditure Adjustments $9.560 $7.563 $5.299 $4.261 44.6 $2.263 29.9 Total Expenditures $2,336.654 $2,130.630 $2,025.247 $311.407 13.3 $105.383 4.9 Operating Cash Deficit ($1,206.593) ($1,109.109) ($990.324) $216.269 17.9 $118.784 10.7
+```
+[p015_c0003] Cash Timing and Availability Adjustment 0.000 0.000 14.902 14.902 - 14.902 -
+[p015_c0004] Totals may not add due to rounding
+
+## Page 16
+
+### [p016_c0001] MTA LONG ISLAND RAIL ROAD 2022 YEAR-END REPORT 2022 ADOPTED BUDGET AND FINAL ESTIMATE vs. ACTUAL CASH CONVERSION (CASH FLOW ADJUSTMENTS) ($ in millions)
+[p016_c0002]
+
+```text
+2022 Favorable/(Unfavorable) Variance Adopted Final Actual 2020 Adopted Budget Final Estimate Budget Estimate $ % $ % Receipts Farebox Revenue $9.560 $3.735 $2.614 ($6.946) (72.7) ($1.121) (30.0) Vehicle Toll Revenue 0.000 0.000 0.000 0.000 - 0.000 - Other Operating Revenue 90.784 (862.054) (864.471) (955.255) * (2.417) (0.3) Capital and Other Reimbursements (26.044) (8.745) (19.637) 6.407 24.6 (10.892) * Total Receipts $74.300 ($867.065) ($881.495) ($955.795) * ($14.430) (1.7) Expenditures Labor: Payroll $5.423 ($6.202) $14.172 $8.748 * $20.374 * Overtime 0.000 (4.031) 11.070 11.070 - 15.101 * Health and Welfare 0.000 10.422 4.531 4.531 - (5.891) (56.5) OPEB Current Payment 0.000 3.316 (0.209) (0.209) - (3.525) * Pensions 0.000 (1.000) 1.620 1.620 - 2.620 * Other Fringe Benefits (15.216) (17.680) (6.730) 8.486 55.8 10.950 61.9 GASB Account 0.000 0.000 0.000 0.000 - 0.000 - Reimbursable Overhead 0.000 0.000 0.000 0.000 - 0.000 - Total Labor Expenditures ($9.793) ($15.175) $24.453185 $34.246 * $39.628 * Non-Labor: Electric Power $0.000 $0.000 $0.697 $0.697 - $0.697 - Fuel 0.000 0.000 (0.380) (0.380) - (0.380) - Insurance (0.382) 3.218 3.184 3.566 * (0.034) (1.1) Claims 2.831 2.831 11.511 8.681 * 8.681 * Paratransit Service Contracts 0.000 0.000 0.000 0.000 - 0.000 - Maintenance and Other Operating Contracts 0.000 (9.990) 3.853 3.853 - 13.843 * Professional Service Contracts 13.650 6.939 10.557 (3.093) (22.7) 3.618 52.1 Materials & Supplies (6.450) 22.365 14.033 20.483 * (8.332) (37.3) Other Business Expenses (2.505) (2.706) (1.924) 0.581 23.2 0.782 28.9 Total Non-Labor Expenditures $7.142 $22.657 $41.530962 $34.389 * $18.874 83.3 Other Expense Adjustments: Other ($9.560) ($7.563) ($5.299) $4.261 44.6 $2.263 29.9 Total Other Expenditure Adjustments ($9.560) ($7.563) ($5.29927) $4.261 44.6 $2.263 29.9 Total Expenditures Before Depreciation ($12.210) ($0.080) $60.685 $72.895 * $60.765 * Depreciation $415.234 $472.622 $505.618 $90.384 21.8 $32.995 7.0 GASB 75 OPEB Expense Adjustment 109.140 180.000 29.309 (79.831) (73.1) (150.691) (83.7) GASB 68 Pension Expense Adjustment 14.700 (4.350) (7.097) (21.797) * (2.747) (63.2) GASB 87 Lease Compliance 0.000 (0.620) (0.632) (0.632) - (0.012) (1.9) Environmental Remediation 2.000 2.000 16.065 14.065 * 14.065 * Total Expenditures $528.864 $649.572 $603.947 $75.083 14.2 ($45.625) (7.0) Baseline Total Cash Conversion Adjustments $603.164 ($217.493) ($277.548) ($880.712) * ($60.055) (27.6) Cash Timing and Availability Adjustment 0.000 0.000 14.902 14.902 - 14.902 -
+```
+[p016_c0003] Totals may not add due to rounding
+
+## Page 17
+
+### [p017_c0001] MTA LONG ISLAND RAIL ROAD 2022 YEAR-END REPORT 2022 CASH RESULTS - ACTUAL vs. FINAL ESTIMATE ($ in millions)
+[p017_c0002]
+
+```text
+Final Estimate Actual Favorable/(Unfavorable) Variance Total Real Timing Receipts Farebox Revenue $455.133 $460.196 $5.064 $3.937 $1.127 Vehicle Toll Revenue 0.000 0.000 0.000 0.000 0.000 Other Operating Revenue 124.014 121.631 (2.383) (2.383) 0.000 Capital and Other Reimbursements 442.375 453.095 10.721 10.721 0.000 Total Receipts $1,021.521 $1,034.923 $13.402 $12.275 $1.127 Expenditures Labor: Payroll $765.919 $707.085 $58.834 $20.059 $38.775 Overtime 210.615 190.659 19.957 9.168 $10.789 Health and Welfare 158.321 157.120 1.202 1.202 $0.000 OPEB Current Payment 70.098 67.364 2.734 2.734 $0.000 Pensions 224.150 220.170 3.980 3.980 $0.000 Other Fringe Benefits 223.682 208.680 15.002 6.419 $8.583 GASB Account 0.000 0.000 0.000 0.000 $0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 $0.000 Total Labor Expenditures $1,652.786 $1,551.078 $101.709 $43.562 $58.147 Non-Labor: Electric Power $104.027 $99.790 $4.237 $4.237 $0.000 Fuel 36.903 37.290 (0.387) (0.387) 0.000 Insurance 25.623 24.017 1.606 1.606 0.000 Claims 1.852 1.350 0.502 (0.820) 1.322 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 112.698 102.989 9.708 (1.028) 10.736 Professional Service Contracts 36.401 29.461 6.939 3.019 3.920 Materials & Supplies 133.336 156.904 (23.567) (25.148) 1.580 Other Business Expenses 19.441 17.070 2.372 2.183 0.188 Total Non-Labor Expenditures $470.281 $468.870 $1.411 ($16.336) $17.747 Other Expenditure Adjustments: Other 7.563 5.299 2.263 2.263 0.000 Total Other Expenditure Adjustments $7.563 $5.299 $2.263 $2.263 $0.000 Total Expenditures $2,130.630 $2,025.247 $105.383 $29.489 $75.894 Baseline Net Cash Surplus/(Deficit) ($1,109.109) ($990.324) $118.784 $41.764 $77.021
+```
+[p017_c0003] Totals may not agree due to rounding. Results are subject to audit
+
+## Page 18
+
+### [p018_c0001] MTA LONG ISLAND RAIL ROAD 2022 YEAR-END REPORT EXPLANATIONS OF VARIANCES ON RIDERSHIP/ (UTILIZATION)
+### [p018_c0002] 2022 Final Estimate vs. Actual
+[p018_c0003] Ridership of 52.5 million was 0.4% above the Final Estimate. Non-commutation ridership of 31.5 million was 8.6% higher than the Final Estimate, and commutation ridership of 21.1 million was 9.7% lower than the Final Estimate.
+### [p018_c0004] 2022 Adopted Budget vs. Actual
+[p018_c0005] Ridership of 52.5 million was 19.4% below the Adopted Budget. Non-commutation ridership of 31.5 million was 7.2% higher than the Adopted Budget, and commutation ridership of 21.1 million was 41.2% lower than the Adopted Budget. Ridership projections in the Adopted Budget were based on the initial McKinsey ridership assumptions that were subsequently adjusted lower in the 2022 July Plan.
+
+## Page 19
+
+### [p019_c0001] MTA LONG ISLAND RAIL ROAD 2022 FEBRUARY ADOPTED BUDGET AND FINAL ESTIMATE vs. ACTUAL (December) UTILIZATION (in millions)
+[p019_c0002]
+
+```text
+YEAR-TO-DATE as of DECEMBER 2022 Variance Favorable / (Unfavorable) Adopted Budget Final Estimate Actual Adjusted* 2021 Budget Final Estimate Adjusted* 2021 $ $ $ $ $ # $ # $ % $ % # % FAREBOX REVENUE Commutation $272,499 $175,734 $175,734 $157,567 ($114,932) -42.2% ($18,167) -10.3% Non-Commutation $282,450 $275,684 $275,684 $300,016 $17,565 6.2% $24,352 8.8% Total Revenue $554,949 $451,398 $451,398 $457,583 ($97,367) -17.5% $6,184 1.4% RIDERSHIP Commutation 35,832 23,342 23,342 21,083 9,678 (14,749) -41.2% (2,260) -9.7% 11,405 117.8% Non-Commutation 29,335 28,978 28,978 31,458 25,321 2,123 7.2% 2,480 8.6% 6,137 24.2% Total Ridership 65,166 52,320 52,320 52,541 34,999 (12,626) -19.4% 0,220 0.4% 17,542 50.1%
+```
+
+## Page 20
+
+### [p020_c0001] MTA LONG ISLAND RAIL ROAD 2022 YEAR-END REPORT EXPLANATIONS OF VARIANCES on POSITIONS By FUNCTION and DEPARTMENT NON-REIMBURSABLE/ REIMBURSABLE and FULL-TIME/ FULL-TIME EQUIVALENTS
+### [p020_c0002] 2022 Final Estimate vs. Actual
+[p020_c0003] At the end of 2022, the Long Island Rail Road had 7,535 total employees (actual staffing), which consisted of 6,550 non-reimbursable and 985 reimbursable employees. Staffing was 441 positions or 5.5% below the Final Estimate of 7,976 positions.
+[p020_c0004] The vacancies were primarily in Train Operations, Engineering, Customer Services, Maintenance of Equipment, and administrative departments.
+
+## Page 21
+
+### [p021_c0001] MTA LONG ISLAND RAIL ROAD 2022 YEAR-END REPORT 2022 Final Estimate vs. Actual Total Full-Time Positions & FTEs by Function and Department December 2022
+[p021_c0002]
+
+```text
+2022 Fav/(Unfav) Final Estimate Actual # % Administration Enterprise Asset Management 9 9 0 0.0% Sr Vice President - Engineering 0 0 0 0.0% Labor Relations 14 10 4 28.6% Procurement & Logistics (excl. Stores) 46 37 9 19.6% Human Resources 35 28 7 20.0% Sr VP Administration 2 2 0 0.0% Strategic Investments 25 16 9 36.0% President 10 5 5 50.0% VP & CFO 2 0 2 100.0% Controller 39 38 1 2.6% Management and Budget 13 10 3 23.1% BPM, Controls, & Compliance 4 3 1 25.0% Market Dev. & Public Affairs 71 69 2 2.8% Gen. Counsel & Secretary 28 21 7 25.0% Diversity Management 3 1 2 66.7% Security 15 14 1 6.7% System Safety 49 41 8 16.3% Training 74 69 5 6.8% Service Planning 31 31 0 0.0% Rolling Stock Programs 17 8 9 52.9% Sr Vice President - Operations 5 3 2 40.0% Total Administration 492 415 77 15.7% Operations Train Operations 2,329 2,170 159 6.8% Customer Service 548 501 47 8.6% Total Operations 2,877 2,671 206 7.1% Maintenance Engineering 2,142 2,080 62 2.9% Equipment 2,143 2,121 22 1.0% Procurement (Stores) 101 90 11 10.9% Total Maintenance 4,386 4,291 95 2.2% Engineering/Capital Department of Project Management 112 74 38 33.9% Special Projects/East Side Access 59 43 16 27.1% Positive Train Control 50 41 9 18.0% Total Engineering/Capital 221 158 63 28.5% Baseline Total Positions 7,976 7,535 441 5.5% Non-Reimbursable 6,849 6,550 298 4.4% Reimbursable 1,127 985 142 12.6% Total Full-Time 7,976 7,535 441 5.5% Total Full-Time-Equivalents 0 0 0
+```
+
+## Page 22
+
+### [p022_c0001] MTA LONG ISLAND RAIL ROAD 2022 YEAR-END REPORT EXPLANATIONS of VARIANCES By FUNCTION AND OCCUPATION GROUP
+### [p022_c0002] 2022 Final Estimate vs. Actual
+[p022_c0003] At the end of 2022, the Long Island Rail Road had 7,535 total employees (actual staffing), which consisted of 1,526 Managers/Supervisors, 553 Professional, Technical and Clerical, and 5,456 Operational Hourlies. This was 441 positions or 5.5% below the Final Estimate of 7,976.
+[p022_c0004] Approximately 40% of vacancies were Managers/Supervisors, followed by Operational Hourlies which was approximately 33%, and Professional, Technical, Clerical which was 29%.
+
+## Page 23
+
+### [p023_c0001] MTA LONG ISLAND RAIL ROAD
+### [p023_c0002] 2022 YEAR-END REPORT
+### [p023_c0003] 2022 Final Estimate vs. Actual
+### [p023_c0004] Total Positions by Function and Occupational Group
+[p023_c0005] December 2022
+[p023_c0006]
+
+```text
+Favorable (Unfavorable) Variance Final Estimate Final Estimate Actual # % Administration Managers/Supervisors 269 233 36      13.4% Professional, Technical, Clerical 200 159 41      20.5% Operational Hourlies 23 23 0      0.0% Total Administration 492 415 77      15.7% Operations Managers/Supervisors 369 334 35      9.4% Professional, Technical, Clerical 126 110 16      12.7% Operational Hourlies 2,382 2,227 155      6.5% Total Operations 2,877 2,671 206      7.1% Maintenance Managers/Supervisors 904 829 75      8.3% Professional, Technical, Clerical 287 256 31      10.8% Operational Hourlies 3,195 3,206 (11)      -0.3% Total Maintenance 4,386 4,291 95      2.2% Engineering/Capital Managers/Supervisors 154 130 24      15.6% Professional, Technical, Clerical 67 28 39      58.2% Operational Hourlies 0 0 0      0.0% Total Engineering/Capital 221 158 63      28.5% Baseline Total Positions Managers/Supervisors 1,696 1,526 170      10.0% Professional, Technical, Clerical 680 553 127      18.7% Operational Hourlies 5,600 5,456 144      2.6% Total Baseline 7,976 7,535 441      5.5%
+```
+
+## Page 24
+
+### [p024_c0001] MTA LONG ISLAND RAIL ROAD 2022 YEAR-END REPORT RESULTS OF OPERATIONS
+### [p024_c0002] FINANCIAL PERFORMANCE
+[p024_c0003] Actual 2022 non-reimbursable expenses before non-cash liabilities of $1,613.2 million were $239.5 million or 12.9% lower than the Adopted Budget and $66.2 million or 3.9% lower than the Final Estimate.
+[p024_c0004] The operating cash deficit of $990.3 million was 17.9% favorable to the Adopted Budget and 10.7% favorable to the Final Estimate.
+[p024_c0005] Managing Workforce Levels: Given that payroll spending is the single largest expense category in the budget, the LIRR pays close attention to staffing levels. Senior management must ensure that the LIRR is budgeted appropriately for its operation and at the same time make sure that a sufficient number of positions are filled to complete necessary work and avoid the unnecessary use of overtime. During 2022, the LIRR continued carefully reviewing all hiring decisions, including backfills of existing vacant positions.
+[p024_c0006] The LIRR's success at controlling labor-related expenses is founded on developing a realistic and efficient hiring plan for operational positions. The hiring plan links workload (current and projected) to attrition projections and training and recruitment capacity to set hiring goals over a two-year planning horizon. This hiring plan was even more critical in 2022 as the LIRR prepared for the opening of Grand Central Madison (GCM).
+[p024_c0007] Controlling Overtime: The LIRR's Overtime Task Force is tasked with strengthening the Rail Road's overtime monitoring and approval process, standardizing procedures, and increasing managerial accountability for overtime usage. The Task Force is a corporate-wide effort that engages high-level senior management and staffing from the four main operating departments and relevant oversight and support departments. The Task Force meets regularly to review and discuss progress on strategic overtime initiatives and overall overtime data. Individual working groups met to discuss trends and identify corrective action plans.
+[p024_c0008] In 2022, The Overtime Task Force continued to meet with the President to discuss trends, the status of initiatives, and high earners. The operating departments conducted thorough overtime and time/attendance reviews of high earners and random employees. Departments continued to use tools such as the MTA Overtime Dashboard to assist in their analysis. In addition, rigorous monthly reviews of overtime approval, time and attendance, and payroll records enhance internal controls.
+[p024_c0009] Overtime hours in 2022 were 393,000 hours (15%) higher than in 2021. Most of the increase was attributed to a 46% increase (191,500 hours) in programmatic/routine maintenance, and an 18% increase (157,000 hours) in vacancy/absentee coverage. The drastic increase in programmatic routine maintenance was mostly because the 2021 service plan allowed for more weekday track outages. It became more difficult to utilize these track outages as service increased which resulted in an increase in overtime on nights and weekends. The increase in vacancy/absentee coverage was mostly attributed to higher levels of vacancies in the Equipment Department which needed to be backfilled on overtime. This was due to higher levels of attrition than originally planned.
+[p024_c0010] Other contributors included a 4% increase (12,300 hours) in scheduled service, partially offset by a 66% decrease (97,300 hours) in unscheduled maintenance due to reduced sanitizing/cleaning
+
+## Page 25
+
+[p025_c0001] efforts, and a 28% decrease (30,700 hours) in weather-related overtime. Another contributing factor included a 21% increase (157,000 hours) in reimbursable activity resulting from an increase in the amount of Maintenance of Way reimbursable work required to be completed on overtime.
+[p025_c0002] One metric used by the MTA to measure financial performance is the Farebox Operating Ratio (FOR), which calculate the percent of operating expenses the LIRR that is covered through farebox revenue. COVID-19 had a significant impact on this and other key financial performance metrics. In pre-pandemic 2019, the FOR was 50.2% and the operating cost per passenger was $16.80. In 2022, the FOR increased from 19.8% to 27.8%. The 2022 actual FOR was unfavorable to the Adopted Budget level of 29.6% and favorable to the Final Estimate of 26.4%. It is important to note that excluding the LIRR's unfunded pension liability expenses would have increased the farebox operating ratio to 31.9% in 2022. The LIRR's operating cost per passenger decreased to $31.35 in 2022 from $42.54 in 2021.
+### [p025_c0003] RIDERSHIP AND REVENUE
+[p025_c0004] In 2022, ridership showed significant improvement compared to 2020 and 2021. Compared to 2019 levels, total ridership began the year at approximately 38%, growing to 66% in November 2022. Commutation ridership grew by 117% from 2021 to 2022 as many employees transitioned back to the office on at least a part-time schedule.
+[p025_c0005] In 2022, the LIRR carried 52.5 million customers, which was a 50% percent increase from 35.0 million customers in 2021. However, this was still 42.3% lower than the pre-pandemic 2019 ridership of 91.1 million.
+### [p025_c0006] Total Ridership
+> [p025_c0007] A stacked bar chart titled 'Total Ridership' showing ridership in millions from 2018 to 2022. The y-axis ranges from 0.0 to 100.0 in increments of 10.0. The x-axis lists the years 2018, 2019, 2020, 2021, and 2022. Each bar is divided into two segments: a light gray segment at the bottom representing 'Commutation' and a dark blue segment on top representing 'Non-Commutation'. The total ridership for each year is labeled at the top of the bar. The data points are as follows: Year Commutation (millions) Non-Commutation (millions) Total Ridership (millions) 2018 50.8 38.9 89.8 2019 50.6 40.5 91.1 2020 14.3 16.0 30.3 2021 9.7 25.3 35.0 2022 21.1 31.5 52.5 Legend: ■ Commutation ■ Non-Commutation
+
+## Page 26
+
+[p026_c0001] Weekday service remained consistent throughout 2022 with no major changes to service. Traditional peak hours for most branches have also remained consistent. Weekend service was significantly impacted by outages for the Mainline Expansion project. Even with the significant outages, off-peak and weekend ridership have returned stronger than peak ridership.
+[p026_c0002] Service to Grand Central Madison (GCM) was originally planned for late 2022 but did not commence until early 2023.
+### [p026_c0003] SAFETY/SECURITY
+[p026_c0004] An essential element of LIRR's mission is to ensure the safety of its customers, employees, and the communities it serves. LIRR's corporate safety and security programs are designed to engage every employee in promoting the value of safety and security requirements. It is a collaborative effort between the Corporate Safety Department, the LIRR Office of Security, and all LIRR operating and administrative departments.
+[p026_c0005] Other accomplishments in 2022 included the following:
+- [p026_c0006] • Collaborated with the Long Island Suicide Coalition which includes the NYS Office of Mental Health, Response Long Island and the Long Island Crisis Center. The group has worked together to engage customers at select stations throughout the years. Together the group designed a suicide awareness sign that has been installed at all 125 LIRR stations. In addition to the signage, the LIRR initiated a blue light strategy at select stations to deter suicide attempts at our stations. • Conducted LIRR's quarterly "Safety FOCUS Days," (Fatigue, Outside Influences, Communication, Uncertainty Meetings, Situational Awareness) in which the LIRR president and the vice president of LIRR Corporate Safety meet directly with frontline supervisors and managers to discuss safety issues in the field. • Continued the railroad's Confidential Close Call Reporting System (C3RS), a collaborative effort between management, labor, and the Federal Railroad Administration (FRA) that enables employees to confidentially report "close calls" that could have caused operating and safety incidents. Peer review teams meet several times a month to review reports, discuss mitigations, and recommend corrective actions. • Continued implementing a new Enterprise Safety System (ESS) to replace LIRR's existing mainframe-based accident reporting system with a new database system utilizing trend analysis and other "business intelligence" capabilities. • Continued a slate of employee safety initiatives, campaigns focusing on personal protective equipment, and social distancing, track safety for employees, and employee safety-related experiences in the field. • Continued implementing safety recommendations resulting from an anonymized employee "Safety Barometer" survey co-managed by the National Safety Council (NSC). • Continued installation, configuration, and research and development of analytics to work in conjunction with security cameras and access devices to deter crimes and record evidence for investigations.
+
+## Page 27
+
+- [p027_c0001] • Completed multiple security projects across the railroad. These included the installation of CCTV and video management systems, intrusion detection systems, and access-control devices at multiple LIRR stations, facilities, and existing rail cars. New cameras continue to be installed on station platforms, crossings, yards, ticket offices, facility buildings, and newly acquired rail cars. • Continued the installation of high-security electronic gates and fencing, along with other “hardening” upgrades to thwart trespassers on the right of way, as well as exterior yards. • Increased security awareness through the turnover of security services from the project teams and LIRR Office of Security of several new facilities, including GCM and Mid-Day Storage Yard. • Provided critical interagency support for security operations and information sharing for major events throughout the LIRR’s geographical area.
+### [p027_c0002] OPERATIONAL PERFORMANCE
+[p027_c0003] On-Time Performance (OTP): One of the most reliable predictors of customer satisfaction is the ability of the LIRR to deliver passengers to their intended destinations on time. For 2022, OTP was 95.8%, which was the 3 rd highest OTP in LIRR history. This was slightly below 2021, which was the highest OTP LIRR has seen since modern record-keeping began in the 1970s.
+> [p027_c0004] Category 2021 (%) 2022 (%) AM Peak 96.4% 96.0% PM Peak 97.7% 95.7% Total Peak 97.0% 95.8% Off Peak 96.1% 95.8% Total OTP 96.3% 95.8%
+[p027_c0005] In 2022, the total number of delays increased by 18% to 9,490 from 8,028 in 2021. Increases occurred in most of the categories; including Train Operations – 1128, Infrastructure Maintenance – 267, Customer Assistance – 198, Fleet – 184, and Police - 87. These increases are mostly attributed to an increase in ridership along with an increase in the number of scheduled trains.
+
+## Page 28
+
+[p028_c0001] For comparison, there was a 50% drop in late trains when comparing 2019 to 2022 (18,976 to 9,490).
+[p028_c0002] Mean Distance Between Failures (MDBF): MDBF is the standard measurement used to gauge fleet reliability. The MDBF for the entire fleet in 2022 was 229,824 miles, exceeding the 2022 goal of 190,000 miles by 21% and representing a 0.7% decrease from 2021.
+> [p028_c0003] Mean Distance Between Failure M-3 M-7 M-9 C-3 DE DM 2019 62,560 394,215 268,612 123,641 20,876 23,660 2020 76,980 462,053 280,738 122,573 21,614 26,276 2021 404,103 246,239 152,457 18,801 24,898 2022 85,882 404,532 254,521 164,051 23,593 19,022
+[p028_c0004] The M7 fleet, with an MDBF of 404,532 miles, continued to be the strongest contributor to the LIRR's fleet reliability achievements. The RCM program and rigorous maintenance strategies contributed to this outstanding reliability performance.
+[p028_c0005] The Maintenance of Equipment Department's strategic maintenance efforts also helped to sustain a high C-3 fleet reliability, which reached an MDBF of 164,051 – exceeding the goal by 59%. The combined diesel fleet achieved an MDBF of 71,693 miles, which exceeded the goal by 40%.
+[p028_c0006] At the end of 2022, the multiple unit (MU) electric fleet consisted of 826 M-7, 146 M-9 and 80 M-3 cars available for revenue service. The diesel fleet consisted of 134 C-3 coach cars and 45 diesel locomotives.
+[p028_c0007] New M9 rail cars entered passenger service on Sept. 11, 2019. The new cars incorporate and improve upon the most successful and popular features of the MTA's two recent electric car fleets, the LIRR's familiar M-7 electric cars and the M-8 cars serving Metro-North's New Haven Line. A total of 202 cars are expected to be put into revenue service over the next several years.
+[p028_c0008] LIRR continues its efforts to optimize the Reliability Centered Maintenance program, Enterprise Asset Management (EAM) system implementation, continued M9 fleet addition in revenue service, and initiatives targeting the performance of the entire fleet.
+
+## Page 29
+
+### [p029_c0001] CUSTOMER COMMUNICATION
+[p029_c0002] Keeping customers fully informed in real-time is a high priority of the LIRR, and the Rail Road continues to explore ways to improve in this area. The LIRR Public Information Office (PIO) continues to improve messaging protocols to provide customers with recovery estimates for service disruptions as well as early morning messages in advance of anticipated disruptions.
+[p029_c0003] Since January 2019, riders have been able to see exactly where their trains are, in real-time, thanks to the Train Time App. This tool uses real-time GPS tracking technology, enabling our customers to pull up the location of their train and expected time of arrival. It also provides information such as the car length of a train, train direction and whether it's diesel or electric. The Train Time App rolled out an enhanced feature in 2021 that provides accessibility information for a specific station, by locating elevators, escalators, and ramps at both the customer's origin and destination station. This allows the user to see specifically where along the station platform the elevators, escalators, and ramps are available. Real-time data provides customers with elevators and escalators that are currently out of service.
+[p029_c0004] The LIRR continued to enhance the availability of on-board seating/crowding information at station platforms, by continuing to replace and upgrade electronic signs at selected stations. The new digital platform signs provide a diagram of an arriving train, displaying available seating capacity in each car, as well as the observer's relative position along the platform. This allows customers to position themselves along the platform to align with a train car that is less crowded/has more available seating.
+[p029_c0005] The LIRR also continued the Rail Road's popular LIRR Care Program, which provides personalized attention for first-time LIRR travelers and customers requiring special assistance when boarding or exiting LIRR trains. The program an initiative LIRR is exploring to better accommodate Americans with Disabilities Act (ADA) customers.
+### [p029_c0006] CAPITAL IMPROVEMENTS
+- [p029_c0007] • The LIRR Modernization Program is a multi-billion-dollar investment in the regional transportation infrastructure that aims to foster Long Island's economic health. This comprehensive program to reconstruct and improve the LIRR system moves forward with planning, design, and construction. These projects range from significant system expansion efforts, such as the LIRR Expansion Project from Floral Park to Hicksville and GCM, to improvements to existing infrastructure, such as bridge replacements, substation replacements, and station enhancements. Collectively, these projects will work together to improve the overall LIRR system efficiency and reliability. Several major projects were completed, and others remain ongoing. • Completed Jamaica Capacity Phase 1. The work included the completion of a new platform at Jamaica Station which is necessary to provide service between Brooklyn and Jamaica with the implementation of the new service plan for GCM. • Completed the 2022 LIRR Annual Track Program, which included: installing 32,097 concrete ties on the Main Line, Hempstead, and Atlantic Branch; installing 48,694 linear feet of continuous welded rail (CWR) on the Main Line, Hempstead, and Atlantic Branch; replacing 13,429 timber ties to the Hempstead and Oyster Bay Branch; completing 486 field welds; surfacing 21 miles of track Main Line, Hempstead, Atlantic Branch, and systemwide.
+
+## Page 30
+
+- [p030_c0001] • Completed necessary work to put GCM into service in early 2023. The work included the construction of the new train concourse below Grand Central Terminal along with remaining infrastructure work along the right-of-way.
+
+## Page 31
+
+### [p031_c0001] MTA LONG ISLAND RAIL ROAD 2022 YEAR-END REPORT 2022 FINAL ESTIMATE vs ACTUALS MONTHLY PERFORMANCE INDICATORS December 2022
+[p031_c0002]
+
+```text
+YEAR-TO-DATE VARIANCE Actual Final Estimate 2021 vs. Final Estimate vs. 2021 Farebox Operating Ratio Standard (1) 28.0% 26.4% 19.8% 1.6% 8.2% Adjusted (2) 32.4% 30.5% 23.7% 1.9% 8.7% Cost Per Passenger Standard (1) $31.09 $32.64 $42.54 $1.55 $11.45 Adjusted (2) $28.83 $30.24 $39.08 $1.41 $10.25 Passenger Revenue/Passenger (3) $8.71 $8.63 $8.44 $0.08 $0.27
+```
+[p031_c0003]
+
+```text
+YEAR-TO-DATE VARIANCE Actual Adopted Budget 2021 vs. Adopted Budget vs. 2021 Farebox Operating Ratio Standard (1) 28.0% 29.6% 19.8% -1.6% 8.2% Adjusted (2) 32.4% 33.5% 23.7% -1.1% 8.7% Cost Per Passenger Standard (1) $31.09 $28.82 $42.54 ($2.27) $11.45 Adjusted (2) $28.83 $26.74 $39.08 ($2.09) $10.25 Passenger Revenue/Passenger (3) $8.71 $8.52 $8.44 $0.19 $0.27
+```
+[p031_c0004] (1) The Standard Farebox Operating Ratio and Cost Per Passenger indicators reflect MTA-wide adopted calculations that exclude non-cash liability adjustments: Depreciation, OPEB Expense (GASB 75), Pension Expense (GASB 68) and Environmental Remediation (GASB-49).
+[p031_c0005] (2) Adjusted Fare Box Operating Ratio and Cost Per Passenger indicators have been adjusted for comparability between the Long Island Rail Road and Metro-North Railroad and are being presented only at the railroad operating committees. These adjustments are not being used MTA-wide. Adjustments have been made to reflect all operating revenue and significant financial impacts that are outside management's control. These adjustments include: Inclusion of Other Operating Revenue, Removal of OPEB Current Payment expenses for retirees, and Removal of the UAAL associated with the LIRR's closed pension plan.
+[p031_c0006] (3) Passenger Revenue/Passenger includes Hampton Seat Reservations.

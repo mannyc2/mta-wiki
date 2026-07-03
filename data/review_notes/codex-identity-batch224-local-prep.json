@@ -1,0 +1,230 @@
+{
+  "note_id": "codex-identity-batch224-local-prep",
+  "batch": "identity224-local",
+  "created_at": "2026-06-23T15:02:16.376Z",
+  "author": "codex",
+  "scope": {
+    "operation": "conductor_prepared_codex_only_identity_cleanup",
+    "after_checkpoint": "identity223-repair",
+    "issue_type": "duplicate_global_identity",
+    "provider_backed_commands_run": false,
+    "generated_output_commands_run": false
+  },
+  "prepared_count": 16,
+  "decision_type_counts": {
+    "alias_merge": 4,
+    "do_not_merge": 12,
+    "skipped_review_only": 1
+  },
+  "proposed_durable_decisions": [
+    {
+      "decision_id": "identity224-local-001",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias": "entity_stv-inc",
+      "target": "entity_stv-20100615",
+      "confidence": "high",
+      "reason": "Both records identify STV Inc./STV, the same engineering/consulting firm; the target is the richer multi-source STV record and the alias is a one-source STV Inc. address record.",
+      "validator_evidence": "Global entity records entity_stv-20100615 and entity_stv-inc share identity key entity_stv-inc."
+    },
+    {
+      "decision_id": "identity224-local-002",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias": "entity_nyct-committee-2023",
+      "target": "entity_meeting-doc-140466-nyct-committee-members",
+      "confidence": "high",
+      "reason": "Both records identify the New York City Transit Committee / NYCT Committee context; target is the richer committee/member cluster.",
+      "validator_evidence": "Global entity records entity_meeting-doc-140466-nyct-committee-members and entity_nyct-committee-2023 share identity key entity_nyct-committee."
+    },
+    {
+      "decision_id": "identity224-local-003",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias": "entity_nyct-transit-committee-members",
+      "target": "entity_meeting-doc-140466-nyct-committee-members",
+      "confidence": "high",
+      "reason": "Both records identify New York City Transit Committee members; target is the richer committee/member cluster.",
+      "validator_evidence": "Global entity records entity_meeting-doc-140466-nyct-committee-members and entity_nyct-transit-committee-members share identity keys entity_new-york-city-transit-committee and entity_new-york-city-transit-committee-members."
+    },
+    {
+      "decision_id": "identity224-local-004",
+      "decision_type": "alias_merge",
+      "global_kind": "entity",
+      "alias": "entity_nyct-mta-bus-committee-charter",
+      "target": "entity_meeting-doc-140466-nyct-committee-members",
+      "confidence": "medium_high",
+      "reason": "Both records are NYCT/Bus Committee or Committee on Operations records in MTA Board context; the target is the richer NYCT committee/member cluster. Keep as committee alias, not as agency merge.",
+      "validator_evidence": "Global entity records entity_meeting-doc-140466-nyct-committee-members and entity_nyct-mta-bus-committee-charter share identity key entity_nyct-committee."
+    },
+    {
+      "decision_id": "identity224-local-005",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_mabstoa",
+        "entity_mta-bus-company"
+      ],
+      "confidence": "high",
+      "reason": "MaBSTOA and MTA Bus Company are distinct MTA bus-operating entities; shared Manhattan/Bronx surface transit keys on MTA Bus are contamination.",
+      "validator_evidence": "Global entity records entity_mabstoa and entity_mta-bus-company share identity key entity_manhattan-and-bronx-surface-transit-operating-authority."
+    },
+    {
+      "decision_id": "identity224-local-006",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_department-of-buses",
+        "entity_mta-nyct-evp-frank-farrell"
+      ],
+      "confidence": "high",
+      "reason": "Department of Buses is an organization/unit; Frank Farrell EVP record is a person/officer context. The NYCT key is affiliation contamination.",
+      "validator_evidence": "Global entity records entity_department-of-buses and entity_mta-nyct-evp-frank-farrell share identity key entity_mta-nyct."
+    },
+    {
+      "decision_id": "identity224-local-007",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-102746-committee",
+        "entity_mta-nyct"
+      ],
+      "confidence": "high",
+      "reason": "Metro-North committee context and NYCT agency are distinct; shared Metro-North railroad key on NYCT is cross-record contamination.",
+      "validator_evidence": "Global entity records entity_meeting-doc-102746-committee and entity_mta-nyct share identity key entity_metro-north-commuter-railroad-company."
+    },
+    {
+      "decision_id": "identity224-local-008",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_annual-report-2021-lirr",
+        "entity_meeting-doc-143306-mta-hq"
+      ],
+      "confidence": "high",
+      "reason": "LIRR is a railroad agency/subsidiary; MTA Headquarters is an administrative/HQ unit. The LIRR key on HQ is contamination.",
+      "validator_evidence": "Global entity records entity_annual-report-2021-lirr and entity_meeting-doc-143306-mta-hq share identity key entity_long-island-rail-rd."
+    },
+    {
+      "decision_id": "identity224-local-009",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-143306-mta-hq",
+        "entity_meeting-doc-154986-aar"
+      ],
+      "confidence": "high",
+      "reason": "MTA Headquarters and Access-A-Ride/paratransit service context are distinct; shared MTA key is parent-acronym contamination.",
+      "validator_evidence": "Global entity records entity_meeting-doc-143306-mta-hq and entity_meeting-doc-154986-aar share identity key entity_mta."
+    },
+    {
+      "decision_id": "identity224-local-010",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-154986-aar",
+        "entity_meeting-doc-64066-mta"
+      ],
+      "confidence": "high",
+      "reason": "Access-A-Ride/paratransit service context is not the parent Metropolitan Transportation Authority record.",
+      "validator_evidence": "Global entity records entity_meeting-doc-154986-aar and entity_meeting-doc-64066-mta share identity key entity_metropolitan-transportation-authority-mta."
+    },
+    {
+      "decision_id": "identity224-local-011",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-143306-mta-hq",
+        "entity_meeting-doc-64066-mta"
+      ],
+      "confidence": "high",
+      "reason": "MTA Headquarters is an HQ/administrative unit cluster; the other record is parent Metropolitan Transportation Authority. Do not collapse unit into parent.",
+      "validator_evidence": "Global entity records entity_meeting-doc-143306-mta-hq and entity_meeting-doc-64066-mta share identity key entity_mta."
+    },
+    {
+      "decision_id": "identity224-local-012",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-143306-mta-hq",
+        "entity_meeting-doc-ddcr"
+      ],
+      "confidence": "high",
+      "reason": "MTA Headquarters and DDCR/diversity-civil-rights context are distinct units/contexts; shared MTA acronym is not identity.",
+      "validator_evidence": "Global entity records entity_meeting-doc-143306-mta-hq and entity_meeting-doc-ddcr share identity key entity_mta."
+    },
+    {
+      "decision_id": "identity224-local-013",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-143306-mta-hq",
+        "entity_mta-bridges-and-tunnels"
+      ],
+      "confidence": "high",
+      "reason": "MTA Headquarters and MTA Bridges and Tunnels/TBTA are distinct MTA entities.",
+      "validator_evidence": "Global entity records entity_meeting-doc-143306-mta-hq and entity_mta-bridges-and-tunnels share identity key entity_mta."
+    },
+    {
+      "decision_id": "identity224-local-014",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-143306-mta-hq",
+        "entity_mta-bus-company"
+      ],
+      "confidence": "high",
+      "reason": "MTA Headquarters and MTA Bus Company are distinct MTA entities.",
+      "validator_evidence": "Global entity records entity_meeting-doc-143306-mta-hq and entity_mta-bus-company share identity key entity_mta."
+    },
+    {
+      "decision_id": "identity224-local-015",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-121001-gcmoc",
+        "entity_mta-entity-update-2025"
+      ],
+      "confidence": "high",
+      "reason": "Grand Central Madison Operating Company/GCMOC is a specific operating company; it is not the parent MTA authority.",
+      "validator_evidence": "Global entity records entity_meeting-doc-121001-gcmoc and entity_mta-entity-update-2025 share GCMOC identity keys."
+    },
+    {
+      "decision_id": "identity224-local-016",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-100241-staten-island-railway",
+        "entity_mta-entity-update-2025"
+      ],
+      "confidence": "high",
+      "reason": "Staten Island Railway/SIRTOA operating entity is distinct from parent MTA authority.",
+      "validator_evidence": "Global entity records entity_meeting-doc-100241-staten-island-railway and entity_mta-entity-update-2025 share identity key entity_staten-island-railway."
+    }
+  ],
+  "skipped_review_only": [
+    {
+      "decision_id": "identity224-local-017",
+      "decision_type": "skipped_review_only",
+      "global_kind": "corridor",
+      "candidate_pair": [
+        "corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate",
+        "corridor_church-av"
+      ],
+      "confidence": "low",
+      "reason": "Still deferred: sparse Bus Forward 2 Church Avenue SBS candidate has no source-backed limits; corridor_church-av is bounded Flatbush Ave to Ocean Pkwy. Existing review notes say neither merge nor DNM is durable without source-backed limits or policy.",
+      "validator_evidence": "Global corridor records corridor_bus-fwd-2-church-av-brooklyn-sbs-candidate and corridor_church-av share identity key corridor_church-ave."
+    }
+  ],
+  "commands_run": [
+    "validateRepo baseline",
+    "canonical record inspection with jq/rg",
+    "override conflict guard check"
+  ],
+  "commands_not_run": [
+    "provider-backed commands",
+    "materialize",
+    "validate CLI",
+    "export-jsonl"
+  ]
+}

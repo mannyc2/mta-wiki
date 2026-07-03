@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "corridor_cluster_43406c6cbd",
+  "kind": "corridor",
+  "packet_path": "data/identity-review/packets/corridor_cluster_43406c6cbd.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_43406c6cbd.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 3,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "corridor_woodhaven-blvd-dry-harbor-to-metropolitan",
+        "corridor_woodhaven-blvd-union-tpke-to-81st-rd"
+      ],
+      "reason": "Different limits: Dry Harbor Road to Metropolitan Avenue vs Union Turnpike to 81st Road. Per corridor rule: same street+borough but different limits never merge."
+    },
+    {
+      "record_ids": [
+        "corridor_woodhaven-blvd-dry-harbor-to-metropolitan",
+        "corridor_woodhaven-boulevard"
+      ],
+      "reason": "Different limits: Dry Harbor Road to Metropolitan Avenue vs Queens Boulevard to Union Turnpike (from payload). These are distinct segments on Woodhaven Boulevard."
+    },
+    {
+      "record_ids": [
+        "corridor_woodhaven-blvd-union-tpke-to-81st-rd",
+        "corridor_woodhaven-boulevard"
+      ],
+      "reason": "Different limits: Union Turnpike to 81st Road vs Queens Boulevard to Union Turnpike. The first begins at Union Turnpike and goes south; the second ends at Union Turnpike (or extends to 107th Avenue per display). Distinct corridors."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [
+    "Consider relating these corridor segments with 'subsegment_of' relation if they fall within a larger corridor."
+  ],
+  "rationale": "All three records share the same street (Woodhaven Boulevard) and borough (Queens) but have distinct limits. Per corridor identity rule: 'Same street name with differing borough or limits never merges.' No contradiction test failure other than limits differences, which are decisive. These are distinct segments of the same boulevard, not the same canonical corridor. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

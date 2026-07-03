@@ -1,0 +1,485 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-33226"
+record_kind: "source"
+display_name: "Corporate Governance Committee Meeting Exhibit Book 03/17/2021"
+source_id: "meeting_doc_33226"
+source_ids:
+  - "meeting_doc_33226"
+local_observation_id: "source_meeting_doc_33226"
+local_observation_ids:
+  - "source_meeting_doc_33226"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T23:01:23.295Z"
+submission_ids:
+  - "sub_c49affe6e6ba1a21"
+payload:
+  authority_tier: "board_material"
+  content_type: "Exhibit Book"
+  date_text: "03/17/2021"
+  date_text_normalized:
+    confidence: "unparsed"
+    precision: "unknown"
+    raw_text: "03/17/2021"
+  publisher: "MTA Board"
+  title: "EXHIBIT BOOK - POLICIES FOR BOARD APPROVAL PURSUANT TO PUBLIC AUTHORITIES LAW"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_33226#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "meeting_doc_33226"
+    source_path: "raw/sources/meeting_doc_33226/blocks.jsonl"
+    text_sha256: "sha256:5cc70e3dbf89589c162ea3714602651761074511fd7981bd16b1b203e3187209"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_33226#p001_c0002"
+    page_number: 1
+    role: "subtitle"
+    source_id: "meeting_doc_33226"
+    source_path: "raw/sources/meeting_doc_33226/blocks.jsonl"
+    text_sha256: "sha256:31542f02564b28edbe5cc7f7ef85496ee9a7a7f397387d3008cf7a378e61497f"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_33226#p001_c0003"
+    page_number: 1
+    role: "date"
+    source_id: "meeting_doc_33226"
+    source_path: "raw/sources/meeting_doc_33226/blocks.jsonl"
+    text_sha256: "sha256:a3da3631e5af323cea262b73b668f8966f09bcd8ce2285d92bfd37692ed8f57a"
+    text_source: "raw_text"
+---
+
+# Corporate Governance Committee Meeting Exhibit
+
+source_id: meeting_doc_33226
+citation: cite block ids exactly as shown in square brackets
+document: 314 block(s)
+
+## Page 1
+
+### [p001_c0001] EXHIBIT BOOK
+### [p001_c0002] POLICIES FOR BOARD APPROVAL PURSUANT TO PUBLIC AUTHORITIES LAW
+[p001_c0003] Corporate Governance Committee Meeting 03/17/2021
+[p001_c0004] _Master Page # 1 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 2
+
+### [p002_c0001] Exhibit Book Corporate Governance Committee Meeting 3/17/2021
+### [p002_c0002] Table of Contents:
+[p002_c0003] All Agency WTC LOD Sick Leave - Page 3
+[p002_c0004] Metro-North Alcohol and Substance Abuse Policy - Page 10
+[p002_c0005] _Master Page # 2 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 3
+
+### [p003_c0001] All Agency Policy Directive
+### [p003_c0002] WORLD TRADE CENTER STATUTORY LINE of DUTY SICK LEAVE
+[p003_c0003]
+
+```text
+Policy Number Responsible Department Effective Date Page 00-TBD People/Human Resources Draft 2/10/2021 Page 1 of 7
+```
+### [p003_c0004] I. PURPOSE
+[p003_c0005] This policy directive establishes the procedures for providing employees of the Metropolitan Transportation Authority and its subsidiary and affiliate agencies (“MTA”) paid line of duty sick leave for a Qualifying WTC Health Condition resulting from participation in the World Trade Center (“WTC”) rescue, recovery or clean-up operations pursuant to Section 92-d of the New York State General Municipal Law.
+### [p003_c0006] II. SCOPE
+[p003_c0007] This policy directive applies to all represented and non-represented employees of the MTA, including the following subsidiary and affiliate agencies: the Long Island Rail Road Company (“LIRR”), MTA Construction and Development Company (“C&D”), the Triborough Bridge & Tunnel Authority (“TBTA”), MTA Bus Company (“MTABC”), Metro-North Commuter Railroad Company (“MNR”), the New York City Transit Authority (“NYCTA”), including the Manhattan and Bronx Surface Transit Operating Authority (“MaBSTOA”) and the Staten Island Rapid Transit Operating Authority (“SIRTOA”), and any future subsidiary or affiliate entity of the MTA (collectively known as “MTA Agencies” or “MTA”).
+### [p003_c0008] III. DEFINITIONS
+- [p003_c0009] A. Qualifying WTC Health Condition: A qualifying condition or impairment of health resulting in disability to an employee who participated in the WTC rescue, recovery or clean-up operations for a qualifying period as defined in Section 2(36) of the New York Retirement and Social Security Law (“RSSL”). B. Notice of Participation in WTC Rescue, Recovery or Clean-Up: A sworn statement filed with an employee’s retirement system indicating the dates and locations of an employee’s participation in the WTC rescue, recovery or clean-up operations that preserves an employee’s right to file for disability retirement under the WTC Disability Law. C. WTC Line of Duty Sick Leave: Leave granted to an employee who files a Notice of Participation and subsequently develops a Qualifying WTC Health Condition as defined in Section (2)(36) of the RSSL. WTC Line of Duty Sick Leave is available commencing on the date the employee was medically diagnosed with a Qualifying WTC Health Condition regardless of whether the employee was employed by the MTA when performing WTC rescue, recovery or clean-up
+[p003_c0010] _Issued: MTA Board_
+[p003_c0011] _MTA Corporate Compliance_
+[p003_c0012] _Internal Control Number: GRC#####_
+[p003_c0013] _Master Page # 3 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 4
+
+### [p004_c0001] All Agency Policy Directive
+### [p004_c0002] WORLD TRADE CENTER STATUTORY LINE of DUTY SICK LEAVE
+[p004_c0003]
+
+```text
+Policy Number Responsible Department Effective Date Page 00-TBD People/Human Resources Draft 2/10/2021 Page 2 of 7
+```
+[p004_c0004] operations. WTC Line of Duty Sick Leave is available each time an employee is absent from work due to a Qualifying WTC Health Condition and is in addition to any other leave provided by the MTA.
+### [p004_c0005] IV. POLICY
+- [p004_c0006] A. MTA employees who participated in the WTC rescue, recovery or clean-up operations and subsequently develop a Qualifying WTC Health Condition, may, upon written request, receive WTC line of duty sick leave from the date the condition was medically diagnosed. B. In order to be eligible for WTC Line of Duty Sick Leave, an employee must file a Notice of Participation in the WTC rescue, recovery or clean-up operation with an acceptable entity (e.g. NYS and Local Retirement System, NYC Employee’s Retirement System, NYC Fire Pension Fund, NYC Police Pension Fund, NYC Teachers’ Retirement System, MaBSTOA Pension Plan, other entities as applicable) and must have a Qualifying WTC Health Condition as the term is defined in RSSL Section 2(36). C. WTC Line of Duty Sick Leave requests will be considered on a case-by-case basis, and the following conditions must be met: 1. Employee has provided the MTA with an approved Notice of Participation in WTC rescue, recovery or clean-up operations verifying such participation. 2. Employee has a medically certified Qualifying WTC Health Condition. 3. Employee was employed by the MTA, New York State, a New York municipal corporation, or another New York public authority at the time of the WTC rescue, recovery or clean-up operations. 4. Employee was absent from work at the MTA (either paid or unpaid) in connection with the medically certified Qualifying WTC Health Condition on the days they claim they are entitled to WTC line of duty sick leave. 5. Employee has not already received a similar benefit pursuant to a collective bargaining agreement.
+[p004_c0007] _Issued: MTA Board_
+[p004_c0008] _MTA Corporate Compliance_
+[p004_c0009] _Internal Control Number: GRC#####_
+[p004_c0010] _Master Page # 4 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 5
+
+### [p005_c0001] All Agency Policy Directive
+### [p005_c0002] WORLD TRADE CENTER STATUTORY LINE of DUTY SICK LEAVE
+[p005_c0003]
+
+```text
+Policy Number Responsible Department Effective Date Page 00-TBD People/Human Resources Draft 2/10/2021 Page 3 of 7
+```
+### [p005_c0004] V. PROCEDURE
+- [p005_c0005] A. Employees requesting a WTC Line of Duty Sick Leave must complete the MTA WTC Line of Duty Sick Leave Request Form. The form and all supporting documentation should be submitted to the Agency People/Human Resources designee(s) for the employee's respective agency. B. A request for WTC Sick Leave must be accompanied with the following documentation: 1. Notice of Participation in the WTC Rescue, Recovery or Clean-up operations and an acceptance letter from the retirement system that the employee was a member when participating in such rescue, recovery and clean-up operations. 2. Medical evidence of a qualifying WTC condition and the date the condition commenced. For example, WTC Health Program Certification of Health Condition(s) or similar document. 3. HIPPA release granting MTA Occupational Health Services (OHS) or affiliate agency designee where applicable, access to relevant medical records necessary to review the employee's request. 4. List of dates for which sick leave was used due to a medically certified Qualifying WTC Health Condition(s). 5. Appropriate medical documentation that the requested prior and prospective absences were due to incapacity, medical treatment or medical testing related to the employee's Qualifying WTC condition(s). For example, sick leave applications, FMLA applications, doctor's notes, records of urgent care visits, discharge paperwork, etc. For prior absences for which an employee is seeking retroactive restoration and does not have specific medical documentation available from the time of the absence, the employee may submit an attestation from their medical provider indicating the purpose of the absence was related to their Qualifying WTC Condition(s). Such attestation must list the date of absence and provide that the absence was specifically related to the employee's Qualifying WTC Condition(s).
+[p005_c0006] _Issued: MTA Board_
+[p005_c0007] _MTA Corporate Compliance_
+[p005_c0008] _Internal Control Number: GRC#####_
+[p005_c0009] _Master Page # 5 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 6
+
+### [p006_c0001] All Agency Policy Directive
+### [p006_c0002] WORLD TRADE CENTER STATUTORY LINE of DUTY SICK LEAVE
+[p006_c0003]
+
+```text
+Policy Number Responsible Department Effective Date Page 00-TBD People/Human Resources Draft 2/10/2021 Page 4 of 7
+```
+- [p006_c0004] C. As necessary, the MTA People/Human Resources designee(s) will consult with OHS or affiliate agency designee where applicable, to determine that absences are related to the employee's Qualifying WTC Health Condition(s), which includes review of supporting medical documentation submitted by the employee. At all times, confidential medical information should not be disclosed beyond Human Resources and OHS or affiliate agency designee where applicable. After the file is closed, Agency People/Human Resources designee will send all confidential medical information to OHS or affiliate agency designee where applicable, for recordkeeping purposes. D. MTA People/Human Resources designee(s) will consult with Agency Timekeeping to confirm the dates of absence and whether the employee used paid or unpaid leave for the requested absences. The designee should also consult with the applicable Workers' Compensation Department (if applicable) to determine if the employee filed a claim related to their WTC condition and if benefits were paid for the period of absence. E. The MTA People/Human Resources designee(s) will provide a final recommendation to the MTA Chief Employee Relations and Administrative Officer, or designee. The Agency People/Human Resources designee will forward approved requests to Agency Timekeeping for processing and notify the employee of the determination. If the employee filed a Workers' Compensation Claim, a copy of the approval should also be sent to the applicable Workers' Compensation Department (if applicable). 1. If WTC Line of Duty Sick leave is approved, and the employee used paid sick leave for a Qualifying WTC Health Condition, then the employee's leave balances will be adjusted to restore all approved sick leave to the employee's sick leave bank. a. If the employee used any unpaid absences for a Qualifying WTC Health Condition due to depleted sick leave balances, the employee will be reimbursed at the rate of pay in effect when the unpaid leave was taken.
+[p006_c0005] Timekeeping records reflecting restoration and/or pay should be forwarded to the designee.
+- [p006_c0006] 2. If an employee believes in good faith that relevant information was not considered in making a determination, the employee may submit a written request for reconsideration with any information that they think was not considered. The request for reconsideration must be submitted to the designee within ten (10) calendar days from the date of receipt
+[p006_c0007] _Issued: MTA Board_
+[p006_c0008] _MTA Corporate Compliance_
+[p006_c0009] _Internal Control Number: GRC#####_
+[p006_c0010] _Master Page # 6 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 7
+
+### [p007_c0001] All Agency Policy Directive
+### [p007_c0002] WORLD TRADE CENTER STATUTORY LINE of DUTY SICK LEAVE
+[p007_c0003]
+
+```text
+Policy Number Responsible Department Effective Date Page 00-TBD People/Human Resources Draft 2/10/2021 Page 5 of 7
+```
+[p007_c0004] of the determination. This written request for reconsideration is the sole remedy for reviewing a determination.
+[p007_c0005] F. The Agency People/Human Resources designee will maintain all records related to submitted requests and provide any necessary information for reimbursement requests.
+### [p007_c0006] VI. WAIVER
+[p007_c0007] Any exception to this Policy Directive must be approved by the MTA Agency People/Human Resources Lead or designee.
+### [p007_c0008] VII. FORMS
+- [p007_c0009] A. The World Trade Center (WTC) Rescue, Recovery or Clean-Up Operations Sick Leave Request Form is available on MY MTA Portal. B. The Authorization for Release of Health Information Pursuant to the HIPAA Form is available on MY MTA Portal.
+### [p007_c0010] VIII. POLICY LIFECYCLE
+[p007_c0011] This Policy Directive will be reviewed every three (3) years and revised as necessary. As with all MTA Policies, MTA reserves the right to modify or rescind this Policy Directive at its sole discretion at any time.
+[p007_c0012] _Issued: MTA Board_
+[p007_c0013] _MTA Corporate Compliance_
+[p007_c0014] _Internal Control Number: GRC#####_
+[p007_c0015] _Master Page # 7 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 8
+
+### [p008_c0001] All Agency Policy Directive
+### [p008_c0002] WORLD TRADE CENTER STATUTORY LINE of DUTY SICK LEAVE
+[p008_c0003]
+
+```text
+Policy Number Responsible Department Effective Date Page 00-TBD People/Human Resources Draft 2/10/2021 Page 6 of 7
+```
+[p008_c0004] THIS FORM IS AVAILABLE ON MY MTA PORTAL
+### [p008_c0005] World Trade Center (WTC) Rescue, Recovery or Clean-Up Operations Sick Leave Request Form
+[p008_c0006] Pursuant to General Municipal Law Section 92-d
+[p008_c0007]
+
+```text
+Section 1- Employee Information (Please Print) Last Name: First Name: M.I. BSC ID: Pass Number: Department: Work Location: Title: Telephone Number: Email: Employer at the time of your participation in WTC rescue, recovery or clean-up operations* Name of Employer: Address: *If the employer was not the MTA/Affiliate Agency, attach documentation of such employment. Documentation can consist of tax returns or W-2's, for example. If you have questions about what documentation will suffice, please contact your Agency's People/Human Resources designee. Section 2- Required Documentation Your request for WTC Sick Leave must be accompanied with the following documentation: 1) Notice of Participation and acceptance letter verifying your participation in the WTC rescue, recovery or clean-up operations. 2) Medical evidence of a qualifying WTC condition and the date the condition commenced. For example, WTC Health Program Certification of Health Condition(s) or similar documents). 3) HIPPA Release granting MTA Occupational Health Services (OHS) or affiliate agency designee where applicable, access to relevant medical records necessary to review your request. 4) List of absence dates for which you used sick leave due to a medically certified Qualifying WTC Health Condition(s). (See Section 3 below) 5) Appropriate medical documentation that the requested prior and prospective absences were due to incapacity, medical treatment or medical testing related to the employee's Qualifying WTC condition. For example, sick leave applications, FMLA applications, doctor's notes, records of urgent care visits, discharge paperwork, etc. For prior absences for which an employee is seeking retroactive restoration and does not have specific medical documentation available from the time of the absence, the employee may submit an attestation from their medical provider indicating the purpose of the absence was related to their Qualifying WTC Condition(s). Such attestation must list the date of absence and that the absence was specifically related to the employee's Qualifying WTC Condition(s). If additional information is needed, contact your Agency People/Human
+```
+[p008_c0008] _Issued: MTA Board_
+[p008_c0009] _MTA Corporate Compliance_
+[p008_c0010] _Internal Control Number: GRC#####_
+[p008_c0011] _Master Page # 8 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 9
+
+### [p009_c0001] All Agency Policy Directive
+### [p009_c0002] Metropolitan Transportation Authority
+### [p009_c0003] WORLD TRADE CENTER STATUTORY LINE of DUTY SICK LEAVE
+[p009_c0004]
+
+```text
+Policy Number Responsible Department Effective Date Page 00-TBD People/Human Resources Draft 2/10/2021 Page 7 of 7
+```
+[p009_c0005] Resources designee.
+[p009_c0006] Note: If you were employed by a New York State, New York municipal corporation, or New York public authority other than the MTA/affiliate agency at the time of your participation in the WTC rescue, recovery or clean-up operations, documentation of such employment will be required.
+### [p009_c0007] Section 3-Absence Information
+### [p009_c0008] Date medically diagnosed with Qualifying WTC Health Condition(s):
+[p009_c0009] List sick leave dates below. Use additional sheets if necessary. Please attach any sick leave applications or other supporting documentation you have for these absences.
+[p009_c0010] Have you filed a Workers Compensation Claim related to your participation in the WTC Rescue, Recovery or Clean-up Operations? Yes _____ No _____
+[p009_c0011] I hereby certify that I have not received a similar benefit for the dates above pursuant to a collective bargaining agreement.
+[p009_c0012] Employee Signature:
+[p009_c0013] Date:
+[p009_c0014] Date Request Received:
+[p009_c0015] _Issued: MTA Board_
+[p009_c0016] _MTA Corporate Compliance_
+[p009_c0017] _Internal Control Number: GRC#####_
+[p009_c0018] _Master Page # 9 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 10
+
+### [p010_c0001] Corporate Policy and Operating Procedure
+[p010_c0002] Title: ALCOHOL AND SUBSTANCE ABUSE Effective Date: February 15, 1986 Revised Date: March 12, 2021
+[p010_c0003] Number: 21-012 Page 1 of 48 16
+### [p010_c0004] I. SUMMARY
+[p010_c0005] Metro-North Railroad (MNR) is committed to operating and maintaining an alcohol-free and drug-free workplace to provide a safe environment for its employees and customers. All sites at which Company business is conducted, including all vehicles used for business or commuting purposes, are to be drug and alcohol-free.
+[p010_c0006] MNR policies prohibit all employees from using or possessing alcohol during an employee's tour of duty, while an employee is on MNR property or while otherwise engaged in MNR business, and/or when such use would make him or her unfit to report for duty or to be on-duty. MNR prohibits the unlawful manufacture, distribution, dispensation, possession, or use of controlled substances in the workplace. Additionally, the unlawful use of any drug or controlled substance at any time is prohibited.
+[p010_c0007] MNR requires all employees to abide by the terms of these policies as a condition of employment and/or the performance of duties. Employees who violate these policies are subject to disciplinary action, up to and including termination from employment at MNR. MNR conducts alcohol and drug testing of employees under the circumstances required by federal regulations and/or as specified herein. Employees are encouraged to familiarize themselves with the alcohol and drug testing procedures covering their respective job titles.
+[p010_c0008] MNR, in accordance with DOT (49 CFR § 40, 219, and 382) and Non-DOT (Company Authority) testing reserves the right to require or take immediate action(s) to perform Reasonable Cause and/or Reasonable Suspicion alcohol and drug testing, and to remove from safety-sensitive duties any Employee and/or Contractor performing any work related to railroad activities.
+[p010_c0009] This Corporate Policy and Operating Procedure (Procedure), provides a general overview of the United States Department of Transportation (DOT) drug use and alcohol misuse prevention rules for the commercial transportation industries that apply to MNR and its employees. This Procedure also sets forth rules and procedures of MNR addressing alcohol and substance abuse that are in addition to the applicable DOT rules. Regulated Service (Note: Regulated Service includes both Covered and Maintenance of Way employees, as defined in 49 CFR Part 214.7) employees and Commercial Motor Vehicle Drivers are advised to consult the specific rules published by the DOT agencies for the detailed DOT agency requirements applicable to them. Regulated Service employees should also familiarize themselves with applicable provisions of collective bargaining agreements. Materials related to drug and alcohol policies are issued regularly and are available to any employee by accessing MNR's Intranet, or by contacting a supervisor or the Human Resources Department.
+[p010_c0010] MNR will hold any employee who engages in the illegal use of drugs or who suffers from a drug-use or an alcohol-use disorder to the same qualification standards for employment or job performance and behavior (such as attendance) to which the Company holds its other employees, even if unsatisfactory performance, behavior, or rule or policy infractions are related to the employee's drug and/or alcohol use. MNR encourages all employees to voluntarily seek assistance with alcohol and drug related problems and provides a qualified Employee Assistance Program (EAP) for all employees.
+[p010_c0011] This Procedure does not supersede the applicability and enforceability of other agreements, rules, policies and regulations. Employees must comply with all agreements, rules, policies and regulations applicable to their employment and must at all times satisfy the performance standards applicable to their employment.
+> [p010_c0012] The logo for Metro-North Railroad, featuring a circular emblem with the letters 'MTA' in white on a dark background, followed by the text 'Metro-North Railroad' in a bold, sans-serif font.
+[p010_c0013] _Master Page # 10 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 11
+
+### [p011_c0001] Corporate Policy and Operating Procedure
+[p011_c0002] Title: ALCOHOL AND SUBSTANCE ABUSE Effective Date: February 15, 1986 Revised Date: March 12, 2021
+[p011_c0003] Number: 21-012 Page 2 of 18 16
+[p011_c0004] This Procedure does not supersede the MNR's rights and obligations set forth in the Code of Federal Regulations concerning the certification and procedures of locomotive engineers and conductors.
+[p011_c0005] Nothing in this Procedure prohibits MNR from taking administrative or disciplinary action, up to and including dismissal, with or without conducting drug and/or alcohol testing, when there is a violation of, or reasonable suspicion of a violation of, this Procedure.
+### [p011_c0006] II. PROHIBITED EMPLOYEE CONDUCT
+[p011_c0007] All sites at which MNR business is conducted, including all vehicles used for business purposes, are to be drug and alcohol-free workplaces.
+- [p011_c0008] 1. On-Duty Use of Alcohol/Controlled Substances . All employees are prohibited from using alcoholic beverages, intoxicants or controlled substances while subject to duty or while on-duty. 2. Possession of Alcohol . All employees are prohibited from possessing alcoholic beverages while subject to duty or while on-duty. 3. Alcohol Prohibition at Sponsored Functions . Alcoholic beverages are prohibited at MNR sponsored functions. 4. On or Off-Duty Illegal Controlled Substance Activity, including Possession/Use . All employees are prohibited from illegally manufacturing, distributing, selling, dispensing, possessing or using any illegally obtained controlled substance on or off-duty. 5. Possession of Drug Paraphernalia . All employees are prohibited from possessing drug paraphernalia in the workplace. 6. Use of Medications by Safety Sensitive Employees . Safety Sensitive Employees' (as defined below in Section IV) use of prescription and/or over-the-counter (OTC) medications is subject to the following requirements: a. Prescriptions 1. The use of any orally-administered prescription medication is required to be brought to the attention of a MNR Medical Review Officer (MRO) or designee by the employee before performing service. Safety Sensitive Employees have an obligation to provide such notice as soon as practicable after receiving the prescription from the employee's licensed medical professional. Each department with safety-sensitive employees must designate alternative point(s) of contact to receive such notice in the event the Medical Office is closed or the MRO is otherwise unavailable, and, upon receipt of such notice, the point of contact should confer with the Human Resources Department regarding appropriate next steps to determine the employee's suitability for service. 2. Prior to obtaining a prescription from his or her licensed medical practitioner, a Safety Sensitive Employee is expected to advise the licensed medical practitioner of the safety-sensitive classification of his or her job title and of his or her safety-sensitive duties.
+> [p011_c0009] The logo for the Metropolitan Transportation Authority (MTA) is a black circle containing the letters 'MTA' in white.
+[p011_c0010] _Metro-North Railroad_
+[p011_c0011] _Master Page # 11 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 12
+
+### [p012_c0001] Corporate Policy and Operating Procedure
+[p012_c0002] Title: ALCOHOL AND SUBSTANCE ABUSE Effective Date: February 15, 1986 Revised Date: March 12, 2021
+[p012_c0003] Number: 21-012 Page 3 of 1816
+- [p012_c0004] 3. The MRO or designee, is required to make a determination regarding the risk, if any, created by the Safety Sensitive Employee's use of the prescribed medication while under the influence of such medication and to advise the Employee whether he or she should refrain from reporting for duty (or from continuing to perform his or her duties) while using or under the influence of such medication. Such a determination of the MRO or designee is final and binding. 4. Performance of service by Safety Sensitive Employees while using or under the influence of a prescription medication in violation of these procedures is prohibited. Safety Sensitive Employees who fail to comply with these procedures are subject to discipline, up to and including dismissal. See the accompanying OHS issued document for safe prescription drug use guidelines. b. OTC Medications 1. The use of certain orally administered OTC medications, whether at the suggestion of a licensed medical professional or otherwise, may also have an adverse and unacceptable impact upon the Safety Sensitive Employee's performance of his or her job-related responsibilities. See the accompanying OHS issued document for safe OTC drug use guidelines. 2. With respect to any orally administered OTC medication that does not appear in the safe OTC drug use guidelines, Safety Sensitive Employees are required to follow the notice and authorization procedures set forth above under Section II.6(a) (1) and (3). Any questions regarding the possible impact of an OTC medication should be directed to the MRO. 3. In the event a Safety Sensitive Employee, while using such an OTC drug that does not appear in the safe OTC drug use guidelines, experiences drowsiness, fatigue, or other side effects that create concern regarding the safety impacts of use of such OTC drug by the Safety Sensitive Employee in connection with the performance of his/her safety-sensitive duties, s/he must contact his or her supervisor or the employer's MRO immediately and follow his or her direction as to the Safety Sensitive Employee's fitness for duty for the shift they are working or next scheduled to work, and obtain advance authorization and review under Section II.6.(a) (1) and (3) of the use of such OTC drug in connection with any future report to duty while using or under the influence of such OTC drug. 4. Safety Sensitive Employee performance of service while using or under the influence of an OTC medication in violation of these requirements is prohibited.
+[p012_c0005] Refusal to Test, Cooperate or Intentional Interference with Procedure. All employees are prohibited from refusing to cooperate or from intentionally interfering with MNR's efforts to enforce this Procedure or related federal regulations, including, but not limited to, refusing to submit to a drug and/or alcohol test conducted pursuant to this Procedure or federal regulations, or tampering with the integrity of a breath or urine sample in connection with such tests.
+### [p012_c0006] III. CONSEQUENCES OF ENGAGING IN PROHIBITED CONDUCT
+> [p012_c0007] The logo for Metro-North Railroad, featuring a circular emblem with the letters 'MTA' in white on a black background, followed by the text 'Metro-North Railroad' in a bold, sans-serif font.
+[p012_c0008] _Master Page # 12 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 13
+
+### [p013_c0001] Corporate Policy and Operating Procedure
+[p013_c0002] Title: ALCOHOL AND SUBSTANCE ABUSE Effective Date: February 15, 1986 Revised Date: March 12, 2021
+[p013_c0003] Number: 21-012 Page 4 of 4816
+- [p013_c0004] 1. Discipline/Dismissal . Employees violating this Procedure are subject to discipline, up to and including dismissal. MNR is not required to conduct drug and/or alcohol testing before taking disciplinary action, up to and including dismissal, for a violation of this Procedure. 2. Reasonable Cause Testing: Refusal or Detection of Prohibited Substance . When there is Reasonable Cause (as set forth below in Section VII), an employee must take a breath, and/or urinalysis test in accordance with FRA regulations, or MNR Policies and Procedures . Employees who are requested to take a breath, and/or urinalysis test and refuse will be subject to dismissal. The detection of a prohibited substance, resulting from any required toxicological test, will constitute a violation of this Procedure. 3. Reasonable Suspicion Testing: Refusal of Test or Detection of Prohibited Substance . When there is Reasonable Suspicion (as set forth below in Section VII) that an employee has used alcohol, intoxicants or a controlled substance while on-duty or while on-duty is under the influence of same, the employee may be required to take a breath, and/or urinalysis test in accordance with FRA regulations or MNR Policies and Procedures. Employees who are requested to take a breath, and/or urinalysis test and refuse will be subject to dismissal. The detection of a prohibited substance, resulting from any required toxicological test, will constitute a violation of this Procedure. 4. Workplace Violation of Criminal Drug Statute . Under the federal Drug-Free Workplace Act, 41 USC §701, et seq., employees convicted of violating a criminal drug statute in the workplace, must report the conviction to MNR's Human Resource Department – Planning & Administration Division located at 420 Lexington Avenue, 12 th Floor within five (5) days of the conviction. Employees convicted of such a violation or who fail to report such a conviction may be subject to disciplinary action, up to and including dismissal. An employee who has been convicted of such a violation must contact Metro-North's EAP Department to arrange for an in-person evaluation. No employee will be permitted by MNR to return to duty following such a conviction without first receiving a written authorization from MNR's Occupational Health Services department ("OHS") to return to duty. 5. Off-Duty Misconduct . Employees may be subject to disciplinary action, up to and including dismissal, if MNR is notified of off-duty misconduct that can be established relating to alcohol and/or drug abuse (for example, a drug or alcohol related conviction) or the employee's illegal manufacturing, distribution, dispensing, or possession of controlled substances. In accordance with MNR's Corporate Policy and Operating Procedure: 21-028, any person employed by MNR who is arrested and charged with a felony or misdemeanor (for example, Driving While Impaired) must notify MNR within 48 hours. This notification must be made in writing to the Human Resources Department – Planning & Administration division located on the 12 th Floor, 420 Lexington Ave. The employee must provide a copy of the court document setting forth the felony or misdemeanor charges within 5 days of receipt to Human Resources Planning & Administration division. An employee who has been convicted of a felony or misdemeanor that is drug or alcohol related must contact EAP to arrange for an in-person evaluation. Such an employee may not return to work prior to receiving a return to duty evaluation with OHS and receiving written authorization to return to work. 6. Return to Duty . Any employee who has engaged in conduct in violation of this Procedure must pass a drug and/or alcohol test to return to his/her position. In addition, that employee may be subject to unannounced follow-up drug and/or alcohol testing as directed under federal laws and regulations, or as a condition of the discipline, as described under Section V.5. 7. Past or present involvement in a rehabilitation program, EAP, or with other treatment practitioners
+> [p013_c0005] The logo for the Metropolitan Transportation Authority (MTA) is a black circle containing the letters "MTA" in white, bold, sans-serif font.
+[p013_c0006] Metro-North Railroad
+[p013_c0007] _Master Page # 13 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 14
+
+### [p014_c0001] Corporate Policy and Operating Procedure
+[p014_c0002] Title: ALCOHOL AND SUBSTANCE ABUSE Effective Date: February 15, 1986 Revised Date: March 12, 2021
+[p014_c0003] Number: 21-012 Page 5 of 4816
+[p014_c0004] cannot serve as a defense nor mitigate the circumstances of alleged violations of Company rules, policies or laws.
+### [p014_c0005] IV. EMPLOYEE CLASSIFICATIONS RELEVANT TO TESTING PROGRAM
+### [p014_c0006] Regulated Service Employees - 49 CFR Parts 40, 219, and 382:
+- [p014_c0007] 1. Covered Service Employees - Metro-North's Covered Service covers the following titles: A. Locomotive Engineers; B. Conductors and Assistant Conductors; C. Rail Traffic Controllers; Yardmasters; D. Signal Foreman, Assistant Signal Foreman, Signal Maintainer, Signal Inspector, Signalman, Assistant Signalman, and Signal Helper; (while performing work covered by the Hours of Service Act), and E. Mechanical Department Electricians (while performing work covered by the Hours of Service Act). 2. Maintenance of Way/Roadway Work Protection Employees (MOW/RWP Employees) - Covers the following titles [representative list]: A. Track Workers; B. B&B employees; C. Track Inspectors; Power Employees; D. Welder; E. Track Supervisors; F., Conductor Flags and any employees whose duties include inspection, maintenance or repair of railroad track, bridges, roadway, signal and communication systems, electric traction systems, roadway facilities or roadway maintenance machinery on or near track or with the potential of fouling a track and flagmen and watchmen/lookouts, as defined in 49CFR 214.7.
+[p014_c0008] CDL Drivers (Commercial Driver's License): Employees who occupy a job title that MNR has determined requires a commercial driver's license (CDL) issued by a state authorizing operation of a commercial motor vehicle described in 49 CFR § 382.107 are classified as Commercial Drivers. Commercial Drivers are required to comply with this Procedure and with the alcohol and drug prohibitions and provisions in 49 CFR § 382 of the Federal Motor Carrier Safety Administration ("FMCSA") regulations. This category includes non-agreement employees performing service as Commercial Drivers.
+[p014_c0009] Safety-Sensitive ("SS") Employees: Safety Sensitive Employees are those employees who perform service in job titles which the Company has determined involve tasks so fraught with risks of injury that even a momentary lapse of attention can have disastrous or irremediable consequences to the employee or others. A list of the job titles the Company has designated as Safety-Sensitive is maintained by the Human Resources Department. Job titles of Regulated Service Employees and Commercial Drivers are included within the Safety Sensitive classification. This definition also includes agreement and non-agreement employees in other job titles designated as Safety-Sensitive.
+[p014_c0010] Non-Safety-Sensitive ("Non-SS") Employees: Employees who do not perform service in job titles classified as Covered Employee, Commercial Driver, or Safety-Sensitive Employee. Such employees perform low risk tasks where non-performance of those tasks would not present immediate danger to employees or others.
+### [p014_c0011] Other Defined Employees under the Procedure:
+- [p014_c0012] 1. Peer or Co-Worker: Any employee or union representative who is not the supervisor of an employee suspected of being in violation of this Procedure. 2. Supervisor: An officer, manager, or other employee of the Company who is responsible for
+> [p014_c0013] The logo for the Metropolitan Transportation Authority (MTA) is a circular emblem. It features a stylized 'M' and 'T' intertwined, with the letters 'A' and 'R' positioned to the right. The entire emblem is set against a dark background.
+[p014_c0014] Metro-North Railroad
+[p014_c0015] _Master Page # 14 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 15
+
+### [p015_c0001] Corporate Policy and Operating Procedure
+[p015_c0002] Title: ALCOHOL AND SUBSTANCE ABUSE Effective Date: February 15, 1986 Revised Date: March 12, 2021
+[p015_c0003] Number: 21-012 Page 6 of 48 16
+[p015_c0004] supervising or monitoring the conduct or performance of one or more employees. This definition includes both agreement and non-agreement supervisors.
+- [p015_c0005] 3. Medical Review Officer ("MRO"): A licensed physician designated by Metro-North to receive laboratory results produced by the laboratory retained by the Company, to evaluate drug and/or alcohol tests, and to interpret and evaluate an individual's confirmed positive test result together with his or her medical history and any other relevant biomedical information. An MRO may also be a licensed physician assigned to assess the safety risks of use of prescription and/or OTC medications by Safety Sensitive Employees. 4. Substance Abuse Professional ("SAP"): A person who evaluates employees who have violated a DOT drug and alcohol regulation and makes recommendations concerning education, treatment, follow-up testing, and aftercare. The SAP must meet the requirements of 49 CFR § 40.281. For purposes of this Procedure, the Company's EAP Counselor is the "SAP." 5. Drug and Alcohol Counselor ("DAC"): means a person who meets the credentialing and qualification requirements described 49CFR § 242.7. 6. Designated Employer Representative ("DER"): An employee authorized by the employer to take immediate action(s) to remove employees from safety-sensitive duties, or cause employees to be removed from these covered duties, and to make required decisions in the testing and evaluation processes. The "DER" also receives test results and other communications for the employer, consistent with the requirements of 49 CFR § 40.
+### [p015_c0006] V. ADDITIONAL DEFINITIONS
+- [p015_c0007] 1. ACCIDENT/INCIDENT : An event or occurrence related to MNR train operations that is required to be reported, including: fatality, injury, or illness; collision, derailment, and similar events involving the operation of on-track equipment that resulted in monetary damage in excess of the current reporting threshold; and impact between rail on-track equipment and highway users at crossings, if a human factor event occurs. 2. WORKPLACE : any location that MNR business is conducted, whether on or off MNR property. 3. SUBSTANCES : a. ALCOHOL : The intoxicating agent in beverage alcohol, ethanol, or other low molecular weight alcohols including methyl or isopropyl alcohol. b. CONTROLLED SUBSTANCES : All substances listed in Schedules I to V as set forth in 21 CFR Part 1308, and referenced in the DOT guidelines (49 CFR Part 40). In addition to these controlled substances, MNR reserves the right to test for additional controlled substances, included below, but not limited to the following list: i. Narcotics/Opiates – Opium, Morphine, Codeine, Heroin, Hydromorphone, Meperidine (Demerol), Methadone, Oxycodone, Hydrocodone, Suboxone, ii. Depressants – Chloral Hydrate, Barbiturates, Benzodiazepines, Methaqualone (Qualudes), Glutethimide (Doriden),
+> [p015_c0008] The logo for Metro-North Railroad, featuring the letters 'MTA' in a stylized font inside a dark circle.
+[p015_c0009] Metro-North Railroad
+[p015_c0010] _Master Page # 15 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 16
+
+### [p016_c0001] Corporate Policy and Operating Procedure
+[p016_c0002] Title: ALCOHOL AND SUBSTANCE ABUSE
+[p016_c0003] Effective Date: February 15, 1986
+[p016_c0004] Revised Date: March 12, 2021
+[p016_c0005] Number: 21-012
+[p016_c0006] Page 7 of 18
+- [p016_c0007] iii. Stimulants – Cocaine, Amphetamines, Phenmetrazine (Preludin), Methylphenidate (Ritalin), Methamphetamine iv. Hallucinogens – LSD, Mescaline and Peyote, Amphetamine Variants, Phencyclidine (PCP), Phencyclidine Analogies v. Cannabis – Marijuana, Tetrahydrocannabinol (THC), Hashish and Hashish Oil
+- [p016_c0008] c. DRUG : Any substance other than alcohol that has known mood or function-altering effects on humans, including but not limited to, controlled substances. d. INTOXICANT : Any agent that produces intoxication, such as a drug or toxic substance or alcoholic beverages. e. OVER-THE-COUNTER (OTC) DRUGS : Medications that do not require a prescription and that can be purchased from pharmacies or other retail establishments. f. PRESCRIPTION DRUGS : Medication prescribed by licensed medical personnel or dentists for a specific course of treatment.
+### [p016_c0009] 4. RESOURCES:
+- [p016_c0010] a. Employee Assistance Program (“EAP”) : A confidential counseling program provided by the Company where licensed professionals assist employees and their immediate family members with various work/life issues. Each EAP counselor is a certified Substance Abuse Professional (“SAP”) qualified to evaluate and counsel persons affected by alcohol and/or substance abuse problems and to provide the appropriate treatment and follow-up recommendations. Additionally, the EAP provides alcohol and substance abuse awareness training to Company managers and supervisors. b. Substance Awareness Field Education (“SAFE”) : MNR Reasonable Suspicion “Reasonable Suspicion: Signs and Symptoms of Substance Abuse” Training: MNR training course, given by MNR, which provides instruction on the requirements of federal regulations, company policies and procedures, and rules regarding drug and alcohol use and testing.
+### [p016_c0011] 5. VERIFIED POSITIVE TEST RESULT:
+- [p016_c0012] a. For a drug test: a test result that was positive on an initial immunoassay test, confirmed by a gas chromatography/mass spectrometry assay and reviewed and verified as positive by an MRO in accordance with the procedures set forth in 49 CFR § 40 – “Procedures for Transportation Workplace Drug and Alcohol Testing Programs”. b. For an alcohol breath test: an initial breath test performed on a DOT-approved “Evidential Breath Testing” device, with a result of .02% or higher, confirmed by a second breath test conducted with the same device within the prescribed time limit. A reading of .04% or higher constitutes a Federal verified positive test result for a Regulated Service Employee. A result .02-.039 greater but less than .04 constitutes a positive test result under MNR Company Authority. Any result under .02 does not currently constitute a Federal violation or a violation of this policy Procedure .
+### [p016_c0013] 6. DEFINED TYPES OF DRUG/ALCOHOL TESTING:
+> [p016_c0014] The logo for the Metropolitan Transportation Authority (MTA) is a black circle containing the white letters 'MTA' in a bold, sans-serif font.
+[p016_c0015] Metro-North Railroad
+[p016_c0016] _Master Page # 16 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 17
+
+### [p017_c0001] Corporate Policy and Operating Procedure
+[p017_c0002] Title: ALCOHOL AND SUBSTANCE ABUSE Effective Date: February 15, 1986 Revised Date: March 12, 2021
+[p017_c0003] Number: 21-012 Page 8 of 4816
+- [p017_c0004] a. PRE-EMPLOYMENT/PRE-PLACEMENT TESTING : a drug test for those transferees or job applicants who have received offers to perform service for the Company in a job title classified as: Covered Employee, Commercial Driver, or Safety-Sensitive Employee. No employee may perform service as a Covered, Commercial Driver, or Safety-Sensitive employee before successfully passing a pre-placement drug test scheduled and administered under the direction of MNR's Human Resources Department.
+[p017_c0005] REASONABLE SUSPICION TESTING : a drug and/or alcohol test that must be based on specific, current, articulable observations of the appearance, behavior, speech, or body odors that are usually associated with drug and/or alcohol use that leads the supervisor to believe that the employee is unable to perform their essential job duties. All employees are subject to drug and/or alcohol testing when reasonable suspicion exists. Section VII.2, 3 and 4 below provides additional detail concerning Reasonable Suspicion Testing in the contexts of (i) Company Authority Testing; (ii) Covered Employee-Federally Mandated Testing; and (iii) Commercial Driver Federally Mandated Testing.
+- [p017_c0006] b. REASONABLE CAUSE TESTING : a drug and/or alcohol test following an accident/incident as defined in Section VII. 5 and 6 of this Procedure and definitions in the Code of Federal Regulations. The Company will test any employee for drugs and/or alcohol following an accident/incident meeting specific criteria and/or when a Supervisor has a reasonable belief, based on specific, articulable facts, that the employee's acts or omissions contributed to the occurrence or the severity of the accident/incident, for a rules violation. This testing will be conducted under Company Authority. MNR reserves the right to conduct reasonable cause testing under Non-DOT testing with criteria defined further in the policy. c. POST-ACCIDENT TESTING : a drug and/or alcohol test after an accident that meets specific criteria set forth in 49 CFR § 219 and § 382. d. RANDOM TESTING : a drug and/or alcohol test performed randomly under applicable Federal regulations and in accordance with the procedures set forth in MNR's Plan for Random Selection for and Scheduling of Random Drug and Alcohol Testing (the "Plan") and can also result from Company Authority Testing. Covered Employee and Commercial Driver Employees are subject to Random Testing. All employees associated with random testing must ensure that all paperwork and associated materials must be handled in a confidential manner. e. RETURN-to-DUTY TESTING : a drug and/or alcohol test performed if a Covered, Commercial Driver or Safety-Sensitive Employee has been absent from work for any reason for 14 days or more (or a lesser time period specified in a collective bargaining agreement). This will apply to employees in a DOT covered position or safety sensitive position that return to duty after a positive drug and/or alcohol test. Directly observed testing, as mandated and described in 49 CFR Part 40 ("Direct Observation Procedures"), will apply to these and all unannounced follow-up tests employees returning to duty after having previously failed a drug and/or alcohol test. The observer will be of the same gender as the employee being tested. f. FOLLOW-UP TESTING : an unannounced drug and/or alcohol test performed under applicable Federal regulations and at the direction of the SAP/DAC, after an employee has engaged in conduct in violation of the CFR, and/or this Procedure.
+> [p017_c0007] The logo for the Metropolitan Transportation Authority (MTA) is a black circle containing the letters "MTA" in white, bold, sans-serif font.
+[p017_c0008] _Metro-North Railroad_
+[p017_c0009] _Master Page # 17 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 18
+
+### [p018_c0001] Corporate Policy and Operating Procedure
+[p018_c0002] Title: ALCOHOL AND SUBSTANCE ABUSE Effective Date: February 15, 1986 Revised Date: March 12, 2021
+[p018_c0003] Number: 21-012 Page 9 of 18 16
+### [p018_c0004] VI. SUMMARY OF EMPLOYEE CLASSIFICATIONS SUBJECT TO VARIOUS TYPES OF DRUG AND ALCOHOL TESTING:
+[p018_c0005] MNR employees are subject to drug and/or alcohol testing as required or authorized by this Procedure and/or by applicable federal regulations.
+### [p018_c0006] A. FEDERALLY MANDATED TESTING
+[p018_c0007] Federal regulations require Metro-North to conduct drug and alcohol testing under identified circumstances, as summarized below. (Definitions of each of the types of identified circumstances are contained in Section V.4 above and further details provided in Section VII.)
+- [p018_c0008] 1. Regulated Service Employees : - As set forth in 49 CFR § 219, the FRA requires MNR to conduct drug and/or alcohol testing of Regulated Service Employees in the following defined situations: a. Pre-employment (including transfers to Covered Service) b. Reasonable Suspicion, c. Post-Accident, d. Random, e. Return to Duty , and (after completion of SAP program ) evaluation , f. Follow-up. 2. Commercial Drivers : - As set forth in 49 CFR § 382, the FMSCA requires MNR to conduct drug and/or alcohol testing of Commercial Drivers in the following defined situations: a. Pre-employment (including transfers to Commercial Driver positions) b. Reasonable Suspicion, c. Post-Accident, d. Random, e. Return to Duty , and (after completion of SAP program ) evaluation , f. Follow-up.
+### [p018_c0009] B. COMPANY AUTHORITY TESTING /Non-DOT:
+[p018_c0010] In addition, MNR pursuant to this Procedure may determine to conduct drug and alcohol testing in defined circumstances, as stated herein ("Company Authority Testing").
+- [p018_c0011] 1. All Metro-North Employees (without regard to Employee Classification) )- - Pursuant to this Procedure, MNR may conduct Company Authority drug and/or alcohol testing of any Metro-North employee, without regard to the employee's job classification under Section IV, in the following defined circumstances: a. Reasonable Suspicion, b. Reasonable Cause, or c. Follow-up. d. Random 2. Safety Sensitive Employees : - In addition to the circumstances set forth above for Company
+> [p018_c0012] The logo for the Metropolitan Transportation Authority (MTA) is a black circle containing the white letters "MTA" in a bold, sans-serif font.
+[p018_c0013] Metro-North Railroad
+[p018_c0014] _Master Page # 18 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 19
+
+### [p019_c0001] Corporate Policy and Operating Procedure
+[p019_c0002] Title: ALCOHOL AND SUBSTANCE ABUSE Effective Date: February 15, 1986 Revised Date: March 12, 2021
+[p019_c0003] Number: 21-012 Page 10 of 16
+[p019_c0004] Authority testing relating to Metro-North employees generally, Metro-North may conduct Company Authority testing of Safety-Sensitive employees in any of the following defined circumstances:
+- [p019_c0005] a. Pre-placement, b. Periodic Physical Examination, c. Return-to-Duty Physical Examination.
+[p019_c0006] MNR may from time to time, under its own discretion, designate certain categories of Safety Sensitive employees for random testing.
+- [p019_c0007] 3. Regulated Service Employees; Commercial CDL Drivers - In addition to the circumstances set forth above for Company Authority testing relating to All Metro-North Employees generally (see B.1) and Company Authority testing of Metro-North Safety Sensitive Employees (see B.2), Metro-North may conduct Company Authority testing of Regulated Service Employees or Commercial Drivers in any of the defined circumstances in which federally mandated testing would apply to such employee classification.
+### [p019_c0008] VII. CIRCUMSTANCES WHEN TYPES OF TESTING WILL BE PERFORMED
+### [p019_c0009] 1. Pre-Employment/Pre-Placement
+- [p019_c0010] a. The Human Resources Department will schedule a pre-placement drug test for those applicants or transferees who have received offers to perform service for MNR as (1) Regulated Service Employees, (2) Commercial CDL Drivers, or (3) Safety-Sensitive Employees. b. No employee may perform service as a (1) Covered Employee, (2) Commercial CDL Driver, or (3) Safety-Sensitive Employee before passing a drug test administered by OHS.
+### [p019_c0011] 2. Reasonable Suspicion – Company Authority
+- [p019_c0012] a. All employees are subject to drug and/or alcohol testing where Reasonable Suspicion exists. b. For all employees, the decision to conduct the test must be based on specific, current, articulable observations of the appearance, behavior, speech, or body odors of the employee. Testing should occur when the Supervisor reasonably suspects that an employee has used either drugs or alcohol on duty or is working under the influence of drugs or alcohol by observing one or more of the following criteria (these criteria are applicable as well to the direct observation necessary for a Supervisor to corroborate and investigate a co-worker report): i. Staggered gait, difficulty walking ii. Slurred speech iii. Drowsiness/sleepiness iv. Odor of an intoxicant v. Disorientation (time/place/person) vi. Rapid mood swings for no apparent reason vii. Poor coordination or body control viii. Bizarre behavior ix. Direct observation of use of an intoxicant or controlled substance.
+> [p019_c0013] The logo for the Metropolitan Transportation Authority (MTA) is a black circle containing the white letters 'MTA' in a bold, sans-serif font.
+[p019_c0014] Metro-North Railroad
+[p019_c0015] _Master Page # 19 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 20
+
+### [p020_c0001] Corporate Policy and Operating Procedure
+[p020_c0002] Title: ALCOHOL AND SUBSTANCE ABUSE Effective Date: February 15, 1986 Revised Date: March 12, 2021
+[p020_c0003] Number: 21-012 Page 11 of 18 16
+- [p020_c0004] c. At least one Supervisor who has completed SAFE MNR Reasonable Suspicion Training Signs and Symptoms Training ( Signs & Symptoms ) must make the required observations before sending an employee for alcohol testing. In the case of sending an employee for drug testing, at least one Supervisor must make the required observations and a second Supervisor, after conferring, must agree on the articulable symptoms being conveyed. In the event that the employee cannot be transported to a facility for testing, the Supervisor will notify the Operations Control Center (OCC) at 212-340-2050 and inform the Chief Rail Traffic Controller of the situation. The Chief RTC shall contact the DER or the Program Manager or DER of the Random Testing with the information of the Program Manager of the Random Testing Program. d. Documentation : Within a reasonable time (in most cases, the time for completion and submission of the documentation should not exceed 24 hours ) following a Supervisor's determination of Reasonable Suspicion, the Supervisor must document the date, time, and place, as well as a description of the observed behavior, and send a copy of such documentation to the DER or Program Manager. e. During Off Hours , in the event a basis exists for a Reasonable Suspicion Test, the supervisor on duty is to call the Operations Control Center at 212-340-2050 and inform the Chief Rail Traffic Controller of the situation. The supervisor must articulate the signs and symptoms he they have observed. The Chief RTC will promptly call the Alcohol and Drug Technician on- duty and dispatch them to the field location. If there are any problems or issues, the Program Manager, or DER or Program Manager of Random Testing should be immediately contacted.
+### [p020_c0005] 3. Reasonable Suspicion – Regulated Service Employees subject to FRA Regulations
+- [p020_c0006] a. When Reasonable Suspicion exists with respect to a Covered Employee, drug and/or alcohol testing is mandatory under 49 C.F.R. § 219 (also mandatory for ALL employees). b. Alcohol Test : At least one Supervisor who has completed SAFE MNR Reasonable Suspicion Signs and Symptoms Training must make the required observation before sending a Covered Employee for an alcohol test. 1 In the event that the employee cannot be transported to a facility for testing, the supervisor will notify the Operations Control Center (OCC) at 212-340-2050 and inform the Chief Rail Traffic Controller of the situation. The Chief RTC shall contact the Program Manager or DER or Program Manager of Random testing with the information.
+### [p020_c0007] c. a Covered Employee for a drug test. 2 In the event that
+[p020_c0008] _1. §219.300-3(b)(1) With respect to an alcohol test, the required observations must be made by a supervisor trained in accordance with §219.11(g). The supervisor who makes the determination that reasonable suspicion exists may not conduct testing on that employee._
+[p020_c0009] _21. §219.300-3(b)(2) With respect to a drug test, the required observations must be made by two supervisors, at least one of whom is trained in accordance with §219.11(g)._
+- [p020_c0010] c. Drug Test : At least two Supervisors, one of whom has completed SAFE MNR Reasonable Suspicion Signs and Symptoms Training, must make the required observation before sending the employee cannot be transported to a facility for testing, the supervisor will notify the Operations Control Center (OCC) at 212-340-2050 and inform the Chief Rail Traffic Controller of the situation. The Chief RTC shall contact the Program Manager or DER or Program Manager of Random Testing with the information.
+- [p020_c0011] d. The Company must make diligent efforts to conduct a drug and/or alcohol test within two hours 3 of the initial observation of the Covered Employee. If testing is not conducted within two hours,
+[p020_c0012] _Metro-North Railroad_
+[p020_c0013] _Master Page # 20 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 21
+
+### [p021_c0001] Corporate Policy and Operating Procedure
+[p021_c0002] Title: ALCOHOL AND SUBSTANCE ABUSE Effective Date: February 15, 1986 Revised Date: March 12, 2021
+[p021_c0003] Number: 21-012 Page 12 of 16
+[p021_c0004] the Supervisor must provide the Director of Operating Rules DER or Program Manager of Random Testing with documentation as to the reason why the test was not promptly conducted. Absolutely no testing may be performed after the expiration of eight hours from the time of observation. 4
+[p021_c0005] e. Regulated Service Employees may not be tested after they have been removed from service.
+[p021_c0006] 1 §219.300-3(b)(1) With respect to an alcohol test, the required observations must be made by a supervisor trained in accordance with §219.11(g). The supervisor who makes the determination that reasonable suspicion exists may not conduct testing on that employee.
+[p021_c0007] 2 §219.300 3(b)(2) With respect to a drug test, the required observations must be made by two supervisors, at least one of whom is trained in accordance with §219.11(g).
+### [p021_c0008] 4. Reasonable Suspicion – Commercial Drivers subject to FMCSA Regulations
+[p021_c0009] a. A Commercial Driver may not be subjected to any testing under the FMCSA regulations unless the Supervisor's observation is made just before, during, or just after the time the Commercial Driver is performing safety-sensitive functions.
+[p021_c0010] b. Alcohol Testing : At least one Supervisor who has completed SAVE MNR Reasonable Suspicion training must make the required observation before sending a Commercial Driver for a test. The Company must make all reasonable efforts to conduct alcohol testing within two hours of the observed behavior. If testing is not conducted within two hours, the Supervisor must provide the Director of Operating Rules DER or Program Manager of Random Testing with documentation as to why the test was not promptly administered. Absolutely no alcohol testing may be performed after the expiration of eight hours from the time of observation. In the event, that the employee cannot be transported to a facility for testing, the supervisor will notify the Operations Control Center (OCC) at 212-340-2050 and inform the Chief Rail Traffic Controller of the situation. The Chief RTC shall contact the DER with the information.
+[p021_c0011] c. Drug Testing : At least one Supervisor who has completed SAVE MNR Reasonable Suspicion training must make the required observation before sending a Commercial Driver for a test. The Company must conduct a drug test within 8-24 hours of the observed behavior. If testing is not conducted within 24 hours, the supervisor must provide the Director of Operating Rules with documentation as to why the test was not promptly administered. If testing is not conducted within two hours, the Supervisor must provide the Director of Operating Rules DER or Program Manager of Random Testing with documentation as to why the test was not promptly administered. Absolutely no testing testing may be performed after the expiration of eight hours from the time of observation. In the event, that the employee cannot be transported to a facility for testing, the supervisor will notify the Operations Control Center (OCC) at 212- 340-2050 and inform the Chief Rail Traffic Controller of the situation. The Chief RTC shall contact the DER with the information.
+[p021_c0012] 3 §219.300(d)(1) If a test required by this section is not administered within two hours following the determination under this section, the railroad must prepare and maintain on file a record stating the reasons the test was not properly
+[p021_c0013] _Metro-North Railroad_
+[p021_c0014] _Master Page # 21 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 22
+
+### [p022_c0001] Corporate Policy and Operating Procedure
+[p022_c0002] Title: ALCOHOL AND SUBSTANCE ABUSE Effective Date: February 15, 1986 Revised Date: March 12, 2021
+[p022_c0003] Number: 21-012 Page 13 of 18
+[p022_c0004] administered.
+[p022_c0005] 1. §219.300(d)(1) If a test required by this section is not administered within eight hours of the determination under this section, the railroad must cease attempts to administer an alcohol test and must state in the record the reasons for not administering the test. 3. §219.305(b) If a test required by this subpart is not administered within two hours following a determination made under this section, the railroad must prepare and maintain on file a administering the test. The eight hour requirement is satisfied if the individual has been delivered to the collection site (where the collector is present) and the request has been made to commence collection of the specimens within that period. The records required by this section must be submitted to FRA upon request of the FRA Drug and Alcohol Program Manager record stating the reasons the test was not administered within that time period. If an alcohol or drug test required by this subpart is not administered within eight hours of a determination made under this subpart, the railroad must cease attempts to administer the test and must record the reasons for not administering the test. Records must be submitted to FRA upon request of the FRA Administrator.
+### [p022_c0006] 5. Reasonable Cause – Company Authority for Safety-Sensitive Employees
+- [p022_c0007] a. The Company may test any Safety-Sensitive Employee for drugs and/or alcohol following an incident, accident, or rules violation giving rise to Reasonable Cause testing of Regulated Service Employees as set forth in Section VII–6, below. b. The Company may also test any employee for drugs and/or alcohol following an accident involving a motorized vehicle where the accident was not due to mechanical failure or the negligent action of a motorist other than the Safety-Sensitive Employee and the Safety-Sensitive Employee was driving a motorized vehicle involved in an accident which (1) results in the loss of human life or (2) causes bodily injury to himself or others requiring medical attention away from the scene or (3) results in a vehicle being transported away from the scene. receiving any type of damage. (4) damage to property whether it be MNR property or private property.
+[p022_c0008] 3. §219.305(b) If a test required by this subpart is not administered within two hours following a determination made under this section, the railroad must prepare and maintain on file a record stating the reasons the test was not administered within that time period. The eight-hour requirement is satisfied if the individual has been delivered to the collection site (where the collector is present) and the request has been made to commence collection of the specimens within that period. The records required by this section must be submitted to FRA upon request of the FRA Drug and Alcohol Program Manager record stating the reasons the test was not administered within that time period. If an alcohol or drug test required by this subpart is not administered within eight hours of a determination made under this subpart, the railroad must cease attempts to administer the test and must record the reasons for not completing it.
+### [p022_c0009] 6. Reasonable Cause – DOT or FRA Regulations
+- [p022_c0010] a. Accident or Incident - The Regulated Service Employee has been involved in an accident or incident reportable under 49 C.F.R. § 225, and a Supervisor has a reasonable belief, based upon specific, articulable facts that the employee's acts or omissions contributed to the occurrence or severity of the accident or incident; or b. Rule Violation 5 - The employee has been directly involved in one of the following operating rule violations or errors. i. Non-compliance with a train order, track warrant, timetable, signal indication, special instruction or other direction with respect to movement of a train that involves: a. Occupancy of a block or other segment of track to which entry was not authorized; b. Failure to clear a track to permit opposing or following movement to pass;
+[p022_c0011] Metro-North Railroad
+[p022_c0012] _Master Page # 22 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 23
+
+### [p023_c0001] Corporate Policy and Operating Procedure
+[p023_c0002] Title: ALCOHOL AND SUBSTANCE ABUSE Effective Date: February 15, 1986 Revised Date: March 12, 2021
+[p023_c0003] Number: 21-012 Page 14 of 18
+- [p023_c0004] c. Moving across a railroad crossing at grade without authorization; or d. Passing an absolute restrictive signal or passing a restrictive signal without stopping (if required); ii. Failure to protect a train as required by a rule consistent with 49 C.F.R. § 218.37 (including failure to protect a train that is fouling an adjacent track); iii. Operation of a train at a speed that exceeds the maximum authorized speed by at least ten miles per hour or by 50 percent of such maximum authorized speed, whichever is less; iv. Alignment of a switch in violation of a railroad rule, failure to align a switch as required for movement, operation of a switch under a train, or unauthorized running through a switch.
+[p023_c0005] Failure to apply or stop short of derail as required; Failure to secure a hand brake or failure to secure sufficient hand brakes;
+- [p023_c0006] v. Entering a crossover before both switches are lined for movement; or vi. In the case of a person performing a dispatching function or block operator function, issuance of a train order or establishment of a route that fails to provide proper protection for a train. vii. MNR reserves the right to conduct Non-DOT testing when an MNR employee's actions or lack of action may have contributed to an incident/accident (i.e., motor vehicle accident or any other type of motorized vehicle/equipment)
+- [p023_c0007] c. The Company must make diligent efforts to conduct the drug and/or alcohol test within two hours of an accident or incident. If testing is not conducted within two hours, the Supervisor must provide the Director of Operating Rules DER with documentation as to the reason why the test was not promptly conducted. Absolutely no testing may be performed after expiration of eight hours from the time of the accident or incident. If testing under Company Authority (Non-DOT) MNR will always attempt to mirror the Federal regulations, however, MNR reserves the right to extend the testing window if the Supervisor has put in writing the reasons for the delay a documented the reason why the delay occurred. d. Regulated Service Employees may not be tested after they have been removed from service. e. Documentation - The Supervisor must make every effort to comply with the testing windows as described under federal testing guidelines.
+### [p023_c0008] 7. Post-Accident Testing
+- [p023_c0009] a. Regulated Service Employees: The FRA regulations on the control of alcohol and drug use require toxicological testing after accidents that meet specific criteria set forth in 49 C.F.R. § 219, Subpart C. In the event of such an accident, a Supervisor must contact the DER and Director of Regulatory Oversight for specific instructions. b. Commercial CDL Drivers: The FMCSA regulations on the control of alcohol and drug use require toxicological testing after accidents and incidents that meet specific criteria set forth in 49 C.F.R. § 382.303. In the event of an accident, a Supervisor must contact the DER or the Director of Regulatory Oversight for further instructions.
+### [p023_c0010] 8. Random Testing
+> [p023_c0011] The logo for the Metropolitan Transportation Authority (MTA) is a black circle with the letters "MTA" in white.
+[p023_c0012] Metro-North Railroad
+[p023_c0013] _Master Page # 23 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 24
+
+### [p024_c0001] Corporate Policy and Operating Procedure
+[p024_c0002] Title: ALCOHOL AND SUBSTANCE ABUSE Effective Date: February 15, 1986 Revised Date: March 12, 2021
+[p024_c0003] Number: 21-012 Page 15 of 16
+- [p024_c0004] a. Regulated Service Employees: Random testing of Regulated Service Employees is performed by the Company under applicable FRA regulations and/or Company Authority and in accordance with the procedures set forth in Metro-North's 219 Compliance Plan for Random Selection and Scheduling of Random Drug and Alcohol Testing (the "Plan") . These procedures will adhere to confidentiality standards in accordance with Federal regulations. A copy of the Plan is available for inspection in with the DER or the Director of Regulatory Oversight. b. Commercial CDL Drivers: Random testing of Commercial CDL Drivers is performed by the Company under applicable FMCSA regulations and in accordance with the Plan.
+### [p024_c0005] 9. Follow-up Testing
+- [p024_c0006] a. An employee who has engaged in conduct in violation of the FRA (as described in §219.104) regulations, the FMCSA regulations and/or this Procedure must pass a drug and/or alcohol test in order to return to his or her position. b. In addition, such an employee is subject to unannounced follow-up drug and/or alcohol testing as directed by federal rules and regulations and the Company's Medical OHS and/or EAP.
+### [p024_c0007] 10. Periodic Physical Examination Testing
+[p024_c0008] Covered, Commercial Drivers and Safety-Sensitive Employees whose positions require periodic physical examinations will be subjected to drug testing as part of those examinations.
+### [p024_c0009] 11. Return-to-Duty Physical Examination Testing
+[p024_c0010] Covered, Commercial Drivers and Safety-Sensitive Employees who have been absent from work for any reason for 14 days or more will be subjected to drug and/or alcohol testing as part of a return-to-duty physical examination.
+### [p024_c0011] VIII. TEST PROCEDURES AND RETESTS
+[p024_c0012] The Company and vendors hired by the Company to perform testing shall follow the procedures established by the Department of Transportation ("DOT") for all drug and alcohol testing conducted under this Procedure. These procedures are set forth in 49 C.F.R. Part 40, "Procedures for Transportation Workplace Drug and Alcohol Testing Programs."
+### [p024_c0013] IX. CONFIDENTIALITY
+- [p024_c0014] 1. No Supervisor or employee may disclose to any individual any drug or alcohol use or testing information concerning any other employee, unless such disclosure is necessary for compliance with this Operating Procedure or federal law and regulations or unless the employee whose records are at issue executes a release specifically authorizing the disclosure of such information. 2. All records maintained while carrying out the procedures described in this Procedure and under federal drug and alcohol testing laws must be maintained in a separate, dedicated, secure
+[p024_c0015] Metro-North Railroad
+[p024_c0016] _Master Page # 24 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 25
+
+### [p025_c0001] Corporate Policy and Operating Procedure
+[p025_c0002] Title: ALCOHOL AND SUBSTANCE ABUSE Effective Date: February 15, 1986 Revised Date: March 12, 2021
+[p025_c0003] Number: 21-012 Page 16 of 18 16
+[p025_c0004] location.
+- [p025_c0005] 3. If any employee discloses the information or records described above to any other individual for any reason, that employee may be subject to administrative or disciplinary action, up to and including dismissal.
+### [p025_c0006] 4. Referrals:
+[p025_c0007] a. Self-Referral – An employee will be considered a “voluntary self-referral” from the time he/she seeks assistance through the EAP. All information and subsequent counseling and/or treatment in the case of a voluntary self-referral shall remain confidential and seeking assistance as a Voluntary Self-Referral will not impact an individual's employment status, except in circumstances as provided below.
+[p025_c0008] i. If the self-referring employee has been or is charged with conduct deemed sufficient to warrant discipline, disclosure limited to the employee's compliance or non-compliance with EAP recommendations shall be subject to disclosure and may be taken into account in determining discipline and any employment consequences arising in connection with such discipline.
+[p025_c0009] ii. If the self-referring employee is employed in a job title that is classified as Covered Service or is otherwise Safety Sensitive and in the EAP's professional judgment, a self-referring employee appears to be a threat to the safety of the traveling public or his or her co-workers, MNR, upon the recommendation of EAP, can take protective action which may include removing the employee from service until the treatment recommendations are met. If an employee refuses to comply with the recommended course of treatment, MNR can suspend or revoke the employee's certification.
+[p025_c0010] b. Co-Worker Referral – a report by a co-worker to a Supervisor that an employee was apparently unsafe to work with or was, or appeared to be, in violation of this Procedure. The name of the reporting co-worker will be kept confidential and that individual will not be called as a witness should a subsequent administrative or disciplinary action be required. If the employee who is the subject of a Co-Worker Referral is referred to EAP, accepts that referral and follows EAP's recommendation(s), disciplinary action may be held in abeyance.
+- [p025_c0011] 5. The collection and testing process will be in accordance with Federal regulations. The employee will always be tested in a setting where aural and visual privacy is maintained. MNR will always attempt to mirror Federal regulations with Non-DOT testing whenever possible.
+### [p025_c0012] X. ADMINISTRATION
+[p025_c0013] The Vice President of Human Resources is responsible for interpreting and administering this Procedure.
+[p025_c0014] This Procedure sets forth only guidelines and does not constitute a contract, express or implied. Metro-North expressly reserves the right to change or cancel this Procedure at its sole discretion at any time. Any exceptions to this Procedure must be approved by the President.
+### [p025_c0015] REVISION TRACKING
+> [p025_c0016] The logo for the Metropolitan Transportation Authority (MTA) is a circular emblem. It features a stylized 'M' and 'T' intertwined, with the letters 'A' and 'R' positioned to the right. The entire emblem is set against a dark background.
+[p025_c0017] Metro-North Railroad
+[p025_c0018] _Master Page # 25 of 26 - Corporate Governance Committee Meeting 3/17/2021_
+
+## Page 26
+
+### [p026_c0001] Corporate Policy and Operating Procedure
+[p026_c0002] Title: ALCOHOL AND SUBSTANCE ABUSE
+[p026_c0003] Effective Date: February 15, 1986
+[p026_c0004] Revised Date: March 12, 2021
+[p026_c0005] Number: 21-012
+[p026_c0006] Page 17 of 48 16
+[p026_c0007] March 2017 – Update of reporting time for arrest notification (MTA Board Approved).
+[p026_c0008] March 2018 – 2017 FRA expansion of employee titles subject to random testing (MTA Board Approved).
+[p026_c0009] March 2019 – Inclusion of Contractor related testing language.
+[p026_c0010] March 2021 – correction to the language of FRA & FMCSA, as some references are not included.
+[p026_c0011] Further clarification that MNR performs Non-DOT “For Cause” testing beyond defined FRA scope of testing. Included Conductor Flags under M-of-W regulated testing.
+[p026_c0012] March 2021 – Administrative changes were made to align Policy with Federal regulations, and to be consistent with MNR Policy for Non-DOT testing.
+> [p026_c0013] The logo for the Metropolitan Transportation Authority (MTA) is a black circle with the letters "MTA" in white, bold, sans-serif font.
+[p026_c0014] _Metro-North Railroad_
+[p026_c0015] _Master Page # 26 of 26 - Corporate Governance Committee Meeting 3/17/2021_

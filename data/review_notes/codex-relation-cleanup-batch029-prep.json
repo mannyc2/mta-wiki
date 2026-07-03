@@ -1,0 +1,264 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-22-endpoint-shape-batch029-prep",
+  "created_at": "2026-06-22T23:55:00Z",
+  "author": "codex",
+  "scope": "relation endpoint-shape cleanup prep only; durable retire-only mechanism planned but not applied",
+  "batch": "batch029",
+  "run_id_for_replacements": "2026-06-22_codex_relation_cleanup_batch029",
+  "submitted_at_for_dry_run": "2026-06-22T23:55:00Z",
+  "durable_mechanism_planned_not_applied": {
+    "retirements_target": "data/submission-overrides/retired.json",
+    "replacement_journal_target": null,
+    "applied": false,
+    "note": "Retire-only batch; no replacement submissions should be appended."
+  },
+  "bucket": {
+    "name": "residual implemented_by entity-to-entity non-project rows",
+    "original_relation_kind": "implemented_by",
+    "original_endpoint_shape": "entity -> entity",
+    "replacement_relation_kind": null,
+    "replacement_endpoint_shape": null,
+    "why_coherent": "All four rows use implemented_by with entity subjects, while current endpoint rules reserve implemented_by for project -> entity. The cited evidence does not support a single high-confidence replacement relation: two rows are self-links, one is a license-agreement participant row, and one is an OCIP procurement/coverage paragraph. Retiring these malformed relation submissions is safer than replacing them with a weak generic edge."
+  },
+  "checkpoint_context": {
+    "method": "Read-only inventory over canonical JSONL and canonical.db with the current endpoint-shape table; excluded retired submissions, prior codex relation cleanup prep originals through batch028, and missing-target repair work. Did not run CLI validate, materialize, export-jsonl, DB repair/publish, or provider-backed commands.",
+    "canonical_db_read_check": {
+      "command": "sqlite3 data/canonical.db select record_id, relation_kind, subject_id, object_id for the four candidate records",
+      "result": "Confirmed all four records are implemented_by with entity subject/object endpoints in canonical.db."
+    },
+    "remaining_endpoint_shape_inventory_after_exclusions": {
+      "total": 59,
+      "selected_bucket": "implemented_by entity->entity",
+      "selected_bucket_count": 4,
+      "prepared_count": 4,
+      "other_top_buckets": [
+        {
+          "bucket": "serves_route project->project",
+          "count": 3
+        },
+        {
+          "bucket": "part_of_program project->source",
+          "count": 3
+        },
+        {
+          "bucket": "part_of_program event->entity",
+          "count": 2
+        },
+        {
+          "bucket": "has_metric source->metric_claim",
+          "count": 2
+        },
+        {
+          "bucket": "serves_route project->entity",
+          "count": 2
+        }
+      ]
+    }
+  },
+  "exclusions_and_guards": {
+    "excluded_batches": [
+      "batch017",
+      "batch019",
+      "batch020",
+      "batch021",
+      "batch022",
+      "batch023",
+      "batch024",
+      "batch025",
+      "batch026",
+      "batch027",
+      "batch028"
+    ],
+    "missing_target_repair_excluded": true,
+    "retired_json_not_edited": true,
+    "submission_journals_not_edited": true,
+    "generated_outputs_not_edited": true,
+    "log_not_edited": true,
+    "manifest_merges_retired_not_edited": true,
+    "wiki_source_pages_not_edited": true,
+    "original_submission_guard": {
+      "retired_hits": [],
+      "prior_relation_batch_hits": []
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": [],
+      "prior_review_note_submission_id_hits": [],
+      "prior_review_note_local_observation_id_hits": [],
+      "note": "No replacement submissions in this retire-only batch."
+    }
+  },
+  "local_validation": {
+    "tooling": "Retire-only prep; no createSubmissionEntry replacement entries generated. Candidate validation is based on current endpoint-shape table plus read-only canonical JSONL/DB evidence inspection.",
+    "summary": {
+      "prepared_count": 4,
+      "retire_only_count": 4,
+      "replacement_count": 0,
+      "accepted_replacement_count": 0,
+      "issue_count": 0,
+      "warning_count": 0,
+      "endpoint_shape_issue_count_after_replacement": 0
+    }
+  },
+  "prepared": [
+    {
+      "retire": {
+        "submission_id": "sub_da5e43202dc357bb",
+        "original_record_id": "relation_lirr-implemented-by-lirr-dept",
+        "original_local_observation_id": "relation_lirr_implemented_by_lirr_dept",
+        "malformed_shape": "implemented_by entity -> entity",
+        "original_relation_kind": "implemented_by",
+        "original_subject_id": "entity_annual-report-2021-lirr",
+        "original_subject_local_observation_id": "entity_lirr_meeting_doc_104741",
+        "original_object_id": "entity_annual-report-2021-lirr",
+        "original_object_local_observation_id": "entity_lirr_meeting_doc_104741",
+        "reason": "The original relation is an entity self-link using implemented_by. The cited text only says 'Representing Long Island Rail Road:' and does not support a project implemented_by entity relation or another durable relation edge."
+      },
+      "replacement": null,
+      "deterministic_replacement_submission_id": null,
+      "local_validation": {
+        "state": "not_applicable_retire_only",
+        "issues": [],
+        "warnings": [],
+        "relationEndpointIssues": [],
+        "endpoint_shape_issue": null
+      },
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_104741",
+          "evidence_id": "meeting_doc_104741#p001_c0009",
+          "source_path": "raw/sources/meeting_doc_104741/blocks.jsonl",
+          "page_number": 1,
+          "block_id": "p001_c0009",
+          "text_sha256": "sha256:09bc492123159840a357018bac3fdb4ce9556a5eae3c67c82e74cacb5993d2c2",
+          "text_source": "raw_text",
+          "role": "relation",
+          "source_quote": "Representing Long Island Rail Road:"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "retire": {
+        "submission_id": "sub_17257510bbc1870d",
+        "original_record_id": "relation_lirr-license-implemented-by-lirr",
+        "original_local_observation_id": "relation_lirr_license_implemented_by_lirr",
+        "malformed_shape": "implemented_by entity -> entity",
+        "original_relation_kind": "implemented_by",
+        "original_subject_id": "entity_annual-report-2021-lirr",
+        "original_subject_local_observation_id": "entity_lirr_meeting_doc_131696",
+        "original_object_id": "entity_meeting-doc-104796-vpct-realty",
+        "original_object_local_observation_id": "entity_vpct_realty_llc_meeting_doc_131696",
+        "reason": "The original relation uses implemented_by between LIRR and VPCT Realty LLC. The evidence is an agency/licensee/license-agreement row, not project implemented_by entity. A replacement would need a separate reviewed license/agreement relation shape, so this batch prepares a retire-only cleanup."
+      },
+      "replacement": null,
+      "deterministic_replacement_submission_id": null,
+      "local_validation": {
+        "state": "not_applicable_retire_only",
+        "issues": [],
+        "warnings": [],
+        "relationEndpointIssues": [],
+        "endpoint_shape_issue": null
+      },
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_131696",
+          "evidence_id": "meeting_doc_131696#p009_c0007",
+          "source_path": "raw/sources/meeting_doc_131696/blocks.jsonl",
+          "page_number": 9,
+          "block_id": "p009_c0007",
+          "text_sha256": "sha256:00a7109aaa41075e3045cf06a7ecdb852269f03a6b27d11127a6266c96e266f8",
+          "text_source": "raw_text",
+          "source_quote": "AGENCY: MTA Long Island Rail Road (\"LIRR\") LICENSEE: VPCT Realty LLC (\"VPCT\")"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "retire": {
+        "submission_id": "sub_c18efe02a3ab1819",
+        "original_record_id": "relation_meeting-doc-121201-ocip",
+        "original_local_observation_id": "relation_meeting_doc_121201_ocip",
+        "malformed_shape": "implemented_by entity -> entity",
+        "original_relation_kind": "implemented_by",
+        "original_subject_id": "entity_mta-nyct",
+        "original_subject_local_observation_id": "entity_meeting_doc_121201_nyct",
+        "original_object_id": "entity_mta-entity-update-2025",
+        "original_object_local_observation_id": "entity_meeting_doc_121201_mta",
+        "reason": "The original relation uses implemented_by between NYCT and MTA entities. The evidence describes MTA RIM commencing an OCIP package and MTA Construction and Development identifying projects across agencies; it does not support NYCT implemented_by MTA as a shaped relation."
+      },
+      "replacement": null,
+      "deterministic_replacement_submission_id": null,
+      "local_validation": {
+        "state": "not_applicable_retire_only",
+        "issues": [],
+        "warnings": [],
+        "relationEndpointIssues": [],
+        "endpoint_shape_issue": null
+      },
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_121201",
+          "evidence_id": "meeting_doc_121201#p019_c0010",
+          "source_path": "raw/sources/meeting_doc_121201/blocks.jsonl",
+          "page_number": 19,
+          "block_id": "p019_c0010",
+          "text_sha256": "sha256:4eaf2a3e8368a025d0c77d8cb057eacb3b4a9d937d59fe9b8f04dcde6528200c",
+          "text_source": "raw_text",
+          "role": "ocip_coverage",
+          "source_quote": "MTA Construction and Development identified 229 projects throughout the NYCT, LIRR, MNR and SBDP"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "retire": {
+        "submission_id": "sub_f0b5f134f7fdd789",
+        "original_record_id": "relation_tbta-operated-by-mta-bt",
+        "original_local_observation_id": "relation_tbta_operated_by_mta_bt",
+        "malformed_shape": "implemented_by entity -> entity",
+        "original_relation_kind": "implemented_by",
+        "original_subject_id": "entity_meeting-doc-124881-bridges-tunnels",
+        "original_subject_local_observation_id": "entity_meeting_doc_165006_tbta",
+        "original_object_id": "entity_meeting-doc-124881-bridges-tunnels",
+        "original_object_local_observation_id": "entity_meeting_doc_165006_tbta",
+        "reason": "The original relation is an entity self-link using implemented_by. The cited text states the legal name of MTA Bridges and Tunnels is Triborough Bridge and Tunnel Authority, which is identity/name context rather than an implemented_by relation."
+      },
+      "replacement": null,
+      "deterministic_replacement_submission_id": null,
+      "local_validation": {
+        "state": "not_applicable_retire_only",
+        "issues": [],
+        "warnings": [],
+        "relationEndpointIssues": [],
+        "endpoint_shape_issue": null
+      },
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_165006",
+          "evidence_id": "meeting_doc_165006#p046_c0014",
+          "source_path": "raw/sources/meeting_doc_165006/blocks.jsonl",
+          "page_number": 46,
+          "block_id": "p046_c0014",
+          "text_sha256": "sha256:09cfee3a2350233bc4e977a40f3c08263ff73ebcaecb803f26b40d2652cfd53a",
+          "text_source": "raw_text",
+          "role": "relationship",
+          "source_quote": "The legal name of MTA Bridges and Tunnels is Triborough Bridge and Tunnel Authority."
+        }
+      ],
+      "confidence": "high"
+    }
+  ],
+  "deferred": [
+    {
+      "bucket": "serves_route endpoint identity issues",
+      "count": 9,
+      "reason": "Remaining serves_route issues span project->project, project->entity, event->route, and treatment_component->route shapes; these need endpoint-by-endpoint review and may overlap the explicitly excluded missing-target repair."
+    },
+    {
+      "bucket": "part_of_program mixed object shapes",
+      "count": 11,
+      "reason": "Remaining part_of_program issues involve source, event, claim, entity, and corridor subjects/objects; likely mixed relation-kind cleanup rather than one coherent batch."
+    }
+  ]
+}

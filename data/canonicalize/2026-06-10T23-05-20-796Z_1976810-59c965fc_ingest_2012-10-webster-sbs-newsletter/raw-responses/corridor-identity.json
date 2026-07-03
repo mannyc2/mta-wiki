@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T23-05-20-796Z_1976810-59c965fc_ingest_2012-10-webster-sbs-newsletter",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T03:04:27.234Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "corridor-identity",
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "corridor_webster_avenue_sbs",
+        "decision": "new",
+        "rationale": "The observation's base_record_id (corridor_webster-avenue-sbs) matches an existing registry record with record_id corridor_webster-avenue-sbs — same source (2012_10_webster_sbs_newsletter), same corridor name, same limits (Harlem River to The Hub), same boroughs (Bronx, Manhattan). Since the closest match IS the observation's own base_record_id, this is a 'new' decision per the rule: the observation already resolves to that canonical record and no linking to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_webster_sbs_newsletter",
+            "block_id": "p004_c0004",
+            "source_quote": ""
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-03-23-230Z_2111393-b7e44e2d_canonicalize_2026-06-10t23-05-20-796z-1976810-59c965fc-ingest-2012-10-webster-sbs-newsletter-corridor-identity"
+}

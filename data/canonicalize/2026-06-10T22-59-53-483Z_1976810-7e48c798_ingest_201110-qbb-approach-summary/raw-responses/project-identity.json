@@ -1,0 +1,43 @@
+{
+  "run_id": "2026-06-10T22-59-53-483Z_1976810-7e48c798_ingest_201110-qbb-approach-summary",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T02:03:03.630Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "match-qbb-bus-priority-study",
+        "local_observation_id": "project_queensboro_bridge_bus_priority_study",
+        "decision": "new",
+        "proposed_relations": [
+          {
+            "relation_kind": "equivalent",
+            "subject_id": "project_queensboro-bridge-bus-priority-study",
+            "object_id": "project_qbb-bus-priority-study",
+            "description": "Both records describe the same Queensboro Bridge Bus Priority Study project. Record project_qbb-bus-priority-study (source: 201110_qbb_summary_recommendations, status: completed) and record project_queensboro-bridge-bus-priority-study (source: 201110_qbb_approach_summary, status: ongoing) share the same project name, same boroughs (Manhattan/Queens), and substantially identical descriptions about improving bus speed and reliability on the QBB. The former even carries the latter's record_id as an alias. They represent the same real-world study captured from two different source documents.",
+            "evidence_refs": [
+              {
+                "source_id": "201110_qbb_approach_summary",
+                "block_id": "p003_c0004",
+                "source_quote": "Identify cost-effective ways to improve bus speed and reliability for local and express buses that use the QBB."
+              }
+            ]
+          }
+        ],
+        "rationale": "Observation base_record_id 'project_queensboro-bridge-bus-priority-study' already exists in the registry and matches this observation — same source (201110_qbb_approach_summary), same project name, same boroughs, same description. The observation already resolves to this canonical record ID; no re-linking is needed (new decision). Additionally, registry record 'project_qbb-bus-priority-study' is clearly the same real-world project (same name, same geography, same purpose) captured from a companion source document (summary recommendations vs. approach summary), and should be linked.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_qbb_approach_summary",
+            "block_id": "p003_c0004",
+            "source_quote": "Identify cost-effective ways to improve bus speed and reliability for local and express buses that use the QBB."
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-02-00-995Z_2111393-58861c82_canonicalize_2026-06-10t22-59-53-483z-1976810-7e48c798-ingest-201110-qbb-approach-summary-project-identity"
+}

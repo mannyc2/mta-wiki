@@ -1,0 +1,355 @@
+{
+  "note_id": "codex-relation-rule-or-data-next6-prep-2026-06-22",
+  "created_at": "2026-06-22T00:00:00.000Z",
+  "author": "codex",
+  "scope": "validator/rule-data triage only for next relation endpoint bucket after next5/relation024; artifact-only prep; no provider-backed post-ingest commands; no generated-output, override, journal, LOG, manifest, wiki, or code edits",
+  "kind": "relation_endpoint_rule_or_data_triage",
+  "recommendation": {
+    "type": "data_cleanup_bucket",
+    "bucket": "has_timeline_event claim -> event",
+    "candidate_count": 5,
+    "confidence": "medium_high",
+    "summary": "Do not widen has_timeline_event to accept claim subjects. After excluding the next4 has_metric claim patch, relation023 treatment timeline cleanup rows, and relation024 implemented_by treatment cleanup rows, the largest remaining endpoint-shape bucket is five claim-owned timeline edges. These rows use claims as timeline carriers for board votes, implementation dates, committee-agenda updates, or schedule-change context. That matches the batch020 precedent where similar claim -> event timeline links were treated as data cleanup and replaced with looser event -> claim dependency/reference edges.",
+    "recommended_action": "Prepare a narrow retire-and-replace data cleanup batch for the five malformed has_timeline_event claim -> event relations. Prefer supports event -> claim replacements, preserving the same source-backed event and claim endpoints; for rows with stronger meeting/agenda semantics, has_claim event -> claim is a legal alternative, but this should be decided row-by-row in the cleanup prep rather than hidden behind a broad validator rule.",
+    "do_not_patch_validator_yet": {
+      "rejected_patch": "Add claim to RELATION_ENDPOINT_SHAPES.has_timeline_event.subject.",
+      "reason": "Claims are source-stated assertions, not durable timeline owners. The remaining examples are mixed and often express contextual support, agenda membership, or missing project/source carrier modeling. Widening has_timeline_event for claim subjects would bless weak claim-owned chronology and regress against batch020's data-cleanup treatment of the same endpoint shape."
+    }
+  },
+  "checkpoint_context": {
+    "excluded_from_this_triage": [
+      {
+        "reason": "next4 has_metric claim -> metric_claim validator patch",
+        "observed_current_code_accepts": "relationEndpointShapeIssue(\"has_metric\", \"claim\", \"metric_claim\") returns undefined"
+      },
+      {
+        "reason": "relation023 treatment_component timeline cleanup",
+        "excluded_original_record_ids": [
+          "relation_montauk-crossing-timetable-133331",
+          "relation_pj-crossing-timetable-133331",
+          "relation_pw-trackwork-timetable-133331",
+          "relation_treatment-has-event-bus-only-signals",
+          "relation_treatment-has-event-tsp-installation"
+        ]
+      },
+      {
+        "reason": "relation024 implemented_by treatment_component -> entity cleanup",
+        "excluded_original_record_ids": [
+          "relation_lirr-blue-lighting-installed",
+          "relation_nyct-metro-north-blue-lighting-pilots",
+          "relation_blue-lighting-metro-north-pilot",
+          "relation_nycdot-partner-pelham-bay-lane",
+          "relation_nyct-implements-able",
+          "relation_help-points-lirr-program-support"
+        ]
+      }
+    ],
+    "current_validator_context": {
+      "has_timeline_event_rule": {
+        "subject_kinds": [
+          "project",
+          "route",
+          "corridor",
+          "entity",
+          "source",
+          "event"
+        ],
+        "object_kinds": [
+          "event"
+        ],
+        "current_rejection_message": "Relation kind has_timeline_event expects project|route|corridor|entity|source|event -> event, got claim -> event."
+      },
+      "nearby_legal_shapes": {
+        "supports event->claim": "not endpoint-shaped; relationEndpointShapeIssue returns undefined",
+        "has_claim event->claim": "accepted by current endpoint-shape table",
+        "has_timeline_event source->event": "accepted by current endpoint-shape table"
+      },
+      "precedent": {
+        "artifact": "data/review_notes/codex-relation-cleanup-batch020-prep.json",
+        "bucket": "meeting_doc_135366 contract timeline-context claim-to-event relations",
+        "decision": "Retire four has_timeline_event claim -> event rows and replace them with supports event -> claim rows.",
+        "dry_run_acceptance": {
+          "prepared_count": 4,
+          "accepted_count": 4,
+          "issue_count": 0,
+          "endpoint_shape_issue_count": 0
+        }
+      }
+    }
+  },
+  "targeted_inventory_after_exclusions": {
+    "method": "Read-only bun --eval over readCanonicalRecords() and relationEndpointShapeIssue(); excluded relation023 and relation024 original record ids; did not run CLI validate, materialize, export-jsonl, DB repair/publish, or provider-backed commands.",
+    "unexpected_relation_endpoint_shape_total": 69,
+    "by_relation_kind": {
+      "has_timeline_event": 14,
+      "part_of_program": 12,
+      "serves_route": 10,
+      "implemented_by": 9,
+      "operated_by": 6,
+      "published_by": 5,
+      "has_treatment": 4,
+      "owned_by": 3,
+      "has_claim": 2,
+      "operates_on_corridor": 2,
+      "related_route": 2
+    },
+    "top_shape_buckets": [
+      {
+        "bucket": "has_timeline_event claim->event",
+        "count": 5,
+        "classification": "data_cleanup_bucket_recommended_here"
+      },
+      {
+        "bucket": "has_timeline_event metric_claim->event",
+        "count": 4,
+        "classification": "defer; metric claims are also poor timeline owners, but this review keeps the next bucket narrow"
+      },
+      {
+        "bucket": "implemented_by entity->entity",
+        "count": 4,
+        "classification": "defer; likely agency-role/relation-kind cleanup, not validator widening"
+      },
+      {
+        "bucket": "operated_by entity->entity",
+        "count": 4,
+        "classification": "defer; likely agency-role/relation-kind cleanup, not validator widening"
+      },
+      {
+        "bucket": "published_by claim->entity",
+        "count": 4,
+        "classification": "defer; publication role should probably attach source/project/entity carriers, not claim subjects"
+      },
+      {
+        "bucket": "part_of_program project->source",
+        "count": 3,
+        "classification": "defer; source object suggests containment/reference cleanup"
+      },
+      {
+        "bucket": "serves_route project->project",
+        "count": 3,
+        "classification": "defer; likely endpoint identity or relation-kind cleanup"
+      }
+    ]
+  },
+  "simulated_impact": {
+    "baseline_after_exclusions": 69,
+    "resolved_by_retiring_or_replacing_this_bucket": 5,
+    "remaining_endpoint_shape_issues_after_bucket_cleanup": 64,
+    "assumption": "All five original malformed relations are retired and validator-compatible replacements are submitted/materialized. This artifact did not perform createSubmissionEntry dry-runs for the five replacements and did not edit retired.json or submissions journals.",
+    "why_not_validator_impact": "A validator patch allowing claim -> event would also reduce the count by five, but it would validate weak claim-owned timeline modeling and contradict the existing batch020 cleanup precedent."
+  },
+  "exact_issue_examples": [
+    {
+      "record_id": "relation_meeting-doc-135731-congestion-pricing-theme",
+      "submission_ids": [
+        "sub_ff3c3606743df3de"
+      ],
+      "source_id": "meeting_doc_135731",
+      "current_shape": "has_timeline_event claim -> event",
+      "subject": {
+        "record_id": "claim_meeting-doc-135731-strengthen-expand-network",
+        "local_observation_id": "claim_meeting_doc_135731_strengthen_expand_network",
+        "display_name": "Strengthen & Expand the Network",
+        "claim_text": "Strengthen & Expand the Network - Board to Vote on Tolling Structure for Congestion Pricing"
+      },
+      "object": {
+        "record_id": "event_meeting-doc-135731-congestion-pricing-vote",
+        "local_observation_id": "event_meeting_doc_135731_congestion_pricing_vote",
+        "display_name": "Board Vote on Congestion Pricing Tolling Structure"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_135731#p002_c0002",
+          "text": "Strengthen & Expand the Network"
+        },
+        {
+          "ref": "meeting_doc_135731#p002_c0004",
+          "text": "Board to Vote on Tolling Structure for Congestion Pricing"
+        }
+      ],
+      "cleanup_read": "The board vote event is contextual support for a presentation theme/claim. Replace with supports event -> claim, or has_claim event -> claim if the cleanup owner wants a stronger event-owned claim edge."
+    },
+    {
+      "record_id": "relation_meeting-doc-160441-express-spring2025",
+      "submission_ids": [
+        "sub_b2b4ab00d355b629"
+      ],
+      "source_id": "meeting_doc_160441",
+      "current_shape": "has_timeline_event claim -> event",
+      "subject": {
+        "record_id": "claim_meeting-doc-160441-recommendation",
+        "local_observation_id": "claim_meeting_doc_160441_recommendation",
+        "display_name": "Service enhancement recommendation",
+        "claim_text": "Provide frequency increases and/or running time adjustments on eight express bus routes and 16 local bus routes/route combinations"
+      },
+      "object": {
+        "record_id": "event_meeting-doc-160441-express-spring-2025",
+        "local_observation_id": "event_meeting_doc_160441_express_spring_2025",
+        "display_name": "Express Bus Service Enhancements Implementation - Spring 2025"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_160441#p001_c0007",
+          "text": "Provide frequency increases and/or running time adjustments on eight express bus routes and 16 local bus routes/route combinations."
+        },
+        {
+          "ref": "meeting_doc_160441#p001_c0012",
+          "text": "Express bus routes: Spring 2025"
+        }
+      ],
+      "cleanup_read": "The implementation date is a timeline detail for service enhancements, but the source has no project carrier in current canonical records. Preserve context as supports event -> claim rather than admitting claim as a has_timeline_event owner."
+    },
+    {
+      "record_id": "relation_meeting-doc-160441-local-summer2025",
+      "submission_ids": [
+        "sub_f66641833f5cbc0b"
+      ],
+      "source_id": "meeting_doc_160441",
+      "current_shape": "has_timeline_event claim -> event",
+      "subject": {
+        "record_id": "claim_meeting-doc-160441-recommendation",
+        "local_observation_id": "claim_meeting_doc_160441_recommendation",
+        "display_name": "Service enhancement recommendation",
+        "claim_text": "Provide frequency increases and/or running time adjustments on eight express bus routes and 16 local bus routes/route combinations"
+      },
+      "object": {
+        "record_id": "event_meeting-doc-160441-local-summer-2025",
+        "local_observation_id": "event_meeting_doc_160441_local_summer_2025",
+        "display_name": "Local Bus Service Enhancements Implementation - Summer 2025"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_160441#p001_c0007",
+          "text": "Provide frequency increases and/or running time adjustments on eight express bus routes and 16 local bus routes/route combinations."
+        },
+        {
+          "ref": "meeting_doc_160441#p001_c0013",
+          "text": "Local bus routes: Summer 2025"
+        }
+      ],
+      "cleanup_read": "Same source and subject as the express row. A supports event -> claim replacement keeps the schedule context without changing the timeline-owner rule."
+    },
+    {
+      "record_id": "relation_meeting-doc-196866-implementation-event",
+      "submission_ids": [
+        "sub_7203db313e9c6538"
+      ],
+      "source_id": "meeting_doc_196866",
+      "current_shape": "has_timeline_event claim -> event",
+      "subject": {
+        "record_id": "claim_meeting-doc-196866-cost-neutral",
+        "local_observation_id": "claim_meeting_doc_196866_cost_neutral",
+        "display_name": "Cost Neutral",
+        "claim_text": "The proposed adjustments are expected to be cost neutral."
+      },
+      "object": {
+        "record_id": "event_meeting-doc-196866-implementation-may2026",
+        "local_observation_id": "event_meeting_doc_196866_implementation_may2026",
+        "display_name": "Proposed Implementation May 2026"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_196866#p001_c0009",
+          "text": "The proposed adjustments are expected to be cost neutral."
+        },
+        {
+          "ref": "meeting_doc_196866#p001_c0011",
+          "text": "These proposed minor subway schedule changes would be implemented in May 2026."
+        }
+      ],
+      "cleanup_read": "This is weaker than a clean claim-event dependency: both records describe the same proposed schedule-change package, but the May implementation event does not specifically support the cost-neutral claim. Prefer source has_timeline_event source -> event plus a separate source/claim context if available, or use supports event -> claim only with a medium-confidence caveat."
+    },
+    {
+      "record_id": "relation_meeting-doc-199141-railroad-highlights-nov2026",
+      "submission_ids": [
+        "sub_c326c53312321b3d"
+      ],
+      "source_id": "meeting_doc_199141",
+      "current_shape": "has_timeline_event claim -> event",
+      "subject": {
+        "record_id": "claim_meeting-doc-199141-ntsb-recommendations",
+        "local_observation_id": "claim_meeting_doc_199141_ntsb_recommendations",
+        "display_name": "NTSB Recommendations Update",
+        "claim_text": "The committee will receive an update on the status of Recommendations issued to the MTA by the NTSB."
+      },
+      "object": {
+        "record_id": "event_meeting-doc-199141-nov2026-safety-committee",
+        "local_observation_id": "event_meeting_doc_199141_nov2026_safety_committee",
+        "display_name": "November 2026 Safety/Security Committee Meeting"
+      },
+      "evidence": [
+        {
+          "ref": "meeting_doc_199141#p002_c0023",
+          "text": "Railroad Safety Highlights"
+        },
+        {
+          "ref": "meeting_doc_199141#p002_c0024",
+          "text": "The committee will be briefed on commuter railroad Safety Highlights."
+        },
+        {
+          "ref": "meeting_doc_199141#p002_c0025",
+          "text": "NTSB Recommendations Update"
+        },
+        {
+          "ref": "meeting_doc_199141#p002_c0026",
+          "text": "The committee will receive an update on the status of Recommendations issued to the MTA by the NTSB."
+        }
+      ],
+      "cleanup_read": "The relation label/evidence currently points at Railroad Safety Highlights while the subject claim is NTSB Recommendations Update. Retire this row; if replacing, use the NTSB evidence refs and a supports or has_claim event -> claim edge from the November committee meeting to the NTSB claim."
+    }
+  ],
+  "guards_for_followup_cleanup_prep": [
+    "Re-run the targeted inventory against the then-current canonical DB because relation024 is applied durably but may still be pending generated-output checkpoint.",
+    "For each original relation, verify the original submission id is not already retired and no prior relation cleanup batch has already replaced it.",
+    "Use createSubmissionEntry plus relationEndpointIssues in dry-run/local validation mode for any proposed replacement entries before editing retired.json or submissions journals.",
+    "For meeting_doc_199141, correct the evidence to NTSB refs if replacing the NTSB claim edge; do not preserve the Railroad Safety Highlights mismatch.",
+    "Do not include has_timeline_event metric_claim -> event or any agency/program/route buckets in the same cleanup batch."
+  ],
+  "commands_run": [
+    "pwd && rg --files data/review_notes | sort | tail -80",
+    "git status --short",
+    "rg -n \"next5|relation024|relation023|next4|has_metric|implemented_by|treatment timeline|rule|validator|relation\" data/review_notes packages/harness/src/mta packages/harness/src/agents -S",
+    "sed -n '1,260p' data/review_notes/codex-relation-rule-or-data-next5-prep.json",
+    "sed -n '1,260p' data/review_notes/codex-relation-cleanup-batch024-prep.json",
+    "rg -n \"RELATION_ENDPOINT_SHAPES|relationEndpointShapeIssue|RelationKind|unexpected_relation_endpoint_shape|endpoint shape\" packages -S",
+    "sed -n '206,270p' packages/pipeline/src/records/relations.ts",
+    "sed -n '1,140p' packages/pipeline/test/records/relations.test.ts",
+    "jq '.prepared[].retire.original_record_id' data/review_notes/codex-relation-cleanup-batch023-prep.json data/review_notes/codex-relation-cleanup-batch024-prep.json",
+    "sed -n '270,330p' packages/pipeline/src/records/relations.ts",
+    "sed -n '348,390p' packages/pipeline/src/records/relations.ts",
+    "rg -n \"function readCanonicalRecords|readCanonicalRecords\" packages data/review_notes -S",
+    "bun --eval '<targeted endpoint-shape inventory over readCanonicalRecords() and relationEndpointShapeIssue(), excluding relation023 and relation024 original record ids>'",
+    "jq '.bucket, .summary, .recommendation // empty, .prepared[]?.retire.original_record_id' data/review_notes/codex-relation-cleanup-batch020-prep.json data/review_notes/codex-relation-cleanup-batch021-prep.json data/review_notes/codex-relation-cleanup-batch022-prep.json",
+    "jq '.recommendation, .inventory_context.top_buckets_after_exclusions, .targeted_inventory_after_exclusions.top_shape_buckets // empty' data/review_notes/codex-relation-rule-or-data-next2-prep.json data/review_notes/codex-relation-rule-or-data-next3-prep.json data/review_notes/codex-relation-rule-or-data-next4-prep.json | sed -n '1,260p'",
+    "rg -n \"claim->event|claim -> event|has_timeline_event claim|metric_claim->event|metric_claim -> event|timeline.*claim\" data/review_notes docs packages -S",
+    "bun --eval '<dump all remaining has_timeline_event claim->event rows with relation, subject, object, evidence_refs, and current issue message>'",
+    "for ref in meeting_doc_160441#p001_c0012 meeting_doc_160441#p005_c0005 meeting_doc_160441#p001_c0013 meeting_doc_160441#p005_c0006 meeting_doc_160441#p001_c0007 meeting_doc_160441#p004_c0006 meeting_doc_196866#p001_c0009 meeting_doc_196866#p001_c0011 meeting_doc_199141#p002_c0023 meeting_doc_199141#p002_c0024 meeting_doc_199141#p002_c0025 meeting_doc_199141#p002_c0026 meeting_doc_135731#p002_c0002 meeting_doc_135731#p002_c0004; do ... jq raw block text ...; done",
+    "bun --eval '<list same-source canonical records for meeting_doc_135731, meeting_doc_160441, meeting_doc_196866, and meeting_doc_199141>'",
+    "rg -n \"supports|includes|RELATION_FAMIL|relation_family\" packages/pipeline/src/records/relations.ts docs/schema-contracts.md packages/agents/src/prompts.ts -S",
+    "bun --eval 'import { relationEndpointShapeIssue } from \"./packages/pipeline/src/records/relations.ts\"; console.log(JSON.stringify({has_timeline_claim_event: relationEndpointShapeIssue(\"has_timeline_event\", \"claim\", \"event\")?.message, supports_event_claim: relationEndpointShapeIssue(\"supports\", \"event\", \"claim\") ?? null, has_claim_event_claim: relationEndpointShapeIssue(\"has_claim\", \"event\", \"claim\") ?? null, has_timeline_source_event: relationEndpointShapeIssue(\"has_timeline_event\", \"source\", \"event\") ?? null}, null, 2));'",
+    "jq '.relationEndpointIssues_dry_run_acceptance.summary, .prepared[0].replacement.proposed_relation_kind, .prepared[0].replacement.proposed_endpoint_shape' data/review_notes/codex-relation-cleanup-batch020-prep.json",
+    "sed -n '48,206p' packages/pipeline/src/records/relations.ts",
+    "test ! -e data/review_notes/codex-relation-rule-or-data-next6-prep.json && echo ok || echo exists"
+  ],
+  "commands_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts export-jsonl --verify",
+    "DB repair/publish commands",
+    "provider-backed post-ingest commands",
+    "write/ingest/ask/schema/ontology-normalize agent runs"
+  ],
+  "files_intentionally_not_edited": [
+    "packages/",
+    "data/canonical/",
+    "data/canonical.db",
+    "data/materialized/",
+    "data/submissions/",
+    "data/submission-overrides/retired.json",
+    "data/identity-overrides/merges.json",
+    "data/identity-overrides/do-not-merge.json",
+    "wiki/sources/",
+    "LOG.md",
+    "manifest files"
+  ]
+}

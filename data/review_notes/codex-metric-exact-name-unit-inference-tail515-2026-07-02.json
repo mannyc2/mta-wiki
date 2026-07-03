@@ -1,0 +1,86 @@
+{
+  "note_id": "codex-metric-exact-name-unit-inference-tail515-2026-07-02",
+  "created_at": "2026-07-02",
+  "mode": "codex_only_deterministic",
+  "external_provider_llms_used": false,
+  "forbidden_commands_used": [],
+  "bucket": "metric_claim.payload.unit_normalized.unit_family missing",
+  "baseline": {
+    "metric_claim_records": 36534,
+    "missing_unit_family_before": 586,
+    "unit_family_other_before": 5
+  },
+  "subagents": [
+    {
+      "agent_id": "019f2062-a18c-7182-ad41-3459034caf3a",
+      "role": "bounded_read_only_metric_tail_audit",
+      "status": "closed",
+      "finding": "Recommended a conservative exact-name carry-forward slice for names with one existing normalized pair and no same-name normalized conflicts. Expected missing unit-family 586 -> 515."
+    }
+  ],
+  "implemented_changes": [
+    {
+      "change": "Added exact-name missing-unit inference for Pauli's carry-forward slice across count, complaint, money, ridership, workforce, safety, safety-rate, and engagement metric names.",
+      "files": [
+        "packages/pipeline/src/ontology/normalizers.ts",
+        "packages/pipeline/test/ontology/normalizers.test.ts"
+      ],
+      "guards": [
+        "Rules apply only when payload.unit and payload.unit_normalized are absent.",
+        "Rules require a finite numeric value, except money-range records may use finite value_min and value_max.",
+        "Money rows require dollar/USD/currency evidence.",
+        "Complaint rows require count-shaped evidence rather than percent-only rows.",
+        "Known ambiguous/conflict clusters remain unresolved: train_derailments, train_collisions, crash_injuries, Secondary Screening Score, audit_projects_completed, monthly_ridership, lost_time_injury_rate, major_felony_change, total_revenue, vacancies, subway_fires, and robbery."
+      ]
+    }
+  ],
+  "after": {
+    "metric_claim_records": 36534,
+    "missing_unit_family_after": 515,
+    "unit_family_other_after": 5,
+    "missing_unit_family_delta": -71,
+    "target_missing_remaining": 0
+  },
+  "verification": {
+    "focused_tests": {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "result": "pass",
+      "tests": 278,
+      "expects": 4715
+    },
+    "typecheck": {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    "materialize": {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "pass",
+      "materialized_submissions": "93067/98115",
+      "retired_submissions_skipped": 265,
+      "pages": 7335,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass",
+      "issues": 0,
+      "submissions": 98115,
+      "canonical_records": 84027,
+      "wiki_pages": 7331
+    }
+  },
+  "remaining": {
+    "metric_unit_family_missing": 515,
+    "metric_unit_family_other": 5,
+    "top_remaining_missing_names": [
+      ["train_derailments", 6],
+      ["crash_injuries", 5],
+      ["locomotive quantity", 4],
+      ["audit_projects_completed", 3],
+      ["Secondary Screening Score", 3],
+      ["track_trespassing_incidents", 3],
+      ["train_collisions", 3]
+    ],
+    "next_lane": "Read-only Codex subagent Avicenna (019f206b-8437-7912-bf46-3fbcdafa5b01) is auditing the remaining tail for another exact-name slice while avoiding known conflict clusters."
+  }
+}

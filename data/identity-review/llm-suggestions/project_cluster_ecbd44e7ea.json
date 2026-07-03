@@ -1,0 +1,69 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:36:01.279Z",
+  "packet_path": "data/identity-review/packets/project_cluster_ecbd44e7ea.md",
+  "cluster_id": "project_cluster_ecbd44e7ea",
+  "kind": "project",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "project_cluster_ecbd44e7ea",
+    "kind": "project",
+    "merge_groups": [],
+    "do_not_merge": [
+      {
+        "record_ids": [
+          "project_gct-fire-standpipe-phase2",
+          "project_park-avenue-viaduct-repair"
+        ],
+        "reason": "Shared program (MTA 2020-2024 Capital Program) is relation context, not merge authority. Identity fields differ: distinct project names, types, and scopes (fire standpipe replacement vs. viaduct repair). Contradiction test: strong identity field project_name and project_type differ, so they are distinct projects."
+      },
+      {
+        "record_ids": [
+          "project_gct-fire-standpipe-phase2",
+          "project_prevost-express-buses-oct2023"
+        ],
+        "reason": "Shared program is not merge authority. Identity fields differ: project_name, project_type, scope. Contradiction test: strong identity fields differ, so distinct projects."
+      },
+      {
+        "record_ids": [
+          "project_gct-fire-standpipe-phase2",
+          "project_ronkonkoma-parking-garage-rehab"
+        ],
+        "reason": "Shared program is not merge authority. Identity fields differ: project_name, project_type, scope. Contradiction test: distinct projects."
+      },
+      {
+        "record_ids": [
+          "project_park-avenue-viaduct-repair",
+          "project_prevost-express-buses-oct2023"
+        ],
+        "reason": "Shared program is not merge authority. Identity fields differ: project_name, project_type. Contradiction test: distinct projects."
+      },
+      {
+        "record_ids": [
+          "project_park-avenue-viaduct-repair",
+          "project_ronkonkoma-parking-garage-rehab"
+        ],
+        "reason": "Shared program is not merge authority. Identity fields differ: project_name, project_type, scope. Contradiction test: distinct projects."
+      },
+      {
+        "record_ids": [
+          "project_prevost-express-buses-oct2023",
+          "project_ronkonkoma-parking-garage-rehab"
+        ],
+        "reason": "Shared program is not merge authority. Identity fields differ: project_name, project_type, scope. Contradiction test: distinct projects."
+      }
+    ],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "All four projects share only the capital program, which is explicitly noted as not merge authority. Each project has distinct identity fields (name, type, scope, description). No contradicting identity fields exist between any pair that would allow merge; all pairs satisfy the contradiction test (different project_name and project_type). Therefore all pairs are do_not_merge. No merges are warranted."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-35-52-290Z_1282984-a98bd30b_identity-review-run_project-cluster-ecbd44e7ea",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-35-52-290Z_2026-06-23T14-35-52-290Z_1282984-a98bd30b_identity-review-run_project-cluster-ecbd44e7ea.jsonl"
+}

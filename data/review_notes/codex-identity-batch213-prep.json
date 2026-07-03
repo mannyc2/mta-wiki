@@ -1,0 +1,205 @@
+{
+  "batch": "identity213",
+  "generated_at": "2026-06-23T00:00:00Z",
+  "candidates": [
+    {
+      "kind": "entity",
+      "keep": "entity_meeting-doc-143306-mta-hq",
+      "alias": "entity_scout-mta-hq",
+      "identity_key": "entity_mta-hq",
+      "evidence": [
+        "entity_meeting-doc-143306-mta-hq: display_name 'MTA HQ'; payload entity_name 'MTA Headquarters', acronym 'MTAHQ', entity_type 'agency', parent_organization 'Metropolitan Transportation Authority'; evidence includes meeting_doc_104731#p001_c0002 with quote 'Headquarters' and meeting_doc_100241#p004_c0006.",
+        "entity_scout-mta-hq: display_name 'MTA Headquarters'; payload entity_name 'MTA HQ', entity_type 'organizational unit', parent_entity 'Metropolitan Transportation Authority', description 'Coordination and oversight for SCOUT'; evidence meeting_doc_135741#p006_c0002."
+      ],
+      "reason": "Exact MTA Headquarters identity. The alias is a single-source SCOUT-context MTA HQ extraction; the keep record is the broader materialized MTA Headquarters/HQ entity.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_meeting-doc-100241-staten-island-railway",
+      "alias": "entity_staten-island-rapid-transit-operating-authority",
+      "identity_key": "entity_staten-island-rapid-transit-operating-authority",
+      "evidence": [
+        "entity_meeting-doc-100241-staten-island-railway: display_name 'Staten Island Railway'; merged payload values include 'SIRTOA', 'Staten Island Rapid Transit Operating Authority', 'MTA Staten Island Railway', and acronym values 'SIR'/'SIRTOA'; evidence includes meeting_doc_100241#p004_c0006 and meeting_doc_100366#p016_c0001.",
+        "entity_staten-island-rapid-transit-operating-authority: display_name/entity_name 'Staten Island Rapid Transit Operating Authority'; acronym 'SIRTOA'; short_name 'MTA Staten Island Railway'; organization 'Metropolitan Transportation Authority'; evidence meeting_doc_121271#p001_c0001 quote 'Staten Island Rapid Transit Operating Authority' and meeting_doc_124306#p001_c0001 quote 'Staten Island Rapid Transit Operating Authority'."
+      ],
+      "reason": "Exact agency identity in current records: both sides explicitly carry SIRTOA/Staten Island Rapid Transit Operating Authority and MTA Staten Island Railway names for the same MTA Staten Island rail operating entity.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_nypd",
+      "alias": "entity_nypd-34th-st-busway",
+      "identity_key": "entity_nypd",
+      "evidence": [
+        "entity_nypd: display_name 'NYPD Reference'; payload name/acronym 'NYPD' and merged entity_name values include 'New York City Police Department', 'New York Police Department', and 'NYPD'; evidence includes 14th_street_busway#p001_b0001 quote 'NYPD traffic agents may also issue summonses' and 14th_street_busway_brochure#p001_c0030 quote 'Curb regulations are enforced by NYPD traffic agents'.",
+        "entity_nypd-34th-st-busway: display_name 'NYPD'; payload entity_name 'New York Police Department', acronym 'NYPD', entity_type 'agency'; evidence 34th_st_enhanced_bus_priority_cb6_jun2025#p023_c0002 quote 'Close coordination with NYPD for busway launch'."
+      ],
+      "reason": "Exact law-enforcement agency identity; the alias is a one-source NYPD extraction in the 34th Street busway context and the keep record is the richer NYPD agency entity.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_smg-201531",
+      "alias": "entity_smg-meeting-doc-201706",
+      "identity_key": "entity_smg",
+      "evidence": [
+        "entity_smg-201531: display_name/entity_name 'SMG'; entity_type 'organization'; description 'third-party real estate service provider to MTA Real Estate'; evidence meeting_doc_201531#p002_c0010.",
+        "entity_smg-meeting-doc-201706: display_name/entity_name 'SMG'; entity_type 'business'; evidence meeting_doc_201706#p020_c0011 quote \"MTA Real Estate's third-party real estate service providers CBRE and SMG\"."
+      ],
+      "reason": "Exact organization identity in the same MTA Real Estate third-party service-provider context; entity_type differs only by organization/business wording.",
+      "confidence": "high"
+    }
+  ],
+  "do_not_merge": [
+    {
+      "kind": "entity",
+      "records": [
+        "entity_catherine-rinaldi",
+        "entity_richard-davey-nyct-president"
+      ],
+      "identity_key": "entity_catherine-rinaldi",
+      "evidence": [
+        "entity_catherine-rinaldi: display_name/entity_name 'Catherine Rinaldi'; title 'Interim President (LIRR) / President (Metro-North)'; evidence includes meeting_doc_105776#p001_c0010 quote 'Catherine Rinaldi, President Metro-North Railroad ... and Interim President Long Island Rail Road'.",
+        "entity_richard-davey-nyct-president: display_name 'Richard Davey, President of New York City Transit'; payload entity_name 'Richard Davey', title 'President, New York City Transit', organization 'New York City Transit'; merged values are contaminated with 'Catherine Rinaldi'; evidence includes meeting_doc_102841#p003_c0013 quote 'Richard Davey President'."
+      ],
+      "reason": "Person false-positive/contamination. The shared key comes from Catherine Rinaldi leaked into the Richard Davey record; they are different people and should be guarded with DNM rather than merged.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "records": [
+        "entity_meeting-doc-113946-norman-grandstaff",
+        "entity_nypd"
+      ],
+      "identity_key": "entity_norman-grandstaff",
+      "evidence": [
+        "entity_meeting-doc-113946-norman-grandstaff: display_name 'Norman Grandstaff, Deputy Chief, NYPD Transit Bureau'; payload entity_name 'Norman Grandstaff', title 'Deputy Chief, NYPD Transit Bureau', organization 'NYPD Transit Bureau'; evidence meeting_doc_113946#p004_c0003.",
+        "entity_nypd: display_name 'NYPD Reference'; payload is the NYPD agency record but merged values include title 'Deputy Chief, Transit, NYPD' and organization 'NYPD Transit Bureau'."
+      ],
+      "reason": "Person-versus-agency false positive. Norman Grandstaff is an individual in the NYPD Transit Bureau, while entity_nypd is the police department agency record with leaked person/title fields.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "records": [
+        "entity_mta-entity-update-2025",
+        "entity_safety-committee-charter"
+      ],
+      "identity_key": "entity_safety-committee",
+      "evidence": [
+        "entity_mta-entity-update-2025: display_name 'Metropolitan Transportation Authority (MTA)'; payload entity_name 'Metropolitan Transportation Authority', entity_type 'transit_authority'; merged values include many departments and committees including 'MTA Safety Committee'.",
+        "entity_safety-committee-charter: display_name/entity_name 'MTA Safety Committee'; entity_type 'committee'; organization 'Metropolitan Transportation Authority'; evidence meeting_doc_128986#p098_c0003 quote 'SAFETY COMMITTEE' and meeting_doc_146881#p001_c0002 quote 'MTA Safety Committee'."
+      ],
+      "reason": "Parent authority versus board committee. The Safety Committee is an MTA committee, not the same entity as the Metropolitan Transportation Authority itself.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "records": [
+        "entity_meeting-doc-twu",
+        "entity_twu-local-100"
+      ],
+      "identity_key": "entity_transport-workers-union",
+      "evidence": [
+        "entity_meeting-doc-twu: display_name/entity_name 'Transport Workers Union'; acronym 'TWU'; entity_type 'union'; evidence meeting_doc_105956#p005_c0006 and meeting_doc_109971#p008_c0002.",
+        "entity_twu-local-100: display_name/entity_name 'TWU Local 100'; payload and merged values repeatedly specify 'Local 100'; evidence flatbush_ave_cb8_jun2025#p015_c0003 quote 'TWU Local 100'."
+      ],
+      "reason": "Parent/short-name versus local-unit risk. The broader Transport Workers Union/TWU key should not collapse automatically into TWU Local 100 when the source distinguishes the local.",
+      "confidence": "medium"
+    },
+    {
+      "kind": "entity",
+      "records": [
+        "entity_brooklyn-community-board-1",
+        "entity_staten-island-community-board-1"
+      ],
+      "identity_key": "entity_community-board-1",
+      "evidence": [
+        "entity_brooklyn-community-board-1: display_name 'Community Board 1'; payload entity_name 'Brooklyn Community Board 1', borough 'Brooklyn'; evidence b44_sbs_progress_report_2016#p037_c0003 and 2010_06_08_brt_nostrand_cb1#p001_c0001 quote 'Community Board 1'.",
+        "entity_staten-island-community-board-1: display_name 'Community Board 1, Staten Island'; parent_entity/organization 'Staten Island'; evidence victory_blvd_bay_st_little_clove_rd_may2025#p001_c0002 quote 'Proposal Presentation to CB 1 Transportation Committee'."
+      ],
+      "reason": "Precise borough-scoped community board collision: Brooklyn CB1 and Staten Island CB1 share a generic numbered board key but are distinct borough entities.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "records": [
+        "entity_dekalb-lafayette-cb2-brooklyn",
+        "entity_staten-island-community-board-2"
+      ],
+      "identity_key": "entity_community-board-2",
+      "evidence": [
+        "entity_dekalb-lafayette-cb2-brooklyn: display_name/entity_name 'Brooklyn Community Board 2'; evidence dekalb_lafayette_cb2_dec2024#p001_c0002 quote 'CB 2 Existing Conditions Meeting' and Flatbush CB2 audience evidence.",
+        "entity_staten-island-community-board-2: display_name 'Community Board 2, Staten Island'; parent_entity/organization 'Staten Island'; evidence victory_blvd_wild_ave_willowbrook_ave_cb2_jun2025#p001_c0002 quote 'Staten Island CB 2 Existing Conditions'."
+      ],
+      "reason": "Precise borough-scoped community board collision: Brooklyn CB2 and Staten Island CB2 share a generic numbered board key but are distinct borough entities.",
+      "confidence": "high"
+    }
+  ],
+  "skipped": [
+    {
+      "kind": "entity",
+      "records": [
+        "entity_mta-procurement",
+        "entity_mta-procurement-department"
+      ],
+      "identity_key": "entity_mta-procurement",
+      "reason": "Looks likely mergeable, but this is an obvious mid-list agency/department candidate that should remain separate from this later-list batch213 scope."
+    },
+    {
+      "kind": "entity",
+      "records": [
+        "entity_meeting-doc-140466-nyct-committee-members",
+        "entity_nyct-committee-members",
+        "entity_nyct-transit-committee-members"
+      ],
+      "identity_key": "entity_new-york-city-transit-committee",
+      "reason": "Likely committee/member-list cleanup, but skipped to avoid the obvious batch212 committee cluster and because some records model a committee while others model committee members."
+    },
+    {
+      "kind": "entity",
+      "records": [
+        "entity_community-board-9-brooklyn-brt-nostrand",
+        "entity_queens-cb9-2015-01-brt-woodhaven"
+      ],
+      "identity_key": "entity_community-board-9",
+      "reason": "Skipped broad community-board trap beyond the two precise DNM pairs in this artifact; Brooklyn CB9 and Queens CB9 are clearly distinct borough boards but this batch keeps CB DNM notes limited."
+    },
+    {
+      "kind": "entity",
+      "records": [
+        "entity_s-chu-cgc-oct2025",
+        "entity_s-chu-committee-member"
+      ],
+      "identity_key": "entity_s-chu",
+      "reason": "Initial-only person duplicate is suggestive but not exact enough for an alias or DNM without a full-name source-backed disambiguator."
+    }
+  ],
+  "guard_summary": {
+    "source_of_truth_mutation": "none",
+    "artifact_only": "data/review_notes/codex-identity-batch213-prep.json",
+    "commands_avoided": [
+      "provider/external LLM commands",
+      "materialize",
+      "full validate",
+      "export-jsonl or other generated-output commands",
+      "canonical JSONL/DB/wiki/submissions/LOG/manifest/override edits"
+    ],
+    "inputs_checked": [
+      "data/canonical/entities.jsonl",
+      "data/canonical.db read-only identity_aliases checks",
+      "data/identity-overrides/merges.json read-only alias checks",
+      "data/identity-overrides/do-not-merge.json read-only pair checks",
+      "data/review_notes/codex-identity-batch210-prep.json",
+      "data/review_notes/codex-identity-batch211-prep.json",
+      "visible data/review_notes/codex-identity-batch*.json prep artifacts for selected alias ids"
+    ],
+    "selection_notes": [
+      "Derived unresolved entity duplicate-key rows directly from current canonical entity JSONL using the deterministic identityKeysForRecord implementation, without invoking the validate CLI.",
+      "Focused on later issue-list rows around the NYPD, SIR/SIRTOA, MTA HQ, SMG, and generic-title/parent-child false positives, rather than earlier 210/211 candidates.",
+      "Avoided obvious batch212-looking clusters such as MTA Procurement and NYCT committee/member-list cleanup.",
+      "Selected alias ids were absent from current entity merges, absent from canonical identity_aliases, absent from exact DNM pairs, and not found as selected aliases in visible identity prep artifacts."
+    ]
+  }
+}

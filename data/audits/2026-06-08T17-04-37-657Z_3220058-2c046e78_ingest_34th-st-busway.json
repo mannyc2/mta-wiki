@@ -1,0 +1,74 @@
+{
+  "run_id": "2026-06-08T17-04-37-657Z_3220058-2c046e78_ingest_34th-st-busway",
+  "submission_path": "data/submissions/2026-06-08T17-04-37-657Z_3220058-2c046e78_ingest_34th-st-busway.jsonl",
+  "transcript_path": "wiki/transcripts/runs/2026-06-08T17-04-37-657Z_3220058-2c046e78_ingest_34th-st-busway/events.jsonl",
+  "source_ids": [
+    "34th_st_busway"
+  ],
+  "rows": 32,
+  "state_counts": {
+    "accepted": 31,
+    "rejected": 1
+  },
+  "observation_kind_counts": {
+    "source": 1,
+    "project": 1,
+    "entity": 1,
+    "corridor": 1,
+    "route": 1,
+    "treatment_component": 5,
+    "metric_claim": 2,
+    "table": 4,
+    "claim": 8,
+    "relation": 8
+  },
+  "evidence_ref_count": 39,
+  "unique_evidence_block_count": 24,
+  "evidence_text_source_counts": {
+    "raw_text": 39
+  },
+  "evidence_source_surface_counts": {
+    "chandra_ocr": 39
+  },
+  "evidence_block_kind_counts": {
+    "heading": 7,
+    "text": 19,
+    "list_item": 9,
+    "table": 2,
+    "figure": 2
+  },
+  "max_evidence_refs_per_observation": 3,
+  "transcript": {
+    "found": true,
+    "normalization_skipped": true,
+    "read_source_calls": 1,
+    "search_source_calls": 0,
+    "read_evidence_calls": 4,
+    "submit_observation_calls": 32,
+    "read_source_returned_blocks": [
+      40
+    ],
+    "read_evidence_block_ids": [
+      "p001_c0010",
+      "p001_c0012",
+      "p002_c0005",
+      "p002_c0008"
+    ]
+  },
+  "usage": {
+    "request_count": 31,
+    "total_tokens": 776165,
+    "estimated_cost": 0.0417987,
+    "accepted_per_1k_tokens": 0.03993996121958605,
+    "cost_per_accepted_submission": 0.0013483451612903226
+  },
+  "warnings": [
+    {
+      "code": "rejected_submission",
+      "message": "metric_claim payload.value must normalize to a number; use value_min/value_max for ranges",
+      "source_id": "34th_st_busway",
+      "local_observation_id": "metric_daily_bus_riders_34th_st",
+      "observation_kind": "metric_claim"
+    }
+  ]
+}

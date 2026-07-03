@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T22-56-13-269Z_1976810-085e59e4_ingest_201103-34th-cac-summary",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T01:26:57.931Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "project-identity",
+    "decisions": [
+      {
+        "decision_id": "34th-street-project-2011-new",
+        "local_observation_id": "project_34th_street_2011",
+        "decision": "new",
+        "rationale": "Observation resolves to its own base_record_id (project_34th-street-2011) which matches an existing registry record with identical provenance (same source_id 201103_34th_cac_summary), identical payload (same project_name '34th Street Project', same description, same project_type, same status, same borough). Per the rule, when the closest match is the observation's own base_record_id, the decision is 'new' — never link to your own base_record_id.",
+        "evidence_refs": [
+          {
+            "source_id": "201103_34th_cac_summary",
+            "block_id": "p001_c0004",
+            "source_quote": "34th Street Project - improvements on 34th Street, including offset bus lanes, bus bulbs and sidewalk extensions, expanded loading zones, off-board fare collection on M16 and M34 bus routes, additional bus lane camera enforcement."
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-26-24-576Z_2111393-510607d2_canonicalize_2026-06-10t22-56-13-269z-1976810-085e59e4-ingest-201103-34th-cac-summary-project-identity"
+}

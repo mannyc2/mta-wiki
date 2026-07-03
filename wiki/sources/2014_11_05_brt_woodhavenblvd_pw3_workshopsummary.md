@@ -1,0 +1,341 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_2014-11-05-brt-woodhavenblvd-pw3-workshopsummary"
+record_kind: "source"
+display_name: "source_2014_11_05_woodhaven_crossbay_sbs_pw3"
+source_id: "2014_11_05_brt_woodhavenblvd_pw3_workshopsummary"
+source_ids:
+  - "2014_11_05_brt_woodhavenblvd_pw3_workshopsummary"
+local_observation_id: "source_2014_11_05_woodhaven_crossbay_sbs_pw3"
+local_observation_ids:
+  - "source_2014_11_05_woodhaven_crossbay_sbs_pw3"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-10T23:27:40.981Z"
+submission_ids:
+  - "sub_76aac88ad28ac44d"
+payload:
+  content_type: "public open house summary"
+  date: "November 5, 2014"
+  date_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2014-11-05"
+    precision: "day"
+    raw_text: "November 5, 2014"
+  description: "Summary of the third public meeting for Woodhaven/Cross Bay Boulevards SBS project, held November 5, 2014 at Living Word Christian Fellowship in Ozone Park, Queens."
+  published_date_normalized: "2014-11-05"
+  published_date_precision: "day"
+  publisher: "NYC Department of Transportation (DOT) and MTA"
+  title: "Woodhaven / Cross Bay Boulevards Select Bus Service Public Open House Summary"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "2014_11_05_brt_woodhavenblvd_pw3_workshopsummary#p001_c0001"
+    page_number: 1
+    source_id: "2014_11_05_brt_woodhavenblvd_pw3_workshopsummary"
+    source_path: "raw/sources/2014_11_05_brt_woodhavenblvd_pw3_workshopsummary/blocks.jsonl"
+    text_sha256: "sha256:d513b906cb5fe8109916e2abd7605b429cc2b938b6ca46b46335171037ea71bb"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0001"
+    evidence_id: "2014_11_05_brt_woodhavenblvd_pw3_workshopsummary#p002_c0001"
+    page_number: 2
+    source_id: "2014_11_05_brt_woodhavenblvd_pw3_workshopsummary"
+    source_path: "raw/sources/2014_11_05_brt_woodhavenblvd_pw3_workshopsummary/blocks.jsonl"
+    text_sha256: "sha256:04a14f4a4207229784c2ae922bd4149bbe456eda948992d1859e798008da3d9a"
+    text_source: "raw_text"
+---
+
+# Download the open house summary (pdf)
+
+source_id: 2014_11_05_brt_woodhavenblvd_pw3_workshopsummary
+citation: cite block ids exactly as shown in square brackets
+document: 249 block(s)
+
+## Page 1
+
+### [p001_c0001] Woodhaven / Cross Bay Boulevards Select Bus Service
+[p001_c0002] Public Open House Summary | November 5, 2014
+> [p001_c0003] An aerial photograph of a four-lane street intersection. A red-painted bus lane is visible on the left side of the intersection. Several cars and a bus are present on the street. Pedestrians are crossing the street at a crosswalk. Trees and buildings are visible in the background.
+> [p001_c0004] A street-level photograph looking down a road. A red-painted bus lane is on the left side of the road. A red car is in the foreground, and a bus is further down the road. Trees line both sides of the street.
+> [p001_c0005] A street-level photograph looking down a road. A red-painted bus lane is on the left side of the road. A red car is in the foreground, and a bus is further down the road. Trees line both sides of the street.
+> [p001_c0006] An aerial photograph of a four-lane street intersection. A red-painted bus lane is visible on the left side of the intersection. Several cars and a bus are present on the street. Pedestrians are crossing the street at a crosswalk. Trees and buildings are visible in the background.
+> [p001_c0007] An aerial photograph of a four-lane street intersection. A red-painted bus lane is visible on the left side of the intersection. Several cars and a bus are present on the street. Pedestrians are crossing the street at a crosswalk. Trees and buildings are visible in the background.
+> [p001_c0008] A street-level photograph looking down a road. A red-painted bus lane is on the left side of the road. A bus is in the foreground, and a white van is further down the road. Trees line both sides of the street.
+[p001_c0009] +selectbuservice
+[p001_c0010] Woodhaven and Cross Bay Boulevards
+
+## Page 2
+
+[p002_c0001] The third public meeting for the Woodhaven/Cross Bay Boulevards Select Bus Service project took place on November 5, 2014 at the Living Word Christian Fellowship in Ozone Park, Queens. The open-house style meeting included six (6) stations that featured boards outlining the project background, community outreach, and three (3) first-round design concepts for the corridor. Members of the project team led 96 attendees through small group tours of the boards, which culminated at a feedback station where attendees could provide comments, ask questions, and engage in conversation about the design concepts. The following is a summary of each station and feedback received from community members.
+[p002_c0002] Download open house materials (pdf).
+> [p002_c0003] A man in a suit is pointing at a presentation board titled 'Project Overview' while a group of people, including a woman in a teal hoodie, look on. The board contains text and a map.
+> [p002_c0004] Several presentation boards are displayed on stands in a room with a checkered floor. The boards contain text and images related to the project.
+> [p002_c0005] A group of people are looking at presentation boards in a room. The boards contain text and images related to the project.
+> [p002_c0006] A presentation board titled 'CONCEPT THREE' is covered with many sticky notes. The board shows a map and text related to the project. The sticky notes contain various comments and questions.
+### [p002_c0007] STATION 1: PROJECT INTRODUCTION
+[p002_c0008] The Select Bus Service (SBS) program is a partnership between the New York City Department of Transportation (DOT) and the Metropolitan Transportation Authority (MTA). SBS is New York City's brand name for bus rapid transit, a cost-effective approach to transit service that cities around the world have used to make riding the bus more like riding the subway. SBS has been successfully implemented on seven routes serving all five boroughs of New York City and includes features like dedicated bus lanes, off-board fare payment, transit signal priority, enhanced stations, and real-time passenger information to make bus trips faster and more comfortable. Select Bus Service has resulted in:
+[p002_c0009] 15-23% faster bus service
+[p002_c0010] 10% increase in ridership
+[p002_c0011] 95% rider satisfaction
+[p002_c0012] 20% reduction in crashes
+[p002_c0013] Engaging with and hearing feedback from the communities along any proposed Select Bus Service route is crucial to the planning process. Community outreach for the Woodhaven/Cross Bay SBS project includes: 1) a Community Advisory Committee , which consists of elected officials, community boards, representatives from civic organizations, and bus riders who meet throughout the process to provide feedback on project design and the implementation process; 2) Public Workshops and Open Houses , which allow the public to have in-depth conversations with project staff and provide comments on plans and designs; and 3) Community Board and Stakeholder Presentations , which allow for detailed conversations about design and implementation.
+[p002_c0014] Through the outreach process, the community identified several major points of concern, including: bus service and reliability, congestion, safety, and streets that are unaccommodating to all users. The feedback received through the outreach process has greatly informed the planning and design. It is important to note that outreach will continue as the designs develop with more opportunities for conversations about specific details (i.e. turns at a particular intersection or parking regulations on a particular block).
+[p002_c0015] _+selectbuservice Woodhaven and Cross Bay Boulevards_
+[p002_c0016] _1_
+
+## Page 3
+
+### [p003_c0001] STATION 2: EXISTING CONDITIONS ON WOODHAVEN/CROSS BAY BOULEVARDS
+[p003_c0002] Woodhaven and Cross Bay Boulevards present challenges for transit, traffic, and safety as the corridor is heavily used by bus riders, drivers, and pedestrians. The goal of this project is to address all three concerns by: 1) providing faster and more reliable bus service, 2) creating safer streets for all users, and 3) maintaining appropriate traffic flow for local and through drivers. To do this, the project team first looked at some of the existing conditions along the corridor.
+[p003_c0003] Roughly 400,000 residents live within a 15-minute walk of the corridor, 60% of who commute to work by transit. Around 30,000 daily bus riders use the 10 bus routes along the corridor, traveling in large part to the A at Liberty Av, the J Z at Jamaica, and the M R at Queens Blvd. The corridor follows the routes of the existing Q52LTD (Woodside to Arverne) and Q53LTD (Rego Park to Breezy Point). One-way travel times on the Q53LTD can vary by up to 30 minutes (from 55 to 85 minutes) with buses stopped nearly half of the time at red lights (25%) or at bus stops (18%). When the bus is in motion, it is often stuck in traffic at key pinch points around Rockaway/Liberty Blvd and between Park Lane South and Union Turnpike during both the AM peak (northbound: 7-10am) and the PM peak (southbound: 3-7pm).
+[p003_c0004] Safety concerns have been continually expressed throughout the outreach process. Long crossing distances and narrow medians make it difficult to cross the street safely and confusing road organization and signage make it difficult for drivers to navigate the corridor. As a result, the corridor experiences a high volume of crashes. Between 2008 and 2012, six intersections witnessed more than 100 crashes: Queens Blvd (172), Union Tpke (171), Jamaica Ave (144), Rockaway Blvd (131), Metropolitan Ave (130), and 101 Av (122).
+### [p003_c0005] STATION 3: DESIGN OVERVIEW
+[p003_c0006] The project team chose three sample locations along the corridor to show how the three design concepts would look at different locations: Woodhaven Blvd and Metropolitan Av, Woodhaven Blvd and Rockaway Blvd, and Cross Bay Blvd and 157 Av. All locations were evaluated by looking at transit, safety, and traffic. In particular, the project team looked to address the following:
+### [p003_c0007] Transit
+- [p003_c0008] 1. Buses traveling in mixed traffic 2. Bus stops that lack amenities
+### [p003_c0009] Safety
+- [p003_c0010] 3. Long pedestrian crossings with no refuges 4. Wide roadways that encourage speeding
+### [p003_c0011] Traffic
+- [p003_c0012] 5. Varying number of traffic lanes that lack organization 6. Complex roadway design with changing service roads
+[p003_c0013] _Existing: Metropolitan Av_
+[p003_c0014] _Existing: Rockaway/Liberty Avs_
+[p003_c0015] _+selectbuservice_
+[p003_c0016] _Woodhaven and Cross Bay Boulevards_
+[p003_c0017] _2_
+
+## Page 4
+
+### [p004_c0001] STATION 4: DESIGN CONCEPT ONE – OFFSET BUS LANES
+[p004_c0002] Design concept one utilizes offset bus lanes, a fairly standard SBS treatment, where the bus lane is located one lane away from the curb. This treatment preserves curbside parking and loading access and maintains three general traffic lanes in each direction. Service roads would be dedicated to local access to homes and driveways, parking, and buses only.
+[p004_c0003] Bus bulbs, curb extensions that “bulb out” to meet the bus lane, would be constructed at SBS stations allowing for quicker and easier boarding and more waiting space at bus stations. Local bus stops would remain at the curbside. Medians and neckdowns (curb extensions at intersections) would be implemented throughout the corridor to shorten crossing distances and create safe crossing refuges.
+### [p004_c0004] Examples
+> [p004_c0005] A photograph of a city street with a bus stop. A bus is stopped at a designated bus bulb station, which is a curb extension that meets the offset bus lane. The bus lane is separated from the curb by a service road. Other vehicles are visible in the traffic lanes.
+[p004_c0006] _Metropolitan Av_
+> [p004_c0007] A photograph of a city street with a bus stop. A bus is stopped at a designated bus bulb station, which is a curb extension that meets the offset bus lane. The bus lane is separated from the curb by a service road. Other vehicles are visible in the traffic lanes.
+[p004_c0008] _Rockaway/Liberty Avs_
+> [p004_c0009] A diagram of a city street layout for Metropolitan Av. It shows a central bus lane with offset lanes on either side. Various features are highlighted with arrows and labels: left turns, right turns, parking and deliveries, offset bus lanes, SBS bus bulb stations, local and express buses, and medians and neckdowns.
+### [p004_c0010] Left turns
+[p004_c0011] are made from left-turn bays at selected intersections and are prohibited elsewhere
+### [p004_c0012] Right turns
+[p004_c0013] are made from the bus lane
+### [p004_c0014] Parking & deliveries
+[p004_c0015] cross the offset bus lane to access the designated curb space
+### [p004_c0016] Offset bus lanes
+[p004_c0017] provide a designated lane for all buses; buses must yield to parking and turning vehicles
+### [p004_c0018] SBS bus bulb stations
+[p004_c0019] extend the sidewalk out to the bus lane at SBS stations, creating additional space for bus riders and pedestrians
+### [p004_c0020] Local & express buses
+[p004_c0021] stop at the curb adjacent to the SBS bus bulb stations
+### [p004_c0022] Medians and neckdowns
+[p004_c0023] reduce pedestrian crossing distances and create a safe crossing refuge
+[p004_c0024] _Metropolitan Av_
+[p004_c0025] _+selectbuservice_
+[p004_c0026] _Woodhaven and Cross Bay Boulevards_
+[p004_c0027] _3_
+
+## Page 5
+
+### [p005_c0001] Parking and deliveries at the curb
+### [p005_c0002] Expanded medians
+[p005_c0003] reduce pedestrian crossing distances and add public space / greening to the intersection
+### [p005_c0004] Simplified traffic patterns
+[p005_c0005] under the elevated subway tracks improve traffic organization and safety
+> [p005_c0006] An aerial map of the Rockaway/Liberty Avs intersection. It shows a grid of streets with various colored zones: red for parking, blue for bus lanes, and green for pedestrian crossings. Arrows point from the text labels to specific features on the map: one to a parking area, one to a median, and one to a traffic lane.
+[p005_c0007] _Rockaway/Liberty Avs_
+### [p005_c0008] Parking & deliveries
+[p005_c0009] cross the offset bus lane to access the designated curb space
+### [p005_c0010] Expanded medians
+[p005_c0011] reduce pedestrian crossing distances and create a safe crossing refuge
+### [p005_c0012] SBS bus bulb stations
+[p005_c0013] extend the sidewalk out to the bus lane at SBS stations, creating additional space for bus riders and pedestrians
+> [p005_c0014] An aerial map of the Cross Bay Blvd/157th Av intersection. It shows a grid of streets with various colored zones: red for parking, blue for bus lanes, and green for pedestrian crossings. Arrows point from the text labels to specific features on the map: one to a parking area, one to a median, and one to a bus bulb station.
+[p005_c0015] _Cross Bay Blvd/157th Av_
+[p005_c0016] The following is a summary of feedback shared about Concept One:
+### [p005_c0017] Strengths
+- [p005_c0018] • Improvement over status quo, but still leaves buses vulnerable to blockage ✓✓ • Keeps major traffic flow stable by keeping local traffic, parking, and deliveries in service road ✓ • Less capital money, less time to construct • Median refuge could make people safer but it depends on the system of timely traffic signals and countdown walkway signs • Concept 1 is best because of curbside loading and less distance to cross street • This is a good design for Cross Bay Boulevard ✓✓✓ • Bus bulb stations would be great for SBS but local buses will have to go around SBS buses ✓ • Easy to upgrade to main line bus lanes (Design Concept 2) if necessary/popular
+### [p005_c0019] Issues
+- [p005_c0020] • Too much free access for drivers to block bus lanes for right turns, deliveries, and finding parking ✓✓✓✓ • Right-turning traffic in front of bus lanes can cause interference with the bus like in Manhattan ✓ • Conflicts with driveways and the bus lanes are not good for buses or drivers ✓✓ • This concept is less desirable for bus operations. The interference with right-turning vehicles at intersection is an issue (MTA Bus operator) • Will confuse local traffic (on service roads) and make travel confusing
+[p005_c0021] ✓ = number of times mentioned
+[p005_c0022] _+selectbuservice_
+[p005_c0023] _Woodhaven and Cross Bay Boulevards_
+[p005_c0024] _4_
+
+## Page 6
+
+### [p006_c0001] STATION 5: DESIGN CONCEPT TWO – MAIN ROAD BUS LANES
+[p006_c0002] The main road design creates curbside bus lanes within the main road with boarding taking place at expanded service road medians. Service roads would be created between Eliot Av and Park Lane South, where they do not currently exist, and would be maintained in places along the corridor where they do exist. SBS and local stations would board at the expanded median which will create added space for bus shelters, plantings, and pedestrian refuges. Medians would shorten crossing distance for pedestrians and help to calm traffic in the service road.
+[p006_c0003] This design would maintain three traffic lanes, two thru lanes in the main road and one lane in the service road. South of Rockaway Blvd/Liberty Av, the bus lanes would continue without service roads in the offset bus lane configuration (as in Concept 1) with bus bulbs at station locations. Left-turn bays at non-stations would be added at select intersections while left-turns would be banned at others to improve traffic flow.
+### [p006_c0004] Examples
+[p006_c0005] _Metropolitan Av_
+[p006_c0006] _Rockaway/Liberty Avs_
+### [p006_c0007] Left turns
+[p006_c0008] are made from left-turn bays at selected intersections and are prohibited elsewhere
+### [p006_c0009] Right turns
+[p006_c0010] are made from the service road
+### [p006_c0011] Slip openings
+[p006_c0012] allow vehicles to cross the bus lane to access the service roads
+### [p006_c0013] Main road bus lanes
+[p006_c0014] provide a designated lane for all buses; no conflicts from turning vehicles
+### [p006_c0015] Bus stations
+[p006_c0016] create designated platforms for bus riders, pedestrian refuges at intersections, and provide opportunities for greening
+### [p006_c0017] Calmed service roads
+[p006_c0018] organize thru and local traffic and shorten pedestrian crossing distances
+### [p006_c0019] Parking & deliveries
+[p006_c0020] occur in the service lane
+[p006_c0021] _Metropolitan Av_
+[p006_c0022] _+selectbuservice_
+[p006_c0023] _Woodhaven and Cross Bay Boulevards_
+[p006_c0024] _5_
+
+## Page 7
+
+### [p007_c0001] Consistent roadway configuration
+[p007_c0002] along Woodhaven Boulevard makes the corridor easier to navigate as a driver and a pedestrian
+### [p007_c0003] Expanded medians
+[p007_c0004] reduce pedestrian crossing distances and add public space / greening to the intersection
+### [p007_c0005] Buses and thru traffic
+[p007_c0006] travel in the center of the roadway at busy intersections, avoiding conflicts from turning vehicles, deliveries, and parking
+### [p007_c0007] Parking and delivery space
+[p007_c0008] is created at the curb in front of businesses
+[p007_c0009] _Rockaway/Liberty Avs_
+[p007_c0010] Cross Bay Boulevard is too narrow for service roads so the "offset bus lane" configuration would be proposed
+### [p007_c0011] Parking & deliveries
+[p007_c0012] cross the offset bus lane to access the designated curb space
+### [p007_c0013] Expanded medians
+[p007_c0014] reduce pedestrian crossing distances and create a safe crossing refuge
+### [p007_c0015] SBS bus bulb stations
+[p007_c0016] extend the sidewalk out to the bus lane at SBS stations, creating additional space for bus riders and pedestrians
+[p007_c0017] _Cross Bay Blvd/157th Av_
+[p007_c0018] The following is a summary of feedback shared about Concept Two:
+### [p007_c0019] Strengths
+- [p007_c0020] • Concept 2 is a good solution because it separates buses from auto traffic ✓✓ • Provides good service for both drivers and bus riders and improves safety for pedestrians since they do not have to cross the entire street to board the bus ✓✓✓ • Traffic, especially for the service roads, seems to flow more giving room for parking and local road access • Perfect balance for transit and pedestrian access • Will calm service roads and remove bike/bus conflict • Creates comfortable and safe bus stations • Would work great with TSP and real-time bus/rail information • Safer and keeps parking • Best of the three concepts ✓✓✓ • Great choice: keeps Woodhaven consistent with main and service roads, slows cars down for safety, keeps parking and right/left turns ✓✓
+### [p007_c0021] Issues
+- [p007_c0022] • Seems like there is limited access within service road • This concept will be very expensive and will take a long time to construct ✓ • Problematic at Rockaway and Liberty, with potential jaywalking from subway to stops • It could cause major congestion on the main road, especially during rush hours as well as the service road, specifically when traffic gets slowed down by deliveries and parking ✓✓ • Needs more substantial median in the main road • Concerned about timing of crosswalk lights and ability to make right turns before people cross • Disapprove the removal of traffic lanes along Cross Bay Blvd ✓ • Concerned by the need to cross 3 separate roadways • Concerned by the banning of left turns at selected locations along the corridor ✓✓✓
+[p007_c0023] ✓ = number of times mentioned
+[p007_c0024] _+selectbuservice_
+[p007_c0025] _Woodhaven and Cross Bay Boulevards_
+[p007_c0026] _6_
+
+## Page 8
+
+### [p008_c0001] STATION 6: DESIGN CONCEPT THREE – MEDIAN BUS LANES
+[p008_c0002] Median bus lanes allow buses to operate without curbside conflicts such as right-turning vehicles, double-parked cars, and cars waiting to parallel park. SBS and local bus stations are located on widened center medians fitted with shelters, plantings, and ample waiting space. Passing lanes are located at station locations along Woodhaven Blvd to allow for the SBS to bypass local buses at local-only stops. No passing lanes would be included along Cross Bay Blvd as the right-of-way there is narrower.
+[p008_c0003] Service roads would be removed where they currently exist to make way for the necessary three lanes of thru-traffic in each direction. Parking restrictions would be implemented at select locations during rush hour to accommodate three lanes of thru-traffic. Right turns would continue to be made from the right-most lane. All left-turns would be regulated by left-turn only signals to ensure safe turning across bus lanes.
+### [p008_c0004] Examples
+[p008_c0005] _Metropolitan Av_
+[p008_c0006] _Rockaway/Liberty Avs_
+### [p008_c0007] Left turns
+[p008_c0008] are made from left-turn bays at selected intersections and are prohibited at other locations; requires left-turn only signal to cross the busway
+### [p008_c0009] Right turns
+[p008_c0010] are made from the rightmost lane
+### [p008_c0011] Parking & deliveries
+[p008_c0012] occur in the curb lane
+### [p008_c0013] Rush hour parking restrictions
+[p008_c0014] may be required in locations
+### [p008_c0015] Passing bus lanes
+[p008_c0016] allow SBS and Express buses to bypass Local buses
+### [p008_c0017] Median bus stations
+[p008_c0018] create designated platforms for bus riders and pedestrian refuges at intersections
+### [p008_c0019] Median bus lanes
+[p008_c0020] is a designated facility for all buses without conflict from other traffic
+[p008_c0021] _Metropolitan Av_
+[p008_c0022] _+selectbuservice_
+[p008_c0023] _Woodhaven and Cross Bay Boulevards_
+[p008_c0024] _7_
+
+## Page 9
+
+### [p009_c0001] The following is a summary of feedback shared about Concept Three:
+### [p009_c0002] Median bus stations
+[p009_c0003] reduce pedestrian crossing distances and create a safe crossing refuge
+### [p009_c0004] Expanded medians
+[p009_c0005] reduce pedestrian crossing distances and add public space / greening to the intersection
+### [p009_c0006] Simplified traffic patterns
+[p009_c0007] under the elevated subway tracks improve traffic organization and safety
+[p009_c0008] _Rockaway/Liberty Avs_
+### [p009_c0009] Median bus lanes
+[p009_c0010] with no passing lane on Cross Bay Blvd where the right-of-way is narrower than Woodhaven Blvd
+### [p009_c0011] Median bus stations
+[p009_c0012] provide a high-quality bus stop for bus customers and a safe crossing refuge for pedestrians
+### [p009_c0013] Rush hour parking restrictions
+[p009_c0014] on the NB side of Cross Bay Blvd
+### [p009_c0015] Full-time parking & deliveries
+[p009_c0016] occur in the SB curb lane
+[p009_c0017] _Cross Bay Blvd/157th Av_
+### [p009_c0018] Strengths
+- [p009_c0019] • Standardizes corridor so that there is less convergence/divergence as the road narrows/widens ✓✓✓ • Good option for Woodhaven Blvd portion of the corridor • Relieves congestion along major streets along this corridor • Most effective from a bus operations point of view • Best option to get people out of cars and on the bus ✓ • Provides the most benefits to bus riders ✓ • Would work great with TSP and real time information • Enhanced pedestrian safety • Clearly defines where vehicles should travel on road ✓✓ • Allows bus driver to focus on driving safely and not on passengers looking for change/MetroCard
+### [p009_c0020] Issues
+- [p009_c0021] • Fear of option creating a dangerous condition? • Under existing conditions, people are always running to the bus stops in order to catch the bus. Now they will be running to the medians, which introduce a dangerous situation for pedestrians, especially school children • Center median design can create an unsafe condition for users, particularly seniors, waiting for buses and expose them to cars/trucks causing possible accidents ✓✓ • Looks like it would cause more traffic problems • Possible pedestrian safety issues with center bus lanes and drop offs ✓✓ • Easy solution for SBS bus not so easy for local buses • Concerned about losing parking and some important left turns • Cannot use bus lanes on off hours • Too many passing lanes required for local bus stops at non SBS spots ✓ • Seems that medians would be narrow at some sections along the corridor
+[p009_c0022] ✓ = number of times mentioned
+[p009_c0023] _+selectbuservice_
+[p009_c0024] _Woodhaven and Cross Bay Boulevards_
+[p009_c0025] _8_
+
+## Page 10
+
+### [p010_c0001] GENERAL FEEDBACK
+### [p010_c0002] Traffic
+- [p010_c0003] • The Pathmark on Atlantic Avenue is a major destination supermarket for the surrounding community ◦ Need to ensure that vehicles coming from Atlantic Avenue via the service roads are able to safely access the main road (or wherever they need to be, depending on the concept). • Banning the left turn at Metropolitan is difficult as it's a major connection ◦ Much easier to ban the turn at Union Turnpike and have drivers use Metropolitan to access the area • Adding red light and speed cameras to the corridor might discourage people from driving on it • Suggestion to look at diversions to adjacent roads • Including left turn bays makes the roadway safer by limiting the total through lanes and reducing speeding ✓✓ • Unsynchronized traffic signals are problem on the corridor ✓✓ • Particular concerns about how left turns will be accommodated under all concepts, especially NB at Rockaway Blvd and SB at Liberty Av ✓✓✓ • Woodhaven Blvd should not be a truck route • Banning left turns at selected locations and making vehicles make additional right-turns would translate to additional travel time for cars ✓
+### [p010_c0004] Transit
+- [p010_c0005] • Construction of SBS needs to be accelerated • TSP is absolutely needed! • Install bus lane cameras ✓✓ • Right-turning vehicles in the bus lane will delay buses ✓✓✓✓ • DOT should consider creating an at-grade bus-only railroad crossing at Union Turnpike • Look at the potential to allow HOVs in bus lanes to encourage carpooling • Better to look at designs that are proven success for NYC (Option 1 and Option 2) ✓✓
+- [p010_c0006] • The MTA should consider left-side doors for Option 3 ✓ • Would like to see separate traffic signals for vehicles, bikes, and pedestrians • Need to make sure the stations are wide enough, especially at the subway transfer locations. • Bus crowding and bunching is a major issue • MTA supervision is needed at Liberty Street ◦ It is so crowded that buses often can't even stop at their designated stop, forcing people to walk into traffic to board the bus • Down the middle (option 3) might be the way to go • Neither concepts benefit residents in Lindenwood; need a stop near Cross Bay and 153 Av • 116th Street is a major bus stop only because people walk "back to that stop" so that they can actually get on the bus ✓✓ • Consider terminating the Q53 at Beach 108th Street, where it would connect to the ferry • Desire to see the Q52 and Q53 extended to LaGuardia Airport • Please retain, or add, more stops to the Q52, extending to Far Rockaway ✓✓✓✓✓ • Consider extending Q53 to Breezy Point • Consider an extension of the Q53 to Penn Station (via Long Island Expressway) • Maintain or increase all local service at current headways (e.g., Q11 and Q21) and consider more of them in the afternoon ✓✓✓✓✓ • Add express buses to Lower Manhattan ✓✓ • There is a real need for a "three transfer model" for SBS corridors: Local bus to SBS to subway on one fare ✓✓ • Suggestion to look at double decker buses • Consider elevated or depressed structures for buses to get them out of traffic • Incorporate the Rockaway Beach Line into these plans. If Queens has more options we can help the city overall develop faster and become more egalitarian ✓✓
+[p010_c0007] ✓ = number of times mentioned
+[p010_c0008] _+selectbuservice_
+[p010_c0009] _Woodhaven and Cross Bay Boulevards_
+[p010_c0010] _9_
+
+## Page 11
+
+### [p011_c0001] Parking
+- [p011_c0002] • Parking on Cross Bay Blvd is important and should be maintained ✓✓ • If rush hour regulations are necessary on the SB side of Cross Bay Blvd, should add metered parking to the side streets, particularly near schools and day cares where there is a lot of morning drop-off activity
+### [p011_c0003] Outreach
+- [p011_c0004] • Should reach out to more of the schools along the corridor, particularly engaging with the parents' groups and/or students themselves (though student government) to get more insight from the students: ◦ How do students get to school? ◦ Who has the longest trip to school? • Desire for more meetings in Rockaways • Should talk to merchants, particularly along Cross Bay section of corridor
+### [p011_c0005] Other
+- [p011_c0006] • Need east-west bus connection between Queens and Brooklyn • Need more buses and no fare hike • There are no good parallel street options for cyclist and this project should consider adding bicycle facilities to the design ✓✓ • Need better ways to punish drivers who park in the bus lane • Suggest looking into building a subway underneath Woodhaven Blvd • Re-time the traffic signals ✓
+### [p011_c0007] QUESTIONS
+### [p011_c0008] How will fare collection work? Will the Local buses also have off-board fare collection?
+[p011_c0009] Before boarding the bus, customers must pay their fares at a Select Bus Service station using the MetroCard or coin machine where they will receive a ticket as proof of payment. When the bus arrives, customers may enter or exit through any of the bus doors, holding on to their ticket throughout the duration of their trip. Tickets may be requested as proof of payment by MTA inspectors. Riders without a ticket will be subject to a $100 fare evasion summons.
+[p011_c0010] Typically, Local buses do not have off-board fare collection; however, under Concepts 2 and 3, options for Local bus fare collection would be considered since Local buses will share a station with the SBS.
+### [p011_c0011] How do you enforce a bus lane, particularly in a service lane, with the need for cars to access driveways and businesses?
+[p011_c0012] NYPD regularly patrols bus lanes and issues both moving and parking violations to bus lane violators. Vehicles using the service road bus lane to access driveways and businesses would have to enter the service road from the immediately preceding intersection and make a right turn at the following intersection.
+### [p011_c0013] Will all buses now using Woodhaven Blvd be allowed in the bus lane, including resort world buses?
+[p011_c0014] All buses will be able to use the bus lanes along the corridor as shown in design options one and two. Only MTA buses will be able to use the bus lanes in option three as the use of median lanes requires distinctive training for bus drivers.
+### [p011_c0015] Will local service increase or decrease?
+[p011_c0016] Service patterns and service levels on all bus routes on the corridor (SBS, local, and express) are being reviewed as part of the SBS planning process. It is currently anticipated that there will initially be little to no change in local service levels. However, following implementation of SBS, ridership will be monitored as riders adjust to the new service options, and adjustments may be made to service levels to commensurate with ridership.
+[p011_c0017] _+selectbuservice_
+[p011_c0018] _Woodhaven and Cross Bay Boulevards_
+[p011_c0019] _10_
+
+## Page 12
+
+### [p012_c0001] Which bus stops will be eliminated on the SBS route?
+[p012_c0002] Stops for the SBS will be roughly the same as the current limited stops on the Q52/Q53LTD. As the planning process for the Woodhaven/Cross Bay Blvds SBS continues, we will continue to work with the community to define the details of the project, including determining stop locations.
+### [p012_c0003] Who is on the Community Advisory Committee?
+[p012_c0004] The Community Advisory Committee includes elected officials, community boards, bus riders, residents, neighborhood/civic organizations, and major institutions. If you would like to be involved in the CAC, please contact Krystin Hence at brt@dot.nyc.gov .
+### [p012_c0005] How is project implementation and maintenance funded?
+[p012_c0006] NYCDOT and the MTA are planning to apply for a Federal Grant in order to fund the capital costs of the project. Once the project is built, NYCDOT will be responsible for maintaining the road.
+### [p012_c0007] Is it possible that the MetroCard fare will increase to fund these changes?
+[p012_c0008] The fare to ride a SBS bus is the same fare as local buses and the subway. Fare increases are not related to Select Bus Service funding.
+### [p012_c0009] How will medians be built over the LIRR north of Union Tpke?
+[p012_c0010] As the planning process continues and a design concept is chosen, the project team will continue to refine the details of the plans and designs, looking at the corridor on a block by block, intersection by intersection basis. Designs for the LIRR overpass will be addressed in detail and the project team will work with the community to produce final design solutions for this area of the corridor.
+### [p012_c0011] Where did the data come from that says 60% of people use transit and that 43% of households don't own cars?
+[p012_c0012] The data is from the American Community Survey ( http://www.census.gov/acs ), an ongoing survey administered by the U.S. Census Bureau. The analysis was based on the census tracts that are within a half-mile of the corridor.
+> [p012_c0013] A photograph showing a multi-lane road with traffic, including cars and a bus, and a concrete median barrier in the foreground.
+> [p012_c0014] A photograph taken from an elevated position, looking down at a street intersection with a bus stop, traffic lights, and a building in the background.
+### [p012_c0015] NEXT STEPS 2014-2015
+[p012_c0016] Continue community outreach by meeting with stakeholder groups and individuals along the corridor.
+### [p012_c0017] LATE 2014 THROUGH 2016
+[p012_c0018] Select a design direction and develop details for the preferred design with continued community input.
+### [p012_c0019] 2017
+[p012_c0020] Implement Select Bus Service
+[p012_c0021] _+selectbuservice_
+[p012_c0022] _Woodhaven and Cross Bay Boulevards_
+[p012_c0023] _11_
+
+## Page 13
+
+### [p013_c0001] STAY IN TOUCH!
+[p013_c0002] For more information, please visit us at www.nyc.gov/brt or contact Krystin Hence, NYCDOT Outreach Coordinator, at brt@nyc.dot.gov or (212) 839-6684.
+[p013_c0003] +selectbuservice
+[p013_c0004] Woodhaven and Cross Bay Boulevards

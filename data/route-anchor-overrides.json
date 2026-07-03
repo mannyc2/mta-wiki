@@ -1,0 +1,4 @@
+{
+  "_doc": "Reviewed manual gtfs_route_id -> canonical route record overrides for route_anchors.jsonl. Keep empty unless the deterministic anchor rule picks the wrong true-route record.",
+  "overrides": {}
+}

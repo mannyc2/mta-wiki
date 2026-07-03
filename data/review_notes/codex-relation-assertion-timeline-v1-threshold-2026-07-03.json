@@ -1,0 +1,124 @@
+{
+  "note_id": "codex-relation-assertion-timeline-v1-threshold-2026-07-03",
+  "date": "2026-07-03",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed profiles",
+    "Pioneer/OpenAI/DeepSeek/vLLM/chandra model calls"
+  ],
+  "bucket": "v1_route_scoped_assertion_status_timeline_context",
+  "implemented_change": {
+    "summary": "Drive timeline_context under the v1 10% unknown threshold with deterministic work-plan agenda and public-meeting timeline lanes.",
+    "code_paths": [
+      "packages/pipeline/src/records/assertion-qualifiers.ts",
+      "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+    ],
+    "rules": [
+      {
+        "name": "work_plan_agenda_items",
+        "relation_family": "timeline_context",
+        "relation_kinds": [
+          "has_agenda_item",
+          "subject_of_agenda_item"
+        ],
+        "status": "planned",
+        "required_signals": [
+          "citing source record exists and is work-plan/workplan shaped",
+          "relation is an agenda item edge with event/entity/claim/metric-claim shape already present in the canonical records",
+          "dated agenda-item event when the object is the event",
+          "no no-item/no-meeting/postponed/deferred/cancelled language"
+        ]
+      },
+      {
+        "name": "dated_public_meeting_timeline_events",
+        "relation_family": "timeline_context",
+        "relation_kind": "has_timeline_event",
+        "statuses": [
+          "delivered",
+          "planned"
+        ],
+        "required_signals": [
+          "event object is public_engagement with a board/committee/community/public meeting kind",
+          "subject is a source, entity, corridor, or event",
+          "citing source record exists and is not work-plan/workplan shaped",
+          "event and citing-source dates are comparable month/day dates for source-relative planned/delivered classification",
+          "explicit held/minutes wording only falls back when comparable dates are absent",
+          "no no-item/no-meeting/postponed/deferred/cancelled/lack-of-quorum language"
+        ],
+        "classification": [
+          "event date on or before source date is delivered unless the text is still an approval/vote agenda request",
+          "event date after source date is planned only with scheduled/will/recommended/to-approve/to-adopt/to-vote/to-consider/for-approval/for-board-action language"
+        ]
+      }
+    ]
+  },
+  "baseline": {
+    "timeline_context_total": 3626,
+    "timeline_context_unknown": 419,
+    "timeline_context_unknown_pct": 11.6,
+    "has_timeline_event_unknown": 287,
+    "has_agenda_item_unknown": 42,
+    "subject_of_agenda_item_unknown": 18
+  },
+  "after": {
+    "validate_issues": 0,
+    "relation_assertion_unknown_total": 2952,
+    "timeline_context_total": 3626,
+    "timeline_context_unknown": 327,
+    "timeline_context_unknown_pct": 9.0,
+    "has_timeline_event_unknown": 249,
+    "has_agenda_item_unknown": 6,
+    "subject_of_agenda_item_unknown": 0,
+    "has_timeline_event_planned": 1170,
+    "has_timeline_event_delivered": 522,
+    "has_agenda_item_planned": 48,
+    "subject_of_agenda_item_planned": 18
+  },
+  "delta": {
+    "relation_assertion_unknown_total": -92,
+    "timeline_context_unknown": -92,
+    "timeline_context_unknown_pct_points": -2.6,
+    "has_timeline_event_unknown": -38,
+    "has_agenda_item_unknown": -36,
+    "subject_of_agenda_item_unknown": -18
+  },
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+      "result": "passed: 93 tests, 483 expect calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "passed"
+    },
+    {
+      "command": "bun run materialize",
+      "result": "passed: Materialized 93067/98119 submissions; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "bun run validate",
+      "result": "passed: Issues 0"
+    },
+    {
+      "command": "threshold SQL",
+      "result": "timeline_context 327/3626 unknown, 9.0%"
+    }
+  ],
+  "intentionally_unresolved": [
+    "Work-plan no-item/no-meeting agenda rows remain unknown.",
+    "Meeting timeline edges with future event dates and no explicit future/scheduled signal remain unknown.",
+    "Approval/vote agenda-request text remains unknown when the meeting date is on or before the source date.",
+    "Small residual non-agenda/non-has_timeline_event relation kinds remain outside this lane because the family clears the v1 threshold."
+  ],
+  "next_candidate_lanes": [
+    "Continue Plan 004 with claim_context, the only remaining target family above 10%.",
+    "Do not broaden timeline_context further for v1 unless downstream consumers expose a specific residual timeline gap."
+  ]
+}

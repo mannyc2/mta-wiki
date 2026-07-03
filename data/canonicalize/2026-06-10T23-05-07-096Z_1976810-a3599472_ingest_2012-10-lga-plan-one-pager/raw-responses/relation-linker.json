@@ -1,0 +1,585 @@
+{
+  "run_id": "2026-06-10T23-05-07-096Z_1976810-a3599472_ingest_2012-10-lga-plan-one-pager",
+  "packet_id": "relation-linker",
+  "generated_at": "2026-06-11T03:02:17.191Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "relation-linker",
+    "decisions": [
+      {
+        "decision_id": "rel-001-m60-20pct-faster",
+        "local_observation_id": "metric_m60_sbs_20pct_faster_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_125th-laguardia-sbs",
+            "object_id": "metric_m60-sbs-20pct-faster-2012",
+            "description": "M60 SBS route travel time improvement: 20% faster to LGA",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p001_c0012",
+                "source_quote": "M60 SBS route: 20% faster to LGA"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p001_c0012 explicitly names 'M60 SBS route' and states the 20% faster metric.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0012",
+            "source_quote": "M60 SBS route: 20% faster to LGA"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-002-bronx-sbs-40pct-faster",
+        "local_observation_id": "metric_proposed_bronx_sbs_40pct_faster_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_proposed-bronx-sbs-lga-2012",
+            "object_id": "metric_proposed-bronx-sbs-40pct-faster-2012",
+            "description": "Proposed Bronx SBS route travel time improvement: 40% faster",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p001_c0013",
+                "source_quote": "Proposed Bronx SBS route: 40% faster"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p001_c0013 explicitly names 'Proposed Bronx SBS route' and states the 40% faster metric.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0013",
+            "source_quote": "Proposed Bronx SBS route: 40% faster"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-003-queens-sbs-over40pct-faster",
+        "local_observation_id": "metric_proposed_queens_sbs_over40pct_faster_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_proposed-queens-sbs-lga-2012",
+            "object_id": "metric_proposed-queens-sbs-over40pct-faster-2012",
+            "description": "Proposed Queens SBS route: over 40% faster than current local service",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p001_c0021",
+                "source_quote": "Over 40% faster than current local service"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p001_c0021 is in the Queens proposed route section and gives the over-40% faster metric for the proposed Queens SBS.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0021",
+            "source_quote": "Over 40% faster than current local service"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-004-m60-10000-riders-125th",
+        "local_observation_id": "metric_m60_10000_daily_riders_125th_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "route_125th-laguardia-sbs",
+            "object_id": "metric_m60-10000-daily-riders-125th-2012",
+            "description": "Nearly 10,000 daily riders of the M60 route traveling entirely on 125th Street",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p002_c0008",
+                "source_quote": "nearly 10,000 daily riders of the M60 route are traveling entirely on 125th Street"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p002_c0008 explicitly names 'the M60 route' and states the nearly 10,000 daily riders metric.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p002_c0008",
+            "source_quote": "nearly 10,000 daily riders of the M60 route are traveling entirely on 125th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-005-32000-riders-125th-corridor",
+        "local_observation_id": "metric_32000_daily_riders_all_routes_125th_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_metric",
+            "subject_id": "corridor_125th-street-manhattan",
+            "object_id": "metric_32000-daily-riders-all-routes-125th-2012",
+            "description": "More than 32,000 daily riders of all routes on the 125th Street corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p002_c0008",
+                "source_quote": "more than 32,000 daily riders of all routes on this corridor"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p002_c0008 refers to 'this corridor' meaning 125th Street, and states the 32,000+ daily riders metric.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p002_c0008",
+            "source_quote": "more than 32,000 daily riders of all routes on this corridor"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-006-study-goals",
+        "local_observation_id": "claim_study_goals_lga_access_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "claim_study-goals-lga-access-2012",
+            "description": "Study goals for the LaGuardia Airport Access Alternatives Analysis",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p001_c0006",
+                "source_quote": "▪ Improve transit access to LGA ▪ Improve transit service in neighborhoods near LGA ▪ Provide transit improvements at a low cost and in a short timeframe"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p001_c0006 lists the three study goals under the 'Study Goals' heading for the LGA Access AA project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0006",
+            "source_quote": "▪ Improve transit access to LGA ▪ Improve transit service in neighborhoods near LGA ▪ Provide transit improvements at a low cost and in a short timeframe"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-007-improved-reliability-mn-bx",
+        "local_observation_id": "claim_improved_reliability_manhattan_bronx_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "claim_improved-reliability-manhattan-bronx-2012",
+            "description": "Improved reliability benefit of Manhattan/Bronx SBS improvements",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p001_c0014",
+                "source_quote": "Improved reliability"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p001_c0014 states 'Improved reliability' as a benefit of the Manhattan/Bronx proposed SBS improvements under the LGA Access AA project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0014",
+            "source_quote": "Improved reliability"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-008-connectivity-queens",
+        "local_observation_id": "claim_improved_connectivity_queens_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_proposed-queens-sbs-lga-2012",
+            "object_id": "claim_improved-connectivity-queens-2012",
+            "description": "Improved regional connectivity via LIRR and subways as a benefit of the proposed Queens SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p001_c0022",
+                "source_quote": "Improved regional connectivity via LIRR and subways"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p001_c0022 is listed under the Queens proposed route Benefits section, naming this connectivity improvement.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0022",
+            "source_quote": "Improved regional connectivity via LIRR and subways"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-009-local-reliability-queens",
+        "local_observation_id": "claim_improved_local_route_reliability_queens_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "route_proposed-queens-sbs-lga-2012",
+            "object_id": "claim_improved-local-route-reliability-queens-2012",
+            "description": "Improved local route reliability as an improvement feature of the proposed Queens SBS",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p001_c0025",
+                "source_quote": "Improved local route reliability"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p001_c0025 is listed under the Queens proposed route Improvement Features, naming this reliability improvement.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0025",
+            "source_quote": "Improved local route reliability"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-010-air-passenger-patterns",
+        "local_observation_id": "claim_air_passenger_travel_patterns_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "claim_air-passenger-travel-patterns-2012",
+            "description": "Market research finding: most LGA air passengers originate in Manhattan core",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p002_c0005",
+                "source_quote": "Most air passengers originate in the Manhattan core and currently travel by taxi or hired vehicle."
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p002_c0005 is market research presented in the LGA Access AA handout about air passenger travel patterns.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p002_c0005",
+            "source_quote": "Most air passengers originate in the Manhattan core and currently travel by taxi or hired vehicle."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-011-leisure-travel-growing",
+        "local_observation_id": "claim_leisure_travel_growing_lga_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "claim_leisure-travel-growing-lga-2012",
+            "description": "Market research finding: leisure travel is a growing market at LGA",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p002_c0006",
+                "source_quote": "Leisure travel is a growing market at LGA, and leisure travelers are more likely to ride transit."
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p002_c0006 is market research presented in the LGA Access AA handout about leisure travel trends.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p002_c0006",
+            "source_quote": "Leisure travel is a growing market at LGA, and leisure travelers are more likely to ride transit."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-012-employee-commute-patterns",
+        "local_observation_id": "claim_airport_employee_commute_patterns_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_claim",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "claim_airport-employee-commute-patterns-2012",
+            "description": "Market research finding about LGA airport employee commute patterns",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p002_c0011",
+                "source_quote": "Most airport employees who commute by transit live in Queens, Upper Manhattan, or the Bronx."
+              },
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p002_c0012",
+                "source_quote": "Many employees ride transit, primarily the M60 and Q33. Shift times impact the ability to use transit"
+              }
+            ]
+          }
+        ],
+        "rationale": "Blocks p002_c0011 and p002_c0012 present market research from the 2011 Bus Rider Survey about airport employee commute patterns for the LGA Access AA project.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p002_c0011",
+            "source_quote": "Most airport employees who commute by transit live in Queens, Upper Manhattan, or the Bronx."
+          },
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p002_c0012",
+            "source_quote": "Many employees ride transit, primarily the M60 and Q33. Shift times impact the ability to use transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-013-bus-rider-survey-jun2011",
+        "local_observation_id": "event_bus_rider_survey_jun2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "event_bus-rider-survey-jun2011",
+            "description": "Bus Rider Survey conducted June 2011 as part of LGA Access AA public outreach",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p002_c0014",
+                "source_quote": "▪ Bus Rider Survey: June 2011"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p002_c0014 lists Bus Rider Survey: June 2011 under the Public Outreach section of the LGA Access AA handout.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p002_c0014",
+            "source_quote": "▪ Bus Rider Survey: June 2011"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-014-employer-interviews-fall2011",
+        "local_observation_id": "event_employer_interviews_fall2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "event_employer-interviews-fall2011",
+            "description": "Employer Interviews conducted Fall 2011 as part of LGA Access AA public outreach",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p002_c0014",
+                "source_quote": "▪ Employer Interviews: Fall 2011"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p002_c0014 lists Employer Interviews: Fall 2011 under the Public Outreach section.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p002_c0014",
+            "source_quote": "▪ Employer Interviews: Fall 2011"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-015-cac-jun2011",
+        "local_observation_id": "event_community_advisory_committee_jun2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "event_community-advisory-committee-jun2011",
+            "description": "Community Advisory Committee formed June 2011 as part of LGA Access AA public outreach",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p002_c0014",
+                "source_quote": "▪ Community Advisory Committee: June 2011"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p002_c0014 lists Community Advisory Committee: June 2011 under the Public Outreach section.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p002_c0014",
+            "source_quote": "▪ Community Advisory Committee: June 2011"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-016-public-meeting-1-jun2011",
+        "local_observation_id": "event_public_meeting_1_jun2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "event_public-meeting-1-jun2011_2",
+            "description": "Public Meeting #1 held June 2011 as part of LGA Access AA public outreach",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p002_c0014",
+                "source_quote": "▪ Public Meeting #1: June 2011"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p002_c0014 lists Public Meeting #1: June 2011 under the Public Outreach section.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p002_c0014",
+            "source_quote": "▪ Public Meeting #1: June 2011"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-017-public-meeting-2-nov2011",
+        "local_observation_id": "event_public_meeting_2_nov2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "event_public-meeting-2-nov2011",
+            "description": "Public Meeting #2 held November 2011 as part of LGA Access AA public outreach",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p002_c0014",
+                "source_quote": "▪ Public Meeting #2: November 2011"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p002_c0014 lists Public Meeting #2: November 2011 under the Public Outreach section.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p002_c0014",
+            "source_quote": "▪ Public Meeting #2: November 2011"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-018-public-meeting-3-oct2012",
+        "local_observation_id": "event_public_meeting_3_oct2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "event_public-meeting-3-oct2012",
+            "description": "Public Meeting #3 held October 2012 as part of LGA Access AA public outreach",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p002_c0014",
+                "source_quote": "▪ Public Meeting #3: October 2012"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p002_c0014 lists Public Meeting #3: October 2012 under the Public Outreach section.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p002_c0014",
+            "source_quote": "▪ Public Meeting #3: October 2012"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-019-study-started-may2011",
+        "local_observation_id": "event_study_started_may2011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "event_study-started-may2011",
+            "description": "LaGuardia Airport Access Alternatives Analysis began in May 2011",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p001_c0003",
+                "source_quote": "In May 2011 the LaGuardia Airport Access Alternatives Analysis began with the purpose of developing faster and more reliable transit service to LGA."
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p001_c0003 explicitly states the LGA Access AA began in May 2011.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0003",
+            "source_quote": "In May 2011 the LaGuardia Airport Access Alternatives Analysis began with the purpose of developing faster and more reliable transit service to LGA."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-020-implementation-2013-2014",
+        "local_observation_id": "event_implementation_2013_2014",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_timeline_event",
+            "subject_id": "project_lga-access-aa",
+            "object_id": "event_implementation-2013-2014",
+            "description": "Target implementation timeframe 2013/2014 for LGA Access AA improvements",
+            "evidence_refs": [
+              {
+                "source_id": "2012_10_lga_plan_one_pager",
+                "block_id": "p002_c0016",
+                "source_quote": "▪ Implementation in 2013/2014"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p002_c0016 lists Implementation in 2013/2014 under the Next Steps section of the LGA Access AA handout.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p002_c0016",
+            "source_quote": "▪ Implementation in 2013/2014"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-56-09-422Z_2111393-9b52f99c_canonicalize_2026-06-10t23-05-07-096z-1976810-a3599472-ingest-2012-10-lga-plan-one-pager-relation-linker"
+}

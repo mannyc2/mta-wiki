@@ -1,0 +1,67 @@
+{
+  "run_id": "2026-06-10T23-14-44-412Z_1976810-fb5a9f08_ingest_2013-06-12-sbs-125th-cb10",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T03:56:24.402Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "d_m60_sbs_2013_06_12",
+        "local_observation_id": "route_m60_sbs_2013_06_12",
+        "decision": "new",
+        "rationale": "Observation already resolves to route_125th-laguardia-sbs, which is the correct canonical record for M60 SBS on 125th Street. The observation's base_record_id equals the registry record_id with matching payload route_id M60, route_type select_bus_service, boroughs Manhattan/Queens. New observation for same record.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_12_sbs_125th_cb10",
+            "block_id": "p001_c0001",
+            "source_quote": "M60 Select Bus Service on 125th Street - M60 SBS"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_bx15_2013_06_12",
+        "local_observation_id": "route_bx15_2013_06_12",
+        "decision": "new",
+        "rationale": "Observation resolves to route_bx15-ace, matching registry record route_bx15-ace with route_id Bx15, route_type local, borough Bronx. Same record; no linking needed.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_12_sbs_125th_cb10",
+            "block_id": "p001_c0009",
+            "source_quote": "Bx15"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_m100_2013_06_12",
+        "local_observation_id": "route_m100_2013_06_12",
+        "decision": "new",
+        "rationale": "Observation resolves to route_m100-ace, matching registry record route_m100-ace with route_id M100, route_type local, borough Manhattan. Same canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_12_sbs_125th_cb10",
+            "block_id": "p001_c0009",
+            "source_quote": "M100"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_m101_2013_06_12",
+        "local_observation_id": "route_m101_2013_06_12",
+        "decision": "new",
+        "rationale": "Observation resolves to route_m101, matching registry record route_m101 with route_id M101, route_type local, borough Manhattan. Same canonical record.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_06_12_sbs_125th_cb10",
+            "block_id": "p001_c0009",
+            "source_quote": "M101"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-55-41-722Z_2111393-4c36bcb7_canonicalize_2026-06-10t23-14-44-412z-1976810-fb5a9f08-ingest-2013-06-12-sbs-125th-cb10-route-identity"
+}

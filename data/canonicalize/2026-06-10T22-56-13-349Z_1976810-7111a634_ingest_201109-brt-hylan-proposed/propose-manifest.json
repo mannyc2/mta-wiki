@@ -1,0 +1,79 @@
+{
+  "run_id": "2026-06-10T22-56-13-349Z_1976810-7111a634_ingest_201109-brt-hylan-proposed",
+  "generated_at": "2026-06-11T01:45:21.450Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 6,
+  "packet_count": 6,
+  "completed": 6,
+  "failed": 0,
+  "planned": 0,
+  "observation_count": 21,
+  "validated_decision_count": 21,
+  "quarantined_decision_count": 0,
+  "paths": {
+    "output_dir": "data/canonicalize/2026-06-10T22-56-13-349Z_1976810-7111a634_ingest_201109-brt-hylan-proposed",
+    "manifest": "data/canonicalize/2026-06-10T22-56-13-349Z_1976810-7111a634_ingest_201109-brt-hylan-proposed/propose-manifest.json",
+    "decisions_jsonl": "data/canonicalize/2026-06-10T22-56-13-349Z_1976810-7111a634_ingest_201109-brt-hylan-proposed/decisions.jsonl",
+    "quarantine_jsonl": "data/canonicalize/2026-06-10T22-56-13-349Z_1976810-7111a634_ingest_201109-brt-hylan-proposed/quarantine.jsonl",
+    "raw_responses_dir": "data/canonicalize/2026-06-10T22-56-13-349Z_1976810-7111a634_ingest_201109-brt-hylan-proposed/raw-responses"
+  },
+  "results": [
+    {
+      "packet_id": "route-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-349Z_1976810-7111a634_ingest_201109-brt-hylan-proposed/raw-responses/route-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-40-08-688Z_2111393-342e1508_canonicalize_2026-06-10t22-56-13-349z-1976810-7111a634-ingest-201109-brt-hylan-proposed-route-identity"
+    },
+    {
+      "packet_id": "entity-identity",
+      "status": "completed",
+      "decision_count": 3,
+      "validated_decision_count": 3,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-349Z_1976810-7111a634_ingest_201109-brt-hylan-proposed/raw-responses/entity-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-40-08-688Z_2111393-6201806a_canonicalize_2026-06-10t22-56-13-349z-1976810-7111a634-ingest-201109-brt-hylan-proposed-entity-identity"
+    },
+    {
+      "packet_id": "project-identity",
+      "status": "completed",
+      "decision_count": 1,
+      "validated_decision_count": 1,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-349Z_1976810-7111a634_ingest_201109-brt-hylan-proposed/raw-responses/project-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-40-08-697Z_2111393-5305f423_canonicalize_2026-06-10t22-56-13-349z-1976810-7111a634-ingest-201109-brt-hylan-proposed-project-identity"
+    },
+    {
+      "packet_id": "corridor-identity",
+      "status": "completed",
+      "decision_count": 2,
+      "validated_decision_count": 2,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-349Z_1976810-7111a634_ingest_201109-brt-hylan-proposed/raw-responses/corridor-identity.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-40-08-697Z_2111393-d8e82b0c_canonicalize_2026-06-10t22-56-13-349z-1976810-7111a634-ingest-201109-brt-hylan-proposed-corridor-identity"
+    },
+    {
+      "packet_id": "treatment-relations",
+      "status": "completed",
+      "decision_count": 12,
+      "validated_decision_count": 12,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-349Z_1976810-7111a634_ingest_201109-brt-hylan-proposed/raw-responses/treatment-relations.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-40-08-697Z_2111393-88b25096_canonicalize_2026-06-10t22-56-13-349z-1976810-7111a634-ingest-201109-brt-hylan-proposed-treatment-relations"
+    },
+    {
+      "packet_id": "relation-linker",
+      "status": "completed",
+      "decision_count": 2,
+      "validated_decision_count": 2,
+      "quarantined_decision_count": 0,
+      "raw_response_path": "data/canonicalize/2026-06-10T22-56-13-349Z_1976810-7111a634_ingest_201109-brt-hylan-proposed/raw-responses/relation-linker.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T01-40-08-697Z_2111393-919b5e65_canonicalize_2026-06-10t22-56-13-349z-1976810-7111a634-ingest-201109-brt-hylan-proposed-relation-linker"
+    }
+  ]
+}

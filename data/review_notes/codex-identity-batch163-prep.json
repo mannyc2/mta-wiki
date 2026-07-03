@@ -1,0 +1,141 @@
+{
+  "note_id": "codex-identity-batch163-prep",
+  "batch": "identity163",
+  "created_at": "2026-06-23T08:08:36Z",
+  "scope": {
+    "global_kind": "route/corridor"
+  },
+  "prepared_count": 3,
+  "proposed_aliases": [
+    {
+      "global_kind": "route",
+      "alias_id": "route_125th-st-m60",
+      "target_id": "route_125th-laguardia-sbs",
+      "canonical_id": "route_125th-laguardia-sbs",
+      "confidence": "high",
+      "reason": "The alias is a one-source M60 route mention from 125th Street SBS planning. The target is the current M60/M60 SBS canonical route record and already carries route_m60 plus 125th/LGA aliases, including the former-M60-to-M60-SBS lifecycle context.",
+      "validator_duplicate_key": "route_m60",
+      "validator_evidence": "validateRepo duplicate_global_identity: Global route records route_125th-laguardia-sbs and route_125th-st-m60 share identity key route_m60.",
+      "source_evidence": [
+        {
+          "record_id": "route_125th-st-m60",
+          "evidence_id": "2012_09_19_125th_st_sbs_public_workshop_summary#p004_c0009",
+          "quote": "Bus bunching is an issue. It occurs often on the M60 (during the AM peak period)"
+        },
+        {
+          "record_id": "route_125th-laguardia-sbs",
+          "evidence_id": "brt_route_index#p001_b0001",
+          "quote": "125th-LaGuardia Airport Select Bus Service was an upgrade to the former M60 route to LaGuardia Airport via 125th Street and Astoria Boulevard."
+        },
+        {
+          "record_id": "route_125th-laguardia-sbs",
+          "evidence_id": "mta_automated_camera_enforcement#p001_b0001",
+          "quote": "M60-SBS, 125 St / Astoria Blvd"
+        }
+      ]
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_livingston-st",
+      "target_id": "corridor_livingston-street-2023",
+      "canonical_id": "corridor_livingston-street-2023",
+      "confidence": "high",
+      "reason": "The alias is a Brooklyn bus-priority corridor listing whose identity label includes Livingston St. The target is the opened downtown Brooklyn Livingston Street busway record and already carries corridor_livingston-st as a record alias.",
+      "validator_duplicate_key": "corridor_livingston-st",
+      "validator_evidence": "validateRepo duplicate_global_identity: Global corridor records corridor_livingston-st and corridor_livingston-street-2023 share identity key corridor_livingston-st.",
+      "source_evidence": [
+        {
+          "record_id": "corridor_livingston-st",
+          "evidence_id": "brooklyn_bus_network_draft_plan_without_route_profiles#p020_c0004",
+          "quote": "Livingston St / Boerum Pl / Joralemon St"
+        },
+        {
+          "record_id": "corridor_livingston-street-2023",
+          "evidence_id": "meeting_doc_128931#p003_c0011",
+          "quote": "the eastbound busway on Livingston Street opened in downtown Brooklyn"
+        }
+      ]
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_main-st-2015",
+      "target_id": "corridor_main-street-flushing-jamaica-2014",
+      "canonical_id": "corridor_main-street-flushing-jamaica-2014",
+      "confidence": "high",
+      "reason": "Both current records identify the Queens Main Street / Flushing-Jamaica bus-priority corridor serving Q20A/B and Q44. The alias is the later Main Street corridor/busway fragment; the target is the richer Flushing-Jamaica Main Street corridor record and already carries the same Main Street identity keys plus Main Street busway context.",
+      "validator_duplicate_key": "corridor_main-st",
+      "validator_evidence": "validateRepo duplicate_global_identity: Global corridor records corridor_main-st-2015 and corridor_main-street-flushing-jamaica-2014 share identity keys corridor_main-st, corridor_main-st-corridor, and corridor_main-st-corridor-flushing.",
+      "source_evidence": [
+        {
+          "record_id": "corridor_main-st-2015",
+          "evidence_id": "2015_06_09_brt_flushing_jamaica_cb12#p006_c0003",
+          "quote": "Main Street:"
+        },
+        {
+          "record_id": "corridor_main-st-2015",
+          "evidence_id": "meeting_doc_29941#p042_c0004",
+          "quote": "Southbound Bus & Truck Only on Main Street between 37th Avenue and 40th Road"
+        },
+        {
+          "record_id": "corridor_main-street-flushing-jamaica-2014",
+          "evidence_id": "2014_10_07_brt_flushingjamaica_pw1_presentation#p014_c0002",
+          "quote": "Main Street:"
+        },
+        {
+          "record_id": "corridor_main-street-flushing-jamaica-2014",
+          "evidence_id": "2014_10_07_brt_flushingjamaica_pw1_presentation#p014_c0003",
+          "quote": "Q20A/B: Jamaica to College Point - Q44: Jamaica to Bronx Zoo"
+        }
+      ]
+    }
+  ],
+  "exclusions_and_guards": [
+    "Only current canonical route/corridor record ids from data/canonical/routes.jsonl and data/canonical/corridors.jsonl were considered.",
+    "Checked current data/identity-overrides/merges.json; no proposed alias_id is already merged, no proposed alias_id is a current merge target, and no proposed target_id is a current merge alias.",
+    "Checked current data/identity-overrides/do-not-merge.json; no proposed pair is covered by a do-not-merge guard.",
+    "Checked route/corridor proposals from identity144, identity147, identity151, identity155, and identity159; no proposed alias repeats those already-prepared/applied route/corridor aliases.",
+    "Explicitly did not propose corridor_125th-street-manhattan -> corridor_125th-st-manhattan.",
+    "Excluded corridor_14th-st-crosstown-brt-phase2 -> corridor_14th-street-ttp because corridor_14th-st-crosstown-brt-phase2 is already a merge target and would create a target chain.",
+    "Excluded Bay Parkway/Cropsey, Church Avenue, Broadway, Lexington Avenue, Third Avenue, Woodhaven Boulevard, Cross Bay Boulevard, Utica Avenue, and similar same-street corridor hits when the current payload showed adjacent limits, nested segments, compound corridors, or broad street-name-only collisions.",
+    "Excluded route collisions that were local/limited/SBS variant traps or compound route-pair traps, including M23 local vs M23 SBS, M34 local vs M34/M34A SBS, Bx41 local/limited/SBS, Q52/Q53 LTD vs SBS, and Bx40/Bx42 pair vs individual Bx42."
+  ],
+  "command_evidence": [
+    {
+      "command": "jq '.aliases | type, length, (to_entries[0:8])' data/identity-overrides/merges.json",
+      "purpose": "Read current merge override shape and route/corridor aliases for already-applied alias and target-chain guards."
+    },
+    {
+      "command": "jq '.pairs | type, length, (to_entries[0:8])' data/identity-overrides/do-not-merge.json",
+      "purpose": "Read current do-not-merge guards before preparing any proposal."
+    },
+    {
+      "command": "jq -r '.proposed_aliases[]? | [.global_kind,.alias_id,.target_id] | @tsv' data/review_notes/codex-identity-batch144-prep.json data/review_notes/codex-identity-batch147-prep.json data/review_notes/codex-identity-batch151-prep.json data/review_notes/codex-identity-batch155-prep.json data/review_notes/codex-identity-batch159-prep.json",
+      "purpose": "Checked previous route/corridor prep batches to avoid stale or already-applied aliases."
+    },
+    {
+      "command": "bun -e 'import { validateRepo } from \"./packages/pipeline/src/validate.ts\"; const result = validateRepo(); ...'",
+      "purpose": "Read-only validateRepo inspection; confirmed 644 duplicate_global_identity issues and 64 route/corridor duplicate messages."
+    },
+    {
+      "command": "jq 'select(.record_id==...)' data/canonical/routes.jsonl data/canonical/corridors.jsonl",
+      "purpose": "Inspected current canonical route/corridor records, aliases, payloads, source ids, and evidence refs for candidate pairs."
+    },
+    {
+      "command": "jq 'select(.block_id==...)' raw/sources/*/blocks.jsonl",
+      "purpose": "Read local source blocks for candidate evidence quotes without running provider-backed commands."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed commands",
+    "materialize",
+    "export-jsonl",
+    "full CLI validate",
+    "write",
+    "ask",
+    "schema",
+    "ontology",
+    "identity-review",
+    "canonicalize",
+    "campaign dedup"
+  ]
+}

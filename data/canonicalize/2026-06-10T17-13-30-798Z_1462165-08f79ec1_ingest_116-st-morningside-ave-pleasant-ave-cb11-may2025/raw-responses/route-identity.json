@@ -1,0 +1,106 @@
+{
+  "run_id": "2026-06-10T17-13-30-798Z_1462165-08f79ec1_ingest_116-st-morningside-ave-pleasant-ave-cb11-may2025",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-21T15:04:35.525Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "d_m116_new",
+        "local_observation_id": "route_m116_cb11_may2025",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_m116 maps to existing registry record route_m116 with matching payload (M116, local bus, Manhattan). Since the closest match is the observation's own base_record_id, this is 'new' — the observation already resolves to that registry record.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_may2025",
+            "block_id": "p005_c0002",
+            "source_quote": "M102, M116, BxM6, BxM7, BxM8, BxM9, BxM11"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_m102_new",
+        "local_observation_id": "route_m102_cb11_may2025",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_m102 maps to existing registry record route_m102 with matching payload (M102, local bus, Manhattan). Since the closest match is the observation's own base_record_id, this is 'new'.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_may2025",
+            "block_id": "p005_c0002",
+            "source_quote": "M102, M116, BxM6, BxM7, BxM8, BxM9, BxM11"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_bxm6_new",
+        "local_observation_id": "route_bxm6_cb11_may2025",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_bxm6 maps to existing registry record route_bxm6 with matching payload (BxM6, express_bus, Manhattan). Since the closest match is the observation's own base_record_id, this is 'new'.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_may2025",
+            "block_id": "p005_c0002",
+            "source_quote": "M102, M116, BxM6, BxM7, BxM8, BxM9, BxM11"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_bxm7_new",
+        "local_observation_id": "route_bxm7_cb11_may2025",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_bxm7 maps to existing registry record route_bxm7 with matching payload (BxM7, express_bus, Manhattan). Since the closest match is the observation's own base_record_id, this is 'new'.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_may2025",
+            "block_id": "p005_c0002",
+            "source_quote": "M102, M116, BxM6, BxM7, BxM8, BxM9, BxM11"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_bxm8_new",
+        "local_observation_id": "route_bxm8_cb11_may2025",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_bxm8 maps to existing registry record route_bxm8 with matching payload (BxM8, express_bus, Manhattan). Since the closest match is the observation's own base_record_id, this is 'new'.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_may2025",
+            "block_id": "p005_c0002",
+            "source_quote": "M102, M116, BxM6, BxM7, BxM8, BxM9, BxM11"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_bxm9_new",
+        "local_observation_id": "route_bxm9_cb11_may2025",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_bxm9 maps to existing registry record route_bxm9 with matching payload (BxM9, express_bus, Manhattan). Since the closest match is the observation's own base_record_id, this is 'new'.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_may2025",
+            "block_id": "p005_c0002",
+            "source_quote": "M102, M116, BxM6, BxM7, BxM8, BxM9, BxM11"
+          }
+        ]
+      },
+      {
+        "decision_id": "d_bxm11_new",
+        "local_observation_id": "route_bxm11_cb11_may2025",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_bxm11 maps to existing registry record route_bxm11 with matching payload (BxM11, express_bus, Manhattan). Since the closest match is the observation's own base_record_id, this is 'new'.",
+        "evidence_refs": [
+          {
+            "source_id": "116_st_morningside_ave_pleasant_ave_cb11_may2025",
+            "block_id": "p005_c0002",
+            "source_quote": "M102, M116, BxM6, BxM7, BxM8, BxM9, BxM11"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-21T15-03-59-176Z_2836603-54940efb_canonicalize_2026-06-10t17-13-30-798z-1462165-08f79ec1-ingest-116-st-morningside-ave-pleasant-ave-cb11-may2025-route-identity"
+}

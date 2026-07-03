@@ -1,0 +1,12 @@
+{"decision_id":"rel-tsp-nostrand-rogers-201011","verdict":"pass","evidence_checked":["201011_nostrand_handout#p001_c0014"]}
+{"decision_id":"rel-bus-bulbs-nostrand-201011","verdict":"pass","evidence_checked":["201011_nostrand_handout#p002_c0009"]}
+{"decision_id":"rel-off-board-fare-nostrand-201011","verdict":"pass","evidence_checked":["201011_nostrand_handout#p002_c0009"]}
+{"decision_id":"rel-bus-shelters-nostrand-201011","verdict":"pass","evidence_checked":["201011_nostrand_handout#p002_c0009"]}
+{"decision_id":"rel-offset-bus-lane-rogers-201011","verdict":"pass","evidence_checked":["201011_nostrand_handout#p001_c0011","201011_nostrand_handout#p001_c0012","201011_nostrand_handout#p001_c0013"]}
+{"decision_id":"rel-local-bus-stops-same-block-201011","verdict":"pass","evidence_checked":["201011_nostrand_handout#p002_c0009"]}
+{"decision_id":"rel-007-similar-results","verdict":"pass","evidence_checked":["201011_nostrand_handout#p003_c0008"]}
+{"decision_id":"rel-008-merchant-survey-claim","verdict":"fail","failure_reason":"Cited block p002_c0011 is an empty image block (order 12, kind=figure, text=''). The quoted merchant survey text ('Over 1,500 businesses along Nostrand, Rogers, and Bedford Avenues...') actually appears at p002_c0013 (order 14). The evidence block does not contain the cited quote.","evidence_checked":["201011_nostrand_handout#p002_c0011","201011_nostrand_handout#p002_c0013"]}
+{"decision_id":"rel-009-final-design-event","verdict":"pass","evidence_checked":["201011_nostrand_handout#p003_c0004"]}
+{"decision_id":"rel-010-construction-event","verdict":"pass","evidence_checked":["201011_nostrand_handout#p003_c0004"]}
+{"decision_id":"rel-011-service-start-event","verdict":"pass","evidence_checked":["201011_nostrand_handout#p003_c0004"]}
+{"decision_id":"rel-012-merchant-survey-event","verdict":"fail","failure_reason":"Cited block p002_c0011 is an empty image block (order 12, kind=figure, text=''). The quoted merchant survey text ('Over 1,500 businesses along Nostrand, Rogers, and Bedford Avenues are being asked to complete a survey...') actually appears at p002_c0013 (order 14). The evidence block does not contain the cited quote.","evidence_checked":["201011_nostrand_handout#p002_c0011","201011_nostrand_handout#p002_c0013"]}

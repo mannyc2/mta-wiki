@@ -1,0 +1,316 @@
+{
+  "note_id": "codex-identity-batch175-prep",
+  "batch": "identity175",
+  "created_at": "2026-06-23T09:10:59Z",
+  "scope": {
+    "global_kind": "project",
+    "selection_note": "Codex-only post-ingest identity cleanup prep for PROJECT duplicate_global_identity rows only. Inputs were current data/canonical/projects.jsonl, data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, and allowed in-process validateRepo duplicate_global_identity output.",
+    "write_limit": "Only this review note was written. No identity overrides, manifest, canonical JSONL, DB, wiki, submissions, or LOG.md files were edited.",
+    "validator_duplicate_counts_latest_allowed_run": {
+      "total_issues": 545,
+      "duplicate_global_identity": 545,
+      "project_duplicate_global_identity": 29
+    }
+  },
+  "prepared_count": 3,
+  "proposed_aliases": [
+    {
+      "global_kind": "project",
+      "alias_id": "project_34th-street-transitway-concept",
+      "target_id": "project_34th-st-transitway-phase1-2009",
+      "canonical_id": "project_34th-st-transitway-phase1-2009",
+      "confidence": "high",
+      "validator_evidence": [
+        "Global project records project_34th-st-transitway-phase1-2009 and project_34th-street-transitway-concept share identity key project_34th-st-transitway."
+      ],
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "34th Street Transitway (Selected BRT Alternative)",
+          "project_name": "34th Street Transitway Concept",
+          "project_type": "transitway",
+          "status": "proposed",
+          "borough": "Manhattan",
+          "source_count": 9,
+          "source_ids_sample": [
+            "080421_brt_cb5_34th_street_fullboardpresentation",
+            "100331_brt_cb5_34th_street_transitway",
+            "100503_brt_cb5_34th_street_transitway",
+            "100915_brt_cb5_34th_street_transitway"
+          ],
+          "aliases_sample": [
+            "project_34th-st-transitway",
+            "project_34th-st-transitway-project",
+            "project_34th-street-transitway"
+          ]
+        },
+        "target": {
+          "display_name": "34th Street Transitway",
+          "project_name": "34th Street Transitway",
+          "project_type": "transitway",
+          "status": "planned",
+          "program": "BRT Phase I Program",
+          "source_count": 2,
+          "source_ids": [
+            "brt_future_corridors",
+            "brt_phase2_future_corridors_rpt"
+          ],
+          "aliases": [
+            "project_34th-st-transitway",
+            "project_34th-st-transitway-phase1"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "project_34th-st-transitway-phase1-2009",
+          "evidence_id": "brt_phase2_future_corridors_rpt#p004_c0002",
+          "quote": "Table of Routes Short List for Next Select Bus Service Route 1 Webster Avenue/Third Avenue Corridor ... 34th Street Transitway."
+        },
+        {
+          "record_id": "project_34th-street-transitway-concept",
+          "evidence_id": "100331_brt_cb5_34th_street_transitway#p010_c0003",
+          "quote": "The BRT Alternative (34 th Street Transitway) is the Selected Alternative"
+        },
+        {
+          "record_id": "project_34th-street-transitway-concept",
+          "evidence_id": "080421_brt_cb5_34th_street_fullboardpresentation#p016_c0001",
+          "quote": "Dedicated 2-way transitway for the entire length of 34th Street"
+        }
+      ],
+      "reason": "Both records identify the same 34th Street Transitway project. The target is the compact BRT Phase I table/project record; the alias is the later detailed planning/concept record with the same identity key and same corridor/project name. The target's phase1 wording is a program-bucket label, not evidence of a separate project stage from the detailed 34th Street Transitway concept.",
+      "guards": {
+        "alias_and_target_present_in_current_projects_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_is_not_a_merge_target": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "not_phase_or_stage_merge": true,
+        "not_parent_child_merge": true,
+        "not_same_name_different_location": true,
+        "stale_id_hit": false,
+        "target_current_merge_target_for": [
+          "project_34th-st-transitway-phase1"
+        ]
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_able-expansion-2023",
+      "target_id": "project_able-camera-expansion-2022",
+      "canonical_id": "project_able-camera-expansion-2022",
+      "confidence": "high",
+      "validator_evidence": [
+        "Global project records project_able-camera-expansion-2022 and project_able-expansion-2023 share identity key project_automated-bus-lane-enforcement-able-expansion."
+      ],
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "Automated Bus Lane Enforcement (ABLE) Expansion 2023",
+          "project_name": "Automated Bus Lane Enforcement (ABLE) Expansion",
+          "project_type": "enforcement expansion",
+          "status": "planned for 2023",
+          "description_sample": "Expand the number of buses with onboard enforcement cameras from 423 to 1,023, covering up to 80% of existing bus lanes by the end of 2023",
+          "source_count": 5,
+          "source_ids_sample": [
+            "meeting_doc_105921",
+            "meeting_doc_121271",
+            "meeting_doc_127706",
+            "meeting_doc_128961"
+          ]
+        },
+        "target": {
+          "display_name": "Automated Bus Lane Enforcement (ABLE) Expansion",
+          "project_name": "Automated Bus Lane Enforcement Expansion",
+          "project_type": "enforcement expansion",
+          "status": "announced",
+          "description_sample": "Expansion of ABLE with 300 additional equipped buses covering nine routes, starting September on Q44 SBS.",
+          "source_count": 2,
+          "source_ids": [
+            "meeting_doc_95176",
+            "meeting_doc_98311"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "project_able-camera-expansion-2022",
+          "evidence_id": "meeting_doc_95176#p015_c0010",
+          "quote": "expansion of Automated Bus Lane Enforcement (ABLE) with the first of 300 additional equipped buses covering nine routes"
+        },
+        {
+          "record_id": "project_able-camera-expansion-2022",
+          "evidence_id": "meeting_doc_98311#p005_c0003",
+          "quote": "expand the ABLE program to cover up to 85% of existing bus lanes with the installation of additional cameras on buses"
+        },
+        {
+          "record_id": "project_able-expansion-2023",
+          "evidence_id": "meeting_doc_128961#p002_c0004",
+          "quote": "Expansion of Automated Bus Lane Enforcement program to be equipped with ABLE equipment"
+        },
+        {
+          "record_id": "project_able-expansion-2023",
+          "evidence_id": "meeting_doc_91581#p017_c0012",
+          "quote": "expand our ABLE program from the current 123 buses in Brooklyn and Manhattan to 473 buses covering all boroughs"
+        }
+      ],
+      "reason": "Both records describe the same ABLE camera expansion effort rather than distinct local projects: the 2022 record captures the first 300-bus expansion and the target of 1,000 buses by end of 2023, while the 2023 record continues the same expansion to 1,023 buses/roughly 80-85% of bus lanes. This proposal intentionally does not merge the expansion into the broader ABLE program record.",
+      "guards": {
+        "alias_and_target_present_in_current_projects_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_is_not_a_merge_target": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "not_phase_or_stage_merge": true,
+        "not_parent_child_merge": true,
+        "not_same_name_different_location": true,
+        "stale_id_hit": false,
+        "target_current_merge_target_for": [
+          "project_able-expansion-q44-sbs-sep2022"
+        ]
+      }
+    },
+    {
+      "global_kind": "project",
+      "alias_id": "project_congestion-relief",
+      "target_id": "project_annual-2021-cbdtp",
+      "canonical_id": "project_annual-2021-cbdtp",
+      "confidence": "high",
+      "validator_evidence": [
+        "Global project records project_annual-2021-cbdtp and project_congestion-relief share identity key project_congestion-relief-zone-toll-revenue-obligation-resolution."
+      ],
+      "canonical_evidence": {
+        "alias": {
+          "display_name": "Congestion Relief",
+          "project_name": "Congestion Relief",
+          "project_type": "congestion pricing program",
+          "description_sample": "Congestion pricing financial results presentation covering revenue, expenses, and debt issuance for system infrastructure costs and initial capital projects",
+          "source_count": 2,
+          "source_ids": [
+            "meeting_doc_165106",
+            "meeting_doc_192251"
+          ],
+          "aliases": [
+            "project_congestion-relief-zone-toll-revenue-obligation-resolution",
+            "project_congestion-relief-zone-toll-revenue-obligation-resolution-crz-bond-resolution",
+            "project_crz-bond-resolution-2025"
+          ]
+        },
+        "target": {
+          "display_name": "Central Business District Tolling Program",
+          "project_name": "Central Business District Tolling Program",
+          "project_type": "congestion pricing program",
+          "status": "ongoing",
+          "description_sample": "First of its kind in the U.S., designed to reduce traffic congestion, improve air quality, promote mass transit usage, and raise revenue for key capital projects.",
+          "source_count": 41,
+          "aliases_sample": [
+            "project_central-business-district-tolling-program",
+            "project_central-business-district-tolling-program-cbdtp",
+            "project_congestion-relief-zone-toll-revenue-obligation-resolution",
+            "project_meeting-doc-192281-crz-bond-resolution"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "project_congestion-relief",
+          "evidence_id": "meeting_doc_165106#p001_c0001",
+          "quote": "Congestion Relief - Financial Results"
+        },
+        {
+          "record_id": "project_congestion-relief",
+          "evidence_id": "meeting_doc_192251#p002_c0017",
+          "quote": "Congestion pricing financial results"
+        },
+        {
+          "record_id": "project_annual-2021-cbdtp",
+          "evidence_id": "meeting_doc_192261#p002_c0016",
+          "quote": "CRZ Tolling Program established pursuant to the Traffic Mobility Act"
+        },
+        {
+          "record_id": "project_annual-2021-cbdtp",
+          "evidence_id": "meeting_doc_192281#p003_c0002",
+          "quote": "CRZ Toll Revenue Obligation Resolution"
+        }
+      ],
+      "reason": "The alias record is not a separate capital project; it is a congestion-pricing/CRZ financial-results and bond-resolution split that shares a reviewed identity key already present on the Central Business District Tolling Program target. The merge direction keeps the broad CBDTP/CRZ tolling program as canonical and avoids treating the financing presentation as its own project identity.",
+      "guards": {
+        "alias_and_target_present_in_current_projects_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_is_not_a_merge_target": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "not_phase_or_stage_merge": true,
+        "not_parent_child_merge": true,
+        "not_same_name_different_location": true,
+        "stale_id_hit": false,
+        "target_current_merge_target_for": []
+      }
+    }
+  ],
+  "exclusions_and_guards": {
+    "proposal_guards": [
+      "Every proposed alias and target was verified as a current record_id in data/canonical/projects.jsonl.",
+      "No proposed alias is a current project merge alias in data/identity-overrides/merges.json.",
+      "No proposed target is a current project merge alias in data/identity-overrides/merges.json.",
+      "No proposed alias is a current project merge target in data/identity-overrides/merges.json.",
+      "Every alias and target pair is distinct.",
+      "No proposed pair is covered by a current project do-not-merge guard.",
+      "Phase/stage, parent/child, same-name-different-location, stale-id, existing-alias, target-is-alias, alias-is-merge-target, and do-not-merge-hit cases were excluded."
+    ],
+    "excluded_current_duplicate_classes": [
+      "Excluded 2017 Street Improvement Project / Woodhaven / 79th Street rows because current canonical evidence mixes Manhattan M79 and Queens Woodhaven scopes; same-name-different-location and agglomeration risk.",
+      "Excluded 2020-2024 Capital Program Amendment #2 / Amendment #5 rows because they are amendment-stage/program records and the broad meeting-doc target appears agglomerated.",
+      "Excluded ABLE Expansion 2023 -> ABLE Program because that would collapse an expansion into its parent enforcement program.",
+      "Excluded CBDTP -> TransCore modification and CBDTP -> standalone CRZ Toll Revenue Obligation Resolution directions because those are contract/resolution components of the program, not standalone program aliases.",
+      "Excluded East Side Access -> East Side Access Support Projects because the support-project record is related project support, not the same project identity.",
+      "Excluded Jamaica Capacity Improvement / Phase 2 and Hall Interlocking / Jamaica Capacity Improvements rows because Phase 2 and Hall Interlocking are phase/component or program/component relationships.",
+      "Excluded Lexington Avenue 96th-60th / 60th-52nd because the records have different segment scopes despite a shared bus-lane-upgrade key.",
+      "Excluded Penn Reconstruction / Penn Station Reconstruction Design because design services are a stage/contract of a broader reconstruction project.",
+      "Excluded LIRR Security Initiatives / NYCT Security Initiatives because the same label applies to different agencies/locations.",
+      "Excluded B46/Utica SBS, Fordham Road Bus Priority, Park Avenue Viaduct, and VN-X4 Safety Fence lookalikes where both plausible alias directions would use a current merge target as the alias under the requested guard."
+    ],
+    "blockers": [
+      "Only 3 high-confidence project alias proposals were available after applying all requested guards and semantic exclusions; the remaining project duplicate_global_identity rows are lower-confidence, parent/child, phase/stage, same-name-different-location, existing-alias, target-is-alias, alias-is-merge-target, or do-not-merge-risk cases."
+    ]
+  },
+  "command_evidence": [
+    {
+      "command": "rg --files data | rg '^(data/canonical/projects\\\\.jsonl|data/identity-overrides/merges\\\\.json|data/review_notes|data/.+do.*not.*merge|data/.+do_not_merge|data/.+donotmerge)'",
+      "purpose": "Located current canonical project, identity override, do-not-merge, and review-note artifacts."
+    },
+    {
+      "command": "bun --eval 'import { validateRepo } from \"./packages/pipeline/src/validate.ts\"; ...'",
+      "purpose": "Ran allowed in-process validateRepo and extracted duplicate_global_identity project rows without using the forbidden validate CLI."
+    },
+    {
+      "command": "node <<'NODE' <read-only filter over projects.jsonl, merges.json, do-not-merge.json, and validator messages> NODE",
+      "purpose": "Filtered candidate directions by current id presence, alias/target override status, merge-target alias guard, pair distinctness, and do-not-merge guard."
+    },
+    {
+      "command": "node <<'NODE' <read selected current project canonical records and source blocks> NODE",
+      "purpose": "Inspected canonical payloads, evidence refs, source ids, and source block text for final proposal and exclusion decisions."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "purpose": "Generated created_at timestamp."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed commands",
+    "canonicalize",
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "--profile",
+    "provider",
+    "materialize",
+    "validate CLI",
+    "export-jsonl"
+  ]
+}

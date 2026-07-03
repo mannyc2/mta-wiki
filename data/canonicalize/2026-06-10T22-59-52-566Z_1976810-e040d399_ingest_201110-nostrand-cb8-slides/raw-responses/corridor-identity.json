@@ -1,0 +1,48 @@
+{
+  "run_id": "2026-06-10T22-59-52-566Z_1976810-e040d399_ingest_201110-nostrand-cb8-slides",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T02:03:30.850Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "nostrand-cb8-2011-new",
+        "local_observation_id": "corridor_nostrand_ave_rogers_ave_cb8_2011",
+        "decision": "new",
+        "rationale": "The observation describes the Nostrand Ave/Rogers Ave Corridor — 9.3 miles from Williamsburg Bridge to Sheepshead Bay in Brooklyn, served by the B44 bus route. The observation's base_record_id corridor_nostrand-avenue already captures this exact corridor: same streets (Nostrand + Rogers), same limits (Williamsburg Bridge to Sheepshead Bay), same borough (Brooklyn), and the source 201110_nostrand_cb8_slides is already listed in that record's source_ids with the alias corridor_nostrand-ave-rogers-ave-cb8-2011. The closest match is the observation's own base record; per canonicalization rules, no different target_record_id is warranted.",
+        "evidence_refs": [
+          {
+            "source_id": "201110_nostrand_cb8_slides",
+            "block_id": "p002_c0001",
+            "source_quote": "Nostrand Ave/Rogers Ave Corridor"
+          },
+          {
+            "source_id": "201110_nostrand_cb8_slides",
+            "block_id": "p002_c0002",
+            "source_quote": "9.3 miles from Williamsburg Bridge to Sheepshead Bay"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "same_as",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "corridor_nostrand-rogers-20111205",
+            "description": "Both records describe the same physical corridor: Nostrand Avenue / Rogers Avenue from Williamsburg Bridge to Sheepshead Bay (9.3 miles), served by B44, in Brooklyn. corridor_nostrand-avenue aggregates multiple CB presentations; corridor_nostrand-rogers-20111205 is from a single CB3 presentation but shares identical limits, streets, length, route, and borough.",
+            "evidence_refs": [
+              {
+                "source_id": "201110_nostrand_cb8_slides",
+                "block_id": "p002_c0002",
+                "source_quote": "9.3 miles from Williamsburg Bridge to Sheepshead Bay"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-01-59-972Z_2111393-9793d1c5_canonicalize_2026-06-10t22-59-52-566z-1976810-e040d399-ingest-201110-nostrand-cb8-slides-corridor-identity"
+}

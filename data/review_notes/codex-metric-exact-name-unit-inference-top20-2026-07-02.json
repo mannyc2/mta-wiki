@@ -1,0 +1,115 @@
+{
+  "note_id": "codex-metric-exact-name-unit-inference-top20-2026-07-02",
+  "created_at": "2026-07-02",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed profiles"
+  ],
+  "subagent_audit": {
+    "agent_id": "019f203c-fda3-7f91-8e54-4e74cce7e53f",
+    "agent_name": "Dalton",
+    "scope": "read-only metric missing unit-family top-20 exact-name clusters",
+    "result": "Identified 302 missing unit-family metric_claim rows across 20 exact metric-name clusters with deterministic unit targets and guard requirements."
+  },
+  "bucket": "metric_claim.payload.unit_normalized.unit_family missing",
+  "baseline": {
+    "metric_records": 36534,
+    "unit_family_missing": 1609,
+    "unit_family_other": 5,
+    "focus_cluster_missing": 302
+  },
+  "implemented": {
+    "code": [
+      "packages/pipeline/src/ontology/normalizers.ts"
+    ],
+    "tests": [
+      "packages/pipeline/test/ontology/normalizers.test.ts"
+    ],
+    "rules": [
+      "Exact count metrics: total_major_felonies, violations_issued, number_of_payments, cases_adjudicated, hate_crimes_by_motivation.",
+      "Complaint basis metrics: title_vi_complaints_by_basis, employment_discrimination_complaints_by_basis, external_eeo_complaints_by_basis only when the stored value is a visible non-percent count token or the sum of two to three visible non-percent count tokens.",
+      "Enforcement metrics: total_arrests and total_summons plus category-gated enforcement_action_count values for TOS Arrests, Total Arrests, TOS C-Summ, TOS TABs, and Total Summons.",
+      "Pedestrian KSI metrics: category-gated pedestrian_fatalities and pedestrian_killed_or_severely_injured.",
+      "Exact workforce metrics: new_hires, total_workforce, workforce_by_sex_ethnicity.",
+      "Money metrics: contract_amount and license_annual_rental only with dollar/USD/money evidence.",
+      "Ridership percent increase metrics: weekday_ridership_percent_increase and weekend_ridership_percent_increase only with signed percent raw text.",
+      "Daily ridership metrics: daily_ridership only with daily/weekday/weekend/one-day plus ridership/passenger/customer evidence."
+    ],
+    "manual_canonical_jsonl_edits": false
+  },
+  "after_materialize": {
+    "metric_records": 36534,
+    "unit_family_missing": 1307,
+    "unit_family_other": 5,
+    "focus_cluster_missing": 0,
+    "global_missing_delta": -302
+  },
+  "focus_normalized_counts": {
+    "cases_adjudicated:cases:count": 15,
+    "contract_amount:dollars:money": 119,
+    "daily_ridership:boardings_per_weekday:ridership": 5,
+    "daily_ridership:riders:ridership": 168,
+    "daily_ridership:riders_per_day:ridership": 202,
+    "daily_ridership:trips:count": 2,
+    "daily_ridership:trips_per_day:service": 3,
+    "employment_discrimination_complaints_by_basis:complaints:count": 17,
+    "enforcement_action_count:arrests:enforcement": 17,
+    "enforcement_action_count:criminal_summonses:enforcement": 2,
+    "enforcement_action_count:summonses:enforcement": 24,
+    "external_eeo_complaints_by_basis:complaints:count": 29,
+    "hate_crimes_by_motivation:count:count": 9,
+    "hate_crimes_by_motivation:incidents:count": 28,
+    "license_annual_rental:dollars:money": 12,
+    "new_hires:employees:workforce": 58,
+    "new_hires:hires:workforce": 23,
+    "number_of_payments:payments:count": 16,
+    "pedestrian_ksi:fatalities:safety": 7,
+    "pedestrian_ksi:killed_or_severely_injured:safety": 7,
+    "pedestrian_ksi:persons:population": 1,
+    "title_vi_complaints_by_basis:complaints:count": 43,
+    "title_vi_complaints_by_basis:percent:percentage": 4,
+    "total_arrests:arrests:enforcement": 23,
+    "total_arrests:count:count": 4,
+    "total_major_felonies:count:count": 5,
+    "total_major_felonies:felonies:count": 4,
+    "total_major_felonies:incidents:count": 29,
+    "total_summons:count:count": 4,
+    "total_summons:summonses:enforcement": 19,
+    "total_workforce:employees:workforce": 39,
+    "violations_issued:tickets:count": 2,
+    "violations_issued:violations:count": 28,
+    "weekday_ridership_percent_increase:percent:percentage": 14,
+    "weekend_ridership_percent_increase:percent:percentage": 14,
+    "workforce_by_sex_ethnicity:employees:workforce": 13
+  },
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "result": "278 pass, 0 fail, 4628 expect() calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "Materialized 93067/98115 submissions; retired submissions skipped 265; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "Issues: 0; Submissions: 98115; Canonical records: 84027; Wiki pages: 7331"
+    }
+  ],
+  "remaining": {
+    "metric_unit_family_missing": 1307,
+    "metric_unit_family_other": 5,
+    "next_recommended_bucket": "Continue metric missing-unit cleanup by exact metric-name clusters, then return to project_family other=8 and event_family other=105."
+  }
+}

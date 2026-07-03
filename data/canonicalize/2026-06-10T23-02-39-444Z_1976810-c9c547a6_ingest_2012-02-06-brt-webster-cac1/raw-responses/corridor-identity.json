@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T23-02-39-444Z_1976810-c9c547a6_ingest_2012-02-06-brt-webster-cac1",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T02:22:43.426Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "webster-ave-bronx-identity",
+        "local_observation_id": "corridor_webster_ave_bronx",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'corridor_webster-ave-bronx' matches an existing registry record with identical corridor name ('Webster Avenue Corridor'), street ('Webster Avenue'), borough ('Bronx'), source ('2012_02_06_brt_webster_cac1'), and description referencing the Bx41 route. The observation already resolves to this record; no link to a different record is warranted.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p013_c0002",
+            "source_quote": "The map illustrates the proposed Webster Avenue SBS Corridor (Bx 41 route) in New York City."
+          },
+          {
+            "source_id": "2012_02_06_brt_webster_cac1",
+            "block_id": "p013_c0003",
+            "source_quote": "■ Based on the existing Bx41 route ■ 5.3 miles long"
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-21-29-160Z_2111393-c3d5a906_canonicalize_2026-06-10t23-02-39-444z-1976810-c9c547a6-ingest-2012-02-06-brt-webster-cac1-corridor-identity"
+}

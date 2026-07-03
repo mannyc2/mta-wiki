@@ -1,0 +1,131 @@
+{
+  "note_id": "codex-relation-assertion-metric-v1-threshold-2026-07-03",
+  "date": "2026-07-03",
+  "mode": "codex_only_deterministic_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider-backed profiles",
+    "Pioneer/OpenAI/DeepSeek/vLLM/chandra model calls"
+  ],
+  "bucket": "v1_route_scoped_assertion_status_metric_context",
+  "implemented_change": {
+    "summary": "Drive metric_context under the v1 10% unknown threshold with two deterministic has_metric lanes.",
+    "code_paths": [
+      "packages/pipeline/src/records/assertion-qualifiers.ts",
+      "packages/pipeline/test/records/assertion-qualifiers.test.ts"
+    ],
+    "rules": [
+      {
+        "name": "reported_actual_metric_claims",
+        "commit": "e58aa3c",
+        "relation_family": "metric_context",
+        "relation_kind": "has_metric",
+        "subjects": [
+          "entity",
+          "route",
+          "corridor"
+        ],
+        "required_signals": [
+          "metric_claim object",
+          "concrete numeric value",
+          "same-source relation and metric evidence",
+          "explicit metric period anchor or source-title period/report anchor",
+          "no future/planning/proposal/estimate/budget/goal/feasibility rejection text"
+        ]
+      },
+      {
+        "name": "observed_bus_or_corridor_operating_metrics",
+        "relation_family": "metric_context",
+        "relation_kind": "has_metric",
+        "subjects": [
+          "corridor",
+          "true_route bus route, including true routes identified by bus/SBS source context"
+        ],
+        "required_signals": [
+          "allowlisted bus/corridor operating, safety, ridership, survey, delay, speed, or demographic metric name",
+          "allowlisted non-money unit family",
+          "concrete numeric value",
+          "same-source relation and metric evidence",
+          "observed period/source/title/text anchor",
+          "no future/planning/proposal/estimate/feasibility/no-build rejection text"
+        ],
+        "guardrails": [
+          "split-candidate routes remain unknown",
+          "subway, rail, commuter, LIRR, MNR, and train route descriptors remain unknown",
+          "source description text is not used as a proposal veto because many progress decks describe both observed results and proposed follow-up capital work",
+          "source title/display text still participates in proposal/future rejection"
+        ]
+      }
+    ]
+  },
+  "baseline": {
+    "plan_004_start": {
+      "metric_context_total": 6015,
+      "metric_context_unknown": 2181,
+      "metric_context_unknown_pct": 36.3
+    },
+    "after_reported_actual_lane": {
+      "metric_context_total": 6015,
+      "metric_context_unknown": 683,
+      "metric_context_unknown_pct": 11.4
+    }
+  },
+  "after": {
+    "validate_issues": 0,
+    "relation_assertion_unknown_total": 3200,
+    "metric_context_total": 6015,
+    "metric_context_unknown": 540,
+    "metric_context_unknown_pct": 9.0,
+    "metric_context_has_metric_unknown": 526,
+    "metric_context_has_metric_delivered": 4567
+  },
+  "delta": {
+    "from_plan_004_start": {
+      "metric_context_unknown": -1641,
+      "metric_context_unknown_pct_points": -27.3
+    },
+    "from_reported_actual_lane": {
+      "metric_context_unknown": -143,
+      "metric_context_unknown_pct_points": -2.4
+    }
+  },
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+      "result": "passed: 89 tests, 468 expect calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "passed"
+    },
+    {
+      "command": "bun run materialize",
+      "result": "passed: Materialized 93067/98119 submissions; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "bun run validate",
+      "result": "passed: Issues 0"
+    },
+    {
+      "command": "threshold SQL",
+      "result": "metric_context 540/6015 unknown, 9.0%"
+    }
+  ],
+  "intentionally_unresolved": [
+    "Metric rows with missing same-source evidence remain unknown.",
+    "Future/planned/proposed/forecast/estimate/budget/goal/feasibility rows remain unknown unless an older exact rule already classifies them.",
+    "Money/finance entity metrics remain outside this v1 route-scoped lane.",
+    "Subway and rail schedule metrics remain outside this bus/corridor operating-metric lane.",
+    "Non-has_metric metric_context relation kinds remain outside this lane."
+  ],
+  "next_candidate_lanes": [
+    "Continue Plan 004 with corridor_scope, claim_context, and timeline_context, which are still above 10%.",
+    "Do not broaden metric_context further for v1 unless another family regresses or an owner explicitly asks for additional metric cleanup."
+  ]
+}

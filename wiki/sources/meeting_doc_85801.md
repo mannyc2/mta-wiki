@@ -1,0 +1,445 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-85801"
+record_kind: "source"
+display_name: "Exhibit Book Finance Committee Meeting 4/25/2022"
+source_id: "meeting_doc_85801"
+source_ids:
+  - "meeting_doc_85801"
+local_observation_id: "source_meeting_doc_85801"
+local_observation_ids:
+  - "source_meeting_doc_85801"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-22T20:45:13.031Z"
+raw_text: "Exhibit Book Finance Committee Meeting 4/25/2022"
+submission_ids:
+  - "sub_22cb52ad122ac34a"
+payload:
+  authority_tier: "board_material"
+  content_type: "Exhibit Book / Presentation"
+  date_text: "4/25/2022"
+  date_text_normalized:
+    confidence: "unparsed"
+    precision: "unknown"
+    raw_text: "4/25/2022"
+  description: "Finance Committee meeting exhibit book containing the BudgetWatch April 2022 Flash Report and Report to the Finance Committee Review of Variable Rate Debt"
+  document_date: "4/25/2022"
+  document_date_normalized:
+    confidence: "unparsed"
+    precision: "unknown"
+    raw_text: "4/25/2022"
+  publisher: "MTA"
+  title: "Exhibit Book Finance Committee Meeting 4/25/2022"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_85801#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_85801"
+    source_path: "raw/sources/meeting_doc_85801/blocks.jsonl"
+    source_quote: "Exhibit Book Finance Committee Meeting 4/25/2022"
+    text_sha256: "sha256:660b3d89f7092df2a57d4dc9efa41812721012851beb235910ae86dd4736cc8f"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0005"
+    evidence_id: "meeting_doc_85801#p001_c0005"
+    page_number: 1
+    source_id: "meeting_doc_85801"
+    source_path: "raw/sources/meeting_doc_85801/blocks.jsonl"
+    source_quote: "Master Page # 1 of 33 - Finance Committee Meeting 4/25/2022"
+    text_sha256: "sha256:60e05e53a24bcb64c6911a870cf163fd1ed2a9f07213527c9760bf0d47a866cb"
+    text_source: "raw_text"
+---
+
+# Finance Committee Exhibit Book
+
+source_id: meeting_doc_85801
+citation: cite block ids exactly as shown in square brackets
+document: 207 block(s)
+
+## Page 1
+
+### [p001_c0001] Exhibit Book Finance Committee Meeting 4/25/2022
+### [p001_c0002] Table of Contents:
+[p001_c0003] BudgetWatch - Page 2
+[p001_c0004] MTA Variable Rate Presentation - Page 21
+[p001_c0005] _Master Page # 1 of 33 - Finance Committee Meeting 4/25/2022_
+
+## Page 2
+
+### [p002_c0001] BudgetWatch April 2022 Flash Report
+[p002_c0002] BudgetWatch reflects March operating results and April subsidies received measured against the Adopted Budget.
+[p002_c0003] Overall Latest Condition (reporting on operations for March and subsidies through April):
+[p002_c0004]
+
+```text
+YTD March 2022 ($ in millions) Month of March 2022 ($ in millions) Actual Adopted Budget Diff % Diff Actual Adopted Budget Diff % Diff Operating Revenue 1 $1,480.9 $1,679.9 ($199.0) -11.8% $568.4 $593.7 ($25.3) -4.3% Operating Expenses $3,413.8 $3,660.7 $246.9 6.7% $1,173.4 $1,228.2 $54.8 4.5% Debt Service $770.0 $790.8 $20.8 2.6% $258.6 $268.0 $9.4 3.5% Operating Subsidies 2 $1,556.9 $1,353.8 $203.1 15.0% $377.4 $341.8 $35.5 10.4% Surplus/(Deficit) ($1,146.0) ($1,417.8) $271.8 -19.2% ($486.2) ($560.7) $74.4 -13.3%
+```
+[p002_c0005] Net preliminary operating results for the month and YTD were favorable to the budget forecast. For the month, ridership was lower on Subway, Buses and the LIRR, partially offset by higher than projected ridership at MNR; overall, passenger revenues underann the Adopted Budget forecast by $17 million (5%). Passenger revenue through March was below the Adopted budget forecast by $170 million (17%) in part due to the effects of the COVID-19 Omicron variant impact on subway, bus and commuter rail ridership. March toll revenue was above budget by $16 million (9%) and was $22 million (4%) above budget through March, reflecting higher traffic volume. Other operating revenue was unfavorable YTD by $51 million (31%), primarily reflecting a negative shift in the market value of FMTAC's invested asset portfolio.
+[p002_c0006] Operating expenses through March were favorable by $247 million (7%), mainly in maintenance-related contracts, professional services, materials, paratransit costs, and health & welfare/OPEB expenses, as well as payroll costs due to the existence of vacancies. These savings were partially offset by higher overtime, higher energy costs, and lower reimbursable overhead credits. Overtime spending through March was $60 million (28%) higher than budget primarily due to vacancy/absentee coverage, and weather-related response at NYCT. Debt service through March was favorable by $21 million (3%) due to timing of debt issuance, lower than budgeted variable rates and lower than budgeted debt service resulting from NYS issuing debt, instead of MTA, to fund the State's contribution to the 2015-19 Capital Program.
+[p002_c0007] Overall subsidy receipts dedicated for operating purposes through April were $203 million (15%) favorable. The real estate transactions taxes were favorable by $230 million (63%) and Payroll Mobility Tax receipts were favorable by $20 million (3%). Receipts for the Petroleum Business Tax were unfavorable by $14 million (7%), MTA Aid was unfavorable by $16 million (21%) and the For-Hire Vehicle Surcharge was $16 million (13%) unfavorable. Initial receipts for MMTOA are scheduled for May. Additionally, the Mansion Tax and Internet Marketplace Sales Tax receipts, which are committed to the 2020-2024 Capital Program, were a combined $89 million (43%) favorable.
+### [p002_c0008] Passenger and Toll Revenues
+[p002_c0009]
+
+```text
+YTD March 2022 ($ in millions) Month of March 2022 ($ in millions) Actual Adopted Budget Diff % Diff Actual Adopted Budget Diff % Diff NYCT: Subway $487.3 $580.8 ($93.6) -16.1% $190.8 $205.2 ($14.4) -7.0% Bus 137.0 165.5 (28.5) -17.2% 52.6 58.5 (6.0) -10.2% Other 16.9 17.9 (1.0) -5.5% 5.9 6.1 (0.2) -2.7% NYCT $641.2 $764.3 ($123.1) -16.1% $249.3 $269.8 ($20.5) -7.6% SIR $0.7 $0.8 (0.1) -14.4% $0.3 $0.3 (0.0) -3.0% MTA Bus 34.1 40.5 (6.4) -15.9% 15.8 14.1 1.7 11.8% LIRR 87.3 110.7 (23.5) -21.2% 37.4 38.5 (1.1) -2.9% MNR 79.9 97.0 (17.1) -17.6% 36.3 33.6 2.7 7.9% Sub-total $843.2 $1,013.4 ($170.2) -16.8% $339.0 $356.4 ($17.4) -4.9% B&T 524.9 502.8 22.0 4.4% 197.1 180.9 16.1 8.9% Total $1,368.1 $1,516.2 ($148.2) -9.8% $536.0 $537.3 ($1.2) -0.2%
+```
+[p002_c0010] _1 Includes Farebox Revenue, Toll Revenue and Other Operating Revenue._
+[p002_c0011] _2 Operating Subsidies are for the month of April 2022. Does not include State Operating Assistance, Station Maintenance, City Subsidy for MTA Bus and Staten Island Railway, and CDOT Subsidy for Metro-North Railroad._
+[p002_c0012] _Master Page # 2 of 33 - Finance Committee Meeting 4/25/2022_
+
+## Page 3
+
+[p003_c0001] Passenger revenues for the month were worse than budget primarily due to lower ridership on Subways, Buses and the LIRR, partially offset by higher average fares at MTA Bus and higher than forecast ridership at MNR. YTD passenger revenues were worse than budget primarily due to lower ridership on Subways, Buses and the Commuter Railroads in part due to the impacts of the COVID-19 Omicron variant. Toll revenue for the month and YTD were favorable due to higher-than-budgeted traffic volume. Weather, which can adversely impact ridership and traffic volume during winter months, saw slightly warmer temperatures than normal in March, while precipitation—and snowfall in particular—was lower than the normal level for the month.
+> [p003_c0002] The figure contains two line charts. The left chart, titled 'MTA-wide Farebox Revenue', shows revenue as a percentage from 0% to 100% on the y-axis and time from Jan-21 to Nov-22 on the x-axis. The right chart, titled 'B&T Toll Revenue', shows revenue as a percentage from 60% to 120% on the y-axis and the same time period on the x-axis. Both charts include four data series: McKinsey Best Case (dotted line), McKinsey Worst Case (dashed line), Midpoint Scenario (solid line), and Actual (thick solid line). In the MTA-wide chart, the Midpoint Scenario and Actual lines are relatively flat around 50-60%, while the Best Case is higher and the Worst Case is lower. In the B&T chart, the Midpoint Scenario and Actual lines show a significant upward trend, peaking around 110% in late 2021 before a dip in early 2022.
+[p003_c0003] The Adopted Budget, for NYCT Subway and Bus, MTA Bus, the LIRR and MNR are based on the midpoint between the “best case” and “worst case” scenarios that were developed by McKinsey & Co., while SIR is based on the “worst case” scenario and B&T reflects the “best case” scenario. Through March, passenger revenues remain significantly below pre-pandemic levels and compared with 2019 (stay-at-home orders that went into effect in mid-March 2020 prevent a valid comparison with 2020 actuals). Year to date compared with 2019, passenger revenues were down $617 million (43%) and toll revenue, when adjusted to account for the 2021 toll increase, is higher by $73 million (16%).
+### [p003_c0004] Federal CRRSAA Funding
+[p003_c0005] Federal aid, totaling $4.113 billion, from the Coronavirus Response and Relief Supplemental Appropriations Act (CRRSAA) has been received and distributed to Agencies. The MTA used $3.4 billion to balance 2021, with the remainder to be used to balance 2022. Receipts are reflected in Other Operating Revenue in Agency financial statements.
+### [p003_c0006] Total Operating Expenses before Non-Cash Liability Adjustments
+[p003_c0007]
+
+```text
+YTD March 2022 ($ in millions) Month of March 2022 ($ in millions) Actual Budget Diff % Diff Actual Budget Diff % Diff NYCT $2,146.5 $2,242.1 $95.6 4.3% $713.4 $735.7 $22.3 3.0% SIR $17.0 $17.4 0.4 2.5% $6.5 $5.8 (0.6) -10.6% MTA Bus 200.6 228.2 27.5 12.1% 69.9 80.0 10.1 12.6% LIRR 385.4 424.1 38.7 9.1% 121.7 139.7 18.0 12.9% MNR 344.8 350.2 5.4 1.5% 128.1 117.5 (10.5) -9.0% B&T 106.7 122.7 15.9 13.0% 39.2 45.7 6.6 14.4% MTA HQ 218.2 263.8 45.6 17.3% 96.4 99.5 3.1 3.1% MTA C&D 1.5 1.7 0.2 11.8% 0.7 0.7 0.0 0.0% FMTAC (8.8) 9.2 18.0 195.7% (4.2) 3.1 7.3 235.5% Total $3,411.9 $3,659.3 $247.4 6.8% $1,171.6 $1,227.8 $56.2 4.6%
+```
+[p003_c0008] Preliminary expenses for March were favorable by $56.2 million (4.6%). The favorable outcome at NYCT primarily reflects the timing of health & welfare/OPEB expense accruals, the timing of maintenance construction services and equipment rentals, the existence of vacancies, and lower paratransit costs, partially offset by higher overtime and the timing of tool and material purchases. The LIRR variance primarily reflects the timing of fleet modifications, Reliability Centered Maintenance activity and maintenance & other operating costs, and the existence of vacancies. The MTA Bus favorable variance largely reflects the favorable timing of professional services, including the roll-out of bus technologies and interagency billing, material usage, lower COVID expenses, maintenance work, including facility and farebox maintenance, the timing of claims expenses, and the existence of vacancies. The FMTAC variance primarily reflects the timing of insurance policy renewals and recording of claims expenses. The B&T variance mainly reflects timing and lower spending for the E-ZPass customer service center, major maintenance and painting, lower bond issuance costs, and the existence of vacancies. The MTA HQ
+[p003_c0009] _Master Page # 3 of 33 - Finance Committee Meeting 4/25/2022_
+
+## Page 4
+
+[p004_c0001] variance largely reflects the timing and accrual reversals of various professional services contracts, including health monitoring mainly related to mandated COVID-19 testing, temporary services related to staffing of the COVID-19 hotline, MTA IT purchases and consulting services, the existence of vacancies, and lower maintenance and repair costs. Partially offsetting these results were unfavorable variances at MNR mainly due to higher other fringe benefit costs, higher electric power rates, an unfavorable adjustment to overtime due to the Kronos outage and the unfavorable impact of the quarterly obsolete materials reserve adjustment, and SIR primarily due to the timing of retroactive wage payments and lower reimbursable fringe overhead credits.
+[p004_c0002] Year-to-date expenses were favorable by $247.4 million (6.8%). The favorable variances at MTA HQ, the LIRR, MTA Bus, FMTAC, and B&T largely reflect the factors noted for the month. The favorable variance at NYCT also reflects factors noted for the month as well as the timing of prescription drug rebate credits. At MNR, the variance primarily reflects the timing and lower spending on rolling stock maintenance work and related material usage, lower costs for consulting and engineering services, and lower payroll costs, partially offset by higher electric power rates. The variance at SIR mainly reflects the timing of health & welfare/OPEB prescription drug rebate credits, and facility and maintenance services projects.
+### [p004_c0003] Overtime
+[p004_c0004]
+
+```text
+YTD March 2022 ($ in millions) Month of March 2022 ($ in millions) Adopted Adopted Actual Budget Diff % Diff Actual Budget Diff % Diff NYCT $177.0 $121.5 ($55.5) -45.7% $61.4 $36.7 ($24.7) -67.5% SIR $0.9 $0.9 0.0 3.2% $0.3 $0.3 (0.1) -19.4% MTA Bus 22.4 23.4 1.0 4.2% 8.0 7.8 (0.2) -1.9% LIRR 36.6 34.1 (2.5) -7.4% 12.8 11.3 (1.6) -13.9% MNR 27.1 23.6 (3.5) -14.8% 10.5 7.1 (3.4) -47.9% B&T 5.2 6.5 1.3 19.9% 1.7 2.2 0.5 21.5% MTA HQ 5.5 4.9 (0.5) -10.4% 2.5 1.6 (0.9) -54.5% MTA C&D 0.0 0.0 0.0 0.0% 0.0 0.0 0.0 0.0% FMTAC 0.0 0.0 0.0 0.0% 0.0 0.0 0.0 0.0% Total $274.6 $214.9 ($59.8) -27.8% $97.2 $66.9 ($30.3) -45.3%
+```
+[p004_c0005] Overtime costs for March were above budget by $30.3 million (45.3%). The bulk of the overrun was at NYCT and reflected higher costs for vacancy/absentee coverage. MNR was unfavorable primarily due to Kronos outage adjustments. The LIRR was unfavorable primarily due to higher maintenance needs and vacancy/absentee coverage. MTA HQ was unfavorable mainly due to increased MTA PD vacancy/absentee coverage and higher security needs requiring overtime. Partially offsetting these results were favorable outcomes at B&T due to management efficiencies and improved scheduling and deployment practices.
+[p004_c0006] YTD overtime expenses were $59.8 million (27.8%) higher than budget, mainly due to overruns at NYCT, MNR, and the LIRR, for the same reasons noted for the month, including severe weather response at NYCT and the LIRR. MTA HQ was unfavorable mainly due to increased MTA PD vacancy/absentee coverage, partially offset by lower security needs requiring overtime. Partially offsetting these results were favorable results for the same reasons noted for the month at B&T; and lower unscheduled service overtime, COVID-19 related cleaning, and maintenance requirements, partially offset by lower availability and higher weather response at MTA Bus. Note: Due to the Kronos timekeeping outage, overtime spending figures are subject to revision.
+### [p004_c0007] Debt Service
+[p004_c0008] Debt Service for March was $258.6 million, which was $9.4 million (3.5%) favorable due to the timing of debt issuance, lower than budgeted variable rates and lower than budgeted debt service resulting from NYS issuing debt, instead of MTA, to fund the State's contribution to the 2015-19 capital program. Year-to-date Debt Service expenses of $770.0 million were $20.8 million (2.6%) favorable due to the same reasons noted for the month.
+[p004_c0009] _Master Page # 4 of 33 - Finance Committee Meeting 4/25/2022_
+
+## Page 5
+
+### [p005_c0001] State Dedicated Taxes and Fees
+[p005_c0002]
+
+```text
+YTD April 2022 ($ in millions) Month of April 2022 ($ in millions) Adopted Adopted Actual Budget Diff % Diff Actual Budget Diff % Diff MMTOA $0.0 $0.0 $0.0 0.0% $0.0 $0.0 0.0 0.0% PBT 194.4 208.9 (14.5) -6.9% 44.4 62.4 (18.0) -28.8% PMT 2 607.3 587.6 19.7 3.4% 168.9 159.2 9.7 6.1% MTA Aid 3 60.0 76.3 (16.3) -21.3% 0.0 0.0 0.0 0.0% FHV 4 102.2 118.1 (15.9) -13.4% 26.2 29.5 (3.4) -11.4% Total $963.9 $990.8 ($26.9) -2.7% $239.5 $251.1 ($11.6) -4.6%
+```
+[p005_c0003] The first MMTOA payment for the year is expected in May. Petroleum Business Tax (PBT) receipts for April were $18.0 million (28.8%) unfavorable, and year-to-date collections were unfavorable by $14.5 million (6.9%). April Payroll Mobility Tax (PMT) receipts were $9.7 million (6.1%) favorable, and year-to-date collections were favorable by $19.7 million (3.4%). Year-to-date MTA Aid receipts, which are transferred from the State on a quarterly basis, were $16.3 million (21.3%) unfavorable to the budget. For-Hire-Vehicle Surcharge (FHV) receipts were unfavorable both for the month and year-to-date by $3.4 million (11.4%) and $15.9 million (13.4%), respectively.
+### [p005_c0004] Real Estate Transaction Taxes
+[p005_c0005]
+
+```text
+YTD April 2022 ($ in millions) Month of April 2022 ($ in millions) Adopted Adopted Actual Budget Diff % Diff Actual Budget Diff % Diff MRT $253.6 $208.9 $44.7 21.4% $64.3 $52.2 $12.1 23.1% NYC Urban Tax 339.3 154.0 185.3 120.3% 73.6 38.5 35.1 91.1% Total $592.9 $362.9 $230.0 63.4% $137.9 $90.7 $47.2 52.0%
+```
+[p005_c0006] Total real estate transaction taxes for April, which reflect transaction activity during the month of March, were $47.2 million (52.0%) favorable to the Adopted Budget, with the YTD variance favorable by $230.0 million (63.4%). When compared with last year through April, real estate taxes were $263.4 million (79.9%) higher; the Urban Tax was favorable to last year's level by $211.7 million, or 165.8%, while MRT was favorable compared with last year by $51.8 million, or 25.7%.
+[p005_c0007] Regional Mortgage Recording Tax 6 receipts for April were $12.1 million, or 23.1%, favorable; MRT-1 was favorable by $10.0 million (30.2%), and MRT-2 receipts were favorable by $2.1 million (11.0%). YTD MRT receipts were favorable by $44.7 million (21.4%), with MRT-1 receipts $39.8 million (30.1%) favorable and MRT-2 receipts $5.0 million (6.4%) favorable.
+[p005_c0008] New York City Urban Tax 7 receipts for April were $35.1 million, or 91.1%, favorable, and YTD Urban Tax receipts were $185.3 million (120.3%) favorable. For April, the Real Property Transfer Tax (RPTT) portion of the Urban Tax was favorable by $25.2 million, or 105.4%, while the MRT portion of the Urban Tax was $9.9 million or 67.6% favorable. YTD, RPTT receipts were $141.5 million (148.0%) favorable, while the MRT portion of the Urban Tax was $43.8 million (74.9%) favorable.
+[p005_c0009] _3 PMT replacement funds, that are expected to total $244.3 million in 2022, are excluded from the results reported in this table._
+[p005_c0010] _4 MTA Aid includes the License Fee, Vehicle Registration Fee, Taxi Fee and Automobile Rental Fee._
+[p005_c0011] _5 For-Hire Vehicle Surcharge._
+[p005_c0012] _6 Mortgage Recording Taxes consist of two separate taxes on mortgages recorded in the twelve-county region: MRT-1 is a tax on all mortgages, while MRT-2 is also imposed on residential real estate structures containing up to six dwelling units._
+[p005_c0013] _7 New York City Urban Taxes are imposed on commercial property and apartment building transactions within New York City. The MRT component is imposed on mortgages exceeding $500,000, and the Real Property Transfer Tax component is imposed on transfers exceeding $500,000._
+[p005_c0014] _Master Page # 5 of 33 - Finance Committee Meeting 4/25/2022_
+
+## Page 6
+
+### [p006_c0001] Capital Lockbox Funding Sources
+[p006_c0002]
+
+```text
+YTD April 2022 ($ in millions) Month of April 2022 ($ in millions) Adopted Adopted Actual Budget Diff % Diff Actual Budget Diff % Diff Mansion Tax 7 $190.1 $102.4 $87.7 85.6% $34.2 $25.6 $8.6 33.7% Internet Sales Tax 8 108.0 106.4 1.6 1.5% 27.2 26.6 0.6 2.3% Total $298.1 $208.8 $89.3 42.8% $61.4 $52.2 $9.2 17.7%
+```
+[p006_c0003] April combined Capital Lockbox revenues were $9.2 million (17.7%) favorable; Mansion Tax receipts were $8.6 million (33.7%) favorable and Internet Sales Tax receipts were $0.6 million (2.3%) favorable. Year-to-date combined Capital Lockbox revenues were $89.3 million (42.8%) favorable, with the favorable variance mostly due to higher Mansion Tax receipts.
+[p006_c0004] Funds received from the Mansion Tax and Internet Sales Tax are deposited into the Capital Lockbox and are only available for capital purposes.
+[p006_c0005] _8 The Real Property Transfer Tax Surcharge (the "Mansion Tax") is an increase in the transfer tax on the sale of residential properties valued at $2 million or more in New York City._
+[p006_c0006] _9 Internet Marketplace Sales Tax receipts are captured through the elimination of the tax loophole that previously exempted third-party internet marketplace providers from collecting and remitting New York sales taxes on transactions conducted on their sites._
+[p006_c0007] _Master Page # 6 of 33 - Finance Committee Meeting 4/25/2022_
+
+## Page 7
+
+### [p007_c0001] Real Estate Transaction Taxes Receipts ($ in millions)
+### [p007_c0002] Adopted Budget vs. Actual Receipts
+[p007_c0003]
+
+```text
+2022 Adopted Budget 2022 Jan-22 Feb-22 Mar-22 Apr-22 May-22 Jun-22 Jul-22 Aug-22 Sep-22 Oct-22 Nov-22 Dec-22 YTD Apr MRT-1 $395.9 $33.0 $33.0 $33.0 $33.0 $33.0 $33.0 $33.0 $33.0 $33.0 $33.0 $33.0 $33.0 $132.0 MRT-2 230.8 19.2 19.2 19.2 19.2 19.2 19.2 19.2 19.2 19.2 19.2 19.2 19.2 76.9 Total MRT $626.7 $52.2 $52.2 $52.2 $52.2 $52.2 $52.2 $52.2 $52.2 $52.2 $52.2 $52.2 $52.2 $208.9 RPTT $286.8 $23.9 $23.9 $23.9 $23.9 $23.9 $23.9 $23.9 $23.9 $23.9 $23.9 $23.9 $23.9 $95.6 MRT 175.3 14.6 14.6 14.6 14.6 14.6 14.6 14.6 14.6 14.6 14.6 14.6 14.6 58.4 Total Urban Tax - NYCT 90% share $462.1 $38.5 $38.5 $38.5 $38.5 $38.5 $38.5 $38.5 $38.5 $38.5 $38.5 $38.5 $38.5 $154.0 Total Real Estate Taxes $1,088.8 $90.7 $90.7 $90.7 $90.7 $90.7 $90.7 $90.7 $90.7 $90.7 $90.7 $90.7 $90.7 $362.9
+```
+[p007_c0004]
+
+```text
+2022 Monthly Actuals Jan-22 Feb-22 Mar-22 Apr-22 May-22 Jun-22 Jul-22 Aug-22 Sep-22 Oct-22 Nov-22 Dec-22 YTD Apr MRT-1 $41.1 $53.1 $34.5 $43.0 $171.8 MRT-2 19.8 21.6 19.2 21.3 81.9 Total MRT $60.9 $74.7 $53.7 $64.3 $253.6 RPTT $96.1 $47.2 $44.7 $49.1 $237.1 MRT 23.6 40.0 14.2 24.5 102.2 Total Urban Tax - NYCT 90% share $119.6 $87.2 $58.9 $73.6 $339.3 Total Real Estate Taxes $180.5 $162.0 $112.6 $137.9 $592.9
+```
+[p007_c0005]
+
+```text
+Variances Jan-22 Feb-22 Mar-22 Apr-22 May-22 Jun-22 Jul-22 Aug-22 Sep-22 Oct-22 Nov-22 Dec-22 YTD Apr MRT-1 $8.1 $20.1 $1.5 $10.0 $39.8 MRT-2 0.5 2.4 (0.0) 2.1 5.0 Total MRT $8.6 $22.5 $1.5 $12.1 $44.7 RPTT $72.2 $23.4 $20.8 $25.2 $141.5 MRT 9.0 25.4 (0.4) 9.9 43.8 Total Urban Tax - NYCT 90% share $81.1 $48.7 $20.4 $35.1 $185.3 Total Real Estate Taxes $89.8 $71.2 $21.9 $47.2 $230.0 MRT-1 24.6% 61.1% 4.6% 30.2% 30.1% MRT-2 2.7% 12.3% -0.2% 11.0% 6.4% Total MRT 16.6% 43.1% 2.8% 23.1% 21.4% RPTT 301.9% 97.7% 87.0% 105.4% 148.0% MRT 61.3% 173.6% -2.8% 67.6% 74.9% Total Urban Tax - NYCT 90% share 210.6% 126.5% 52.9% 91.1% 120.3% Total Real Estate Taxes 98.9% 78.5% 24.1% 52.0% 63.4%
+```
+[p007_c0006] _Master Page # 7 of 33 - Finance Committee Meeting 4/25/2022_
+
+## Page 8
+
+### [p008_c0001] Real Estate Transaction Taxes Receipts ($ in millions)
+### [p008_c0002] 2022 Receipts vs. 2021 Receipts
+[p008_c0003]
+
+```text
+2021 Monthly Actuals 2021 Act Jan-21 Feb-21 Mar-21 Apr-21 May-21 Jun-21 Jul-21 Aug-21 Sep-21 Oct-21 Nov-21 Dec-21 YTD Apr MRT-1 $410.3 $32.2 $29.9 $26.1 $37.6 $30.6 $34.3 $42.4 $36.0 $36.1 $35.5 $37.8 $32.0 $125.7 MRT-2 237.3 18.9 18.1 16.5 22.7 20.0 20.0 22.1 20.9 20.8 19.1 20.2 17.9 76.2 Total MRT $647.6 $51.0 $47.9 $42.6 $60.3 $50.6 $54.3 $64.6 $56.9 $56.9 $54.6 $58.0 $49.9 $201.9 RPTT $263.1 $22.7 $28.4 $15.7 $14.9 $10.4 $15.5 $35.3 $20.5 $17.1 $21.4 $34.4 $26.7 $81.7 MRT 166.2 13.4 10.9 8.2 13.3 7.4 14.5 25.2 15.2 14.9 15.5 16.5 11.1 45.9 Total Urban Tax - NYCT 90% share $429.3 $36.2 $39.3 $23.9 $28.3 $17.8 $30.0 $60.5 $35.8 $31.9 $36.9 $50.9 $37.8 $127.7 Total Real Estate Taxes $1,076.9 $87.2 $87.2 $66.5 $88.5 $68.4 $84.3 $125.1 $92.7 $88.8 $91.5 $108.9 $87.7 $329.5
+```
+[p008_c0004]
+
+```text
+2022 Monthly Actuals Jan-22 Feb-22 Mar-22 Apr-22 May-22 Jun-22 Jul-22 Aug-22 Sep-22 Oct-22 Nov-22 Dec-22 YTD Apr MRT-1 $41.1 $53.1 $34.5 $43.0 $171.8 MRT-2 19.8 21.6 19.2 21.3 81.9 Total MRT $60.9 $74.7 $53.7 $64.3 $253.6 RPTT $96.1 $47.2 $44.7 $49.1 $237.1 MRT 23.6 40.0 14.2 24.5 102.2 Total Urban Tax - NYCT 90% share $119.6 $87.2 $58.9 $73.6 $339.3 Total Real Estate Taxes $180.5 $162.0 $112.6 $137.9 $592.9
+```
+[p008_c0005]
+
+```text
+Variances Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec YTD Apr MRT-1 $9.0 $23.3 $8.4 $5.4 $46.1 MRT-2 0.9 3.5 2.6 (1.3) 5.7 Total MRT $9.8 $26.8 $11.1 $4.0 $51.8 RPTT $73.3 $18.8 $29.0 $34.1 $155.3 MRT 10.1 29.1 6.0 11.2 56.3 Total Urban Tax - NYCT 90% share $83.5 $47.9 $35.0 $45.3 $211.7 Total Real Estate Taxes $93.3 $74.7 $46.1 $49.3 $263.4 MRT-1 27.8% 78.0% 32.3% 14.3% 36.6% MRT-2 4.7% 19.6% 16.0% -5.9% 7.5% Total MRT 19.3% 56.0% 26.0% 6.7% 25.7% RPTT 322.5% 66.3% 185.5% 228.4% 190.1% MRT 75.4% 266.0% 72.2% 83.9% 122.6% Total Urban Tax - NYCT 90% share 230.7% 121.8% 146.4% 160.3% 165.8% Total Real Estate Taxes 107.0% 85.7% 69.3% 55.7% 79.9%
+```
+[p008_c0006] _Master Page # 8 of 33 - Finance Committee Meeting 4/25/2022_
+
+## Page 9
+
+### [p009_c0001] BUDGETWATCH Regional Economy Report
+### [p009_c0002] New York City Employment
+### [p009_c0003] Sectors with Year-over-Year Employment Gains
+- [p009_c0004] · Education & Health Services · Information · Manufacturing · Professional & Business Services · Transportation, Utilities · Financial Activities · Leisure & Hospitality · Other Service · Trade · Government
+### [p009_c0005] Sectors with Year-over-Year Employment Losses
+- [p009_c0006] · Construction, Mining, Natural Resources
+[p009_c0007]
+
+```text
+New York City Employment (in thousands) Feb-22 versus Prelim Feb-22 Revised Jan-22 Feb-21 Jan-22 Feb-21 Net Pct Net Pct Total Employment 4,376.0 4,326.2 4,085.9 49.8 1.2% 290.1 7.1% Goods Producing 189.0 186.0 187.8 3.0 1.6% 1.2 0.6% Construction, Mining, Nat Res 132.4 130.4 135.7 2.0 1.5% (3.3) -2.4% Manufacturing 56.6 55.6 52.1 1.0 1.8% 4.5 8.6% Service Providing 4,187.0 4,140.2 3,898.1 46.8 1.1% 288.9 7.4% Transportation, Utilities 142.8 144.7 128.8 (1.9) -1.3% 14.0 10.9% Trade 427.1 428.9 401.7 (1.8) -0.4% 25.4 6.3% Information 232.8 230.5 210.1 2.3 1.0% 22.7 10.8% Financial Activities 463.7 458.8 461.0 4.9 1.1% 2.7 0.6% Professional & Business Svcs 754.2 744.2 698.8 10.0 1.3% 55.4 7.9% Education & Health Svcs 1,066.6 1,046.6 1,036.2 20.0 1.9% 30.4 2.9% Leisure & Hospitality 351.3 348.6 231.7 2.7 0.8% 119.6 51.6% Other Services 173.7 170.4 161.5 3.3 1.9% 12.2 7.6% Government 574.8 567.5 568.3 7.3 1.3% 6.5 1.1%
+```
+[p009_c0008] Preliminary February 2022 employment in New York City marks the 11 th consecutive month of employment recovery, compared with one year ago, since the COVID pandemic began, with an increase of 290,100 jobs (7.1%) when compared to last February's employment level. Increases occurred in all sectors except for Construction, Mining and Natural Resources. Sectors experiencing the greatest increases were Leisure & Hospitality, up 119,600 jobs (51.6%), Professional & Business Services, up 55,400 jobs (7.9%), and Education & Health Services, up 30,400 jobs (2.9%). February, however, remains below pre-pandemic employment, down 214,800 jobs (4.7%) when compared with February 2019.
+[p009_c0009] Employment in New York City's service-providing sectors increased by 288,900 jobs (7.4%) over the February 2021 level, and service-providing employment excluding the Government sector increased by 282,400 jobs (8.5%).
+[p009_c0010] _Master Page # 9 of 33 - Finance Committee Meeting 4/25/2022_
+
+## Page 10
+
+### [p010_c0001] BUDGETWATCH Regional Economy Report
+> [p010_c0002] New York City Employment 12-month Percent Change This line chart displays the 12-month percent change in New York City employment from January 2017 to January 2022. The y-axis represents the percentage change, ranging from -25.0% to 15.0% in 5.0% increments. The x-axis shows time in quarterly intervals. Three data series are plotted: Total (solid black line), Service Providing (dashed red line), and Private Sector Service Providing (dotted green line). All three series remain relatively stable near 0% until April 2020, when they all drop sharply to approximately -18% to -20%. They then begin a recovery, with the Private Sector Service Providing series showing the most significant increase, reaching about 12% by April 2021 before settling around 8% by January 2022. Month Total (%) Service Providing (%) Private Sector Service Providing (%) Jan-17 2.0 2.0 2.0 Apr-17 1.0 1.0 1.0 Jul-17 2.0 2.0 2.0 Oct-17 2.0 2.0 2.0 Jan-18 2.0 2.0 2.0 Apr-18 2.0 2.0 2.0 Jul-18 2.0 2.0 2.0 Oct-18 2.0 2.0 2.0 Jan-19 2.0 2.0 2.0 Apr-19 2.0 2.0 2.0 Jul-19 2.0 2.0 2.0 Oct-19 2.0 2.0 2.0 Jan-20 2.0 2.0 2.0 Apr-20 -18.0 -18.0 -18.0 Jul-20 -15.0 -15.0 -15.0 Oct-20 -12.0 -12.0 -12.0 Jan-21 -12.0 -12.0 -12.0 Apr-21 10.0 10.0 12.0 Jul-21 8.0 8.0 10.0 Oct-21 5.0 5.0 7.0 Jan-22 7.0 7.0 8.0
+> [p010_c0003] New York City Employment (in thousands) This line chart illustrates New York City employment in thousands from January to December for the years 2019, 2020, 2021, and 2022. The y-axis represents employment in thousands, ranging from 3,700 to 4,900 in 100-unit increments. The x-axis shows the months. Four data series are plotted: 2019 (dashed green line with triangles), 2020 (dashed red line with circles), 2021 (dotted black line with squares), and 2022 (solid blue line with circles). The 2019 series shows a gradual increase from about 4,550 in January to 4,750 in December. The 2020 series starts at 4,650 in January, drops sharply to 3,750 in April, and then recovers to 4,180 by December. The 2021 series shows a steady upward trend from 4,050 in January to 4,450 in December. The 2022 series is only partially shown, starting at 4,350 in January and ending at 4,380 in February. Month 2019 2020 2021 2022 Jan 4550 4650 4050 4350 Feb 4600 4680 4100 4380 Mar 4650 4650 4150 Apr 4650 3750 4180 May 4650 3800 4190 Jun 4680 3880 4220 Jul 4650 3920 4250 Aug 4620 3980 4250 Sep 4650 4050 4280 Oct 4700 4150 4380 Nov 4750 4180 4420 Dec 4750 4180 4450
+[p010_c0004] _Master Page # 10 of 33 - Finance Committee Meeting 4/25/2022_
+
+## Page 11
+
+### [p011_c0001] BUDGETWATCH Regional Economy Report
+[p011_c0002] In February 2022, seasonally adjusted New York City employment of 4.41 million was higher than in February 2021 by 283,500 jobs (6.87%), although it remains 303,200 jobs (6.4%) below the pre-pandemic February 2020 level. January seasonally adjusted employment was 13,900 jobs above last month, a 0.3% increase, the 22 nd consecutive increase since employment bottomed in April 2020.
+> [p011_c0003] Seasonally Adjusted New York City Employment (in thousands) Month Employment (thousands) Jan-17 4,440 Apr-17 4,450 Jul-17 4,460 Oct-17 4,470 Jan-18 4,480 Apr-18 4,490 Jul-18 4,500 Oct-18 4,510 Jan-19 4,520 Apr-19 4,530 Jul-19 4,540 Oct-19 4,550 Jan-20 4,560 Apr-20 3,700 Jul-20 4,000 Oct-20 4,050 Jan-21 4,060 Apr-21 4,080 Jul-21 4,150 Oct-21 4,200 Jan-22 4,410
+### [p011_c0004] Ridership and Employment
+[p011_c0005] Beginning in January 2011, the twelve-month average for employment increased by 24.1% through February 2020, while the 12-month average MTA-wide ridership fell by 0.7%. Since March 2020, however, the impact of the COVID pandemic has altered the trajectories of both, with February employment standing at 14.1% above the January 2011 level, while MTA-wide ridership for January is 50.5% below its January 2011 level.
+> [p011_c0006] MTA-Wide Ridership vs. New York City Employment 12-Month Averages Month Ridership (12-month average) Employment (12-month average) Jan-17 105 115 Apr-17 104 116 Jul-17 103 117 Oct-17 102 118 Jan-18 101 119 Apr-18 100 120 Jul-18 99 121 Oct-18 98 122 Jan-19 97 123 Apr-19 96 124 Jul-19 95 125 Oct-19 94 126 Jan-20 93 127 Apr-20 90 125 Jul-20 65 115 Oct-20 45 110 Jan-21 25 105 Apr-21 25 108 Jul-21 35 110 Oct-21 40 112 Jan-22 45 114
+[p011_c0007] _Master Page # 11 of 33 - Finance Committee Meeting 4/25/2022_
+
+## Page 12
+
+### [p012_c0001] BUDGETWATCH Regional Economy Report
+[p012_c0002] The following ridership and vehicular traffic trend graphs depict 12-month averages; for example, the January 2017 data point is the average of February 2016 to January 2017, and the February 2017 data point is the average of March 2016 to February 2017, providing a visual representation of trends over time. Further, data have been standardized to 1.0, allowing for an easier comparison of trends on a single graph.
+> [p012_c0003] 12 Month Average Ridership - Subway Month Weekday Saturday Sunday Jan-17 1.00 1.00 1.00 Jul-17 1.00 1.00 1.00 Jan-18 0.98 0.98 0.98 Jul-18 0.97 0.97 0.97 Jan-19 0.96 0.96 0.96 Jul-19 0.96 0.96 0.96 Jan-20 0.97 0.97 0.97 Jul-20 0.70 0.70 0.70 Jan-21 0.30 0.30 0.30 Jul-21 0.35 0.40 0.38 Jan-22 0.45 0.55 0.50
+> [p012_c0004] 12 Month Average Weekday Ridership by Time of Day - Subway Month 12 AM - 6 AM 6 AM - 9 AM 9 AM - 4 PM 4 PM - 7 PM 7 PM - 12 AM Jan-17 1.00 1.00 1.00 1.00 1.00 Jul-17 1.00 1.00 1.00 1.00 1.00 Jan-18 0.98 0.98 0.98 0.98 0.98 Jul-18 0.97 0.97 0.97 0.97 0.97 Jan-19 0.96 0.96 0.96 0.96 0.96 Jul-19 0.96 0.96 0.96 0.96 0.96 Jan-20 0.97 0.97 0.97 0.97 0.97 Jul-20 0.70 0.70 0.70 0.70 0.70 Jan-21 0.35 0.30 0.30 0.25 0.20 Jul-21 0.45 0.35 0.35 0.30 0.25 Jan-22 0.55 0.45 0.50 0.40 0.40
+[p012_c0005] _Master Page # 12 of 33 - Finance Committee Meeting 4/25/2022_
+
+## Page 13
+
+### [p013_c0001] BUDGETWATCH Regional Economy Report
+> [p013_c0002] 12 Month Average Ridership - NYCT Bus Month Weekday Saturday Sunday Jan-17 1.00 1.00 1.00 Apr-17 0.98 0.98 0.98 Jul-17 0.96 0.96 0.96 Oct-17 0.95 0.95 0.95 Jan-18 0.93 0.93 0.93 Apr-18 0.92 0.92 0.92 Jul-18 0.91 0.91 0.91 Oct-18 0.90 0.90 0.90 Jan-19 0.89 0.89 0.89 Apr-19 0.88 0.88 0.88 Jul-19 0.87 0.87 0.87 Oct-19 0.86 0.86 0.86 Jan-20 0.85 0.85 0.85 Apr-20 0.75 0.75 0.75 Jul-20 0.55 0.55 0.55 Oct-20 0.40 0.40 0.40 Jan-21 0.28 0.28 0.28 Apr-21 0.25 0.25 0.25 Jul-21 0.40 0.45 0.45 Oct-21 0.45 0.50 0.50 Jan-22 0.48 0.52 0.52
+> [p013_c0003] 12 Month Average Ridership by Time of Day - NYCT Bus Month 12 AM - 6 AM 6 AM - 9 AM 9 AM - 4 PM 4 PM - 7 PM 7 PM - 12 AM Jan-17 1.00 1.00 1.00 1.00 1.00 Apr-17 0.99 0.98 0.98 0.98 0.98 Jul-17 0.98 0.97 0.97 0.97 0.97 Oct-17 0.97 0.96 0.96 0.96 0.96 Jan-18 0.96 0.95 0.95 0.95 0.95 Apr-18 0.95 0.94 0.94 0.94 0.94 Jul-18 0.94 0.93 0.93 0.93 0.93 Oct-18 0.93 0.92 0.92 0.92 0.92 Jan-19 0.92 0.91 0.91 0.91 0.91 Apr-19 0.91 0.90 0.90 0.90 0.90 Jul-19 0.90 0.89 0.89 0.89 0.89 Oct-19 0.90 0.89 0.89 0.89 0.89 Jan-20 0.90 0.89 0.89 0.89 0.89 Apr-20 0.80 0.75 0.75 0.75 0.75 Jul-20 0.55 0.50 0.50 0.50 0.50 Oct-20 0.45 0.40 0.40 0.40 0.40 Jan-21 0.35 0.30 0.30 0.30 0.30 Apr-21 0.35 0.25 0.25 0.25 0.20 Jul-21 0.55 0.40 0.40 0.40 0.35 Oct-21 0.55 0.45 0.45 0.45 0.38 Jan-22 0.55 0.50 0.50 0.50 0.40
+[p013_c0004] _Master Page # 13 of 33 - Finance Committee Meeting 4/25/2022_
+
+## Page 14
+
+### [p014_c0001] BUDGETWATCH Regional Economy Report
+> [p014_c0002] 12 Month Average Ridership - MTA Bus Month Weekday Saturday Sunday Jan-17 1.00 1.00 1.00 Apr-17 0.98 0.98 0.98 Jul-17 0.97 0.97 0.97 Oct-17 0.96 0.96 0.96 Jan-18 0.95 0.95 0.95 Apr-18 0.94 0.94 0.94 Jul-18 0.93 0.93 0.93 Oct-18 0.92 0.92 0.92 Jan-19 0.91 0.91 0.91 Apr-19 0.90 0.90 0.90 Jul-19 0.89 0.89 0.89 Oct-19 0.88 0.88 0.88 Jan-20 0.87 0.87 0.87 Apr-20 0.80 0.80 0.80 Jul-20 0.60 0.60 0.60 Oct-20 0.45 0.45 0.45 Jan-21 0.35 0.35 0.35 Apr-21 0.30 0.30 0.30 Jul-21 0.45 0.55 0.50 Oct-21 0.50 0.60 0.55 Jan-22 0.55 0.65 0.60
+> [p014_c0003] 12 Month Average Ridership by Time of Day - MTABus Month 12 AM - 6 AM 6 AM - 9 AM 9 AM - 4 PM 4 PM - 7 PM 7 PM - 12 AM Jan-17 1.00 1.00 1.00 1.00 1.00 Apr-17 0.99 0.99 0.99 0.99 0.99 Jul-17 0.98 0.98 0.98 0.98 0.98 Oct-17 0.97 0.97 0.97 0.97 0.97 Jan-18 0.96 0.96 0.96 0.96 0.96 Apr-18 0.95 0.95 0.95 0.95 0.95 Jul-18 0.94 0.94 0.94 0.94 0.94 Oct-18 0.93 0.93 0.93 0.93 0.93 Jan-19 0.92 0.92 0.92 0.92 0.92 Apr-19 0.91 0.91 0.91 0.91 0.91 Jul-19 0.90 0.90 0.90 0.90 0.90 Oct-19 0.89 0.89 0.89 0.89 0.89 Jan-20 0.88 0.88 0.88 0.88 0.88 Apr-20 0.80 0.80 0.80 0.80 0.80 Jul-20 0.60 0.60 0.60 0.60 0.60 Oct-20 0.45 0.45 0.45 0.45 0.45 Jan-21 0.35 0.35 0.35 0.35 0.35 Apr-21 0.20 0.20 0.20 0.20 0.20 Jul-21 0.35 0.45 0.40 0.35 0.30 Oct-21 0.50 0.55 0.55 0.50 0.40 Jan-22 0.60 0.65 0.65 0.60 0.50
+[p014_c0004] _Master Page # 14 of 33 - Finance Committee Meeting 4/25/2022_
+
+## Page 15
+
+### [p015_c0001] BUDGETWATCH Regional Economy Report
+> [p015_c0002] 12 Month Average Ridership - Long Island Rail Road Month Weekday Saturday Sunday Jan-17 1.00 1.00 1.00 Apr-17 1.00 1.00 1.00 Jul-17 1.00 1.00 1.00 Oct-17 1.00 1.00 1.00 Jan-18 1.00 1.00 1.00 Apr-18 1.00 1.00 1.00 Jul-18 1.00 1.00 1.00 Oct-18 1.00 1.00 1.00 Jan-19 1.00 1.00 1.00 Apr-19 1.00 1.00 1.00 Jul-19 1.00 1.00 1.00 Oct-19 1.00 1.00 1.00 Jan-20 1.00 1.00 1.00 Apr-20 0.80 0.80 0.80 Jul-20 0.60 0.60 0.60 Oct-20 0.40 0.40 0.40 Jan-21 0.25 0.25 0.25 Apr-21 0.20 0.30 0.30 Jul-21 0.25 0.40 0.40 Oct-21 0.30 0.50 0.50 Jan-22 0.35 0.65 0.65
+> [p015_c0003] 12 Month Average Ridership - Metro-North Railroad Month Weekday Saturday Sunday Jan-17 1.00 1.00 1.00 Apr-17 1.00 1.00 1.00 Jul-17 1.00 1.00 1.00 Oct-17 1.00 1.00 1.00 Jan-18 1.00 1.00 1.00 Apr-18 1.00 1.00 1.00 Jul-18 1.00 1.00 1.00 Oct-18 1.00 1.00 1.00 Jan-19 1.00 1.00 1.00 Apr-19 1.00 1.00 1.00 Jul-19 1.00 1.00 1.00 Oct-19 1.00 1.00 1.00 Jan-20 1.00 1.00 1.00 Apr-20 0.80 0.80 0.80 Jul-20 0.60 0.60 0.60 Oct-20 0.40 0.40 0.40 Jan-21 0.25 0.25 0.25 Apr-21 0.15 0.25 0.25 Jul-21 0.20 0.35 0.35 Oct-21 0.25 0.45 0.45 Jan-22 0.35 0.60 0.60
+[p015_c0004] _Master Page # 15 of 33 - Finance Committee Meeting 4/25/2022_
+
+## Page 16
+
+### [p016_c0001] BUDGETWATCH Regional Economy Report
+> [p016_c0002] 12 Month Average Ridership - Staten Island Railway Month Weekday Saturday Sunday Jan-17 1.00 1.00 1.00 Apr-17 1.00 1.00 1.00 Jul-17 1.00 1.00 1.00 Oct-17 1.00 1.00 1.05 Jan-18 1.00 1.05 1.08 Apr-18 1.00 1.10 1.10 Jul-18 1.02 1.10 1.08 Oct-18 1.00 1.05 1.02 Jan-19 1.00 1.00 1.02 Apr-19 1.00 0.95 0.95 Jul-19 0.98 0.90 0.90 Oct-19 0.98 0.70 0.70 Jan-20 0.98 0.60 0.60 Apr-20 0.95 0.45 0.45 Jul-20 0.70 0.25 0.25 Oct-20 0.50 0.18 0.18 Jan-21 0.35 0.15 0.15 Apr-21 0.20 0.15 0.15 Jul-21 0.25 0.18 0.18 Oct-21 0.30 0.25 0.25 Jan-22 0.35 0.30 0.30
+> [p016_c0003] 12 Month Average Traffic - Bridges & Tunnels Month Weekday Weekend Jan-14 1.00 1.00 Apr-14 0.98 1.00 Jul-14 0.99 1.01 Oct-14 1.00 1.02 Jan-15 1.01 1.03 Apr-15 1.02 1.04 Jul-15 1.03 1.06 Oct-15 1.04 1.08 Jan-16 1.05 1.09 Apr-16 1.07 1.09 Jul-16 1.08 1.09 Oct-16 1.08 1.09 Jan-17 1.08 1.09 Apr-17 1.08 1.09 Jul-17 1.09 1.09 Oct-17 1.09 1.10 Jan-18 1.10 1.11 Apr-18 1.11 1.12 Jul-18 1.12 1.13 Oct-18 1.13 1.15 Jan-19 1.14 1.16 Apr-19 1.15 1.18 Jul-19 1.15 1.19 Oct-19 1.15 1.20 Jan-20 1.15 1.20 Apr-20 1.15 1.20 Jul-20 1.00 1.00 Oct-20 0.95 0.95 Jan-21 0.88 0.85 Apr-21 0.95 0.92
+[p016_c0004] _Master Page # 16 of 33 - Finance Committee Meeting 4/25/2022_
+
+## Page 17
+
+### [p017_c0001] BUDGETWATCH Regional Economy Report
+### [p017_c0002] Consumer Price Index
+### [p017_c0003] Goods Reporting Month-over-Month Price Increases
+- [p017_c0004] • Apparel • Electric • Food • Gasoline • Medical Care • Transportation
+### [p017_c0005] Goods Reporting Month-over-Month Price Declines
+- [p017_c0006] • none
+[p017_c0007]
+
+```text
+Mar-22 Feb-22 Mar-21 Mar-22 versus Feb-22 Mar-21 Net Pct Net Pct Regional CPI-U 305.02 301.15 287.48 3.87 1.3% 17.54 6.1% Medical Care Component 555.77 552.26 534.62 3.51 0.6% 21.15 4.0% Electricity Component 200.12 174.29 167.49 25.83 14.8% 32.63 19.5% Gasoline (all grades) Component 334.60 284.07 226.86 50.52 17.8% 107.74 47.5% National CPI-U 287.50 283.72 264.88 3.79 1.3% 22.63 8.5%
+```
+> [p017_c0008] Regional Inflation Trend: CPI-U, Gasoline Component, Electricity Component Estimated Data Points from Chart Month CPI-U NY Gasoline (All Types) Electricity Jan-17 100.0 100.0 100.0 Jul-17 100.0 100.0 110.0 Jan-18 100.0 105.0 100.0 Jul-18 102.0 120.0 110.0 Jan-19 102.0 100.0 100.0 Jul-19 105.0 115.0 100.0 Jan-20 105.0 105.0 100.0 Jul-20 105.0 90.0 110.0 Jan-21 105.0 90.0 105.0 Jul-21 110.0 125.0 110.0 Jan-22 112.0 170.0 110.0
+[p017_c0009] _Master Page # 17 of 33 - Finance Committee Meeting 4/25/2022_
+
+## Page 18
+
+### [p018_c0001] BUDGETWATCH Regional Economy Report
+### [p018_c0002] Fuel Prices
+[p018_c0003]
+
+```text
+Fuel - Spot Prices NY Harbor, except Crude Oil (WTI) Latest Price: 4/11/22 Mar-22 Feb-22 Mar-21 Mar-22 versus Feb-22 Mar-21 Crude Oil ($/bbl) 94.22 108.50 91.64 62.33 18.4% 74.1% Conventional Regular Gasoline ($/gal) 3.00 3.18 2.74 1.99 16.2% 60.3% Low Sulfur No.2 Diesel Fuel ($/gal) 3.48 3.78 2.87 1.85 31.6% 104.0% No.2 Heating Oil ($/gal) 3.40 3.64 2.74 1.70 32.8% 113.3%
+```
+> [p018_c0004] Change in Spot Fuel Prices Estimated Data Points from Chart Date Crude Oil (WTI) ($/bbl) No.2 Diesel Low Sulfur (NY Harbor) ($/gal) Jan-17 100.0 100.0 Mar-17 98.0 98.0 May-17 95.0 95.0 Jul-17 90.0 90.0 Sep-17 95.0 95.0 Nov-17 100.0 100.0 Jan-18 110.0 110.0 Mar-18 120.0 120.0 May-18 125.0 125.0 Jul-18 120.0 120.0 Sep-18 125.0 125.0 Nov-18 130.0 130.0 Jan-19 100.0 100.0 Mar-19 110.0 110.0 May-19 120.0 120.0 Jul-19 110.0 110.0 Sep-19 110.0 110.0 Nov-19 110.0 110.0 Jan-20 115.0 115.0 Mar-20 100.0 100.0 May-20 35.0 35.0 Jul-20 80.0 80.0 Sep-20 85.0 85.0 Nov-20 80.0 80.0 Jan-21 90.0 90.0 Mar-21 110.0 110.0 May-21 120.0 120.0 Jul-21 130.0 130.0 Sep-21 130.0 130.0 Nov-21 150.0 150.0 Jan-22 140.0 140.0 Mar-22 210.0 230.0
+[p018_c0005] _Master Page # 18 of 33 - Finance Committee Meeting 4/25/2022_
+
+## Page 19
+
+### [p019_c0001] BUDGETWATCH Regional Economy Report
+[p019_c0002]
+
+```text
+Nassau, Suffolk Employment (in thousands) Feb-22 versus Prelim Feb-22 Revised Jan-22 Feb-21 Jan-22 Feb-21 Net Percent Net Percent Total Employment 1,276.2 1,265.2 1,222.0 11.0 0.9% 54.2 4.4% Goods Producing 141.9 141.2 138.2 0.7 0.5% 3.7 2.7% Construction, Mining, Nat Res 75.0 75.5 71.1 -0.5 -0.7% 3.9 5.5% Manufacturing 66.9 65.7 67.1 1.2 1.8% -0.2 -0.3% Service Providing 1,134.3 1,124.0 1,083.8 10.3 0.9% 50.5 4.7% Transportation, Utilities 43.7 44.8 40.6 -1.1 -2.5% 3.1 7.6% Trade 206.0 204.2 201.5 1.8 0.9% 4.5 2.2% Information 14.2 14.1 13.7 0.1 0.7% 0.5 3.6% Financial Activities 70.2 69.9 68.7 0.3 0.4% 1.5 2.2% Professional & Business Svcs 167.5 165.7 156.5 1.8 1.1% 11.0 7.0% Education & Health Svcs 266.0 261.9 267.4 4.1 1.6% -1.4 -0.5% Leisure & Hospitality 114.0 113.4 93.1 0.6 0.5% 20.9 22.4% Other Services 55.0 55.2 50.3 -0.2 -0.4% 4.7 9.3% Government 197.7 194.8 192.0 2.9 1.5% 5.7 3.0%
+```
+[p019_c0003]
+
+```text
+Orange, Rockland, Westchester Employment (in thousands) Feb-22 versus Prelim Feb-22 Revised Jan-22 Feb-21 Jan-22 Feb-21 Net Percent Net Percent Total Employment 679.1 672.1 660.2 7.0 1.0% 18.9 2.9% Goods Producing 70.6 69.9 67.2 0.7 1.0% 3.4 5.1% Construction, Mining, Nat Res 41.9 41.4 39.9 0.5 1.2% 2.0 5.0% Manufacturing 28.7 28.5 27.3 0.2 0.7% 1.4 5.1% Service Providing 608.5 602.2 593.0 6.3 1.0% 15.5 2.6% Transportation, Utilities 25.6 25.7 24.1 -0.1 -0.4% 1.5 6.2% Trade 0.0 0.0 0.0 0.0 #DIV/0! 0.0 #DIV/0! Information 11.2 11.1 10.5 0.1 0.9% 0.7 6.7% Financial Activities 35.3 36.0 35.7 -0.7 -1.9% -0.4 -1.1% Professional & Business Svcs 90.4 90.5 87.7 -0.1 -0.1% 2.7 3.1% Education & Health Svcs 153.5 150.3 154.5 3.2 2.1% -1.0 -0.6% Leisure & Hospitality 54.7 52.4 44.9 2.3 4.4% 9.8 21.8% Other Services 31.7 31.1 27.8 0.6 1.9% 3.9 14.0% Government 99.7 98.7 104.8 1.0 1.0% -5.1 -4.9%
+```
+[p019_c0004]
+
+```text
+Dutchess, Putnam Employment (in thousands) Feb-22 versus Prelim Feb-22 Revised Jan-22 Feb-21 Jan-22 Feb-21 Net Percent Net Percent Total Employment 138.4 136.1 133.4 2.3 1.7% 5.0 3.7% Goods Producing 15.9 15.9 16.1 0.0 0.0% -0.2 -1.2% Construction, Mining, Nat Res 7.5 7.7 7.8 -0.2 -2.6% -0.3 -3.8% Manufacturing 8.4 8.2 8.3 0.2 2.4% 0.1 1.2% Service Providing 122.5 120.2 117.3 2.3 1.9% 5.2 4.4% Transportation, Utilities 4.0 4.2 3.9 -0.2 -4.8% 0.1 2.6% Trade 19.6 19.5 18.9 0.1 0.5% 0.7 3.7% Information 1.6 1.6 1.4 0.0 0.0% 0.2 14.3% Financial Activities 4.9 4.9 4.8 0.0 0.0% 0.1 2.1% Professional & Business Svcs 13.3 12.9 12.1 0.4 3.1% 1.2 9.9% Education & Health Svcs 35.2 34.2 34.7 1.0 2.9% 0.5 1.4% Leisure & Hospitality 13.0 12.3 11.0 0.7 5.7% 2.0 18.2% Other Services 6.2 6.2 6.0 0.0 0.0% 0.2 3.3% Government 24.7 24.4 24.5 0.3 1.2% 0.2 0.8%
+```
+[p019_c0005] _Master Page # 19 of 33 - Finance Committee Meeting 4/25/2022_
+
+## Page 20
+
+### [p020_c0001] BUDGETWATCH Regional Economy Report
+> [p020_c0002] Nassau / Suffolk Employment (in thousands) Month 2019 2020 2021 2022 Jan 1,320 1,320 1,220 1,270 Feb 1,320 1,320 1,220 1,280 Mar 1,330 1,310 1,230 1,230 Apr 1,340 1,040 1,260 1,260 May 1,350 1,090 1,270 1,270 Jun 1,370 1,150 1,290 1,290 Jul 1,360 1,180 1,290 1,290 Aug 1,350 1,200 1,280 1,280 Sep 1,340 1,220 1,280 1,280 Oct 1,350 1,250 1,300 1,300 Nov 1,360 1,260 1,310 1,310 Dec 1,360 1,260 1,310 1,310
+> [p020_c0003] Orange / Rockland / Westchester Employment (in thousands) Month 2019 2020 2021 2022 Jan 710 720 660 665 Feb 715 725 660 670 Mar 720 710 665 665 Apr 735 580 675 675 May 740 600 685 685 Jun 745 620 690 690 Jul 745 630 685 685 Aug 740 640 680 680 Sep 730 650 675 675 Oct 740 670 680 680 Nov 750 670 685 685 Dec 750 670 685 685
+> [p020_c0004] Dutchess / Putnam Employment (in thousands) Month 2019 2020 2021 2022 Jan 145 145 132 136 Feb 147 147 134 138 Mar 148 145 136 136 Apr 149 120 139 139 May 150 125 140 140 Jun 149 128 139 139 Jul 149 130 138 138 Aug 147 132 137 137 Sep 148 135 138 138 Oct 151 138 140 140 Nov 151 139 140 140 Dec 150 138 141 141
+[p020_c0005] _Master Page # 20 of 33 - Finance Committee Meeting 4/25/2022_
+
+## Page 21
+
+> [p021_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p021_c0002] Report to the Finance Committee Review of Variable Rate Debt
+[p021_c0003] MTA Finance Department Patrick J. McCoy, Deputy Chief, Financial Services April 25, 2022
+[p021_c0004] _Master Page # 21 of 33 - Finance Committee Meeting 4/25/2022_
+
+## Page 22
+
+> [p022_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p022_c0002] MTA's Variable Rate Debt Policy
+- [p022_c0003] • The Authority desires to achieve the lowest possible interest cost on its debt and maintain a prudent level of interest rate risk. Therefore, the following policy shall apply:
+[p022_c0004] The Authority may issue Variable Rate Debt in such amounts as deemed necessary and/or beneficial by staff to provide funding for Approved Capital Programs or to refund existing obligations of the Authority. Upon such issuance, the principal amount of Variable Rate Debt outstanding shall not exceed 25% of the aggregate principal amount of all outstanding obligations of the Authority...
+### [p022_c0005] Notes:
+- [p022_c0006] (1) MTA Board adopted the Variable Rate Policy on May 25, 2005 (2) Synthetic Fixed Rate presentation is scheduled to be presented to the Finance Committee in October 2022
+[p022_c0007] _MTA Report # 22-0231 Finance Committee Meeting 4/25/2022_
+[p022_c0008] _2_
+
+## Page 23
+
+### [p023_c0001] Unhedged Variable Rate Debt is 3% of Total
+[p023_c0002] $ in billions
+> [p023_c0003] A 3D pie chart illustrating the composition of MTA debt. The chart is divided into four segments: a large blue segment for Fixed Rate debt, a purple segment for Term Rate debt, a green segment for Unhedged Variable Rate debt, and an orange segment for Hedged/Synthetic Fixed Rate debt. Each segment is labeled with its name, value in billions, and percentage of the total. Rate Type Value ($ billions) Percentage Fixed Rate $42.03 89% Term Rate $1.65 4% Unhedged Variable Rate $1.31 3% Hedged/Synthetic Fixed Rate $2.08 4%
+### [p023_c0004] Notes:
+- [p023_c0005] (1) Term Rate bonds have a fixed rate for a defined period (until the mandatory tender date) but do not have a fixed rate for the entire life of the bonds (2) Fixed Rate includes $6.1 billion Bond Anticipation Notes (3) Excludes $824.8 million Hudson Rail Yard Trust Obligations (4) Data is as of 3/31/2022
+[p023_c0006] _Master Page # 23 of 33 - Finance Committee Meeting 4/25/2022_
+[p023_c0007] _3_
+
+## Page 24
+
+> [p024_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p024_c0002] Types of Variable Rate Debt in MTA's Debt Portfolio
+- [p024_c0003] • Variable Rate Demand Bonds ("VRDBs"), $2.2 billion outstanding – Interest rate is determined daily or weekly, depending on the interest rate mode; Remarketing Agent markets bonds tendered, and sets the interest rate on each reset date – Optional tenders are supported by bank letters of credit and standby bond purchase agreements • Floating Rate Notes ("FRNs"), $1.2 billion outstanding – Interest rate is determined based on a set spread to a floating index (SIFMA, SOFR, or LIBOR*)
+[p024_c0004] _Note: Data is as of 3/31/2022_
+[p024_c0005] _Master Page # 24 of 33 - Finance Committee Meeting 4/25/2022 * LIBOR is being phased out, and MTA will no longer use LIBOR as a reference rate in variable rate issuances._
+[p024_c0006] _4_
+
+## Page 25
+
+> [p025_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p025_c0002] Variable Rate and Synthetic Fixed Rate Debt Diversification
+[p025_c0003] $ in millions
+> [p025_c0004] A 3D pie chart illustrating the composition of Variable Rate and Synthetic Fixed Rate Debt Diversification. The chart is divided into three segments: Floating Rate Notes (light green, 36%, $1,223M), Weekly VRDB (blue, 33%, $1,106M), and Daily VRDB (red, 31%, $1,056M). The segments are labeled with their names, dollar amounts, and percentages. Debt Type Amount ($ in millions) Percentage Floating Rate Notes $1,223 36% Weekly VRDB $1,106 33% Daily VRDB $1,056 31%
+[p025_c0005] _Note: Data is as of 3/31/2022 Master Page # 25 of 33 - Finance Committee Meeting 4/25/2022_
+[p025_c0006] _5_
+
+## Page 26
+
+### [p026_c0001] Unhedged Variable Rate Debt has Declined
+> [p026_c0002] $ Billion Par Amount of Unhedged Variable Rate Debt Outstanding Unhedged Variable Rate Debt % of Total Debt Outstanding Year $ Billion Par Amount of Unhedged Variable Rate Debt Outstanding Unhedged Variable Rate Debt % of Total Debt Outstanding 2008 $2.70 21.0 2009 $2.75 11.0 2010 $2.40 10.0 2011 $2.23 8.0 2012 $2.30 7.0 2013 $2.53 8.0 2014 $2.60 8.0 2015 $2.68 8.0 2016 $2.72 7.0 2017 $2.37 6.0 2018 $2.27 6.0 2019 $2.14 5.0 2020 $1.95 4.0 2021 $1.39 2.5 2022 $1.31 2.5
+[p026_c0003] Note: All totals are as of March 31 of their respective year.
+[p026_c0004] _Master Page # 26 of 33 - Finance Committee Meeting 4/25/2022_
+[p026_c0005] _6_
+
+## Page 27
+
+### [p027_c0001] Tax-Exempt Bond Rate History
+> [p027_c0002] 30-Year Tax-Exempt Bond Rate Average 2.29% High 3.46% Low 1.27% Weekly SIFMA Rate Average 0.83% High 5.20% Low 0.02%
+- [p027_c0003] • Long-term tax-exempt bond rates (MMD) declined steadily since late-2018, increased significantly to 3.37% in mid-March 2020, reached an all-time low of 1.27% in mid-August 2020, and then trended upward to 2.53% on March 31, 2022 (Average since January 2017 is 2.29%) • After resetting mostly in the 1% to 2% range since 2018, short-term rates spiked to 5.20% in mid-March 2020, and declined significantly thereafter to 0.51% on March 31, 2022 (Average since January 2017 is 0.83%)
+[p027_c0004] _Master Page # 27 of 33 - Finance Committee Meeting 4/25/2022_
+[p027_c0005] _7_
+
+## Page 28
+
+### [p028_c0001] 2021 Variable Rate Bonds Performance
+> [p028_c0002] MTA Variable Rate Bonds Weighted Daily Average Rates (2) MTA Variable Rate Bonds 2021 Average Weighted Daily Rates (2) ; 0.64% Other Benchmark Rates (2021 Average) RBI (1) 2.54% 30-Year MMD 1.54% 30-Year Treasury 2.05% 1-Year Treasury 0.10% SIFMA 0.04% MTA Variable Rate Bonds (2) 0.64%
+### [p028_c0003] Notes:
+- [p028_c0004] (1) Revenue Bond Index (RBI) is the average yield on 25 revenue bonds with 30-year maturities and that have an average rating that is equivalent to A1 for Moody's and A+ for S&P (2) Average rate is inclusive of remarketing and LOG fees
+[p028_c0005] _Master Page # 28 of 33 - Finance Committee Meeting 4/25/2022_
+[p028_c0006] _8_
+
+## Page 29
+
+### [p029_c0001] Liquidity Expirations, FRN and Term Rate Bond Reset Dates by Year
+[p029_c0002] $ in millions
+> [p029_c0003] A stacked bar chart showing the reset dates for three categories of bonds: Expiring Liquidity (blue), FRNs (red), and Term Rate Bonds (green). The y-axis represents the amount in millions of dollars, ranging from $0 to $2,500. The x-axis shows the years from 2022 to 2026. The data points are as follows: Year Expiring Liquidity FRNs Term Rate Bonds 2022 788 394 278 2023 413 194 0 2024 394 404 688 2025 383 75 0 2026 186 100 321
+- [p029_c0004] • 2022 Outlook: $788 million of VRDBs, $394 million of FRNs and $278 million of term rate bonds have tender dates remaining in 2022
+[p029_c0005] _Note: Data is as of 3/31/2022 Master Page # 29 of 33 - Finance Committee Meeting 4/25/2022_
+[p029_c0006] _9_
+
+## Page 30
+
+> [p030_c0001] The MTA logo, consisting of the letters "MTA" in white inside a blue circle.
+### [p030_c0002] Appendix
+- [p030_c0003] • 2022 VRDB, FRN, and Term Rate Bonds Tender Dates Schedule • Remarketing Agents • Credit/Liquidity Support Providers
+[p030_c0004] _Master Page # 30 of 33 - Finance Committee Meeting 4/25/2022_
+[p030_c0005] _10_
+
+## Page 31
+
+### [p031_c0001] Remaining 2022 VRDB, FRN, and Term Rate Bonds Tender Dates Schedule
+[p031_c0002]
+
+```text
+Bond Series Outstanding Par ($ millions) Mode Credit/Liquidity Support Provider Exp./Reset Date TBTA 2005B-4c 82.500 Daily U.S. Bank National Association 5/26/2022 DTF 2008A-2a 58.015 FRN NA 6/1/2022 TRB 2012A-2 50.000 Weekly BMO Harris Bank, N.A. 6/2/2022 DTF 2008A-1 142.870 Daily TD Bank, N.A. 6/13/2022 TRB 2015E-3 154.850 Daily Bank of America, N.A. 9/2/2022 DTF 2008A-2b 84.855 Weekly PNC Bank National Association 10/31/2022 DTF 2008B-3c 44.740 Weekly PNC Bank National Association 10/31/2022 TRB 2011B 99.560 FRN NA 11/1/2022 TRB 2012G-4 71.075 FRN NA 11/1/2022 TRB 2005D-2 79.425 Daily Landesbank Hessen-Thüringen Girozentrale 11/10/2022 TRB 2014D-2 165.000 FRN NA 11/15/2022 TRB 2018A-2 277.610 PUT NA 11/15/2022 TBTA 2018E Taxable 148.470 Weekly Bank of America, N.A. 12/12/2022
+```
+[p031_c0003] Note: Data is as of 3/31/2022.
+[p031_c0004] Complete schedule is available at https://www3.mta.info/Investor-Content/Noticing/1/25/2022
+[p031_c0005] _11_
+
+## Page 32
+
+### [p032_c0001] Variable Rate Demand Bonds Liquidity Providers
+[p032_c0002] $ in millions
+> [p032_c0003] Liquidity Provider Amount ($ in millions) Percentage Barclays Bank PLC 473.28 22% State Street Bank and Trust Company 454.63 21% Bank of America, N.A. 362.89 17% TD Bank, N.A. 292.16 13% PNC Bank National Association 272.00 13% U.S. Bank National Association 178.84 8% Landesbank Hessen-Thüringen Girozentrale 79.43 4% BMO Harris Bank, N.A. 50.00 2%
+[p032_c0004] _Note: Data is as of 3/31/2022. Master Page # 32 of 33 - Finance Committee Meeting 4/25/2022_
+[p032_c0005] _12_
+
+## Page 33
+
+### [p033_c0001] Variable Rate Demand Bonds Remarketing Agents
+[p033_c0002] $ in millions
+> [p033_c0003] A 3D pie chart illustrating the distribution of Variable Rate Demand Bonds Remarketing Agents. The chart is divided into ten segments, each representing a firm and its corresponding percentage of the total. The segments are color-coded and labeled with the firm name, dollar amount in millions, and percentage. Firm Amount ($ in millions) Percentage Barclays Capital, Inc. 473.28 22% BofA Securities 362.89 17% PNC Capital Markets LLC 272.00 12% TD Securities 267.87 12% Clarity BidRate Alternative Trading System 236.10 11% Jefferies 186.10 9% US Bancorp 178.84 8% Goldman Sachs & Co. 106.71 5% Morgan Stanley & Co. LLC 79.43 4%
+[p033_c0004] _Note: Data is as of 3/31/2022. Master Page # 33 of 33 - Finance Committee Meeting 4/25/2022_
+[p033_c0005] _13_

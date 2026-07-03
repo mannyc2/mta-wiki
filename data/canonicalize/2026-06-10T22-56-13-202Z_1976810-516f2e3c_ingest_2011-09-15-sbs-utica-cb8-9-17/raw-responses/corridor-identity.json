@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T22-56-13-202Z_1976810-516f2e3c_ingest_2011-09-15-sbs-utica-cb8-9-17",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-11T01:11:21.194Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "utica-av-2011-self-resolve",
+        "local_observation_id": "corridor_utica_avenue_carrol_church_2011",
+        "decision": "new",
+        "rationale": "Observation base_record_id 'corridor_utica-av' matches an existing canonical registry record with identical street (Utica Avenue), limits (Carroll St. to Church Ave.), borough (Brooklyn), and the observation's source_id (2011_09_15_sbs_utica_cb8_9_17) is already in that record's source_ids. The record alias 'corridor_utica-avenue-carrol-church-2011' directly mirrors the observation label. No different record is a closer match — the observation resolves to its own base_record_id, so decision is 'new'.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_09_15_sbs_utica_cb8_9_17",
+            "block_id": "p008_c0003",
+            "source_quote": "Study Area: Carroll St. to Church Ave."
+          },
+          {
+            "source_id": "2011_09_15_sbs_utica_cb8_9_17",
+            "block_id": "p008_c0002",
+            "source_quote": "Utica Ave. Corridor Study"
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-10-50-869Z_2111393-8cbe1d1b_canonicalize_2026-06-10t22-56-13-202z-1976810-516f2e3c-ingest-2011-09-15-sbs-utica-cb8-9-17-corridor-identity"
+}

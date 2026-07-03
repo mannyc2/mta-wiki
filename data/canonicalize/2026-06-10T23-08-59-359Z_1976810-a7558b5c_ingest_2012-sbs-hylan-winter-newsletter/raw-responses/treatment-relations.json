@@ -1,0 +1,481 @@
+{
+  "run_id": "2026-06-10T23-08-59-359Z_1976810-a7558b5c_ingest_2012-sbs-hylan-winter-newsletter",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T03:15:47.270Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-tsp-hylan",
+        "local_observation_id": "treatment_tsp_hylan_winter_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_tsp-hylan-winter-2012",
+            "description": "Transit Signal Priority as part of Hylan Boulevard Transportation Improvement Study",
+            "evidence_refs": [
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p001_c0005",
+                "source_quote": "3. Transit Signal Priority (TSP) extends the green light or shortens the red light to keep buses moving."
+              },
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p003_c0006",
+                "source_quote": "Transit Signal Priority (TSP)"
+              }
+            ]
+          }
+        ],
+        "rationale": "TSP is explicitly listed as item 3 in the COMING IN 2012 improvements (p001_c0005) and in the THROUGHOUT THE CORRIDOR list (p003_c0006), both under the Hylan Boulevard Transportation Improvement Study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p001_c0005",
+            "source_quote": "3. Transit Signal Priority (TSP) extends the green light or shortens the red light to keep buses moving."
+          },
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p003_c0006",
+            "source_quote": "Transit Signal Priority (TSP)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-lanes-hylan",
+        "local_observation_id": "treatment_bus_lanes_hylan_winter_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_bus-lanes-hylan-winter-2012",
+            "description": "Bus lanes at key locations on Hylan Boulevard",
+            "evidence_refs": [
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p001_c0005",
+                "source_quote": "4. Bus lanes at key locations bring faster and more reliable service to all bus riders."
+              },
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p003_c0003",
+                "source_quote": "Bus Lanes (peak period on Hylan Blvd.)"
+              },
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p003_c0007",
+                "source_quote": "Bus Lanes"
+              }
+            ]
+          }
+        ],
+        "rationale": "Bus lanes are listed as item 4 in the COMING IN 2012 improvements (p001_c0005), shown in the MAP KEY as 'Bus Lanes (peak period on Hylan Blvd.)' (p003_c0003), and captioned as 'Bus Lanes' on p003_c0007, all within the Hylan Boulevard Transportation Improvement Study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p001_c0005",
+            "source_quote": "4. Bus lanes at key locations bring faster and more reliable service to all bus riders."
+          },
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p003_c0003",
+            "source_quote": "Bus Lanes (peak period on Hylan Blvd.)"
+          },
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p003_c0007",
+            "source_quote": "Bus Lanes"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-ped-refuge-islands-hylan",
+        "local_observation_id": "treatment_pedestrian_refuge_islands_hylan_winter_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_pedestrian-refuge-islands-hylan-winter-2012",
+            "description": "Pedestrian refuge islands throughout the Hylan Boulevard corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p001_c0005",
+                "source_quote": "5. Pedestrian refuge islands improve safety by reducing crossing distances."
+              },
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p003_c0006",
+                "source_quote": "Pedestrian Refuge Islands"
+              }
+            ]
+          }
+        ],
+        "rationale": "Pedestrian refuge islands are listed as item 5 in the COMING IN 2012 improvements (p001_c0005) and in the THROUGHOUT THE CORRIDOR list (p003_c0006), both within the Hylan Boulevard Transportation Improvement Study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p001_c0005",
+            "source_quote": "5. Pedestrian refuge islands improve safety by reducing crossing distances."
+          },
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p003_c0006",
+            "source_quote": "Pedestrian Refuge Islands"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-advance-signals-hylan",
+        "local_observation_id": "treatment_advance_signals_hylan_winter_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_advance-signals-hylan-winter-2012",
+            "description": "Advance signals for the Hylan Boulevard corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p001_c0005",
+                "source_quote": "6. Advance signals allow for more efficient and safer traffic flow and enable buses to bypass congestion."
+              },
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p003_c0011",
+                "source_quote": "Advance Signals"
+              }
+            ]
+          }
+        ],
+        "rationale": "Advance signals are listed as item 6 in the COMING IN 2012 improvements (p001_c0005) and captioned as 'Advance Signals' on p003_c0011, both within the Hylan Boulevard Transportation Improvement Study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p001_c0005",
+            "source_quote": "6. Advance signals allow for more efficient and safer traffic flow and enable buses to bypass congestion."
+          },
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p003_c0011",
+            "source_quote": "Advance Signals"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-upgraded-medians-hylan",
+        "local_observation_id": "treatment_upgraded_medians_hylan_winter_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_upgraded-medians-hylan-winter-2012",
+            "description": "Upgraded medians for the Hylan Boulevard corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p001_c0005",
+                "source_quote": "7. Upgraded medians improve safety and beautify the street."
+              }
+            ]
+          }
+        ],
+        "rationale": "Upgraded medians are explicitly listed as item 7 in the COMING IN 2012 improvements (p001_c0005) under the Hylan Boulevard Transportation Improvement Study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p001_c0005",
+            "source_quote": "7. Upgraded medians improve safety and beautify the street."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-sidewalk-improvements-hylan",
+        "local_observation_id": "treatment_sidewalk_improvements_hylan_winter_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_sidewalk-improvements-hylan-winter-2012",
+            "description": "Sidewalk improvements throughout the Hylan Boulevard corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p001_c0005",
+                "source_quote": "8. Sidewalk improvements enhance safety and access to bus stops."
+              },
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p003_c0006",
+                "source_quote": "Sidewalk Improvements"
+              },
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p003_c0008",
+                "source_quote": "Sidewalk Improvements"
+              }
+            ]
+          }
+        ],
+        "rationale": "Sidewalk improvements are explicitly listed as item 8 in the COMING IN 2012 improvements (p001_c0005), in the THROUGHOUT THE CORRIDOR list (p003_c0006), and captioned on p003_c0008, all within the Hylan Boulevard Transportation Improvement Study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p001_c0005",
+            "source_quote": "8. Sidewalk improvements enhance safety and access to bus stops."
+          },
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p003_c0006",
+            "source_quote": "Sidewalk Improvements"
+          },
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p003_c0008",
+            "source_quote": "Sidewalk Improvements"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-left-turn-bays-hylan",
+        "local_observation_id": "treatment_left_turn_bays_hylan_winter_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_left-turn-bays-hylan-winter-2012",
+            "description": "Left turn bays for the Hylan Boulevard corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p001_c0005",
+                "source_quote": "9. Left turn bays help reduce traffic congestion."
+              },
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p003_c0010",
+                "source_quote": "Left Turn Bays"
+              }
+            ]
+          }
+        ],
+        "rationale": "Left turn bays are listed as item 9 in the COMING IN 2012 improvements (p001_c0005) and captioned on p003_c0010, both within the Hylan Boulevard Transportation Improvement Study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p001_c0005",
+            "source_quote": "9. Left turn bays help reduce traffic congestion."
+          },
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p003_c0010",
+            "source_quote": "Left Turn Bays"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-improved-bus-stations-hylan",
+        "local_observation_id": "treatment_improved_bus_stations_hylan_winter_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_improved-bus-stations-hylan-winter-2012",
+            "description": "Improved bus stations throughout the Hylan Boulevard corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p001_c0005",
+                "source_quote": "10. Improved bus stations provide new bus shelters, more room for passengers, and make it easier for buses to pass each other."
+              },
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p003_c0006",
+                "source_quote": "Improved Bus Stations"
+              }
+            ]
+          }
+        ],
+        "rationale": "Improved bus stations are listed as item 10 in the COMING IN 2012 improvements (p001_c0005) and in the THROUGHOUT THE CORRIDOR list (p003_c0006), both within the Hylan Boulevard Transportation Improvement Study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p001_c0005",
+            "source_quote": "10. Improved bus stations provide new bus shelters, more room for passengers, and make it easier for buses to pass each other."
+          },
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p003_c0006",
+            "source_quote": "Improved Bus Stations"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-opt-signal-timing-hylan",
+        "local_observation_id": "treatment_optimized_signal_timing_hylan_winter_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_optimized-signal-timing-hylan-winter-2012",
+            "description": "Optimized signal timing throughout the Hylan Boulevard corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p001_c0005",
+                "source_quote": "2. Optimized signal timing improves progression of traffic."
+              },
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p003_c0006",
+                "source_quote": "Optimized Signal Timing"
+              }
+            ]
+          }
+        ],
+        "rationale": "Optimized signal timing is listed as item 2 in the COMING IN 2012 improvements (p001_c0005) and in the THROUGHOUT THE CORRIDOR list (p003_c0006), both within the Hylan Boulevard Transportation Improvement Study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p001_c0005",
+            "source_quote": "2. Optimized signal timing improves progression of traffic."
+          },
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p003_c0006",
+            "source_quote": "Optimized Signal Timing"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-streamlined-s79-hylan",
+        "local_observation_id": "treatment_streamlined_s79_hylan_winter_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_streamlined-s79-hylan-winter-2012",
+            "description": "Streamlined S79 bus service for the Hylan Boulevard corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p001_c0005",
+                "source_quote": "1. Streamlined S79 bus service would operate with fewer stops and a more direct route to save travel time."
+              },
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p003_c0009",
+                "source_quote": "Streamlined Bus Service"
+              }
+            ]
+          }
+        ],
+        "rationale": "Streamlined S79 service is listed as item 1 in the COMING IN 2012 improvements (p001_c0005) and captioned as 'Streamlined Bus Service' on p003_c0009, both within the Hylan Boulevard Transportation Improvement Study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p001_c0005",
+            "source_quote": "1. Streamlined S79 bus service would operate with fewer stops and a more direct route to save travel time."
+          },
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p003_c0009",
+            "source_quote": "Streamlined Bus Service"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-reconfig-bus-stations-hylan-long",
+        "local_observation_id": "treatment_reconfigured_bus_stations_hylan_long_term",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_reconfigured-bus-stations-hylan-long-term",
+            "description": "Reconfigured bus stations at Eltingville Transit Center, Yukon Avenue, and Staten Island Mall as long-term improvements for the Hylan Boulevard corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p002_c0002",
+                "source_quote": "Reconfigured bus stations at Eltingville Transit Center, Yukon Avenue, and Staten Island Mall improve safety and comfort for bus customers."
+              },
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p003_c0003",
+                "source_quote": "Reconfigured Bus Station"
+              }
+            ]
+          }
+        ],
+        "rationale": "Reconfigured bus stations are listed under POSSIBLE LONG TERM IMPROVEMENTS on page 2 (p002_c0002) and shown in the MAP KEY on page 3 (p003_c0003), both within the Hylan Boulevard Transportation Improvement Study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p002_c0002",
+            "source_quote": "Reconfigured bus stations at Eltingville Transit Center, Yukon Avenue, and Staten Island Mall improve safety and comfort for bus customers."
+          },
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p003_c0003",
+            "source_quote": "Reconfigured Bus Station"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-lay-by-lane-hylan-long",
+        "local_observation_id": "treatment_bus_lay_by_lane_hylan_long_term",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_bus-lay-by-lane-hylan-long-term",
+            "description": "Bus lay-by lane between Tysens Lane and Ebbetts Street as a long-term improvement for the Hylan Boulevard corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p002_c0003",
+                "source_quote": "Bus lay-by lane improves bus loading and traffic flow between Tysens Lane and Ebbetts Street."
+              },
+              {
+                "source_id": "2012_sbs_hylan_winter_newsletter",
+                "block_id": "p003_c0003",
+                "source_quote": "Bus Lay-By Lane"
+              }
+            ]
+          }
+        ],
+        "rationale": "The bus lay-by lane is listed under POSSIBLE LONG TERM IMPROVEMENTS on page 2 (p002_c0003) and shown in the MAP KEY on page 3 (p003_c0003), both within the Hylan Boulevard Transportation Improvement Study.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p002_c0003",
+            "source_quote": "Bus lay-by lane improves bus loading and traffic flow between Tysens Lane and Ebbetts Street."
+          },
+          {
+            "source_id": "2012_sbs_hylan_winter_newsletter",
+            "block_id": "p003_c0003",
+            "source_quote": "Bus Lay-By Lane"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-10-54-666Z_2111393-6615bea9_canonicalize_2026-06-10t23-08-59-359z-1976810-a7558b5c-ingest-2012-sbs-hylan-winter-newsletter-treatment-relations"
+}

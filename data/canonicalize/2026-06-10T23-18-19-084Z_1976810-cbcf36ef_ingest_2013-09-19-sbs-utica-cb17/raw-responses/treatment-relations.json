@@ -1,0 +1,243 @@
+{
+  "run_id": "2026-06-10T23-18-19-084Z_1976810-cbcf36ef_ingest_2013-09-19-sbs-utica-cb17",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T04:03:10.617Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-offset-bus-lane-carroll-church",
+        "local_observation_id": "treatment_offset_bus_lane_carroll_church",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_offset-bus-lane-carroll-church",
+            "description": "Proposed offset bus lane on Utica Avenue from Carroll St to Church Ave with bus bulbs and left turn prohibition",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19_sbs_utica_cb17",
+                "block_id": "p010_c0002",
+                "source_quote": "Improvement Concepts: Carroll St. to Church Ave."
+              },
+              {
+                "source_id": "2013_09_19_sbs_utica_cb17",
+                "block_id": "p012_c0006",
+                "source_quote": "Proposal for offset bus lanes, bus bulbs, LT prohibition"
+              }
+            ]
+          }
+        ],
+        "rationale": "p010_c0002 identifies this as part of the Utica Ave corridor improvements from Carroll St to Church Ave. p012_c0006 explicitly describes the proposal as part of the Utica Ave study.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19_sbs_utica_cb17",
+            "block_id": "p010_c0002",
+            "source_quote": "Improvement Concepts: Carroll St. to Church Ave."
+          },
+          {
+            "source_id": "2013_09_19_sbs_utica_cb17",
+            "block_id": "p012_c0006",
+            "source_quote": "Proposal for offset bus lanes, bus bulbs, LT prohibition"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-left-turn-bays",
+        "local_observation_id": "treatment_left_turn_bays",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_left-turn-bays",
+            "description": "Add left turn bays at some intersections and prohibit left turns elsewhere along Utica Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19_sbs_utica_cb17",
+                "block_id": "p011_c0005",
+                "source_quote": "add left turn bays at some intersections, prohibit left turns elsewhere"
+              }
+            ]
+          }
+        ],
+        "rationale": "p011_c0005 explicitly states 'add left turn bays at some intersections, prohibit left turns elsewhere' in the context of the Utica Avenue Bus Priority and Safety Study.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19_sbs_utica_cb17",
+            "block_id": "p011_c0005",
+            "source_quote": "add left turn bays at some intersections, prohibit left turns elsewhere"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-transit-signal-priority",
+        "local_observation_id": "treatment_transit_signal_priority",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_transit-signal-priority",
+            "description": "Implement Transit Signal Priority from Kings Highway to Broadway along Utica Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19_sbs_utica_cb17",
+                "block_id": "p017_c0003",
+                "source_quote": "Implement Transit Signal Priority from Kings Highway to Broadway (with NYCT)"
+              }
+            ]
+          }
+        ],
+        "rationale": "p017_c0003 explicitly states 'Implement Transit Signal Priority from Kings Highway to Broadway (with NYCT)' in the Traffic Signal Changes section of the Utica Avenue Bus Priority and Safety Study.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19_sbs_utica_cb17",
+            "block_id": "p017_c0003",
+            "source_quote": "Implement Transit Signal Priority from Kings Highway to Broadway (with NYCT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-signal-timing-optimization",
+        "local_observation_id": "treatment_signal_timing_optimization",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_signal-timing-optimization",
+            "description": "Optimize traffic signal offsets and increase signal cycle from 60 to 90-120 seconds along Utica Avenue corridor",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19_sbs_utica_cb17",
+                "block_id": "p017_c0003",
+                "source_quote": "Optimize traffic signal offsets for all traffic. Increase signal cycle from 60 seconds to 90-120 seconds."
+              }
+            ]
+          }
+        ],
+        "rationale": "p017_c0003 in the Traffic Signal Changes section of the Utica Avenue study explicitly states signal timing optimization plans for the corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19_sbs_utica_cb17",
+            "block_id": "p017_c0003",
+            "source_quote": "Optimize traffic signal offsets for all traffic. Increase signal cycle from 60 seconds to 90-120 seconds."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-bulbs-potential",
+        "local_observation_id": "treatment_bus_bulbs_potential",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_bus-bulbs-potential",
+            "description": "Potential future bus bulb locations at intersections along Utica Avenue including Montgomery St, Lefferts Blvd, Midwood St, Rutland Rd, and Church Ave",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19_sbs_utica_cb17",
+                "block_id": "p028_c0003",
+                "source_quote": "POTENTIAL FUTURE BUS BULB LOCATION"
+              },
+              {
+                "source_id": "2013_09_19_sbs_utica_cb17",
+                "block_id": "p029_c0003",
+                "source_quote": "POTENTIAL FUTURE BUS BULB LOCATION"
+              },
+              {
+                "source_id": "2013_09_19_sbs_utica_cb17",
+                "block_id": "p030_c0003",
+                "source_quote": "POTENTIAL FUTURE BUS BULB LOCATION"
+              },
+              {
+                "source_id": "2013_09_19_sbs_utica_cb17",
+                "block_id": "p031_c0002",
+                "source_quote": "POTENTIAL FUTURE BUS BULB LOCATION"
+              },
+              {
+                "source_id": "2013_09_19_sbs_utica_cb17",
+                "block_id": "p035_c0003",
+                "source_quote": "POTENTIAL FUTURE BUS BULB LOCATION"
+              }
+            ]
+          }
+        ],
+        "rationale": "Multiple detailed plan sheets in the Utica Avenue study identify potential future bus bulb locations along the corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19_sbs_utica_cb17",
+            "block_id": "p028_c0003",
+            "source_quote": "POTENTIAL FUTURE BUS BULB LOCATION"
+          },
+          {
+            "source_id": "2013_09_19_sbs_utica_cb17",
+            "block_id": "p030_c0003",
+            "source_quote": "POTENTIAL FUTURE BUS BULB LOCATION"
+          },
+          {
+            "source_id": "2013_09_19_sbs_utica_cb17",
+            "block_id": "p031_c0002",
+            "source_quote": "POTENTIAL FUTURE BUS BULB LOCATION"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-offset-bus-lane-st-johns-carroll",
+        "local_observation_id": "treatment_offset_bus_lane_st_johns_carroll",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_utica-ave-bus-priority-safety-study",
+            "object_id": "treatment_offset-bus-lane-st-johns-carroll",
+            "description": "Convert one travel lane to offset bus lane between St. Johns Pl and Carroll St on Utica Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "2013_09_19_sbs_utica_cb17",
+                "block_id": "p007_c0002",
+                "source_quote": "Proposed Plan: St. Johns Pl. to Carroll St."
+              },
+              {
+                "source_id": "2013_09_19_sbs_utica_cb17",
+                "block_id": "p009_c0004",
+                "source_quote": "Relocates bus lane to SB approach"
+              },
+              {
+                "source_id": "2013_09_19_sbs_utica_cb17",
+                "block_id": "p011_c0005",
+                "source_quote": "Convert one travel lane to 'offset' bus lane to reduce speeding, maximize parking, and benefit bus service"
+              }
+            ]
+          }
+        ],
+        "rationale": "p007_c0002 identifies this as part of the proposed plan for Utica Ave St. Johns Pl to Carroll St. p009_c0004 and p011_c0005 describe the offset bus lane treatment in the context of the Utica Avenue corridor study.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_09_19_sbs_utica_cb17",
+            "block_id": "p007_c0002",
+            "source_quote": "Proposed Plan: St. Johns Pl. to Carroll St."
+          },
+          {
+            "source_id": "2013_09_19_sbs_utica_cb17",
+            "block_id": "p009_c0004",
+            "source_quote": "Relocates bus lane to SB approach"
+          },
+          {
+            "source_id": "2013_09_19_sbs_utica_cb17",
+            "block_id": "p011_c0005",
+            "source_quote": "Convert one travel lane to 'offset' bus lane to reduce speeding, maximize parking, and benefit bus service"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-58-07-623Z_2111393-e8a3378e_canonicalize_2026-06-10t23-18-19-084z-1976810-cbcf36ef-ingest-2013-09-19-sbs-utica-cb17-treatment-relations"
+}

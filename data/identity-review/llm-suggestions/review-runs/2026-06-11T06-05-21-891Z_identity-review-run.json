@@ -1,0 +1,669 @@
+{
+  "run_id": "2026-06-11T06-05-21-891Z_identity-review-run",
+  "generated_at": "2026-06-11T06:05:21.891Z",
+  "dry_run": false,
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "concurrency": 4,
+  "packet_count": 72,
+  "completed": 72,
+  "skipped": 0,
+  "failed": 0,
+  "paths": {
+    "suggestions_dir": "data/identity-review/llm-suggestions",
+    "review_runs_dir": "data/identity-review/llm-suggestions/review-runs",
+    "manifest": "data/identity-review/llm-suggestions/review-runs/2026-06-11T06-05-21-891Z_identity-review-run.json",
+    "latest": "data/identity-review/llm-suggestions/review-runs/latest.json"
+  },
+  "results": [
+    {
+      "cluster_id": "route_cluster_5ba289fd24",
+      "packet_path": "data/identity-review/packets/route_cluster_5ba289fd24.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_5ba289fd24.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-21-891Z_2444665-4fee659d_identity-review-run_route-cluster-5ba289fd24",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-21-892Z_2026-06-11T06-05-21-891Z_2444665-4fee659d_identity-review-run_route-cluster-5ba289fd24.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_973eab925c",
+      "packet_path": "data/identity-review/packets/entity_cluster_973eab925c.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_973eab925c.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-21-892Z_2444665-63c40c04_identity-review-run_entity-cluster-973eab925c",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-21-892Z_2026-06-11T06-05-21-892Z_2444665-63c40c04_identity-review-run_entity-cluster-973eab925c.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_ed1f7d39f7",
+      "packet_path": "data/identity-review/packets/entity_cluster_ed1f7d39f7.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_ed1f7d39f7.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-21-892Z_2444665-d483876f_identity-review-run_entity-cluster-ed1f7d39f7",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-21-892Z_2026-06-11T06-05-21-892Z_2444665-d483876f_identity-review-run_entity-cluster-ed1f7d39f7.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "route_cluster_4c66ee5b71",
+      "packet_path": "data/identity-review/packets/route_cluster_4c66ee5b71.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_4c66ee5b71.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-21-892Z_2444665-cb9df559_identity-review-run_route-cluster-4c66ee5b71",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-21-892Z_2026-06-11T06-05-21-892Z_2444665-cb9df559_identity-review-run_route-cluster-4c66ee5b71.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "route_cluster_66420ea184",
+      "packet_path": "data/identity-review/packets/route_cluster_66420ea184.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_66420ea184.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-23-824Z_2444665-b3c84670_identity-review-run_route-cluster-66420ea184",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-23-824Z_2026-06-11T06-05-23-824Z_2444665-b3c84670_identity-review-run_route-cluster-66420ea184.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "route_cluster_4c102242ba",
+      "packet_path": "data/identity-review/packets/route_cluster_4c102242ba.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_4c102242ba.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-24-025Z_2444665-d2338c85_identity-review-run_route-cluster-4c102242ba",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-24-025Z_2026-06-11T06-05-24-025Z_2444665-d2338c85_identity-review-run_route-cluster-4c102242ba.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "route_cluster_4c84da1c8b",
+      "packet_path": "data/identity-review/packets/route_cluster_4c84da1c8b.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_4c84da1c8b.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-24-488Z_2444665-44f1c7d2_identity-review-run_route-cluster-4c84da1c8b",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-24-488Z_2026-06-11T06-05-24-488Z_2444665-44f1c7d2_identity-review-run_route-cluster-4c84da1c8b.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_3582cfa19c",
+      "packet_path": "data/identity-review/packets/entity_cluster_3582cfa19c.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_3582cfa19c.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-24-874Z_2444665-7189bae4_identity-review-run_entity-cluster-3582cfa19c",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-24-874Z_2026-06-11T06-05-24-874Z_2444665-7189bae4_identity-review-run_entity-cluster-3582cfa19c.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "project_cluster_a5e15b602f",
+      "packet_path": "data/identity-review/packets/project_cluster_a5e15b602f.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/project_cluster_a5e15b602f.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-25-798Z_2444665-68940523_identity-review-run_project-cluster-a5e15b602f",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-25-798Z_2026-06-11T06-05-25-798Z_2444665-68940523_identity-review-run_project-cluster-a5e15b602f.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "corridor_cluster_e445b9fae7",
+      "packet_path": "data/identity-review/packets/corridor_cluster_e445b9fae7.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_e445b9fae7.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-25-977Z_2444665-f0b22f64_identity-review-run_corridor-cluster-e445b9fae7",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-25-977Z_2026-06-11T06-05-25-977Z_2444665-f0b22f64_identity-review-run_corridor-cluster-e445b9fae7.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_d2269a3500",
+      "packet_path": "data/identity-review/packets/entity_cluster_d2269a3500.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_d2269a3500.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-26-405Z_2444665-1ac7f6c2_identity-review-run_entity-cluster-d2269a3500",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-26-405Z_2026-06-11T06-05-26-405Z_2444665-1ac7f6c2_identity-review-run_entity-cluster-d2269a3500.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "corridor_cluster_e8f0924e1c",
+      "packet_path": "data/identity-review/packets/corridor_cluster_e8f0924e1c.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_e8f0924e1c.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-26-792Z_2444665-1ea734ff_identity-review-run_corridor-cluster-e8f0924e1c",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-26-792Z_2026-06-11T06-05-26-792Z_2444665-1ea734ff_identity-review-run_corridor-cluster-e8f0924e1c.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_61b224761f",
+      "packet_path": "data/identity-review/packets/entity_cluster_61b224761f.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_61b224761f.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-27-607Z_2444665-de4cc7eb_identity-review-run_entity-cluster-61b224761f",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-27-607Z_2026-06-11T06-05-27-607Z_2444665-de4cc7eb_identity-review-run_entity-cluster-61b224761f.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_53691aa097",
+      "packet_path": "data/identity-review/packets/entity_cluster_53691aa097.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_53691aa097.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-28-061Z_2444665-1cc17e71_identity-review-run_entity-cluster-53691aa097",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-28-061Z_2026-06-11T06-05-28-061Z_2444665-1cc17e71_identity-review-run_entity-cluster-53691aa097.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_8ca4fd2e98",
+      "packet_path": "data/identity-review/packets/entity_cluster_8ca4fd2e98.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_8ca4fd2e98.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-28-426Z_2444665-a8f9e771_identity-review-run_entity-cluster-8ca4fd2e98",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-28-426Z_2026-06-11T06-05-28-426Z_2444665-a8f9e771_identity-review-run_entity-cluster-8ca4fd2e98.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_63c0a4e6dd",
+      "packet_path": "data/identity-review/packets/entity_cluster_63c0a4e6dd.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_63c0a4e6dd.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-28-537Z_2444665-e1a82dd7_identity-review-run_entity-cluster-63c0a4e6dd",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-28-537Z_2026-06-11T06-05-28-537Z_2444665-e1a82dd7_identity-review-run_entity-cluster-63c0a4e6dd.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "route_cluster_dea66ee3bf",
+      "packet_path": "data/identity-review/packets/route_cluster_dea66ee3bf.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_dea66ee3bf.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-29-272Z_2444665-ed050e4a_identity-review-run_route-cluster-dea66ee3bf",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-29-272Z_2026-06-11T06-05-29-272Z_2444665-ed050e4a_identity-review-run_route-cluster-dea66ee3bf.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_d53ccb941a",
+      "packet_path": "data/identity-review/packets/entity_cluster_d53ccb941a.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_d53ccb941a.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-29-709Z_2444665-057f7c73_identity-review-run_entity-cluster-d53ccb941a",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-29-709Z_2026-06-11T06-05-29-709Z_2444665-057f7c73_identity-review-run_entity-cluster-d53ccb941a.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_673ad4108f",
+      "packet_path": "data/identity-review/packets/entity_cluster_673ad4108f.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_673ad4108f.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-30-205Z_2444665-ee99a0da_identity-review-run_entity-cluster-673ad4108f",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-30-205Z_2026-06-11T06-05-30-205Z_2444665-ee99a0da_identity-review-run_entity-cluster-673ad4108f.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "project_cluster_e8cfc41ce3",
+      "packet_path": "data/identity-review/packets/project_cluster_e8cfc41ce3.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/project_cluster_e8cfc41ce3.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-30-410Z_2444665-a8a88d54_identity-review-run_project-cluster-e8cfc41ce3",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-30-410Z_2026-06-11T06-05-30-410Z_2444665-a8a88d54_identity-review-run_project-cluster-e8cfc41ce3.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_d6e839208f",
+      "packet_path": "data/identity-review/packets/entity_cluster_d6e839208f.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_d6e839208f.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-31-156Z_2444665-dd45781a_identity-review-run_entity-cluster-d6e839208f",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-31-156Z_2026-06-11T06-05-31-156Z_2444665-dd45781a_identity-review-run_entity-cluster-d6e839208f.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "corridor_cluster_da8abba5c7",
+      "packet_path": "data/identity-review/packets/corridor_cluster_da8abba5c7.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_da8abba5c7.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-31-248Z_2444665-4319a754_identity-review-run_corridor-cluster-da8abba5c7",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-31-248Z_2026-06-11T06-05-31-248Z_2444665-4319a754_identity-review-run_corridor-cluster-da8abba5c7.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "corridor_cluster_73997d3293",
+      "packet_path": "data/identity-review/packets/corridor_cluster_73997d3293.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_73997d3293.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-31-955Z_2444665-da4fa57d_identity-review-run_corridor-cluster-73997d3293",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-31-955Z_2026-06-11T06-05-31-955Z_2444665-da4fa57d_identity-review-run_corridor-cluster-73997d3293.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_ee14aeaa16",
+      "packet_path": "data/identity-review/packets/entity_cluster_ee14aeaa16.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_ee14aeaa16.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-32-877Z_2444665-79c5853b_identity-review-run_entity-cluster-ee14aeaa16",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-32-878Z_2026-06-11T06-05-32-877Z_2444665-79c5853b_identity-review-run_entity-cluster-ee14aeaa16.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "project_cluster_d9c7856002",
+      "packet_path": "data/identity-review/packets/project_cluster_d9c7856002.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/project_cluster_d9c7856002.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-33-140Z_2444665-b38a2fa7_identity-review-run_project-cluster-d9c7856002",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-33-140Z_2026-06-11T06-05-33-140Z_2444665-b38a2fa7_identity-review-run_project-cluster-d9c7856002.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "corridor_cluster_cce025e0a7",
+      "packet_path": "data/identity-review/packets/corridor_cluster_cce025e0a7.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_cce025e0a7.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-33-568Z_2444665-beaa0161_identity-review-run_corridor-cluster-cce025e0a7",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-33-568Z_2026-06-11T06-05-33-568Z_2444665-beaa0161_identity-review-run_corridor-cluster-cce025e0a7.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "route_cluster_eac76a7add",
+      "packet_path": "data/identity-review/packets/route_cluster_eac76a7add.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_eac76a7add.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-35-138Z_2444665-70e6626f_identity-review-run_route-cluster-eac76a7add",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-35-139Z_2026-06-11T06-05-35-138Z_2444665-70e6626f_identity-review-run_route-cluster-eac76a7add.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "corridor_cluster_ca7e001760",
+      "packet_path": "data/identity-review/packets/corridor_cluster_ca7e001760.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_ca7e001760.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-36-901Z_2444665-bf0853cd_identity-review-run_corridor-cluster-ca7e001760",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-36-901Z_2026-06-11T06-05-36-901Z_2444665-bf0853cd_identity-review-run_corridor-cluster-ca7e001760.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "corridor_cluster_e833feb14e",
+      "packet_path": "data/identity-review/packets/corridor_cluster_e833feb14e.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_e833feb14e.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-38-489Z_2444665-fa7b4b3b_identity-review-run_corridor-cluster-e833feb14e",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-38-489Z_2026-06-11T06-05-38-489Z_2444665-fa7b4b3b_identity-review-run_corridor-cluster-e833feb14e.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_73cc8f09f9",
+      "packet_path": "data/identity-review/packets/entity_cluster_73cc8f09f9.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_73cc8f09f9.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-38-616Z_2444665-75b8d1fb_identity-review-run_entity-cluster-73cc8f09f9",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-38-616Z_2026-06-11T06-05-38-616Z_2444665-75b8d1fb_identity-review-run_entity-cluster-73cc8f09f9.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_b373ac2aa2",
+      "packet_path": "data/identity-review/packets/entity_cluster_b373ac2aa2.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_b373ac2aa2.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-40-181Z_2444665-2a6cb32f_identity-review-run_entity-cluster-b373ac2aa2",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-40-181Z_2026-06-11T06-05-40-181Z_2444665-2a6cb32f_identity-review-run_entity-cluster-b373ac2aa2.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_4efe37827c",
+      "packet_path": "data/identity-review/packets/entity_cluster_4efe37827c.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_4efe37827c.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-40-422Z_2444665-7a4b25bc_identity-review-run_entity-cluster-4efe37827c",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-40-422Z_2026-06-11T06-05-40-422Z_2444665-7a4b25bc_identity-review-run_entity-cluster-4efe37827c.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_32b6ee4ce2",
+      "packet_path": "data/identity-review/packets/entity_cluster_32b6ee4ce2.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_32b6ee4ce2.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-40-429Z_2444665-88eec69a_identity-review-run_entity-cluster-32b6ee4ce2",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-40-437Z_2026-06-11T06-05-40-429Z_2444665-88eec69a_identity-review-run_entity-cluster-32b6ee4ce2.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_6131654d20",
+      "packet_path": "data/identity-review/packets/entity_cluster_6131654d20.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_6131654d20.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-40-517Z_2444665-cabb8ea3_identity-review-run_entity-cluster-6131654d20",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-40-518Z_2026-06-11T06-05-40-517Z_2444665-cabb8ea3_identity-review-run_entity-cluster-6131654d20.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_b2948e008b",
+      "packet_path": "data/identity-review/packets/entity_cluster_b2948e008b.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_b2948e008b.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-41-992Z_2444665-f188b6b4_identity-review-run_entity-cluster-b2948e008b",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-41-992Z_2026-06-11T06-05-41-992Z_2444665-f188b6b4_identity-review-run_entity-cluster-b2948e008b.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_44753b060f",
+      "packet_path": "data/identity-review/packets/entity_cluster_44753b060f.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_44753b060f.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-42-190Z_2444665-a1fdc582_identity-review-run_entity-cluster-44753b060f",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-42-190Z_2026-06-11T06-05-42-190Z_2444665-a1fdc582_identity-review-run_entity-cluster-44753b060f.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_fdea99e7b8",
+      "packet_path": "data/identity-review/packets/entity_cluster_fdea99e7b8.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_fdea99e7b8.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-42-219Z_2444665-848e1a87_identity-review-run_entity-cluster-fdea99e7b8",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-42-219Z_2026-06-11T06-05-42-219Z_2444665-848e1a87_identity-review-run_entity-cluster-fdea99e7b8.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "project_cluster_0a2aa4518a",
+      "packet_path": "data/identity-review/packets/project_cluster_0a2aa4518a.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/project_cluster_0a2aa4518a.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-42-267Z_2444665-3218ebaa_identity-review-run_project-cluster-0a2aa4518a",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-42-267Z_2026-06-11T06-05-42-267Z_2444665-3218ebaa_identity-review-run_project-cluster-0a2aa4518a.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_636241ceb6",
+      "packet_path": "data/identity-review/packets/entity_cluster_636241ceb6.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_636241ceb6.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-43-512Z_2444665-9eddb3f2_identity-review-run_entity-cluster-636241ceb6",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-43-513Z_2026-06-11T06-05-43-512Z_2444665-9eddb3f2_identity-review-run_entity-cluster-636241ceb6.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_bacb54afd6",
+      "packet_path": "data/identity-review/packets/entity_cluster_bacb54afd6.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_bacb54afd6.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-43-920Z_2444665-3bd648ad_identity-review-run_entity-cluster-bacb54afd6",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-43-920Z_2026-06-11T06-05-43-920Z_2444665-3bd648ad_identity-review-run_entity-cluster-bacb54afd6.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_c355a6ef62",
+      "packet_path": "data/identity-review/packets/entity_cluster_c355a6ef62.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_c355a6ef62.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-44-120Z_2444665-a4745053_identity-review-run_entity-cluster-c355a6ef62",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-44-121Z_2026-06-11T06-05-44-120Z_2444665-a4745053_identity-review-run_entity-cluster-c355a6ef62.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_b79e3e43d1",
+      "packet_path": "data/identity-review/packets/entity_cluster_b79e3e43d1.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_b79e3e43d1.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-44-216Z_2444665-1f3d6f3c_identity-review-run_entity-cluster-b79e3e43d1",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-44-216Z_2026-06-11T06-05-44-216Z_2444665-1f3d6f3c_identity-review-run_entity-cluster-b79e3e43d1.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_d849040a5e",
+      "packet_path": "data/identity-review/packets/entity_cluster_d849040a5e.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_d849040a5e.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-45-296Z_2444665-c64dc39d_identity-review-run_entity-cluster-d849040a5e",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-45-296Z_2026-06-11T06-05-45-296Z_2444665-c64dc39d_identity-review-run_entity-cluster-d849040a5e.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_3658a1c7a4",
+      "packet_path": "data/identity-review/packets/entity_cluster_3658a1c7a4.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_3658a1c7a4.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-45-463Z_2444665-596e92c5_identity-review-run_entity-cluster-3658a1c7a4",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-45-463Z_2026-06-11T06-05-45-463Z_2444665-596e92c5_identity-review-run_entity-cluster-3658a1c7a4.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_8c9f2ec2db",
+      "packet_path": "data/identity-review/packets/entity_cluster_8c9f2ec2db.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_8c9f2ec2db.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-45-721Z_2444665-6434ac59_identity-review-run_entity-cluster-8c9f2ec2db",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-45-721Z_2026-06-11T06-05-45-721Z_2444665-6434ac59_identity-review-run_entity-cluster-8c9f2ec2db.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_9b352946f1",
+      "packet_path": "data/identity-review/packets/entity_cluster_9b352946f1.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_9b352946f1.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-45-834Z_2444665-a7a38c8d_identity-review-run_entity-cluster-9b352946f1",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-45-835Z_2026-06-11T06-05-45-834Z_2444665-a7a38c8d_identity-review-run_entity-cluster-9b352946f1.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_de2570bd28",
+      "packet_path": "data/identity-review/packets/entity_cluster_de2570bd28.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_de2570bd28.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-46-974Z_2444665-21aa180f_identity-review-run_entity-cluster-de2570bd28",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-46-974Z_2026-06-11T06-05-46-974Z_2444665-21aa180f_identity-review-run_entity-cluster-de2570bd28.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "route_cluster_2622703885",
+      "packet_path": "data/identity-review/packets/route_cluster_2622703885.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_2622703885.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-47-197Z_2444665-ed5cc510_identity-review-run_route-cluster-2622703885",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-47-197Z_2026-06-11T06-05-47-197Z_2444665-ed5cc510_identity-review-run_route-cluster-2622703885.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "route_cluster_8d5ce8db0f",
+      "packet_path": "data/identity-review/packets/route_cluster_8d5ce8db0f.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_8d5ce8db0f.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-47-456Z_2444665-cb7d6411_identity-review-run_route-cluster-8d5ce8db0f",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-47-456Z_2026-06-11T06-05-47-456Z_2444665-cb7d6411_identity-review-run_route-cluster-8d5ce8db0f.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "corridor_cluster_5b54a55adc",
+      "packet_path": "data/identity-review/packets/corridor_cluster_5b54a55adc.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_5b54a55adc.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-47-574Z_2444665-9f23f52e_identity-review-run_corridor-cluster-5b54a55adc",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-47-574Z_2026-06-11T06-05-47-574Z_2444665-9f23f52e_identity-review-run_corridor-cluster-5b54a55adc.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "route_cluster_623c296136",
+      "packet_path": "data/identity-review/packets/route_cluster_623c296136.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_623c296136.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-48-693Z_2444665-605d8f05_identity-review-run_route-cluster-623c296136",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-48-693Z_2026-06-11T06-05-48-693Z_2444665-605d8f05_identity-review-run_route-cluster-623c296136.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_29e08f9c30",
+      "packet_path": "data/identity-review/packets/entity_cluster_29e08f9c30.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_29e08f9c30.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-49-306Z_2444665-54b3567f_identity-review-run_entity-cluster-29e08f9c30",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-49-306Z_2026-06-11T06-05-49-306Z_2444665-54b3567f_identity-review-run_entity-cluster-29e08f9c30.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "entity_cluster_bc332fd780",
+      "packet_path": "data/identity-review/packets/entity_cluster_bc332fd780.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/entity_cluster_bc332fd780.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-49-367Z_2444665-3e96767e_identity-review-run_entity-cluster-bc332fd780",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-49-368Z_2026-06-11T06-05-49-367Z_2444665-3e96767e_identity-review-run_entity-cluster-bc332fd780.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "project_cluster_95df1670ad",
+      "packet_path": "data/identity-review/packets/project_cluster_95df1670ad.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/project_cluster_95df1670ad.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-49-540Z_2444665-4db3b284_identity-review-run_project-cluster-95df1670ad",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-49-540Z_2026-06-11T06-05-49-540Z_2444665-4db3b284_identity-review-run_project-cluster-95df1670ad.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "route_cluster_ba498ca672",
+      "packet_path": "data/identity-review/packets/route_cluster_ba498ca672.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_ba498ca672.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-50-529Z_2444665-34bfb1bf_identity-review-run_route-cluster-ba498ca672",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-50-529Z_2026-06-11T06-05-50-529Z_2444665-34bfb1bf_identity-review-run_route-cluster-ba498ca672.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "route_cluster_81fba0da42",
+      "packet_path": "data/identity-review/packets/route_cluster_81fba0da42.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_81fba0da42.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-50-984Z_2444665-6c09c573_identity-review-run_route-cluster-81fba0da42",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-50-984Z_2026-06-11T06-05-50-984Z_2444665-6c09c573_identity-review-run_route-cluster-81fba0da42.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "route_cluster_67da6e1a68",
+      "packet_path": "data/identity-review/packets/route_cluster_67da6e1a68.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_67da6e1a68.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-51-208Z_2444665-68a3b39e_identity-review-run_route-cluster-67da6e1a68",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-51-208Z_2026-06-11T06-05-51-208Z_2444665-68a3b39e_identity-review-run_route-cluster-67da6e1a68.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "route_cluster_0b58abe0a6",
+      "packet_path": "data/identity-review/packets/route_cluster_0b58abe0a6.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_0b58abe0a6.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-51-330Z_2444665-f02c0326_identity-review-run_route-cluster-0b58abe0a6",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-51-330Z_2026-06-11T06-05-51-330Z_2444665-f02c0326_identity-review-run_route-cluster-0b58abe0a6.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "route_cluster_b07de8d064",
+      "packet_path": "data/identity-review/packets/route_cluster_b07de8d064.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_b07de8d064.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-52-347Z_2444665-1f079884_identity-review-run_route-cluster-b07de8d064",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-52-347Z_2026-06-11T06-05-52-347Z_2444665-1f079884_identity-review-run_route-cluster-b07de8d064.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "corridor_cluster_7d46e2b733",
+      "packet_path": "data/identity-review/packets/corridor_cluster_7d46e2b733.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_7d46e2b733.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-52-789Z_2444665-1f759df0_identity-review-run_corridor-cluster-7d46e2b733",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-52-789Z_2026-06-11T06-05-52-789Z_2444665-1f759df0_identity-review-run_corridor-cluster-7d46e2b733.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "corridor_cluster_4ac8a7cd38",
+      "packet_path": "data/identity-review/packets/corridor_cluster_4ac8a7cd38.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_4ac8a7cd38.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-56-441Z_2444665-c34523b7_identity-review-run_corridor-cluster-4ac8a7cd38",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-56-441Z_2026-06-11T06-05-56-441Z_2444665-c34523b7_identity-review-run_corridor-cluster-4ac8a7cd38.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "corridor_cluster_9523db7ca6",
+      "packet_path": "data/identity-review/packets/corridor_cluster_9523db7ca6.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_9523db7ca6.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-56-462Z_2444665-c6f4f23c_identity-review-run_corridor-cluster-9523db7ca6",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-56-462Z_2026-06-11T06-05-56-462Z_2444665-c6f4f23c_identity-review-run_corridor-cluster-9523db7ca6.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "corridor_cluster_86a23efe42",
+      "packet_path": "data/identity-review/packets/corridor_cluster_86a23efe42.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_86a23efe42.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-57-285Z_2444665-e645e4aa_identity-review-run_corridor-cluster-86a23efe42",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-57-286Z_2026-06-11T06-05-57-285Z_2444665-e645e4aa_identity-review-run_corridor-cluster-86a23efe42.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "route_cluster_36310c6b3a",
+      "packet_path": "data/identity-review/packets/route_cluster_36310c6b3a.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_36310c6b3a.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-58-191Z_2444665-0cf196ec_identity-review-run_route-cluster-36310c6b3a",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-58-191Z_2026-06-11T06-05-58-191Z_2444665-0cf196ec_identity-review-run_route-cluster-36310c6b3a.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "route_cluster_30eb52a720",
+      "packet_path": "data/identity-review/packets/route_cluster_30eb52a720.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_30eb52a720.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-58-254Z_2444665-3a0fd2ea_identity-review-run_route-cluster-30eb52a720",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-58-255Z_2026-06-11T06-05-58-254Z_2444665-3a0fd2ea_identity-review-run_route-cluster-30eb52a720.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "route_cluster_c30f25548f",
+      "packet_path": "data/identity-review/packets/route_cluster_c30f25548f.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_c30f25548f.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-58-299Z_2444665-47363cd6_identity-review-run_route-cluster-c30f25548f",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-58-299Z_2026-06-11T06-05-58-299Z_2444665-47363cd6_identity-review-run_route-cluster-c30f25548f.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "corridor_cluster_35d900266b",
+      "packet_path": "data/identity-review/packets/corridor_cluster_35d900266b.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_35d900266b.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-59-140Z_2444665-3c0c34f6_identity-review-run_corridor-cluster-35d900266b",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-59-140Z_2026-06-11T06-05-59-140Z_2444665-3c0c34f6_identity-review-run_corridor-cluster-35d900266b.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "corridor_cluster_6fa803cc3c",
+      "packet_path": "data/identity-review/packets/corridor_cluster_6fa803cc3c.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_6fa803cc3c.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-59-855Z_2444665-3087768e_identity-review-run_corridor-cluster-6fa803cc3c",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-59-855Z_2026-06-11T06-05-59-855Z_2444665-3087768e_identity-review-run_corridor-cluster-6fa803cc3c.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "corridor_cluster_087b312768",
+      "packet_path": "data/identity-review/packets/corridor_cluster_087b312768.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_087b312768.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-05-59-985Z_2444665-2f2dc0f0_identity-review-run_corridor-cluster-087b312768",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-05-59-986Z_2026-06-11T06-05-59-985Z_2444665-2f2dc0f0_identity-review-run_corridor-cluster-087b312768.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "corridor_cluster_e2b5809961",
+      "packet_path": "data/identity-review/packets/corridor_cluster_e2b5809961.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_e2b5809961.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-06-00-057Z_2444665-cbe0fe3c_identity-review-run_corridor-cluster-e2b5809961",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-06-00-057Z_2026-06-11T06-06-00-057Z_2444665-cbe0fe3c_identity-review-run_corridor-cluster-e2b5809961.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "corridor_cluster_13c596a458",
+      "packet_path": "data/identity-review/packets/corridor_cluster_13c596a458.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_13c596a458.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-06-01-277Z_2444665-bc98e2dc_identity-review-run_corridor-cluster-13c596a458",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-06-01-277Z_2026-06-11T06-06-01-277Z_2444665-bc98e2dc_identity-review-run_corridor-cluster-13c596a458.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    },
+    {
+      "cluster_id": "corridor_cluster_10a61c45f9",
+      "packet_path": "data/identity-review/packets/corridor_cluster_10a61c45f9.md",
+      "suggestion_path": "data/identity-review/llm-suggestions/corridor_cluster_10a61c45f9.json",
+      "transcript_dir": "data/transcripts/runs/2026-06-11T06-06-01-645Z_2444665-dd0b2d3c_identity-review-run_corridor-cluster-10a61c45f9",
+      "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-11T06-06-01-645Z_2026-06-11T06-06-01-645Z_2444665-dd0b2d3c_identity-review-run_corridor-cluster-10a61c45f9.jsonl",
+      "status": "completed",
+      "error": "Suggestion JSON parse warning: JSON Parse error: Unexpected EOF"
+    }
+  ]
+}

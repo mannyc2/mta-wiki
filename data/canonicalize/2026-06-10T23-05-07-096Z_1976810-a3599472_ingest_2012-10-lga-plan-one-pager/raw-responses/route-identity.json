@@ -1,0 +1,67 @@
+{
+  "run_id": "2026-06-10T23-05-07-096Z_1976810-a3599472_ingest_2012-10-lga-plan-one-pager",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T02:59:15.836Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "m60-sbs-2012-lga-new",
+        "local_observation_id": "route_m60_sbs_2012_lga_handout",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_125th-laguardia-sbs already exists in registry with matching alias route_m60-sbs-2012-lga-handout and source 2012_10_lga_plan_one_pager. Observation already resolves to this record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0012",
+            "source_quote": "M60 SBS route serving LaGuardia Airport via 125th Street"
+          }
+        ]
+      },
+      {
+        "decision_id": "q33-2012-lga-new",
+        "local_observation_id": "route_q33_2012_lga_handout",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_q33-serves-lga-2011 already exists in registry with matching alias route_q33-2012-lga-handout and source 2012_10_lga_plan_one_pager. Observation already resolves to this record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p002_c0012",
+            "source_quote": "Q33 route serving LaGuardia Airport, used by airport employees"
+          }
+        ]
+      },
+      {
+        "decision_id": "proposed-bronx-sbs-lga-new",
+        "local_observation_id": "route_proposed_bronx_sbs_lga_2012",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_proposed-bronx-sbs-lga-2012 already exists in registry with source 2012_10_lga_plan_one_pager. Observation already resolves to this record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0013",
+            "source_quote": "Proposed Bronx SBS route to LaGuardia Airport, projected to be 40% faster than current service"
+          }
+        ]
+      },
+      {
+        "decision_id": "proposed-queens-sbs-lga-new",
+        "local_observation_id": "route_proposed_queens_sbs_lga_2012",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_proposed-queens-sbs-lga-2012 already exists in registry with source 2012_10_lga_plan_one_pager. Observation already resolves to this record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_10_lga_plan_one_pager",
+            "block_id": "p001_c0021",
+            "source_quote": "Proposed Queens SBS route to LaGuardia Airport, over 40% faster than current local service, with highway operation"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-56-09-413Z_2111393-d50badd7_canonicalize_2026-06-10t23-05-07-096z-1976810-a3599472-ingest-2012-10-lga-plan-one-pager-route-identity"
+}

@@ -1,0 +1,36 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "gap_preliminary-results-subject-to-adjustment_3"
+record_kind: "source_gap"
+display_name: "Results based on preliminary close"
+source_id: "meeting_doc_95186"
+source_ids:
+  - "meeting_doc_95186"
+local_observation_id: "gap_preliminary_results_subject_to_adjustment"
+local_observation_ids:
+  - "gap_preliminary_results_subject_to_adjustment"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-22T22:33:12.694Z"
+raw_text: "Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results."
+submission_ids:
+  - "sub_ec6b06cc3eb46908"
+payload:
+  gap_kind: "preliminary_data"
+  gap_kind_normalized: "provisional_data"
+  gap_text: "Results are based on the preliminary close of the general ledger and are subject to review and adjustment. Please note actuals do not include post-close adjustments, which will be captured in the subsequent month's YTD results."
+evidence_refs:
+  -
+    block_id: "p005_c0009"
+    evidence_id: "meeting_doc_95186#p005_c0009"
+    page_number: 5
+    role: "note"
+    source_id: "meeting_doc_95186"
+    source_path: "raw/sources/meeting_doc_95186/blocks.jsonl"
+    text_sha256: "sha256:c1e709e162fe7b22ad5bc4b0c3729efaa0c20a4f2e93a00c055db08b39eb0383"
+    text_source: "raw_text"
+---
+
+<!-- mta-wiki:writer:start -->
+
+<!-- mta-wiki:writer:end -->

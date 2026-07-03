@@ -1,0 +1,298 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch051-prep",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "batch_id": "relation051",
+  "batch": "batch051",
+  "scope": "Codex-only deterministic/manual relation cleanup prep; no provider-backed commands, post-ingest LLM harnesses, materialize/export-jsonl/full validate/DB publish, generated-output edits, durable retirements, replacement submissions, LOG edits, manifest edits, canonical/generated edits, or code edits applied",
+  "checkpoint_context": {
+    "reported_validate_backlog_after_identity079_relation050": {
+      "issue_count": 1460,
+      "unexpected_relation_endpoint_shape": 15,
+      "duplicate_global_identity": 1445
+    },
+    "observed_endpoint_shape_issue_count_from_read_only_inventory": 15,
+    "selected_bucket": "published_by metric_claim->source",
+    "selected_rows_cleared": 1,
+    "replacement_rows_added": 1,
+    "expected_endpoint_shape_delta": -1,
+    "expected_remaining_unexpected_relation_endpoint_shape_after_apply": 14,
+    "not_repeated": "This prep uses relation051 as requested and does not repeat relation037-relation050."
+  },
+  "durable_mechanism_prepared_not_applied": {
+    "retire_originals_via": "data/submission-overrides/retired.json",
+    "replacement_journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch051.jsonl",
+    "mutation_status": "not_applied_by_this_prep",
+    "only_file_written_by_this_task": "data/review_notes/codex-relation-cleanup-batch051-prep.json"
+  },
+  "summary_counts": {
+    "prepared_count": 1,
+    "retire_replace_count": 1,
+    "accepted_replacement_count": 1,
+    "issue_count": 0,
+    "expected_endpoint_shape_delta": -1
+  },
+  "bucket": {
+    "name": "metric claim incorrectly modeled as published_by source",
+    "original_relation_kind": "published_by",
+    "original_endpoint_shape": "metric_claim -> source",
+    "replacement_relation_kind": "includes_data",
+    "replacement_endpoint_shape": "source -> metric_claim",
+    "prepared_original_count": 1,
+    "cleanup_direction": "data cleanup only; keep published_by scoped to source|project|entity -> entity",
+    "rationale": "The source block is a FinanceWatch page in the June 2023 Finance Committee Meeting Book and contains the $600,000,000 TBTA green-bonds metric. The source includes the metric; the metric was not published_by the source."
+  },
+  "guards": {
+    "all_pass": true,
+    "original_accepted_not_retired": {
+      "status": "pass",
+      "selected_original_submission_id": "sub_955bdb6577872b30",
+      "selected_original_record_id": "relation_tbta-green-bonds-mta",
+      "selected_original_journal": "data/submissions/2026-06-20T12-13-49-934Z_1885472-6aa104b9_ingest_meeting-doc-114016.jsonl:49",
+      "current_validation_state": "accepted",
+      "retired_hits": []
+    },
+    "replacement_absent": {
+      "status": "pass",
+      "replacement_submission_id": "sub_3f9c25f963b69d3a",
+      "replacement_submission_id_hits": [],
+      "replacement_local_observation_id_hits": [],
+      "same_replacement_relation_kind_canonical_hits": []
+    },
+    "local_observation_id_not_colliding": {
+      "status": "pass",
+      "replacement_local_observation_id": "relation_finance_book_includes_tbta_green_bonds_metric",
+      "local_observation_id_hits": []
+    },
+    "endpoint_shape_valid_under_packages_pipeline_src_records_relations_ts": {
+      "status": "pass",
+      "original_endpoint_shape_issue": "Relation kind published_by expects source|project|entity -> entity, got metric_claim -> source.",
+      "replacement_endpoint_shape_issue": null,
+      "replacement_relation_kind": "includes_data",
+      "replacement_subject_kind": "source",
+      "replacement_object_kind": "metric_claim",
+      "note": "includes_data is present in the relation-family map and has no strict endpoint shape entry in RELATION_ENDPOINT_SHAPES, so relationEndpointShapeIssue does not reject source -> metric_claim."
+    },
+    "endpoint_local_ids_known": {
+      "status": "pass",
+      "source_id": "meeting_doc_114016",
+      "known_local_observation_ids": [
+        {
+          "local_observation_id": "source_finance_committee_book_june2023",
+          "record_id": "source_meeting-doc-114016",
+          "observation_kind": "source",
+          "submission_id": "sub_0d4ab45fc2f5d3d4",
+          "validation_state": "accepted"
+        },
+        {
+          "local_observation_id": "metric_meeting_doc_114016_tbta_green_bonds",
+          "record_id": "metric_meeting-doc-114016-tbta-green-bonds",
+          "observation_kind": "metric_claim",
+          "submission_id": "sub_42615fcaedde2158",
+          "validation_state": "accepted"
+        }
+      ]
+    },
+    "evidence_supports_includes_data_semantics": {
+      "status": "pass",
+      "summary": "The cited block is in source meeting_doc_114016 and states the TBTA Payroll Mobility Tax Senior Lien Green Bonds Series 2023B amount. The canonical metric claim uses the same block as evidence, so the source-to-metric includes_data relation preserves the source-backed association.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_114016",
+          "evidence_id": "meeting_doc_114016#p019_c0007",
+          "source_path": "raw/sources/meeting_doc_114016/blocks.jsonl",
+          "page_number": 19,
+          "block_id": "p019_c0007",
+          "text_sha256": "sha256:9110643396d5250a28ca50fb817912e7e0febd85e01f4671a3d9289892195eb6",
+          "text_source": "raw_text",
+          "source_quote": "$600,000,000 Triborough Bridge and Tunnel Authority Payroll Mobility Tax Senior Lien Green Bonds, Series 2023B (Climate Bond Certified)"
+        }
+      ]
+    },
+    "no_generated_files_edited": {
+      "status": "pass_for_this_task",
+      "note": "The shared worktree already contains generated-output and other edits owned by others. This task writes only data/review_notes/codex-relation-cleanup-batch051-prep.json and does not edit retired.json, submissions, canonical JSONL, materialized data, wiki output, LOG, manifest, code, or generated files."
+    }
+  },
+  "local_validation": {
+    "clean": true,
+    "tooling": "Read-only rg/jq/sed inspection plus bun --cwd packages/pipeline --eval createSubmissionEntry/relationEndpointIssues dry-run using direct local imports; no appendSubmission, materialize, export-jsonl, full validate, DB publish, provider-backed command, post-ingest LLM harness, generated-output command, or durable data edit run.",
+    "summary": {
+      "original_submission_id": "sub_955bdb6577872b30",
+      "replacement_submission_id": "sub_3f9c25f963b69d3a",
+      "replacement_tool_args_sha256": "sha256:3f9c25f963b69d3a8451e432296098dee25081d356e379da5158c850e9e2ffb6",
+      "replacement_validation_state": "accepted",
+      "replacement_validation_issues": [],
+      "relation_endpoint_issues": [],
+      "expected_endpoint_shape_delta": -1
+    }
+  },
+  "prepared_changes": [
+    {
+      "original": {
+        "submission_id": "sub_955bdb6577872b30",
+        "run_id": "2026-06-20T12-13-49-934Z_1885472-6aa104b9_ingest_meeting-doc-114016",
+        "journal": "data/submissions/2026-06-20T12-13-49-934Z_1885472-6aa104b9_ingest_meeting-doc-114016.jsonl:49",
+        "record_id": "relation_tbta-green-bonds-mta",
+        "source_id": "meeting_doc_114016",
+        "local_observation_id": "relation_tbta_green_bonds_mta",
+        "label": "TBTA Green Bonds - MTA Finance",
+        "malformed_shape": "published_by metric_claim -> source",
+        "tool_args": {
+          "source_id": "meeting_doc_114016",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_tbta_green_bonds_mta",
+          "label": "TBTA Green Bonds - MTA Finance",
+          "payload": {
+            "relation_kind": "published_by",
+            "subject_local_observation_id": "metric_meeting_doc_114016_tbta_green_bonds",
+            "object_local_observation_id": "source_finance_committee_book_june2023",
+            "description": "$600M TBTA Payroll Mobility Tax Senior Lien Green Bonds Series 2023B (Climate Bond Certified)",
+            "relation_family": "publication_role"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_114016",
+              "evidence_id": "meeting_doc_114016#p019_c0007",
+              "source_path": "raw/sources/meeting_doc_114016/blocks.jsonl",
+              "page_number": 19,
+              "block_id": "p019_c0007",
+              "text_sha256": "sha256:9110643396d5250a28ca50fb817912e7e0febd85e01f4671a3d9289892195eb6",
+              "text_source": "raw_text"
+            }
+          ]
+        },
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_955bdb6577872b30",
+          "reason": "Codex relation cleanup batch051 replaces malformed published_by metric_claim -> source relation relation_tbta-green-bonds-mta with validator-compatible includes_data source -> metric_claim relation preserving the source-contained TBTA green-bonds metric evidence.",
+          "source_decision": "data/review_notes/codex-relation-cleanup-batch051-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch051",
+          "reviewed_at": "2026-06-23T00:00:00Z"
+        },
+        "reason": "The cited FinanceWatch block is contained in the source and supports a source includes metric relation, not a metric published_by source relation.",
+        "expected_endpoint_shape_delta": -1,
+        "confidence": "high"
+      },
+      "replacement": {
+        "run_id": "2026-06-23_codex_relation_cleanup_batch051",
+        "journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch051.jsonl",
+        "id_generation": {
+          "method": "createSubmissionEntry(runId, rawToolArgs, '2026-06-23T00:00:00.000Z') with relationEndpointIssues added; stable hash is over normalized tool_args.",
+          "deterministic_submission_id": "sub_3f9c25f963b69d3a",
+          "tool_args_sha256": "sha256:3f9c25f963b69d3a8451e432296098dee25081d356e379da5158c850e9e2ffb6",
+          "conductor_required": false
+        },
+        "replacement_entries": [
+          {
+            "role": "corrected relation replacement",
+            "tool_name": "submit_observation",
+            "review_state": "accepted",
+            "deterministic_submission_id": "sub_3f9c25f963b69d3a",
+            "tool_args_sha256": "sha256:3f9c25f963b69d3a8451e432296098dee25081d356e379da5158c850e9e2ffb6",
+            "proposed_relation_kind": "includes_data",
+            "proposed_endpoint_shape": "source -> metric_claim",
+            "entry": {
+              "submission_id": "sub_3f9c25f963b69d3a",
+              "run_id": "2026-06-23_codex_relation_cleanup_batch051",
+              "submitted_at": "2026-06-23T00:00:00.000Z",
+              "tool_args_sha256": "sha256:3f9c25f963b69d3a8451e432296098dee25081d356e379da5158c850e9e2ffb6",
+              "schema_version": 2,
+              "tool_args": {
+                "source_id": "meeting_doc_114016",
+                "observation_kind": "relation",
+                "local_observation_id": "relation_finance_book_includes_tbta_green_bonds_metric",
+                "label": "Finance Committee Meeting Book includes TBTA green bonds metric",
+                "payload": {
+                  "relation_kind": "includes_data",
+                  "subject_local_observation_id": "source_finance_committee_book_june2023",
+                  "object_local_observation_id": "metric_meeting_doc_114016_tbta_green_bonds",
+                  "description": "The June 2023 Finance Committee Meeting Book includes the $600 million TBTA Payroll Mobility Tax Senior Lien Green Bonds Series 2023B metric.",
+                  "relation_family": "data_reporting"
+                },
+                "evidence_refs": [
+                  {
+                    "source_id": "meeting_doc_114016",
+                    "evidence_id": "meeting_doc_114016#p019_c0007",
+                    "source_path": "raw/sources/meeting_doc_114016/blocks.jsonl",
+                    "page_number": 19,
+                    "block_id": "p019_c0007",
+                    "text_sha256": "sha256:9110643396d5250a28ca50fb817912e7e0febd85e01f4671a3d9289892195eb6",
+                    "text_source": "raw_text",
+                    "source_quote": "$600,000,000 Triborough Bridge and Tunnel Authority Payroll Mobility Tax Senior Lien Green Bonds, Series 2023B (Climate Bond Certified)"
+                  }
+                ]
+              },
+              "validation": {
+                "state": "accepted",
+                "issues": []
+              }
+            },
+            "raw_tool_args_for_replay": {
+              "source_id": "meeting_doc_114016",
+              "observation_kind": "relation",
+              "local_observation_id": "relation_finance_book_includes_tbta_green_bonds_metric",
+              "label": "Finance Committee Meeting Book includes TBTA green bonds metric",
+              "payload": {
+                "relation_kind": "includes_data",
+                "subject_local_observation_id": "source_finance_committee_book_june2023",
+                "object_local_observation_id": "metric_meeting_doc_114016_tbta_green_bonds",
+                "description": "The June 2023 Finance Committee Meeting Book includes the $600 million TBTA Payroll Mobility Tax Senior Lien Green Bonds Series 2023B metric."
+              },
+              "evidence_refs": [
+                {
+                  "source_id": "meeting_doc_114016",
+                  "evidence_id": "meeting_doc_114016#p019_c0007",
+                  "block_id": "p019_c0007",
+                  "source_quote": "$600,000,000 Triborough Bridge and Tunnel Authority Payroll Mobility Tax Senior Lien Green Bonds, Series 2023B (Climate Bond Certified)"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "apply_instructions": {
+    "conductor_can_apply_immediately": true,
+    "steps": [
+      "Add the proposed_retired_json_entry for sub_955bdb6577872b30 to data/submission-overrides/retired.json.",
+      "Append the replacement entry sub_3f9c25f963b69d3a to data/submissions/2026-06-23_codex_relation_cleanup_batch051.jsonl.",
+      "Do not change relation endpoint-shape rules for published_by."
+    ]
+  },
+  "commands_run": [
+    "pwd && rg --files | rg '(^data/review_notes/|retired\\\\.json$|relations\\\\.ts$|data/submissions|data/canonical|validate|manifest|LOG\\\\.md$)'",
+    "git status --short",
+    "sed -n '1,520p' packages/pipeline/src/records/relations.ts",
+    "ls data/review_notes | tail -80",
+    "sed -n '1,240p' data/review_notes/codex-relation-cleanup-batch050-prep.json",
+    "sed -n '1,220p' data/review_notes/codex-relation-cleanup-batch049-prep.json",
+    "sed -n '1,220p' data/submissions/2026-06-23_codex_relation_cleanup_batch049.jsonl",
+    "sed -n '1,220p' data/submission-overrides/retired.json",
+    "ls data/submissions/2026-06-23_codex_relation_cleanup_batch0*.jsonl | sort | tail -20",
+    "rg -n 'unexpected_relation_endpoint_shape' data docs packages -g '!data/materialized/**' -g '!data/transcripts/**' -g '!data/canonicalize/**' -g '!wiki/**'",
+    "sed -n '220,340p' packages/pipeline/src/validate.ts",
+    "sed -n '260,430p' packages/pipeline/src/records/submissions.ts",
+    "sed -n '17680,17840p' data/post-ingest/codex-orchestration-2026-06-21.json",
+    "sed -n '1,280p' data/review_notes/codex-relation-rule-or-data-next23-prep.json",
+    "bun --eval '<read-only endpoint-shape inventory over data/canonical/*.jsonl using endpoint shapes from packages/pipeline/src/records/relations.ts>'",
+    "rg/jq read-only inspection for candidate original submissions, endpoint records, and evidence blocks",
+    "bun --cwd packages/pipeline --eval '<createSubmissionEntry/relationEndpointIssues dry-run for batch051 replacement; no appendSubmission>'",
+    "rg -n 'sub_955bdb6577872b30|sub_3f9c25f963b69d3a|relation_finance_book_includes_tbta_green_bonds_metric|relation_tbta_green_bonds_mta|includes_data.*metric_meeting_doc_114016_tbta_green_bonds|source_finance_committee_book_june2023.*metric_meeting_doc_114016_tbta_green_bonds' data/submissions data/submission-overrides/retired.json data/review_notes data/canonical/relations.jsonl -g '*.json' -g '*.jsonl'",
+    "git status --short -- data/review_notes/codex-relation-cleanup-batch051-prep.json data/submission-overrides/retired.json data/submissions/2026-06-23_codex_relation_cleanup_batch051.jsonl data/canonical/relations.jsonl LOG.md packages/pipeline/src/records/relations.ts"
+  ],
+  "commands_not_run": [
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts materialize",
+    "export-jsonl",
+    "DB publish",
+    "canonicalize",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "any command with --profile/provider-backed command",
+    "appendSubmission"
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "note_id": "codex-identity-dnm-batch200-prep",
+  "batch": "identity200-dnm",
+  "created_at": "2026-06-23T00:00:00Z",
+  "prepared_count": 6,
+  "scope": {
+    "operation": "prepare_do_not_merge_suppressions_only",
+    "global_kind": "project",
+    "issue_type": "duplicate_global_identity",
+    "selection_note": "Codex-only do-not-merge review artifact after identity196-dnm197-198. Scope is remaining project duplicate_global_identity pairs only. No provider-backed commands were run. Inputs were inspected read-only: current data/canonical/projects.jsonl, current data/identity-overrides/merges.json, current data/identity-overrides/do-not-merge.json, data/identity-review/validation_issues.jsonl, prior DNM review notes, and referenced raw source blocks.",
+    "write_limit": "Exactly one artifact was written: data/review_notes/codex-identity-dnm-batch200-prep.json. No merges.json, do-not-merge.json, LOG.md, manifest, submissions, canonical outputs, DB, materialized outputs, or wiki files were edited.",
+    "provider_backed_commands_run": false,
+    "deterministic_scan": {
+      "method": "Read current project JSONL and compute identityKeysForRecord with explicit current merge-root and do-not-merge direct/resolved guards.",
+      "project_records_scanned": 1857,
+      "raw_project_duplicate_identity_rows": 18,
+      "remaining_after_merge_and_do_not_merge_guards": 10,
+      "excluded_stored_validation_issue_rows": "The 10 project duplicate_global_identity rows in data/identity-review/validation_issues.jsonl are already direct/same-root merges in current merges.json, so they were not eligible for this DNM prep."
+    }
+  },
+  "proposed_do_not_merge_pairs": [
+    {
+      "global_kind": "project",
+      "record_ids": [
+        "project_2017-sip-woodhaven-blvd-cb5-sept2024",
+        "project_2017-street-improvement-79th"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global project records project_2017-sip-woodhaven-blvd-cb5-sept2024 and project_2017-street-improvement-79th share identity key project_2017-st-improvement-project.",
+        "duplicate_global_identity equivalent: Global project records project_2017-sip-woodhaven-blvd-cb5-sept2024 and project_2017-street-improvement-79th share identity key project_2017-st-improvement-project-woodhaven-blvd."
+      ],
+      "source_canonical_evidence": [
+        "project_2017-sip-woodhaven-blvd-cb5-sept2024: display_name '2017 Street Improvement Project (Woodhaven Blvd)', source_id capital_woodhaven_blvd_capital_projects_cb5_sept2024, borough Queens, description says 6.85 miles of bus lanes on Woodhaven Blvd for the Q52/Q53 SBS launch.",
+        "project_2017-street-improvement-79th: display_name '2017 Street Improvement Project', source_id 79_st_riverside_dr_fdr_dr_cb8_apr2025, canonical payload preserves Manhattan/M79 SBS context while also showing polluted Woodhaven/Queens merged field values.",
+        "Source block capital_woodhaven_blvd_capital_projects_cb5_sept2024#p005_c0002 says 6.85 miles of bus lanes were installed on Woodhaven Blvd as part of the Q52/Q53 SBS launch in 2017.",
+        "Source block 79_st_riverside_dr_fdr_dr_cb8_apr2025#p005_c0002 says the project launched M79 Select Bus Service to replace M79 Local with queue jumps, bus lanes, signal timing, off-board fare payment, real-time passenger information, and bus stop amenities."
+      ],
+      "reason": "Strong location and route-scope conflict: Woodhaven Boulevard/Q52-Q53 work in Queens is not the 79th Street/M79 SBS improvement in Manhattan. The shared '2017 Street Improvement Project' label is generic and should not carry project identity.",
+      "guard_checks": {
+        "both_present_in_current_project_records": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_direct": true,
+        "not_already_merged_or_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "current_duplicate_global_identity_equivalent": true,
+        "related_existing_dnm_not_direct_or_resolved_for_this_pair": "Existing DNM covers project_2017-sip-woodhaven-blvd-cb5-sept2024 vs project_79th-st-2017-improvement-cb7-apr2025 only; project_2017-street-improvement-79th is a distinct current record/root."
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "project_2017-sip-woodhaven-blvd-cb5-sept2024 <> project_2017-street-improvement-79th on project_2017-st-improvement-project",
+        "project_2017-sip-woodhaven-blvd-cb5-sept2024 <> project_2017-street-improvement-79th on project_2017-st-improvement-project-woodhaven-blvd"
+      ]
+    },
+    {
+      "global_kind": "project",
+      "record_ids": [
+        "project_annual-2021-east-side-access",
+        "project_east-side-access-support"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global project records project_annual-2021-east-side-access and project_east-side-access-support share identity key project_east-side-access-support.",
+        "duplicate_global_identity equivalent: Global project records project_annual-2021-east-side-access and project_east-side-access-support share identity key project_east-side-access-support-projects.",
+        "duplicate_global_identity equivalent: Global project records project_annual-2021-east-side-access and project_east-side-access-support share identity key project_meeting-doc-east-side-access-support."
+      ],
+      "source_canonical_evidence": [
+        "project_annual-2021-east-side-access: display_name 'East Side Access', primary source annual_report_narrative_2021, project_type rail expansion, agency MTA Long Island Rail Road, description says the project brings LIRR into Grand Central Terminal.",
+        "project_east-side-access-support: display_name 'East Side Access Support Projects', primary source meeting_doc_104756, project_type support projects, description 'Support projects related to East Side Access'.",
+        "Source block annual_report_narrative_2021#p088_c0003 describes East Side Access with a $11.133B current project budget, construction contracts, and public revenue service forecast for December 2022.",
+        "Source block meeting_doc_104756#p005_c0023 says the Committee would be briefed on the status of the East Side Access Support Projects."
+      ],
+      "reason": "Parent/support-package distinction: the East Side Access megaproject and a set of support projects are related, but the support package should remain a separate project identity from the parent expansion program.",
+      "guard_checks": {
+        "both_present_in_current_project_records": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_direct": true,
+        "not_already_merged_or_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "current_duplicate_global_identity_equivalent": true
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "project_annual-2021-east-side-access <> project_east-side-access-support on project_east-side-access-support",
+        "project_annual-2021-east-side-access <> project_east-side-access-support on project_east-side-access-support-projects",
+        "project_annual-2021-east-side-access <> project_east-side-access-support on project_meeting-doc-east-side-access-support"
+      ]
+    },
+    {
+      "global_kind": "project",
+      "record_ids": [
+        "project_01-lexington-ave",
+        "project_lexington-ave-60th-52nd-offset-bus-lane"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global project records project_01-lexington-ave and project_lexington-ave-60th-52nd-offset-bus-lane share identity key project_lexington-ave-bus-lane-upgrades-60th-st-to-52nd-st."
+      ],
+      "source_canonical_evidence": [
+        "project_01-lexington-ave: display_name 'Lexington Ave Bus Lane Enhancement', source better_buses_action_plan_2019, name 'Lexington Ave, 96th St to 60th St', description says upgrade existing curbside bus lane to offset bus lane from 96th St to 60th St.",
+        "project_lexington-ave-60th-52nd-offset-bus-lane: display_name 'Lexington Avenue Bus Lane Upgrades 60th Street to 52nd Street', sources lexington_ave_60_st_52_st_cb8_oct2025 and lexington_ave_60_st_52_st_sept2025, description says convert the curbside bus lane to 24/7 offset bus lane between 60th Street and 52nd Street.",
+        "Source block better_buses_action_plan_2019#p024_c0001 names the broad 96th St to 60th St Lexington Ave project.",
+        "Source block lexington_ave_60_st_52_st_oct2025#p007_c0002 says the 60th-52nd project would bring benefits of the existing 96th-60th offset segment to this section, making the relationship source-explicit rather than same identity."
+      ],
+      "reason": "Parent/adjacent-segment distinction: the 2019 Lexington Ave 96th-60th project and the later 60th-52nd offset-lane project are linked corridor segments, not the same project record.",
+      "guard_checks": {
+        "both_present_in_current_project_records": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_direct": true,
+        "not_already_merged_or_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "current_duplicate_global_identity_equivalent": true
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "project_01-lexington-ave <> project_lexington-ave-60th-52nd-offset-bus-lane on project_lexington-ave-bus-lane-upgrades-60th-st-to-52nd-st"
+      ]
+    },
+    {
+      "global_kind": "project",
+      "record_ids": [
+        "project_east-side-access-support",
+        "project_main-line-second-track"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global project records project_east-side-access-support and project_main-line-second-track share identity key project_main-line-second-track-construction."
+      ],
+      "source_canonical_evidence": [
+        "project_east-side-access-support: display_name 'East Side Access Support Projects', project_type support projects, description 'Support projects related to East Side Access'.",
+        "project_main-line-second-track: display_name 'Main Line Second Track construction', project_type construction, project_family capital_or_infrastructure, description says trackwork programs support Main Line Second Track construction and East Side Access Readiness projects.",
+        "Source block meeting_doc_104756#p005_c0023 separately identifies an East Side Access Support Projects briefing.",
+        "Source block meeting_doc_100311#p005_c0011 lists Main Line Second Track construction and East Side Access Readiness projects as separate items supported by LIRR schedule adjustments."
+      ],
+      "reason": "Different project/workstream distinction: Main Line Second Track construction is a separate LIRR construction project/workstream from the East Side Access Support Projects package, even when the same work-plan text mentions both.",
+      "guard_checks": {
+        "both_present_in_current_project_records": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_direct": true,
+        "not_already_merged_or_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "current_duplicate_global_identity_equivalent": true
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "project_east-side-access-support <> project_main-line-second-track on project_main-line-second-track-construction"
+      ]
+    },
+    {
+      "global_kind": "project",
+      "record_ids": [
+        "project_park-ave-viaduct-phase1",
+        "project_park-avenue-viaduct-repair"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global project records project_park-ave-viaduct-phase1 and project_park-avenue-viaduct-repair share identity key project_park-ave-viaduct-replacement-phase-1."
+      ],
+      "source_canonical_evidence": [
+        "project_park-ave-viaduct-phase1: display_name 'Park Avenue Viaduct Replacement Phase 1', source meeting_doc_102911, description says replacement from north side of East 115th Street to south side of East 123rd Street, contract awarded to Halmar for $381,077,027.",
+        "project_park-avenue-viaduct-repair: display_name 'Park Avenue Viaduct Repair', source meeting_doc_100291, location includes E115th-E123rd for Phase 1 and E127th-E132nd for Phase 2, description frames the overall state-of-good-repair effort.",
+        "Source block meeting_doc_102911#p031_c0009 is a Phase 1 design-build contract summary for replacement of the Park Avenue Viaduct.",
+        "Source block meeting_doc_100291#p015_c0006 describes the overall Park Avenue Viaduct state-of-good-repair effort and anticipated 2027 in-service date."
+      ],
+      "reason": "Phase/umbrella distinction: Phase 1 is a bounded design-build contract within the broader Park Avenue Viaduct repair/replacement effort, not the same durable project identity as the overall multi-phase program.",
+      "guard_checks": {
+        "both_present_in_current_project_records": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_direct": true,
+        "not_already_merged_or_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "current_duplicate_global_identity_equivalent": true
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "project_park-ave-viaduct-phase1 <> project_park-avenue-viaduct-repair on project_park-ave-viaduct-replacement-phase-1"
+      ]
+    },
+    {
+      "global_kind": "project",
+      "record_ids": [
+        "project_penn-reconstruction-2020-2024",
+        "project_penn-station-reconstruction-design"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global project records project_penn-reconstruction-2020-2024 and project_penn-station-reconstruction-design share identity key project_penn-reconstruction-amendment2."
+      ],
+      "source_canonical_evidence": [
+        "project_penn-reconstruction-2020-2024: display_name 'Penn Reconstruction', source meeting_doc_155486, project_type expansion, description says the MTA Expansion Program was altered by $46.6M in NJ Transit/Amtrak funding for Penn Reconstruction in the 2020-2024 Capital Program.",
+        "project_penn-station-reconstruction-design: display_name 'Penn Station Reconstruction Project (Design)', source meeting_doc_131811, project_type design services, description says architectural and engineering design services and a ratified modification for additional preliminary design services.",
+        "Source block meeting_doc_155486#p008_c0011 describes capital-program funding additions for the Penn Reconstruction project.",
+        "Source block meeting_doc_131811#p027_c0008 says MTA C&D requested ratification of a modification for additional preliminary design services for the Penn Station reconstruction project."
+      ],
+      "reason": "Program/funding-action versus design-contract distinction: a 2020-2024 Capital Program funding record for Penn Reconstruction is related to, but not identical with, the architectural/engineering design services contract modification.",
+      "guard_checks": {
+        "both_present_in_current_project_records": true,
+        "not_already_do_not_merge_direct": true,
+        "not_already_do_not_merge_resolved": true,
+        "not_already_merged_direct": true,
+        "not_already_merged_or_resolved_same_target": true,
+        "merge_roots_distinct": true,
+        "current_duplicate_global_identity_equivalent": true
+      },
+      "confidence": "high",
+      "expected_duplicate_issues_suppressed": [
+        "project_penn-reconstruction-2020-2024 <> project_penn-station-reconstruction-design on project_penn-reconstruction-amendment2"
+      ]
+    }
+  ],
+  "deferred_lower_confidence_pairs": [
+    {
+      "global_kind": "project",
+      "record_ids": [
+        "project_fordham-rd-bus-priority",
+        "project_fordham-rd-bus-priority-cb5-may2026"
+      ],
+      "validator_evidence": [
+        "duplicate_global_identity equivalent: Global project records project_fordham-rd-bus-priority and project_fordham-rd-bus-priority-cb5-may2026 share identity key project_fordham-rd-bus-priority."
+      ],
+      "defer_reason": "Lower confidence for DNM: both records describe Fordham Road bus-priority work in the Bronx and may be later-phase/restart coverage of the same corridor project rather than a durable separate project identity."
+    }
+  ]
+}

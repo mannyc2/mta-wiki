@@ -1,0 +1,168 @@
+{
+  "note_id": "codex-identity-batch172-prep",
+  "batch": "identity172",
+  "created_at": "2026-06-23T08:52:15Z",
+  "scope": {
+    "global_kind": "route/corridor",
+    "selection_note": "Codex-only identity cleanup prep from current data/canonical/routes.jsonl, data/canonical/corridors.jsonl, data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, and the available read-only validateRepo duplicate_global_identity issue artifact at data/identity-review/validation_issues.jsonl. Selected proposals must pass the requested guards and must not collapse route variants or partial-overlap corridors without source-backed lifecycle/same-service evidence.",
+    "backlog_caveat": "The user described a current 544-issue validation backlog, but the readable local issue artifact in scope, data/identity-review/validation_issues.jsonl, currently contains 121 issues: 117 duplicate_global_identity issues and 45 route/corridor duplicate_global_identity messages. No materialize, validate, export, or provider-backed command was run to regenerate the backlog."
+  },
+  "prepared_count": 1,
+  "proposed_aliases": [
+    {
+      "global_kind": "route",
+      "alias_id": "route_b46-limited-2012",
+      "target_id": "route_utica-ave-sbs",
+      "canonical_id": "route_utica-ave-sbs",
+      "confidence": "high",
+      "validator_duplicate_key": "route_b46",
+      "validator_evidence": [
+        "Global route records route_b46-limited-2012 and route_utica-ave-sbs share identity key route_b46."
+      ],
+      "reason": "validateRepo duplicate_global_identity flags the two current route records on route_b46. This is a route-variant case, so it is proposed only because the canonical and source evidence explicitly describe a lifecycle from B46 Limited to B46 SBS: the alias is the B46 Limited/LTD service on Utica Avenue, while the target is the B46+/B46 SBS record, and source blocks say the B46 Limited was to be upgraded to B46 SBS and that existing B46 Limited stops would convert to SBS or local stops.",
+      "canonical_evidence": {
+        "alias": {
+          "route_id": "B46",
+          "route_name": "B46 Limited",
+          "route_label": "B46 Limited-Stop",
+          "route_type_normalized": "limited_stop",
+          "service_variant": "limited_stop",
+          "description_sample": "B46 Limited service to be upgraded to B46 SBS.",
+          "source_count": 19,
+          "source_ids_sample": [
+            "2012_01_24_sbs_utica_merchants",
+            "2013_09_24_sbs_utica_cb9",
+            "2014_09_16_brt_uticaavenue_cac1_presentation",
+            "2015_02_04_brt_utica_cac2_presentation"
+          ]
+        },
+        "target": {
+          "route_id": "B46+",
+          "route_name": "B46+",
+          "route_label": "B46+",
+          "route_type_normalized": "select_bus_service",
+          "service_variant": "sbs",
+          "description_sample": "Proposed B46 SBS replacing B46 Limited",
+          "source_count": 31,
+          "source_ids_sample": [
+            "2014_09_16_brt_uticaavenue_cac1_presentation",
+            "2015_02_04_brt_utica_cac2_presentation",
+            "2015_04_06_brt_uticaave_cb3_presentation",
+            "utica_ave_b46_sbs_open_house"
+          ]
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "route_b46-limited-2012",
+          "evidence_id": "2015_02_04_brt_utica_cac2_presentation#p017_c0002",
+          "quote": "B46 LTD generally travels between Kings Plaza and Williamsburg Bridge Plaza"
+        },
+        {
+          "record_id": "route_utica-ave-sbs",
+          "evidence_id": "2014_09_16_brt_uticaavenue_cac1_presentation#p014_c0002",
+          "quote": "Build on existing Bus Priority and Safety Project to upgrade B46 Limited to B46 SBS."
+        },
+        {
+          "record_id": "route_utica-ave-sbs",
+          "evidence_id": "2015_02_04_brt_utica_cac2_presentation#p023_c0006",
+          "quote": "Existing B46 Limited stops will either be converted to SBS stops or local stops"
+        },
+        {
+          "record_id": "route_utica-ave-sbs",
+          "evidence_id": "utica_ave_b46_sbs_open_house#p015_c0004",
+          "quote": "Fall 2014: Develop B46 SBS and B46 local service plan"
+        }
+      ],
+      "guards": {
+        "alias_and_target_present_in_current_routes_jsonl": true,
+        "alias_is_not_already_merged": true,
+        "target_is_not_a_merge_alias": true,
+        "alias_is_not_already_a_merge_target": true,
+        "alias_equals_target": false,
+        "do_not_merge_guard_hit": false,
+        "target_current_merge_target_for": [
+          "route_b46-plus"
+        ]
+      }
+    }
+  ],
+  "exclusions_and_guards": {
+    "current_duplicate_issue_counts_from_readable_artifact": {
+      "total_validation_issues": 121,
+      "duplicate_global_identity": 117,
+      "route_corridor_duplicate_global_identity": 45
+    },
+    "input_files_read": [
+      "data/canonical/routes.jsonl",
+      "data/canonical/corridors.jsonl",
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json",
+      "data/identity-review/validation_issues.jsonl"
+    ],
+    "proposal_guards": [
+      "Every proposed alias and target was verified as a current record_id in data/canonical/routes.jsonl or data/canonical/corridors.jsonl.",
+      "No proposed alias is a current route/corridor merge alias in data/identity-overrides/merges.json.",
+      "No proposed target is a current route/corridor merge alias in data/identity-overrides/merges.json.",
+      "No proposed alias is a current route/corridor merge target in data/identity-overrides/merges.json.",
+      "Every alias and target pair is distinct.",
+      "No proposed pair is covered by a current route/corridor do-not-merge guard.",
+      "Route local/limited/SBS/express variants were excluded unless source evidence stated a lifecycle or same-service conversion.",
+      "Partial-overlap, adjacent, or similarly named corridor geography was excluded even when the validator shared a street-name key."
+    ],
+    "excluded_current_duplicate_classes": [
+      "Excluded corridor_third-ave-36th-to-55th with corridor_third-ave-55th-to-57th because canonical limits identify adjacent Third Avenue project sections, not duplicate corridor records.",
+      "Excluded route_b46-local-limited-20110915 with route_b46-limited-2012 because the broader B46 local-and-limited record and the limited-stop variant should not be collapsed without an explicit same-record lifecycle target.",
+      "Excluded route_bx55-lga-2012 with route_bx55-2012 because the alias source is a participant-identified future LaGuardia access idea via the RFK Bridge, while the target is the existing Bx55/Webster Avenue service context.",
+      "Excluded route_q53-lga-2012 with route_q53-ltd-woodhaven-2014 because the alias source is a participant-identified future LaGuardia access idea from Rockaway Park, while the target is the existing Q53 Limited Woodhaven/Cross Bay service.",
+      "Excluded route/corridor duplicate rows where one or both ids are missing from current canonical JSONL because they have already been materialized away or are stale validation rows.",
+      "Excluded route/corridor rows where the candidate alias is already a merge alias, the target is a merge alias, or the alias is already a merge target."
+    ]
+  },
+  "command_evidence": [
+    {
+      "command": "rg --files data | rg '^(data/canonical/(routes|corridors)\\\\.jsonl|data/identity-overrides/(merges|do-not-merge)\\\\.json|data/review_notes/|data/.*validation|data/.*validate|data/.*issues|data/.*backlog)'",
+      "purpose": "Located the requested canonical, identity override, review-note, and validation issue artifacts without running materialize, validate, export, or provider-backed commands."
+    },
+    {
+      "command": "head -40 data/identity-review/validation_issues.jsonl; rg 'Global route records|Global corridor records' data/identity-review/validation_issues.jsonl",
+      "purpose": "Read available validateRepo duplicate_global_identity issue rows for route/corridor candidate selection."
+    },
+    {
+      "command": "node <<'NODE' <read-only guard pass over routes.jsonl, corridors.jsonl, merges.json, do-not-merge.json, and validation_issues.jsonl> NODE",
+      "purpose": "Filtered candidate alias->target directions to pairs where both ids exist, alias is not a merge alias, target is not a merge alias, alias is not a merge target, alias != target, and no do-not-merge guard applies."
+    },
+    {
+      "command": "node <<'NODE' <read selected current route/corridor canonical records> NODE",
+      "purpose": "Inspected canonical payloads, route variants, source ids, and merged field values for remaining candidate pairs."
+    },
+    {
+      "command": "rg -n -i 'B46|Limited|Select Bus Service|SBS|replace|upgrade|converted|Utica' raw/sources/*/blocks.jsonl",
+      "purpose": "Read local source blocks for B46 Limited/B46 SBS lifecycle evidence."
+    },
+    {
+      "command": "node <<'NODE' <read-only final guard/count check for route_b46-limited-2012 -> route_utica-ave-sbs> NODE",
+      "purpose": "Confirmed the selected pair still passes the requested guards and has a current duplicate_global_identity validator row in the readable issue artifact."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "purpose": "Generated the UTC created_at timestamp."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed commands",
+    "bun run validate",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts export",
+    "materialize",
+    "validate",
+    "export",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "campaign dedup",
+    "canonicalize",
+    "write",
+    "ask"
+  ]
+}

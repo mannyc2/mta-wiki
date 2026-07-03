@@ -1,0 +1,97 @@
+{
+  "id": "codex-metric-data-dictionary-tail50-2026-07-02",
+  "date": "2026-07-02",
+  "lane": "metric missing-unit-family deterministic cleanup",
+  "bucket": "bus_lanes_dataset_dictionary category-frequency metric rows",
+  "constraints": {
+    "external_provider_llms_used": false,
+    "forbidden_repo_agent_commands_used": false,
+    "canonical_jsonl_hand_edited": false
+  },
+  "subagents": [
+    {
+      "id": "019f20cf-65ab-7821-b0e1-b9e8c3d70fe7",
+      "role": "read-only audit",
+      "status": "closed",
+      "finding": "The 26 missing rows are Socrata cachedContents.top category-frequency rows and should be represented as counts of dataset rows, not borough, route, direction, hour, or day units."
+    }
+  ],
+  "before": {
+    "metric_claims_total": 36534,
+    "missing_unit_family": 76,
+    "finite_missing_unit_family": 70,
+    "distinct_missing_metric_names": 64,
+    "other_unit_family": 4,
+    "bus_lanes_dataset_dictionary_missing_unit_family": 26
+  },
+  "change": {
+    "normalizer": "Added an exact 26-name Socrata data-dictionary row-count set gated on finite nonnegative integer value and raw_value_text containing the stored count.",
+    "unit_normalized": {
+      "normalized_unit": "rows",
+      "unit_family": "count"
+    },
+    "guardrails": [
+      "No broad _count or category-count pattern was added.",
+      "Same-shaped names outside the exact set remain unresolved.",
+      "Rows with decimal values or raw/value mismatches remain unresolved.",
+      "days_count_7 and hours_count_24 are treated as dataset-row counts, not duration units."
+    ]
+  },
+  "after": {
+    "metric_claims_total": 36534,
+    "missing_unit_family": 50,
+    "finite_missing_unit_family": 44,
+    "distinct_missing_metric_names": 38,
+    "other_unit_family": 4,
+    "bus_lanes_dataset_dictionary_missing_unit_family": 0,
+    "bus_lanes_dataset_dictionary_rows_count": 26
+  },
+  "verification": {
+    "focused_tests": {
+      "command": "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "result": "pass",
+      "tests": 278,
+      "expect_calls": 4954
+    },
+    "typecheck": {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    "materialize": {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "pass",
+      "materialized_submissions": "93067/98115",
+      "retired_submissions_skipped": 265,
+      "pages": 7335,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass",
+      "issues": 0,
+      "submissions": 98115,
+      "canonical_records": 84027,
+      "wiki_pages": 7331
+    }
+  },
+  "remaining": {
+    "missing_unit_family": 50,
+    "finite_missing_unit_family": 44,
+    "other_unit_family": 4,
+    "top_missing_examples": [
+      ["crash_injuries", 5],
+      ["ridership", 3],
+      ["Secondary Screening Score", 3],
+      ["major_felony_change", 2],
+      ["total_arrests_change", 2],
+      ["total_major_felonies_change", 2],
+      ["vacancies", 2]
+    ],
+    "next_candidate_lanes": [
+      "generic ridership and vacancy rows, if evidence gates can distinguish counts from rates/percentages",
+      "crash_injuries and traffic_fatalities_and_injuries safety rows, if raw/evidence proves injury-count semantics",
+      "change/score/rating rows, likely requiring a stricter policy rather than direct unit inference",
+      "traffic-volume and toll traffic rows, if source context proves vehicle-crossing/traffic units"
+    ]
+  }
+}

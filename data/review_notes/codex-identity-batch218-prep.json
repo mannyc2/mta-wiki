@@ -1,0 +1,492 @@
+{
+  "batch": "identity218",
+  "generated_at": "2026-06-23T13:20:04Z",
+  "candidates": [
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting128861-john-mueller",
+      "target_id": "entity_meeting-doc-113891-john-mueller",
+      "identity_key": "entity_john-mueller",
+      "confidence": "high",
+      "reason": "Exact person identity. Both records name John Mueller as Chief of Police for MTAPD / MTA Police Department; the target is the richer multi-source person record.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-113891-john-mueller",
+          "display_name": "John Mueller",
+          "entity_name": "John Mueller",
+          "entity_type": "person",
+          "organization": "Metropolitan Transportation Authority",
+          "title": "MTAPD Chief of Police",
+          "aliases": [
+            "entity_john-j-mueller",
+            "entity_john-j-mueller-20231218",
+            "entity_john-mueller",
+            "entity_john-mueller-mtahq"
+          ],
+          "evidence_refs": [
+            "meeting_doc_109291#p012_c0007",
+            "meeting_doc_112151#p001_c0003",
+            "meeting_doc_111766#p011_c0005 quote: MTAPD Chief of Police John Mueller"
+          ]
+        },
+        {
+          "record_id": "entity_meeting128861-john-mueller",
+          "display_name": "entity_meeting128861_john_mueller",
+          "entity_name": "John Mueller",
+          "entity_type": "person",
+          "organization": "MTA Police Department",
+          "title": "Chief of Police",
+          "aliases": [
+            "entity_john-mueller"
+          ],
+          "evidence_refs": [
+            "meeting_doc_128861#p001_c0015"
+          ]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-138391-nyct-bus-committee",
+      "target_id": "entity_nyct-bus-committee",
+      "identity_key": "entity_new-york-city-transit-and-bus-committee",
+      "confidence": "high",
+      "reason": "Exact committee identity. Both records name the New York City Transit & Bus Committee / NYCT & Bus Committee; the target carries the same committee across multiple meeting sources.",
+      "evidence": [
+        {
+          "record_id": "entity_nyct-bus-committee",
+          "display_name": "New York City Transit & Bus Committee",
+          "entity_name": "New York City Transit & Bus Committee",
+          "entity_type": "committee",
+          "organization": "MTA",
+          "aliases": [
+            "entity_meeting-doc-111811-nyct-bus-committee",
+            "entity_meeting-doc-115256-nyct-bus-committee",
+            "entity_meeting-doc-121046-nyct-bus-committee",
+            "entity_new-york-city-transit-and-bus-committee"
+          ],
+          "evidence_refs": [
+            "meeting_doc_102836#p003_c0001",
+            "meeting_doc_115256#p003_c0001",
+            "meeting_doc_111811#p003_c0001 quote: This performance metrics document was prepared for the May 2023 meeting of the New York City Transit & Bus Committee."
+          ]
+        },
+        {
+          "record_id": "entity_meeting-doc-138391-nyct-bus-committee",
+          "display_name": "NYCT & Bus Committee",
+          "entity_name": "New York City Transit & Bus Committee",
+          "entity_type": "committee",
+          "aliases": [
+            "entity_meeting-doc-205546-nyct-bus-committee",
+            "entity_new-york-city-transit-and-bus-committee",
+            "entity_nyct-and-bus-committee"
+          ],
+          "evidence_refs": [
+            "meeting_doc_138391#p003_c0001",
+            "meeting_doc_138391#p032_c0004",
+            "meeting_doc_205546#p003_c0001"
+          ]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-89776-paul-friman",
+      "target_id": "entity_paul-friman",
+      "identity_key": "entity_paul-l-friman",
+      "confidence": "high",
+      "reason": "Exact person identity. Both records identify Paul L. Friman with the same acting/general counsel and corporate secretary role in TBTA/MTA context.",
+      "evidence": [
+        {
+          "record_id": "entity_paul-friman",
+          "display_name": "Paul L. Friman, Acting General Counsel and Corporate Secretary",
+          "entity_name": "Paul L. Friman",
+          "entity_type": "person",
+          "organization": "Triborough Bridge and Tunnel Authority",
+          "title": "Acting General Counsel and Corporate Secretary - TBTA, MTA",
+          "aliases": [
+            "entity_meeting-doc-107566-paul-friman",
+            "entity_meeting-doc-111711-paul-friman",
+            "entity_paul-l-friman",
+            "entity_paul-l-friman-general-counsel-and-corporate-secretary"
+          ],
+          "evidence_refs": [
+            "meeting_doc_104711#p004_c0007 quote: Paul L. Friman, Acting General Counsel and Corporate Secretary - TBTA, MTA",
+            "meeting_doc_100256#p004_c0007 quote: Paul L. Friman, Acting General Counsel and Corporate Secretary - TBTA, MTA",
+            "meeting_doc_107566#p004_c0008 quote: Paul L. Friman, Acting General Counsel and Corporate Secretary - TBTA, MTA"
+          ]
+        },
+        {
+          "record_id": "entity_meeting-doc-89776-paul-friman",
+          "display_name": "Paul L. Friman",
+          "entity_name": "Paul L. Friman",
+          "entity_type": "person",
+          "organization": "MTA",
+          "title": "Acting General Counsel and Corporate Secretary",
+          "aliases": [
+            "entity_170871-paul-friman",
+            "entity_meeting-doc-102771-paul-friman",
+            "entity_meeting-doc-124281-paul-friman",
+            "entity_meeting-doc-131486-paul-friman"
+          ],
+          "evidence_refs": [
+            "meeting_doc_102771#p007_c0005",
+            "meeting_doc_121016#p004_c0007 quote: Paul L. Friman, General Counsel and Corporate Secretary - TBTA, MTA",
+            "meeting_doc_121016#p007_c0011 quote: Paul L. Friman General Counsel and Corporate Secretary"
+          ]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-102761-mta-board",
+      "target_id": "entity_mta-board-open-data-plan",
+      "identity_key": "entity_mta-board",
+      "confidence": "high",
+      "reason": "Exact governing-body identity. Both records represent the MTA Board; the difference is source context, not a distinct board.",
+      "evidence": [
+        {
+          "record_id": "entity_mta-board-open-data-plan",
+          "display_name": "MTA Board",
+          "entity_name": "MTA Board",
+          "entity_type": "governing body",
+          "organization": "Metropolitan Transportation Authority",
+          "aliases": [
+            "entity_board-secretary",
+            "entity_meeting-doc-105966-mta-board",
+            "entity_mta-board",
+            "entity_mta-board-2025"
+          ],
+          "evidence_refs": [
+            "open_data_plan_2022#p002_c0005 quote: Information is also published as monthly reports prepared for the MTA board and its related committees",
+            "open_data_plan_2025_update#p005_c0005 quote: updating the MTA Board on our progress and achievements",
+            "meeting_doc_102766#p001_c0006 quote: MTA Board Mtg. 12/21/22"
+          ]
+        },
+        {
+          "record_id": "entity_meeting-doc-102761-mta-board",
+          "display_name": "MTA Board",
+          "entity_name": "MTA Board",
+          "entity_type": "board",
+          "organization": "Metropolitan Transportation Authority",
+          "aliases": [
+            "entity_164896-mta-board",
+            "entity_201596-mta-board",
+            "entity_board",
+            "entity_meeting-doc-121156-mta-board"
+          ],
+          "evidence_refs": [
+            "meeting_doc_102761#p001_c0010",
+            "meeting_doc_102761#p001_c0017",
+            "meeting_doc_121156#p003_c0006 quote: To obtain approval of the Board to award a modification to an existing contract"
+          ]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-173846-mta-board",
+      "target_id": "entity_mta-board-drug-alcohol",
+      "identity_key": "entity_mta-board-of-directors",
+      "confidence": "high",
+      "reason": "Exact board identity. Both records name the MTA Board of Directors; the alias is a thinner meeting-document extraction while the target preserves the board entity type and MTA organization.",
+      "evidence": [
+        {
+          "record_id": "entity_mta-board-drug-alcohol",
+          "display_name": "MTA Board of Directors",
+          "entity_name": "MTA Board of Directors",
+          "entity_type": "board",
+          "organization": "Metropolitan Transportation Authority",
+          "aliases": [
+            "entity_mta-board-of-directors"
+          ],
+          "evidence_refs": [
+            "meeting_doc_112151#p001_c0005",
+            "meeting_doc_112151#p001_c0012"
+          ]
+        },
+        {
+          "record_id": "entity_meeting-doc-173846-mta-board",
+          "display_name": "MTA Board of Directors",
+          "entity_name": "MTA Board of Directors",
+          "entity_type": "agency",
+          "aliases": [
+            "entity_meeting-doc-194171-mta-board",
+            "entity_mta-board-of-directors"
+          ],
+          "evidence_refs": [
+            "meeting_doc_173846#p017_c0014",
+            "meeting_doc_194171#p016_c0004"
+          ]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_mta-procurement-department",
+      "target_id": "entity_mta-procurement",
+      "identity_key": "entity_mta-procurement",
+      "confidence": "high",
+      "reason": "Exact department identity. MTA Procurement and MTA Procurement Department are the same MTA procurement department; both records share department type and Metropolitan Transportation Authority context.",
+      "evidence": [
+        {
+          "record_id": "entity_mta-procurement",
+          "display_name": "MTA Procurement",
+          "entity_name": "MTA Procurement",
+          "entity_type": "department",
+          "organization": "MTA",
+          "aliases": [
+            "entity_m164881-mta-procurement",
+            "entity_meeting-doc-107536-mta-procurement-short",
+            "entity_mta-procurement-department",
+            "entity_mta-procurement-dept"
+          ],
+          "evidence_refs": [
+            "meeting_doc_100346#p007_c0003",
+            "meeting_doc_100346#p004_c0001",
+            "meeting_doc_107536#p004_c0001"
+          ]
+        },
+        {
+          "record_id": "entity_mta-procurement-department",
+          "display_name": "MTA Procurement Department",
+          "entity_name": "MTA Procurement Department",
+          "entity_type": "department",
+          "organization": "Metropolitan Transportation Authority",
+          "aliases": [
+            "entity_meeting-doc-107536-mta-procurement",
+            "entity_meeting-doc-111826-mta-procurement-dept",
+            "entity_mta-procurement",
+            "entity_mta-procurement-department-151741"
+          ],
+          "evidence_refs": [
+            "meeting_doc_105946#p004_c0001",
+            "meeting_doc_102801#p004_c0001 quote: Department MTA Procurement",
+            "meeting_doc_107536#p004_c0001"
+          ]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_mta-staten-island-railway",
+      "target_id": "entity_meeting-doc-100241-staten-island-railway",
+      "identity_key": "entity_mta-staten-island-railway",
+      "confidence": "high",
+      "reason": "Exact agency identity. MTA Staten Island Railway, Staten Island Railway, SIR, and SIRTOA are aliases for the same MTA operating agency; the target is the richer multi-source SIR/SIRTOA record.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-100241-staten-island-railway",
+          "display_name": "Staten Island Railway",
+          "entity_name": "SIRTOA",
+          "entity_type": "agency",
+          "organization": "Metropolitan Transportation Authority",
+          "aliases": [
+            "entity_2025-plan-sir",
+            "entity_85476-staten-island-railway",
+            "entity_mta-staten-island-railway",
+            "entity_sir"
+          ],
+          "evidence_refs": [
+            "meeting_doc_100216#p001_c0004",
+            "meeting_doc_100366#p016_c0001",
+            "meeting_doc_102831#p020_c0001"
+          ]
+        },
+        {
+          "record_id": "entity_mta-staten-island-railway",
+          "display_name": "MTA Staten Island Railway",
+          "entity_name": "MTA Staten Island Railway",
+          "entity_type": "agency",
+          "organization": "Metropolitan Transportation Authority",
+          "aliases": [
+            "entity_meeting-doc-176431-sir",
+            "entity_meeting-doc-186591-sir"
+          ],
+          "evidence_refs": [
+            "meeting_doc_157711#p001_c0008",
+            "meeting_doc_176431#p030_c0001",
+            "meeting_doc_186591#p005_c0001"
+          ]
+        }
+      ]
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_mta-bridges-tunnels-dec2023",
+      "target_id": "entity_mta-bridges-and-tunnels",
+      "identity_key": "entity_mta-triborough-bridge-and-tunnel-authority",
+      "confidence": "high",
+      "reason": "Exact agency identity. MTA Bridges and Tunnels is the public name for the Triborough Bridge and Tunnel Authority / TBTA; the target is the richer agency record.",
+      "evidence": [
+        {
+          "record_id": "entity_mta-bridges-and-tunnels",
+          "display_name": "MTA Bridges and Tunnels",
+          "entity_name": "MTA Bridges and Tunnels",
+          "entity_type": "agency",
+          "organization": "Metropolitan Transportation Authority",
+          "aliases": [
+            "entity_160071-tbta",
+            "entity_170871-mta-bt",
+            "entity_170871-tbta",
+            "entity_mta-bridges-and-tunnels"
+          ],
+          "evidence_refs": [
+            "201103_34th_cac_summary#p003_c0001",
+            "annual_report_narrative_2021#p021_c0001",
+            "annual_report_narrative_2021#p094_c0002"
+          ]
+        },
+        {
+          "record_id": "entity_mta-bridges-tunnels-dec2023",
+          "display_name": "MTA Bridges and Tunnels / TBTA",
+          "entity_name": "MTA Triborough Bridge and Tunnel Authority",
+          "entity_type": "agency",
+          "acronym": "TBTA",
+          "aliases": [
+            "entity_mta-bridges-and-tunnels-tbta",
+            "entity_mta-triborough-bridge-and-tunnel-authority"
+          ],
+          "evidence_refs": [
+            "meeting_doc_129196#p002_c0011",
+            "meeting_doc_129196#p011_c0004"
+          ]
+        }
+      ]
+    }
+  ],
+  "do_not_merge": [
+    {
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-111791-siemens",
+        "entity_meeting-doc-113916-siemens"
+      ],
+      "identity_key": "entity_siemens",
+      "confidence": "high",
+      "reason": "Different Siemens legal entities. Siemens Industry Inc. / generic Siemens should not be collapsed into Siemens Mobility, Inc.; the shared Siemens key is a parent/brand token, not sufficient same-entity evidence.",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-111791-siemens",
+          "display_name": "Siemens Industry Inc.",
+          "entity_name": "Siemens",
+          "entity_type": "company",
+          "aliases": [
+            "entity_meeting-doc-124201-siemens",
+            "entity_meeting-doc-171381-siemens",
+            "entity_siemens",
+            "entity_siemens-industry-inc"
+          ],
+          "evidence_refs": [
+            "meeting_doc_111791#p036_c0002",
+            "meeting_doc_111791#p039_c0003",
+            "meeting_doc_113971#p006_c0003"
+          ]
+        },
+        {
+          "record_id": "entity_meeting-doc-113916-siemens",
+          "display_name": "Siemens Mobility, Inc.",
+          "entity_name": "Siemens Mobility, Inc.",
+          "entity_type": "company",
+          "title": "contractor",
+          "aliases": [
+            "entity_163176-siemens-mobility",
+            "entity_m164881-siemens-mobility",
+            "entity_meeting-doc-114016-siemens-mobility",
+            "entity_meeting-doc-160196-siemens"
+          ],
+          "evidence_refs": [
+            "meeting_doc_115141#p015_c0009 quote: Siemens Mobility, Inc. for the design, manufacturing, testing, and delivery of six dual-mode diesel locomotives",
+            "meeting_doc_113916#p005_c0007",
+            "meeting_doc_113916#p006_c0003"
+          ]
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "reason": "Avoided the generic community-board number lane because another worker owns that focused cleanup path.",
+      "records_sample": [
+        "entity_community-board-10-manhattan",
+        "entity_community-board-10-queens-2014",
+        "entity_community-board-11-brooklyn",
+        "entity_community-board-11-manhattan"
+      ]
+    },
+    {
+      "reason": "Skipped broad or contaminated MTA parent/committee clusters where a single merge/DNM pair could hide hierarchy or role contamination.",
+      "records_sample": [
+        "entity_meeting-doc-64066-mta",
+        "entity_mta-entity-update-2025",
+        "entity_mta-overall",
+        "entity_nyct-mta-bus-committee-charter"
+      ]
+    },
+    {
+      "reason": "Skipped initials-only person collisions where the source evidence did not prove a same person or a different person with high confidence.",
+      "records_sample": [
+        "entity_s-chu-cgc-oct2025",
+        "entity_s-chu-committee-member",
+        "entity_norman-brown-115226",
+        "entity_safety-committee-member-brown-jan2022"
+      ]
+    }
+  ],
+  "guard_summary": {
+    "scope": "Prepared the next bounded entity identity cleanup artifact after the identity217 checkpoint.",
+    "allowed_write": "Only this artifact was written: data/review_notes/codex-identity-batch218-prep.json.",
+    "source_of_truth_mutation": "none",
+    "live_duplicate_snapshot": {
+      "user_supplied_checkpoint": "Current 162 entity duplicate_global_identity backlog after identity217.",
+      "local_read_only_replay_method": "Read-only shared-key replay over data/canonical/entities.jsonl using record_id plus record_aliases, current data/identity-overrides/merges.json entity roots, data/identity-overrides/do-not-merge.json entity pair suppression, and prior codex-identity review-note exact-pair exclusion. This replay was used only as a conservative candidate finder, not as a validator replacement.",
+      "entity_records": 1909,
+      "local_candidate_pairs_after_current_exact_guards": 269,
+      "snapshot_caveat": "The authoritative backlog count for this task is the user-supplied 162 after identity217. The local replay intentionally over-includes because it uses shared ids/aliases directly rather than running forbidden validate/materialize commands."
+    },
+    "coverage_checks": {
+      "selected_candidate_count": 8,
+      "selected_do_not_merge_count": 1,
+      "total_selected_decision_count": 9,
+      "current_override_or_prior_batch_exact_pair_hits": 0,
+      "community_board_generic_number_pairs_selected": 0
+    },
+    "commands_used": [
+      "git status --short",
+      "rg --files data | rg '(^data/canonical/entities\\.jsonl$|^data/identity-overrides/(merges|do-not-merge)\\.json$|^data/review_notes/.*identity.*\\.json$)'",
+      "ls -1 data/review_notes | tail -80",
+      "jq read-only inspection of data/review_notes/codex-identity-batch216-prep.json and data/review_notes/codex-identity-batch217-prep.json",
+      "jq read-only inspection of data/identity-overrides/merges.json and data/identity-overrides/do-not-merge.json structure",
+      "head -5 data/canonical/entities.jsonl",
+      "rg read-only searches for duplicate_global_identity and prior identity review-note context",
+      "node read-only shared-key replay over data/canonical/entities.jsonl plus current entity merge/DNM overrides and prior review-note exact-pair exclusions",
+      "node read-only selected record summaries from data/canonical/entities.jsonl",
+      "node read-only current override and prior review-note exact-pair coverage checks",
+      "date -u +%Y-%m-%dT%H:%M:%SZ"
+    ],
+    "commands_not_used": [
+      "provider-backed commands",
+      "canonicalize*",
+      "identity-review-run",
+      "ontology-normalize-run",
+      "write",
+      "ask",
+      "schema commands",
+      "profile/provider/model inspection commands",
+      "materialize",
+      "validate CLI",
+      "export-jsonl",
+      "generated canonical JSONL/DB/wiki edits",
+      "identity override edits"
+    ],
+    "selection_filters": [
+      "Excluded any selected exact pair already present in current entity merge overrides.",
+      "Excluded any selected exact pair already present in current entity do-not-merge overrides.",
+      "Excluded selected exact pairs already visible in prior codex-identity review-note candidates, do_not_merge, or decisions sections.",
+      "Preferred exact same-person, same-committee, same-board, same-department, and same-agency duplicates with compatible names and types.",
+      "Included only one DNM guard where the evidence clearly distinguishes two Siemens legal entities sharing an overbroad brand key.",
+      "Avoided community-board generic-number DNM pairs."
+    ],
+    "worktree_note": "The worktree was already dirty, including source-of-truth and generated files. This prep did not revert, overwrite, materialize, validate, export, or mutate those files."
+  }
+}

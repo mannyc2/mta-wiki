@@ -1,0 +1,172 @@
+{
+  "id": "project-identity-cops-cameras-care-merge",
+  "date": "2026-07-01",
+  "mode": "codex_deterministic_post_ingest_cleanup",
+  "external_provider_llms_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "pioneer",
+    "openai",
+    "deepseek",
+    "vllm",
+    "chandra"
+  ],
+  "subagent_source": {
+    "agent_id": "019f1fe0-465e-70a3-97ef-fec3ed43bf6f",
+    "lane": "read_only_project_duplicate_identity_audit",
+    "verdict": "same canonical project"
+  },
+  "bucket": {
+    "name": "non_other_project_duplicate_identity",
+    "candidate_group": "Cops, Cameras, Care",
+    "before_canonical_record_count": 2,
+    "before_accepted_project_submission_count": 5,
+    "before_rejected_project_submission_count": 0
+  },
+  "before": {
+    "canonical_records": [
+      {
+        "record_id": "project_cops-cameras-care-initiative",
+        "source_ids": [
+          "meeting_doc_100341",
+          "meeting_doc_105921",
+          "meeting_doc_115246",
+          "meeting_doc_121046"
+        ],
+        "submission_count": 4,
+        "evidence_ref_count": 5,
+        "aliases": [
+          "project_cops-cameras-care",
+          "project_cops-cameras-care-nov2022",
+          "project_meeting-doc-115246-cops-cameras-care"
+        ]
+      },
+      {
+        "record_id": "project_meeting-doc-108036-cops-cameras-care",
+        "source_ids": [
+          "meeting_doc_108036"
+        ],
+        "submission_count": 1,
+        "evidence_ref_count": 2,
+        "aliases": [
+          "project_cops-cameras-and-care",
+          "project_cops-cameras-and-care-program"
+        ]
+      }
+    ],
+    "existing_merge_aliases": [
+      "project_cops-cameras-care-nov2022 -> project_cops-cameras-care-initiative",
+      "project_meeting-doc-115246-cops-cameras-care -> project_cops-cameras-care-initiative"
+    ],
+    "existing_do_not_merge_pairs": 0,
+    "validation": {
+      "submissions": 98105,
+      "canonical_records": 84029,
+      "wiki_pages": 7334,
+      "issues": 0
+    }
+  },
+  "decision": {
+    "fix_type": "identity_merge_alias",
+    "alias": "project_meeting-doc-108036-cops-cameras-care",
+    "target": "project_cops-cameras-care-initiative",
+    "reason": "Names, status, document-time status, and scope all describe the same Cops/Cameras/Care subway safety program: officer/police presence, camera rollout, and social-service or mental-health outreach. Differences are wording and taxonomy, not identity.",
+    "no_submission_retirement_needed": true,
+    "do_not_merge_recommended": false
+  },
+  "expected_after": {
+    "canonical_record_count_delta": -1,
+    "merged_record": {
+      "record_id": "project_cops-cameras-care-initiative",
+      "expected_source_ids_include": [
+        "meeting_doc_100341",
+        "meeting_doc_105921",
+        "meeting_doc_108036",
+        "meeting_doc_115246",
+        "meeting_doc_121046"
+      ],
+      "expected_submission_ids_include": [
+        "sub_a59c7fe1f42dd841"
+      ],
+      "expected_aliases_include": [
+        "project_meeting-doc-108036-cops-cameras-care",
+        "project_cops-cameras-and-care",
+        "project_cops-cameras-and-care-program"
+      ]
+    },
+    "removed_record": "project_meeting-doc-108036-cops-cameras-care"
+  },
+  "after": {
+    "validation": {
+      "submissions": 98105,
+      "canonical_records": 84028,
+      "wiki_pages": 7333,
+      "issues": 0
+    },
+    "merged_record": {
+      "record_id": "project_cops-cameras-care-initiative",
+      "source_ids": [
+        "meeting_doc_100341",
+        "meeting_doc_105921",
+        "meeting_doc_108036",
+        "meeting_doc_115246",
+        "meeting_doc_121046"
+      ],
+      "has_meeting_doc_108036": true,
+      "has_108036_submission": true,
+      "aliases_include_old_record": true,
+      "aliases_include_ampersand_forms": true,
+      "submission_count": 5,
+      "evidence_ref_count": 7,
+      "project_family_values": [
+        "accessibility_or_safety",
+        "enforcement_program"
+      ],
+      "project_type_values": [
+        "safety initiative",
+        "program",
+        "safety and security program"
+      ]
+    },
+    "old_record_exists": false
+  },
+  "commands": [
+    "bun -e 'JSON.parse(await Bun.file(\"data/identity-overrides/merges.json\").text()); JSON.parse(await Bun.file(\"data/review_notes/codex-project-identity-cops-cameras-care-merge-2026-07-01.json\").text()); console.log(\"json ok\")'",
+    "bun test packages/pipeline/test/materialize/materialize.test.ts",
+    "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "sqlite3 data/canonical.db 'PRAGMA quick_check;'"
+  ],
+  "verification": {
+    "focused_tests": {
+      "materialize_test_pass": 56,
+      "expect_calls": 859
+    },
+    "materialize": {
+      "materialized_submissions": 93081,
+      "total_submissions": 98105,
+      "retired_submissions_skipped": 246,
+      "canonical_records": 84028,
+      "pages_reported_by_materialize": 7337,
+      "sqlite_fts_quick_check": "ok"
+    },
+    "validate_issues": 0,
+    "sqlite_quick_check": "ok"
+  },
+  "unresolved": [
+    "Merged project_family values may preserve accessibility/safety versus enforcement-program taxonomy conflict for later taxonomy normalization.",
+    "Related Cops/Cameras/Care claim/metric records from meeting_doc_131541 and event records from meeting_doc_105931 were not retargeted in this identity-only slice."
+  ],
+  "next_lanes": [
+    {
+      "lane": "route_identity_guardrail",
+      "candidate": "Sparse SBS route-index records and duplicate source-local route_34th_st_sbs ids",
+      "source": "Codex subagent 019f1fe0-60d5-72e2-8a62-7d2e7c99878c read-only audit"
+    }
+  ]
+}

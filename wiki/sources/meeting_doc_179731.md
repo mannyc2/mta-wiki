@@ -1,0 +1,1609 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-179731"
+record_kind: "source"
+display_name: "Capital Program Committee Meeting - July 2025"
+source_id: "meeting_doc_179731"
+source_ids:
+  - "meeting_doc_179731"
+local_observation_id: "source_meeting_doc_179731"
+local_observation_ids:
+  - "source_meeting_doc_179731"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-21T18:18:57.426Z"
+submission_ids:
+  - "sub_2be8dc46b608a072"
+payload:
+  authority_tier: "board_material"
+  content_type: "meeting_packet"
+  date_text: "July 2025"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2025-07"
+    precision: "month"
+    raw_text: "July 2025"
+  description: "Capital Program Committee Meeting packet including meeting minutes, President's Update, Signals Update, IEC CBTC Program Report, Safety Report, Capital Program Status Report, and Procurement actions for July 2025"
+  published_date_normalized: "2025-07"
+  published_date_precision: "month"
+  publisher: "Metropolitan Transportation Authority"
+  title: "Capital Program Committee Meeting"
+evidence_refs:
+  -
+    block_id: "p001_c0003"
+    evidence_id: "meeting_doc_179731#p001_c0003"
+    page_number: 1
+    role: "title_and_date"
+    source_id: "meeting_doc_179731"
+    source_path: "raw/sources/meeting_doc_179731/blocks.jsonl"
+    text_sha256: "sha256:80dba0324d80f52b33f3d19d63a02c2d720e350d8fe7f9a14b7effb1f982c93c"
+    text_source: "raw_text"
+  -
+    block_id: "p002_c0001"
+    evidence_id: "meeting_doc_179731#p002_c0001"
+    page_number: 2
+    role: "agenda"
+    source_id: "meeting_doc_179731"
+    source_path: "raw/sources/meeting_doc_179731/blocks.jsonl"
+    text_sha256: "sha256:80dba0324d80f52b33f3d19d63a02c2d720e350d8fe7f9a14b7effb1f982c93c"
+    text_source: "raw_text"
+---
+
+# Capital Program Committee
+
+source_id: meeting_doc_179731
+citation: cite block ids exactly as shown in square brackets
+document: 979 block(s)
+
+## Page 1
+
+> [p001_c0001] The logo for the Metropolitan Transportation Authority (MTA) is located in the top left corner. It consists of a black circle with the letters "MTA" in white, bold, sans-serif font.
+[p001_c0002] Metropolitan Transportation Authority
+### [p001_c0003] Capital Program Committee Meeting
+[p001_c0004] July 2025
+### [p001_c0005] Committee Members
+[p001_c0006] Janno Lieber, Chair Meera Joshi, Vice Chair Andrew Albert Gerard Bringmann Norman Brown Samuel Chu* Michael Fleischer Dan Garodnick Randy Glucksman Marc Herbst David Jones Christopher Leathers Blanca Lopez* David Mack* Haeda Mihaltses* John Ross Rizzo John Samuelson Ed Valente Neal Zuckerman
+
+## Page 2
+
+### [p002_c0001] Capital Program Committee Meeting
+[p002_c0002] Monday, 7/28/2025
+[p002_c0003] 12:15 - 1:15 PM ET
+### [p002_c0004] 1. SUMMARY OF ACTIONS
+[p002_c0005] C&D CPC Summary of Actions - Page 3
+### [p002_c0006] 2. PUBLIC COMMENTS PERIOD
+### [p002_c0007] 3. APPROVAL OF MINUTES - JUNE 23, 2025
+[p002_c0008] C&D CPC Committee Minutes - Page 4
+### [p002_c0009] 4. 2025-2026 COMMITTEE WORK PLAN
+[p002_c0010] C&D CPC Committee Work Plan - Page 11
+### [p002_c0011] 5. PRESIDENT'S UPDATE
+### [p002_c0012] 6. SIGNALS UPDATE
+[p002_c0013] C&D Signals BU Update - Page 12
+[p002_c0014] IEC CBTC Program Report - Page 18
+[p002_c0015] IEC Culver Yard Project Review - Page 63
+### [p002_c0016] 7. C&D SAFETY REPORT
+[p002_c0017] C&D CPC Safety Report - Page 69
+### [p002_c0018] 8. CAPITAL PROGRAM STATUS REPORT
+[p002_c0019] C&D Commitments and Completions Report - Page 71
+### [p002_c0020] 9. C&D PROCUREMENTS
+[p002_c0021] C&D Procurements - Page 89
+
+## Page 3
+
+### [p003_c0001] CONSTRUCTION & DEVELOPMENT COMMITTEE ACTIONS SUMMARY for JULY 2025
+[p003_c0002]
+
+```text
+Responsible Department Vendor Name Total Amount Summary of Action Contracts VNB Construction Company $434,980,000 Award of a publicly advertised and competitively solicited contract for Design-Build Services to rehabilitate elevated roadways and ramps on the Brooklyn side of the Verrazzano-Narrows Bridge. Contracts Gramercy PJS JV $1,100,000 Award of a modification to the Contract to add the demolition of the decommissioned Parkchester Avenue Signal Tower. Contracts Hitachi Rail GTS USA Inc. $47,000,000 Ratification of a modification to add the scope of designing, furnishing and supporting the installation of 5G-based Data Communication System equipment on R211 subway cars.
+```
+[p003_c0003] _Master Page # 3 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 4
+
+### [p004_c0001] MINUTES OF MEETING MTA CAPITAL PROGRAM COMMITTEE June 23, 2025 New York, New York 01:15 PM
+### [p004_c0002] CPC Members present:
+[p004_c0003] Hon. Janno Lieber, Chair Hon. Andrew Albert Hon. Gerard Bringmann Hon. Randolph Glucksman Hon. Marc Herbst Hon. Christopher Leathers Hon. Blanca López Hon. Haeda Mihaltses Hon. James O'Donnell Hon. Edward Valente
+### [p004_c0004] CPC Members not present:
+[p004_c0005] Hon. Meera Joshi, Vice Chair Hon. Norman Brown Hon. Samuel Chu Hon. Michael Fleischer Hon. Daniel Garodnick Hon. David Jones Hon. David Mack Hon. John Ross Rizzo Hon. John Samuelsen Hon. Vincent Tessitore, Jr. Hon. Neal Zuckerman
+### [p004_c0006] MTA staff present:
+[p004_c0007] Daniel Cardoza Ian Goldrich Siu Ling Ko Steve Loehr Tim Mulligan Joseph O'Donnell Jamie Torres-Springer Lourdes Zapata
+### [p004_c0008] IEC Present:
+[p004_c0009] Calvin Gordon
+[p004_c0010] * * *
+[p004_c0011] Chairman Lieber called the May 28, 2025, Capital Program Committee Meeting to order at 01:29 PM.
+### [p004_c0012] Public Comments Period
+[p004_c0013] There were five public speakers during the hybrid public comment period: Jason Anthony, Christopher Greif, Jack Connors, *Mo-Yain Tham, *Matty Buchys-Hyland.
+[p004_c0014] *Provided comment virtually.
+[p004_c0015] _Master Page # 4 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 5
+
+### [p005_c0001] Meeting Minutes
+[p005_c0002] Upon a motion duly made and seconded, the Committee approved the minutes of the meeting held on May 28, 2025.
+### [p005_c0003] CPC Work Plan
+[p005_c0004] There were no changes to the work plan.
+[p005_c0005] Details of the following presentations, and Committee Members' comments and questions with respect thereto, are included in the video recording of the meeting produced by the MTA and maintained in the MTA's records.
+### [p005_c0006] President's Report
+[p005_c0007] MTA Construction & Development ("C&D") President Jamie Torres-Springer announced that the $68.4 billion fully funded 2025-2029 Capital Program had been officially approved by the Capital Program Review Board. He expressed gratitude to the Governor, legislative leaders, and New York City leadership for their confidence in the MTA's ability to deliver projects better, faster, and cheaper. He emphasized that C&D has not waited idly for approval; to date, approximately 60% of the plan's work has already been initiated, meaning those scopes have been formed into projects and are entering into the design phase.
+[p005_c0008] He reported that a Request for Proposals had been released for the next major communications-based train control (CBTC) project, which will bring CBTC to the A and C subway lines, covering 46 track miles across Brooklyn and Queens. Mr. Torres-Springer also highlighted the impending completion of an option for 131 new coach buses, a significant investment in the MTA's bus system and referenced the Board's recent approval to advance the purchase of 316 new M9A railcars for both commuter railroads, an acquisition partially funded by the new Capital Plan.
+[p005_c0009] He reiterated that while the most publicized elements of the plan involve major improvements, 90% of the plan remains focused on state of good repair projects, representing massive infrastructure investment throughout the system. To support this work, C&D is also moving to increase transparency. He announced that the MTA will overhaul its capital program reporting dashboard to better serve the public and stakeholders. This revamped dashboard, already previewed on the MTA's website, will provide a more intuitive view of capital projects and improve functionality by allowing users to group and track projects of interest more easily. The updated tool will also continue to present project schedules and budgets in a clear, accessible manner.
+[p005_c0010] Mr. Torres-Springer noted that MTA broke ground with city and state elected officials on accessibility upgrades and station renovations at three Harlem Line Metro-North stations in the Bronx: Williams Bridge, Woodlawn, and Botanical Garden. Williams Bridge and Woodlawn will become newly ADA-accessible, with Woodlawn receiving additional capacity through a widened platform. Botanical Garden, already accessible, will undergo a full renewal including elevator replacements and other state of good repair upgrades. This marks the start of nearly $8 billion in planned Metro-North improvements in the 2025-2029 plan, including investments in the Grand Central artery, additional Harlem Line upgrades, and Hudson Line resiliency and capacity enhancements.
+[p005_c0011] _Master Page # 5 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 6
+
+[p006_c0001] Mr. Torres-Springer also previewed an action on the committee agenda for approval of a $249 million contract to protect and preserve the Verrazzano-Narrows Bridge, which serves 220,000 daily vehicles, including 30,000 express bus riders. The project involves installation of a main cable dehumidification system, an innovation widely adopted internationally and recently used by the Port Authority on the George Washington Bridge. The same system is currently being installed on the JFK Bridge, and the MTA intends to implement it on its other suspension bridges as part of the new Capital Plan, resulting in full coverage across the system.
+### [p006_c0002] Diversity Update
+[p006_c0003] Lourdes Zapata, Chief Diversity and Inclusion Officer, provided an update to the Committee on the MTA's ongoing efforts to support historically underutilized businesses, including Minority and Women-Owned Business Enterprises (MWBEs), Disadvantaged Business Enterprises (DBEs), and Service-Disabled Veteran-Owned Businesses (SDVOBs). She emphasized the MTA's leadership in this area, noting that among New York State's 96 agencies and authorities, the MTA ranks first in MWBE spend - three times more than the next closest agency. The MTA has exceeded the state's 30% MWBE participation goal for four consecutive years and is also meeting or surpassing its SDVOB participation targets.
+[p006_c0004] In the last fiscal year, the MTA awarded approximately $1.2 billion to MWBE, DBE, and SDVOB firms, with about 55%, or $688 million, allocated specifically to capital construction projects. Ms. Zapata clarified the distinctions between state and federal reporting timelines, explaining that MWBE data is reported based on payments within the state fiscal year (April 1-March 31), while DBE reporting is based on awards during the federal fiscal year (October 1-September 30). She noted that approximately $450 million was paid to MWBE firms during the state fiscal year, and $62 million was awarded to DBE firms during the federal fiscal year. She added that the DBE award amount is expected to grow as more design-build contracts are issued.
+[p006_c0005] The MTA anticipates awarding approximately $7.5 billion to historically underutilized firms in the 2025-2029 Capital Plan. In preparation for this increased pace of work, the agency aims to add 300 new DBE firms to the federal directory and 350 new firms to the Small Business Mentoring Program. Ms. Zapata detailed a number of strategic efforts to scale up participation, including simplifying contract language, reducing paperwork, clarifying insurance requirements, and strengthening timely payment provisions. She also highlighted the role of MTA University in delivering on-demand learning opportunities to small businesses.
+[p006_c0006] In the past year, the Department of Diversity and Civil Rights (DDCR), in collaboration with C&D, has conducted extensive outreach, meeting with prime contractors, architecture and engineering firms, and stakeholders across high-demand sectors. And the MTA was a lead planning partner for the Regional Infrastructure Opportunity Summit in Brooklyn, which attracted over 400 attendees. Additional outreach events are planned this summer in Rochester and Syracuse.
+[p006_c0007] Strengthening the Small Business Mentoring Program remains a central priority. Since its inception in 2010, the program has graduated over 400 businesses, facilitated $23 million in loans, and awarded $732 million in contracts, each under the $5 million threshold for eligibility. The program offers access to prime contracting opportunities, mentoring, business development support, training, working capital, and bonding assistance, and is expanding with enhanced curriculum and tailored capacity-building to help firms grow into larger contracting roles. New recruitment is currently underway, with the next training cohort scheduled to launch in the fall. In conclusion, Ms. Zapata reiterated the MTA's commitment to increasing opportunity, educational access, and long-term contract certainty for historically underutilized firms.
+[p006_c0008] _Master Page # 6 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 7
+
+### [p007_c0001] Rolling Stock Update
+[p007_c0002] Tim Mulligan, Chief of Rolling Stock, presented an update on the activities and goals of the MTA's Rolling Stock Program Office. He began by emphasizing the importance and scale of the MTA's rolling stock, with over 9,200 railcars and nearly 6,000 buses, by far the largest fleet in North America. He explained that the current 2025-2029 Capital Plan represents a generational investment, due to the need to replace vehicles that are reaching or exceeding their 40-year useful life threshold. These replacements will offer major improvements in reliability as newer cars are at least six times more reliable than the oldest vehicles currently in service.
+[p007_c0003] The Capital Plan includes funding for 1,500 new subway cars, 500 commuter rail cars, and 2,500 new buses. To accomplish these purchases, the office has focused on increasing competition by streamlining the qualification process for potential suppliers and reducing customizations in vehicle design. Shifting from overly prescriptive specifications to performance-based standards allows for greater innovation and opens procurement to a wider range of proven technologies. The office is also pursuing larger base orders rather than serializing fleet acquisition across multiple capital plans. This will improve pricing efficiency and offer manufacturers more stability, allowing them to retain staff and maintain necessary infrastructure. Additionally, the office is actively exploring how to adopt existing vehicle platforms with minimal customization to meet MTA's needs.
+[p007_c0004] To make the MTA a better owner, the Rolling Stock Program Office conducted a top-to-bottom overhaul of contract terms and conditions, as demonstrated in the recent commuter rail contract discussed at the Finance Committee. Mr. Mulligan noted that in the past, the MTA relied heavily on its market size to dictate contract terms. However, given the agency's smaller global market share, it is now essential to adopt more balanced risk allocation strategies. Risks should be assigned to the party best able to manage them; when neither party can control a risk, it should be minimized or removed altogether to prevent worst-case pricing assumptions from inflating project costs. The payment structure has also been revised to align milestone payments with actual project expenditures, avoiding situations in which contractors are forced to finance projects on the MTA's behalf.
+[p007_c0005] Mr. Mulligan stressed that while the acquisition cost of rolling stock is substantial, the ongoing costs of maintenance, overhaul, and energy consumption are even greater. These long-term operating expenses amount to several billion dollars per year, and decisions must be made with full consideration of these implications. The Rolling Stock Program Office is developing a formal model to support more data-driven and analytical decision-making that will help balance up-front savings with long-term reliability and cost efficiency.
+[p007_c0006] Siu Ling Ko, Vice President and Chief Mechanical Officer of Subway Car Equipment, provided an update on the R211 program. She began by noting that Option 2 of the contract was exercised on January 31, increasing the total number of cars in the program to 1,610, with a total program budget of $5.06 billion. As of June 17, 2025, a total of 535 R211A cars had been delivered, including five additional cars received since the last report. Ms. Ko reported that the initial challenges with early deliveries have been resolved, and cars are now arriving at an accelerated and contractually compliant pace, averaging 30 cars per month.
+[p007_c0007] She highlighted the fleet's performance, stating that the R211 cars are currently performing five times better than the legacy R46 fleet and exceeding contractual reliability requirements of 150,000 miles between failures. This improved performance is credited to the strong collaboration between the R211 project team and Kawasaki. Ms. Ko cited the quick resolution of issues such as door workmanship problems, which have since been corrected and incorporated into ongoing production. Kawasaki continues to actively address both outstanding and newly identified issues.
+[p007_c0008] _Master Page # 7 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 8
+
+[p008_c0001] Joseph Reynolds, Senior Director, Rolling Stock Delivery and Integration at Metro-North Railroad, provided a status update on the Metro-North dual mode locomotive program. He began by emphasizing the environmental benefits of the new locomotives, which will replace the aging P32 fleet. The Tier 4 clean diesel engines used in the new locomotives will reduce harmful pollutants by 86% and are expected to cut carbon emissions by 25,000 tons annually, all while improving reliability for customers.
+[p008_c0002] Mr. Reynolds reviewed the project timeline and confirmed that the project remains both on budget and on schedule. It is funded by the Federal Transit Administration, the locomotives are being manufactured in California, and the project is fully compliant with Buy America requirements. Since the last report, Metro-North has exercised an option for 13 additional battery-plus-AC locomotives, increasing the total project budget to $738 million and extending full delivery to the second quarter of 2030. Metro-North's current total order under the contract stands at 40 dual mode locomotives, with 19 additional options still available.
+### [p008_c0003] IEC Rail Car Rolling Stock Report
+[p008_c0004] Calvin Gordon, Deputy Program Director of the IEC, provided an update on the IEC's oversight of the MTA's rolling stock program. The IEC continues to conduct detailed monitoring of both the MTA and New York City Transit's bus programs, as well as select railcar projects. The latest quarterly Traffic Light Report (TLR), includes updates on four vehicle procurement programs.
+[p008_c0005] On the R211 subway car program, the IEC concurred with both the current project budget and the estimated at completion and confirmed that the production rate has improved, increasing from 22 to 30 subway cars per month on average. The IEC supported the initiatives implemented to accelerate production while maintaining performance standards. One potential risk noted by the IEC was that common door system defects could lead to rework and in-service reliability issues. However, the IEC acknowledged that the project team has taken appropriate steps to improve product quality and address workmanship concerns.
+[p008_c0006] Regarding Metro-North's SC-42 dual mode locomotive program, Mr. Gordon reported that the project remains on schedule, with the acceptance of all clean diesel dual mode locomotives forecasted for April 2027.
+[p008_c0007] The IEC has identified two potential concerns for the program: software issues uncovered during testing on Metro-North property, which could affect the conditional acceptance timeline for the first two clean diesel locomotives, and challenges related to the performance and long-term battery life of battery-electric locomotives. To address these concerns, the project management team is ensuring timely completion of software upgrades and is evaluating strategies to optimize battery efficiency. Mr. Gordon reported that the project remains on schedule and anticipates that conditional acceptance of the first two clean diesel locomotives will be completed in July 2025.
+[p008_c0008] Mr. Gordon concluded his report by providing an update on the M9 railcar program. All 202 cars have been delivered, and substantial completion was achieved in November 2024, with the project delivered within budget.
+[p008_c0009] Daniel Cardoza, Vice President and Chief Maintenance Officer for the New York City Transit Department of Buses, reported that the 2020-2024 Capital Program included a total of 2,161 buses, with 90% of those already delivered or currently in production. The remaining 10%, totaling 217 buses, are future orders still to be purchased.
+[p008_c0010] _Master Page # 8 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 9
+
+[p009_c0001] Preparations are underway for production on four active contracts for the 2025-2029 Capital Plan covering the purchase of express buses, articulated clean diesel and electric buses, and standard electric buses. Pilot buses from these contracts are undergoing in-service evaluations, and lessons learned will be incorporated into the production orders. All current projects are reported to be on time and on budget. Mr. Cardoza stated that the newest hybrid and clean diesel buses have demonstrated increased mean distance between failures (MDBF) over their lifetimes and are operating reliably. However, the electric bus fleet is experiencing early performance issues that have resulted in low MDBF and reduced bus availability. These issues are primarily related to battery and software problems and are being addressed in coordination with manufacturers. Additionally, the MDBF for the coach fleet has decreased slightly, by approximately 2%, due to technical issues that are also being resolved.
+[p009_c0002] The buses being procured will replace aging buses that are 12 years or older and underperforming, as reflected in performance data. Mr. Cardoza emphasized that newer buses are two to three times more reliable, making bus replacement essential for maintaining service reliability. Progress is also being made on the agency's commitment to reducing greenhouse gas emissions including procurement of 368 compressed natural gas buses. Earlier this year, a contract was awarded for two hydrogen-powered buses, as part of an effort to evaluate this emerging zero-emissions technology.
+[p009_c0003] Mr. Cardoza also highlighted ongoing accessibility and safety improvements. The MTA bus fleet remains 100% ADA accessible. The newest buses will include additional flip-up seats on the lower deck to better accommodate customers using walkers, strollers, or similar devices. Wider ramps that facilitate access for larger wheelchairs and scooters are now standard in all new bus orders. Additionally, in support of operator safety, all new buses are being delivered with full driver enclosures that offer an unobstructed view of the windshield and entryway.
+### [p009_c0004] IEC Bus Rolling Stock Report
+[p009_c0005] Calvin Gordon provided a report on the MTA's new bus program. All current contracts are on budget and on schedule.
+[p009_c0006] Mr. Gordon outlined two key concerns identified by the IEC regarding the program. First, the electric buses received to date have experienced reliability and performance issues. Second, delays in accepting these buses into service could necessitate keeping older buses in operation longer than anticipated, potentially leading to increased maintenance costs. However, he noted that the Department of Buses is addressing these concerns with two proactive measures. The MTA will not accept any buses until all technical and quality issues are fully resolved and the vehicles meet contractual requirements. Additionally, the MTA is implementing a systematic program to extend the service life of aging buses until their replacements are delivered and ready for operation. The IEC concurs with both actions as appropriate steps to manage the current challenges.
+### [p009_c0007] IEC Quarterly Traffic Light Report
+[p009_c0008] Calvin Gordon provided an update on the first quarter 2025 Traffic Light Report (TLR). He noted that during this quarter, 254 projects were reviewed for cost and schedule adherence, and 36 of those projects triggered a variance. The accompanying project variance reports include brief explanations prepared by C&D, summarizing the issues encountered during the quarter and the actions taken to mitigate them.
+[p009_c0009] Mr. Gordon also highlighted a notable change to the TLR beginning this quarter: the introduction of two new traffic light colors- blue and orange - designed to provide more context and nuance regarding capital project progress. A blue indicator represents a sound business decision made
+[p009_c0010] _Master Page # 9 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 10
+
+[p010_c0001] by C&D to achieve Capital Program goals with greater flexibility. An orange indicator is used to track projects in which the track team did not receive a “Plan Go” but was able to pivot and complete other high-priority track work elsewhere, contributing to overall progress on the MTA’s systemwide track program.
+### [p010_c0002] Procurement Actions
+[p010_c0003] Ian Goldrich, Senior Vice President and Deputy General Counsel, C&D, presented five procurement actions to the Capital Program Committee.
+[p010_c0004] Upon a motion duly made and seconded, the Capital Program Committee voted to bring the following procurement actions before the full MTA Board and recommended the following:
+- [p010_c0005] 1. Award of a publicly advertised and competitively solicited contract to Skanska-Koch in the amount of $249 million for design-build services to install a cable dehumidification system on the four main cables of the Verrazzano-Narrows Bridge, including an acoustic monitoring system and five years of maintenance for both systems. 2. Ratification of a modification to a contract with CYRA for additional engineering support services related to the installation of a Communication-Based Train Control signaling system on the Queens Boulevard West Line 3. Ratification of a modification to a contract with NYAC for continued project management services for three ongoing projects on the 42nd Street corridor. 4. Ratification of a modification to a contract with Siemens to update carbone controller software for R179 subway cars to improve system performance and reliability. 5. Ratification of a modification to a contract with Hitachi to update carbone controller software for R211 subway cars to improve system performance and reliability.
+[p010_c0006] Earlier in the meeting, during the President’s Report, Committee Member Zuckerman asked how cable dehumidification added life expectancy for the Verrazzano-Narrows Bridge. In response there was some discussion from the President, the Chair and the Bridges & Tunnels Chief Engineer, Romolo DeSantis, and a commitment to provide further information.
+[p010_c0007] Refer to the staff summaries and documentation filed with the records of this meeting for the details of these items, and refer to the video recording of the meeting, produced by the MTA and maintained in MTA records, for Board members’ and C&D representatives’ comments.
+### [p010_c0008] Adjournment
+[p010_c0009] Upon motion duly made and seconded, Chairman Lieber adjourned the June 23, 2025, Capital Program Committee Meeting at 02:43 PM.
+[p010_c0010] Respectfully submitted, Lizzy Berryman MTA C&D, Contracts
+[p010_c0011] _Master Page # 10 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 11
+
+### [p011_c0001] Metropolitan Transportation Authority
+### [p011_c0002] 2025-2026 Capital Program Committee Work Plan
+### [p011_c0003] I. Recurring Agenda Items
+[p011_c0004] Approval of the Minutes Committee Work Plan Commitments/Completions and Funding Report
+### [p011_c0005] II. Specific Agenda Items
+### [p011_c0006] September 2025
+[p011_c0007] President's Update Expansion Quarterly Traffic Light Report
+### [p011_c0008] October 2025
+[p011_c0009] President's Update Stations
+### [p011_c0010] November 2025
+[p011_c0011] President's Update Railroads
+### [p011_c0012] December 2025
+[p011_c0013] President's Update Bridges & Tunnels Quarterly Traffic Light Report
+### [p011_c0014] January 2026
+[p011_c0015] President's Update Infrastructure
+### [p011_c0016] February 2026
+[p011_c0017] President's Update Agency Initiatives
+### [p011_c0018] March 2026
+[p011_c0019] President's Update Signals Quarterly Traffic Light Report
+### [p011_c0020] April 2026
+[p011_c0021] President's Update OMNY
+### [p011_c0022] May 2026
+[p011_c0023] President's Update Systems
+### [p011_c0024] June 2026
+[p011_c0025] President's Update Rolling Stock Diversity Quarterly Traffic Light Report
+### [p011_c0026] July 2026
+[p011_c0027] President's Update Signals
+[p011_c0028] _Master Page # 11 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 12
+
+### [p012_c0001] MTA Capital Program Committee Update Signals & Train Control Projects
+[p012_c0002] July 2025
+[p012_c0003] The Signals & Train Control Business Unit (S&TC) includes Communication Based Train Control (CBTC) projects, such as Crosstown, Queens Blvd West (QBL-W), Queens Blvd East (QBL-E), Culver, and 8 Ave; car upgrades; interlocking and switch replacements; replacement and enhancement of signal systems' reliability and maintainability; technology initiatives; and Superstorm Sandy recovery and resiliency work.
+[p012_c0004] MTA Construction & Development's (C&D) last report to the Capital Program Committee on Signals and Train Control projects was in March 2025.
+[p012_c0005] Major accomplishments since our last report include:
+- [p012_c0006] • Culver CBTC has been placed in service on the entire line • R179 has put in CBTC revenue service on the QBL-W corridor • QBL West CBTC has achieved Substantial Completion
+[p012_c0007] Overall S&TC Business Unit Strategic Updates:
+- [p012_c0008] • Twenty-nine active contracts are in design, procurement, construction and close-out, valued at approximately $7.8 billion; of these, 12 are in construction (including 8 CBTC and CBTC car installation projects) • One CBTC project, combining the Fulton and Liberty Lines, is currently in procurement. This project is expected to be the largest signaling project and the largest track replacement project ever awarded by MTA. It will also include equipping the Fulton and Liberty Av Lines with 5G cellular service as part of the MTA's public-private partnership agreement with Boldyn. • Another CBTC procurement is in preparation for the 6Av/63 rd Lines. For this project, the Train Control work will be contracted to the CBTC supplier first. Once the design is sufficiently progressed, the signaling installation work will be contracted to a general contractor with the other state of good repair work. • The Business Unit is also focused on preparing a) the transition to the 5G IP radio that will require retrofit of the existing fleet and b) the equipment on the work trains. This second initiative will further reduce the wayside equipment that is needed on the right of way, with consequent reductions in maintenance requirements.
+### [p012_c0009] Queens Blvd Line West CBTC (QBL-W)
+[p012_c0010] S48004-1 S48004-2 S48005
+[p012_c0011] The project provides CBTC from Union Turnpike in Queens through 50 St/8 Av on the 53 St Line and 21 St/Queensbridge on the 63 St Line. The project includes equipping 335 R-160 units with CBTC equipment. It also encompasses development and implementation of the technical foundation of the B-Division Automatic Train Supervision (ATS) that will allow centralized operation similar to ATS-A at the RCC. QBL-W is the first interoperable CBTC project implemented for NYCT, allowing trains with CBTC to run on the same line at the same time with carborne and wayside CBTC equipment from different suppliers (Siemens and Thales).
+[p012_c0012] _Page 1 of 6_
+[p012_c0013] _Master Page # 12 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 13
+
+### [p013_c0001] Construction & Development
+[p013_c0002]
+
+```text
+PROJECT STATUS Original Last Reported Forecast / EAC In Service March 2021 February 2022 (actual) February 2022 (actual) CBTC Budget $663M $757M $775M Project is substantially complete and in construction closeout
+```
+[p013_c0003] The project has already placed CBTC into service on all sections, with the last section placed into operation in February 2022. ATS-B is also in service, and the completion of the Large Screen Display has allowed Service Delivery personnel to regroup the Division B operation at the OCC Operation Theater.
+[p013_c0004] The stability and maintainability has continued to improve through multiple software upgrades, including system optimization performed as change orders. This effort will continue in 2025. The progress made has allowed MTA to declare Substantial Completion of the Siemens contract in March 2025. The forecast EAC has increased compared from last year to accommodate additional required work.
+### [p013_c0005] 8 Av Line CBTC
+[p013_c0006] S48006 S32400 M44436 S48013-1 S48013-2 S48015 S48016 S87055
+[p013_c0007] The project will provide CBTC from 59 St in Manhattan through High St in Brooklyn. The program also includes providing CBTC equipment to the existing R-179 vehicles and CBTC equipment to support the manufacturing of the R-211 vehicles. The 8 Av Line has three services (A, C, E) and carries more than 710,000 daily riders (pre-COVID).
+[p013_c0008]
+
+```text
+PROJECT STATUS Original Revised* Last Report Forecast / EAC In Service Q4 2025 Q1 2027 Substantial Completion January 2025 January 2025* June 2026 Q2 2027 Budget $735M $880M $878M $878M The project is approximately 89% complete *Revised to include additional scope for Flushing Line signal removal work and R-211 options 1 and 2 (640 additional cars)
+```
+[p013_c0009] This project builds on the technology introduced in previous CBTC projects, notably the CBTC interoperability achieved on the QBL-W project, and, for the first time, introduced axle counters, in lieu of track circuits, to improve reliability and reduce maintenance and related life-cycle costs. Axle counters will also allow CBTC testing before the cutovers, reducing the cutover duration and associated risks.
+[p013_c0010] Additional work orders were issued for removing decommissioned signal equipment on the Flushing Line and for CBTC equipment to be installed on the additional R-211 trainsets that have been ordered under a separate Kawasaki contract.
+[p013_c0011] The delay of the 8th Ave wayside project that was reported in the last committee meeting has continued, as the contractor has not demonstrated that the system is ready for in-service and that the risks to reliable service were properly addressed. In addition, a significant portion of the wayside equipment—specifically the axle sensor heads—was damaged due to improper installation, an issue that is being remedied through C&D oversight. The first interlocking in-service is projected in Q3 2025.
+[p013_c0012] _Page 2 of 6_
+[p013_c0013] _Master Page # 13 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 14
+
+### [p014_c0001] Construction & Development
+[p014_c0002] The CBTC operation on 8th Ave will rely on existing R160 cars, newly CBTC equipped R179 cars and new R211 cars:
+- [p014_c0003] • Equipping the R179 with CBTC is complete and CBTC operation has started successfully on the QBL-W corridor. • Equipping the R211 is progressing as part of the R211 delivery process. CBTC operation is expected to be demonstrated in revenue service in Q3 2025.
+[p014_c0004] The confidence in the CBTC operation of the R179 and R211 is critical for the success of the CBTC in-service of 8 th Avenue.
+### [p014_c0005] Culver Line CBTC
+[p014_c0006] S-47009 S-32398 S-32399 M-44431 S-87055
+[p014_c0007] Culver Line signal modernization is improving reliability and resiliency of service between West 8 St and Church Av in Brooklyn by modernizing signals, upgrading interlocking systems and constructing new equipment facilities within stations. The new signaling system employs CBTC and adds three new signal facilities at Ditmas Av, Bay Pkwy, and Avenue X. This project improves service along 4.7 route miles of subway track for 12 subway stations. This project includes significant special trackwork on the elevated structure.
+[p014_c0008] Unlike the QBL-W project, which includes separate contracts for suppliers and installers, this project adopted a single combined contract for the installer and supplier. Tutor Perini was selected in 2019 as the primary contractor and installer, with Siemens as their CBTC supplier for signaling and CBTC technology.
+[p014_c0009]
+
+```text
+PROJECT STATUS Original Last Report Forecast / EAC In Service Q3 2024 (actual) Substantial Completion August 2022 October 2024 September 2025 Budget $482M $469M $463M The project is approximately 99% complete
+```
+[p014_c0010] This CBTC in-service has been successfully completed in September 2024 including Automatic Train Operation (ATO). Since then, the contractor is completing outstanding contractual work pushing Substantial Completion from October 2024 reported last year to September 2025. Compared to last year, the budget forecast has been reduced by $6M, reflecting actual soft costs lower than budgeted costs, but excluding potential claims from the contractor.
+[p014_c0011] _Page 3 of 6_
+[p014_c0012] _Master Page # 14 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 15
+
+### [p015_c0001] Construction & Development
+### [p015_c0002] Queens Blvd Line East CBTC (QBL-E)
+[p015_c0003] S48010 S48017 S87055 S81304
+[p015_c0004] The project will provide CBTC systems from north of Union Turnpike to 179 St Station on the Queens Blvd (Hillside Av) Line (F). The new signal system shall be CBTC with SSI and ATS. Axle Counter Systems (ACS) shall replace track circuits north of Union Turnpike Station to 179 St Station.
+[p015_c0005] Under this project, four interlockings will be modernized: 179 St, 169 St, Parsons Blvd, and Briarwood.
+[p015_c0006]
+
+```text
+PROJECT STATUS Original Last Report Forecast / EAC In Service Q2 2027 Substantial Completion Q2 2026 Q2 2026 Q3 2027 Budget $540M $540M $540M Installer (EJ Electric) – 70% complete CBTC Supplier (Mitsubishi) – 69% complete DCS (Siemens) – NTP issued 4/19/2023
+```
+[p015_c0007] Three separate contracts have been awarded to deliver the project: installer, CBTC supplier and the DCS.
+[p015_c0008] This project will further expand the interoperability demonstration from two to three CBTC suppliers (adding Mitsubishi to Siemens and Thales).
+[p015_c0009] The existing Siemens CBTC system on QBL-W and the new Mitsubishi CBTC System on QBL-E will interchange at Union Turnpike Interlocking. This interchange is an area of special attention to ensure a smooth transition between the two interoperable systems.
+[p015_c0010] Field work, including special trackwork, has made significant progress; however, it continues to be delayed by the finalization of a detailed Book of Plans for the conventional legacy signaling system, which is being rebuilt as part of this project (but not future CBTC-Centric projects). This delay is primarily due to the rapidly shrinking industry capacity to support legacy New York Subway signaling technology. The first interlocking in-service is scheduled for Q4 2025. Mitsubishi progress is as planned for CBTC in-services in 2026. Compared to last year, the forecast estimate at completion has been increased by $28M due to the potential for additional support costs, which are currently being evaluated.
+### [p015_c0011] Crosstown Line CBTC
+[p015_c0012] S-48012 S-32476
+[p015_c0013] This is the first CBTC project advanced using Design-Build and encompasses the design, installation, testing, and commissioning of a CBTC signal system on the Crosstown Line (G) from Court Square in Queens to Church Avenue in Brooklyn. In addition, this Contract also provides for track replacement work on portions of the Crosstown Line and construction of new/or renovation of existing facilities to serve as train control rooms and house equipment for the new CBTC. The project is also being coordinated with installation of 5G cellular service as part of the MTA’s public-private partnership with Boldyn.
+[p015_c0014] This Train Control System (“TCS”) is based on the Interoperable Interface Specifications (“I2S”) compliant CBTC solution already deployed on NYCT infrastructure and can
+[p015_c0015] _Page 4 of 6_
+[p015_c0016] _Master Page # 15 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 16
+
+[p016_c0001] operate with CBTC-equipped trains and with the existing NYCT ATS system deployed on the “B” Division with the following significant changes:
+- [p016_c0002] • Replacement of track circuits with an Axle Counter System • Removal of the requirement for an underlaying Auxiliary Wayside System (“AWS”) • Conversion of ‘733’ typical circuits into software-based interlocking functions integrated with the CBTC
+[p016_c0003] The scope of the Design-Build contract includes:
+- [p016_c0004] • Wayside Construction and Installation: track modifications, switch machine replacement and CBTC equipment and infrastructure installation, including wayside train stops and 5G radio technology for CBTC Data Communication System (DCS) • Station Work: construction of new rooms and modifications of existing Train Control Rooms (“TCRs”), Battery/UPS, Fire Suppression, MEP, Interface with existing station areas including Electrical Distribution Rooms (“EDR”), communication rooms, and upgrade to the HVAC system as needed • Providing an Enhanced Integrated Test Facility (EITF) for all CBTC Centric projects.
+[p016_c0005] The previously-reported original project budget also reflected funding for a proposed change order to replace the Greenpoint Tube discharge line, which had originally been planned as a separate project in the 2020-24 Capital Plan. We are currently assessing the best approach to address this work and thus, it is not currently reflected in the project budget.
+[p016_c0006]
+
+```text
+PROJECT STATUS Original Last Report Forecast / EAC In Service North 2027 South 2028 Substantial Completion Q3 2027 Q3 2027 Q2 2029 Budget* $624M $624M $624M TC Electric/Hitachi (Crosstown Partners) / AECOM Design-Build Team The project is approximately 53% complete (*) Greenpoint Tube discharge line budget not included
+```
+[p016_c0007] A substantial amount of wayside work, including track work, was completed during the Summer 2024 shutdown. Overall construction progress remains as planned. The 5G radio wayside operation has been demonstrated as per FCC requirements.
+[p016_c0008] However, the project is experiencing delays due to procurement, design, installation and commissioning of a 5G radio (carbone) retrofit of the R211 and R179 fleets that is necessary for CBTC testing and in-service. The transition to 5G technology was anticipated and the wayside equipment was awarded as an option for the Design-Build contract, but the carbone equipment production and installation required additional planning and scoping, as all CBTC-enabled lines will eventually transition
+[p016_c0009] _Page 5 of 6_
+[p016_c0010] _Master Page # 16 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 17
+
+### [p017_c0001] Construction & Development
+[p017_c0002] to this technology and therefore the approach required additional effort. The technology is now in design by Siemens and Hitachi but will extend the in-service date for Crosstown CBTC.
+[p017_c0003] In addition, the contractor is late to get the approval of the signal wayside block design. This is the first time that this work is performed by a third party under the Design Build contract. Compared to last year, the forecast estimate at completion has increased by $24M due to the potential for additional support costs, which are currently being evaluated. It does not include potential claims for the contractor.
+[p017_c0004] _Page 6 of 6_
+[p017_c0005] _Master Page # 17 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 18
+
+[p018_c0001] July 2025
+[p018_c0002] Capital Program Committee
+[p018_c0003] Independent Engineering Consultant
+[p018_c0004] Programmatic Review
+[p018_c0005] Business Unit: Signals & Train Control
+[p018_c0006] New York City Transit (NYCT) - Communications Based Train Control (CBTC)
+[p018_c0007] _Michael Baker INTERNATIONAL_
+[p018_c0008] _MTA Independent Engineering Consultant_
+[p018_c0009] _Master Page # 18 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 19
+
+### [p019_c0001] NYCT CBTC Program
+### [p019_c0002] Program Summary
+[p019_c0003] The IEC reviews the Signals & Train Control Business Unit's projects through cost and schedule analysis reported in the quarterly Traffic Light Reports (TLR) and through more comprehensive risk-based monitoring of individual CBTC projects.
+[p019_c0004] There are two types of CBTC technologies- Legacy and CBTC Centric:
+- [p019_c0005] ■ The Legacy CBTC Program that started in the late 1990s to enhance the safety of operations, increase track capacity through a reduction in operating headway and enhance operation flexibility. □ There are three active projects in this program: ■ Culver (F) ■ 8 Av (A,C,E) ■ QBL East (F)
+[p019_c0006] The QBL West project achieved substantial completion in March 2025.
+- [p019_c0007] ■ The CBTC Centric Program started in 2022 and maintained the objectives of the Legacy CBTC Program with the added goal of minimizing wayside and room equipment through the deployment of a centralized and integrated architecture. The CBTC Centric initiative will also enhance CBTC communication through the implementation of 5G technology. □ Currently, there are three projects in this program: ■ Crosstown (F,G) is in the construction phase ■ Fulton-Liberty (A,C) is in the procurement phase ■ 6 Av (B, D, F) is in the planning phase
+[p019_c0008] _Michael Baker INTERNATIONAL_
+[p019_c0009] _MTA Independent Engineering Consultant_
+[p019_c0010] _2_
+[p019_c0011] _Master Page # 19 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 20
+
+### [p020_c0001] NYCT CBTC Program
+### [p020_c0002] Project Locations
+[p020_c0003] In three out of the five boroughs, the following CBTC projects are being monitored by the IEC.
+> [p020_c0004] The map displays the proposed CBTC routes across four boroughs: Manhattan, The Bronx, Queens, and Brooklyn. The routes are color-coded and labeled as follows: QBL West (E, F, M, R): Purple line, running from the Bronx through Manhattan to Queens. Culver (F): Dark blue line, running from Brooklyn through Manhattan to Queens. 8th Av (A, C, E): Light blue line, running from Brooklyn through Manhattan to Queens. QBL East (F): Yellow line, running from Queens through Manhattan to Brooklyn. Crosstown (F, G): Light blue line, running from Brooklyn through Manhattan to Queens. Liberty (A): Green dashed line, running from Queens through Manhattan to Brooklyn. Fulton (A, C): Orange dashed line, running from Brooklyn through Manhattan to Queens. 6th Av (B, D, F): Grey dashed line, running from Brooklyn through Manhattan to Queens. The map also shows the borough boundaries and major street names. An inset map in the bottom left corner shows the location of the project area within the state of New York, specifically highlighting Staten Island.
+[p020_c0005] _Michael Baker INTERNATIONAL_
+[p020_c0006] _MTA Independent Engineering Consultant_
+[p020_c0007] _3_
+[p020_c0008] _Master Page # 20 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 21
+
+### [p021_c0001] NYCT CBTC Program
+### [p021_c0002] Program Status (Achievements)
+[p021_c0003] Since our last report to the Board in March 2024, the CBTC Program has made good progress in expanding the territory controlled by CBTC and enhancing the operational stability of CBTC installations.
+[p021_c0004] CBTC Program achievements include:
+- [p021_c0005] ■ Declaring Substantial Completion on the last QBL West CBTC Project, ■ Expanding CBTC operation to the Culver Line, which includes 21.7 track miles and 3 interlockings. ■ The CBTC commissioning took less than 6 months with minimum impact on train service. ■ A higher level of CBTC operational stability was achieved on both the QBL West and Culver lines through the CBTC supplier software releases for the Data Communication System (DCS) and carborne equipment, ■ Expanding the Automatic Train Supervision (ATS) territories to the Culver Line, as well as deploying additional ATS functions to effectively manage service. ■ Implementing of Automatic Train Operation functions on the QBL West and Culver lines to provide a more positive customer experience. ■ The CBTC supplier on the QBL East project has progressed the CBTC design and successfully completed the testing and verification activities on schedule. ■ The contractor for the Crosstown project has advanced its design of the CBTC Centric system, is progressing track construction work on schedule and recently met the FCC deadline to demonstrate the use of the 5G frequency.
+[p021_c0006] _Michael Baker INTERNATIONAL_
+[p021_c0007] _MTA Independent Engineering Consultant_
+[p021_c0008] _4_
+[p021_c0009] _Master Page # 21 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 22
+
+### [p022_c0001] NYCT CBTC Program
+### [p022_c0002] Program Status (Challenges)
+[p022_c0003] Since the March 2024 CPC report, the CBTC Program has faced some challenges that have impacted the schedules of the CBTC projects. The IEC concurs with C&D's emphasizing Quality and Reliability, Availability and Maintainability (RAM) requirements over schedule.
+[p022_c0004] Specific project impacts include:
+- [p022_c0005] ■ The implementation of the axle counter system on the 8 Av CBTC project to provide secondary detection was delayed due to design, hardware and safety issues. This has delayed the commissioning of interlockings on the line. ■ QBL East was impacted due to a delay by the contractor in completing Auxiliary Wayside System (AWS) design and an unanticipated environmental condition at 169 th Street (sewage on the tracks) that affected the installation of wayside equipment. ■ Since achieving Beneficial Use in September of 2024, Substantial Completion for the Culver CBTC project has been delayed due to outstanding deliverables and the requirement to complete critical punch list items. ■ The Crosstown CBTC Project, which is providing the first CBTC Centric installation and first implementation of 5G communication technology, was impacted due to a delay by the contractor in providing a signal block design and delays to the following external dependencies, which require contractual agreement with third parties: □ Equip the car fleet that operates on Crosstown with 5G, □ Provide seamless interfaces to adjacent CBTC installations, □ Integration of the Automatic Train Supervision (ATS) subsystem with 5G.
+[p022_c0006] C&D and the contractor are currently working jointly to re-baseline the schedule to reflect realistic dates for the external dependencies [outstanding 5G and interface work] and incorporate mitigation measures to minimize the delay. In addition, C&D has awarded limited NTPs to third party contractors in order to advance the work associated with the external dependencies.
+[p022_c0007] _Michael Baker INTERNATIONAL_
+[p022_c0008] _MTA Independent Engineering Consultant_
+[p022_c0009] _5_
+[p022_c0010] _Master Page # 22 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 23
+
+### [p023_c0001] NYCT CBTC Program
+### [p023_c0002] Program Status (Lessons Learned & Proactive Measures)
+[p023_c0003] Previous CBTC projects have provided valuable knowledge and experience, which C&D has applied to the Fulton-Liberty project, which is currently in procurement, including:
+- [p023_c0004] ■ Requiring the contractor to provide a signal block design and a commissioning plan during the procurement phase, ■ Including comprehensive specifications for software development and requirements management in the RFP documents, ■ Clarifying the scope of system integration in the specification, ■ Including additional requirements related to axle counter implementation for installation and manual reset.
+[p023_c0005] Moving forward, based on discussions with the IEC, C&D has recognized the importance of taking proactive measures to mitigate current and future potential challenges that could impact the CBTC Centric Program:
+- [p023_c0006] ■ The CBTC Centric approach is based on the elimination of an independent Auxiliary Wayside System (AWS) and minimizing wayside signal equipment. To ensure the success of this approach, it is essential to achieve a very high level of system availability and minimize the operation of manual trains. This could be accomplished by: ■ Accelerating C&D initiative to equip work trains with CBTC equipment, ■ Establishing performance metrics based on RAM requirements that should be met during the testing and commissioning of the CBTC Centric installation before the start of revenue service. ■ Continue coordination with operating and maintenance groups during the implementation stages of CBTC projects, ■ Continue with C&D process of holding periodic risk workshops for early detection and mitigation of issues that could impact projects budgets and schedules.
+[p023_c0007] _Michael Baker INTERNATIONAL_
+[p023_c0008] _MTA Independent Engineering Consultant_
+[p023_c0009] _6_
+[p023_c0010] _Master Page # 23 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 24
+
+### [p024_c0001] NYCT CBTC Program
+### [p024_c0002] Programmatic Recommendations
+[p024_c0003] The IEC has analyzed the challenges that caused delays, to both Legacy and CBTC Centric projects, and provides the following programmatic recommendations:
+- [p024_c0004] ■ The implementation of new technologies is generally beneficial to the program; however, to ensure proper adaptation to the NYCT operating environment, all aspects, including operational and maintenance considerations, should be thoroughly analyzed and resolved before inclusion in a capital contract. Preferably, a pilot installation should be used for evaluation within NYCT operating environment. ■ During project planning, all external dependencies (outstanding 5G and interface work) should be analyzed in terms of technical approach, implementation schedule and availability of resources to ensure proper execution of the project scope without schedule impact. Further, Interfaces/tie-ins to adjacent installations should be included as a specification requirement. ■ To enhance the Design Builder's understanding of CBTC Centric requirements, C&D should develop design guidelines and best practices for the implementation of CBTC Centric based on lessons learned from the Crosstown Project. This will ensure that under future CBTC Centric projects, different CBTC suppliers can design and implement a system that provides consistent train operation. When appropriate, prescriptive requirements should be included to ensure that the operational and safety objectives of the system are achieved.
+[p024_c0005] _Michael Baker INTERNATIONAL_
+[p024_c0006] _MTA Independent Engineering Consultant_
+[p024_c0007] _7_
+[p024_c0008] _Master Page # 24 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 25
+
+### [p025_c0001] NYCT CBTC Program
+### [p025_c0002] Program Schedule
+[p025_c0003]
+
+```text
+Contract Contractual Forecast Award Date Substantial Completion (SC) Project In-Service IEC In-Service 1 Project SC IEC SC QBL West 08/2015 03/2021 02/2022 (A) 02/2022 (A) 03/2025 (A) 03/2025 (A) Culver 02/2019 08/2022 09/2024 (A) 09/2024 (A) 09/2025 09/2025 8 Av 01/2020 01/2025 12/2026 07/2027 04/2027 10/2027 QBL East 12/2021 07/2026 06/2027 08/2027 07/2027 03/2028 Crosstown 01/2023 07/2027 12/2028 06/2029 06/2029 07/2029
+```
+[p025_c0004] Note 1: IEC In-Service dates reflect all sections being fully in-service after RAM targets have been achieved.
+[p025_c0005] Since the March 2024 report:
+- [p025_c0006] ■ QBL West achieved SC in March 2025, 3 months later than previously reported. The delays during this time were attributed to longer-than-planned software development and testing to complete the ATS function for the entire B-Division fleet. ■ The IEC forecasts that four contracts will be delayed: ■ Culver SC is forecast for September 2025, 9 months later than previously reported. Since last report, the delays have been primarily due to the completion of critical punch list items, training, and the late delivery of bench test equipment (BTE). ■ 8 Av is forecast for October 2027, 12 months later than previously reported. Since last report, delays can be attributed to finalization of the Axle Counter System (ACS) manual reset process and resolution of the ACS sensor damage. ■ QBL East is forecast for March 2028, 20 months later than previously reported. Since last report, delays can be primarily attributed to an environmental issue which prevented contractor track access and the continued delays in the finalization of the Book of Plans (BOP). ■ Based on the IEC's preliminary analysis, Crosstown is forecast to have a 24-month delay to SC primarily due to delays encountered in finalizing contractual agreements with third-party CBTC suppliers. The schedule is currently undergoing a re-baseline to minimize impacts.
+[p025_c0007] _Michael Baker INTERNATIONAL_
+[p025_c0008] _MTA Independent Engineering Consultant_
+[p025_c0009] _8_
+[p025_c0010] _Master Page # 25 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 26
+
+### [p026_c0001] NYCT CBTC Program
+### [p026_c0002] Budget
+[p026_c0003]
+
+```text
+Contracts Current Budget Project EAC IEC EAC IEC EAC Within Budget QBL West $775M $775M $775M Yes Culver $489M $463M $485M Yes 8th Ave $880M $878M $701M Yes QBL East $542M $540M $568M No Crosstown $624M $624M $715M No
+```
+- [p026_c0004] ■ Since last report in March 2024, the IEC forecast budget overruns on 2 of the 5 projects. ■ QBL West IEC EAC has increased by $30M from last report to cover change orders and overruns in TA Labor. MTA C&D indicates any ATS functions/Features not completed as of SC will be transferred to a different project for completion. Funding has yet to be determined. ■ Culver IEC EAC has increased by $10M since last report which includes costs associated with change orders and unresolved commercial issues. ■ The 8 Av IEC EAC has decreased by $135M since last report to reflect unused reserve. This EAC includes projected expenditures for TAL/EFA to the IEC forecast SC. The Project Budget and EAC includes substantial reserves, which MTA C&D indicates will be reduced accordingly to reflect the actual project cost. ■ QBL East IEC EAC has increased by $26M due to additional work orders and overruns in soft costs. A budget modification is in process to address the current shortfall. ■ The Crosstown budget has been reduced by $9M to reflect the removal of the Greenpoint Tube discharge replacement work. The IEC EAC has increased by $77M from last report and includes pending/potential/possible change orders, risk on remaining work and increases in TA Labor/EFA projected expenditures to the the IEC forecast SC date. It does not include significant claims undergoing arbitration. ■ The IEC notes the budget will also need to be increased to support an extension of schedule beyond the contractual SC date.
+[p026_c0005] _Michael Baker INTERNATIONAL_
+[p026_c0006] _MTA Independent Engineering Consultant_
+[p026_c0007] _9_
+[p026_c0008] _Master Page # 26 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 27
+
+### [p027_c0001] July 2025 Capital Program Committee Independent Engineering Consultant Project Review
+[p027_c0002] Business Unit: Signals and Train Control New York City Transit (NYCT) – Communications Based Train Control (CBTC) Culver Line
+[p027_c0003] _Michael Baker INTERNATIONAL_
+[p027_c0004] _MTA Independent Engineering Consultant_
+[p027_c0005] _Master Page # 27 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 28
+
+### [p028_c0001] NYCT CBTC – Culver Line
+### [p028_c0002] Scope
+[p028_c0003] This project entails the supply and installation of a Communications-Based Train Control (CBTC) along the Culver Line in Brooklyn, extending from Church Avenue to just north of West 8 th Street. This is a Legacy CBTC project that utilizes Track Circuits for Train Detection.
+[p028_c0004] Key components include:
+- [p028_c0005] ■ Construction of new Train Control Rooms at Avenue X and Ditmas Avenue ■ Construction of a Central Instrument Room at Bay Parkway. ■ Modernization and commissioning of Avenue X and Ditmas Avenue interlockings. ■ Track work at Church Avenue, Avenue X, and Ditmas Avenue. ■ Installation of Special Track Work at Avenue X and Ditmas Avenue.
+[p028_c0006] _Michael Baker INTERNATIONAL_
+[p028_c0007] _MTA Independent Engineering Consultant_
+[p028_c0008] _2_
+[p028_c0009] _Master Page # 28 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 29
+
+### [p029_c0001] NYCT CBTC – Culver Line
+### [p029_c0002] Schedule
+[p029_c0003] The contract was awarded to Tutor Perini Corporation (TPC) in February 2019, with a contractual duration of 42 months, establishing August 2022 as the Substantial Completion (SC) date.
+- [p029_c0004] ■ Beneficial Use (BU) was achieved in September 2024, 27 months behind schedule. The delay was due to the late delivery of Signal Cable and the incorrect fabrication of track ties for the Avenue X Special Work Portion. ■ Substantial Completion (SC) is forecasted for September 2025, a delay of 37 months, primarily due to the completion of critical punch list items, training, and the late delivery of bench test equipment (BTE). □ The BTE is now pending acceptance from NYCT’s Central Electronics Shop.
+[p029_c0005]
+
+```text
+Milestone (MS) Contractual Completion Date Project Forecast IEC Forecast Variance (Months) 1 CBTC In-service 6/2022 9/2024 (A) 9/2024 (A) -27 SC 8/2022 9/2025 9/2025 -37
+```
+[p029_c0006] 1 (-) Behind schedule/(+) Ahead of schedule
+[p029_c0007] In the opinion of the IEC, it may be possible for MTA C&D to declare SC earlier than September 2025, if the contractor has made significant progress on the critical punch list items and training.
+[p029_c0008] _Michael Baker INTERNATIONAL_
+[p029_c0009] _MTA Independent Engineering Consultant_
+[p029_c0010] _3_
+[p029_c0011] _Master Page # 29 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 30
+
+### [p030_c0001] NYCT CBTC – Culver Line
+### [p030_c0002] Budget
+[p030_c0003] Since the March 2024 report, the budget has increased by $5M to $489M to cover change orders. The Project Estimate at Completion (EAC) is $463M.
+[p030_c0004]
+
+```text
+Budget at Award Current Budget Project EAC IEC Forecast EAC Current Status $484M $489M $463M $485M
+```
+- [p030_c0005] ❑ As of June 2025, the project is 83% complete by expenditures. ❑ Third-party construction task orders are 98% complete, based on payments to date across all tasks. ❑ The IEC’s Forecast EAC includes a claim of an estimated $25M that was awarded to the contractor by an arbitrator for an extension of time. ❑ Based on IEC’s analysis of the outstanding work, associated expenditures, contingencies, reserves, soft costs, change orders, claims, and schedule impacts, the current budget is deemed adequate to support the project to SC. ❑ A budget modification is currently in progress to reallocate available funds accordingly.
+[p030_c0006] _Michael Baker INTERNATIONAL_
+[p030_c0007] _MTA Independent Engineering Consultant_
+[p030_c0008] _4_
+[p030_c0009] _Master Page # 30 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 31
+
+### [p031_c0001] NYCT CBTC – Culver Line
+### [p031_c0002] Risks and Mitigations
+- [p031_c0003] ■ Since the project is nearing completion, all previous risks have been retired, realized, or mitigated.
+[p031_c0004] _Michael Baker INTERNATIONAL_
+[p031_c0005] _MTA Independent Engineering Consultant_
+[p031_c0006] _5_
+[p031_c0007] _Master Page # 31 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 32
+
+### [p032_c0001] NYCT CBTC – Culver Line
+### [p032_c0002] Observations
+- [p032_c0003] ❑ CBTC has been in service since September 2024 and is functioning as intended, consistent with contractual requirements, with no impact on service. ❑ The Culver line has experienced improved system reliability and performance onboard software updates provided by the CBTC supplier.
+[p032_c0004] _Michael Baker INTERNATIONAL_
+[p032_c0005] _MTA Independent Engineering Consultant_
+[p032_c0006] _6_
+[p032_c0007] _Master Page # 32 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 33
+
+### [p033_c0001] July 2025 Capital Program Committee Independent Engineering Consultant Project Review
+[p033_c0002] Business Unit: Signals and Train Control New York City Transit (NYCT) – Communications Based Train Control (CBTC) 8 Av
+[p033_c0003] _Michael Baker INTERNATIONAL_
+[p033_c0004] _MTA Independent Engineering Consultant_
+[p033_c0005] _Master Page # 33 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 34
+
+### [p034_c0001] NYCT – CBTC 8 Av
+### [p034_c0002] Scope
+[p034_c0003] The supply and installation of a Communications-Based Train Control (CBTC) along the 8 Av Line, extending from south of the 59 St interlocking in Manhattan to the High Street Station in Brooklyn. The new CBTC system will interface with the Queens Boulevard Line (QBL) at the 50 St Station. Key components of the project include:
+- [p034_c0004] ■ Interlocking Upgrades ■ Replacement of 34 St and 42 St North interlockings with solid-state (microprocessor-based) control systems ■ Decommissioning of the 42 St South interlocking. ■ Interface with the existing West 4 St Interlocking. ■ Train Detection and Supervision Systems ■ Design, supply, and installation of a new Axle Counter System (ACS) to replace legacy track circuits. ■ Expansion and enhancement of the Automated Train Supervision (ATS) system to cover the 8 th Avenue Line. ■ Carborne Systems Integration ■ Supply, installation, and delivery of CBTC carbone systems for R-179 subway cars. ■ Supply and delivery of Carborne Controllers (CCs) for R-211A/T subway cars. ■ R-179 installations performed by Car Equipment and Siemens. ■ R-211A/T installations handled by Kawasaki and Hitachi (formerly Thales) ■ Data Communication System (DCS) ■ Siemens supplies DCS equipment under a separate NYCT contract. ■ Additional Equipment Procurement ■ MTA Construction & Development exercised two options to procure 224 onboard computer units (OBCUs) for the R-211A Option cars, expanding the scope of work.
+[p034_c0005] AECOM is the Project Management Consultant (PMC) for this project.
+[p034_c0006] _Michael Baker INTERNATIONAL_
+[p034_c0007] _MTA Independent Engineering Consultant_
+[p034_c0008] _2_
+[p034_c0009] _Master Page # 34 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 35
+
+### [p035_c0001] NYCT – CBTC 8 Av
+### [p035_c0002] Schedule
+[p035_c0003] The contract was awarded to LK Comstock (LKC) as the prime contractor in January 2020, with Siemens providing the Auxiliary Wayside Systems (AWS) and CBTC Wayside Equipment. The contract duration was 60 months, with a Substantial Completion (SC) in January 2025.
+[p035_c0004]
+
+```text
+Milestone (MS) Contractual Completion Date Update #57 (Data Date: 5/1/2025) IEC Forecast Variance Contractual vs IEC Forecast (Months) 1 42 St Interlocking Beneficial Use (BU) 03/2023 08/2025 09/2025 -30 34 St Interlocking (BU) 04/2023 09/2025 10/2025 -30 CBTC In-Service 11/2024 12/2026 07/2027 -32 Substantial Completion 01/2025 04/2027 10/2027 -33
+```
+[p035_c0005] 1 (-) Behind schedule/(+) Ahead of schedule
+- [p035_c0006] ■ Since the last CPC report in March 2024, the contractor’s forecast SC has slipped a total of 27 months from the contractual completion date to April 2027. ■ The completion of the 42 St and 34 St interlockings, remain on the contract schedule’s critical path, and have slipped 17 months to September 2025, primarily due to resolving the ACS manual reset issues and replacing the damaged ACS sensors. ■ The IEC forecasts an additional one-month delay in the BU dates for 42 St and 34 St to accommodate the System Safety Certification Board’s (SSCB) review and approval of the resolution of the ACS damage.
+[p035_c0007] In the opinion of the IEC, further delay to resolving the ACS sensor damage issues could postpone the completion of 42 St and 34 St interlockings.
+[p035_c0008] The IEC considers the 5-month duration allocated in the contractor’s schedule, as required by the CBTC cutover plan, to be insufficient to ensure stabilization and performance requirements have been met. As a result, both the CBTC In-Service and SC dates are likely to be delayed until the third and fourth quarters of 2027, respectively.
+[p035_c0009] _Michael Baker INTERNATIONAL_
+[p035_c0010] _MTA Independent Engineering Consultant_
+[p035_c0011] _3_
+[p035_c0012] _Master Page # 35 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 36
+
+### [p036_c0001] NYCT – CBTC 8 Av
+### [p036_c0002] Budget
+[p036_c0003] Since the March 2024 report, the budget has increased by an additional $2M to $880M for change orders on the R211 cars.
+- [p036_c0004] ■ As of June 2025, the project is 58% complete based on current expenditures.
+[p036_c0005]
+
+```text
+Budget at Award Current Budget Project EAC IEC EAC Current Status $508M $880M $878M $701M
+```
+- [p036_c0006] ■ The Project Budget and EAC includes substantial reserves, which will partially be allocated to cover revised projections for Transit Authority (TA) Labor and Engineering Force Account (EFA). ■ MTA C&D indicates both will be reduced accordingly to reflect the actual project cost.
+[p036_c0007] Based on IEC’s analysis of the outstanding work, associated expenditures, contingencies, reserves, soft costs, change orders, and schedule impacts, the current budget is deemed adequate to support the project to SC.
+[p036_c0008] _Michael Baker INTERNATIONAL_
+[p036_c0009] _MTA Independent Engineering Consultant_
+[p036_c0010] _4_
+[p036_c0011] _Master Page # 36 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 37
+
+### [p037_c0001] NYCT – CBTC 8 Av
+### [p037_c0002] Risks and Mitigations
+- [p037_c0003] ■ Risk: As this is the first installation of ACS in the NYCT operating environment, issues may arise during installation and testing that could impact and project schedule and budget. This risk has been realized. ■ Mitigation: The contractor has lowered the installed height of the ACS sensors in order to prevent damage from contact with the car equipment.
+[p037_c0004] The IEC notes that lowering the height of the ACS sensors appears to have minimized damage caused to the sensors. Any new issues that may occur after system commissioning could further impact project schedule and budget.
+- [p037_c0005] ■ Risk: Flagging protection and/or diversions to support future construction activities and CBTC testing continue to pose a cost and schedule risk to the project. ■ Mitigation: The project team, NYCT Operations Planning, and the contractor meet regularly to coordinate the needs for NYCT services.
+[p037_c0006] The IEC agrees with this mitigation.
+- [p037_c0007] ■ Risk: Stability and performance issues encountered during the deployment of the R-179 and R-211 car equipment may delay the CBTC in-service date of the project. ■ Mitigation: MTA has advanced testing of the car equipment under QBL West corridor and the Culver main line to debug and stabilize the OBCU software.
+[p037_c0008] In the opinion of the IEC, testing on 8 Av will still be required to fully verify the system and may impact the schedule.
+- [p037_c0009] ■ Risk: The current CBTC Cutover Plan comprises 13 stages to be completed within a 5-month timeframe. There is a risk that additional time may be required for performance evaluation after each commissioning stage. ■ There are no mitigations for this risk, as allowing more time between stages would impact the schedule.
+[p037_c0010] The IEC is of the opinion that additional time is necessary to stabilize the CBTC system and ensure performance requirements have been met.
+[p037_c0011] _Michael Baker INTERNATIONAL_
+[p037_c0012] _MTA Independent Engineering Consultant_
+[p037_c0013] _5_
+[p037_c0014] _Master Page # 37 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 38
+
+### [p038_c0001] NYCT – CBTC 8 Av
+### [p038_c0002] Concerns
+- [p038_c0003] ■ As previously reported in March 2024, tests performed on the ACS, revealed that false block occupancy occurs when a Track Geometry Car (TGC) operates within the ACS territory. A resolution has been identified, and NYCT is currently negotiating with a vendor to modify the TGC.
+[p038_c0004] The IEC remains concerned that the operation of TGC in this territory could adversely impact service if the modification is not performed before placing the interlockings at 42 St and 34 St in-service.
+[p038_c0005] _Michael Baker INTERNATIONAL_
+[p038_c0006] _MTA Independent Engineering Consultant_
+[p038_c0007] _6_
+[p038_c0008] _Master Page # 38 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 39
+
+### [p039_c0001] NYCT – CBTC 8 Av
+### [p039_c0002] Observations
+- [p039_c0003] ■ As previously reported, the interface issue between the Siemens onboard equipment and the car communications network for the R-179 has been resolved. ■ As previously reported, the issue related to static and dynamic testing of the R-211 OBCUs has been resolved. All trains delivered to NYCT have successfully completed their Post-Installation Check-Out (PICO) testing. ■ Updates to the Carborne Controller Software for the R179 and R211 continue while CBTC Light Train Operation (CLTO) remains active on the Queens Boulevard Line (QBL) West segment. ■ The contract has finalized the Axle Counter manual reset process and all necessary NYCT personnel have completed training.
+[p039_c0004] _Michael Baker INTERNATIONAL_
+[p039_c0005] _MTA Independent Engineering Consultant_
+[p039_c0006] _7_
+[p039_c0007] _Master Page # 39 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 40
+
+### [p040_c0001] NYCT – CBTC 8 Av
+### [p040_c0002] Recommendation
+- [p040_c0003] ■ MTA C&D should continue to evaluate the ACS design, installation, and performance on the 8th Avenue project. MTA C&D should ensure that all issues regarding the ACS are fully mitigated before implementation on future and ongoing CBTC projects. ■ A root cause analysis is underway to determine source of the damage to the ACS.
+[p040_c0004] _Michael Baker INTERNATIONAL_
+[p040_c0005] _MTA Independent Engineering Consultant_
+[p040_c0006] _8_
+[p040_c0007] _Master Page # 40 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 41
+
+### [p041_c0001] July 2025 Capital Program Committee Independent Engineering Consultant Project Review
+[p041_c0002] Business Unit: Signals and Train Control New York City Transit (NYCT) – Communications Based Train Control (CBTC) Queens Blvd. Line (QBL) East
+[p041_c0003] _Michael Baker INTERNATIONAL_
+[p041_c0004] _MTA Independent Engineering Consultant_
+[p041_c0005] _Master Page # 41 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 42
+
+### [p042_c0001] NYCT CBTC – QBL East
+### [p042_c0002] Scope
+[p042_c0003] This Design-Bid-Build project replaces the fixed-block relay-based signal system with a CBTC system from north of Union Turnpike to the 179 th Street Station on QBL East (F Line). Key elements include:
+- [p042_c0004] ■ Upgrading the following Interlockings to Solid State Interlockings (SSI) at: ■ 179 th Street ■ 169 th Street ■ Parsons Boulevard (Hillside Avenue) ■ Briarwood ■ Replacement of legacy track circuits with an Axle Counter System (ACS). ■ Deployment of CBTC Zone Controllers (ZCs) integrated with an Auxiliary Wayside System (AWS) to ensure signal protection in degraded modes. ■ The work is divided as such: ■ E-J Electric: ■ Responsible for the AWS design, furnishing, and installation. Deploying the Data Communications System (DCS) provided by Siemens under a separate task order. Hitachi supplies the AWS equipment. ■ Mitsubishi: ■ Serves as the system integrator, providing and furnishing CBTC wayside equipment. ■ Reconfigures the Automatic Train Supervision (ATS) system to include QBL East territory using Siemens' ATS Expansion Software Tools, provided through MTA. ■ Replacement of Hitachi/Thales Carborne Controllers (CCs) on the R-160 fleet under an Additional Work Order (AWO).
+[p042_c0005] _Michael Baker INTERNATIONAL_
+[p042_c0006] _MTA Independent Engineering Consultant_
+[p042_c0007] _2_
+[p042_c0008] _Master Page # 42 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 43
+
+### [p043_c0001] NYCT CBTC – QBL East
+### [p043_c0002] Schedule
+[p043_c0003] A Notice to Proceed (NTP) was issued to EJ-Electric in December 2021, with a contractual duration of 51 months, establishing March 2026 as the Substantial Completion (SC) date. An additional NTP was also issued to Mitsubishi in December 2021, with a contractual duration of 55 months, establishing July 2026 as the SC date for that contract.
+- [p043_c0004] ❑ Due to changes during construction, these two contract SC dates have converged, and July 2026 was established as the integrated contractual SC date. ❑ The project was last reported to be on schedule. Since that report, the contractor has incurred a 20-month delay to Substantial Completion, resulting in a July 2027 forecasted SC. Contributing factors include: ❑ Adverse environmental conditions at 169th Street ❑ Limitation of the availability of TA services ❑ Late delivery of the Book of Plans (BOP) from the Supplier, Hitachi
+[p043_c0005] In the IEC’s opinion, the July 2027 SC remains at risk due to the continued delays in the BOP production.
+[p043_c0006]
+
+```text
+Milestone (MS) Contractual Completion Date Update #26 (Data Date: 5/1/2025) IEC Forecast Variance Contractual vs IEC Forecast (Months) 1 E-J Electric (SC) 7/2026 7/2027 10/2027 -15 Mitsubishi (SC) 7/2026 12/2027 3/2028 -20 CBTC In-Service 2/2026 6/2027 8/2027 -18 Integrated Substantial Completion 7/2026 7/2027 3/2028 -20
+```
+[p043_c0007] _1 (-) Behind schedule/(+) Ahead of schedule_
+[p043_c0008] _Michael Baker INTERNATIONAL_
+[p043_c0009] _MTA Independent Engineering Consultant_
+[p043_c0010] _3_
+[p043_c0011] _Master Page # 43 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 44
+
+### [p044_c0001] NYCT CBTC – QBL East
+### [p044_c0002] Budget
+[p044_c0003] The project’s budget is $542M, with an Estimate at Completion (EAC) of $540M, representing an increase of $2M in the budget and $9M in the EAC since the last report.
+- [p044_c0004] □ The increase in the budget was due to Additional Work Orders (AWOs) for Mitsubishi. □ The increase in the EAC reflects additional Force Account and soft costs identified by the project team. □ As of June 2025, the project is 65% complete by expenditures.
+[p044_c0005]
+
+```text
+Budget at Award Current Budget Project EAC IEC EAC Current Status $539M $542M $540M $568M
+```
+[p044_c0006] Based on IEC’s analysis of the outstanding work, associated expenditures, contingencies, reserves, soft costs, change orders, and schedule impacts, the current budget is insufficient to support the project to SC.
+[p044_c0007] _Michael Baker INTERNATIONAL_
+[p044_c0008] _MTA Independent Engineering Consultant_
+[p044_c0009] _4_
+[p044_c0010] _Master Page # 44 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 45
+
+### [p045_c0001] NYCT CBTC – QBL East
+### [p045_c0002] Risks and Mitigations
+- [p045_c0003] ■ Risk: Ongoing high demand for TA-provided services in support of Capital Program initiatives continues to pose a risk to the availability of flaggers, work trains, and necessary service diversions, potentially affecting the project schedule. Several General Orders (GOs) have already been canceled due to operational limitations. This risk has been realized. ■ Mitigation: The project team, NYCT Operations Planning, and the contractor are closely monitoring the project GO/diversion plan and will adjust, as necessary.
+[p045_c0004] The IEC concurs with the mitigation and notes this will remain a risk until all work requiring track access is complete.
+- [p045_c0005] ■ Risk: Siemens has not supplied the ATS Extension Tool to Mitsubishi's system database development. This is becoming a critical issue for Mitsubishi and could impact CBTC testing and in-service. ■ Mitigation: MTA C&D has brokered an agreement with Siemens to complete the database development if the tool is not delivered in time to satisfy Mitsubishi schedule.
+[p045_c0006] In the IEC's opinion, this mitigation is acceptable but emphasizes the need for the project team to maintain effective coordination.
+[p045_c0007] _Michael Baker INTERNATIONAL_
+[p045_c0008] _MTA Independent Engineering Consultant_
+[p045_c0009] _5_
+[p045_c0010] _Master Page # 45 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 46
+
+### [p046_c0001] NYCT CBTC – QBL East
+### [p046_c0002] Observations
+- [p046_c0003] ■ The IEC previously noted that Risk Assessment Workshops and monthly risk register updates were conducted consistently. ■ No monthly updates have been conducted over the past 12 months. ■ It was previously reported that Zone Controllers (ZCs) could support only 24 trains simultaneously, which was insufficient for the anticipated peak demand. ■ Mitsubishi has since upgraded the ZC CPUs to support 30 trains, addressing the projected demand. ■ The IEC previously reported that the ACS manual reset issue experienced on 8 th Avenue will be resolved with specific requirements before implementation on this project. ■ The Axle Counter manual reset process has been finalized on the 8th Ave CBTC project and must be implemented on this project. ■ Mitsubishi has secured access to the Integrated Test Facility (ITF) to test its Zone Controllers. This matter is no longer a concern.
+[p046_c0004] _Michael Baker INTERNATIONAL_
+[p046_c0005] _MTA Independent Engineering Consultant_
+[p046_c0006] _6_
+[p046_c0007] _Master Page # 46 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 47
+
+### [p047_c0001] July 2025 Capital Program Committee Independent Engineering Consultant Project Review
+[p047_c0002] Business Unit: Signals and Train Control New York City Transit (NYCT) – Communications Based Train Control (CBTC) Queens Blvd. Line (QBL) West
+[p047_c0003] _Michael Baker INTERNATIONAL_
+[p047_c0004] _MTA Independent Engineering Consultant_
+[p047_c0005] _Master Page # 47 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 48
+
+### [p048_c0001] NYCT CBTC – QBL West
+### [p048_c0002] Scope
+[p048_c0003] The project provides design, material, and labor for a complete CBTC signal system overlay on QBL West from north of Union Turnpike to south of 47-50 th Street on the 6 th Avenue Line (F) and to 50 th Street on the 8 th Avenue Line (E) and Centralized Traffic Control through an Automatic Train Supervision System (ATS).
+[p048_c0004] Key objectives include validating the evolving Interoperability Interface Specifications (I2S) in active revenue service.
+[p048_c0005] Three contracts were awarded during 2015-2016:
+- [p048_c0006] ■ Phase 1A & B: Design, supply, testing, and commissioning of the CBTC system. ■ Phase 1A awarded to: Siemens ■ Phase 1B awarded to Thales/Hitachi (supplying one Zone Controller). ■ Phase 2: Installation of Auxiliary Wayside Systems (AWS), CBTC Wayside systems, and removal of legacy signal equipment. ■ Awarded to LK Comstock (LKC) ■ Consultants: ■ Technical & Engineering: SYSTRA ■ Project Management Consultant (PMC): Parsons
+[p048_c0007] The scope was expanded, post-award, to include:
+- [p048_c0008] ■ The supply and installation of CBTC equipment for 13 R-160 trains to be used on the 8 th Avenue Line. ■ Development and supply of Remote Upload System (RUS) software to enable onboard software updates via the Wayside infrastructure. ■ Expand Automatic Train Supervision (ATS) to cover the entire B-Division (called ATS-B) and interface with the Rail Control Center (RCC). ■ Supply ATS Extension tools, including documentation and training. This would allow other contractors to integrate their respective CBTC projects into ATS-B.
+[p048_c0009] _Michael Baker INTERNATIONAL_
+[p048_c0010] _MTA Independent Engineering Consultant_
+[p048_c0011] _2_
+[p048_c0012] _Master Page # 48 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 49
+
+### [p049_c0001] NYCT CBTC – QBL West
+### [p049_c0002] Schedule
+[p049_c0003] The final contract, Siemens, achieved Substantial Completion in March 2025, 3 months later than previously reported.
+[p049_c0004]
+
+```text
+Contractor Contractual Substantial Completion (SC) Date Current SC Date IEC SC Forecast Variance Contractual vs IEC Forecast (Months) 1 Phase 2 LKC 7/2022 7/2022 (A) 7/2022 (A) 0 Phase 1B Thales/Hitachi 3/2021 8/2022 (A) 8/2022 (A) -16 Phase 1A Siemens 3/2021 3/2025 (A) 3/2025 (A) -48
+```
+[p049_c0005] 1 (-) Behind schedule/(+) Ahead of schedule
+- [p049_c0006] ■ Siemens was previously granted a time extension that revised the contractual SC from December 2024 to March 2025. This 3-month duration allowed for the following to be addressed to the satisfaction of the MTA: ■ System Reliability and Availability issues ■ ATS software delays
+[p049_c0007] _Michael Baker INTERNATIONAL_
+[p049_c0008] _MTA Independent Engineering Consultant_
+[p049_c0009] _3_
+[p049_c0010] _Master Page # 49 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 50
+
+### [p050_c0001] NYCT CBTC – QBL West
+### [p050_c0002] Budget
+[p050_c0003]
+
+```text
+Budget at Award Current Budget Project Forecast (EAC) IEC Forecast EAC Integrated Contracts $577M $775M $775M $775M
+```
+- [p050_c0004] ■ Since the March 2024 report, the budget has increased by $41M from $734M to $775M. This was due to change orders and overruns in Force Account (FA). ■ Since the award, the budget has increased by $198M to cover increases to third-party construction, force account, and soft costs associated with the delay to the schedule. ■ MTA C&D indicates a Budget Modification is currently in process to reallocate funds between tasks.
+[p050_c0005] _Michael Baker INTERNATIONAL_
+[p050_c0006] _MTA Independent Engineering Consultant_
+[p050_c0007] _4_
+[p050_c0008] _Master Page # 50 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 51
+
+### [p051_c0001] NYCT CBTC – QBL West
+### [p051_c0002] Risks and Mitigations
+- [p051_c0003] ■ Since the project is nearing completion, all previous risks have been retired, realized, or mitigated.
+[p051_c0004] _Michael Baker INTERNATIONAL_
+[p051_c0005] _MTA Independent Engineering Consultant_
+[p051_c0006] _5_
+[p051_c0007] _Master Page # 51 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 52
+
+### [p052_c0001] NYCT CBTC – QBL West
+### [p052_c0002] Observations
+- [p052_c0003] ❑ Although early technical issues affected CBTC availability, Service Delivery successfully maintained operations by utilizing the Auxiliary Wayside System, resulting in minimal disruption. ❑ The entire QBL West territory has been in Automatic Train Operation (ATO) since December 2024. ❑ Since the last report, additional ATS functions have been placed in service. The contractor continues to provide updates to enhance the stability of the ATS system. ❑ The operational performance requirements (throughput, headway, and runtimes) have not been comprehensively validated, primarily due to the logistical complexities of executing this task. However, Service Delivery concurs that the system is supporting peak demand. ❑ MTA C&D indicates any ATS functions/Features not completed as of SC will be transferred to a different project for completion. Funding has yet to be determined.
+[p052_c0004] _Michael Baker INTERNATIONAL_
+[p052_c0005] _MTA Independent Engineering Consultant_
+[p052_c0006] _6_
+[p052_c0007] _Master Page # 52 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 53
+
+### [p053_c0001] July 2025 Capital Program Committee Independent Engineering Consultant Project Review
+[p053_c0002] Business Unit: Signals & Train Control New York City Transit (NYCT) – Communications Based Train Control (CBTC)-Crosstown
+[p053_c0003] _Michael Baker INTERNATIONAL_
+[p053_c0004] _MTA Independent Engineering Consultant_
+[p053_c0005] _Master Page # 53 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 54
+
+### [p054_c0001] NYCT – CBTC-Crosstown
+### [p054_c0002] Scope
+[p054_c0003] This is the first MTA CBTC Centric and Design-Build (DB) Project for the Signals & Train Control (S&TC) Business Unit. The project replaces the existing fixed block signal system with a more reliable Communications Based Train Control (CBTC) Centric solution, that can operate under MTA's evolving Interoperability Interface Specification (I2S).
+[p054_c0004] Under CBTC Centric, a highly centralized and integrated architecture is used to further reduce wayside and room equipment and to take advantage of new innovations in the train control field. This project is recognized as being software-intensive with significant software risks.
+- [p054_c0005] ■ The Crosstown territory is on the NYCT's G line between Court Square in Queens and Church Ave Stations in Brooklyn and encompasses six interlockings split into two sections, each with its own integrated Zone Controller (iZC): ■ North: Court Square, Nassau Avenue, and Bedford-Nostrand Avenue interlockings. ■ South: Bergen Street, 4 th Avenue, and Church Avenue interlockings. ■ The base contract work, also includes: ■ The expansion of Automated Train Supervision for the B-Division (ATS-B) for the Crosstown line at NYCT's Rail Control Center/Backup Rail Control Center. ■ Installation of all necessary wayside systems to support CBTC. ■ Track work at specific locations. ■ Design, construction and fit-out of Train Control rooms (TCRs) and auxiliary facilities. ■ Other scope elements include: ■ Furnish and install wayside private 5G wireless network technology for CBTC Data Communication System (DCS) within the NYCT operating environment. ■ Provide an Enhanced Integrated Test Facility (EITF) for use and updating of all CBTC Centric projects. ■ Furnish and Install Wayside Train Stops. ■ A separate contract was negotiated with Thales Ground Transportation Systems USA, Inc. (GTS), which is now part of Hitachi Rail, for routine maintenance services for a 25-year term. The maintenance contract will be issued a Notice to Proceed (NTP) at the end of the warranty period of the DB contract. ■ WSP USA, Inc. was awarded the Project Management Consultant (PMC) Services for the MTA C&D CBTC Crosstown, Fulton, and 6 th Av projects in January 2023.
+[p054_c0006] _Michael Baker INTERNATIONAL_
+[p054_c0007] _MTA Independent Engineering Consultant_
+[p054_c0008] _2_
+[p054_c0009] _Master Page # 54 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 55
+
+### [p055_c0001] NYCT – CBTC-Crosstown
+### [p055_c0002] Schedule
+[p055_c0003] MTA C&D issued Notice to Proceed (NTP) in January 2023 to the DB, TC Electric, LLC (TCE) with Thales GTS (now part of Hitachi Rail) jointly known as “Crosstown Partners (CP)” and designer AECOM USA, Inc. Hitachi has responsibility for the CBTC Centric system.
+- [p055_c0004] Since last report in March 2024, due to numerous concurrent delays to all Milestones (MS), the project is undertaking a re-baselining effort.
+[p055_c0005]
+
+```text
+Milestone (MS) Contractual Completion Date DB Update #22 (Data Date: 6/1/25) Project Forecast IEC Forecast Variance Contractual vs. IEC Forecast (Months) 3 MS1: Concept Design Validation 06/2025 09/2025 TBD 1 TBD 1 NA MS2: Installation of Track work/ Switch Machines 08/2025 11/2025 TBD 1 TBD 1 NA MS3: Line Function/ Software Stabilization 12/2026 01/2028 TBD 1 TBD 1 NA CBTC In-Service after Stabilization Complete: 6/2027 06/2028 12/2028 06/2029 -24 MS4: Substantial Completion 07/2027 07/2028 06/2029 07/2029 -24 MS5: Final Completion 2 N/A 10/2028 9/2029 10/2029 -24
+```
+[p055_c0006] 1 Dates will be forecast once the project re-baseline schedule has been completed.
+[p055_c0007] 2 MS5 is 90 days from the completion of M4 and there is no set contractual completion date.
+[p055_c0008] 3 (-) Behind schedule/(+) Ahead of schedule
+- [p055_c0009] The DB’s schedule forecasts delays include: MS1: 3-month delay due to late submission of an acceptable Signal Block design and Stage Gate deliverables required for Systems Safety Certification Board (SSCB) approval. MS2: 3-month delay due to the outstanding resolution on tie-block work at Flushing and Broadway stations. MS3 & MS4: 12-month delay due to the inclusion of non-vital device control activities, the Automated Train Supervision Expansion and the development of the Enhanced Integrated Testing Facility.
+[p055_c0010] _Michael Baker | MTA Independent Engineering Consultant INTERNATIONAL_
+[p055_c0011] _3_
+[p055_c0012] _Master Page # 55 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 56
+
+### [p056_c0001] NYCT – CBTC-Crosstown
+### [p056_c0002] Schedule (continued)
+- [p056_c0003] ■ The DB's schedule does not fully reflect necessary work to be performed by external contractors/contracts. This work includes: □ Outstanding 5G work: ■ Equip the car fleet with 5G: Two separate contracts, to be issued to Siemens and Hitachi. ■ Integrate 5G with Automatic Train Supervision (ATS) by Siemens. □ Interface work: ■ Integration with adjacent CBTC/Auxiliary Wayside System (AWS) installations by Siemens. ■ The Project Forecast Dates include the outstanding 5G work and Interface work listed above and assumptions for the change order to add signals as required per the signal block design review. This results in an 18-month delay to the CBTC in-service with a 24-month delay to Substantial Completion (SC) dates. □ These dates are predicated on the proposed switch to deploy the North section CBTC prior to the South section to mitigate delays. ■ The IEC forecasts that the project's CBTC In-service and SC may be delayed by 24 months to July 2029 based on the cumulative impact of the above issues and the following: □ Concurrent delay associated with Enhanced Integrated Testing Facility (EITF) work. □ An additional 9 months has been included to meet the high availability and reliability requirements needed for CBTC Centric before declaring In-Service. □ A 6-month reduction of the overall delay that considers the MTA C&D proposed mitigation to switch the sequence of when the North and South sections are deployed.
+[p056_c0004] In the opinion of the IEC, full recovery of the schedule is not likely to occur. The IEC forecast is based on third party commitments to complete the 5G retrofit of the fleet. If these dates are not achieved the schedule could be impacted further.
+[p056_c0005] MTA C&D is working with the contractor to re-baseline the schedule, mitigate risks and minimize schedule delays.
+[p056_c0006] _Michael Baker INTERNATIONAL_
+[p056_c0007] _MTA Independent Engineering Consultant_
+[p056_c0008] _4_
+[p056_c0009] _Master Page # 56 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 57
+
+### [p057_c0001] NYCT – CBTC-Crosstown
+### [p057_c0002] Budget
+[p057_c0003] The current project budget has been reduced by $9 million to $624 million to reflect the removal of the Greenpoint Discharge Line rehabilitation work, which was originally planned under a separate project in the 2020–2024 Capital Plan. MTA C&D is evaluating the most appropriate approach to address this need.
+[p057_c0004]
+
+```text
+Budget at Award Current Budget Project EAC IEC EAC Current Status $624M 1 $624M 1 $624M $715M
+```
+[p057_c0005] _1 The purchase/installation of the new 5G communications equipment for the B Division fleet to support the Crosstown is not included in the program budget since it is planned to be performed under a separate program._
+- [p057_c0006] ❑ The project is 53% complete based on expenditures, which indicates the project is performing behind planned. ❑ The IEC forecasts an EAC of $715M, which is a $77M increase since the March 2024 report. ❑ The IEC EAC analysis includes pending/potential/possible change orders that have been negotiated and increases in TA Labor and EFA projected expenditures based on the IEC forecast Substantial Completion date of July 2029. ❑ The IEC notes there are significant claims undergoing arbitration which are not reflected in the Project nor the IEC EAC.
+[p057_c0007] Based on the IEC’s analysis and a review of available contingencies, project reserves, and expenditures to date, the budget will need to be increased to support an extension of the project schedule beyond the contractual SC date.
+[p057_c0008] _Michael Baker INTERNATIONAL_
+[p057_c0009] _MTA Independent Engineering Consultant_
+[p057_c0010] _5_
+[p057_c0011] _Master Page # 57 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 58
+
+### [p058_c0001] NYCT – CBTC-Crosstown
+### [p058_c0002] Risks & Mitigations
+[p058_c0003] Since last report in March 2024, progress has been made on addressing the top risks.
+### [p058_c0004] PRIVATE 5G COMMUNICATIONS TECHNOLOGY
+- [p058_c0005] ■ Risk: A further delay in awarding contracts, under a separate program, to Siemens and Hitachi to equip the R-160, R-179, and R-211 Crosstown trains with private 5G communications will impact project schedule. This risk has been realized. ■ Mitigation: MTA C&D have negotiated the contracts with Siemens and Hitachi to equip the vehicles, now forecast to be awarded in July 2025, with a Notice to Proceed in August 2025.
+[p058_c0006] The IEC notes that, while the risk has been realized, Hitachi and Siemens need to ensure their commitment to finalize the external dependency tasks for outstanding 5G and interface work in a timely and cost-effective manner.
+- [p058_c0007] ■ Risk: This is the first use of 5G technology for CBTC with NYCT 's operating environment. Additional time may be required for sufficient propagation coverage testing, including design modifications for troubleshooting and to address dead spots. ■ Partial Mitigation: A Federal Communications Commission (FCC) demonstration test was successfully completed in June 2025 that confirmed communication from the wayside to a mobile device on the allocated frequency of the 5G spectrum.
+[p058_c0008] The IEC is of the opinion that additional site-specific testing may be required to address potential dead spots and other communication interference issues.
+### [p058_c0009] BOUNDARY/INTERFACE REQUIREMENTS
+- [p058_c0010] ■ Risk: Although the Crosstown RFP documents require the contractor to provide seamless CBTC operation to non-Crosstown territories, interface work for the adjacent CBTC and Auxiliary Wayside System (AWS) installation modifications are not included in the Crosstown contract. This interface work has yet to be issued to any contract and may impact cost and schedule. This risk has been realized. ■ Mitigation: MTA C&D is facilitating the development of the scope of interface work between Hitachi and Siemens.
+[p058_c0011] The IEC agrees that MTA C&D's involvement is essential for this effort to be expedited to avoid further schedule impact.
+[p058_c0012] _Michael Baker INTERNATIONAL_
+[p058_c0013] _MTA Independent Engineering Consultant_
+[p058_c0014] _6_
+[p058_c0015] _Master Page # 58 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 59
+
+### [p059_c0001] NYCT – CBTC-Crosstown
+### [p059_c0002] Risks & Mitigations (continued)
+### [p059_c0003] SIGNAL BLOCK DESIGN/CONTROL TABLES
+- [p059_c0004] ■ Risk: Further delays to the approval of the signal block design/control tables, may impact dependent design and installation tasks. This risk has been realized; additional delays may be incurred. □ Partial Mitigation: The contractor has proceeded to procure and install signal equipment, as well as proceeding with other high-priority long-lead items. The cutover cubicle design, which allows for the changeover from the Legacy to the new centric CBTC system and vice versa, proceeded at risk, was completed for both the North and South sections and released to suppliers.
+[p059_c0005] MTA C&D is reviewing the cutover cubicle design package. An approval is necessary to schedule the First Article Inspection (FAI) and Factory Acceptance Test (FAT).
+[p059_c0006] In the opinion of the IEC, proceeding with these items may require additional rework that may impact cost and schedule. This remains a risk until final approval. Signal block design/control tables are necessary for System Safety Certification Board (SSCB) approval.
+- [p059_c0007] ■ Risk: If the Independent Safety Assessor (ISA) identifies safety issues that will require modification to the signal block design. This risk has been realized; additional delays may be incurred. □ Mitigation: New safety hazards associated with the proposed signal block design have been identified; The proposed solution to mitigate the safety hazards will require the installation of additional wayside signal equipment and is being discussed with C&D/NYCT (Operations).
+[p059_c0008] The IEC agrees with the proposed mitigation and notes that the solution could impact project schedule and the budget depending on the quantity and type of signal equipment required.
+[p059_c0009] The IEC recognizes that ongoing coordination and engagement with MOW/Service Delivery are essential to formulate and implement effective mitigations for the identified risks.
+[p059_c0010] _Michael Baker INTERNATIONAL_
+[p059_c0011] _MTA Independent Engineering Consultant_
+[p059_c0012] _7_
+[p059_c0013] _Master Page # 59 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 60
+
+### [p060_c0001] NYCT – CBTC-Crosstown
+### [p060_c0002] Concerns
+- [p060_c0003] ■ In the March 2024 report, the IEC raised a concern that the Crosstown Design Builder had not provided an analysis demonstrating that the proposed centralized Integrated Zone Controller (iZC) is capable of handling peak service demand—particularly given that the new CBTC-centric approach significantly expands the territory and functionality managed by a Zone Controller (ZC). ■ In previous NYCT CBTC projects, ZC capacity was analyzed to ensure it could accommodate peak demands. This key lesson learned regarding ZC capacity should be applied to the Crosstown project. ■ As this is the first CBTC Centric project, a high level of availability/reliability is needed to avoid impacts on train service. ■ The CBTC Supplier is using the QBL West ZC software as a basis. However, the Design Builder has not provided a comprehensive and credible plan that demonstrates it can complete its iZC software and database development within the planned duration. The development of the iZC software is on the critical path. ■ The project schedule does not yet incorporate the General Orders (GO)/diversions required for boundary/interface and I2S Baseline Axle Counter solution work. This may result in further impacts to project cost and schedule.
+[p060_c0004] _Michael Baker INTERNATIONAL | MTA Independent Engineering Consultant_
+[p060_c0005] _8_
+[p060_c0006] _Master Page # 60 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 61
+
+### [p061_c0001] NYCT – CBTC-Crosstown
+### [p061_c0002] Observations
+- [p061_c0003] ■ The IEC previously recommended, in March 2024, that MTA C&D engage a third-party entity to conduct an independent review with operational experience to perform a line-by-line review of the block design, including signal aspects and control lines, to ensure that all routes needed for service delivery are provided and that no safety issues arise. ■ MTA C&D designated a subject matter expert to perform an independent review of the block design submittals and conduct operational reviews. MOW/Service Delivery will need to accept these submittals. ■ The IEC previously recommended, in March 2024, that the PMC/MTA C&D engage software expertise to ensure software meets NYCT design standards and operating environment, including the Interoperability Interface Specification (I2S) and 733-circuit typicals. ■ The PMC added a Software Lead for review of critical Software (SW) submittals and is holding ongoing SW and Requirements Management (RM) coordination meetings and SW Process audits.
+[p061_c0004] The PMC is working with the Design Builder to further delineate the software and database development activities for each Software Build which is anticipated to be reflected in the Crosstown re-baseline schedule.
+- [p061_c0005] ■ Axle Counter Installation issues were identified at multiple locations due to existing track configuration. The DB has provided installation solutions that have been assessed and approved by MTA. The remaining axle counter installations in these locations are forecast to be installed by October 2025. ■ The Axle Counter manual reset process, that was finalized on 8 Av CBTC, will also need to be implemented on the Crosstown project with the latest Interoperability Interface Specification (I2S). ■ The track construction and station work in the train control rooms are progressing close to schedule.
+[p061_c0006] _Michael Baker INTERNATIONAL_
+[p061_c0007] _MTA Independent Engineering Consultant_
+[p061_c0008] _9_
+[p061_c0009] _Master Page # 61 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 62
+
+### [p062_c0001] NYCT – CBTC-Crosstown
+### [p062_c0002] Recommendations
+[p062_c0003] The IEC recommends the following:
+- [p062_c0004] ■ MTA C&D should ensure the Crosstown re-baseline schedule considers the full impact of the outstanding 5G work and required interface work with adjacent CBTC installations. The schedule should also allow sufficient time for software/database development, testing & commissioning using cutover cubicles and stabilization of the CBTC system. ■ MTA C&D should ensure performance thresholds are established, according to industry standards, and strictly enforced for the testing and commissioning phases to ensure compliance with Reliability, Availability, and Maintainability (RAM) contractual requirements. ■ MTA C&D should reflect Crosstown Lessons Learned related to the signal block design in future CBTC projects, including the upcoming Fulton-Liberty CBTC procurement. ■ MTA C&D should conduct an operational gap analysis to identify how the performance of the new CBTC centric system deviates from NYCT signal standards and current operational rules. □ MTA C&D has engaged a third party to conduct the gap analysis and is addressing operational concerns.
+[p062_c0005] _Michael Baker INTERNATIONAL_
+[p062_c0006] _MTA Independent Engineering Consultant_
+[p062_c0007] _10_
+[p062_c0008] _Master Page # 62 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 63
+
+### [p063_c0001] July 2025 Capital Program Committee Independent Engineering Consultant Project Review
+[p063_c0002] Business Unit: Signals & Train Control New York City Transit (NYCT) – Sandy Repairs: Culver Yard (Signals/Track)
+[p063_c0003] _Michael Baker INTERNATIONAL_
+[p063_c0004] _MTA Independent Engineering Consultant_
+[p063_c0005] _Master Page # 63 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 64
+
+### [p064_c0001] NYCT – Sandy Repairs: Culver Yard (Signals/Track)
+### [p064_c0002] Scope
+[p064_c0003] This federally-funded project addresses signal equipment damage caused by Superstorm Sandy at the Culver Yard section of the Coney Island Yard Complex in Brooklyn.
+[p064_c0004] The objective is to modernize the signal system by replacing all damaged equipment, ensuring safe and reliable operations for 50 years.
+[p064_c0005] The Design-Bid-Build contract scope includes:
+- [p064_c0006] ■ Replace all signal wayside equipment, including associated line and local cable and conduits ■ Furnish, install, test and place new equipment in service. ■ Replace all signal cables utilizing a new cable bridge, erected under a previous contract, to mitigate cable damage in the event of future flooding, including implementing a Design Flood Elevation (DFE) approach. ■ Track replacement at select locations. ■ Traction power replacement of contact rails and both positive and negative feeder cables at various locations.
+[p064_c0007] _Michael Baker INTERNATIONAL_
+[p064_c0008] _MTA Independent Engineering Consultant_
+[p064_c0009] _2_
+[p064_c0010] _Master Page # 64 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 65
+
+### [p065_c0001] NYCT – Sandy Repairs: Culver Yard (Signals/Track)
+### [p065_c0002] Schedule
+[p065_c0003] The project was awarded to TAP Electric Contracting Service Inc. with Notice to Proceed January 2024. The contract duration of 34 months provides for the Substantial Completion date of October 2026.
+[p065_c0004]
+
+```text
+Milestone Baseline Update 10 IEC Forecast Variance (Months) 1 1 Complete purchase of signal and power cables 01/2025 04/2024 (A) 04/2024 (A) -8 2 Delivery of all wayside signal equipment 12/2025 12/2025 12/2025 0 Substantial Completion (SC) 10/2026 11/2026 11/2026 1 Final Completion (FC) 01/2027 02/2027 02/2027 1
+```
+[p065_c0005] 1 (-) Behind schedule/(+) Ahead of schedule
+- [p065_c0006] ■ 53% of the contract duration has elapsed. ■ Milestone 1 was achieved 8 months early. ■ The current update shows a 1-month delay to SC and FC due to routing of the signal messenger cable system. However, the contractor is analyzing the schedule for openings to achieve timely project completion.
+[p065_c0007] In the opinion of the IEC, given the early achievement of Milestone 1 and the on-schedule progress of Milestone 2, there are significant opportunities to reduce the current 1-month delay. This can be accomplished through additional outages and close coordination with C&D Delivery Service Office (DSO) and the NYCT Yard Master.
+[p065_c0008] _Michael Baker INTERNATIONAL_
+[p065_c0009] _MTA Independent Engineering Consultant_
+[p065_c0010] _3_
+[p065_c0011] _Master Page # 65 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 66
+
+### [p066_c0001] NYCT – Sandy Repairs: Culver Yard (Signals/Track)
+### [p066_c0002] Budget
+[p066_c0003] The budget remains unchanged at $118M and the Project Estimate at Completion (EAC) is $117M.
+[p066_c0004]
+
+```text
+Budget at Award Current Budget Project EAC IEC EAC Current Status $118M $118M $117M $113M
+```
+- [p066_c0005] ■ As of June 2025, the project is 22% based on invoices paid to date.
+[p066_c0006] Based on IEC’s analysis of remaining work, associated expenditures, allocated and unallocated contingency, change orders, and schedule impacts, the current budget is deemed sufficient to support the project to SC.
+[p066_c0007] _Michael Baker INTERNATIONAL_
+[p066_c0008] _MTA Independent Engineering Consultant_
+[p066_c0009] _4_
+[p066_c0010] _Master Page # 66 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 67
+
+### [p067_c0001] A moisture issue was discovered with submersible junction boxes at another yard. MTA has accepted the cont
+### [p067_c0002] NYCT – Sandy Repairs: Culver Yard (Signals/Track)
+### [p067_c0003] Risks & Mitigations
+- [p067_c0004] ■ Risk: Schedule impacts due to inability to obtain requested track access. □ Mitigation: PCEO is working closely with the contractor, Delivery Service Office and Yard Master to obtain additional track access and/or expanded work area opportunities. ■ Risk: Schedule and cost impacts due the routing design of the signal messenger cable system design. □ Mitigation: A Directive Letter has been issued to the contractor which provides guidance for routing the system over the cable bridge. ■ Risk: Cost and schedule impacts due to approval of signal equipment. □ Mitigation: Due to moisture issues with submersible junction boxes at another yard, at the request of MTA, the contractor provided three options. MTA has approved a proposed elevated junction box assembly as an acceptable substitution.
+[p067_c0005] The IEC notes that the efforts of the Project Team to address issues promptly and mitigate the project risks are appropriate.
+[p067_c0006] _Michael Baker INTERNATIONAL_
+[p067_c0007] _MTA Independent Engineering Consultant_
+[p067_c0008] _5_
+[p067_c0009] _Master Page # 67 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 68
+
+### [p068_c0001] NYCT – Sandy Repairs: Culver Yard (Signals/Track)
+### [p068_c0002] Observations
+- [p068_c0003] ■ This is the last yard of the Coney Island Complex undergoing repairs to address damage resulted from Superstorm Sandy. While the yard has been fortified under a previous contract, this project implements further protections. ■ The late onboarding of the Project Management Consultant (PMC) has created an administrative backlog for obtaining required documents and follow up. The PMC is working to reduce the backlog and obtain required documents to date.
+[p068_c0004] _Michael Baker INTERNATIONAL_
+[p068_c0005] _MTA Independent Engineering Consultant_
+[p068_c0006] _6_
+[p068_c0007] _Master Page # 68 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 69
+
+### [p069_c0001] MTA Construction & Development
+### [p069_c0002] SAFETY SUMMARY
+> [p069_c0003] Month Other Recordable Lost Time 2024 Jul 16 3 8 2024 Aug 22 7 13 2024 Sep 10 7 6 2024 Oct 16 8 11 2024 Nov 8 4 9 2024 Dec 10 7 4 2025 Jan 11 3 3 2025 Feb 15 7 9 2025 Mar 11 2 2 2025 Apr 9 5 6 2025 May 16 1 3 2025 Jun 12 6 4
+[p069_c0004] Lost Time - A work-related incident (injury or illness) to an employee that results in a loss of productive work time, and the employee is unable to perform regular job duties. Recordable - An injury or illness that results in restricted work or transfer to another job, medical treatment beyond first aid, or a loss of consciousness. Other: A combination of minor first-aid, medical events, and incidents notification-only.
+### [p069_c0005] SAFETY NARRATIVE
+### [p069_c0006] JUNE UPDATE:
+- [p069_c0007] Ten (10) safety events were reported in June 2025, including: Four (4) lost time incidents, Six (6) recordable incidents. The reported lost time incidents in June 2025 increased by three incidents compared to June 2025. The top lost-time and recordable incident types for June 2025 were Struck by/Against (33%), Sprain/Strain (33%), and Slip/Trip/Fall (33%). SERIOUS INCIDENTS: NONE
+### [p069_c0008] YEAR-TO-DATE TRENDS:
+- [p069_c0009] LOST TIME INCIDENT TRENDS: 25 Lost Time incidents have been reported YTD (through June 30, 2025). The injury types associated with lost time incidents YTD are Struck by/Against (40%), Slip, Trip, Fall (20%), Caught In Between (20%) and Strain/Sprain (20%). A three-incident increase was reported in Lost Time incidents from the previous month. RECORDABLE INCIDENT TRENDS: 26 Recordable incidents have been reported YTD (through June 30, 2025). The injury types associated with recordable incidents YTD are Struck By/Against (50%) & Caught In Between (23%) and Slip, Trip, Fall (15%), Sprain/Strain (8%). There was three-incident increase in the reported recordable incidents from the previous month.
+### [p069_c0010] INSPECTIONS & AUDITS: Active Capital Projects for – 198 Projects with 346 Sub-Projects
+- [p069_c0011] JUNE INSPECTIONS: INTERNAL – 371 EXTERNAL – 787 (83 Third-Party Safety Consultants; 704 OCIP Visits) YTD TOTAL # OF INSPECTIONS: INTERNAL – 1,631 EXTERNAL – 4,860 (458 Third-Party Safety Consultants; 4,402 OCIP Visits) JUNE NEGATIVE OBSERVATION(S) – Negative Findings identified through various inspections include General Safety/Housekeeping, Fire Protection/Prevention, Fall Protection, Stairs/Ladders, Electrical, Maintenance and Protection of Traffic (MPT), Industrial Hygiene, Scaffolds/Aerial Work Platforms, Supervision/Organization, and Tools (Hand & Power). JUNE POSITIVE OBSERVATION(S) – Positive Findings identified through various inspections include Supervision/Organization, General Safety/Housekeeping, Fire Protection/Prevention, Tools (Hand & Power), Electrical, Maintenance and Protection of Traffic (MPT), Stairs/Ladders, Fall Protection, Industrial Hygiene, Motor Vehicle/Heave Equipment.
+[p069_c0012] _C&D SAFETY SUMMARY_
+[p069_c0013] _Master Page # 69 of 98 - Capital Program Committee Meeting 7/28/2025_
+[p069_c0014] _Page 1 of 2_
+
+## Page 70
+
+### [p070_c0001] Construction & Development
+### [p070_c0002] SAFETY SUMMARY
+### [p070_c0003] • INVESTIGATIONS (SERIOUS INJURY):
+- [p070_c0004] • Number of investigations for June – None
+### [p070_c0005] MTA C&D STRATEGIC INITIATIVES:
+- [p070_c0006] • C&D Safety continues working with the Delivery Service Office (DSO), to enhance the safety reporting portal within the C&D Project Performance Portal (PPP). These improvements aim to provide real-time, actionable insights into reported incidents, ensuring safety issues are addressed quickly and effectively. With the addition of new key performance indicators (KPIs) focused on project safety assessments, stakeholders will gain a clearer understanding of safety metrics and trends. Additionally, we are dedicated to expanding the range of data tracked, offering a stronger support system for our safety initiatives and promoting a safer work environment for everyone. • C&D Safety has continued to roll out updates to our mobile safety inspection app. C&D Safety finalized the platform's expansion to include safety inspections by the C&D project management team, the Project CEO, and the safety project team. ○ Training for PCEO (Project Chief Executive Officer) and Project Executives has been ongoing with online sessions being held weekly. Additional training with the BU Directors and personalized walkthrough is also being conducted with some of the BU Directors. This comprehensive training program features a series of open sessions designed to enhance the safety responsibilities and leadership capabilities of PCEOs and Project Executives. The initiative aims to significantly increase the visibility and emphasis on safety within project operations, ensuring that all team members are committed to implementing best practices for safety management. By fostering a culture of safety awareness and accountability, this training will support the execution of projects that prioritize the well-being of all stakeholders involved. • C&D Emergency Management objective at C&D EM is to cultivate a robust and resilient emergency management system that not only empowers MTA stakeholders but also significantly enhances coordination among them. By doing so, we aim to improve operational efficiency during critical events and ensure a seamless response. C&D EM is currently working on the COOP program for the agency to ensure continuity of operations during an event. • C&D Safety is actively engaging staff through consistent safety communications. This includes our monthly Safety Zone newsletter, quarterly Safety Digest, and interactive Safety Moment presentations. We are also developing routine safety advisories and updating existing materials to reflect current standards and best practices. These initiatives aim to promote informed decision-making, reinforce best practices, and demonstrate our commitment to safety excellence. ○ Additionally, we have completely upgraded all our SharePoint sites to provide C&D employees and project teams with access to essential information, documents, training, and videos. These upgrades offer real-time information right at the employees' and project teams' fingertips as events begin. Our SharePoint sites cover various areas, including Safety, Emergency Management, Occupational Health and Safety (OHS), and Power BI dashboards, which support our Business Unit Safety teams by providing key performance indicator (KPI) data related to their projects. ○ Furthermore, we are in the process of developing a security SharePoint to ensure that the same level of support is available in that area.
+[p070_c0007] _Master Page # 70 of 98 - Capital Program Committee Meeting 7/28/2025_
+[p070_c0008] _C&D SAFETY SUMMARY_
+[p070_c0009] _Page 2 of 2_
+
+## Page 71
+
+### [p071_c0001] MTA Capital Program Commitments & Completions
+[p071_c0002] through June 30, 2025
+[p071_c0003] _Master Page # 71 of 98 - Capital Program Committee Meeting 7/28/2025_
+[p071_c0004] _Metropolitan Transportation Authority_
+
+## Page 72
+
+### [p072_c0001] Metropolitan Transportation Authority
+### [p072_c0002] Capital Projects – Commitments – June 2025
+### [p072_c0003] MTA-wide 2025 Commitments
+> [p072_c0004] Category 2025 Annual Goal Annual Forecast Commitment Goal Forecast $12,641 $14,844 117% ($ in millions) Period 2025 Annual Goal Budgeted Value Actual/Forecast 1Q $1,929 $2,268 $2,283 2Q $1,929 $2,981 $2,976 3Q $4,356 $5,157 $5,278 4Q $3,408 $3,625 $4,307 YTD $11,273 $13,026 $13,871
+[p072_c0005] Annual Goals: Dollar and time-based programmatic milestones for the commitment of contracts established at the start of each year and which are achievable during the year.
+[p072_c0006] Actuals: The value of the goals and any additional unplanned commitments as they are achieved during the year.
+[p072_c0007] Forecasts: The updated estimates by quarter for remaining goals as well as any unplanned commitments that might occur during the year.
+[p072_c0008] Budget: The budgeted value assumed in the capital program for the Actual and Forecasted commitments being tracked during the year.
+### [p072_c0009] Commitments Summary
+[p072_c0010] In 2025, the MTA plans to commit $12.64 Billion worth of capital projects. Through June, the MTA has committed $5.21 Billion against the $4.82 Billion YTD goal, which was mainly due to the award of the M-9A Passenger Railcars ($2.43 Billion), R211 subway fleet option for NYCT ($1.39 Billion) and the LIRR's dual-mode locomotive purchase ($130 Million). In 2025, the MTA is tracking 40 "major" commitments across the agencies, including 18 major commitments at NYCT, 9 at the LIRR, 3 at MNR, 6 at Expansion, and 4 at B&T. These major commitments total nearly $9.2 Billion (73% of the overall commitment plan's value). At the end of each quarter in 2025, any schedule variances will be reported on the following pages.
+[p072_c0011] Through June, 13 notable Commitment delays total $1.125 Billion: B-Division 5G Radio Upgrades, Battery Electric Bus Charging Infrastructure, Phase 3, 131 and 97 Express Buses, LIRR Annual Track Program, Depot Boilers, HVAC & Misc, Rehabilitation of 5 CBHs, all of which remain forecasted for commitment within 2025.
+[p072_c0012] _Master Page # 72 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 73
+
+### [p073_c0001] Metropolitan Transportation Authority
+### [p073_c0002] NYCT/MTA Bus Capital Projects – Commitments – June 2025 – Budget Analysis and Schedule Variances
+### [p073_c0003] NYCT and MTA Bus Budget Analysis
+[p073_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2025 Annual Goal $1,941 $971 $1,240 $2,803 $2,908 2025 Actual/Forecast $1,717 $160 $1,365 $3,490 $1,873 Budgeted Value $1,716 $160 $1,240 $2,803 $1,871
+```
+> [p073_c0005] Bar Chart Data ($ in millions) Period 2025 Annual Goal Budgeted Value 2025 Actual/Forecast 1Q $1,941 $1,716 $1,717 2Q $971 $160 $160 3Q $1,240 $1,240 $1,365 4Q $2,803 $2,803 $3,490 YTD $2,908 $1,871 $1,873
+### [p073_c0006] Schedule Variances
+[p073_c0007]
+
+```text
+Project Commitment Goal Act/Forec. Project Commitment Goal Actual(A)
+```
+### [p073_c0008] 5 NYCT/MTA Bus Red Commitments (5 new this quarter)
+[p073_c0009]
+
+```text
+Signal & Comm Apr-25 Aug-25 Equip B Division with Second CBTC Radio: Siemens Construction $ 114.3 $ 114.3
+```
+[p073_c0010] The project is delayed due to extended negotiations with vendors, and ongoing coordination around tariff-related provisions. In parallel, scope adjustments are being made to a separate single-source contract, which is expected to be finalized in Q3'25
+[p073_c0011]
+
+```text
+Equip B Division with Second CBTC Radio: Hitachi Construction $ 70.2 $ 70.2
+```
+[p073_c0012] Project is to be coordinated with the above project and is experiencing the same delay.
+### [p073_c0013] 1 NYCT/MTA Bus Amber Commitments (1 new this quarter)
+[p073_c0014]
+
+```text
+Bus Jun-25 Jul-25 Battery Electric Bus Charging Infrastructure, Phase 3 Construction $ 206.7 $ 213.1
+```
+[p073_c0015] Delay is due to the coordination with timing of future electric bus purchases.
+[p073_c0016] _Master Page # 73 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 74
+
+### [p074_c0001] Metropolitan Transportation Authority
+### [p074_c0002] NYCT/MTA Bus Capital Projects – Commitments – June 2025 – Budget Analysis and Schedule Variances
+### [p074_c0003] Schedule Variances
+[p074_c0004] Project Commitment Goal Act./Forec.
+### [p074_c0005] 5 NYC/MTA Bus Red Commitments (5 new this quarter) Continued
+[p074_c0006] Power Rehabilitation of 5 CBHs - Various Locations Construction Mar-25 $ 89.2 Jul-25 $ 89.2
+[p074_c0007] The project was rebid which resulted in savings of $35 million (38% below estimate), schedule savings of 317 days (29%). Change in award date reflects revised bid opening date due to bidder RFI (Request for Information).
+[p074_c0008] Bus Purchase 97 Express Coaches Construction May-25 $ 88.3 Oct-25 $ 88.3
+[p074_c0009] Change in award date reflects longer than anticipated technical reviews during the ongoing procurement process.
+[p074_c0010] Depot Depot Boilers, HVAC & Misc: Kingsbridge, Flatbush, Charleston Construction Jun-25 $ 95.1 Dec-25 $ 95.1
+[p074_c0011] This project is in the procurement phase. The award was delayed due to the need for legal reviews of the revised specifications.
+[p074_c0012] _Master Page # 74 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 75
+
+### [p075_c0001] Metropolitan Transportation Authority
+### [p075_c0002] LIRR Capital Projects – Commitments – June 2025 – Budget Analysis and Schedule Variances
+### [p075_c0003] LIRR Budget Analysis
+[p075_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2025 Annual Goal $302 $224 $236 $200 $526 2025 Actual/Forecast $173 $566 $468 $266 $739 Budgeted Value $173 $566 $468 $266 $739
+```
+[p075_c0005] $1,400
+[p075_c0006] $1,000
+[p075_c0007] $600
+[p075_c0008] $200
+[p075_c0009] ($200)
+> [p075_c0010] LIRR Budget Analysis Data ($ in millions) Period 2025 Annual Goal Budgeted Value 2025 Actual/Forecast 1Q $302 $173 $173 2Q $224 $566 $566 3Q $236 $468 $468 4Q $200 $266 $266 YTD $526 $739 $739
+[p075_c0011] ■ 2025 Annual Goal ■ Budgeted Value ■ 2025 Actual/Forecast
+### [p075_c0012] Schedule Variances
+[p075_c0013]
+
+```text
+Project Commitment Goal Actual(A) Project Commitment Goal Act./Forec.
+```
+### [p075_c0014] 2 LIRR Red Commitments (2 new this quarter)
+[p075_c0015] Track
+[p075_c0016]
+
+```text
+2025 Annual Track Program Construction Jun-25 Jul-25 $ 110.0 $ 110.0
+```
+[p075_c0017] The award of this project in the 2020-2024 capital program was delayed pending the approval of the 25-29 Capital Program.
+### [p075_c0018] Concrete Ties
+[p075_c0019]
+
+```text
+Construction Jun-25 Jul-25 $ 28.0 $ 28.0
+```
+[p075_c0020] The award of this project in the 2020-2024 capital program was delayed pending the approval of the 25-29 Capital Program.
+### [p075_c0021] 2 LIRR Red Commitments (2 new this quarter)
+[p075_c0022] Signal & Comm
+[p075_c0023]
+
+```text
+RSSE - Train Wash Replacement - KO Construction Jun-25 Oct-25 $ 15.2 $ 15.2
+```
+[p075_c0024] Delay due to longer than anticipated time to secure permits with Suffolk County as well as Real Estate issues.
+### [p075_c0025] Floral Park Platform Replacement (Design Only)
+[p075_c0026]
+
+```text
+Design Jun-25 Dec-25 $ 12.5 $ 12.5
+```
+[p075_c0027] Slip due to the delay in the approval of the 2025-29 Capital Plan.
+[p075_c0028] _Master Page # 75 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 76
+
+### [p076_c0001] Metropolitan Transportation Authority
+### [p076_c0002] MNR Capital Projects – Commitments – June 2025 – Budget Analysis and Schedule Variances
+### [p076_c0003] MNR Budget Analysis
+[p076_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2025 Annual Goal $178 $128 $70 $205 $305 2025 Actual/Forecast $14 $1,239 $201 $336 $1,253 Budgeted Value $20 $1,243 $202 $336 $1,262
+```
+### [p076_c0005] Schedule Variances
+[p076_c0006]
+
+```text
+Project Commitment Goal Forecast
+```
+### [p076_c0007] 1 Metro-North Red Commitments
+[p076_c0008] Red delays are beyond 2 months of goal.
+[p076_c0009] Track & Structures
+[p076_c0010]
+
+```text
+2025 Cyclical Track Construction Feb-25 Jul-25 $ 55.0 $ 55.0
+```
+[p076_c0011] Slip due to the delay in the approval of the 2025-29 Capital Plan.
+[p076_c0012] _Master Page # 76 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 77
+
+### [p077_c0001] Metropolitan Transportation Authority
+### [p077_c0002] MTA Network Expansion Projects – Commitments – June 2025 – Budget Analysis and Schedule Variances
+### [p077_c0003] MTA Network Expansion Budget Analysis
+[p077_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2025 Annual Goal $522 $507 $2,027 $169 $1,025 2025 Actual/Forecast $375 $965 $2,410 $199 $1,340 Budgeted Value $354 $966 $2,414 $204 $1,323
+```
+> [p077_c0005] Bar Chart Data (in millions) Period 2025 Annual Goal Budgeted Value 2025 Actual/Forecast 1Q $354 $354 $375 2Q $507 $966 $965 3Q $2,027 $2,414 $2,410 4Q $169 $204 $199 YTD $1,025 $1,323 $1,340
+### [p077_c0006] Schedule Variances
+[p077_c0007]
+
+```text
+Project Commitment Goal Actual(A) 1 Network Expansion Amber Commitments (1 new this quarter) Amber delays are within 2 months of goal. IBX Interborough Express GEC Design $ 55.8 Jul-25 $ 55.8 The project delay is due to prolonged procurement cycle.
+```
+[p077_c0008] _Master Page # 77 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 78
+
+### [p078_c0001] Metropolitan Transportation Authority
+### [p078_c0002] B&T Capital Projects – Commitments – June 2025 – Budget Analysis and Schedule Variances
+### [p078_c0003] B&T Budget Analysis
+[p078_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2025 Annual Goal $5 $99 $784 $17 $61 2025 Actual/Forecast $4 $47 $834 $17 $8 Budgeted Value $47 $834 $17 $9
+```
+> [p078_c0005] B&T Budget Analysis Data ($ in millions) Category 1Q 2Q 3Q 4Q YTD 2025 Annual Goal $5 $99 $784 $17 $61 Budgeted Value $47 $834 $17 $9 2025 Actual/Forecast $4 $47 $834 $17 $8
+### [p078_c0006] Schedule Variances
+[p078_c0007] There are no major schedule slippages to report for the MTA Bridges & Tunnels.
+[p078_c0008] _Master Page # 78 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 79
+
+### [p079_c0001] Metropolitan Transportation Authority
+### [p079_c0002] Capital Projects – Completions – June 2025
+[p079_c0003]
+
+```text
+Goal Forecast MTA-wide 2025 Major Completions Post 2025 Jan-25 Feb-25 Mar-25 Apr-25 May-25 Jun-25 Jul-25 Aug-25 Sep-25 Oct-25 Nov-25 Dec-25 Jan-25 Feb-25 Mar-25 Apr-25 May-25 Jun-25 Jul-25 Aug-25 Sep-25 Oct-25 Nov-25 Dec-25 Post 2025 Total 44 3 2 3 2 1 3 2 2 5 3 2 Jan-25 2 2 Feb-25 3 1 2 Mar-25 3 1 2 1 1 1 Apr-25 4 1 May-25 1 Jun-25 7 1 2 1 1 2 Jul-25 4 1 1 1 1 Aug-25 0 Sep-25 1 1 Oct-25 6 3 Nov-25 1 1 Dec-25 12 1
+```
+[p079_c0004] BLUE = Actual/Forecast earlier than Goal GREEN = Actual/Forecast matches Goal AMBER = Actual/Forecast within 2 months of Goal RED = Actual/Forecast beyond 2 months of Goal
+### [p079_c0005] Completions Summary
+[p079_c0006] In 2025, the MTA plans to complete $9.1 Billion of projects. 44 major completions will be tracked throughout the year. Major completions include 21 for NYC, 10 for the LIRR, 5 for Metro-North, 5 for MTA Bus, 1 for Network Expansion, and 2 for B&T.
+[p079_c0007] Through June, the MTA has completed $3.25 Billion versus its annual year-to-date goal of $4.89 Billion. This result includes the completion of the R211 Base Order ($1.47 Billion) and the ADA station work at NYC's 14th Street complex ($303 Million). There are 14 major completions with delays across all agencies. All are highlighted on the following two pages. Two projects, ADA Package 4 ($220 Million) & Replace 19 Elevators ($160 Million), have a completion delayed until early 2026, contributing to the year-end forecast shortfall.
+### [p079_c0008] Budget Analysis
+[p079_c0009] 2025 Annual Goal $9,084 Annual Forecast $8,506 Completion Goal Forecast 94%
+> [p079_c0010] YTD Budget Analysis ($ in millions) Category Value ($ in millions) YTD Goal $4,886 YTD Actual/Forecast $3,249
+[p079_c0011] _Master Page # 79 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 80
+
+### [p080_c0001] Metropolitan Transportation Authority
+### [p080_c0002] NYCT/MTA Bus Capital Projects – Completions – June 2025 – Budget Analysis and Schedule Variances (1 of 2)
+### [p080_c0003] NYCT and MTA Bus Budget Analysis
+[p080_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2025 Annual Goal $1,195 $3,309 $983 $2,527 $4,497 2025 Actual/Forecast $1,204 $1,838 $2,100 $2,295 $3,027
+```
+[p080_c0005]
+
+```text
+2025 Goal (Rolling Stock) $120 $1,485 $0 $0 $1,605 2025 Actual/Forecast (Rolling Stock) $163 $1,485 $0 $0 $1,648
+```
+> [p080_c0006] 2025 Actual/Forecast vs 2025 Annual Goal ($ in millions) Period 2025 Annual Goal 2025 Actual/Forecast 1Q $1,195 $1,204 2Q $3,309 $1,838 3Q $983 $2,100 4Q $2,527 $2,295 YTD $3,027 $4,497
+### [p080_c0007] Schedule Variances
+[p080_c0008]
+
+```text
+Project Completion Goal Act/Forec.
+```
+### [p080_c0009] 6 NYCT/MTA Bus Red Completions (1 new this month)
+[p080_c0010] Red delays are beyond 2 months of goal.
+### [p080_c0011] Stations
+[p080_c0012]
+
+```text
+ADA: 149 St Complex & Tremont Av Construction Mar-25 Sep-25 $163.0 $166.0 Change in schedule due to unforeseen electrical distribution protection needs with the existing EDR at the 149th St-GC station complex and track access coordination for remaining work at Tremont Ave.
+```
+### [p080_c0013] ADA Package 4
+[p080_c0014]
+
+```text
+Construction Oct-25 Jan-26 $220.6 $220.6
+```
+[p080_c0015] Change in schedule due to coordination with Con Ed on cable work at the 137th St City College station.
+### [p080_c0016] Replace 19 Elevators
+[p080_c0017]
+
+```text
+Construction Oct-25 Apr-26 $160.1 $159.6
+```
+[p080_c0018] Change in project schedule due to added communications scope, including intercom and CCTV server upgrades
+[p080_c0019] _Master Page # 80 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 81
+
+### [p081_c0001] Metropolitan Transportation Authority
+### [p081_c0002] NYCT/MTA Bus Capital Projects – Completions – June 2025 – Budget Analysis and Schedule Variances
+### [p081_c0003] Schedule Variances
+[p081_c0004]
+
+```text
+Project Completion Goal Act./Forec. Project Completion Goal Act./Forec. 6 NYC/MTA Bus Red Completions (1 new this month) Continued 5 NYC/MTA Bus Amber Completions (2 new this month) Sandy Mitigation: Substation Hardening Construction May-25 $ 159.2 Nov-25 $ 159.2 Amber delays are within 2 months of goal. Change in schedule due to unforeseen field conditions related to utilities and soil, as well as a pending easement for structural work at Pierrepont substation. Stations NYCT/MTA Bus Construction Mar-25 $ 7.6 Jun-25 (A) $ 7.6 Jamaica Station Renewals Construction Jun-25 $ 170.8 Aug-25 $ 169.8 Storeroom Expansion - LaGuardia Construction Mar-25 $ 7.6 Jun-25 $ 7.6 Change in schedule due to necessary scope modifications at Cypress Hills station related to the construction of the track lubrication room. The contractor/subcontractor has encountered a manpower shortage issue, which has resulted in a project delay. ADA and Renewal: Borough Hall Construction Jul-25 $ 161.2 Aug-25 $ 161.0 Signals & Comm Construction Jun-25 $ 453.2 Sep-25 $ 447.4 Change in schedule due to the delayed delivery of the Automatic Transfer Switch for the elevator machine room. CBTC Culver Construction Jun-25 $ 453.2 Sep-25 $ 447.4 Grand Central Access Improvements: Main Mezzanine Finishes Construction Jul-25 $ 118.5 Sep-25 $ 118.2 The delay of the project and budget modification are due to a pending arbitration award. Change in forecast due to unforeseen structural and sprinkler work, and track access coordination related to the delivery of escalator parts Stations Rail Car Acceptance and Testing Facility, Brooklyn Construction Jun-25 $ 170.8 Jul-25 $ 169.8 Change in schedule due to remaining tasks related to fire safety systems. Rolling Stock Purchase 25 Hybrid Locomotives Construction Oct-25 $ 170.8 Dec-25 $ 169.8 Change in project schedule reflects operational issues with accepted units.
+```
+[p081_c0005] _Master Page # 81 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 82
+
+### [p082_c0001] Metropolitan Transportation Authority
+### [p082_c0002] LIRR Capital Projects – Completions – June 2025 – Budget Analysis and Schedule Variances
+### [p082_c0003] LIRR Budget Analysis
+[p082_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2025 Annual Goal $23 $35 $16 $304 $58 2025 Actual/Forecast $17 $47 $31 $307 $64
+```
+[p082_c0005]
+
+```text
+2025 Goal (Rolling Stock) $0 $0 $0 $0 $0 2025 Actual/Forecast (Rolling Stock) $0 $0 $0 $0 $0
+```
+> [p082_c0006] LIRR Red Completions ($ in millions) Period 2025 Annual Goal 2025 Actual/Forecast 1Q $23 $17 2Q $35 $47 3Q $16 $31 4Q $304 $307 YTD $58 $64
+### [p082_c0007] Schedule Variances
+[p082_c0008]
+
+```text
+Project Completion Goal Act./Forec.
+```
+### [p082_c0009] 1 LIRR Red Completions
+[p082_c0010] Red delays are beyond 2 months of goal.
+### [p082_c0011] Communications & Signals
+[p082_c0012]
+
+```text
+Radio Head-End Replacement Construction Jun-25 $12.0 Sep-25 $12.0
+```
+[p082_c0013] Project completion was extended due to additional scope and cost requests for the installation of dispatcher consoles, base stations, radio consoles, and supporting work. The team had requested additional budget to support this, which was approved early in 2025.
+[p082_c0014] _Master Page # 82 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 83
+
+### [p083_c0001] Metropolitan Transportation Authority
+### [p083_c0002] MNR Capital Projects – Completions – June 2025 – Budget Analysis and Schedule Variances
+### [p083_c0003] MNR Budget Analysis
+[p083_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2025 Annual Goal $139 $90 $25 $12 $132 2025 Actual/Forecast $124 $0 $51 $90 $124
+```
+[p083_c0005]
+
+```text
+2025 Goal (Rolling Stock) $0 $0 $0 $0 $0 2025 Actual/Forecast (Rolling Stock) $0 $0 $0 $0 $0
+```
+> [p083_c0006] Legend: ■ 2025 Annual Goal ■ 2025 Actual/Forecast MNR Red Completions ($ in millions) Period 2025 Annual Goal 2025 Actual/Forecast 1Q $90 $124 2Q $0 $0 3Q $25 $51 4Q $12 $90 YTD $132 $124
+### [p083_c0007] Schedule Variances
+[p083_c0008]
+
+```text
+Project Completion Goal Act./Forec.
+```
+### [p083_c0009] 1 MNR Red Completions (1 new this month)
+[p083_c0010] Red delays are beyond 2 months of goal.
+### [p083_c0011] Communications & Signals
+[p083_c0012]
+
+```text
+Power Infrastructure Restoration-Substations - Sandy Construction Jul-25 $50.0 Dec-25 $50.0
+```
+[p083_c0013] The project timeline shifted due to extended punch list corrections and adjustments to the burn-in and testing schedule following transformer installation.
+[p083_c0014] _Master Page # 83 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 84
+
+### [p084_c0001] Metropolitan Transportation Authority
+### [p084_c0002] MTA Network Expansion Projects – Completions – June 2025 – Budget Analysis and Schedule Variances
+### [p084_c0003] MTA Network Expansion Budget Analysis
+[p084_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2025 Annual Goal $0 $164 $0 $73 2025 Actual/Forecast $0 $164 $0 $164
+```
+> [p084_c0005] 2025 Budget Analysis Data Period 2025 Annual Goal ($M) 2025 Actual/Forecast ($M) 1Q $0 $164 2Q $0 $164 3Q $0 $0 4Q $0 $73 YTD $0 $164
+### [p084_c0006] Schedule Variances
+[p084_c0007]
+
+```text
+Project Completion Goal Forecast
+```
+### [p084_c0008] 1 Network Expansion Completion
+[p084_c0009] Amber delays are within 2 months of goal.
+### [p084_c0010] East Side Access
+[p084_c0011]
+
+```text
+East Bound Re-Route (New Item) Construction Apr-25 May-25 (A)
+```
+[p084_c0012] $ 163.60 $ 163.65
+[p084_c0013] East Bound Re-Route was activated and put into service 5/19/25.
+[p084_c0014] _Master Page # 84 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 85
+
+### [p085_c0001] Metropolitan Transportation Authority
+### [p085_c0002] B&T Capital Projects – Completions – June 2025 – Budget Analysis and Schedule Variances
+### [p085_c0003] B&T Budget Analysis
+[p085_c0004]
+
+```text
+Summary Chart Data 1Q 2Q 3Q 4Q YTD 2025 Annual Goal $0 $34 $7 $148 $34 2025 Actual/Forecast $0 $0 $10 $122 $34
+```
+> [p085_c0005] B&T Budget Analysis Data Quarter 2025 Annual Goal ($ in millions) 2025 Actual/Forecast ($ in millions) 1Q $0 $0 2Q $34 $0 3Q $7 $10 4Q $148 $122 YTD $34 $34
+### [p085_c0006] Schedule Variances
+[p085_c0007] There are no major schedule slippages to report for MTA Bridges and Tunnels.
+[p085_c0008] _Master Page # 85 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 86
+
+### [p086_c0001] Status of MTA Capital Program Funding
+[p086_c0002] _Metropolitan Transportation Authority_
+[p086_c0003] _Master Page # 86 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 87
+
+### [p087_c0001] Capital Funding (June 2025) $ in millions
+> [p087_c0002] Capital Program Secured ($ in millions) Remainder ($ in millions) 2025-2029 $40 ~$1,060 2020-2024 $28,317 ~$1,072 2015-2019 $31,323 ~$1,077 1982-2014 $110,415 ~$1,083
+[p087_c0003] Federal funds are recognized as "Secured" after they are available to MTA pursuant to an executed grant agreement or a full funding grant agreement. Bond proceeds and State funding are recognized at the time of their receipt. City funds are recognized as "Secured" after they are available to MTA pursuant to an executed letter agreement. Amounts listed under "Secured" may not have been fully received by MTA as of the date of this report.
+[p087_c0004] _Master Page # 87 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 88
+
+### [p088_c0001] Capital Funding Detail (June 2025)
+[p088_c0002] $ in millions
+[p088_c0003]
+
+```text
+Funding Plan Secured* Remainder Current Thru May June Secured to date 2015-2019 Program Federal Formula $4,706 $4,706 $- $4,706 $- Federal Flex & Other (Incl HSR/Security/Core Capacity) 649 628 - 628 20 Federal New Start 1,400 1,400 - 1,400 - State Assistance 9,118 8,248 - 8,248 871 City Capital Funds 2,092 2,066 - 2,066 27 City Non-Tax Levy Revenue Sources 600 - - - 600 MTA Bonds & PAYGO 11,203 11,203 - 11,203 - Asset Sales/Leases 906 326 - 326 581 Other 267 70 - 70 197 B&T Bonds & PAYGO/Asset Sale 2,677 2,677 - 2,677 - Total 33,619 31,323 - 31,323 2,295 7%
+```
+[p088_c0004]
+
+```text
+Funding Plan Secured* Remainder Current Thru May June Secured to date 2020-2024 Program** Capital from Central Business District Tolling* $15,000 $999 $- $999 $14,001 Capital from New Revenue Sources* 10,000 5,604 - 5,604 4,396 MTA Bonds and PAYGO 7,385 1,540 - 1,540 5,845 Other Contribution 589 - - - 589 Federal Formula 9,921 10,615 - 10,615 (694) State of New York 3,169 1,211 - 1,211 1,958 City of New York 3,007 3,031 - 3,031 (24) Federal New Start (SAS Ph2) 2,005 2,005 - 2,005 - Federal Flexible & Other 1,161 2,563 - 2,563 (1,402) B&T Bonds 3,327 748 - 748 2,579 Total 55,563 28,317 - 28,317 27,246 49%
+```
+[p088_c0005]
+
+```text
+Funding Plan Secured* Remainder Current Thru May June Secured to date 2025-2029 Program MTA Capital Lockbox $31,500 $- $- $- $31,500 Federal Formula, Flexible and Competitive Grants and Loans $14,000 - - - 14,000 MTA Bonds and PAYGO $9,700 - - - 9,700 State of New York $4,200 - - - 4,200 City of New York $3,000 - 40 40 2,960 Additional MTA Self-Funding $3,000 - - - 3,000 Bridges and Tunnel Bonds $3,000 - - - 3,000 Total 68,400 - 40 40 68,360 100%
+```
+[p088_c0006] a) Receipt of $40m in NYC annual Track and Revolving Fund for NYC's 2025-2029 Capital Program.
+[p088_c0007] Note: Federal funds are recognized as "Secured" after they are available to MTA pursuant to an executed grant agreement or a full funding grant agreement. Bond proceeds and State funding are recognized at the time of their receipt. City funds are recognized as "Secured" after they are available to MTA pursuant to an executed letter agreement. Amounts listed under "Secured" may not have been fully received by MTA as of the date of this report.
+[p088_c0008] * Other than proceeds of bonds and notes payable from the Capital Lockbox, secured Capital Lockbox funds, including Capital from Central Business District Tolling and Capital from New Revenue Sources in the 2020-2024 program, are expected to be recognized in December 2025 and annually thereafter.
+[p088_c0009] **As noted in prior receipt reports: the 2020-2024 Capital Programs letter amendment was approved in December 2024. Federal Formula, City capital and Federal Other (Receipt of FRA funds for PSA post Plan approval) plan values will be updated to reflect in the next full plan amendment.
+[p088_c0010] _Master Page # 88 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 89
+
+### [p089_c0001] Construction & Development
+### [p089_c0002] Contracts Department
+[p089_c0003] Evan Eisland, Executive Vice President and General Counsel
+### [p089_c0004] PROCUREMENT PACKAGE JULY 2025
+[p089_c0005] _Master Page # 89 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 90
+
+### [p090_c0001] Construction & Development
+### [p090_c0002] PROCUREMENTS
+[p090_c0003] The Procurement Agenda this month includes 3 actions for a proposed expenditure of $ 483 M.
+[p090_c0004] _Master Page # 90 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 91
+
+### [p091_c0001] Staff Summary
+### [p091_c0002] Page 1 of 1
+[p091_c0003]
+
+```text
+Subject Request Authorization for Several Procurement Actions Contracts Department Evan Eisland, Executive Vice President and General Counsel Board Action Order To Date Approval Info Other 1 Capital Program Committee 07/28/25 X 2 Board 07/30/25 X
+```
+[p091_c0004]
+
+```text
+Date: July 25, 2025 Internal Approvals Approval Approval X Deputy Chief Development Officer, Delivery X President X Deputy Chief Development Officer, Development X Executive Vice President & General Counsel
+```
+### [p091_c0005] Purpose
+[p091_c0006] To obtain the approval of the Board to award several procurement actions and to inform the Capital Program Committee of these procurement actions.
+### [p091_c0007] Discussion
+[p091_c0008] MTA Construction & Development proposes to award Competitive Procurements in the following categories:
+[p091_c0009]
+
+```text
+Schedules Requiring Two-Thirds Vote # of Actions $ Amount C. Competitive Requests For Proposals (Award of Purchase and Public Work Contracts) 1 $ 434,980,000 SUBTOTAL 1 $ 434,980,000 Schedules Requiring Majority Vote # of Actions $ Amount I. Modifications to Purchase and Public Work Contracts 1 $ 1,100,000 SUBTOTAL 1 $ 1,100,000
+```
+[p091_c0010] MTA Construction & Development proposes to ratify awards in the following category:
+[p091_c0011]
+
+```text
+Schedules Requiring Majority Vote # of Actions $ Amount K. Ratification of Completed Procurement Actions 1 $ 47,000,000 SUBTOTAL 1 $ 47,000,000 TOTAL 3 $ 483,080,000
+```
+### [p091_c0012] Budget Impact
+[p091_c0013] The approval of these procurement actions will obligate capital funds in the amounts listed. Funds are available in the capital program budget for this purpose.
+### [p091_c0014] Recommendation
+[p091_c0015] That the procurement actions be approved as proposed. (The items are included in the resolution of approval at the beginning of the Procurement Section.)
+[p091_c0016] _Master Page # 91 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 92
+
+### [p092_c0001] MTA Construction & Development
+### [p092_c0002] BOARD RESOLUTION
+[p092_c0003] WHEREAS , in accordance with Sections 559, 2879, 1209 and 1265-a of the Public Authorities Law and the All Agency General Contract Procurement Guidelines, the Board authorizes the award of certain non-competitive purchase and public works contracts, and the solicitation and award of request for proposals in regard to purchase and public work contracts; and
+[p092_c0004] WHEREAS , in accordance with the All Agency Service Contract Procurement Guidelines and the All Agency General Contract Procurement Guidelines, the Board authorizes the award of certain non-competitive miscellaneous service and miscellaneous procurement contracts, certain change orders to purchase, public work, and miscellaneous service and miscellaneous procurement contracts; and
+[p092_c0005] WHEREAS , in accordance with Section 2879 of the Public Authorities Law and the All-Agency Guidelines for Procurement of Services, the Board authorizes the award of certain service contracts and certain change orders to service contracts.
+[p092_c0006] NOW, the Board resolves as follows:
+- [p092_c0007] 1. As to each purchase and public work contract set forth in annexed Schedule A, the Board declares competitive bidding to be impractical or inappropriate for the reasons specified therein and authorizes the execution of each such contract. 2. As to each request for proposals (for purchase and public work contracts) set forth in Schedule B for which authorization to solicit proposals is requested, for the reasons specified therein, the Board declares competitive bidding to be impractical or inappropriate, declares it is in the public interest to solicit competitive request for proposals and authorizes the solicitation of such proposals. 3. As to each request for proposals (for purchase and public work contracts set forth in Schedule C for which a recommendation is made to award the contract), the Board authorizes the execution of said contract. 4. As to each action set forth in Schedule D, the Board declares competitive bidding impractical or inappropriate for the reasons specified therein, and ratifies each action for which ratification is requested. 5. The Board authorizes the execution of each of the following for which Board authorization is required: i) the miscellaneous procurement contracts set forth in Schedule E; ii) the personal service contracts set forth in Schedule F; iii) the miscellaneous service contracts set forth in Schedule G; iv) the modifications to personal/miscellaneous service contracts set forth in Schedule H; v) the contract modifications to purchase and public work contracts set forth in Schedule I; vi) the modifications to miscellaneous procurement contracts set forth in Schedule J. 6. The Board ratifies each action taken set forth in Schedule K for which ratification is requested.
+[p092_c0008] _Master Page # 92 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 93
+
+### [p093_c0001] Construction & Development
+[p093_c0002] JULY 2025
+### [p093_c0003] LIST OF COMPETITIVE PROCUREMENTS FOR BOARD APPROVAL
+### [p093_c0004] Procurements Requiring Two-Thirds Vote:
+### [p093_c0005] C. Competitive Requests for Proposals (Award of Purchase and Public Work Contracts) (Staff Summaries required for all items greater than $1M.)
+- [p093_c0006] 1. VNB Construction Company Contract No. VN-84B $434,980,000 Staff Summary Attached
+[p093_c0007] MTA Construction & Development requests Board approval to award a publicly advertised and competitively solicited contract for Design-Build services to rehabilitate elevated roadways and ramps on the Brooklyn side of the Verrazzano-Narrows Bridge.
+### [p093_c0008] Procurements Requiring Majority Vote:
+### [p093_c0009] I. Modifications to Purchase and Public Work Contracts
+[p093_c0010] (Staff Summaries required for individual change orders greater than $1M or greater than 10% of the adjusted contract amount or duration.)
+- [p093_c0011] 2. Gramercy PJS JV Contract No. A35305 $1,100,000 Staff Summary Attached
+[p093_c0012] MTA Construction & Development requests Board approval of a modification to the Contract to add the demolition of the decommissioned Parkchester Avenue Signal Tower.
+[p093_c0013] _Master Page # 93 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 94
+
+### [p094_c0001] Staff Summary
+### [p094_c0002] Schedule C: Competitive Requests for Proposals (Award of Purchase and Public Works Contracts)
+### [p094_c0003] Page 1 of 2
+[p094_c0004]
+
+```text
+Item Number 1 Department, Department Head Name: Delivery, Romolo Desantis, P.E., SVP and Chief Engineer, B&T Business Unit Board Reviews Order To Date Approval Info Other 1 Capital Program Committee 7/28/2025 X 2 Board 7/30/2025 X Internal Approvals Order Approval Order Approval Deputy Chief, Development Executive Vice President & General Counsel Deputy Chief, Delivery President
+```
+[p094_c0005]
+
+```text
+SUMMARY INFORMATION Vendor Name Contract Number VNB Construction Company VN-84B Description Design-Build services to rehabilitate elevated roadways and ramps on the Brooklyn side of the Verrazzano-Narrows Bridge Total Amount 1. Design Build Contract $434,980,000 2. Stipends $900,000 Contract Term (including Options, if any) 1,420 Calendar Days Option(s) included in Total Amount? Yes No Renewal? Yes No Procurement Type Competitive Noncompetitive Solicitation Type RFP Bid Other: Funding Source Operating Capital Federal Other:
+```
+### [p094_c0006] ACTION REQUESTED
+[p094_c0007] MTA Construction & Development (“C&D”) requests Board approval to award a publicly advertised and competitively solicited contract to VNB Construction Company (“VCCJV”), a joint venture among DeFoe Corp., GCCOM Construction Company, Inc., Northeast Structural Steel, Inc. and Restani Construction Corp., for Design-Build services to rehabilitate elevated roadways and ramps on the Brooklyn side of the Verrazzano-Narrows Bridge (the “Contract”). The Contract is in the amount of $434,980,000 and for a duration of 1,420 Calendar Days. In accordance with MTA policy regarding the use of Design-Build contracts, and to enhance competition and defray proposal costs, this solicitation includes a stipend of $450,000 to be paid to each of the two unsuccessful proposers for a total amount of $900,000.
+### [p094_c0008] DISCUSSION
+[p094_c0009] This Design-Build Contract will rehabilitate the elevated roadways connecting the Verrazzano Narrows Bridge to the Belt Parkway, the eastbound Gowanus expressway and 92nd street in Brooklyn. In addition, this contract will reconstruct two left lane exit ramps that connect the bridge’s Brooklyn bound traffic to the Belt Parkway, realigning these ramps to more conventional right lane exits that will meet current design standards, improve traffic flow and reduce collisions. The rehabilitation work includes replacement of the concrete deck and barriers, including all associated utilities and appurtenances, implementation of seismic improvements, and repairs to the original supporting piers and foundations. The work also includes restoration of the park lands impacted during the project.
+[p094_c0010] A two-step procurement process was conducted for this Contract. In Step 1, a Request for Qualifications was advertised resulting in the submission of four Statements of Qualifications, which were then evaluated against pre-established Threshold Criteria (addressing completeness, timeliness, capacity, responsibility, and financial capability) and Substantive Evaluation Criteria (addressing team, key personnel and organization; project approach; prior design-build experience; past performance; and diversity compliance). Based on these criteria, all four firms were selected to receive a Request for Proposals (“RFP”) in Step 2. Those firms are:
+[p094_c0011] _Master Page # 94 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 95
+
+- [p095_c0001] • VCCJV • El Sol Posillico JV ("ESPJV") • Tully Construction Co., Inc. ("Tully") • Tutor Perini Corporation ("TPC")
+[p095_c0002] In response to the RFP, VCCJV, ESPJV and Tully submitted technical and price proposals. TPC withdrew from the RFP process prior to the proposal submission deadline. The selection committee, consisting of representatives from C&D Delivery and Contracts Departments, reviewed the technical proposals and attended the oral presentations of each of the three remaining teams. The selection committee evaluated the technical proposals using the following preestablished selection criteria: design and construction, schedule, key personnel, management narrative, safety and quality, past performance, diversity practices, and other relevant matters. After evaluating technical proposals, the selection committee opened the price proposals which were as follows: VCCJV: $484,186,900, ESPJV: $374,800,000; and Tully: $528,530,900. Although ESPJV's price proposal was significantly lower than the other two teams, its proposal included assumptions that did not accurately reflect the terms of the Contract. ESPJV was allowed to submit an amended proposal based on the Contract terms and without the erroneous assumptions. ESPJV's amended price proposal was in the amount of $455,300,000.
+[p095_c0003] The selection committee invited VCCJV and ESPJV to participate in negotiations. Tully was not invited because its price proposal was outside of the competitive range. Negotiations with ESPJV and VCCJV included detailed discussions of their overall cost as well as proposed schedules and design and construction approach. The BAFOs submitted by the proposers following negotiations were as follows: ESPJV: $436,800,000 and VCCJV: $434,980,000.
+[p095_c0004] The selection committee unanimously recommended VCCJV for award of the Contract. In addition to offering the lowest price, the selection committee determined that VCCJV's proposal offered the best value to the MTA. VCCJV's technical proposal demonstrated a thorough understanding of the project requirements, including a comprehensive preliminary design with advanced structural analysis and refinements, as well as park enhancements improving the visual quality around the bridge. Furthermore, VCCJV's proposal offered a well-organized project team with extensive experience performing work at both the VNB and on projects of similar size and complexity and presented a construction staging approach that minimizes impacts to the local community and travelling public. VCCJV's BAFO of $434,980,000 is deemed to be fair and reasonable.
+### [p095_c0005] MBE/WBE/DBE/SDVOB Information
+[p095_c0006] The MTA Department of Diversity and Civil Rights has established an MBE goal of 15%, a WBE goal of 15%, and an SDVOB goal of 6% for this Contract. VCCJV is committed to meeting the required goal requirements and their plan is under review. VCCJV achieved its DBE/MBE/WBE/SDVOB goals on recently completed MTA contracts.
+### [p095_c0007] IMPACT ON FUNDING
+[p095_c0008] Funding for the Contract, and stipends for the two unsuccessful proposers, are included in the B&T portion of the MTA's 2025-2029 Capital Program.
+### [p095_c0009] ALTERNATIVES
+[p095_c0010] None recommended. MTA lacks available in-house technical personnel to perform the scope of work associated with this Contract.
+[p095_c0011] _Master Page # 95 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 96
+
+### [p096_c0001] Staff Summary
+### [p096_c0002] Schedule I: Modifications to Purchase and Public Work Contracts
+### [p096_c0003] Page 1 of 1
+[p096_c0004] Item Number: 2
+[p096_c0005]
+
+```text
+Vendor Name (& Location) Gramercy PJS JV (Wantagh, NY) Description Demolition work for Parkchester Avenue Signal Tower Contract Term (including Options, if any) December 27, 2022 – August 4, 2025 Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Dept/Div & Dept/Div Head Name: Delivery, Mark Roche, Deputy Chief Development Officer
+```
+[p096_c0006]
+
+```text
+Contract Number AWO/Modification # A-35305 12 Original Amount: (including options) $ 53,729,189 Prior Modifications: $ 414,500 Prior Budgetary Increases: $ 414,500 Current Amount: $ 54,143,689 This Request: $ 1,100,000 % of This Request to Current Amount: 2.03% % of Modifications (including This Request) to Original Amount: 2.82%
+```
+### [p096_c0007] DISCUSSION:
+[p096_c0008] Contract A-35305 (the “Contract”) provides for platform and station repairs at the 75 th Street, 85 th Street and Cypress Hill Stations on the Jamaica Line. MTA Construction and Development (“C&D”) requests that the Board approve a modification to add the demolition of the decommissioned Parkchester Ave Signal Tower.
+[p096_c0009] The work under this Modification is part of an effort to remove decommissioned structures from our systems. The Parkchester Signal Tower is located just north of Parkchester Station was decommissioned in the late 1990s when its function was transferred to a master tower in Westchester Yard. The decommissioned tower is in disrepair, making its condition a safety and security concern, as the tower is located on an elevated structure and is directly above a public street. The contractor is performing similar work in another location and already has forces mobilized who can support this work, and will be able to complete this work with no impact to the final completion of this contract. The work also includes the abatement of existing asbestos, lead and silica and protection of the street below and the adjacent NYCT right of way, as well as the installation of new track railing and fiberglass walkway once the signal tower is removed.
+[p096_c0010] The Contractor submitted a cost proposal of $1,436,943.25. Negotiations resulted in the agreed lump sum price of $1,100,000 with no impact on schedule, which has been determined to be fair and reasonable.
+[p096_c0011] No Significant Adverse Information (“SAI”) was discovered on the joint venture entity Gramercy PJS JV or its Partner Gramercy Group, Inc.; however, previous SAI exits with its partner Paul J Scariano, Inc. (“PJS”). In connection with the review of PJS’ responsibility pursuant to the All-Agency Responsibility Guidelines, PJS was found to be responsible notwithstanding Significant Adverse Information and such responsibility finding was approved by the MTA Chair in consultation with the MTA General Counsel in January 2016.
+[p096_c0012] _Master Page # 96 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 97
+
+### [p097_c0001] Construction & Development
+[p097_c0002] JULY 2025
+### [p097_c0003] LIST OF RATIFICATIONS FOR BOARD APPROVAL
+### [p097_c0004] Procurements Requiring Majority Vote:
+### [p097_c0005] Schedule K. Ratification of Completed Procurement Actions (Involving Schedule E – J)
+[p097_c0006] (Staff Summaries required for all items requiring Board approval)
+- [p097_c0007] 3. Hitachi Rail GTS USA Inc. Contract No. S48013-2 $47,000,000 Staff Summary Attached
+[p097_c0008] MTA Construction and Development requests that the Board ratify a modification to add the scope of designing, furnishing and supporting the installation of 5G-based Data Communication System equipment on R211 subway cars.
+[p097_c0009] _Master Page # 97 of 98 - Capital Program Committee Meeting 7/28/2025_
+
+## Page 98
+
+### [p098_c0001] Staff Summary
+### [p098_c0002] Schedule K: Ratification of Completed Procurement Actions
+### [p098_c0003] Page 1 of 1
+[p098_c0004] Item Number: 3
+[p098_c0005]
+
+```text
+Vendor Name (& Location) Hitachi Rail GTS USA Inc. (New York, NY) Description R211 Carborne Equipment for the CBTC 8 th Avenue Line Contract Term (including Options, if any) March 27, 2019 – May 25, 2028 (including options) Option(s) included in Total Amount? Yes No n/a Procurement Type Competitive Non-competitive Solicitation Type RFP Bid Other: Modification Funding Source Operating Capital Federal Other: Requesting Dept/Div & Dept/Div Head Name: Delivery, Mark Roche, Deputy Chief Development Officer
+```
+[p098_c0006]
+
+```text
+Contract Number S-48013-2 AWO/Modification # 10 Original Amount: (including options) $ 47,174,567 Prior Modifications: $ 2,638,000 Prior Budgetary Increases: $ 0 Current Amount: $ 49,812,567 This Request: $ 47,000,000 % of This Request to Current Amount: 94% % of Modifications (including This Request) to Original Amount: 105%
+```
+### [p098_c0007] DISCUSSION:
+[p098_c0008] Contract S-48013-2 (the “Contract”) provides carbone Communication-Based Train Control (“CBTC”) equipment for the MTA’s R211 subway car fleet by Hitachi Rail GTS USA Inc. (“Hitachi”). MTA Construction & Development (“C&D”) requests Board ratification of a Contract modification to add the scope of designing, furnishing and supporting the installation of 5G-based Data Communication System equipment (“DCS”), on R211 subway cars.
+[p098_c0009] 5G-based DCS is a dramatic technological improvement over the wi-fi based DCS system that the MTA currently uses for radio communication between the carbone CBTC controllers and the wayside CBTC zone controllers. 5G provides enhanced transmission capacity for advanced operation and maintenance capabilities not available with the wi-fi based DCS system, and enables integration of new, state-of-the-art, cybersecurity features providing enhanced CBTC system protection and system resilience. Moreover, in contrast to the current wi-fi based system which is approaching obsolescence and will ultimately not be supported, 5G provides access to a competitive global radio equipment market, fostering vendor diversity, innovation and cost efficiency. For those reasons, MTA intends to use 5G-based DCS on its new CBTC installations.
+[p098_c0010] The 5G system is being implemented first on the Crosstown line. Thus, the R211 cars being acquired for operation on the Crosstown Line require the installation of a 5G DCS. As the CBTC controllers for these cars are already being provided by Hitachi under this Contract, obtaining the 5G DCS for these cars from Hitachi is the fastest and most cost-effective way to implement the new technology on the Crosstown line. Moreover, to advance this important work as quickly as possible, in June 2024, the President of MTA C&D authorized Hitachi to commence the development and rollout of the 5G DCS equipment. Hitachi has committed to completing the work under this Modification concurrently with its ongoing carbone CBTC work without impact to the Contract schedule.
+[p098_c0011] Hitachi submitted a cost proposal of $48,796,240 for the added work. Negotiations resulted in an agreed lump sum price of $47,000,000, which has been determined to be fair and reasonable.
+[p098_c0012] _Master Page # 98 of 98 - Capital Program Committee Meeting 7/28/2025_

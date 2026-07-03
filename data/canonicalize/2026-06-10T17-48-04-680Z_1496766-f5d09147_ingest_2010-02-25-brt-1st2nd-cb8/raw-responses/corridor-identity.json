@@ -1,0 +1,53 @@
+{
+  "run_id": "2026-06-10T17-48-04-680Z_1496766-f5d09147_ingest_2010-02-25-brt-1st2nd-cb8",
+  "packet_id": "corridor-identity",
+  "generated_at": "2026-06-10T19:33:42.004Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "canon_corridor_first_second_ave_sbs_cb8_2010",
+        "local_observation_id": "corridor_first_second_ave_sbs_cb8_2010",
+        "decision": "new",
+        "rationale": "Observation already resolves to base_record_id corridor_first-second-avenues-brt, which correctly identifies this corridor: First Avenue/Second Avenue from South Ferry to 125th Street, 8.5 miles, Manhattan. The source 2010_02_25_brt_1st2nd_cb8 is already listed in that record's source_ids and the payload matches exactly (streets, limits, borough). The closest match is the observation's own base_record_id, so new is the correct decision.",
+        "proposed_relations": [
+          {
+            "relation_kind": "same_corridor",
+            "subject_id": "corridor_first-second-avenues-brt",
+            "object_id": "corridor_first-second-ave-sbs",
+            "description": "Both records describe the same physical corridor: First Avenue/Second Avenue from South Ferry to 125th Street in Manhattan, part of the M15 Select Bus Service / BRT project. The records share identical limits, borough, and streets; they differ only in minor corridor_name phrasing and source provenance.",
+            "evidence_refs": [
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p006_c0004",
+                "source_quote": "8.5 miles from South Ferry to 125 th Street"
+              },
+              {
+                "source_id": "2010_02_25_brt_1st2nd_cb8",
+                "block_id": "p001_c0002",
+                "source_quote": "First Avenue/Second Avenue Select Bus Service"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p006_c0004",
+            "source_quote": "8.5 miles from South Ferry to 125 th Street"
+          },
+          {
+            "source_id": "2010_02_25_brt_1st2nd_cb8",
+            "block_id": "p001_c0002",
+            "source_quote": "First Avenue/Second Avenue Select Bus Service"
+          }
+        ]
+      }
+    ],
+    "packet_id": "corridor-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-32-18-828Z_1637391-0865112f_canonicalize_2026-06-10t17-48-04-680z-1496766-f5d09147-ingest-2010-02-25-brt-1st2nd-cb8-corridor-identity"
+}

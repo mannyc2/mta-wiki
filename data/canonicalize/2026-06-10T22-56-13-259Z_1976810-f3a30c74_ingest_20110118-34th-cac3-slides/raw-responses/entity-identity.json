@@ -1,0 +1,59 @@
+{
+  "run_id": "2026-06-10T22-56-13-259Z_1976810-f3a30c74_ingest_20110118-34th-cac3-slides",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T01:24:26.701Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "mta-nyct-new",
+        "local_observation_id": "entity_mta_new_york_city_transit_20110118",
+        "decision": "new",
+        "rationale": "Observation already resolves to its own base_record_id entity_mta-nyct, which is the correct canonical record for MTA New York City Transit. The registry card entity_mta-nyct matches on entity_name ('MTA New York City Transit'), entity_type ('agency' vs 'transit_agency'), and already lists source 20110118_34th_cac3_slides.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac3_slides",
+            "block_id": "p001_c0003",
+            "source_quote": "New York City Transit"
+          },
+          {
+            "source_id": "20110118_34th_cac3_slides",
+            "block_id": "p001_c0004",
+            "source_quote": "New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "fta-new",
+        "local_observation_id": "entity_federal_transit_administration_20110118",
+        "decision": "new",
+        "rationale": "Observation already resolves to its own base_record_id entity_federal-transit-administration-lga-aa, which is the correct canonical record for the Federal Transit Administration. The registry card matches on entity_name ('Federal Transit Administration'), acronym ('FTA'), and already lists source 20110118_34th_cac3_slides.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac3_slides",
+            "block_id": "p022_c0002",
+            "source_quote": "DOT applied for funding from the Federal Transit Administration (FTA)"
+          }
+        ]
+      },
+      {
+        "decision_id": "nyc-dot-new",
+        "local_observation_id": "entity_nyc_dot_20110118",
+        "decision": "new",
+        "rationale": "Observation already resolves to its own base_record_id entity_nyc-dot, which is the correct canonical record for the New York City Department of Transportation. The registry card matches on entity_name ('New York City Department of Transportation'), entity_type ('agency'), shortcut/acronym ('DOT'), and already lists source 20110118_34th_cac3_slides.",
+        "evidence_refs": [
+          {
+            "source_id": "20110118_34th_cac3_slides",
+            "block_id": "p001_c0005",
+            "source_quote": "The logo for the New York City Department of Transportation (NYC DOT)"
+          }
+        ]
+      }
+    ],
+    "packet_id": "entity-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-24-00-201Z_2111393-40a90c28_canonicalize_2026-06-10t22-56-13-259z-1976810-f3a30c74-ingest-20110118-34th-cac3-slides-entity-identity"
+}

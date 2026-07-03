@@ -1,0 +1,324 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch037-prep",
+  "created_at": "2026-06-23T03:45:00Z",
+  "author": "codex",
+  "scope": "relation endpoint-shape cleanup prep only; durable retire+replace mechanism planned but not applied",
+  "batch": "batch037",
+  "run_id_for_replacements": "2026-06-23_codex_relation_cleanup_batch037",
+  "submitted_at_for_dry_run": "2026-06-23T03:45:00Z",
+  "durable_mechanism_planned_not_applied": {
+    "retirements_target": "data/submission-overrides/retired.json",
+    "replacement_journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch037.jsonl",
+    "applied": false
+  },
+  "bucket": {
+    "name": "has_timeline_event metric-claim-to-event procurement schedule rows",
+    "original_relation_kind": "has_timeline_event",
+    "original_endpoint_shape": "metric_claim -> event",
+    "replacement_relation_kind": "supports",
+    "replacement_endpoint_shape": "event -> metric_claim",
+    "prepared_count": 2,
+    "why_coherent": "After excluding retired submissions, prior relation cleanup batches017-036, and missing-target repair work, the next top exact endpoint-shape bucket has two meeting_doc_95301 has_timeline_event rows where a $8.2M procurement metric claim is incorrectly used as the timeline subject for committee and board meeting events. Metric claims are not durable timeline owners. Replacing them with supports event -> metric_claim preserves the source-backed connection between each meeting event and the procurement amount."
+  },
+  "checkpoint_context": {
+    "method": "Read-only inventory over canonical JSONL with current endpoint-shape rules; excluded retired submissions, prior codex relation cleanup prep originals through batch036, and missing-target repair work. Did not run CLI validate, materialize, export-jsonl, DB repair/publish, or provider-backed commands.",
+    "remaining_endpoint_shape_inventory_after_exclusions": {
+      "total": 40,
+      "selected_bucket": "has_timeline_event metric_claim->event",
+      "selected_bucket_count": 2,
+      "prepared_count": 2,
+      "other_top_buckets": [
+        {
+          "bucket": "implemented_by route->entity",
+          "count": 2
+        },
+        {
+          "bucket": "part_of_program event->entity",
+          "count": 2
+        },
+        {
+          "bucket": "has_claim claim->claim",
+          "count": 1
+        },
+        {
+          "bucket": "has_claim treatment_component->claim",
+          "count": 1
+        }
+      ]
+    },
+    "endpoint_shape_probe": {
+      "has_timeline_event metric_claim->event": "Relation kind has_timeline_event expects project|route|corridor|entity|source|event -> event, got metric_claim -> event.",
+      "supports event->metric_claim": "accepted",
+      "has_metric event->metric_claim": "accepted",
+      "related_to event->metric_claim": "accepted"
+    }
+  },
+  "exclusions_and_guards": {
+    "excluded_batches": [
+      "batch017",
+      "batch018",
+      "batch019",
+      "batch020",
+      "batch021",
+      "batch022",
+      "batch023",
+      "batch024",
+      "batch025",
+      "batch026",
+      "batch027",
+      "batch028",
+      "batch029",
+      "batch030",
+      "batch031",
+      "batch032",
+      "batch033",
+      "batch034",
+      "batch035",
+      "batch036"
+    ],
+    "missing_target_repair_excluded": true,
+    "retired_json_not_edited": true,
+    "submission_journals_not_edited": true,
+    "generated_outputs_not_edited": true,
+    "db_not_edited": true,
+    "log_not_edited": true,
+    "manifest_merges_retired_not_edited": true,
+    "wiki_source_pages_not_edited": true,
+    "original_submission_guard": {
+      "retired_hits": [],
+      "prior_relation_batch_submission_hits": [],
+      "prior_relation_batch_record_hits": []
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": [],
+      "prior_review_note_submission_id_hits": [],
+      "prior_review_note_local_observation_id_hits": []
+    }
+  },
+  "local_validation": {
+    "tooling": "createSubmissionEntry dry run for replacement tool_args plus relationEndpointIssues using known local ids metric_claim_meeting_doc_95301_8_2m_procurement, event_meeting_doc_95301_board_20220921, and event_meeting_doc_95301_committee_20220919; relationEndpointShapeIssue checked for supports event->metric_claim.",
+    "summary": {
+      "prepared_count": 2,
+      "retire_replace_count": 2,
+      "retire_only_count": 0,
+      "accepted_replacement_count": 2,
+      "issue_count": 0,
+      "warning_count": 0,
+      "endpoint_shape_issue_count_after_replacement": 0
+    }
+  },
+  "command_evidence": [
+    {
+      "command": "test -f data/review_notes/codex-relation-cleanup-batch037-prep.json; echo $?",
+      "result": "1 before writing; artifact did not already exist."
+    },
+    {
+      "command": "endpoint-shape inventory script excluding retired submissions, cleanup batches017-036, and missing-target repair submissions",
+      "result": "Remaining unexpected_relation_endpoint_shape total was 40; selected exact bucket has_timeline_event metric_claim->event had count 2."
+    },
+    {
+      "command": "canonical JSONL inspection for relation_meeting-doc-95301-procurement-board-meeting, relation_meeting-doc-95301-procurement-committee-meeting, metric_meeting-doc-95301-8-2m-procurement, event_meeting-doc-95301-board-20220921, and event_meeting-doc-95301-committee-20220919",
+      "result": "Confirmed both originals are current canonical has_timeline_event metric_claim->event rows and confirmed endpoint local observation ids."
+    },
+    {
+      "command": "rg -n '\"block_id\":\"p003_c0001\"|\"block_id\":\"p003_c0009\"|\"block_id\":\"p002_c0003\"' raw/sources/meeting_doc_95301/blocks.jsonl",
+      "result": "Confirmed p003_c0001 contains Board Action schedule dates, p003_c0009 contains the Schedule H $8.2M amount, and p002_c0003 states the procurement agenda includes one action for an estimated $8.2M expenditure."
+    },
+    {
+      "command": "createSubmissionEntry dry run for two supports event->metric_claim replacements",
+      "result": "Both replacement entries accepted with no issues, no warnings, no relationEndpointIssues, and no endpoint-shape issue."
+    },
+    {
+      "command": "collision guard script over retired.json, data/submissions, and prior prep artifacts through batch036",
+      "result": "No original retired/prior hits and no replacement submission id or local observation id collisions."
+    }
+  ],
+  "forbidden_commands_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts export-jsonl",
+    "provider-backed ingest/write/ask commands",
+    "database repair or publish commands"
+  ],
+  "prepared": [
+    {
+      "retire": {
+        "submission_id": "sub_94089143e30d525a",
+        "original_record_id": "relation_meeting-doc-95301-procurement-board-meeting",
+        "original_local_observation_id": "relation_meeting_doc_95301_procurement_board_meeting",
+        "malformed_shape": "has_timeline_event metric_claim -> event",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_id": "metric_meeting-doc-95301-8-2m-procurement",
+        "original_subject_local_observation_id": "metric_claim_meeting_doc_95301_8_2m_procurement",
+        "original_subject_name": "Schedule H Procurement Amount - $8.2M",
+        "original_object_id": "event_meeting-doc-95301-board-20220921",
+        "original_object_local_observation_id": "event_meeting_doc_95301_board_20220921",
+        "original_object_name": "Board Meeting - September 21, 2022",
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_95301",
+            "evidence_id": "meeting_doc_95301#p003_c0001",
+            "source_path": "raw/sources/meeting_doc_95301/blocks.jsonl",
+            "page_number": 3,
+            "block_id": "p003_c0001",
+            "text_sha256": "sha256:c83cf994a837f0d6ae6c7419d58b5c478eb8acd7f605b9d5c9297c257237b4a6",
+            "text_source": "raw_text",
+            "source_quote": "Board Action Order To Date Approval Info Other 1 Committee 9/19/22 2 Board 9/21/22"
+          },
+          {
+            "source_id": "meeting_doc_95301",
+            "evidence_id": "meeting_doc_95301#p003_c0009",
+            "source_path": "raw/sources/meeting_doc_95301/blocks.jsonl",
+            "page_number": 3,
+            "block_id": "p003_c0009",
+            "text_sha256": "sha256:437e2fde485b68be19c5374efd111d594959f32a3a40bf353476d5aa36567150",
+            "text_source": "raw_text",
+            "source_quote": "Schedule H: Modifications to Personal/Miscellaneous Service Contracts 1 $ 8.2 M"
+          }
+        ],
+        "reason": "The original relation uses a metric_claim as a has_timeline_event subject. The source supports a Board meeting event scheduled for 9/21/22 and a related $8.2M procurement amount, not a metric-owned timeline event."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_b25d38bc21283268",
+        "proposed_relation_kind": "supports",
+        "proposed_endpoint_shape": "event -> metric_claim",
+        "tool_args": {
+          "source_id": "meeting_doc_95301",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch037_board_meeting_supports_8_2m_procurement",
+          "label": "Board meeting supports $8.2M procurement metric",
+          "raw_text": "Board Action Order: Board 9/21/22; Schedule H procurement amount $8.2M.",
+          "payload": {
+            "relation_kind": "supports",
+            "subject_local_observation_id": "event_meeting_doc_95301_board_20220921",
+            "object_local_observation_id": "metric_claim_meeting_doc_95301_8_2m_procurement",
+            "description": "Replacement for malformed has_timeline_event metric_claim -> event relation; source schedules the procurement action for Board action on 9/21/22 and states a $8.2M Schedule H procurement amount.",
+            "relation_family": "dependency_or_reference"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_95301",
+              "evidence_id": "meeting_doc_95301#p003_c0001",
+              "source_path": "raw/sources/meeting_doc_95301/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0001",
+              "text_sha256": "sha256:c83cf994a837f0d6ae6c7419d58b5c478eb8acd7f605b9d5c9297c257237b4a6",
+              "text_source": "raw_text",
+              "role": "event_metric_context",
+              "source_quote": "Board Action Order To Date Approval Info Other 1 Committee 9/19/22 2 Board 9/21/22"
+            },
+            {
+              "source_id": "meeting_doc_95301",
+              "evidence_id": "meeting_doc_95301#p003_c0009",
+              "source_path": "raw/sources/meeting_doc_95301/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0009",
+              "text_sha256": "sha256:437e2fde485b68be19c5374efd111d594959f32a3a40bf353476d5aa36567150",
+              "text_source": "raw_text",
+              "role": "event_metric_context",
+              "source_quote": "Schedule H: Modifications to Personal/Miscellaneous Service Contracts 1 $ 8.2 M"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue_after_replacement": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_fb604596fd499a14",
+        "original_record_id": "relation_meeting-doc-95301-procurement-committee-meeting",
+        "original_local_observation_id": "relation_meeting_doc_95301_procurement_committee_meeting",
+        "malformed_shape": "has_timeline_event metric_claim -> event",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_id": "metric_meeting-doc-95301-8-2m-procurement",
+        "original_subject_local_observation_id": "metric_claim_meeting_doc_95301_8_2m_procurement",
+        "original_subject_name": "Schedule H Procurement Amount - $8.2M",
+        "original_object_id": "event_meeting-doc-95301-committee-20220919",
+        "original_object_local_observation_id": "event_meeting_doc_95301_committee_20220919",
+        "original_object_name": "MTAHQ Committee Meeting - September 19, 2022",
+        "source_evidence": [
+          {
+            "source_id": "meeting_doc_95301",
+            "evidence_id": "meeting_doc_95301#p003_c0001",
+            "source_path": "raw/sources/meeting_doc_95301/blocks.jsonl",
+            "page_number": 3,
+            "block_id": "p003_c0001",
+            "text_sha256": "sha256:c83cf994a837f0d6ae6c7419d58b5c478eb8acd7f605b9d5c9297c257237b4a6",
+            "text_source": "raw_text",
+            "source_quote": "Board Action Order To Date Approval Info Other 1 Committee 9/19/22 2 Board 9/21/22"
+          },
+          {
+            "source_id": "meeting_doc_95301",
+            "evidence_id": "meeting_doc_95301#p003_c0009",
+            "source_path": "raw/sources/meeting_doc_95301/blocks.jsonl",
+            "page_number": 3,
+            "block_id": "p003_c0009",
+            "text_sha256": "sha256:437e2fde485b68be19c5374efd111d594959f32a3a40bf353476d5aa36567150",
+            "text_source": "raw_text",
+            "source_quote": "Schedule H: Modifications to Personal/Miscellaneous Service Contracts 1 $ 8.2 M"
+          }
+        ],
+        "reason": "The original relation uses a metric_claim as a has_timeline_event subject. The source supports a Committee meeting event scheduled for 9/19/22 and a related $8.2M procurement amount, not a metric-owned timeline event."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_fb91ffdd1fb975f2",
+        "proposed_relation_kind": "supports",
+        "proposed_endpoint_shape": "event -> metric_claim",
+        "tool_args": {
+          "source_id": "meeting_doc_95301",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch037_committee_meeting_supports_8_2m_procurement",
+          "label": "Committee meeting supports $8.2M procurement metric",
+          "raw_text": "Board Action Order: Committee 9/19/22; Schedule H procurement amount $8.2M.",
+          "payload": {
+            "relation_kind": "supports",
+            "subject_local_observation_id": "event_meeting_doc_95301_committee_20220919",
+            "object_local_observation_id": "metric_claim_meeting_doc_95301_8_2m_procurement",
+            "description": "Replacement for malformed has_timeline_event metric_claim -> event relation; source schedules the procurement action for Committee review on 9/19/22 and states a $8.2M Schedule H procurement amount.",
+            "relation_family": "dependency_or_reference"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_95301",
+              "evidence_id": "meeting_doc_95301#p003_c0001",
+              "source_path": "raw/sources/meeting_doc_95301/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0001",
+              "text_sha256": "sha256:c83cf994a837f0d6ae6c7419d58b5c478eb8acd7f605b9d5c9297c257237b4a6",
+              "text_source": "raw_text",
+              "role": "event_metric_context",
+              "source_quote": "Board Action Order To Date Approval Info Other 1 Committee 9/19/22 2 Board 9/21/22"
+            },
+            {
+              "source_id": "meeting_doc_95301",
+              "evidence_id": "meeting_doc_95301#p003_c0009",
+              "source_path": "raw/sources/meeting_doc_95301/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0009",
+              "text_sha256": "sha256:437e2fde485b68be19c5374efd111d594959f32a3a40bf353476d5aa36567150",
+              "text_source": "raw_text",
+              "role": "event_metric_context",
+              "source_quote": "Schedule H: Modifications to Personal/Miscellaneous Service Contracts 1 $ 8.2 M"
+            }
+          ]
+        },
+        "local_validation": {
+          "state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue_after_replacement": null
+        },
+        "confidence": "high"
+      }
+    }
+  ]
+}

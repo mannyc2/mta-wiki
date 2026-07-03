@@ -1,0 +1,31 @@
+{
+  "review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "reviewed_at": "2026-06-23T14:36:35.611Z",
+  "packet_path": "data/identity-review/packets/entity_cluster_a5b61bab52.md",
+  "cluster_id": "entity_cluster_a5b61bab52",
+  "kind": "entity",
+  "profile_name": "deepseek-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "attempt": 1,
+  "max_attempts": 2,
+  "suggestion": {
+    "cluster_id": "entity_cluster_a5b61bab52",
+    "kind": "entity",
+    "merge_groups": [
+      [
+        "entity_joint-lirr-metronorth-committee",
+        "entity_meeting157646-joint-committee"
+      ]
+    ],
+    "do_not_merge": [],
+    "weak_aliases": [],
+    "missing_fields": [],
+    "ambiguous": [],
+    "suggested_rules": [],
+    "confidence": "high",
+    "rationale": "Both records denote the same durable committee: Joint Long Island Rail Road and Metro-North Railroad Committee. The second record ('entity_meeting157646-joint-committee') is a lifecycle record (a meeting-specific snapshot) of the same entity, with only a minor pluralization variant in the displayed name ('Committees' vs 'Committee'). There is no contradiction in any strong identity field (both are committees). Per Identity Merge Canon test 2, the name difference is a source-local naming variation, and per the lifecycle rule, a lifecycle record merges into the base entity record. The shared identity key 'entity_joint-long-island-rail-rd-and-metro-north-railroad-committees' confirms the collision."
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-23T14-36-26-299Z_1282984-093472f5_identity-review-run_entity-cluster-a5b61bab52",
+  "session_path": "data/transcripts/sessions/--mnt-models-dev-mta-wiki--/2026-06-23T14-36-26-299Z_2026-06-23T14-36-26-299Z_1282984-093472f5_identity-review-run_entity-cluster-a5b61bab52.jsonl"
+}

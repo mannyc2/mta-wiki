@@ -1,0 +1,354 @@
+{
+  "run_id": "2026-06-10T22-56-13-315Z_1976810-4b04cae8_ingest_201106-hylan-slides",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T01:38:00.360Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "rel-trt-01-bus-lanes-hylan",
+        "local_observation_id": "treatment_bus_lanes_hylan_various",
+        "decision": "relate",
+        "rationale": "Evidence explicitly places a peak period bus lane on Hylan Boulevard from Old Town Road to Benton Avenue, the core corridor of the Hylan Boulevard Transportation Improvement Study.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p018_c0005",
+            "source_quote": "HYLAN BOULEVARD: OLD TOWN ROAD TO BENTON AVENUE"
+          },
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p018_c0007",
+            "source_quote": "Peak Period Bus Lane improves bus travel time reliability"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_bus-lanes-hylan-various",
+            "description": "Peak period bus lane under consideration on Hylan Boulevard from Old Town Road to Benton Avenue"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-trt-02-tsp-hylan",
+        "local_observation_id": "treatment_tsp_hylan_various",
+        "decision": "relate",
+        "rationale": "Evidence explicitly shows TSP locations at Hylan Boulevard near Benton Avenue and Richmond Avenue at Leverett Avenue, directly part of the Hylan Boulevard Transportation Improvement Study.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p018_c0010",
+            "source_quote": "A green dot on the west side of Hylan Boulevard, near Benton Avenue, indicates a Transit Signal Prioritization (TSP) location"
+          },
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p021_c0012",
+            "source_quote": "Transit Signal Prioritization (TSP): Indicated by a green dot at the intersection of Richmond Avenue and Leverett Avenue"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_tsp-hylan-various",
+            "description": "Transit Signal Priority at Hylan Boulevard near Benton Avenue and Richmond Avenue at Leverett Avenue"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-trt-03-advance-signal-hylan",
+        "local_observation_id": "treatment_advance_signal_hylan_various",
+        "decision": "relate",
+        "rationale": "Evidence places advance signals on Hylan Boulevard near Old Town Road and at Tysens Lane, directly within the Hylan Boulevard study corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p018_c0010",
+            "source_quote": "A purple dot on the east side of Hylan Boulevard, near Old Town Road, indicates an Advance Signal location"
+          },
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p019_c0009",
+            "source_quote": "a purple dot at the intersection of Tysons Lane and Hylan Boulevard (Advance Signal)"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_advance-signal-hylan-various",
+            "description": "Advance Signal at Hylan Boulevard near Old Town Road and at Tysens Lane"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-trt-04-bus-layby-hylan",
+        "local_observation_id": "treatment_bus_layby_hylan_tysens",
+        "decision": "relate",
+        "rationale": "Evidence places bus lay-by on Hylan Boulevard near Tysens Park Shopping Center, directly part of the Hylan Boulevard study.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p019_c0009",
+            "source_quote": "two blue dots on Hylan Boulevard near Tysons Park Shopping Center (Bus Lay-by)"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_bus-layby-hylan-tysens",
+            "description": "Bus lay-by on Hylan Boulevard near Tysens Park Shopping Center"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-trt-05-signal-timing-hylan",
+        "local_observation_id": "treatment_traffic_signal_timing_hylan_tysens",
+        "decision": "relate",
+        "rationale": "Evidence explicitly places traffic signal timing improvements on Hylan Boulevard from Ebbitts Street to Tysens Lane.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p019_c0004",
+            "source_quote": "HYLAN BOULEVARD: EBBITTS STREET TO TYSENS LANE"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_traffic-signal-timing-hylan-tysens",
+            "description": "Traffic signal timing improvements on Hylan Boulevard from Ebbitts Street to Tysens Lane"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-trt-06-median-hylan",
+        "local_observation_id": "treatment_widened_landscaped_median_hylan_cleveland",
+        "decision": "relate",
+        "rationale": "Evidence explicitly places widened and landscaped median on Hylan Boulevard from Cleveland Avenue to Wiman Avenue.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p020_c0005",
+            "source_quote": "HYLAN BOULEVARD: CLEVELAND AVENUE TO WIMAN AVENUE"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_widened-landscaped-median-hylan-cleveland",
+            "description": "Widened and landscaped median on Hylan Boulevard from Cleveland Avenue to Wiman Avenue"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-trt-07-ped-island-hylan",
+        "local_observation_id": "treatment_pedestrian_refuge_island_hylan_nelson",
+        "decision": "relate",
+        "rationale": "Evidence places pedestrian refuge island at the intersection of Hylan Boulevard and Nelson Avenue.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p020_c0015",
+            "source_quote": "An orange dot marks the 'Pedestrian Refuge Island' at the intersection of Hylan Boulevard and Nelson Avenue"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_pedestrian-refuge-island-hylan-nelson",
+            "description": "Pedestrian refuge island at Hylan Boulevard and Nelson Avenue"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-trt-08-queue-jump-hylan",
+        "local_observation_id": "treatment_queue_jump_hylan_cleveland",
+        "decision": "relate",
+        "rationale": "Evidence places queue jump at the intersection of Hylan Boulevard and Cleveland Avenue.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p020_c0015",
+            "source_quote": "A blue dot marks the 'Queue Jump' at the intersection of Hylan Boulevard and Cleveland Avenue"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_queue-jump-hylan-cleveland",
+            "description": "Queue jump at Hylan Boulevard and Cleveland Avenue"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-trt-09-bus-lanes-richmond",
+        "local_observation_id": "treatment_bus_lanes_richmond_avenue",
+        "decision": "relate",
+        "rationale": "Evidence explicitly places bus lanes on Richmond Avenue from Katan Avenue to Leverett Avenue, part of the Hylan/Richmond corridor study.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p021_c0005",
+            "source_quote": "RICHMOND AVENUE: KATAN AVENUE TO LEVERETT AVENUE"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_hylan-blvd-transportation-improvement-study",
+            "object_id": "treatment_bus-lanes-richmond-avenue",
+            "description": "Bus lanes on Richmond Avenue from Katan Avenue to Leverett Avenue"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-trt-10-simplified-service",
+        "local_observation_id": "treatment_simplified_service_pattern_toolbox",
+        "decision": "skip",
+        "rationale": "Evidence shows only a generic toolbox listing - the cited block merely lists 'Simplified Service Pattern' as a conceptual option in a bus service toolbox slide, not explicitly stating it is a treatment being implemented on the project.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p015_c0005",
+            "source_quote": "Simplified Service Pattern"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-trt-11-left-turn-bay",
+        "local_observation_id": "treatment_left_turn_bay_projects",
+        "decision": "skip",
+        "rationale": "The treatment references left-turn lane projects being implemented starting 2011 along Hylan Boulevard. However, the cited evidence blocks do not explicitly state this specific treatment is part of the Hylan Transportation Improvement Study treatment plan; it references ongoing separate projects.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p012_c0005",
+            "source_quote": "Left-Turn Lane Improvement Projects"
+          },
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p011_c0004",
+            "source_quote": "Build on the left-turn lane improvement projects being implemented starting 2011"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-trt-12-signal-timing-opt",
+        "local_observation_id": "treatment_signal_timing_optimization",
+        "decision": "skip",
+        "rationale": "Evidence shows only a generic toolbox listing - the cited block merely lists 'Signal Timing Optimization' as an item in a toolbox slide, not explicitly tying it to the project as a specific treatment.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p012_c0005",
+            "source_quote": "Signal Timing Optimization"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-trt-13-curb-bus-lane-toolbox",
+        "local_observation_id": "treatment_curb_or_offset_bus_lane_toolbox",
+        "decision": "skip",
+        "rationale": "Evidence shows only a generic toolbox listing - the cited block merely lists 'Curb Bus Lane or Offset Bus Lane' as a conceptual option on a toolbox slide, not explicitly tying it to a specific project treatment.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p015_c0005",
+            "source_quote": "Curb Bus Lane or Offset Bus Lane"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-trt-14-longer-stop-spacing",
+        "local_observation_id": "treatment_longer_stop_spacing_toolbox",
+        "decision": "skip",
+        "rationale": "Evidence shows only a generic toolbox listing - the cited block merely lists 'Longer Stop Spacing' as a conceptual option on a toolbox slide.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p015_c0005",
+            "source_quote": "Longer Stop Spacing"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-trt-15-streamlined-route",
+        "local_observation_id": "treatment_streamlined_route_path_toolbox",
+        "decision": "skip",
+        "rationale": "Evidence shows only a generic toolbox listing - the cited block merely lists 'Streamlined Route Path' as a conceptual option on a toolbox slide.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p015_c0005",
+            "source_quote": "Streamlined Route Path"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-trt-16-advanced-payment",
+        "local_observation_id": "treatment_advanced_payment_system_toolbox",
+        "decision": "skip",
+        "rationale": "Evidence shows only a generic toolbox listing - the cited block merely lists 'Advanced Payment System' as a conceptual option on a technology toolbox slide.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p016_c0005",
+            "source_quote": "Advanced Payment System"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-trt-17-real-time-info",
+        "local_observation_id": "treatment_real_time_bus_info_toolbox",
+        "decision": "skip",
+        "rationale": "Evidence shows only a generic toolbox listing - the cited block merely lists 'Real-time Bus Information' as a conceptual option on a technology toolbox slide.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p016_c0005",
+            "source_quote": "Real-time Bus Information"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-trt-18-sbs-fare-collection",
+        "local_observation_id": "treatment_sbs_advanced_fare_collection",
+        "decision": "skip",
+        "rationale": "Evidence shows only a generic listing - the cited block merely states 'Faster fare collection system' as a proposed SBS feature. This is a conceptual proposal component, not explicitly attached as an implemented treatment on the corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p022_c0006",
+            "source_quote": "Faster fare collection system"
+          }
+        ]
+      },
+      {
+        "decision_id": "skip-trt-19-ped-safety-toolbox",
+        "local_observation_id": "treatment_pedestrian_islands_sidewalks_medians",
+        "decision": "skip",
+        "rationale": "Evidence shows only a generic toolbox listing - the cited block merely lists 'Pedestrian Islands, Sidewalks, Wider Medians' as items in a toolbox slide. No specific evidence ties this to a particular treatment implementation on the corridor.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p012_c0005",
+            "source_quote": "Pedestrian Islands, Sidewalks, Wider Medians"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-34-41-887Z_2111393-409cf9b8_canonicalize_2026-06-10t22-56-13-315z-1976810-4b04cae8-ingest-201106-hylan-slides-treatment-relations"
+}

@@ -1,0 +1,46 @@
+{
+  "run_id": "2026-06-10T23-10-10-943Z_1976810-5d9cb416_ingest_2013-02-sbs-webster-bx-cb4",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T03:25:22.701Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "dec-entity-identity-001",
+        "local_observation_id": "entity_mta_nyct_2013_02_webster_cb4",
+        "decision": "new",
+        "rationale": "Observation refers to MTA New York City Transit (NYCT). The base_record_id entity_mta-nyct is the closest and only matching registry record — same entity_name ('New York City Transit' is the short form of 'MTA New York City Transit'), same entity_type 'agency', same acronym 'NYCT'. Since the closest match IS the observation's own base_record_id, the decision is new per identity-packet rules.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p001_c0001",
+            "source_quote": "New York City Transit"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-entity-identity-002",
+        "local_observation_id": "entity_community_board_4_bronx_2013",
+        "decision": "new",
+        "rationale": "Observation refers to Community Board 4 in the Bronx. The base_record_id entity_community-board-4-bronx-2013 already exists in the registry with identical payload (entity_name 'Community Board 4', entity_type 'community board', description 'Community Board 4 in the Bronx'). The source 2013_02_sbs_webster_bx_cb4 is already listed in the record's source_ids. Manhattan CB4 records are different entities (different borough). Since the closest match IS the observation's own base_record_id, the decision is new.",
+        "evidence_refs": [
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p001_c0003",
+            "source_quote": "Presentation to Community Board 4 | February 6, 2013"
+          },
+          {
+            "source_id": "2013_02_sbs_webster_bx_cb4",
+            "block_id": "p002_c0002",
+            "source_quote": "CB 4 design details"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-23-58-658Z_2111393-574e7c88_canonicalize_2026-06-10t23-10-10-943z-1976810-5d9cb416-ingest-2013-02-sbs-webster-bx-cb4-entity-identity"
+}

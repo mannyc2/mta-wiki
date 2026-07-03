@@ -1,0 +1,54 @@
+{
+  "run_id": "2026-06-10T22-56-13-237Z_1976810-594d84d9_ingest_2011-brt-34th-cb6-slides",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-11T01:21:30.462Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "route-identity",
+    "decisions": [
+      {
+        "decision_id": "dec-m34-sbs-new",
+        "local_observation_id": "route_m34_sbs_2011_11",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_m34-sbs matches existing registry record route_m34-sbs (M34/M34A on 34th Street Busway) with consistent payload: Manhattan, SBS variant, 34th Street corridor. No different target record indicated.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p023_c0002",
+            "source_quote": "M34 to be renamed M34 SBS"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-m34a-sbs-new",
+        "local_observation_id": "route_m34a_sbs_2011_11",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_m34a-sbs matches existing registry record route_m34a-sbs (M34A SBS on 34th Street Busway) with consistent payload: Manhattan, SBS variant, M34A designation. No different target record indicated.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p023_c0002",
+            "source_quote": "M16 to be renamed the M34A SBS for clearer passenger communication"
+          }
+        ]
+      },
+      {
+        "decision_id": "dec-m16-mentioned-new",
+        "local_observation_id": "route_m16_mentioned_2011_11",
+        "decision": "new",
+        "rationale": "Observation base_record_id route_m16-mentioned matches existing registry record route_m16-mentioned with consistent payload: M16 bus route on 34th Street, Manhattan, renamed to M34A SBS. No different target record indicated.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_brt_34th_cb6_slides",
+            "block_id": "p023_c0002",
+            "source_quote": "M16 to be renamed the M34A SBS"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-20-15-544Z_2111393-7bac9c01_canonicalize_2026-06-10t22-56-13-237z-1976810-594d84d9-ingest-2011-brt-34th-cb6-slides-route-identity"
+}

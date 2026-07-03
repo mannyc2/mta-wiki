@@ -1,0 +1,73 @@
+{
+  "id": "codex-entity-identity-key-prune-2026-06-30-o",
+  "created_at": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "provider_backed_llm_commands_used": false,
+  "forbidden_commands_used": [],
+  "canonical_jsonl_update_path": "not required; identity-key code/test change only",
+  "bucket": "entity_duplicate_identity_keys",
+  "baseline": {
+    "validation_issues": 0,
+    "entity_records": 1896,
+    "strong_duplicate_identity_key_groups_before": 2,
+    "pairwise_collisions_before": 4,
+    "open_identity_review_issues_before": 0
+  },
+  "implemented_changes": [
+    {
+      "change": "add reviewed broad entity key prunes for parent-shaped MTA records",
+      "affected_records": [
+        {
+          "record_id": "entity_meeting-doc-64066-mta",
+          "removed_identity_keys": [
+            "entity_mta"
+          ]
+        },
+        {
+          "record_id": "entity_mta-metropolitan-transportation-authority",
+          "removed_identity_keys": [
+            "entity_mta",
+            "entity_metropolitan-transportation-authority-mta"
+          ]
+        }
+      ],
+      "preserved_record": {
+        "record_id": "entity_mta-entity-update-2025",
+        "identity_keys_preserved": [
+          "entity_mta",
+          "entity_metropolitan-transportation-authority-mta"
+        ]
+      }
+    }
+  ],
+  "post_change_counts": {
+    "validation_issues": 0,
+    "entity_records": 1896,
+    "strong_duplicate_identity_key_groups_after": 0,
+    "pairwise_collisions_after": 0,
+    "open_identity_review_issues_after": 0
+  },
+  "tests": [
+    "bun test packages/db/test/identity.test.ts",
+    "bun run typecheck",
+    "bun --eval duplicate identity-key count script over data/canonical/entities.jsonl",
+    "bun packages/cli/src/cli.ts validate"
+  ],
+  "test_results": {
+    "identity": "26 pass, 120 expect() calls",
+    "typecheck": "pass",
+    "duplicate_identity_key_count": "0 groups, 0 pairwise collisions",
+    "validate": "Issues: 0"
+  },
+  "remaining_intentionally_unresolved": [
+    "Canonical entity count is unchanged; this removes false duplicate-key pressure only.",
+    "No open entity duplicate identity-review issues remain.",
+    "Advisory suppressed name-key groups such as MTA/CAC/IEC remain suppressed rather than merged."
+  ],
+  "next_lanes": [
+    "Fresh event_family other scout for the remaining 117 records.",
+    "Project document_time_status missing bucket now at 34.",
+    "Treatment adjusted noisy/actionable bucket remains 18 and needs aggregate/toolkit policy.",
+    "Optional relation supports repair refinement can move 13 records from dependency_or_reference to timeline_context while relation_family other stays 0."
+  ]
+}

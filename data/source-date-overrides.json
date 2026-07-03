@@ -1,0 +1,23 @@
+{
+  "_doc": "S2.2 reviewed source publication-date corrections (docs/step-2-implementation-plan.md §S2.2). Consulted at materialize time by source-date-backfill.ts at highest precedence. This is the sanctioned residue-resolution channel: add a reviewed date here rather than loosening normalizeDateText. Only `overrides` is read by code.",
+  "overrides": {
+    "14th_street_busway": {
+      "date": "2019",
+      "precision": "year",
+      "note": "14th St busway opened Oct 2019; corroborated by sibling source 14th_street_busway_brochure (staged documentDate 2019-10). Held to year precision — the page also references June 2020 monitoring.",
+      "reviewed_at": "2026-06-10"
+    }
+  },
+  "pending_review": {
+    "_comment": "source_undated residue after S2.2 deterministic (metadata documentDate + filename) + corroborated passes. These are evergreen/live/dataset-documentation pages with no single publication date — promoting any to `overrides` with a reviewed date is an owner call; otherwise they remain a legitimate source_undated gap (S2.8).",
+    "sources": [
+      "better_buses — evergreen NYC DOT bus page; blocks reference 2025/2026 events",
+      "busways — evergreen index; blocks span 2017-2021",
+      "brt_route_index — evergreen index; blocks span 2008-2014",
+      "sbs_features — evergreen feature page",
+      "capital_dashboard — live dashboard, no single publication date",
+      "ace_routes_dataset_dictionary — dataset documentation, undated",
+      "bus_lanes_dataset_dictionary — dataset documentation, undated"
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_meeting-doc-160436"
+record_kind: "source"
+display_name: "MTA NYCT 2025 Budget and 2025-2028 Financial Plan Adoption"
+source_id: "meeting_doc_160436"
+source_ids:
+  - "meeting_doc_160436"
+local_observation_id: "source_meeting_doc_160436"
+local_observation_ids:
+  - "source_meeting_doc_160436"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-20T20:35:55.360Z"
+raw_text: "Subject MTA NYCT 2025 Budget and 2025-2028 Financial Plan Adoption. Date December 9, 2024. Metropolitan Transportation Authority. Staff Summary."
+submission_ids:
+  - "sub_e4c85fbca8fa87b5"
+payload:
+  authority_tier: "board_material"
+  content_type: "Staff Summary"
+  date_text: "December 9, 2024"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2024-12-09"
+    precision: "day"
+    raw_text: "December 9, 2024"
+  description: "Staff Summary to secure MTA Board adoption of the MTA New York City Transit's 2024 November Forecast, 2025 Final Proposed Budget, and the Four-Year Financial Plan for 2025-2028"
+  published_date_normalized: "2024-12-09"
+  published_date_precision: "day"
+  publisher: "Metropolitan Transportation Authority"
+  title: "MTA NYCT 2025 Budget and 2025-2028 Financial Plan Adoption"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "meeting_doc_160436#p001_c0001"
+    page_number: 1
+    source_id: "meeting_doc_160436"
+    source_path: "raw/sources/meeting_doc_160436/blocks.jsonl"
+    text_sha256: "sha256:edb6ecac401fbe542450c24c81c922170a1c646501310015b0f5b6863a3586f9"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "meeting_doc_160436#p001_c0002"
+    page_number: 1
+    source_id: "meeting_doc_160436"
+    source_path: "raw/sources/meeting_doc_160436/blocks.jsonl"
+    text_sha256: "sha256:ec4da331c09e2061578a1964b23a90bdb7edf5115e31a65c01ad04c21487f1e4"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0004"
+    evidence_id: "meeting_doc_160436#p001_c0004"
+    page_number: 1
+    source_id: "meeting_doc_160436"
+    source_path: "raw/sources/meeting_doc_160436/blocks.jsonl"
+    text_sha256: "sha256:575138d45ac128006f89be53828e1573aa32965c34575e1a7b4875a39e83481e"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0005"
+    evidence_id: "meeting_doc_160436#p001_c0005"
+    page_number: 1
+    source_id: "meeting_doc_160436"
+    source_path: "raw/sources/meeting_doc_160436/blocks.jsonl"
+    text_sha256: "sha256:1522ed4fec8798c5806a1eaa6465e63e1d9b926d8d455e01cf299226ec6f5643"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0008"
+    evidence_id: "meeting_doc_160436#p001_c0008"
+    page_number: 1
+    source_id: "meeting_doc_160436"
+    source_path: "raw/sources/meeting_doc_160436/blocks.jsonl"
+    text_sha256: "sha256:28aa6ffcd51a4ad115e71b513291e4953ceb4155c07b8cd5dcf76ad235129f6c"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0009"
+    evidence_id: "meeting_doc_160436#p001_c0009"
+    page_number: 1
+    source_id: "meeting_doc_160436"
+    source_path: "raw/sources/meeting_doc_160436/blocks.jsonl"
+    text_sha256: "sha256:d5c85631281a0be3deeabce8781d8b7d5cefd219b0168e4582c67e9cbd9a86bd"
+    text_source: "raw_text"
+---
+
+# Proposed 2025 budget
+
+source_id: meeting_doc_160436
+citation: cite block ids exactly as shown in square brackets
+document: 45 block(s)
+
+## Page 1
+
+### [p001_c0001] Staff Summary
+### [p001_c0002] Metropolitan Transportation Authority
+### [p001_c0003] Page 1 of 2
+[p001_c0004]
+
+```text
+Subject MTA NYCT 2025 Budget and 2025-2028 Financial Plan Adoption Department Office of the Chief Financial Officer Department Head Name Kevin Willens, Chief Financial Officer Department Head Signature Project Manager/Division Head David Keller, OMB
+```
+[p001_c0005]
+
+```text
+Date December 9, 2024 Vendor Name Contract Number Contract Manager Name Table of Contents Ref #
+```
+[p001_c0006]
+
+```text
+Board Action Order To Date Approval Info Other 1 NYCT Comm. 12/16 X 2 Finance Comm. 12/16 X 3 Board 12/18 X
+```
+[p001_c0007]
+
+```text
+Internal Approvals Order Approval Order Approval 1 OMB 2 Financial Liaison 3 NYCT President
+```
+### [p001_c0008] Purpose:
+[p001_c0009] To secure MTA Board adoption of the MTA New York City Transit's 2024 November Forecast, 2025 Final Proposed Budget, and the Four-Year Financial Plan for 2025-2028.
+### [p001_c0010] Discussion:
+[p001_c0011] The 2025 Final Proposed Budget, which is consistent with information presented to the Board in November 2024, provides funding to maintain New York City Transit's commitment to delivering safe, secure, and reliable transportation and first-class customer service. The NYCT projections do not include MTA consolidated below-the-line adjustments, including the estimated impacts of projected fare increases, which are presented as part of MTA consolidated materials.
+[p001_c0012] The November Financial Plan reflects additional annual operating savings of $35 million beginning in 2025, including initiatives targeting headcount and overtime optimization, maintenance productivity, and enhanced energy efficiencies to reduce consumption and associated costs among others.
+[p001_c0013] The 2025 Final Proposed Budget reflects key initiatives deemed essential to providing safe and reliable service to customers while ensuring assets remain in a state of good repair. Among the initiatives included are:
+- [p001_c0014] • Queens Bus network redesign focused on simplifying and improving service for customers with more reliable service, faster travel, better connections, and improved ease of use. • Accessibility improvements at 13 stations to comply with the requirements of the Americans with Disabilities Act (the "ADA"), including major maintenance and lifecycle improvements. • Software support to further integrate OMNY at NYCT. • Expanded use of Fire Protection Specialists to meet increased project demands and conform to applicable policies and procedures.
+### [p001_c0015] 2024 November Forecast – Baseline
+[p001_c0016] Farebox revenue is forecasted at $3,505.4 million. In addition, Non-Reimbursable revenue includes $2,300 million of federal formula funding that is applied to capital. Total Non-Reimbursable expenses are projected to
+
+## Page 2
+
+### [p002_c0001] Staff Summary
+### [p002_c0002] Metropolitan Transportation Authority
+### [p002_c0003] Page 2 of 2
+[p002_c0004] be $10,216.3 million, consisting of labor expenses of $7,680.5 million and non-labor expenses of $2,535.8 million, with non-cash liability adjustments of $2,349.7 million. Projected Reimbursable expenses of $1,433.3 million are fully offset by capital reimbursements. Total baseline full-time and full-time equivalent positions are 50,286 including 45,234 Non-Reimbursable positions and 5,052 Reimbursable positions.
+### [p002_c0005] 2025 Final Proposed Budget – Baseline
+[p002_c0006] Total Non-Reimbursable revenues are projected at $4,413.5 million, including farebox revenues of $3,636.7 million. Total Non-Reimbursable expenses are projected to be $10,603.9 million, consisting of labor expenses of $8,069.4 million and non-labor expenses of $2,534.4 million, with non-cash liability adjustments of $2,369.7 million. Projected Reimbursable expenses of $1,411.7 million are fully offset by capital reimbursements. Total end-of-year positions are projected at 50,099 including 45,342 Non-Reimbursable positions and 4,757 Reimbursable positions.
+### [p002_c0007] Impact on Funding
+[p002_c0008] The 2024 November Forecast, the 2025 Final Proposed Budget and the Four-Year Financial Plan for 2025-2028, which are presented in the attached tables, are consistent with the proposed MTA Financial Plan.
+### [p002_c0009] Recommendation:
+[p002_c0010] It is recommended that the MTA Board adopt the 2024 November Forecast, the 2025 Final Proposed Budget, and the Four-Year Financial Plan for 2025-2028 for MTA New York City Transit.
+
+## Page 3
+
+### [p003_c0001] MTA NEW YORK CITY TRANSIT November Financial Plan 2025 - 2028 Accrual Statement of Operations By Category ($ in millions)
+[p003_c0002]
+
+```text
+Actual 2023 November Forecast 2024 Final Proposed Budget 2025 2026 2027 2028 Non-Reimbursable Operating Revenue Farebox Revenue: Subway $2,645,967 $2,818,434 $2,911,756 $2,984,465 $3,034,421 $3,077,584 Bus 623,984 612,945 660,908 704,738 741,607 762,739 Paratransit 22,175 26,168 26,240 27,552 28,930 30,376 Fare Media Liability 56,838 47,863 37,795 30,929 13,060 1,124 Farebox Revenue $3,348,983 $3,505,410 $3,636,699 $3,747,684 $3,818,018 $3,871,824 Other Operating Revenue: Fare Reimbursement 84,021 84,016 84,016 84,016 84,016 84,016 Paratransit Reimbursement 380,178 513,783 503,584 556,880 596,067 635,434 Other 192,949 2,517,589 189,197 189,064 180,879 184,212 Other Operating Revenue $657,149 $3,115,389 $776,796 $829,960 $860,961 $903,663 Capital and Other Reimbursements 0.000 0.000 0.000 0.000 0.000 0.000 Total Revenues $4,006,111 $6,620,799 $4,413,495 $4,577,644 $4,678,979 $4,775,486 Operating Expense Labor: Payroll $3,758,240 $3,886,399 $4,155,891 $4,238,596 $4,310,907 $4,412,587 Overtime 725,184 680,353 468,988 482,736 492,463 501,943 Total Salaries and Wages $4,484,423 $4,566,753 $4,624,879 $4,721,332 $4,803,370 $4,914,530 Health and Welfare 1,105,044 1,228,367 1,381,190 1,477,888 1,574,482 1,693,248 OPEB Current Payments 606,503 632,431 686,200 749,140 817,485 891,981 Pension 871,781 932,354 1,036,986 1,101,679 1,160,839 1,205,821 Other Fringe Benefits 615,655 625,035 635,811 677,992 726,690 771,681 Total Fringe Benefits $3,198,984 $3,418,187 $3,740,187 $4,006,699 $4,279,496 $4,562,731 Reimbursable Overhead (283,713) (304,408) (295,630) (296,053) (282,281) (286,577) Total Labor Expenses $7,399,694 $7,880,532 $8,069,436 $8,431,978 $8,800,585 $9,190,684 Non-Labor: Electric Power $302,015 $333,336 $350,682 $377,976 $386,729 $405,279 Fuel 131,496 126,006 132,338 138,398 137,381 139,167 Insurance 71,990 77,831 84,470 86,133 92,729 100,025 Claims 243,770 242,447 236,281 241,219 246,326 251,587 Paratransit Service Contracts 517,151 614,233 616,778 649,124 682,719 728,607 Maintenance and Other Operating Contracts 330,812 398,028 314,097 279,678 290,503 297,892 Professional Services Contracts 180,467 256,002 283,967 303,679 326,785 288,832 Materials and Supplies 343,150 356,306 367,051 370,759 366,649 383,999 Other Business Expenses 143,720 131,576 148,773 154,805 162,101 164,888 Total Non-Labor Expenses $2,264,570 $2,535,765 $2,534,418 $2,601,771 $2,691,922 $2,760,276 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $9,664,264 $10,216,297 $10,803,854 $11,033,749 $11,492,507 $11,950,960 Depreciation $2,174,449 $2,177,000 $2,192,000 $2,209,000 $2,227,000 $2,245,000 GASB 49 Environmental Remediation 33,051 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 8,984 (324,000) (324,000) (324,000) (324,000) (324,000) GASB 75 OPEB Expense Adjustment 470,708 489,000 494,000 504,000 509,000 514,000 GASB 87 Lease Adjustment 14,903 7,722 7,722 7,722 7,722 7,722 GASB 96 SBITA Adjustment 0.401 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $2,702,495 $2,349,722 $2,369,722 $2,396,722 $2,419,722 $2,442,722 Total Expenses $12,366,759 $12,566,019 $12,973,576 $13,430,471 $13,912,229 $14,393,682 Net Surplus/(Deficit) ($8,360,648) ($5,945,219) ($8,560,081) ($8,852,827) ($9,233,249) ($9,618,196)
+```
+
+## Page 4
+
+### [p004_c0001] MTA NEW YORK CITY TRANSIT November Financial Plan 2025 - 2028 Accrual Statement of Operations By Category ($ in millions)
+[p004_c0002]
+
+```text
+Actual 2023 November Forecast 2024 Final Proposed Budget 2025 2026 2027 2028 Reimbursable Operating Revenue Farebox Revenue $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Other Operating Revenue 0.000 0.000 0.000 0.000 0.000 0.000 Capital and Other Reimbursements 1,239,406 1,433,273 1,411,705 1,416,075 1,372,291 1,392,338 Total Revenues $1,239,406 $1,433,273 $1,411,705 $1,416,075 $1,372,291 $1,392,338 Operating Expense Labor: Payroll $417,096 $522,886 $541,384 $537,507 $522,139 $528,137 Overtime 172,310 193,922 163,258 166,906 162,831 166,089 Total Salaries and Wages $589,406 $716,708 $704,642 $704,414 $684,970 $694,227 Health and Welfare 18,458 28,320 19,703 21,337 23,205 25,162 OPEB Current Payments 14,814 14,351 15,309 16,395 17,536 18,758 Pension 34,516 38,699 38,069 40,538 41,831 42,894 Other Fringe Benefits 191,834 219,982 234,614 233,736 225,150 227,808 Total Fringe Benefits $259,623 $301,352 $307,695 $312,006 $307,722 $314,621 Reimbursable Overhead 283,713 304,408 295,630 296,053 282,281 286,577 Total Labor Expenses $1,132,742 $1,322,468 $1,307,968 $1,312,472 $1,274,973 $1,295,425 Non-Labor: Electric Power $0.283 $0.252 $0.252 $0.252 $0.252 $0.252 Fuel 0.320 0.321 0.198 0.198 0.198 0.198 Insurance 0.000 0.000 0.000 0.000 0.000 0.000 Claims 0.000 0.000 0.000 0.000 0.000 0.000 Paratransit Service Contracts 0.000 0.000 0.000 0.000 0.000 0.000 Maintenance and Other Operating Contracts 39,952 38,181 37,141 36,991 35,991 35,991 Professional Services Contracts 17,005 13,735 9,846 9,846 9,846 9,846 Materials and Supplies 49,878 56,867 57,064 57,064 51,763 51,342 Other Business Expenses (0.775) 1,450 (0.764) (0.748) (0.732) (0.716) Total Non-Labor Expenses $106,664 $110,805 $103,737 $103,603 $97,318 $96,913 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation $1,239,406 $1,433,273 $1,411,705 $1,416,075 $1,372,291 $1,392,338 Total Non-Cash Liability Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Net Surplus/(Deficit) $0.000 $0.000 $0.000 $0.000 $0.000 $0.000
+```
+
+## Page 5
+
+### [p005_c0001] MTA NEW YORK CITY TRANSIT November Financial Plan 2025 - 2028 Accrual Statement of Operations By Category ($ in millions)
+[p005_c0002]
+
+```text
+Actual 2023 November Forecast 2024 Final Proposed Budget 2025 2026 2027 2028 Non-Reimbursable / Reimbursable Operating Revenue Farebox Revenue: Subway $2,645,967 $2,818,434 $2,911,756 $2,984,465 $3,034,421 $3,077,584 Bus 623,984 612,945 660,908 704,738 741,607 762,739 Paratransit 22,175 26,168 26,240 27,552 28,930 30,376 Fare Media Liability 56,838 47,863 37,795 30,929 13,060 1,124 Farebox Revenue $3,348,983 $3,505,410 $3,636,699 $3,747,684 $3,818,018 $3,871,824 Other Operating Revenue: Fare Reimbursement 84,021 84,016 84,016 84,016 84,016 84,016 Paratransit Reimbursement 380,178 513,783 503,584 556,880 596,067 635,434 Other 192,949 2,517,589 189,197 189,064 180,879 184,212 Other Operating Revenue $657,149 $3,115,389 $776,796 $829,960 $860,961 $903,663 Capital and Other Reimbursements 1,239,406 1,433,273 1,411,705 1,416,075 1,372,291 1,392,338 Total Revenues $5,245,517 $8,054,072 $5,825,199 $5,993,719 $6,051,270 $6,167,824 Operating Expense Labor: Payroll $4,176,336 $4,409,285 $4,697,275 $4,776,103 $4,833,046 $4,940,725 Overtime 897,494 874,175 632,246 649,642 655,294 668,032 Total Salaries and Wages $5,073,830 $5,283,460 $5,329,521 $5,425,745 $5,488,339 $5,608,757 Health and Welfare 1,123,502 1,256,687 1,400,892 1,499,225 1,597,686 1,718,410 OPEB Current Payments 621,318 646,782 701,510 765,535 835,021 910,739 Pension 906,297 971,054 1,075,056 1,142,217 1,202,671 1,248,715 Other Fringe Benefits 807,490 845,017 870,426 911,728 951,840 999,489 Total Fringe Benefits $3,458,607 $3,719,539 $4,047,883 $4,318,705 $4,587,218 $4,877,352 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenses $8,532,436 $9,002,999 $9,377,404 $9,744,450 $10,075,557 $10,486,109 Non-Labor: Electric Power $302,298 $333,588 $350,934 $378,228 $386,981 $405,531 Fuel 131,816 126,327 132,536 138,596 137,579 139,365 Insurance 71,990 77,831 84,470 86,133 92,729 100,025 Claims 243,770 242,447 236,261 241,219 246,326 251,587 Paratransit Service Contracts 517,151 614,233 616,778 649,124 682,719 728,607 Maintenance and Other Operating Contracts 370,764 436,208 351,238 316,669 326,493 333,882 Professional Services Contracts 197,472 269,737 293,814 313,525 336,632 298,679 Materials and Supplies 393,028 413,173 424,115 427,823 418,412 435,340 Other Business Expenses 142,945 133,026 148,009 154,057 161,368 164,172 Total Non-Labor Expenses $2,371,234 $2,646,571 $2,638,154 $2,705,374 $2,789,240 $2,857,189 Other Expense Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenses Before Depreciation and GASB Adjs. $10,903,670 $11,649,570 $12,015,558 $12,449,824 $12,864,797 $13,343,298 Depreciation $2,174,449 $2,177,000 $2,192,000 $2,209,000 $2,227,000 $2,245,000 GASB 49 Environmental Remediation 33,051 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 8,984 (324,000) (324,000) (324,000) (324,000) (324,000) GASB 75 OPEB Expense Adjustment 470,708 489,000 494,000 504,000 509,000 514,000 GASB 87 Lease Adjustment 14,903 7,722 7,722 7,722 7,722 7,722 GASB 96 SBITA Adjustment 0.401 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $2,702,495 $2,349,722 $2,369,722 $2,396,722 $2,419,722 $2,442,722 Total Expenses $13,606,165 $13,999,291 $14,385,280 $14,846,546 $15,284,519 $15,786,020 Net Surplus/(Deficit) ($8,360,648) ($5,945,219) ($8,560,081) ($8,852,827) ($9,233,249) ($9,618,196)
+```
+
+## Page 6
+
+### [p006_c0001] MTA NEW YORK CITY TRANSIT November Financial Plan 2025 - 2028 Cash Receipts and Expenditures ($ in millions)
+[p006_c0002]
+
+```text
+Actual 2023 November Forecast 2024 Final Proposed Budget 2025 2026 2027 2028 Cash Receipts and Expenditures Receipts Farebox Revenue $3,348,150 $3,505,610 $3,636,899 $3,747,884 $3,818,218 $3,872,024 Other Operating Revenue: Fare Reimbursement 84,052 54,016 84,016 84,016 84,016 84,016 Paratransit Reimbursement 399,735 520,511 503,101 556,281 595,958 635,321 Other Revenue 377,207 217,589 189,197 189,064 180,879 184,212 Other Operating Revenue 860,994 792,116 776,313 829,361 860,853 903,550 Capital and Other Reimbursements 1,098,424 1,736,442 1,415,602 1,414,279 1,380,521 1,387,286 Total Receipts $5,307,568 $6,034,169 $5,828,813 $5,991,524 $6,059,592 $6,162,840 Expenditures Labor: Payroll $4,183,976 $4,357,615 $4,853,926 $4,737,899 $4,793,818 $4,885,454 Overtime 897,494 874,175 832,246 649,642 655,294 668,032 Total Salaries & Wages $5,081,470 $5,231,790 $5,486,172 $5,387,541 $5,449,112 $5,553,486 Health and Welfare 1,065,131 1,282,990 1,386,169 1,483,397 1,581,898 1,701,437 OPEB Current Payments 621,318 646,782 701,510 765,535 835,021 910,739 Pension 1,068,581 952,867 988,236 1,096,327 1,202,671 1,248,715 Other Fringe Benefits 606,449 624,738 650,692 661,131 683,826 711,719 Total Fringe Benefits $3,361,479 $3,507,377 $3,726,806 $4,008,390 $4,303,416 $4,572,809 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $8,442,949 $8,739,168 $9,212,778 $9,393,931 $9,752,528 $10,126,095 Non-Labor: Electric Power $309,722 $344,510 $361,856 $389,150 $397,903 $416,453 Fuel 134,047 126,327 132,536 138,596 137,579 139,365 Insurance 57,834 111,395 82,584 86,730 93,597 103,168 Claims 170,289 161,463 155,277 160,235 165,342 170,603 Paratransit Service Contracts 509,778 612,233 614,778 647,124 680,719 726,607 Maintenance and Other Operating Contracts 347,202 455,208 351,238 316,669 326,493 333,882 Professional Services Contracts 167,210 260,737 284,814 304,525 327,632 289,679 Materials and Supplies 393,726 398,176 419,615 423,323 413,912 430,840 Other Business Expenses 133,626 133,026 148,009 154,057 161,368 164,172 Total Non-Labor Expenditures $2,223,434 $2,603,076 $2,550,706 $2,620,409 $2,704,546 $2,774,770 Other Expenditure Adjustments: Other $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $10,666,383 $11,342,243 $11,763,485 $12,014,340 $12,457,074 $12,900,865 Net Cash Balance ($5,358,815) ($5,308,075) ($5,934,671) ($6,022,816) ($6,397,482) ($6,738,025)
+```
+
+## Page 7
+
+### [p007_c0001] MTA NEW YORK CITY TRANSIT November Financial Plan 2025 - 2028 Cash Conversion (Cash Flow Adjustments) ($ in millions)
+[p007_c0002]
+
+```text
+Actual 2023 November Forecast 2024 Final Proposed Budget 2025 2026 2027 2028 Cash Flow Adjustments Receipts Farebox Revenue ($0,813) $0,200 $0,200 $0,200 $0,200 $0,200 Other Operating Revenue: Fare Reimbursement 0.031 (30,000) 0.000 0.000 0.000 0.000 Paratransit Reimbursement 19,557 6,727 (0,483) (0,599) (0,108) (0,113) Other Revenue 184,258 (2,300,000) 0.000 0.000 0.000 0.000 Other Operating Revenue $203,845 ($2,323,273) ($0,483) ($0,599) ($0,108) ($0,113) Capital and Other Reimbursements (140,982) 303,169 3,897 (1,796) 8,231 (5,071) Total Receipts $62,051 ($2,019,903) $3,614 ($2,195) $8,322 ($4,984) Expenditures Labor: Payroll ($7,640) $51,670 ($156,651) $38,204 $39,227 $55,271 Overtime 0.000 0.000 0.000 0.000 0.000 0.000 Total Salaries and Wages ($7,640) $51,670 ($156,651) $38,204 $39,227 $55,271 Health and Welfare 58,371 (26,304) 14,723 15,828 15,788 16,973 OPEB Current Payments 0.000 0.000 0.000 0.000 0.000 0.000 Pension (162,284) 18,187 86,820 45,890 0.000 0.000 Other Fringe Benefits 201,041 220,278 219,733 250,597 268,014 287,770 Total Fringe Benefits $97,128 $212,161 $321,276 $312,315 $283,802 $304,743 Contribution to GASB Fund 0.000 0.000 0.000 0.000 0.000 0.000 Reimbursable Overhead 0.000 0.000 0.000 0.000 0.000 0.000 Total Labor Expenditures $89,487 $263,831 $164,626 $350,519 $323,029 $360,014 Non-Labor: Electric Power ($7,424) ($10,922) (10,922) ($10,922) ($10,922) ($10,922) Fuel (2,231) 0.000 0.000 0.000 0.000 0.000 Insurance 14,156 (33,564) 1,886 (0,597) (0,868) (3,143) Claims 73,481 80,984 80,984 80,984 80,984 80,984 Paratransit Service Contracts 7,373 2,000 2,000 2,000 2,000 2,000 Maintenance and Other Operating Contracts 23,562 (19,000) 0.000 0.000 0.000 0.000 Professional Services Contracts 30,262 9,000 9,000 9,000 9,000 9,000 Materials and Supplies (0,698) 14,997 4,500 4,500 4,500 4,500 Other Business Expenses 9,319 0.000 0.000 0.000 0.000 0.000 Total Non-Labor Expenditures $147,800 $43,495 $87,448 $84,965 $84,694 $82,419 Other Expenditure Adjustments: Other Expense Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Other Expenditure Adjustments $0.000 $0.000 $0.000 $0.000 $0.000 $0.000 Total Expenditures $237,287 $307,326 $252,074 $435,484 $407,723 $442,433 Total Cash Conversion Adjustments before Depreciation $299,338 ($1,712,577) $255,685 $433,290 $416,046 $437,449 Depreciation $2,174,449 $2,177,000 $2,192,000 $2,209,000 $2,227,000 $2,245,000 GASB 49 Environmental Remediation 33,051 0.000 0.000 0.000 0.000 0.000 GASB 68 Pension Expense Adjustment 8,984 (324,000) (324,000) (324,000) (324,000) (324,000) GASB 75 OPEB Expense Adjustment 470,708 489,000 494,000 504,000 509,000 514,000 GASB 87 Lease Adjustment 14,903 7,722 7,722 7,722 7,722 7,722 GASB 96 SBITA Adjustment 0.401 0.000 0.000 0.000 0.000 0.000 Total Non-Cash Liability Adjustments $2,702,495 $2,349,722 $2,369,722 $2,396,722 $2,419,722 $2,442,722 Total Cash Conversion Adjustments $3,001,833 $637,145 $2,625,410 $2,830,012 $2,835,768 $2,880,171
+```
+
+## Page 8
+
+### [p008_c0001] MTA NEW YORK CITY TRANSIT November Financial Plan 2025 - 2028 Ridership (Utilization) and Revenue (in millions)
+### [p008_c0002] RIDERSHIP
+[p008_c0003]
+
+```text
+Actual 2023 November Forecast 2024 Final Proposed Budget 2025 2026 2027 2028 Subway 1,151.998 1,194.753 1,243.796 1,274.843 1,296.211 1,314.722 Bus 340.766 321.583 348.413 371.516 390.951 402.096 Paratransit 11.066 13.160 13.268 13.931 14.628 15.359 Total Ridership 1,503.830 1,529.495 1,605.476 1,660.290 1,701.790 1,732.177
+```
+### [p008_c0004] FAREBOX REVENUE (Excluding fare media liability)
+[p008_c0005]
+
+```text
+Subway $2,645.987 $2,818.434 $2,911.756 $2,984.465 $3,034.421 $3,077.584 Bus 623.984 612.945 660.908 704.738 741.607 762.739 Paratransit 22.175 26.168 26.240 27.552 28.930 30.376 Total Revenue $3,292.125 $3,457.547 $3,598.904 $3,716.755 $3,804.958 $3,870.700
+```
+
+## Page 9
+
+### [p009_c0001] MTA New York City Transit November Financial Plan 2025 - 2028 Total Positions by Function and Department Non-Reimbursable/Reimbursable and Full-Time/Full-Time Equivalents
+[p009_c0002]
+
+```text
+2023 Actual 2024 November Forecast 2025 2026 2027 2028 Administration Office of the President 11 14 15 15 15 15 Law 170 249 246 246 246 246 Office of the EVP 8 20 21 21 21 21 Human Resources 85 120 120 120 120 120 EEO 1 11 11 11 11 11 Office of Management and Budget 9 33 33 33 33 33 Strategy & Customer Experience 128 165 165 165 165 165 Non-Departmental - (120) (90) (54) (36) (26) Labor Relations 43 89 89 89 89 89 Office of People & Business Transformation 16 13 13 13 13 13 Materiel 111 150 150 146 146 146 Controller 78 108 108 108 108 108 Total Administration 660 854 883 915 933 943 Operations Subways Operation Support /Admin 410 426 426 426 426 426 Subways Service Delivery 8,425 8,723 8,935 8,930 8,855 8,848 Subways Stations 2,321 2,305 2,305 2,305 2,305 2,305 Subtotal - Subways 11,157 11,454 11,666 11,661 11,586 11,539 Buses 11,080 11,536 11,539 11,539 11,539 11,539 Paratransit 167 191 192 192 192 192 Operations Planning 301 377 369 365 361 361 Revenue Control 490 560 520 505 505 505 Non-Departmental - 41 38 38 38 38 Total Operations 23,195 24,159 24,324 24,300 24,221 24,214 Maintenance Subways Operation Support /Admin 118 169 179 174 150 135 Subways Service Delivery 68 82 82 82 82 82 Subways Engineering 304 376 379 347 320 299 Subways Car Equipment 5,018 5,228 5,361 5,333 5,337 5,405 Subways Infrastructure 1,433 1,369 1,346 1,336 1,188 1,188 Subways Elevator & Escalators 382 413 428 428 428 428 Subways Stations 2,533 2,640 2,579 2,559 2,559 2,559 Subways Facilities 1,268 1,660 1,728 1,694 1,649 1,648 Subways Track 3,136 3,253 3,240 3,240 3,142 3,142 Subways Power 618 654 629 618 599 599 Subways Signals 1,672 1,742 1,726 1,726 1,704 1,699 Subways Electronics Maintenance 1,329 1,667 1,448 1,334 1,334 1,334 Subways Electronics Maintenance 17,880 19,256 19,126 18,872 18,493 18,519 Buses 3,301 3,499 3,557 3,507 3,453 3,453 Supply Logistics 485 524 524 524 524 524 System Safety 70 86 90 89 89 89 OHS 62 76 76 76 76 76 Non-Departmental 19 (227) (238) (191) (140) (129) Total Maintenance 21,817 23,214 23,135 22,877 22,495 22,532 Engineering/Capital Construction & Development 756 1,155 833 833 833 833 Matrixed C & D Support 98 85 84 84 84 84 Total Engineering/Capital 854 1,240 917 917 917 917 Public Safety Security 672 820 840 835 835 835 Total Public Safety 672 820 840 835 835 835 Total Baseline Positions 47,197 50,286 50,099 49,844 49,401 49,441 Non-Reimbursable 43,491 45,234 45,342 45,244 45,094 45,162 Reimbursable 3,706 5,052 4,757 4,600 4,307 4,279 Total Full-Time 47,073 50,123 49,942 49,687 49,244 49,284 Total Full-Time Equivalents 124 163 157 157 157 157
+```
+
+## Page 10
+
+### [p010_c0001] MTA NEW YORK CITY TRANSIT November Financial Plan 2025 - 2028 Total Positions By Function and Occupational Group
+[p010_c0002]
+
+```text
+FUNCTION / OCCUPATIONAL GROUP Actual November Final 2023 Forecast 2024 Proposed Budget 2025 2026 2027 2028 Administration Managers/Supervisors 156 306 301 305 317 318 Professional/Technical/Clerical 487 524 558 586 592 601 Operational Hourlies 17 24 24 24 24 24 Total Administration Headcount 660 854 883 915 933 943 Operations Managers/Supervisors 2,761 2,935 2,913 2,902 2,898 2,891 Professional/Technical/Clerical 392 477 460 447 447 447 Operational Hourlies 20,042 20,747 20,952 20,952 20,877 20,877 Total Operations Headcount 23,195 24,159 24,324 24,300 24,221 24,214 Maintenance Managers/Supervisors 3,899 4,156 4,156 4,109 4,010 3,996 Professional/Technical/Clerical 778 1,100 1,043 958 941 931 Operational Hourlies 17,140 17,958 17,936 17,810 17,544 17,605 Total Maintenance Headcount 21,817 23,214 23,135 22,877 22,495 22,532 Engineering / Capital Managers/Supervisors 388 313 352 352 352 352 Professional/Technical/Clerical 464 925 563 563 563 563 Operational Hourlies 2 2 2 2 2 2 Total Engineering Headcount 854 1,240 917 917 917 917 Public Safety Managers/Supervisors 300 446 466 461 461 461 Professional/Technical/Clerical 35 45 45 45 45 45 Operational Hourlies 337 329 329 329 329 329 Total Public Safety Headcount 672 820 840 835 835 835 Total Positions Managers/Supervisors 7,504 8,156 8,188 8,129 8,038 8,018 Professional/Technical/ Clerical 2,155 3,071 2,669 2,599 2,588 2,587 Operational Hourlies 37,538 39,060 39,243 39,117 38,776 38,837 Total Positions 47,197 50,286 50,099 49,844 49,401 49,441
+```

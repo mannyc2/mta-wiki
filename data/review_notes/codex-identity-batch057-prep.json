@@ -1,0 +1,386 @@
+{
+  "note_id": "codex-canonical-cleanup-2026-06-22-identity-alias-batch-057-prep",
+  "created_at": "2026-06-22T21:25:30Z",
+  "author": "codex",
+  "status": "ready_for_conductor_apply",
+  "lane": "identity_prep_only",
+  "batch": "identity-batch057",
+  "scope": "Codex-only identity alias preparation after identity056; no generated output, validation CLI, materialization, export, DB repair, publish, or provider-backed commands run",
+  "context": {
+    "starting_point": "unresolved duplicate_global_identity backlog after current identity overrides and prior prep artifacts through identity056",
+    "candidate_mining_summary": {
+      "current_entity_records_scanned_from_jsonl": 2598,
+      "current_alias_overrides_considered": 329,
+      "db_identity_alias_rows_considered": 329,
+      "prior_prep_aliases_considered_through_batch056": 70,
+      "candidate_pairs_after_alias_and_do_not_merge_filters": 759,
+      "selected_high_confidence_candidates": 10,
+      "selection_policy": "Exact named person identities only; broad agencies, subsidiaries, programs, committees, hierarchy records, target-churn chains, aliases already mapped in merges.json or canonical DB identity_aliases, and aliases already reserved by prior prep artifacts through batch056 were excluded."
+    },
+    "write_scope_used_for_this_task": [
+      "data/review_notes/codex-identity-batch057-prep.json"
+    ],
+    "paths_intentionally_not_edited": [
+      "data/identity-overrides/merges.json",
+      "data/identity-overrides/do-not-merge.json",
+      "data/submission-overrides/retired.json",
+      "data/canonical/",
+      "data/canonical.db",
+      "data/materialized/",
+      "data/submissions/",
+      "wiki/",
+      "LOG.md"
+    ],
+    "db_read_note": "The canonical DB reader path was locked by concurrent work, so canonical records were read from data/canonical JSONL while identity_aliases were checked through a read-only SQLite handle."
+  },
+  "intended_mutation": {
+    "path": "data/identity-overrides/merges.json",
+    "operation": "add_aliases",
+    "aliases": {
+      "entity": {
+        "entity_demetrius-crichlow-85811": "entity_demetrius-crichlow",
+        "entity_demetrius-crichlow-svp-subways": "entity_demetrius-crichlow",
+        "entity_meeting155126-lisette-camilo": "entity_lisette-camilo",
+        "entity_meeting164941-lisette-camilo": "entity_lisette-camilo",
+        "entity_meeting-doc-catherine-rinaldi": "entity_catherine-rinaldi",
+        "entity_meeting-doc-79341-kevin-willens": "entity_kevin-willens-140486",
+        "entity_meeting-doc-107606-rose-davis": "entity_rose-davis",
+        "entity_meeting-doc-189981-rose-davis": "entity_rose-davis",
+        "entity_meeting-doc-111776-david-florio": "entity_david-florio",
+        "entity_meeting-doc-124206-david-florio": "entity_david-florio"
+      }
+    }
+  },
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "all_pass": true,
+    "canonical_records_present": true,
+    "target_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "aliases_not_in_prior_prep_artifacts": true,
+    "targets_not_aliases_in_merges_json": true,
+    "targets_not_aliases_in_identity_aliases_table": true,
+    "targets_not_aliases_in_prior_prep_artifacts": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 20,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 20,
+    "source_page_blocks_missing": [],
+    "confidence": "high"
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_demetrius-crichlow-85811",
+      "target": "entity_demetrius-crichlow",
+      "validator_duplicate_key": "entity_demetrius-crichlow",
+      "reason": "Exact person identity for Demetrius Crichlow. The alias identifies Demetrius Crichlow as Senior Vice President for Subways at NYCT, and the target is the richer multi-source Demetrius Crichlow NYCT leadership record.",
+      "evidence_refs": [
+        "meeting_doc_85811#p003_c0008",
+        "nyct_key_performance_metrics_doc194001#p004_c0003"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_demetrius-crichlow"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_demetrius-crichlow-svp-subways",
+      "target": "entity_demetrius-crichlow",
+      "validator_duplicate_key": "entity_demetrius-crichlow",
+      "reason": "Exact person identity for Demetrius Crichlow. The alias names Demetrius Crichlow as Senior Vice President, NYCT Department of Subways, matching the target's same person identity and title history.",
+      "evidence_refs": [
+        "meeting_doc_72576#p007_c0008",
+        "nyct_key_performance_metrics_doc194001#p004_c0003"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_demetrius-crichlow",
+          "entity_demetrius-crichlow-senior-vice-president-nyct-department-of-subways"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting155126-lisette-camilo",
+      "target": "entity_lisette-camilo",
+      "validator_duplicate_key": "entity_lisette-camilo",
+      "reason": "Exact person identity for Lisette Camilo. The alias identifies Lisette Camilo as MTA Procurement Department Head, and the target is the richer multi-source Lisette Camilo administrative/procurement leadership record.",
+      "evidence_refs": [
+        "meeting_doc_155126#p003_c0001",
+        "meeting_doc_102731#p004_c0005"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_lisette-camilo"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting164941-lisette-camilo",
+      "target": "entity_lisette-camilo",
+      "validator_duplicate_key": "entity_lisette-camilo",
+      "reason": "Exact person identity for Lisette Camilo. The alias names Lisette Camilo as MTA Procurement Department Head, matching the target's same person and department-head title family.",
+      "evidence_refs": [
+        "meeting_doc_164941#p003_c0001",
+        "meeting_doc_102731#p004_c0005"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_lisette-camilo"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-catherine-rinaldi",
+      "target": "entity_catherine-rinaldi",
+      "validator_duplicate_key": "entity_catherine-rinaldi",
+      "reason": "Exact person identity for Catherine Rinaldi. The alias identifies Catherine Rinaldi in LIRR interim president and Metro-North president roles, matching the target's same person and president role history.",
+      "evidence_refs": [
+        "meeting_doc_102686#p001_c0010",
+        "meeting_doc_105776#p001_c0010"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_catherine-rinaldi"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-79341-kevin-willens",
+      "target": "entity_kevin-willens-140486",
+      "validator_duplicate_key": "entity_kevin-willens",
+      "reason": "Exact person identity for Kevin Willens. The alias identifies Kevin Willens as Chief Financial Officer of the Metropolitan Transportation Authority, and the target is the richer multi-source Kevin Willens CFO/finance record.",
+      "evidence_refs": [
+        "meeting_doc_79341#p005_c0006",
+        "meeting_doc_102711#p001_c0002"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_kevin-willens"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-107606-rose-davis",
+      "target": "entity_rose-davis",
+      "validator_duplicate_key": "entity_rose-davis",
+      "reason": "Exact person identity for Rose Davis. The alias names Rose Davis as a project manager, matching the target's same person and project-manager identity across procurement materials.",
+      "evidence_refs": [
+        "meeting_doc_107606#p003_c0001",
+        "meeting_doc_105946#p004_c0001"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_rose-davis"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-189981-rose-davis",
+      "target": "entity_rose-davis",
+      "validator_duplicate_key": "entity_rose-davis",
+      "reason": "Exact person identity for Rose Davis. The alias identifies Rose Davis as Project Manager, matching the target's same Rose Davis procurement project-manager record.",
+      "evidence_refs": [
+        "meeting_doc_189981#p003_c0001",
+        "meeting_doc_105946#p004_c0001"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_rose-davis"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-111776-david-florio",
+      "target": "entity_david-florio",
+      "validator_duplicate_key": "entity_david-florio",
+      "reason": "Exact person identity for David Florio. The alias identifies David Florio in Real Estate department-head/chief real estate transactions roles, matching the target's richer David Florio MTA Real Estate record.",
+      "evidence_refs": [
+        "meeting_doc_111776#p001_c0004",
+        "meeting_doc_129066#p005_c0004"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_david-florio",
+          "entity_david-florio-chief-real-estate-transactions-and-operations-officer",
+          "entity_david-florio-department-head-real-estate"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-124206-david-florio",
+      "target": "entity_david-florio",
+      "validator_duplicate_key": "entity_david-florio",
+      "reason": "Exact person identity for David Florio. The alias names David Florio as Department Head for Real Estate, matching the target's same person and MTA Real Estate department-head identity.",
+      "evidence_refs": [
+        "meeting_doc_124206#p001_c0003",
+        "meeting_doc_129066#p005_c0004"
+      ],
+      "guards": {
+        "alias_canonical_record_present": true,
+        "target_canonical_record_present": true,
+        "alias_not_already_in_merges_json": true,
+        "alias_not_in_identity_aliases_table": true,
+        "alias_not_in_prior_prep_artifacts": true,
+        "target_not_alias_in_merges_json": true,
+        "target_not_alias_in_identity_aliases_table": true,
+        "target_not_alias_in_prior_prep_artifacts": true,
+        "do_not_merge_guard_hits": 0,
+        "raw_source_blocks_present": true,
+        "source_page_blocks_present": true,
+        "shared_identity_keys": [
+          "entity_david-florio",
+          "entity_david-florio-department-head-real-estate"
+        ]
+      },
+      "confidence": "high"
+    }
+  ],
+  "deferred_low_confidence_examples": [
+    {
+      "candidate": "entity_lirr-meeting-doc-131666 -> entity_annual-report-2021-lirr",
+      "reason": "Broad/subsidiary agency identity; intentionally deferred under the avoid-broad-agencies constraint."
+    },
+    {
+      "candidate": "large Janno Lieber cluster leftovers",
+      "reason": "Exact person strings, but large high-profile cluster with many possible aliases; deferred to keep this batch on smaller stable targets."
+    }
+  ],
+  "commands_used_for_evidence": [
+    "test ! -e data/review_notes/codex-identity-batch057-prep.json && echo missing || echo exists",
+    "jq '.intended_mutation.aliases.entity, .aggregate_guard_results' data/review_notes/codex-identity-batch056-prep.json",
+    "sqlite3 'file:data/canonical.db?mode=ro&immutable=1' \"select count(*) from identity_aliases where kind='entity';\"",
+    "bun --eval '<read-only duplicate_global_identity mining over readCanonicalRecordsFromJsonl(), identityKeysForRecord(), current merges.json, read-only identity_aliases, prior prep aliases through batch056, and do-not-merge guards>'",
+    "bun --eval '<read-only final guard script for canonical record presence, alias/target guard checks, prior prep exclusion, shared identity keys, raw source blocks, and source-page blocks>'"
+  ],
+  "commands_intentionally_not_run": [
+    "materialize",
+    "validate CLI",
+    "export-jsonl",
+    "DB repair/publish",
+    "provider-backed post-ingest commands",
+    "identity-review-run",
+    "identity-review-apply"
+  ],
+  "conductor_apply_note": "This prep artifact intentionally does not edit data/identity-overrides/merges.json or generated outputs. Re-run deterministic guards immediately before conductor application because concurrent work may update canonical DB rows or durable identity overrides."
+}

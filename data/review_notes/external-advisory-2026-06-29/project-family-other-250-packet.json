@@ -1,0 +1,2503 @@
+{
+  "created_at": "2026-06-29T13:08:00Z",
+  "bucket": "project_family_other",
+  "total_other": 250,
+  "owner_authorization": "User explicitly allowed external LLM advisory use on 2026-06-29; output is advisory-only and not a mutating repo decision.",
+  "allowed_families_observed": [
+    "accessibility_or_safety",
+    "bike_facility",
+    "bus_lane",
+    "bus_network_redesign",
+    "bus_priority",
+    "busway",
+    "capital_or_infrastructure",
+    "data_program",
+    "enforcement_program",
+    "fare_program",
+    "legislation",
+    "other",
+    "pilot",
+    "planning_or_report",
+    "policy_program",
+    "sbs_or_brt",
+    "service_change",
+    "signal_priority",
+    "street_redesign"
+  ],
+  "top_project_type": [
+    [
+      "operating efficiency initiative",
+      16
+    ],
+    [
+      "procurement",
+      16
+    ],
+    [
+      "contract modification",
+      8
+    ],
+    [
+      "license agreement",
+      5
+    ],
+    [
+      "transit-oriented development",
+      5
+    ],
+    [
+      "personal service contract",
+      3
+    ],
+    [
+      "program",
+      3
+    ],
+    [
+      "bond issuance",
+      2
+    ],
+    [
+      "customer service program",
+      2
+    ],
+    [
+      "Design-Build",
+      2
+    ],
+    [
+      "lease agreement",
+      2
+    ],
+    [
+      "license_agreement",
+      2
+    ],
+    [
+      "maintenance",
+      2
+    ],
+    [
+      "Miscellaneous Service Contract",
+      2
+    ],
+    [
+      "Personal Service Contract",
+      2
+    ],
+    [
+      "personal service retainer contract",
+      2
+    ],
+    [
+      "real estate",
+      2
+    ],
+    [
+      "real estate development",
+      2
+    ],
+    [
+      "real estate license",
+      2
+    ],
+    [
+      "recreational trail",
+      2
+    ],
+    [
+      "rehabilitation",
+      2
+    ],
+    [
+      "retail_agreement",
+      2
+    ],
+    [
+      "staffing initiative",
+      2
+    ],
+    [
+      "technology implementation",
+      2
+    ],
+    [
+      "workforce initiative",
+      2
+    ],
+    [
+      "alternative dispute resolution program",
+      1
+    ],
+    [
+      "apprenticeship_program",
+      1
+    ],
+    [
+      "budget",
+      1
+    ],
+    [
+      "campaign",
+      1
+    ],
+    [
+      "cell service installation",
+      1
+    ],
+    [
+      "centralized service",
+      1
+    ],
+    [
+      "cleaning initiative",
+      1
+    ],
+    [
+      "climate resilience strategy",
+      1
+    ],
+    [
+      "communications upgrade",
+      1
+    ],
+    [
+      "community event",
+      1
+    ],
+    [
+      "community outreach",
+      1
+    ],
+    [
+      "community_outreach_program",
+      1
+    ],
+    [
+      "competitive personal service contracts",
+      1
+    ],
+    [
+      "competitive procurement contract",
+      1
+    ],
+    [
+      "Competitive Request for Proposals",
+      1
+    ],
+    [
+      "consultant program",
+      1
+    ],
+    [
+      "consulting",
+      1
+    ],
+    [
+      "consulting services",
+      1
+    ],
+    [
+      "contract",
+      1
+    ],
+    [
+      "contract extension",
+      1
+    ],
+    [
+      "contract_award",
+      1
+    ],
+    [
+      "contract_modification",
+      1
+    ],
+    [
+      "cultural programming",
+      1
+    ],
+    [
+      "curb regulation changes",
+      1
+    ],
+    [
+      "curbside changes",
+      1
+    ],
+    [
+      "customer service modernization",
+      1
+    ],
+    [
+      "customer service system implementation",
+      1
+    ],
+    [
+      "customer survey",
+      1
+    ],
+    [
+      "design",
+      1
+    ],
+    [
+      "development agreement",
+      1
+    ],
+    [
+      "downtown revitalization",
+      1
+    ],
+    [
+      "drone program",
+      1
+    ],
+    [
+      "easement",
+      1
+    ],
+    [
+      "energy efficiency agreement",
+      1
+    ],
+    [
+      "fuel hedging program",
+      1
+    ],
+    [
+      "fueling_station",
+      1
+    ],
+    [
+      "geometry improvement",
+      1
+    ],
+    [
+      "grant",
+      1
+    ],
+    [
+      "grant authorization",
+      1
+    ],
+    [
+      "grant program",
+      1
+    ],
+    [
+      "Grant Program",
+      1
+    ],
+    [
+      "Grant Projects",
+      1
+    ],
+    [
+      "housing development",
+      1
+    ],
+    [
+      "implementation",
+      1
+    ],
+    [
+      "improvement_initiative",
+      1
+    ],
+    [
+      "initiative",
+      1
+    ],
+    [
+      "installation",
+      1
+    ],
+    [
+      "insurance procurement",
+      1
+    ],
+    [
+      "internal dispatching application",
+      1
+    ],
+    [
+      "internship program",
+      1
+    ],
+    [
+      "IT services",
+      1
+    ],
+    [
+      "IT_upgrade",
+      1
+    ],
+    [
+      "lease",
+      1
+    ],
+    [
+      "lease extension",
+      1
+    ],
+    [
+      "lease modification",
+      1
+    ]
+  ],
+  "records": [
+    {
+      "record_id": "project_125th-street-retail-concession",
+      "source_id": "meeting_doc_85796",
+      "project_name": "125th Street Station Retail Concession License",
+      "project_type": "license agreement",
+      "status": "authorization requested",
+      "document_time_status": "planned",
+      "description": "Five-year license agreement for approximately 350 sq. ft. retail convenience unit at Metro-North 125th Street Station. First year compensation $24,000 with 3% annual increases. NPV of 10-year proposal: $199,746."
+    },
+    {
+      "record_id": "project_126th-st-curb-reg-changes",
+      "source_id": "2015_01_06_brt_125th_cb11",
+      "project_name": "126th Street Curb Regulation Changes",
+      "project_type": "curb regulation changes",
+      "description": "Proposed curb regulation changes on 126th Street, affecting areas west and east of Lenox Avenue, including ASP additions, metered parking, truck loading zones, and turn bays.",
+      "borough": "Manhattan"
+    },
+    {
+      "record_id": "project_160071-nycsc-pmoc-extension",
+      "source_id": "meeting_doc_160071",
+      "project_name": "NYCSC PMOC Services Contract Extension",
+      "project_type": "procurement - personal service contract modification",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Extension of personal service contract with Gannett Fleming Engineers and Architects, PC for Project Management Office Consultant Services for the New York Customer Service Center Contracts."
+    },
+    {
+      "record_id": "project_201556-harlem-line-track-outage",
+      "source_id": "meeting_doc_201556",
+      "project_name": "Harlem Line Planned Track Outage",
+      "project_type": "track outage",
+      "status": "planned",
+      "document_time_status": "planned",
+      "description": "Planned track outage on the Harlem Line from July 13, 2026 to August 30, 2026"
+    },
+    {
+      "record_id": "project_39651-customer-contact-center-contract",
+      "source_id": "meeting_doc_39651",
+      "project_name": "NY Tolling Authorities Customer Contact Center Services",
+      "project_type": "procurement",
+      "status": "awarded",
+      "document_time_status": "approved",
+      "description": "Personal service contract awarded to Faneuil, Inc. for $121,890,384 for Customer Contact Center Services"
+    },
+    {
+      "record_id": "project_39651-nycsc-system-contract",
+      "source_id": "meeting_doc_39651",
+      "project_name": "New York Tolling Authorities Customer Service Center System and License Plate and Owner Identification Services",
+      "project_type": "procurement",
+      "status": "awarded",
+      "document_time_status": "approved",
+      "description": "Competitively solicited miscellaneous procurement contract awarded to Conduent State & Local Solutions, Inc. for $246,086,235"
+    },
+    {
+      "record_id": "project_39651-transponder-distribution-contract",
+      "source_id": "meeting_doc_39651",
+      "project_name": "Transponder Distribution Services",
+      "project_type": "procurement",
+      "status": "awarded",
+      "document_time_status": "approved",
+      "description": "Personal service contract awarded to TransCore, LP for $25,828,079 for Transponder Distribution Services"
+    },
+    {
+      "record_id": "project_44471-consolidated-call-center",
+      "source_id": "meeting_doc_44471",
+      "project_name": "MTA Consolidated Call Center",
+      "project_type": "centralized service",
+      "description": "A centralized call center proposed to deliver a 'One MTA' customer experience, with cloud-based contact center architectures."
+    },
+    {
+      "record_id": "project_a-shuttle",
+      "source_id": "meeting_doc_167246",
+      "project_name": "A Shuttle",
+      "project_type": "shuttle",
+      "description": "Shuttle bus project where Sameh Eshak led supervisors to ensure customer service"
+    },
+    {
+      "record_id": "project_access-a-ride-primary-carrier-options",
+      "source_id": "meeting_doc_164791",
+      "project_name": "Access-A-Ride Primary Carrier Service Option Years",
+      "project_type": "procurement - contract modification",
+      "status": "proposed for Board approval",
+      "document_time_status": "planned",
+      "description": "Exercise of Option years (April 1, 2025 – March 31, 2027) for three Primary Carrier contracts (PTM Management Corp., NY Paratransit Group, AMR All-Transit LLC) for Access-A-Ride paratransit service. Total funding: $243,607,696."
+    },
+    {
+      "record_id": "project_ari-fleet-mgmt-extension-meeting-doc-192246",
+      "source_id": "meeting_doc_192246",
+      "project_name": "Fleet Management Services Contract Extension (ARI)",
+      "project_type": "contract modification",
+      "description": "Modification to extend Fleet Management Services contract with Automotive Rentals Inc. for eight months (through Aug 2, 2026) and add $15.7M in funding. Services include routine maintenance/repair for light/medium/heavy vehicles, roadside assistance, and towing across MTA territory for all operating agencies."
+    },
+    {
+      "record_id": "project_availability-unit",
+      "source_id": "meeting_doc_102816",
+      "project_name": "Availability Unit",
+      "project_type": "staffing initiative",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Re-establishment of the Unit dedicated to studying employee availability and developing/implementing opportunities for improvement"
+    },
+    {
+      "record_id": "project_beacon-station-redevelopment",
+      "source_id": "meeting_doc_160096",
+      "project_name": "Beacon station redevelopment",
+      "project_type": "transit-oriented development",
+      "status": "RFP released",
+      "document_time_status": "planned",
+      "description": "Redevelopment of site at Beacon station on the Hudson line under Governor's RUSH initiative with up to $24 million to enable developer to replace commuter parking"
+    },
+    {
+      "record_id": "project_bos-procurement-2025",
+      "source_id": "meeting_doc_167236",
+      "project_name": "Bus Operator Simulator Systems Procurement",
+      "project_type": "contract_award",
+      "status": "pending_board_approval",
+      "document_time_status": "planned",
+      "description": "Purchase, installation and maintenance of four Bus Operator Simulator systems for DOB and MTABC"
+    },
+    {
+      "record_id": "project_breakneck-connector",
+      "source_id": "meeting_doc_111776",
+      "project_name": "Breakneck Connector",
+      "project_type": "recreational trail",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Installation, operation and maintenance of a recreational trail (the Breakneck Connector), related amenities including parking and improvements to Breakneck Ridge Station"
+    },
+    {
+      "record_id": "project_breakneck-ridge-trail-disposition",
+      "source_id": "meeting_doc_58631",
+      "project_name": "Breakneck Ridge Trail Land Disposition",
+      "project_type": "real estate disposition",
+      "description": "Authorization to convey fee simple title of 2.41 acres to New York State Parks for use as a public hiking trail, subject to reservation of a permanent easement for railroad operations. Appraised value $80,000, conveyed as donation."
+    },
+    {
+      "record_id": "project_bt-2025-adopted-budget-feb2025",
+      "source_id": "meeting_doc_165006",
+      "project_name": "B&T 2025 Adopted Budget and Financial Plan 2025-2028",
+      "project_type": "budget",
+      "status": "adopted",
+      "document_time_status": "approved",
+      "description": "MTA Bridges & Tunnels February Financial Plan for 2025-2028, presenting 2025 Adopted Budget and financial projections through 2028"
+    },
+    {
+      "record_id": "project_cd-contractor-safety-apprenticeship",
+      "source_id": "meeting_doc_199156",
+      "project_name": "Contractor Safety Apprenticeship Program",
+      "project_type": "apprenticeship_program",
+      "description": "Developing an apprenticeship program for contractors to address the shortage of qualified safety professionals in the construction industry."
+    },
+    {
+      "record_id": "project_cd-project-controls-policies",
+      "source_id": "meeting_doc_124291",
+      "project_name": "MTA C&D Program and Projects Controls Policies, Processes and Procedures",
+      "project_type": "consulting",
+      "status": "awarded",
+      "document_time_status": "approved",
+      "description": "Contract to Turner & Townsend Inc. for developing new program and project controls policies for MTA C&D. Base contract $3,711,049.38 for 12 months, with two optional extensions totaling up to $5,415,669.69."
+    },
+    {
+      "record_id": "project_city-winery-gct-license-apr2022",
+      "source_id": "meeting_doc_85796",
+      "project_name": "City Winery License at Grand Central Terminal",
+      "project_type": "license agreement",
+      "status": "authorization requested",
+      "document_time_status": "planned",
+      "description": "Three-year license agreement with one two-year option for full-service restaurant, bar/gastropub, and grab-and-go food and beverage at Vanderbilt Hall West spaces in Grand Central Terminal. Base rent $500,000 (Year 1) escalating to $1,000,000 (Year 3). Plus percentage rent."
+    },
+    {
+      "record_id": "project_city-winery-license-extension-gct",
+      "source_id": "meeting_doc_138291",
+      "project_name": "License extension with City Winery for Grand Central Terminal restaurant",
+      "project_type": "real estate license",
+      "description": "Authorization to amend the existing License Agreement to allow for the early exercise of the existing option and add one additional two (2) year option for a restaurant in Grand Central Terminal."
+    },
+    {
+      "record_id": "project_climate-resilience-roadmap",
+      "source_id": "meeting_doc_131986",
+      "project_name": "Climate Resilience Roadmap",
+      "project_type": "strategy",
+      "status": "ongoing",
+      "document_time_status": "active",
+      "description": "Assessment of current and future climate vulnerabilities, 10 climate resilience strategies, and implementation framework including capital projects, design practices, operating actions, and interagency actions"
+    },
+    {
+      "record_id": "project_contact-center-transformation",
+      "source_id": "meeting_doc_33261",
+      "project_name": "Implementation of Contact Center Transformation (CCaaS)",
+      "project_type": "technology implementation",
+      "status": "action item - board approval sought",
+      "document_time_status": "planned",
+      "description": "Two competitively negotiated contracts to Guidehouse Inc. and DiRAD Technologies to transform customer call centers into a transformed all-agency multi-channel MTA Customer Contact Center. Total amount: $8,694,613. Contract term: 5 years with options."
+    },
+    {
+      "record_id": "project_contract-96417-mod4-emergency-scheduled-bus-services",
+      "source_id": "meeting_doc_105966",
+      "project_name": "Contract 96417 AWO/Modification #4 - Emergency and Scheduled Bus Services",
+      "project_type": "contract modification",
+      "status": "pending approval",
+      "document_time_status": "planned",
+      "description": "MNR seeking MTA Board approval to modify competitively negotiated miscellaneous service contracts for continuation of as-needed Emergency and Scheduled Bus Services with five bus companies, adding $7.5 million in funding"
+    },
+    {
+      "record_id": "project_cortlandt-station-event-parking",
+      "source_id": "meeting_doc_131676",
+      "project_name": "Short-Term Parking Permit between Metro-North and the Town of Cortlandt for use of the parking lot at Cortlandt Station",
+      "project_type": "short-term access permit",
+      "status": "executed",
+      "document_time_status": "other",
+      "description": "Permit for Town of Cortlandt to use Parking Lots 1 and 2 at Cortlandt Station for annual Family Fun Day event parking on December 9, 2023 (rain date December 10, 2023)"
+    },
+    {
+      "record_id": "project_corys-train-simulator-lirr",
+      "source_id": "meeting_doc_29961",
+      "project_name": "M7/M9, DM Locomotive, C3 Train Simulator Systems",
+      "project_type": "procurement",
+      "status": "proposed for board approval",
+      "document_time_status": "planned",
+      "description": "LIRR competitive procurement to award contract to Corys, Inc. to design, manufacture, test and deliver Train Simulator Systems for M-7/M-9, Dual Mode (DM) Locomotive and C-3 fleets."
+    },
+    {
+      "record_id": "project_crm-solution",
+      "source_id": "meeting_doc_33261",
+      "project_name": "Customer Relationship Management Solution",
+      "project_type": "technology implementation",
+      "status": "action item - board approval sought",
+      "document_time_status": "planned",
+      "description": "Competitively negotiated contract to Slalom LLC to provide a scalable cloud-based CRM solution with integrated Knowledge Management system. Total amount: $12,650,000. Contract term: 3 years with two 1-year options. Agencies: NYCT, LIRR, MNR."
+    },
+    {
+      "record_id": "project_disability-medicare-coordination-ssdc",
+      "source_id": "meeting_doc_157686",
+      "project_name": "Disability and Medicare Coordination Services Contract",
+      "project_type": "contract",
+      "description": "Exercise of Option 2 of contract with SSDC Services Corporation to continue enrollment services for eligible disabled retirees under 65 into Medicare Parts A and B through December 31, 2025"
+    },
+    {
+      "record_id": "project_easement-airef-lirr-main-line",
+      "source_id": "meeting_doc_186831",
+      "project_name": "Easement with AIREF Station Road Logistics Center II LLC for Two Subsurface Easements along LIRR's Main Line Branch near Yaphank, NY",
+      "project_type": "easement",
+      "status": "Pending board approval September 2025",
+      "document_time_status": "planned",
+      "description": "Two permanent subsurface utility easements for sewer force main pipe installation: (1) Bellport Ave crossing in Yaphank (1,350 sq ft); (2) Manor Rd and Munsell Rd crossing in Medford (1,000 sq ft), connecting to Suffolk County Sewer District",
+      "boroughs": [
+        "Suffolk County"
+      ]
+    },
+    {
+      "record_id": "project_esa-systems-facilities-contract-mod",
+      "source_id": "meeting_doc_37071",
+      "project_name": "ESA Systems Facilities Contract Modification (CS179.415)",
+      "project_type": "contract modification",
+      "status": "pending board ratification",
+      "document_time_status": "planned",
+      "description": "Retroactive modification to ESA Systems Facilities contract for design drawings, device relocation, and access restraints at Grand Central Terminal"
+    },
+    {
+      "record_id": "project_federal-grants-authorization-ffy2024",
+      "source_id": "meeting_doc_138291",
+      "project_name": "Authorization to File for and Accept Federal Grants",
+      "project_type": "grant authorization",
+      "description": "Secure Board approval to file for and accept Federal grants for Federal Fiscal Year (FFY) 2024."
+    },
+    {
+      "record_id": "project_fjord-trail",
+      "source_id": "meeting_doc_111776",
+      "project_name": "Fjord Trail",
+      "project_type": "recreational trail",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Proposed Fjord Trail (FT); the Breakneck Connector is a portion of the FT"
+    },
+    {
+      "record_id": "project_flushing-in-motion",
+      "source_id": "2014_06_11_brt_flushingjamaica_cac1_presentation",
+      "project_name": "Flushing In Motion",
+      "project_type": "traffic control system",
+      "status": "Existing",
+      "document_time_status": "implemented",
+      "description": "Traffic control system for Downtown Flushing enables NYCDOT to adjust signals in response to traffic conditions",
+      "borough": "Queens"
+    },
+    {
+      "record_id": "project_fordham-plaza-2012",
+      "source_id": "2012_09_webster_sbs_cac3_workshop",
+      "project_name": "Fordham Plaza Project",
+      "project_type": "plaza project",
+      "description": "Related project mentioned in the Webster Avenue SBS context; E 189th will become one-way WB as part of this project",
+      "borough": "Bronx"
+    },
+    {
+      "record_id": "project_fordham-plaza-redevelopment-2012",
+      "source_id": "2012_02_brt_webster_cac1_summary",
+      "project_name": "Fordham Plaza Redevelopment",
+      "project_type": "redevelopment",
+      "description": "Redevelopment adding 250,000 square feet of office space and a proposed charter school. Includes a 'bus only' street along 3rd Avenue between E 189th Street and Fordham Road.",
+      "borough": "Bronx"
+    },
+    {
+      "record_id": "project_fortifying-mnr-hudson-line",
+      "source_id": "meeting_doc_180421",
+      "project_name": "Fortifying MNR's Hudson Line",
+      "project_type": "resiliency",
+      "description": "Increasing Resiliency - Fortifying MNR's Hudson Line"
+    },
+    {
+      "record_id": "project_fuel-hedge-program-2022",
+      "source_id": "meeting_doc_104726",
+      "project_name": "Fuel Hedge Program",
+      "project_type": "fuel hedging program",
+      "status": "active",
+      "document_time_status": "active",
+      "description": "December 2022 Fuel Hedge Program - hedging for Ultra Low Sulfur Diesel (ULSD) and Compressed Natural Gas (CNG)"
+    },
+    {
+      "record_id": "project_gannett-fleming-pmo-consultant",
+      "source_id": "meeting_doc_163171",
+      "project_name": "Gannett Fleming Engineering and Architecture P.C. Project Management Office Consultant Services",
+      "project_type": "procurement",
+      "status": "amendment",
+      "document_time_status": "other",
+      "description": "Award of amendment to Personal Service contract for Project Management Office Consultant Services in a not-to-exceed amount of $2.1 million"
+    },
+    {
+      "record_id": "project_gcm-contractor-maintenance-cellular-124266",
+      "source_id": "meeting_doc_115156",
+      "project_name": "Grand Central Madison Contractor Maintenance and Wireless Cellular Installation",
+      "project_type": "maintenance",
+      "status": "planned",
+      "document_time_status": "planned",
+      "description": "Contractor maintenance and wireless cellular installation supported during the September 5, 2023 timetable"
+    },
+    {
+      "record_id": "project_gct-graybar-passage-kiosk-190016",
+      "source_id": "meeting_doc_190016",
+      "project_name": "GCT Graybar Passage Kiosk License",
+      "project_type": "license agreement",
+      "status": "active",
+      "document_time_status": "active",
+      "description": "Kiosk license between MNR and Urbn Elemnts for retail kiosk at Grand Central Terminal Graybar Passage"
+    },
+    {
+      "record_id": "project_gct-retail-development",
+      "source_id": "meeting_doc_100316",
+      "project_name": "Grand Central Terminal Retail Development",
+      "project_type": "retail development",
+      "status": "ongoing",
+      "document_time_status": "active",
+      "description": "Retail development project at Grand Central Terminal."
+    },
+    {
+      "record_id": "project_gct-retail-licensing-gcm",
+      "source_id": "meeting_doc_95536",
+      "project_name": "Grand Central Terminal Retail Licensing Program Modification",
+      "project_type": "licensing program",
+      "description": "Board approved extension of the Grand Central Terminal Short Term License Program to include Grand Central Madison's retail concourse and LIRR mezzanine. Short-term license agreements will be used to engage pop-up retail until a long-term retail master tenant is secured."
+    },
+    {
+      "record_id": "project_giro-cdms-implementation-201766",
+      "source_id": "meeting_doc_201766",
+      "project_name": "MTA Crew Dispatch and Management System Implementation",
+      "project_type": "noncompetitive procurement",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Noncompetitive contract award to GIRO Inc. to deliver and implement a new HASTUS Crew Dispatch and Management System (CDMS) for Metro-North Railroad and Long Island Rail Road."
+    },
+    {
+      "record_id": "project_giro-hastus-upgrade-201766",
+      "source_id": "meeting_doc_201766",
+      "project_name": "Upgrade of HASTUS Scheduling System",
+      "project_type": "contract modification",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Modification to extend GIRO HASTUS licensing and support for NYC Transit DOS, DOB, and MTABC, and upgrade LIRR HASTUS from version 2014 to latest 2027 version."
+    },
+    {
+      "record_id": "project_grand-concourse-bd-structural-repairs",
+      "source_id": "meeting_doc_165406",
+      "project_name": "Grand Concourse B D Structural Repairs",
+      "project_type": "structural repair",
+      "status": "completed",
+      "document_time_status": "implemented",
+      "description": "Project CEOs and new ideas for track access"
+    },
+    {
+      "record_id": "project_harriman-station-parking-permit-nov2024",
+      "source_id": "meeting_doc_160326",
+      "project_name": "Harriman Station Short-Term Parking Permit - Thanksgiving 2024",
+      "project_type": "parking permit",
+      "status": "completed",
+      "document_time_status": "implemented",
+      "description": "Short-term parking permit between Metro-North and Premium Outlet Partners L.P. for use of 700 parking spaces at Harriman Station for annual Thanksgiving shopping event"
+    },
+    {
+      "record_id": "project_harrison-station-tod",
+      "source_id": "meeting_doc_53036",
+      "project_name": "Metro-North Harrison Station TOD",
+      "project_type": "transit-oriented development",
+      "description": "Transit-oriented development at Metro-North Harrison Station including Harrison Garage opening and parking structure"
+    },
+    {
+      "record_id": "project_hastus-upgrade-giro-2022",
+      "source_id": "meeting_doc_91636",
+      "project_name": "HASTUS Scheduling System Upgrade",
+      "project_type": "procurement",
+      "status": "Board approval sought",
+      "document_time_status": "planned",
+      "description": "Six-year noncompetitive miscellaneous service contract to Giro Inc. to upgrade the existing HASTUS Scheduling System for MTA Bus and NYC Transit. Upgrading to HASTUS 2022 will help eliminate inefficiencies in data and schedule development tasks."
+    },
+    {
+      "record_id": "project_homeless-outreach-staffing-services-contract",
+      "source_id": "meeting_doc_199106",
+      "project_name": "Homeless Outreach Staffing Services Contract",
+      "project_type": "professional services contract",
+      "status": "proposed for board approval",
+      "document_time_status": "planned",
+      "description": "Competitively negotiated professional services contract with Essey Group to provide homeless outreach staffing services in support of the MTA Homeless Security and Quality of Life Program"
+    },
+    {
+      "record_id": "project_it-racks-installation-q4-2022",
+      "source_id": "meeting_doc_104766",
+      "project_name": "IT Racks Installation at all 125 stations",
+      "project_type": "installation",
+      "status": "100% complete",
+      "document_time_status": "implemented",
+      "description": "Installation of IT racks at all 125 LIRR stations (100% complete)."
+    },
+    {
+      "record_id": "project_jamaica-bus-terminal-lease-ext",
+      "source_id": "meeting_doc_33261",
+      "project_name": "Lease Extensions for NYCT and MTA Bus at Jamaica Bus Terminal",
+      "project_type": "lease extension",
+      "status": "action item - board approval sought",
+      "document_time_status": "planned",
+      "description": "Authorization to extend existing leases for MTA Bus Company and NYCT at Jamaica Bus Terminal, Queens, NY through 9/30/2022. NYCT: $22,000 per annum. MTA Bus: $245,900 per annum.",
+      "borough": "Queens"
+    },
+    {
+      "record_id": "project_jamaica-otp-task-force",
+      "source_id": "meeting_doc_205596",
+      "project_name": "Jamaica OTP Task Force",
+      "project_type": "performance improvement",
+      "description": "A dedicated task force established by MTA Strategic Initiatives partnered with the LIRR to improve Jamaica on-time performance and enhance the transfer experience at Jamaica Station. A performance target was set for 70% of all trains arriving within three minutes of schedule at Jamaica."
+    },
+    {
+      "record_id": "project_jamaica-station-redesign",
+      "source_id": "meeting_doc_208026",
+      "project_name": "Jamaica Station Redesign",
+      "project_type": "station redesign",
+      "status": "planning",
+      "document_time_status": "study",
+      "description": "Upcoming station redesign at Jamaica LIRR Station. MTA together with Port Authority of New York and New Jersey held an in-person outreach effort to connect with customers about the redesign."
+    },
+    {
+      "record_id": "project_kings-highway-curbside-changes",
+      "source_id": "brt_kings_highway_aug2018",
+      "project_name": "Kings Highway Curbside Changes",
+      "project_type": "curbside changes",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Proposed curbside changes along Kings Highway including bus lanes, truck loading zones, turn bays, taxi stand relocation, and parking changes",
+      "borough": "Brooklyn"
+    },
+    {
+      "record_id": "project_laser-train-module-lease-2025",
+      "source_id": "meeting_doc_194091",
+      "project_name": "Laser Train Module Lease Agreement for Rail-Based Cleaning",
+      "project_type": "noncompetitive procurement / sole source contract",
+      "status": "pending board approval",
+      "document_time_status": "planned",
+      "description": "Contract award for the leasing of three laser train modules (one for MNR, two for LIRR) for rail-based cleaning from Laser Tribology B.V."
+    },
+    {
+      "record_id": "project_lease-modification-29-76-northern-blvd",
+      "source_id": "meeting_doc_186831",
+      "project_name": "Lease Modification and Extension with 29-76 Realty Co., LLC for Office Space at 29-76 Northern Blvd in Queens, NY",
+      "project_type": "lease_modification",
+      "status": "Pending board approval September 2025",
+      "document_time_status": "planned",
+      "description": "Extension and modification of lease for MTA Construction and Development office space, reducing from 34,500 to 17,201 RSF on the 5th floor at 29-76 Northern Boulevard, Long Island City, Queens for 3-year term from November 1, 2025 to October 31, 2028",
+      "borough": "Queens"
+    },
+    {
+      "record_id": "project_lease-saw-pit-port-chester-station",
+      "source_id": "meeting_doc_186831",
+      "project_name": "Lease with The Saw Pit at Port Chester Station LLC for Port Chester Station Building",
+      "project_type": "lease",
+      "status": "Pending board approval September 2025",
+      "document_time_status": "planned",
+      "description": "10-year lease for restaurant/brewpub operation at Port Chester Station Building with two 5-year extension options, approximately 5,632 sf building plus 3,600 sf outdoor area and 7 parking spaces",
+      "borough": "Westchester"
+    },
+    {
+      "record_id": "project_license-eagle-scaffolding-amityville",
+      "source_id": "meeting_doc_186831",
+      "project_name": "License with Eagle Scaffolding Services, Inc. for Property at 67 Mill Street, Amityville, NY",
+      "project_type": "license_agreement",
+      "status": "Pending board approval September 2025",
+      "document_time_status": "planned",
+      "description": "5-year license for storage of non-hazardous materials and vehicle parking on two parcels totaling approximately 26,625 sq. ft. adjacent to 67 Mill Street, Amityville, Town of Babylon, Suffolk County",
+      "boroughs": [
+        "Suffolk County"
+      ]
+    },
+    {
+      "record_id": "project_license-gateway-foods-white-plains",
+      "source_id": "meeting_doc_186831",
+      "project_name": "License with Gateway Foods Holding LLC for Tim Horton's Coffee Concession at White Plains Station",
+      "project_type": "license_agreement",
+      "status": "Pending board approval September 2025",
+      "document_time_status": "planned",
+      "description": "5-year license with 5-year extension option for Tim Horton's coffee concession at White Plains Station, approximately 420 sq. ft. retail concession space and up to 550 sq. ft. storage space",
+      "borough": "Westchester"
+    },
+    {
+      "record_id": "project_lirr-drone-program",
+      "source_id": "meeting_doc_151771",
+      "project_name": "LIRR Drone Program",
+      "project_type": "drone program",
+      "status": "operational",
+      "document_time_status": "implemented",
+      "description": "The agency's first Drone Program using Unmanned Aerial Systems (UAS) to monitor and identify issues on the LIRR system"
+    },
+    {
+      "record_id": "project_lirr-oscar-dashboard",
+      "source_id": "meeting_doc_199156",
+      "project_name": "Operations Security Console and Reporting (O.S.C.A.R) Dashboard",
+      "project_type": "security_technology",
+      "status": "operational",
+      "document_time_status": "implemented",
+      "description": "Dashboard used by LIRR Security Personnel to apply data collected and analyzed for security assessments utilizing CPTED at LIRR properties."
+    },
+    {
+      "record_id": "project_lirr-restroom-survey-program",
+      "source_id": "meeting_doc_157676",
+      "project_name": "LIRR Restroom Survey Program",
+      "project_type": "customer service program",
+      "status": "active, expanding",
+      "document_time_status": "active",
+      "description": "Program allowing riders to provide real-time feedback on cleanliness and maintenance of station bathrooms via QR code surveys. Expanded to include bathrooms on rolling stock. Fully implemented by end of 2024."
+    },
+    {
+      "record_id": "project_lirr-train-simulator-systems",
+      "source_id": "meeting_doc_30001",
+      "project_name": "LIRR M-7/M-9, DM Locomotive, C3 Train Simulator Systems",
+      "project_type": "procurement",
+      "status": "award approved",
+      "document_time_status": "approved",
+      "description": "LIRR competitively awarded contract to Corys, Inc. for $3,186,584 to design, manufacture, test and deliver Train Simulator Systems for M-7/M-9, DM Locomotive and C-3 fleets to support training for East Side Access and Positive Train Control"
+    },
+    {
+      "record_id": "project_m190081-nfi-parts-contract",
+      "source_id": "meeting_doc_190081",
+      "project_name": "NFI Parts Replacement Parts Pricing Agreement",
+      "project_type": "sole-source procurement",
+      "status": "pending board approval",
+      "document_time_status": "planned",
+      "description": "Award of a sole-source one-year estimated quantity contract for replacement parts from NFI Parts for NYC Transit and MTA Bus Company bus fleets (New Flyer, Orion, MCI)"
+    },
+    {
+      "record_id": "project_management-consulting-services",
+      "source_id": "meeting_doc_171381",
+      "project_name": "Management Consulting Services",
+      "project_type": "personal service retainer contract",
+      "status": "active",
+      "document_time_status": "active",
+      "description": "Extension of 15 competitively negotiated all-agency personal service contracts for management consultant services for 12 months with $10.3M aggregate increase"
+    },
+    {
+      "record_id": "project_market-research-retainer-contracts",
+      "source_id": "meeting_doc_197026",
+      "project_name": "Full-Service Market Research Retainer Contracts",
+      "project_type": "personal service contract procurement",
+      "status": "Proposed for Board approval",
+      "document_time_status": "planned",
+      "description": "Award of eight competitively negotiated all-agency personal services contracts for quantitative market research services on an as-needed basis"
+    },
+    {
+      "record_id": "project_maybrook-trailway-opening-2021",
+      "source_id": "meeting_doc_37071",
+      "project_name": "Maybrook Trailway",
+      "project_type": "trail",
+      "status": "completed",
+      "document_time_status": "implemented",
+      "description": "23-mile segment of the Empire State trail built by Metro-North alongside the Beacon Line through Dutchess and Putnam Counties"
+    },
+    {
+      "record_id": "project_meeting-doc-100351-a-line-initiative",
+      "source_id": "meeting_doc_100351",
+      "project_name": "A Line initiative",
+      "project_type": "improvement_initiative",
+      "description": "Strategies and improvements regarding the A Line discussed by Demetrius Crichlow, Senior Vice President, Subways"
+    },
+    {
+      "record_id": "project_meeting-doc-100351-open-stroller-program",
+      "source_id": "meeting_doc_100351",
+      "project_name": "MTA's Open Stroller Program",
+      "project_type": "program",
+      "status": "launched",
+      "document_time_status": "implemented",
+      "description": "Launched in September; allows customers with strollers to board buses and park their strollers in a dedicated area"
+    },
+    {
+      "record_id": "project_meeting-doc-102761-cmaq-grant",
+      "source_id": "meeting_doc_102761",
+      "project_name": "NYSDOT Grant for Connecting Services",
+      "project_type": "grant",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Congestion Mitigation/Air Quality (CMAQ) grant from NYSDOT to support connecting services for Metro-North stations"
+    },
+    {
+      "record_id": "project_meeting-doc-104771-graffiti-removal",
+      "source_id": "meeting_doc_104771",
+      "project_name": "Graffiti Removal Program",
+      "project_type": "maintenance program",
+      "status": "100% complete",
+      "document_time_status": "implemented",
+      "description": "Hudson & Harlem - cleaned graffiti off various buildings, bridges, retaining walls & rock cuts"
+    },
+    {
+      "record_id": "project_meeting-doc-104781-speed-unit",
+      "source_id": "meeting_doc_104781",
+      "project_name": "Speed Unit",
+      "project_type": "operations initiative",
+      "status": "active",
+      "document_time_status": "active",
+      "description": "A group established to increase train speeds, reduce delays, and improve operating efficiency"
+    },
+    {
+      "record_id": "project_meeting-doc-106031-cuny-jamaica-lease",
+      "source_id": "meeting_doc_106031",
+      "project_name": "CUNY Jamaica Bus Temporary Relocation Lease",
+      "project_type": "lease agreement",
+      "description": "Lease agreement with City University of New York (CUNY) for the temporary relocation of NYCT buses in Jamaica, Queens",
+      "borough": "Queens"
+    },
+    {
+      "record_id": "project_meeting-doc-107531-station-booth-modernization",
+      "source_id": "meeting_doc_107531",
+      "project_name": "Station Booth Service Replacement with Station Agents",
+      "project_type": "station customer experience modernization",
+      "status": "approved by committee",
+      "document_time_status": "approved",
+      "description": "Plan to replace station booth service with station agents providing customer service outside of the booths, as part of move to modernize the station customer experience. A public hearing was held on February 1, 2023."
+    },
+    {
+      "record_id": "project_meeting-doc-107536-bus-simulators",
+      "source_id": "meeting_doc_107536",
+      "project_name": "Bus Operator Simulators Procurement",
+      "project_type": "Competitive Request for Proposals",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Authorizing Resolution for the procurement of four Bus Operator Simulators for NYC Transit and MTA Bus Company"
+    },
+    {
+      "record_id": "project_meeting-doc-107606-jamaica-central-control-upgrade",
+      "source_id": "meeting_doc_107606",
+      "project_name": "Jamaica Central Control System Upgrade",
+      "project_type": "traffic control system software upgrade",
+      "status": "proposed for award",
+      "document_time_status": "planned",
+      "description": "Purchase and installation of Railware Dispatch X traffic control system software to replace the existing OCCS software at the Jamaica Central Control (JCC)"
+    },
+    {
+      "record_id": "project_meeting-doc-108036-track-trespassing-task-force",
+      "source_id": "meeting_doc_108036",
+      "project_name": "Track Trespassing Task Force",
+      "project_type": "task force",
+      "status": "ongoing",
+      "document_time_status": "active",
+      "description": "Launched by the MTA in fall of 2021 to address the issue of track intrusion"
+    },
+    {
+      "record_id": "project_meeting-doc-111711-ncba-ezpass",
+      "source_id": "meeting_doc_111711",
+      "project_name": "Nassau County Bridge Authority E-ZPass Program Implementation",
+      "project_type": "implementation",
+      "status": "approved",
+      "document_time_status": "approved",
+      "description": "TBTA to support NCBA implementation of E-ZPass toll collection at its Atlantic Beach Bridge facility, including back-office system support from the New York E-ZPass Customer Service Center and sponsorship of NCBA's affiliate membership in the E-ZPass Interagency Group"
+    },
+    {
+      "record_id": "project_meeting-doc-111756-laser-module-lease",
+      "source_id": "meeting_doc_111756",
+      "project_name": "Lease of Laser Modules for Rail-Based Cleaning",
+      "project_type": "Noncompetitive Contract Award",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Award of a noncompetitive miscellaneous service contract to Laser Tribology BV for the lease of laser modules for railhead-based cleaning to remove leaf debris and contaminants from rail surfaces."
+    },
+    {
+      "record_id": "project_meeting-doc-112146-l-train-tunnel",
+      "source_id": "meeting_doc_112146",
+      "project_name": "L Train Tunnel Project",
+      "project_type": "rehabilitation",
+      "status": "ongoing",
+      "document_time_status": "active",
+      "description": "Mentioned under Strengthen & Expand Network section"
+    },
+    {
+      "record_id": "project_meeting-doc-113891-metro-north-heritage-series",
+      "source_id": "meeting_doc_113891",
+      "project_name": "Metro-North Heritage Series Locomotives",
+      "project_type": "rebranding/vinyl wrap",
+      "status": "ongoing",
+      "document_time_status": "active",
+      "description": "Rebranding five select locomotives with special colors and designs celebrating Metro-North's 40th anniversary; first locomotive (208) wrapped in original silver, blue and red design; first three pay homage to FL9 locomotives from 1983 founding until 2007"
+    },
+    {
+      "record_id": "project_meeting-doc-114166-madison-ave-dev",
+      "source_id": "meeting_doc_114166",
+      "project_name": "347 Madison Avenue Development",
+      "project_type": "real estate development / transit-oriented development",
+      "status": "ongoing",
+      "document_time_status": "active",
+      "description": "99-year ground lease with Boston Properties for redevelopment of former MTA headquarters at 341-347 Madison Avenue into commercial office tower with new ESA entrance and transit improvements",
+      "borough": "Manhattan"
+    },
+    {
+      "record_id": "project_meeting-doc-114166-sale-tdr-port-morris",
+      "source_id": "meeting_doc_114166",
+      "project_name": "Sale of Development Rights in Port Morris, Bronx",
+      "project_type": "real estate / development rights transfer",
+      "status": "approved",
+      "document_time_status": "approved",
+      "description": "Sale of ±55,174 square feet of excess transferrable development rights at East 135th Street and Park Avenue to Waterfront Living II, LLC for ±$2,483,300",
+      "borough": "Bronx"
+    },
+    {
+      "record_id": "project_meeting-doc-114221-fare-changes-hearings",
+      "source_id": "meeting_doc_114221",
+      "project_name": "Public Hearings on Fare Changes",
+      "project_type": "public hearings",
+      "status": "hearings",
+      "document_time_status": "study",
+      "description": "Public Hearings on Fare Changes"
+    },
+    {
+      "record_id": "project_meeting-doc-115156-gcm-weekend-contractor-maintenance",
+      "source_id": "meeting_doc_115156",
+      "project_name": "Grand Central Madison Weekend Contractor Maintenance",
+      "project_type": "maintenance",
+      "description": "Weekend contractor maintenance at Grand Central Madison with one of two main tracks out of service for approximately 50 hours on August 12-13 and August 19-20"
+    },
+    {
+      "record_id": "project_meeting-doc-115236-grade-crossing-grants",
+      "source_id": "meeting_doc_115236",
+      "project_name": "Grade Crossing Grant Projects",
+      "project_type": "Grant Projects",
+      "status": "ongoing",
+      "document_time_status": "active",
+      "description": "$60M Grant funding. 2016 FRA 3 Grant Projects (42 MNR, 12 LIRR crossings) - $11.3M. 2020 FHWA/CARSI 1 Grant (9 MNR crossings) - $22M. 2021 FRA/CRISI Grant (1 MNR crossing Hudson Ave) - $2.5M. 2022 FHWA/CARSI 2 Grant (10 LIRR, 5 MNR crossings) - $21.4M. Section 130 Grants (1 LIRR, 5 MNR crossings) - $3.5M. Total 85 crossings, $60.6M."
+    },
+    {
+      "record_id": "project_meeting-doc-115236-security-grant-past-util",
+      "source_id": "meeting_doc_115236",
+      "project_name": "Security Grant Program Past Utilization",
+      "project_type": "Grant Program",
+      "status": "completed",
+      "document_time_status": "implemented",
+      "description": "$58M Grant funding total. 2019 $15.61M, 2020 $21.16M, 2021 $11.14M, 2022 $10.31M."
+    },
+    {
+      "record_id": "project_meeting-doc-115256-gjm-frequency-increase",
+      "source_id": "meeting_doc_115256",
+      "project_name": "Off-peak service frequency increases on G, J, M lines",
+      "project_type": "service_frequency_increase",
+      "description": "First round of off-peak service frequency increases took effect on the G, J, and M lines, reducing waiting times by up to 20% on weekends."
+    },
+    {
+      "record_id": "project_meeting-doc-115256-transittalk",
+      "source_id": "meeting_doc_115256",
+      "project_name": "TransitTalk",
+      "project_type": "community_outreach_program",
+      "description": "Ongoing events where President Davey and team speak directly to customers at subway stations. First event at 3 Av-138 St (6) in June 2022. Visited 16 subway stations through June 2023."
+    },
+    {
+      "record_id": "project_meeting-doc-121091-customers-count-survey",
+      "source_id": "meeting_doc_121091",
+      "project_name": "Spring 2023 Customers Count Survey",
+      "project_type": "customer survey",
+      "description": "Biannual online survey conducted last two weeks of May for LIRR and Metro-North customer satisfaction"
+    },
+    {
+      "record_id": "project_meeting-doc-127476-pii-internship",
+      "source_id": "meeting_doc_127476",
+      "project_name": "Partnership for Inclusive Internships (PII) program",
+      "project_type": "internship program",
+      "description": "New paid internship program matching young people with disabilities with paid work opportunities; first group of six summer interns hosted"
+    },
+    {
+      "record_id": "project_meeting-doc-127956-office-supplies-procurement",
+      "source_id": "meeting_doc_127956",
+      "project_name": "All-Agency Procurement for Supply and Delivery of Office Supplies and Copy Paper",
+      "project_type": "procurement",
+      "status": "approved",
+      "document_time_status": "approved",
+      "description": "MTAHQ competitive procurement for office supplies and copy paper via MTA Marketplace, contract to Staples Contract & Commercial LLC"
+    },
+    {
+      "record_id": "project_meeting-doc-128896-mow-data-analysis",
+      "source_id": "meeting_doc_128896",
+      "project_name": "Maintenance of Way - Data Analysis and Decision Support",
+      "project_type": "initiative",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Hire five employees to staff a new Productivity/Efficiency Team to reduce costs by optimizing MoW infrastructure projects for the Capital Program, improve overtime analytics, and enhance project scheduling and reporting"
+    },
+    {
+      "record_id": "project_meeting-doc-129041-atlantic-cable-shop",
+      "source_id": "meeting_doc_129041",
+      "project_name": "NYCT Atlantic Cable Shop Relocation",
+      "project_type": "relocation",
+      "description": "A lease with Generation Next Realty, Inc. for the relocation of the NYCT Atlantic Cable Shop to 2016 Pitkin Avenue in Brooklyn"
+    },
+    {
+      "record_id": "project_meeting-doc-129041-automotive-fueling-station",
+      "source_id": "meeting_doc_129041",
+      "project_name": "Automotive Fueling Station Project",
+      "project_type": "fueling_station",
+      "description": "Acquisition of 4 Fisher Lane from 4 Fisher Lane Realty Co., LLC in support of the Automotive Fueling Station project in North White Plains, NY"
+    },
+    {
+      "record_id": "project_meeting-doc-129041-office-supplies",
+      "source_id": "meeting_doc_129041",
+      "project_name": "MTAHQ Office Supplies and Copy Paper Procurement",
+      "project_type": "procurement_contract",
+      "description": "Award of an estimated quantity purchase contract for the as-needed supply and delivery of office supplies and copy paper to Staples Contract & Commercial LLC. Contract period: three years with two 12-month Options for total duration of five years. Value: $12.8 million."
+    },
+    {
+      "record_id": "project_meeting-doc-129041-storm-king-parking",
+      "source_id": "meeting_doc_129041",
+      "project_name": "MNR Storm King Art Center Parking Permit",
+      "project_type": "parking_permit",
+      "description": "A short-term parking permit between MNR and Storm King Art Center for the use of parking spaces at Salisbury-Mills Cornwall Station"
+    },
+    {
+      "record_id": "project_meeting-doc-131541-second-ave-subway-phase2",
+      "source_id": "meeting_doc_131541",
+      "project_name": "Second Avenue Subway Phase II",
+      "project_type": "alternative dispute resolution program",
+      "status": "fully funded capital project",
+      "document_time_status": "planned",
+      "description": "Fully funded Phase II of the Second Ave Subway"
+    },
+    {
+      "record_id": "project_meeting-doc-131686-ccaas-paratransit",
+      "source_id": "meeting_doc_131686",
+      "project_name": "Contact Center as a Service for Paratransit",
+      "project_type": "modification to miscellaneous service contract",
+      "status": "proposed for award",
+      "document_time_status": "planned",
+      "description": "Modification to contract with DiRAD Technologies to expand existing MTA CCaaS implementation to include NYCT Paratransit Contact Center using Genesys Cloud platform."
+    },
+    {
+      "record_id": "project_meeting-doc-133136-drug-alcohol-program",
+      "source_id": "meeting_doc_133136",
+      "project_name": "Drug & Alcohol Program",
+      "project_type": "program",
+      "status": "update scheduled",
+      "document_time_status": "planned",
+      "description": "The committee will receive an update on Drug & Alcohol Statistics"
+    },
+    {
+      "record_id": "project_meeting-doc-133361-contact-center-as-service",
+      "source_id": "meeting_doc_133361",
+      "project_name": "Contact Center as a Service",
+      "project_type": "IT services",
+      "description": "Expansion of MTA implementation of Contact Center as a Service to NYC Transit's Paratransit Department"
+    },
+    {
+      "record_id": "project_meeting-doc-133361-kronos-systems",
+      "source_id": "meeting_doc_131686",
+      "project_name": "Kronos Systems Integration and Implementation",
+      "project_type": "personal service contract",
+      "status": "proposed for award",
+      "document_time_status": "planned",
+      "description": "Two competitively negotiated retainer contracts with IBM and Accenture to provide consulting services for UKG Dimensions timekeeping platform migration from UKG Workforce Central (WFC)."
+    },
+    {
+      "record_id": "project_meeting-doc-135391-central-islip-signal-hut-easement",
+      "source_id": "meeting_doc_135391",
+      "project_name": "Permanent Exclusive Easement for Ongoing Signal Hut Operations in Central Islip",
+      "project_type": "real estate easement",
+      "status": "proposed for Board approval",
+      "document_time_status": "planned",
+      "description": "Perpetual easement of approximately 750 square feet at 1 Carleton Avenue, Central Islip NY for LIRR signal hut supporting Central Islip Station"
+    },
+    {
+      "record_id": "project_meeting-doc-135391-jamaica-bus-terminal-lease",
+      "source_id": "meeting_doc_135391",
+      "project_name": "Lease with J.W. Mays, Inc. for Office Space in Support of the Relocated Jamaica Bus Terminal",
+      "project_type": "real estate lease",
+      "status": "proposed for Board approval",
+      "document_time_status": "planned",
+      "description": "10-year lease for 2,051 square foot office space at 168-25 Jamaica Avenue, Queens NY to support relocated Jamaica Bus Terminal operations",
+      "borough": "Queens"
+    },
+    {
+      "record_id": "project_meeting-doc-138311-shed-scaffolding-permit",
+      "source_id": "meeting_doc_138311",
+      "project_name": "Permit Agreement with 300 East 40th St. Condominium for Shed and Scaffolding",
+      "project_type": "Permit Agreement",
+      "status": "Active",
+      "document_time_status": "active",
+      "description": "Placement of a shed and scaffolding on the sidewalk adjacent to 300 East 40th St. for exterior building facade inspection under Local Law 11; twelve-month term; $1,566.92 per month compensation",
+      "borough": "Manhattan"
+    },
+    {
+      "record_id": "project_meeting-doc-138436-wwe",
+      "source_id": "meeting_doc_138436",
+      "project_name": "Winter Weather Event (WWE) project",
+      "project_type": "technology deployment",
+      "status": "Deployed, successfully used during two past snow events",
+      "document_time_status": "implemented",
+      "description": "Improves tracking of the Division of Stations' snow response activities using a new EAM application. Managed, designed, and implemented by Joshua Matt Cawthon using HxGN EAM application with GIS Dashboard."
+    },
+    {
+      "record_id": "project_meeting-doc-140411-city-winery-gct-license",
+      "source_id": "meeting_doc_140411",
+      "project_name": "City Winery license extension in Grand Central Terminal",
+      "project_type": "real estate license",
+      "description": "A license extension with City Winery to facilitate an assignment of its license for a restaurant in Grand Central Terminal"
+    },
+    {
+      "record_id": "project_meeting-doc-140411-tbta-payroll-mobility-tax-bonds",
+      "source_id": "meeting_doc_140411",
+      "project_name": "TBTA Payroll Mobility Tax Senior Lien Refunding Green Bonds Series 2024B and Bond Anticipation Notes Series 2024C",
+      "project_type": "bond issuance",
+      "description": "In May 2024, MTA expects to issue approximately $1 billion of TBTA Payroll Mobility Tax Senior Lien Refunding Green Bonds Series 2024B and approximately $600 million TBTA Payroll Mobility Tax Bond Anticipation Notes Series 2024C"
+    },
+    {
+      "record_id": "project_meeting-doc-140516-parking-discount",
+      "source_id": "meeting_doc_140516",
+      "project_name": "North White Plains Parking Discount",
+      "project_type": "parking discount",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "25 percent discount on parking in the Metro-North-owned North White Plains parking lot for Orange and Rockland County residents. Located across from Metro-North's North White Plains station on the Harlem Line."
+    },
+    {
+      "record_id": "project_meeting-doc-140621-gcm-operations-maintenance",
+      "source_id": "meeting_doc_140621",
+      "project_name": "Grand Central Madison Operations and Maintenance Contract",
+      "project_type": "operations and maintenance contract",
+      "description": "Contract to George S. Hall, Inc. for operation and maintenance of Grand Central Madison Concourse, associated ventilation/power facilities, and communication rooms in Sunnyside Yards, Queens."
+    },
+    {
+      "record_id": "project_meeting-doc-143166-hartsdale-station-lease",
+      "source_id": "meeting_doc_143166",
+      "project_name": "Lease with E Hartsdale Food Mart, Inc. for the MNR Hartsdale Station",
+      "project_type": "lease agreement",
+      "status": "requesting authorization",
+      "document_time_status": "planned",
+      "description": "Authorization to enter into a lease agreement with E Hartsdale Food Mart, Inc. for operation of a food and beverage convenience store at the MNR Hartsdale station building at 223 East Hartsdale Avenue, Hartsdale, NY"
+    },
+    {
+      "record_id": "project_meeting-doc-152171-42-st-shuttle-5g",
+      "source_id": "meeting_doc_152171",
+      "project_name": "42 St Shuttle 5G Cell Service",
+      "project_type": "cell service installation",
+      "description": "5G Cell Service on the 42 St Shuttle"
+    },
+    {
+      "record_id": "project_meeting-doc-152171-model-g-train",
+      "source_id": "meeting_doc_152171",
+      "project_name": "Model G Train Project",
+      "project_type": "train project",
+      "description": "Model G Train Project Sets a New Standard"
+    },
+    {
+      "record_id": "project_meeting-doc-154976-i-move-ny-campaign",
+      "source_id": "meeting_doc_154976",
+      "project_name": "I Move NY",
+      "project_type": "public awareness campaign",
+      "status": "launched October 2024",
+      "document_time_status": "implemented",
+      "description": "Campaign celebrating NYCT employees with ads on 3,000 buses, digital screens, and social media"
+    },
+    {
+      "record_id": "project_meeting-doc-154986-paratransit-ion",
+      "source_id": "meeting_doc_154986",
+      "project_name": "Paratransit Technology Immediate Operating Need Interim Solutions",
+      "project_type": "procurement",
+      "status": "active",
+      "document_time_status": "active",
+      "description": "Interim technology solution contracts for continuity of Paratransit service for scheduling, dispatching, AVLM, and IVR in response to an Immediate Operating Need following termination of contract W-32564"
+    },
+    {
+      "record_id": "project_meeting-doc-154986-rts-cad-replacement",
+      "source_id": "meeting_doc_154986",
+      "project_name": "Competitive Solicitation for Replacement of RTS/CAD/AVLM Systems",
+      "project_type": "procurement",
+      "status": "underway",
+      "document_time_status": "active",
+      "description": "Competitive solicitation underway for replacement of the RTS/CAD/AVLM systems for Paratransit"
+    },
+    {
+      "record_id": "project_meeting-doc-157771-hicksville-dri",
+      "source_id": "meeting_doc_157711",
+      "project_name": "Hicksville Downtown Revitalization Initiative",
+      "project_type": "downtown revitalization",
+      "status": "proposed for approval",
+      "document_time_status": "planned",
+      "description": "Town of Oyster Bay initiative to construct a new pedestrian passageway, public open space, and festival plaza connecting Hicksville Station to Broadway and the Hicksville business district, including trees, seating, and a temporary pavilion connecting to Kennedy Park."
+    },
+    {
+      "record_id": "project_meeting-doc-157976-ze-buses",
+      "source_id": "meeting_doc_157976",
+      "project_name": "Zero-Emission Bus Program",
+      "project_type": "zero-emission buses",
+      "status": "Both buses and depot charging infrastructure will proceed",
+      "document_time_status": "other",
+      "description": "Electric bus procurement and depot charging infrastructure build-out."
+    },
+    {
+      "record_id": "project_meeting-doc-160136-eleventh-mou-newburgh",
+      "source_id": "meeting_doc_160136",
+      "project_name": "Eleventh Memorandum of Understanding (MOU) between MNR and City of Newburgh for Reimbursement of Ferry Landing/Parking Lease",
+      "project_type": "memorandum_of_understanding",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Proposed Eleventh MOU under which Metro-North will reimburse City of Newburgh for lease payments for parking and ferry landing facilities used by the Newburgh-Beacon Ferry for period January 1, 2025 through December 31, 2025 at $21,916 per month"
+    },
+    {
+      "record_id": "project_meeting-doc-160311-mn249632",
+      "source_id": "meeting_doc_160311",
+      "project_name": "BBM Railway Equipment Car Hoist and Turntable Maintenance Contract",
+      "project_type": "procurement",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Preventative maintenance, inspection, repair and parts supply for Car Hoists and Truck Turntables manufactured by Macton Corporation"
+    },
+    {
+      "record_id": "project_meeting-doc-160321-nycsc",
+      "source_id": "meeting_doc_160321",
+      "project_name": "New York Customer Service Center (NYCSC) System",
+      "project_type": "customer service system implementation",
+      "status": "scheduled to go live in early 2025",
+      "document_time_status": "planned",
+      "description": "Implementation of a customer service center system including license plate and owner identification services, customer contact center, and tag distribution"
+    },
+    {
+      "record_id": "project_meeting-doc-166926-locomotive-222",
+      "source_id": "meeting_doc_166926",
+      "project_name": "Inaugural Run of Locomotive 222",
+      "project_type": "locomotive restoration",
+      "status": "completed",
+      "document_time_status": "implemented",
+      "description": "Metro-North debuted Locomotive No. 222, the sixth locomotive in the Heritage Locomotive Series, with an inaugural run from Danbury, CT, to Grand Central Terminal on February 28, 2025. Pays tribute to the historic New York, New Haven and Hartford Railroad with olive green and gold color scheme from the 1940-50s. Restoration involved teams from Harmon Diesel Shop, Stamford Heavy Repair, and North White Plains Freight and Paint Shops."
+    },
+    {
+      "record_id": "project_meeting-doc-170846-signal-testing-east-jamaica",
+      "source_id": "meeting_doc_170846",
+      "project_name": "Signal Testing East of Jamaica Station",
+      "project_type": "signal testing",
+      "status": "supported during May 2025 timetable",
+      "document_time_status": "planned"
+    },
+    {
+      "record_id": "project_meeting-doc-170991-mnr-parking-license",
+      "source_id": "meeting_doc_171021",
+      "project_name": "License extension with LAZ Parking NY/NJ, LLC for the operation of commuter parking facilities at various Metro-North stations",
+      "project_type": "license extension",
+      "status": "Authorization requested for extension",
+      "document_time_status": "planned",
+      "description": "Authorization to extend the License Agreement for Commuter parking operation and maintenance"
+    },
+    {
+      "record_id": "project_meeting-doc-171006-grc-system-extension",
+      "source_id": "meeting_doc_171006",
+      "project_name": "MTA Governance, Risk, and Compliance System Extension",
+      "project_type": "contract modification",
+      "description": "Five-year extension of contract with Ernst & Young LLC for MTA GRC System SaaS and technical support, including additional applications, vendor portal access, training passes, and ServiceNow integration at no cost."
+    },
+    {
+      "record_id": "project_meeting-doc-171006-management-consultant-services",
+      "source_id": "meeting_doc_171006",
+      "project_name": "Management Consultant Services Multi-Agency Contracts Extension",
+      "project_type": "contract modification",
+      "description": "Extension of 15 competitively negotiated all-agency personal service contracts for Management Consultant Services for 12 months and increase of aggregate amount by $10.3 million to allow time to solicit and award new multiagency management consulting contracts through a competitive RFP."
+    },
+    {
+      "record_id": "project_meeting-doc-171021-mgmt-consultant-services",
+      "source_id": "meeting_doc_171021",
+      "project_name": "Contract for Management Consultant Services",
+      "project_type": "contract modification",
+      "description": "Modification in order to (1) extend 15 contracts for 12 months; and (2) increase the aggregate amount of these contracts"
+    },
+    {
+      "record_id": "project_meeting-doc-171021-mta-grc-system",
+      "source_id": "meeting_doc_171021",
+      "project_name": "MTA Governance, Risk, and Compliance (\"GRC\") System",
+      "project_type": "contract modification",
+      "description": "Contract for MTA Governance, Risk, and Compliance (\"GRC\") System: Modification in order to extend the contract for five years to provide continuous software as a service and technical support"
+    },
+    {
+      "record_id": "project_meeting-doc-173986-coe-phase-3c",
+      "source_id": "meeting_doc_173986",
+      "project_name": "Connection-Oriented Ethernet (COE) Phase 3C",
+      "project_type": "Design-Build",
+      "status": "on schedule",
+      "document_time_status": "under_construction",
+      "description": "Final phase of COE project. Upgrade existing NYCT network to enhance capacity and speed of CCTV and security systems. Expand COE network to reach all stations, migrate PID cameras for 125 stations, replace 150,000 feet of fiber optic cable."
+    },
+    {
+      "record_id": "project_meeting-doc-174061-pts-upgrade",
+      "source_id": "meeting_doc_174061",
+      "project_name": "Paratransit Technology System Upgrade",
+      "project_type": "technology upgrade",
+      "status": "implementation",
+      "document_time_status": "active",
+      "description": "Comprehensive overhaul of the Paratransit Technology System (PTS), including replacement of the 20-year-old legacy system with a new technology platform"
+    },
+    {
+      "record_id": "project_meeting-doc-177171-42nd-st-corridor",
+      "source_id": "meeting_doc_177171",
+      "project_name": "42nd Street Corridor Projects - Program Management Extension",
+      "project_type": "project management services",
+      "status": "ratified",
+      "document_time_status": "approved",
+      "description": "Ratification of modification to extend contract by 19 months through April 30, 2026 for continued project management services for three ongoing 42nd Street Corridor projects: escalator replacement at Grand Central (Flushing Line), circulation improvements at Grand Central-42nd Street Station, and new elevators at Bryant Park-42nd Street and Fifth Avenue Station."
+    },
+    {
+      "record_id": "project_meeting-doc-177171-ems-tango",
+      "source_id": "meeting_doc_176501",
+      "project_name": "Energy Management System",
+      "project_type": "miscellaneous service contract",
+      "status": "pending Board approval",
+      "document_time_status": "planned",
+      "description": "Furnish and implement an MTA-wide Energy Management System (EMS) for utility billing data management and efficient and cost-effective management of MTA energy use. Contract to Tango Analytics LLC. Contract No. 900000000004944."
+    },
+    {
+      "record_id": "project_meeting-doc-177171-fmtac-portfolio-mgr",
+      "source_id": "meeting_doc_176501",
+      "project_name": "Investment Portfolio Manager for FMTAC",
+      "project_type": "personal service contract",
+      "status": "pending Board approval",
+      "document_time_status": "planned",
+      "description": "Portfolio management services for assets held within First Mutual Transportation Assurance Company (FMTAC), MTA's wholly owned captive insurance company. Contract to BlackRock Financial Management Inc. Contract No. 15900."
+    },
+    {
+      "record_id": "project_meeting-doc-177171-marine-tiger-pts",
+      "source_id": "meeting_doc_177171",
+      "project_name": "Paratransit Technology System Transition Consulting",
+      "project_type": "consulting services",
+      "status": "approved",
+      "document_time_status": "approved",
+      "description": "Three-year noncompetitive personal service contract to Marine Tiger Technologies Corporation for project management consulting services for the transition to the new Paratransit Technology System which provides scheduling and routing support for daily Paratransit operations."
+    },
+    {
+      "record_id": "project_meeting-doc-177266-paratransit-tech-system",
+      "source_id": "meeting_doc_177266",
+      "project_name": "Paratransit Technology System",
+      "project_type": "technology platform",
+      "status": "upcoming",
+      "document_time_status": "planned",
+      "description": "A modern Paratransit Technology System to unlock further scheduling efficiencies and service improvements"
+    },
+    {
+      "record_id": "project_meeting-doc-177271-congestion-relief",
+      "source_id": "meeting_doc_177271",
+      "project_name": "Congestion Relief Projects Moving Forward",
+      "project_type": "program",
+      "description": "Congestion relief projects moving forward"
+    },
+    {
+      "record_id": "project_meeting-doc-179561-beacon-tod",
+      "source_id": "meeting_doc_179561",
+      "project_name": "Beacon Station Transit-Oriented Development",
+      "project_type": "Transit-oriented development",
+      "status": "Conditional designation pending",
+      "document_time_status": "planned",
+      "description": "Mixed-use residential and retail transit-oriented development on the North commuter surface parking lot at MNR's Beacon Station, with MNR Replacement Garage and 99-year ground lease",
+      "borough": "City of Beacon"
+    },
+    {
+      "record_id": "project_meeting-doc-186836-paratransit-tech",
+      "source_id": "meeting_doc_186836",
+      "project_name": "Paratransit Enterprise Technology System",
+      "project_type": "technology replacement",
+      "status": "awarded August 18, 2025, pending board ratification",
+      "document_time_status": "planned",
+      "description": "New enterprise technology system replacing existing RTS/CAD and AVLM systems for Paratransit Access-A-Ride operations, including customer management, reservations, scheduling, dispatching, real-time vehicle tracking and billing/reconciliation"
+    },
+    {
+      "record_id": "project_meeting-doc-186961-median-barrier-transfer",
+      "source_id": "meeting_doc_186961",
+      "project_name": "Median Barrier Transfer Services Extension",
+      "project_type": "public works contract amendment",
+      "status": "approval",
+      "document_time_status": "other",
+      "description": "Extension of Median Barrier Transfer Services on the Verrazzano-Narrows Bridge for one year at $3,048,000. Extension will allow continuation until October 2026 when services will be performed under capital project VN-84B."
+    },
+    {
+      "record_id": "project_meeting-doc-186961-revenue-recovery-system",
+      "source_id": "meeting_doc_186961",
+      "project_name": "Automated Revenue Recovery System",
+      "project_type": "personal service contract modification",
+      "status": "ratification",
+      "document_time_status": "other",
+      "description": "Implement an automated Revenue Recovery System to review images of obstructed and altered plates and determine owners by identifying missing license plate characters. Cost $3,394,170 includes liquidated damages and two years of support and maintenance."
+    },
+    {
+      "record_id": "project_meeting-doc-189981-dental-benefits",
+      "source_id": "meeting_doc_189981",
+      "project_name": "MTA All Agencies Dental Benefits Plans",
+      "project_type": "competitive personal service contracts",
+      "status": "proposed for award",
+      "document_time_status": "planned",
+      "description": "Competitively negotiated personal service contracts to provide dental benefits services to MTA on behalf of its affiliate agencies"
+    },
+    {
+      "record_id": "project_meeting-doc-189981-zcloud-kyndryl",
+      "source_id": "meeting_doc_189981",
+      "project_name": "zCloud Implementation and Data Center Maintenance and Managed Services",
+      "project_type": "noncompetitive miscellaneous service contract",
+      "status": "proposed for award",
+      "document_time_status": "planned",
+      "description": "Noncompetitive contract to Kyndryl Inc. to upgrade MTA's mainframe environment to Kyndryl's zCloud platform and continue maintenance and managed support for MTA data center operating environments"
+    },
+    {
+      "record_id": "project_meeting-doc-201641-its-consultant-services",
+      "source_id": "meeting_doc_201641",
+      "project_name": "Miscellaneous Intelligent Transportation System & Operations Systems Consultant Design Services on an As-Needed Basis",
+      "project_type": "personal service contracts",
+      "status": "seeking Board approval to award",
+      "document_time_status": "planned",
+      "description": "B&T competitively solicited personal service contracts to four firms for ITS and Operations Systems consultant design services on an as-needed basis, aggregate estimated amount of $15 million over five years"
+    },
+    {
+      "record_id": "project_meeting-doc-201726-it-consulting",
+      "source_id": "meeting_doc_201726",
+      "project_name": "All-Agency As-Needed Information Technology Consulting Services",
+      "project_type": "personal service retainer contract",
+      "status": "seeking Board approval for award",
+      "document_time_status": "planned",
+      "description": "Competitively negotiated personal services retainer contract to 50 consulting firms to provide as-needed IT consulting services on a zero-dollar basis with work assignments through mini-RFP process"
+    },
+    {
+      "record_id": "project_meeting-doc-201726-transp-planning-design",
+      "source_id": "meeting_doc_201726",
+      "project_name": "Transportation Planning and Conceptual Design Retainer",
+      "project_type": "modification to personal service contract",
+      "status": "seeking Board approval for extension and funding increase",
+      "document_time_status": "planned",
+      "description": "Extension of 11 competitively solicited all-agency personal services contracts for 12 months (April 1, 2026-March 31, 2027) and funding increase of $6M for transportation planning research services"
+    },
+    {
+      "record_id": "project_meeting-doc-201746-cdms-hastus-mnr-lirr",
+      "source_id": "meeting_doc_201746",
+      "project_name": "MTA Crew Dispatch and Management System Implementation, Licensing, and Maintenance for Metro-North Railroad and Long Island Rail Road",
+      "project_type": "Miscellaneous Service Contract",
+      "status": "Proposed award (Board approval sought)",
+      "document_time_status": "planned",
+      "description": "Award informal competitive miscellaneous services contract to GIRO, Inc. to deliver and implement HASTUS CDMS to replace MNR's legacy CMS and LIRR's legacy TEAMS. April 2026-March 2034 term."
+    },
+    {
+      "record_id": "project_meeting-doc-201746-hastus-upgrade-nyct-lirr",
+      "source_id": "meeting_doc_201746",
+      "project_name": "Upgrade of HASTUS Scheduling System - NYC Transit DOS/DOB/MTABC Extension and LIRR Version Upgrade",
+      "project_type": "Modification to Miscellaneous Service Contract",
+      "status": "Proposed modification (Board approval sought)",
+      "document_time_status": "planned",
+      "description": "Five-year extension of GIRO HASTUS licensing and support for NYC Transit DOS, DOB, and MTA Bus Company ($4,191,355) plus upgrade of LIRR HASTUS from version 2014 to 2027 with five years licensing and support ($4,011,613). Total $8,202,968. Co-terminates March 2032."
+    },
+    {
+      "record_id": "project_meeting-doc-201746-transportation-planning-retainer",
+      "source_id": "meeting_doc_201746",
+      "project_name": "Transportation Planning and Conceptual Design Retainer - Extension and Funding Increase",
+      "project_type": "Modification to Personal Service Contract",
+      "status": "Proposed modification (Board approval sought)",
+      "document_time_status": "planned",
+      "description": "Extension of 11 all-agency contracts for transportation planning research services for 12 months and $6 million funding increase to support environmental assessments, 2025-29 Capital Program expansion projects, and rail network strategy studies."
+    },
+    {
+      "record_id": "project_meeting-doc-205541-bus-command-center",
+      "source_id": "meeting_doc_205541",
+      "project_name": "Bus Command Center",
+      "project_type": "communications upgrade",
+      "status": "ongoing",
+      "document_time_status": "active",
+      "description": "Centralizing bus service management; upgrading communications at the Bus Command Center. Buses equipped with devices connecting operators to the command center using a data network."
+    },
+    {
+      "record_id": "project_meeting-doc-205681-co-op-city-station",
+      "source_id": "meeting_doc_205681",
+      "project_name": "Co-op City Station",
+      "project_type": "station",
+      "description": "Future Co-op City Station as part of the Penn Station Access Project",
+      "borough": "Bronx"
+    },
+    {
+      "record_id": "project_meeting-doc-206081-sas-outreach-mod",
+      "source_id": "meeting_doc_206081",
+      "project_name": "Second Avenue Subway Phase 2 Community Outreach Services Modification",
+      "project_type": "community outreach",
+      "status": "ratification requested",
+      "document_time_status": "planned",
+      "description": "Modification to extend contract with East Harlem Community Collaborators JV for community outreach services in support of Second Avenue Subway Phase 2. Includes staffing and managing SAS Community Information Center in Harlem."
+    },
+    {
+      "record_id": "project_meeting-doc-206201-bwb-geometry",
+      "source_id": "meeting_doc_206201",
+      "project_name": "BWB geometry improvements",
+      "project_type": "geometry improvement",
+      "status": "completed",
+      "document_time_status": "implemented",
+      "description": "Geometry improvements at Bronx-Whitestone Bridge"
+    },
+    {
+      "record_id": "project_meeting-doc-68336-mta-cd-admin",
+      "source_id": "meeting_doc_68336",
+      "project_name": "MTA Construction & Development",
+      "project_type": "MTA Interagency administrative element",
+      "status": "new",
+      "document_time_status": "other",
+      "description": "New $18.8 million MTA Interagency element to help administer MTA Construction & Development activities"
+    },
+    {
+      "record_id": "project_meeting-doc-72546-mcra-nypa",
+      "source_id": "meeting_doc_72546",
+      "project_name": "Master Cost Recovery Agreement",
+      "project_type": "energy efficiency agreement",
+      "status": "pending board approval",
+      "document_time_status": "planned",
+      "description": "New agreement between NYPA and MTA for energy efficiency projects, replacing prior ESPA agreement that expired December 2021. 10-year term."
+    },
+    {
+      "record_id": "project_meeting-doc-79341-midland-lease",
+      "source_id": "meeting_doc_79341",
+      "project_name": "Lease Buyout with Midland Avenue Rye LLC",
+      "project_type": "real estate",
+      "status": "approved by committee",
+      "document_time_status": "approved",
+      "description": "Early termination and buyout of lease for 24,724 square feet of land along Metro-North's New Haven Line between catenary towers b-213 and b-x215 adjacent to track 4 in the City of Rye, County of Westchester, NY. Compensation: $850,000."
+    },
+    {
+      "record_id": "project_meeting-doc-79341-nokia-vhf",
+      "source_id": "meeting_doc_79341",
+      "project_name": "Nokia VHF Radio System Contract Modification",
+      "project_type": "procurement",
+      "status": "pending board approval",
+      "document_time_status": "planned",
+      "description": "Modification of existing maintenance services contract with Nokia of America Corporation to extend the contract for an additional two years, plus a two-year option for technical assistance and maintenance support for the VHF radio system. Total $9,233,487."
+    },
+    {
+      "record_id": "project_meeting-doc-79341-raisin-lease",
+      "source_id": "meeting_doc_79341",
+      "project_name": "Lease Extension at 70-10 74th Street, Glendale",
+      "project_type": "real estate",
+      "status": "approved by committee",
+      "document_time_status": "approved",
+      "description": "9-month lease extension with Raisin Realty Inc. for approximately 60,000 square feet of warehouse space at $44,166.66/month ($8.83/sq ft) for NYCT Infrastructure Capital Construction and Electronic Maintenance Division. Extension term: April 11, 2022 to January 10, 2023.",
+      "borough": "Queens"
+    },
+    {
+      "record_id": "project_meeting-doc-95161-sprague-fuel-contract",
+      "source_id": "meeting_doc_95161",
+      "project_name": "Contract extension with Sprague Operating Resources LLC for ULSD fuel delivery",
+      "project_type": "procurement",
+      "status": "approved",
+      "document_time_status": "approved",
+      "description": "One-year contract extension to furnish and deliver Ultra-Low Sulfur Diesel #2 Fuel with Additives for use in buses"
+    },
+    {
+      "record_id": "project_meeting-doc-95161-wsp-contract-extension",
+      "source_id": "meeting_doc_95161",
+      "project_name": "Contract extension with WSP USA Incorporated for worldwide inspection and testing services",
+      "project_type": "procurement",
+      "status": "approved",
+      "document_time_status": "approved",
+      "description": "Two-year contract extension for worldwide inspection and testing services"
+    },
+    {
+      "record_id": "project_meeting-doc-98296-bronx-ambassadors",
+      "source_id": "meeting_doc_98296",
+      "project_name": "Bronx Ambassadors Program",
+      "project_type": "customer service program",
+      "description": "Return of the Bronx Ambassadors Program to improve bus service.",
+      "borough": "Bronx"
+    },
+    {
+      "record_id": "project_meeting-doc-98321-eam-extension",
+      "source_id": "meeting_doc_98321",
+      "project_name": "Enterprise Asset Management Contract Extension",
+      "project_type": "contract_modification",
+      "description": "Two-year extension and $49,170,000 increase for 14 firms providing Enterprise Asset Management consulting services across MTA agencies, including Department of Subways ($28M), LIRR ($6.1M), and MTA Bus Operations ($7.9M)."
+    },
+    {
+      "record_id": "project_meeting-doc-locomotive-engineer-workforce",
+      "source_id": "meeting_doc_102716",
+      "project_name": "Locomotive Engineer Workforce",
+      "project_type": "workforce initiative",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Focused effort to increase Locomotive Engineer headcount to enable Transportation Department to address short-term and long-term staffing needs, meet training standards, and address overall staffing shortages"
+    },
+    {
+      "record_id": "project_meeting-doc-sbmp",
+      "source_id": "meeting_doc_102781",
+      "project_name": "Small Business Mentoring Program",
+      "project_type": "contract extension",
+      "status": "active",
+      "document_time_status": "active",
+      "description": "The goal for the current year is 70 projects totaling $75 million. To date there are 15 projects awarded totaling $8.9 million, 21 projects in bidding totaling $19.3 million, 10 projects pending an award totaling $7.6 million, 11 projects pending bid opening totaling $11.7 million."
+    },
+    {
+      "record_id": "project_meeting-doc-trainmaster-supervisory-oversight",
+      "source_id": "meeting_doc_102716",
+      "project_name": "Increase Transportation Trainmasters to Increase Supervisory Oversight of Train Crew",
+      "project_type": "workforce initiative",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Hire eight trainmasters to increase supervisory oversight of train crews"
+    },
+    {
+      "record_id": "project_meeting167271-penn-foods-lease",
+      "source_id": "meeting_doc_167271",
+      "project_name": "Penn Foods Concepts Retail Agreement",
+      "project_type": "retail_agreement",
+      "status": "RFP",
+      "document_time_status": "planned",
+      "description": "10-year travel convenience concession retail lease at 34th St – Herald Square"
+    },
+    {
+      "record_id": "project_meeting167271-vanderbilt-tennis-lease",
+      "source_id": "meeting_doc_167271",
+      "project_name": "Vanderbilt Tennis Club Retail Agreement",
+      "project_type": "retail_agreement",
+      "status": "RFP",
+      "document_time_status": "planned",
+      "description": "10-year retail lease agreement for Vanderbilt Tennis Club, LLC at Grand Central Terminal D Hall"
+    },
+    {
+      "record_id": "project_meeting186856-beacon-station-housing",
+      "source_id": "meeting_doc_186856",
+      "project_name": "Beacon Station Housing Development",
+      "project_type": "housing development",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "265 housing units at Beacon Station on Metro-North's Hudson Line, including one-to-one replacement commuter parking"
+    },
+    {
+      "record_id": "project_meeting91596-contingency-recovery-rides",
+      "source_id": "meeting_doc_91596",
+      "project_name": "Contingency Recovery Rides",
+      "project_type": "paratransit service",
+      "status": "extended",
+      "document_time_status": "active",
+      "description": "Contingency Recovery Rides for Access-A-Ride customers, extended until June 2023"
+    },
+    {
+      "record_id": "project_meeting91596-procurement-package",
+      "source_id": "meeting_doc_91596",
+      "project_name": "June 2022 Procurement Package",
+      "project_type": "procurement",
+      "status": "approved",
+      "document_time_status": "approved",
+      "description": "Four procurement items for an estimated expenditure of $11.4 million, including contract modifications with Arrow Inc., LEAP, and LimoSys (E-Hail Pilot Program brokers) and RFP for nine R259 10-ton crane cars for NYCT"
+    },
+    {
+      "record_id": "project_mid-suffolk-yard-phase1",
+      "source_id": "meeting_doc_100321",
+      "project_name": "Mid-Suffolk Yard (Phase 1)",
+      "project_type": "yard",
+      "status": "Beneficial Use Achieved",
+      "document_time_status": "implemented",
+      "description": "New yard support facility completion March 2020, Yard and supporting infrastructure completion October 2020, Closeout forecast July 2023"
+    },
+    {
+      "record_id": "project_mnr-demand-response-program",
+      "source_id": "meeting_doc_205591",
+      "project_name": "Demand Response Program Expansion",
+      "project_type": "sustainability",
+      "status": "expanded beyond GCT to North White Plains",
+      "document_time_status": "implemented",
+      "description": "Expanded Demand Response Program beyond Grand Central Terminal to include the North White Plains office complex. Load-management strategies lower peak-period energy demand and support regional grid reliability."
+    },
+    {
+      "record_id": "project_mnr-digital-audio-call-recording",
+      "source_id": "meeting_doc_160206",
+      "project_name": "Digital Audio Call Recording System",
+      "project_type": "Design-Build",
+      "status": "Awaiting Board Approval for Award",
+      "document_time_status": "planned",
+      "description": "Design-Build services to upgrade hardware and software for Metro-North Railroad's Private Branch Exchange (PBX) system. Will integrate a recording system to locally record audio communications at MNR's OCC, back-up OCC, and key facilities across Hudson, Harlem, and New Haven Lines."
+    },
+    {
+      "record_id": "project_mnr-tracks-program",
+      "source_id": "meeting_doc_199156",
+      "project_name": "Together Railroads and Communities Keeping Safe (TRACKS)",
+      "project_type": "public_outreach_program",
+      "description": "Program providing opportunities for MNR to educate riders and the public on safe behaviors when traveling on trains and navigating railroad grade crossings. Strengthens public awareness and reinforces safe practices."
+    },
+    {
+      "record_id": "project_moynihan-tifia-refinancing",
+      "source_id": "meeting_doc_44266",
+      "project_name": "Refinancing of ESD TIFIA Loan for Moynihan Station Development Project Phase 2",
+      "project_type": "refinancing",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "To obtain MTA Board approval to enter into various agreements necessary to support the refinancing of an existing TIFIA loan up to $633 million for Phase 2 of the Moynihan Station Development Project"
+    },
+    {
+      "record_id": "project_mta-20-year-needs-assessment-2025-2044",
+      "source_id": "meeting_doc_124991",
+      "project_name": "MTA 20-Year Needs Assessment (2025-2044)",
+      "project_type": "needs assessment",
+      "description": "MTA 20-Year Needs Assessment covering the period 2025-2044, focusing on three challenges: Increasing Resiliency, Aging Infrastructure, and Changing Rider Needs"
+    },
+    {
+      "record_id": "project_mta-avl-monitoring-system",
+      "source_id": "meeting_doc_26926",
+      "project_name": "Automated Vehicle Location Monitoring System (AVLM)",
+      "project_type": "procurement",
+      "status": "pending board approval",
+      "document_time_status": "planned",
+      "description": "Implementation of MTA Automated Vehicle Location Monitoring System for all MTA Agencies. Includes delivery and installation of all hardware, cloud-based software, wireless data service, maintenance and support services in the not-to-exceed amount of $4,026,393. Replaces current AVLM system for non-passenger fleet of approximately 2,500 vehicles."
+    },
+    {
+      "record_id": "project_mta-operating-efficiencies",
+      "source_id": "meeting_doc_127696",
+      "project_name": "MTA Operating Efficiencies",
+      "project_type": "operating efficiency program",
+      "status": "identified",
+      "document_time_status": "other",
+      "description": "MTA committed to saving $500 million in recurring operating costs, starting with $100 million 2023, $400 million in 2024, growing to $500 million in 2025"
+    },
+    {
+      "record_id": "project_mta-sbdmp-contract-award-2024",
+      "source_id": "meeting_doc_160291",
+      "project_name": "Small Business Development and Mentoring Program (SBDMP) Contract",
+      "project_type": "Miscellaneous Service Contract",
+      "status": "Proposed for board approval",
+      "document_time_status": "planned",
+      "description": "Competitively negotiated contract for management of MTA's Small Business Development and Mentoring Program, including mentoring services, bank loan repayment administration, payment tracking, and project meeting attendance"
+    },
+    {
+      "record_id": "project_multiple-series-refunding-bond-supplemental-resolutions",
+      "source_id": "meeting_doc_146966",
+      "project_name": "Multiple Series Refunding Bond Supplemental Resolutions",
+      "project_type": "resolution",
+      "status": "approved",
+      "document_time_status": "approved",
+      "description": "Approved by the Board in December 2023, authorizing 2024 refundings to which the updated Refunding Policy will apply"
+    },
+    {
+      "record_id": "project_mymta-web-app-paratransit-auth",
+      "source_id": "meeting_doc_160391",
+      "project_name": "MYMTA Web/APP Paratransit Taxi Authorization",
+      "project_type": "technology initiative",
+      "status": "active",
+      "document_time_status": "active",
+      "description": "Paratransit initiative that enables customers to receive authorization for taxis directly from the MYMTA Web/APP"
+    },
+    {
+      "record_id": "project_north-white-plains-parking-license",
+      "source_id": "meeting_doc_85796",
+      "project_name": "North White Plains Station Parking License Agreement",
+      "project_type": "license agreement",
+      "status": "authorization requested",
+      "document_time_status": "planned",
+      "description": "Five-year license (May 1, 2022-April 30, 2027) for County of Westchester to operate and maintain Metro-North's 392-space commuter parking lot at North White Plains Station. 60/40% gross revenue share. County covers maintenance from its 60% share."
+    },
+    {
+      "record_id": "project_nycsc-project-management-consultant",
+      "source_id": "meeting_doc_72536",
+      "project_name": "Project Management Consultant Services for the New York Customer Service Center Contracts",
+      "project_type": "Personal Service Contract",
+      "status": "Pending Award",
+      "document_time_status": "planned",
+      "description": "Personal service contract for Project Management Consultant Services for the New York Customer Service Center Contracts"
+    },
+    {
+      "record_id": "project_nyct-additional-initiatives",
+      "source_id": "meeting_doc_127696",
+      "project_name": "Additional NYCT Initiatives",
+      "project_type": "operating efficiency initiative",
+      "description": "16 additional initiatives detailed in financial plan"
+    },
+    {
+      "record_id": "project_nyct-bus-simulators",
+      "source_id": "meeting_doc_199156",
+      "project_name": "Bus Operator Simulators",
+      "project_type": "training_equipment",
+      "status": "deployed April 2026",
+      "document_time_status": "implemented",
+      "description": "Four simulators for Operator training and retraining; one at Spring Creek Depot and three at Zerega."
+    },
+    {
+      "record_id": "project_nyct-extend-railcar-overhaul-cycles",
+      "source_id": "meeting_doc_127696",
+      "project_name": "Extend Railcar Overhaul Cycles",
+      "project_type": "operating efficiency initiative",
+      "description": "Adjust scheduled maintenance system cycle program for cars while maintaining reliability"
+    },
+    {
+      "record_id": "project_nyct-improve-employee-availability",
+      "source_id": "meeting_doc_127696",
+      "project_name": "Improve Employee Availability",
+      "project_type": "operating efficiency initiative",
+      "description": "Comprehensive effort including recognition for exemplary attendance; expanded employee engagement; and joint working groups with Labor to reduce assaults"
+    },
+    {
+      "record_id": "project_nyct-improve-workers-comp",
+      "source_id": "meeting_doc_127696",
+      "project_name": "Improve Workers' Comp Processes",
+      "project_type": "operating efficiency initiative",
+      "description": "Including partnering with third-party administrator to improve care while reducing costs"
+    },
+    {
+      "record_id": "project_nyct-increase-energy-efficiency",
+      "source_id": "meeting_doc_127696",
+      "project_name": "Increase Energy Efficiency",
+      "project_type": "operating efficiency initiative",
+      "description": "Lower costs and greenhouse gas emissions through efforts including LED lighting and optimizing heating and cooling (e.g., remote boiler monitoring)"
+    },
+    {
+      "record_id": "project_nyct-insource-cleaning",
+      "source_id": "meeting_doc_127696",
+      "project_name": "Insource Cleaning",
+      "project_type": "operating efficiency initiative",
+      "description": "Eliminated contract cleaning and hired additional cleaners for stations and cars"
+    },
+    {
+      "record_id": "project_nyct-medical-benefits-program-meeting-doc-160241",
+      "source_id": "meeting_doc_160241",
+      "project_name": "NYCT Medical Benefits Program",
+      "project_type": "medical benefits program",
+      "status": "award pending board approval",
+      "document_time_status": "planned",
+      "description": "Modification to add funding to cover the Retroactive Extension Period"
+    },
+    {
+      "record_id": "project_nyct-optimize-overtime",
+      "source_id": "meeting_doc_127696",
+      "project_name": "Optimize Overtime Utilization",
+      "project_type": "operating efficiency initiative",
+      "description": "Range of strategies including enforcement of existing timekeeping rules and reduction of overtime in targeted right areas"
+    },
+    {
+      "record_id": "project_nyct-re-evaluate-procurement-specs",
+      "source_id": "meeting_doc_127696",
+      "project_name": "Re-evaluate Procurement Specs",
+      "project_type": "operating efficiency initiative",
+      "description": "Bring specifications for material purchases in line with business needs"
+    },
+    {
+      "record_id": "project_nyct-reimagine-station-agent",
+      "source_id": "meeting_doc_127696",
+      "project_name": "Re-imagine Station Agent Role",
+      "project_type": "operating efficiency initiative",
+      "description": "Expand role in customer service and increase hourly pay, while reducing net costs by optimizing coverage requirements (e.g., during lunch breaks)"
+    },
+    {
+      "record_id": "project_nyct-vision-zero-7",
+      "source_id": "meeting_doc_199156",
+      "project_name": "Vision Zero 7",
+      "project_type": "training_program",
+      "status": "concept phase",
+      "document_time_status": "study",
+      "description": "Vision Zero provides training on defensive driving practices for Bus Operators. Training is provided once every two years and rotated with DMV Article 19A training. The update is in concept phase with updated topics directed at Bus Operators. Rollout starting in July."
+    },
+    {
+      "record_id": "project_ocip-2023-2025",
+      "source_id": "meeting_doc_124346",
+      "project_name": "Owner Controlled Insurance Program (OCIP)",
+      "project_type": "insurance procurement",
+      "status": "pending - board approval",
+      "document_time_status": "planned",
+      "description": "Not-to-exceed budget of $385.1M to finalize OCIP procurement for September 30, 2023 - December 31, 2025, covering 229 projects with total construction value of $8.5 billion"
+    },
+    {
+      "record_id": "project_open-trip-planner-meeting-doc-105971",
+      "source_id": "meeting_doc_105971",
+      "project_name": "Open Trip Planner (OTP) Hosting, Maintenance, and Support",
+      "project_type": "service agreement extension",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Three-year extension of service agreement with Cambridge Systematics for continued hosting, maintenance, and support of the Open Trip Planner application including upgrade to OTP 2.0, mobility data hub expansion, and integration with other MTA applications"
+    },
+    {
+      "record_id": "project_paratransit-technology-rideco",
+      "source_id": "meeting_doc_187096",
+      "project_name": "Paratransit Technology Solution",
+      "project_type": "Technology",
+      "status": "awarded",
+      "document_time_status": "approved",
+      "description": "New enterprise technology system for Paratransit Access-A-Ride operations, replacing existing RTS/CAD and AVLM systems"
+    },
+    {
+      "record_id": "project_park-ave-viaduct-job-fair",
+      "source_id": "meeting_doc_100291",
+      "project_name": "Park Avenue Viaduct Job Fair",
+      "project_type": "community event",
+      "description": "Metro-North partnered with the Building and Construction Trades Council of Greater New York and the Apprenticeship Readiness Collective to host a job fair at Tito Puente Educational Complex in East Harlem for the Park Avenue Viaduct project. Connected members of the East Harlem community with project-related construction jobs."
+    },
+    {
+      "record_id": "project_partial-demolition-lirr-building-alphapointe",
+      "source_id": "meeting_doc_157696",
+      "project_name": "Partial Demolition of LIRR Building (Alphapointe)",
+      "project_type": "public works contract",
+      "status": "proposed for award",
+      "document_time_status": "planned",
+      "description": "Partial building demolition of the LIRR section of the building located at 87-46 123rd Street, Richmond Hill, New York",
+      "borough": "Queens"
+    },
+    {
+      "record_id": "project_pearl-river-bru-brew-lease",
+      "source_id": "meeting_doc_85796",
+      "project_name": "Pearl River Station Building Lease - Bru Brew LLC",
+      "project_type": "lease modification",
+      "status": "authorization requested",
+      "document_time_status": "planned",
+      "description": "Revised lease terms with Bru Brew LLC for operation of a restaurant at Pearl River Station. Rent escalation changed from 3% to 2% annually. Two extension terms of five years each at fair market value. Updated NPV: $349,670."
+    },
+    {
+      "record_id": "project_penn-station-lirr-train-hall",
+      "source_id": "meeting_doc_68226",
+      "project_name": "Penn Station LIRR Train Hall Renovation Project",
+      "project_type": "renovation",
+      "description": "Extension of project management consultant services contract with WSP USA, Inc. for an additional 12 month period from January 23, 2023 to January 22, 2024 due to alignment with construction project schedule"
+    },
+    {
+      "record_id": "project_penn-station-reconstruction-design-ffy2024",
+      "source_id": "meeting_doc_138351",
+      "project_name": "Penn Station Reconstruction – Design Services",
+      "project_type": "design",
+      "status": "Proposed for FFY 2024 federal funding",
+      "document_time_status": "planned",
+      "description": "Design services for Penn Station reconstruction"
+    },
+    {
+      "record_id": "project_peoplesoft-upgrade-44266",
+      "source_id": "meeting_doc_44266",
+      "project_name": "MTA PeopleSoft ERP System Upgrade",
+      "project_type": "IT_upgrade",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Upgrade to MTA's PeopleSoft ERP System including People data, digital transformation, and functional enhancements. Part of the MTA Transformation Plan approved by the MTA Board in June 2019."
+    },
+    {
+      "record_id": "project_port-washington-yard-track-extensions",
+      "source_id": "meeting_doc_100321",
+      "project_name": "Port Washington Yard Track Extensions",
+      "project_type": "yard track extension",
+      "status": "Planning",
+      "document_time_status": "study",
+      "description": "Options for Yard Track extensions are severely limited due to extensive development near the station. Advancement contingent upon MTA LIRR reaching an agreement with the Town of North Hempstead for real estate acquisition/swaps."
+    },
+    {
+      "record_id": "project_quay-street-development",
+      "source_id": "meeting_doc_59206",
+      "project_name": "40 Quay Street Development",
+      "project_type": "real estate development",
+      "status": "conditional designation",
+      "document_time_status": "other",
+      "description": "Development of 80,617sf industrial property on East River waterfront in Greenpoint, Brooklyn. Conditional designation of Gotham Property Acquisition LLC to redevelop via 99-year ground lease. NYCT Mobile Wash and Material Storage Units to relocate.",
+      "borough": "Brooklyn"
+    },
+    {
+      "record_id": "project_quest-diagnostics-drug-alcohol-testing-contract",
+      "source_id": "meeting_doc_164956",
+      "project_name": "Quest Diagnostics Drug & Alcohol Testing Services Contract",
+      "project_type": "competitive procurement contract",
+      "status": "board approval sought",
+      "document_time_status": "planned",
+      "description": "Award of a competitively negotiated miscellaneous service contract to Quest Diagnostics Clinical Laboratories Inc. to provide Drug & Alcohol Testing Services in support of MTA pre- and post-hire workplace drug/alcohol testing policies for the MTA agencies. Contract term April 1, 2025 to March 31, 2030, not-to-exceed amount of $9,535,161."
+    },
+    {
+      "record_id": "project_rail-control-center-staffing",
+      "source_id": "meeting_doc_102816",
+      "project_name": "Rail Control Center",
+      "project_type": "staffing initiative",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Addition of staff to bolster 24/7 operations at the Power Control Center and reorganize service/incidence response and enhanced reporting protocols"
+    },
+    {
+      "record_id": "project_railroads-capitalize-mow-work",
+      "source_id": "meeting_doc_127696",
+      "project_name": "Capitalize Maintenance of Way Work Budget Alignment",
+      "project_type": "operating efficiency initiative",
+      "description": "Assessment of scope, criteria, and complexity of long term and larger projects related to MofW State of Good Repair (SOGR); to optimize the balance and appropriate categorization between operating budgets and capital program expenditures"
+    },
+    {
+      "record_id": "project_railroads-contract-streamlining",
+      "source_id": "meeting_doc_127696",
+      "project_name": "Railroads Contract Streamlining",
+      "project_type": "operating efficiency initiative",
+      "description": "Comprehensive review of maintenance, materials and non-ops service contracts for targeted reductions and changes to business practices"
+    },
+    {
+      "record_id": "project_railroads-materials-management",
+      "source_id": "meeting_doc_127696",
+      "project_name": "Railroads Materials Management",
+      "project_type": "operating efficiency initiative",
+      "description": "Material Spend Cost Reduction. Comprehensive assessment and documentation of Railroad and MTA Agency wide [Assets to Materials to Inventory to Procurement] lifecycle and expenditures; starting with Materials Management (MM) and OPEX/CAPEX optimization of funding types"
+    },
+    {
+      "record_id": "project_railroads-overtime-management",
+      "source_id": "meeting_doc_127696",
+      "project_name": "Railroads MOW+MOE Overtime Management",
+      "project_type": "operating efficiency initiative",
+      "description": "Overtime Reduction. Drive accountability for overtime further down into sub-department level (management centers)"
+    },
+    {
+      "record_id": "project_railroads-rolling-stock-inspection",
+      "source_id": "meeting_doc_127696",
+      "project_name": "Rolling Stock Standard Work Inspection Dwell Time Reduction",
+      "project_type": "operating efficiency initiative",
+      "description": "Develop work standards that will optimize work and increase inspection throughput for our M7 series. Potential to extend these business improvements and savings across multiple locations across both Railroads in 2024, 2025 and forward"
+    },
+    {
+      "record_id": "project_railroads-rolling-stock-productivity",
+      "source_id": "meeting_doc_127696",
+      "project_name": "Railroads Rolling Stock Productivity Improvements",
+      "project_type": "operating efficiency initiative",
+      "description": "Rolling Stock Process Improvement and Resource Optimization. Extension of the M7 air brake to 10 years to more efficiently manage both the M7 air brake replacement and the M7 truck overhaul RCM program; optimize staffing for inspections and maintenance by utilizing new shop space at Harmon"
+    },
+    {
+      "record_id": "project_railroads-train-scheduling",
+      "source_id": "meeting_doc_127696",
+      "project_name": "Railroads Train Scheduling",
+      "project_type": "operating efficiency initiative",
+      "description": "Schedule & Resource Mgmt. Optimization. Utilize passenger loading data and technology to better match train lengths to customer demand and optimize resources"
+    },
+    {
+      "record_id": "project_rcc-annex-806-9th-ave",
+      "source_id": "meeting_doc_129081",
+      "project_name": "Construction of the Rail Control Center Annex at 806 9th Avenue, Manhattan",
+      "project_type": "development agreement",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Construction and delivery of 30,000 SF of core-and-shell office space and 15 below-grade facility parking spaces within an affordable housing development on the site of the RCC parking lot",
+      "borough": "Manhattan"
+    },
+    {
+      "record_id": "project_rce-grant-program-ffy2022",
+      "source_id": "meeting_doc_91576",
+      "project_name": "Railroad Crossing Elimination (RCE) Grant Program",
+      "project_type": "grant program",
+      "description": "$573M available FFY 2022, maximum state award ~$115M"
+    },
+    {
+      "record_id": "project_reduce-metronorth-flooding",
+      "source_id": "meeting_doc_131986",
+      "project_name": "Reduce Metro-North Flooding",
+      "project_type": "climate resilience strategy",
+      "status": "ongoing",
+      "document_time_status": "active",
+      "description": "Strategy 7: Reduce Metro-North flooding affecting Hudson Line, Mott Haven Yard, Melrose/Tremont Corridor, and Harlem Line"
+    },
+    {
+      "record_id": "project_rockaway-resilience",
+      "source_id": "meeting_doc_165406",
+      "project_name": "Rockaway Resilience",
+      "project_type": "resilience",
+      "status": "completed",
+      "document_time_status": "implemented",
+      "description": "Bundling the Hammels Wye and the South Channel Bridge projects together"
+    },
+    {
+      "record_id": "project_rockaways-rehab-2025",
+      "source_id": "meeting_doc_170981",
+      "project_name": "Rockaways Rehab Project",
+      "project_type": "rehabilitation",
+      "status": "in progress",
+      "document_time_status": "active",
+      "description": "Rehabilitation project in the Rockaways. President Crichlow discussed progress and thanked US Coast Guard, Schiavone Construction, MTA C&D, and divisions within the Department of Subways for their efforts."
+    },
+    {
+      "record_id": "project_rosens-cafe-license",
+      "source_id": "meeting_doc_33261",
+      "project_name": "License Agreement with Rosen's Café at 2 Broadway",
+      "project_type": "license agreement",
+      "status": "action item - board approval sought",
+      "document_time_status": "planned",
+      "description": "Authorization to enter into a license agreement with Rosen's Café, LLC for food use in the lobby of 2 Broadway, New York, NY. Approximately 1,371 sq ft of retail space. Five year term. Minimum annual guaranteed rent of $24,000 for first year, with 3% annual increase, plus 10% of gross sales over $300,000 annual breakpoint."
+    },
+    {
+      "record_id": "project_sas-phase-ii-field-office-lease",
+      "source_id": "meeting_doc_138291",
+      "project_name": "Second Avenue Subway Phase II field office lease",
+      "project_type": "real estate/field office",
+      "description": "Letter agreement for the Second Avenue Subway Phase II field office lease at 159 East 125th Street, New York, NY. Authorization to enter into a letter of agreement in support of the field office for SAS Phase II. Vendor: BDG Gotham Plaza, LLC. Amount: Up to $225,000."
+    },
+    {
+      "record_id": "project_scout-scoot",
+      "source_id": "meeting_doc_135741",
+      "project_name": "SCOUT",
+      "project_type": "mental health co-response outreach program",
+      "status": "active, expanding",
+      "document_time_status": "active",
+      "description": "Subway Co-Response Outreach Teams - New mental health co-response teams pairing NYC clinicians with MTAPD officers"
+    },
+    {
+      "record_id": "project_small-business-development-mentoring-program-meeting-doc-160241",
+      "source_id": "meeting_doc_160241",
+      "project_name": "Small-Business Development & Mentoring Program",
+      "project_type": "consultant program",
+      "status": "ongoing",
+      "document_time_status": "active",
+      "description": "Small-Business Development & Mentoring Program Consultant"
+    },
+    {
+      "record_id": "project_small-business-development-program",
+      "source_id": "meeting_doc_102781",
+      "project_name": "MTA Small Business Development Program",
+      "project_type": "small business development program",
+      "status": "active",
+      "document_time_status": "active",
+      "description": "Program to develop and grow emerging contractors through classes, on-the-job training and technical assistance on prime contracts with MTA Agencies, creating a larger pool of diverse qualified contractors who can compete for, and complete MTA construction projects safely, timely and within budget."
+    },
+    {
+      "record_id": "project_station-agents-customer-service",
+      "source_id": "meeting_doc_102836",
+      "project_name": "Station Agents Customer Service Improvements",
+      "project_type": "customer service modernization",
+      "status": "phasing in early 2023",
+      "document_time_status": "active",
+      "description": "Historic agreement with TWU Local 100 to modernize the station agent role, bringing agents out of booths to perform core customer service functions at turnstiles, fare machines, and throughout stations. Training underway on enhanced customer service and OMNY equipment."
+    },
+    {
+      "record_id": "project_subways-cleaning-initiative",
+      "source_id": "meeting_doc_102816",
+      "project_name": "Subways Cleaning Initiative",
+      "project_type": "cleaning initiative",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Transition from contracted cleaning and disinfecting of subway stations and subway cars to in-house cleaning workforce"
+    },
+    {
+      "record_id": "project_tarrytown-tod-meeting-doc-151756",
+      "source_id": "meeting_doc_151756",
+      "project_name": "Tarrytown Transit-Oriented Development Project",
+      "project_type": "transit-oriented development",
+      "status": "proposed - conditional designation of developer",
+      "document_time_status": "planned",
+      "description": "Ground lease of portion of MTA parking lot at 2 Depot Plaza, Tarrytown, NY for 88-unit multi-family housing project with community artist workshops and galleries, plus improved access to Tarrytown Station and northbound platform",
+      "borough": "other"
+    },
+    {
+      "record_id": "project_tbta-2023a-bonds-105971",
+      "source_id": "meeting_doc_105971",
+      "project_name": "TBTA Sales Tax Revenue Bonds, Series 2023A",
+      "project_type": "bond issuance",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Issuance of $800,000,000 of Triborough Bridge and Tunnel Authority Sales Tax Revenue Bonds to generate new money proceeds to finance approved 2020-2024 Capital Program transit and commuter projects."
+    },
+    {
+      "record_id": "project_tbta-level-one-maintainers-training",
+      "source_id": "meeting_doc_163171",
+      "project_name": "TBTA Level One Maintainers Training Program",
+      "project_type": "training",
+      "status": "active",
+      "document_time_status": "active",
+      "description": "12 new Level One Maintainers commenced multi-disciplined training including safety protocols, roadway and electrical work, CDL, OSHA-30, forklift operation, firefighting, wrecker and aerial truck safety, Incident Command Structure, and administrative duties"
+    },
+    {
+      "record_id": "project_thales-signaling-maintenance-contract",
+      "source_id": "meeting_doc_26886",
+      "project_name": "Thales Signaling Global Maintenance Contract",
+      "project_type": "signaling maintenance contract",
+      "status": "awaiting board approval",
+      "document_time_status": "planned",
+      "description": "Five-year estimated quantity miscellaneous service contract with Thales Transport & Security, Inc. for maintenance and support services for various NYC Transit signaling systems. Total estimated amount $59,235,090. Systems include Flushing line CBTC, Flushing line ATS, 1st Avenue SSI, Bergen Street SSI, Queens Boulevard line CBTC."
+    },
+    {
+      "record_id": "project_toll-collection-consultant-support-2023",
+      "source_id": "meeting_doc_127551",
+      "project_name": "Miscellaneous Toll Collection Consultant Support Services",
+      "project_type": "procurement - personal service contracts",
+      "status": "proposed for Board approval",
+      "document_time_status": "planned",
+      "description": "Three personal service contracts for toll collection consultant support services on an as-needed basis, including conceptual design, planning, evaluation of toll system upgrades, and design of toll-related infrastructure."
+    },
+    {
+      "record_id": "project_toll-violation-fee-reduction",
+      "source_id": "meeting_doc_140276",
+      "project_name": "Toll Violation Enforcement Changes",
+      "project_type": "regulatory change",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Proposal to lower the $100 administrative toll violation fee at major B&T facilities back down to $50 and prescribe a uniform $50 fee across all tolled bridge and tunnel facilities, including the Central Business District Tolling Program."
+    },
+    {
+      "record_id": "project_track-access-mgmt-system-tams",
+      "source_id": "meeting_doc_160391",
+      "project_name": "Track Access Management System (TAMS)",
+      "project_type": "system replacement",
+      "status": "in development/roll-out",
+      "document_time_status": "active",
+      "description": "New system replacing the current obsolete database (UGOS) used across multiple departments to process requests for track access, enhancing cross-departmental coordination and improving asset management of equipment"
+    },
+    {
+      "record_id": "project_traffic-revenue-assessment-environmental-review",
+      "source_id": "meeting_doc_72536",
+      "project_name": "Professional Services for Traffic and Revenue Assessments and Environmental Review of TBTA Toll-Related Actions",
+      "project_type": "Personal Service Contract",
+      "status": "Pending Award",
+      "document_time_status": "planned",
+      "description": "Two competitively solicited personal service contracts to WSP USA, Inc. and AECOM for Revenue Assessments and Environmental Review of TBTA's Toll-Related Actions on an as-needed basis"
+    },
+    {
+      "record_id": "project_transit-wireless-expansion-2022",
+      "source_id": "meeting_doc_91636",
+      "project_name": "Transit Wireless License Expansion for Cellular in NYCT Tunnels and Wi-Fi at Above Ground NYCT Stations and Staten Island Railway",
+      "project_type": "license expansion",
+      "status": "Board approval sought",
+      "document_time_status": "planned",
+      "description": "Expansion of Transit Wireless license to design, build, operate, maintain and sublicense a wireless communication connection system in underground tunnels, at above-ground stations and along the ROW, a free public and private facing Wi-Fi network for NYCT above-ground and SIR stations, and the non-exclusive right to market fiber optic cable."
+    },
+    {
+      "record_id": "project_transportation-planning-retainer",
+      "source_id": "meeting_doc_33261",
+      "project_name": "Transportation Planning and Conceptual Design Retainer Contract Panel",
+      "project_type": "retainer contract panel",
+      "status": "action item - board approval sought",
+      "document_time_status": "planned",
+      "description": "Eleven competitively negotiated personal service contracts for transportation planning and conceptual design. Aggregate budget: $25,000,000. Contract term: April 1, 2021 to March 31, 2026. Firms: AECOM USA Inc., Arup and Partners PC, Gannett Fleming, HDR Inc., HNTB, NV5, Parsons Transportation Group, Sam Schwartz Engineering, STV Inc., VHB, WSP USA Inc."
+    },
+    {
+      "record_id": "project_ukg-kronos-managed-support-186841",
+      "source_id": "meeting_doc_186841",
+      "project_name": "UKG Kronos System Day-to-Day Managed Support Services",
+      "project_type": "personal service contract",
+      "status": "award pending board approval",
+      "document_time_status": "planned",
+      "description": "Contract to IBM to provide day-to-day maintenance and technical support services for MTA's UKG Workforce Central system and the new upgraded Kronos Pro Workforce Management system over three years with two 1-year renewal options."
+    },
+    {
+      "record_id": "project_vacant-retail-activation",
+      "source_id": "meeting_doc_160431",
+      "project_name": "Vacant Retail Activation Program",
+      "project_type": "cultural programming",
+      "status": "active",
+      "document_time_status": "active",
+      "description": "Program to fill vacant retail units in the subway system with creative installations and cultural programming. Has activated 12 units in nine stations, working with over a dozen partners including the Whitney Museum of American Art and ChaShaMa"
+    },
+    {
+      "record_id": "project_veterans-tribute-locomotive-192301",
+      "source_id": "meeting_doc_192301",
+      "project_name": "Veterans Tribute Locomotive (Heritage Series)",
+      "project_type": "locomotive rebranding",
+      "status": "completed",
+      "document_time_status": "implemented",
+      "description": "Eighth locomotive rebranded as part of Metro-North's Heritage Series. Locomotive No. 216 honors the service and sacrifice of the nation's veterans. Design by Emily Moser, developed with input from Metro-North's veteran workforce. Unveiled November 10 at North White Plains shop."
+    },
+    {
+      "record_id": "project_wakefield-tod-development",
+      "source_id": "meeting_doc_160301",
+      "project_name": "Wakefield Transit-Oriented Development Project",
+      "project_type": "transit-oriented development",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Proposed 1,200-unit all-affordable multifamily housing project in the Wakefield section of the Bronx, adjacent to MNR's Wakefield Station, including rezoning, fee parcel sale, access easement, and construction of an access drive.",
+      "borough": "Bronx"
+    },
+    {
+      "record_id": "project_wakefield-transit-oriented-development-meeting-doc-160241",
+      "source_id": "meeting_doc_160241",
+      "project_name": "Conveyance of property interests in the Wakefield section of the Bronx",
+      "project_type": "transit-oriented development",
+      "description": "Conveyance of property interests in the Wakefield section of the Bronx to facilitate adjacent transit-oriented development",
+      "borough": "Bronx"
+    },
+    {
+      "record_id": "project_webster-ave-longhouse-housing",
+      "source_id": "meeting_doc_105851",
+      "project_name": "Proposed Project",
+      "project_type": "multi-family housing",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "Multi-family housing project of approximately 550 low-income housing units on the Development Site at 2740 Webster Avenue and 2768 Webster Avenue, The Bronx",
+      "borough": "Bronx"
+    },
+    {
+      "record_id": "project_webster-ave-low-income-housing",
+      "source_id": "meeting_doc_131676",
+      "project_name": "Webster Avenue Low-Income Housing Development",
+      "project_type": "real estate development",
+      "description": "Development of an approximately 550-unit low-income housing development adjacent to the Subject Property (Block 3273, Lot 101, Bronx, NY at Webster Avenue and East 197th Street)",
+      "borough": "Bronx"
+    },
+    {
+      "record_id": "project_welcome-back-campaign-meeting-doc-53026",
+      "source_id": "meeting_doc_53026",
+      "project_name": "Welcome Back campaign",
+      "project_type": "campaign",
+      "description": "Customer-facing campaign to make customers feel safe and comfortable, focused on mask compliance, cleanliness, and welcoming riders back."
+    },
+    {
+      "record_id": "project_west-side-yard-development-2008",
+      "source_id": "meeting_doc_129081",
+      "project_name": "West Side Yard Development",
+      "project_type": "mixed-use development",
+      "status": "approved",
+      "document_time_status": "approved",
+      "description": "Mixed-use development of the Eastern Rail Yard and Western Rail Yard of the LIRR's John D. Caemmerer West Side Yard, including 99-year ground leases, affordable housing, PS/IS school, cultural facility",
+      "borough": "Manhattan"
+    },
+    {
+      "record_id": "project_westbury-parking-garage-fees",
+      "source_id": "meeting_doc_26841",
+      "project_name": "Parking Fee Structure at the LIRR Westbury Parking Garage",
+      "project_type": "parking fee structure",
+      "status": "proposed",
+      "document_time_status": "planned",
+      "description": "LIRR seeks MTA Board approval to establish parking fees for 300 unrestricted daily parking spaces in the newly constructed Westbury Parking Garage, a 4-level ungated garage expected to open in March 2021, constructed as part of LIRR's Main Line Expansion project."
+    },
+    {
+      "record_id": "project_westbury-tod",
+      "source_id": "meeting_doc_171021",
+      "project_name": "Westbury Station Transit Oriented Development",
+      "project_type": "transit oriented development",
+      "status": "Conditional designation of Gotham Organization as selected proposer",
+      "document_time_status": "other",
+      "description": "Conditional Designation of Gotham Organization to construct and operate a Transit Oriented Development on the former commuter parking lot at the Westbury Station, Westbury, NY",
+      "borough": "other"
+    },
+    {
+      "record_id": "project_westbury-transit-oriented-development",
+      "source_id": "meeting_doc_37061",
+      "project_name": "Westbury Transit-Oriented Development",
+      "project_type": "Transit-Oriented Development",
+      "status": "In negotiations with multiple developers; selection expected by summer 2021",
+      "document_time_status": "planned",
+      "description": "Transform 1.6-acre MTA-owned surface parking lot adjacent to LIRR Westbury station into new residential and retail development."
+    },
+    {
+      "record_id": "project_yaphank-landfill-remediation",
+      "source_id": "meeting_doc_102786",
+      "project_name": "Yaphank Landfill Remediation Project",
+      "project_type": "remediation",
+      "status": "in progress",
+      "document_time_status": "active",
+      "description": "Investigation and remediation of property in the vicinity of the Town of Brookhaven Landfill (Yaphank Landfill) including acquisition of temporary and permanent easements on adjacent properties",
+      "borough": "other"
+    },
+    {
+      "record_id": "project_yard-trek",
+      "source_id": "meeting_doc_133281",
+      "project_name": "Yard Trek",
+      "project_type": "internal dispatching application",
+      "description": "Internal facing dispatching application that supports bus operations and bus management. Includes features such as unscheduled pullouts, historical snapshots of track sheets, visual indicators for recently assigned buses, integrated electric bus data, and displays bus status from non-depot locations."
+    }
+  ]
+}

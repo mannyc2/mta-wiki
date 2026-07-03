@@ -1,0 +1,100 @@
+{
+  "run_id": "2026-06-10T22-56-13-157Z_1976810-9e0fff70_ingest_2011-03-07-brt-nostrand-cb3",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T01:06:02.989Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "entity_nyc_dot_2011_cb3",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_nyc-dot matches the canonical registry record entity_nyc-dot (NYC Department of Transportation). Both represent the same agency entity with matching entity_name and entity_type. No different registry record is a closer match.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p001_c0003",
+            "source_quote": "The logo for the New York City Department of Transportation (NYC DOT), featuring the text 'NEW YORK CITY' above 'DOT' and a stylized bridge icon."
+          }
+        ]
+      },
+      {
+        "decision_id": "d2",
+        "local_observation_id": "entity_mta_nyct_2011_cb3",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_mta-nyct matches the canonical registry record entity_mta-nyct (MTA New York City Transit). Both represent the same transit agency with matching entity_name. No different registry record is a closer match.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p001_c0002",
+            "source_quote": "The logo for the Metropolitan Transportation Authority (MTA) New York City Transit, featuring the MTA globe icon and the text \"MTA New York City Transit\"."
+          }
+        ]
+      },
+      {
+        "decision_id": "d3",
+        "local_observation_id": "entity_brooklyn_cb3_2011",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_brooklyn-cb3-2011 matches the canonical registry record entity_brooklyn-cb3-2011 (Community Board 3, Brooklyn). Both represent Brooklyn Community Board 3 as the audience for Nostrand/Rogers SBS presentation. No different registry record is a closer match.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p001_c0004",
+            "source_quote": "Nostrand Ave/Rogers Ave Select Bus Service Community Board 3"
+          }
+        ]
+      },
+      {
+        "decision_id": "d4",
+        "local_observation_id": "entity_nostrand_cac_2011",
+        "decision": "new",
+        "rationale": "Observation's base_record_id entity_hylan-cac matches the canonical registry record entity_hylan-cac (Community Advisory Committee for Nostrand/Rogers SBS). Both represent the same committee composed of community stakeholders for the Nostrand/Rogers SBS project. No different registry record is a closer match.",
+        "evidence_refs": [
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p014_c0004",
+            "source_quote": "Community Advisory Committee Composed of:"
+          },
+          {
+            "source_id": "2011_03_07_brt_nostrand_cb3",
+            "block_id": "p014_c0005",
+            "source_quote": "• Elected Officials • Community Organizations • Community Boards • Business Representatives • Major Institutions • Transit Customers"
+          }
+        ],
+        "proposed_relations": [
+          {
+            "relation_kind": "presented_to",
+            "subject_id": "entity_nyc-dot",
+            "object_id": "entity_brooklyn-cb3-2011",
+            "description": "NYC DOT presented at the Nostrand/Rogers SBS Community Board 3 meeting on March 7, 2011",
+            "evidence_refs": [
+              {
+                "source_id": "2011_03_07_brt_nostrand_cb3",
+                "block_id": "p001_c0003",
+                "source_quote": "The logo for the New York City Department of Transportation (NYC DOT), featuring the text 'NEW YORK CITY' above 'DOT' and a stylized bridge icon."
+              }
+            ]
+          },
+          {
+            "relation_kind": "presented_to",
+            "subject_id": "entity_mta-nyct",
+            "object_id": "entity_brooklyn-cb3-2011",
+            "description": "MTA New York City Transit presented at the Nostrand/Rogers SBS Community Board 3 meeting on March 7, 2011",
+            "evidence_refs": [
+              {
+                "source_id": "2011_03_07_brt_nostrand_cb3",
+                "block_id": "p001_c0002",
+                "source_quote": "The logo for the Metropolitan Transportation Authority (MTA) New York City Transit, featuring the MTA globe icon and the text \"MTA New York City Transit\"."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-47-658Z_2111393-c136c79e_canonicalize_2026-06-10t22-56-13-157z-1976810-9e0fff70-ingest-2011-03-07-brt-nostrand-cb3-entity-identity"
+}

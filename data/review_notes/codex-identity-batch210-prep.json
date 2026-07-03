@@ -1,0 +1,422 @@
+{
+  "batch": "identity210",
+  "generated_at": "2026-06-23T12:15:01Z",
+  "candidates": [
+    {
+      "kind": "entity",
+      "keep": "entity_cdot-meeting-doc-104741",
+      "alias": "entity_meeting-doc-98256-cdot",
+      "identity_key": "entity_connecticut-department-of-transportation",
+      "evidence": [
+        {
+          "record_id": "entity_cdot-meeting-doc-104741",
+          "display_name": "Connecticut Department of Transportation (CDOT)",
+          "payload": {
+            "entity_name": "Connecticut Department of Transportation",
+            "acronym": "CDOT",
+            "entity_type": "agency"
+          },
+          "source_ids_sample": ["meeting_doc_100301", "meeting_doc_100331", "meeting_doc_102716", "meeting_doc_102756", "meeting_doc_104741"],
+          "evidence_refs": ["meeting_doc_100301#p005_c0003", "meeting_doc_100301#p007_c0003", "meeting_doc_100331#p006_c0006"]
+        },
+        {
+          "record_id": "entity_meeting-doc-98256-cdot",
+          "display_name": "CDOT",
+          "payload": {
+            "entity_name": "Connecticut Department of Transportation",
+            "acronym": "CDOT",
+            "entity_type": "government_agency",
+            "description": "CDOT Shore Line East revenue service using M8 fleet"
+          },
+          "source_ids": ["meeting_doc_98256"],
+          "evidence_refs": ["meeting_doc_98256#p005_c0006"]
+        }
+      ],
+      "reason": "Exact agency identity: both records name the Connecticut Department of Transportation and carry the CDOT acronym; the alias is a single-source CDOT extraction not yet covered by overrides.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_brt-bx6-cb9-nyct-ops-planning",
+      "alias": "entity_nyct-operations-planning-brt-bx6-cb2",
+      "identity_key": "entity_nyct-operations-planning",
+      "evidence": [
+        {
+          "record_id": "entity_brt-bx6-cb9-nyct-ops-planning",
+          "display_name": "entity_brt_bx6_cb9_nyct_ops_planning",
+          "payload": {
+            "entity_name": "NYCT Operations Planning",
+            "entity_type": "agency department"
+          },
+          "source_ids": ["brt_bx6_cb9_may2022"],
+          "evidence_refs": ["brt_bx6_cb9_may2022#p009_c0009"]
+        },
+        {
+          "record_id": "entity_nyct-operations-planning-brt-bx6-cb2",
+          "display_name": "NYCT Operations Planning",
+          "payload": {
+            "entity_name": "NYCT Operations Planning",
+            "entity_type": "department"
+          },
+          "source_ids": ["brt_bx6_cb2_edc_may2022"],
+          "evidence_refs": ["brt_bx6_cb2_edc_may2022#p010_c0009", "brt_bx6_cb2_edc_may2022#p011_c0005"],
+          "source_quote": "Source: NYCT Operations Planning"
+        }
+      ],
+      "reason": "Exact internal unit identity: both records name NYCT Operations Planning as the source/department for Bx6 bus-priority materials.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_brt-bx6-cb9-nyct-ops-planning",
+      "alias": "entity_nyct-ops-planning-brt-bx6-cb12-may2022",
+      "identity_key": "entity_nyct-operations-planning",
+      "evidence": [
+        {
+          "record_id": "entity_brt-bx6-cb9-nyct-ops-planning",
+          "display_name": "entity_brt_bx6_cb9_nyct_ops_planning",
+          "payload": {
+            "entity_name": "NYCT Operations Planning",
+            "entity_type": "agency department"
+          },
+          "source_ids": ["brt_bx6_cb9_may2022"],
+          "evidence_refs": ["brt_bx6_cb9_may2022#p009_c0009"]
+        },
+        {
+          "record_id": "entity_nyct-ops-planning-brt-bx6-cb12-may2022",
+          "display_name": "NYCT Operations Planning",
+          "payload": {
+            "entity_name": "NYCT Operations Planning",
+            "entity_type": "agency",
+            "description": "Source of bus performance data"
+          },
+          "source_ids": ["brt_bx6_cb12_may2022"],
+          "evidence_refs": ["brt_bx6_cb12_may2022#p009_c0009", "brt_bx6_cb12_may2022#p010_c0005"],
+          "source_quote": "Source: NYCT Operations Planning"
+        }
+      ],
+      "reason": "Exact internal unit identity: the CB12 record is another single-source extraction of the same NYCT Operations Planning source/department.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_meeting-doc-102826-nyct-subway",
+      "alias": "entity_nyct-subway-system",
+      "identity_key": "entity_nyct-subway-system",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-102826-nyct-subway",
+          "display_name": "NYCT Subway system",
+          "payload": {
+            "entity_name": "NYCT Subway system",
+            "entity_type": "transit system",
+            "description": "The New York City Transit subway system where major felonies and hate crimes are reported."
+          },
+          "source_ids_sample": ["meeting_doc_102826", "meeting_doc_104786", "meeting_doc_107526", "meeting_doc_115241", "meeting_doc_121061"],
+          "evidence_refs": ["meeting_doc_104786#p001_c0003", "meeting_doc_102826#p001_c0003", "meeting_doc_107526#p001_c0003"]
+        },
+        {
+          "record_id": "entity_nyct-subway-system",
+          "display_name": "NYCT Subway system",
+          "payload": {
+            "entity_name": "NYCT Subway system",
+            "entity_type": "system",
+            "description": "New York City Transit subway system where major felony and hate crime statistics are reported"
+          },
+          "source_ids": ["meeting_doc_113941"],
+          "evidence_refs": ["meeting_doc_113941#p001_c0003"]
+        }
+      ],
+      "reason": "Exact system identity: both records describe the NYCT Subway system in the same subway-crime reporting context.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_meeting-doc-133286-pat-warren",
+      "alias": "entity_pat-warren-133161",
+      "identity_key": "entity_pat-warren",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-133286-pat-warren",
+          "display_name": "Pat Warren",
+          "payload": {
+            "entity_name": "Pat Warren",
+            "entity_type": "person",
+            "title": "Department Safety Department Head"
+          },
+          "source_ids": ["meeting_doc_133286"],
+          "evidence_refs": ["meeting_doc_133286#p001_c0002"],
+          "text_sha256": "sha256:43fa2c16cdb754bd5a8ca2dffd5c512db90942248c7e18c3784746734e6c7558"
+        },
+        {
+          "record_id": "entity_pat-warren-133161",
+          "display_name": "Pat Warren, Department Safety Department Head",
+          "payload": {
+            "entity_name": "Pat Warren",
+            "entity_type": "person",
+            "title": "Department Safety Department Head",
+            "organization": "NYCT"
+          },
+          "source_ids": ["meeting_doc_133161"],
+          "evidence_refs": ["meeting_doc_133161#p001_c0002"],
+          "text_sha256": "sha256:43fa2c16cdb754bd5a8ca2dffd5c512db90942248c7e18c3784746734e6c7558"
+        }
+      ],
+      "reason": "Exact person identity with the same title; both records cite blocks with the same text hash.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_paul-friman",
+      "alias": "entity_paul-l-friman-tbta-gc-jul2024",
+      "identity_key": "entity_paul-l-friman",
+      "evidence": [
+        {
+          "record_id": "entity_paul-friman",
+          "display_name": "Paul L. Friman, Acting General Counsel and Corporate Secretary",
+          "payload": {
+            "entity_name": "Paul L. Friman",
+            "entity_type": "person",
+            "title": "Acting General Counsel and Corporate Secretary - TBTA, MTA",
+            "organization": "Triborough Bridge and Tunnel Authority"
+          },
+          "source_ids_sample": ["meeting_doc_100256", "meeting_doc_104711", "meeting_doc_107566", "meeting_doc_111711", "meeting_doc_113966"],
+          "evidence_refs": ["meeting_doc_104711#p004_c0007", "meeting_doc_100256#p004_c0007", "meeting_doc_107566#p004_c0008"],
+          "source_quote": "Paul L. Friman, Acting General Counsel and Corporate Secretary - TBTA, MTA"
+        },
+        {
+          "record_id": "entity_paul-l-friman-tbta-gc-jul2024",
+          "display_name": "Paul L. Friman, General Counsel and Corporate Secretary - TBTA",
+          "payload": {
+            "entity_name": "Paul L. Friman",
+            "entity_type": "person",
+            "title": "General Counsel and Corporate Secretary - TBTA"
+          },
+          "source_ids": ["meeting_doc_146836"],
+          "evidence_refs": ["meeting_doc_146836#p006_c0008"]
+        }
+      ],
+      "reason": "Exact person identity; both records name Paul L. Friman in TBTA general-counsel/corporate-secretary context, with acting/current title variation only.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_sarah-meyer-cco-mta",
+      "alias": "entity_sarah-meyer-open-data-plan",
+      "identity_key": "entity_sarah-meyer",
+      "evidence": [
+        {
+          "record_id": "entity_sarah-meyer-cco-mta",
+          "display_name": "Sarah Meyer, Chief Customer Officer, MTA",
+          "payload": {
+            "entity_name": "Sarah Meyer",
+            "entity_type": "person",
+            "title": "Chief Customer Officer, MTA",
+            "organization": "Metropolitan Transportation Authority"
+          },
+          "source_ids": ["meeting_doc_72576", "meeting_doc_91596"],
+          "evidence_refs": ["meeting_doc_72576#p011_c0006", "meeting_doc_91596#p001_c0006"],
+          "source_quote": "Sarah Meyer, Chief Customer Officer, MTA"
+        },
+        {
+          "record_id": "entity_sarah-meyer-open-data-plan",
+          "display_name": "Sarah Meyer, MTA Chief Customer Officer",
+          "payload": {
+            "entity_name": "Sarah Meyer",
+            "entity_type": "person",
+            "title": "Chief Customer Officer",
+            "organization": "Metropolitan Transportation Authority"
+          },
+          "source_ids": ["meeting_doc_26846", "meeting_doc_89816", "open_data_plan_2022"],
+          "evidence_refs": ["open_data_plan_2022#p001_c0013", "open_data_plan_2022#p001_c0014", "meeting_doc_26846#p079_c0002"],
+          "source_quote": "Sarah Meyer Chief Customer Officer, MTA"
+        }
+      ],
+      "reason": "Exact person identity; both records name Sarah Meyer as MTA Chief Customer Officer.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_meeting-doc-189866-p-dietlin",
+      "alias": "entity_meeting-doc-192156-p-dietlin",
+      "identity_key": "entity_p-dietlin",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-189866-p-dietlin",
+          "display_name": "P. Dietlin",
+          "payload": {
+            "entity_name": "P. Dietlin",
+            "entity_type": "person",
+            "title": "Sr. Vice President - Operations"
+          },
+          "source_ids": ["meeting_doc_189866"],
+          "evidence_refs": ["meeting_doc_189866#p001_c0002"]
+        },
+        {
+          "record_id": "entity_meeting-doc-192156-p-dietlin",
+          "display_name": "P. Dietlin",
+          "payload": {
+            "entity_name": "P. Dietlin",
+            "entity_type": "person",
+            "role": "Department Head - SR. VICE PRESIDENT - OPERATIONS",
+            "organization": "Long Island Rail Road"
+          },
+          "source_ids": ["meeting_doc_192156"],
+          "evidence_refs": ["meeting_doc_192156#p001_c0003"]
+        }
+      ],
+      "reason": "Exact person identity by same initialed name plus same senior vice president of operations role.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_meeting-doc-189866-p-dietlin",
+      "alias": "entity_meeting-doc-205616-p-dietlin",
+      "identity_key": "entity_p-dietlin",
+      "evidence": [
+        {
+          "record_id": "entity_meeting-doc-189866-p-dietlin",
+          "display_name": "P. Dietlin",
+          "payload": {
+            "entity_name": "P. Dietlin",
+            "entity_type": "person",
+            "title": "Sr. Vice President - Operations"
+          },
+          "source_ids": ["meeting_doc_189866"],
+          "evidence_refs": ["meeting_doc_189866#p001_c0002"]
+        },
+        {
+          "record_id": "entity_meeting-doc-205616-p-dietlin",
+          "display_name": "P. Dietlin",
+          "payload": {
+            "entity_name": "P. Dietlin",
+            "entity_type": "person",
+            "title": "Sr. Vice President - Operations"
+          },
+          "source_ids": ["meeting_doc_205616"],
+          "evidence_refs": ["meeting_doc_205616#p001_c0002"]
+        }
+      ],
+      "reason": "Exact person identity by same initialed name and identical Sr. Vice President - Operations title.",
+      "confidence": "high"
+    },
+    {
+      "kind": "entity",
+      "keep": "entity_marc-herbst-cgc-oct2025",
+      "alias": "entity_meeting-doc-208011-m-herbst",
+      "identity_key": "entity_m-herbst",
+      "evidence": [
+        {
+          "record_id": "entity_marc-herbst-cgc-oct2025",
+          "display_name": "M. Herbst, Vice-Chair",
+          "payload": {
+            "entity_name": "M. Herbst",
+            "entity_type": "person",
+            "title": "Vice-Chair, Corporate Governance Committee"
+          },
+          "source_ids": ["meeting_doc_189751"],
+          "evidence_refs": ["meeting_doc_189751#p001_c0007", "meeting_doc_189751#p003_c0003"],
+          "text_sha256": "sha256:07210fcaf377a848b96df4a9acd3765f67ff27ac54757f0ac3412e73871f0d27"
+        },
+        {
+          "record_id": "entity_meeting-doc-208011-m-herbst",
+          "display_name": "M. Herbst",
+          "payload": {
+            "entity_name": "M. Herbst",
+            "entity_type": "person",
+            "role": "Vice-Chair, Corporate Governance Committee",
+            "organization": "Metropolitan Transportation Authority"
+          },
+          "source_ids": ["meeting_doc_208011"],
+          "evidence_refs": ["meeting_doc_208011#p001_c0007"],
+          "text_sha256": "sha256:07210fcaf377a848b96df4a9acd3765f67ff27ac54757f0ac3412e73871f0d27"
+        }
+      ],
+      "reason": "Exact person identity by same initialed name plus identical Corporate Governance Committee vice-chair role; the decisive evidence block hash matches.",
+      "confidence": "high"
+    }
+  ],
+  "do_not_merge": [
+    {
+      "kind": "entity",
+      "record_ids": ["entity_community-board-1-bronx-2012-02", "entity_community-board-1-manhattan-2013-06"],
+      "identity_key": "entity_community-board-1",
+      "reason": "Shared generic Community Board 1 key but different borough/scope: Bronx vs Manhattan."
+    },
+    {
+      "kind": "entity",
+      "record_ids": ["entity_brooklyn-cb3-2011", "entity_community-board-3-bronx-2012"],
+      "identity_key": "entity_community-board-3",
+      "reason": "Shared generic Community Board 3 key but different borough/scope: Brooklyn vs Bronx."
+    },
+    {
+      "kind": "entity",
+      "record_ids": ["entity_community-advisory-committee-flushing-jamaica", "entity_community-advisory-committee-webster"],
+      "identity_key": "entity_community-advisory-committee",
+      "reason": "Generic CAC label across different project scopes; not a same-identity committee without project-specific name alignment."
+    },
+    {
+      "kind": "entity",
+      "record_ids": ["entity_ny-sdod-lga-aa", "entity_ny-state-dot"],
+      "identity_key": "entity_new-york-state-department-of-transportation",
+      "reason": "Skip as a merge candidate because alias display is Commissioner of Transportation; main-thread guard should confirm whether this is agency identity or an office/title extraction before applying."
+    }
+  ],
+  "skipped": [
+    {
+      "kind": "entity",
+      "record_ids": ["entity_bloomberg-news-org", "entity_meeting-doc-155136-bloomberg"],
+      "identity_key": "entity_bloomberg",
+      "reason": "Ambiguous Bloomberg surface: one record is a news organization, the other is a terminals/data/pricing vendor-services context."
+    },
+    {
+      "kind": "entity",
+      "record_ids": ["entity_vision-zero-sept2016", "entity_vision-zero-utica-apr2016"],
+      "identity_key": "entity_vision-zero",
+      "reason": "Program label is exact but broad; not an organization/person/unit alias, so excluded from this batch."
+    },
+    {
+      "kind": "entity",
+      "record_ids": ["entity_bt-committee-members", "entity_bt-committee-members-sep2024"],
+      "identity_key": "entity_bridges-and-tunnels-committee",
+      "reason": "Likely same committee, but committee/member-list records are a known trap class; excluded to keep batch210 on safer person/agency/unit aliases."
+    },
+    {
+      "kind": "entity",
+      "record_ids": ["entity_meeting-doc-140466-nyct-committee-members", "entity_nyct-transit-committee-members"],
+      "identity_key": "entity_new-york-city-transit-committee",
+      "reason": "Likely related committee/member-list records, but not included because committee aliases need separate scoped review."
+    },
+    {
+      "kind": "entity",
+      "record_ids": ["entity_meeting-doc-189866-p-dietlin", "entity_p-dietlin-fall-trackwork"],
+      "identity_key": "entity_p-dietlin",
+      "reason": "Same initialed person and operations title, but omitted only to keep candidate count at 10; can be considered in a later P. Dietlin follow-up after the two strongest aliases apply."
+    }
+  ],
+  "guard_summary": {
+    "scope": "Prepared high-confidence entity duplicate_global_identity aliases only.",
+    "allowed_write": "Only this artifact was written: data/review_notes/codex-identity-batch210-prep.json.",
+    "commands_used": [
+      "rg/find/read-only shell inspection",
+      "jq inspection of prior prep and override files",
+      "bun --eval importing local identityKeysForRecord from packages/db/src/identity.ts against data/canonical/entities.jsonl"
+    ],
+    "commands_not_used": [
+      "provider or external LLM commands",
+      "materialize",
+      "full validate CLI",
+      "canonicalize/identity-review agent commands",
+      "wiki/source-of-truth mutation commands"
+    ],
+    "filters": [
+      "Excluded aliases already present in data/identity-overrides/merges.json.",
+      "Excluded direct DNM pairs already present in data/identity-overrides/do-not-merge.json.",
+      "Excluded aliases already proposed in prior data/review_notes/codex-identity-*.json artifacts.",
+      "Focused on exact normalized entity_name matches with compatible entity_type and source-backed evidence.",
+      "Avoided broad community-board, CAC, and committee/member-list traps except as do_not_merge/skipped notes."
+    ],
+    "candidate_count": 10,
+    "notes": "The worktree was already dirty across canonical/wiki/override/log files; this prep did not revert or overwrite those edits."
+  }
+}

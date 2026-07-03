@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "route_cluster_afaf670d79",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_afaf670d79.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_afaf670d79.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "quarantined",
+  "quarantine": {
+    "blocker": "do_not_merge route_b82-local <> route_b82e-express-cb18-jun2017: reason does not cite a strong identity field | do_not_merge route_b82-sbs <> route_b82e-express-cb18-jun2017: reason does not cite a strong identity field | do_not_merge route_b82-limited-brt-south-brooklyn-2017 <> route_bm2-brt-south-brooklyn-2017: reason does not cite a strong identity field | do_not_merge route_b82-local <> route_bm2-brt-south-brooklyn-2017: reason does not cite a strong identity field | do_not_merge route_b82-sbs <> route_bm2-brt-south-brooklyn-2017: reason does not cite a strong identity field | do_not_merge route_b82e-express-cb18-jun2017 <> route_bm2-brt-south-brooklyn-2017: reason does not cite a strong identity field | (+5 more rejections)",
+    "note": "Partial: structurally clean actions were auto-accepted in the decisions file with the same cluster_id."
+  },
+  "original_merge_groups": [],
+  "original_do_not_merge": [
+    {
+      "record_ids": [
+        "route_b82-local",
+        "route_b82e-express-cb18-jun2017"
+      ],
+      "reason": "Different base route IDs (B82 vs B82E). Distinct routes."
+    },
+    {
+      "record_ids": [
+        "route_b82-sbs",
+        "route_b82e-express-cb18-jun2017"
+      ],
+      "reason": "Different base route IDs (B82 vs B82E). Distinct routes."
+    },
+    {
+      "record_ids": [
+        "route_b82-limited-brt-south-brooklyn-2017",
+        "route_bm2-brt-south-brooklyn-2017"
+      ],
+      "reason": "Different base route IDs (B82 vs BM2). Distinct routes."
+    },
+    {
+      "record_ids": [
+        "route_b82-local",
+        "route_bm2-brt-south-brooklyn-2017"
+      ],
+      "reason": "Different base route IDs (B82 vs BM2). Distinct routes."
+    },
+    {
+      "record_ids": [
+        "route_b82-sbs",
+        "route_bm2-brt-south-brooklyn-2017"
+      ],
+      "reason": "Different base route IDs (B82 vs BM2). Distinct routes."
+    },
+    {
+      "record_ids": [
+        "route_b82e-express-cb18-jun2017",
+        "route_bm2-brt-south-brooklyn-2017"
+      ],
+      "reason": "Different base route IDs (B82E vs BM2). Distinct routes."
+    },
+    {
+      "record_ids": [
+        "route_b82-limited-brt-south-brooklyn-2017",
+        "route_bm5-brt-south-brooklyn-2017"
+      ],
+      "reason": "Different base route IDs (B82 vs BM5). Distinct routes."
+    },
+    {
+      "record_ids": [
+        "route_b82-local",
+        "route_bm5-brt-south-brooklyn-2017"
+      ],
+      "reason": "Different base route IDs (B82 vs BM5). Distinct routes."
+    },
+    {
+      "record_ids": [
+        "route_b82-sbs",
+        "route_bm5-brt-south-brooklyn-2017"
+      ],
+      "reason": "Different base route IDs (B82 vs BM5). Distinct routes."
+    },
+    {
+      "record_ids": [
+        "route_b82e-express-cb18-jun2017",
+        "route_bm5-brt-south-brooklyn-2017"
+      ],
+      "reason": "Different base route IDs (B82E vs BM5). Distinct routes."
+    },
+    {
+      "record_ids": [
+        "route_bm2-brt-south-brooklyn-2017",
+        "route_bm5-brt-south-brooklyn-2017"
+      ],
+      "reason": "Different base route IDs (BM2 vs BM5). Distinct routes."
+    }
+  ]
+}

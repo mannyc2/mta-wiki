@@ -1,0 +1,305 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch048-prep",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "batch_id": "relation048",
+  "batch": "batch048",
+  "input_artifact": "data/review_notes/codex-relation-rule-or-data-next22-prep.json",
+  "scope": "Codex-only deterministic/manual relation cleanup prep; no provider-backed commands, post-ingest LLM harnesses, materialize/export-jsonl/full validate/DB publish, generated-output edits, durable retirements, replacement submissions, LOG edits, manifest edits, canonical/generated edits, or code edits applied",
+  "checkpoint_context": {
+    "reported_validate_backlog_after_relation046": {
+      "issue_count": 1483,
+      "unexpected_relation_endpoint_shape": 20,
+      "duplicate_global_identity": 1463
+    },
+    "selected_next22_bucket": "operated_by entity->event",
+    "selected_rows_cleared": 1,
+    "replacement_rows_added": 1,
+    "expected_endpoint_shape_delta": -1,
+    "expected_remaining_unexpected_relation_endpoint_shape_after_apply": 19,
+    "not_repeated": "relation047 was intentionally skipped per owner instruction; this prep uses relation048."
+  },
+  "durable_mechanism_prepared_not_applied": {
+    "retire_originals_via": "data/submission-overrides/retired.json",
+    "replacement_journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch048.jsonl",
+    "mutation_status": "not_applied_by_this_prep",
+    "only_file_written_by_this_task": "data/review_notes/codex-relation-cleanup-batch048-prep.json"
+  },
+  "bucket": {
+    "name": "singleton operated_by entity-to-event row that should be has_timeline_event entity-to-event",
+    "original_relation_kind": "operated_by",
+    "original_endpoint_shape": "entity -> event",
+    "replacement_relation_kind": "has_timeline_event",
+    "replacement_endpoint_shape": "entity -> event",
+    "prepared_original_count": 1,
+    "cleanup_direction": "data cleanup only; keep operated_by scoped to project|route|corridor -> entity",
+    "rationale": "The cited source states that Metro-North opened the rebuilt platform shelter at Nanuet station. That is timeline/event semantics for Metro-North, not an operated_by relation whose object is an event. Current endpoint rules already admit has_timeline_event entity -> event."
+  },
+  "guards": {
+    "all_pass": true,
+    "original_accepted_not_retired": {
+      "status": "pass",
+      "selected_original_submission_id": "sub_8a68d427e6db5675",
+      "selected_original_record_id": "relation_nanuet-shelter-metronorth",
+      "selected_original_journal": "data/submissions/2026-06-22T20-45-02-305Z_336399-cd4abc10_ingest_meeting-doc-87686.jsonl",
+      "current_validation_state": "accepted",
+      "retired_hits": []
+    },
+    "replacement_absent": {
+      "status": "pass",
+      "replacement_submission_id": "sub_dd404ac2059c3401",
+      "replacement_submission_id_hits": [],
+      "same_semantic_relation_hits": []
+    },
+    "local_observation_id_not_colliding": {
+      "status": "pass",
+      "replacement_local_observation_id": "relation_mnr_has_timeline_event_nanuet_shelter_opening",
+      "local_observation_id_hits": []
+    },
+    "endpoint_shape_valid_under_packages_pipeline_src_records_relations_ts": {
+      "status": "pass",
+      "original_endpoint_shape_issue": "Relation kind operated_by expects project|route|corridor -> entity, got entity -> event.",
+      "replacement_endpoint_shape_issue": null,
+      "replacement_relation_kind": "has_timeline_event",
+      "replacement_subject_kind": "entity",
+      "replacement_object_kind": "event",
+      "current_valid_has_timeline_event_subject_kinds": [
+        "project",
+        "route",
+        "corridor",
+        "entity",
+        "source",
+        "event"
+      ],
+      "current_valid_has_timeline_event_object_kinds": [
+        "event"
+      ]
+    },
+    "endpoint_local_ids_known": {
+      "status": "pass",
+      "source_id": "meeting_doc_87686",
+      "known_local_observation_ids": [
+        {
+          "local_observation_id": "entity_mnr_meeting_may2022",
+          "submission_id": "sub_cab015e3bdf99834",
+          "observation_kind": "entity",
+          "validation_state": "accepted"
+        },
+        {
+          "local_observation_id": "event_nanuet_shelter_opening",
+          "submission_id": "sub_be8b06e56a4e4e49",
+          "observation_kind": "event",
+          "validation_state": "accepted"
+        }
+      ]
+    },
+    "evidence_supports_metro_north_timeline_event_semantics": {
+      "status": "pass",
+      "summary": "The cited block states that Metro-North opened the rebuilt platform shelter at Nanuet station in Rockland County. The existing event record for the same local id is a station improvement opening with lifecycle_phase launched and date_normalized 2022-05. Reusing the cited evidence preserves the source-backed assertion while correcting the relation kind.",
+      "evidence_refs": [
+        {
+          "source_id": "meeting_doc_87686",
+          "evidence_id": "meeting_doc_87686#p009_c0002",
+          "source_path": "raw/sources/meeting_doc_87686/blocks.jsonl",
+          "page_number": 9,
+          "block_id": "p009_c0002",
+          "text_sha256": "sha256:74e0b3f85927a70693af18eb6b3baf14b406e1d31e04f2fea8e2fc27433caf01",
+          "text_source": "raw_text",
+          "source_quote": "Metro-North opened the rebuilt platform shelter at the Nanuet station"
+        }
+      ]
+    },
+    "no_generated_files_edited": {
+      "status": "pass_for_this_task",
+      "note": "The shared worktree already contains generated-output and other edits owned by others. This task writes only data/review_notes/codex-relation-cleanup-batch048-prep.json and does not edit retired.json, submissions, canonical JSONL, materialized data, wiki output, LOG, manifest, code, or generated files."
+    }
+  },
+  "local_validation": {
+    "clean": true,
+    "tooling": "Read-only rg/jq/sed inspection plus bun --eval createSubmissionEntry/relationEndpointShapeIssue dry-runs using direct local imports; no appendSubmission, materialize, export-jsonl, full validate, DB publish, provider-backed command, or generated-output command run.",
+    "summary": {
+      "prepared_count": 1,
+      "retire_replace_count": 1,
+      "retire_only_count": 0,
+      "replacement_submission_count": 1,
+      "accepted_replacement_count": 1,
+      "issue_count": 0,
+      "warning_count": 0,
+      "relation_endpoint_issue_count": 0,
+      "endpoint_shape_issue_count_after_replacement": 0,
+      "expected_endpoint_shape_delta": -1
+    }
+  },
+  "prepared_count": 1,
+  "retire_replace_count": 1,
+  "retire_only_count": 0,
+  "accepted_replacement_count": 1,
+  "issue_count": 0,
+  "expected_endpoint_shape_delta": -1,
+  "all_pass": true,
+  "decisions": [
+    {
+      "action": "retire_and_replace",
+      "retire": {
+        "submission_id": "sub_8a68d427e6db5675",
+        "run_id": "2026-06-22T20-45-02-305Z_336399-cd4abc10_ingest_meeting-doc-87686",
+        "original_record_id": "relation_nanuet-shelter-metronorth",
+        "original_local_observation_id": "relation_nanuet_shelter_metronorth",
+        "malformed_shape": "operated_by entity -> event",
+        "original_relation_kind": "operated_by",
+        "original_subject_id": "entity_meeting-doc-124881-mnr",
+        "original_subject_kind": "entity",
+        "original_subject_local_observation_id": "entity_mnr_meeting_may2022",
+        "original_subject_name": "MTA Metro-North Railroad",
+        "original_object_id": "event_nanuet-shelter-opening",
+        "original_object_kind": "event",
+        "original_object_local_observation_id": "event_nanuet_shelter_opening",
+        "original_object_name": "Nanuet Station Rebuilt Platform Shelter Opening",
+        "source_ids": [
+          "meeting_doc_87686"
+        ],
+        "current_args": {
+          "source_id": "meeting_doc_87686",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_nanuet_shelter_metronorth",
+          "label": "Metro-North operated Nanuet Station",
+          "raw_text": "This past Thursday, Metro-North opened the rebuilt platform shelter at the Nanuet station in Rockland County.",
+          "payload": {
+            "relation_kind": "operated_by",
+            "subject_local_observation_id": "entity_mnr_meeting_may2022",
+            "object_local_observation_id": "event_nanuet_shelter_opening",
+            "description": "Metro-North opened the Nanuet station platform shelter",
+            "relation_family": "agency_role"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_87686",
+              "evidence_id": "meeting_doc_87686#p009_c0002",
+              "source_path": "raw/sources/meeting_doc_87686/blocks.jsonl",
+              "page_number": 9,
+              "block_id": "p009_c0002",
+              "text_sha256": "sha256:74e0b3f85927a70693af18eb6b3baf14b406e1d31e04f2fea8e2fc27433caf01",
+              "text_source": "raw_text",
+              "source_quote": "Metro-North opened the rebuilt platform shelter at the Nanuet station"
+            }
+          ]
+        },
+        "proposed_retired_json_entry": {
+          "submission_id": "sub_8a68d427e6db5675",
+          "reason": "Codex relation cleanup batch048 replaces malformed operated_by entity -> event relation relation_nanuet-shelter-metronorth with validator-compatible has_timeline_event entity -> event relation preserving the Metro-North/Nanuet shelter opening evidence.",
+          "source_decision": "data/review_notes/codex-canonical-cleanup-2026-06-23.jsonl#codex-relation-cleanup-2026-06-23-endpoint-shape-batch048",
+          "reviewed_at": "2026-06-23T00:00:00Z"
+        },
+        "reason": "The cited source supports Metro-North having a timeline event for opening the rebuilt Nanuet station shelter. It does not support an operated_by relation where an entity is operated by an event.",
+        "expected_endpoint_shape_delta": -1,
+        "confidence": "high"
+      },
+      "replacement": {
+        "run_id": "2026-06-23_codex_relation_cleanup_batch048",
+        "journal_target": "data/submissions/2026-06-23_codex_relation_cleanup_batch048.jsonl",
+        "id_generation": {
+          "method": "createSubmissionEntry(runId, rawToolArgs, '2026-06-23T00:00:00.000Z') with relationEndpointIssues added; stable hash is over normalized tool_args.",
+          "deterministic_submission_id": "sub_dd404ac2059c3401",
+          "tool_args_sha256": "sha256:dd404ac2059c34017ceab5e8acfb9f4ac8eae3a20484280facb0d94b30783651",
+          "conductor_required": false
+        },
+        "replacement_entries": [
+          {
+            "role": "corrected relation replacement",
+            "tool_name": "submit_observation",
+            "review_state": "accepted",
+            "deterministic_submission_id": "sub_dd404ac2059c3401",
+            "tool_args_sha256": "sha256:dd404ac2059c34017ceab5e8acfb9f4ac8eae3a20484280facb0d94b30783651",
+            "proposed_relation_kind": "has_timeline_event",
+            "proposed_endpoint_shape": "entity -> event",
+            "entry": {
+              "submission_id": "sub_dd404ac2059c3401",
+              "run_id": "2026-06-23_codex_relation_cleanup_batch048",
+              "submitted_at": "2026-06-23T00:00:00.000Z",
+              "tool_args_sha256": "sha256:dd404ac2059c34017ceab5e8acfb9f4ac8eae3a20484280facb0d94b30783651",
+              "schema_version": 2,
+              "tool_args": {
+                "source_id": "meeting_doc_87686",
+                "observation_kind": "relation",
+                "local_observation_id": "relation_mnr_has_timeline_event_nanuet_shelter_opening",
+                "label": "Metro-North has Nanuet shelter opening timeline event",
+                "raw_text": "This past Thursday, Metro-North opened the rebuilt platform shelter at the Nanuet station in Rockland County.",
+                "payload": {
+                  "relation_kind": "has_timeline_event",
+                  "subject_local_observation_id": "entity_mnr_meeting_may2022",
+                  "object_local_observation_id": "event_nanuet_shelter_opening",
+                  "description": "Metro-North has a timeline event for opening the rebuilt platform shelter at Nanuet station.",
+                  "relation_family": "timeline_context"
+                },
+                "evidence_refs": [
+                  {
+                    "source_id": "meeting_doc_87686",
+                    "evidence_id": "meeting_doc_87686#p009_c0002",
+                    "source_path": "raw/sources/meeting_doc_87686/blocks.jsonl",
+                    "page_number": 9,
+                    "block_id": "p009_c0002",
+                    "text_sha256": "sha256:74e0b3f85927a70693af18eb6b3baf14b406e1d31e04f2fea8e2fc27433caf01",
+                    "text_source": "raw_text",
+                    "source_quote": "Metro-North opened the rebuilt platform shelter at the Nanuet station"
+                  }
+                ]
+              },
+              "validation": {
+                "state": "accepted",
+                "issues": []
+              }
+            },
+            "raw_tool_args_for_replay": {
+              "source_id": "meeting_doc_87686",
+              "observation_kind": "relation",
+              "local_observation_id": "relation_mnr_has_timeline_event_nanuet_shelter_opening",
+              "label": "Metro-North has Nanuet shelter opening timeline event",
+              "raw_text": "This past Thursday, Metro-North opened the rebuilt platform shelter at the Nanuet station in Rockland County.",
+              "payload": {
+                "relation_kind": "has_timeline_event",
+                "subject_local_observation_id": "entity_mnr_meeting_may2022",
+                "object_local_observation_id": "event_nanuet_shelter_opening",
+                "description": "Metro-North has a timeline event for opening the rebuilt platform shelter at Nanuet station."
+              },
+              "evidence_refs": [
+                {
+                  "source_id": "meeting_doc_87686",
+                  "evidence_id": "meeting_doc_87686#p009_c0002",
+                  "source_path": "raw/sources/meeting_doc_87686/blocks.jsonl",
+                  "page_number": 9,
+                  "block_id": "p009_c0002",
+                  "text_sha256": "sha256:74e0b3f85927a70693af18eb6b3baf14b406e1d31e04f2fea8e2fc27433caf01",
+                  "text_source": "raw_text",
+                  "source_quote": "Metro-North opened the rebuilt platform shelter at the Nanuet station"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "commands_run_read_only": [
+    "sed -n '1,240p' data/review_notes/codex-relation-rule-or-data-next22-prep.json",
+    "sed -n '1,260p' packages/pipeline/src/records/relations.ts",
+    "sed -n '1,520p' packages/pipeline/src/records/submissions.ts",
+    "jq -c 'select(.submission_id==\"sub_8a68d427e6db5675\")' data/submissions/*.jsonl",
+    "jq -c '.retired[]? | select(.submission_id==\"sub_8a68d427e6db5675\")' data/submission-overrides/retired.json",
+    "jq -c 'select(.record_id==\"relation_nanuet-shelter-metronorth\")' data/canonical/relations.jsonl",
+    "jq -c 'select(.record_id==\"entity_meeting-doc-124881-mnr\")' data/canonical/entities.jsonl",
+    "jq -c 'select(.record_id==\"event_nanuet-shelter-opening\")' data/canonical/events.jsonl",
+    "jq -c 'select(.block_id==\"p009_c0002\")' raw/sources/meeting_doc_87686/blocks.jsonl",
+    "bun --eval '<createSubmissionEntry dry-run for relation048 replacement; no appendSubmission>'",
+    "bun --eval '<relationEndpointShapeIssue dry-run for original and replacement shapes>'",
+    "rg -n 'sub_dd404ac2059c3401|relation_mnr_has_timeline_event_nanuet_shelter_opening|codex-relation-cleanup-batch048-prep|relation048' data/submissions data/canonical data/review_notes data/submission-overrides/retired.json -S",
+    "jq -c 'select(.submission_id==\"sub_cab015e3bdf99834\" or .submission_id==\"sub_be8b06e56a4e4e49\") | {submission_id, run_id, state:.validation.state, source_id:.tool_args.source_id, kind:.tool_args.observation_kind, local:.tool_args.local_observation_id, label:.tool_args.label, payload:.tool_args.payload}' data/submissions/*.jsonl"
+  ],
+  "apply_readiness": {
+    "conductor_can_apply_immediately": true,
+    "apply_steps": [
+      "Add the proposed_retired_json_entry for sub_8a68d427e6db5675 to data/submission-overrides/retired.json.",
+      "Append the proposed replacement entry sub_dd404ac2059c3401 to data/submissions/2026-06-23_codex_relation_cleanup_batch048.jsonl.",
+      "Do not change relation endpoint-shape validator rules for this cleanup."
+    ]
+  }
+}

@@ -1,0 +1,558 @@
+{
+  "note_id": "codex-identity-batch149-prep",
+  "batch": "identity149",
+  "created_at": "2026-06-23T00:00:00Z",
+  "scope": {
+    "global_kind": "entity"
+  },
+  "prepared_count": 12,
+  "proposed_aliases": [
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-68121-metro-north-railroad",
+      "target_id": "entity_metro-north-railroad",
+      "canonical_id": "entity_metro-north-railroad",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_metro-north-railroad",
+      "reason": "Both current canonical records identify the same agency, Metro-North Railroad. The alias is a single meeting-document occurrence; the target is the richer live Metro-North Railroad agency record with many source-backed occurrences.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Metro-North Railroad",
+          "entity_name": "Metro-North Railroad",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_68121"
+          ],
+          "evidence_refs": [
+            "meeting_doc_68121#p001_c0002"
+          ]
+        },
+        "target": {
+          "display_name": "Metro-North Railroad",
+          "entity_name": "Metro-North Railroad",
+          "entity_type": "agency",
+          "source_ids_sample": [
+            "meeting_doc_163201",
+            "meeting_doc_189886",
+            "meeting_doc_193926"
+          ],
+          "evidence_refs": [
+            "meeting_doc_163201#p005_c0008",
+            "meeting_doc_163201#p006_c0005",
+            "meeting_doc_189886#p001_c0002"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_key_basis": "normalized payload.entity_name/display_name match",
+        "guard_status": "passed"
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-29956-mnr",
+      "target_id": "entity_metro-north-railroad",
+      "canonical_id": "entity_metro-north-railroad",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_metro-north-railroad",
+      "reason": "Both current canonical records identify Metro-North Railroad as an agency. The alias is another single-source Metro-North Railroad occurrence and the target is the broader live Metro-North Railroad cluster.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Metro-North Railroad",
+          "entity_name": "Metro-North Railroad",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_29956"
+          ],
+          "evidence_refs": [
+            "meeting_doc_29956#p109_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "Metro-North Railroad",
+          "entity_name": "Metro-North Railroad",
+          "entity_type": "agency",
+          "source_ids_sample": [
+            "meeting_doc_163201",
+            "meeting_doc_189886",
+            "meeting_doc_193926"
+          ],
+          "evidence_refs": [
+            "meeting_doc_163201#p005_c0008",
+            "meeting_doc_163201#p006_c0005",
+            "meeting_doc_189886#p001_c0002"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_key_basis": "normalized payload.entity_name/display_name match",
+        "guard_status": "passed"
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-124881-lirr",
+      "target_id": "entity_annual-report-2021-lirr",
+      "canonical_id": "entity_annual-report-2021-lirr",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_the-long-island-rail-road",
+      "reason": "Both records have payload entity_name \"The Long Island Rail Road Company\" and display as MTA Long Island Rail Road. The alias is a single meeting-document agency occurrence; the target is the richer live LIRR company/agency record.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "MTA Long Island Rail Road",
+          "entity_name": "The Long Island Rail Road Company",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_124881"
+          ],
+          "evidence_refs": [
+            "meeting_doc_124881#p004_c0011"
+          ]
+        },
+        "target": {
+          "display_name": "MTA Long Island Rail Road",
+          "entity_name": "The Long Island Rail Road Company",
+          "entity_type": "public benefit corporation subsidiary",
+          "source_ids_sample": [
+            "annual_report_narrative_2021",
+            "lower_montauk_final_report_jan2018",
+            "meeting_doc_100221"
+          ],
+          "evidence_refs": [
+            "annual_report_narrative_2021#p015_c0001",
+            "annual_report_narrative_2021#p093_c0006",
+            "lower_montauk_final_report_jan2018#p003_c0007"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_key_basis": "normalized payload.entity_name match",
+        "guard_status": "passed"
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-179691-lirr",
+      "target_id": "entity_annual-report-2021-lirr",
+      "canonical_id": "entity_annual-report-2021-lirr",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_the-long-island-rail-road",
+      "reason": "Both records identify The Long Island Rail Road Company / MTA Long Island Rail Road. The alias is a single meeting-document agency occurrence; the target is the broader source-backed LIRR record.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "MTA Long Island Rail Road",
+          "entity_name": "The Long Island Rail Road Company",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_179691"
+          ],
+          "evidence_refs": [
+            "meeting_doc_179691#p003_c0012"
+          ]
+        },
+        "target": {
+          "display_name": "MTA Long Island Rail Road",
+          "entity_name": "The Long Island Rail Road Company",
+          "entity_type": "public benefit corporation subsidiary",
+          "source_ids_sample": [
+            "annual_report_narrative_2021",
+            "lower_montauk_final_report_jan2018",
+            "meeting_doc_100221"
+          ],
+          "evidence_refs": [
+            "annual_report_narrative_2021#p015_c0001",
+            "annual_report_narrative_2021#p093_c0006",
+            "lower_montauk_final_report_jan2018#p003_c0007"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_key_basis": "normalized payload.entity_name match",
+        "guard_status": "passed"
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-39661-lirr",
+      "target_id": "entity_annual-report-2021-lirr",
+      "canonical_id": "entity_annual-report-2021-lirr",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_the-long-island-rail-road",
+      "reason": "Both records identify The Long Island Rail Road Company / MTA Long Island Rail Road. The alias is a single meeting-document occurrence and the target already aggregates the same LIRR company identity across many sources.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "MTA Long Island Rail Road",
+          "entity_name": "The Long Island Rail Road Company",
+          "entity_type": "agency",
+          "source_ids": [
+            "meeting_doc_39661"
+          ],
+          "evidence_refs": [
+            "meeting_doc_39661#p226_c0011"
+          ]
+        },
+        "target": {
+          "display_name": "MTA Long Island Rail Road",
+          "entity_name": "The Long Island Rail Road Company",
+          "entity_type": "public benefit corporation subsidiary",
+          "source_ids_sample": [
+            "annual_report_narrative_2021",
+            "lower_montauk_final_report_jan2018",
+            "meeting_doc_100221"
+          ],
+          "evidence_refs": [
+            "annual_report_narrative_2021#p015_c0001",
+            "annual_report_narrative_2021#p093_c0006",
+            "lower_montauk_final_report_jan2018#p003_c0007"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_key_basis": "normalized payload.entity_name match",
+        "guard_status": "passed"
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_ej-electric-meeting-doc-42686",
+      "target_id": "entity_ej-electric-cpc-may2022",
+      "canonical_id": "entity_ej-electric-cpc-may2022",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_e-j-electric-installation",
+      "reason": "The records identify the same E-J Electric Installation vendor/contractor identity, with corporate suffix variants only. The alias uses \"Corp.\" while the target is the richer current E-J Electric Installation Co. record.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "E-J Electric Installation Corp.",
+          "entity_name": "E-J Electric Installation Corp.",
+          "entity_type": "vendor",
+          "source_ids": [
+            "meeting_doc_42686"
+          ],
+          "evidence_refs": [
+            "meeting_doc_42686#p047_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "E-J Electric Installation Co.",
+          "entity_name": "E-J Electric Installation Co.",
+          "entity_type": "contractor",
+          "source_ids": [
+            "meeting_doc_199076",
+            "meeting_doc_68196",
+            "meeting_doc_87691"
+          ],
+          "evidence_refs": [
+            "meeting_doc_199076#p006_c0008",
+            "meeting_doc_68196#p051_c0008",
+            "meeting_doc_68196#p055_c0005"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_key_basis": "normalized entity name strips corporate suffix variants",
+        "guard_status": "passed"
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-72536-ej-electric",
+      "target_id": "entity_ej-electric-cpc-may2022",
+      "canonical_id": "entity_ej-electric-cpc-may2022",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_e-j-electric-installation",
+      "reason": "The records identify the same E-J Electric Installation vendor/contractor identity. The alias spells out \"Company\" while the target is the richer E-J Electric Installation Co. record.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "E-J Electric Installation Company",
+          "entity_name": "E-J Electric Installation Company",
+          "entity_type": "vendor",
+          "source_ids": [
+            "meeting_doc_72536"
+          ],
+          "evidence_refs": [
+            "meeting_doc_72536#p009_c0001",
+            "meeting_doc_72536#p009_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "E-J Electric Installation Co.",
+          "entity_name": "E-J Electric Installation Co.",
+          "entity_type": "contractor",
+          "source_ids": [
+            "meeting_doc_199076",
+            "meeting_doc_68196",
+            "meeting_doc_87691"
+          ],
+          "evidence_refs": [
+            "meeting_doc_199076#p006_c0008",
+            "meeting_doc_68196#p051_c0008",
+            "meeting_doc_68196#p055_c0005"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_key_basis": "normalized entity name strips corporate suffix variants",
+        "guard_status": "passed"
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_hdr-nov2023",
+      "target_id": "entity_meeting-doc-127956-hdr",
+      "canonical_id": "entity_meeting-doc-127956-hdr",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_henningson-durham-and-richardson-architecture-and-engineering",
+      "reason": "Both records identify Henningson, Durham and Richardson Architecture and Engineering, P.C. The alias is a single-source company record; the target carries the same formal company name plus HDR context and multiple source refs.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "entity_hdr_nov2023",
+          "entity_name": "Henningson, Durham & Richardson Architecture and Engineering, P.C.",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_127551"
+          ],
+          "evidence_refs": [
+            "meeting_doc_127551#p050_c0003"
+          ]
+        },
+        "target": {
+          "display_name": "Henningson, Durham and Richardson Architecture and Engineering, P.C. (HDR)",
+          "entity_name": "Henningson, Durham and Richardson Architecture and Engineering, P.C.",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_127956",
+            "meeting_doc_201641"
+          ],
+          "evidence_refs": [
+            "meeting_doc_127956#p029_c0008",
+            "meeting_doc_127956#p030_c0005",
+            "meeting_doc_201641#p001_c0004"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_key_basis": "normalized entity name matches after ampersand/and punctuation normalization",
+        "guard_status": "passed"
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_henningson-durham-richardson",
+      "target_id": "entity_meeting-doc-127956-hdr",
+      "canonical_id": "entity_meeting-doc-127956-hdr",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_henningson-durham-and-richardson-architecture-and-engineering",
+      "reason": "Both records identify Henningson, Durham and Richardson Architecture and Engineering; the alias lacks the P.C. suffix but otherwise matches the same firm name. The target has the formal P.C. name and HDR evidence.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Henningson, Durham & Richardson Architecture and Engineering",
+          "entity_name": "Henningson, Durham & Richardson Architecture and Engineering",
+          "entity_type": "consultant firm",
+          "source_ids": [
+            "meeting_doc_205651"
+          ],
+          "evidence_refs": [
+            "meeting_doc_205651#p003_c0005"
+          ]
+        },
+        "target": {
+          "display_name": "Henningson, Durham and Richardson Architecture and Engineering, P.C. (HDR)",
+          "entity_name": "Henningson, Durham and Richardson Architecture and Engineering, P.C.",
+          "entity_type": "company",
+          "source_ids": [
+            "meeting_doc_127956",
+            "meeting_doc_201641"
+          ],
+          "evidence_refs": [
+            "meeting_doc_127956#p029_c0008",
+            "meeting_doc_127956#p030_c0005",
+            "meeting_doc_201641#p001_c0004"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_key_basis": "normalized entity name matches after ampersand/and and corporate suffix normalization",
+        "guard_status": "passed"
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-201641-mj",
+      "target_id": "entity_mj-engineering-pc",
+      "canonical_id": "entity_mj-engineering-pc",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_m-and-j-engineering",
+      "reason": "Both records identify M&J Engineering / M & J Engineering PC. The alias uses the P.C. spelling in a single source; the target is the richer live M & J Engineering PC record.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "M&J Engineering P.C.",
+          "entity_name": "M&J Engineering P.C.",
+          "entity_type": "firm",
+          "source_ids": [
+            "meeting_doc_201641"
+          ],
+          "evidence_refs": [
+            "meeting_doc_201641#p001_c0004"
+          ]
+        },
+        "target": {
+          "display_name": "M & J Engineering PC",
+          "entity_name": "M & J Engineering PC",
+          "entity_type": "NYS certified minority-owned business",
+          "source_ids": [
+            "meeting_doc_205636",
+            "meeting_doc_206081"
+          ],
+          "evidence_refs": [
+            "meeting_doc_205636#p006_c0006",
+            "meeting_doc_205636#p005_c0007",
+            "meeting_doc_206081#p016_c0004"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_key_basis": "normalized entity name matches after ampersand/spacing and P.C./PC normalization",
+        "guard_status": "passed"
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_mj-engineering",
+      "target_id": "entity_mj-engineering-pc",
+      "canonical_id": "entity_mj-engineering-pc",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_m-and-j-engineering",
+      "reason": "Both records identify M&J Engineering / M & J Engineering PC. The alias omits the PC suffix but matches the same firm name and should fold into the richer live M & J Engineering PC record.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "M&J Engineering",
+          "entity_name": "M&J Engineering",
+          "entity_type": "consultant firm",
+          "source_ids": [
+            "meeting_doc_205651"
+          ],
+          "evidence_refs": [
+            "meeting_doc_205651#p003_c0005"
+          ]
+        },
+        "target": {
+          "display_name": "M & J Engineering PC",
+          "entity_name": "M & J Engineering PC",
+          "entity_type": "NYS certified minority-owned business",
+          "source_ids": [
+            "meeting_doc_205636",
+            "meeting_doc_206081"
+          ],
+          "evidence_refs": [
+            "meeting_doc_205636#p006_c0006",
+            "meeting_doc_205636#p005_c0007",
+            "meeting_doc_206081#p016_c0004"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_key_basis": "normalized entity name matches after ampersand/spacing and P.C./PC normalization",
+        "guard_status": "passed"
+      }
+    },
+    {
+      "global_kind": "entity",
+      "alias_id": "entity_meeting-doc-151746-municipal-credit-union",
+      "target_id": "entity_municipal-credit-union-meeting-doc-151756",
+      "canonical_id": "entity_municipal-credit-union-meeting-doc-151756",
+      "confidence": "high",
+      "validator_duplicate_key": "entity_municipal-credit-union",
+      "reason": "Both records identify Municipal Credit Union. The alias includes the MCU acronym and the target has the same entity_name from a neighboring meeting-document source.",
+      "source_evidence": {
+        "alias": {
+          "display_name": "Municipal Credit Union (MCU)",
+          "entity_name": "Municipal Credit Union",
+          "entity_type": "credit union",
+          "source_ids": [
+            "meeting_doc_151746"
+          ],
+          "evidence_refs": [
+            "meeting_doc_151746#p001_c0001"
+          ]
+        },
+        "target": {
+          "display_name": "entity_municipal_credit_union_meeting_doc_151756",
+          "entity_name": "Municipal Credit Union",
+          "entity_type": "organization",
+          "source_ids": [
+            "meeting_doc_151756"
+          ],
+          "evidence_refs": [
+            "meeting_doc_151756#p004_c0007"
+          ]
+        }
+      },
+      "validator_evidence": {
+        "duplicate_key_basis": "normalized payload.entity_name match",
+        "guard_status": "passed"
+      }
+    }
+  ],
+  "exclusions_and_guards": {
+    "global_kind_limited_to": "entity",
+    "mechanical_guards_applied": [
+      "Alias and target must both be present as current record_id values in data/canonical/entities.jsonl.",
+      "Alias must not already be a current aliases.entity key in data/identity-overrides/merges.json.",
+      "Target must not be a current aliases.entity key in data/identity-overrides/merges.json, avoiding target chains.",
+      "Alias and target must differ.",
+      "Pair must not appear in current data/identity-overrides/do-not-merge.json entity pairs in either direction.",
+      "Stale aliases removed by identity145-148 were excluded by live canonical presence checks.",
+      "Broad community-board and committee labels were not selected unless borough/name evidence and target identity were unambiguous; this batch avoids them entirely."
+    ],
+    "selected_pair_guard_results": {
+      "alias_present_in_current_canonical": true,
+      "target_present_in_current_canonical": true,
+      "alias_not_already_in_merges_json": true,
+      "target_not_alias_in_merges_json": true,
+      "alias_not_equal_target": true,
+      "no_entity_do_not_merge_pair": true
+    },
+    "explicit_stale_aliases_excluded": [
+      "entity_meeting-doc-sir",
+      "entity_meeting-doc-sirtoa"
+    ],
+    "candidate_families_deferred": [
+      {
+        "family": "community-board exact-name groups",
+        "reason": "Bare Community Board 1/3/4/5/6/7/8/9 labels remain cross-borough unless target identity is unambiguous."
+      },
+      {
+        "family": "committee-member and board-member initial-only records",
+        "reason": "Initial-only person labels such as L. Lacewell, J. Lieber, P. Dietlin, and related committee rosters need a separate roster-aware pass."
+      },
+      {
+        "family": "MTA committee and internal department records",
+        "reason": "Several exact-name committee/department groups are likely duplicates, but this batch keeps to lower-ambiguity agency, vendor, and firm records."
+      }
+    ],
+    "all_selected_aliases_passed_guards": true
+  },
+  "command_evidence": [
+    "jq '{note_id,batch,prepared_count,first: .proposed_aliases[0], guards: .exclusions_and_guards}' data/review_notes/codex-identity-batch145-prep.json data/review_notes/codex-identity-batch146-prep.json data/review_notes/codex-identity-batch147-prep.json data/review_notes/codex-identity-batch148-prep.json",
+    "rg -n 'identity148|batch148|exact-name|meeting-doc-sir|entity_meeting-doc-sir' data/review_notes data/identity-overrides data/canonical/entities.jsonl packages data -g '!data/canonical.db' -g '!data/transcripts/**'",
+    "jq -r '.aliases.entity | to_entries[] | [.key,.value] | @tsv' data/identity-overrides/merges.json",
+    "jq -r '.pairs.entity[]? | [.a,.b,.reason // \"\"] | @tsv' data/identity-overrides/do-not-merge.json",
+    "bun --eval '<read-only exact-name entity duplicate miner over data/canonical/entities.jsonl, data/identity-overrides/merges.json, and data/identity-overrides/do-not-merge.json>'",
+    "bun --eval '<read-only selected-pair guard and canonical evidence check for the 12 proposed entity aliases>'"
+  ],
+  "forbidden_commands_not_run": [
+    "provider-backed commands",
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts export-jsonl",
+    "bun packages/cli/src/cli.ts validate",
+    "bun packages/cli/src/cli.ts write",
+    "bun packages/cli/src/cli.ts ask",
+    "bun packages/cli/src/cli.ts schema",
+    "bun packages/cli/src/cli.ts ontology-review",
+    "bun packages/cli/src/cli.ts ontology-normalize-run",
+    "bun packages/cli/src/cli.ts identity-review",
+    "bun packages/cli/src/cli.ts canonicalize",
+    "bun packages/cli/src/cli.ts campaign",
+    "dedup mutation commands"
+  ]
+}

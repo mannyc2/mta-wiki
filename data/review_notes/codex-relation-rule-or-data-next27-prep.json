@@ -1,0 +1,225 @@
+{
+  "note_id": "codex-relation-rule-or-data-next27-prep",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "scope": "Codex-only validator/rule-or-data triage for the next current unexpected_relation_endpoint_shape bucket after relation056; deterministic inspection only; no provider-backed commands, generated-output commands, durable data edits, code edits, LOG edits, manifest edits, submissions edits, retired.json edits, canonical edits, or wiki edits",
+  "current_count_if_observed": {
+    "unexpected_relation_endpoint_shape": 9,
+    "method": "Read-only SQLite inventory over data/canonical.db using the endpoint shape table currently present in packages/pipeline/src/records/relations.ts.",
+    "relation056_state": "LOG.md and data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl record relation056 as applied for sub_cc4afbb3972f607e with expected unexpected_relation_endpoint_shape=9. Local read-only endpoint inventory also returns nine shaped relation issues.",
+    "current_visible_records": [
+      "relation_a-rockaways-affects-a-s-lines",
+      "relation_app-update-owned-by-mta",
+      "relation_bt-committee-workplan-2026-owned-by",
+      "relation_meeting-doc-121091-psa-bronx-stations",
+      "relation_meeting-doc-133291-proposal-implemented-by-nyct-mtabus",
+      "relation_meeting-doc-194171-publication-date",
+      "relation_meeting-doc-194171-scalise-fm-swap",
+      "relation_procurement-metronorth-circuit-breakers",
+      "relation_rel-ace-starts-at-manhattan-brooklyn"
+    ]
+  },
+  "bucket": {
+    "name": "has_timeline_event project->entity",
+    "count": 1,
+    "selected_record_id": "relation_meeting-doc-194171-scalise-fm-swap",
+    "selected_submission_id": "sub_79410d5bbfe08442",
+    "source_id": "meeting_doc_194171",
+    "current_relation_kind": "has_timeline_event",
+    "current_endpoint_shape": {
+      "subject_kind": "project",
+      "subject_record_id": "project_meeting-doc-194171-fm-swap",
+      "subject_local_observation_id": "project_meeting_doc_194171_fm_swap",
+      "subject_display_name": "F/M Swap Service Change",
+      "object_kind": "entity",
+      "object_record_id": "entity_meeting-doc-194171-patrick-scalise",
+      "object_local_observation_id": "entity_meeting_doc_194171_patrick_scalise",
+      "object_display_name": "Patrick Scalise"
+    },
+    "validator_expectation": "Current has_timeline_event allows project|route|corridor|entity|source|event -> event. It should not be widened to allow project -> entity."
+  },
+  "recommendation": {
+    "classification": "data_cleanup",
+    "recommended_action": "Retire the malformed has_timeline_event project -> entity submission and add one valid has_claim project -> claim replacement that links the F/M Swap Service Change project to the existing Patrick Scalise F/M swap outreach claim.",
+    "why_data_cleanup": "The cited source text describes Patrick Scalise's role in planning, implementing, and communicating the F/M swap service change. Patrick Scalise is not a timeline event, and the same source already has an accepted claim record that captures the role/outreach assertion with the same evidence.",
+    "why_not_validator_code_gap": "A timeline relation's object endpoint should remain an event. Allowing has_timeline_event project -> entity would blur participant, implementer, and claim-support semantics and would hide an endpoint selection error. The proposed replacement uses an already-accepted endpoint shape, has_claim project -> claim.",
+    "bad_submission_ids": [
+      {
+        "submission_id": "sub_79410d5bbfe08442",
+        "run_id": "2026-06-21T21-02-59-476Z_3137823-2a52571c_ingest_meeting-doc-194171",
+        "submission_path": "data/submissions/2026-06-21T21-02-59-476Z_3137823-2a52571c_ingest_meeting-doc-194171.jsonl",
+        "submission_line": 58,
+        "record_id": "relation_meeting-doc-194171-scalise-fm-swap",
+        "local_observation_id": "relation_meeting_doc_194171_scalise_fm_swap",
+        "relation_kind": "has_timeline_event",
+        "endpoint_kinds": "project -> entity",
+        "retire_reason": "Malformed timeline relation: object endpoint is Patrick Scalise as an entity/person, while the cited evidence supports a claim about his F/M swap planning, implementation, and outreach role rather than an event endpoint."
+      }
+    ],
+    "proposed_replacement": {
+      "replacement_needed": true,
+      "relation_kind": "has_claim",
+      "endpoint_kinds": "project -> claim",
+      "subject_local_observation_id": "project_meeting_doc_194171_fm_swap",
+      "subject_record_id": "project_meeting-doc-194171-fm-swap",
+      "object_local_observation_id": "claim_meeting_doc_194171_fm_swap_outreach",
+      "object_record_id": "claim_meeting-doc-194171-fm-swap-outreach",
+      "suggested_local_observation_id": "relation_meeting_doc_194171_fm_swap_has_scalise_outreach_claim",
+      "suggested_label": "F/M swap service change has Patrick Scalise outreach claim",
+      "suggested_description": "The F/M swap service change has a source-backed claim that Patrick Scalise played a central role in planning, implementing, communicating, and supporting rider outreach for the change.",
+      "relation_family": "claim_support",
+      "replacement_shape_valid_under_current_rules": true,
+      "replacement_shape_rule": "has_claim accepts project|route|corridor|entity|source|event|treatment_component -> claim."
+    }
+  },
+  "evidence": {
+    "selected_relation_submission": {
+      "submission_id": "sub_79410d5bbfe08442",
+      "tool_args_sha256": "sha256:79410d5bbfe08442d2a887d54266de20970bcf9a5811e35f4a52c978a6861624",
+      "label": "Scalise - F/M swap project",
+      "payload_relation_kind": "has_timeline_event",
+      "payload_subject_local_observation_id": "project_meeting_doc_194171_fm_swap",
+      "payload_object_local_observation_id": "entity_meeting_doc_194171_patrick_scalise",
+      "evidence_refs": [
+        "meeting_doc_194171#p015_c0005",
+        "meeting_doc_194171#p015_c0006"
+      ]
+    },
+    "source": {
+      "source_id": "meeting_doc_194171",
+      "title": "NEW YORK CITY TRANSIT ALL-STARS",
+      "publisher": "MTA",
+      "published_date_normalized": "2025-12"
+    },
+    "source_blocks": [
+      {
+        "evidence_id": "meeting_doc_194171#p015_c0005",
+        "source_path": "raw/sources/meeting_doc_194171/blocks.jsonl",
+        "page_number": 15,
+        "block_id": "p015_c0005",
+        "block_kind": "text",
+        "text_sha256": "sha256:36a00aa4ad19bbac78fd95c28ec8bffbeef44a5ce7437b4e7a2b3dece1b02aaf",
+        "summary": "Patrick Scalise played a central role in planning, implementing, and communicating the F/M swap service change, including stakeholder presentations.",
+        "short_quote": "Patrick has played a central role in planning, implementing, and communicating the F/M swap service change"
+      },
+      {
+        "evidence_id": "meeting_doc_194171#p015_c0006",
+        "source_path": "raw/sources/meeting_doc_194171/blocks.jsonl",
+        "page_number": 15,
+        "block_id": "p015_c0006",
+        "block_kind": "text",
+        "text_sha256": "sha256:0be66a4a0f94138ca23f09117ce6189e2362ccf70365a9291e7acbc2242314e9",
+        "summary": "Patrick Scalise collaborated with Subways and Customer Communications and organized more than 400 customer ambassador shifts around implementation.",
+        "short_quote": "organizing and executing a large-scale customer outreach effort of more than 400 customer ambassador shifts"
+      }
+    ],
+    "existing_endpoint_records": [
+      {
+        "record_id": "project_meeting-doc-194171-fm-swap",
+        "submission_id": "sub_e8d967f1021a6143",
+        "record_kind": "project",
+        "local_observation_id": "project_meeting_doc_194171_fm_swap",
+        "display_name": "F/M Swap Service Change",
+        "evidence_ids": [
+          "meeting_doc_194171#p015_c0005",
+          "meeting_doc_194171#p015_c0006"
+        ]
+      },
+      {
+        "record_id": "claim_meeting-doc-194171-fm-swap-outreach",
+        "submission_id": "sub_43619bd5828aef6b",
+        "record_kind": "claim",
+        "local_observation_id": "claim_meeting_doc_194171_fm_swap_outreach",
+        "display_name": "Patrick Scalise F/M swap outreach",
+        "evidence_ids": [
+          "meeting_doc_194171#p015_c0005",
+          "meeting_doc_194171#p015_c0006"
+        ]
+      },
+      {
+        "record_id": "entity_meeting-doc-194171-patrick-scalise",
+        "submission_id": "sub_0ac7d64d41d54a79",
+        "record_kind": "entity",
+        "local_observation_id": "entity_meeting_doc_194171_patrick_scalise",
+        "display_name": "Patrick Scalise",
+        "evidence_ids": [
+          "meeting_doc_194171#p015_c0004",
+          "meeting_doc_194171#p015_c0005",
+          "meeting_doc_194171#p015_c0006"
+        ]
+      }
+    ],
+    "related_existing_valid_coverage": [
+      {
+        "record_id": "relation_part-of-agency-entity-meeting-doc-194171-patrick-scalise-entity-meeting-doc-176411-operations-pl_55e30fc7e9",
+        "relation_kind": "part_of_agency",
+        "endpoint_shape": "entity -> entity",
+        "note": "Derived relation already covers Patrick Scalise's Operations Planning affiliation; it does not replace the project/claim association."
+      }
+    ],
+    "collision_and_prior_work_checks": {
+      "original_retired_json_hits": 0,
+      "prior_review_note_hits_for_selected_relation": "No prior prep artifact found selecting sub_79410d5bbfe08442 for cleanup.",
+      "existing_same_source_project_to_claim_relation_hits": 0
+    }
+  },
+  "expected_delta": {
+    "baseline_unexpected_relation_endpoint_shape": 9,
+    "selected_rows_cleared": 1,
+    "replacement_rows_added": 1,
+    "replacement_rows_expected_to_be_endpoint_shape_valid": 1,
+    "unexpected_relation_endpoint_shape_delta": -1,
+    "expected_remaining_after_cleanup": 8,
+    "caveat": "Assumes no other concurrent relation endpoint-shape work lands before conductor applies this cleanup."
+  },
+  "apply_or_patch_plan": {
+    "conductor_action": "apply_data_cleanup",
+    "data_cleanup_steps": [
+      "Retire submission sub_79410d5bbfe08442 with a reason tying the malformed has_timeline_event project -> entity row to this prep artifact.",
+      "Append one accepted replacement relation submission for meeting_doc_194171 using relation_kind has_claim, subject_local_observation_id project_meeting_doc_194171_fm_swap, and object_local_observation_id claim_meeting_doc_194171_fm_swap_outreach.",
+      "Reuse meeting_doc_194171#p015_c0005 and meeting_doc_194171#p015_c0006 as evidence.",
+      "Run only the conductor-owned materialize/validate lane after applying, outside this bounded prep task."
+    ],
+    "code_patch_plan": {
+      "needed": false,
+      "files": [
+        "packages/pipeline/src/records/relations.ts",
+        "packages/pipeline/test/records/relations.test.ts"
+      ],
+      "reason": "No validator patch is recommended. Keep has_timeline_event object endpoints constrained to event; use the existing has_claim project -> claim shape for this fact."
+    }
+  },
+  "commands_run_read_only": [
+    "pwd && rg -n 'unexpected_relation_endpoint_shape|endpoint_shape|relation056|endpoint' packages data/review_notes data/canonical/relations.jsonl | head -200",
+    "ls -la data/review_notes && rg -n 'relation-rule-or-data|next27|relation056|unexpected_relation_endpoint_shape' data/review_notes | head -200",
+    "sqlite3 data/canonical.db '.tables'",
+    "sed -n '1,240p' data/review_notes/codex-relation-rule-or-data-next26-prep.json",
+    "sed -n '1,240p' data/review_notes/codex-relation-cleanup-batch055-prep.json",
+    "rg -n 'RELATION_ENDPOINT_SHAPES|relationEndpointShapeIssue|owned_by|publication-date|starts_at|affects|implemented_by|served_by|owned_by' packages -S",
+    "sed -n '206,285p' packages/pipeline/src/records/relations.ts",
+    "sqlite3 -header -column data/canonical.db 'pragma table_info(relations); pragma table_info(records); pragma table_info(record_submissions); pragma table_info(evidence_refs);'",
+    "rg targeted searches for the nine user-listed remaining relation record ids in data/canonical/relations.jsonl, data/submissions, data/review_notes, and retired.json",
+    "sqlite3 targeted query for the nine user-listed relation ids with endpoint record kinds and submissions",
+    "rg targeted searches for the nine selected submission ids in data/submissions and retired.json",
+    "sqlite3 read-only endpoint-shape bucket inventory using the current RELATION_ENDPOINT_SHAPES semantics",
+    "sqlite3 read-only same-source record and relation inspection for meeting_doc_194171",
+    "jq read-only source block inspection for raw/sources/meeting_doc_194171/blocks.jsonl page 15 and p003_c0004",
+    "rg targeted searches for sub_79410d5bbfe08442 and candidate replacement endpoints",
+    "test ! -e data/review_notes/codex-relation-rule-or-data-next27-prep.json",
+    "git status --short -- data/review_notes/codex-relation-rule-or-data-next27-prep.json data/review_notes data/submission-overrides/retired.json data/submissions packages/pipeline/src/records/relations.ts packages/pipeline/test/records/relations.test.ts"
+  ],
+  "commands_not_run": [
+    "external/provider LLM commands",
+    "canonicalize*",
+    "campaign dedup",
+    "identity-review",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize",
+    "--profile/provider commands",
+    "materialize",
+    "export",
+    "validate"
+  ]
+}

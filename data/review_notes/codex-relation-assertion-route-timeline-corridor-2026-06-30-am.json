@@ -1,0 +1,138 @@
+{
+  "campaign_id": "codex-relation-assertion-route-timeline-corridor-2026-06-30-am",
+  "date": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "provider_backed_llm_commands_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider profiles"
+  ],
+  "canonical_jsonl_hand_edited": false,
+  "baseline": {
+    "validate": "Issues: 0",
+    "relation_assertion_unknown_total": 8824,
+    "agency_role_operated_by_unknown": 28,
+    "agency_role_operates_unknown": 32,
+    "timeline_context_has_timeline_event_unknown": 338,
+    "corridor_scope_operates_on_corridor_unknown": 301
+  },
+  "after": {
+    "validate": "Issues: 0",
+    "submissions": 98102,
+    "canonical_records": 84040,
+    "wiki_pages": 7334,
+    "relation_assertion_unknown_total": 8727,
+    "agency_role_operated_by_unknown": 2,
+    "agency_role_operates_unknown": 8,
+    "timeline_context_has_timeline_event_unknown": 323,
+    "corridor_scope_operates_on_corridor_unknown": 269,
+    "corridor_scope_operates_on_corridor_status_counts": {
+      "delivered": 425,
+      "planned": 60,
+      "proposed": 24,
+      "unknown": 269
+    }
+  },
+  "movement": {
+    "relation_assertion_unknown_total": -97,
+    "agency_role_operated_by_unknown": -26,
+    "agency_role_operates_unknown": -24,
+    "timeline_context_has_timeline_event_unknown": -15,
+    "corridor_scope_operates_on_corridor_unknown": -32
+  },
+  "subagents": [
+    {
+      "agent_id": "019f1af2-0ee8-7a81-a904-8ab31bde224a",
+      "lane": "timeline_context.has_timeline_event residual audit",
+      "status": "completed_and_closed",
+      "result": "Recommended dated entity-to-approval/adoption event inference with completed-verb and temporal/recommendation guards."
+    },
+    {
+      "agent_id": "019f1af1-f161-7173-982e-3ab5293a6528",
+      "lane": "corridor_scope.operates_on_corridor residual audit",
+      "status": "completed_and_closed",
+      "result": "Recommended non-derived true-route bus corridor operation lifecycle inference from relation/evidence text only."
+    }
+  ],
+  "implemented_changes": [
+    {
+      "area": "route operator assertion status",
+      "summary": "Marked agency_role operated_by route->entity and agency_role operates entity->route relations delivered when the route endpoint is route_record_scope=true_route and temporal/future/proposed/former wording is absent.",
+      "guards": [
+        "true-route endpoint required",
+        "entity operator endpoint required",
+        "split/aggregate/data-only route scopes remain held",
+        "future/proposed/former/uncertain wording remains held"
+      ]
+    },
+    {
+      "area": "approval timeline assertion status",
+      "summary": "Marked dated entity->event timeline_context has_timeline_event approval/adoption events delivered only for allowlisted approval event kinds with completed verbs.",
+      "guards": [
+        "entity subject and event object required",
+        "event_family=approval",
+        "date_normalized required",
+        "event_kind allowlist required",
+        "completed verb required",
+        "approval-to, recommendation, future/proposed/planned/pending, cancelled/deferred/no-meeting wording held"
+      ]
+    },
+    {
+      "area": "route-corridor operation lifecycle assertion status",
+      "summary": "Classified non-derived true-route bus operates_on_corridor relations as delivered/planned/proposed from relation payload text and evidence source_quote text.",
+      "guards": [
+        "derived_relation=true rows held",
+        "subway routes held",
+        "split_candidate, aggregate_list_context, and data_only_scope routes held",
+        "missing text held",
+        "candidate/draft/potential wording held for planned inference"
+      ]
+    }
+  ],
+  "files_changed": [
+    "packages/pipeline/src/records/assertion-qualifiers.ts",
+    "packages/pipeline/test/records/assertion-qualifiers.test.ts",
+    "data/canonical/relations.jsonl",
+    "data/canonical.db",
+    "LOG.md",
+    "data/review_notes/codex-relation-assertion-route-timeline-corridor-2026-06-30-am.json"
+  ],
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+      "result": "pass: 40 tests, 211 expect calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "pass: Materialized 93092/98102 submissions; retired submissions skipped 243; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass: Issues 0; submissions 98102; canonical records 84040; wiki pages 7334"
+    }
+  ],
+  "remaining": {
+    "relation_assertion_unknown_total": 8727,
+    "top_unknown_buckets": [
+      "metric_context.has_metric: 5647",
+      "claim_context.has_claim: 430",
+      "timeline_context.has_timeline_event: 323",
+      "corridor_scope.operates_on_corridor: 269",
+      "partnership_engagement.organized_by: 138"
+    ],
+    "next_suggested_lanes": [
+      "metric_context.has_metric remains the largest bucket but still needs careful actual/planned/proposed separation",
+      "claim_context.has_claim source containment or presentation slices may be possible if evidence/provenance gates are strong",
+      "partnership_engagement organized_by/participant/partner could be audited for static entity-event/entity-source delivered semantics"
+    ]
+  }
+}

@@ -1,0 +1,520 @@
+{
+  "note_id": "codex-identity-batch222-mta-parent-prep",
+  "batch": "identity222",
+  "author": "codex",
+  "created_at": "2026-06-23T00:00:00Z",
+  "scope": "Codex-only preparation for duplicate_global_identity backlog after identity221, focused on MTA parent/headquarters/agency identity-key contamination where parent MTA records share keys with committees, subsidiaries, officers, departments, sibling agencies, or service programs. No overrides, canonical/generated outputs, DB, manifest, wiki, or LOG files were mutated.",
+  "prepared_count": 12,
+  "decision_type_counts": {
+    "do_not_merge": 12,
+    "alias_merge": 0
+  },
+  "proposed_durable_decisions": [
+    {
+      "decision_id": "identity222-mta-parent-001",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_audit-committee-charter",
+        "entity_mta-entity-update-2025"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_audit-committee-charter",
+          "entity_mta-audit-committee"
+        ],
+        "messages": [
+          "Global entity records entity_audit-committee-charter and entity_mta-entity-update-2025 share identity key entity_audit-committee-charter.",
+          "Global entity records entity_audit-committee-charter and entity_mta-entity-update-2025 share identity key entity_mta-audit-committee."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_audit-committee-charter",
+          "display_name": "MTA Audit Committee",
+          "record_identity": "committee",
+          "evidence_ref": "meeting_doc_128986#p078_c0003",
+          "quote": "AUDIT COMMITTEE"
+        },
+        {
+          "record_id": "entity_mta-entity-update-2025",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "transit_authority",
+          "evidence_ref": "better_buses_action_plan_2019#p002_c0004",
+          "quote": "Buses are a critical transportation option for New Yorkers..."
+        }
+      ],
+      "reason": "The Audit Committee is a board committee of MTA, not the parent Metropolitan Transportation Authority itself. The shared Audit Committee keys on the parent record are committee-contamination aliases.",
+      "guard_notes": "Keep MTA Board committee records separate from parent MTA even when names include 'MTA'. Use explicit relation/parent fields for committee-to-MTA membership or oversight context."
+    },
+    {
+      "decision_id": "identity222-mta-parent-002",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_capital-program-committee-charter",
+        "entity_mta-entity-update-2025"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_capital-program-committee",
+          "entity_mta-capital-program-committee"
+        ],
+        "messages": [
+          "Global entity records entity_capital-program-committee-charter and entity_mta-entity-update-2025 share identity key entity_capital-program-committee.",
+          "Global entity records entity_capital-program-committee-charter and entity_mta-entity-update-2025 share identity key entity_mta-capital-program-committee."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_capital-program-committee-charter",
+          "display_name": "Capital Program Committee",
+          "record_identity": "committee",
+          "evidence_ref": "meeting_doc_121021#p001_c0003",
+          "quote": "Capital Program Committee Meeting"
+        },
+        {
+          "record_id": "entity_mta-entity-update-2025",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "transit_authority",
+          "evidence_ref": "better_buses_action_plan_2019#p002_c0004",
+          "quote": "Buses are a critical transportation option for New Yorkers..."
+        }
+      ],
+      "reason": "Capital Program Committee is a committee record. Parent MTA is a transit authority record. Shared committee keys on the parent record are not evidence of same identity.",
+      "guard_notes": "Do not merge committee charters/work plans into parent MTA or into MTA Construction & Development; represent oversight relationships separately."
+    },
+    {
+      "decision_id": "identity222-mta-parent-003",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_finance-committee-mta",
+        "entity_mta-entity-update-2025"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_finance-committee",
+          "entity_mta-finance-committee"
+        ],
+        "messages": [
+          "Global entity records entity_finance-committee-mta and entity_mta-entity-update-2025 share identity key entity_finance-committee.",
+          "Global entity records entity_finance-committee-mta and entity_mta-entity-update-2025 share identity key entity_mta-finance-committee."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_finance-committee-mta",
+          "display_name": "MTA Finance Committee",
+          "record_identity": "committee",
+          "evidence_ref": "meeting_doc_100276#p001_c0006",
+          "quote": "N. Zuckerman, Chair"
+        },
+        {
+          "record_id": "entity_mta-entity-update-2025",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "transit_authority",
+          "evidence_ref": "better_buses_action_plan_2019#p002_c0004",
+          "quote": "Buses are a critical transportation option for New Yorkers..."
+        }
+      ],
+      "reason": "The Finance Committee is a committee of the MTA Board. It is not identical to the parent MTA transit authority.",
+      "guard_notes": "Suppress parent/committee shared keys such as 'finance committee' on the broad MTA parent cluster."
+    },
+    {
+      "decision_id": "identity222-mta-parent-004",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_mta-construction-and-development",
+        "entity_mta-entity-update-2025"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_construction-and-development",
+          "entity_mta-construction-and-development",
+          "entity_mta-construction-and-development-mta-c-and-d",
+          "entity_mta-construction-and-development-mtac-and-d",
+          "entity_mta-construction-development"
+        ],
+        "messages": [
+          "Global entity records entity_mta-construction-and-development and entity_mta-entity-update-2025 share identity key entity_construction-and-development.",
+          "Global entity records entity_mta-construction-and-development and entity_mta-entity-update-2025 share identity key entity_mta-construction-and-development."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_mta-construction-and-development",
+          "display_name": "MTA Construction & Development",
+          "record_identity": "public benefit corporation subsidiary",
+          "evidence_ref": "annual_report_narrative_2021#p087_c0004",
+          "quote": "MTA Construction & Development (MTA C&D) was officially established in December 2019..."
+        },
+        {
+          "record_id": "entity_mta-entity-update-2025",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "transit_authority",
+          "evidence_ref": "better_buses_action_plan_2019#p002_c0004",
+          "quote": "Buses are a critical transportation option for New Yorkers..."
+        }
+      ],
+      "reason": "MTA Construction & Development is a distinct MTA subsidiary/affiliate identity, not the parent MTA authority.",
+      "guard_notes": "Do not merge subsidiary/agency records into the parent authority. Use hierarchy relations for MTA C&D as part of or affiliated with MTA."
+    },
+    {
+      "decision_id": "identity222-mta-parent-005",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-143306-mta-hq",
+        "entity_mta-entity-update-2025"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_headquarters",
+          "entity_meeting-doc-143306-mta-hq",
+          "entity_meeting-doc-mta-hq",
+          "entity_metropolitan-transportation-authority-headquarters",
+          "entity_mta-headquarters",
+          "entity_mta-headquarters-mtahq",
+          "entity_mtahq"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-143306-mta-hq and entity_mta-entity-update-2025 share identity key entity_headquarters.",
+          "Global entity records entity_meeting-doc-143306-mta-hq and entity_mta-entity-update-2025 share identity key entity_mta-headquarters."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-143306-mta-hq",
+          "display_name": "MTA HQ",
+          "record_identity": "agency",
+          "evidence_ref": "identity-review/records.jsonl",
+          "quote": "payload entity_name 'MTA Headquarters'; identity keys include entity_headquarters and entity_mta-headquarters"
+        },
+        {
+          "record_id": "entity_mta-entity-update-2025",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "transit_authority",
+          "evidence_ref": "better_buses_action_plan_2019#p002_c0004",
+          "quote": "Buses are a critical transportation option for New Yorkers..."
+        }
+      ],
+      "reason": "MTA Headquarters is an HQ/administrative unit cluster. It should not collapse into the parent MTA authority solely because HQ appears as an MTA unit.",
+      "guard_notes": "Keep HQ administrative-unit identities separate from parent MTA. This does not preclude targeted alias merges among exact MTAHQ/HQ records."
+    },
+    {
+      "decision_id": "identity222-mta-parent-006",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_janno-lieber-2025",
+        "entity_mta-entity-update-2025"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_j-lieber"
+        ],
+        "message": "Global entity records entity_janno-lieber-2025 and entity_mta-entity-update-2025 share identity key entity_j-lieber."
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_janno-lieber-2025",
+          "display_name": "Janno Lieber, MTA Chair & CEO",
+          "record_identity": "person",
+          "evidence_ref": "nyct_key_performance_metrics_june2025#p002_c0001",
+          "quote": "MTA Chair & CEO Janno Lieber..."
+        },
+        {
+          "record_id": "entity_mta-entity-update-2025",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "transit_authority",
+          "evidence_ref": "better_buses_action_plan_2019#p002_c0004",
+          "quote": "Buses are a critical transportation option for New Yorkers..."
+        }
+      ],
+      "reason": "Janno Lieber is a person/officer; MTA is an organization. The shared Lieber key on the parent cluster is officer-name contamination.",
+      "guard_notes": "Keep people, titles, and signatories separate from organizations. Attach roles with works_for/chair/ceo-style relations rather than identity merges."
+    },
+    {
+      "decision_id": "identity222-mta-parent-007",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_annual-report-2021-lirr",
+        "entity_mta-entity-update-2025"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_long-island-rail-rd",
+          "entity_long-island-rail-rd-lirr"
+        ],
+        "messages": [
+          "Global entity records entity_annual-report-2021-lirr and entity_mta-entity-update-2025 share identity key entity_long-island-rail-rd.",
+          "Global entity records entity_annual-report-2021-lirr and entity_mta-entity-update-2025 share identity key entity_long-island-rail-rd-lirr."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_annual-report-2021-lirr",
+          "display_name": "MTA Long Island Rail Road",
+          "record_identity": "public benefit corporation subsidiary",
+          "evidence_ref": "annual_report_narrative_2021#p015_c0001",
+          "quote": "Long Island Rail Road--2021 Performance"
+        },
+        {
+          "record_id": "entity_mta-entity-update-2025",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "transit_authority",
+          "evidence_ref": "better_buses_action_plan_2019#p002_c0004",
+          "quote": "Buses are a critical transportation option for New Yorkers..."
+        }
+      ],
+      "reason": "Long Island Rail Road is an MTA subsidiary/railroad entity, not the parent MTA authority.",
+      "guard_notes": "Do not merge railroad subsidiaries into the parent MTA. Use organization hierarchy relations for parent/subsidiary links."
+    },
+    {
+      "decision_id": "identity222-mta-parent-008",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-131651-mta-risk-insurance",
+        "entity_mta-entity-update-2025"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_meeting-doc-131651-mta-risk-insurance",
+          "entity_mta-risk-and-insurance-management"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-131651-mta-risk-insurance and entity_mta-entity-update-2025 share identity key entity_meeting-doc-131651-mta-risk-insurance.",
+          "Global entity records entity_meeting-doc-131651-mta-risk-insurance and entity_mta-entity-update-2025 share identity key entity_mta-risk-and-insurance-management."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-131651-mta-risk-insurance",
+          "display_name": "MTA Risk and Insurance Management",
+          "record_identity": "division",
+          "evidence_ref": "meeting_doc_131651#p002_c0011",
+          "quote": "MTA Risk & Insurance Mgmt."
+        },
+        {
+          "record_id": "entity_mta-entity-update-2025",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "transit_authority",
+          "evidence_ref": "better_buses_action_plan_2019#p002_c0004",
+          "quote": "Buses are a critical transportation option for New Yorkers..."
+        }
+      ],
+      "reason": "MTA Risk and Insurance Management is a division/function within MTA, not the parent authority itself.",
+      "guard_notes": "Keep internal divisions and departments separate from parent MTA; represent department-of relations explicitly."
+    },
+    {
+      "decision_id": "identity222-mta-parent-009",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_mta-entity-update-2025",
+        "entity_mta-real-estate"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_meeting-doc-mta-real-estate",
+          "entity_mta-real-estate"
+        ],
+        "messages": [
+          "Global entity records entity_mta-entity-update-2025 and entity_mta-real-estate share identity key entity_meeting-doc-mta-real-estate.",
+          "Global entity records entity_mta-entity-update-2025 and entity_mta-real-estate share identity key entity_mta-real-estate."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_mta-real-estate",
+          "display_name": "MTA Real Estate",
+          "record_identity": "agency department",
+          "evidence_ref": "meeting_doc_105786#p004_c0012",
+          "quote": "MTA Real Estate will provide an annual report on leasing and construction opportunities..."
+        },
+        {
+          "record_id": "entity_mta-entity-update-2025",
+          "display_name": "Metropolitan Transportation Authority (MTA)",
+          "record_identity": "transit_authority",
+          "evidence_ref": "better_buses_action_plan_2019#p002_c0004",
+          "quote": "Buses are a critical transportation option for New Yorkers..."
+        }
+      ],
+      "reason": "MTA Real Estate is an agency department/function, not the parent MTA authority. The shared MTA Real Estate aliases on the parent are department contamination.",
+      "guard_notes": "This DNM is only parent-vs-department. Target selection inside the MTA Real Estate / RED / TOD family still needs its own cleanup."
+    },
+    {
+      "decision_id": "identity222-mta-parent-010",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-64066-mta",
+        "entity_sarah-meyer-cco-mta"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_sarah-meyer",
+          "entity_sarah-meyer-chief-customer-officer-mta"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-64066-mta and entity_sarah-meyer-cco-mta share identity key entity_sarah-meyer.",
+          "Global entity records entity_meeting-doc-64066-mta and entity_sarah-meyer-cco-mta share identity key entity_sarah-meyer-chief-customer-officer-mta."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-64066-mta",
+          "display_name": "Metropolitan Transportation Authority",
+          "record_identity": "agency",
+          "evidence_ref": "meeting_doc_64066#p001_c0002",
+          "quote": "Metropolitan Transportation Authority"
+        },
+        {
+          "record_id": "entity_sarah-meyer-cco-mta",
+          "display_name": "Sarah Meyer, MTA Chief Customer Officer",
+          "record_identity": "person",
+          "evidence_ref": "open_data_plan_2022#p001_c0014",
+          "quote": "Sarah Meyer Chief Customer Officer, MTA"
+        }
+      ],
+      "reason": "Sarah Meyer is a person/officer. The Metropolitan Transportation Authority is an organization. Shared Sarah Meyer keys on the MTA record are signer/officer contamination.",
+      "guard_notes": "Do not merge signers or officers into agency records. Preserve person-to-agency roles separately."
+    },
+    {
+      "decision_id": "identity222-mta-parent-011",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_meeting-doc-128981-nyct",
+        "entity_mta-bus-company"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_mta",
+          "entity_mta-bus-company"
+        ],
+        "messages": [
+          "Global entity records entity_meeting-doc-128981-nyct and entity_mta-bus-company share identity key entity_mta.",
+          "Global entity records entity_meeting-doc-128981-nyct and entity_mta-bus-company share identity key entity_mta-bus-company."
+        ]
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_meeting-doc-128981-nyct",
+          "display_name": "New York City Transit Authority (NYCT)",
+          "record_identity": "agency",
+          "evidence_ref": "meeting_doc_128981#p033_c0004",
+          "quote": "Due to New York City Transit Authority"
+        },
+        {
+          "record_id": "entity_mta-bus-company",
+          "display_name": "MTA Bus Company",
+          "record_identity": "transit agency division",
+          "evidence_ref": "behind_schedule_2025#p010_c0003",
+          "quote": "Two divisions within the MTA are responsible for managing these routes..."
+        }
+      ],
+      "reason": "NYCT and MTA Bus Company are related MTA bus-operating entities but are not the same agency identity. Shared parent-MTA or bus-company aliases are sibling/subsidiary contamination.",
+      "guard_notes": "Do not collapse NYCT, MTA Bus Company, MaBSTOA, or SIRTOA solely because combined committee/work-plan sources list them together."
+    },
+    {
+      "decision_id": "identity222-mta-parent-012",
+      "decision_type": "do_not_merge",
+      "global_kind": "entity",
+      "record_ids": [
+        "entity_department-of-buses",
+        "entity_nyct-mta-bus-committee-charter"
+      ],
+      "confidence": "high",
+      "validator_evidence": {
+        "shared_keys": [
+          "entity_mta-nyct"
+        ],
+        "message": "Global entity records entity_department-of-buses and entity_nyct-mta-bus-committee-charter share identity key entity_mta-nyct."
+      },
+      "source_canonical_evidence": [
+        {
+          "record_id": "entity_department-of-buses",
+          "display_name": "Department of Buses",
+          "record_identity": "department",
+          "evidence_ref": "meeting_doc_105946#p007_c0003",
+          "quote": "Bus Camera Security System Contract..."
+        },
+        {
+          "record_id": "entity_nyct-mta-bus-committee-charter",
+          "display_name": "Committee on Operations of NYCT, MaBSTOA, SIRTOA and MTA Bus Company",
+          "record_identity": "committee",
+          "evidence_ref": "meeting_doc_128986#p107_c0003",
+          "quote": "COMMITTEE ON OPERATIONS OF THE NEW YORK CITY TRANSIT AUTHORITY, THE MANHATTAN AND BRONX SURFACE TRANSIT OPERATING AUTHORITY, THE STATEN ISLAND RAPID TRANSIT OPERATING AUTHORITY AND THE MTA BUS COMPANY"
+        }
+      ],
+      "reason": "Department of Buses is an NYCT department; the Committee on Operations is a board committee overseeing NYCT/MaBSTOA/SIRTOA/MTA Bus. They are distinct despite the shared NYCT/MTA key.",
+      "guard_notes": "Keep departments separate from committees. Combined committee names should not become identity aliases for operating departments."
+    }
+  ],
+  "skipped_review_only": [
+    {
+      "candidate": "entity_meeting-doc-64066-mta <> entity_mta-entity-update-2025",
+      "confidence": "medium",
+      "reason": "Both appear to be broad parent-MTA clusters, but entity_mta-entity-update-2025 is heavily contaminated with committee, officer, subsidiary, HQ, and department aliases. Exact target choice should be handled after parent-cluster alias hygiene."
+    },
+    {
+      "candidate": "entity_meeting-doc-154986-aar <> parent-MTA clusters",
+      "confidence": "medium",
+      "reason": "Access-a-Ride is plainly not parent MTA, but current AAR cluster also carries parent MTA aliases and many service-program variants. It deserves a dedicated AAR/service-program cleanup rather than a one-off decision here."
+    },
+    {
+      "candidate": "entity_mta-metropolitan-transportation-authority / entity_mta-overall",
+      "confidence": "medium",
+      "reason": "Likely broad MTA parent aliases, but they collide with NYCT and AAR through generic entity_mta keys. Skipped to avoid duplicating prior broad-MTA cleanup and to avoid choosing a canonical parent target in this prep artifact."
+    },
+    {
+      "candidate": "entity_mabstoa <> entity_mta-bus-company",
+      "confidence": "medium",
+      "reason": "This is likely a distinct-related-agencies guardrail, but it was already noted as reviewer-only in identity221 and is outside this parent-contamination slice."
+    },
+    {
+      "candidate": "entity_meeting-doc-124881-mnr / Metro-North committee and parent-MTA collisions",
+      "confidence": "medium",
+      "reason": "Metro-North agency, committee, and parent aliases are tangled across several records. Existing batch220 covered one NYCT-vs-MNR DNM; the remaining cluster needs a dedicated Metro-North cleanup pass."
+    }
+  ],
+  "blockers": [],
+  "commands_not_run": [
+    "No provider-backed commands.",
+    "No materialize, validate, export, or canonical/generated-output mutation commands."
+  ],
+  "commands_run": [
+    "pwd && rg --files | rg '(^|/)(AGENTS\\\\.md|LOG\\\\.md|data/review_notes|data/.+identity|canonical|wiki|raw/sources)'",
+    "find data/review_notes -maxdepth 1 -type f | sort | tail -80",
+    "rg -n \"identity22[01]|duplicate_global_identity|mta parent|parent-contamination|entity_mta-entity-update-2025|entity_meeting-doc-64066-mta|entity_meeting-doc-143306-mta-hq|entity_meeting-doc-154986-aar|entity_meeting-doc-128981-nyct\" data -S",
+    "sed -n '1,180p' data/identity-review/validation_issues.jsonl",
+    "jq inspections of data/review_notes/codex-identity-batch220-prep.json, codex-identity-batch221-entity-prep.json, codex-identity-batch221-nonentity-prep.json, and codex-identity-batch218-prep.json",
+    "jq read-only inspections of data/canonical/entities.jsonl for selected MTA parent, HQ, agency, committee, department, and person records",
+    "sed read-only inspections of selected wiki/entities/*.md frontmatter for MTA parent/HQ/agency records",
+    "rg -n read-only search across data/review_notes identity prep artifacts for selected MTA-related record ids",
+    "jq read-only inspections of data/identity-review/records.jsonl for selected record identity fields, evidence samples, aliases, and keys",
+    "jq read-only extraction of selected duplicate_global_identity messages from data/identity-review/validation_issues.jsonl",
+    "jq read-only check of data/identity-overrides/do-not-merge.json for the proposed pairs",
+    "jq '{note_id, prepared_count, decision_type_counts, skipped_count:(.skipped_review_only|length), blockers, decisions:(.proposed_durable_decisions|length)}' data/review_notes/codex-identity-batch222-mta-parent-prep.json",
+    "git status --short",
+    "git diff --stat -- data/review_notes/codex-identity-batch222-mta-parent-prep.json",
+    "git status --short -- data/review_notes/codex-identity-batch222-mta-parent-prep.json",
+    "wc -c data/review_notes/codex-identity-batch222-mta-parent-prep.json && jq -r '.proposed_durable_decisions[].decision_type' data/review_notes/codex-identity-batch222-mta-parent-prep.json | sort | uniq -c"
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "batch_id": "identity140",
+  "global_kind": "project",
+  "prepared_count": 9,
+  "proposed_aliases": [
+    {
+      "alias_id": "project_meeting-doc-201516-coe-phase3c",
+      "target_id": "project_meeting-doc-173986-coe-phase-3c",
+      "confidence": "high",
+      "reason": "Both records identify the same Connection-Oriented Ethernet Phase 3C project. The target names it as \"Connection-Oriented Ethernet (COE) Phase 3C\" and describes the final COE network-upgrade phase; the alias names \"Connection-Oriented Ethernet (COE), Phase 3C\" and carries the same durable phase/package identity.",
+      "evidence_refs": [
+        "meeting_doc_173986#p023_c0001",
+        "meeting_doc_201516#p029_c0003"
+      ],
+      "guard_notes": "Project guard satisfied: same named COE Phase 3C package, not a different phase or generic COE program. Alias is absent from current project merges, and this pair is absent from project do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "alias_id": "project_meeting-doc-42866-east-end-gateway",
+      "target_id": "project_east-end-gateway",
+      "confidence": "high",
+      "reason": "Both records describe the Penn Station East End Gateway project. The target already consolidates East End Gateway/Penn East End Gateway evidence, while the alias is a utilities-work slice under the same East End Gateway project identity.",
+      "evidence_refs": [
+        "meeting_doc_37416#p006_c0001",
+        "meeting_doc_72581#p019_c0003",
+        "meeting_doc_85811#p021_c0003",
+        "meeting_doc_42866#p005_c0001",
+        "meeting_doc_42866#p005_c0003"
+      ],
+      "guard_notes": "Project guard satisfied: same named East End Gateway project at Penn Station; utilities work is a work element, not a separate durable project identity in this artifact. Alias is absent from current project merges, and this pair is absent from project do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "alias_id": "project_meeting-doc-111786-gct-terminal-track-rehab",
+      "target_id": "project_meeting-doc-104771-gct-terminal-track-rehab",
+      "confidence": "high",
+      "reason": "Both records identify GCT Terminal Track Rehabilitation. The records share the same project name and describe Grand Central Terminal track/platform rehabilitation work with track-specific progress in successive Metro-North reporting sources.",
+      "evidence_refs": [
+        "meeting_doc_104771#p006_c0002",
+        "meeting_doc_124216#p006_c0002",
+        "meeting_doc_111786#p006_c0002"
+      ],
+      "guard_notes": "Project guard satisfied: same GCT terminal track rehabilitation package, with different document-time progress statements only. Alias is absent from current project merges, and this pair is absent from project do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "alias_id": "project_meeting-doc-112141-grand-central-train-shed",
+      "target_id": "project_grand-central-train-shed",
+      "confidence": "high",
+      "reason": "Both records describe the Grand Central Train Shed project. The target aggregates Grand Central Train Shed repair/reconstruction evidence, and the alias names the same deteriorated Train Shed as an upcoming mega infrastructure project.",
+      "evidence_refs": [
+        "meeting_doc_109976#p012_c0001",
+        "meeting_doc_109976#p012_c0002",
+        "meeting_doc_133296#p014_c0002",
+        "meeting_doc_112141#p014_c0004"
+      ],
+      "guard_notes": "Project guard satisfied: same Grand Central Train Shed facility/project; document-time status differs but durable project identity is unchanged. Alias is absent from current project merges, and this pair is absent from project do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "alias_id": "project_vnb-lower-level-deck-rehab-dec2025",
+      "target_id": "project_vnb-lower-level-deck-rehab",
+      "confidence": "high",
+      "reason": "Both records identify the Lower Level Suspended Span Deck Rehabilitation at the Verrazzano-Narrows Bridge. The target describes the same VNB lower-level suspended-span deck rehabilitation scope and budget; the alias is a later completion-status record for that same durable project.",
+      "evidence_refs": [
+        "meeting_doc_129101#p013_c0009",
+        "meeting_doc_129101#p014_c0001",
+        "meeting_doc_160206#p057_c0005",
+        "meeting_doc_193911#p022_c0011",
+        "meeting_doc_193911#p023_c0001"
+      ],
+      "guard_notes": "Project guard satisfied: same bridge, same lower-level suspended-span deck rehabilitation scope; later completion language is document-time status, not a separate project. Alias is absent from current project merges, and this pair is absent from project do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "alias_id": "project_meeting-doc-115156-gcm-contractor-maintenance-wireless",
+      "target_id": "project_gcm-contractor-maintenance-cellular-124266",
+      "confidence": "high",
+      "reason": "Both records describe Grand Central Madison Contractor Maintenance and Wireless Cellular Installation. The target already consolidates the same maintenance/cellular installation package across multiple timetable-support sources; the alias has the same exact project name and maintenance/wireless scope.",
+      "evidence_refs": [
+        "meeting_doc_124266#p001_c0005",
+        "meeting_doc_133331#p001_c0005",
+        "meeting_doc_138226#p001_c0006",
+        "meeting_doc_115156#p001_c0006"
+      ],
+      "guard_notes": "Project guard satisfied: same Grand Central Madison contractor maintenance and wireless/cellular installation package. Alias is absent from current project merges, and this pair is absent from project do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "alias_id": "project_meeting-doc-111786-ny-undergrade-bridge-repair",
+      "target_id": "project_meeting-doc-104771-ny-undergrade-bridge-repair",
+      "confidence": "high",
+      "reason": "Both records identify the NY Undergrade Bridge Repair Program. The target consolidates the same Metro-North undergrade bridge repair program across Hudson/Harlem/Port Jervis line evidence, and the alias names the same program with matching repair scope.",
+      "evidence_refs": [
+        "meeting_doc_104771#p009_c0002",
+        "meeting_doc_115146#p009_c0002",
+        "meeting_doc_124216#p009_c0002",
+        "meeting_doc_98266#p009_c0002",
+        "meeting_doc_111786#p009_c0002",
+        "meeting_doc_111786#p009_c0003"
+      ],
+      "guard_notes": "Project guard satisfied: same named Metro-North NY Undergrade Bridge Repair Program; source differences are reporting snapshots, not different phases. Alias is absent from current project merges, and this pair is absent from project do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "alias_id": "project_meeting-doc-112141-zero-emission-bus-transition",
+      "target_id": "project_m151646-zero-emission-bus-transition",
+      "confidence": "high",
+      "reason": "Both records identify the Zero-Emission Bus Transition. The target describes the transition of the bus and non-revenue fleet to zero-emission vehicles by 2040; the alias describes the same 100 percent zero-emissions bus fleet transition.",
+      "evidence_refs": [
+        "meeting_doc_151641#p011_c0010",
+        "meeting_doc_151646#p011_c0009",
+        "meeting_doc_151646#p011_c0010",
+        "meeting_doc_112141#p019_c0002"
+      ],
+      "guard_notes": "Project guard satisfied: same named fleet-transition project/program with same 2040 zero-emission bus objective. This is not a vehicle-procurement subpackage merge. Alias is absent from current project merges, and this pair is absent from project do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "alias_id": "project_meeting-doc-115156-west-side-yard-overbuild",
+      "target_id": "project_meeting-doc-109341-west-side-yard-overbuild",
+      "confidence": "high",
+      "reason": "Both records identify the West Side Yard Overbuild project. The target already consolidates West Side Yard Overbuild evidence from multiple timetable-support sources, and the alias is the same named overbuild project in a later source.",
+      "evidence_refs": [
+        "meeting_doc_109341#p001_c0005",
+        "meeting_doc_124266#p001_c0005",
+        "meeting_doc_133331#p001_c0005",
+        "meeting_doc_164866#p001_c0006",
+        "meeting_doc_115156#p001_c0006"
+      ],
+      "guard_notes": "Project guard satisfied: same West Side Yard Overbuild project; source timing/status does not create a separate durable project. Alias is absent from current project merges, and this pair is absent from project do-not-merge. Durable merge direction is alias_id -> target_id."
+    }
+  ],
+  "commands_run": [
+    "pwd && rg --files | rg '(^data/review_notes/|merges\\\\.json$|do-not|identity|canonical|wiki/sources|raw/sources)'",
+    "git status --short",
+    "ls data/review_notes",
+    "jq 'keys, .batch_id, .global_kind, .prepared_count, (.proposed_aliases[0] // null)' data/review_notes/codex-identity-batch138-prep.json",
+    "jq 'keys' data/identity-overrides/merges.json && jq 'keys' data/identity-overrides/do-not-merge.json",
+    "head -n 3 data/canonical/projects.jsonl && head -n 2 data/identity-review/records.jsonl && head -n 2 data/identity-review/clusters.jsonl",
+    "jq '.aliases | to_entries[0:10]' data/identity-overrides/merges.json",
+    "jq -r 'select(.kind==\"project\") | [.cluster_id, .priority, (.record_ids|join(\",\")), (.review_reasons|join(\" | \"))] | @tsv' data/identity-review/clusters.jsonl | head -n 80",
+    "head -n 40 data/identity-overrides/do-not-merge.json",
+    "jq -r '.aliases.project | keys[]' data/identity-overrides/merges.json | sort > /tmp/mta_project_aliases.txt; jq -r '.aliases.project | to_entries[] | .value' data/identity-overrides/merges.json | sort -u > /tmp/mta_project_targets.txt; wc -l /tmp/mta_project_aliases.txt /tmp/mta_project_targets.txt",
+    "jq -s -r ... data/canonical/projects.jsonl | head -n 120",
+    "jq -r 'select(.record_id as $id | [...selected ids...] | index($id)) | {id, display, aliases, source_ids, payload, ev}' data/canonical/projects.jsonl",
+    "for id in ...; do jq -r --arg id \"$id\" '.aliases.project[$id] // empty' data/identity-overrides/merges.json; done",
+    "jq -r --argjson pairs ... '.pairs.project // [] | .[] as $blocked | $pairs[] as $p | select(($blocked.record_ids | index($p[0])) and ($blocked.record_ids | index($p[1]))) | $p | @json' data/identity-overrides/do-not-merge.json",
+    "test -e data/review_notes/codex-identity-batch140-prep.json && echo exists || echo new"
+  ],
+  "commands_not_run": [
+    "No provider-backed commands or agent harness commands were run.",
+    "No canonicalize, campaign dedup, identity-review, write, ask, schema, ontology-normalize, or --profile/provider commands were run.",
+    "No materialize, export-jsonl, or full validate commands were run.",
+    "No writes were made outside data/review_notes/codex-identity-batch140-prep.json."
+  ]
+}

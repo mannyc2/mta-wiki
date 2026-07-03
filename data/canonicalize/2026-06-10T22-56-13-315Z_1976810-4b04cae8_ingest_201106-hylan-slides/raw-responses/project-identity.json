@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-06-10T22-56-13-315Z_1976810-4b04cae8_ingest_201106-hylan-slides",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T01:35:05.795Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d_hylan_study_self_match",
+        "local_observation_id": "project_hylan_blvd_transportation_improvement_study",
+        "decision": "new",
+        "rationale": "The observation's base_record_id 'project_hylan-blvd-transportation-improvement-study' matches the existing registry card with the same record_id. The registry card already includes source_id '201106_hylan_slides', and the label 'Hylan Boulevard Corridor Transportation Improvement Study' is attested in record_aliases (e.g., 'project_hylan-blvd-corridor-transportation-improvement-study'). The observation already resolves to its own canonical record; no link to a different record is needed.",
+        "evidence_refs": [
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p001_c0003",
+            "source_quote": "Hylan Boulevard Corridor Transportation Improvement Study"
+          },
+          {
+            "source_id": "201106_hylan_slides",
+            "block_id": "p004_c0004",
+            "source_quote": "Hylan Boulevard Corridor Transportation Improvement Study"
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-34-41-887Z_2111393-4e0800c3_canonicalize_2026-06-10t22-56-13-315z-1976810-4b04cae8-ingest-201106-hylan-slides-project-identity"
+}

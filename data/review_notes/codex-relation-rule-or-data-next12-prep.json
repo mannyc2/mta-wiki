@@ -1,0 +1,332 @@
+{
+  "note_id": "codex-relation-rule-or-data-next12-prep",
+  "created_at": "2026-06-22T22:35:56Z",
+  "author": "codex",
+  "lane": "validator/rule-data triage next12",
+  "scope": {
+    "question": "After excluding applied relation batches017-034 and missing-target repairs, decide the next best data cleanup bucket versus scoped validator rule patch for remaining unexpected_relation_endpoint_shape rows.",
+    "write_scope_observed": "Created exactly this prep artifact under data/review_notes/.",
+    "forbidden_actions_not_run": [
+      "materialize",
+      "validate CLI",
+      "export-jsonl",
+      "provider-backed commands",
+      "DB repair/publish",
+      "generated canonical/wiki/materialized edits",
+      "code edits",
+      "retired.json edits",
+      "submission journal edits",
+      "LOG.md or manifest edits"
+    ]
+  },
+  "exclusion_model": {
+    "excluded_batches": [
+      "relation cleanup batch017",
+      "relation cleanup batch018",
+      "relation cleanup batch019",
+      "relation cleanup batch020",
+      "relation cleanup batch021",
+      "relation cleanup batch022",
+      "relation cleanup batch023",
+      "relation cleanup batch024",
+      "relation cleanup batch025",
+      "relation cleanup batch026",
+      "relation cleanup batch027",
+      "relation cleanup batch028",
+      "relation cleanup batch029",
+      "relation cleanup batch030",
+      "relation cleanup batch031",
+      "relation cleanup batch032",
+      "relation cleanup batch033",
+      "relation cleanup batch034"
+    ],
+    "excluded_repairs": [
+      "missing target repair submissions matching 2026-06-22_codex_relation_missing_target_repair*.jsonl",
+      "retired override reasons mentioning missing-target or target repair"
+    ],
+    "implementation": "Read canonical records through readCanonicalRecords(), removed known batch017-034 and missing-target repair submission/record ids from retired overrides, batch prep files, and batch submission journals, then ran relationEndpointShapeIssue() in-process against the remaining relation records. This did not invoke the validate CLI.",
+    "excluded_submission_count": 171,
+    "excluded_record_count": 87,
+    "manual_known_exclusion": "relation_85476-published-by-mta-corrected"
+  },
+  "remaining_bucket_counts_after_exclusions": {
+    "unexpected_relation_endpoint_shape_total": 40,
+    "top_buckets": [
+      {
+        "bucket": "has_metric source->metric_claim",
+        "count": 2
+      },
+      {
+        "bucket": "has_timeline_event claim->event",
+        "count": 2
+      },
+      {
+        "bucket": "implemented_by route->entity",
+        "count": 2
+      },
+      {
+        "bucket": "part_of_program event->entity",
+        "count": 2
+      },
+      {
+        "bucket": "has_claim claim->claim",
+        "count": 1
+      },
+      {
+        "bucket": "has_claim treatment_component->claim",
+        "count": 1
+      },
+      {
+        "bucket": "has_timeline_event entity->metric_claim",
+        "count": 1
+      },
+      {
+        "bucket": "has_timeline_event event->entity",
+        "count": 1
+      },
+      {
+        "bucket": "has_timeline_event event->source",
+        "count": 1
+      },
+      {
+        "bucket": "has_timeline_event project->entity",
+        "count": 1
+      },
+      {
+        "bucket": "has_timeline_event source->entity",
+        "count": 1
+      },
+      {
+        "bucket": "has_treatment claim->treatment_component",
+        "count": 1
+      },
+      {
+        "bucket": "has_treatment entity->metric_claim",
+        "count": 1
+      },
+      {
+        "bucket": "has_treatment event->treatment_component",
+        "count": 1
+      },
+      {
+        "bucket": "has_treatment route->treatment_component",
+        "count": 1
+      },
+      {
+        "bucket": "implemented_by corridor->entity",
+        "count": 1
+      },
+      {
+        "bucket": "implemented_by source->entity",
+        "count": 1
+      },
+      {
+        "bucket": "implemented_by treatment_component->entity",
+        "count": 1
+      },
+      {
+        "bucket": "operated_by corridor->entity",
+        "count": 1
+      },
+      {
+        "bucket": "operated_by entity->entity",
+        "count": 1
+      }
+    ],
+    "tie_break_note": "Four buckets tie at count 2. I recommend has_metric source->metric_claim because it is alphabetically first in the deterministic sorted inventory and has a direct precedent in applied batch022. A dirty-tree batch035 prep artifact already exists for the tied has_timeline_event claim->event bucket, but this task explicitly excluded only applied batches017-034, so batch035 was not excluded from this inventory."
+  },
+  "recommendation": {
+    "type": "data_cleanup",
+    "bucket": "has_metric source->metric_claim",
+    "confidence": "high",
+    "reason": "The two remaining rows say the BudgetWatch source document has metrics. Current validator rules intentionally reserve has_metric for project, route, corridor, entity, event, or claim subjects pointing to metric_claim objects. A source-to-metric edge is document containment/reporting semantics, not a domain owner having a metric. Applied batch022 already used the coherent cleanup mechanism for this same malformed shape: retire has_metric source->metric_claim rows and replace them with includes source->metric_claim rows preserving the source-contained metric evidence.",
+    "why_not_validator_rule_change": "Widening has_metric to accept source subjects would blur metric ownership/context with source-document containment and would undo the semantics established by batch022. The in-process rule probe confirms includes source->metric_claim is accepted while has_metric source->metric_claim is rejected.",
+    "proposed_mechanism": {
+      "retire_original_submissions": [
+        "sub_1e3da7df51269b6f",
+        "sub_3bd1215592595d96"
+      ],
+      "replace_with": "Two relation submissions with relation_kind includes, subject_local_observation_id source_budgetwatch_april2022, and the same metric object local ids/evidence refs.",
+      "suggested_run_id": "2026-06-22_codex_relation_cleanup_batch036_or_next_available",
+      "no_code_or_rule_change": true,
+      "expected_replacement_shapes": [
+        "includes source->metric_claim"
+      ]
+    },
+    "simulated_impact": {
+      "remaining_unexpected_relation_endpoint_shape_before": 40,
+      "bucket_rows_removed_or_replaced": 2,
+      "remaining_after_bucket_cleanup": 38,
+      "percent_of_remaining_endpoint_shape_issues": 5.0
+    }
+  },
+  "representative_records": [
+    {
+      "record_id": "relation_budgetwatch-has-metric-oper-rev",
+      "submission_ids": [
+        "sub_1e3da7df51269b6f"
+      ],
+      "source_id": "meeting_doc_85751",
+      "display_name": "BudgetWatch reports operating revenue metric",
+      "current_relation_kind": "has_metric",
+      "current_shape": "source->metric_claim",
+      "validator_message": "Relation kind has_metric expects project|route|corridor|entity|event|claim -> metric_claim, got source -> metric_claim.",
+      "subject": {
+        "record_id": "source_meeting-doc-85751",
+        "record_kind": "source",
+        "display_name": "BudgetWatch April 2022 Flash Report",
+        "local_observation_id": "source_budgetwatch_april2022"
+      },
+      "object": {
+        "record_id": "metric_operating-revenue-ytd-mar2022",
+        "record_kind": "metric_claim",
+        "display_name": "Operating Revenue YTD March 2022",
+        "local_observation_id": "metric_operating_revenue_ytd_mar2022",
+        "payload_summary": {
+          "metric_name": "operating_revenue",
+          "period": "YTD March 2022",
+          "scope": "MTA-wide",
+          "raw_value_text": "$1,480.9 million actual vs $1,679.9 million budget, ($199.0) million diff, -11.8%"
+        }
+      },
+      "evidence": [
+        {
+          "evidence_id": "meeting_doc_85751#p001_c0004",
+          "block_id": "p001_c0004",
+          "page_number": 1,
+          "source_path": "raw/sources/meeting_doc_85751/blocks.jsonl",
+          "block_excerpt": "YTD March 2022 ($ in millions) ... Operating Revenue 1 $1,480.9 $1,679.9 ($199.0) -11.8% ..."
+        }
+      ],
+      "recommended_replacement": {
+        "relation_kind": "includes",
+        "shape": "source->metric_claim",
+        "subject_local_observation_id": "source_budgetwatch_april2022",
+        "object_local_observation_id": "metric_operating_revenue_ytd_mar2022"
+      }
+    },
+    {
+      "record_id": "relation_budgetwatch-has-metric-overtime",
+      "submission_ids": [
+        "sub_3bd1215592595d96"
+      ],
+      "source_id": "meeting_doc_85751",
+      "display_name": "BudgetWatch reports overtime metric",
+      "current_relation_kind": "has_metric",
+      "current_shape": "source->metric_claim",
+      "validator_message": "Relation kind has_metric expects project|route|corridor|entity|event|claim -> metric_claim, got source -> metric_claim.",
+      "subject": {
+        "record_id": "source_meeting-doc-85751",
+        "record_kind": "source",
+        "display_name": "BudgetWatch April 2022 Flash Report",
+        "local_observation_id": "source_budgetwatch_april2022"
+      },
+      "object": {
+        "record_id": "metric_total-overtime-ytd-mar2022",
+        "record_kind": "metric_claim",
+        "display_name": "Total MTA Overtime YTD March 2022",
+        "local_observation_id": "metric_total_overtime_ytd_mar2022",
+        "payload_summary": {
+          "metric_name": "overtime_spending",
+          "period": "YTD March 2022",
+          "scope": "MTA-wide",
+          "raw_value_text": "$274.6 million actual vs $214.9 million budget, ($59.8) million unfavorable, -27.8%"
+        }
+      },
+      "evidence": [
+        {
+          "evidence_id": "meeting_doc_85751#p003_c0004",
+          "block_id": "p003_c0004",
+          "page_number": 3,
+          "source_path": "raw/sources/meeting_doc_85751/blocks.jsonl",
+          "block_excerpt": "YTD March 2022 ($ in millions) ... Total $274.6 $214.9 ($59.8) -27.8% ..."
+        }
+      ],
+      "recommended_replacement": {
+        "relation_kind": "includes",
+        "shape": "source->metric_claim",
+        "subject_local_observation_id": "source_budgetwatch_april2022",
+        "object_local_observation_id": "metric_total_overtime_ytd_mar2022"
+      }
+    }
+  ],
+  "precedent_evidence": {
+    "applied_batch": "batch022",
+    "summary": "Batch022 retired six malformed has_metric source->metric_claim submissions and appended includes source->metric_claim replacements. The retired override reason states that source subjects create endpoint-shape issues and includes preserves source-document containment semantics.",
+    "audit_artifact": "data/review_notes/codex-canonical-cleanup-2026-06-21.jsonl#codex-relation-cleanup-2026-06-22-endpoint-shape-batch022",
+    "replacement_journal": "data/submissions/2026-06-22_codex_relation_cleanup_batch022.jsonl"
+  },
+  "command_evidence": [
+    {
+      "command": "test ! -e data/review_notes/codex-relation-rule-or-data-next12-prep.json && echo ok || echo exists",
+      "output": "ok"
+    },
+    {
+      "command": "rg --files data/review_notes data/submissions data/submission-overrides | sort | rg 'relation.*(034)|batch034|missing.*target|target_repair|repair'",
+      "output_excerpt": "data/review_notes/codex-relation-cleanup-batch034-prep.json\ndata/submissions/2026-06-22_codex_relation_cleanup_batch034.jsonl\ndata/submissions/2026-06-22_codex_relation_missing_target_repair001.jsonl"
+    },
+    {
+      "command": "bun --eval '<readCanonicalRecords + relationEndpointShapeIssue inventory excluding batches017-034 and missing-target repairs>'",
+      "output_excerpt": "excluded_submission_count=171; excluded_record_count=87; total=40; top buckets: has_metric source->metric_claim=2, has_timeline_event claim->event=2, implemented_by route->entity=2, part_of_program event->entity=2"
+    },
+    {
+      "command": "rg -n '\"block_id\":\"p001_c0004\"|\"block_id\":\"p003_c0004\"' raw/sources/meeting_doc_85751/blocks.jsonl",
+      "output_excerpt": "p001_c0004 contains the YTD March 2022 operating revenue table with $1,480.9 actual vs $1,679.9 adopted budget; p003_c0004 contains the overtime table with Total $274.6 actual vs $214.9 adopted budget."
+    },
+    {
+      "command": "bun --eval '<print canonical records for relation_budgetwatch-has-metric-oper-rev, relation_budgetwatch-has-metric-overtime, source_meeting-doc-85751, metric_operating-revenue-ytd-mar2022, metric_total-overtime-ytd-mar2022>'",
+      "output_excerpt": "Confirmed both relations have relation_kind has_metric with subject_id source_meeting-doc-85751 and metric_claim objects. The two metric claims carry MTA-wide BudgetWatch metric payloads and cite the same blocks as the relation evidence."
+    },
+    {
+      "command": "bun --eval '<relationEndpointShapeIssue probes for has_metric/includes/related_to source->metric_claim>'",
+      "output": "has_metric source->metric_claim: Relation kind has_metric expects project|route|corridor|entity|event|claim -> metric_claim, got source -> metric_claim.\nincludes source->metric_claim: ok\nrelated_to source->metric_claim: ok"
+    },
+    {
+      "command": "rg -n 'relation022|batch022|has_metric source|source->metric|source-to-metric|includes source' data/review_notes data/submissions data/submission-overrides/retired.json",
+      "output_excerpt": "retired.json and the batch022 audit row describe replacing malformed has_metric source->metric_claim rows with includes source-to-metric relations preserving source-contained metric evidence; batch022 journal contains accepted includes replacements."
+    },
+    {
+      "command": "jq '{note_id,batch,bucket,prepared_count:(.prepared|length),summary,recommendation}' data/review_notes/codex-relation-cleanup-batch035-prep.json 2>/dev/null || true",
+      "output_excerpt": "A dirty-tree batch035 prep artifact exists for the tied has_timeline_event claim->event bucket with prepared_count 2. It was not excluded because this assignment specified applied batches017-034."
+    },
+    {
+      "command": "jq empty data/review_notes/codex-relation-rule-or-data-next12-prep.json && jq '{type:.recommendation.type,bucket:.recommendation.bucket,total:.remaining_bucket_counts_after_exclusions.unexpected_relation_endpoint_shape_total,top:.remaining_bucket_counts_after_exclusions.top_buckets[0],remaining:.recommendation.simulated_impact.remaining_after_bucket_cleanup}' data/review_notes/codex-relation-rule-or-data-next12-prep.json",
+      "output": "{\n  \"type\": \"data_cleanup\",\n  \"bucket\": \"has_metric source->metric_claim\",\n  \"total\": 40,\n  \"top\": {\n    \"bucket\": \"has_metric source->metric_claim\",\n    \"count\": 2\n  },\n  \"remaining\": 38\n}"
+    },
+    {
+      "command": "git status --short -- data/review_notes/codex-relation-rule-or-data-next12-prep.json",
+      "output": "?? data/review_notes/codex-relation-rule-or-data-next12-prep.json"
+    },
+    {
+      "command": "git diff --no-index --check /dev/null data/review_notes/codex-relation-rule-or-data-next12-prep.json",
+      "output": "No whitespace warnings printed; command exited 1 because --no-index reports differences for the added file."
+    }
+  ],
+  "commands_run": [
+    "test ! -e data/review_notes/codex-relation-rule-or-data-next12-prep.json && echo ok || echo exists",
+    "rg --files data/review_notes data/submissions data/submission-overrides | sort | rg 'relation.*(034)|batch034|missing.*target|target_repair|repair'",
+    "rg -n \"batch034|relation034|missing[_ -]target|target_repair|repair00\" LOG.md data/review_notes data/submissions data/submission-overrides/retired.json -g '*.md' -g '*.json' -g '*.jsonl'",
+    "git status --short -- data/review_notes/codex-relation-rule-or-data-next12-prep.json data/review_notes data/submission-overrides/retired.json data/submissions packages/pipeline/src/records/relations.ts packages/pipeline/test/records/relations.test.ts",
+    "bun --eval '<first inventory attempt; failed due invalid regular expression before any write>'",
+    "rg --files packages | rg 'persistence|relations|materialize'",
+    "find packages -maxdepth 4 -type f | head -80",
+    "rg -n \"export function read|readCanonical|function readCanonical|readCanonicalRecords|export .*Records\" packages/pipeline/src/materialize packages/pipeline/src/records packages/pipeline/src/validate.ts packages/db/src",
+    "sed -n '1,220p' packages/pipeline/src/materialize/materialize.ts",
+    "sed -n '1,200p' packages/pipeline/src/records/relations.ts",
+    "rg -n \"function relationEndpointShapeIssue|export function relationEndpointShapeIssue|record_id|record_kind\" packages/pipeline/src/records/relations.ts packages/db/src/types.ts | head -120",
+    "sed -n '200,360p' packages/pipeline/src/records/relations.ts",
+    "sed -n '1,120p' packages/db/src/types.ts",
+    "bun --eval '<readCanonicalRecords + relationEndpointShapeIssue inventory excluding batches017-034 and missing-target repairs>'",
+    "rg -n '\"block_id\":\"p001_c0004\"|\"block_id\":\"p003_c0004\"' raw/sources/meeting_doc_85751/blocks.jsonl",
+    "bun --eval '<print canonical records for target BudgetWatch relations, source, and metrics>'",
+    "bun --eval '<relationEndpointShapeIssue probes for has_metric/includes/related_to source->metric_claim>'",
+    "rg -n 'relation022|batch022|has_metric source|source->metric|source-to-metric|includes source' data/review_notes data/submissions data/submission-overrides/retired.json",
+    "jq '{note_id,batch,bucket,prepared_count:(.prepared|length),summary,recommendation}' data/review_notes/codex-relation-cleanup-batch035-prep.json 2>/dev/null || true",
+    "date -u +%Y-%m-%dT%H:%M:%SZ",
+    "jq empty data/review_notes/codex-relation-rule-or-data-next12-prep.json && jq '{type:.recommendation.type,bucket:.recommendation.bucket,total:.remaining_bucket_counts_after_exclusions.unexpected_relation_endpoint_shape_total,top:.remaining_bucket_counts_after_exclusions.top_buckets[0],remaining:.recommendation.simulated_impact.remaining_after_bucket_cleanup}' data/review_notes/codex-relation-rule-or-data-next12-prep.json",
+    "git status --short -- data/review_notes/codex-relation-rule-or-data-next12-prep.json",
+    "git diff --no-index --check /dev/null data/review_notes/codex-relation-rule-or-data-next12-prep.json"
+  ],
+  "blockers": [],
+  "next_action": "Prepare a narrow data cleanup batch, after conductor coordination on the dirty-tree batch035 artifact, retiring the two BudgetWatch has_metric source->metric_claim submissions and replacing them with includes source->metric_claim submissions. Do not mutate validator rules for this bucket."
+}

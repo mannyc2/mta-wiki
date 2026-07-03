@@ -1,0 +1,276 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-23-endpoint-shape-batch057",
+  "created_at": "2026-06-23T00:00:00Z",
+  "author": "codex",
+  "batch_id": "relation057",
+  "scope": "Codex-only deterministic relation cleanup prep; no provider-backed commands, canonicalize/campaign/identity-review/write/ask/schema/ontology-normalize commands, materialize/export/validate commands, durable retirement edits, submission appends, generated-output edits, LOG edits, manifest edits, canonical edits, or wiki edits applied.",
+  "durable_mechanism_prepared_not_applied": {
+    "retire_originals_via": "data/submission-overrides/retired.json",
+    "replacement_journal_if_needed": "data/submissions/2026-06-23_codex_relation_cleanup_batch057.jsonl",
+    "replacement_append_needed_for_this_batch": false,
+    "mutation_status": "not_applied_by_this_prep",
+    "only_file_written_by_this_task": "data/review_notes/codex-relation-cleanup-batch057-prep.json"
+  },
+  "summary_counts": {
+    "reported_unexpected_relation_endpoint_shape_after_relation056": 9,
+    "remaining_visible_records_named_by_user": 9,
+    "prepared_malformed_submission_count": 2,
+    "retire_only_count": 2,
+    "retire_replace_count": 0,
+    "accepted_replacement_count": 0,
+    "expected_endpoint_shape_delta": -2,
+    "expected_remaining_unexpected_relation_endpoint_shape_after_apply": 7
+  },
+  "bucket": {
+    "name": "meeting_doc_194171 has_timeline_event rows with entity objects",
+    "original_relation_kind": "has_timeline_event",
+    "original_endpoint_shape": "source/project -> entity",
+    "cleanup_direction": "retire only",
+    "why_coherent": "Both selected malformed rows are from meeting_doc_194171, both use has_timeline_event, and both point the object endpoint at an entity instead of an event. In each case the recoverable fact is already preserved by non-relation canonical records or a valid published_by relation, while the cited evidence does not support fabricating a new event endpoint."
+  },
+  "guard_checks": {
+    "all_pass": true,
+    "commands_used": [
+      "rg/jq/sed local inspection only",
+      "canonical relation inspection in data/canonical/relations.jsonl",
+      "canonical source/project/entity/claim inspection in data/canonical/*.jsonl",
+      "source block inspection in raw/sources/meeting_doc_194171/blocks.jsonl",
+      "submission and retired override grep/jq probes"
+    ],
+    "forbidden_commands_avoided": {
+      "status": "pass",
+      "avoided": [
+        "external/provider LLM commands",
+        "canonicalize*",
+        "campaign dedup",
+        "identity-review",
+        "write",
+        "ask",
+        "schema",
+        "ontology-normalize",
+        "--profile/provider commands",
+        "materialize",
+        "export",
+        "validate"
+      ]
+    },
+    "selected_originals_accepted_not_retired": {
+      "status": "pass",
+      "selected_original_submission_ids": [
+        "sub_79410d5bbfe08442",
+        "sub_1bcfef5201faca44"
+      ],
+      "selected_original_journals": [
+        "data/submissions/2026-06-21T21-02-59-476Z_3137823-2a52571c_ingest_meeting-doc-194171.jsonl:58",
+        "data/submissions/2026-06-21T21-02-59-476Z_3137823-2a52571c_ingest_meeting-doc-194171.jsonl:61"
+      ],
+      "current_validation_state": "accepted",
+      "retired_hits": []
+    },
+    "current_canonical_endpoint_shape_invalid": {
+      "status": "pass",
+      "validator_files": [
+        "packages/pipeline/src/records/relations.ts",
+        "packages/pipeline/src/validate.ts"
+      ],
+      "relation_kind": "has_timeline_event",
+      "valid_subject_kinds": [
+        "project",
+        "route",
+        "corridor",
+        "entity",
+        "source",
+        "event"
+      ],
+      "valid_object_kinds": [
+        "event"
+      ],
+      "validator_behavior": "validate.ts calls relationEndpointShapeIssue with the materialized subject_id/object_id record kinds and emits unexpected_relation_endpoint_shape when the shape is outside RELATION_ENDPOINT_SHAPES.",
+      "invalid_rows": [
+        {
+          "record_id": "relation_meeting-doc-194171-scalise-fm-swap",
+          "subject_kind": "project",
+          "object_kind": "entity",
+          "validator_evidence": "Relation kind has_timeline_event expects project|route|corridor|entity|source|event -> event, got project -> entity."
+        },
+        {
+          "record_id": "relation_meeting-doc-194171-publication-date",
+          "subject_kind": "source",
+          "object_kind": "entity",
+          "validator_evidence": "Relation kind has_timeline_event expects project|route|corridor|entity|source|event -> event, got source -> entity."
+        }
+      ]
+    },
+    "source_evidence_checked": {
+      "status": "pass",
+      "source_id": "meeting_doc_194171",
+      "blocks": [
+        {
+          "evidence_id": "meeting_doc_194171#p003_c0004",
+          "summary": "The block text is only 'December 2025'. It supports the source date already present on source_meeting_doc_194171, not an entity object timeline event."
+        },
+        {
+          "evidence_id": "meeting_doc_194171#p015_c0005",
+          "summary": "The block says Patrick played a central role in planning, implementing, and communicating the F/M swap service change and presented the proposal to officials and stakeholders."
+        },
+        {
+          "evidence_id": "meeting_doc_194171#p015_c0006",
+          "summary": "The block describes stakeholder engagement, collaboration with Subways and Customer Communications, and customer ambassador outreach before and during implementation."
+        }
+      ]
+    },
+    "replacement_not_prepared": {
+      "status": "pass",
+      "reason": "No accepted replacement relation is warranted. For has_timeline_event, a valid replacement would require an event object endpoint. The publication-date evidence is already structured on the source record and does not provide an event record. The Scalise evidence supports a person, project, and claim about involvement/outreach, but it does not identify a discrete event endpoint; replacing it with a project/entity agency-role or timeline relation would be semantic invention.",
+      "existing_valid_or_non_relation_coverage": [
+        {
+          "record_id": "source_meeting-doc-194171",
+          "coverage": "Carries title NEW YORK CITY TRANSIT ALL-STARS, date_text December 2025, published_date_normalized 2025-12, publisher MTA, and evidence meeting_doc_194171#p003_c0004."
+        },
+        {
+          "record_id": "relation_meeting-doc-194171-published-by",
+          "relation_kind": "published_by",
+          "endpoint_shape": "source -> entity",
+          "coverage": "Valid publication-role relation from source_meeting_doc_194171 to entity_meeting_doc_194171_mta."
+        },
+        {
+          "record_id": "project_meeting-doc-194171-fm-swap",
+          "coverage": "Preserves the F/M swap service-change project with the same page 15 evidence."
+        },
+        {
+          "record_id": "entity_meeting-doc-194171-patrick-scalise",
+          "coverage": "Preserves Patrick Scalise as the person endpoint with title/office and the same page 15 evidence."
+        },
+        {
+          "record_id": "claim_meeting-doc-194171-fm-swap-outreach",
+          "coverage": "Preserves the substantive statement that Patrick Scalise planned, implemented, communicated, and supported outreach for the F/M swap service change."
+        }
+      ]
+    },
+    "no_generated_files_edited": {
+      "status": "pass_for_this_task",
+      "note": "The shared worktree already contains unrelated dirty generated and durable files. This task wrote only the prep artifact and did not edit retired.json, submissions, canonical JSONL, materialized data, wiki output, LOG, manifest, or code."
+    }
+  },
+  "prepared_changes": [
+    {
+      "change_type": "retire_only",
+      "confidence": "high",
+      "original": {
+        "submission_id": "sub_79410d5bbfe08442",
+        "run_id": "2026-06-21T21-02-59-476Z_3137823-2a52571c_ingest_meeting-doc-194171",
+        "submitted_at": "2026-06-21T21:19:37.521Z",
+        "tool_args_sha256": "sha256:79410d5bbfe08442d2a887d54266de20970bcf9a5811e35f4a52c978a6861624",
+        "journal": "data/submissions/2026-06-21T21-02-59-476Z_3137823-2a52571c_ingest_meeting-doc-194171.jsonl:58",
+        "record_id": "relation_meeting-doc-194171-scalise-fm-swap",
+        "source_id": "meeting_doc_194171",
+        "local_observation_id": "relation_meeting_doc_194171_scalise_fm_swap",
+        "label": "Scalise - F/M swap project",
+        "malformed_shape": "has_timeline_event project -> entity",
+        "tool_args": {
+          "source_id": "meeting_doc_194171",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_meeting_doc_194171_scalise_fm_swap",
+          "label": "Scalise - F/M swap project",
+          "payload": {
+            "relation_kind": "has_timeline_event",
+            "subject_local_observation_id": "project_meeting_doc_194171_fm_swap",
+            "object_local_observation_id": "entity_meeting_doc_194171_patrick_scalise",
+            "relation_family": "timeline_context"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_194171",
+              "evidence_id": "meeting_doc_194171#p015_c0005",
+              "source_path": "raw/sources/meeting_doc_194171/blocks.jsonl",
+              "page_number": 15,
+              "block_id": "p015_c0005",
+              "text_sha256": "sha256:36a00aa4ad19bbac78fd95c28ec8bffbeef44a5ce7437b4e7a2b3dece1b02aaf",
+              "text_source": "raw_text"
+            },
+            {
+              "source_id": "meeting_doc_194171",
+              "evidence_id": "meeting_doc_194171#p015_c0006",
+              "source_path": "raw/sources/meeting_doc_194171/blocks.jsonl",
+              "page_number": 15,
+              "block_id": "p015_c0006",
+              "text_sha256": "sha256:0be66a4a0f94138ca23f09117ce6189e2362ccf70365a9291e7acbc2242314e9",
+              "text_source": "raw_text"
+            }
+          ]
+        }
+      },
+      "proposed_retired_json_entry": {
+        "submission_id": "sub_79410d5bbfe08442",
+        "reason": "Codex relation cleanup batch057 retires malformed has_timeline_event project -> entity relation relation_meeting-doc-194171-scalise-fm-swap. has_timeline_event requires an event object, but the submitted object is Patrick Scalise, an entity. The cited page 15 evidence supports the existing F/M swap project, Patrick Scalise entity, and F/M swap outreach claim, but does not identify a discrete event endpoint for a valid replacement.",
+        "source_decision": "data/review_notes/codex-relation-cleanup-batch057-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch057",
+        "reviewed_at": "2026-06-23T00:00:00Z"
+      },
+      "proposed_replacement_submission_json": null,
+      "replacement_decision": {
+        "status": "not_prepared",
+        "reason": "Retire-only is preferred because a valid has_timeline_event replacement would need an event object, and current source evidence instead supports already accepted project/entity/claim records."
+      },
+      "expected_endpoint_shape_delta": -1
+    },
+    {
+      "change_type": "retire_only",
+      "confidence": "high",
+      "original": {
+        "submission_id": "sub_1bcfef5201faca44",
+        "run_id": "2026-06-21T21-02-59-476Z_3137823-2a52571c_ingest_meeting-doc-194171",
+        "submitted_at": "2026-06-21T21:20:19.558Z",
+        "tool_args_sha256": "sha256:1bcfef5201faca4494e53373b5b226e83cf7b54c37cb799a7d18c38fa49f0c71",
+        "journal": "data/submissions/2026-06-21T21-02-59-476Z_3137823-2a52571c_ingest_meeting-doc-194171.jsonl:61",
+        "record_id": "relation_meeting-doc-194171-publication-date",
+        "source_id": "meeting_doc_194171",
+        "local_observation_id": "relation_meeting_doc_194171_publication_date",
+        "label": "Source date December 2025",
+        "malformed_shape": "has_timeline_event source -> entity",
+        "tool_args": {
+          "source_id": "meeting_doc_194171",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_meeting_doc_194171_publication_date",
+          "label": "Source date December 2025",
+          "payload": {
+            "relation_kind": "has_timeline_event",
+            "subject_local_observation_id": "source_meeting_doc_194171",
+            "object_local_observation_id": "entity_meeting_doc_194171_mta",
+            "relation_family": "timeline_context"
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_194171",
+              "evidence_id": "meeting_doc_194171#p003_c0004",
+              "source_path": "raw/sources/meeting_doc_194171/blocks.jsonl",
+              "page_number": 3,
+              "block_id": "p003_c0004",
+              "text_sha256": "sha256:1c2e7d7242d4937bffeb7ae2ac5b4071b084298424eb1637e9c216f6f292d64f",
+              "text_source": "raw_text"
+            }
+          ]
+        }
+      },
+      "proposed_retired_json_entry": {
+        "submission_id": "sub_1bcfef5201faca44",
+        "reason": "Codex relation cleanup batch057 retires malformed has_timeline_event source -> entity relation relation_meeting-doc-194171-publication-date. has_timeline_event requires an event object, but the submitted object is MTA, an entity. The cited 'December 2025' block is already represented on source_meeting_doc_194171 as date_text/published_date_normalized, and MTA publication context is already covered by valid published_by source -> entity relation relation_meeting-doc-194171-published-by.",
+        "source_decision": "data/review_notes/codex-relation-cleanup-batch057-prep.json#codex-relation-cleanup-2026-06-23-endpoint-shape-batch057",
+        "reviewed_at": "2026-06-23T00:00:00Z"
+      },
+      "proposed_replacement_submission_json": null,
+      "replacement_decision": {
+        "status": "not_prepared",
+        "reason": "Retire-only is preferred because the publication date is already structured on the source record and the cited block does not provide a discrete event endpoint for a valid has_timeline_event relation."
+      },
+      "expected_endpoint_shape_delta": -1
+    }
+  ],
+  "expected_delta": {
+    "retired_json_additions": 2,
+    "submission_jsonl_additions": 0,
+    "canonical_relation_rows_removed_after_materialize": 2,
+    "canonical_relation_rows_added_after_materialize": 0,
+    "unexpected_relation_endpoint_shape_delta": -2,
+    "expected_remaining_unexpected_relation_endpoint_shape_after_apply": 7
+  }
+}

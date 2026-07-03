@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "route_cluster_71710b1a18",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_71710b1a18.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_71710b1a18.json",
+  "source_review_run_id": "2026-06-23T14-38-47-609Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "route_b3-2015-sbk-corridor",
+        "route_b3-draft-plan"
+      ],
+      "reason": "Route service variant mismatch: route_b3-2015-sbk-corridor has no determinable variant (unknown), while route_b3-draft-plan is explicitly a Local variant. Per merge canon for routes, different variants never merge with each other or with a variant-unspecified base record by key alone (contradiction test: route service variant differs)."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "Both records share base route B3 but have conflicting or missing variant specification. The negative signal 'variant mismatch or missing variant: unknown vs local' directly triggers the route variant rule: records with different service variants (or unknown vs known) are distinct and must not be merged. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

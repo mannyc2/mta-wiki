@@ -1,0 +1,351 @@
+{
+  "run_id": "2026-06-10T22-56-13-151Z_1976810-216ae5f7_ingest_201011-nostrand-handout",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T01:06:38.428Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "rel-tsp-nostrand-rogers-201011",
+        "local_observation_id": "treatment_tsp_nostrand_rogers_201011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_tsp-nostrand-rogers-201011",
+            "description": "Transit Signal Priority is a proposed SBS improvement on the Nostrand/Rogers corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p001_c0014",
+                "source_quote": "Transit Signal Priority (Not Pictured): Buses will get an extended green light at certain intersections, reducing stop time at red lights"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "treatment_tsp-nostrand-rogers-201011",
+            "description": "TSP applied at intersections along the Nostrand Avenue SBS corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p001_c0014",
+                "source_quote": "Transit Signal Priority (Not Pictured): Buses will get an extended green light at certain intersections, reducing stop time at red lights"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_rogers-avenue",
+            "object_id": "treatment_tsp-nostrand-rogers-201011",
+            "description": "TSP applied at intersections along the Rogers Avenue SBS corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p001_c0014",
+                "source_quote": "Transit Signal Priority (Not Pictured): Buses will get an extended green light at certain intersections, reducing stop time at red lights"
+              }
+            ]
+          }
+        ],
+        "rationale": "The source is the Fall 2011 Nostrand/Rogers SBS newsletter. Block p001_c0014 in the 'Proposed SBS Design on Rogers Avenue' section explicitly describes TSP as an SBS feature.",
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p001_c0014",
+            "source_quote": "Transit Signal Priority (Not Pictured): Buses will get an extended green light at certain intersections, reducing stop time at red lights"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-bulbs-nostrand-201011",
+        "local_observation_id": "treatment_bus_bulbs_nostrand_201011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_bus-bulbs-nostrand-201011",
+            "description": "Bus bulbs are part of the SBS station design on the Nostrand/Rogers corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p002_c0009",
+                "source_quote": "Bus Bulbs: Sidewalks at SBS stations will extend out to the bus lane. Buses will not need to pull in and out of traffic. Higher curbs on the SBS platform will allow for easier boarding."
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "treatment_bus-bulbs-nostrand-201011",
+            "description": "Bus bulbs at SBS stations on Nostrand Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p002_c0009",
+                "source_quote": "Bus Bulbs: Sidewalks at SBS stations will extend out to the bus lane. Buses will not need to pull in and out of traffic."
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_rogers-avenue",
+            "object_id": "treatment_bus-bulbs-nostrand-201011",
+            "description": "Bus bulbs at SBS stations on Rogers Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p002_c0009",
+                "source_quote": "Bus Bulbs: Sidewalks at SBS stations will extend out to the bus lane. Buses will not need to pull in and out of traffic."
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p002_c0009 under 'Final Design of SBS Stations' explicitly lists bus bulbs as a station design element for the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p002_c0009",
+            "source_quote": "Bus Bulbs: Sidewalks at SBS stations will extend out to the bus lane. Buses will not need to pull in and out of traffic. Higher curbs on the SBS platform will allow for easier boarding."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-off-board-fare-nostrand-201011",
+        "local_observation_id": "treatment_off_board_fare_nostrand_201011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_off-board-fare-nostrand-201011",
+            "description": "Off-board fare collection machines at SBS stations on the Nostrand/Rogers corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p002_c0009",
+                "source_quote": "Fare Collection Machines: Customers pay their fare at the SBS stop before they board, shortening the time that buses are stopped."
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "treatment_off-board-fare-nostrand-201011",
+            "description": "Off-board fare machines at SBS stations on Nostrand Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p002_c0009",
+                "source_quote": "Fare Collection Machines: Customers pay their fare at the SBS stop before they board, shortening the time that buses are stopped."
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_rogers-avenue",
+            "object_id": "treatment_off-board-fare-nostrand-201011",
+            "description": "Off-board fare machines at SBS stations on Rogers Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p002_c0009",
+                "source_quote": "Fare Collection Machines: Customers pay their fare at the SBS stop before they board, shortening the time that buses are stopped."
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p002_c0009 under 'Final Design of SBS Stations' explicitly lists fare collection machines as part of SBS station design for the Nostrand/Rogers project.",
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p002_c0009",
+            "source_quote": "Fare Collection Machines: Customers pay their fare at the SBS stop before they board, shortening the time that buses are stopped."
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-bus-shelters-nostrand-201011",
+        "local_observation_id": "treatment_bus_shelters_nostrand_201011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_bus-shelters-nostrand-201011",
+            "description": "New bus shelters are part of SBS station amenities on the Nostrand/Rogers corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p002_c0009",
+                "source_quote": "New Bus Shelters"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "treatment_bus-shelters-nostrand-201011",
+            "description": "New bus shelters at SBS stations on Nostrand Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p002_c0009",
+                "source_quote": "New Bus Shelters"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_rogers-avenue",
+            "object_id": "treatment_bus-shelters-nostrand-201011",
+            "description": "New bus shelters at SBS stations on Rogers Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p002_c0009",
+                "source_quote": "New Bus Shelters"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p002_c0009 under 'Final Design of SBS Stations' explicitly lists 'New Bus Shelters' as an SBS station design element for the Nostrand/Rogers project.",
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p002_c0009",
+            "source_quote": "New Bus Shelters"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-offset-bus-lane-rogers-201011",
+        "local_observation_id": "treatment_offset_bus_lane_rogers_201011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_offset-bus-lane-rogers-201011",
+            "description": "Offset bus lane is the proposed SBS design on Rogers Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p001_c0011",
+                "source_quote": "Dedicated Bus Lane & Right Turn Lane:"
+              },
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p001_c0012",
+                "source_quote": "Offset bus lane allows buses to move quickly and preserves parking"
+              },
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p001_c0013",
+                "source_quote": "Parking along the curb except at bus stops"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_rogers-avenue",
+            "object_id": "treatment_offset-bus-lane-rogers-201011",
+            "description": "Offset bus lane on Rogers Avenue is part of the SBS corridor design",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p001_c0011",
+                "source_quote": "Dedicated Bus Lane & Right Turn Lane:"
+              },
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p001_c0012",
+                "source_quote": "Offset bus lane allows buses to move quickly and preserves parking"
+              }
+            ]
+          }
+        ],
+        "rationale": "Blocks p001_c0011-p001_c0013 are in the 'Proposed SBS Design on Rogers Avenue' section and explicitly describe the offset bus lane treatment for Rogers Avenue.",
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p001_c0011",
+            "source_quote": "Dedicated Bus Lane & Right Turn Lane:"
+          },
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p001_c0012",
+            "source_quote": "Offset bus lane allows buses to move quickly and preserves parking"
+          },
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p001_c0013",
+            "source_quote": "Parking along the curb except at bus stops"
+          }
+        ]
+      },
+      {
+        "decision_id": "rel-local-bus-stops-same-block-201011",
+        "local_observation_id": "treatment_local_bus_stops_same_block_201011",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_nostrand-rogers-sbs",
+            "object_id": "treatment_local-bus-stops-same-block-201011",
+            "description": "Local bus stops co-located on same block as SBS stops on the Nostrand/Rogers corridor",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p002_c0009",
+                "source_quote": "Local Bus Stops on the same block as SBS stops"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_nostrand-avenue",
+            "object_id": "treatment_local-bus-stops-same-block-201011",
+            "description": "Local bus stops on same block as SBS stops along Nostrand Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p002_c0009",
+                "source_quote": "Local Bus Stops on the same block as SBS stops"
+              }
+            ]
+          },
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "corridor_rogers-avenue",
+            "object_id": "treatment_local-bus-stops-same-block-201011",
+            "description": "Local bus stops on same block as SBS stops along Rogers Avenue",
+            "evidence_refs": [
+              {
+                "source_id": "201011_nostrand_handout",
+                "block_id": "p002_c0009",
+                "source_quote": "Local Bus Stops on the same block as SBS stops"
+              }
+            ]
+          }
+        ],
+        "rationale": "Block p002_c0009 under 'Final Design of SBS Stations' explicitly lists 'Local Bus Stops on the same block as SBS stops' as part of the station design for the Nostrand/Rogers SBS project.",
+        "evidence_refs": [
+          {
+            "source_id": "201011_nostrand_handout",
+            "block_id": "p002_c0009",
+            "source_quote": "Local Bus Stops on the same block as SBS stops"
+          }
+        ]
+      }
+    ],
+    "packet_id": "treatment-relations"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T01-03-47-190Z_2111393-862bb8e4_canonicalize_2026-06-10t22-56-13-151z-1976810-216ae5f7-ingest-201011-nostrand-handout-treatment-relations"
+}

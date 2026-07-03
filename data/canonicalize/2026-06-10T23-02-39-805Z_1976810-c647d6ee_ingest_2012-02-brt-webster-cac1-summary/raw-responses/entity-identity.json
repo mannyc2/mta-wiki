@@ -1,0 +1,337 @@
+{
+  "run_id": "2026-06-10T23-02-39-805Z_1976810-c647d6ee_ingest_2012-02-brt-webster-cac1-summary",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:30:27.961Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "d01",
+        "local_observation_id": "entity_nycdot_2012_02_brt_webster_cac1",
+        "decision": "link",
+        "target_record_id": "entity_nyc-dot",
+        "rationale": "Observation is NYC DOT agency. Registry record entity_nyc-dot is exactly New York City Department of Transportation (NYCDOT). Same entity name and entity_type=agency. Source explicitly states NYCDOT led the meeting. Evidence: p001_c0006 says 'The New York City Department of Transportation (NYCDOT)' and p001_c0007 identifies Charles Ukegbu as 'NYCDOT Deputy Borough Commissioner for the Bronx.' Link to entity_nyc-dot.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p001_c0006",
+            "source_quote": "On Monday, February 6, 2012, The New York City Department of Transportation (NYCDOT) and MTA New York City Transit (NYCT), held the first Community Advisory Committee (CAC) meeting"
+          }
+        ]
+      },
+      {
+        "decision_id": "d02",
+        "local_observation_id": "entity_mta_nyct_2012_02_brt_webster_cac1",
+        "decision": "link",
+        "target_record_id": "entity_mta-nyct",
+        "rationale": "Observation is MTA New York City Transit (NYCT) agency. Registry record entity_mta-nyct has entity_name='MTA New York City Transit' and entity_type='agency'. Same entity name and type. Source p001_c0006 mentions both NYCDOT and 'MTA New York City Transit (NYCT)'. Base record is already entity_mta-nyct.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p001_c0006",
+            "source_quote": "The New York City Department of Transportation (NYCDOT) and MTA New York City Transit (NYCT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d03",
+        "local_observation_id": "entity_eric_beaton_2012_02_brt_webster_cac1",
+        "decision": "link",
+        "target_record_id": "entity_eric-beaton-20100921",
+        "rationale": "Observation is Eric Beaton, Director of Transit Development for NYCDOT. Registry record entity_eric-beaton-20100921 has payload entity_name='Eric Beaton' and entity_type='person' from same source. Aliases include 'entity_eric-beaton-2012-02-brt-webster-cac1' which matches the observation exactly. Same person across multiple CAC meetings in this source.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p001_c0009",
+            "source_quote": "Mr. Ukegbu then introduced Eric Beaton, Director of Transit Development for NYCDOT"
+          }
+        ]
+      },
+      {
+        "decision_id": "d04",
+        "local_observation_id": "entity_ted_orosz_2012_02_brt_webster_cac1",
+        "decision": "link",
+        "target_record_id": "entity_ted-orosz-20100921",
+        "rationale": "Observation is Ted Orosz, Director of Long Range Bus Planning for NYCT. Registry record entity_ted-orosz-20100921 has entity_name='Ted Orosz', entity_type='person', and aliases include 'entity_ted-orosz-2012-02-brt-webster-cac1' matching this observation. Same person across multiple CAC meetings.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p001_c0009",
+            "source_quote": "Eric Beaton and Ted Orosz, Director of Long Range Bus Planning for NYCT, then presented a more detailed overview"
+          }
+        ]
+      },
+      {
+        "decision_id": "d05",
+        "local_observation_id": "entity_charles_ukegbu_2012_02_brt_webster_cac1",
+        "decision": "link",
+        "target_record_id": "entity_charles-ukegbu-2012-02-brt-webster-cac1",
+        "rationale": "Observation's base record is already entity_charles-ukegbu-2012-02-brt-webster-cac1, which is the same as entity_charles-ukegbu-2012-02-brt-webster-cac1 in the registry. Same record: Charles Ukegbu is mentioned as NYCDOT Deputy Borough Commissioner for the Bronx at this meeting. The record_id field is a relation key, but the base_record confirms this is the same entity.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p001_c0007",
+            "source_quote": "Charles Ukegbu, NYCDOT Deputy Borough Commissioner for the Bronx, welcomed everyone to the meeting"
+          }
+        ]
+      },
+      {
+        "decision_id": "d06",
+        "local_observation_id": "entity_ruben_diaz_jr_2012_02_brt_webster_cac1",
+        "decision": "link",
+        "target_record_id": "entity_ruben-diaz-jr-2012-02-brt-webster-cac1",
+        "rationale": "Observation's own base_record_id is already entity_ruben-diaz-jr-2012-02-brt-webster-cac1. This is the existing registry record for Ruben Diaz, Jr. The observation is already pointing to itself.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p001_c0006",
+            "source_quote": "The meeting, co-hosted by Bronx Borough President Ruben Diaz, Jr., was attended by 28 members of the community."
+          }
+        ]
+      },
+      {
+        "decision_id": "d07",
+        "local_observation_id": "entity_bronx_borough_presidents_office_2012_02",
+        "decision": "link",
+        "target_record_id": "entity_bronx-borough-presidents-office-2012-02",
+        "rationale": "Observation is Bronx Borough President's Office. Registry has entity_bronx-borough-presidents-office-2012-02 from the same source (2012_02_brt_webster_cac1_summary) with entity_name='Bronx Borough President's Office'. Same source, same entity. There's also entity_bronx-borough-presidents-office-2012 from other sources; matching to same-source record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p004_c0009",
+            "source_quote": "Bronx Borough President's Office"
+          }
+        ]
+      },
+      {
+        "decision_id": "d08",
+        "local_observation_id": "entity_community_board_1_bronx_2012_02",
+        "decision": "link",
+        "target_record_id": "entity_community-board-1-bronx-2012-02",
+        "rationale": "Observation is Community Board 1. Registry record entity_community-board-1-bronx-2012-02 is from the same source with entity_name='Community Board 1' and entity_type='community board'. Alias includes entity_community-board-1-bronx. Same entity.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p004_c0009",
+            "source_quote": "Community Board 1"
+          }
+        ]
+      },
+      {
+        "decision_id": "d09",
+        "local_observation_id": "entity_community_board_5_bronx_2012_02",
+        "decision": "link",
+        "target_record_id": "entity_community-board-5-bronx-2012-02",
+        "rationale": "Observation is Community Board 5. Registry record entity_community-board-5-bronx-2012-02 from the same source with entity_name='Community Board 5'. Same entity concept.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p004_c0009",
+            "source_quote": "Community Board 5"
+          }
+        ]
+      },
+      {
+        "decision_id": "d10",
+        "local_observation_id": "entity_community_board_6_bronx_2012_02",
+        "decision": "link",
+        "target_record_id": "entity_community-board-6-bronx-2012-02",
+        "rationale": "Observation is Community Board 6. Registry record entity_community-board-6-bronx-2012-02 from the same source with entity_name='Community Board 6'. Same entity.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p004_c0009",
+            "source_quote": "Community Board 6"
+          }
+        ]
+      },
+      {
+        "decision_id": "d11",
+        "local_observation_id": "entity_community_board_7_bronx_2012_02",
+        "decision": "link",
+        "target_record_id": "entity_community-board-7-bronx-2012-02",
+        "rationale": "Observation is Community Board 7. Registry record entity_community-board-7-bronx-2012-02 from the same source with entity_name='Community Board 7'. Same entity.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p004_c0009",
+            "source_quote": "Community Board 7"
+          }
+        ]
+      },
+      {
+        "decision_id": "d12",
+        "local_observation_id": "entity_fordham_road_bid_2012_02",
+        "decision": "link",
+        "target_record_id": "entity_fordham-road-bid-2012-02",
+        "rationale": "Observation is Fordham Road BID. Registry record entity_fordham-road-bid-2012-02 from the same source with entity_name='Fordham Road BID' and entity_type='business improvement district'. Same entity.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p004_c0009",
+            "source_quote": "Fordham Road BID"
+          }
+        ]
+      },
+      {
+        "decision_id": "d13",
+        "local_observation_id": "entity_tri_state_transportation_campaign_2012_02",
+        "decision": "link",
+        "target_record_id": "entity_tri-state-transportation-campaign",
+        "rationale": "Observation is Tri-State Transportation Campaign. Registry record entity_tri-state-transportation-campaign has aliases including entity_tri-state-transportation-campaign-2012-02 which matches this observation. Same entity_name, entity_type='advocacy organization' matches.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p004_c0009",
+            "source_quote": "Tri-State Transportation Campaign"
+          }
+        ]
+      },
+      {
+        "decision_id": "d14",
+        "local_observation_id": "entity_nys_assembly_district_84_2012_02",
+        "decision": "link",
+        "target_record_id": "entity_nys-assembly-district-84-2012-02",
+        "rationale": "Observation is NYS Assembly District 84 (Carmen E. Arroyo). Registry record entity_nys-assembly-district-84-2012-02 from the same source with same entity_name. Same entity.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p004_c0009",
+            "source_quote": "NYS Assembly District 84 (Carmen E. Arroyo)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d15",
+        "local_observation_id": "entity_morris_house_2012_02",
+        "decision": "link",
+        "target_record_id": "entity_morris-house-2012-02",
+        "rationale": "Observation is Morris House. Registry record entity_morris-house-2012-02 from the same source with entity_name='Morris House'. Same entity.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p004_c0009",
+            "source_quote": "Morris House"
+          }
+        ]
+      },
+      {
+        "decision_id": "d16",
+        "local_observation_id": "entity_bronx_independent_living_services_2012_02",
+        "decision": "link",
+        "target_record_id": "entity_bronx-independent-living-services-2012-02",
+        "rationale": "Observation is Bronx Independent Living Services. Registry record entity_bronx-independent-living-services-2012-02 from same source with same name. Same entity.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p004_c0009",
+            "source_quote": "Bronx Independent Living Services"
+          }
+        ]
+      },
+      {
+        "decision_id": "d17",
+        "local_observation_id": "entity_mosholu_preservation_corporation_2012_02",
+        "decision": "link",
+        "target_record_id": "entity_mosholu-preservation-corporation-2012-02",
+        "rationale": "Observation is Mosholu Preservation Corporation. Registry record entity_mosholu-preservation-corporation-2012-02 from same source. Same entity.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p004_c0009",
+            "source_quote": "Mosholu Preservation Corporation"
+          }
+        ]
+      },
+      {
+        "decision_id": "d18",
+        "local_observation_id": "entity_pratt_center_community_division_2012_02",
+        "decision": "link",
+        "target_record_id": "entity_pratt-center-community-division-2012-02",
+        "rationale": "Observation is Pratt Center, Community Division. Registry record entity_pratt-center-community-division-2012-02 from the same source. Same entity.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p004_c0009",
+            "source_quote": "Pratt Center, Community Division"
+          }
+        ]
+      },
+      {
+        "decision_id": "d19",
+        "local_observation_id": "entity_selga_realty_2012_02",
+        "decision": "link",
+        "target_record_id": "entity_selga-realty-2012-02",
+        "rationale": "Observation is Selga Realty. Registry record entity_selga-realty-2012-02 from same source. Same entity.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p004_c0009",
+            "source_quote": "Selga Realty"
+          }
+        ]
+      },
+      {
+        "decision_id": "d20",
+        "local_observation_id": "entity_north_end_wine_liquor_2012_02",
+        "decision": "link",
+        "target_record_id": "entity_north-end-wine-liquor-2012-02",
+        "rationale": "Observation is North End Wine and Liquor. Registry record entity_north-end-wine-liquor-2012-02 from same source. Same entity.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p004_c0009",
+            "source_quote": "North End Wine and Liquor"
+          }
+        ]
+      },
+      {
+        "decision_id": "d21",
+        "local_observation_id": "entity_bronx_fashion_2012_02",
+        "decision": "link",
+        "target_record_id": "entity_bronx-fashion-2012-02",
+        "rationale": "Observation is Bronx Fashion. Registry record entity_bronx-fashion-2012-02 from same source. Same entity.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p004_c0009",
+            "source_quote": "Bronx Fashion"
+          }
+        ]
+      },
+      {
+        "decision_id": "d22",
+        "local_observation_id": "entity_cookies_department_store_2012_02",
+        "decision": "link",
+        "target_record_id": "entity_cookies-department-store-2012-02",
+        "rationale": "Observation is Cookies Department Store. Registry record entity_cookies-department-store-2012-02 from same source. Same entity.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p004_c0009",
+            "source_quote": "Cookies Department Store"
+          }
+        ]
+      },
+      {
+        "decision_id": "d23",
+        "local_observation_id": "entity_hnp_2012_02",
+        "decision": "link",
+        "target_record_id": "entity_hnp-2012-02",
+        "rationale": "Observation is HNP. Registry record entity_hnp-2012-02 from same source. Same entity.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_02_brt_webster_cac1_summary",
+            "block_id": "p004_c0009",
+            "source_quote": "HNP"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-21-37-000Z_2111393-228ca20d_canonicalize_2026-06-10t23-02-39-805z-1976810-c647d6ee-ingest-2012-02-brt-webster-cac1-summary-entity-identity"
+}

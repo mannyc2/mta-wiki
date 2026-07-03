@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-06-10T17-48-04-564Z_1496766-9d5cfd47_ingest_14th-street-preliminary-report-fall-2019-corrected",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-10T19:16:59.510Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "proj-identity-14th-st-ttp-pilot",
+        "local_observation_id": "project_14th_st_ttp_pilot_fall2019",
+        "decision": "new",
+        "rationale": "The observation's base_record_id ('project_14th-street-transit-truck-priority-pilot') is already the closest-matching registry record. The payload aligns on project_name ('14th Street Transit & Truck Priority Pilot Project'), project_type ('pilot'), borough ('Manhattan'), and description. The slight status difference ('implemented October 2019' in the observation vs 'ongoing' in the registry) reflects a document-time snapshot, not a distinct identity. Per canonicalization rules, when the closest match IS the observation's own base_record_id, the decision is 'new' — the observation already resolves to that id.",
+        "evidence_refs": [
+          {
+            "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+            "block_id": "p002_c0006",
+            "source_quote": ""
+          },
+          {
+            "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+            "block_id": "p002_c0007",
+            "source_quote": ""
+          },
+          {
+            "source_id": "14th_street_preliminary_report_fall_2019_corrected",
+            "block_id": "p003_c0017",
+            "source_quote": ""
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-16-28-553Z_1609878-0ceb587a_canonicalize_2026-06-10t17-48-04-564z-1496766-9d5cfd47-ingest-14th-street-preliminary-report-fall-2019-corrected-project-identity"
+}

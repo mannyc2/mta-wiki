@@ -1,0 +1,84 @@
+{
+  "run_id": "2026-06-10T17-48-04-838Z_1496766-05068207_ingest_2010-09-14-brt-1st2nd-cac5",
+  "packet_id": "route-identity",
+  "generated_at": "2026-06-10T19:49:20.965Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "m15-sbs-new",
+        "local_observation_id": "route_m15_sbs_2010_09_14",
+        "decision": "new",
+        "rationale": "Observation already resolves to existing registry record route_m15-sbs, which was created from the same source (2010_09_14_brt_1st2nd_cac5), carries the matching alias route_m15-sbs-2010-09-14, and has identical payload: M15 Select Bus Service, Manhattan, SBS variant.",
+        "proposed_relations": [
+          {
+            "relation_kind": "replaces",
+            "subject_id": "route_m15-sbs",
+            "object_id": "route_m15-limited-2010-09-14",
+            "description": "M15 Select Bus Service replaces M15 Limited service on the First/Second Avenue corridor.",
+            "evidence_refs": [
+              {
+                "source_id": "2010_09_14_brt_1st2nd_cac5",
+                "block_id": "p010_c0006",
+                "source_quote": "M15 SBS replaces M15 Limited"
+              }
+            ]
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p003_c0006",
+            "source_quote": "M15 Select Bus Service begins: October 10, 2010"
+          },
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p010_c0006",
+            "source_quote": "M15 SBS replaces M15 Limited"
+          },
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p010_c0011",
+            "source_quote": "The route starts at South Ferry and ends at 125 St/2 Av and 125 St/1 Av"
+          }
+        ]
+      },
+      {
+        "decision_id": "m15-local-new",
+        "local_observation_id": "route_m15_local_2010_09_14",
+        "decision": "new",
+        "rationale": "Observation already resolves to existing registry record route_m15-local-2010-09-14, which was created from the same source (2010_09_14_brt_1st2nd_cac5) and has matching payload: M15 Local, Manhattan, local variant, 24-hour service.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p010_c0007",
+            "source_quote": "M15 Local unchanged"
+          },
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p011_c0006",
+            "source_quote": "M15 Local 24 hours"
+          }
+        ]
+      },
+      {
+        "decision_id": "m15-limited-new",
+        "local_observation_id": "route_m15_limited_2010_09_14",
+        "decision": "new",
+        "rationale": "Observation already resolves to existing registry record route_m15-limited-2010-09-14, which was created from the same source (2010_09_14_brt_1st2nd_cac5) and has matching payload: M15 Limited, Manhattan, limited-stop variant, being replaced by M15 SBS.",
+        "evidence_refs": [
+          {
+            "source_id": "2010_09_14_brt_1st2nd_cac5",
+            "block_id": "p010_c0006",
+            "source_quote": "M15 SBS replaces M15 Limited"
+          }
+        ]
+      }
+    ],
+    "packet_id": "route-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-10T19-48-32-198Z_1665469-0cc2f213_canonicalize_2026-06-10t17-48-04-838z-1496766-05068207-ingest-2010-09-14-brt-1st2nd-cac5-route-identity"
+}

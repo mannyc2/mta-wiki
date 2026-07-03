@@ -1,0 +1,102 @@
+{
+  "batch_id": "spreadsheet-batch005",
+  "prepared_at": "2026-06-23T16:17:00Z",
+  "candidate_count": 10,
+  "candidates": [
+    {
+      "source_id": "meeting_doc_196971",
+      "source_file": "raw/sources/meeting_doc_196971/source.xlsx",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_196971/preview.json",
+      "current_blocks_lines": 0,
+      "expected_reason": "Small nonempty spreadsheet preview with 1 sheet, 33 rows, and 128 cells.",
+      "guard_notes": "Not ready and not ingested; excludes spreadsheet batches001-004."
+    },
+    {
+      "source_id": "meeting_doc_43881",
+      "source_file": "raw/sources/meeting_doc_43881/source.xlsx",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_43881/preview.json",
+      "current_blocks_lines": 0,
+      "expected_reason": "Small nonempty spreadsheet preview with 1 sheet, 35 rows, and 131 cells.",
+      "guard_notes": "Not ready and not ingested; excludes spreadsheet batches001-004."
+    },
+    {
+      "source_id": "meeting_doc_160351",
+      "source_file": "raw/sources/meeting_doc_160351/source.xlsx",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_160351/preview.json",
+      "current_blocks_lines": 0,
+      "expected_reason": "Small nonempty spreadsheet preview with 1 sheet, 37 rows, and 151 cells.",
+      "guard_notes": "Not ready and not ingested; excludes spreadsheet batches001-004."
+    },
+    {
+      "source_id": "meeting_doc_157596",
+      "source_file": "raw/sources/meeting_doc_157596/source.xlsx",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_157596/preview.json",
+      "current_blocks_lines": 0,
+      "expected_reason": "Small nonempty spreadsheet preview with 1 sheet, 31 rows, and 156 cells.",
+      "guard_notes": "Not ready and not ingested; excludes spreadsheet batches001-004."
+    },
+    {
+      "source_id": "meeting_doc_160331",
+      "source_file": "raw/sources/meeting_doc_160331/source.xlsx",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_160331/preview.json",
+      "current_blocks_lines": 0,
+      "expected_reason": "Small nonempty spreadsheet preview with 1 sheet, 31 rows, and 156 cells.",
+      "guard_notes": "Not ready and not ingested; excludes spreadsheet batches001-004."
+    },
+    {
+      "source_id": "meeting_doc_163061",
+      "source_file": "raw/sources/meeting_doc_163061/source.xlsx",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_163061/preview.json",
+      "current_blocks_lines": 0,
+      "expected_reason": "Small nonempty spreadsheet preview with 1 sheet, 31 rows, and 156 cells.",
+      "guard_notes": "Not ready and not ingested; excludes spreadsheet batches001-004."
+    },
+    {
+      "source_id": "meeting_doc_164741",
+      "source_file": "raw/sources/meeting_doc_164741/source.xlsx",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_164741/preview.json",
+      "current_blocks_lines": 0,
+      "expected_reason": "Small nonempty spreadsheet preview with 1 sheet, 31 rows, and 156 cells.",
+      "guard_notes": "Not ready and not ingested; excludes spreadsheet batches001-004."
+    },
+    {
+      "source_id": "meeting_doc_167011",
+      "source_file": "raw/sources/meeting_doc_167011/source.xlsx",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_167011/preview.json",
+      "current_blocks_lines": 0,
+      "expected_reason": "Small nonempty spreadsheet preview with 1 sheet, 31 rows, and 156 cells.",
+      "guard_notes": "Not ready and not ingested; excludes spreadsheet batches001-004."
+    },
+    {
+      "source_id": "meeting_doc_170436",
+      "source_file": "raw/sources/meeting_doc_170436/source.xlsx",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_170436/preview.json",
+      "current_blocks_lines": 0,
+      "expected_reason": "Small nonempty spreadsheet preview with 1 sheet, 31 rows, and 156 cells.",
+      "guard_notes": "Not ready and not ingested; excludes spreadsheet batches001-004."
+    },
+    {
+      "source_id": "meeting_doc_173931",
+      "source_file": "raw/sources/meeting_doc_173931/source.xlsx",
+      "preview_path": "data/source-prep/spreadsheet-backlog-20260623/meeting_doc_173931/preview.json",
+      "current_blocks_lines": 0,
+      "expected_reason": "Small nonempty spreadsheet preview with 1 sheet, 31 rows, and 156 cells.",
+      "guard_notes": "Not ready and not ingested; excludes spreadsheet batches001-004."
+    }
+  ],
+  "excluded_examples": [
+    {
+      "source_id": "meeting_doc_109256",
+      "reason": "Zero-cell preview; excluded from nonempty apply batch."
+    },
+    {
+      "source_id": "meeting_doc_113541",
+      "reason": "Large 1,855-cell preview; deferred in favor of smaller batches."
+    },
+    {
+      "source_id": "meeting_doc_135411",
+      "reason": "Already applied in spreadsheet batch004."
+    }
+  ],
+  "recommended_apply_command": "for source_id in meeting_doc_196971 meeting_doc_43881 meeting_doc_160351 meeting_doc_157596 meeting_doc_160331 meeting_doc_163061 meeting_doc_164741 meeting_doc_167011 meeting_doc_170436 meeting_doc_173931; do bun packages/cli/src/cli.ts source-prep-apply-preview \"$source_id\" --run-id spreadsheet-backlog-20260623; done"
+}

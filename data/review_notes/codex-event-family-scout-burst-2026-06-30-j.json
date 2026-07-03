@@ -1,0 +1,92 @@
+{
+  "id": "codex-event-family-scout-burst-2026-06-30-j",
+  "date": "2026-06-30",
+  "mode": "codex_only_deterministic_cleanup",
+  "provider_backed_commands_used": false,
+  "forbidden_commands_used": false,
+  "summary": "Implemented the remaining high-confidence residual event-family scout slice with exact payload/source-context gates, reducing event_family other from 157 to 143 while keeping validate clean.",
+  "baseline_before": {
+    "event_family_other": 157,
+    "project_document_time_status_missing": 52,
+    "project_family_unresolved": 10,
+    "treatment_noisy_union": 37,
+    "relation_family_unresolved": 0,
+    "relation_kind_unresolved": 0
+  },
+  "after": {
+    "event_family_other": 143,
+    "project_document_time_status_missing": 52,
+    "project_family_unresolved": 10,
+    "treatment_noisy_union": 37,
+    "relation_family_unresolved": 0,
+    "relation_kind_unresolved": 0,
+    "moved_events": {
+      "event_meeting128861-jews-for-peace-protest": "incident",
+      "event_meeting-doc-112146-budget-deal": "milestone",
+      "event_meeting-doc-115326-twu-agreement-2023": "milestone",
+      "event_president-biden-west-side-yard-meeting-doc-105771": "milestone",
+      "event_29941-quemuel-arroyo-start": "milestone",
+      "event_steven-la-joined-paratransit": "milestone",
+      "event_engineering-trainees-june2023": "milestone",
+      "event_fmtac-agg-inception-174046": "milestone",
+      "event_meeting-doc-129116-price-concession": "milestone",
+      "event_cargo-vessel-safe-passage-2024": "implementation",
+      "event_meeting-doc-176421-summer-prep": "implementation",
+      "event_mnrr-seasonal-safety-focus-days": "implementation",
+      "event_ilcad-june2022": "public_engagement",
+      "event_meeting-doc-206201-nwzaw-2026": "public_engagement"
+    }
+  },
+  "implemented_changes": [
+    {
+      "area": "event_family_normalization",
+      "files": [
+        "packages/pipeline/src/ontology/normalizers.ts",
+        "packages/pipeline/test/ontology/normalizers.test.ts"
+      ],
+      "details": [
+        "Added exact event-kind plus payload/source-context gates for the fourteen remaining safe scout candidates.",
+        "Kept generic protest, budget deal, labor settlement, presidential visit, personnel/employment/hiring, inception, price adjustment, operation, seasonal preparation, safety program, awareness day, and awareness week records as other unless the decisive source proof is present.",
+        "The two prior scout incident records, Hurricane Ida and Winter Storm Fern, were already resolved by the preceding source-block context slice and were not duplicated here."
+      ]
+    }
+  ],
+  "parallel_audit": {
+    "treatment_noisy_union": 37,
+    "groups": {
+      "route_type_taxonomy_records": 10,
+      "raw_bus_priority_kind_with_concrete_family": 8,
+      "aggregate_bus_priority_packages": 16,
+      "amenity_or_public_art": 2,
+      "monitoring": 1
+    },
+    "recommended_next_rule": "Add a derived non-actionable taxonomy/scope flag for treatment_kind=route_type route taxonomy records without rewriting raw treatment_kind."
+  },
+  "verification": {
+    "focused_tests": [
+      "bun test packages/pipeline/test/ontology/normalizers.test.ts",
+      "258 pass, 0 fail"
+    ],
+    "typecheck": "bun run typecheck",
+    "materialize": "MTA_MATERIALIZE_TIMING=1 bun packages/cli/src/cli.ts materialize",
+    "sqlite_quick_check": "ok",
+    "fts_rows": {
+      "records_fts": 84048,
+      "blocks_fts": 0
+    },
+    "validate": {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "issues": 0,
+      "submissions": 98102,
+      "canonical_records": 84048,
+      "wiki_pages": 7337
+    }
+  },
+  "remaining_lanes": [
+    "Treatment noisy/actionable union: 37 records, starting with 10 route_type taxonomy records.",
+    "Project document_time_status missing: 52.",
+    "Project family unresolved: 10.",
+    "One route identity/key candidate remains: route_far-rockaway-branch-127546 -> route_lirr-far-rockaway-branch-2023.",
+    "blocks_fts remains schema-only until full-corpus trigram index population is safe on the local SQLite stack."
+  ]
+}

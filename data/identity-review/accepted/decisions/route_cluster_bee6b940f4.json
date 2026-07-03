@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "route_cluster_bee6b940f4",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_bee6b940f4.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_bee6b940f4.json",
+  "source_review_run_id": "2026-06-23T14-33-30-580Z_identity-review-run",
+  "model": "deepseek/deepseek-v4-flash",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 6,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "high"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "route_b44-brt-phase2",
+        "route_b44-limited"
+      ],
+      "reason": "Contradiction test: Different service_variant. route_b44-brt-phase2 has no service_variant (unknown) while route_b44-limited has limited_stop. Variant mismatch forces do_not_merge per route identity rule."
+    },
+    {
+      "record_ids": [
+        "route_b44-brt-phase2",
+        "route_b44-local"
+      ],
+      "reason": "Contradiction test: Different service_variant. route_b44-brt-phase2 has no service_variant (unknown) while route_b44-local has local. Variant mismatch forces do_not_merge."
+    },
+    {
+      "record_ids": [
+        "route_b44-brt-phase2",
+        "route_b44-sbs"
+      ],
+      "reason": "Contradiction test: Different service_variant. route_b44-brt-phase2 has no service_variant (unknown) while route_b44-sbs has sbs. Variant mismatch forces do_not_merge."
+    },
+    {
+      "record_ids": [
+        "route_b44-limited",
+        "route_b44-local"
+      ],
+      "reason": "Contradiction test: Different service_variant. route_b44-limited has limited_stop, route_b44-local has local. Different variants never merge per route identity rule."
+    },
+    {
+      "record_ids": [
+        "route_b44-limited",
+        "route_b44-sbs"
+      ],
+      "reason": "Contradiction test: Different service_variant. route_b44-limited has limited_stop, route_b44-sbs has sbs. Different variants never merge per route identity rule."
+    },
+    {
+      "record_ids": [
+        "route_b44-local",
+        "route_b44-sbs"
+      ],
+      "reason": "Contradiction test: Different service_variant. route_b44-local has local, route_b44-sbs has sbs. Different variants never merge per route identity rule."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "All records share base route B44 but differ in service_variant (limited, local, sbs) or lack a variant (brt-phase2). According to the Identity Merge Canon for routes, different service variants are never merged. Even the variant-unspecified record cannot merge into any variant-specific record because that would assign a variant absent in the source evidence. All pairs are therefore distinct and should not be merged. None have contradicting identity fields beyond variant; the records within each variant collection (e.g., the many date-suffixed aliases for route_b44-limited) are correctly unified under the durable variant record and are not part of cross-variant merge decisions. [auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

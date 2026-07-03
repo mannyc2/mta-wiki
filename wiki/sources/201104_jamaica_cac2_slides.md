@@ -1,0 +1,401 @@
+---
+managed_by: "mta-wiki-materializer"
+record_id: "source_201104-jamaica-cac2-slides"
+record_kind: "source"
+display_name: "Jamaica Bus Improvement Study Community Advisory Committee Meeting #2"
+source_id: "201104_jamaica_cac2_slides"
+source_ids:
+  - "201104_jamaica_cac2_slides"
+local_observation_id: "source_201104_jamaica_cac2_slides"
+local_observation_ids:
+  - "source_201104_jamaica_cac2_slides"
+review_state: "unreviewed"
+truth_status: "source_stated"
+generated_at: "2026-06-10T22:56:57.539Z"
+raw_text: "Jamaica Bus Improvement Study Community Advisory Committee Meeting #2 - Friday, March 25, 2011"
+submission_ids:
+  - "sub_5f27854e4ab9c77d"
+payload:
+  authority_tier: "board_material"
+  content_type: "presentation"
+  date: "2011-03-25"
+  date_normalized:
+    confidence: "submitted_iso"
+    normalized_date: "2011-03-25"
+    precision: "day"
+    raw_text: "2011-03-25"
+  date_text: "Friday, March 25, 2011"
+  date_text_normalized:
+    confidence: "parsed_text"
+    normalized_date: "2011-03-25"
+    precision: "day"
+    raw_text: "Friday, March 25, 2011"
+  document_type: "slides"
+  published_date_normalized: "2011-03-25"
+  published_date_precision: "day"
+  publisher: "New York City Department of Transportation (NYC DOT)"
+  title: "Jamaica Bus Improvement Study Community Advisory Committee Meeting #2"
+evidence_refs:
+  -
+    block_id: "p001_c0001"
+    evidence_id: "201104_jamaica_cac2_slides#p001_c0001"
+    page_number: 1
+    role: "title"
+    source_id: "201104_jamaica_cac2_slides"
+    source_path: "raw/sources/201104_jamaica_cac2_slides/blocks.jsonl"
+    text_sha256: "sha256:1c03c09713c3d1bfcbc3d3cb02a73ec135b62bbb2003c10951e81a2f9c8ce072"
+    text_source: "raw_text"
+  -
+    block_id: "p001_c0002"
+    evidence_id: "201104_jamaica_cac2_slides#p001_c0002"
+    page_number: 1
+    role: "date"
+    source_id: "201104_jamaica_cac2_slides"
+    source_path: "raw/sources/201104_jamaica_cac2_slides/blocks.jsonl"
+    text_sha256: "sha256:131d08960743d1ad2b825c634d30d9d34929fb5ae50cb926775b7f65726cb4ae"
+    text_source: "raw_text"
+---
+
+# Download the Community Advisory Committee Presentation detailing preliminary study recommendations
+
+source_id: 201104_jamaica_cac2_slides
+citation: cite block ids exactly as shown in square brackets
+document: 239 block(s)
+
+## Page 1
+
+### [p001_c0001] Jamaica Bus Improvement Study Community Advisory Committee Meeting #2
+[p001_c0002] Friday, March 25, 2011
+[p001_c0003] Jamaica Control Center, AirTrain Building
+
+## Page 2
+
+### [p002_c0001] Jamaica Bus Improvement Study
+### [p002_c0002] Agenda
+[p002_c0003] Project Overview
+[p002_c0004] Existing Conditions
+[p002_c0005] Recommendations
+[p002_c0006] Next Steps
+[p002_c0007] _NEW YORK CITY DOIT The logo for the New York City Department of Infrastructure and Transportation (DOIT) is located in the bottom left corner. It features the text "NEW YORK CITY" above the acronym "DOIT", which is accompanied by a stylized graphic of three horizontal green bars._
+
+## Page 3
+
+### [p003_c0001] Jamaica Bus Improvement Study
+### [p003_c0002] Study Context
+[p003_c0003] Outgrowth of New York City Bus Rapid Transit study
+[p003_c0004] Response to community concerns about bus movement in Jamaica CBD
+[p003_c0005] _NEW YORK CITY DOT_
+
+## Page 4
+
+### [p004_c0001] Jamaica Bus Improvement Study
+### [p004_c0002] Study Context
+> [p004_c0003] The map displays the Jamaica Bus Improvement Study Area, highlighted in yellow, centered around Liberty Avenue. Blue lines represent bus routes, and blue circles with letters E, F, J, and Z indicate subway service. The map includes a legend, a scale bar (0 to 3 miles), and a north arrow. An inset map shows the location of the study area within the New York City metropolitan region. Legend: Jamaica Bus Improvement Study Area (Yellow) Bus Routes (Blue) Scale: 0, 0.375, 0.75, 1.5, 2.25, 3 Miles
+[p004_c0004] 47 NYCT, MTA Bus and LI Bus routes – hub for services throughout SE Queens
+[p004_c0005] E F J Z subway service
+[p004_c0006] Very high volume of bus to subway transfers
+[p004_c0007] _NEW YORK CITY DOT_
+
+## Page 5
+
+### [p005_c0001] Jamaica Bus Improvement Study
+### [p005_c0002] Study Context
+> [p005_c0003] A detailed map of the Jamaica Bus Improvement Study area in Queens, New York City. The map shows a dense network of bus routes, including NYCT and MTA bus lines, and subway service. Key landmarks include the Jamaica Central Library, Queens Central Library, Catholic Medical Center, Mary Immaculate Hospital, King's Park, King Manor Museum, Jamaica Arts Center, and the Jamaica Central Railroad Station. The map also shows major streets such as Jamaica Av, Archer Av, 165 St, 166 St, 167 St, 168 St, 169 St, 170 St, 171 St, 172 St, 173 St, 174 St, 175 St, 176 St, 177 St, 178 St, 179 St, 180 St, 181 St, 182 St, 183 St, 184 St, 185 St, 186 St, 187 St, 188 St, 189 St, 190 St, 191 St, 192 St, 193 St, 194 St, 195 St, 196 St, 197 St, 198 St, 199 St, 200 St, 201 St, 202 St, 203 St, 204 St, 205 St, 206 St, 207 St, 208 St, 209 St, 210 St, 211 St, 212 St, 213 St, 214 St, 215 St, 216 St, 217 St, 218 St, 219 St, 220 St, 221 St, 222 St, 223 St, 224 St, 225 St, 226 St, 227 St, 228 St, 229 St, 230 St, 231 St, 232 St, 233 St, 234 St, 235 St, 236 St, 237 St, 238 St, 239 St, 240 St, 241 St, 242 St, 243 St, 244 St, 245 St, 246 St, 247 St, 248 St, 249 St, 250 St, 251 St, 252 St, 253 St, 254 St, 255 St, 256 St, 257 St, 258 St, 259 St, 260 St, 261 St, 262 St, 263 St, 264 St, 265 St, 266 St, 267 St, 268 St, 269 St, 270 St, 271 St, 272 St, 273 St, 274 St, 275 St, 276 St, 277 St, 278 St, 279 St, 280 St, 281 St, 282 St, 283 St, 284 St, 285 St, 286 St, 287 St, 288 St, 289 St, 290 St, 291 St, 292 St, 293 St, 294 St, 295 St, 296 St, 297 St, 298 St, 299 St, 300 St, 301 St, 302 St, 303 St, 304 St, 305 St, 306 St, 307 St, 308 St, 309 St, 310 St, 311 St, 312 St, 313 St, 314 St, 315 St, 316 St, 317 St, 318 St, 319 St, 320 St, 321 St, 322 St, 323 St, 324 St, 325 St, 326 St, 327 St, 328 St, 329 St, 330 St, 331 St, 332 St, 333 St, 334 St, 335 St, 336 St, 337 St, 338 St, 339 St, 340 St, 341 St, 342 St, 343 St, 344 St, 345 St, 346 St, 347 St, 348 St, 349 St, 350 St, 351 St, 352 St, 353 St, 354 St, 355 St, 356 St, 357 St, 358 St, 359 St, 360 St, 361 St, 362 St, 363 St, 364 St, 365 St, 366 St, 367 St, 368 St, 369 St, 370 St, 371 St, 372 St, 373 St, 374 St, 375 St, 376 St, 377 St, 378 St, 379 St, 380 St, 381 St, 382 St, 383 St, 384 St, 385 St, 386 St, 387 St, 388 St, 389 St, 390 St, 391 St, 392 St, 393 St, 394 St, 395 St, 396 St, 397 St, 398 St, 399 St, 400 St, 401 St, 402 St, 403 St, 404 St, 405 St, 406 St, 407 St, 408 St, 409 St, 410 St, 411 St, 412 St, 413 St, 414 St, 415 St, 416 St, 417 St, 418 St, 419 St, 420 St, 421 St, 422 St, 423 St, 424 St, 425 St, 426 St, 427 St, 428 St, 429 St, 430 St, 431 St, 432 St, 433 St, 434 St, 435 St, 436 St, 437 St, 438 St, 439 St, 440 St, 441 St, 442 St, 443 St, 444 St, 445 St, 446 St, 447 St, 448 St, 449 St, 450 St, 451 St, 452 St, 453 St, 454 St, 455 St, 456 St, 457 St, 458 St, 459 St, 460 St, 461 St, 462 St, 463 St, 464 St, 465 St, 466 St, 467 St, 468 St, 469 St, 470 St, 471 St, 472 St, 473 St, 474 St, 475 St, 476 St, 477 St, 478 St, 479 St, 480 St, 481 St, 482 St, 483 St, 484 St, 485 St, 486 St, 487 St, 488 St, 489 St, 490 St, 491 St, 492 St, 493 St, 494 St, 495 St, 496 St, 497 St, 498 St, 499 St, 500 St, 501 St, 502 St, 503 St, 504 St, 505 St, 506 St, 507 St, 508 St, 509 St, 510 St, 511 St, 512 St, 513 St, 514 St, 515 St, 516 St, 517 St, 518 St, 519 St, 520 St, 521 St, 522 St, 523 St, 524 St, 525 St, 526 St, 527 St, 528 St, 529 St, 530 St, 531 St, 532 St, 533 St, 534 St, 535 St, 536 St, 537 St, 538 St, 539 St, 540 St, 541 St, 542 St, 543 St, 544 St, 545 St, 546 St, 547 St, 548 St, 549 St, 550 St, 551 St, 552 St, 553 St, 554 St, 555 St, 556 St, 557 St, 558 St, 559 St, 560 St, 561 St, 562 St, 563 St, 564 St, 565 St, 566 St, 567 St, 568 St, 569 St, 570 St, 571 St, 572 St, 573 St, 574 St, 575 St, 576 St, 577 St, 578 St, 579 St, 580 St, 581 St, 582 St, 583 St, 584 St, 585 St, 586 St, 587 St, 588 St, 589 St, 590 St, 591 St, 592 St, 593 St, 594 St, 595 St, 596 St, 597 St, 598 St, 599 St, 600 St, 601 St, 602 St, 603 St, 604 St, 605 St, 606 St, 607 St, 608 St, 609 St, 610 St, 611 St, 612 St, 613 St, 614 St, 615 St, 616 St, 617 St, 618 St, 619 St, 620 St, 621 St, 622 St, 623 St, 624 St, 625 St, 626 St, 627 St, 628 St, 629 St, 630 St, 631 St, 632 St, 633 St, 634 St, 635 St, 636 St, 637 St, 638 St, 639 St, 640 St, 641 St, 642 St, 643 St, 644 St, 645 St, 646 St, 647 St, 648 St, 649 St, 650 St, 651 St, 652 St, 653 St, 654 St, 655 St, 656 St, 657 St, 658 St, 659 St, 660 St, 661 St, 662 St, 663 St, 664 St, 665 St, 666 St, 667 St, 668 St, 669 St, 670 St, 671 St, 672 St, 673 St, 674 St, 675 St, 676 St, 677 St, 678 St, 679 St, 680 St, 681 St, 682 St, 683 St, 684 St, 685 St, 686 St, 687 St, 688 St, 689 St, 690 St, 691 St, 692 St, 693 St, 694 St, 695 St, 696 St, 697 St, 698 St, 699 St, 700 St, 701 St, 702 St, 703 St, 704 St, 705 St, 706 St, 707 St, 708 St, 709 St, 710 St, 711 St, 712 St, 713 St, 714 St, 715 St, 716 St, 717 St, 718 St, 719 St, 720 St, 721 St, 722 St, 723 St, 724 St, 725 St, 726 St, 727 St, 728 St, 729 St, 730 St, 731 St, 732 St, 733 St, 734 St, 735 St, 736 St, 737 St, 738 St, 739 St, 740 St, 741 St, 742 St, 743 St, 744 St, 745 St, 746 St, 747 St, 748 St, 749 St, 750 St, 751 St, 752 St, 753 St, 754 St, 755 St, 756 St, 757 St, 758 St, 759 St, 760 St, 761 St, 762 St, 763 St, 764 St, 765 St, 766 St, 767 St, 768 St, 769 St, 770 St, 771 St, 772 St, 773 St, 774 St, 775 St, 776 St, 777 St, 778 St, 779 St, 780 St, 781 St, 782 St, 783 St, 784 St, 785 St, 786 St, 787 St, 788 St, 789 St, 790 St, 791 St, 792 St, 793 St, 794 St, 795 St, 796 St, 797 St, 798 St, 799 St, 800 St, 801 St, 802 St, 803 St, 804 St, 805 St, 806 St, 807 St, 808 St, 809 St, 810 St, 811 St, 812 St, 813 St, 814 St, 815 St, 816 St, 817 St, 818 St, 819 St, 820 St, 821 St, 822 St, 823 St, 824 St, 825 St, 826 St, 827 St, 828 St, 829 St, 830 St, 831 St, 832 St, 833 St, 834 St, 835 St, 836 St, 837 St, 838 St, 839 St, 840 St, 841 St, 842 St, 843 St, 844 St, 845 St, 846 St, 847 St, 848 St, 849 St, 850 St, 851 St, 852 St, 853 St, 854 St, 855 St, 856 St, 857 St, 858 St, 859 St, 860 St, 861 St, 862 St, 863 St, 864 St, 865 St, 866 St, 867 St, 868 St, 869 St, 870 St, 871 St, 872 St, 873 St, 874 St, 875 St, 876 St, 877 St, 878 St, 879 St, 880 St, 881 St, 882 St, 883 St, 884 St, 885 St, 886 St, 887 St, 888 St, 889 St, 890 St, 891 St, 892 St, 893 St, 894 St, 895 St, 896 St, 897 St, 898 St, 899 St, 900 St, 901 St, 902 St, 903 St, 904 St, 905 St, 906 St, 907 St, 908 St, 909 St, 910 St, 911 St, 912 St, 913 St, 914 St, 915 St, 916 St, 917 St, 918 St, 919 St, 920 St, 921 St, 922 St, 923 St, 924 St, 925 St, 926 St, 927 St, 928 St, 929 St, 930 St, 931 St, 932 St, 933 St, 934 St, 935 St, 936 St, 937 St, 938 St, 939 St, 940 St, 941 St, 942 St, 943 St, 944 St, 945 St, 946 St, 947 St, 948 St, 949 St, 950 St, 951 St, 952 St, 953 St, 954 St, 955 St, 956 St, 957 St, 958 St, 959 St, 960 St, 961 St, 962 St, 963 St, 964 St, 965 St, 966 St, 967 St, 968 St, 969 St, 970 St, 971 St, 972 St, 973 St, 974 St, 975 St, 976 St, 977 St, 978 St, 979 St, 980 St, 981 St, 982 St, 983 St, 984 St, 985 St, 986 St, 987 St, 988 St, 989 St, 990 St, 991 St, 992 St, 993 St, 994 St, 995 St, 996 St, 997 St, 998 St, 999 St, 1000 St.
+[p005_c0004] 47 NYCT, MTA Bus and LI Bus routes – hub for services throughout SE Queens
+[p005_c0005] E F J Z subway service
+[p005_c0006] Very high volume of bus to subway transfers
+[p005_c0007] _NEW YORK CITY DOT_
+
+## Page 6
+
+### [p006_c0001] Jamaica Bus Improvement Study
+### [p006_c0002] Study Goals
+> [p006_c0003] A photograph of a bus stop at a subway station. The stop is covered by a red metal structure. A blue sign above the stop reads 'F Q84'. Several people are waiting under the shelter. In the foreground, there are three yellow and grey bollards. A white bus with a blue stripe is partially visible on the right. In the background, there are other vehicles and a sign that says 'AUTO BUS COLLISION'.
+[p006_c0004] Improve bus travel to/from Jamaica
+[p006_c0005] Improve connections to subway and rail stations
+[p006_c0006] Balance bus travel with pedestrian and vehicle traffic
+[p006_c0007] _NEW YORK CITY DOT_
+
+## Page 7
+
+### [p007_c0001] Jamaica Bus Improvement Study
+### [p007_c0002] Field Observations
+[p007_c0003] What we learned:
+[p007_c0004] Many narrow streets with heavy bus and local traffic
+[p007_c0005] Many misaligned intersections and complex street geometry
+[p007_c0006] Existing bus lane markings are difficult to see and in poor condition
+> [p007_c0007] An aerial photograph of a city intersection in Jamaica, Queens. The image shows a complex network of streets, including Archer Avenue and Surpin Boulevard. The streets are narrow, and the intersections are misaligned, creating a complex geometry. The surrounding area is densely packed with buildings, and there are some trees visible. The image is oriented with a north arrow in the top right corner.
+[p007_c0008] _NEW YORK CITY DOT_
+[p007_c0009] _7_
+
+## Page 8
+
+### [p008_c0001] Jamaica Bus Improvement Study
+### [p008_c0002] Field Observations
+[p008_c0003] What we learned:
+[p008_c0004] Many narrow streets with heavy bus and local traffic
+[p008_c0005] Many misaligned intersections and complex street geometry
+[p008_c0006] Existing bus lane markings are difficult to see and in poor condition
+[p008_c0007] _NEW YORK CITY DOT_
+[p008_c0008] _8_
+
+## Page 9
+
+### [p009_c0001] Jamaica Bus Improvement Study
+### [p009_c0002] Field Observations
+[p009_c0003] What we learned:
+[p009_c0004] Bus stop patterns cause excess weaving, congestion
+[p009_c0005] Layover locations misplaced or inadequate, causing spillover into other areas
+> [p009_c0006] A photograph of a city street scene. In the foreground, a sidewalk with a mailbox is visible. A white truck with 'TW' on its side is parked on the street. Several people are walking on the sidewalk, including a child. In the background, there are buildings, including a brick building on the left and a storefront on the right. The sky is overcast.
+[p009_c0007] _NEW YORK CITY DOIT_
+[p009_c0008] _9_
+
+## Page 10
+
+### [p010_c0001] Jamaica Bus Improvement Study
+### [p010_c0002] Community Advisory Committee Meeting #1
+[p010_c0003] What we learned:
+[p010_c0004] Bus Operations Issues
+[p010_c0005] Undesirable layover locations
+[p010_c0006] Number of stop and routes
+[p010_c0007] Passenger amenities
+[p010_c0008] Traffic Concerns
+[p010_c0009] Turn movements add to congestion
+[p010_c0010] Traffic diversions to side streets
+[p010_c0011] Improve Signage and Lane Markings
+[p010_c0012] Enforcement
+[p010_c0013] Safety and Quality of Life
+> [p010_c0014] A photograph of a New York City bus stop. In the foreground, there are several people walking on the sidewalk. In the background, there are several buses, including a white bus with 'Affinity' written on it. The scene is set in an urban area with buildings and streetlights. Overlaid on the bottom right of the image is a graphic with the text: NEW YORK CITY DOT, Jamaica Bus Improvement Study, Community Advisory Committee Meeting #1, September 29, 2009, Jamaica Control Center, Fifth Floor Conference Room.
+[p010_c0015] _The logo for the New York City Department of Transportation (NYC DOT), featuring the words 'NEW YORK CITY' above a stylized 'DOT' with three horizontal green bars._
+[p010_c0016] _10_
+
+## Page 11
+
+### [p011_c0001] Jamaica Bus Improvement Study
+### [p011_c0002] Study Process
+- [p011_c0003] ✓ Data Collection & Bus Passenger Survey ✓ Initial Community Input ✓ Existing Conditions Evaluation ✓ Bus Use Forecasting and Issues ID ✓ Develop Preliminary Recommendations Evaluate Preliminary Recommendations Community Input and Review Implement Desired Recommendations
+> [p011_c0004] A woman wearing a black beanie, glasses, a tan coat, and a bright orange high-visibility safety vest is engaged in conversation with a man in a dark jacket. They are standing at a bus stop. In the background, a blue bus with the text 'JOHN F. KENNEDY' is visible, along with other people and a building entrance.
+[p011_c0005] _NEW YORK CITY DOT_
+[p011_c0006] _11_
+
+## Page 12
+
+### [p012_c0001] Jamaica Bus Improvement Study
+### [p012_c0002] Study Recommendations
+[p012_c0003] Improved bus lanes
+[p012_c0004] Relocate bus stops/layover areas
+[p012_c0005] Realign intersections
+[p012_c0006] Jamaica/168th St
+[p012_c0007] Hillside/Home Lawn/169th
+[p012_c0008] Dedicated Livery/Commuter Van areas
+[p012_c0009] Revise curb regulations
+[p012_c0010] Relocate placard parking
+[p012_c0011] Potential delivery windows
+[p012_c0012] Add bus shelters where possible
+[p012_c0013] _NEW YORK CITY DOIT_
+[p012_c0014] _12_
+
+## Page 13
+
+### [p013_c0001] Jamaica Bus Improvement Study
+### [p013_c0002] Study Recommendations
+> [p013_c0003] The map illustrates the Jamaica Bus Improvement Study area, bounded by Hillside Av to the north and Liberty Av to the south. It features a grid of streets including Jamaica Av, Archer Av, Union Hall St, Guy Brewer Blvd, Merrick Blvd, and Liberty Av. Seven bus routes are highlighted in red: Route 1 runs along Archer Av; Route 2 runs along Union Hall St; Route 3 runs along Guy Brewer Blvd; Route 4 runs along Jamaica Av; Route 5 runs along Merrick Blvd; Route 6 runs along Merrick Blvd; and Route 7 runs along Merrick Blvd. A yellow rectangle marks the 160th St Bus Terminal. Other landmarks include the Jamaica Center and the Archer Av Teardrop & Layover Area. Numerous street names and addresses are labeled throughout the map, such as Hillside Av, Jamaica Av, Archer Av, Union Hall St, Guy Brewer Blvd, Merrick Blvd, Liberty Av, and South Rd. A dashed line indicates the study area boundary.
+[p013_c0004] _NEW YORK CITY DOE_
+[p013_c0005] _13_
+
+## Page 14
+
+### [p014_c0001] Jamaica Bus Improvement Study
+### [p014_c0002] Proposed Bus Lanes
+> [p014_c0003] The map displays the proposed bus lane improvements in Jamaica. The study area is bounded by Hillside Av to the north and Liberty Av to the south. The map shows a grid of streets including Sutphin Blvd, Parsons Blvd, Merrick Blvd, Jamaica Av, Archer Av, and Douglas Av. The existing bus lane is highlighted in blue, and the recommended bus lane addition is highlighted in green. The recommended bus lane removal is highlighted in red. The map also shows the location of the 165th St Bus Terminal and the Archer Av Teardrop & Layover Area. Legend: Study Area (dashed line) Existing/improved bus lane (blue) Recommended bus lane addition (green) Recommended bus lane removal (red) Existing Bus Lane 1.6 miles Proposed Bus Lane 1.4 miles Proposed Bus Lane Removal 0.1 miles New Total 2.9 miles
+[p014_c0004] _NEW YORK CITY DOT_
+
+## Page 15
+
+### [p015_c0001] Jamaica Bus Improvement Study
+### [p015_c0002] Proposed Bus Lanes
+> [p015_c0003] The map displays the proposed bus lane improvements in the Jamaica area. The study area is bounded by Hillside Av to the north and Liberty Av to the south. The map shows a grid of streets including Sutphin Blvd, Parsons Blvd, Merrick Blvd, Jamaica Av, Archer Av, and Douglas Av. Proposed bus lanes are indicated by colored lines: blue for existing/improved lanes, green for recommended additions, and red for recommended removals. A yellow rectangle marks the 165th St Bus Terminal. Other landmarks include the Archer Av Teardrop & Layover Area and the Jamaica Center. The map also shows street numbers and mile markers. Legend: Study Area (dashed line) Existing/improved bus lane (blue line) Recommended bus lane addition (green line) Recommended bus lane removal (red line) Combination of offset and curbside bus lanes, improved with red lanes and overhead signage Bus lane hours to be determined Midday loading windows will be implemented where needed
+[p015_c0004] _NEW YORK CITY DOT_
+
+## Page 16
+
+### [p016_c0001] Jamaica Bus Improvement Study
+### [p016_c0002] Archer Avenue - Existing Conditions
+[p016_c0003] Busiest local bus corridor in NYC (up to 180 buses/hr per direction)
+[p016_c0004] Inadequate bus lane markings/signage for bus volumes
+[p016_c0005] _NEW YORK CITY DOT_
+[p016_c0006] _16_
+
+## Page 17
+
+### [p017_c0001] Jamaica Bus Improvement Study
+### [p017_c0002] Archer Avenue Improved Bus Lanes
+[p017_c0003] Existing Lanes: 150 th to 160 th Streets
+> [p017_c0004] An aerial photograph of the Archer Avenue area in Jamaica, Queens. The image shows the intersection of Archer Avenue with several streets: 150th Street, 151st Street, 153rd Street, 158th Street, and Parsons Blvd. Red markings are overlaid on the image, indicating the proposed bus lane improvements. The markings include solid red lines for the bus lanes and red squares at the intersections. A north arrow is located in the bottom right corner of the image.
+[p017_c0005] Improve bus lane signs and install terra-cotta red bus lane markings to enhance compliance
+[p017_c0006] Maintain existing 24-hour bus lane operations
+[p017_c0007] _NEW YORK CITY DOIT_
+[p017_c0008] _17_
+
+## Page 18
+
+### [p018_c0001] Jamaica Bus Improvement Study
+### [p018_c0002] Archer Av Eastbound Bus Lanes
+[p018_c0003] West Extension: Sutphin Boulevard to 150 th Street
+> [p018_c0004] An aerial photograph of an urban area in Jamaica, Queens, showing Archer Avenue. A thick red line is overlaid on the map, indicating the proposed eastbound bus lanes. The map includes labels for 'SUTPHIN BLVD' on the left, '147 PL' and '148 ST' on the right, and a north arrow in the bottom right corner. Several red squares are placed along the red line, likely indicating specific locations of interest or proposed changes.
+[p018_c0005] Benefits predominant direction of bus travel May require some curb parking/delivery restrictions
+[p018_c0006] _NEW YORK CITY DOT_
+[p018_c0007] _18_
+
+## Page 19
+
+### [p019_c0001] Jamaica Bus Improvement Study
+### [p019_c0002] Archer Av Eastbound Bus Lanes
+[p019_c0003] East Extension: 160 th Street to Merrick Boulevard
+> [p019_c0004] An aerial photograph of an urban intersection area. The image shows the intersection of 160th Street, Union Hall Street, Guy R. Brewer Boulevard, and Parsons Boulevard. The proposed bus lane reconfiguration is highlighted in red, showing two eastbound lanes and one westbound lane. A north arrow is located in the bottom right corner.
+[p019_c0005] Lane use reconfiguration (160 th St to Guy R. Brewer Blvd) - 2 eastbound lanes, 1 westbound lane
+[p019_c0006] _NEW YORK CITY DOT_
+[p019_c0007] _19_
+
+## Page 20
+
+### [p020_c0001] Jamaica Bus Improvement Study
+### [p020_c0002] Archer Avenue Bus Lane Benefits
+[p020_c0003] Benefits 1,100 to 1,300 buses per direction daily
+[p020_c0004] Faster, more reliable bus service
+[p020_c0005] Improves eastbound congestion issues
+> [p020_c0006] An aerial photograph of a city street intersection. The street is labeled 'ARCHER AVENUE' in large letters. To the left, a street is labeled 'PARSONS BLVD'. To the right, a street is labeled 'GUY R BREWER BLVD'. In the center, a street is labeled '160 ST'. Further right, a street is labeled 'UNION HALL ST'. The Archer Avenue bus lane is highlighted in red, indicating the new bus lane. The image also shows the surrounding buildings and the train tracks below the street. A north arrow is located in the bottom right corner.
+[p020_c0007] _NEW YORK CITY DOT_
+[p020_c0008] _20_
+
+## Page 21
+
+### [p021_c0001] Jamaica Bus Improvement Study
+### [p021_c0002] Jamaica Avenue - Existing Conditions
+[p021_c0003] Up to 90 buses/hr per direction
+[p021_c0004] Congestion delays due to: pedestrians turning vehicles deliveries
+> [p021_c0005] A photograph of a city street, identified as Jamaica Avenue. The street is paved with asphalt and has a designated bus lane marked with white lines and the words 'BUS ONLY' painted on the pavement. The lane is occupied by a white bus. To the right of the bus lane, there is a car lane with a dark-colored SUV and a red car. The street is lined with various shops and buildings, including one with a sign for 'ASPLE STEWART'. Pedestrians are visible on the sidewalks. In the background, there are more buildings and a billboard that says 'Add the world... metro'. The sky is overcast.
+[p021_c0006] _NEW YORK CITY DOT_
+[p021_c0007] _21_
+
+## Page 22
+
+### [p022_c0001] Jamaica Bus Improvement Study
+### [p022_c0002] Jamaica Avenue Improved Bus Lanes
+[p022_c0003] Existing Lanes: Parsons Blvd to 168 th St
+> [p022_c0004] An aerial photograph of Jamaica Avenue in New York City, showing the proposed improvements to bus lanes. The map highlights several bus lanes in red, indicating they will be offset from the curb. The street is labeled with various cross streets: 161 St, 162 St, 163 St, 164 St, Union Hall St, and Guy R. Brewer Blvd. White arrows on the street indicate the direction of traffic. A north arrow is located in the bottom right corner of the image.
+[p022_c0005] Offset bus lanes, expanded hours of operation, & turn restrictions
+[p022_c0006] _NEW YORK CITY DOT_
+[p022_c0007] _22_
+
+## Page 23
+
+### [p023_c0001] Jamaica Bus Improvement Study
+### [p023_c0002] Jamaica Avenue Improved Bus Lanes
+> [p023_c0003] An aerial photograph of Jamaica Avenue in New York City, showing a street with a dedicated bus lane. The bus lane is marked with a red pavement and white dashed lines. Several white New York City bus are visible on the street, along with a dark-colored car. The street is lined with buildings and storefronts, including a 'Cookie's' store and a 'Beauty Supply' shop. A red date stamp 'JULY 2010' is visible on the left side of the image.
+[p023_c0004] _NEW YORK CITY DOT_
+[p023_c0005] _23_
+
+## Page 24
+
+### [p024_c0001] Jamaica Bus Improvement Study
+### [p024_c0002] Jamaica Avenue Bus Lanes
+[p024_c0003] West Extension: Parsons Blvd to Sutphin Blvd
+> [p024_c0004] An aerial photograph of Jamaica Avenue in New York City, showing the proposed bus lane extension from Parsons Blvd to Sutphin Blvd. The map highlights the proposed bus lane in red, indicating the primary direction of bus travel. The map includes street names: 149 ST, 150 ST, 151 ST, and 153 ST. A north arrow is located in the bottom right corner.
+[p024_c0005] Curbside bus lane would benefit primary direction of bus travel May require some curb parking/delivery restrictions
+[p024_c0006] _NEW YORK CITY DOT_
+[p024_c0007] _24_
+
+## Page 25
+
+### [p025_c0001] Jamaica Bus Improvement Study
+### [p025_c0002] Jamaica Avenue Bus Lanes
+[p025_c0003] Benefits 600 to 750 buses per direction daily
+[p025_c0004] Faster, more reliable bus service
+[p025_c0005] Provides access to curb near offset bus lanes
+[p025_c0006] Reduces congestion by removing bus from general traffic
+[p025_c0007] _The logo for the New York City Department of Transportation (NYC DOT) is located in the bottom left corner. It features the text "NEW YORK CITY" above the letters "DOT", which are stylized with horizontal lines._
+[p025_c0008] _25_
+
+## Page 26
+
+### [p026_c0001] Jamaica Bus Improvement Study
+### [p026_c0002] Merrick Boulevard Bus Lane
+[p026_c0003] Hillside Avenue to Archer Avenue
+> [p026_c0004] An aerial photograph of the Merrick Boulevard area in Jamaica, Queens. A thick red line is drawn across Merrick Blvd, indicating a proposed 24-hour bus lane. The bus terminal is located to the left of Merrick Blvd. Surrounding streets are labeled: 90 AV, 89 AV, 88 AV, MERRICK BLVD, and HILLSIDE AV. A north arrow is in the bottom right corner.
+[p026_c0005] High-visibility, 24-hour bus lane would improve access to the 165 th Street Bus Terminal
+[p026_c0006] Offset bus lane would allow for bus layover north of 89 th Avenue
+[p026_c0007] _NEW YORK CITY DOT_
+[p026_c0008] _26_
+
+## Page 27
+
+### [p027_c0001] Jamaica Bus Improvement Study
+### [p027_c0002] 165 th Street Bus Lane
+[p027_c0003] Hillside Avenue to 89 th Avenue
+> [p027_c0004] An aerial photograph of 165th Street in Jamaica, Queens, showing a proposed bus lane. The street is highlighted with a red line. A yellow arrow points to a 'Parking lane' on the left side. Another yellow arrow points to a 'Parking lane & bus stops' on the right side, indicated by three red squares. The street is flanked by buildings and parking lots. Labels '89 AV', '88 AV', and 'HILLSIDE AV' are visible. A north arrow is in the bottom right corner.
+[p027_c0005] Prioritizes bus movements exiting from 165 th Street Bus Terminal
+[p027_c0006] _NEW YORK CITY DOT_
+[p027_c0007] _27_
+
+## Page 28
+
+### [p028_c0001] Jamaica Bus Improvement Study
+### [p028_c0002] Bus Stop Re-Configurations
+### [p028_c0003] Existing Conditions
+> [p028_c0004] A photograph showing a bus stop at a street intersection. A white and blue bus is stopped at the curb. A silver car is in the foreground. The street is paved with white markings. In the background, there are brick buildings and a traffic light.
+[p028_c0005] Bus stop configuration leads to turning conflicts
+> [p028_c0006] An aerial map of the bus stop area. The map shows the intersection of Hillside Av and Suthin Blvd. A bus stop is marked with a red rectangle. A yellow rectangle is labeled 'Q20A/Q20B/Q44' and a blue rectangle is labeled 'Q43'. A white arrow points from the photograph to the bus stop. A red line with arrows indicates distances: 120 FT from the bus stop to the truck loading area, 60 FT from the truck loading area to the 1-hour parking area, and 90 FT from the 1-hour parking area to the bus stop. A legend at the bottom left shows the color coding for the bus stop (red), the bus routes (yellow and blue), and the bus stop (red). LEGEND Q20A/Q20B/Q44 Q43 BUS STOP HILLSIDE AV SUTHIN BLVD Q20A/Q20B/Q43/Q44 Bus Stop 120 FT Truck Loading 60 FT 90 FT 1-Hour Parking
+[p028_c0007] _NEW YORK CITY DOT_
+[p028_c0008] _28_
+
+## Page 29
+
+### [p029_c0001] Jamaica Bus Improvement Study
+### [p029_c0002] Bus Stop Re-Configurations
+### [p029_c0003] Recommendation
+[p029_c0004] Lengthen, separate, & reverse bus stop locations
+> [p029_c0005] An aerial photograph of an urban intersection. A white arrow points from a text box on the left to a specific area on the map. The map shows two main streets: Hillside Ave running horizontally and Sutphin Blvd running vertically. Two bus stops are highlighted with red rectangles. The first stop, labeled 'Q43 Bus Stop', is on Hillside Ave. The second stop, labeled 'Q20A/Q20B/Q44 Bus Stop', is on Sutphin Blvd. Yellow and blue arrows indicate the proposed re-configuration of these stops. A legend in the bottom left corner of the map area defines the colors: yellow for 'Q20A/Q20B/Q44', blue for 'Q43', and red for 'BUS STOP'. Red arrows with '90 FT' labels indicate the length of the proposed bus stop locations. A red rectangle on Sutphin Blvd is labeled '1-Hour Parking'. LEGEND Q20A/Q20B/Q44 Q43 BUS STOP 90 FT 90 FT 90 FT 1-Hour Parking HILLSIDE AV SUTPHIN BLVD Q43 Bus Stop Q20A/Q20B/Q44 Bus Stop
+[p029_c0006] _NEW YORK CITY DOT_
+[p029_c0007] _29_
+
+## Page 30
+
+### [p030_c0001] Jamaica Bus Improvement Study
+### [p030_c0002] Parking Regulation Changes
+### [p030_c0003] Proposed
+> [p030_c0004] Implement "NO STANDING ANYTIME EXCEPT TRUCKS LOADING AND UNLOADING 8AM-6PM M-F" Additional Truck Loading Zone Extend Existing Bus Layover Area to include 40' regulated as "NO STANDING ANYTIME" 146 ST 91 AVE JAMAICA AVE ARCHER AVE
+[p030_c0005] Legalize existing daytime truck loading
+[p030_c0006] Provide additional truck loading space
+[p030_c0007] Eliminate conflicts with bus layover area
+[p030_c0008] _NEW YORK CITY DOT_
+[p030_c0009] _30_
+
+## Page 31
+
+### [p031_c0001] Jamaica Bus Improvement Study
+### [p031_c0002] Hillside Ave & Home Lawn St/169 th St
+### [p031_c0003] Issues
+> [p031_c0004] Buses must merge onto 169 th Street Vehicles back out into traffic 169 th Street Home Lawn Street Hillside Avenue Google ©2019 This aerial photograph shows the intersection of Hillside Avenue, 169th Street, and Home Lawn Street. Two white callout boxes with arrows point to specific areas of the intersection. The first box, labeled 'Buses must merge onto 169th Street', points to the area where 169th Street meets Home Lawn Street. The second box, labeled 'Vehicles back out into traffic', points to a parking lot area where vehicles are seen exiting into the street. The image includes a Google logo and a copyright notice for 2019 in the bottom right corner.
+[p031_c0005] _NEW YORK CITY DOT_
+[p031_c0006] _31_
+
+## Page 32
+
+### [p032_c0001] Jamaica Bus Improvement Study
+### [p032_c0002] Hillside Ave & Home Lawn St/169 th St
+[p032_c0003] Opportunity
+> [p032_c0004] The image is an aerial map of the Hillside Ave & Home Lawn St/169th St intersection. The map is overlaid with design annotations. A central area is highlighted in purple and labeled 'RED PLAZA'. To the left of the plaza, a red rectangular area is labeled 'BOLLARDS'. Yellow arrows indicate traffic flow on Hillside Ave and Home Lawn St. A white arrow points from the text 'Home Lawn St becomes primary north/south roadway' to the Home Lawn St street. Another white arrow points from the text 'Provision for more pedestrian space' to the Red Plaza area. A label 'MOUNTABLE CURB FOR EMERGENCY VEHICLES TURN AROUND' points to a curved curb on the right side of the map. A 'PARKING' area is also indicated. The map includes a north arrow in the top left and a Google logo in the bottom right. Home Lawn St becomes primary north/south roadway Provision for more pedestrian space RED PLAZA BOLLARDS MOUNTABLE CURB FOR EMERGENCY VEHICLES TURN AROUND PARKING HOME LAWN ST 169 th ST HILLSIDE AVE Google
+[p032_c0005] _NEW YORK CITY DOT_
+[p032_c0006] _32_
+
+## Page 33
+
+### [p033_c0001] Jamaica Bus Improvement Study
+### [p033_c0002] Next Steps
+[p033_c0003] Obtain feedback
+[p033_c0004] Refine bus lane design and hours
+[p033_c0005] Additional community consultation
+[p033_c0006] Implementation of improvements
+[p033_c0007] _The logo for the New York City Department of Transportation (NYC DOT) is located in the bottom left corner. It features the text "NEW YORK CITY" above the letters "DOT", which are stylized with horizontal lines._
+[p033_c0008] _33_

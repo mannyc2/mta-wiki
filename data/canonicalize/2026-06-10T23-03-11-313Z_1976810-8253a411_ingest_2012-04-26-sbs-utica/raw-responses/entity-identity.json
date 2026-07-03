@@ -1,0 +1,119 @@
+{
+  "run_id": "2026-06-10T23-03-11-313Z_1976810-8253a411_ingest_2012-04-26-sbs-utica",
+  "packet_id": "entity-identity",
+  "generated_at": "2026-06-11T02:38:24.713Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "entity-identity",
+    "decisions": [
+      {
+        "decision_id": "d1",
+        "local_observation_id": "entity_nyc_dot_2012_04_26_utica",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-dot already matches existing registry record entity_nyc-dot. The observation already resolves to this record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p001_c0001",
+            "source_quote": "The logo for the New York City Department of Transportation (NYC DOT)"
+          }
+        ]
+      },
+      {
+        "decision_id": "d2",
+        "local_observation_id": "entity_yvette_clarke_2012_04_26",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_yvette-clarke-2012-04-26 already matches existing registry record entity_yvette-clarke-2012-04-26. The observation already resolves to this record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p022_c0003",
+            "source_quote": "Presented concept to Community Board 9, 17 & Congresswoman Yvette Clarke"
+          }
+        ]
+      },
+      {
+        "decision_id": "d3",
+        "local_observation_id": "entity_nyc_ddc_2012_04_26",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nyc-ddc already matches existing registry record entity_nyc-ddc. The observation already resolves to this record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p026_c0006",
+            "source_quote": "Department of Design and Construction (DDC) conducting design work"
+          }
+        ]
+      },
+      {
+        "decision_id": "d4",
+        "local_observation_id": "entity_usdot_2012_04_26",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_usdot-2012-04-26 already matches existing registry record entity_usdot-2012-04-26. The observation already resolves to this record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p022_c0003",
+            "source_quote": "Presented to USDOT and NYSDOT"
+          }
+        ]
+      },
+      {
+        "decision_id": "d5",
+        "local_observation_id": "entity_nysdot_2012_04_26",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_nysdot-2012-04-26 already matches existing registry record entity_nysdot-2012-04-26. The observation already resolves to this record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p022_c0003",
+            "source_quote": "Presented to USDOT and NYSDOT"
+          }
+        ]
+      },
+      {
+        "decision_id": "d6",
+        "local_observation_id": "entity_community_board_17_brooklyn_2012_04_26",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_community-board-17-brooklyn-2012-04-26 already matches existing registry record entity_community-board-17-brooklyn-2012-04-26. The observation already resolves to this record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p022_c0003",
+            "source_quote": "Presented concept to Community Board 9, 17 & Congresswoman Yvette Clarke"
+          }
+        ]
+      },
+      {
+        "decision_id": "d7",
+        "local_observation_id": "entity_community_board_9_brooklyn_2012_04_26",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_community-board-9-brooklyn-2012-04-26 already matches existing registry record entity_community-board-9-brooklyn-2012-04-26. The observation already resolves to this record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p022_c0003",
+            "source_quote": "Presented concept to Community Board 9, 17 & Congresswoman Yvette Clarke"
+          }
+        ]
+      },
+      {
+        "decision_id": "d8",
+        "local_observation_id": "entity_major_owens_2012_04_26",
+        "decision": "new",
+        "rationale": "Observation base_record_id entity_major-owens-2012-04-26 already matches existing registry record entity_major-owens-2012-04-26. The observation already resolves to this record.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_04_26_sbs_utica",
+            "block_id": "p022_c0003",
+            "source_quote": "2006 – Major Owens allocates $5 .1 million earmark for \"Reconstruction of Empire Boulevard\""
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T02-36-18-317Z_2111393-2c61e18a_canonicalize_2026-06-10t23-03-11-313z-1976810-8253a411-ingest-2012-04-26-sbs-utica-entity-identity"
+}

@@ -1,0 +1,124 @@
+{
+  "batch_id": "identity138",
+  "prepared_count": 7,
+  "proposed_aliases": [
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_nostrand-av",
+      "target_id": "corridor_nostrand-avenue",
+      "confidence": "high",
+      "reason": "Both records describe the Brooklyn Nostrand Avenue corridor. The alias is an abbreviated spelling from the Brooklyn bus network draft plan, while the target is the fuller Nostrand Avenue corridor record and already carries Nostrand Ave aliases and source-backed B44/Nostrand corridor evidence.",
+      "evidence_refs": [
+        "brooklyn_bus_network_draft_plan_without_route_profiles#p020_c0004",
+        "b44_sbs_progress_report_2016#p005_c0003",
+        "b44_sbs_progress_report_2016#p008_c0003"
+      ],
+      "guard_notes": "Corridor guard satisfied: same street name after Avenue/Av normalization, same Brooklyn corridor identity, no route/SBS/local service variant merge. Pair is absent from corridor merges and corridor do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_morningside-av-113th-114th-cb9-jun2025",
+      "target_id": "corridor_morningside-av-cb9-feb2025",
+      "confidence": "high",
+      "reason": "Both records describe the same Morningside Avenue corridor segment in Manhattan between 113th Street and 114th Street. The June 2025 record uses a dated source-specific id, while the February 2025 target is the same CB9 study-area corridor with identical limits.",
+      "evidence_refs": [
+        "116_st_morningside_ave_pleasant_ave_cb9_jun2025#p017_c0002",
+        "116_st_morningside_ave_pleasant_ave_cb9_feb2025#p004_c0002"
+      ],
+      "guard_notes": "Corridor guard satisfied: same borough, same street, and identical 113th-to-114th Street limits. Pair is absent from corridor merges and corridor do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_bus-fwd-2-flatbush-av-sbs",
+      "target_id": "corridor_flatbush-avenue",
+      "confidence": "high",
+      "reason": "Both records identify Flatbush Avenue in Brooklyn as the corridor. The alias is the Bus Forward 2 SBS-candidate label for Flatbush Av, while the target is the fuller Flatbush Avenue corridor record with Brooklyn bus-priority evidence and aliases for Flatbush Av/Avenue.",
+      "evidence_refs": [
+        "bus_forward_2#p005_c0001",
+        "better_buses#p001_b0001",
+        "brooklyn_bus_network_draft_plan_without_route_profiles#p020_c0004",
+        "flatbush_ave_bus_priority_sept2025#p019_c0002"
+      ],
+      "guard_notes": "Corridor guard satisfied: same named Brooklyn street corridor; this merges corridor identity only, not any local/SBS route variant. Pair is absent from corridor merges and corridor do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_bus-fwd-2-hillside-av-sbs",
+      "target_id": "corridor_hillside-ave-queens",
+      "confidence": "high",
+      "reason": "Both records describe the Hillside Avenue corridor in Queens. The alias is a Bus Forward 2 SBS-candidate label, while the target is a Queens Hillside Avenue bus-lane corridor record with street and borough evidence.",
+      "evidence_refs": [
+        "bus_forward_2#p005_c0001",
+        "streets_plan_update_2026#p002_c0006",
+        "201104_jamaica_cac2_slides#p031_c0002",
+        "201104_jamaica_cac2_slides#p032_c0004"
+      ],
+      "guard_notes": "Corridor guard satisfied: same named Queens street corridor; this does not merge route/service variants. Pair is absent from corridor merges and corridor do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_bus-fwd-2-university-av-bronx-sbs",
+      "target_id": "corridor_university-ave",
+      "confidence": "high",
+      "reason": "Both records identify University Avenue in the Bronx as the corridor. The alias is the Bus Forward 2 SBS-candidate label, while the target is the established University Avenue corridor record with Bronx source evidence and corridor aliases.",
+      "evidence_refs": [
+        "bus_forward_2#p005_c0001",
+        "bronx_bus_network_final_plan_2019#p031_c0004",
+        "bronx_bus_network_final_plan_addendum_2021#p005_c0003",
+        "bx_cb5_projects_dec032019#p013_c0001"
+      ],
+      "guard_notes": "Corridor guard satisfied: same named Bronx street corridor; this merges corridor identity only and does not assert an SBS/local route identity. Pair is absent from corridor merges and corridor do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_bus-fwd-2-tremont-av-bronx-sbs",
+      "target_id": "corridor_tremont-ave",
+      "confidence": "high",
+      "reason": "Both records identify Tremont Avenue in the Bronx as the corridor. The alias is a Bus Forward 2 SBS-candidate label, while the target is the established Tremont Avenue corridor record with Bronx busway/bus-priority evidence and Tremont Av aliases.",
+      "evidence_refs": [
+        "bus_forward_2#p005_c0001",
+        "bronx_bus_network_final_plan_2019#p032_c0004",
+        "bronx_bus_network_final_plan_addendum_2021#p005_c0003",
+        "better_buses#p001_b0001",
+        "busways#p001_b0001"
+      ],
+      "guard_notes": "Corridor guard satisfied: same named Bronx street corridor; this merges corridor identity only and does not merge route/service variants. Pair is absent from corridor merges and corridor do-not-merge. Durable merge direction is alias_id -> target_id."
+    },
+    {
+      "global_kind": "corridor",
+      "alias_id": "corridor_pa-ave-flatlands-to-seaview",
+      "target_id": "corridor_pennsylvania-ave-brooklyn-b82",
+      "confidence": "high",
+      "reason": "Both records describe the Pennsylvania Avenue Brooklyn B82 corridor. The alias gives explicit Flatlands Avenue to Seaview Avenue limits from B82 South Brooklyn material, and the target is the Pennsylvania Avenue Brooklyn B82 corridor shown in the February 2018 B82 SBS source.",
+      "evidence_refs": [
+        "brt_south_brooklyn_b82_dec2017#p022_c0006",
+        "brt_south_brooklyn_b82_dec2017#p023_c0002",
+        "brt_south_brooklyn_b82#p020_c0001",
+        "brt_south_brooklyn_b82#p020_c0002",
+        "brt_south_brooklyn_b82_feb2018#p011_c0002"
+      ],
+      "guard_notes": "Corridor guard satisfied: same street, borough, and B82 corridor context; this does not merge a route variant. Pair is absent from corridor merges and corridor do-not-merge. Durable merge direction is alias_id -> target_id."
+    }
+  ],
+  "commands_run": [
+    "pwd && rg --files | rg '(^data/review_notes/|merges\\.json$|do-not|identity|canonical|wiki/)' | head -200",
+    "ls -la data/review_notes && find data -maxdepth 3 -iname '*merge*' -o -iname '*identity*' -o -iname '*do*not*'",
+    "git status --short",
+    "jq inspection of data/identity-overrides/merges.json",
+    "jq inspection of data/identity-overrides/do-not-merge.json; one read-only shape probe failed because pairs is keyed by kind, then corrected with Node",
+    "jq inspection of data/review_notes/codex-identity-batch135-prep.json",
+    "head -3 data/canonical/routes.jsonl && head -3 data/canonical/corridors.jsonl",
+    "node read-only duplicate-name grouping over data/canonical/routes.jsonl and data/canonical/corridors.jsonl",
+    "node read-only prior-prep scan over data/review_notes/codex-identity-batch*-prep.json",
+    "node read-only selected corridor record summary from data/canonical/corridors.jsonl",
+    "node read-only final collision check against data/identity-overrides/merges.json, data/identity-overrides/do-not-merge.json, and prior prep files"
+  ],
+  "commands_not_run": [
+    "no provider-backed commands or agent harness commands",
+    "no canonicalize*, campaign dedup, identity-review, write, ask, schema, ontology-normalize, or --profile/provider commands",
+    "no materialize",
+    "no export-jsonl",
+    "no full validate",
+    "no edits to canonical JSONL, wiki pages, DB, LOG.md, manifest, retired submissions, submissions, or merges.json"
+  ]
+}

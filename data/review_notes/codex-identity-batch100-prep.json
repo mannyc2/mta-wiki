@@ -1,0 +1,424 @@
+{
+  "batch_id": "codex-identity-batch100",
+  "created_at": "2026-06-23T04:09:12Z",
+  "prepared_count": 10,
+  "all_pass": true,
+  "scope": {
+    "allowed_kinds": [
+      "entity"
+    ],
+    "prepared_kinds": [
+      "entity"
+    ],
+    "excluded_non_global_kinds": true,
+    "notes": "ENTITY ONLY. No project, corridor, route, or treatment_component aliases are included."
+  },
+  "expected_delta": {
+    "duplicate_global_identity": -10
+  },
+  "proposed_aliases": [
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-129051-mtahq",
+      "target_id": "entity_meeting-doc-143306-mta-hq",
+      "reason": "Both records represent the same global MTA Headquarters entity. The alias has display_name \"MTA Headquarters (MTAHQ)\", entity_name \"MTA Headquarters\", acronym \"MTAHQ\", and office/agency context; the target has display_name and entity_name \"MTA Headquarters\". The acronym variant is not a distinct organization.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Headquarters (MTAHQ)",
+          "entity_name": "MTA Headquarters",
+          "entity_type": "office",
+          "acronym": "MTAHQ",
+          "primary_source_id": "meeting_doc_129051"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Headquarters",
+          "entity_name": "MTA Headquarters",
+          "entity_type": "agency",
+          "acronym": "MTA",
+          "primary_source_id": "meeting_doc_143306"
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-129051-mtahq",
+          "source_id": "meeting_doc_129051",
+          "page_number": 1,
+          "block_id": "p001_c0003"
+        },
+        {
+          "record_id": "entity_meeting-doc-143306-mta-hq",
+          "source_id": "meeting_doc_143306",
+          "page_number": 4,
+          "block_id": "p004_c0010"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-192306-mta-headquarters",
+      "target_id": "entity_meeting-doc-143306-mta-hq",
+      "reason": "Both records have display_name and entity_name \"MTA Headquarters\" and record_kind entity. The source difference is only the meeting document where the same headquarters organization was mentioned.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Headquarters",
+          "entity_name": "MTA Headquarters",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_192306"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Headquarters",
+          "entity_name": "MTA Headquarters",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_143306"
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-192306-mta-headquarters",
+          "source_id": "meeting_doc_192306",
+          "page_number": 11,
+          "block_id": "p011_c0003"
+        },
+        {
+          "record_id": "entity_meeting-doc-143306-mta-hq",
+          "source_id": "meeting_doc_143306",
+          "page_number": 4,
+          "block_id": "p004_c0010"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-199136-headquarters",
+      "target_id": "entity_meeting-doc-143306-mta-hq",
+      "reason": "Both records have record_kind entity, display_name \"MTA Headquarters\", entity_name \"MTA Headquarters\", and agency context. This is the same global MTA Headquarters organization, not a source-specific entity.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Headquarters",
+          "entity_name": "MTA Headquarters",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_199136"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Headquarters",
+          "entity_name": "MTA Headquarters",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_143306"
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-199136-headquarters",
+          "source_id": "meeting_doc_199136",
+          "page_number": 11,
+          "block_id": "p011_c0003"
+        },
+        {
+          "record_id": "entity_meeting-doc-143306-mta-hq",
+          "source_id": "meeting_doc_143306",
+          "page_number": 4,
+          "block_id": "p004_c0010"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-37086-mtahq",
+      "target_id": "entity_meeting-doc-143306-mta-hq",
+      "reason": "The alias display_name \"MTA Headquarters (MTAHQ)\" and entity_name \"MTA Headquarters\" are an acronym-bearing variant of the target \"MTA Headquarters\" record. Both are entity records for the same MTA headquarters organization.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Headquarters (MTAHQ)",
+          "entity_name": "MTA Headquarters",
+          "entity_type": "agency",
+          "acronym": "MTAHQ",
+          "primary_source_id": "meeting_doc_37086"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Headquarters",
+          "entity_name": "MTA Headquarters",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_143306"
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-37086-mtahq",
+          "source_id": "meeting_doc_37086",
+          "page_number": 3,
+          "block_id": "p003_c0003"
+        },
+        {
+          "record_id": "entity_meeting-doc-143306-mta-hq",
+          "source_id": "meeting_doc_143306",
+          "page_number": 4,
+          "block_id": "p004_c0010"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-52816-mta-hq",
+      "target_id": "entity_meeting-doc-143306-mta-hq",
+      "reason": "The alias display_name \"MTA Headquarters (MTA HQ)\", entity_name \"MTA Headquarters\", and acronym \"MTA HQ\" are the same headquarters entity represented by the target \"MTA Headquarters\". Parenthetical acronym formatting is the only identity difference.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Headquarters (MTA HQ)",
+          "entity_name": "MTA Headquarters",
+          "entity_type": "agency",
+          "acronym": "MTA HQ",
+          "primary_source_id": "meeting_doc_52816"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Headquarters",
+          "entity_name": "MTA Headquarters",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_143306"
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-52816-mta-hq",
+          "source_id": "meeting_doc_52816",
+          "page_number": 3,
+          "block_id": "p003_c0004"
+        },
+        {
+          "record_id": "entity_meeting-doc-143306-mta-hq",
+          "source_id": "meeting_doc_143306",
+          "page_number": 4,
+          "block_id": "p004_c0010"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-68121-mta-headquarters",
+      "target_id": "entity_meeting-doc-143306-mta-hq",
+      "reason": "Both records have display_name and entity_name \"MTA Headquarters\" with entity record kind and agency context. The supporting block for the alias lists \"MTA Headquarters\" as the same MTA organizational unit.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Headquarters",
+          "entity_name": "MTA Headquarters",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_68121"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Headquarters",
+          "entity_name": "MTA Headquarters",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_143306"
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-68121-mta-headquarters",
+          "source_id": "meeting_doc_68121",
+          "page_number": 4,
+          "block_id": "p004_c0002",
+          "quote": "MTA Headquarters"
+        },
+        {
+          "record_id": "entity_meeting-doc-143306-mta-hq",
+          "source_id": "meeting_doc_143306",
+          "page_number": 4,
+          "block_id": "p004_c0010"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-mta-hq",
+      "target_id": "entity_meeting-doc-143306-mta-hq",
+      "reason": "The alias display_name \"MTA HQ\", entity_name \"MTA Headquarters\", and acronym \"MTAHQ\" are abbreviation variants of the target \"MTA Headquarters\" entity. The records refer to the same global MTA headquarters organization.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA HQ",
+          "entity_name": "MTA Headquarters",
+          "entity_type": "agency",
+          "acronym": "MTAHQ",
+          "primary_source_id": "meeting_doc_100216"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Headquarters",
+          "entity_name": "MTA Headquarters",
+          "entity_type": "agency",
+          "primary_source_id": "meeting_doc_143306"
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-mta-hq",
+          "source_id": "meeting_doc_100216",
+          "page_number": 1,
+          "block_id": "p001_c0004"
+        },
+        {
+          "record_id": "entity_meeting-doc-143306-mta-hq",
+          "source_id": "meeting_doc_143306",
+          "page_number": 4,
+          "block_id": "p004_c0010"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-113916-mta-procurement",
+      "target_id": "entity_mta-procurement-department",
+      "reason": "Both records represent the same global MTA Procurement Department. The alias and target share record_kind entity, display_name/entity_name \"MTA Procurement Department\", and department context.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Procurement Department",
+          "entity_name": "MTA Procurement Department",
+          "entity_type": "department",
+          "primary_source_id": "meeting_doc_113916"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Procurement Department",
+          "entity_name": "MTA Procurement Department",
+          "entity_type": "department",
+          "primary_source_id": "meeting_doc_105946"
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-113916-mta-procurement",
+          "source_id": "meeting_doc_113916",
+          "page_number": 3,
+          "block_id": "p003_c0001",
+          "quote": "Department MTA Procurement Department"
+        },
+        {
+          "record_id": "entity_mta-procurement-department",
+          "source_id": "meeting_doc_105946",
+          "page_number": 4,
+          "block_id": "p004_c0001",
+          "quote": "Department MTA Procurement"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-163216-mta-procurement",
+      "target_id": "entity_mta-procurement-department",
+      "reason": "Both records have display_name/entity_name \"MTA Procurement Department\", record_kind entity, and department entity_type. The meeting-doc suffix only reflects duplicate extraction from a different source.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Procurement Department",
+          "entity_name": "MTA Procurement Department",
+          "entity_type": "department",
+          "primary_source_id": "meeting_doc_163216"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Procurement Department",
+          "entity_name": "MTA Procurement Department",
+          "entity_type": "department",
+          "primary_source_id": "meeting_doc_105946"
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-163216-mta-procurement",
+          "source_id": "meeting_doc_163216",
+          "page_number": 3,
+          "block_id": "p003_c0001",
+          "quote": "Department MTA Procurement Department"
+        },
+        {
+          "record_id": "entity_mta-procurement-department",
+          "source_id": "meeting_doc_105946",
+          "page_number": 4,
+          "block_id": "p004_c0001",
+          "quote": "Department MTA Procurement"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "alias_id": "entity_meeting-doc-196901-mta-procurement",
+      "target_id": "entity_mta-procurement-department",
+      "reason": "Both records represent MTA Procurement Department as an entity department. They share the same display_name/entity_name and differ only by source-specific record ID.",
+      "validator_evidence": {
+        "alias": {
+          "record_kind": "entity",
+          "display_name": "MTA Procurement Department",
+          "entity_name": "MTA Procurement Department",
+          "entity_type": "department",
+          "primary_source_id": "meeting_doc_196901"
+        },
+        "target": {
+          "record_kind": "entity",
+          "display_name": "MTA Procurement Department",
+          "entity_name": "MTA Procurement Department",
+          "entity_type": "department",
+          "primary_source_id": "meeting_doc_105946"
+        }
+      },
+      "source_evidence": [
+        {
+          "record_id": "entity_meeting-doc-196901-mta-procurement",
+          "source_id": "meeting_doc_196901",
+          "page_number": 3,
+          "block_id": "p003_c0001",
+          "quote": "Department MTA Procurement Department"
+        },
+        {
+          "record_id": "entity_mta-procurement-department",
+          "source_id": "meeting_doc_105946",
+          "page_number": 4,
+          "block_id": "p004_c0001",
+          "quote": "Department MTA Procurement"
+        }
+      ]
+    }
+  ],
+  "guard_summary": {
+    "record_existence_and_kind": {
+      "command": "sqlite3 -header -column data/canonical.db \"select record_id, record_kind, display_name, json_extract(payload,'$.entity_name') as entity_name, json_extract(payload,'$.entity_type') as entity_type, json_extract(payload,'$.acronym') as acronym, primary_source_id from records where record_id in (...) order by record_id;\"",
+      "observed": "13 inspected records existed; all inspected alias/target records returned record_kind entity. The proposed aliases are MTA Headquarters variants and MTA Procurement Department variants only."
+    },
+    "existing_alias_conflicts": {
+      "commands": [
+        "{ jq -r '.aliases.entity | keys[]?' data/identity-overrides/merges.json; sqlite3 data/canonical.db \"select alias from identity_aliases where kind='entity';\"; jq -r '.proposed_aliases[]? | select(.kind==\"entity\") | .alias_id' data/review_notes/codex-identity-batch0{47..99}-prep.json 2>/dev/null; } | sort -u > /tmp/codex100_occupied_entity_aliases.txt",
+        "for id in entity_meeting-doc-129051-mtahq entity_meeting-doc-192306-mta-headquarters entity_meeting-doc-199136-headquarters entity_meeting-doc-37086-mtahq entity_meeting-doc-52816-mta-hq entity_meeting-doc-68121-mta-headquarters entity_meeting-doc-mta-hq entity_meeting-doc-113916-mta-procurement entity_meeting-doc-163216-mta-procurement entity_meeting-doc-196901-mta-procurement; do if rg -qx \"$id\" /tmp/codex100_occupied_entity_aliases.txt; then echo \"alias_conflict $id\"; fi; done"
+      ],
+      "observed": "642 occupied entity aliases were loaded from merges.json, identity_aliases, and prior identity prep artifacts through batch099. Candidate alias conflict command printed no conflicts."
+    },
+    "do_not_merge_conflicts": {
+      "commands": [
+        "{ jq -r '.pairs.entity[]? | .record_ids | sort | @tsv' data/identity-overrides/do-not-merge.json; sqlite3 -separator $'\\t' data/canonical.db \"select case when record_id_a < record_id_b then record_id_a else record_id_b end, case when record_id_a < record_id_b then record_id_b else record_id_a end from do_not_merge where kind='entity';\"; } | sort -u > /tmp/codex100_entity_dnm_pairs.tsv",
+        "candidate alias-target pairs were compared against /tmp/codex100_entity_dnm_pairs.tsv"
+      ],
+      "observed": "20 entity do-not-merge pairs were loaded from data/identity-overrides/do-not-merge.json and sqlite do_not_merge. Candidate pair conflict check printed no conflicts."
+    },
+    "prior_prep_conflicts": {
+      "command": "jq -r '.proposed_aliases[]? | select(.kind==\"entity\") | .alias_id' data/review_notes/codex-identity-batch0{47..99}-prep.json 2>/dev/null | sort -u | wc -l",
+      "observed": "84 prior prepared entity alias IDs were inspected; none match the 10 aliases in this artifact."
+    },
+    "source_evidence": {
+      "command": "sqlite3 -header -column data/canonical.db \"with first_ref as (...) select first_ref.record_id, first_ref.source_id, first_ref.page_number, first_ref.block_id, substr(blocks_fts.raw_text,1,160) as block_text from first_ref left join blocks_fts on blocks_fts.source_id=first_ref.source_id and blocks_fts.block_id=first_ref.block_id order by first_ref.record_id;\"",
+      "observed": "Evidence refs and block text were inspected locally for the proposed alias/target records. Procurement blocks explicitly include Department MTA Procurement / MTA Procurement Department; MTA Headquarters records have matching payload names and source refs containing MTA HQ, MTAHQ, or MTA Headquarters context."
+    },
+    "forbidden_command_compliance": {
+      "observed": "No external/provider-backed commands or profiles/providers were used. No canonicalize, canonicalize-wave, canonicalize-review, campaign dedup, identity-review-run, write, ask, schema-propose, ontology-normalize-run, materialize, export-jsonl, or validate command was run. Inspection used local deterministic commands only: rg, jq, sqlite3 data/canonical.db, sed/head/ls/git status/date, and apply_patch for this prep artifact."
+    }
+  }
+}

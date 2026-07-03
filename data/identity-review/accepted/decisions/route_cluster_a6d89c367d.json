@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "accepted_at": "2026-06-23T14:41:02.863Z",
+  "reviewer": "auto-accept-gate",
+  "source": "auto_accept_canon",
+  "cluster_id": "route_cluster_a6d89c367d",
+  "kind": "route",
+  "packet_path": "data/identity-review/packets/route_cluster_a6d89c367d.md",
+  "suggestion_path": "data/identity-review/llm-suggestions/route_cluster_a6d89c367d.json",
+  "source_review_run_id": "2026-06-23T14-42-00-000Z_manual-identity-review",
+  "model": "manual/manual",
+  "review_state": "accepted",
+  "action_summary": {
+    "merge_group_count": 0,
+    "do_not_merge_count": 1,
+    "weak_alias_count": 0,
+    "missing_field_count": 0,
+    "ambiguous_count": 0,
+    "confidence": "unscored"
+  },
+  "merge_groups": [],
+  "do_not_merge": [
+    {
+      "record_ids": [
+        "route_q53-lga-2012",
+        "route_q58"
+      ],
+      "reason": "Do not merge: the packet carries a route contradiction (different route_id, service variant, or source route context). A shared base-route string is not merge authority for distinct route records."
+    }
+  ],
+  "weak_aliases": [],
+  "missing_fields": [],
+  "ambiguous": [],
+  "suggested_rules": [],
+  "rationale": "[auto-accepted structurally per docs/identity-merge-canon.md; model confidence ignored]"
+}

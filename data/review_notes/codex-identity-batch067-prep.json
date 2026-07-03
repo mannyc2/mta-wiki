@@ -1,0 +1,387 @@
+{
+  "note_id": "codex-canonical-cleanup-2026-06-22-identity-alias-batch-067-prep",
+  "created_at": "2026-06-22T22:31:00Z",
+  "status": "ready_for_conductor_apply",
+  "lane": "identity_prep_only",
+  "batch": "identity-batch067",
+  "scope": {
+    "allowed_write": "data/review_notes/codex-identity-batch067-prep.json",
+    "durable_inputs_mutated": false,
+    "generated_outputs_mutated": false,
+    "db_mutated": false,
+    "provider_backed_commands_run": false,
+    "forbidden_commands_run": []
+  },
+  "context": {
+    "source_backlog": "unresolved duplicate_global_identity canonical backlog after current overrides and prior prep through identity066",
+    "candidate_mining_summary": {
+      "current_entity_records_scanned_from_jsonl": 2588,
+      "current_alias_overrides_considered": 429,
+      "db_identity_alias_rows_considered": 379,
+      "prior_prep_alias_entries_considered_through_batch066": 170,
+      "prior_prep_target_entries_considered_through_batch066": 170,
+      "prior_prep_unique_records_excluded_through_batch066": 288,
+      "identity_key_groups_scanned": 14443,
+      "candidate_pairs_after_alias_do_not_merge_and_prior_prep_filters": 612,
+      "selected_high_confidence_candidates": 10
+    },
+    "selection_policy": [
+      "Prefer named-person aliases with shared deterministic identity keys, matching or compatible role text, and source evidence on both sides.",
+      "Exclude any alias or target record that appeared as either alias or target in prior identity prep artifacts through batch066.",
+      "Exclude broad agencies, places, programs, committees, member-list records, aliases already mapped in merges.json/current identity_aliases, target records that are alias-mapped, do-not-merge suppressed pairs, and visibly contaminated identity pairs."
+    ]
+  },
+  "intended_mutation": {
+    "aliases": {
+      "entity": {
+        "entity_j-waddell-138331": "entity_jacqueline-waddell-meeting-doc-138251",
+        "entity_john-mueller-mtahq": "entity_meeting-doc-113891-john-mueller",
+        "entity_jose-m-orea-meeting-doc-133406": "entity_meeting-doc-133551-jose-orea",
+        "entity_marissa-krinis-44201": "entity_marissa-krinis-meeting-doc-68311",
+        "entity_meeting-doc-197046-niko-sciocchetti": "entity_niko-sciocchetti-190016",
+        "entity_meeting-doc-113891-omar-messado": "entity_meeting-doc-121156-omar-messado",
+        "entity_paige-graves-cgc": "entity_paige-graves-legal",
+        "entity_meeting-doc-102771-paul-friman": "entity_meeting-doc-89776-paul-friman",
+        "entity_meeting-doc-154986-rachel-cohen": "entity_meeting-doc-186836-rachel-cohen",
+        "entity_kim-trevisan-meeting-doc-174086": "entity_meeting-doc-135386-kim-trevisan"
+      }
+    }
+  },
+  "aggregate_guard_results": {
+    "candidate_count": 10,
+    "canonical_records_present": true,
+    "aliases_not_already_merged": true,
+    "aliases_not_in_identity_aliases_table": true,
+    "targets_not_alias_mapped_in_merges_json": true,
+    "targets_not_alias_mapped_in_identity_aliases_table": true,
+    "no_overlap_with_prior_prep_through_batch066": true,
+    "do_not_merge_guard_hits": 0,
+    "shared_identity_keys_present": true,
+    "raw_source_blocks_checked": 20,
+    "raw_source_blocks_missing": [],
+    "source_page_blocks_checked": 20,
+    "source_page_blocks_missing": [],
+    "all_pass": true
+  },
+  "decisions": [
+    {
+      "kind": "entity",
+      "alias": "entity_j-waddell-138331",
+      "target": "entity_jacqueline-waddell-meeting-doc-138251",
+      "validator_duplicate_key": "entity_jacqueline-waddell",
+      "reason": "Both records identify Jacqueline Waddell as Acting Assistant Deputy Chief Procurement Officer in LIRR/procurement context, with exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_138331#p001_c0002",
+        "meeting_doc_138251#p001_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_jacqueline-waddell"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch066": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_john-mueller-mtahq",
+      "target": "entity_meeting-doc-113891-john-mueller",
+      "validator_duplicate_key": "entity_john-mueller",
+      "reason": "Both records identify John Mueller; the target preserves the MTAPD Chief of Police role while the alias shares the exact person identity key.",
+      "evidence_refs": [
+        "meeting_doc_112151#p001_c0003",
+        "meeting_doc_113891#p009_c0005"
+      ],
+      "shared_identity_keys": [
+        "entity_john-mueller"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch066": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_jose-m-orea-meeting-doc-133406",
+      "target": "entity_meeting-doc-133551-jose-orea",
+      "validator_duplicate_key": "entity_jose-m-orea",
+      "reason": "Both records identify Jose M. Orea, including Birrialandia ownership context on the target, with exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_133406#p009_c0009",
+        "meeting_doc_133551#p049_c0008"
+      ],
+      "shared_identity_keys": [
+        "entity_jose-m-orea"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch066": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_marissa-krinis-44201",
+      "target": "entity_marissa-krinis-meeting-doc-68311",
+      "validator_duplicate_key": "entity_marissa-krinis",
+      "reason": "Both records identify Marissa Krinis in MTA Bridges and Tunnels finance/procurement context, with exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_44201#p031_c0005",
+        "meeting_doc_68311#p017_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_marissa-krinis"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch066": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-197046-niko-sciocchetti",
+      "target": "entity_niko-sciocchetti-190016",
+      "validator_duplicate_key": "entity_niko-sciocchetti",
+      "reason": "Both records identify Niko Sciocchetti in transaction manager context, with exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_197046#p002_c0002",
+        "meeting_doc_190016#p002_c0002"
+      ],
+      "shared_identity_keys": [
+        "entity_niko-sciocchetti"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch066": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-113891-omar-messado",
+      "target": "entity_meeting-doc-121156-omar-messado",
+      "validator_duplicate_key": "entity_omar-messado",
+      "reason": "Both records identify Omar Messado as acting/assistant deputy chief procurement officer, with exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_113891#p010_c0012",
+        "meeting_doc_121156#p001_c0003"
+      ],
+      "shared_identity_keys": [
+        "entity_omar-messado"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch066": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_paige-graves-cgc",
+      "target": "entity_paige-graves-legal",
+      "validator_duplicate_key": "entity_paige-graves",
+      "reason": "Both records identify Paige Graves in MTA general counsel/legal department leadership context, with exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_128986#p003_c0007",
+        "meeting_doc_100286#p173_c0004"
+      ],
+      "shared_identity_keys": [
+        "entity_paige-graves"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch066": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-102771-paul-friman",
+      "target": "entity_meeting-doc-89776-paul-friman",
+      "validator_duplicate_key": "entity_paul-l-friman",
+      "reason": "Both records identify Paul L. Friman as acting/general counsel and corporate secretary in TBTA/MTA context, with exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_102771#p007_c0005",
+        "meeting_doc_89776#p004_c0008"
+      ],
+      "shared_identity_keys": [
+        "entity_paul-l-friman"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch066": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_meeting-doc-154986-rachel-cohen",
+      "target": "entity_meeting-doc-186836-rachel-cohen",
+      "validator_duplicate_key": "entity_rachel-cohen",
+      "reason": "Both records identify Rachel Cohen in Department of Paratransit requestor context, with exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_154986#p006_c0003",
+        "meeting_doc_186836#p009_c0004"
+      ],
+      "shared_identity_keys": [
+        "entity_rachel-cohen"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch066": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    },
+    {
+      "kind": "entity",
+      "alias": "entity_kim-trevisan-meeting-doc-174086",
+      "target": "entity_meeting-doc-135386-kim-trevisan",
+      "validator_duplicate_key": "entity_kim-trevisan",
+      "reason": "Both records identify Kim Trevisan in MTA/Metro-North transaction or project manager context, with exact person identity key overlap.",
+      "evidence_refs": [
+        "meeting_doc_174086#p007_c0003",
+        "meeting_doc_135386#p009_c0004"
+      ],
+      "shared_identity_keys": [
+        "entity_kim-trevisan"
+      ],
+      "confidence": "high",
+      "guards": {
+        "alias_present_in_canonical_records": true,
+        "target_present_in_canonical_records": true,
+        "alias_not_already_mapped_in_merges_json": true,
+        "alias_not_in_current_identity_aliases": true,
+        "target_not_alias_mapped_in_merges_json": true,
+        "target_not_alias_mapped_in_current_identity_aliases": true,
+        "no_do_not_merge_hit": true,
+        "no_overlap_with_prior_prep_through_batch066": true,
+        "raw_source_evidence_present": true,
+        "source_page_evidence_present": true
+      }
+    }
+  ],
+  "deferred_low_confidence_examples": [
+    {
+      "candidate": "P. Dietlin and other initial-only person records",
+      "reason": "Deferred because initial-only labels are more target-churn prone than full named-person role matches."
+    },
+    {
+      "candidate": "Dutchess County, Penn Station, Passengers United, and committee records",
+      "reason": "Deferred because places, advocacy organizations, and committees are outside this named-person batch."
+    },
+    {
+      "candidate": "Shanifah Riera / Sofia Hubscher candidate",
+      "reason": "Deferred because the candidate payload showed conflicting person names despite a shared generated identity key."
+    }
+  ],
+  "commands_used_for_evidence": [
+    {
+      "command": "test ! -e data/review_notes/codex-identity-batch067-prep.json && echo missing || echo exists",
+      "purpose": "Confirmed the batch067 prep artifact did not already exist before writing.",
+      "result": "missing"
+    },
+    {
+      "command": "jq '.intended_mutation.aliases.entity, .aggregate_guard_results' data/review_notes/codex-identity-batch066-prep.json",
+      "purpose": "Read prior batch066 aliases and guard result to preserve disjointness.",
+      "result": "batch066 contained 10 aliases with all aggregate guards passing."
+    },
+    {
+      "command": "bun --eval '<read-only duplicate_global_identity mining over data/canonical/entities.jsonl, identityKeysForRecord(), current merges.json, read-only identity_aliases, prior prep aliases and targets through batch066, and do-not-merge guards>'",
+      "purpose": "Mined unresolved duplicate_global_identity candidates while excluding already mapped aliases, alias-mapped targets, current identity_aliases, prior prep records, and do-not-merge pairs.",
+      "result": "2588 current entity records scanned; 612 candidate pairs after alias/do-not-merge/prior-prep filters; 10 high-confidence candidates selected."
+    },
+    {
+      "command": "bun --eval '<read-only final guard script for canonical record presence, alias/target guard checks, prior prep disjointness, shared identity keys, raw source blocks, and source-page blocks>'",
+      "purpose": "Verified selected aliases and evidence before writing this prep artifact.",
+      "result": "all_pass true; 20 raw source blocks checked, 20 source-page blocks checked, no missing evidence blocks."
+    },
+    {
+      "command": "date -u +%Y-%m-%dT%H:%M:%SZ",
+      "purpose": "Stamped this prep artifact.",
+      "result": "2026-06-22T22:31:00Z"
+    }
+  ],
+  "commands_intentionally_not_run": [
+    "bun packages/cli/src/cli.ts materialize",
+    "bun packages/cli/src/cli.ts validate",
+    "export-jsonl",
+    "DB repair or publish commands",
+    "provider-backed post-ingest commands",
+    "identity-review-run or apply commands"
+  ]
+}

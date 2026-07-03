@@ -1,0 +1,371 @@
+{
+  "note_id": "codex-relation-cleanup-2026-06-22-endpoint-shape-batch021-prep",
+  "created_at": "2026-06-22T00:00:00.000Z",
+  "author": "codex",
+  "scope": "relation endpoint-shape cleanup prep only; no durable retire/apply writes",
+  "batch": "batch021",
+  "run_id_for_replacements": "2026-06-22_codex_relation_cleanup_batch021",
+  "submitted_at_for_dry_run": "2026-06-22T00:00:00.000Z",
+  "source_id": "meeting_doc_170846",
+  "bucket": {
+    "name": "meeting_doc_170846 May 19 timetable-change event contains service-change events",
+    "original_relation_kind": "has_timeline_event",
+    "original_endpoint_shape": "event -> event",
+    "replacement_relation_kind": "includes",
+    "replacement_endpoint_shape": "event -> event",
+    "why_coherent": "All four originals are same-source relations where the parent May 19 timetable-change event is linked to specific included service-change events. Current has_timeline_event endpoint rules allow project, route, corridor, entity, or source subjects only, so event subjects create endpoint-shape issues. The replacement relation kind includes preserves the source-stated containment semantics without invoking the has_timeline_event endpoint shape."
+  },
+  "exclusions_and_guards": {
+    "excluded_batches": [
+      "batch013",
+      "batch014",
+      "batch015",
+      "batch016",
+      "batch017",
+      "batch018",
+      "batch019",
+      "batch020"
+    ],
+    "retired_json_not_edited": true,
+    "submission_journals_not_edited": true,
+    "generated_outputs_not_edited": true,
+    "original_submission_guard": {
+      "retired_hits": [],
+      "batch013_020_hits": [],
+      "batch013_020_submission_count_checked": 41,
+      "retired_submission_count_checked": 123
+    },
+    "replacement_collision_guard": {
+      "replacement_submission_ids_existing_hits": [],
+      "replacement_local_observation_id_existing_hits": []
+    },
+    "known_local_observation_ids_for_source": 34
+  },
+  "relationEndpointIssues_dry_run_acceptance": {
+    "tooling": "createSubmissionEntry plus relationEndpointIssues using accepted local observation ids for meeting_doc_170846",
+    "summary": {
+      "prepared_count": 4,
+      "accepted_count": 4,
+      "issue_count": 0,
+      "endpoint_shape_issue_count": 0
+    }
+  },
+  "prepared": [
+    {
+      "retire": {
+        "submission_id": "sub_1784665c44e4ab70",
+        "original_record_id": "relation_may-timetable-has-event-513pm-montauk",
+        "original_local_observation_id": "relation_may_timetable_has_event_513pm_montauk",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_kind": "event",
+        "original_subject_id": "event_meeting-doc-170846-may-timetable-change",
+        "original_subject_local_observation_id": "event_meeting_doc_170846_may_timetable_change",
+        "original_object_kind": "event",
+        "original_object_id": "event_meeting-doc-170846-513pm-montauk-extension",
+        "original_object_local_observation_id": "event_meeting_doc_170846_513pm_montauk_extension",
+        "reason": "The original has_timeline_event relation uses an event subject, which is outside the current allowed subject kinds for has_timeline_event."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_03b5e44bae1a7a1d",
+        "input": {
+          "source_id": "meeting_doc_170846",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch021_may_timetable_includes_513pm_montauk",
+          "label": "May timetable change includes 5:13pm Montauk service expansion",
+          "raw_text": "May timetable change includes 5:13pm Montauk service expansion",
+          "payload": {
+            "relation_kind": "includes",
+            "subject_local_observation_id": "event_meeting_doc_170846_may_timetable_change",
+            "object_local_observation_id": "event_meeting_doc_170846_513pm_montauk_extension",
+            "description": "The May 19 timetable change includes the 5:13pm Penn Station to Montauk summer service expansion."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_170846",
+              "evidence_id": "meeting_doc_170846#p001_c0006",
+              "source_path": "raw/sources/meeting_doc_170846/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0006",
+              "text_sha256": "sha256:fe4b6fb45f06a8786fc9ec752f0624b6708faa929dfad670fb4435139d2538df",
+              "text_source": "raw_text",
+              "role": "section_heading"
+            },
+            {
+              "source_id": "meeting_doc_170846",
+              "evidence_id": "meeting_doc_170846#p001_c0008",
+              "source_path": "raw/sources/meeting_doc_170846/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0008",
+              "text_sha256": "sha256:c4f872ed07dddf3ade3e0c6538151b65326c086eae998da7c839a6bf1f6dbbb5",
+              "text_source": "raw_text",
+              "role": "event_details"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_21ce597aaf9ca2cd",
+        "original_record_id": "relation_may-timetable-has-event-early-morning-gcm",
+        "original_local_observation_id": "relation_may_timetable_has_event_early_morning_gcm",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_kind": "event",
+        "original_subject_id": "event_meeting-doc-170846-may-timetable-change",
+        "original_subject_local_observation_id": "event_meeting_doc_170846_may_timetable_change",
+        "original_object_kind": "event",
+        "original_object_id": "event_meeting-doc-170846-new-early-morning-trains-gcm",
+        "original_object_local_observation_id": "event_meeting_doc_170846_new_early_morning_trains_gcm",
+        "reason": "The original has_timeline_event relation uses an event subject, which is outside the current allowed subject kinds for has_timeline_event."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_4e38688748f69df3",
+        "input": {
+          "source_id": "meeting_doc_170846",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch021_may_timetable_includes_early_morning_gcm",
+          "label": "May timetable change includes new early morning GCM trains",
+          "raw_text": "May timetable change includes new early morning GCM trains",
+          "payload": {
+            "relation_kind": "includes",
+            "subject_local_observation_id": "event_meeting_doc_170846_may_timetable_change",
+            "object_local_observation_id": "event_meeting_doc_170846_new_early_morning_trains_gcm",
+            "description": "The May 19 timetable change includes two new early morning revenue trains from Jamaica to Grand Central Madison."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_170846",
+              "evidence_id": "meeting_doc_170846#p001_c0006",
+              "source_path": "raw/sources/meeting_doc_170846/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0006",
+              "text_sha256": "sha256:fe4b6fb45f06a8786fc9ec752f0624b6708faa929dfad670fb4435139d2538df",
+              "text_source": "raw_text",
+              "role": "section_heading"
+            },
+            {
+              "source_id": "meeting_doc_170846",
+              "evidence_id": "meeting_doc_170846#p002_c0001",
+              "source_path": "raw/sources/meeting_doc_170846/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0001",
+              "text_sha256": "sha256:1787e5afffc5f0007b849a27a299640497b08f8e26f6c8cc551aee70b48f658c",
+              "text_source": "raw_text",
+              "role": "event_details"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_7e500fcbda984783",
+        "original_record_id": "relation_may-timetable-has-event-744pm-lynbrook",
+        "original_local_observation_id": "relation_may_timetable_has_event_744pm_lynbrook",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_kind": "event",
+        "original_subject_id": "event_meeting-doc-170846-may-timetable-change",
+        "original_subject_local_observation_id": "event_meeting_doc_170846_may_timetable_change",
+        "original_object_kind": "event",
+        "original_object_id": "event_meeting-doc-170846-744pm-lynbrook-stop",
+        "original_object_local_observation_id": "event_meeting_doc_170846_744pm_lynbrook_stop",
+        "reason": "The original has_timeline_event relation uses an event subject, which is outside the current allowed subject kinds for has_timeline_event."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_c718027b97611656",
+        "input": {
+          "source_id": "meeting_doc_170846",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch021_may_timetable_includes_744pm_lynbrook",
+          "label": "May timetable change includes added Lynbrook stop",
+          "raw_text": "May timetable change includes added Lynbrook stop",
+          "payload": {
+            "relation_kind": "includes",
+            "subject_local_observation_id": "event_meeting_doc_170846_may_timetable_change",
+            "object_local_observation_id": "event_meeting_doc_170846_744pm_lynbrook_stop",
+            "description": "The May 19 timetable change includes an added Lynbrook stop for the 7:44pm Penn Station to Long Beach train."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_170846",
+              "evidence_id": "meeting_doc_170846#p001_c0006",
+              "source_path": "raw/sources/meeting_doc_170846/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0006",
+              "text_sha256": "sha256:fe4b6fb45f06a8786fc9ec752f0624b6708faa929dfad670fb4435139d2538df",
+              "text_source": "raw_text",
+              "role": "section_heading"
+            },
+            {
+              "source_id": "meeting_doc_170846",
+              "evidence_id": "meeting_doc_170846#p002_c0001",
+              "source_path": "raw/sources/meeting_doc_170846/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0001",
+              "text_sha256": "sha256:1787e5afffc5f0007b849a27a299640497b08f8e26f6c8cc551aee70b48f658c",
+              "text_source": "raw_text",
+              "role": "event_details"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "retire": {
+        "submission_id": "sub_144290e0a3313d4d",
+        "original_record_id": "relation_may-timetable-has-event-sunday-montauk-penn",
+        "original_local_observation_id": "relation_may_timetable_has_event_sunday_montauk_penn",
+        "original_relation_kind": "has_timeline_event",
+        "original_subject_kind": "event",
+        "original_subject_id": "event_meeting-doc-170846-may-timetable-change",
+        "original_subject_local_observation_id": "event_meeting_doc_170846_may_timetable_change",
+        "original_object_kind": "event",
+        "original_object_id": "event_meeting-doc-170846-sunday-montauk-through-penn",
+        "original_object_local_observation_id": "event_meeting_doc_170846_sunday_montauk_through_penn",
+        "reason": "The original has_timeline_event relation uses an event subject, which is outside the current allowed subject kinds for has_timeline_event."
+      },
+      "replacement": {
+        "deterministic_submission_id": "sub_28324c702a6b1bd4",
+        "input": {
+          "source_id": "meeting_doc_170846",
+          "observation_kind": "relation",
+          "local_observation_id": "relation_batch021_may_timetable_includes_sunday_montauk_penn",
+          "label": "May timetable change includes Sunday Montauk through Penn service",
+          "raw_text": "May timetable change includes Sunday Montauk through Penn service",
+          "payload": {
+            "relation_kind": "includes",
+            "subject_local_observation_id": "event_meeting_doc_170846_may_timetable_change",
+            "object_local_observation_id": "event_meeting_doc_170846_sunday_montauk_through_penn",
+            "description": "The May 19 timetable change includes Sunday Montauk Branch through service to Penn Station."
+          },
+          "evidence_refs": [
+            {
+              "source_id": "meeting_doc_170846",
+              "evidence_id": "meeting_doc_170846#p001_c0006",
+              "source_path": "raw/sources/meeting_doc_170846/blocks.jsonl",
+              "page_number": 1,
+              "block_id": "p001_c0006",
+              "text_sha256": "sha256:fe4b6fb45f06a8786fc9ec752f0624b6708faa929dfad670fb4435139d2538df",
+              "text_source": "raw_text",
+              "role": "section_heading"
+            },
+            {
+              "source_id": "meeting_doc_170846",
+              "evidence_id": "meeting_doc_170846#p002_c0001",
+              "source_path": "raw/sources/meeting_doc_170846/blocks.jsonl",
+              "page_number": 2,
+              "block_id": "p002_c0001",
+              "text_sha256": "sha256:1787e5afffc5f0007b849a27a299640497b08f8e26f6c8cc551aee70b48f658c",
+              "text_source": "raw_text",
+              "role": "event_details"
+            }
+          ]
+        },
+        "dry_run": {
+          "validation_state": "accepted",
+          "issues": [],
+          "warnings": [],
+          "relationEndpointIssues": [],
+          "endpoint_shape_issue": null
+        },
+        "confidence": "high"
+      }
+    }
+  ],
+  "source_evidence_blocks_checked": [
+    {
+      "source_id": "meeting_doc_170846",
+      "block_id": "p001_c0006",
+      "page_number": 1,
+      "text_sha256": "sha256:fe4b6fb45f06a8786fc9ec752f0624b6708faa929dfad670fb4435139d2538df",
+      "evidence_summary": "Section heading: MAY 19 TIMETABLE CHANGE."
+    },
+    {
+      "source_id": "meeting_doc_170846",
+      "block_id": "p001_c0008",
+      "page_number": 1,
+      "text_sha256": "sha256:c4f872ed07dddf3ade3e0c6538151b65326c086eae998da7c839a6bf1f6dbbb5",
+      "evidence_summary": "States the 5:13pm Penn Station to Speonk train will operate to Montauk Monday through Friday throughout the summer."
+    },
+    {
+      "source_id": "meeting_doc_170846",
+      "block_id": "p002_c0001",
+      "page_number": 2,
+      "text_sha256": "sha256:1787e5afffc5f0007b849a27a299640497b08f8e26f6c8cc551aee70b48f658c",
+      "evidence_summary": "States two new early morning Jamaica-to-Grand Central Madison trains, the added Lynbrook stop, and Sunday Montauk Branch through service to Penn Station."
+    }
+  ],
+  "conductor_application_plan": {
+    "only_after_conflict_free_checkpoint": true,
+    "retire_submission_ids": [
+      "sub_1784665c44e4ab70",
+      "sub_21ce597aaf9ca2cd",
+      "sub_7e500fcbda984783",
+      "sub_144290e0a3313d4d"
+    ],
+    "append_replacement_entries_to": "data/submissions/2026-06-22_codex_relation_cleanup_batch021.jsonl",
+    "replacement_submission_ids": [
+      "sub_03b5e44bae1a7a1d",
+      "sub_4e38688748f69df3",
+      "sub_c718027b97611656",
+      "sub_28324c702a6b1bd4"
+    ]
+  },
+  "blockers": [],
+  "commands_run": [
+    "git status --short -- data/review_notes/codex-relation-cleanup-batch021-prep.json data/review_notes data/submission-overrides/retired.json data/submissions/2026-06-22_codex_relation_cleanup_batch020.jsonl data/submissions/2026-06-22_codex_relation_cleanup_batch021.jsonl data/canonical/relations.jsonl packages/pipeline/src/records/relations.ts",
+    "sed -n '220,255p' packages/pipeline/src/records/relations.ts",
+    "for f in data/submissions/2026-06-22_codex_relation_cleanup_batch{013..020}.jsonl; do [ -f \"$f\" ] && printf '%s ' \"$f\" && wc -l < \"$f\"; done",
+    "jq 'keys, (..|objects|select(has(\"submission_id\"))|.submission_id) // empty' data/submission-overrides/retired.json | head -n 40",
+    "jq 'keys' data/submission-overrides/retired.json",
+    "bun --eval '<deterministic endpoint-shape inventory excluding retired submissions and batches013-020>'",
+    "bun --eval '<group has_timeline_event event->event issues by source>'",
+    "rg -n '\"relation_kind\":\"includes\"|\"relation_kind\":\"contains\"|\"relation_kind\":\"part_of\"|\"relation_kind\":\"supports\"' data/submissions packages/pipeline/src -S -m 30",
+    "rg -n '<meeting_doc_170846 target submissions and locals>' data/submissions raw/sources/meeting_doc_170846 -S",
+    "rg -n '<meeting_doc_170846 target event locals>' data/submissions/ -S",
+    "bun --eval '<dry-run createSubmissionEntry plus relationEndpointIssues for four includes replacements>'",
+    "bun --eval '<guard originals against retired.json and batches013-020>'",
+    "rg -n '<replacement ids and local ids>' data -S",
+    "jq -c 'select(.block_id==\"p001_c0006\" or .block_id==\"p001_c0008\" or .block_id==\"p002_c0001\") | {block_id,page_number,raw_text_sha256,raw_text}' raw/sources/meeting_doc_170846/blocks.jsonl",
+    "jq -c 'select((.submission_ids // []) as $s | any($s[]; . == \"sub_1784665c44e4ab70\" or . == \"sub_21ce597aaf9ca2cd\" or . == \"sub_7e500fcbda984783\" or . == \"sub_144290e0a3313d4d\")) | {record_id,local_observation_id,display_name,submission_ids,payload,evidence_refs}' data/canonical/relations.jsonl",
+    "jq empty data/review_notes/codex-relation-cleanup-batch021-prep.json && jq '{note_id,batch,prepared_count:(.prepared|length), blockers, replacement_submission_ids:.conductor_application_plan.replacement_submission_ids}' data/review_notes/codex-relation-cleanup-batch021-prep.json",
+    "bun --eval '<rehydrate artifact replacement inputs through createSubmissionEntry plus relationEndpointIssues>'",
+    "git status --short -- data/review_notes/codex-relation-cleanup-batch021-prep.json data/submission-overrides/retired.json data/submissions/2026-06-22_codex_relation_cleanup_batch021.jsonl data/canonical/relations.jsonl packages/pipeline/src/records/relations.ts",
+    "git diff --no-index --check /dev/null data/review_notes/codex-relation-cleanup-batch021-prep.json"
+  ],
+  "commands_intentionally_not_run": [
+    "materialize",
+    "export-jsonl --verify",
+    "full validate CLI",
+    "provider-backed commands",
+    "canonicalize",
+    "write",
+    "ask",
+    "schema",
+    "ontology-normalize"
+  ]
+}

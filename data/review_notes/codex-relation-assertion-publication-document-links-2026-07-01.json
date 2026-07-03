@@ -1,0 +1,103 @@
+{
+  "campaign_id": "codex-relation-assertion-publication-document-links-2026-07-01",
+  "date": "2026-07-01",
+  "mode": "codex_only_deterministic_cleanup",
+  "provider_backed_llm_commands_used": false,
+  "forbidden_commands_avoided": [
+    "ingest",
+    "write",
+    "ask",
+    "schema",
+    "identity-review-run",
+    "ontology-normalize-run",
+    "provider profiles"
+  ],
+  "canonical_jsonl_hand_edited": false,
+  "baseline": {
+    "validate": "Issues: 0",
+    "relation_assertion_unknown_total": 8727,
+    "publication_role_unknown": 92
+  },
+  "after": {
+    "validate": "Issues: 0",
+    "submissions": 98102,
+    "canonical_records": 84040,
+    "wiki_pages": 7334,
+    "relation_assertion_unknown_total": 8706,
+    "publication_role_unknown": 71
+  },
+  "movement": {
+    "relation_assertion_unknown_total": -21,
+    "publication_role_unknown": -21
+  },
+  "implemented_changes": [
+    {
+      "area": "publication document link assertion status",
+      "summary": "Marked exact publication/document linkage relations delivered for source, event, entity, and claim document endpoint shapes.",
+      "guards": [
+        "relation_family must be publication_role",
+        "entity->source only for publishes, releases, subject_of, is_subject_of, has_work_plan, has_workplan, receives_report, included_in",
+        "entity->publication event only for publishes/releases",
+        "event->source only for has_source/has_document",
+        "source->claim only for includes_section",
+        "claim->source only for is_part_of",
+        "future/proposed/former/uncertain wording remains held",
+        "wrong endpoint directions, wrong families, and entity->entity published_by remain held"
+      ]
+    }
+  ],
+  "active_subagent_lanes": [
+    {
+      "agent_id": "019f1b02-9a72-7001-a5e8-e600905d3843",
+      "lane": "claim_context.has_claim residual audit",
+      "status_at_note_time": "running"
+    },
+    {
+      "agent_id": "019f1b02-9ecb-7c73-9503-9fb32228217c",
+      "lane": "partnership_engagement residual audit",
+      "status_at_note_time": "running"
+    },
+    {
+      "agent_id": "019f1b04-8457-70d3-9f22-6700f3269fc3",
+      "lane": "funding_award residual audit",
+      "status_at_note_time": "running"
+    }
+  ],
+  "files_changed": [
+    "packages/pipeline/src/records/assertion-qualifiers.ts",
+    "packages/pipeline/test/records/assertion-qualifiers.test.ts",
+    "data/canonical/relations.jsonl",
+    "data/canonical.db",
+    "LOG.md",
+    "data/review_notes/codex-relation-assertion-publication-document-links-2026-07-01.json"
+  ],
+  "verification": [
+    {
+      "command": "bun test packages/pipeline/test/records/assertion-qualifiers.test.ts",
+      "result": "pass: 42 tests, 223 expect calls"
+    },
+    {
+      "command": "bun run typecheck",
+      "result": "pass"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts materialize",
+      "result": "pass: Materialized 93092/98102 submissions; retired submissions skipped 243; SQLite FTS quick_check ok"
+    },
+    {
+      "command": "bun packages/cli/src/cli.ts validate",
+      "result": "pass: Issues 0; submissions 98102; canonical records 84040; wiki pages 7334"
+    }
+  ],
+  "remaining": {
+    "relation_assertion_unknown_total": 8706,
+    "top_unknown_buckets": [
+      "metric_context.has_metric: 5647",
+      "claim_context.has_claim: 430",
+      "timeline_context.has_timeline_event: 323",
+      "corridor_scope.operates_on_corridor: 269",
+      "partnership_engagement.organized_by: 138"
+    ],
+    "next_action": "Consume the active claim, partnership, and funding Codex scout results when they complete; implement only high-confidence deterministic rules with focused tests and validate cleanly."
+  }
+}

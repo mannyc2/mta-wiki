@@ -1,0 +1,28 @@
+{
+  "run_id": "2026-06-10T23-09-19-079Z_1976810-866cada1_ingest_201205-brt-webster-cac",
+  "packet_id": "project-identity",
+  "generated_at": "2026-06-11T03:18:59.571Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "decisions": [
+      {
+        "decision_id": "d1-webster-ave-sbs-201205-identity",
+        "local_observation_id": "project_webster_ave_sbs_201205",
+        "decision": "new",
+        "rationale": "Observation base_record_id is project_12-webster-ave, which already exists in the registry with matching display name 'Webster Avenue Select Bus Service', matching source 201205_brt_webster_cac, and alias 'project_webster-ave-sbs-201205'. The observation resolves to its own base_record_id — no different target record is a better match. Per canonicalization rules, this is 'new' (already resolved).",
+        "evidence_refs": [
+          {
+            "source_id": "201205_brt_webster_cac",
+            "block_id": "p001_c0002",
+            "source_quote": ""
+          }
+        ]
+      }
+    ],
+    "packet_id": "project-identity"
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-18-19-870Z_2111393-ea8059ed_canonicalize_2026-06-10t23-09-19-079z-1976810-866cada1-ingest-201205-brt-webster-cac-project-identity"
+}

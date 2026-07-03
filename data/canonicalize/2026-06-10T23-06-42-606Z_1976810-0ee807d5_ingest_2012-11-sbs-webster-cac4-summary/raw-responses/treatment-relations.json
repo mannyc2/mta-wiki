@@ -1,0 +1,185 @@
+{
+  "run_id": "2026-06-10T23-06-42-606Z_1976810-0ee807d5_ingest_2012-11-sbs-webster-cac4-summary",
+  "packet_id": "treatment-relations",
+  "generated_at": "2026-06-11T03:08:22.944Z",
+  "profile_name": "pioneer-deepseek-pro",
+  "provider": "pioneer",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "response_mode": "tool",
+  "parsed_response": {
+    "packet_id": "treatment-relations",
+    "decisions": [
+      {
+        "decision_id": "d001-offset-bus-lane-webster",
+        "local_observation_id": "treatment_offset_bus_lane_webster_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_offset-bus-lane-webster-2012",
+            "description": "Offset bus lane on Webster Avenue as part of Bx41 SBS conceptual design",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p001_c0007",
+                "source_quote": "Mr. Orosz presented the conceptual design for the Bx41 SBS and a typical SBS station location featuring an offset bus lane, highlighting the benefits of the design and its amenities."
+              }
+            ]
+          }
+        ],
+        "rationale": "Treatment explicitly presented as part of the Webster Avenue SBS project conceptual design at CAC Meeting #4.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p001_c0007",
+            "source_quote": "Mr. Orosz presented the conceptual design for the Bx41 SBS and a typical SBS station location featuring an offset bus lane, highlighting the benefits of the design and its amenities."
+          }
+        ]
+      },
+      {
+        "decision_id": "d002-dedicated-bus-signal-e176",
+        "local_observation_id": "treatment_dedicated_bus_signal_e176_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_dedicated-bus-signal-e176-2012",
+            "description": "Dedicated bus signal at E 176th St for southbound Bx41 SBS buses near Cross Bronx Expressway",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p002_c0006",
+                "source_quote": "The conversion of Ittner Place to one-way traffic is good idea. How will the dedicated bus signal near the Cross Bronx Expressway work?"
+              },
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p002_c0007",
+                "source_quote": "The dedicated bus signal proposed for southbound buses at E 176 th St will allow the bus to move through the intersection a few seconds ahead of regular vehicular traffic. This will help keep the bus from getting stuck in an otherwise heavily-congested area."
+              }
+            ]
+          }
+        ],
+        "rationale": "Dedicated bus signal discussed as proposed traffic improvement in the Webster Avenue SBS CAC Meeting #4 traffic analysis discussion.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p002_c0006",
+            "source_quote": "The conversion of Ittner Place to one-way traffic is good idea. How will the dedicated bus signal near the Cross Bronx Expressway work?"
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p002_c0007",
+            "source_quote": "The dedicated bus signal proposed for southbound buses at E 176 th St will allow the bus to move through the intersection a few seconds ahead of regular vehicular traffic. This will help keep the bus from getting stuck in an otherwise heavily-congested area."
+          }
+        ]
+      },
+      {
+        "decision_id": "d003-signal-optimization-gun-hill",
+        "local_observation_id": "treatment_signal_optimization_gun_hill_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_signal-optimization-gun-hill-2012",
+            "description": "Signal optimization at Webster Ave and E Gun Hill Rd intersection for SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p002_c0004",
+                "source_quote": "Will there be any dedicated bus treatments on East Gun Hill Road? Will they be coordinated with the necessary traffic movements for entrances and exits to the Bronx River Parkway?"
+              },
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p002_c0005",
+                "source_quote": "There will be no dedicated bus lane on East Gun Hill Road, but there will be other treatments such as signal optimization to make the intersection of Webster Avenue and East Gun Hill Road function more efficiently."
+              }
+            ]
+          }
+        ],
+        "rationale": "Signal optimization explicitly discussed as a treatment at Webster Ave and East Gun Hill Road during the Webster Avenue SBS traffic analysis discussion.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p002_c0004",
+            "source_quote": "Will there be any dedicated bus treatments on East Gun Hill Road? Will they be coordinated with the necessary traffic movements for entrances and exits to the Bronx River Parkway?"
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p002_c0005",
+            "source_quote": "There will be no dedicated bus lane on East Gun Hill Road, but there will be other treatments such as signal optimization to make the intersection of Webster Avenue and East Gun Hill Road function more efficiently."
+          }
+        ]
+      },
+      {
+        "decision_id": "d004-left-turn-ban-fordham",
+        "local_observation_id": "treatment_left_turn_ban_fordham_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_left-turn-ban-fordham-2012",
+            "description": "Ban on left turns from East Fordham Road onto Webster Avenue for SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p002_c0008",
+                "source_quote": "What will be the impact of banning left turns from Webster Avenue onto East Fordham Road?"
+              },
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p002_c0009",
+                "source_quote": "The proposed traffic improvements include banning left turns from East Fordham Road onto Webster Avenue, not from Webster Avenue onto East Fordham Road. Prohibiting these turns will improve intersection efficiency by eliminating one signal phase and giving more signal time to Webster Avenue."
+              }
+            ]
+          }
+        ],
+        "rationale": "Left turn ban discussed as a proposed traffic improvement in the Webster Avenue SBS CAC Meeting #4 traffic analysis discussion.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p002_c0008",
+            "source_quote": "What will be the impact of banning left turns from Webster Avenue onto East Fordham Road?"
+          },
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p002_c0009",
+            "source_quote": "The proposed traffic improvements include banning left turns from East Fordham Road onto Webster Avenue, not from Webster Avenue onto East Fordham Road. Prohibiting these turns will improve intersection efficiency by eliminating one signal phase and giving more signal time to Webster Avenue."
+          }
+        ]
+      },
+      {
+        "decision_id": "d005-ittner-place-one-way",
+        "local_observation_id": "treatment_ittner_place_one_way_2012",
+        "decision": "relate",
+        "proposed_relations": [
+          {
+            "relation_kind": "has_treatment",
+            "subject_id": "project_12-webster-ave",
+            "object_id": "treatment_ittner-place-one-way-2012",
+            "description": "Conversion of Ittner Place to one-way traffic as a traffic improvement for the SBS project",
+            "evidence_refs": [
+              {
+                "source_id": "2012_11_sbs_webster_cac4_summary",
+                "block_id": "p002_c0006",
+                "source_quote": "The conversion of Ittner Place to one-way traffic is good idea. How will the dedicated bus signal near the Cross Bronx Expressway work?"
+              }
+            ]
+          }
+        ],
+        "rationale": "Ittner Place one-way conversion discussed in the Webster Avenue SBS CAC Meeting #4 traffic analysis Q&A as a proposed traffic improvement.",
+        "evidence_refs": [
+          {
+            "source_id": "2012_11_sbs_webster_cac4_summary",
+            "block_id": "p002_c0006",
+            "source_quote": "The conversion of Ittner Place to one-way traffic is good idea. How will the dedicated bus signal near the Cross Bronx Expressway work?"
+          }
+        ]
+      }
+    ]
+  },
+  "transcript_dir": "data/transcripts/runs/2026-06-11T03-05-57-225Z_2111393-21c2f815_canonicalize_2026-06-10t23-06-42-606z-1976810-0ee807d5-ingest-2012-11-sbs-webster-cac4-summary-treatment-relations"
+}
